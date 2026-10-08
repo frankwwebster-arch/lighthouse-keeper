@@ -185,7 +185,9 @@ spaceman, pirate, Tarzan, Halloween and mechanic outfits plus mechanic repair.
 The corresponding runtime names and mirror/application rules are indexed in
 `docs/KEEPER_ANIMATIONS.md`. The aquarium brush and side-hammer sheets are the
 clean regenerated versions; the rejected foamy brush and welding-contaminated
-hammer studies were never copied into this source directory.
+hammer studies were never copied into this source directory. The corrected box
+search ends with both arms reaching forward on the far side of the torso; its
+hands-behind-body predecessor is retained in `replaced-search-boxes-v1/` only.
 
 The replaced navy pyjama source files remain in this directory as historical
 inputs, but production uses only the `light-blue` files above. The built-in

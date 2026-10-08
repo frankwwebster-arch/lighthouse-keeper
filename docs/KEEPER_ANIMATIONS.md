@@ -97,7 +97,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Paint | `keeper_paint_side` / `keeper_paint_back` | splodged artist smock; side mirrors left; canvas/easel separate |
 | Use potter's wheel | `keeper_pottery_front` | seated front in artist smock; clay included, wheel separate |
 | Type at computer | `keeper_type_computer` | semantic reuse of piano hand motion; desk/computer separate |
-| Search boxes | `keeper_search_boxes` | low rear rummage; boxes separate |
+| Search boxes | `keeper_search_boxes` | low rear rummage; final arms reach forward into the unseen box; boxes separate |
 | Retrieve meal from oven | `keeper_meal_from_oven_back` | rear one-shot; plate/meal included, oven separate |
 | Place meal on table | `keeper_meal_place_side` | right; mirror left; table separate |
 | Count money | `keeper_count_money` | seated front; notes and coins included |
