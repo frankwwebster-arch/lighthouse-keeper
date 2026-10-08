@@ -6,7 +6,7 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 ```
 npm install
 npm run dev      # Next.js 14; open http://localhost:3000 (or this computer’s address on the same wifi, for the iPad)
-npm test         # 72 tests
+npm test         # 73 tests
 npm run build    # production build
 npm run sprites  # snap Codex's PNGs in art/raw/ into public/sprites/ (docs/CODEX_ASSETS.md)
 ```
@@ -14,10 +14,10 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 
 ## Current implementation
 
-- Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The toilet and wash basin are both in the en suite.
+- Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The first production Pixel batch now supplies the red/white shell bands and those three 105 × 35 room plates; interactive furniture remains separate. The toilet and wash basin are both in the en suite.
 - Every object renderer accepts `standard`, `on`, and `broken`; active gameplay drives `on`. Broken objects share integer-step casing wobble, smoke and sparks. Add `?broken=tv,cooker` (or `?broken=all`) to the URL for the internal art-state preview.
 - Keeper-owned assets can now break during play, block their normal actions, and be repaired. Grown-ups control average fault frequency and maximum concurrent faults; defaults are off / one. Breakdown events expose placeholder SFX categories for later audio. The shop is excluded because it is not the keeper's asset.
-- Cooker and basin work use a reusable rear-facing keeper fallback. Production keeper PNGs are not delivered yet.
+- Cooker and basin work use a reusable rear-facing keeper fallback. Production keeper PNGs are not delivered yet; neither are object-state strips or later-floor art.
 - Sprite manifest entries may be old string paths or `{ "file", "frames", "fps" }` objects. Horizontal strips animate without CSS scaling or rotation.
 - All SVG object targets work by touch, mouse, Enter and Space. At a 1024 × 768 iPad viewport, the first-three-floor targets were verified at a minimum 82 × 94 CSS px.
 
@@ -26,6 +26,8 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 - `src/game/` — rules (`config.ts` has every number, `commands.ts` the command book and silly reactions, `engine.ts` the rules).
 - `src/ui/floors.tsx` — fixed-width room definitions and reserved Floor 3 diving-extension geometry.
 - `src/ui/art.tsx` and `src/ui/Sprite.tsx` — vector fallbacks, the three-state renderer, and production strip playback.
+- `public/sprites/` — the five exact-size PNGs from the first production Pixel batch plus their runtime manifest.
+- `art/source/first-production-batch/` — untouched generated sources and prompt/provenance notes; `scripts/build_first_asset_batch.py` rebuilds the exact `art/raw/` deliveries, then `npm run sprites` publishes them.
 - `docs/PRODUCTION_ASSET_KIT.md` — exact Pixel filenames, dimensions, anchors, pivots, z-order, frame counts, fps, and delivery order.
 - `art/manifest.json` and `art/asset_inventory.json` — facts about the concept/prototype image pack; these are not a production rig.
 
@@ -50,4 +52,4 @@ npm run typecheck
 npm run build
 ```
 
-All 63 tests passed, the production build completed, and a headless Chromium pass covered desktop plus 1024 × 768 iPad layouts with no console errors. The resulting `main` deployment was also verified live at [lighthouse-keeper-mu.vercel.app](https://lighthouse-keeper-mu.vercel.app).
+All 73 tests passed, the production build completed, and a headless Chromium pass covered the integrated first asset batch at 1024 × 768 with no console errors. The last live deployment verification remains recorded in `docs/STATUS.md`; pushes to `main` retain the existing Vercel production workflow.

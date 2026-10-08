@@ -1,1 +1,32 @@
-{}
+{
+ "room_bedroom": {
+  "file": "room_bedroom.png",
+  "w": 105,
+  "h": 35,
+  "frames": 1
+ },
+ "room_kitchen": {
+  "file": "room_kitchen.png",
+  "w": 105,
+  "h": 35,
+  "frames": 1
+ },
+ "room_living": {
+  "file": "room_living.png",
+  "w": 105,
+  "h": 35,
+  "frames": 1
+ },
+ "tower_stripe_red": {
+  "file": "tower_stripe_red.png",
+  "w": 110,
+  "h": 8,
+  "frames": 1
+ },
+ "tower_stripe_white": {
+  "file": "tower_stripe_white.png",
+  "w": 110,
+  "h": 8,
+  "frames": 1
+ }
+}

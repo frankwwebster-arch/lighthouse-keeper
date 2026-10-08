@@ -1,6 +1,6 @@
 # Lighthouse Keeper — first-three-floor production asset kit
 
-Status: production specification; the current PNGs remain concept/prototype references. Do not cut sprites out of the scene plates.
+Status: production specification. Delivery-order item 1 is complete for the two shell stripe bands and the kitchen, living-room, and bedroom/en-suite plates. All older PNGs remain concept/prototype references; do not cut sprites out of the scene plates.
 
 ## Coordinate and export contract
 
@@ -126,7 +126,7 @@ The Floor 3 extension seam is at local x 117. Inner door use point is x 113; the
 
 ## Delivery order
 
-1. Floor bands, partitions and three room palettes.
+1. Floor bands, partitions and three room palettes. **Delivered 8 October 2026:** `tower_stripe_{red,white}.png` and `room_{kitchen,living,bedroom}.png`.
 2. Shared object-state overlays and one fully proven object (TV).
 3. Keeper master parts plus `idle`, `walk`, `cook_back`, `wash_back` and `brush_teeth_back`.
 4. Remaining object state sets and effects.
@@ -147,4 +147,4 @@ The Floor 3 extension seam is at local x 117. Inner door use point is x 113; the
 | `room_lamp.png` | 105 × 35 | bottom-centre; room z 20 |
 | `ground_strip.png` | 300 × 30 | stage bottom-left; scenery z 0; ordinary grass/soil/rock only |
 
-No production PNG is claimed as delivered by this implementation slice. The table records the exact required output sizes for the art batch.
+Only the five files explicitly marked in delivery-order item 1 are delivered by this implementation slice. The remaining table entries still record future exact output sizes and must not be inferred as present.

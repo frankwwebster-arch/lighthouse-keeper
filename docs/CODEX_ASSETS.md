@@ -1,6 +1,6 @@
 # Production sprites — current route
 
-The game still draws vector fallbacks; the existing files under `style_b_pixel/` are concept/prototype references and must not be sliced into production sprites.
+The first production Pixel batch is live for the shell stripes and the three implemented room plates. Objects, characters, effects and any missing room art still draw vector fallbacks. Existing files under `style_b_pixel/` remain concept/prototype references and must not be sliced into production sprites.
 
 The authoritative art inputs are:
 
@@ -38,4 +38,6 @@ An animated horizontal strip includes playback metadata:
 
 ## Current delivery boundary
 
-No production PNG has been delivered yet. Start only the first-three-floor kit. Do not begin later aquarium, weather-station, hidden-lair, lift, pet, visitor, ship or weather batches.
+Delivery-order item 1 is complete: `tower_stripe_{red,white}.png` and `room_{kitchen,living,bedroom}.png`. Exact normalized deliveries are in `art/raw/first-production-batch/`, published exports are in `public/sprites/`, and untouched generated sources plus prompt notes are in `art/source/first-production-batch/`. `room_bedroom.png` includes the en-suite partition and doorway.
+
+Do not treat this as permission to begin keeper clips, object-state strips, lamp-room art, `tower_base.png`, `tower_lamproom.png`, `tower_roof.png`, `ground_strip.png`, or later aquarium, weather-station, hidden-lair, lift, pet, visitor, ship and weather batches. The next production item remains delivery-order item 2 in `docs/PRODUCTION_ASSET_KIT.md`.

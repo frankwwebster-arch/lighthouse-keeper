@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { BREAKABLE_OBJECTS, OBJECTS } from '../game/config'
-import { CORE, DIVING_EXTENSION, PLAYABLE_FLOORS } from './floors'
+import { CORE, DIVING_EXTENSION, PLAYABLE_FLOORS, stripeSpriteAt } from './floors'
 import { parseBrokenPreview, visualStateFor } from './objectState'
 
 describe('playable floor modules', () => {
@@ -39,6 +39,13 @@ describe('playable floor modules', () => {
       'exterior-door-open',
       'dive-suit-exit',
     ])
+  })
+
+  it('chooses shell stripes from world y rather than floor insertion order', () => {
+    expect(stripeSpriteAt(0)).toBe('tower_stripe_red')
+    expect(stripeSpriteAt(31)).toBe('tower_stripe_red')
+    expect(stripeSpriteAt(32)).toBe('tower_stripe_white')
+    expect(stripeSpriteAt(64)).toBe('tower_stripe_red')
   })
 })
 

@@ -1,5 +1,6 @@
 import type { FloorId, ObjectId } from '../game/config'
 import { FLOOR_Y, TOWER_X } from '../game/world'
+import { Sprite } from './Sprite'
 
 export const CORE = {
   x: TOWER_X + 40,
@@ -14,6 +15,7 @@ export interface FloorModuleSpec {
   id: Extract<FloorId, 'ground' | 'living' | 'bedroom'>
   number: 1 | 2 | 3
   name: string
+  roomSprite: 'room_kitchen' | 'room_living' | 'room_bedroom'
   wall: string
   objects: readonly ObjectId[]
   zones: readonly { id: string; fromX: number; toX: number }[]
@@ -25,6 +27,7 @@ export const PLAYABLE_FLOORS: readonly FloorModuleSpec[] = [
     id: 'ground',
     number: 1,
     name: 'Kitchen',
+    roomSprite: 'room_kitchen',
     wall: '#f2e6c9',
     objects: ['door', 'fridge', 'cooker', 'broom', 'petbowl'],
     zones: [{ id: 'kitchen', fromX: 52, toX: 468 }],
@@ -33,6 +36,7 @@ export const PLAYABLE_FLOORS: readonly FloorModuleSpec[] = [
     id: 'living',
     number: 2,
     name: 'Living room',
+    roomSprite: 'room_living',
     wall: '#cfe3d3',
     objects: ['tv', 'bookshelf', 'piano'],
     zones: [{ id: 'living', fromX: 52, toX: 468 }],
@@ -41,6 +45,7 @@ export const PLAYABLE_FLOORS: readonly FloorModuleSpec[] = [
     id: 'bedroom',
     number: 3,
     name: 'Bedroom + en suite',
+    roomSprite: 'room_bedroom',
     wall: '#e5d4ea',
     objects: ['bed', 'phone', 'desk', 'basin', 'toilet'],
     zones: [
@@ -61,14 +66,26 @@ export const DIVING_EXTENSION = {
   sequence: ['inner-door-close', 'keeper-hidden', 'costume-swap-sfx', 'exterior-door-open', 'dive-suit-exit'] as const,
 } as const
 
-function StripePiers({ floor }: { floor: FloorModuleSpec }) {
+export function stripeSpriteAt(runtimeY: number): 'tower_stripe_red' | 'tower_stripe_white' {
+  const stripeIndex = Math.floor(runtimeY / 32)
+  return stripeIndex % 2 === 0 ? 'tower_stripe_red' : 'tower_stripe_white'
+}
+
+function StripeBands({ floor }: { floor: FloorModuleSpec }) {
   const y = FLOOR_Y[floor.id] - CORE.bandHeight
-  const stripe = floor.number % 2 === 1 ? '#c8463c' : '#f3e7cc'
   return (
-    <g aria-hidden="true">
-      <rect x={CORE.x} y={y} width={12} height={CORE.bandHeight} fill={stripe} />
-      <rect x={CORE.x + CORE.width - 12} y={y} width={12} height={CORE.bandHeight} fill={stripe} />
-      <path d={`M${CORE.x} ${y}h12v${CORE.bandHeight}h-12M${CORE.x + CORE.width} ${y}h-12v${CORE.bandHeight}h12`} fill="none" stroke="#14243a" strokeWidth={4} />
+    <g aria-hidden="true" clipPath={`url(#floor-band-${floor.id})`}>
+      <defs><clipPath id={`floor-band-${floor.id}`}><rect x={CORE.x} y={y} width={CORE.width} height={CORE.bandHeight} /></clipPath></defs>
+      {Array.from({ length: 5 }, (_, index) => {
+        const stripeY = y + index * 32
+        const name = stripeSpriteAt(stripeY)
+        const fallback = name === 'tower_stripe_red' ? '#c8463c' : '#f3e7cc'
+        return (
+          <Sprite key={stripeY} name={name} x={CORE.x + CORE.width / 2} y={stripeY + 32} w={CORE.width} h={32}>
+            <rect x={CORE.x} y={stripeY} width={CORE.width} height={32} fill={fallback} />
+          </Sprite>
+        )
+      })}
     </g>
   )
 }
@@ -83,27 +100,18 @@ function LivingFurniture() {
   )
 }
 
-function BedroomDetails() {
-  return (
-    <g aria-hidden="true">
-      <rect x={TOWER_X + 352} y={FLOOR_Y.bedroom - 136} width={116} height={132} fill="#c9e3df" />
-      <path d={`M${TOWER_X + 348} ${FLOOR_Y.bedroom - 140}v140`} stroke="#14243a" strokeWidth={4} />
-      <path d={`M${TOWER_X + 348} ${FLOOR_Y.bedroom - 76}v76h36`} fill="none" stroke="#e9f3ef" strokeWidth={8} />
-      <rect x={TOWER_X + 358} y={FLOOR_Y.bedroom - 128} width={98} height={16} fill="#7fb7af" opacity={0.55} />
-    </g>
-  )
-}
-
 export function FloorModule({ floor }: { floor: FloorModuleSpec }) {
   const y = FLOOR_Y[floor.id] - CORE.bandHeight
   return (
     <g className={`floor-module floor-${floor.id}`} data-floor={floor.number}>
-      <rect x={CORE.interiorX} y={y} width={CORE.interiorWidth} height={CORE.bandHeight} fill={floor.wall} />
-      <StripePiers floor={floor} />
-      <rect x={CORE.x} y={FLOOR_Y[floor.id] - 8} width={CORE.width} height={12} fill="#725336" stroke="#14243a" strokeWidth={4} />
-      <text x={CORE.x + 22} y={y + 22} className="floor-label">{floor.number} · {floor.name}</text>
+      <StripeBands floor={floor} />
+      <Sprite name={floor.roomSprite} x={CORE.interiorX + CORE.interiorWidth / 2} y={FLOOR_Y[floor.id]} w={CORE.interiorWidth} h={CORE.bandHeight}>
+        <>
+          <rect x={CORE.interiorX} y={y} width={CORE.interiorWidth} height={CORE.bandHeight} fill={floor.wall} />
+          <rect x={CORE.x} y={FLOOR_Y[floor.id] - 8} width={CORE.width} height={12} fill="#725336" stroke="#14243a" strokeWidth={4} />
+        </>
+      </Sprite>
       {floor.id === 'living' && <LivingFurniture />}
-      {floor.id === 'bedroom' && <BedroomDetails />}
     </g>
   )
 }

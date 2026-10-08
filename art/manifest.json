@@ -1,23 +1,30 @@
 {
   "schema_version": 2,
-  "status": "prototype-only",
+  "status": "mixed-production-and-prototype",
   "convention": "obj_<id>_<state>_f<frames>.png horizontal strips; keeper_{front,back}_<part> on aligned 32x40 canvases; room_<type>.png at 105x35",
   "rendering": {
     "target_logical_stage_px": [300, 190],
     "css_scale": 4,
     "image_rendering": "pixelated",
-    "production_source_rule": "author future production sprites at 1 logical pixel per source pixel and render at 4x; the current files are concept/prototype files and do not follow this contract consistently",
+    "production_source_rule": "author production sprites at 1 logical pixel per source pixel and render at 4x; files explicitly marked production follow this contract, while older concept/prototype files do not",
     "floor_band_px": [110, 35],
     "room_plate_px": [105, 35],
     "keeper_canvas_px": [32, 40]
   },
   "runtime_implementation": {
-    "floor_modules": "implemented in src/ui/floors.tsx using vector fallbacks",
+    "floor_modules": "implemented in src/ui/floors.tsx using production Pixel plates with vector fallbacks",
     "object_states": ["standard", "on", "broken"],
     "strip_manifest_entry": { "file": "obj_tv_on_f4.png", "frames": 4, "fps": 8 },
-    "production_pngs_delivered": false
+    "production_pngs_delivered": true,
+    "completed_delivery_order_items": [1]
   },
   "assets": {
+    "tower_stripe_red": { "file": "public/sprites/tower_stripe_red.png", "status": "production", "size": [110, 8], "anchor": "top-left" },
+    "tower_stripe_white": { "file": "public/sprites/tower_stripe_white.png", "status": "production", "size": [110, 8], "anchor": "top-left" },
+    "room_kitchen": { "file": "public/sprites/room_kitchen.png", "status": "production", "size": [105, 35], "anchor": "bottom-centre" },
+    "room_living": { "file": "public/sprites/room_living.png", "status": "production", "size": [105, 35], "anchor": "bottom-centre" },
+    "room_bedroom": { "file": "public/sprites/room_bedroom.png", "status": "production", "size": [105, 35], "anchor": "bottom-centre", "notes": "en-suite partition and doorway included; furniture remains separate" },
+
     "bg_day1_master": { "file": "art/background/lighthouse_master_day_pixel.png", "status": "concept", "anchor": "viewport" },
     "bg_lighthouse_10_floors": { "file": "art/background/lighthouse_10_floors_pixel.png", "status": "concept", "anchor": "viewport" },
     "bg_lighthouse_10_floors_wide": { "file": "art/background/lighthouse_10_floors_wide_pixel.png", "status": "concept", "anchor": "viewport" },
@@ -70,6 +77,6 @@
     "bubble_icon_lightbulb": { "file": "style_b_pixel/icon_lightbulb.png", "status": "placeholder" }
   },
   "not_delivered": [
-    "production floor-module PNGs (runtime modules exist)", "production rig and pivot-aligned PNGs", "front/rear keeper parts", "animation strips", "object on/broken frames except TV visual prototype", "separate parallax background layers", "effects strips", "visitor, seagull and ship rigs"
+    "lamp-room, tower-base, roof and ground production PNGs", "production rig and pivot-aligned PNGs", "front/rear keeper parts", "animation strips", "object on/broken frames except TV visual prototype", "separate parallax background layers", "effects strips", "visitor, seagull and ship rigs"
   ]
 }

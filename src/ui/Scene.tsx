@@ -109,12 +109,6 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
         {/* fixed-width modular lighthouse core */}
         <g>
           {PLAYABLE_FLOORS.map((floor) => <FloorModule key={floor.id} floor={floor} />)}
-          {/* stairs */}
-          {(['ground', 'living', 'bedroom'] as const).map((f) => (
-            <g key={f} transform={`translate(${TOWER_X + 108} ${FLOOR_Y[f]})`}>
-              {Array.from({ length: 6 }, (_, i) => <rect key={i} x={-26 + i * 9} y={-6 - i * 22} width={52 - i * 9} height={5} fill="#9c7a4a" />)}
-            </g>
-          ))}
           {/* lamp room */}
           <rect x={TOWER_X + 70} y={80} width={380} height={140} fill={s.lampLit ? '#fff2a8' : '#cfe8ee'} opacity={0.85} stroke="#5d6d73" strokeWidth={5} />
           {[0, 1, 2, 3].map((i) => <line key={i} x1={TOWER_X + 165 + i * 95} y1={80} x2={TOWER_X + 165 + i * 95} y2={220} stroke="#5d6d73" strokeWidth={4} />)}

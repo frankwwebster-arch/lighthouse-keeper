@@ -11,12 +11,12 @@ A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthou
 - Database: Neon Postgres via `DATABASE_URL` (verified: `/api/players` answers `db:true`). Tables are created on first use: players, saves, player_rules, settings (PIN hash).
 
 ## Built
-Engine (seeded, deterministic, 63 tests), SVG cutaway scene with zoom camera, typo matcher, quizzes levels 1-3, credit economy with admin dials (allowance from per-need green bars, prices, gifting, quiz level and breakdown pressure per player), who-is-playing screen, per-player saves (DB or localStorage), grown-ups PIN (starts 1234; change it).
+Engine (seeded, deterministic, 73 tests), SVG cutaway scene with zoom camera, typo matcher, quizzes levels 1-3, credit economy with admin dials (allowance from per-need green bars, prices, gifting, quiz level and breakdown pressure per player), who-is-playing screen, per-player saves (DB or localStorage), grown-ups PIN (starts 1234; change it).
 
 The first three playable floors are now modular fixed-width components: kitchen, living room, and bedroom with en suite. Objects have a runtime `standard` / `on` / `broken` contract, state-specific strip support, shared broken effects, keyboard/touch hit areas, and rear-facing cooker/basin keeper fallbacks. Random keeper-owned breakdowns are off by default and controlled by grown-ups' frequency and maximum-concurrent dials; broken assets block normal use until repaired. Floor 3 reserves an invisible two-door changing zone for the later diving-board extension.
 
 ## Not built yet (agreed design)
-1. Production Pixel PNGs: the 4px grid, exact sizes, names, pivots, floor modules and object-state strips are specified, but `public/sprites/manifest.json` is still empty and vector fallbacks remain in use.
+1. Continue production Pixel PNGs after the completed first batch. `public/sprites/manifest.json` now maps two 110 × 8 shell bands and the three 105 × 35 implemented room plates. Keeper, object-state, effect, lamp-room, exterior and later-floor art still use vector fallbacks or remain unbuilt.
 2. Missions unlock floors (aquarium, weather station, hidden lair, lift). Floors arrive furnished; no furniture shop.
 3. Tiered upgrades to existing objects bought with credits; prices are admin dials; gifting.
 4. Mini games: fishing, cooking, telescope spotting.
@@ -31,4 +31,4 @@ The first three playable floors are now modular fixed-width components: kitchen,
 
 ## Verification and delivery
 
-The delivered slice passed 63 tests, TypeScript checking, a production build, and headless Chromium checks at desktop and 1024 × 768 iPad sizes. The 8 October 2026 Vercel deployment from `main` completed successfully; the live site returned HTTP 200 and its loaded bundle was checked for the three floors, breakdown dials, repair action, and shop exclusion.
+The first production Pixel batch passed 73 tests, TypeScript checking, a production build, and a 1024 × 768 headless Chromium check with no console errors. The five PNGs were checked at exact source dimensions and hard alpha through `npm run sprites`; runtime rendering remains nearest-neighbour at 4× logical size. The existing Vercel workflow is unchanged: a push to `main` deploys production. Live verification of the resulting deployment must be recorded after that push.

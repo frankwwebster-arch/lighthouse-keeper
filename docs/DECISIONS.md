@@ -9,7 +9,7 @@
 - Score out of 100 (mood 30, ship 20, friends 10, pet 10, house 10, brain 10, bedtime 10). Next day's allowance is 10 + 30% of the score. Up to 40 credits carry over.
 - Camera: whole tower at rest; zooms to the object while used (not on the loo walk).
 - Saves to the browser (localStorage) every 4 seconds and at day end.
-- Sprites are vector placeholders; real art drops in via the manifest. Manifest entries may be a legacy filename string or `{ file, frames, fps }` for an animated horizontal strip.
+- Production art drops in via the manifest, with vector fallbacks for undelivered assets. The first production batch supplies shell stripes and the three implemented room plates. Manifest entries may be a legacy filename string or `{ file, frames, fps }` for an animated horizontal strip.
 - The first three gameplay floors use a fixed 110 × 35 logical core: kitchen, living room, bedroom with en suite. The toilet moved from the kitchen floor to the en suite. Floor 3 reserves a hidden two-door changing zone for the later diving extension.
 - All clickable-object renderers accept `standard`, `on`, and `broken`. Broken visuals reuse integer-step casing wobble, smoke, and sparks. The seeded damage/repair loop is implemented; actual audio remains placeholder event hooks.
 - Random keeper-asset breakdowns are controlled by grown-ups' frequency and maximum-concurrent dials (off by default). Large owned assets such as the garden/greenhouse, jetty, and future boat may fail. The shop belongs to somebody else and is never in the keeper's repair queue.

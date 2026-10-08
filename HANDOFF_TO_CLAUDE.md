@@ -1,7 +1,7 @@
 # Lighthouse Keeper — implementation handoff report
 
 Date: 2026-10-08
-Status: the first three runtime floor modules and three-state rendering contract are implemented; the supplied PNG art is still **prototype/concept art**, not a production-ready sprite set.
+Status: the first three runtime floor modules and three-state rendering contract are implemented. The first production Pixel batch now supplies two shell bands and three room plates; all previously supplied PNGs remain **prototype/concept art**, not production sprites.
 
 This report answers the implementation questions raised for the Next.js 14 / React build. Facts about delivered files are separated from recommendations so the game is not accidentally built around a placeholder.
 
@@ -14,7 +14,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
 - The seeded breakdown/repair loop is playable. Grown-ups can set average game-minutes between faults and the maximum concurrent faults; both zero values disable faults. Broken objects reject normal actions and expose a 25-game-minute repair action. The event stream carries placeholder SFX categories, but no audio engine/files are delivered.
 - The shop is explicitly excluded from keeper-owned faults. Its current on-island placement is a temporary gameplay fallback; the agreed later route is keeper jetty → upgradeable rowing boat/tug/speedboat → off-island shop. The keeper's jetty, garden/greenhouse, and future boat may break. A future workshop floor reduces fault pressure.
 - The exact current asset contract is [docs/CODEX_BRIEF.md](docs/CODEX_BRIEF.md), with production details in [docs/PRODUCTION_ASSET_KIT.md](docs/PRODUCTION_ASSET_KIT.md).
-- No new production PNGs were delivered in this implementation slice. The existing concept pack remains reference-only.
+- Delivery-order item 1 is integrated: two 110 × 8 shell stripe tiles and three 105 × 35 room plates. Untouched generated sources and prompts live in `art/source/first-production-batch/`; the existing concept pack remains reference-only.
 
 ## 1. Files, format, naming and scale
 
@@ -25,6 +25,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
 
    | Purpose | Path | Exact pixels / alpha | Status |
    |---|---|---:|---|
+   | First production batch | `public/sprites/tower_stripe_{red,white}.png`, `room_{kitchen,living,bedroom}.png` | 110 × 8 and 105 × 35, RGBA | Production, integrated |
    | Day 1 master plate | `art/background/lighthouse_master_day_pixel.png` | 1576 x 998, opaque RGB | Concept plate |
    | 10-floor tower study | `art/background/lighthouse_10_floors_pixel.png` | 1254 x 1254, opaque RGB | Concept plate |
    | Wide 10-floor/lift study | `art/background/lighthouse_10_floors_wide_pixel.png` | 1254 x 1254, opaque RGB | Concept plate |
@@ -231,4 +232,4 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
    | Exact animation implementation | Undecided | Begin with frame strips; move only proven reusable limbs to a part rig |
    | SFX files/engine | Undecided | Define event hooks now; commission/source audio after interactions are playable |
 
-6. This handoff deliberately distinguishes the implemented runtime from the missing production asset set. The next art task is not “make more screenshots”; it is the first-batch files in `docs/PRODUCTION_ASSET_KIT.md`, validated in the browser at 4× scale. Later-batch floors, lift, pets, visitors, ships and weather must not start yet.
+6. This handoff deliberately distinguishes the implemented runtime from the remaining production asset set. Delivery-order item 1 in `docs/PRODUCTION_ASSET_KIT.md` is complete and validated in the browser at 4× logical scale. The next art task is delivery-order item 2 (shared object-state overlays and one fully proven TV), not later-floor, lift, pet, visitor, ship or weather work.
