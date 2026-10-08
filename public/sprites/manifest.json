@@ -503,6 +503,7 @@
    38,
    22
   ],
+  "outfit": "light-blue-pyjamas",
   "loop": false,
   "reverseFor": "get_out_of_bed",
   "mirrorSafe": true,
@@ -741,6 +742,7 @@
    38,
    22
   ],
+  "outfit": "light-blue-pyjamas",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -759,6 +761,7 @@
    16,
    40
   ],
+  "outfit": "light-blue-pyjamas",
   "loop": false,
   "reverseFor": "pyjamas_turn_front",
   "facing": "front-to-back",
@@ -776,6 +779,7 @@
    16,
    40
   ],
+  "outfit": "light-blue-pyjamas",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -946,6 +950,71 @@
   "loop": false,
   "reverseFor": "stand_side",
   "mirrorSafe": true,
+  "z": 50
+ },
+ "keeper_souwester_walk_back": {
+  "file": "keeper_souwester_walk_back.png",
+  "w": 32,
+  "h": 48,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   0,
+   -1
+  ],
+  "outfit": "souwester",
+  "loop": true,
+  "facing": "back",
+  "interaction": "souwester-walk-away",
+  "z": 50
+ },
+ "keeper_souwester_walk_front": {
+  "file": "keeper_souwester_walk_front.png",
+  "w": 32,
+  "h": 48,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   0,
+   1
+  ],
+  "outfit": "souwester",
+  "loop": true,
+  "facing": "front",
+  "interaction": "souwester-walk-toward",
+  "z": 50
+ },
+ "keeper_souwester_walk_side": {
+  "file": "keeper_souwester_walk_side.png",
+  "w": 32,
+  "h": 48,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "outfit": "souwester",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "souwester-walk",
+  "mirrorsFor": "left",
   "z": 50
  },
  "keeper_sow_seeds": {

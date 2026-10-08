@@ -72,7 +72,7 @@ Initial clips:
 | `saw_wood` | side | 8 · 8 | yes | 40 × 40; blade contact `(35,23)`; timber/bench separate |
 | `wave_camera` | front | 8 · 8 | no | warm greeting one-shot |
 | `yawn` | front ¾ | 8 · 8 | no | sleepy expression and full-body stretch |
-| `pyjamas_walk` | side | 8 · 10 | yes | right; mirror left; navy pyjamas with cream piping |
+| `pyjamas_walk` | side | 8 · 10 | yes | right; mirror left; light powder-blue pyjamas with cream piping |
 | `pyjamas_turn_back` | front to back | 6 · 8 | no | reverse to turn front |
 | `get_into_bed` | side | 8 · 8 | no | 48 × 40; surface `(24,31)`; pillow `(38,22)`; reverse to rise |
 | `pyjamas_snore` | lying side | 6 · 4 | yes | 48 × 40 breathing/snore loop; bed separate |
@@ -85,6 +85,9 @@ Initial clips:
 | `party_idle` | front | 4 · 6 | yes | 32 × 48; cardboard cone party hat |
 | `party_walk` | side | 8 · 10 | yes | 32 × 48; right, mirror left |
 | `party_turn_back` | front to back | 6 · 8 | no | 32 × 48; reverse to turn front |
+| `souwester_walk_side` | side | 8 · 10 | yes | 32 × 48 yellow oilskins; right, mirror left |
+| `souwester_walk_back` | rear | 8 · 10 | yes | direct walk away; vector `(0,-1)` |
+| `souwester_walk_front` | front | 8 · 10 | yes | direct walk toward camera; vector `(0,1)` |
 | `loo_hide` | hidden | 0 | n/a | keeper is not drawn |
 
 Required part files are `keeper_front_head_{happy,neutral,grumpy,asleep,open}.png`, `keeper_front_{torso,arm_l,arm_r,leg_l,leg_r}.png`, the equivalent `keeper_back_*` files with one back head, and `keeper_reference.png`; every part file is 32 × 40. Airborne strips may expand to 48 × 56 for the dive or 48 × 84 for parachute deployment without rescaling the keeper. Long side tools may use 40 × 40, bed poses 48 × 40, centred swimming 48 × 48, and tall headwear 32 × 48. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. Pivots are for assembly tooling; production raster limbs use drawn key angles or integer translations in final clips rather than arbitrary CSS rotation. `data/keeper_asset_contract.json` is authoritative for scale and use points.

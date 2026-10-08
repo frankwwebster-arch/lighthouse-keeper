@@ -59,10 +59,10 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Saw wood | `keeper_saw_wood` | right; mirror left; hand saw included; timber and bench separate |
 | Wave to camera | `keeper_wave_camera` | front-facing one-shot greeting |
 | Yawn | `keeper_yawn` | front three-quarter one-shot sleepy reaction |
-| Walk in pyjamas | `keeper_pyjamas_walk` | right; mirror left |
-| Turn away in pyjamas | `keeper_pyjamas_turn_back` | reverse to face camera |
-| Get into bed | `keeper_get_into_bed` | right-side bed; mirror left; reverse to get out |
-| Snore in pyjamas | `keeper_pyjamas_snore` | right-side loop; mirror left; bed and bedding separate |
+| Walk in pyjamas | `keeper_pyjamas_walk` | light powder blue with cream piping; right; mirror left |
+| Turn away in pyjamas | `keeper_pyjamas_turn_back` | light powder blue; reverse to face camera |
+| Get into bed | `keeper_get_into_bed` | light powder blue; right-side bed; mirror left; reverse to get out |
+| Snore in pyjamas | `keeper_pyjamas_snore` | light powder blue; right-side loop; mirror left; bed and bedding separate |
 | Swim left/right | `keeper_swim_costume_horizontal` | striped costume; right; mirror left |
 | Swim up | `keeper_swim_costume_up` | striped costume; direct rear view |
 | Swim down | `keeper_swim_costume_down` | striped costume; direct front view |
@@ -72,6 +72,9 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Party idle | `keeper_party_idle` | front; normal clothes plus cardboard party hat |
 | Party walk | `keeper_party_walk` | right; mirror left |
 | Party turn away | `keeper_party_turn_back` | reverse to face camera |
+| Walk in sou'wester left/right | `keeper_souwester_walk_side` | yellow oilskins; right; mirror left |
+| Walk away in sou'wester | `keeper_souwester_walk_back` | direct rear view; movement vector `(0,-1)` |
+| Walk toward camera in sou'wester | `keeper_souwester_walk_front` | direct front view; movement vector `(0,1)` |
 
 For review, the shared side strip has separate, plainly named
 `keeper-switch-press-right-preview.gif` and

@@ -130,14 +130,14 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
   neutral through a broad friendly wave and back.
 - `keeper-yawn-generated-source.png` — eight sleepy front-three-quarter poses
   with hand-to-mouth yawn and full-body stretch.
-- `keeper-pyjamas-walk-generated-source.png` — eight right-facing walk poses in
-  the locked navy pyjamas, cream piping and slippers; mirror left.
-- `keeper-pyjamas-turn-back-generated-source.png` — six matching pyjama poses
+- `keeper-pyjamas-walk-light-blue-generated-source.png` — eight right-facing
+  walk poses in light powder-blue pyjamas, cream piping and slippers; mirror left.
+- `keeper-pyjamas-turn-back-light-blue-generated-source.png` — six matching pyjama poses
   from front to rear; reverse to face camera.
-- `keeper-get-into-bed-generated-source.png` — eight isolated right-side bed
+- `keeper-get-into-bed-light-blue-generated-source.png` — eight isolated right-side bed
   entry poses; bed, mattress, pillow and blanket remain separate. The rejected
   overlapping ten-frame attempt is preserved under `replaced-bed-v1/`.
-- `keeper-snore-generated-source.png` — six matching horizontal breathing and
+- `keeper-snore-light-blue-generated-source.png` — six matching horizontal breathing and
   snoring poses without bed or floating Z effects.
 - `keeper-swim-costume-horizontal-generated-source.png` — eight right-facing
   breaststroke poses in the red-and-white costume; mirror left.
@@ -150,6 +150,19 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
 - `keeper-party-idle-generated-source.png`, `keeper-party-walk-generated-source.png`
   and `keeper-party-turn-back-generated-source.png` — normal uniform with a
   blue dotted cardboard cone hat, covering idle, mirrored walk and turn.
+- `keeper-souwester-walk-side-generated-source.png`,
+  `keeper-souwester-walk-back-generated-source.png` and
+  `keeper-souwester-walk-front-generated-source.png` — full mustard-yellow
+  sou'wester hat, toggle-fastened oilskin coat and trousers with navy sea boots;
+  eight-frame side, direct rear and direct front walks. Mirror side for left.
+
+The replaced navy pyjama source files remain in this directory as historical
+inputs, but production uses only the `light-blue` files above. The built-in
+image generator was run in referenced-image mode: recolour only the pyjama
+fabric and slippers to powder blue while preserving pose, proportions, cream
+piping and transparency; for the sou'wester, preserve the canonical keeper and
+draw isolated full-body walks in the specified oilskins from side, rear and
+front views with identical scale and baseline.
 
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,
@@ -158,6 +171,6 @@ sidecars and review GIFs. Most clips use 32 × 40; dive and parachute poses use
 larger transparent contract canvases at the identical character scale. The
 hand-saw strip uses a 40 × 40 extended side-tool canvas for its full stroke.
 Bed entry and snoring use a 48 × 40 canvas for the horizontal body.
-directional swim clips use a centred 48 × 48 canvas; the party hat uses a
-32 × 48 canvas so headwear never shrinks the keeper. All
+directional swim clips use a centred 48 × 48 canvas; party and sou'wester
+headwear use a 32 × 48 canvas so headwear never shrinks the keeper. All
 generation used the built-in image generator in referenced-image mode.

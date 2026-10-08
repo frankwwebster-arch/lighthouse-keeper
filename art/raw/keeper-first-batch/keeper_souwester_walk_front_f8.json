@@ -1,0 +1,20 @@
+{
+  "w": 32,
+  "h": 48,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+    16,
+    48
+  ],
+  "z": 50,
+  "loop": true,
+  "movementVector": [
+    0,
+    1
+  ],
+  "outfit": "souwester",
+  "facing": "front",
+  "interaction": "souwester-walk-toward"
+}

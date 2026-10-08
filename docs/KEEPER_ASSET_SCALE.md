@@ -74,14 +74,16 @@ for getting out.
 
 The shared pivot landmarks are neck `(16,11)`, shoulders `(10,15)` and
 `(22,15)`, and hips `(13,25)` and `(19,25)`. New outfits must preserve these
-landmarks. The striped swimming costume, parachute harness and navy pyjamas
+landmarks. The striped swimming costume, parachute harness, light powder-blue pyjamas and yellow sou'wester oilskins
 therefore change clothing only, never body proportions.
 
 Directional underwater movement reads `movementVector` from the manifest:
 right `(1,0)`, mirrored left `(-1,0)`, up `(0,-1)`, and down `(0,1)`. Water,
 bubbles and splashes remain separate effects. The extended party canvas adds
-transparent room above his head for the cardboard cone; his body is not
-scaled down to make the hat fit.
+transparent room above his head for the cardboard cone; the same 32 × 48
+contract holds the broad sou'wester brim. His body is not scaled down to make
+either hat fit. Sou'wester movement vectors are right `(1,0)`, rear/up
+`(0,-1)` and front/down `(0,1)`; mirror the side strip for left.
 
 Any new prop-based animation must add its hand, seat or ground point to the
 JSON contract and its sprite sidecar. Verification rejects changes that break

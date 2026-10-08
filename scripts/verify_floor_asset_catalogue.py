@@ -7,7 +7,7 @@ root=Path(__file__).resolve().parents[1]
 data=json.loads((root/'docs/floor-asset-catalogue/catalogue.json').read_text())
 spaces=data['spaces']; rows=data['rows']
 assert len(spaces)==71 and len({s['space_id'] for s in spaces})==71
-assert len(rows)==1548
+assert len(rows)==1551
 with (root/'docs/floor-asset-catalogue/catalogue.csv').open(newline='') as f:
     assert len(list(csv.DictReader(f)))==len(rows)
 for space in spaces:
@@ -39,7 +39,7 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==65
+assert len(keeper_pngs)==68
 required_clips={
     'keeper_idle':(4,6), 'keeper_walk':(8,10),
     'keeper_turn_back':(6,8), 'keeper_work_back':(8,8),
@@ -66,6 +66,9 @@ required_clips={
     'keeper_scuba_swim_up':(8,8), 'keeper_scuba_swim_down':(8,8),
     'keeper_party_idle':(4,6), 'keeper_party_walk':(8,10),
     'keeper_party_turn_back':(6,8),
+    'keeper_souwester_walk_side':(8,10),
+    'keeper_souwester_walk_back':(8,10),
+    'keeper_souwester_walk_front':(8,10),
 }
 for raw in keeper_pngs:
     sidecar=json.loads(raw.with_suffix('.json').read_text())
@@ -133,6 +136,8 @@ assert manifest['keeper_wave_camera']['facing']=='front' and manifest['keeper_wa
 assert manifest['keeper_yawn']['interaction']=='emote-yawn' and manifest['keeper_yawn']['loop'] is False
 assert manifest['keeper_pyjamas_walk']['mirrorSafe'] is True and manifest['keeper_pyjamas_walk']['mirrorsFor']=='left'
 assert manifest['keeper_pyjamas_turn_back']['reverseFor']=='pyjamas_turn_front'
+for name in ['keeper_pyjamas_walk','keeper_pyjamas_turn_back','keeper_get_into_bed','keeper_pyjamas_snore']:
+    assert manifest[name]['outfit']=='light-blue-pyjamas'
 assert manifest['keeper_get_into_bed']['w']==48 and manifest['keeper_get_into_bed']['bedSurfacePoint']==[24,31]
 assert manifest['keeper_get_into_bed']['pillowPoint']==[38,22] and manifest['keeper_get_into_bed']['reverseFor']=='get_out_of_bed'
 assert manifest['keeper_pyjamas_snore']['bedSurfacePoint']==[24,31] and manifest['keeper_pyjamas_snore']['pillowPoint']==[38,22]
@@ -145,6 +150,11 @@ for name in ['keeper_party_idle','keeper_party_walk','keeper_party_turn_back']:
     assert manifest[name]['h']==48 and manifest[name]['anchor']==[16,48] and manifest[name]['outfit']=='party-hat'
 assert manifest['keeper_party_walk']['mirrorSafe'] is True
 assert manifest['keeper_party_turn_back']['reverseFor']=='party_turn_front'
+for name,vector,facing in [('keeper_souwester_walk_side',[1,0],'right'),('keeper_souwester_walk_back',[0,-1],'back'),('keeper_souwester_walk_front',[0,1],'front')]:
+    assert manifest[name]['h']==48 and manifest[name]['anchor']==[16,48]
+    assert manifest[name]['outfit']=='souwester' and manifest[name]['movementVector']==vector
+    assert manifest[name]['facing']==facing
+assert manifest['keeper_souwester_walk_side']['mirrorSafe'] is True and manifest['keeper_souwester_walk_side']['mirrorsFor']=='left'
 asset_contract=json.loads((root/'data/keeper_asset_contract.json').read_text())
 assert asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
 assert asset_contract['canvas']['standard']=={'width':32,'height':40,'density':4,'anchor':[16,40]}
@@ -189,8 +199,11 @@ previews={
     'keeper-scuba-swim-up':(8,120), 'keeper-scuba-swim-down':(8,120),
     'keeper-party-idle':(4,160), 'keeper-party-walk':(8,100),
     'keeper-party-turn-back':(10,120),
+    'keeper-souwester-walk-side':(8,100),
+    'keeper-souwester-walk-back':(8,100),
+    'keeper-souwester-walk-front':(8,100),
 }
 for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
-print('Verified: 71 spaces, 1548 rows, owned-item states, 9 TV/lamp/FX exports, 65 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
+print('Verified: 71 spaces, 1551 rows, owned-item states, 9 TV/lamp/FX exports, 68 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
