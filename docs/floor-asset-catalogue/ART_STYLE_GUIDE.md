@@ -113,7 +113,9 @@ Switches, buttons and control panels remain object art. Align their activation
 point to the keeper clip's manifest `handUsePoint`; do not paint a switch into
 the character sheet. Side switch use mirrors left/right, and rear switch use
 mirrors to swap the reaching hand. Exact offsets are in
-`docs/KEEPER_ANIMATIONS.md`.
+`docs/KEEPER_ASSET_SCALE.md` and the authoritative machine-readable
+`data/keeper_asset_contract.json`. The side and rear switch presses both use
+Y=17, so every switch centre is 23 logical pixels above his foot line.
 
 Furniture approval requires a quick silhouette test with the keeper beside it
 and, where relevant, seated at it. Device approval requires a believable hand

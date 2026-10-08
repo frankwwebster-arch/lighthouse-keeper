@@ -10,7 +10,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
 - `src/ui/floors.tsx` now renders fixed-width modular kitchen, living-room, and bedroom/en-suite bands. `src/game/config.ts` uses integer 4× coordinates and places the toilet on Floor 3.
 - `src/ui/art.tsx` implements `standard`, `on`, and `broken`; broken uses a shared integer-step casing wobble, smoke, and sparks. `?broken=<ids>` is the internal browser preview.
 - `src/ui/Sprite.tsx` supports horizontal strips through `{ "file", "frames", "fps" }` manifest entries while retaining compatibility with old string paths.
-- Cooker and basin activities use a reusable rear-facing fallback keeper. This proves the presentation only; it is not a production rig.
+- Cooker and basin activities use the named production rear-work aliases. The wider keeper set is exported and reviewable; most newer clips remain unwired until their matching world mechanics exist.
 - The seeded breakdown/repair loop is playable. Grown-ups can set average game-minutes between faults and the maximum concurrent faults; both zero values disable faults. Broken objects reject normal actions and expose a 25-game-minute repair action. The event stream carries placeholder SFX categories, but no audio engine/files are delivered.
 - The shop is explicitly excluded from keeper-owned faults. Its current on-island placement is a temporary gameplay fallback; the agreed later route is keeper jetty → upgradeable rowing boat/tug/speedboat → off-island shop. The keeper's jetty, garden/greenhouse, and future boat may break. A future workshop floor reduces fault pressure.
 - The exact current asset contract is [docs/CODEX_BRIEF.md](docs/CODEX_BRIEF.md), with production details in [docs/PRODUCTION_ASSET_KIT.md](docs/PRODUCTION_ASSET_KIT.md).
@@ -54,8 +54,8 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
 
 ## 2. Lighthouse keeper: rig and animation bible
 
-1. **Delivered fact:** no usable production keeper rig exists. The current keeper “parts” are illustrative placeholders; the recorded pivots are generic and no z-order, rotation centres, rear-view parts, or alternate outfit rig is delivered.
-2. **Locked production contract:** every keeper part uses the same 32 x 40 canvas; the standing silhouette is approximately 22 x 32 and the floor anchor is `(16, 40)`. Supply aligned front and back sets plus `keeper_reference.png`.
+1. **Delivered fact:** a usable production keeper set now exists under `art/raw/keeper-first-batch/` and `public/sprites/`, with aligned parts, front/rear/side action strips, manifest metadata and review GIFs. `data/keeper_asset_contract.json` is the scale and interaction authority.
+2. **Locked production contract:** every keeper part uses the same 32 x 40 canvas; the measured standing reference is 24.75 x 38.25 logical pixels and the floor anchor is `(16, 40)`. Wide airborne actions use 48 x 40 with anchor `(24,40)` but never rescale the character.
 3. Required production parts:
 
    | Part | Pivot recommendation | Notes |
@@ -66,7 +66,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
    | `keeper_{front,back}_arm_l` / `_arm_r` | shoulders `(10,15)` / `(22,15)` | same aligned canvas |
    | `keeper_{front,back}_leg_l` / `_leg_r` | hips `(13,25)` / `(19,25)` | same aligned canvas |
    | `prop_*` | per prop | pan, toothbrush, phone, book, fishing rod, cup |
-   | `keeper_outfit_dive_*` | same pivots | Victorian red-and-white bathing suit and helmet |
+   | `keeper_outfit_dive_*` | same pivots | full-length red-and-white striped bathing suit; no cap/helmet; bare feet |
 
 4. Default draw order, back to front: rear prop, rear arm, rear leg, body, front leg, head, beard, cap, front arm, held prop, foreground effect. A rear-view work pose may use a simpler fixed composition, but needs its own silhouette rather than mirroring the face.
 5. Pixel rotation policy: do not rotate raster limbs with CSS transforms. Either animate with translated parts, or provide hand-drawn angles at 15-degree steps for any visible swing. This avoids blur, uneven outlines, and sub-pixel jitter on iPad.
@@ -104,7 +104,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
    | `bodily_gag` | side | 3 / 12 | no | burp/fart/sneeze; effect separate |
    | `change_to_dive` | hidden | 0 visible | n/a | never show the keeper between the doors |
 
-9. **Delivered fact:** only static piano/loo-like concept poses exist. The table above is a production specification, not a claim that those strips exist.
+9. **Delivered fact:** 40 production exports now cover the master parts and initial movement/action set, including piano, loo, doors, switches, ladder/stairs, parachute jump, platform dive, digging and feeding animals. See `docs/KEEPER_ANIMATIONS.md` for exact delivered and pending clips.
 
 ## 3. Clickable objects, states, tiers and anchors
 
@@ -216,8 +216,8 @@ Side/rear extensions, the lift service core and the underground lair do not cons
 1. The current concepts should **not** be sliced into gameplay sprites as a shortcut. The major risk is inconsistent scale/style and no reusable pivots, not lack of PNG files.
 2. Required first production deliverables, in order:
 
-   1. A single consistent keeper puppet: front, side, rear, outfit hooks, anchors and z-order JSON.
-   2. The shared keeper clips `idle`, `walk`, `reach_use`, plus rear-facing `cook_back`, `brush_teeth_back`, and `wash_back`.
+   1. Extend the approved keeper set in the priority order in `docs/KEEPER_ANIMATIONS.md`, preserving `data/keeper_asset_contract.json`.
+   2. Build object art against the keeper's fixed switch, handle, seat, worktop, bowl and ground-use heights.
    3. Production 110 x 35 lighthouse shell bands and 105 x 35 room PNGs matching the implemented runtime modules.
    4. TV production assets for all three states, including separate wobble/smoke/spark effects; then cooker, shower and bed.
    5. Separated day/night world layers and the reusable floor-arrival smoke effect.
@@ -248,4 +248,4 @@ Side/rear extensions, the lift service core and the underground lair do not cons
    | Exact animation implementation | Undecided | Begin with frame strips; move only proven reusable limbs to a part rig |
    | SFX files/engine | Undecided | Define event hooks now; commission/source audio after interactions are playable |
 
-6. This handoff deliberately distinguishes the implemented runtime from the remaining production asset set. Delivery-order item 1 in `docs/PRODUCTION_ASSET_KIT.md` is complete and validated in the browser at 4× logical scale. The next art task is delivery-order item 2 (shared object-state overlays and one fully proven TV), not later-floor, lift, pet, visitor, ship or weather work.
+6. This handoff deliberately distinguishes the implemented runtime from the remaining production asset set. Delivery-order item 1 is complete; delivery-order item 2 and the 40-export keeper review set exist for review at 4× logical scale. Continue remaining keeper work from the prioritized backlog in `docs/KEEPER_ANIMATIONS.md`, and build every prop from `data/keeper_asset_contract.json` rather than estimating scale from concept art.

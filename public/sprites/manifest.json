@@ -163,6 +163,28 @@
   "loop": true,
   "z": 50
  },
+ "keeper_dig": {
+  "file": "keeper_dig.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   27,
+   38
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "dig-ground",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_door_open_back": {
   "file": "keeper_door_open_back.png",
   "w": 32,
@@ -224,6 +246,28 @@
   ],
   "loop": true,
   "mirrorSafe": true,
+  "z": 50
+ },
+ "keeper_feed_animals": {
+  "file": "keeper_feed_animals.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   27,
+   34
+  ],
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "feed-bowl",
+  "mirrorsFor": "left",
   "z": 50
  },
  "keeper_front_arm_l": {
@@ -429,6 +473,24 @@
   "reverseFor": "ladder_descend",
   "z": 50
  },
+ "keeper_parachute_jump": {
+  "file": "keeper_parachute_jump.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "parachute-jump",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_piano": {
   "file": "keeper_piano.png",
   "w": 32,
@@ -449,6 +511,24 @@
    20
   ],
   "loop": true,
+  "z": 50
+ },
+ "keeper_platform_dive": {
+  "file": "keeper_platform_dive.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "platform-dive",
+  "mirrorsFor": "left",
   "z": 50
  },
  "keeper_reference": {
@@ -546,7 +626,7 @@
   ],
   "handUsePoint": [
    26,
-   16
+   17
   ],
   "loop": false,
   "reverseFor": "switch_withdraw_back",

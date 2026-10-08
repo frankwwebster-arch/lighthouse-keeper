@@ -10,8 +10,10 @@ ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / "art/raw/keeper-first-batch"
 OUT.mkdir(parents=True, exist_ok=True)
 
-D = 4
-W, H = 32 * D, 40 * D
+ASSET_CONTRACT = json.loads((ROOT / "data/keeper_asset_contract.json").read_text())
+STANDARD_CANVAS = ASSET_CONTRACT["canvas"]["standard"]
+D = STANDARD_CANVAS["density"]
+W, H = STANDARD_CANVAS["width"] * D, STANDARD_CANVAS["height"] * D
 INK = "#14243a"
 INK2 = "#202f4d"
 NAVY = "#263d70"
@@ -185,8 +187,8 @@ def side_walk(step=0):
     return im
 
 
-def generated_frames(filename, expected, fallback=None):
-    """Normalise an identity-locked generated source onto aligned 32x40 slots."""
+def generated_frames(filename, expected, fallback=None, logical_width=32):
+    """Normalise an identity-locked generated source onto aligned contract slots."""
     source = Path(__file__).with_name(filename)
     if not source.exists():
         if fallback is not None:
@@ -247,7 +249,9 @@ def generated_frames(filename, expected, fallback=None):
                 raise ValueError("Generated keeper pose is empty")
             bounds.append((x0 + box[0], box[1], x0 + box[2], box[3]))
     tallest = max(y1 - y0 for _, y0, _, y1 in bounds)
-    scale = 152 / tallest
+    widest = max(x1 - x0 for x0, _, x1, _ in bounds)
+    target_width = logical_width * D
+    scale = min(152 / tallest, (target_width - 8) / widest)
     frames = []
     for pose_index, box in enumerate(bounds):
         pose = sheet.crop(box)
@@ -263,8 +267,8 @@ def generated_frames(filename, expected, fallback=None):
         # The game contract requires hard alpha even when a generated edge has a fringe.
         a = pose.getchannel("A").point(lambda value: 255 if value >= 128 else 0)
         pose.putalpha(a)
-        frame = image()
-        frame.alpha_composite(pose, ((W - pose.width) // 2, 158 - pose.height))
+        frame = Image.new("RGBA", (target_width, H), (0, 0, 0, 0))
+        frame.alpha_composite(pose, ((target_width - pose.width) // 2, 158 - pose.height))
         frames.append(frame)
     return frames
 
@@ -282,8 +286,8 @@ def part(which, rear=False, mood="neutral"):
     return im
 
 
-def contract(frames, fps, pivot=None, *, loop=True, seat_point=None, hand_use_point=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
-    value = {"w": 32, "h": 40, "frames": frames, "fps": fps, "density": 4, "anchor": [16, 40], "z": 50}
+def contract(frames, fps, pivot=None, *, w=32, loop=True, seat_point=None, hand_use_point=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
+    value = {"w": w, "h": 40, "frames": frames, "fps": fps, "density": D, "anchor": [w // 2, 40], "z": 50}
     if pivot is not None: value["pivot"] = pivot
     value["loop"] = loop
     if seat_point is not None: value["seatPoint"] = seat_point
@@ -297,19 +301,22 @@ def contract(frames, fps, pivot=None, *, loop=True, seat_point=None, hand_use_po
 
 
 def save(name, frames, fps=0, pivot=None, **metadata):
-    strip = Image.new("RGBA", (W * len(frames), H), (0, 0, 0, 0))
-    for i, frame in enumerate(frames): strip.alpha_composite(frame, (i * W, 0))
+    frame_width = frames[0].width
+    if any(frame.size != (frame_width, H) for frame in frames):
+        raise ValueError(f"Mismatched frame sizes for {name}")
+    strip = Image.new("RGBA", (frame_width * len(frames), H), (0, 0, 0, 0))
+    for i, frame in enumerate(frames): strip.alpha_composite(frame, (i * frame_width, 0))
     png = OUT / f"{name}_f{len(frames)}.png"
     strip.save(png, optimize=True)
-    png.with_suffix(".json").write_text(json.dumps(contract(len(frames), fps, pivot, **metadata), indent=2) + "\n")
+    png.with_suffix(".json").write_text(json.dumps(contract(len(frames), fps, pivot, w=frame_width // D, **metadata), indent=2) + "\n")
 
 
 def save_preview(name, frames, duration, ping_pong=False):
     sequence = frames + (frames[-2:0:-1] if ping_pong else [])
     previews = []
     for frame in sequence:
-        canvas = Image.new("RGBA", (256, 320), (244, 236, 214, 255))
-        canvas.alpha_composite(frame.resize((256, 320), Image.Resampling.NEAREST))
+        canvas = Image.new("RGBA", (frame.width * 2, H * 2), (244, 236, 214, 255))
+        canvas.alpha_composite(frame.resize((frame.width * 2, H * 2), Image.Resampling.NEAREST))
         previews.append(canvas.convert("P", palette=Image.Palette.ADAPTIVE, colors=128))
     preview = ROOT / f"docs/floor-asset-catalogue/{name}-preview.gif"
     previews[0].save(preview, save_all=True, append_images=previews[1:], duration=duration, loop=0, disposal=2, optimize=False)
@@ -340,6 +347,10 @@ stairs_up_frames = generated_frames("keeper-stairs-up-generated-source.png", 8)
 stairs_down_frames = generated_frames("keeper-stairs-down-generated-source.png", 8)
 switch_side_frames = generated_frames("keeper-switch-side-generated-source.png", 6)
 switch_back_frames = generated_frames("keeper-switch-back-generated-source.png", 6)
+parachute_jump_frames = generated_frames("keeper-parachute-jump-generated-source.png", 8, logical_width=48)
+platform_dive_frames = generated_frames("keeper-platform-dive-generated-source.png", 8, logical_width=48)
+dig_frames = generated_frames("keeper-dig-generated-source.png", 8)
+feed_animals_frames = generated_frames("keeper-feed-animals-generated-source.png", 8)
 save("keeper_walk", walk_frames, 10, mirror_safe=True)
 save("keeper_turn_back", turn_frames, 8, loop=False, reverse_for="turn_front")
 save("keeper_work_back", work_frames, 8, hand_use_point=[16, 21])
@@ -357,7 +368,11 @@ save("keeper_ladder_climb", ladder_frames, 10, hand_use_point=[16, 6], reverse_f
 save("keeper_stairs_up", stairs_up_frames, 10, mirror_safe=True)
 save("keeper_stairs_down", stairs_down_frames, 10, mirror_safe=True)
 save("keeper_switch_press_side", switch_side_frames, 8, loop=False, hand_use_point=[27, 17], reverse_for="switch_withdraw_side", mirror_safe=True, facing="right", interaction="press-switch", mirrors_for="left")
-save("keeper_switch_press_back", switch_back_frames, 8, loop=False, hand_use_point=[26, 16], reverse_for="switch_withdraw_back", mirror_safe=True, facing="back", interaction="press-switch", mirrors_for="back-left-hand")
+save("keeper_switch_press_back", switch_back_frames, 8, loop=False, hand_use_point=[26, 17], reverse_for="switch_withdraw_back", mirror_safe=True, facing="back", interaction="press-switch", mirrors_for="back-left-hand")
+save("keeper_parachute_jump", parachute_jump_frames, 10, loop=False, mirror_safe=True, facing="right", interaction="parachute-jump", mirrors_for="left")
+save("keeper_platform_dive", platform_dive_frames, 10, loop=False, mirror_safe=True, facing="right", interaction="platform-dive", mirrors_for="left")
+save("keeper_dig", dig_frames, 8, hand_use_point=[27, 38], mirror_safe=True, facing="right", interaction="dig-ground", mirrors_for="left")
+save("keeper_feed_animals", feed_animals_frames, 8, loop=False, hand_use_point=[27, 34], mirror_safe=True, facing="right", interaction="feed-bowl", mirrors_for="left")
 
 # A transparent source contact sheet makes alignment mistakes easy to spot.
 contact = Image.new("RGBA", (W * 4, H * 2), (244, 236, 214, 255))
@@ -381,4 +396,8 @@ save_preview("keeper-stairs-down", stairs_down_frames, 100)
 save_preview("keeper-switch-press-right", switch_side_frames, 120, ping_pong=True)
 save_preview("keeper-switch-press-left", [ImageOps.mirror(frame) for frame in switch_side_frames], 120, ping_pong=True)
 save_preview("keeper-switch-press-back", switch_back_frames, 120, ping_pong=True)
+save_preview("keeper-parachute-jump", parachute_jump_frames, 100)
+save_preview("keeper-platform-dive", platform_dive_frames, 100)
+save_preview("keeper-dig", dig_frames, 120)
+save_preview("keeper-feed-animals", feed_animals_frames, 120)
 print(f"Keeper batch authored in {OUT}")

@@ -28352,7 +28352,7 @@
       "reusable_source": "shared keeper_dig",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -39656,7 +39656,7 @@
       "reusable_source": "shared keeper_dig",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -40136,7 +40136,7 @@
       "reusable_source": "shared keeper_dig",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -40568,7 +40568,7 @@
       "reusable_source": "shared keeper_dig",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -51614,8 +51614,8 @@
   ],
   "summary": {
     "delivered-existing": 6,
-    "planned": 1190,
-    "delivered-review": 324,
+    "planned": 1186,
+    "delivered-review": 328,
     "hidden sequence": 10,
     "retired": 1
   },

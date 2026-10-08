@@ -39,7 +39,7 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==36
+assert len(keeper_pngs)==40
 required_clips={
     'keeper_idle':(4,6), 'keeper_walk':(8,10),
     'keeper_turn_back':(6,8), 'keeper_work_back':(8,8),
@@ -51,12 +51,15 @@ required_clips={
     'keeper_ladder_climb':(8,10), 'keeper_stairs_up':(8,10),
     'keeper_stairs_down':(8,10),
     'keeper_switch_press_side':(6,8), 'keeper_switch_press_back':(6,8),
+    'keeper_parachute_jump':(8,10), 'keeper_platform_dive':(8,10),
+    'keeper_dig':(8,8), 'keeper_feed_animals':(8,8),
 }
 for raw in keeper_pngs:
     sidecar=json.loads(raw.with_suffix('.json').read_text())
     im=Image.open(raw).convert('RGBA')
     assert im.size==(sidecar['w']*sidecar['density']*sidecar['frames'],sidecar['h']*sidecar['density'])
-    assert (sidecar['w'],sidecar['h'],sidecar['density'],sidecar['anchor'])==(32,40,4,[16,40])
+    assert sidecar['w'] in {32,48}
+    assert (sidecar['h'],sidecar['density'],sidecar['anchor'])==(40,4,[sidecar['w']//2,40])
     assert set(im.getchannel('A').tobytes()) <= {0,255}
     name=raw.stem.rsplit('_f',1)[0]
     m=manifest[name]
@@ -65,7 +68,7 @@ for raw in keeper_pngs:
     assert ImageChops.difference(im,exported).getbbox() is None
 for name,(frames,fps) in required_clips.items():
     assert manifest[name]['frames']==frames and manifest[name]['fps']==fps
-catalogued_clips={'keeper_idle','keeper_walk','keeper_cook_back','keeper_wash_back','keeper_brush_teeth_back','keeper_piano'}
+catalogued_clips={'keeper_idle','keeper_walk','keeper_cook_back','keeper_wash_back','keeper_brush_teeth_back','keeper_piano','keeper_dig'}
 assert all(any(r['asset_id']==name and r['implementation_status']=='delivered-review' for r in rows) for name in catalogued_clips)
 assert manifest['keeper_walk']['mirrorSafe'] is True
 assert manifest['keeper_turn_back']['loop'] is False and manifest['keeper_turn_back']['reverseFor']=='turn_front'
@@ -87,9 +90,23 @@ assert manifest['keeper_stairs_up']['mirrorSafe'] is True and manifest['keeper_s
 assert manifest['keeper_switch_press_side']['handUsePoint']==[27,17]
 assert manifest['keeper_switch_press_side']['facing']=='right' and manifest['keeper_switch_press_side']['mirrorsFor']=='left'
 assert manifest['keeper_switch_press_side']['interaction']=='press-switch' and manifest['keeper_switch_press_side']['reverseFor']=='switch_withdraw_side'
-assert manifest['keeper_switch_press_back']['handUsePoint']==[26,16]
+assert manifest['keeper_switch_press_back']['handUsePoint']==[26,17]
 assert manifest['keeper_switch_press_back']['facing']=='back' and manifest['keeper_switch_press_back']['mirrorsFor']=='back-left-hand'
 assert manifest['keeper_switch_press_back']['interaction']=='press-switch' and manifest['keeper_switch_press_back']['reverseFor']=='switch_withdraw_back'
+assert manifest['keeper_parachute_jump']['w']==48 and manifest['keeper_parachute_jump']['anchor']==[24,40]
+assert manifest['keeper_parachute_jump']['loop'] is False and manifest['keeper_parachute_jump']['interaction']=='parachute-jump'
+assert manifest['keeper_platform_dive']['w']==48 and manifest['keeper_platform_dive']['anchor']==[24,40]
+assert manifest['keeper_platform_dive']['loop'] is False and manifest['keeper_platform_dive']['interaction']=='platform-dive'
+assert manifest['keeper_dig']['handUsePoint']==[27,38] and manifest['keeper_dig']['interaction']=='dig-ground'
+assert manifest['keeper_feed_animals']['handUsePoint']==[27,34] and manifest['keeper_feed_animals']['interaction']=='feed-bowl'
+assert manifest['keeper_feed_animals']['loop'] is False and 'reverseFor' not in manifest['keeper_feed_animals']
+asset_contract=json.loads((root/'data/keeper_asset_contract.json').read_text())
+assert asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
+assert asset_contract['canvas']['standard']=={'width':32,'height':40,'density':4,'anchor':[16,40]}
+assert asset_contract['canvas']['extendedAirborne']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
+assert asset_contract['interactionProfiles']['switchSideRight']['handUsePoint']==[27,17]
+assert asset_contract['interactionProfiles']['switchBackRightHand']['handUsePoint']==[26,17]
+assert asset_contract['objectRules']['lightSwitchCentreHeightAboveFloor']==23
 walk=Image.open(root/'public/sprites'/manifest['keeper_walk']['file']).convert('RGBA')
 walk_frames=[walk.crop((i*128,0,(i+1)*128,160)) for i in range(8)]
 assert len({frame.tobytes() for frame in walk_frames})>=5
@@ -104,8 +121,10 @@ previews={
     'keeper-stairs-down':(8,100),
     'keeper-switch-press-right':(10,120), 'keeper-switch-press-left':(10,120),
     'keeper-switch-press-back':(10,120),
+    'keeper-parachute-jump':(8,100), 'keeper-platform-dive':(8,100),
+    'keeper-dig':(8,120), 'keeper-feed-animals':(8,120),
 }
 for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
-print('Verified: 71 spaces, 1531 rows, owned-item states, 9 TV/lamp/FX exports, 36 aligned keeper exports, hard alpha, animated clips and manifest contracts.')
+print('Verified: 71 spaces, 1531 rows, owned-item states, 9 TV/lamp/FX exports, 40 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')

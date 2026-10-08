@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "status": "authoritative",
+  "units": "logical-pixels",
+  "coordinateSystem": {
+    "origin": "top-left",
+    "xPositive": "right",
+    "yPositive": "down",
+    "floorY": 40,
+    "mirrorFormula": "mirroredX = canvasWidth - x"
+  },
+  "canvas": {
+    "standard": { "width": 32, "height": 40, "density": 4, "anchor": [16, 40] },
+    "extendedAirborne": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] }
+  },
+  "measuredReference": {
+    "source": "public/sprites/keeper_reference.png",
+    "visibleBoundsAtDensity4": [15, 4, 114, 157],
+    "visibleBoundsLogical": [3.75, 1, 28.5, 39.25],
+    "visibleWidth": 24.75,
+    "visibleHeight": 38.25
+  },
+  "rigPivots": {
+    "neck": [16, 11],
+    "shoulderLeft": [10, 15],
+    "shoulderRight": [22, 15],
+    "hipLeft": [13, 25],
+    "hipRight": [19, 25]
+  },
+  "interactionProfiles": {
+    "switchSideRight": { "clip": "keeper_switch_press_side", "handUsePoint": [27, 17], "offsetFromFeet": [11, -23], "mirrorFor": "switchSideLeft" },
+    "switchSideLeft": { "clip": "keeper_switch_press_side", "handUsePoint": [5, 17], "offsetFromFeet": [-11, -23], "mirroredFrom": "switchSideRight" },
+    "switchBackRightHand": { "clip": "keeper_switch_press_back", "handUsePoint": [26, 17], "offsetFromFeet": [10, -23], "mirrorFor": "switchBackLeftHand" },
+    "switchBackLeftHand": { "clip": "keeper_switch_press_back", "handUsePoint": [6, 17], "offsetFromFeet": [-10, -23], "mirroredFrom": "switchBackRightHand" },
+    "doorSideRight": { "clip": "keeper_door_open_side", "handUsePoint": [25, 20], "offsetFromFeet": [9, -20], "mirrorFor": "doorSideLeft" },
+    "doorBackRightHand": { "clip": "keeper_door_open_back", "handUsePoint": [24, 20], "offsetFromFeet": [8, -20], "mirrorFor": "doorBackLeftHand" },
+    "rearWorkSurface": { "clip": "keeper_work_back", "handUsePoint": [16, 21], "offsetFromFeet": [0, -19] },
+    "sideSeat": { "clip": "keeper_sit_side", "seatPoint": [16, 29], "offsetFromFeet": [0, -11] },
+    "frontSeat": { "clip": "keeper_sit_front", "seatPoint": [16, 29], "offsetFromFeet": [0, -11] },
+    "piano": { "clip": "keeper_piano", "seatPoint": [16, 29], "handUsePoint": [24, 20] },
+    "ladderUpperHand": { "clip": "keeper_ladder_climb", "handUsePoint": [16, 6], "offsetFromFeet": [0, -34] },
+    "animalBowlRight": { "clip": "keeper_feed_animals", "handUsePoint": [27, 34], "offsetFromFeet": [11, -6], "mirrorFor": "animalBowlLeft" },
+    "digGroundRight": { "clip": "keeper_dig", "handUsePoint": [27, 38], "offsetFromFeet": [11, -2], "mirrorFor": "digGroundLeft" }
+  },
+  "objectRules": {
+    "lightSwitchCentreHeightAboveFloor": 23,
+    "doorHandleCentreHeightAboveFloor": 20,
+    "seatContactHeightAboveFloor": 11,
+    "rearWorkSurfaceHeightAboveFloor": 19,
+    "animalBowlTargetHeightAboveFloor": 6,
+    "digContactHeightAboveFloor": 2,
+    "rule": "Place the object interaction point at the selected profile offset from the keeper feet anchor; never rescale the keeper to fit an object."
+  }
+}

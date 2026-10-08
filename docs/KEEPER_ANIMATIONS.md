@@ -11,6 +11,7 @@ to infer meaning from filenames or Git history.
 | Put it in the game | `public/sprites/keeper_*.png` via `public/sprites/manifest.json` |
 | Rebuild or adjust it | `art/source/keeper-first-batch/author_keeper.py` and the matching `*-generated-source.png` |
 | Check exact frames, speed and alignment | matching JSON in `art/raw/keeper-first-batch/` |
+| Build an object at the right size/height | `docs/KEEPER_ASSET_SCALE.md` and `data/keeper_asset_contract.json` |
 
 Folders named `replaced-*` are history only. Never use those in the game.
 
@@ -42,6 +43,10 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Walk downstairs | `keeper_stairs_down` | right; mirror left |
 | Press side switch | `keeper_switch_press_side` | right; mirror left; reverse to withdraw |
 | Press switch ahead | `keeper_switch_press_back` | rear/right hand; mirror for left hand; reverse to withdraw |
+| Parachute jump | `keeper_parachute_jump` | right; mirror left; jump/freefall only; canopy is separate |
+| Dive from platform | `keeper_platform_dive` | right; mirror left; striped costume, bare head/feet |
+| Dig garden | `keeper_dig` | right; mirror left; soil remains separate |
+| Feed animals | `keeper_feed_animals` | right; mirror left; bowl and animal remain separate |
 
 For review, the shared side strip has separate, plainly named
 `keeper-switch-press-right-preview.gif` and
@@ -53,15 +58,17 @@ work loop so gameplay code can remain descriptive without duplicating art.
 
 ## Applying a switch animation to an object
 
-All keeper clips use a 32 × 40 logical canvas and feet anchor `(16,40)`.
+Normal keeper clips use a 32 × 40 logical canvas and feet anchor `(16,40)`.
+The two horizontal airborne clips use a 48 × 40 canvas and `(24,40)` anchor,
+adding transparent room without changing his scale.
 `handUsePoint` is the fingertip location in that same canvas.
 
 | Pose | `handUsePoint` | Switch position relative to his feet |
 |---|---:|---:|
 | side, facing right | `(27,17)` | `(+11,-23)` |
 | side, mirrored left | `(5,17)` | `(-11,-23)` |
-| back, right hand | `(26,16)` | `(+10,-24)` |
-| back, mirrored hand | `(6,16)` | `(-10,-24)` |
+| back, right hand | `(26,17)` | `(+10,-23)` |
+| back, mirrored hand | `(6,17)` | `(-10,-23)` |
 
 For a new switch, button or control:
 
@@ -82,3 +89,32 @@ new furniture, door, switch, ladder and stair clips are game-ready assets but
 remain unwired until the corresponding object/path mechanics are implemented.
 This prevents a seated or climbing character appearing without matching world
 geometry.
+
+## Animation backlog
+
+The next animation work should follow gameplay dependency rather than novelty.
+
+### Priority 0 — everyday playable lighthouse life
+
+- Seated reading and watching television, including stand/sit transitions.
+- Lie down, sleep loop and get out of bed.
+- Telescope look, telephone use and fishing cast/reel/catch.
+- Sweep/tidy, carry/pick up/put down, repair and polish with visible tools.
+- Garden watering, planting and harvesting to complement digging.
+- Pet/stroke/play and a standing hand-feed variant for larger animals.
+- Greeting, receiving/giving an item, thinking and idle variants.
+
+### Priority 1 — complete the new adventure actions
+
+- Parachute canopy deployment, hanging descent, steering and landing/roll. The
+  delivered jump ends in freefall so the canopy remains a reusable object/effect.
+- Dive splash, underwater entry, swim idle, swimming lengths, floating, climb
+  out and rescue. The delivered platform dive ends just before water contact.
+- Rowing and boat embark/disembark.
+- Spacesuit floating for the later expansion.
+
+### Priority 2 — personality and comedy
+
+- Dance, celebratory jump, spin, shake, shrug and robot walk.
+- Laugh, cry, hide, headstand and flex.
+- Rare bodily/comedy reactions kept separate from ordinary interaction clips.

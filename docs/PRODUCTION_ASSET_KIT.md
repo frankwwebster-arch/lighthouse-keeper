@@ -56,12 +56,16 @@ Initial clips:
 | `stairs_up` | side | 8 · 10 | yes | high-knee ascent; mirror left |
 | `stairs_down` | side | 8 · 10 | yes | balanced descent; mirror left |
 | `switch_press_side` | side | 6 · 8 | no | fingertip `(27,17)`; mirror left; reverse to withdraw |
-| `switch_press_back` | back | 6 · 8 | no | fingertip `(26,16)`; mirror hand; reverse to withdraw |
+| `switch_press_back` | back | 6 · 8 | no | fingertip `(26,17)`; same height as side; mirror hand; reverse |
+| `parachute_jump` | side | 8 · 10 | no | 48 × 40 wide canvas; jump/freefall; canopy separate |
+| `platform_dive` | side | 8 · 10 | no | 48 × 40 wide canvas; striped costume; splash separate |
+| `dig` | side | 8 · 8 | yes | spade contact `(27,38)`; mirror left |
+| `feed_animals` | side | 8 · 8 | no | scoop/bowl target `(27,34)`; mirror left; includes rise |
 | `loo_hide` | hidden | 0 | n/a | keeper is not drawn |
 
-Required part files are `keeper_front_head_{happy,neutral,grumpy,asleep,open}.png`, `keeper_front_{torso,arm_l,arm_r,leg_l,leg_r}.png`, the equivalent `keeper_back_*` files with one back head, and `keeper_reference.png`; every file is 32 × 40. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. Pivots are for assembly tooling; production raster limbs use drawn key angles or integer translations in final clips rather than arbitrary CSS rotation.
+Required part files are `keeper_front_head_{happy,neutral,grumpy,asleep,open}.png`, `keeper_front_{torso,arm_l,arm_r,leg_l,leg_r}.png`, the equivalent `keeper_back_*` files with one back head, and `keeper_reference.png`; every part file is 32 × 40. Wide airborne strips may use 48 × 40 without rescaling the keeper. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. Pivots are for assembly tooling; production raster limbs use drawn key angles or integer translations in final clips rather than arbitrary CSS rotation. `data/keeper_asset_contract.json` is authoritative for scale and use points.
 
-The later dive outfit reuses every pivot. Supply `keeper_outfit_dive_*` in Victorian red-and-white stripes only when that later batch begins. Changing is an invisible clip: inner door closes, keeper disappears, zip/rustle SFX, outfit swaps, exterior door opens, dressed keeper exits. There is never a visible frame between the two doors.
+The dive outfit reuses every pivot. Its approved reference is a traditional full-length red-and-white striped one-piece costume, without cap or helmet and with bare feet. Changing is an invisible clip: inner door closes, keeper disappears, zip/rustle SFX, outfit swaps, exterior door opens, dressed keeper exits. There is never a visible frame between the two doors.
 
 ## Floor modules and furniture
 

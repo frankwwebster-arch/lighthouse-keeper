@@ -69,8 +69,8 @@ Completed in the first implementation slice:
 
 Next priorities:
 
-1. Review delivery-order items 2 and the first keeper subset of item 3 in `docs/floor-asset-catalogue/review.html`: CRT/object-state overlays plus aligned keeper master parts and five initial clips.
-2. Produce the aligned keeper master and required clips only when delivery-order item 3 begins.
+1. Review delivery-order items 2 and the expanded keeper subset of item 3 in `docs/floor-asset-catalogue/review.html`: CRT/object-state overlays plus 40 aligned keeper exports.
+2. Use `data/keeper_asset_contract.json` as the authority for all new object scale, keeper pivots and interaction heights; use `docs/KEEPER_ANIMATIONS.md` for the prioritized remaining clips.
 3. Add a day/night palette or overlay system and the proper roughly 30-second recap.
 4. Design future floor missions so eligible standard floors can unlock in different orders; do not hard-code a linear room sequence.
 5. Leave aquarium, weather station, lair, lift, pets, visitors, ship and weather art until the later batch is authorised.
