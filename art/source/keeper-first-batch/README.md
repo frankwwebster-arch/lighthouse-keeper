@@ -49,8 +49,8 @@ Switch use follows the same economy: one side pose mirrors left/right, while the
 rear pose mirrors to swap hands. Both reverse from pressed position to idle.
 Their fingertips now share the authoritative Y=17 datum. Parachute jump,
 platform dive, garden digging and animal feeding extend the same production
-set. Airborne frames expand their transparent canvas to 48 × 40, or 48 × 56
-for the vertical dive, but retain the keeper's scale.
+set. Airborne frames expand their transparent canvas to 48 × 56 for the dive
+or 48 × 84 for parachute deployment, but retain the keeper's scale.
 
 The `docs/floor-asset-catalogue/keeper-*-preview.gif` files are enlarged
 previews made from the exact production frames; they are not separate artwork.
@@ -93,8 +93,9 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
 - `keeper-switch-back-generated-source.png` — six rear reach frames with one
   fixed invisible fingertip target at the same height as the side press; mirror
   to swap hand and reverse to withdraw.
-- `keeper-parachute-jump-generated-source.png` — eight right-facing frames from
-  take-off into freefall, with a compact harness/pack and no baked-in canopy.
+- `keeper-parachute-jump-generated-source.png` — nine right-facing frames from
+  take-off through pack opening, pilot chute and round red-and-cream canopy
+  deployment, ending in an upright hanging pose with taut suspension lines.
 - `keeper-dive-costume-turnaround-source.png` — identity-locked front, side and
   rear reference in a full-length red-and-white striped bathing costume, bare
   headed and barefoot.
@@ -109,6 +110,6 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,
 hardens alpha, places it on a density-4 contract canvas, and emits the manifest
-sidecars and review GIFs. Most clips use 32 × 40; long airborne poses use 48 ×
-40 at the identical character scale. All generation used the built-in image
-generator in referenced-image mode.
+sidecars and review GIFs. Most clips use 32 × 40; dive and parachute poses use
+larger transparent contract canvases at the identical character scale. All
+generation used the built-in image generator in referenced-image mode.

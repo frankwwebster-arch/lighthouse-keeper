@@ -11,9 +11,9 @@ page explains it in ordinary language.
   `(16,40)`.
 - His measured visible reference is 24.75 × 38.25 logical pixels. The uneven
   fractions come from measuring the density-4 source, not from rescaling him.
-- Wide airborne actions use a 48 × 40 canvas with anchor `(24,40)`. The complete
-  vertical dive uses 48 × 56 with anchor `(24,56)`. The keeper remains exactly
-  the same size; only the transparent space around him grows.
+- The vertical dive uses 48 × 56 with anchor `(24,56)`. Full parachute
+  deployment uses 48 × 84 with anchor `(24,84)`. The keeper remains exactly the
+  same size; only the transparent space around him grows.
 - Never scale the keeper to make him meet an object. Position and size the
   object from the interaction points below.
 

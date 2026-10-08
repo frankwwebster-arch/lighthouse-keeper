@@ -43,7 +43,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Walk downstairs | `keeper_stairs_down` | right; mirror left |
 | Press side switch | `keeper_switch_press_side` | right; mirror left; reverse to withdraw |
 | Press switch ahead | `keeper_switch_press_back` | rear/right hand; mirror for left hand; reverse to withdraw |
-| Parachute jump | `keeper_parachute_jump` | right; mirror left; jump/freefall only; canopy is separate |
+| Parachute jump | `keeper_parachute_jump` | 9 frames; pack opens and round canopy deploys |
 | Dive from platform | `keeper_platform_dive` | 10 frames; right/mirror left; ends vertical head-first |
 | Dig garden | `keeper_dig` | right; mirror left; soil remains separate |
 | Feed animals | `keeper_feed_animals` | right; mirror left; bowl and animal remain separate |
@@ -59,7 +59,7 @@ work loop so gameplay code can remain descriptive without duplicating art.
 ## Applying a switch animation to an object
 
 Normal keeper clips use a 32 × 40 logical canvas and feet anchor `(16,40)`.
-The horizontal airborne clip uses 48 × 40; the head-first dive uses 48 × 56.
+The head-first dive uses 48 × 56; the full parachute deployment uses 48 × 84.
 Both add transparent room without changing his scale.
 `handUsePoint` is the fingertip location in that same canvas.
 
@@ -106,8 +106,8 @@ The next animation work should follow gameplay dependency rather than novelty.
 
 ### Priority 1 — complete the new adventure actions
 
-- Parachute canopy deployment, hanging descent, steering and landing/roll. The
-  delivered jump ends in freefall so the canopy remains a reusable object/effect.
+- Parachute steering, hanging-descent loop and landing/roll. The delivered jump
+  now includes pack opening, pilot chute, canopy inflation and hanging pose.
 - Dive splash, underwater entry, swim idle, swimming lengths, floating, climb
   out and rescue. The delivered platform dive now rotates fully head-first and
   ends just before water contact.

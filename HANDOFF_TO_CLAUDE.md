@@ -55,7 +55,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
 ## 2. Lighthouse keeper: rig and animation bible
 
 1. **Delivered fact:** a usable production keeper set now exists under `art/raw/keeper-first-batch/` and `public/sprites/`, with aligned parts, front/rear/side action strips, manifest metadata and review GIFs. `data/keeper_asset_contract.json` is the scale and interaction authority.
-2. **Locked production contract:** every keeper part uses the same 32 x 40 canvas; the measured standing reference is 24.75 x 38.25 logical pixels and the floor anchor is `(16, 40)`. Airborne actions may use 48 x 40 or, for the vertical dive, 48 x 56, but never rescale the character.
+2. **Locked production contract:** every keeper part uses the same 32 x 40 canvas; the measured standing reference is 24.75 x 38.25 logical pixels and the floor anchor is `(16, 40)`. Airborne actions may use 48 x 56 for the vertical dive or 48 x 84 for parachute deployment, but never rescale the character.
 3. Required production parts:
 
    | Part | Pivot recommendation | Notes |

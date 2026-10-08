@@ -476,13 +476,13 @@
  "keeper_parachute_jump": {
   "file": "keeper_parachute_jump.png",
   "w": 48,
-  "h": 40,
-  "frames": 8,
+  "h": 84,
+  "frames": 9,
   "fps": 10,
   "density": 4,
   "anchor": [
    24,
-   40
+   84
   ],
   "loop": false,
   "mirrorSafe": true,
