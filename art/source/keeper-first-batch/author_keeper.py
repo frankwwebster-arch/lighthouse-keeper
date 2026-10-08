@@ -432,6 +432,8 @@ play_drums_back_frames = generated_frames("keeper-play-drums-back-generated-sour
 watch_movie_frames = generated_frames("keeper-watch-movie-generated-source.png", 8, logical_width=48)
 clear_snow_frames = generated_frames("keeper-clear-snow-generated-source.png", 8, logical_width=48)
 crouch_work_back_frames = generated_frames("keeper-crouch-work-back-generated-source.png", 8)
+cake_from_oven_back_frames = generated_frames("keeper-cake-from-oven-back-generated-source.png", 8, logical_width=48)
+cake_turn_right_frames = generated_frames("keeper-cake-turn-right-generated-source.png", 6, logical_width=48)
 save("keeper_walk", walk_frames, 10, mirror_safe=True)
 save("keeper_turn_back", turn_frames, 8, loop=False, reverse_for="turn_front")
 save("keeper_work_back", work_frames, 8, hand_use_point=[16, 21])
@@ -489,6 +491,8 @@ save("keeper_play_drums_back", play_drums_back_frames, 10, anchor_point=[16, 48]
 save("keeper_watch_movie", watch_movie_frames, 6, seat_point=[24, 29], hand_use_point=[34, 19], look_target_point=[56, 14], mirror_safe=True, facing="rear-right", interaction="watch-movie-popcorn", mirrors_for="rear-left")
 save("keeper_clear_snow", clear_snow_frames, 8, hand_use_point=[43, 37], outfit="winter-coat", mirror_safe=True, facing="right", interaction="clear-snow", mirrors_for="left")
 save("keeper_crouch_work_back", crouch_work_back_frames, 8, hand_use_point=[16, 38], facing="back", interaction="ground-work")
+save("keeper_cake_from_oven_back", cake_from_oven_back_frames, 8, loop=False, hand_use_point=[24, 30], facing="back", interaction="retrieve-cake-from-oven")
+save("keeper_cake_turn_right", cake_turn_right_frames, 8, loop=False, hand_use_point=[34, 20], mirror_safe=True, facing="back-to-right", interaction="turn-carry-cake", mirrors_for="back-to-left")
 
 # A transparent source contact sheet makes alignment mistakes easy to spot.
 contact = Image.new("RGBA", (W * 4, H * 2), (244, 236, 214, 255))
@@ -554,4 +558,7 @@ save_preview("keeper-watch-movie-left", [ImageOps.mirror(frame) for frame in wat
 save_preview("keeper-clear-snow-right", clear_snow_frames, 120)
 save_preview("keeper-clear-snow-left", [ImageOps.mirror(frame) for frame in clear_snow_frames], 120)
 save_preview("keeper-crouch-work-back", crouch_work_back_frames, 120)
+save_preview("keeper-cake-from-oven-back", cake_from_oven_back_frames, 120)
+save_preview("keeper-cake-turn-right", cake_turn_right_frames, 120)
+save_preview("keeper-cake-turn-left", [ImageOps.mirror(frame) for frame in cake_turn_right_frames], 120)
 print(f"Keeper batch authored in {OUT}")

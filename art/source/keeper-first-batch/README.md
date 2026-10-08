@@ -169,6 +169,11 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
   banks and spray kept separate.
 - `keeper-crouch-work-back-generated-source.png` — eight direct-rear crouched
   poses using the established alternating back-work arm rhythm at ground level.
+- `keeper-cake-from-oven-back-generated-source.png` — eight direct-rear poses
+  crouching to an unseen oven, withdrawing a cake on a dark tray and standing
+  with it level; quilted oven mitts, tray and cake are part of the actor clip.
+- `keeper-cake-turn-right-generated-source.png` — six connected poses turning
+  from the retrieval end pose to right-facing carry; mirror for the left turn.
 
 The replaced navy pyjama source files remain in this directory as historical
 inputs, but production uses only the `light-blue` files above. The built-in
@@ -183,6 +188,9 @@ lock repeated props, seat points, strike points and screen sightlines across
 the loop. The snow prompt adds only the thick winter outfit and held shovel,
 leaving ground snow/effects separate; the crouched prompt preserves the rear
 uniform and adapts the approved back-work rhythm to a fixed low contact point.
+The cake prompt pair locks the same golden sponge, dark tray, cream mitts and
+hand positions across a rear oven retrieval and a mirror-safe carrying turn;
+oven casing, rack and door remain separate.
 
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,
@@ -195,5 +203,5 @@ Directional swim clips use a centred 48 × 48 canvas; party and sou'wester
 headwear use a 32 × 48 canvas so headwear never shrinks the keeper. Guitar and
 movie clips use 48 × 40 for their horizontal extent; raised drumsticks use
 32 × 48 without shrinking the seated body. Snow clearing also uses 48 × 40 for
-the full shovel stroke. All
+the full shovel stroke; cake retrieval and carrying use 48 × 40 for the tray. All
 generation used the built-in image generator in referenced-image mode.

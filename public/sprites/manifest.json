@@ -145,6 +145,48 @@
   "loop": true,
   "z": 50
  },
+ "keeper_cake_from_oven_back": {
+  "file": "keeper_cake_from_oven_back.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   24,
+   30
+  ],
+  "loop": false,
+  "facing": "back",
+  "interaction": "retrieve-cake-from-oven",
+  "z": 50
+ },
+ "keeper_cake_turn_right": {
+  "file": "keeper_cake_turn_right.png",
+  "w": 48,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   34,
+   20
+  ],
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "back-to-right",
+  "interaction": "turn-carry-cake",
+  "mirrorsFor": "back-to-left",
+  "z": 50
+ },
  "keeper_carry_shopping": {
   "file": "keeper_carry_shopping.png",
   "w": 32,

@@ -98,6 +98,12 @@ The reusable crouched rear-work loop uses the normal canvas and reaches ground
 objects at `(16,38)`. Snow banks, shoveled piles and spray remain separate
 layers; the thick winter coat is recorded as `winter-coat` outfit metadata.
 
+Cake retrieval and carrying use the 48 × 40 `extendedTrayAction` canvas. Align
+the oven rack to `(24,30)` for the direct-rear retrieval. The connected turn
+holds the tray at `(34,20)` for right and mirrored `(14,20)` for left. The
+mitts, tray and cake stay on the actor; oven casing, door and rack stay on the
+object so different ovens can reuse the same animation.
+
 Any new prop-based animation must add its hand, seat or ground point to the
 JSON contract and its sprite sidecar. Verification rejects changes that break
 the established switch heights, canvas scale or feet anchors.

@@ -7,7 +7,7 @@ root=Path(__file__).resolve().parents[1]
 data=json.loads((root/'docs/floor-asset-catalogue/catalogue.json').read_text())
 spaces=data['spaces']; rows=data['rows']
 assert len(spaces)==71 and len({s['space_id'] for s in spaces})==71
-assert len(rows)==1557
+assert len(rows)==1559
 with (root/'docs/floor-asset-catalogue/catalogue.csv').open(newline='') as f:
     assert len(list(csv.DictReader(f)))==len(rows)
 for space in spaces:
@@ -39,7 +39,7 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==75
+assert len(keeper_pngs)==77
 required_clips={
     'keeper_idle':(4,6), 'keeper_walk':(8,10),
     'keeper_turn_back':(6,8), 'keeper_work_back':(8,8),
@@ -73,6 +73,7 @@ required_clips={
     'keeper_play_drums_front':(8,10), 'keeper_play_drums_back':(8,10),
     'keeper_watch_movie':(8,6),
     'keeper_clear_snow':(8,8), 'keeper_crouch_work_back':(8,8),
+    'keeper_cake_from_oven_back':(8,8), 'keeper_cake_turn_right':(6,8),
 }
 for raw in keeper_pngs:
     sidecar=json.loads(raw.with_suffix('.json').read_text())
@@ -172,6 +173,11 @@ assert manifest['keeper_clear_snow']['w']==48 and manifest['keeper_clear_snow'][
 assert manifest['keeper_clear_snow']['outfit']=='winter-coat' and manifest['keeper_clear_snow']['mirrorSafe'] is True
 assert manifest['keeper_crouch_work_back']['handUsePoint']==[16,38]
 assert manifest['keeper_crouch_work_back']['facing']=='back' and manifest['keeper_crouch_work_back']['interaction']=='ground-work'
+assert manifest['keeper_cake_from_oven_back']['w']==48 and manifest['keeper_cake_from_oven_back']['handUsePoint']==[24,30]
+assert manifest['keeper_cake_from_oven_back']['loop'] is False and manifest['keeper_cake_from_oven_back']['facing']=='back'
+assert manifest['keeper_cake_turn_right']['w']==48 and manifest['keeper_cake_turn_right']['handUsePoint']==[34,20]
+assert manifest['keeper_cake_turn_right']['loop'] is False and manifest['keeper_cake_turn_right']['mirrorSafe'] is True
+assert manifest['keeper_cake_turn_right']['mirrorsFor']=='back-to-left'
 asset_contract=json.loads((root/'data/keeper_asset_contract.json').read_text())
 assert asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
 assert asset_contract['canvas']['standard']=={'width':32,'height':40,'density':4,'anchor':[16,40]}
@@ -186,6 +192,7 @@ assert asset_contract['canvas']['extendedHeadwear']=={'width':32,'height':48,'de
 assert asset_contract['canvas']['extendedHeldInstrument']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
 assert asset_contract['canvas']['extendedRaisedArmsAction']=={'width':32,'height':48,'density':4,'anchor':[16,48]}
 assert asset_contract['canvas']['extendedSnowToolAction']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
+assert asset_contract['canvas']['extendedTrayAction']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
 assert asset_contract['interactionProfiles']['switchSideRight']['handUsePoint']==[27,17]
 assert asset_contract['interactionProfiles']['switchBackRightHand']['handUsePoint']==[26,17]
 assert asset_contract['interactionProfiles']['drumsFront']['seatPoint']==[16,37]
@@ -195,11 +202,15 @@ assert asset_contract['interactionProfiles']['watchMovieRight']['seatPoint']==[2
 assert asset_contract['interactionProfiles']['watchMovieRight']['lookTargetPoint']==[56,14]
 assert asset_contract['interactionProfiles']['clearSnowRight']['handUsePoint']==[43,37]
 assert asset_contract['interactionProfiles']['crouchGroundBack']['handUsePoint']==[16,38]
+assert asset_contract['interactionProfiles']['ovenCakeBack']['handUsePoint']==[24,30]
+assert asset_contract['interactionProfiles']['cakeTurnRight']['handUsePoint']==[34,20]
 assert asset_contract['objectRules']['lightSwitchCentreHeightAboveFloor']==23
 assert asset_contract['objectRules']['movieScreenHorizontalClearanceFromSeat']==32
 assert asset_contract['objectRules']['drumSurfaceHeightAboveRaisedSeat']==10
 assert asset_contract['objectRules']['snowShovelContactHeightAboveFloor']==3
 assert asset_contract['objectRules']['crouchedGroundContactHeightAboveFloor']==2
+assert asset_contract['objectRules']['ovenRackHeightAboveFloor']==10
+assert asset_contract['objectRules']['cakeCarryHeightAboveFloor']==20
 walk=Image.open(root/'public/sprites'/manifest['keeper_walk']['file']).convert('RGBA')
 walk_frames=[walk.crop((i*128,0,(i+1)*128,160)) for i in range(8)]
 assert len({frame.tobytes() for frame in walk_frames})>=5
@@ -238,8 +249,10 @@ previews={
     'keeper-watch-movie-right':(8,160), 'keeper-watch-movie-left':(8,160),
     'keeper-clear-snow-right':(8,120), 'keeper-clear-snow-left':(8,120),
     'keeper-crouch-work-back':(8,120),
+    'keeper-cake-from-oven-back':(8,120),
+    'keeper-cake-turn-right':(6,120), 'keeper-cake-turn-left':(6,120),
 }
 for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
-print('Verified: 71 spaces, 1557 rows, owned-item states, 9 TV/lamp/FX exports, 75 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
+print('Verified: 71 spaces, 1559 rows, owned-item states, 9 TV/lamp/FX exports, 77 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')

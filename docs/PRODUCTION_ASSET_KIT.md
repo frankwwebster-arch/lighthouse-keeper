@@ -95,6 +95,8 @@ Initial clips:
 | `watch_movie` | rear ¾ reclined | 8 · 6 | yes | 48 × 40; popcorn included; seating and screen separate |
 | `clear_snow` | side | 8 · 8 | yes | 48 × 40; winter coat and shovel; contact `(43,37)`; mirror left |
 | `crouch_work_back` | rear crouched | 8 · 8 | yes | reusable low work proxy; ground contact `(16,38)` |
+| `cake_from_oven_back` | rear | 8 · 8 | no | 48 × 40 one-shot; oven rack `(24,30)`; oven separate |
+| `cake_turn_right` | rear to side | 6 · 8 | no | 48 × 40; tray carry `(34,20)`; mirror for left |
 | `loo_hide` | hidden | 0 | n/a | keeper is not drawn |
 
 Required part files are `keeper_front_head_{happy,neutral,grumpy,asleep,open}.png`, `keeper_front_{torso,arm_l,arm_r,leg_l,leg_r}.png`, the equivalent `keeper_back_*` files with one back head, and `keeper_reference.png`; every part file is 32 × 40. Airborne strips may expand to 48 × 56 for the dive or 48 × 84 for parachute deployment without rescaling the keeper. Long side tools may use 40 × 40, bed poses 48 × 40, centred swimming 48 × 48, and tall headwear 32 × 48. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. Pivots are for assembly tooling; production raster limbs use drawn key angles or integer translations in final clips rather than arbitrary CSS rotation. `data/keeper_asset_contract.json` is authoritative for scale and use points.

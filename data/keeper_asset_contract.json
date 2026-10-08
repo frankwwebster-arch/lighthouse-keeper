@@ -21,7 +21,8 @@
     "extendedHeadwear": { "width": 32, "height": 48, "density": 4, "anchor": [16, 48] },
     "extendedHeldInstrument": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
     "extendedRaisedArmsAction": { "width": 32, "height": 48, "density": 4, "anchor": [16, 48] },
-    "extendedSnowToolAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] }
+    "extendedSnowToolAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
+    "extendedTrayAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] }
   },
   "measuredReference": {
     "source": "public/sprites/keeper_reference.png",
@@ -69,7 +70,10 @@
     "watchMovieLeft": { "clip": "keeper_watch_movie", "seatPoint": [24, 29], "handUsePoint": [14, 19], "lookTargetPoint": [-8, 14], "screenCentreOffsetFromSeat": [-32, -15], "mirroredFrom": "watchMovieRight" },
     "clearSnowRight": { "clip": "keeper_clear_snow", "handUsePoint": [43, 37], "offsetFromFeet": [19, -3], "mirrorFor": "clearSnowLeft" },
     "clearSnowLeft": { "clip": "keeper_clear_snow", "handUsePoint": [5, 37], "offsetFromFeet": [-19, -3], "mirroredFrom": "clearSnowRight" },
-    "crouchGroundBack": { "clip": "keeper_crouch_work_back", "handUsePoint": [16, 38], "offsetFromFeet": [0, -2] }
+    "crouchGroundBack": { "clip": "keeper_crouch_work_back", "handUsePoint": [16, 38], "offsetFromFeet": [0, -2] },
+    "ovenCakeBack": { "clip": "keeper_cake_from_oven_back", "handUsePoint": [24, 30], "ovenRackOffsetFromFeet": [0, -10] },
+    "cakeTurnRight": { "clip": "keeper_cake_turn_right", "handUsePoint": [34, 20], "cakeCarryOffsetFromFeet": [10, -20], "mirrorFor": "cakeTurnLeft" },
+    "cakeTurnLeft": { "clip": "keeper_cake_turn_right", "handUsePoint": [14, 20], "cakeCarryOffsetFromFeet": [-10, -20], "mirroredFrom": "cakeTurnRight" }
   },
   "movementProfiles": {
     "swimRight": { "movementVector": [1, 0], "mirrorFor": "swimLeft" },
@@ -93,6 +97,8 @@
     "drumSurfaceHeightAboveRaisedSeat": 10,
     "snowShovelContactHeightAboveFloor": 3,
     "crouchedGroundContactHeightAboveFloor": 2,
+    "ovenRackHeightAboveFloor": 10,
+    "cakeCarryHeightAboveFloor": 20,
     "weldingContactHeightAboveFloor": 18,
     "sawingContactHeightAboveFloor": 17,
     "bedMattressSurfaceHeightAboveFloor": 9,

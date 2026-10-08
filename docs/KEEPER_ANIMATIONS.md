@@ -82,6 +82,8 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Watch a movie | `keeper_watch_movie` | reclined rear-right with popcorn; mirror rear-left; seating and screen separate |
 | Clear snow | `keeper_clear_snow` | thick winter coat and shovel; right; mirror left; snow bank/effects separate |
 | Crouched ground work | `keeper_crouch_work_back` | direct rear reusable proxy; animated low alternating arm reaches |
+| Take cake from oven | `keeper_cake_from_oven_back` | direct rear one-shot; oven/rack separate; mitts, tray and cake included |
+| Turn carrying cake | `keeper_cake_turn_right` | rear-to-right one-shot; mirror for rear-to-left |
 
 For review, the shared side strip has separate, plainly named
 `keeper-switch-press-right-preview.gif` and
@@ -110,6 +112,11 @@ Snow clearing uses a 48 × 40 tool canvas and a right-side shovel contact at
 The thick winter coat is outfit metadata, while snow banks and spray remain
 separate effects. The rear crouched work proxy reaches `(16,38)` so it can be
 shared by any low object or ground-level activity without baking in a prop.
+
+Cake retrieval aligns an unseen oven rack to `(24,30)` on a 48 × 40 tray
+canvas. The clip ends with the same mitt, tray and cake pose that begins
+`keeper_cake_turn_right`; mirror that turn and its carry point from `(34,20)`
+to `(14,20)` for left. The oven body, door and rack remain separate objects.
 
 Cooking, washing and brushing currently use named aliases of the general rear
 work loop so gameplay code can remain descriptive without duplicating art.

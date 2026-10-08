@@ -1,6 +1,6 @@
 # Frank’s floor and asset review
 
-Open **[review.html](review.html)**. This self-contained review canvas works without a server or network connection. It contains 71 documented spaces/variants, searchable design cards and diagrams, a 1,557-row CSV-style catalogue, mechanical tier proposals, required states, production thumbnails and annotation tools.
+Open **[review.html](review.html)**. This self-contained review canvas works without a server or network connection. It contains 71 documented spaces/variants, searchable design cards and diagrams, a 1,559-row CSV-style catalogue, mechanical tier proposals, required states, production thumbnails and annotation tools.
 
 Native Codex Canvas publishing is unavailable in this session. This is a durable standalone HTML review artifact, not a claimed native Canvas publication. It can be imported or published there when that capability is available.
 
@@ -16,7 +16,7 @@ Pixel studio lets Frank adjust pixel block size, paint or erase individual frame
 
 BB Sea news literally reads `B B SEA`, adapted from the supplied BBC NEWS reference, followed by NEWS lettering and a tiny newsreader head. Sport shows football; Nature shows animals. Four ON frames are one animated state, not four asset variants. Broken TV uses one damaged image plus shared smoke/sparks and existing body vibration. Channel selection reuses existing watch/nature actions; no new gameplay effect is claimed. The production guide now requires ON only for operating devices; passive furniture remains standard and is designed around keeper poses.
 
-The Completed assets and Pixel studio tabs also contain the keeper continuation: 75 aligned exports spanning domestic movement, doors/travel, adventure, gardening, shopping, boating, TV/cinema, musical performance, dancing, winter snow clearing, reusable ground work, workshop tools, reactions, light-blue bedtime wear, directional swimming, scuba, party and sou'wester variants. Search `keeper_` to isolate them. The large turnaround is a style reference; normal runtime strips are 32 × 40 at density 4, rowing and long-tool actions may use 40 × 40, bed/guitar/movie/snow-tool actions use 48 × 40, swimming uses centred 48 × 48, party/sou'wester/raised-arm actions use 32 × 48, and dive/parachute poses expand vertically without changing the keeper's scale.
+The Completed assets and Pixel studio tabs also contain the keeper continuation: 77 aligned exports spanning domestic movement, doors/travel, cooking and cake handling, adventure, gardening, shopping, boating, TV/cinema, musical performance, dancing, winter snow clearing, reusable ground work, workshop tools, reactions, light-blue bedtime wear, directional swimming, scuba, party and sou'wester variants. Search `keeper_` to isolate them. The large turnaround is a style reference; normal runtime strips are 32 × 40 at density 4, rowing and long-tool actions may use 40 × 40, bed/guitar/movie/snow-tool/tray actions use 48 × 40, swimming uses centred 48 × 48, party/sou'wester/raised-arm actions use 32 × 48, and dive/parachute poses expand vertically without changing the keeper's scale.
 
 The production walk is an eight-frame right-facing side cycle at 10 fps. The
 runtime mirrors it for left-facing movement. `keeper-walk-preview.gif` is an
