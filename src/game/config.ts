@@ -363,9 +363,17 @@ export interface Rules {
   breakdownMinutes: number
   /** Maximum objects that may be broken at the same time. */
   maxBreakdowns: number
+  /** Every mission goal's target, as a percentage of normal (individual targets below beat it). */
+  missionScale: number
+  /** Credits for finishing any mission (individual rewards below beat it). */
+  missionReward: number
+  /** Your own target for a mission goal (`<mission>:<goal number from 0>` → how many); beats the one in MISSIONS. */
+  missionGoals: Record<string, number>
+  /** Your own credits for finishing a mission (mission id → credits); beats `missionReward`. */
+  missionRewards: Record<string, number>
 }
 
-export const DEFAULT_RULES: Rules = { allowanceBase: 8, allowanceBonus: 20, firstDay: 20, carryCap: 40, greenAt: 50, priceScale: 100, prices: {}, quizLevel: 1, breakdownMinutes: 0, maxBreakdowns: 1 }
+export const DEFAULT_RULES: Rules = { allowanceBase: 8, allowanceBonus: 20, firstDay: 20, carryCap: 40, greenAt: 50, priceScale: 100, prices: {}, quizLevel: 1, breakdownMinutes: 0, maxBreakdowns: 1, missionScale: 100, missionReward: 10, missionGoals: {}, missionRewards: {} }
 
 export const GAME = {
   /** The day, in minutes after midnight. He wakes at 7am; the lamp is lit at dusk; bed is 8pm. */
@@ -414,8 +422,8 @@ export const GAME = {
   /** Sped-up walking, picture units a second. */
   walk: { stroll: 200 },
   breakdown: { repairMinutes: 25 },
-  /** Missions: the score that counts as a really good day, and the credits a finished mission brings. */
-  missions: { goodDay: 60, reward: 10 },
+  /** Missions: the score that counts as a really good day. (Mission sizes and rewards are grown-ups' dials.) */
+  missions: { goodDay: 60 },
 
   /** Money. */
   credits: {

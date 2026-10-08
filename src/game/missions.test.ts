@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, it } from 'vitest'
-import { GAME as G, MISSIONS, START_FLOORS } from './config'
-import { arrive, completeMission, order, startGame, tick, type Order, type State } from './engine'
-import { activeMission, countEvents, eventsOf, freshMissions, goalsOf, objectAvailable, roomFloors } from './missions'
+import { DEFAULT_RULES, MISSIONS, START_FLOORS } from './config'
+import { arrive, completeMission, order, setRules, startGame, tick, type Order, type State } from './engine'
+import { activeMission, countEvents, eventsOf, freshMissions, goalTarget, goalsOf, objectAvailable, rewardOf, roomFloors } from './missions'
 import { read } from './matcher'
 import { revive } from './storage'
 import { FLOOR_ORDER, FLOOR_Y, LAYOUT, applyLayout, route } from './world'
@@ -55,7 +55,7 @@ describe('missions in the game', () => {
     s = doIt(s, { id: 'tv_nature' })
     s = doIt(s, { id: 'tv_nature' })
     expect(s.unlocked).toEqual(['aquarium'])
-    expect(s.credits).toBe(credits + G.missions.reward)
+    expect(s.credits).toBe(credits + DEFAULT_RULES.missionReward)
     expect(s.happenings.map((h) => h.kind)).toEqual(expect.arrayContaining(['mission_done', 'unlocked']))
     expect(objectAvailable(s, 'tank')).toBe(true)
     expect(activeMission(s.missions)?.id).toBe('storm')
@@ -132,5 +132,49 @@ describe('typing about the new floors', () => {
     expect(ids('fish')).toEqual(['jetty_fish'])
     expect(ids('feed the cat')).toEqual(['pet_feed'])
     expect(ids('watch tv')).toEqual(['tv_watch'])
+  })
+})
+
+describe('the grown-ups set the size of missions', () => {
+  const fishy = MISSIONS[0]
+  const lift = MISSIONS[3]
+
+  it('scales every goal at once, then lets one goal or one reward be set by hand', () => {
+    const r = { ...DEFAULT_RULES, missionScale: 120 }
+    expect(goalTarget(lift, 0, r)).toBe(12)
+    expect(goalTarget(fishy, 0, r)).toBe(4)
+    expect(goalTarget(fishy, 0, { ...r, missionScale: 25 })).toBe(1)
+    const own = { ...r, missionGoals: { 'puffed:1': 3 }, missionReward: 15, missionRewards: { fishy: 25 } }
+    expect(goalTarget(lift, 1, own)).toBe(3)
+    expect(goalTarget(lift, 0, own)).toBe(12)
+    expect(rewardOf(fishy, own)).toBe(25)
+    expect(rewardOf(lift, own)).toBe(15)
+  })
+
+  it('counts towards the bigger target and pays the chosen reward', () => {
+    const r = { ...DEFAULT_RULES, missionScale: 200, missionRewards: { fishy: 30 } }
+    let s = setRules(fresh(), r)
+    for (let i = 0; i < 4; i++) s = doIt(s, { id: 'tv_nature' })
+    for (let i = 0; i < 5; i++) s = doIt(s, { id: 'jetty_fish' })
+    expect(s.unlocked).toEqual([])
+    expect(goalsOf(fishy, s.missions, s.rules).map((g) => `${g.got}/${g.count}`)).toEqual(['5/6', '4/4'])
+    const credits = s.credits
+    s = doIt(s, { id: 'jetty_fish' })
+    expect(s.unlocked).toEqual(['aquarium'])
+    expect(s.credits).toBe(credits + 30)
+  })
+
+  it('finishes a mission at once if its target is lowered below what he has done', () => {
+    let s = fresh()
+    for (let i = 0; i < 3; i++) s = doIt(s, { id: 'jetty_fish' })
+    s = doIt(s, { id: 'tv_nature' })
+    expect(s.unlocked).toEqual([])
+    s = setRules(s, { ...s.rules, missionGoals: { 'fishy:1': 1 } })
+    expect(s.unlocked).toEqual(['aquarium'])
+  })
+
+  it('keeps counting past a target, so raising it later loses nothing', () => {
+    const m = countEvents(freshMissions(), ['done:jetty_fish', 'done:jetty_fish', 'done:jetty_fish', 'done:jetty_fish'], { missionScale: 200 }).missions
+    expect(m.progress['fishy:0']).toBe(4)
   })
 })

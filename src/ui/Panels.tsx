@@ -3,7 +3,7 @@ import { DEFAULT_RULES, FOODS, MISSIONS, INTERACTIONS, NEEDS, NEED_LABEL, VISITO
 import { insideVisit, moodOf, moodWord, owned, priceOf, waitingVisit, type DayResult, type Prompt, type State } from '../game/engine'
 import type { Order } from '../game/engine'
 import { NAMES, clockText, labelFor, moodFace, moodName } from '../game/words'
-import { activeMission, goalsOf } from '../game/missions'
+import { activeMission, goalKey, goalTarget, goalsOf, rewardOf, scaledTarget } from '../game/missions'
 
 // ─── Top bar ─────────────────────────────────────────────────────────────────
 
@@ -204,7 +204,7 @@ export function Missions({ s, onClose }: { s: State; onClose: () => void }) {
           <h3>{m.title}</h3>
           <p>{m.blurb}</p>
           <ul>
-            {goalsOf(m, s.missions).map((g) => (
+            {goalsOf(m, s.missions, s.rules).map((g) => (
               <li key={g.event} className={g.met ? 'good' : undefined}>
                 {g.met ? '✅' : '⬜'} {g.label}: <b>{g.got} / {g.count}</b>
               </li>
@@ -410,6 +410,26 @@ export function GrownUps({ rules, credits, who, mission, verify, onRules, onGift
         </div>
         <p className="dim">Upgrade prices and gifting upgrades will appear here once upgrades are in the game.</p>
         <h3>Missions</h3>
+        <label className="num">
+          <span>Mission size <small>(% of normal: 120% means fishing 4 times instead of 3; applies to every mission)</small></span>
+          <input type="range" min={25} max={300} step={5} value={rules.missionScale} onChange={(e) => set({ missionScale: Number(e.target.value) })} />
+          <b>{rules.missionScale}%</b>
+        </label>
+        <Num label="Credits for finishing a mission" value={rules.missionReward} onChange={(n) => set({ missionReward: n })} />
+        <details className="mission-dials">
+          <summary>Set each mission yourself</summary>
+          <p className="dim">These beat the overall settings above. Lowering a target below what he has already done finishes the mission.</p>
+          {MISSIONS.map((m) => (
+            <div key={m.id}>
+              <b>{m.title}</b> <small>(unlocks the {m.unlocks === 'weather' ? 'weather station' : m.unlocks === 'lair' ? 'hidden lair' : m.unlocks})</small>
+              {m.goals.map((g, i) => (
+                <Num key={g.event} label={g.label} hint={rules.missionGoals?.[goalKey(m, i)] === undefined ? `(from the size: ${scaledTarget(m, i, rules)})` : '(your number)'} value={goalTarget(m, i, rules)} min={1} max={99} onChange={(n) => set({ missionGoals: { ...rules.missionGoals, [goalKey(m, i)]: n } })} />
+              ))}
+              <Num label="Credits for finishing it" hint={rules.missionRewards?.[m.id] === undefined ? '(the overall amount)' : '(your number)'} value={rewardOf(m, rules)} onChange={(n) => set({ missionRewards: { ...rules.missionRewards, [m.id]: n } })} />
+            </div>
+          ))}
+          <button onClick={() => set({ missionGoals: {}, missionRewards: {} })}>Clear my own mission numbers</button>
+        </details>
         {mission ? (
           <div className="row">
             <span>Now: <b>{mission}</b></span>

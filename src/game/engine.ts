@@ -41,7 +41,7 @@ import {
   type UnlockId,
 } from './config'
 import type { Quiz } from './quiz'
-import { activeMission, countEvents, eventsOf, freshMissions, objectAvailable, type MissionState } from './missions'
+import { activeMission, countEvents, eventsOf, freshMissions, goalTarget, objectAvailable, rewardOf, type MissionState } from './missions'
 import type { ChatQ } from './chat'
 
 // ─── What a game is ──────────────────────────────────────────────────────────
@@ -392,8 +392,8 @@ export function gift(s: State, credits: number): State {
   return n ? note({ ...s, credits: s.credits + n }, { kind: 'credits', amount: n }) : s
 }
 
-/** Changed dials take effect at once. */
-export const setRules = (s: State, rules: Rules): State => ({ ...s, rules })
+/** Changed dials take effect at once (a mission target lowered below what he has done finishes it). */
+export const setRules = (s: State, rules: Rules): State => missionEvents({ ...s, rules }, [])
 
 // ─── Changing the game ───────────────────────────────────────────────────────
 
@@ -405,10 +405,9 @@ function note(s: State, h: Loose): State {
 
 /** Count what happened towards the mission; a finished mission unlocks its floor (furnished) and pays a reward. */
 function missionEvents(s: State, events: Parameters<typeof countEvents>[1]): State {
-  if (!events.length) return s
-  const { missions, finished } = countEvents(s.missions, events)
+  const { missions, finished } = countEvents(s.missions, events, s.rules)
   if (!finished) return missions === s.missions ? s : { ...s, missions }
-  const reward = G.missions.reward
+  const reward = rewardOf(finished, s.rules)
   const done = note({ ...s, missions, credits: s.credits + reward }, { kind: 'mission_done', id: finished.id, amount: reward })
   return note({ ...done, unlocked: done.unlocked.includes(finished.unlocks) ? done.unlocked : [...done.unlocked, finished.unlocks] }, { kind: 'unlocked', id: finished.unlocks })
 }
@@ -417,7 +416,7 @@ function missionEvents(s: State, events: Parameters<typeof countEvents>[1]): Sta
 export function completeMission(s: State): State {
   const m = activeMission(s.missions)
   if (!m) return s
-  const events = m.goals.flatMap((g) => Array.from({ length: g.count }, () => g.event))
+  const events = m.goals.flatMap((g, i) => Array.from({ length: goalTarget(m, i, s.rules) }, () => g.event))
   return missionEvents(s, events)
 }
 

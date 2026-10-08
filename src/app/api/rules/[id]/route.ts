@@ -9,6 +9,10 @@ const clampNum = (v: unknown, lo: number, hi: number, d: number) => (typeof v ==
 function clean(r: Record<string, unknown>) {
   const prices: Record<string, number> = {}
   if (r.prices && typeof r.prices === 'object') for (const [k, v] of Object.entries(r.prices as Record<string, unknown>)) if (/^[a-z]{2,20}$/.test(k)) prices[k] = clampNum(v, 0, 999, 0)
+  const missionGoals: Record<string, number> = {}
+  if (r.missionGoals && typeof r.missionGoals === 'object') for (const [k, v] of Object.entries(r.missionGoals as Record<string, unknown>)) if (/^[a-z]{2,20}:\d$/.test(k)) missionGoals[k] = clampNum(v, 1, 99, 1)
+  const missionRewards: Record<string, number> = {}
+  if (r.missionRewards && typeof r.missionRewards === 'object') for (const [k, v] of Object.entries(r.missionRewards as Record<string, unknown>)) if (/^[a-z]{2,20}$/.test(k)) missionRewards[k] = clampNum(v, 0, 999, 0)
   return {
     allowanceBase: clampNum(r.allowanceBase, 0, 999, 8),
     allowanceBonus: clampNum(r.allowanceBonus, 0, 999, 20),
@@ -20,6 +24,10 @@ function clean(r: Record<string, unknown>) {
     breakdownMinutes: clampNum(r.breakdownMinutes, 0, 1440, 0),
     maxBreakdowns: clampNum(r.maxBreakdowns, 0, 10, 1),
     prices,
+    missionScale: clampNum(r.missionScale, 25, 300, 100),
+    missionReward: clampNum(r.missionReward, 0, 999, 10),
+    missionGoals,
+    missionRewards,
   }
 }
 

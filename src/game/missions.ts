@@ -6,7 +6,7 @@
  * Pure: the engine feeds in what happened and applies what comes back.
  */
 
-import { FLOOR_LEVELS, MISSIONS, OBJECTS, START_FLOORS, type MissionDef, type MissionEvent, type ObjectId, type RoomFloor, type UnlockId } from './config'
+import { DEFAULT_RULES, FLOOR_LEVELS, MISSIONS, OBJECTS, START_FLOORS, type MissionDef, type MissionEvent, type ObjectId, type RoomFloor, type Rules, type UnlockId } from './config'
 import type { Happening, State } from './engine'
 
 export interface MissionState {
@@ -42,28 +42,43 @@ export function eventsOf(h: Pick<Happening, 'kind' | 'id' | 'safe' | 'correct'>)
 
 export const goalKey = (m: MissionDef, i: number) => `${m.id}:${i}`
 
+/**
+ * The grown-ups' dials: first for every mission at once (a size percentage and
+ * a reward), then, where set, for one goal or one mission, which wins.
+ */
+type MissionDials = Partial<Pick<Rules, 'missionScale' | 'missionReward' | 'missionGoals' | 'missionRewards'>>
+/** A goal's target from the overall size dial alone. */
+export const scaledTarget = (m: MissionDef, i: number, dials?: MissionDials) => Math.max(1, Math.round((m.goals[i].count * (dials?.missionScale ?? 100)) / 100))
+export const goalTarget = (m: MissionDef, i: number, dials?: MissionDials) => Math.max(1, dials?.missionGoals?.[goalKey(m, i)] ?? scaledTarget(m, i, dials))
+export const rewardOf = (m: MissionDef, dials?: MissionDials) => dials?.missionRewards?.[m.id] ?? dials?.missionReward ?? DEFAULT_RULES.missionReward
+
 /** How far along a mission's goals are. */
-export function goalsOf(m: MissionDef, ms: MissionState) {
+export function goalsOf(m: MissionDef, ms: MissionState, dials?: MissionDials) {
   return m.goals.map((g, i) => {
-    const got = Math.min(g.count, ms.progress[goalKey(m, i)] ?? 0)
-    return { ...g, got, met: got >= g.count }
+    const count = goalTarget(m, i, dials)
+    const got = Math.min(count, ms.progress[goalKey(m, i)] ?? 0)
+    return { ...g, count, got, met: got >= count }
   })
 }
 
-/** Count events towards the active mission. Returns the new state and the mission it finished, if it did. */
-export function countEvents(ms: MissionState, events: readonly MissionEvent[]): { missions: MissionState; finished?: MissionDef } {
+/**
+ * Count events towards the active mission. Returns the new state and the
+ * mission it finished, if it did. With no events it just checks: a target the
+ * grown-ups have lowered may already be met.
+ */
+export function countEvents(ms: MissionState, events: readonly MissionEvent[], dials?: MissionDials): { missions: MissionState; finished?: MissionDef } {
   const m = activeMission(ms)
-  if (!m || !events.length) return { missions: ms }
+  if (!m) return { missions: ms }
   let progress = ms.progress
   m.goals.forEach((g, i) => {
     const n = events.filter((e) => e === g.event).length
     if (!n) return
     const k = goalKey(m, i)
-    progress = { ...progress, [k]: Math.min(g.count, (progress[k] ?? 0) + n) }
+    // Kept uncapped (to a point), so raising a target later still counts what he has done.
+    progress = { ...progress, [k]: Math.min(999, (progress[k] ?? 0) + n) }
   })
-  if (progress === ms.progress) return { missions: ms }
-  const next = { ...ms, progress }
-  if (goalsOf(m, next).every((g) => g.met)) return { missions: { ...next, done: [...next.done, m.id] }, finished: m }
+  const next = progress === ms.progress ? ms : { ...ms, progress }
+  if (goalsOf(m, next, dials).every((g) => g.met)) return { missions: { ...next, done: [...next.done, m.id] }, finished: m }
   return { missions: next }
 }
 
