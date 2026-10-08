@@ -154,6 +154,22 @@ Mini-game: briefly inspect a changing field of boxes and clutter, then search, o
 
 Supports proper meals, visitors, celebrations and table-setting challenges. The kitchen remains for cooking and quick meals.
 
+### Bank or savings room
+
+A small, reassuring lighthouse bank where the keeper can move credits out of his spending purse and into savings. Saved money earns a modest amount of interest after several completed in-game days, rewarding patience without making waiting more profitable than playing.
+
+The room can include a brass counter, coin scales, deposit tubes, a chunky safe and a savings book that visibly fills with stamps. The account balance, next interest date and expected interest should always be shown plainly. Deposits and withdrawals are allowed without punishment; there are no loans, debt, overdrafts, gambling or real financial products.
+
+Possible activities and challenges:
+
+- Sort and count mixed coins, then check that a deposit receipt is correct.
+- Save towards a chosen upgrade, boat part or special outing.
+- Compare “spend now” with a small delayed reward.
+- Repair a jammed deposit tube or safe mechanism without ever losing the saved balance.
+- Unlock the room by keeping some allowance unspent across several days and completing a simple coin-counting puzzle.
+
+Interest should be deliberately modest, capped and based on completed game days rather than the device clock. Grown-ups should be able to tune or disable it. Savings are persistent player data and must never be threatened by the breakdown system; only the room's machinery and animations may break.
+
 ### Cinema
 
 A strong rainy-day floor with fictional films, visitor screenings, projector repairs and scene-order puzzles. Later it can replay stylised films of completed lighthouse adventures.
@@ -364,5 +380,6 @@ Do not implement all ideas as independent floors at once. Prefer connected syste
 - Pool + gym/hot tub + diving board reuse the swimming costume and water animation.
 - Dining room + food store + kitchen + visitors create preparation and social play.
 - Boathouse + off-island shop + weather + radio create a complete travel and supply loop.
+- Bank + allowance + shop + upgrades create a gentle saving and long-term-planning loop.
 
 Before implementation, choose a small set of eligible missions and make their order genuinely non-linear. Every new mission should add varied goals and avoid raw repetition counts where a short bespoke challenge would be more enjoyable.
