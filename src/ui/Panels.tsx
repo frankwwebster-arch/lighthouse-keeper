@@ -202,7 +202,7 @@ export function Diary({ entries, onClose }: { entries: Entry[]; onClose: () => v
 
 const pickOf = <T,>(list: readonly T[]): T => list[Math.floor(Math.random() * list.length)]
 
-export function Setup({ canContinue, onContinue, onStart }: { canContinue: boolean; onContinue: () => void; onStart: (name: string, petName: string, kind: PetKind) => void }) {
+export function Setup({ who, canContinue, onContinue, onStart }: { who: string; canContinue: boolean; onContinue: () => void; onStart: (name: string, petName: string, kind: PetKind) => void }) {
   const [kind, setKind] = useState<PetKind>('cat')
   const [name, setName] = useState('')
   const [pet, setPet] = useState('')
@@ -216,6 +216,7 @@ export function Setup({ canContinue, onContinue, onStart }: { canContinue: boole
         }}
       >
         <h1>🏝️ Lighthouse Keeper</h1>
+        <p className="dim">Playing as {who}</p>
         {canContinue && <button type="button" className="big" onClick={onContinue}>▶ Carry on with my game</button>}
         <p>{canContinue ? 'Or start a new keeper:' : 'Let’s meet your keeper!'}</p>
         <label>
@@ -283,12 +284,14 @@ export function Report({ s, onNext }: { s: State; onNext: () => void }) {
   )
 }
 
-export function SettingsMenu({ onClose, onNew, onGrownUps }: { onClose: () => void; onNew: () => void; onGrownUps: () => void }) {
+export function SettingsMenu({ who, onClose, onNew, onGrownUps, onSwitch }: { who: string; onClose: () => void; onNew: () => void; onGrownUps: () => void; onSwitch: () => void }) {
   return (
     <div className="modal" onClick={onClose}>
       <div className="card" onClick={(e) => e.stopPropagation()}>
         <h2>Menu</h2>
+        <p className="dim">Playing as {who}</p>
         <button className="big" onClick={onClose}>Back to the game</button>
+        <button onClick={onSwitch}>👥 Switch player</button>
         <button onClick={onGrownUps}>🔒 Grown-ups</button>
         <button onClick={() => { if (confirm('Start again from day 1? The saved game will be lost.')) onNew() }}>New game</button>
       </div>
@@ -305,12 +308,15 @@ const Num = ({ label, hint, value, onChange, min = 0, max = 999 }: { label: stri
   </label>
 )
 
-export function GrownUps({ pin, rules, credits, onRules, onGift, onPin, onClose }: { pin: string; rules: Rules; credits: number; onRules: (r: Rules) => void; onGift: (n: number) => void; onPin: (p: string) => void; onClose: () => void }) {
+export function GrownUps({ rules, credits, who, verify, onRules, onGift, onPin, onClose }: { rules: Rules; credits: number; who: string; verify: (pin: string) => Promise<boolean>; onRules: (r: Rules, pin: string) => void; onGift: (n: number) => void; onPin: (pin: string, newPin: string) => Promise<boolean>; onClose: () => void }) {
   const [typed, setTyped] = useState('')
-  const [open, setOpen] = useState(false)
+  const [pin, setPin] = useState<string | null>(null)
+  const [wrong, setWrong] = useState(false)
   const [gift, setGift] = useState(10)
   const [newPin, setNewPin] = useState('')
-  const set = (patch: Partial<Rules>) => onRules({ ...rules, ...patch })
+  const [pinMsg, setPinMsg] = useState('')
+  const open = pin !== null
+  const set = (patch: Partial<Rules>) => onRules({ ...rules, ...patch }, pin ?? '')
   const setPrice = (id: string, price: number | undefined) => {
     const prices = { ...rules.prices }
     if (price === undefined) delete prices[id]
@@ -320,9 +326,9 @@ export function GrownUps({ pin, rules, credits, onRules, onGift, onPin, onClose 
   if (!open) {
     return (
       <div className="modal" onClick={onClose}>
-        <form className="card" onClick={(e) => e.stopPropagation()} onSubmit={(e) => { e.preventDefault(); if (typed === pin) setOpen(true); else setTyped('') }}>
+        <form className="card" onClick={(e) => e.stopPropagation()} onSubmit={async (e) => { e.preventDefault(); if (await verify(typed)) setPin(typed); else { setWrong(true); setTyped('') } }}>
           <h2>🔒 Grown-ups only</h2>
-          <p>Enter the PIN (it starts as 1234).</p>
+          <p>Enter the PIN (it starts as 1234).{wrong && <b> Not right, try again.</b>}</p>
           <input type="password" inputMode="numeric" value={typed} onChange={(e) => setTyped(e.target.value)} autoFocus />
           <button className="big" type="submit">Open</button>
           <button type="button" onClick={onClose}>Back</button>
@@ -333,7 +339,7 @@ export function GrownUps({ pin, rules, credits, onRules, onGift, onPin, onClose 
   return (
     <div className="modal">
       <div className="card admin">
-        <h2>Grown-ups’ dials</h2>
+        <h2>Grown-ups’ dials: {who}</h2>
         <h3>Daily allowance</h3>
         <Num label="Guaranteed each morning" value={rules.allowanceBase} onChange={(n) => set({ allowanceBase: n })} />
         <Num label="Extra for all 7 bars green" hint="(shared out: each green bar earns a seventh)" value={rules.allowanceBonus} onChange={(n) => set({ allowanceBonus: n })} />
@@ -365,9 +371,10 @@ export function GrownUps({ pin, rules, credits, onRules, onGift, onPin, onClose 
         <h3>PIN</h3>
         <div className="row">
           <input value={newPin} onChange={(e) => setNewPin(e.target.value.replace(/\D/g, '').slice(0, 8))} placeholder="New PIN (digits)" inputMode="numeric" />
-          <button disabled={newPin.length < 3} onClick={() => { onPin(newPin); setNewPin('') }}>Change</button>
+          <button disabled={newPin.length < 3} onClick={async () => { const ok = await onPin(pin ?? '', newPin); if (ok) setPin(newPin); setPinMsg(ok ? 'PIN changed.' : 'Could not change it.'); setNewPin('') }}>Change</button>
         </div>
-        <button onClick={() => onRules({ ...DEFAULT_RULES })}>Reset all dials</button>
+        {pinMsg && <p>{pinMsg}</p>}
+        <button onClick={() => onRules({ ...DEFAULT_RULES }, pin ?? '')}>Reset all dials</button>
         <button className="big" onClick={onClose}>Done</button>
       </div>
     </div>

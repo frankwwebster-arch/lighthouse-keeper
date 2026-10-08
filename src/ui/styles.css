@@ -93,3 +93,5 @@ input { font: inherit; font-size: 18px; min-height: 48px; padding: 6px 12px; bor
 .admin { width:min(560px,100%); }
 .num { display:grid; grid-template-columns:1fr 110px; gap:8px; align-items:center; } .num small { color:#667; }
 .num input[type=range] { min-height:30px; } .num b { grid-column:2; }
+
+.players { display:grid; gap:10px; } .players .big.on { outline:4px solid #ffd35a; }

@@ -7,7 +7,8 @@ import type { DoOrder } from './game/commands'
 import { answeredChat, arrive, ask, buy, dropChat, gift, setRules, nextDay, order, rightAnswer, rollPersonality, shopOpen, startGame, stopDoing, tick, wrongAnswer, type State } from './game/engine'
 import { isNo, isYes, read } from './game/matcher'
 import { checkAnswer, makeQuiz } from './game/quiz'
-import { clear, load, loadAdmin, save, saveAdmin } from './game/storage'
+import { changePin, deleteGame, saveGame, saveRules, verifyPin, type Player } from './game/remote'
+import type { Rules } from './game/config'
 import { ack, tell } from './game/words'
 import { Alerts, CommandBar, Diary, Hud, ObjectMenu, PromptBar, GrownUps, Report, SettingsMenu, Setup, Shop, type Entry } from './ui/Panels'
 import { Scene } from './ui/Scene'
@@ -17,8 +18,8 @@ const SHRUGS = ['Erm… I have no idea what that means.', 'Hmm? Say that another
 const RUDE = /\b(hurry|idiot|stupid|shut up|dumb|useless|you fool)\b/
 const NICE = /\b(please|thanks|thank you|cheers|pretty please)\b/
 
-export default function App() {
-  const [s, setS] = useState<State | null>(() => load())
+export default function App({ player, db, initial, rules: ownRules, onSwitch }: { player: Player; db: boolean; initial: State | null; rules: Rules; onSwitch: () => void }) {
+  const [s, setS] = useState<State | null>(initial)
   const [started, setStarted] = useState(false)
   const [paused, setPaused] = useState(false)
   const [selected, setSelected] = useState<ObjectId | null>(null)
@@ -26,7 +27,7 @@ export default function App() {
   const [showDiary, setShowDiary] = useState(false)
   const [showMenu, setShowMenu] = useState(false)
   const [showAdmin, setShowAdmin] = useState(false)
-  const [admin, setAdmin] = useState(loadAdmin)
+  const [rules, setOwnRules] = useState<Rules>(ownRules)
   const [say, setSay] = useState<{ text: string; key: number } | null>(null)
   const [pending, setPending] = useState<{ doing: DoOrder[]; text: string } | null>(null)
   const [flash, setFlash] = useState(0)
@@ -106,11 +107,11 @@ export default function App() {
   // Keep the game.
   useEffect(() => {
     if (!started) return
-    const id = setInterval(() => sRef.current && save(sRef.current), 4000)
+    const id = setInterval(() => sRef.current && saveGame(player.id, sRef.current, db), 4000)
     return () => clearInterval(id)
   }, [started])
   useEffect(() => {
-    if (s?.phase === 'report') save(s)
+    if (s?.phase === 'report') saveGame(player.id, s, db)
   }, [s?.phase]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const update = (fn: (x: State) => State) => {
@@ -196,10 +197,10 @@ export default function App() {
 
   const begin = (name: string, petName: string, petKind: 'cat' | 'gull') => {
     const seed = Math.floor(Math.random() * 2 ** 31)
-    clear()
+    deleteGame(player.id, db)
     seen.current = 0
     setDiary([])
-    const g = startGame(seed, { name, petName, petKind, personality: rollPersonality(seed) }, admin.rules)
+    const g = startGame(seed, { name, petName, petKind, personality: rollPersonality(seed) }, rules)
     sRef.current = g
     setS(g)
     setStarted(true)
@@ -207,7 +208,7 @@ export default function App() {
   }
 
   if (!started || !s) {
-    return <Setup canContinue={!!s && s.v === 1} onContinue={() => { lastInput.current = lastAsk.current = performance.now(); setStarted(true) }} onStart={begin} />
+    return <Setup canContinue={!!s && s.v === 1} who={player.name} onContinue={() => { lastInput.current = lastAsk.current = performance.now(); setStarted(true) }} onStart={begin} />
   }
 
   const doingAt = s.doing?.phase === 'doing' ? s.doing.object : null
@@ -248,16 +249,17 @@ export default function App() {
       {s.phase === 'report' && <Report s={s} onNext={() => { update(nextDay); setDiary([]) }} />}
       {showAdmin && (
         <GrownUps
-          pin={admin.pin}
           rules={s.rules}
           credits={s.credits}
-          onRules={(r) => { const a = { ...admin, rules: r }; setAdmin(a); saveAdmin(a); update((x) => setRules(x, r)) }}
+          who={player.name}
+          verify={(pin) => verifyPin(pin, db)}
+          onRules={(r, pin) => { setOwnRules(r); void saveRules(player.id, pin, r, db); update((x) => setRules(x, r)) }}
           onGift={(n) => update((x) => gift(x, n))}
-          onPin={(p) => { const a = { ...admin, pin: p }; setAdmin(a); saveAdmin(a) }}
+          onPin={(pin, np) => changePin(pin, np, db)}
           onClose={() => setShowAdmin(false)}
         />
       )}
-      {showMenu && <SettingsMenu onGrownUps={() => { setShowMenu(false); setShowAdmin(true) }} onClose={() => setShowMenu(false)} onNew={() => { setShowMenu(false); clear(); setStarted(false); setS(null) }} />}
+      {showMenu && <SettingsMenu onGrownUps={() => { setShowMenu(false); setShowAdmin(true) }} onClose={() => setShowMenu(false)} onSwitch={() => { if (sRef.current) saveGame(player.id, sRef.current, db); onSwitch() }} who={player.name} onNew={() => { setShowMenu(false); deleteGame(player.id, db); setStarted(false); setS(null) }} />}
     </div>
   )
 }
