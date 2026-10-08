@@ -17648,7 +17648,7 @@
       "reusable_source": "shared keeper_telescope",
       "breakdown_effect": "not repairable",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -21152,7 +21152,7 @@
       "reusable_source": "shared keeper_telescope",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -52286,11 +52286,11 @@
   ],
   "summary": {
     "delivered-existing": 6,
-    "planned": 1183,
-    "delivered-review": 359,
+    "planned": 1181,
+    "delivered-review": 361,
     "hidden sequence": 10,
     "retired": 1
   },
   "native_canvas_published": false,
-  "revision": "2026-10-08 review batch; ON required for operating devices; passive furniture uses standard/occupied states"
+  "revision": "2026-10-09 keeper interaction expansion; ON required for operating devices; passive furniture uses standard/occupied states"
 }

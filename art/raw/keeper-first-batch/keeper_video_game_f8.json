@@ -1,0 +1,29 @@
+{
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    24,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "seatPoint": [
+    24,
+    29
+  ],
+  "handUsePoint": [
+    24,
+    21
+  ],
+  "lookTargetPoint": [
+    56,
+    14
+  ],
+  "mirrorSafe": true,
+  "facing": "rear-right",
+  "interaction": "play-video-game",
+  "mirrorsFor": "rear-left"
+}

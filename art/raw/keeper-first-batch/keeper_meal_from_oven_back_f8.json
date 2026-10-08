@@ -1,0 +1,19 @@
+{
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    24,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "handUsePoint": [
+    24,
+    30
+  ],
+  "facing": "back",
+  "interaction": "retrieve-meal-from-oven"
+}

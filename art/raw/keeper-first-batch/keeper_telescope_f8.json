@@ -1,0 +1,25 @@
+{
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    24,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "handUsePoint": [
+    38,
+    17
+  ],
+  "lookTargetPoint": [
+    48,
+    12
+  ],
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "use-telescope",
+  "mirrorsFor": "left"
+}

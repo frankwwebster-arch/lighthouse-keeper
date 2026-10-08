@@ -1,0 +1,25 @@
+{
+  "w": 40,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    20,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "handUsePoint": [
+    34,
+    15
+  ],
+  "lookTargetPoint": [
+    40,
+    12
+  ],
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "play-darts",
+  "mirrorsFor": "left"
+}

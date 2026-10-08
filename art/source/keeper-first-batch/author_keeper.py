@@ -187,7 +187,7 @@ def side_walk(step=0):
     return im
 
 
-def generated_frames(filename, expected, fallback=None, logical_width=32, logical_height=40, scale_reference_index=None, force_equal_cells=False, min_component_pixels=1000):
+def generated_frames(filename, expected, fallback=None, logical_width=32, logical_height=40, scale_reference_index=None, force_equal_cells=False, preserve_equal_cells=False, min_component_pixels=1000):
     """Normalise an identity-locked generated source onto aligned contract slots."""
     source = Path(__file__).with_name(filename)
     if not source.exists():
@@ -209,7 +209,19 @@ def generated_frames(filename, expected, fallback=None, logical_width=32, logica
                 runs.append((start, x))
             start = None
     components = None
-    if force_equal_cells:
+    if preserve_equal_cells:
+        # Recent generation prompts explicitly request equal cells.  Cropping
+        # each cell as a whole preserves detached held props (records, darts,
+        # fishing line and water drops) that component segmentation would lose.
+        bounds = []
+        for index in range(expected):
+            x0 = round(index * sheet.width / expected)
+            x1 = round((index + 1) * sheet.width / expected)
+            box = alpha.crop((x0, 0, x1, sheet.height)).getbbox()
+            if box is None:
+                raise ValueError(f"Generated keeper cell {index} is empty in {filename}")
+            bounds.append((x0 + box[0], box[1], x0 + box[2], box[3]))
+    elif force_equal_cells:
         bounds = []
         components = []
         for index in range(expected):
@@ -561,4 +573,92 @@ save_preview("keeper-crouch-work-back", crouch_work_back_frames, 120)
 save_preview("keeper-cake-from-oven-back", cake_from_oven_back_frames, 120)
 save_preview("keeper-cake-turn-right", cake_turn_right_frames, 120)
 save_preview("keeper-cake-turn-left", [ImageOps.mirror(frame) for frame in cake_turn_right_frames], 120)
+
+# October interaction expansion.  The tuple is export name, generated source,
+# logical width, logical height, and runtime placement metadata.  Large room
+# objects stay separate; hand/seat/look points are the attachment contract.
+ADDITIONAL_CLIPS = [
+    ("keeper_fish_feed_up", "keeper-fish-feed-up-generated-source.png", 32, 48, dict(hand_use_point=[26, 7], facing="right", interaction="feed-fish-high", mirror_safe=True, mirrors_for="left")),
+    ("keeper_aquarium_brush", "keeper-aquarium-brush-generated-source.png", 40, 40, dict(hand_use_point=[34, 17], facing="right", interaction="clean-aquarium", mirror_safe=True, mirrors_for="left")),
+    ("keeper_aquarium_net", "keeper-aquarium-net-generated-source.png", 40, 40, dict(hand_use_point=[34, 21], facing="right", interaction="net-aquarium-fish", mirror_safe=True, mirrors_for="left")),
+    ("keeper_hammer_back", "keeper-hammer-back-generated-source.png", 32, 40, dict(hand_use_point=[16, 22], facing="back", interaction="hammer-workbench")),
+    ("keeper_hammer_side", "keeper-hammer-side-generated-source.png", 40, 40, dict(hand_use_point=[32, 23], facing="right", interaction="hammer-workbench", mirror_safe=True, mirrors_for="left")),
+    ("keeper_read_side", "keeper-read-side-generated-source.png", 32, 40, dict(seat_point=[16, 29], facing="right", interaction="read-book", mirror_safe=True, mirrors_for="left")),
+    ("keeper_read_front", "keeper-read-front-generated-source.png", 32, 40, dict(seat_point=[16, 29], facing="front", interaction="read-book")),
+    ("keeper_write_side", "keeper-write-side-generated-source.png", 40, 40, dict(seat_point=[20, 29], hand_use_point=[34, 21], facing="right", interaction="write", mirror_safe=True, mirrors_for="left")),
+    ("keeper_write_back", "keeper-write-back-generated-source.png", 32, 40, dict(seat_point=[16, 29], hand_use_point=[16, 21], facing="back", interaction="write")),
+    ("keeper_lean_table_back", "keeper-lean-table-generated-source.png", 32, 40, dict(hand_use_point=[16, 27], facing="back", interaction="inspect-table")),
+    ("keeper_telescope", "keeper-telescope-generated-source.png", 48, 40, dict(hand_use_point=[38, 17], look_target_point=[48, 12], facing="right", interaction="use-telescope", mirror_safe=True, mirrors_for="left")),
+    ("keeper_put_record", "keeper-put-record-generated-source.png", 40, 40, dict(hand_use_point=[34, 27], facing="right", interaction="put-record", mirror_safe=True, mirrors_for="left")),
+    ("keeper_paint_side", "keeper-paint-side-generated-source.png", 40, 40, dict(hand_use_point=[34, 17], outfit="artist-smock", facing="right", interaction="paint", mirror_safe=True, mirrors_for="left")),
+    ("keeper_paint_back", "keeper-paint-back-generated-source.png", 32, 40, dict(hand_use_point=[16, 17], outfit="artist-smock", facing="back", interaction="paint")),
+    ("keeper_pottery_front", "keeper-pottery-front-generated-source.png", 40, 40, dict(seat_point=[20, 29], hand_use_point=[20, 23], outfit="artist-smock", facing="front", interaction="pottery-wheel")),
+    ("keeper_search_boxes", "keeper-search-boxes-generated-source.png", 32, 40, dict(hand_use_point=[16, 36], facing="back", interaction="search-boxes")),
+    ("keeper_meal_from_oven_back", "keeper-meal-oven-back-generated-source.png", 48, 40, dict(hand_use_point=[24, 30], facing="back", interaction="retrieve-meal-from-oven", loop=False)),
+    ("keeper_meal_place_side", "keeper-meal-place-side-generated-source.png", 48, 40, dict(hand_use_point=[39, 28], facing="right", interaction="place-meal-on-table", loop=False, mirror_safe=True, mirrors_for="left")),
+    ("keeper_count_money", "keeper-count-money-generated-source.png", 40, 40, dict(seat_point=[20, 29], hand_use_point=[20, 21], facing="front", interaction="count-money")),
+    ("keeper_snooker", "keeper-snooker-generated-source.png", 48, 40, dict(hand_use_point=[43, 25], facing="right", interaction="play-snooker", mirror_safe=True, mirrors_for="left")),
+    ("keeper_table_tennis", "keeper-table-tennis-generated-source.png", 40, 40, dict(hand_use_point=[34, 20], facing="right", interaction="play-table-tennis", mirror_safe=True, mirrors_for="left")),
+    ("keeper_darts", "keeper-darts-generated-source.png", 40, 40, dict(hand_use_point=[34, 15], look_target_point=[40, 12], facing="right", interaction="play-darts", mirror_safe=True, mirrors_for="left")),
+    ("keeper_trampoline_front", "keeper-trampoline-front-generated-source.png", 32, 48, dict(facing="front", interaction="bounce-trampoline")),
+    ("keeper_lift_weights_back", "keeper-weights-back-generated-source.png", 40, 48, dict(hand_use_point=[20, 5], facing="back", interaction="lift-weights")),
+    ("keeper_pressups_side", "keeper-pressups-side-generated-source.png", 48, 40, dict(facing="right", interaction="press-ups", mirror_safe=True, mirrors_for="left")),
+    ("keeper_anti_gravity", "keeper-anti-gravity-generated-source.png", 48, 48, dict(anchor_point=[24, 24], facing="front", interaction="anti-gravity-float")),
+    ("keeper_machete_side", "keeper-machete-side-generated-source.png", 48, 40, dict(hand_use_point=[42, 28], facing="right", interaction="chop-plants", mirror_safe=True, mirrors_for="left")),
+    ("keeper_drink_pint", "keeper-drink-pint-generated-source.png", 40, 40, dict(seat_point=[20, 29], hand_use_point=[25, 16], facing="front-right", interaction="drink-pint", mirror_safe=True, mirrors_for="front-left")),
+    ("keeper_ride_bike_front", "keeper-bike-front-generated-source.png", 40, 40, dict(facing="front", interaction="ride-bike")),
+    ("keeper_lift_button_front", "keeper-lift-button-front-generated-source.png", 32, 40, dict(hand_use_point=[27, 17], facing="front", interaction="press-lift-button", mirror_safe=True, mirrors_for="front-left-hand")),
+    ("keeper_spiral_stairs", "keeper-spiral-stairs-generated-source.png", 40, 48, dict(facing="three-quarter", interaction="climb-spiral-stairs")),
+    ("keeper_slide_side", "keeper-slide-side-generated-source.png", 48, 40, dict(facing="right", interaction="ride-slide", mirror_safe=True, mirrors_for="left")),
+    ("keeper_bbq_back", "keeper-bbq-back-generated-source.png", 32, 40, dict(hand_use_point=[16, 22], facing="back", interaction="use-bbq")),
+    ("keeper_hot_tub", "keeper-hot-tub-generated-source.png", 40, 40, dict(seat_point=[20, 29], facing="front", interaction="soak-hot-tub", outfit="privacy-foam")),
+    ("keeper_bowling", "keeper-bowling-generated-source.png", 48, 40, dict(hand_use_point=[39, 35], facing="right", interaction="ten-pin-bowling", mirror_safe=True, mirrors_for="left")),
+    ("keeper_video_game", "keeper-video-game-generated-source.png", 48, 40, dict(seat_point=[24, 29], hand_use_point=[24, 21], look_target_point=[56, 14], facing="rear-right", interaction="play-video-game", mirror_safe=True, mirrors_for="rear-left")),
+    ("keeper_water_plants_side", "keeper-water-side-generated-source.png", 40, 40, dict(hand_use_point=[35, 31], facing="right", interaction="water-plants", mirror_safe=True, mirrors_for="left")),
+    ("keeper_water_plants_back", "keeper-water-back-generated-source.png", 40, 40, dict(hand_use_point=[20, 31], facing="back", interaction="water-plants")),
+    ("keeper_water_plants_front", "keeper-water-front-generated-source.png", 40, 40, dict(hand_use_point=[20, 31], facing="front", interaction="water-plants")),
+    ("keeper_fish_standing", "keeper-fish-stand-generated-source.png", 48, 40, dict(hand_use_point=[42, 16], facing="right", interaction="fish-and-reel", mirror_safe=True, mirrors_for="left")),
+    ("keeper_fish_seated", "keeper-fish-sit-generated-source.png", 48, 40, dict(seat_point=[24, 29], hand_use_point=[42, 17], facing="right", interaction="fish-and-reel", mirror_safe=True, mirrors_for="left")),
+    ("keeper_collect_eggs_back", "keeper-collect-eggs-generated-source.png", 40, 40, dict(hand_use_point=[20, 36], facing="back", interaction="collect-eggs")),
+    ("keeper_bath_enter", "keeper-bath-enter-generated-source.png", 40, 40, dict(facing="right", interaction="enter-bath", outfit="towel-privacy", loop=False, reverse_for="bath-exit", mirror_safe=True, mirrors_for="left")),
+    ("keeper_bath_wash", "keeper-bath-wash-generated-source.png", 40, 40, dict(seat_point=[20, 29], facing="front", interaction="wash-in-bath", outfit="mosaic-privacy")),
+    ("keeper_bath_exit", "keeper-bath-exit-generated-source.png", 40, 40, dict(facing="right", interaction="exit-bath", outfit="towel-privacy", loop=False, mirror_safe=True, mirrors_for="left")),
+    ("keeper_shower_enter", "keeper-shower-enter-generated-source.png", 40, 40, dict(facing="rear-right", interaction="enter-shower", outfit="towel-privacy", loop=False, mirror_safe=True, mirrors_for="rear-left")),
+    ("keeper_shower_wash", "keeper-shower-wash-generated-source.png", 40, 40, dict(facing="back", interaction="wash-in-shower", outfit="mosaic-privacy")),
+    ("keeper_shower_exit", "keeper-shower-exit-generated-source.png", 40, 40, dict(facing="rear-right", interaction="exit-shower", outfit="towel-privacy", loop=False, mirror_safe=True, mirrors_for="rear-left")),
+]
+
+for outfit in ("knight", "spaceman", "pirate", "tarzan", "halloween", "mechanic"):
+    for view, facing, vector in (("side", "right", [1, 0]), ("back", "back", [0, -1]), ("front", "front", [0, 1])):
+        metadata = dict(outfit=outfit, facing=facing, movement_vector=vector, interaction=f"{outfit}-walk")
+        if view == "side": metadata.update(mirror_safe=True, mirrors_for="left")
+        ADDITIONAL_CLIPS.append((f"keeper_{outfit}_walk_{view}", f"keeper-{outfit}-{view}-generated-source.png", 32, 48, metadata))
+
+ADDITIONAL_CLIPS.append(("keeper_mechanic_fix", "keeper-mechanic-fix-generated-source.png", 40, 40, dict(outfit="mechanic", hand_use_point=[34, 22], facing="right", interaction="fix-vehicle", mirror_safe=True, mirrors_for="left")))
+
+for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONAL_CLIPS:
+    try:
+        frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height)
+    except ValueError:
+        # A few prop-heavy strips bridge adjacent x-runs.  Their prompts use
+        # explicit equal cells; isolate the principal figure inside each cell
+        # so a neighbour's overlapping prop cannot leak into the frame.
+        frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, force_equal_cells=True)
+    if clip_name == "keeper_put_record":
+        # The source's two middle poses touch by a few pixels.  The usable
+        # figure begins well inside the cell; clear only that neighbour fringe.
+        for frame in frames:
+            ImageDraw.Draw(frame).rectangle((0, 0, 3 * D, frame.height), fill=(0, 0, 0, 0))
+    save(clip_name, frames, 8, **metadata)
+    save_preview(clip_name.replace("_", "-"), frames, 120)
+
+# Semantic aliases reuse approved motion while preserving object-specific lookup.
+for clip_name, frames, metadata in (
+    ("keeper_check_instrument_side", switch_side_frames, dict(hand_use_point=[27, 17], facing="right", interaction="check-instrument", mirror_safe=True, mirrors_for="left")),
+    ("keeper_check_instrument_back", switch_back_frames, dict(hand_use_point=[26, 17], facing="back", interaction="check-instrument")),
+    ("keeper_type_computer", piano_frames, dict(seat_point=[16, 29], hand_use_point=[24, 20], facing="front-right", interaction="type-computer", mirror_safe=True, mirrors_for="front-left")),
+):
+    save(clip_name, frames, 8, **metadata)
+    save_preview(clip_name.replace("_", "-"), frames, 120)
+
 print(f"Keeper batch authored in {OUT}")

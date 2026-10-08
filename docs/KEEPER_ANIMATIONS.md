@@ -84,6 +84,53 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Crouched ground work | `keeper_crouch_work_back` | direct rear reusable proxy; animated low alternating arm reaches |
 | Take cake from oven | `keeper_cake_from_oven_back` | direct rear one-shot; oven/rack separate; mitts, tray and cake included |
 | Turn carrying cake | `keeper_cake_turn_right` | rear-to-right one-shot; mirror for rear-to-left |
+| Feed fish overhead | `keeper_fish_feed_up` | right; mirror left; aligns to high tank opening |
+| Brush aquarium glass | `keeper_aquarium_brush` | right; mirror left; dry algae brush included, tank separate |
+| Net aquarium fish | `keeper_aquarium_net` | right; mirror left; net and caught fish included |
+| Hammer at workbench | `keeper_hammer_side` / `keeper_hammer_back` | side mirrors left; workbench separate |
+| Read sitting | `keeper_read_side` / `keeper_read_front` | side mirrors left; chair and table separate |
+| Write | `keeper_write_side` / `keeper_write_back` | side mirrors left; desk separate |
+| Check wall instrument | `keeper_check_instrument_side` / `keeper_check_instrument_back` | semantic reuse of switch reach at the same control height |
+| Inspect tabletop | `keeper_lean_table_back` | rear lean; table separate |
+| Look through telescope | `keeper_telescope` | right; mirror left; telescope mount separate |
+| Put on a record | `keeper_put_record` | right; mirror left; record included, turntable separate |
+| Paint | `keeper_paint_side` / `keeper_paint_back` | splodged artist smock; side mirrors left; canvas/easel separate |
+| Use potter's wheel | `keeper_pottery_front` | seated front in artist smock; clay included, wheel separate |
+| Type at computer | `keeper_type_computer` | semantic reuse of piano hand motion; desk/computer separate |
+| Search boxes | `keeper_search_boxes` | low rear rummage; boxes separate |
+| Retrieve meal from oven | `keeper_meal_from_oven_back` | rear one-shot; plate/meal included, oven separate |
+| Place meal on table | `keeper_meal_place_side` | right; mirror left; table separate |
+| Count money | `keeper_count_money` | seated front; notes and coins included |
+| Play snooker | `keeper_snooker` | right; mirror left; cue included, table/balls separate |
+| Play table tennis | `keeper_table_tennis` | right; mirror left; paddle/ball included, table separate |
+| Throw darts | `keeper_darts` | right; mirror left; dart included, board separate |
+| Bounce on trampoline | `keeper_trampoline_front` | front; trampoline separate |
+| Lift weights | `keeper_lift_weights_back` | rear overhead press; barbell included |
+| Do press-ups | `keeper_pressups_side` | right; mirror left |
+| Float in anti-gravity | `keeper_anti_gravity` | centred 48 × 48 loop; room applies drift/circling translation |
+| Chop plants | `keeper_machete_side` | right; mirror left; machete included, plants separate |
+| Drink handled pint | `keeper_drink_pint` | seated front-right; mirror front-left; tankard included |
+| Ride bicycle | `keeper_ride_bike_front` | direct front; handlebars/front wheel included |
+| Press lift button | `keeper_lift_button_front` | front, right-hand reach; mirror to swap hand |
+| Climb spiral stairs | `keeper_spiral_stairs` | three-quarter curved-step loop; staircase/rail separate |
+| Ride slide | `keeper_slide_side` | right; mirror left; slide separate |
+| Use barbecue | `keeper_bbq_back` | rear; tongs included, barbecue separate |
+| Soak in hot tub | `keeper_hot_tub` | seated front with opaque water/foam privacy band; tub separate |
+| Ten-pin bowling | `keeper_bowling` | right; mirror left; ball included, lane/pins separate |
+| Play video game | `keeper_video_game` | rear-right with controller; mirror rear-left; TV/seat separate |
+| Water plants | `keeper_water_plants_side` / `keeper_water_plants_back` / `keeper_water_plants_front` | side mirrors left; can/stream included, plants separate |
+| Fish standing | `keeper_fish_standing` | right; mirror left; rod, line and catch included |
+| Fish seated | `keeper_fish_seated` | right; mirror left; seat/water separate |
+| Collect eggs | `keeper_collect_eggs_back` | low rear crouch; basket/egg included, coop separate |
+| Enter / wash / exit bath | `keeper_bath_enter`, `keeper_bath_wash`, `keeper_bath_exit` | entry/exit towel; wash has opaque mosaic/foam privacy coverage; bath separate |
+| Enter / wash / exit shower | `keeper_shower_enter`, `keeper_shower_wash`, `keeper_shower_exit` | entry/exit towel; wash has opaque mosaic privacy coverage; shower separate |
+| Walk as knight | `keeper_knight_walk_side/back/front` | side mirrors left; three-view canonical movement |
+| Walk as spaceman | `keeper_spaceman_walk_side/back/front` | side mirrors left; three-view canonical movement |
+| Walk as pirate captain | `keeper_pirate_walk_side/back/front` | side mirrors left; three-view canonical movement |
+| Walk as Tarzan | `keeper_tarzan_walk_side/back/front` | family-friendly tunic; side mirrors left; three-view movement |
+| Walk in Halloween costume | `keeper_halloween_walk_side/back/front` | friendly face-visible vampire; side mirrors left |
+| Walk as mechanic | `keeper_mechanic_walk_side/back/front` | side mirrors left; three-view canonical movement |
+| Fix car or boat | `keeper_mechanic_fix` | right; mirror left; spanner included, vehicle/engine separate |
 
 For review, the shared side strip has separate, plainly named
 `keeper-switch-press-right-preview.gif` and
@@ -120,6 +167,9 @@ to `(14,20)` for left. The oven body, door and rack remain separate objects.
 
 Cooking, washing and brushing currently use named aliases of the general rear
 work loop so gameplay code can remain descriptive without duplicating art.
+Instrument checking similarly reuses the measured switch reach, while computer
+typing reuses the piano hand cycle. These are separately named manifest entries,
+so object code never needs to know that the pixels are shared.
 
 ## Applying a switch animation to an object
 
@@ -161,14 +211,11 @@ The next animation work should follow gameplay dependency rather than novelty.
 
 ### Priority 0 — everyday playable lighthouse life
 
-- Seated reading and TV sit/stand transitions; the watching loop is delivered.
-- Bed entry, sleep/snore loop and get-out reverse are delivered; blanket and
-  pillow artwork remain part of the bed object.
-- Telescope look, telephone use and fishing cast/reel/catch.
-- Sweep/tidy, carry/pick up/put down, and remaining repair/polish variants;
-  welding and hand-sawing are delivered with their visible tools.
-- Garden watering and planting; sowing and low/high harvesting are delivered.
-- Pet/stroke/play and a standing hand-feed variant for larger animals.
+- Telephone use, sweep/tidy, generic carry/pick-up/put-down and remaining
+  repair/polish variants. Reading, writing, telescope, fishing, watering,
+  aquarium care, hammering, welding and sawing are delivered.
+- Pet/stroke/play and a standing hand-feed variant for larger animals; bowl
+  feeding and egg collection are delivered.
 - Receiving/giving an item, thinking and additional idle variants; the
   front-facing wave and yawn reactions are delivered.
 
@@ -180,10 +227,11 @@ The next animation work should follow gameplay dependency rather than novelty.
   swimming is delivered in both striped and scuba outfits; the platform dive
   ends just before water contact.
 - Boat embark/disembark, speedboat acceleration/braking and outboard starting.
-- Spacesuit floating for the later expansion.
+- Spacesuit-specific floating for the later expansion; the normal-uniform
+  anti-gravity circling loop and three-view spaceman walk are delivered.
 
 ### Priority 2 — personality and comedy
 
-- Dance, celebratory jump, spin, shake, shrug and robot walk.
+- Celebratory jump, spin, shake, shrug and robot walk; dancing is delivered.
 - Laugh, cry, hide, headstand and flex.
 - Rare bodily/comedy reactions kept separate from ordinary interaction clips.

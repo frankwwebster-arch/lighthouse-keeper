@@ -39,7 +39,7 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==77
+assert len(keeper_pngs)==147
 required_clips={
     'keeper_idle':(4,6), 'keeper_walk':(8,10),
     'keeper_turn_back':(6,8), 'keeper_work_back':(8,8),
@@ -81,7 +81,7 @@ for raw in keeper_pngs:
     assert im.size==(sidecar['w']*sidecar['density']*sidecar['frames'],sidecar['h']*sidecar['density'])
     assert sidecar['w'] in {32,40,48} and sidecar['h'] in {40,48,56,84}
     assert sidecar['density']==4
-    is_centred_swim=raw.stem.startswith(('keeper_swim_costume_','keeper_scuba_swim_'))
+    is_centred_swim=raw.stem.startswith(('keeper_swim_costume_','keeper_scuba_swim_','keeper_anti_gravity_'))
     expected_anchor=[sidecar['w']//2,sidecar['h']//2] if is_centred_swim else [sidecar['w']//2,sidecar['h']]
     assert sidecar['anchor']==expected_anchor,(raw.name,sidecar['anchor'])
     assert set(im.getchannel('A').tobytes()) <= {0,255}
@@ -178,8 +178,23 @@ assert manifest['keeper_cake_from_oven_back']['loop'] is False and manifest['kee
 assert manifest['keeper_cake_turn_right']['w']==48 and manifest['keeper_cake_turn_right']['handUsePoint']==[34,20]
 assert manifest['keeper_cake_turn_right']['loop'] is False and manifest['keeper_cake_turn_right']['mirrorSafe'] is True
 assert manifest['keeper_cake_turn_right']['mirrorsFor']=='back-to-left'
+for name in ['keeper_fish_feed_up','keeper_aquarium_brush','keeper_aquarium_net','keeper_hammer_side','keeper_read_side','keeper_write_side','keeper_telescope','keeper_put_record','keeper_paint_side','keeper_meal_place_side','keeper_snooker','keeper_table_tennis','keeper_darts','keeper_machete_side','keeper_pressups_side','keeper_bowling','keeper_video_game','keeper_water_plants_side','keeper_fish_standing','keeper_fish_seated','keeper_mechanic_fix']:
+    assert manifest[name]['mirrorSafe'] is True and manifest[name]['mirrorsFor']
+assert manifest['keeper_anti_gravity']['anchor']==[24,24]
+assert manifest['keeper_fish_feed_up']['handUsePoint']==[26,7]
+assert manifest['keeper_type_computer']['interaction']=='type-computer'
+assert manifest['keeper_check_instrument_side']['interaction']=='check-instrument'
+for name in ['keeper_bath_enter','keeper_bath_exit','keeper_shower_enter','keeper_shower_exit']:
+    assert manifest[name]['outfit']=='towel-privacy' and manifest[name]['loop'] is False
+for name in ['keeper_bath_wash','keeper_shower_wash']:
+    assert manifest[name]['outfit']=='mosaic-privacy'
+for outfit in ['knight','spaceman','pirate','tarzan','halloween','mechanic']:
+    for view in ['side','back','front']:
+        clip=manifest[f'keeper_{outfit}_walk_{view}']
+        assert clip['outfit']==outfit and clip['h']==48 and clip['frames']==8
+    assert manifest[f'keeper_{outfit}_walk_side']['mirrorSafe'] is True
 asset_contract=json.loads((root/'data/keeper_asset_contract.json').read_text())
-assert asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
+assert asset_contract['version']==2 and asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
 assert asset_contract['canvas']['standard']=={'width':32,'height':40,'density':4,'anchor':[16,40]}
 assert asset_contract['canvas']['extendedAirborne']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
 assert asset_contract['canvas']['extendedVerticalDive']=={'width':48,'height':56,'density':4,'anchor':[24,56]}
@@ -211,6 +226,12 @@ assert asset_contract['objectRules']['snowShovelContactHeightAboveFloor']==3
 assert asset_contract['objectRules']['crouchedGroundContactHeightAboveFloor']==2
 assert asset_contract['objectRules']['ovenRackHeightAboveFloor']==10
 assert asset_contract['objectRules']['cakeCarryHeightAboveFloor']==20
+assert asset_contract['objectRules']['fishFeedTargetHeightAboveFloor']==41
+assert asset_contract['objectRules']['workbenchHammerSurfaceHeightAboveFloor']==17
+assert asset_contract['objectRules']['writingSurfaceHeightAboveFloor']==19
+assert asset_contract['objectRules']['turntablePlatterHeightAboveFloor']==13
+assert asset_contract['objectRules']['instrumentControlHeightAboveFloor']==23
+assert asset_contract['objectRules']['liftButtonHeightAboveFloor']==23
 walk=Image.open(root/'public/sprites'/manifest['keeper_walk']['file']).convert('RGBA')
 walk_frames=[walk.crop((i*128,0,(i+1)*128,160)) for i in range(8)]
 assert len({frame.tobytes() for frame in walk_frames})>=5
@@ -255,4 +276,7 @@ previews={
 for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
-print('Verified: 71 spaces, 1559 rows, owned-item states, 9 TV/lamp/FX exports, 77 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
+keeper_previews=list((root/'docs/floor-asset-catalogue').glob('keeper-*-preview.gif'))
+assert len(keeper_previews)==131
+assert all(Image.open(path).is_animated for path in keeper_previews)
+print('Verified: 71 spaces, 1559 rows, owned-item states, 9 TV/lamp/FX exports, 147 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')

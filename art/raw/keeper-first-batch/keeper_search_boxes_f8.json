@@ -1,0 +1,19 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "handUsePoint": [
+    16,
+    36
+  ],
+  "facing": "back",
+  "interaction": "search-boxes"
+}

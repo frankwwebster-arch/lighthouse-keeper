@@ -13,8 +13,8 @@ same baseline, hardens alpha and exports the exact runtime strip.
 The same identity-locked process supplies further generated sources:
 turning from camera to rear, a reusable rear-facing arm-work loop, side and
 front sit-down transitions, seated piano/instrument playing, a discreet
-rear-facing urination proxy, and seated eating with fork and knife. These source
-Door opening (side and rear), ladder climbing, and distinct stair ascent/descent
+rear-facing urination proxy, and seated eating with fork and knife. Door
+opening (side and rear), ladder climbing, and distinct stair ascent/descent
 sources extend the same movement kit. Side/rear switch-reaching sources add a
 fixed fingertip target for reuse across buttons and controls. These source
 sheets remain untouched beside the turnaround. The rejected earlier simplified
@@ -175,6 +175,18 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
 - `keeper-cake-turn-right-generated-source.png` — six connected poses turning
   from the retrieval end pose to right-facing carry; mirror for the left turn.
 
+The 9 October interaction expansion adds 67 untouched generated source sheets.
+Their filenames follow the action directly: fish feeding and aquarium care;
+hammering, reading, writing and table inspection; telescope, records, painting,
+pottery and box searching; meal service and money; games and exercise; bathing,
+showering and hot-tub use; fishing, watering and egg collection; lift, bicycle,
+spiral-stair and slide movement; and side/back/front walks for knight,
+spaceman, pirate, Tarzan, Halloween and mechanic outfits plus mechanic repair.
+The corresponding runtime names and mirror/application rules are indexed in
+`docs/KEEPER_ANIMATIONS.md`. The aquarium brush and side-hammer sheets are the
+clean regenerated versions; the rejected foamy brush and welding-contaminated
+hammer studies were never copied into this source directory.
+
 The replaced navy pyjama source files remain in this directory as historical
 inputs, but production uses only the `light-blue` files above. The built-in
 image generator was run in referenced-image mode: recolour only the pyjama
@@ -203,5 +215,10 @@ Directional swim clips use a centred 48 × 48 canvas; party and sou'wester
 headwear use a 32 × 48 canvas so headwear never shrinks the keeper. Guitar and
 movie clips use 48 × 40 for their horizontal extent; raised drumsticks use
 32 × 48 without shrinking the seated body. Snow clearing also uses 48 × 40 for
-the full shovel stroke; cake retrieval and carrying use 48 × 40 for the tray. All
-generation used the built-in image generator in referenced-image mode.
+the full shovel stroke; cake retrieval and carrying use 48 × 40 for the tray.
+The expanded clips add 40-pixel-wide fish-tank/tabletop actions, 48-pixel-wide
+long-prop actions, centred 48 × 48 anti-gravity motion, and 32 × 48 costume
+walks. Bath/shower prompts require towel coverage on entry/exit and an opaque
+blue mosaic/foam band on every wash frame. All generation used the built-in
+image generator in referenced-image mode; runtime creation is deterministic
+normalization only.

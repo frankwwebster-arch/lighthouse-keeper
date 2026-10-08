@@ -195,7 +195,7 @@ with (OUT/'spaces.csv').open('w',newline='') as f:
     w=csv.DictWriter(f,fieldnames=fields,lineterminator='\n');w.writeheader();w.writerows({k:('x'.join(map(str,s[k])) if k=='dimensions' else s[k]) for k in fields} for s in spaces)
 # Asset status is editable annotation data, not a change to runtime mechanics.
 summary=Counter(r['implementation_status'] for r in rows)
-payload={'base_commit':evidence['baseCommit'],'spaces':spaces,'rows':rows,'summary':dict(summary),'native_canvas_published':False,'revision':'2026-10-08 review batch; ON required for operating devices; passive furniture uses standard/occupied states'}
+payload={'base_commit':evidence['baseCommit'],'spaces':spaces,'rows':rows,'summary':dict(summary),'native_canvas_published':False,'revision':'2026-10-09 keeper interaction expansion; ON required for operating devices; passive furniture uses standard/occupied states'}
 (OUT/'catalogue.json').write_text(json.dumps(payload,indent=2)+'\n')
 # A self-contained HTML file is produced from a template, with embedded JSON and sprite images.
 images={}
@@ -210,6 +210,7 @@ TEMPLATE=(SRC/'review-template.html').read_text()
 # controls into the generated standalone canvas. These settings are annotations
 # and never alter runtime sprites or game mechanics.
 TEMPLATE=TEMPLATE.replace('</style>', '<style>.channel-stage{position:relative;display:inline-block;overflow:hidden;image-rendering:pixelated;background:#14243a}.shimmer-overlay{position:absolute;left:0;right:0;height:4px;background:rgba(255,244,190,.9);mix-blend-mode:screen;pointer-events:none;opacity:.65}</style>')
+TEMPLATE=TEMPLATE.replace('Frank’s working review · 8 October 2026', 'Frank’s working review · 9 October 2026')
 TEMPLATE=TEMPLATE.replace('Native Codex Canvas publication is unavailable in this session. Frank’s corrections: use the inset glazed lantern cap from the full lighthouse reference, with wraparound walkway; preserve the original CRT box proportions. Coarse exports, the full-width room and stretched TV are rejected. Logical footprints stay fixed; new PNGs retain 4 source pixels per logical pixel.', 'The new keeper batch follows the approved CRT detail, palette and hard-alpha rules while preserving the familiar navy cap, blue jumper and cream beard. Frank’s earlier corrections remain locked: inset glazed lantern cap with wraparound walkway; original CRT box proportions; fixed logical footprints and density-4 production sources.')
 TEMPLATE=TEMPLATE.replace('The lamp room is the narrow glazed lantern chamber on a wraparound outside walkway, matching the top of the full lighthouse reference. The original CRT is the production master, with its aspect ratio preserved. Rejected studies remain clearly labelled for review history.', 'The keeper turnaround and aligned contact sheet are the newest review sources. The original CRT remains the object-style master; the inset glazed lantern chamber remains the top-floor reference. Rejected studies stay labelled for review history.')
 TEMPLATE=TEMPLATE.replace("k.startsWith('obj_tv')||k.startsWith('fx_broken')||k==='room_lamp'", "k.startsWith('keeper_')||k.startsWith('obj_tv')||k.startsWith('fx_broken')||k==='room_lamp'")

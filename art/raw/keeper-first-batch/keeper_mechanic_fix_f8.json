@@ -1,0 +1,22 @@
+{
+  "w": 40,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    20,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "handUsePoint": [
+    34,
+    22
+  ],
+  "outfit": "mechanic",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "fix-vehicle",
+  "mirrorsFor": "left"
+}

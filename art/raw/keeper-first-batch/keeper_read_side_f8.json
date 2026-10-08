@@ -1,0 +1,21 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "seatPoint": [
+    16,
+    29
+  ],
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "read-book",
+  "mirrorsFor": "left"
+}

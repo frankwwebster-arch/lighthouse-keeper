@@ -1,0 +1,17 @@
+{
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    24,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "press-ups",
+  "mirrorsFor": "left"
+}

@@ -1,0 +1,20 @@
+{
+  "w": 32,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    16,
+    48
+  ],
+  "z": 50,
+  "loop": true,
+  "movementVector": [
+    0,
+    1
+  ],
+  "outfit": "mechanic",
+  "facing": "front",
+  "interaction": "mechanic-walk"
+}

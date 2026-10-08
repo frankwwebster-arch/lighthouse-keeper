@@ -40,6 +40,17 @@ downward. A side-facing point at X mirrors with `mirroredX = canvasWidth - X`.
 | Welding contact | 18 px | side `(27,22)` |
 | Sawing contact | 17 px | extended side canvas `(35,23)` |
 | Bed mattress surface | 9 px | extended bed canvas `(24,31)` |
+| Fish-feed opening / tank top | 41 px | raised canvas `(26,7)` |
+| Aquarium brush target | 23 px | extended side canvas `(34,17)` |
+| Aquarium net target | 19 px | extended side canvas `(34,21)` |
+| Hammering workbench | 17 px | extended side canvas `(32,23)` |
+| Writing surface | 19 px | extended side canvas `(34,21)` |
+| Turntable platter | 13 px | extended side canvas `(34,27)` |
+| Potter's-wheel hand position | 17 px | `(20,23)` on 40 × 40 canvas |
+| Meal table surface | 12 px | tray canvas `(39,28)` |
+| Watering target | 9 px | extended side canvas `(35,31)` |
+| Barometer / instrument control | 23 px | side `(27,17)`; rear `(26,17)` |
+| Lift button | 23 px | front `(27,17)` |
 
 These are interaction datums, not mandatory object sizes. For example, a light
 switch can have any suitable plate size, but its button centre must be 23 px
@@ -75,7 +86,10 @@ for getting out.
 The shared pivot landmarks are neck `(16,11)`, shoulders `(10,15)` and
 `(22,15)`, and hips `(13,25)` and `(19,25)`. New outfits must preserve these
 landmarks. The striped swimming costume, parachute harness, light powder-blue pyjamas and yellow sou'wester oilskins
-therefore change clothing only, never body proportions.
+therefore change clothing only, never body proportions. Knight, spaceman,
+pirate, Tarzan, Halloween and mechanic sets use the same three-view movement
+contract: side/right (mirror for left), direct rear and direct front, all on a
+32 × 48 canvas with an unchanged body scale.
 
 Directional underwater movement reads `movementVector` from the manifest:
 right `(1,0)`, mirrored left `(-1,0)`, up `(0,-1)`, and down `(0,1)`. Water,
@@ -107,6 +121,13 @@ object so different ovens can reuse the same animation.
 Any new prop-based animation must add its hand, seat or ground point to the
 JSON contract and its sprite sidecar. Verification rejects changes that break
 the established switch heights, canvas scale or feet anchors.
+
+Bath, shower and hot-tub clips use the same scale but carry explicit privacy
+metadata. Entry and exit frames use `towel-privacy`; washing uses
+`mosaic-privacy`, and the hot-tub loop uses `privacy-foam`. The opaque coverage
+is part of every relevant actor frame, so pausing or skipping frames cannot
+reveal an uncovered intermediate pose. The bath, shower and tub remain separate
+objects aligned to the usual feet or seat point.
 
 Welding uses the normal 32 × 40 canvas. The hand saw needs the 40 × 40
 `extendedSideTool` canvas so its full stroke remains visible without shrinking

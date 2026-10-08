@@ -1,0 +1,22 @@
+{
+  "w": 32,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    16,
+    48
+  ],
+  "z": 50,
+  "loop": true,
+  "movementVector": [
+    1,
+    0
+  ],
+  "outfit": "spaceman",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "spaceman-walk",
+  "mirrorsFor": "left"
+}
