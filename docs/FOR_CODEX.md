@@ -19,3 +19,30 @@ Current implementation: `MISSIONS` in `src/game/config.ts` unlocks **aquarium**,
 - Underground: day 1 shows nothing below the ground. The view grows downward only once the lair unlocks.
 
 Authoritative detail is in `HANDOFF_TO_CLAUDE.md` under **“Locked rule: future floor progression is non-linear”**. Geometry and art must never force mission order: all standard bands remain 110 × 35 logical pixels, the lamp room stays topmost, and stripes come from world Y.
+
+## Upgrade tiers: art request (8 Oct 2026)
+
+Tiered upgrades are live in the game logic. Each tier uses stand-in art (the tier-1 sprite plus a small `T2`/`T3` text tag) until your tier sprites arrive. Yours to design; please send tier art when you get to it.
+
+- File names, as agreed: `obj_<id>_t<n>_<state>_f<frames>.png` (for example `obj_tv_t2_on_f4.png`). Tier 1 has no tier suffix. Same footprint and bottom-centre anchor as tier 1 unless you tell me otherwise.
+- Lookup order at runtime: `obj_<id>_t<n>_<state>`, `obj_<id>_t<n>`, then each lower tier, then tier 1. So a tier with only a `standard` still is fine to start with. The `T<n>` tag disappears as soon as a tier sprite exists.
+- Preview: `?tiers=3` shows every object at its top tier (up to 3); `?tiers=tv:3,bed:2` picks them. Works with `?broken=`.
+- The tiers and their working names (rename freely; names live in `UPGRADES` in `src/game/config.ts`):
+
+| Object | Tier 2 | Tier 3 |
+|---|---|---|
+| bed | comfy mattress | royal four-poster |
+| tv | big-screen TV | cinema wall |
+| cooker | shiny new range | chef’s super cooker |
+| fridge | double fridge | mega fridge with ice maker |
+| phone | cordless phone | video phone |
+| telescope | brass spyglass | observatory telescope |
+| broom | hoover | robot hoover |
+| piano | grand piano | — |
+| bookshelf | library wall | — |
+| desk | inventor’s desk | — |
+| basin | spa basin | — |
+| toilet | heated-seat loo | — |
+| petbowl | automatic feeder | — |
+
+- Hooks you may want: each object's `<g>` carries `data-tier` and a `tier-<n>` class. There is no upgrade-arrival effect yet; tell me if you want one (for example reusing `fx_floor_arrival_smoke`).

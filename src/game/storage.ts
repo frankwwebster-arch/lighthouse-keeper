@@ -22,6 +22,7 @@ export function revive(s: State | null): State | null {
     s.thunderAt = s.thunderAt ?? Infinity
     s.rules = { ...DEFAULT_RULES, ...(s.rules ?? {}) }
     s.broken = Array.isArray(s.broken) ? s.broken : []
+    s.tiers = s.tiers && typeof s.tiers === 'object' ? s.tiers : {}
     s.unlocked = Array.isArray(s.unlocked) ? s.unlocked : []
     s.missions = s.missions && Array.isArray(s.missions.done) ? { done: s.missions.done, progress: s.missions.progress ?? {} } : freshMissions()
     s.tally.needSums = { ...Object.fromEntries(NEEDS.map((n) => [n, 0])), ...(s.tally.needSums ?? {}) } as typeof s.tally.needSums

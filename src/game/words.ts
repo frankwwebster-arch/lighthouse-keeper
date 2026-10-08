@@ -5,7 +5,7 @@
  */
 
 import { ACKS, reactionById } from './commands'
-import { INTERACTIONS, NEED_LABEL, foodById, interactionById, missionById, objectById, visitorById, type NeedId, type ObjectId, type UnlockId } from './config'
+import { INTERACTIONS, NEED_LABEL, foodById, interactionById, missionById, objectById, upgradeTier, visitorById, type NeedId, type ObjectId, type UnlockId } from './config'
 import { moodWord, type Happening, type MoodWord, type State } from './engine'
 
 export function clockText(minutes: number): string {
@@ -60,6 +60,7 @@ const refuse = (h: Happening): string => {
   if (why === 'phone_busy') return 'I only just put the phone down! Give it a bit.'
   if (why === 'phone_mood') return 'I do not feel like chatting to anyone. Not today.'
   if (why === 'phone_none') return 'Everyone I know is already here!'
+  if (why === 'broke' && h.id === 'upgrade') return 'We cannot afford that upgrade yet. Save up a bit more!'
   if (why === 'broke') return h.item ? `I cannot afford the ${foodById(h.item)?.label.toLowerCase() ?? 'that'}. Not enough credits.` : 'We have not got the credits for that today.'
   if (why === 'broken') return 'It is broken. I need to repair it first.'
   if (why === 'notready') return 'Nothing is ready to pick. Water the garden first.'
@@ -172,6 +173,14 @@ export function tell(h: Happening, s: State): Told {
     case 'repaired': {
       const label = objectById(h.id as ObjectId)?.label ?? 'thing'
       return { say: `Fixed! The ${label.toLowerCase()} is working again.`, diary: `${t} He repaired the ${label.toLowerCase()}.`, tone: 'good' }
+    }
+    case 'upgraded': {
+      const name = upgradeTier(h.id as ObjectId, h.level ?? 2)?.name ?? 'upgrade'
+      const a = /^[aeiou]/.test(name) ? 'an' : 'a'
+      const old = objectById(h.id as ObjectId)?.label.toLowerCase() ?? 'thing'
+      return h.gift
+        ? { say: `A present from the grown-ups: ${a} ${name}! Best day ever.`, diary: `${t} The grown-ups gave him ${a} ${name}.`, tone: 'good' }
+        : { say: pick([`Out with the old ${old}, in with the ${name}!`, `Ooh, ${a} ${name}! Worth every credit.`, `Look at that! ${a === 'an' ? 'An' : 'A'} ${name}. Very posh.`], h.n), diary: `${t} He upgraded to ${a} ${name} for ${h.amount} credits.`, tone: 'good' }
     }
     case 'mission_done': {
       const m = h.id ? missionById(h.id) : undefined

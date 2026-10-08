@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react'
-import { DEFAULT_RULES, FOODS, MISSIONS, INTERACTIONS, NEEDS, NEED_LABEL, VISITOR_ONLY, foodById, type InteractionDef, type NeedId, type ObjectId, type PetKind, type Rules } from '../game/config'
-import { insideVisit, moodOf, moodWord, owned, priceOf, waitingVisit, type DayResult, type Prompt, type State } from '../game/engine'
+import { DEFAULT_RULES, FOODS, MISSIONS, INTERACTIONS, NEEDS, NEED_LABEL, OBJECTS, UPGRADES, VISITOR_ONLY, foodById, objectById, upgradeKey, upgradeName, upgradeTier, type InteractionDef, type NeedId, type ObjectId, type PetKind, type Rules } from '../game/config'
+import { insideVisit, moodOf, moodWord, nextUpgrade, owned, priceOf, tierOf, upgradePrice, waitingVisit, type DayResult, type Prompt, type State } from '../game/engine'
 import type { Order } from '../game/engine'
 import { NAMES, clockText, labelFor, moodFace, moodName } from '../game/words'
-import { activeMission, goalKey, goalTarget, goalsOf, rewardOf, scaledTarget } from '../game/missions'
+import { activeMission, goalKey, goalTarget, goalsOf, objectAvailable, rewardOf, scaledTarget } from '../game/missions'
 
 // ─── Top bar ─────────────────────────────────────────────────────────────────
 
@@ -52,13 +52,16 @@ export function menuFor(s: State, id: ObjectId): InteractionDef[] {
   })
 }
 
-export function ObjectMenu({ s, id, label, onPick, onClose }: { s: State; id: ObjectId; label: string; onPick: (o: Order) => void; onClose: () => void }) {
+export function ObjectMenu({ s, id, label, onPick, onUpgrade, onClose }: { s: State; id: ObjectId; label: string; onPick: (o: Order) => void; onUpgrade: () => void; onClose: () => void }) {
   const items = menuFor(s, id)
   const broken = s.broken.includes(id)
+  const up = nextUpgrade(s, id)
+  const tier = upgradeTier(id, tierOf(s, id))
+  const now = tier && upgradeName(tier)
   return (
     <div className="sheet menu">
       <div className="sheet-head">
-        <b>{label}</b>
+        <b>{now ?? label}</b>
         <button className="x" onClick={onClose} aria-label="Close">✕</button>
       </div>
       {broken && <p className="fault-copy">It has broken down. Repair it before using it again.</p>}
@@ -79,6 +82,12 @@ export function ObjectMenu({ s, id, label, onPick, onClose }: { s: State; id: Ob
             </div>
           )
         })}
+        {up && (
+          <button className="big upgrade" disabled={s.credits < up.price} onClick={onUpgrade}>
+            ⬆️ Upgrade to {up.name} · 🪙 {up.price}
+            {s.credits < up.price && <small> (save {up.price - s.credits} more)</small>}
+          </button>
+        )}
       </div>
     </div>
   )
@@ -346,7 +355,7 @@ const Num = ({ label, hint, value, onChange, min = 0, max = 999 }: { label: stri
   </label>
 )
 
-export function GrownUps({ rules, credits, who, mission, verify, onRules, onGift, onFinishMission, onPin, onClose }: { rules: Rules; credits: number; who: string; mission?: string; verify: (pin: string) => Promise<boolean>; onRules: (r: Rules, pin: string) => void; onGift: (n: number) => void; onFinishMission: () => void; onPin: (pin: string, newPin: string) => Promise<boolean>; onClose: () => void }) {
+export function GrownUps({ s, rules, credits, who, mission, verify, onRules, onGift, onGiftUpgrade, onFinishMission, onPin, onClose }: { s: State; rules: Rules; credits: number; who: string; mission?: string; verify: (pin: string) => Promise<boolean>; onRules: (r: Rules, pin: string) => void; onGift: (n: number) => void; onGiftUpgrade: (id: ObjectId) => void; onFinishMission: () => void; onPin: (pin: string, newPin: string) => Promise<boolean>; onClose: () => void }) {
   const [typed, setTyped] = useState('')
   const [pin, setPin] = useState<string | null>(null)
   const [wrong, setWrong] = useState(false)
@@ -408,7 +417,40 @@ export function GrownUps({ rules, credits, who, mission, verify, onRules, onGift
           <Num label={`Credits (he has ${credits})`} value={gift} onChange={setGift} />
           <button className="big" onClick={() => onGift(gift)}>🎁 Give</button>
         </div>
-        <p className="dim">Upgrade prices and gifting upgrades will appear here once upgrades are in the game.</p>
+        <h3>Upgrades</h3>
+        <label className="num">
+          <span>All upgrade prices <small>(% of normal; applies to every upgrade)</small></span>
+          <input type="range" min={25} max={300} step={5} value={rules.upgradeScale} onChange={(e) => set({ upgradeScale: Number(e.target.value) })} />
+          <b>{rules.upgradeScale}%</b>
+        </label>
+        <details className="mission-dials">
+          <summary>Set each upgrade price yourself</summary>
+          <p className="dim">These beat the overall setting above.</p>
+          {(Object.keys(UPGRADES) as ObjectId[]).map((id) => (
+            <div key={id}>
+              <b>{objectById(id)?.label}</b>
+              {UPGRADES[id]!.map((u, i) => {
+                const tier = i + 2
+                const own = rules.upgradePrices?.[upgradeKey(id, tier)]
+                return <Num key={tier} label={upgradeName(u)} hint={own === undefined ? `(normal ${u.cost}, now ${upgradePrice(rules, id, tier)})` : '(your price)'} value={upgradePrice(rules, id, tier)} onChange={(n) => set({ upgradePrices: { ...rules.upgradePrices, [upgradeKey(id, tier)]: n } })} />
+              })}
+            </div>
+          ))}
+          <button onClick={() => set({ upgradePrices: {} })}>Clear my own upgrade prices</button>
+        </details>
+        <details className="mission-dials">
+          <summary>Give an upgrade as a present</summary>
+          {OBJECTS.filter((o) => UPGRADES[o.id] && objectAvailable(s, o.id)).map((o) => {
+            const up = nextUpgrade(s, o.id)
+            const has = upgradeTier(o.id, tierOf(s, o.id))
+            return (
+              <div key={o.id} className="row">
+                <span>{o.label}: <b>{has ? upgradeName(has) : 'Standard'}</b></span>
+                {up ? <button onClick={() => onGiftUpgrade(o.id)}>🎁 Give {up.name}</button> : <small className="dim">top tier</small>}
+              </div>
+            )
+          })}
+        </details>
         <h3>Missions</h3>
         <label className="num">
           <span>Mission size <small>(% of normal: 120% means fishing 4 times instead of 3; applies to every mission)</small></span>

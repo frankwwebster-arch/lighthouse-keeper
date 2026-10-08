@@ -237,6 +237,44 @@ export const BREAKDOWN_SFX: Partial<Record<ObjectId, BreakdownSound>> = {
   garden: 'structure-crack', jetty: 'structure-crack',
 }
 
+// ─── Upgrades ────────────────────────────────────────────────────────────────
+
+/** One step up for an object. The first in a list is tier 2 (tier 1 is what he starts with). */
+export interface UpgradeTier {
+  name: string
+  /** Normal price in credits (the grown-ups' dials scale or replace it). */
+  cost: number
+}
+
+/**
+ * Objects he can upgrade, bought with credits from the object's own menu (no
+ * furniture shop). What a tier does is the same for every object (`GAME.upgrades`);
+ * the bed also gives a better night. Names are written to sit mid-sentence
+ * (`upgradeName` gives the heading form) and are first guesses for the art to rename.
+ */
+export const UPGRADES: Partial<Record<ObjectId, readonly UpgradeTier[]>> = {
+  bed: [{ name: 'comfy mattress', cost: 30 }, { name: 'royal four-poster', cost: 55 }],
+  tv: [{ name: 'big-screen TV', cost: 25 }, { name: 'cinema wall', cost: 50 }],
+  cooker: [{ name: 'shiny new range', cost: 25 }, { name: 'chef’s super cooker', cost: 50 }],
+  fridge: [{ name: 'double fridge', cost: 20 }, { name: 'mega fridge with ice maker', cost: 40 }],
+  phone: [{ name: 'cordless phone', cost: 20 }, { name: 'video phone', cost: 40 }],
+  telescope: [{ name: 'brass spyglass', cost: 20 }, { name: 'observatory telescope', cost: 45 }],
+  broom: [{ name: 'hoover', cost: 20 }, { name: 'robot hoover', cost: 45 }],
+  piano: [{ name: 'grand piano', cost: 35 }],
+  bookshelf: [{ name: 'library wall', cost: 25 }],
+  desk: [{ name: 'inventor’s desk', cost: 25 }],
+  basin: [{ name: 'spa basin', cost: 20 }],
+  toilet: [{ name: 'heated-seat loo', cost: 20 }],
+  petbowl: [{ name: 'automatic feeder', cost: 15 }],
+}
+/** The top tier an object goes to (1 = no upgrades). */
+export const maxTier = (id: ObjectId) => 1 + (UPGRADES[id]?.length ?? 0)
+/** Tier 2 and up: its name and normal price. */
+export const upgradeTier = (id: ObjectId, tier: number): UpgradeTier | undefined => (tier >= 2 ? UPGRADES[id]?.[tier - 2] : undefined)
+/** A tier's name as a heading: "Big-screen TV". */
+export const upgradeName = (t: UpgradeTier) => t.name[0].toUpperCase() + t.name.slice(1)
+export const upgradeKey = (id: ObjectId, tier: number) => `${id}:${tier}`
+
 // ─── Missions ────────────────────────────────────────────────────────────────
 
 /**
@@ -245,7 +283,7 @@ export const BREAKDOWN_SFX: Partial<Record<ObjectId, BreakdownSound>> = {
  * `caller_met`, `repaired`, `quiz_right`, `good_day` (a day scored at least
  * GAME.missions.goodDay).
  */
-export type MissionEvent = `done:${string}` | 'ship_safe' | 'caller_met' | 'repaired' | 'quiz_right' | 'good_day'
+export type MissionEvent = `done:${string}` | 'ship_safe' | 'caller_met' | 'repaired' | 'upgraded' | 'quiz_right' | 'good_day'
 
 export interface MissionDef {
   id: string
@@ -371,9 +409,13 @@ export interface Rules {
   missionGoals: Record<string, number>
   /** Your own credits for finishing a mission (mission id → credits); beats `missionReward`. */
   missionRewards: Record<string, number>
+  /** Every upgrade's price, as a percentage of normal (individual prices below beat it). */
+  upgradeScale: number
+  /** Your own price for one upgrade (`<object>:<tier>` → credits); beats the scale. */
+  upgradePrices: Record<string, number>
 }
 
-export const DEFAULT_RULES: Rules = { allowanceBase: 8, allowanceBonus: 20, firstDay: 20, carryCap: 40, greenAt: 50, priceScale: 100, prices: {}, quizLevel: 1, breakdownMinutes: 0, maxBreakdowns: 1, missionScale: 100, missionReward: 10, missionGoals: {}, missionRewards: {} }
+export const DEFAULT_RULES: Rules = { allowanceBase: 8, allowanceBonus: 20, firstDay: 20, carryCap: 40, greenAt: 50, priceScale: 100, prices: {}, quizLevel: 1, breakdownMinutes: 0, maxBreakdowns: 1, missionScale: 100, missionReward: 10, missionGoals: {}, missionRewards: {}, upgradeScale: 100, upgradePrices: {} }
 
 export const GAME = {
   /** The day, in minutes after midnight. He wakes at 7am; the lamp is lit at dusk; bed is 8pm. */
@@ -396,8 +438,8 @@ export const GAME = {
   /** How much each need falls in an hour of his day. */
   drift: { hunger: 6, energy: 5, fun: 6, hygiene: 3, bladder: 8, social: 4, tidiness: 2 } as Record<NeedId, number>,
   startNeeds: { hunger: 62, energy: 90, fun: 60, hygiene: 70, bladder: 70, social: 60, tidiness: 70 } as Record<NeedId, number>,
-  /** What a night does: energy back to this, and these needs fall a bit while he sleeps. */
-  overnight: { energy: 92, hungerLoss: 20, hungerFloor: 35, bladder: 55, hygieneLoss: 12 },
+  /** What a night does: these needs fall a bit while he sleeps. (Energy comes back by the bed's tier: `upgrades.bedEnergy`.) */
+  overnight: { hungerLoss: 20, hungerFloor: 35, bladder: 55, hygieneLoss: 12 },
 
   mood: {
     averageShare: 0.6,
@@ -422,6 +464,12 @@ export const GAME = {
   /** Sped-up walking, picture units a second. */
   walk: { stroll: 200 },
   breakdown: { repairMinutes: 25 },
+  /**
+   * What each tier does, listed from tier 1: this much more of the good a job
+   * does (%), done this much quicker (%), and the energy a night in the bed
+   * brings back.
+   */
+  upgrades: { boost: [0, 25, 50], quicker: [0, 15, 30], bedEnergy: [80, 90, 100] },
   /** Missions: the score that counts as a really good day. (Mission sizes and rewards are grown-ups' dials.) */
   missions: { goodDay: 60 },
 

@@ -33,6 +33,8 @@ export function eventsOf(h: Pick<Happening, 'kind' | 'id' | 'safe' | 'correct'>)
       return ['caller_met']
     case 'repaired':
       return ['repaired']
+    case 'upgraded':
+      return ['upgraded']
     case 'quiz':
       return h.correct ? ['quiz_right'] : []
     default:

@@ -6,7 +6,7 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 ```
 npm install
 npm run dev      # Next.js 14; open http://localhost:3000 (or this computer’s address on the same wifi, for the iPad)
-npm test         # 89 tests
+npm test         # 101 tests
 npm run build    # production build
 npm run sprites  # snap Codex's PNGs in art/raw/ into public/sprites/ (docs/CODEX_ASSETS.md)
 ```
@@ -18,6 +18,7 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 - Future standard floors are intentionally non-linear: whichever eligible floor the player unlocks next is inserted beneath the raised, always-topmost lamp room. Concept-art taper is decorative and never fixes room width or unlock order.
 - The newly added fixed aquarium → weather mission chain is an interim implementation and is documented as a logic refactor, not the final progression model.
 - Every object renderer accepts `standard`, `on`, and `broken`; active gameplay drives `on`. Broken objects share integer-step casing wobble, smoke and sparks. Add `?broken=tv,cooker` (or `?broken=all`) to the URL for the internal art-state preview.
+- Objects can be upgraded with credits from their tap menu (tiers in `UPGRADES`, `src/game/config.ts`). Higher tiers do more good, faster; the bed's tier sets the morning's energy. Grown-ups set upgrade prices (overall %, then per tier) and can gift upgrades. Tier sprites are `obj_<id>_t<n>_<state>`; until they exist a `T<n>` tag stands in. `?tiers=3` previews top tiers.
 - Keeper-owned assets can now break during play, block their normal actions, and be repaired. Grown-ups control average fault frequency and maximum concurrent faults; defaults are off / one. Breakdown events expose placeholder SFX categories for later audio. The shop is excluded because it is not the keeper's asset.
 - Cooker and basin work use a reusable rear-facing keeper fallback. Production keeper PNGs are not delivered yet; neither are object-state strips or later-floor art.
 - Sprite manifest entries may be old string paths or `{ "file", "frames", "fps" }` objects. Horizontal strips animate without CSS scaling or rotation.

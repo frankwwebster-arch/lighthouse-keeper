@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { GAME, minutesPerSecond, objectById, type ObjectId } from './game/config'
 import { momentOf, pickChat, replyToChat } from './game/chat'
 import type { DoOrder } from './game/commands'
-import { answeredChat, arrive, ask, buy, completeMission, dropChat, gift, setRules, nextDay, order, rightAnswer, rollPersonality, shopOpen, startGame, stopDoing, tick, wrongAnswer, type State } from './game/engine'
+import { answeredChat, arrive, ask, buy, completeMission, dropChat, gift, giftUpgrade, setRules, upgrade, nextDay, order, rightAnswer, rollPersonality, shopOpen, startGame, stopDoing, tick, wrongAnswer, type State } from './game/engine'
 import { isNo, isYes, read } from './game/matcher'
 import { checkAnswer, makeQuiz } from './game/quiz'
 import { changePin, deleteGame, saveGame, saveRules, verifyPin, type Player } from './game/remote'
@@ -243,7 +243,7 @@ export default function App({ player, db, initial, rules: ownRules, onSwitch }: 
         {showMissions && <Missions s={s} onClose={() => setShowMissions(false)} />}
       </main>
       <footer className="dock">
-        {selected && <ObjectMenu s={s} id={selected} label={label} onPick={(o) => give([o], 0, 'menu')} onClose={() => setSelected(null)} />}
+        {selected && <ObjectMenu s={s} id={selected} label={label} onPick={(o) => give([o], 0, 'menu')} onUpgrade={() => { poke(); update((x) => upgrade(x, selected)) }} onClose={() => setSelected(null)} />}
         {!selected && <Alerts s={s} onPick={(o) => give([o], 0, 'menu')} />}
         {s.prompt && <PromptBar s={s} prompt={s.prompt} onAnswer={answer} onSkip={() => update(dropChat)} />}
         <CommandBar onSubmit={submit} placeholder={`Tell ${s.name} what to do… (try “${s.needs.hunger < 50 ? 'make some toast' : 'play the piano'}”)`} pending={pending?.text ?? null} onYes={() => submit('yes')} onNo={() => submit('no')} />
@@ -252,12 +252,14 @@ export default function App({ player, db, initial, rules: ownRules, onSwitch }: 
       {s.phase === 'report' && <Report s={s} onNext={() => { update(nextDay); setDiary([]) }} />}
       {showAdmin && (
         <GrownUps
+          s={s}
           rules={s.rules}
           credits={s.credits}
           who={player.name}
           verify={(pin) => verifyPin(pin, db)}
           onRules={(r, pin) => { setOwnRules(r); void saveRules(player.id, pin, r, db); update((x) => setRules(x, r)) }}
           onGift={(n) => update((x) => gift(x, n))}
+          onGiftUpgrade={(id) => update((x) => giftUpgrade(x, id))}
           mission={activeMission(s.missions)?.title}
           onFinishMission={() => update(completeMission)}
           onPin={(pin, np) => changePin(pin, np, db)}

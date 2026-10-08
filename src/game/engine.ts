@@ -27,6 +27,9 @@ import {
   TRAITS,
   VISITORS,
   foodById,
+  maxTier,
+  upgradeKey,
+  upgradeTier,
   DEFAULT_RULES,
   type FoodDef,
   type Rules,
@@ -107,7 +110,7 @@ export type HKind =
   | 'dawn' | 'chose' | 'done' | 'refuse' | 'moan' | 'caller' | 'caller_met' | 'caller_gone' | 'visitor_left'
   | 'horn' | 'ship' | 'storm' | 'thunder' | 'dusk' | 'lamp_lit' | 'lamp_out' | 'spotted' | 'bed' | 'annoyed'
   | 'ring' | 'friend_coming' | 'pizza_ordered' | 'pizza_arrived' | 'pet' | 'bought' | 'locked' | 'react' | 'quiz' | 'chat'
-  | 'credits' | 'breakdown' | 'repaired' | 'mission_done' | 'unlocked'
+  | 'credits' | 'breakdown' | 'repaired' | 'upgraded' | 'mission_done' | 'unlocked'
 
 export type RefuseWhy = 'missing' | 'storm' | 'nobody' | 'early' | 'quiz' | 'bursting' | 'grumpy' | 'phone_busy' | 'phone_mood' | 'phone_none' | 'empty' | 'broke' | 'broken' | 'notready' | 'pizza_pending' | 'stuck'
 
@@ -134,6 +137,8 @@ export interface Happening {
   correct?: boolean
   amount?: number
   text?: string
+  /** A present from the grown-ups (an upgrade they gave). */
+  gift?: boolean
 }
 type Loose = Omit<Happening, 'n' | 'at'>
 
@@ -179,6 +184,8 @@ export interface State {
   shine: number
   /** Objects waiting for repair. */
   broken: ObjectId[]
+  /** Upgraded objects and the tier they are at (missing = tier 1). */
+  tiers: Partial<Record<ObjectId, number>>
   /** Floors (and the lift) that missions have unlocked. */
   unlocked: UnlockId[]
   missions: MissionState
@@ -295,6 +302,7 @@ export function startGame(seed: number, setup: Setup, rules: Rules = DEFAULT_RUL
     lampLeft: 0,
     shine: G.lamp.startShine,
     broken: [],
+    tiers: {},
     unlocked: [],
     missions: freshMissions(),
     plan,
@@ -394,6 +402,58 @@ export function gift(s: State, credits: number): State {
 
 /** Changed dials take effect at once (a mission target lowered below what he has done finishes it). */
 export const setRules = (s: State, rules: Rules): State => missionEvents({ ...s, rules }, [])
+
+// ─── Upgrades ────────────────────────────────────────────────────────────────
+
+/** The tier an object is at (1 until it is upgraded). */
+export const tierOf = (s: Pick<State, 'tiers'>, id: ObjectId) => s.tiers?.[id] ?? 1
+
+/** What one upgrade costs today: the grown-up's own price, or the normal one scaled. */
+export function upgradePrice(rules: Pick<Rules, 'upgradeScale' | 'upgradePrices'>, id: ObjectId, tier: number): number {
+  const def = upgradeTier(id, tier)
+  if (!def) return 0
+  const own = rules.upgradePrices?.[upgradeKey(id, tier)]
+  return own !== undefined ? Math.max(0, Math.round(own)) : Math.max(1, Math.round((def.cost * (rules.upgradeScale ?? 100)) / 100))
+}
+
+/** The next upgrade for an object, if there is one. */
+export function nextUpgrade(s: Pick<State, 'tiers' | 'rules'>, id: ObjectId): { tier: number; name: string; price: number } | undefined {
+  const tier = tierOf(s, id) + 1
+  const def = upgradeTier(id, tier)
+  return def && tier <= maxTier(id) ? { tier, name: def.name, price: upgradePrice(s.rules, id, tier) } : undefined
+}
+
+/** Fit the next tier: the new one replaces the old, so a broken one is broken no more. */
+function fitUpgrade(s: State, id: ObjectId, price: number, isGift: boolean): State {
+  const up = nextUpgrade(s, id)!
+  const next = { ...s, credits: s.credits - price, tiers: { ...s.tiers, [id]: up.tier }, broken: s.broken.filter((b) => b !== id) }
+  return note(next, { kind: 'upgraded', id, level: up.tier, amount: price, gift: isGift || undefined })
+}
+
+/** He buys the next tier for an object (or says he cannot afford it). */
+export function upgrade(s: State, id: ObjectId): State {
+  const up = nextUpgrade(s, id)
+  if (!up || !objectAvailable(s, id)) return s
+  if (s.credits < up.price) return note(s, { kind: 'refuse', id: 'upgrade', why: 'broke', item: id })
+  return fitUpgrade(s, id, up.price, false)
+}
+
+/** For the grown-ups: give him the next tier for free. */
+export function giftUpgrade(s: State, id: ObjectId): State {
+  return nextUpgrade(s, id) && objectAvailable(s, id) ? fitUpgrade(s, id, 0, true) : s
+}
+
+/** A job on a better object does more good, and quicker. */
+function withTier(s: State, object: ObjectId, minutes: number, effects: Partial<Record<NeedId, number>>) {
+  const i = Math.min(tierOf(s, object), G.upgrades.boost.length) - 1
+  if (i <= 0) return { minutes, effects }
+  const boosted: Partial<Record<NeedId, number>> = {}
+  for (const need of NEEDS) {
+    const v = effects[need]
+    if (v !== undefined) boosted[need] = v > 0 ? Math.round(v * (1 + G.upgrades.boost[i] / 100)) : v
+  }
+  return { minutes: Math.max(1, Math.round(minutes * (1 - G.upgrades.quicker[i] / 100))), effects: boosted }
+}
 
 // ─── Changing the game ───────────────────────────────────────────────────────
 
@@ -506,13 +566,14 @@ function begin(s: State, o: Order, by: 'player' | 'self', sulky: boolean): State
   }
   const def = id === o.id ? def0 : (interactionById(id) ?? def0)
   let minutes = def.minutes
-  const effects: Partial<Record<NeedId, number>> = { ...def.effects }
+  let effects: Partial<Record<NeedId, number>> = { ...def.effects }
   if (item) {
     const food = foodById(item)!
     minutes = food.minutes
     effects.hunger = (effects.hunger ?? 0) + food.hunger
     if (food.fun) effects.fun = (effects.fun ?? 0) + food.fun
   }
+  if (def.id !== 'repair' && def.object !== 'here') ({ minutes, effects } = withTier(next, def.object, minutes, effects))
   const withTaste = effectsOf(next, { id: def.id, effects }, sulky)
   const here = def.object === 'here' || o.id === 'react'
   const doing: Doing = {
@@ -949,7 +1010,7 @@ export function nextDay(s: State): State {
     rng,
     day: s.day + 1,
     clock: G.day.start,
-    needs: { ...s.needs, energy: O.energy, hunger: Math.max(O.hungerFloor, s.needs.hunger - O.hungerLoss), bladder: Math.min(s.needs.bladder, O.bladder), hygiene: clamp(s.needs.hygiene - O.hygieneLoss) },
+    needs: { ...s.needs, energy: G.upgrades.bedEnergy[Math.min(tierOf(s, 'bed'), G.upgrades.bedEnergy.length) - 1], hunger: Math.max(O.hungerFloor, s.needs.hunger - O.hungerLoss), bladder: Math.min(s.needs.bladder, O.bladder), hygiene: clamp(s.needs.hygiene - O.hygieneLoss) },
     spirits: s.spirits / 2,
     doing: null,
     queue: [],

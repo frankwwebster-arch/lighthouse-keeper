@@ -254,7 +254,7 @@ describe('bedtime and the next day', () => {
     expect(s.day).toBe(2)
     expect(s.clock).toBe(G.day.start)
     expect(s.credits).toBe(Math.min(s.rules.carryCap, credits) + allowanceFor(s.rules, greens))
-    expect(s.needs.energy).toBe(G.overnight.energy)
+    expect(s.needs.energy).toBe(G.upgrades.bedEnergy[0])
     expect(s.prompt).toBeNull()
   })
   it('a better day gives more money next morning', () => {

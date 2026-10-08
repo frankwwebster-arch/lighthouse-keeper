@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import { objectById, type ObjectId } from '../game/config'
-import { Sprite } from './Sprite'
+import { Sprite, useSprites } from './Sprite'
 
 export type ObjectVisualState = 'standard' | 'on' | 'broken'
 
@@ -24,16 +24,30 @@ function StateEffects({ state }: { state: ObjectVisualState }) {
   )
 }
 
+/**
+ * Sprite names to try, best first: this tier's (`obj_tv_t2_on`, then `obj_tv_t2`),
+ * then each lower tier's, ending with tier 1's (`obj_tv_on`, `obj_tv`).
+ */
+export function spriteNames(id: ObjectId, state: ObjectVisualState, tier = 1): string[] {
+  const names: string[] = []
+  for (let t = tier; t >= 2; t--) names.push(`obj_${id}_t${t}_${state}`, `obj_${id}_t${t}`)
+  return [...names, `obj_${id}_${state}`, `obj_${id}`]
+}
+
 /** Vector drawings of every object. (x = centre, y = the floor.) */
-export function ObjectArt({ id, x, y, state = 'standard', extra }: { id: ObjectId; x: number; y: number; state?: ObjectVisualState; extra?: { ringing?: boolean; ready?: number; waiting?: boolean } }): ReactNode {
+export function ObjectArt({ id, x, y, state = 'standard', tier = 1, extra }: { id: ObjectId; x: number; y: number; state?: ObjectVisualState; tier?: number; extra?: { ringing?: boolean; ready?: number; waiting?: boolean } }): ReactNode {
   const on = state === 'on'
+  const manifest = useSprites()
+  // An upgrade with no art of its own yet gets a plain tier tag as a stand-in.
+  const standIn = tier > 1 && !manifest[`obj_${id}_t${tier}_${state}`] && !manifest[`obj_${id}_t${tier}`]
   const g = (w: number, h: number, kids: ReactNode) => (
-    <g transform={`translate(${x} ${y})`} className={`object object-${id} state-${state}`} data-state={state}>
+    <g transform={`translate(${x} ${y})`} className={`object object-${id} state-${state} tier-${tier}`} data-state={state} data-tier={tier}>
       <g className="object-body">
-        <Sprite name={[`obj_${id}_${state}`, `obj_${id}`]} w={w} h={h}>
+        <Sprite name={spriteNames(id, state, tier)} w={w} h={h}>
           {kids}
         </Sprite>
       </g>
+      {standIn && <text x={0} y={-h - 6} textAnchor="middle" className="floor-label tier-tag">T{tier}</text>}
       <StateEffects state={state} />
     </g>
   )

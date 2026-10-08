@@ -16,6 +16,9 @@ type ManifestEntry = string | { file: string; frames?: number; fps?: number; w?:
 type Manifest = Record<string, ManifestEntry>
 const Ctx = createContext<Manifest>({})
 
+/** The pictures Codex has delivered so far, by name. */
+export const useSprites = () => useContext(Ctx)
+
 export function SpriteProvider({ children }: { children: ReactNode }) {
   const [m, setM] = useState<Manifest>({})
   useEffect(() => {

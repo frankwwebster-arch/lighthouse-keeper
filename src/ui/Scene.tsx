@@ -1,13 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { BREAKABLE_OBJECTS, OBJECTS, type FxKey, type ObjectId } from '../game/config'
-import { darkness, stormNow, type State } from '../game/engine'
+import { BREAKABLE_OBJECTS, OBJECTS, maxTier, type FxKey, type ObjectId } from '../game/config'
+import { darkness, stormNow, tierOf, type State } from '../game/engine'
 import { FLOOR_LEVELS, type RoomFloor } from '../game/config'
 import { objectAvailable, roomFloors } from '../game/missions'
 import { FLOOR_Y, LAYOUT, STAGE, STAIRS_X, TOWER_X, applyLayout, floorOf, focusFor, worldX } from '../game/world'
 import { Actors, type Pose } from './Actors'
 import { ObjectArt } from './art'
 import { FloorModule, floorsOnShow } from './floors'
-import { parseBrokenPreview, visualStateFor } from './objectState'
+import { parseBrokenPreview, parseTierPreview, visualStateFor } from './objectState'
 
 const FX: Record<FxKey, string> = { steam: '💨', bubbles: '🫧', sparkles: '✨', dust: '🌫️', scribbles: '✏️', music: '🎵', zzz: '💤', tv: '📺', hearts: '💗', stench: '🤢', burp: '💨', splash: '💦', coins: '🪙', ring: '🔔', stars: '⭐' }
 
@@ -84,13 +84,17 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
     [],
   )
   const broken = new Set([...s.broken, ...previewBroken])
+  const previewTiers = useMemo(
+    () => parseTierPreview(typeof window === 'undefined' ? null : new URLSearchParams(window.location.search).get('tiers'), maxTier, OBJECTS.map((o) => o.id)),
+    [],
+  )
   const activeObject = doingNow?.object && doingNow.object !== 'here' ? doingNow.object : s.lampLit ? 'lamp' : s.ringing ? 'phone' : null
 
   const obj = (id: ObjectId, x?: number) => {
     const def = OBJECTS.find((o) => o.id === id)!
     const wx = x ?? worldX(id)
     const state = visualStateFor(id, id === 'tv' && tvOn ? 'tv' : activeObject, broken)
-    return <ObjectArt key={id} id={id} x={wx} y={FLOOR_Y[def.floor]} state={state} extra={{ ringing: !!s.ringing, ready: s.garden.ready }} />
+    return <ObjectArt key={id} id={id} x={wx} y={FLOOR_Y[def.floor]} state={state} tier={previewTiers[id] ?? tierOf(s, id)} extra={{ ringing: !!s.ringing, ready: s.garden.ready }} />
   }
 
   return (
