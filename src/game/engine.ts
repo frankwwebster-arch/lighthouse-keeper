@@ -19,6 +19,8 @@
 import { REACTIONS, reactionById, type DoOrder } from './commands'
 import {
   GAME as G,
+  BREAKABLE_OBJECTS,
+  BREAKDOWN_SFX,
   INTERACTIONS,
   NEEDS,
   TASTE_POOL,
@@ -103,9 +105,9 @@ export type HKind =
   | 'dawn' | 'chose' | 'done' | 'refuse' | 'moan' | 'caller' | 'caller_met' | 'caller_gone' | 'visitor_left'
   | 'horn' | 'ship' | 'storm' | 'thunder' | 'dusk' | 'lamp_lit' | 'lamp_out' | 'spotted' | 'bed' | 'annoyed'
   | 'ring' | 'friend_coming' | 'pizza_ordered' | 'pizza_arrived' | 'pet' | 'bought' | 'locked' | 'react' | 'quiz' | 'chat'
-  | 'credits'
+  | 'credits' | 'breakdown' | 'repaired'
 
-export type RefuseWhy = 'storm' | 'nobody' | 'early' | 'quiz' | 'bursting' | 'grumpy' | 'phone_busy' | 'phone_mood' | 'phone_none' | 'empty' | 'broke' | 'notready' | 'pizza_pending' | 'stuck'
+export type RefuseWhy = 'storm' | 'nobody' | 'early' | 'quiz' | 'bursting' | 'grumpy' | 'phone_busy' | 'phone_mood' | 'phone_none' | 'empty' | 'broke' | 'broken' | 'notready' | 'pizza_pending' | 'stuck'
 
 export interface Happening {
   n: number
@@ -173,6 +175,8 @@ export interface State {
   lampLit: boolean
   lampLeft: number
   shine: number
+  /** Objects waiting for repair. */
+  broken: ObjectId[]
   plan: DayPlan
   visits: Visit[]
   thunderAt: number
@@ -285,6 +289,7 @@ export function startGame(seed: number, setup: Setup, rules: Rules = DEFAULT_RUL
     lampLit: false,
     lampLeft: 0,
     shine: G.lamp.startShine,
+    broken: [],
     plan,
     visits,
     thunderAt: plan.storm ? plan.storm.from + 5 : Infinity,
@@ -394,6 +399,9 @@ const lift = (s: State, by: number): State => ({ ...s, spirits: clamp(s.spirits 
 
 /** What an order is, as a definition: an interaction, or a silly reaction made to look like one. */
 export function defOf(o: Order): InteractionDef | undefined {
+  if (o.id === 'repair' && o.object) {
+    return { id: 'repair', object: o.object, label: 'Repair it', did: `repaired the ${o.object}`, minutes: G.breakdown.repairMinutes, effects: { fun: 4, tidiness: -2 }, anim: 'busy', fx: 'sparkles', self: false, gated: false, keywords: ['repair', 'fix', 'mend'], example: 'repair it' }
+  }
   if (o.id === 'react') {
     const r = o.react ? reactionById(o.react) : undefined
     if (!r) return undefined
@@ -424,9 +432,15 @@ function begin(s: State, o: Order, by: 'player' | 'self', sulky: boolean): State
     return then ? begin(next, then, 'self', false) : startNext(next)
   }
   const bursting = s.needs.bladder < G.bursting
+  if (id === 'repair' && !s.broken.includes(def0.object)) return refuse('notready')
+  // A broken bed must never trap the simulation at forced bedtime: he can still
+  // sleep in it (badly), while naps and every other broken-object action wait
+  // for a repair.
+  const canUseBrokenBed = id === 'bed_sleep' && s.clock >= G.day.bedFrom
+  if (id !== 'repair' && s.broken.includes(def0.object) && !canUseBrokenBed) return refuse('broken')
   if (by === 'player') {
     // He has got to go, and will not do anything else.
-    if (bursting && !def0.private && s.doing?.priv !== true) return refuse('bursting', { id: 'loo_wee' })
+    if (id !== 'repair' && bursting && !def0.private && s.doing?.priv !== true) return refuse('bursting', { id: 'loo_wee' })
     if (def0.gated && quizBlocking(s)) return refuse('quiz')
     if (def0.gated && moodOf(s) < G.refuseMoodBelow) {
       const d = dice(s.rng)
@@ -547,6 +561,10 @@ function finish(s: State): State {
     if (r?.spirits) next = lift(next, r.spirits)
     next = note(next, { kind: 'react', react: d.react, id: 'react' })
     if (d.react === 'fart' || d.react === 'stinky') next = { ...next, pet: { ...next.pet, fright: 1 } }
+    return startNext(next)
+  }
+  if (d.id === 'repair') {
+    next = note({ ...next, broken: next.broken.filter((id) => id !== d.object) }, { kind: 'repaired', id: d.object })
     return startNext(next)
   }
   next = note(next, { kind: 'done', id: d.id, by: d.by, sulky: d.sulky, liked, disliked, item: d.item })
@@ -687,6 +705,19 @@ function petMind(s: State, dt: number): State {
   return note({ ...next, needs: { ...next.needs, fun: clamp(next.needs.fun + 8) } }, { kind: 'pet', petDid: 'gift' })
 }
 
+/** Random faults use the same seeded luck as the rest of the day. */
+function maybeBreak(s: State, dt: number): State {
+  const every = s.rules.breakdownMinutes
+  const limit = s.rules.maxBreakdowns
+  if (every <= 0 || limit <= 0 || s.broken.length >= limit) return s
+  const d = dice(s.rng)
+  if (d.next() >= Math.min(1, dt / every)) return { ...s, rng: d.rng }
+  const candidates = BREAKABLE_OBJECTS.filter((id) => !s.broken.includes(id) && s.doing?.object !== id)
+  if (!candidates.length) return { ...s, rng: d.rng }
+  const id = d.pick(candidates)
+  return note({ ...s, rng: d.rng, broken: [...s.broken, id] }, { kind: 'breakdown', id, text: BREAKDOWN_SFX[id] ?? 'mechanical-clunk' })
+}
+
 /** One step of time, no longer than a few minutes, so nothing is stepped over. */
 function step(s0: State, dt: number): State {
   let s: State = { ...s0, clock: s0.clock + dt }
@@ -726,6 +757,8 @@ function step(s0: State, dt: number): State {
   for (const t of s.plan.rings) if (passed(t) && !s.ringing) s = note({ ...s, ringing: { until: t + 30 } }, { kind: 'ring' })
   if (s.ringing && s.clock >= s.ringing.until) s = { ...s, ringing: null }
   if (s.pizzaAt !== null && s.clock >= s.pizzaAt) s = note({ ...s, pizzaAt: null, items: { ...s.items, pizza: (s.items.pizza ?? 0) + 1 } }, { kind: 'pizza_arrived' })
+
+  s = maybeBreak(s, dt)
 
   // The pet's mischief.
   s = petMind(s, dt)

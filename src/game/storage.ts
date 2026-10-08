@@ -20,6 +20,7 @@ export function revive(s: State | null): State | null {
     // JSON turns Infinity into null; and a saved chat question has lost its test for the time.
     s.thunderAt = s.thunderAt ?? Infinity
     s.rules = { ...DEFAULT_RULES, ...(s.rules ?? {}) }
+    s.broken = Array.isArray(s.broken) ? s.broken : []
     s.tally.needSums = { ...Object.fromEntries(NEEDS.map((n) => [n, 0])), ...(s.tally.needSums ?? {}) } as typeof s.tally.needSums
     if (s.prompt?.kind === 'chat') {
       const saved = s.prompt.chat
@@ -49,4 +50,3 @@ export function clear(id: string): void {
     // nothing to do
   }
 }
-

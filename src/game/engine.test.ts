@@ -148,6 +148,35 @@ describe('money and food', () => {
   })
 })
 
+describe('breakdowns', () => {
+  it('lets grown-ups control frequency and the concurrent-fault ceiling', () => {
+    let s = fresh(31)
+    s = setRules(s, { ...s.rules, breakdownMinutes: 1, maxBreakdowns: 2 })
+    s = tick(s, 60)
+    expect(s.broken.length).toBe(2)
+    expect(new Set(s.broken).size).toBe(2)
+    expect(s.happenings.filter((h) => h.kind === 'breakdown')).toHaveLength(2)
+    expect(s.happenings.find((h) => h.kind === 'breakdown')?.text).toBeTruthy()
+  })
+
+  it('blocks a broken object until the keeper repairs it', () => {
+    let s: State = { ...fresh(), broken: ['tv'] }
+    s = order(s, [{ id: 'tv_watch' }])
+    expect(s.doing).toBeNull()
+    expect(s.happenings.some((h) => h.kind === 'refuse' && h.why === 'broken')).toBe(true)
+    s = order(s, [{ id: 'repair', object: 'tv' }])
+    s = arrive(s)
+    s = tick(s, G.breakdown.repairMinutes + 1)
+    expect(s.broken).not.toContain('tv')
+    expect(s.happenings.some((h) => h.kind === 'repaired' && h.id === 'tv')).toBe(true)
+  })
+
+  it('keeps random faults off when the frequency dial is zero', () => {
+    const s = tick(fresh(), 6 * 60)
+    expect(s.broken).toEqual([])
+  })
+})
+
 describe('the phone', () => {
   it('invites a friend over, then is not available again for a while', () => {
     let s = fresh()

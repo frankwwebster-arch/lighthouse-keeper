@@ -12,6 +12,7 @@ input { font: inherit; font-size: 18px; min-height: 48px; padding: 6px 12px; bor
 .hud-main { display:flex; gap:12px; align-items:center; font-size:1.05rem; }
 .clock { font-variant-numeric: tabular-nums; background:#0b1626; padding:2px 8px; border-radius:8px; }
 .mood.m-grumpy,.mood.m-miserable { color:#ff9a8a; } .mood.m-chipper { color:#a8f0b8; }
+.faults { color:#ffd35a; font-weight:800; }
 .sleepy { color:#ffd35a; animation: pulse 1s infinite; }
 .needs { display:flex; gap:8px; flex:1; min-width:260px; }
 .need { display:flex; align-items:center; gap:4px; flex:1; }
@@ -41,6 +42,8 @@ input { font: inherit; font-size: 18px; min-height: 48px; padding: 6px 12px; bor
 .ask { background:#e9f6ff; border:3px solid #5aa0d6; border-radius:14px; padding:8px 10px; } .ask.quiz { background:#fff0f0; border-color:#d65a5a; }
 .ask .q { margin-bottom:6px; font-size:1.1rem; } .ask em { color:#a0522d; display:block; }
 .sheet { background:#fff; border:2px solid #c9b88f; border-radius:14px; padding:8px 12px; }
+.fault-copy { margin:4px 0 8px; color:#8a2e28; font-weight:700; }
+.repair { background:#d7633d; }
 .sheet-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; }
 .x { min-height:36px; padding:0 10px; }
 .choices { display:flex; flex-wrap:wrap; gap:10px; } .choice-group { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }

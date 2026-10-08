@@ -5,7 +5,7 @@
  */
 
 import { ACKS, reactionById } from './commands'
-import { INTERACTIONS, NEED_LABEL, foodById, interactionById, visitorById, type NeedId } from './config'
+import { INTERACTIONS, NEED_LABEL, foodById, interactionById, objectById, visitorById, type NeedId, type ObjectId } from './config'
 import { moodWord, type Happening, type MoodWord, type State } from './engine'
 
 export function clockText(minutes: number): string {
@@ -60,6 +60,7 @@ const refuse = (h: Happening): string => {
   if (why === 'phone_mood') return 'I do not feel like chatting to anyone. Not today.'
   if (why === 'phone_none') return 'Everyone I know is already here!'
   if (why === 'broke') return h.item ? `I cannot afford the ${foodById(h.item)?.label.toLowerCase() ?? 'that'}. Not enough credits.` : 'We have not got the credits for that today.'
+  if (why === 'broken') return 'It is broken. I need to repair it first.'
   if (why === 'notready') return 'Nothing is ready to pick. Water the garden first.'
   if (why === 'pizza_pending') return 'We have already ordered one. Be patient!'
   if (why === 'empty') return h.id === 'cooker_cook' ? 'There is nothing to cook! Toast it is. Or go to the shop.' : 'The fridge is empty. Just cobwebs. Go to the shop?'
@@ -161,6 +162,14 @@ export function tell(h: Happening, s: State): Told {
       return {}
     case 'credits':
       return { say: `A surprise! ${h.amount} extra credits for me. Brilliant!`, diary: `${t} A surprise gift of ${h.amount} credits.`, tone: 'good' }
+    case 'breakdown': {
+      const label = objectById(h.id as ObjectId)?.label ?? 'Something'
+      return { say: `Oh no! The ${label.toLowerCase()} has broken down.`, diary: `${t} The ${label.toLowerCase()} broke down.`, tone: 'bad' }
+    }
+    case 'repaired': {
+      const label = objectById(h.id as ObjectId)?.label ?? 'thing'
+      return { say: `Fixed! The ${label.toLowerCase()} is working again.`, diary: `${t} He repaired the ${label.toLowerCase()}.`, tone: 'good' }
+    }
     default:
       return {}
   }

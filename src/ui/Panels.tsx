@@ -18,6 +18,7 @@ export function Hud({ s, paused, onPause, onDiary, onMenu }: { s: State; paused:
         <span className="clock">{clockText(s.clock)}</span>
         <span className="coins">🪙 {s.credits}</span>
         <span className={`mood m-${mood}`}>{moodFace[mood]} {moodName[mood]}</span>
+        {s.broken.length > 0 && <span className="faults" title="Objects waiting for repair">🛠️ {s.broken.length}</span>}
         {s.annoyedLevel > 0 && <span className="sleepy">😴 Bedtime!</span>}
       </div>
       <div className="needs">
@@ -51,15 +52,18 @@ export function menuFor(s: State, id: ObjectId): InteractionDef[] {
 
 export function ObjectMenu({ s, id, label, onPick, onClose }: { s: State; id: ObjectId; label: string; onPick: (o: Order) => void; onClose: () => void }) {
   const items = menuFor(s, id)
+  const broken = s.broken.includes(id)
   return (
     <div className="sheet menu">
       <div className="sheet-head">
         <b>{label}</b>
         <button className="x" onClick={onClose} aria-label="Close">✕</button>
       </div>
-      {items.length === 0 && <p className="dim">Nothing to do with this right now.</p>}
+      {broken && <p className="fault-copy">It has broken down. Repair it before using it again.</p>}
+      {!broken && items.length === 0 && <p className="dim">Nothing to do with this right now.</p>}
       <div className="choices">
-        {items.map((i) => {
+        {broken && <button className="big repair" onClick={() => onPick({ id: 'repair', object: id })}>🛠️ Repair {label.toLowerCase()}</button>}
+        {!broken && items.map((i) => {
           const kind = i.id === 'fridge_snack' ? 'snack' : i.id === 'cooker_cook' ? 'cook' : null
           const stock = kind ? owned(s, kind) : []
           return (
@@ -352,6 +356,9 @@ export function GrownUps({ rules, credits, who, verify, onRules, onGift, onPin, 
           <input type="range" min={1} max={3} step={1} value={rules.quizLevel} onChange={(e) => set({ quizLevel: Number(e.target.value) as 1 | 2 | 3 })} />
           <b>Level {rules.quizLevel}</b>
         </label>
+        <h3>Breakdowns</h3>
+        <Num label="Average game-minutes between faults" hint="(0 = off; 60 ≈ hourly)" value={rules.breakdownMinutes} min={0} max={1440} onChange={(n) => set({ breakdownMinutes: n })} />
+        <Num label="Most broken at once" hint="(0 also turns faults off)" value={rules.maxBreakdowns} min={0} max={10} onChange={(n) => set({ maxBreakdowns: n })} />
         <h3>Prices</h3>
         <label className="num">
           <span>All prices <small>(% of normal)</small></span>

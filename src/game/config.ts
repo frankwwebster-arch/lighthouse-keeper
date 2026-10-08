@@ -190,6 +190,16 @@ export const OBJECTS: readonly ObjectDef[] = [
 ]
 export const objectById = (id: ObjectId) => OBJECTS.find((o) => o.id === id)
 
+/** Keeper-owned assets may fail, including large outdoor structures. The off-island shop belongs to somebody else. */
+export const BREAKABLE_OBJECTS: readonly ObjectId[] = OBJECTS.filter((object) => object.id !== 'shop').map((object) => object.id)
+export type BreakdownSound = 'electronic-fizzle' | 'mechanical-clunk' | 'plumbing-sputter' | 'structure-crack'
+export const BREAKDOWN_SFX: Partial<Record<ObjectId, BreakdownSound>> = {
+  fridge: 'electronic-fizzle', cooker: 'electronic-fizzle', tv: 'electronic-fizzle', phone: 'electronic-fizzle', lamp: 'electronic-fizzle',
+  basin: 'plumbing-sputter', toilet: 'plumbing-sputter',
+  door: 'mechanical-clunk', broom: 'mechanical-clunk', petbowl: 'mechanical-clunk', bookshelf: 'mechanical-clunk', piano: 'mechanical-clunk', bed: 'mechanical-clunk', desk: 'mechanical-clunk', telescope: 'mechanical-clunk',
+  garden: 'structure-crack', jetty: 'structure-crack',
+}
+
 // ─── Visitors and friends ────────────────────────────────────────────────────
 
 export interface VisitorDef {
@@ -240,9 +250,13 @@ export interface Rules {
   prices: Record<string, number>
   /** Quiz difficulty: 1 = age 7, 2 = about 9, 3 = 11 and over. */
   quizLevel: 1 | 2 | 3
+  /** Average game-minutes between faults. Zero disables random breakdowns. */
+  breakdownMinutes: number
+  /** Maximum objects that may be broken at the same time. */
+  maxBreakdowns: number
 }
 
-export const DEFAULT_RULES: Rules = { allowanceBase: 8, allowanceBonus: 20, firstDay: 20, carryCap: 40, greenAt: 50, priceScale: 100, prices: {}, quizLevel: 1 }
+export const DEFAULT_RULES: Rules = { allowanceBase: 8, allowanceBonus: 20, firstDay: 20, carryCap: 40, greenAt: 50, priceScale: 100, prices: {}, quizLevel: 1, breakdownMinutes: 0, maxBreakdowns: 1 }
 
 export const GAME = {
   /** The day, in minutes after midnight. He wakes at 7am; the lamp is lit at dusk; bed is 8pm. */
@@ -290,6 +304,7 @@ export const GAME = {
   queueLimit: 4,
   /** Sped-up walking, picture units a second. */
   walk: { stroll: 200 },
+  breakdown: { repairMinutes: 25 },
 
   /** Money. */
   credits: {

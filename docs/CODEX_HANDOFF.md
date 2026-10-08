@@ -52,7 +52,7 @@ The current master concept is:
 
 - `art/background/lighthouse_master_day_pixel.png`
 
-It is designed as a crop-safe master plate: calm expandable sky above, a clean grass/soil/rock boundary below, and no visible underground promise. It contains the four starting floors, the inset fixed-width lamp room, outdoor walkway rail, garden, shop hut, jetty, and sea.
+It is designed as a crop-safe master plate: calm expandable sky above, a clean grass/soil/rock boundary below, and no visible underground promise. It contains the four starting floors, the inset fixed-width lamp room, outdoor walkway rail, garden, shop hut, jetty, and sea. The shop hut is now historical concept material only: the canonical shop will be off-island and reached by boat.
 
 ## Next implementation priorities
 

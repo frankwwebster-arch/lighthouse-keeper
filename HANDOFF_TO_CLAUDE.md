@@ -11,6 +11,8 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
 - `src/ui/art.tsx` implements `standard`, `on`, and `broken`; broken uses a shared integer-step casing wobble, smoke, and sparks. `?broken=<ids>` is the internal browser preview.
 - `src/ui/Sprite.tsx` supports horizontal strips through `{ "file", "frames", "fps" }` manifest entries while retaining compatibility with old string paths.
 - Cooker and basin activities use a reusable rear-facing fallback keeper. This proves the presentation only; it is not a production rig.
+- The seeded breakdown/repair loop is playable. Grown-ups can set average game-minutes between faults and the maximum concurrent faults; both zero values disable faults. Broken objects reject normal actions and expose a 25-game-minute repair action. The event stream carries placeholder SFX categories, but no audio engine/files are delivered.
+- The shop is explicitly excluded from keeper-owned faults. Its current on-island placement is a temporary gameplay fallback; the agreed later route is keeper jetty → upgradeable rowing boat/tug/speedboat → off-island shop. The keeper's jetty, garden/greenhouse, and future boat may break. A future workshop floor reduces fault pressure.
 - The exact current asset contract is [docs/CODEX_BRIEF.md](docs/CODEX_BRIEF.md), with production details in [docs/PRODUCTION_ASSET_KIT.md](docs/PRODUCTION_ASSET_KIT.md).
 - No new production PNGs were delivered in this implementation slice. The existing concept pack remains reference-only.
 
@@ -153,7 +155,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
    - Local needs (diving room, upgraded kitchen, gaming room, gym) use a left/right/rear **parent-floor extension bay**, joined at a visible structural seam. The keeper reaches the parent floor normally, then walks horizontally through a new door.
    - A ubiquitous upgrade, such as a lift or a global room-width upgrade, can push the whole lighthouse walls apart. Do not deform or rescale existing furniture.
    - During a global wall push, the island splits into safe earth plates carrying exterior unlocks. Water gaps, dust, wobbling fences, and surprised chickens create the comic beat. The final beat grows fresh soil, grass, rocks, and plants in the new gap so the island is larger, not permanently broken.
-   - Garden, shop, boat/jetty and chicken coop are mission unlocks and are intentionally absent from Day 1.
+   - Garden, boat/jetty and chicken coop are mission unlocks and are intentionally absent from Day 1. The shop is an off-island destination rather than an island building; its current island depiction is non-canonical concept/fallback material.
 
 8. Underground development is a surprise. Day 1 shows normal grass, soil, and rock only — no obvious empty basement, shaft, cave, or reserved area. When a Batcave-like lair unlocks, extend terrain downward then reveal the interior. The first `ground_strip.png` is specified at 300 x 30 logical pixels.
 9. The lift becomes necessary at roughly seven floors (more than six complete floors). Keep it in a rear or side aligned service core/bay so it does not consume every front-facing room. Each floor still needs one aligned landing door.

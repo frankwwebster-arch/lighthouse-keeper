@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { OBJECTS } from '../game/config'
+import { BREAKABLE_OBJECTS, OBJECTS } from '../game/config'
 import { CORE, DIVING_EXTENSION, PLAYABLE_FLOORS } from './floors'
 import { parseBrokenPreview, visualStateFor } from './objectState'
 
@@ -54,5 +54,11 @@ describe('clickable object visual states', () => {
   it('parses the internal browser preview without accepting unknown objects', () => {
     expect([...parseBrokenPreview('tv,cooker,nope', ids)]).toEqual(['tv', 'cooker'])
     expect(parseBrokenPreview('all', ids).size).toBe(ids.length)
+  })
+
+  it('allows major outdoor structures to break too', () => {
+    expect(BREAKABLE_OBJECTS).toEqual(expect.arrayContaining(['garden', 'jetty']))
+    expect(BREAKABLE_OBJECTS).not.toContain('shop')
+    expect(parseBrokenPreview('all', BREAKABLE_OBJECTS)).not.toContain('shop')
   })
 })

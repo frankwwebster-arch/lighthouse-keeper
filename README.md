@@ -6,7 +6,7 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 ```
 npm install
 npm run dev      # Next.js 14; open http://localhost:3000 (or this computer’s address on the same wifi, for the iPad)
-npm test         # 59 tests
+npm test         # 63 tests
 npm run build    # production build
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
@@ -15,6 +15,7 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 
 - Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The toilet and wash basin are both in the en suite.
 - Every object renderer accepts `standard`, `on`, and `broken`; active gameplay drives `on`. Broken objects share integer-step casing wobble, smoke and sparks. Add `?broken=tv,cooker` (or `?broken=all`) to the URL for the internal art-state preview.
+- Keeper-owned assets can now break during play, block their normal actions, and be repaired. Grown-ups control average fault frequency and maximum concurrent faults; defaults are off / one. Breakdown events expose placeholder SFX categories for later audio. The shop is excluded because it is not the keeper's asset.
 - Cooker and basin work use a reusable rear-facing keeper fallback. Production keeper PNGs are not delivered yet.
 - Sprite manifest entries may be old string paths or `{ "file", "frames", "fps" }` objects. Horizontal strips animate without CSS scaling or rotation.
 - All SVG object targets work by touch, mouse, Enter and Space. At a 1024 × 768 iPad viewport, the first-three-floor targets were verified at a minimum 82 × 94 CSS px.
@@ -48,4 +49,4 @@ npm run typecheck
 npm run build
 ```
 
-All 59 tests passed, the production build completed, and a headless Chromium pass covered desktop plus 1024 × 768 iPad layouts with no console errors.
+All 63 tests passed, the production build completed, and a headless Chromium pass covered desktop plus 1024 × 768 iPad layouts with no console errors.

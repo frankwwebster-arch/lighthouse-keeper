@@ -11,9 +11,9 @@ A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthou
 - Database: Neon Postgres via `DATABASE_URL` (verified: `/api/players` answers `db:true`). Tables are created on first use: players, saves, player_rules, settings (PIN hash).
 
 ## Built
-Engine (seeded, deterministic, 59 tests), SVG cutaway scene with zoom camera, typo matcher, quizzes levels 1-3, credit economy with admin dials (allowance from per-need green bars, prices, gifting, quiz level per player), who-is-playing screen, per-player saves (DB or localStorage), grown-ups PIN (starts 1234; change it).
+Engine (seeded, deterministic, 63 tests), SVG cutaway scene with zoom camera, typo matcher, quizzes levels 1-3, credit economy with admin dials (allowance from per-need green bars, prices, gifting, quiz level and breakdown pressure per player), who-is-playing screen, per-player saves (DB or localStorage), grown-ups PIN (starts 1234; change it).
 
-The first three playable floors are now modular fixed-width components: kitchen, living room, and bedroom with en suite. Objects have a runtime `standard` / `on` / `broken` contract, state-specific strip support, shared broken effects, keyboard/touch hit areas, and rear-facing cooker/basin keeper fallbacks. Floor 3 reserves an invisible two-door changing zone for the later diving-board extension.
+The first three playable floors are now modular fixed-width components: kitchen, living room, and bedroom with en suite. Objects have a runtime `standard` / `on` / `broken` contract, state-specific strip support, shared broken effects, keyboard/touch hit areas, and rear-facing cooker/basin keeper fallbacks. Random keeper-owned breakdowns are off by default and controlled by grown-ups' frequency and maximum-concurrent dials; broken assets block normal use until repaired. Floor 3 reserves an invisible two-door changing zone for the later diving-board extension.
 
 ## Not built yet (agreed design)
 1. Production Pixel PNGs: the 4px grid, exact sizes, names, pivots, floor modules and object-state strips are specified, but `public/sprites/manifest.json` is still empty and vector fallbacks remain in use.
@@ -21,6 +21,8 @@ The first three playable floors are now modular fixed-width components: kitchen,
 3. Tiered upgrades to existing objects bought with credits; prices are admin dials; gifting.
 4. Mini games: fishing, cooking, telescope spotting.
 5. Day/night palette, non-skippable ~30s night recap.
+6. Replace the temporary on-island shop fallback with an early off-island unlock and boat travel. Boat tiers: rowing boat, tug, speedboat. The external shop never breaks; the keeper's jetty and boat may.
+7. Workshop floor that reduces breakdown pressure; tune its effect only after Ralph's playtesting shows whether faults are fun or irritating.
 
 ## Housekeeping for Frank
 - Rotate the Neon password (it was pasted in chat), then update `DATABASE_URL` in Vercel and redeploy.
@@ -29,4 +31,4 @@ The first three playable floors are now modular fixed-width components: kitchen,
 
 ## Verification and delivery
 
-The current local slice passed 59 tests, TypeScript checking, a production build, and headless Chromium checks at desktop and 1024 × 768 iPad sizes. Production status must still be checked after the finished commit reaches `main`.
+The current local slice passed 63 tests, TypeScript checking, a production build, and headless Chromium checks at desktop and 1024 × 768 iPad sizes. Production status must still be checked after the finished commit reaches `main`.

@@ -96,6 +96,15 @@ Object-specific bounds and overrides:
 
 Each `broken` loop is the object’s intact casing plus the shared grammar: a 1 logical-pixel horizontal casing wobble, looping smoke, and occasional sparks. Do not draw unique smoke systems into every object.
 
+### Ownership and later exterior kit
+
+The three-floor batch above is the current production priority. Ownership still governs later damage art:
+
+- `garden` (eventual greenhouse included) and `jetty` are keeper-owned and need `standard`, `on`, and `broken` strips in the later exterior batch.
+- The future keeper boat is also repairable. Preserve one bottom-centre waterline anchor across the rowing-boat, tug, and speedboat tiers; each tier needs all three states.
+- `shop` is an off-island destination owned by its proprietor. It needs destination/open states when travel is built, but never a keeper-repair `broken` state.
+- Breakdown event hooks currently emit `electronic-fizzle`, `mechanical-clunk`, `plumbing-sputter`, or `structure-crack`. These names are placeholders for an eventual start/fizzle-loop/repair-success audio set; no sound files are delivered.
+
 ## Shared effects, doors and bubbles
 
 | Asset | Canvas / anchor | Frames · fps | z-order / use |

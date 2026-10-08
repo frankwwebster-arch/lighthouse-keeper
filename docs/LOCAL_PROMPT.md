@@ -10,8 +10,8 @@ Working style: keep replies short and plain. For anything technical, go one step
 Do next, in order:
 1. Produce and integrate only the first-batch Pixel PNGs in `docs/PRODUCTION_ASSET_KIT.md`; the modular floors, three-state renderer and strip pipeline already exist.
 2. Confirm production saves with Ralph and Eddie after the Neon credential rotation; never commit `DATABASE_URL`.
-3. Add the real damage/repair gameplay source for the already-renderable broken state.
+3. Playtest the implemented breakdown/repair dials with Ralph before choosing defaults or workshop effectiveness. The current default is off, maximum one fault.
 4. Add the day/night palette and roughly 30-second recap.
-5. Keep later floors, lift, pets, visitors, ship and weather art deferred until explicitly authorised.
+5. Later, replace the temporary island shop with boat travel to an off-island shop; do not make the shop breakable. Keep the workshop and other later floors deferred until explicitly authorised.
 Keep the game kid-friendly but not babyish (he plays Roblox and Minecraft). No live AI in the game. Do not slice the concept plates into sprites.
 ---

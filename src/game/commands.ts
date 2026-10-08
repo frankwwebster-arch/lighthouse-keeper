@@ -7,7 +7,7 @@
  * Lines may use {name} (the keeper), {pet} (his pet), {time} (his clock).
  */
 
-import type { AnimKey, FxKey, NeedId } from './config'
+import type { AnimKey, FxKey, NeedId, ObjectId } from './config'
 
 export interface ReactionDef {
   id: string
@@ -77,6 +77,8 @@ export interface DoOrder {
   id: string
   item?: string
   react?: string
+  /** Used by generic jobs such as repairing a particular broken object. */
+  object?: ObjectId
 }
 
 export interface CommandDef {

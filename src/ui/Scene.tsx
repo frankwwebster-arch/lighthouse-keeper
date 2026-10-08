@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { OBJECTS, type FxKey, type ObjectId } from '../game/config'
+import { BREAKABLE_OBJECTS, OBJECTS, type FxKey, type ObjectId } from '../game/config'
 import { darkness, stormNow, type State } from '../game/engine'
 import { FLOOR_Y, STAGE, TOWER_X, floorOf, focusFor, worldX } from '../game/world'
 import { Actors, type Pose } from './Actors'
@@ -52,10 +52,11 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
   const shipX = 1260 - shipT * 640
   const tvOn = d?.id.startsWith('tv') && d.phase === 'doing'
   const cabin = doingNow && doingNow.priv
-  const broken = useMemo(
-    () => parseBrokenPreview(typeof window === 'undefined' ? null : new URLSearchParams(window.location.search).get('broken'), OBJECTS.map((o) => o.id)),
+  const previewBroken = useMemo(
+    () => parseBrokenPreview(typeof window === 'undefined' ? null : new URLSearchParams(window.location.search).get('broken'), BREAKABLE_OBJECTS),
     [],
   )
+  const broken = new Set([...s.broken, ...previewBroken])
   const activeObject = doingNow?.object && doingNow.object !== 'here' ? doingNow.object : s.lampLit ? 'lamp' : s.ringing ? 'phone' : null
 
   const obj = (id: ObjectId, x?: number) => {

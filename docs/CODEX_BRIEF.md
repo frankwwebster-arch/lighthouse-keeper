@@ -21,6 +21,8 @@ Sizes (width × height):
 
 Not everything needs all three art files in the first batch. Door, shop and jetty: standard only. Lamp: standard = off, on = lit. Garden: empty plus 1, 2 and 3 ripe, as `obj_garden_ripe1_f1.png` etc. The runtime contract remains capable of all three states for every clickable object.
 
+Implementation clarification (8 October 2026): “standard only” above describes the first art batch, not permanent ownership or gameplay. The keeper's garden/greenhouse and jetty can break, and the future keeper-owned boat can break; their animated broken art is a later exterior batch. The shop belongs to its proprietor, will eventually be off-island, and is never a breakable keeper asset.
+
 ## The keeper: layered puppet
 
 Every part is on the same canvas, 32 wide × 40 high, drawn in its neutral standing position, so stacking all parts at 0,0 rebuilds him. The game stores explicit pivots for assembly; production raster clips use drawn pixel-safe angles rather than blurred arbitrary CSS rotation.

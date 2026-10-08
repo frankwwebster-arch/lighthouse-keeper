@@ -17,6 +17,8 @@ function clean(r: Record<string, unknown>) {
     greenAt: clampNum(r.greenAt, 10, 95, 50),
     priceScale: clampNum(r.priceScale, 25, 300, 100),
     quizLevel: clampNum(r.quizLevel, 1, 3, 1),
+    breakdownMinutes: clampNum(r.breakdownMinutes, 0, 1440, 0),
+    maxBreakdowns: clampNum(r.maxBreakdowns, 0, 10, 1),
     prices,
   }
 }
