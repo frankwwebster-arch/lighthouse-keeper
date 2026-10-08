@@ -93,8 +93,15 @@ do not license arbitrary rescaling of the runtime actor.
 The first keeper review candidate now establishes the intended identity:
 compact older keeper, navy cap with a tiny brass badge, blue work jumper with
 a cream stripe, large cream beard, dark trousers and boots. Its aligned master
-parts and initial clips are the scale reference for subsequent furniture, but
-remain review candidates until Frank approves them in `review.html`.
+parts and initial clips are the scale reference for subsequent furniture.
+Frank approved the identity-preserving walk and initial action set in chat;
+the review canvas remains the durable place to inspect and annotate exports.
+
+Side-facing chairs use the six-frame `sit_side` transition and manifest seat
+point `(16,29)`; left-facing use is a strict horizontal mirror. Sofas, toilets
+and other camera-facing seats use `sit_front` with the same seat point. Getting
+up plays the matching strip in reverse. Never redraw or scale the keeper to fit
+a chair: position the furniture seat under the shared anchor instead.
 
 Furniture approval requires a quick silhouette test with the keeper beside it
 and, where relevant, seated at it. Device approval requires a believable hand

@@ -35,15 +35,19 @@ Initial clips:
 |---|---|---:|---|---|
 | `idle` | front | 4 · 6 | yes | floor anchor |
 | `walk` | front/side composite | 8 · 10 | yes | floor anchor; no sub-pixel travel |
+| `turn_back` | front to back | 6 · 8 | no | reverse frames for `turn_front` |
+| `work_back` | back | 8 · 8 | yes | hands `(16,21)`; generic domestic work |
 | `reach_use` | front | 5 · 10 | no | hand to object use point |
-| `cook_back` | back | 6 · 8 | yes | hands `(16,21)` to cooker |
+| `cook_back` | back | 8 · 8 | yes | alias of `work_back`; hands `(16,21)` |
 | `watch_tv` | back | 4 · 5 | yes | seated anchor `(16,37)` |
 | `read` | front | 4 · 5 | yes | book pivot `(21,22)` |
-| `piano` | back | 8 · 10 | yes | hands `(16,21)` |
+| `sit_side` | side | 6 · 8 | no | seat `(16,29)`; mirror left; reverse to stand |
+| `sit_front` | front | 6 · 8 | no | seat `(16,29)`; reverse to stand |
+| `piano` | rear three-quarter | 8 · 10 | yes | seat `(16,29)`; hands `(24,20)` |
 | `sleep` | front-derived | 4 · 4 | yes | bed contact `(16,31)` |
 | `phone` | front | 4 · 6 | yes | handset pivot `(22,14)` |
-| `brush_teeth_back` | back | 6 · 8 | yes | hand `(22,18)` to basin |
-| `wash_back` | back | 6 · 8 | yes | hands `(16,21)` to basin |
+| `brush_teeth_back` | back | 8 · 8 | yes | alias of `work_back`; hands `(16,21)` |
+| `wash_back` | back | 8 · 8 | yes | alias of `work_back`; hands `(16,21)` |
 | `loo_hide` | hidden | 0 | n/a | keeper is not drawn |
 
 Required part files are `keeper_front_head_{happy,neutral,grumpy,asleep,open}.png`, `keeper_front_{torso,arm_l,arm_r,leg_l,leg_r}.png`, the equivalent `keeper_back_*` files with one back head, and `keeper_reference.png`; every file is 32 × 40. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. Pivots are for assembly tooling; production raster limbs use drawn key angles or integer translations in final clips rather than arbitrary CSS rotation.
@@ -129,7 +133,7 @@ The current Floor 3 reservation uses extension seam x 117, inner-door use point 
 
 1. Floor bands, partitions and three room palettes. **Delivered 8 October 2026:** `tower_stripe_{red,white}.png` and `room_{kitchen,living,bedroom}.png`.
 2. Shared object-state overlays and one fully proven object (TV). **Delivered for review 8 October 2026.**
-3. Keeper master parts plus `idle`, `walk`, `cook_back`, `wash_back` and `brush_teeth_back`. **Delivered for review 8 October 2026; pending Frank’s approval.**
+3. Keeper master parts plus the initial movement/action set: `idle`, `walk`, `turn_back`, `work_back`, its domestic-action aliases, `sit_side`, `sit_front`, and `piano`. **Identity, walk and this action set approved by Frank on 8 October 2026.**
 4. Remaining object state sets and effects.
 5. Door/changing-room assets and dive outfit only when the extension becomes playable.
 

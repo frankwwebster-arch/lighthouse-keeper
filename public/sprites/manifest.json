@@ -39,6 +39,7 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_back_arm_r": {
@@ -55,6 +56,7 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_back_head": {
@@ -71,6 +73,7 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_back_leg_l": {
@@ -87,6 +90,7 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_back_leg_r": {
@@ -103,6 +107,7 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_back_torso": {
@@ -119,32 +124,43 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_brush_teeth_back": {
   "file": "keeper_brush_teeth_back.png",
   "w": 32,
   "h": 40,
-  "frames": 6,
+  "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
    16,
    40
   ],
+  "handUsePoint": [
+   16,
+   21
+  ],
+  "loop": true,
   "z": 50
  },
  "keeper_cook_back": {
   "file": "keeper_cook_back.png",
   "w": 32,
   "h": 40,
-  "frames": 6,
+  "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
    16,
    40
   ],
+  "handUsePoint": [
+   16,
+   21
+  ],
+  "loop": true,
   "z": 50
  },
  "keeper_front_arm_l": {
@@ -161,6 +177,7 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_front_arm_r": {
@@ -177,6 +194,7 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_front_head_asleep": {
@@ -193,6 +211,7 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_front_head_grumpy": {
@@ -209,6 +228,7 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_front_head_happy": {
@@ -225,6 +245,7 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_front_head_neutral": {
@@ -241,6 +262,7 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_front_head_open": {
@@ -257,6 +279,7 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_front_leg_l": {
@@ -273,6 +296,7 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_front_leg_r": {
@@ -289,6 +313,7 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_front_torso": {
@@ -305,6 +330,7 @@
    16,
    40
   ],
+  "loop": true,
   "z": 50
  },
  "keeper_idle": {
@@ -318,6 +344,29 @@
    16,
    40
   ],
+  "loop": true,
+  "z": 50
+ },
+ "keeper_piano": {
+  "file": "keeper_piano.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "seatPoint": [
+   16,
+   29
+  ],
+  "handUsePoint": [
+   24,
+   20
+  ],
+  "loop": true,
   "z": 50
  },
  "keeper_reference": {
@@ -330,6 +379,61 @@
    16,
    40
   ],
+  "loop": true,
+  "z": 50
+ },
+ "keeper_sit_front": {
+  "file": "keeper_sit_front.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "seatPoint": [
+   16,
+   29
+  ],
+  "loop": false,
+  "reverseFor": "stand_front",
+  "z": 50
+ },
+ "keeper_sit_side": {
+  "file": "keeper_sit_side.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "seatPoint": [
+   16,
+   29
+  ],
+  "loop": false,
+  "reverseFor": "stand_side",
+  "mirrorSafe": true,
+  "z": 50
+ },
+ "keeper_turn_back": {
+  "file": "keeper_turn_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "loop": false,
+  "reverseFor": "turn_front",
   "z": 50
  },
  "keeper_walk": {
@@ -343,19 +447,44 @@
    16,
    40
   ],
+  "loop": true,
+  "mirrorSafe": true,
   "z": 50
  },
  "keeper_wash_back": {
   "file": "keeper_wash_back.png",
   "w": 32,
   "h": 40,
-  "frames": 6,
+  "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
    16,
    40
   ],
+  "handUsePoint": [
+   16,
+   21
+  ],
+  "loop": true,
+  "z": 50
+ },
+ "keeper_work_back": {
+  "file": "keeper_work_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   16,
+   21
+  ],
+  "loop": true,
   "z": 50
  },
  "obj_tv_broken": {

@@ -12,7 +12,7 @@ import { createContext, useContext, useEffect, useId, useState, type ReactNode }
  * (docs/CODEX_ASSETS.md has the full list of names.)
  */
 export const PX = 4
-type ManifestEntry = string | { file: string; frames?: number; fps?: number; w?: number; h?: number; effectOrigin?: [number, number] }
+type ManifestEntry = string | { file: string; frames?: number; fps?: number; w?: number; h?: number; effectOrigin?: [number, number]; loop?: boolean }
 type Manifest = Record<string, ManifestEntry>
 const Ctx = createContext<Manifest>({})
 
@@ -51,13 +51,14 @@ export function Sprite({ name, x = 0, y = 0, w, h, children }: { name: string | 
   }
   const frames = typeof entry === 'string' ? 1 : Math.max(1, entry.frames ?? 1)
   const fps = typeof entry === 'string' ? 0 : Math.max(0, entry.fps ?? 0)
+  const loop = typeof entry === 'string' ? true : entry.loop !== false
   if (frames === 1 || fps === 0) return <image href={`/sprites/${file}`} x={x - w / 2} y={y - h} width={w} height={h} preserveAspectRatio="xMidYMax meet" style={{ imageRendering: 'pixelated' }} />
   const values = Array.from({ length: frames }, (_, frame) => `${-frame * w} 0`).join(';')
   return (
     <g clipPath={`url(#${clipId})`}>
       <defs><clipPath id={clipId}><rect x={x - w / 2} y={y - h} width={w} height={h} /></clipPath></defs>
       <image href={`/sprites/${file}`} x={x - w / 2} y={y - h} width={w * frames} height={h} preserveAspectRatio="none" style={{ imageRendering: 'pixelated' }}>
-        <animateTransform attributeName="transform" type="translate" values={values} dur={`${frames / fps}s`} calcMode="discrete" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="translate" values={values} dur={`${frames / fps}s`} calcMode="discrete" repeatCount={loop ? 'indefinite' : 1} fill={loop ? 'remove' : 'freeze'} />
       </image>
     </g>
   )

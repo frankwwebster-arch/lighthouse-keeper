@@ -39,8 +39,14 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==22
-required_clips={'keeper_idle':(4,6),'keeper_walk':(8,10),'keeper_cook_back':(6,8),'keeper_wash_back':(6,8),'keeper_brush_teeth_back':(6,8)}
+assert len(keeper_pngs)==27
+required_clips={
+    'keeper_idle':(4,6), 'keeper_walk':(8,10),
+    'keeper_turn_back':(6,8), 'keeper_work_back':(8,8),
+    'keeper_cook_back':(8,8), 'keeper_wash_back':(8,8),
+    'keeper_brush_teeth_back':(8,8), 'keeper_sit_side':(6,8),
+    'keeper_sit_front':(6,8), 'keeper_piano':(8,10),
+}
 for raw in keeper_pngs:
     sidecar=json.loads(raw.with_suffix('.json').read_text())
     im=Image.open(raw).convert('RGBA')
@@ -54,11 +60,26 @@ for raw in keeper_pngs:
     assert ImageChops.difference(im,exported).getbbox() is None
 for name,(frames,fps) in required_clips.items():
     assert manifest[name]['frames']==frames and manifest[name]['fps']==fps
-assert all(any(r['asset_id']==name and r['implementation_status']=='delivered-review' for r in rows) for name in required_clips)
+catalogued_clips={'keeper_idle','keeper_walk','keeper_cook_back','keeper_wash_back','keeper_brush_teeth_back','keeper_piano'}
+assert all(any(r['asset_id']==name and r['implementation_status']=='delivered-review' for r in rows) for name in catalogued_clips)
+assert manifest['keeper_walk']['mirrorSafe'] is True
+assert manifest['keeper_turn_back']['loop'] is False and manifest['keeper_turn_back']['reverseFor']=='turn_front'
+assert manifest['keeper_sit_side']['loop'] is False and manifest['keeper_sit_side']['seatPoint']==[16,29]
+assert manifest['keeper_sit_side']['mirrorSafe'] is True and manifest['keeper_sit_side']['reverseFor']=='stand_side'
+assert manifest['keeper_sit_front']['loop'] is False and manifest['keeper_sit_front']['seatPoint']==[16,29]
+assert manifest['keeper_sit_front']['reverseFor']=='stand_front'
+assert manifest['keeper_work_back']['handUsePoint']==[16,21]
+assert manifest['keeper_piano']['seatPoint']==[16,29] and manifest['keeper_piano']['handUsePoint']==[24,20]
 walk=Image.open(root/'public/sprites'/manifest['keeper_walk']['file']).convert('RGBA')
 walk_frames=[walk.crop((i*128,0,(i+1)*128,160)) for i in range(8)]
 assert len({frame.tobytes() for frame in walk_frames})>=5
 assert len({frame.getbbox()[3] for frame in walk_frames})==1
-preview=Image.open(root/'docs/floor-asset-catalogue/keeper-walk-preview.gif')
-assert preview.is_animated and preview.n_frames==8 and preview.info['duration']==100
-print('Verified: 71 spaces, 1531 rows, owned-item states, 9 TV/lamp/FX exports, 22 aligned keeper exports, hard alpha, animated clips and manifest contracts.')
+previews={
+    'keeper-walk':(8,100), 'keeper-turn-back':(10,120),
+    'keeper-work-back':(8,120), 'keeper-sit-side':(10,120),
+    'keeper-sit-front':(10,120), 'keeper-piano':(8,100),
+}
+for name,(frames,duration) in previews.items():
+    preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
+    assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
+print('Verified: 71 spaces, 1531 rows, owned-item states, 9 TV/lamp/FX exports, 27 aligned keeper exports, hard alpha, animated clips and manifest contracts.')

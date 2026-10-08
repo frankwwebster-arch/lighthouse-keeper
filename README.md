@@ -6,7 +6,7 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 ```
 npm install
 npm run dev      # Next.js 14; open http://localhost:3000 (or this computer’s address on the same wifi, for the iPad)
-npm test         # 110 tests
+npm test         # 114 tests
 npm run upgrades # copy data/upgrades.csv (the upgrade list) into the game
 npm run build    # production build
 npm run sprites  # snap Codex's PNGs in art/raw/ into public/sprites/ (docs/CODEX_ASSETS.md)
@@ -21,8 +21,8 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 - Every object renderer accepts `standard`, `on`, and `broken`; active gameplay drives `on`. Broken objects share integer-step casing wobble, smoke and sparks. Add `?broken=tv,cooker` (or `?broken=all`) to the URL for the internal art-state preview.
 - Objects can be upgraded with credits from their tap menu. The tier list is `data/upgrades.csv`. Higher tiers do more good, faster; the bed's tier sets the morning's energy. Grown-ups set upgrade prices (overall %, then per tier) and can gift upgrades. Tier sprites are `obj_<id>_t<n>_<state>`; until they exist a `T<n>` tag stands in. `?tiers=3` previews top tiers.
 - Keeper-owned assets can now break during play, block their normal actions, and be repaired. Grown-ups control average fault frequency and maximum concurrent faults; defaults are off / one. Breakdown events expose placeholder SFX categories for later audio. The shop is excluded because it is not the keeper's asset.
-- The first production keeper review batch now supplies aligned front/back master parts plus idle, walk, cooking, washing and brushing strips. Cooker and basin jobs select the matching rear-facing strip; unbuilt keeper actions retain the vector fallback. Remaining object-state sets and later-floor art are still pending.
-- Sprite manifest entries may be old string paths or `{ "file", "frames", "fps" }` objects. Horizontal strips animate without CSS scaling or rotation.
+- The production keeper batch now supplies aligned front/back master parts plus idle, walk, turn-to-rear, reusable rear work, cooking/washing/brushing aliases, side/front sitting and piano strips. Left-facing walk/sit use exact mirrors; standing up reverses the sit frames. Cooker and basin jobs select their rear-facing strips; unbuilt keeper actions retain the vector fallback. Remaining object-state sets and later-floor art are still pending.
+- Sprite manifest entries may be old string paths or metadata objects with frames, fps and optional loop/mirror/reverse/interaction-point contracts. Horizontal strips animate without CSS scaling or rotation.
 - All SVG object targets work by touch, mouse, Enter and Space. At a 1024 × 768 iPad viewport, the first-three-floor targets were verified at a minimum 82 × 94 CSS px.
 
 ## Where things are

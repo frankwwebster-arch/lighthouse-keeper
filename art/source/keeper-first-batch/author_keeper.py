@@ -185,11 +185,13 @@ def side_walk(step=0):
     return im
 
 
-def generated_walk_frames():
-    """Normalise the identity-locked generated walk source onto eight 32x40 slots."""
-    source = Path(__file__).with_name("keeper-walk-generated-source.png")
+def generated_frames(filename, expected, fallback=None):
+    """Normalise an identity-locked generated source onto aligned 32x40 slots."""
+    source = Path(__file__).with_name(filename)
     if not source.exists():
-        return [side_walk(p) for p in (-3, -2, 0, 2, 3, 2, 0, -2)]
+        if fallback is not None:
+            return fallback
+        raise FileNotFoundError(source)
     sheet = Image.open(source).convert("RGBA")
     alpha = sheet.getchannel("A").point(lambda value: 255 if value >= 128 else 0)
     occupied = []
@@ -204,8 +206,8 @@ def generated_walk_frames():
             if x - start > 80:
                 runs.append((start, x))
             start = None
-    if len(runs) != 8:
-        raise ValueError(f"Expected 8 generated keeper poses, found {len(runs)}")
+    if len(runs) != expected:
+        raise ValueError(f"Expected {expected} generated keeper poses in {filename}, found {len(runs)}")
 
     bounds = []
     for x0, x1 in runs:
@@ -243,18 +245,34 @@ def part(which, rear=False, mood="neutral"):
     return im
 
 
-def contract(frames, fps, pivot=None):
+def contract(frames, fps, pivot=None, *, loop=True, seat_point=None, hand_use_point=None, reverse_for=None, mirror_safe=False):
     value = {"w": 32, "h": 40, "frames": frames, "fps": fps, "density": 4, "anchor": [16, 40], "z": 50}
     if pivot is not None: value["pivot"] = pivot
+    value["loop"] = loop
+    if seat_point is not None: value["seatPoint"] = seat_point
+    if hand_use_point is not None: value["handUsePoint"] = hand_use_point
+    if reverse_for is not None: value["reverseFor"] = reverse_for
+    if mirror_safe: value["mirrorSafe"] = True
     return value
 
 
-def save(name, frames, fps=0, pivot=None):
+def save(name, frames, fps=0, pivot=None, **metadata):
     strip = Image.new("RGBA", (W * len(frames), H), (0, 0, 0, 0))
     for i, frame in enumerate(frames): strip.alpha_composite(frame, (i * W, 0))
     png = OUT / f"{name}_f{len(frames)}.png"
     strip.save(png, optimize=True)
-    png.with_suffix(".json").write_text(json.dumps(contract(len(frames), fps, pivot), indent=2) + "\n")
+    png.with_suffix(".json").write_text(json.dumps(contract(len(frames), fps, pivot, **metadata), indent=2) + "\n")
+
+
+def save_preview(name, frames, duration, ping_pong=False):
+    sequence = frames + (frames[-2:0:-1] if ping_pong else [])
+    previews = []
+    for frame in sequence:
+        canvas = Image.new("RGBA", (256, 320), (244, 236, 214, 255))
+        canvas.alpha_composite(frame.resize((256, 320), Image.Resampling.NEAREST))
+        previews.append(canvas.convert("P", palette=Image.Palette.ADAPTIVE, colors=128))
+    preview = ROOT / f"docs/floor-asset-catalogue/{name}-preview.gif"
+    previews[0].save(preview, save_all=True, append_images=previews[1:], duration=duration, loop=0, disposal=2, optimize=False)
 
 
 PIVOTS = {"torso": [16, 25], "arm_l": [10, 15], "arm_r": [22, 15], "leg_l": [13, 25], "leg_r": [19, 25]}
@@ -267,25 +285,32 @@ save("keeper_back_head", [part("head", True)], pivot=[16, 11])
 save("keeper_reference", [compose("front", "neutral")])
 
 save("keeper_idle", [compose("front", "neutral", bob=b) for b in (0, 0, -1, 0)], 6)
-walk_frames = generated_walk_frames()
-save("keeper_walk", walk_frames, 10)
-save("keeper_cook_back", [compose("back", hands=h, bob=b) for h, b in ((4, 0), (5, -1), (6, -1), (5, 0), (4, 0), (3, 0))], 8)
-save("keeper_wash_back", [compose("back", hands=h, bob=b) for h, b in ((3, 0), (4, 0), (5, -1), (4, -1), (3, 0), (2, 0))], 8)
-save("keeper_brush_teeth_back", [compose("back", hands=h, bob=b) for h, b in ((4, 0), (6, 0), (4, 0), (6, -1), (4, -1), (5, 0))], 8)
+walk_frames = generated_frames("keeper-walk-generated-source.png", 8, [side_walk(p) for p in (-3, -2, 0, 2, 3, 2, 0, -2)])
+turn_frames = generated_frames("keeper-turn-back-generated-source.png", 6)
+work_frames = generated_frames("keeper-work-back-generated-source.png", 8)
+sit_side_frames = generated_frames("keeper-sit-side-generated-source.png", 6)
+sit_front_frames = generated_frames("keeper-sit-front-generated-source.png", 6)
+piano_frames = generated_frames("keeper-piano-generated-source.png", 8)
+save("keeper_walk", walk_frames, 10, mirror_safe=True)
+save("keeper_turn_back", turn_frames, 8, loop=False, reverse_for="turn_front")
+save("keeper_work_back", work_frames, 8, hand_use_point=[16, 21])
+save("keeper_cook_back", work_frames, 8, hand_use_point=[16, 21])
+save("keeper_wash_back", work_frames, 8, hand_use_point=[16, 21])
+save("keeper_brush_teeth_back", work_frames, 8, hand_use_point=[16, 21])
+save("keeper_sit_side", sit_side_frames, 8, loop=False, seat_point=[16, 29], reverse_for="stand_side", mirror_safe=True)
+save("keeper_sit_front", sit_front_frames, 8, loop=False, seat_point=[16, 29], reverse_for="stand_front")
+save("keeper_piano", piano_frames, 10, seat_point=[16, 29], hand_use_point=[24, 20])
 
 # A transparent source contact sheet makes alignment mistakes easy to spot.
 contact = Image.new("RGBA", (W * 3, H * 2), (244, 236, 214, 255))
-for i, frame in enumerate((compose("front", "happy"), walk_frames[2], compose("back"), walk_frames[0], walk_frames[4], compose("back", hands=5))):
+for i, frame in enumerate((compose("front", "happy"), walk_frames[2], turn_frames[-1], sit_side_frames[-1], sit_front_frames[-1], piano_frames[0])):
     contact.alpha_composite(frame, ((i % 3) * W, (i // 3) * H))
 contact.save(Path(__file__).with_name("keeper-contact-sheet.png"), optimize=True)
 
-# Friendly enlarged loop for direct review outside the game and catalogue.
-preview_frames = []
-for frame in walk_frames:
-    canvas = Image.new("RGBA", (256, 320), (244, 236, 214, 255))
-    enlarged = frame.resize((256, 320), Image.Resampling.NEAREST)
-    canvas.alpha_composite(enlarged)
-    preview_frames.append(canvas.convert("P", palette=Image.Palette.ADAPTIVE, colors=128))
-preview = ROOT / "docs/floor-asset-catalogue/keeper-walk-preview.gif"
-preview_frames[0].save(preview, save_all=True, append_images=preview_frames[1:], duration=100, loop=0, disposal=2, optimize=False)
+save_preview("keeper-walk", walk_frames, 100)
+save_preview("keeper-turn-back", turn_frames, 120, ping_pong=True)
+save_preview("keeper-work-back", work_frames, 120)
+save_preview("keeper-sit-side", sit_side_frames, 120, ping_pong=True)
+save_preview("keeper-sit-front", sit_front_frames, 120, ping_pong=True)
+save_preview("keeper-piano", piano_frames, 100)
 print(f"Keeper batch authored in {OUT}")

@@ -1,0 +1,14 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "reverseFor": "turn_front"
+}

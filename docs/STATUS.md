@@ -11,7 +11,7 @@ A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthou
 - Database: Neon Postgres via `DATABASE_URL` (verified: `/api/players` answers `db:true`). Tables are created on first use: players, saves, player_rules, settings (PIN hash).
 
 ## Built
-Engine (seeded, deterministic, 110 tests), SVG cutaway scene with zoom camera, typo matcher, quizzes levels 1-3, credit economy with admin dials (allowance from per-need green bars, prices, gifting, quiz level and breakdown pressure per player), who-is-playing screen, per-player saves (DB or localStorage), grown-ups PIN (starts 1234; change it).
+Engine (seeded, deterministic, 114 tests), SVG cutaway scene with zoom camera, typo matcher, quizzes levels 1-3, credit economy with admin dials (allowance from per-need green bars, prices, gifting, quiz level and breakdown pressure per player), who-is-playing screen, per-player saves (DB or localStorage), grown-ups PIN (starts 1234; change it).
 
 The first three playable floors are now modular fixed-width components: kitchen, living room, and bedroom with en suite. Objects have a runtime `standard` / `on` / `broken` contract, state-specific strip support, shared broken effects, keyboard/touch hit areas, and rear-facing cooker/basin keeper fallbacks. Random keeper-owned breakdowns are off by default and controlled by grown-ups' frequency and maximum-concurrent dials; broken assets block normal use until repaired. Floor 3 reserves an invisible two-door changing zone for the later diving-board extension.
 
@@ -22,7 +22,7 @@ Upgrades: almost every object has Basic, Middle and Top tiers, listed in `data/u
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 
 ## Not built yet (agreed design)
-1. Review the TV/style-guide and keeper continuation in `docs/floor-asset-catalogue/review.html`. The keeper batch supplies aligned front/back parts and `idle`, `walk`, `cook_back`, `wash_back`, and `brush_teeth_back`; unbuilt actions retain vector fallbacks. Remaining object sets, shell pieces, exterior and later-floor art are still pending.
+1. Review the TV/style-guide in `docs/floor-asset-catalogue/review.html`. Frank approved the keeper identity, walk and initial action set: aligned front/back parts plus `idle`, `walk`, `turn_back`, `work_back`, cooking/washing/brushing aliases, side/front sitting and `piano`. Left walk/sit are exact mirrors and stand-up reverses the sitting strips. Unbuilt actions retain vector fallbacks. Remaining object sets, shell pieces, exterior and later-floor art are still pending.
 2. Art for the mission floors (aquarium, weather station, hidden lair), their furniture, the lift and a floor-arrival effect (Codex; hooks in docs/FOR_CODEX.md).
 3. Tier art for upgrades (Codex; list in docs/FOR_CODEX.md). Typed commands for upgrading ("upgrade the TV") are not in yet; upgrades are bought from the tap menu.
 4. Mini games: fishing, cooking, telescope spotting.
