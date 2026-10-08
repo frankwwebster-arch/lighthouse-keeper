@@ -1,0 +1,966 @@
+{
+  "generated_from": "current workspace assets",
+  "scope": "all PNG assets currently delivered; prototype assets are not production-ready unless explicitly marked in HANDOFF_TO_CLAUDE.md",
+  "assets": [
+    {
+      "path": "art/background/lighthouse_10_floors_pixel.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "transparent": false,
+      "kind": "concept_plate"
+    },
+    {
+      "path": "art/background/lighthouse_10_floors_wide_pixel.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "transparent": false,
+      "kind": "concept_plate"
+    },
+    {
+      "path": "art/background/lighthouse_expansion_island_split_pixel.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "transparent": false,
+      "kind": "concept_plate"
+    },
+    {
+      "path": "art/background/lighthouse_master_day_pixel.png",
+      "width": 1576,
+      "height": 998,
+      "mode": "RGB",
+      "transparent": false,
+      "kind": "concept_plate"
+    },
+    {
+      "path": "style_a_blocky/bubble_exclaim.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/bubble_speech.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/bubble_think.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/icon_angry_cloud.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/icon_coin.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/icon_exclamation.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/icon_food.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/icon_heart.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/icon_lightbulb.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/icon_loo.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/icon_music.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/icon_phone.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/icon_question.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/icon_sad_rain_cloud.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/icon_zzz.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/keeper_loo.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/keeper_piano.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/keeper_stand.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/obj_bed.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/obj_fridge.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/obj_lamp.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/obj_lamp_off.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/obj_lamp_on.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/obj_piano.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/obj_toilet.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/obj_tv.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/obj_tv_off.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/obj_tv_on.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/overview.png",
+      "width": 1200,
+      "height": 900,
+      "mode": "RGB",
+      "transparent": false,
+      "kind": "concept_plate"
+    },
+    {
+      "path": "style_a_blocky/parts/cat_body.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/cat_ear_L.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/cat_ear_R.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/cat_head.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/cat_leg_BL.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/cat_leg_BR.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/cat_leg_FL.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/cat_leg_FR.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/cat_tail_1.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/cat_tail_2.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/keeper_arm_lower_L.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/keeper_arm_lower_R.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/keeper_arm_upper_L.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/keeper_arm_upper_R.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/keeper_foot_L.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/keeper_foot_R.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/keeper_hand_L.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/keeper_hand_R.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/keeper_head.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/keeper_leg_lower_L.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/keeper_leg_lower_R.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/keeper_leg_upper_L.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/keeper_leg_upper_R.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/parts/keeper_torso.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/pet_cat_leap.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/pet_cat_sit.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_a_blocky/scene_mock.png",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGB",
+      "transparent": false,
+      "kind": "concept_plate"
+    },
+    {
+      "path": "style_b_pixel/bubble_exclaim.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/bubble_speech.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/bubble_think.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/icon_angry_cloud.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/icon_coin.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/icon_exclamation.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/icon_food.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/icon_heart.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/icon_lightbulb.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/icon_loo.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/icon_music.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/icon_phone.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/icon_question.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/icon_sad_rain_cloud.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/icon_zzz.png",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/keeper_loo.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/keeper_piano.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/keeper_stand.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/obj_bed.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/obj_fridge.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/obj_lamp.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/obj_lamp_off.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/obj_lamp_on.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/obj_piano.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/obj_toilet.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/obj_tv.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/obj_tv_broken_ai.png",
+      "width": 724,
+      "height": 724,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/obj_tv_off.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/obj_tv_on.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/obj_tv_on_ai.png",
+      "width": 724,
+      "height": 724,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/obj_tv_standard_ai.png",
+      "width": 724,
+      "height": 724,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/obj_tv_states_sheet.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "sprite_sheet"
+    },
+    {
+      "path": "style_b_pixel/overview.png",
+      "width": 1200,
+      "height": 900,
+      "mode": "RGB",
+      "transparent": false,
+      "kind": "concept_plate"
+    },
+    {
+      "path": "style_b_pixel/parts/cat_body.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/cat_ear_L.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/cat_ear_R.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/cat_head.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/cat_leg_BL.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/cat_leg_BR.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/cat_leg_FL.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/cat_leg_FR.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/cat_tail_1.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/cat_tail_2.png",
+      "width": 140,
+      "height": 140,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/keeper_arm_lower_L.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/keeper_arm_lower_R.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/keeper_arm_upper_L.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/keeper_arm_upper_R.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/keeper_foot_L.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/keeper_foot_R.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/keeper_hand_L.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/keeper_hand_R.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/keeper_head.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/keeper_leg_lower_L.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/keeper_leg_lower_R.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/keeper_leg_upper_L.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/keeper_leg_upper_R.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/parts/keeper_torso.png",
+      "width": 160,
+      "height": 180,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/pet_cat_leap.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/pet_cat_sit.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "png_sprite"
+    },
+    {
+      "path": "style_b_pixel/scene_mock.png",
+      "width": 1586,
+      "height": 992,
+      "mode": "RGB",
+      "transparent": false,
+      "kind": "concept_plate"
+    }
+  ]
+}

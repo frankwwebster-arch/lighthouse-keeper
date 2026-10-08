@@ -1,0 +1,75 @@
+{
+  "schema_version": 2,
+  "status": "prototype-only",
+  "convention": "obj_<id>_<state>_f<frames>.png horizontal strips; keeper_{front,back}_<part> on aligned 32x40 canvases; room_<type>.png at 105x35",
+  "rendering": {
+    "target_logical_stage_px": [300, 190],
+    "css_scale": 4,
+    "image_rendering": "pixelated",
+    "production_source_rule": "author future production sprites at 1 logical pixel per source pixel and render at 4x; the current files are concept/prototype files and do not follow this contract consistently",
+    "floor_band_px": [110, 35],
+    "room_plate_px": [105, 35],
+    "keeper_canvas_px": [32, 40]
+  },
+  "runtime_implementation": {
+    "floor_modules": "implemented in src/ui/floors.tsx using vector fallbacks",
+    "object_states": ["standard", "on", "broken"],
+    "strip_manifest_entry": { "file": "obj_tv_on_f4.png", "frames": 4, "fps": 8 },
+    "production_pngs_delivered": false
+  },
+  "assets": {
+    "bg_day1_master": { "file": "art/background/lighthouse_master_day_pixel.png", "status": "concept", "anchor": "viewport" },
+    "bg_lighthouse_10_floors": { "file": "art/background/lighthouse_10_floors_pixel.png", "status": "concept", "anchor": "viewport" },
+    "bg_lighthouse_10_floors_wide": { "file": "art/background/lighthouse_10_floors_wide_pixel.png", "status": "concept", "anchor": "viewport" },
+    "bg_island_split_upgrade": { "file": "art/background/lighthouse_expansion_island_split_pixel.png", "status": "concept", "anchor": "viewport" },
+
+    "keeper_stand_concept": { "file": "style_b_pixel/keeper_stand.png", "status": "prototype" },
+    "keeper_clip_piano_concept": { "file": "style_b_pixel/keeper_piano.png", "status": "prototype" },
+    "keeper_clip_loo_concept": { "file": "style_b_pixel/keeper_loo.png", "status": "prototype" },
+    "keeper_head": { "file": "style_b_pixel/parts/keeper_head.png", "status": "placeholder-part" },
+    "keeper_torso": { "file": "style_b_pixel/parts/keeper_torso.png", "status": "placeholder-part" },
+    "keeper_arm_upper_L": { "file": "style_b_pixel/parts/keeper_arm_upper_L.png", "status": "placeholder-part" },
+    "keeper_arm_lower_L": { "file": "style_b_pixel/parts/keeper_arm_lower_L.png", "status": "placeholder-part" },
+    "keeper_hand_L": { "file": "style_b_pixel/parts/keeper_hand_L.png", "status": "placeholder-part" },
+    "keeper_arm_upper_R": { "file": "style_b_pixel/parts/keeper_arm_upper_R.png", "status": "placeholder-part" },
+    "keeper_arm_lower_R": { "file": "style_b_pixel/parts/keeper_arm_lower_R.png", "status": "placeholder-part" },
+    "keeper_hand_R": { "file": "style_b_pixel/parts/keeper_hand_R.png", "status": "placeholder-part" },
+    "keeper_leg_upper_L": { "file": "style_b_pixel/parts/keeper_leg_upper_L.png", "status": "placeholder-part" },
+    "keeper_leg_lower_L": { "file": "style_b_pixel/parts/keeper_leg_lower_L.png", "status": "placeholder-part" },
+    "keeper_foot_L": { "file": "style_b_pixel/parts/keeper_foot_L.png", "status": "placeholder-part" },
+    "keeper_leg_upper_R": { "file": "style_b_pixel/parts/keeper_leg_upper_R.png", "status": "placeholder-part" },
+    "keeper_leg_lower_R": { "file": "style_b_pixel/parts/keeper_leg_lower_R.png", "status": "placeholder-part" },
+    "keeper_foot_R": { "file": "style_b_pixel/parts/keeper_foot_R.png", "status": "placeholder-part" },
+
+    "pet_cat_sit_concept": { "file": "style_b_pixel/pet_cat_sit.png", "status": "prototype" },
+    "pet_cat_leap_concept": { "file": "style_b_pixel/pet_cat_leap.png", "status": "prototype" },
+    "obj_tv_standard": { "file": "style_b_pixel/obj_tv_standard_ai.png", "status": "visual-prototype" },
+    "obj_tv_on": { "file": "style_b_pixel/obj_tv_on_ai.png", "status": "visual-prototype" },
+    "obj_tv_broken": { "file": "style_b_pixel/obj_tv_broken_ai.png", "status": "visual-prototype" },
+    "obj_tv_states_sheet": { "file": "style_b_pixel/obj_tv_states_sheet.png", "status": "sprite-sheet-prototype" },
+    "obj_fridge_standard": { "file": "style_b_pixel/obj_fridge.png", "status": "placeholder" },
+    "obj_bed_standard": { "file": "style_b_pixel/obj_bed.png", "status": "placeholder" },
+    "obj_piano_standard": { "file": "style_b_pixel/obj_piano.png", "status": "placeholder" },
+    "obj_toilet_standard": { "file": "style_b_pixel/obj_toilet.png", "status": "placeholder" },
+    "obj_lamp_standard": { "file": "style_b_pixel/obj_lamp.png", "status": "placeholder" },
+    "obj_lamp_on": { "file": "style_b_pixel/obj_lamp_on.png", "status": "placeholder" },
+    "obj_lamp_off": { "file": "style_b_pixel/obj_lamp_off.png", "status": "placeholder" },
+
+    "bubble_speech": { "file": "style_b_pixel/bubble_speech.png", "status": "prototype" },
+    "bubble_think": { "file": "style_b_pixel/bubble_think.png", "status": "prototype" },
+    "bubble_exclaim": { "file": "style_b_pixel/bubble_exclaim.png", "status": "prototype" },
+    "bubble_icon_food": { "file": "style_b_pixel/icon_food.png", "status": "placeholder" },
+    "bubble_icon_loo": { "file": "style_b_pixel/icon_loo.png", "status": "placeholder" },
+    "bubble_icon_heart": { "file": "style_b_pixel/icon_heart.png", "status": "placeholder" },
+    "bubble_icon_zzz": { "file": "style_b_pixel/icon_zzz.png", "status": "placeholder" },
+    "bubble_icon_question": { "file": "style_b_pixel/icon_question.png", "status": "placeholder" },
+    "bubble_icon_exclamation": { "file": "style_b_pixel/icon_exclamation.png", "status": "placeholder" },
+    "bubble_icon_music": { "file": "style_b_pixel/icon_music.png", "status": "placeholder" },
+    "bubble_icon_phone": { "file": "style_b_pixel/icon_phone.png", "status": "placeholder" },
+    "bubble_icon_coin": { "file": "style_b_pixel/icon_coin.png", "status": "placeholder" },
+    "bubble_icon_lightbulb": { "file": "style_b_pixel/icon_lightbulb.png", "status": "placeholder" }
+  },
+  "not_delivered": [
+    "production floor-module PNGs (runtime modules exist)", "production rig and pivot-aligned PNGs", "front/rear keeper parts", "animation strips", "object on/broken frames except TV visual prototype", "separate parallax background layers", "effects strips", "visitor, seagull and ship rigs"
+  ]
+}

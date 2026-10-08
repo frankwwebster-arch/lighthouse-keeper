@@ -56,9 +56,18 @@ It is designed as a crop-safe master plate: calm expandable sky above, a clean g
 
 ## Next implementation priorities
 
-1. Replace the placeholder keeper parts with a consistent Pixel keeper puppet.
-2. Define the keeper animation bible and build the reusable rear-facing work poses first.
-3. Convert the lighthouse shell into modular floor bands with automatic stripe-phase calculation.
-4. Add a day/night palette or overlay system.
-5. Implement the shared standard/on/broken object-state contract and broken-item effect loop.
-6. Prototype the telescope spotting mini-game.
+Completed in the first implementation slice:
+
+- Fixed-width modular kitchen, living-room, and bedroom/en-suite runtime bands.
+- Shared `standard` / `on` / `broken` object renderer, broken-effect grammar, and horizontal strip playback.
+- Rear-facing fallback pose for cooker and basin work.
+- Reserved hidden Floor 3 changing-room geometry; the later extension itself is not built.
+- Browser verification at desktop and 1024 × 768 iPad sizes.
+
+Next priorities:
+
+1. Produce the exact first-batch PNGs in `docs/PRODUCTION_ASSET_KIT.md`, starting with the aligned 32 × 40 front/back keeper parts and one complete TV state set.
+2. Replace the room/furniture fallbacks with 110 × 35 shell bands, 105 × 35 room plates, and separate clickable furniture.
+3. Add a day/night palette or overlay system and the proper roughly 30-second recap.
+4. Add a real damage/repair gameplay source for the already-renderable broken state.
+5. Leave aquarium, weather station, lair, lift, pets, visitors, ship and weather art until the later batch is authorised.

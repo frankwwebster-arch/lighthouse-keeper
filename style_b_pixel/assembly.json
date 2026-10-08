@@ -1,0 +1,104 @@
+{
+  "anchor": "bottom-centre",
+  "parts": {
+    "head": {
+      "file": "parts/keeper_head.png",
+      "pivot": [
+        80,
+        90
+      ]
+    },
+    "torso": {
+      "file": "parts/keeper_torso.png",
+      "pivot": [
+        80,
+        90
+      ]
+    },
+    "arm_upper_L": {
+      "file": "parts/keeper_arm_upper_L.png",
+      "pivot": [
+        80,
+        90
+      ]
+    },
+    "arm_lower_L": {
+      "file": "parts/keeper_arm_lower_L.png",
+      "pivot": [
+        80,
+        90
+      ]
+    },
+    "hand_L": {
+      "file": "parts/keeper_hand_L.png",
+      "pivot": [
+        80,
+        90
+      ]
+    },
+    "arm_upper_R": {
+      "file": "parts/keeper_arm_upper_R.png",
+      "pivot": [
+        80,
+        90
+      ]
+    },
+    "arm_lower_R": {
+      "file": "parts/keeper_arm_lower_R.png",
+      "pivot": [
+        80,
+        90
+      ]
+    },
+    "hand_R": {
+      "file": "parts/keeper_hand_R.png",
+      "pivot": [
+        80,
+        90
+      ]
+    },
+    "leg_upper_L": {
+      "file": "parts/keeper_leg_upper_L.png",
+      "pivot": [
+        80,
+        90
+      ]
+    },
+    "leg_lower_L": {
+      "file": "parts/keeper_leg_lower_L.png",
+      "pivot": [
+        80,
+        90
+      ]
+    },
+    "foot_L": {
+      "file": "parts/keeper_foot_L.png",
+      "pivot": [
+        80,
+        90
+      ]
+    },
+    "leg_upper_R": {
+      "file": "parts/keeper_leg_upper_R.png",
+      "pivot": [
+        80,
+        90
+      ]
+    },
+    "leg_lower_R": {
+      "file": "parts/keeper_leg_lower_R.png",
+      "pivot": [
+        80,
+        90
+      ]
+    },
+    "foot_R": {
+      "file": "parts/keeper_foot_R.png",
+      "pivot": [
+        80,
+        90
+      ]
+    }
+  },
+  "notes": "Consistent 4 px logical pixel grid, authored at 256 px and scaled by integer factors only. Do not freely rotate sprites; use 15-degree increments or redraw key angles to preserve the grid."
+}

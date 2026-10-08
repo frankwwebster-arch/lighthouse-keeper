@@ -4,6 +4,8 @@ import { darkness, stormNow, type State } from '../game/engine'
 import { FLOOR_Y, STAGE, TOWER_X, floorOf, focusFor, worldX } from '../game/world'
 import { Actors, type Pose } from './Actors'
 import { ObjectArt } from './art'
+import { FloorModule, PLAYABLE_FLOORS } from './floors'
+import { parseBrokenPreview, visualStateFor } from './objectState'
 
 const FX: Record<FxKey, string> = { steam: '💨', bubbles: '🫧', sparkles: '✨', dust: '🌫️', scribbles: '✏️', music: '🎵', zzz: '💤', tv: '📺', hearts: '💗', stench: '🤢', burp: '💨', splash: '💦', coins: '🪙', ring: '🔔', stars: '⭐' }
 
@@ -50,11 +52,17 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
   const shipX = 1260 - shipT * 640
   const tvOn = d?.id.startsWith('tv') && d.phase === 'doing'
   const cabin = doingNow && doingNow.priv
+  const broken = useMemo(
+    () => parseBrokenPreview(typeof window === 'undefined' ? null : new URLSearchParams(window.location.search).get('broken'), OBJECTS.map((o) => o.id)),
+    [],
+  )
+  const activeObject = doingNow?.object && doingNow.object !== 'here' ? doingNow.object : s.lampLit ? 'lamp' : s.ringing ? 'phone' : null
 
   const obj = (id: ObjectId, x?: number) => {
     const def = OBJECTS.find((o) => o.id === id)!
     const wx = x ?? worldX(id)
-    return <ObjectArt key={id} id={id} x={wx} y={FLOOR_Y[def.floor]} on={id === 'tv' ? !!tvOn : id === 'lamp' ? s.lampLit : undefined} extra={{ ringing: !!s.ringing, ready: s.garden.ready }} />
+    const state = visualStateFor(id, id === 'tv' && tvOn ? 'tv' : activeObject, broken)
+    return <ObjectArt key={id} id={id} x={wx} y={FLOOR_Y[def.floor]} state={state} extra={{ ringing: !!s.ringing, ready: s.garden.ready }} />
   }
 
   return (
@@ -97,17 +105,9 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
             <circle cx={-34} cy={-4} r={3} fill="#ffd35a" opacity={dark > 0.3 ? 1 : 0} />
           </g>
         )}
-        {/* the tower */}
+        {/* fixed-width modular lighthouse core */}
         <g>
-          <rect x={TOWER_X + 40} y={220} width={440} height={420} fill="#e9e1d1" stroke="#6b5d48" strokeWidth={6} />
-          {[{ f: 'ground', c: '#f2e6c9' }, { f: 'living', c: '#cfe3d3' }, { f: 'bedroom', c: '#e5d4ea' }].map(({ f, c }) => {
-            const fy = FLOOR_Y[f as 'ground']
-            return <rect key={f} x={TOWER_X + 50} y={fy - 140} width={420} height={140} fill={c} />
-          })}
-          {/* wallpaper stripes */}
-          {[140, 280, 420].map((t) => <rect key={t} x={TOWER_X + 50} y={t + 220 - 140 + 6} width={420} height={6} fill="#000" opacity={0.05} />)}
-          {/* floors */}
-          {(['ground', 'living', 'bedroom', 'lamp'] as const).map((f) => <rect key={f} x={TOWER_X + 40} y={FLOOR_Y[f] - 4} width={440} height={12} fill="#8a6d46" />)}
+          {PLAYABLE_FLOORS.map((floor) => <FloorModule key={floor.id} floor={floor} />)}
           {/* stairs */}
           {(['ground', 'living', 'bedroom'] as const).map((f) => (
             <g key={f} transform={`translate(${TOWER_X + 108} ${FLOOR_Y[f]})`}>
@@ -119,11 +119,6 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
           {[0, 1, 2, 3].map((i) => <line key={i} x1={TOWER_X + 165 + i * 95} y1={80} x2={TOWER_X + 165 + i * 95} y2={220} stroke="#5d6d73" strokeWidth={4} />)}
           <path d={`M${TOWER_X + 60} 80 L${TOWER_X + 260} 20 L${TOWER_X + 460} 80 Z`} fill="#b8433a" stroke="#6b2520" strokeWidth={5} />
           <circle cx={TOWER_X + 260} cy={14} r={9} fill="#6b2520" />
-          {/* red stripes outside */}
-          <rect x={TOWER_X + 40} y={340} width={8} height={60} fill="#c9433b" />
-          <rect x={TOWER_X + 472} y={340} width={8} height={60} fill="#c9433b" />
-          {/* windows */}
-          <rect x={TOWER_X + 310} y={400} width={38} height={46} rx={19} fill="#9fd3ea" opacity={0.0} />
         </g>
         {/* the beam */}
         {s.lampLit && (
@@ -139,9 +134,9 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
         {/* the shut loo door */}
         {cabin && (
           <g>
-            <rect x={worldX('toilet') - 36} y={FLOOR_Y.ground - 104} width={74} height={104} rx={4} fill="#8a5a2b" stroke="#4a2a12" strokeWidth={4} />
-            <rect x={worldX('toilet') - 22} y={FLOOR_Y.ground - 92} width={46} height={18} rx={3} fill="#c9433b" />
-            <text x={worldX('toilet') + 1} y={FLOOR_Y.ground - 79} textAnchor="middle" fontSize={11} fontWeight={800} fill="#fff">ENGAGED</text>
+            <rect x={worldX('toilet') - 36} y={FLOOR_Y.bedroom - 104} width={74} height={104} rx={4} fill="#8a5a2b" stroke="#4a2a12" strokeWidth={4} />
+            <rect x={worldX('toilet') - 22} y={FLOOR_Y.bedroom - 92} width={46} height={18} rx={3} fill="#c9433b" />
+            <text x={worldX('toilet') + 1} y={FLOOR_Y.bedroom - 79} textAnchor="middle" fontSize={11} fontWeight={800} fill="#fff">ENGAGED</text>
           </g>
         )}
 
@@ -152,7 +147,20 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
           const hh = o.id === 'shop' ? 130 : 110
           const fy = FLOOR_Y[o.floor]
           return (
-            <g key={o.id} className={`hit ${selected === o.id ? 'picked' : ''} ${(o.id === 'phone' && s.ringing) || (o.id === 'door' && s.visits.some((v) => v.state === 'waiting')) ? 'alert' : ''}`} onClick={() => onObject(o.id)}>
+            <g
+              key={o.id}
+              className={`hit ${selected === o.id ? 'picked' : ''} ${(o.id === 'phone' && s.ringing) || (o.id === 'door' && s.visits.some((v) => v.state === 'waiting')) ? 'alert' : ''}`}
+              role="button"
+              tabIndex={0}
+              aria-label={o.label}
+              onClick={() => onObject(o.id)}
+              onKeyDown={(event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault()
+                  onObject(o.id)
+                }
+              }}
+            >
               <rect x={wx - w / 2} y={fy - hh} width={w} height={hh} rx={10} />
               <title>{o.label}</title>
             </g>
@@ -178,7 +186,7 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
         )}
         {d && d.fx === 'stench' && d.phase === 'doing' && (
           <g pointerEvents="none">
-            {[0, 1, 2, 3].map((i) => <circle key={i} className="gas" cx={worldX('toilet') - 20 - i * 30} cy={FLOOR_Y.ground - 40 - (i % 2) * 24} r={22 + i * 5} fill="#9bd15a" style={{ animationDelay: `${i * 0.6}s` }} />)}
+            {[0, 1, 2, 3].map((i) => <circle key={i} className="gas" cx={worldX('toilet') - 20 - i * 30} cy={FLOOR_Y.bedroom - 40 - (i % 2) * 24} r={22 + i * 5} fill="#9bd15a" style={{ animationDelay: `${i * 0.6}s` }} />)}
           </g>
         )}
 

@@ -41,11 +41,12 @@ interface Props {
 
 const SKIN = '#f1c9a0'
 
-function Keeper({ anim, mood, walking, face }: { anim: string; mood: ReturnType<typeof moodWord>; walking: boolean; face: 1 | -1 }) {
+function Keeper({ anim, mood, walking, face, rear }: { anim: string; mood: ReturnType<typeof moodWord>; walking: boolean; face: 1 | -1; rear: boolean }) {
+  const clip = walking ? 'walk' : anim
   const mouth = mood === 'chipper' ? 'M-6 -76 Q0 -68 6 -76' : mood === 'content' ? 'M-5 -75 Q0 -71 5 -75' : mood === 'soso' ? 'M-5 -74 L5 -74' : 'M-6 -72 Q0 -78 6 -72'
   return (
-    <g className={`keeper a-${walking ? 'walk' : anim}`}>
-      <Sprite name={`keeper_${walking ? 'walk' : anim}`} w={90} h={130}>
+    <g className={`keeper a-${clip} ${rear ? 'keeper-rear' : ''}`}>
+      <Sprite name={[`keeper_clip_${clip}_${rear ? 'rear' : 'side'}`, `keeper_${clip}`]} w={90} h={130}>
         <g transform={`scale(${face} 1)`}>
           <g className="legs">
             <rect className="leg l1" x={-9} y={-30} width={8} height={30} fill="#2e3d5a" />
@@ -58,12 +59,10 @@ function Keeper({ anim, mood, walking, face }: { anim: string; mood: ReturnType<
             <rect className="arm a2" x={14} y={-62} width={8} height={26} rx={4} fill="#2c5f9e" />
             <g className="head">
               <circle cx={0} cy={-80} r={15} fill={SKIN} stroke="#c49266" strokeWidth={1.5} />
-              <path d="M-14 -74 Q0 -52 14 -74 Q10 -60 0 -58 Q-10 -60 -14 -74 Z" fill="#f2f2f2" />
+              {rear ? <path d="M-14 -82 Q0 -68 14 -82 L12 -64 Q0 -56 -12 -64 Z" fill="#f2f2f2" /> : <path d="M-14 -74 Q0 -52 14 -74 Q10 -60 0 -58 Q-10 -60 -14 -74 Z" fill="#f2f2f2" />}
               <path d="M-17 -88 Q0 -108 17 -88 L17 -92 Q0 -104 -17 -92 Z" fill="#1d2f4d" />
               <rect x={-18} y={-92} width={36} height={6} rx={3} fill="#1d2f4d" />
-              <circle cx={-5} cy={-82} r={1.8} fill="#222" />
-              <circle cx={5} cy={-82} r={1.8} fill="#222" />
-              <path d={mouth} fill="none" stroke="#7a3b2a" strokeWidth={1.8} strokeLinecap="round" />
+              {!rear && <><circle cx={-5} cy={-82} r={1.8} fill="#222" /><circle cx={5} cy={-82} r={1.8} fill="#222" /><path d={mouth} fill="none" stroke="#7a3b2a" strokeWidth={1.8} strokeLinecap="round" /></>}
             </g>
           </g>
         </g>
@@ -237,6 +236,7 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
   })()
   const hidden = !!(d && d.priv && d.phase === 'doing')
   const asleep = d?.anim === 'sleep' && d.phase === 'doing'
+  const rearWork = !!(d && d.phase === 'doing' && (d.object === 'cooker' || d.object === 'basin'))
   const wv = waitingVisit(s)
   const iv = insideVisit(s)
   const mood = moodWord(moodOf(s))
@@ -263,7 +263,7 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
       {!hidden && (
         <g transform={`translate(${pos.x} ${asleep ? pos.y - 26 : pos.y})`}>
           <g className={asleep ? 'lying' : undefined}>
-            <Keeper anim={anim} mood={mood} walking={pos.walking} face={pos.face} />
+            <Keeper anim={anim} mood={mood} walking={pos.walking} face={pos.face} rear={rearWork} />
           </g>
         </g>
       )}

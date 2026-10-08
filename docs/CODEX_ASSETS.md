@@ -1,27 +1,37 @@
-# Sprites to ask Codex for (live list)
+# Production sprites — current route
 
-The game draws vector placeholders. A PNG dropped into `public/sprites/` and listed in `public/sprites/manifest.json` replaces the placeholder with no code change:
+The game still draws vector fallbacks; the existing files under `style_b_pixel/` are concept/prototype references and must not be sliced into production sprites.
+
+The authoritative art inputs are:
+
+- `docs/CODEX_BRIEF.md` — exact Pixel style, filenames and base dimensions.
+- `docs/PRODUCTION_ASSET_KIT.md` — anchors, pivots, z-order, frame counts, fps, interaction points and first-batch delivery order.
+- `art/asset_inventory.json` — factual inventory of the existing prototype PNGs only.
+
+## Runtime manifest
+
+Place production PNGs in `public/sprites/` and map their keys in `public/sprites/manifest.json`.
+
+A still remains backward-compatible:
 
 ```json
-{ "keeper_walk": "keeper_walk.png", "obj_fridge": "fridge.png" }
+{ "obj_door_standard": "obj_door_standard_f1.png" }
 ```
 
-Transparent PNGs, bottom-centre = where the feet/floor sit. Pick ONE style first (smooth cartoon or pixel art, see ART_REFERENCES.md) and keep it identical across everything. Still images are enough: the game animates them (bobbing, jumping, swaying). Frame-sheets are a later upgrade.
+An animated horizontal strip includes playback metadata:
 
-## Keeper (about 90 x 130; key `keeper_<pose>`)
-`none` (standing), `walk`, `eat`, `busy` (cooking/tidying), `sleep` (lying), `read`, `piano`, `tv` (sitting), `telescope`, `fish`, `pet`, `wave`, `dance`, `greet`, `phone`, `dig`, `wash`, `think`, `shrug`, `jump`. Faces: happy / neutral / grumpy variants welcome.
+```json
+{
+  "obj_tv_on": {
+    "file": "obj_tv_on_f4.png",
+    "frames": 4,
+    "fps": 8
+  }
+}
+```
 
-## Pet (about 64 x 52; `pet_cat`, `pet_gull`)
-Plus later: sleeping, eating, hungry, scared, playing.
+`ObjectArt` first requests `obj_<id>_<state>` and falls back to the older `obj_<id>` key. All frames in a strip are equal width, arranged left to right. The renderer clips one frame and advances discretely; it does not blur, rotate or rescale between frames.
 
-## Visitors (about 80 x 120; `visitor_<id>`)
-`fisherman` (Old Mac), `postman` (Pat), `tourist`, `sam` (Skipper Sam), `nell`.
+## Current delivery boundary
 
-## Objects (key `obj_<id>`)
-door 50x96, fridge 48x96, cooker 70x60, broom 30x90, petbowl 40x20, toilet 50x70, tv 110x90, bookshelf 80x110, piano 100x70, bed 120x54, phone 60x70, basin 60x110, desk 100x80, telescope 90x90, lamp 120x140 (off and on), garden 120x70 (empty and 1-3 ripe), shop 130x120, jetty 220x60.
-
-## Scenery (not wired yet, ask for after style is chosen)
-Lighthouse tower cutaway with four rooms, sky/sea background, ship, clouds, rain, loo door, food icons for each item in the shop.
-
-## Sound (optional, later)
-Loo flush, fart/burp, thunder, ship horn, phone ring, doorbell.
+No production PNG has been delivered yet. Start only the first-three-floor kit. Do not begin later aquarium, weather-station, hidden-lair, lift, pet, visitor, ship or weather batches.

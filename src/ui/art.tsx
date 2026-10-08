@@ -2,13 +2,39 @@ import type { ReactNode } from 'react'
 import type { ObjectId } from '../game/config'
 import { Sprite } from './Sprite'
 
+export type ObjectVisualState = 'standard' | 'on' | 'broken'
+
+function StateEffects({ state }: { state: ObjectVisualState }) {
+  if (state === 'standard') return null
+  if (state === 'on') {
+    return <path className="object-on-pulse" d="M-26-6h52" fill="none" stroke="#ffd35a" strokeWidth={4} strokeLinecap="square" />
+  }
+  return (
+    <g className="broken-effects" pointerEvents="none" aria-hidden="true">
+      <g className="broken-smoke">
+        <rect x={-12} y={-82} width={12} height={12} fill="#7b8792" />
+        <rect x={2} y={-102} width={16} height={16} fill="#a3abb2" />
+      </g>
+      <g className="broken-sparks" fill="#ffd35a">
+        <rect x={20} y={-68} width={8} height={4} />
+        <rect x={28} y={-76} width={4} height={8} />
+        <rect x={-30} y={-58} width={8} height={4} />
+      </g>
+    </g>
+  )
+}
+
 /** Vector drawings of every object. (x = centre, y = the floor.) */
-export function ObjectArt({ id, x, y, on, extra }: { id: ObjectId; x: number; y: number; on?: boolean; extra?: { ringing?: boolean; ready?: number; waiting?: boolean } }): ReactNode {
+export function ObjectArt({ id, x, y, state = 'standard', extra }: { id: ObjectId; x: number; y: number; state?: ObjectVisualState; extra?: { ringing?: boolean; ready?: number; waiting?: boolean } }): ReactNode {
+  const on = state === 'on'
   const g = (w: number, h: number, kids: ReactNode) => (
-    <g transform={`translate(${x} ${y})`}>
-      <Sprite name={`obj_${id}`} w={w} h={h}>
-        {kids}
-      </Sprite>
+    <g transform={`translate(${x} ${y})`} className={`object object-${id} state-${state}`} data-state={state}>
+      <g className="object-body">
+        <Sprite name={[`obj_${id}_${state}`, `obj_${id}`]} w={w} h={h}>
+          {kids}
+        </Sprite>
+      </g>
+      <StateEffects state={state} />
     </g>
   )
   switch (id) {

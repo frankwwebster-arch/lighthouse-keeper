@@ -1,17 +1,17 @@
 Paste this into Claude Code, run from your projects folder.
 
 ---
-Clone https://github.com/frankwwebster-arch/lighthouse-keeper into ./lighthouse-keeper (if not already there), run `npm install`, `npm test`, `npm run build`, and `npm run dev`. Read README.md, docs/STATUS.md, docs/DECISIONS.md, docs/CODEX_HANDOFF.md and docs/V2_UPGRADES.md first.
+Clone https://github.com/frankwwebster-arch/lighthouse-keeper into ./lighthouse-keeper (if not already there), run `npm install`, `npm test`, `npm run build`, and `npm run dev`. Read README.md, HANDOFF_TO_CLAUDE.md, docs/CODEX_BRIEF.md, docs/PRODUCTION_ASSET_KIT.md, docs/STATUS.md and docs/DECISIONS.md first.
 
-Context: a Sims-style lighthouse keeper game for my sons Ralph (7) and Eddie (11). Next.js 14, TypeScript, Neon, Vercel. Live at https://lighthouse-keeper-mu.vercel.app. Pushing to `main` deploys, so ask me before pushing.
+Context: a Sims-style lighthouse keeper game for my sons Ralph (7) and Eddie (11). Next.js 14, TypeScript, Neon, Vercel. Live at https://lighthouse-keeper-mu.vercel.app. Finished verified work must be pushed to `main`; preserve the existing Vercel deployment workflow.
 
 Working style: keep replies short and plain. For anything technical, go one step at a time. Tell me which model to pick if not default. Anything I need to paste elsewhere goes in a single copyable block.
 
-Do next, in order, checking with me after each:
-1. Copy `.env.example` to `.env.local` and ask me for `DATABASE_URL` (never commit it). Confirm saves work locally with Ralph and Eddie.
-2. Build the pixel art pipeline (4px grid, striped tower, layered keeper puppet, object states standard/on/broken) using the Codex assets in `public/sprites` once I add them; vector fallbacks stay.
-3. Build missions that unlock floors (aquarium, weather station, hidden lair, lift), furnished automatically.
-4. Build tiered upgrades for existing objects, with admin price dials and gifting.
-5. Add the telescope spotting mini game, then fishing and cooking.
-Keep the game kid-friendly but not babyish (he plays Roblox and Minecraft). No live AI in the game.
+Do next, in order:
+1. Produce and integrate only the first-batch Pixel PNGs in `docs/PRODUCTION_ASSET_KIT.md`; the modular floors, three-state renderer and strip pipeline already exist.
+2. Confirm production saves with Ralph and Eddie after the Neon credential rotation; never commit `DATABASE_URL`.
+3. Add the real damage/repair gameplay source for the already-renderable broken state.
+4. Add the day/night palette and roughly 30-second recap.
+5. Keep later floors, lift, pets, visitors, ship and weather art deferred until explicitly authorised.
+Keep the game kid-friendly but not babyish (he plays Roblox and Minecraft). No live AI in the game. Do not slice the concept plates into sprites.
 ---
