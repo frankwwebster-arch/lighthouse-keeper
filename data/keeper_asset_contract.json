@@ -13,7 +13,8 @@
     "standard": { "width": 32, "height": 40, "density": 4, "anchor": [16, 40] },
     "extendedAirborne": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
     "extendedVerticalDive": { "width": 48, "height": 56, "density": 4, "anchor": [24, 56] },
-    "extendedParachute": { "width": 48, "height": 84, "density": 4, "anchor": [24, 84] }
+    "extendedParachute": { "width": 48, "height": 84, "density": 4, "anchor": [24, 84] },
+    "extendedBoatAction": { "width": 40, "height": 40, "density": 4, "anchor": [20, 40] }
   },
   "measuredReference": {
     "source": "public/sprites/keeper_reference.png",
@@ -42,7 +43,15 @@
     "piano": { "clip": "keeper_piano", "seatPoint": [16, 29], "handUsePoint": [24, 20] },
     "ladderUpperHand": { "clip": "keeper_ladder_climb", "handUsePoint": [16, 6], "offsetFromFeet": [0, -34] },
     "animalBowlRight": { "clip": "keeper_feed_animals", "handUsePoint": [27, 34], "offsetFromFeet": [11, -6], "mirrorFor": "animalBowlLeft" },
-    "digGroundRight": { "clip": "keeper_dig", "handUsePoint": [27, 38], "offsetFromFeet": [11, -2], "mirrorFor": "digGroundLeft" }
+    "digGroundRight": { "clip": "keeper_dig", "handUsePoint": [27, 38], "offsetFromFeet": [11, -2], "mirrorFor": "digGroundLeft" },
+    "sowGroundRight": { "clip": "keeper_sow_seeds", "handUsePoint": [27, 34], "offsetFromFeet": [11, -6], "mirrorFor": "sowGroundLeft" },
+    "harvestLowRight": { "clip": "keeper_pick_vegetable", "handUsePoint": [26, 36], "offsetFromFeet": [10, -4], "mirrorFor": "harvestLowLeft" },
+    "harvestHighRight": { "clip": "keeper_pick_fruit", "handUsePoint": [25, 14], "offsetFromFeet": [9, -26], "mirrorFor": "harvestHighLeft" },
+    "rowBoatRight": { "clip": "keeper_row_boat", "seatPoint": [20, 29], "handUsePoint": [30, 20], "mirrorFor": "rowBoatLeft" },
+    "speedboatHelmRight": { "clip": "keeper_drive_speedboat", "seatPoint": [16, 29], "handUsePoint": [25, 20], "mirrorFor": "speedboatHelmLeft" },
+    "outboardRight": { "clip": "keeper_operate_outboard", "handUsePoint": [4, 21], "offsetFromFeet": [-12, -19], "mirrorFor": "outboardLeft" },
+    "watchTvRight": { "clip": "keeper_watch_tv", "seatPoint": [16, 29], "lookTargetPoint": [40, 14], "screenCentreOffsetFromSeat": [24, -15], "mirrorFor": "watchTvLeft" },
+    "watchTvLeft": { "clip": "keeper_watch_tv", "seatPoint": [16, 29], "lookTargetPoint": [-8, 14], "screenCentreOffsetFromSeat": [-24, -15], "mirroredFrom": "watchTvRight" }
   },
   "objectRules": {
     "lightSwitchCentreHeightAboveFloor": 23,
@@ -51,6 +60,11 @@
     "rearWorkSurfaceHeightAboveFloor": 19,
     "animalBowlTargetHeightAboveFloor": 6,
     "digContactHeightAboveFloor": 2,
+    "seedContactHeightAboveFloor": 6,
+    "lowHarvestHeightAboveFloor": 4,
+    "highHarvestHeightAboveFloor": 26,
+    "tvScreenHorizontalClearanceFromSeat": 24,
+    "tvScreenCentreHeightAboveSeat": 15,
     "rule": "Place the object interaction point at the selected profile offset from the keeper feet anchor; never rescale the keeper to fit an object."
   }
 }

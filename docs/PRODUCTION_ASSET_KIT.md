@@ -39,7 +39,6 @@ Initial clips:
 | `work_back` | back | 8 · 8 | yes | hands `(16,21)`; generic domestic work |
 | `reach_use` | front | 5 · 10 | no | hand to object use point |
 | `cook_back` | back | 8 · 8 | yes | alias of `work_back`; hands `(16,21)` |
-| `watch_tv` | back | 4 · 5 | yes | seated anchor `(16,37)` |
 | `read` | front | 4 · 5 | yes | book pivot `(21,22)` |
 | `sit_side` | side | 6 · 8 | no | seat `(16,29)`; mirror left; reverse to stand |
 | `sit_front` | front | 6 · 8 | no | seat `(16,29)`; reverse to stand |
@@ -61,6 +60,14 @@ Initial clips:
 | `platform_dive` | side | 10 · 10 | no | 48 × 56; ends vertical head-first; splash separate |
 | `dig` | side | 8 · 8 | yes | spade contact `(27,38)`; mirror left |
 | `feed_animals` | side | 8 · 8 | no | scoop/bowl target `(27,34)`; mirror left; includes rise |
+| `sow_seeds` | side | 8 · 8 | yes | scatter target `(27,34)`; pouch included; mirror left |
+| `pick_vegetable` | side | 8 · 8 | no | low harvest `(26,36)`; mirror left |
+| `pick_fruit` | side | 8 · 8 | no | high harvest `(25,14)`; mirror left |
+| `carry_shopping` | side | 8 · 10 | yes | two-bag walk; mirror left |
+| `row_boat` | side | 8 · 8 | yes | 40 × 40; seat `(20,29)`; oar hands `(30,20)` |
+| `drive_speedboat` | side | 8 · 8 | yes | seat `(16,29)`; helm hands `(25,20)` |
+| `operate_outboard` | rear ¾ | 8 · 8 | yes | tiller hand `(4,21)`; mirror left |
+| `watch_tv` | rear ¾ | 8 · 6 | yes | seat `(16,29)`; screen target `(40,14)`; mirror left |
 | `loo_hide` | hidden | 0 | n/a | keeper is not drawn |
 
 Required part files are `keeper_front_head_{happy,neutral,grumpy,asleep,open}.png`, `keeper_front_{torso,arm_l,arm_r,leg_l,leg_r}.png`, the equivalent `keeper_back_*` files with one back head, and `keeper_reference.png`; every part file is 32 × 40. Airborne strips may expand to 48 × 56 for the dive or 48 × 84 for parachute deployment without rescaling the keeper. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. Pivots are for assembly tooling; production raster limbs use drawn key angles or integer translations in final clips rather than arbitrary CSS rotation. `data/keeper_asset_contract.json` is authoritative for scale and use points.

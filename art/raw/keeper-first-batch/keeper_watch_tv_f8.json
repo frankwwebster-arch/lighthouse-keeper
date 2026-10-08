@@ -1,0 +1,25 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 6,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "seatPoint": [
+    16,
+    29
+  ],
+  "lookTargetPoint": [
+    40,
+    14
+  ],
+  "mirrorSafe": true,
+  "facing": "rear-right",
+  "interaction": "watch-tv",
+  "mirrorsFor": "rear-left"
+}

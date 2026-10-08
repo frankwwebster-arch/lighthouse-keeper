@@ -16,7 +16,7 @@ Pixel studio lets Frank adjust pixel block size, paint or erase individual frame
 
 BB Sea news literally reads `B B SEA`, adapted from the supplied BBC NEWS reference, followed by NEWS lettering and a tiny newsreader head. Sport shows football; Nature shows animals. Four ON frames are one animated state, not four asset variants. Broken TV uses one damaged image plus shared smoke/sparks and existing body vibration. Channel selection reuses existing watch/nature actions; no new gameplay effect is claimed. The production guide now requires ON only for operating devices; passive furniture remains standard and is designed around keeper poses.
 
-The Completed assets and Pixel studio tabs also contain the keeper continuation: aligned front/back master parts plus idle, walk, turn-to-rear, reusable rear work, side/front sitting, seated eating, discreet urination, door use, ladder/stair travel, piano, parachute jump, platform dive, digging and animal-feeding clips. Search `keeper_` to isolate them. The large turnaround is a style reference; normal runtime strips are 32 × 40 at density 4, while dive/parachute poses expand to 48 × 56 or 48 × 84 without changing the keeper's scale.
+The Completed assets and Pixel studio tabs also contain the keeper continuation: 48 aligned exports spanning domestic movement, doors/travel, parachute/dive, gardening, animal feeding, shopping, rowing, speedboat/outboard operation and offset TV watching. Search `keeper_` to isolate them. The large turnaround is a style reference; normal runtime strips are 32 × 40 at density 4, rowing uses 40 × 40, and dive/parachute poses expand vertically without changing the keeper's scale.
 
 The production walk is an eight-frame right-facing side cycle at 10 fps. The
 runtime mirrors it for left-facing movement. `keeper-walk-preview.gif` is an
@@ -37,8 +37,11 @@ show the two directions (the left review animation mirrors the shared side
 strip); `keeper-switch-press-back-preview.gif` covers a rear approach and mirrors to
 swap the reaching hand. The rear fingertip now shares the side press's Y=17
 height. `keeper-parachute-jump-preview.gif`, `keeper-platform-dive-preview.gif`,
-`keeper-dig-preview.gif` and `keeper-feed-animals-preview.gif` cover the newest
-actions. See `../KEEPER_ANIMATIONS.md` for the plain-English index and
+`keeper-dig-preview.gif`, `keeper-feed-animals-preview.gif`, the gardening,
+shopping and boat previews cover the newer actions. TV has separate
+`keeper-watch-tv-right-preview.gif` and `keeper-watch-tv-left-preview.gif`
+reviews from one mirrored rear-three-quarter strip, with the seat offset far
+enough to keep the screen visible. See `../KEEPER_ANIMATIONS.md` for the index and
 `../KEEPER_ASSET_SCALE.md` for authoritative object-alignment measurements.
 
 ## Art corrections recorded from this review

@@ -54,7 +54,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
 
 ## 2. Lighthouse keeper: rig and animation bible
 
-1. **Delivered fact:** a usable production keeper set now exists under `art/raw/keeper-first-batch/` and `public/sprites/`, with aligned parts, front/rear/side action strips, manifest metadata and review GIFs. `data/keeper_asset_contract.json` is the scale and interaction authority.
+1. **Delivered fact:** a 48-export production keeper set now exists under `art/raw/keeper-first-batch/` and `public/sprites/`, with aligned parts, front/rear/side action strips, manifest metadata and review GIFs. `data/keeper_asset_contract.json` is the scale and interaction authority.
 2. **Locked production contract:** every keeper part uses the same 32 x 40 canvas; the measured standing reference is 24.75 x 38.25 logical pixels and the floor anchor is `(16, 40)`. Airborne actions may use 48 x 56 for the vertical dive or 48 x 84 for parachute deployment, but never rescale the character.
 3. Required production parts:
 
@@ -85,7 +85,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
    | `wash_back` | rear | 6 / 8 | yes | shower/sink use |
    | `read` | side | 4 / 5 | yes | page flick optional |
    | `piano` | side/front | 8 / 10 | yes | alternating hands |
-   | `watch_tv` | rear/side | 4 / 5 | yes | seated head bob |
+   | `watch_tv` | rear ¾ | 8 / 6 | yes | delivered offset sightline; mirror left/right |
    | `sleep` | side | 4 / 4 | yes | blanket rise; ZZZ effect separate |
    | `fish` | side | 8 / 8 | yes | rod bend / occasional catch event |
    | `dig` / `tidy` | side | 6 / 8 | yes | shared tool rhythm |
@@ -104,7 +104,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
    | `bodily_gag` | side | 3 / 12 | no | burp/fart/sneeze; effect separate |
    | `change_to_dive` | hidden | 0 visible | n/a | never show the keeper between the doors |
 
-9. **Delivered fact:** 40 production exports now cover the master parts and initial movement/action set, including piano, loo, doors, switches, ladder/stairs, parachute jump, platform dive, digging and feeding animals. See `docs/KEEPER_ANIMATIONS.md` for exact delivered and pending clips.
+9. **Delivered fact:** 48 production exports now cover the master parts and initial movement/action set, including gardening, shopping bags, rowing, speedboat/outboard operation and offset TV watching. See `docs/KEEPER_ANIMATIONS.md` for exact delivered and pending clips.
 
 ## 3. Clickable objects, states, tiers and anchors
 
@@ -248,4 +248,4 @@ Side/rear extensions, the lift service core and the underground lair do not cons
    | Exact animation implementation | Undecided | Begin with frame strips; move only proven reusable limbs to a part rig |
    | SFX files/engine | Undecided | Define event hooks now; commission/source audio after interactions are playable |
 
-6. This handoff deliberately distinguishes the implemented runtime from the remaining production asset set. Delivery-order item 1 is complete; delivery-order item 2 and the 40-export keeper review set exist for review at 4× logical scale. Continue remaining keeper work from the prioritized backlog in `docs/KEEPER_ANIMATIONS.md`, and build every prop from `data/keeper_asset_contract.json` rather than estimating scale from concept art.
+6. This handoff deliberately distinguishes the implemented runtime from the remaining production asset set. Delivery-order item 1 is complete; delivery-order item 2 and the 48-export keeper review set exist for review at 4× logical scale. Continue remaining keeper work from the prioritized backlog in `docs/KEEPER_ANIMATIONS.md`, and build every prop from `data/keeper_asset_contract.json` rather than estimating scale from concept art.

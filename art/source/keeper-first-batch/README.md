@@ -48,8 +48,8 @@ different leading-foot placement; both stair cycles mirror for left travel.
 Switch use follows the same economy: one side pose mirrors left/right, while the
 rear pose mirrors to swap hands. Both reverse from pressed position to idle.
 Their fingertips now share the authoritative Y=17 datum. Parachute jump,
-platform dive, garden digging and animal feeding extend the same production
-set. Airborne frames expand their transparent canvas to 48 × 56 for the dive
+platform dive, gardening, animal feeding, shopping, boating and offset TV
+watching extend the same production set. Airborne frames expand to 48 × 56 for the dive
 or 48 × 84 for parachute deployment, but retain the keeper's scale.
 
 The `docs/floor-asset-catalogue/keeper-*-preview.gif` files are enlarged
@@ -106,6 +106,22 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
   drive, boot press, lever, lift and return, with soil kept separate.
 - `keeper-feed-animals-generated-source.png` — eight right-facing poses that
   lower a scoop to one near-floor point; bowl and animal remain separate.
+- `keeper-sow-seeds-generated-source.png` — eight right-facing pouch-and-scatter
+  poses with the soil bed kept separate.
+- `keeper-pick-vegetable-generated-source.png` — eight low harvest poses ending
+  with one generic carrot; garden bed and plant remain separate.
+- `keeper-pick-fruit-generated-source.png` — eight high harvest poses ending
+  with one generic red fruit; branch/tree and basket remain separate.
+- `keeper-carry-shopping-generated-source.png` — eight right-facing walk-cycle
+  poses carrying two consistent grocery bags; mirror for left travel.
+- `keeper-row-boat-generated-source.png` — eight seated two-oar rowing poses;
+  hull, seat, rowlocks and water remain separate.
+- `keeper-drive-speedboat-generated-source.png` — eight seated helm poses with
+  hands held at one invisible wheel point; boat and dashboard remain separate.
+- `keeper-operate-outboard-generated-source.png` — eight rear-three-quarter
+  tiller-control poses; motor, boat, water and wake remain separate.
+- `keeper-watch-tv-generated-source.png` — eight seated rear-three-quarter
+  right-looking poses; mirror left, with chair and screen kept separate.
 
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,

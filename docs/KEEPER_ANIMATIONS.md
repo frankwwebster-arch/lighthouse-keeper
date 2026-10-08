@@ -47,11 +47,26 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Dive from platform | `keeper_platform_dive` | 10 frames; right/mirror left; ends vertical head-first |
 | Dig garden | `keeper_dig` | right; mirror left; soil remains separate |
 | Feed animals | `keeper_feed_animals` | right; mirror left; bowl and animal remain separate |
+| Sow seeds | `keeper_sow_seeds` | right; mirror left; pouch included, bed separate |
+| Pick vegetables | `keeper_pick_vegetable` | low harvest point; right; mirror left |
+| Pick fruit | `keeper_pick_fruit` | high harvest point; right; mirror left |
+| Carry shopping | `keeper_carry_shopping` | two-bag walk; right; mirror left |
+| Row boat | `keeper_row_boat` | seated; two oars included; hull/water separate |
+| Drive speedboat | `keeper_drive_speedboat` | seated at invisible helm; mirror when layout permits |
+| Operate outboard | `keeper_operate_outboard` | rear three-quarter; fixed tiller point; mirror left |
+| Watch TV | `keeper_watch_tv` | rear three-quarter right; mirror left; screen stays visible |
 
 For review, the shared side strip has separate, plainly named
 `keeper-switch-press-right-preview.gif` and
 `keeper-switch-press-left-preview.gif` files. They demonstrate both directions;
 the runtime stores only one side strip and mirrors it.
+
+TV watching follows the same rule. `keeper-watch-tv-right-preview.gif` and
+`keeper-watch-tv-left-preview.gif` show the two seating arrangements, but the
+runtime stores one rear-three-quarter strip. The keeper's seat is placed 24
+logical pixels to one side of the TV screen centre, with the screen centre 15
+pixels above the seat. This leaves the screen visible rather than putting his
+back directly in front of it.
 
 Cooking, washing and brushing currently use named aliases of the general rear
 work loop so gameplay code can remain descriptive without duplicating art.
@@ -96,11 +111,11 @@ The next animation work should follow gameplay dependency rather than novelty.
 
 ### Priority 0 — everyday playable lighthouse life
 
-- Seated reading and watching television, including stand/sit transitions.
+- Seated reading and TV sit/stand transitions; the watching loop is delivered.
 - Lie down, sleep loop and get out of bed.
 - Telescope look, telephone use and fishing cast/reel/catch.
 - Sweep/tidy, carry/pick up/put down, repair and polish with visible tools.
-- Garden watering, planting and harvesting to complement digging.
+- Garden watering and planting; sowing and low/high harvesting are delivered.
 - Pet/stroke/play and a standing hand-feed variant for larger animals.
 - Greeting, receiving/giving an item, thinking and idle variants.
 
@@ -111,7 +126,7 @@ The next animation work should follow gameplay dependency rather than novelty.
 - Dive splash, underwater entry, swim idle, swimming lengths, floating, climb
   out and rescue. The delivered platform dive now rotates fully head-first and
   ends just before water contact.
-- Rowing and boat embark/disembark.
+- Boat embark/disembark, speedboat acceleration/braking and outboard starting.
 - Spacesuit floating for the later expansion.
 
 ### Priority 2 — personality and comedy

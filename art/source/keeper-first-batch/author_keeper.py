@@ -293,12 +293,13 @@ def part(which, rear=False, mood="neutral"):
     return im
 
 
-def contract(frames, fps, pivot=None, *, w=32, h=40, loop=True, seat_point=None, hand_use_point=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
+def contract(frames, fps, pivot=None, *, w=32, h=40, loop=True, seat_point=None, hand_use_point=None, look_target_point=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
     value = {"w": w, "h": h, "frames": frames, "fps": fps, "density": D, "anchor": [w // 2, h], "z": 50}
     if pivot is not None: value["pivot"] = pivot
     value["loop"] = loop
     if seat_point is not None: value["seatPoint"] = seat_point
     if hand_use_point is not None: value["handUsePoint"] = hand_use_point
+    if look_target_point is not None: value["lookTargetPoint"] = look_target_point
     if reverse_for is not None: value["reverseFor"] = reverse_for
     if mirror_safe: value["mirrorSafe"] = True
     if facing is not None: value["facing"] = facing
@@ -359,6 +360,14 @@ parachute_jump_frames = generated_frames("keeper-parachute-jump-generated-source
 platform_dive_frames = generated_frames("keeper-platform-dive-generated-source.png", 10, logical_width=48, logical_height=56, scale_reference_index=0)
 dig_frames = generated_frames("keeper-dig-generated-source.png", 8)
 feed_animals_frames = generated_frames("keeper-feed-animals-generated-source.png", 8)
+sow_seeds_frames = generated_frames("keeper-sow-seeds-generated-source.png", 8)
+pick_vegetable_frames = generated_frames("keeper-pick-vegetable-generated-source.png", 8)
+pick_fruit_frames = generated_frames("keeper-pick-fruit-generated-source.png", 8)
+carry_shopping_frames = generated_frames("keeper-carry-shopping-generated-source.png", 8)
+row_boat_frames = generated_frames("keeper-row-boat-generated-source.png", 8, logical_width=40)
+drive_speedboat_frames = generated_frames("keeper-drive-speedboat-generated-source.png", 8)
+operate_outboard_frames = generated_frames("keeper-operate-outboard-generated-source.png", 8)
+watch_tv_frames = generated_frames("keeper-watch-tv-generated-source.png", 8)
 save("keeper_walk", walk_frames, 10, mirror_safe=True)
 save("keeper_turn_back", turn_frames, 8, loop=False, reverse_for="turn_front")
 save("keeper_work_back", work_frames, 8, hand_use_point=[16, 21])
@@ -381,6 +390,14 @@ save("keeper_parachute_jump", parachute_jump_frames, 10, loop=False, mirror_safe
 save("keeper_platform_dive", platform_dive_frames, 10, loop=False, mirror_safe=True, facing="right", interaction="platform-dive", mirrors_for="left")
 save("keeper_dig", dig_frames, 8, hand_use_point=[27, 38], mirror_safe=True, facing="right", interaction="dig-ground", mirrors_for="left")
 save("keeper_feed_animals", feed_animals_frames, 8, loop=False, hand_use_point=[27, 34], mirror_safe=True, facing="right", interaction="feed-bowl", mirrors_for="left")
+save("keeper_sow_seeds", sow_seeds_frames, 8, hand_use_point=[27, 34], mirror_safe=True, facing="right", interaction="sow-ground", mirrors_for="left")
+save("keeper_pick_vegetable", pick_vegetable_frames, 8, loop=False, hand_use_point=[26, 36], mirror_safe=True, facing="right", interaction="harvest-low", mirrors_for="left")
+save("keeper_pick_fruit", pick_fruit_frames, 8, loop=False, hand_use_point=[25, 14], mirror_safe=True, facing="right", interaction="harvest-high", mirrors_for="left")
+save("keeper_carry_shopping", carry_shopping_frames, 10, mirror_safe=True, facing="right", interaction="carry-shopping", mirrors_for="left")
+save("keeper_row_boat", row_boat_frames, 8, seat_point=[20, 29], hand_use_point=[30, 20], mirror_safe=True, facing="right", interaction="row-boat", mirrors_for="left")
+save("keeper_drive_speedboat", drive_speedboat_frames, 8, seat_point=[16, 29], hand_use_point=[25, 20], mirror_safe=True, facing="right", interaction="drive-speedboat", mirrors_for="left")
+save("keeper_operate_outboard", operate_outboard_frames, 8, hand_use_point=[4, 21], mirror_safe=True, facing="rear-right", interaction="operate-outboard", mirrors_for="rear-left")
+save("keeper_watch_tv", watch_tv_frames, 6, seat_point=[16, 29], look_target_point=[40, 14], mirror_safe=True, facing="rear-right", interaction="watch-tv", mirrors_for="rear-left")
 
 # A transparent source contact sheet makes alignment mistakes easy to spot.
 contact = Image.new("RGBA", (W * 4, H * 2), (244, 236, 214, 255))
@@ -408,4 +425,13 @@ save_preview("keeper-parachute-jump", parachute_jump_frames, 100)
 save_preview("keeper-platform-dive", platform_dive_frames, 100)
 save_preview("keeper-dig", dig_frames, 120)
 save_preview("keeper-feed-animals", feed_animals_frames, 120)
+save_preview("keeper-sow-seeds", sow_seeds_frames, 120)
+save_preview("keeper-pick-vegetable", pick_vegetable_frames, 120)
+save_preview("keeper-pick-fruit", pick_fruit_frames, 120)
+save_preview("keeper-carry-shopping", carry_shopping_frames, 100)
+save_preview("keeper-row-boat", row_boat_frames, 120)
+save_preview("keeper-drive-speedboat", drive_speedboat_frames, 120)
+save_preview("keeper-operate-outboard", operate_outboard_frames, 120)
+save_preview("keeper-watch-tv-right", watch_tv_frames, 160)
+save_preview("keeper-watch-tv-left", [ImageOps.mirror(frame) for frame in watch_tv_frames], 160)
 print(f"Keeper batch authored in {OUT}")

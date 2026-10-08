@@ -145,6 +145,24 @@
   "loop": true,
   "z": 50
  },
+ "keeper_carry_shopping": {
+  "file": "keeper_carry_shopping.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "carry-shopping",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_cook_back": {
   "file": "keeper_cook_back.png",
   "w": 32,
@@ -223,6 +241,32 @@
   "loop": false,
   "reverseFor": "door_close_side",
   "mirrorSafe": true,
+  "z": 50
+ },
+ "keeper_drive_speedboat": {
+  "file": "keeper_drive_speedboat.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "seatPoint": [
+   16,
+   29
+  ],
+  "handUsePoint": [
+   25,
+   20
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "drive-speedboat",
+  "mirrorsFor": "left",
   "z": 50
  },
  "keeper_eat_seated": {
@@ -473,6 +517,28 @@
   "reverseFor": "ladder_descend",
   "z": 50
  },
+ "keeper_operate_outboard": {
+  "file": "keeper_operate_outboard.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   4,
+   21
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "rear-right",
+  "interaction": "operate-outboard",
+  "mirrorsFor": "rear-left",
+  "z": 50
+ },
  "keeper_parachute_jump": {
   "file": "keeper_parachute_jump.png",
   "w": 48,
@@ -513,6 +579,50 @@
   "loop": true,
   "z": 50
  },
+ "keeper_pick_fruit": {
+  "file": "keeper_pick_fruit.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   25,
+   14
+  ],
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "harvest-high",
+  "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_pick_vegetable": {
+  "file": "keeper_pick_vegetable.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   26,
+   36
+  ],
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "harvest-low",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_platform_dive": {
   "file": "keeper_platform_dive.png",
   "w": 48,
@@ -542,6 +652,32 @@
    40
   ],
   "loop": true,
+  "z": 50
+ },
+ "keeper_row_boat": {
+  "file": "keeper_row_boat.png",
+  "w": 40,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   20,
+   40
+  ],
+  "seatPoint": [
+   20,
+   29
+  ],
+  "handUsePoint": [
+   30,
+   20
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "row-boat",
+  "mirrorsFor": "left",
   "z": 50
  },
  "keeper_sit_front": {
@@ -581,6 +717,28 @@
   "loop": false,
   "reverseFor": "stand_side",
   "mirrorSafe": true,
+  "z": 50
+ },
+ "keeper_sow_seeds": {
+  "file": "keeper_sow_seeds.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   27,
+   34
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "sow-ground",
+  "mirrorsFor": "left",
   "z": 50
  },
  "keeper_stairs_down": {
@@ -723,6 +881,32 @@
    21
   ],
   "loop": true,
+  "z": 50
+ },
+ "keeper_watch_tv": {
+  "file": "keeper_watch_tv.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 6,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "seatPoint": [
+   16,
+   29
+  ],
+  "lookTargetPoint": [
+   40,
+   14
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "rear-right",
+  "interaction": "watch-tv",
+  "mirrorsFor": "rear-left",
   "z": 50
  },
  "keeper_work_back": {

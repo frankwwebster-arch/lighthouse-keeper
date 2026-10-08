@@ -30,6 +30,9 @@ downward. A side-facing point at X mirrors with `mirroredX = canvasWidth - X`.
 | Chair, sofa or toilet seat | 11 px | `(16,29)` |
 | Animal food bowl target | 6 px | side `(27,34)` |
 | Soil contact for spade | 2 px | side `(27,38)` |
+| Seed-scatter target | 6 px | side `(27,34)` |
+| Low vegetable harvest | 4 px | side `(26,36)` |
+| Fruit harvest | 26 px | side `(25,14)` |
 
 These are interaction datums, not mandatory object sizes. For example, a light
 switch can have any suitable plate size, but its button centre must be 23 px
@@ -47,6 +50,12 @@ above the floor when the keeper stands on the same floor line.
 
 Example: the right-facing switch hand is `(+11,-23)` from his feet. If a
 switch centre is at world position `(200,100)`, place his feet at `(189,123)`.
+
+For television seating, place the seat contact at the clip's `(16,29)`. Put
+the screen centre 24 logical pixels to the right and 15 pixels above that seat
+for the right-looking pose, or mirror the strip and use 24 pixels left. The
+chair/sofa should support the keeper's seat point but must not extend across the
+screen sightline.
 
 ## Rig landmarks
 
