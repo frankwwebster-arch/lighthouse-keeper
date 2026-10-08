@@ -32,6 +32,11 @@ Furniture should align its seat to the manifest `seatPoint`, not alter the pose.
 Door previews cover side and rear opening, ping-ponging only to demonstrate the
 reverse-to-close contract. Ladder climb likewise ping-pongs to demonstrate
 up/down. Stair ascent and descent have separate looping previews.
+`keeper-switch-press-right-preview.gif` and `keeper-switch-press-left-preview.gif`
+show the two directions (the left review animation mirrors the shared side
+strip); `keeper-switch-press-back-preview.gif` covers a rear approach and mirrors to
+swap the reaching hand. See `../KEEPER_ANIMATIONS.md` for the plain-English
+index and exact fingertip-to-object alignment offsets.
 
 ## Art corrections recorded from this review
 

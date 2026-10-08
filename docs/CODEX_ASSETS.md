@@ -7,6 +7,7 @@ The authoritative art inputs are:
 - `docs/CODEX_BRIEF.md` — exact Pixel style, filenames and base dimensions.
 - `docs/PRODUCTION_ASSET_KIT.md` — anchors, pivots, z-order, frame counts, fps, interaction points and first-batch delivery order.
 - `art/asset_inventory.json` — factual inventory of the existing prototype PNGs only.
+- `docs/KEEPER_ANIMATIONS.md` — plain-English clip names, direction reuse and object-alignment recipe.
 
 ## Bringing art into the game
 
@@ -38,6 +39,6 @@ An animated horizontal strip includes playback metadata:
 
 ## Current delivery boundary
 
-Delivery-order item 1 is complete: `tower_stripe_{red,white}.png` and `room_{kitchen,living,bedroom}.png`. Delivery-order item 2 and the keeper subset of item 3 are review candidates: the CRT/channel strips, shared broken overlays, keeper master parts, and the initial keeper set spanning idle/walk, turning/work, sitting/eating, bathroom, door, ladder/stair and piano actions. Their authored sources are under `art/source/floor-asset-catalogue/` and `art/source/keeper-first-batch/`; exact raw deliveries are under matching `art/raw/` folders.
+Delivery-order item 1 is complete: `tower_stripe_{red,white}.png` and `room_{kitchen,living,bedroom}.png`. Delivery-order item 2 and the keeper subset of item 3 are review candidates: the CRT/channel strips, shared broken overlays, keeper master parts, and the initial keeper set spanning idle/walk, turning/work, sitting/eating, bathroom, door/switch, ladder/stair and piano actions. Their authored sources are under `art/source/floor-asset-catalogue/` and `art/source/keeper-first-batch/`; exact raw deliveries are under matching `art/raw/` folders.
 
 Frank approved the identity-preserving keeper walk and this initial action set in chat. Other review candidates still require explicit approval. Remaining keeper clips, object sets, shell pieces, later rooms, pets, visitors, ships and weather batches stay pending; `reach_use` remains the next keeper clip.

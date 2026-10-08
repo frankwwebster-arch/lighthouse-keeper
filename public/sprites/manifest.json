@@ -533,6 +533,52 @@
   "mirrorSafe": true,
   "z": 50
  },
+ "keeper_switch_press_back": {
+  "file": "keeper_switch_press_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   26,
+   16
+  ],
+  "loop": false,
+  "reverseFor": "switch_withdraw_back",
+  "mirrorSafe": true,
+  "facing": "back",
+  "interaction": "press-switch",
+  "mirrorsFor": "back-left-hand",
+  "z": 50
+ },
+ "keeper_switch_press_side": {
+  "file": "keeper_switch_press_side.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   27,
+   17
+  ],
+  "loop": false,
+  "reverseFor": "switch_withdraw_side",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "press-switch",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_turn_back": {
   "file": "keeper_turn_back.png",
   "w": 32,

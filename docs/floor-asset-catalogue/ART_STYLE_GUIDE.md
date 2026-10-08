@@ -109,6 +109,11 @@ opening strip. Ladder art stays separate from the keeper; the rear climb clip
 plays forward/up and reverse/down while runtime movement supplies world Y.
 Stairs use distinct side-view ascent and descent cycles, with runtime movement
 supplying the diagonal path; mirror either cycle for a left-facing flight.
+Switches, buttons and control panels remain object art. Align their activation
+point to the keeper clip's manifest `handUsePoint`; do not paint a switch into
+the character sheet. Side switch use mirrors left/right, and rear switch use
+mirrors to swap the reaching hand. Exact offsets are in
+`docs/KEEPER_ANIMATIONS.md`.
 
 Furniture approval requires a quick silhouette test with the keeper beside it
 and, where relevant, seated at it. Device approval requires a believable hand

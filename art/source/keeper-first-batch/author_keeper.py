@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageOps
 
 ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / "art/raw/keeper-first-batch"
@@ -282,7 +282,7 @@ def part(which, rear=False, mood="neutral"):
     return im
 
 
-def contract(frames, fps, pivot=None, *, loop=True, seat_point=None, hand_use_point=None, reverse_for=None, mirror_safe=False):
+def contract(frames, fps, pivot=None, *, loop=True, seat_point=None, hand_use_point=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
     value = {"w": 32, "h": 40, "frames": frames, "fps": fps, "density": 4, "anchor": [16, 40], "z": 50}
     if pivot is not None: value["pivot"] = pivot
     value["loop"] = loop
@@ -290,6 +290,9 @@ def contract(frames, fps, pivot=None, *, loop=True, seat_point=None, hand_use_po
     if hand_use_point is not None: value["handUsePoint"] = hand_use_point
     if reverse_for is not None: value["reverseFor"] = reverse_for
     if mirror_safe: value["mirrorSafe"] = True
+    if facing is not None: value["facing"] = facing
+    if interaction is not None: value["interaction"] = interaction
+    if mirrors_for is not None: value["mirrorsFor"] = mirrors_for
     return value
 
 
@@ -335,6 +338,8 @@ door_back_frames = generated_frames("keeper-door-back-generated-source.png", 6)
 ladder_frames = generated_frames("keeper-ladder-generated-source.png", 8)
 stairs_up_frames = generated_frames("keeper-stairs-up-generated-source.png", 8)
 stairs_down_frames = generated_frames("keeper-stairs-down-generated-source.png", 8)
+switch_side_frames = generated_frames("keeper-switch-side-generated-source.png", 6)
+switch_back_frames = generated_frames("keeper-switch-back-generated-source.png", 6)
 save("keeper_walk", walk_frames, 10, mirror_safe=True)
 save("keeper_turn_back", turn_frames, 8, loop=False, reverse_for="turn_front")
 save("keeper_work_back", work_frames, 8, hand_use_point=[16, 21])
@@ -351,6 +356,8 @@ save("keeper_door_open_back", door_back_frames, 8, loop=False, hand_use_point=[2
 save("keeper_ladder_climb", ladder_frames, 10, hand_use_point=[16, 6], reverse_for="ladder_descend")
 save("keeper_stairs_up", stairs_up_frames, 10, mirror_safe=True)
 save("keeper_stairs_down", stairs_down_frames, 10, mirror_safe=True)
+save("keeper_switch_press_side", switch_side_frames, 8, loop=False, hand_use_point=[27, 17], reverse_for="switch_withdraw_side", mirror_safe=True, facing="right", interaction="press-switch", mirrors_for="left")
+save("keeper_switch_press_back", switch_back_frames, 8, loop=False, hand_use_point=[26, 16], reverse_for="switch_withdraw_back", mirror_safe=True, facing="back", interaction="press-switch", mirrors_for="back-left-hand")
 
 # A transparent source contact sheet makes alignment mistakes easy to spot.
 contact = Image.new("RGBA", (W * 4, H * 2), (244, 236, 214, 255))
@@ -371,4 +378,7 @@ save_preview("keeper-door-open-back", door_back_frames, 120, ping_pong=True)
 save_preview("keeper-ladder-climb", ladder_frames, 100, ping_pong=True)
 save_preview("keeper-stairs-up", stairs_up_frames, 100)
 save_preview("keeper-stairs-down", stairs_down_frames, 100)
+save_preview("keeper-switch-press-right", switch_side_frames, 120, ping_pong=True)
+save_preview("keeper-switch-press-left", [ImageOps.mirror(frame) for frame in switch_side_frames], 120, ping_pong=True)
+save_preview("keeper-switch-press-back", switch_back_frames, 120, ping_pong=True)
 print(f"Keeper batch authored in {OUT}")

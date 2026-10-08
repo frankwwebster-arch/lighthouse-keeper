@@ -1,0 +1,22 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "handUsePoint": [
+    27,
+    17
+  ],
+  "reverseFor": "switch_withdraw_side",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "press-switch",
+  "mirrorsFor": "left"
+}

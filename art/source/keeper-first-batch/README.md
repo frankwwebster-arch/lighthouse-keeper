@@ -15,7 +15,9 @@ turning from camera to rear, a reusable rear-facing arm-work loop, side and
 front sit-down transitions, seated piano/instrument playing, a discreet
 rear-facing urination proxy, and seated eating with fork and knife. These source
 Door opening (side and rear), ladder climbing, and distinct stair ascent/descent
-sources extend the same movement kit. These source sheets remain untouched beside the turnaround. The rejected earlier simplified
+sources extend the same movement kit. Side/rear switch-reaching sources add a
+fixed fingertip target for reuse across buttons and controls. These source
+sheets remain untouched beside the turnaround. The rejected earlier simplified
 action strips are preserved in `replaced-simplified/`; the quieter first rear-
 work loop is preserved in `replaced-motion-v1/` for provenance only.
 
@@ -43,6 +45,8 @@ Side door use mirrors for a left-hand door and both door-opening clips reverse
 for closing. Ladder descent reverses the climb sequence. Stairs deliberately
 use separate up/down cycles because descending needs a more upright balance and
 different leading-foot placement; both stair cycles mirror for left travel.
+Switch use follows the same economy: one side pose mirrors left/right, while the
+rear pose mirrors to swap hands. Both reverse from pressed position to idle.
 
 The `docs/floor-asset-catalogue/keeper-*-preview.gif` files are enlarged
 previews made from the exact production frames; they are not separate artwork.
@@ -80,6 +84,10 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
   frames for diagonal runtime translation; mirror for left-rising stairs.
 - `keeper-stairs-down-generated-source.png` — eight right-facing careful descent
   frames with upright balance; mirror for left-descending stairs.
+- `keeper-switch-side-generated-source.png` — six right-facing reach frames with
+  one fixed invisible fingertip target; mirror left and reverse to withdraw.
+- `keeper-switch-back-generated-source.png` — six rear reach frames with one
+  fixed invisible fingertip target; mirror to swap hand and reverse to withdraw.
 
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,
