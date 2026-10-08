@@ -238,9 +238,11 @@ export interface Rules {
   priceScale: number
   /** Your own price for a food (id → credits); beats the scale. */
   prices: Record<string, number>
+  /** Quiz difficulty: 1 = age 7, 2 = about 9, 3 = 11 and over. */
+  quizLevel: 1 | 2 | 3
 }
 
-export const DEFAULT_RULES: Rules = { allowanceBase: 8, allowanceBonus: 20, firstDay: 20, carryCap: 40, greenAt: 50, priceScale: 100, prices: {} }
+export const DEFAULT_RULES: Rules = { allowanceBase: 8, allowanceBonus: 20, firstDay: 20, carryCap: 40, greenAt: 50, priceScale: 100, prices: {}, quizLevel: 1 }
 
 export const GAME = {
   /** The day, in minutes after midnight. He wakes at 7am; the lamp is lit at dusk; bed is 8pm. */

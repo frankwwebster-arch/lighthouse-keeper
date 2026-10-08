@@ -191,14 +191,139 @@ const MAKERS: readonly { weight: number; make: (rand: Rand, who: { name: string;
   { weight: 3, make: knowledge },
 ]
 
-/** A question for him. `skip` is the ids of recent ones, so it does not repeat. */
-export function makeQuiz(rand: Rand = Math.random, who: { name: string; pet: string } = { name: 'the keeper', pet: 'the cat' }, skip: readonly string[] = []): Quiz {
-  const total = MAKERS.reduce((a, m) => a + m.weight, 0)
+
+// ─── Harder questions (for older players): levels 2 and 3 ────────────────────
+
+const LEVEL = (min: 2 | 3, make: Maker) => ({ min, make })
+type Maker = (rand: Rand, who: { name: string; pet: string }, level: number) => Quiz
+
+const times2: Maker = (rand, _w, level) => {
+  const a = level >= 3 ? between(13, 35, rand) : between(11, 19, rand)
+  const b = level >= 3 ? between(3, 12, rand) : between(2, 9, rand)
+  return num(`t2-${a}x${b}`, 'times', `What is ${a} times ${b}?`, a * b, `Split ${a} into tens and ones, times each, then add.`)
+}
+const divide2: Maker = (rand, _w, level) => {
+  const a = level >= 3 ? between(12, 25, rand) : between(6, 12, rand)
+  const b = level >= 3 ? between(6, 15, rand) : between(6, 15, rand)
+  return num(`d2-${a * b}/${a}`, 'divide', `What is ${a * b} divided by ${a}?`, b, `How many ${a}s fit into ${a * b}?`)
+}
+const sum2: Maker = (rand, _w, level) => {
+  const hi = level >= 3 ? 9999 : 899
+  const lo = level >= 3 ? 1000 : 100
+  const a = between(lo, hi, rand)
+  const b = between(lo, hi, rand)
+  if (rand() < 0.5) return num(`s2-${a}+${b}`, 'sum', `What is ${a} + ${b}?`, a + b, 'Add the ones, then the tens, hundreds and thousands, carrying as you go.')
+  const [big, small] = a > b ? [a, b] : [b, a]
+  return num(`s2-${big}-${small}`, 'sum', `What is ${big} take away ${small}?`, big - small, 'Take away in chunks: hundreds, then tens, then ones.')
+}
+const fraction: Maker = (rand, _w, level) => {
+  const d = [2, 3, 4, 5, 8, 10][between(0, 5, rand)]
+  const n = level >= 3 ? between(1, d - 1, rand) : 1
+  const whole = d * between(2, 9, rand)
+  return num(`fr-${n}/${d}-${whole}`, 'sum', `What is ${n}/${d} of ${whole}?`, (whole / d) * n, `Divide ${whole} by ${d}${n > 1 ? `, then times by ${n}` : ''}.`)
+}
+const percent: Maker = (rand) => {
+  const p = [10, 20, 25, 50, 75][between(0, 4, rand)]
+  const whole = between(2, 20, rand) * 20
+  return num(`pc-${p}-${whole}`, 'sum', `What is ${p}% of ${whole}?`, (whole * p) / 100, p === 10 ? 'Divide by 10.' : p === 25 ? 'A quarter: halve it twice.' : p === 50 ? 'Half.' : 'Work out 10% first and build from there.')
+}
+const order: Maker = (rand) => {
+  const a = between(2, 9, rand)
+  const b = between(2, 9, rand)
+  const c = between(2, 9, rand)
+  return num(`op-${a}+${b}x${c}`, 'sum', `What is ${a} + ${b} × ${c}?`, a + b * c, 'Multiplication comes before addition.')
+}
+const squares: Maker = (rand) => {
+  const a = between(6, 16, rand)
+  return num(`sq-${a}`, 'times', `What is ${a} squared?`, a * a, `${a} times ${a}.`)
+}
+const area: Maker = (rand, _w, level) => {
+  const a = between(3, level >= 3 ? 15 : 9, rand)
+  const b = between(3, level >= 3 ? 15 : 9, rand)
+  if (rand() < 0.5) return num(`area-${a}x${b}`, 'word', `A rectangle is ${a} cm long and ${b} cm wide. What is its area in square centimetres?`, a * b, 'Length times width.')
+  return num(`per-${a}x${b}`, 'word', `A rectangle is ${a} cm long and ${b} cm wide. How far is it all the way round, in centimetres?`, 2 * (a + b), 'Add all four sides.')
+}
+const word2: Maker = (rand, who) => {
+  const k = between(0, 2, rand)
+  if (k === 0) {
+    const n = between(3, 9, rand)
+    const p = between(12, 48, rand)
+    return num(`w2-pk-${n}-${p}`, 'word', `${n} packets of fish treats cost ${p}p each. How many pence is that altogether?`, n * p, `${n} lots of ${p}.`)
+  }
+  if (k === 1) {
+    const parts = [3, 4, 6][between(0, 2, rand)]
+    const total = between(4, 12, rand) * parts
+    return num(`w2-sh-${total}-${parts}`, 'word', `${who.name} bakes ${total} biscuits and puts them equally into ${parts} tins. How many go in each tin?`, total / parts, `Share ${total} between ${parts}.`)
+  }
+  const had = between(200, 900, rand)
+  const spent = between(50, had - 20, rand)
+  return num(`w2-sp-${had}-${spent}`, 'word', `${who.name} had ${had} credits and spent ${spent}. How many are left?`, had - spent, 'Take away what was spent.')
+}
+
+const SPELLINGS_HARD: readonly (readonly [string, string])[] = [
+  ['the day after Tuesday', 'wednesday'], ['the second month of the year', 'february'], ['you need it: it is ______ to wear a coat in snow', 'necessary'],
+  ['to split into two: se...', 'separate'], ['a piece of land with sea all round it', 'island'], ['a place with lots of books', 'library'],
+  ['what you know is your ______', 'knowledge'], ['the natural world around us', 'environment'], ['the beat in music', 'rhythm'],
+  ['for sure: "I will ______ come"', 'definitely'], ['an amazing, exciting experience: an ad...', 'adventure'], ['to look after, protect', 'guard'],
+  ['the opposite of "ancient"', 'modern'], ['a very strong wind and rain: a h...', 'hurricane'], ['someone who sails ships: a n...', 'navigator'],
+  ['a light that warns ships: a b...', 'beacon'], ['a big wave of the sea that goes out and in: the t...', 'tide'], ['the person who looks after a lighthouse', 'keeper'],
+]
+const spelling2: Maker = (rand) => {
+  const [clue, answer] = pick(SPELLINGS_HARD, rand)
+  return { id: `spell2-${answer}`, kind: 'spelling', text: `Spell this word for me: ${clue}.`, answers: [answer], show: answer, hint: `It has ${answer.length} letters and starts with ${answer[0].toUpperCase()}.`, numeric: false }
+}
+
+const KNOWLEDGE_HARD: readonly (readonly [string, readonly string[], string])[] = [
+  ['What is the capital of Italy?', ['rome'], 'Think of the Colosseum.'],
+  ['What is the capital of Japan?', ['tokyo'], 'It is the biggest city in Japan.'],
+  ['What is the capital of Australia?', ['canberra'], 'It is not Sydney!'],
+  ['How many planets are in our solar system?', ['8', 'eight'], 'Mercury to Neptune.'],
+  ['What force pulls everything towards the ground?', ['gravity'], 'Newton and the apple.'],
+  ['What gas do plants take in from the air?', ['carbon dioxide', 'co2'], 'We breathe it out.'],
+  ['How many degrees are there in a right angle?', ['90', 'ninety'], 'The corner of a square.'],
+  ['What do we call an animal that only eats plants?', ['herbivore', 'a herbivore'], 'Think of a cow.'],
+  ['Who wrote the play Romeo and Juliet?', ['shakespeare', 'william shakespeare'], 'He was born in Stratford.'],
+  ['How many sides does an octagon have?', ['8', 'eight'], 'Think of a stop sign.'],
+  ['At what temperature in Celsius does water freeze?', ['0', 'zero'], 'Ice.'],
+  ['Which planet is known as the Red Planet?', ['mars'], 'Named after a Roman god of war.'],
+  ['What is the largest desert in Africa?', ['sahara', 'the sahara', 'sahara desert'], 'It starts with S.'],
+  ['What is the chemical symbol for water?', ['h2o'], 'Two hydrogens and one oxygen.'],
+  ['What do we call the layer of gas around the Earth?', ['atmosphere', 'the atmosphere'], 'It starts with A.'],
+  ['How many bones does an adult human have, roughly: 106, 206 or 306?', ['206', 'two hundred and six'], 'The middle one.'],
+  ['What is the Roman numeral for 10?', ['x'], 'It looks like a cross.'],
+  ['Which ocean lies between Europe and America?', ['atlantic', 'the atlantic', 'atlantic ocean', 'the atlantic ocean'], 'It starts with A.'],
+]
+const knowledge2: Maker = (rand) => {
+  const [text, answers, hint] = pick(KNOWLEDGE_HARD, rand)
+  const nums = answers.every((a) => /^\d+$/.test(a) || ONES.includes(a))
+  return { id: `gk2-${text.slice(0, 24)}`, kind: 'knowledge', text, answers: answers.map(normalise), show: answers[0], hint, numeric: nums }
+}
+
+const HARDER: readonly { weight: number; min: 2 | 3; make: Maker }[] = [
+  { weight: 4, ...LEVEL(2, times2) },
+  { weight: 2, ...LEVEL(2, divide2) },
+  { weight: 3, ...LEVEL(2, sum2) },
+  { weight: 2, ...LEVEL(2, fraction) },
+  { weight: 2, ...LEVEL(2, area) },
+  { weight: 2, ...LEVEL(2, word2) },
+  { weight: 2, ...LEVEL(2, spelling2) },
+  { weight: 2, ...LEVEL(2, knowledge2) },
+  { weight: 2, ...LEVEL(3, percent) },
+  { weight: 2, ...LEVEL(3, order) },
+  { weight: 2, ...LEVEL(3, squares) },
+]
+
+/** A question for him. `level` 1 is for a 7-year-old, 2 for about 9, 3 for 11 and over. `skip` is the ids of recent ones, so it does not repeat. */
+export function makeQuiz(rand: Rand = Math.random, who: { name: string; pet: string } = { name: 'the keeper', pet: 'the cat' }, skip: readonly string[] = [], level = 1): Quiz {
+  const easyShare = level >= 3 ? 0.25 : level === 2 ? 0.5 : 1
+  const pool: { weight: number; make: (rand: Rand, who: { name: string; pet: string }) => Quiz }[] = MAKERS.map((m) => ({ weight: m.weight * easyShare, make: m.make }))
+  if (level >= 2) for (const h of HARDER) if (h.min <= level) pool.push({ weight: h.weight, make: (r, w) => h.make(r, w, level) })
+  const total = pool.reduce((a, m) => a + m.weight, 0)
   let quiz: Quiz | null = null
   for (let tries = 0; tries < 8; tries++) {
     let at = rand() * total
-    let maker = MAKERS[0]
-    for (const m of MAKERS) {
+    let maker = pool[0]
+    for (const m of pool) {
       if ((at -= m.weight) <= 0) {
         maker = m
         break

@@ -340,6 +340,12 @@ export function GrownUps({ pin, rules, credits, onRules, onGift, onPin, onClose 
         <Num label="A bar is green at" hint="(average % over the day)" value={rules.greenAt} min={10} max={95} onChange={(n) => set({ greenAt: n })} />
         <Num label="First day’s credits" value={rules.firstDay} onChange={(n) => set({ firstDay: n })} />
         <Num label="Most he can save overnight" value={rules.carryCap} onChange={(n) => set({ carryCap: n })} />
+        <h3>Questions</h3>
+        <label className="num">
+          <span>Difficulty <small>(1 = age 7, 2 = about 9, 3 = 11+: harder sums, fractions, percentages, spelling and general knowledge)</small></span>
+          <input type="range" min={1} max={3} step={1} value={rules.quizLevel} onChange={(e) => set({ quizLevel: Number(e.target.value) as 1 | 2 | 3 })} />
+          <b>Level {rules.quizLevel}</b>
+        </label>
         <h3>Prices</h3>
         <label className="num">
           <span>All prices <small>(% of normal)</small></span>

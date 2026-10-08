@@ -62,7 +62,7 @@ export default function App() {
       if (!next.prompt && !busy && now - lastInput.current > q.idleSeconds * 1000 && now - lastAsk.current > q.gapSeconds * 1000) {
         lastAsk.current = now
         if (Math.random() < q.quizShare) {
-          const quiz = makeQuiz(Math.random, { name: next.name, pet: next.petName }, recentQ.current)
+          const quiz = makeQuiz(Math.random, { name: next.name, pet: next.petName }, recentQ.current, next.rules.quizLevel)
           recentQ.current = [...recentQ.current, quiz.id].slice(-30)
           next = ask(next, { kind: 'quiz', quiz, tries: 0, revealed: false })
         } else {
