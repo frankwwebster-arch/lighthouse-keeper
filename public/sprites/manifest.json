@@ -680,6 +680,28 @@
   "mirrorsFor": "left",
   "z": 50
  },
+ "keeper_saw_wood": {
+  "file": "keeper_saw_wood.png",
+  "w": 40,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   20,
+   40
+  ],
+  "handUsePoint": [
+   35,
+   23
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "saw-workpiece",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_sit_front": {
   "file": "keeper_sit_front.png",
   "w": 32,
@@ -907,6 +929,28 @@
   "facing": "rear-right",
   "interaction": "watch-tv",
   "mirrorsFor": "rear-left",
+  "z": 50
+ },
+ "keeper_weld": {
+  "file": "keeper_weld.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   27,
+   22
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "weld-workpiece",
+  "mirrorsFor": "left",
   "z": 50
  },
  "keeper_work_back": {

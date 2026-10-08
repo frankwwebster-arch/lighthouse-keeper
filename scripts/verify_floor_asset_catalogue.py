@@ -7,7 +7,7 @@ root=Path(__file__).resolve().parents[1]
 data=json.loads((root/'docs/floor-asset-catalogue/catalogue.json').read_text())
 spaces=data['spaces']; rows=data['rows']
 assert len(spaces)==71 and len({s['space_id'] for s in spaces})==71
-assert len(rows)==1531
+assert len(rows)==1533
 with (root/'docs/floor-asset-catalogue/catalogue.csv').open(newline='') as f:
     assert len(list(csv.DictReader(f)))==len(rows)
 for space in spaces:
@@ -39,7 +39,7 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==48
+assert len(keeper_pngs)==50
 required_clips={
     'keeper_idle':(4,6), 'keeper_walk':(8,10),
     'keeper_turn_back':(6,8), 'keeper_work_back':(8,8),
@@ -57,6 +57,7 @@ required_clips={
     'keeper_pick_fruit':(8,8), 'keeper_carry_shopping':(8,10),
     'keeper_row_boat':(8,8), 'keeper_drive_speedboat':(8,8),
     'keeper_operate_outboard':(8,8), 'keeper_watch_tv':(8,6),
+    'keeper_weld':(8,8), 'keeper_saw_wood':(8,8),
 }
 for raw in keeper_pngs:
     sidecar=json.loads(raw.with_suffix('.json').read_text())
@@ -114,6 +115,9 @@ assert manifest['keeper_drive_speedboat']['seatPoint']==[16,29] and manifest['ke
 assert manifest['keeper_operate_outboard']['handUsePoint']==[4,21] and manifest['keeper_operate_outboard']['facing']=='rear-right'
 assert manifest['keeper_watch_tv']['seatPoint']==[16,29] and manifest['keeper_watch_tv']['lookTargetPoint']==[40,14]
 assert manifest['keeper_watch_tv']['facing']=='rear-right' and manifest['keeper_watch_tv']['mirrorsFor']=='rear-left'
+assert manifest['keeper_weld']['handUsePoint']==[27,22] and manifest['keeper_weld']['interaction']=='weld-workpiece'
+assert manifest['keeper_saw_wood']['w']==40 and manifest['keeper_saw_wood']['anchor']==[20,40]
+assert manifest['keeper_saw_wood']['handUsePoint']==[35,23] and manifest['keeper_saw_wood']['interaction']=='saw-workpiece'
 asset_contract=json.loads((root/'data/keeper_asset_contract.json').read_text())
 assert asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
 assert asset_contract['canvas']['standard']=={'width':32,'height':40,'density':4,'anchor':[16,40]}
@@ -121,6 +125,7 @@ assert asset_contract['canvas']['extendedAirborne']=={'width':48,'height':40,'de
 assert asset_contract['canvas']['extendedVerticalDive']=={'width':48,'height':56,'density':4,'anchor':[24,56]}
 assert asset_contract['canvas']['extendedParachute']=={'width':48,'height':84,'density':4,'anchor':[24,84]}
 assert asset_contract['canvas']['extendedBoatAction']=={'width':40,'height':40,'density':4,'anchor':[20,40]}
+assert asset_contract['canvas']['extendedSideTool']=={'width':40,'height':40,'density':4,'anchor':[20,40]}
 assert asset_contract['interactionProfiles']['switchSideRight']['handUsePoint']==[27,17]
 assert asset_contract['interactionProfiles']['switchBackRightHand']['handUsePoint']==[26,17]
 assert asset_contract['objectRules']['lightSwitchCentreHeightAboveFloor']==23
@@ -145,8 +150,9 @@ previews={
     'keeper-row-boat':(8,120), 'keeper-drive-speedboat':(8,120),
     'keeper-operate-outboard':(8,120),
     'keeper-watch-tv-right':(8,160), 'keeper-watch-tv-left':(8,160),
+    'keeper-weld':(8,120), 'keeper-saw-wood':(8,120),
 }
 for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
-print('Verified: 71 spaces, 1531 rows, owned-item states, 9 TV/lamp/FX exports, 48 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
+print('Verified: 71 spaces, 1533 rows, owned-item states, 9 TV/lamp/FX exports, 50 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')

@@ -68,9 +68,11 @@ Initial clips:
 | `drive_speedboat` | side | 8 · 8 | yes | seat `(16,29)`; helm hands `(25,20)` |
 | `operate_outboard` | rear ¾ | 8 · 8 | yes | tiller hand `(4,21)`; mirror left |
 | `watch_tv` | rear ¾ | 8 · 6 | yes | seat `(16,29)`; screen target `(40,14)`; mirror left |
+| `weld` | side | 8 · 8 | yes | torch contact `(27,22)`; goggles/gloves included; workpiece separate |
+| `saw_wood` | side | 8 · 8 | yes | 40 × 40; blade contact `(35,23)`; timber/bench separate |
 | `loo_hide` | hidden | 0 | n/a | keeper is not drawn |
 
-Required part files are `keeper_front_head_{happy,neutral,grumpy,asleep,open}.png`, `keeper_front_{torso,arm_l,arm_r,leg_l,leg_r}.png`, the equivalent `keeper_back_*` files with one back head, and `keeper_reference.png`; every part file is 32 × 40. Airborne strips may expand to 48 × 56 for the dive or 48 × 84 for parachute deployment without rescaling the keeper. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. Pivots are for assembly tooling; production raster limbs use drawn key angles or integer translations in final clips rather than arbitrary CSS rotation. `data/keeper_asset_contract.json` is authoritative for scale and use points.
+Required part files are `keeper_front_head_{happy,neutral,grumpy,asleep,open}.png`, `keeper_front_{torso,arm_l,arm_r,leg_l,leg_r}.png`, the equivalent `keeper_back_*` files with one back head, and `keeper_reference.png`; every part file is 32 × 40. Airborne strips may expand to 48 × 56 for the dive or 48 × 84 for parachute deployment without rescaling the keeper. Long side tools may use 40 × 40 for their full stroke. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. Pivots are for assembly tooling; production raster limbs use drawn key angles or integer translations in final clips rather than arbitrary CSS rotation. `data/keeper_asset_contract.json` is authoritative for scale and use points.
 
 The dive outfit reuses every pivot. Its approved reference is a traditional full-length red-and-white striped one-piece costume, without cap or helmet and with bare feet. Changing is an invisible clip: inner door closes, keeper disappears, zip/rustle SFX, outfit swaps, exterior door opens, dressed keeper exits. There is never a visible frame between the two doors.
 

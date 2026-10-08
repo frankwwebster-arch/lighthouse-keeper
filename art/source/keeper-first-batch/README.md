@@ -122,10 +122,15 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
   tiller-control poses; motor, boat, water and wake remain separate.
 - `keeper-watch-tv-generated-source.png` — eight seated rear-three-quarter
   right-looking poses; mirror left, with chair and screen kept separate.
+- `keeper-weld-generated-source.png` — eight right-facing torch poses with
+  protective goggles and gloves; metal workpiece and bench remain separate.
+- `keeper-saw-wood-generated-source.png` — eight right-facing push-pull hand-saw
+  poses; timber and sawhorse remain separate and align to one contact point.
 
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,
 hardens alpha, places it on a density-4 contract canvas, and emits the manifest
 sidecars and review GIFs. Most clips use 32 × 40; dive and parachute poses use
-larger transparent contract canvases at the identical character scale. All
+larger transparent contract canvases at the identical character scale. The
+hand-saw strip uses a 40 × 40 extended side-tool canvas for its full stroke. All
 generation used the built-in image generator in referenced-image mode.

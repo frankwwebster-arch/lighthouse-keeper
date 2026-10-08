@@ -55,6 +55,8 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Drive speedboat | `keeper_drive_speedboat` | seated at invisible helm; mirror when layout permits |
 | Operate outboard | `keeper_operate_outboard` | rear three-quarter; fixed tiller point; mirror left |
 | Watch TV | `keeper_watch_tv` | rear three-quarter right; mirror left; screen stays visible |
+| Weld | `keeper_weld` | right; mirror left; goggles, gloves and torch included; workpiece separate |
+| Saw wood | `keeper_saw_wood` | right; mirror left; hand saw included; timber and bench separate |
 
 For review, the shared side strip has separate, plainly named
 `keeper-switch-press-right-preview.gif` and
@@ -100,7 +102,7 @@ hard-coded knowledge of the artwork.
 ## Current integration boundary
 
 Cooker and basin jobs already select their production rear-work aliases. The
-new furniture, door, switch, ladder and stair clips are game-ready assets but
+new furniture, door, switch, ladder, stair and workshop clips are game-ready assets but
 remain unwired until the corresponding object/path mechanics are implemented.
 This prevents a seated or climbing character appearing without matching world
 geometry.
@@ -114,7 +116,8 @@ The next animation work should follow gameplay dependency rather than novelty.
 - Seated reading and TV sit/stand transitions; the watching loop is delivered.
 - Lie down, sleep loop and get out of bed.
 - Telescope look, telephone use and fishing cast/reel/catch.
-- Sweep/tidy, carry/pick up/put down, repair and polish with visible tools.
+- Sweep/tidy, carry/pick up/put down, and remaining repair/polish variants;
+  welding and hand-sawing are delivered with their visible tools.
 - Garden watering and planting; sowing and low/high harvesting are delivered.
 - Pet/stroke/play and a standing hand-feed variant for larger animals.
 - Greeting, receiving/giving an item, thinking and idle variants.

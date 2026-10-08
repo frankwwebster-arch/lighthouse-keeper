@@ -40,6 +40,6 @@ An animated horizontal strip includes playback metadata:
 
 ## Current delivery boundary
 
-Delivery-order item 1 is complete: `tower_stripe_{red,white}.png` and `room_{kitchen,living,bedroom}.png`. Delivery-order item 2 and the keeper subset of item 3 are review candidates: the CRT/channel strips, shared broken overlays, keeper master parts, and a 48-export keeper set spanning domestic actions, doors/travel, parachute/dive, gardening, shopping, boating and offset TV watching. Their authored sources are under `art/source/floor-asset-catalogue/` and `art/source/keeper-first-batch/`; exact raw deliveries are under matching `art/raw/` folders.
+Delivery-order item 1 is complete: `tower_stripe_{red,white}.png` and `room_{kitchen,living,bedroom}.png`. Delivery-order item 2 and the keeper subset of item 3 are review candidates: the CRT/channel strips, shared broken overlays, keeper master parts, and a 50-export keeper set spanning domestic actions, doors/travel, parachute/dive, gardening, shopping, boating, offset TV watching and workshop tools. Their authored sources are under `art/source/floor-asset-catalogue/` and `art/source/keeper-first-batch/`; exact raw deliveries are under matching `art/raw/` folders.
 
 Frank approved the identity-preserving keeper walk and current action direction in chat. Other review candidates still require explicit approval. The prioritized remaining keeper clips are recorded in `docs/KEEPER_ANIMATIONS.md`; object sets, shell pieces, later rooms, pets, visitors, ships and weather batches stay pending.

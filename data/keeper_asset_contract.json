@@ -14,7 +14,8 @@
     "extendedAirborne": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
     "extendedVerticalDive": { "width": 48, "height": 56, "density": 4, "anchor": [24, 56] },
     "extendedParachute": { "width": 48, "height": 84, "density": 4, "anchor": [24, 84] },
-    "extendedBoatAction": { "width": 40, "height": 40, "density": 4, "anchor": [20, 40] }
+    "extendedBoatAction": { "width": 40, "height": 40, "density": 4, "anchor": [20, 40] },
+    "extendedSideTool": { "width": 40, "height": 40, "density": 4, "anchor": [20, 40] }
   },
   "measuredReference": {
     "source": "public/sprites/keeper_reference.png",
@@ -51,7 +52,9 @@
     "speedboatHelmRight": { "clip": "keeper_drive_speedboat", "seatPoint": [16, 29], "handUsePoint": [25, 20], "mirrorFor": "speedboatHelmLeft" },
     "outboardRight": { "clip": "keeper_operate_outboard", "handUsePoint": [4, 21], "offsetFromFeet": [-12, -19], "mirrorFor": "outboardLeft" },
     "watchTvRight": { "clip": "keeper_watch_tv", "seatPoint": [16, 29], "lookTargetPoint": [40, 14], "screenCentreOffsetFromSeat": [24, -15], "mirrorFor": "watchTvLeft" },
-    "watchTvLeft": { "clip": "keeper_watch_tv", "seatPoint": [16, 29], "lookTargetPoint": [-8, 14], "screenCentreOffsetFromSeat": [-24, -15], "mirroredFrom": "watchTvRight" }
+    "watchTvLeft": { "clip": "keeper_watch_tv", "seatPoint": [16, 29], "lookTargetPoint": [-8, 14], "screenCentreOffsetFromSeat": [-24, -15], "mirroredFrom": "watchTvRight" },
+    "weldRight": { "clip": "keeper_weld", "handUsePoint": [27, 22], "offsetFromFeet": [11, -18], "mirrorFor": "weldLeft" },
+    "sawWoodRight": { "clip": "keeper_saw_wood", "handUsePoint": [35, 23], "offsetFromFeet": [15, -17], "mirrorFor": "sawWoodLeft" }
   },
   "objectRules": {
     "lightSwitchCentreHeightAboveFloor": 23,
@@ -65,6 +68,8 @@
     "highHarvestHeightAboveFloor": 26,
     "tvScreenHorizontalClearanceFromSeat": 24,
     "tvScreenCentreHeightAboveSeat": 15,
+    "weldingContactHeightAboveFloor": 18,
+    "sawingContactHeightAboveFloor": 17,
     "rule": "Place the object interaction point at the selected profile offset from the keeper feet anchor; never rescale the keeper to fit an object."
   }
 }

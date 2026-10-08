@@ -187,7 +187,7 @@ def side_walk(step=0):
     return im
 
 
-def generated_frames(filename, expected, fallback=None, logical_width=32, logical_height=40, scale_reference_index=None):
+def generated_frames(filename, expected, fallback=None, logical_width=32, logical_height=40, scale_reference_index=None, force_equal_cells=False):
     """Normalise an identity-locked generated source onto aligned contract slots."""
     source = Path(__file__).with_name(filename)
     if not source.exists():
@@ -209,7 +209,40 @@ def generated_frames(filename, expected, fallback=None, logical_width=32, logica
                 runs.append((start, x))
             start = None
     components = None
-    if len(runs) != expected:
+    if force_equal_cells:
+        bounds = []
+        components = []
+        for index in range(expected):
+            x0 = round(index * sheet.width / expected)
+            x1 = round((index + 1) * sheet.width / expected)
+            cell = alpha.crop((x0, 0, x1, sheet.height))
+            width, height = cell.size
+            pixels = bytearray(cell.tobytes())
+            found = []
+            for start, value in enumerate(pixels):
+                if not value:
+                    continue
+                pixels[start] = 0
+                pending = [start]
+                members = []
+                min_x, min_y, max_x, max_y = width, height, 0, 0
+                while pending:
+                    member = pending.pop()
+                    y, x = divmod(member, width)
+                    members.append(member)
+                    min_x, min_y = min(min_x, x), min(min_y, y)
+                    max_x, max_y = max(max_x, x), max(max_y, y)
+                    for neighbour in (member - 1, member + 1, member - width, member + width):
+                        if 0 <= neighbour < width * height and pixels[neighbour] and (neighbour // width == y or neighbour % width == x):
+                            pixels[neighbour] = 0
+                            pending.append(neighbour)
+                found.append((len(members), (min_x, min_y, max_x + 1, max_y + 1), members))
+            if not found:
+                raise ValueError(f"Generated keeper cell {index} is empty in {filename}")
+            _, box, members = max(found, key=lambda item: item[0])
+            bounds.append((x0 + box[0], box[1], x0 + box[2], box[3]))
+            components.append([((member // width) * sheet.width) + (member % width) + x0 for member in members])
+    elif len(runs) != expected:
         # Rarely two well-spaced figures overlap by a few x columns without
         # touching. Fall back to actual connected figures rather than cutting
         # either pose at an arbitrary cell boundary.
@@ -368,6 +401,8 @@ row_boat_frames = generated_frames("keeper-row-boat-generated-source.png", 8, lo
 drive_speedboat_frames = generated_frames("keeper-drive-speedboat-generated-source.png", 8)
 operate_outboard_frames = generated_frames("keeper-operate-outboard-generated-source.png", 8)
 watch_tv_frames = generated_frames("keeper-watch-tv-generated-source.png", 8)
+weld_frames = generated_frames("keeper-weld-generated-source.png", 8)
+saw_wood_frames = generated_frames("keeper-saw-wood-generated-source.png", 8, logical_width=40, force_equal_cells=True)
 save("keeper_walk", walk_frames, 10, mirror_safe=True)
 save("keeper_turn_back", turn_frames, 8, loop=False, reverse_for="turn_front")
 save("keeper_work_back", work_frames, 8, hand_use_point=[16, 21])
@@ -398,6 +433,8 @@ save("keeper_row_boat", row_boat_frames, 8, seat_point=[20, 29], hand_use_point=
 save("keeper_drive_speedboat", drive_speedboat_frames, 8, seat_point=[16, 29], hand_use_point=[25, 20], mirror_safe=True, facing="right", interaction="drive-speedboat", mirrors_for="left")
 save("keeper_operate_outboard", operate_outboard_frames, 8, hand_use_point=[4, 21], mirror_safe=True, facing="rear-right", interaction="operate-outboard", mirrors_for="rear-left")
 save("keeper_watch_tv", watch_tv_frames, 6, seat_point=[16, 29], look_target_point=[40, 14], mirror_safe=True, facing="rear-right", interaction="watch-tv", mirrors_for="rear-left")
+save("keeper_weld", weld_frames, 8, hand_use_point=[27, 22], mirror_safe=True, facing="right", interaction="weld-workpiece", mirrors_for="left")
+save("keeper_saw_wood", saw_wood_frames, 8, hand_use_point=[35, 23], mirror_safe=True, facing="right", interaction="saw-workpiece", mirrors_for="left")
 
 # A transparent source contact sheet makes alignment mistakes easy to spot.
 contact = Image.new("RGBA", (W * 4, H * 2), (244, 236, 214, 255))
@@ -434,4 +471,6 @@ save_preview("keeper-drive-speedboat", drive_speedboat_frames, 120)
 save_preview("keeper-operate-outboard", operate_outboard_frames, 120)
 save_preview("keeper-watch-tv-right", watch_tv_frames, 160)
 save_preview("keeper-watch-tv-left", [ImageOps.mirror(frame) for frame in watch_tv_frames], 160)
+save_preview("keeper-weld", weld_frames, 120)
+save_preview("keeper-saw-wood", saw_wood_frames, 120)
 print(f"Keeper batch authored in {OUT}")

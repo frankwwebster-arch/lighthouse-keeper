@@ -33,6 +33,8 @@ downward. A side-facing point at X mirrors with `mirroredX = canvasWidth - X`.
 | Seed-scatter target | 6 px | side `(27,34)` |
 | Low vegetable harvest | 4 px | side `(26,36)` |
 | Fruit harvest | 26 px | side `(25,14)` |
+| Welding contact | 18 px | side `(27,22)` |
+| Sawing contact | 17 px | extended side canvas `(35,23)` |
 
 These are interaction datums, not mandatory object sizes. For example, a light
 switch can have any suitable plate size, but its button centre must be 23 px
@@ -67,3 +69,9 @@ costumes therefore change clothing only, never body proportions.
 Any new prop-based animation must add its hand, seat or ground point to the
 JSON contract and its sprite sidecar. Verification rejects changes that break
 the established switch heights, canvas scale or feet anchors.
+
+Welding uses the normal 32 × 40 canvas. The hand saw needs the 40 × 40
+`extendedSideTool` canvas so its full stroke remains visible without shrinking
+the keeper; its feet anchor is `(20,40)`. Align a separate metal workpiece to
+the welding contact or a separate timber/sawhorse assembly to the sawing
+contact. Do not bake either work surface into the character strip.
