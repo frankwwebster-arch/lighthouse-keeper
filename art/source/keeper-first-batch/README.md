@@ -14,7 +14,8 @@ The same identity-locked process supplies further generated sources:
 turning from camera to rear, a reusable rear-facing arm-work loop, side and
 front sit-down transitions, seated piano/instrument playing, a discreet
 rear-facing urination proxy, and seated eating with fork and knife. These source
-sheets remain untouched beside the turnaround. The rejected earlier simplified
+Door opening (side and rear), ladder climbing, and distinct stair ascent/descent
+sources extend the same movement kit. These source sheets remain untouched beside the turnaround. The rejected earlier simplified
 action strips are preserved in `replaced-simplified/`; the quieter first rear-
 work loop is preserved in `replaced-motion-v1/` for provenance only.
 
@@ -37,6 +38,11 @@ Left walk, left sit and left-facing seated eating are exact horizontal mirrors.
 Get-up replays the relevant sit strip in reverse. The manifest records those
 mirror/reverse rules plus the seat and hand-use points so furniture can be
 aligned without redrawing the keeper.
+
+Side door use mirrors for a left-hand door and both door-opening clips reverse
+for closing. Ladder descent reverses the climb sequence. Stairs deliberately
+use separate up/down cycles because descending needs a more upright balance and
+different leading-foot placement; both stair cycles mirror for left travel.
 
 The `docs/floor-asset-catalogue/keeper-*-preview.gif` files are enlarged
 previews made from the exact production frames; they are not separate artwork.
@@ -64,6 +70,16 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
   keeper, six discreet restroom frames with both hands held low in front.
 - `keeper-eat-seated-generated-source.png` — exact same side-seated keeper,
   eight frames moving a fork from table height to mouth while a knife stays low.
+- `keeper-door-side-generated-source.png` — six side-view frames reaching,
+  turning an invisible handle, pulling and stepping through; mirror/reverse safe.
+- `keeper-door-back-generated-source.png` — six rear-view frames of the same
+  invisible-handle opening action; mirror handle side and reverse to close.
+- `keeper-ladder-generated-source.png` — eight rear-view hand-over-hand frames
+  with alternating boots on invisible rungs; reverse for descent.
+- `keeper-stairs-up-generated-source.png` — eight right-facing high-knee ascent
+  frames for diagonal runtime translation; mirror for left-rising stairs.
+- `keeper-stairs-down-generated-source.png` — eight right-facing careful descent
+  frames with upright balance; mirror for left-descending stairs.
 
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,

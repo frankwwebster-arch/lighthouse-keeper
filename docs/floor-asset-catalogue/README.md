@@ -16,7 +16,7 @@ Pixel studio lets Frank adjust pixel block size, paint or erase individual frame
 
 BB Sea news literally reads `B B SEA`, adapted from the supplied BBC NEWS reference, followed by NEWS lettering and a tiny newsreader head. Sport shows football; Nature shows animals. Four ON frames are one animated state, not four asset variants. Broken TV uses one damaged image plus shared smoke/sparks and existing body vibration. Channel selection reuses existing watch/nature actions; no new gameplay effect is claimed. The production guide now requires ON only for operating devices; passive furniture remains standard and is designed around keeper poses.
 
-The Completed assets and Pixel studio tabs also contain the keeper continuation: aligned front/back master parts plus idle, walk, turn-to-rear, reusable rear work, side/front sitting, seated eating, discreet urination and piano clips. Search `keeper_` to isolate them. The large turnaround is a style reference; the 32 × 40 density-4 strips are the runtime review candidates.
+The Completed assets and Pixel studio tabs also contain the keeper continuation: aligned front/back master parts plus idle, walk, turn-to-rear, reusable rear work, side/front sitting, seated eating, discreet urination, door use, ladder/stair travel and piano clips. Search `keeper_` to isolate them. The large turnaround is a style reference; the 32 × 40 density-4 strips are the runtime review candidates.
 
 The production walk is an eight-frame right-facing side cycle at 10 fps. The
 runtime mirrors it for left-facing movement. `keeper-walk-preview.gif` is an
@@ -29,6 +29,9 @@ mirrored for a left-hand chair; both sitting strips reverse for standing up.
 Furniture should align its seat to the manifest `seatPoint`, not alter the pose.
 `keeper-eat-seated-preview.gif` adds the fork-to-mouth dining loop, and
 `keeper-urinate-back-preview.gif` is the separate hands-low bathroom proxy.
+Door previews cover side and rear opening, ping-ponging only to demonstrate the
+reverse-to-close contract. Ladder climb likewise ping-pongs to demonstrate
+up/down. Stair ascent and descent have separate looping previews.
 
 ## Art corrections recorded from this review
 

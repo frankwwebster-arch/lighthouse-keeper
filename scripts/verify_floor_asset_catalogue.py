@@ -39,7 +39,7 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==29
+assert len(keeper_pngs)==34
 required_clips={
     'keeper_idle':(4,6), 'keeper_walk':(8,10),
     'keeper_turn_back':(6,8), 'keeper_work_back':(8,8),
@@ -47,6 +47,9 @@ required_clips={
     'keeper_brush_teeth_back':(8,8), 'keeper_sit_side':(6,8),
     'keeper_sit_front':(6,8), 'keeper_piano':(8,10),
     'keeper_urinate_back':(6,8), 'keeper_eat_seated':(8,8),
+    'keeper_door_open_side':(6,8), 'keeper_door_open_back':(6,8),
+    'keeper_ladder_climb':(8,10), 'keeper_stairs_up':(8,10),
+    'keeper_stairs_down':(8,10),
 }
 for raw in keeper_pngs:
     sidecar=json.loads(raw.with_suffix('.json').read_text())
@@ -74,6 +77,12 @@ assert manifest['keeper_piano']['seatPoint']==[16,29] and manifest['keeper_piano
 assert manifest['keeper_urinate_back']['handUsePoint']==[16,27]
 assert manifest['keeper_eat_seated']['seatPoint']==[16,29] and manifest['keeper_eat_seated']['handUsePoint']==[24,17]
 assert manifest['keeper_eat_seated']['mirrorSafe'] is True
+assert manifest['keeper_door_open_side']['loop'] is False
+assert manifest['keeper_door_open_side']['reverseFor']=='door_close_side' and manifest['keeper_door_open_side']['mirrorSafe'] is True
+assert manifest['keeper_door_open_back']['loop'] is False
+assert manifest['keeper_door_open_back']['reverseFor']=='door_close_back' and manifest['keeper_door_open_back']['mirrorSafe'] is True
+assert manifest['keeper_ladder_climb']['reverseFor']=='ladder_descend'
+assert manifest['keeper_stairs_up']['mirrorSafe'] is True and manifest['keeper_stairs_down']['mirrorSafe'] is True
 walk=Image.open(root/'public/sprites'/manifest['keeper_walk']['file']).convert('RGBA')
 walk_frames=[walk.crop((i*128,0,(i+1)*128,160)) for i in range(8)]
 assert len({frame.tobytes() for frame in walk_frames})>=5
@@ -83,8 +92,11 @@ previews={
     'keeper-work-back':(8,120), 'keeper-sit-side':(10,120),
     'keeper-sit-front':(10,120), 'keeper-piano':(8,100),
     'keeper-urinate-back':(6,120), 'keeper-eat-seated':(8,120),
+    'keeper-door-open-side':(10,120), 'keeper-door-open-back':(10,120),
+    'keeper-ladder-climb':(14,100), 'keeper-stairs-up':(8,100),
+    'keeper-stairs-down':(8,100),
 }
 for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
-print('Verified: 71 spaces, 1531 rows, owned-item states, 9 TV/lamp/FX exports, 29 aligned keeper exports, hard alpha, animated clips and manifest contracts.')
+print('Verified: 71 spaces, 1531 rows, owned-item states, 9 TV/lamp/FX exports, 34 aligned keeper exports, hard alpha, animated clips and manifest contracts.')

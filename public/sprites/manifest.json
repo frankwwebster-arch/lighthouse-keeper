@@ -163,6 +163,46 @@
   "loop": true,
   "z": 50
  },
+ "keeper_door_open_back": {
+  "file": "keeper_door_open_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   24,
+   20
+  ],
+  "loop": false,
+  "reverseFor": "door_close_back",
+  "mirrorSafe": true,
+  "z": 50
+ },
+ "keeper_door_open_side": {
+  "file": "keeper_door_open_side.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   25,
+   20
+  ],
+  "loop": false,
+  "reverseFor": "door_close_side",
+  "mirrorSafe": true,
+  "z": 50
+ },
  "keeper_eat_seated": {
   "file": "keeper_eat_seated.png",
   "w": 32,
@@ -370,6 +410,25 @@
   "loop": true,
   "z": 50
  },
+ "keeper_ladder_climb": {
+  "file": "keeper_ladder_climb.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   16,
+   6
+  ],
+  "loop": true,
+  "reverseFor": "ladder_descend",
+  "z": 50
+ },
  "keeper_piano": {
   "file": "keeper_piano.png",
   "w": 32,
@@ -441,6 +500,36 @@
   ],
   "loop": false,
   "reverseFor": "stand_side",
+  "mirrorSafe": true,
+  "z": 50
+ },
+ "keeper_stairs_down": {
+  "file": "keeper_stairs_down.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "z": 50
+ },
+ "keeper_stairs_up": {
+  "file": "keeper_stairs_up.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "loop": true,
   "mirrorSafe": true,
   "z": 50
  },

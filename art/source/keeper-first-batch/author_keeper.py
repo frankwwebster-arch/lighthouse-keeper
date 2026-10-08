@@ -206,21 +206,58 @@ def generated_frames(filename, expected, fallback=None):
             if x - start > 80:
                 runs.append((start, x))
             start = None
+    components = None
     if len(runs) != expected:
-        raise ValueError(f"Expected {expected} generated keeper poses in {filename}, found {len(runs)}")
-
-    bounds = []
-    for x0, x1 in runs:
-        crop_alpha = alpha.crop((x0, 0, x1, sheet.height))
-        box = crop_alpha.getbbox()
-        if box is None:
-            raise ValueError("Generated keeper pose is empty")
-        bounds.append((x0 + box[0], box[1], x0 + box[2], box[3]))
+        # Rarely two well-spaced figures overlap by a few x columns without
+        # touching. Fall back to actual connected figures rather than cutting
+        # either pose at an arbitrary cell boundary.
+        width, height = alpha.size
+        pixels = bytearray(alpha.tobytes())
+        found = []
+        for start, value in enumerate(pixels):
+            if not value:
+                continue
+            pixels[start] = 0
+            pending = [start]
+            members = []
+            min_x, min_y, max_x, max_y = width, height, 0, 0
+            while pending:
+                index = pending.pop()
+                y, x = divmod(index, width)
+                members.append(index)
+                min_x, min_y = min(min_x, x), min(min_y, y)
+                max_x, max_y = max(max_x, x), max(max_y, y)
+                for neighbour in (index - 1, index + 1, index - width, index + width):
+                    if 0 <= neighbour < width * height and pixels[neighbour] and (neighbour // width == y or neighbour % width == x):
+                        pixels[neighbour] = 0
+                        pending.append(neighbour)
+            if len(members) > 1000:
+                found.append(((min_x, min_y, max_x + 1, max_y + 1), members))
+        found.sort(key=lambda item: item[0][0])
+        if len(found) != expected:
+            raise ValueError(f"Expected {expected} generated keeper poses in {filename}, found {len(runs)} column runs and {len(found)} connected figures")
+        bounds = [box for box, _ in found]
+        components = [members for _, members in found]
+    else:
+        bounds = []
+        for x0, x1 in runs:
+            crop_alpha = alpha.crop((x0, 0, x1, sheet.height))
+            box = crop_alpha.getbbox()
+            if box is None:
+                raise ValueError("Generated keeper pose is empty")
+            bounds.append((x0 + box[0], box[1], x0 + box[2], box[3]))
     tallest = max(y1 - y0 for _, y0, _, y1 in bounds)
     scale = 152 / tallest
     frames = []
-    for box in bounds:
+    for pose_index, box in enumerate(bounds):
         pose = sheet.crop(box)
+        if components is not None:
+            x0, y0, x1, y1 = box
+            component_alpha = bytearray((x1 - x0) * (y1 - y0))
+            for index in components[pose_index]:
+                y, x = divmod(index, sheet.width)
+                component_alpha[(y - y0) * (x1 - x0) + x - x0] = 255
+            pose.putalpha(Image.frombytes("L", pose.size, bytes(component_alpha)))
         size = (max(1, round(pose.width * scale)), max(1, round(pose.height * scale)))
         pose = pose.resize(size, Image.Resampling.LANCZOS)
         # The game contract requires hard alpha even when a generated edge has a fringe.
@@ -293,6 +330,11 @@ sit_front_frames = generated_frames("keeper-sit-front-generated-source.png", 6)
 piano_frames = generated_frames("keeper-piano-generated-source.png", 8)
 urinate_frames = generated_frames("keeper-loo-stand-generated-source.png", 6)
 eat_seated_frames = generated_frames("keeper-eat-seated-generated-source.png", 8)
+door_side_frames = generated_frames("keeper-door-side-generated-source.png", 6)
+door_back_frames = generated_frames("keeper-door-back-generated-source.png", 6)
+ladder_frames = generated_frames("keeper-ladder-generated-source.png", 8)
+stairs_up_frames = generated_frames("keeper-stairs-up-generated-source.png", 8)
+stairs_down_frames = generated_frames("keeper-stairs-down-generated-source.png", 8)
 save("keeper_walk", walk_frames, 10, mirror_safe=True)
 save("keeper_turn_back", turn_frames, 8, loop=False, reverse_for="turn_front")
 save("keeper_work_back", work_frames, 8, hand_use_point=[16, 21])
@@ -304,6 +346,11 @@ save("keeper_sit_front", sit_front_frames, 8, loop=False, seat_point=[16, 29], r
 save("keeper_piano", piano_frames, 10, seat_point=[16, 29], hand_use_point=[24, 20])
 save("keeper_urinate_back", urinate_frames, 8, hand_use_point=[16, 27])
 save("keeper_eat_seated", eat_seated_frames, 8, seat_point=[16, 29], hand_use_point=[24, 17], mirror_safe=True)
+save("keeper_door_open_side", door_side_frames, 8, loop=False, hand_use_point=[25, 20], reverse_for="door_close_side", mirror_safe=True)
+save("keeper_door_open_back", door_back_frames, 8, loop=False, hand_use_point=[24, 20], reverse_for="door_close_back", mirror_safe=True)
+save("keeper_ladder_climb", ladder_frames, 10, hand_use_point=[16, 6], reverse_for="ladder_descend")
+save("keeper_stairs_up", stairs_up_frames, 10, mirror_safe=True)
+save("keeper_stairs_down", stairs_down_frames, 10, mirror_safe=True)
 
 # A transparent source contact sheet makes alignment mistakes easy to spot.
 contact = Image.new("RGBA", (W * 4, H * 2), (244, 236, 214, 255))
@@ -319,4 +366,9 @@ save_preview("keeper-sit-front", sit_front_frames, 120, ping_pong=True)
 save_preview("keeper-piano", piano_frames, 100)
 save_preview("keeper-urinate-back", urinate_frames, 120)
 save_preview("keeper-eat-seated", eat_seated_frames, 120)
+save_preview("keeper-door-open-side", door_side_frames, 120, ping_pong=True)
+save_preview("keeper-door-open-back", door_back_frames, 120, ping_pong=True)
+save_preview("keeper-ladder-climb", ladder_frames, 100, ping_pong=True)
+save_preview("keeper-stairs-up", stairs_up_frames, 100)
+save_preview("keeper-stairs-down", stairs_down_frames, 100)
 print(f"Keeper batch authored in {OUT}")

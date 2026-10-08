@@ -103,6 +103,13 @@ and other camera-facing seats use `sit_front` with the same seat point. Getting
 up plays the matching strip in reverse. Never redraw or scale the keeper to fit
 a chair: position the furniture seat under the shared anchor instead.
 
+Doors use an invisible interaction plane: side opening mirrors for left/right,
+rear opening mirrors to swap handle side, and closing reverses the matching
+opening strip. Ladder art stays separate from the keeper; the rear climb clip
+plays forward/up and reverse/down while runtime movement supplies world Y.
+Stairs use distinct side-view ascent and descent cycles, with runtime movement
+supplying the diagonal path; mirror either cycle for a left-facing flight.
+
 Furniture approval requires a quick silhouette test with the keeper beside it
 and, where relevant, seated at it. Device approval requires a believable hand
 reach and a clear standing or seated use position. If the keeper's proportions
