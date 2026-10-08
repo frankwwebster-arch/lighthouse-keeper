@@ -170,6 +170,24 @@ Combines a ball-pit search game, soft-play obstacles and trampoline timing. A ca
 
 A reusable floor that changes between castle, space station, pirate ship, jungle, haunted room and Arctic-base themes. Themes alter scenery and the mini-game rather than requiring a permanent floor for each one.
 
+### Zero-gravity room
+
+A full late-game floor with a sealed entrance, padded walls and objects drifting around the keeper. It may begin as part of a space-research mission but remains a permanent activity room rather than merely a visual theme.
+
+Activities can include:
+
+- Float through rings or collect drifting objects.
+- Play slow-motion zero-gravity ball.
+- Put planets or satellites into the correct orbit.
+- Recover lunch, tools or the cat's toys from the ceiling.
+- Complete comic astronaut training.
+
+The movement can reuse some of the pool's broad swimming language, but needs its own normal-clothes or spacesuit silhouette. Keep pixel motion crisp: integer translations and hand-drawn orientations rather than arbitrary raster rotation.
+
+The room depends on electrical power. A controlled shutdown gently restores gravity; a breakdown makes everything hang for a beat and then fall into padded nets with a comic crash. Storm power loss, solar batteries, the computer room and observatory can all feed its missions.
+
+Unlock challenge: use the observatory, solve a simple orbit/sequence puzzle, reserve enough stored power, then pass a short floating-object training course.
+
 ### Conservatory and greenhouse
 
 They serve different purposes and may both exist. The greenhouse is an exterior food-growing facility with crops, irrigation and breakable glass. The conservatory is an indoor leisure floor with decorative plants, tea, reading, visitors and an overgrowth problem if neglected.
@@ -192,6 +210,22 @@ Reuse the Victorian swimming costume. Initial clips:
 - `pool_rescue` — tow an object or visitor.
 
 Activities include lengths, floating, inflatables, retrieving lost objects and gentle rescue practice. The pool depends on the boiler for heat and the pump for cleanliness. Wind may slosh the water; fish may occasionally peer through an inappropriate glass panel.
+
+The pool includes a proper changing area with toilets, basins and showers. These fixtures count as normal nearby bathroom facilities even when the player is not swimming.
+
+## Bathrooms and walking-distance rule
+
+Do not make the keeper repeatedly climb most of the lighthouse for basic hygiene or bladder needs. Bathrooms are distributed amenities, not scarce progression rewards.
+
+- Bedroom en suite remains the private bathroom.
+- Pool changing room includes toilets, basins and showers.
+- Gym/hot-tub area can include another shower/changing room.
+- Pub/inn needs a guest toilet.
+- Large future clusters can receive a small rear service bathroom or WC without consuming an entire standard floor.
+- Aim to keep every ordinary floor within roughly three floor bands of a usable toilet and wash point after random placement.
+- Commands such as “use the loo” or “wash” should route to the nearest available suitable fixture rather than a single hard-coded object.
+
+Extra fixtures are keeper-owned and may have local plumbing faults, but the fault system should avoid disabling every toilet or wash point simultaneously. Boiler failure affects hot water globally; it does not stop toilets working.
 
 ## Boiler room and service dependencies
 
@@ -244,6 +278,22 @@ A ground/island facility for bicycles, the automated hoover, robot butler, boat 
 ### Gym hot-tub extension
 
 A deliberately precarious cantilevered platform on the outside wall. The hot tub depends on boiler heat and its pump, is delightful in snow, uncomfortable in a heatwave and alarming from the full-tower view.
+
+### Kitchen BBQ extension
+
+A small exterior balcony/bay attached to the kitchen, with a BBQ, preparation shelf and room for the keeper and a visitor. It is especially appealing on sunny and hot days and supports outdoor meals without becoming a separate floor.
+
+Activities include grilling food, preparing a picnic, feeding visitors and a short cooking-timing challenge. Weather changes its use:
+
+- Sunny/hot: extra fun and social value.
+- Light rain: usable with an awning upgrade, but the keeper is reluctant without one.
+- Strong wind: unsafe to light.
+- Heavy rain or thunderstorm: unavailable.
+- Cold weather: possible, but the keeper questions the decision.
+
+It is a keeper-owned breakable asset. Faults include a blocked burner, snapped grill handle or runaway smoke; fire-safety mistakes produce a brief comic flare-up rather than lasting damage.
+
+Unlock challenge: check for a dry weather window, gather ingredients, demonstrate safe lighting and cook several different items for a small outdoor meal.
 
 ## Weather and gameplay
 
