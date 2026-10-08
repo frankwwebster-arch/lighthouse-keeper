@@ -113,7 +113,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Float in anti-gravity | `keeper_anti_gravity` | centred 48 × 48 loop; room applies drift/circling translation |
 | Chop plants | `keeper_machete_side` | right; mirror left; machete included, plants separate |
 | Drink handled pint | `keeper_drink_pint` | seated front-right; mirror front-left; tankard included |
-| Ride bicycle | `keeper_ride_bike_front` | direct front; handlebars/front wheel included |
+| Use stationary exercise bike | `keeper_ride_bike_front` | direct front; old-school workout kit; actor only; align separate bike to hand, seat and pedal points |
 | Press lift button | `keeper_lift_button_front` | front, right-hand reach; mirror to swap hand |
 | Climb spiral stairs | `keeper_spiral_stairs` | three-quarter curved-step loop; staircase/rail separate |
 | Ride slide | `keeper_slide_side` | right; mirror left; slide separate |

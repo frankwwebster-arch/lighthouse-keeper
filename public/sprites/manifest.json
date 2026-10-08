@@ -2044,9 +2044,22 @@
    20,
    40
   ],
+  "seatPoint": [
+   20,
+   27
+  ],
+  "handUsePoint": [
+   20,
+   19
+  ],
+  "pedalPoint": [
+   20,
+   34
+  ],
+  "outfit": "old-school-workout-kit",
   "loop": true,
   "facing": "front",
-  "interaction": "ride-bike",
+  "interaction": "use-stationary-exercise-bike",
   "z": 50
  },
  "keeper_row_boat": {

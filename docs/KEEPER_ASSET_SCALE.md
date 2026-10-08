@@ -55,6 +55,9 @@ downward. A side-facing point at X mirrors with `mirroredX = canvasWidth - X`.
 | Watering target | 9 px | extended side canvas `(35,31)` |
 | Barometer / instrument control | 23 px | side `(27,17)`; rear `(26,17)` |
 | Lift button | 23 px | front `(27,17)` |
+| Exercise-bike handlebar centre | 21 px | front `(20,19)` on 40 × 40 canvas |
+| Exercise-bike seat | 13 px | front `(20,27)` on 40 × 40 canvas |
+| Exercise-bike pedal centre | 6 px | front `(20,34)` on 40 × 40 canvas |
 
 These are interaction datums, not mandatory object sizes. For example, a light
 switch can have any suitable plate size, but its button centre must be 23 px
@@ -104,6 +107,11 @@ must remain unchanged.
 Rear weightlifting uses a 48 × 56 overhead-action canvas anchored at `(24,56)`.
 The extra height belongs to raised arms and the barbell; it must never be
 obtained by shrinking the keeper's body below the canonical reference scale.
+
+The stationary exercise-bike loop is actor-only in the same workout kit. Build
+the bike as a separate object and align its handlebar centre, saddle and crank
+to `(20,19)`, `(20,27)` and `(20,34)` respectively. The keeper remains fixed in
+place; only his knees, feet and small exertion bob animate.
 
 Directional underwater movement reads `movementVector` from the manifest:
 right `(1,0)`, mirrored left `(-1,0)`, up `(0,-1)`, and down `(0,1)`. Water,

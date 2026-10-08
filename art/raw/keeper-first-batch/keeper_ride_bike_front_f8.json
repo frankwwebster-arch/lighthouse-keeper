@@ -10,6 +10,19 @@
   ],
   "z": 50,
   "loop": true,
+  "seatPoint": [
+    20,
+    27
+  ],
+  "handUsePoint": [
+    20,
+    19
+  ],
+  "pedalPoint": [
+    20,
+    34
+  ],
+  "outfit": "old-school-workout-kit",
   "facing": "front",
-  "interaction": "ride-bike"
+  "interaction": "use-stationary-exercise-bike"
 }

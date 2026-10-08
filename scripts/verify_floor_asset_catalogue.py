@@ -192,6 +192,11 @@ assert manifest['keeper_place_cake']['handUsePoint']==[39,28]
 assert manifest['keeper_place_cake']['mirrorSafe'] is True and manifest['keeper_place_cake']['mirrorsFor']=='left'
 for name in ['keeper_trampoline_front','keeper_lift_weights_back','keeper_pressups_side']:
     assert manifest[name]['outfit']=='old-school-workout-kit'
+exercise_bike=manifest['keeper_ride_bike_front']
+assert exercise_bike['outfit']=='old-school-workout-kit'
+assert exercise_bike['interaction']=='use-stationary-exercise-bike'
+assert exercise_bike['handUsePoint']==[20,19] and exercise_bike['seatPoint']==[20,27]
+assert exercise_bike['pedalPoint']==[20,34]
 assert manifest['keeper_lift_weights_back']['w']==48 and manifest['keeper_lift_weights_back']['h']==56
 assert manifest['keeper_lift_weights_back']['anchor']==[24,56] and manifest['keeper_lift_weights_back']['handUsePoint']==[24,5]
 pressups=Image.open(root/'public/sprites'/manifest['keeper_pressups_side']['file']).convert('RGBA')
@@ -243,6 +248,7 @@ assert asset_contract['canvas']['extendedOverheadExercise']=={'width':48,'height
 assert asset_contract['interactionProfiles']['carryCakeRight']['handUsePoint']==[34,20]
 assert asset_contract['interactionProfiles']['carryMealRight']['handUsePoint']==[34,20]
 assert asset_contract['interactionProfiles']['placeCakeRight']['handUsePoint']==[39,28]
+assert asset_contract['interactionProfiles']['exerciseBikeFront']['pedalPoint']==[20,34]
 assert asset_contract['interactionProfiles']['switchSideRight']['handUsePoint']==[27,17]
 assert asset_contract['interactionProfiles']['switchBackRightHand']['handUsePoint']==[26,17]
 assert asset_contract['interactionProfiles']['drumsFront']['seatPoint']==[16,37]

@@ -366,12 +366,13 @@ def part(which, rear=False, mood="neutral"):
     return im
 
 
-def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=True, seat_point=None, hand_use_point=None, look_target_point=None, bed_surface_point=None, pillow_point=None, movement_vector=None, outfit=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
+def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=True, seat_point=None, hand_use_point=None, pedal_point=None, look_target_point=None, bed_surface_point=None, pillow_point=None, movement_vector=None, outfit=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
     value = {"w": w, "h": h, "frames": frames, "fps": fps, "density": D, "anchor": anchor_point or [w // 2, h], "z": 50}
     if pivot is not None: value["pivot"] = pivot
     value["loop"] = loop
     if seat_point is not None: value["seatPoint"] = seat_point
     if hand_use_point is not None: value["handUsePoint"] = hand_use_point
+    if pedal_point is not None: value["pedalPoint"] = pedal_point
     if look_target_point is not None: value["lookTargetPoint"] = look_target_point
     if bed_surface_point is not None: value["bedSurfacePoint"] = bed_surface_point
     if pillow_point is not None: value["pillowPoint"] = pillow_point
@@ -643,7 +644,7 @@ ADDITIONAL_CLIPS = [
     ("keeper_anti_gravity", "keeper-anti-gravity-generated-source.png", 48, 48, dict(anchor_point=[24, 24], facing="front", interaction="anti-gravity-float")),
     ("keeper_machete_side", "keeper-machete-side-generated-source.png", 48, 40, dict(hand_use_point=[42, 28], facing="right", interaction="chop-plants", mirror_safe=True, mirrors_for="left")),
     ("keeper_drink_pint", "keeper-drink-pint-generated-source.png", 40, 40, dict(seat_point=[20, 29], hand_use_point=[25, 16], facing="front-right", interaction="drink-pint", mirror_safe=True, mirrors_for="front-left")),
-    ("keeper_ride_bike_front", "keeper-bike-front-generated-source.png", 40, 40, dict(facing="front", interaction="ride-bike")),
+    ("keeper_ride_bike_front", "keeper-bike-front-generated-source.png", 40, 40, dict(seat_point=[20, 27], hand_use_point=[20, 19], pedal_point=[20, 34], outfit="old-school-workout-kit", facing="front", interaction="use-stationary-exercise-bike")),
     ("keeper_lift_button_front", "keeper-lift-button-front-generated-source.png", 32, 40, dict(hand_use_point=[27, 17], facing="front", interaction="press-lift-button", mirror_safe=True, mirrors_for="front-left-hand")),
     ("keeper_spiral_stairs", "keeper-spiral-stairs-generated-source.png", 40, 48, dict(facing="three-quarter", interaction="climb-spiral-stairs")),
     ("keeper_slide_side", "keeper-slide-side-generated-source.png", 48, 40, dict(facing="right", interaction="ride-slide", mirror_safe=True, mirrors_for="left")),

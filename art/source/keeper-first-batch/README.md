@@ -232,6 +232,13 @@ head, hand and foot scale, with the horizontal body spanning the extended
 64 × 40 frame instead of being reduced to a miniature figure. The superseded
 uniform sheets are retained under `replaced-fitness-uniform-v1/`.
 
+The front bicycle study was replaced with an actor-only stationary
+exercise-bike loop in the same old-school workout kit. The keeper grips two
+invisible fixed handlebar points and pedals around an invisible crank; all bike
+hardware is a separate object aligned through manifest hand, seat and pedal
+points. The superseded road-bike sheet is retained under
+`replaced-bicycle-v1/`.
+
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,
 hardens alpha, places it on a density-4 contract canvas, and emits the manifest
