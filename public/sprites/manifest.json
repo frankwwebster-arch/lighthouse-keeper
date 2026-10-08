@@ -349,6 +349,50 @@
   "mirrorsFor": "back-to-left",
   "z": 50
  },
+ "keeper_carry_cake": {
+  "file": "keeper_carry_cake.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   34,
+   20
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "walk-carry-cake",
+  "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_carry_meal": {
+  "file": "keeper_carry_meal.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   34,
+   20
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "walk-carry-meal",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_carry_shopping": {
   "file": "keeper_carry_shopping.png",
   "w": 32,
@@ -1254,17 +1298,17 @@
  },
  "keeper_lift_weights_back": {
   "file": "keeper_lift_weights_back.png",
-  "w": 40,
-  "h": 48,
+  "w": 48,
+  "h": 56,
   "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
-   20,
-   48
+   24,
+   56
   ],
   "handUsePoint": [
-   20,
+   24,
    5
   ],
   "outfit": "old-school-workout-kit",
@@ -1694,6 +1738,28 @@
   "mirrorsFor": "left",
   "z": 50
  },
+ "keeper_place_cake": {
+  "file": "keeper_place_cake.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   39,
+   28
+  ],
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "place-cake-on-table",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_platform_dive": {
   "file": "keeper_platform_dive.png",
   "w": 48,
@@ -1809,13 +1875,13 @@
  },
  "keeper_pressups_side": {
   "file": "keeper_pressups_side.png",
-  "w": 48,
+  "w": 64,
   "h": 40,
   "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
-   24,
+   32,
    40
   ],
   "outfit": "old-school-workout-kit",
@@ -2054,13 +2120,13 @@
  },
  "keeper_scuba_swim_horizontal": {
   "file": "keeper_scuba_swim_horizontal.png",
-  "w": 48,
+  "w": 64,
   "h": 48,
   "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
-   24,
+   32,
    24
   ],
   "movementVector": [
@@ -2471,13 +2537,13 @@
  },
  "keeper_swim_costume_horizontal": {
   "file": "keeper_swim_costume_horizontal.png",
-  "w": 48,
+  "w": 64,
   "h": 48,
   "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
-   24,
+   32,
    24
   ],
   "movementVector": [

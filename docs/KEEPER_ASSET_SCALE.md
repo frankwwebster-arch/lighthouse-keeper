@@ -16,11 +16,12 @@ page explains it in ordinary language.
   same size; only the transparent space around him grows.
 - Bed entry and snoring use 48 × 40 with anchor `(24,40)` so the horizontal
   body fits without rescaling.
-- Press-ups use the same 48 × 40 extended horizontal canvas. The keeper's
-  head-to-toe body length must be at least 36 logical pixels in every frame;
+- Press-ups use a 64 × 40 extended horizontal canvas. The keeper's
+  head-to-toe body length must be at least 52 logical pixels in every frame;
   the horizontal pose is never scaled down as if it were a standing figure.
-- Directional swimming uses a centred 48 × 48 canvas and movement anchor
-  `(24,24)`. Party headwear uses 32 × 48 with feet anchor `(16,48)`.
+- Left/right swimming uses a 64 × 48 canvas and movement anchor `(32,24)` so
+  the horizontal body keeps canonical scale. Up/down swimming remains centred
+  on 48 × 48 at `(24,24)`. Party headwear uses 32 × 48 with feet anchor `(16,48)`.
 - Never scale the keeper to make him meet an object. Position and size the
   object from the interaction points below.
 
@@ -100,6 +101,10 @@ trainers. This applies to trampoline, weight lifting and press-ups. The clothes
 may change the silhouette, but the canonical head, hands, feet and body scale
 must remain unchanged.
 
+Rear weightlifting uses a 48 × 56 overhead-action canvas anchored at `(24,56)`.
+The extra height belongs to raised arms and the barbell; it must never be
+obtained by shrinking the keeper's body below the canonical reference scale.
+
 Directional underwater movement reads `movementVector` from the manifest:
 right `(1,0)`, mirrored left `(-1,0)`, up `(0,-1)`, and down `(0,1)`. Water,
 bubbles and splashes remain separate effects. The extended party canvas adds
@@ -126,6 +131,17 @@ the oven rack to `(24,30)` for the direct-rear retrieval. The connected turn
 holds the tray at `(34,20)` for right and mirrored `(14,20)` for left. The
 mitts, tray and cake stay on the actor; oven casing, door and rack stay on the
 object so different ovens can reuse the same animation.
+
+The cake and plated-meal walking loops use that same 48 × 40 canvas and carry
+point: `(34,20)` facing right, mirrored to `(14,20)` facing left. Their trays
+remain level while the feet follow the canonical walk rhythm. This lets the
+oven retrieval, cake turn, carry loop and table placement connect without
+rescaling or shifting the held food.
+
+For table placement, align the invisible tabletop to `(39,28)` on the
+right-facing `keeper_place_cake` or `keeper_meal_place_side` canvas and mirror
+to `(9,28)` for left. Each one-shot lowers and releases its food before the
+keeper returns to a fully upright empty-handed final frame.
 
 Any new prop-based animation must add its hand, seat or ground point to the
 JSON contract and its sprite sidecar. Verification rejects changes that break

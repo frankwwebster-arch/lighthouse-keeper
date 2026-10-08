@@ -325,6 +325,34 @@ def generated_frames(filename, expected, fallback=None, logical_width=32, logica
     return frames
 
 
+def remove_small_alpha_components(frame, min_pixels=200):
+    """Remove neighbouring-cell flecks while retaining actor and released props."""
+    width, height = frame.size
+    pixels = bytearray(frame.getchannel("A").tobytes())
+    source = pixels[:]
+    keep = bytearray(width * height)
+    for start, value in enumerate(source):
+        if not value:
+            continue
+        source[start] = 0
+        pending = [start]
+        members = []
+        while pending:
+            index = pending.pop()
+            members.append(index)
+            y, x = divmod(index, width)
+            for neighbour in (index - 1, index + 1, index - width, index + width):
+                if 0 <= neighbour < width * height and source[neighbour] and (neighbour // width == y or neighbour % width == x):
+                    source[neighbour] = 0
+                    pending.append(neighbour)
+        if len(members) >= min_pixels:
+            for index in members:
+                keep[index] = 255
+    cleaned = frame.copy()
+    cleaned.putalpha(Image.frombytes("L", frame.size, bytes(keep)))
+    return cleaned
+
+
 def part(which, rear=False, mood="neutral"):
     im = image()
     if which == "torso": torso(im, rear)
@@ -425,10 +453,10 @@ pyjamas_walk_frames = generated_frames("keeper-pyjamas-walk-light-blue-generated
 pyjamas_turn_back_frames = generated_frames("keeper-pyjamas-turn-back-light-blue-generated-source.png", 6)
 get_into_bed_frames = generated_frames("keeper-get-into-bed-light-blue-generated-source.png", 8, logical_width=48, min_component_pixels=10000)
 pyjamas_snore_frames = generated_frames("keeper-snore-light-blue-generated-source.png", 6, logical_width=48)
-swim_costume_horizontal_frames = generated_frames("keeper-swim-costume-horizontal-generated-source.png", 8, logical_width=48, logical_height=48)
+swim_costume_horizontal_frames = generated_frames("keeper-swim-costume-horizontal-generated-source.png", 8, logical_width=64, logical_height=48)
 swim_costume_up_frames = generated_frames("keeper-swim-costume-up-generated-source.png", 8, logical_width=48, logical_height=48)
 swim_costume_down_frames = generated_frames("keeper-swim-costume-down-generated-source.png", 8, logical_width=48, logical_height=48)
-scuba_horizontal_frames = generated_frames("keeper-scuba-horizontal-generated-source.png", 8, logical_width=48, logical_height=48)
+scuba_horizontal_frames = generated_frames("keeper-scuba-horizontal-generated-source.png", 8, logical_width=64, logical_height=48)
 scuba_up_frames = generated_frames("keeper-scuba-up-generated-source.png", 8, logical_width=48, logical_height=48)
 scuba_down_frames = generated_frames("keeper-scuba-down-generated-source.png", 8, logical_width=48, logical_height=48)
 party_idle_frames = generated_frames("keeper-party-idle-generated-source.png", 4, logical_height=48)
@@ -446,6 +474,9 @@ clear_snow_frames = generated_frames("keeper-clear-snow-generated-source.png", 8
 crouch_work_back_frames = generated_frames("keeper-crouch-work-back-generated-source.png", 8)
 cake_from_oven_back_frames = generated_frames("keeper-cake-from-oven-back-generated-source.png", 8, logical_width=48)
 cake_turn_right_frames = generated_frames("keeper-cake-turn-right-generated-source.png", 6, logical_width=48)
+carry_cake_frames = generated_frames("keeper-carry-cake-generated-source.png", 8, logical_width=48)
+carry_meal_frames = generated_frames("keeper-carry-meal-generated-source.png", 8, logical_width=48)
+place_cake_frames = generated_frames("keeper-place-cake-generated-source.png", 8, logical_width=48, preserve_equal_cells=True)
 save("keeper_walk", walk_frames, 10, mirror_safe=True)
 save("keeper_turn_back", turn_frames, 8, loop=False, reverse_for="turn_front")
 save("keeper_work_back", work_frames, 8, hand_use_point=[16, 21])
@@ -484,10 +515,10 @@ save("keeper_pyjamas_walk", pyjamas_walk_frames, 10, outfit="light-blue-pyjamas"
 save("keeper_pyjamas_turn_back", pyjamas_turn_back_frames, 8, outfit="light-blue-pyjamas", loop=False, reverse_for="pyjamas_turn_front", facing="front-to-back", interaction="turn-pyjamas")
 save("keeper_get_into_bed", get_into_bed_frames, 8, outfit="light-blue-pyjamas", loop=False, bed_surface_point=[24, 31], pillow_point=[38, 22], reverse_for="get_out_of_bed", mirror_safe=True, facing="right", interaction="enter-bed", mirrors_for="left")
 save("keeper_pyjamas_snore", pyjamas_snore_frames, 4, outfit="light-blue-pyjamas", bed_surface_point=[24, 31], pillow_point=[38, 22], mirror_safe=True, facing="right", interaction="sleep-snore", mirrors_for="left")
-save("keeper_swim_costume_horizontal", swim_costume_horizontal_frames, 8, anchor_point=[24, 24], movement_vector=[1, 0], outfit="striped-swimming-costume", mirror_safe=True, facing="right", interaction="swim", mirrors_for="left")
+save("keeper_swim_costume_horizontal", swim_costume_horizontal_frames, 8, anchor_point=[32, 24], movement_vector=[1, 0], outfit="striped-swimming-costume", mirror_safe=True, facing="right", interaction="swim", mirrors_for="left")
 save("keeper_swim_costume_up", swim_costume_up_frames, 8, anchor_point=[24, 24], movement_vector=[0, -1], outfit="striped-swimming-costume", facing="up", interaction="swim")
 save("keeper_swim_costume_down", swim_costume_down_frames, 8, anchor_point=[24, 24], movement_vector=[0, 1], outfit="striped-swimming-costume", facing="down", interaction="swim")
-save("keeper_scuba_swim_horizontal", scuba_horizontal_frames, 8, anchor_point=[24, 24], movement_vector=[1, 0], outfit="scuba", mirror_safe=True, facing="right", interaction="scuba-swim", mirrors_for="left")
+save("keeper_scuba_swim_horizontal", scuba_horizontal_frames, 8, anchor_point=[32, 24], movement_vector=[1, 0], outfit="scuba", mirror_safe=True, facing="right", interaction="scuba-swim", mirrors_for="left")
 save("keeper_scuba_swim_up", scuba_up_frames, 8, anchor_point=[24, 24], movement_vector=[0, -1], outfit="scuba", facing="up", interaction="scuba-swim")
 save("keeper_scuba_swim_down", scuba_down_frames, 8, anchor_point=[24, 24], movement_vector=[0, 1], outfit="scuba", facing="down", interaction="scuba-swim")
 save("keeper_party_idle", party_idle_frames, 6, anchor_point=[16, 48], outfit="party-hat", facing="front", interaction="party-idle")
@@ -505,6 +536,9 @@ save("keeper_clear_snow", clear_snow_frames, 8, hand_use_point=[43, 37], outfit=
 save("keeper_crouch_work_back", crouch_work_back_frames, 8, hand_use_point=[16, 38], facing="back", interaction="ground-work")
 save("keeper_cake_from_oven_back", cake_from_oven_back_frames, 8, loop=False, hand_use_point=[24, 30], facing="back", interaction="retrieve-cake-from-oven")
 save("keeper_cake_turn_right", cake_turn_right_frames, 8, loop=False, hand_use_point=[34, 20], mirror_safe=True, facing="back-to-right", interaction="turn-carry-cake", mirrors_for="back-to-left")
+save("keeper_carry_cake", carry_cake_frames, 10, hand_use_point=[34, 20], mirror_safe=True, facing="right", interaction="walk-carry-cake", mirrors_for="left")
+save("keeper_carry_meal", carry_meal_frames, 10, hand_use_point=[34, 20], mirror_safe=True, facing="right", interaction="walk-carry-meal", mirrors_for="left")
+save("keeper_place_cake", place_cake_frames, 8, loop=False, hand_use_point=[39, 28], mirror_safe=True, facing="right", interaction="place-cake-on-table", mirrors_for="left")
 
 # A transparent source contact sheet makes alignment mistakes easy to spot.
 contact = Image.new("RGBA", (W * 4, H * 2), (244, 236, 214, 255))
@@ -573,6 +607,9 @@ save_preview("keeper-crouch-work-back", crouch_work_back_frames, 120)
 save_preview("keeper-cake-from-oven-back", cake_from_oven_back_frames, 120)
 save_preview("keeper-cake-turn-right", cake_turn_right_frames, 120)
 save_preview("keeper-cake-turn-left", [ImageOps.mirror(frame) for frame in cake_turn_right_frames], 120)
+save_preview("keeper-carry-cake", carry_cake_frames, 100)
+save_preview("keeper-carry-meal", carry_meal_frames, 100)
+save_preview("keeper-place-cake", place_cake_frames, 120)
 
 # October interaction expansion.  The tuple is export name, generated source,
 # logical width, logical height, and runtime placement metadata.  Large room
@@ -601,8 +638,8 @@ ADDITIONAL_CLIPS = [
     ("keeper_table_tennis", "keeper-table-tennis-generated-source.png", 40, 40, dict(hand_use_point=[34, 20], facing="right", interaction="play-table-tennis", mirror_safe=True, mirrors_for="left")),
     ("keeper_darts", "keeper-darts-generated-source.png", 40, 40, dict(hand_use_point=[34, 15], look_target_point=[40, 12], facing="right", interaction="play-darts", mirror_safe=True, mirrors_for="left")),
     ("keeper_trampoline_front", "keeper-trampoline-front-generated-source.png", 32, 48, dict(outfit="old-school-workout-kit", facing="front", interaction="bounce-trampoline")),
-    ("keeper_lift_weights_back", "keeper-weights-back-generated-source.png", 40, 48, dict(hand_use_point=[20, 5], outfit="old-school-workout-kit", facing="back", interaction="lift-weights")),
-    ("keeper_pressups_side", "keeper-pressups-side-generated-source.png", 48, 40, dict(outfit="old-school-workout-kit", facing="right", interaction="press-ups", mirror_safe=True, mirrors_for="left")),
+    ("keeper_lift_weights_back", "keeper-weights-back-generated-source.png", 48, 56, dict(hand_use_point=[24, 5], outfit="old-school-workout-kit", facing="back", interaction="lift-weights")),
+    ("keeper_pressups_side", "keeper-pressups-side-generated-source.png", 64, 40, dict(outfit="old-school-workout-kit", facing="right", interaction="press-ups", mirror_safe=True, mirrors_for="left")),
     ("keeper_anti_gravity", "keeper-anti-gravity-generated-source.png", 48, 48, dict(anchor_point=[24, 24], facing="front", interaction="anti-gravity-float")),
     ("keeper_machete_side", "keeper-machete-side-generated-source.png", 48, 40, dict(hand_use_point=[42, 28], facing="right", interaction="chop-plants", mirror_safe=True, mirrors_for="left")),
     ("keeper_drink_pint", "keeper-drink-pint-generated-source.png", 40, 40, dict(seat_point=[20, 29], hand_use_point=[25, 16], facing="front-right", interaction="drink-pint", mirror_safe=True, mirrors_for="front-left")),
@@ -637,13 +674,19 @@ for outfit in ("knight", "spaceman", "pirate", "tarzan", "halloween", "mechanic"
 ADDITIONAL_CLIPS.append(("keeper_mechanic_fix", "keeper-mechanic-fix-generated-source.png", 40, 40, dict(outfit="mechanic", hand_use_point=[34, 22], facing="right", interaction="fix-vehicle", mirror_safe=True, mirrors_for="left")))
 
 for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONAL_CLIPS:
-    try:
-        frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height)
-    except ValueError:
-        # A few prop-heavy strips bridge adjacent x-runs.  Their prompts use
-        # explicit equal cells; isolate the principal figure inside each cell
-        # so a neighbour's overlapping prop cannot leak into the frame.
-        frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, force_equal_cells=True)
+    if clip_name == "keeper_meal_place_side":
+        # After release, the plated meal is detached from the keeper but must
+        # remain in the actor strip until the world object takes over.
+        frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True)
+        frames = [remove_small_alpha_components(frame) for frame in frames]
+    else:
+        try:
+            frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height)
+        except ValueError:
+            # A few prop-heavy strips bridge adjacent x-runs.  Their prompts use
+            # explicit equal cells; isolate the principal figure inside each cell
+            # so a neighbour's overlapping prop cannot leak into the frame.
+            frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, force_equal_cells=True)
     if clip_name == "keeper_put_record":
         # The source's two middle poses touch by a few pixels.  The usable
         # figure begins well inside the cell; clear only that neighbour fringe.

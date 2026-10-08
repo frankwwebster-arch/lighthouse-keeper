@@ -18,12 +18,14 @@
     "extendedSideTool": { "width": 40, "height": 40, "density": 4, "anchor": [20, 40] },
     "extendedBedAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
     "centredSwimAction": { "width": 48, "height": 48, "density": 4, "anchor": [24, 24] },
+    "horizontalSwimAction": { "width": 64, "height": 48, "density": 4, "anchor": [32, 24] },
     "extendedHeadwear": { "width": 32, "height": 48, "density": 4, "anchor": [16, 48] },
     "extendedHeldInstrument": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
     "extendedRaisedArmsAction": { "width": 32, "height": 48, "density": 4, "anchor": [16, 48] },
     "extendedSnowToolAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
     "extendedTrayAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
-    "extendedHorizontalExercise": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40], "minimumVisibleBodyLength": 36 }
+    "extendedHorizontalExercise": { "width": 64, "height": 40, "density": 4, "anchor": [32, 40], "minimumVisibleBodyLength": 52 },
+    "extendedOverheadExercise": { "width": 48, "height": 56, "density": 4, "anchor": [24, 56] }
   },
   "measuredReference": {
     "source": "public/sprites/keeper_reference.png",
@@ -75,6 +77,12 @@
     "ovenCakeBack": { "clip": "keeper_cake_from_oven_back", "handUsePoint": [24, 30], "ovenRackOffsetFromFeet": [0, -10] },
     "cakeTurnRight": { "clip": "keeper_cake_turn_right", "handUsePoint": [34, 20], "cakeCarryOffsetFromFeet": [10, -20], "mirrorFor": "cakeTurnLeft" },
     "cakeTurnLeft": { "clip": "keeper_cake_turn_right", "handUsePoint": [14, 20], "cakeCarryOffsetFromFeet": [-10, -20], "mirroredFrom": "cakeTurnRight" },
+    "carryCakeRight": { "clip": "keeper_carry_cake", "handUsePoint": [34, 20], "carryOffsetFromFeet": [10, -20], "mirrorFor": "carryCakeLeft" },
+    "carryCakeLeft": { "clip": "keeper_carry_cake", "handUsePoint": [14, 20], "carryOffsetFromFeet": [-10, -20], "mirroredFrom": "carryCakeRight" },
+    "carryMealRight": { "clip": "keeper_carry_meal", "handUsePoint": [34, 20], "carryOffsetFromFeet": [10, -20], "mirrorFor": "carryMealLeft" },
+    "carryMealLeft": { "clip": "keeper_carry_meal", "handUsePoint": [14, 20], "carryOffsetFromFeet": [-10, -20], "mirroredFrom": "carryMealRight" },
+    "placeCakeRight": { "clip": "keeper_place_cake", "handUsePoint": [39, 28], "surfaceOffsetFromFeet": [15, -12], "mirrorFor": "placeCakeLeft" },
+    "placeCakeLeft": { "clip": "keeper_place_cake", "handUsePoint": [9, 28], "surfaceOffsetFromFeet": [-15, -12], "mirroredFrom": "placeCakeRight" },
     "fishFeedHighRight": { "clip": "keeper_fish_feed_up", "handUsePoint": [26, 7], "offsetFromFeet": [10, -41], "mirrorFor": "fishFeedHighLeft" },
     "aquariumBrushRight": { "clip": "keeper_aquarium_brush", "handUsePoint": [34, 17], "offsetFromFeet": [14, -23], "mirrorFor": "aquariumBrushLeft" },
     "aquariumNetRight": { "clip": "keeper_aquarium_net", "handUsePoint": [34, 21], "offsetFromFeet": [14, -19], "mirrorFor": "aquariumNetLeft" },

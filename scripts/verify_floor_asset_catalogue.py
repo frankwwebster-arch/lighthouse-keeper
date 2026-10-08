@@ -39,7 +39,7 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==147
+assert len(keeper_pngs)==150
 required_clips={
     'keeper_idle':(4,6), 'keeper_walk':(8,10),
     'keeper_turn_back':(6,8), 'keeper_work_back':(8,8),
@@ -74,12 +74,14 @@ required_clips={
     'keeper_watch_movie':(8,6),
     'keeper_clear_snow':(8,8), 'keeper_crouch_work_back':(8,8),
     'keeper_cake_from_oven_back':(8,8), 'keeper_cake_turn_right':(6,8),
+    'keeper_carry_cake':(8,10), 'keeper_carry_meal':(8,10),
+    'keeper_place_cake':(8,8),
 }
 for raw in keeper_pngs:
     sidecar=json.loads(raw.with_suffix('.json').read_text())
     im=Image.open(raw).convert('RGBA')
     assert im.size==(sidecar['w']*sidecar['density']*sidecar['frames'],sidecar['h']*sidecar['density'])
-    assert sidecar['w'] in {32,40,48} and sidecar['h'] in {40,48,56,84}
+    assert sidecar['w'] in {32,40,48,64} and sidecar['h'] in {40,48,56,84}
     assert sidecar['density']==4
     is_centred_swim=raw.stem.startswith(('keeper_swim_costume_','keeper_scuba_swim_','keeper_anti_gravity_'))
     expected_anchor=[sidecar['w']//2,sidecar['h']//2] if is_centred_swim else [sidecar['w']//2,sidecar['h']]
@@ -146,9 +148,12 @@ for name in ['keeper_pyjamas_walk','keeper_pyjamas_turn_back','keeper_get_into_b
 assert manifest['keeper_get_into_bed']['w']==48 and manifest['keeper_get_into_bed']['bedSurfacePoint']==[24,31]
 assert manifest['keeper_get_into_bed']['pillowPoint']==[38,22] and manifest['keeper_get_into_bed']['reverseFor']=='get_out_of_bed'
 assert manifest['keeper_pyjamas_snore']['bedSurfacePoint']==[24,31] and manifest['keeper_pyjamas_snore']['pillowPoint']==[38,22]
-for name,vector in [('keeper_swim_costume_horizontal',[1,0]),('keeper_swim_costume_up',[0,-1]),('keeper_swim_costume_down',[0,1]),('keeper_scuba_swim_horizontal',[1,0]),('keeper_scuba_swim_up',[0,-1]),('keeper_scuba_swim_down',[0,1])]:
+for name,vector in [('keeper_swim_costume_up',[0,-1]),('keeper_swim_costume_down',[0,1]),('keeper_scuba_swim_up',[0,-1]),('keeper_scuba_swim_down',[0,1])]:
     assert manifest[name]['w']==48 and manifest[name]['h']==48 and manifest[name]['anchor']==[24,24]
     assert manifest[name]['movementVector']==vector
+for name in ['keeper_swim_costume_horizontal','keeper_scuba_swim_horizontal']:
+    assert manifest[name]['w']==64 and manifest[name]['h']==48 and manifest[name]['anchor']==[32,24]
+    assert manifest[name]['movementVector']==[1,0]
 assert manifest['keeper_swim_costume_horizontal']['mirrorSafe'] is True
 assert manifest['keeper_scuba_swim_horizontal']['mirrorSafe'] is True
 for name in ['keeper_party_idle','keeper_party_walk','keeper_party_turn_back']:
@@ -178,13 +183,30 @@ assert manifest['keeper_cake_from_oven_back']['loop'] is False and manifest['kee
 assert manifest['keeper_cake_turn_right']['w']==48 and manifest['keeper_cake_turn_right']['handUsePoint']==[34,20]
 assert manifest['keeper_cake_turn_right']['loop'] is False and manifest['keeper_cake_turn_right']['mirrorSafe'] is True
 assert manifest['keeper_cake_turn_right']['mirrorsFor']=='back-to-left'
+for name,interaction in [('keeper_carry_cake','walk-carry-cake'),('keeper_carry_meal','walk-carry-meal')]:
+    assert manifest[name]['w']==48 and manifest[name]['h']==40 and manifest[name]['frames']==8 and manifest[name]['fps']==10
+    assert manifest[name]['handUsePoint']==[34,20] and manifest[name]['mirrorSafe'] is True
+    assert manifest[name]['mirrorsFor']=='left' and manifest[name]['interaction']==interaction
+assert manifest['keeper_place_cake']['w']==48 and manifest['keeper_place_cake']['loop'] is False
+assert manifest['keeper_place_cake']['handUsePoint']==[39,28]
+assert manifest['keeper_place_cake']['mirrorSafe'] is True and manifest['keeper_place_cake']['mirrorsFor']=='left'
 for name in ['keeper_trampoline_front','keeper_lift_weights_back','keeper_pressups_side']:
     assert manifest[name]['outfit']=='old-school-workout-kit'
+assert manifest['keeper_lift_weights_back']['w']==48 and manifest['keeper_lift_weights_back']['h']==56
+assert manifest['keeper_lift_weights_back']['anchor']==[24,56] and manifest['keeper_lift_weights_back']['handUsePoint']==[24,5]
 pressups=Image.open(root/'public/sprites'/manifest['keeper_pressups_side']['file']).convert('RGBA')
 for frame_index in range(manifest['keeper_pressups_side']['frames']):
-    frame=pressups.crop((frame_index*48*4,0,(frame_index+1)*48*4,40*4))
+    frame=pressups.crop((frame_index*64*4,0,(frame_index+1)*64*4,40*4))
     visible=frame.getchannel('A').getbbox()
-    assert visible is not None and visible[2]-visible[0]>=36*4,(frame_index,visible)
+    assert visible is not None and visible[2]-visible[0]>=52*4,(frame_index,visible)
+for name in ['keeper_swim_costume_horizontal','keeper_scuba_swim_horizontal']:
+    horizontal=Image.open(root/'public/sprites'/manifest[name]['file']).convert('RGBA')
+    widths=[]
+    for frame_index in range(manifest[name]['frames']):
+        frame=horizontal.crop((frame_index*64*4,0,(frame_index+1)*64*4,48*4))
+        visible=frame.getchannel('A').getbbox()
+        widths.append((visible[2]-visible[0])//4)
+    assert max(widths)>=60,(name,widths)
 for name in ['keeper_fish_feed_up','keeper_aquarium_brush','keeper_aquarium_net','keeper_hammer_side','keeper_read_side','keeper_write_side','keeper_telescope','keeper_put_record','keeper_paint_side','keeper_meal_place_side','keeper_snooker','keeper_table_tennis','keeper_darts','keeper_machete_side','keeper_pressups_side','keeper_bowling','keeper_video_game','keeper_water_plants_side','keeper_fish_standing','keeper_fish_seated','keeper_mechanic_fix']:
     assert manifest[name]['mirrorSafe'] is True and manifest[name]['mirrorsFor']
 assert manifest['keeper_anti_gravity']['anchor']==[24,24]
@@ -210,12 +232,17 @@ assert asset_contract['canvas']['extendedBoatAction']=={'width':40,'height':40,'
 assert asset_contract['canvas']['extendedSideTool']=={'width':40,'height':40,'density':4,'anchor':[20,40]}
 assert asset_contract['canvas']['extendedBedAction']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
 assert asset_contract['canvas']['centredSwimAction']=={'width':48,'height':48,'density':4,'anchor':[24,24]}
+assert asset_contract['canvas']['horizontalSwimAction']=={'width':64,'height':48,'density':4,'anchor':[32,24]}
 assert asset_contract['canvas']['extendedHeadwear']=={'width':32,'height':48,'density':4,'anchor':[16,48]}
 assert asset_contract['canvas']['extendedHeldInstrument']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
 assert asset_contract['canvas']['extendedRaisedArmsAction']=={'width':32,'height':48,'density':4,'anchor':[16,48]}
 assert asset_contract['canvas']['extendedSnowToolAction']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
 assert asset_contract['canvas']['extendedTrayAction']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
-assert asset_contract['canvas']['extendedHorizontalExercise']=={'width':48,'height':40,'density':4,'anchor':[24,40],'minimumVisibleBodyLength':36}
+assert asset_contract['canvas']['extendedHorizontalExercise']=={'width':64,'height':40,'density':4,'anchor':[32,40],'minimumVisibleBodyLength':52}
+assert asset_contract['canvas']['extendedOverheadExercise']=={'width':48,'height':56,'density':4,'anchor':[24,56]}
+assert asset_contract['interactionProfiles']['carryCakeRight']['handUsePoint']==[34,20]
+assert asset_contract['interactionProfiles']['carryMealRight']['handUsePoint']==[34,20]
+assert asset_contract['interactionProfiles']['placeCakeRight']['handUsePoint']==[39,28]
 assert asset_contract['interactionProfiles']['switchSideRight']['handUsePoint']==[27,17]
 assert asset_contract['interactionProfiles']['switchBackRightHand']['handUsePoint']==[26,17]
 assert asset_contract['interactionProfiles']['drumsFront']['seatPoint']==[16,37]
@@ -285,6 +312,6 @@ for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
 keeper_previews=list((root/'docs/floor-asset-catalogue').glob('keeper-*-preview.gif'))
-assert len(keeper_previews)==131
+assert len(keeper_previews)==134
 assert all(Image.open(path).is_animated for path in keeper_previews)
-print('Verified: 71 spaces, 1559 rows, owned-item states, 9 TV/lamp/FX exports, 147 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
+print('Verified: 71 spaces, 1559 rows, owned-item states, 9 TV/lamp/FX exports, 150 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')

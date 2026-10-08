@@ -206,12 +206,30 @@ The cake prompt pair locks the same golden sponge, dark tray, cream mitts and
 hand positions across a rear oven retrieval and a mirror-safe carrying turn;
 oven casing, rack and door remain separate.
 
+`keeper-carry-cake-generated-source.png` and
+`keeper-carry-meal-generated-source.png` extend those serving sequences with
+eight-frame right-facing walks. Both use the canonical gait and 48 × 40 tray
+canvas, mirror for left travel, and keep the established cake or plated meal
+level at the shared `(34,20)` carry point.
+
+`keeper-place-cake-generated-source.png` matches the existing plated-meal
+placement logic: lower to the fixed invisible tabletop, release, withdraw the
+hands and finish upright. The cake design is locked across oven retrieval,
+turn, walking and placement: two golden sponge layers, a visible red jam
+filling, white top icing and one centred red cherry. Superseded plain-sponge
+sources are retained under `replaced-cake-design-v1/`.
+
+The plated-meal placement source was also corrected so the released plate and
+food remain at the fixed table point while the keeper withdraws his hands and
+straightens. Its disappearing-plate predecessor is retained under
+`replaced-meal-place-v1/`.
+
 The fitness trio was regenerated in referenced-image edit mode as a matched
 old-school workout set: blue headband, white sleeveless vest, blue shorts,
 white socks and blue-and-white trainers. Trampoline and rear weight-lifting
 retain their approved motion. The press-up source was redrawn at canonical
 head, hand and foot scale, with the horizontal body spanning the extended
-48 × 40 frame instead of being reduced to a miniature figure. The superseded
+64 × 40 frame instead of being reduced to a miniature figure. The superseded
 uniform sheets are retained under `replaced-fitness-uniform-v1/`.
 
 Production mode is deterministic normalization rather than generative editing:
@@ -221,9 +239,14 @@ sidecars and review GIFs. Most clips use 32 × 40; dive and parachute poses use
 larger transparent contract canvases at the identical character scale. The
 hand-saw strip uses a 40 × 40 extended side-tool canvas for its full stroke.
 Bed entry and snoring use a 48 × 40 canvas for the horizontal body.
-Press-ups use the same extended 48 × 40 principle and enforce a minimum
-36-logical-pixel visible head-to-toe length in every production frame.
-Directional swim clips use a centred 48 × 48 canvas; party and sou'wester
+Press-ups use an extended horizontal canvas and enforce a minimum
+52-logical-pixel visible head-to-toe length in every production frame on a
+64 × 40 canvas. Horizontal costume and scuba swimming likewise use 64 × 48;
+only vertical swimming retains the centred 48 × 48 canvas. Rear weightlifting
+uses 48 × 56 so raised arms and the barbell add space rather than shrinking the
+keeper.
+Vertical swim clips use a centred 48 × 48 canvas; horizontal swim uses 64 × 48.
+Party and sou'wester
 headwear use a 32 × 48 canvas so headwear never shrinks the keeper. Guitar and
 movie clips use 48 × 40 for their horizontal extent; raised drumsticks use
 32 × 48 without shrinking the seated body. Snow clearing also uses 48 × 40 for

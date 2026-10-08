@@ -166,7 +166,10 @@ for s in spaces:
     for pose in sorted(poses):
         n,fps=POSES[pose]
         aid='keeper_'+pose
-        row(s,aid,'keeper_clip',0,'Reusable task pose','on',f'{n}@{fps}fps',pose,'floor (16,40); neck (16,11); shoulders (10,15)/(22,15); hips (13,25)/(19,25)',f'shared keeper_{pose}','not repairable','delivered-review' if aid in manifest else ('hidden sequence' if n==0 else 'planned'),'32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation.',[32,40])
+        clip=manifest.get(aid,{})
+        size=[clip.get('w',32),clip.get('h',40)]
+        anchor=clip.get('anchor',[16,40])
+        row(s,aid,'keeper_clip',0,'Reusable task pose','on',f'{n}@{fps}fps',pose,f'anchor ({anchor[0]},{anchor[1]}); canonical rig scale',f'shared keeper_{pose}','not repairable','delivered-review' if aid in manifest else ('hidden sequence' if n==0 else 'planned'),f'{size[0]}x{size[1]} aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation.',size)
     for fx,size,n,fps,anchor in [('broken_smoke',[12,16],8,8,[6,16]),('broken_sparks',[12,12],6,12,[6,6]),('floor_arrival_smoke',[64,64],8,12,[32,64]),('shine',[16,16],4,8,[8,16])]:
         if s['space_id']=='shop' and fx.startswith('broken'):continue
         aid='fx_'+fx
@@ -187,7 +190,11 @@ for npc,size,n in [('cat_idle',[24,16],4),('cat_walk',[24,16],8),('visitor',[22,
     row(shared,'npc_'+npc,'npc_or_spotting_target',0,'Activity/spotting/visitor content','standard;on',f'1; on {n}@8fps','none',f'bottom-centre ({size[0]//2},{size[1]})','shared NPC family','not keeper machinery','planned','Separate originals; do not reuse rejected style_a blocky art.',size)
 for pose,(n,fps) in POSES.items():
     aid='keeper_'+pose
-    if not any(r['asset_id']==aid for r in rows):row(shared,aid,'keeper_clip',0,'Reusable reaction or activity','on',f'{n}@{fps}fps',pose,'floor (16,40)','shared keeper','none','delivered-review' if aid in manifest else ('planned' if n else 'hidden sequence'),'Aligned 32x40 frames; hand-drawn rotations only.',[32,40])
+    if not any(r['asset_id']==aid for r in rows):
+        clip=manifest.get(aid,{})
+        size=[clip.get('w',32),clip.get('h',40)]
+        anchor=clip.get('anchor',[16,40])
+        row(shared,aid,'keeper_clip',0,'Reusable reaction or activity','on',f'{n}@{fps}fps',pose,f'anchor ({anchor[0]},{anchor[1]})','shared keeper','none','delivered-review' if aid in manifest else ('planned' if n else 'hidden sequence'),f'Aligned {size[0]}x{size[1]} frames; hand-drawn rotations only.',size)
 with (OUT/'catalogue.csv').open('w',newline='') as f:
     w=csv.DictWriter(f,fieldnames=FIELDS,lineterminator='\n');w.writeheader();w.writerows(rows)
 with (OUT/'spaces.csv').open('w',newline='') as f:

@@ -63,10 +63,10 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Turn away in pyjamas | `keeper_pyjamas_turn_back` | light powder blue; reverse to face camera |
 | Get into bed | `keeper_get_into_bed` | light powder blue; right-side bed; mirror left; reverse to get out |
 | Snore in pyjamas | `keeper_pyjamas_snore` | light powder blue; right-side loop; mirror left; bed and bedding separate |
-| Swim left/right | `keeper_swim_costume_horizontal` | striped costume; right; mirror left |
+| Swim left/right | `keeper_swim_costume_horizontal` | striped costume; right; mirror left; 64 × 48 canonical-scale horizontal canvas |
 | Swim up | `keeper_swim_costume_up` | striped costume; direct rear view |
 | Swim down | `keeper_swim_costume_down` | striped costume; direct front view |
-| Scuba swim left/right | `keeper_scuba_swim_horizontal` | right; mirror left; bubbles separate |
+| Scuba swim left/right | `keeper_scuba_swim_horizontal` | right; mirror left; 64 × 48 canonical-scale horizontal canvas; bubbles separate |
 | Scuba swim up | `keeper_scuba_swim_up` | direct rear view; bubbles separate |
 | Scuba swim down | `keeper_scuba_swim_down` | direct front view; bubbles separate |
 | Party idle | `keeper_party_idle` | front; normal clothes plus cardboard party hat |
@@ -84,6 +84,8 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Crouched ground work | `keeper_crouch_work_back` | direct rear reusable proxy; animated low alternating arm reaches |
 | Take cake from oven | `keeper_cake_from_oven_back` | direct rear one-shot; oven/rack separate; mitts, tray and cake included |
 | Turn carrying cake | `keeper_cake_turn_right` | rear-to-right one-shot; mirror for rear-to-left |
+| Walk carrying cake | `keeper_carry_cake` | right; mirror left; mitts, tray and cake included; connects from cake turn |
+| Place cake on table | `keeper_place_cake` | right; mirror left; lowers and releases tray, then straightens fully; table separate |
 | Feed fish overhead | `keeper_fish_feed_up` | right; mirror left; aligns to high tank opening |
 | Brush aquarium glass | `keeper_aquarium_brush` | right; mirror left; dry algae brush included, tank separate |
 | Net aquarium fish | `keeper_aquarium_net` | right; mirror left; net and caught fish included |
@@ -99,14 +101,15 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Type at computer | `keeper_type_computer` | semantic reuse of piano hand motion; desk/computer separate |
 | Search boxes | `keeper_search_boxes` | low rear rummage; final arms reach forward into the unseen box; boxes separate |
 | Retrieve meal from oven | `keeper_meal_from_oven_back` | rear one-shot; plate/meal included, oven separate |
-| Place meal on table | `keeper_meal_place_side` | right; mirror left; table separate |
+| Walk carrying plated meal | `keeper_carry_meal` | right; mirror left; mitts, plate and meal included |
+| Place meal on table | `keeper_meal_place_side` | right; mirror left; lowers and releases plate, then straightens fully; table separate |
 | Count money | `keeper_count_money` | seated front; notes and coins included |
 | Play snooker | `keeper_snooker` | right; mirror left; cue included, table/balls separate |
 | Play table tennis | `keeper_table_tennis` | right; mirror left; paddle/ball included, table separate |
 | Throw darts | `keeper_darts` | right; mirror left; dart included, board separate |
 | Bounce on trampoline | `keeper_trampoline_front` | front; old-school workout kit; trampoline separate |
-| Lift weights | `keeper_lift_weights_back` | rear overhead press; old-school workout kit; barbell included |
-| Do press-ups | `keeper_pressups_side` | right; mirror left; old-school workout kit; full canonical body length on 48 × 40 canvas |
+| Lift weights | `keeper_lift_weights_back` | rear overhead press; old-school workout kit; barbell included; 48 × 56 overhead canvas preserves body scale |
+| Do press-ups | `keeper_pressups_side` | right; mirror left; old-school workout kit; full canonical body length on 64 × 40 canvas |
 | Float in anti-gravity | `keeper_anti_gravity` | centred 48 × 48 loop; room applies drift/circling translation |
 | Chop plants | `keeper_machete_side` | right; mirror left; machete included, plants separate |
 | Drink handled pint | `keeper_drink_pint` | seated front-right; mirror front-left; tankard included |
