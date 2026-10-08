@@ -49,4 +49,4 @@ npm run typecheck
 npm run build
 ```
 
-All 63 tests passed, the production build completed, and a headless Chromium pass covered desktop plus 1024 × 768 iPad layouts with no console errors.
+All 63 tests passed, the production build completed, and a headless Chromium pass covered desktop plus 1024 × 768 iPad layouts with no console errors. The resulting `main` deployment was also verified live at [lighthouse-keeper-mu.vercel.app](https://lighthouse-keeper-mu.vercel.app).

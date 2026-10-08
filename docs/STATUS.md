@@ -31,4 +31,4 @@ The first three playable floors are now modular fixed-width components: kitchen,
 
 ## Verification and delivery
 
-The current local slice passed 63 tests, TypeScript checking, a production build, and headless Chromium checks at desktop and 1024 × 768 iPad sizes. Production status must still be checked after the finished commit reaches `main`.
+The delivered slice passed 63 tests, TypeScript checking, a production build, and headless Chromium checks at desktop and 1024 × 768 iPad sizes. The 8 October 2026 Vercel deployment from `main` completed successfully; the live site returned HTTP 200 and its loaded bundle was checked for the three floors, breakdown dials, repair action, and shop exclusion.
