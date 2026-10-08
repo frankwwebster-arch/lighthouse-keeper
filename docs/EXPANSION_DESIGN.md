@@ -8,6 +8,7 @@ Status: living product-design write-up. It records Frank's locked directions sep
 - Unlock challenges should use varied accomplishments, observation and small puzzles. Repeating the same action many times is tedious and must not be the main progression mechanism.
 - The lighthouse is magical. Plausibility should support jokes and readable gameplay, not constrain the tower to realistic engineering.
 - Floors should add systems, choices or relationships with other rooms—not merely another isolated clickable object.
+- Every upgrade must have a clear, measurable gameplay benefit. Cosmetic changes can communicate or celebrate an improvement, but an object stays single-tier when there is no worthwhile mechanical upgrade.
 - Activities remain curated and child-friendly. The computer room does not use live email, news or generative AI.
 - Ordinary floors use the common fixed-width production geometry and nearest-neighbour 4× rendering.
 
