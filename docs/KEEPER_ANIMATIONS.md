@@ -80,6 +80,8 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Play drums facing camera | `keeper_play_drums_front` | seated direct front; sticks included; stool and kit separate |
 | Play drums back to camera | `keeper_play_drums_back` | seated direct rear; sticks included; stool and kit separate |
 | Watch a movie | `keeper_watch_movie` | reclined rear-right with popcorn; mirror rear-left; seating and screen separate |
+| Clear snow | `keeper_clear_snow` | thick winter coat and shovel; right; mirror left; snow bank/effects separate |
+| Crouched ground work | `keeper_crouch_work_back` | direct rear reusable proxy; animated low alternating arm reaches |
 
 For review, the shared side strip has separate, plainly named
 `keeper-switch-press-right-preview.gif` and
@@ -102,6 +104,12 @@ clearance so his body never blocks the picture.
 The front and rear drum clips share `seatPoint (16,37)` and strike centre
 `handUsePoint (16,27)` on their 32 × 48 raised-arm canvas. Drumsticks stay with
 the actor; the stool and kit are object assets aligned to those points.
+
+Snow clearing uses a 48 × 40 tool canvas and a right-side shovel contact at
+`(43,37)`, three pixels above the floor; mirror both clip and point for left.
+The thick winter coat is outfit metadata, while snow banks and spray remain
+separate effects. The rear crouched work proxy reaches `(16,38)` so it can be
+shared by any low object or ground-level activity without baking in a prop.
 
 Cooking, washing and brushing currently use named aliases of the general rear
 work loop so gameplay code can remain descriptive without duplicating art.

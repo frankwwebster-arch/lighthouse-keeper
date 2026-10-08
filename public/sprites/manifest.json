@@ -163,6 +163,29 @@
   "mirrorsFor": "left",
   "z": 50
  },
+ "keeper_clear_snow": {
+  "file": "keeper_clear_snow.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   43,
+   37
+  ],
+  "outfit": "winter-coat",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "clear-snow",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_cook_back": {
   "file": "keeper_cook_back.png",
   "w": 32,
@@ -179,6 +202,26 @@
    21
   ],
   "loop": true,
+  "z": 50
+ },
+ "keeper_crouch_work_back": {
+  "file": "keeper_crouch_work_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   16,
+   38
+  ],
+  "loop": true,
+  "facing": "back",
+  "interaction": "ground-work",
   "z": 50
  },
  "keeper_dance": {

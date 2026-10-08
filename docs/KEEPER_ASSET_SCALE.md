@@ -92,6 +92,12 @@ the stool at `(16,37)` and the drum surface at `(16,27)`. Movie seating aligns
 at `(24,29)` on its wider canvas; the screen centre is 32 pixels to the viewed
 side and 15 pixels above that seat point.
 
+Snow clearing uses the 48 × 40 `extendedSnowToolAction` canvas. Place the
+right-facing shovel/snow contact at `(43,37)` and mirror to `(5,37)` for left.
+The reusable crouched rear-work loop uses the normal canvas and reaches ground
+objects at `(16,38)`. Snow banks, shoveled piles and spray remain separate
+layers; the thick winter coat is recorded as `winter-coat` outfit metadata.
+
 Any new prop-based animation must add its hand, seat or ground point to the
 JSON contract and its sprite sidecar. Verification rejects changes that break
 the established switch heights, canvas scale or feet anchors.

@@ -20,7 +20,8 @@
     "centredSwimAction": { "width": 48, "height": 48, "density": 4, "anchor": [24, 24] },
     "extendedHeadwear": { "width": 32, "height": 48, "density": 4, "anchor": [16, 48] },
     "extendedHeldInstrument": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
-    "extendedRaisedArmsAction": { "width": 32, "height": 48, "density": 4, "anchor": [16, 48] }
+    "extendedRaisedArmsAction": { "width": 32, "height": 48, "density": 4, "anchor": [16, 48] },
+    "extendedSnowToolAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] }
   },
   "measuredReference": {
     "source": "public/sprites/keeper_reference.png",
@@ -65,7 +66,10 @@
     "drumsFront": { "clip": "keeper_play_drums_front", "seatPoint": [16, 37], "handUsePoint": [16, 27], "drumSurfaceOffsetFromSeat": [0, -10] },
     "drumsBack": { "clip": "keeper_play_drums_back", "seatPoint": [16, 37], "handUsePoint": [16, 27], "drumSurfaceOffsetFromSeat": [0, -10] },
     "watchMovieRight": { "clip": "keeper_watch_movie", "seatPoint": [24, 29], "handUsePoint": [34, 19], "lookTargetPoint": [56, 14], "screenCentreOffsetFromSeat": [32, -15], "mirrorFor": "watchMovieLeft" },
-    "watchMovieLeft": { "clip": "keeper_watch_movie", "seatPoint": [24, 29], "handUsePoint": [14, 19], "lookTargetPoint": [-8, 14], "screenCentreOffsetFromSeat": [-32, -15], "mirroredFrom": "watchMovieRight" }
+    "watchMovieLeft": { "clip": "keeper_watch_movie", "seatPoint": [24, 29], "handUsePoint": [14, 19], "lookTargetPoint": [-8, 14], "screenCentreOffsetFromSeat": [-32, -15], "mirroredFrom": "watchMovieRight" },
+    "clearSnowRight": { "clip": "keeper_clear_snow", "handUsePoint": [43, 37], "offsetFromFeet": [19, -3], "mirrorFor": "clearSnowLeft" },
+    "clearSnowLeft": { "clip": "keeper_clear_snow", "handUsePoint": [5, 37], "offsetFromFeet": [-19, -3], "mirroredFrom": "clearSnowRight" },
+    "crouchGroundBack": { "clip": "keeper_crouch_work_back", "handUsePoint": [16, 38], "offsetFromFeet": [0, -2] }
   },
   "movementProfiles": {
     "swimRight": { "movementVector": [1, 0], "mirrorFor": "swimLeft" },
@@ -87,6 +91,8 @@
     "tvScreenCentreHeightAboveSeat": 15,
     "movieScreenHorizontalClearanceFromSeat": 32,
     "drumSurfaceHeightAboveRaisedSeat": 10,
+    "snowShovelContactHeightAboveFloor": 3,
+    "crouchedGroundContactHeightAboveFloor": 2,
     "weldingContactHeightAboveFloor": 18,
     "sawingContactHeightAboveFloor": 17,
     "bedMattressSurfaceHeightAboveFloor": 9,
