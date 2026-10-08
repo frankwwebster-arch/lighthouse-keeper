@@ -1,0 +1,22 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "seatPoint": [
+    16,
+    29
+  ],
+  "handUsePoint": [
+    24,
+    17
+  ],
+  "mirrorSafe": true
+}

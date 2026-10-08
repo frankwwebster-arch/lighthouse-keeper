@@ -163,6 +163,29 @@
   "loop": true,
   "z": 50
  },
+ "keeper_eat_seated": {
+  "file": "keeper_eat_seated.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "seatPoint": [
+   16,
+   29
+  ],
+  "handUsePoint": [
+   24,
+   17
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "z": 50
+ },
  "keeper_front_arm_l": {
   "file": "keeper_front_arm_l.png",
   "w": 32,
@@ -434,6 +457,24 @@
   ],
   "loop": false,
   "reverseFor": "turn_front",
+  "z": 50
+ },
+ "keeper_urinate_back": {
+  "file": "keeper_urinate_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   16,
+   27
+  ],
+  "loop": true,
   "z": 50
  },
  "keeper_walk": {

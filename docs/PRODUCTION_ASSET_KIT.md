@@ -43,11 +43,13 @@ Initial clips:
 | `read` | front | 4 · 5 | yes | book pivot `(21,22)` |
 | `sit_side` | side | 6 · 8 | no | seat `(16,29)`; mirror left; reverse to stand |
 | `sit_front` | front | 6 · 8 | no | seat `(16,29)`; reverse to stand |
+| `eat_seated` | side | 8 · 8 | yes | seat `(16,29)`; fork to mouth `(24,17)`; mirror left |
 | `piano` | rear three-quarter | 8 · 10 | yes | seat `(16,29)`; hands `(24,20)` |
 | `sleep` | front-derived | 4 · 4 | yes | bed contact `(16,31)` |
 | `phone` | front | 4 · 6 | yes | handset pivot `(22,14)` |
 | `brush_teeth_back` | back | 8 · 8 | yes | alias of `work_back`; hands `(16,21)` |
 | `wash_back` | back | 8 · 8 | yes | alias of `work_back`; hands `(16,21)` |
+| `urinate_back` | back | 6 · 8 | yes | discreet clothed pose; hands low `(16,27)` |
 | `loo_hide` | hidden | 0 | n/a | keeper is not drawn |
 
 Required part files are `keeper_front_head_{happy,neutral,grumpy,asleep,open}.png`, `keeper_front_{torso,arm_l,arm_r,leg_l,leg_r}.png`, the equivalent `keeper_back_*` files with one back head, and `keeper_reference.png`; every file is 32 × 40. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. Pivots are for assembly tooling; production raster limbs use drawn key angles or integer translations in final clips rather than arbitrary CSS rotation.
@@ -133,7 +135,7 @@ The current Floor 3 reservation uses extension seam x 117, inner-door use point 
 
 1. Floor bands, partitions and three room palettes. **Delivered 8 October 2026:** `tower_stripe_{red,white}.png` and `room_{kitchen,living,bedroom}.png`.
 2. Shared object-state overlays and one fully proven object (TV). **Delivered for review 8 October 2026.**
-3. Keeper master parts plus the initial movement/action set: `idle`, `walk`, `turn_back`, `work_back`, its domestic-action aliases, `sit_side`, `sit_front`, and `piano`. **Identity, walk and this action set approved by Frank on 8 October 2026.**
+3. Keeper master parts plus the initial movement/action set: `idle`, `walk`, `turn_back`, `work_back`, its domestic-action aliases, `sit_side`, `sit_front`, `eat_seated`, `urinate_back`, and `piano`. **Identity, walk and this action direction approved by Frank on 8 October 2026.**
 4. Remaining object state sets and effects.
 5. Door/changing-room assets and dive outfit only when the extension becomes playable.
 
