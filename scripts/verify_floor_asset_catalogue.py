@@ -7,7 +7,7 @@ root=Path(__file__).resolve().parents[1]
 data=json.loads((root/'docs/floor-asset-catalogue/catalogue.json').read_text())
 spaces=data['spaces']; rows=data['rows']
 assert len(spaces)==71 and len({s['space_id'] for s in spaces})==71
-assert len(rows)==1551
+assert len(rows)==1555
 with (root/'docs/floor-asset-catalogue/catalogue.csv').open(newline='') as f:
     assert len(list(csv.DictReader(f)))==len(rows)
 for space in spaces:
@@ -39,7 +39,7 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==68
+assert len(keeper_pngs)==73
 required_clips={
     'keeper_idle':(4,6), 'keeper_walk':(8,10),
     'keeper_turn_back':(6,8), 'keeper_work_back':(8,8),
@@ -69,6 +69,9 @@ required_clips={
     'keeper_souwester_walk_side':(8,10),
     'keeper_souwester_walk_back':(8,10),
     'keeper_souwester_walk_front':(8,10),
+    'keeper_dance':(8,10), 'keeper_play_guitar':(8,10),
+    'keeper_play_drums_front':(8,10), 'keeper_play_drums_back':(8,10),
+    'keeper_watch_movie':(8,6),
 }
 for raw in keeper_pngs:
     sidecar=json.loads(raw.with_suffix('.json').read_text())
@@ -155,6 +158,15 @@ for name,vector,facing in [('keeper_souwester_walk_side',[1,0],'right'),('keeper
     assert manifest[name]['outfit']=='souwester' and manifest[name]['movementVector']==vector
     assert manifest[name]['facing']==facing
 assert manifest['keeper_souwester_walk_side']['mirrorSafe'] is True and manifest['keeper_souwester_walk_side']['mirrorsFor']=='left'
+assert manifest['keeper_dance']['mirrorSafe'] is True and manifest['keeper_dance']['interaction']=='dance'
+assert manifest['keeper_play_guitar']['w']==48 and manifest['keeper_play_guitar']['handUsePoint']==[34,20]
+for name,facing in [('keeper_play_drums_front','front'),('keeper_play_drums_back','back')]:
+    assert manifest[name]['h']==48 and manifest[name]['anchor']==[16,48]
+    assert manifest[name]['seatPoint']==[16,37] and manifest[name]['handUsePoint']==[16,27]
+    assert manifest[name]['facing']==facing and manifest[name]['interaction']=='play-drums'
+assert manifest['keeper_watch_movie']['w']==48 and manifest['keeper_watch_movie']['seatPoint']==[24,29]
+assert manifest['keeper_watch_movie']['lookTargetPoint']==[56,14] and manifest['keeper_watch_movie']['handUsePoint']==[34,19]
+assert manifest['keeper_watch_movie']['mirrorSafe'] is True and manifest['keeper_watch_movie']['mirrorsFor']=='rear-left'
 asset_contract=json.loads((root/'data/keeper_asset_contract.json').read_text())
 assert asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
 assert asset_contract['canvas']['standard']=={'width':32,'height':40,'density':4,'anchor':[16,40]}
@@ -166,9 +178,18 @@ assert asset_contract['canvas']['extendedSideTool']=={'width':40,'height':40,'de
 assert asset_contract['canvas']['extendedBedAction']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
 assert asset_contract['canvas']['centredSwimAction']=={'width':48,'height':48,'density':4,'anchor':[24,24]}
 assert asset_contract['canvas']['extendedHeadwear']=={'width':32,'height':48,'density':4,'anchor':[16,48]}
+assert asset_contract['canvas']['extendedHeldInstrument']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
+assert asset_contract['canvas']['extendedRaisedArmsAction']=={'width':32,'height':48,'density':4,'anchor':[16,48]}
 assert asset_contract['interactionProfiles']['switchSideRight']['handUsePoint']==[27,17]
 assert asset_contract['interactionProfiles']['switchBackRightHand']['handUsePoint']==[26,17]
+assert asset_contract['interactionProfiles']['drumsFront']['seatPoint']==[16,37]
+assert asset_contract['interactionProfiles']['drumsFront']['handUsePoint']==[16,27]
+assert asset_contract['interactionProfiles']['drumsBack']['seatPoint']==[16,37]
+assert asset_contract['interactionProfiles']['watchMovieRight']['seatPoint']==[24,29]
+assert asset_contract['interactionProfiles']['watchMovieRight']['lookTargetPoint']==[56,14]
 assert asset_contract['objectRules']['lightSwitchCentreHeightAboveFloor']==23
+assert asset_contract['objectRules']['movieScreenHorizontalClearanceFromSeat']==32
+assert asset_contract['objectRules']['drumSurfaceHeightAboveRaisedSeat']==10
 walk=Image.open(root/'public/sprites'/manifest['keeper_walk']['file']).convert('RGBA')
 walk_frames=[walk.crop((i*128,0,(i+1)*128,160)) for i in range(8)]
 assert len({frame.tobytes() for frame in walk_frames})>=5
@@ -202,8 +223,11 @@ previews={
     'keeper-souwester-walk-side':(8,100),
     'keeper-souwester-walk-back':(8,100),
     'keeper-souwester-walk-front':(8,100),
+    'keeper-dance':(8,100), 'keeper-play-guitar':(8,100),
+    'keeper-play-drums-front':(8,100), 'keeper-play-drums-back':(8,100),
+    'keeper-watch-movie-right':(8,160), 'keeper-watch-movie-left':(8,160),
 }
 for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
-print('Verified: 71 spaces, 1551 rows, owned-item states, 9 TV/lamp/FX exports, 68 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
+print('Verified: 71 spaces, 1555 rows, owned-item states, 9 TV/lamp/FX exports, 73 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')

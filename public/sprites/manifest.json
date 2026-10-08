@@ -181,6 +181,23 @@
   "loop": true,
   "z": 50
  },
+ "keeper_dance": {
+  "file": "keeper_dance.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "front",
+  "interaction": "dance",
+  "z": 50
+ },
  "keeper_dig": {
   "file": "keeper_dig.png",
   "w": 32,
@@ -723,6 +740,76 @@
   "mirrorsFor": "left",
   "z": 50
  },
+ "keeper_play_drums_back": {
+  "file": "keeper_play_drums_back.png",
+  "w": 32,
+  "h": 48,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "seatPoint": [
+   16,
+   37
+  ],
+  "handUsePoint": [
+   16,
+   27
+  ],
+  "loop": true,
+  "facing": "back",
+  "interaction": "play-drums",
+  "z": 50
+ },
+ "keeper_play_drums_front": {
+  "file": "keeper_play_drums_front.png",
+  "w": 32,
+  "h": 48,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "seatPoint": [
+   16,
+   37
+  ],
+  "handUsePoint": [
+   16,
+   27
+  ],
+  "loop": true,
+  "facing": "front",
+  "interaction": "play-drums",
+  "z": 50
+ },
+ "keeper_play_guitar": {
+  "file": "keeper_play_guitar.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   34,
+   20
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "front-right",
+  "interaction": "play-guitar",
+  "mirrorsFor": "front-left",
+  "z": 50
+ },
  "keeper_pyjamas_snore": {
   "file": "keeper_pyjamas_snore.png",
   "w": 48,
@@ -1244,6 +1331,36 @@
    21
   ],
   "loop": true,
+  "z": 50
+ },
+ "keeper_watch_movie": {
+  "file": "keeper_watch_movie.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 6,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "seatPoint": [
+   24,
+   29
+  ],
+  "handUsePoint": [
+   34,
+   19
+  ],
+  "lookTargetPoint": [
+   56,
+   14
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "rear-right",
+  "interaction": "watch-movie-popcorn",
+  "mirrorsFor": "rear-left",
   "z": 50
  },
  "keeper_watch_tv": {

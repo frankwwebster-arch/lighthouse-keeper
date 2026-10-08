@@ -85,6 +85,13 @@ contract holds the broad sou'wester brim. His body is not scaled down to make
 either hat fit. Sou'wester movement vectors are right `(1,0)`, rear/up
 `(0,-1)` and front/down `(0,1)`; mirror the side strip for left.
 
+Wide held instruments and reclined poses use the 48 × 40
+`extendedHeldInstrument` canvas without changing body scale. Raised drumsticks
+use the 32 × 48 `extendedRaisedArmsAction` canvas. Front and rear drumming align
+the stool at `(16,37)` and the drum surface at `(16,27)`. Movie seating aligns
+at `(24,29)` on its wider canvas; the screen centre is 32 pixels to the viewed
+side and 15 pixels above that seat point.
+
 Any new prop-based animation must add its hand, seat or ground point to the
 JSON contract and its sprite sidecar. Verification rejects changes that break
 the established switch heights, canvas scale or feet anchors.

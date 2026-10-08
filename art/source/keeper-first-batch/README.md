@@ -155,6 +155,15 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
   `keeper-souwester-walk-front-generated-source.png` — full mustard-yellow
   sou'wester hat, toggle-fastened oilskin coat and trousers with navy sea boots;
   eight-frame side, direct rear and direct front walks. Mirror side for left.
+- `keeper-dance-generated-source.png` — eight front-facing poses with side
+  steps, knee bends, raised arms and a playful heel lift in one smooth loop.
+- `keeper-play-guitar-generated-source.png` — eight standing front-right poses
+  with a consistent warm-brown acoustic guitar, chord changes and down/up strums.
+- `keeper-play-drums-front-generated-source.png` and
+  `keeper-play-drums-back-generated-source.png` — matching eight-frame seated
+  strike loops with sticks; drum kit and stool remain separate object assets.
+- `keeper-watch-movie-generated-source.png` — eight reclined rear-right poses
+  with a striped popcorn tub and hand-to-mouth loop; seating and screen separate.
 
 The replaced navy pyjama source files remain in this directory as historical
 inputs, but production uses only the `light-blue` files above. The built-in
@@ -162,7 +171,11 @@ image generator was run in referenced-image mode: recolour only the pyjama
 fabric and slippers to powder blue while preserving pose, proportions, cream
 piping and transparency; for the sou'wester, preserve the canonical keeper and
 draw isolated full-body walks in the specified oilskins from side, rear and
-front views with identical scale and baseline.
+front views with identical scale and baseline. The music and cinema prompts
+preserve the same identity and uniform, request eight isolated transparent
+poses, keep stationary furniture/instruments separate where appropriate, and
+lock repeated props, seat points, strike points and screen sightlines across
+the loop.
 
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,
@@ -171,6 +184,8 @@ sidecars and review GIFs. Most clips use 32 × 40; dive and parachute poses use
 larger transparent contract canvases at the identical character scale. The
 hand-saw strip uses a 40 × 40 extended side-tool canvas for its full stroke.
 Bed entry and snoring use a 48 × 40 canvas for the horizontal body.
-directional swim clips use a centred 48 × 48 canvas; party and sou'wester
-headwear use a 32 × 48 canvas so headwear never shrinks the keeper. All
+Directional swim clips use a centred 48 × 48 canvas; party and sou'wester
+headwear use a 32 × 48 canvas so headwear never shrinks the keeper. Guitar and
+movie clips use 48 × 40 for their horizontal extent; raised drumsticks use
+32 × 48 without shrinking the seated body. All
 generation used the built-in image generator in referenced-image mode.

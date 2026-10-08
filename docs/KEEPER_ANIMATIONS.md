@@ -75,6 +75,11 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Walk in sou'wester left/right | `keeper_souwester_walk_side` | yellow oilskins; right; mirror left |
 | Walk away in sou'wester | `keeper_souwester_walk_back` | direct rear view; movement vector `(0,-1)` |
 | Walk toward camera in sou'wester | `keeper_souwester_walk_front` | direct front view; movement vector `(0,1)` |
+| Dance | `keeper_dance` | front-facing eight-frame loop; broad arm and leg motion |
+| Play guitar | `keeper_play_guitar` | standing front-right; guitar included; mirror front-left |
+| Play drums facing camera | `keeper_play_drums_front` | seated direct front; sticks included; stool and kit separate |
+| Play drums back to camera | `keeper_play_drums_back` | seated direct rear; sticks included; stool and kit separate |
+| Watch a movie | `keeper_watch_movie` | reclined rear-right with popcorn; mirror rear-left; seating and screen separate |
 
 For review, the shared side strip has separate, plainly named
 `keeper-switch-press-right-preview.gif` and
@@ -87,6 +92,16 @@ runtime stores one rear-three-quarter strip. The keeper's seat is placed 24
 logical pixels to one side of the TV screen centre, with the screen centre 15
 pixels above the seat. This leaves the screen visible rather than putting his
 back directly in front of it.
+
+Movie watching uses a wider version of that contract. The keeper reclines at
+`seatPoint (24,29)`, looks toward `(56,14)`, and holds the popcorn tub with the
+character. Mirror the strip and points for a rear-left seat. Keep the cinema
+seat or sofa and screen separate, with 32 logical pixels of horizontal screen
+clearance so his body never blocks the picture.
+
+The front and rear drum clips share `seatPoint (16,37)` and strike centre
+`handUsePoint (16,27)` on their 32 × 48 raised-arm canvas. Drumsticks stay with
+the actor; the stool and kit are object assets aligned to those points.
 
 Cooking, washing and brushing currently use named aliases of the general rear
 work loop so gameplay code can remain descriptive without duplicating art.

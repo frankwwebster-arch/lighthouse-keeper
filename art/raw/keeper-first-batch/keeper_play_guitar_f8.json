@@ -1,0 +1,21 @@
+{
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+    24,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "handUsePoint": [
+    34,
+    20
+  ],
+  "mirrorSafe": true,
+  "facing": "front-right",
+  "interaction": "play-guitar",
+  "mirrorsFor": "front-left"
+}
