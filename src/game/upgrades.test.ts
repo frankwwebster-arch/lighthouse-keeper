@@ -1,5 +1,8 @@
 import { describe, expect, it } from 'vitest'
-import { DEFAULT_RULES, GAME as G, UPGRADES, maxTier, upgradeTier } from './config'
+import { readFileSync } from 'node:fs'
+import { DEFAULT_RULES, GAME as G, OBJECTS, UPGRADES, baseTierName, maxTier, midSentence, upgradeTier } from './config'
+import { parseCsv, upgradeRows } from './csv'
+import { UPGRADE_ROWS } from './upgrades.data'
 import { arrive, giftUpgrade, nextDay, nextUpgrade, order, setRules, startGame, tick, tierOf, upgrade, upgradePrice, type State } from './engine'
 import { revive } from './storage'
 import { spriteNames } from '../ui/art'
@@ -12,7 +15,8 @@ describe('upgrades', () => {
     const s = fresh()
     expect(tierOf(s, 'tv')).toBe(1)
     expect(nextUpgrade(s, 'tv')).toEqual({ tier: 2, name: UPGRADES.tv![0].name, price: UPGRADES.tv![0].cost })
-    expect(nextUpgrade(s, 'door')).toBeUndefined()
+    expect(nextUpgrade(s, 'shop')).toBeUndefined()
+    expect(nextUpgrade(s, 'fishfood')).toBeUndefined()
   })
 
   it('buying one costs credits, goes up a tier, and stops at the top', () => {
@@ -99,9 +103,34 @@ describe('tier art', () => {
     expect(spriteNames('tv', 'standard')).toEqual(['obj_tv_standard', 'obj_tv'])
   })
   it('the ?tiers= preview caps at each object’s top tier', () => {
-    const all = ['tv', 'piano', 'door'] as const
-    expect(parseTierPreview('3', maxTier, all)).toEqual({ tv: 3, piano: 2 })
-    expect(parseTierPreview('tv:2,door:3,nope:2', maxTier, all)).toEqual({ tv: 2 })
+    const all = ['tv', 'piano', 'shop'] as const
+    expect(parseTierPreview('9', maxTier, all)).toEqual({ tv: 3, piano: 3 })
+    expect(parseTierPreview('tv:2,shop:3,nope:2', maxTier, all)).toEqual({ tv: 2 })
     expect(parseTierPreview(null, maxTier, all)).toEqual({})
+  })
+})
+
+describe('the upgrade list (data/upgrades.csv)', () => {
+  const csv = readFileSync('data/upgrades.csv', 'utf8')
+  it('the game has the latest copy (run `npm run upgrades` if not)', () => {
+    expect(UPGRADE_ROWS).toEqual(upgradeRows(csv))
+  })
+  it('every row names a real tier and its sprite follows the naming rule', () => {
+    const ids = new Set(OBJECTS.map((o) => o.id as string))
+    for (const r of parseCsv(csv)) {
+      expect(['1', '2', '3']).toContain(r.tier)
+      expect(r.sprite).toBe(r.tier === '1' ? `obj_${r.object}` : `obj_${r.object}_t${r.tier}`)
+      for (const state of ['normal', 'working', 'broken']) expect(['todo', 'done', 'n/a']).toContain(r[state])
+      // Objects not in the game yet (the boat) are allowed: they wait for their code.
+      if (!ids.has(r.object)) expect(['boat']).toContain(r.object)
+    }
+  })
+  it('reads quoted cells with commas', () => {
+    expect(parseCsv('a,b\n"x, y","say ""hi"""\n')).toEqual([{ a: 'x, y', b: 'say "hi"' }])
+  })
+  it('tier 1 has a name of its own, and names read well mid-sentence', () => {
+    expect(baseTierName('cooker')).toBe('Basic oven')
+    expect(midSentence('Big flat-screen TV')).toBe('big flat-screen TV')
+    expect(midSentence('American-style fridge')).toBe('American-style fridge')
   })
 })

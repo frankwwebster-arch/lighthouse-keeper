@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react'
-import { DEFAULT_RULES, FOODS, MISSIONS, INTERACTIONS, NEEDS, NEED_LABEL, OBJECTS, UPGRADES, VISITOR_ONLY, foodById, objectById, upgradeKey, upgradeName, upgradeTier, type InteractionDef, type NeedId, type ObjectId, type PetKind, type Rules } from '../game/config'
+import { DEFAULT_RULES, FOODS, MISSIONS, INTERACTIONS, NEEDS, NEED_LABEL, OBJECTS, UPGRADES, VISITOR_ONLY, foodById, baseTierName, objectById, upgradeKey, upgradeTier, type InteractionDef, type NeedId, type ObjectId, type PetKind, type Rules } from '../game/config'
 import { insideVisit, moodOf, moodWord, nextUpgrade, owned, priceOf, tierOf, upgradePrice, waitingVisit, type DayResult, type Prompt, type State } from '../game/engine'
 import type { Order } from '../game/engine'
 import { NAMES, clockText, labelFor, moodFace, moodName } from '../game/words'
@@ -56,8 +56,7 @@ export function ObjectMenu({ s, id, label, onPick, onUpgrade, onClose }: { s: St
   const items = menuFor(s, id)
   const broken = s.broken.includes(id)
   const up = nextUpgrade(s, id)
-  const tier = upgradeTier(id, tierOf(s, id))
-  const now = tier && upgradeName(tier)
+  const now = upgradeTier(id, tierOf(s, id))?.name ?? baseTierName(id)
   return (
     <div className="sheet menu">
       <div className="sheet-head">
@@ -432,7 +431,7 @@ export function GrownUps({ s, rules, credits, who, mission, verify, onRules, onG
               {UPGRADES[id]!.map((u, i) => {
                 const tier = i + 2
                 const own = rules.upgradePrices?.[upgradeKey(id, tier)]
-                return <Num key={tier} label={upgradeName(u)} hint={own === undefined ? `(normal ${u.cost}, now ${upgradePrice(rules, id, tier)})` : '(your price)'} value={upgradePrice(rules, id, tier)} onChange={(n) => set({ upgradePrices: { ...rules.upgradePrices, [upgradeKey(id, tier)]: n } })} />
+                return <Num key={tier} label={u.name} hint={own === undefined ? `(normal ${u.cost}, now ${upgradePrice(rules, id, tier)})` : '(your price)'} value={upgradePrice(rules, id, tier)} onChange={(n) => set({ upgradePrices: { ...rules.upgradePrices, [upgradeKey(id, tier)]: n } })} />
               })}
             </div>
           ))}
@@ -445,7 +444,7 @@ export function GrownUps({ s, rules, credits, who, mission, verify, onRules, onG
             const has = upgradeTier(o.id, tierOf(s, o.id))
             return (
               <div key={o.id} className="row">
-                <span>{o.label}: <b>{has ? upgradeName(has) : 'Standard'}</b></span>
+                <span>{o.label}: <b>{has?.name ?? baseTierName(o.id) ?? 'Standard'}</b></span>
                 {up ? <button onClick={() => onGiftUpgrade(o.id)}>🎁 Give {up.name}</button> : <small className="dim">top tier</small>}
               </div>
             )

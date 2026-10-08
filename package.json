@@ -9,7 +9,8 @@
     "start": "next start",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "sprites": "node scripts/sprites.ts"
+    "sprites": "node scripts/sprites.ts",
+    "upgrades": "node scripts/upgrades.ts"
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.10.4",

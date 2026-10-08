@@ -5,8 +5,11 @@
  * a loo, a shop, bedtime and a proper multi-day loop.)
  *
  * Nothing in the rules (`engine.ts`) has a number of its own: change one here
- * and the game changes with it. This file imports nothing.
+ * and the game changes with it. Its only import is the upgrade list, made
+ * from data/upgrades.csv.
  */
+
+import { UPGRADE_ROWS } from './upgrades.data'
 
 const H = 60
 
@@ -248,31 +251,35 @@ export interface UpgradeTier {
 
 /**
  * Objects he can upgrade, bought with credits from the object's own menu (no
- * furniture shop). What a tier does is the same for every object (`GAME.upgrades`);
- * the bed also gives a better night. Names are written to sit mid-sentence
- * (`upgradeName` gives the heading form) and are first guesses for the art to rename.
+ * furniture shop). The list lives in data/upgrades.csv (one row per object per
+ * tier; `npm run upgrades` copies it into the game). What a tier does is the
+ * same for every object (`GAME.upgrades`); the bed also gives a better night.
+ * Names are written as headings ("Big flat-screen TV"); `midSentence` lowers the first letter.
  */
-export const UPGRADES: Partial<Record<ObjectId, readonly UpgradeTier[]>> = {
-  bed: [{ name: 'comfy mattress', cost: 30 }, { name: 'royal four-poster', cost: 55 }],
-  tv: [{ name: 'big-screen TV', cost: 25 }, { name: 'cinema wall', cost: 50 }],
-  cooker: [{ name: 'shiny new range', cost: 25 }, { name: 'chef’s super cooker', cost: 50 }],
-  fridge: [{ name: 'double fridge', cost: 20 }, { name: 'mega fridge with ice maker', cost: 40 }],
-  phone: [{ name: 'cordless phone', cost: 20 }, { name: 'video phone', cost: 40 }],
-  telescope: [{ name: 'brass spyglass', cost: 20 }, { name: 'observatory telescope', cost: 45 }],
-  broom: [{ name: 'hoover', cost: 20 }, { name: 'robot hoover', cost: 45 }],
-  piano: [{ name: 'grand piano', cost: 35 }],
-  bookshelf: [{ name: 'library wall', cost: 25 }],
-  desk: [{ name: 'inventor’s desk', cost: 25 }],
-  basin: [{ name: 'spa basin', cost: 20 }],
-  toilet: [{ name: 'heated-seat loo', cost: 20 }],
-  petbowl: [{ name: 'automatic feeder', cost: 15 }],
-}
+const objectIds = new Set<string>(OBJECTS.map((o) => o.id))
+const tierRows = (id: ObjectId) => UPGRADE_ROWS.filter((r) => r.object === id).sort((a, b) => a.tier - b.tier)
+/** Each object's tiers from 2 up, stopping at the first gap in the list. */
+export const UPGRADES: Partial<Record<ObjectId, readonly UpgradeTier[]>> = Object.fromEntries(
+  [...new Set(UPGRADE_ROWS.map((r) => r.object))]
+    .filter((id) => objectIds.has(id))
+    .map((id) => {
+      const tiers: UpgradeTier[] = []
+      for (const r of tierRows(id as ObjectId)) {
+        if (r.tier !== tiers.length + 2) continue
+        tiers.push({ name: r.name, cost: Math.max(1, r.price) })
+      }
+      return [id, tiers] as const
+    })
+    .filter(([, tiers]) => tiers.length),
+)
+/** What tier 1 is called ("Basic oven"), where the list names it. */
+export const baseTierName = (id: ObjectId) => tierRows(id).find((r) => r.tier === 1)?.name
 /** The top tier an object goes to (1 = no upgrades). */
 export const maxTier = (id: ObjectId) => 1 + (UPGRADES[id]?.length ?? 0)
 /** Tier 2 and up: its name and normal price. */
 export const upgradeTier = (id: ObjectId, tier: number): UpgradeTier | undefined => (tier >= 2 ? UPGRADES[id]?.[tier - 2] : undefined)
-/** A tier's name as a heading: "Big-screen TV". */
-export const upgradeName = (t: UpgradeTier) => t.name[0].toUpperCase() + t.name.slice(1)
+/** A name inside a sentence: "a big flat-screen TV" (words like American keep their capital). */
+export const midSentence = (name: string) => (/^(American|English|French|Italian|Japanese|Victorian)\b/.test(name) ? name : name[0].toLowerCase() + name.slice(1))
 export const upgradeKey = (id: ObjectId, tier: number) => `${id}:${tier}`
 
 // ─── Missions ────────────────────────────────────────────────────────────────

@@ -5,7 +5,7 @@
  */
 
 import { ACKS, reactionById } from './commands'
-import { INTERACTIONS, NEED_LABEL, foodById, interactionById, missionById, objectById, upgradeTier, visitorById, type NeedId, type ObjectId, type UnlockId } from './config'
+import { INTERACTIONS, NEED_LABEL, foodById, interactionById, midSentence, missionById, objectById, upgradeTier, visitorById, type NeedId, type ObjectId, type UnlockId } from './config'
 import { moodWord, type Happening, type MoodWord, type State } from './engine'
 
 export function clockText(minutes: number): string {
@@ -175,8 +175,8 @@ export function tell(h: Happening, s: State): Told {
       return { say: `Fixed! The ${label.toLowerCase()} is working again.`, diary: `${t} He repaired the ${label.toLowerCase()}.`, tone: 'good' }
     }
     case 'upgraded': {
-      const name = upgradeTier(h.id as ObjectId, h.level ?? 2)?.name ?? 'upgrade'
-      const a = /^[aeiou]/.test(name) ? 'an' : 'a'
+      const name = midSentence(upgradeTier(h.id as ObjectId, h.level ?? 2)?.name ?? 'upgrade')
+      const a = /^[aeiouAEIOU]/.test(name) ? 'an' : 'a'
       const old = objectById(h.id as ObjectId)?.label.toLowerCase() ?? 'thing'
       return h.gift
         ? { say: `A present from the grown-ups: ${a} ${name}! Best day ever.`, diary: `${t} The grown-ups gave him ${a} ${name}.`, tone: 'good' }
