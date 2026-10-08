@@ -31,4 +31,4 @@ The first three playable floors are now modular fixed-width components: kitchen,
 
 ## Verification and delivery
 
-The first production Pixel batch passed 73 tests, TypeScript checking, a production build, and a 1024 × 768 headless Chromium check with no console errors. The five PNGs were checked at exact source dimensions and hard alpha through `npm run sprites`; runtime rendering remains nearest-neighbour at 4× logical size. The existing Vercel workflow is unchanged: a push to `main` deploys production. Live verification of the resulting deployment must be recorded after that push.
+The first production Pixel batch passed 73 tests, TypeScript checking, a production build, and a 1024 × 768 headless Chromium check with no console errors. The five PNGs were checked at exact source dimensions and hard alpha through `npm run sprites`; runtime rendering remains nearest-neighbour at 4× logical size. Commit `892873e` was deployed through the unchanged `main` → Vercel workflow: the live site returned HTTP 200, its sprite manifest exactly matched the five local entries, and the live kitchen plate was confirmed as a 105 × 35 RGBA PNG.

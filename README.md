@@ -52,4 +52,4 @@ npm run typecheck
 npm run build
 ```
 
-All 73 tests passed, the production build completed, and a headless Chromium pass covered the integrated first asset batch at 1024 × 768 with no console errors. The last live deployment verification remains recorded in `docs/STATUS.md`; pushes to `main` retain the existing Vercel production workflow.
+All 73 tests passed, the production build completed, and a headless Chromium pass covered the integrated first asset batch at 1024 × 768 with no console errors. Vercel production was verified after commit `892873e`: the live manifest exactly matched the five local entries and served the 105 × 35 kitchen PNG. Pushes to `main` retain the existing deployment workflow.
