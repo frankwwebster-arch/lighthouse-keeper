@@ -206,6 +206,14 @@ The cake prompt pair locks the same golden sponge, dark tray, cream mitts and
 hand positions across a rear oven retrieval and a mirror-safe carrying turn;
 oven casing, rack and door remain separate.
 
+The fitness trio was regenerated in referenced-image edit mode as a matched
+old-school workout set: blue headband, white sleeveless vest, blue shorts,
+white socks and blue-and-white trainers. Trampoline and rear weight-lifting
+retain their approved motion. The press-up source was redrawn at canonical
+head, hand and foot scale, with the horizontal body spanning the extended
+48 × 40 frame instead of being reduced to a miniature figure. The superseded
+uniform sheets are retained under `replaced-fitness-uniform-v1/`.
+
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,
 hardens alpha, places it on a density-4 contract canvas, and emits the manifest
@@ -213,6 +221,8 @@ sidecars and review GIFs. Most clips use 32 × 40; dive and parachute poses use
 larger transparent contract canvases at the identical character scale. The
 hand-saw strip uses a 40 × 40 extended side-tool canvas for its full stroke.
 Bed entry and snoring use a 48 × 40 canvas for the horizontal body.
+Press-ups use the same extended 48 × 40 principle and enforce a minimum
+36-logical-pixel visible head-to-toe length in every production frame.
 Directional swim clips use a centred 48 × 48 canvas; party and sou'wester
 headwear use a 32 × 48 canvas so headwear never shrinks the keeper. Guitar and
 movie clips use 48 × 40 for their horizontal extent; raised drumsticks use

@@ -104,9 +104,9 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Play snooker | `keeper_snooker` | right; mirror left; cue included, table/balls separate |
 | Play table tennis | `keeper_table_tennis` | right; mirror left; paddle/ball included, table separate |
 | Throw darts | `keeper_darts` | right; mirror left; dart included, board separate |
-| Bounce on trampoline | `keeper_trampoline_front` | front; trampoline separate |
-| Lift weights | `keeper_lift_weights_back` | rear overhead press; barbell included |
-| Do press-ups | `keeper_pressups_side` | right; mirror left |
+| Bounce on trampoline | `keeper_trampoline_front` | front; old-school workout kit; trampoline separate |
+| Lift weights | `keeper_lift_weights_back` | rear overhead press; old-school workout kit; barbell included |
+| Do press-ups | `keeper_pressups_side` | right; mirror left; old-school workout kit; full canonical body length on 48 × 40 canvas |
 | Float in anti-gravity | `keeper_anti_gravity` | centred 48 × 48 loop; room applies drift/circling translation |
 | Chop plants | `keeper_machete_side` | right; mirror left; machete included, plants separate |
 | Drink handled pint | `keeper_drink_pint` | seated front-right; mirror front-left; tankard included |

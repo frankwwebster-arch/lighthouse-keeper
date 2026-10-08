@@ -22,7 +22,8 @@
     "extendedHeldInstrument": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
     "extendedRaisedArmsAction": { "width": 32, "height": 48, "density": 4, "anchor": [16, 48] },
     "extendedSnowToolAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
-    "extendedTrayAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] }
+    "extendedTrayAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
+    "extendedHorizontalExercise": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40], "minimumVisibleBodyLength": 36 }
   },
   "measuredReference": {
     "source": "public/sprites/keeper_reference.png",

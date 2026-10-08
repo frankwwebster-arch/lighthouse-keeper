@@ -16,6 +16,9 @@ page explains it in ordinary language.
   same size; only the transparent space around him grows.
 - Bed entry and snoring use 48 × 40 with anchor `(24,40)` so the horizontal
   body fits without rescaling.
+- Press-ups use the same 48 × 40 extended horizontal canvas. The keeper's
+  head-to-toe body length must be at least 36 logical pixels in every frame;
+  the horizontal pose is never scaled down as if it were a standing figure.
 - Directional swimming uses a centred 48 × 48 canvas and movement anchor
   `(24,24)`. Party headwear uses 32 × 48 with feet anchor `(16,48)`.
 - Never scale the keeper to make him meet an object. Position and size the
@@ -90,6 +93,12 @@ therefore change clothing only, never body proportions. Knight, spaceman,
 pirate, Tarzan, Halloween and mechanic sets use the same three-view movement
 contract: side/right (mirror for left), direct rear and direct front, all on a
 32 × 48 canvas with an unchanged body scale.
+
+Fitness clips use the `old-school-workout-kit` outfit: blue terrycloth
+headband, white sleeveless vest, blue shorts, white socks and blue-and-white
+trainers. This applies to trampoline, weight lifting and press-ups. The clothes
+may change the silhouette, but the canonical head, hands, feet and body scale
+must remain unchanged.
 
 Directional underwater movement reads `movementVector` from the manifest:
 right `(1,0)`, mirrored left `(-1,0)`, up `(0,-1)`, and down `(0,1)`. Water,

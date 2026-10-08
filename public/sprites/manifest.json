@@ -1267,6 +1267,7 @@
    20,
    5
   ],
+  "outfit": "old-school-workout-kit",
   "loop": true,
   "facing": "back",
   "interaction": "lift-weights",
@@ -1817,6 +1818,7 @@
    24,
    40
   ],
+  "outfit": "old-school-workout-kit",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -2681,6 +2683,7 @@
    16,
    48
   ],
+  "outfit": "old-school-workout-kit",
   "loop": true,
   "facing": "front",
   "interaction": "bounce-trampoline",

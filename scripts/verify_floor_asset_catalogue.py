@@ -178,6 +178,13 @@ assert manifest['keeper_cake_from_oven_back']['loop'] is False and manifest['kee
 assert manifest['keeper_cake_turn_right']['w']==48 and manifest['keeper_cake_turn_right']['handUsePoint']==[34,20]
 assert manifest['keeper_cake_turn_right']['loop'] is False and manifest['keeper_cake_turn_right']['mirrorSafe'] is True
 assert manifest['keeper_cake_turn_right']['mirrorsFor']=='back-to-left'
+for name in ['keeper_trampoline_front','keeper_lift_weights_back','keeper_pressups_side']:
+    assert manifest[name]['outfit']=='old-school-workout-kit'
+pressups=Image.open(root/'public/sprites'/manifest['keeper_pressups_side']['file']).convert('RGBA')
+for frame_index in range(manifest['keeper_pressups_side']['frames']):
+    frame=pressups.crop((frame_index*48*4,0,(frame_index+1)*48*4,40*4))
+    visible=frame.getchannel('A').getbbox()
+    assert visible is not None and visible[2]-visible[0]>=36*4,(frame_index,visible)
 for name in ['keeper_fish_feed_up','keeper_aquarium_brush','keeper_aquarium_net','keeper_hammer_side','keeper_read_side','keeper_write_side','keeper_telescope','keeper_put_record','keeper_paint_side','keeper_meal_place_side','keeper_snooker','keeper_table_tennis','keeper_darts','keeper_machete_side','keeper_pressups_side','keeper_bowling','keeper_video_game','keeper_water_plants_side','keeper_fish_standing','keeper_fish_seated','keeper_mechanic_fix']:
     assert manifest[name]['mirrorSafe'] is True and manifest[name]['mirrorsFor']
 assert manifest['keeper_anti_gravity']['anchor']==[24,24]
@@ -208,6 +215,7 @@ assert asset_contract['canvas']['extendedHeldInstrument']=={'width':48,'height':
 assert asset_contract['canvas']['extendedRaisedArmsAction']=={'width':32,'height':48,'density':4,'anchor':[16,48]}
 assert asset_contract['canvas']['extendedSnowToolAction']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
 assert asset_contract['canvas']['extendedTrayAction']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
+assert asset_contract['canvas']['extendedHorizontalExercise']=={'width':48,'height':40,'density':4,'anchor':[24,40],'minimumVisibleBodyLength':36}
 assert asset_contract['interactionProfiles']['switchSideRight']['handUsePoint']==[27,17]
 assert asset_contract['interactionProfiles']['switchBackRightHand']['handUsePoint']==[26,17]
 assert asset_contract['interactionProfiles']['drumsFront']['seatPoint']==[16,37]
