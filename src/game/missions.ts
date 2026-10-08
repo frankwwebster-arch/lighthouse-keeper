@@ -1,12 +1,16 @@
 /**
- * MISSIONS. One at a time, in the order of `MISSIONS` (config.ts). Each has a
- * few goals counted from what happens in the game; finishing one unlocks a
- * floor (it arrives furnished) or the lift.
+ * MISSIONS. Every mission is open at once and counts in parallel, so the
+ * floors arrive in whatever order he finishes them (some wait for the tower to
+ * be tall enough: `needsFloors`). Each has a few goals counted from what
+ * happens in the game; finishing one brings a floor (it arrives furnished,
+ * the next morning) or the lift.
+ *
+ * Also here: how the tower stacks, from the save's own middle order.
  *
  * Pure: the engine feeds in what happened and applies what comes back.
  */
 
-import { DEFAULT_RULES, FLOOR_LEVELS, MISSIONS, OBJECTS, START_FLOORS, type MissionDef, type MissionEvent, type ObjectId, type RoomFloor, type Rules, type UnlockId } from './config'
+import { ALL_ROOM_FLOORS, BASE_FLOOR, DEFAULT_RULES, MISSIONS, OBJECTS, START_FLOORS, TOP_FLOOR, UNDERGROUND, type MissionDef, type MissionEvent, type ObjectId, type RoomFloor, type Rules, type UnlockId } from './config'
 import type { Happening, State } from './engine'
 
 export interface MissionState {
@@ -17,10 +21,13 @@ export interface MissionState {
 
 export const freshMissions = (): MissionState => ({ done: [], progress: {} })
 
-/** The mission being worked on now (undefined when they are all done). */
-export function activeMission(m: MissionState): MissionDef | undefined {
-  return MISSIONS.find((x) => !m.done.includes(x.id) && (!x.after || m.done.includes(x.after)))
+/** The missions he can work on now: not done, and the tower is tall enough. */
+export function openMissions(m: MissionState, floors: number): MissionDef[] {
+  return MISSIONS.filter((x) => !m.done.includes(x.id) && floors >= (x.needsFloors ?? 0))
 }
+
+/** Has he made a start on it (a secret mission stays a mystery until then)? */
+export const started = (m: MissionDef, ms: MissionState) => m.goals.some((_, i) => (ms.progress[goalKey(m, i)] ?? 0) > 0)
 
 /** What a happening counts as. */
 export function eventsOf(h: Pick<Happening, 'kind' | 'id' | 'safe' | 'correct'>): MissionEvent[] {
@@ -64,35 +71,54 @@ export function goalsOf(m: MissionDef, ms: MissionState, dials?: MissionDials) {
 }
 
 /**
- * Count events towards the active mission. Returns the new state and the
- * mission it finished, if it did. With no events it just checks: a target the
- * grown-ups have lowered may already be met.
+ * Count events towards every open mission. Returns the new state and the
+ * missions it finished (often none). With no events it just checks: a target
+ * the grown-ups have lowered may already be met.
  */
-export function countEvents(ms: MissionState, events: readonly MissionEvent[], dials?: MissionDials): { missions: MissionState; finished?: MissionDef } {
-  const m = activeMission(ms)
-  if (!m) return { missions: ms }
+export function countEvents(ms: MissionState, events: readonly MissionEvent[], dials: MissionDials | undefined, floors: number): { missions: MissionState; finished: MissionDef[] } {
+  const open = openMissions(ms, floors)
   let progress = ms.progress
-  m.goals.forEach((g, i) => {
-    const n = events.filter((e) => e === g.event).length
-    if (!n) return
-    const k = goalKey(m, i)
-    // Kept uncapped (to a point), so raising a target later still counts what he has done.
-    progress = { ...progress, [k]: Math.min(999, (progress[k] ?? 0) + n) }
-  })
+  for (const m of open) {
+    m.goals.forEach((g, i) => {
+      const n = events.filter((e) => e === g.event).length
+      if (!n) return
+      const k = goalKey(m, i)
+      // Kept uncapped (to a point), so raising a target later still counts what he has done.
+      progress = { ...progress, [k]: Math.min(999, (progress[k] ?? 0) + n) }
+    })
+  }
   const next = progress === ms.progress ? ms : { ...ms, progress }
-  if (goalsOf(m, next, dials).every((g) => g.met)) return { missions: { ...next, done: [...next.done, m.id] }, finished: m }
-  return { missions: next }
+  const finished = open.filter((m) => goalsOf(m, next, dials).every((g) => g.met))
+  return finished.length ? { missions: { ...next, done: [...next.done, ...finished.map((m) => m.id)] }, finished } : { missions: next, finished }
 }
 
-/** The floors with rooms that he has, bottom to top. */
-export function roomFloors(unlocked: readonly UnlockId[]): RoomFloor[] {
-  const have = new Set<string>([...START_FLOORS, ...unlocked])
-  return (Object.keys(FLOOR_LEVELS) as RoomFloor[]).filter((f) => have.has(f)).sort((a, b) => FLOOR_LEVELS[a] - FLOOR_LEVELS[b])
+// ─── The tower ───────────────────────────────────────────────────────────────
+
+const isUnderground = (f: RoomFloor) => UNDERGROUND.includes(f)
+const isRoomFloor = (f: string): f is RoomFloor => ALL_ROOM_FLOORS.includes(f as RoomFloor)
+
+/** A floor a mission brings that goes into the middle of the tower (not the lift, not underground). */
+export const isMiddleFloor = (u: UnlockId): u is UnlockId & RoomFloor => u !== 'lift' && !isUnderground(u as RoomFloor)
+
+/** The tower he has: rooms bottom to top above ground (kitchen first, bedroom last), and any below ground. */
+export function towerOf(s: Pick<State, 'unlocked' | 'middle'>): { stack: RoomFloor[]; below: RoomFloor[] } {
+  return {
+    stack: [BASE_FLOOR, ...s.middle, TOP_FLOOR],
+    below: UNDERGROUND.filter((f) => s.unlocked.includes(f as UnlockId)),
+  }
 }
 
-const isRoomFloor = (f: string): f is RoomFloor => f in FLOOR_LEVELS
+/** Floors above ground (what `needsFloors` counts). */
+export const floorCount = (s: Pick<State, 'unlocked' | 'middle'>) => towerOf(s).stack.length
 
-/** Is this thing in his lighthouse yet? (Objects on locked floors are not.) */
+/** Put a new floor in the middle at the place `at` (0 is just above the kitchen). */
+export function insertFloor(middle: readonly RoomFloor[], floor: RoomFloor, at: number): RoomFloor[] {
+  if (middle.includes(floor)) return [...middle]
+  const i = Math.max(0, Math.min(middle.length, Math.floor(at)))
+  return [...middle.slice(0, i), floor, ...middle.slice(i)]
+}
+
+/** Is this thing in his lighthouse yet? (Objects on floors he has not got are not.) */
 export function objectAvailable(s: Pick<State, 'unlocked'>, id: ObjectId): boolean {
   if (id === 'here') return true
   const o = OBJECTS.find((x) => x.id === id)

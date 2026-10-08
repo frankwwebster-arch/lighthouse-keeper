@@ -71,6 +71,8 @@ const refuse = (h: Happening): string => {
 
 const UNLOCK_NAMES: Record<UnlockId, string> = { aquarium: 'aquarium', weather: 'weather station', lair: 'hidden lair', lift: 'lift' }
 
+const aOr = (word: string) => (/^[aeiou]/i.test(word) ? 'an' : 'a')
+const cap = (word: string) => word[0].toUpperCase() + word.slice(1)
 const pick = <T,>(list: readonly T[], n: number): T => list[Math.abs(Math.trunc(n)) % list.length]
 
 export interface Told {
@@ -176,7 +178,7 @@ export function tell(h: Happening, s: State): Told {
     }
     case 'upgraded': {
       const name = midSentence(upgradeTier(h.id as ObjectId, h.level ?? 2)?.name ?? 'upgrade')
-      const a = /^[aeiouAEIOU]/.test(name) ? 'an' : 'a'
+      const a = aOr(name)
       const old = objectById(h.id as ObjectId)?.label.toLowerCase() ?? 'thing'
       return h.gift
         ? { say: `A present from the grown-ups: ${a} ${name}! Best day ever.`, diary: `${t} The grown-ups gave him ${a} ${name}.`, tone: 'good' }
@@ -184,11 +186,20 @@ export function tell(h: Happening, s: State): Told {
     }
     case 'mission_done': {
       const m = h.id ? missionById(h.id) : undefined
-      return { say: `MISSION COMPLETE: ${m?.title ?? 'done'}! ${h.amount ? `And ${h.amount} credits for us!` : ''}`, diary: `${t} Mission complete: ${m?.title ?? h.id}.`, tone: 'good' }
+      // `on`: a floor will be built overnight. Keep it a surprise.
+      const tonight = h.on ? ' I have a funny feeling something is going to happen tonight…' : ''
+      return { say: `MISSION COMPLETE: ${m?.title ?? 'done'}! ${h.amount ? `And ${h.amount} credits for us!` : ''}${tonight}`, diary: `${t} Mission complete: ${m?.title ?? h.id}.${h.on ? ' Strange banging noises in the night…' : ''}`, tone: 'good' }
     }
     case 'unlocked': {
       const name = UNLOCK_NAMES[h.id as UnlockId] ?? 'something new'
-      return { say: h.id === 'lift' ? 'A LIFT! No more stairs! My knees thank you.' : h.id === 'lair' ? `WHAT?! There was a ${name} under the lighthouse all along!` : `Look! A brand new floor: the ${name}! And it is all furnished!`, diary: `${t} The ${name} arrived.`, tone: 'good' }
+      if (h.id === 'lift') return { say: 'A LIFT! No more stairs! My knees thank you.', diary: `${t} The lift went in.`, tone: 'good' }
+      if (h.id === 'lair') return { say: `WHAT?! There was a ${name} under the lighthouse all along!`, diary: `${t} The ${name} appeared overnight.`, tone: 'good' }
+      // A floor built overnight (docs/EXPANSION_DESIGN.md, "New-floor reveal"): his remark suits his mood.
+      const lines =
+        s.personality.trait === 'grumpy' ? [`Oh good. Another floor to clean. The ${name}.`, `${cap(aOr(name))} ${name}. Nobody asked ME.`]
+        : s.personality.trait === 'dreamy' ? [`I think the lighthouse built the ${name} while we slept.`, `Was I dreaming? No, there really is a ${name}!`]
+        : [`Look! The ${name} has appeared!`, `Well, would you look at that: ${aOr(name)} ${name}!`, `That ${name} definitely was not there yesterday.`, `I wondered what all that banging was! ${cap(aOr(name))} ${name}!`, `Another whole floor? This lighthouse has ideas of its own. ${cap(aOr(name))} ${name}!`]
+      return { say: pick(lines, h.n), diary: `${t} The ${name} appeared overnight.`, tone: 'good' }
     }
     default:
       return {}

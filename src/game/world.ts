@@ -5,7 +5,7 @@
  * can be seen at once.
  */
 
-import { FLOOR_LEVELS, OBJECTS, START_FLOORS, objectById, type FloorId, type ObjectId, type RoomFloor } from './config'
+import { OBJECTS, START_FLOORS, objectById, type FloorId, type ObjectId, type RoomFloor } from './config'
 
 export const STAGE = { w: 1200, h: 760 }
 /** The tower's left edge, so an object's tower-local x becomes a picture x. */
@@ -21,7 +21,8 @@ export const STAIRS_X = 108
 /**
  * THE LAYOUT: which floors he has, stacked. Missions add floors, so this
  * changes during play; `applyLayout` rebuilds it and everything below reads
- * it. Floors he has not got take no space (and are not drawn).
+ * it. Floors he has not got take no space (and are not drawn). The order
+ * comes from the save (`towerOf` in missions.ts), never from the floor type.
  */
 export const FLOOR_Y: Record<FloorId, number> = { ground: 640, living: 500, bedroom: 360, aquarium: 220, weather: 80, lair: 780, lamp: 220, outside: 640 }
 /** Bottom to top, ending with the lamp room. */
@@ -39,15 +40,18 @@ export const LAYOUT = {
   version: 0,
 }
 
-/** Rebuild the layout for these rooms (any order) and the lift. Cheap; does nothing if unchanged. */
-export function applyLayout(rooms: readonly RoomFloor[], lift: boolean): void {
-  const sorted = [...new Set(rooms)].sort((a, b) => FLOOR_LEVELS[a] - FLOOR_LEVELS[b])
+/**
+ * Rebuild the layout: `stack` is the rooms above ground, bottom to top (the
+ * lamp room goes on top of them); `below` the ones underground, nearest the
+ * ground first. Cheap; does nothing if unchanged.
+ */
+export function applyLayout(stack: readonly RoomFloor[], below: readonly RoomFloor[], lift: boolean): void {
+  const above = [...new Set(stack)]
+  const sorted = [...[...below].reverse(), ...above]
   if (sorted.join() === LAYOUT.rooms.join() && lift === LAYOUT.lift && LAYOUT.version > 0) return
-  const below = sorted.filter((f) => FLOOR_LEVELS[f] < 0)
-  const above = sorted.filter((f) => FLOOR_LEVELS[f] >= 0)
   const slot: Partial<Record<RoomFloor, number>> = {}
   above.forEach((f, i) => (slot[f] = i))
-  below.reverse().forEach((f, i) => (slot[f] = -(i + 1)))
+  below.forEach((f, i) => (slot[f] = -(i + 1)))
   for (const f of sorted) FLOOR_Y[f] = GROUND_Y - FLOOR_STEP * slot[f]!
   FLOOR_Y.lamp = GROUND_Y - FLOOR_STEP * above.length
   FLOOR_Y.outside = GROUND_Y
@@ -60,7 +64,7 @@ export function applyLayout(rooms: readonly RoomFloor[], lift: boolean): void {
   LAYOUT.bottom = Math.max(STAGE.h, ...sorted.map((f) => FLOOR_Y[f] + 40))
   LAYOUT.version++
 }
-applyLayout(START_FLOORS, false)
+applyLayout(START_FLOORS, [], false)
 
 export const worldX = (id: ObjectId): number => {
   const o = objectById(id)

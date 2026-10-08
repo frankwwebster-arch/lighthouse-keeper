@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { BREAKABLE_OBJECTS, OBJECTS, maxTier, type FxKey, type ObjectId } from '../game/config'
 import { darkness, stormNow, tierOf, type State } from '../game/engine'
-import { FLOOR_LEVELS, type RoomFloor } from '../game/config'
-import { objectAvailable, roomFloors } from '../game/missions'
+import { ALL_ROOM_FLOORS, UNDERGROUND } from '../game/config'
+import { objectAvailable, towerOf } from '../game/missions'
 import { FLOOR_Y, LAYOUT, STAGE, STAIRS_X, TOWER_X, applyLayout, floorOf, focusFor, worldX } from '../game/world'
 import { Actors, type Pose } from './Actors'
 import { ObjectArt } from './art'
@@ -42,8 +42,11 @@ const previewAllFloors = () => typeof window !== 'undefined' && new URLSearchPar
 export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive, onPose }: Props) {
   // The tower is whatever floors he has unlocked: stack them before anything is drawn.
   const allFloors = useMemo(previewAllFloors, [])
-  if (allFloors) applyLayout(Object.keys(FLOOR_LEVELS) as RoomFloor[], true)
-  else applyLayout(roomFloors(s.unlocked), s.unlocked.includes('lift'))
+  if (allFloors) applyLayout(ALL_ROOM_FLOORS.filter((f) => !UNDERGROUND.includes(f)), UNDERGROUND, true)
+  else {
+    const tower = towerOf(s)
+    applyLayout(tower.stack, tower.below, s.unlocked.includes('lift'))
+  }
   const top = LAYOUT.top
   const H = LAYOUT.bottom - LAYOUT.top
   const has = (id: ObjectId) => allFloors || objectAvailable(s, id)

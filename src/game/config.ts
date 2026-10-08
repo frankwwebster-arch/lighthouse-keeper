@@ -32,13 +32,20 @@ export type FloorId = (typeof FLOORS)[number]
 export type RoomFloor = Exclude<FloorId, 'lamp' | 'outside'>
 
 /**
- * Where each room sits: 0 is the ground, up from there, below zero underground.
- * Locked floors take no space; the ones he has are stacked in this order with
- * the lamp room always on top. (Which floor goes where is the art's call; see
- * docs/CODEX_BRIEF.md.)
+ * How the tower stacks (docs/EXPANSION_DESIGN.md, "Locked tower layout"): the
+ * kitchen is always at the bottom, the bedroom always just under the lamp room,
+ * and every other floor sits in the middle in no set order. A new floor takes
+ * a random middle place when it arrives, which the save keeps for good.
+ * Underground floors hang below the kitchen. Locked floors take no space.
  */
-export const FLOOR_LEVELS: Record<RoomFloor, number> = { lair: -1, ground: 0, living: 1, bedroom: 2, aquarium: 3, weather: 4 }
-export const START_FLOORS: readonly RoomFloor[] = ['ground', 'living', 'bedroom']
+export const BASE_FLOOR = 'ground' satisfies RoomFloor
+export const TOP_FLOOR = 'bedroom' satisfies RoomFloor
+/** The middle of the tower on day 1. */
+export const START_MIDDLE: readonly RoomFloor[] = ['living']
+export const UNDERGROUND: readonly RoomFloor[] = ['lair']
+export const START_FLOORS: readonly RoomFloor[] = [BASE_FLOOR, ...START_MIDDLE, TOP_FLOOR]
+/** Every room floor there is, for the `?floors=all` preview. */
+export const ALL_ROOM_FLOORS: readonly RoomFloor[] = ['ground', 'living', 'aquarium', 'weather', 'bedroom', 'lair']
 
 /** Things a mission can unlock: a floor, or the lift. */
 export type UnlockId = 'aquarium' | 'weather' | 'lair' | 'lift'
@@ -298,14 +305,14 @@ export interface MissionDef {
   /** What he says about it. */
   blurb: string
   unlocks: UnlockId
-  /** Starts once this one is done. */
-  after?: string
-  /** Shown as a mystery until it starts (the lair must be a surprise). */
+  /** Open only once the tower has at least this many floors above ground (the lift is for a tall tower). */
+  needsFloors?: number
+  /** Shown as a mystery until he has made a start on it (the lair must be a surprise). */
   secret?: boolean
   goals: readonly { event: MissionEvent; count: number; label: string }[]
 }
 
-/** One at a time, in this order. */
+/** All open at once, in no order: whichever he finishes first, he gets first. */
 export const MISSIONS: readonly MissionDef[] = [
   {
     id: 'fishy',
@@ -320,9 +327,8 @@ export const MISSIONS: readonly MissionDef[] = [
   {
     id: 'storm',
     title: 'Storm Chaser',
-    blurb: 'A proper keeper needs a weather station. Keep watch and keep the ships safe, and we will build one on top!',
+    blurb: 'A proper keeper needs a weather station. Keep watch and keep the ships safe, and we will build one!',
     unlocks: 'weather',
-    after: 'fishy',
     goals: [
       { event: 'done:scope_look', count: 3, label: 'Look out to sea through the telescope' },
       { event: 'ship_safe', count: 3, label: 'Guide ships safely past with the lamp' },
@@ -333,7 +339,6 @@ export const MISSIONS: readonly MissionDef[] = [
     title: 'Strange Rumblings',
     blurb: 'Something is rumbling under the garden. Dig around, and ask the visitors if they have heard anything...',
     unlocks: 'lair',
-    after: 'storm',
     secret: true,
     goals: [
       { event: 'done:garden_tend', count: 4, label: 'Dig in the garden' },
@@ -345,7 +350,8 @@ export const MISSIONS: readonly MissionDef[] = [
     title: 'Puffed Out',
     blurb: 'All these stairs! Show me you have the brains and the know-how, and we will put in a lift.',
     unlocks: 'lift',
-    after: 'rumble',
+    // Today's tallest tower: kitchen, living room, both mission floors and the bedroom. Raise it as floors are added.
+    needsFloors: 5,
     goals: [
       { event: 'quiz_right', count: 10, label: 'Get questions right' },
       { event: 'good_day', count: 2, label: 'Have a really good day' },

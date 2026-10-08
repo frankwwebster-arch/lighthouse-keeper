@@ -6,7 +6,7 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 ```
 npm install
 npm run dev      # Next.js 14; open http://localhost:3000 (or this computer’s address on the same wifi, for the iPad)
-npm test         # 105 tests
+npm test         # 110 tests
 npm run upgrades # copy data/upgrades.csv (the upgrade list) into the game
 npm run build    # production build
 npm run sprites  # snap Codex's PNGs in art/raw/ into public/sprites/ (docs/CODEX_ASSETS.md)
@@ -17,7 +17,7 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 
 - Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The first production Pixel batch now supplies the red/white shell bands and those three 105 × 35 room plates; interactive furniture remains separate. The toilet and wash basin are both in the en suite.
 - Future standard floors are intentionally non-linear: kitchen anchors the base, lamp room stays topmost, bedroom stays directly below it, and each other floor receives a one-time random saved middle position. Concept-art taper is decorative and never fixes room width or unlock order.
-- The newly added fixed aquarium → weather mission chain is an interim implementation and is documented as a logic refactor, not the final progression model.
+- Missions run side by side, so floors arrive in any order; a finished floor appears the next morning in a random middle place that the save keeps (kitchen at the bottom, bedroom under the lamp room).
 - Every object renderer accepts `standard`, `on`, and `broken`; active gameplay drives `on`. Broken objects share integer-step casing wobble, smoke and sparks. Add `?broken=tv,cooker` (or `?broken=all`) to the URL for the internal art-state preview.
 - Objects can be upgraded with credits from their tap menu. The tier list is `data/upgrades.csv`. Higher tiers do more good, faster; the bed's tier sets the morning's energy. Grown-ups set upgrade prices (overall %, then per tier) and can gift upgrades. Tier sprites are `obj_<id>_t<n>_<state>`; until they exist a `T<n>` tag stands in. `?tiers=3` previews top tiers.
 - Keeper-owned assets can now break during play, block their normal actions, and be repaired. Grown-ups control average fault frequency and maximum concurrent faults; defaults are off / one. Breakdown events expose placeholder SFX categories for later audio. The shop is excluded because it is not the keeper's asset.
@@ -28,7 +28,7 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 ## Where things are
 
 - `src/game/` — rules (`config.ts` has every number, `commands.ts` the command book and silly reactions, `engine.ts` the rules).
-- `src/ui/floors.tsx` — fixed-width room definitions and the interim Floor 3 diving geometry which must later follow the moving bedroom.
+- `src/ui/floors.tsx` — fixed-width room definitions and the reserved diving geometry, which follows the bedroom.
 - `src/ui/art.tsx` and `src/ui/Sprite.tsx` — vector fallbacks, the three-state renderer, and production strip playback.
 - `public/sprites/` — the five exact-size PNGs from the first production Pixel batch plus their runtime manifest.
 - `art/source/first-production-batch/` — untouched generated sources and prompt/provenance notes; `scripts/build_first_asset_batch.py` rebuilds the exact `art/raw/` deliveries, then `npm run sprites` publishes them.

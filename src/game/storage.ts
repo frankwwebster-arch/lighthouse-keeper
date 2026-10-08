@@ -1,5 +1,5 @@
 import { CHATS } from './chat'
-import { DEFAULT_RULES, NEEDS } from './config'
+import { DEFAULT_RULES, NEEDS, START_MIDDLE } from './config'
 import type { State } from './engine'
 import { freshMissions } from './missions'
 
@@ -25,6 +25,9 @@ export function revive(s: State | null): State | null {
     s.tiers = s.tiers && typeof s.tiers === 'object' ? s.tiers : {}
     s.unlocked = Array.isArray(s.unlocked) ? s.unlocked : []
     s.missions = s.missions && Array.isArray(s.missions.done) ? { done: s.missions.done, progress: s.missions.progress ?? {} } : freshMissions()
+    // Before floors could arrive in any order, extra floors simply stacked above the bedroom in this order. Now the bedroom stays on top.
+    s.middle = Array.isArray(s.middle) ? s.middle : [...START_MIDDLE, ...(['aquarium', 'weather'] as const).filter((f) => s.unlocked.includes(f))]
+    s.arriving = Array.isArray(s.arriving) ? s.arriving : []
     s.tally.needSums = { ...Object.fromEntries(NEEDS.map((n) => [n, 0])), ...(s.tally.needSums ?? {}) } as typeof s.tally.needSums
     if (s.prompt?.kind === 'chat') {
       const saved = s.prompt.chat

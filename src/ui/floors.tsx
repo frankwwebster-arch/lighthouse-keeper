@@ -73,13 +73,13 @@ export function floorsOnShow(): FloorModuleSpec[] {
   return LAYOUT.rooms.map((id) => all.find((f) => f.id === id)!).filter(Boolean)
 }
 
-/** Reserved geometry for the later Floor 3 diving-board changing-room bay. */
+/** Reserved geometry for the later diving-board changing-room bay. It belongs to the bedroom, so it rises with it as the tower grows (heights read the live layout). */
 export const DIVING_EXTENSION = {
   parentFloor: 'bedroom' as const,
   side: 'right' as const,
-  innerDoor: { x: 468, floorY: FLOOR_Y.bedroom, keeperUsePoint: { x: 452, y: FLOOR_Y.bedroom } },
+  innerDoor: { x: 468, get floorY() { return FLOOR_Y.bedroom }, get keeperUsePoint() { return { x: 452, y: FLOOR_Y.bedroom } } },
   hiddenZone: { fromX: 469, toX: 523, visible: false },
-  exteriorDoor: { x: 524, floorY: FLOOR_Y.bedroom, exitPoint: { x: 540, y: FLOOR_Y.bedroom } },
+  exteriorDoor: { x: 524, get floorY() { return FLOOR_Y.bedroom }, get exitPoint() { return { x: 540, y: FLOOR_Y.bedroom } } },
   sequence: ['inner-door-close', 'keeper-hidden', 'costume-swap-sfx', 'exterior-door-open', 'dive-suit-exit'] as const,
 } as const
 

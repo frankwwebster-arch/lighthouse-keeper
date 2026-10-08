@@ -39,12 +39,14 @@ import {
   type InteractionDef,
   type NeedId,
   type ObjectId,
+  START_MIDDLE,
   type PetKind,
+  type RoomFloor,
   type TraitId,
   type UnlockId,
 } from './config'
 import type { Quiz } from './quiz'
-import { activeMission, countEvents, eventsOf, freshMissions, goalTarget, objectAvailable, rewardOf, type MissionState } from './missions'
+import { countEvents, eventsOf, floorCount, freshMissions, goalTarget, insertFloor, isMiddleFloor, objectAvailable, openMissions, rewardOf, type MissionState } from './missions'
 import type { ChatQ } from './chat'
 
 // ─── What a game is ──────────────────────────────────────────────────────────
@@ -188,6 +190,10 @@ export interface State {
   tiers: Partial<Record<ObjectId, number>>
   /** Floors (and the lift) that missions have unlocked. */
   unlocked: UnlockId[]
+  /** The middle of the tower, bottom to top (between the kitchen and the bedroom). New floors take a random place here and keep it. */
+  middle: RoomFloor[]
+  /** Floors earned but not built yet: one arrives each morning, in this order. */
+  arriving: UnlockId[]
   missions: MissionState
   plan: DayPlan
   visits: Visit[]
@@ -304,6 +310,8 @@ export function startGame(seed: number, setup: Setup, rules: Rules = DEFAULT_RUL
     broken: [],
     tiers: {},
     unlocked: [],
+    middle: [...START_MIDDLE],
+    arriving: [],
     missions: freshMissions(),
     plan,
     visits,
@@ -463,21 +471,40 @@ function note(s: State, h: Loose): State {
   return missionEvents(next, eventsOf(entry))
 }
 
-/** Count what happened towards the mission; a finished mission unlocks its floor (furnished) and pays a reward. */
+/**
+ * Count what happened towards the missions. A finished one pays its reward;
+ * the lift goes in at once, and a floor is built overnight (it arrives the
+ * next morning, one floor a morning).
+ */
 function missionEvents(s: State, events: Parameters<typeof countEvents>[1]): State {
-  const { missions, finished } = countEvents(s.missions, events, s.rules)
-  if (!finished) return missions === s.missions ? s : { ...s, missions }
-  const reward = rewardOf(finished, s.rules)
-  const done = note({ ...s, missions, credits: s.credits + reward }, { kind: 'mission_done', id: finished.id, amount: reward })
-  return note({ ...done, unlocked: done.unlocked.includes(finished.unlocks) ? done.unlocked : [...done.unlocked, finished.unlocks] }, { kind: 'unlocked', id: finished.unlocks })
+  const { missions, finished } = countEvents(s.missions, events, s.rules, floorCount(s))
+  if (!finished.length) return missions === s.missions ? s : { ...s, missions }
+  let next: State = { ...s, missions }
+  for (const m of finished) {
+    const reward = rewardOf(m, next.rules)
+    const now = m.unlocks === 'lift'
+    next = note({ ...next, credits: next.credits + reward }, { kind: 'mission_done', id: m.id, amount: reward, on: !now })
+    if (now) next = note({ ...next, unlocked: [...new Set([...next.unlocked, m.unlocks])] }, { kind: 'unlocked', id: m.unlocks })
+    else if (!next.arriving.includes(m.unlocks) && !next.unlocked.includes(m.unlocks)) next = { ...next, arriving: [...next.arriving, m.unlocks] }
+  }
+  return next
 }
 
-/** For the grown-ups: finish the current mission now. */
-export function completeMission(s: State): State {
-  const m = activeMission(s.missions)
+/** For the grown-ups: finish an open mission now (its floor still arrives in the morning). */
+export function completeMission(s: State, id: string): State {
+  const m = openMissions(s.missions, floorCount(s)).find((x) => x.id === id)
   if (!m) return s
   const events = m.goals.flatMap((g, i) => Array.from({ length: goalTarget(m, i, s.rules) }, () => g.event))
   return missionEvents(s, events)
+}
+
+/** Overnight, the lighthouse builds the next floor he has earned: a middle floor takes a random place and keeps it for good. */
+function buildOvernight(s: State): State {
+  const [floor, ...rest] = s.arriving
+  if (!floor) return s
+  const d = dice(s.rng)
+  const middle = isMiddleFloor(floor) ? insertFloor(s.middle, floor, d.next() * (s.middle.length + 1)) : s.middle
+  return note({ ...s, rng: d.rng, arriving: rest, middle, unlocked: [...new Set([...s.unlocked, floor])] }, { kind: 'unlocked', id: floor })
 }
 
 const lift = (s: State, by: number): State => ({ ...s, spirits: clamp(s.spirits + by, -G.mood.spiritsLimit, G.mood.spiritsLimit) })
@@ -1034,7 +1061,7 @@ export function nextDay(s: State): State {
     tally: freshTally(),
     phase: 'day',
   }
-  return note(next, { kind: 'dawn', amount: allowance })
+  return buildOvernight(note(next, { kind: 'dawn', amount: allowance }))
 }
 
 // Keep these exports used (the screen reads them).

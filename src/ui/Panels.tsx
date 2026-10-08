@@ -3,7 +3,7 @@ import { DEFAULT_RULES, FOODS, MISSIONS, INTERACTIONS, NEEDS, NEED_LABEL, OBJECT
 import { insideVisit, moodOf, moodWord, nextUpgrade, owned, priceOf, tierOf, upgradePrice, waitingVisit, type DayResult, type Prompt, type State } from '../game/engine'
 import type { Order } from '../game/engine'
 import { NAMES, clockText, labelFor, moodFace, moodName } from '../game/words'
-import { activeMission, goalKey, goalTarget, goalsOf, objectAvailable, rewardOf, scaledTarget } from '../game/missions'
+import { floorCount, goalKey, goalTarget, goalsOf, objectAvailable, openMissions, rewardOf, scaledTarget, started } from '../game/missions'
 
 // ─── Top bar ─────────────────────────────────────────────────────────────────
 
@@ -198,33 +198,43 @@ export interface Entry {
   tone?: 'good' | 'bad' | 'info'
 }
 
-/** The mission on the go, its goals so far, and the ones already done. A secret mission stays a mystery until it starts. */
+const UNLOCK_NAME: Record<string, string> = { aquarium: 'aquarium', weather: 'weather station', lair: 'hidden lair', lift: 'lift' }
+
+/** Every open mission and its goals (work on any, in any order), what is being built tonight, and what is done. A secret mission stays a mystery until he makes a start. */
 export function Missions({ s, onClose }: { s: State; onClose: () => void }) {
-  const m = activeMission(s.missions)
+  const open = openMissions(s.missions, floorCount(s))
+  const later = MISSIONS.filter((x) => !s.missions.done.includes(x.id) && !open.includes(x))
   return (
     <aside className="drawer missions">
       <div className="sheet-head">
         <b>🎯 Missions</b>
         <button className="x" onClick={onClose}>✕</button>
       </div>
-      {m ? (
-        <div className="mission">
-          <h3>{m.title}</h3>
-          <p>{m.blurb}</p>
-          <ul>
-            {goalsOf(m, s.missions, s.rules).map((g) => (
-              <li key={g.event} className={g.met ? 'good' : undefined}>
-                {g.met ? '✅' : '⬜'} {g.label}: <b>{g.got} / {g.count}</b>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : (
-        <p>Every mission done. What a keeper!</p>
-      )}
+      {s.arriving.length > 0 && <p className="good">🏗️ Something is being built tonight… wait and see in the morning!</p>}
+      {open.length === 0 && later.length === 0 && <p>Every mission done. What a keeper!</p>}
+      {open.map((m) => (
+        m.secret && !started(m, s.missions) ? (
+          <div key={m.id} className="mission">
+            <h3>??? A mystery</h3>
+            <p className="dim">Something strange is going on. Keep exploring and it might show itself…</p>
+          </div>
+        ) : (
+          <div key={m.id} className="mission">
+            <h3>{m.title}</h3>
+            <p>{m.blurb}</p>
+            <ul>
+              {goalsOf(m, s.missions, s.rules).map((g) => (
+                <li key={g.event} className={g.met ? 'good' : undefined}>
+                  {g.met ? '✅' : '⬜'} {g.label}: <b>{g.got} / {g.count}</b>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      ))}
       <ul>
+        {later.map((x) => <li key={x.id} className="dim">🔒 {x.secret ? '???' : x.title} (needs a taller lighthouse: {x.needsFloors} floors)</li>)}
         {MISSIONS.filter((x) => s.missions.done.includes(x.id)).map((x) => <li key={x.id} className="good">🏆 {x.title}</li>)}
-        {MISSIONS.filter((x) => x !== m && !s.missions.done.includes(x.id)).map((x) => <li key={x.id} className="dim">🔒 {x.secret ? '???' : x.title}</li>)}
       </ul>
     </aside>
   )
@@ -354,7 +364,7 @@ const Num = ({ label, hint, value, onChange, min = 0, max = 999 }: { label: stri
   </label>
 )
 
-export function GrownUps({ s, rules, credits, who, mission, verify, onRules, onGift, onGiftUpgrade, onFinishMission, onPin, onClose }: { s: State; rules: Rules; credits: number; who: string; mission?: string; verify: (pin: string) => Promise<boolean>; onRules: (r: Rules, pin: string) => void; onGift: (n: number) => void; onGiftUpgrade: (id: ObjectId) => void; onFinishMission: () => void; onPin: (pin: string, newPin: string) => Promise<boolean>; onClose: () => void }) {
+export function GrownUps({ s, rules, credits, who, verify, onRules, onGift, onGiftUpgrade, onFinishMission, onPin, onClose }: { s: State; rules: Rules; credits: number; who: string; verify: (pin: string) => Promise<boolean>; onRules: (r: Rules, pin: string) => void; onGift: (n: number) => void; onGiftUpgrade: (id: ObjectId) => void; onFinishMission: (id: string) => void; onPin: (pin: string, newPin: string) => Promise<boolean>; onClose: () => void }) {
   const [typed, setTyped] = useState('')
   const [pin, setPin] = useState<string | null>(null)
   const [wrong, setWrong] = useState(false)
@@ -462,7 +472,7 @@ export function GrownUps({ s, rules, credits, who, mission, verify, onRules, onG
           <p className="dim">These beat the overall settings above. Lowering a target below what he has already done finishes the mission.</p>
           {MISSIONS.map((m) => (
             <div key={m.id}>
-              <b>{m.title}</b> <small>(unlocks the {m.unlocks === 'weather' ? 'weather station' : m.unlocks === 'lair' ? 'hidden lair' : m.unlocks})</small>
+              <b>{m.title}</b> <small>(unlocks the {UNLOCK_NAME[m.unlocks]})</small>
               {m.goals.map((g, i) => (
                 <Num key={g.event} label={g.label} hint={rules.missionGoals?.[goalKey(m, i)] === undefined ? `(from the size: ${scaledTarget(m, i, rules)})` : '(your number)'} value={goalTarget(m, i, rules)} min={1} max={99} onChange={(n) => set({ missionGoals: { ...rules.missionGoals, [goalKey(m, i)]: n } })} />
               ))}
@@ -471,14 +481,13 @@ export function GrownUps({ s, rules, credits, who, mission, verify, onRules, onG
           ))}
           <button onClick={() => set({ missionGoals: {}, missionRewards: {} })}>Clear my own mission numbers</button>
         </details>
-        {mission ? (
-          <div className="row">
-            <span>Now: <b>{mission}</b></span>
-            <button onClick={onFinishMission}>🎁 Finish it now (unlocks its floor)</button>
+        {openMissions(s.missions, floorCount(s)).map((m) => (
+          <div key={m.id} className="row">
+            <span>Open: <b>{m.title}</b></span>
+            <button onClick={() => onFinishMission(m.id)}>🎁 Finish it now</button>
           </div>
-        ) : (
-          <p className="dim">All missions done.</p>
-        )}
+        ))}
+        <p className="dim">A finished floor mission builds its floor overnight: it appears the next morning (one new floor a morning). The lift goes in at once.</p>
         <h3>PIN</h3>
         <div className="row">
           <input value={newPin} onChange={(e) => setNewPin(e.target.value.replace(/\D/g, '').slice(0, 8))} placeholder="New PIN (digits)" inputMode="numeric" />

@@ -10,7 +10,6 @@ import { checkAnswer, makeQuiz } from './game/quiz'
 import { changePin, deleteGame, saveGame, saveRules, verifyPin, type Player } from './game/remote'
 import type { Rules } from './game/config'
 import { ack, tell } from './game/words'
-import { activeMission } from './game/missions'
 import { Alerts, CommandBar, Diary, Hud, Missions, ObjectMenu, PromptBar, GrownUps, Report, SettingsMenu, Setup, Shop, type Entry } from './ui/Panels'
 import { Scene } from './ui/Scene'
 
@@ -260,8 +259,7 @@ export default function App({ player, db, initial, rules: ownRules, onSwitch }: 
           onRules={(r, pin) => { setOwnRules(r); void saveRules(player.id, pin, r, db); update((x) => setRules(x, r)) }}
           onGift={(n) => update((x) => gift(x, n))}
           onGiftUpgrade={(id) => update((x) => giftUpgrade(x, id))}
-          mission={activeMission(s.missions)?.title}
-          onFinishMission={() => update(completeMission)}
+          onFinishMission={(id) => update((x) => completeMission(x, id))}
           onPin={(pin, np) => changePin(pin, np, db)}
           onClose={() => setShowAdmin(false)}
         />
