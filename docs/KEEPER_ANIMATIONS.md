@@ -63,6 +63,15 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Turn away in pyjamas | `keeper_pyjamas_turn_back` | reverse to face camera |
 | Get into bed | `keeper_get_into_bed` | right-side bed; mirror left; reverse to get out |
 | Snore in pyjamas | `keeper_pyjamas_snore` | right-side loop; mirror left; bed and bedding separate |
+| Swim left/right | `keeper_swim_costume_horizontal` | striped costume; right; mirror left |
+| Swim up | `keeper_swim_costume_up` | striped costume; direct rear view |
+| Swim down | `keeper_swim_costume_down` | striped costume; direct front view |
+| Scuba swim left/right | `keeper_scuba_swim_horizontal` | right; mirror left; bubbles separate |
+| Scuba swim up | `keeper_scuba_swim_up` | direct rear view; bubbles separate |
+| Scuba swim down | `keeper_scuba_swim_down` | direct front view; bubbles separate |
+| Party idle | `keeper_party_idle` | front; normal clothes plus cardboard party hat |
+| Party walk | `keeper_party_walk` | right; mirror left |
+| Party turn away | `keeper_party_turn_back` | reverse to face camera |
 
 For review, the shared side strip has separate, plainly named
 `keeper-switch-press-right-preview.gif` and
@@ -134,8 +143,8 @@ The next animation work should follow gameplay dependency rather than novelty.
 
 - Parachute steering, hanging-descent loop and landing/roll. The delivered jump
   now includes pack opening, pilot chute, canopy inflation and hanging pose.
-- Dive splash, underwater entry, swim idle, swimming lengths, floating, climb
-  out and rescue. The delivered platform dive now rotates fully head-first and
+- Dive splash, underwater entry, floating, climb out and rescue. Directional
+  swimming is delivered in both striped and scuba outfits; the platform dive
   ends just before water contact.
 - Boat embark/disembark, speedboat acceleration/braking and outboard starting.
 - Spacesuit floating for the later expansion.

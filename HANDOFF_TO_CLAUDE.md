@@ -54,7 +54,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
 
 ## 2. Lighthouse keeper: rig and animation bible
 
-1. **Delivered fact:** a 56-export production keeper set now exists under `art/raw/keeper-first-batch/` and `public/sprites/`, with aligned parts, front/rear/side action strips, outfit variants, manifest metadata and review GIFs. `data/keeper_asset_contract.json` is the scale and interaction authority.
+1. **Delivered fact:** a 65-export production keeper set now exists under `art/raw/keeper-first-batch/` and `public/sprites/`, with aligned parts, directional action strips, outfit variants, manifest metadata and review GIFs. `data/keeper_asset_contract.json` is the scale, movement and interaction authority.
 2. **Locked production contract:** every keeper part uses the same 32 x 40 canvas; the measured standing reference is 24.75 x 38.25 logical pixels and the floor anchor is `(16, 40)`. Airborne actions may use 48 x 56 for the vertical dive or 48 x 84 for parachute deployment, but never rescale the character.
 3. Required production parts:
 
@@ -96,6 +96,9 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
    | `pyjamas_turn_back` | front to back | 6 / 8 | no | delivered; reverse to face camera |
    | `get_into_bed` | side | 8 / 8 | no | delivered 48 × 40; reverse to get out |
    | `pyjamas_snore` | lying side | 6 / 4 | yes | delivered; bed/blanket remain separate |
+   | `swim_costume_horizontal/up/down` | side/rear/front | 8 / 8 each | yes | delivered 48 × 48 directional set; mirror horizontal left |
+   | `scuba_swim_horizontal/up/down` | side/rear/front | 8 / 8 each | yes | delivered matching scuba directional set |
+   | `party_idle` / `party_walk` / `party_turn_back` | front/side/turn | 4 / 6, 8 / 10, 6 / 8 | yes/yes/no | delivered cardboard party-hat variant |
    | `dance` | front | 8 / 10 | yes | celebratory loop |
    | `jump` | side | 6 / 12 | no | land returns to idle |
    | `spin` | front | 6 / 12 | no | reaction/reward |
@@ -109,7 +112,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
    | `bodily_gag` | side | 3 / 12 | no | burp/fart/sneeze; effect separate |
    | `change_to_dive` | hidden | 0 visible | n/a | never show the keeper between the doors |
 
-9. **Delivered fact:** 56 production exports now cover the master parts and initial movement/action set, including gardening, shopping, boating, TV, workshop tools, emotional reactions and the pyjama/bedtime sequence. See `docs/KEEPER_ANIMATIONS.md` for exact delivered and pending clips.
+9. **Delivered fact:** 65 production exports now cover the master parts and initial movement/action set, including gardening, shopping, boating, TV, workshop tools, reactions, bedtime, directional swimming, scuba and party variants. See `docs/KEEPER_ANIMATIONS.md` for exact delivered and pending clips.
 
 ## 3. Clickable objects, states, tiers and anchors
 
@@ -253,4 +256,4 @@ Side/rear extensions, the lift service core and the underground lair do not cons
    | Exact animation implementation | Undecided | Begin with frame strips; move only proven reusable limbs to a part rig |
    | SFX files/engine | Undecided | Define event hooks now; commission/source audio after interactions are playable |
 
-6. This handoff deliberately distinguishes the implemented runtime from the remaining production asset set. Delivery-order item 1 is complete; delivery-order item 2 and the 56-export keeper review set exist for review at 4× logical scale. Continue remaining keeper work from the prioritized backlog in `docs/KEEPER_ANIMATIONS.md`, and build every prop from `data/keeper_asset_contract.json` rather than estimating scale from concept art.
+6. This handoff deliberately distinguishes the implemented runtime from the remaining production asset set. Delivery-order item 1 is complete; delivery-order item 2 and the 65-export keeper review set exist for review at 4× logical scale. Continue remaining keeper work from the prioritized backlog in `docs/KEEPER_ANIMATIONS.md`, and build every prop from `data/keeper_asset_contract.json` rather than estimating scale from concept art.

@@ -33,6 +33,8 @@ interface Entry {
   lookTargetPoint?: [number, number]
   bedSurfacePoint?: [number, number]
   pillowPoint?: [number, number]
+  movementVector?: [number, number]
+  outfit?: string
   loop?: boolean
   reverseFor?: string
   mirrorSafe?: boolean
@@ -111,7 +113,7 @@ for (const path of files.sort()) {
   }
   const file = `${s.name}.png`
   write(join(OUT, file), s.img)
-  manifest[s.name] = { file, w: s.frameW, h: contract?.h ?? s.img.h, frames: s.frames, ...(s.fps ? { fps: s.fps } : {}), ...(s.pivot ? { pivot: s.pivot } : {}), ...(contract ? { density: contract.density, anchor: contract.anchor, keeperUsePoint: contract.keeperUsePoint, effectOrigin: contract.effectOrigin, bubbleOrigin: contract.bubbleOrigin, seatPoint: contract.seatPoint, handUsePoint: contract.handUsePoint, lookTargetPoint: contract.lookTargetPoint, bedSurfacePoint: contract.bedSurfacePoint, pillowPoint: contract.pillowPoint, loop: contract.loop, reverseFor: contract.reverseFor, mirrorSafe: contract.mirrorSafe, facing: contract.facing, interaction: contract.interaction, mirrorsFor: contract.mirrorsFor, z: contract.z } : {}) }
+  manifest[s.name] = { file, w: s.frameW, h: contract?.h ?? s.img.h, frames: s.frames, ...(s.fps ? { fps: s.fps } : {}), ...(s.pivot ? { pivot: s.pivot } : {}), ...(contract ? { density: contract.density, anchor: contract.anchor, keeperUsePoint: contract.keeperUsePoint, effectOrigin: contract.effectOrigin, bubbleOrigin: contract.bubbleOrigin, seatPoint: contract.seatPoint, handUsePoint: contract.handUsePoint, lookTargetPoint: contract.lookTargetPoint, bedSurfacePoint: contract.bedSurfacePoint, pillowPoint: contract.pillowPoint, movementVector: contract.movementVector, outfit: contract.outfit, loop: contract.loop, reverseFor: contract.reverseFor, mirrorSafe: contract.mirrorSafe, facing: contract.facing, interaction: contract.interaction, mirrorsFor: contract.mirrorsFor, z: contract.z } : {}) }
   const size = `${s.frameW}x${contract?.h ?? s.img.h}${s.frames > 1 ? ` x${s.frames} @${s.fps}fps` : ''}${contract ? ` density ${density}` : ''}`
   const scale = s.scale === 1 ? 'already 1x' : `÷${Number.isInteger(s.scale) ? s.scale : s.scale.toFixed(2)}`
   console.log(`${s.warnings.length ? '!' : '✓'}  ${s.name.padEnd(34)} ${size.padEnd(22)} ${scale}`)

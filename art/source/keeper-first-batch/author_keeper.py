@@ -326,8 +326,8 @@ def part(which, rear=False, mood="neutral"):
     return im
 
 
-def contract(frames, fps, pivot=None, *, w=32, h=40, loop=True, seat_point=None, hand_use_point=None, look_target_point=None, bed_surface_point=None, pillow_point=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
-    value = {"w": w, "h": h, "frames": frames, "fps": fps, "density": D, "anchor": [w // 2, h], "z": 50}
+def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=True, seat_point=None, hand_use_point=None, look_target_point=None, bed_surface_point=None, pillow_point=None, movement_vector=None, outfit=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
+    value = {"w": w, "h": h, "frames": frames, "fps": fps, "density": D, "anchor": anchor_point or [w // 2, h], "z": 50}
     if pivot is not None: value["pivot"] = pivot
     value["loop"] = loop
     if seat_point is not None: value["seatPoint"] = seat_point
@@ -335,6 +335,8 @@ def contract(frames, fps, pivot=None, *, w=32, h=40, loop=True, seat_point=None,
     if look_target_point is not None: value["lookTargetPoint"] = look_target_point
     if bed_surface_point is not None: value["bedSurfacePoint"] = bed_surface_point
     if pillow_point is not None: value["pillowPoint"] = pillow_point
+    if movement_vector is not None: value["movementVector"] = movement_vector
+    if outfit is not None: value["outfit"] = outfit
     if reverse_for is not None: value["reverseFor"] = reverse_for
     if mirror_safe: value["mirrorSafe"] = True
     if facing is not None: value["facing"] = facing
@@ -411,6 +413,15 @@ pyjamas_walk_frames = generated_frames("keeper-pyjamas-walk-generated-source.png
 pyjamas_turn_back_frames = generated_frames("keeper-pyjamas-turn-back-generated-source.png", 6)
 get_into_bed_frames = generated_frames("keeper-get-into-bed-generated-source.png", 8, logical_width=48, min_component_pixels=10000)
 pyjamas_snore_frames = generated_frames("keeper-snore-generated-source.png", 6, logical_width=48)
+swim_costume_horizontal_frames = generated_frames("keeper-swim-costume-horizontal-generated-source.png", 8, logical_width=48, logical_height=48)
+swim_costume_up_frames = generated_frames("keeper-swim-costume-up-generated-source.png", 8, logical_width=48, logical_height=48)
+swim_costume_down_frames = generated_frames("keeper-swim-costume-down-generated-source.png", 8, logical_width=48, logical_height=48)
+scuba_horizontal_frames = generated_frames("keeper-scuba-horizontal-generated-source.png", 8, logical_width=48, logical_height=48)
+scuba_up_frames = generated_frames("keeper-scuba-up-generated-source.png", 8, logical_width=48, logical_height=48)
+scuba_down_frames = generated_frames("keeper-scuba-down-generated-source.png", 8, logical_width=48, logical_height=48)
+party_idle_frames = generated_frames("keeper-party-idle-generated-source.png", 4, logical_height=48)
+party_walk_frames = generated_frames("keeper-party-walk-generated-source.png", 8, logical_height=48)
+party_turn_back_frames = generated_frames("keeper-party-turn-back-generated-source.png", 6, logical_height=48)
 save("keeper_walk", walk_frames, 10, mirror_safe=True)
 save("keeper_turn_back", turn_frames, 8, loop=False, reverse_for="turn_front")
 save("keeper_work_back", work_frames, 8, hand_use_point=[16, 21])
@@ -449,6 +460,15 @@ save("keeper_pyjamas_walk", pyjamas_walk_frames, 10, mirror_safe=True, facing="r
 save("keeper_pyjamas_turn_back", pyjamas_turn_back_frames, 8, loop=False, reverse_for="pyjamas_turn_front", facing="front-to-back", interaction="turn-pyjamas")
 save("keeper_get_into_bed", get_into_bed_frames, 8, loop=False, bed_surface_point=[24, 31], pillow_point=[38, 22], reverse_for="get_out_of_bed", mirror_safe=True, facing="right", interaction="enter-bed", mirrors_for="left")
 save("keeper_pyjamas_snore", pyjamas_snore_frames, 4, bed_surface_point=[24, 31], pillow_point=[38, 22], mirror_safe=True, facing="right", interaction="sleep-snore", mirrors_for="left")
+save("keeper_swim_costume_horizontal", swim_costume_horizontal_frames, 8, anchor_point=[24, 24], movement_vector=[1, 0], outfit="striped-swimming-costume", mirror_safe=True, facing="right", interaction="swim", mirrors_for="left")
+save("keeper_swim_costume_up", swim_costume_up_frames, 8, anchor_point=[24, 24], movement_vector=[0, -1], outfit="striped-swimming-costume", facing="up", interaction="swim")
+save("keeper_swim_costume_down", swim_costume_down_frames, 8, anchor_point=[24, 24], movement_vector=[0, 1], outfit="striped-swimming-costume", facing="down", interaction="swim")
+save("keeper_scuba_swim_horizontal", scuba_horizontal_frames, 8, anchor_point=[24, 24], movement_vector=[1, 0], outfit="scuba", mirror_safe=True, facing="right", interaction="scuba-swim", mirrors_for="left")
+save("keeper_scuba_swim_up", scuba_up_frames, 8, anchor_point=[24, 24], movement_vector=[0, -1], outfit="scuba", facing="up", interaction="scuba-swim")
+save("keeper_scuba_swim_down", scuba_down_frames, 8, anchor_point=[24, 24], movement_vector=[0, 1], outfit="scuba", facing="down", interaction="scuba-swim")
+save("keeper_party_idle", party_idle_frames, 6, anchor_point=[16, 48], outfit="party-hat", facing="front", interaction="party-idle")
+save("keeper_party_walk", party_walk_frames, 10, anchor_point=[16, 48], outfit="party-hat", mirror_safe=True, facing="right", interaction="party-walk", mirrors_for="left")
+save("keeper_party_turn_back", party_turn_back_frames, 8, anchor_point=[16, 48], outfit="party-hat", loop=False, reverse_for="party_turn_front", facing="front-to-back", interaction="party-turn")
 
 # A transparent source contact sheet makes alignment mistakes easy to spot.
 contact = Image.new("RGBA", (W * 4, H * 2), (244, 236, 214, 255))
@@ -493,4 +513,13 @@ save_preview("keeper-pyjamas-walk", pyjamas_walk_frames, 100)
 save_preview("keeper-pyjamas-turn-back", pyjamas_turn_back_frames, 120, ping_pong=True)
 save_preview("keeper-get-into-bed", get_into_bed_frames, 120)
 save_preview("keeper-pyjamas-snore", pyjamas_snore_frames, 250)
+save_preview("keeper-swim-costume-horizontal", swim_costume_horizontal_frames, 120)
+save_preview("keeper-swim-costume-up", swim_costume_up_frames, 120)
+save_preview("keeper-swim-costume-down", swim_costume_down_frames, 120)
+save_preview("keeper-scuba-swim-horizontal", scuba_horizontal_frames, 120)
+save_preview("keeper-scuba-swim-up", scuba_up_frames, 120)
+save_preview("keeper-scuba-swim-down", scuba_down_frames, 120)
+save_preview("keeper-party-idle", party_idle_frames, 160)
+save_preview("keeper-party-walk", party_walk_frames, 100)
+save_preview("keeper-party-turn-back", party_turn_back_frames, 120, ping_pong=True)
 print(f"Keeper batch authored in {OUT}")

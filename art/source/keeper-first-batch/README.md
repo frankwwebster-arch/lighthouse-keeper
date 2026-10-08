@@ -139,6 +139,17 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
   overlapping ten-frame attempt is preserved under `replaced-bed-v1/`.
 - `keeper-snore-generated-source.png` — six matching horizontal breathing and
   snoring poses without bed or floating Z effects.
+- `keeper-swim-costume-horizontal-generated-source.png` — eight right-facing
+  breaststroke poses in the red-and-white costume; mirror left.
+- `keeper-swim-costume-up-generated-source.png` and
+  `keeper-swim-costume-down-generated-source.png` — eight rear/up and
+  front/down directional swim poses respectively.
+- `keeper-scuba-horizontal-generated-source.png`, `keeper-scuba-up-generated-source.png`
+  and `keeper-scuba-down-generated-source.png` — the same directional coverage
+  in the locked navy wetsuit, mask, regulator, yellow tank and fins.
+- `keeper-party-idle-generated-source.png`, `keeper-party-walk-generated-source.png`
+  and `keeper-party-turn-back-generated-source.png` — normal uniform with a
+  blue dotted cardboard cone hat, covering idle, mirrored walk and turn.
 
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,
@@ -146,5 +157,7 @@ hardens alpha, places it on a density-4 contract canvas, and emits the manifest
 sidecars and review GIFs. Most clips use 32 × 40; dive and parachute poses use
 larger transparent contract canvases at the identical character scale. The
 hand-saw strip uses a 40 × 40 extended side-tool canvas for its full stroke.
-Bed entry and snoring use a 48 × 40 canvas for the horizontal body. All
+Bed entry and snoring use a 48 × 40 canvas for the horizontal body.
+directional swim clips use a centred 48 × 48 canvas; the party hat uses a
+32 × 48 canvas so headwear never shrinks the keeper. All
 generation used the built-in image generator in referenced-image mode.

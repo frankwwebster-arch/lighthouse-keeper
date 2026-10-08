@@ -1,0 +1,22 @@
+{
+  "w": 48,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    24,
+    24
+  ],
+  "z": 50,
+  "loop": true,
+  "movementVector": [
+    1,
+    0
+  ],
+  "outfit": "scuba",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "scuba-swim",
+  "mirrorsFor": "left"
+}

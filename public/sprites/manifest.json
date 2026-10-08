@@ -584,6 +584,60 @@
   "mirrorsFor": "left",
   "z": 50
  },
+ "keeper_party_idle": {
+  "file": "keeper_party_idle.png",
+  "w": 32,
+  "h": 48,
+  "frames": 4,
+  "fps": 6,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "outfit": "party-hat",
+  "loop": true,
+  "facing": "front",
+  "interaction": "party-idle",
+  "z": 50
+ },
+ "keeper_party_turn_back": {
+  "file": "keeper_party_turn_back.png",
+  "w": 32,
+  "h": 48,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "outfit": "party-hat",
+  "loop": false,
+  "reverseFor": "party_turn_front",
+  "facing": "front-to-back",
+  "interaction": "party-turn",
+  "z": 50
+ },
+ "keeper_party_walk": {
+  "file": "keeper_party_walk.png",
+  "w": 32,
+  "h": 48,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "outfit": "party-hat",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "party-walk",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_piano": {
   "file": "keeper_piano.png",
   "w": 32,
@@ -790,6 +844,71 @@
   "mirrorsFor": "left",
   "z": 50
  },
+ "keeper_scuba_swim_down": {
+  "file": "keeper_scuba_swim_down.png",
+  "w": 48,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   24
+  ],
+  "movementVector": [
+   0,
+   1
+  ],
+  "outfit": "scuba",
+  "loop": true,
+  "facing": "down",
+  "interaction": "scuba-swim",
+  "z": 50
+ },
+ "keeper_scuba_swim_horizontal": {
+  "file": "keeper_scuba_swim_horizontal.png",
+  "w": 48,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   24
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "outfit": "scuba",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "scuba-swim",
+  "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_scuba_swim_up": {
+  "file": "keeper_scuba_swim_up.png",
+  "w": 48,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   24
+  ],
+  "movementVector": [
+   0,
+   -1
+  ],
+  "outfit": "scuba",
+  "loop": true,
+  "facing": "up",
+  "interaction": "scuba-swim",
+  "z": 50
+ },
  "keeper_sit_front": {
   "file": "keeper_sit_front.png",
   "w": 32,
@@ -879,6 +998,71 @@
   ],
   "loop": true,
   "mirrorSafe": true,
+  "z": 50
+ },
+ "keeper_swim_costume_down": {
+  "file": "keeper_swim_costume_down.png",
+  "w": 48,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   24
+  ],
+  "movementVector": [
+   0,
+   1
+  ],
+  "outfit": "striped-swimming-costume",
+  "loop": true,
+  "facing": "down",
+  "interaction": "swim",
+  "z": 50
+ },
+ "keeper_swim_costume_horizontal": {
+  "file": "keeper_swim_costume_horizontal.png",
+  "w": 48,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   24
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "outfit": "striped-swimming-costume",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "swim",
+  "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_swim_costume_up": {
+  "file": "keeper_swim_costume_up.png",
+  "w": 48,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   24
+  ],
+  "movementVector": [
+   0,
+   -1
+  ],
+  "outfit": "striped-swimming-costume",
+  "loop": true,
+  "facing": "up",
+  "interaction": "swim",
   "z": 50
  },
  "keeper_switch_press_back": {

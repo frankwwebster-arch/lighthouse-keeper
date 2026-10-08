@@ -16,6 +16,8 @@ page explains it in ordinary language.
   same size; only the transparent space around him grows.
 - Bed entry and snoring use 48 × 40 with anchor `(24,40)` so the horizontal
   body fits without rescaling.
+- Directional swimming uses a centred 48 × 48 canvas and movement anchor
+  `(24,24)`. Party headwear uses 32 × 48 with feet anchor `(16,48)`.
 - Never scale the keeper to make him meet an object. Position and size the
   object from the interaction points below.
 
@@ -74,6 +76,12 @@ The shared pivot landmarks are neck `(16,11)`, shoulders `(10,15)` and
 `(22,15)`, and hips `(13,25)` and `(19,25)`. New outfits must preserve these
 landmarks. The striped swimming costume, parachute harness and navy pyjamas
 therefore change clothing only, never body proportions.
+
+Directional underwater movement reads `movementVector` from the manifest:
+right `(1,0)`, mirrored left `(-1,0)`, up `(0,-1)`, and down `(0,1)`. Water,
+bubbles and splashes remain separate effects. The extended party canvas adds
+transparent room above his head for the cardboard cone; his body is not
+scaled down to make the hat fit.
 
 Any new prop-based animation must add its hand, seat or ground point to the
 JSON contract and its sprite sidecar. Verification rejects changes that break

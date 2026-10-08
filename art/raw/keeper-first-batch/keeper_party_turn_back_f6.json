@@ -1,0 +1,17 @@
+{
+  "w": 32,
+  "h": 48,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    16,
+    48
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "party-hat",
+  "reverseFor": "party_turn_front",
+  "facing": "front-to-back",
+  "interaction": "party-turn"
+}

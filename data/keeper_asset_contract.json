@@ -16,7 +16,9 @@
     "extendedParachute": { "width": 48, "height": 84, "density": 4, "anchor": [24, 84] },
     "extendedBoatAction": { "width": 40, "height": 40, "density": 4, "anchor": [20, 40] },
     "extendedSideTool": { "width": 40, "height": 40, "density": 4, "anchor": [20, 40] },
-    "extendedBedAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] }
+    "extendedBedAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
+    "centredSwimAction": { "width": 48, "height": 48, "density": 4, "anchor": [24, 24] },
+    "extendedHeadwear": { "width": 32, "height": 48, "density": 4, "anchor": [16, 48] }
   },
   "measuredReference": {
     "source": "public/sprites/keeper_reference.png",
@@ -58,6 +60,12 @@
     "sawWoodRight": { "clip": "keeper_saw_wood", "handUsePoint": [35, 23], "offsetFromFeet": [15, -17], "mirrorFor": "sawWoodLeft" },
     "bedEntryRight": { "clip": "keeper_get_into_bed", "bedSurfacePoint": [24, 31], "pillowPoint": [38, 22], "surfaceOffsetFromFloor": [0, -9], "mirrorFor": "bedEntryLeft" },
     "snoreRight": { "clip": "keeper_pyjamas_snore", "bedSurfacePoint": [24, 31], "pillowPoint": [38, 22], "surfaceOffsetFromFloor": [0, -9], "mirrorFor": "snoreLeft" }
+  },
+  "movementProfiles": {
+    "swimRight": { "movementVector": [1, 0], "mirrorFor": "swimLeft" },
+    "swimLeft": { "movementVector": [-1, 0], "mirroredFrom": "swimRight" },
+    "swimUp": { "movementVector": [0, -1] },
+    "swimDown": { "movementVector": [0, 1] }
   },
   "objectRules": {
     "lightSwitchCentreHeightAboveFloor": 23,

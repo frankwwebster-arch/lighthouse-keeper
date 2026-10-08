@@ -1,0 +1,16 @@
+{
+  "w": 32,
+  "h": 48,
+  "frames": 4,
+  "fps": 6,
+  "density": 4,
+  "anchor": [
+    16,
+    48
+  ],
+  "z": 50,
+  "loop": true,
+  "outfit": "party-hat",
+  "facing": "front",
+  "interaction": "party-idle"
+}
