@@ -185,6 +185,51 @@ def side_walk(step=0):
     return im
 
 
+def generated_walk_frames():
+    """Normalise the identity-locked generated walk source onto eight 32x40 slots."""
+    source = Path(__file__).with_name("keeper-walk-generated-source.png")
+    if not source.exists():
+        return [side_walk(p) for p in (-3, -2, 0, 2, 3, 2, 0, -2)]
+    sheet = Image.open(source).convert("RGBA")
+    alpha = sheet.getchannel("A").point(lambda value: 255 if value >= 128 else 0)
+    occupied = []
+    for x in range(sheet.width):
+        occupied.append(alpha.crop((x, 0, x + 1, sheet.height)).getbbox() is not None)
+    runs = []
+    start = None
+    for x, used in enumerate(occupied + [False]):
+        if used and start is None:
+            start = x
+        elif not used and start is not None:
+            if x - start > 80:
+                runs.append((start, x))
+            start = None
+    if len(runs) != 8:
+        raise ValueError(f"Expected 8 generated keeper poses, found {len(runs)}")
+
+    bounds = []
+    for x0, x1 in runs:
+        crop_alpha = alpha.crop((x0, 0, x1, sheet.height))
+        box = crop_alpha.getbbox()
+        if box is None:
+            raise ValueError("Generated keeper pose is empty")
+        bounds.append((x0 + box[0], box[1], x0 + box[2], box[3]))
+    tallest = max(y1 - y0 for _, y0, _, y1 in bounds)
+    scale = 152 / tallest
+    frames = []
+    for box in bounds:
+        pose = sheet.crop(box)
+        size = (max(1, round(pose.width * scale)), max(1, round(pose.height * scale)))
+        pose = pose.resize(size, Image.Resampling.LANCZOS)
+        # The game contract requires hard alpha even when a generated edge has a fringe.
+        a = pose.getchannel("A").point(lambda value: 255 if value >= 128 else 0)
+        pose.putalpha(a)
+        frame = image()
+        frame.alpha_composite(pose, ((W - pose.width) // 2, 158 - pose.height))
+        frames.append(frame)
+    return frames
+
+
 def part(which, rear=False, mood="neutral"):
     im = image()
     if which == "torso": torso(im, rear)
@@ -222,7 +267,7 @@ save("keeper_back_head", [part("head", True)], pivot=[16, 11])
 save("keeper_reference", [compose("front", "neutral")])
 
 save("keeper_idle", [compose("front", "neutral", bob=b) for b in (0, 0, -1, 0)], 6)
-walk_frames = [side_walk(p) for p in (-3, -2, 0, 2, 3, 2, 0, -2)]
+walk_frames = generated_walk_frames()
 save("keeper_walk", walk_frames, 10)
 save("keeper_cook_back", [compose("back", hands=h, bob=b) for h, b in ((4, 0), (5, -1), (6, -1), (5, 0), (4, 0), (3, 0))], 8)
 save("keeper_wash_back", [compose("back", hands=h, bob=b) for h, b in ((3, 0), (4, 0), (5, -1), (4, -1), (3, 0), (2, 0))], 8)
@@ -230,15 +275,15 @@ save("keeper_brush_teeth_back", [compose("back", hands=h, bob=b) for h, b in ((4
 
 # A transparent source contact sheet makes alignment mistakes easy to spot.
 contact = Image.new("RGBA", (W * 3, H * 2), (244, 236, 214, 255))
-for i, frame in enumerate((compose("front", "happy"), side_walk(0), compose("back"), side_walk(-3), side_walk(3), compose("back", hands=5))):
+for i, frame in enumerate((compose("front", "happy"), walk_frames[2], compose("back"), walk_frames[0], walk_frames[4], compose("back", hands=5))):
     contact.alpha_composite(frame, ((i % 3) * W, (i // 3) * H))
 contact.save(Path(__file__).with_name("keeper-contact-sheet.png"), optimize=True)
 
 # Friendly enlarged loop for direct review outside the game and catalogue.
 preview_frames = []
 for frame in walk_frames:
-    canvas = Image.new("RGBA", (192, 240), (244, 236, 214, 255))
-    enlarged = frame.resize((192, 240), Image.Resampling.NEAREST)
+    canvas = Image.new("RGBA", (256, 320), (244, 236, 214, 255))
+    enlarged = frame.resize((256, 320), Image.Resampling.NEAREST)
     canvas.alpha_composite(enlarged)
     preview_frames.append(canvas.convert("P", palette=Image.Palette.ADAPTIVE, colors=128))
 preview = ROOT / "docs/floor-asset-catalogue/keeper-walk-preview.gif"
