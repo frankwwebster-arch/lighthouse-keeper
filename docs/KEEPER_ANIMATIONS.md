@@ -44,7 +44,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Press side switch | `keeper_switch_press_side` | right; mirror left; reverse to withdraw |
 | Press switch ahead | `keeper_switch_press_back` | rear/right hand; mirror for left hand; reverse to withdraw |
 | Parachute jump | `keeper_parachute_jump` | right; mirror left; jump/freefall only; canopy is separate |
-| Dive from platform | `keeper_platform_dive` | right; mirror left; striped costume, bare head/feet |
+| Dive from platform | `keeper_platform_dive` | 10 frames; right/mirror left; ends vertical head-first |
 | Dig garden | `keeper_dig` | right; mirror left; soil remains separate |
 | Feed animals | `keeper_feed_animals` | right; mirror left; bowl and animal remain separate |
 
@@ -59,8 +59,8 @@ work loop so gameplay code can remain descriptive without duplicating art.
 ## Applying a switch animation to an object
 
 Normal keeper clips use a 32 × 40 logical canvas and feet anchor `(16,40)`.
-The two horizontal airborne clips use a 48 × 40 canvas and `(24,40)` anchor,
-adding transparent room without changing his scale.
+The horizontal airborne clip uses 48 × 40; the head-first dive uses 48 × 56.
+Both add transparent room without changing his scale.
 `handUsePoint` is the fingertip location in that same canvas.
 
 | Pose | `handUsePoint` | Switch position relative to his feet |
@@ -109,7 +109,8 @@ The next animation work should follow gameplay dependency rather than novelty.
 - Parachute canopy deployment, hanging descent, steering and landing/roll. The
   delivered jump ends in freefall so the canopy remains a reusable object/effect.
 - Dive splash, underwater entry, swim idle, swimming lengths, floating, climb
-  out and rescue. The delivered platform dive ends just before water contact.
+  out and rescue. The delivered platform dive now rotates fully head-first and
+  ends just before water contact.
 - Rowing and boat embark/disembark.
 - Spacesuit floating for the later expansion.
 

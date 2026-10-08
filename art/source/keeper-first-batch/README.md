@@ -49,8 +49,8 @@ Switch use follows the same economy: one side pose mirrors left/right, while the
 rear pose mirrors to swap hands. Both reverse from pressed position to idle.
 Their fingertips now share the authoritative Y=17 datum. Parachute jump,
 platform dive, garden digging and animal feeding extend the same production
-set. Horizontal flight/dive frames use a wider 48 × 40 transparent canvas but
-retain the keeper's scale.
+set. Airborne frames expand their transparent canvas to 48 × 40, or 48 × 56
+for the vertical dive, but retain the keeper's scale.
 
 The `docs/floor-asset-catalogue/keeper-*-preview.gif` files are enlarged
 previews made from the exact production frames; they are not separate artwork.
@@ -98,8 +98,9 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
 - `keeper-dive-costume-turnaround-source.png` — identity-locked front, side and
   rear reference in a full-length red-and-white striped bathing costume, bare
   headed and barefoot.
-- `keeper-platform-dive-generated-source.png` — eight right-facing launch and
-  streamline frames in that costume, without platform, water or splash.
+- `keeper-platform-dive-generated-source.png` — ten right-facing launch,
+  streamline and rotation frames in that costume, ending near-vertical and
+  head-first with straight outstretched arms; no platform, water or splash.
 - `keeper-dig-generated-source.png` — eight right-facing spade poses covering
   drive, boot press, lever, lift and return, with soil kept separate.
 - `keeper-feed-animals-generated-source.png` — eight right-facing poses that

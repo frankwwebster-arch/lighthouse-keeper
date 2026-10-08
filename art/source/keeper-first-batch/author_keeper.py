@@ -187,7 +187,7 @@ def side_walk(step=0):
     return im
 
 
-def generated_frames(filename, expected, fallback=None, logical_width=32):
+def generated_frames(filename, expected, fallback=None, logical_width=32, logical_height=40, scale_reference_index=None):
     """Normalise an identity-locked generated source onto aligned contract slots."""
     source = Path(__file__).with_name(filename)
     if not source.exists():
@@ -251,7 +251,14 @@ def generated_frames(filename, expected, fallback=None, logical_width=32):
     tallest = max(y1 - y0 for _, y0, _, y1 in bounds)
     widest = max(x1 - x0 for x0, _, x1, _ in bounds)
     target_width = logical_width * D
-    scale = min(152 / tallest, (target_width - 8) / widest)
+    target_height = logical_height * D
+    height_scale = (target_height - 8) / tallest
+    if scale_reference_index is not None:
+        _, reference_y0, _, reference_y1 = bounds[scale_reference_index]
+        height_scale = min(height_scale, 152 / (reference_y1 - reference_y0))
+    elif logical_height == 40:
+        height_scale = 152 / tallest
+    scale = min(height_scale, (target_width - 8) / widest)
     frames = []
     for pose_index, box in enumerate(bounds):
         pose = sheet.crop(box)
@@ -267,8 +274,8 @@ def generated_frames(filename, expected, fallback=None, logical_width=32):
         # The game contract requires hard alpha even when a generated edge has a fringe.
         a = pose.getchannel("A").point(lambda value: 255 if value >= 128 else 0)
         pose.putalpha(a)
-        frame = Image.new("RGBA", (target_width, H), (0, 0, 0, 0))
-        frame.alpha_composite(pose, ((target_width - pose.width) // 2, 158 - pose.height))
+        frame = Image.new("RGBA", (target_width, target_height), (0, 0, 0, 0))
+        frame.alpha_composite(pose, ((target_width - pose.width) // 2, target_height - 2 - pose.height))
         frames.append(frame)
     return frames
 
@@ -286,8 +293,8 @@ def part(which, rear=False, mood="neutral"):
     return im
 
 
-def contract(frames, fps, pivot=None, *, w=32, loop=True, seat_point=None, hand_use_point=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
-    value = {"w": w, "h": 40, "frames": frames, "fps": fps, "density": D, "anchor": [w // 2, 40], "z": 50}
+def contract(frames, fps, pivot=None, *, w=32, h=40, loop=True, seat_point=None, hand_use_point=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
+    value = {"w": w, "h": h, "frames": frames, "fps": fps, "density": D, "anchor": [w // 2, h], "z": 50}
     if pivot is not None: value["pivot"] = pivot
     value["loop"] = loop
     if seat_point is not None: value["seatPoint"] = seat_point
@@ -302,21 +309,22 @@ def contract(frames, fps, pivot=None, *, w=32, loop=True, seat_point=None, hand_
 
 def save(name, frames, fps=0, pivot=None, **metadata):
     frame_width = frames[0].width
-    if any(frame.size != (frame_width, H) for frame in frames):
+    frame_height = frames[0].height
+    if any(frame.size != (frame_width, frame_height) for frame in frames):
         raise ValueError(f"Mismatched frame sizes for {name}")
-    strip = Image.new("RGBA", (frame_width * len(frames), H), (0, 0, 0, 0))
+    strip = Image.new("RGBA", (frame_width * len(frames), frame_height), (0, 0, 0, 0))
     for i, frame in enumerate(frames): strip.alpha_composite(frame, (i * frame_width, 0))
     png = OUT / f"{name}_f{len(frames)}.png"
     strip.save(png, optimize=True)
-    png.with_suffix(".json").write_text(json.dumps(contract(len(frames), fps, pivot, w=frame_width // D, **metadata), indent=2) + "\n")
+    png.with_suffix(".json").write_text(json.dumps(contract(len(frames), fps, pivot, w=frame_width // D, h=frame_height // D, **metadata), indent=2) + "\n")
 
 
 def save_preview(name, frames, duration, ping_pong=False):
     sequence = frames + (frames[-2:0:-1] if ping_pong else [])
     previews = []
     for frame in sequence:
-        canvas = Image.new("RGBA", (frame.width * 2, H * 2), (244, 236, 214, 255))
-        canvas.alpha_composite(frame.resize((frame.width * 2, H * 2), Image.Resampling.NEAREST))
+        canvas = Image.new("RGBA", (frame.width * 2, frame.height * 2), (244, 236, 214, 255))
+        canvas.alpha_composite(frame.resize((frame.width * 2, frame.height * 2), Image.Resampling.NEAREST))
         previews.append(canvas.convert("P", palette=Image.Palette.ADAPTIVE, colors=128))
     preview = ROOT / f"docs/floor-asset-catalogue/{name}-preview.gif"
     previews[0].save(preview, save_all=True, append_images=previews[1:], duration=duration, loop=0, disposal=2, optimize=False)
@@ -348,7 +356,7 @@ stairs_down_frames = generated_frames("keeper-stairs-down-generated-source.png",
 switch_side_frames = generated_frames("keeper-switch-side-generated-source.png", 6)
 switch_back_frames = generated_frames("keeper-switch-back-generated-source.png", 6)
 parachute_jump_frames = generated_frames("keeper-parachute-jump-generated-source.png", 8, logical_width=48)
-platform_dive_frames = generated_frames("keeper-platform-dive-generated-source.png", 8, logical_width=48)
+platform_dive_frames = generated_frames("keeper-platform-dive-generated-source.png", 10, logical_width=48, logical_height=56, scale_reference_index=0)
 dig_frames = generated_frames("keeper-dig-generated-source.png", 8)
 feed_animals_frames = generated_frames("keeper-feed-animals-generated-source.png", 8)
 save("keeper_walk", walk_frames, 10, mirror_safe=True)

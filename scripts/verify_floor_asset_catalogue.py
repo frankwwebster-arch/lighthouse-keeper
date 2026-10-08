@@ -51,15 +51,15 @@ required_clips={
     'keeper_ladder_climb':(8,10), 'keeper_stairs_up':(8,10),
     'keeper_stairs_down':(8,10),
     'keeper_switch_press_side':(6,8), 'keeper_switch_press_back':(6,8),
-    'keeper_parachute_jump':(8,10), 'keeper_platform_dive':(8,10),
+    'keeper_parachute_jump':(8,10), 'keeper_platform_dive':(10,10),
     'keeper_dig':(8,8), 'keeper_feed_animals':(8,8),
 }
 for raw in keeper_pngs:
     sidecar=json.loads(raw.with_suffix('.json').read_text())
     im=Image.open(raw).convert('RGBA')
     assert im.size==(sidecar['w']*sidecar['density']*sidecar['frames'],sidecar['h']*sidecar['density'])
-    assert sidecar['w'] in {32,48}
-    assert (sidecar['h'],sidecar['density'],sidecar['anchor'])==(40,4,[sidecar['w']//2,40])
+    assert sidecar['w'] in {32,48} and sidecar['h'] in {40,56}
+    assert (sidecar['density'],sidecar['anchor'])==(4,[sidecar['w']//2,sidecar['h']])
     assert set(im.getchannel('A').tobytes()) <= {0,255}
     name=raw.stem.rsplit('_f',1)[0]
     m=manifest[name]
@@ -95,7 +95,7 @@ assert manifest['keeper_switch_press_back']['facing']=='back' and manifest['keep
 assert manifest['keeper_switch_press_back']['interaction']=='press-switch' and manifest['keeper_switch_press_back']['reverseFor']=='switch_withdraw_back'
 assert manifest['keeper_parachute_jump']['w']==48 and manifest['keeper_parachute_jump']['anchor']==[24,40]
 assert manifest['keeper_parachute_jump']['loop'] is False and manifest['keeper_parachute_jump']['interaction']=='parachute-jump'
-assert manifest['keeper_platform_dive']['w']==48 and manifest['keeper_platform_dive']['anchor']==[24,40]
+assert manifest['keeper_platform_dive']['w']==48 and manifest['keeper_platform_dive']['h']==56 and manifest['keeper_platform_dive']['anchor']==[24,56]
 assert manifest['keeper_platform_dive']['loop'] is False and manifest['keeper_platform_dive']['interaction']=='platform-dive'
 assert manifest['keeper_dig']['handUsePoint']==[27,38] and manifest['keeper_dig']['interaction']=='dig-ground'
 assert manifest['keeper_feed_animals']['handUsePoint']==[27,34] and manifest['keeper_feed_animals']['interaction']=='feed-bowl'
@@ -104,6 +104,7 @@ asset_contract=json.loads((root/'data/keeper_asset_contract.json').read_text())
 assert asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
 assert asset_contract['canvas']['standard']=={'width':32,'height':40,'density':4,'anchor':[16,40]}
 assert asset_contract['canvas']['extendedAirborne']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
+assert asset_contract['canvas']['extendedVerticalDive']=={'width':48,'height':56,'density':4,'anchor':[24,56]}
 assert asset_contract['interactionProfiles']['switchSideRight']['handUsePoint']==[27,17]
 assert asset_contract['interactionProfiles']['switchBackRightHand']['handUsePoint']==[26,17]
 assert asset_contract['objectRules']['lightSwitchCentreHeightAboveFloor']==23
@@ -121,7 +122,7 @@ previews={
     'keeper-stairs-down':(8,100),
     'keeper-switch-press-right':(10,120), 'keeper-switch-press-left':(10,120),
     'keeper-switch-press-back':(10,120),
-    'keeper-parachute-jump':(8,100), 'keeper-platform-dive':(8,100),
+    'keeper-parachute-jump':(8,100), 'keeper-platform-dive':(10,100),
     'keeper-dig':(8,120), 'keeper-feed-animals':(8,120),
 }
 for name,(frames,duration) in previews.items():

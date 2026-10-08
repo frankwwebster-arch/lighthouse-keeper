@@ -11,7 +11,8 @@
   },
   "canvas": {
     "standard": { "width": 32, "height": 40, "density": 4, "anchor": [16, 40] },
-    "extendedAirborne": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] }
+    "extendedAirborne": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
+    "extendedVerticalDive": { "width": 48, "height": 56, "density": 4, "anchor": [24, 56] }
   },
   "measuredReference": {
     "source": "public/sprites/keeper_reference.png",
