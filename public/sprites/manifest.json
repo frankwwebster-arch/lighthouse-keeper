@@ -484,6 +484,33 @@
   "loop": true,
   "z": 50
  },
+ "keeper_get_into_bed": {
+  "file": "keeper_get_into_bed.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "bedSurfacePoint": [
+   24,
+   31
+  ],
+  "pillowPoint": [
+   38,
+   22
+  ],
+  "loop": false,
+  "reverseFor": "get_out_of_bed",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "enter-bed",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_idle": {
   "file": "keeper_idle.png",
   "w": 32,
@@ -638,6 +665,67 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "platform-dive",
+  "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_pyjamas_snore": {
+  "file": "keeper_pyjamas_snore.png",
+  "w": 48,
+  "h": 40,
+  "frames": 6,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "bedSurfacePoint": [
+   24,
+   31
+  ],
+  "pillowPoint": [
+   38,
+   22
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "sleep-snore",
+  "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_pyjamas_turn_back": {
+  "file": "keeper_pyjamas_turn_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "loop": false,
+  "reverseFor": "pyjamas_turn_front",
+  "facing": "front-to-back",
+  "interaction": "turn-pyjamas",
+  "z": 50
+ },
+ "keeper_pyjamas_walk": {
+  "file": "keeper_pyjamas_walk.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "walk-pyjamas",
   "mirrorsFor": "left",
   "z": 50
  },
@@ -931,6 +1019,22 @@
   "mirrorsFor": "rear-left",
   "z": 50
  },
+ "keeper_wave_camera": {
+  "file": "keeper_wave_camera.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "loop": false,
+  "facing": "front",
+  "interaction": "emote-wave",
+  "z": 50
+ },
  "keeper_weld": {
   "file": "keeper_weld.png",
   "w": 32,
@@ -969,6 +1073,22 @@
    21
   ],
   "loop": true,
+  "z": 50
+ },
+ "keeper_yawn": {
+  "file": "keeper_yawn.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "loop": false,
+  "facing": "front-right",
+  "interaction": "emote-yawn",
   "z": 50
  },
  "obj_tv_broken": {

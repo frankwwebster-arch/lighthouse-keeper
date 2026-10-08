@@ -14,6 +14,8 @@ page explains it in ordinary language.
 - The vertical dive uses 48 × 56 with anchor `(24,56)`. Full parachute
   deployment uses 48 × 84 with anchor `(24,84)`. The keeper remains exactly the
   same size; only the transparent space around him grows.
+- Bed entry and snoring use 48 × 40 with anchor `(24,40)` so the horizontal
+  body fits without rescaling.
 - Never scale the keeper to make him meet an object. Position and size the
   object from the interaction points below.
 
@@ -35,6 +37,7 @@ downward. A side-facing point at X mirrors with `mirroredX = canvasWidth - X`.
 | Fruit harvest | 26 px | side `(25,14)` |
 | Welding contact | 18 px | side `(27,22)` |
 | Sawing contact | 17 px | extended side canvas `(35,23)` |
+| Bed mattress surface | 9 px | extended bed canvas `(24,31)` |
 
 These are interaction datums, not mandatory object sizes. For example, a light
 switch can have any suitable plate size, but its button centre must be 23 px
@@ -59,12 +62,18 @@ for the right-looking pose, or mirror the strip and use 24 pixels left. The
 chair/sofa should support the keeper's seat point but must not extend across the
 screen sightline.
 
+For beds, align the mattress surface with `(24,31)` on the 48 × 40 bed-action
+canvas and the pillow centre with `(38,22)` for a right-facing layout. Mirror
+both the clip and points for a left-facing bed. The bed frame, mattress,
+blanket and pillow remain separate layers; play `keeper_get_into_bed` backward
+for getting out.
+
 ## Rig landmarks
 
 The shared pivot landmarks are neck `(16,11)`, shoulders `(10,15)` and
 `(22,15)`, and hips `(13,25)` and `(19,25)`. New outfits must preserve these
-landmarks. The striped swimming costume, parachute harness and all future
-costumes therefore change clothing only, never body proportions.
+landmarks. The striped swimming costume, parachute harness and navy pyjamas
+therefore change clothing only, never body proportions.
 
 Any new prop-based animation must add its hand, seat or ground point to the
 JSON contract and its sprite sidecar. Verification rejects changes that break

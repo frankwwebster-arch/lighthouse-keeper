@@ -70,9 +70,15 @@ Initial clips:
 | `watch_tv` | rear ¾ | 8 · 6 | yes | seat `(16,29)`; screen target `(40,14)`; mirror left |
 | `weld` | side | 8 · 8 | yes | torch contact `(27,22)`; goggles/gloves included; workpiece separate |
 | `saw_wood` | side | 8 · 8 | yes | 40 × 40; blade contact `(35,23)`; timber/bench separate |
+| `wave_camera` | front | 8 · 8 | no | warm greeting one-shot |
+| `yawn` | front ¾ | 8 · 8 | no | sleepy expression and full-body stretch |
+| `pyjamas_walk` | side | 8 · 10 | yes | right; mirror left; navy pyjamas with cream piping |
+| `pyjamas_turn_back` | front to back | 6 · 8 | no | reverse to turn front |
+| `get_into_bed` | side | 8 · 8 | no | 48 × 40; surface `(24,31)`; pillow `(38,22)`; reverse to rise |
+| `pyjamas_snore` | lying side | 6 · 4 | yes | 48 × 40 breathing/snore loop; bed separate |
 | `loo_hide` | hidden | 0 | n/a | keeper is not drawn |
 
-Required part files are `keeper_front_head_{happy,neutral,grumpy,asleep,open}.png`, `keeper_front_{torso,arm_l,arm_r,leg_l,leg_r}.png`, the equivalent `keeper_back_*` files with one back head, and `keeper_reference.png`; every part file is 32 × 40. Airborne strips may expand to 48 × 56 for the dive or 48 × 84 for parachute deployment without rescaling the keeper. Long side tools may use 40 × 40 for their full stroke. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. Pivots are for assembly tooling; production raster limbs use drawn key angles or integer translations in final clips rather than arbitrary CSS rotation. `data/keeper_asset_contract.json` is authoritative for scale and use points.
+Required part files are `keeper_front_head_{happy,neutral,grumpy,asleep,open}.png`, `keeper_front_{torso,arm_l,arm_r,leg_l,leg_r}.png`, the equivalent `keeper_back_*` files with one back head, and `keeper_reference.png`; every part file is 32 × 40. Airborne strips may expand to 48 × 56 for the dive or 48 × 84 for parachute deployment without rescaling the keeper. Long side tools may use 40 × 40 for their full stroke; horizontal bed poses use 48 × 40. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. Pivots are for assembly tooling; production raster limbs use drawn key angles or integer translations in final clips rather than arbitrary CSS rotation. `data/keeper_asset_contract.json` is authoritative for scale and use points.
 
 The dive outfit reuses every pivot. Its approved reference is a traditional full-length red-and-white striped one-piece costume, without cap or helmet and with bare feet. Changing is an invisible clip: inner door closes, keeper disappears, zip/rustle SFX, outfit swaps, exterior door opens, dressed keeper exits. There is never a visible frame between the two doors.
 

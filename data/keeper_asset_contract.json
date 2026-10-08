@@ -15,7 +15,8 @@
     "extendedVerticalDive": { "width": 48, "height": 56, "density": 4, "anchor": [24, 56] },
     "extendedParachute": { "width": 48, "height": 84, "density": 4, "anchor": [24, 84] },
     "extendedBoatAction": { "width": 40, "height": 40, "density": 4, "anchor": [20, 40] },
-    "extendedSideTool": { "width": 40, "height": 40, "density": 4, "anchor": [20, 40] }
+    "extendedSideTool": { "width": 40, "height": 40, "density": 4, "anchor": [20, 40] },
+    "extendedBedAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] }
   },
   "measuredReference": {
     "source": "public/sprites/keeper_reference.png",
@@ -54,7 +55,9 @@
     "watchTvRight": { "clip": "keeper_watch_tv", "seatPoint": [16, 29], "lookTargetPoint": [40, 14], "screenCentreOffsetFromSeat": [24, -15], "mirrorFor": "watchTvLeft" },
     "watchTvLeft": { "clip": "keeper_watch_tv", "seatPoint": [16, 29], "lookTargetPoint": [-8, 14], "screenCentreOffsetFromSeat": [-24, -15], "mirroredFrom": "watchTvRight" },
     "weldRight": { "clip": "keeper_weld", "handUsePoint": [27, 22], "offsetFromFeet": [11, -18], "mirrorFor": "weldLeft" },
-    "sawWoodRight": { "clip": "keeper_saw_wood", "handUsePoint": [35, 23], "offsetFromFeet": [15, -17], "mirrorFor": "sawWoodLeft" }
+    "sawWoodRight": { "clip": "keeper_saw_wood", "handUsePoint": [35, 23], "offsetFromFeet": [15, -17], "mirrorFor": "sawWoodLeft" },
+    "bedEntryRight": { "clip": "keeper_get_into_bed", "bedSurfacePoint": [24, 31], "pillowPoint": [38, 22], "surfaceOffsetFromFloor": [0, -9], "mirrorFor": "bedEntryLeft" },
+    "snoreRight": { "clip": "keeper_pyjamas_snore", "bedSurfacePoint": [24, 31], "pillowPoint": [38, 22], "surfaceOffsetFromFloor": [0, -9], "mirrorFor": "snoreLeft" }
   },
   "objectRules": {
     "lightSwitchCentreHeightAboveFloor": 23,
@@ -70,6 +73,8 @@
     "tvScreenCentreHeightAboveSeat": 15,
     "weldingContactHeightAboveFloor": 18,
     "sawingContactHeightAboveFloor": 17,
+    "bedMattressSurfaceHeightAboveFloor": 9,
+    "bedPillowOffsetFromCanvasAnchor": [14, -18],
     "rule": "Place the object interaction point at the selected profile offset from the keeper feet anchor; never rescale the keeper to fit an object."
   }
 }

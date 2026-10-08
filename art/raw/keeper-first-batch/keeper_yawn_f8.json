@@ -1,0 +1,15 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "facing": "front-right",
+  "interaction": "emote-yawn"
+}

@@ -187,7 +187,7 @@ def side_walk(step=0):
     return im
 
 
-def generated_frames(filename, expected, fallback=None, logical_width=32, logical_height=40, scale_reference_index=None, force_equal_cells=False):
+def generated_frames(filename, expected, fallback=None, logical_width=32, logical_height=40, scale_reference_index=None, force_equal_cells=False, min_component_pixels=1000):
     """Normalise an identity-locked generated source onto aligned contract slots."""
     source = Path(__file__).with_name(filename)
     if not source.exists():
@@ -266,7 +266,7 @@ def generated_frames(filename, expected, fallback=None, logical_width=32, logica
                     if 0 <= neighbour < width * height and pixels[neighbour] and (neighbour // width == y or neighbour % width == x):
                         pixels[neighbour] = 0
                         pending.append(neighbour)
-            if len(members) > 1000:
+            if len(members) > min_component_pixels:
                 found.append(((min_x, min_y, max_x + 1, max_y + 1), members))
         found.sort(key=lambda item: item[0][0])
         if len(found) != expected:
@@ -326,13 +326,15 @@ def part(which, rear=False, mood="neutral"):
     return im
 
 
-def contract(frames, fps, pivot=None, *, w=32, h=40, loop=True, seat_point=None, hand_use_point=None, look_target_point=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
+def contract(frames, fps, pivot=None, *, w=32, h=40, loop=True, seat_point=None, hand_use_point=None, look_target_point=None, bed_surface_point=None, pillow_point=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
     value = {"w": w, "h": h, "frames": frames, "fps": fps, "density": D, "anchor": [w // 2, h], "z": 50}
     if pivot is not None: value["pivot"] = pivot
     value["loop"] = loop
     if seat_point is not None: value["seatPoint"] = seat_point
     if hand_use_point is not None: value["handUsePoint"] = hand_use_point
     if look_target_point is not None: value["lookTargetPoint"] = look_target_point
+    if bed_surface_point is not None: value["bedSurfacePoint"] = bed_surface_point
+    if pillow_point is not None: value["pillowPoint"] = pillow_point
     if reverse_for is not None: value["reverseFor"] = reverse_for
     if mirror_safe: value["mirrorSafe"] = True
     if facing is not None: value["facing"] = facing
@@ -403,6 +405,12 @@ operate_outboard_frames = generated_frames("keeper-operate-outboard-generated-so
 watch_tv_frames = generated_frames("keeper-watch-tv-generated-source.png", 8)
 weld_frames = generated_frames("keeper-weld-generated-source.png", 8)
 saw_wood_frames = generated_frames("keeper-saw-wood-generated-source.png", 8, logical_width=40, force_equal_cells=True)
+wave_camera_frames = generated_frames("keeper-wave-generated-source.png", 8)
+yawn_frames = generated_frames("keeper-yawn-generated-source.png", 8)
+pyjamas_walk_frames = generated_frames("keeper-pyjamas-walk-generated-source.png", 8)
+pyjamas_turn_back_frames = generated_frames("keeper-pyjamas-turn-back-generated-source.png", 6)
+get_into_bed_frames = generated_frames("keeper-get-into-bed-generated-source.png", 8, logical_width=48, min_component_pixels=10000)
+pyjamas_snore_frames = generated_frames("keeper-snore-generated-source.png", 6, logical_width=48)
 save("keeper_walk", walk_frames, 10, mirror_safe=True)
 save("keeper_turn_back", turn_frames, 8, loop=False, reverse_for="turn_front")
 save("keeper_work_back", work_frames, 8, hand_use_point=[16, 21])
@@ -435,6 +443,12 @@ save("keeper_operate_outboard", operate_outboard_frames, 8, hand_use_point=[4, 2
 save("keeper_watch_tv", watch_tv_frames, 6, seat_point=[16, 29], look_target_point=[40, 14], mirror_safe=True, facing="rear-right", interaction="watch-tv", mirrors_for="rear-left")
 save("keeper_weld", weld_frames, 8, hand_use_point=[27, 22], mirror_safe=True, facing="right", interaction="weld-workpiece", mirrors_for="left")
 save("keeper_saw_wood", saw_wood_frames, 8, hand_use_point=[35, 23], mirror_safe=True, facing="right", interaction="saw-workpiece", mirrors_for="left")
+save("keeper_wave_camera", wave_camera_frames, 8, loop=False, facing="front", interaction="emote-wave")
+save("keeper_yawn", yawn_frames, 8, loop=False, facing="front-right", interaction="emote-yawn")
+save("keeper_pyjamas_walk", pyjamas_walk_frames, 10, mirror_safe=True, facing="right", interaction="walk-pyjamas", mirrors_for="left")
+save("keeper_pyjamas_turn_back", pyjamas_turn_back_frames, 8, loop=False, reverse_for="pyjamas_turn_front", facing="front-to-back", interaction="turn-pyjamas")
+save("keeper_get_into_bed", get_into_bed_frames, 8, loop=False, bed_surface_point=[24, 31], pillow_point=[38, 22], reverse_for="get_out_of_bed", mirror_safe=True, facing="right", interaction="enter-bed", mirrors_for="left")
+save("keeper_pyjamas_snore", pyjamas_snore_frames, 4, bed_surface_point=[24, 31], pillow_point=[38, 22], mirror_safe=True, facing="right", interaction="sleep-snore", mirrors_for="left")
 
 # A transparent source contact sheet makes alignment mistakes easy to spot.
 contact = Image.new("RGBA", (W * 4, H * 2), (244, 236, 214, 255))
@@ -473,4 +487,10 @@ save_preview("keeper-watch-tv-right", watch_tv_frames, 160)
 save_preview("keeper-watch-tv-left", [ImageOps.mirror(frame) for frame in watch_tv_frames], 160)
 save_preview("keeper-weld", weld_frames, 120)
 save_preview("keeper-saw-wood", saw_wood_frames, 120)
+save_preview("keeper-wave-camera", wave_camera_frames, 120)
+save_preview("keeper-yawn", yawn_frames, 120)
+save_preview("keeper-pyjamas-walk", pyjamas_walk_frames, 100)
+save_preview("keeper-pyjamas-turn-back", pyjamas_turn_back_frames, 120, ping_pong=True)
+save_preview("keeper-get-into-bed", get_into_bed_frames, 120)
+save_preview("keeper-pyjamas-snore", pyjamas_snore_frames, 250)
 print(f"Keeper batch authored in {OUT}")

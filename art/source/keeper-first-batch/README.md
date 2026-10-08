@@ -126,11 +126,25 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
   protective goggles and gloves; metal workpiece and bench remain separate.
 - `keeper-saw-wood-generated-source.png` — eight right-facing push-pull hand-saw
   poses; timber and sawhorse remain separate and align to one contact point.
+- `keeper-wave-generated-source.png` — eight front-facing greeting poses from
+  neutral through a broad friendly wave and back.
+- `keeper-yawn-generated-source.png` — eight sleepy front-three-quarter poses
+  with hand-to-mouth yawn and full-body stretch.
+- `keeper-pyjamas-walk-generated-source.png` — eight right-facing walk poses in
+  the locked navy pyjamas, cream piping and slippers; mirror left.
+- `keeper-pyjamas-turn-back-generated-source.png` — six matching pyjama poses
+  from front to rear; reverse to face camera.
+- `keeper-get-into-bed-generated-source.png` — eight isolated right-side bed
+  entry poses; bed, mattress, pillow and blanket remain separate. The rejected
+  overlapping ten-frame attempt is preserved under `replaced-bed-v1/`.
+- `keeper-snore-generated-source.png` — six matching horizontal breathing and
+  snoring poses without bed or floating Z effects.
 
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,
 hardens alpha, places it on a density-4 contract canvas, and emits the manifest
 sidecars and review GIFs. Most clips use 32 × 40; dive and parachute poses use
 larger transparent contract canvases at the identical character scale. The
-hand-saw strip uses a 40 × 40 extended side-tool canvas for its full stroke. All
+hand-saw strip uses a 40 × 40 extended side-tool canvas for its full stroke.
+Bed entry and snoring use a 48 × 40 canvas for the horizontal body. All
 generation used the built-in image generator in referenced-image mode.

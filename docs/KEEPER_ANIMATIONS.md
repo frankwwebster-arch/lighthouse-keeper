@@ -57,6 +57,12 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Watch TV | `keeper_watch_tv` | rear three-quarter right; mirror left; screen stays visible |
 | Weld | `keeper_weld` | right; mirror left; goggles, gloves and torch included; workpiece separate |
 | Saw wood | `keeper_saw_wood` | right; mirror left; hand saw included; timber and bench separate |
+| Wave to camera | `keeper_wave_camera` | front-facing one-shot greeting |
+| Yawn | `keeper_yawn` | front three-quarter one-shot sleepy reaction |
+| Walk in pyjamas | `keeper_pyjamas_walk` | right; mirror left |
+| Turn away in pyjamas | `keeper_pyjamas_turn_back` | reverse to face camera |
+| Get into bed | `keeper_get_into_bed` | right-side bed; mirror left; reverse to get out |
+| Snore in pyjamas | `keeper_pyjamas_snore` | right-side loop; mirror left; bed and bedding separate |
 
 For review, the shared side strip has separate, plainly named
 `keeper-switch-press-right-preview.gif` and
@@ -114,13 +120,15 @@ The next animation work should follow gameplay dependency rather than novelty.
 ### Priority 0 — everyday playable lighthouse life
 
 - Seated reading and TV sit/stand transitions; the watching loop is delivered.
-- Lie down, sleep loop and get out of bed.
+- Bed entry, sleep/snore loop and get-out reverse are delivered; blanket and
+  pillow artwork remain part of the bed object.
 - Telescope look, telephone use and fishing cast/reel/catch.
 - Sweep/tidy, carry/pick up/put down, and remaining repair/polish variants;
   welding and hand-sawing are delivered with their visible tools.
 - Garden watering and planting; sowing and low/high harvesting are delivered.
 - Pet/stroke/play and a standing hand-feed variant for larger animals.
-- Greeting, receiving/giving an item, thinking and idle variants.
+- Receiving/giving an item, thinking and additional idle variants; the
+  front-facing wave and yawn reactions are delivered.
 
 ### Priority 1 — complete the new adventure actions
 

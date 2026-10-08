@@ -1,0 +1,25 @@
+{
+  "w": 48,
+  "h": 40,
+  "frames": 6,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    24,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "bedSurfacePoint": [
+    24,
+    31
+  ],
+  "pillowPoint": [
+    38,
+    22
+  ],
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "sleep-snore",
+  "mirrorsFor": "left"
+}
