@@ -141,7 +141,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
 1. Day 1 floor order, bottom to top, is fixed: kitchen; living room; bedroom with en suite; lamp room. The lamp room is always the topmost room.
 2. The game is a flat, front-on 2D cutaway — not isometric and not full 3D. The lighthouse is the visual anchor: classic alternating red-and-white stripes, dark pixel outlines, funny but not babyish.
 3. The main shaft must retain a constant gameplay width. Do not taper ordinary floors. Any apparent taper is a tiny decorative outer-wall treatment only. The lamp room may be inset/fixed width and has a wraparound rail/outdoor walkway.
-4. Production floor-band size is locked at **110 x 35 logical pixels**; room plates are **105 x 35**. The runtime modules are implemented at 4× (440 x 140), while production room PNGs are still missing.
+4. Production floor-band size is locked at **110 x 35 logical pixels**; room plates are **105 x 35**. The runtime modules are implemented at 4× (440 x 140), and the first three room PNGs plus red/white shell stripes are delivered. Future room plates remain missing.
 5. Stripe continuity must be world-coordinate-based, never based on the insertion order of floor assets. Recommended rule, evaluated against global vertical coordinate:
 
    ```ts
@@ -150,6 +150,22 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
    ```
 
    Use outline `#14243A`. Set the final band height once and preserve it for old saves. Do not rescale existing floors when adding a new one.
+
+### Locked rule: future floor progression is non-linear
+
+The tapered concept paintings do **not** impose a construction order. Future standard floors are interchangeable 110 x 35 bands, and the player may unlock eligible floor types in different orders. Do not assign Workshop, Weather Station, Radio Room, Marine Lab, Map Room, or other future standard floors to permanent height numbers merely to reproduce the concept silhouette.
+
+When a standard floor is unlocked:
+
+1. Keep every existing ordinary floor at its current size and relative order.
+2. Raise the lamp room by exactly one 35-logical-pixel band.
+3. Insert the newly chosen floor into the vacant band immediately below the lamp room and above the previously unlocked ordinary floors.
+4. Recalculate shell stripes from absolute world Y; never store stripe colour on the floor type.
+5. Persist the player's unlocked-floor sequence so saves rebuild the same tower.
+
+Day 1 remains fixed—kitchen, living room, bedroom/en-suite, lamp room—but the identity of later standard floors is selected by mission completion/player choice, not by taper or predetermined height. A gameplay dependency may restrict eligibility (for example, the lift becomes necessary after more than six complete floors), but it must be an explicit systems rule rather than an art/geometry restriction. The lamp room is always topmost.
+
+Side/rear parent-floor extensions, the Floor 3 diving room, the lift service core, and the underground lair do not consume standard stack slots and must not be used to force a linear ordinary-floor sequence.
 6. New floors may slide into position or arrive in a large reusable puff of smoke. Recommendation: `fx_floor_arrival_smoke`, 64 x 64 logical pixels, 8 frames at 12 fps. This effect is not yet delivered.
 7. Expansion architecture is deliberately magical:
 

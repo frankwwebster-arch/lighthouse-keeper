@@ -15,6 +15,8 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 ## Current implementation
 
 - Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The first production Pixel batch now supplies the red/white shell bands and those three 105 × 35 room plates; interactive furniture remains separate. The toilet and wash basin are both in the en suite.
+- Future standard floors are intentionally non-linear: whichever eligible floor the player unlocks next is inserted beneath the raised, always-topmost lamp room. Concept-art taper is decorative and never fixes room width or unlock order.
+- The newly added fixed aquarium → weather mission chain is an interim implementation and is documented as a logic refactor, not the final progression model.
 - Every object renderer accepts `standard`, `on`, and `broken`; active gameplay drives `on`. Broken objects share integer-step casing wobble, smoke and sparks. Add `?broken=tv,cooker` (or `?broken=all`) to the URL for the internal art-state preview.
 - Keeper-owned assets can now break during play, block their normal actions, and be repaired. Grown-ups control average fault frequency and maximum concurrent faults; defaults are off / one. Breakdown events expose placeholder SFX categories for later audio. The shop is excluded because it is not the keeper's asset.
 - Cooker and basin work use a reusable rear-facing keeper fallback. Production keeper PNGs are not delivered yet; neither are object-state strips or later-floor art.

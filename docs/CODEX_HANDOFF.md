@@ -27,7 +27,8 @@ Broken objects share a visual grammar: gentle casing wobble, looping smoke, and 
 - Day 1 begins with four floors, bottom to top: kitchen, living room, bedroom with en suite, and lamp room.
 - The lighthouse can expand upward and downward. It does not need to be realistic.
 - The lamp room must always remain at the top.
-- The main shaft tapers very gradually, if at all. The lamp room is inset and fixed-width, with a wraparound rail and outdoor walkway.
+- The main gameplay shaft is a constant 110 × 35 logical pixels per floor and never tapers. Any apparent taper is decorative exterior shading only. The lamp room is inset/fixed-width, with a wraparound rail and outdoor walkway.
+- Future standard-floor progression is deliberately non-linear. When the player unlocks any eligible room type, raise the always-topmost lamp room by one band and insert that chosen floor beneath it. Do not pre-assign future room types to heights or let concept-art taper dictate their order. Preserve the player's unlock sequence in saves and derive stripe phase from world Y.
 - New floors can slide into place or materialise in a large puff of smoke. Reuse one arrival animation for all new floors.
 - New floors must continue the alternating exterior stripe pattern. Calculate stripe phase from world/floor position so inserted floors align automatically.
 - Underground expansion should be a surprise. Day 1 must show ordinary grass, soil, and rock only—not an obvious empty basement, shaft, cave, or reserved development space. When the Batcave-style lair unlocks, reveal it by extending the underground surface downward.
@@ -63,11 +64,13 @@ Completed in the first implementation slice:
 - Rear-facing fallback pose for cooker and basin work.
 - Reserved hidden Floor 3 changing-room geometry; the later extension itself is not built.
 - Browser verification at desktop and 1024 × 768 iPad sizes.
+- First production Pixel batch: red/white shell bands and kitchen, living-room, and bedroom/en-suite plates, integrated through `npm run sprites`.
+- Seeded keeper-owned breakdown and repair gameplay; the off-island shop remains excluded from faults.
 
 Next priorities:
 
-1. Produce the exact first-batch PNGs in `docs/PRODUCTION_ASSET_KIT.md`, starting with the aligned 32 × 40 front/back keeper parts and one complete TV state set.
-2. Replace the room/furniture fallbacks with 110 × 35 shell bands, 105 × 35 room plates, and separate clickable furniture.
+1. Continue `docs/PRODUCTION_ASSET_KIT.md` at delivery-order item 2: shared object-state overlays and one complete TV state set.
+2. Produce the aligned keeper master and required clips only when delivery-order item 3 begins.
 3. Add a day/night palette or overlay system and the proper roughly 30-second recap.
-4. Add a real damage/repair gameplay source for the already-renderable broken state.
+4. Design future floor missions so eligible standard floors can unlock in different orders; do not hard-code a linear room sequence.
 5. Leave aquarium, weather station, lair, lift, pets, visitors, ship and weather art until the later batch is authorised.

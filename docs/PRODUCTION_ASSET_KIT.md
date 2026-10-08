@@ -6,6 +6,7 @@ Status: production specification. Delivery-order item 1 is complete for the two 
 
 - Author at one source pixel per logical pixel on a 300 × 190 logical stage. Runtime SVG coordinates are logical coordinates × 4 (`viewBox="0 0 1200 760"`). Use integers only.
 - The gameplay core is fixed at 110 × 35 logical pixels per floor band (runtime 440 × 140). Room plates are exactly 105 × 35. Do not taper or rescale a floor.
+- Future standard floors unlock non-linearly. Their shared geometry must allow any eligible room type to occupy the next band: lift the lamp room by one band and insert the chosen new floor immediately beneath it. Never encode a permanent height, taper-dependent width, or stripe colour into a future room asset. Persist unlock order; calculate stripes from world Y.
 - Export transparent PNGs (or flat `#FF00FF` for the existing cleanup script) with nearest-neighbour sampling, no blur and no anti-aliasing.
 - Object filename: `obj_<id>_<state>_f<frames>.png`. All equal-size frames are arranged left-to-right in one strip. Tier 1 has no tier suffix; later tiers use `_t2`, `_t3`, and so on before the state.
 - `standard` is one frame; the first production pass uses four-frame `on` and `broken` loops at the fps below. The manifest stores `file`, `frames` and `fps`; the runtime already supports string entries for old stills and metadata entries for strips.
