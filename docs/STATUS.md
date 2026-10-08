@@ -27,7 +27,7 @@ Upgrades: 13 objects have tiers (7 go to tier 3, the rest to tier 2), listed in 
 3. Tier art for upgrades (Codex; list in docs/FOR_CODEX.md). Typed commands for upgrading ("upgrade the TV") are not in yet; upgrades are bought from the tap menu.
 4. Mini games: fishing, cooking, telescope spotting.
 5. Day/night palette, non-skippable ~30s night recap.
-6. Replace the temporary on-island shop fallback with an early off-island unlock and boat travel. Boat tiers: rowing boat, tug, speedboat. The external shop never breaks; the keeper's jetty and boat may.
+6. Replace the temporary on-island shop fallback with an early off-island unlock and boat travel through an indoor water-filled boathouse/dry dock. Boat tiers: rowing boat, tug, speedboat. The external shop never breaks; the keeper's boathouse, jetty and boat may.
 7. Workshop floor that reduces breakdown pressure; tune its effect only after Ralph's playtesting shows whether faults are fun or irritating.
 
 ## Housekeeping for Frank

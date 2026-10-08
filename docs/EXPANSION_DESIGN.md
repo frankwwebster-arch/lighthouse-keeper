@@ -258,7 +258,7 @@ The slide reads the saved dynamic floor order. Animation can hide the keeper in 
 These are rare spectacle upgrades. They can tear the island apart because they require horizontal, shoreline or underground space. Ordinary floors do not.
 
 - Outdoor pool or lido: tiled basin rises as pipes burst and settle into fountains.
-- Boathouse/dry dock: shoreline opens into a protected inlet.
+- Boathouse/indoor dry dock: shoreline opens into a protected inlet and water channel running inside the building.
 - Greenhouse/orchard: roots push earth plates apart and new soil/grass fills the gap.
 - Rescue station/helipad: cliff slides outward into a safe equipment terrace.
 - Wind turbine: giant foundation erupts and the turbine unfolds.
@@ -266,14 +266,37 @@ These are rare spectacle upgrades. They can tear the island apart because they r
 - Geothermal plant: drill, cracks and steam supply heating.
 - Sea-life tunnel: shoreline separates around a glass underwater passage.
 - Satellite dish/radio mast: support legs force new island terraces outward.
-- Workshop yard or garage: island expands to test and store large machines.
+- Workshop testing yard: island expands to test large inventions and labour-saving machines.
 - Bowling alley: a long horizontal extension telescopes from the tower.
 
 The expansion initially looks catastrophic, then magic completes it: rock rises, soil fills gaps, grass rolls over it and surprised animals continue as normal.
 
-### Garage
+### Boathouse and indoor dry dock
 
-A ground/island facility for bicycles, the automated hoover, robot butler, boat equipment and large inventions. The workshop builds and repairs; the garage stores and tests.
+The boathouse replaces the garage idea. It is a ground/shoreline facility with water coming through large sea doors into an indoor berth, allowing the keeper to start the boat and speed directly out towards the off-island shop.
+
+It connects several existing decisions:
+
+- The shop remains off-island and proprietor-owned, so it never enters the keeper's repair queue.
+- The rowing boat → tug → speedboat tiers share one berth and waterline anchor.
+- The keeper's boat, boathouse doors, fuel pump and repair equipment are owned assets and may break.
+- Weather and sea conditions affect whether departure is sensible or safe.
+- The workshop handles small components; the boathouse handles hull, engine and marine repairs.
+
+Boathouse activities:
+
+- Launch the boat and travel to the shop.
+- Refuel or recharge it.
+- Repair hull, engine, propeller and steering faults.
+- Clean salt and seaweed from it.
+- Load shopping, rescue equipment or expedition supplies.
+- Upgrade the berth as the boat grows from rowing boat to tug to speedboat.
+
+Fuel should create occasional planning rather than a chore before every trip. A visible gauge, sensible capacity and optional reserve can make refuelling meaningful after several journeys or a long mission. Grown-ups can tune costs if it becomes irritating.
+
+The arrival is a major island-tearing spectacle: shoreline rock splits, seawater rushes into a new channel, the boathouse rises around it, doors open and a loose buoy bobs inside. The final terrain heals into a sheltered harbour rather than leaving a broken island.
+
+Possible faults include jammed sea doors, empty fuel tank, blocked propeller, leaking hull and a broken pump. The boat can still be repaired safely inside even when weather prevents sailing.
 
 ### Gym hot-tub extension
 
@@ -335,10 +358,11 @@ Unlock challenge: experience a power cut, inspect a forecast, identify the sunni
 Do not implement all ideas as independent floors at once. Prefer connected systems:
 
 - Weather station + radio + solar + boiler create planning and infrastructure.
-- Workshop + garage + breakdowns create repair and invention progression.
+- Workshop + boathouse + breakdowns create repair, invention and boat-maintenance progression.
 - Library + computer + map room create research and discovery.
 - Music + art + cinema create creative rainy-day progression.
 - Pool + gym/hot tub + diving board reuse the swimming costume and water animation.
 - Dining room + food store + kitchen + visitors create preparation and social play.
+- Boathouse + off-island shop + weather + radio create a complete travel and supply loop.
 
 Before implementation, choose a small set of eligible missions and make their order genuinely non-linear. Every new mission should add varied goals and avoid raw repetition counts where a short bespoke challenge would be more enjoyable.
