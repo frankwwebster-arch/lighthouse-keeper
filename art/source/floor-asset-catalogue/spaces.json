@@ -1,0 +1,2920 @@
+[
+  {
+    "space_id": "kitchen",
+    "name": "Kitchen / entrance",
+    "category": "standard",
+    "placement_rule": "fixed base / entrance",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "none",
+    "activities": "Cook; snack; tidy; greet; feed cat",
+    "unlock_challenge": "Day-one essential, never quiz-gated",
+    "layout": "Door left; fridge and range centre; tools and bowl right",
+    "items": [
+      {
+        "id": "door",
+        "profile": "door",
+        "dimensions": [
+          13,
+          24
+        ]
+      },
+      {
+        "id": "fridge",
+        "profile": "storage",
+        "dimensions": [
+          12,
+          24
+        ]
+      },
+      {
+        "id": "cooker",
+        "profile": "cook",
+        "dimensions": [
+          18,
+          15
+        ]
+      },
+      {
+        "id": "broom",
+        "profile": "clean",
+        "dimensions": [
+          8,
+          23
+        ]
+      },
+      {
+        "id": "petbowl",
+        "profile": "pet",
+        "dimensions": [
+          10,
+          5
+        ]
+      }
+    ],
+    "props": [
+      "worktop",
+      "wall_shelf",
+      "hooks"
+    ],
+    "decision": "locked",
+    "source": "docs/PRODUCTION_ASSET_KIT.md; docs/CODEX_BRIEF.md",
+    "priority": "P0"
+  },
+  {
+    "space_id": "living",
+    "name": "Living room",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "none",
+    "activities": "TV; reading; music; sofa nap",
+    "unlock_challenge": "Day-one relaxation",
+    "layout": "TV left; shelf centre; piano right; sofa foreground",
+    "items": [
+      {
+        "id": "tv",
+        "profile": "fun",
+        "dimensions": [
+          28,
+          23
+        ]
+      },
+      {
+        "id": "bookshelf",
+        "profile": "research",
+        "dimensions": [
+          20,
+          28
+        ]
+      },
+      {
+        "id": "piano",
+        "profile": "music",
+        "dimensions": [
+          25,
+          18
+        ]
+      }
+    ],
+    "props": [
+      "sofa",
+      "rug",
+      "sea_chart"
+    ],
+    "decision": "locked",
+    "source": "docs/PRODUCTION_ASSET_KIT.md; docs/CODEX_BRIEF.md",
+    "priority": "P0"
+  },
+  {
+    "space_id": "bedroom",
+    "name": "Bedroom with en suite",
+    "category": "standard",
+    "placement_rule": "immediately beneath lamp; moves with tower",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "none",
+    "activities": "Sleep; call; diary; wash; loo",
+    "unlock_challenge": "Day-one essentials",
+    "layout": "Bed left; phone and desk centre; partition at x74; bathroom right",
+    "items": [
+      {
+        "id": "bed",
+        "profile": "sleep",
+        "dimensions": [
+          30,
+          14
+        ]
+      },
+      {
+        "id": "phone",
+        "profile": "social",
+        "dimensions": [
+          15,
+          18
+        ]
+      },
+      {
+        "id": "desk",
+        "profile": "research",
+        "dimensions": [
+          25,
+          20
+        ]
+      },
+      {
+        "id": "basin",
+        "profile": "wash",
+        "dimensions": [
+          15,
+          28
+        ]
+      },
+      {
+        "id": "toilet",
+        "profile": "loo",
+        "dimensions": [
+          13,
+          18
+        ]
+      }
+    ],
+    "props": [
+      "bedside_table",
+      "mirror",
+      "privacy_door"
+    ],
+    "decision": "locked",
+    "source": "docs/PRODUCTION_ASSET_KIT.md; docs/CODEX_BRIEF.md",
+    "priority": "P0"
+  },
+  {
+    "space_id": "lamp",
+    "name": "Lamp room / inset lantern cap",
+    "category": "lantern_cap",
+    "placement_rule": "always topmost",
+    "stack_eligible": false,
+    "dimensions": [
+      95,
+      35
+    ],
+    "dependencies": "none",
+    "activities": "Light and polish lamp; spot ships",
+    "unlock_challenge": "Day-one ship-safety duty",
+    "layout": "Inset glazed iron lantern chamber; lamp centre; wraparound external walkway and telescope; no full-width domestic room",
+    "items": [
+      {
+        "id": "telescope",
+        "profile": "spot",
+        "dimensions": [
+          23,
+          23
+        ]
+      },
+      {
+        "id": "lamp",
+        "profile": "light",
+        "dimensions": [
+          30,
+          35
+        ]
+      }
+    ],
+    "props": [
+      "lantern_glass",
+      "wrap_rail"
+    ],
+    "decision": "locked",
+    "source": "docs/PRODUCTION_ASSET_KIT.md; docs/CODEX_BRIEF.md",
+    "priority": "P0"
+  },
+  {
+    "space_id": "aquarium",
+    "name": "Aquarium",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "Fishy Business mission; fish specimens",
+    "activities": "Feed fish; balance habitat; study sea life",
+    "unlock_challenge": "Current Fishy Business mission; proposed varied habitat match and tank-balance puzzle",
+    "layout": "Tank left/centre; feed station right; clear floor lane",
+    "items": [
+      {
+        "id": "tank",
+        "profile": "capacity",
+        "dimensions": [
+          38,
+          26
+        ]
+      },
+      {
+        "id": "fishfood",
+        "profile": "single",
+        "dimensions": [
+          8,
+          12
+        ]
+      }
+    ],
+    "props": [
+      "habitat_chart",
+      "fish_variants",
+      "tank_plants"
+    ],
+    "decision": "runtime hook; ecology mini-game proposal",
+    "source": "docs/FOR_CODEX.md; docs/EXPANSION_DESIGN.md",
+    "priority": "P1"
+  },
+  {
+    "space_id": "workshop",
+    "name": "Workshop",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "breakdowns",
+    "activities": "Repair; choose parts; build inventions",
+    "unlock_challenge": "Repair distinct fault types; choose tools; assemble a working mechanism",
+    "layout": "Parts drawers left; workbench centre; test jig right",
+    "items": [
+      {
+        "id": "repairbench",
+        "profile": "repair",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "partsbin",
+        "profile": "storage",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "testjig",
+        "profile": "craft",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "pegboard",
+      "tool_rack"
+    ],
+    "decision": "review: global fault reduction needs playtesting",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P1"
+  },
+  {
+    "space_id": "weather",
+    "name": "Weather station",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "none",
+    "activities": "Forecast; record rain and wind; warn ships",
+    "unlock_challenge": "Observe weather at distinct times; interpret chart; issue correct warning",
+    "layout": "Gauge left; chart centre; radio right; external sensor feed",
+    "items": [
+      {
+        "id": "barometer",
+        "profile": "forecast",
+        "dimensions": [
+          18,
+          22
+        ]
+      },
+      {
+        "id": "radio",
+        "profile": "signal",
+        "dimensions": [
+          24,
+          20
+        ]
+      },
+      {
+        "id": "raingauge",
+        "profile": "measure",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "windvane",
+        "profile": "measure",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "forecast_chart",
+      "sensor_cable"
+    ],
+    "decision": "locked geometry; future forecast simulation proposal",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P1"
+  },
+  {
+    "space_id": "marine_lab",
+    "name": "Marine laboratory",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "aquarium; specimens from fishing or diving",
+    "activities": "Microscopy; habitat research; water testing",
+    "unlock_challenge": "Match specimens to habitats; examine sample; balance water",
+    "layout": "Sample shelves left; microscope centre; test sink right",
+    "items": [
+      {
+        "id": "microscope",
+        "profile": "research",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "sampletank",
+        "profile": "capacity",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "waterkit",
+        "profile": "measure",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "specimen_jars",
+      "habitat_chart"
+    ],
+    "decision": "review: separate lab or aquarium specialization",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "radio_room",
+    "name": "Radio room",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "power; aerial",
+    "activities": "Decode; rescue calls; relay locations",
+    "unlock_challenge": "Repair aerial; decode short signal; relay chart location",
+    "layout": "Radio desk centre; signal board left; map right",
+    "items": [
+      {
+        "id": "radio",
+        "profile": "signal",
+        "dimensions": [
+          24,
+          20
+        ]
+      },
+      {
+        "id": "signaldecoder",
+        "profile": "signal",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "aerial",
+        "profile": "signal",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "code_chart",
+      "headphones"
+    ],
+    "decision": "review: standalone or weather-room expansion",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "map_room",
+    "name": "Map and chart room",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "sightings; boat for routes",
+    "activities": "Plot routes; discover islands; chart rocks",
+    "unlock_challenge": "Orient recovered fragments; plot one safe route",
+    "layout": "Chart table centre; map archive left; route pins right",
+    "items": [
+      {
+        "id": "charttable",
+        "profile": "route",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "maparchive",
+        "profile": "research",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "compass_prop",
+      "map_fragments"
+    ],
+    "decision": "approved idea",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "observatory",
+    "name": "Observatory",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "night sky; power optional",
+    "activities": "Stars; moon phases; direction puzzles",
+    "unlock_challenge": "Identify constellations; use North Star to find a bearing",
+    "layout": "Scope left; star chart centre; moon dial right",
+    "items": [
+      {
+        "id": "telescope",
+        "profile": "spot",
+        "dimensions": [
+          23,
+          23
+        ]
+      },
+      {
+        "id": "stardial",
+        "profile": "measure",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "star_chart",
+      "moon_phase_tiles"
+    ],
+    "decision": "approved idea; no fixed height",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "library",
+    "name": "Library",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "bookshelf migration",
+    "activities": "Stories; lighthouse history; practical research",
+    "unlock_challenge": "Recover and sort books; solve a repair using a passage",
+    "layout": "Migrated shelf left; reading desk centre; clue cabinet right",
+    "items": [
+      {
+        "id": "bookshelf",
+        "profile": "research",
+        "dimensions": [
+          20,
+          28
+        ]
+      },
+      {
+        "id": "readingdesk",
+        "profile": "research",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "reading_chair",
+      "book_props"
+    ],
+    "decision": "approved idea",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "music",
+    "name": "Music room",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "piano migration",
+    "activities": "Melodies; rhythm; visitor concert",
+    "unlock_challenge": "Copy melody; identify sounds; perform for visitor",
+    "layout": "Piano left; percussion centre; accordion and record player right",
+    "items": [
+      {
+        "id": "piano",
+        "profile": "music",
+        "dimensions": [
+          25,
+          18
+        ]
+      },
+      {
+        "id": "drums",
+        "profile": "music",
+        "dimensions": [
+          20,
+          18
+        ]
+      },
+      {
+        "id": "accordion",
+        "profile": "music",
+        "dimensions": [
+          18,
+          20
+        ]
+      },
+      {
+        "id": "gramophone",
+        "profile": "music",
+        "dimensions": [
+          16,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "music_stand",
+      "score_props"
+    ],
+    "decision": "approved idea",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "artist",
+    "name": "Artist studio",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "world colour discoveries",
+    "activities": "Paint; mix colours; pottery; decorate rooms",
+    "unlock_challenge": "Mix two colours; make visitor picture; fire clay safely",
+    "layout": "Easel left; mixing table centre; pottery wheel right",
+    "items": [
+      {
+        "id": "easel",
+        "profile": "craft",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "potterywheel",
+        "profile": "craft",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "kiln",
+        "profile": "craft",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "paint_palette",
+      "clay_props",
+      "picture_frames"
+    ],
+    "decision": "approved idea; kiln powered",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "computer",
+    "name": "Curated computer room",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "power; desk migration",
+    "activities": "Fictional mail; newspaper; forecasts; research; games",
+    "unlock_challenge": "Order a reply; interpret a headline; research a practical task",
+    "layout": "Computer and migrated desk centre; message slots left; printer right",
+    "items": [
+      {
+        "id": "computer",
+        "profile": "research",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "desk",
+        "profile": "research",
+        "dimensions": [
+          25,
+          20
+        ]
+      },
+      {
+        "id": "printer",
+        "profile": "craft",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "mail_cards",
+      "newspaper_tiles"
+    ],
+    "decision": "locked curated content; no live internet",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "storage",
+    "name": "Storage / box room (attic fantasy)",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "none",
+    "activities": "Inspect clutter; search; move and stack boxes",
+    "unlock_challenge": "Memorize a box field; recover requested part; stack safely",
+    "layout": "Three clear shelving zones; movable boxes foreground",
+    "items": [
+      {
+        "id": "boxrack",
+        "profile": "storage",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "searchchest",
+        "profile": "search",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "box_variants",
+      "lost_parts"
+    ],
+    "decision": "approved idea; never forced above bedroom",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "food_store",
+    "name": "Food store / larder",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "kitchen; supplies",
+    "activities": "Store ingredients; plan meals; preserve surplus",
+    "unlock_challenge": "Sort food by storage need; prepare varied meal basket",
+    "layout": "Dry shelves left; cool cabinet centre; basket station right",
+    "items": [
+      {
+        "id": "lardershelf",
+        "profile": "storage",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "preserver",
+        "profile": "storage",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "food_jars",
+      "ingredient_crates"
+    ],
+    "decision": "discussed system link; room form review",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "dining",
+    "name": "Dining room",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "kitchen; visitors; table migration",
+    "activities": "Meals; table setting; celebrations",
+    "unlock_challenge": "Set correct places; serve varied meal; welcome visitor",
+    "layout": "Table centre; serving hatch left; dishes right",
+    "items": [
+      {
+        "id": "diningtable",
+        "profile": "social",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "servinghatch",
+        "profile": "cook",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "chairs",
+      "cutlery",
+      "celebration_bunting"
+    ],
+    "decision": "approved idea",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "bank",
+    "name": "Bank / savings room",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "allowance; persistent savings",
+    "activities": "Count coins; deposit; withdraw; plan upgrade",
+    "unlock_challenge": "Keep some allowance across days; verify counted receipt",
+    "layout": "Counter left; tube centre; safe right; readable account display",
+    "items": [
+      {
+        "id": "deposittube",
+        "profile": "bank",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "safe",
+        "profile": "storage",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "coinscales",
+        "profile": "measure",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "savings_book",
+      "receipt_props"
+    ],
+    "decision": "review: capped interest amount and interval; balances never break",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "cinema",
+    "name": "Cinema",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "power; visitors",
+    "activities": "Fictional films; scene sequencing; adventure replays",
+    "unlock_challenge": "Restore projector; order scenes; host screening",
+    "layout": "Screen left; benches centre; projector right",
+    "items": [
+      {
+        "id": "projector",
+        "profile": "fun",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "filmarchive",
+        "profile": "research",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "screen",
+      "benches",
+      "film_reels"
+    ],
+    "decision": "approved idea",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "games",
+    "name": "Games hall",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "games cabinet migration",
+    "activities": "Snooker; table tennis; darts; table football; board games",
+    "unlock_challenge": "Complete aiming, timing and arithmetic rounds",
+    "layout": "One folding central table; replaceable game surface; wall darts",
+    "items": [
+      {
+        "id": "snooker",
+        "profile": "game",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "tabletennis",
+        "profile": "game",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "darts",
+        "profile": "game",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "tablefootball",
+        "profile": "game",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "boardgames",
+        "profile": "game",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "cues",
+      "balls",
+      "paddles",
+      "scoreboard"
+    ],
+    "decision": "review: rotate game stations; cannot display all at once",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "playroom",
+    "name": "Playroom",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "none",
+    "activities": "Ball-pit search; soft play; trampoline timing",
+    "unlock_challenge": "Find clue ball; traverse short course; time bounce",
+    "layout": "Pit left; soft obstacles centre; trampoline right",
+    "items": [
+      {
+        "id": "ballpit",
+        "profile": "search",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "softplay",
+        "profile": "game",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "trampoline",
+        "profile": "game",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "colour_balls",
+      "padded_blocks"
+    ],
+    "decision": "approved idea",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "imagination",
+    "name": "Imagination / themed room",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "curated theme unlocks",
+    "activities": "Six scene puzzles on a reusable stage",
+    "unlock_challenge": "Discover theme clue; complete its bespoke puzzle",
+    "layout": "One 105x35 interchangeable set; clear movement lane; control pedestal",
+    "items": [
+      {
+        "id": "themecontrol",
+        "profile": "game",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "scene_slots"
+    ],
+    "decision": "review: theme selection and reward rules",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "zero_gravity",
+    "name": "Zero-gravity room",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "observatory; stored power",
+    "activities": "Float rings; orbit puzzle; recover floating items; astronaut training",
+    "unlock_challenge": "Solve orbit sequence; reserve battery power; pass short floating course",
+    "layout": "Sealed entrance left; rings centre; padded nets and controls right",
+    "items": [
+      {
+        "id": "gravitycontrol",
+        "profile": "power",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "orbitboard",
+        "profile": "game",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "rings",
+      "padded_nets",
+      "floating_lunch"
+    ],
+    "decision": "review: power unit and costume silhouette",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "conservatory",
+    "name": "Conservatory",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "decorative plants; visitors",
+    "activities": "Tea; read; social visits; tame overgrowth",
+    "unlock_challenge": "Identify plant needs; arrange reading nook; host tea",
+    "layout": "Plants left; tea bench centre; reading seat right",
+    "items": [
+      {
+        "id": "teaset",
+        "profile": "social",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "plantstand",
+        "profile": "growing",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "decorative_plants",
+      "reading_seat"
+    ],
+    "decision": "approved idea; indoor leisure not food greenhouse",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "pub",
+    "name": "Family-friendly pub / inn",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "visitors; kitchen",
+    "activities": "Lemonade; cocoa; meals; quizzes; dominoes; darts; stories",
+    "unlock_challenge": "Prepare drink; solve team quiz; host storytelling",
+    "layout": "Counter left; tables centre; games right; rear guest WC",
+    "items": [
+      {
+        "id": "drinkcounter",
+        "profile": "social",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "dominoes",
+        "profile": "game",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "darts",
+        "profile": "game",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "bar_stools",
+      "story_cards"
+    ],
+    "decision": "review: name; soft drinks only",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "pool",
+    "name": "Swimming-pool floor",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "boiler; pump; changing annex",
+    "activities": "Lengths; float; splash; retrieve; gentle rescue",
+    "unlock_challenge": "Check water; use ladder; retrieve float; demonstrate rescue",
+    "layout": "Water ~90 percent; narrow foreground tile edge; ladder right; bathroom annex",
+    "items": [
+      {
+        "id": "poolpump",
+        "profile": "water",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "poolheater",
+        "profile": "heat",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "water_surface",
+      "inflatables",
+      "ladder"
+    ],
+    "decision": "approved idea; bathroom annex preserves large water area",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "gym",
+    "name": "Gym",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "exercise equipment migration",
+    "activities": "Exercise; balance; comic flex and headstand",
+    "unlock_challenge": "Sequence warm-up; balance course; short varied workout",
+    "layout": "Exercise station left; mat centre; showers in annex right",
+    "items": [
+      {
+        "id": "exercisebike",
+        "profile": "fitness",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "weights",
+        "profile": "fitness",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "exercise_mat",
+      "balance_beam"
+    ],
+    "decision": "discussed; detailed equipment proposal",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "boiler",
+    "name": "Boiler room",
+    "category": "standard",
+    "placement_rule": "saved random middle slot",
+    "stack_eligible": true,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "fuel or power; water services",
+    "activities": "Heat; pressure diagnosis; reset and test tap",
+    "unlock_challenge": "Read pressure; select pipe/fuse/reset; test hot tap",
+    "layout": "Boiler centre; pipes left; gauge and service panel right",
+    "items": [
+      {
+        "id": "boiler",
+        "profile": "heat",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "pressuregauge",
+        "profile": "measure",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "pipe_set",
+      "radiator"
+    ],
+    "decision": "approved idea; failure degrades water, never disables toilets",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "lair",
+    "name": "Hidden underground lair",
+    "category": "underground",
+    "placement_rule": "concealed below terrain; revealed only on unlock",
+    "stack_eligible": false,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "Strange Rumblings mission",
+    "activities": "Gadgets; games; secret discoveries",
+    "unlock_challenge": "Current mission counts digging, visitors and quiz clues; future bespoke mechanism puzzle proposed",
+    "layout": "Console left; gadget bench right; concealed rock walls",
+    "items": [
+      {
+        "id": "console",
+        "profile": "research",
+        "dimensions": [
+          28,
+          22
+        ]
+      },
+      {
+        "id": "gadgets",
+        "profile": "craft",
+        "dimensions": [
+          28,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "rock_lining",
+      "secret_door"
+    ],
+    "decision": "runtime hook; terrain reveal only on unlock",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P1"
+  },
+  {
+    "space_id": "ensuite",
+    "name": "Bedroom en suite",
+    "category": "subroom",
+    "placement_rule": "inside parent; no independent slot",
+    "stack_eligible": false,
+    "dimensions": [
+      36,
+      35
+    ],
+    "dependencies": "bedroom",
+    "activities": "Wash; brush teeth; loo",
+    "unlock_challenge": "Essential from day one",
+    "layout": "Within bedroom x74..110; opaque privacy door; basin then loo",
+    "items": [
+      {
+        "id": "basin",
+        "profile": "wash",
+        "dimensions": [
+          15,
+          28
+        ]
+      },
+      {
+        "id": "toilet",
+        "profile": "loo",
+        "dimensions": [
+          13,
+          18
+        ]
+      }
+    ],
+    "props": [
+      "mirror",
+      "privacy_door"
+    ],
+    "decision": "locked; no independent stack slot",
+    "source": "docs/PRODUCTION_ASSET_KIT.md; docs/CODEX_BRIEF.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "pool_changing",
+    "name": "Pool changing / bathrooms",
+    "category": "service_bay",
+    "placement_rule": "rear amenity bay attached to parent",
+    "stack_eligible": false,
+    "dimensions": [
+      66,
+      35
+    ],
+    "dependencies": "pool",
+    "activities": "Hidden outfit swap; shower; wash; loo",
+    "unlock_challenge": "Included with pool; basic needs never gated",
+    "layout": "66x35 rear annex; cubicle left; basin and loo right",
+    "items": [
+      {
+        "id": "shower",
+        "profile": "wash",
+        "dimensions": [
+          18,
+          30
+        ]
+      },
+      {
+        "id": "basin",
+        "profile": "wash",
+        "dimensions": [
+          15,
+          28
+        ]
+      },
+      {
+        "id": "toilet",
+        "profile": "loo",
+        "dimensions": [
+          13,
+          18
+        ]
+      }
+    ],
+    "props": [
+      "changing_cubicle",
+      "privacy_door"
+    ],
+    "decision": "proposal footprint; swimming suit reused",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "gym_changing",
+    "name": "Gym changing / shower",
+    "category": "service_bay",
+    "placement_rule": "rear amenity bay attached to parent",
+    "stack_eligible": false,
+    "dimensions": [
+      66,
+      35
+    ],
+    "dependencies": "gym",
+    "activities": "Wash; loo; dress",
+    "unlock_challenge": "Included with gym",
+    "layout": "66x35 rear annex; shower left; fixtures right",
+    "items": [
+      {
+        "id": "shower",
+        "profile": "wash",
+        "dimensions": [
+          18,
+          30
+        ]
+      },
+      {
+        "id": "basin",
+        "profile": "wash",
+        "dimensions": [
+          15,
+          28
+        ]
+      },
+      {
+        "id": "toilet",
+        "profile": "loo",
+        "dimensions": [
+          13,
+          18
+        ]
+      }
+    ],
+    "props": [
+      "lockers",
+      "privacy_door"
+    ],
+    "decision": "proposal footprint",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "pub_wc",
+    "name": "Guest toilet",
+    "category": "service_bay",
+    "placement_rule": "rear amenity bay attached to parent",
+    "stack_eligible": false,
+    "dimensions": [
+      44,
+      35
+    ],
+    "dependencies": "pub",
+    "activities": "Wash; loo",
+    "unlock_challenge": "Included with inn",
+    "layout": "44x35 rear service bay; privacy screens",
+    "items": [
+      {
+        "id": "basin",
+        "profile": "wash",
+        "dimensions": [
+          15,
+          28
+        ]
+      },
+      {
+        "id": "toilet",
+        "profile": "loo",
+        "dimensions": [
+          13,
+          18
+        ]
+      }
+    ],
+    "props": [
+      "privacy_door",
+      "mirror"
+    ],
+    "decision": "proposal footprint",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "service_wc",
+    "name": "Distributed service WC",
+    "category": "service_bay",
+    "placement_rule": "rear amenity bay attached to parent",
+    "stack_eligible": false,
+    "dimensions": [
+      44,
+      35
+    ],
+    "dependencies": "walking-distance policy",
+    "activities": "Wash; loo",
+    "unlock_challenge": "Add where saved layout exceeds three-band access target",
+    "layout": "44x35 rear bay; repeated fixture kit",
+    "items": [
+      {
+        "id": "basin",
+        "profile": "wash",
+        "dimensions": [
+          15,
+          28
+        ]
+      },
+      {
+        "id": "toilet",
+        "profile": "loo",
+        "dimensions": [
+          13,
+          18
+        ]
+      }
+    ],
+    "props": [
+      "privacy_door",
+      "pipe_set"
+    ],
+    "decision": "review: placement hook; never all fixtures broken at once",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "bath",
+    "name": "Bath / laundry service possibility",
+    "category": "service_bay",
+    "placement_rule": "rear amenity bay attached to parent",
+    "stack_eligible": false,
+    "dimensions": [
+      55,
+      35
+    ],
+    "dependencies": "boiler; water; possible future laundry",
+    "activities": "Bath; wash clothes",
+    "unlock_challenge": "Diagnose water; sort garments; test service",
+    "layout": "Proposed 55x35 utility bay; tub left; washer right",
+    "items": [
+      {
+        "id": "bathtub",
+        "profile": "wash",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "washer",
+        "profile": "clean",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "laundry_basket",
+      "pipe_set"
+    ],
+    "decision": "discussed optional systems; do not produce until chosen",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "lift",
+    "name": "Lift service core",
+    "category": "service_core",
+    "placement_rule": "aligned service core; follows saved floor exits",
+    "stack_eligible": false,
+    "dimensions": [
+      22,
+      35
+    ],
+    "dependencies": "current Puffed Out requires five above-ground floors",
+    "activities": "Fast travel; repair doors",
+    "unlock_challenge": "Current mission; future safe load and door test",
+    "layout": "22x35 repeatable landing bay; vertical shaft extends with saved stack",
+    "items": [
+      {
+        "id": "lift",
+        "profile": "travel",
+        "dimensions": [
+          22,
+          34
+        ]
+      }
+    ],
+    "props": [
+      "landing_door",
+      "shaft_segment",
+      "indicator"
+    ],
+    "decision": "review: rear versus side core; do not create final shaft art",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P1"
+  },
+  {
+    "space_id": "stairs",
+    "name": "Ladders / spiral stair core",
+    "category": "service_core",
+    "placement_rule": "aligned service core; follows saved floor exits",
+    "stack_eligible": false,
+    "dimensions": [
+      10,
+      35
+    ],
+    "dependencies": "none",
+    "activities": "Travel upward and downward",
+    "unlock_challenge": "Basic ladder available; stair upgrade route exercise proposed",
+    "layout": "10x35 repeatable rear access lane",
+    "items": [
+      {
+        "id": "stairs",
+        "profile": "travel",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "ladder_segment",
+      "stair_segment"
+    ],
+    "decision": "runtime stairs exist; transport tiers proposed",
+    "source": "docs/EXPANSION_DESIGN.md; HANDOFF_TO_CLAUDE.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "slide",
+    "name": "Helter-skelter transport",
+    "category": "service_core",
+    "placement_rule": "aligned service core; follows saved floor exits",
+    "stack_eligible": false,
+    "dimensions": [
+      14,
+      35
+    ],
+    "dependencies": "tower height; dynamic exits",
+    "activities": "Fast downward travel; clear jam",
+    "unlock_challenge": "Plot exit route; test flap; retrieve laundry",
+    "layout": "14x35 tube segment beside core; one exit each saved floor",
+    "items": [
+      {
+        "id": "slide",
+        "profile": "travel",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "tube_segment",
+      "flap",
+      "face_window"
+    ],
+    "decision": "review: core clearance and exact wrapping; no final art",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "dive",
+    "name": "Bedroom dive / two-door changing bay",
+    "category": "extension",
+    "placement_rule": "parent-attached bay; integer structural seam",
+    "stack_eligible": false,
+    "dimensions": [
+      55,
+      35
+    ],
+    "dependencies": "bedroom; safe sea; outfit",
+    "activities": "Hidden change; board dive; sea splash",
+    "unlock_challenge": "Test doors; demonstrate swimming; choose safe weather",
+    "layout": "Bedroom-local seam x117; hidden x118..130; exit x135; board beyond",
+    "items": [
+      {
+        "id": "diveboard",
+        "profile": "game",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "diveinner",
+        "profile": "single",
+        "dimensions": [
+          13,
+          24
+        ]
+      },
+      {
+        "id": "diveouter",
+        "profile": "single",
+        "dimensions": [
+          13,
+          24
+        ]
+      }
+    ],
+    "props": [
+      "hidden_cubicle",
+      "board_support"
+    ],
+    "decision": "locked attachment; playable hook absent; final length review",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "bbq",
+    "name": "Kitchen BBQ balcony",
+    "category": "extension",
+    "placement_rule": "parent-attached bay; integer structural seam",
+    "stack_eligible": false,
+    "dimensions": [
+      55,
+      35
+    ],
+    "dependencies": "kitchen; ingredients; safe weather",
+    "activities": "Grill; picnic; feed visitor",
+    "unlock_challenge": "Find dry weather; safe ignition; cook varied meal",
+    "layout": "55x35 kitchen-attached bay; grill left; prep shelf right",
+    "items": [
+      {
+        "id": "bbq",
+        "profile": "cook",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "awning",
+        "profile": "weatherproof",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "prep_shelf",
+      "visitor_stool"
+    ],
+    "decision": "approved idea; strong wind/lightning blocks regardless tier",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "hot_tub",
+    "name": "Gym hot-tub cantilever",
+    "category": "extension",
+    "placement_rule": "parent-attached bay; integer structural seam",
+    "stack_eligible": false,
+    "dimensions": [
+      55,
+      35
+    ],
+    "dependencies": "gym; boiler; pump",
+    "activities": "Soak; socialize; winter comfort",
+    "unlock_challenge": "Test heat and pump; select safe temperature",
+    "layout": "55x35 gym-attached platform; tub centre; rail and access left",
+    "items": [
+      {
+        "id": "hottub",
+        "profile": "heat",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "tubpump",
+        "profile": "water",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "rail",
+      "water_surface"
+    ],
+    "decision": "approved idea; structure needs review",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "caged_trampoline",
+    "name": "Exterior caged trampoline",
+    "category": "extension",
+    "placement_rule": "parent-attached bay; integer structural seam",
+    "stack_eligible": false,
+    "dimensions": [
+      55,
+      35
+    ],
+    "dependencies": "playroom; safe weather",
+    "activities": "Timing; comic high bounce",
+    "unlock_challenge": "Test cage; land three timed bounces",
+    "layout": "55x35 playroom bay; spring bed centre; tall safety cage",
+    "items": [
+      {
+        "id": "trampoline",
+        "profile": "game",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "safety_cage",
+      "spring_support"
+    ],
+    "decision": "review: maximum bounce and roof camera hook",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "bowling",
+    "name": "Bowling alley telescopic bay",
+    "category": "extension",
+    "placement_rule": "parent-attached bay; integer structural seam",
+    "stack_eligible": false,
+    "dimensions": [
+      165,
+      35
+    ],
+    "dependencies": "long horizontal island expansion",
+    "activities": "Aim; timing; scoring",
+    "unlock_challenge": "Align lane; roll controlled bowl; count score",
+    "layout": "165x35 bay; release left; pins right",
+    "items": [
+      {
+        "id": "bowlinglane",
+        "profile": "game",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "pinsetter",
+        "profile": "craft",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "bowling_ball",
+      "pins",
+      "lane_markings"
+    ],
+    "decision": "review: parent attachment and expansion clearance",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "kitchen_bay",
+    "name": "Expanded kitchen bay",
+    "category": "extension",
+    "placement_rule": "parent-attached bay; integer structural seam",
+    "stack_eligible": false,
+    "dimensions": [
+      55,
+      35
+    ],
+    "dependencies": "kitchen; cooking progression",
+    "activities": "Batch meals; visitor cooking",
+    "unlock_challenge": "Prepare multi-course meal; allocate burners",
+    "layout": "55x35 kitchen bay; extra work surfaces and utility seam",
+    "items": [
+      {
+        "id": "cooker",
+        "profile": "cook",
+        "dimensions": [
+          18,
+          15
+        ]
+      },
+      {
+        "id": "fridge",
+        "profile": "storage",
+        "dimensions": [
+          12,
+          24
+        ]
+      }
+    ],
+    "props": [
+      "worktop",
+      "serving_hatch"
+    ],
+    "decision": "discussed architecture; not replacement for fixed core",
+    "source": "docs/EXPANSION_DESIGN.md; HANDOFF_TO_CLAUDE.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "gaming_bay",
+    "name": "Gaming extension",
+    "category": "extension",
+    "placement_rule": "parent-attached bay; integer structural seam",
+    "stack_eligible": false,
+    "dimensions": [
+      55,
+      35
+    ],
+    "dependencies": "computer or living parent",
+    "activities": "Curated games; cooperative puzzles",
+    "unlock_challenge": "Solve cooperative puzzle and choose station",
+    "layout": "55x35 parent bay; console left; seat right",
+    "items": [
+      {
+        "id": "console",
+        "profile": "research",
+        "dimensions": [
+          28,
+          22
+        ]
+      }
+    ],
+    "props": [
+      "game_seat",
+      "screen"
+    ],
+    "decision": "review: parent and distinction from lair/games hall",
+    "source": "docs/EXPANSION_DESIGN.md; HANDOFF_TO_CLAUDE.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "roof",
+    "name": "Lamp-room roof / parachute launch",
+    "category": "extension",
+    "placement_rule": "parent-attached bay; integer structural seam",
+    "stack_eligible": false,
+    "dimensions": [
+      110,
+      20
+    ],
+    "dependencies": "maximum tower; wind safety",
+    "activities": "Late comic parachute descent",
+    "unlock_challenge": "Demonstrate safe landing; select calm forecast",
+    "layout": "110x20 roof; launch hatch; clear lamp beam",
+    "items": [
+      {
+        "id": "parachutepack",
+        "profile": "single",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "roof_hatch",
+      "landing_marker"
+    ],
+    "decision": "possible late idea; maximum height and safety decision unresolved",
+    "source": "docs/EXPANSION_DESIGN.md; HANDOFF_TO_CLAUDE.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "garden",
+    "name": "Garden / raised beds",
+    "category": "island",
+    "placement_rule": "island/shore terrace; no tower stack position",
+    "stack_eligible": false,
+    "dimensions": [
+      55,
+      25
+    ],
+    "dependencies": "mission unlock; seed supplies",
+    "activities": "Grow; harvest; water; dig",
+    "unlock_challenge": "Choose sunny site; match seeds; nurture and harvest mixed crop",
+    "layout": "55x25 patch; three crop slots; fence edge",
+    "items": [
+      {
+        "id": "garden",
+        "profile": "growing",
+        "dimensions": [
+          30,
+          18
+        ]
+      },
+      {
+        "id": "wateringcan",
+        "profile": "single",
+        "dimensions": [
+          8,
+          12
+        ]
+      }
+    ],
+    "props": [
+      "soil_tile",
+      "crop_stages",
+      "fence"
+    ],
+    "decision": "mission design proposed; absent day one in final design",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "greenhouse",
+    "name": "Food greenhouse",
+    "category": "island",
+    "placement_rule": "island/shore terrace; no tower stack position",
+    "stack_eligible": false,
+    "dimensions": [
+      66,
+      35
+    ],
+    "dependencies": "garden; irrigation",
+    "activities": "Protected crops; water; repair glass",
+    "unlock_challenge": "Balance water; grow varied crop; replace glass panel",
+    "layout": "66x35 glass house; beds left; irrigation right",
+    "items": [
+      {
+        "id": "garden",
+        "profile": "growing",
+        "dimensions": [
+          30,
+          18
+        ]
+      },
+      {
+        "id": "irrigation",
+        "profile": "water",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "glass_panels",
+      "crop_stages"
+    ],
+    "decision": "proposed separate place or garden tier 3 same asset",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "orchard",
+    "name": "Orchard",
+    "category": "island",
+    "placement_rule": "island/shore terrace; no tower stack position",
+    "stack_eligible": false,
+    "dimensions": [
+      88,
+      40
+    ],
+    "dependencies": "island expansion; planting",
+    "activities": "Fruit; pruning; harvest",
+    "unlock_challenge": "Identify saplings; plan spacing; harvest seasonal fruit",
+    "layout": "88x40 terrace; trees in three zones; clear walkway",
+    "items": [
+      {
+        "id": "fruittree",
+        "profile": "growing",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "tree_stages",
+      "fruit_crate"
+    ],
+    "decision": "approved expansion idea; season simulation review",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "jetty",
+    "name": "Jetty / harbour",
+    "category": "island",
+    "placement_rule": "island/shore terrace; no tower stack position",
+    "stack_eligible": false,
+    "dimensions": [
+      55,
+      15
+    ],
+    "dependencies": "mission unlock; shoreline",
+    "activities": "Fish; launch; load supplies",
+    "unlock_challenge": "Tie knots; select safe tide; catch and identify fish",
+    "layout": "55x15 dock; floor plane stable; water below",
+    "items": [
+      {
+        "id": "jetty",
+        "profile": "fish",
+        "dimensions": [
+          55,
+          15
+        ]
+      }
+    ],
+    "props": [
+      "bollard",
+      "rope",
+      "buoy"
+    ],
+    "decision": "owned repairable; fishing remains reachable",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "boathouse",
+    "name": "Boathouse / indoor dry dock",
+    "category": "island",
+    "placement_rule": "island/shore terrace; no tower stack position",
+    "stack_eligible": false,
+    "dimensions": [
+      110,
+      50
+    ],
+    "dependencies": "shoreline expansion; boat; weather",
+    "activities": "Launch; fuel; clean; repair; load; berth upgrades",
+    "unlock_challenge": "Open inlet; check hull; load supplies; safe practice trip",
+    "layout": "110x50 shore facility; water berth centre; repair bench left; fuel and doors right",
+    "items": [
+      {
+        "id": "boat",
+        "profile": "boat",
+        "dimensions": [
+          55,
+          24
+        ]
+      },
+      {
+        "id": "seadoors",
+        "profile": "capacity",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "fuelpump",
+        "profile": "capacity",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "marinebench",
+        "profile": "repair",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "berth",
+        "profile": "capacity",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "indoor_water",
+      "buoy",
+      "seaweed",
+      "cargo"
+    ],
+    "decision": "approved replacement for garage; capacity/fuel tuning proposal",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "shop",
+    "name": "Off-island shop",
+    "category": "destination",
+    "placement_rule": "off-island; boat route",
+    "stack_eligible": false,
+    "dimensions": [
+      66,
+      35
+    ],
+    "dependencies": "boat; safe route",
+    "activities": "Buy supplies; reserve orders; meet proprietor",
+    "unlock_challenge": "Early route puzzle and first shopping trip",
+    "layout": "66x35 destination; shopfront left; landing right",
+    "items": [
+      {
+        "id": "shop",
+        "profile": "single",
+        "dimensions": [
+          33,
+          30
+        ]
+      }
+    ],
+    "props": [
+      "shop_counter",
+      "supplies",
+      "proprietor"
+    ],
+    "decision": "not keeper-owned; no broken or repair state",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "coop",
+    "name": "Chicken coop",
+    "category": "island",
+    "placement_rule": "island/shore terrace; no tower stack position",
+    "stack_eligible": false,
+    "dimensions": [
+      55,
+      35
+    ],
+    "dependencies": "mission unlock; food",
+    "activities": "Feed; eggs; tidy; latch repair",
+    "unlock_challenge": "Build latch; identify feed; care routine with distinct tasks",
+    "layout": "55x35 patch; coop left; run right",
+    "items": [
+      {
+        "id": "coop",
+        "profile": "pet",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "eggtray",
+        "profile": "storage",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "chicken_idle",
+      "chicken_peck",
+      "straw"
+    ],
+    "decision": "approved idea; no day-one coop",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "lido",
+    "name": "Outdoor pool / lido",
+    "category": "island",
+    "placement_rule": "island/shore terrace; no tower stack position",
+    "stack_eligible": false,
+    "dimensions": [
+      110,
+      45
+    ],
+    "dependencies": "boiler; water pump; expanded terrace",
+    "activities": "Swim; float; picnic; gentle rescue",
+    "unlock_challenge": "Check water; rescue float; warm pool",
+    "layout": "110x45 terrace; large water basin and tiled edge",
+    "items": [
+      {
+        "id": "poolpump",
+        "profile": "water",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "poolheater",
+        "profile": "heat",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "water_surface",
+      "ladder",
+      "changing_cubicle"
+    ],
+    "decision": "approved spectacle idea; footprint proposal",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "rescue",
+    "name": "Rescue station / helipad",
+    "category": "island",
+    "placement_rule": "island/shore terrace; no tower stack position",
+    "stack_eligible": false,
+    "dimensions": [
+      110,
+      40
+    ],
+    "dependencies": "radio; weather; rescue gear",
+    "activities": "Prepare equipment; signal; rescue dispatch",
+    "unlock_challenge": "Relay location; choose gear; secure terrace",
+    "layout": "110x40 cliff terrace; pad centre; equipment left",
+    "items": [
+      {
+        "id": "rescuewinch",
+        "profile": "capacity",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "rescuecabinet",
+        "profile": "storage",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "helipad_marking",
+      "helicopter",
+      "firstaid_props"
+    ],
+    "decision": "review: rescue vehicle and playable dispatch",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "wind",
+    "name": "Wind turbine",
+    "category": "island",
+    "placement_rule": "island/shore terrace; no tower stack position",
+    "stack_eligible": false,
+    "dimensions": [
+      44,
+      70
+    ],
+    "dependencies": "power routing; wind forecast",
+    "activities": "Generate; brake; clear mechanical fault",
+    "unlock_challenge": "Secure foundation; match windy site; route circuit",
+    "layout": "44x70 terrace; mast vertical; stable base",
+    "items": [
+      {
+        "id": "windturbine",
+        "profile": "power",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "foundation",
+      "wind_cable"
+    ],
+    "decision": "approved expansion idea; power units proposed",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "funicular",
+    "name": "Cliff funicular",
+    "category": "island",
+    "placement_rule": "island/shore terrace; no tower stack position",
+    "stack_eligible": false,
+    "dimensions": [
+      55,
+      70
+    ],
+    "dependencies": "cliff track to jetty; power",
+    "activities": "Ride; carry supplies; repair track",
+    "unlock_challenge": "Align track; test brake; deliver crate",
+    "layout": "55x70 cliff route; two terminal stations",
+    "items": [
+      {
+        "id": "funicular",
+        "profile": "travel",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "track",
+      "terminal",
+      "carriage"
+    ],
+    "decision": "review: island levels and route length",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "geothermal",
+    "name": "Geothermal heating plant",
+    "category": "underground",
+    "placement_rule": "concealed below terrain; revealed only on unlock",
+    "stack_eligible": false,
+    "dimensions": [
+      110,
+      50
+    ],
+    "dependencies": "drill; heating pipe network",
+    "activities": "Heat; pressure control; steam repair",
+    "unlock_challenge": "Find warm ground; control pressure; test hot tap",
+    "layout": "110x50 below new terrace; drill left; exchanger right",
+    "items": [
+      {
+        "id": "drill",
+        "profile": "craft",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "heatexchanger",
+        "profile": "heat",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "rock_layers",
+      "steam_vent",
+      "pipe_set"
+    ],
+    "decision": "approved idea; below terrain not standard stack",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "sea_tunnel",
+    "name": "Sea-life underwater tunnel",
+    "category": "underground",
+    "placement_rule": "concealed below terrain; revealed only on unlock",
+    "stack_eligible": false,
+    "dimensions": [
+      165,
+      35
+    ],
+    "dependencies": "shoreline expansion; seal integrity",
+    "activities": "Observe wildlife; identify habitats",
+    "unlock_challenge": "Inspect seals; match species; trace safe exit",
+    "layout": "165x35 below shoreline; glass passage with clear walking lane",
+    "items": [
+      {
+        "id": "tunnelseals",
+        "profile": "weatherproof",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "glass_segments",
+      "sea_creatures",
+      "exit_sign"
+    ],
+    "decision": "review: underwater stage and viewing mechanics",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "satellite",
+    "name": "Satellite dish / radio mast",
+    "category": "island",
+    "placement_rule": "island/shore terrace; no tower stack position",
+    "stack_eligible": false,
+    "dimensions": [
+      66,
+      50
+    ],
+    "dependencies": "signal network; expanded terrace",
+    "activities": "Relay; align; signal puzzles",
+    "unlock_challenge": "Decode direction; align dish; test message",
+    "layout": "66x50 terrace; dish centre; support legs and service box",
+    "items": [
+      {
+        "id": "dish",
+        "profile": "signal",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "mast",
+        "profile": "signal",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "support_legs",
+      "cable"
+    ],
+    "decision": "approved expansion idea; no real internet",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "testing_yard",
+    "name": "Workshop testing yard",
+    "category": "island",
+    "placement_rule": "island/shore terrace; no tower stack position",
+    "stack_eligible": false,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "workshop; island expansion",
+    "activities": "Test inventions; labour-saving machines",
+    "unlock_challenge": "Assemble safe mechanism; test fault; demonstrate useful output",
+    "layout": "110x35 terrace; marked test lane; tools left; barriers right",
+    "items": [
+      {
+        "id": "testtrack",
+        "profile": "craft",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "butler",
+        "profile": "clean",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "safety_barrier",
+      "crate_targets"
+    ],
+    "decision": "approved expansion idea; invention scope review",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "solar",
+    "name": "Solar terraces / folding wall array",
+    "category": "island",
+    "placement_rule": "island/shore terrace; no tower stack position",
+    "stack_eligible": false,
+    "dimensions": [
+      110,
+      35
+    ],
+    "dependencies": "power cut; forecasts; battery; circuit puzzle",
+    "activities": "Charge; prioritize lamp/boiler/lift; clear snow; repair glass",
+    "unlock_challenge": "Find sunny site; repair circuit; route battery to lamp",
+    "layout": "Basic 22x12 rail panel; mid 44x24 folding array; top 110x35 island field",
+    "items": [
+      {
+        "id": "solarpanel",
+        "profile": "power",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "battery",
+        "profile": "power",
+        "dimensions": [
+          22,
+          20
+        ]
+      },
+      {
+        "id": "powerrouter",
+        "profile": "power",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "panel_mount",
+      "cable",
+      "snow_overlay"
+    ],
+    "decision": "review: tier 4 sun tracker considered optional, not silently removed",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "solar_tracker",
+    "name": "Comic sun-tracking array",
+    "category": "island",
+    "placement_rule": "island/shore terrace; no tower stack position",
+    "stack_eligible": false,
+    "dimensions": [
+      66,
+      35
+    ],
+    "dependencies": "solar; tracking decision",
+    "activities": "Track sun; reset mistaken bright-target tracking",
+    "unlock_challenge": "Compare sky targets; calibrate sensor",
+    "layout": "66x35 solar terrace add-on; tracking mount on stable base",
+    "items": [
+      {
+        "id": "suntracker",
+        "profile": "power",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "tracking_mount",
+      "brightness_targets"
+    ],
+    "decision": "discussed fourth tier; separate optional module pending approval",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "castle_theme",
+    "name": "Castle theme",
+    "category": "theme",
+    "placement_rule": "inside imagination room; interchangeable set",
+    "stack_eligible": false,
+    "dimensions": [
+      105,
+      35
+    ],
+    "dependencies": "imagination room",
+    "activities": "Shield sequence; rescue toy",
+    "unlock_challenge": "Match heraldry then solve drawbridge sequence",
+    "layout": "Same 105x35 set; gate left; toy castle centre",
+    "items": [
+      {
+        "id": "drawbridge",
+        "profile": "single",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "banners",
+      "castle_backdrop",
+      "shield_tiles"
+    ],
+    "decision": "discussed variant; no stack slot",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "space_theme",
+    "name": "Space-station theme",
+    "category": "theme",
+    "placement_rule": "inside imagination room; interchangeable set",
+    "stack_eligible": false,
+    "dimensions": [
+      105,
+      35
+    ],
+    "dependencies": "imagination room",
+    "activities": "Orbit ordering; docking puzzle",
+    "unlock_challenge": "Place planets then dock toy capsule",
+    "layout": "Same 105x35 set; star panel and docking port",
+    "items": [
+      {
+        "id": "toyairlock",
+        "profile": "single",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "space_backdrop",
+      "planet_tiles"
+    ],
+    "decision": "discussed variant; distinct from permanent zero-gravity room",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "pirate_theme",
+    "name": "Pirate-ship theme",
+    "category": "theme",
+    "placement_rule": "inside imagination room; interchangeable set",
+    "stack_eligible": false,
+    "dimensions": [
+      105,
+      35
+    ],
+    "dependencies": "imagination room",
+    "activities": "Chart clues; knot sequence",
+    "unlock_challenge": "Plot toy treasure route and tie knot",
+    "layout": "Same 105x35 set; helm left; chart right",
+    "items": [
+      {
+        "id": "toyhelm",
+        "profile": "single",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "pirate_backdrop",
+      "treasure_props"
+    ],
+    "decision": "discussed variant",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "jungle_theme",
+    "name": "Jungle theme",
+    "category": "theme",
+    "placement_rule": "inside imagination room; interchangeable set",
+    "stack_eligible": false,
+    "dimensions": [
+      105,
+      35
+    ],
+    "dependencies": "imagination room",
+    "activities": "Animal clues; vine path",
+    "unlock_challenge": "Match tracks then cross short path",
+    "layout": "Same 105x35 set; tracks left; vines right",
+    "items": [
+      {
+        "id": "vinegate",
+        "profile": "single",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "jungle_backdrop",
+      "animal_tracks"
+    ],
+    "decision": "discussed variant",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "haunted_theme",
+    "name": "Gentle haunted theme",
+    "category": "theme",
+    "placement_rule": "inside imagination room; interchangeable set",
+    "stack_eligible": false,
+    "dimensions": [
+      105,
+      35
+    ],
+    "dependencies": "imagination room",
+    "activities": "Sound matching; hidden toy",
+    "unlock_challenge": "Identify silly sound then find puppet",
+    "layout": "Same 105x35 set; puppet box centre",
+    "items": [
+      {
+        "id": "puppetbox",
+        "profile": "single",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "haunted_backdrop",
+      "comic_ghost"
+    ],
+    "decision": "discussed variant; child-friendly",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "arctic_theme",
+    "name": "Arctic-base theme",
+    "category": "theme",
+    "placement_rule": "inside imagination room; interchangeable set",
+    "stack_eligible": false,
+    "dimensions": [
+      105,
+      35
+    ],
+    "dependencies": "imagination room",
+    "activities": "Warmth routing; ice rescue",
+    "unlock_challenge": "Route pretend heat and rescue toy penguin",
+    "layout": "Same 105x35 set; pretend generator left; ice right",
+    "items": [
+      {
+        "id": "toyheater",
+        "profile": "single",
+        "dimensions": [
+          22,
+          20
+        ]
+      }
+    ],
+    "props": [
+      "arctic_backdrop",
+      "penguin_toy"
+    ],
+    "decision": "discussed variant",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  },
+  {
+    "space_id": "garage",
+    "name": "Garage (superseded)",
+    "category": "retired",
+    "placement_rule": "no placement; superseded",
+    "stack_eligible": false,
+    "dimensions": [
+      0,
+      0
+    ],
+    "dependencies": "none",
+    "activities": "Historical idea replaced by water-filled boathouse",
+    "unlock_challenge": "No unlock; do not implement",
+    "layout": "No allocated geometry",
+    "items": [],
+    "props": [],
+    "decision": "retired: boathouse replaces garage",
+    "source": "docs/EXPANSION_DESIGN.md",
+    "priority": "P2"
+  }
+]

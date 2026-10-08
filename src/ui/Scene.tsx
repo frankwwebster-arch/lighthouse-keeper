@@ -8,6 +8,8 @@ import { Actors, type Pose } from './Actors'
 import { ObjectArt } from './art'
 import { FloorModule, floorsOnShow } from './floors'
 import { parseBrokenPreview, parseTierPreview, visualStateFor } from './objectState'
+import type { TvChannel } from './tvChannels'
+import { Sprite } from './Sprite'
 
 const FX: Record<FxKey, string> = { steam: '💨', bubbles: '🫧', sparkles: '✨', dust: '🌫️', scribbles: '✏️', music: '🎵', zzz: '💤', tv: '📺', hearts: '💗', stench: '🤢', burp: '💨', splash: '💦', coins: '🪙', ring: '🔔', stars: '⭐' }
 
@@ -16,6 +18,7 @@ const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v
 
 interface Props {
   s: State
+  tvChannel?: TvChannel
   selected: ObjectId | null
   flash: number
   shrugAt: number
@@ -39,7 +42,7 @@ function Rain() {
 /** `?floors=all` in the address shows every floor (and the lift) as if unlocked, for checking art. */
 const previewAllFloors = () => typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('floors') === 'all'
 
-export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive, onPose }: Props) {
+export function Scene({ s, tvChannel = 'news', selected, flash, shrugAt, petJump, onObject, onArrive, onPose }: Props) {
   // The tower is whatever floors he has unlocked: stack them before anything is drawn.
   const allFloors = useMemo(previewAllFloors, [])
   if (allFloors) applyLayout(ALL_ROOM_FLOORS.filter((f) => !UNDERGROUND.includes(f)), UNDERGROUND, true)
@@ -97,7 +100,7 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
     const def = OBJECTS.find((o) => o.id === id)!
     const wx = x ?? worldX(id)
     const state = visualStateFor(id, id === 'tv' && tvOn ? 'tv' : activeObject, broken)
-    return <ObjectArt key={id} id={id} x={wx} y={FLOOR_Y[def.floor]} state={state} tier={previewTiers[id] ?? tierOf(s, id)} extra={{ ringing: !!s.ringing, ready: s.garden.ready }} />
+    return <ObjectArt key={id} id={id} x={wx} y={FLOOR_Y[def.floor]} state={state} tier={previewTiers[id] ?? tierOf(s, id)} extra={{ ringing: !!s.ringing, ready: s.garden.ready, channel: doingNow?.id === 'tv_nature' ? 'nature' : tvChannel }} />
   }
 
   return (
@@ -151,8 +154,10 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
           )}
           {/* lamp room, always on top */}
           <g transform={`translate(0 ${FLOOR_Y.lamp - 220})`}>
-            <rect x={TOWER_X + 70} y={80} width={380} height={140} fill={s.lampLit ? '#fff2a8' : '#cfe8ee'} opacity={0.85} stroke="#5d6d73" strokeWidth={5} />
-            {[0, 1, 2, 3].map((i) => <line key={i} x1={TOWER_X + 165 + i * 95} y1={80} x2={TOWER_X + 165 + i * 95} y2={220} stroke="#5d6d73" strokeWidth={4} />)}
+            <Sprite name="room_lamp" x={TOWER_X + 260} y={220} w={380} h={140}>
+              <rect x={TOWER_X + 70} y={80} width={380} height={140} fill={s.lampLit ? '#fff2a8' : '#cfe8ee'} opacity={0.85} stroke="#5d6d73" strokeWidth={5} />
+              {[0, 1, 2, 3].map((i) => <line key={i} x1={TOWER_X + 165 + i * 95} y1={80} x2={TOWER_X + 165 + i * 95} y2={220} stroke="#5d6d73" strokeWidth={4} />)}
+            </Sprite>
             <path d={`M${TOWER_X + 60} 80 L${TOWER_X + 260} 20 L${TOWER_X + 460} 80 Z`} fill="#b8433a" stroke="#6b2520" strokeWidth={5} />
             <circle cx={TOWER_X + 260} cy={14} r={9} fill="#6b2520" />
           </g>

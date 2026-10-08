@@ -4,6 +4,7 @@ import { insideVisit, moodOf, moodWord, nextUpgrade, owned, priceOf, tierOf, upg
 import type { Order } from '../game/engine'
 import { NAMES, clockText, labelFor, moodFace, moodName } from '../game/words'
 import { floorCount, goalKey, goalTarget, goalsOf, objectAvailable, openMissions, rewardOf, scaledTarget, started } from '../game/missions'
+import { TV_CHANNELS, type TvChannel } from './tvChannels'
 
 // ─── Top bar ─────────────────────────────────────────────────────────────────
 
@@ -52,7 +53,7 @@ export function menuFor(s: State, id: ObjectId): InteractionDef[] {
   })
 }
 
-export function ObjectMenu({ s, id, label, onPick, onUpgrade, onClose }: { s: State; id: ObjectId; label: string; onPick: (o: Order) => void; onUpgrade: () => void; onClose: () => void }) {
+export function ObjectMenu({ s, id, label, onPick, onUpgrade, onClose, tvChannel = 'news', onTvChannel }: { s: State; id: ObjectId; label: string; onPick: (o: Order) => void; onUpgrade: () => void; onClose: () => void; tvChannel?: TvChannel; onTvChannel?: (channel: TvChannel) => void }) {
   const items = menuFor(s, id)
   const broken = s.broken.includes(id)
   const up = nextUpgrade(s, id)
@@ -66,8 +67,14 @@ export function ObjectMenu({ s, id, label, onPick, onUpgrade, onClose }: { s: St
       {broken && <p className="fault-copy">It has broken down. Repair it before using it again.</p>}
       {!broken && items.length === 0 && <p className="dim">Nothing to do with this right now.</p>}
       <div className="choices">
+        {!broken && id === 'tv' && TV_CHANNELS.map((channel) => (
+          <button key={channel.id} className="big" aria-pressed={tvChannel === channel.id} onClick={() => { onTvChannel?.(channel.id); onPick({ id: channel.action }) }}>
+            📺 Watch {channel.label}
+          </button>
+        ))}
         {broken && <button className="big repair" onClick={() => onPick({ id: 'repair', object: id })}>🛠️ Repair {label.toLowerCase()}</button>}
         {!broken && items.map((i) => {
+          if (id === 'tv' && (i.id === 'tv_watch' || i.id === 'tv_nature')) return null
           const kind = i.id === 'fridge_snack' ? 'snack' : i.id === 'cooker_cook' ? 'cook' : null
           const stock = kind ? owned(s, kind) : []
           return (

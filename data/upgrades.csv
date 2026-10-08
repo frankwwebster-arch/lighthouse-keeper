@@ -14,7 +14,7 @@ kitchen,broom,3,Robot hoover,45,Does a bit of tidying by itself each day (comic 
 kitchen,petbowl,1,Plain pet bowl,0,,obj_petbowl,todo,todo,todo,
 kitchen,petbowl,2,Bowl with the pet's name on it,10,Pet is happier when fed,obj_petbowl_t2,todo,todo,todo,
 kitchen,petbowl,3,Automatic feeder,30,Feeds the pet at breakfast by itself,obj_petbowl_t3,todo,todo,todo,
-living,tv,1,Old box telly,0,,obj_tv,todo,todo,todo,
+living,tv,1,Old box telly,0,,obj_tv,done,done,done,
 living,tv,2,Big flat-screen TV,25,More fun per show,obj_tv_t2,todo,todo,todo,
 living,tv,3,Cinema wall with surround sound,50,Visitors love film night (extra company),obj_tv_t3,todo,todo,todo,
 living,bookshelf,1,Wobbly shelf,0,,obj_bookshelf,todo,todo,todo,

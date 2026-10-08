@@ -12,6 +12,7 @@ import type { Rules } from './game/config'
 import { ack, tell } from './game/words'
 import { Alerts, CommandBar, Diary, Hud, Missions, ObjectMenu, PromptBar, GrownUps, Report, SettingsMenu, Setup, Shop, type Entry } from './ui/Panels'
 import { Scene } from './ui/Scene'
+import type { TvChannel } from './ui/tvChannels'
 
 
 const SHRUGS = ['Erm… I have no idea what that means.', 'Hmm? Say that another way?', 'You lost me there!', 'Sorry, I do not know that one.']
@@ -23,6 +24,7 @@ export default function App({ player, db, initial, rules: ownRules, onSwitch }: 
   const [started, setStarted] = useState(false)
   const [paused, setPaused] = useState(false)
   const [selected, setSelected] = useState<ObjectId | null>(null)
+  const [tvChannel, setTvChannel] = useState<TvChannel>('news')
   const [diary, setDiary] = useState<Entry[]>([])
   const [showDiary, setShowDiary] = useState(false)
   const [showMissions, setShowMissions] = useState(false)
@@ -220,6 +222,7 @@ export default function App({ player, db, initial, rules: ownRules, onSwitch }: 
       <Hud s={s} paused={paused} onPause={() => setPaused((p) => !p)} onDiary={() => { setShowMissions(false); setShowDiary((d) => !d) }} onMissions={() => { setShowDiary(false); setShowMissions((m) => !m) }} onMenu={() => setShowMenu(true)} />
       <main className="stage">
         <Scene
+          tvChannel={tvChannel}
           s={s}
           selected={selected}
           flash={flash}
@@ -242,7 +245,7 @@ export default function App({ player, db, initial, rules: ownRules, onSwitch }: 
         {showMissions && <Missions s={s} onClose={() => setShowMissions(false)} />}
       </main>
       <footer className="dock">
-        {selected && <ObjectMenu s={s} id={selected} label={label} onPick={(o) => give([o], 0, 'menu')} onUpgrade={() => { poke(); update((x) => upgrade(x, selected)) }} onClose={() => setSelected(null)} />}
+        {selected && <ObjectMenu s={s} id={selected} label={label} tvChannel={tvChannel} onTvChannel={setTvChannel} onPick={(o) => give([o], 0, 'menu')} onUpgrade={() => { poke(); update((x) => upgrade(x, selected)) }} onClose={() => setSelected(null)} />}
         {!selected && <Alerts s={s} onPick={(o) => give([o], 0, 'menu')} />}
         {s.prompt && <PromptBar s={s} prompt={s.prompt} onAnswer={answer} onSkip={() => update(dropChat)} />}
         <CommandBar onSubmit={submit} placeholder={`Tell ${s.name} what to do… (try “${s.needs.hunger < 50 ? 'make some toast' : 'play the piano'}”)`} pending={pending?.text ?? null} onYes={() => submit('yes')} onNo={() => submit('no')} />

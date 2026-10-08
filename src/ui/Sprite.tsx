@@ -12,7 +12,7 @@ import { createContext, useContext, useEffect, useId, useState, type ReactNode }
  * (docs/CODEX_ASSETS.md has the full list of names.)
  */
 export const PX = 4
-type ManifestEntry = string | { file: string; frames?: number; fps?: number; w?: number; h?: number }
+type ManifestEntry = string | { file: string; frames?: number; fps?: number; w?: number; h?: number; effectOrigin?: [number, number] }
 type Manifest = Record<string, ManifestEntry>
 const Ctx = createContext<Manifest>({})
 

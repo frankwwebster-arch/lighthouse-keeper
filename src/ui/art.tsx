@@ -1,13 +1,27 @@
 import type { ReactNode } from 'react'
 import { objectById, type ObjectId } from '../game/config'
-import { Sprite, useSprites } from './Sprite'
+import { PX, Sprite, useSprites } from './Sprite'
+import { tvChannelSprites, type TvChannel } from './tvChannels'
 
 export type ObjectVisualState = 'standard' | 'on' | 'broken'
 
-function StateEffects({ state }: { state: ObjectVisualState }) {
+function StateEffects({ state, origin = [0, -18] }: { state: ObjectVisualState; origin?: [number, number] }) {
+  const manifest = useSprites()
   if (state === 'standard') return null
   if (state === 'on') {
     return <path className="object-on-pulse" d="M-26-6h52" fill="none" stroke="#ffd35a" strokeWidth={4} strokeLinecap="square" />
+  }
+  if (manifest.fx_broken_smoke && manifest.fx_broken_sparks) {
+    const [x, y] = origin.map((v) => v * PX)
+    return (
+      <g className="broken-effects" pointerEvents="none" aria-hidden="true">
+        <Sprite name="fx_broken_smoke" x={x} y={y} w={48} h={64}>{null}</Sprite>
+        <g className="broken-sparks">
+          {/* Sparks use a centre anchor; Sprite itself uses bottom-centre. */}
+          <Sprite name="fx_broken_sparks" x={x} y={y + 24} w={48} h={48}>{null}</Sprite>
+        </g>
+      </g>
+    )
   }
   return (
     <g className="broken-effects" pointerEvents="none" aria-hidden="true">
@@ -35,20 +49,21 @@ export function spriteNames(id: ObjectId, state: ObjectVisualState, tier = 1): s
 }
 
 /** Vector drawings of every object. (x = centre, y = the floor.) */
-export function ObjectArt({ id, x, y, state = 'standard', tier = 1, extra }: { id: ObjectId; x: number; y: number; state?: ObjectVisualState; tier?: number; extra?: { ringing?: boolean; ready?: number; waiting?: boolean } }): ReactNode {
+export function ObjectArt({ id, x, y, state = 'standard', tier = 1, extra }: { id: ObjectId; x: number; y: number; state?: ObjectVisualState; tier?: number; extra?: { ringing?: boolean; ready?: number; waiting?: boolean; channel?: TvChannel } }): ReactNode {
   const on = state === 'on'
   const manifest = useSprites()
+  const spriteEntry = spriteNames(id, state, tier).map((name) => manifest[name]).find(Boolean)
   // An upgrade with no art of its own yet gets a plain tier tag as a stand-in.
   const standIn = tier > 1 && !manifest[`obj_${id}_t${tier}_${state}`] && !manifest[`obj_${id}_t${tier}`]
   const g = (w: number, h: number, kids: ReactNode) => (
-    <g transform={`translate(${x} ${y})`} className={`object object-${id} state-${state} tier-${tier}`} data-state={state} data-tier={tier}>
+    <g transform={`translate(${x} ${y})`} className={`object object-${id} state-${state} tier-${tier}`} data-state={state} data-tier={tier} data-channel={id === 'tv' ? extra?.channel ?? 'news' : undefined}>
       <g className="object-body">
-        <Sprite name={spriteNames(id, state, tier)} w={w} h={h}>
+        <Sprite name={id === 'tv' && on ? [...tvChannelSprites(extra?.channel ?? 'news', tier), ...spriteNames(id, state, tier)] : spriteNames(id, state, tier)} w={w} h={h}>
           {kids}
         </Sprite>
       </g>
       {standIn && <text x={0} y={-h - 6} textAnchor="middle" className="floor-label tier-tag">T{tier}</text>}
-      <StateEffects state={state} />
+      <StateEffects state={state} origin={typeof spriteEntry === 'string' ? undefined : spriteEntry?.effectOrigin} />
     </g>
   )
   switch (id) {

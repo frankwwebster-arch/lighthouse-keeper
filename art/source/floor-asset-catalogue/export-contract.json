@@ -1,0 +1,245 @@
+{
+  "room_lamp": {
+    "w": 95,
+    "h": 35,
+    "frames": 1,
+    "fps": 0,
+    "density": 4,
+    "anchor": [
+      47,
+      35
+    ],
+    "z": 20,
+    "file": "art/raw/floor-asset-catalogue/room_lamp.png",
+    "sourceSize": [
+      380,
+      140
+    ],
+    "sha256": "2fe683f833e49b8a10952110e2f51155768a58868a416135544ace65739fb6ec",
+    "review_status": "pending Frank review"
+  },
+  "obj_tv_standard": {
+    "w": 28,
+    "h": 23,
+    "frames": 1,
+    "fps": 0,
+    "density": 4,
+    "anchor": [
+      14,
+      23
+    ],
+    "z": 40,
+    "keeperUsePoint": [
+      14,
+      0
+    ],
+    "effectOrigin": [
+      8,
+      -18
+    ],
+    "bubbleOrigin": [
+      0,
+      -28
+    ],
+    "file": "art/raw/floor-asset-catalogue/obj_tv_standard_f1.png",
+    "sourceSize": [
+      112,
+      92
+    ],
+    "sha256": "72712624e115825be6fdc7c7ab14152844cb5d4cf18103261e1af1f000bce564",
+    "review_status": "pending Frank review"
+  },
+  "obj_tv_on": {
+    "w": 28,
+    "h": 23,
+    "frames": 4,
+    "fps": 8,
+    "density": 4,
+    "anchor": [
+      14,
+      23
+    ],
+    "z": 40,
+    "keeperUsePoint": [
+      14,
+      0
+    ],
+    "effectOrigin": [
+      8,
+      -18
+    ],
+    "bubbleOrigin": [
+      0,
+      -28
+    ],
+    "file": "art/raw/floor-asset-catalogue/obj_tv_on_f4.png",
+    "sourceSize": [
+      448,
+      92
+    ],
+    "sha256": "d40a5028b43c0ee664e738c436e0a42e09bac581274f9707d1fa909f2de1df23",
+    "review_status": "pending Frank review"
+  },
+  "obj_tv_channel_news_on": {
+    "w": 28,
+    "h": 23,
+    "frames": 4,
+    "fps": 8,
+    "density": 4,
+    "anchor": [
+      14,
+      23
+    ],
+    "z": 40,
+    "keeperUsePoint": [
+      14,
+      0
+    ],
+    "effectOrigin": [
+      8,
+      -18
+    ],
+    "bubbleOrigin": [
+      0,
+      -28
+    ],
+    "file": "art/raw/floor-asset-catalogue/obj_tv_channel_news_on_f4.png",
+    "sourceSize": [
+      448,
+      92
+    ],
+    "sha256": "d40a5028b43c0ee664e738c436e0a42e09bac581274f9707d1fa909f2de1df23",
+    "review_status": "pending Frank review"
+  },
+  "obj_tv_channel_sport_on": {
+    "w": 28,
+    "h": 23,
+    "frames": 4,
+    "fps": 8,
+    "density": 4,
+    "anchor": [
+      14,
+      23
+    ],
+    "z": 40,
+    "keeperUsePoint": [
+      14,
+      0
+    ],
+    "effectOrigin": [
+      8,
+      -18
+    ],
+    "bubbleOrigin": [
+      0,
+      -28
+    ],
+    "file": "art/raw/floor-asset-catalogue/obj_tv_channel_sport_on_f4.png",
+    "sourceSize": [
+      448,
+      92
+    ],
+    "sha256": "d04f936611343e63e8a5cb79c491841880a9bb8dbaa943f38a7304d4791143a0",
+    "review_status": "pending Frank review"
+  },
+  "obj_tv_channel_nature_on": {
+    "w": 28,
+    "h": 23,
+    "frames": 4,
+    "fps": 8,
+    "density": 4,
+    "anchor": [
+      14,
+      23
+    ],
+    "z": 40,
+    "keeperUsePoint": [
+      14,
+      0
+    ],
+    "effectOrigin": [
+      8,
+      -18
+    ],
+    "bubbleOrigin": [
+      0,
+      -28
+    ],
+    "file": "art/raw/floor-asset-catalogue/obj_tv_channel_nature_on_f4.png",
+    "sourceSize": [
+      448,
+      92
+    ],
+    "sha256": "812e127bee7fad32ada79d427ff9ea892120535d4bd584f397c7370911015bb6",
+    "review_status": "pending Frank review"
+  },
+  "obj_tv_broken": {
+    "w": 28,
+    "h": 23,
+    "frames": 1,
+    "fps": 0,
+    "density": 4,
+    "anchor": [
+      14,
+      23
+    ],
+    "z": 40,
+    "keeperUsePoint": [
+      14,
+      0
+    ],
+    "effectOrigin": [
+      8,
+      -18
+    ],
+    "bubbleOrigin": [
+      0,
+      -28
+    ],
+    "file": "art/raw/floor-asset-catalogue/obj_tv_broken_f1.png",
+    "sourceSize": [
+      112,
+      92
+    ],
+    "sha256": "bcfe38299e30b3b6500562cb2e731145b9eaa7234a3a1a759acead97f89362a7",
+    "review_status": "pending Frank review"
+  },
+  "fx_broken_smoke": {
+    "w": 12,
+    "h": 16,
+    "frames": 8,
+    "fps": 8,
+    "density": 4,
+    "anchor": [
+      6,
+      16
+    ],
+    "z": 95,
+    "file": "art/raw/floor-asset-catalogue/fx_broken_smoke_f8.png",
+    "sourceSize": [
+      384,
+      64
+    ],
+    "sha256": "bffa2fea03178d871314999978d7ccbf743107c751c0ddce88c7142f0b3952da",
+    "review_status": "pending Frank review"
+  },
+  "fx_broken_sparks": {
+    "w": 12,
+    "h": 12,
+    "frames": 6,
+    "fps": 12,
+    "density": 4,
+    "anchor": [
+      6,
+      6
+    ],
+    "z": 96,
+    "file": "art/raw/floor-asset-catalogue/fx_broken_sparks_f6.png",
+    "sourceSize": [
+      288,
+      48
+    ],
+    "sha256": "69e92741d0996e84cfd1f8b85537cd49100c605b962def6ad2c6f23e6ad5086a",
+    "review_status": "pending Frank review"
+  }
+}

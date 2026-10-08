@@ -1,0 +1,304 @@
+{
+  "fun": {
+    "benefits": [
+      "30 fun / 40 game min",
+      "38 fun / 34 game min",
+      "45 fun / 28 game min"
+    ],
+    "keeper_pose": "watch_tv",
+    "visual_cues": "screen static / 4-frame channel flicker / cracked screen"
+  },
+  "research": {
+    "benefits": [
+      "1 clue per 20 game min",
+      "2 clues per 17 game min",
+      "3 clues per 14 game min"
+    ],
+    "keeper_pose": "read",
+    "visual_cues": "idle page / 4-frame page or display change / stuck page or screen"
+  },
+  "music": {
+    "benefits": [
+      "30 fun and 4 social / 30 min",
+      "38 fun and 5 social / 26 min",
+      "45 fun and 6 social / 21 min"
+    ],
+    "keeper_pose": "piano",
+    "visual_cues": "idle / 4-frame keys or bellows / stuck key"
+  },
+  "social": {
+    "benefits": [
+      "12 social / 20 min",
+      "15 social / 17 min",
+      "18 social / 14 min"
+    ],
+    "keeper_pose": "phone",
+    "visual_cues": "idle / 4-frame serving or ring / jam or dead signal"
+  },
+  "storage": {
+    "benefits": [
+      "4 item slots",
+      "8 item slots",
+      "12 item slots"
+    ],
+    "keeper_pose": "reach_use",
+    "visual_cues": "closed / 4-frame opening / jammed hinge; contents never destroyed"
+  },
+  "capacity": {
+    "benefits": [
+      "1 cargo or task slot",
+      "2 cargo or task slots",
+      "3 cargo or task slots"
+    ],
+    "keeper_pose": "reach_use",
+    "visual_cues": "idle / 4-frame transfer / jammed mechanism"
+  },
+  "cook": {
+    "benefits": [
+      "1 recipe serving / 35 min",
+      "2 servings / 30 min",
+      "3 servings / 25 min"
+    ],
+    "keeper_pose": "cook_back",
+    "visual_cues": "cold / 4-frame flame or service motion / sputtering burner"
+  },
+  "clean": {
+    "benefits": [
+      "40 tidiness / 25 min",
+      "50 tidiness / 21 min",
+      "60 tidiness / 18 min"
+    ],
+    "keeper_pose": "tidy",
+    "visual_cues": "parked / 4-frame tool motion / split bristle or stalled wheel"
+  },
+  "pet": {
+    "benefits": [
+      "10 pet-care points / 12 min",
+      "15 pet-care points / 10 min",
+      "20 pet-care points / 8 min"
+    ],
+    "keeper_pose": "chicken_care",
+    "visual_cues": "still / 4-frame feeding / broken latch or feed jam"
+  },
+  "sleep": {
+    "benefits": [
+      "80 percent morning energy",
+      "90 percent morning energy",
+      "100 percent morning energy"
+    ],
+    "keeper_pose": "sleep",
+    "visual_cues": "made / 4-frame blanket rise / exposed spring"
+  },
+  "wash": {
+    "benefits": [
+      "40 hygiene / 15 min",
+      "50 hygiene / 13 min",
+      "60 hygiene / 11 min"
+    ],
+    "keeper_pose": "wash_back",
+    "visual_cues": "dry / 4-frame water / leaking tap"
+  },
+  "loo": {
+    "benefits": [
+      "70 bladder / 8 min",
+      "88 bladder / 7 min",
+      "105 nominal bladder capped at 100 / 6 min"
+    ],
+    "keeper_pose": "loo_hide",
+    "visual_cues": "idle / 4-frame flush / cistern rattle"
+  },
+  "spot": {
+    "benefits": [
+      "3 common spotting targets",
+      "6 targets with 1 extra zoom step",
+      "9 targets including whale and distant ship"
+    ],
+    "keeper_pose": "telescope",
+    "visual_cues": "still / 4-frame scan / jammed bearing"
+  },
+  "light": {
+    "benefits": [
+      "4 game hours beam per fuel unit",
+      "8 game hours beam per fuel unit",
+      "full 14.5-hour game night/day cycle beam per charge"
+    ],
+    "keeper_pose": "reach_use",
+    "visual_cues": "off / 4-frame lit core / weak or stalled lens"
+  },
+  "repair": {
+    "benefits": [
+      "25 game min per repair",
+      "20 game min per repair",
+      "15 game min per repair"
+    ],
+    "keeper_pose": "cook_back",
+    "visual_cues": "idle / 4-frame tool jig / jammed tool; repair still possible manually"
+  },
+  "forecast": {
+    "benefits": [
+      "6 game hours warning",
+      "12 game hours warning",
+      "24 game hours warning"
+    ],
+    "keeper_pose": "read",
+    "visual_cues": "still dial / 4-frame needle / stuck dial"
+  },
+  "signal": {
+    "benefits": [
+      "1 signal decoded / 20 min",
+      "2 signals / 17 min",
+      "3 signals / 14 min"
+    ],
+    "keeper_pose": "phone",
+    "visual_cues": "off / 4-frame signal lights / aerial crack or static"
+  },
+  "measure": {
+    "benefits": [
+      "1 reliable reading or weighed batch / 10 min"
+    ],
+    "keeper_pose": "reach_use",
+    "visual_cues": "still / 4-frame reading / frozen dial"
+  },
+  "craft": {
+    "benefits": [
+      "1 completed batch / 30 min",
+      "2 batches / 26 min",
+      "3 batches / 21 min"
+    ],
+    "keeper_pose": "cook_back",
+    "visual_cues": "idle / 4-frame tool movement / blocked spindle"
+  },
+  "route": {
+    "benefits": [
+      "1 route with 3 waypoints",
+      "2 saved routes with 5 waypoints",
+      "3 saved routes with 7 waypoints"
+    ],
+    "keeper_pose": "read",
+    "visual_cues": "idle / 4-frame route highlight / stuck plotting arm"
+  },
+  "search": {
+    "benefits": [
+      "1 searchable compartment / 15 min",
+      "2 compartments / 13 min",
+      "3 compartments / 11 min"
+    ],
+    "keeper_pose": "reach_use",
+    "visual_cues": "closed / 4-frame searching / stuck drawer"
+  },
+  "game": {
+    "benefits": [
+      "10 fun per successful round / 12 min",
+      "13 fun / 10 min",
+      "15 fun / 8 min"
+    ],
+    "keeper_pose": "reach_use",
+    "visual_cues": "idle / 4-frame game motion / loose or jammed mechanism"
+  },
+  "bank": {
+    "benefits": [
+      "1 deposit processed / 10 min",
+      "2 deposits / 8 min",
+      "3 deposits / 6 min"
+    ],
+    "keeper_pose": "reach_use",
+    "visual_cues": "still / 4-frame coin transfer / tube jam; saved balance untouched"
+  },
+  "power": {
+    "benefits": [
+      "10 stored or generated energy units per clear game day",
+      "20 energy units per clear day",
+      "30 energy units per clear day"
+    ],
+    "keeper_pose": "reach_use",
+    "visual_cues": "off / 4-frame status lights / cracked cable or stalled motor"
+  },
+  "growing": {
+    "benefits": [
+      "3 crop yields / 2 completed game days",
+      "6 crop yields / 2 days",
+      "9 crop yields / 2 days"
+    ],
+    "keeper_pose": "dig",
+    "visual_cues": "empty plus ripe1/2/3 / 4-frame watering / broken fence or glass"
+  },
+  "water": {
+    "benefits": [
+      "clean 1 water bay / 20 min",
+      "2 bays / 17 min",
+      "3 bays / 14 min"
+    ],
+    "keeper_pose": "wash_back",
+    "visual_cues": "off / 4-frame water flow / leaking seal"
+  },
+  "heat": {
+    "benefits": [
+      "heat 1 connected service bay per charge",
+      "heat 2 service bays per charge",
+      "heat 3 service bays per charge"
+    ],
+    "keeper_pose": "reach_use",
+    "visual_cues": "pilot / 4-frame pressure flame / gauge fault; cold fallback remains"
+  },
+  "fitness": {
+    "benefits": [
+      "10 energy and 10 fun / 20 min",
+      "13 energy and 13 fun / 17 min",
+      "15 energy and 15 fun / 14 min"
+    ],
+    "keeper_pose": "flex",
+    "visual_cues": "idle / 4-frame cycling or lifting / stuck bearing"
+  },
+  "travel": {
+    "benefits": [
+      "8 game min per floor or route segment",
+      "5 game min per segment",
+      "3 game min per segment"
+    ],
+    "keeper_pose": "walk",
+    "visual_cues": "closed / 4-frame travel/doors / jammed door; stairs remain usable"
+  },
+  "weatherproof": {
+    "benefits": [
+      "usable in calm dry weather",
+      "also usable in light rain",
+      "also usable in moderate rain; never lightning/extreme wind"
+    ],
+    "keeper_pose": "reach_use",
+    "visual_cues": "idle / 4-frame deployment / torn seal"
+  },
+  "fish": {
+    "benefits": [
+      "22 fun and 14 hunger / 45 min",
+      "28 fun and 18 hunger / 38 min",
+      "33 fun and 21 hunger / 32 min"
+    ],
+    "keeper_pose": "fish",
+    "visual_cues": "still / 4-frame line/water / loose plank"
+  },
+  "boat": {
+    "benefits": [
+      "rowing: 30 min shop leg; 1 crate; no fuel",
+      "tug: 20 min shop leg; 2 crates; 4 legs per tank",
+      "speedboat: 10 min shop leg; 3 crates; 6 legs per tank"
+    ],
+    "keeper_pose": "row",
+    "visual_cues": "moored / 4-frame oars/wake / hull leak or propeller jam"
+  },
+  "door": {
+    "benefits": [
+      "greet visitor / 8 min",
+      "greet / 7 min; proposed peek reveals 1 visitor identity",
+      "greet / 6 min; proposed visitor patience 30 vs 20 min"
+    ],
+    "keeper_pose": "greet",
+    "visual_cues": "closed / on n/a for door tiers / jammed latch"
+  },
+  "single": {
+    "benefits": [
+      "one usable interaction; no mechanical reason for tiers"
+    ],
+    "keeper_pose": "reach_use",
+    "visual_cues": "idle / 4-frame use if applicable / loose fitting"
+  }
+}

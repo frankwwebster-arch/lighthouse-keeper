@@ -10,7 +10,7 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import { basename, join, relative } from 'node:path'
 import { PNG } from 'pngjs'
-import { snap, type Img } from './pixelsnap.ts'
+import { hardAlpha, keyMagenta, parseName, snap, type Img } from './pixelsnap.ts'
 
 const RAW = process.env.SPRITES_RAW ?? 'art/raw'
 const OUT = process.env.SPRITES_OUT ?? 'public/sprites'
@@ -22,6 +22,13 @@ interface Entry {
   frames: number
   fps?: number
   pivot?: [number, number]
+  /** Source pixels per logical pixel; playback w/h remain logical dimensions. */
+  density?: number
+  anchor?: [number, number]
+  keeperUsePoint?: [number, number]
+  effectOrigin?: [number, number]
+  bubbleOrigin?: [number, number]
+  z?: number
 }
 
 function pngs(dir: string): string[] {
@@ -48,6 +55,21 @@ if (!files.length) {
   console.log(`No pictures in ${RAW}/ yet. Put Codex's PNGs there and run again.`)
   process.exit(0)
 }
+// Validate every new density contract before clearing an existing export.
+// A bad delivery must leave the last usable manifest and PNGs intact.
+const contracts = new Map<string, Entry>()
+for (const path of files) {
+  const sidecarPath = path.replace(/\.png$/i, '.json')
+  if (!existsSync(sidecarPath)) continue
+  const contract = JSON.parse(readFileSync(sidecarPath, 'utf8')) as Entry
+  const raw = read(path)
+  const parsed = parseName(basename(path))
+  const density = contract.density
+  if (!Number.isInteger(density) || !density || density < 1 || !Number.isInteger(contract.w) || contract.w < 1 || !Number.isInteger(contract.h) || contract.h < 1 || contract.frames !== parsed.frames || raw.w !== contract.w * parsed.frames * density || raw.h !== contract.h * density || !Number.isFinite(contract.fps ?? 0) || (contract.fps ?? 0) < 0 || (parsed.frames > 1 && !(contract.fps && contract.fps > 0))) {
+    throw new Error(`Invalid density/frame contract for ${relative(RAW, path)}`)
+  }
+  contracts.set(path, contract)
+}
 mkdirSync(OUT, { recursive: true })
 
 // Clear out what the last run made, so a renamed or deleted picture does not linger.
@@ -61,7 +83,16 @@ for (const e of Object.values(old)) {
 const manifest: Record<string, Entry> = {}
 let problems = 0
 for (const path of files.sort()) {
-  const s = snap(basename(path), read(path))
+  // Optional additive contract for detailed artwork. A 420x140 room still
+  // occupies 105x35 logical pixels and renders at the same integer 4x size.
+  // Legacy deliveries continue through the unchanged pixel-snap route.
+  const contract = contracts.get(path)
+  const raw = read(path)
+  const parsed = parseName(basename(path))
+  const density = contract?.density
+  const s = contract
+    ? { name: parsed.name, img: hardAlpha(keyMagenta(raw)), frames: parsed.frames, frameW: contract.w, fps: contract.fps ?? 0, scale: 1, warnings: [] as string[], pivot: contract.pivot }
+    : snap(basename(path), raw)
   if (manifest[s.name]) {
     console.log(`!  ${relative(RAW, path)}: a second picture called ${s.name}; skipped`)
     problems++
@@ -69,8 +100,8 @@ for (const path of files.sort()) {
   }
   const file = `${s.name}.png`
   write(join(OUT, file), s.img)
-  manifest[s.name] = { file, w: s.frameW, h: s.img.h, frames: s.frames, ...(s.fps ? { fps: s.fps } : {}), ...(s.pivot ? { pivot: s.pivot } : {}) }
-  const size = `${s.frameW}x${s.img.h}${s.frames > 1 ? ` x${s.frames} @${s.fps}fps` : ''}`
+  manifest[s.name] = { file, w: s.frameW, h: contract?.h ?? s.img.h, frames: s.frames, ...(s.fps ? { fps: s.fps } : {}), ...(s.pivot ? { pivot: s.pivot } : {}), ...(contract ? { density: contract.density, anchor: contract.anchor, keeperUsePoint: contract.keeperUsePoint, effectOrigin: contract.effectOrigin, bubbleOrigin: contract.bubbleOrigin, z: contract.z } : {}) }
+  const size = `${s.frameW}x${contract?.h ?? s.img.h}${s.frames > 1 ? ` x${s.frames} @${s.fps}fps` : ''}${contract ? ` density ${density}` : ''}`
   const scale = s.scale === 1 ? 'already 1x' : `÷${Number.isInteger(s.scale) ? s.scale : s.scale.toFixed(2)}`
   console.log(`${s.warnings.length ? '!' : '✓'}  ${s.name.padEnd(34)} ${size.padEnd(22)} ${scale}`)
   for (const w of s.warnings) console.log(`     ${w}`)

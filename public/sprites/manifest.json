@@ -1,4 +1,178 @@
 {
+ "fx_broken_smoke": {
+  "file": "fx_broken_smoke.png",
+  "w": 12,
+  "h": 16,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   6,
+   16
+  ],
+  "z": 95
+ },
+ "fx_broken_sparks": {
+  "file": "fx_broken_sparks.png",
+  "w": 12,
+  "h": 12,
+  "frames": 6,
+  "fps": 12,
+  "density": 4,
+  "anchor": [
+   6,
+   6
+  ],
+  "z": 96
+ },
+ "obj_tv_broken": {
+  "file": "obj_tv_broken.png",
+  "w": 28,
+  "h": 23,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   14,
+   23
+  ],
+  "keeperUsePoint": [
+   14,
+   0
+  ],
+  "effectOrigin": [
+   8,
+   -18
+  ],
+  "bubbleOrigin": [
+   0,
+   -28
+  ],
+  "z": 40
+ },
+ "obj_tv_channel_nature_on": {
+  "file": "obj_tv_channel_nature_on.png",
+  "w": 28,
+  "h": 23,
+  "frames": 4,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   14,
+   23
+  ],
+  "keeperUsePoint": [
+   14,
+   0
+  ],
+  "effectOrigin": [
+   8,
+   -18
+  ],
+  "bubbleOrigin": [
+   0,
+   -28
+  ],
+  "z": 40
+ },
+ "obj_tv_channel_news_on": {
+  "file": "obj_tv_channel_news_on.png",
+  "w": 28,
+  "h": 23,
+  "frames": 4,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   14,
+   23
+  ],
+  "keeperUsePoint": [
+   14,
+   0
+  ],
+  "effectOrigin": [
+   8,
+   -18
+  ],
+  "bubbleOrigin": [
+   0,
+   -28
+  ],
+  "z": 40
+ },
+ "obj_tv_channel_sport_on": {
+  "file": "obj_tv_channel_sport_on.png",
+  "w": 28,
+  "h": 23,
+  "frames": 4,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   14,
+   23
+  ],
+  "keeperUsePoint": [
+   14,
+   0
+  ],
+  "effectOrigin": [
+   8,
+   -18
+  ],
+  "bubbleOrigin": [
+   0,
+   -28
+  ],
+  "z": 40
+ },
+ "obj_tv_on": {
+  "file": "obj_tv_on.png",
+  "w": 28,
+  "h": 23,
+  "frames": 4,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   14,
+   23
+  ],
+  "keeperUsePoint": [
+   14,
+   0
+  ],
+  "effectOrigin": [
+   8,
+   -18
+  ],
+  "bubbleOrigin": [
+   0,
+   -28
+  ],
+  "z": 40
+ },
+ "obj_tv_standard": {
+  "file": "obj_tv_standard.png",
+  "w": 28,
+  "h": 23,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   14,
+   23
+  ],
+  "keeperUsePoint": [
+   14,
+   0
+  ],
+  "effectOrigin": [
+   8,
+   -18
+  ],
+  "bubbleOrigin": [
+   0,
+   -28
+  ],
+  "z": 40
+ },
  "room_bedroom": {
   "file": "room_bedroom.png",
   "w": 105,
@@ -10,6 +184,18 @@
   "w": 105,
   "h": 35,
   "frames": 1
+ },
+ "room_lamp": {
+  "file": "room_lamp.png",
+  "w": 95,
+  "h": 35,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   47,
+   35
+  ],
+  "z": 20
  },
  "room_living": {
   "file": "room_living.png",

@@ -1,0 +1,11 @@
+{
+  "source": "tv-registered-source.png",
+  "cells": {
+    "standard": [60, 20, 680, 670],
+    "on": [774, 20, 1394, 670],
+    "broken": [1491, 20, 2111, 670]
+  },
+  "on_twinkle": [31, 36],
+  "broken_indicator": [95, 61],
+  "notes": "The three 724px production cells have bbox x offsets 107,97,90 and identical top/bottom 66/670. Crop x offsets compensate 10px and 17px translation, using identical 620x650 windows and common floor at y670. No scene concept plate is sliced. These are dedicated new registered production sources."
+}

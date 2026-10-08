@@ -1,0 +1,24 @@
+{
+  "w": 28,
+  "h": 23,
+  "frames": 4,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    14,
+    23
+  ],
+  "z": 40,
+  "keeperUsePoint": [
+    14,
+    0
+  ],
+  "effectOrigin": [
+    8,
+    -18
+  ],
+  "bubbleOrigin": [
+    0,
+    -28
+  ]
+}

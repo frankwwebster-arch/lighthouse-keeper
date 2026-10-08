@@ -1,0 +1,381 @@
+{
+  "baseCommit": "cdb109b2904ce0834fa559760e5d34e1ddc8f4f2",
+  "boost": [
+    0,
+    25,
+    50
+  ],
+  "quicker": [
+    0,
+    15,
+    30
+  ],
+  "bedEnergy": [
+    80,
+    90,
+    100
+  ],
+  "interactions": [
+    {
+      "id": "fridge_snack",
+      "object": "fridge",
+      "label": "Have a snack",
+      "minutes": 8,
+      "effects": {}
+    },
+    {
+      "id": "cooker_cook",
+      "object": "cooker",
+      "label": "Cook something",
+      "minutes": 35,
+      "effects": {
+        "tidiness": -8
+      }
+    },
+    {
+      "id": "cooker_toast",
+      "object": "cooker",
+      "label": "Make toast",
+      "minutes": 12,
+      "effects": {
+        "hunger": 22
+      }
+    },
+    {
+      "id": "tv_watch",
+      "object": "tv",
+      "label": "Watch TV",
+      "minutes": 40,
+      "effects": {
+        "fun": 30,
+        "energy": -4
+      }
+    },
+    {
+      "id": "tv_nature",
+      "object": "tv",
+      "label": "Watch the nature channel",
+      "minutes": 40,
+      "effects": {
+        "fun": 22,
+        "social": 6
+      }
+    },
+    {
+      "id": "tv_nap",
+      "object": "tv",
+      "label": "Snooze on the sofa",
+      "minutes": 45,
+      "effects": {
+        "energy": 26,
+        "fun": 4
+      }
+    },
+    {
+      "id": "read_book",
+      "object": "bookshelf",
+      "label": "Read a book",
+      "minutes": 40,
+      "effects": {
+        "fun": 26,
+        "energy": 3
+      }
+    },
+    {
+      "id": "play_piano",
+      "object": "piano",
+      "label": "Play the piano",
+      "minutes": 30,
+      "effects": {
+        "fun": 30,
+        "social": 4
+      }
+    },
+    {
+      "id": "wash_basin",
+      "object": "basin",
+      "label": "Have a wash",
+      "minutes": 15,
+      "effects": {
+        "hygiene": 40
+      }
+    },
+    {
+      "id": "brush_teeth",
+      "object": "basin",
+      "label": "Brush teeth",
+      "minutes": 6,
+      "effects": {
+        "hygiene": 15
+      }
+    },
+    {
+      "id": "loo_wee",
+      "object": "toilet",
+      "label": "Go to the loo",
+      "minutes": 8,
+      "effects": {
+        "bladder": 70
+      }
+    },
+    {
+      "id": "loo_poo",
+      "object": "toilet",
+      "label": "Do a poo",
+      "minutes": 14,
+      "effects": {
+        "bladder": 100,
+        "fun": 8
+      }
+    },
+    {
+      "id": "bed_sleep",
+      "object": "bed",
+      "label": "Go to bed for the night",
+      "minutes": 30,
+      "effects": {
+        "energy": 20
+      }
+    },
+    {
+      "id": "bed_nap",
+      "object": "bed",
+      "label": "Have a nap",
+      "minutes": 60,
+      "effects": {
+        "energy": 38
+      }
+    },
+    {
+      "id": "desk_diary",
+      "object": "desk",
+      "label": "Write in his diary",
+      "minutes": 20,
+      "effects": {
+        "fun": 10,
+        "social": 6
+      }
+    },
+    {
+      "id": "desk_tidy",
+      "object": "broom",
+      "label": "Tidy up",
+      "minutes": 25,
+      "effects": {
+        "tidiness": 40,
+        "fun": -6
+      }
+    },
+    {
+      "id": "lamp_light",
+      "object": "lamp",
+      "label": "Light the lamp",
+      "minutes": 10,
+      "effects": {}
+    },
+    {
+      "id": "lamp_polish",
+      "object": "lamp",
+      "label": "Polish the lamp",
+      "minutes": 25,
+      "effects": {
+        "tidiness": 6
+      }
+    },
+    {
+      "id": "scope_look",
+      "object": "telescope",
+      "label": "Look through the telescope",
+      "minutes": 20,
+      "effects": {
+        "fun": 16
+      }
+    },
+    {
+      "id": "jetty_fish",
+      "object": "jetty",
+      "label": "Go fishing",
+      "minutes": 45,
+      "effects": {
+        "fun": 22,
+        "hunger": 14,
+        "energy": -6,
+        "hygiene": -4
+      }
+    },
+    {
+      "id": "garden_tend",
+      "object": "garden",
+      "label": "Tend the garden",
+      "minutes": 30,
+      "effects": {
+        "fun": 12,
+        "energy": -6,
+        "hygiene": -10,
+        "tidiness": 6
+      }
+    },
+    {
+      "id": "garden_pick",
+      "object": "garden",
+      "label": "Pick something to eat",
+      "minutes": 10,
+      "effects": {
+        "hunger": 14,
+        "hygiene": -3
+      }
+    },
+    {
+      "id": "shop_buy",
+      "object": "shop",
+      "label": "Go shopping",
+      "minutes": 15,
+      "effects": {
+        "fun": 6
+      }
+    },
+    {
+      "id": "pet_feed",
+      "object": "petbowl",
+      "label": "Feed the pet",
+      "minutes": 8,
+      "effects": {
+        "social": 8
+      }
+    },
+    {
+      "id": "pet_play",
+      "object": "here",
+      "label": "Play with the pet",
+      "minutes": 20,
+      "effects": {
+        "fun": 16,
+        "social": 18
+      }
+    },
+    {
+      "id": "phone_call",
+      "object": "phone",
+      "label": "Phone a friend",
+      "minutes": 10,
+      "effects": {
+        "social": 12
+      }
+    },
+    {
+      "id": "phone_pizza",
+      "object": "phone",
+      "label": "Order a takeaway pizza",
+      "minutes": 6,
+      "effects": {}
+    },
+    {
+      "id": "phone_answer",
+      "object": "phone",
+      "label": "Answer the phone",
+      "minutes": 8,
+      "effects": {
+        "social": 12,
+        "fun": 4
+      }
+    },
+    {
+      "id": "door_greet",
+      "object": "door",
+      "label": "Welcome the visitor in",
+      "minutes": 10,
+      "effects": {
+        "social": 22
+      }
+    },
+    {
+      "id": "with_chat",
+      "object": "here",
+      "label": "Have a chat",
+      "minutes": 25,
+      "effects": {
+        "social": 30,
+        "fun": 8
+      }
+    },
+    {
+      "id": "with_cards",
+      "object": "here",
+      "label": "Play cards",
+      "minutes": 35,
+      "effects": {
+        "fun": 28,
+        "social": 22
+      }
+    },
+    {
+      "id": "with_tv",
+      "object": "tv",
+      "label": "Watch TV together",
+      "minutes": 40,
+      "effects": {
+        "fun": 26,
+        "social": 22
+      }
+    },
+    {
+      "id": "tank_watch",
+      "object": "tank",
+      "label": "Watch the fish",
+      "minutes": 25,
+      "effects": {
+        "fun": 22,
+        "energy": 4
+      }
+    },
+    {
+      "id": "tank_feed",
+      "object": "fishfood",
+      "label": "Feed the fish",
+      "minutes": 8,
+      "effects": {
+        "social": 8,
+        "fun": 6
+      }
+    },
+    {
+      "id": "weather_check",
+      "object": "barometer",
+      "label": "Check the weather",
+      "minutes": 10,
+      "effects": {
+        "fun": 6
+      }
+    },
+    {
+      "id": "radio_chat",
+      "object": "radio",
+      "label": "Chat on the radio",
+      "minutes": 20,
+      "effects": {
+        "social": 24,
+        "fun": 6
+      }
+    },
+    {
+      "id": "lair_console",
+      "object": "console",
+      "label": "Use the secret computer",
+      "minutes": 30,
+      "effects": {
+        "fun": 28,
+        "energy": -4
+      }
+    },
+    {
+      "id": "lair_gadgets",
+      "object": "gadgets",
+      "label": "Tinker with gadgets",
+      "minutes": 30,
+      "effects": {
+        "fun": 24,
+        "tidiness": -8
+      }
+    }
+  ]
+}
