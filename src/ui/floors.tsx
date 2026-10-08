@@ -1,5 +1,5 @@
-import type { FloorId, ObjectId } from '../game/config'
-import { FLOOR_Y, TOWER_X } from '../game/world'
+import type { ObjectId, RoomFloor } from '../game/config'
+import { FLOOR_Y, LAYOUT, TOWER_X } from '../game/world'
 import { Sprite } from './Sprite'
 
 export const CORE = {
@@ -12,10 +12,10 @@ export const CORE = {
 } as const
 
 export interface FloorModuleSpec {
-  id: Extract<FloorId, 'ground' | 'living' | 'bedroom'>
-  number: 1 | 2 | 3
+  id: RoomFloor
+  number: number
   name: string
-  roomSprite: 'room_kitchen' | 'room_living' | 'room_bedroom'
+  roomSprite: string
   wall: string
   objects: readonly ObjectId[]
   zones: readonly { id: string; fromX: number; toX: number }[]
@@ -55,6 +55,23 @@ export const PLAYABLE_FLOORS: readonly FloorModuleSpec[] = [
     partitionX: 348,
   },
 ] as const
+
+/**
+ * Floors that missions unlock (wiring by Claude; looks are Codex's). They
+ * arrive furnished: their objects are in config.ts. Plain stand-in walls
+ * until their room art is in.
+ */
+export const UNLOCKABLE_FLOORS: readonly FloorModuleSpec[] = [
+  { id: 'aquarium', number: 4, name: 'Aquarium', roomSprite: 'room_aquarium', wall: '#c9d2d6', objects: ['tank', 'fishfood'], zones: [{ id: 'aquarium', fromX: 52, toX: 468 }] },
+  { id: 'weather', number: 5, name: 'Weather station', roomSprite: 'room_weather', wall: '#c9d2d6', objects: ['barometer', 'radio'], zones: [{ id: 'weather', fromX: 52, toX: 468 }] },
+  { id: 'lair', number: -1, name: 'Hidden lair', roomSprite: 'room_lair', wall: '#b9bec2', objects: ['console', 'gadgets'], zones: [{ id: 'lair', fromX: 52, toX: 468 }] },
+]
+
+/** The floors he has, bottom to top, as the layout stacks them. */
+export function floorsOnShow(): FloorModuleSpec[] {
+  const all = [...PLAYABLE_FLOORS, ...UNLOCKABLE_FLOORS]
+  return LAYOUT.rooms.map((id) => all.find((f) => f.id === id)!).filter(Boolean)
+}
 
 /** Reserved geometry for the later Floor 3 diving-board changing-room bay. */
 export const DIVING_EXTENSION = {

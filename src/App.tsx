@@ -4,13 +4,14 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { GAME, minutesPerSecond, objectById, type ObjectId } from './game/config'
 import { momentOf, pickChat, replyToChat } from './game/chat'
 import type { DoOrder } from './game/commands'
-import { answeredChat, arrive, ask, buy, dropChat, gift, setRules, nextDay, order, rightAnswer, rollPersonality, shopOpen, startGame, stopDoing, tick, wrongAnswer, type State } from './game/engine'
+import { answeredChat, arrive, ask, buy, completeMission, dropChat, gift, setRules, nextDay, order, rightAnswer, rollPersonality, shopOpen, startGame, stopDoing, tick, wrongAnswer, type State } from './game/engine'
 import { isNo, isYes, read } from './game/matcher'
 import { checkAnswer, makeQuiz } from './game/quiz'
 import { changePin, deleteGame, saveGame, saveRules, verifyPin, type Player } from './game/remote'
 import type { Rules } from './game/config'
 import { ack, tell } from './game/words'
-import { Alerts, CommandBar, Diary, Hud, ObjectMenu, PromptBar, GrownUps, Report, SettingsMenu, Setup, Shop, type Entry } from './ui/Panels'
+import { activeMission } from './game/missions'
+import { Alerts, CommandBar, Diary, Hud, Missions, ObjectMenu, PromptBar, GrownUps, Report, SettingsMenu, Setup, Shop, type Entry } from './ui/Panels'
 import { Scene } from './ui/Scene'
 
 
@@ -25,6 +26,7 @@ export default function App({ player, db, initial, rules: ownRules, onSwitch }: 
   const [selected, setSelected] = useState<ObjectId | null>(null)
   const [diary, setDiary] = useState<Entry[]>([])
   const [showDiary, setShowDiary] = useState(false)
+  const [showMissions, setShowMissions] = useState(false)
   const [showMenu, setShowMenu] = useState(false)
   const [showAdmin, setShowAdmin] = useState(false)
   const [rules, setOwnRules] = useState<Rules>(ownRules)
@@ -216,7 +218,7 @@ export default function App({ player, db, initial, rules: ownRules, onSwitch }: 
 
   return (
     <div className="game" onPointerDown={poke} onKeyDown={poke}>
-      <Hud s={s} paused={paused} onPause={() => setPaused((p) => !p)} onDiary={() => setShowDiary((d) => !d)} onMenu={() => setShowMenu(true)} />
+      <Hud s={s} paused={paused} onPause={() => setPaused((p) => !p)} onDiary={() => { setShowMissions(false); setShowDiary((d) => !d) }} onMissions={() => { setShowDiary(false); setShowMissions((m) => !m) }} onMenu={() => setShowMenu(true)} />
       <main className="stage">
         <Scene
           s={s}
@@ -238,6 +240,7 @@ export default function App({ player, db, initial, rules: ownRules, onSwitch }: 
         )}
         {paused && <div className="paused">⏸ Paused</div>}
         {showDiary && <Diary entries={diary} onClose={() => setShowDiary(false)} />}
+        {showMissions && <Missions s={s} onClose={() => setShowMissions(false)} />}
       </main>
       <footer className="dock">
         {selected && <ObjectMenu s={s} id={selected} label={label} onPick={(o) => give([o], 0, 'menu')} onClose={() => setSelected(null)} />}
@@ -255,6 +258,8 @@ export default function App({ player, db, initial, rules: ownRules, onSwitch }: 
           verify={(pin) => verifyPin(pin, db)}
           onRules={(r, pin) => { setOwnRules(r); void saveRules(player.id, pin, r, db); update((x) => setRules(x, r)) }}
           onGift={(n) => update((x) => gift(x, n))}
+          mission={activeMission(s.missions)?.title}
+          onFinishMission={() => update(completeMission)}
           onPin={(pin, np) => changePin(pin, np, db)}
           onClose={() => setShowAdmin(false)}
         />

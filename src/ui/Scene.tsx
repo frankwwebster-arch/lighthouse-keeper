@@ -1,16 +1,17 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { BREAKABLE_OBJECTS, OBJECTS, type FxKey, type ObjectId } from '../game/config'
 import { darkness, stormNow, type State } from '../game/engine'
-import { FLOOR_Y, STAGE, TOWER_X, floorOf, focusFor, worldX } from '../game/world'
+import { FLOOR_LEVELS, type RoomFloor } from '../game/config'
+import { objectAvailable, roomFloors } from '../game/missions'
+import { FLOOR_Y, LAYOUT, STAGE, STAIRS_X, TOWER_X, applyLayout, floorOf, focusFor, worldX } from '../game/world'
 import { Actors, type Pose } from './Actors'
 import { ObjectArt } from './art'
-import { FloorModule, PLAYABLE_FLOORS } from './floors'
+import { FloorModule, floorsOnShow } from './floors'
 import { parseBrokenPreview, visualStateFor } from './objectState'
 
 const FX: Record<FxKey, string> = { steam: '💨', bubbles: '🫧', sparkles: '✨', dust: '🌫️', scribbles: '✏️', music: '🎵', zzz: '💤', tv: '📺', hearts: '💗', stench: '🤢', burp: '💨', splash: '💦', coins: '🪙', ring: '🔔', stars: '⭐' }
 
 const W = STAGE.w
-const H = STAGE.h
 const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v))
 
 interface Props {
@@ -35,15 +36,41 @@ function Rain() {
   )
 }
 
+/** `?floors=all` in the address shows every floor (and the lift) as if unlocked, for checking art. */
+const previewAllFloors = () => typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('floors') === 'all'
+
 export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive, onPose }: Props) {
+  // The tower is whatever floors he has unlocked: stack them before anything is drawn.
+  const allFloors = useMemo(previewAllFloors, [])
+  if (allFloors) applyLayout(Object.keys(FLOOR_LEVELS) as RoomFloor[], true)
+  else applyLayout(roomFloors(s.unlocked), s.unlocked.includes('lift'))
+  const top = LAYOUT.top
+  const H = LAYOUT.bottom - LAYOUT.top
+  const has = (id: ObjectId) => allFloors || objectAvailable(s, id)
+  const svgRef = useRef<SVGSVGElement>(null)
+  const [aspect, setAspect] = useState(W / STAGE.h)
+  useEffect(() => {
+    const el = svgRef.current
+    if (!el || typeof ResizeObserver === 'undefined') return
+    const ro = new ResizeObserver(() => el.clientHeight > 0 && setAspect(el.clientWidth / el.clientHeight))
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [])
   const dark = darkness(s.clock)
   const storm = stormNow(s)
   const d = s.doing
   const doingNow = d && d.phase === 'doing' && d.object !== 'here' ? d : null
   const focus = doingNow ? focusFor(doingNow.object) : null
   const z = focus ? focus.zoom : 1
-  const tx = focus ? clamp(W / 2 - focus.x * z, W - W * z, 0) : 0
-  const ty = focus ? clamp(H / 2 - focus.y * z, H - H * z, 0) : 0
+  const bottom = top + H
+  // The first-day tower keeps its usual framing. A taller one zooms out until it all fits,
+  // widening the view to the screen's shape so there are no bars at the sides.
+  const tall = H > STAGE.h
+  const vw = tall ? Math.max(W, H * aspect) : W
+  const left = (W - vw) / 2
+  const right = left + vw
+  const tx = focus ? clamp(left + vw / 2 - focus.x * z, right - right * z, left - left * z) : 0
+  const ty = focus ? clamp(top + H / 2 - focus.y * z, bottom - bottom * z, top - top * z) : 0
   const sunT = clamp((s.clock - 6 * 60) / (19 * 60 - 6 * 60), 0, 1)
   const sunX = 80 + sunT * 1040
   const sunY = 320 - Math.sin(sunT * Math.PI) * 250
@@ -67,7 +94,7 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
   }
 
   return (
-    <svg className="scene" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid slice" role="img" aria-label="The lighthouse">
+    <svg className="scene" ref={svgRef} viewBox={`${left} ${top} ${vw} ${H}`} preserveAspectRatio={tall ? 'xMidYMid meet' : 'xMidYMid slice'} role="img" aria-label="The lighthouse">
       <defs>
         <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor="#5db6ea" />
@@ -79,7 +106,7 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
         </linearGradient>
       </defs>
       <g className="camera" style={{ transform: `translate(${tx}px, ${ty}px) scale(${z})`, transformOrigin: '0 0' }}>
-        <rect x={-300} y={-200} width={W + 600} height={H + 400} fill="url(#sky)" />
+        <rect x={left - 300} y={top - 200} width={vw + 600} height={H + 400} fill="url(#sky)" />
         {/* sun and moon */}
         <circle cx={sunX} cy={sunY} r={46} fill="#ffe27a" opacity={1 - dark} />
         <circle cx={1060} cy={130} r={30} fill="#f4f2dc" opacity={dark} />
@@ -90,12 +117,12 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
           <ellipse cx={900} cy={160} rx={90} ry={22} fill="#fff" />
         </g>
         {/* sea, land */}
-        <rect x={700} y={560} width={W} height={H} fill="url(#sea)" />
+        <rect x={700} y={560} width={right - 700 + 300} height={bottom - 560 + 200} fill="url(#sea)" />
         <g className="waves" opacity={0.6}>
           {[0, 1, 2, 3].map((i) => <path key={i} d={`M${720 + i * 120} ${600 + (i % 2) * 40} q20 -10 40 0 t40 0`} stroke="#d6f0ff" strokeWidth={3} fill="none" />)}
         </g>
-        <path d="M-300 640 L760 640 L720 560 L-300 560 Z" fill="#6aa84f" />
-        <rect x={-300} y={640} width={1060} height={H} fill="#5b9441" />
+        <path d={`M${left - 300} 640 L760 640 L720 560 L${left - 300} 560 Z`} fill="#6aa84f" />
+        <rect x={left - 300} y={640} width={760 - left + 300} height={bottom - 640 + 200} fill="#5b9441" />
         <path d="M660 640 Q720 600 780 640 L800 760 L640 760 Z" fill="#8a8f93" />
         {/* the ship */}
         {shipT > 0 && shipT < 1 && (
@@ -108,23 +135,31 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
         )}
         {/* fixed-width modular lighthouse core */}
         <g>
-          {PLAYABLE_FLOORS.map((floor) => <FloorModule key={floor.id} floor={floor} />)}
-          {/* lamp room */}
-          <rect x={TOWER_X + 70} y={80} width={380} height={140} fill={s.lampLit ? '#fff2a8' : '#cfe8ee'} opacity={0.85} stroke="#5d6d73" strokeWidth={5} />
-          {[0, 1, 2, 3].map((i) => <line key={i} x1={TOWER_X + 165 + i * 95} y1={80} x2={TOWER_X + 165 + i * 95} y2={220} stroke="#5d6d73" strokeWidth={4} />)}
-          <path d={`M${TOWER_X + 60} 80 L${TOWER_X + 260} 20 L${TOWER_X + 460} 80 Z`} fill="#b8433a" stroke="#6b2520" strokeWidth={5} />
-          <circle cx={TOWER_X + 260} cy={14} r={9} fill="#6b2520" />
+          {floorsOnShow().map((floor) => <FloorModule key={floor.id} floor={floor} />)}
+          {/* the lift: a stand-in shaft behind the stairs until it has art */}
+          {LAYOUT.lift && (
+            <g className="lift" pointerEvents="none">
+              <rect x={TOWER_X + STAIRS_X - 30} y={FLOOR_Y.lamp} width={60} height={FLOOR_Y[LAYOUT.rooms[0]] - FLOOR_Y.lamp} fill="#00000010" stroke="#14243a" strokeWidth={4} strokeDasharray="12 8" opacity={0.4} />
+            </g>
+          )}
+          {/* lamp room, always on top */}
+          <g transform={`translate(0 ${FLOOR_Y.lamp - 220})`}>
+            <rect x={TOWER_X + 70} y={80} width={380} height={140} fill={s.lampLit ? '#fff2a8' : '#cfe8ee'} opacity={0.85} stroke="#5d6d73" strokeWidth={5} />
+            {[0, 1, 2, 3].map((i) => <line key={i} x1={TOWER_X + 165 + i * 95} y1={80} x2={TOWER_X + 165 + i * 95} y2={220} stroke="#5d6d73" strokeWidth={4} />)}
+            <path d={`M${TOWER_X + 60} 80 L${TOWER_X + 260} 20 L${TOWER_X + 460} 80 Z`} fill="#b8433a" stroke="#6b2520" strokeWidth={5} />
+            <circle cx={TOWER_X + 260} cy={14} r={9} fill="#6b2520" />
+          </g>
         </g>
         {/* the beam */}
         {s.lampLit && (
-          <g className="beam" pointerEvents="none">
+          <g className="beam" pointerEvents="none" transform={`translate(0 ${FLOOR_Y.lamp - 220})`}>
             <path d={`M${TOWER_X + 450} 150 L${W + 300} 20 L${W + 300} 300 Z`} fill="#fff6b0" opacity={0.28 + dark * 0.35} />
             <path d={`M${TOWER_X + 70} 150 L-300 20 L-300 300 Z`} fill="#fff6b0" opacity={(0.28 + dark * 0.35) * 0.7} />
           </g>
         )}
 
         {/* objects */}
-        {OBJECTS.map((o) => (o.id === 'toilet' ? null : obj(o.id)))}
+        {OBJECTS.map((o) => (o.id === 'toilet' || !has(o.id) ? null : obj(o.id)))}
         {obj('toilet')}
         {/* the shut loo door */}
         {cabin && (
@@ -136,7 +171,7 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
         )}
 
         {/* hit areas */}
-        {OBJECTS.map((o) => {
+        {OBJECTS.filter((o) => has(o.id)).map((o) => {
           const wx = worldX(o.id)
           const w = o.id === 'jetty' ? 230 : o.id === 'shop' ? 140 : 96
           const hh = o.id === 'shop' ? 130 : 110
@@ -186,9 +221,9 @@ export function Scene({ s, selected, flash, shrugAt, petJump, onObject, onArrive
         )}
 
         {/* night and weather */}
-        <rect x={-300} y={-200} width={W + 600} height={H + 400} fill="#0b1236" opacity={dark * 0.55 + (storm ? 0.18 : 0)} pointerEvents="none" />
+        <rect x={left - 300} y={top - 200} width={vw + 600} height={H + 400} fill="#0b1236" opacity={dark * 0.55 + (storm ? 0.18 : 0)} pointerEvents="none" />
         {storm && <Rain />}
-        {flash > 0 && <rect key={flash} className="lightning" x={-300} y={-200} width={W + 600} height={H + 400} fill="#fff" pointerEvents="none" />}
+        {flash > 0 && <rect key={flash} className="lightning" x={left - 300} y={top - 200} width={vw + 600} height={H + 400} fill="#fff" pointerEvents="none" />}
       </g>
     </svg>
   )

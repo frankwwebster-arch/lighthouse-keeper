@@ -11,13 +11,15 @@ A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthou
 - Database: Neon Postgres via `DATABASE_URL` (verified: `/api/players` answers `db:true`). Tables are created on first use: players, saves, player_rules, settings (PIN hash).
 
 ## Built
-Engine (seeded, deterministic, 73 tests), SVG cutaway scene with zoom camera, typo matcher, quizzes levels 1-3, credit economy with admin dials (allowance from per-need green bars, prices, gifting, quiz level and breakdown pressure per player), who-is-playing screen, per-player saves (DB or localStorage), grown-ups PIN (starts 1234; change it).
+Engine (seeded, deterministic, 85 tests), SVG cutaway scene with zoom camera, typo matcher, quizzes levels 1-3, credit economy with admin dials (allowance from per-need green bars, prices, gifting, quiz level and breakdown pressure per player), who-is-playing screen, per-player saves (DB or localStorage), grown-ups PIN (starts 1234; change it).
 
 The first three playable floors are now modular fixed-width components: kitchen, living room, and bedroom with en suite. Objects have a runtime `standard` / `on` / `broken` contract, state-specific strip support, shared broken effects, keyboard/touch hit areas, and rear-facing cooker/basin keeper fallbacks. Random keeper-owned breakdowns are off by default and controlled by grown-ups' frequency and maximum-concurrent dials; broken assets block normal use until repaired. Floor 3 reserves an invisible two-door changing zone for the later diving-board extension.
 
+Missions unlock floors, one mission at a time (`src/game/missions.ts`, list in `config.ts`): Fishy Business → aquarium, Storm Chaser → weather station, Strange Rumblings (secret until it starts) → hidden lair underground, Puffed Out → lift. Goals count things he already does (fishing, nature channel, telescope, ships kept safe, digging, visitors, quiz answers, good days). A finished mission pays 10 credits and the floor arrives furnished (tank and fish food; weather instruments and radio; secret computer and gadget bench). The tower restacks itself (lamp room always on top, lair below ground) and the view zooms out to fit; the lift makes stairs quicker. 🎯 Mission button shows progress; grown-ups can finish the current mission. Typing about a floor he has not got gets a hint. `?floors=all` previews every floor. New floors and furniture are stand-ins until Codex's art (hooks in docs/FOR_CODEX.md).
+
 ## Not built yet (agreed design)
 1. Continue production Pixel PNGs after the completed first batch. `public/sprites/manifest.json` now maps two 110 × 8 shell bands and the three 105 × 35 implemented room plates. Keeper, object-state, effect, lamp-room, exterior and later-floor art still use vector fallbacks or remain unbuilt.
-2. Missions unlock floors (aquarium, weather station, hidden lair, lift). Floors arrive furnished; no furniture shop.
+2. Art for the mission floors (aquarium, weather station, hidden lair), their furniture, the lift and a floor-arrival effect (Codex; hooks in docs/FOR_CODEX.md).
 3. Tiered upgrades to existing objects bought with credits; prices are admin dials; gifting.
 4. Mini games: fishing, cooking, telescope spotting.
 5. Day/night palette, non-skippable ~30s night recap.
@@ -25,7 +27,6 @@ The first three playable floors are now modular fixed-width components: kitchen,
 7. Workshop floor that reduces breakdown pressure; tune its effect only after Ralph's playtesting shows whether faults are fun or irritating.
 
 ## Housekeeping for Frank
-- Rotate the Neon password (it was pasted in chat), then update `DATABASE_URL` in Vercel and redeploy.
 - Change the grown-ups PIN from 1234.
 - Add Ralph and Eddie on the Who is playing screen (none exist yet).
 

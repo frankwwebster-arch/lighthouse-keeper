@@ -23,8 +23,22 @@ export const NEED_LABEL: Record<NeedId, string> = {
   tidiness: 'Tidy',
 }
 
-export const FLOORS = ['ground', 'living', 'bedroom', 'lamp', 'outside'] as const
+export const FLOORS = ['ground', 'living', 'bedroom', 'aquarium', 'weather', 'lair', 'lamp', 'outside'] as const
 export type FloorId = (typeof FLOORS)[number]
+/** A floor with a room in it (not the lamp room on top, not outside). */
+export type RoomFloor = Exclude<FloorId, 'lamp' | 'outside'>
+
+/**
+ * Where each room sits: 0 is the ground, up from there, below zero underground.
+ * Locked floors take no space; the ones he has are stacked in this order with
+ * the lamp room always on top. (Which floor goes where is the art's call; see
+ * docs/CODEX_BRIEF.md.)
+ */
+export const FLOOR_LEVELS: Record<RoomFloor, number> = { lair: -1, ground: 0, living: 1, bedroom: 2, aquarium: 3, weather: 4 }
+export const START_FLOORS: readonly RoomFloor[] = ['ground', 'living', 'bedroom']
+
+/** Things a mission can unlock: a floor, or the lift. */
+export type UnlockId = 'aquarium' | 'weather' | 'lair' | 'lift'
 
 export type ObjectId =
   | 'fridge'
@@ -45,6 +59,13 @@ export type ObjectId =
   | 'petbowl'
   | 'door'
   | 'broom'
+  // Unlocked by missions
+  | 'tank'
+  | 'fishfood'
+  | 'barometer'
+  | 'radio'
+  | 'console'
+  | 'gadgets'
   /** Not a thing: wherever he is. */
   | 'here'
 
@@ -162,6 +183,15 @@ export const INTERACTIONS: readonly InteractionDef[] = [
   { id: 'with_chat', object: 'here', label: 'Have a chat', did: 'had a good chat', minutes: 25, effects: { social: 30, fun: 8 }, anim: 'think', self: true, gated: false, keywords: ['chat', 'talk', 'natter'], example: 'have a chat' },
   { id: 'with_cards', object: 'here', label: 'Play cards', did: 'played cards', minutes: 35, effects: { fun: 28, social: 22 }, anim: 'busy', self: true, gated: false, keywords: ['cards', 'snap'], example: 'play cards' },
   { id: 'with_tv', object: 'tv', label: 'Watch TV together', did: 'watched telly together', minutes: 40, effects: { fun: 26, social: 22 }, anim: 'tv', fx: 'tv', self: false, gated: false, keywords: ['together'], example: 'watch TV together' },
+  // The aquarium (unlocked by a mission)
+  { id: 'tank_watch', object: 'tank', label: 'Watch the fish', did: 'watched the fish swim round and round', minutes: 25, effects: { fun: 22, energy: 4 }, anim: 'tv', fx: 'bubbles', self: true, gated: true, keywords: ['aquarium', 'tank', 'watch the fish', 'fish tank'], example: 'watch the fish' },
+  { id: 'tank_feed', object: 'fishfood', label: 'Feed the fish', did: 'fed the fish', minutes: 8, effects: { social: 8, fun: 6 }, anim: 'pet', fx: 'bubbles', self: true, gated: false, keywords: ['feed the fish', 'fish food', 'flakes'], example: 'feed the fish' },
+  // The weather station
+  { id: 'weather_check', object: 'barometer', label: 'Check the weather', did: 'checked the weather instruments', minutes: 10, effects: { fun: 6 }, anim: 'think', self: true, gated: false, keywords: ['weather', 'forecast', 'barometer', 'rain'], example: 'check the weather' },
+  { id: 'radio_chat', object: 'radio', label: 'Chat on the radio', did: 'chatted to the ships on the radio', minutes: 20, effects: { social: 24, fun: 6 }, anim: 'phone', fx: 'ring', self: true, gated: true, keywords: ['radio', 'over and out', 'mayday', 'coastguard'], example: 'chat on the radio' },
+  // The hidden lair
+  { id: 'lair_console', object: 'console', label: 'Use the secret computer', did: 'tapped away at the secret computer', minutes: 30, effects: { fun: 28, energy: -4 }, anim: 'busy', fx: 'sparkles', self: true, gated: true, keywords: ['computer', 'secret', 'console', 'hack', 'lair', 'hideout'], example: 'use the secret computer' },
+  { id: 'lair_gadgets', object: 'gadgets', label: 'Tinker with gadgets', did: 'invented a gadget (it nearly worked)', minutes: 30, effects: { fun: 24, tidiness: -8 }, anim: 'busy', fx: 'sparkles', self: true, gated: true, keywords: ['gadget', 'invent', 'tinker', 'build', 'workbench'], example: 'tinker with gadgets' },
 ]
 export const interactionById = (id: string) => INTERACTIONS.find((i) => i.id === id)
 /** Only done when a visitor is in the house. */
@@ -187,6 +217,13 @@ export const OBJECTS: readonly ObjectDef[] = [
   { id: 'garden', label: 'Garden', floor: 'outside', x: 95, zoom: 1.8 },
   { id: 'shop', label: 'Shop', floor: 'outside', x: 215, zoom: 1.8 },
   { id: 'jetty', label: 'Jetty', floor: 'outside', x: 1040, zoom: 1.7 },
+  // Floors that missions unlock. Places are first guesses for the art to move.
+  { id: 'tank', label: 'Fish tank', floor: 'aquarium', x: 200, zoom: 1.9 },
+  { id: 'fishfood', label: 'Fish food', floor: 'aquarium', x: 368, zoom: 2.1 },
+  { id: 'barometer', label: 'Weather instruments', floor: 'weather', x: 200, zoom: 2.0 },
+  { id: 'radio', label: 'Radio', floor: 'weather', x: 360, zoom: 2.1 },
+  { id: 'console', label: 'Secret computer', floor: 'lair', x: 200, zoom: 2.0 },
+  { id: 'gadgets', label: 'Gadget bench', floor: 'lair', x: 368, zoom: 2.0 },
 ]
 export const objectById = (id: ObjectId) => OBJECTS.find((o) => o.id === id)
 
@@ -199,6 +236,78 @@ export const BREAKDOWN_SFX: Partial<Record<ObjectId, BreakdownSound>> = {
   door: 'mechanical-clunk', broom: 'mechanical-clunk', petbowl: 'mechanical-clunk', bookshelf: 'mechanical-clunk', piano: 'mechanical-clunk', bed: 'mechanical-clunk', desk: 'mechanical-clunk', telescope: 'mechanical-clunk',
   garden: 'structure-crack', jetty: 'structure-crack',
 }
+
+// ─── Missions ────────────────────────────────────────────────────────────────
+
+/**
+ * Things that count towards a mission. `done:<interaction>` is a finished
+ * job; the rest are events: `ship_safe` (the lamp saw a ship home),
+ * `caller_met`, `repaired`, `quiz_right`, `good_day` (a day scored at least
+ * GAME.missions.goodDay).
+ */
+export type MissionEvent = `done:${string}` | 'ship_safe' | 'caller_met' | 'repaired' | 'quiz_right' | 'good_day'
+
+export interface MissionDef {
+  id: string
+  title: string
+  /** What he says about it. */
+  blurb: string
+  unlocks: UnlockId
+  /** Starts once this one is done. */
+  after?: string
+  /** Shown as a mystery until it starts (the lair must be a surprise). */
+  secret?: boolean
+  goals: readonly { event: MissionEvent; count: number; label: string }[]
+}
+
+/** One at a time, in this order. */
+export const MISSIONS: readonly MissionDef[] = [
+  {
+    id: 'fishy',
+    title: 'Fishy Business',
+    blurb: 'I want my own fish to look after. Help me learn about sea creatures and I will build an aquarium!',
+    unlocks: 'aquarium',
+    goals: [
+      { event: 'done:jetty_fish', count: 3, label: 'Go fishing off the jetty' },
+      { event: 'done:tv_nature', count: 2, label: 'Watch the nature channel' },
+    ],
+  },
+  {
+    id: 'storm',
+    title: 'Storm Chaser',
+    blurb: 'A proper keeper needs a weather station. Keep watch and keep the ships safe, and we will build one on top!',
+    unlocks: 'weather',
+    after: 'fishy',
+    goals: [
+      { event: 'done:scope_look', count: 3, label: 'Look out to sea through the telescope' },
+      { event: 'ship_safe', count: 3, label: 'Guide ships safely past with the lamp' },
+    ],
+  },
+  {
+    id: 'rumble',
+    title: 'Strange Rumblings',
+    blurb: 'Something is rumbling under the garden. Dig around, and ask the visitors if they have heard anything...',
+    unlocks: 'lair',
+    after: 'storm',
+    secret: true,
+    goals: [
+      { event: 'done:garden_tend', count: 4, label: 'Dig in the garden' },
+      { event: 'caller_met', count: 2, label: 'Welcome visitors in and ask about it' },
+    ],
+  },
+  {
+    id: 'puffed',
+    title: 'Puffed Out',
+    blurb: 'All these stairs! Show me you have the brains and the know-how, and we will put in a lift.',
+    unlocks: 'lift',
+    after: 'rumble',
+    goals: [
+      { event: 'quiz_right', count: 10, label: 'Get questions right' },
+      { event: 'good_day', count: 2, label: 'Have a really good day' },
+    ],
+  },
+]
+export const missionById = (id: string) => MISSIONS.find((m) => m.id === id)
 
 // ─── Visitors and friends ────────────────────────────────────────────────────
 
@@ -305,6 +414,8 @@ export const GAME = {
   /** Sped-up walking, picture units a second. */
   walk: { stroll: 200 },
   breakdown: { repairMinutes: 25 },
+  /** Missions: the score that counts as a really good day, and the credits a finished mission brings. */
+  missions: { goodDay: 60, reward: 10 },
 
   /** Money. */
   credits: {

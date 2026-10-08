@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import type { ObjectId } from '../game/config'
+import { objectById, type ObjectId } from '../game/config'
 import { Sprite } from './Sprite'
 
 export type ObjectVisualState = 'standard' | 'on' | 'broken'
@@ -74,7 +74,10 @@ export function ObjectArt({ id, x, y, state = 'standard', extra }: { id: ObjectI
       return g(130, 120, <><rect x={-52} y={-80} width={104} height={80} fill="#e9d3a3" stroke="#8a6d3a" strokeWidth={3} /><path d="M-60 -80 L60 -80 L50 -100 L-50 -100 Z" fill="#c9433b" /><g>{[0, 1, 2, 3, 4].map((i) => <rect key={i} x={-60 + i * 24} y={-82} width={12} height={10} fill="#fff" />)}</g><rect x={-18} y={-56} width={36} height={56} fill="#6d4a2b" /><rect x={-46} y={-62} width={22} height={20} fill="#9fd3ea" /><rect x={-34} y={-124} width={68} height={20} rx={4} fill="#fff7d6" stroke="#8a6d3a" strokeWidth={2} /><text x={0} y={-109} textAnchor="middle" fontSize={14} fontWeight={700} fill="#8a3a2a">SHOP</text></>)
     case 'jetty':
       return g(220, 60, <><rect x={-110} y={-14} width={220} height={10} fill="#a07a47" stroke="#6b4e28" strokeWidth={2} />{[-90, -40, 10, 60, 100].map((p) => <rect key={p} x={p} y={-4} width={8} height={36} fill="#6b4e28" />)}<line x1={30} y1={-14} x2={52} y2={-62} stroke="#3a2a14" strokeWidth={3} /><line x1={52} y1={-62} x2={78} y2={-8} stroke="#ddd" strokeWidth={1} /></>)
-    default:
-      return null
+    default: {
+      // Not drawn yet (new floors' furniture): a plain labelled stand-in until its art arrives.
+      const label = objectById(id)?.label ?? id
+      return g(88, 88, <><rect x={-44} y={-88} width={88} height={88} fill="#ffffff80" stroke="#14243a" strokeWidth={4} strokeDasharray="8 6" /><text x={0} y={-40} textAnchor="middle" className="floor-label">{label}</text></>)
+    }
   }
 }

@@ -5,7 +5,7 @@
  */
 
 import { ACKS, reactionById } from './commands'
-import { INTERACTIONS, NEED_LABEL, foodById, interactionById, objectById, visitorById, type NeedId, type ObjectId } from './config'
+import { INTERACTIONS, NEED_LABEL, foodById, interactionById, missionById, objectById, visitorById, type NeedId, type ObjectId, type UnlockId } from './config'
 import { moodWord, type Happening, type MoodWord, type State } from './engine'
 
 export function clockText(minutes: number): string {
@@ -50,6 +50,7 @@ const moan: Record<NeedId, string> = {
 const refuse = (h: Happening): string => {
   const def = h.id ? interactionById(h.id) : undefined
   const why = h.why
+  if (why === 'missing') return pick(['We have not got one of those... yet. Maybe a mission will sort that out!', 'One of those? In THIS lighthouse? Not yet. Check the missions!'], h.n)
   if (why === 'storm') return 'Fishing in THIS? Not on your life. I would be blown to Norway.'
   if (why === 'nobody') return h.id === 'phone_answer' ? 'The phone is not ringing...' : 'There is nobody here.'
   if (why === 'early') return 'It is not bedtime yet! I will have a nap instead.'
@@ -66,6 +67,8 @@ const refuse = (h: Happening): string => {
   if (why === 'empty') return h.id === 'cooker_cook' ? 'There is nothing to cook! Toast it is. Or go to the shop.' : 'The fridge is empty. Just cobwebs. Go to the shop?'
   return def ? `I cannot do that right now.` : 'Hmm.'
 }
+
+const UNLOCK_NAMES: Record<UnlockId, string> = { aquarium: 'aquarium', weather: 'weather station', lair: 'hidden lair', lift: 'lift' }
 
 const pick = <T,>(list: readonly T[], n: number): T => list[Math.abs(Math.trunc(n)) % list.length]
 
@@ -169,6 +172,14 @@ export function tell(h: Happening, s: State): Told {
     case 'repaired': {
       const label = objectById(h.id as ObjectId)?.label ?? 'thing'
       return { say: `Fixed! The ${label.toLowerCase()} is working again.`, diary: `${t} He repaired the ${label.toLowerCase()}.`, tone: 'good' }
+    }
+    case 'mission_done': {
+      const m = h.id ? missionById(h.id) : undefined
+      return { say: `MISSION COMPLETE: ${m?.title ?? 'done'}! ${h.amount ? `And ${h.amount} credits for us!` : ''}`, diary: `${t} Mission complete: ${m?.title ?? h.id}.`, tone: 'good' }
+    }
+    case 'unlocked': {
+      const name = UNLOCK_NAMES[h.id as UnlockId] ?? 'something new'
+      return { say: h.id === 'lift' ? 'A LIFT! No more stairs! My knees thank you.' : h.id === 'lair' ? `WHAT?! There was a ${name} under the lighthouse all along!` : `Look! A brand new floor: the ${name}! And it is all furnished!`, diary: `${t} The ${name} arrived.`, tone: 'good' }
     }
     default:
       return {}

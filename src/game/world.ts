@@ -5,17 +5,62 @@
  * can be seen at once.
  */
 
-import { OBJECTS, objectById, type FloorId, type ObjectId } from './config'
+import { FLOOR_LEVELS, OBJECTS, START_FLOORS, objectById, type FloorId, type ObjectId, type RoomFloor } from './config'
 
 export const STAGE = { w: 1200, h: 760 }
 /** The tower's left edge, so an object's tower-local x becomes a picture x. */
 export const TOWER_X = 240
 export const INTERIOR = { left: 70, right: 450 }
-/** Where each floor's boards are (the keeper's feet). */
-export const FLOOR_Y: Record<FloorId, number> = { ground: 640, living: 500, bedroom: 360, lamp: 220, outside: 640 }
-export const FLOOR_ORDER: FloorId[] = ['ground', 'living', 'bedroom', 'lamp']
-/** The stairs: where one climbs from each floor (tower-local). */
+/** The ground floor's boards, which never move: floors are added above and below it. */
+export const GROUND_Y = 640
+/** One floor, boards to boards. */
+export const FLOOR_STEP = 140
+/** The stairs: where one climbs from each floor (tower-local). The lift, once he has it, runs up behind them. */
 export const STAIRS_X = 108
+
+/**
+ * THE LAYOUT: which floors he has, stacked. Missions add floors, so this
+ * changes during play; `applyLayout` rebuilds it and everything below reads
+ * it. Floors he has not got take no space (and are not drawn).
+ */
+export const FLOOR_Y: Record<FloorId, number> = { ground: 640, living: 500, bedroom: 360, aquarium: 220, weather: 80, lair: 780, lamp: 220, outside: 640 }
+/** Bottom to top, ending with the lamp room. */
+export const FLOOR_ORDER: FloorId[] = ['ground', 'living', 'bedroom', 'lamp']
+export const LAYOUT = {
+  /** The rooms he has, bottom to top. */
+  rooms: [...START_FLOORS] as RoomFloor[],
+  /** Each room's place counted from the ground (0), so stripes follow the world, not the order floors arrived in. */
+  slot: { ground: 0, living: 1, bedroom: 2 } as Partial<Record<RoomFloor, number>>,
+  lift: false,
+  /** The picture's top and bottom: the roof above the lamp room, the deepest floor below. */
+  top: 0,
+  bottom: STAGE.h,
+  /** Bumped on every change, so the screen can catch up (and move the keeper with his floor). */
+  version: 0,
+}
+
+/** Rebuild the layout for these rooms (any order) and the lift. Cheap; does nothing if unchanged. */
+export function applyLayout(rooms: readonly RoomFloor[], lift: boolean): void {
+  const sorted = [...new Set(rooms)].sort((a, b) => FLOOR_LEVELS[a] - FLOOR_LEVELS[b])
+  if (sorted.join() === LAYOUT.rooms.join() && lift === LAYOUT.lift && LAYOUT.version > 0) return
+  const below = sorted.filter((f) => FLOOR_LEVELS[f] < 0)
+  const above = sorted.filter((f) => FLOOR_LEVELS[f] >= 0)
+  const slot: Partial<Record<RoomFloor, number>> = {}
+  above.forEach((f, i) => (slot[f] = i))
+  below.reverse().forEach((f, i) => (slot[f] = -(i + 1)))
+  for (const f of sorted) FLOOR_Y[f] = GROUND_Y - FLOOR_STEP * slot[f]!
+  FLOOR_Y.lamp = GROUND_Y - FLOOR_STEP * above.length
+  FLOOR_Y.outside = GROUND_Y
+  FLOOR_ORDER.splice(0, FLOOR_ORDER.length, ...sorted, 'lamp')
+  LAYOUT.rooms = sorted
+  LAYOUT.slot = slot
+  LAYOUT.lift = lift
+  // The lamp room is 140 tall and the roof 80 more (so 0 for the first day); underground floors hang below the ground.
+  LAYOUT.top = Math.min(0, FLOOR_Y.lamp - 220)
+  LAYOUT.bottom = Math.max(STAGE.h, ...sorted.map((f) => FLOOR_Y[f] + 40))
+  LAYOUT.version++
+}
+applyLayout(START_FLOORS, false)
 
 export const worldX = (id: ObjectId): number => {
   const o = objectById(id)
@@ -33,7 +78,7 @@ export interface Point {
 export function route(from: Point, to: Point): Point[] {
   const out: Point[] = []
   if (from.floor === to.floor) return [to]
-  const stairs = TOWER_X + STAIRS_X
+  const stairs = TOWER_X + STAIRS_X // also where the lift is
   const door = TOWER_X + 60
   const a = from.floor
   const b = to.floor
@@ -55,12 +100,15 @@ export function route(from: Point, to: Point): Point[] {
   return out
 }
 
+/** Up and down by lift is this much quicker than the stairs. */
+export const LIFT_FACTOR = 0.25
+
 /** How long a route takes at a given speed (units a second); stairs count for their height. */
 export function routeLength(from: Point, path: Point[]): number {
   let len = 0
   let at = from
   for (const p of path) {
-    len += at.floor === p.floor ? Math.abs(p.x - at.x) : Math.abs(FLOOR_Y[p.floor] - FLOOR_Y[at.floor]) * 0.9
+    len += at.floor === p.floor ? Math.abs(p.x - at.x) : Math.abs(FLOOR_Y[p.floor] - FLOOR_Y[at.floor]) * (LAYOUT.lift ? LIFT_FACTOR : 0.9)
     at = p
   }
   return len

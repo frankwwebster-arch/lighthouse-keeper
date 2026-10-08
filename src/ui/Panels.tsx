@@ -1,15 +1,16 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react'
-import { DEFAULT_RULES, FOODS, INTERACTIONS, NEEDS, NEED_LABEL, VISITOR_ONLY, foodById, type InteractionDef, type NeedId, type ObjectId, type PetKind, type Rules } from '../game/config'
+import { DEFAULT_RULES, FOODS, MISSIONS, INTERACTIONS, NEEDS, NEED_LABEL, VISITOR_ONLY, foodById, type InteractionDef, type NeedId, type ObjectId, type PetKind, type Rules } from '../game/config'
 import { insideVisit, moodOf, moodWord, owned, priceOf, waitingVisit, type DayResult, type Prompt, type State } from '../game/engine'
 import type { Order } from '../game/engine'
 import { NAMES, clockText, labelFor, moodFace, moodName } from '../game/words'
+import { activeMission, goalsOf } from '../game/missions'
 
 // ─── Top bar ─────────────────────────────────────────────────────────────────
 
 const needTone = (v: number) => (v < 25 ? 'low' : v < 55 ? 'mid' : 'ok')
 const NEED_ICON: Record<NeedId, string> = { hunger: '🍽️', energy: '⚡', fun: '🎈', hygiene: '🧼', bladder: '🚽', social: '💬', tidiness: '🧹' }
 
-export function Hud({ s, paused, onPause, onDiary, onMenu }: { s: State; paused: boolean; onPause: () => void; onDiary: () => void; onMenu: () => void }) {
+export function Hud({ s, paused, onPause, onDiary, onMissions, onMenu }: { s: State; paused: boolean; onPause: () => void; onDiary: () => void; onMissions: () => void; onMenu: () => void }) {
   const mood = moodWord(moodOf(s))
   return (
     <header className="hud">
@@ -31,6 +32,7 @@ export function Hud({ s, paused, onPause, onDiary, onMenu }: { s: State; paused:
       </div>
       <div className="hud-btns">
         <button onClick={onPause}>{paused ? '▶ Play' : '⏸ Pause'}</button>
+        <button onClick={onMissions}>🎯 Mission</button>
         <button onClick={onDiary}>📖 Diary</button>
         <button onClick={onMenu}>⚙</button>
       </div>
@@ -188,6 +190,38 @@ export interface Entry {
   tone?: 'good' | 'bad' | 'info'
 }
 
+/** The mission on the go, its goals so far, and the ones already done. A secret mission stays a mystery until it starts. */
+export function Missions({ s, onClose }: { s: State; onClose: () => void }) {
+  const m = activeMission(s.missions)
+  return (
+    <aside className="drawer missions">
+      <div className="sheet-head">
+        <b>🎯 Missions</b>
+        <button className="x" onClick={onClose}>✕</button>
+      </div>
+      {m ? (
+        <div className="mission">
+          <h3>{m.title}</h3>
+          <p>{m.blurb}</p>
+          <ul>
+            {goalsOf(m, s.missions).map((g) => (
+              <li key={g.event} className={g.met ? 'good' : undefined}>
+                {g.met ? '✅' : '⬜'} {g.label}: <b>{g.got} / {g.count}</b>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : (
+        <p>Every mission done. What a keeper!</p>
+      )}
+      <ul>
+        {MISSIONS.filter((x) => s.missions.done.includes(x.id)).map((x) => <li key={x.id} className="good">🏆 {x.title}</li>)}
+        {MISSIONS.filter((x) => x !== m && !s.missions.done.includes(x.id)).map((x) => <li key={x.id} className="dim">🔒 {x.secret ? '???' : x.title}</li>)}
+      </ul>
+    </aside>
+  )
+}
+
 export function Diary({ entries, onClose }: { entries: Entry[]; onClose: () => void }) {
   return (
     <aside className="drawer">
@@ -312,7 +346,7 @@ const Num = ({ label, hint, value, onChange, min = 0, max = 999 }: { label: stri
   </label>
 )
 
-export function GrownUps({ rules, credits, who, verify, onRules, onGift, onPin, onClose }: { rules: Rules; credits: number; who: string; verify: (pin: string) => Promise<boolean>; onRules: (r: Rules, pin: string) => void; onGift: (n: number) => void; onPin: (pin: string, newPin: string) => Promise<boolean>; onClose: () => void }) {
+export function GrownUps({ rules, credits, who, mission, verify, onRules, onGift, onFinishMission, onPin, onClose }: { rules: Rules; credits: number; who: string; mission?: string; verify: (pin: string) => Promise<boolean>; onRules: (r: Rules, pin: string) => void; onGift: (n: number) => void; onFinishMission: () => void; onPin: (pin: string, newPin: string) => Promise<boolean>; onClose: () => void }) {
   const [typed, setTyped] = useState('')
   const [pin, setPin] = useState<string | null>(null)
   const [wrong, setWrong] = useState(false)
@@ -375,6 +409,15 @@ export function GrownUps({ rules, credits, who, verify, onRules, onGift, onPin, 
           <button className="big" onClick={() => onGift(gift)}>🎁 Give</button>
         </div>
         <p className="dim">Upgrade prices and gifting upgrades will appear here once upgrades are in the game.</p>
+        <h3>Missions</h3>
+        {mission ? (
+          <div className="row">
+            <span>Now: <b>{mission}</b></span>
+            <button onClick={onFinishMission}>🎁 Finish it now (unlocks its floor)</button>
+          </div>
+        ) : (
+          <p className="dim">All missions done.</p>
+        )}
         <h3>PIN</h3>
         <div className="row">
           <input value={newPin} onChange={(e) => setNewPin(e.target.value.replace(/\D/g, '').slice(0, 8))} placeholder="New PIN (digits)" inputMode="numeric" />

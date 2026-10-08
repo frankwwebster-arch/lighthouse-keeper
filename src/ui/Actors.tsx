@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
-import { FLOORS, VISITORS, objectById, type FloorId, type ObjectId, type PetKind } from '../game/config'
+import { VISITORS, objectById, type FloorId, type ObjectId, type PetKind } from '../game/config'
 import { insideVisit, moodOf, moodWord, waitingVisit, type Happening, type State } from '../game/engine'
-import { FLOOR_Y, INTERIOR, TOWER_X, floorOf, route, worldX, type Point } from '../game/world'
+import { FLOOR_ORDER, FLOOR_Y, INTERIOR, LAYOUT, TOWER_X, floorOf, route, worldX, type Point } from '../game/world'
 import { Sprite } from './Sprite'
 
 const SPEED = 240
@@ -12,7 +12,7 @@ const interiorRight = TOWER_X + INTERIOR.right
 export function floorAt(x: number, y: number): FloorId {
   let best: FloorId = 'ground'
   let d = Infinity
-  for (const f of FLOORS) {
+  for (const f of FLOOR_ORDER) {
     const dd = Math.abs(FLOOR_Y[f] - y)
     if (dd < d - 1e-6) {
       d = dd
@@ -142,6 +142,8 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
   const arrived = useRef(-1)
   const me = useRef({ x: startAt.x, y: startAt.y })
   const petMe = useRef({ x: startAt.x + 60, y: startAt.y })
+  /** The layout as last drawn, and which floor each of them was on in it. */
+  const seen = useRef({ version: LAYOUT.version, keeper: floorOf('bed') as FloorId, pet: floorOf('bed') as FloorId })
   const sRef = useRef(s)
   sRef.current = s
   const arriveRef = useRef(onArrive)
@@ -180,6 +182,18 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
       const dt = Math.min(0.06, (t - last) / 1000)
       last = t
       const st = sRef.current
+      // A floor arrived and the tower moved: keep him (and the pet) on their own floors, and re-plan any walk.
+      if (seen.current.version !== LAYOUT.version) {
+        const kf = seen.current.keeper
+        const pf0 = seen.current.pet
+        if (kf !== 'outside' && kf !== 'ground') me.current = { ...me.current, y: FLOOR_Y[kf] }
+        if (pf0 !== 'outside' && pf0 !== 'ground') petMe.current.y = FLOOR_Y[pf0]
+        const job = st.doing
+        if (path.current.length && job && job.object !== 'here') {
+          const target = place(job.object)
+          path.current = route({ x: me.current.x, floor: kf }, { x: target.x, floor: floorOf(job.object) }).map((p) => ({ x: p.x, y: FLOOR_Y[p.floor] }))
+        }
+      }
       let walking = false
       let face = 0 as 0 | 1 | -1
       const next = path.current[0]
@@ -188,7 +202,7 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
         const dx = next.x - me.current.x
         const dy = next.y - me.current.y
         const dist = Math.hypot(dx, dy)
-        const step = SPEED * dt * (dy !== 0 ? 0.6 : 1)
+        const step = SPEED * dt * (dy !== 0 ? (LAYOUT.lift ? 2.4 : 0.6) : 1)
         if (dist <= step) {
           me.current = { x: next.x, y: next.y }
           path.current.shift()
@@ -222,6 +236,7 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
       setPet({ x: pf.x, y: pf.y })
       setNow(t)
       poseRef.current({ x: k.x, y: k.y })
+      seen.current = { version: LAYOUT.version, keeper: floorAt(k.x, k.y), pet: floorAt(pf.x, pf.y) }
       raf = requestAnimationFrame(frame)
     }
     raf = requestAnimationFrame(frame)

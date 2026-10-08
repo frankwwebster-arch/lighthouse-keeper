@@ -38,8 +38,10 @@ import {
   type ObjectId,
   type PetKind,
   type TraitId,
+  type UnlockId,
 } from './config'
 import type { Quiz } from './quiz'
+import { activeMission, countEvents, eventsOf, freshMissions, objectAvailable, type MissionState } from './missions'
 import type { ChatQ } from './chat'
 
 // ─── What a game is ──────────────────────────────────────────────────────────
@@ -105,9 +107,9 @@ export type HKind =
   | 'dawn' | 'chose' | 'done' | 'refuse' | 'moan' | 'caller' | 'caller_met' | 'caller_gone' | 'visitor_left'
   | 'horn' | 'ship' | 'storm' | 'thunder' | 'dusk' | 'lamp_lit' | 'lamp_out' | 'spotted' | 'bed' | 'annoyed'
   | 'ring' | 'friend_coming' | 'pizza_ordered' | 'pizza_arrived' | 'pet' | 'bought' | 'locked' | 'react' | 'quiz' | 'chat'
-  | 'credits' | 'breakdown' | 'repaired'
+  | 'credits' | 'breakdown' | 'repaired' | 'mission_done' | 'unlocked'
 
-export type RefuseWhy = 'storm' | 'nobody' | 'early' | 'quiz' | 'bursting' | 'grumpy' | 'phone_busy' | 'phone_mood' | 'phone_none' | 'empty' | 'broke' | 'broken' | 'notready' | 'pizza_pending' | 'stuck'
+export type RefuseWhy = 'missing' | 'storm' | 'nobody' | 'early' | 'quiz' | 'bursting' | 'grumpy' | 'phone_busy' | 'phone_mood' | 'phone_none' | 'empty' | 'broke' | 'broken' | 'notready' | 'pizza_pending' | 'stuck'
 
 export interface Happening {
   n: number
@@ -177,6 +179,9 @@ export interface State {
   shine: number
   /** Objects waiting for repair. */
   broken: ObjectId[]
+  /** Floors (and the lift) that missions have unlocked. */
+  unlocked: UnlockId[]
+  missions: MissionState
   plan: DayPlan
   visits: Visit[]
   thunderAt: number
@@ -290,6 +295,8 @@ export function startGame(seed: number, setup: Setup, rules: Rules = DEFAULT_RUL
     lampLeft: 0,
     shine: G.lamp.startShine,
     broken: [],
+    unlocked: [],
+    missions: freshMissions(),
     plan,
     visits,
     thunderAt: plan.storm ? plan.storm.from + 5 : Infinity,
@@ -392,7 +399,26 @@ export const setRules = (s: State, rules: Rules): State => ({ ...s, rules })
 
 function note(s: State, h: Loose): State {
   const entry = { ...h, n: s.nextN, at: s.clock } as Happening
-  return { ...s, happenings: [...s.happenings, entry].slice(-G.diaryLimit), nextN: s.nextN + 1 }
+  const next = { ...s, happenings: [...s.happenings, entry].slice(-G.diaryLimit), nextN: s.nextN + 1 }
+  return missionEvents(next, eventsOf(entry))
+}
+
+/** Count what happened towards the mission; a finished mission unlocks its floor (furnished) and pays a reward. */
+function missionEvents(s: State, events: Parameters<typeof countEvents>[1]): State {
+  if (!events.length) return s
+  const { missions, finished } = countEvents(s.missions, events)
+  if (!finished) return missions === s.missions ? s : { ...s, missions }
+  const reward = G.missions.reward
+  const done = note({ ...s, missions, credits: s.credits + reward }, { kind: 'mission_done', id: finished.id, amount: reward })
+  return note({ ...done, unlocked: done.unlocked.includes(finished.unlocks) ? done.unlocked : [...done.unlocked, finished.unlocks] }, { kind: 'unlocked', id: finished.unlocks })
+}
+
+/** For the grown-ups: finish the current mission now. */
+export function completeMission(s: State): State {
+  const m = activeMission(s.missions)
+  if (!m) return s
+  const events = m.goals.flatMap((g) => Array.from({ length: g.count }, () => g.event))
+  return missionEvents(s, events)
 }
 
 const lift = (s: State, by: number): State => ({ ...s, spirits: clamp(s.spirits + by, -G.mood.spiritsLimit, G.mood.spiritsLimit) })
@@ -432,6 +458,7 @@ function begin(s: State, o: Order, by: 'player' | 'self', sulky: boolean): State
     return then ? begin(next, then, 'self', false) : startNext(next)
   }
   const bursting = s.needs.bladder < G.bursting
+  if (!objectAvailable(s, def0.object)) return refuse('missing')
   if (id === 'repair' && !s.broken.includes(def0.object)) return refuse('notready')
   // A broken bed must never trap the simulation at forced bedtime: he can still
   // sleep in it (badly), while naps and every other broken-object action wait
@@ -583,6 +610,7 @@ function finish(s: State): State {
       next = { ...next, shine: clamp(next.shine + G.lamp.polish) }
       break
     case 'scope_look':
+    case 'weather_check':
       next = note(next, spotted(next))
       break
     case 'pet_feed':
@@ -712,7 +740,7 @@ function maybeBreak(s: State, dt: number): State {
   if (every <= 0 || limit <= 0 || s.broken.length >= limit) return s
   const d = dice(s.rng)
   if (d.next() >= Math.min(1, dt / every)) return { ...s, rng: d.rng }
-  const candidates = BREAKABLE_OBJECTS.filter((id) => !s.broken.includes(id) && s.doing?.object !== id)
+  const candidates = BREAKABLE_OBJECTS.filter((id) => !s.broken.includes(id) && s.doing?.object !== id && objectAvailable(s, id))
   if (!candidates.length) return { ...s, rng: d.rng }
   const id = d.pick(candidates)
   return note({ ...s, rng: d.rng, broken: [...s.broken, id] }, { kind: 'breakdown', id, text: BREAKDOWN_SFX[id] ?? 'mechanical-clunk' })
@@ -869,7 +897,9 @@ function endDay(s: State): State {
     next = note({ ...next, plan: { ...next.plan, ship: { ...next.plan.ship, state: safe ? 'safe' : 'close' } } }, { kind: 'ship', safe })
   }
   next = { ...next, visits: next.visits.map((c) => (c.state === 'waiting' || c.state === 'due' || c.state === 'inside' ? { ...c, state: 'gone' as const } : c)), doing: null, queue: [], prompt: null, phase: 'report' }
-  return { ...next, history: [...next.history, dayResult(next)] }
+  const result = dayResult(next)
+  next = { ...next, history: [...next.history, result] }
+  return result.score >= G.missions.goodDay ? missionEvents(next, ['good_day']) : next
 }
 
 /** The marks for the day so far. */

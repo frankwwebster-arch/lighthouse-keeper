@@ -1,0 +1,84 @@
+/**
+ * MISSIONS. One at a time, in the order of `MISSIONS` (config.ts). Each has a
+ * few goals counted from what happens in the game; finishing one unlocks a
+ * floor (it arrives furnished) or the lift.
+ *
+ * Pure: the engine feeds in what happened and applies what comes back.
+ */
+
+import { FLOOR_LEVELS, MISSIONS, OBJECTS, START_FLOORS, type MissionDef, type MissionEvent, type ObjectId, type RoomFloor, type UnlockId } from './config'
+import type { Happening, State } from './engine'
+
+export interface MissionState {
+  done: string[]
+  /** `<mission>:<goal index>` → how many so far. */
+  progress: Record<string, number>
+}
+
+export const freshMissions = (): MissionState => ({ done: [], progress: {} })
+
+/** The mission being worked on now (undefined when they are all done). */
+export function activeMission(m: MissionState): MissionDef | undefined {
+  return MISSIONS.find((x) => !m.done.includes(x.id) && (!x.after || m.done.includes(x.after)))
+}
+
+/** What a happening counts as. */
+export function eventsOf(h: Pick<Happening, 'kind' | 'id' | 'safe' | 'correct'>): MissionEvent[] {
+  switch (h.kind) {
+    case 'done':
+      return h.id ? [`done:${h.id}`] : []
+    case 'ship':
+      return h.safe ? ['ship_safe'] : []
+    case 'caller_met':
+      return ['caller_met']
+    case 'repaired':
+      return ['repaired']
+    case 'quiz':
+      return h.correct ? ['quiz_right'] : []
+    default:
+      return []
+  }
+}
+
+export const goalKey = (m: MissionDef, i: number) => `${m.id}:${i}`
+
+/** How far along a mission's goals are. */
+export function goalsOf(m: MissionDef, ms: MissionState) {
+  return m.goals.map((g, i) => {
+    const got = Math.min(g.count, ms.progress[goalKey(m, i)] ?? 0)
+    return { ...g, got, met: got >= g.count }
+  })
+}
+
+/** Count events towards the active mission. Returns the new state and the mission it finished, if it did. */
+export function countEvents(ms: MissionState, events: readonly MissionEvent[]): { missions: MissionState; finished?: MissionDef } {
+  const m = activeMission(ms)
+  if (!m || !events.length) return { missions: ms }
+  let progress = ms.progress
+  m.goals.forEach((g, i) => {
+    const n = events.filter((e) => e === g.event).length
+    if (!n) return
+    const k = goalKey(m, i)
+    progress = { ...progress, [k]: Math.min(g.count, (progress[k] ?? 0) + n) }
+  })
+  if (progress === ms.progress) return { missions: ms }
+  const next = { ...ms, progress }
+  if (goalsOf(m, next).every((g) => g.met)) return { missions: { ...next, done: [...next.done, m.id] }, finished: m }
+  return { missions: next }
+}
+
+/** The floors with rooms that he has, bottom to top. */
+export function roomFloors(unlocked: readonly UnlockId[]): RoomFloor[] {
+  const have = new Set<string>([...START_FLOORS, ...unlocked])
+  return (Object.keys(FLOOR_LEVELS) as RoomFloor[]).filter((f) => have.has(f)).sort((a, b) => FLOOR_LEVELS[a] - FLOOR_LEVELS[b])
+}
+
+const isRoomFloor = (f: string): f is RoomFloor => f in FLOOR_LEVELS
+
+/** Is this thing in his lighthouse yet? (Objects on locked floors are not.) */
+export function objectAvailable(s: Pick<State, 'unlocked'>, id: ObjectId): boolean {
+  if (id === 'here') return true
+  const o = OBJECTS.find((x) => x.id === id)
+  if (!o) return false
+  return !isRoomFloor(o.floor) || START_FLOORS.includes(o.floor) || s.unlocked.includes(o.floor as UnlockId)
+}

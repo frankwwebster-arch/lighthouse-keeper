@@ -6,7 +6,7 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 ```
 npm install
 npm run dev      # Next.js 14; open http://localhost:3000 (or this computer’s address on the same wifi, for the iPad)
-npm test         # 73 tests
+npm test         # 85 tests
 npm run build    # production build
 npm run sprites  # snap Codex's PNGs in art/raw/ into public/sprites/ (docs/CODEX_ASSETS.md)
 ```
