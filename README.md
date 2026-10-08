@@ -15,7 +15,7 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 ## Current implementation
 
 - Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The first production Pixel batch now supplies the red/white shell bands and those three 105 × 35 room plates; interactive furniture remains separate. The toilet and wash basin are both in the en suite.
-- Future standard floors are intentionally non-linear: whichever eligible floor the player unlocks next is inserted beneath the raised, always-topmost lamp room. Concept-art taper is decorative and never fixes room width or unlock order.
+- Future standard floors are intentionally non-linear: kitchen anchors the base, lamp room stays topmost, bedroom stays directly below it, and each other floor receives a one-time random saved middle position. Concept-art taper is decorative and never fixes room width or unlock order.
 - The newly added fixed aquarium → weather mission chain is an interim implementation and is documented as a logic refactor, not the final progression model.
 - Every object renderer accepts `standard`, `on`, and `broken`; active gameplay drives `on`. Broken objects share integer-step casing wobble, smoke and sparks. Add `?broken=tv,cooker` (or `?broken=all`) to the URL for the internal art-state preview.
 - Objects can be upgraded with credits from their tap menu (tiers in `UPGRADES`, `src/game/config.ts`). Higher tiers do more good, faster; the bed's tier sets the morning's energy. Grown-ups set upgrade prices (overall %, then per tier) and can gift upgrades. Tier sprites are `obj_<id>_t<n>_<state>`; until they exist a `T<n>` tag stands in. `?tiers=3` previews top tiers.
@@ -27,11 +27,12 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 ## Where things are
 
 - `src/game/` — rules (`config.ts` has every number, `commands.ts` the command book and silly reactions, `engine.ts` the rules).
-- `src/ui/floors.tsx` — fixed-width room definitions and reserved Floor 3 diving-extension geometry.
+- `src/ui/floors.tsx` — fixed-width room definitions and the interim Floor 3 diving geometry which must later follow the moving bedroom.
 - `src/ui/art.tsx` and `src/ui/Sprite.tsx` — vector fallbacks, the three-state renderer, and production strip playback.
 - `public/sprites/` — the five exact-size PNGs from the first production Pixel batch plus their runtime manifest.
 - `art/source/first-production-batch/` — untouched generated sources and prompt/provenance notes; `scripts/build_first_asset_batch.py` rebuilds the exact `art/raw/` deliveries, then `npm run sprites` publishes them.
 - `docs/PRODUCTION_ASSET_KIT.md` — exact Pixel filenames, dimensions, anchors, pivots, z-order, frame counts, fps, and delivery order.
+- `docs/EXPANSION_DESIGN.md` — living write-up of agreed room ideas, random floor placement, night reveals, weather, transport, island expansions and energy systems.
 - `art/manifest.json` and `art/asset_inventory.json` — facts about the concept/prototype image pack; these are not a production rig.
 
 ## Stack

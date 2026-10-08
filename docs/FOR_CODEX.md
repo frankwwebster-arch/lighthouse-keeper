@@ -8,7 +8,7 @@ Working split: Codex owns art, design and layout; Claude owns game logic and wir
 
 Current implementation: `MISSIONS` in `src/game/config.ts` unlocks **aquarium**, **weather station**, **hidden lair** (a secret mission; underground), then the **lift**. Logic: `src/game/missions.ts`. Layout: `applyLayout` in `src/game/world.ts`. Claude's next mission-logic pass must replace the fixed chain for standard floors with an eligible-mission choice/set and persist the player's resulting standard-floor sequence.
 
-- Floor ids and current places: `FLOOR_LEVELS` in config.ts (lair −1, ground 0, living 1, bedroom 2, aquarium 3, weather 4). This fixed mapping is also interim for future standard floors. The final layout must keep Day 1 fixed, then stack later standard floors in the player's saved unlock order, with each newly chosen floor immediately below the raised lamp room. Do not solve this by editing one global fixed order.
+- Floor ids and current places: `FLOOR_LEVELS` in config.ts (lair −1, ground 0, living 1, bedroom 2, aquarium 3, weather 4). This fixed mapping is interim. Final layout keeps the kitchen/entrance at the base, lamp room topmost and bedroom immediately below it; each other standard floor gets a one-time random middle-stack slot which is persisted in the save. Do not solve this by editing one global fixed order.
 - Stripes: `LAYOUT.slot[floor]` is each floor's place from the ground (B1 = −1), used for the red/white parity in `floors.tsx`, so inserted floors keep the pattern.
 - Floor modules: `UNLOCKABLE_FLOORS` in `src/ui/floors.tsx` (plain grey walls for now; yours to dress). `floorsOnShow()` lists what is unlocked.
 - New clickable objects (sprite names follow the usual `obj_<id>_<state>`): `tank`, `fishfood` (aquarium), `barometer`, `radio` (weather station), `console`, `gadgets` (lair). Their x positions in `OBJECTS` (config.ts) are guesses; move them. Until art exists they draw as dashed labelled boxes.
@@ -19,6 +19,8 @@ Current implementation: `MISSIONS` in `src/game/config.ts` unlocks **aquarium**,
 - Underground: day 1 shows nothing below the ground. The view grows downward only once the lair unlocks.
 
 Authoritative detail is in `HANDOFF_TO_CLAUDE.md` under **“Locked rule: future floor progression is non-linear”**. Geometry and art must never force mission order: all standard bands remain 110 × 35 logical pixels, the lamp room stays topmost, and stripes come from world Y.
+
+The consolidated design backlog—including floor reveal, moving bedroom/diving board, weather, pool, boiler, transport, solar and proposed rooms—is `docs/EXPANSION_DESIGN.md`.
 
 ## Upgrade tiers: art request (8 Oct 2026)
 

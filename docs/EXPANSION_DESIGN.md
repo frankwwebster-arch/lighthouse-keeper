@@ -1,0 +1,294 @@
+# Lighthouse Keeper — expansion, rooms and world ideas
+
+Date: 8 October 2026  
+Status: living product-design write-up. It records Frank's locked directions separately from the unbuilt idea backlog so future Claude/Codex sessions do not mistake current placeholder code for the final design.
+
+## Product principles
+
+- Unlock challenges should use varied accomplishments, observation and small puzzles. Repeating the same action many times is tedious and must not be the main progression mechanism.
+- The lighthouse is magical. Plausibility should support jokes and readable gameplay, not constrain the tower to realistic engineering.
+- Floors should add systems, choices or relationships with other rooms—not merely another isolated clickable object.
+- Activities remain curated and child-friendly. The computer room does not use live email, news or generative AI.
+- Ordinary floors use the common fixed-width production geometry and nearest-neighbour 4× rendering.
+
+## Locked tower layout
+
+- The lamp room is always topmost.
+- The bedroom is always immediately below the lamp room.
+- The kitchen/entrance remains the ground-floor anchor.
+- Other standard floors have no canonical vertical order. When one unlocks, choose a random available position in the middle stack, then persist that order in the save. Do not reshuffle it every night.
+- A new insertion may push existing middle floors up or down. Their size and internal layout never change.
+- Concept-art taper is decorative only and never controls width, eligibility or order.
+- Shell stripe colour is derived from absolute world Y after layout.
+- The underground lair remains below ground. Exterior bays and island facilities do not consume standard stack positions.
+
+The current fixed aquarium → weather → lair → lift mission chain, `FLOOR_LEVELS` ordering and Floor 3 diving reservation are interim implementation details. They must be refactored before further standard-floor progression is treated as finished.
+
+## Bedroom, diving board and night ending
+
+The bedroom moves upward as the lighthouse grows, remaining directly beneath the lamp room. Its exterior diving-board/changing-room extension moves with it. The diving board may therefore become extremely high: the keeper can dive the full height of the lighthouse into the sea. Height is a comic reward, not a restriction.
+
+The costume change still happens out of sight between two doors. The Victorian red-and-white swimming costume can be reused for diving and the swimming-pool floor.
+
+At bedtime:
+
+1. The cutaway front closes like a doll's house.
+2. The camera pulls back to the full lighthouse.
+3. Every domestic window is dark except the bedroom window immediately beneath the lamp.
+4. The keeper's face appears on his pillow, perhaps with a yawn, wave, pet or other small variation.
+5. The bedroom light clicks off while the lighthouse lamp continues shining.
+6. The night recap plays.
+
+## New-floor reveal
+
+Major floor unlocks are held until morning. During the closed-lighthouse night, muffled bumps, sawing and comic crashes may suggest that the tower is rearranging itself.
+
+At dawn:
+
+1. The closed tower rumbles and changes height.
+2. Existing middle floors shift to make the saved random slot.
+3. The front façade peels open in two dollhouse-like panels.
+4. The new room appears with a warm outline, sparkles and two gentle shine pulses.
+5. The keeper appears at the stairs and comments on it.
+6. A short card introduces the room's objects and new capabilities.
+
+Sample reusable lines:
+
+- “Look! The {room} has appeared!”
+- “Well, would you look at that—a {room}!”
+- “That definitely wasn't there yesterday.”
+- “I wondered what all that banging was!”
+- “Another whole floor? This lighthouse has ideas of its own.”
+- Grumpy: “Oh good. Another floor to clean.”
+- Dreamy: “I think the lighthouse built it while we slept.”
+
+Room-specific lines are encouraged. Only one major reveal should play each morning; extra completed unlocks can wait in a reveal queue.
+
+Use hand-drawn pixel-safe frames or integer translations for the façade. Do not blur or smoothly rotate raster art.
+
+## Furniture migration
+
+When a specialist floor appears, related furniture may move there overnight. The activity remains available; it gains a more capable home.
+
+- Piano → music room. Keeper: “Where's my piano gone?”
+- Bookshelf → library.
+- Computer/desk → computer room.
+- Dining table → dining room.
+- Art materials → artist's studio.
+- Exercise equipment → gym.
+- Games cabinet → games hall.
+
+The vacated room receives useful open space or a smaller replacement rather than looking accidentally empty.
+
+## Candidate floors and challenges
+
+These are approved ideas, not a fixed unlock sequence. Future missions should expose several eligible choices.
+
+### Workshop
+
+Adds repair tools, spare parts and inventions; upgrades can reduce breakdown pressure without eliminating faults.
+
+Challenge: repair different fault categories, identify suitable tools, then assemble and test a small mechanism in the correct order.
+
+### Weather station
+
+Adds forecasts, rain gauge, wind vane and storm warnings.
+
+Challenge: record weather at different times, interpret a simple chart, then warn a ship correctly.
+
+### Aquarium or marine laboratory
+
+Adds sea-creature care, microscope work and habitat knowledge.
+
+Challenge: find creatures through fishing/diving, match them to habitats, then balance a tank.
+
+### Radio room
+
+Adds ship-to-shore communication, signal codes and rescue calls.
+
+Challenge: repair an aerial, decode a short message and relay the correct location.
+
+### Map and chart room
+
+Connects boats, telescope sightings and exploration.
+
+Challenge: collect map fragments, orient them correctly and plot a safe route through rocks.
+
+### Observatory
+
+Adds stars, moon phases and night sightings.
+
+Challenge: spot several constellations and use the North Star in a direction puzzle.
+
+### Library
+
+A cozy room for stories, research, lighthouse history and clues rather than school-like repetition.
+
+Challenge: recover misplaced books, sort them by subject and use information from one to solve a practical problem.
+
+### Music room
+
+Receives the living-room piano and adds drums, accordion, gramophone and comic instruments.
+
+Challenge: copy a short melody, identify sounds and perform a small concert for a visitor.
+
+### Artist's studio
+
+Adds painting, pottery and permanent pictures that can decorate the lighthouse.
+
+Challenge: collect colours from the world, mix simple combinations and make a picture for a visitor.
+
+### Computer room
+
+Uses a fictional, curated computer system. Activities include writing to known characters, reading next-day replies, viewing a game-state newspaper, checking forecasts, researching repairs and playing simple games. There is no live internet, real email or generative AI.
+
+Possible headlines include “MYSTERY FLOOR APPEARS OVERNIGHT” and “LOCAL CAT DENIES STEALING FISH”. Messages can invite visitors, reserve shop items or start missions.
+
+### Storage or box room
+
+Provides the attic fantasy without competing with the bedroom's top position.
+
+Mini-game: briefly inspect a changing field of boxes and clutter, then search, open, move and stack items to find a requested object. Discoveries can supply mission parts, records, maps or jokes.
+
+### Dining room
+
+Supports proper meals, visitors, celebrations and table-setting challenges. The kitchen remains for cooking and quick meals.
+
+### Cinema
+
+A strong rainy-day floor with fictional films, visitor screenings, projector repairs and scene-order puzzles. Later it can replay stylised films of completed lighthouse adventures.
+
+### Games hall
+
+Combines snooker, table tennis, darts, table football and board games. Different game types prevent grind: aiming, timing, arithmetic scoring and memory.
+
+### Playroom
+
+Combines a ball-pit search game, soft-play obstacles and trampoline timing. A caged exterior trampoline may briefly bounce the keeper above the roofline.
+
+### Imagination or themed room
+
+A reusable floor that changes between castle, space station, pirate ship, jungle, haunted room and Arctic-base themes. Themes alter scenery and the mini-game rather than requiring a permanent floor for each one.
+
+### Conservatory and greenhouse
+
+They serve different purposes and may both exist. The greenhouse is an exterior food-growing facility with crops, irrigation and breakable glass. The conservatory is an indoor leisure floor with decorative plants, tea, reading, visitors and an overgrowth problem if neglected.
+
+### Family-friendly pub or lighthouse inn
+
+A social room serving lemonade, ginger beer, cocoa and large meals. Activities include pub quizzes, darts, dominoes, music nights and visitor stories. Possible names: The Flashing Lantern, The Lamp & Haddock or The Wobbly Gull.
+
+## Swimming-pool floor
+
+The pool is intentionally absurd: roughly 90% of the room is water, with only a narrow tiled walkway, changing cubicle and ladder. The keeper's head and shoulders remain above the waterline; submerged movement is hidden or distorted, keeping animation economical.
+
+Reuse the Victorian swimming costume. Initial clips:
+
+- `swim_idle` — tread water.
+- `swim_lengths` — reusable six/eight-frame stroke.
+- `swim_splash` — playful loop.
+- `swim_float` — mostly static drift.
+- `swim_exit` — climb the ladder.
+- `pool_rescue` — tow an object or visitor.
+
+Activities include lengths, floating, inflatables, retrieving lost objects and gentle rescue practice. The pool depends on the boiler for heat and the pump for cleanliness. Wind may slosh the water; fish may occasionally peer through an inappropriate glass panel.
+
+## Boiler room and service dependencies
+
+The boiler supplies hot showers/baths, basin water, pool heat, radiators and possible future laundry/kitchen systems. Its position in the tower does not affect service.
+
+When broken, water activities remain possible but are degraded rather than wholly disabled:
+
+| Activity | Boiler working | Boiler broken |
+|---|---|---|
+| Shower/bath | Strong hygiene and comfort | Small hygiene gain, fun/energy penalty, shivering reaction |
+| Basin wash | Normal hygiene | Reduced hygiene and annoyance |
+| Swimming/hot tub | Comfortable | Short cold use or refusal unless necessary |
+| Cold-weather sleep | Normal restoration | Reduced restoration until heating returns |
+
+The boiler uses standard/on/broken art: pilot light; active flame/pressure; then shared wobble/smoke/sparks plus a pipe or gauge cue. Repair can ask the player to inspect pressure, choose a reset/pipe/fuse action and test a hot tap. Wrong choices create jokes, not permanent damage.
+
+## Transport through a growing tower
+
+Progression can be:
+
+1. Ladders — slow both ways.
+2. Spiral staircase — better upward movement.
+3. Helter-skelter slide wrapped around the stair core — fast, fun downward travel with an exit at every floor.
+4. Lift — fast movement both ways once the tower becomes tall.
+
+The slide reads the saved dynamic floor order. Animation can hide the keeper in an opaque tube, show a moving bump and flash his face past small windows. It is keeper-owned and breakable: jammed flaps, blocked tube, wrong-floor exits and trapped laundry provide faults.
+
+## External and island-scale expansions
+
+These are rare spectacle upgrades. They can tear the island apart because they require horizontal, shoreline or underground space. Ordinary floors do not.
+
+- Outdoor pool or lido: tiled basin rises as pipes burst and settle into fountains.
+- Boathouse/dry dock: shoreline opens into a protected inlet.
+- Greenhouse/orchard: roots push earth plates apart and new soil/grass fills the gap.
+- Rescue station/helipad: cliff slides outward into a safe equipment terrace.
+- Wind turbine: giant foundation erupts and the turbine unfolds.
+- Funicular: split cliff reveals a track to the jetty.
+- Geothermal plant: drill, cracks and steam supply heating.
+- Sea-life tunnel: shoreline separates around a glass underwater passage.
+- Satellite dish/radio mast: support legs force new island terraces outward.
+- Workshop yard or garage: island expands to test and store large machines.
+- Bowling alley: a long horizontal extension telescopes from the tower.
+
+The expansion initially looks catastrophic, then magic completes it: rock rises, soil fills gaps, grass rolls over it and surprised animals continue as normal.
+
+### Garage
+
+A ground/island facility for bicycles, the automated hoover, robot butler, boat equipment and large inventions. The workshop builds and repairs; the garage stores and tests.
+
+### Gym hot-tub extension
+
+A deliberately precarious cantilevered platform on the outside wall. The hot tub depends on boiler heat and its pump, is delightful in snow, uncomfortable in a heatwave and alarming from the full-tower view.
+
+## Weather and gameplay
+
+Weather changes preferences, safety and room value rather than merely recolouring the scene.
+
+| Weather | Effects |
+|---|---|
+| Sunny | Outdoor fun bonus; good fishing, gardening, swimming and solar generation |
+| Light rain | Keeper prefers indoors; garden waters itself; oilskins enable comfortable outdoor work |
+| Heavy rain | Casual outside actions discouraged; leaks/plumbing faults more likely |
+| Wind | Better wind power, rougher fishing/boats, loose objects need securing |
+| Fog | Telescope impaired; lamp and radio important; ship risk rises |
+| Thunderstorm | Unsafe leisure outside; electrical fault pressure and rescue events rise |
+| Frost/snow | Frozen pipes, icy paths and snow activities; boats may be unavailable |
+| Heatwave | Faster energy/hygiene drain; pool attractive; garden needs water; solar strong |
+| Calm | Excellent fishing, weak wind power and possible becalmed ships |
+
+“I would rather stay inside” is a preference that equipment or persistence may overcome. “That is not safe” is a hard block during lightning, extreme wind or dangerous seas. Emergencies can override reluctance only when proper rescue gear exists.
+
+Oilskins, warm clothing, rescue gear and improved boats expand safe conditions. The weather station should forecast tomorrow so the player can plan instead of only reacting.
+
+## Solar panels and power
+
+Solar panels are an exterior energy system, not an ordinary floor. Small panels can unfold from rails/walls like mechanical petals; larger arrays occupy newly formed island terraces.
+
+Suggested tiers:
+
+1. Small balcony panel — powers a few lights.
+2. Folding lighthouse array — assists boiler, computer and lift.
+3. Island solar field — charges batteries for most systems.
+4. Comic sun-tracking array — occasionally follows the wrong bright object.
+
+Sun charges batteries; cloud reduces output; storms can crack glass or cables; snow requires clearing; heat can overheat tracking equipment. Stored energy supports the lamp and selected systems overnight. During shortages, the player chooses priorities such as lamp, boiler, lift, pool, computer or cinema.
+
+Unlock challenge: experience a power cut, inspect a forecast, identify the sunniest site, repair an electrical object and complete a circuit-routing puzzle.
+
+## Prioritisation guidance
+
+Do not implement all ideas as independent floors at once. Prefer connected systems:
+
+- Weather station + radio + solar + boiler create planning and infrastructure.
+- Workshop + garage + breakdowns create repair and invention progression.
+- Library + computer + map room create research and discovery.
+- Music + art + cinema create creative rainy-day progression.
+- Pool + gym/hot tub + diving board reuse the swimming costume and water animation.
+- Dining room + food store + kitchen + visitors create preparation and social play.
+
+Before implementation, choose a small set of eligible missions and make their order genuinely non-linear. Every new mission should add varied goals and avoid raw repetition counts where a short bespoke challenge would be more enjoyable.

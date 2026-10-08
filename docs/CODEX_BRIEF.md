@@ -40,7 +40,7 @@ Also one assembled `keeper_reference.png` so the parts can be checked for alignm
 - Rooms, 105 wide × 35 high each: `room_kitchen.png`, `room_living.png`, `room_bedroom.png` (en suite included), `room_lamp.png`. Walls and floor only; furniture is separate.
 - `ground_strip.png`: ordinary grass, soil and rock only. No hint of a cave, shaft or basement.
 
-Future ordinary floors are a non-linear player progression. Do not draw them as successively narrower slices or assign a required vertical order. When one unlocks, the lamp room rises by one fixed band and the chosen floor appears directly beneath it; all existing floors keep their size and relative order. Taper is decorative exterior shading only. Extensions and the underground lair use their separate architectures rather than consuming or constraining this stack.
+Future ordinary floors are a non-linear player progression. Do not draw them as successively narrower slices or assign a required vertical order. Keep kitchen at the base, lamp room topmost and bedroom immediately beneath it; every other standard floor receives a one-time random saved position in the middle stack. Taper is decorative exterior shading only. Extensions and the underground lair use their separate architectures rather than consuming or constraining this stack. The diving-board extension follows the moving bedroom and may reach the full tower height.
 
 ## Later batches — do not start yet
 

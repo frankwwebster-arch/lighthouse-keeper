@@ -6,7 +6,7 @@ Status: production specification. Delivery-order item 1 is complete for the two 
 
 - Author at one source pixel per logical pixel on a 300 × 190 logical stage. Runtime SVG coordinates are logical coordinates × 4 (`viewBox="0 0 1200 760"`). Use integers only.
 - The gameplay core is fixed at 110 × 35 logical pixels per floor band (runtime 440 × 140). Room plates are exactly 105 × 35. Do not taper or rescale a floor.
-- Future standard floors unlock non-linearly. Their shared geometry must allow any eligible room type to occupy the next band: lift the lamp room by one band and insert the chosen new floor immediately beneath it. Never encode a permanent height, taper-dependent width, or stripe colour into a future room asset. Persist unlock order; calculate stripes from world Y.
+- Future standard floors unlock non-linearly. Keep kitchen at the base, lamp room topmost and bedroom directly below it; give every other unlocked standard floor a one-time random saved position in the middle stack. Never encode a permanent height, taper-dependent width or stripe colour into a future room asset. Calculate stripes from world Y.
 - Export transparent PNGs (or flat `#FF00FF` for the existing cleanup script) with nearest-neighbour sampling, no blur and no anti-aliasing.
 - Object filename: `obj_<id>_<state>_f<frames>.png`. All equal-size frames are arranged left-to-right in one strip. Tier 1 has no tier suffix; later tiers use `_t2`, `_t3`, and so on before the state.
 - `standard` is one frame; the first production pass uses four-frame `on` and `broken` loops at the fps below. The manifest stores `file`, `frames` and `fps`; the runtime already supports string entries for old stills and metadata entries for strips.
@@ -123,7 +123,7 @@ The three-floor batch above is the current production priority. Ownership still 
 | `bubble_thought` | 36 × 20, tail `(8,20)` | 4 · 6 | z 110 |
 | `bubble_alert` | 20 × 20, tail `(5,20)` | 4 · 8 | z 110 |
 
-The Floor 3 extension seam is at local x 117. Inner door use point is x 113; the hidden changing zone occupies x 118–130; exterior exit is x 135. These are reserved coordinates, not Day 1 visible art.
+The current Floor 3 reservation uses extension seam x 117, inner-door use point x 113, hidden zone x 118–130 and exterior exit x 135. Preserve those bedroom-local coordinates, but do not preserve the global Floor 3 height: final implementation moves the whole extension with the bedroom immediately beneath the lamp room. These are reserved coordinates, not Day 1 visible art.
 
 ## Delivery order
 

@@ -153,19 +153,19 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
 
 ### Locked rule: future floor progression is non-linear
 
-The tapered concept paintings do **not** impose a construction order. Future standard floors are interchangeable 110 x 35 bands, and the player may unlock eligible floor types in different orders. Do not assign Workshop, Weather Station, Radio Room, Marine Lab, Map Room, or other future standard floors to permanent height numbers merely to reproduce the concept silhouette.
+The tapered concept paintings do **not** impose a construction order. Future standard floors are interchangeable 110 x 35 bands, and the player may unlock eligible floor types in different orders. Do not assign Workshop, Weather Station, Radio Room, Marine Lab, Map Room, or other future standard floors to permanent height numbers merely to reproduce the concept silhouette. The full idea backlog and system relationships are in `docs/EXPANSION_DESIGN.md`.
 
 When a standard floor is unlocked:
 
-1. Keep every existing ordinary floor at its current size and relative order.
-2. Raise the lamp room by exactly one 35-logical-pixel band.
-3. Insert the newly chosen floor into the vacant band immediately below the lamp room and above the previously unlocked ordinary floors.
-4. Recalculate shell stripes from absolute world Y; never store stripe colour on the floor type.
-5. Persist the player's unlocked-floor sequence so saves rebuild the same tower.
+1. Keep the kitchen/entrance as the ground anchor.
+2. Keep the lamp room topmost and the bedroom immediately below it.
+3. Choose a random available position for the newly unlocked standard floor in the middle stack; existing middle floors may shift.
+4. Persist the resulting order in the save and never reshuffle it nightly.
+5. Recalculate shell stripes from absolute world Y; never store stripe colour on the floor type.
 
-Day 1 remains fixed—kitchen, living room, bedroom/en-suite, lamp room—but the identity of later standard floors is selected by mission completion/player choice, not by taper or predetermined height. A gameplay dependency may restrict eligibility (for example, the lift becomes necessary after more than six complete floors), but it must be an explicit systems rule rather than an art/geometry restriction. The lamp room is always topmost.
+Day 1 remains fixed—kitchen, living room, bedroom/en-suite, lamp room—but the identity and eventual middle-stack position of later standard floors are not predetermined. A gameplay dependency may restrict eligibility (for example, the lift becomes necessary after more than six complete floors), but it must be an explicit systems rule rather than an art/geometry restriction.
 
-Side/rear parent-floor extensions, the Floor 3 diving room, the lift service core, and the underground lair do not consume standard stack slots and must not be used to force a linear ordinary-floor sequence.
+Side/rear extensions, the lift service core and the underground lair do not consume standard stack slots and must not be used to force a linear ordinary-floor sequence. The diving changing-room/board extension follows the bedroom as it moves upward; the keeper may eventually dive the full lighthouse height. The current fixed Floor 3 reservation is implementation debt.
 6. New floors may slide into position or arrive in a large reusable puff of smoke. Recommendation: `fx_floor_arrival_smoke`, 64 x 64 logical pixels, 8 frames at 12 fps. This effect is not yet delivered.
 7. Expansion architecture is deliberately magical:
 
@@ -176,7 +176,7 @@ Side/rear parent-floor extensions, the Floor 3 diving room, the lift service cor
 
 8. Underground development is a surprise. Day 1 shows normal grass, soil, and rock only — no obvious empty basement, shaft, cave, or reserved area. When a Batcave-like lair unlocks, extend terrain downward then reveal the interior. The first `ground_strip.png` is specified at 300 x 30 logical pixels.
 9. The lift becomes necessary at roughly seven floors (more than six complete floors). Keep it in a rear or side aligned service core/bay so it does not consume every front-facing room. Each floor still needs one aligned landing door.
-10. The diving changing room is fixed to **Floor 3 from ground level**, and its beam/floor plane must exactly align with that floor. Sequence: normal stair/lift travel to Floor 3; keeper walks through the inner door in ordinary clothes; closes and disappears; comic zip/change SFX plays; outfit swaps off-screen; exterior door opens; he emerges in Victorian red-and-white bathing suit and walks to the board. Never show the keeper in the narrow space between the two doors.
+10. **Superseded implementation note:** the current code fixes the diving changing room to Floor 3, but the approved design attaches it to the bedroom wherever that room moves. Its beam/floor plane must align with the current bedroom band, allowing a full-height dive as the tower grows. Sequence: normal travel to the bedroom; keeper walks through the inner door in ordinary clothes; closes and disappears; comic zip/change SFX plays; outfit swaps off-screen; exterior door opens; he emerges in Victorian red-and-white bathing suit and walks to the board. Never show the keeper in the narrow space between the two doors.
 11. At maximum height, parachuting from the lamp-room roof is a possible late-game comic unlock, not a Day 1 requirement.
 12. Existing background plates are opaque single images. They cannot support parallax, camera crops, night tinting, or expansion cleanly. Required production layers are: `bg_sky`, `bg_clouds`, `bg_distant_village`, `bg_sea`, `bg_island_back`, `bg_lighthouse_shell`, `bg_terrain`, and `bg_foreground`. The village should remain in the distance as a telescope target; it is visible in the early concept direction.
 13. Recommended day/night palette treatment: preserve the world art and tint via layers, rather than creating a separate night layout. Dawn: `#F2A65A` at 18% overlay; day: none; dusk: `#6C4A7D` at 28% multiply; night: `#10264E` at 52% multiply; lamp core `#FFE9A6`, glow `#FFC854`. Render the lamp beam separately (4 frames at 6 fps) above the night overlay.
