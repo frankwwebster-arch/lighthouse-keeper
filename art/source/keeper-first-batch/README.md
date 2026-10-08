@@ -17,8 +17,12 @@ python3 scripts/build_floor_asset_catalogue.py
 ```
 
 The batch supplies aligned front/back master parts and the first required
-clips: idle, walk, cook back, wash back and brush-teeth back. The review canvas
-embeds the resulting runtime strips automatically after it is rebuilt.
+clips: idle, a right-facing eight-frame walk (mirrored by the runtime for left
+travel), cook back, wash back and brush-teeth back. The review canvas embeds
+the resulting runtime strips automatically after it is rebuilt.
+
+`docs/floor-asset-catalogue/keeper-walk-preview.gif` is an enlarged 10 fps
+loop made from the exact production frames; it is not a separate animation.
 
 The generated study is reference material, not a runtime sprite. The authored
 PNGs in `art/raw/keeper-first-batch/` are the review candidates.

@@ -137,6 +137,54 @@ def compose(view="front", mood="neutral", phase=0, hands=0, bob=0):
     return im
 
 
+def side_walk(step=0):
+    """A right-facing walk pose. Runtime mirroring supplies left-facing travel."""
+    im = image()
+    d = ImageDraw.Draw(im)
+    bob = -1 if abs(step) >= 2 else 0
+
+    def side_leg(far, stride):
+        hip_x = 15 if far else 18
+        knee_x = hip_x + stride * 0.55
+        foot_x = hip_x + stride
+        colour = INK2 if far else NAVY
+        poly(d, [(hip_x - 2, 25 + bob), (hip_x + 3, 25 + bob), (knee_x + 2, 34), (knee_x - 2, 34)], colour)
+        poly(d, [(knee_x - 2, 33), (knee_x + 2, 33), (foot_x + 3, 38), (foot_x - 2, 38)], colour)
+        poly(d, [(foot_x - 2, 37), (foot_x + 5, 37), (foot_x + 6, 39), (foot_x - 3, 39)], BOOT)
+        rect(d, (min(knee_x, foot_x), 35, max(knee_x, foot_x) + 2, 36), "#324568")
+
+    # Rear limbs first, then body, then near limbs for readable depth.
+    side_leg(True, -step)
+    far_hand_x = 13 + step * 0.45
+    poly(d, [(13, 16 + bob), (16, 17 + bob), (far_hand_x + 2, 27), (far_hand_x - 1, 27)], BLUE_D)
+    ellipse(d, (far_hand_x - 2, 25, far_hand_x + 2, 29), SKIN_D, INK, 2)
+
+    poly(d, [(11, 15 + bob), (22, 15 + bob), (24, 27 + bob), (9, 27 + bob)], BLUE)
+    rect(d, (10, 20 + bob, 23, 23 + bob), CREAM)
+    rect(d, (11, 16 + bob, 21, 18 + bob), BLUE_HI)
+    rect(d, (10, 25 + bob, 23, 27 + bob), BLUE_D)
+
+    # Side-profile head: one eye, projecting nose and beard, but same cap/beard identity.
+    ellipse(d, (10, 4 + bob, 23, 17 + bob), SKIN, INK, 2)
+    rect(d, (11, 5 + bob, 21, 8 + bob), SKIN_HI)
+    poly(d, [(9, 4 + bob), (11, 1 + bob), (22, 1 + bob), (25, 4 + bob)], NAVY)
+    rect(d, (8, 4 + bob, 26, 7 + bob), NAVY, INK, 2)
+    rect(d, (11, 2 + bob, 21, 3 + bob), NAVY_HI)
+    rect(d, (16, 3 + bob, 18, 5 + bob), "#e6b955")
+    ellipse(d, (8, 9 + bob, 11, 13 + bob), SKIN, INK, 1)
+    rect(d, (18, 9 + bob, 20, 11 + bob), INK)
+    poly(d, [(21, 11 + bob), (25, 13 + bob), (21, 15 + bob)], SKIN_D)
+    poly(d, [(12, 13 + bob), (18, 13 + bob), (23, 15 + bob), (22, 21 + bob), (17, 24 + bob), (12, 21 + bob)], CREAM)
+    rect(d, (15, 14 + bob, 21, 16 + bob), CREAM_HI)
+
+    side_leg(False, step)
+    near_hand_x = 22 - step * 0.45
+    poly(d, [(20, 16 + bob), (23, 17 + bob), (near_hand_x + 2, 27), (near_hand_x - 1, 27)], BLUE)
+    rect(d, (20, 17 + bob, 22, 19 + bob), BLUE_HI)
+    ellipse(d, (near_hand_x - 2, 25, near_hand_x + 2, 29), SKIN, INK, 2)
+    return im
+
+
 def part(which, rear=False, mood="neutral"):
     im = image()
     if which == "torso": torso(im, rear)
@@ -174,14 +222,25 @@ save("keeper_back_head", [part("head", True)], pivot=[16, 11])
 save("keeper_reference", [compose("front", "neutral")])
 
 save("keeper_idle", [compose("front", "neutral", bob=b) for b in (0, 0, -1, 0)], 6)
-save("keeper_walk", [compose("front", "neutral", phase=p, bob=-abs(p) // 2) for p in (-2, -1, 0, 1, 2, 1, 0, -1)], 10)
+walk_frames = [side_walk(p) for p in (-3, -2, 0, 2, 3, 2, 0, -2)]
+save("keeper_walk", walk_frames, 10)
 save("keeper_cook_back", [compose("back", hands=h, bob=b) for h, b in ((4, 0), (5, -1), (6, -1), (5, 0), (4, 0), (3, 0))], 8)
 save("keeper_wash_back", [compose("back", hands=h, bob=b) for h, b in ((3, 0), (4, 0), (5, -1), (4, -1), (3, 0), (2, 0))], 8)
 save("keeper_brush_teeth_back", [compose("back", hands=h, bob=b) for h, b in ((4, 0), (6, 0), (4, 0), (6, -1), (4, -1), (5, 0))], 8)
 
 # A transparent source contact sheet makes alignment mistakes easy to spot.
 contact = Image.new("RGBA", (W * 3, H * 2), (244, 236, 214, 255))
-for i, frame in enumerate((compose("front", "happy"), compose("front"), compose("back"), compose("front", phase=-2), compose("front", phase=2), compose("back", hands=5))):
+for i, frame in enumerate((compose("front", "happy"), side_walk(0), compose("back"), side_walk(-3), side_walk(3), compose("back", hands=5))):
     contact.alpha_composite(frame, ((i % 3) * W, (i // 3) * H))
 contact.save(Path(__file__).with_name("keeper-contact-sheet.png"), optimize=True)
+
+# Friendly enlarged loop for direct review outside the game and catalogue.
+preview_frames = []
+for frame in walk_frames:
+    canvas = Image.new("RGBA", (192, 240), (244, 236, 214, 255))
+    enlarged = frame.resize((192, 240), Image.Resampling.NEAREST)
+    canvas.alpha_composite(enlarged)
+    preview_frames.append(canvas.convert("P", palette=Image.Palette.ADAPTIVE, colors=128))
+preview = ROOT / "docs/floor-asset-catalogue/keeper-walk-preview.gif"
+preview_frames[0].save(preview, save_all=True, append_images=preview_frames[1:], duration=100, loop=0, disposal=2, optimize=False)
 print(f"Keeper batch authored in {OUT}")

@@ -55,4 +55,10 @@ for raw in keeper_pngs:
 for name,(frames,fps) in required_clips.items():
     assert manifest[name]['frames']==frames and manifest[name]['fps']==fps
 assert all(any(r['asset_id']==name and r['implementation_status']=='delivered-review' for r in rows) for name in required_clips)
+walk=Image.open(root/'public/sprites'/manifest['keeper_walk']['file']).convert('RGBA')
+walk_frames=[walk.crop((i*128,0,(i+1)*128,160)) for i in range(8)]
+assert len({frame.tobytes() for frame in walk_frames})>=5
+assert len({frame.getbbox()[3] for frame in walk_frames})==1
+preview=Image.open(root/'docs/floor-asset-catalogue/keeper-walk-preview.gif')
+assert preview.is_animated and preview.n_frames==8 and preview.info['duration']==100
 print('Verified: 71 spaces, 1531 rows, owned-item states, 9 TV/lamp/FX exports, 22 aligned keeper exports, hard alpha, animated clips and manifest contracts.')

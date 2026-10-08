@@ -18,6 +18,10 @@ BB Sea news literally reads `B B SEA`, adapted from the supplied BBC NEWS refere
 
 The Completed assets and Pixel studio tabs also contain the keeper continuation: aligned front/back master parts and the first five production clips. Search `keeper_` to isolate them. The large turnaround is a style reference; the 32 × 40 density-4 strips are the runtime review candidates.
 
+The production walk is an eight-frame right-facing side cycle at 10 fps. The
+runtime mirrors it for left-facing movement. `keeper-walk-preview.gif` is an
+enlarged loop of those exact frames for quick review.
+
 ## Art corrections recorded from this review
 
 Frank’s later directions supersede earlier coarse one-source-pixel exports:
