@@ -41,12 +41,13 @@ interface Props {
 
 const SKIN = '#f1c9a0'
 
-function Keeper({ anim, mood, walking, face, rear }: { anim: string; mood: ReturnType<typeof moodWord>; walking: boolean; face: 1 | -1; rear: boolean }) {
-  const clip = walking ? 'walk' : anim
+function Keeper({ anim, mood, walking, face, rear, action }: { anim: string; mood: ReturnType<typeof moodWord>; walking: boolean; face: 1 | -1; rear: boolean; action?: string }) {
+  const clip = walking ? 'walk' : anim === 'none' ? 'idle' : anim
+  const productionClip = rear ? action === 'brush_teeth' ? 'brush_teeth_back' : action === 'wash_basin' ? 'wash_back' : 'cook_back' : clip
   const mouth = mood === 'chipper' ? 'M-6 -76 Q0 -68 6 -76' : mood === 'content' ? 'M-5 -75 Q0 -71 5 -75' : mood === 'soso' ? 'M-5 -74 L5 -74' : 'M-6 -72 Q0 -78 6 -72'
   return (
     <g className={`keeper a-${clip} ${rear ? 'keeper-rear' : ''}`}>
-      <Sprite name={[`keeper_clip_${clip}_${rear ? 'rear' : 'side'}`, `keeper_${clip}`]} w={90} h={130}>
+      <Sprite name={[`keeper_clip_${clip}_${rear ? 'rear' : 'side'}`, `keeper_${productionClip}`, `keeper_${clip}`]} w={90} h={130}>
         <g transform={`scale(${face} 1)`}>
           <g className="legs">
             <rect className="leg l1" x={-9} y={-30} width={8} height={30} fill="#2e3d5a" />
@@ -278,7 +279,7 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
       {!hidden && (
         <g transform={`translate(${pos.x} ${asleep ? pos.y - 26 : pos.y})`}>
           <g className={asleep ? 'lying' : undefined}>
-            <Keeper anim={anim} mood={mood} walking={pos.walking} face={pos.face} rear={rearWork} />
+            <Keeper anim={anim} mood={mood} walking={pos.walking} face={pos.face} rear={rearWork} action={d?.id} />
           </g>
         </g>
       )}

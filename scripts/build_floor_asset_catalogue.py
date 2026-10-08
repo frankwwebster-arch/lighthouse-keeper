@@ -165,7 +165,8 @@ for s in spaces:
     if s['space_id']=='zero_gravity':poses|={'float_spacesuit'}
     for pose in sorted(poses):
         n,fps=POSES[pose]
-        row(s,'keeper_'+pose,'keeper_clip',0,'Reusable task pose','on',f'{n}@{fps}fps',pose,'floor (16,40); neck (16,11); shoulders (10,15)/(22,15); hips (13,25)/(19,25)',f'shared keeper_{pose}','not repairable','hidden sequence' if n==0 else 'planned','32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation.',[32,40])
+        aid='keeper_'+pose
+        row(s,aid,'keeper_clip',0,'Reusable task pose','on',f'{n}@{fps}fps',pose,'floor (16,40); neck (16,11); shoulders (10,15)/(22,15); hips (13,25)/(19,25)',f'shared keeper_{pose}','not repairable','delivered-review' if aid in manifest else ('hidden sequence' if n==0 else 'planned'),'32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation.',[32,40])
     for fx,size,n,fps,anchor in [('broken_smoke',[12,16],8,8,[6,16]),('broken_sparks',[12,12],6,12,[6,6]),('floor_arrival_smoke',[64,64],8,12,[32,64]),('shine',[16,16],4,8,[8,16])]:
         if s['space_id']=='shop' and fx.startswith('broken'):continue
         aid='fx_'+fx
@@ -174,7 +175,8 @@ for s in spaces:
 shared={'space_id':'shared','name':'Shared world / keeper kit','category':'shared','placement_rule':'world layers / explicit anchors','stack_eligible':False,'dependencies':'renderer','activities':'all spaces','unlock_challenge':'none','priority':'P0','dimensions':[32,40]}
 for view in ['front','back']:
     for part in ['torso','arm_l','arm_r','leg_l','leg_r']+(['head_happy','head_neutral','head_grumpy','head_asleep','head_open'] if view=='front' else ['head']):
-        row(shared,'keeper_'+view+'_'+part,'keeper_part',0,'Aligned reusable puppet','standard','1','idle','canvas 32x40; floor (16,40); pivots per production kit','keeper master silhouette','none','planned','Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head.',[32,40])
+        aid='keeper_'+view+'_'+part
+        row(shared,aid,'keeper_part',0,'Aligned reusable puppet','standard','1','idle','canvas 32x40; floor (16,40); pivots per production kit','keeper master silhouette','none','delivered-review' if aid in manifest else 'planned','Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head.',[32,40])
 for asset,size,n,fps in [('fx_steam',[16,20],8,8),('fx_water_bubbles',[16,16],6,8),('fx_music_notes',[20,20],8,8),('fx_zzz',[20,20],8,4),('fx_splash',[48,32],8,12),('fx_rain',[8,16],4,10),('fx_snow',[8,16],4,8),('fx_lightning',[16,16],4,12),('fx_dust',[16,16],6,8),('fx_stink',[16,16],6,8),('fx_heart',[12,12],4,8),('fx_coin',[12,12],4,8),('fx_lamp_beam',[64,35],4,6),('bubble_speech',[36,20],4,6),('bubble_thought',[36,20],4,6),('bubble_alert',[20,20],4,8)]:
     row(shared,asset,'shared_effect',0,'Activity/reaction feedback','on',f'{n}@{fps}fps','none',f'bottom-centre ({size[0]//2},{size[1]})','shared world kit','none','planned','Separate layers; render at integer 4x; z95 effects, z110 bubbles.',size)
 for asset,size in [('tower_base',[110,35]),('tower_lamproom',[110,35]),('tower_roof',[110,20]),('ground_strip',[300,30]),('tower_stripe_red',[110,8]),('tower_stripe_white',[110,8]),('bg_sky',[300,190]),('bg_clouds',[300,190]),('bg_distant_village',[300,50]),('bg_sea',[300,80]),('bg_island_back',[300,70]),('bg_lighthouse_shell',[110,35]),('bg_terrain',[300,70]),('bg_foreground',[300,30]),('facade_left',[55,35]),('facade_right',[55,35]),('island_heal_soil',[32,16]),('island_split_rock',[32,32])]:
@@ -184,12 +186,13 @@ for prop in ['pan','toothbrush','book','phone','rod','cup','repair_tool','oilski
 for npc,size,n in [('cat_idle',[24,16],4),('cat_walk',[24,16],8),('visitor',[22,32],4),('seagull',[16,12],4),('ship',[48,24],4),('whale',[32,16],4),('pirate_ship',[48,24],4)]:
     row(shared,'npc_'+npc,'npc_or_spotting_target',0,'Activity/spotting/visitor content','standard;on',f'1; on {n}@8fps','none',f'bottom-centre ({size[0]//2},{size[1]})','shared NPC family','not keeper machinery','planned','Separate originals; do not reuse rejected style_a blocky art.',size)
 for pose,(n,fps) in POSES.items():
-    if not any(r['asset_id']=='keeper_'+pose for r in rows):row(shared,'keeper_'+pose,'keeper_clip',0,'Reusable reaction or activity','on',f'{n}@{fps}fps',pose,'floor (16,40)','shared keeper','none','planned' if n else 'hidden sequence','Aligned 32x40 frames; hand-drawn rotations only.',[32,40])
+    aid='keeper_'+pose
+    if not any(r['asset_id']==aid for r in rows):row(shared,aid,'keeper_clip',0,'Reusable reaction or activity','on',f'{n}@{fps}fps',pose,'floor (16,40)','shared keeper','none','delivered-review' if aid in manifest else ('planned' if n else 'hidden sequence'),'Aligned 32x40 frames; hand-drawn rotations only.',[32,40])
 with (OUT/'catalogue.csv').open('w',newline='') as f:
-    w=csv.DictWriter(f,fieldnames=FIELDS);w.writeheader();w.writerows(rows)
+    w=csv.DictWriter(f,fieldnames=FIELDS,lineterminator='\n');w.writeheader();w.writerows(rows)
 with (OUT/'spaces.csv').open('w',newline='') as f:
     fields=['space_id','name','category','placement_rule','stack_eligible','dimensions','dependencies','activities','unlock_challenge','layout','bathroom_rule','breakdown_design','decision','source','priority']
-    w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows({k:('x'.join(map(str,s[k])) if k=='dimensions' else s[k]) for k in fields} for s in spaces)
+    w=csv.DictWriter(f,fieldnames=fields,lineterminator='\n');w.writeheader();w.writerows({k:('x'.join(map(str,s[k])) if k=='dimensions' else s[k]) for k in fields} for s in spaces)
 # Asset status is editable annotation data, not a change to runtime mechanics.
 summary=Counter(r['implementation_status'] for r in rows)
 payload={'base_commit':evidence['baseCommit'],'spaces':spaces,'rows':rows,'summary':dict(summary),'native_canvas_published':False,'revision':'2026-10-08 review batch; ON required for operating devices; passive furniture uses standard/occupied states'}
@@ -200,13 +203,17 @@ for key,e in manifest.items():
     p=ROOT/'public/sprites'/e['file'];images[key]={'src':'data:image/png;base64,'+base64.b64encode(p.read_bytes()).decode(),'w':e['w'],'h':e['h'],'frames':e['frames'],'fps':e.get('fps',0)}
 payload['images']=images
 payload['references']={}
-for label,p in [('Inset lantern surround — new review source',SRC/'lantern-inset-source.png'),('Original CRT — preferred style and production master',SRC/'tv-original-standard-source.png'),('Original TV ON reference',SRC/'tv-original-on-source.png'),('Rejected full-width room — sharpness reference only',SRC/'room-lamp-source.png')]:
+for label,p in [('Keeper turnaround — new review source',ROOT/'art/source/keeper-first-batch/keeper-turnaround-source.png'),('Keeper aligned contact sheet — new review batch',ROOT/'art/source/keeper-first-batch/keeper-contact-sheet.png'),('Inset lantern surround — new review source',SRC/'lantern-inset-source.png'),('Original CRT — preferred style and production master',SRC/'tv-original-standard-source.png'),('Original TV ON reference',SRC/'tv-original-on-source.png'),('Rejected full-width room — sharpness reference only',SRC/'room-lamp-source.png')]:
     if p.exists():payload['references'][label]='data:image/png;base64,'+base64.b64encode(p.read_bytes()).decode()
 TEMPLATE=(SRC/'review-template.html').read_text()
 # Keep the source template compact, while injecting the review-only broadcast
 # controls into the generated standalone canvas. These settings are annotations
 # and never alter runtime sprites or game mechanics.
 TEMPLATE=TEMPLATE.replace('</style>', '<style>.channel-stage{position:relative;display:inline-block;overflow:hidden;image-rendering:pixelated;background:#14243a}.shimmer-overlay{position:absolute;left:0;right:0;height:4px;background:rgba(255,244,190,.9);mix-blend-mode:screen;pointer-events:none;opacity:.65}</style>')
+TEMPLATE=TEMPLATE.replace('Native Codex Canvas publication is unavailable in this session. Frank’s corrections: use the inset glazed lantern cap from the full lighthouse reference, with wraparound walkway; preserve the original CRT box proportions. Coarse exports, the full-width room and stretched TV are rejected. Logical footprints stay fixed; new PNGs retain 4 source pixels per logical pixel.', 'The new keeper batch follows the approved CRT detail, palette and hard-alpha rules while preserving the familiar navy cap, blue jumper and cream beard. Frank’s earlier corrections remain locked: inset glazed lantern cap with wraparound walkway; original CRT box proportions; fixed logical footprints and density-4 production sources.')
+TEMPLATE=TEMPLATE.replace('The lamp room is the narrow glazed lantern chamber on a wraparound outside walkway, matching the top of the full lighthouse reference. The original CRT is the production master, with its aspect ratio preserved. Rejected studies remain clearly labelled for review history.', 'The keeper turnaround and aligned contact sheet are the newest review sources. The original CRT remains the object-style master; the inset glazed lantern chamber remains the top-floor reference. Rejected studies stay labelled for review history.')
+TEMPLATE=TEMPLATE.replace("k.startsWith('obj_tv')||k.startsWith('fx_broken')||k==='room_lamp'", "k.startsWith('keeper_')||k.startsWith('obj_tv')||k.startsWith('fx_broken')||k==='room_lamp'")
+TEMPLATE=TEMPLATE.replace(' · isolated branch: codex/floor-asset-catalogue.', '.')
 TEMPLATE=TEMPLATE.replace('Every interactive item tier requires <b>standard + ON + broken</b>; proprietor-owned shop has no broken state.', 'Operating devices require <b>standard + ON + broken</b>; passive furniture uses standard/occupied states; proprietor-owned shop has no broken state.')
 TEMPLATE=TEMPLATE.replace('one opaque ON/engaged state for every interactive item tier.', 'opaque ON/engaged states for operating devices; passive furniture uses actor-layer occupied poses.')
 TEMPLATE=TEMPLATE.replace('<div id="channelpreview"></div>', '<div id="channelpreview"></div><div id="shimmer-controls" class="toolbar"><label>Shimmer strength <input id="shimmerstrength" type="range" min="0" max="100" value="80"><output id="shimmerstrengthvalue">80%</output></label><label>Shimmer speed <input id="shimmerspeed" type="range" min="25" max="200" value="100"><output id="shimmerspeedvalue">100%</output></label><span class="muted compact">Tune the animated broadcast highlight; settings save and export with your review.</span></div>')

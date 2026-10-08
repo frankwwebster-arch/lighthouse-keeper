@@ -90,6 +90,12 @@ matched table/chair**. Record the hand, face, seat and table-use anchors. The
 catalogue's 32 × 40 keeper clips are authoring slots for reusable poses; they
 do not license arbitrary rescaling of the runtime actor.
 
+The first keeper review candidate now establishes the intended identity:
+compact older keeper, navy cap with a tiny brass badge, blue work jumper with
+a cream stripe, large cream beard, dark trousers and boots. Its aligned master
+parts and initial clips are the scale reference for subsequent furniture, but
+remain review candidates until Frank approves them in `review.html`.
+
 Furniture approval requires a quick silhouette test with the keeper beside it
 and, where relevant, seated at it. Device approval requires a believable hand
 reach and a clear standing or seated use position. If the keeper's proportions

@@ -1,6 +1,6 @@
 # Production sprites — current route
 
-The first production Pixel batch is live for the shell stripes and the three implemented room plates. Objects, characters, effects and any missing room art still draw vector fallbacks. Existing files under `style_b_pixel/` remain concept/prototype references and must not be sliced into production sprites.
+The first production Pixel batch is live for the shell stripes and three implemented room plates. The review catalogue adds the CRT television, shared broken effects and inset lantern surround. The keeper review batch adds aligned front/back master parts and the first five clips; unbuilt objects, character actions, effects and room art retain vector fallbacks. Existing files under `style_b_pixel/` remain concept/prototype references and must not be sliced into production sprites.
 
 The authoritative art inputs are:
 
@@ -38,6 +38,6 @@ An animated horizontal strip includes playback metadata:
 
 ## Current delivery boundary
 
-Delivery-order item 1 is complete: `tower_stripe_{red,white}.png` and `room_{kitchen,living,bedroom}.png`. Exact normalized deliveries are in `art/raw/first-production-batch/`, published exports are in `public/sprites/`, and untouched generated sources plus prompt notes are in `art/source/first-production-batch/`. `room_bedroom.png` includes the en-suite partition and doorway.
+Delivery-order item 1 is complete: `tower_stripe_{red,white}.png` and `room_{kitchen,living,bedroom}.png`. Delivery-order item 2 and the keeper subset of item 3 are review candidates: the CRT/channel strips, shared broken overlays, keeper master parts, and `idle`, `walk`, `cook_back`, `wash_back`, and `brush_teeth_back`. Their authored sources are under `art/source/floor-asset-catalogue/` and `art/source/keeper-first-batch/`; exact raw deliveries are under matching `art/raw/` folders.
 
-Do not treat this as permission to begin keeper clips, object-state strips, lamp-room art, `tower_base.png`, `tower_lamproom.png`, `tower_roof.png`, `ground_strip.png`, or later aquarium, weather-station, hidden-lair, lift, pet, visitor, ship and weather batches. The next production item remains delivery-order item 2 in `docs/PRODUCTION_ASSET_KIT.md`.
+Do not infer approval for the review candidates until Frank marks them approved. Remaining keeper clips, object sets, shell pieces, later rooms, pets, visitors, ships and weather batches stay pending. The next keeper step after review is `reach_use`, followed by the action clips listed in `docs/PRODUCTION_ASSET_KIT.md`.

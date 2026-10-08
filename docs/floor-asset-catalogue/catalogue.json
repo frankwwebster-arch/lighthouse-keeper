@@ -15392,7 +15392,7 @@
       "reusable_source": "shared keeper_cook_back",
       "breakdown_effect": "not repairable",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -15440,7 +15440,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -15536,7 +15536,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -16232,7 +16232,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -16352,7 +16352,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -17000,7 +17000,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -17168,7 +17168,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -17192,7 +17192,7 @@
       "reusable_source": "shared keeper_wash_back",
       "breakdown_effect": "not repairable",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -17576,7 +17576,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -17672,7 +17672,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -18032,7 +18032,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P1",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -18104,7 +18104,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P1",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -18536,7 +18536,7 @@
       "reusable_source": "shared keeper_cook_back",
       "breakdown_effect": "not repairable",
       "priority": "P1",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -18584,7 +18584,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P1",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -18656,7 +18656,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P1",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -19088,7 +19088,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P1",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -19208,7 +19208,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P1",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -19616,7 +19616,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -19712,7 +19712,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -20168,7 +20168,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -20264,7 +20264,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -20648,7 +20648,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -20744,7 +20744,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -21080,7 +21080,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -21176,7 +21176,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -21560,7 +21560,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -21656,7 +21656,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -22184,7 +22184,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -22280,7 +22280,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -22736,7 +22736,7 @@
       "reusable_source": "shared keeper_cook_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -22784,7 +22784,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -22856,7 +22856,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -23288,7 +23288,7 @@
       "reusable_source": "shared keeper_cook_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -23336,7 +23336,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -23432,7 +23432,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -23816,7 +23816,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -23888,7 +23888,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -24272,7 +24272,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -24344,7 +24344,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -24728,7 +24728,7 @@
       "reusable_source": "shared keeper_cook_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -24776,7 +24776,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -24872,7 +24872,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -25280,7 +25280,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -25352,7 +25352,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -25760,7 +25760,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -25856,7 +25856,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -26528,7 +26528,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -26600,7 +26600,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -27056,7 +27056,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -27128,7 +27128,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -27416,7 +27416,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -27488,7 +27488,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -27920,7 +27920,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -27992,7 +27992,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -28400,7 +28400,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -28496,7 +28496,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -28952,7 +28952,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -29048,7 +29048,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -29480,7 +29480,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -29696,7 +29696,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -29720,7 +29720,7 @@
       "reusable_source": "shared keeper_wash_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -30128,7 +30128,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -30200,7 +30200,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -30536,7 +30536,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -30608,7 +30608,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -30968,7 +30968,7 @@
       "reusable_source": "shared keeper_cook_back",
       "breakdown_effect": "not repairable",
       "priority": "P1",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -31016,7 +31016,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P1",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -31112,7 +31112,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P1",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -31496,7 +31496,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -31592,7 +31592,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -31616,7 +31616,7 @@
       "reusable_source": "shared keeper_wash_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -32072,7 +32072,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -32168,7 +32168,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -32192,7 +32192,7 @@
       "reusable_source": "shared keeper_wash_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -32648,7 +32648,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -32744,7 +32744,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -32768,7 +32768,7 @@
       "reusable_source": "shared keeper_wash_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -33152,7 +33152,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -33248,7 +33248,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -33272,7 +33272,7 @@
       "reusable_source": "shared keeper_wash_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -33656,7 +33656,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -33752,7 +33752,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -33776,7 +33776,7 @@
       "reusable_source": "shared keeper_wash_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -34160,7 +34160,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -34256,7 +34256,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -34280,7 +34280,7 @@
       "reusable_source": "shared keeper_wash_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -34616,7 +34616,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P1",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -34688,7 +34688,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P1",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -35000,7 +35000,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -35072,7 +35072,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -35408,7 +35408,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -35480,7 +35480,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -35864,7 +35864,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -36080,7 +36080,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -36440,7 +36440,7 @@
       "reusable_source": "shared keeper_cook_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -36488,7 +36488,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -36560,7 +36560,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -36968,7 +36968,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -37184,7 +37184,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -37208,7 +37208,7 @@
       "reusable_source": "shared keeper_wash_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -37520,7 +37520,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -37592,7 +37592,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -37976,7 +37976,7 @@
       "reusable_source": "shared keeper_cook_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -38024,7 +38024,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -38096,7 +38096,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -38456,7 +38456,7 @@
       "reusable_source": "shared keeper_cook_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -38504,7 +38504,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -38576,7 +38576,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -38888,7 +38888,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -38984,7 +38984,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -39248,7 +39248,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -39320,7 +39320,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -39704,7 +39704,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -39776,7 +39776,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -40184,7 +40184,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -40256,7 +40256,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -40280,7 +40280,7 @@
       "reusable_source": "shared keeper_wash_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -40616,7 +40616,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -40688,7 +40688,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -41048,7 +41048,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -41120,7 +41120,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -41744,7 +41744,7 @@
       "reusable_source": "shared keeper_cook_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -41792,7 +41792,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -41888,7 +41888,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -42176,7 +42176,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -42248,7 +42248,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -42632,7 +42632,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -42704,7 +42704,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -43136,7 +43136,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -43352,7 +43352,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -43376,7 +43376,7 @@
       "reusable_source": "shared keeper_wash_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -43784,7 +43784,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -43856,7 +43856,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -44168,7 +44168,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -44240,7 +44240,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -44576,7 +44576,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -44648,7 +44648,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -45032,7 +45032,7 @@
       "reusable_source": "shared keeper_cook_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -45080,7 +45080,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -45152,7 +45152,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -45488,7 +45488,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -45560,7 +45560,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -45944,7 +45944,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -46040,7 +46040,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -46400,7 +46400,7 @@
       "reusable_source": "shared keeper_cook_back",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -46448,7 +46448,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -46544,7 +46544,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -47024,7 +47024,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -47096,7 +47096,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -47408,7 +47408,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -47480,7 +47480,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -47768,7 +47768,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -47840,7 +47840,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -48104,7 +48104,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -48176,7 +48176,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -48440,7 +48440,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -48512,7 +48512,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -48776,7 +48776,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -48848,7 +48848,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -49112,7 +49112,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -49184,7 +49184,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -49448,7 +49448,7 @@
       "reusable_source": "shared keeper_idle",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -49520,7 +49520,7 @@
       "reusable_source": "shared keeper_walk",
       "breakdown_effect": "not repairable",
       "priority": "P2",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "32x40 aligned frames; hand-drawn angles and integer translation; no arbitrary raster rotation."
     },
     {
@@ -49664,7 +49664,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -49688,7 +49688,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -49712,7 +49712,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -49736,7 +49736,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -49760,7 +49760,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -49784,7 +49784,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -49808,7 +49808,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -49832,7 +49832,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -49856,7 +49856,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -49880,7 +49880,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -49904,7 +49904,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -49928,7 +49928,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -49952,7 +49952,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -49976,7 +49976,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -50000,7 +50000,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -50024,7 +50024,7 @@
       "reusable_source": "keeper master silhouette",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Front/back same canvas; layered z10/20/30/40/50/80; cap/beard included in head."
     },
     {
@@ -51368,7 +51368,7 @@
       "reusable_source": "shared keeper",
       "breakdown_effect": "none",
       "priority": "P0",
-      "implementation_status": "planned",
+      "implementation_status": "delivered-review",
       "notes": "Aligned 32x40 frames; hand-drawn rotations only."
     },
     {
@@ -51614,8 +51614,8 @@
   ],
   "summary": {
     "delivered-existing": 6,
-    "planned": 1372,
-    "delivered-review": 142,
+    "planned": 1192,
+    "delivered-review": 322,
     "hidden sequence": 10,
     "retired": 1
   },

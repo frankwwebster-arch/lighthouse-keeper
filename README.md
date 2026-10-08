@@ -21,7 +21,7 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 - Every object renderer accepts `standard`, `on`, and `broken`; active gameplay drives `on`. Broken objects share integer-step casing wobble, smoke and sparks. Add `?broken=tv,cooker` (or `?broken=all`) to the URL for the internal art-state preview.
 - Objects can be upgraded with credits from their tap menu. The tier list is `data/upgrades.csv`. Higher tiers do more good, faster; the bed's tier sets the morning's energy. Grown-ups set upgrade prices (overall %, then per tier) and can gift upgrades. Tier sprites are `obj_<id>_t<n>_<state>`; until they exist a `T<n>` tag stands in. `?tiers=3` previews top tiers.
 - Keeper-owned assets can now break during play, block their normal actions, and be repaired. Grown-ups control average fault frequency and maximum concurrent faults; defaults are off / one. Breakdown events expose placeholder SFX categories for later audio. The shop is excluded because it is not the keeper's asset.
-- Cooker and basin work use a reusable rear-facing keeper fallback. Production keeper PNGs are not delivered yet; neither are object-state strips or later-floor art.
+- The first production keeper review batch now supplies aligned front/back master parts plus idle, walk, cooking, washing and brushing strips. Cooker and basin jobs select the matching rear-facing strip; unbuilt keeper actions retain the vector fallback. Remaining object-state sets and later-floor art are still pending.
 - Sprite manifest entries may be old string paths or `{ "file", "frames", "fps" }` objects. Horizontal strips animate without CSS scaling or rotation.
 - All SVG object targets work by touch, mouse, Enter and Space. At a 1024 × 768 iPad viewport, the first-three-floor targets were verified at a minimum 82 × 94 CSS px.
 
@@ -30,7 +30,8 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 - `src/game/` — rules (`config.ts` has every number, `commands.ts` the command book and silly reactions, `engine.ts` the rules).
 - `src/ui/floors.tsx` — fixed-width room definitions and the reserved diving geometry, which follows the bedroom.
 - `src/ui/art.tsx` and `src/ui/Sprite.tsx` — vector fallbacks, the three-state renderer, and production strip playback.
-- `public/sprites/` — the five exact-size PNGs from the first production Pixel batch plus their runtime manifest.
+- `public/sprites/` — production room, TV/effect and keeper review PNGs plus their runtime manifest.
+- `art/source/keeper-first-batch/` — the generated keeper turnaround, deterministic density-4 authoring script, contact sheet and provenance notes.
 - `art/source/first-production-batch/` — untouched generated sources and prompt/provenance notes; `scripts/build_first_asset_batch.py` rebuilds the exact `art/raw/` deliveries, then `npm run sprites` publishes them.
 - `docs/PRODUCTION_ASSET_KIT.md` — exact Pixel filenames, dimensions, anchors, pivots, z-order, frame counts, fps, and delivery order.
 - `docs/EXPANSION_DESIGN.md` — living write-up of agreed room ideas, random floor placement, night reveals, weather, transport, island expansions and energy systems.
@@ -57,4 +58,4 @@ npm run typecheck
 npm run build
 ```
 
-All 73 tests passed, the production build completed, and a headless Chromium pass covered the integrated first asset batch at 1024 × 768 with no console errors. Vercel production was verified after commit `892873e`: the live manifest exactly matched the five local entries and served the 105 × 35 kitchen PNG. Pushes to `main` retain the existing deployment workflow.
+The current verification commands above cover the game and sprite pipeline. The published main version remains unchanged while the TV/style-guide and keeper assets are under review in this project folder.

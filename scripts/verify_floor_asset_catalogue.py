@@ -37,4 +37,22 @@ for name,c in contracts.items():
         assert len(set(frames))>=2,name
 assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
-print('Verified: 71 spaces, 1531 rows, owned-item states, 9 exact alpha-safe exports, animated channels and shared FX contracts.')
+keeper_dir=root/'art/raw/keeper-first-batch'
+keeper_pngs=sorted(keeper_dir.glob('*.png'))
+assert len(keeper_pngs)==22
+required_clips={'keeper_idle':(4,6),'keeper_walk':(8,10),'keeper_cook_back':(6,8),'keeper_wash_back':(6,8),'keeper_brush_teeth_back':(6,8)}
+for raw in keeper_pngs:
+    sidecar=json.loads(raw.with_suffix('.json').read_text())
+    im=Image.open(raw).convert('RGBA')
+    assert im.size==(sidecar['w']*sidecar['density']*sidecar['frames'],sidecar['h']*sidecar['density'])
+    assert (sidecar['w'],sidecar['h'],sidecar['density'],sidecar['anchor'])==(32,40,4,[16,40])
+    assert set(im.getchannel('A').tobytes()) <= {0,255}
+    name=raw.stem.rsplit('_f',1)[0]
+    m=manifest[name]
+    for key in ['w','h','frames','fps','density','anchor']: assert m.get(key,0)==sidecar.get(key,0),(name,key)
+    exported=Image.open(root/'public/sprites'/m['file']).convert('RGBA')
+    assert ImageChops.difference(im,exported).getbbox() is None
+for name,(frames,fps) in required_clips.items():
+    assert manifest[name]['frames']==frames and manifest[name]['fps']==fps
+assert all(any(r['asset_id']==name and r['implementation_status']=='delivered-review' for r in rows) for name in required_clips)
+print('Verified: 71 spaces, 1531 rows, owned-item states, 9 TV/lamp/FX exports, 22 aligned keeper exports, hard alpha, animated clips and manifest contracts.')

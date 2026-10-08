@@ -128,8 +128,8 @@ The current Floor 3 reservation uses extension seam x 117, inner-door use point 
 ## Delivery order
 
 1. Floor bands, partitions and three room palettes. **Delivered 8 October 2026:** `tower_stripe_{red,white}.png` and `room_{kitchen,living,bedroom}.png`.
-2. Shared object-state overlays and one fully proven object (TV).
-3. Keeper master parts plus `idle`, `walk`, `cook_back`, `wash_back` and `brush_teeth_back`.
+2. Shared object-state overlays and one fully proven object (TV). **Delivered for review 8 October 2026.**
+3. Keeper master parts plus `idle`, `walk`, `cook_back`, `wash_back` and `brush_teeth_back`. **Delivered for review 8 October 2026; pending Frank’s approval.**
 4. Remaining object state sets and effects.
 5. Door/changing-room assets and dive outfit only when the extension becomes playable.
 

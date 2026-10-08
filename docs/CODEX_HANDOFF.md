@@ -69,7 +69,7 @@ Completed in the first implementation slice:
 
 Next priorities:
 
-1. Continue `docs/PRODUCTION_ASSET_KIT.md` at delivery-order item 2: shared object-state overlays and one complete TV state set.
+1. Review delivery-order items 2 and the first keeper subset of item 3 in `docs/floor-asset-catalogue/review.html`: CRT/object-state overlays plus aligned keeper master parts and five initial clips.
 2. Produce the aligned keeper master and required clips only when delivery-order item 3 begins.
 3. Add a day/night palette or overlay system and the proper roughly 30-second recap.
 4. Design future floor missions so eligible standard floors can unlock in different orders; do not hard-code a linear room sequence.

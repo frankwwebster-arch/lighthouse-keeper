@@ -25,6 +25,339 @@
   ],
   "z": 96
  },
+ "keeper_back_arm_l": {
+  "file": "keeper_back_arm_l.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   10,
+   15
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_back_arm_r": {
+  "file": "keeper_back_arm_r.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   22,
+   15
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_back_head": {
+  "file": "keeper_back_head.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   16,
+   11
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_back_leg_l": {
+  "file": "keeper_back_leg_l.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   13,
+   25
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_back_leg_r": {
+  "file": "keeper_back_leg_r.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   19,
+   25
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_back_torso": {
+  "file": "keeper_back_torso.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   16,
+   25
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_brush_teeth_back": {
+  "file": "keeper_brush_teeth_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_cook_back": {
+  "file": "keeper_cook_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_front_arm_l": {
+  "file": "keeper_front_arm_l.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   10,
+   15
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_front_arm_r": {
+  "file": "keeper_front_arm_r.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   22,
+   15
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_front_head_asleep": {
+  "file": "keeper_front_head_asleep.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   16,
+   11
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_front_head_grumpy": {
+  "file": "keeper_front_head_grumpy.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   16,
+   11
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_front_head_happy": {
+  "file": "keeper_front_head_happy.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   16,
+   11
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_front_head_neutral": {
+  "file": "keeper_front_head_neutral.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   16,
+   11
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_front_head_open": {
+  "file": "keeper_front_head_open.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   16,
+   11
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_front_leg_l": {
+  "file": "keeper_front_leg_l.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   13,
+   25
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_front_leg_r": {
+  "file": "keeper_front_leg_r.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   19,
+   25
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_front_torso": {
+  "file": "keeper_front_torso.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "pivot": [
+   16,
+   25
+  ],
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_idle": {
+  "file": "keeper_idle.png",
+  "w": 32,
+  "h": 40,
+  "frames": 4,
+  "fps": 6,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_reference": {
+  "file": "keeper_reference.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_walk": {
+  "file": "keeper_walk.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
+ "keeper_wash_back": {
+  "file": "keeper_wash_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "z": 50
+ },
  "obj_tv_broken": {
   "file": "obj_tv_broken.png",
   "w": 28,

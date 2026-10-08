@@ -16,4 +16,6 @@ Frank can annotate spaces/assets, add proposals, adjust pixel block size and pai
 
 The BB Sea channel preview has review-only Shimmer strength and Shimmer speed sliders. They tune the visible broadcast highlight without changing the committed sprite or runtime logic; export the review JSON if a preferred setting should be carried forward.
 
+The keeper continuation is now included in the same review canvas. It preserves the established cap, blue work jumper, cream stripe and beard while applying the CRT’s density-4 detail, hard-alpha edges and palette. The aligned 32 × 40 master parts and `idle`, `walk`, `cook_back`, `wash_back`, and `brush_teeth_back` strips are review candidates. Runtime cooker and basin work select the appropriate rear strip; actions not in this batch continue to use the existing fallback.
+
 Rebuild and verification commands are in [README.md](README.md). Review screenshots and native-size contact sheet are beside the HTML. Do not infer four separate objects from ON frames: they form one animation. The broken TV is one damaged image, with reusable overlays.

@@ -22,7 +22,7 @@ Upgrades: almost every object has Basic, Middle and Top tiers, listed in `data/u
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 
 ## Not built yet (agreed design)
-1. Continue production Pixel PNGs after the completed first batch. `public/sprites/manifest.json` now maps two 110 × 8 shell bands and the three 105 × 35 implemented room plates. Keeper, object-state, effect, lamp-room, exterior and later-floor art still use vector fallbacks or remain unbuilt.
+1. Review the TV/style-guide and keeper continuation in `docs/floor-asset-catalogue/review.html`. The keeper batch supplies aligned front/back parts and `idle`, `walk`, `cook_back`, `wash_back`, and `brush_teeth_back`; unbuilt actions retain vector fallbacks. Remaining object sets, shell pieces, exterior and later-floor art are still pending.
 2. Art for the mission floors (aquarium, weather station, hidden lair), their furniture, the lift and a floor-arrival effect (Codex; hooks in docs/FOR_CODEX.md).
 3. Tier art for upgrades (Codex; list in docs/FOR_CODEX.md). Typed commands for upgrading ("upgrade the TV") are not in yet; upgrades are bought from the tap menu.
 4. Mini games: fishing, cooking, telescope spotting.
