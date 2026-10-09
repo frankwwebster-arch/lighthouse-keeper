@@ -71,6 +71,11 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 - Every frame in every clip must depict the same man at the same world scale:
   the same skull size, head/face, beard, shoulder-to-hip body, fatness, hand
   size and boot size. Perspective does not change his size in this game.
+- Beard length and silhouette are identity-locked, not pose-dependent styling.
+  Match the beard root, lower edge, width and chin relationship to the approved
+  `keeper_walk` identity at the nearest comparable facing/head angle. Do not
+  let the beard become longer or shorter between clips unless Frank's exported
+  note explicitly requests a deliberate design change.
 - The corridor is effectively a flat, front-of-screen movement plane. The
   keeper remains the same height and width everywhere.
 - Measure the anatomical keeper, not the outer alpha box. Hats, helmets,
@@ -593,7 +598,12 @@ The comprehensive per-sheet correction list is in
 
 ## Review-comments workflow for the next task
 
-1. Obtain Frank's new comments. Prefer exact filenames from the review cards.
+1. Obtain Frank's exported `keeper-scale-choices.json` and read every saved
+   per-animation note before triage or drawing. A full-re-draft flag authorises
+   rebuilding the clip; it never authorises ignoring that clip's written notes.
+   Treat beard-length comments as identity corrections that must be checked
+   frame by frame against `keeper_walk`. Prefer exact filenames from the review
+   cards.
 2. Save a dated, immutable source copy under `docs/review/`, then create a
    working resolution table with columns: filename, frame(s), comment, class,
    decision, proposed change, status, verification and commit.

@@ -19,6 +19,11 @@ page explains it in ordinary language.
   14.5 px above the floor; side core depth 13 px; front/rear core width 19 px;
   head width 14.5 px; hand diameter 4 px; boot length 8 px. Anatomical landmark
   tolerance is 0.5 px and core-width tolerance is 1 px.
+- Beard length, lower-edge silhouette, width and its relationship to the chin
+  are fixed identity features. Compare every newly drawn or rebuilt frame with
+  `keeper_walk` at the closest facing/head angle; posture, costume and props do
+  not justify a longer or shorter beard. Per-animation exported notes remain
+  authoritative for identifying the clips and frames that require correction.
 - The vertical dive uses 48 × 56 with anchor `(24,56)`. Full parachute
   deployment uses 48 × 84 with anchor `(24,84)`. The keeper remains exactly the
   same size; only the transparent space around him grows.
