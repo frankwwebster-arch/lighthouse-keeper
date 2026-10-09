@@ -1,18 +1,18 @@
 {
-  "w": 48,
+  "w": 54,
   "h": 40,
   "frames": 8,
-  "fps": 4,
+  "fps": 4.5,
   "density": 4,
   "anchor": [
-    24,
-    40
+    27.0,
+    40.0
   ],
   "z": 50,
   "loop": false,
   "handUsePoint": [
-    24,
-    30
+    27.0,
+    30.15
   ],
   "facing": "back",
   "interaction": "retrieve-cake-from-oven"

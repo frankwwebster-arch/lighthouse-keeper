@@ -5,14 +5,14 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    20,
-    40
+    20.0,
+    40.0
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    20,
-    31
+    20.0,
+    31.18
   ],
   "facing": "front",
   "interaction": "water-plants"

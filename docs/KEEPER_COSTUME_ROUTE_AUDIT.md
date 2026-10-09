@@ -1,7 +1,7 @@
 # Keeper costume-route audit
 
-Audit date: 2026-10-09. Authority: the 187-sheet keeper batch, its JSON
-sidecars, `data/keeper_asset_contract.json` and the 169-card transition review.
+Audit date: 2026-10-09. Authority: the 191-sheet keeper batch, its JSON
+sidecars, `data/keeper_asset_contract.json` and the 173-card transition review.
 This audit excludes the standard blue uniform and treats privacy coverings as
 transition states rather than ordinary wearable costumes.
 
@@ -34,7 +34,7 @@ one-shot supplies its exit only where the endpoint is identical.
 | Old-school workout kit | weights rear; press-ups side; exercise bike front; trampoline front | side/front/back walk, side-to-front/rear turns, front bike mount/dismount and stand-to-floor press-up entry/exit | P0 family |
 | Winter coat | side snow-clearing loop | side walk first; add a rear turn only if a rear winter task is approved | P0 |
 | Striped swimming costume | horizontal/up/down swimming | pool-edge water entry and exit; land walking is unnecessary if changing remains hidden | P0 special entry |
-| Scuba | horizontal/up/down swimming | dive/water entry and exit linked to equipment change; ordinary corridor walk is unnecessary | P0 special entry |
+| Scuba | side jetty walk; 12-frame jetty dive; horizontal/up/down swimming | water exit plus hidden equipment change before/after the visible route | entry route delivered; exit P0 |
 | Sou'wester/oilskins | side/front/back walks | side-to-front and side-to-back turns before weather-room actions are attached | P1 |
 | Knight, pirate, spaceman, Halloween, Tarzan | side/front/back walks only | shared pose plan per costume: side-to-front turn, side-to-back turn, side/front sit only when an actual activity requires it | P2; activity-led |
 | Towel privacy | bath/shower entry and exit | none as a free-walking family; transitions must remain within the bathroom occlusion route | intentionally limited |
@@ -50,7 +50,8 @@ one-shot supplies its exit only where the endpoint is identical.
    `keeper_workout_walk_back`, matching front/rear turns, bike mount/dismount,
    and press-up lower/rise.
 4. `keeper_winter_coat_walk`.
-5. Swimming-costume pool entry/exit and scuba water entry/exit.
+5. Swimming-costume pool entry/exit and scuba water exit; scuba jetty walk and
+   water entry are delivered.
 6. Mechanic and sou'wester turns when their room routes are implemented.
 
 The novelty three-view walking families should not receive generic sit/turn
@@ -64,5 +65,6 @@ a playable route and avoids producing costume variants that never appear.
   deliberate water/privacy/fixture states, while the winter coat and four
   workout-kit activities are the genuine locomotion gap.
 - The artist-smock route contributes four new bridge/locomotion sheets.
-- Every multi-frame sheet remains authored at 4fps by default; game code may
-  override a clip's manifest FPS without altering its PNG.
+- Every multi-frame sheet remains authored at 4fps by default; accepted review
+  overrides range from 1fps to 10.5fps and are stored explicitly in each
+  sidecar/manifest without altering its PNG.

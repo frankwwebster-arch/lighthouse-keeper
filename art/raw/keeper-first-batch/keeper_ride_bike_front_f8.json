@@ -5,22 +5,22 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    24,
-    48
+    24.0,
+    48.0
   ],
   "z": 50,
   "loop": true,
   "seatPoint": [
-    24,
-    35
+    24.0,
+    39.16
   ],
   "handUsePoint": [
-    24,
-    27
+    24.0,
+    33.72
   ],
   "pedalPoint": [
-    24,
-    42
+    24.0,
+    43.92
   ],
   "outfit": "old-school-workout-kit",
   "facing": "front",

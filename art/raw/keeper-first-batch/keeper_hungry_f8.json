@@ -5,8 +5,8 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    16,
-    40
+    16.0,
+    40.0
   ],
   "z": 50,
   "loop": true,

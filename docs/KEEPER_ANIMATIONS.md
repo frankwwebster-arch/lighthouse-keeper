@@ -52,6 +52,8 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Press side switch | `keeper_switch_press_side` | right; mirror left; reverse to withdraw |
 | Press switch ahead | `keeper_switch_press_back` | rear/right hand; mirror for left hand; reverse to withdraw |
 | Parachute jump | `keeper_parachute_jump` | 9 frames; pack opens and round canopy deploys |
+| Drift under parachute | `keeper_parachute_drift` | 8-frame gentle left/right open-canopy loop; repeat for the required fall height; first frame exactly receives the deployed jump endpoint |
+| Land under parachute | `keeper_parachute_landing` | 10-frame one-shot from the neutral open canopy through touchdown/compression to standing; first frame exactly matches the drift hand-off phase |
 | Dive from platform | `keeper_platform_dive` | 10 frames; right/mirror left; ends vertical head-first |
 | Dig garden | `keeper_dig` | right; mirror left; soil remains separate |
 | Feed animals | `keeper_feed_animals` | right; mirror left; bowl and animal remain separate |
@@ -62,7 +64,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Row boat | `keeper_row_boat` | seated; two oars included; hull/water separate |
 | Climb into boat | `keeper_boat_enter` | right; fixed gunwale `(39,23)` and bench `(36,35)`; hull/dock separate; mirror left |
 | Climb out of boat | `keeper_boat_exit` | front-right; independent weight transfer; same gunwale/bench; mirror left |
-| Drive speedboat | `keeper_drive_speedboat` | seated at invisible helm; mirror when layout permits; global 4fps baseline |
+| Drive speedboat | `keeper_drive_speedboat` | seated at invisible helm; mirror when layout permits; 4fps |
 | Operate outboard | `keeper_operate_outboard` | rear three-quarter; fixed tiller point; mirror left |
 | Watch TV | `keeper_watch_tv` | rear three-quarter right; mirror left; screen stays visible |
 | Weld | `keeper_weld` | right; mirror left; goggles, gloves and torch included; workpiece separate |
@@ -75,7 +77,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Cross | `keeper_cross` | front; knitted eyebrows, frown, folded arms and clean boot stamp |
 | Vomit into toilet | `keeper_vomit_loo_back` | direct rear one-shot; separate toilet aligns its bowl target to `(32,35)` |
 | Walk in bathrobe | `keeper_bathrobe_walk` | cream terrycloth robe; right; mirror left |
-| Open shower door in bathrobe | `keeper_shower_door_open_bathrobe` | rear-right one-shot; separate handle aligns to `(35,18)`; mirror rear-left |
+| Open shower door in bathrobe | `keeper_shower_door_open_bathrobe` | 10-frame rear-right one-shot with two added approach frames; separate handle aligns to the authored `handUsePoint`; mirror rear-left |
 | Enter shower in bathrobe | `keeper_shower_enter_bathrobe` | rear-right to direct rear one-shot; separate cubicle aligns at the feet/threshold anchor |
 | Walk in pyjamas | `keeper_pyjamas_walk` | light powder blue with cream piping; right; mirror left |
 | Turn away in pyjamas | `keeper_pyjamas_turn_back` | light powder blue; reverse to face camera |
@@ -87,6 +89,8 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Scuba swim left/right | `keeper_scuba_swim_horizontal` | right; mirror left; 80 × 48 canonical-scale horizontal canvas; bubbles separate |
 | Scuba swim up | `keeper_scuba_swim_up` | direct rear view; bubbles separate |
 | Scuba swim down | `keeper_scuba_swim_down` | direct front view; bubbles separate |
+| Walk along jetty in scuba gear | `keeper_scuba_walk_side` | 8-frame right-facing scuba locomotion; mirror left; fins, tank, mask and regulator remain coherent |
+| Dive from jetty in scuba gear | `keeper_scuba_jetty_dive` | 12-frame one-shot from scuba standing through take-off, water entry and prone settle; final frame is the exact first horizontal scuba-swim frame |
 | Party idle | `keeper_party_idle` | exact canonical front face/body; small pale-pink cone, red pom-pom/fringe |
 | Party walk | `keeper_party_walk` | exact canonical side-walk identity; right; mirror left |
 | Party turn away | `keeper_party_turn_back` | exact canonical turn identity; reverse to face camera |
@@ -136,12 +140,12 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Count money | `keeper_count_money` | seated front; notes and coins included |
 | Play snooker | `keeper_snooker` | right; mirror left; cue included, table/balls separate |
 | Play table tennis | `keeper_table_tennis` | right; mirror left; paddle/ball included, table separate |
-| Throw darts | `keeper_darts` | right; mirror left; dart included, board separate |
+| Throw darts | `keeper_darts` | 14 frames with added aim holds; right; mirror left; dart included, board separate |
 | Bounce on trampoline | `keeper_trampoline_front` | front; old-school workout kit; trampoline separate |
 | Lift weights | `keeper_lift_weights_back` | rear overhead press; old-school workout kit; barbell included; 48 × 56 overhead canvas preserves body scale |
 | Do press-ups | `keeper_pressups_side` | right; mirror left; old-school workout kit; 64 × 40 canvas; canonical head/core depth and 47–52 px articulated body-axis envelope |
-| Float in anti-gravity | `keeper_anti_gravity` | centred 48 × 48 loop; prone right-facing float in goggles, two-pixel vertical bob and one backward somersault; no parachute; room may add wider drift/circling translation |
-| Chop plants | `keeper_machete_side` | right; mirror left; consistent smooth-edged machete included; plants separate; 64 × 40 long-tool canvas; hand/contact `(50,28)` |
+| Float in anti-gravity | `keeper_anti_gravity` | 12-frame expanded-canvas loop; four prone float frames precede the goggle-wearing backward somersault; no parachute; room may add wider drift/circling translation |
+| Chop plants | `keeper_machete_side` | right; mirror left; consistent smooth-edged machete included; plants separate; reviewed long-tool canvas is expanded so no swing frame clips |
 | Drink handled pint | `keeper_drink_pint` | seated front-right; mirror front-left; tankard included |
 | Use stationary exercise bike | `keeper_ride_bike_front` | direct front; 48 × 48; old-school workout kit; actor only; align separate bike to hand `(24,27)`, seat `(24,35)` and pedal `(24,42)` |
 | Press lift button | `keeper_lift_button_front` | front, right-hand reach; mirror to swap hand |
@@ -160,8 +164,8 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Ten-pin bowling | `keeper_bowling` | right; mirror left; ball included, lane/pins separate |
 | Play video game | `keeper_video_game` | rear-right with controller; mirror rear-left; TV/seat separate |
 | Water plants | `keeper_water_plants_side` / `keeper_water_plants_back` / `keeper_water_plants_front` | side uses 48 × 40 and mirrors left; can/stream included and edge-safe; plants separate |
-| Fish standing | `keeper_fish_standing` | right; mirror left; 64 × 56 canvas keeps the actor at canonical scale while retaining the full rod, line and catch |
-| Fish seated | `keeper_fish_seated` | right; mirror left; seat/water separate |
+| Fish standing | `keeper_fish_standing` | 16 frames; right; mirror left; 96 × 88 canvas keeps the actor at canonical scale while retaining the full rod, line, float and catch below the feet anchor |
+| Fish seated | `keeper_fish_seated` | 16 frames; right; mirror left; 96 × 88 canvas; seat/water separate; full cast/reel/catch cycle retained |
 | Collect eggs | `keeper_collect_eggs_back` | canonical low rear work loop; basket, eggs and coop are separate aligned objects |
 | Enter / wash / exit bath | `keeper_bath_enter`, `keeper_bath_wash`, `keeper_bath_exit` | entry/exit towel; wash has opaque mosaic/foam privacy coverage; bath separate |
 | Enter / wash / exit shower | `keeper_shower_enter`, `keeper_shower_wash`, `keeper_shower_exit` | entry/exit towel; wash has opaque mosaic privacy coverage; shower separate |
@@ -297,11 +301,13 @@ The next animation work should follow gameplay dependency rather than novelty.
 
 ### Priority 1 — complete the new adventure actions
 
-- Parachute steering, hanging-descent loop and landing/roll. The delivered jump
-  now includes pack opening, pilot chute, canopy inflation and hanging pose.
+- Parachute steering controls and any alternative roll recovery. Deployment,
+  a gentle repeatable hanging descent and a one-shot landing-to-stand are
+  delivered with exact open-canopy hand-offs.
 - Dive splash, underwater entry, floating, climb out and rescue. Directional
-  swimming is delivered in both striped and scuba outfits; the platform dive
-  ends just before water contact.
+  swimming is delivered in both striped and scuba outfits; the scuba jetty walk
+  and water entry are delivered, while the platform dive ends just before water
+  contact and both outfits still need water-exit routes.
 - Boat embark/disembark, speedboat acceleration/braking and outboard starting.
 - Spacesuit-specific floating for the later expansion; the normal-uniform
   anti-gravity circling loop and three-view spaceman walk are delivered.

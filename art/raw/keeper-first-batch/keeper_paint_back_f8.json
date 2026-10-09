@@ -1,18 +1,18 @@
 {
-  "w": 32,
+  "w": 40,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    16,
-    40
+    19.0,
+    40.0
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    16,
-    17
+    20.5,
+    17.345
   ],
   "outfit": "artist-smock",
   "facing": "back",

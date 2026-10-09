@@ -1,25 +1,21 @@
 {
-  "w": 48,
-  "h": 40,
-  "frames": 8,
-  "fps": 4,
+  "w": 32,
+  "h": 48,
+  "frames": 14,
+  "fps": 5,
   "density": 4,
   "anchor": [
-    24,
-    40
+    16.0,
+    48.0
   ],
   "z": 50,
   "loop": true,
-  "seatPoint": [
-    24,
-    29
-  ],
   "handUsePoint": [
-    42,
-    17
+    24.4,
+    14.175
   ],
   "mirrorSafe": true,
   "facing": "right",
-  "interaction": "fish-and-reel",
+  "interaction": "feed-fish-high",
   "mirrorsFor": "left"
 }

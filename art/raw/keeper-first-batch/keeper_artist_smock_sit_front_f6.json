@@ -1,18 +1,18 @@
 {
-  "w": 32,
+  "w": 34,
   "h": 40,
   "frames": 6,
-  "fps": 4,
+  "fps": 4.5,
   "density": 4,
   "anchor": [
-    16,
-    40
+    17.0,
+    40.0
   ],
   "z": 50,
   "loop": false,
   "seatPoint": [
-    16,
-    29
+    17.0,
+    29.385
   ],
   "outfit": "artist-smock",
   "reverseFor": "artist_smock_stand_front",

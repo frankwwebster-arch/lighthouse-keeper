@@ -1,22 +1,22 @@
 {
-  "w": 48,
+  "w": 49,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    24,
-    40
+    25.0,
+    40.0
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    38,
-    17
+    38.5,
+    17.575
   ],
   "lookTargetPoint": [
-    48,
-    12
+    48.5,
+    12.7
   ],
   "mirrorSafe": true,
   "facing": "right",

@@ -78,9 +78,10 @@
       "clips": ["keeper_party_idle", "keeper_party_walk", "keeper_party_turn_back", "keeper_party_hat_put_on_back", "keeper_party_eat_cake", "keeper_party_dance"],
       "baseFamilies": ["keeper_wave_camera", "keeper_walk", "keeper_turn_back", "keeper_work_back", "keeper_ladder_climb", "keeper_eat_seated", "keeper_dance"],
       "headwearOnly": true,
+      "replacesCaptainCap": true,
       "faceIdentity": "canonical-keeper",
       "skullScaleChanges": false,
-      "rule": "Add the small pale-pink cone, red pom-pom and red fringe over the ordinary cap; inherit the approved face, beard, hair, body, scale and movement from the named canonical base family."
+      "rule": "Remove the ordinary captain cap, reconstruct only the canonical white-haired crown, then add the small pale-pink cone, red pom-pom and red fringe; inherit the approved face, beard, body, scale and movement from the named canonical base family."
     }
   },
   "rigPivots": {

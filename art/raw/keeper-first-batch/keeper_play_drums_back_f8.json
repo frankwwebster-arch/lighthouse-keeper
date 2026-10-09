@@ -5,18 +5,18 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    16,
-    48
+    16.0,
+    48.0
   ],
   "z": 50,
   "loop": true,
   "seatPoint": [
-    16,
-    37
+    15.0,
+    38.98
   ],
   "handUsePoint": [
-    16,
-    27
+    15.0,
+    30.78
   ],
   "facing": "back",
   "interaction": "play-drums"

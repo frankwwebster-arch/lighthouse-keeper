@@ -1,18 +1,18 @@
 {
-  "w": 32,
+  "w": 34,
   "h": 40,
   "frames": 8,
-  "fps": 4,
+  "fps": 2.5,
   "density": 4,
   "anchor": [
-    16,
-    40
+    17.0,
+    40.0
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    16,
-    22
+    17.0,
+    22.09
   ],
   "facing": "back",
   "interaction": "use-bbq"

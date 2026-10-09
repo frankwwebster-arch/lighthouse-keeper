@@ -2,21 +2,21 @@
   "w": 48,
   "h": 40,
   "frames": 6,
-  "fps": 4,
+  "fps": 1,
   "density": 4,
   "anchor": [
-    24,
-    40
+    24.0,
+    40.0
   ],
   "z": 50,
   "loop": true,
   "bedSurfacePoint": [
-    24,
-    31
+    24.0,
+    31.09
   ],
   "pillowPoint": [
-    38,
-    22
+    36.81,
+    22.18
   ],
   "outfit": "light-blue-pyjamas",
   "mirrorSafe": true,

@@ -1,18 +1,18 @@
 {
-  "w": 32,
-  "h": 40,
+  "w": 34,
+  "h": 41,
   "frames": 6,
-  "fps": 4,
+  "fps": 5.5,
   "density": 4,
   "anchor": [
-    16,
-    40
+    17.0,
+    41.0
   ],
   "z": 50,
   "loop": false,
   "handUsePoint": [
-    24,
-    20
+    25.16,
+    20.5
   ],
   "reverseFor": "door_close_back",
   "mirrorSafe": true

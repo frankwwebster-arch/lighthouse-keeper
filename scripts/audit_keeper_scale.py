@@ -24,6 +24,8 @@ CONTRACT = json.loads((ROOT / "data/keeper_asset_contract.json").read_text())
 DENSITY = CONTRACT["canvas"]["standard"]["density"]
 AUDIT_REVISION = "2026-10-09-original-comparison-v2"
 ORIGINAL_KEEPER = "keeper_walk"
+REVIEW_IMPORT_PATH = ROOT / "docs/review/frank-keeper-animation-review-2026-10-09.json"
+CODEX_RESPONSES_PATH = ROOT / "docs/review/keeper-animation-codex-responses-2026-10-09.json"
 
 # These sheets are sufficiently close to the approved upright original for a
 # direct skull-to-supporting-sole silhouette check. All others are still
@@ -95,21 +97,26 @@ CORRECTED = {
     "keeper_sit_back": "new canonical rear stand-to-sit transition; final frame is the standard back-to-camera seated comparison ghost",
     "keeper_walk_into_lift": "intentional depth transition: rear walk scales from 100% to 75%, rises 6 logical pixels, then turns to a full-front neutral pose",
     "keeper_door_open_side_pyjamas": "clean six-frame side-door redraw in the canonical light-blue pyjama family; handle and floor interaction geometry are unchanged",
-    "keeper_anti_gravity": "rebuilt as a canonical-scale prone goggle float with frames 3-4 in progressive rotation, a centred back flip and no parachute",
+    "keeper_anti_gravity": "extended with four calm face-down float frames before the centred back flip; comparison-only rotation was not baked",
     "keeper_crouch_work_back": "redrawn; hands work in front and body width restored",
     "keeper_search_boxes": "reuses canonical corrected low rear work anatomy",
     "keeper_collect_eggs_back": "reuses canonical corrected low rear work anatomy",
     "keeper_scuba_swim_horizontal": "redrawn from the approved horizontal swim anatomy with coherent scuba equipment",
     "keeper_scuba_swim_up": "redrawn from the approved rear swim anatomy with coherent scuba equipment",
     "keeper_scuba_swim_down": "redrawn from the approved front swim anatomy with coherent scuba equipment",
+    "keeper_scuba_walk_side": "new matching-outfit jetty locomotion for the scuba route",
+    "keeper_scuba_jetty_dive": "new one-shot jetty dive whose endpoint is the exact first horizontal scuba-swim frame",
+    "keeper_parachute_drift": "new slow left/right open-canopy loop that can repeat for arbitrary fall height",
+    "keeper_parachute_landing": "new one-shot open-canopy touchdown, compression and canopy-collapse sequence",
     "keeper_swim_costume_horizontal": "enlarged on an expanded canvas so horizontal anatomy matches the upright keeper",
     "keeper_spiral_stairs_down": "frame 4 redrawn to remove an erroneous third hand while preserving the descent cycle",
     "keeper_ride_bike_front": "enlarged from its undersized head unit on a 48 px interaction canvas",
     "keeper_carry_shopping": "hand anatomy redrawn so each frame has exactly two hands attached to the two bag-carrying arms",
-    "keeper_put_record": "expanded to a 48 px side-action canvas so the record remains complete in frames 5–7",
+    "keeper_put_record": "expanded to a 64 px side-action canvas so the record remains complete through release",
     "keeper_water_plants_side": "expanded to a 48 px side-action canvas so the watering can and spout remain complete",
     "keeper_pressups_side": "redrawn and body-axis-normalised without shrinking its canonical head/core depth",
-    "keeper_fish_standing": "enlarged on a 64 by 56 canvas so the keeper, not the rod and line, determines actor scale",
+    "keeper_fish_standing": "extended to 16 frames on a 96 by 88 interaction canvas with the float and fish below the foot anchor",
+    "keeper_fish_seated": "extended to 16 frames on a 96 by 88 interaction canvas with the float and fish below the dock/foot anchor",
     "keeper_sit_front": "redrawn and width-normalised against canonical front body",
     "keeper_party_turn_back": "canonical turn identity inherited exactly; party hat is headwear-only",
     "keeper_party_idle": "canonical front identity inherited exactly; party hat is headwear-only",
@@ -466,6 +473,9 @@ def publish(assets: list[dict]) -> None:
     (OUT / "keeper-scale-metrics.json").write_text(json.dumps(payload, indent=2) + "\n")
 
     reviewed_by_name = {asset["name"]: asset for asset in serialisable if asset["status"] != "excluded-technical"}
+    review_import = json.loads(REVIEW_IMPORT_PATH.read_text())
+    imported_reviews = {review["name"]: review for review in review_import["reviews"]}
+    codex_responses = json.loads(CODEX_RESPONSES_PATH.read_text())
     walk_by_outfit = {
         "standard": "keeper_walk",
         "party-hat": "keeper_party_walk",
@@ -479,14 +489,22 @@ def publish(assets: list[dict]) -> None:
         "halloween": "keeper_halloween_walk_side",
         "mechanic": "keeper_mechanic_walk_side",
         "artist-smock": "keeper_artist_smock_walk",
+        "scuba": "keeper_scuba_walk_side",
     }
     bridge_sources = {
         "keeper_turn_back", "keeper_sit_side", "keeper_sit_front",
         "keeper_artist_smock_turn_back", "keeper_artist_smock_turn_front", "keeper_artist_smock_sit_front",
         "keeper_get_into_bed", "keeper_party_hat_put_on_back",
+        "keeper_scuba_jetty_dive", "keeper_parachute_drift", "keeper_parachute_landing",
     }
 
     def bridge_for(asset: dict) -> list[str]:
+        if asset["outfit"] == "scuba":
+            if asset["name"] in {"keeper_scuba_walk_side", "keeper_scuba_jetty_dive"}:
+                return []
+            if asset["name"].startswith("keeper_scuba_swim_"):
+                return ["keeper_scuba_jetty_dive"]
+            return []
         if asset["name"] == "keeper_pyjamas_snore":
             return ["keeper_get_into_bed"]
         if asset["outfit"] == "artist-smock":
@@ -555,13 +573,48 @@ def publish(assets: list[dict]) -> None:
             transition_kind, transition_note = "locomotion", "Matching-outfit walking source for transition tests."
         else:
             transition_kind, transition_note = transition_label(asset, lead_name, bridge_names)
+        imported = imported_reviews.get(asset["name"])
+        review_status = (
+            "unreviewed" if imported is None else
+            "happy" if imported.get("happy") else
+            "review-later" if imported.get("reviewLater") else
+            "awaiting-new-draft"
+        )
         review_assets.append({
             **review_clip(asset),
             "leadIn": review_clip(reviewed_by_name[lead_name]) if lead_name else None,
             "bridge": [review_clip(reviewed_by_name[name]) for name in bridge_names],
             "transitionKind": transition_kind,
             "transitionNote": transition_note,
+            "reviewStatus": review_status,
+            "codexResponse": codex_responses.get(asset["name"], ""),
         })
+
+    initial_reviews = {}
+    for asset in review_assets:
+        imported = imported_reviews.get(asset["name"])
+        if imported is None:
+            continue
+        # Geometry and cadence were baked by the production author. Re-review
+        # therefore starts from the delivered asset at neutral viewer controls,
+        # while retaining Frank's exact notes and resolved decision state.
+        initial_reviews[asset["name"]] = {
+            "widthPercent": 100,
+            "heightPercent": 100,
+            "animationFps": asset["fps"],
+            "ghostReference": imported.get("ghostReference", "auto"),
+            "ghostPosition": imported.get("ghostPosition", "overlay"),
+            "ghostRotation": imported.get("ghostRotation", 0),
+            "ghostMirrored": imported.get("ghostMirrored", False),
+            "actionRotation": 0,
+            "actionOffsetX": 0,
+            "actionOffsetY": 0,
+            "actionOpacityPercent": 100,
+            "notes": imported.get("notes", ""),
+            "redraftRequested": False,
+            "happy": imported.get("happy", False),
+            "reviewLater": imported.get("reviewLater", False),
+        }
 
     template = (ROOT / "art/source/keeper-first-batch/scale-review-template.html").read_text()
     review_payload = {
@@ -577,9 +630,63 @@ def publish(assets: list[dict]) -> None:
             "sittingFront": review_clip(reviewed_by_name["keeper_sit_front"]),
             "sittingBack": review_clip(reviewed_by_name["keeper_sit_back"]),
         },
+        "reviewRevision": "2026-10-09-production-pass-v1",
+        "initialReviews": initial_reviews,
         "assets": review_assets,
     }
     (OUT / "review.html").write_text(template.replace("__KEEPER_REVIEW_DATA__", json.dumps(review_payload, separators=(",", ":"))))
+
+    def table_text(value: object) -> str:
+        return str(value or "").replace("|", "\\|").replace("\n", "<br>")
+
+    resolution_lines = [
+        "# Keeper animation review resolution — 2026-10-09",
+        "",
+        "This table is generated from Frank's immutable review export and the current production asset set. `Awaiting new draft review` means the requested production change is present and now needs Frank's verdict; it does not mean the redraw is still outstanding.",
+        "",
+        "| Animation | Frames | Frank's comment | Class | Decision | Proposed/implemented change | Status | Verification | Commit |",
+        "|---|---:|---|---|---|---|---|---|---|",
+    ]
+    for asset in review_assets:
+        imported = imported_reviews.get(asset["name"])
+        comment = imported.get("notes", "") if imported else ""
+        if imported is None:
+            classification = "decision-needed"
+            decision = "Frank review required"
+            change = "New or previously unreviewed production animation"
+        elif imported.get("happy"):
+            classification = "keep"
+            decision = "Retain accepted animation"
+            change = "Accepted scale/cadence baked; no redraw"
+        elif imported.get("reviewLater"):
+            classification = "decision-needed"
+            decision = codex_responses.get(asset["name"], "Deferred exactly as requested")
+            change = "No production redraw until deferred decision"
+        elif imported.get("redraftRequested"):
+            classification = "rebuild"
+            decision = codex_responses.get(asset["name"], "Rebuilt from corrected or newly generated source")
+            change = asset["note"]
+        else:
+            classification = "fix"
+            decision = codex_responses.get(asset["name"], "Implemented as requested")
+            change = asset["note"]
+        verification = (
+            "Retained; full audit" if asset["reviewStatus"] == "happy" else
+            "Deferred; unchanged" if asset["reviewStatus"] == "review-later" else
+            "Full audit; Frank visual verdict pending"
+        )
+        status_label = {
+            "happy": "Happy",
+            "review-later": "Review later",
+            "awaiting-new-draft": "Awaiting new draft review",
+            "unreviewed": "Unreviewed",
+        }[asset["reviewStatus"]]
+        resolution_lines.append(
+            f"| `{asset['name']}` | {asset['frames']} | {table_text(comment)} | {classification} | "
+            f"{table_text(decision)} | {table_text(change)} | {status_label} | {verification} | current main delivery |"
+        )
+    resolution_path = ROOT / "docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-09.md"
+    resolution_path.write_text("\n".join(resolution_lines) + "\n")
 
     with (OUT / "keeper-scale-summary.csv").open("w", newline="") as handle:
         fields = ["name", "frames", "canvas", "postureClass", "measurementMethod", "status", "outfit", "facing", "originalComparison", "medianFaceProxyWidth", "medianFaceProxyHeight", "faceProxyCoverage", "medianTorsoScanWidthAt20", "torsoScanCoverage", "alphaHeightRange", "alphaWidthRange", "bottomClearanceRange", "note"]
@@ -607,12 +714,16 @@ def publish(assets: list[dict]) -> None:
         "",
         "## Interactive comparison",
         "",
-        f"Open [the sizing and transition review](review.html) to see a dedicated untouched `keeper_walk` scale-authority panel followed by all {payload['counts']['reviewedAnimationSheets']} accepted animations in one filename-ordered gallery, with no search or filters required. A focused one-animation view provides a much larger stage, Previous/Next buttons, progress and filename status, and Left/Right arrow-key navigation without rebuilding cards or losing in-progress edits. It keeps a compact canonical reference pinned beside the reviewed card; choose standing or one sitting canon. The sitting endpoint's measured 9.75 × 6.5 face proxy exactly matches the standing reference frame, making it the sitting height/proportion authority. In upright standard-cap poses, the gold badge crossing the blue skull-top guide is a calibrated visual proxy; use anatomical landmarks for tilted, bent, seated, crouched, horizontal, bare-headed or alternate-headwear poses. The display-size slider magnifies gallery stages, or the focused reviewed stage, from 1× to 12× without changing the art or its relative scale; the pinned reference remains at a compact 2×. Each animation has independent 50%–150% character-width and character-height proposal sliders plus horizontal and vertical position controls, applied only to the reviewed action while the reference, rulers, ghost, approach walk and bridges remain unchanged. Earlier uniform size choices migrate to both axes. Comparison ghosts automatically use the canonical front, side or rear sitting endpoint for seated poses and the standing walk reference otherwise. Per-card controls can override that reference with the canonical standing side, standing facing-front, standing back-to-camera, sitting side, sitting front or sitting back figure, mirror, rotate and reset the ghost, move it alongside on a wider stage, rotate and reposition every frame of the reviewed animation around its fixed review anchor, and fade only that animation. The facing-front ghost is the neutral arms-down first frame of `keeper_wave_camera`, from which the exact-canonical-identity party idle is also derived. The back-to-camera standing ghost is the final frame of `keeper_turn_back`: the audited standard-outfit rear endpoint at the same 32 × 40 canvas, [16, 40] feet anchor and 38-pixel height as the standing authority. The sitting-back ghost is the final frame of `keeper_sit_back`, with the same [16, 29] seat point as the front and side sitting standards. Flying and swimming clips initially place the bottom of the first-frame figure on the red floor line so their size is easier to compare; manual position changes are explicit saved proposals. Pausing resets every card to its action's first frame. Per-card Previous/Next frame buttons pause globally, select action-only mode and step without wrapping from frame 1 through the final frame; frame inspection does not dirty the saved review. A separate 1–20fps proposed game-speed slider, 0.5fps buttons, authored-speed reset and live cycle-duration readout preview the reviewed action without changing approach-walk or bridge timing. Every card has a free-text production-notes field, mutually exclusive happy, full-re-draft and re-review-later decisions, a `Save this review` button and saved/unsaved status. `Save & re-review later` records the reminder immediately and advances to the next clip in focused mode; the reminder can be removed when that card is revisited. Saving persists notes, the decision, width, height, proposed runtime FPS, reviewed-animation rotation and position, ghost mirror, rotation and position controls, opacity and approval in the browser. Orange cards have unsaved changes, saved-and-happy cards are green, saved re-draft cards are red, saved re-review cards are blue, the summary counts progress, and export refuses to proceed while edits remain unsaved. `keeper-scale-choices.json` version 8 contains independent width/height/position/FPS production proposals, notes, re-draft requests, re-review reminders and the complete saved review/approval register. Accepted `animationFps` values belong in each clip's source JSON sidecar and generated runtime manifest, not in the PNG pixels. Comparison settings remain visual aids and do not alter production art. The page can also prepend the matching same-outfit walk, insert known bridge clips, or freeze the exact walk-to-action seam with onion skin. Every card prints its runtime PNG and authored source-strip filename.",
+        f"Open [the sizing and transition review](review.html) to inspect all {payload['counts']['reviewedAnimationSheets']} accepted animations beside the untouched `keeper_walk` authority. Review-state filters cover Needs my input, Happy, Awaiting new draft review, Review later, Unreviewed and Has Codex response. In focused mode Previous/Next and the Left/Right keys stay inside the selected filter and wrap from its final result to its first.",
+        "The pinned reference can show canonical standing side/front/back or sitting side/front/back. The sitting endpoint's measured 9.75 × 6.5 face proxy exactly matches the standing reference frame. In upright standard-cap poses the gold badge crossing the blue skull-top guide is a calibrated visual proxy; tilted, bent, seated, crouched, horizontal, bare-headed and alternate-headwear poses still require anatomical landmarks.",
+        "Each card retains precise size, position, rotation, opacity, ghost, frame-step and 1–20fps timing controls. The imported production pass starts those viewer transforms at neutral because accepted geometry and cadence are already baked into the delivered sprite and manifest. Comparison settings remain visual aids until saved/exported as a later review proposal.",
+        "Every card has Frank's notes and decision controls plus a read-only Codex response field. That field is blank where no qualification was needed and briefly explains any interpretation or canonical-contract override elsewhere. Orange cards have unsaved changes; saved happy, new-draft and later-review cards use distinct status colours.",
+        "`keeper-scale-choices.json` version 9 exports the complete review register, current review status and Codex response for every animation as well as any new per-card proposals. Export remains blocked while a card has unsaved edits. The page can also prepend matching walks, insert known bridges or freeze a seam with onion skin; every card prints its runtime PNG and authored source-strip filename.",
         "The character-width and character-height sliders each have adjacent −0.5% and +0.5% buttons for precise adjustments. They update the same per-animation values, obey the same 50%–150% limits and become part of the normal Save/export workflow.",
         "Every blue animation-transform slider also has −0.5/+0.5 buttons: degrees for rotation, logical pixels for horizontal/vertical position and percentage points for opacity. They update the same limited, saved and exported values as their sliders.",
         "Each card's frame-control block can play only that reviewed action from frame 1. `Play once` stops on the final frame; `Loop` repeats until paused. This playback choice is inspection-only and does not dirty the review.",
         "At browser widths of 1500px or more, focused mode becomes a widescreen workstation with the pinned canon on the left, a viewport-height animation stage in the centre and a compact two-column control console on the right. Control groups are colour-coded: amber for character size, purple for the ghost, blue for animation transforms, teal for frame navigation and green/red for review decisions and notes.",
-        "Review progress is browser-local: changing display zoom saves it immediately, and every `Save this review` records that animation as the latest completed card. Reloading then restores the zoom, opens focused mode and selects the filename-ordered animation immediately after the most recently saved card (or remains on the final card when it was last).",
+        "Review progress is browser-local: changing display zoom or review-state filter saves immediately, and every `Save this review` records that animation as the latest completed card. Reloading restores the focused view and filter. Saving or advancing from the final result wraps to the first result in that same filter.",
         "",
         "## Corrected sheets",
         "",
@@ -633,8 +744,8 @@ def publish(assets: list[dict]) -> None:
 
 def main() -> None:
     assets = load_assets()
-    if len(assets) != 187:
-        raise SystemExit(f"Expected 187 keeper sheets, found {len(assets)}")
+    if len(assets) != 191:
+        raise SystemExit(f"Expected 191 keeper sheets, found {len(assets)}")
     publish(assets)
     failures = [
         (asset["name"], warning)

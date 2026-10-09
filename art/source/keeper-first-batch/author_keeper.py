@@ -3,8 +3,9 @@
 from __future__ import annotations
 
 import json
+import math
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageOps
+from PIL import Image, ImageColor, ImageDraw, ImageOps
 
 ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / "art/raw/keeper-first-batch"
@@ -440,17 +441,59 @@ def embed_frame(frame, logical_width, logical_height):
     return canvas
 
 
+def rotate_embedded_frame(frame, logical_width, logical_height, angle, offset_x=0):
+    """Rotate an already-authored frame gently without changing actor scale."""
+    canvas = embed_frame(frame, logical_width, logical_height)
+    rotated = canvas.rotate(angle, resample=Image.Resampling.BICUBIC, expand=False)
+    rotated.putalpha(rotated.getchannel("A").point(lambda value: 255 if value >= 128 else 0))
+    if not offset_x:
+        return rotated
+    shifted = Image.new("RGBA", rotated.size, (0, 0, 0, 0))
+    shifted.alpha_composite(rotated, (round(offset_x * D), 0))
+    return shifted
+
+
+def bare_head_frame(base):
+    """Replace the captain cap with a small bare white-haired crown."""
+    original = base.copy()
+    frame = base.copy()
+    # Generated canonical heads consistently reserve the first eight logical
+    # pixels for the cap. Rebuild only that headwear band; the approved face and
+    # beard below it remain byte-for-byte source pixels.
+    ImageDraw.Draw(frame).rectangle((0, 0, frame.width, 8 * D), fill=(0, 0, 0, 0))
+    crown = Image.new("RGBA", frame.size, (0, 0, 0, 0))
+    draw = ImageDraw.Draw(crown)
+    ellipse(draw, (10, 2, 23, 14), CREAM, INK, 2)
+    ellipse(draw, (11, 5, 22, 16), SKIN, INK, 2)
+    rect(draw, (11, 5, 21, 8), SKIN_HI)
+    # Put the preserved lower face, ears and beard back over the reconstructed
+    # crown so no party variant can acquire a different beard silhouette.
+    rebuilt = crown.copy()
+    crown.alpha_composite(frame)
+    pixels = crown.load()
+    original_pixels = original.load()
+    rebuilt_pixels = rebuilt.load()
+    for y in range(min(15 * D, crown.height)):
+        for x in range(crown.width):
+            original_red, original_green, original_blue, original_alpha = original_pixels[x, y]
+            if original_alpha and original_blue > original_red * 1.2 and original_blue > original_green * 1.05:
+                pixels[x, y] = rebuilt_pixels[x, y]
+                continue
+            red, green, blue, alpha = pixels[x, y]
+            if alpha and blue > red * 1.2 and blue > green * 1.05:
+                pixels[x, y] = (*ImageColor.getrgb(CREAM), alpha)
+    return crown
+
+
 def draw_party_hat(draw, center_x=16, base_y=13):
     """Draw the approved small paper party hat from the supplied reference."""
-    # A narrow pale-pink cardboard cone, small red pom-pom and irregular red
-    # paper fringe. It sits on the captain's cap without changing the skull,
-    # face or canonical body scale beneath it.
-    poly(draw, [(center_x - 5, base_y - 1), (center_x, base_y - 11), (center_x + 5, base_y - 1)], "#f1c7ca", INK, 1)
-    poly(draw, [(center_x - 4, base_y - 2), (center_x, base_y - 10), (center_x, base_y - 2)], "#f7dadd", None)
-    ellipse(draw, (center_x - 2, base_y - 14, center_x + 2, base_y - 10), "#c62828", INK, 1)
-    rect(draw, (center_x - 5, base_y - 2, center_x + 5, base_y), "#c62828", INK, 1)
+    # A deliberately modest paper cone worn instead of the captain's cap.
+    poly(draw, [(center_x - 4, base_y - 1), (center_x, base_y - 9), (center_x + 4, base_y - 1)], "#f1c7ca", INK, 1)
+    poly(draw, [(center_x - 3, base_y - 2), (center_x, base_y - 8), (center_x, base_y - 2)], "#f7dadd", None)
+    ellipse(draw, (center_x - 1.5, base_y - 12, center_x + 1.5, base_y - 9), "#c62828", INK, 1)
+    rect(draw, (center_x - 4, base_y - 2, center_x + 4, base_y), "#c62828", INK, 1)
     # Uneven paper fringe, as in the user's physical reference.
-    poly(draw, [(center_x - 5, base_y), (center_x - 4, base_y + 2), (center_x - 2, base_y), (center_x, base_y + 2), (center_x + 2, base_y), (center_x + 4, base_y + 2), (center_x + 5, base_y)], "#d32f2f", None)
+    poly(draw, [(center_x - 4, base_y), (center_x - 3, base_y + 1.5), (center_x - 1, base_y), (center_x, base_y + 1.5), (center_x + 2, base_y), (center_x + 3, base_y + 1.5), (center_x + 4, base_y)], "#d32f2f", None)
 
 
 def party_hat_frames(base_frames):
@@ -458,8 +501,8 @@ def party_hat_frames(base_frames):
     result = []
     for base in base_frames:
         frame = Image.new("RGBA", (32 * D, 48 * D), (0, 0, 0, 0))
-        frame.alpha_composite(base, (0, 8 * D))
-        draw_party_hat(ImageDraw.Draw(frame))
+        frame.alpha_composite(bare_head_frame(base), (0, 8 * D))
+        draw_party_hat(ImageDraw.Draw(frame), base_y=12)
         result.append(frame)
     return result
 
@@ -472,10 +515,11 @@ def party_hat_put_on_back_frames(idle_frames, raised_frames):
     hat_base_y = (40, 33, 25, 18, 13, 13, 13, 13)
     frames = []
     for step, raised_index in enumerate(raised_indices):
-        actor = idle_frames[0].copy()
+        actor = bare_head_frame(idle_frames[0])
         if raised_index is not None:
-            ImageDraw.Draw(actor).rectangle((0, 0, actor.width, 25 * D), fill=(0, 0, 0, 0))
-            actor.alpha_composite(raised_frames[raised_index].crop((0, 0, actor.width, 25 * D)), (0, 0))
+            raised = bare_head_frame(raised_frames[raised_index])
+            ImageDraw.Draw(actor).rectangle((0, 8 * D, actor.width, 25 * D), fill=(0, 0, 0, 0))
+            actor.alpha_composite(raised.crop((0, 8 * D, actor.width, 25 * D)), (0, 8 * D))
         frame = Image.new("RGBA", (32 * D, 48 * D), (0, 0, 0, 0))
         base_y = hat_base_y[step]
         if 2 <= step < 5:
@@ -484,7 +528,7 @@ def party_hat_put_on_back_frames(idle_frames, raised_frames):
             draw_party_hat(ImageDraw.Draw(frame), center_x=16, base_y=base_y)
         frame.alpha_composite(actor, (0, 8 * D))
         if step >= 4:
-            draw_party_hat(ImageDraw.Draw(frame), center_x=16, base_y=13)
+            draw_party_hat(ImageDraw.Draw(frame), center_x=16, base_y=12)
         frames.append(frame)
     return frames
 
@@ -494,9 +538,9 @@ def party_cake_eat_frames(base_frames):
     result = []
     for base in base_frames:
         frame = Image.new("RGBA", (40 * D, 48 * D), (0, 0, 0, 0))
-        frame.alpha_composite(base, (0, 8 * D))
+        frame.alpha_composite(bare_head_frame(base), (0, 8 * D))
         draw = ImageDraw.Draw(frame)
-        draw_party_hat(draw)
+        draw_party_hat(draw, base_y=12)
         # Small plate and a readable slice of the established jam-layer cake.
         ellipse(draw, (29, 32, 39, 34), CREAM_HI, INK, 1)
         poly(draw, [(31, 28), (38, 29), (38, 32), (31, 32)], "#e7b86b", INK, 1)
@@ -533,6 +577,47 @@ def remove_small_alpha_components(frame, min_pixels=200):
     cleaned = frame.copy()
     cleaned.putalpha(Image.frombytes("L", frame.size, bytes(keep)))
     return cleaned
+
+
+def recolor_privacy_mosaic(frame):
+    """Change only lower-body blue privacy pixels to opaque flesh tones."""
+    result = frame.copy()
+    pixels = result.load()
+    for y in range(18 * D, result.height):
+        for x in range(result.width):
+            red, green, blue, alpha = pixels[x, y]
+            if alpha and blue > red * 1.12 and blue > green * 1.03:
+                shade = SKIN_D if (x // D + y // D) % 2 else SKIN
+                pixels[x, y] = (*ImageColor.getrgb(shade), alpha)
+    return result
+
+
+def draw_video_game_controller(frame):
+    """Overlay a readable oversized white dual-grip controller at the hands."""
+    result = frame.copy()
+    draw = ImageDraw.Draw(result)
+    poly(draw, [(19, 20), (22, 18), (26, 18), (29, 20), (28, 25), (25, 23), (23, 23), (20, 25)], CREAM_HI, INK, 1)
+    ellipse(draw, (21, 20, 22.5, 21.5), BLUE_D, None)
+    ellipse(draw, (26, 20, 27.5, 21.5), BLUE_D, None)
+    return result
+
+
+def draw_held_record(frame, center=(46, 25)):
+    """Keep the black vinyl readable after it separates from the hand."""
+    result = frame.copy()
+    draw = ImageDraw.Draw(result)
+    ellipse(draw, (center[0] - 4, center[1] - 4, center[0] + 4, center[1] + 4), "#171719", INK, 1)
+    ellipse(draw, (center[0] - 1.25, center[1] - 1.25, center[0] + 1.25, center[1] + 1.25), "#c62828", None)
+    return result
+
+
+def repair_fishing_actor(frame, actor_template, prop_start_x=50):
+    """Retain a complete keeper while taking the changing rod/fish from a pose."""
+    result = actor_template.copy()
+    box = (prop_start_x * D, 0, frame.width, frame.height)
+    ImageDraw.Draw(result).rectangle(box, fill=(0, 0, 0, 0))
+    result.alpha_composite(frame.crop(box), (box[0], 0))
+    return result
 
 
 def snooker_frames():
@@ -604,7 +689,130 @@ def part(which, rear=False, mood="neutral"):
 DEFAULT_KEEPER_ANIMATION_FPS = 4
 # Add accepted per-clip review choices here. Any animated clip not listed uses
 # the global 4fps baseline; one-frame technical parts remain at 0fps.
-KEEPER_FPS_OVERRIDES = {}
+KEEPER_FPS_OVERRIDES = {
+    "keeper_artist_smock_sit_front": 4.5,
+    "keeper_bathrobe_walk": 8,
+    "keeper_bbq_back": 2.5,
+    "keeper_cake_from_oven_back": 4.5,
+    "keeper_cake_turn_right": 7.5,
+    "keeper_carry_cake": 8,
+    "keeper_carry_meal": 8,
+    "keeper_carry_shopping": 8,
+    "keeper_check_instrument_back": 6,
+    "keeper_clear_snow": 3.5,
+    "keeper_count_money": 6,
+    "keeper_cross": 5.5,
+    "keeper_darts": 3,
+    "keeper_door_open_back": 5.5,
+    "keeper_door_open_side": 5,
+    "keeper_feed_animals": 5.5,
+    "keeper_fish_feed_up": 5,
+    "keeper_fish_seated": 3,
+    "keeper_get_into_bed": 3,
+    "keeper_hammer_back": 5,
+    "keeper_hammer_side": 5,
+    "keeper_pyjamas_snore": 1,
+    "keeper_row_boat": 3,
+    "keeper_shower_wash": 2,
+    "keeper_trampoline_front": 7.5,
+    "keeper_turn_back": 10.5,
+    "keeper_type_computer": 8.5,
+    "keeper_work_back": 3,
+}
+
+REVIEW_EXPORT = ROOT / "docs/review/frank-keeper-animation-review-2026-10-09.json"
+REVIEW_SETTINGS = {
+    review["name"]: review
+    for review in json.loads(REVIEW_EXPORT.read_text())["reviews"]
+} if REVIEW_EXPORT.exists() else {}
+REVIEW_POINT_FIELDS = (
+    "seat_point", "hand_use_point", "pedal_point", "bowl_point",
+    "look_target_point", "bed_surface_point", "pillow_point", "pivot",
+)
+REVIEW_SCALE_PROTECTED = {
+    "keeper_walk", "keeper_turn_back", "keeper_wave_camera",
+    "keeper_sit_side", "keeper_sit_front", "keeper_sit_back",
+    "keeper_bathrobe_walk", "keeper_pyjamas_walk",
+    "keeper_tarzan_walk_side", "keeper_tarzan_walk_front", "keeper_tarzan_walk_back",
+    "keeper_halloween_walk_side", "keeper_halloween_walk_front", "keeper_halloween_walk_back",
+    "keeper_mechanic_walk_side", "keeper_mechanic_walk_front", "keeper_mechanic_walk_back",
+    "keeper_artist_smock_walk",
+    # The open-canopy endpoint is the exact hand-off into the separately
+    # loopable drift clip. Review staging must not distort that route seam.
+    "keeper_parachute_jump",
+}
+
+
+def apply_review_geometry(name, frames, metadata):
+    """Bake Frank's accepted scale and modest alignment choices into sprites."""
+    review = REVIEW_SETTINGS.get(name)
+    if not review or review.get("redraftRequested") or review.get("reviewLater"):
+        return frames, metadata
+    scale_x = review.get("widthPercent", 100) / 100
+    scale_y = review.get("heightPercent", 100) / 100
+    offset_x = review.get("actionOffsetX", 0)
+    offset_y = review.get("actionOffsetY", 0)
+    if name in REVIEW_SCALE_PROTECTED:
+        # These locomotion and route-authority sheets are the direct
+        # skull-to-sole/endpoint family. Viewer staging cannot override their
+        # immutable production canvas, anchor or scale.
+        scale_x = scale_y = 1
+        offset_x = offset_y = 0
+    # The comparison viewer also permits large staging translations. Those are
+    # evidence for scene placement, not safe actor-sheet corrections. Small
+    # alignment nudges are production choices and are baked here.
+    if abs(offset_x) > 8:
+        offset_x = 0
+    if abs(offset_y) > 8:
+        offset_y = 0
+    if scale_x == 1 and scale_y == 1 and offset_x == 0 and offset_y == 0:
+        return frames, metadata
+
+    old_width, old_height = frames[0].size
+    anchor = metadata.get("anchor_point", [old_width / D / 2, old_height / D])
+    anchor_px = (anchor[0] * D, anchor[1] * D)
+    scaled_size = (max(1, round(old_width * scale_x)), max(1, round(old_height * scale_y)))
+    origin = (
+        round(anchor_px[0] - anchor_px[0] * scale_x + offset_x * D),
+        round(anchor_px[1] - anchor_px[1] * scale_y + offset_y * D),
+    )
+    scaled_frames = []
+    for frame in frames:
+        scaled = frame.resize(scaled_size, Image.Resampling.LANCZOS)
+        scaled.putalpha(scaled.getchannel("A").point(lambda value: 255 if value >= 128 else 0))
+        if scaled.getchannel("A").getbbox() is None:
+            raise ValueError(f"Review transform produced an empty frame for {name}")
+        scaled_frames.append(scaled)
+
+    # Transparent canvas is contractual staging space, not disposable padding:
+    # it carries long tools, object contacts and future effects. Preserve the
+    # full authored canvas as a minimum, and expand only where the transformed
+    # full frame crosses an edge. Never crop back to the visible alpha bounds.
+    min_x = math.floor(min(0, origin[0]) / D) * D
+    min_y = math.floor(min(0, origin[1]) / D) * D
+    max_x = math.ceil(max(old_width, origin[0] + scaled_size[0]) / D) * D
+    max_y = math.ceil(max(old_height, origin[1] + scaled_size[1]) / D) * D
+    canvas_size = (max_x - min_x, max_y - min_y)
+    transformed = []
+    for scaled in scaled_frames:
+        canvas = Image.new("RGBA", canvas_size, (0, 0, 0, 0))
+        canvas.alpha_composite(scaled, (origin[0] - min_x, origin[1] - min_y))
+        transformed.append(canvas)
+
+    adjusted = dict(metadata)
+    adjusted["anchor_point"] = [
+        round((anchor_px[0] - min_x) / D, 3),
+        round((anchor_px[1] - min_y) / D, 3),
+    ]
+    for field in REVIEW_POINT_FIELDS:
+        if field not in adjusted:
+            continue
+        point = adjusted[field]
+        adjusted[field] = [
+            round((anchor_px[0] + (point[0] * D - anchor_px[0]) * scale_x + offset_x * D - min_x) / D, 3),
+            round((anchor_px[1] + (point[1] * D - anchor_px[1]) * scale_y + offset_y * D - min_y) / D, 3),
+        ]
+    return transformed, adjusted
 
 
 def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=True, seat_point=None, hand_use_point=None, pedal_point=None, bowl_point=None, look_target_point=None, bed_surface_point=None, pillow_point=None, movement_vector=None, depth_scale_range=None, depth_offset_y=None, prop_handoff_frame=None, prop_variant=None, upgrade_tier=None, start_pose=None, end_pose=None, outfit=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
@@ -638,6 +846,11 @@ def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=Tru
 def save(name, frames, legacy_fps=0, pivot=None, **metadata):
     # legacy_fps preserves the original cadence hints at existing call sites;
     # production timing is now governed solely by the baseline/override policy.
+    if pivot is not None:
+        metadata["pivot"] = pivot
+        pivot = None
+    frames, metadata = apply_review_geometry(name, frames, metadata)
+    pivot = metadata.pop("pivot", pivot)
     frame_width = frames[0].width
     frame_height = frames[0].height
     if any(frame.size != (frame_width, frame_height) for frame in frames):
@@ -645,6 +858,11 @@ def save(name, frames, legacy_fps=0, pivot=None, **metadata):
     strip = Image.new("RGBA", (frame_width * len(frames), frame_height), (0, 0, 0, 0))
     for i, frame in enumerate(frames): strip.alpha_composite(frame, (i * frame_width, 0))
     png = OUT / f"{name}_f{len(frames)}.png"
+    # Frame-count revisions change the filename. Remove only obsolete generated
+    # variants of this exact animation so audits never count stale strips.
+    for stale in (*OUT.glob(f"{name}_f*.png"), *OUT.glob(f"{name}_f*.json")):
+        if stale not in {png, png.with_suffix(".json")}:
+            stale.unlink()
     strip.save(png, optimize=True)
     authored_fps = 0 if len(frames) == 1 else KEEPER_FPS_OVERRIDES.get(name, DEFAULT_KEEPER_ANIMATION_FPS)
     png.with_suffix(".json").write_text(json.dumps(contract(len(frames), authored_fps, pivot, w=frame_width // D, h=frame_height // D, **metadata), indent=2) + "\n")
@@ -689,6 +907,9 @@ sit_back_frames = height_normalise_sequence(
 piano_frames = generated_frames("keeper-piano-generated-source.png", 8, scale_multiplier=0.90)
 urinate_frames = generated_frames("keeper-loo-stand-generated-source.png", 6)
 eat_seated_frames = generated_frames("keeper-eat-seated-generated-source.png", 8, scale_multiplier=0.90)
+# Keep the knife and fork in their established hands through the middle of the
+# loop; the previous two generated poses silently swapped and duplicated them.
+eat_seated_frames[4:6] = [eat_seated_frames[2].copy(), eat_seated_frames[3].copy()]
 door_side_frames = generated_frames("keeper-door-side-generated-source.png", 6)
 door_back_frames = generated_frames("keeper-door-back-generated-source.png", 6)
 ladder_frames = generated_frames("keeper-ladder-generated-source.png", 8)
@@ -702,6 +923,17 @@ walk_into_lift_frames = depth_scale_sequence(
     (0, 1.5, 3, 4.5, 6, 6, 6, 6),
 )
 parachute_jump_frames = generated_frames("keeper-parachute-jump-generated-source.png", 9, logical_width=48, logical_height=84, scale_reference_index=0)
+parachute_drift_frames = [
+    rotate_embedded_frame(parachute_jump_frames[-1], 64, 84, angle, offset)
+    for angle, offset in ((0, 0), (-1, -0.5), (-2, -1), (-1, -0.5), (0, 0), (1, 0.5), (2, 1), (1, 0.5))
+]
+parachute_landing_frames = generated_frames(
+    "keeper-parachute-landing-generated-source.png", 10,
+    logical_width=64, logical_height=84, force_equal_cells=True,
+)
+# The controller exits the loop at its neutral/open-canopy phase, so all three
+# route pieces share the same byte-exact hand-off frame.
+parachute_landing_frames[0] = parachute_drift_frames[0].copy()
 platform_dive_frames = generated_frames("keeper-platform-dive-generated-source.png", 10, logical_width=48, logical_height=56, scale_reference_index=0)
 dig_frames = generated_frames("keeper-dig-generated-source.png", 8)
 feed_animals_frames = generated_frames("keeper-feed-animals-generated-source.png", 8)
@@ -714,7 +946,7 @@ drive_speedboat_frames = generated_frames("keeper-drive-speedboat-generated-sour
 operate_outboard_frames = generated_frames("keeper-operate-outboard-generated-source.png", 8)
 watch_tv_frames = generated_frames("keeper-watch-tv-generated-source.png", 8, scale_multiplier=0.90)
 weld_frames = generated_frames("keeper-weld-generated-source.png", 8)
-saw_wood_frames = generated_frames("keeper-saw-wood-generated-source.png", 8, logical_width=40, force_equal_cells=True)
+saw_wood_frames = generated_frames("keeper-saw-wood-generated-source.png", 8, logical_width=64, preserve_equal_cells=True)
 wave_camera_frames = generated_frames("keeper-wave-generated-source.png", 8)
 yawn_frames = generated_frames("keeper-yawn-generated-source.png", 8)
 pyjamas_walk_frames = generated_frames("keeper-pyjamas-walk-light-blue-generated-source.png", 8)
@@ -725,9 +957,20 @@ pyjamas_snore_frames = generated_frames("keeper-snore-light-blue-generated-sourc
 swim_costume_horizontal_frames = generated_frames("keeper-swim-costume-horizontal-generated-source.png", 8, logical_width=80, logical_height=48)
 swim_costume_up_frames = generated_frames("keeper-swim-costume-up-generated-source.png", 8, logical_width=48, logical_height=48)
 swim_costume_down_frames = generated_frames("keeper-swim-costume-down-generated-source.png", 8, logical_width=48, logical_height=48)
-scuba_horizontal_frames = generated_frames("keeper-scuba-horizontal-generated-source.png", 8, logical_width=80, logical_height=48, force_equal_cells=True)
-scuba_up_frames = generated_frames("keeper-scuba-up-generated-source.png", 8, logical_width=48, logical_height=48, force_equal_cells=True)
-scuba_down_frames = generated_frames("keeper-scuba-down-generated-source.png", 8, logical_width=48, logical_height=48, force_equal_cells=True)
+scuba_horizontal_frames = generated_frames("keeper-scuba-horizontal-generated-source.png", 8, logical_width=80, logical_height=48, preserve_equal_cells=True)
+scuba_up_frames = generated_frames("keeper-scuba-up-generated-source.png", 8, logical_width=48, logical_height=48, preserve_equal_cells=True)
+scuba_down_frames = generated_frames("keeper-scuba-down-generated-source.png", 8, logical_width=48, logical_height=48, preserve_equal_cells=True)
+scuba_walk_side_frames = generated_frames(
+    "keeper-scuba-walk-side-generated-source.png", 8,
+    logical_width=48, logical_height=56, preserve_equal_cells=True, scale_multiplier=0.84,
+)
+scuba_jetty_dive_frames = generated_frames(
+    "keeper-scuba-jetty-dive-generated-source.png", 12,
+    logical_width=80, logical_height=72, group_equal_components=True,
+)
+# The final dive pose is the exact first production swim frame, so there is no
+# costume, beard, scale or silhouette pop at the water-entry hand-off.
+scuba_jetty_dive_frames[-1] = embed_frame(scuba_horizontal_frames[0], 80, 72)
 # Party costume is headwear-only.  Derive every pose from the approved keeper
 # families so the face, skull, beard and body can never drift between costumes.
 party_idle_reference = generated_frames("keeper-wave-generated-source.png", 8)
@@ -796,9 +1039,9 @@ play_drums_back_frames = generated_frames(
     scale_multiplier=0.99,
     horizontal_scale=0.95,
 )
-# Frame 7 repeats the front sheet's single raised screen-left stroke. A 180°
+# Frame 6 repeats the front sheet's single raised screen-left stroke. A 180°
 # viewpoint change places that physical arm on screen-right in the rear view.
-play_drums_back_frames[6] = ImageOps.mirror(play_drums_back_frames[6])
+play_drums_back_frames[5] = ImageOps.mirror(play_drums_back_frames[5])
 watch_movie_frames = generated_frames("keeper-watch-movie-generated-source.png", 8, logical_width=48, scale_multiplier=0.90)
 clear_snow_frames = generated_frames("keeper-clear-snow-generated-source.png", 8, logical_width=48)
 lawn_mower_push_frames = match_reference_heights(
@@ -838,6 +1081,9 @@ hoover_super_frames = match_reference_heights(
     walk_frames,
 )
 crouch_work_back_frames = generated_frames("keeper-crouch-work-back-generated-source.png", 8)
+# Frame 5 placed both hands behind the hips. Reuse the preceding correctly
+# layered low-work pose; the neighbouring frames preserve the bend/rise motion.
+crouch_work_back_frames[4] = crouch_work_back_frames[3].copy()
 cake_from_oven_back_frames = generated_frames("keeper-cake-from-oven-back-generated-source.png", 8, logical_width=48)
 cake_turn_right_frames = generated_frames("keeper-cake-turn-right-generated-source.png", 6, logical_width=48)
 carry_cake_frames = generated_frames("keeper-carry-cake-generated-source.png", 8, logical_width=48)
@@ -866,6 +1112,8 @@ save("keeper_switch_press_side", switch_side_frames, 8, loop=False, hand_use_poi
 save("keeper_switch_press_back", switch_back_frames, 8, loop=False, hand_use_point=[26, 17], reverse_for="switch_withdraw_back", mirror_safe=True, facing="back", interaction="press-switch", mirrors_for="back-left-hand")
 save("keeper_walk_into_lift", walk_into_lift_frames, 8, loop=False, movement_vector=[0, -1], depth_scale_range=[1.0, 0.75], depth_offset_y=[0, -6], facing="back-to-front", interaction="enter-lift")
 save("keeper_parachute_jump", parachute_jump_frames, 10, loop=False, mirror_safe=True, facing="right", interaction="parachute-jump", mirrors_for="left")
+save("keeper_parachute_drift", parachute_drift_frames, 4, anchor_point=[32, 84], loop=True, mirror_safe=True, facing="right", interaction="parachute-drift", mirrors_for="left", start_pose="parachute-open", end_pose="parachute-open")
+save("keeper_parachute_landing", parachute_landing_frames, 6, anchor_point=[32, 84], loop=False, mirror_safe=True, facing="right", interaction="parachute-landing", mirrors_for="left", start_pose="parachute-open", end_pose="standing-side-right")
 save("keeper_platform_dive", platform_dive_frames, 10, loop=False, mirror_safe=True, facing="right", interaction="platform-dive", mirrors_for="left")
 save("keeper_dig", dig_frames, 8, hand_use_point=[27, 38], mirror_safe=True, facing="right", interaction="dig-ground", mirrors_for="left")
 save("keeper_feed_animals", feed_animals_frames, 8, loop=False, hand_use_point=[27, 34], mirror_safe=True, facing="right", interaction="feed-bowl", mirrors_for="left")
@@ -878,7 +1126,7 @@ save("keeper_drive_speedboat", drive_speedboat_frames, 4, seat_point=[16, 29], h
 save("keeper_operate_outboard", operate_outboard_frames, 8, hand_use_point=[4, 21], mirror_safe=True, facing="rear-right", interaction="operate-outboard", mirrors_for="rear-left")
 save("keeper_watch_tv", watch_tv_frames, 6, seat_point=[16, 29], look_target_point=[40, 14], mirror_safe=True, facing="rear-right", interaction="watch-tv", mirrors_for="rear-left")
 save("keeper_weld", weld_frames, 8, hand_use_point=[27, 22], mirror_safe=True, facing="right", interaction="weld-workpiece", mirrors_for="left")
-save("keeper_saw_wood", saw_wood_frames, 8, hand_use_point=[35, 23], mirror_safe=True, facing="right", interaction="saw-workpiece", mirrors_for="left")
+save("keeper_saw_wood", saw_wood_frames, 8, anchor_point=[32, 40], hand_use_point=[51, 23], mirror_safe=True, facing="right", interaction="saw-workpiece", mirrors_for="left")
 save("keeper_wave_camera", wave_camera_frames, 8, loop=False, facing="front", interaction="emote-wave")
 save("keeper_yawn", yawn_frames, 8, loop=False, facing="front-right", interaction="emote-yawn")
 save("keeper_pyjamas_walk", pyjamas_walk_frames, 10, outfit="light-blue-pyjamas", mirror_safe=True, facing="right", interaction="walk-pyjamas", mirrors_for="left")
@@ -892,6 +1140,8 @@ save("keeper_swim_costume_down", swim_costume_down_frames, 8, anchor_point=[24, 
 save("keeper_scuba_swim_horizontal", scuba_horizontal_frames, 8, anchor_point=[40, 24], movement_vector=[1, 0], outfit="scuba", mirror_safe=True, facing="right", interaction="scuba-swim", mirrors_for="left")
 save("keeper_scuba_swim_up", scuba_up_frames, 8, anchor_point=[24, 24], movement_vector=[0, -1], outfit="scuba", facing="up", interaction="scuba-swim")
 save("keeper_scuba_swim_down", scuba_down_frames, 8, anchor_point=[24, 24], movement_vector=[0, 1], outfit="scuba", facing="down", interaction="scuba-swim")
+save("keeper_scuba_walk_side", scuba_walk_side_frames, 8, anchor_point=[24, 56], movement_vector=[1, 0], outfit="scuba", mirror_safe=True, facing="right", interaction="scuba-jetty-walk", mirrors_for="left", start_pose="scuba-standing-side-right", end_pose="scuba-standing-side-right")
+save("keeper_scuba_jetty_dive", scuba_jetty_dive_frames, 8, anchor_point=[40, 72], movement_vector=[1, 0], outfit="scuba", loop=False, mirror_safe=True, facing="right-to-prone", interaction="scuba-water-entry", mirrors_for="left", start_pose="scuba-standing-side-right", end_pose="scuba-swim-right")
 save("keeper_party_idle", party_idle_frames, 6, anchor_point=[16, 48], outfit="party-hat", facing="front", interaction="party-idle")
 save("keeper_party_walk", party_walk_frames, 10, anchor_point=[16, 48], outfit="party-hat", mirror_safe=True, facing="right", interaction="party-walk", mirrors_for="left")
 save("keeper_party_turn_back", party_turn_back_frames, 8, anchor_point=[16, 48], outfit="party-hat", loop=False, reverse_for="party_turn_front", facing="front-to-back", interaction="party-turn")
@@ -953,6 +1203,8 @@ save_preview("keeper-switch-press-left", [ImageOps.mirror(frame) for frame in sw
 save_preview("keeper-switch-press-back", switch_back_frames, 120, ping_pong=True)
 save_preview("keeper-walk-into-lift", walk_into_lift_frames, 120)
 save_preview("keeper-parachute-jump", parachute_jump_frames, 100)
+save_preview("keeper-parachute-drift", parachute_drift_frames, 250)
+save_preview("keeper-parachute-landing", parachute_landing_frames, 167)
 save_preview("keeper-platform-dive", platform_dive_frames, 100)
 save_preview("keeper-dig", dig_frames, 120)
 save_preview("keeper-feed-animals", feed_animals_frames, 120)
@@ -980,6 +1232,8 @@ save_preview("keeper-swim-costume-down", swim_costume_down_frames, 120)
 save_preview("keeper-scuba-swim-horizontal", scuba_horizontal_frames, 120)
 save_preview("keeper-scuba-swim-up", scuba_up_frames, 120)
 save_preview("keeper-scuba-swim-down", scuba_down_frames, 120)
+save_preview("keeper-scuba-walk-side", scuba_walk_side_frames, 120)
+save_preview("keeper-scuba-jetty-dive", scuba_jetty_dive_frames, 120)
 save_preview("keeper-party-idle", party_idle_frames, 160)
 save_preview("keeper-party-walk", party_walk_frames, 100)
 save_preview("keeper-party-turn-back", party_turn_back_frames, 120, ping_pong=True)
@@ -1045,7 +1299,7 @@ ADDITIONAL_CLIPS = [
     ("keeper_write_back", "keeper-write-back-generated-source.png", 32, 40, dict(seat_point=[16, 29], hand_use_point=[16, 21], facing="back", interaction="write")),
     ("keeper_lean_table_back", "keeper-lean-table-generated-source.png", 32, 40, dict(hand_use_point=[16, 27], facing="back", interaction="inspect-table")),
     ("keeper_telescope", "keeper-telescope-generated-source.png", 48, 40, dict(hand_use_point=[38, 17], look_target_point=[48, 12], facing="right", interaction="use-telescope", mirror_safe=True, mirrors_for="left")),
-    ("keeper_put_record", "keeper-put-record-generated-source.png", 48, 40, dict(hand_use_point=[38, 27], facing="right", interaction="put-record", mirror_safe=True, mirrors_for="left")),
+    ("keeper_put_record", "keeper-put-record-generated-source.png", 64, 40, dict(anchor_point=[32, 40], hand_use_point=[46, 25], facing="right", interaction="put-record", mirror_safe=True, mirrors_for="left")),
     ("keeper_paint_side", "keeper-paint-side-generated-source.png", 40, 40, dict(hand_use_point=[34, 17], outfit="artist-smock", facing="right", interaction="paint", mirror_safe=True, mirrors_for="left")),
     ("keeper_paint_back", "keeper-paint-back-generated-source.png", 32, 40, dict(hand_use_point=[16, 17], outfit="artist-smock", facing="back", interaction="paint")),
     ("keeper_pottery_front", "keeper-pottery-front-generated-source.png", 40, 40, dict(seat_point=[20, 29], hand_use_point=[20, 23], outfit="artist-smock", facing="front", interaction="pottery-wheel")),
@@ -1053,14 +1307,14 @@ ADDITIONAL_CLIPS = [
     ("keeper_meal_from_oven_back", "keeper-meal-oven-back-generated-source.png", 48, 40, dict(hand_use_point=[24, 30], facing="back", interaction="retrieve-meal-from-oven", loop=False)),
     ("keeper_meal_place_side", "keeper-meal-place-side-generated-source.png", 48, 40, dict(hand_use_point=[39, 21], facing="right", interaction="place-meal-on-table", loop=False, mirror_safe=True, mirrors_for="left")),
     ("keeper_count_money", "keeper-count-money-generated-source.png", 40, 40, dict(seat_point=[20, 29], hand_use_point=[20, 21], facing="front", interaction="count-money")),
-    ("keeper_snooker", "keeper-snooker-generated-source.png", 48, 40, dict(hand_use_point=[43, 25], facing="right", interaction="play-snooker", mirror_safe=True, mirrors_for="left")),
+    ("keeper_snooker", "keeper-snooker-generated-source.png", 64, 40, dict(anchor_point=[32, 40], hand_use_point=[55, 25], facing="right", interaction="play-snooker", mirror_safe=True, mirrors_for="left")),
     ("keeper_table_tennis", "keeper-table-tennis-generated-source.png", 40, 40, dict(hand_use_point=[34, 20], facing="right", interaction="play-table-tennis", mirror_safe=True, mirrors_for="left")),
-    ("keeper_darts", "keeper-darts-generated-source.png", 40, 40, dict(hand_use_point=[34, 15], look_target_point=[40, 12], facing="right", interaction="play-darts", mirror_safe=True, mirrors_for="left")),
+    ("keeper_darts", "keeper-darts-generated-source.png", 56, 40, dict(anchor_point=[28, 40], hand_use_point=[46, 15], look_target_point=[56, 12], facing="right", interaction="play-darts", mirror_safe=True, mirrors_for="left")),
     ("keeper_trampoline_front", "keeper-trampoline-front-generated-source.png", 32, 48, dict(outfit="old-school-workout-kit", facing="front", interaction="bounce-trampoline")),
     ("keeper_lift_weights_back", "keeper-weights-back-generated-source.png", 48, 56, dict(hand_use_point=[24, 5], outfit="old-school-workout-kit", facing="back", interaction="lift-weights")),
     ("keeper_pressups_side", "keeper-pressups-side-generated-source.png", 64, 40, dict(outfit="old-school-workout-kit", facing="right", interaction="press-ups", mirror_safe=True, mirrors_for="left")),
     ("keeper_anti_gravity", "keeper-anti-gravity-generated-source.png", 48, 48, dict(anchor_point=[24, 24], facing="right-prone", interaction="anti-gravity-float")),
-    ("keeper_machete_side", "keeper-machete-side-generated-source.png", 64, 40, dict(hand_use_point=[50, 28], facing="right", interaction="chop-plants", mirror_safe=True, mirrors_for="left")),
+    ("keeper_machete_side", "keeper-machete-side-generated-source.png", 80, 40, dict(anchor_point=[40, 40], hand_use_point=[66, 28], facing="right", interaction="chop-plants", mirror_safe=True, mirrors_for="left")),
     ("keeper_drink_pint", "keeper-drink-pint-generated-source.png", 40, 40, dict(seat_point=[20, 29], hand_use_point=[25, 16], facing="front-right", interaction="drink-pint", mirror_safe=True, mirrors_for="front-left")),
     ("keeper_ride_bike_front", "keeper-bike-front-generated-source.png", 48, 48, dict(seat_point=[24, 35], hand_use_point=[24, 27], pedal_point=[24, 42], outfit="old-school-workout-kit", facing="front", interaction="use-stationary-exercise-bike")),
     ("keeper_lift_button_front", "keeper-lift-button-front-generated-source.png", 32, 40, dict(hand_use_point=[27, 17], facing="front", interaction="press-lift-button", mirror_safe=True, mirrors_for="front-left-hand")),
@@ -1082,8 +1336,8 @@ ADDITIONAL_CLIPS = [
     ("keeper_water_plants_side", "keeper-water-side-generated-source.png", 48, 40, dict(hand_use_point=[39, 31], facing="right", interaction="water-plants", mirror_safe=True, mirrors_for="left")),
     ("keeper_water_plants_back", "keeper-water-back-generated-source.png", 40, 40, dict(hand_use_point=[20, 31], facing="back", interaction="water-plants")),
     ("keeper_water_plants_front", "keeper-water-front-generated-source.png", 40, 40, dict(hand_use_point=[20, 31], facing="front", interaction="water-plants")),
-    ("keeper_fish_standing", "keeper-fish-stand-generated-source.png", 64, 56, dict(hand_use_point=[56, 24], facing="right", interaction="fish-and-reel", mirror_safe=True, mirrors_for="left")),
-    ("keeper_fish_seated", "keeper-fish-sit-generated-source.png", 48, 40, dict(seat_point=[24, 29], hand_use_point=[42, 17], facing="right", interaction="fish-and-reel", mirror_safe=True, mirrors_for="left")),
+    ("keeper_fish_standing", "keeper-fish-stand-generated-source.png", 96, 88, dict(anchor_point=[48, 56], hand_use_point=[80, 32], facing="right", interaction="fish-and-reel", mirror_safe=True, mirrors_for="left")),
+    ("keeper_fish_seated", "keeper-fish-sit-generated-source.png", 96, 88, dict(anchor_point=[48, 56], seat_point=[48, 45], hand_use_point=[78, 29], facing="right", interaction="fish-and-reel", mirror_safe=True, mirrors_for="left")),
     ("keeper_collect_eggs_back", "keeper-collect-eggs-generated-source.png", 32, 40, dict(hand_use_point=[16, 38], facing="back", interaction="collect-eggs")),
     ("keeper_bath_enter", "keeper-bath-enter-generated-source.png", 40, 40, dict(facing="right", interaction="enter-bath", outfit="towel-privacy", loop=False, reverse_for="bath-exit", mirror_safe=True, mirrors_for="left")),
     ("keeper_bath_wash", "keeper-bath-wash-generated-source.png", 40, 40, dict(seat_point=[20, 29], facing="front", interaction="wash-in-bath", outfit="mosaic-privacy")),
@@ -1102,7 +1356,11 @@ for outfit in ("knight", "spaceman", "pirate", "tarzan", "halloween", "mechanic"
 ADDITIONAL_CLIPS.append(("keeper_mechanic_fix", "keeper-mechanic-fix-generated-source.png", 40, 40, dict(outfit="mechanic", hand_use_point=[34, 22], facing="right", interaction="fix-vehicle", mirror_safe=True, mirrors_for="left")))
 
 for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONAL_CLIPS:
-    frame_count = 10 if clip_name == "keeper_hot_drink_pour" else 8
+    frame_count = {
+        "keeper_hot_drink_pour": 10,
+        "keeper_fish_standing": 16,
+        "keeper_fish_seated": 16,
+    }.get(clip_name, 8)
     # These values are anatomy scale, never "fit to available canvas".  Most
     # seated generated sheets started ten percent larger than the canonical
     # sit transition.  The bath was redrawn against canonical references; the
@@ -1136,6 +1394,19 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
         frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, scale_reference_index=0)
     elif clip_name == "keeper_boat_exit":
         frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, scale_reference_index=7)
+    elif clip_name == "keeper_shower_door_open_bathrobe":
+        frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True)
+        turn_in = generated_frames("keeper-shower-enter-bathrobe-generated-source.png", 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True)
+        frames = [turn_in[0].copy(), turn_in[1].copy()] + frames
+    elif clip_name in {"keeper_fish_standing", "keeper_fish_seated"}:
+        frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, force_equal_cells=True)
+        if clip_name == "keeper_fish_standing":
+            frames[2] = repair_fishing_actor(frames[2], frames[1])
+        else:
+            for frame_index in (2, 3, 4, 5):
+                frames[frame_index] = repair_fishing_actor(frames[frame_index], frames[1])
+            for frame_index in (11, 12, 13, 14, 15):
+                frames[frame_index] = repair_fishing_actor(frames[frame_index], frames[10])
     elif clip_name.startswith("keeper_hot_drink_"):
         # Keep the kettle, mug, spoon, liquid and steam in fixed equal cells,
         # including frames where the mug has detached from the keeper's hand.
@@ -1152,26 +1423,16 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
                 frame_count,
                 logical_width=logical_width,
                 logical_height=logical_height,
-                group_equal_components=clip_name == "keeper_hot_drink_pour",
-                preserve_equal_cells=clip_name != "keeper_hot_drink_pour",
+                preserve_equal_cells=True,
                 scale_multiplier=anatomy_scale,
             )
     elif clip_name == "keeper_snooker":
-        frames = snooker_frames()
+        frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True)
     elif clip_name == "keeper_meal_place_side":
-        # After release, the plated meal is detached from the keeper but must
-        # remain in the actor strip until the world object takes over.  The
-        # original source keeps frames 1-6 exact; a tightly scoped corrected
-        # reference restores only the plate rim/food pixels clipped in frames
-        # 7-8, without redrawing or moving the keeper.
+        # After release, the plated meal is detached from the keeper but remains
+        # in the actor strip until the world object takes over.
         frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True, scale_multiplier=anatomy_scale)
         frames = [remove_small_alpha_components(frame) for frame in frames]
-        corrected = generated_frames("keeper-meal-place-side-uncropped-generated-source.png", 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True, scale_multiplier=anatomy_scale)
-        meal_patch_box = (26 * D, 22 * D, 37 * D, 29 * D)
-        for frame_index in (6, 7):
-            patch = corrected[frame_index].crop(meal_patch_box)
-            ImageDraw.Draw(frames[frame_index]).rectangle(meal_patch_box, fill=(0, 0, 0, 0))
-            frames[frame_index].alpha_composite(patch, (meal_patch_box[0], meal_patch_box[1]))
     else:
         try:
             frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, scale_multiplier=anatomy_scale)
@@ -1198,7 +1459,21 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
             shifted = Image.new("RGBA", frame.size, (0, 0, 0, 0))
             shifted.alpha_composite(frame, (dx, dy))
             centred.append(shifted)
-        frames = centred
+        # Hold the calm face-down float before committing to the flip.
+        frames = [centred[0].copy(), centred[1].copy(), centred[0].copy(), centred[1].copy()] + centred
+    if clip_name == "keeper_fish_feed_up":
+        frames.extend(frames[-1].copy() for _ in range(6))
+    if clip_name == "keeper_darts":
+        # Four additional aim oscillations make the draw-back readable before
+        # the throw, while retaining the authored release/recovery frames.
+        frames = frames[:2] + [frames[2].copy(), frames[3].copy()] * 4 + frames[4:]
+    if clip_name == "keeper_drink_pint":
+        frames[4] = frames[3].copy()
+    if clip_name == "keeper_video_game":
+        stable = [frames[index].copy() for index in (0, 0, 2, 2, 4, 4, 6, 6)]
+        frames = [draw_video_game_controller(frame) for frame in stable]
+    if clip_name in {"keeper_shower_enter", "keeper_shower_wash"}:
+        frames = [recolor_privacy_mosaic(frame) for frame in frames]
     if clip_name in {"keeper_bath_wash", "keeper_hot_tub"}:
         frames = [remove_small_alpha_components(frame, min_pixels=80) for frame in frames]
     if clip_name.startswith("keeper_tarzan_walk_"):
@@ -1211,6 +1486,10 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
         # figure begins well inside the cell; clear only that neighbour fringe.
         for frame in frames:
             ImageDraw.Draw(frame).rectangle((0, 0, 3 * D, frame.height), fill=(0, 0, 0, 0))
+        for frame_index in range(4, len(frames)):
+            frames[frame_index] = draw_held_record(frames[frame_index])
+    if clip_name == "keeper_hot_drink_pickup":
+        frames = [remove_small_alpha_components(frame, min_pixels=200) for frame in frames]
     clip_fps = 10 if clip_name == "keeper_bathrobe_walk" else 8
     save(clip_name, frames, clip_fps, **metadata)
     save_preview(clip_name.replace("_", "-"), frames, 100 if clip_fps == 10 else 120)

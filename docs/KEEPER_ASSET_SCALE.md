@@ -67,7 +67,7 @@ then run `scripts/audit_keeper_scale.py` with the bundled Python runtime.
 
 The audit uses the untouched approved `keeper_walk` as its primary reference:
 
-1. It measures every frame in all 187 sheets (1,348 frames at present).
+1. It measures every frame in all 191 sheets (1,420 frames at present).
 2. It prints the original first in every contact-sheet row, followed by the
    tested sheet's first, middle and last representative frames at exactly the
    same fixed scale. No image is fitted to its available canvas.
@@ -234,14 +234,15 @@ the established switch heights, canvas scale or feet anchors.
 The complete starting dimensions for chairs, sofas, tables, beds, toilets,
 baths, showers and object stations are in
 `data/keeper_object_dimensions.json`. The per-frame measurement evidence for
-all 187 sheets is in `docs/keeper-scale-audit/keeper-scale-metrics.json`; the
+all 191 sheets is in `docs/keeper-scale-audit/keeper-scale-metrics.json`; the
 nine contact sheets render every sample at one fixed display scale so a larger
 transparent canvas can never make its keeper look smaller.
 
 For interactive comparison, open `docs/keeper-scale-audit/review.html`. It puts
 the untouched `keeper_walk` in a dedicated scale-authority panel, followed by
-all 169 accepted animation sheets in one filename-ordered gallery, without
-search, filters or card fitting. For standard upright cap poses, its gold badge
+all 173 accepted animation sheets in one filename-ordered gallery. Review-state
+filters cover Needs my input, Happy, Awaiting new draft review, Review later,
+Unreviewed and Has Codex response. For standard upright cap poses, its gold badge
 crossing the blue skull-top line is a convenient calibrated proxy; it does not
 replace anatomical landmarks for altered posture, head angle or headwear.
 Every card prints both its runtime PNG and authored source-strip filename. The
@@ -249,8 +250,9 @@ shared controls pause or play every animation at once, apply pose-aware
 comparison ghosts to every card, and draw the shared
 skull/shoulder/hip/seat/floor rulers. The focused view steps through animations
 one at a time on a much larger card using Previous/Next or Left/Right arrows;
-switching views preserves in-progress card state. A compact canonical reference
-stays pinned beside it and can show standing or one sitting canon. The sitting
+navigation stays inside the selected filter and wraps at its ends. Switching
+views preserves in-progress card state. A compact canonical reference stays
+pinned beside it and can show standing side/front/back or sitting side/front/back. The sitting
 endpoint's 9.75 × 6.5 face proxy exactly matches the standing reference frame. A
 1×–12× display-size slider magnifies gallery stages or the focused reviewed
 stage and never changes source or relative sprite scale. The page can
@@ -258,7 +260,9 @@ independently stretch an individual reviewed action from 50% to 150% in width
 and height around its fixed contact anchor. The reference, ruler, ghost,
 approach walk and bridge remain at 100%; earlier uniform choices migrate to
 both axes.
-Export produces `keeper-scale-choices.json` for an authoring pass; it never
+Each card also has a read-only Codex response field, blank where no production
+qualification was needed. Export version 9 produces `keeper-scale-choices.json`
+with the complete status/response register for an authoring pass; it never
 silently changes production sprites. The page can also play the matching
 same-outfit walk immediately before an action. The raw seam, known-bridge and
 onion-skin modes make transition problems visible. Flying and swimming cards
@@ -277,9 +281,11 @@ duration. It changes the reviewed action's preview only; approach walks and
 bridge clips continue at their own authored speeds. Unlike play-once/loop, the
 proposed FPS is a production decision, so it dirties, saves and exports with the
 card.
-Every multi-frame keeper clip initially uses the global 4fps authored baseline.
-The page performs a one-time migration of older browser-saved default timings to
-4fps; speed choices saved after that migration are retained.
+Every multi-frame keeper clip defaults to the 4fps authored baseline. Accepted
+review overrides now range from 1fps to 10.5fps and are read from the current
+manifest; the page's authored-speed reset therefore returns each card to its
+own delivered cadence. Older browser defaults are migrated once, while later
+saved proposals are retained.
 At 1500px browser width or above, focused mode lays out the pinned canon, stage
 and compact two-column control console horizontally. Size controls are amber,
 ghost mirror, rotation and position controls purple, action transforms blue, frame navigation teal, and

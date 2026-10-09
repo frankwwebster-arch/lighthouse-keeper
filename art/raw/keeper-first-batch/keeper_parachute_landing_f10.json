@@ -1,0 +1,19 @@
+{
+  "w": 64,
+  "h": 84,
+  "frames": 10,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    32,
+    84
+  ],
+  "z": 50,
+  "loop": false,
+  "startPose": "parachute-open",
+  "endPose": "standing-side-right",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "parachute-landing",
+  "mirrorsFor": "left"
+}

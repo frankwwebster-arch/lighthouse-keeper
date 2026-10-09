@@ -1,18 +1,18 @@
 {
-  "w": 40,
+  "w": 46,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    20,
-    40
+    23.0,
+    40.0
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    20,
-    31
+    23.0,
+    31.0
   ],
   "facing": "back",
   "interaction": "water-plants"

@@ -1,0 +1,24 @@
+{
+  "w": 80,
+  "h": 72,
+  "frames": 12,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    40,
+    72
+  ],
+  "z": 50,
+  "loop": false,
+  "movementVector": [
+    1,
+    0
+  ],
+  "startPose": "scuba-standing-side-right",
+  "endPose": "scuba-swim-right",
+  "outfit": "scuba",
+  "mirrorSafe": true,
+  "facing": "right-to-prone",
+  "interaction": "scuba-water-entry",
+  "mirrorsFor": "left"
+}

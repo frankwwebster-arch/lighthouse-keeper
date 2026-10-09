@@ -1,18 +1,18 @@
 {
-  "w": 32,
-  "h": 40,
+  "w": 38,
+  "h": 42,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    16,
-    40
+    19.0,
+    42.0
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    16,
-    6
+    19.0,
+    6.98
   ],
   "reverseFor": "ladder_descend"
 }

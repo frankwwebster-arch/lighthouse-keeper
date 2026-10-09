@@ -1,18 +1,18 @@
 {
-  "w": 48,
+  "w": 53,
   "h": 40,
   "frames": 8,
-  "fps": 4,
+  "fps": 3.5,
   "density": 4,
   "anchor": [
-    24,
-    40
+    24.0,
+    40.0
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    43,
-    37
+    47.4,
+    37.195
   ],
   "outfit": "winter-coat",
   "mirrorSafe": true,

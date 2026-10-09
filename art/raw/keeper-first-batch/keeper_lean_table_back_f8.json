@@ -5,14 +5,14 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    16,
-    40
+    16.0,
+    40.0
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    16,
-    27
+    16.0,
+    27.26
   ],
   "facing": "back",
   "interaction": "inspect-table"

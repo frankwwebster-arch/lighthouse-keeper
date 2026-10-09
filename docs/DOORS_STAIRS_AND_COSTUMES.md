@@ -221,13 +221,14 @@ handover; an unexplained first-frame pop is not a seamless join.
 Delivered in `docs/keeper-scale-audit/review.html`:
 
 - A dedicated untouched `keeper_walk` scale-authority panel, followed by all
-  169 accepted clips at one unchanged relative world scale on a shared 96 × 96
-  stage, with floor, skull, shoulder, hip and seat guide lines and optional
-  pose-aware comparison ghosts. A focused view steps through one large card at
-  a time with Previous/Next controls, progress and arrow-key navigation while
-  retaining card edits. A pinned compact reference can show standing or one
-  sitting canon; its endpoint's measured 9.75 × 6.5 face proxy exactly matches
-  the standing reference frame. The
+  173 accepted clips at one unchanged relative world scale, with floor, skull,
+  shoulder, hip and seat guide lines and optional pose-aware comparison ghosts.
+  Review-state filters isolate Happy, Awaiting new draft review, Review later,
+  Unreviewed, Needs my input and cards with a Codex response. A focused view
+  steps through one large card at a time; Previous/Next and arrow keys remain
+  inside the filter and wrap at its ends. A pinned compact reference can show
+  standing side/front/back or sitting side/front/back; the sitting endpoint's
+  measured 9.75 × 6.5 face proxy exactly matches the standing reference. The
   1×–12× display-size slider magnifies the reviewed stage without changing the
   source art or its relative scale. For upright
   standard-cap poses, the gold badge on the blue skull line is a calibrated

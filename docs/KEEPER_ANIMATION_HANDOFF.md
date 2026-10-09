@@ -8,15 +8,28 @@ Codex task should be able to continue from here without relying on the old chat.
 
 1. Read this document in full.
 2. Open `docs/keeper-scale-audit/review.html`. A dedicated panel first shows
-   the untouched `keeper_walk` scale authority, followed by all 169 accepted
-   clips at one unchanged relative scale in filename order. Every card prints
-   its runtime and source filename. Switch View to `One animation at a time`
-   for a much larger card, progress/filename status, Previous/Next buttons and
-   Left/Right arrow-key navigation. A compact reference stays pinned alongside;
-   choose standing or the single sitting canon, whose endpoint has the exact
-   same measured 9.75 × 6.5 face proxy as the standing reference frame. The display-size slider magnifies the reviewed stage from
-   1× to 12× without changing the art; the other global
-   controls pause/play everything and apply pose-aware comparison ghosts.
+   the untouched `keeper_walk` scale authority, followed by all 173 accepted
+   clips at one unchanged relative scale in filename order. Filter the register
+   by Needs my input, Happy, Awaiting new draft review, Review later,
+   Unreviewed or Has Codex response. Switch View to `One animation at a time`
+   for a much larger card. Previous/Next and Left/Right stay inside the active
+   filter and wrap from its final result to its first. A compact reference stays
+   pinned alongside; standing side/front/back and sitting side/front/back
+   canons are available. The sitting endpoint has the same measured 9.75 × 6.5
+   face proxy as the standing reference.
+3. Every card has a read-only Codex response field. It is intentionally blank
+   when Frank's comment needed no qualification. Where an interpretation or
+   contract conflict mattered, it gives the brief production response without
+   changing Frank's saved note.
+4. Frank's supplied export is preserved byte-for-byte at
+   `docs/review/frank-keeper-animation-review-2026-10-09.json`; do not edit or
+   replace it. The complete 173-row disposition is
+   `docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-09.md`, and agent
+   responses live separately in
+   `docs/review/keeper-animation-codex-responses-2026-10-09.json`.
+5. The display-size slider magnifies the reviewed stage from 1× to 12× without
+   changing art. Global controls pause/play everything and apply pose-aware
+   comparison ghosts.
    Every card also has Previous/Next frame controls. They pause playback,
    select the action itself and step without wrapping from frame 1 to the final
    frame; inspection alone does not alter or dirty the saved review. A prominent
@@ -29,25 +42,24 @@ Codex task should be able to continue from here without relying on the old chat.
    pinned reference left, large viewport-height stage centre, and a compact
    two-column control console right. Amber means size, purple ghost, blue
    animation transform, teal frame navigation, and green/red review decisions.
-   Display zoom is saved immediately in browser-local progress. Each card save
-   also records that filename as the latest completed animation; reloading opens
-   focused mode on the following filename-ordered animation with the same zoom.
-   Saving the final animation resumes on that final card because no successor exists.
-3. Ask Frank for his new comments and exported `keeper-scale-choices.json`.
+   Display zoom and filter are saved immediately in browser-local progress.
+   Saving or advancing from the final result wraps to the first result in the
+   same filter.
+6. For a later review round, ask Frank for the newly exported
+   `keeper-scale-choices.json`.
    Each card's Save button persists independent width/height, rotation,
    horizontal/vertical position, ghost settings, opacity and the
    happy/not-yet-happy decision, free-text notes and full-re-draft request in
-   his browser. Version 5 of the export includes production shape/position
-   proposals, notes, re-draft requests and the complete review register, but it
-   does not alter production art. Notes are available to Codex only after Frank
-   supplies the exported JSON; browser-local saves do not enter the repository.
-4. Record every new comment by exact `keeper_*` filename before changing art.
+   his browser. Version 9 includes production proposals, the complete review
+   register/statuses and the read-only Codex response, but it does not alter
+   production art by itself.
+7. Record every new comment by exact `keeper_*` filename before changing art.
    Triage it as `keep`, `fix`, `rebuild`, `delete`, or `decision needed`, and
    distinguish an art fault from a missing transition or missing object.
-5. Resolve comments and transition gaps against the untouched
+8. Resolve comments and transition gaps against the untouched
    `keeper_walk` reference. Never scale or redraw the keeper merely to fit a
    canvas, prop, costume or object.
-6. Rebuild, publish and rerun the complete all-sheet audit after every keeper
+9. Rebuild, publish and rerun the complete all-sheet audit after every keeper
    art pass. It must finish with zero failures.
 
 The per-card character-width and character-height sliders and adjacent ±0.5%
@@ -174,12 +186,16 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 
 ## Current evidence and files
 
-- 187 keeper sheets and 1,348 frames are in the technical batch.
-- 169 animation sheets are accepted into the review gallery.
+- 191 keeper sheets and 1,420 frames are in the technical batch.
+- 173 animation sheets are accepted into the review gallery.
 - 18 obsolete modular/reference sheets are excluded from review and must not
   return to production.
-- 76 sheets were rebuilt or anatomy-normalised in the latest full pass.
+- 81 sheets are recorded as rebuilt or anatomy-normalised in the latest full
+  audit.
 - The audit currently reports zero unresolved original-comparison failures.
+- Imported review state is 88 Happy, 70 Awaiting new draft review, 3 Review
+  later and 12 Unreviewed. “Awaiting new draft review” means the requested
+  production work is now present and awaits Frank's verdict.
 - The 13 directly comparable full-body families are constrained to a
   0.960–1.040 skull-to-sole ratio; unobscured side torsos must be within one
   logical pixel of the original torso scan.
@@ -194,10 +210,12 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   `docs/KEEPER_ASSET_SCALE.md` and `docs/KEEPER_OBJECT_DIMENSIONS.md`.
 - The non-standard-outfit inventory and next bridge batch are in
   `docs/KEEPER_COSTUME_ROUTE_AUDIT.md`.
-- Frank's earlier floor-catalogue comments are preserved in
-  `docs/review/frank-floor-review-2026-10-09.json`. Those are historical
-  evidence; many named faults were subsequently corrected. New review comments
-  must be captured separately rather than silently overwriting that export.
+- Frank's animation review is preserved byte-identically in
+  `docs/review/frank-keeper-animation-review-2026-10-09.json`; its SHA-256 is
+  `c19129f8419df2c046f3abb06de9f339f1cd8edb31c2d505dea8e79562d5f486`.
+  New review comments must be captured as another dated export rather than
+  silently overwriting it. Earlier floor-catalogue evidence remains in
+  `docs/review/frank-floor-review-2026-10-09.json`.
 
 ## The route every ordinary activity needs
 
@@ -320,11 +338,14 @@ The common named poses should be explicit rather than inferred from filenames:
 - Slide: sit/launch, slide and landing/stand.
 - Platform dive: walk/stop at board → ready → full head-first dive → splash and
   water entry → directional swim; also provide the water-exit route.
-- Swimming/scuba: hidden costume change, safe walk/approach to water, water
-  entry, directional turns, swim loops, ladder/edge exit and hidden change back.
-- Parachute: platform approach, jump/deployment, hanging/steering, descent,
-  landing/roll and stand. The delivered clip contains canopy deployment but not
-  the complete landing route.
+- Swimming/scuba: hidden costume/equipment change, then
+  `keeper_scuba_walk_side` along the jetty → `keeper_scuba_jetty_dive` → exact
+  hand-off to `keeper_scuba_swim_horizontal`; directional turns, ladder/edge
+  exit and the hidden change back are still required at runtime.
+- Parachute: platform approach → `keeper_parachute_jump` deployment → optional
+  repeat of `keeper_parachute_drift` for the required fall height →
+  `keeper_parachute_landing` → stand. The neutral open-canopy hand-off frame is
+  byte-identical at both clip boundaries.
 - Anti-gravity: chamber entry/door closure, float takeoff, prone goggle loop
   with back flip, settle, landing and chamber exit. Never show a parachute.
 - Boat: dock approach plus dedicated climb in/out as above.
@@ -336,15 +357,15 @@ evidence, not final acceptance.
 
 | Kind | Count | Meaning |
 |---|---:|---|
-| `bridge-clip` | 8 | Existing reusable bridge artwork |
+| `bridge-clip` | 11 | Existing reusable bridge artwork |
 | `direct-test` | 51 | Same-outfit walk can be juxtaposed for review; seam unproven |
-| `known-bridge` | 44 | Viewer can insert an existing turn/sit/bed bridge; full route still needs endpoint proof |
-| `locomotion` | 12 | Walking source/family |
+| `known-bridge` | 47 | Viewer can insert an existing turn/sit/bed/water bridge; full route still needs endpoint proof |
+| `locomotion` | 13 | Walking source/family |
 | `missing-bridge` | 33 | Known facing/posture bridge does not exist |
-| `no-walk` | 18 | Outfit/privacy state has no walking family; may instead require an occlusion route |
+| `no-walk` | 15 | Outfit/privacy state has no walking family; may instead require an occlusion route |
 | `special-entry` | 3 | Air/water/horizontal action needs a bespoke environment entry |
 
-### Existing bridge clips (8)
+### Existing bridge clips (11)
 
 - `keeper_turn_back`
 - `keeper_sit_side`
@@ -354,8 +375,11 @@ evidence, not final acceptance.
 - `keeper_artist_smock_turn_back`
 - `keeper_artist_smock_turn_front`
 - `keeper_artist_smock_sit_front`
+- `keeper_scuba_jetty_dive`
+- `keeper_parachute_drift`
+- `keeper_parachute_landing`
 
-### Locomotion families (12)
+### Locomotion families (13)
 
 - `keeper_walk`
 - `keeper_bathrobe_walk`
@@ -369,6 +393,7 @@ evidence, not final acceptance.
 - `keeper_halloween_walk_side`
 - `keeper_mechanic_walk_side`
 - `keeper_artist_smock_walk`
+- `keeper_scuba_walk_side`
 
 ### Missing facing/posture bridges (33)
 
@@ -388,7 +413,7 @@ evidence, not final acceptance.
 - Bathrobe/shower: `keeper_shower_door_open_bathrobe`,
   `keeper_shower_enter_bathrobe`.
 
-### States without a walking family (18)
+### States without a walking family (15)
 
 - Bath/shower/privacy: `keeper_bath_enter`, `keeper_bath_exit`,
   `keeper_bath_wash`, `keeper_hot_tub`, `keeper_shower_enter`,
@@ -397,8 +422,6 @@ evidence, not final acceptance.
 - Winter: `keeper_clear_snow`.
 - Workout kit: `keeper_lift_weights_back`, `keeper_pressups_side`,
   `keeper_ride_bike_front`, `keeper_trampoline_front`.
-- Scuba: `keeper_scuba_swim_down`, `keeper_scuba_swim_horizontal`,
-  `keeper_scuba_swim_up`.
 - Striped swimsuit: `keeper_swim_costume_down`,
   `keeper_swim_costume_horizontal`, `keeper_swim_costume_up`.
 
@@ -460,9 +483,11 @@ new missing walking or turning requirement.
   undersized. Production remains canonically measured rather than scaled by
   its transparent source canvas.
 
-For swimming/scuba, a door-to-water occlusion or short visible walk
-must be designed explicitly; never jump directly from standard walking to a
-horizontal swimmer.
+Scuba now uses the explicit visible-water route
+`keeper_scuba_walk_side` → `keeper_scuba_jetty_dive` →
+`keeper_scuba_swim_horizontal`. The equipment change before that walk and the
+change back after water exit must still happen under full door/locker
+occlusion; never jump directly from standard walking to a horizontal swimmer.
 
 ### Special entries (3)
 
@@ -720,9 +745,9 @@ technical regressions may return:
 The comprehensive per-sheet correction list is in
 `docs/keeper-scale-audit/README.md`.
 
-## Review-comments workflow for the next task
+## Review-comments workflow for a later feedback round
 
-1. Obtain Frank's exported `keeper-scale-choices.json` and read every saved
+1. Obtain Frank's newly exported `keeper-scale-choices.json` and read every saved
    per-animation note before triage or drawing. A full-re-draft flag authorises
    rebuilding the clip; it never authorises ignoring that clip's written notes.
    Treat beard-length and side-silhouette comments as identity corrections that
@@ -761,7 +786,10 @@ npm run build
 
 Also inspect `docs/keeper-scale-audit/review.html` visually:
 
-- every one of the 169 accepted cards is present and named;
+- every one of the 173 accepted cards is present and named;
+- all seven review-state filters show the expected subset;
+- filtered Previous/Next and Left/Right navigation wrap at both ends;
+- each card has a read-only Codex response box, blank where no response exists;
 - global Pause and Original-ghost controls affect every card;
 - each card's ghost mirror, rotation and position choices save and export independently;
 - no card scales its sprite to fit;
@@ -771,4 +799,4 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 
 ## Ready-to-paste opening prompt for the new Codex task
 
-> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md` and `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` in full before changing anything, then read the authoritative scale/animation/door documents they link. I have new comments on clips in `docs/keeper-scale-audit/review.html`; capture every comment by exact filename into a dated review record, triage keep/fix/rebuild/delete/decision-needed/re-review-later, and resolve them. Treat the untouched `keeper_walk` as the immutable identity and scale reference. Costumes and props are overlays; never redraw or resize the keeper merely for clothing, canvas or an object. Costume changes happen only while fully hidden behind a foreground door. Make every accepted action reachable seamlessly and reversibly from idle/walking: phase-aware walk stop, correct turn, sit/crouch/climb/prop handover, activity entry/loop/exit, then a clean return to walking. Preserve the seated nap route, mower shed-occlusion route, cleaning cupboard route, artist-smock route and guitar frame-6 prop-handoff contracts. Rerun the full 187-sheet/1,348-frame scale audit and all project verification, update the handoff/index, commit and push the completed work to remote `main`.
+> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md` and `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` in full before changing anything, then read the authoritative scale/animation/door documents they link. Frank's completed 2026-10-09 source review, 173-row resolution register and separate Codex responses are under `docs/review/`; preserve them and capture any new export as a separately dated immutable record. Treat untouched `keeper_walk` and the canonical sitting references as immutable identity/scale authorities. Costumes and props are overlays; changes happen only under the declared foreground occlusion. Preserve the exact scuba jetty-dive-to-swim and parachute jump/drift/landing hand-offs, the cleaning cupboard route, seated nap route, mower shed route, artist-smock route and guitar frame-6 prop handoff. Rerun the full 191-sheet/1,420-frame scale audit and all project verification, update the handoff/index, commit and push the completed work to remote `main`.

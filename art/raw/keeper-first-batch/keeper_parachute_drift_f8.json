@@ -1,21 +1,19 @@
 {
   "w": 64,
-  "h": 56,
+  "h": 84,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
     32,
-    56
+    84
   ],
   "z": 50,
   "loop": true,
-  "handUsePoint": [
-    56,
-    24
-  ],
+  "startPose": "parachute-open",
+  "endPose": "parachute-open",
   "mirrorSafe": true,
   "facing": "right",
-  "interaction": "fish-and-reel",
+  "interaction": "parachute-drift",
   "mirrorsFor": "left"
 }

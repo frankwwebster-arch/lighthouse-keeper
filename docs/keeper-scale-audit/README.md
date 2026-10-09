@@ -2,10 +2,10 @@
 
 This is the permanent, reproducible audit of every keeper sheet against the untouched approved original `keeper_walk`. It deliberately does **not** use the outer silhouette as character scale except for the small set of directly comparable full-body walks: hats, tools, raised arms, water and furniture can change that box without changing the keeper.
 
-- 187 keeper sheets inspected.
-- 169 animation sheets accepted for review; 18 obsolete modular/reference sheets excluded.
-- 1348 individual frames measured.
-- 76 sheets explicitly rebuilt or anatomy-normalised in this pass.
+- 191 keeper sheets inspected.
+- 173 animation sheets accepted for review; 18 obsolete modular/reference sheets excluded.
+- 1420 individual frames measured.
+- 81 sheets explicitly rebuilt or anatomy-normalised in this pass.
 - 0 unresolved original-comparison failures (the audit command refuses to succeed unless this is zero).
 - Canonical upright anatomy: skull top 32.5 logical pixels above the walking floor, shoulders 24.5, hips 14.5, seat contact 11.
 - Allowed landmark drift: 0.5 logical pixel; core-width drift: 1 logical pixel. Pose contacts are checked independently from body scale.
@@ -16,16 +16,20 @@ The approved original is printed first in every contact-sheet row at exactly the
 
 ## Interactive comparison
 
-Open [the sizing and transition review](review.html) to see a dedicated untouched `keeper_walk` scale-authority panel followed by all 169 accepted animations in one filename-ordered gallery, with no search or filters required. A focused one-animation view provides a much larger stage, Previous/Next buttons, progress and filename status, and Left/Right arrow-key navigation without rebuilding cards or losing in-progress edits. It keeps a compact canonical reference pinned beside the reviewed card; choose standing or one sitting canon. The sitting endpoint's measured 9.75 × 6.5 face proxy exactly matches the standing reference frame, making it the sitting height/proportion authority. In upright standard-cap poses, the gold badge crossing the blue skull-top guide is a calibrated visual proxy; use anatomical landmarks for tilted, bent, seated, crouched, horizontal, bare-headed or alternate-headwear poses. The display-size slider magnifies gallery stages, or the focused reviewed stage, from 1× to 12× without changing the art or its relative scale; the pinned reference remains at a compact 2×. Each animation has independent 50%–150% character-width and character-height proposal sliders plus horizontal and vertical position controls, applied only to the reviewed action while the reference, rulers, ghost, approach walk and bridges remain unchanged. Earlier uniform size choices migrate to both axes. Comparison ghosts automatically use the canonical front, side or rear sitting endpoint for seated poses and the standing walk reference otherwise. Per-card controls can override that reference with the canonical standing side, standing facing-front, standing back-to-camera, sitting side, sitting front or sitting back figure, mirror, rotate and reset the ghost, move it alongside on a wider stage, rotate and reposition every frame of the reviewed animation around its fixed review anchor, and fade only that animation. The facing-front ghost is the neutral arms-down first frame of `keeper_wave_camera`, from which the exact-canonical-identity party idle is also derived. The back-to-camera standing ghost is the final frame of `keeper_turn_back`: the audited standard-outfit rear endpoint at the same 32 × 40 canvas, [16, 40] feet anchor and 38-pixel height as the standing authority. The sitting-back ghost is the final frame of `keeper_sit_back`, with the same [16, 29] seat point as the front and side sitting standards. Flying and swimming clips initially place the bottom of the first-frame figure on the red floor line so their size is easier to compare; manual position changes are explicit saved proposals. Pausing resets every card to its action's first frame. Per-card Previous/Next frame buttons pause globally, select action-only mode and step without wrapping from frame 1 through the final frame; frame inspection does not dirty the saved review. A separate 1–20fps proposed game-speed slider, 0.5fps buttons, authored-speed reset and live cycle-duration readout preview the reviewed action without changing approach-walk or bridge timing. Every card has a free-text production-notes field, mutually exclusive happy, full-re-draft and re-review-later decisions, a `Save this review` button and saved/unsaved status. `Save & re-review later` records the reminder immediately and advances to the next clip in focused mode; the reminder can be removed when that card is revisited. Saving persists notes, the decision, width, height, proposed runtime FPS, reviewed-animation rotation and position, ghost mirror, rotation and position controls, opacity and approval in the browser. Orange cards have unsaved changes, saved-and-happy cards are green, saved re-draft cards are red, saved re-review cards are blue, the summary counts progress, and export refuses to proceed while edits remain unsaved. `keeper-scale-choices.json` version 8 contains independent width/height/position/FPS production proposals, notes, re-draft requests, re-review reminders and the complete saved review/approval register. Accepted `animationFps` values belong in each clip's source JSON sidecar and generated runtime manifest, not in the PNG pixels. Comparison settings remain visual aids and do not alter production art. The page can also prepend the matching same-outfit walk, insert known bridge clips, or freeze the exact walk-to-action seam with onion skin. Every card prints its runtime PNG and authored source-strip filename.
+Open [the sizing and transition review](review.html) to inspect all 173 accepted animations beside the untouched `keeper_walk` authority. Review-state filters cover Needs my input, Happy, Awaiting new draft review, Review later, Unreviewed and Has Codex response. In focused mode Previous/Next and the Left/Right keys stay inside the selected filter and wrap from its final result to its first.
+The pinned reference can show canonical standing side/front/back or sitting side/front/back. The sitting endpoint's measured 9.75 × 6.5 face proxy exactly matches the standing reference frame. In upright standard-cap poses the gold badge crossing the blue skull-top guide is a calibrated visual proxy; tilted, bent, seated, crouched, horizontal, bare-headed and alternate-headwear poses still require anatomical landmarks.
+Each card retains precise size, position, rotation, opacity, ghost, frame-step and 1–20fps timing controls. The imported production pass starts those viewer transforms at neutral because accepted geometry and cadence are already baked into the delivered sprite and manifest. Comparison settings remain visual aids until saved/exported as a later review proposal.
+Every card has Frank's notes and decision controls plus a read-only Codex response field. That field is blank where no qualification was needed and briefly explains any interpretation or canonical-contract override elsewhere. Orange cards have unsaved changes; saved happy, new-draft and later-review cards use distinct status colours.
+`keeper-scale-choices.json` version 9 exports the complete review register, current review status and Codex response for every animation as well as any new per-card proposals. Export remains blocked while a card has unsaved edits. The page can also prepend matching walks, insert known bridges or freeze a seam with onion skin; every card prints its runtime PNG and authored source-strip filename.
 The character-width and character-height sliders each have adjacent −0.5% and +0.5% buttons for precise adjustments. They update the same per-animation values, obey the same 50%–150% limits and become part of the normal Save/export workflow.
 Every blue animation-transform slider also has −0.5/+0.5 buttons: degrees for rotation, logical pixels for horizontal/vertical position and percentage points for opacity. They update the same limited, saved and exported values as their sliders.
 Each card's frame-control block can play only that reviewed action from frame 1. `Play once` stops on the final frame; `Loop` repeats until paused. This playback choice is inspection-only and does not dirty the review.
 At browser widths of 1500px or more, focused mode becomes a widescreen workstation with the pinned canon on the left, a viewport-height animation stage in the centre and a compact two-column control console on the right. Control groups are colour-coded: amber for character size, purple for the ghost, blue for animation transforms, teal for frame navigation and green/red for review decisions and notes.
-Review progress is browser-local: changing display zoom saves it immediately, and every `Save this review` records that animation as the latest completed card. Reloading then restores the zoom, opens focused mode and selects the filename-ordered animation immediately after the most recently saved card (or remains on the final card when it was last).
+Review progress is browser-local: changing display zoom or review-state filter saves immediately, and every `Save this review` records that animation as the latest completed card. Reloading restores the focused view and filter. Saving or advancing from the final result wraps to the first result in that same filter.
 
 ## Corrected sheets
 
-- `keeper_anti_gravity` — rebuilt as a canonical-scale prone goggle float with frames 3-4 in progressive rotation, a centred back flip and no parachute.
+- `keeper_anti_gravity` — extended with four calm face-down float frames before the centred back flip; comparison-only rotation was not baked.
 - `keeper_artist_smock_sit_front` — new matching-outfit front stand-to-sit transition with the canonical seat datum.
 - `keeper_artist_smock_turn_back` — new matching-outfit side-to-rear transition for activity routing.
 - `keeper_artist_smock_turn_front` — new matching-outfit side-to-front transition for activity routing.
@@ -37,7 +41,8 @@ Review progress is browser-local: changing display zoom saves it immediately, an
 - `keeper_door_open_side_pyjamas` — clean six-frame side-door redraw in the canonical light-blue pyjama family; handle and floor interaction geometry are unchanged.
 - `keeper_drive_speedboat` — seated anatomy normalised to the sit-side head and torso unit.
 - `keeper_eat_seated` — seated anatomy normalised to the sit-side head and torso unit.
-- `keeper_fish_standing` — enlarged on a 64 by 56 canvas so the keeper, not the rod and line, determines actor scale.
+- `keeper_fish_seated` — extended to 16 frames on a 96 by 88 interaction canvas with the float and fish below the dock/foot anchor.
+- `keeper_fish_standing` — extended to 16 frames on a 96 by 88 interaction canvas with the float and fish below the foot anchor.
 - `keeper_guitar_pickup_acoustic` — new side-to-rear rack pickup and return-to-play transition; prop handoff occurs on frame 6.
 - `keeper_guitar_pickup_flying_v_1967` — new tier-3 rack pickup and return-to-play transition; prop handoff occurs on frame 6.
 - `keeper_guitar_pickup_gretsch` — new tier-2 rack pickup and return-to-play transition; prop handoff occurs on frame 6.
@@ -59,6 +64,8 @@ Review progress is browser-local: changing display zoom saves it immediately, an
 - `keeper_mechanic_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_mechanic_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_nap_seated` — canonical side-seated nap loop with closed eyes, clearly reclined head and open mouth; beard silhouette was corrected from a smooth oval to the standard stepped, ragged side-view margin; body height matches the standard sitting endpoint and furniture remains separate.
+- `keeper_parachute_drift` — new slow left/right open-canopy loop that can repeat for arbitrary fall height.
+- `keeper_parachute_landing` — new one-shot open-canopy touchdown, compression and canopy-collapse sequence.
 - `keeper_party_dance` — canonical dance anatomy inherited exactly; party hat is an overlay.
 - `keeper_party_eat_cake` — canonical seated-eat anatomy inherited exactly; party hat and cake are overlays.
 - `keeper_party_hat_put_on_back` — canonical rear work, raised-arm and leg components recombined; hat overlay only.
@@ -75,12 +82,14 @@ Review progress is browser-local: changing display zoom saves it immediately, an
 - `keeper_play_guitar_flying_v_1967` — new tier-3 red 1967 Flying V playing loop at canonical keeper scale.
 - `keeper_play_guitar_gretsch` — new tier-2 black Gretsch playing loop at canonical keeper scale.
 - `keeper_pressups_side` — redrawn and body-axis-normalised without shrinking its canonical head/core depth.
-- `keeper_put_record` — expanded to a 48 px side-action canvas so the record remains complete in frames 5–7.
+- `keeper_put_record` — expanded to a 64 px side-action canvas so the record remains complete through release.
 - `keeper_ride_bike_front` — enlarged from its undersized head unit on a 48 px interaction canvas.
 - `keeper_row_boat` — seated anatomy normalised to the sit-side head and torso unit.
+- `keeper_scuba_jetty_dive` — new one-shot jetty dive whose endpoint is the exact first horizontal scuba-swim frame.
 - `keeper_scuba_swim_down` — redrawn from the approved front swim anatomy with coherent scuba equipment.
 - `keeper_scuba_swim_horizontal` — redrawn from the approved horizontal swim anatomy with coherent scuba equipment.
 - `keeper_scuba_swim_up` — redrawn from the approved rear swim anatomy with coherent scuba equipment.
+- `keeper_scuba_walk_side` — new matching-outfit jetty locomotion for the scuba route.
 - `keeper_search_boxes` — reuses canonical corrected low rear work anatomy.
 - `keeper_sit_back` — new canonical rear stand-to-sit transition; final frame is the standard back-to-camera seated comparison ghost.
 - `keeper_sit_front` — redrawn and width-normalised against canonical front body.

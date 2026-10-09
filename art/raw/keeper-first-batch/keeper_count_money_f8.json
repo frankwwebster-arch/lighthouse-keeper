@@ -1,22 +1,22 @@
 {
   "w": 40,
-  "h": 40,
+  "h": 42,
   "frames": 8,
-  "fps": 4,
+  "fps": 6,
   "density": 4,
   "anchor": [
-    20,
-    40
+    20.0,
+    40.0
   ],
   "z": 50,
   "loop": true,
   "seatPoint": [
-    20,
-    29
+    20.0,
+    30.28
   ],
   "handUsePoint": [
-    20,
-    21
+    20.0,
+    22.12
   ],
   "facing": "front",
   "interaction": "count-money"

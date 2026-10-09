@@ -1,18 +1,18 @@
 {
-  "w": 40,
+  "w": 44,
   "h": 40,
-  "frames": 8,
+  "frames": 10,
   "fps": 4,
   "density": 4,
   "anchor": [
-    20,
-    40
+    21.0,
+    40.0
   ],
   "z": 50,
   "loop": false,
   "handUsePoint": [
-    35,
-    18
+    38.5,
+    19.32
   ],
   "outfit": "cream-bathrobe",
   "mirrorSafe": true,
