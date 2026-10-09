@@ -601,7 +601,7 @@ for token in (
     'floorAlignedInteractions', 'firstFrameAlphaBox',
     "if(!state.playing)return {clip:card.asset,frame:Math.min",
     'c.manualFrame=0',
-    'ghostReferences', 'Sitting side', 'Sitting front', 'Ghost rotation',
+    'ghostReferences', 'standingBack', 'Back to camera', 'Sitting side', 'Sitting front', 'Ghost rotation',
     'Alongside right', 'Reset ghost', 'Reviewed animation opacity',
     'Happy with this animation', 'Save this review', 'Unsaved changes',
     "REVIEW_STORAGE_KEY='lighthouse-keeper-animation-reviews-v1'",
@@ -621,6 +621,11 @@ for token in (
     'animations, all shown', 'function buildGallery()',
 ):
     assert token in scale_review,token
+rear_ghost=next(asset for asset in scale_audit['assets'] if asset['name']=='keeper_turn_back')
+rear_endpoint=rear_ghost['frameMeasurements'][-1]
+assert rear_ghost['canvas']==[32,40] and rear_ghost['anchor']==[16,40]
+assert rear_endpoint['alphaHeight']==38.0 and rear_endpoint['bottomClearance']==0.5
+assert abs(rear_endpoint['torsoScanWidthAt20']-scale_audit['canonicalAnatomy']['frontBackCoreWidth'])<=scale_audit['canonicalAnatomy']['tolerance']['coreWidth']
 walk=Image.open(root/'public/sprites'/manifest['keeper_walk']['file']).convert('RGBA')
 walk_frames=[walk.crop((i*128,0,(i+1)*128,160)) for i in range(8)]
 assert len({frame.tobytes() for frame in walk_frames})>=5

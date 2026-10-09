@@ -167,6 +167,10 @@ Every clip starts and ends on a **named pose**, and two clips may only follow ea
 
 The manifest would gain `startPose` and `endPose` on each clip. Reversed playback swaps them. Sitting down is `stand` → `seated-side`, so played backwards it is standing up.
 
+The animation review sheet uses frame 6 of `keeper_turn_back` as its canonical
+standing back-to-camera ghost. It is the standard-outfit `stand-rear` endpoint,
+not a work-action or costume substitute.
+
 ### What gets checked
 
 | Check | Proposed tolerance |

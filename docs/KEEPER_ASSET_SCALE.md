@@ -273,7 +273,10 @@ and opens focused mode on the next filename-ordered card, clamped to the final
 card when the most recently saved animation has no successor.
 Seated cards automatically use the canonical front or side sitting endpoint;
 other cards use the standing reference. Per-card controls can select a different
-reference, rotate/reset it, place it alongside and fade only the reviewed action.
+reference, including the canonical back-to-camera standing endpoint (frame 6 of
+`keeper_turn_back`), rotate/reset it, place it alongside and fade only the
+reviewed action. That rear endpoint retains the standard outfit, 32 × 40 canvas,
+[16, 40] feet anchor and 38-pixel standing height used by the canonical keeper.
 There is no canonical rear-sitting reference yet, so rear comparisons require an
 explicit choice and remain visual evidence rather than a certified pose match.
 Each card's Save button persists its width, height, horizontal/vertical position,
