@@ -186,9 +186,13 @@ handover; an unexplained first-frame pop is not a seamless join.
 
 Delivered in `docs/keeper-scale-audit/review.html`:
 
-- All 152 accepted clips at one unchanged world scale on a shared 96 × 96 stage,
-  with floor, skull, shoulder, hip and seat guide lines, an optional untouched
-  original-keeper ghost, and 2×/3×/4× integer zoom.
+- A dedicated untouched `keeper_walk` scale-authority panel, followed by all
+  152 accepted clips at one unchanged relative world scale on a shared 96 × 96
+  stage, with floor, skull, shoulder, hip and seat guide lines and an optional
+  original-keeper ghost. The 1×–6× display-size slider magnifies every stage
+  equally without changing the source art or its relative scale. For upright
+  standard-cap poses, the gold badge on the blue skull line is a calibrated
+  proxy only; changed posture, head angle and headwear need anatomy checks.
 - Action-only, raw matching-outfit walk seams and routes containing the known
   turn/sit/bed bridges.
 - A seam-freeze onion skin of the final approach frame and first action frame.

@@ -11,6 +11,7 @@
   h1{font:700 24px/1.1 system-ui,sans-serif;margin:0 0 7px}.lede{color:var(--muted);max-width:1100px;margin:0 0 14px}
   .controls{display:flex;flex-wrap:wrap;gap:9px;align-items:end}.control{display:grid;gap:4px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em}
   select,button{font:inherit;color:var(--ink);background:#202d38;border:1px solid #425665;border-radius:6px;padding:7px 9px}button{cursor:pointer}button:hover{border-color:#89a6ba}.active{background:#25455b;border-color:#5fb5ec}
+  input[type=range]{width:150px;accent-color:var(--blue)}output{color:var(--ink);font-size:12px;min-width:3.5em}
   .summary{display:flex;gap:18px;flex-wrap:wrap;margin:12px 0 0;color:var(--muted)}.summary b{color:var(--ink)}
   .legend{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;color:var(--muted);font-size:12px}.swatch{display:inline-block;width:14px;height:2px;margin-right:4px;vertical-align:middle}
   main{padding:12px 14px 40px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:9px}
@@ -20,6 +21,7 @@
   .stageLabel{position:absolute;left:9px;top:9px;color:#d8e6ef;background:#101820cc;padding:2px 5px;border-radius:4px;font-size:9px}.boundary .stageLabel{color:#ffd3a4}
   .cardbody{padding:7px 9px 9px}.route{min-height:30px;color:#cbd8e1;font-size:10px}.note{color:var(--muted);font-size:10px;margin-top:2px}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:2px 8px;margin:6px 0;color:var(--muted);font-size:9px}.metrics b{color:#dce8ef;font-weight:500}.cardbuttons{display:flex;gap:5px}.cardbuttons button{font-size:10px;padding:5px 7px}
   .help{margin:0 0 16px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:#121b23;color:var(--muted)}.help b{color:var(--ink)}
+  .reference-title{margin:0 0 7px;font:700 16px/1.2 system-ui,sans-serif}.reference-grid{grid-template-columns:minmax(250px,420px);margin-bottom:16px}.reference-card{border-color:#4d7895}.reference-card .cardhead{background:#193044}.reference-card .note{color:#c9d8e2}.gallery-title{margin:0 0 7px;font:700 16px/1.2 system-ui,sans-serif}
   @media(max-width:620px){header,main{padding-left:10px;padding-right:10px}.grid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -34,14 +36,17 @@
       <option value="bridge">Known bridge route</option>
       <option value="freeze">Seam freeze / onion skin</option>
     </select></label>
-    <label class="control">Zoom<select id="zoom"><option value="2" selected>2× compact</option><option value="3">3×</option><option value="4">4×</option></select></label>
+    <label class="control" for="zoom">Display size (review only)<span><input id="zoom" type="range" min="1" max="6" step="0.25" value="2"><output id="zoomValue" for="zoom">2×</output></span></label>
     <button id="play" class="active">Pause every animation</button><button id="rulers" class="active">Rulers on</button><button id="original">Ghost original on every animation</button>
   </div>
   <div class="summary" id="summary"></div>
   <div class="legend"><span><i class="swatch" style="background:var(--red)"></i>floor</span><span><i class="swatch" style="background:var(--blue)"></i>skull top</span><span><i class="swatch" style="background:var(--green)"></i>shoulders</span><span><i class="swatch" style="background:var(--amber)"></i>hips</span><span><i class="swatch" style="background:var(--purple)"></i>seat</span></div>
 </header>
 <main>
-  <div class="help"><b>How to read this:</b> “Original ghost” places the untouched first frame of <code>keeper_walk</code> behind every action without resizing either figure; use it to compare skull height, head unit and fatness. Orange means the first frame after a clip boundary. “Raw” deliberately exposes ugly walk-to-action jumps. “Known bridge” inserts the approved turn, sit or bed-entry clip when metadata supplies one. “Seam freeze” overlays the last approach frame and first action frame; large doubled silhouettes show a position, facing or posture discontinuity that needs a bridge.</div>
+  <div class="help"><b>How to read this:</b> “Original ghost” places the untouched first frame of <code>keeper_walk</code> behind every action without resizing either figure; use it to compare skull height, head unit and fatness. The display-size slider magnifies every stage equally for inspection and never changes the source art or relative scale. Orange means the first frame after a clip boundary. “Raw” deliberately exposes ugly walk-to-action jumps. “Known bridge” inserts the approved turn, sit or bed-entry clip when metadata supplies one. “Seam freeze” overlays the last approach frame and first action frame; large doubled silhouettes show a position, facing or posture discontinuity that needs a bridge.</div>
+  <h2 class="reference-title">Untouched scale authority</h2>
+  <div id="reference" class="grid reference-grid"></div>
+  <h2 class="gallery-title">Animation gallery</h2>
   <div id="grid" class="grid"></div>
 </main>
 <script>
@@ -87,21 +92,21 @@ function renderCard(card,now){
 function renderAll(now=performance.now()){for(const card of state.cards.values())if(state.visible.has(card.el))renderCard(card,now)}
 function tick(now){if(state.playing)renderAll(now);requestAnimationFrame(tick)}
 const observer=new IntersectionObserver(entries=>{for(const e of entries)e.isIntersecting?state.visible.add(e.target):state.visible.delete(e.target);renderAll()},{rootMargin:'300px'});
-function makeCard(asset){
-  const el=document.createElement('article');el.innerHTML=`<div class="cardhead"><h2>${asset.name}</h2><div class="filenames">runtime: ${asset.name}.png<br>source: ${basename(asset.source)}</div><div class="tags"><span class="tag">${clean(asset.outfit)}</span><span class="tag">${clean(asset.postureClass)}</span><span class="tag">${clean(asset.facing)}</span><span class="tag">${clean(asset.originalComparison.verdict)}</span><span class="tag ${asset.transitionKind}">${clean(asset.transitionKind)}</span></div></div><div class="stagewrap"><canvas></canvas><span class="stageLabel"></span></div><div class="cardbody"><div class="route"></div><div class="note"></div><div class="metrics"><span>canvas <b>${asset.canvas.join('×')}</b></span><span>anchor <b>${asset.anchor.join(', ')}</b></span><span>face proxy <b>${asset.medianFaceProxyWidth??'—'}×${asset.medianFaceProxyHeight??'—'}</b></span><span>face coverage <b>${asset.faceProxyCoverage??'—'}</b></span><span>torso scan <b>${asset.medianTorsoScanWidthAt20??'—'}</b></span><span>torso coverage <b>${asset.torsoScanCoverage??'—'}</b></span><span>alpha height <b>${asset.alphaHeightRange.join('–')}</b></span><span>original ratio <b>${asset.originalComparison.silhouetteHeightRatio??'landmarks'}</b></span><span>torso difference <b>${asset.originalComparison.torsoScanDifference??'landmarks'}</b></span><span>frames <b>${asset.frames} @ ${asset.fps}fps</b></span></div><div class="cardbuttons"><button class="replay">Replay seam</button><button class="action">Action only</button></div></div>`;
-  const card={asset,el,canvas:el.querySelector('canvas'),wrap:el.querySelector('.stagewrap'),label:el.querySelector('.stageLabel'),started:performance.now(),pausedAt:performance.now()};
-  el.querySelector('.route').textContent=routeFor(asset);el.querySelector('.note').textContent=asset.transitionNote;
-  el.querySelector('.replay').onclick=()=>{card.localMode=null;card.started=performance.now();card.pausedAt=card.started;renderCard(card,card.started)};
-  el.querySelector('.action').onclick=()=>{card.localMode='action';card.started=performance.now();card.pausedAt=card.started;renderCard(card,card.started)};
+function makeCard(asset,{reference=false}={}){
+  const title=reference?'Reference — untouched keeper_walk':asset.name;
+  const el=document.createElement('article');el.classList.toggle('reference-card',reference);el.innerHTML=`<div class="cardhead"><h2>${title}</h2><div class="filenames">runtime: ${asset.name}.png<br>source: ${basename(asset.source)}</div><div class="tags"><span class="tag">${clean(asset.outfit)}</span><span class="tag">${clean(asset.postureClass)}</span><span class="tag">${clean(asset.facing)}</span><span class="tag">${clean(asset.originalComparison.verdict)}</span><span class="tag ${asset.transitionKind||'locomotion'}">${reference?'scale authority':clean(asset.transitionKind)}</span></div></div><div class="stagewrap"><canvas></canvas><span class="stageLabel"></span></div><div class="cardbody"><div class="route"></div><div class="note"></div><div class="metrics"><span>canvas <b>${asset.canvas.join('×')}</b></span><span>anchor <b>${asset.anchor.join(', ')}</b></span><span>face proxy <b>${asset.medianFaceProxyWidth??'—'}×${asset.medianFaceProxyHeight??'—'}</b></span><span>face coverage <b>${asset.faceProxyCoverage??'—'}</b></span><span>torso scan <b>${asset.medianTorsoScanWidthAt20??'—'}</b></span><span>torso coverage <b>${asset.torsoScanCoverage??'—'}</b></span><span>alpha height <b>${asset.alphaHeightRange.join('–')}</b></span><span>original ratio <b>${asset.originalComparison.silhouetteHeightRatio??'landmarks'}</b></span><span>torso difference <b>${asset.originalComparison.torsoScanDifference??'landmarks'}</b></span><span>frames <b>${asset.frames} @ ${asset.fps}fps</b></span></div>${reference?'':`<div class="cardbuttons"><button class="replay">Replay seam</button><button class="action">Action only</button></div>`}</div>`;
+  const card={asset,el,reference,canvas:el.querySelector('canvas'),wrap:el.querySelector('.stagewrap'),label:el.querySelector('.stageLabel'),started:performance.now(),pausedAt:performance.now()};
+  el.querySelector('.route').textContent=reference?'Canonical standing/walking height and identity reference':routeFor(asset);el.querySelector('.note').textContent=reference?'Upright cap proxy: when the standard cap is seated normally, its gold badge crosses the blue skull-top guide. Use anatomical landmarks instead for head tilt, bending, sitting, crouching, horizontal poses, bare heads or different headwear.':asset.transitionNote;
+  if(!reference){el.querySelector('.replay').onclick=()=>{card.localMode=null;card.started=performance.now();card.pausedAt=card.started;renderCard(card,card.started)};el.querySelector('.action').onclick=()=>{card.localMode='action';card.started=performance.now();card.pausedAt=card.started;renderCard(card,card.started)}}
   state.cards.set(el,card);observer.observe(el);return el;
 }
 function buildGallery(){
-  const list=[...DATA.assets].sort((a,b)=>a.name.localeCompare(b.name)),grid=$('grid');observer.disconnect();state.visible.clear();state.cards.clear();grid.replaceChildren(...list.map(makeCard));
+  const list=[...DATA.assets].sort((a,b)=>a.name.localeCompare(b.name)),grid=$('grid');observer.disconnect();state.visible.clear();state.cards.clear();$('reference').replaceChildren(makeCard({...DATA.originalReference,transitionKind:'locomotion',transitionNote:''},{reference:true}));grid.replaceChildren(...list.map(asset=>makeCard(asset)));
   const counts={};for(const a of list)counts[a.transitionKind]=(counts[a.transitionKind]||0)+1;
-  $('summary').innerHTML=`<span><b>${list.length}</b> animations, all shown</span>${Object.entries(counts).sort().map(([k,v])=>`<span><b>${v}</b> ${clean(k)}</span>`).join('')}`;renderAll();
+  $('summary').innerHTML=`<span><b>1</b> dedicated untouched reference</span><span><b>${list.length}</b> animations, all shown</span>${Object.entries(counts).sort().map(([k,v])=>`<span><b>${v}</b> ${clean(k)}</span>`).join('')}`;renderAll();
 }
-$('mode').onchange=e=>{state.mode=e.target.value;for(const c of state.cards.values()){c.localMode=null;c.started=performance.now();c.pausedAt=c.started;c.el.querySelector('.route').textContent=routeFor(c.asset)}renderAll()};
-$('zoom').onchange=e=>{state.zoom=Number(e.target.value);renderAll()};
+$('mode').onchange=e=>{state.mode=e.target.value;for(const c of state.cards.values()){c.localMode=null;c.started=performance.now();c.pausedAt=c.started;if(!c.reference)c.el.querySelector('.route').textContent=routeFor(c.asset)}renderAll()};
+$('zoom').oninput=e=>{state.zoom=Number(e.target.value);$('zoomValue').value=`${state.zoom}×`;renderAll()};
 $('play').onclick=()=>{state.playing=!state.playing;const now=performance.now();for(const c of state.cards.values()){if(state.playing)c.started+=now-c.pausedAt;else c.pausedAt=now}$('play').textContent=state.playing?'Pause every animation':'Play every animation';$('play').classList.toggle('active',state.playing);renderAll(now)};
 $('rulers').onclick=()=>{state.rulers=!state.rulers;$('rulers').textContent=state.rulers?'Rulers on':'Rulers off';$('rulers').classList.toggle('active',state.rulers);renderAll()};
 $('original').onclick=()=>{state.original=!state.original;$('original').textContent=state.original?'Remove original ghost from all':'Ghost original on every animation';$('original').classList.toggle('active',state.original);renderAll()};

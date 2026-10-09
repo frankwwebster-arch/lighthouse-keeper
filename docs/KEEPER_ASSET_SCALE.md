@@ -229,14 +229,19 @@ eight contact sheets render every sample at one fixed display scale so a larger
 transparent canvas can never make its keeper look smaller.
 
 For interactive comparison, open `docs/keeper-scale-audit/review.html`. It puts
-all 152 accepted animation sheets together in one filename-ordered gallery,
-without search, filters or card fitting. Every card prints both its runtime PNG
-and authored source-strip filename. The shared controls pause or play every
-animation at once, overlay the original keeper on every card at once, and draw
-the shared skull/shoulder/hip/seat/floor rulers. The page can also play the
-matching same-outfit walk immediately before an action. The raw seam,
-known-bridge and onion-skin modes make transition problems visible without
-changing the underlying sprite scale.
+the untouched `keeper_walk` in a dedicated scale-authority panel, followed by
+all 152 accepted animation sheets in one filename-ordered gallery, without
+search, filters or card fitting. For standard upright cap poses, its gold badge
+crossing the blue skull-top line is a convenient calibrated proxy; it does not
+replace anatomical landmarks for altered posture, head angle or headwear.
+Every card prints both its runtime PNG and authored source-strip filename. The
+shared controls pause or play every animation at once, overlay the original
+keeper on every card at once, and draw the shared
+skull/shoulder/hip/seat/floor rulers. A 1×–6× display-size slider magnifies all
+stages equally and never changes source or relative sprite scale. The page can
+also play the matching same-outfit walk immediately before an action. The raw
+seam, known-bridge and onion-skin modes make transition problems visible
+without changing the underlying sprite scale.
 
 The sad, hungry, bored and cross reactions share one enforced upright scale:
 their visible height is 38 logical pixels (152 pixels in the density-4 source)

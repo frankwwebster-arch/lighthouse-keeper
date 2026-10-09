@@ -585,6 +585,8 @@ for token in (
     'Seam freeze / onion skin', 'keeper_walk', 'Matching-outfit walking source',
     'measured-and-visual-pass', 'torso difference',
     'Pause every animation', 'Ghost original on every animation',
+    'Display size (review only)', 'id="reference"', 'dedicated untouched reference',
+    'gold badge crosses the blue skull-top guide',
     'runtime: ${asset.name}.png', 'source: ${basename(asset.source)}',
     'animations, all shown', 'function buildGallery()',
 ):

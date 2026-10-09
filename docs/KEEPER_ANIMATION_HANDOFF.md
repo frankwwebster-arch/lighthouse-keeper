@@ -7,10 +7,12 @@ Codex task should be able to continue from here without relying on the old chat.
 ## Start here in the next task
 
 1. Read this document in full.
-2. Open `docs/keeper-scale-audit/review.html`. It shows all 152 accepted clips
-   at one unchanged scale, in filename order, and prints the runtime and source
-   filename on every card. The global controls pause/play everything and apply
-   the original-keeper ghost to everything.
+2. Open `docs/keeper-scale-audit/review.html`. A dedicated panel first shows
+   the untouched `keeper_walk` scale authority, followed by all 152 accepted
+   clips at one unchanged relative scale in filename order. Every card prints
+   its runtime and source filename. The display-size slider magnifies every
+   stage equally from 1× to 6× without changing the art; the other global
+   controls pause/play everything and apply the original-keeper ghost.
 3. Ask Frank for his new comments, or ingest the file/export in which he has
    recorded them. **The sizing review page is currently display-only. It does
    not save comments.** Do not assume comments seen only in Frank's browser
@@ -47,6 +49,10 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   pixels above the supporting sole, shoulders 24.5, hips 14.5, side core depth
   13, front/rear core width 19, head width 14.5, hand diameter 4 and boot length
   8. Landmark tolerance is 0.5 logical pixel; core-width tolerance is 1 pixel.
+- For an upright keeper wearing the normally seated standard cap, the gold cap
+  badge crossing the blue skull-top guide is a calibrated, easy visual proxy.
+  It is not valid for head tilt, bending, sitting, crouching, horizontal poses,
+  bare heads or alternate headwear; those still require anatomical landmarks.
 - Costumes, hats, handheld props and equipment are overlays on canonical body
   frames. Do not redraw the keeper because his clothing or prop changes. A new
   drawing is justified only by a genuinely new body pose; it must then pass the
