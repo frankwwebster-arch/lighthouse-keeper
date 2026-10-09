@@ -22,6 +22,9 @@ Codex task should be able to continue from here without relying on the old chat.
    frame; inspection alone does not alter or dirty the saved review. A prominent
    top-right pane badge continuously names the displayed clip and exact frame,
    including during playback; seam-freeze mode names both compared frames.
+   The same control block has `Play animation` plus a `Play once`/`Loop`
+   selector. It starts the reviewed action at frame 1, animates only that card
+   and does not dirty the saved review.
    At browser widths of 1500px or more, focused mode uses the monitor width:
    pinned reference left, large viewport-height stage centre, and a compact
    two-column control console right. Amber means size, purple ghost, blue
@@ -78,6 +81,9 @@ The reviewed animation itself can rotate from −180° to +180° around its fixe
 review anchor, independently of ghost rotation. This is a comparison aid for
 horizontal clips such as `keeper_anti_gravity`; its saved angle is included in
 the review export and is not automatically a production-art instruction.
+Every blue transform slider also has precise −0.5/+0.5 buttons: degrees for
+rotation, logical pixels for horizontal/vertical position, and percentage
+points for opacity. They share the slider limits and saved/exported values.
 
 The exact human-readable clip inventory is in `docs/KEEPER_ANIMATIONS.md`.
 The machine-readable runtime inventory is `public/sprites/manifest.json`.

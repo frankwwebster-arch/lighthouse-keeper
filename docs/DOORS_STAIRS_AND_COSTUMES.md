@@ -211,12 +211,18 @@ Delivered in `docs/keeper-scale-audit/review.html`:
   Horizontal and vertical controls reposition only the reviewed
   action and include a zero-offset reset. Earlier uniform choices migrate to both axes. Saved proposals
   export as JSON for later source-art rebuilding; the viewer never edits sprites.
+- Every blue animation-transform slider has −0.5/+0.5 buttons: degrees for
+  rotation, logical pixels for position and percentage points for opacity.
+  They share the slider limits and normal Save/export workflow.
 - Flying and swimming cards align their first-frame figure bottom to the red
   floor line. Global Pause resets every card to frame 1 of its action.
 - Every card has Previous/Next frame buttons and an exact frame counter. Using
   them pauses playback and steps through the action without dirtying the review.
   A prominent pane badge continuously shows the displayed clip and frame,
   including during playback and for both sides of a frozen seam.
+- The adjacent Play animation button starts only that action at frame 1. Its
+  selector plays once and holds the final frame, or loops until paused; this
+  review-only playback choice does not dirty the card.
 - On browser widths of 1500px or more, focused mode uses a three-part horizontal
   workstation: pinned canon, large stage and compact two-column control console.
   Control families have distinct amber, purple, blue, teal and green/red colours.

@@ -74,6 +74,10 @@ Next priorities:
 3. For any keeper-animation continuation, read `docs/KEEPER_ANIMATION_HANDOFF.md` first. It records the full requested scope, every agreed correction, the door-hidden costume rule, the exact 152-clip transition classification and the essential idle/walk-to-action bridge backlog. Each card can save independent width/height, horizontal/vertical position, reviewed-animation rotation, ghost/opacity settings, free-text notes, full-re-draft status and happy status in Frank's browser; `keeper-scale-choices.json` version 5 exports the saved review register. Read every exported note before drawing, including when a clip is flagged for full re-draft. Beard length/silhouette is identity-locked to `keeper_walk` and must be checked frame by frame. Browser-local notes reach Codex only when Frank supplies the export; commit accepted feedback under `docs/review/`.
    Width and height each have precise −0.5%/+0.5% buttons beside their slider;
    both inputs update the same saved and exported values.
+   Rotation, horizontal/vertical position and opacity likewise have precise
+   −0.5/+0.5 buttons in degrees, logical pixels and percentage points.
+   The frame controls can play only the reviewed card once or in a loop; that
+   playback mode is inspection state and is not exported as production feedback.
 4. Add a day/night palette or overlay system and the proper roughly 30-second recap.
 5. Design future floor missions so eligible standard floors can unlock in different orders; do not hard-code a linear room sequence.
 6. Leave aquarium, weather station, lair, lift, pets, visitors, ship and weather art until the later batch is authorised.
