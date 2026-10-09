@@ -1,4 +1,4 @@
-# Lighthouse Keeper: status write-up (9 Oct 2026)
+# Lighthouse Keeper: status write-up (10 Oct 2026)
 
 ## What it is
 A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthouse; kids type commands (typo-tolerant, curated, no live AI) or click objects (Sims-style menus, auto-zoom camera). Needs and mood, credits, phone, bedtime, multi-day play, a day report, quiz pop-ins, time-aware chat, cheeky humour.
@@ -31,7 +31,7 @@ Keeper review cards now also preview, save and export a proposed per-clip
 runtime FPS. Accepted `animationFps` values belong in each animation's source
 JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
-1. Continue Frank's keeper review from the imported production pass: 88 of 173 animations are Happy, 70 Awaiting new draft review, 3 Review later and 12 Unreviewed. The full 191-sheet technical batch contains 1,420 audited frames with zero scale failures. The review page filters those states, keeps navigation inside the selected filter with cyclic Previous/Next, and shows a read-only Codex response per card. The scuba jetty walk/dive/swim and parachute jump/drift/landing routes are delivered with exact hand-off frames. `keeper_nap_seated` retains the canonical ragged/tapered side beard and `(16,29)` seat contact. The three cleaning tiers still fetch their complete tool only behind the foreground cupboard door; lawn-mower, artist-smock and guitar routes remain as documented in the animation handoff.
+1. Continue Frank's keeper review from the imported production pass: 88 of 173 animations are Happy, 70 Awaiting new draft review, 3 Review later and 12 Unreviewed. The corrective pass checked all 70 awaiting-input comments, re-rendered the clips whose first completion was not genuine, and gives every one a specific read-only response. The review page filters those states and keeps cyclic Previous/Next navigation inside the active filter. Frank's saved per-animation width and height are final production art direction—including accepted costumes and redrafts—while the fixed keeper references protect identity, beard and anatomy. The full 191-sheet technical batch contains 1,420 audited frames with no unresolved verification failure. The scuba jetty walk/dive/swim and parachute jump/drift/landing routes are delivered with exact hand-off frames. `keeper_nap_seated` retains the canonical ragged/tapered side beard and `(16,29)` seat contact. The three cleaning tiers still fetch their complete tool only behind the foreground cupboard door; lawn-mower, artist-smock and guitar routes remain as documented in the animation handoff.
 2. Art for the mission floors (aquarium, weather station, hidden lair), their furniture, the lift and a floor-arrival effect (Codex; hooks in docs/FOR_CODEX.md).
 3. Tier art for upgrades (Codex; list in docs/FOR_CODEX.md). Typed commands for upgrading ("upgrade the TV") are not in yet; upgrades are bought from the tap menu.
 4. Mini games: fishing, cooking, telescope spotting.
@@ -45,4 +45,4 @@ JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
 ## Verification and delivery
 
-The current production asset delivery passes the project tests, TypeScript checking, a production build, sprite export, catalogue verification and the complete 1,420-frame scale audit. All 191 keeper exports have exact source dimensions and hard alpha; runtime rendering remains nearest-neighbour at 4× logical size.
+The current production asset delivery passes the project tests, TypeScript checking, a production build, sprite export, catalogue verification and the complete 1,420-frame identity/scale audit with Frank's saved visual sizes preserved. All 191 keeper exports have exact source dimensions and hard alpha; runtime rendering remains nearest-neighbour at 4× logical size. The delivery is on remote `main`; its Vercel production deployment completed successfully and the canonical live URL returned HTTP 200 on 10 October 2026.
