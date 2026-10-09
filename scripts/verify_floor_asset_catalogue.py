@@ -61,7 +61,7 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==184
+assert len(keeper_pngs)==187
 required_clips={
     'keeper_idle':(4,4), 'keeper_walk':(8,4),
     'keeper_turn_back':(6,4), 'keeper_work_back':(8,4),
@@ -227,6 +227,17 @@ guitar_variants={
 }
 for name,(variant,tier) in guitar_variants.items():
     assert manifest[name]['propVariant']==variant and manifest[name]['upgradeTier']==tier
+cleaning_variants={
+    'keeper_sweep_broom':('traditional-broom',1),
+    'keeper_hoover_basic':('basic-upright-hoover',2),
+    'keeper_hoover_super':('eccentric-super-hoover',3),
+}
+for name,(variant,tier) in cleaning_variants.items():
+    clip=manifest[name]
+    assert clip['w']==48 and clip['h']==40 and clip['anchor']==[24,40]
+    assert clip['propVariant']==variant and clip['upgradeTier']==tier
+    assert clip['movementVector']==[1,0] and clip['mirrorSafe'] is True
+    assert clip['interaction']=='clean-floor' and clip['fps']==4
 for name,(variant,tier,end_pose) in {
     'keeper_guitar_pickup_acoustic':('acoustic',1,'play-guitar-acoustic'),
     'keeper_guitar_pickup_gretsch':('black-gretsch',2,'play-guitar-gretsch'),
@@ -636,12 +647,12 @@ assert scale_audit['auditRevision']=='2026-10-09-original-comparison-v2'
 assert scale_audit['originalReference']['name']=='keeper_walk'
 assert scale_audit['originalReference']['source']=='art/raw/keeper-first-batch/keeper_walk_f8.png'
 assert scale_audit['originalReference']['approvedMedianTorsoScanWidthAt20']==13.75
-assert scale_audit['counts']['allSheets']==184
-assert scale_audit['counts']['reviewedAnimationSheets']==166
+assert scale_audit['counts']['allSheets']==187
+assert scale_audit['counts']['reviewedAnimationSheets']==169
 assert scale_audit['counts']['technicalRejectedSheets']==18
-assert scale_audit['counts']['allFramesMeasured']==1324
+assert scale_audit['counts']['allFramesMeasured']==1348
 assert scale_audit['counts']['comparisonFailures']==0
-assert len(scale_audit['assets'])==184
+assert len(scale_audit['assets'])==187
 assert all('originalComparison' in asset for asset in scale_audit['assets'])
 scale_assets_by_name={asset['name']:asset for asset in scale_audit['assets']}
 standing_face=scale_assets_by_name['keeper_walk']['frameMeasurements'][0]['faceProxy']
@@ -666,7 +677,7 @@ assert len(scale_audit['contactSheets'])==9
 assert all((root/path).exists() for path in scale_audit['contactSheets'])
 scale_review=(root/'docs/keeper-scale-audit/review.html').read_text()
 assert '__KEEPER_REVIEW_DATA__' not in scale_review
-assert '"reviewedAnimationSheets":166' in scale_review
+assert '"reviewedAnimationSheets":169' in scale_review
 for removed_control in ('id="search"','id="outfit"','id="posture"','id="kind"','id="sort"'):
     assert removed_control not in scale_review,removed_control
 for token in (
@@ -802,6 +813,9 @@ previews={
     'keeper-watch-movie-right':(8,250), 'keeper-watch-movie-left':(8,250),
     'keeper-clear-snow-right':(8,250), 'keeper-clear-snow-left':(8,250),
     'keeper-lawn-mower-push-right':(8,250), 'keeper-lawn-mower-push-left':(8,250),
+    'keeper-sweep-broom-right':(8,250), 'keeper-sweep-broom-left':(8,250),
+    'keeper-hoover-basic-right':(8,250), 'keeper-hoover-basic-left':(8,250),
+    'keeper-hoover-super-right':(8,250), 'keeper-hoover-super-left':(8,250),
     'keeper-crouch-work-back':(8,250),
     'keeper-cake-from-oven-back':(8,250),
     'keeper-cake-turn-right':(6,250), 'keeper-cake-turn-left':(6,250),
@@ -810,6 +824,6 @@ for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
 keeper_previews=list((root/'docs/floor-asset-catalogue').glob('keeper-*-preview.gif'))
-assert len(keeper_previews)==169
+assert len(keeper_previews)==175
 assert all(Image.open(path).is_animated for path in keeper_previews)
-print('Verified: 71 spaces, 1579 rows, owned-item states, passive armchair contract, 9 TV/lamp/FX exports, 184 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
+print('Verified: 71 spaces, 1579 rows, owned-item states, passive armchair contract, 9 TV/lamp/FX exports, 187 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')

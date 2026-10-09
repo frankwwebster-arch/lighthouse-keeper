@@ -80,6 +80,9 @@ TECHNICAL = {
 CORRECTED = {
     "keeper_nap_seated": "canonical side-seated nap loop with closed eyes, clearly reclined head and open mouth; beard silhouette was corrected from a smooth oval to the standard stepped, ragged side-view margin; body height matches the standard sitting endpoint and furniture remains separate",
     "keeper_lawn_mower_push": "new canonical-height side walk pushing an included manual reel mower; runtime translates the complete unit from behind a foreground shed door",
+    "keeper_sweep_broom": "new canonical-height tier-1 cleaning loop with its traditional broom included; runtime swaps tools only while fully hidden by the cupboard door",
+    "keeper_hoover_basic": "new canonical-height tier-2 cleaning loop with its ordinary upright hoover included; runtime swaps tools only while fully hidden by the cupboard door",
+    "keeper_hoover_super": "new canonical-height tier-3 cleaning loop with its original eccentric super hoover included; runtime swaps tools only while fully hidden by the cupboard door",
     "keeper_artist_smock_walk": "new artist-smock locomotion family; every pose is independently height-matched to the corresponding canonical walk frame after frame 4 was identified as undersized in the generated source",
     "keeper_artist_smock_turn_back": "new matching-outfit side-to-rear transition for activity routing",
     "keeper_artist_smock_turn_front": "new matching-outfit side-to-front transition for activity routing",
@@ -630,8 +633,8 @@ def publish(assets: list[dict]) -> None:
 
 def main() -> None:
     assets = load_assets()
-    if len(assets) != 184:
-        raise SystemExit(f"Expected 184 keeper sheets, found {len(assets)}")
+    if len(assets) != 187:
+        raise SystemExit(f"Expected 187 keeper sheets, found {len(assets)}")
     publish(assets)
     failures = [
         (asset["name"], warning)

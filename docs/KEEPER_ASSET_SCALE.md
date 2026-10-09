@@ -24,6 +24,11 @@ page explains it in ordinary language.
   `keeper_walk` at the closest facing/head angle; posture, costume and props do
   not justify a longer or shorter beard. Per-animation exported notes remain
   authoritative for identifying the clips and frames that require correction.
+- Side-on beards require a full-library, frame-by-frame audit: several clips
+  have made the beard too smooth, rounded or bulbous. Preserve the canonical
+  stepped, slightly ragged outer and lower margins and its taper around the
+  mouth and chin in left-facing, right-facing and mirrored frames, including
+  seated, reclined and head-tilted poses.
 - The vertical dive uses 48 × 56 with anchor `(24,56)`. Full parachute
   deployment uses 48 × 84 with anchor `(24,84)`. The keeper remains exactly the
   same size; only the transparent space around him grows.
@@ -62,7 +67,7 @@ then run `scripts/audit_keeper_scale.py` with the bundled Python runtime.
 
 The audit uses the untouched approved `keeper_walk` as its primary reference:
 
-1. It measures every frame in all 184 sheets (1,324 frames at present).
+1. It measures every frame in all 187 sheets (1,348 frames at present).
 2. It prints the original first in every contact-sheet row, followed by the
    tested sheet's first, middle and last representative frames at exactly the
    same fixed scale. No image is fitted to its available canvas.
@@ -229,13 +234,13 @@ the established switch heights, canvas scale or feet anchors.
 The complete starting dimensions for chairs, sofas, tables, beds, toilets,
 baths, showers and object stations are in
 `data/keeper_object_dimensions.json`. The per-frame measurement evidence for
-all 184 sheets is in `docs/keeper-scale-audit/keeper-scale-metrics.json`; the
+all 187 sheets is in `docs/keeper-scale-audit/keeper-scale-metrics.json`; the
 nine contact sheets render every sample at one fixed display scale so a larger
 transparent canvas can never make its keeper look smaller.
 
 For interactive comparison, open `docs/keeper-scale-audit/review.html`. It puts
 the untouched `keeper_walk` in a dedicated scale-authority panel, followed by
-all 166 accepted animation sheets in one filename-ordered gallery, without
+all 169 accepted animation sheets in one filename-ordered gallery, without
 search, filters or card fitting. For standard upright cap poses, its gold badge
 crossing the blue skull-top line is a convenient calibrated proxy; it does not
 replace anatomical landmarks for altered posture, head angle or headwear.

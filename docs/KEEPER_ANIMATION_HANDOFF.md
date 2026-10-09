@@ -8,7 +8,7 @@ Codex task should be able to continue from here without relying on the old chat.
 
 1. Read this document in full.
 2. Open `docs/keeper-scale-audit/review.html`. A dedicated panel first shows
-   the untouched `keeper_walk` scale authority, followed by all 166 accepted
+   the untouched `keeper_walk` scale authority, followed by all 169 accepted
    clips at one unchanged relative scale in filename order. Every card prints
    its runtime and source filename. Switch View to `One animation at a time`
    for a much larger card, progress/filename status, Previous/Next buttons and
@@ -105,6 +105,13 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   `keeper_walk` identity at the nearest comparable facing/head angle. Do not
   let the beard become longer or shorter between clips unless Frank's exported
   note explicitly requests a deliberate design change.
+- A smooth, rounded or bulbous beard in side profile is a known recurring
+  defect across multiple animations, not an isolated nap-animation problem.
+  The canonical side beard has a stepped, slightly ragged outer and lower edge
+  with the approved taper around the mouth and chin. Audit every frame of every
+  left- or right-facing clip (including mirrored, seated, reclined and
+  head-tilted poses) for this silhouette; nominally correct beard height alone
+  is not sufficient.
 - The corridor is effectively a flat, front-of-screen movement plane. The
   keeper remains the same height and width everywhere.
 - Measure the anatomical keeper, not the outer alpha box. Hats, helmets,
@@ -167,11 +174,11 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 
 ## Current evidence and files
 
-- 184 keeper sheets and 1,324 frames are in the technical batch.
-- 166 animation sheets are accepted into the review gallery.
+- 187 keeper sheets and 1,348 frames are in the technical batch.
+- 169 animation sheets are accepted into the review gallery.
 - 18 obsolete modular/reference sheets are excluded from review and must not
   return to production.
-- 73 sheets were rebuilt or anatomy-normalised in the latest full pass.
+- 76 sheets were rebuilt or anatomy-normalised in the latest full pass.
 - The audit currently reports zero unresolved original-comparison failures.
 - The 13 directly comparable full-body families are constrained to a
   0.960–1.040 skull-to-sole ratio; unobscured side torsos must be within one
@@ -330,7 +337,7 @@ evidence, not final acceptance.
 | Kind | Count | Meaning |
 |---|---:|---|
 | `bridge-clip` | 8 | Existing reusable bridge artwork |
-| `direct-test` | 48 | Same-outfit walk can be juxtaposed for review; seam unproven |
+| `direct-test` | 51 | Same-outfit walk can be juxtaposed for review; seam unproven |
 | `known-bridge` | 44 | Viewer can insert an existing turn/sit/bed bridge; full route still needs endpoint proof |
 | `locomotion` | 12 | Walking source/family |
 | `missing-bridge` | 33 | Known facing/posture bridge does not exist |
@@ -407,6 +414,29 @@ part of the animated strip so wheel/step timing cannot drift. The shed is not
 baked into the sprite: start the complete moving unit behind the shed door's
 foreground layer, translate it into view, and keep that occluder in front until
 the keeper and mower have cleared the doorway.
+
+### Cleaning cupboard and three-tier tool route
+
+The `broom` upgrade family now selects one of three eight-frame,
+standard-uniform, canonical-height right-facing loops; runtime mirroring
+supplies left:
+
+- tier 1 `keeper_sweep_broom`, with a traditional wooden broom;
+- tier 2 `keeper_hoover_basic`, with an ordinary upright hoover;
+- tier 3 `keeper_hoover_super`, with an original eccentric brass-and-teal
+  inventor machine, pressure gauge, bellows and powered brushes.
+
+Each tool is part of every animation frame so hands, wheels/bristles and steps
+cannot drift apart. Fetching and returning uses the mower rule: approach the
+cupboard with `keeper_walk`, put the keeper wholly behind the cupboard door's
+foreground layer, swap to the selected keeper-plus-tool clip only while fully
+hidden, and translate the complete unit back into view. Reverse that route
+when cleaning ends. Never bake the cupboard into a keeper strip and never
+show a visible tool morph or pop.
+
+All three clips use the standard uniform, so this is equipment routing rather
+than a new costume family. The non-standard outfit audit therefore gains no
+new missing walking or turning requirement.
 
 ## Artist-smock and guitar routes added in this pass
 
@@ -695,9 +725,11 @@ The comprehensive per-sheet correction list is in
 1. Obtain Frank's exported `keeper-scale-choices.json` and read every saved
    per-animation note before triage or drawing. A full-re-draft flag authorises
    rebuilding the clip; it never authorises ignoring that clip's written notes.
-   Treat beard-length comments as identity corrections that must be checked
-   frame by frame against `keeper_walk`. Prefer exact filenames from the review
-   cards.
+   Treat beard-length and side-silhouette comments as identity corrections that
+   must be checked frame by frame against `keeper_walk` and the nearest approved
+   side-pose reference. Specifically flag smooth/bulbous outlines that lose the
+   canonical stepped, slightly ragged margins. Prefer exact filenames from the
+   review cards.
 2. Save a dated, immutable source copy under `docs/review/`, then create a
    working resolution table with columns: filename, frame(s), comment, class,
    decision, proposed change, status, verification and commit.
@@ -729,7 +761,7 @@ npm run build
 
 Also inspect `docs/keeper-scale-audit/review.html` visually:
 
-- every one of the 166 accepted cards is present and named;
+- every one of the 169 accepted cards is present and named;
 - global Pause and Original-ghost controls affect every card;
 - each card's ghost mirror, rotation and position choices save and export independently;
 - no card scales its sprite to fit;
@@ -739,4 +771,4 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 
 ## Ready-to-paste opening prompt for the new Codex task
 
-> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md` and `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` in full before changing anything, then read the authoritative scale/animation/door documents they link. I have new comments on clips in `docs/keeper-scale-audit/review.html`; capture every comment by exact filename into a dated review record, triage keep/fix/rebuild/delete/decision-needed/re-review-later, and resolve them. Treat the untouched `keeper_walk` as the immutable identity and scale reference. Costumes and props are overlays; never redraw or resize the keeper merely for clothing, canvas or an object. Costume changes happen only while fully hidden behind a foreground door. Make every accepted action reachable seamlessly and reversibly from idle/walking: phase-aware walk stop, correct turn, sit/crouch/climb/prop handover, activity entry/loop/exit, then a clean return to walking. Preserve the seated nap route, mower shed-occlusion route, artist-smock route and guitar frame-6 prop-handoff contracts. Rerun the full 184-sheet/1,324-frame scale audit and all project verification, update the handoff/index, commit and push the completed work to remote `main`.
+> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md` and `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` in full before changing anything, then read the authoritative scale/animation/door documents they link. I have new comments on clips in `docs/keeper-scale-audit/review.html`; capture every comment by exact filename into a dated review record, triage keep/fix/rebuild/delete/decision-needed/re-review-later, and resolve them. Treat the untouched `keeper_walk` as the immutable identity and scale reference. Costumes and props are overlays; never redraw or resize the keeper merely for clothing, canvas or an object. Costume changes happen only while fully hidden behind a foreground door. Make every accepted action reachable seamlessly and reversibly from idle/walking: phase-aware walk stop, correct turn, sit/crouch/climb/prop handover, activity entry/loop/exit, then a clean return to walking. Preserve the seated nap route, mower shed-occlusion route, cleaning cupboard route, artist-smock route and guitar frame-6 prop-handoff contracts. Rerun the full 187-sheet/1,348-frame scale audit and all project verification, update the handoff/index, commit and push the completed work to remote `main`.

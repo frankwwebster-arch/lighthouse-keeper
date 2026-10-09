@@ -810,6 +810,33 @@ lawn_mower_push_frames = match_reference_heights(
     ),
     walk_frames,
 )
+sweep_broom_frames = match_reference_heights(
+    generated_frames(
+        "keeper-sweep-broom-generated-source.png",
+        8,
+        logical_width=48,
+        preserve_equal_cells=True,
+    ),
+    walk_frames,
+)
+hoover_basic_frames = match_reference_heights(
+    generated_frames(
+        "keeper-hoover-basic-generated-source.png",
+        8,
+        logical_width=48,
+        preserve_equal_cells=True,
+    ),
+    walk_frames,
+)
+hoover_super_frames = match_reference_heights(
+    generated_frames(
+        "keeper-hoover-super-generated-source.png",
+        8,
+        logical_width=48,
+        preserve_equal_cells=True,
+    ),
+    walk_frames,
+)
 crouch_work_back_frames = generated_frames("keeper-crouch-work-back-generated-source.png", 8)
 cake_from_oven_back_frames = generated_frames("keeper-cake-from-oven-back-generated-source.png", 8, logical_width=48)
 cake_turn_right_frames = generated_frames("keeper-cake-turn-right-generated-source.png", 6, logical_width=48)
@@ -890,6 +917,9 @@ save("keeper_play_drums_back", play_drums_back_frames, 10, anchor_point=[16, 48]
 save("keeper_watch_movie", watch_movie_frames, 6, seat_point=[24, 29], hand_use_point=[34, 19], look_target_point=[56, 14], mirror_safe=True, facing="rear-right", interaction="watch-movie-popcorn", mirrors_for="rear-left")
 save("keeper_clear_snow", clear_snow_frames, 8, hand_use_point=[43, 37], outfit="winter-coat", mirror_safe=True, facing="right", interaction="clear-snow", mirrors_for="left")
 save("keeper_lawn_mower_push", lawn_mower_push_frames, 8, hand_use_point=[23, 22], movement_vector=[1, 0], prop_variant="manual-reel-mower", mirror_safe=True, facing="right", interaction="push-lawn-mower", mirrors_for="left")
+save("keeper_sweep_broom", sweep_broom_frames, 8, hand_use_point=[27, 24], movement_vector=[1, 0], prop_variant="traditional-broom", upgrade_tier=1, mirror_safe=True, facing="right", interaction="clean-floor", mirrors_for="left")
+save("keeper_hoover_basic", hoover_basic_frames, 8, hand_use_point=[27, 23], movement_vector=[1, 0], prop_variant="basic-upright-hoover", upgrade_tier=2, mirror_safe=True, facing="right", interaction="clean-floor", mirrors_for="left")
+save("keeper_hoover_super", hoover_super_frames, 8, hand_use_point=[27, 23], movement_vector=[1, 0], prop_variant="eccentric-super-hoover", upgrade_tier=3, mirror_safe=True, facing="right", interaction="clean-floor", mirrors_for="left")
 save("keeper_crouch_work_back", crouch_work_back_frames, 8, hand_use_point=[16, 38], facing="back", interaction="ground-work")
 save("keeper_cake_from_oven_back", cake_from_oven_back_frames, 8, loop=False, hand_use_point=[24, 30], facing="back", interaction="retrieve-cake-from-oven")
 save("keeper_cake_turn_right", cake_turn_right_frames, 8, loop=False, hand_use_point=[34, 20], mirror_safe=True, facing="back-to-right", interaction="turn-carry-cake", mirrors_for="back-to-left")
@@ -978,6 +1008,12 @@ save_preview("keeper-clear-snow-right", clear_snow_frames, 120)
 save_preview("keeper-clear-snow-left", [ImageOps.mirror(frame) for frame in clear_snow_frames], 120)
 save_preview("keeper-lawn-mower-push-right", lawn_mower_push_frames, 120)
 save_preview("keeper-lawn-mower-push-left", [ImageOps.mirror(frame) for frame in lawn_mower_push_frames], 120)
+save_preview("keeper-sweep-broom-right", sweep_broom_frames, 120)
+save_preview("keeper-sweep-broom-left", [ImageOps.mirror(frame) for frame in sweep_broom_frames], 120)
+save_preview("keeper-hoover-basic-right", hoover_basic_frames, 120)
+save_preview("keeper-hoover-basic-left", [ImageOps.mirror(frame) for frame in hoover_basic_frames], 120)
+save_preview("keeper-hoover-super-right", hoover_super_frames, 120)
+save_preview("keeper-hoover-super-left", [ImageOps.mirror(frame) for frame in hoover_super_frames], 120)
 save_preview("keeper-crouch-work-back", crouch_work_back_frames, 120)
 save_preview("keeper-cake-from-oven-back", cake_from_oven_back_frames, 120)
 save_preview("keeper-cake-turn-right", cake_turn_right_frames, 120)

@@ -1,14 +1,16 @@
 # Keeper costume-route audit
 
-Audit date: 2026-10-09. Authority: the 184-sheet keeper batch, its JSON
-sidecars, `data/keeper_asset_contract.json` and the 166-card transition review.
+Audit date: 2026-10-09. Authority: the 187-sheet keeper batch, its JSON
+sidecars, `data/keeper_asset_contract.json` and the 169-card transition review.
 This audit excludes the standard blue uniform and treats privacy coverings as
 transition states rather than ordinary wearable costumes.
 
-The new lawn-mower route wears the standard uniform and therefore creates no
-new costume bridge requirement. Its shed-door occlusion is an equipment-entry
-route, not a hidden outfit change. The non-standard outfit findings below are
-otherwise unchanged by this delivery.
+The lawn-mower and three cleaning-tool routes wear the standard uniform and
+therefore create no new costume bridge requirement. Their shed/cupboard-door
+occlusion is equipment entry, not a hidden outfit change. The cleaning family
+adds the broom, basic hoover and super-hoover loops, all reached by an
+unencumbered standard walk and a fully hidden prop swap. The non-standard
+outfit findings below are otherwise unchanged by this delivery.
 
 ## Outcome
 

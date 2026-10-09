@@ -310,7 +310,7 @@
               "breakdown_effect": "shared wobble(1px), smoke, intermittent sparks + split bristle or stalled wheel",
               "priority": "P0",
               "implementation_status": "planned",
-              "notes": "Broom. Broom and bristles. ON: 4-frame tool motion. Proposed location (76,0), logical frame 8x23; stable usePoint(-8,0), effectOrigin(0,-23), bubbleOrigin(0,-31), z40. New tier mechanics and names require review; existing names preserved."
+              "notes": "Broom. Traditional wooden broom with straw bristles. ON: 4-frame tool motion. Proposed location (76,0), logical frame 8x23; stable usePoint(-8,0), effectOrigin(0,-23), bubbleOrigin(0,-31), z40. New tier mechanics and names require review; existing names preserved."
             },
             {
               "space_id": "kitchen",
@@ -334,7 +334,7 @@
               "breakdown_effect": "shared wobble(1px), smoke, intermittent sparks + split bristle or stalled wheel",
               "priority": "P0",
               "implementation_status": "planned",
-              "notes": "Hoover. Hoover body with hose. ON: 4-frame tool motion. Proposed location (76,0), logical frame 8x23; stable usePoint(-8,0), effectOrigin(0,-23), bubbleOrigin(0,-31), z40. New tier mechanics and names require review; existing names preserved."
+              "notes": "Basic hoover. Ordinary upright charcoal-and-cream hoover. ON: 4-frame tool motion. Proposed location (76,0), logical frame 8x23; stable usePoint(-8,0), effectOrigin(0,-23), bubbleOrigin(0,-31), z40. New tier mechanics and names require review; existing names preserved."
             },
             {
               "space_id": "kitchen",
@@ -358,7 +358,7 @@
               "breakdown_effect": "shared wobble(1px), smoke, intermittent sparks + split bristle or stalled wheel",
               "priority": "P0",
               "implementation_status": "planned",
-              "notes": "Robot hoover. Robot cleaner with wheels and automatic status light. ON: 4-frame tool motion. Proposed location (76,0), logical frame 8x23; stable usePoint(-8,0), effectOrigin(0,-23), bubbleOrigin(0,-31), z40. New tier mechanics and names require review; existing names preserved."
+              "notes": "Super hoover. Original eccentric brass-and-teal super hoover with gauge, bellows and powered brushes. ON: 4-frame tool motion. Proposed location (76,0), logical frame 8x23; stable usePoint(-8,0), effectOrigin(0,-23), bubbleOrigin(0,-31), z40. New tier mechanics and names require review; existing names preserved."
             }
           ],
           "position": [
@@ -9460,7 +9460,7 @@
               "breakdown_effect": "shared wobble(1px), smoke, intermittent sparks + split bristle or stalled wheel",
               "priority": "P2",
               "implementation_status": "planned",
-              "notes": "Mid-tier washer. Hoover body with hose. ON: 4-frame tool motion. Proposed location (27,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved. This station replaces the central activity bay when selected; never draw all stations simultaneously."
+              "notes": "Mid-tier washer. Basic cleaner body with hose. ON: 4-frame tool motion. Proposed location (27,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved. This station replaces the central activity bay when selected; never draw all stations simultaneously."
             },
             {
               "space_id": "bath",
@@ -9484,7 +9484,7 @@
               "breakdown_effect": "shared wobble(1px), smoke, intermittent sparks + split bristle or stalled wheel",
               "priority": "P2",
               "implementation_status": "planned",
-              "notes": "Top-tier washer. Robot cleaner with wheels and automatic status light. ON: 4-frame tool motion. Proposed location (27,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved. This station replaces the central activity bay when selected; never draw all stations simultaneously."
+              "notes": "Top-tier washer. Powered cleaner with visible working mechanism. ON: 4-frame tool motion. Proposed location (27,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved. This station replaces the central activity bay when selected; never draw all stations simultaneously."
             }
           ],
           "position": [
@@ -14020,7 +14020,7 @@
               "breakdown_effect": "shared wobble(1px), smoke, intermittent sparks + split bristle or stalled wheel",
               "priority": "P2",
               "implementation_status": "planned",
-              "notes": "Mid-tier butler. Hoover body with hose. ON: 4-frame tool motion. Proposed location (41,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved."
+              "notes": "Mid-tier butler. Basic cleaner body with hose. ON: 4-frame tool motion. Proposed location (41,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved."
             },
             {
               "space_id": "testing_yard",
@@ -14044,7 +14044,7 @@
               "breakdown_effect": "shared wobble(1px), smoke, intermittent sparks + split bristle or stalled wheel",
               "priority": "P2",
               "implementation_status": "planned",
-              "notes": "Top-tier butler. Robot cleaner with wheels and automatic status light. ON: 4-frame tool motion. Proposed location (41,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved."
+              "notes": "Top-tier butler. Powered cleaner with visible working mechanism. ON: 4-frame tool motion. Proposed location (41,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved."
             }
           ],
           "position": [
@@ -15244,7 +15244,7 @@
       "breakdown_effect": "shared wobble(1px), smoke, intermittent sparks + split bristle or stalled wheel",
       "priority": "P0",
       "implementation_status": "planned",
-      "notes": "Broom. Broom and bristles. ON: 4-frame tool motion. Proposed location (76,0), logical frame 8x23; stable usePoint(-8,0), effectOrigin(0,-23), bubbleOrigin(0,-31), z40. New tier mechanics and names require review; existing names preserved."
+      "notes": "Broom. Traditional wooden broom with straw bristles. ON: 4-frame tool motion. Proposed location (76,0), logical frame 8x23; stable usePoint(-8,0), effectOrigin(0,-23), bubbleOrigin(0,-31), z40. New tier mechanics and names require review; existing names preserved."
     },
     {
       "space_id": "kitchen",
@@ -15268,7 +15268,7 @@
       "breakdown_effect": "shared wobble(1px), smoke, intermittent sparks + split bristle or stalled wheel",
       "priority": "P0",
       "implementation_status": "planned",
-      "notes": "Hoover. Hoover body with hose. ON: 4-frame tool motion. Proposed location (76,0), logical frame 8x23; stable usePoint(-8,0), effectOrigin(0,-23), bubbleOrigin(0,-31), z40. New tier mechanics and names require review; existing names preserved."
+      "notes": "Basic hoover. Ordinary upright charcoal-and-cream hoover. ON: 4-frame tool motion. Proposed location (76,0), logical frame 8x23; stable usePoint(-8,0), effectOrigin(0,-23), bubbleOrigin(0,-31), z40. New tier mechanics and names require review; existing names preserved."
     },
     {
       "space_id": "kitchen",
@@ -15292,7 +15292,7 @@
       "breakdown_effect": "shared wobble(1px), smoke, intermittent sparks + split bristle or stalled wheel",
       "priority": "P0",
       "implementation_status": "planned",
-      "notes": "Robot hoover. Robot cleaner with wheels and automatic status light. ON: 4-frame tool motion. Proposed location (76,0), logical frame 8x23; stable usePoint(-8,0), effectOrigin(0,-23), bubbleOrigin(0,-31), z40. New tier mechanics and names require review; existing names preserved."
+      "notes": "Super hoover. Original eccentric brass-and-teal super hoover with gauge, bellows and powered brushes. ON: 4-frame tool motion. Proposed location (76,0), logical frame 8x23; stable usePoint(-8,0), effectOrigin(0,-23), bubbleOrigin(0,-31), z40. New tier mechanics and names require review; existing names preserved."
     },
     {
       "space_id": "kitchen",
@@ -34204,7 +34204,7 @@
       "breakdown_effect": "shared wobble(1px), smoke, intermittent sparks + split bristle or stalled wheel",
       "priority": "P2",
       "implementation_status": "planned",
-      "notes": "Mid-tier washer. Hoover body with hose. ON: 4-frame tool motion. Proposed location (27,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved. This station replaces the central activity bay when selected; never draw all stations simultaneously."
+      "notes": "Mid-tier washer. Basic cleaner body with hose. ON: 4-frame tool motion. Proposed location (27,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved. This station replaces the central activity bay when selected; never draw all stations simultaneously."
     },
     {
       "space_id": "bath",
@@ -34228,7 +34228,7 @@
       "breakdown_effect": "shared wobble(1px), smoke, intermittent sparks + split bristle or stalled wheel",
       "priority": "P2",
       "implementation_status": "planned",
-      "notes": "Top-tier washer. Robot cleaner with wheels and automatic status light. ON: 4-frame tool motion. Proposed location (27,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved. This station replaces the central activity bay when selected; never draw all stations simultaneously."
+      "notes": "Top-tier washer. Powered cleaner with visible working mechanism. ON: 4-frame tool motion. Proposed location (27,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved. This station replaces the central activity bay when selected; never draw all stations simultaneously."
     },
     {
       "space_id": "bath",
@@ -46468,7 +46468,7 @@
       "breakdown_effect": "shared wobble(1px), smoke, intermittent sparks + split bristle or stalled wheel",
       "priority": "P2",
       "implementation_status": "planned",
-      "notes": "Mid-tier butler. Hoover body with hose. ON: 4-frame tool motion. Proposed location (41,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved."
+      "notes": "Mid-tier butler. Basic cleaner body with hose. ON: 4-frame tool motion. Proposed location (41,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved."
     },
     {
       "space_id": "testing_yard",
@@ -46492,7 +46492,7 @@
       "breakdown_effect": "shared wobble(1px), smoke, intermittent sparks + split bristle or stalled wheel",
       "priority": "P2",
       "implementation_status": "planned",
-      "notes": "Top-tier butler. Robot cleaner with wheels and automatic status light. ON: 4-frame tool motion. Proposed location (41,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved."
+      "notes": "Top-tier butler. Powered cleaner with visible working mechanism. ON: 4-frame tool motion. Proposed location (41,0), logical frame 22x20; stable usePoint(-8,0), effectOrigin(0,-20), bubbleOrigin(0,-28), z40. New tier mechanics and names require review; existing names preserved."
     },
     {
       "space_id": "testing_yard",

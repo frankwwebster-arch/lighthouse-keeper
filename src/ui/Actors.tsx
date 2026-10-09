@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { VISITORS, objectById, type FloorId, type ObjectId, type PetKind } from '../game/config'
-import { insideVisit, moodOf, moodWord, waitingVisit, type Happening, type State } from '../game/engine'
+import { insideVisit, moodOf, moodWord, tierOf, waitingVisit, type Happening, type State } from '../game/engine'
 import { FLOOR_ORDER, FLOOR_Y, INTERIOR, LAYOUT, TOWER_X, floorOf, route, worldX, type Point } from '../game/world'
 import { Sprite } from './Sprite'
 
@@ -41,9 +41,13 @@ interface Props {
 
 const SKIN = '#f1c9a0'
 
-function Keeper({ anim, mood, walking, face, rear, action }: { anim: string; mood: ReturnType<typeof moodWord>; walking: boolean; face: 1 | -1; rear: boolean; action?: string }) {
+/** The bought broom tier controls the complete keeper-plus-tool cleaning strip. */
+export const cleaningClipForTier = (tier: number) => tier >= 3 ? 'hoover_super' : tier === 2 ? 'hoover_basic' : 'sweep_broom'
+
+function Keeper({ anim, mood, walking, face, rear, action, cleaningTier }: { anim: string; mood: ReturnType<typeof moodWord>; walking: boolean; face: 1 | -1; rear: boolean; action?: string; cleaningTier: number }) {
   const clip = walking ? 'walk' : anim === 'none' ? 'idle' : anim
-  const productionClip = rear ? action === 'brush_teeth' ? 'brush_teeth_back' : action === 'wash_basin' ? 'wash_back' : 'cook_back' : clip
+  const cleaningClip = cleaningClipForTier(cleaningTier)
+  const productionClip = action === 'desk_tidy' ? cleaningClip : rear ? action === 'brush_teeth' ? 'brush_teeth_back' : action === 'wash_basin' ? 'wash_back' : 'cook_back' : clip
   const mouth = mood === 'chipper' ? 'M-6 -76 Q0 -68 6 -76' : mood === 'content' ? 'M-5 -75 Q0 -71 5 -75' : mood === 'soso' ? 'M-5 -74 L5 -74' : 'M-6 -72 Q0 -78 6 -72'
   return (
     <g className={`keeper a-${clip} ${rear ? 'keeper-rear' : ''}`}>
@@ -279,7 +283,7 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
       {!hidden && (
         <g transform={`translate(${pos.x} ${asleep ? pos.y - 26 : pos.y})`}>
           <g className={asleep ? 'lying' : undefined}>
-            <Keeper anim={anim} mood={mood} walking={pos.walking} face={pos.face} rear={rearWork} action={d?.id} />
+            <Keeper anim={anim} mood={mood} walking={pos.walking} face={pos.face} rear={rearWork} action={d?.id} cleaningTier={tierOf(s, 'broom')} />
           </g>
         </g>
       )}

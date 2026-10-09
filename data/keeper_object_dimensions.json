@@ -164,6 +164,13 @@
       "keeperClips": ["keeper_lawn_mower_push"],
       "note": "Place the complete keeper-plus-mower sprite behind the foreground door layer, then translate it onto the lawn."
     },
+    "cleaningCupboardDoor": {
+      "minimumOpeningHeight": 40,
+      "minimumOpeningWidth": 32,
+      "foregroundOcclusionRequired": true,
+      "keeperClips": ["keeper_sweep_broom", "keeper_hoover_basic", "keeper_hoover_super"],
+      "note": "Walk the unencumbered keeper fully behind the foreground cupboard door, switch to the selected tier's complete keeper-plus-tool clip only while hidden, then translate the unit back into view. Reverse the route when cleaning ends."
+    },
     "oven": {
       "rackHeight": 10,
       "worktopHeight": 19,

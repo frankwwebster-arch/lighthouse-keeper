@@ -1422,6 +1422,62 @@
   "mirrorsFor": "left",
   "z": 50
  },
+ "keeper_hoover_basic": {
+  "file": "keeper_hoover_basic.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   27,
+   23
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "propVariant": "basic-upright-hoover",
+  "upgradeTier": 2,
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "clean-floor",
+  "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_hoover_super": {
+  "file": "keeper_hoover_super.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   27,
+   23
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "propVariant": "eccentric-super-hoover",
+  "upgradeTier": 3,
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "clean-floor",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_hot_drink_drink": {
   "file": "keeper_hot_drink_drink.png",
   "w": 48,
@@ -3227,6 +3283,34 @@
   ],
   "loop": true,
   "mirrorSafe": true,
+  "z": 50
+ },
+ "keeper_sweep_broom": {
+  "file": "keeper_sweep_broom.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   27,
+   24
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "propVariant": "traditional-broom",
+  "upgradeTier": 1,
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "clean-floor",
+  "mirrorsFor": "left",
   "z": 50
  },
  "keeper_swim_costume_down": {

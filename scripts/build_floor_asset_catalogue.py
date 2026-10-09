@@ -60,7 +60,7 @@ VISUAL=['Basic: simple manual mechanism and few visible controls','Mid: sturdier
 PROFILE_VISUALS={
     'storage':['Small four-slot shelves or single chest','Divided eight-slot cabinet with double doors','Twelve-slot cabinet with labelled bays; same footprint'],
     'cook':['Manual single burner/range','Two clearly marked burner controls','Three marked cooking slots and recipe display'],
-    'clean':['Broom and bristles','Hoover body with hose','Robot cleaner with wheels and automatic status light'],
+    'clean':['Broom and bristles','Basic cleaner body with hose','Powered cleaner with visible working mechanism'],
     'pet':['Plain bowl or simple hand-fed coop','Sturdier vessel with visible larger feed measure','Automatic feed dispenser and timed indicator'],
     'sleep':['Single bed and blue blanket','Double-style padded headboard within same frame','Four-poster silhouette with energy crest; same footprint'],
     'wash':['Simple pedestal tap or basic shower','Added mixer/shower control','Rainfall head and warm-water status light'],
@@ -155,7 +155,7 @@ for s in spaces:
             elif id in ['door','shop','diveinner','diveouter']:cue='ON: open doorway/engaged entrance, explicitly delivered at every tier'
             elif id=='tv':cue='ON: literal B B SEA wordmark from supplied BBC NEWS reference, NEWS title and newsreader head; Sport football match; Nature animals. Every tier needs all three channel strips; glass always opaque'
             else:cue='ON: '+p['visual_cues'].split('/')[1].strip()
-            tier_visual=(['Simple upholstered armchair','Rocking chair on stable curved runners','Lazyboy-style reclining armchair'][tier-1] if id=='armchair' else PROFILE_VISUALS.get(i['profile'],VISUAL)[min(tier-1,2)])
+            tier_visual=(['Simple upholstered armchair','Rocking chair on stable curved runners','Lazyboy-style reclining armchair'][tier-1] if id=='armchair' else ['Traditional wooden broom with straw bristles','Ordinary upright charcoal-and-cream hoover','Original eccentric brass-and-teal super hoover with gauge, bellows and powered brushes'][tier-1] if id=='broom' else PROFILE_VISUALS.get(i['profile'],VISUAL)[min(tier-1,2)])
             notes=f'{name}. {tier_visual}. {cue}. Proposed location ({x},{y}), logical frame {w}x{h}; stable seat top 11 px, effectOrigin(0,{-h}), bubbleOrigin(0,{-h-8}), z40. New tier mechanics and names require review; existing names preserved.' if passive else f'{name}. {tier_visual}. {cue}. Proposed location ({x},{y}), logical frame {w}x{h}; stable usePoint(-8,0), effectOrigin(0,{-h}), bubbleOrigin(0,{-h-8}), z40. New tier mechanics and names require review; existing names preserved.'
             if id=='tv': notes=notes.replace(f'usePoint(-8,0), effectOrigin(0,{-h}), bubbleOrigin(0,{-h-8})','usePoint(14,0), effectOrigin(8,-18), bubbleOrigin(0,-28)')
             if s.get('station_variants'):notes+=' This station replaces the central activity bay when selected; never draw all stations simultaneously.'

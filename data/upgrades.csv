@@ -8,9 +8,9 @@ kitchen,fridge,3,American-style fridge,40,Holds loads; ice and water dispenser; 
 kitchen,door,1,Old wooden door,0,,obj_door,todo,n/a,todo,
 kitchen,door,2,Door with knocker and peephole,15,See who is coming before they knock,obj_door_t2,todo,n/a,todo,
 kitchen,door,3,Smart door with doorbell camera,35,Visitors wait longer before giving up,obj_door_t3,todo,n/a,todo,
-kitchen,broom,1,Broom,0,,obj_broom,todo,todo,todo,
-kitchen,broom,2,Hoover,20,Tidies quicker,obj_broom_t2,todo,todo,todo,
-kitchen,broom,3,Robot hoover,45,Does a bit of tidying by itself each day (comic faults when broken),obj_broom_t3,todo,todo,todo,
+kitchen,broom,1,Broom,0,,obj_broom,todo,todo,todo,Keeper uses keeper_sweep_broom; traditional broom included in the loop
+kitchen,broom,2,Basic hoover,20,Tidies quicker,obj_broom_t2,todo,todo,todo,Keeper uses keeper_hoover_basic; ordinary upright cleaner included in the loop
+kitchen,broom,3,Super hoover,45,Tidies fastest with powered brushes,obj_broom_t3,todo,todo,todo,Keeper uses keeper_hoover_super; original eccentric brass-and-teal inventor machine included in the loop
 kitchen,petbowl,1,Plain pet bowl,0,,obj_petbowl,todo,todo,todo,
 kitchen,petbowl,2,Bowl with the pet's name on it,10,Pet is happier when fed,obj_petbowl_t2,todo,todo,todo,
 kitchen,petbowl,3,Automatic feeder,30,Feeds the pet at breakfast by itself,obj_petbowl_t3,todo,todo,todo,

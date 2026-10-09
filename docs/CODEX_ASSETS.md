@@ -40,6 +40,6 @@ An animated horizontal strip includes playback metadata:
 
 ## Current delivery boundary
 
-Delivery-order item 1 is complete. Delivery-order item 2 and the keeper subset of item 3 are review candidates: the CRT/channel strips, shared broken overlays, keeper master parts, and a 184-export keeper set spanning domestic actions, seated nap, lawn-mower pushing, activity-outfit routing, three-tier guitar pickup/play, travel, performance, bedtime and water actions. Authored sources are under `art/source/`; exact raw deliveries are under matching `art/raw/` folders.
+Delivery-order item 1 is complete. Delivery-order item 2 and the keeper subset of item 3 are review candidates: the CRT/channel strips, shared broken overlays, keeper master parts, and a 187-export keeper set spanning domestic actions, seated nap, lawn-mower pushing, three-tier cupboard-fetched cleaning, activity-outfit routing, three-tier guitar pickup/play, travel, performance, bedtime and water actions. Authored sources are under `art/source/`; exact raw deliveries are under matching `art/raw/` folders.
 
 Frank approved the identity-preserving keeper walk and current action direction in chat. Other review candidates still require explicit approval. The prioritized remaining keeper clips are recorded in `docs/KEEPER_ANIMATIONS.md`; object sets, shell pieces, later rooms, pets, visitors, ships and weather batches stay pending.
