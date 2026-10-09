@@ -29,7 +29,7 @@ Upright poses use inferred skull-to-supporting-sole height. Costumes use the fac
 - `keeper_knight_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_knight_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_knight_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
-- `keeper_meal_place_side` — redrawn for the standard 19 px table datum instead of the floor.
+- `keeper_meal_place_side` — standard 19 px table datum; released plate edge restored in frames 7-8 without changing keeper scale.
 - `keeper_mechanic_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_mechanic_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_mechanic_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.

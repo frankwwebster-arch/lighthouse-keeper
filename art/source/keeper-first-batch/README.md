@@ -226,7 +226,10 @@ sources are retained under `replaced-cake-design-v1/`.
 The plated-meal placement source was also corrected so the released plate and
 food remain at the fixed table point while the keeper withdraws his hands and
 straightens. Its disappearing-plate predecessor is retained under
-`replaced-meal-place-v1/`.
+`replaced-meal-place-v1/`. The tightly scoped
+`keeper-meal-place-side-uncropped-generated-source.png` reference repairs only
+the complete plate rim and food in frames 7–8; production keeps frames 1–6 and
+the keeper pixels in frames 7–8 unchanged.
 
 The fitness trio was regenerated in referenced-image edit mode as a matched
 old-school workout set: blue headband, white sleeveless vest, blue shorts,

@@ -370,6 +370,13 @@ for name in ['keeper_swim_costume_horizontal','keeper_scuba_swim_horizontal']:
     assert min(heights)>=32,(name,heights)
 for name in ['keeper_fish_feed_up','keeper_aquarium_brush','keeper_aquarium_net','keeper_hammer_side','keeper_read_side','keeper_write_side','keeper_telescope','keeper_put_record','keeper_paint_side','keeper_meal_place_side','keeper_snooker','keeper_table_tennis','keeper_darts','keeper_machete_side','keeper_pressups_side','keeper_bowling','keeper_video_game','keeper_water_plants_side','keeper_fish_standing','keeper_fish_seated','keeper_mechanic_fix']:
     assert manifest[name]['mirrorSafe'] is True and manifest[name]['mirrorsFor']
+meal_strip=Image.open(root/'public/sprites'/manifest['keeper_meal_place_side']['file']).convert('RGBA')
+for frame_index in (6,7):
+    # The released plate occupies this stable table-height window. It must
+    # remain complete and clear of the window's right edge after normalisation.
+    meal_window=meal_strip.crop((frame_index*192+104,88,frame_index*192+148,116))
+    meal_box=meal_window.getchannel('A').getbbox()
+    assert meal_box is not None and meal_box[2] <= 33 and meal_box[3] <= 24,(frame_index,meal_box)
 for name,hand_point in [('keeper_put_record',[38,27]),('keeper_water_plants_side',[39,31])]:
     prop_clip=manifest[name]
     assert prop_clip['w']==48 and prop_clip['h']==40 and prop_clip['anchor']==[24,40]

@@ -74,7 +74,7 @@ CORRECTED = {
     "keeper_bath_wash": "redrawn and normalised from the standing bare-headed and seated canonical landmarks",
     "keeper_hot_tub": "redrawn and normalised by the visible head/shoulder unit rather than the water silhouette",
     "keeper_place_cake": "redrawn for the standard 19 px table datum and a fully straight final pose",
-    "keeper_meal_place_side": "redrawn for the standard 19 px table datum instead of the floor",
+    "keeper_meal_place_side": "standard 19 px table datum; released plate edge restored in frames 7-8 without changing keeper scale",
     "keeper_souwester_walk_side": "costume headwear excluded; skull, shoulder and sole landmarks normalised",
     "keeper_souwester_walk_front": "costume headwear excluded; skull, shoulder and sole landmarks normalised",
     "keeper_souwester_walk_back": "costume headwear excluded; skull, shoulder and sole landmarks normalised",

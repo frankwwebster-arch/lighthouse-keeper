@@ -823,9 +823,18 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
         frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, group_equal_components=clip_name == "keeper_hot_drink_pour", preserve_equal_cells=clip_name != "keeper_hot_drink_pour", scale_multiplier=anatomy_scale)
     elif clip_name == "keeper_meal_place_side":
         # After release, the plated meal is detached from the keeper but must
-        # remain in the actor strip until the world object takes over.
+        # remain in the actor strip until the world object takes over.  The
+        # original source keeps frames 1-6 exact; a tightly scoped corrected
+        # reference restores only the plate rim/food pixels clipped in frames
+        # 7-8, without redrawing or moving the keeper.
         frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True, scale_multiplier=anatomy_scale)
         frames = [remove_small_alpha_components(frame) for frame in frames]
+        corrected = generated_frames("keeper-meal-place-side-uncropped-generated-source.png", 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True, scale_multiplier=anatomy_scale)
+        meal_patch_box = (26 * D, 22 * D, 37 * D, 29 * D)
+        for frame_index in (6, 7):
+            patch = corrected[frame_index].crop(meal_patch_box)
+            ImageDraw.Draw(frames[frame_index]).rectangle(meal_patch_box, fill=(0, 0, 0, 0))
+            frames[frame_index].alpha_composite(patch, (meal_patch_box[0], meal_patch_box[1]))
     else:
         try:
             frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, scale_multiplier=anatomy_scale)

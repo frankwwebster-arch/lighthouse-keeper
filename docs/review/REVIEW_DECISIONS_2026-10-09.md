@@ -98,7 +98,9 @@ code until replacements are installed.
 
 - The cake and plated-meal placement strips were rebuilt. Both now release at
   the standard 19 px table datum and straighten fully; the meal no longer lands
-  on the floor.
+  on the floor. A subsequent edge pass restored the complete plate and food in
+  `keeper_meal_place_side` frames 7–8 while leaving frames 1–6, keeper scale,
+  pose and the table datum unchanged.
 - The bath-wash and hot-tub strips had enlarged the visible keeper because the
   water hid his lower body. Their head/shoulder units now match the standing
   and seated canonical keeper.

@@ -113,7 +113,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Search boxes | `keeper_search_boxes` | low rear rummage; final arms reach forward into the unseen box; boxes separate |
 | Retrieve meal from oven | `keeper_meal_from_oven_back` | rear one-shot; plate/meal included, oven separate |
 | Walk carrying plated meal | `keeper_carry_meal` | right; mirror left; mitts, plate and meal included |
-| Place meal on table | `keeper_meal_place_side` | right; mirror left; places at the standard 19 px table datum, releases plate, then straightens fully; table separate |
+| Place meal on table | `keeper_meal_place_side` | right; mirror left; places at the standard 19 px table datum, releases the complete uncropped plate, then straightens fully; table separate |
 | Count money | `keeper_count_money` | seated front; notes and coins included |
 | Play snooker | `keeper_snooker` | right; mirror left; cue included, table/balls separate |
 | Play table tennis | `keeper_table_tennis` | right; mirror left; paddle/ball included, table separate |
