@@ -30,7 +30,7 @@
   "w": 48,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -46,7 +46,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -68,7 +68,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -192,7 +192,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -212,7 +212,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -231,7 +231,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -252,7 +252,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -275,7 +275,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -295,7 +295,7 @@
   "w": 48,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -321,7 +321,7 @@
   "w": 48,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -347,7 +347,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -363,7 +363,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -385,7 +385,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -403,7 +403,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -423,7 +423,7 @@
   "w": 48,
   "h": 40,
   "frames": 6,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -445,7 +445,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -467,7 +467,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -489,7 +489,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -507,7 +507,7 @@
   "w": 32,
   "h": 40,
   "frames": 6,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -527,7 +527,7 @@
   "w": 32,
   "h": 40,
   "frames": 6,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -549,7 +549,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -572,7 +572,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -592,7 +592,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -610,7 +610,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -634,7 +634,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -650,7 +650,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -670,7 +670,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -687,7 +687,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -713,7 +713,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -735,7 +735,7 @@
   "w": 32,
   "h": 40,
   "frames": 6,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -755,7 +755,7 @@
   "w": 32,
   "h": 40,
   "frames": 6,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -775,7 +775,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -827,7 +827,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -850,7 +850,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -872,7 +872,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -894,7 +894,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -920,7 +920,7 @@
   "w": 64,
   "h": 56,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    32,
@@ -1112,7 +1112,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -1140,7 +1140,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1161,7 +1161,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1182,7 +1182,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1205,7 +1205,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1225,7 +1225,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -1247,7 +1247,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -1269,7 +1269,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -1291,7 +1291,7 @@
   "w": 48,
   "h": 40,
   "frames": 10,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -1313,7 +1313,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -1335,7 +1335,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -1357,7 +1357,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -1378,7 +1378,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1394,7 +1394,7 @@
   "w": 32,
   "h": 40,
   "frames": 4,
-  "fps": 6,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1408,7 +1408,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1429,7 +1429,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1450,7 +1450,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1473,7 +1473,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1492,7 +1492,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1512,7 +1512,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1534,7 +1534,7 @@
   "w": 48,
   "h": 56,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -1555,7 +1555,7 @@
   "w": 64,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    32,
@@ -1577,7 +1577,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -1597,7 +1597,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -1619,7 +1619,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -1642,7 +1642,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1663,7 +1663,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1684,7 +1684,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1707,7 +1707,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1729,7 +1729,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1750,7 +1750,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -1773,7 +1773,7 @@
   "w": 48,
   "h": 84,
   "frames": 9,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -1791,7 +1791,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1808,7 +1808,7 @@
   "w": 40,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1835,7 +1835,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1857,7 +1857,7 @@
   "w": 32,
   "h": 48,
   "frames": 4,
-  "fps": 6,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1874,7 +1874,7 @@
   "w": 32,
   "h": 48,
   "frames": 6,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1892,7 +1892,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1911,7 +1911,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1933,7 +1933,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1955,7 +1955,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1977,7 +1977,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1998,7 +1998,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2019,7 +2019,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2042,7 +2042,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -2064,7 +2064,7 @@
   "w": 48,
   "h": 56,
   "frames": 10,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -2082,7 +2082,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2106,7 +2106,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2130,7 +2130,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -2152,7 +2152,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -2177,7 +2177,7 @@
   "w": 64,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    32,
@@ -2196,7 +2196,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -2245,7 +2245,7 @@
   "w": 32,
   "h": 40,
   "frames": 6,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2263,7 +2263,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2282,7 +2282,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2302,7 +2302,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2337,7 +2337,7 @@
   "w": 48,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -2366,7 +2366,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -2392,7 +2392,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2408,7 +2408,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -2430,7 +2430,7 @@
   "w": 48,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -2451,7 +2451,7 @@
   "w": 80,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    40,
@@ -2474,7 +2474,7 @@
   "w": 48,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -2495,7 +2495,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2515,7 +2515,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -2538,7 +2538,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -2557,7 +2557,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -2580,7 +2580,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -2599,7 +2599,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -2616,7 +2616,7 @@
   "w": 32,
   "h": 40,
   "frames": 6,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2635,7 +2635,7 @@
   "w": 32,
   "h": 40,
   "frames": 6,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2655,7 +2655,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -2673,7 +2673,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -2695,7 +2695,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2716,7 +2716,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2737,7 +2737,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2760,7 +2760,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2782,7 +2782,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2803,7 +2803,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2824,7 +2824,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2847,7 +2847,7 @@
   "w": 40,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -2863,7 +2863,7 @@
   "w": 40,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -2883,7 +2883,7 @@
   "w": 40,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -2903,7 +2903,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2918,7 +2918,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -2933,7 +2933,7 @@
   "w": 48,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -2954,7 +2954,7 @@
   "w": 80,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    40,
@@ -2977,7 +2977,7 @@
   "w": 48,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -2998,7 +2998,7 @@
   "w": 32,
   "h": 40,
   "frames": 6,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3021,7 +3021,7 @@
   "w": 32,
   "h": 40,
   "frames": 6,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3044,7 +3044,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -3066,7 +3066,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3087,7 +3087,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3108,7 +3108,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3131,7 +3131,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -3157,7 +3157,7 @@
   "w": 32,
   "h": 48,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3174,7 +3174,7 @@
   "w": 32,
   "h": 40,
   "frames": 6,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3189,7 +3189,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3215,7 +3215,7 @@
   "w": 32,
   "h": 40,
   "frames": 6,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3233,7 +3233,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -3263,7 +3263,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -3287,7 +3287,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 10,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3302,7 +3302,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3320,7 +3320,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 6,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -3350,7 +3350,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 6,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3376,7 +3376,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -3396,7 +3396,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -3416,7 +3416,7 @@
   "w": 48,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    24,
@@ -3438,7 +3438,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3454,7 +3454,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3476,7 +3476,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3494,7 +3494,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -3518,7 +3518,7 @@
   "w": 40,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    20,
@@ -3544,7 +3544,7 @@
   "w": 32,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,

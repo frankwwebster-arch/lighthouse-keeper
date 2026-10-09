@@ -517,14 +517,17 @@ art in `docs/KEEPER_ANIMATIONS.md`; “delivered” never waives transition revi
 - Matching scuba versions; horizontal/up/down swimming in swimsuit and scuba.
 - Row boat, drive speedboat, operate outboard motor, climb into/out of boat.
 
-`keeper_drive_speedboat` is deliberately authored at 4fps (eight frames over a
-two-second loop). Runtime animation speed is clip-specific manifest metadata;
-the shared sprite renderer reads it independently for each animation.
+All multi-frame keeper animations are now authored at a global 4fps baseline.
+Runtime animation speed remains clip-specific manifest metadata, and the shared
+sprite renderer reads it independently for each animation. Faster accepted
+review choices belong in `KEEPER_FPS_OVERRIDES` in `author_keeper.py`; rebuilding
+then writes those values to the source sidecars and runtime manifest.
 The unified review page therefore exposes a separate 1–20fps proposed game-speed
 slider for every action, with 0.5fps fine controls, an authored-speed reset and
 a live cycle-duration readout. The chosen `animationFps` saves and exports with
 the card. It affects only the reviewed action during seam previews, leaving the
-approach walk and bridge at their own authored speeds. When Frank returns the
+approach walk and bridge at their own authored speeds (currently also 4fps by
+default). When Frank returns the
 export, write accepted values into the corresponding
 `art/raw/keeper-first-batch/*.json` source sidecars and rebuild
 `public/sprites/manifest.json`; the PNG sprite strips themselves do not contain

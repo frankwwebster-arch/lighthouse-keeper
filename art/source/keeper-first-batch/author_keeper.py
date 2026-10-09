@@ -533,6 +533,12 @@ def part(which, rear=False, mood="neutral"):
     return im
 
 
+DEFAULT_KEEPER_ANIMATION_FPS = 4
+# Add accepted per-clip review choices here. Any animated clip not listed uses
+# the global 4fps baseline; one-frame technical parts remain at 0fps.
+KEEPER_FPS_OVERRIDES = {}
+
+
 def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=True, seat_point=None, hand_use_point=None, pedal_point=None, bowl_point=None, look_target_point=None, bed_surface_point=None, pillow_point=None, movement_vector=None, outfit=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
     value = {"w": w, "h": h, "frames": frames, "fps": fps, "density": D, "anchor": anchor_point or [w // 2, h], "z": 50}
     if pivot is not None: value["pivot"] = pivot
@@ -554,7 +560,9 @@ def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=Tru
     return value
 
 
-def save(name, frames, fps=0, pivot=None, **metadata):
+def save(name, frames, legacy_fps=0, pivot=None, **metadata):
+    # legacy_fps preserves the original cadence hints at existing call sites;
+    # production timing is now governed solely by the baseline/override policy.
     frame_width = frames[0].width
     frame_height = frames[0].height
     if any(frame.size != (frame_width, frame_height) for frame in frames):
@@ -563,10 +571,13 @@ def save(name, frames, fps=0, pivot=None, **metadata):
     for i, frame in enumerate(frames): strip.alpha_composite(frame, (i * frame_width, 0))
     png = OUT / f"{name}_f{len(frames)}.png"
     strip.save(png, optimize=True)
-    png.with_suffix(".json").write_text(json.dumps(contract(len(frames), fps, pivot, w=frame_width // D, h=frame_height // D, **metadata), indent=2) + "\n")
+    authored_fps = 0 if len(frames) == 1 else KEEPER_FPS_OVERRIDES.get(name, DEFAULT_KEEPER_ANIMATION_FPS)
+    png.with_suffix(".json").write_text(json.dumps(contract(len(frames), authored_fps, pivot, w=frame_width // D, h=frame_height // D, **metadata), indent=2) + "\n")
 
 
 def save_preview(name, frames, duration, ping_pong=False):
+    runtime_name = name.replace("-", "_")
+    duration = round(1000 / KEEPER_FPS_OVERRIDES.get(runtime_name, DEFAULT_KEEPER_ANIMATION_FPS))
     sequence = frames + (frames[-2:0:-1] if ping_pong else [])
     previews = []
     for frame in sequence:

@@ -57,7 +57,7 @@
       "name": "keeper_anti_gravity",
       "source": "art/raw/keeper-first-batch/keeper_anti_gravity_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -294,7 +294,7 @@
       "name": "keeper_aquarium_brush",
       "source": "art/raw/keeper-first-batch/keeper_aquarium_brush_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -531,7 +531,7 @@
       "name": "keeper_aquarium_net",
       "source": "art/raw/keeper-first-batch/keeper_aquarium_net_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -768,7 +768,7 @@
       "name": "keeper_back_arm_l",
       "source": "art/raw/keeper-first-batch/keeper_back_arm_l_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -840,7 +840,7 @@
       "name": "keeper_back_arm_r",
       "source": "art/raw/keeper-first-batch/keeper_back_arm_r_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -912,7 +912,7 @@
       "name": "keeper_back_head",
       "source": "art/raw/keeper-first-batch/keeper_back_head_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -984,7 +984,7 @@
       "name": "keeper_back_leg_l",
       "source": "art/raw/keeper-first-batch/keeper_back_leg_l_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -1046,7 +1046,7 @@
       "name": "keeper_back_leg_r",
       "source": "art/raw/keeper-first-batch/keeper_back_leg_r_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -1108,7 +1108,7 @@
       "name": "keeper_back_torso",
       "source": "art/raw/keeper-first-batch/keeper_back_torso_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -1170,7 +1170,7 @@
       "name": "keeper_bath_enter",
       "source": "art/raw/keeper-first-batch/keeper_bath_enter_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         40,
@@ -1407,7 +1407,7 @@
       "name": "keeper_bath_exit",
       "source": "art/raw/keeper-first-batch/keeper_bath_exit_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         40,
@@ -1644,7 +1644,7 @@
       "name": "keeper_bath_wash",
       "source": "art/raw/keeper-first-batch/keeper_bath_wash_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -1884,7 +1884,7 @@
       "name": "keeper_bathrobe_walk",
       "source": "art/raw/keeper-first-batch/keeper_bathrobe_walk_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -2121,7 +2121,7 @@
       "name": "keeper_bbq_back",
       "source": "art/raw/keeper-first-batch/keeper_bbq_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -2358,7 +2358,7 @@
       "name": "keeper_boat_enter",
       "source": "art/raw/keeper-first-batch/keeper_boat_enter_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         48,
@@ -2598,7 +2598,7 @@
       "name": "keeper_boat_exit",
       "source": "art/raw/keeper-first-batch/keeper_boat_exit_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         48,
@@ -2838,7 +2838,7 @@
       "name": "keeper_bored",
       "source": "art/raw/keeper-first-batch/keeper_bored_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -3075,7 +3075,7 @@
       "name": "keeper_bowling",
       "source": "art/raw/keeper-first-batch/keeper_bowling_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -3312,7 +3312,7 @@
       "name": "keeper_brush_teeth_back",
       "source": "art/raw/keeper-first-batch/keeper_brush_teeth_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -3549,7 +3549,7 @@
       "name": "keeper_cake_from_oven_back",
       "source": "art/raw/keeper-first-batch/keeper_cake_from_oven_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         48,
@@ -3786,7 +3786,7 @@
       "name": "keeper_cake_turn_right",
       "source": "art/raw/keeper-first-batch/keeper_cake_turn_right_f6.png",
       "frames": 6,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         48,
@@ -3977,7 +3977,7 @@
       "name": "keeper_carry_cake",
       "source": "art/raw/keeper-first-batch/keeper_carry_cake_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -4214,7 +4214,7 @@
       "name": "keeper_carry_meal",
       "source": "art/raw/keeper-first-batch/keeper_carry_meal_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -4451,7 +4451,7 @@
       "name": "keeper_carry_shopping",
       "source": "art/raw/keeper-first-batch/keeper_carry_shopping_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -4688,7 +4688,7 @@
       "name": "keeper_check_instrument_back",
       "source": "art/raw/keeper-first-batch/keeper_check_instrument_back_f6.png",
       "frames": 6,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -4879,7 +4879,7 @@
       "name": "keeper_check_instrument_side",
       "source": "art/raw/keeper-first-batch/keeper_check_instrument_side_f6.png",
       "frames": 6,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -5070,7 +5070,7 @@
       "name": "keeper_clear_snow",
       "source": "art/raw/keeper-first-batch/keeper_clear_snow_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -5307,7 +5307,7 @@
       "name": "keeper_collect_eggs_back",
       "source": "art/raw/keeper-first-batch/keeper_collect_eggs_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -5544,7 +5544,7 @@
       "name": "keeper_cook_back",
       "source": "art/raw/keeper-first-batch/keeper_cook_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -5781,7 +5781,7 @@
       "name": "keeper_count_money",
       "source": "art/raw/keeper-first-batch/keeper_count_money_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -6021,7 +6021,7 @@
       "name": "keeper_cross",
       "source": "art/raw/keeper-first-batch/keeper_cross_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -6258,7 +6258,7 @@
       "name": "keeper_crouch_work_back",
       "source": "art/raw/keeper-first-batch/keeper_crouch_work_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -6495,7 +6495,7 @@
       "name": "keeper_dance",
       "source": "art/raw/keeper-first-batch/keeper_dance_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -6732,7 +6732,7 @@
       "name": "keeper_darts",
       "source": "art/raw/keeper-first-batch/keeper_darts_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -6969,7 +6969,7 @@
       "name": "keeper_dig",
       "source": "art/raw/keeper-first-batch/keeper_dig_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -7206,7 +7206,7 @@
       "name": "keeper_door_open_back",
       "source": "art/raw/keeper-first-batch/keeper_door_open_back_f6.png",
       "frames": 6,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         32,
@@ -7397,7 +7397,7 @@
       "name": "keeper_door_open_side",
       "source": "art/raw/keeper-first-batch/keeper_door_open_side_f6.png",
       "frames": 6,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         32,
@@ -7588,7 +7588,7 @@
       "name": "keeper_drink_pint",
       "source": "art/raw/keeper-first-batch/keeper_drink_pint_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -8068,7 +8068,7 @@
       "name": "keeper_eat_seated",
       "source": "art/raw/keeper-first-batch/keeper_eat_seated_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -8308,7 +8308,7 @@
       "name": "keeper_feed_animals",
       "source": "art/raw/keeper-first-batch/keeper_feed_animals_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         32,
@@ -8545,7 +8545,7 @@
       "name": "keeper_fish_feed_up",
       "source": "art/raw/keeper-first-batch/keeper_fish_feed_up_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -8782,7 +8782,7 @@
       "name": "keeper_fish_seated",
       "source": "art/raw/keeper-first-batch/keeper_fish_seated_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -9022,7 +9022,7 @@
       "name": "keeper_fish_standing",
       "source": "art/raw/keeper-first-batch/keeper_fish_standing_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         64,
@@ -9259,7 +9259,7 @@
       "name": "keeper_front_arm_l",
       "source": "art/raw/keeper-first-batch/keeper_front_arm_l_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -9331,7 +9331,7 @@
       "name": "keeper_front_arm_r",
       "source": "art/raw/keeper-first-batch/keeper_front_arm_r_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -9403,7 +9403,7 @@
       "name": "keeper_front_head_asleep",
       "source": "art/raw/keeper-first-batch/keeper_front_head_asleep_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -9475,7 +9475,7 @@
       "name": "keeper_front_head_grumpy",
       "source": "art/raw/keeper-first-batch/keeper_front_head_grumpy_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -9547,7 +9547,7 @@
       "name": "keeper_front_head_happy",
       "source": "art/raw/keeper-first-batch/keeper_front_head_happy_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -9619,7 +9619,7 @@
       "name": "keeper_front_head_neutral",
       "source": "art/raw/keeper-first-batch/keeper_front_head_neutral_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -9691,7 +9691,7 @@
       "name": "keeper_front_head_open",
       "source": "art/raw/keeper-first-batch/keeper_front_head_open_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -9763,7 +9763,7 @@
       "name": "keeper_front_leg_l",
       "source": "art/raw/keeper-first-batch/keeper_front_leg_l_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -9825,7 +9825,7 @@
       "name": "keeper_front_leg_r",
       "source": "art/raw/keeper-first-batch/keeper_front_leg_r_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -9887,7 +9887,7 @@
       "name": "keeper_front_torso",
       "source": "art/raw/keeper-first-batch/keeper_front_torso_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -9949,7 +9949,7 @@
       "name": "keeper_get_into_bed",
       "source": "art/raw/keeper-first-batch/keeper_get_into_bed_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         48,
@@ -10186,7 +10186,7 @@
       "name": "keeper_halloween_walk_back",
       "source": "art/raw/keeper-first-batch/keeper_halloween_walk_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -10423,7 +10423,7 @@
       "name": "keeper_halloween_walk_front",
       "source": "art/raw/keeper-first-batch/keeper_halloween_walk_front_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -10660,7 +10660,7 @@
       "name": "keeper_halloween_walk_side",
       "source": "art/raw/keeper-first-batch/keeper_halloween_walk_side_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -10897,7 +10897,7 @@
       "name": "keeper_hammer_back",
       "source": "art/raw/keeper-first-batch/keeper_hammer_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -11134,7 +11134,7 @@
       "name": "keeper_hammer_side",
       "source": "art/raw/keeper-first-batch/keeper_hammer_side_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -11371,7 +11371,7 @@
       "name": "keeper_hot_drink_drink",
       "source": "art/raw/keeper-first-batch/keeper_hot_drink_drink_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -11608,7 +11608,7 @@
       "name": "keeper_hot_drink_pickup",
       "source": "art/raw/keeper-first-batch/keeper_hot_drink_pickup_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         48,
@@ -11845,7 +11845,7 @@
       "name": "keeper_hot_drink_pour",
       "source": "art/raw/keeper-first-batch/keeper_hot_drink_pour_f10.png",
       "frames": 10,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         48,
@@ -12128,7 +12128,7 @@
       "name": "keeper_hot_drink_put_down",
       "source": "art/raw/keeper-first-batch/keeper_hot_drink_put_down_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         48,
@@ -12365,7 +12365,7 @@
       "name": "keeper_hot_drink_stir",
       "source": "art/raw/keeper-first-batch/keeper_hot_drink_stir_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         48,
@@ -12602,7 +12602,7 @@
       "name": "keeper_hot_tub",
       "source": "art/raw/keeper-first-batch/keeper_hot_tub_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -12842,7 +12842,7 @@
       "name": "keeper_hungry",
       "source": "art/raw/keeper-first-batch/keeper_hungry_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -13079,7 +13079,7 @@
       "name": "keeper_idle",
       "source": "art/raw/keeper-first-batch/keeper_idle_f4.png",
       "frames": 4,
-      "fps": 6,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -13220,7 +13220,7 @@
       "name": "keeper_knight_walk_back",
       "source": "art/raw/keeper-first-batch/keeper_knight_walk_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -13457,7 +13457,7 @@
       "name": "keeper_knight_walk_front",
       "source": "art/raw/keeper-first-batch/keeper_knight_walk_front_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -13694,7 +13694,7 @@
       "name": "keeper_knight_walk_side",
       "source": "art/raw/keeper-first-batch/keeper_knight_walk_side_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -13931,7 +13931,7 @@
       "name": "keeper_ladder_climb",
       "source": "art/raw/keeper-first-batch/keeper_ladder_climb_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -14168,7 +14168,7 @@
       "name": "keeper_lean_table_back",
       "source": "art/raw/keeper-first-batch/keeper_lean_table_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -14405,7 +14405,7 @@
       "name": "keeper_lift_button_front",
       "source": "art/raw/keeper-first-batch/keeper_lift_button_front_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -14642,7 +14642,7 @@
       "name": "keeper_lift_weights_back",
       "source": "art/raw/keeper-first-batch/keeper_lift_weights_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -14879,7 +14879,7 @@
       "name": "keeper_machete_side",
       "source": "art/raw/keeper-first-batch/keeper_machete_side_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         64,
@@ -15116,7 +15116,7 @@
       "name": "keeper_meal_from_oven_back",
       "source": "art/raw/keeper-first-batch/keeper_meal_from_oven_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         48,
@@ -15353,7 +15353,7 @@
       "name": "keeper_meal_place_side",
       "source": "art/raw/keeper-first-batch/keeper_meal_place_side_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         48,
@@ -15590,7 +15590,7 @@
       "name": "keeper_mechanic_fix",
       "source": "art/raw/keeper-first-batch/keeper_mechanic_fix_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -15827,7 +15827,7 @@
       "name": "keeper_mechanic_walk_back",
       "source": "art/raw/keeper-first-batch/keeper_mechanic_walk_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -16064,7 +16064,7 @@
       "name": "keeper_mechanic_walk_front",
       "source": "art/raw/keeper-first-batch/keeper_mechanic_walk_front_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -16301,7 +16301,7 @@
       "name": "keeper_mechanic_walk_side",
       "source": "art/raw/keeper-first-batch/keeper_mechanic_walk_side_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -16538,7 +16538,7 @@
       "name": "keeper_operate_outboard",
       "source": "art/raw/keeper-first-batch/keeper_operate_outboard_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -16775,7 +16775,7 @@
       "name": "keeper_paint_back",
       "source": "art/raw/keeper-first-batch/keeper_paint_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -17012,7 +17012,7 @@
       "name": "keeper_paint_side",
       "source": "art/raw/keeper-first-batch/keeper_paint_side_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -17249,7 +17249,7 @@
       "name": "keeper_parachute_jump",
       "source": "art/raw/keeper-first-batch/keeper_parachute_jump_f9.png",
       "frames": 9,
-      "fps": 10,
+      "fps": 4,
       "loop": false,
       "canvas": [
         48,
@@ -17499,7 +17499,7 @@
       "name": "keeper_party_dance",
       "source": "art/raw/keeper-first-batch/keeper_party_dance_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -17736,7 +17736,7 @@
       "name": "keeper_party_eat_cake",
       "source": "art/raw/keeper-first-batch/keeper_party_eat_cake_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -17976,7 +17976,7 @@
       "name": "keeper_party_hat_put_on_back",
       "source": "art/raw/keeper-first-batch/keeper_party_hat_put_on_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         32,
@@ -18213,7 +18213,7 @@
       "name": "keeper_party_idle",
       "source": "art/raw/keeper-first-batch/keeper_party_idle_f4.png",
       "frames": 4,
-      "fps": 6,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -18358,7 +18358,7 @@
       "name": "keeper_party_turn_back",
       "source": "art/raw/keeper-first-batch/keeper_party_turn_back_f6.png",
       "frames": 6,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         32,
@@ -18549,7 +18549,7 @@
       "name": "keeper_party_walk",
       "source": "art/raw/keeper-first-batch/keeper_party_walk_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -18786,7 +18786,7 @@
       "name": "keeper_piano",
       "source": "art/raw/keeper-first-batch/keeper_piano_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -19026,7 +19026,7 @@
       "name": "keeper_pick_fruit",
       "source": "art/raw/keeper-first-batch/keeper_pick_fruit_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         32,
@@ -19263,7 +19263,7 @@
       "name": "keeper_pick_vegetable",
       "source": "art/raw/keeper-first-batch/keeper_pick_vegetable_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         32,
@@ -19500,7 +19500,7 @@
       "name": "keeper_pirate_walk_back",
       "source": "art/raw/keeper-first-batch/keeper_pirate_walk_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -19737,7 +19737,7 @@
       "name": "keeper_pirate_walk_front",
       "source": "art/raw/keeper-first-batch/keeper_pirate_walk_front_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -19974,7 +19974,7 @@
       "name": "keeper_pirate_walk_side",
       "source": "art/raw/keeper-first-batch/keeper_pirate_walk_side_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -20211,7 +20211,7 @@
       "name": "keeper_place_cake",
       "source": "art/raw/keeper-first-batch/keeper_place_cake_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         48,
@@ -20448,7 +20448,7 @@
       "name": "keeper_platform_dive",
       "source": "art/raw/keeper-first-batch/keeper_platform_dive_f10.png",
       "frames": 10,
-      "fps": 10,
+      "fps": 4,
       "loop": false,
       "canvas": [
         48,
@@ -20721,7 +20721,7 @@
       "name": "keeper_play_drums_back",
       "source": "art/raw/keeper-first-batch/keeper_play_drums_back_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -20961,7 +20961,7 @@
       "name": "keeper_play_drums_front",
       "source": "art/raw/keeper-first-batch/keeper_play_drums_front_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -21201,7 +21201,7 @@
       "name": "keeper_play_guitar",
       "source": "art/raw/keeper-first-batch/keeper_play_guitar_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -21438,7 +21438,7 @@
       "name": "keeper_pottery_front",
       "source": "art/raw/keeper-first-batch/keeper_pottery_front_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -21678,7 +21678,7 @@
       "name": "keeper_pressups_side",
       "source": "art/raw/keeper-first-batch/keeper_pressups_side_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         64,
@@ -21915,7 +21915,7 @@
       "name": "keeper_put_record",
       "source": "art/raw/keeper-first-batch/keeper_put_record_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -22343,7 +22343,7 @@
       "name": "keeper_pyjamas_turn_back",
       "source": "art/raw/keeper-first-batch/keeper_pyjamas_turn_back_f6.png",
       "frames": 6,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         32,
@@ -22534,7 +22534,7 @@
       "name": "keeper_pyjamas_walk",
       "source": "art/raw/keeper-first-batch/keeper_pyjamas_walk_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -22771,7 +22771,7 @@
       "name": "keeper_read_front",
       "source": "art/raw/keeper-first-batch/keeper_read_front_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -23011,7 +23011,7 @@
       "name": "keeper_read_side",
       "source": "art/raw/keeper-first-batch/keeper_read_side_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -23251,7 +23251,7 @@
       "name": "keeper_reference",
       "source": "art/raw/keeper-first-batch/keeper_reference_f1.png",
       "frames": 1,
-      "fps": 8,
+      "fps": 0,
       "loop": true,
       "canvas": [
         32,
@@ -23323,7 +23323,7 @@
       "name": "keeper_ride_bike_front",
       "source": "art/raw/keeper-first-batch/keeper_ride_bike_front_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -23563,7 +23563,7 @@
       "name": "keeper_row_boat",
       "source": "art/raw/keeper-first-batch/keeper_row_boat_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -23803,7 +23803,7 @@
       "name": "keeper_sad",
       "source": "art/raw/keeper-first-batch/keeper_sad_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -24040,7 +24040,7 @@
       "name": "keeper_saw_wood",
       "source": "art/raw/keeper-first-batch/keeper_saw_wood_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -24277,7 +24277,7 @@
       "name": "keeper_scuba_swim_down",
       "source": "art/raw/keeper-first-batch/keeper_scuba_swim_down_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -24514,7 +24514,7 @@
       "name": "keeper_scuba_swim_horizontal",
       "source": "art/raw/keeper-first-batch/keeper_scuba_swim_horizontal_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         80,
@@ -24751,7 +24751,7 @@
       "name": "keeper_scuba_swim_up",
       "source": "art/raw/keeper-first-batch/keeper_scuba_swim_up_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -24988,7 +24988,7 @@
       "name": "keeper_search_boxes",
       "source": "art/raw/keeper-first-batch/keeper_search_boxes_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -25225,7 +25225,7 @@
       "name": "keeper_shower_door_open_bathrobe",
       "source": "art/raw/keeper-first-batch/keeper_shower_door_open_bathrobe_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         40,
@@ -25462,7 +25462,7 @@
       "name": "keeper_shower_enter_bathrobe",
       "source": "art/raw/keeper-first-batch/keeper_shower_enter_bathrobe_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         40,
@@ -25699,7 +25699,7 @@
       "name": "keeper_shower_enter",
       "source": "art/raw/keeper-first-batch/keeper_shower_enter_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         40,
@@ -25936,7 +25936,7 @@
       "name": "keeper_shower_exit",
       "source": "art/raw/keeper-first-batch/keeper_shower_exit_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         40,
@@ -26173,7 +26173,7 @@
       "name": "keeper_shower_wash",
       "source": "art/raw/keeper-first-batch/keeper_shower_wash_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -26410,7 +26410,7 @@
       "name": "keeper_sit_front",
       "source": "art/raw/keeper-first-batch/keeper_sit_front_f6.png",
       "frames": 6,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         32,
@@ -26604,7 +26604,7 @@
       "name": "keeper_sit_side",
       "source": "art/raw/keeper-first-batch/keeper_sit_side_f6.png",
       "frames": 6,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         32,
@@ -26798,7 +26798,7 @@
       "name": "keeper_slide_side",
       "source": "art/raw/keeper-first-batch/keeper_slide_side_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -27035,7 +27035,7 @@
       "name": "keeper_snooker",
       "source": "art/raw/keeper-first-batch/keeper_snooker_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -27272,7 +27272,7 @@
       "name": "keeper_souwester_walk_back",
       "source": "art/raw/keeper-first-batch/keeper_souwester_walk_back_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -27509,7 +27509,7 @@
       "name": "keeper_souwester_walk_front",
       "source": "art/raw/keeper-first-batch/keeper_souwester_walk_front_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -27746,7 +27746,7 @@
       "name": "keeper_souwester_walk_side",
       "source": "art/raw/keeper-first-batch/keeper_souwester_walk_side_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -27983,7 +27983,7 @@
       "name": "keeper_sow_seeds",
       "source": "art/raw/keeper-first-batch/keeper_sow_seeds_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -28220,7 +28220,7 @@
       "name": "keeper_spaceman_walk_back",
       "source": "art/raw/keeper-first-batch/keeper_spaceman_walk_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -28457,7 +28457,7 @@
       "name": "keeper_spaceman_walk_front",
       "source": "art/raw/keeper-first-batch/keeper_spaceman_walk_front_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -28694,7 +28694,7 @@
       "name": "keeper_spaceman_walk_side",
       "source": "art/raw/keeper-first-batch/keeper_spaceman_walk_side_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -28931,7 +28931,7 @@
       "name": "keeper_spiral_stairs_down",
       "source": "art/raw/keeper-first-batch/keeper_spiral_stairs_down_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -29168,7 +29168,7 @@
       "name": "keeper_spiral_stairs",
       "source": "art/raw/keeper-first-batch/keeper_spiral_stairs_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -29405,7 +29405,7 @@
       "name": "keeper_spiral_stairs_up",
       "source": "art/raw/keeper-first-batch/keeper_spiral_stairs_up_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -29642,7 +29642,7 @@
       "name": "keeper_stairs_down",
       "source": "art/raw/keeper-first-batch/keeper_stairs_down_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -29879,7 +29879,7 @@
       "name": "keeper_stairs_up",
       "source": "art/raw/keeper-first-batch/keeper_stairs_up_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -30116,7 +30116,7 @@
       "name": "keeper_swim_costume_down",
       "source": "art/raw/keeper-first-batch/keeper_swim_costume_down_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -30353,7 +30353,7 @@
       "name": "keeper_swim_costume_horizontal",
       "source": "art/raw/keeper-first-batch/keeper_swim_costume_horizontal_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         80,
@@ -30590,7 +30590,7 @@
       "name": "keeper_swim_costume_up",
       "source": "art/raw/keeper-first-batch/keeper_swim_costume_up_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -30827,7 +30827,7 @@
       "name": "keeper_switch_press_back",
       "source": "art/raw/keeper-first-batch/keeper_switch_press_back_f6.png",
       "frames": 6,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         32,
@@ -31018,7 +31018,7 @@
       "name": "keeper_switch_press_side",
       "source": "art/raw/keeper-first-batch/keeper_switch_press_side_f6.png",
       "frames": 6,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         32,
@@ -31209,7 +31209,7 @@
       "name": "keeper_table_tennis",
       "source": "art/raw/keeper-first-batch/keeper_table_tennis_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -31446,7 +31446,7 @@
       "name": "keeper_tarzan_walk_back",
       "source": "art/raw/keeper-first-batch/keeper_tarzan_walk_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -31683,7 +31683,7 @@
       "name": "keeper_tarzan_walk_front",
       "source": "art/raw/keeper-first-batch/keeper_tarzan_walk_front_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -31920,7 +31920,7 @@
       "name": "keeper_tarzan_walk_side",
       "source": "art/raw/keeper-first-batch/keeper_tarzan_walk_side_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -32157,7 +32157,7 @@
       "name": "keeper_telescope",
       "source": "art/raw/keeper-first-batch/keeper_telescope_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -32394,7 +32394,7 @@
       "name": "keeper_trampoline_front",
       "source": "art/raw/keeper-first-batch/keeper_trampoline_front_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -32631,7 +32631,7 @@
       "name": "keeper_turn_back",
       "source": "art/raw/keeper-first-batch/keeper_turn_back_f6.png",
       "frames": 6,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         32,
@@ -32822,7 +32822,7 @@
       "name": "keeper_type_computer",
       "source": "art/raw/keeper-first-batch/keeper_type_computer_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -33062,7 +33062,7 @@
       "name": "keeper_urinate_back",
       "source": "art/raw/keeper-first-batch/keeper_urinate_back_f6.png",
       "frames": 6,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -33253,7 +33253,7 @@
       "name": "keeper_video_game",
       "source": "art/raw/keeper-first-batch/keeper_video_game_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -33493,7 +33493,7 @@
       "name": "keeper_vomit_loo_back",
       "source": "art/raw/keeper-first-batch/keeper_vomit_loo_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         40,
@@ -33730,7 +33730,7 @@
       "name": "keeper_walk",
       "source": "art/raw/keeper-first-batch/keeper_walk_f8.png",
       "frames": 8,
-      "fps": 10,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -33967,7 +33967,7 @@
       "name": "keeper_wash_back",
       "source": "art/raw/keeper-first-batch/keeper_wash_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -34204,7 +34204,7 @@
       "name": "keeper_watch_movie",
       "source": "art/raw/keeper-first-batch/keeper_watch_movie_f8.png",
       "frames": 8,
-      "fps": 6,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -34444,7 +34444,7 @@
       "name": "keeper_watch_tv",
       "source": "art/raw/keeper-first-batch/keeper_watch_tv_f8.png",
       "frames": 8,
-      "fps": 6,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -34684,7 +34684,7 @@
       "name": "keeper_water_plants_back",
       "source": "art/raw/keeper-first-batch/keeper_water_plants_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -34921,7 +34921,7 @@
       "name": "keeper_water_plants_front",
       "source": "art/raw/keeper-first-batch/keeper_water_plants_front_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -35158,7 +35158,7 @@
       "name": "keeper_water_plants_side",
       "source": "art/raw/keeper-first-batch/keeper_water_plants_side_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         48,
@@ -35395,7 +35395,7 @@
       "name": "keeper_wave_camera",
       "source": "art/raw/keeper-first-batch/keeper_wave_camera_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         32,
@@ -35632,7 +35632,7 @@
       "name": "keeper_weld",
       "source": "art/raw/keeper-first-batch/keeper_weld_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -35869,7 +35869,7 @@
       "name": "keeper_work_back",
       "source": "art/raw/keeper-first-batch/keeper_work_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -36106,7 +36106,7 @@
       "name": "keeper_write_back",
       "source": "art/raw/keeper-first-batch/keeper_write_back_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,
@@ -36346,7 +36346,7 @@
       "name": "keeper_write_side",
       "source": "art/raw/keeper-first-batch/keeper_write_side_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         40,
@@ -36586,7 +36586,7 @@
       "name": "keeper_yawn",
       "source": "art/raw/keeper-first-batch/keeper_yawn_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": false,
       "canvas": [
         32,

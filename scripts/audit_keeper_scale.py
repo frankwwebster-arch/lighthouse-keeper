@@ -283,7 +283,7 @@ def load_assets() -> list[dict]:
             "name": name,
             "source": str(png_path.relative_to(ROOT)),
             "frames": sidecar["frames"],
-            "fps": sidecar.get("fps", 8) or 8,
+            "fps": sidecar.get("fps", 0),
             "loop": sidecar.get("loop", True),
             "canvas": [sidecar["w"], sidecar["h"]],
             "anchor": sidecar.get("anchor"),

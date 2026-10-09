@@ -31,72 +31,76 @@ Historical rig parts used a **32 × 40** transparent canvas. They are not final 
 
 Initial clips:
 
+Every delivered multi-frame keeper clip uses the global 4fps baseline. The
+table records that current authored value; accepted review choices may add a
+per-clip override without changing the sprite strip.
+
 | Clip | View | Frames · fps | Loop | Interaction point |
 |---|---|---:|---|---|
-| `idle` | front | 4 · 6 | yes | floor anchor |
-| `walk` | front/side composite | 8 · 10 | yes | floor anchor; no sub-pixel travel |
-| `turn_back` | front to back | 6 · 8 | no | reverse frames for `turn_front` |
-| `work_back` | back | 8 · 8 | yes | hands `(16,21)`; generic domestic work |
-| `reach_use` | front | 5 · 10 | no | hand to object use point |
-| `cook_back` | back | 8 · 8 | yes | alias of `work_back`; hands `(16,21)` |
-| `read` | front | 4 · 5 | yes | book pivot `(21,22)` |
-| `sit_side` | side | 6 · 8 | no | seat `(16,29)`; mirror left; reverse to stand |
-| `sit_front` | front | 6 · 8 | no | seat `(16,29)`; reverse to stand |
-| `eat_seated` | side | 8 · 8 | yes | seat `(16,29)`; fork to mouth `(24,17)`; mirror left |
-| `piano` | rear three-quarter | 8 · 10 | yes | seat `(16,29)`; hands `(24,20)` |
+| `idle` | front | 4 · 4 | yes | floor anchor |
+| `walk` | front/side composite | 8 · 4 | yes | floor anchor; no sub-pixel travel |
+| `turn_back` | front to back | 6 · 4 | no | reverse frames for `turn_front` |
+| `work_back` | back | 8 · 4 | yes | hands `(16,21)`; generic domestic work |
+| `reach_use` | front | 5 · 4 | no | hand to object use point |
+| `cook_back` | back | 8 · 4 | yes | alias of `work_back`; hands `(16,21)` |
+| `read` | front | 4 · 4 | yes | book pivot `(21,22)` |
+| `sit_side` | side | 6 · 4 | no | seat `(16,29)`; mirror left; reverse to stand |
+| `sit_front` | front | 6 · 4 | no | seat `(16,29)`; reverse to stand |
+| `eat_seated` | side | 8 · 4 | yes | seat `(16,29)`; fork to mouth `(24,17)`; mirror left |
+| `piano` | rear three-quarter | 8 · 4 | yes | seat `(16,29)`; hands `(24,20)` |
 | `sleep` | front-derived | 4 · 4 | yes | bed contact `(16,31)` |
-| `phone` | front | 4 · 6 | yes | handset pivot `(22,14)` |
-| `brush_teeth_back` | back | 8 · 8 | yes | alias of `work_back`; hands `(16,21)` |
-| `wash_back` | back | 8 · 8 | yes | alias of `work_back`; hands `(16,21)` |
-| `urinate_back` | back | 6 · 8 | yes | discreet clothed pose; hands low `(16,27)` |
-| `door_open_side` | side | 6 · 8 | no | handle `(25,20)`; mirror left; reverse to close |
-| `door_open_back` | back | 6 · 8 | no | handle `(24,20)`; mirror handle side; reverse to close |
-| `ladder_climb` | back | 8 · 10 | yes | invisible rungs; reverse for descent |
-| `stairs_up` | side | 8 · 10 | yes | high-knee ascent; mirror left |
-| `stairs_down` | side | 8 · 10 | yes | balanced descent; mirror left |
-| `switch_press_side` | side | 6 · 8 | no | fingertip `(27,17)`; mirror left; reverse to withdraw |
-| `switch_press_back` | back | 6 · 8 | no | fingertip `(26,17)`; same height as side; mirror hand; reverse |
-| `parachute_jump` | side | 9 · 10 | no | 48 × 84; pack opens and round canopy deploys |
-| `platform_dive` | side | 10 · 10 | no | 48 × 56; ends vertical head-first; splash separate |
-| `dig` | side | 8 · 8 | yes | spade contact `(27,38)`; mirror left |
-| `feed_animals` | side | 8 · 8 | no | scoop/bowl target `(27,34)`; mirror left; includes rise |
-| `sow_seeds` | side | 8 · 8 | yes | scatter target `(27,34)`; pouch included; mirror left |
-| `pick_vegetable` | side | 8 · 8 | no | low harvest `(26,36)`; mirror left |
-| `pick_fruit` | side | 8 · 8 | no | high harvest `(25,14)`; mirror left |
-| `carry_shopping` | side | 8 · 10 | yes | two-bag walk; mirror left |
-| `row_boat` | side | 8 · 8 | yes | 40 × 40; seat `(20,29)`; oar hands `(30,20)` |
-| `drive_speedboat` | side | 8 · 4 | yes | deliberately slow 2-second helm cycle; seat `(16,29)`; helm hands `(25,20)` |
-| `operate_outboard` | rear ¾ | 8 · 8 | yes | tiller hand `(4,21)`; mirror left |
-| `watch_tv` | rear ¾ | 8 · 6 | yes | seat `(16,29)`; screen target `(40,14)`; mirror left |
-| `weld` | side | 8 · 8 | yes | torch contact `(27,22)`; goggles/gloves included; workpiece separate |
-| `saw_wood` | side | 8 · 8 | yes | 40 × 40; blade contact `(35,23)`; timber/bench separate |
-| `wave_camera` | front | 8 · 8 | no | warm greeting one-shot |
-| `yawn` | front ¾ | 8 · 8 | no | sleepy expression and full-body stretch |
-| `pyjamas_walk` | side | 8 · 10 | yes | right; mirror left; light powder-blue pyjamas with cream piping |
-| `pyjamas_turn_back` | front to back | 6 · 8 | no | reverse to turn front |
-| `get_into_bed` | side | 8 · 8 | no | 48 × 40; surface `(24,31)`; pillow `(38,22)`; reverse to rise |
+| `phone` | front | 4 · 4 | yes | handset pivot `(22,14)` |
+| `brush_teeth_back` | back | 8 · 4 | yes | alias of `work_back`; hands `(16,21)` |
+| `wash_back` | back | 8 · 4 | yes | alias of `work_back`; hands `(16,21)` |
+| `urinate_back` | back | 6 · 4 | yes | discreet clothed pose; hands low `(16,27)` |
+| `door_open_side` | side | 6 · 4 | no | handle `(25,20)`; mirror left; reverse to close |
+| `door_open_back` | back | 6 · 4 | no | handle `(24,20)`; mirror handle side; reverse to close |
+| `ladder_climb` | back | 8 · 4 | yes | invisible rungs; reverse for descent |
+| `stairs_up` | side | 8 · 4 | yes | high-knee ascent; mirror left |
+| `stairs_down` | side | 8 · 4 | yes | balanced descent; mirror left |
+| `switch_press_side` | side | 6 · 4 | no | fingertip `(27,17)`; mirror left; reverse to withdraw |
+| `switch_press_back` | back | 6 · 4 | no | fingertip `(26,17)`; same height as side; mirror hand; reverse |
+| `parachute_jump` | side | 9 · 4 | no | 48 × 84; pack opens and round canopy deploys |
+| `platform_dive` | side | 10 · 4 | no | 48 × 56; ends vertical head-first; splash separate |
+| `dig` | side | 8 · 4 | yes | spade contact `(27,38)`; mirror left |
+| `feed_animals` | side | 8 · 4 | no | scoop/bowl target `(27,34)`; mirror left; includes rise |
+| `sow_seeds` | side | 8 · 4 | yes | scatter target `(27,34)`; pouch included; mirror left |
+| `pick_vegetable` | side | 8 · 4 | no | low harvest `(26,36)`; mirror left |
+| `pick_fruit` | side | 8 · 4 | no | high harvest `(25,14)`; mirror left |
+| `carry_shopping` | side | 8 · 4 | yes | two-bag walk; mirror left |
+| `row_boat` | side | 8 · 4 | yes | 40 × 40; seat `(20,29)`; oar hands `(30,20)` |
+| `drive_speedboat` | side | 8 · 4 | yes | global 4fps baseline; 2-second helm cycle; seat `(16,29)`; helm hands `(25,20)` |
+| `operate_outboard` | rear ¾ | 8 · 4 | yes | tiller hand `(4,21)`; mirror left |
+| `watch_tv` | rear ¾ | 8 · 4 | yes | seat `(16,29)`; screen target `(40,14)`; mirror left |
+| `weld` | side | 8 · 4 | yes | torch contact `(27,22)`; goggles/gloves included; workpiece separate |
+| `saw_wood` | side | 8 · 4 | yes | 40 × 40; blade contact `(35,23)`; timber/bench separate |
+| `wave_camera` | front | 8 · 4 | no | warm greeting one-shot |
+| `yawn` | front ¾ | 8 · 4 | no | sleepy expression and full-body stretch |
+| `pyjamas_walk` | side | 8 · 4 | yes | right; mirror left; light powder-blue pyjamas with cream piping |
+| `pyjamas_turn_back` | front to back | 6 · 4 | no | reverse to turn front |
+| `get_into_bed` | side | 8 · 4 | no | 48 × 40; surface `(24,31)`; pillow `(38,22)`; reverse to rise |
 | `pyjamas_snore` | lying side | 6 · 4 | yes | 48 × 40 breathing/snore loop; bed separate |
-| `swim_costume_horizontal` | side | 8 · 8 | yes | 80 × 48 centred; right, mirror left; expanded canvas preserves canonical body scale |
-| `swim_costume_up` | rear | 8 · 8 | yes | 48 × 48 centred; vector `(0,-1)` |
-| `swim_costume_down` | front | 8 · 8 | yes | 48 × 48 centred; vector `(0,1)` |
-| `scuba_swim_horizontal` | side | 8 · 8 | yes | 80 × 48 centred; right, mirror left; expanded canvas preserves canonical body scale |
-| `scuba_swim_up` | rear | 8 · 8 | yes | mask, tank, regulator and fins |
-| `scuba_swim_down` | front | 8 · 8 | yes | mask, tank, regulator and fins |
-| `party_idle` | front | 4 · 6 | yes | 32 × 48; exact canonical front identity plus cardboard cone party hat |
-| `party_walk` | side | 8 · 10 | yes | 32 × 48; exact canonical side walk; right, mirror left |
-| `party_turn_back` | front to back | 6 · 8 | no | 32 × 48; exact canonical turn; reverse to turn front |
-| `souwester_walk_side` | side | 8 · 10 | yes | 32 × 48 yellow oilskins; right, mirror left |
-| `souwester_walk_back` | rear | 8 · 10 | yes | direct walk away; vector `(0,-1)` |
-| `souwester_walk_front` | front | 8 · 10 | yes | direct walk toward camera; vector `(0,1)` |
-| `dance` | front | 8 · 10 | yes | joyful full-body loop with strong arm and leg motion |
-| `play_guitar` | front ¾ | 8 · 10 | yes | 48 × 40; guitar included; mirror front-left |
-| `play_drums_front` | front seated | 8 · 10 | yes | 32 × 48; paired timing/scale master; seat `(16,37)`; strike centre `(16,27)` |
-| `play_drums_back` | rear seated | 8 · 10 | yes | 32 × 48; same eight poses through 180°; identical seat and strike points; kit separate |
-| `watch_movie` | rear ¾ reclined | 8 · 6 | yes | 48 × 40; popcorn included; seating and screen separate |
-| `clear_snow` | side | 8 · 8 | yes | 48 × 40; winter coat and shovel; contact `(43,37)`; mirror left |
-| `crouch_work_back` | rear crouched | 8 · 8 | yes | reusable low work proxy; ground contact `(16,38)` |
-| `cake_from_oven_back` | rear | 8 · 8 | no | 48 × 40 one-shot; oven rack `(24,30)`; oven separate |
-| `cake_turn_right` | rear to side | 6 · 8 | no | 48 × 40; tray carry `(34,20)`; mirror for left |
+| `swim_costume_horizontal` | side | 8 · 4 | yes | 80 × 48 centred; right, mirror left; expanded canvas preserves canonical body scale |
+| `swim_costume_up` | rear | 8 · 4 | yes | 48 × 48 centred; vector `(0,-1)` |
+| `swim_costume_down` | front | 8 · 4 | yes | 48 × 48 centred; vector `(0,1)` |
+| `scuba_swim_horizontal` | side | 8 · 4 | yes | 80 × 48 centred; right, mirror left; expanded canvas preserves canonical body scale |
+| `scuba_swim_up` | rear | 8 · 4 | yes | mask, tank, regulator and fins |
+| `scuba_swim_down` | front | 8 · 4 | yes | mask, tank, regulator and fins |
+| `party_idle` | front | 4 · 4 | yes | 32 × 48; exact canonical front identity plus cardboard cone party hat |
+| `party_walk` | side | 8 · 4 | yes | 32 × 48; exact canonical side walk; right, mirror left |
+| `party_turn_back` | front to back | 6 · 4 | no | 32 × 48; exact canonical turn; reverse to turn front |
+| `souwester_walk_side` | side | 8 · 4 | yes | 32 × 48 yellow oilskins; right, mirror left |
+| `souwester_walk_back` | rear | 8 · 4 | yes | direct walk away; vector `(0,-1)` |
+| `souwester_walk_front` | front | 8 · 4 | yes | direct walk toward camera; vector `(0,1)` |
+| `dance` | front | 8 · 4 | yes | joyful full-body loop with strong arm and leg motion |
+| `play_guitar` | front ¾ | 8 · 4 | yes | 48 × 40; guitar included; mirror front-left |
+| `play_drums_front` | front seated | 8 · 4 | yes | 32 × 48; paired timing/scale master; seat `(16,37)`; strike centre `(16,27)` |
+| `play_drums_back` | rear seated | 8 · 4 | yes | 32 × 48; same eight poses through 180°; identical seat and strike points; kit separate |
+| `watch_movie` | rear ¾ reclined | 8 · 4 | yes | 48 × 40; popcorn included; seating and screen separate |
+| `clear_snow` | side | 8 · 4 | yes | 48 × 40; winter coat and shovel; contact `(43,37)`; mirror left |
+| `crouch_work_back` | rear crouched | 8 · 4 | yes | reusable low work proxy; ground contact `(16,38)` |
+| `cake_from_oven_back` | rear | 8 · 4 | no | 48 × 40 one-shot; oven rack `(24,30)`; oven separate |
+| `cake_turn_right` | rear to side | 6 · 4 | no | 48 × 40; tray carry `(34,20)`; mirror for left |
 | `loo_hide` | hidden | 0 | n/a | keeper is not drawn |
 
 The old part files and `keeper_reference.png` are no longer required review deliveries. Airborne strips may expand to 48 × 56 for the dive or 48 × 84 for parachute deployment without rescaling the keeper. Long side tools may use 40 × 40, bed poses 48 × 40, vertical swimming 48 × 48, horizontal swimming 80 × 48, press-ups 64 × 40, standing fishing 64 × 56, overhead weights 48 × 56, and tall headwear 32 × 48. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. `data/keeper_asset_contract.json` is authoritative for scale and use points.

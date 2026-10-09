@@ -272,6 +272,9 @@ duration. It changes the reviewed action's preview only; approach walks and
 bridge clips continue at their own authored speeds. Unlike play-once/loop, the
 proposed FPS is a production decision, so it dirties, saves and exports with the
 card.
+Every multi-frame keeper clip initially uses the global 4fps authored baseline.
+The page performs a one-time migration of older browser-saved default timings to
+4fps; speed choices saved after that migration are retained.
 At 1500px browser width or above, focused mode lays out the pinned canon, stage
 and compact two-column control console horizontally. Size controls are amber,
 ghost controls purple, action transforms blue, frame navigation teal, and
