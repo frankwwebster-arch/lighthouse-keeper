@@ -39,6 +39,7 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 - `data/keeper_asset_contract.json` — authoritative machine-readable scale, pivots and interaction points.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and eight fixed-scale contact sheets; rebuild with the bundled Python runtime and `scripts/audit_keeper_scale.py`.
+- `docs/DOORS_STAIRS_AND_COSTUMES.md` — agreed stairway, door and costume-change rules, seamless clip joins, and the decisions still to make.
 - `docs/EXPANSION_DESIGN.md` — living write-up of agreed room ideas, random floor placement, night reveals, weather, transport, island expansions and energy systems.
 - `art/manifest.json` and `art/asset_inventory.json` — facts about the concept/prototype image pack; these are not a production rig.
 

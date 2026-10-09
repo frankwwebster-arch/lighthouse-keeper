@@ -261,6 +261,8 @@ The boiler uses standard/on/broken art: pilot light; active flame/pressure; then
 
 ## Transport through a growing tower
 
+Agreed 9 Oct 2026: transport runs in one continuous stairway separate from the rooms, entered through a door on every room. See `docs/DOORS_STAIRS_AND_COSTUMES.md`.
+
 Progression can be:
 
 1. Ladders — slow both ways.

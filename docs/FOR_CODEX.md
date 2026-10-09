@@ -2,6 +2,10 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Doors, stairway and costumes (9 Oct 2026)
+
+Frank has agreed a separate full-height stairway, a door on every room, and costume changes only while the keeper is hidden in a doorway. Full write-up: `docs/DOORS_STAIRS_AND_COSTUMES.md`. Before any more room, shell, door or stair art, please look at its section 3: the keeper stands 38 px, but a floor band is 35 px and your door spec needs a 40 px opening, so the band height has to change first. Decisions marked Codex in its table are yours (stairway side, lamp-room trapdoor, door design, a still standing frame per costume, splitting `privacy` from `outfit` in the manifest). Section 6 lists the missing clips per costume (mostly a standing frame and a side walk).
+
 ## Missions and new floors (updated 8 Oct 2026: any order)
 
 The fixed mission chain is gone. Logic follows the locked layout in `docs/EXPANSION_DESIGN.md`:
