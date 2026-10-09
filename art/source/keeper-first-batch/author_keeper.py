@@ -633,6 +633,42 @@ pyjamas_walk_frames = generated_frames("keeper-pyjamas-walk-light-blue-generated
 pyjamas_turn_back_frames = generated_frames("keeper-pyjamas-turn-back-light-blue-generated-source.png", 6)
 get_into_bed_frames = generated_frames("keeper-get-into-bed-light-blue-generated-source.png", 8, logical_width=48, min_component_pixels=10000)
 pyjamas_snore_frames = generated_frames("keeper-snore-light-blue-generated-source.png", 6, logical_width=48)
+
+
+def pyjamas_action_variant(action_frames, pyjama_reference_frames):
+    """Dress an approved side action in the canonical light-blue pyjamas."""
+    reference = pyjama_reference_frames[2]
+    reference_upper = reference.crop((0, 0, reference.width, 15 * D))
+    reference_box = reference_upper.getchannel("A").getbbox()
+    variants = []
+    for action in action_frames:
+        variant = action.copy()
+        pixels = variant.load()
+        for y in range(15 * D, variant.height):
+            for x in range(variant.width):
+                r, g, b, a = pixels[x, y]
+                if not a:
+                    continue
+                if b < 18 or b <= r * 1.08 or b <= g * 1.03:
+                    continue
+                luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b
+                amount = min(1.0, max(0.0, (luminance - 12) / 115))
+                dark = (78, 116, 153)
+                light = (145, 190, 228)
+                pixels[x, y] = tuple(round(dark[i] + (light[i] - dark[i]) * amount) for i in range(3)) + (a,)
+        upper = variant.crop((0, 0, variant.width, 15 * D))
+        action_box = upper.getchannel("A").getbbox()
+        if not action_box or not reference_box:
+            raise ValueError("Door/pyjama head reference is empty")
+        dx = action_box[0] - reference_box[0]
+        dy = action_box[1] - reference_box[1]
+        ImageDraw.Draw(variant).rectangle((0, 0, variant.width, 15 * D), fill=(0, 0, 0, 0))
+        variant.alpha_composite(reference_upper, (dx, dy))
+        variants.append(variant)
+    return variants
+
+
+pyjamas_door_side_frames = pyjamas_action_variant(door_side_frames, pyjamas_walk_frames)
 swim_costume_horizontal_frames = generated_frames("keeper-swim-costume-horizontal-generated-source.png", 8, logical_width=80, logical_height=48)
 swim_costume_up_frames = generated_frames("keeper-swim-costume-up-generated-source.png", 8, logical_width=48, logical_height=48)
 swim_costume_down_frames = generated_frames("keeper-swim-costume-down-generated-source.png", 8, logical_width=48, logical_height=48)
@@ -712,6 +748,7 @@ save("keeper_wave_camera", wave_camera_frames, 8, loop=False, facing="front", in
 save("keeper_yawn", yawn_frames, 8, loop=False, facing="front-right", interaction="emote-yawn")
 save("keeper_pyjamas_walk", pyjamas_walk_frames, 10, outfit="light-blue-pyjamas", mirror_safe=True, facing="right", interaction="walk-pyjamas", mirrors_for="left")
 save("keeper_pyjamas_turn_back", pyjamas_turn_back_frames, 8, outfit="light-blue-pyjamas", loop=False, reverse_for="pyjamas_turn_front", facing="front-to-back", interaction="turn-pyjamas")
+save("keeper_door_open_side_pyjamas", pyjamas_door_side_frames, 8, outfit="light-blue-pyjamas", loop=False, hand_use_point=[25, 20], reverse_for="door_close_side_pyjamas", mirror_safe=True, facing="right", interaction="open-door", mirrors_for="left")
 save("keeper_get_into_bed", get_into_bed_frames, 8, outfit="light-blue-pyjamas", loop=False, bed_surface_point=[24, 31], pillow_point=[38, 22], reverse_for="get_out_of_bed", mirror_safe=True, facing="right", interaction="enter-bed", mirrors_for="left")
 save("keeper_pyjamas_snore", pyjamas_snore_frames, 4, outfit="light-blue-pyjamas", bed_surface_point=[24, 31], pillow_point=[38, 22], mirror_safe=True, facing="right", interaction="sleep-snore", mirrors_for="left")
 save("keeper_swim_costume_horizontal", swim_costume_horizontal_frames, 8, anchor_point=[40, 24], movement_vector=[1, 0], outfit="striped-swimming-costume", mirror_safe=True, facing="right", interaction="swim", mirrors_for="left")
@@ -783,6 +820,7 @@ save_preview("keeper-wave-camera", wave_camera_frames, 120)
 save_preview("keeper-yawn", yawn_frames, 120)
 save_preview("keeper-pyjamas-walk", pyjamas_walk_frames, 100)
 save_preview("keeper-pyjamas-turn-back", pyjamas_turn_back_frames, 120, ping_pong=True)
+save_preview("keeper-door-open-side-pyjamas", pyjamas_door_side_frames, 120, ping_pong=True)
 save_preview("keeper-get-into-bed", get_into_bed_frames, 120)
 save_preview("keeper-pyjamas-snore", pyjamas_snore_frames, 250)
 save_preview("keeper-swim-costume-horizontal", swim_costume_horizontal_frames, 120)

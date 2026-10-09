@@ -95,6 +95,7 @@
     "switchBackRightHand": { "clip": "keeper_switch_press_back", "handUsePoint": [26, 17], "offsetFromFeet": [10, -23], "mirrorFor": "switchBackLeftHand" },
     "switchBackLeftHand": { "clip": "keeper_switch_press_back", "handUsePoint": [6, 17], "offsetFromFeet": [-10, -23], "mirroredFrom": "switchBackRightHand" },
     "doorSideRight": { "clip": "keeper_door_open_side", "handUsePoint": [25, 20], "offsetFromFeet": [9, -20], "mirrorFor": "doorSideLeft" },
+    "doorSidePyjamasRight": { "clip": "keeper_door_open_side_pyjamas", "handUsePoint": [25, 20], "offsetFromFeet": [9, -20], "mirrorFor": "doorSidePyjamasLeft" },
     "doorBackRightHand": { "clip": "keeper_door_open_back", "handUsePoint": [24, 20], "offsetFromFeet": [8, -20], "mirrorFor": "doorBackLeftHand" },
     "rearWorkSurface": { "clip": "keeper_work_back", "handUsePoint": [16, 21], "offsetFromFeet": [0, -19] },
     "sideSeat": { "clip": "keeper_sit_side", "seatPoint": [16, 29], "offsetFromFeet": [0, -11] },

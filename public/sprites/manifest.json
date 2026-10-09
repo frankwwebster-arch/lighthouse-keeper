@@ -770,6 +770,30 @@
   "mirrorSafe": true,
   "z": 50
  },
+ "keeper_door_open_side_pyjamas": {
+  "file": "keeper_door_open_side_pyjamas.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "handUsePoint": [
+   25,
+   20
+  ],
+  "outfit": "light-blue-pyjamas",
+  "loop": false,
+  "reverseFor": "door_close_side_pyjamas",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "open-door",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_drink_pint": {
   "file": "keeper_drink_pint.png",
   "w": 40,

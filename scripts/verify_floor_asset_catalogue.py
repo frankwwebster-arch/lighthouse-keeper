@@ -57,7 +57,7 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==170
+assert len(keeper_pngs)==171
 required_clips={
     'keeper_idle':(4,4), 'keeper_walk':(8,4),
     'keeper_turn_back':(6,4), 'keeper_work_back':(8,4),
@@ -66,6 +66,7 @@ required_clips={
     'keeper_sit_front':(6,4), 'keeper_piano':(8,4),
     'keeper_urinate_back':(6,4), 'keeper_eat_seated':(8,4),
     'keeper_door_open_side':(6,4), 'keeper_door_open_back':(6,4),
+    'keeper_door_open_side_pyjamas':(6,4),
     'keeper_ladder_climb':(8,4), 'keeper_stairs_up':(8,4),
     'keeper_stairs_down':(8,4),
     'keeper_switch_press_side':(6,4), 'keeper_switch_press_back':(6,4),
@@ -142,6 +143,12 @@ assert manifest['keeper_eat_seated']['seatPoint']==[16,29] and manifest['keeper_
 assert manifest['keeper_eat_seated']['mirrorSafe'] is True
 assert manifest['keeper_door_open_side']['loop'] is False
 assert manifest['keeper_door_open_side']['reverseFor']=='door_close_side' and manifest['keeper_door_open_side']['mirrorSafe'] is True
+assert manifest['keeper_door_open_side_pyjamas']['loop'] is False
+assert manifest['keeper_door_open_side_pyjamas']['reverseFor']=='door_close_side_pyjamas'
+assert manifest['keeper_door_open_side_pyjamas']['outfit']=='light-blue-pyjamas'
+assert manifest['keeper_door_open_side_pyjamas']['handUsePoint']==manifest['keeper_door_open_side']['handUsePoint']==[25,20]
+assert manifest['keeper_door_open_side_pyjamas']['anchor']==manifest['keeper_door_open_side']['anchor']==[16,40]
+assert manifest['keeper_door_open_side_pyjamas']['mirrorSafe'] is True and manifest['keeper_door_open_side_pyjamas']['mirrorsFor']=='left'
 assert manifest['keeper_door_open_back']['loop'] is False
 assert manifest['keeper_door_open_back']['reverseFor']=='door_close_back' and manifest['keeper_door_open_back']['mirrorSafe'] is True
 assert manifest['keeper_ladder_climb']['reverseFor']=='ladder_descend'
@@ -553,12 +560,12 @@ assert scale_audit['auditRevision']=='2026-10-09-original-comparison-v2'
 assert scale_audit['originalReference']['name']=='keeper_walk'
 assert scale_audit['originalReference']['source']=='art/raw/keeper-first-batch/keeper_walk_f8.png'
 assert scale_audit['originalReference']['approvedMedianTorsoScanWidthAt20']==13.75
-assert scale_audit['counts']['allSheets']==170
-assert scale_audit['counts']['reviewedAnimationSheets']==152
+assert scale_audit['counts']['allSheets']==171
+assert scale_audit['counts']['reviewedAnimationSheets']==153
 assert scale_audit['counts']['technicalRejectedSheets']==18
-assert scale_audit['counts']['allFramesMeasured']==1210
+assert scale_audit['counts']['allFramesMeasured']==1216
 assert scale_audit['counts']['comparisonFailures']==0
-assert len(scale_audit['assets'])==170
+assert len(scale_audit['assets'])==171
 assert all('originalComparison' in asset for asset in scale_audit['assets'])
 scale_assets_by_name={asset['name']:asset for asset in scale_audit['assets']}
 standing_face=scale_assets_by_name['keeper_walk']['frameMeasurements'][0]['faceProxy']
@@ -583,12 +590,13 @@ assert len(scale_audit['contactSheets'])==8
 assert all((root/path).exists() for path in scale_audit['contactSheets'])
 scale_review=(root/'docs/keeper-scale-audit/review.html').read_text()
 assert '__KEEPER_REVIEW_DATA__' not in scale_review
-assert '"reviewedAnimationSheets":152' in scale_review
+assert '"reviewedAnimationSheets":153' in scale_review
 for removed_control in ('id="search"','id="outfit"','id="posture"','id="kind"','id="sort"'):
     assert removed_control not in scale_review,removed_control
 for token in (
     'Action only', 'Raw matching-walk seam', 'Known bridge route',
-    'Seam freeze / onion skin', 'keeper_walk', 'Matching-outfit walking source',
+    'Seam freeze / onion skin', 'keeper_walk', 'keeper_door_open_side_pyjamas',
+    'Matching-outfit walking source',
     'measured-and-visual-pass', 'torso difference',
     'Pause every animation', 'Comparison ghosts on',
     'Display size (review only)', 'id="reference"', 'dedicated untouched reference',
@@ -659,6 +667,7 @@ previews={
     'keeper-sit-front':(10,250), 'keeper-piano':(8,250),
     'keeper-urinate-back':(6,250), 'keeper-eat-seated':(8,250),
     'keeper-door-open-side':(10,250), 'keeper-door-open-back':(10,250),
+    'keeper-door-open-side-pyjamas':(10,250),
     'keeper-ladder-climb':(14,250), 'keeper-stairs-up':(8,250),
     'keeper-stairs-down':(8,250),
     'keeper-switch-press-right':(10,250), 'keeper-switch-press-left':(10,250),
@@ -707,6 +716,6 @@ for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
 keeper_previews=list((root/'docs/floor-asset-catalogue').glob('keeper-*-preview.gif'))
-assert len(keeper_previews)==154
+assert len(keeper_previews)==155
 assert all(Image.open(path).is_animated for path in keeper_previews)
-print('Verified: 71 spaces, 1576 rows, owned-item states, 9 TV/lamp/FX exports, 170 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
+print('Verified: 71 spaces, 1576 rows, owned-item states, 9 TV/lamp/FX exports, 171 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')

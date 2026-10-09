@@ -35,11 +35,11 @@
     }
   },
   "counts": {
-    "allSheets": 170,
-    "reviewedAnimationSheets": 152,
+    "allSheets": 171,
+    "reviewedAnimationSheets": 153,
     "technicalRejectedSheets": 18,
-    "allFramesMeasured": 1210,
-    "correctedSheets": 59,
+    "allFramesMeasured": 1216,
+    "correctedSheets": 60,
     "comparisonFailures": 0
   },
   "contactSheets": [
@@ -7568,6 +7568,197 @@
             "width": 9.75,
             "height": 6.5,
             "area": 484
+          },
+          "torsoScanWidthAt20": 17.25
+        }
+      ],
+      "originalComparison": {
+        "reference": "keeper_walk",
+        "revision": "2026-10-09-original-comparison-v2",
+        "type": "articulated-landmark-at-fixed-scale",
+        "verdict": "fixed-scale-visual-pass",
+        "silhouetteHeightRatio": null,
+        "torsoScanDifference": null,
+        "visualReviewDate": "2026-10-09",
+        "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
+        "warnings": []
+      }
+    },
+    {
+      "name": "keeper_door_open_side_pyjamas",
+      "source": "art/raw/keeper-first-batch/keeper_door_open_side_pyjamas_f6.png",
+      "frames": 6,
+      "fps": 4,
+      "loop": false,
+      "canvas": [
+        32,
+        40
+      ],
+      "anchor": [
+        16,
+        40
+      ],
+      "facing": "right",
+      "outfit": "light-blue-pyjamas",
+      "interaction": "open-door",
+      "seatPoint": null,
+      "postureClass": "upright",
+      "measurementMethod": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
+      "status": "corrected",
+      "note": "exact approved side-door motion redressed from the canonical light-blue pyjama family; interaction geometry is unchanged",
+      "medianFaceProxyWidth": 10.25,
+      "medianFaceProxyHeight": 9.75,
+      "faceProxyCoverage": "6/6",
+      "medianTorsoScanWidthAt20": 17.88,
+      "torsoScanCoverage": "6/6",
+      "alphaHeightRange": [
+        37.25,
+        38.0
+      ],
+      "alphaWidthRange": [
+        16.5,
+        25.25
+      ],
+      "bottomClearanceRange": [
+        0.5,
+        0.5
+      ],
+      "frameMeasurements": [
+        {
+          "alphaBox": [
+            7.75,
+            2.25,
+            24.25,
+            39.5
+          ],
+          "alphaWidth": 16.5,
+          "alphaHeight": 37.25,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              13.0,
+              4.0,
+              23.25,
+              13.75
+            ],
+            "width": 10.25,
+            "height": 9.75,
+            "area": 705
+          },
+          "torsoScanWidthAt20": 13.25
+        },
+        {
+          "alphaBox": [
+            3.25,
+            2.0,
+            28.5,
+            39.5
+          ],
+          "alphaWidth": 25.25,
+          "alphaHeight": 37.5,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              9.75,
+              3.75,
+              20.0,
+              13.5
+            ],
+            "width": 10.25,
+            "height": 9.75,
+            "area": 705
+          },
+          "torsoScanWidthAt20": 24.0
+        },
+        {
+          "alphaBox": [
+            4.5,
+            2.0,
+            27.25,
+            39.5
+          ],
+          "alphaWidth": 22.75,
+          "alphaHeight": 37.5,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              10.25,
+              3.75,
+              20.5,
+              13.5
+            ],
+            "width": 10.25,
+            "height": 9.75,
+            "area": 705
+          },
+          "torsoScanWidthAt20": 21.25
+        },
+        {
+          "alphaBox": [
+            4.75,
+            2.0,
+            27.25,
+            39.5
+          ],
+          "alphaWidth": 22.5,
+          "alphaHeight": 37.5,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              9.5,
+              3.75,
+              19.75,
+              13.5
+            ],
+            "width": 10.25,
+            "height": 9.75,
+            "area": 705
+          },
+          "torsoScanWidthAt20": 18.5
+        },
+        {
+          "alphaBox": [
+            4.5,
+            2.0,
+            27.25,
+            39.5
+          ],
+          "alphaWidth": 22.75,
+          "alphaHeight": 37.5,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              9.25,
+              3.75,
+              19.5,
+              13.5
+            ],
+            "width": 10.25,
+            "height": 9.75,
+            "area": 705
+          },
+          "torsoScanWidthAt20": 15.0
+        },
+        {
+          "alphaBox": [
+            5.75,
+            1.5,
+            26.25,
+            39.5
+          ],
+          "alphaWidth": 20.5,
+          "alphaHeight": 38.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              11.5,
+              3.25,
+              21.75,
+              13.0
+            ],
+            "width": 10.25,
+            "height": 9.75,
+            "area": 705
           },
           "torsoScanWidthAt20": 17.25
         }

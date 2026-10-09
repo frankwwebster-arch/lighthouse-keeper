@@ -54,6 +54,7 @@ per-clip override without changing the sprite strip.
 | `wash_back` | back | 8 · 4 | yes | alias of `work_back`; hands `(16,21)` |
 | `urinate_back` | back | 6 · 4 | yes | discreet clothed pose; hands low `(16,27)` |
 | `door_open_side` | side | 6 · 4 | no | handle `(25,20)`; mirror left; reverse to close |
+| `door_open_side_pyjamas` | side | 6 · 4 | no | canonical light-blue pyjamas; same handle `(25,20)` and motion; mirror left; reverse to close |
 | `door_open_back` | back | 6 · 4 | no | handle `(24,20)`; mirror handle side; reverse to close |
 | `ladder_climb` | back | 8 · 4 | yes | invisible rungs; reverse for descent |
 | `stairs_up` | side | 8 · 4 | yes | high-knee ascent; mirror left |

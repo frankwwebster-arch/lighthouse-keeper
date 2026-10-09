@@ -42,6 +42,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Play piano/instrument | `keeper_piano` | rear three-quarter; seated |
 | Urinate | `keeper_urinate_back` | discreet rear three-quarter pose |
 | Open side door | `keeper_door_open_side` | right; mirror left; reverse to close |
+| Open side door in pyjamas | `keeper_door_open_side_pyjamas` | canonical light-blue pyjamas; exact side-door motion/handle point; right; mirror left; reverse to close |
 | Open door ahead | `keeper_door_open_back` | rear; mirror handle side; reverse to close |
 | Climb ladder | `keeper_ladder_climb` | forward/up; reverse/down |
 | Walk upstairs | `keeper_stairs_up` | right; mirror left |

@@ -8,7 +8,7 @@ Codex task should be able to continue from here without relying on the old chat.
 
 1. Read this document in full.
 2. Open `docs/keeper-scale-audit/review.html`. A dedicated panel first shows
-   the untouched `keeper_walk` scale authority, followed by all 152 accepted
+   the untouched `keeper_walk` scale authority, followed by all 153 accepted
    clips at one unchanged relative scale in filename order. Every card prints
    its runtime and source filename. Switch View to `One animation at a time`
    for a much larger card, progress/filename status, Previous/Next buttons and
@@ -165,8 +165,8 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 
 ## Current evidence and files
 
-- 170 keeper sheets and 1,210 frames are in the technical batch.
-- 152 animation sheets are accepted into the review gallery.
+- 171 keeper sheets and 1,216 frames are in the technical batch.
+- 153 animation sheets are accepted into the review gallery.
 - 18 obsolete modular/reference sheets are excluded from review and must not
   return to production.
 - 59 sheets were rebuilt or anatomy-normalised in the latest full pass.
@@ -326,7 +326,7 @@ evidence, not final acceptance.
 | Kind | Count | Meaning |
 |---|---:|---|
 | `bridge-clip` | 5 | Existing reusable bridge artwork |
-| `direct-test` | 43 | Same-outfit walk can be juxtaposed for review; seam unproven |
+| `direct-test` | 44 | Same-outfit walk can be juxtaposed for review; seam unproven |
 | `known-bridge` | 36 | Viewer can insert an existing turn/sit/bed bridge; full route still needs endpoint proof |
 | `locomotion` | 11 | Walking source/family |
 | `missing-bridge` | 33 | Known facing/posture bridge does not exist |
@@ -594,8 +594,10 @@ timing. This keeps later in-game tuning to a metadata edit rather than a redraw.
 
 ### Clothing families
 
-- Light powder-blue pyjamas: side walk left/right, turn rear, get into bed,
-  snore. They must be visibly lighter than the normal uniform.
+- Light powder-blue pyjamas: side walk left/right, side-door opening/closing,
+  turn rear, get into bed and snore. `keeper_door_open_side_pyjamas` inherits
+  the exact six-frame `keeper_door_open_side` motion and `(25,20)` handle point.
+  They must be visibly lighter than the normal uniform.
 - Full yellow sou'wester: side/rear/front movement.
 - Party: a small pale-pink conical cardboard hat with red fringe and pom-pom,
   never the previously oversized cone; canonical keeper face/body; idle, walk,
@@ -678,7 +680,7 @@ npm run build
 
 Also inspect `docs/keeper-scale-audit/review.html` visually:
 
-- every one of the 152 accepted cards is present and named;
+- every one of the 153 accepted cards is present and named;
 - global Pause and Original ghost controls affect every card;
 - no card scales its sprite to fit;
 - all directly comparable bodies retain identity and scale;
@@ -687,4 +689,4 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 
 ## Ready-to-paste opening prompt for the new Codex task
 
-> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md` in full before changing anything, then read the authoritative scale/animation/door documents it links. I have new comments on clips in `docs/keeper-scale-audit/review.html`; capture every comment by exact filename into a dated review record, triage keep/fix/rebuild/delete/decision-needed, and resolve them. Treat the untouched `keeper_walk` as the immutable identity and scale reference. Costumes and props are overlays; never redraw or resize the keeper merely for clothing, canvas or an object. Costume changes happen only while fully hidden behind a foreground door. Most importantly, make every accepted action reachable seamlessly and reversibly from idle/walking: phase-aware walk stop, correct turn, sit/crouch/climb/prop handover, activity entry/loop/exit, then a clean return to walking. Build the P0 production neutral poses, walk-start/stop and side↔front/back transition system before bulk object wiring; add explicit startPose/endPose and object-event metadata, and test complete routes rather than isolated loops. Rerun the full 170-sheet/1,210-frame scale audit and all project verification, update the handoff/index, commit and push the completed work to remote `main`.
+> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md` in full before changing anything, then read the authoritative scale/animation/door documents it links. I have new comments on clips in `docs/keeper-scale-audit/review.html`; capture every comment by exact filename into a dated review record, triage keep/fix/rebuild/delete/decision-needed, and resolve them. Treat the untouched `keeper_walk` as the immutable identity and scale reference. Costumes and props are overlays; never redraw or resize the keeper merely for clothing, canvas or an object. Costume changes happen only while fully hidden behind a foreground door. Most importantly, make every accepted action reachable seamlessly and reversibly from idle/walking: phase-aware walk stop, correct turn, sit/crouch/climb/prop handover, activity entry/loop/exit, then a clean return to walking. Build the P0 production neutral poses, walk-start/stop and side↔front/back transition system before bulk object wiring; add explicit startPose/endPose and object-event metadata, and test complete routes rather than isolated loops. Rerun the full 171-sheet/1,216-frame scale audit and all project verification, update the handoff/index, commit and push the completed work to remote `main`.
