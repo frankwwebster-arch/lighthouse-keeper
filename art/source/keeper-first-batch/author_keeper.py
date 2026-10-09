@@ -622,6 +622,9 @@ ADDITIONAL_CLIPS = [
     ("keeper_bored", "keeper-bored-generated-source.png", 32, 40, dict(facing="front", interaction="emote-bored")),
     ("keeper_cross", "keeper-cross-generated-source.png", 32, 40, dict(facing="front", interaction="emote-cross")),
     ("keeper_vomit_loo_back", "keeper-vomit-loo-back-generated-source.png", 40, 40, dict(hand_use_point=[31, 27], bowl_point=[32, 35], facing="back", interaction="vomit-into-toilet", loop=False)),
+    ("keeper_bathrobe_walk", "keeper-bathrobe-walk-generated-source.png", 32, 40, dict(outfit="cream-bathrobe", movement_vector=[1, 0], facing="right", interaction="bathrobe-walk", mirror_safe=True, mirrors_for="left")),
+    ("keeper_shower_door_open_bathrobe", "keeper-shower-door-open-bathrobe-generated-source.png", 40, 40, dict(hand_use_point=[35, 18], outfit="cream-bathrobe", facing="rear-right", interaction="open-shower-door", loop=False, mirror_safe=True, mirrors_for="rear-left")),
+    ("keeper_shower_enter_bathrobe", "keeper-shower-enter-bathrobe-generated-source.png", 40, 40, dict(outfit="cream-bathrobe", movement_vector=[0, -1], facing="back", interaction="enter-shower-cubicle", loop=False, mirror_safe=True, mirrors_for="rear-left")),
     ("keeper_fish_feed_up", "keeper-fish-feed-up-generated-source.png", 32, 48, dict(hand_use_point=[26, 7], facing="right", interaction="feed-fish-high", mirror_safe=True, mirrors_for="left")),
     ("keeper_aquarium_brush", "keeper-aquarium-brush-generated-source.png", 40, 40, dict(hand_use_point=[34, 17], facing="right", interaction="clean-aquarium", mirror_safe=True, mirrors_for="left")),
     ("keeper_aquarium_net", "keeper-aquarium-net-generated-source.png", 40, 40, dict(hand_use_point=[34, 21], facing="right", interaction="net-aquarium-fish", mirror_safe=True, mirrors_for="left")),
@@ -699,8 +702,9 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
         # figure begins well inside the cell; clear only that neighbour fringe.
         for frame in frames:
             ImageDraw.Draw(frame).rectangle((0, 0, 3 * D, frame.height), fill=(0, 0, 0, 0))
-    save(clip_name, frames, 8, **metadata)
-    save_preview(clip_name.replace("_", "-"), frames, 120)
+    clip_fps = 10 if clip_name == "keeper_bathrobe_walk" else 8
+    save(clip_name, frames, clip_fps, **metadata)
+    save_preview(clip_name.replace("_", "-"), frames, 100 if clip_fps == 10 else 120)
 
 # Semantic aliases reuse approved motion while preserving object-specific lookup.
 for clip_name, frames, metadata in (

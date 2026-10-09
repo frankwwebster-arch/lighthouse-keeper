@@ -64,6 +64,9 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Bored | `keeper_bored` | front; half-lidded face, loose posture and boot tap |
 | Cross | `keeper_cross` | front; knitted eyebrows, frown, folded arms and clean boot stamp |
 | Vomit into toilet | `keeper_vomit_loo_back` | direct rear one-shot; separate toilet aligns its bowl target to `(32,35)` |
+| Walk in bathrobe | `keeper_bathrobe_walk` | cream terrycloth robe; right; mirror left |
+| Open shower door in bathrobe | `keeper_shower_door_open_bathrobe` | rear-right one-shot; separate handle aligns to `(35,18)`; mirror rear-left |
+| Enter shower in bathrobe | `keeper_shower_enter_bathrobe` | rear-right to direct rear one-shot; separate cubicle aligns at the feet/threshold anchor |
 | Walk in pyjamas | `keeper_pyjamas_walk` | light powder blue with cream piping; right; mirror left |
 | Turn away in pyjamas | `keeper_pyjamas_turn_back` | light powder blue; reverse to face camera |
 | Get into bed | `keeper_get_into_bed` | light powder blue; right-side bed; mirror left; reverse to get out |

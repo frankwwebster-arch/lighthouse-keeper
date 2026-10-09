@@ -59,6 +59,7 @@ downward. A side-facing point at X mirrors with `mirroredX = canvasWidth - X`.
 | Exercise-bike seat | 13 px | front `(20,27)` on 40 × 40 canvas |
 | Exercise-bike pedal centre | 6 px | front `(20,34)` on 40 × 40 canvas |
 | Toilet bowl vomit target | 5 px | rear extended canvas `(32,35)` |
+| Shower-door handle | 22 px | rear-right extended canvas `(35,18)` |
 
 These are interaction datums, not mandatory object sizes. For example, a light
 switch can have any suitable plate size, but its button centre must be 23 px
@@ -163,6 +164,15 @@ body scale on a 40 × 40 canvas; its visible height decreases only because the
 keeper bends and kneels. Align a separate toilet's bowl target to `(32,35)`.
 The keeper, small vomit effect and bracing hand are in the actor strip; the
 toilet and room remain separate assets.
+
+The cream bathrobe sequence uses the same canonical body scale and pale-blue
+slippers throughout. `keeper_bathrobe_walk` supplies the reusable side walk.
+For the door action, align a separate shower handle to `(35,18)` on the 40 × 40
+right-hand canvas (mirror to `(5,18)` for a left-hand layout). The connected
+entry clip begins at the 40 × 40 feet/threshold anchor `(20,40)`, moves upstage
+and ends direct rear. The shower door, tray and cubicle remain separate. Once
+the cubicle occludes the keeper, switch to `keeper_shower_wash`; no uncovered
+transition frame is shown.
 
 Bath, shower and hot-tub clips use the same scale but carry explicit privacy
 metadata. Entry and exit frames use `towel-privacy`; washing uses

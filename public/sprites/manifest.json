@@ -247,6 +247,29 @@
   "interaction": "wash-in-bath",
   "z": 50
  },
+ "keeper_bathrobe_walk": {
+  "file": "keeper_bathrobe_walk.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "outfit": "cream-bathrobe",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "bathrobe-walk",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_bbq_back": {
   "file": "keeper_bbq_back.png",
   "w": 32,
@@ -2259,6 +2282,29 @@
   "interaction": "search-boxes",
   "z": 50
  },
+ "keeper_shower_door_open_bathrobe": {
+  "file": "keeper_shower_door_open_bathrobe.png",
+  "w": 40,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   20,
+   40
+  ],
+  "handUsePoint": [
+   35,
+   18
+  ],
+  "outfit": "cream-bathrobe",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "rear-right",
+  "interaction": "open-shower-door",
+  "mirrorsFor": "rear-left",
+  "z": 50
+ },
  "keeper_shower_enter": {
   "file": "keeper_shower_enter.png",
   "w": 40,
@@ -2275,6 +2321,29 @@
   "mirrorSafe": true,
   "facing": "rear-right",
   "interaction": "enter-shower",
+  "mirrorsFor": "rear-left",
+  "z": 50
+ },
+ "keeper_shower_enter_bathrobe": {
+  "file": "keeper_shower_enter_bathrobe.png",
+  "w": 40,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   20,
+   40
+  ],
+  "movementVector": [
+   0,
+   -1
+  ],
+  "outfit": "cream-bathrobe",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "back",
+  "interaction": "enter-shower-cubicle",
   "mirrorsFor": "rear-left",
   "z": 50
  },

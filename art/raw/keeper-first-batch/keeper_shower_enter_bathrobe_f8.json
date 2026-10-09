@@ -1,0 +1,22 @@
+{
+  "w": 40,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    20,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "movementVector": [
+    0,
+    -1
+  ],
+  "outfit": "cream-bathrobe",
+  "mirrorSafe": true,
+  "facing": "back",
+  "interaction": "enter-shower-cubicle",
+  "mirrorsFor": "rear-left"
+}

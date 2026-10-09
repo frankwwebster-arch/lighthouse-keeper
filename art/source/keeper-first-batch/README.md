@@ -262,6 +262,17 @@ explicitly excluding the toilet and scenery. Deterministic normalization then
 enforces 152 source pixels (38 logical pixels) for every upright emotion pose;
 the vomiting keeper uses the same scale and only becomes shorter by crouching.
 
+The bathrobe-to-shower pass adds three referenced-image sheets. The shared
+costume is a knee-length warm cream terrycloth robe with pale-blue piping, tied
+belt and pale-blue closed-back slippers; the keeper has no cap. The walk is an
+eight-frame right-facing loop that mirrors left. The door action is a rear-right
+one-shot reaching to a fixed invisible handle and pulling the separate shower
+door open. The entry action continues from that pose, walks through the fixed
+threshold and turns to direct rear without perspective shrinkage. Prompts
+explicitly excluded the shower door, tray, cubicle, water, floor and scenery.
+All three were generated with the built-in image generator in referenced-image
+mode, then deterministically normalized to the canonical density-4 scale.
+
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,
 hardens alpha, places it on a density-4 contract canvas, and emits the manifest

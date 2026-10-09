@@ -1,0 +1,22 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "movementVector": [
+    1,
+    0
+  ],
+  "outfit": "cream-bathrobe",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "bathrobe-walk",
+  "mirrorsFor": "left"
+}

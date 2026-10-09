@@ -100,7 +100,9 @@
     "instrumentCheckSide": { "clip": "keeper_check_instrument_side", "handUsePoint": [27, 17], "offsetFromFeet": [11, -23], "mirrorFor": "instrumentCheckLeft" },
     "liftButtonFront": { "clip": "keeper_lift_button_front", "handUsePoint": [27, 17], "offsetFromFeet": [11, -23], "mirrorFor": "liftButtonFrontLeft" },
     "exerciseBikeFront": { "clip": "keeper_ride_bike_front", "seatPoint": [20, 27], "handUsePoint": [20, 19], "pedalPoint": [20, 34], "handlebarOffsetFromAnchor": [0, -21], "seatOffsetFromAnchor": [0, -13], "pedalOffsetFromAnchor": [0, -6] },
-    "vomitToiletBack": { "clip": "keeper_vomit_loo_back", "handUsePoint": [31, 27], "bowlPoint": [32, 35], "bowlOffsetFromAnchor": [12, -5] }
+    "vomitToiletBack": { "clip": "keeper_vomit_loo_back", "handUsePoint": [31, 27], "bowlPoint": [32, 35], "bowlOffsetFromAnchor": [12, -5] },
+    "showerDoorBathrobeRight": { "clip": "keeper_shower_door_open_bathrobe", "handUsePoint": [35, 18], "handleOffsetFromAnchor": [15, -22], "mirrorFor": "showerDoorBathrobeLeft" },
+    "showerEntryBathrobe": { "clip": "keeper_shower_enter_bathrobe", "thresholdPoint": [20, 40], "movementVector": [0, -1] }
   },
   "movementProfiles": {
     "swimRight": { "movementVector": [1, 0], "mirrorFor": "swimLeft" },
