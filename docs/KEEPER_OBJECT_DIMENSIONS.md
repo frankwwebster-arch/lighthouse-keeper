@@ -1,8 +1,11 @@
 # Keeper-derived object dimensions
 
-The keeper is the ruler for the world. The authoritative machine-readable
-dimensions are in `data/keeper_object_dimensions.json`; they are derived from
-the fixed anatomy and interaction contacts in `data/keeper_asset_contract.json`.
+The keeper's delivered reviewed pose is the ruler for the world. The baseline
+machine-readable dimensions are in `data/keeper_object_dimensions.json`; they
+are derived from the anatomy and interaction contacts in
+`data/keeper_asset_contract.json`. Frank's saved per-animation width and height
+remain authoritative, and authoring transforms the pose's contact points with
+that saved size before runtime object placement.
 
 The main furniture datums are:
 
@@ -21,9 +24,10 @@ The main furniture datums are:
 | Machete plant-cut contact | 12 px above floor; 18 px right of keeper anchor |
 | Guitar rack grip | 31 px above floor; keeper hand `(45,25)` on the 64 × 56 pickup canvas; prop transfers on frame 6 |
 
-These are contact dimensions, not suggestions. Object silhouettes and tiers may
-change, but their keeper-facing contact points remain fixed within 0.5 logical
-pixel. The keeper is never resized to make an object work. In particular, the
+These are baseline contact dimensions, not object-fitting suggestions. Object
+silhouettes and tiers may change, but their keeper-facing contact points follow
+the reviewed pose. The keeper is never automatically resized to make an object
+work; Frank's saved visual resize is applied first. In particular, the
 cake and plated-meal placement strips now use the 19 px standard table datum;
 the 12 px datum is reserved for genuinely low coffee tables.
 

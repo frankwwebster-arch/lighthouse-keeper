@@ -15,5 +15,13 @@
     38.05
   ],
   "facing": "back",
-  "interaction": "collect-eggs"
+  "interaction": "collect-eggs",
+  "reviewScale": [
+    111.5,
+    97.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

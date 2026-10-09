@@ -14,7 +14,7 @@ Status: production specification. Delivery-order item 1 is complete for the two 
 
 ## Keeper kit
 
-Historical rig parts used a **32 × 40** transparent canvas. They are not final review art and are not the keeper's scale authority; the approved side walk and canonical anatomy contract are.
+Historical rig parts used a **32 × 40** transparent canvas. They are not final review art or a production-size authority. The approved side walk and anatomy contract provide the identity baseline; Frank's saved per-animation width and height provide the final production size.
 
 | Part | Pivot | z-order | Required views |
 |---|---:|---:|---|

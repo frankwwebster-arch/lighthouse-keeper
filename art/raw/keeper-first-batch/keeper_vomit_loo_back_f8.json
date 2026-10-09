@@ -19,5 +19,13 @@
     35.025
   ],
   "facing": "back",
-  "interaction": "vomit-into-toilet"
+  "interaction": "vomit-into-toilet",
+  "reviewScale": [
+    106,
+    99.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

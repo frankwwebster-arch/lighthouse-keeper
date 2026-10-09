@@ -15,5 +15,13 @@
     30.15
   ],
   "facing": "back",
-  "interaction": "retrieve-cake-from-oven"
+  "interaction": "retrieve-cake-from-oven",
+  "reviewScale": [
+    111.5,
+    98.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

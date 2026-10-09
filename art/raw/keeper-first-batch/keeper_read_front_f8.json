@@ -15,5 +15,13 @@
     29.275
   ],
   "facing": "front",
-  "interaction": "read-book"
+  "interaction": "read-book",
+  "reviewScale": [
+    84.5,
+    97.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

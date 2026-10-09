@@ -17,5 +17,13 @@
   "outfit": "artist-smock",
   "reverseFor": "artist_smock_stand_front",
   "facing": "front",
-  "interaction": "sit-front"
+  "interaction": "sit-front",
+  "reviewScale": [
+    105,
+    96.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

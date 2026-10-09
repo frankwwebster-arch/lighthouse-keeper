@@ -18,5 +18,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "fix-vehicle",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    97.5
+  ],
+  "reviewOffset": [
+    -3.5,
+    0
+  ]
 }

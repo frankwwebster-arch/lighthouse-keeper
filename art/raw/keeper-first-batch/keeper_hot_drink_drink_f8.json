@@ -17,5 +17,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "drink-hot-drink",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    102,
+    99.5
+  ],
+  "reviewOffset": [
+    2,
+    0
+  ]
 }

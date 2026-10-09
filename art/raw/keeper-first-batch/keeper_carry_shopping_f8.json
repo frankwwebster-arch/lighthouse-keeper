@@ -13,5 +13,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "carry-shopping",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100.5,
+    98
+  ],
+  "reviewOffset": [
+    -2,
+    0
+  ]
 }

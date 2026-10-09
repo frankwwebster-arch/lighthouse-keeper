@@ -15,5 +15,13 @@
     23.1
   ],
   "facing": "back",
-  "interaction": "hammer-workbench"
+  "interaction": "hammer-workbench",
+  "reviewScale": [
+    107,
+    105
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

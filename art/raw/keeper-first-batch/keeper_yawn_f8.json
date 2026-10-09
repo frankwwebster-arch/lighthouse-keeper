@@ -11,5 +11,13 @@
   "z": 50,
   "loop": false,
   "facing": "front-right",
-  "interaction": "emote-yawn"
+  "interaction": "emote-yawn",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    1.5,
+    0
+  ]
 }

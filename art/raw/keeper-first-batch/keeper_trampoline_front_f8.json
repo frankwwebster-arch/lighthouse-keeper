@@ -1,16 +1,24 @@
 {
   "w": 32,
-  "h": 48,
+  "h": 80,
   "frames": 8,
   "fps": 7.5,
   "density": 4,
   "anchor": [
     16.0,
-    48.0
+    80.0
   ],
   "z": 50,
   "loop": true,
   "outfit": "old-school-workout-kit",
   "facing": "front",
-  "interaction": "bounce-trampoline"
+  "interaction": "bounce-trampoline",
+  "reviewScale": [
+    68.5,
+    99
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

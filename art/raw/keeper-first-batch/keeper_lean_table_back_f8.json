@@ -15,5 +15,13 @@
     27.26
   ],
   "facing": "back",
-  "interaction": "inspect-table"
+  "interaction": "inspect-table",
+  "reviewScale": [
+    94,
+    98
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

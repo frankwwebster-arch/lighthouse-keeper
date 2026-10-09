@@ -17,5 +17,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "put-record",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    106,
+    96
+  ],
+  "reviewOffset": [
+    2,
+    0
+  ]
 }

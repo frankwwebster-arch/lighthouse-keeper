@@ -17,5 +17,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "harvest-low",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    96.5
+  ],
+  "reviewOffset": [
+    2.5,
+    0
+  ]
 }

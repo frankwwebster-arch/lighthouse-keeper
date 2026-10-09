@@ -12,5 +12,13 @@
   "loop": true,
   "mirrorSafe": true,
   "facing": "front",
-  "interaction": "dance"
+  "interaction": "dance",
+  "reviewScale": [
+    100,
+    97
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

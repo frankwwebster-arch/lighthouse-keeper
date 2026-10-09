@@ -16,5 +16,13 @@
   ],
   "outfit": "privacy-foam",
   "facing": "front",
-  "interaction": "soak-hot-tub"
+  "interaction": "soak-hot-tub",
+  "reviewScale": [
+    75,
+    97.5
+  ],
+  "reviewOffset": [
+    0,
+    -7.5
+  ]
 }

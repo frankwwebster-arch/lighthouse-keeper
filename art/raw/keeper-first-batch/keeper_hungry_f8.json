@@ -11,5 +11,13 @@
   "z": 50,
   "loop": true,
   "facing": "front",
-  "interaction": "emote-hungry"
+  "interaction": "emote-hungry",
+  "reviewScale": [
+    80.5,
+    99
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

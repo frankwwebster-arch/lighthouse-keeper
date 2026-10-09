@@ -18,5 +18,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "knight-walk",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    85,
+    90
+  ],
+  "reviewOffset": [
+    -0.5,
+    0
+  ]
 }

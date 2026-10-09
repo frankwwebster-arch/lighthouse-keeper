@@ -17,5 +17,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "walk-carry-meal",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    101.5,
+    97.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

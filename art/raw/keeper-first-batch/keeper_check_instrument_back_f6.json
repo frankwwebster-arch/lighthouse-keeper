@@ -15,5 +15,13 @@
     17
   ],
   "facing": "back",
-  "interaction": "check-instrument"
+  "interaction": "check-instrument",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

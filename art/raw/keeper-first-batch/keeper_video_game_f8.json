@@ -25,5 +25,13 @@
   "mirrorSafe": true,
   "facing": "rear-right",
   "interaction": "play-video-game",
-  "mirrorsFor": "rear-left"
+  "mirrorsFor": "rear-left",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

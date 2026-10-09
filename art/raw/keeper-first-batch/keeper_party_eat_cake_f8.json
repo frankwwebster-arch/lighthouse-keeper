@@ -22,5 +22,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "eat-cake",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

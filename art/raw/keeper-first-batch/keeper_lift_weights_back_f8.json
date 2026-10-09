@@ -1,20 +1,28 @@
 {
-  "w": 48,
+  "w": 55,
   "h": 56,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    24,
-    56
+    27.0,
+    56.0
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    24,
-    5
+    27.0,
+    10.355
   ],
   "outfit": "old-school-workout-kit",
   "facing": "back",
-  "interaction": "lift-weights"
+  "interaction": "lift-weights",
+  "reviewScale": [
+    113,
+    89.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

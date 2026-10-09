@@ -19,5 +19,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "open-door",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    92.5
+  ],
+  "reviewOffset": [
+    0.5,
+    0
+  ]
 }

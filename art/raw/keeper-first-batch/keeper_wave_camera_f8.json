@@ -11,5 +11,13 @@
   "z": 50,
   "loop": false,
   "facing": "front",
-  "interaction": "emote-wave"
+  "interaction": "emote-wave",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

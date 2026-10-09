@@ -4,13 +4,19 @@ The keeper is the measuring stick for every room, prop and interaction. The
 authoritative machine-readable data is `data/keeper_asset_contract.json`; this
 page explains it in ordinary language.
 
-## Fixed scale
+## Baseline anatomy and reviewed production size
 
 - One logical pixel is four source-image pixels (`density: 4`).
 - The normal keeper canvas is 32 × 40 logical pixels with his feet anchored at
   `(16,40)`.
-- The approved eight-frame side walk is the scale authority. The old modular
-  `keeper_reference` drawing is not a production reference.
+- The approved eight-frame side walk is the identity and baseline-anatomy
+  reference. The old modular `keeper_reference` drawing is not a production
+  reference.
+- Frank's saved per-animation width and height are the final production sizing
+  authority. They are applied after source anatomy normalisation, recorded as
+  `reviewScale` in each reviewed sidecar and must not be replaced by an
+  automatic measurement. The baseline measurements below remain useful for
+  identity, proportion and contact diagnostics.
 - His inferred skull top is 32.5 logical pixels above the supporting sole.
   The ordinary cap makes the visible silhouette 36.5–38 pixels high, but cap,
   party hat, helmet, sou'wester, raised hands, tools and props are never part of
@@ -29,17 +35,18 @@ page explains it in ordinary language.
   stepped, slightly ragged outer and lower margins and its taper around the
   mouth and chin in left-facing, right-facing and mirrored frames, including
   seated, reclined and head-tilted poses.
-- The vertical dive uses 48 × 56 with anchor `(24,56)`. Full parachute
-  deployment uses 48 × 84 with anchor `(24,84)`. The keeper remains exactly the
-  same size; only the transparent space around him grows.
+- The vertical dive starts from a 48 × 56 canvas with anchor `(24,56)`. Full
+  parachute deployment starts from 48 × 84 with anchor `(24,84)`. Transparent
+  space is expanded before the saved review sizing is applied.
 - Bed entry and snoring use 48 × 40 with anchor `(24,40)` so the horizontal
   body fits without rescaling.
 - Press-ups use a 64 × 40 extended horizontal canvas. Their 47–52 px changing
   silhouette is checked together with the canonical head height, core depth
   and articulated body-axis landmarks; silhouette width alone is not scale.
-- Standing fishing uses a 64 × 56 canvas with anchor `(32,56)`. This gives the
-  canonical keeper at least 38 px of visible height in every frame while the
-  rod, line, float and catch occupy transparent space above and beside him.
+- Fishing now starts from a 96 × 88 interaction canvas with anchor `(48,56)` so
+  the rod, line, float and catch can extend below the feet. Frank's saved sizing
+  may expand the delivered canvas further; for example, seated fishing is
+  delivered on 135 × 115 after its 139% × 130% review scale.
 - Left/right swimming uses an 80 × 48 canvas and movement anchor `(40,24)` so
   the horizontal body keeps canonical scale without width-fitting shrinkage;
   every frame must retain at least 32 logical pixels of visible actor thickness.
@@ -52,8 +59,9 @@ page explains it in ordinary language.
   motion from the relevant wave, walk, turn, rear-work/raised-arm, seated-eat
   and dance families; only the hat/cake prop layers change. Contract version 7
   enforces this project-wide rule.
-- Never scale the keeper to make him meet an object. Position and size the
-  object from the interaction points below.
+- Never scale the keeper automatically to make him meet an object. Apply
+  Frank's saved size, transform the interaction points with it, then position
+  and size the object from those delivered points.
 - Never scale a crouched, seated, horizontal or prop-carrying silhouette to fill
   its canvas. Measure the articulated skull–shoulder–hip–sole chain and head
   unit, then enlarge the transparent canvas if a prop or limb needs more room.
@@ -71,12 +79,12 @@ The audit uses the untouched approved `keeper_walk` as its primary reference:
 2. It prints the original first in every contact-sheet row, followed by the
    tested sheet's first, middle and last representative frames at exactly the
    same fixed scale. No image is fitted to its available canvas.
-3. Directly comparable full-body walks receive a fail-closed skull-to-sole
-   ratio check. They must be 0.960–1.040 of the original's 38 px visible
-   maximum or the audit command exits unsuccessfully. Unobscured side walks
-   also receive a torso-width scan 20 px above the floor and must remain within
-   1 logical pixel of the original, so matching height cannot conceal a thin or
-   over-wide keeper.
+3. Directly comparable full-body walks without a saved visual resize receive a
+   fail-closed skull-to-sole ratio check. They must be 0.960–1.040 of the
+   original's 38 px visible maximum or the audit command exits unsuccessfully.
+   Unobscured side walks without a saved resize also receive a torso-width scan
+   and must remain within 1 logical pixel of the original. A saved review scale
+   is reported as `user-visual-size-authority`, not failed by this gate.
 4. Costumes with headwear and compressed/rotated actions are checked with the
    canonical head unit, core width and articulated skull–shoulder–hip–sole
    landmarks. Hats, tools, props, water and raised limbs remain excluded.
@@ -239,7 +247,7 @@ nine contact sheets render every sample at one fixed display scale so a larger
 transparent canvas can never make its keeper look smaller.
 
 For interactive comparison, open `docs/keeper-scale-audit/review.html`. It puts
-the untouched `keeper_walk` in a dedicated scale-authority panel, followed by
+the untouched `keeper_walk` in a dedicated identity-baseline panel, followed by
 all 173 accepted animation sheets in one filename-ordered gallery. Review-state
 filters cover Needs my input, Happy, Awaiting new draft review, Review later,
 Unreviewed and Has Codex response. For standard upright cap poses, its gold badge
@@ -252,8 +260,9 @@ skull/shoulder/hip/seat/floor rulers. The focused view steps through animations
 one at a time on a much larger card using Previous/Next or Left/Right arrows;
 navigation stays inside the selected filter and wraps at its ends. Switching
 views preserves in-progress card state. A compact canonical reference stays
-pinned beside it and can show standing side/front/back or sitting side/front/back. The sitting
-endpoint's 9.75 × 6.5 face proxy exactly matches the standing reference frame. A
+pinned beside it and can show standing side/front/back or sitting side/front/back.
+These fixed ghosts are identity/anatomy comparisons, not a replacement for the
+reviewed clip's saved production size. A
 1×–12× display-size slider magnifies gallery stages or the focused reviewed
 stage and never changes source or relative sprite scale. The page can
 independently stretch an individual reviewed action from 50% to 150% in width
@@ -363,12 +372,12 @@ are included in their applicable actor strips; the counter remains separate.
 Boat entry and exit use independently drawn 48 × 48 clips rather than reversed
 playback. Align the separate hull's gunwale to `(39,23)` and bench to `(36,35)`
 for the right-side layout, mirrored to `(9,23)` and `(12,35)` for left. The
-keeper climbs over the invisible gunwale at canonical 38 px standing height;
-the taller canvas provides movement clearance and never scales him up. Boat,
+keeper climbs over the invisible gunwale with baseline anatomy; the taller
+canvas provides movement clearance before Frank's saved review size is applied. Boat,
 dock, water and oars remain separate world assets.
 
-Bath, shower and hot-tub clips use the same scale but carry explicit privacy
-metadata. Entry and exit frames use `towel-privacy`; washing uses
+Bath, shower and hot-tub clips use their individual saved review scales and
+carry explicit privacy metadata. Entry and exit frames use `towel-privacy`; washing uses
 `mosaic-privacy`, and the hot-tub loop uses `privacy-foam`. The opaque coverage
 is part of every relevant actor frame, so pausing or skipping frames cannot
 reveal an uncovered intermediate pose. The bath, shower and tub remain separate

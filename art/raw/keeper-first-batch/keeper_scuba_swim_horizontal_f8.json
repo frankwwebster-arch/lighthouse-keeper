@@ -5,8 +5,8 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    40,
-    24
+    40.0,
+    24.0
   ],
   "z": 50,
   "loop": true,
@@ -18,5 +18,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "scuba-swim",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    81,
+    86
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

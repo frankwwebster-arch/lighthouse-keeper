@@ -18,5 +18,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "clear-snow",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    110,
+    93.5
+  ],
+  "reviewOffset": [
+    2.5,
+    0
+  ]
 }

@@ -23,5 +23,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "clean-floor",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    98.5
+  ],
+  "reviewOffset": [
+    4,
+    0
+  ]
 }

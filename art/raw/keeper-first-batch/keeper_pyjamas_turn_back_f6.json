@@ -13,5 +13,13 @@
   "outfit": "light-blue-pyjamas",
   "reverseFor": "pyjamas_turn_front",
   "facing": "front-to-back",
-  "interaction": "turn-pyjamas"
+  "interaction": "turn-pyjamas",
+  "reviewScale": [
+    95,
+    92
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

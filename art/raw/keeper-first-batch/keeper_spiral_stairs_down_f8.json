@@ -15,5 +15,13 @@
     1
   ],
   "facing": "rotating-rear-to-front-right",
-  "interaction": "spiral-stairs-down"
+  "interaction": "spiral-stairs-down",
+  "reviewScale": [
+    88,
+    80
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

@@ -17,5 +17,13 @@
   "handUsePoint": [
     24,
     20
+  ],
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
   ]
 }

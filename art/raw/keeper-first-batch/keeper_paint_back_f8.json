@@ -16,5 +16,13 @@
   ],
   "outfit": "artist-smock",
   "facing": "back",
-  "interaction": "paint"
+  "interaction": "paint",
+  "reviewScale": [
+    123,
+    98.5
+  ],
+  "reviewOffset": [
+    1.5,
+    0
+  ]
 }

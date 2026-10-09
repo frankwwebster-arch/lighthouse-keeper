@@ -14,5 +14,13 @@
     19.0,
     6.98
   ],
-  "reverseFor": "ladder_descend"
+  "reverseFor": "ladder_descend",
+  "reviewScale": [
+    118,
+    103
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

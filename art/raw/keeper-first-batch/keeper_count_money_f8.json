@@ -19,5 +19,13 @@
     22.12
   ],
   "facing": "front",
-  "interaction": "count-money"
+  "interaction": "count-money",
+  "reviewScale": [
+    90.5,
+    102
+  ],
+  "reviewOffset": [
+    0,
+    1.5
+  ]
 }

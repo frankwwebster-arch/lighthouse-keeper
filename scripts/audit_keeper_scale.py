@@ -22,10 +22,14 @@ RAW = ROOT / "art/raw/keeper-first-batch"
 OUT = ROOT / "docs/keeper-scale-audit"
 CONTRACT = json.loads((ROOT / "data/keeper_asset_contract.json").read_text())
 DENSITY = CONTRACT["canvas"]["standard"]["density"]
-AUDIT_REVISION = "2026-10-09-original-comparison-v2"
+AUDIT_REVISION = "2026-10-10-user-visual-size-v3"
 ORIGINAL_KEEPER = "keeper_walk"
 REVIEW_IMPORT_PATH = ROOT / "docs/review/frank-keeper-animation-review-2026-10-09.json"
 CODEX_RESPONSES_PATH = ROOT / "docs/review/keeper-animation-codex-responses-2026-10-09.json"
+REVIEW_SETTINGS = {
+    review["name"]: review
+    for review in json.loads(REVIEW_IMPORT_PATH.read_text())["reviews"]
+}
 
 # These sheets are sufficiently close to the approved upright original for a
 # direct skull-to-supporting-sole silhouette check. All others are still
@@ -80,11 +84,11 @@ TECHNICAL = {
 }
 
 CORRECTED = {
-    "keeper_nap_seated": "canonical side-seated nap loop with closed eyes, clearly reclined head and open mouth; beard silhouette was corrected from a smooth oval to the standard stepped, ragged side-view margin; body height matches the standard sitting endpoint and furniture remains separate",
-    "keeper_lawn_mower_push": "new canonical-height side walk pushing an included manual reel mower; runtime translates the complete unit from behind a foreground shed door",
-    "keeper_sweep_broom": "new canonical-height tier-1 cleaning loop with its traditional broom included; runtime swaps tools only while fully hidden by the cupboard door",
-    "keeper_hoover_basic": "new canonical-height tier-2 cleaning loop with its ordinary upright hoover included; runtime swaps tools only while fully hidden by the cupboard door",
-    "keeper_hoover_super": "new canonical-height tier-3 cleaning loop with its original eccentric super hoover included; runtime swaps tools only while fully hidden by the cupboard door",
+    "keeper_nap_seated": "baseline-anatomy side-seated nap loop with closed eyes, clearly reclined head and open mouth; beard silhouette was corrected from a smooth oval to the standard stepped, ragged side-view margin; furniture remains separate",
+    "keeper_lawn_mower_push": "new baseline-anatomy side walk pushing an included manual reel mower; runtime translates the complete unit from behind a foreground shed door",
+    "keeper_sweep_broom": "new baseline-anatomy tier-1 cleaning loop with its traditional broom included; runtime swaps tools only while fully hidden by the cupboard door",
+    "keeper_hoover_basic": "review-sized tier-2 cleaning loop with its ordinary upright hoover included; runtime swaps tools only while fully hidden by the cupboard door",
+    "keeper_hoover_super": "review-sized tier-3 cleaning loop with its original eccentric super hoover included; runtime swaps tools only while fully hidden by the cupboard door",
     "keeper_artist_smock_walk": "new artist-smock locomotion family; every pose is independently height-matched to the corresponding canonical walk frame after frame 4 was identified as undersized in the generated source",
     "keeper_artist_smock_turn_back": "new matching-outfit side-to-rear transition for activity routing",
     "keeper_artist_smock_turn_front": "new matching-outfit side-to-front transition for activity routing",
@@ -108,13 +112,13 @@ CORRECTED = {
     "keeper_scuba_jetty_dive": "new one-shot jetty dive whose endpoint is the exact first horizontal scuba-swim frame",
     "keeper_parachute_drift": "new slow left/right open-canopy loop that can repeat for arbitrary fall height",
     "keeper_parachute_landing": "new one-shot open-canopy touchdown, compression and canopy-collapse sequence",
-    "keeper_swim_costume_horizontal": "enlarged on an expanded canvas so horizontal anatomy matches the upright keeper",
+    "keeper_swim_costume_horizontal": "re-rendered on an expanded horizontal canvas; Frank's saved 95.5% width / 100% height is baked",
     "keeper_spiral_stairs_down": "frame 4 redrawn to remove an erroneous third hand while preserving the descent cycle",
     "keeper_ride_bike_front": "enlarged from its undersized head unit on a 48 px interaction canvas",
     "keeper_carry_shopping": "hand anatomy redrawn so each frame has exactly two hands attached to the two bag-carrying arms",
     "keeper_put_record": "expanded to a 64 px side-action canvas so the record remains complete through release",
     "keeper_water_plants_side": "expanded to a 48 px side-action canvas so the watering can and spout remain complete",
-    "keeper_pressups_side": "redrawn and body-axis-normalised without shrinking its canonical head/core depth",
+    "keeper_pressups_side": "redrawn cleanly, then resized to Frank's saved 79% width / 65% height",
     "keeper_fish_standing": "extended to 16 frames on a 96 by 88 interaction canvas with the float and fish below the foot anchor",
     "keeper_fish_seated": "extended to 16 frames on a 96 by 88 interaction canvas with the float and fish below the dock/foot anchor",
     "keeper_sit_front": "redrawn and width-normalised against canonical front body",
@@ -138,8 +142,8 @@ CORRECTED = {
     "keeper_bath_wash": "redrawn and normalised from the standing bare-headed and seated canonical landmarks",
     "keeper_hot_tub": "redrawn and normalised by the visible head/shoulder unit rather than the water silhouette",
     "keeper_place_cake": "redrawn for the standard 19 px table datum and a fully straight final pose",
-    "keeper_meal_place_side": "standard 19 px table datum; released plate edge restored in frames 7-8 without changing keeper scale",
-    "keeper_machete_side": "smooth machete restored in every frame; 64 px long-tool canvas prevents right-edge clipping without changing keeper scale",
+    "keeper_meal_place_side": "beard corrected and released plate restored; Frank's saved 113.5% width / 94% height is baked",
+    "keeper_machete_side": "smooth machete restored on an 80 px logical long-tool canvas; Frank's saved 127.5% width / 129% height is baked",
     "keeper_souwester_walk_side": "costume headwear excluded; skull, shoulder and sole landmarks normalised",
     "keeper_souwester_walk_front": "costume headwear excluded; skull, shoulder and sole landmarks normalised",
     "keeper_souwester_walk_back": "costume headwear excluded; skull, shoulder and sole landmarks normalised",
@@ -150,8 +154,16 @@ for _outfit in ("knight", "spaceman", "pirate", "mechanic"):
         CORRECTED[f"keeper_{_outfit}_walk_{_view}"] = "costume-specific headwear envelope excluded from skull-to-sole scale"
 
 for _view in ("side", "front", "back"):
-    CORRECTED[f"keeper_halloween_walk_{_view}"] = "rebuilt against the approved original skull-to-sole scale; cape bulk excluded from core anatomy"
-    CORRECTED[f"keeper_tarzan_walk_{_view}"] = "rebuilt to the approved original bare skull-to-sole scale on the standard 40 px actor canvas"
+    _halloween_review = REVIEW_SETTINGS.get(f"keeper_halloween_walk_{_view}", {})
+    _tarzan_review = REVIEW_SETTINGS.get(f"keeper_tarzan_walk_{_view}", {})
+    CORRECTED[f"keeper_halloween_walk_{_view}"] = (
+        "identity rebuilt against the approved original, then resized to Frank's saved "
+        f"{_halloween_review.get('widthPercent', 100)}% width / {_halloween_review.get('heightPercent', 100)}% height"
+    )
+    CORRECTED[f"keeper_tarzan_walk_{_view}"] = (
+        "bare-headed identity rebuilt against the approved original, then resized to Frank's saved "
+        f"{_tarzan_review.get('widthPercent', 100)}% width / {_tarzan_review.get('heightPercent', 100)}% height"
+    )
 
 
 def asset_name(path: Path) -> str:
@@ -357,34 +369,55 @@ def attach_original_comparisons(assets: list[dict]) -> dict:
             }
             continue
 
+        saved_review = REVIEW_SETTINGS.get(asset["name"])
+        user_sized = bool(saved_review) and (
+            saved_review.get("widthPercent", 100) != 100
+            or saved_review.get("heightPercent", 100) != 100
+        )
         direct = asset["name"] in DIRECT_SILHOUETTE_COMPARABLE
         direct_core = asset["name"] in DIRECT_CORE_COMPARABLE
         ratio = round(max(asset["alphaHeightRange"]) / original_height, 3) if direct else None
         core_difference = round(asset["medianTorsoScanWidthAt20"] - original_core_width, 2) if direct_core else None
         warnings = []
-        if direct and not 0.96 <= ratio <= 1.04:
+        if direct and not user_sized and not 0.96 <= ratio <= 1.04:
             warnings.append(
                 f"direct skull-to-sole silhouette is {ratio:.3f} of approved original; required 0.960-1.040"
             )
         core_tolerance = CONTRACT["canonicalAnatomy"]["tolerance"]["coreWidth"]
-        if direct_core and abs(core_difference) > core_tolerance:
+        if direct_core and not user_sized and abs(core_difference) > core_tolerance:
             warnings.append(
                 f"direct torso width differs by {core_difference:+.2f} logical px from approved original; required within ±{core_tolerance:.2f}"
             )
-        verdict = "failed" if warnings else "measured-and-visual-pass" if direct else "fixed-scale-visual-pass"
+        verdict = (
+            "failed" if warnings else
+            "user-visual-size-authority" if user_sized else
+            "measured-and-visual-pass" if direct else
+            "fixed-scale-visual-pass"
+        )
         asset["originalComparison"] = {
             "reference": ORIGINAL_KEEPER,
             "revision": AUDIT_REVISION,
-            "type": "direct-skull-to-sole" if direct else "articulated-landmark-at-fixed-scale",
+            "type": (
+                "user-reviewed-visual-sizing" if user_sized else
+                "direct-skull-to-sole" if direct else
+                "articulated-landmark-at-fixed-scale"
+            ),
             "verdict": verdict,
             "silhouetteHeightRatio": ratio,
             "torsoScanDifference": core_difference,
-            "visualReviewDate": "2026-10-09",
+            "visualReviewDate": "2026-10-10",
             "visualReviewBasis": (
+                f"Frank's saved visual sizing is authoritative: "
+                f"{saved_review.get('widthPercent', 100)}% width / {saved_review.get('heightPercent', 100)}% height"
+                if user_sized else
                 "same-size original reference printed beside representative frames; "
                 "skull/head unit, shoulder-to-hip core width and supporting contacts reviewed"
             ),
             "warnings": warnings,
+            "reviewScale": (
+                [saved_review.get("widthPercent", 100), saved_review.get("heightPercent", 100)]
+                if user_sized else None
+            ),
         }
         failures.extend((asset["name"], warning) for warning in warnings)
     return {"asset": original, "alphaHeight": original_height, "failures": failures}
@@ -455,7 +488,7 @@ def publish(assets: list[dict]) -> None:
             "source": original_audit["asset"]["source"],
             "approvedAlphaHeight": original_audit["alphaHeight"],
             "approvedMedianTorsoScanWidthAt20": original_audit["asset"]["medianTorsoScanWidthAt20"],
-            "rule": "Every accepted sheet is compared with this untouched original at identical fixed scale; direct silhouettes additionally pass a 0.960-1.040 skull-to-sole ratio gate.",
+            "rule": "Every delivered sheet is compared with this untouched identity/anatomy reference at native logical display scale. Frank's saved visual resize is authoritative; only directly comparable sheets without a saved resize must pass the 0.960-1.040 ratio gate.",
         },
         "rules": CONTRACT["measurementPolicy"],
         "canonicalAnatomy": CONTRACT["canonicalAnatomy"],
@@ -630,7 +663,7 @@ def publish(assets: list[dict]) -> None:
             "sittingFront": review_clip(reviewed_by_name["keeper_sit_front"]),
             "sittingBack": review_clip(reviewed_by_name["keeper_sit_back"]),
         },
-        "reviewRevision": "2026-10-09-production-pass-v1",
+        "reviewRevision": "2026-10-10-corrective-production-pass-v2",
         "initialReviews": initial_reviews,
         "assets": review_assets,
     }
@@ -656,20 +689,20 @@ def publish(assets: list[dict]) -> None:
             change = "New or previously unreviewed production animation"
         elif imported.get("happy"):
             classification = "keep"
-            decision = "Retain accepted animation"
-            change = "Accepted scale/cadence baked; no redraw"
+            decision = codex_responses.get(asset["name"], "Retain accepted animation")
+            change = "Frank's accepted visual scale and cadence are baked into production"
         elif imported.get("reviewLater"):
             classification = "decision-needed"
             decision = codex_responses.get(asset["name"], "Deferred exactly as requested")
             change = "No production redraw until deferred decision"
         elif imported.get("redraftRequested"):
             classification = "rebuild"
-            decision = codex_responses.get(asset["name"], "Rebuilt from corrected or newly generated source")
-            change = asset["note"]
+            decision = "Rebuilt and ready for Frank's verdict"
+            change = codex_responses.get(asset["name"], asset["note"])
         else:
             classification = "fix"
-            decision = codex_responses.get(asset["name"], "Implemented as requested")
-            change = asset["note"]
+            decision = "Changed and ready for Frank's verdict"
+            change = codex_responses.get(asset["name"], asset["note"])
         verification = (
             "Retained; full audit" if asset["reviewStatus"] == "happy" else
             "Deferred; unchanged" if asset["reviewStatus"] == "review-later" else
@@ -698,7 +731,7 @@ def publish(assets: list[dict]) -> None:
     lines = [
         "# Keeper scale audit",
         "",
-        "This is the permanent, reproducible audit of every keeper sheet against the untouched approved original `keeper_walk`. It deliberately does **not** use the outer silhouette as character scale except for the small set of directly comparable full-body walks: hats, tools, raised arms, water and furniture can change that box without changing the keeper.",
+        "This is the permanent, reproducible audit of every keeper sheet against the untouched approved original `keeper_walk`. Frank's saved visual width and height are the production sizing authority; the original remains the identity, anatomy and contact reference. The audit deliberately does **not** use the outer silhouette as character scale except for directly comparable full-body walks that Frank has not visually resized: hats, tools, raised arms, water and furniture can change that box without changing the keeper.",
         "",
         f"- {payload['counts']['allSheets']} keeper sheets inspected.",
         f"- {payload['counts']['reviewedAnimationSheets']} animation sheets accepted for review; {payload['counts']['technicalRejectedSheets']} obsolete modular/reference sheets excluded.",
@@ -710,14 +743,14 @@ def publish(assets: list[dict]) -> None:
         "",
         "## Measurement method",
         "",
-        "The approved original is printed first in every contact-sheet row at exactly the same scale as the tested frames. Directly comparable walks must measure 0.960–1.040 of the original skull-to-sole silhouette; unobscured side walks must also remain within 1 logical pixel of its median 20 px-above-floor torso scan, or the command fails. Other upright poses use inferred skull-to-supporting-sole height. Costumes use the face/ear/neck structure to infer the skull under hats and helmets. Seated and crouched poses use the head unit plus shoulder–hip–sole chain. Swimming, press-ups and other horizontal poses use the same articulated chain along the body axis. A skin-colour face proxy is also recorded where visible as a machine-checkable warning signal; it is not allowed to overrule the anatomical method.",
+        "The approved original is printed first in every contact-sheet row. Frank's saved width/height choice is shown at its delivered production size and is never failed for disagreeing with an automatic ratio. Directly comparable walks without a saved visual resize must measure 0.960–1.040 of the original skull-to-sole silhouette; unobscured side walks without a saved visual resize must also remain within 1 logical pixel of its median 20 px-above-floor torso scan, or the command fails. Other upright poses use inferred skull-to-supporting-sole height. Costumes use the face/ear/neck structure to infer the skull under hats and helmets. Seated and crouched poses use the head unit plus shoulder–hip–sole chain. Swimming, press-ups and other horizontal poses use the same articulated chain along the body axis. A skin-colour face proxy is recorded as evidence only and cannot overrule Frank's visual sizing.",
         "",
         "## Interactive comparison",
         "",
         f"Open [the sizing and transition review](review.html) to inspect all {payload['counts']['reviewedAnimationSheets']} accepted animations beside the untouched `keeper_walk` authority. Review-state filters cover Needs my input, Happy, Awaiting new draft review, Review later, Unreviewed and Has Codex response. In focused mode Previous/Next and the Left/Right keys stay inside the selected filter and wrap from its final result to its first.",
-        "The pinned reference can show canonical standing side/front/back or sitting side/front/back. The sitting endpoint's measured 9.75 × 6.5 face proxy exactly matches the standing reference frame. In upright standard-cap poses the gold badge crossing the blue skull-top guide is a calibrated visual proxy; tilted, bent, seated, crouched, horizontal, bare-headed and alternate-headwear poses still require anatomical landmarks.",
+        "The pinned reference can show standing side/front/back or sitting side/front/back identity ghosts. These fixed ghosts are anatomy comparisons, not a replacement for each reviewed clip's saved production size. In upright standard-cap poses the gold badge crossing the blue skull-top guide is a calibrated visual proxy; tilted, bent, seated, crouched, horizontal, bare-headed and alternate-headwear poses still require anatomical landmarks.",
         "Each card retains precise size, position, rotation, opacity, ghost, frame-step and 1–20fps timing controls. The imported production pass starts those viewer transforms at neutral because accepted geometry and cadence are already baked into the delivered sprite and manifest. Comparison settings remain visual aids until saved/exported as a later review proposal.",
-        "Every card has Frank's notes and decision controls plus a read-only Codex response field. That field is blank where no qualification was needed and briefly explains any interpretation or canonical-contract override elsewhere. Orange cards have unsaved changes; saved happy, new-draft and later-review cards use distinct status colours.",
+        "Every card has Frank's notes and decision controls plus a read-only Codex response field. Every Awaiting new draft review card has a specific response naming the delivered change; responses also state any genuine qualification rather than implying that an unmade change was completed. Orange cards have unsaved changes; saved happy, new-draft and later-review cards use distinct status colours.",
         "`keeper-scale-choices.json` version 9 exports the complete review register, current review status and Codex response for every animation as well as any new per-card proposals. Export remains blocked while a card has unsaved edits. The page can also prepend matching walks, insert known bridges or freeze a seam with onion skin; every card prints its runtime PNG and authored source-strip filename.",
         "The character-width and character-height sliders each have adjacent −0.5% and +0.5% buttons for precise adjustments. They update the same per-animation values, obey the same 50%–150% limits and become part of the normal Save/export workflow.",
         "Every blue animation-transform slider also has −0.5/+0.5 buttons: degrees for rotation, logical pixels for horizontal/vertical position and percentage points for opacity. They update the same limited, saved and exported values as their sliders.",

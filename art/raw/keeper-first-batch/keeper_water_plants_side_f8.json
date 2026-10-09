@@ -17,5 +17,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "water-plants",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    114.5,
+    96.5
+  ],
+  "reviewOffset": [
+    1.5,
+    0
+  ]
 }

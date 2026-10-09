@@ -1,6 +1,6 @@
 # Keeper animation handoff: review, scale and seamless transitions
 
-**Checkpoint:** 9 October 2026
+**Checkpoint:** 10 October 2026
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
 
@@ -8,25 +8,27 @@ Codex task should be able to continue from here without relying on the old chat.
 
 1. Read this document in full.
 2. Open `docs/keeper-scale-audit/review.html`. A dedicated panel first shows
-   the untouched `keeper_walk` scale authority, followed by all 173 accepted
+   the untouched `keeper_walk` identity/anatomy baseline, followed by all 173 accepted
    clips at one unchanged relative scale in filename order. Filter the register
    by Needs my input, Happy, Awaiting new draft review, Review later,
    Unreviewed or Has Codex response. Switch View to `One animation at a time`
    for a much larger card. Previous/Next and Left/Right stay inside the active
    filter and wrap from its final result to its first. A compact reference stays
    pinned alongside; standing side/front/back and sitting side/front/back
-   canons are available. The sitting endpoint has the same measured 9.75 × 6.5
-   face proxy as the standing reference.
-3. Every card has a read-only Codex response field. It is intentionally blank
-   when Frank's comment needed no qualification. Where an interpretation or
-   contract conflict mattered, it gives the brief production response without
-   changing Frank's saved note.
+   canons are available. These are fixed identity/anatomy comparison ghosts;
+   they do not replace the saved production size of the reviewed clip.
+3. Every card has a read-only Codex response field. All 70 `Awaiting new draft
+   review` cards have a specific narrative naming the delivered production
+   change. Any genuine qualification is stated explicitly; a generic response
+   is not evidence that work was completed.
 4. Frank's supplied export is preserved byte-for-byte at
    `docs/review/frank-keeper-animation-review-2026-10-09.json`; do not edit or
    replace it. The complete 173-row disposition is
    `docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-09.md`, and agent
    responses live separately in
    `docs/review/keeper-animation-codex-responses-2026-10-09.json`.
+   The corrective 70-card verification is recorded in
+   `docs/review/KEEPER_ANIMATION_AWAITING_INPUT_AUDIT_2026-10-10.md`.
 5. The display-size slider magnifies the reviewed stage from 1× to 12× without
    changing art. Global controls pause/play everything and apply pose-aware
    comparison ghosts.
@@ -56,9 +58,10 @@ Codex task should be able to continue from here without relying on the old chat.
 7. Record every new comment by exact `keeper_*` filename before changing art.
    Triage it as `keep`, `fix`, `rebuild`, `delete`, or `decision needed`, and
    distinguish an art fault from a missing transition or missing object.
-8. Resolve comments and transition gaps against the untouched
-   `keeper_walk` reference. Never scale or redraw the keeper merely to fit a
-   canvas, prop, costume or object.
+8. Resolve identity, anatomy and transition gaps against the untouched
+   `keeper_walk` reference. Frank's saved visual width and height are the final
+   production sizing instruction and must not be overruled by automatic
+   measurement. Never resize merely to fit a canvas, prop, costume or object.
 9. Rebuild, publish and rerun the complete all-sheet audit after every keeper
    art pass. It must finish with zero failures.
 
@@ -106,12 +109,13 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 
 ### Identity and scale
 
-- `keeper_walk` is the untouched and approved keeper. It is the primary scale
-  and identity reference. The old modular parts and `keeper_reference` are not
-  production references.
-- Every frame in every clip must depict the same man at the same world scale:
-  the same skull size, head/face, beard, shoulder-to-hip body, fatness, hand
-  size and boot size. Perspective does not change his size in this game.
+- `keeper_walk` is the untouched identity and baseline anatomy reference. The
+  old modular parts and `keeper_reference` are not production references.
+  Frank's saved review width/height is authoritative for the delivered size of
+  each reviewed clip, including accepted costume families and redrafts.
+- Every frame in a clip must depict the same man consistently: the same
+  head/face, beard, shoulder-to-hip body, fatness, hand size and boot size.
+  Perspective does not create an unrequested within-clip size change.
 - Beard length and silhouette are identity-locked, not pose-dependent styling.
   Match the beard root, lower edge, width and chin relationship to the approved
   `keeper_walk` identity at the nearest comparable facing/head angle. Do not
@@ -124,16 +128,20 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   left- or right-facing clip (including mirrored, seated, reclined and
   head-tilted poses) for this silhouette; nominally correct beard height alone
   is not sufficient.
-- The corridor is effectively a flat, front-of-screen movement plane. The
-  keeper remains the same height and width everywhere.
+- The corridor is effectively a flat, front-of-screen movement plane. Use the
+  reviewed production size for each clip; do not add runtime perspective
+  scaling unless a transition explicitly requires it.
 - Measure the anatomical keeper, not the outer alpha box. Hats, helmets,
   sou'westers, raised arms, tools, props, water, furniture and privacy effects
   do not count toward body scale.
-- Canonical measurements are locked in `data/keeper_asset_contract.json` and
-  explained in `docs/KEEPER_ASSET_SCALE.md`: inferred skull top 32.5 logical
+- Baseline anatomical measurements are locked in
+  `data/keeper_asset_contract.json` and explained in
+  `docs/KEEPER_ASSET_SCALE.md`: inferred skull top 32.5 logical
   pixels above the supporting sole, shoulders 24.5, hips 14.5, side core depth
   13, front/rear core width 19, head width 14.5, hand diameter 4 and boot length
   8. Landmark tolerance is 0.5 logical pixel; core-width tolerance is 1 pixel.
+  These measurements diagnose source-art identity drift; they do not overrule
+  Frank's saved visual resize.
 - For an upright keeper wearing the normally seated standard cap, the gold cap
   badge crossing the blue skull-top guide is a calibrated, easy visual proxy.
   It is not valid for head tilt, bending, sitting, crouching, horizontal poses,
@@ -142,11 +150,13 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   frames. Do not redraw the keeper because his clothing or prop changes. A new
   drawing is justified only by a genuinely new body pose; it must then pass the
   complete anatomy and identity audit.
-- Never shrink him to fit a long pose or prop. Expand the transparent canvas.
+- Never shrink him merely to fit a long pose or prop. Expand the transparent
+  canvas, then apply Frank's saved visual size as a separate final instruction.
   This is the rule used for swimming, press-ups, fishing, weights, parachuting,
   diving, records, watering cans and long tools.
-- The keeper is the ruler for the world. Objects move or change size to meet his
-  interaction points; the keeper is never resized to meet an object.
+- The keeper's reviewed production pose is the ruler for the world. Objects
+  move or change size to meet its transformed interaction points; automatic
+  object fitting must never replace Frank's visual size.
 
 ### Transitions
 
@@ -196,9 +206,11 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 - Imported review state is 88 Happy, 70 Awaiting new draft review, 3 Review
   later and 12 Unreviewed. “Awaiting new draft review” means the requested
   production work is now present and awaits Frank's verdict.
-- The 13 directly comparable full-body families are constrained to a
-  0.960–1.040 skull-to-sole ratio; unobscured side torsos must be within one
-  logical pixel of the original torso scan.
+- Directly comparable full-body families without a saved visual resize are
+  constrained to a 0.960–1.040 skull-to-sole ratio; unobscured side torsos
+  without a saved visual resize must be within one logical pixel of the
+  original torso scan. Reviewed sizing is recorded as
+  `user-visual-size-authority`, not failed by this automatic gate.
 - The permanent evidence is in `docs/keeper-scale-audit/`: nine fixed-scale
   contact sheets, `keeper-scale-metrics.json`, `keeper-scale-summary.csv` and
   the unified review page.
@@ -425,13 +437,13 @@ evidence, not final acceptance.
 - Striped swimsuit: `keeper_swim_costume_down`,
   `keeper_swim_costume_horizontal`, `keeper_swim_costume_up`.
 
-The artist-smock family now has its canonical-height walk, front/rear turns and
+The artist-smock family now has its reviewed-size walk, front/rear turns and
 front sit/stand bridge. For winter/workout clothing, author canonical-overlay
 neutral and walking/turning coverage where he traverses visible room space.
 
 ### Garden shed and lawn mower route
 
-`keeper_lawn_mower_push` is an eight-frame, standard-uniform, canonical-height
+`keeper_lawn_mower_push` is an eight-frame, standard-uniform, baseline-anatomy
 right-facing loop; runtime mirroring supplies left. The manual reel mower is
 part of the animated strip so wheel/step timing cannot drift. The shed is not
 baked into the sprite: start the complete moving unit behind the shed door's
@@ -441,7 +453,7 @@ the keeper and mower have cleared the doorway.
 ### Cleaning cupboard and three-tier tool route
 
 The `broom` upgrade family now selects one of three eight-frame,
-standard-uniform, canonical-height right-facing loops; runtime mirroring
+standard-uniform, baseline-anatomy right-facing loops; runtime mirroring
 supplies left:
 
 - tier 1 `keeper_sweep_broom`, with a traditional wooden broom;

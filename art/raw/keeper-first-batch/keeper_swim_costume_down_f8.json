@@ -16,5 +16,13 @@
   ],
   "outfit": "striped-swimming-costume",
   "facing": "down",
-  "interaction": "swim"
+  "interaction": "swim",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

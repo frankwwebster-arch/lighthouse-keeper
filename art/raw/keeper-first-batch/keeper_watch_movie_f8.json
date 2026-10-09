@@ -25,5 +25,13 @@
   "mirrorSafe": true,
   "facing": "rear-right",
   "interaction": "watch-movie-popcorn",
-  "mirrorsFor": "rear-left"
+  "mirrorsFor": "rear-left",
+  "reviewScale": [
+    100,
+    101
+  ],
+  "reviewOffset": [
+    3.5,
+    0
+  ]
 }

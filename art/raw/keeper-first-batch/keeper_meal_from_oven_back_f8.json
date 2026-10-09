@@ -1,19 +1,27 @@
 {
-  "w": 48,
+  "w": 52,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    24,
-    40
+    26.0,
+    40.0
   ],
   "z": 50,
   "loop": false,
   "handUsePoint": [
-    24,
-    30
+    26.0,
+    30.0
   ],
   "facing": "back",
-  "interaction": "retrieve-meal-from-oven"
+  "interaction": "retrieve-meal-from-oven",
+  "reviewScale": [
+    107,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

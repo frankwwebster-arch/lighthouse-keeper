@@ -19,5 +19,13 @@
   "mirrorSafe": true,
   "facing": "front-right",
   "interaction": "play-guitar",
-  "mirrorsFor": "front-left"
+  "mirrorsFor": "front-left",
+  "reviewScale": [
+    100,
+    97.5
+  ],
+  "reviewOffset": [
+    3.5,
+    0
+  ]
 }

@@ -11,5 +11,13 @@
   "z": 50,
   "loop": true,
   "facing": "front",
-  "interaction": "emote-sad"
+  "interaction": "emote-sad",
+  "reviewScale": [
+    95.5,
+    100.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

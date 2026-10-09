@@ -18,5 +18,13 @@
     25.16,
     17.27
   ],
-  "mirrorSafe": true
+  "mirrorSafe": true,
+  "reviewScale": [
+    102,
+    101
+  ],
+  "reviewOffset": [
+    0,
+    0.5
+  ]
 }

@@ -1,12 +1,12 @@
 {
-  "w": 32,
+  "w": 34,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    16,
-    40
+    18.0,
+    40.0
   ],
   "z": 50,
   "loop": false,
@@ -23,5 +23,13 @@
     -6
   ],
   "facing": "back-to-front",
-  "interaction": "enter-lift"
+  "interaction": "enter-lift",
+  "reviewScale": [
+    104,
+    100
+  ],
+  "reviewOffset": [
+    -1,
+    0
+  ]
 }

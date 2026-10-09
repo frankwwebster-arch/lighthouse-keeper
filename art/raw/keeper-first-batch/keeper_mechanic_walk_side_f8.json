@@ -5,8 +5,8 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    16,
-    48
+    16.0,
+    48.0
   ],
   "z": 50,
   "loop": true,
@@ -18,5 +18,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "mechanic-walk",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    94,
+    98.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

@@ -17,5 +17,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "clean-aquarium",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    122.5,
+    121
+  ],
+  "reviewOffset": [
+    1.5,
+    0
+  ]
 }

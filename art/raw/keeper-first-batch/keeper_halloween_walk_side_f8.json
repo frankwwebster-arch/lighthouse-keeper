@@ -1,12 +1,12 @@
 {
-  "w": 32,
+  "w": 35,
   "h": 48,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    16,
-    48
+    19.0,
+    48.0
   ],
   "z": 50,
   "loop": true,
@@ -18,5 +18,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "halloween-walk",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    101,
+    88
+  ],
+  "reviewOffset": [
+    -2,
+    0
+  ]
 }

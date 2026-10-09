@@ -1,12 +1,12 @@
 {
-  "w": 40,
+  "w": 57,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    20,
-    40
+    28.0,
+    40.0
   ],
   "z": 50,
   "loop": false,
@@ -18,5 +18,13 @@
   "mirrorSafe": true,
   "facing": "back",
   "interaction": "enter-shower-cubicle",
-  "mirrorsFor": "rear-left"
+  "mirrorsFor": "rear-left",
+  "reviewScale": [
+    140.5,
+    90.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

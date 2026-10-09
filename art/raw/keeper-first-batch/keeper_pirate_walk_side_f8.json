@@ -18,5 +18,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "pirate-walk",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    87.5,
+    95.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

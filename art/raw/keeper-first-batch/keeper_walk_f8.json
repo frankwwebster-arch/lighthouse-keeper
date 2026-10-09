@@ -10,5 +10,13 @@
   ],
   "z": 50,
   "loop": true,
-  "mirrorSafe": true
+  "mirrorSafe": true,
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

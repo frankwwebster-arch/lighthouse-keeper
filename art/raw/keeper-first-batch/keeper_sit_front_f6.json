@@ -5,14 +5,22 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    16,
-    40
+    16.0,
+    40.0
   ],
   "z": 50,
   "loop": false,
   "seatPoint": [
-    16,
-    29
+    16.0,
+    29.22
   ],
-  "reverseFor": "stand_front"
+  "reverseFor": "stand_front",
+  "reviewScale": [
+    100,
+    98
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

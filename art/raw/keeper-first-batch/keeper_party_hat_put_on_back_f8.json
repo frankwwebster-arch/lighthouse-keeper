@@ -17,5 +17,13 @@
   "outfit": "party-hat-transition",
   "reverseFor": "party-hat-remove-back",
   "facing": "back",
-  "interaction": "put-on-party-hat"
+  "interaction": "put-on-party-hat",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

@@ -1,17 +1,25 @@
 {
-  "w": 48,
+  "w": 67,
   "h": 84,
   "frames": 9,
   "fps": 4,
   "density": 4,
   "anchor": [
-    24,
-    84
+    36.0,
+    84.0
   ],
   "z": 50,
   "loop": false,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "parachute-jump",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    139,
+    87.5
+  ],
+  "reviewOffset": [
+    -2.5,
+    0
+  ]
 }

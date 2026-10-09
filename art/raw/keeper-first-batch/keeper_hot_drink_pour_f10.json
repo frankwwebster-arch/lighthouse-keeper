@@ -1,21 +1,29 @@
 {
-  "w": 48,
+  "w": 54,
   "h": 40,
   "frames": 10,
   "fps": 4,
   "density": 4,
   "anchor": [
-    24,
-    40
+    24.0,
+    40.0
   ],
   "z": 50,
   "loop": false,
   "handUsePoint": [
-    40,
-    28
+    45.46,
+    28.36
   ],
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "pour-hot-drink",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    106,
+    97
+  ],
+  "reviewOffset": [
+    4.5,
+    0
+  ]
 }

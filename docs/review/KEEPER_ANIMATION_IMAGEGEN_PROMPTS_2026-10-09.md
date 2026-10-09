@@ -21,9 +21,10 @@ Every request included the same core constraints:
 
 The closest supplied production/reference art was included where the request
 needed a particular outfit, facing or endpoint. Prompts asked for pose
-continuity, not a new character design. `keeper_walk` and canonical sitting
-references remained the production scale authorities even when generated source
-spacing or proportions needed deterministic correction.
+continuity, not a new character design. `keeper_walk` and the sitting references
+remained the source-art identity and anatomy references. Frank's saved review
+width and height are a separate final production instruction applied after
+source normalisation; automatic measurements do not overrule them.
 
 ## Final source briefs
 
@@ -64,3 +65,35 @@ from the deployed jump endpoint, and its neutral frame was inserted as the
 landing start. A generated crouch replacement was rejected because of opaque
 white artefacts; the existing source remained and its faulty frame was repaired
 deterministically instead.
+
+## Corrective source pass — 2026-10-10
+
+The first production pass was re-audited at final-strip level after Frank found
+that several cards described changes which were not visible in the delivered
+animation. The following sources were replaced or corrected. Every prompt used
+the closest canonical facing as an identity reference, retained the requested
+action and props, required isolated poses with no neighbouring-frame leakage,
+and left Frank's saved width and height for deterministic authoring.
+
+| Source file | Corrective brief |
+|---|---|
+| `keeper-bath-enter-generated-source.png`, `keeper-bath-exit-generated-source.png` | Re-render all towel-covered poses with the standard eyebrows and stepped/ragged side beard; preserve opaque privacy and action direction. |
+| `keeper-carry-shopping-generated-source.png` | Exactly two arms and two hands in every pose, one hand carrying each shopping bag; no third hand. |
+| `keeper-clear-snow-generated-source.png` | Preserve the coat/shovel motion but replace the rounded beard with the longer stepped silhouette. |
+| `keeper-crouch-work-back-generated-source.png` | Canonical rear collar and cream band; the middle working hand remains visibly in front. This source also repairs egg collection and box search. |
+| `keeper-fish-sit-generated-source.png`, `keeper-fish-stand-generated-source.png` | Long waiting, pull-back and reeling progression before the catch; float and fish below foot level; complete rods, lines and catches. Eighteen isolated source poses are deterministically reduced to 16 production frames by removing two duplicate waiting holds. |
+| `keeper-hot-drink-pour-generated-source.png` | Ten ordered poses; mug continuously in the right hand, kettle manipulated by the left, stream only during the middle pour. |
+| `keeper-snooker-generated-source.png` | Eight isolated poses with a complete cue on the correct side and a coherent second pose. |
+| `keeper-lean-table-generated-source.png`, `keeper-water-back-generated-source.png` | Restore the standard rear collar and gentle U-shaped cream jumper band. |
+| `keeper-pick-vegetable-generated-source.png`, `keeper-place-cake-generated-source.png`, `keeper-platform-dive-generated-source.png`, `keeper-stairs-down-generated-source.png` | Correct the facing-appropriate beard silhouette while preserving the complete action and props. |
+| `keeper-pyjamas-turn-back-light-blue-generated-source.png`, `keeper-pyjamas-walk-light-blue-generated-source.png` | Restore the standard face/hair and stepped side beard while preserving the pyjama family. |
+| `keeper-souwester-walk-front-generated-source.png`, `keeper-souwester-walk-side-generated-source.png` | Correct front identity and side beard under the existing sou'wester outfit. |
+| `keeper-spaceman-front-generated-source.png` | Restore the standard front face and beard inside the existing helmet. |
+| `keeper-tarzan-back-generated-source.png`, `keeper-tarzan-front-generated-source.png` | Restore a full white-haired crown and standard front identity; no bald patch. |
+| `keeper-trampoline-front-generated-source.png` | Shorter beard; deterministic authoring supplies the substantially higher jump arc. |
+| `keeper-water-front-generated-source.png`, `keeper-water-side-generated-source.png` | Correct front face and stepped side beard while retaining the full watering can and pour progression. |
+
+The same pass replaced equal-cell slicing wherever it damaged fishing,
+hot-drink, snooker, scuba, saw, record and meal-placement frames. Final runtime
+strips—not merely source filenames—were inspected for complete actors, props
+and clean cell boundaries.

@@ -12,5 +12,13 @@
   "loop": true,
   "outfit": "mosaic-privacy",
   "facing": "back",
-  "interaction": "wash-in-shower"
+  "interaction": "wash-in-shower",
+  "reviewScale": [
+    125.5,
+    98
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

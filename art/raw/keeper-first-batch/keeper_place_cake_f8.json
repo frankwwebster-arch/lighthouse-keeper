@@ -17,5 +17,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "place-cake-on-table",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    119.5,
+    96
+  ],
+  "reviewOffset": [
+    2.5,
+    0
+  ]
 }

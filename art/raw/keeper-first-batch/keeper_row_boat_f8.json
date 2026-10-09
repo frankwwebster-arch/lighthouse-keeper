@@ -21,5 +21,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "row-boat",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    114,
+    109
+  ],
+  "reviewOffset": [
+    4,
+    2
+  ]
 }

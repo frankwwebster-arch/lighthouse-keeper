@@ -5,15 +5,23 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    16,
-    40
+    16.0,
+    40.0
   ],
   "z": 50,
   "loop": false,
   "seatPoint": [
-    16,
-    29
+    16.0,
+    29.44
   ],
   "reverseFor": "stand_side",
-  "mirrorSafe": true
+  "mirrorSafe": true,
+  "reviewScale": [
+    97.5,
+    96
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

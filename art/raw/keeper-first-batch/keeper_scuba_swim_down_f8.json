@@ -16,5 +16,13 @@
   ],
   "outfit": "scuba",
   "facing": "down",
-  "interaction": "scuba-swim"
+  "interaction": "scuba-swim",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

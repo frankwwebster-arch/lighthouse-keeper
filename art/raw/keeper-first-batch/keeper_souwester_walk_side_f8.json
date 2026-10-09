@@ -18,5 +18,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "souwester-walk",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    93.5
+  ],
+  "reviewOffset": [
+    -0.5,
+    0
+  ]
 }

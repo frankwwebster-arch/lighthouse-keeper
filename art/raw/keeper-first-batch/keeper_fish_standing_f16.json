@@ -1,21 +1,29 @@
 {
-  "w": 96,
+  "w": 101,
   "h": 88,
   "frames": 16,
   "fps": 4,
   "density": 4,
   "anchor": [
-    48,
-    56
+    48.0,
+    56.0
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    80,
-    32
+    85.0,
+    33.08
   ],
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "fish-and-reel",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    95.5
+  ],
+  "reviewOffset": [
+    5,
+    0
+  ]
 }

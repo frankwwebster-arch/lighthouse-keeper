@@ -60,7 +60,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Sow seeds | `keeper_sow_seeds` | right; mirror left; pouch included, bed separate |
 | Pick vegetables | `keeper_pick_vegetable` | low harvest point; right; mirror left |
 | Pick fruit | `keeper_pick_fruit` | high harvest point; right; mirror left |
-| Carry shopping | `keeper_carry_shopping` | two-bag walk; right; mirror left |
+| Carry shopping | `keeper_carry_shopping` | corrected two-bag walk with exactly two hands, one on each bag; right; mirror left |
 | Row boat | `keeper_row_boat` | seated; two oars included; hull/water separate |
 | Climb into boat | `keeper_boat_enter` | right; fixed gunwale `(39,23)` and bench `(36,35)`; hull/dock separate; mirror left |
 | Climb out of boat | `keeper_boat_exit` | front-right; independent weight transfer; same gunwale/bench; mirror left |
@@ -86,7 +86,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Swim left/right | `keeper_swim_costume_horizontal` | striped costume; right; mirror left; 80 × 48 canonical-scale horizontal canvas |
 | Swim up | `keeper_swim_costume_up` | striped costume; direct rear view |
 | Swim down | `keeper_swim_costume_down` | striped costume; direct front view |
-| Scuba swim left/right | `keeper_scuba_swim_horizontal` | right; mirror left; 80 × 48 canonical-scale horizontal canvas; bubbles separate |
+| Scuba swim left/right | `keeper_scuba_swim_horizontal` | re-rendered right-facing cycle; mirror left; 80 × 48 staging canvas with Frank's 81% × 86% reviewed size; bubbles separate |
 | Scuba swim up | `keeper_scuba_swim_up` | direct rear view; bubbles separate |
 | Scuba swim down | `keeper_scuba_swim_down` | direct front view; bubbles separate |
 | Walk along jetty in scuba gear | `keeper_scuba_walk_side` | 8-frame right-facing scuba locomotion; mirror left; fins, tank, mask and regulator remain coherent |
@@ -141,7 +141,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Play snooker | `keeper_snooker` | right; mirror left; cue included, table/balls separate |
 | Play table tennis | `keeper_table_tennis` | right; mirror left; paddle/ball included, table separate |
 | Throw darts | `keeper_darts` | 14 frames with added aim holds; right; mirror left; dart included, board separate |
-| Bounce on trampoline | `keeper_trampoline_front` | front; old-school workout kit; trampoline separate |
+| Bounce on trampoline | `keeper_trampoline_front` | front; old-school workout kit; shorter beard and high 80 px action arc; trampoline separate |
 | Lift weights | `keeper_lift_weights_back` | rear overhead press; old-school workout kit; barbell included; 48 × 56 overhead canvas preserves body scale |
 | Do press-ups | `keeper_pressups_side` | right; mirror left; old-school workout kit; 64 × 40 canvas; canonical head/core depth and 47–52 px articulated body-axis envelope |
 | Float in anti-gravity | `keeper_anti_gravity` | 12-frame expanded-canvas loop; four prone float frames precede the goggle-wearing backward somersault; no parachute; room may add wider drift/circling translation |
@@ -164,8 +164,8 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Ten-pin bowling | `keeper_bowling` | right; mirror left; ball included, lane/pins separate |
 | Play video game | `keeper_video_game` | rear-right with controller; mirror rear-left; TV/seat separate |
 | Water plants | `keeper_water_plants_side` / `keeper_water_plants_back` / `keeper_water_plants_front` | side uses 48 × 40 and mirrors left; can/stream included and edge-safe; plants separate |
-| Fish standing | `keeper_fish_standing` | 16 frames; right; mirror left; 96 × 88 canvas keeps the actor at canonical scale while retaining the full rod, line, float and catch below the feet anchor |
-| Fish seated | `keeper_fish_seated` | 16 frames; right; mirror left; 96 × 88 canvas; seat/water separate; full cast/reel/catch cycle retained |
+| Fish standing | `keeper_fish_standing` | corrected 16-frame wait/pull/reel/catch sequence; right; mirror left; starts from 96 × 88 staging with line, float and catch below the feet anchor; Frank's 100% × 95.5% size is baked |
+| Fish seated | `keeper_fish_seated` | corrected 16-frame wait/pull/reel/catch sequence; right; mirror left; seat/water separate; Frank's 139% × 130% size expands the delivered staging canvas to 135 × 115 |
 | Collect eggs | `keeper_collect_eggs_back` | canonical low rear work loop; basket, eggs and coop are separate aligned objects |
 | Enter / wash / exit bath | `keeper_bath_enter`, `keeper_bath_wash`, `keeper_bath_exit` | entry/exit towel; wash has opaque mosaic/foam privacy coverage; bath separate |
 | Enter / wash / exit shower | `keeper_shower_enter`, `keeper_shower_wash`, `keeper_shower_exit` | entry/exit towel; wash has opaque mosaic privacy coverage; shower separate |

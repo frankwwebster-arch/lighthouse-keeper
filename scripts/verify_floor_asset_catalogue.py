@@ -72,16 +72,21 @@ assert floor_contracts["room_lamp"]["w"] == 95
 keeper_pngs = sorted(KEEPER_DIR.glob("*.png"))
 assert len(keeper_pngs) == 191
 keeper_names = set()
+keeper_sidecars = {}
 for raw_path in keeper_pngs:
     sidecar = json.loads(raw_path.with_suffix(".json").read_text())
     name = raw_path.stem.rsplit("_f", 1)[0]
     keeper_names.add(name)
+    keeper_sidecars[name] = sidecar
     raw = Image.open(raw_path).convert("RGBA")
     assert raw.size == (
         sidecar["w"] * sidecar["density"] * sidecar["frames"],
         sidecar["h"] * sidecar["density"],
     ), name
-    assert 16 <= sidecar["w"] <= 128 and 16 <= sidecar["h"] <= 96
+    # Frank's saved production scaling may expand the transparent staging
+    # canvas beyond the old automatic-audit ceiling (seated fishing is the
+    # largest current example at 135 × 115 logical pixels).
+    assert 16 <= sidecar["w"] <= 160 and 16 <= sidecar["h"] <= 128
     assert sidecar["density"] == 4
     assert 0 <= sidecar["anchor"][0] <= sidecar["w"]
     assert 0 <= sidecar["anchor"][1] <= sidecar["h"]
@@ -134,6 +139,20 @@ for name in keeper_names:
     if clip["frames"] > 1:
         assert clip["fps"] == accepted_fps.get(name, 4), (name, clip["fps"])
 
+# Frank's saved visual sizing is production art direction. Every imported
+# review must be recorded byte-for-byte in the authored sidecar so a future
+# scale audit cannot silently replace it with an automatic measurement.
+review_export = json.loads(
+    (ROOT / "docs/review/frank-keeper-animation-review-2026-10-09.json").read_text()
+)
+for review in review_export["reviews"]:
+    sidecar = keeper_sidecars[review["name"]]
+    assert sidecar["reviewScale"] == [
+        review.get("widthPercent", 100),
+        review.get("heightPercent", 100),
+    ], review["name"]
+    assert sidecar["fps"] == review.get("animationFps", sidecar["fps"]), review["name"]
+
 # Rebuilt and newly introduced production sequences.
 required_frames = {
     "keeper_anti_gravity": 12,
@@ -153,15 +172,10 @@ required_frames = {
 for name, frames in required_frames.items():
     assert manifest[name]["frames"] == frames, name
 
-# Immutable scale and seated authorities are deliberately not altered by review
-# staging proposals. These are the hard production gates for all other clips.
+# The untouched walk/turn/front authorities retain their canonical canvases.
 for name in ("keeper_walk", "keeper_turn_back", "keeper_wave_camera"):
     assert manifest[name]["w"] == 32 and manifest[name]["h"] == 40
     assert manifest[name]["anchor"] == [16, 40]
-for name in ("keeper_sit_side", "keeper_sit_front", "keeper_sit_back"):
-    assert manifest[name]["w"] == 32 and manifest[name]["h"] == 40
-    assert manifest[name]["anchor"] == [16, 40]
-    assert manifest[name]["seatPoint"] == [16, 29]
 assert manifest["keeper_walk"]["mirrorSafe"] is True
 assert manifest["keeper_sit_side"]["reverseFor"] == "stand_side"
 assert manifest["keeper_sit_front"]["reverseFor"] == "stand_front"
@@ -198,13 +212,12 @@ landing_first = frame_image("keeper_parachute_landing", 0)
 assert ImageChops.difference(embedded(jump_last, drift_first.width, drift_first.height), drift_first).getbbox() is None
 assert ImageChops.difference(drift_first, landing_first).getbbox() is None
 
-# Long tools, fishing lines and props use expanded canvases rather than a
-# smaller keeper. The frame-level anatomy gate remains the scale audit below.
-assert manifest["keeper_fish_standing"]["w"] == 96
-assert manifest["keeper_fish_standing"]["h"] == 88
-assert manifest["keeper_fish_standing"]["anchor"] == [48, 56]
-assert manifest["keeper_fish_seated"]["w"] == 96
-assert manifest["keeper_fish_seated"]["anchor"] == [48, 56]
+# Long tools, fishing lines and props retain at least their expanded staging
+# canvas; Frank's saved enlargement may expand that canvas further.
+assert manifest["keeper_fish_standing"]["w"] >= 96
+assert manifest["keeper_fish_standing"]["h"] >= 88
+assert manifest["keeper_fish_seated"]["w"] >= 96
+assert manifest["keeper_fish_seated"]["h"] >= 88
 assert manifest["keeper_snooker"]["w"] == 64
 assert manifest["keeper_pressups_side"]["w"] == 64
 assert manifest["keeper_scuba_swim_horizontal"]["w"] == 80
@@ -269,14 +282,21 @@ assert len(review_export["reviewLaterAnimations"]) == 3
 responses = json.loads((ROOT / "docs/review/keeper-animation-codex-responses-2026-10-09.json").read_text())
 assert responses and set(responses) <= keeper_names
 assert all(isinstance(value, str) and value.strip() for value in responses.values())
+awaiting_names = {
+    review["name"]
+    for review in review_export["reviews"]
+    if not review.get("happy") and not review.get("reviewLater")
+}
+assert len(awaiting_names) == 70 and awaiting_names <= responses.keys()
+assert all("Implemented as requested" not in responses[name] for name in awaiting_names)
 resolution = (ROOT / "docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-09.md").read_text()
 assert resolution.count("\n| `keeper_") == 173
 
-# The all-sheet scale/identity audit is the anatomy authority for clips whose
-# accepted review geometry is no longer represented by the old fixed canvases.
+# The all-sheet audit retains identity/anatomy evidence while recording Frank's
+# visual size as authoritative wherever the review changed width or height.
 scale_audit = json.loads((ROOT / "docs/keeper-scale-audit/keeper-scale-metrics.json").read_text())
 assert scale_audit["version"] == 2
-assert scale_audit["auditRevision"] == "2026-10-09-original-comparison-v2"
+assert scale_audit["auditRevision"] == "2026-10-10-user-visual-size-v3"
 assert scale_audit["originalReference"]["name"] == "keeper_walk"
 assert scale_audit["counts"] == {
     "allSheets": 191,
@@ -308,16 +328,27 @@ assert status_counts == {
 }
 assert all("originalComparison" in asset for asset in scale_audit["assets"])
 assert all(
-    asset["originalComparison"]["verdict"] in {"measured-and-visual-pass", "fixed-scale-visual-pass"}
+    asset["originalComparison"]["verdict"] in {
+        "measured-and-visual-pass",
+        "fixed-scale-visual-pass",
+        "user-visual-size-authority",
+    }
     for asset in review_assets
 )
 direct = [asset for asset in scale_audit["assets"] if asset["originalComparison"]["type"] == "direct-skull-to-sole"]
-assert len(direct) == 13
+assert [asset["name"] for asset in direct] == ["keeper_walk"]
 assert all(0.96 <= asset["originalComparison"]["silhouetteHeightRatio"] <= 1.04 for asset in direct)
-standing_face = next(asset for asset in scale_audit["assets"] if asset["name"] == "keeper_walk")["frameMeasurements"][0]["faceProxy"]
-sitting_face = next(asset for asset in scale_audit["assets"] if asset["name"] == "keeper_sit_side")["frameMeasurements"][-1]["faceProxy"]
-assert (standing_face["width"], standing_face["height"]) == (9.75, 6.5)
-assert (sitting_face["width"], sitting_face["height"]) == (standing_face["width"], standing_face["height"])
+user_sized = [
+    asset for asset in review_assets
+    if asset["originalComparison"]["verdict"] == "user-visual-size-authority"
+]
+assert len(user_sized) == 128
+for asset in user_sized:
+    imported = imported_reviews[asset["name"]]
+    assert asset["originalComparison"]["reviewScale"] == [
+        imported.get("widthPercent", 100),
+        imported.get("heightPercent", 100),
+    ]
 assert len(scale_audit["contactSheets"]) == 9
 assert all((ROOT / path).exists() for path in scale_audit["contactSheets"])
 
@@ -357,6 +388,6 @@ for slug in ("keeper-scuba-walk-side", "keeper-scuba-jetty-dive", "keeper-parach
 
 print(
     "Verified: 71 spaces, 1579 catalogue rows, floor exports, 191 keeper sheets/1420 frames, "
-    "canonical scale and seated authorities, scuba/parachute routes, cleaning cupboard occlusion, "
+    "reviewed visual sizing and identity authorities, scuba/parachute routes, cleaning cupboard occlusion, "
     "review evidence/statuses/responses, filtered cyclic navigation and 179 animated previews."
 )

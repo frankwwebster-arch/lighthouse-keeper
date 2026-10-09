@@ -1,6 +1,6 @@
 # Keeper scale audit
 
-This is the permanent, reproducible audit of every keeper sheet against the untouched approved original `keeper_walk`. It deliberately does **not** use the outer silhouette as character scale except for the small set of directly comparable full-body walks: hats, tools, raised arms, water and furniture can change that box without changing the keeper.
+This is the permanent, reproducible audit of every keeper sheet against the untouched approved original `keeper_walk`. Frank's saved visual width and height are the production sizing authority; the original remains the identity, anatomy and contact reference. The audit deliberately does **not** use the outer silhouette as character scale except for directly comparable full-body walks that Frank has not visually resized: hats, tools, raised arms, water and furniture can change that box without changing the keeper.
 
 - 191 keeper sheets inspected.
 - 173 animation sheets accepted for review; 18 obsolete modular/reference sheets excluded.
@@ -12,14 +12,14 @@ This is the permanent, reproducible audit of every keeper sheet against the unto
 
 ## Measurement method
 
-The approved original is printed first in every contact-sheet row at exactly the same scale as the tested frames. Directly comparable walks must measure 0.960–1.040 of the original skull-to-sole silhouette; unobscured side walks must also remain within 1 logical pixel of its median 20 px-above-floor torso scan, or the command fails. Other upright poses use inferred skull-to-supporting-sole height. Costumes use the face/ear/neck structure to infer the skull under hats and helmets. Seated and crouched poses use the head unit plus shoulder–hip–sole chain. Swimming, press-ups and other horizontal poses use the same articulated chain along the body axis. A skin-colour face proxy is also recorded where visible as a machine-checkable warning signal; it is not allowed to overrule the anatomical method.
+The approved original is printed first in every contact-sheet row. Frank's saved width/height choice is shown at its delivered production size and is never failed for disagreeing with an automatic ratio. Directly comparable walks without a saved visual resize must measure 0.960–1.040 of the original skull-to-sole silhouette; unobscured side walks without a saved visual resize must also remain within 1 logical pixel of its median 20 px-above-floor torso scan, or the command fails. Other upright poses use inferred skull-to-supporting-sole height. Costumes use the face/ear/neck structure to infer the skull under hats and helmets. Seated and crouched poses use the head unit plus shoulder–hip–sole chain. Swimming, press-ups and other horizontal poses use the same articulated chain along the body axis. A skin-colour face proxy is recorded as evidence only and cannot overrule Frank's visual sizing.
 
 ## Interactive comparison
 
 Open [the sizing and transition review](review.html) to inspect all 173 accepted animations beside the untouched `keeper_walk` authority. Review-state filters cover Needs my input, Happy, Awaiting new draft review, Review later, Unreviewed and Has Codex response. In focused mode Previous/Next and the Left/Right keys stay inside the selected filter and wrap from its final result to its first.
-The pinned reference can show canonical standing side/front/back or sitting side/front/back. The sitting endpoint's measured 9.75 × 6.5 face proxy exactly matches the standing reference frame. In upright standard-cap poses the gold badge crossing the blue skull-top guide is a calibrated visual proxy; tilted, bent, seated, crouched, horizontal, bare-headed and alternate-headwear poses still require anatomical landmarks.
+The pinned reference can show standing side/front/back or sitting side/front/back identity ghosts. These fixed ghosts are anatomy comparisons, not a replacement for each reviewed clip's saved production size. In upright standard-cap poses the gold badge crossing the blue skull-top guide is a calibrated visual proxy; tilted, bent, seated, crouched, horizontal, bare-headed and alternate-headwear poses still require anatomical landmarks.
 Each card retains precise size, position, rotation, opacity, ghost, frame-step and 1–20fps timing controls. The imported production pass starts those viewer transforms at neutral because accepted geometry and cadence are already baked into the delivered sprite and manifest. Comparison settings remain visual aids until saved/exported as a later review proposal.
-Every card has Frank's notes and decision controls plus a read-only Codex response field. That field is blank where no qualification was needed and briefly explains any interpretation or canonical-contract override elsewhere. Orange cards have unsaved changes; saved happy, new-draft and later-review cards use distinct status colours.
+Every card has Frank's notes and decision controls plus a read-only Codex response field. Every Awaiting new draft review card has a specific response naming the delivered change; responses also state any genuine qualification rather than implying that an unmade change was completed. Orange cards have unsaved changes; saved happy, new-draft and later-review cards use distinct status colours.
 `keeper-scale-choices.json` version 9 exports the complete review register, current review status and Codex response for every animation as well as any new per-card proposals. Export remains blocked while a card has unsaved edits. The page can also prepend matching walks, insert known bridges or freeze a seam with onion skin; every card prints its runtime PNG and authored source-strip filename.
 The character-width and character-height sliders each have adjacent −0.5% and +0.5% buttons for precise adjustments. They update the same per-animation values, obey the same 50%–150% limits and become part of the normal Save/export workflow.
 Every blue animation-transform slider also has −0.5/+0.5 buttons: degrees for rotation, logical pixels for horizontal/vertical position and percentage points for opacity. They update the same limited, saved and exported values as their sliders.
@@ -46,24 +46,24 @@ Review progress is browser-local: changing display zoom or review-state filter s
 - `keeper_guitar_pickup_acoustic` — new side-to-rear rack pickup and return-to-play transition; prop handoff occurs on frame 6.
 - `keeper_guitar_pickup_flying_v_1967` — new tier-3 rack pickup and return-to-play transition; prop handoff occurs on frame 6.
 - `keeper_guitar_pickup_gretsch` — new tier-2 rack pickup and return-to-play transition; prop handoff occurs on frame 6.
-- `keeper_halloween_walk_back` — rebuilt against the approved original skull-to-sole scale; cape bulk excluded from core anatomy.
-- `keeper_halloween_walk_front` — rebuilt against the approved original skull-to-sole scale; cape bulk excluded from core anatomy.
-- `keeper_halloween_walk_side` — rebuilt against the approved original skull-to-sole scale; cape bulk excluded from core anatomy.
-- `keeper_hoover_basic` — new canonical-height tier-2 cleaning loop with its ordinary upright hoover included; runtime swaps tools only while fully hidden by the cupboard door.
-- `keeper_hoover_super` — new canonical-height tier-3 cleaning loop with its original eccentric super hoover included; runtime swaps tools only while fully hidden by the cupboard door.
+- `keeper_halloween_walk_back` — identity rebuilt against the approved original, then resized to Frank's saved 102% width / 89.5% height.
+- `keeper_halloween_walk_front` — identity rebuilt against the approved original, then resized to Frank's saved 95% width / 91.5% height.
+- `keeper_halloween_walk_side` — identity rebuilt against the approved original, then resized to Frank's saved 101% width / 88% height.
+- `keeper_hoover_basic` — review-sized tier-2 cleaning loop with its ordinary upright hoover included; runtime swaps tools only while fully hidden by the cupboard door.
+- `keeper_hoover_super` — review-sized tier-3 cleaning loop with its original eccentric super hoover included; runtime swaps tools only while fully hidden by the cupboard door.
 - `keeper_hot_drink_drink` — neighbouring-frame flecks removed while retaining canonical actor, mug and steam.
 - `keeper_hot_drink_put_down` — neighbouring-frame flecks removed while retaining the released mug.
 - `keeper_hot_tub` — redrawn and normalised by the visible head/shoulder unit rather than the water silhouette.
 - `keeper_knight_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_knight_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_knight_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
-- `keeper_lawn_mower_push` — new canonical-height side walk pushing an included manual reel mower; runtime translates the complete unit from behind a foreground shed door.
-- `keeper_machete_side` — smooth machete restored in every frame; 64 px long-tool canvas prevents right-edge clipping without changing keeper scale.
-- `keeper_meal_place_side` — standard 19 px table datum; released plate edge restored in frames 7-8 without changing keeper scale.
+- `keeper_lawn_mower_push` — new baseline-anatomy side walk pushing an included manual reel mower; runtime translates the complete unit from behind a foreground shed door.
+- `keeper_machete_side` — smooth machete restored on an 80 px logical long-tool canvas; Frank's saved 127.5% width / 129% height is baked.
+- `keeper_meal_place_side` — beard corrected and released plate restored; Frank's saved 113.5% width / 94% height is baked.
 - `keeper_mechanic_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_mechanic_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_mechanic_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
-- `keeper_nap_seated` — canonical side-seated nap loop with closed eyes, clearly reclined head and open mouth; beard silhouette was corrected from a smooth oval to the standard stepped, ragged side-view margin; body height matches the standard sitting endpoint and furniture remains separate.
+- `keeper_nap_seated` — baseline-anatomy side-seated nap loop with closed eyes, clearly reclined head and open mouth; beard silhouette was corrected from a smooth oval to the standard stepped, ragged side-view margin; furniture remains separate.
 - `keeper_parachute_drift` — new slow left/right open-canopy loop that can repeat for arbitrary fall height.
 - `keeper_parachute_landing` — new one-shot open-canopy touchdown, compression and canopy-collapse sequence.
 - `keeper_party_dance` — canonical dance anatomy inherited exactly; party hat is an overlay.
@@ -81,7 +81,7 @@ Review progress is browser-local: changing display zoom or review-state filter s
 - `keeper_play_drums_front` — paired front/rear drum master; seated anatomy and frame timing are authoritative.
 - `keeper_play_guitar_flying_v_1967` — new tier-3 red 1967 Flying V playing loop at canonical keeper scale.
 - `keeper_play_guitar_gretsch` — new tier-2 black Gretsch playing loop at canonical keeper scale.
-- `keeper_pressups_side` — redrawn and body-axis-normalised without shrinking its canonical head/core depth.
+- `keeper_pressups_side` — redrawn cleanly, then resized to Frank's saved 79% width / 65% height.
 - `keeper_put_record` — expanded to a 64 px side-action canvas so the record remains complete through release.
 - `keeper_ride_bike_front` — enlarged from its undersized head unit on a 48 px interaction canvas.
 - `keeper_row_boat` — seated anatomy normalised to the sit-side head and torso unit.
@@ -101,11 +101,11 @@ Review progress is browser-local: changing display zoom or review-state filter s
 - `keeper_spaceman_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_spaceman_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_spiral_stairs_down` — frame 4 redrawn to remove an erroneous third hand while preserving the descent cycle.
-- `keeper_sweep_broom` — new canonical-height tier-1 cleaning loop with its traditional broom included; runtime swaps tools only while fully hidden by the cupboard door.
-- `keeper_swim_costume_horizontal` — enlarged on an expanded canvas so horizontal anatomy matches the upright keeper.
-- `keeper_tarzan_walk_back` — rebuilt to the approved original bare skull-to-sole scale on the standard 40 px actor canvas.
-- `keeper_tarzan_walk_front` — rebuilt to the approved original bare skull-to-sole scale on the standard 40 px actor canvas.
-- `keeper_tarzan_walk_side` — rebuilt to the approved original bare skull-to-sole scale on the standard 40 px actor canvas.
+- `keeper_sweep_broom` — new baseline-anatomy tier-1 cleaning loop with its traditional broom included; runtime swaps tools only while fully hidden by the cupboard door.
+- `keeper_swim_costume_horizontal` — re-rendered on an expanded horizontal canvas; Frank's saved 95.5% width / 100% height is baked.
+- `keeper_tarzan_walk_back` — bare-headed identity rebuilt against the approved original, then resized to Frank's saved 102.5% width / 95% height.
+- `keeper_tarzan_walk_front` — bare-headed identity rebuilt against the approved original, then resized to Frank's saved 98% width / 93% height.
+- `keeper_tarzan_walk_side` — bare-headed identity rebuilt against the approved original, then resized to Frank's saved 101% width / 91.5% height.
 - `keeper_walk_into_lift` — intentional depth transition: rear walk scales from 100% to 75%, rises 6 logical pixels, then turns to a full-front neutral pose.
 - `keeper_watch_movie` — seated anatomy normalised to the sit-side head and torso unit.
 - `keeper_watch_tv` — seated anatomy normalised to the sit-side head and torso unit.

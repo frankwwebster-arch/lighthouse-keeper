@@ -14,5 +14,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "party-walk",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

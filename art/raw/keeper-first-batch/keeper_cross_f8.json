@@ -11,5 +11,13 @@
   "z": 50,
   "loop": true,
   "facing": "front",
-  "interaction": "emote-cross"
+  "interaction": "emote-cross",
+  "reviewScale": [
+    97,
+    97.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

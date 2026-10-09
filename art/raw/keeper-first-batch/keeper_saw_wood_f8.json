@@ -17,5 +17,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "saw-workpiece",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    1,
+    0
+  ]
 }

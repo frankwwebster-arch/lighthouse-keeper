@@ -1,12 +1,12 @@
 {
-  "w": 40,
+  "w": 48,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    20,
-    40
+    24.0,
+    40.0
   ],
   "z": 50,
   "loop": false,
@@ -14,5 +14,13 @@
   "mirrorSafe": true,
   "facing": "rear-right",
   "interaction": "exit-shower",
-  "mirrorsFor": "rear-left"
+  "mirrorsFor": "rear-left",
+  "reviewScale": [
+    117.5,
+    91.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

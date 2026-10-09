@@ -18,5 +18,13 @@
   "mirrorSafe": true,
   "facing": "rear-right",
   "interaction": "open-shower-door",
-  "mirrorsFor": "rear-left"
+  "mirrorsFor": "rear-left",
+  "reviewScale": [
+    110,
+    94
+  ],
+  "reviewOffset": [
+    1,
+    0
+  ]
 }

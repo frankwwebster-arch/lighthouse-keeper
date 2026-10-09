@@ -5,8 +5,8 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    32,
-    40
+    32.0,
+    40.0
   ],
   "z": 50,
   "loop": true,
@@ -14,5 +14,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "press-ups",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    79,
+    65
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

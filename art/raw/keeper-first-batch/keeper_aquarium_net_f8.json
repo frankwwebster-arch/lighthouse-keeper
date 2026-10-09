@@ -17,5 +17,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "net-aquarium-fish",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    109.5,
+    103.5
+  ],
+  "reviewOffset": [
+    2,
+    0
+  ]
 }

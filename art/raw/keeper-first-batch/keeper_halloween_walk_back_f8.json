@@ -1,12 +1,12 @@
 {
-  "w": 32,
+  "w": 34,
   "h": 48,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    16,
-    48
+    17.0,
+    48.0
   ],
   "z": 50,
   "loop": true,
@@ -16,5 +16,13 @@
   ],
   "outfit": "halloween",
   "facing": "back",
-  "interaction": "halloween-walk"
+  "interaction": "halloween-walk",
+  "reviewScale": [
+    102,
+    89.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

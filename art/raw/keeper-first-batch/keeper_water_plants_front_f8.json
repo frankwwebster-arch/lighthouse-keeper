@@ -15,5 +15,13 @@
     31.18
   ],
   "facing": "front",
-  "interaction": "water-plants"
+  "interaction": "water-plants",
+  "reviewScale": [
+    92,
+    98
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

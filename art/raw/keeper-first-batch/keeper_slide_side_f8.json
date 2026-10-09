@@ -13,5 +13,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "ride-slide",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

@@ -1,21 +1,29 @@
 {
-  "w": 32,
+  "w": 34,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    16,
-    40
+    17.0,
+    40.0
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    27,
-    17
+    28.495,
+    17.23
   ],
   "mirrorSafe": true,
   "facing": "front",
   "interaction": "press-lift-button",
-  "mirrorsFor": "front-left-hand"
+  "mirrorsFor": "front-left-hand",
+  "reviewScale": [
+    104.5,
+    99
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

@@ -16,5 +16,13 @@
   ],
   "outfit": "souwester",
   "facing": "front",
-  "interaction": "souwester-walk-toward"
+  "interaction": "souwester-walk-toward",
+  "reviewScale": [
+    93,
+    91
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

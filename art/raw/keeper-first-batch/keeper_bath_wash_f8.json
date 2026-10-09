@@ -16,5 +16,13 @@
   ],
   "outfit": "mosaic-privacy",
   "facing": "front",
-  "interaction": "wash-in-bath"
+  "interaction": "wash-in-bath",
+  "reviewScale": [
+    83,
+    90.5
+  ],
+  "reviewOffset": [
+    -0.5,
+    0
+  ]
 }

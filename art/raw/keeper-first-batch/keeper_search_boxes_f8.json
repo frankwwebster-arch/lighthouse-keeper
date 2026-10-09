@@ -1,19 +1,27 @@
 {
-  "w": 32,
+  "w": 34,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    16,
-    40
+    17.0,
+    40.0
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    16,
-    38
+    17.0,
+    38.0
   ],
   "facing": "back",
-  "interaction": "search-boxes"
+  "interaction": "search-boxes",
+  "reviewScale": [
+    105.5,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

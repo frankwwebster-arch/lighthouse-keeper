@@ -17,5 +17,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "ten-pin-bowling",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    107.5,
+    101.5
+  ],
+  "reviewOffset": [
+    2,
+    0
+  ]
 }

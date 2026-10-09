@@ -15,5 +15,13 @@
     20.5
   ],
   "reverseFor": "door_close_back",
-  "mirrorSafe": true
+  "mirrorSafe": true,
+  "reviewScale": [
+    102,
+    102.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

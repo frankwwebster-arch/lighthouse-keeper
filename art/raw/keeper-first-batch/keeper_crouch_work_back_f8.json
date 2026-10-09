@@ -1,19 +1,27 @@
 {
-  "w": 32,
+  "w": 36,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    16,
-    40
+    18.0,
+    40.0
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    16,
-    38
+    18.0,
+    38.05
   ],
   "facing": "back",
-  "interaction": "ground-work"
+  "interaction": "ground-work",
+  "reviewScale": [
+    108,
+    97.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

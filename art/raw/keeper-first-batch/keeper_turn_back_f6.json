@@ -10,5 +10,13 @@
   ],
   "z": 50,
   "loop": false,
-  "reverseFor": "turn_front"
+  "reverseFor": "turn_front",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

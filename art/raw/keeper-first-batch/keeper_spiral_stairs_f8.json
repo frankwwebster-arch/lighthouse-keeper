@@ -11,5 +11,13 @@
   "z": 50,
   "loop": true,
   "facing": "three-quarter",
-  "interaction": "climb-spiral-stairs"
+  "interaction": "climb-spiral-stairs",
+  "reviewScale": [
+    100,
+    82
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

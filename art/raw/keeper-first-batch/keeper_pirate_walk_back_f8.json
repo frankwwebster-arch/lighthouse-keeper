@@ -16,5 +16,13 @@
   ],
   "outfit": "pirate",
   "facing": "back",
-  "interaction": "pirate-walk"
+  "interaction": "pirate-walk",
+  "reviewScale": [
+    117.5,
+    95.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

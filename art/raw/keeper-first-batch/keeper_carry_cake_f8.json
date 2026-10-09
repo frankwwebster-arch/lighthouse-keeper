@@ -17,5 +17,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "walk-carry-cake",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    104,
+    98.5
+  ],
+  "reviewOffset": [
+    1,
+    0
+  ]
 }

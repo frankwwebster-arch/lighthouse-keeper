@@ -16,5 +16,13 @@
   ],
   "outfit": "knight",
   "facing": "back",
-  "interaction": "knight-walk"
+  "interaction": "knight-walk",
+  "reviewScale": [
+    112.5,
+    103
+  ],
+  "reviewOffset": [
+    -1,
+    0
+  ]
 }

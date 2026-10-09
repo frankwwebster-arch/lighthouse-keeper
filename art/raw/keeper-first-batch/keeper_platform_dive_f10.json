@@ -13,5 +13,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "platform-dive",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    92
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

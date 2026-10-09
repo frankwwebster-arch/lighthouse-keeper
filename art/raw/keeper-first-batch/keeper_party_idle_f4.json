@@ -12,5 +12,13 @@
   "loop": true,
   "outfit": "party-hat",
   "facing": "front",
-  "interaction": "party-idle"
+  "interaction": "party-idle",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

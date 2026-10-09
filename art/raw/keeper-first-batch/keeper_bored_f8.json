@@ -11,5 +11,13 @@
   "z": 50,
   "loop": true,
   "facing": "front",
-  "interaction": "emote-bored"
+  "interaction": "emote-bored",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

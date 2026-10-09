@@ -18,5 +18,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "press-switch",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    96.5
+  ],
+  "reviewOffset": [
+    -0.5,
+    0
+  ]
 }

@@ -16,5 +16,13 @@
   ],
   "outfit": "spaceman",
   "facing": "front",
-  "interaction": "spaceman-walk"
+  "interaction": "spaceman-walk",
+  "reviewScale": [
+    97.5,
+    99.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

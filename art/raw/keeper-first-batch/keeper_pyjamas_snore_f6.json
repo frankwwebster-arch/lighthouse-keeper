@@ -22,5 +22,13 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "sleep-snore",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "reviewScale": [
+    91.5,
+    99
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

@@ -20,5 +20,13 @@
   ],
   "outfit": "artist-smock",
   "facing": "front",
-  "interaction": "pottery-wheel"
+  "interaction": "pottery-wheel",
+  "reviewScale": [
+    91,
+    94
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

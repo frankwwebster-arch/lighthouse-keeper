@@ -145,13 +145,13 @@
  },
  "keeper_artist_smock_walk": {
   "file": "keeper_artist_smock_walk.png",
-  "w": 32,
+  "w": 34,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   18,
    40
   ],
   "movementVector": [
@@ -270,13 +270,13 @@
  },
  "keeper_bath_enter": {
   "file": "keeper_bath_enter.png",
-  "w": 40,
+  "w": 47,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   20,
+   23,
    40
   ],
   "outfit": "towel-privacy",
@@ -290,13 +290,13 @@
  },
  "keeper_bath_exit": {
   "file": "keeper_bath_exit.png",
-  "w": 40,
+  "w": 46,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   20,
+   23,
    40
   ],
   "outfit": "towel-privacy",
@@ -728,18 +728,18 @@
  },
  "keeper_crouch_work_back": {
   "file": "keeper_crouch_work_back.png",
-  "w": 32,
+  "w": 36,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   18,
    40
   ],
   "handUsePoint": [
-   16,
-   38
+   18,
+   38.05
   ],
   "loop": true,
   "facing": "back",
@@ -996,22 +996,22 @@
  },
  "keeper_fish_seated": {
   "file": "keeper_fish_seated.png",
-  "w": 96,
-  "h": 88,
+  "w": 135,
+  "h": 115,
   "frames": 16,
   "fps": 3,
   "density": 4,
   "anchor": [
-   48,
-   56
+   63,
+   73
   ],
   "seatPoint": [
-   48,
-   45
+   67.5,
+   58.7
   ],
   "handUsePoint": [
-   78,
-   29
+   109.2,
+   37.9
   ],
   "loop": true,
   "mirrorSafe": true,
@@ -1022,7 +1022,7 @@
  },
  "keeper_fish_standing": {
   "file": "keeper_fish_standing.png",
-  "w": 96,
+  "w": 101,
   "h": 88,
   "frames": 16,
   "fps": 4,
@@ -1032,8 +1032,8 @@
    56
   ],
   "handUsePoint": [
-   80,
-   32
+   85,
+   33.08
   ],
   "loop": true,
   "mirrorSafe": true,
@@ -1317,13 +1317,13 @@
  },
  "keeper_halloween_walk_back": {
   "file": "keeper_halloween_walk_back.png",
-  "w": 32,
+  "w": 34,
   "h": 48,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   17,
    48
   ],
   "movementVector": [
@@ -1359,13 +1359,13 @@
  },
  "keeper_halloween_walk_side": {
   "file": "keeper_halloween_walk_side.png",
-  "w": 32,
+  "w": 35,
   "h": 48,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   19,
    48
   ],
   "movementVector": [
@@ -1524,7 +1524,7 @@
  },
  "keeper_hot_drink_pour": {
   "file": "keeper_hot_drink_pour.png",
-  "w": 48,
+  "w": 54,
   "h": 40,
   "frames": 10,
   "fps": 4,
@@ -1534,8 +1534,8 @@
    40
   ],
   "handUsePoint": [
-   40,
-   28
+   45.46,
+   28.36
   ],
   "loop": false,
   "mirrorSafe": true,
@@ -1772,18 +1772,18 @@
  },
  "keeper_lift_button_front": {
   "file": "keeper_lift_button_front.png",
-  "w": 32,
+  "w": 34,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   17,
    40
   ],
   "handUsePoint": [
-   27,
-   17
+   28.495,
+   17.23
   ],
   "loop": true,
   "mirrorSafe": true,
@@ -1794,18 +1794,18 @@
  },
  "keeper_lift_weights_back": {
   "file": "keeper_lift_weights_back.png",
-  "w": 48,
+  "w": 55,
   "h": 56,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   24,
+   27,
    56
   ],
   "handUsePoint": [
-   24,
-   5
+   27,
+   10.355
   ],
   "outfit": "old-school-workout-kit",
   "loop": true,
@@ -1837,17 +1837,17 @@
  },
  "keeper_meal_from_oven_back": {
   "file": "keeper_meal_from_oven_back.png",
-  "w": 48,
+  "w": 52,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   24,
+   26,
    40
   ],
   "handUsePoint": [
-   24,
+   26,
    30
   ],
   "loop": false,
@@ -1857,18 +1857,18 @@
  },
  "keeper_meal_place_side": {
   "file": "keeper_meal_place_side.png",
-  "w": 48,
+  "w": 55,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   24,
+   26,
    40
   ],
   "handUsePoint": [
-   39,
-   21
+   44.525,
+   22.14
   ],
   "loop": false,
   "mirrorSafe": true,
@@ -1902,13 +1902,13 @@
  },
  "keeper_mechanic_walk_back": {
   "file": "keeper_mechanic_walk_back.png",
-  "w": 32,
+  "w": 36,
   "h": 48,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   18,
    48
   ],
   "movementVector": [
@@ -2057,13 +2057,13 @@
  },
  "keeper_parachute_drift": {
   "file": "keeper_parachute_drift.png",
-  "w": 64,
+  "w": 96,
   "h": 84,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   32,
+   48,
    84
   ],
   "startPose": "parachute-open",
@@ -2077,13 +2077,13 @@
  },
  "keeper_parachute_jump": {
   "file": "keeper_parachute_jump.png",
-  "w": 48,
+  "w": 67,
   "h": 84,
   "frames": 9,
   "fps": 4,
   "density": 4,
   "anchor": [
-   24,
+   36,
    84
   ],
   "loop": false,
@@ -2095,13 +2095,13 @@
  },
  "keeper_parachute_landing": {
   "file": "keeper_parachute_landing.png",
-  "w": 64,
+  "w": 96,
   "h": 84,
   "frames": 10,
   "fps": 4,
   "density": 4,
   "anchor": [
-   32,
+   48,
    84
   ],
   "startPose": "parachute-open",
@@ -2637,13 +2637,13 @@
  },
  "keeper_pyjamas_walk": {
   "file": "keeper_pyjamas_walk.png",
-  "w": 32,
-  "h": 40,
+  "w": 33,
+  "h": 41,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   17,
    40
   ],
   "outfit": "light-blue-pyjamas",
@@ -2919,17 +2919,17 @@
  },
  "keeper_search_boxes": {
   "file": "keeper_search_boxes.png",
-  "w": 32,
+  "w": 34,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   17,
    40
   ],
   "handUsePoint": [
-   16,
+   17,
    38
   ],
   "loop": true,
@@ -2981,13 +2981,13 @@
  },
  "keeper_shower_enter_bathrobe": {
   "file": "keeper_shower_enter_bathrobe.png",
-  "w": 40,
+  "w": 57,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   20,
+   28,
    40
   ],
   "movementVector": [
@@ -3004,13 +3004,13 @@
  },
  "keeper_shower_exit": {
   "file": "keeper_shower_exit.png",
-  "w": 40,
+  "w": 48,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   20,
+   24,
    40
   ],
   "outfit": "towel-privacy",
@@ -3040,18 +3040,18 @@
  },
  "keeper_sit_back": {
   "file": "keeper_sit_back.png",
-  "w": 32,
+  "w": 34,
   "h": 40,
   "frames": 6,
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   17,
    40
   ],
   "seatPoint": [
-   16,
-   29
+   17,
+   29.33
   ],
   "loop": false,
   "reverseFor": "stand_back",
@@ -3071,7 +3071,7 @@
   ],
   "seatPoint": [
    16,
-   29
+   29.22
   ],
   "loop": false,
   "reverseFor": "stand_front",
@@ -3090,7 +3090,7 @@
   ],
   "seatPoint": [
    16,
-   29
+   29.44
   ],
   "loop": false,
   "reverseFor": "stand_side",
@@ -3538,13 +3538,13 @@
  },
  "keeper_tarzan_walk_back": {
   "file": "keeper_tarzan_walk_back.png",
-  "w": 32,
+  "w": 34,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   17,
    40
   ],
   "movementVector": [
@@ -3580,13 +3580,13 @@
  },
  "keeper_tarzan_walk_side": {
   "file": "keeper_tarzan_walk_side.png",
-  "w": 32,
+  "w": 34,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   18,
    40
   ],
   "movementVector": [
@@ -3630,13 +3630,13 @@
  "keeper_trampoline_front": {
   "file": "keeper_trampoline_front.png",
   "w": 32,
-  "h": 48,
+  "h": 80,
   "frames": 8,
   "fps": 7.5,
   "density": 4,
   "anchor": [
    16,
-   48
+   80
   ],
   "outfit": "old-school-workout-kit",
   "loop": true,
@@ -3774,13 +3774,13 @@
  },
  "keeper_walk_into_lift": {
   "file": "keeper_walk_into_lift.png",
-  "w": 32,
+  "w": 34,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   18,
    40
   ],
   "movementVector": [
@@ -3994,22 +3994,22 @@
  },
  "keeper_write_back": {
   "file": "keeper_write_back.png",
-  "w": 32,
+  "w": 34,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   17,
    40
   ],
   "seatPoint": [
-   16,
-   29
+   17,
+   30.43
   ],
   "handUsePoint": [
-   16,
-   21
+   17,
+   23.47
   ],
   "loop": true,
   "facing": "back",

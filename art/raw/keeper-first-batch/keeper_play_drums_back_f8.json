@@ -19,5 +19,13 @@
     30.78
   ],
   "facing": "back",
-  "interaction": "play-drums"
+  "interaction": "play-drums",
+  "reviewScale": [
+    84.5,
+    82
+  ],
+  "reviewOffset": [
+    -1,
+    0
+  ]
 }

@@ -15,5 +15,13 @@
     22.09
   ],
   "facing": "back",
-  "interaction": "use-bbq"
+  "interaction": "use-bbq",
+  "reviewScale": [
+    106.5,
+    99.5
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }

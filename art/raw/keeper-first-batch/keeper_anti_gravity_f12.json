@@ -11,5 +11,13 @@
   "z": 50,
   "loop": true,
   "facing": "right-prone",
-  "interaction": "anti-gravity-float"
+  "interaction": "anti-gravity-float",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    -1,
+    0
+  ]
 }

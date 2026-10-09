@@ -579,6 +579,21 @@ def remove_small_alpha_components(frame, min_pixels=200):
     return cleaned
 
 
+def place_on_vertical_action_canvas(frames, logical_height, rise_by_frame):
+    """Preserve authored poses while giving a jump a real world-space arc."""
+    if len(frames) != len(rise_by_frame):
+        raise ValueError("Vertical action offsets must match the frame count")
+    width = frames[0].width
+    source_height = frames[0].height
+    target_height = logical_height * D
+    result = []
+    for frame, rise in zip(frames, rise_by_frame):
+        placed = Image.new("RGBA", (width, target_height), (0, 0, 0, 0))
+        placed.alpha_composite(frame, (0, target_height - source_height - round(rise * D)))
+        result.append(placed)
+    return result
+
+
 def recolor_privacy_mosaic(frame):
     """Change only lower-body blue privacy pixels to opaque flesh tones."""
     result = frame.copy()
@@ -729,35 +744,20 @@ REVIEW_POINT_FIELDS = (
     "seat_point", "hand_use_point", "pedal_point", "bowl_point",
     "look_target_point", "bed_surface_point", "pillow_point", "pivot",
 )
-REVIEW_SCALE_PROTECTED = {
-    "keeper_walk", "keeper_turn_back", "keeper_wave_camera",
-    "keeper_sit_side", "keeper_sit_front", "keeper_sit_back",
-    "keeper_bathrobe_walk", "keeper_pyjamas_walk",
-    "keeper_tarzan_walk_side", "keeper_tarzan_walk_front", "keeper_tarzan_walk_back",
-    "keeper_halloween_walk_side", "keeper_halloween_walk_front", "keeper_halloween_walk_back",
-    "keeper_mechanic_walk_side", "keeper_mechanic_walk_front", "keeper_mechanic_walk_back",
-    "keeper_artist_smock_walk",
-    # The open-canopy endpoint is the exact hand-off into the separately
-    # loopable drift clip. Review staging must not distort that route seam.
-    "keeper_parachute_jump",
-}
 
 
 def apply_review_geometry(name, frames, metadata):
-    """Bake Frank's accepted scale and modest alignment choices into sprites."""
+    """Bake Frank's visual scale choices and modest alignment choices."""
     review = REVIEW_SETTINGS.get(name)
-    if not review or review.get("redraftRequested") or review.get("reviewLater"):
+    if not review:
         return frames, metadata
     scale_x = review.get("widthPercent", 100) / 100
     scale_y = review.get("heightPercent", 100) / 100
     offset_x = review.get("actionOffsetX", 0)
     offset_y = review.get("actionOffsetY", 0)
-    if name in REVIEW_SCALE_PROTECTED:
-        # These locomotion and route-authority sheets are the direct
-        # skull-to-sole/endpoint family. Viewer staging cannot override their
-        # immutable production canvas, anchor or scale.
-        scale_x = scale_y = 1
-        offset_x = offset_y = 0
+    # Frank's saved width and height are production art direction, including
+    # costume walks and clips also marked for redraft.  Canonical anatomy still
+    # governs the drawing, but it must never silently override his visual size.
     # The comparison viewer also permits large staging translations. Those are
     # evidence for scene placement, not safe actor-sheet corrections. Small
     # alignment nudges are production choices and are baked here.
@@ -765,8 +765,14 @@ def apply_review_geometry(name, frames, metadata):
         offset_x = 0
     if abs(offset_y) > 8:
         offset_y = 0
+    reviewed_metadata = dict(metadata)
+    reviewed_metadata["review_scale"] = [
+        review.get("widthPercent", 100),
+        review.get("heightPercent", 100),
+    ]
+    reviewed_metadata["review_offset"] = [offset_x, offset_y]
     if scale_x == 1 and scale_y == 1 and offset_x == 0 and offset_y == 0:
-        return frames, metadata
+        return frames, reviewed_metadata
 
     old_width, old_height = frames[0].size
     anchor = metadata.get("anchor_point", [old_width / D / 2, old_height / D])
@@ -799,7 +805,7 @@ def apply_review_geometry(name, frames, metadata):
         canvas.alpha_composite(scaled, (origin[0] - min_x, origin[1] - min_y))
         transformed.append(canvas)
 
-    adjusted = dict(metadata)
+    adjusted = reviewed_metadata
     adjusted["anchor_point"] = [
         round((anchor_px[0] - min_x) / D, 3),
         round((anchor_px[1] - min_y) / D, 3),
@@ -815,7 +821,7 @@ def apply_review_geometry(name, frames, metadata):
     return transformed, adjusted
 
 
-def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=True, seat_point=None, hand_use_point=None, pedal_point=None, bowl_point=None, look_target_point=None, bed_surface_point=None, pillow_point=None, movement_vector=None, depth_scale_range=None, depth_offset_y=None, prop_handoff_frame=None, prop_variant=None, upgrade_tier=None, start_pose=None, end_pose=None, outfit=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
+def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=True, seat_point=None, hand_use_point=None, pedal_point=None, bowl_point=None, look_target_point=None, bed_surface_point=None, pillow_point=None, movement_vector=None, depth_scale_range=None, depth_offset_y=None, prop_handoff_frame=None, prop_variant=None, upgrade_tier=None, start_pose=None, end_pose=None, outfit=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None, review_scale=None, review_offset=None):
     value = {"w": w, "h": h, "frames": frames, "fps": fps, "density": D, "anchor": anchor_point or [w // 2, h], "z": 50}
     if pivot is not None: value["pivot"] = pivot
     value["loop"] = loop
@@ -840,6 +846,8 @@ def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=Tru
     if facing is not None: value["facing"] = facing
     if interaction is not None: value["interaction"] = interaction
     if mirrors_for is not None: value["mirrorsFor"] = mirrors_for
+    if review_scale is not None: value["reviewScale"] = review_scale
+    if review_offset is not None: value["reviewOffset"] = review_offset
     return value
 
 
@@ -923,14 +931,25 @@ walk_into_lift_frames = depth_scale_sequence(
     (0, 1.5, 3, 4.5, 6, 6, 6, 6),
 )
 parachute_jump_frames = generated_frames("keeper-parachute-jump-generated-source.png", 9, logical_width=48, logical_height=84, scale_reference_index=0)
+reviewed_parachute_jump_frames, _ = apply_review_geometry(
+    "keeper_parachute_jump",
+    parachute_jump_frames,
+    {"anchor_point": [24, 84]},
+)
 parachute_drift_frames = [
-    rotate_embedded_frame(parachute_jump_frames[-1], 64, 84, angle, offset)
+    rotate_embedded_frame(reviewed_parachute_jump_frames[-1], 96, 84, angle, offset)
     for angle, offset in ((0, 0), (-1, -0.5), (-2, -1), (-1, -0.5), (0, 0), (1, 0.5), (2, 1), (1, 0.5))
 ]
-parachute_landing_frames = generated_frames(
+parachute_landing_source_frames = generated_frames(
     "keeper-parachute-landing-generated-source.png", 10,
     logical_width=64, logical_height=84, force_equal_cells=True,
 )
+reviewed_parachute_landing_frames, _ = apply_review_geometry(
+    "keeper_parachute_jump",
+    parachute_landing_source_frames,
+    {"anchor_point": [32, 84]},
+)
+parachute_landing_frames = [embed_frame(frame, 96, 84) for frame in reviewed_parachute_landing_frames]
 # The controller exits the loop at its neutral/open-canopy phase, so all three
 # route pieces share the same byte-exact hand-off frame.
 parachute_landing_frames[0] = parachute_drift_frames[0].copy()
@@ -946,7 +965,15 @@ drive_speedboat_frames = generated_frames("keeper-drive-speedboat-generated-sour
 operate_outboard_frames = generated_frames("keeper-operate-outboard-generated-source.png", 8)
 watch_tv_frames = generated_frames("keeper-watch-tv-generated-source.png", 8, scale_multiplier=0.90)
 weld_frames = generated_frames("keeper-weld-generated-source.png", 8)
-saw_wood_frames = generated_frames("keeper-saw-wood-generated-source.png", 8, logical_width=64, preserve_equal_cells=True)
+saw_wood_frames = [
+    remove_small_alpha_components(frame, min_pixels=300)
+    for frame in generated_frames("keeper-saw-wood-generated-source.png", 8, logical_width=64, preserve_equal_cells=True)
+]
+for saw_frame in saw_wood_frames:
+    ImageDraw.Draw(saw_frame).rectangle(
+        (saw_frame.width - 6 * D, 0, saw_frame.width, saw_frame.height),
+        fill=(0, 0, 0, 0),
+    )
 wave_camera_frames = generated_frames("keeper-wave-generated-source.png", 8)
 yawn_frames = generated_frames("keeper-yawn-generated-source.png", 8)
 pyjamas_walk_frames = generated_frames("keeper-pyjamas-walk-light-blue-generated-source.png", 8)
@@ -957,9 +984,18 @@ pyjamas_snore_frames = generated_frames("keeper-snore-light-blue-generated-sourc
 swim_costume_horizontal_frames = generated_frames("keeper-swim-costume-horizontal-generated-source.png", 8, logical_width=80, logical_height=48)
 swim_costume_up_frames = generated_frames("keeper-swim-costume-up-generated-source.png", 8, logical_width=48, logical_height=48)
 swim_costume_down_frames = generated_frames("keeper-swim-costume-down-generated-source.png", 8, logical_width=48, logical_height=48)
-scuba_horizontal_frames = generated_frames("keeper-scuba-horizontal-generated-source.png", 8, logical_width=80, logical_height=48, preserve_equal_cells=True)
-scuba_up_frames = generated_frames("keeper-scuba-up-generated-source.png", 8, logical_width=48, logical_height=48, preserve_equal_cells=True)
-scuba_down_frames = generated_frames("keeper-scuba-down-generated-source.png", 8, logical_width=48, logical_height=48, preserve_equal_cells=True)
+scuba_horizontal_frames = generated_frames(
+    "keeper-scuba-horizontal-generated-source.png", 8,
+    logical_width=80, logical_height=48,
+)
+scuba_up_frames = generated_frames(
+    "keeper-scuba-up-generated-source.png", 8,
+    logical_width=48, logical_height=48,
+)
+scuba_down_frames = generated_frames(
+    "keeper-scuba-down-generated-source.png", 8,
+    logical_width=48, logical_height=48,
+)
 scuba_walk_side_frames = generated_frames(
     "keeper-scuba-walk-side-generated-source.png", 8,
     logical_width=48, logical_height=56, preserve_equal_cells=True, scale_multiplier=0.84,
@@ -970,7 +1006,12 @@ scuba_jetty_dive_frames = generated_frames(
 )
 # The final dive pose is the exact first production swim frame, so there is no
 # costume, beard, scale or silhouette pop at the water-entry hand-off.
-scuba_jetty_dive_frames[-1] = embed_frame(scuba_horizontal_frames[0], 80, 72)
+reviewed_scuba_horizontal_frames, _ = apply_review_geometry(
+    "keeper_scuba_swim_horizontal",
+    scuba_horizontal_frames,
+    {"anchor_point": [40, 24]},
+)
+scuba_jetty_dive_frames[-1] = embed_frame(reviewed_scuba_horizontal_frames[0], 80, 72)
 # Party costume is headwear-only.  Derive every pose from the approved keeper
 # families so the face, skull, beard and body can never drift between costumes.
 party_idle_reference = generated_frames("keeper-wave-generated-source.png", 8)
@@ -1112,8 +1153,8 @@ save("keeper_switch_press_side", switch_side_frames, 8, loop=False, hand_use_poi
 save("keeper_switch_press_back", switch_back_frames, 8, loop=False, hand_use_point=[26, 17], reverse_for="switch_withdraw_back", mirror_safe=True, facing="back", interaction="press-switch", mirrors_for="back-left-hand")
 save("keeper_walk_into_lift", walk_into_lift_frames, 8, loop=False, movement_vector=[0, -1], depth_scale_range=[1.0, 0.75], depth_offset_y=[0, -6], facing="back-to-front", interaction="enter-lift")
 save("keeper_parachute_jump", parachute_jump_frames, 10, loop=False, mirror_safe=True, facing="right", interaction="parachute-jump", mirrors_for="left")
-save("keeper_parachute_drift", parachute_drift_frames, 4, anchor_point=[32, 84], loop=True, mirror_safe=True, facing="right", interaction="parachute-drift", mirrors_for="left", start_pose="parachute-open", end_pose="parachute-open")
-save("keeper_parachute_landing", parachute_landing_frames, 6, anchor_point=[32, 84], loop=False, mirror_safe=True, facing="right", interaction="parachute-landing", mirrors_for="left", start_pose="parachute-open", end_pose="standing-side-right")
+save("keeper_parachute_drift", parachute_drift_frames, 4, anchor_point=[48, 84], loop=True, mirror_safe=True, facing="right", interaction="parachute-drift", mirrors_for="left", start_pose="parachute-open", end_pose="parachute-open")
+save("keeper_parachute_landing", parachute_landing_frames, 6, anchor_point=[48, 84], loop=False, mirror_safe=True, facing="right", interaction="parachute-landing", mirrors_for="left", start_pose="parachute-open", end_pose="standing-side-right")
 save("keeper_platform_dive", platform_dive_frames, 10, loop=False, mirror_safe=True, facing="right", interaction="platform-dive", mirrors_for="left")
 save("keeper_dig", dig_frames, 8, hand_use_point=[27, 38], mirror_safe=True, facing="right", interaction="dig-ground", mirrors_for="left")
 save("keeper_feed_animals", feed_animals_frames, 8, loop=False, hand_use_point=[27, 34], mirror_safe=True, facing="right", interaction="feed-bowl", mirrors_for="left")
@@ -1397,22 +1438,38 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
     elif clip_name == "keeper_shower_door_open_bathrobe":
         frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True)
         turn_in = generated_frames("keeper-shower-enter-bathrobe-generated-source.png", 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True)
-        frames = [turn_in[0].copy(), turn_in[1].copy()] + frames
+        frames = [
+            remove_small_alpha_components(frame, min_pixels=200)
+            for frame in [turn_in[0].copy(), turn_in[1].copy()] + frames
+        ]
     elif clip_name in {"keeper_fish_standing", "keeper_fish_seated"}:
-        frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, force_equal_cells=True)
+        # The corrective renders intentionally provide 18 isolated source
+        # poses. Drop two near-duplicate waiting holds while retaining four
+        # patient frames, six progressive pull/reel frames and the complete
+        # below-feet fish rise in a 16-frame production strip.
+        source_frames = generated_frames(
+            source_name,
+            18,
+            logical_width=logical_width,
+            logical_height=logical_height,
+            group_equal_components=True,
+        )
+        frames = [frame for index, frame in enumerate(source_frames) if index not in {1, 3}]
         if clip_name == "keeper_fish_standing":
-            frames[2] = repair_fishing_actor(frames[2], frames[1])
-        else:
-            for frame_index in (2, 3, 4, 5):
-                frames[frame_index] = repair_fishing_actor(frames[frame_index], frames[1])
-            for frame_index in (11, 12, 13, 14, 15):
-                frames[frame_index] = repair_fishing_actor(frames[frame_index], frames[10])
+            # Detached fish from neighbouring source poses sit to the left of
+            # the keeper; his own line and catch are always to his right.
+            for frame in frames:
+                ImageDraw.Draw(frame).rectangle((0, 0, 28 * D, frame.height), fill=(0, 0, 0, 0))
+            # Replace the one source slot that contains only a detached catch,
+            # then hold the clean late pull and final catch for readability.
+            frames[13] = frames[12].copy()
+            frames[14] = frames[15].copy()
     elif clip_name.startswith("keeper_hot_drink_"):
         # Keep the kettle, mug, spoon, liquid and steam in fixed equal cells,
         # including frames where the mug has detached from the keeper's hand.
         # Actor-centred component grouping excludes neighbouring poses whose
         # source silhouettes overlap the nominal equal-cell boundaries.
-        if clip_name in {"keeper_hot_drink_drink", "keeper_hot_drink_put_down"}:
+        if clip_name in {"keeper_hot_drink_pour", "keeper_hot_drink_pickup", "keeper_hot_drink_drink", "keeper_hot_drink_put_down"}:
             frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, group_equal_components=True, scale_multiplier=anatomy_scale)
             # Steam and released mugs remain substantial/attached components;
             # the accidental neighbouring-frame slivers are all smaller.
@@ -1427,12 +1484,12 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
                 scale_multiplier=anatomy_scale,
             )
     elif clip_name == "keeper_snooker":
-        frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True)
+        frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height)
     elif clip_name == "keeper_meal_place_side":
         # After release, the plated meal is detached from the keeper but remains
         # in the actor strip until the world object takes over.
         frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True, scale_multiplier=anatomy_scale)
-        frames = [remove_small_alpha_components(frame) for frame in frames]
+        frames = [remove_small_alpha_components(frame, min_pixels=300) for frame in frames]
     else:
         try:
             frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, scale_multiplier=anatomy_scale)
@@ -1463,12 +1520,25 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
         frames = [centred[0].copy(), centred[1].copy(), centred[0].copy(), centred[1].copy()] + centred
     if clip_name == "keeper_fish_feed_up":
         frames.extend(frames[-1].copy() for _ in range(6))
+    if clip_name == "keeper_trampoline_front":
+        # Keep Frank's compact-beard redraw and give the bounce a conspicuously
+        # higher world-space arc instead of bottom-aligning every source pose.
+        frames = place_on_vertical_action_canvas(
+            frames,
+            80,
+            (0, 4, 12, 24, 30, 22, 10, 0),
+        )
+        metadata["anchor_point"] = [logical_width // 2, 80]
     if clip_name == "keeper_darts":
         # Four additional aim oscillations make the draw-back readable before
         # the throw, while retaining the authored release/recovery frames.
         frames = frames[:2] + [frames[2].copy(), frames[3].copy()] * 4 + frames[4:]
     if clip_name == "keeper_drink_pint":
         frames[4] = frames[3].copy()
+    if clip_name == "keeper_meal_place_side":
+        # Remove the left-edge remnant of the preceding generated cell in the
+        # one affected pose without touching the keeper or released plate.
+        ImageDraw.Draw(frames[5]).rectangle((0, 0, 16 * D, frames[5].height), fill=(0, 0, 0, 0))
     if clip_name == "keeper_video_game":
         stable = [frames[index].copy() for index in (0, 0, 2, 2, 4, 4, 6, 6)]
         frames = [draw_video_game_controller(frame) for frame in stable]

@@ -24,5 +24,13 @@
   ],
   "outfit": "old-school-workout-kit",
   "facing": "front",
-  "interaction": "use-stationary-exercise-bike"
+  "interaction": "use-stationary-exercise-bike",
+  "reviewScale": [
+    77.5,
+    68
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ]
 }
