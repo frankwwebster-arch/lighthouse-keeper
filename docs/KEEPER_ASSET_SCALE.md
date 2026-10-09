@@ -184,8 +184,10 @@ down clip moves `(0,1)` while turning from rear to front-right. These are
 distinct animations, not reversed playback, so weight transfer and leading
 feet remain correct. Treads, railing and central post stay out of actor strips.
 
-The hot-drink sequence uses five connected 48 × 40 strips. Pouring and stirring
-keep the cream mug fixed at the invisible worktop point `(40,28)`; pickup moves
+The hot-drink sequence uses five connected 48 × 40 strips. The ten-frame pour
+keeps the cream mug fixed at the invisible worktop point `(40,28)`, uses a clean
+two-hand kettle grip, then lowers and releases the kettle beside the mug;
+stirring keeps that same mug position; pickup moves
 that same mug into the keeper's hand; sipping holds it at `(34,17)`; put-down
 returns it to `(40,28)` and leaves it visible after release. Mirror the worktop
 point to `(8,28)` for a left-facing layout. The enamel kettle, teaspoon and mug

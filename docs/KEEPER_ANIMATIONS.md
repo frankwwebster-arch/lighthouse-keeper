@@ -128,7 +128,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Spiral stairs up | `keeper_spiral_stairs_up` | right three-quarter to rear curved ascent; staircase/rail separate |
 | Spiral stairs down | `keeper_spiral_stairs_down` | rear to front-right curved descent; staircase/rail separate |
 | Spiral stairs legacy alias | `keeper_spiral_stairs` | retained ascent for compatibility; use the explicit `up` clip for new work |
-| Pour hot drink | `keeper_hot_drink_pour` | right; enamel kettle and mug; fixed worktop `(40,28)`; mirror left |
+| Pour hot drink | `keeper_hot_drink_pour` | 10 frames; right; clean two-hand kettle grip; fixed mug/worktop `(40,28)`; finishes by lowering and releasing kettle; mirror left |
 | Stir hot drink | `keeper_hot_drink_stir` | right; mug and spoon at fixed worktop; mirror left |
 | Pick up hot drink | `keeper_hot_drink_pickup` | right; mug transfers from worktop to hand; mirror left |
 | Drink tea/coffee | `keeper_hot_drink_drink` | right-facing held-mug sipping loop; mirror left |

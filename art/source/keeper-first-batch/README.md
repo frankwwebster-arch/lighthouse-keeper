@@ -285,10 +285,14 @@ staircase is a separately aligned world object. The original
 
 The hot-drink pass adds five referenced-image source sheets for pouring from a
 cream enamel kettle into a matching blue-rimmed mug, stirring with a teaspoon,
-picking up the mug, sipping, and putting it down. The prompts lock one right-
-facing invisible worktop point and explicitly show the mug transferring from
-surface to hand and back. Equal-cell normalization preserves detached mug,
-liquid and steam pixels; the counter itself remains a separate object.
+picking up the mug, sipping, and putting it down. The ten-frame pour sheet was
+revised with the built-in image generator in referenced-image edit mode: its
+prompt explicitly requires a clean upper-hand-to-handle/lower-hand-to-kettle
+grip, a stationary separate mug, and three closing poses that return, lower and
+release the kettle beside the mug. The prompts lock one right-facing invisible
+worktop point and explicitly show the mug transferring from surface to hand and
+back. Equal-cell normalization preserves detached mug, liquid and steam pixels;
+the counter itself remains a separate object.
 
 `keeper-boat-enter-generated-source.png` and
 `keeper-boat-exit-generated-source.png` are independently drawn climb actions

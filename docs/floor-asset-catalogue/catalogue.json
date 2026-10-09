@@ -52538,7 +52538,7 @@
       "tier": 0,
       "measurable_benefit": "Reusable reaction or activity",
       "required_states": "on",
-      "frames": "8@8fps",
+      "frames": "10@8fps",
       "keeper_pose": "hot_drink_pour",
       "anchor": "anchor (24,40)",
       "reusable_source": "shared keeper",

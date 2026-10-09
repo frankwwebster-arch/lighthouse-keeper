@@ -187,7 +187,7 @@ def side_walk(step=0):
     return im
 
 
-def generated_frames(filename, expected, fallback=None, logical_width=32, logical_height=40, scale_reference_index=None, force_equal_cells=False, preserve_equal_cells=False, min_component_pixels=1000):
+def generated_frames(filename, expected, fallback=None, logical_width=32, logical_height=40, scale_reference_index=None, force_equal_cells=False, preserve_equal_cells=False, group_equal_components=False, min_component_pixels=1000):
     """Normalise an identity-locked generated source onto aligned contract slots."""
     source = Path(__file__).with_name(filename)
     if not source.exists():
@@ -209,7 +209,49 @@ def generated_frames(filename, expected, fallback=None, logical_width=32, logica
                 runs.append((start, x))
             start = None
     components = None
-    if preserve_equal_cells:
+    if group_equal_components:
+        # Some prop-heavy sheets have correct pose centres but overlapping
+        # horizontal extents. Group whole connected components around the ten
+        # largest actor bodies so a neighbour can never leak across a cell,
+        # while detached mugs and kettles remain with their nearest actor.
+        width, height = alpha.size
+        pixels = bytearray(alpha.tobytes())
+        found = []
+        for start, value in enumerate(pixels):
+            if not value:
+                continue
+            pixels[start] = 0
+            pending = [start]
+            members = []
+            min_x, min_y, max_x, max_y = width, height, 0, 0
+            while pending:
+                index = pending.pop()
+                y, x = divmod(index, width)
+                members.append(index)
+                min_x, min_y = min(min_x, x), min(min_y, y)
+                max_x, max_y = max(max_x, x), max(max_y, y)
+                for neighbour in (index - 1, index + 1, index - width, index + width):
+                    if 0 <= neighbour < width * height and pixels[neighbour] and (neighbour // width == y or neighbour % width == x):
+                        pixels[neighbour] = 0
+                        pending.append(neighbour)
+            if len(members) >= 20:
+                found.append((len(members), (min_x, min_y, max_x + 1, max_y + 1), members))
+        actors = sorted(sorted(found, reverse=True)[:expected], key=lambda item: item[1][0])
+        if len(actors) != expected:
+            raise ValueError(f"Expected {expected} keeper bodies in {filename}, found {len(actors)}")
+        actor_centres = [(box[0] + box[2]) / 2 for _, box, _ in actors]
+        grouped = [[] for _ in range(expected)]
+        for _, box, members in found:
+            centre = (box[0] + box[2]) / 2
+            grouped[min(range(expected), key=lambda index: abs(actor_centres[index] - centre))].extend(members)
+        bounds = []
+        components = []
+        for members in grouped:
+            xs = [index % width for index in members]
+            ys = [index // width for index in members]
+            bounds.append((min(xs), min(ys), max(xs) + 1, max(ys) + 1))
+            components.append(members)
+    elif preserve_equal_cells:
         # Recent generation prompts explicitly request equal cells.  Cropping
         # each cell as a whole preserves detached held props (records, darts,
         # fishing line and water drops) that component segmentation would lose.
@@ -693,6 +735,7 @@ for outfit in ("knight", "spaceman", "pirate", "tarzan", "halloween", "mechanic"
 ADDITIONAL_CLIPS.append(("keeper_mechanic_fix", "keeper-mechanic-fix-generated-source.png", 40, 40, dict(outfit="mechanic", hand_use_point=[34, 22], facing="right", interaction="fix-vehicle", mirror_safe=True, mirrors_for="left")))
 
 for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONAL_CLIPS:
+    frame_count = 10 if clip_name == "keeper_hot_drink_pour" else 8
     if clip_name == "keeper_boat_enter":
         # The 48 px canvas provides room for the climb; it must not enlarge the
         # keeper beyond the canonical 38 px standing height.
@@ -702,7 +745,7 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
     elif clip_name.startswith("keeper_hot_drink_"):
         # Keep the kettle, mug, spoon, liquid and steam in fixed equal cells,
         # including frames where the mug has detached from the keeper's hand.
-        frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True)
+        frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, group_equal_components=clip_name == "keeper_hot_drink_pour", preserve_equal_cells=clip_name != "keeper_hot_drink_pour")
     elif clip_name == "keeper_meal_place_side":
         # After release, the plated meal is detached from the keeper but must
         # remain in the actor strip until the world object takes over.
@@ -710,12 +753,12 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
         frames = [remove_small_alpha_components(frame) for frame in frames]
     else:
         try:
-            frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height)
+            frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height)
         except ValueError:
             # A few prop-heavy strips bridge adjacent x-runs.  Their prompts use
             # explicit equal cells; isolate the principal figure inside each cell
             # so a neighbour's overlapping prop cannot leak into the frame.
-            frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, force_equal_cells=True)
+            frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, force_equal_cells=True)
     if clip_name == "keeper_put_record":
         # The source's two middle poses touch by a few pixels.  The usable
         # figure begins well inside the cell; clear only that neighbour fringe.

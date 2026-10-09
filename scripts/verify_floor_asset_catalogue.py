@@ -66,7 +66,7 @@ required_clips={
     'keeper_shower_door_open_bathrobe':(8,8),
     'keeper_shower_enter_bathrobe':(8,8),
     'keeper_spiral_stairs_up':(8,8), 'keeper_spiral_stairs_down':(8,8),
-    'keeper_hot_drink_pour':(8,8), 'keeper_hot_drink_stir':(8,8),
+    'keeper_hot_drink_pour':(10,8), 'keeper_hot_drink_stir':(8,8),
     'keeper_hot_drink_pickup':(8,8), 'keeper_hot_drink_drink':(8,8),
     'keeper_hot_drink_put_down':(8,8),
     'keeper_boat_enter':(8,8), 'keeper_boat_exit':(8,8),
@@ -207,13 +207,16 @@ for name,interaction,point in [
     ('keeper_hot_drink_drink','drink-hot-drink',[34,17]),
     ('keeper_hot_drink_put_down','put-down-hot-drink',[40,28]),
 ]:
+    frame_count=10 if name=='keeper_hot_drink_pour' else 8
     assert manifest[name]['w']==48 and manifest[name]['h']==40
+    assert manifest[name]['frames']==frame_count
     assert manifest[name]['interaction']==interaction and manifest[name]['handUsePoint']==point
     assert manifest[name]['mirrorSafe'] is True and manifest[name]['mirrorsFor']=='left'
     drink_strip=Image.open(root/'public/sprites'/manifest[name]['file']).convert('RGBA')
     drink_heights=[]
-    for frame_index in range(8):
+    for frame_index in range(frame_count):
         visible=drink_strip.crop((frame_index*48*4,0,(frame_index+1)*48*4,40*4)).getchannel('A').getbbox()
+        assert visible[0]>0 and visible[2]<48*4,(name,frame_index,visible)
         drink_heights.append(visible[3]-visible[1])
     assert max(drink_heights)==152 and min(drink_heights)>=131,(name,drink_heights)
 for name,interaction,facing in [
@@ -403,7 +406,7 @@ previews={
     'keeper-shower-door-open-bathrobe':(8,120),
     'keeper-shower-enter-bathrobe':(8,120),
     'keeper-spiral-stairs-up':(8,120), 'keeper-spiral-stairs-down':(8,120),
-    'keeper-hot-drink-pour':(8,120), 'keeper-hot-drink-stir':(8,120),
+    'keeper-hot-drink-pour':(10,120), 'keeper-hot-drink-stir':(8,120),
     'keeper-hot-drink-pickup':(8,120), 'keeper-hot-drink-drink':(8,120),
     'keeper-hot-drink-put-down':(8,120),
     'keeper-boat-enter':(8,120), 'keeper-boat-exit':(8,120),
