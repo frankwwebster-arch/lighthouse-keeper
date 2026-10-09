@@ -267,6 +267,9 @@ At 1500px browser width or above, focused mode lays out the pinned canon, stage
 and compact two-column control console horizontally. Size controls are amber,
 ghost controls purple, action transforms blue, frame navigation teal, and
 review/notes green or red.
+Each character-width and character-height slider also has −0.5% and +0.5%
+buttons for precise adjustment. These buttons update the same saved/exported
+per-animation values as the sliders and obey the same 50%–150% limits.
 The display zoom is retained immediately in browser-local progress. Saving a
 card records it as the latest completed animation; reloading restores that zoom
 and opens focused mode on the next filename-ordered card, clamped to the final

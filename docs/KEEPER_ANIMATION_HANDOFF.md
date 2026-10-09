@@ -47,8 +47,9 @@ Codex task should be able to continue from here without relying on the old chat.
 6. Rebuild, publish and rerun the complete all-sheet audit after every keeper
    art pass. It must finish with zero failures.
 
-The per-card character-width and character-height sliders reshape only the
-reviewed action around its declared feet/seat/contact anchor. The untouched
+The per-card character-width and character-height sliders and adjacent ±0.5%
+buttons reshape only the reviewed action around its declared feet/seat/contact
+anchor. The untouched
 reference, rulers, original ghost, matching walk and bridge clips remain at
 100%, so Frank can judge the proposed shape against fixed evidence. Earlier
 uniform percentages migrate to both axes. A saved proposal is not a production

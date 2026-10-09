@@ -206,8 +206,9 @@ Delivered in `docs/keeper-scale-audit/review.html`:
   standard-cap poses, the gold badge on the blue skull line is a calibrated
   proxy only; changed posture, head angle and headwear need anatomy checks.
 - Per-animation 50%–150% width and height sliders reshape the action around its
-  declared contact anchor while the reference, ruler, ghost, walk and bridge
-  stay at 100%. Horizontal and vertical controls reposition only the reviewed
+  declared contact anchor; −0.5%/+0.5% buttons beside each axis provide precise
+  adjustments while the reference, ruler, ghost, walk and bridge stay at 100%.
+  Horizontal and vertical controls reposition only the reviewed
   action and include a zero-offset reset. Earlier uniform choices migrate to both axes. Saved proposals
   export as JSON for later source-art rebuilding; the viewer never edits sprites.
 - Flying and swimming cards align their first-frame figure bottom to the red
