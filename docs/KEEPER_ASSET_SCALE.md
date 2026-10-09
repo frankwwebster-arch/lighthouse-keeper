@@ -197,6 +197,13 @@ all 170 sheets is in `docs/keeper-scale-audit/keeper-scale-metrics.json`; the
 eight contact sheets render every sample at one fixed display scale so a larger
 transparent canvas can never make its keeper look smaller.
 
+For interactive comparison, open `docs/keeper-scale-audit/review.html`. It puts
+all 152 accepted animation sheets on the same 96 × 96 logical stage without
+fitting them to their cards, draws the shared skull/shoulder/hip/seat/floor
+rulers, and can play the matching same-outfit walk immediately before an
+action. The raw seam, known-bridge and onion-skin modes make transition problems
+visible without changing the underlying sprite scale.
+
 The sad, hungry, bored and cross reactions share one enforced upright scale:
 their visible height is 38 logical pixels (152 pixels in the density-4 source)
 inside the standard 32 × 40 canvas. The rear vomiting clip uses that identical

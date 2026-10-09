@@ -13,6 +13,10 @@ This is the permanent, reproducible audit of every keeper sheet. It deliberately
 
 Upright poses use inferred skull-to-supporting-sole height. Costumes use the face/ear/neck structure to infer the skull under hats and helmets. Seated and crouched poses use the head unit plus shoulder–hip–sole chain. Swimming, press-ups and other horizontal poses use the same articulated chain along the body axis. A skin-colour face proxy is also recorded where visible as a machine-checkable warning signal; it is not allowed to overrule the anatomical method.
 
+## Interactive comparison
+
+Open [the sizing and transition review](review.html) to see every accepted animation at one fixed world scale. It can play actions alone, prepend the matching same-outfit walk, insert known bridge clips, or freeze the exact walk-to-action seam with onion skin.
+
 ## Corrected sheets
 
 - `keeper_bath_wash` — redrawn and normalised from the standing bare-headed and seated canonical landmarks.

@@ -12,7 +12,8 @@ to infer meaning from filenames or Git history.
 | Rebuild or adjust it | `art/source/keeper-first-batch/author_keeper.py` and the matching `*-generated-source.png` |
 | Check exact frames, speed and alignment | matching JSON in `art/raw/keeper-first-batch/` |
 | Build an object at the right size/height | `docs/KEEPER_OBJECT_DIMENSIONS.md`, `data/keeper_object_dimensions.json` and `data/keeper_asset_contract.json` |
-| Inspect the all-sheet scale evidence | `docs/keeper-scale-audit/README.md` and its fixed-scale contact sheets |
+| Compare every animation at one scale and test walk seams | `docs/keeper-scale-audit/review.html` |
+| Inspect the all-sheet measurement evidence | `docs/keeper-scale-audit/README.md` and its fixed-scale contact sheets |
 
 Folders named `replaced-*` are history only. Never use those in the game.
 
@@ -246,6 +247,20 @@ costumes: object interaction chooses a transition recipe; the recipe supplies
 walk-stop, facing change, equip/unequip and the final activity. Individual
 furniture therefore needs only its stable use/seat/hand points and interaction
 tag—the controller fills the standard approach and departure transitions.
+
+Use `docs/keeper-scale-audit/review.html` to test those recipes before they are
+wired into gameplay. Its raw-seam mode appends an action directly to the final
+four frames of the matching same-outfit walk, deliberately exposing jumps. Its
+known-bridge mode inserts the currently documented turn, sit or bed-entry clip.
+Seam freeze overlays the final approach pose and first action pose. A standard
+uniform action uses `keeper_walk`; costume actions use their own walking family
+so the viewer never creates a magical outfit change merely to test a seam.
+
+The current generated inventory gives 119 actions a same-outfit walk and 36 a
+known bridge. It labels 33 facing/posture gaps, 21 outfits or states without a
+walking family, and 3 water/air actions requiring special entry. Five reusable
+bridge clips are also identified separately. These labels
+are design evidence, not promises that an unimplemented bridge already exists.
 
 ## Current integration boundary
 

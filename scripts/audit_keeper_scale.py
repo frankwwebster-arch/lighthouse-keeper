@@ -224,10 +224,14 @@ def load_assets() -> list[dict]:
             "name": name,
             "source": str(png_path.relative_to(ROOT)),
             "frames": sidecar["frames"],
+            "fps": sidecar.get("fps", 8) or 8,
+            "loop": sidecar.get("loop", True),
             "canvas": [sidecar["w"], sidecar["h"]],
             "anchor": sidecar.get("anchor"),
             "facing": sidecar.get("facing"),
             "outfit": sidecar.get("outfit", "standard"),
+            "interaction": sidecar.get("interaction"),
+            "seatPoint": sidecar.get("seatPoint"),
             "postureClass": posture,
             "measurementMethod": method,
             "status": status,
@@ -311,6 +315,99 @@ def publish(assets: list[dict]) -> None:
         "assets": serialisable,
     }
     (OUT / "keeper-scale-metrics.json").write_text(json.dumps(payload, indent=2) + "\n")
+
+    reviewed_by_name = {asset["name"]: asset for asset in serialisable if asset["status"] != "excluded-technical"}
+    walk_by_outfit = {
+        "standard": "keeper_walk",
+        "party-hat": "keeper_party_walk",
+        "light-blue-pyjamas": "keeper_pyjamas_walk",
+        "cream-bathrobe": "keeper_bathrobe_walk",
+        "souwester": "keeper_souwester_walk_side",
+        "knight": "keeper_knight_walk_side",
+        "spaceman": "keeper_spaceman_walk_side",
+        "pirate": "keeper_pirate_walk_side",
+        "tarzan": "keeper_tarzan_walk_side",
+        "halloween": "keeper_halloween_walk_side",
+        "mechanic": "keeper_mechanic_walk_side",
+    }
+    bridge_sources = {
+        "keeper_turn_back", "keeper_sit_side", "keeper_sit_front",
+        "keeper_get_into_bed", "keeper_party_hat_put_on_back",
+    }
+
+    def bridge_for(asset: dict) -> list[str]:
+        if asset["name"] == "keeper_pyjamas_snore":
+            return ["keeper_get_into_bed"]
+        if asset["outfit"] != "standard":
+            return []
+        if asset["name"] in {"keeper_sit_side", "keeper_sit_front", "keeper_turn_back"}:
+            return []
+        if asset.get("seatPoint"):
+            return ["keeper_sit_front" if asset.get("facing") == "front" else "keeper_sit_side"]
+        if asset.get("facing") and any(token in asset["facing"] for token in ("back", "rear")):
+            return ["keeper_turn_back"]
+        return []
+
+    def transition_label(asset: dict, lead_name: str | None, bridge_names: list[str]) -> tuple[str, str]:
+        if asset["name"] in bridge_sources:
+            return "bridge-clip", "Reusable transition clip; inspect its own entry and exit seams."
+        if not lead_name:
+            return "no-walk", "No same-outfit walking family exists yet."
+        if bridge_names:
+            route = " → ".join(name.removeprefix("keeper_").replace("_", " ") for name in bridge_names)
+            return "known-bridge", f"Walk → {route} → action."
+        if asset["postureClass"] == "seated":
+            return "missing-bridge", "Walk → stop → matching-outfit sit transition is still required."
+        if asset["postureClass"] == "crouched":
+            return "missing-bridge", "Walk → stop → crouch transition is still required."
+        if asset["postureClass"] == "body-axis":
+            return "special-entry", "Requires a dedicated horizontal/airborne/water entry."
+        facing = asset.get("facing") or ""
+        if "front" in facing and "right" not in facing:
+            return "missing-bridge", "Walk → stop → side-to-front turn is still required."
+        if any(token in facing for token in ("back", "rear")):
+            return "missing-bridge", "Walk → stop → rear turn/stance bridge is still required."
+        return "direct-test", "Direct matching-outfit walk-to-action seam candidate."
+
+    def review_clip(asset: dict) -> dict:
+        fields = (
+            "name", "source", "frames", "fps", "loop", "canvas", "anchor",
+            "facing", "outfit", "interaction", "seatPoint", "postureClass",
+            "status", "note", "medianFaceProxyWidth", "medianFaceProxyHeight",
+            "faceProxyCoverage", "alphaHeightRange", "alphaWidthRange",
+        )
+        return {field: asset.get(field) for field in fields}
+
+    review_assets = []
+    for asset in serialisable:
+        if asset["status"] == "excluded-technical":
+            continue
+        lead_name = walk_by_outfit.get(asset["outfit"])
+        is_walk_source = lead_name == asset["name"]
+        if lead_name not in reviewed_by_name or is_walk_source:
+            lead_name = None
+        bridge_names = [name for name in bridge_for(asset) if name in reviewed_by_name and name != asset["name"]]
+        if is_walk_source:
+            transition_kind, transition_note = "locomotion", "Matching-outfit walking source for transition tests."
+        else:
+            transition_kind, transition_note = transition_label(asset, lead_name, bridge_names)
+        review_assets.append({
+            **review_clip(asset),
+            "leadIn": review_clip(reviewed_by_name[lead_name]) if lead_name else None,
+            "bridge": [review_clip(reviewed_by_name[name]) for name in bridge_names],
+            "transitionKind": transition_kind,
+            "transitionNote": transition_note,
+        })
+
+    template = (ROOT / "art/source/keeper-first-batch/scale-review-template.html").read_text()
+    review_payload = {
+        "contractVersion": CONTRACT["version"],
+        "canonicalAnatomy": CONTRACT["canonicalAnatomy"],
+        "counts": payload["counts"],
+        "assets": review_assets,
+    }
+    (OUT / "review.html").write_text(template.replace("__KEEPER_REVIEW_DATA__", json.dumps(review_payload, separators=(",", ":"))))
+
     with (OUT / "keeper-scale-summary.csv").open("w", newline="") as handle:
         fields = ["name", "frames", "canvas", "postureClass", "measurementMethod", "status", "outfit", "facing", "medianFaceProxyWidth", "medianFaceProxyHeight", "faceProxyCoverage", "alphaHeightRange", "alphaWidthRange", "bottomClearanceRange", "note"]
         writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
@@ -333,6 +430,10 @@ def publish(assets: list[dict]) -> None:
         "## Measurement method",
         "",
         "Upright poses use inferred skull-to-supporting-sole height. Costumes use the face/ear/neck structure to infer the skull under hats and helmets. Seated and crouched poses use the head unit plus shoulder–hip–sole chain. Swimming, press-ups and other horizontal poses use the same articulated chain along the body axis. A skin-colour face proxy is also recorded where visible as a machine-checkable warning signal; it is not allowed to overrule the anatomical method.",
+        "",
+        "## Interactive comparison",
+        "",
+        "Open [the sizing and transition review](review.html) to see every accepted animation at one fixed world scale. It can play actions alone, prepend the matching same-outfit walk, insert known bridge clips, or freeze the exact walk-to-action seam with onion skin.",
         "",
         "## Corrected sheets",
         "",

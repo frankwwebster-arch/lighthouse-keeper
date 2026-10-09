@@ -69,8 +69,8 @@ Completed in the first implementation slice:
 
 Next priorities:
 
-1. Review delivery-order items 2 and the 152 accepted keeper animations in `docs/floor-asset-catalogue/review.html`; obsolete modular/reference art and the explicitly deleted room/TV images are hidden.
-2. Use `data/keeper_asset_contract.json` and `data/keeper_object_dimensions.json` as the authority for all new object scale, keeper pivots and interaction heights. The 1,210-frame measurement record is in `docs/keeper-scale-audit/`.
+1. Review delivery-order item 2 in `docs/floor-asset-catalogue/review.html`, then compare the 152 accepted keeper animations and their walk/action seams in `docs/keeper-scale-audit/review.html`; obsolete modular/reference art and the explicitly deleted room/TV images are hidden.
+2. Use `data/keeper_asset_contract.json` and `data/keeper_object_dimensions.json` as the authority for all new object scale, keeper pivots and interaction heights. The 1,210-frame measurement record and fixed-scale transition viewer are in `docs/keeper-scale-audit/`.
 3. Add a day/night palette or overlay system and the proper roughly 30-second recap.
 4. Design future floor missions so eligible standard floors can unlock in different orders; do not hard-code a linear room sequence.
 5. Leave aquarium, weather station, lair, lift, pets, visitors, ship and weather art until the later batch is authorised.

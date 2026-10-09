@@ -16,7 +16,7 @@ Pixel studio lets Frank adjust pixel block size, paint or erase individual frame
 
 BB Sea news literally reads `B B SEA`, adapted from the supplied BBC NEWS reference, followed by NEWS lettering and a tiny newsreader head. Sport shows football; Nature shows animals. Four ON frames are one animated state, not four asset variants. Broken TV uses one damaged image plus shared smoke/sparks and existing body vibration. Channel selection reuses existing watch/nature actions; no new gameplay effect is claimed. The production guide now requires ON only for operating devices; passive furniture remains standard and is designed around keeper poses.
 
-The Completed assets and Pixel studio tabs contain the 152 accepted keeper animation sheets. Eighteen obsolete modular/reference sheets remain technical history but are intentionally absent, along with Frank's other explicitly deleted review images. All 1,210 frames are measured in `../keeper-scale-audit/`; those fixed-scale contact sheets, rather than outer silhouette size, are the review authority. Normal runtime strips are 32 × 40 at density 4, while larger canvases provide transparent clearance for travel, horizontal poses, tools or headwear without changing the keeper.
+The Completed assets and Pixel studio tabs contain the 152 accepted keeper animation sheets. Eighteen obsolete modular/reference sheets remain technical history but are intentionally absent, along with Frank's other explicitly deleted review images. All 1,210 frames are measured in `../keeper-scale-audit/`; its unified `review.html` and printable fixed-scale contact sheets, rather than outer silhouette size, are the review authority. The unified viewer also prepends matching-outfit walks and exposes action seams. Normal runtime strips are 32 × 40 at density 4, while larger canvases provide transparent clearance for travel, horizontal poses, tools or headwear without changing the keeper.
 
 The production walk is an eight-frame right-facing side cycle at 10 fps. The
 runtime mirrors it for left-facing movement. `keeper-walk-preview.gif` is an
@@ -76,7 +76,8 @@ New assets are delivery candidates pending Frank’s review. The remaining space
 | Pipeline extension | `scripts/sprites.ts` |
 | Production art style guide | [ART_STYLE_GUIDE.md](ART_STYLE_GUIDE.md) |
 | Asset-only integration handoff | `HANDOFF.md` |
-| All-sheet keeper scale audit | `../keeper-scale-audit/` |
+| Unified keeper scale and transition review | `../keeper-scale-audit/review.html` |
+| All-sheet keeper metrics and printable audit | `../keeper-scale-audit/` |
 | Keeper-derived object dimensions | `../../data/keeper_object_dimensions.json` |
 
 ## Rebuild and verification

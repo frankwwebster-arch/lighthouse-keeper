@@ -539,6 +539,14 @@ assert scale_audit['counts']['technicalRejectedSheets']==18
 assert scale_audit['counts']['allFramesMeasured']==1210
 assert len(scale_audit['contactSheets'])==8
 assert all((root/path).exists() for path in scale_audit['contactSheets'])
+scale_review=(root/'docs/keeper-scale-audit/review.html').read_text()
+assert '__KEEPER_REVIEW_DATA__' not in scale_review
+assert '"reviewedAnimationSheets":152' in scale_review
+for token in (
+    'Action only', 'Raw matching-walk seam', 'Known bridge route',
+    'Seam freeze / onion skin', 'keeper_walk', 'Matching-outfit walking source',
+):
+    assert token in scale_review,token
 walk=Image.open(root/'public/sprites'/manifest['keeper_walk']['file']).convert('RGBA')
 walk_frames=[walk.crop((i*128,0,(i+1)*128,160)) for i in range(8)]
 assert len({frame.tobytes() for frame in walk_frames})>=5

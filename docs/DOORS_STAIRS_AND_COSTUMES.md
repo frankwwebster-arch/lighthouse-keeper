@@ -1,13 +1,13 @@
 # Doors, stairway, costumes and seamless animation
 
 Date: 9 October 2026
-Status: agreed design plus open decisions. **Nothing here is built yet.** Written for Frank, Codex and later Claude sessions. Decisions Frank has agreed are marked **Agreed**; everything else is either a recommendation or a decision still to make (the list is at the end).
+Status: agreed design plus open decisions. The fixed-scale visual transition review described in section 7 is now built; the door/stair/costume-routing gameplay and automated pose contracts are not. Written for Frank, Codex and later Claude sessions. Decisions Frank has agreed are marked **Agreed**; everything else is either a recommendation or a decision still to make (the list is at the end).
 
 This builds on Codex's keeper work rather than replacing it:
 
 - `docs/KEEPER_ANIMATIONS.md`: the clip index and the direction rules (mirror, reverse).
 - `docs/KEEPER_ASSET_SCALE.md` and `data/keeper_asset_contract.json`: the fixed body scale and contact points.
-- `docs/keeper-scale-audit/`: the all-frame scale audit (skull, shoulder, hip and sole landmarks; 0.5 px landmark drift, 1 px core-width drift).
+- `docs/keeper-scale-audit/`: the all-frame scale audit plus the unified fixed-scale walk/action transition viewer (skull, shoulder, hip and sole landmarks; 0.5 px landmark drift, 1 px core-width drift).
 - `data/keeper_object_dimensions.json`: door, seat, table and other datums, all taken from the keeper.
 
 ## 1. The idea in one paragraph
@@ -41,7 +41,7 @@ As the numbers stand, he is 3 px taller than the room he stands in, and a door t
 Options:
 
 - **Taller floors.** For example, 48–52 logical px per band, which fits a 40–44 px door with a ceiling above it. The three delivered room plates and the shell would need redrawing at the new height, and the game constant `FLOOR_STEP` would change. Furniture contact heights are unaffected, because they are measured from the floor.
-- **Smaller keeper.** This breaks Codex's locked scale and every one of the 167 sheets. Not recommended.
+- **Smaller keeper.** This breaks Codex's locked scale and all 170 delivered sheets (including the 152 accepted animation sheets). Not recommended.
 - **Drawing the keeper at a different pixel size from the rooms.** This breaks the "one logical pixel = 4 screen pixels everywhere" rule and makes the pixels mismatched. Not recommended.
 
 **Recommendation:** taller floors, settled by Frank and Codex before the next room or shell art. Whatever height is chosen becomes the one fixed band height for every standard floor and is never changed again.
@@ -132,7 +132,10 @@ What exists and what is missing today, from `public/sprites/manifest.json`:
 
 ## 7. Joining clips without a blip
 
-Codex's audit already proves every frame is the same body scale. What it does not yet check is where one clip hands over to the next. That handover is where a visible jump happens.
+Codex's audit proves every frame is measured at the same body scale. The new
+`docs/keeper-scale-audit/review.html` also provides a visual check where one
+clip hands over to the next. It does not yet enforce named start/end poses or
+automatically prove that every legal gameplay route is seamless.
 
 ### The rule
 
@@ -164,11 +167,21 @@ Props appearing or disappearing at a handover are acceptable when they are in hi
 
 ### The review page
 
-This extends `docs/keeper-scale-audit/`:
+Delivered in `docs/keeper-scale-audit/review.html`:
 
-- Onion skins: each clip's first and last frames in red over the neutral pose in blue. A match shows as one grey keeper.
-- Every clip animated side by side at 4× on one shared feet line, with guide lines.
-- A "switch test" that plays random legal clip-to-clip changes back to back, which is the closest thing to real play.
+- All 152 accepted clips at one unchanged world scale on a shared 96 × 96 stage,
+  with floor, skull, shoulder, hip and seat guide lines and 2×/3×/4× integer zoom.
+- Action-only, raw matching-outfit walk seams and routes containing the known
+  turn/sit/bed bridges.
+- A seam-freeze onion skin of the final approach frame and first action frame.
+- Filters that isolate the 33 missing facing/posture bridges, 21 states without
+  a walking family, 3 special water/air entries, 5 bridge clips and other groups.
+
+Still to build after the `startPose` / `endPose` metadata exists:
+
+- Neutral-pose red/blue onion skins that can be assessed automatically.
+- A random legal clip-to-clip switch test using the declared pose graph, which
+  is the closest thing to real play.
 
 ### Mood
 
@@ -203,7 +216,7 @@ None of this is built. When it is:
 | 12 | Door design | one shared door / a themed door per room | one shared door frame, optional themed leaf | Codex |
 | 13 | Front door breakdowns | keep breakable but never block going out / unbreakable | keep breakable, never blocks travel | Frank |
 | 14 | Neutral frame per costume | new still frame per costume / first frame of its walk | new still frame per costume (a walk frame is mid-stride) | Codex |
-| 15 | Who builds the join checks | Codex extends the scale audit / Claude adds game tests / both | both: Codex checks the art at handovers, Claude checks every activity has a legal route of clips | Frank |
+| 15 | Who builds the join checks | Codex extends the scale audit / Claude adds game tests / both | both: Codex's visual seam review is delivered; named-pose art checks and Claude's legal-route game tests remain | Frank |
 | 16 | `privacy` split from `outfit` in the manifest | yes / no | yes | Codex |
 | 17 | Lift and slide placement | inside the stairway column / a second column beside it | the slide wraps the stairway; the lift takes the stairway's back half or a second column, depending on 2 | Codex |
 | 18 | Costume table format | in `config.ts` / a CSV Frank can edit | CSV, matching the upgrade list | Frank |
