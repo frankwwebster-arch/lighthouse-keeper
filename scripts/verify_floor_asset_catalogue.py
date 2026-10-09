@@ -578,10 +578,15 @@ assert all((root/path).exists() for path in scale_audit['contactSheets'])
 scale_review=(root/'docs/keeper-scale-audit/review.html').read_text()
 assert '__KEEPER_REVIEW_DATA__' not in scale_review
 assert '"reviewedAnimationSheets":152' in scale_review
+for removed_control in ('id="search"','id="outfit"','id="posture"','id="kind"','id="sort"'):
+    assert removed_control not in scale_review,removed_control
 for token in (
     'Action only', 'Raw matching-walk seam', 'Known bridge route',
     'Seam freeze / onion skin', 'keeper_walk', 'Matching-outfit walking source',
-    'Original ghost off', 'measured-and-visual-pass', 'torso difference',
+    'measured-and-visual-pass', 'torso difference',
+    'Pause every animation', 'Ghost original on every animation',
+    'runtime: ${asset.name}.png', 'source: ${basename(asset.source)}',
+    'animations, all shown', 'function buildGallery()',
 ):
     assert token in scale_review,token
 walk=Image.open(root/'public/sprites'/manifest['keeper_walk']['file']).convert('RGBA')

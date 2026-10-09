@@ -90,7 +90,20 @@ Costumes for play or dressing up (knight, spaceman, pirate, Tarzan, Halloween) a
 
 ### At which door
 
-He wears the next activity's costume and puts it on at a doorway on the way there. **Recommendation:** two quick swaps rather than one. As he leaves a room he changes back to his standard clothes, and as he enters the target room he changes into its costume. So he is always in standard clothes on the stairway. This means only the standard uniform needs stair, ladder, lift and slide clips, rather than every costume. Where there is only one door between the two rooms (bedroom ↔ bathroom), it is a single swap.
+Every costume change happens while the keeper is completely hidden behind a
+door. All doors hinge on the player's side and render in front of him, creating
+a short full-body occlusion. He approaches in the old outfit, the foreground
+door covers him, the runtime swaps costume state while no part of him is
+visible, and he emerges in the new outfit. There is no visible dressing or
+morphing transition; the party hat follows the same rule, so its put-on clip is
+optional flavour rather than required gameplay plumbing.
+
+Use two quick hidden swaps for travel between rooms: as he leaves a room he
+changes back to standard clothes, and as he enters the target room he changes
+into its costume. He is therefore always in standard clothes on the stairway,
+so only the standard uniform needs stair, ladder, lift and slide clips. Where
+there is only one door between the two rooms (bedroom ↔ bathroom), use one
+hidden swap.
 
 ### Changing places
 
@@ -111,7 +124,8 @@ Any costume he can wear in a room needs:
 - **A turn to face away**, if any of its activities are back to the camera.
 - Its activity clips.
 
-Only the standard uniform needs stair, ladder, lift and slide clips (if the two-swap rule is agreed).
+Only the standard uniform needs stair, ladder, lift and slide clips under this
+door-occluded two-swap rule.
 
 What exists and what is missing today, from `public/sprites/manifest.json`:
 
@@ -175,8 +189,12 @@ Delivered in `docs/keeper-scale-audit/review.html`:
 - Action-only, raw matching-outfit walk seams and routes containing the known
   turn/sit/bed bridges.
 - A seam-freeze onion skin of the final approach frame and first action frame.
-- Filters that isolate the 33 missing facing/posture bridges, 21 states without
-  a walking family, 3 special water/air entries, 5 bridge clips and other groups.
+- One filename-ordered gallery showing all 152 clips without search or filters;
+  every card names its runtime PNG and source strip. Global controls pause or
+  play the whole gallery and apply or remove the original-keeper ghost from all
+  clips together. The summary still counts the 33 missing facing/posture
+  bridges, 21 states without a walking family, 3 special water/air entries and
+  5 bridge clips.
 
 Still to build after the `startPose` / `endPose` metadata exists:
 

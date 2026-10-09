@@ -7,40 +7,35 @@
 <style>
   :root{color-scheme:dark;--ink:#edf5fb;--muted:#9eb0be;--panel:#17212a;--line:#334452;--blue:#4da6ff;--green:#52d273;--amber:#f2b84b;--red:#ff5167;--purple:#c792ea;--orange:#ff9f43}
   *{box-sizing:border-box} body{margin:0;background:#0d1319;color:var(--ink);font:14px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-  header{position:sticky;top:0;z-index:5;background:rgba(13,19,25,.97);border-bottom:1px solid var(--line);padding:18px 22px 14px;backdrop-filter:blur(8px)}
+  header{background:#0d1319;border-bottom:1px solid var(--line);padding:16px 18px 12px}
   h1{font:700 24px/1.1 system-ui,sans-serif;margin:0 0 7px}.lede{color:var(--muted);max-width:1100px;margin:0 0 14px}
   .controls{display:flex;flex-wrap:wrap;gap:9px;align-items:end}.control{display:grid;gap:4px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em}
-  input,select,button{font:inherit;color:var(--ink);background:#202d38;border:1px solid #425665;border-radius:6px;padding:7px 9px}input{width:240px}button{cursor:pointer}button:hover{border-color:#89a6ba}.active{background:#25455b;border-color:#5fb5ec}
+  select,button{font:inherit;color:var(--ink);background:#202d38;border:1px solid #425665;border-radius:6px;padding:7px 9px}button{cursor:pointer}button:hover{border-color:#89a6ba}.active{background:#25455b;border-color:#5fb5ec}
   .summary{display:flex;gap:18px;flex-wrap:wrap;margin:12px 0 0;color:var(--muted)}.summary b{color:var(--ink)}
   .legend{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;color:var(--muted);font-size:12px}.swatch{display:inline-block;width:14px;height:2px;margin-right:4px;vertical-align:middle}
-  main{padding:18px 22px 40px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:15px}
-  article{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;min-width:0}.cardhead{padding:12px 13px 9px;border-bottom:1px solid var(--line)}
-  h2{font-size:14px;margin:0 0 7px;overflow-wrap:anywhere}.tags{display:flex;flex-wrap:wrap;gap:5px}.tag{padding:2px 6px;border:1px solid #3f5261;border-radius:999px;color:#b8c9d5;font-size:10px}.tag.direct-test{color:#79d89a}.tag.known-bridge{color:#78bfff}.tag.bridge-clip{color:#c792ea}.tag.missing-bridge{color:#ffcc75}.tag.special-entry{color:#e6a4ff}.tag.no-walk{color:#ff8c99}.tag.locomotion{color:#aab8c2}
-  .stagewrap{position:relative;display:grid;place-items:center;background:#101920;padding:10px;min-height:308px;overflow:auto}.stagewrap.boundary{box-shadow:inset 0 0 0 2px var(--orange)}canvas{image-rendering:pixelated;max-width:none;height:auto;background:#111a22;border:1px solid #263744}
-  .stageLabel{position:absolute;left:16px;top:14px;color:#d8e6ef;background:#101820cc;padding:3px 6px;border-radius:4px;font-size:11px}.boundary .stageLabel{color:#ffd3a4}
-  .cardbody{padding:10px 13px 12px}.route{min-height:40px;color:#cbd8e1}.note{color:var(--muted);font-size:12px;margin-top:3px}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px;margin:9px 0;color:var(--muted);font-size:11px}.metrics b{color:#dce8ef;font-weight:500}.cardbuttons{display:flex;gap:7px}.empty{padding:40px;color:var(--muted)}
+  main{padding:12px 14px 40px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:9px}
+  article{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;min-width:0}.cardhead{padding:8px 9px 7px;border-bottom:1px solid var(--line)}
+  h2{font-size:12px;margin:0 0 2px;overflow-wrap:anywhere}.filenames{color:#7fa0b6;font-size:9px;line-height:1.35;margin-bottom:6px;overflow-wrap:anywhere}.tags{display:flex;flex-wrap:wrap;gap:3px}.tag{padding:1px 5px;border:1px solid #3f5261;border-radius:999px;color:#b8c9d5;font-size:9px}.tag.direct-test{color:#79d89a}.tag.known-bridge{color:#78bfff}.tag.bridge-clip{color:#c792ea}.tag.missing-bridge{color:#ffcc75}.tag.special-entry{color:#e6a4ff}.tag.no-walk{color:#ff8c99}.tag.locomotion{color:#aab8c2}
+  .stagewrap{position:relative;display:grid;place-items:center;background:#101920;padding:6px;min-height:206px;overflow:auto}.stagewrap.boundary{box-shadow:inset 0 0 0 2px var(--orange)}canvas{image-rendering:pixelated;max-width:none;height:auto;background:#111a22;border:1px solid #263744}
+  .stageLabel{position:absolute;left:9px;top:9px;color:#d8e6ef;background:#101820cc;padding:2px 5px;border-radius:4px;font-size:9px}.boundary .stageLabel{color:#ffd3a4}
+  .cardbody{padding:7px 9px 9px}.route{min-height:30px;color:#cbd8e1;font-size:10px}.note{color:var(--muted);font-size:10px;margin-top:2px}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:2px 8px;margin:6px 0;color:var(--muted);font-size:9px}.metrics b{color:#dce8ef;font-weight:500}.cardbuttons{display:flex;gap:5px}.cardbuttons button{font-size:10px;padding:5px 7px}
   .help{margin:0 0 16px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:#121b23;color:var(--muted)}.help b{color:var(--ink)}
-  @media(max-width:620px){header,main{padding-left:12px;padding-right:12px}.grid{grid-template-columns:1fr}input{width:190px}}
+  @media(max-width:620px){header,main{padding-left:10px;padding-right:10px}.grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header>
   <h1>Keeper sizing and transition review</h1>
-  <p class="lede">Every accepted keeper sheet is rendered on the same 96 × 96 logical stage at the same integer zoom. Nothing is fitted to the card. The original approved keeper can be shown as a translucent fixed-scale reference. Matching-outfit walks are prepended only where the outfit remains unchanged; known sit, turn and bed bridges can then be inserted for a more truthful route.</p>
+  <p class="lede">All 152 accepted animations are shown below in one filename-ordered gallery. Nothing is hidden behind search or filters, and nothing is fitted to its card. Use the few global controls only when you want to inspect scale or transitions differently.</p>
   <div class="controls">
-    <label class="control">Find<input id="search" type="search" placeholder="animation name"></label>
-    <label class="control">Outfit<select id="outfit"><option value="">All outfits</option></select></label>
-    <label class="control">Posture<select id="posture"><option value="">All postures</option></select></label>
-    <label class="control">Transition<select id="kind"><option value="">All transition states</option></select></label>
     <label class="control">Mode<select id="mode">
-      <option value="action">Action only</option>
-      <option value="raw" selected>Raw matching-walk seam</option>
+      <option value="action" selected>Action only</option>
+      <option value="raw">Raw matching-walk seam</option>
       <option value="bridge">Known bridge route</option>
       <option value="freeze">Seam freeze / onion skin</option>
     </select></label>
-    <label class="control">Sort<select id="sort"><option value="name">Name</option><option value="transition">Transition need</option><option value="outfit">Outfit</option></select></label>
-    <label class="control">Zoom<select id="zoom"><option value="2">2×</option><option value="3" selected>3×</option><option value="4">4×</option></select></label>
-    <button id="play" class="active">Pause all</button><button id="rulers" class="active">Rulers on</button><button id="original">Original ghost off</button>
+    <label class="control">Zoom<select id="zoom"><option value="2" selected>2× compact</option><option value="3">3×</option><option value="4">4×</option></select></label>
+    <button id="play" class="active">Pause every animation</button><button id="rulers" class="active">Rulers on</button><button id="original">Ghost original on every animation</button>
   </div>
   <div class="summary" id="summary"></div>
   <div class="legend"><span><i class="swatch" style="background:var(--red)"></i>floor</span><span><i class="swatch" style="background:var(--blue)"></i>skull top</span><span><i class="swatch" style="background:var(--green)"></i>shoulders</span><span><i class="swatch" style="background:var(--amber)"></i>hips</span><span><i class="swatch" style="background:var(--purple)"></i>seat</span></div>
@@ -52,7 +47,7 @@
 <script>
 const DATA=__KEEPER_REVIEW_DATA__;
 const $=id=>document.getElementById(id);
-const state={mode:'raw',zoom:3,playing:true,rulers:true,original:false,visible:new Set(),cards:new Map(),stamp:0};
+const state={mode:'action',zoom:2,playing:true,rulers:true,original:false,visible:new Set(),cards:new Map(),stamp:0};
 const logical={w:96,h:96,floor:84};
 const imageCache=new Map();
 function imageFor(clip){
@@ -60,8 +55,7 @@ function imageFor(clip){
   return imageCache.get(clip.source);
 }
 function clean(value){return value==null||value===''?'—':String(value).replaceAll('_',' ')}
-function addOptions(id,values){for(const value of [...new Set(values.filter(Boolean))].sort()){const o=document.createElement('option');o.value=value;o.textContent=clean(value);$(id).append(o)}}
-addOptions('outfit',DATA.assets.map(a=>a.outfit));addOptions('posture',DATA.assets.map(a=>a.postureClass));addOptions('kind',DATA.assets.map(a=>a.transitionKind));
+function basename(path){return path.split('/').pop()}
 function clipsFor(asset,mode=state.mode){
   if(mode==='action')return [asset];
   const lead=asset.leadIn?[asset.leadIn]:[];
@@ -94,31 +88,24 @@ function renderAll(now=performance.now()){for(const card of state.cards.values()
 function tick(now){if(state.playing)renderAll(now);requestAnimationFrame(tick)}
 const observer=new IntersectionObserver(entries=>{for(const e of entries)e.isIntersecting?state.visible.add(e.target):state.visible.delete(e.target);renderAll()},{rootMargin:'300px'});
 function makeCard(asset){
-  const el=document.createElement('article');el.innerHTML=`<div class="cardhead"><h2>${asset.name}</h2><div class="tags"><span class="tag">${clean(asset.outfit)}</span><span class="tag">${clean(asset.postureClass)}</span><span class="tag">${clean(asset.facing)}</span><span class="tag">${clean(asset.originalComparison.verdict)}</span><span class="tag ${asset.transitionKind}">${clean(asset.transitionKind)}</span></div></div><div class="stagewrap"><canvas></canvas><span class="stageLabel"></span></div><div class="cardbody"><div class="route"></div><div class="note"></div><div class="metrics"><span>canvas <b>${asset.canvas.join('×')}</b></span><span>anchor <b>${asset.anchor.join(', ')}</b></span><span>face proxy <b>${asset.medianFaceProxyWidth??'—'}×${asset.medianFaceProxyHeight??'—'}</b></span><span>face coverage <b>${asset.faceProxyCoverage??'—'}</b></span><span>torso scan <b>${asset.medianTorsoScanWidthAt20??'—'}</b></span><span>torso coverage <b>${asset.torsoScanCoverage??'—'}</b></span><span>alpha height <b>${asset.alphaHeightRange.join('–')}</b></span><span>original ratio <b>${asset.originalComparison.silhouetteHeightRatio??'landmarks'}</b></span><span>torso difference <b>${asset.originalComparison.torsoScanDifference??'landmarks'}</b></span><span>frames <b>${asset.frames} @ ${asset.fps}fps</b></span></div><div class="cardbuttons"><button class="replay">Replay seam</button><button class="action">Action only</button></div></div>`;
+  const el=document.createElement('article');el.innerHTML=`<div class="cardhead"><h2>${asset.name}</h2><div class="filenames">runtime: ${asset.name}.png<br>source: ${basename(asset.source)}</div><div class="tags"><span class="tag">${clean(asset.outfit)}</span><span class="tag">${clean(asset.postureClass)}</span><span class="tag">${clean(asset.facing)}</span><span class="tag">${clean(asset.originalComparison.verdict)}</span><span class="tag ${asset.transitionKind}">${clean(asset.transitionKind)}</span></div></div><div class="stagewrap"><canvas></canvas><span class="stageLabel"></span></div><div class="cardbody"><div class="route"></div><div class="note"></div><div class="metrics"><span>canvas <b>${asset.canvas.join('×')}</b></span><span>anchor <b>${asset.anchor.join(', ')}</b></span><span>face proxy <b>${asset.medianFaceProxyWidth??'—'}×${asset.medianFaceProxyHeight??'—'}</b></span><span>face coverage <b>${asset.faceProxyCoverage??'—'}</b></span><span>torso scan <b>${asset.medianTorsoScanWidthAt20??'—'}</b></span><span>torso coverage <b>${asset.torsoScanCoverage??'—'}</b></span><span>alpha height <b>${asset.alphaHeightRange.join('–')}</b></span><span>original ratio <b>${asset.originalComparison.silhouetteHeightRatio??'landmarks'}</b></span><span>torso difference <b>${asset.originalComparison.torsoScanDifference??'landmarks'}</b></span><span>frames <b>${asset.frames} @ ${asset.fps}fps</b></span></div><div class="cardbuttons"><button class="replay">Replay seam</button><button class="action">Action only</button></div></div>`;
   const card={asset,el,canvas:el.querySelector('canvas'),wrap:el.querySelector('.stagewrap'),label:el.querySelector('.stageLabel'),started:performance.now(),pausedAt:performance.now()};
   el.querySelector('.route').textContent=routeFor(asset);el.querySelector('.note').textContent=asset.transitionNote;
   el.querySelector('.replay').onclick=()=>{card.localMode=null;card.started=performance.now();card.pausedAt=card.started;renderCard(card,card.started)};
   el.querySelector('.action').onclick=()=>{card.localMode='action';card.started=performance.now();card.pausedAt=card.started;renderCard(card,card.started)};
   state.cards.set(el,card);observer.observe(el);return el;
 }
-function filtered(){
-  const q=$('search').value.trim().toLowerCase(),outfit=$('outfit').value,posture=$('posture').value,kind=$('kind').value;
-  const result=DATA.assets.filter(a=>(!q||a.name.toLowerCase().includes(q))&&(!outfit||a.outfit===outfit)&&(!posture||a.postureClass===posture)&&(!kind||a.transitionKind===kind));
-  const key=$('sort').value;result.sort((a,b)=>(key==='name'?a.name:(a[key==='transition'?'transitionKind':'outfit']||'')+' '+a.name).localeCompare(key==='name'?b.name:(b[key==='transition'?'transitionKind':'outfit']||'')+' '+b.name));return result;
-}
-function rebuild(){
-  const list=filtered(),grid=$('grid');observer.disconnect();state.visible.clear();state.cards.clear();grid.replaceChildren(...list.map(makeCard));
-  if(!list.length){const e=document.createElement('p');e.className='empty';e.textContent='No animations match these filters.';grid.append(e)}
+function buildGallery(){
+  const list=[...DATA.assets].sort((a,b)=>a.name.localeCompare(b.name)),grid=$('grid');observer.disconnect();state.visible.clear();state.cards.clear();grid.replaceChildren(...list.map(makeCard));
   const counts={};for(const a of list)counts[a.transitionKind]=(counts[a.transitionKind]||0)+1;
-  $('summary').innerHTML=`<span><b>${list.length}</b> / ${DATA.counts.reviewedAnimationSheets} animations</span>${Object.entries(counts).sort().map(([k,v])=>`<span><b>${v}</b> ${clean(k)}</span>`).join('')}`;renderAll();
+  $('summary').innerHTML=`<span><b>${list.length}</b> animations, all shown</span>${Object.entries(counts).sort().map(([k,v])=>`<span><b>${v}</b> ${clean(k)}</span>`).join('')}`;renderAll();
 }
-for(const id of ['search','outfit','posture','kind','sort'])$(id).addEventListener(id==='search'?'input':'change',rebuild);
 $('mode').onchange=e=>{state.mode=e.target.value;for(const c of state.cards.values()){c.localMode=null;c.started=performance.now();c.pausedAt=c.started;c.el.querySelector('.route').textContent=routeFor(c.asset)}renderAll()};
 $('zoom').onchange=e=>{state.zoom=Number(e.target.value);renderAll()};
-$('play').onclick=()=>{state.playing=!state.playing;const now=performance.now();for(const c of state.cards.values()){if(state.playing)c.started+=now-c.pausedAt;else c.pausedAt=now}$('play').textContent=state.playing?'Pause all':'Play all';$('play').classList.toggle('active',state.playing);renderAll(now)};
+$('play').onclick=()=>{state.playing=!state.playing;const now=performance.now();for(const c of state.cards.values()){if(state.playing)c.started+=now-c.pausedAt;else c.pausedAt=now}$('play').textContent=state.playing?'Pause every animation':'Play every animation';$('play').classList.toggle('active',state.playing);renderAll(now)};
 $('rulers').onclick=()=>{state.rulers=!state.rulers;$('rulers').textContent=state.rulers?'Rulers on':'Rulers off';$('rulers').classList.toggle('active',state.rulers);renderAll()};
-$('original').onclick=()=>{state.original=!state.original;$('original').textContent=state.original?'Original ghost on':'Original ghost off';$('original').classList.toggle('active',state.original);renderAll()};
-rebuild();requestAnimationFrame(tick);
+$('original').onclick=()=>{state.original=!state.original;$('original').textContent=state.original?'Remove original ghost from all':'Ghost original on every animation';$('original').classList.toggle('active',state.original);renderAll()};
+buildGallery();requestAnimationFrame(tick);
 </script>
 </body>
 </html>

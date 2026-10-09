@@ -16,7 +16,7 @@ The approved original is printed first in every contact-sheet row at exactly the
 
 ## Interactive comparison
 
-Open [the sizing and transition review](review.html) to see every accepted animation at one fixed world scale. It can play actions alone, prepend the matching same-outfit walk, insert known bridge clips, or freeze the exact walk-to-action seam with onion skin.
+Open [the sizing and transition review](review.html) to see all 152 accepted animations together in one filename-ordered gallery, with no search or filters required. One global control pauses every animation and another overlays the untouched original on every card. The page can also prepend the matching same-outfit walk, insert known bridge clips, or freeze the exact walk-to-action seam with onion skin. Every card prints its runtime PNG and authored source-strip filename.
 
 ## Corrected sheets
 
