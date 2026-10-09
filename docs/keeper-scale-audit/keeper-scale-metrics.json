@@ -35,11 +35,11 @@
     }
   },
   "counts": {
-    "allSheets": 182,
-    "reviewedAnimationSheets": 164,
+    "allSheets": 183,
+    "reviewedAnimationSheets": 165,
     "technicalRejectedSheets": 18,
-    "allFramesMeasured": 1308,
-    "correctedSheets": 71,
+    "allFramesMeasured": 1316,
+    "correctedSheets": 72,
     "comparisonFailures": 0
   },
   "contactSheets": [
@@ -18521,6 +18521,246 @@
         "verdict": "measured-and-visual-pass",
         "silhouetteHeightRatio": 1.007,
         "torsoScanDifference": 0.25,
+        "visualReviewDate": "2026-10-09",
+        "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
+        "warnings": []
+      }
+    },
+    {
+      "name": "keeper_nap_seated",
+      "source": "art/raw/keeper-first-batch/keeper_nap_seated_f8.png",
+      "frames": 8,
+      "fps": 4,
+      "loop": true,
+      "canvas": [
+        32,
+        40
+      ],
+      "anchor": [
+        16,
+        40
+      ],
+      "facing": "right",
+      "outfit": "standard",
+      "interaction": "nap-seated",
+      "seatPoint": [
+        16,
+        29
+      ],
+      "postureClass": "seated",
+      "measurementMethod": "head unit plus articulated shoulder-hip-sole chain; compressed silhouette height is never used as scale",
+      "status": "corrected",
+      "note": "new canonical side-seated nap loop with closed eyes, clearly reclined head and open mouth; body height matches the standard sitting endpoint and furniture remains separate",
+      "medianFaceProxyWidth": 8.62,
+      "medianFaceProxyHeight": 6.75,
+      "faceProxyCoverage": "8/8",
+      "medianTorsoScanWidthAt20": null,
+      "torsoScanCoverage": "0/8",
+      "alphaHeightRange": [
+        34.25,
+        34.25
+      ],
+      "alphaWidthRange": [
+        18.25,
+        19.0
+      ],
+      "bottomClearanceRange": [
+        0.5,
+        0.5
+      ],
+      "frameMeasurements": [
+        {
+          "alphaBox": [
+            6.75,
+            5.25,
+            25.25,
+            39.5
+          ],
+          "alphaWidth": 18.5,
+          "alphaHeight": 34.25,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              11.75,
+              10.5,
+              20.75,
+              17.25
+            ],
+            "width": 9.0,
+            "height": 6.75,
+            "area": 415
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            6.5,
+            5.25,
+            25.25,
+            39.5
+          ],
+          "alphaWidth": 18.75,
+          "alphaHeight": 34.25,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              11.75,
+              10.25,
+              20.5,
+              17.25
+            ],
+            "width": 8.75,
+            "height": 7.0,
+            "area": 412
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            6.75,
+            5.25,
+            25.0,
+            39.5
+          ],
+          "alphaWidth": 18.25,
+          "alphaHeight": 34.25,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              11.75,
+              10.5,
+              20.0,
+              17.25
+            ],
+            "width": 8.25,
+            "height": 6.75,
+            "area": 409
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            6.5,
+            5.25,
+            25.25,
+            39.5
+          ],
+          "alphaWidth": 18.75,
+          "alphaHeight": 34.25,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              9.0,
+              10.5,
+              20.0,
+              17.0
+            ],
+            "width": 11.0,
+            "height": 6.5,
+            "area": 399
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            6.5,
+            5.25,
+            25.25,
+            39.5
+          ],
+          "alphaWidth": 18.75,
+          "alphaHeight": 34.25,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              8.75,
+              10.5,
+              19.75,
+              17.5
+            ],
+            "width": 11.0,
+            "height": 7.0,
+            "area": 415
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            6.5,
+            5.25,
+            25.25,
+            39.5
+          ],
+          "alphaWidth": 18.75,
+          "alphaHeight": 34.25,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              11.75,
+              10.5,
+              19.75,
+              17.0
+            ],
+            "width": 8.0,
+            "height": 6.5,
+            "area": 398
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            6.5,
+            5.25,
+            25.5,
+            39.5
+          ],
+          "alphaWidth": 19.0,
+          "alphaHeight": 34.25,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              11.75,
+              10.25,
+              19.75,
+              17.25
+            ],
+            "width": 8.0,
+            "height": 7.0,
+            "area": 384
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            6.5,
+            5.25,
+            25.25,
+            39.5
+          ],
+          "alphaWidth": 18.75,
+          "alphaHeight": 34.25,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              11.5,
+              10.5,
+              20.0,
+              17.25
+            ],
+            "width": 8.5,
+            "height": 6.75,
+            "area": 400
+          },
+          "torsoScanWidthAt20": null
+        }
+      ],
+      "originalComparison": {
+        "reference": "keeper_walk",
+        "revision": "2026-10-09-original-comparison-v2",
+        "type": "articulated-landmark-at-fixed-scale",
+        "verdict": "fixed-scale-visual-pass",
+        "silhouetteHeightRatio": null,
+        "torsoScanDifference": null,
         "visualReviewDate": "2026-10-09",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": []

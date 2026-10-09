@@ -37,6 +37,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Turn away | `keeper_turn_back` | reverse to face camera |
 | General work | `keeper_work_back` | washing, cooking, polishing and similar |
 | Sit on side chair | `keeper_sit_side` | right; mirror left; reverse to stand |
+| Nap while sitting | `keeper_nap_seated` | right; mirror left; canonical `(16,29)` seat point; reclined head, closed eyes and open mouth; chair/sofa separate |
 | Sit facing camera | `keeper_sit_front` | sofa/toilet; reverse to stand |
 | Sit back to camera | `keeper_sit_back` | canonical rear seated reference; reverse to stand; shared seat point `(16,29)` |
 | Eat at table | `keeper_eat_seated` | right; mirror left; fork and knife included |
@@ -264,7 +265,7 @@ uniform action uses `keeper_walk`; costume actions use their own walking family
 so the viewer never creates a magical outfit change merely to test a seam.
 
 The current generated inventory labels 47 actions as direct same-outfit seam
-candidates and 43 as having a known bridge. It also records 12 locomotion
+candidates and 44 as having a known bridge. It also records 12 locomotion
 sources, 8 reusable bridge clips, 33 facing/posture gaps, 18 outfit or fixture
 states without a walking family, and 3 water/air actions requiring special
 entry. The detailed non-standard-outfit audit and next bridge batch are in

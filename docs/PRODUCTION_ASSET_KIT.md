@@ -97,6 +97,7 @@ per-clip override without changing the sprite strip.
 | `souwester_walk_front` | front | 8 · 4 | yes | direct walk toward camera; vector `(0,1)` |
 | `dance` | front | 8 · 4 | yes | joyful full-body loop with strong arm and leg motion |
 | `play_guitar` | front ¾ | 8 · 4 | yes | 48 × 40; guitar included; mirror front-left |
+| `nap_seated` | side seated | 8 · 4 | yes | canonical seat `(16,29)`; closed eyes, reclined head and open mouth; furniture separate; mirror left |
 | `play_guitar_gretsch` | front ¾ | 8 · 4 | yes | tier 2 black Gretsch; canonical actor scale; mirror front-left |
 | `play_guitar_flying_v_1967` | front ¾ | 8 · 4 | yes | tier 3 red 1967 Flying V; 64 × 40; mirror front-left |
 | `guitar_pickup_*` | side → rear → front ¾ | 12 · 4 | no | 64 × 56; separate rack; prop handoff on frame 6; acoustic/Gretsch/Flying V tiers |

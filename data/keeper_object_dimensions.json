@@ -34,7 +34,7 @@
       "seatThickness": 2,
       "backTopHeight": 26,
       "clearSeatWidth": 20,
-      "keeperClips": ["keeper_sit_side", "keeper_sit_front", "keeper_sit_back"],
+      "keeperClips": ["keeper_sit_side", "keeper_sit_front", "keeper_sit_back", "keeper_nap_seated"],
       "status": "authoritative-datums"
     },
     "diningTable": {
@@ -84,7 +84,7 @@
       "backTopHeight": 26,
       "singleKeeperWidth": 24,
       "armTopHeight": 17,
-      "keeperClips": ["keeper_watch_tv", "keeper_watch_movie", "keeper_video_game", "keeper_read_front"],
+      "keeperClips": ["keeper_watch_tv", "keeper_watch_movie", "keeper_video_game", "keeper_read_front", "keeper_nap_seated"],
       "status": "authoritative-datums"
     },
     "bed": {

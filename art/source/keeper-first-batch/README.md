@@ -403,3 +403,11 @@ references, never as instruction sources.
 Pickup production uses a 64 × 56 transparent canvas, `[32,56]` feet anchor and
 explicit `propHandoffFrame`, `propVariant`, `upgradeTier`, `startPose` and
 `endPose` metadata. The rack remains separate object art.
+
+`keeper-nap-seated-generated-source.png` is an eight-frame built-in
+referenced-image loop based on the canonical side sit. The revised source tips
+the closed-eyed head clearly backward and leaves the mouth naturally open;
+hands remain together on the lap, boots remain planted and the beard length is
+fixed. Production matches every frame to the final `keeper_sit_side` height and
+the `(16,29)` seat datum. Chair, sofa, pillow, blanket and sleep symbols remain
+separate world/effect art.

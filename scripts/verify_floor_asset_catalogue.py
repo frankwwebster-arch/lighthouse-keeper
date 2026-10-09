@@ -57,13 +57,14 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==182
+assert len(keeper_pngs)==183
 required_clips={
     'keeper_idle':(4,4), 'keeper_walk':(8,4),
     'keeper_turn_back':(6,4), 'keeper_work_back':(8,4),
     'keeper_cook_back':(8,4), 'keeper_wash_back':(8,4),
     'keeper_brush_teeth_back':(8,4), 'keeper_sit_side':(6,4),
     'keeper_sit_front':(6,4), 'keeper_sit_back':(6,4), 'keeper_piano':(8,4),
+    'keeper_nap_seated':(8,4),
     'keeper_urinate_back':(6,4), 'keeper_eat_seated':(8,4),
     'keeper_door_open_side':(6,4), 'keeper_door_open_back':(6,4),
     'keeper_door_open_side_pyjamas':(6,4),
@@ -146,6 +147,10 @@ assert manifest['keeper_sit_side']['loop'] is False and manifest['keeper_sit_sid
 assert manifest['keeper_sit_side']['mirrorSafe'] is True and manifest['keeper_sit_side']['reverseFor']=='stand_side'
 assert manifest['keeper_sit_front']['loop'] is False and manifest['keeper_sit_front']['seatPoint']==[16,29]
 assert manifest['keeper_sit_front']['reverseFor']=='stand_front'
+assert manifest['keeper_nap_seated']['seatPoint']==[16,29]
+assert manifest['keeper_nap_seated']['startPose']=='sitting-side-right'
+assert manifest['keeper_nap_seated']['endPose']=='sitting-side-right'
+assert manifest['keeper_nap_seated']['mirrorSafe'] is True
 assert manifest['keeper_work_back']['handUsePoint']==[16,21]
 assert manifest['keeper_piano']['seatPoint']==[16,29] and manifest['keeper_piano']['handUsePoint']==[24,20]
 assert manifest['keeper_urinate_back']['handUsePoint']==[16,27]
@@ -554,6 +559,7 @@ assert asset_contract['interactionProfiles']['machetePlantRight']['handUsePoint'
 assert asset_contract['interactionProfiles']['machetePlantRight']['bladeEdge']=='smooth'
 assert asset_contract['interactionProfiles']['exerciseBikeFront']['pedalPoint']==[24,42]
 assert asset_contract['interactionProfiles']['rearSeat']=={'clip':'keeper_sit_back','seatPoint':[16,29],'offsetFromFeet':[0,-11]}
+assert asset_contract['interactionProfiles']['seatedNapRight']['seatPoint']==[16,29]
 assert asset_contract['interactionProfiles']['artistSmockSitFront']['seatPoint']==[16,29]
 assert asset_contract['interactionProfiles']['guitarPickupGretsch']['propHandoffFrame']==6
 assert asset_contract['interactionProfiles']['guitarPickupGretsch']['propVariant']=='black-gretsch'
@@ -602,6 +608,8 @@ object_dimensions=json.loads((root/'data/keeper_object_dimensions.json').read_te
 assert object_dimensions['keeperBasis']['skullTopHeight']==32.5
 assert object_dimensions['furniture']['diningChair']['seatTopHeight']==11
 assert 'keeper_sit_back' in object_dimensions['furniture']['diningChair']['keeperClips']
+assert 'keeper_nap_seated' in object_dimensions['furniture']['diningChair']['keeperClips']
+assert 'keeper_nap_seated' in object_dimensions['furniture']['sofa']['keeperClips']
 assert object_dimensions['furniture']['diningTable']['surfaceHeight']==19
 assert object_dimensions['furniture']['lowCoffeeTable']['surfaceHeight']==12
 assert object_dimensions['furniture']['bed']['mattressTopHeight']==9
@@ -616,12 +624,12 @@ assert scale_audit['auditRevision']=='2026-10-09-original-comparison-v2'
 assert scale_audit['originalReference']['name']=='keeper_walk'
 assert scale_audit['originalReference']['source']=='art/raw/keeper-first-batch/keeper_walk_f8.png'
 assert scale_audit['originalReference']['approvedMedianTorsoScanWidthAt20']==13.75
-assert scale_audit['counts']['allSheets']==182
-assert scale_audit['counts']['reviewedAnimationSheets']==164
+assert scale_audit['counts']['allSheets']==183
+assert scale_audit['counts']['reviewedAnimationSheets']==165
 assert scale_audit['counts']['technicalRejectedSheets']==18
-assert scale_audit['counts']['allFramesMeasured']==1308
+assert scale_audit['counts']['allFramesMeasured']==1316
 assert scale_audit['counts']['comparisonFailures']==0
-assert len(scale_audit['assets'])==182
+assert len(scale_audit['assets'])==183
 assert all('originalComparison' in asset for asset in scale_audit['assets'])
 scale_assets_by_name={asset['name']:asset for asset in scale_audit['assets']}
 standing_face=scale_assets_by_name['keeper_walk']['frameMeasurements'][0]['faceProxy']
@@ -646,7 +654,7 @@ assert len(scale_audit['contactSheets'])==9
 assert all((root/path).exists() for path in scale_audit['contactSheets'])
 scale_review=(root/'docs/keeper-scale-audit/review.html').read_text()
 assert '__KEEPER_REVIEW_DATA__' not in scale_review
-assert '"reviewedAnimationSheets":164' in scale_review
+assert '"reviewedAnimationSheets":165' in scale_review
 for removed_control in ('id="search"','id="outfit"','id="posture"','id="kind"','id="sort"'):
     assert removed_control not in scale_review,removed_control
 for token in (
@@ -727,6 +735,7 @@ previews={
     'keeper-walk':(8,250), 'keeper-turn-back':(10,250),
     'keeper-work-back':(8,250), 'keeper-sit-side':(10,250),
     'keeper-sit-front':(10,250), 'keeper-sit-back':(10,250), 'keeper-piano':(8,250),
+    'keeper-nap-seated':(8,250),
     'keeper-urinate-back':(6,250), 'keeper-eat-seated':(8,250),
     'keeper-door-open-side':(10,250), 'keeper-door-open-back':(10,250),
     'keeper-door-open-side-pyjamas':(10,250),
@@ -788,6 +797,6 @@ for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
 keeper_previews=list((root/'docs/floor-asset-catalogue').glob('keeper-*-preview.gif'))
-assert len(keeper_previews)==166
+assert len(keeper_previews)==167
 assert all(Image.open(path).is_animated for path in keeper_previews)
-print('Verified: 71 spaces, 1576 rows, owned-item states, 9 TV/lamp/FX exports, 182 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
+print('Verified: 71 spaces, 1576 rows, owned-item states, 9 TV/lamp/FX exports, 183 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')

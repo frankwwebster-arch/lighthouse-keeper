@@ -1,7 +1,7 @@
 # Keeper costume-route audit
 
-Audit date: 2026-10-09. Authority: the 182-sheet keeper batch, its JSON
-sidecars, `data/keeper_asset_contract.json` and the 164-card transition review.
+Audit date: 2026-10-09. Authority: the 183-sheet keeper batch, its JSON
+sidecars, `data/keeper_asset_contract.json` and the 165-card transition review.
 This audit excludes the standard blue uniform and treats privacy coverings as
 transition states rather than ordinary wearable costumes.
 

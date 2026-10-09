@@ -677,6 +677,10 @@ walk_frames = generated_frames("keeper-walk-generated-source.png", 8, [side_walk
 turn_frames = generated_frames("keeper-turn-back-generated-source.png", 6)
 work_frames = generated_frames("keeper-work-back-generated-source.png", 8)
 sit_side_frames = generated_frames("keeper-sit-side-generated-source.png", 6)
+nap_seated_frames = match_reference_heights(
+    generated_frames("keeper-nap-seated-generated-source.png", 8),
+    [sit_side_frames[-1]] * 8,
+)
 sit_front_frames = generated_frames("keeper-sit-front-generated-source.png", 6, horizontal_scale=0.88)
 sit_back_frames = height_normalise_sequence(
     generated_frames("keeper-sit-back-generated-source.png", 6),
@@ -811,6 +815,7 @@ save("keeper_cook_back", work_frames, 8, hand_use_point=[16, 21])
 save("keeper_wash_back", work_frames, 8, hand_use_point=[16, 21])
 save("keeper_brush_teeth_back", work_frames, 8, hand_use_point=[16, 21])
 save("keeper_sit_side", sit_side_frames, 8, loop=False, seat_point=[16, 29], reverse_for="stand_side", mirror_safe=True)
+save("keeper_nap_seated", nap_seated_frames, 8, seat_point=[16, 29], mirror_safe=True, start_pose="sitting-side-right", end_pose="sitting-side-right", facing="right", interaction="nap-seated", mirrors_for="left")
 save("keeper_sit_front", sit_front_frames, 8, loop=False, seat_point=[16, 29], reverse_for="stand_front")
 save("keeper_sit_back", sit_back_frames, 8, loop=False, seat_point=[16, 29], reverse_for="stand_back", facing="back")
 save("keeper_piano", piano_frames, 10, seat_point=[16, 29], hand_use_point=[24, 20])
@@ -892,6 +897,7 @@ save_preview("keeper-walk", walk_frames, 100)
 save_preview("keeper-turn-back", turn_frames, 120, ping_pong=True)
 save_preview("keeper-work-back", work_frames, 120)
 save_preview("keeper-sit-side", sit_side_frames, 120, ping_pong=True)
+save_preview("keeper-nap-seated", nap_seated_frames, 250)
 save_preview("keeper-sit-front", sit_front_frames, 120, ping_pong=True)
 save_preview("keeper-sit-back", sit_back_frames, 120, ping_pong=True)
 save_preview("keeper-piano", piano_frames, 100)
