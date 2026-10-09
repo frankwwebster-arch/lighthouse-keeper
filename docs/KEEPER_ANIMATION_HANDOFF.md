@@ -47,6 +47,10 @@ Every card has `Happy with this animation`, `Save this review` and an explicit
 saved/unsaved state. Orange means unsaved; green means saved and happy. Export
 is blocked until changed cards are saved. Existing browser-saved size choices
 are loaded into the new workflow rather than discarded.
+The reviewed animation itself can rotate from −180° to +180° around its fixed
+review anchor, independently of ghost rotation. This is a comparison aid for
+horizontal clips such as `keeper_anti_gravity`; its saved angle is included in
+the review export and is not automatically a production-art instruction.
 
 The exact human-readable clip inventory is in `docs/KEEPER_ANIMATIONS.md`.
 The machine-readable runtime inventory is `public/sprites/manifest.json`.

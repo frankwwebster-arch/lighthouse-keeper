@@ -596,6 +596,7 @@ for token in (
     'Happy with this animation', 'Save this review', 'Unsaved changes',
     "REVIEW_STORAGE_KEY='lighthouse-keeper-animation-reviews-v1'",
     'happyAnimations', 'version:2',
+    'Reviewed animation rotation', 'actionRotation',
     'runtime: ${asset.name}.png', 'source: ${basename(asset.source)}',
     'animations, all shown', 'function buildGallery()',
 ):

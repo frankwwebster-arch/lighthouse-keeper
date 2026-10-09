@@ -205,6 +205,8 @@ Delivered in `docs/keeper-scale-audit/review.html`:
 - Every card has a happy checkbox, Save button and saved/unsaved indicator.
   Saved review state survives reloads; export includes approvals and is blocked
   while any card remains dirty.
+- Reviewed-animation rotation is independent of ghost rotation, persists per
+  card and is a review aid for horizontal poses rather than a sprite edit.
 - Action-only, raw matching-outfit walk seams and routes containing the known
   turn/sit/bed bridges.
 - A seam-freeze onion skin of the final approach frame and first action frame.

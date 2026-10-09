@@ -259,6 +259,9 @@ changes; green denotes a saved happy decision. Export is blocked until every
 changed card is saved, and version 2 of `keeper-scale-choices.json` contains the
 saved review register as well as non-100% production scale proposals. Existing
 legacy size choices are retained and offered for migration into full reviews.
+The reviewed animation has its own −180° to +180° rotation control, independent
+of the ghost. It rotates every action frame around the fixed review anchor and
+is persisted/exported as comparison evidence, not silently applied to sprites.
 
 The sad, hungry, bored and cross reactions share one enforced upright scale:
 their visible height is 38 logical pixels (152 pixels in the density-4 source)
