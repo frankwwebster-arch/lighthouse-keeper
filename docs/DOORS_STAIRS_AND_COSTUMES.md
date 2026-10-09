@@ -209,6 +209,9 @@ Delivered in `docs/keeper-scale-audit/review.html`:
   them pauses playback and steps through the action without dirtying the review.
   A prominent pane badge continuously shows the displayed clip and frame,
   including during playback and for both sides of a frozen seam.
+- On browser widths of 1500px or more, focused mode uses a three-part horizontal
+  workstation: pinned canon, large stage and compact two-column control console.
+  Control families have distinct amber, purple, blue, teal and green/red colours.
 - Seated cards automatically use the canonical front/side sitting endpoint.
   Per-card controls select, rotate, reset or move the ghost alongside and fade
   the reviewed animation. Rear sitting still has no canonical neutral reference.

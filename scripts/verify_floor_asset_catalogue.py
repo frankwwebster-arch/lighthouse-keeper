@@ -594,7 +594,7 @@ for token in (
     'One animation at a time', 'id="detailNav"', 'Previous animation',
     'Next animation', 'max="12"', 'function updateDetailView', 'function stepDetail',
     'Canonical reference', '<option value="sittingSide">Sitting</option>',
-    'same measured 9.75 × 6.5 face proxy', 'function canonicalReference',
+    'measured 9.75 × 6.5 face proxy exactly matches', 'function canonicalReference',
     'gold badge crosses the blue skull-top guide',
     'Character width', 'Character height', 'Export my character sizes', 'keeper-scale-choices.json',
     "STORAGE_KEY='lighthouse-keeper-scale-choices-v1'",
@@ -613,6 +613,8 @@ for token in (
     'redraftRequested', 'reviewnotes',
     'Previous frame', 'Next frame', 'Action frame 1 /', 'manualFrame',
     'class="frameNumber"', 'card.frameNumber.textContent',
+    'Ghost comparison', 'Animation transform', 'Decision and production notes',
+    '@media(min-width:1500px)', 'grid-template-areas:"head head" "stage body"',
     'runtime: ${asset.name}.png', 'source: ${basename(asset.source)}',
     'animations, all shown', 'function buildGallery()',
 ):

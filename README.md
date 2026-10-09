@@ -39,7 +39,7 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 - `docs/KEEPER_ASSET_SCALE.md` — human-readable keeper measurements and the rules for sizing/placing objects.
 - `data/keeper_asset_contract.json` — authoritative machine-readable scale, pivots and interaction points.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
-- `docs/keeper-scale-audit/review.html` — unified sizing and walk-to-action transition review, with a focused one-animation mode, persistent clip/frame badge, frame-by-frame stepping, pinned standing reference and one head-scale-matched sitting canon, per-animation size/rotation/position proposals, free-text notes, full-re-draft flags, JSON export and all 152 accepted animations.
+- `docs/keeper-scale-audit/review.html` — unified sizing and walk-to-action transition review, with a widescreen colour-coded workstation, focused one-animation mode, persistent clip/frame badge, frame-by-frame stepping, pinned standing reference and one head-scale-matched sitting canon, per-animation size/rotation/position proposals, free-text notes, full-re-draft flags, JSON export and all 152 accepted animations.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and eight printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.
 - `docs/DOORS_STAIRS_AND_COSTUMES.md` — agreed stairway, door and costume-change rules, seamless clip joins, and the decisions still to make.
 - `docs/EXPANSION_DESIGN.md` — living write-up of agreed room ideas, random floor placement, night reveals, weather, transport, island expansions and energy systems.

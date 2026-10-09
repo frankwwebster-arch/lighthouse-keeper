@@ -263,6 +263,10 @@ Per-card Previous/Next frame controls pause playback, switch that card to its
 action and step without wrapping across every frame. Frame inspection does not
 change the saved review. A top-right badge inside the pane always shows the
 displayed clip filename and exact frame; seam-freeze mode identifies both frames.
+At 1500px browser width or above, focused mode lays out the pinned canon, stage
+and compact two-column control console horizontally. Size controls are amber,
+ghost controls purple, action transforms blue, frame navigation teal, and
+review/notes green or red.
 Seated cards automatically use the canonical front or side sitting endpoint;
 other cards use the standing reference. Per-card controls can select a different
 reference, rotate/reset it, place it alongside and fade only the reviewed action.

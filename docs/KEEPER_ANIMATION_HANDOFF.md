@@ -22,6 +22,10 @@ Codex task should be able to continue from here without relying on the old chat.
    frame; inspection alone does not alter or dirty the saved review. A prominent
    top-right pane badge continuously names the displayed clip and exact frame,
    including during playback; seam-freeze mode names both compared frames.
+   At browser widths of 1500px or more, focused mode uses the monitor width:
+   pinned reference left, large viewport-height stage centre, and a compact
+   two-column control console right. Amber means size, purple ghost, blue
+   animation transform, teal frame navigation, and green/red review decisions.
 3. Ask Frank for his new comments and exported `keeper-scale-choices.json`.
    Each card's Save button persists independent width/height, rotation,
    horizontal/vertical position, ghost settings, opacity and the
