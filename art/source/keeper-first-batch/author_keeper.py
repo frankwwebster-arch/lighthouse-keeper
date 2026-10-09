@@ -656,6 +656,8 @@ ADDITIONAL_CLIPS = [
     ("keeper_ride_bike_front", "keeper-bike-front-generated-source.png", 40, 40, dict(seat_point=[20, 27], hand_use_point=[20, 19], pedal_point=[20, 34], outfit="old-school-workout-kit", facing="front", interaction="use-stationary-exercise-bike")),
     ("keeper_lift_button_front", "keeper-lift-button-front-generated-source.png", 32, 40, dict(hand_use_point=[27, 17], facing="front", interaction="press-lift-button", mirror_safe=True, mirrors_for="front-left-hand")),
     ("keeper_spiral_stairs", "keeper-spiral-stairs-generated-source.png", 40, 48, dict(facing="three-quarter", interaction="climb-spiral-stairs")),
+    ("keeper_spiral_stairs_up", "keeper-spiral-stairs-generated-source.png", 40, 48, dict(movement_vector=[0, -1], facing="rotating-right-to-rear", interaction="spiral-stairs-up")),
+    ("keeper_spiral_stairs_down", "keeper-spiral-stairs-down-generated-source.png", 40, 48, dict(movement_vector=[0, 1], facing="rotating-rear-to-front-right", interaction="spiral-stairs-down")),
     ("keeper_slide_side", "keeper-slide-side-generated-source.png", 48, 40, dict(facing="right", interaction="ride-slide", mirror_safe=True, mirrors_for="left")),
     ("keeper_bbq_back", "keeper-bbq-back-generated-source.png", 32, 40, dict(hand_use_point=[16, 22], facing="back", interaction="use-bbq")),
     ("keeper_hot_tub", "keeper-hot-tub-generated-source.png", 40, 40, dict(seat_point=[20, 29], facing="front", interaction="soak-hot-tub", outfit="privacy-foam")),

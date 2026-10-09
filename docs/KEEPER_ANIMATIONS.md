@@ -123,7 +123,9 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Drink handled pint | `keeper_drink_pint` | seated front-right; mirror front-left; tankard included |
 | Use stationary exercise bike | `keeper_ride_bike_front` | direct front; old-school workout kit; actor only; align separate bike to hand, seat and pedal points |
 | Press lift button | `keeper_lift_button_front` | front, right-hand reach; mirror to swap hand |
-| Climb spiral stairs | `keeper_spiral_stairs` | three-quarter curved-step loop; staircase/rail separate |
+| Spiral stairs up | `keeper_spiral_stairs_up` | right three-quarter to rear curved ascent; staircase/rail separate |
+| Spiral stairs down | `keeper_spiral_stairs_down` | rear to front-right curved descent; staircase/rail separate |
+| Spiral stairs legacy alias | `keeper_spiral_stairs` | retained ascent for compatibility; use the explicit `up` clip for new work |
 | Ride slide | `keeper_slide_side` | right; mirror left; slide separate |
 | Use barbecue | `keeper_bbq_back` | rear; tongs included, barbecue separate |
 | Soak in hot tub | `keeper_hot_tub` | seated front with opaque water/foam privacy band; tub separate |

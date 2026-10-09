@@ -273,6 +273,16 @@ explicitly excluded the shower door, tray, cubicle, water, floor and scenery.
 All three were generated with the built-in image generator in referenced-image
 mode, then deterministically normalized to the canonical density-4 scale.
 
+The spiral-stair pair retains the existing eight-pose ascent as the explicit
+`keeper_spiral_stairs_up` source and adds
+`keeper-spiral-stairs-down-generated-source.png` as its independently drawn
+descent. The built-in referenced-image prompt fixes the keeper's uniform,
+canonical apparent scale and clockwise curved travel while reversing the
+view sequence and weight transfer: ascent turns right-to-rear; descent turns
+rear-to-front-right. Both omit treads, railing and central post because the
+staircase is a separately aligned world object. The original
+`keeper_spiral_stairs` export remains as a compatibility alias for ascent.
+
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,
 hardens alpha, places it on a density-4 contract canvas, and emits the manifest

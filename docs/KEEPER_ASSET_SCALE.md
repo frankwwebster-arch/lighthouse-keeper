@@ -174,6 +174,13 @@ and ends direct rear. The shower door, tray and cubicle remain separate. Once
 the cubicle occludes the keeper, switch to `keeper_shower_wash`; no uncovered
 transition frame is shown.
 
+Spiral-stair movement uses paired 40 × 48 clips anchored at `(20,48)`. Align
+the separate staircase tread path to the visible foot-contact datum `(20,46)`.
+The up clip moves `(0,-1)` while turning from right three-quarter to rear; the
+down clip moves `(0,1)` while turning from rear to front-right. These are
+distinct animations, not reversed playback, so weight transfer and leading
+feet remain correct. Treads, railing and central post stay out of actor strips.
+
 Bath, shower and hot-tub clips use the same scale but carry explicit privacy
 metadata. Entry and exit frames use `towel-privacy`; washing uses
 `mosaic-privacy`, and the hot-tub loop uses `privacy-foam`. The opaque coverage

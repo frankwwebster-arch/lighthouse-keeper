@@ -2630,6 +2630,46 @@
   "interaction": "climb-spiral-stairs",
   "z": 50
  },
+ "keeper_spiral_stairs_down": {
+  "file": "keeper_spiral_stairs_down.png",
+  "w": 40,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   20,
+   48
+  ],
+  "movementVector": [
+   0,
+   1
+  ],
+  "loop": true,
+  "facing": "rotating-rear-to-front-right",
+  "interaction": "spiral-stairs-down",
+  "z": 50
+ },
+ "keeper_spiral_stairs_up": {
+  "file": "keeper_spiral_stairs_up.png",
+  "w": 40,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   20,
+   48
+  ],
+  "movementVector": [
+   0,
+   -1
+  ],
+  "loop": true,
+  "facing": "rotating-right-to-rear",
+  "interaction": "spiral-stairs-up",
+  "z": 50
+ },
  "keeper_stairs_down": {
   "file": "keeper_stairs_down.png",
   "w": 32,
