@@ -202,6 +202,9 @@ Delivered in `docs/keeper-scale-audit/review.html`:
 - Seated cards automatically use the canonical front/side sitting endpoint.
   Per-card controls select, rotate, reset or move the ghost alongside and fade
   the reviewed animation. Rear sitting still has no canonical neutral reference.
+- Every card has a happy checkbox, Save button and saved/unsaved indicator.
+  Saved review state survives reloads; export includes approvals and is blocked
+  while any card remains dirty.
 - Action-only, raw matching-outfit walk seams and routes containing the known
   turn/sit/bed bridges.
 - A seam-freeze onion skin of the final approach frame and first action frame.

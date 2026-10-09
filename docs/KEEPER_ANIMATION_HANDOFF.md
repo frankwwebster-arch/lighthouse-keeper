@@ -13,11 +13,13 @@ Codex task should be able to continue from here without relying on the old chat.
    its runtime and source filename. The display-size slider magnifies every
    stage equally from 1× to 6× without changing the art; the other global
    controls pause/play everything and apply pose-aware comparison ghosts.
-3. Ask Frank for his new comments and exported `keeper-scale-choices.json`, if
-   he has adjusted character sizes. Per-animation 70%–130% proposals save in
-   his browser and export as JSON, but they do not alter production art. **The
-   page still does not save written comments.** Do not assume comments seen
-   only in Frank's browser have entered the repository.
+3. Ask Frank for his new comments and exported `keeper-scale-choices.json`.
+   Each card's Save button persists size, ghost settings, opacity and the
+   happy/not-yet-happy decision in his browser. Version 2 of the export includes
+   both production size proposals and this complete review register, but it
+   does not alter production art. **The page still does not save written
+   comments.** Do not assume comments seen only in Frank's browser have entered
+   the repository.
 4. Record every new comment by exact `keeper_*` filename before changing art.
    Triage it as `keep`, `fix`, `rebuild`, `delete`, or `decision needed`, and
    distinguish an art fault from a missing transition or missing object.
@@ -41,6 +43,10 @@ override the ghost reference, rotate it, reset it, place it alongside on a wider
 stage and reduce only the reviewed animation's opacity. A canonical rear-sitting
 ghost does not yet exist, so rear cases must be judged with an explicitly chosen
 reference rather than being treated as an automatic match.
+Every card has `Happy with this animation`, `Save this review` and an explicit
+saved/unsaved state. Orange means unsaved; green means saved and happy. Export
+is blocked until changed cards are saved. Existing browser-saved size choices
+are loaded into the new workflow rather than discarded.
 
 The exact human-readable clip inventory is in `docs/KEEPER_ANIMATIONS.md`.
 The machine-readable runtime inventory is `public/sprites/manifest.json`.
