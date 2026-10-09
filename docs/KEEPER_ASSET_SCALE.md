@@ -72,6 +72,7 @@ downward. A side-facing point at X mirrors with `mirroredX = canvasWidth - X`.
 | Turntable platter | 13 px | extended side canvas `(34,27)` |
 | Potter's-wheel hand position | 17 px | `(20,23)` on 40 × 40 canvas |
 | Dining / meal / cake table surface | 19 px | tray canvas `(39,21)` |
+| Machete plant-cut contact | 12 px | long-tool canvas `(50,28)` |
 | Low coffee-table surface | 12 px | reserved low-furniture datum; not used by meal/cake placement |
 | Watering target | 9 px | extended side canvas `(35,31)` |
 | Barometer / instrument control | 23 px | side `(27,17)`; rear `(26,17)` |

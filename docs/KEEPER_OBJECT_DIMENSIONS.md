@@ -16,6 +16,7 @@ The main furniture datums are:
 | Door handle | 20 px above floor |
 | Light switch, instrument and lift control | 23 px above floor |
 | TV screen centre from a seated keeper | 26 px above floor |
+| Machete plant-cut contact | 12 px above floor; 18 px right of keeper anchor |
 
 These are contact dimensions, not suggestions. Object silhouettes and tiers may
 change, but their keeper-facing contact points remain fixed within 0.5 logical

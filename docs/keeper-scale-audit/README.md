@@ -5,7 +5,7 @@ This is the permanent, reproducible audit of every keeper sheet. It deliberately
 - 167 keeper sheets inspected.
 - 149 animation sheets accepted for review; 18 obsolete modular/reference sheets excluded.
 - 1186 individual frames measured.
-- 51 sheets explicitly rebuilt or anatomy-normalised in this pass.
+- 52 sheets explicitly rebuilt or anatomy-normalised in this pass.
 - Canonical upright anatomy: skull top 32.5 logical pixels above the walking floor, shoulders 24.5, hips 14.5, seat contact 11.
 - Allowed landmark drift: 0.5 logical pixel; core-width drift: 1 logical pixel. Pose contacts are checked independently from body scale.
 
@@ -29,6 +29,7 @@ Upright poses use inferred skull-to-supporting-sole height. Costumes use the fac
 - `keeper_knight_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_knight_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_knight_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_machete_side` — smooth machete restored in every frame; 64 px long-tool canvas prevents right-edge clipping without changing keeper scale.
 - `keeper_meal_place_side` — standard 19 px table datum; released plate edge restored in frames 7-8 without changing keeper scale.
 - `keeper_mechanic_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_mechanic_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.

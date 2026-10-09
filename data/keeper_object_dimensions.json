@@ -194,6 +194,12 @@
       "platterHeight": 13,
       "minimumWidth": 20,
       "keeperClips": ["keeper_put_record"]
+    },
+    "gardenPlantCutting": {
+      "cutContactHeight": 12,
+      "minimumHorizontalClearanceFromKeeper": 18,
+      "bladeEdge": "smooth",
+      "keeperClips": ["keeper_machete_side"]
     }
   }
 }

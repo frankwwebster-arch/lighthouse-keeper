@@ -192,6 +192,9 @@ clean regenerated versions; the rejected foamy brush and welding-contaminated
 hammer studies were never copied into this source directory. The corrected box
 search ends with both arms reaching forward on the far side of the torso; its
 hands-behind-body predecessor is retained in `replaced-search-boxes-v1/` only.
+The corrected machete source uses the same broad, smooth-edged blade in all
+eight poses—never saw teeth—and production uses a 64 × 40 long-tool canvas so
+the low follow-through and final frame retain the complete blade.
 
 The replaced navy pyjama source files remain in this directory as historical
 inputs, but production uses only the `light-blue` files above. The built-in

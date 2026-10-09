@@ -1552,17 +1552,17 @@
  },
  "keeper_machete_side": {
   "file": "keeper_machete_side.png",
-  "w": 48,
+  "w": 64,
   "h": 40,
   "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
-   24,
+   32,
    40
   ],
   "handUsePoint": [
-   42,
+   50,
    28
   ],
   "loop": true,

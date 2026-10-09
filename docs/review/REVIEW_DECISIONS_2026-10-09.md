@@ -62,6 +62,11 @@ Edge-clipping correction: `keeper_put_record` and
 transparent bounds retain the full record in frames 5–7 and the entire watering
 can/spout without changing keeper scale or floor-relative interaction offsets.
 
+Machete correction: `keeper_machete_side` now carries one consistent broad,
+smooth-edged machete in every frame. The serrated saw-like final tool was
+removed, and a 64 × 40 long-tool canvas preserves the full right-hand blade
+without rescaling the keeper or changing its floor-relative contact.
+
 Scale correction: `keeper_pressups_side` was redrawn and normalised along its
 horizontal body axis while preserving canonical head height and core depth;
 outer silhouette width is no longer accepted as a scale proxy. The standing

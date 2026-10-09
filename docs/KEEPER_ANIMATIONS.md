@@ -122,7 +122,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Lift weights | `keeper_lift_weights_back` | rear overhead press; old-school workout kit; barbell included; 48 × 56 overhead canvas preserves body scale |
 | Do press-ups | `keeper_pressups_side` | right; mirror left; old-school workout kit; 64 × 40 canvas; canonical head/core depth and 47–52 px articulated body-axis envelope |
 | Float in anti-gravity | `keeper_anti_gravity` | centred 48 × 48 loop; room applies drift/circling translation |
-| Chop plants | `keeper_machete_side` | right; mirror left; machete included, plants separate |
+| Chop plants | `keeper_machete_side` | right; mirror left; consistent smooth-edged machete included; plants separate; 64 × 40 long-tool canvas; hand/contact `(50,28)` |
 | Drink handled pint | `keeper_drink_pint` | seated front-right; mirror front-left; tankard included |
 | Use stationary exercise bike | `keeper_ride_bike_front` | direct front; 48 × 48; old-school workout kit; actor only; align separate bike to hand `(24,27)`, seat `(24,35)` and pedal `(24,42)` |
 | Press lift button | `keeper_lift_button_front` | front, right-hand reach; mirror to swap hand |

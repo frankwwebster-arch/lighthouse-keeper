@@ -370,6 +370,13 @@ for name in ['keeper_swim_costume_horizontal','keeper_scuba_swim_horizontal']:
     assert min(heights)>=32,(name,heights)
 for name in ['keeper_fish_feed_up','keeper_aquarium_brush','keeper_aquarium_net','keeper_hammer_side','keeper_read_side','keeper_write_side','keeper_telescope','keeper_put_record','keeper_paint_side','keeper_meal_place_side','keeper_snooker','keeper_table_tennis','keeper_darts','keeper_machete_side','keeper_pressups_side','keeper_bowling','keeper_video_game','keeper_water_plants_side','keeper_fish_standing','keeper_fish_seated','keeper_mechanic_fix']:
     assert manifest[name]['mirrorSafe'] is True and manifest[name]['mirrorsFor']
+machete=manifest['keeper_machete_side']
+assert machete['w']==64 and machete['h']==40 and machete['anchor']==[32,40]
+assert machete['handUsePoint']==[50,28] and machete['interaction']=='chop-plants'
+machete_strip=Image.open(root/'public/sprites'/machete['file']).convert('RGBA')
+for frame_index in range(machete['frames']):
+    visible=machete_strip.crop((frame_index*256,0,(frame_index+1)*256,160)).getchannel('A').getbbox()
+    assert visible is not None and 256-visible[2]>=64,(frame_index,visible)
 meal_strip=Image.open(root/'public/sprites'/manifest['keeper_meal_place_side']['file']).convert('RGBA')
 for frame_index in (6,7):
     # The released plate occupies this stable table-height window. It must
@@ -427,6 +434,8 @@ assert asset_contract['interactionProfiles']['carryCakeRight']['handUsePoint']==
 assert asset_contract['interactionProfiles']['carryMealRight']['handUsePoint']==[34,20]
 assert asset_contract['interactionProfiles']['placeCakeRight']['handUsePoint']==[39,21]
 assert asset_contract['interactionProfiles']['mealTableRight']['handUsePoint']==[39,21]
+assert asset_contract['interactionProfiles']['machetePlantRight']['handUsePoint']==[50,28]
+assert asset_contract['interactionProfiles']['machetePlantRight']['bladeEdge']=='smooth'
 assert asset_contract['interactionProfiles']['exerciseBikeFront']['pedalPoint']==[24,42]
 assert asset_contract['interactionProfiles']['fishingStandingRight']['handUsePoint']==[56,24]
 assert asset_contract['interactionProfiles']['drumsFront']['timingMaster'] is True
@@ -465,6 +474,7 @@ assert asset_contract['objectRules']['workbenchHammerSurfaceHeightAboveFloor']==
 assert asset_contract['objectRules']['writingSurfaceHeightAboveFloor']==19
 assert asset_contract['objectRules']['turntablePlatterHeightAboveFloor']==13
 assert asset_contract['objectRules']['mealTableSurfaceHeightAboveFloor']==19
+assert asset_contract['objectRules']['machetePlantContactHeightAboveFloor']==12
 assert asset_contract['objectRules']['instrumentControlHeightAboveFloor']==23
 assert asset_contract['objectRules']['liftButtonHeightAboveFloor']==23
 object_dimensions=json.loads((root/'data/keeper_object_dimensions.json').read_text())
@@ -474,6 +484,8 @@ assert object_dimensions['furniture']['diningTable']['surfaceHeight']==19
 assert object_dimensions['furniture']['lowCoffeeTable']['surfaceHeight']==12
 assert object_dimensions['furniture']['bed']['mattressTopHeight']==9
 assert object_dimensions['fixturesAndStations']['wallSwitch']['centreHeight']==23
+assert object_dimensions['fixturesAndStations']['gardenPlantCutting']['cutContactHeight']==12
+assert object_dimensions['fixturesAndStations']['gardenPlantCutting']['bladeEdge']=='smooth'
 scale_audit=json.loads((root/'docs/keeper-scale-audit/keeper-scale-metrics.json').read_text())
 assert scale_audit['counts']['allSheets']==167
 assert scale_audit['counts']['reviewedAnimationSheets']==149
