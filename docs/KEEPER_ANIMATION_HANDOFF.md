@@ -595,9 +595,9 @@ timing. This keeps later in-game tuning to a metadata edit rather than a redraw.
 ### Clothing families
 
 - Light powder-blue pyjamas: side walk left/right, side-door opening/closing,
-  turn rear, get into bed and snore. `keeper_door_open_side_pyjamas` inherits
-  the exact six-frame `keeper_door_open_side` motion and `(25,20)` handle point.
-  They must be visibly lighter than the normal uniform.
+  turn rear, get into bed and snore. `keeper_door_open_side_pyjamas` is a clean
+  six-frame redraw following the standard side-door progression and retaining
+  its `(25,20)` handle point. It must be visibly lighter than the normal uniform.
 - Full yellow sou'wester: side/rear/front movement.
 - Party: a small pale-pink conical cardboard hat with red fringe and pom-pom,
   never the previously oversized cone; canonical keeper face/body; idle, walk,

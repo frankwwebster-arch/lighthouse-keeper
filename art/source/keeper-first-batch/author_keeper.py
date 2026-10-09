@@ -631,44 +631,9 @@ wave_camera_frames = generated_frames("keeper-wave-generated-source.png", 8)
 yawn_frames = generated_frames("keeper-yawn-generated-source.png", 8)
 pyjamas_walk_frames = generated_frames("keeper-pyjamas-walk-light-blue-generated-source.png", 8)
 pyjamas_turn_back_frames = generated_frames("keeper-pyjamas-turn-back-light-blue-generated-source.png", 6)
+pyjamas_door_side_frames = generated_frames("keeper-door-side-pyjamas-generated-source.png", 6)
 get_into_bed_frames = generated_frames("keeper-get-into-bed-light-blue-generated-source.png", 8, logical_width=48, min_component_pixels=10000)
 pyjamas_snore_frames = generated_frames("keeper-snore-light-blue-generated-source.png", 6, logical_width=48)
-
-
-def pyjamas_action_variant(action_frames, pyjama_reference_frames):
-    """Dress an approved side action in the canonical light-blue pyjamas."""
-    reference = pyjama_reference_frames[2]
-    reference_upper = reference.crop((0, 0, reference.width, 15 * D))
-    reference_box = reference_upper.getchannel("A").getbbox()
-    variants = []
-    for action in action_frames:
-        variant = action.copy()
-        pixels = variant.load()
-        for y in range(15 * D, variant.height):
-            for x in range(variant.width):
-                r, g, b, a = pixels[x, y]
-                if not a:
-                    continue
-                if b < 18 or b <= r * 1.08 or b <= g * 1.03:
-                    continue
-                luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b
-                amount = min(1.0, max(0.0, (luminance - 12) / 115))
-                dark = (78, 116, 153)
-                light = (145, 190, 228)
-                pixels[x, y] = tuple(round(dark[i] + (light[i] - dark[i]) * amount) for i in range(3)) + (a,)
-        upper = variant.crop((0, 0, variant.width, 15 * D))
-        action_box = upper.getchannel("A").getbbox()
-        if not action_box or not reference_box:
-            raise ValueError("Door/pyjama head reference is empty")
-        dx = action_box[0] - reference_box[0]
-        dy = action_box[1] - reference_box[1]
-        ImageDraw.Draw(variant).rectangle((0, 0, variant.width, 15 * D), fill=(0, 0, 0, 0))
-        variant.alpha_composite(reference_upper, (dx, dy))
-        variants.append(variant)
-    return variants
-
-
-pyjamas_door_side_frames = pyjamas_action_variant(door_side_frames, pyjamas_walk_frames)
 swim_costume_horizontal_frames = generated_frames("keeper-swim-costume-horizontal-generated-source.png", 8, logical_width=80, logical_height=48)
 swim_costume_up_frames = generated_frames("keeper-swim-costume-up-generated-source.png", 8, logical_width=48, logical_height=48)
 swim_costume_down_frames = generated_frames("keeper-swim-costume-down-generated-source.png", 8, logical_width=48, logical_height=48)

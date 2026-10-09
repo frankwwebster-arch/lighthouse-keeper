@@ -149,6 +149,10 @@ assert manifest['keeper_door_open_side_pyjamas']['outfit']=='light-blue-pyjamas'
 assert manifest['keeper_door_open_side_pyjamas']['handUsePoint']==manifest['keeper_door_open_side']['handUsePoint']==[25,20]
 assert manifest['keeper_door_open_side_pyjamas']['anchor']==manifest['keeper_door_open_side']['anchor']==[16,40]
 assert manifest['keeper_door_open_side_pyjamas']['mirrorSafe'] is True and manifest['keeper_door_open_side_pyjamas']['mirrorsFor']=='left'
+pyjama_door_strip=Image.open(root/'public/sprites'/manifest['keeper_door_open_side_pyjamas']['file']).convert('RGBA')
+for frame_index in range(6):
+    frame=pyjama_door_strip.crop((frame_index*128,0,(frame_index+1)*128,160))
+    assert len(alpha_component_sizes(frame))==1,('keeper_door_open_side_pyjamas',frame_index,alpha_component_sizes(frame))
 assert manifest['keeper_door_open_back']['loop'] is False
 assert manifest['keeper_door_open_back']['reverseFor']=='door_close_back' and manifest['keeper_door_open_back']['mirrorSafe'] is True
 assert manifest['keeper_ladder_climb']['reverseFor']=='ladder_descend'

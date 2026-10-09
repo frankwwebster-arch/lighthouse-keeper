@@ -76,7 +76,7 @@ TECHNICAL = {
 }
 
 CORRECTED = {
-    "keeper_door_open_side_pyjamas": "exact approved side-door motion redressed from the canonical light-blue pyjama family; interaction geometry is unchanged",
+    "keeper_door_open_side_pyjamas": "clean six-frame side-door redraw in the canonical light-blue pyjama family; handle and floor interaction geometry are unchanged",
     "keeper_anti_gravity": "rebuilt as a canonical-scale prone goggle float with frames 3-4 in progressive rotation, a centred back flip and no parachute",
     "keeper_crouch_work_back": "redrawn; hands work in front and body width restored",
     "keeper_search_boxes": "reuses canonical corrected low rear work anatomy",

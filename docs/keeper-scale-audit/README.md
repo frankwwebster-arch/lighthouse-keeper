@@ -30,7 +30,7 @@ Review progress is browser-local: changing display zoom saves it immediately, an
 - `keeper_carry_shopping` — hand anatomy redrawn so each frame has exactly two hands attached to the two bag-carrying arms.
 - `keeper_collect_eggs_back` — reuses canonical corrected low rear work anatomy.
 - `keeper_crouch_work_back` — redrawn; hands work in front and body width restored.
-- `keeper_door_open_side_pyjamas` — exact approved side-door motion redressed from the canonical light-blue pyjama family; interaction geometry is unchanged.
+- `keeper_door_open_side_pyjamas` — clean six-frame side-door redraw in the canonical light-blue pyjama family; handle and floor interaction geometry are unchanged.
 - `keeper_drive_speedboat` — seated anatomy normalised to the sit-side head and torso unit.
 - `keeper_eat_seated` — seated anatomy normalised to the sit-side head and torso unit.
 - `keeper_fish_standing` — enlarged on a 64 by 56 canvas so the keeper, not the rod and line, determines actor scale.

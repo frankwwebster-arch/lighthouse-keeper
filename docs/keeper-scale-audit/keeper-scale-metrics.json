@@ -7605,19 +7605,19 @@
       "postureClass": "upright",
       "measurementMethod": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
       "status": "corrected",
-      "note": "exact approved side-door motion redressed from the canonical light-blue pyjama family; interaction geometry is unchanged",
-      "medianFaceProxyWidth": 10.25,
-      "medianFaceProxyHeight": 9.75,
+      "note": "clean six-frame side-door redraw in the canonical light-blue pyjama family; handle and floor interaction geometry are unchanged",
+      "medianFaceProxyWidth": 11.0,
+      "medianFaceProxyHeight": 10.38,
       "faceProxyCoverage": "6/6",
-      "medianTorsoScanWidthAt20": 17.88,
+      "medianTorsoScanWidthAt20": 19.0,
       "torsoScanCoverage": "6/6",
       "alphaHeightRange": [
-        37.25,
+        38.0,
         38.0
       ],
       "alphaWidthRange": [
-        16.5,
-        25.25
+        17.5,
+        26.5
       ],
       "bottomClearanceRange": [
         0.5,
@@ -7626,141 +7626,141 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            7.75,
-            2.25,
-            24.25,
+            7.25,
+            1.5,
+            24.75,
             39.5
           ],
-          "alphaWidth": 16.5,
-          "alphaHeight": 37.25,
+          "alphaWidth": 17.5,
+          "alphaHeight": 38.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              13.0,
-              4.0,
-              23.25,
+              12.75,
+              3.75,
+              23.5,
               13.75
             ],
-            "width": 10.25,
-            "height": 9.75,
-            "area": 705
+            "width": 10.75,
+            "height": 10.0,
+            "area": 749
           },
-          "torsoScanWidthAt20": 13.25
+          "torsoScanWidthAt20": 14.75
         },
         {
           "alphaBox": [
-            3.25,
-            2.0,
-            28.5,
+            2.75,
+            1.5,
+            29.25,
             39.5
           ],
-          "alphaWidth": 25.25,
-          "alphaHeight": 37.5,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              9.75,
-              3.75,
-              20.0,
-              13.5
-            ],
-            "width": 10.25,
-            "height": 9.75,
-            "area": 705
-          },
-          "torsoScanWidthAt20": 24.0
-        },
-        {
-          "alphaBox": [
-            4.5,
-            2.0,
-            27.25,
-            39.5
-          ],
-          "alphaWidth": 22.75,
-          "alphaHeight": 37.5,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              10.25,
-              3.75,
-              20.5,
-              13.5
-            ],
-            "width": 10.25,
-            "height": 9.75,
-            "area": 705
-          },
-          "torsoScanWidthAt20": 21.25
-        },
-        {
-          "alphaBox": [
-            4.75,
-            2.0,
-            27.25,
-            39.5
-          ],
-          "alphaWidth": 22.5,
-          "alphaHeight": 37.5,
+          "alphaWidth": 26.5,
+          "alphaHeight": 38.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
               9.5,
-              3.75,
-              19.75,
-              13.5
+              3.0,
+              20.5,
+              13.75
             ],
-            "width": 10.25,
-            "height": 9.75,
-            "area": 705
+            "width": 11.0,
+            "height": 10.75,
+            "area": 778
           },
-          "torsoScanWidthAt20": 18.5
+          "torsoScanWidthAt20": 25.5
         },
         {
           "alphaBox": [
-            4.5,
-            2.0,
-            27.25,
+            4.0,
+            1.5,
+            27.75,
             39.5
           ],
-          "alphaWidth": 22.75,
-          "alphaHeight": 37.5,
+          "alphaWidth": 23.75,
+          "alphaHeight": 38.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              9.25,
-              3.75,
-              19.5,
-              13.5
+              10.25,
+              3.25,
+              21.25,
+              13.75
             ],
-            "width": 10.25,
-            "height": 9.75,
-            "area": 705
+            "width": 11.0,
+            "height": 10.5,
+            "area": 777
           },
-          "torsoScanWidthAt20": 15.0
+          "torsoScanWidthAt20": 22.75
         },
         {
           "alphaBox": [
-            5.75,
+            4.75,
             1.5,
-            26.25,
+            27.25,
             39.5
           ],
-          "alphaWidth": 20.5,
+          "alphaWidth": 22.5,
+          "alphaHeight": 38.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              9.5,
+              3.25,
+              20.5,
+              13.75
+            ],
+            "width": 11.0,
+            "height": 10.5,
+            "area": 779
+          },
+          "torsoScanWidthAt20": 19.5
+        },
+        {
+          "alphaBox": [
+            4.0,
+            1.5,
+            28.0,
+            39.5
+          ],
+          "alphaWidth": 24.0,
+          "alphaHeight": 38.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              9.0,
+              3.25,
+              20.0,
+              13.5
+            ],
+            "width": 11.0,
+            "height": 10.25,
+            "area": 779
+          },
+          "torsoScanWidthAt20": 16.0
+        },
+        {
+          "alphaBox": [
+            5.25,
+            1.5,
+            26.75,
+            39.5
+          ],
+          "alphaWidth": 21.5,
           "alphaHeight": 38.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
               11.5,
-              3.25,
-              21.75,
-              13.0
+              4.0,
+              22.25,
+              13.75
             ],
-            "width": 10.25,
+            "width": 10.75,
             "height": 9.75,
-            "area": 705
+            "area": 757
           },
-          "torsoScanWidthAt20": 17.25
+          "torsoScanWidthAt20": 18.5
         }
       ],
       "originalComparison": {

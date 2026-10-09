@@ -236,6 +236,15 @@ The cake prompt pair locks the same golden sponge, dark tray, cream mitts and
 hand positions across a rear oven retrieval and a mirror-safe carrying turn;
 oven casing, rack and door remain separate.
 
+`keeper-door-side-pyjamas-generated-source.png` is a dedicated clean redraw,
+not a programmatic recolour of the uniform door sheet. Its referenced-image
+prompt uses `keeper-door-side-generated-source.png` as the six-pose interaction
+master and `keeper-pyjamas-walk-light-blue-generated-source.png` as the exact
+identity, garment, piping, trouser and slipper master. The rejected recolour is
+not retained as a production source. The runtime strip keeps the shared
+`(25,20)` handle point and feet anchor, and each frame must remain one connected
+hard-alpha component so edge speckling cannot silently return.
+
 `keeper-carry-cake-generated-source.png` and
 `keeper-carry-meal-generated-source.png` extend those serving sequences with
 eight-frame right-facing walks. Both use the canonical gait and 48 × 40 tray
