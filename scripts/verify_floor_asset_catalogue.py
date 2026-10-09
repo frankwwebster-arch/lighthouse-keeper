@@ -23,7 +23,7 @@ def alpha_component_sizes(image):
 data=json.loads((root/'docs/floor-asset-catalogue/catalogue.json').read_text())
 spaces=data['spaces']; rows=data['rows']
 assert len(spaces)==71 and len({s['space_id'] for s in spaces})==71
-assert len(rows)==1576
+assert len(rows)==1579
 with (root/'docs/floor-asset-catalogue/catalogue.csv').open(newline='') as f:
     assert len(list(csv.DictReader(f)))==len(rows)
 for space in spaces:
@@ -31,8 +31,12 @@ for space in spaces:
     for item in space['items']:
         if item['owned']:
             for tier in item['tiers']:
-                for state in ['standard','on','broken']:
-                    assert state in tier['required_states'].lower(), (space['space_id'],item['id'],state)
+                required=tier['required_states'].lower()
+                if item['id']=='armchair':
+                    assert required=='standard', (space['space_id'],item['id'],required)
+                else:
+                    for state in ['standard','on','broken']:
+                        assert state in required, (space['space_id'],item['id'],state)
 manifest=json.loads((root/'public/sprites/manifest.json').read_text())
 contracts=json.loads((root/'art/source/floor-asset-catalogue/export-contract.json').read_text())
 keeper_contract=json.loads((root/'data/keeper_asset_contract.json').read_text())
@@ -57,7 +61,7 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==183
+assert len(keeper_pngs)==184
 required_clips={
     'keeper_idle':(4,4), 'keeper_walk':(8,4),
     'keeper_turn_back':(6,4), 'keeper_work_back':(8,4),
@@ -115,7 +119,7 @@ required_clips={
     'keeper_guitar_pickup_flying_v_1967':(12,4),
     'keeper_play_drums_front':(8,4), 'keeper_play_drums_back':(8,4),
     'keeper_watch_movie':(8,4),
-    'keeper_clear_snow':(8,4), 'keeper_crouch_work_back':(8,4),
+    'keeper_clear_snow':(8,4), 'keeper_lawn_mower_push':(8,4), 'keeper_crouch_work_back':(8,4),
     'keeper_cake_from_oven_back':(8,4), 'keeper_cake_turn_right':(6,4),
     'keeper_carry_cake':(8,4), 'keeper_carry_meal':(8,4),
     'keeper_place_cake':(8,4),
@@ -405,6 +409,9 @@ assert manifest['keeper_watch_movie']['lookTargetPoint']==[56,14] and manifest['
 assert manifest['keeper_watch_movie']['mirrorSafe'] is True and manifest['keeper_watch_movie']['mirrorsFor']=='rear-left'
 assert manifest['keeper_clear_snow']['w']==48 and manifest['keeper_clear_snow']['handUsePoint']==[43,37]
 assert manifest['keeper_clear_snow']['outfit']=='winter-coat' and manifest['keeper_clear_snow']['mirrorSafe'] is True
+assert manifest['keeper_lawn_mower_push']['w']==48 and manifest['keeper_lawn_mower_push']['handUsePoint']==[23,22]
+assert manifest['keeper_lawn_mower_push']['movementVector']==[1,0] and manifest['keeper_lawn_mower_push']['propVariant']=='manual-reel-mower'
+assert manifest['keeper_lawn_mower_push']['interaction']=='push-lawn-mower' and manifest['keeper_lawn_mower_push']['mirrorSafe'] is True
 assert manifest['keeper_crouch_work_back']['handUsePoint']==[16,38]
 assert manifest['keeper_crouch_work_back']['facing']=='back' and manifest['keeper_crouch_work_back']['interaction']=='ground-work'
 assert manifest['keeper_cake_from_oven_back']['w']==48 and manifest['keeper_cake_from_oven_back']['handUsePoint']==[24,30]
@@ -610,6 +617,11 @@ assert object_dimensions['furniture']['diningChair']['seatTopHeight']==11
 assert 'keeper_sit_back' in object_dimensions['furniture']['diningChair']['keeperClips']
 assert 'keeper_nap_seated' in object_dimensions['furniture']['diningChair']['keeperClips']
 assert 'keeper_nap_seated' in object_dimensions['furniture']['sofa']['keeperClips']
+assert object_dimensions['furniture']['armchair']['seatTopHeight']==11
+assert object_dimensions['furniture']['armchair']['tiers']==['Basic armchair','Rocking chair','Lazyboy-style recliner']
+assert object_dimensions['furniture']['armchair']['keeperClips']==['keeper_sit_side','keeper_sit_front','keeper_nap_seated']
+assert object_dimensions['fixturesAndStations']['gardenShedDoor']['minimumOpeningWidth']==32
+assert object_dimensions['fixturesAndStations']['gardenShedDoor']['foregroundOcclusionRequired'] is True
 assert object_dimensions['furniture']['diningTable']['surfaceHeight']==19
 assert object_dimensions['furniture']['lowCoffeeTable']['surfaceHeight']==12
 assert object_dimensions['furniture']['bed']['mattressTopHeight']==9
@@ -624,12 +636,12 @@ assert scale_audit['auditRevision']=='2026-10-09-original-comparison-v2'
 assert scale_audit['originalReference']['name']=='keeper_walk'
 assert scale_audit['originalReference']['source']=='art/raw/keeper-first-batch/keeper_walk_f8.png'
 assert scale_audit['originalReference']['approvedMedianTorsoScanWidthAt20']==13.75
-assert scale_audit['counts']['allSheets']==183
-assert scale_audit['counts']['reviewedAnimationSheets']==165
+assert scale_audit['counts']['allSheets']==184
+assert scale_audit['counts']['reviewedAnimationSheets']==166
 assert scale_audit['counts']['technicalRejectedSheets']==18
-assert scale_audit['counts']['allFramesMeasured']==1316
+assert scale_audit['counts']['allFramesMeasured']==1324
 assert scale_audit['counts']['comparisonFailures']==0
-assert len(scale_audit['assets'])==183
+assert len(scale_audit['assets'])==184
 assert all('originalComparison' in asset for asset in scale_audit['assets'])
 scale_assets_by_name={asset['name']:asset for asset in scale_audit['assets']}
 standing_face=scale_assets_by_name['keeper_walk']['frameMeasurements'][0]['faceProxy']
@@ -654,7 +666,7 @@ assert len(scale_audit['contactSheets'])==9
 assert all((root/path).exists() for path in scale_audit['contactSheets'])
 scale_review=(root/'docs/keeper-scale-audit/review.html').read_text()
 assert '__KEEPER_REVIEW_DATA__' not in scale_review
-assert '"reviewedAnimationSheets":165' in scale_review
+assert '"reviewedAnimationSheets":166' in scale_review
 for removed_control in ('id="search"','id="outfit"','id="posture"','id="kind"','id="sort"'):
     assert removed_control not in scale_review,removed_control
 for token in (
@@ -789,6 +801,7 @@ previews={
     'keeper-play-drums-front':(8,250), 'keeper-play-drums-back':(8,250),
     'keeper-watch-movie-right':(8,250), 'keeper-watch-movie-left':(8,250),
     'keeper-clear-snow-right':(8,250), 'keeper-clear-snow-left':(8,250),
+    'keeper-lawn-mower-push-right':(8,250), 'keeper-lawn-mower-push-left':(8,250),
     'keeper-crouch-work-back':(8,250),
     'keeper-cake-from-oven-back':(8,250),
     'keeper-cake-turn-right':(6,250), 'keeper-cake-turn-left':(6,250),
@@ -797,6 +810,6 @@ for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
 keeper_previews=list((root/'docs/floor-asset-catalogue').glob('keeper-*-preview.gif'))
-assert len(keeper_previews)==167
+assert len(keeper_previews)==169
 assert all(Image.open(path).is_animated for path in keeper_previews)
-print('Verified: 71 spaces, 1576 rows, owned-item states, 9 TV/lamp/FX exports, 183 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
+print('Verified: 71 spaces, 1579 rows, owned-item states, passive armchair contract, 9 TV/lamp/FX exports, 184 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')

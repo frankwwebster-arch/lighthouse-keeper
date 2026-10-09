@@ -125,6 +125,8 @@
     "watchMovieLeft": { "clip": "keeper_watch_movie", "seatPoint": [24, 29], "handUsePoint": [14, 19], "lookTargetPoint": [-8, 14], "screenCentreOffsetFromSeat": [-32, -15], "mirroredFrom": "watchMovieRight" },
     "clearSnowRight": { "clip": "keeper_clear_snow", "handUsePoint": [43, 37], "offsetFromFeet": [19, -3], "mirrorFor": "clearSnowLeft" },
     "clearSnowLeft": { "clip": "keeper_clear_snow", "handUsePoint": [5, 37], "offsetFromFeet": [-19, -3], "mirroredFrom": "clearSnowRight" },
+    "lawnMowerPushRight": { "clip": "keeper_lawn_mower_push", "handUsePoint": [23, 22], "movementVector": [1, 0], "mowerIncluded": true, "shedExitForegroundOcclusionRequired": true, "mirrorFor": "lawnMowerPushLeft" },
+    "lawnMowerPushLeft": { "clip": "keeper_lawn_mower_push", "handUsePoint": [25, 22], "movementVector": [-1, 0], "mowerIncluded": true, "shedExitForegroundOcclusionRequired": true, "mirroredFrom": "lawnMowerPushRight" },
     "crouchGroundBack": { "clip": "keeper_crouch_work_back", "handUsePoint": [16, 38], "offsetFromFeet": [0, -2] },
     "ovenCakeBack": { "clip": "keeper_cake_from_oven_back", "handUsePoint": [24, 30], "ovenRackOffsetFromFeet": [0, -10] },
     "cakeTurnRight": { "clip": "keeper_cake_turn_right", "handUsePoint": [34, 20], "cakeCarryOffsetFromFeet": [10, -20], "mirrorFor": "cakeTurnLeft" },

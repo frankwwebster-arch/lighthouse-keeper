@@ -221,7 +221,7 @@ handover; an unexplained first-frame pop is not a seamless join.
 Delivered in `docs/keeper-scale-audit/review.html`:
 
 - A dedicated untouched `keeper_walk` scale-authority panel, followed by all
-  165 accepted clips at one unchanged relative world scale on a shared 96 × 96
+  166 accepted clips at one unchanged relative world scale on a shared 96 × 96
   stage, with floor, skull, shoulder, hip and seat guide lines and optional
   pose-aware comparison ghosts. A focused view steps through one large card at
   a time with Previous/Next controls, progress and arrow-key navigation while
@@ -274,7 +274,7 @@ Delivered in `docs/keeper-scale-audit/review.html`:
 - Action-only, raw matching-outfit walk seams and routes containing the known
   turn/sit/bed bridges.
 - A seam-freeze onion skin of the final approach frame and first action frame.
-- One filename-ordered gallery showing all 165 clips without search or filters;
+- One filename-ordered gallery showing all 166 clips without search or filters;
   every card names its runtime PNG and source strip. Global controls pause or
   play the whole gallery and apply or remove pose-aware comparison ghosts from all
   clips together. The summary still counts the 33 missing facing/posture

@@ -9,6 +9,7 @@ The main furniture datums are:
 | Object | Authoritative datum |
 | --- | ---: |
 | Chair / sofa / toilet seat | 11 px above floor |
+| Basic armchair / rocking chair / Lazyboy-style recliner | 11 px above floor for every tier; rocking/recline occurs on the furniture layer |
 | Bed mattress | 9 px above floor |
 | Dining, writing and kitchen surface | 19 px above floor |
 | Workbench | 17 px above floor |

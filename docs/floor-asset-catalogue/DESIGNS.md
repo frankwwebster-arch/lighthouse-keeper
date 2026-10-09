@@ -78,9 +78,9 @@ Standard bands: 110 × 35. Plates: 105 × 35. Kitchen base, lamp top, bedroom be
 
 **standard · 110 × 35 logical pixels · saved random middle slot**
 
-**Layout:** TV left; shelf centre; piano right; sofa foreground
+**Layout:** TV left; shelf centre; piano right; upgradeable armchair foreground
 
-**Activities:** TV; reading; music; sofa nap
+**Activities:** TV; reading; music; armchair nap
 
 **Dependencies:** none
 
@@ -94,7 +94,7 @@ Standard bands: 110 × 35. Plates: 105 × 35. Kitchen base, lamp top, bedroom be
 
 **Source:** docs/PRODUCTION_ASSET_KIT.md; docs/CODEX_BRIEF.md
 
-**Asset inventory:** plate + structural kit; sofa, rug, sea_chart; shared keeper poses and fault/reveal effects are itemized in CSV.
+**Asset inventory:** plate + structural kit; rug, sea_chart; shared keeper poses and fault/reveal effects are itemized in CSV.
 
 ### tv
 
@@ -113,6 +113,12 @@ Standard bands: 110 × 35. Plates: 105 × 35. Kitchen base, lamp top, bedroom be
 - obj_piano: Runtime: Play the piano; 30 game min; fun +30, social +4 (need caps apply); proposed specialist perk: 30 fun and 4 social / 30 min. Old upright piano. Basic upright or small instrument casing. ON: 4-frame keys or bellows. Proposed location (85,0), logical frame 25x18; stable usePoint(-8,0), effectOrigin(0,-18), bubbleOrigin(0,-26), z40. New tier mechanics and names require review; existing names preserved. States: standard;on;broken; standard 1; on 4@8fps; broken 1 + shared FX.
 - obj_piano_t2: Runtime: Play the piano; 26 game min; fun +38, social +5 (need caps apply); proposed specialist perk: 38 fun and 5 social / 26 min. Shiny upright piano. Improved keyboard/bellows and sound indicator. ON: 4-frame keys or bellows. Proposed location (85,0), logical frame 25x18; stable usePoint(-8,0), effectOrigin(0,-18), bubbleOrigin(0,-26), z40. New tier mechanics and names require review; existing names preserved. States: standard;on;broken; standard 1; on 4@8fps; broken 1 + shared FX.
 - obj_piano_t3: Runtime: Play the piano; 21 game min; fun +45, social +6 (need caps apply); proposed specialist perk: 45 fun and 6 social / 21 min. Grand piano. Performance-ready casing and concert cue; keep frame bounds. ON: 4-frame keys or bellows. Proposed location (85,0), logical frame 25x18; stable usePoint(-8,0), effectOrigin(0,-18), bubbleOrigin(0,-26), z40. New tier mechanics and names require review; existing names preserved. States: standard;on;broken; standard 1; on 4@8fps; broken 1 + shared FX.
+
+### armchair
+
+- obj_armchair: PROPOSED, not coded: 80 percent morning energy. Basic armchair. Simple upholstered armchair. Passive occupied state uses the keeper layer; no artificial ON or broken state. Proposed location (82,-22), logical frame 24x26; stable seat top 11 px, effectOrigin(0,-26), bubbleOrigin(0,-34), z40. New tier mechanics and names require review; existing names preserved. States: standard; standard 1.
+- obj_armchair_t2: PROPOSED, not coded: 90 percent morning energy. Rocking chair. Rocking chair on stable curved runners. Passive occupied state uses the keeper layer; no artificial ON or broken state. Proposed location (82,-22), logical frame 24x26; stable seat top 11 px, effectOrigin(0,-26), bubbleOrigin(0,-34), z40. New tier mechanics and names require review; existing names preserved. States: standard; standard 1.
+- obj_armchair_t3: PROPOSED, not coded: 100 percent morning energy. Lazyboy-style recliner. Lazyboy-style reclining armchair. Passive occupied state uses the keeper layer; no artificial ON or broken state. Proposed location (82,-22), logical frame 24x26; stable seat top 11 px, effectOrigin(0,-26), bubbleOrigin(0,-34), z40. New tier mechanics and names require review; existing names preserved. States: standard; standard 1.
 
 **Frank’s changes / additions:**
 

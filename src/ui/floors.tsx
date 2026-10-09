@@ -38,7 +38,7 @@ export const PLAYABLE_FLOORS: readonly FloorModuleSpec[] = [
     name: 'Living room',
     roomSprite: 'room_living',
     wall: '#cfe3d3',
-    objects: ['tv', 'bookshelf', 'piano'],
+    objects: ['tv', 'bookshelf', 'piano', 'armchair'],
     zones: [{ id: 'living', fromX: 52, toX: 468 }],
   },
   {

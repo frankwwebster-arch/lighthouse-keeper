@@ -75,9 +75,9 @@
       35
     ],
     "dependencies": "none",
-    "activities": "TV; reading; music; sofa nap",
+    "activities": "TV; reading; music; armchair nap",
     "unlock_challenge": "Day-one relaxation",
-    "layout": "TV left; shelf centre; piano right; sofa foreground",
+    "layout": "TV left; shelf centre; piano right; upgradeable armchair foreground",
     "items": [
       {
         "id": "tv",
@@ -102,10 +102,17 @@
           25,
           18
         ]
+      },
+      {
+        "id": "armchair",
+        "profile": "sleep",
+        "dimensions": [
+          24,
+          26
+        ]
       }
     ],
     "props": [
-      "sofa",
       "rug",
       "sea_chart"
     ],

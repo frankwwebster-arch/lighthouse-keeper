@@ -56,6 +56,7 @@ export type ObjectId =
   | 'tv'
   | 'bookshelf'
   | 'piano'
+  | 'armchair'
   | 'basin'
   | 'toilet'
   | 'bed'
@@ -154,10 +155,10 @@ export const INTERACTIONS: readonly InteractionDef[] = [
   { id: 'fridge_snack', object: 'fridge', label: 'Have a snack', did: 'had a snack from the fridge', minutes: 8, effects: {}, anim: 'eat', self: true, gated: false, keywords: ['snack', 'fridge', 'eat', 'nibble', 'hungry', 'biscuit'], example: 'have a snack' },
   { id: 'cooker_cook', object: 'cooker', label: 'Cook something', did: 'cooked a proper meal', minutes: 35, effects: { tidiness: -8 }, anim: 'busy', fx: 'steam', self: true, gated: false, keywords: ['cook', 'supper', 'dinner', 'lunch', 'breakfast', 'meal', 'stove', 'cooker'], example: 'cook some supper' },
   { id: 'cooker_toast', object: 'cooker', label: 'Make toast', did: 'made some toast', minutes: 12, effects: { hunger: 22 }, anim: 'busy', fx: 'steam', self: true, gated: false, keywords: ['toast'], example: 'make some toast' },
-  // TV and sofa
+  // TV and armchair
   { id: 'tv_watch', object: 'tv', label: 'Watch TV', did: 'watched the telly', minutes: 40, effects: { fun: 30, energy: -4 }, anim: 'tv', fx: 'tv', self: true, gated: true, keywords: ['tv', 'telly', 'television', 'watch', 'cartoons', 'channel'], example: 'watch TV' },
   { id: 'tv_nature', object: 'tv', label: 'Watch the nature channel', did: 'watched a nature programme', minutes: 40, effects: { fun: 22, social: 6 }, anim: 'tv', fx: 'tv', self: false, gated: true, keywords: ['nature', 'animals', 'documentary'], example: 'watch the nature channel' },
-  { id: 'tv_nap', object: 'tv', label: 'Snooze on the sofa', did: 'snoozed on the sofa', minutes: 45, effects: { energy: 26, fun: 4 }, anim: 'sleep', fx: 'zzz', self: true, gated: false, keywords: ['sofa', 'snooze', 'nap', 'doze', 'forty winks', 'lie down'], example: 'have a nap on the sofa' },
+  { id: 'tv_nap', object: 'armchair', label: 'Snooze in the armchair', did: 'snoozed in the armchair', minutes: 45, effects: { energy: 26, fun: 4 }, anim: 'sleep', fx: 'zzz', self: true, gated: false, keywords: ['armchair', 'chair', 'sofa', 'snooze', 'nap', 'doze', 'forty winks', 'sit down'], example: 'have a nap in the armchair' },
   // Books and piano
   { id: 'read_book', object: 'bookshelf', label: 'Read a book', did: 'read a book', minutes: 40, effects: { fun: 26, energy: 3 }, anim: 'read', self: true, gated: true, keywords: ['read', 'book', 'story'], example: 'read a book' },
   { id: 'play_piano', object: 'piano', label: 'Play the piano', did: 'played the piano', minutes: 30, effects: { fun: 30, social: 4 }, anim: 'piano', fx: 'music', self: true, gated: true, keywords: ['piano', 'tune', 'music', 'play something'], example: 'play the piano' },
@@ -217,6 +218,7 @@ export const OBJECTS: readonly ObjectDef[] = [
   { id: 'tv', label: 'TV', floor: 'living', x: 140, zoom: 2.0 },
   { id: 'bookshelf', label: 'Bookshelf', floor: 'living', x: 256, zoom: 2.0 },
   { id: 'piano', label: 'Piano', floor: 'living', x: 376, zoom: 2.0 },
+  { id: 'armchair', label: 'Armchair', floor: 'living', x: 456, zoom: 2.0 },
   { id: 'bed', label: 'Bed', floor: 'bedroom', x: 132, zoom: 2.0 },
   { id: 'phone', label: 'Phone', floor: 'bedroom', x: 224, zoom: 2.2 },
   { id: 'desk', label: 'Desk', floor: 'bedroom', x: 292, zoom: 2.0 },
@@ -238,7 +240,7 @@ export const OBJECTS: readonly ObjectDef[] = [
 export const objectById = (id: ObjectId) => OBJECTS.find((o) => o.id === id)
 
 /** Keeper-owned assets may fail, including large outdoor structures. The off-island shop belongs to somebody else. */
-export const BREAKABLE_OBJECTS: readonly ObjectId[] = OBJECTS.filter((object) => object.id !== 'shop').map((object) => object.id)
+export const BREAKABLE_OBJECTS: readonly ObjectId[] = OBJECTS.filter((object) => !['shop', 'armchair'].includes(object.id)).map((object) => object.id)
 export type BreakdownSound = 'electronic-fizzle' | 'mechanical-clunk' | 'plumbing-sputter' | 'structure-crack'
 export const BREAKDOWN_SFX: Partial<Record<ObjectId, BreakdownSound>> = {
   fridge: 'electronic-fizzle', cooker: 'electronic-fizzle', tv: 'electronic-fizzle', phone: 'electronic-fizzle', lamp: 'electronic-fizzle',

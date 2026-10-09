@@ -1,0 +1,26 @@
+{
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    24,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "handUsePoint": [
+    23,
+    22
+  ],
+  "movementVector": [
+    1,
+    0
+  ],
+  "propVariant": "manual-reel-mower",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "push-lawn-mower",
+  "mirrorsFor": "left"
+}

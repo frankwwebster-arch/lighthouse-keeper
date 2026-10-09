@@ -107,6 +107,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Play drums back to camera | `keeper_play_drums_back` | the same eight poses viewed through 180°; identical seated scale, seat/strike contacts and timing; sticks included; stool and kit separate |
 | Watch a movie | `keeper_watch_movie` | reclined rear-right with popcorn; mirror rear-left; seating and screen separate |
 | Clear snow | `keeper_clear_snow` | thick winter coat and shovel; right; mirror left; snow bank/effects separate |
+| Push lawn mower | `keeper_lawn_mower_push` | right; mirror left; manual reel mower included; translate the complete sprite from behind the shed's foreground door layer |
 | Crouched ground work | `keeper_crouch_work_back` | direct rear reusable proxy; animated low alternating arm reaches |
 | Take cake from oven | `keeper_cake_from_oven_back` | direct rear one-shot; oven/rack separate; mitts, tray and cake included |
 | Turn carrying cake | `keeper_cake_turn_right` | rear-to-right one-shot; mirror for rear-to-left |

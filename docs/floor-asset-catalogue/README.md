@@ -1,6 +1,6 @@
 # Frank’s floor and asset review
 
-Open **[review.html](review.html)**. This self-contained review canvas works without a server or network connection. It contains 71 documented spaces/variants, searchable design cards and diagrams, a 1,576-row CSV-style catalogue, mechanical tier proposals, required states, production thumbnails and annotation tools.
+Open **[review.html](review.html)**. This self-contained review canvas works without a server or network connection. It contains 71 documented spaces/variants, searchable design cards and diagrams, a 1,579-row CSV-style catalogue, mechanical tier proposals, required states, production thumbnails and annotation tools.
 
 Native Codex Canvas publishing is unavailable in this session. This is a durable standalone HTML review artifact, not a claimed native Canvas publication. It can be imported or published there when that capability is available.
 
@@ -16,7 +16,7 @@ Pixel studio lets Frank adjust pixel block size, paint or erase individual frame
 
 BB Sea news literally reads `B B SEA`, adapted from the supplied BBC NEWS reference, followed by NEWS lettering and a tiny newsreader head. Sport shows football; Nature shows animals. Four ON frames are one animated state, not four asset variants. Broken TV uses one damaged image plus shared smoke/sparks and existing body vibration. Channel selection reuses existing watch/nature actions; no new gameplay effect is claimed. The production guide now requires ON only for operating devices; passive furniture remains standard and is designed around keeper poses.
 
-The Completed assets and Pixel studio tabs contain the 165 accepted keeper animation sheets. Eighteen obsolete modular/reference sheets remain technical history but are intentionally absent. All 1,316 frames are measured in `../keeper-scale-audit/`; its unified `review.html` and printable fixed-scale contact sheets are the review authority.
+The Completed assets and Pixel studio tabs contain the 166 accepted keeper animation sheets. Eighteen obsolete modular/reference sheets remain technical history but are intentionally absent. All 1,324 frames are measured in `../keeper-scale-audit/`; its unified `review.html` and printable fixed-scale contact sheets are the review authority.
 
 The production walk is an eight-frame right-facing side cycle at 10 fps. The
 runtime mirrors it for left-facing movement. `keeper-walk-preview.gif` is an

@@ -20,6 +20,9 @@ living,tv,3,Cinema wall with surround sound,50,Visitors love film night (extra c
 living,bookshelf,1,Wobbly shelf,0,,obj_bookshelf,todo,todo,todo,
 living,bookshelf,2,Proper bookcase,20,,obj_bookshelf_t2,todo,todo,todo,
 living,bookshelf,3,Library wall with a ladder,40,Reading helps with quiz questions (a hint?),obj_bookshelf_t3,todo,todo,todo,
+living,armchair,1,Basic armchair,0,,obj_armchair,todo,n/a,n/a,Seat contact stays at 11 px across all tiers; passive furniture does not break
+living,armchair,2,Rocking chair,20,More restful seated activities,obj_armchair_t2,todo,n/a,n/a,Furniture-layer rocking; keeper is never rescaled
+living,armchair,3,Lazyboy-style recliner,40,Best comfort and energy recovery,obj_armchair_t3,todo,n/a,n/a,Furniture-layer recline; keeper seat datum remains fixed
 living,piano,1,Old upright piano,0,,obj_piano,todo,todo,todo,
 living,piano,2,Shiny upright piano,25,,obj_piano_t2,todo,todo,todo,
 living,piano,3,Grand piano,50,Visitors ask him to play,obj_piano_t3,todo,todo,todo,

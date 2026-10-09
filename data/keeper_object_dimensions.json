@@ -87,6 +87,17 @@
       "keeperClips": ["keeper_watch_tv", "keeper_watch_movie", "keeper_video_game", "keeper_read_front", "keeper_nap_seated"],
       "status": "authoritative-datums"
     },
+    "armchair": {
+      "seatTopHeight": 11,
+      "seatDepth": 15,
+      "backTopHeight": 26,
+      "singleKeeperWidth": 24,
+      "armTopHeight": 17,
+      "tiers": ["Basic armchair", "Rocking chair", "Lazyboy-style recliner"],
+      "rule": "All three tiers keep the same seat contact; rocking or reclining motion belongs to the furniture layer and must not rescale the keeper.",
+      "keeperClips": ["keeper_sit_side", "keeper_sit_front", "keeper_nap_seated"],
+      "status": "authoritative-datums-art-planned"
+    },
     "bed": {
       "mattressTopHeight": 9,
       "mattressThickness": 3,
@@ -145,6 +156,13 @@
       "minimumOpeningHeight": 40,
       "minimumOpeningWidth": 24,
       "keeperClips": ["keeper_door_open_side", "keeper_door_open_back"]
+    },
+    "gardenShedDoor": {
+      "minimumOpeningHeight": 40,
+      "minimumOpeningWidth": 32,
+      "foregroundOcclusionRequired": true,
+      "keeperClips": ["keeper_lawn_mower_push"],
+      "note": "Place the complete keeper-plus-mower sprite behind the foreground door layer, then translate it onto the lawn."
     },
     "oven": {
       "rackHeight": 10,

@@ -62,7 +62,7 @@ then run `scripts/audit_keeper_scale.py` with the bundled Python runtime.
 
 The audit uses the untouched approved `keeper_walk` as its primary reference:
 
-1. It measures every frame in all 183 sheets (1,316 frames at present).
+1. It measures every frame in all 184 sheets (1,324 frames at present).
 2. It prints the original first in every contact-sheet row, followed by the
    tested sheet's first, middle and last representative frames at exactly the
    same fixed scale. No image is fitted to its available canvas.
@@ -229,13 +229,13 @@ the established switch heights, canvas scale or feet anchors.
 The complete starting dimensions for chairs, sofas, tables, beds, toilets,
 baths, showers and object stations are in
 `data/keeper_object_dimensions.json`. The per-frame measurement evidence for
-all 183 sheets is in `docs/keeper-scale-audit/keeper-scale-metrics.json`; the
+all 184 sheets is in `docs/keeper-scale-audit/keeper-scale-metrics.json`; the
 nine contact sheets render every sample at one fixed display scale so a larger
 transparent canvas can never make its keeper look smaller.
 
 For interactive comparison, open `docs/keeper-scale-audit/review.html`. It puts
 the untouched `keeper_walk` in a dedicated scale-authority panel, followed by
-all 165 accepted animation sheets in one filename-ordered gallery, without
+all 166 accepted animation sheets in one filename-ordered gallery, without
 search, filters or card fitting. For standard upright cap poses, its gold badge
 crossing the blue skull-top line is a convenient calibrated proxy; it does not
 replace anatomical landmarks for altered posture, head angle or headwear.

@@ -35,11 +35,11 @@
     }
   },
   "counts": {
-    "allSheets": 183,
-    "reviewedAnimationSheets": 165,
+    "allSheets": 184,
+    "reviewedAnimationSheets": 166,
     "technicalRejectedSheets": 18,
-    "allFramesMeasured": 1316,
-    "correctedSheets": 72,
+    "allFramesMeasured": 1324,
+    "correctedSheets": 73,
     "comparisonFailures": 0
   },
   "contactSheets": [
@@ -16157,6 +16157,243 @@
       }
     },
     {
+      "name": "keeper_lawn_mower_push",
+      "source": "art/raw/keeper-first-batch/keeper_lawn_mower_push_f8.png",
+      "frames": 8,
+      "fps": 4,
+      "loop": true,
+      "canvas": [
+        48,
+        40
+      ],
+      "anchor": [
+        24,
+        40
+      ],
+      "facing": "right",
+      "outfit": "standard",
+      "interaction": "push-lawn-mower",
+      "seatPoint": null,
+      "postureClass": "upright",
+      "measurementMethod": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
+      "status": "corrected",
+      "note": "new canonical-height side walk pushing an included manual reel mower; runtime translates the complete unit from behind a foreground shed door",
+      "medianFaceProxyWidth": 9.25,
+      "medianFaceProxyHeight": 5.88,
+      "faceProxyCoverage": "8/8",
+      "medianTorsoScanWidthAt20": 12.25,
+      "torsoScanCoverage": "8/8",
+      "alphaHeightRange": [
+        36.5,
+        38.0
+      ],
+      "alphaWidthRange": [
+        26.5,
+        29.5
+      ],
+      "bottomClearanceRange": [
+        0.5,
+        0.5
+      ],
+      "frameMeasurements": [
+        {
+          "alphaBox": [
+            10.0,
+            2.25,
+            38.0,
+            39.5
+          ],
+          "alphaWidth": 28.0,
+          "alphaHeight": 37.25,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              17.25,
+              8.75,
+              26.5,
+              14.5
+            ],
+            "width": 9.25,
+            "height": 5.75,
+            "area": 436
+          },
+          "torsoScanWidthAt20": 11.75
+        },
+        {
+          "alphaBox": [
+            10.75,
+            3.0,
+            37.25,
+            39.5
+          ],
+          "alphaWidth": 26.5,
+          "alphaHeight": 36.5,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              16.75,
+              9.25,
+              26.0,
+              15.0
+            ],
+            "width": 9.25,
+            "height": 5.75,
+            "area": 426
+          },
+          "torsoScanWidthAt20": 11.5
+        },
+        {
+          "alphaBox": [
+            9.25,
+            2.0,
+            38.5,
+            39.5
+          ],
+          "alphaWidth": 29.25,
+          "alphaHeight": 37.5,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              15.75,
+              8.25,
+              25.0,
+              14.25
+            ],
+            "width": 9.25,
+            "height": 6.0,
+            "area": 433
+          },
+          "torsoScanWidthAt20": 12.25
+        },
+        {
+          "alphaBox": [
+            9.25,
+            1.75,
+            38.75,
+            39.5
+          ],
+          "alphaWidth": 29.5,
+          "alphaHeight": 37.75,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              14.5,
+              8.0,
+              24.0,
+              14.0
+            ],
+            "width": 9.5,
+            "height": 6.0,
+            "area": 455
+          },
+          "torsoScanWidthAt20": 12.75
+        },
+        {
+          "alphaBox": [
+            9.5,
+            2.25,
+            38.5,
+            39.5
+          ],
+          "alphaWidth": 29.0,
+          "alphaHeight": 37.25,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              15.5,
+              8.5,
+              24.5,
+              14.5
+            ],
+            "width": 9.0,
+            "height": 6.0,
+            "area": 427
+          },
+          "torsoScanWidthAt20": 12.25
+        },
+        {
+          "alphaBox": [
+            9.75,
+            2.5,
+            38.25,
+            39.5
+          ],
+          "alphaWidth": 28.5,
+          "alphaHeight": 37.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              15.0,
+              8.75,
+              24.0,
+              14.5
+            ],
+            "width": 9.0,
+            "height": 5.75,
+            "area": 436
+          },
+          "torsoScanWidthAt20": 12.0
+        },
+        {
+          "alphaBox": [
+            9.5,
+            1.75,
+            38.5,
+            39.5
+          ],
+          "alphaWidth": 29.0,
+          "alphaHeight": 37.75,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              15.5,
+              8.0,
+              24.75,
+              14.0
+            ],
+            "width": 9.25,
+            "height": 6.0,
+            "area": 445
+          },
+          "torsoScanWidthAt20": 12.5
+        },
+        {
+          "alphaBox": [
+            10.0,
+            1.5,
+            37.75,
+            39.5
+          ],
+          "alphaWidth": 27.75,
+          "alphaHeight": 38.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              16.25,
+              8.0,
+              25.5,
+              13.75
+            ],
+            "width": 9.25,
+            "height": 5.75,
+            "area": 440
+          },
+          "torsoScanWidthAt20": 12.75
+        }
+      ],
+      "originalComparison": {
+        "reference": "keeper_walk",
+        "revision": "2026-10-09-original-comparison-v2",
+        "type": "articulated-landmark-at-fixed-scale",
+        "verdict": "fixed-scale-visual-pass",
+        "silhouetteHeightRatio": null,
+        "torsoScanDifference": null,
+        "visualReviewDate": "2026-10-09",
+        "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
+        "warnings": []
+      }
+    },
+    {
       "name": "keeper_lean_table_back",
       "source": "art/raw/keeper-first-batch/keeper_lean_table_back_f8.png",
       "frames": 8,
@@ -18550,8 +18787,8 @@
       "postureClass": "seated",
       "measurementMethod": "head unit plus articulated shoulder-hip-sole chain; compressed silhouette height is never used as scale",
       "status": "corrected",
-      "note": "new canonical side-seated nap loop with closed eyes, clearly reclined head and open mouth; body height matches the standard sitting endpoint and furniture remains separate",
-      "medianFaceProxyWidth": 8.62,
+      "note": "canonical side-seated nap loop with closed eyes, clearly reclined head and open mouth; beard silhouette was corrected from a smooth oval to the standard stepped, ragged side-view margin; body height matches the standard sitting endpoint and furniture remains separate",
+      "medianFaceProxyWidth": 8.25,
       "medianFaceProxyHeight": 6.75,
       "faceProxyCoverage": "8/8",
       "medianTorsoScanWidthAt20": null,
@@ -18562,7 +18799,7 @@
       ],
       "alphaWidthRange": [
         18.25,
-        19.0
+        18.75
       ],
       "bottomClearanceRange": [
         0.5,
@@ -18573,22 +18810,22 @@
           "alphaBox": [
             6.75,
             5.25,
-            25.25,
+            25.0,
             39.5
           ],
-          "alphaWidth": 18.5,
+          "alphaWidth": 18.25,
           "alphaHeight": 34.25,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              11.75,
+              12.0,
               10.5,
-              20.75,
-              17.25
+              20.25,
+              17.5
             ],
-            "width": 9.0,
-            "height": 6.75,
-            "area": 415
+            "width": 8.25,
+            "height": 7.0,
+            "area": 378
           },
           "torsoScanWidthAt20": null
         },
@@ -18605,13 +18842,13 @@
           "faceProxy": {
             "box": [
               11.75,
-              10.25,
-              20.5,
+              10.5,
+              20.0,
               17.25
             ],
-            "width": 8.75,
-            "height": 7.0,
-            "area": 412
+            "width": 8.25,
+            "height": 6.75,
+            "area": 405
           },
           "torsoScanWidthAt20": null
         },
@@ -18627,129 +18864,129 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              11.75,
+              12.0,
               10.5,
-              20.0,
+              20.25,
               17.25
             ],
             "width": 8.25,
             "height": 6.75,
-            "area": 409
+            "area": 397
           },
           "torsoScanWidthAt20": null
         },
         {
           "alphaBox": [
-            6.5,
+            6.75,
             5.25,
             25.25,
             39.5
           ],
-          "alphaWidth": 18.75,
+          "alphaWidth": 18.5,
           "alphaHeight": 34.25,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              9.0,
+              12.0,
               10.5,
-              20.0,
-              17.0
-            ],
-            "width": 11.0,
-            "height": 6.5,
-            "area": 399
-          },
-          "torsoScanWidthAt20": null
-        },
-        {
-          "alphaBox": [
-            6.5,
-            5.25,
-            25.25,
-            39.5
-          ],
-          "alphaWidth": 18.75,
-          "alphaHeight": 34.25,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              8.75,
-              10.5,
-              19.75,
-              17.5
-            ],
-            "width": 11.0,
-            "height": 7.0,
-            "area": 415
-          },
-          "torsoScanWidthAt20": null
-        },
-        {
-          "alphaBox": [
-            6.5,
-            5.25,
-            25.25,
-            39.5
-          ],
-          "alphaWidth": 18.75,
-          "alphaHeight": 34.25,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              11.75,
-              10.5,
-              19.75,
-              17.0
-            ],
-            "width": 8.0,
-            "height": 6.5,
-            "area": 398
-          },
-          "torsoScanWidthAt20": null
-        },
-        {
-          "alphaBox": [
-            6.5,
-            5.25,
-            25.5,
-            39.5
-          ],
-          "alphaWidth": 19.0,
-          "alphaHeight": 34.25,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              11.75,
-              10.25,
-              19.75,
+              20.25,
               17.25
             ],
-            "width": 8.0,
-            "height": 7.0,
+            "width": 8.25,
+            "height": 6.75,
             "area": 384
           },
           "torsoScanWidthAt20": null
         },
         {
           "alphaBox": [
-            6.5,
+            6.75,
             5.25,
             25.25,
             39.5
           ],
-          "alphaWidth": 18.75,
+          "alphaWidth": 18.5,
           "alphaHeight": 34.25,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              11.5,
+              12.75,
               10.5,
-              20.0,
+              20.25,
+              17.0
+            ],
+            "width": 7.5,
+            "height": 6.5,
+            "area": 322
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            6.75,
+            5.25,
+            25.25,
+            39.5
+          ],
+          "alphaWidth": 18.5,
+          "alphaHeight": 34.25,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              12.0,
+              10.5,
+              20.25,
               17.25
             ],
-            "width": 8.5,
+            "width": 8.25,
             "height": 6.75,
-            "area": 400
+            "area": 404
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            6.75,
+            5.25,
+            25.25,
+            39.5
+          ],
+          "alphaWidth": 18.5,
+          "alphaHeight": 34.25,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              12.0,
+              10.5,
+              20.25,
+              17.25
+            ],
+            "width": 8.25,
+            "height": 6.75,
+            "area": 393
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            6.75,
+            5.25,
+            25.25,
+            39.5
+          ],
+          "alphaWidth": 18.5,
+          "alphaHeight": 34.25,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              12.0,
+              10.5,
+              20.25,
+              17.25
+            ],
+            "width": 8.25,
+            "height": 6.75,
+            "area": 395
           },
           "torsoScanWidthAt20": null
         }

@@ -97,7 +97,7 @@ def placements(s):
     if s['space_id'] in ['pub_wc','service_wc']:return [(12,0),(31,0)]
     if s['space_id']=='boathouse':return [(55,0),(87,-25),(98,0),(16,0),(55,-25)]
     if s['space_id']=='kitchen':return [(10,0),(30,0),(53,0),(76,0),(95,0)]
-    if s['space_id']=='living':return [(23,0),(53,0),(85,0)]
+    if s['space_id']=='living':return [(23,0),(53,0),(85,0),(82,-22)]
     if s['space_id']=='lamp':return [(16,0),(52,0)]
     # Overfull facilities are activity-specific station variants, not overlapping props.
     total=sum(i['dimensions'][0]+4 for i in obj)
@@ -136,28 +136,32 @@ for s in spaces:
         id=i['id'];p=profiles[i['profile']];benefits=OVERRIDES.get(id,p['benefits']);tiers=len(benefits)
         if id in byid:tiers=3
         # Door ON is required by Frank's latest instruction, superseding earlier n/a guidance.
-        onframes=1 if id in ['shop','diveinner','diveouter'] else 4
-        broken='none: proprietor-owned' if id=='shop' else 'shared wobble(1px), smoke, intermittent sparks + '+p['visual_cues'].split('/')[-1].strip()
+        passive=id=='armchair'
+        onframes=1 if id in ['shop','diveinner','diveouter'] or passive else 4
+        broken='none: passive furniture' if passive else ('none: proprietor-owned' if id=='shop' else 'shared wobble(1px), smoke, intermittent sparks + '+p['visual_cues'].split('/')[-1].strip())
         records=[]
         for tier in range(1,tiers+1):
             aid='obj_'+id+('' if tier==1 else f'_t{tier}')
             proposed=benefits[min(tier-1,len(benefits)-1)]
             benefit=runtime_benefit(id,tier) if id in byid and id!='boat' else None
-            if benefit:benefit+='; proposed specialist perk: '+proposed
+            if benefit and id!='armchair':benefit+='; proposed specialist perk: '+proposed
             else:benefit='PROPOSED, not coded: '+proposed
             name=byid.get(id,{}).get(tier,{}).get('name',('Basic','Mid-tier','Top-tier')[min(tier-1,2)]+' '+id.replace('_',' '))
             w,h=i['dimensions'];x,y=s['placements'][j]
-            states='standard;on' if id=='shop' else 'standard;on;broken'
+            states='standard' if passive else ('standard;on' if id=='shop' else 'standard;on;broken')
             delivered=[state for state in states.split(';') if aid+'_'+state in manifest]
             status='delivered-review' if len(delivered)==len(states.split(';')) else 'planned'
-            if id in ['door','shop','diveinner','diveouter']:cue='ON: open doorway/engaged entrance, explicitly delivered at every tier'
+            if passive:cue='Passive occupied state uses the keeper layer; no artificial ON or broken state'
+            elif id in ['door','shop','diveinner','diveouter']:cue='ON: open doorway/engaged entrance, explicitly delivered at every tier'
             elif id=='tv':cue='ON: literal B B SEA wordmark from supplied BBC NEWS reference, NEWS title and newsreader head; Sport football match; Nature animals. Every tier needs all three channel strips; glass always opaque'
             else:cue='ON: '+p['visual_cues'].split('/')[1].strip()
-            notes=f'{name}. {PROFILE_VISUALS.get(i['profile'],VISUAL)[min(tier-1,2)]}. {cue}. Proposed location ({x},{y}), logical frame {w}x{h}; stable usePoint(-8,0), effectOrigin(0,{-h}), bubbleOrigin(0,{-h-8}), z40. New tier mechanics and names require review; existing names preserved.'
+            tier_visual=(['Simple upholstered armchair','Rocking chair on stable curved runners','Lazyboy-style reclining armchair'][tier-1] if id=='armchair' else PROFILE_VISUALS.get(i['profile'],VISUAL)[min(tier-1,2)])
+            notes=f'{name}. {tier_visual}. {cue}. Proposed location ({x},{y}), logical frame {w}x{h}; stable seat top 11 px, effectOrigin(0,{-h}), bubbleOrigin(0,{-h-8}), z40. New tier mechanics and names require review; existing names preserved.' if passive else f'{name}. {tier_visual}. {cue}. Proposed location ({x},{y}), logical frame {w}x{h}; stable usePoint(-8,0), effectOrigin(0,{-h}), bubbleOrigin(0,{-h-8}), z40. New tier mechanics and names require review; existing names preserved.'
             if id=='tv': notes=notes.replace(f'usePoint(-8,0), effectOrigin(0,{-h}), bubbleOrigin(0,{-h-8})','usePoint(14,0), effectOrigin(8,-18), bubbleOrigin(0,-28)')
             if s.get('station_variants'):notes+=' This station replaces the central activity bay when selected; never draw all stations simultaneously.'
             if s['category']=='theme':notes+=' Theme prop remains single-tier; unlock variety instead of cosmetic upgrades.'
-            r=row(s,aid,'interactive_item',tier,benefit,states,f'standard 1; on {onframes}@8fps; broken 1 + shared FX' if id!='shop' else 'standard 1; on 1',p['keeper_pose'],f'bottom-centre ({w//2},{h}); keeper floor anchor (16,40)',f'obj_{id}; shared {i["profile"]} chassis/pose',broken,status,notes,[w,h]);records.append(r)
+            frames='standard 1' if passive else (f'standard 1; on {onframes}@8fps; broken 1 + shared FX' if id!='shop' else 'standard 1; on 1')
+            r=row(s,aid,'interactive_item',tier,benefit,states,frames,p['keeper_pose'],f'bottom-centre ({w//2},{h}); keeper floor anchor (16,40)',f'obj_{id}; shared {i["profile"]} chassis/pose',broken,status,notes,[w,h]);records.append(r)
         i.update(tiers=records,position=[x,y],owned=id!='shop',on_frames=onframes)
         items.append({'space_id':s['space_id'],**i})
     if s['space_id']=='living':

@@ -63,8 +63,8 @@
     },
     {
       "id": "tv_nap",
-      "object": "tv",
-      "label": "Snooze on the sofa",
+      "object": "armchair",
+      "label": "Snooze in the armchair",
       "minutes": 45,
       "effects": {
         "energy": 26,

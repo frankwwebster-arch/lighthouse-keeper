@@ -5,7 +5,7 @@ HERE=Path(__file__).parent
 # id | name | category | dependencies | activities | varied unlock challenge | layout | items (id:profile) | props | decision
 DATA='''
 kitchen|Kitchen / entrance|standard|none|Cook; snack; tidy; greet; feed cat|Day-one essential, never quiz-gated|Door left; fridge and range centre; tools and bowl right|door:door,fridge:storage,cooker:cook,broom:clean,petbowl:pet|worktop,wall_shelf,hooks|locked
-living|Living room|standard|none|TV; reading; music; sofa nap|Day-one relaxation|TV left; shelf centre; piano right; sofa foreground|tv:fun,bookshelf:research,piano:music|sofa,rug,sea_chart|locked
+living|Living room|standard|none|TV; reading; music; armchair nap|Day-one relaxation|TV left; shelf centre; piano right; upgradeable armchair foreground|tv:fun,bookshelf:research,piano:music,armchair:sleep|rug,sea_chart|locked
 bedroom|Bedroom with en suite|standard|none|Sleep; call; diary; wash; loo|Day-one essentials|Bed left; phone and desk centre; partition at x74; bathroom right|bed:sleep,phone:social,desk:research,basin:wash,toilet:loo|bedside_table,mirror,privacy_door|locked
 lamp|Lamp room / inset lantern cap|lantern_cap|none|Light and polish lamp; spot ships|Day-one ship-safety duty|Inset glazed iron lantern chamber; lamp centre; wraparound external walkway and telescope; no full-width domestic room|telescope:spot,lamp:light|lantern_glass,wrap_rail|locked
 workshop|Workshop|standard|breakdowns|Repair; choose parts; build inventions|Repair distinct fault types; choose tools; assemble a working mechanism|Parts drawers left; workbench centre; test jig right|repairbench:repair,partsbin:storage,testjig:craft|pegboard,tool_rack|review: global fault reduction needs playtesting
@@ -111,7 +111,7 @@ PROFILES={
 'door':(['greet visitor / 8 min','greet / 7 min; proposed peek reveals 1 visitor identity','greet / 6 min; proposed visitor patience 30 vs 20 min'],'greet','closed / on n/a for door tiers / jammed latch'),
 'single':(['one usable interaction; no mechanical reason for tiers'],'reach_use','idle / 4-frame use if applicable / loose fitting'),
 }
-SIZES={'door':[13,24],'fridge':[12,24],'cooker':[18,15],'broom':[8,23],'petbowl':[10,5],'tv':[28,23],'bookshelf':[20,28],'piano':[25,18],'bed':[30,14],'phone':[15,18],'desk':[25,20],'basin':[15,28],'toilet':[13,18],'telescope':[23,23],'lamp':[30,35],'garden':[30,18],'jetty':[55,15],'boat':[55,24],'shop':[33,30],'tank':[38,26],'fishfood':[8,12],'barometer':[18,22],'radio':[24,20],'console':[28,22],'gadgets':[28,20],'shower':[18,30],'lift':[22,34],'wateringcan':[8,12],'diveinner':[13,24],'diveouter':[13,24],'drums':[20,18],'accordion':[18,20],'gramophone':[16,20]}
+SIZES={'door':[13,24],'fridge':[12,24],'cooker':[18,15],'broom':[8,23],'petbowl':[10,5],'tv':[28,23],'bookshelf':[20,28],'piano':[25,18],'armchair':[24,26],'bed':[30,14],'phone':[15,18],'desk':[25,20],'basin':[15,28],'toilet':[13,18],'telescope':[23,23],'lamp':[30,35],'garden':[30,18],'jetty':[55,15],'boat':[55,24],'shop':[33,30],'tank':[38,26],'fishfood':[8,12],'barometer':[18,22],'radio':[24,20],'console':[28,22],'gadgets':[28,20],'shower':[18,30],'lift':[22,34],'wateringcan':[8,12],'diveinner':[13,24],'diveouter':[13,24],'drums':[20,18],'accordion':[18,20],'gramophone':[16,20]}
 spaces=[]
 for line in DATA.strip().splitlines():
     v=[x.strip() for x in line.split('|')]; id,name,cat,deps,activities,unlock,layout,items,props,decision=v

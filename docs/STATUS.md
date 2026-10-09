@@ -19,6 +19,10 @@ Missions (`src/game/missions.ts`, list in `config.ts`) are all open at once and 
 
 Upgrades: almost every object has Basic, Middle and Top tiers, listed in `data/upgrades.csv` (Frank's tracker page and Codex both work from it; `npm run upgrades` copies it into the game, and a test fails if the copy is stale). He buys the next tier from the object's tap menu with credits; a new one replaces a broken one. Each tier makes that object's jobs do more good (+25% / +50%) and take less time (−15% / −30%); the bed's tier sets the morning's energy (80 / 90 / 100%). Grown-ups set one price % for all upgrades, can override any single tier's price, and can give any next tier as a present. Tier art is a stand-in (`T2`/`T3` tag) until Codex's `obj_<id>_t<n>_<state>` sprites arrive; `?tiers=3` previews them.
 
+The living-room nap now belongs to an upgradeable passive armchair: basic
+armchair → rocking chair → Lazyboy-style recliner. All tiers retain the same
+11 px seat contact, and passive furniture is excluded from breakdowns.
+
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 
 ## Not built yet (agreed design)
@@ -27,7 +31,7 @@ Keeper review cards now also preview, save and export a proposed per-clip
 runtime FPS. Accepted `animationFps` values belong in each animation's source
 JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
-1. Continue reviewing the TV/style guide and the 165 accepted keeper animations. The full 183-sheet technical batch contains 1,316 audited frames with zero scale failures. The latest addition is `keeper_nap_seated`: a canonical side-seated loop with reclined head, closed eyes, open mouth and the standard `(16,29)` seat contact. The artist-smock and three-tier guitar routes remain as documented in the animation handoff. Review choices remain browser-local until Frank supplies the JSON export.
+1. Continue reviewing the TV/style guide and the 166 accepted keeper animations. The full 184-sheet technical batch contains 1,324 audited frames with zero scale failures. `keeper_nap_seated` now has the canonical ragged/tapered side beard as well as its reclined head, closed eyes, open mouth and `(16,29)` seat contact. The latest new clip is `keeper_lawn_mower_push`, a canonical-height loop whose included reel mower and keeper emerge together from behind a foreground shed door. The artist-smock and three-tier guitar routes remain as documented in the animation handoff. Review choices remain browser-local until Frank supplies the JSON export.
 2. Art for the mission floors (aquarium, weather station, hidden lair), their furniture, the lift and a floor-arrival effect (Codex; hooks in docs/FOR_CODEX.md).
 3. Tier art for upgrades (Codex; list in docs/FOR_CODEX.md). Typed commands for upgrading ("upgrade the TV") are not in yet; upgrades are bought from the tap menu.
 4. Mini games: fishing, cooking, telescope spotting.
@@ -41,4 +45,4 @@ JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
 ## Verification and delivery
 
-The current production asset delivery passes the project tests, TypeScript checking, a production build, sprite export, catalogue verification and the complete 1,316-frame scale audit. All 183 keeper exports have exact source dimensions and hard alpha; runtime rendering remains nearest-neighbour at 4× logical size.
+The current production asset delivery passes the project tests, TypeScript checking, a production build, sprite export, catalogue verification and the complete 1,324-frame scale audit. All 184 keeper exports have exact source dimensions and hard alpha; runtime rendering remains nearest-neighbour at 4× logical size.

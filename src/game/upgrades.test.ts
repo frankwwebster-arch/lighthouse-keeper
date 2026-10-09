@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { readFileSync } from 'node:fs'
-import { DEFAULT_RULES, GAME as G, OBJECTS, UPGRADES, baseTierName, maxTier, midSentence, upgradeTier } from './config'
+import { BREAKABLE_OBJECTS, DEFAULT_RULES, GAME as G, INTERACTIONS, OBJECTS, UPGRADES, baseTierName, maxTier, midSentence, upgradeTier } from './config'
 import { parseCsv, upgradeRows } from './csv'
 import { UPGRADE_ROWS } from './upgrades.data'
 import { arrive, giftUpgrade, nextDay, nextUpgrade, order, setRules, startGame, tick, tierOf, upgrade, upgradePrice, type State } from './engine'
@@ -69,6 +69,18 @@ describe('upgrades', () => {
     expect(big.effects.fun!).toBeGreaterThan(plain.effects.fun!)
     // Bad side effects are not made worse.
     expect(big.effects.energy).toBe(plain.effects.energy)
+  })
+
+  it('the passive armchair upgrades the nap without joining the breakdown queue', () => {
+    const nap = INTERACTIONS.find((interaction) => interaction.id === 'tv_nap')!
+    expect(nap.object).toBe('armchair')
+    expect(BREAKABLE_OBJECTS).not.toContain('armchair')
+    expect(maxTier('armchair')).toBe(3)
+    const start = (s: State) => arrive(order(s, [{ id: 'tv_nap' }])).doing!
+    const plain = start(fresh())
+    const rocking = start(upgrade(fresh(), 'armchair'))
+    expect(rocking.total).toBeLessThan(plain.total)
+    expect(rocking.effects.energy!).toBeGreaterThan(plain.effects.energy!)
   })
 
   it('a better bed gives a better night', () => {

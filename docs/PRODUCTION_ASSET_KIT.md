@@ -124,7 +124,7 @@ Floor-local object use points are logical x positions; y is the floor plane. Run
 | Floor | Module | Clickable objects at local x | Static set dressing |
 |---|---|---|---|
 | 1 | `floor_kitchen_t1` | door 23, fridge 44, cooker 64, broom 81, pet bowl 100 | worktop, wall shelf, hooks |
-| 2 | `floor_living_t1` | TV 35, bookshelf 64, piano 94 | sofa, rug, framed sea chart |
+| 2 | `floor_living_t1` | TV 35, bookshelf 64, piano 94 | upgradeable armchair, rug, framed sea chart |
 | 3 | `floor_bedroom_ensuite_t1` | bed 33, phone 56, desk 73, basin 95, toilet 110 | bedside table, en-suite partition/door, mirror |
 
 Every clickable set needs the same manifest fields:
