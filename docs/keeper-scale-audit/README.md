@@ -5,7 +5,7 @@ This is the permanent, reproducible audit of every keeper sheet. It deliberately
 - 170 keeper sheets inspected.
 - 152 animation sheets accepted for review; 18 obsolete modular/reference sheets excluded.
 - 1210 individual frames measured.
-- 58 sheets explicitly rebuilt or anatomy-normalised in this pass.
+- 59 sheets explicitly rebuilt or anatomy-normalised in this pass.
 - Canonical upright anatomy: skull top 32.5 logical pixels above the walking floor, shoulders 24.5, hips 14.5, seat contact 11.
 - Allowed landmark drift: 0.5 logical pixel; core-width drift: 1 logical pixel. Pose contacts are checked independently from body scale.
 
@@ -19,6 +19,7 @@ Open [the sizing and transition review](review.html) to see every accepted anima
 
 ## Corrected sheets
 
+- `keeper_anti_gravity` — rebuilt as a canonical-scale prone goggle float with frames 3-4 in progressive rotation, a centred back flip and no parachute.
 - `keeper_bath_wash` — redrawn and normalised from the standing bare-headed and seated canonical landmarks.
 - `keeper_carry_shopping` — hand anatomy redrawn so each frame has exactly two hands attached to the two bag-carrying arms.
 - `keeper_collect_eggs_back` — reuses canonical corrected low rear work anatomy.

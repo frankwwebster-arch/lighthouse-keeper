@@ -842,7 +842,7 @@ ADDITIONAL_CLIPS = [
     ("keeper_trampoline_front", "keeper-trampoline-front-generated-source.png", 32, 48, dict(outfit="old-school-workout-kit", facing="front", interaction="bounce-trampoline")),
     ("keeper_lift_weights_back", "keeper-weights-back-generated-source.png", 48, 56, dict(hand_use_point=[24, 5], outfit="old-school-workout-kit", facing="back", interaction="lift-weights")),
     ("keeper_pressups_side", "keeper-pressups-side-generated-source.png", 64, 40, dict(outfit="old-school-workout-kit", facing="right", interaction="press-ups", mirror_safe=True, mirrors_for="left")),
-    ("keeper_anti_gravity", "keeper-anti-gravity-generated-source.png", 48, 48, dict(anchor_point=[24, 24], facing="front", interaction="anti-gravity-float")),
+    ("keeper_anti_gravity", "keeper-anti-gravity-generated-source.png", 48, 48, dict(anchor_point=[24, 24], facing="right-prone", interaction="anti-gravity-float")),
     ("keeper_machete_side", "keeper-machete-side-generated-source.png", 64, 40, dict(hand_use_point=[50, 28], facing="right", interaction="chop-plants", mirror_safe=True, mirrors_for="left")),
     ("keeper_drink_pint", "keeper-drink-pint-generated-source.png", 40, 40, dict(seat_point=[20, 29], hand_use_point=[25, 16], facing="front-right", interaction="drink-pint", mirror_safe=True, mirrors_for="front-left")),
     ("keeper_ride_bike_front", "keeper-bike-front-generated-source.png", 48, 48, dict(seat_point=[24, 35], hand_use_point=[24, 27], pedal_point=[24, 42], outfit="old-school-workout-kit", facing="front", interaction="use-stationary-exercise-bike")),
@@ -960,6 +960,25 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
             # explicit equal cells; isolate the principal figure inside each cell
             # so a neighbour's overlapping prop cannot leak into the frame.
             frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, force_equal_cells=True, scale_multiplier=anatomy_scale)
+    if clip_name == "keeper_anti_gravity":
+        # Body-axis clips use a centred pivot rather than feet-on-floor. Re-centre
+        # each extracted pose, then add a deliberate two-pixel vertical float.
+        # Frames 3-6 progress through one back flip; generated-source ordering is
+        # authoritative and must not be rearranged during extraction.
+        y_offsets = (2, 0, -1, 0, 0, 0, -1, 2)
+        centred = []
+        for frame, y_offset in zip(frames, y_offsets):
+            bounds = frame.getchannel("A").getbbox()
+            if bounds is None:
+                raise ValueError("Anti-gravity frame is empty")
+            centre_x = (bounds[0] + bounds[2]) // 2
+            centre_y = (bounds[1] + bounds[3]) // 2
+            dx = logical_width * D // 2 - centre_x
+            dy = (logical_height // 2 + y_offset) * D - centre_y
+            shifted = Image.new("RGBA", frame.size, (0, 0, 0, 0))
+            shifted.alpha_composite(frame, (dx, dy))
+            centred.append(shifted)
+        frames = centred
     if clip_name in {"keeper_bath_wash", "keeper_hot_tub"}:
         frames = [remove_small_alpha_components(frame, min_pixels=80) for frame in frames]
     if clip_name.startswith("keeper_tarzan_walk_"):

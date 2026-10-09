@@ -121,6 +121,10 @@ code until replacements are installed.
 
 ## Additional corrections found during the audit
 
+- `keeper_anti_gravity` was rebuilt from the canonical keeper identity as a
+  prone, right-facing float in goggles. Frames 3 and 4 now progress in the
+  correct rotational order into a compact airborne back flip; the loop rises
+  and falls around its centred pivot, and the erroneous parachute pack is gone.
 - The cake and plated-meal placement strips were rebuilt. Both now release at
   the standard 19 px table datum and straighten fully; the meal no longer lands
   on the floor. A subsequent edge pass restored the complete plate and food in

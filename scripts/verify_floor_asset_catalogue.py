@@ -439,7 +439,21 @@ for name,hand_point in [('keeper_put_record',[38,27]),('keeper_water_plants_side
         frame=prop_image.crop((frame_index*48*4,0,(frame_index+1)*48*4,40*4))
         visible=frame.getchannel('A').getbbox()
         assert visible is not None and visible[0]>=2*4 and visible[2]<=46*4,(name,frame_index,visible)
-assert manifest['keeper_anti_gravity']['anchor']==[24,24]
+anti_gravity=manifest['keeper_anti_gravity']
+assert anti_gravity['anchor']==[24,24]
+assert anti_gravity['facing']=='right-prone' and anti_gravity['interaction']=='anti-gravity-float'
+anti_gravity_strip=Image.open(root/'public/sprites'/anti_gravity['file']).convert('RGBA')
+anti_gravity_bounds=[]
+for frame_index in range(anti_gravity['frames']):
+    frame=anti_gravity_strip.crop((frame_index*48*4,0,(frame_index+1)*48*4,48*4))
+    bounds=frame.getchannel('A').getbbox()
+    assert bounds is not None
+    anti_gravity_bounds.append(bounds)
+for frame_index in (0,1,6,7):
+    bounds=anti_gravity_bounds[frame_index]
+    assert bounds[2]-bounds[0] > 1.5*(bounds[3]-bounds[1]),(frame_index,bounds)
+flip_midpoint=anti_gravity_bounds[4]
+assert flip_midpoint[3]-flip_midpoint[1] > flip_midpoint[2]-flip_midpoint[0],flip_midpoint
 assert manifest['keeper_fish_feed_up']['handUsePoint']==[26,7]
 assert manifest['keeper_type_computer']['interaction']=='type-computer'
 assert manifest['keeper_check_instrument_side']['interaction']=='check-instrument'

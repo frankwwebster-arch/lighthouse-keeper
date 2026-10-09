@@ -208,6 +208,15 @@ The corrected machete source uses the same broad, smooth-edged blade in all
 eight poses—never saw teeth—and production uses a 64 × 40 long-tool canvas so
 the low follow-through and final frame retain the complete blade.
 
+`keeper-anti-gravity-generated-source.png` was rebuilt in referenced-image edit
+mode after the original seated float was rejected. The final prompt requires
+the exact canonical keeper in goggles, prone and right-facing, with no
+parachute, backpack or harness: low glide, high glide, rotation start, a more
+advanced fourth-frame rotation, compact upside-down midpoint, rotation out,
+high glide and low glide. The runtime normaliser centres every body-axis pose,
+adds an explicit two-logical-pixel vertical bob and never rescales individual
+frames to their available space.
+
 The replaced navy pyjama source files remain in this directory as historical
 inputs, but production uses only the `light-blue` files above. The built-in
 image generator was run in referenced-image mode: recolour only the pyjama

@@ -37,7 +37,7 @@
    24
   ],
   "loop": true,
-  "facing": "front",
+  "facing": "right-prone",
   "interaction": "anti-gravity-float",
   "z": 50
  },

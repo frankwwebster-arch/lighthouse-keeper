@@ -45,6 +45,7 @@ TECHNICAL = {
 }
 
 CORRECTED = {
+    "keeper_anti_gravity": "rebuilt as a canonical-scale prone goggle float with frames 3-4 in progressive rotation, a centred back flip and no parachute",
     "keeper_crouch_work_back": "redrawn; hands work in front and body width restored",
     "keeper_search_boxes": "reuses canonical corrected low rear work anatomy",
     "keeper_collect_eggs_back": "reuses canonical corrected low rear work anatomy",
