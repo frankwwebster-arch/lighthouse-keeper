@@ -7,7 +7,7 @@ root=Path(__file__).resolve().parents[1]
 data=json.loads((root/'docs/floor-asset-catalogue/catalogue.json').read_text())
 spaces=data['spaces']; rows=data['rows']
 assert len(spaces)==71 and len({s['space_id'] for s in spaces})==71
-assert len(rows)==1569
+assert len(rows)==1576
 with (root/'docs/floor-asset-catalogue/catalogue.csv').open(newline='') as f:
     assert len(list(csv.DictReader(f)))==len(rows)
 for space in spaces:
@@ -39,7 +39,7 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==160
+assert len(keeper_pngs)==167
 required_clips={
     'keeper_idle':(4,6), 'keeper_walk':(8,10),
     'keeper_turn_back':(6,8), 'keeper_work_back':(8,8),
@@ -66,6 +66,10 @@ required_clips={
     'keeper_shower_door_open_bathrobe':(8,8),
     'keeper_shower_enter_bathrobe':(8,8),
     'keeper_spiral_stairs_up':(8,8), 'keeper_spiral_stairs_down':(8,8),
+    'keeper_hot_drink_pour':(8,8), 'keeper_hot_drink_stir':(8,8),
+    'keeper_hot_drink_pickup':(8,8), 'keeper_hot_drink_drink':(8,8),
+    'keeper_hot_drink_put_down':(8,8),
+    'keeper_boat_enter':(8,8), 'keeper_boat_exit':(8,8),
     'keeper_pyjamas_walk':(8,10), 'keeper_pyjamas_turn_back':(6,8),
     'keeper_get_into_bed':(8,8), 'keeper_pyjamas_snore':(6,4),
     'keeper_swim_costume_horizontal':(8,8), 'keeper_swim_costume_up':(8,8),
@@ -196,6 +200,37 @@ for name,vector,facing,interaction in [
         visible=spiral_strip.crop((frame_index*40*4,0,(frame_index+1)*40*4,48*4)).getchannel('A').getbbox()
         spiral_heights.append(visible[3]-visible[1])
     assert max(spiral_heights)==184 and min(spiral_heights)>=178,(name,spiral_heights)
+for name,interaction,point in [
+    ('keeper_hot_drink_pour','pour-hot-drink',[40,28]),
+    ('keeper_hot_drink_stir','stir-hot-drink',[40,28]),
+    ('keeper_hot_drink_pickup','pick-up-hot-drink',[40,28]),
+    ('keeper_hot_drink_drink','drink-hot-drink',[34,17]),
+    ('keeper_hot_drink_put_down','put-down-hot-drink',[40,28]),
+]:
+    assert manifest[name]['w']==48 and manifest[name]['h']==40
+    assert manifest[name]['interaction']==interaction and manifest[name]['handUsePoint']==point
+    assert manifest[name]['mirrorSafe'] is True and manifest[name]['mirrorsFor']=='left'
+    drink_strip=Image.open(root/'public/sprites'/manifest[name]['file']).convert('RGBA')
+    drink_heights=[]
+    for frame_index in range(8):
+        visible=drink_strip.crop((frame_index*48*4,0,(frame_index+1)*48*4,40*4)).getchannel('A').getbbox()
+        drink_heights.append(visible[3]-visible[1])
+    assert max(drink_heights)==152 and min(drink_heights)>=131,(name,drink_heights)
+for name,interaction,facing in [
+    ('keeper_boat_enter','climb-into-boat','right'),
+    ('keeper_boat_exit','climb-out-of-boat','front-right'),
+]:
+    assert manifest[name]['w']==48 and manifest[name]['h']==48 and manifest[name]['anchor']==[24,48]
+    assert manifest[name]['seatPoint']==[36,35] and manifest[name]['handUsePoint']==[39,23]
+    assert manifest[name]['interaction']==interaction and manifest[name]['facing']==facing
+    assert manifest[name]['loop'] is False and manifest[name]['mirrorSafe'] is True
+    boat_strip=Image.open(root/'public/sprites'/manifest[name]['file']).convert('RGBA')
+    boat_heights=[]
+    for frame_index in range(8):
+        visible=boat_strip.crop((frame_index*48*4,0,(frame_index+1)*48*4,48*4)).getchannel('A').getbbox()
+        boat_heights.append(visible[3]-visible[1])
+    upright_index=0 if name=='keeper_boat_enter' else 7
+    assert boat_heights[upright_index]==152 and max(boat_heights)<=160,(name,boat_heights)
 assert manifest['keeper_pyjamas_walk']['mirrorSafe'] is True and manifest['keeper_pyjamas_walk']['mirrorsFor']=='left'
 assert manifest['keeper_pyjamas_turn_back']['reverseFor']=='pyjamas_turn_front'
 for name in ['keeper_pyjamas_walk','keeper_pyjamas_turn_back','keeper_get_into_bed','keeper_pyjamas_snore']:
@@ -310,6 +345,10 @@ assert asset_contract['interactionProfiles']['showerEntryBathrobe']['thresholdPo
 assert asset_contract['interactionProfiles']['spiralStairsUp']['movementVector']==[0,-1]
 assert asset_contract['interactionProfiles']['spiralStairsDown']['movementVector']==[0,1]
 assert asset_contract['interactionProfiles']['spiralStairsUp']['treadPoint']==[20,46]
+assert asset_contract['interactionProfiles']['hotDrinkPourRight']['surfacePoint']==[40,28]
+assert asset_contract['interactionProfiles']['hotDrinkSipRight']['heldMugPoint']==[34,17]
+assert asset_contract['interactionProfiles']['boatEnterRight']['gunwalePoint']==[39,23]
+assert asset_contract['interactionProfiles']['boatExitRight']['seatPoint']==[36,35]
 assert asset_contract['interactionProfiles']['switchSideRight']['handUsePoint']==[27,17]
 assert asset_contract['interactionProfiles']['switchBackRightHand']['handUsePoint']==[26,17]
 assert asset_contract['interactionProfiles']['drumsFront']['seatPoint']==[16,37]
@@ -364,6 +403,10 @@ previews={
     'keeper-shower-door-open-bathrobe':(8,120),
     'keeper-shower-enter-bathrobe':(8,120),
     'keeper-spiral-stairs-up':(8,120), 'keeper-spiral-stairs-down':(8,120),
+    'keeper-hot-drink-pour':(8,120), 'keeper-hot-drink-stir':(8,120),
+    'keeper-hot-drink-pickup':(8,120), 'keeper-hot-drink-drink':(8,120),
+    'keeper-hot-drink-put-down':(8,120),
+    'keeper-boat-enter':(8,120), 'keeper-boat-exit':(8,120),
     'keeper-pyjamas-walk':(8,100), 'keeper-pyjamas-turn-back':(10,120),
     'keeper-get-into-bed':(8,120), 'keeper-pyjamas-snore':(6,250),
     'keeper-swim-costume-horizontal':(8,120), 'keeper-swim-costume-up':(8,120),
@@ -386,6 +429,6 @@ for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
 keeper_previews=list((root/'docs/floor-asset-catalogue').glob('keeper-*-preview.gif'))
-assert len(keeper_previews)==144
+assert len(keeper_previews)==151
 assert all(Image.open(path).is_animated for path in keeper_previews)
-print('Verified: 71 spaces, 1569 rows, owned-item states, 9 TV/lamp/FX exports, 160 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
+print('Verified: 71 spaces, 1576 rows, owned-item states, 9 TV/lamp/FX exports, 167 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')

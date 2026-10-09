@@ -658,6 +658,13 @@ ADDITIONAL_CLIPS = [
     ("keeper_spiral_stairs", "keeper-spiral-stairs-generated-source.png", 40, 48, dict(facing="three-quarter", interaction="climb-spiral-stairs")),
     ("keeper_spiral_stairs_up", "keeper-spiral-stairs-generated-source.png", 40, 48, dict(movement_vector=[0, -1], facing="rotating-right-to-rear", interaction="spiral-stairs-up")),
     ("keeper_spiral_stairs_down", "keeper-spiral-stairs-down-generated-source.png", 40, 48, dict(movement_vector=[0, 1], facing="rotating-rear-to-front-right", interaction="spiral-stairs-down")),
+    ("keeper_hot_drink_pour", "keeper-hot-drink-pour-generated-source.png", 48, 40, dict(hand_use_point=[40, 28], facing="right", interaction="pour-hot-drink", loop=False, mirror_safe=True, mirrors_for="left")),
+    ("keeper_hot_drink_stir", "keeper-hot-drink-stir-generated-source.png", 48, 40, dict(hand_use_point=[40, 28], facing="right", interaction="stir-hot-drink", loop=False, mirror_safe=True, mirrors_for="left")),
+    ("keeper_hot_drink_pickup", "keeper-hot-drink-pickup-generated-source.png", 48, 40, dict(hand_use_point=[40, 28], facing="right", interaction="pick-up-hot-drink", loop=False, mirror_safe=True, mirrors_for="left")),
+    ("keeper_hot_drink_drink", "keeper-hot-drink-drink-generated-source.png", 48, 40, dict(hand_use_point=[34, 17], facing="right", interaction="drink-hot-drink", mirror_safe=True, mirrors_for="left")),
+    ("keeper_hot_drink_put_down", "keeper-hot-drink-put-down-generated-source.png", 48, 40, dict(hand_use_point=[40, 28], facing="right", interaction="put-down-hot-drink", loop=False, mirror_safe=True, mirrors_for="left")),
+    ("keeper_boat_enter", "keeper-boat-enter-generated-source.png", 48, 48, dict(seat_point=[36, 35], hand_use_point=[39, 23], facing="right", interaction="climb-into-boat", loop=False, mirror_safe=True, mirrors_for="left")),
+    ("keeper_boat_exit", "keeper-boat-exit-generated-source.png", 48, 48, dict(seat_point=[36, 35], hand_use_point=[39, 23], facing="front-right", interaction="climb-out-of-boat", loop=False, mirror_safe=True, mirrors_for="left")),
     ("keeper_slide_side", "keeper-slide-side-generated-source.png", 48, 40, dict(facing="right", interaction="ride-slide", mirror_safe=True, mirrors_for="left")),
     ("keeper_bbq_back", "keeper-bbq-back-generated-source.png", 32, 40, dict(hand_use_point=[16, 22], facing="back", interaction="use-bbq")),
     ("keeper_hot_tub", "keeper-hot-tub-generated-source.png", 40, 40, dict(seat_point=[20, 29], facing="front", interaction="soak-hot-tub", outfit="privacy-foam")),
@@ -686,7 +693,17 @@ for outfit in ("knight", "spaceman", "pirate", "tarzan", "halloween", "mechanic"
 ADDITIONAL_CLIPS.append(("keeper_mechanic_fix", "keeper-mechanic-fix-generated-source.png", 40, 40, dict(outfit="mechanic", hand_use_point=[34, 22], facing="right", interaction="fix-vehicle", mirror_safe=True, mirrors_for="left")))
 
 for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONAL_CLIPS:
-    if clip_name == "keeper_meal_place_side":
+    if clip_name == "keeper_boat_enter":
+        # The 48 px canvas provides room for the climb; it must not enlarge the
+        # keeper beyond the canonical 38 px standing height.
+        frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, scale_reference_index=0)
+    elif clip_name == "keeper_boat_exit":
+        frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, scale_reference_index=7)
+    elif clip_name.startswith("keeper_hot_drink_"):
+        # Keep the kettle, mug, spoon, liquid and steam in fixed equal cells,
+        # including frames where the mug has detached from the keeper's hand.
+        frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True)
+    elif clip_name == "keeper_meal_place_side":
         # After release, the plated meal is detached from the keeper but must
         # remain in the actor strip until the world object takes over.
         frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True)

@@ -283,6 +283,20 @@ rear-to-front-right. Both omit treads, railing and central post because the
 staircase is a separately aligned world object. The original
 `keeper_spiral_stairs` export remains as a compatibility alias for ascent.
 
+The hot-drink pass adds five referenced-image source sheets for pouring from a
+cream enamel kettle into a matching blue-rimmed mug, stirring with a teaspoon,
+picking up the mug, sipping, and putting it down. The prompts lock one right-
+facing invisible worktop point and explicitly show the mug transferring from
+surface to hand and back. Equal-cell normalization preserves detached mug,
+liquid and steam pixels; the counter itself remains a separate object.
+
+`keeper-boat-enter-generated-source.png` and
+`keeper-boat-exit-generated-source.png` are independently drawn climb actions
+using the same invisible gunwale and bench contacts. Their built-in referenced-
+image prompts preserve the uniform, canonical scale and correct weight transfer
+while excluding the boat, dock, water, railing and oars. All seven sheets were
+generated with the built-in image generator in referenced-image mode.
+
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,
 hardens alpha, places it on a density-4 contract canvas, and emits the manifest

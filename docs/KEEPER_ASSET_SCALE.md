@@ -60,6 +60,9 @@ downward. A side-facing point at X mirrors with `mirroredX = canvasWidth - X`.
 | Exercise-bike pedal centre | 6 px | front `(20,34)` on 40 × 40 canvas |
 | Toilet bowl vomit target | 5 px | rear extended canvas `(32,35)` |
 | Shower-door handle | 22 px | rear-right extended canvas `(35,18)` |
+| Hot-drink worktop / mug base | 12 px | right extended canvas `(40,28)` |
+| Boat gunwale grip | 25 px | right extended canvas `(39,23)` on 48 × 48 |
+| Boat bench seat | 13 px | right extended canvas `(36,35)` on 48 × 48 |
 
 These are interaction datums, not mandatory object sizes. For example, a light
 switch can have any suitable plate size, but its button centre must be 23 px
@@ -180,6 +183,20 @@ The up clip moves `(0,-1)` while turning from right three-quarter to rear; the
 down clip moves `(0,1)` while turning from rear to front-right. These are
 distinct animations, not reversed playback, so weight transfer and leading
 feet remain correct. Treads, railing and central post stay out of actor strips.
+
+The hot-drink sequence uses five connected 48 × 40 strips. Pouring and stirring
+keep the cream mug fixed at the invisible worktop point `(40,28)`; pickup moves
+that same mug into the keeper's hand; sipping holds it at `(34,17)`; put-down
+returns it to `(40,28)` and leaves it visible after release. Mirror the worktop
+point to `(8,28)` for a left-facing layout. The enamel kettle, teaspoon and mug
+are included in their applicable actor strips; the counter remains separate.
+
+Boat entry and exit use independently drawn 48 × 48 clips rather than reversed
+playback. Align the separate hull's gunwale to `(39,23)` and bench to `(36,35)`
+for the right-side layout, mirrored to `(9,23)` and `(12,35)` for left. The
+keeper climbs over the invisible gunwale at canonical 38 px standing height;
+the taller canvas provides movement clearance and never scales him up. Boat,
+dock, water and oars remain separate world assets.
 
 Bath, shower and hot-tub clips use the same scale but carry explicit privacy
 metadata. Entry and exit frames use `towel-privacy`; washing uses

@@ -52,6 +52,8 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Pick fruit | `keeper_pick_fruit` | high harvest point; right; mirror left |
 | Carry shopping | `keeper_carry_shopping` | two-bag walk; right; mirror left |
 | Row boat | `keeper_row_boat` | seated; two oars included; hull/water separate |
+| Climb into boat | `keeper_boat_enter` | right; fixed gunwale `(39,23)` and bench `(36,35)`; hull/dock separate; mirror left |
+| Climb out of boat | `keeper_boat_exit` | front-right; independent weight transfer; same gunwale/bench; mirror left |
 | Drive speedboat | `keeper_drive_speedboat` | seated at invisible helm; mirror when layout permits |
 | Operate outboard | `keeper_operate_outboard` | rear three-quarter; fixed tiller point; mirror left |
 | Watch TV | `keeper_watch_tv` | rear three-quarter right; mirror left; screen stays visible |
@@ -126,6 +128,11 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Spiral stairs up | `keeper_spiral_stairs_up` | right three-quarter to rear curved ascent; staircase/rail separate |
 | Spiral stairs down | `keeper_spiral_stairs_down` | rear to front-right curved descent; staircase/rail separate |
 | Spiral stairs legacy alias | `keeper_spiral_stairs` | retained ascent for compatibility; use the explicit `up` clip for new work |
+| Pour hot drink | `keeper_hot_drink_pour` | right; enamel kettle and mug; fixed worktop `(40,28)`; mirror left |
+| Stir hot drink | `keeper_hot_drink_stir` | right; mug and spoon at fixed worktop; mirror left |
+| Pick up hot drink | `keeper_hot_drink_pickup` | right; mug transfers from worktop to hand; mirror left |
+| Drink tea/coffee | `keeper_hot_drink_drink` | right-facing held-mug sipping loop; mirror left |
+| Put down hot drink | `keeper_hot_drink_put_down` | right; mug transfers from hand to fixed worktop; mirror left |
 | Ride slide | `keeper_slide_side` | right; mirror left; slide separate |
 | Use barbecue | `keeper_bbq_back` | rear; tongs included, barbecue separate |
 | Soak in hot tub | `keeper_hot_tub` | seated front with opaque water/foam privacy band; tub separate |

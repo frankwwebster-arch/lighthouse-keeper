@@ -104,7 +104,14 @@
     "showerDoorBathrobeRight": { "clip": "keeper_shower_door_open_bathrobe", "handUsePoint": [35, 18], "handleOffsetFromAnchor": [15, -22], "mirrorFor": "showerDoorBathrobeLeft" },
     "showerEntryBathrobe": { "clip": "keeper_shower_enter_bathrobe", "thresholdPoint": [20, 40], "movementVector": [0, -1] },
     "spiralStairsUp": { "clip": "keeper_spiral_stairs_up", "treadPoint": [20, 46], "movementVector": [0, -1], "turnArc": "right-to-rear" },
-    "spiralStairsDown": { "clip": "keeper_spiral_stairs_down", "treadPoint": [20, 46], "movementVector": [0, 1], "turnArc": "rear-to-front-right" }
+    "spiralStairsDown": { "clip": "keeper_spiral_stairs_down", "treadPoint": [20, 46], "movementVector": [0, 1], "turnArc": "rear-to-front-right" },
+    "hotDrinkPourRight": { "clip": "keeper_hot_drink_pour", "surfacePoint": [40, 28], "mirrorFor": "hotDrinkPourLeft" },
+    "hotDrinkStirRight": { "clip": "keeper_hot_drink_stir", "surfacePoint": [40, 28], "mirrorFor": "hotDrinkStirLeft" },
+    "hotDrinkPickupRight": { "clip": "keeper_hot_drink_pickup", "surfacePoint": [40, 28], "heldMugPoint": [34, 17], "mirrorFor": "hotDrinkPickupLeft" },
+    "hotDrinkSipRight": { "clip": "keeper_hot_drink_drink", "heldMugPoint": [34, 17], "mirrorFor": "hotDrinkSipLeft" },
+    "hotDrinkPutDownRight": { "clip": "keeper_hot_drink_put_down", "surfacePoint": [40, 28], "heldMugPoint": [34, 17], "mirrorFor": "hotDrinkPutDownLeft" },
+    "boatEnterRight": { "clip": "keeper_boat_enter", "gunwalePoint": [39, 23], "seatPoint": [36, 35], "mirrorFor": "boatEnterLeft" },
+    "boatExitRight": { "clip": "keeper_boat_exit", "gunwalePoint": [39, 23], "seatPoint": [36, 35], "mirrorFor": "boatExitLeft" }
   },
   "movementProfiles": {
     "swimRight": { "movementVector": [1, 0], "mirrorFor": "swimLeft" },

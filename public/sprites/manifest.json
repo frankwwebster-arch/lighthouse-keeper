@@ -290,6 +290,58 @@
   "interaction": "use-bbq",
   "z": 50
  },
+ "keeper_boat_enter": {
+  "file": "keeper_boat_enter.png",
+  "w": 48,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   48
+  ],
+  "seatPoint": [
+   36,
+   35
+  ],
+  "handUsePoint": [
+   39,
+   23
+  ],
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "climb-into-boat",
+  "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_boat_exit": {
+  "file": "keeper_boat_exit.png",
+  "w": 48,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   48
+  ],
+  "seatPoint": [
+   36,
+   35
+  ],
+  "handUsePoint": [
+   39,
+   23
+  ],
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "front-right",
+  "interaction": "climb-out-of-boat",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_bored": {
   "file": "keeper_bored.png",
   "w": 32,
@@ -1187,6 +1239,116 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "hammer-workbench",
+  "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_hot_drink_drink": {
+  "file": "keeper_hot_drink_drink.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   34,
+   17
+  ],
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "drink-hot-drink",
+  "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_hot_drink_pickup": {
+  "file": "keeper_hot_drink_pickup.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   40,
+   28
+  ],
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "pick-up-hot-drink",
+  "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_hot_drink_pour": {
+  "file": "keeper_hot_drink_pour.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   40,
+   28
+  ],
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "pour-hot-drink",
+  "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_hot_drink_put_down": {
+  "file": "keeper_hot_drink_put_down.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   40,
+   28
+  ],
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "put-down-hot-drink",
+  "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_hot_drink_stir": {
+  "file": "keeper_hot_drink_stir.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   40,
+   28
+  ],
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "stir-hot-drink",
   "mirrorsFor": "left",
   "z": 50
  },
