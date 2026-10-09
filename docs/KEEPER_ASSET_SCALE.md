@@ -260,10 +260,12 @@ reference, rotate/reset it, place it alongside and fade only the reviewed action
 There is no canonical rear-sitting reference yet, so rear comparisons require an
 explicit choice and remain visual evidence rather than a certified pose match.
 Each card's Save button persists its width, height, horizontal/vertical position,
-comparison-ghost controls, reviewed-animation rotation/opacity and happy checkbox in the browser. Orange denotes unsaved
-changes; green denotes a saved happy decision. Export is blocked until every
-changed card is saved, and version 4 of `keeper-scale-choices.json` contains the
-saved review register as well as independent width/height/position production proposals.
+comparison-ghost controls, reviewed-animation rotation/opacity, free-text notes,
+happy checkbox and mutually exclusive full-re-draft request in the browser.
+Orange denotes unsaved changes, green a saved happy decision and red a saved
+re-draft request. Export is blocked until every changed card is saved, and
+version 5 of `keeper-scale-choices.json` contains the saved review register,
+notes and re-draft list as well as independent width/height/position production proposals.
 Existing legacy uniform choices are retained and applied to both axes.
 The reviewed animation has its own −180° to +180° rotation control, independent
 of the ghost. It rotates every action frame around the fixed review anchor and

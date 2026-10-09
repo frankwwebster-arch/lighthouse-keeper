@@ -20,12 +20,11 @@ Codex task should be able to continue from here without relying on the old chat.
 3. Ask Frank for his new comments and exported `keeper-scale-choices.json`.
    Each card's Save button persists independent width/height, rotation,
    horizontal/vertical position, ghost settings, opacity and the
-   happy/not-yet-happy decision in his browser. Version 4 of the export includes
-   both production shape/position proposals and this
-   complete review register, but it
-   does not alter production art. **The page still does not save written
-   comments.** Do not assume comments seen only in Frank's browser have entered
-   the repository.
+   happy/not-yet-happy decision, free-text notes and full-re-draft request in
+   his browser. Version 5 of the export includes production shape/position
+   proposals, notes, re-draft requests and the complete review register, but it
+   does not alter production art. Notes are available to Codex only after Frank
+   supplies the exported JSON; browser-local saves do not enter the repository.
 4. Record every new comment by exact `keeper_*` filename before changing art.
    Triage it as `keep`, `fix`, `rebuild`, `delete`, or `decision needed`, and
    distinguish an art fault from a missing transition or missing object.

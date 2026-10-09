@@ -208,9 +208,10 @@ Delivered in `docs/keeper-scale-audit/review.html`:
 - Seated cards automatically use the canonical front/side sitting endpoint.
   Per-card controls select, rotate, reset or move the ghost alongside and fade
   the reviewed animation. Rear sitting still has no canonical neutral reference.
-- Every card has a happy checkbox, Save button and saved/unsaved indicator.
-  Saved review state survives reloads; export includes approvals and is blocked
-  while any card remains dirty.
+- Every card has a free-text notes field, mutually exclusive happy and full
+  re-draft decisions, a Save button and saved/unsaved indicator. Saved review
+  state survives reloads; export includes notes, approvals and the re-draft
+  list, and is blocked while any card remains dirty.
 - Reviewed-animation rotation and position are independent of the ghost,
   persist per card and are review aids for horizontal poses rather than sprite edits.
 - Action-only, raw matching-outfit walk seams and routes containing the known
