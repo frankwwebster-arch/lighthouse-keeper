@@ -207,6 +207,8 @@ Delivered in `docs/keeper-scale-audit/review.html`:
   floor line. Global Pause resets every card to frame 1 of its action.
 - Every card has Previous/Next frame buttons and an exact frame counter. Using
   them pauses playback and steps through the action without dirtying the review.
+  A prominent pane badge continuously shows the displayed clip and frame,
+  including during playback and for both sides of a frozen seam.
 - Seated cards automatically use the canonical front/side sitting endpoint.
   Per-card controls select, rotate, reset or move the ghost alongside and fade
   the reviewed animation. Rear sitting still has no canonical neutral reference.

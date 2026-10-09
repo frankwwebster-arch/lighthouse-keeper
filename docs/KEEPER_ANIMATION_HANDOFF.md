@@ -19,7 +19,9 @@ Codex task should be able to continue from here without relying on the old chat.
    controls pause/play everything and apply pose-aware comparison ghosts.
    Every card also has Previous/Next frame controls. They pause playback,
    select the action itself and step without wrapping from frame 1 to the final
-   frame; inspection alone does not alter or dirty the saved review.
+   frame; inspection alone does not alter or dirty the saved review. A prominent
+   top-right pane badge continuously names the displayed clip and exact frame,
+   including during playback; seam-freeze mode names both compared frames.
 3. Ask Frank for his new comments and exported `keeper-scale-choices.json`.
    Each card's Save button persists independent width/height, rotation,
    horizontal/vertical position, ghost settings, opacity and the

@@ -611,7 +611,8 @@ for token in (
     'Reset animation position', 'actionOffsetX', 'actionOffsetY',
     'Notes for the production pass', 'Request full re-draft',
     'redraftRequested', 'reviewnotes',
-    'Previous frame', 'Next frame', 'Frame 1 /', 'manualFrame',
+    'Previous frame', 'Next frame', 'Action frame 1 /', 'manualFrame',
+    'class="frameNumber"', 'card.frameNumber.textContent',
     'runtime: ${asset.name}.png', 'source: ${basename(asset.source)}',
     'animations, all shown', 'function buildGallery()',
 ):

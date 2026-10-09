@@ -261,7 +261,8 @@ align the bottom of the first-frame figure to the red floor line for comparison.
 Global Pause always resets every card to the action's first frame.
 Per-card Previous/Next frame controls pause playback, switch that card to its
 action and step without wrapping across every frame. Frame inspection does not
-change the saved review.
+change the saved review. A top-right badge inside the pane always shows the
+displayed clip filename and exact frame; seam-freeze mode identifies both frames.
 Seated cards automatically use the canonical front or side sitting endpoint;
 other cards use the standing reference. Per-card controls can select a different
 reference, rotate/reset it, place it alongside and fade only the reviewed action.
