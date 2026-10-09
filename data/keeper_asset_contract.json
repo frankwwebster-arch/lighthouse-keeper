@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "status": "authoritative",
   "units": "logical-pixels",
   "derivedObjectDataset": "data/keeper_object_dimensions.json",
@@ -25,7 +25,8 @@
     "extendedRaisedArmsAction": { "width": 32, "height": 48, "density": 4, "anchor": [16, 48] },
     "extendedSnowToolAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
     "extendedTrayAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
-    "extendedHorizontalExercise": { "width": 64, "height": 40, "density": 4, "anchor": [32, 40], "minimumVisibleBodyLength": 52 },
+    "extendedHorizontalExercise": { "width": 64, "height": 40, "density": 4, "anchor": [32, 40], "canonicalBodyAxisLengthRange": [47, 52] },
+    "extendedStandingFishing": { "width": 64, "height": 56, "density": 4, "anchor": [32, 56], "minimumActorHeight": 36 },
     "extendedOverheadExercise": { "width": 48, "height": 56, "density": 4, "anchor": [24, 56] }
   },
   "measuredReference": {
@@ -124,7 +125,7 @@
     "mealTableRight": { "clip": "keeper_meal_place_side", "handUsePoint": [39, 21], "surfaceOffsetFromFeet": [15, -19], "mirrorFor": "mealTableLeft" },
     "videoGameRight": { "clip": "keeper_video_game", "seatPoint": [24, 29], "handUsePoint": [24, 21], "lookTargetPoint": [56, 14], "mirrorFor": "videoGameLeft" },
     "waterPlantsRight": { "clip": "keeper_water_plants_side", "handUsePoint": [39, 31], "offsetFromFeet": [15, -9], "mirrorFor": "waterPlantsLeft" },
-    "fishingStandingRight": { "clip": "keeper_fish_standing", "handUsePoint": [42, 16], "mirrorFor": "fishingStandingLeft" },
+    "fishingStandingRight": { "clip": "keeper_fish_standing", "handUsePoint": [56, 24], "offsetFromFeet": [24, -32], "mirrorFor": "fishingStandingLeft" },
     "fishingSeatedRight": { "clip": "keeper_fish_seated", "seatPoint": [24, 29], "handUsePoint": [42, 17], "mirrorFor": "fishingSeatedLeft" },
     "computerTyping": { "clip": "keeper_type_computer", "seatPoint": [16, 29], "handUsePoint": [24, 20] },
     "instrumentCheckSide": { "clip": "keeper_check_instrument_side", "handUsePoint": [27, 17], "offsetFromFeet": [11, -23], "mirrorFor": "instrumentCheckLeft" },

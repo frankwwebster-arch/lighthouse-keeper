@@ -54,6 +54,12 @@ Edge-clipping correction: `keeper_put_record` and
 transparent bounds retain the full record in frames 5–7 and the entire watering
 can/spout without changing keeper scale or floor-relative interaction offsets.
 
+Scale correction: `keeper_pressups_side` was redrawn and normalised along its
+horizontal body axis while preserving canonical head height and core depth;
+outer silhouette width is no longer accepted as a scale proxy. The standing
+fishing clip now uses a 64 × 56 transparent canvas so the keeper reaches the
+canonical actor height without fitting him to the rod, line or catch.
+
 ## Removed from the public art-review set
 
 The modular front/back limb, torso and head layers, `keeper_reference`, and the

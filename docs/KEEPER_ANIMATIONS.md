@@ -120,7 +120,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Throw darts | `keeper_darts` | right; mirror left; dart included, board separate |
 | Bounce on trampoline | `keeper_trampoline_front` | front; old-school workout kit; trampoline separate |
 | Lift weights | `keeper_lift_weights_back` | rear overhead press; old-school workout kit; barbell included; 48 × 56 overhead canvas preserves body scale |
-| Do press-ups | `keeper_pressups_side` | right; mirror left; old-school workout kit; full canonical body length on 64 × 40 canvas |
+| Do press-ups | `keeper_pressups_side` | right; mirror left; old-school workout kit; 64 × 40 canvas; canonical head/core depth and 47–52 px articulated body-axis envelope |
 | Float in anti-gravity | `keeper_anti_gravity` | centred 48 × 48 loop; room applies drift/circling translation |
 | Chop plants | `keeper_machete_side` | right; mirror left; machete included, plants separate |
 | Drink handled pint | `keeper_drink_pint` | seated front-right; mirror front-left; tankard included |
@@ -140,7 +140,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Ten-pin bowling | `keeper_bowling` | right; mirror left; ball included, lane/pins separate |
 | Play video game | `keeper_video_game` | rear-right with controller; mirror rear-left; TV/seat separate |
 | Water plants | `keeper_water_plants_side` / `keeper_water_plants_back` / `keeper_water_plants_front` | side uses 48 × 40 and mirrors left; can/stream included and edge-safe; plants separate |
-| Fish standing | `keeper_fish_standing` | right; mirror left; rod, line and catch included |
+| Fish standing | `keeper_fish_standing` | right; mirror left; 64 × 56 canvas keeps the actor at canonical scale while retaining the full rod, line and catch |
 | Fish seated | `keeper_fish_seated` | right; mirror left; seat/water separate |
 | Collect eggs | `keeper_collect_eggs_back` | canonical low rear work loop; basket, eggs and coop are separate aligned objects |
 | Enter / wash / exit bath | `keeper_bath_enter`, `keeper_bath_wash`, `keeper_bath_exit` | entry/exit towel; wash has opaque mosaic/foam privacy coverage; bath separate |

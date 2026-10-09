@@ -299,10 +299,25 @@ for frame_index in range(exercise_bike['frames']):
 assert manifest['keeper_lift_weights_back']['w']==48 and manifest['keeper_lift_weights_back']['h']==56
 assert manifest['keeper_lift_weights_back']['anchor']==[24,56] and manifest['keeper_lift_weights_back']['handUsePoint']==[24,5]
 pressups=Image.open(root/'public/sprites'/manifest['keeper_pressups_side']['file']).convert('RGBA')
+pressup_widths=[]
 for frame_index in range(manifest['keeper_pressups_side']['frames']):
     frame=pressups.crop((frame_index*64*4,0,(frame_index+1)*64*4,40*4))
     visible=frame.getchannel('A').getbbox()
-    assert visible is not None and visible[2]-visible[0]>=52*4,(frame_index,visible)
+    assert visible is not None
+    pressup_widths.append((visible[2]-visible[0])/4)
+assert min(pressup_widths)>=47 and max(pressup_widths)<=52,pressup_widths
+standing_fish=manifest['keeper_fish_standing']
+assert standing_fish['w']==64 and standing_fish['h']==56 and standing_fish['anchor']==[32,56]
+assert standing_fish['handUsePoint']==[56,24]
+standing_fish_image=Image.open(root/'public/sprites'/standing_fish['file']).convert('RGBA')
+standing_fish_bounds=[]
+for frame_index in range(standing_fish['frames']):
+    frame=standing_fish_image.crop((frame_index*64*4,0,(frame_index+1)*64*4,56*4))
+    visible=frame.getchannel('A').getbbox()
+    assert visible is not None
+    standing_fish_bounds.append(((visible[2]-visible[0])/4,(visible[3]-visible[1])/4))
+assert min(width for width,_ in standing_fish_bounds)>=25,standing_fish_bounds
+assert min(height for _,height in standing_fish_bounds)>=38,standing_fish_bounds
 for name in ['keeper_swim_costume_horizontal','keeper_scuba_swim_horizontal']:
     horizontal=Image.open(root/'public/sprites'/manifest[name]['file']).convert('RGBA')
     widths=[]
@@ -343,7 +358,7 @@ for view in ['side','back','front']:
     assert tarzan['outfit']=='tarzan' and tarzan['w']==32 and tarzan['h']==40 and tarzan['anchor']==[16,40]
 assert manifest['keeper_tarzan_walk_side']['mirrorSafe'] is True
 asset_contract=json.loads((root/'data/keeper_asset_contract.json').read_text())
-assert asset_contract['version']==3 and asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
+assert asset_contract['version']==4 and asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
 assert asset_contract['derivedObjectDataset']=='data/keeper_object_dimensions.json'
 assert asset_contract['canvas']['standard']=={'width':32,'height':40,'density':4,'anchor':[16,40]}
 assert asset_contract['canvas']['extendedAirborne']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
@@ -359,13 +374,15 @@ assert asset_contract['canvas']['extendedHeldInstrument']=={'width':48,'height':
 assert asset_contract['canvas']['extendedRaisedArmsAction']=={'width':32,'height':48,'density':4,'anchor':[16,48]}
 assert asset_contract['canvas']['extendedSnowToolAction']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
 assert asset_contract['canvas']['extendedTrayAction']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
-assert asset_contract['canvas']['extendedHorizontalExercise']=={'width':64,'height':40,'density':4,'anchor':[32,40],'minimumVisibleBodyLength':52}
+assert asset_contract['canvas']['extendedHorizontalExercise']=={'width':64,'height':40,'density':4,'anchor':[32,40],'canonicalBodyAxisLengthRange':[47,52]}
+assert asset_contract['canvas']['extendedStandingFishing']=={'width':64,'height':56,'density':4,'anchor':[32,56],'minimumActorHeight':36}
 assert asset_contract['canvas']['extendedOverheadExercise']=={'width':48,'height':56,'density':4,'anchor':[24,56]}
 assert asset_contract['interactionProfiles']['carryCakeRight']['handUsePoint']==[34,20]
 assert asset_contract['interactionProfiles']['carryMealRight']['handUsePoint']==[34,20]
 assert asset_contract['interactionProfiles']['placeCakeRight']['handUsePoint']==[39,21]
 assert asset_contract['interactionProfiles']['mealTableRight']['handUsePoint']==[39,21]
 assert asset_contract['interactionProfiles']['exerciseBikeFront']['pedalPoint']==[24,42]
+assert asset_contract['interactionProfiles']['fishingStandingRight']['handUsePoint']==[56,24]
 assert asset_contract['interactionProfiles']['vomitToiletBack']['bowlPoint']==[32,35]
 assert asset_contract['interactionProfiles']['showerDoorBathrobeRight']['handUsePoint']==[35,18]
 assert asset_contract['interactionProfiles']['showerEntryBathrobe']['thresholdPoint']==[20,40]

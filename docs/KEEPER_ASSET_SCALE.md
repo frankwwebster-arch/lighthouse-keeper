@@ -24,9 +24,12 @@ page explains it in ordinary language.
   same size; only the transparent space around him grows.
 - Bed entry and snoring use 48 × 40 with anchor `(24,40)` so the horizontal
   body fits without rescaling.
-- Press-ups use a 64 × 40 extended horizontal canvas. The keeper's
-  head-to-toe body length must be at least 52 logical pixels in every frame;
-  the horizontal pose is never scaled down as if it were a standing figure.
+- Press-ups use a 64 × 40 extended horizontal canvas. Their 47–52 px changing
+  silhouette is checked together with the canonical head height, core depth
+  and articulated body-axis landmarks; silhouette width alone is not scale.
+- Standing fishing uses a 64 × 56 canvas with anchor `(32,56)`. This gives the
+  canonical keeper at least 38 px of visible height in every frame while the
+  rod, line, float and catch occupy transparent space above and beside him.
 - Left/right swimming uses an 80 × 48 canvas and movement anchor `(40,24)` so
   the horizontal body keeps canonical scale without width-fitting shrinkage;
   every frame must retain at least 32 logical pixels of visible actor thickness.

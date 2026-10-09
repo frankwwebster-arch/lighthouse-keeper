@@ -5,7 +5,7 @@ This is the permanent, reproducible audit of every keeper sheet. It deliberately
 - 167 keeper sheets inspected.
 - 149 animation sheets accepted for review; 18 obsolete modular/reference sheets excluded.
 - 1186 individual frames measured.
-- 48 sheets explicitly rebuilt or anatomy-normalised in this pass.
+- 50 sheets explicitly rebuilt or anatomy-normalised in this pass.
 - Canonical upright anatomy: skull top 32.5 logical pixels above the walking floor, shoulders 24.5, hips 14.5, seat contact 11.
 - Allowed landmark drift: 0.5 logical pixel; core-width drift: 1 logical pixel. Pose contacts are checked independently from body scale.
 
@@ -21,6 +21,7 @@ Upright poses use inferred skull-to-supporting-sole height. Costumes use the fac
 - `keeper_crouch_work_back` — redrawn; hands work in front and body width restored.
 - `keeper_drive_speedboat` — seated anatomy normalised to the sit-side head and torso unit.
 - `keeper_eat_seated` — seated anatomy normalised to the sit-side head and torso unit.
+- `keeper_fish_standing` — enlarged on a 64 by 56 canvas so the keeper, not the rod and line, determines actor scale.
 - `keeper_halloween_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_halloween_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_halloween_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
@@ -41,6 +42,7 @@ Upright poses use inferred skull-to-supporting-sole height. Costumes use the fac
 - `keeper_place_cake` — redrawn for the standard 19 px table datum and a fully straight final pose.
 - `keeper_play_drums_back` — seated anatomy normalised to the sit-side head and torso unit.
 - `keeper_play_drums_front` — seated anatomy normalised to the sit-side head and torso unit.
+- `keeper_pressups_side` — redrawn and body-axis-normalised without shrinking its canonical head/core depth.
 - `keeper_put_record` — expanded to a 48 px side-action canvas so the record remains complete in frames 5–7.
 - `keeper_ride_bike_front` — enlarged from its undersized head unit on a 48 px interaction canvas.
 - `keeper_row_boat` — seated anatomy normalised to the sit-side head and torso unit.

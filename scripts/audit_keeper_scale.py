@@ -57,6 +57,8 @@ CORRECTED = {
     "keeper_carry_shopping": "hand anatomy redrawn so each frame has exactly two hands attached to the two bag-carrying arms",
     "keeper_put_record": "expanded to a 48 px side-action canvas so the record remains complete in frames 5–7",
     "keeper_water_plants_side": "expanded to a 48 px side-action canvas so the watering can and spout remain complete",
+    "keeper_pressups_side": "redrawn and body-axis-normalised without shrinking its canonical head/core depth",
+    "keeper_fish_standing": "enlarged on a 64 by 56 canvas so the keeper, not the rod and line, determines actor scale",
     "keeper_sit_front": "redrawn and width-normalised against canonical front body",
     "keeper_party_turn_back": "redrawn as a coherent front-to-rear turn",
     "keeper_party_idle": "redrawn from the corrected party identity",
@@ -287,7 +289,7 @@ def publish(assets: list[dict]) -> None:
     serialisable = [{k: v for k, v in asset.items() if k != "_frames"} for asset in assets]
     payload = {
         "version": 1,
-        "authority": "data/keeper_asset_contract.json version 3",
+        "authority": "data/keeper_asset_contract.json version 4",
         "rules": CONTRACT["measurementPolicy"],
         "canonicalAnatomy": CONTRACT["canonicalAnatomy"],
         "counts": {

@@ -99,7 +99,7 @@ Initial clips:
 | `cake_turn_right` | rear to side | 6 · 8 | no | 48 × 40; tray carry `(34,20)`; mirror for left |
 | `loo_hide` | hidden | 0 | n/a | keeper is not drawn |
 
-The old part files and `keeper_reference.png` are no longer required review deliveries. Airborne strips may expand to 48 × 56 for the dive or 48 × 84 for parachute deployment without rescaling the keeper. Long side tools may use 40 × 40, bed poses 48 × 40, vertical swimming 48 × 48, horizontal swimming 80 × 48, press-ups 64 × 40, overhead weights 48 × 56, and tall headwear 32 × 48. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. `data/keeper_asset_contract.json` is authoritative for scale and use points.
+The old part files and `keeper_reference.png` are no longer required review deliveries. Airborne strips may expand to 48 × 56 for the dive or 48 × 84 for parachute deployment without rescaling the keeper. Long side tools may use 40 × 40, bed poses 48 × 40, vertical swimming 48 × 48, horizontal swimming 80 × 48, press-ups 64 × 40, standing fishing 64 × 56, overhead weights 48 × 56, and tall headwear 32 × 48. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. `data/keeper_asset_contract.json` is authoritative for scale and use points.
 
 The dive outfit reuses every pivot. Its approved reference is a traditional full-length red-and-white striped one-piece costume, without cap or helmet and with bare feet. Changing is an invisible clip: inner door closes, keeper disappears, zip/rustle SFX, outfit swaps, exterior door opens, dressed keeper exits. There is never a visible frame between the two doors.
 

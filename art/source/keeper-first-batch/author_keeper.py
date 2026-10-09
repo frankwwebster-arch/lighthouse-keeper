@@ -721,7 +721,7 @@ ADDITIONAL_CLIPS = [
     ("keeper_water_plants_side", "keeper-water-side-generated-source.png", 48, 40, dict(hand_use_point=[39, 31], facing="right", interaction="water-plants", mirror_safe=True, mirrors_for="left")),
     ("keeper_water_plants_back", "keeper-water-back-generated-source.png", 40, 40, dict(hand_use_point=[20, 31], facing="back", interaction="water-plants")),
     ("keeper_water_plants_front", "keeper-water-front-generated-source.png", 40, 40, dict(hand_use_point=[20, 31], facing="front", interaction="water-plants")),
-    ("keeper_fish_standing", "keeper-fish-stand-generated-source.png", 48, 40, dict(hand_use_point=[42, 16], facing="right", interaction="fish-and-reel", mirror_safe=True, mirrors_for="left")),
+    ("keeper_fish_standing", "keeper-fish-stand-generated-source.png", 64, 56, dict(hand_use_point=[56, 24], facing="right", interaction="fish-and-reel", mirror_safe=True, mirrors_for="left")),
     ("keeper_fish_seated", "keeper-fish-sit-generated-source.png", 48, 40, dict(seat_point=[24, 29], hand_use_point=[42, 17], facing="right", interaction="fish-and-reel", mirror_safe=True, mirrors_for="left")),
     ("keeper_collect_eggs_back", "keeper-collect-eggs-generated-source.png", 32, 40, dict(hand_use_point=[16, 38], facing="back", interaction="collect-eggs")),
     ("keeper_bath_enter", "keeper-bath-enter-generated-source.png", 40, 40, dict(facing="right", interaction="enter-bath", outfit="towel-privacy", loop=False, reverse_for="bath-exit", mirror_safe=True, mirrors_for="left")),
