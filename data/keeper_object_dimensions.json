@@ -1,0 +1,199 @@
+{
+  "version": 1,
+  "status": "authoritative-starting-envelope",
+  "units": "logical-pixels",
+  "coordinateSystem": {
+    "floorY": 0,
+    "heightPositive": "up from the keeper walking plane",
+    "width": "screen horizontal extent",
+    "depth": "side-view footprint; no perspective scaling"
+  },
+  "keeperBasis": {
+    "source": "data/keeper_asset_contract.json version 3",
+    "skullTopHeight": 32.5,
+    "shoulderHeight": 24.5,
+    "hipHeight": 14.5,
+    "seatContactHeight": 11,
+    "frontBackCoreWidth": 19,
+    "sideCoreDepth": 13,
+    "handDiameter": 4,
+    "bootLength": 8
+  },
+  "rules": [
+    "The keeper is never rescaled to fit an object; the object is built around these datums.",
+    "All interaction points are measured from the same walking plane and must land within 0.5 logical pixel of the selected animation contact.",
+    "Furniture may be wider for style, but its seat, surface, handle, pedal, rung and screen datums do not move between art tiers.",
+    "No perspective shrinkage is used anywhere in the corridor gameplay plane.",
+    "Props released by an animation transfer to the object layer on the exact final-frame contact point."
+  ],
+  "furniture": {
+    "diningChair": {
+      "width": 22,
+      "depth": 14,
+      "seatTopHeight": 11,
+      "seatThickness": 2,
+      "backTopHeight": 26,
+      "clearSeatWidth": 20,
+      "keeperClips": ["keeper_sit_side", "keeper_sit_front"],
+      "status": "authoritative-datums"
+    },
+    "diningTable": {
+      "surfaceHeight": 19,
+      "topThickness": 2,
+      "minimumKneeClearanceHeight": 15,
+      "minimumPlaceWidth": 28,
+      "depth": 14,
+      "keeperClips": ["keeper_eat_seated", "keeper_place_cake", "keeper_meal_place_side", "keeper_lean_table_back"],
+      "status": "authoritative-datums"
+    },
+    "writingTable": {
+      "surfaceHeight": 19,
+      "topThickness": 2,
+      "minimumPlaceWidth": 28,
+      "depth": 14,
+      "keeperClips": ["keeper_write_side", "keeper_write_back", "keeper_lean_table_back"],
+      "status": "authoritative-datums"
+    },
+    "workbench": {
+      "surfaceHeight": 17,
+      "topThickness": 3,
+      "minimumWorkingWidth": 32,
+      "depth": 15,
+      "keeperClips": ["keeper_hammer_side", "keeper_hammer_back", "keeper_weld", "keeper_saw_wood"],
+      "status": "authoritative-datums"
+    },
+    "kitchenWorktop": {
+      "surfaceHeight": 19,
+      "topThickness": 2,
+      "minimumWorkingWidth": 28,
+      "depth": 15,
+      "keeperClips": ["keeper_cook_back", "keeper_hot_drink_pour", "keeper_hot_drink_stir", "keeper_hot_drink_pickup", "keeper_hot_drink_put_down"],
+      "status": "authoritative-datums"
+    },
+    "lowCoffeeTable": {
+      "surfaceHeight": 12,
+      "topThickness": 2,
+      "minimumWidth": 24,
+      "depth": 13,
+      "note": "Distinct from a dining table; cake and meal placement no longer target this low datum.",
+      "status": "authoritative-datums"
+    },
+    "sofa": {
+      "seatTopHeight": 11,
+      "seatDepth": 15,
+      "backTopHeight": 26,
+      "singleKeeperWidth": 24,
+      "armTopHeight": 17,
+      "keeperClips": ["keeper_watch_tv", "keeper_watch_movie", "keeper_video_game", "keeper_read_front"],
+      "status": "authoritative-datums"
+    },
+    "bed": {
+      "mattressTopHeight": 9,
+      "mattressThickness": 3,
+      "minimumLength": 48,
+      "minimumWidth": 24,
+      "pillowCentreOffsetFromRightEntryAnchor": [14, 18],
+      "placement": "centred in the bedroom",
+      "keeperClips": ["keeper_get_into_bed", "keeper_pyjamas_snore"],
+      "status": "authoritative-datums"
+    },
+    "toilet": {
+      "seatTopHeight": 11,
+      "bowlTargetHeight": 5,
+      "minimumWidth": 18,
+      "depth": 18,
+      "keeperClips": ["keeper_sit_front", "keeper_urinate_back", "keeper_vomit_loo_back"],
+      "status": "authoritative-datums"
+    },
+    "bath": {
+      "rimHeight": 12,
+      "minimumInteriorLength": 40,
+      "outerLength": 46,
+      "outerDepth": 18,
+      "keeperClips": ["keeper_bath_enter", "keeper_bath_wash", "keeper_bath_exit"],
+      "status": "provisional-envelope"
+    },
+    "showerCubicle": {
+      "thresholdHeight": 0,
+      "doorHandleHeight": 22,
+      "minimumInteriorWidth": 24,
+      "minimumHeight": 42,
+      "keeperClips": ["keeper_shower_door_open_bathrobe", "keeper_shower_enter_bathrobe", "keeper_shower_enter", "keeper_shower_wash", "keeper_shower_exit"],
+      "status": "authoritative-datums"
+    }
+  },
+  "fixturesAndStations": {
+    "wallSwitch": {
+      "centreHeight": 23,
+      "plateSize": [4, 6],
+      "keeperClips": ["keeper_switch_press_side", "keeper_switch_press_back"]
+    },
+    "liftButton": {
+      "centreHeight": 23,
+      "plateSize": [4, 6],
+      "keeperClips": ["keeper_lift_button_front"]
+    },
+    "door": {
+      "handleCentreHeight": 20,
+      "minimumOpeningHeight": 40,
+      "minimumOpeningWidth": 24,
+      "keeperClips": ["keeper_door_open_side", "keeper_door_open_back"]
+    },
+    "oven": {
+      "rackHeight": 10,
+      "worktopHeight": 19,
+      "minimumDoorWidth": 24,
+      "keeperClips": ["keeper_cake_from_oven_back", "keeper_meal_from_oven_back"]
+    },
+    "piano": {
+      "keyHeight": 20,
+      "stoolSeatHeight": 11,
+      "minimumKeyboardWidth": 32,
+      "keeperClips": ["keeper_piano"]
+    },
+    "drumKit": {
+      "stoolSeatHeight": 11,
+      "primaryDrumSurfaceHeight": 21,
+      "minimumWidth": 38,
+      "keeperClips": ["keeper_play_drums_front", "keeper_play_drums_back"]
+    },
+    "television": {
+      "screenCentreHeight": 26,
+      "screenCentreHorizontalOffsetFromSeat": 24,
+      "movieScreenHorizontalOffsetFromSeat": 32,
+      "keeperClips": ["keeper_watch_tv", "keeper_watch_movie", "keeper_video_game"]
+    },
+    "aquarium": {
+      "topFeedTargetHeight": 41,
+      "brushTargetHeight": 23,
+      "netTargetHeight": 19,
+      "minimumTankWidth": 32,
+      "minimumTankHeight": 24,
+      "keeperClips": ["keeper_fish_feed_up", "keeper_aquarium_brush", "keeper_aquarium_net"]
+    },
+    "exerciseBike": {
+      "seatHeight": 13,
+      "handlebarHeight": 21,
+      "pedalCentreHeight": 6,
+      "minimumWidth": 24,
+      "keeperClips": ["keeper_ride_bike_front"]
+    },
+    "ladder": {
+      "rungSpacing": 6,
+      "clearWidth": 14,
+      "upperHandReachHeight": 34,
+      "keeperClips": ["keeper_ladder_climb"]
+    },
+    "animalBowl": {
+      "targetHeight": 6,
+      "maximumRimHeight": 3,
+      "minimumClearWidth": 12,
+      "keeperClips": ["keeper_feed_animals"]
+    },
+    "turntable": {
+      "platterHeight": 13,
+      "minimumWidth": 20,
+      "keeperClips": ["keeper_put_record"]
+    }
+  }
+}

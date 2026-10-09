@@ -14,6 +14,19 @@ existing=list(csv.DictReader((ROOT/'data/upgrades.csv').open()))
 byid={}
 for r in existing:byid.setdefault(r['object'],{})[int(r['tier'])]=r
 manifest=json.loads((ROOT/'public/sprites/manifest.json').read_text())
+# Frank explicitly rejected these as reviewable final art.  Runtime safety
+# fallbacks remain on disk until their replacements are wired, but the review
+# canvas must not keep presenting them for approval.
+REVIEW_IMAGE_EXCLUSIONS={
+    'keeper_idle','keeper_reference','obj_tv_on',
+    'room_bedroom','room_kitchen','room_living',
+    'keeper_front_torso','keeper_front_arm_l','keeper_front_arm_r',
+    'keeper_front_leg_l','keeper_front_leg_r','keeper_front_head_happy',
+    'keeper_front_head_neutral','keeper_front_head_grumpy',
+    'keeper_front_head_asleep','keeper_front_head_open',
+    'keeper_back_torso','keeper_back_arm_l','keeper_back_arm_r',
+    'keeper_back_leg_l','keeper_back_leg_r','keeper_back_head',
+}
 rows=[];items=[]
 FIELDS='space_id,name,category,placement_rule,stack_eligible,dimensions,dependencies,activities,unlock_challenge,asset_id,asset_type,tier,measurable_benefit,required_states,frames,keeper_pose,anchor,reusable_source,breakdown_effect,priority,implementation_status,notes'.split(',')
 OVERRIDES={
@@ -208,6 +221,8 @@ payload={'base_commit':evidence['baseCommit'],'spaces':spaces,'rows':rows,'summa
 # A self-contained HTML file is produced from a template, with embedded JSON and sprite images.
 images={}
 for key,e in manifest.items():
+    if key in REVIEW_IMAGE_EXCLUSIONS:
+        continue
     p=ROOT/'public/sprites'/e['file'];images[key]={'src':'data:image/png;base64,'+base64.b64encode(p.read_bytes()).decode(),'w':e['w'],'h':e['h'],'frames':e['frames'],'fps':e.get('fps',0)}
 payload['images']=images
 payload['references']={}

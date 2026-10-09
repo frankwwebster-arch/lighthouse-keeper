@@ -10,7 +10,7 @@ This note records the decisions made in the visual-design conversation so implem
 - The game is flat, front-on 2D cutaway art, not isometric and not full 3D.
 - Use a consistent 4 px logical pixel grid, crisp nearest-neighbour scaling, saturated colours, dark pixel outlines, and simple faces.
 - The lighthouse is the visual anchor: classic alternating red-and-white exterior stripes.
-- The keeper is the main animation challenge. He is assembled from reusable layered parts, with animation variety coming from a library of body-language clips and some rear-facing work poses. Cooking, brushing teeth, and similar actions can often show his back with small arm/body movements rather than requiring bespoke front-facing animation.
+- The keeper is the main animation challenge. The old modular layered parts are rejected as final review art; production uses full animation strips measured against the approved walk's skull, shoulder, hip, core-width and sole landmarks. Cooking, brushing teeth, and similar actions can often show his back with small arm/body movements rather than requiring bespoke front-facing animation.
 
 ## Interior item states
 
@@ -69,8 +69,8 @@ Completed in the first implementation slice:
 
 Next priorities:
 
-1. Review delivery-order items 2 and the expanded keeper subset of item 3 in `docs/floor-asset-catalogue/review.html`: CRT/object-state overlays plus 167 aligned keeper exports.
-2. Use `data/keeper_asset_contract.json` as the authority for all new object scale, keeper pivots and interaction heights; use `docs/KEEPER_ANIMATIONS.md` for the prioritized remaining clips.
+1. Review delivery-order items 2 and the 149 accepted keeper animations in `docs/floor-asset-catalogue/review.html`; obsolete modular/reference art and the explicitly deleted room/TV images are hidden.
+2. Use `data/keeper_asset_contract.json` and `data/keeper_object_dimensions.json` as the authority for all new object scale, keeper pivots and interaction heights. The 1,186-frame measurement record is in `docs/keeper-scale-audit/`.
 3. Add a day/night palette or overlay system and the proper roughly 30-second recap.
 4. Design future floor missions so eligible standard floors can unlock in different orders; do not hard-code a linear room sequence.
 5. Leave aquarium, weather station, lair, lift, pets, visitors, ship and weather art until the later batch is authorised.

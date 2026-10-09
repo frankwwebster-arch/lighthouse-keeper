@@ -569,18 +569,18 @@
  },
  "keeper_collect_eggs_back": {
   "file": "keeper_collect_eggs_back.png",
-  "w": 40,
+  "w": 32,
   "h": 40,
   "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
-   20,
+   16,
    40
   ],
   "handUsePoint": [
-   20,
-   36
+   16,
+   38
   ],
   "loop": true,
   "facing": "back",
@@ -1605,7 +1605,7 @@
   ],
   "handUsePoint": [
    39,
-   28
+   21
   ],
   "loop": false,
   "mirrorSafe": true,
@@ -1984,7 +1984,7 @@
   ],
   "handUsePoint": [
    39,
-   28
+   21
   ],
   "loop": false,
   "mirrorSafe": true,
@@ -2437,7 +2437,7 @@
   ],
   "handUsePoint": [
    16,
-   36
+   38
   ],
   "loop": true,
   "facing": "back",

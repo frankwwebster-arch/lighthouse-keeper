@@ -1,0 +1,70 @@
+# Keeper scale audit
+
+This is the permanent, reproducible audit of every keeper sheet. It deliberately does **not** use the outer silhouette as character scale: hats, tools, raised arms, water and furniture can change that box without changing the keeper.
+
+- 167 keeper sheets inspected.
+- 149 animation sheets accepted for review; 18 obsolete modular/reference sheets excluded.
+- 1186 individual frames measured.
+- 40 sheets explicitly rebuilt or anatomy-normalised in this pass.
+- Canonical upright anatomy: skull top 32.5 logical pixels above the walking floor, shoulders 24.5, hips 14.5, seat contact 11.
+- Allowed landmark drift: 0.5 logical pixel; core-width drift: 1 logical pixel. Pose contacts are checked independently from body scale.
+
+## Measurement method
+
+Upright poses use inferred skull-to-supporting-sole height. Costumes use the face/ear/neck structure to infer the skull under hats and helmets. Seated and crouched poses use the head unit plus shoulder–hip–sole chain. Swimming, press-ups and other horizontal poses use the same articulated chain along the body axis. A skin-colour face proxy is also recorded where visible as a machine-checkable warning signal; it is not allowed to overrule the anatomical method.
+
+## Corrected sheets
+
+- `keeper_bath_wash` — redrawn and normalised from the standing bare-headed and seated canonical landmarks.
+- `keeper_collect_eggs_back` — reuses canonical corrected low rear work anatomy.
+- `keeper_crouch_work_back` — redrawn; hands work in front and body width restored.
+- `keeper_drive_speedboat` — seated anatomy normalised to the sit-side head and torso unit.
+- `keeper_eat_seated` — seated anatomy normalised to the sit-side head and torso unit.
+- `keeper_halloween_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_halloween_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_halloween_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_hot_tub` — redrawn and normalised by the visible head/shoulder unit rather than the water silhouette.
+- `keeper_knight_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_knight_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_knight_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_meal_place_side` — redrawn for the standard 19 px table datum instead of the floor.
+- `keeper_mechanic_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_mechanic_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_mechanic_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_party_idle` — redrawn from the corrected party identity.
+- `keeper_party_turn_back` — redrawn as a coherent front-to-rear turn.
+- `keeper_piano` — seated anatomy normalised to the sit-side head and torso unit.
+- `keeper_pirate_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_pirate_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_pirate_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_place_cake` — redrawn for the standard 19 px table datum and a fully straight final pose.
+- `keeper_play_drums_back` — seated anatomy normalised to the sit-side head and torso unit.
+- `keeper_play_drums_front` — seated anatomy normalised to the sit-side head and torso unit.
+- `keeper_row_boat` — seated anatomy normalised to the sit-side head and torso unit.
+- `keeper_scuba_swim_down` — redrawn with approved keeper identity and cell gutters.
+- `keeper_search_boxes` — reuses canonical corrected low rear work anatomy.
+- `keeper_sit_front` — redrawn and width-normalised against canonical front body.
+- `keeper_souwester_walk_back` — costume headwear excluded; skull, shoulder and sole landmarks normalised.
+- `keeper_souwester_walk_front` — costume headwear excluded; skull, shoulder and sole landmarks normalised.
+- `keeper_souwester_walk_side` — costume headwear excluded; skull, shoulder and sole landmarks normalised.
+- `keeper_spaceman_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_spaceman_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_spaceman_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_tarzan_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_tarzan_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_tarzan_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_watch_movie` — seated anatomy normalised to the sit-side head and torso unit.
+- `keeper_watch_tv` — seated anatomy normalised to the sit-side head and torso unit.
+
+## Contact sheets
+
+- [keeper-scale-contact-01.png](../../docs/keeper-scale-audit/keeper-scale-contact-01.png)
+- [keeper-scale-contact-02.png](../../docs/keeper-scale-audit/keeper-scale-contact-02.png)
+- [keeper-scale-contact-03.png](../../docs/keeper-scale-audit/keeper-scale-contact-03.png)
+- [keeper-scale-contact-04.png](../../docs/keeper-scale-audit/keeper-scale-contact-04.png)
+- [keeper-scale-contact-05.png](../../docs/keeper-scale-audit/keeper-scale-contact-05.png)
+- [keeper-scale-contact-06.png](../../docs/keeper-scale-audit/keeper-scale-contact-06.png)
+- [keeper-scale-contact-07.png](../../docs/keeper-scale-audit/keeper-scale-contact-07.png)
+- [keeper-scale-contact-08.png](../../docs/keeper-scale-audit/keeper-scale-contact-08.png)
+
+The frame-by-frame numbers are in `keeper-scale-metrics.json`; the compact per-sheet register is `keeper-scale-summary.csv`. Both are regenerated by `python3 scripts/audit_keeper_scale.py`.

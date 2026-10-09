@@ -133,16 +133,21 @@ for j in range(1):
     if j%2:d.line((30,34+j*3,70,34+j*3),fill='#486582')
     d.point((80,56),fill='#cf4545' if j%2 else '#14243a');broken.append(im)
 export('obj_tv_broken',[28,23],broken,0,use=[14,0],effect=[8,-18],bubble=[0,-28])
-# Original shared overlays, authored on density-4 pixel grids. They attach per
-# asset and are not baked into each damaged-state image or duplicated per tier.
-smoke=[]
+# Original shared overlays attach per asset and are not baked into each damaged
+# state.  Frank rejected the former stack of identical circles; the new source
+# is one organic eight-frame curl, normalised at one fixed scale so the puff
+# actually grows and dissipates rather than being fitted independently.
+smoke_source=hard_alpha(Image.open(SOURCE/'broken-smoke-generated-source.png'))
+smoke_cells=[]
 for j in range(8):
-    im=Image.new('RGBA',(48,64));d=ImageDraw.Draw(im)
-    for k in range(3):
-        cy=(60-j*4-k*20)%64;cx=22+((j+k)%3-1)*3;r=5+k*2
-        d.ellipse((cx-r,cy-r,cx+r,cy+r),fill=['#667482','#8896a3','#aab5be'][k])
-        d.ellipse((cx-r+2,cy-r+2,cx+r-3,cy+r-3),fill=['#7f8d99','#a2adb7','#bcc5cc'][k])
-    smoke.append(hard_alpha(im))
+    x0=round(j*smoke_source.width/8);x1=round((j+1)*smoke_source.width/8)
+    cell=smoke_source.crop((x0,0,x1,smoke_source.height));bounds=cell.getchannel('A').getbbox();assert bounds
+    smoke_cells.append(cell.crop(bounds))
+scale=min(44/max(cell.width for cell in smoke_cells),60/max(cell.height for cell in smoke_cells))
+smoke=[]
+for cell in smoke_cells:
+    cell=cell.resize((max(1,round(cell.width*scale)),max(1,round(cell.height*scale))),Image.Resampling.LANCZOS)
+    im=Image.new('RGBA',(48,64));im.alpha_composite(cell,((48-cell.width)//2,63-cell.height));smoke.append(hard_alpha(im))
 export('fx_broken_smoke',[12,16],smoke,8,anchor=[6,16],z=95)
 sparks=[]
 for j in range(6):

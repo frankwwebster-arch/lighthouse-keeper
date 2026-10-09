@@ -15,7 +15,7 @@
       380,
       140
     ],
-    "sha256": "2fe683f833e49b8a10952110e2f51155768a58868a416135544ace65739fb6ec",
+    "sha256": "dad6f26dd313211767144d86b8b38fcbea69fa785c9fd619edbe7c178feb0889",
     "review_status": "pending Frank review"
   },
   "obj_tv_standard": {
@@ -46,7 +46,7 @@
       112,
       92
     ],
-    "sha256": "72712624e115825be6fdc7c7ab14152844cb5d4cf18103261e1af1f000bce564",
+    "sha256": "ab585ee2590e09f1eb4cb622680fd59dda52a0cef2e2dc6e1e46695f0ea2da19",
     "review_status": "pending Frank review"
   },
   "obj_tv_on": {
@@ -77,7 +77,7 @@
       448,
       92
     ],
-    "sha256": "d40a5028b43c0ee664e738c436e0a42e09bac581274f9707d1fa909f2de1df23",
+    "sha256": "6e61470f03c2cfa76ebdf4241a3480b6b8ceaa83de34526e046e98605cde0bf3",
     "review_status": "pending Frank review"
   },
   "obj_tv_channel_news_on": {
@@ -108,7 +108,7 @@
       448,
       92
     ],
-    "sha256": "d40a5028b43c0ee664e738c436e0a42e09bac581274f9707d1fa909f2de1df23",
+    "sha256": "6e61470f03c2cfa76ebdf4241a3480b6b8ceaa83de34526e046e98605cde0bf3",
     "review_status": "pending Frank review"
   },
   "obj_tv_channel_sport_on": {
@@ -139,7 +139,7 @@
       448,
       92
     ],
-    "sha256": "d04f936611343e63e8a5cb79c491841880a9bb8dbaa943f38a7304d4791143a0",
+    "sha256": "f90a7584bc96f7df6feac0b906722b1cdc1bbd23ca188279c48bd53e0460c113",
     "review_status": "pending Frank review"
   },
   "obj_tv_channel_nature_on": {
@@ -170,7 +170,7 @@
       448,
       92
     ],
-    "sha256": "812e127bee7fad32ada79d427ff9ea892120535d4bd584f397c7370911015bb6",
+    "sha256": "b75b5779b3371638bf7f41260da72089a92ac9414aa5f8e288282660f0f702ab",
     "review_status": "pending Frank review"
   },
   "obj_tv_broken": {
@@ -201,7 +201,7 @@
       112,
       92
     ],
-    "sha256": "bcfe38299e30b3b6500562cb2e731145b9eaa7234a3a1a759acead97f89362a7",
+    "sha256": "a65e71124bd887f7ccb9a85934bf07a47c0fbc2c146710e21e155933e650d771",
     "review_status": "pending Frank review"
   },
   "fx_broken_smoke": {
@@ -220,7 +220,7 @@
       384,
       64
     ],
-    "sha256": "bffa2fea03178d871314999978d7ccbf743107c751c0ddce88c7142f0b3952da",
+    "sha256": "ff892d9fd096467f7c5428c64e0b3ab3e09017e4eb08d4a0ecaab5d905be9e94",
     "review_status": "pending Frank review"
   },
   "fx_broken_sparks": {
@@ -239,7 +239,7 @@
       288,
       48
     ],
-    "sha256": "69e92741d0996e84cfd1f8b85537cd49100c605b962def6ad2c6f23e6ad5086a",
+    "sha256": "8f7373c57c96a490fa99928c1d11234f0f3d361cae49efa954f123a946e838fd",
     "review_status": "pending Frank review"
   }
 }

@@ -1,6 +1,6 @@
 # Frank’s floor and asset review
 
-Open **[review.html](review.html)**. This self-contained review canvas works without a server or network connection. It contains 71 documented spaces/variants, searchable design cards and diagrams, a 1,559-row CSV-style catalogue, mechanical tier proposals, required states, production thumbnails and annotation tools.
+Open **[review.html](review.html)**. This self-contained review canvas works without a server or network connection. It contains 71 documented spaces/variants, searchable design cards and diagrams, a 1,576-row CSV-style catalogue, mechanical tier proposals, required states, production thumbnails and annotation tools.
 
 Native Codex Canvas publishing is unavailable in this session. This is a durable standalone HTML review artifact, not a claimed native Canvas publication. It can be imported or published there when that capability is available.
 
@@ -16,7 +16,7 @@ Pixel studio lets Frank adjust pixel block size, paint or erase individual frame
 
 BB Sea news literally reads `B B SEA`, adapted from the supplied BBC NEWS reference, followed by NEWS lettering and a tiny newsreader head. Sport shows football; Nature shows animals. Four ON frames are one animated state, not four asset variants. Broken TV uses one damaged image plus shared smoke/sparks and existing body vibration. Channel selection reuses existing watch/nature actions; no new gameplay effect is claimed. The production guide now requires ON only for operating devices; passive furniture remains standard and is designed around keeper poses.
 
-The Completed assets and Pixel studio tabs contain 167 aligned keeper exports. The expanded set covers tea/coffee preparation and drinking, boat entry/exit, explicit spiral-stair ascent/descent, sad, hungry, bored and cross reactions, rear toilet sickness, bathrobe walking and shower entry, fish-tank care, reading/writing, workbench and craft actions, meals plus cake/plated-meal carry and placement sequences, games, exercise, bathing/showering with explicit privacy coverage, fishing, watering, travel, and canonical side/rear/front walks for knight, spaceman, pirate, Tarzan, Halloween and mechanic outfits, alongside the earlier domestic, adventure, garden, boat, performance, bedtime, swimming and weather clips. Search `keeper_` to isolate them. The large turnaround is a style reference; normal runtime strips are 32 × 40 at density 4, spiral stair and boat-entry travel use 40 × 48 or 48 × 48, wider held-prop actions use 40 × 40 or 48 × 40, horizontal swimming uses 64 × 48, press-ups use 64 × 40, overhead weights use 48 × 56, and vertical floating/swimming remains 48 × 48 without changing the keeper's scale.
+The Completed assets and Pixel studio tabs contain the 149 accepted keeper animation sheets. Eighteen obsolete modular/reference sheets remain technical history but are intentionally absent, along with Frank's other explicitly deleted review images. All 1,186 frames are measured in `../keeper-scale-audit/`; those fixed-scale contact sheets, rather than outer silhouette size, are the review authority. Normal runtime strips are 32 × 40 at density 4, while larger canvases provide transparent clearance for travel, horizontal poses, tools or headwear without changing the keeper.
 
 The production walk is an eight-frame right-facing side cycle at 10 fps. The
 runtime mirrors it for left-facing movement. `keeper-walk-preview.gif` is an
@@ -49,7 +49,7 @@ enough to keep the screen visible. See `../KEEPER_ANIMATIONS.md` for the index a
 Frank’s later directions supersede earlier coarse one-source-pixel exports:
 
 1. The original `style_b_pixel/obj_tv_{standard,on,broken}_ai.png` images establish the correct CRT style. The original casing is now reused as the production master, preserving aspect ratio, feet, aerial and cabinet across every state. No wide-screen stretching.
-2. The lamp room is an **inset glazed iron lantern chamber with a wraparound outside walkway**, matching `art/background/lighthouse_master_day_pixel.png`. It is not a full-width timber domestic room. The existing renderer’s 95 × 35 logical glass footprint is retained; ordinary standard floors remain 110 × 35 with 105 × 35 plates. Lamp stays topmost; bedroom stays directly beneath it.
+2. The lamp room is an **inset glazed iron lantern chamber with a wraparound outside walkway** and a visible centred Fresnel optic, lamp and machinery base behind clear glazing. It is not a full-width timber domestic room. The existing renderer’s 95 × 35 logical glass footprint is retained; ordinary standard floors remain 110 × 35 with 105 × 35 plates. Lamp stays topmost; bedroom stays directly beneath it.
 3. Operating devices at every upgrade level require **standard + ON + broken** where fault behaviour applies. Tables, chairs and passive furniture do not need artificial ON frames; they use standard art plus an actor-layer occupied/seated pose when useful. The shop is proprietor-owned and has no keeper-repair broken state. Decorative noninteractive dressing does not acquire arbitrary upgrades.
 4. Sharp detail is retained with **density 4**: a 28 × 23 logical TV uses a 112 × 92 source frame; its display footprint stays 112 × 92 CSS px at the existing logical 4× scale. A 95 × 35 lamp surround uses 380 × 140 source pixels. No fractional object positioning or raster rotation is introduced. Legacy density-1 deliveries continue unchanged.
 5. Coarse exports and the full-width lamp study are rejected and retained outside `art/raw/`. Their presence is provenance, never approval or runtime readiness.
@@ -76,10 +76,12 @@ New assets are delivery candidates pending Frank’s review. The remaining space
 | Pipeline extension | `scripts/sprites.ts` |
 | Production art style guide | [ART_STYLE_GUIDE.md](ART_STYLE_GUIDE.md) |
 | Asset-only integration handoff | `HANDOFF.md` |
+| All-sheet keeper scale audit | `../keeper-scale-audit/` |
+| Keeper-derived object dimensions | `../../data/keeper_object_dimensions.json` |
 
 ## Rebuild and verification
 
-From `/workspace/lighthouse-keeper` with Node 24 and Python/Pillow (validated with Pillow 12.3):
+From the repository root with Node 24 and Python/Pillow (validated with Pillow 12.3):
 
 ```sh
 # Only after changing the authored Python space/profile definitions:

@@ -1,7 +1,8 @@
 {
-  "version": 2,
+  "version": 3,
   "status": "authoritative",
   "units": "logical-pixels",
+  "derivedObjectDataset": "data/keeper_object_dimensions.json",
   "coordinateSystem": {
     "origin": "top-left",
     "xPositive": "right",
@@ -28,11 +29,40 @@
     "extendedOverheadExercise": { "width": 48, "height": 56, "density": 4, "anchor": [24, 56] }
   },
   "measuredReference": {
-    "source": "public/sprites/keeper_reference.png",
-    "visibleBoundsAtDensity4": [15, 4, 114, 157],
-    "visibleBoundsLogical": [3.75, 1, 28.5, 39.25],
-    "visibleWidth": 24.75,
-    "visibleHeight": 38.25
+    "source": "public/sprites/keeper_walk.png",
+    "sourceFrameRange": [0, 7],
+    "authority": "approved side-walk keeper identity",
+    "density": 4,
+    "alphaBoundsHeightRange": [36.5, 38],
+    "inferredSkullTopToSole": 32.5,
+    "normalCapTopToSoleRange": [36.5, 38],
+    "sideCoreDepthAtTorso": 13,
+    "sideHeadWidth": 14.5
+  },
+  "canonicalAnatomy": {
+    "skullTopHeightAboveFloor": 32.5,
+    "eyeLineHeightAboveFloor": 28.5,
+    "shoulderHeightAboveFloor": 24.5,
+    "hipHeightAboveFloor": 14.5,
+    "seatContactHeightAboveFloor": 11,
+    "sideCoreDepth": 13,
+    "frontBackCoreWidth": 19,
+    "headWidth": 14.5,
+    "handDiameter": 4,
+    "bootLength": 8,
+    "tolerance": {
+      "anatomicalLandmark": 0.5,
+      "coreWidth": 1,
+      "poseContact": 0.5
+    }
+  },
+  "measurementPolicy": {
+    "upright": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
+    "seatedCrouched": "head unit plus articulated shoulder-hip-sole chain; compressed silhouette height is never used as scale",
+    "horizontalSwimmingExercise": "head unit plus articulated skull-hip-sole chain measured along the body axis",
+    "costume": "infer skull under headwear from face, ear and neck landmarks; costume bulk is excluded from core width",
+    "rearView": "infer skull from cap band or hair crown and use shoulder/hip/sole landmarks",
+    "rule": "One uniform scale is applied to the whole frame sequence. Never fit the keeper to the canvas or to a prop. Increase transparent canvas space instead."
   },
   "rigPivots": {
     "neck": [16, 11],
@@ -81,8 +111,8 @@
     "carryCakeLeft": { "clip": "keeper_carry_cake", "handUsePoint": [14, 20], "carryOffsetFromFeet": [-10, -20], "mirroredFrom": "carryCakeRight" },
     "carryMealRight": { "clip": "keeper_carry_meal", "handUsePoint": [34, 20], "carryOffsetFromFeet": [10, -20], "mirrorFor": "carryMealLeft" },
     "carryMealLeft": { "clip": "keeper_carry_meal", "handUsePoint": [14, 20], "carryOffsetFromFeet": [-10, -20], "mirroredFrom": "carryMealRight" },
-    "placeCakeRight": { "clip": "keeper_place_cake", "handUsePoint": [39, 28], "surfaceOffsetFromFeet": [15, -12], "mirrorFor": "placeCakeLeft" },
-    "placeCakeLeft": { "clip": "keeper_place_cake", "handUsePoint": [9, 28], "surfaceOffsetFromFeet": [-15, -12], "mirroredFrom": "placeCakeRight" },
+    "placeCakeRight": { "clip": "keeper_place_cake", "handUsePoint": [39, 21], "surfaceOffsetFromFeet": [15, -19], "mirrorFor": "placeCakeLeft" },
+    "placeCakeLeft": { "clip": "keeper_place_cake", "handUsePoint": [9, 21], "surfaceOffsetFromFeet": [-15, -19], "mirroredFrom": "placeCakeRight" },
     "fishFeedHighRight": { "clip": "keeper_fish_feed_up", "handUsePoint": [26, 7], "offsetFromFeet": [10, -41], "mirrorFor": "fishFeedHighLeft" },
     "aquariumBrushRight": { "clip": "keeper_aquarium_brush", "handUsePoint": [34, 17], "offsetFromFeet": [14, -23], "mirrorFor": "aquariumBrushLeft" },
     "aquariumNetRight": { "clip": "keeper_aquarium_net", "handUsePoint": [34, 21], "offsetFromFeet": [14, -19], "mirrorFor": "aquariumNetLeft" },
@@ -91,7 +121,7 @@
     "telescopeRight": { "clip": "keeper_telescope", "handUsePoint": [38, 17], "lookTargetPoint": [48, 12], "mirrorFor": "telescopeLeft" },
     "turntableRight": { "clip": "keeper_put_record", "handUsePoint": [34, 27], "surfaceOffsetFromFeet": [14, -13], "mirrorFor": "turntableLeft" },
     "potteryFront": { "clip": "keeper_pottery_front", "seatPoint": [20, 29], "handUsePoint": [20, 23] },
-    "mealTableRight": { "clip": "keeper_meal_place_side", "handUsePoint": [39, 28], "surfaceOffsetFromFeet": [15, -12], "mirrorFor": "mealTableLeft" },
+    "mealTableRight": { "clip": "keeper_meal_place_side", "handUsePoint": [39, 21], "surfaceOffsetFromFeet": [15, -19], "mirrorFor": "mealTableLeft" },
     "videoGameRight": { "clip": "keeper_video_game", "seatPoint": [24, 29], "handUsePoint": [24, 21], "lookTargetPoint": [56, 14], "mirrorFor": "videoGameLeft" },
     "waterPlantsRight": { "clip": "keeper_water_plants_side", "handUsePoint": [35, 31], "offsetFromFeet": [15, -9], "mirrorFor": "waterPlantsLeft" },
     "fishingStandingRight": { "clip": "keeper_fish_standing", "handUsePoint": [42, 16], "mirrorFor": "fishingStandingLeft" },
@@ -144,7 +174,7 @@
     "writingSurfaceHeightAboveFloor": 19,
     "turntablePlatterHeightAboveFloor": 13,
     "potteryHandHeightAboveFloor": 17,
-    "mealTableSurfaceHeightAboveFloor": 12,
+    "mealTableSurfaceHeightAboveFloor": 19,
     "wateringTargetHeightAboveFloor": 9,
     "instrumentControlHeightAboveFloor": 23,
     "liftButtonHeightAboveFloor": 23,

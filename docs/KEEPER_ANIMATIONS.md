@@ -11,7 +11,8 @@ to infer meaning from filenames or Git history.
 | Put it in the game | `public/sprites/keeper_*.png` via `public/sprites/manifest.json` |
 | Rebuild or adjust it | `art/source/keeper-first-batch/author_keeper.py` and the matching `*-generated-source.png` |
 | Check exact frames, speed and alignment | matching JSON in `art/raw/keeper-first-batch/` |
-| Build an object at the right size/height | `docs/KEEPER_ASSET_SCALE.md` and `data/keeper_asset_contract.json` |
+| Build an object at the right size/height | `docs/KEEPER_OBJECT_DIMENSIONS.md`, `data/keeper_object_dimensions.json` and `data/keeper_asset_contract.json` |
+| Inspect the all-sheet scale evidence | `docs/keeper-scale-audit/README.md` and its fixed-scale contact sheets |
 
 Folders named `replaced-*` are history only. Never use those in the game.
 
@@ -95,7 +96,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Take cake from oven | `keeper_cake_from_oven_back` | direct rear one-shot; oven/rack separate; mitts, tray and cake included |
 | Turn carrying cake | `keeper_cake_turn_right` | rear-to-right one-shot; mirror for rear-to-left |
 | Walk carrying cake | `keeper_carry_cake` | right; mirror left; mitts, tray and cake included; connects from cake turn |
-| Place cake on table | `keeper_place_cake` | right; mirror left; lowers and releases tray, then straightens fully; table separate |
+| Place cake on table | `keeper_place_cake` | right; mirror left; places at the standard 19 px table datum, releases tray, then straightens fully; table separate |
 | Feed fish overhead | `keeper_fish_feed_up` | right; mirror left; aligns to high tank opening |
 | Brush aquarium glass | `keeper_aquarium_brush` | right; mirror left; dry algae brush included, tank separate |
 | Net aquarium fish | `keeper_aquarium_net` | right; mirror left; net and caught fish included |
@@ -112,7 +113,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Search boxes | `keeper_search_boxes` | low rear rummage; final arms reach forward into the unseen box; boxes separate |
 | Retrieve meal from oven | `keeper_meal_from_oven_back` | rear one-shot; plate/meal included, oven separate |
 | Walk carrying plated meal | `keeper_carry_meal` | right; mirror left; mitts, plate and meal included |
-| Place meal on table | `keeper_meal_place_side` | right; mirror left; lowers and releases plate, then straightens fully; table separate |
+| Place meal on table | `keeper_meal_place_side` | right; mirror left; places at the standard 19 px table datum, releases plate, then straightens fully; table separate |
 | Count money | `keeper_count_money` | seated front; notes and coins included |
 | Play snooker | `keeper_snooker` | right; mirror left; cue included, table/balls separate |
 | Play table tennis | `keeper_table_tennis` | right; mirror left; paddle/ball included, table separate |
@@ -141,7 +142,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Water plants | `keeper_water_plants_side` / `keeper_water_plants_back` / `keeper_water_plants_front` | side mirrors left; can/stream included, plants separate |
 | Fish standing | `keeper_fish_standing` | right; mirror left; rod, line and catch included |
 | Fish seated | `keeper_fish_seated` | right; mirror left; seat/water separate |
-| Collect eggs | `keeper_collect_eggs_back` | low rear crouch; basket/egg included, coop separate |
+| Collect eggs | `keeper_collect_eggs_back` | canonical low rear work loop; basket, eggs and coop are separate aligned objects |
 | Enter / wash / exit bath | `keeper_bath_enter`, `keeper_bath_wash`, `keeper_bath_exit` | entry/exit towel; wash has opaque mosaic/foam privacy coverage; bath separate |
 | Enter / wash / exit shower | `keeper_shower_enter`, `keeper_shower_wash`, `keeper_shower_exit` | entry/exit towel; wash has opaque mosaic privacy coverage; shower separate |
 | Walk as knight | `keeper_knight_walk_side/back/front` | side mirrors left; three-view canonical movement |

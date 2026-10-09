@@ -187,7 +187,7 @@ def side_walk(step=0):
     return im
 
 
-def generated_frames(filename, expected, fallback=None, logical_width=32, logical_height=40, scale_reference_index=None, force_equal_cells=False, preserve_equal_cells=False, group_equal_components=False, min_component_pixels=1000):
+def generated_frames(filename, expected, fallback=None, logical_width=32, logical_height=40, scale_reference_index=None, force_equal_cells=False, preserve_equal_cells=False, group_equal_components=False, min_component_pixels=1000, scale_multiplier=1.0, horizontal_scale=1.0):
     """Normalise an identity-locked generated source onto aligned contract slots."""
     source = Path(__file__).with_name(filename)
     if not source.exists():
@@ -345,7 +345,7 @@ def generated_frames(filename, expected, fallback=None, logical_width=32, logica
         height_scale = min(height_scale, 152 / (reference_y1 - reference_y0))
     elif logical_height == 40:
         height_scale = 152 / tallest
-    scale = min(height_scale, (target_width - 8) / widest)
+    scale = min(height_scale, (target_width - 8) / widest) * scale_multiplier
     frames = []
     for pose_index, box in enumerate(bounds):
         pose = sheet.crop(box)
@@ -356,7 +356,12 @@ def generated_frames(filename, expected, fallback=None, logical_width=32, logica
                 y, x = divmod(index, sheet.width)
                 component_alpha[(y - y0) * (x1 - x0) + x - x0] = 255
             pose.putalpha(Image.frombytes("L", pose.size, bytes(component_alpha)))
-        size = (max(1, round(pose.width * scale)), max(1, round(pose.height * scale)))
+        size = (max(1, round(pose.width * scale * horizontal_scale)), max(1, round(pose.height * scale)))
+        if size[0] > target_width or size[1] > target_height:
+            raise ValueError(
+                f"Canonical anatomy for {filename} needs {size[0]}x{size[1]} px "
+                f"but its {logical_width}x{logical_height} logical canvas is too small"
+            )
         pose = pose.resize(size, Image.Resampling.LANCZOS)
         # The game contract requires hard alpha even when a generated edge has a fringe.
         a = pose.getchannel("A").point(lambda value: 255 if value >= 128 else 0)
@@ -466,10 +471,10 @@ walk_frames = generated_frames("keeper-walk-generated-source.png", 8, [side_walk
 turn_frames = generated_frames("keeper-turn-back-generated-source.png", 6)
 work_frames = generated_frames("keeper-work-back-generated-source.png", 8)
 sit_side_frames = generated_frames("keeper-sit-side-generated-source.png", 6)
-sit_front_frames = generated_frames("keeper-sit-front-generated-source.png", 6)
-piano_frames = generated_frames("keeper-piano-generated-source.png", 8)
+sit_front_frames = generated_frames("keeper-sit-front-generated-source.png", 6, horizontal_scale=0.88)
+piano_frames = generated_frames("keeper-piano-generated-source.png", 8, scale_multiplier=0.90)
 urinate_frames = generated_frames("keeper-loo-stand-generated-source.png", 6)
-eat_seated_frames = generated_frames("keeper-eat-seated-generated-source.png", 8)
+eat_seated_frames = generated_frames("keeper-eat-seated-generated-source.png", 8, scale_multiplier=0.90)
 door_side_frames = generated_frames("keeper-door-side-generated-source.png", 6)
 door_back_frames = generated_frames("keeper-door-back-generated-source.png", 6)
 ladder_frames = generated_frames("keeper-ladder-generated-source.png", 8)
@@ -485,10 +490,10 @@ sow_seeds_frames = generated_frames("keeper-sow-seeds-generated-source.png", 8)
 pick_vegetable_frames = generated_frames("keeper-pick-vegetable-generated-source.png", 8)
 pick_fruit_frames = generated_frames("keeper-pick-fruit-generated-source.png", 8)
 carry_shopping_frames = generated_frames("keeper-carry-shopping-generated-source.png", 8)
-row_boat_frames = generated_frames("keeper-row-boat-generated-source.png", 8, logical_width=40)
-drive_speedboat_frames = generated_frames("keeper-drive-speedboat-generated-source.png", 8)
+row_boat_frames = generated_frames("keeper-row-boat-generated-source.png", 8, logical_width=40, scale_multiplier=0.90)
+drive_speedboat_frames = generated_frames("keeper-drive-speedboat-generated-source.png", 8, scale_multiplier=0.90)
 operate_outboard_frames = generated_frames("keeper-operate-outboard-generated-source.png", 8)
-watch_tv_frames = generated_frames("keeper-watch-tv-generated-source.png", 8)
+watch_tv_frames = generated_frames("keeper-watch-tv-generated-source.png", 8, scale_multiplier=0.90)
 weld_frames = generated_frames("keeper-weld-generated-source.png", 8)
 saw_wood_frames = generated_frames("keeper-saw-wood-generated-source.png", 8, logical_width=40, force_equal_cells=True)
 wave_camera_frames = generated_frames("keeper-wave-generated-source.png", 8)
@@ -502,18 +507,18 @@ swim_costume_up_frames = generated_frames("keeper-swim-costume-up-generated-sour
 swim_costume_down_frames = generated_frames("keeper-swim-costume-down-generated-source.png", 8, logical_width=48, logical_height=48)
 scuba_horizontal_frames = generated_frames("keeper-scuba-horizontal-generated-source.png", 8, logical_width=64, logical_height=48)
 scuba_up_frames = generated_frames("keeper-scuba-up-generated-source.png", 8, logical_width=48, logical_height=48)
-scuba_down_frames = generated_frames("keeper-scuba-down-generated-source.png", 8, logical_width=48, logical_height=48)
+scuba_down_frames = generated_frames("keeper-scuba-down-generated-source.png", 8, logical_width=48, logical_height=48, force_equal_cells=True)
 party_idle_frames = generated_frames("keeper-party-idle-generated-source.png", 4, logical_height=48)
 party_walk_frames = generated_frames("keeper-party-walk-generated-source.png", 8, logical_height=48)
 party_turn_back_frames = generated_frames("keeper-party-turn-back-generated-source.png", 6, logical_height=48)
-souwester_side_frames = generated_frames("keeper-souwester-walk-side-generated-source.png", 8, logical_height=48)
-souwester_back_frames = generated_frames("keeper-souwester-walk-back-generated-source.png", 8, logical_height=48)
-souwester_front_frames = generated_frames("keeper-souwester-walk-front-generated-source.png", 8, logical_height=48)
+souwester_side_frames = generated_frames("keeper-souwester-walk-side-generated-source.png", 8, logical_height=48, scale_multiplier=0.86)
+souwester_back_frames = generated_frames("keeper-souwester-walk-back-generated-source.png", 8, logical_height=48, scale_multiplier=0.86)
+souwester_front_frames = generated_frames("keeper-souwester-walk-front-generated-source.png", 8, logical_height=48, scale_multiplier=0.86)
 dance_frames = generated_frames("keeper-dance-generated-source.png", 8)
 play_guitar_frames = generated_frames("keeper-play-guitar-generated-source.png", 8, logical_width=48)
-play_drums_front_frames = generated_frames("keeper-play-drums-front-generated-source.png", 8, logical_height=48)
-play_drums_back_frames = generated_frames("keeper-play-drums-back-generated-source.png", 8, logical_height=48)
-watch_movie_frames = generated_frames("keeper-watch-movie-generated-source.png", 8, logical_width=48)
+play_drums_front_frames = generated_frames("keeper-play-drums-front-generated-source.png", 8, logical_height=48, scale_multiplier=0.90)
+play_drums_back_frames = generated_frames("keeper-play-drums-back-generated-source.png", 8, logical_height=48, scale_multiplier=0.90)
+watch_movie_frames = generated_frames("keeper-watch-movie-generated-source.png", 8, logical_width=48, scale_multiplier=0.90)
 clear_snow_frames = generated_frames("keeper-clear-snow-generated-source.png", 8, logical_width=48)
 crouch_work_back_frames = generated_frames("keeper-crouch-work-back-generated-source.png", 8)
 cake_from_oven_back_frames = generated_frames("keeper-cake-from-oven-back-generated-source.png", 8, logical_width=48)
@@ -521,6 +526,7 @@ cake_turn_right_frames = generated_frames("keeper-cake-turn-right-generated-sour
 carry_cake_frames = generated_frames("keeper-carry-cake-generated-source.png", 8, logical_width=48)
 carry_meal_frames = generated_frames("keeper-carry-meal-generated-source.png", 8, logical_width=48)
 place_cake_frames = generated_frames("keeper-place-cake-generated-source.png", 8, logical_width=48, preserve_equal_cells=True)
+place_cake_frames = [remove_small_alpha_components(frame) for frame in place_cake_frames]
 save("keeper_walk", walk_frames, 10, mirror_safe=True)
 save("keeper_turn_back", turn_frames, 8, loop=False, reverse_for="turn_front")
 save("keeper_work_back", work_frames, 8, hand_use_point=[16, 21])
@@ -582,7 +588,7 @@ save("keeper_cake_from_oven_back", cake_from_oven_back_frames, 8, loop=False, ha
 save("keeper_cake_turn_right", cake_turn_right_frames, 8, loop=False, hand_use_point=[34, 20], mirror_safe=True, facing="back-to-right", interaction="turn-carry-cake", mirrors_for="back-to-left")
 save("keeper_carry_cake", carry_cake_frames, 10, hand_use_point=[34, 20], mirror_safe=True, facing="right", interaction="walk-carry-cake", mirrors_for="left")
 save("keeper_carry_meal", carry_meal_frames, 10, hand_use_point=[34, 20], mirror_safe=True, facing="right", interaction="walk-carry-meal", mirrors_for="left")
-save("keeper_place_cake", place_cake_frames, 8, loop=False, hand_use_point=[39, 28], mirror_safe=True, facing="right", interaction="place-cake-on-table", mirrors_for="left")
+save("keeper_place_cake", place_cake_frames, 8, loop=False, hand_use_point=[39, 21], mirror_safe=True, facing="right", interaction="place-cake-on-table", mirrors_for="left")
 
 # A transparent source contact sheet makes alignment mistakes easy to spot.
 contact = Image.new("RGBA", (W * 4, H * 2), (244, 236, 214, 255))
@@ -682,9 +688,9 @@ ADDITIONAL_CLIPS = [
     ("keeper_paint_side", "keeper-paint-side-generated-source.png", 40, 40, dict(hand_use_point=[34, 17], outfit="artist-smock", facing="right", interaction="paint", mirror_safe=True, mirrors_for="left")),
     ("keeper_paint_back", "keeper-paint-back-generated-source.png", 32, 40, dict(hand_use_point=[16, 17], outfit="artist-smock", facing="back", interaction="paint")),
     ("keeper_pottery_front", "keeper-pottery-front-generated-source.png", 40, 40, dict(seat_point=[20, 29], hand_use_point=[20, 23], outfit="artist-smock", facing="front", interaction="pottery-wheel")),
-    ("keeper_search_boxes", "keeper-search-boxes-generated-source.png", 32, 40, dict(hand_use_point=[16, 36], facing="back", interaction="search-boxes")),
+    ("keeper_search_boxes", "keeper-search-boxes-generated-source.png", 32, 40, dict(hand_use_point=[16, 38], facing="back", interaction="search-boxes")),
     ("keeper_meal_from_oven_back", "keeper-meal-oven-back-generated-source.png", 48, 40, dict(hand_use_point=[24, 30], facing="back", interaction="retrieve-meal-from-oven", loop=False)),
-    ("keeper_meal_place_side", "keeper-meal-place-side-generated-source.png", 48, 40, dict(hand_use_point=[39, 28], facing="right", interaction="place-meal-on-table", loop=False, mirror_safe=True, mirrors_for="left")),
+    ("keeper_meal_place_side", "keeper-meal-place-side-generated-source.png", 48, 40, dict(hand_use_point=[39, 21], facing="right", interaction="place-meal-on-table", loop=False, mirror_safe=True, mirrors_for="left")),
     ("keeper_count_money", "keeper-count-money-generated-source.png", 40, 40, dict(seat_point=[20, 29], hand_use_point=[20, 21], facing="front", interaction="count-money")),
     ("keeper_snooker", "keeper-snooker-generated-source.png", 48, 40, dict(hand_use_point=[43, 25], facing="right", interaction="play-snooker", mirror_safe=True, mirrors_for="left")),
     ("keeper_table_tennis", "keeper-table-tennis-generated-source.png", 40, 40, dict(hand_use_point=[34, 20], facing="right", interaction="play-table-tennis", mirror_safe=True, mirrors_for="left")),
@@ -717,7 +723,7 @@ ADDITIONAL_CLIPS = [
     ("keeper_water_plants_front", "keeper-water-front-generated-source.png", 40, 40, dict(hand_use_point=[20, 31], facing="front", interaction="water-plants")),
     ("keeper_fish_standing", "keeper-fish-stand-generated-source.png", 48, 40, dict(hand_use_point=[42, 16], facing="right", interaction="fish-and-reel", mirror_safe=True, mirrors_for="left")),
     ("keeper_fish_seated", "keeper-fish-sit-generated-source.png", 48, 40, dict(seat_point=[24, 29], hand_use_point=[42, 17], facing="right", interaction="fish-and-reel", mirror_safe=True, mirrors_for="left")),
-    ("keeper_collect_eggs_back", "keeper-collect-eggs-generated-source.png", 40, 40, dict(hand_use_point=[20, 36], facing="back", interaction="collect-eggs")),
+    ("keeper_collect_eggs_back", "keeper-collect-eggs-generated-source.png", 32, 40, dict(hand_use_point=[16, 38], facing="back", interaction="collect-eggs")),
     ("keeper_bath_enter", "keeper-bath-enter-generated-source.png", 40, 40, dict(facing="right", interaction="enter-bath", outfit="towel-privacy", loop=False, reverse_for="bath-exit", mirror_safe=True, mirrors_for="left")),
     ("keeper_bath_wash", "keeper-bath-wash-generated-source.png", 40, 40, dict(seat_point=[20, 29], facing="front", interaction="wash-in-bath", outfit="mosaic-privacy")),
     ("keeper_bath_exit", "keeper-bath-exit-generated-source.png", 40, 40, dict(facing="right", interaction="exit-bath", outfit="towel-privacy", loop=False, mirror_safe=True, mirrors_for="left")),
@@ -736,7 +742,30 @@ ADDITIONAL_CLIPS.append(("keeper_mechanic_fix", "keeper-mechanic-fix-generated-s
 
 for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONAL_CLIPS:
     frame_count = 10 if clip_name == "keeper_hot_drink_pour" else 8
-    if clip_name == "keeper_boat_enter":
+    # These values are anatomy scale, never "fit to available canvas".  Most
+    # seated generated sheets started ten percent larger than the canonical
+    # sit transition.  The bath was redrawn against canonical references; the
+    # water-hidden hot-tub figure still needs an explicit visible-head scale so
+    # its missing lower body cannot enlarge the keeper.
+    costume_family_scale = next((scale for prefix, scale in {
+        "keeper_knight_walk_": 0.92,
+        "keeper_spaceman_walk_": 0.84,
+        "keeper_pirate_walk_": 0.86,
+        "keeper_tarzan_walk_": 0.73,
+        "keeper_halloween_walk_": 0.76,
+        "keeper_mechanic_walk_": 0.83,
+    }.items() if clip_name.startswith(prefix)), None)
+    anatomy_scale = {
+        "keeper_bath_wash": 0.90,
+        "keeper_hot_tub": 0.65,
+    }.get(clip_name, costume_family_scale if costume_family_scale is not None else (0.90 if "seat_point" in metadata else 1.0))
+    if clip_name in {"keeper_search_boxes", "keeper_collect_eggs_back"}:
+        # Both actions are object-specific uses of the canonical low rear work
+        # loop. Boxes, basket and eggs belong to world objects, not the actor;
+        # reusing these frames prevents the older crouch sheets from making the
+        # keeper wider merely because the pose is shorter.
+        frames = [frame.copy() for frame in crouch_work_back_frames]
+    elif clip_name == "keeper_boat_enter":
         # The 48 px canvas provides room for the climb; it must not enlarge the
         # keeper beyond the canonical 38 px standing height.
         frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, scale_reference_index=0)
@@ -745,20 +774,22 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
     elif clip_name.startswith("keeper_hot_drink_"):
         # Keep the kettle, mug, spoon, liquid and steam in fixed equal cells,
         # including frames where the mug has detached from the keeper's hand.
-        frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, group_equal_components=clip_name == "keeper_hot_drink_pour", preserve_equal_cells=clip_name != "keeper_hot_drink_pour")
+        frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, group_equal_components=clip_name == "keeper_hot_drink_pour", preserve_equal_cells=clip_name != "keeper_hot_drink_pour", scale_multiplier=anatomy_scale)
     elif clip_name == "keeper_meal_place_side":
         # After release, the plated meal is detached from the keeper but must
         # remain in the actor strip until the world object takes over.
-        frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True)
+        frames = generated_frames(source_name, 8, logical_width=logical_width, logical_height=logical_height, preserve_equal_cells=True, scale_multiplier=anatomy_scale)
         frames = [remove_small_alpha_components(frame) for frame in frames]
     else:
         try:
-            frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height)
+            frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, scale_multiplier=anatomy_scale)
         except ValueError:
             # A few prop-heavy strips bridge adjacent x-runs.  Their prompts use
             # explicit equal cells; isolate the principal figure inside each cell
             # so a neighbour's overlapping prop cannot leak into the frame.
-            frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, force_equal_cells=True)
+            frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, force_equal_cells=True, scale_multiplier=anatomy_scale)
+    if clip_name in {"keeper_bath_wash", "keeper_hot_tub"}:
+        frames = [remove_small_alpha_components(frame, min_pixels=80) for frame in frames]
     if clip_name == "keeper_put_record":
         # The source's two middle poses touch by a few pixels.  The usable
         # figure begins well inside the cell; clear only that neighbour fringe.

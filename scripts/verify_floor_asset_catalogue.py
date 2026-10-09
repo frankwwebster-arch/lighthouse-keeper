@@ -281,7 +281,7 @@ for name,interaction in [('keeper_carry_cake','walk-carry-cake'),('keeper_carry_
     assert manifest[name]['handUsePoint']==[34,20] and manifest[name]['mirrorSafe'] is True
     assert manifest[name]['mirrorsFor']=='left' and manifest[name]['interaction']==interaction
 assert manifest['keeper_place_cake']['w']==48 and manifest['keeper_place_cake']['loop'] is False
-assert manifest['keeper_place_cake']['handUsePoint']==[39,28]
+assert manifest['keeper_place_cake']['handUsePoint']==[39,21]
 assert manifest['keeper_place_cake']['mirrorSafe'] is True and manifest['keeper_place_cake']['mirrorsFor']=='left'
 for name in ['keeper_trampoline_front','keeper_lift_weights_back','keeper_pressups_side']:
     assert manifest[name]['outfit']=='old-school-workout-kit'
@@ -321,7 +321,8 @@ for outfit in ['knight','spaceman','pirate','tarzan','halloween','mechanic']:
         assert clip['outfit']==outfit and clip['h']==48 and clip['frames']==8
     assert manifest[f'keeper_{outfit}_walk_side']['mirrorSafe'] is True
 asset_contract=json.loads((root/'data/keeper_asset_contract.json').read_text())
-assert asset_contract['version']==2 and asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
+assert asset_contract['version']==3 and asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
+assert asset_contract['derivedObjectDataset']=='data/keeper_object_dimensions.json'
 assert asset_contract['canvas']['standard']=={'width':32,'height':40,'density':4,'anchor':[16,40]}
 assert asset_contract['canvas']['extendedAirborne']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
 assert asset_contract['canvas']['extendedVerticalDive']=={'width':48,'height':56,'density':4,'anchor':[24,56]}
@@ -340,7 +341,8 @@ assert asset_contract['canvas']['extendedHorizontalExercise']=={'width':64,'heig
 assert asset_contract['canvas']['extendedOverheadExercise']=={'width':48,'height':56,'density':4,'anchor':[24,56]}
 assert asset_contract['interactionProfiles']['carryCakeRight']['handUsePoint']==[34,20]
 assert asset_contract['interactionProfiles']['carryMealRight']['handUsePoint']==[34,20]
-assert asset_contract['interactionProfiles']['placeCakeRight']['handUsePoint']==[39,28]
+assert asset_contract['interactionProfiles']['placeCakeRight']['handUsePoint']==[39,21]
+assert asset_contract['interactionProfiles']['mealTableRight']['handUsePoint']==[39,21]
 assert asset_contract['interactionProfiles']['exerciseBikeFront']['pedalPoint']==[20,34]
 assert asset_contract['interactionProfiles']['vomitToiletBack']['bowlPoint']==[32,35]
 assert asset_contract['interactionProfiles']['showerDoorBathrobeRight']['handUsePoint']==[35,18]
@@ -374,8 +376,23 @@ assert asset_contract['objectRules']['fishFeedTargetHeightAboveFloor']==41
 assert asset_contract['objectRules']['workbenchHammerSurfaceHeightAboveFloor']==17
 assert asset_contract['objectRules']['writingSurfaceHeightAboveFloor']==19
 assert asset_contract['objectRules']['turntablePlatterHeightAboveFloor']==13
+assert asset_contract['objectRules']['mealTableSurfaceHeightAboveFloor']==19
 assert asset_contract['objectRules']['instrumentControlHeightAboveFloor']==23
 assert asset_contract['objectRules']['liftButtonHeightAboveFloor']==23
+object_dimensions=json.loads((root/'data/keeper_object_dimensions.json').read_text())
+assert object_dimensions['keeperBasis']['skullTopHeight']==32.5
+assert object_dimensions['furniture']['diningChair']['seatTopHeight']==11
+assert object_dimensions['furniture']['diningTable']['surfaceHeight']==19
+assert object_dimensions['furniture']['lowCoffeeTable']['surfaceHeight']==12
+assert object_dimensions['furniture']['bed']['mattressTopHeight']==9
+assert object_dimensions['fixturesAndStations']['wallSwitch']['centreHeight']==23
+scale_audit=json.loads((root/'docs/keeper-scale-audit/keeper-scale-metrics.json').read_text())
+assert scale_audit['counts']['allSheets']==167
+assert scale_audit['counts']['reviewedAnimationSheets']==149
+assert scale_audit['counts']['technicalRejectedSheets']==18
+assert scale_audit['counts']['allFramesMeasured']==1186
+assert len(scale_audit['contactSheets'])==8
+assert all((root/path).exists() for path in scale_audit['contactSheets'])
 walk=Image.open(root/'public/sprites'/manifest['keeper_walk']['file']).convert('RGBA')
 walk_frames=[walk.crop((i*128,0,(i+1)*128,160)) for i in range(8)]
 assert len({frame.tobytes() for frame in walk_frames})>=5

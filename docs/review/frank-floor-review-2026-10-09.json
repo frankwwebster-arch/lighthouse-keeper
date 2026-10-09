@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "notes": {
+    "space/lamp": "It needs the actual lamp inside it\n\nBroken lamp should just be filthy, with flickering light and SFX would be like a buzzing light bulb about to blow",
+    "asset/room_lamp": "Glass needs to be transparent, needs a light inside it - more like this - https://picryl.com/media/kullen-lighthouse-kullaberg-lighthouse-7e938f\n",
+    "space/roof": "Parachute launch pad will be a side addition to the lighthouse, not contained within a room (ie will look like the diving platform, but on the lefthand side of the tower)",
+    "space/bedroom": "Bed should be in the middle of the room",
+    "asset/keeper_crouch_work_back": "he's got too fat and out of scale here, frames 3 and 5 have hands behind back when they should be forward.",
+    "asset/keeper_front_arm_l": "delete",
+    "asset/keeper_front_arm_r": "delete",
+    "asset/keeper_front_head_asleep": "delete",
+    "asset/keeper_front_head_grumpy": "delete",
+    "asset/keeper_front_head_happy": "delete",
+    "asset/keeper_front_head_neutral": "delete",
+    "asset/keeper_front_head_open": "delete",
+    "asset/keeper_front_leg_l": "delete",
+    "asset/keeper_front_leg_r": "delete",
+    "asset/keeper_front_torso": "delete",
+    "asset/keeper_idle": "delete",
+    "asset/keeper_party_turn_back": "animation does not run smoothly",
+    "asset/keeper_reference": "delete",
+    "asset/obj_tv_on": "Not needed",
+    "asset/room_bedroom": "delete",
+    "asset/room_kitchen": "delete",
+    "asset/room_living": "delete",
+    "asset/keeper_back_arm_l": "delete",
+    "asset/keeper_back_head": "delete",
+    "asset/keeper_back_leg_l": "delete",
+    "asset/keeper_back_arm_r": "delete",
+    "asset/keeper_back_leg_r": "delete",
+    "asset/keeper_back_torso": "delete",
+    "asset/fx_broken_smoke": "This does needs to improved",
+    "asset/keeper_scuba_swim_down": "This doesn't look like the lighthouse keeper",
+    "asset/keeper_scuba_swim_up": "check scale",
+    "asset/keeper_sit_front": "check scale - looks a bit fat",
+    "asset/keeper_souwester_walk_back": "check scale",
+    "asset/keeper_souwester_walk_front": "check scale",
+    "asset/keeper_souwester_walk_side": "check scale"
+  },
+  "statuses": {
+    "space/lamp": "reviewed",
+    "space/roof": "reviewed"
+  },
+  "additions": [],
+  "pixelEdits": {
+    "room_lamp": {
+      "block": 1,
+      "strokes": []
+    }
+  },
+  "animation": {
+    "shimmer": 65,
+    "speed": 100
+  },
+  "base_commit": "cdb109b2904ce0834fa559760e5d34e1ddc8f4f2",
+  "exported_at": "2026-10-09T00:41:05.862Z"
+}

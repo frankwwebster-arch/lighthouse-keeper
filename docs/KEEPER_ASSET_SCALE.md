@@ -9,8 +9,16 @@ page explains it in ordinary language.
 - One logical pixel is four source-image pixels (`density: 4`).
 - The normal keeper canvas is 32 × 40 logical pixels with his feet anchored at
   `(16,40)`.
-- His measured visible reference is 24.75 × 38.25 logical pixels. The uneven
-  fractions come from measuring the density-4 source, not from rescaling him.
+- The approved eight-frame side walk is the scale authority. The old modular
+  `keeper_reference` drawing is not a production reference.
+- His inferred skull top is 32.5 logical pixels above the supporting sole.
+  The ordinary cap makes the visible silhouette 36.5–38 pixels high, but cap,
+  party hat, helmet, sou'wester, raised hands, tools and props are never part of
+  the body measurement.
+- Canonical secondary checks are: eye line 28.5 px, shoulders 24.5 px and hips
+  14.5 px above the floor; side core depth 13 px; front/rear core width 19 px;
+  head width 14.5 px; hand diameter 4 px; boot length 8 px. Anatomical landmark
+  tolerance is 0.5 px and core-width tolerance is 1 px.
 - The vertical dive uses 48 × 56 with anchor `(24,56)`. Full parachute
   deployment uses 48 × 84 with anchor `(24,84)`. The keeper remains exactly the
   same size; only the transparent space around him grows.
@@ -24,6 +32,9 @@ page explains it in ordinary language.
   on 48 × 48 at `(24,24)`. Party headwear uses 32 × 48 with feet anchor `(16,48)`.
 - Never scale the keeper to make him meet an object. Position and size the
   object from the interaction points below.
+- Never scale a crouched, seated, horizontal or prop-carrying silhouette to fill
+  its canvas. Measure the articulated skull–shoulder–hip–sole chain and head
+  unit, then enlarge the transparent canvas if a prop or limb needs more room.
 
 The coordinate origin is the top-left. X increases rightward and Y increases
 downward. A side-facing point at X mirrors with `mirroredX = canvasWidth - X`.
@@ -51,7 +62,8 @@ downward. A side-facing point at X mirrors with `mirroredX = canvasWidth - X`.
 | Writing surface | 19 px | extended side canvas `(34,21)` |
 | Turntable platter | 13 px | extended side canvas `(34,27)` |
 | Potter's-wheel hand position | 17 px | `(20,23)` on 40 × 40 canvas |
-| Meal table surface | 12 px | tray canvas `(39,28)` |
+| Dining / meal / cake table surface | 19 px | tray canvas `(39,21)` |
+| Low coffee-table surface | 12 px | reserved low-furniture datum; not used by meal/cake placement |
 | Watering target | 9 px | extended side canvas `(35,31)` |
 | Barometer / instrument control | 23 px | side `(27,17)`; rear `(26,17)` |
 | Lift button | 23 px | front `(27,17)` |
@@ -151,14 +163,21 @@ remain level while the feet follow the canonical walk rhythm. This lets the
 oven retrieval, cake turn, carry loop and table placement connect without
 rescaling or shifting the held food.
 
-For table placement, align the invisible tabletop to `(39,28)` on the
+For table placement, align the invisible standard tabletop to `(39,21)` on the
 right-facing `keeper_place_cake` or `keeper_meal_place_side` canvas and mirror
-to `(9,28)` for left. Each one-shot lowers and releases its food before the
+to `(9,21)` for left. Each one-shot lowers and releases its food before the
 keeper returns to a fully upright empty-handed final frame.
 
 Any new prop-based animation must add its hand, seat or ground point to the
 JSON contract and its sprite sidecar. Verification rejects changes that break
 the established switch heights, canvas scale or feet anchors.
+
+The complete starting dimensions for chairs, sofas, tables, beds, toilets,
+baths, showers and object stations are in
+`data/keeper_object_dimensions.json`. The per-frame measurement evidence for
+all 167 sheets is in `docs/keeper-scale-audit/keeper-scale-metrics.json`; the
+eight contact sheets render every sample at one fixed display scale so a larger
+transparent canvas can never make its keeper look smaller.
 
 The sad, hungry, bored and cross reactions share one enforced upright scale:
 their visible height is 38 logical pixels (152 pixels in the density-4 source)

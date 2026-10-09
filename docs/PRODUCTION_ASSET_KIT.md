@@ -1,6 +1,6 @@
 # Lighthouse Keeper — first-three-floor production asset kit
 
-Status: production specification. Delivery-order item 1 is complete for the two shell stripe bands and the kitchen, living-room, and bedroom/en-suite plates. All older PNGs remain concept/prototype references; do not cut sprites out of the scene plates.
+Status: production specification. Delivery-order item 1 is complete for the two shell stripe bands and the kitchen, living-room, and bedroom/en-suite plates. All older PNGs remain concept/prototype references; do not cut sprites out of the scene plates. The modular keeper-part section below is retained as historical rig documentation only: Frank rejected those part images and `keeper_reference` as reviewable final art. Production animation, scale and object work now follows `data/keeper_asset_contract.json`, `data/keeper_object_dimensions.json` and `docs/keeper-scale-audit/`.
 
 ## Coordinate and export contract
 
@@ -14,7 +14,7 @@ Status: production specification. Delivery-order item 1 is complete for the two 
 
 ## Keeper kit
 
-Every keeper part is a **32 × 40** transparent PNG on the same aligned canvas. The standing silhouette is approximately 22 × 32; floor anchor `(16,40)`. Stacking the neutral parts at `(0,0)` must rebuild `keeper_reference.png` exactly. Shared pivots are measured within that canvas.
+Historical rig parts used a **32 × 40** transparent canvas. They are not final review art and are not the keeper's scale authority; the approved side walk and canonical anatomy contract are.
 
 | Part | Pivot | z-order | Required views |
 |---|---:|---:|---|
@@ -99,7 +99,7 @@ Initial clips:
 | `cake_turn_right` | rear to side | 6 · 8 | no | 48 × 40; tray carry `(34,20)`; mirror for left |
 | `loo_hide` | hidden | 0 | n/a | keeper is not drawn |
 
-Required part files are `keeper_front_head_{happy,neutral,grumpy,asleep,open}.png`, `keeper_front_{torso,arm_l,arm_r,leg_l,leg_r}.png`, the equivalent `keeper_back_*` files with one back head, and `keeper_reference.png`; every part file is 32 × 40. Airborne strips may expand to 48 × 56 for the dive or 48 × 84 for parachute deployment without rescaling the keeper. Long side tools may use 40 × 40, bed poses 48 × 40, vertical swimming 48 × 48, horizontal swimming 64 × 48, press-ups 64 × 40, overhead weights 48 × 56, and tall headwear 32 × 48. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. Pivots are for assembly tooling; production raster limbs use drawn key angles or integer translations in final clips rather than arbitrary CSS rotation. `data/keeper_asset_contract.json` is authoritative for scale and use points.
+The old part files and `keeper_reference.png` are no longer required review deliveries. Airborne strips may expand to 48 × 56 for the dive or 48 × 84 for parachute deployment without rescaling the keeper. Long side tools may use 40 × 40, bed poses 48 × 40, vertical swimming 48 × 48, horizontal swimming 64 × 48, press-ups 64 × 40, overhead weights 48 × 56, and tall headwear 32 × 48. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. `data/keeper_asset_contract.json` is authoritative for scale and use points.
 
 The dive outfit reuses every pivot. Its approved reference is a traditional full-length red-and-white striped one-piece costume, without cap or helmet and with bare feet. Changing is an invisible clip: inner door closes, keeper disappears, zip/rustle SFX, outfit swaps, exterior door opens, dressed keeper exits. There is never a visible frame between the two doors.
 
