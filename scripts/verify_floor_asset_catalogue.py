@@ -599,7 +599,8 @@ for token in (
     'Character width', 'Character height', 'Export my character sizes', 'keeper-scale-choices.json',
     "STORAGE_KEY='lighthouse-keeper-scale-choices-v1'",
     'floorAlignedInteractions', 'firstFrameAlphaBox',
-    "if(!state.playing)return {clip:card.asset,frame:0",
+    "if(!state.playing)return {clip:card.asset,frame:Math.min",
+    'c.manualFrame=0',
     'ghostReferences', 'Sitting side', 'Sitting front', 'Ghost rotation',
     'Alongside right', 'Reset ghost', 'Reviewed animation opacity',
     'Happy with this animation', 'Save this review', 'Unsaved changes',
@@ -610,6 +611,7 @@ for token in (
     'Reset animation position', 'actionOffsetX', 'actionOffsetY',
     'Notes for the production pass', 'Request full re-draft',
     'redraftRequested', 'reviewnotes',
+    'Previous frame', 'Next frame', 'Frame 1 /', 'manualFrame',
     'runtime: ${asset.name}.png', 'source: ${basename(asset.source)}',
     'animations, all shown', 'function buildGallery()',
 ):

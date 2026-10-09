@@ -17,6 +17,9 @@ Codex task should be able to continue from here without relying on the old chat.
    same measured 9.75 × 6.5 face proxy as the standing reference frame. The display-size slider magnifies the reviewed stage from
    1× to 12× without changing the art; the other global
    controls pause/play everything and apply pose-aware comparison ghosts.
+   Every card also has Previous/Next frame controls. They pause playback,
+   select the action itself and step without wrapping from frame 1 to the final
+   frame; inspection alone does not alter or dirty the saved review.
 3. Ask Frank for his new comments and exported `keeper-scale-choices.json`.
    Each card's Save button persists independent width/height, rotation,
    horizontal/vertical position, ghost settings, opacity and the

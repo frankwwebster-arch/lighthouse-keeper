@@ -205,6 +205,8 @@ Delivered in `docs/keeper-scale-audit/review.html`:
   export as JSON for later source-art rebuilding; the viewer never edits sprites.
 - Flying and swimming cards align their first-frame figure bottom to the red
   floor line. Global Pause resets every card to frame 1 of its action.
+- Every card has Previous/Next frame buttons and an exact frame counter. Using
+  them pauses playback and steps through the action without dirtying the review.
 - Seated cards automatically use the canonical front/side sitting endpoint.
   Per-card controls select, rotate, reset or move the ghost alongside and fade
   the reviewed animation. Rear sitting still has no canonical neutral reference.
