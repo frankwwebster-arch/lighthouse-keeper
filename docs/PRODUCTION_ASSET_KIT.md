@@ -46,6 +46,7 @@ per-clip override without changing the sprite strip.
 | `read` | front | 4 · 4 | yes | book pivot `(21,22)` |
 | `sit_side` | side | 6 · 4 | no | seat `(16,29)`; mirror left; reverse to stand |
 | `sit_front` | front | 6 · 4 | no | seat `(16,29)`; reverse to stand |
+| `sit_back` | rear | 6 · 4 | no | canonical rear-sitting ghost; seat `(16,29)`; reverse to stand |
 | `eat_seated` | side | 8 · 4 | yes | seat `(16,29)`; fork to mouth `(24,17)`; mirror left |
 | `piano` | rear three-quarter | 8 · 4 | yes | seat `(16,29)`; hands `(24,20)` |
 | `sleep` | front-derived | 4 · 4 | yes | bed contact `(16,31)` |

@@ -57,13 +57,13 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==172
+assert len(keeper_pngs)==173
 required_clips={
     'keeper_idle':(4,4), 'keeper_walk':(8,4),
     'keeper_turn_back':(6,4), 'keeper_work_back':(8,4),
     'keeper_cook_back':(8,4), 'keeper_wash_back':(8,4),
     'keeper_brush_teeth_back':(8,4), 'keeper_sit_side':(6,4),
-    'keeper_sit_front':(6,4), 'keeper_piano':(8,4),
+    'keeper_sit_front':(6,4), 'keeper_sit_back':(6,4), 'keeper_piano':(8,4),
     'keeper_urinate_back':(6,4), 'keeper_eat_seated':(8,4),
     'keeper_door_open_side':(6,4), 'keeper_door_open_back':(6,4),
     'keeper_door_open_side_pyjamas':(6,4),
@@ -520,6 +520,7 @@ assert asset_contract['interactionProfiles']['mealTableRight']['handUsePoint']==
 assert asset_contract['interactionProfiles']['machetePlantRight']['handUsePoint']==[50,28]
 assert asset_contract['interactionProfiles']['machetePlantRight']['bladeEdge']=='smooth'
 assert asset_contract['interactionProfiles']['exerciseBikeFront']['pedalPoint']==[24,42]
+assert asset_contract['interactionProfiles']['rearSeat']=={'clip':'keeper_sit_back','seatPoint':[16,29],'offsetFromFeet':[0,-11]}
 assert asset_contract['interactionProfiles']['fishingStandingRight']['handUsePoint']==[56,24]
 assert asset_contract['interactionProfiles']['drumsFront']['timingMaster'] is True
 assert asset_contract['interactionProfiles']['drumsFront']['pairedWith']=='drumsBack'
@@ -563,6 +564,7 @@ assert asset_contract['objectRules']['liftButtonHeightAboveFloor']==23
 object_dimensions=json.loads((root/'data/keeper_object_dimensions.json').read_text())
 assert object_dimensions['keeperBasis']['skullTopHeight']==32.5
 assert object_dimensions['furniture']['diningChair']['seatTopHeight']==11
+assert 'keeper_sit_back' in object_dimensions['furniture']['diningChair']['keeperClips']
 assert object_dimensions['furniture']['diningTable']['surfaceHeight']==19
 assert object_dimensions['furniture']['lowCoffeeTable']['surfaceHeight']==12
 assert object_dimensions['furniture']['bed']['mattressTopHeight']==9
@@ -575,12 +577,12 @@ assert scale_audit['auditRevision']=='2026-10-09-original-comparison-v2'
 assert scale_audit['originalReference']['name']=='keeper_walk'
 assert scale_audit['originalReference']['source']=='art/raw/keeper-first-batch/keeper_walk_f8.png'
 assert scale_audit['originalReference']['approvedMedianTorsoScanWidthAt20']==13.75
-assert scale_audit['counts']['allSheets']==172
-assert scale_audit['counts']['reviewedAnimationSheets']==154
+assert scale_audit['counts']['allSheets']==173
+assert scale_audit['counts']['reviewedAnimationSheets']==155
 assert scale_audit['counts']['technicalRejectedSheets']==18
-assert scale_audit['counts']['allFramesMeasured']==1224
+assert scale_audit['counts']['allFramesMeasured']==1230
 assert scale_audit['counts']['comparisonFailures']==0
-assert len(scale_audit['assets'])==172
+assert len(scale_audit['assets'])==173
 assert all('originalComparison' in asset for asset in scale_audit['assets'])
 scale_assets_by_name={asset['name']:asset for asset in scale_audit['assets']}
 standing_face=scale_assets_by_name['keeper_walk']['frameMeasurements'][0]['faceProxy']
@@ -605,7 +607,7 @@ assert len(scale_audit['contactSheets'])==8
 assert all((root/path).exists() for path in scale_audit['contactSheets'])
 scale_review=(root/'docs/keeper-scale-audit/review.html').read_text()
 assert '__KEEPER_REVIEW_DATA__' not in scale_review
-assert '"reviewedAnimationSheets":154' in scale_review
+assert '"reviewedAnimationSheets":155' in scale_review
 for removed_control in ('id="search"','id="outfit"','id="posture"','id="kind"','id="sort"'):
     assert removed_control not in scale_review,removed_control
 for token in (
@@ -629,13 +631,13 @@ for token in (
     'floorAlignedInteractions', 'firstFrameAlphaBox',
     "if(!state.playing)return {clip:card.asset,frame:Math.min",
     'c.manualFrame=0',
-    'ghostReferences', 'standingFront', 'Facing front', 'standingBack', 'Back to camera', 'Sitting side', 'Sitting front', 'Ghost rotation',
+    'ghostReferences', 'standingFront', 'Facing front', 'standingBack', 'Back to camera', 'Sitting side', 'Sitting front', 'sittingBack', 'Sitting back', 'Ghost rotation',
     'Mirror ghost horizontally', 'ghostMirrored', 'ghostMirror.onchange',
     'Alongside right', 'Reset ghost', 'Reviewed animation opacity',
     'Happy with this animation', 'Save this review', 'Unsaved changes',
     "REVIEW_STORAGE_KEY='lighthouse-keeper-animation-reviews-v1'",
     "TIMING_BASELINE_KEY='lighthouse-keeper-animation-fps-baseline-v1'",
-    'happyAnimations', 'redraftAnimations', 'version:7', 'widthPercent', 'heightPercent',
+    'happyAnimations', 'redraftAnimations', 'reviewLaterAnimations', 'reviewLater', 'version:8', 'widthPercent', 'heightPercent',
     'Proposed game speed', 'Reset to authored speed', 'animationFps', 'timingRule',
     'Reduce proposed game speed by 0.5 frames per second',
     'Increase proposed game speed by 0.5 frames per second',
@@ -648,7 +650,8 @@ for token in (
     'Reduce animation opacity by 0.5 percent', 'Increase animation opacity by 0.5 percent',
     "rotationDown.onclick=()=>setTransform('rotation',card.actionRotation-.5)",
     "opacityUp.onclick=()=>setTransform('opacity',card.actionOpacity*100+.5)",
-    'Notes for the production pass', 'Request full re-draft',
+    'Notes for the production pass', 'Request full re-draft', 'Save &amp; re-review later', 'Remove re-review reminder',
+    "if(marking&&state.view==='detail')stepDetail(1)", 'Saved — re-review later',
     'redraftRequested', 'reviewnotes',
     'Previous frame', 'Next frame', 'Action frame 1 /', 'manualFrame',
     'Play animation', 'Pause animation', 'Animation playback mode',
@@ -668,6 +671,10 @@ rear_endpoint=rear_ghost['frameMeasurements'][-1]
 assert rear_ghost['canvas']==[32,40] and rear_ghost['anchor']==[16,40]
 assert rear_endpoint['alphaHeight']==38.0 and rear_endpoint['bottomClearance']==0.5
 assert abs(rear_endpoint['torsoScanWidthAt20']-scale_audit['canonicalAnatomy']['frontBackCoreWidth'])<=scale_audit['canonicalAnatomy']['tolerance']['coreWidth']
+rear_sitting_ghost=next(asset for asset in scale_audit['assets'] if asset['name']=='keeper_sit_back')
+assert rear_sitting_ghost['canvas']==[32,40] and rear_sitting_ghost['anchor']==[16,40]
+assert rear_sitting_ghost['seatPoint']==[16,29] and rear_sitting_ghost['facing']=='back'
+assert rear_sitting_ghost['frameMeasurements'][-1]['alphaHeight']==34.0
 front_ghost=next(asset for asset in scale_audit['assets'] if asset['name']=='keeper_wave_camera')
 front_endpoint=front_ghost['frameMeasurements'][0]
 assert front_ghost['canvas']==[32,40] and front_ghost['anchor']==[16,40] and front_ghost['facing']=='front'
@@ -680,7 +687,7 @@ assert len({frame.getbbox()[3] for frame in walk_frames})==1
 previews={
     'keeper-walk':(8,250), 'keeper-turn-back':(10,250),
     'keeper-work-back':(8,250), 'keeper-sit-side':(10,250),
-    'keeper-sit-front':(10,250), 'keeper-piano':(8,250),
+    'keeper-sit-front':(10,250), 'keeper-sit-back':(10,250), 'keeper-piano':(8,250),
     'keeper-urinate-back':(6,250), 'keeper-eat-seated':(8,250),
     'keeper-door-open-side':(10,250), 'keeper-door-open-back':(10,250),
     'keeper-door-open-side-pyjamas':(10,250),
@@ -733,6 +740,6 @@ for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
 keeper_previews=list((root/'docs/floor-asset-catalogue').glob('keeper-*-preview.gif'))
-assert len(keeper_previews)==156
+assert len(keeper_previews)==157
 assert all(Image.open(path).is_animated for path in keeper_previews)
-print('Verified: 71 spaces, 1576 rows, owned-item states, 9 TV/lamp/FX exports, 172 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
+print('Verified: 71 spaces, 1576 rows, owned-item states, 9 TV/lamp/FX exports, 173 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')

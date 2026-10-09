@@ -38,6 +38,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | General work | `keeper_work_back` | washing, cooking, polishing and similar |
 | Sit on side chair | `keeper_sit_side` | right; mirror left; reverse to stand |
 | Sit facing camera | `keeper_sit_front` | sofa/toilet; reverse to stand |
+| Sit back to camera | `keeper_sit_back` | canonical rear seated reference; reverse to stand; shared seat point `(16,29)` |
 | Eat at table | `keeper_eat_seated` | right; mirror left; fork and knife included |
 | Play piano/instrument | `keeper_piano` | rear three-quarter; seated |
 | Urinate | `keeper_urinate_back` | discreet rear three-quarter pose |

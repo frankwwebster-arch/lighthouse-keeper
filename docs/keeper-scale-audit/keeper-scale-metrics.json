@@ -35,11 +35,11 @@
     }
   },
   "counts": {
-    "allSheets": 172,
-    "reviewedAnimationSheets": 154,
+    "allSheets": 173,
+    "reviewedAnimationSheets": 155,
     "technicalRejectedSheets": 18,
-    "allFramesMeasured": 1224,
-    "correctedSheets": 61,
+    "allFramesMeasured": 1230,
+    "correctedSheets": 62,
     "comparisonFailures": 0
   },
   "contactSheets": [
@@ -26583,6 +26583,200 @@
             "area": 1529
           },
           "torsoScanWidthAt20": 17.5
+        }
+      ],
+      "originalComparison": {
+        "reference": "keeper_walk",
+        "revision": "2026-10-09-original-comparison-v2",
+        "type": "articulated-landmark-at-fixed-scale",
+        "verdict": "fixed-scale-visual-pass",
+        "silhouetteHeightRatio": null,
+        "torsoScanDifference": null,
+        "visualReviewDate": "2026-10-09",
+        "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
+        "warnings": []
+      }
+    },
+    {
+      "name": "keeper_sit_back",
+      "source": "art/raw/keeper-first-batch/keeper_sit_back_f6.png",
+      "frames": 6,
+      "fps": 4,
+      "loop": false,
+      "canvas": [
+        32,
+        40
+      ],
+      "anchor": [
+        16,
+        40
+      ],
+      "facing": "back",
+      "outfit": "standard",
+      "interaction": null,
+      "seatPoint": [
+        16,
+        29
+      ],
+      "postureClass": "seated",
+      "measurementMethod": "head unit plus articulated shoulder-hip-sole chain; compressed silhouette height is never used as scale",
+      "status": "corrected",
+      "note": "new canonical rear stand-to-sit transition; final frame is the standard back-to-camera seated comparison ghost",
+      "medianFaceProxyWidth": 2.5,
+      "medianFaceProxyHeight": 3.25,
+      "faceProxyCoverage": "6/6",
+      "medianTorsoScanWidthAt20": null,
+      "torsoScanCoverage": "0/6",
+      "alphaHeightRange": [
+        34.0,
+        38.0
+      ],
+      "alphaWidthRange": [
+        20.0,
+        20.75
+      ],
+      "bottomClearanceRange": [
+        0.5,
+        0.5
+      ],
+      "frameMeasurements": [
+        {
+          "alphaBox": [
+            5.5,
+            1.5,
+            26.25,
+            39.5
+          ],
+          "alphaWidth": 20.75,
+          "alphaHeight": 38.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              6.0,
+              25.25,
+              9.75,
+              28.75
+            ],
+            "width": 3.75,
+            "height": 3.5,
+            "area": 143
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            5.75,
+            2.5,
+            26.0,
+            39.5
+          ],
+          "alphaWidth": 20.25,
+          "alphaHeight": 37.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              22.0,
+              25.5,
+              25.25,
+              28.75
+            ],
+            "width": 3.25,
+            "height": 3.25,
+            "area": 117
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            6.0,
+            3.5,
+            26.0,
+            39.5
+          ],
+          "alphaWidth": 20.0,
+          "alphaHeight": 36.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              22.5,
+              26.25,
+              25.5,
+              29.75
+            ],
+            "width": 3.0,
+            "height": 3.5,
+            "area": 115
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            5.75,
+            4.5,
+            26.0,
+            39.5
+          ],
+          "alphaWidth": 20.25,
+          "alphaHeight": 35.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              20.5,
+              12.5,
+              22.5,
+              15.5
+            ],
+            "width": 2.0,
+            "height": 3.0,
+            "area": 63
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            6.0,
+            5.5,
+            26.0,
+            39.5
+          ],
+          "alphaWidth": 20.0,
+          "alphaHeight": 34.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              21.0,
+              13.75,
+              22.75,
+              17.0
+            ],
+            "width": 1.75,
+            "height": 3.25,
+            "area": 59
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            6.0,
+            5.5,
+            26.0,
+            39.5
+          ],
+          "alphaWidth": 20.0,
+          "alphaHeight": 34.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              21.0,
+              13.75,
+              22.75,
+              17.0
+            ],
+            "width": 1.75,
+            "height": 3.25,
+            "area": 61
+          },
+          "torsoScanWidthAt20": null
         }
       ],
       "originalComparison": {

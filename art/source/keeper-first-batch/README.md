@@ -252,6 +252,13 @@ perspective path: 100%, 94%, 88%, 81%, then 75% for the turn, alongside a
 0→6 logical-pixel upward move. This baked depth change is intentional and is
 declared in both the source sidecar and runtime manifest.
 
+`keeper-sit-back-generated-source.png` uses the approved rear standing identity
+and the front/side stand-to-sit timing as references. Its six frames remain
+fully back-to-camera. `height_normalise_sequence` corrects generation drift to
+explicit 38, 37, 36, 35, 34 and 34 logical-pixel heights, so the final frame is
+the canonical rear-sitting ghost at the shared `(16,29)` seat point rather than
+an undersized new scale authority.
+
 `keeper-carry-cake-generated-source.png` and
 `keeper-carry-meal-generated-source.png` extend those serving sequences with
 eight-frame right-facing walks. Both use the canonical gait and 48 × 40 tray

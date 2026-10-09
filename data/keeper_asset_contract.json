@@ -100,6 +100,7 @@
     "rearWorkSurface": { "clip": "keeper_work_back", "handUsePoint": [16, 21], "offsetFromFeet": [0, -19] },
     "sideSeat": { "clip": "keeper_sit_side", "seatPoint": [16, 29], "offsetFromFeet": [0, -11] },
     "frontSeat": { "clip": "keeper_sit_front", "seatPoint": [16, 29], "offsetFromFeet": [0, -11] },
+    "rearSeat": { "clip": "keeper_sit_back", "seatPoint": [16, 29], "offsetFromFeet": [0, -11] },
     "piano": { "clip": "keeper_piano", "seatPoint": [16, 29], "handUsePoint": [24, 20] },
     "ladderUpperHand": { "clip": "keeper_ladder_climb", "handUsePoint": [16, 6], "offsetFromFeet": [0, -34] },
     "animalBowlRight": { "clip": "keeper_feed_animals", "handUsePoint": [27, 34], "offsetFromFeet": [11, -6], "mirrorFor": "animalBowlLeft" },

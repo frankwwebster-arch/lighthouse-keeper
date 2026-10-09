@@ -8,7 +8,7 @@ Codex task should be able to continue from here without relying on the old chat.
 
 1. Read this document in full.
 2. Open `docs/keeper-scale-audit/review.html`. A dedicated panel first shows
-   the untouched `keeper_walk` scale authority, followed by all 154 accepted
+   the untouched `keeper_walk` scale authority, followed by all 155 accepted
    clips at one unchanged relative scale in filename order. Every card prints
    its runtime and source filename. Switch View to `One animation at a time`
    for a much larger card, progress/filename status, Previous/Next buttons and
@@ -60,21 +60,23 @@ change; ingest both exported percentages before rebuilding art.
 Flying and swimming review clips align the bottom of their first-frame figure
 to the red floor line. Pressing global Pause resets every card to frame 1 of its
 action, even when a route or onion-skin mode is selected.
-Seated cards automatically use the canonical direct-front or side sitting
+Seated cards automatically use the canonical direct-front, side or rear sitting
 endpoint as their ghost; other cards use the standing reference. Each card can
 override the ghost reference with a standing side, standing facing-front,
-standing back-to-camera, sitting side or sitting front figure, rotate it, reset
+standing back-to-camera, sitting side, sitting front or sitting back figure, rotate it, reset
 it, place it alongside on a wider stage and reduce only the reviewed animation's
 opacity. The standing front ghost is the neutral arms-down frame 1 of
 `keeper_wave_camera`; this is the same canonical front identity used as the
 source for the exact-inheritance party idle. The standing
 back ghost is frame 6 of `keeper_turn_back`, the audited standard-outfit rear
 endpoint with the same 32 × 40 canvas, [16, 40] feet anchor and 38-pixel height
-as the canonical standing keeper. A canonical rear-sitting
-ghost does not yet exist, so rear cases must be judged with an explicitly chosen
-reference rather than being treated as an automatic match.
-Every card has `Happy with this animation`, `Save this review` and an explicit
-saved/unsaved state. Orange means unsaved; green means saved and happy. Export
+as the canonical standing keeper. The rear-sitting ghost is frame 6 of
+`keeper_sit_back`, with the same standard uniform and `[16,29]` seat point as
+the side and front sitting standards.
+Every card has `Happy with this animation`, `Save this review`, `Save & re-review later`
+and an explicit saved/unsaved state. The re-review button saves immediately and
+advances in focused mode. Orange means unsaved; green means saved and happy;
+blue means saved for later review. Export
 is blocked until changed cards are saved. Existing browser-saved size choices
 are loaded into the new workflow rather than discarded.
 The reviewed animation itself can rotate from −180° to +180° around its fixed
@@ -165,11 +167,11 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 
 ## Current evidence and files
 
-- 172 keeper sheets and 1,224 frames are in the technical batch.
-- 154 animation sheets are accepted into the review gallery.
+- 173 keeper sheets and 1,230 frames are in the technical batch.
+- 155 animation sheets are accepted into the review gallery.
 - 18 obsolete modular/reference sheets are excluded from review and must not
   return to production.
-- 59 sheets were rebuilt or anatomy-normalised in the latest full pass.
+- 62 sheets were rebuilt or anatomy-normalised in the latest full pass.
 - The audit currently reports zero unresolved original-comparison failures.
 - The 12 directly comparable full-body families are constrained to a
   0.960–1.040 skull-to-sole ratio; unobscured side torsos must be within one
@@ -327,7 +329,7 @@ evidence, not final acceptance.
 |---|---:|---|
 | `bridge-clip` | 5 | Existing reusable bridge artwork |
 | `direct-test` | 44 | Same-outfit walk can be juxtaposed for review; seam unproven |
-| `known-bridge` | 37 | Viewer can insert an existing turn/sit/bed bridge; full route still needs endpoint proof |
+| `known-bridge` | 38 | Viewer can insert an existing turn/sit/bed bridge; full route still needs endpoint proof |
 | `locomotion` | 11 | Walking source/family |
 | `missing-bridge` | 33 | Known facing/posture bridge does not exist |
 | `no-walk` | 21 | Outfit/privacy state has no walking family; may instead require an occlusion route |
@@ -690,7 +692,7 @@ npm run build
 
 Also inspect `docs/keeper-scale-audit/review.html` visually:
 
-- every one of the 154 accepted cards is present and named;
+- every one of the 155 accepted cards is present and named;
 - global Pause and Original-ghost controls affect every card;
 - each card's ghost mirror, rotation and position choices save and export independently;
 - no card scales its sprite to fit;
@@ -700,4 +702,4 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 
 ## Ready-to-paste opening prompt for the new Codex task
 
-> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md` in full before changing anything, then read the authoritative scale/animation/door documents it links. I have new comments on clips in `docs/keeper-scale-audit/review.html`; capture every comment by exact filename into a dated review record, triage keep/fix/rebuild/delete/decision-needed, and resolve them. Treat the untouched `keeper_walk` as the immutable identity and scale reference. Costumes and props are overlays; never redraw or resize the keeper merely for clothing, canvas or an object. Costume changes happen only while fully hidden behind a foreground door. Most importantly, make every accepted action reachable seamlessly and reversibly from idle/walking: phase-aware walk stop, correct turn, sit/crouch/climb/prop handover, activity entry/loop/exit, then a clean return to walking. Build the P0 production neutral poses, walk-start/stop and side↔front/back transition system before bulk object wiring; add explicit startPose/endPose and object-event metadata, and test complete routes rather than isolated loops. Rerun the full 172-sheet/1,224-frame scale audit and all project verification, update the handoff/index, commit and push the completed work to remote `main`.
+> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md` in full before changing anything, then read the authoritative scale/animation/door documents it links. I have new comments on clips in `docs/keeper-scale-audit/review.html`; capture every comment by exact filename into a dated review record, triage keep/fix/rebuild/delete/decision-needed/re-review-later, and resolve them. Treat the untouched `keeper_walk` as the immutable identity and scale reference. Costumes and props are overlays; never redraw or resize the keeper merely for clothing, canvas or an object. Costume changes happen only while fully hidden behind a foreground door. Most importantly, make every accepted action reachable seamlessly and reversibly from idle/walking: phase-aware walk stop, correct turn, sit/crouch/climb/prop handover, activity entry/loop/exit, then a clean return to walking. Build the P0 production neutral poses, walk-start/stop and side↔front/back transition system before bulk object wiring; add explicit startPose/endPose and object-event metadata, and test complete routes rather than isolated loops. Rerun the full 173-sheet/1,230-frame scale audit and all project verification, update the handoff/index, commit and push the completed work to remote `main`.

@@ -2635,6 +2635,26 @@
   "interaction": "wash-in-shower",
   "z": 50
  },
+ "keeper_sit_back": {
+  "file": "keeper_sit_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "seatPoint": [
+   16,
+   29
+  ],
+  "loop": false,
+  "reverseFor": "stand_back",
+  "facing": "back",
+  "z": 50
+ },
  "keeper_sit_front": {
   "file": "keeper_sit_front.png",
   "w": 32,

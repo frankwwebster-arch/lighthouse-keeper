@@ -62,7 +62,7 @@ then run `scripts/audit_keeper_scale.py` with the bundled Python runtime.
 
 The audit uses the untouched approved `keeper_walk` as its primary reference:
 
-1. It measures every frame in all 172 sheets (1,224 frames at present).
+1. It measures every frame in all 173 sheets (1,230 frames at present).
 2. It prints the original first in every contact-sheet row, followed by the
    tested sheet's first, middle and last representative frames at exactly the
    same fixed scale. No image is fitted to its available canvas.
@@ -229,13 +229,13 @@ the established switch heights, canvas scale or feet anchors.
 The complete starting dimensions for chairs, sofas, tables, beds, toilets,
 baths, showers and object stations are in
 `data/keeper_object_dimensions.json`. The per-frame measurement evidence for
-all 172 sheets is in `docs/keeper-scale-audit/keeper-scale-metrics.json`; the
+all 173 sheets is in `docs/keeper-scale-audit/keeper-scale-metrics.json`; the
 eight contact sheets render every sample at one fixed display scale so a larger
 transparent canvas can never make its keeper look smaller.
 
 For interactive comparison, open `docs/keeper-scale-audit/review.html`. It puts
 the untouched `keeper_walk` in a dedicated scale-authority panel, followed by
-all 154 accepted animation sheets in one filename-ordered gallery, without
+all 155 accepted animation sheets in one filename-ordered gallery, without
 search, filters or card fitting. For standard upright cap poses, its gold badge
 crossing the blue skull-top line is a convenient calibrated proxy; it does not
 replace anatomical landmarks for altered posture, head angle or headwear.
@@ -286,7 +286,7 @@ The display zoom is retained immediately in browser-local progress. Saving a
 card records it as the latest completed animation; reloading restores that zoom
 and opens focused mode on the next filename-ordered card, clamped to the final
 card when the most recently saved animation has no successor.
-Seated cards automatically use the canonical front or side sitting endpoint;
+Seated cards automatically use the canonical front, side or rear sitting endpoint;
 other cards use the standing reference. Per-card controls can select a different
 reference, including the canonical back-to-camera standing endpoint (frame 6 of
 `keeper_turn_back`), rotate/reset it, place it alongside and fade only the
@@ -295,15 +295,15 @@ reviewed action. That rear endpoint retains the standard outfit, 32 × 40 canvas
 The menu also offers the neutral arms-down first frame of `keeper_wave_camera`
 as the canonical standard-outfit facing-front ghost; the exact-inheritance
 party front idle is derived from this same frame.
-There is no canonical rear-sitting reference yet, so rear comparisons require an
-explicit choice and remain visual evidence rather than a certified pose match.
+The canonical rear-sitting reference is frame 6 of `keeper_sit_back`; it uses
+the standard rear identity and the shared `[16,29]` seat point.
 Each card's Save button persists its width, height, proposed runtime FPS, horizontal/vertical position,
 comparison-ghost mirror, rotation and position controls, reviewed-animation rotation/opacity, free-text notes,
-happy checkbox and mutually exclusive full-re-draft request in the browser.
+happy checkbox and mutually exclusive full-re-draft or re-review-later request in the browser.
 Orange denotes unsaved changes, green a saved happy decision and red a saved
 re-draft request. Export is blocked until every changed card is saved, and
-version 7 of `keeper-scale-choices.json` contains the saved review register,
-notes and re-draft list as well as independent width/height/position production proposals.
+version 8 of `keeper-scale-choices.json` contains the saved review register,
+notes, re-draft list and re-review-later list as well as independent width/height/position production proposals.
 Its `animationFps` value is intended for the clip's source JSON sidecar and the
 generated `public/sprites/manifest.json`; it is not baked into the PNG pixels.
 Existing legacy uniform choices are retained and applied to both axes.

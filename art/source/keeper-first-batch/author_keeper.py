@@ -394,6 +394,24 @@ def depth_scale_sequence(frames, scales, rise_logical):
     return result
 
 
+def height_normalise_sequence(frames, heights_logical):
+    """Restore a generated pose sequence to explicit canonical body heights."""
+    if len(frames) != len(heights_logical):
+        raise ValueError("Height targets must match the frame count")
+    result = []
+    for frame, logical_height in zip(frames, heights_logical):
+        box = frame.getchannel("A").getbbox()
+        if box is None:
+            raise ValueError("Height-normalised frame is empty")
+        pose = frame.crop(box)
+        pose = pose.resize((pose.width, round(logical_height * D)), Image.Resampling.LANCZOS)
+        pose.putalpha(pose.getchannel("A").point(lambda value: 255 if value >= 128 else 0))
+        canvas = Image.new("RGBA", frame.size, (0, 0, 0, 0))
+        canvas.alpha_composite(pose, ((frame.width - pose.width) // 2, frame.height - 2 - pose.height))
+        result.append(canvas)
+    return result
+
+
 def draw_party_hat(draw, center_x=16, base_y=13):
     """Draw the approved small paper party hat from the supplied reference."""
     # A narrow pale-pink cardboard cone, small red pom-pom and irregular red
@@ -627,6 +645,10 @@ turn_frames = generated_frames("keeper-turn-back-generated-source.png", 6)
 work_frames = generated_frames("keeper-work-back-generated-source.png", 8)
 sit_side_frames = generated_frames("keeper-sit-side-generated-source.png", 6)
 sit_front_frames = generated_frames("keeper-sit-front-generated-source.png", 6, horizontal_scale=0.88)
+sit_back_frames = height_normalise_sequence(
+    generated_frames("keeper-sit-back-generated-source.png", 6),
+    (38, 37, 36, 35, 34, 34),
+)
 piano_frames = generated_frames("keeper-piano-generated-source.png", 8, scale_multiplier=0.90)
 urinate_frames = generated_frames("keeper-loo-stand-generated-source.png", 6)
 eat_seated_frames = generated_frames("keeper-eat-seated-generated-source.png", 8, scale_multiplier=0.90)
@@ -714,6 +736,7 @@ save("keeper_wash_back", work_frames, 8, hand_use_point=[16, 21])
 save("keeper_brush_teeth_back", work_frames, 8, hand_use_point=[16, 21])
 save("keeper_sit_side", sit_side_frames, 8, loop=False, seat_point=[16, 29], reverse_for="stand_side", mirror_safe=True)
 save("keeper_sit_front", sit_front_frames, 8, loop=False, seat_point=[16, 29], reverse_for="stand_front")
+save("keeper_sit_back", sit_back_frames, 8, loop=False, seat_point=[16, 29], reverse_for="stand_back", facing="back")
 save("keeper_piano", piano_frames, 10, seat_point=[16, 29], hand_use_point=[24, 20])
 save("keeper_urinate_back", urinate_frames, 8, hand_use_point=[16, 27])
 save("keeper_eat_seated", eat_seated_frames, 8, seat_point=[16, 29], hand_use_point=[24, 17], mirror_safe=True)
@@ -785,6 +808,7 @@ save_preview("keeper-turn-back", turn_frames, 120, ping_pong=True)
 save_preview("keeper-work-back", work_frames, 120)
 save_preview("keeper-sit-side", sit_side_frames, 120, ping_pong=True)
 save_preview("keeper-sit-front", sit_front_frames, 120, ping_pong=True)
+save_preview("keeper-sit-back", sit_back_frames, 120, ping_pong=True)
 save_preview("keeper-piano", piano_frames, 100)
 save_preview("keeper-urinate-back", urinate_frames, 120)
 save_preview("keeper-eat-seated", eat_seated_frames, 120)

@@ -34,7 +34,7 @@
       "seatThickness": 2,
       "backTopHeight": 26,
       "clearSeatWidth": 20,
-      "keeperClips": ["keeper_sit_side", "keeper_sit_front"],
+      "keeperClips": ["keeper_sit_side", "keeper_sit_front", "keeper_sit_back"],
       "status": "authoritative-datums"
     },
     "diningTable": {
