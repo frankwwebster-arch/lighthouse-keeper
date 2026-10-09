@@ -35,11 +35,11 @@
     }
   },
   "counts": {
-    "allSheets": 171,
-    "reviewedAnimationSheets": 153,
+    "allSheets": 172,
+    "reviewedAnimationSheets": 154,
     "technicalRejectedSheets": 18,
-    "allFramesMeasured": 1216,
-    "correctedSheets": 60,
+    "allFramesMeasured": 1224,
+    "correctedSheets": 61,
     "comparisonFailures": 0
   },
   "contactSheets": [
@@ -34149,6 +34149,243 @@
         "verdict": "measured-and-visual-pass",
         "silhouetteHeightRatio": 1.0,
         "torsoScanDifference": 0.0,
+        "visualReviewDate": "2026-10-09",
+        "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
+        "warnings": []
+      }
+    },
+    {
+      "name": "keeper_walk_into_lift",
+      "source": "art/raw/keeper-first-batch/keeper_walk_into_lift_f8.png",
+      "frames": 8,
+      "fps": 4,
+      "loop": false,
+      "canvas": [
+        32,
+        40
+      ],
+      "anchor": [
+        16,
+        40
+      ],
+      "facing": "back-to-front",
+      "outfit": "standard",
+      "interaction": "enter-lift",
+      "seatPoint": null,
+      "postureClass": "upright",
+      "measurementMethod": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
+      "status": "corrected",
+      "note": "intentional depth transition: rear walk scales from 100% to 75%, rises 6 logical pixels, then turns to a full-front neutral pose",
+      "medianFaceProxyWidth": 3.38,
+      "medianFaceProxyHeight": 3.62,
+      "faceProxyCoverage": "8/8",
+      "medianTorsoScanWidthAt20": 14.88,
+      "torsoScanCoverage": "8/8",
+      "alphaHeightRange": [
+        28.0,
+        37.75
+      ],
+      "alphaWidthRange": [
+        14.5,
+        20.5
+      ],
+      "bottomClearanceRange": [
+        0.5,
+        6.5
+      ],
+      "frameMeasurements": [
+        {
+          "alphaBox": [
+            5.75,
+            1.75,
+            26.25,
+            39.5
+          ],
+          "alphaWidth": 20.5,
+          "alphaHeight": 37.75,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              6.25,
+              24.5,
+              10.0,
+              28.25
+            ],
+            "width": 3.75,
+            "height": 3.75,
+            "area": 173
+          },
+          "torsoScanWidthAt20": 18.5
+        },
+        {
+          "alphaBox": [
+            6.0,
+            3.0,
+            25.75,
+            38.0
+          ],
+          "alphaWidth": 19.75,
+          "alphaHeight": 35.0,
+          "bottomClearance": 2.0,
+          "faceProxy": {
+            "box": [
+              6.5,
+              24.75,
+              10.0,
+              28.25
+            ],
+            "width": 3.5,
+            "height": 3.5,
+            "area": 154
+          },
+          "torsoScanWidthAt20": 17.25
+        },
+        {
+          "alphaBox": [
+            7.0,
+            3.0,
+            24.75,
+            36.5
+          ],
+          "alphaWidth": 17.75,
+          "alphaHeight": 33.5,
+          "bottomClearance": 3.5,
+          "faceProxy": {
+            "box": [
+              7.5,
+              23.5,
+              10.75,
+              26.75
+            ],
+            "width": 3.25,
+            "height": 3.25,
+            "area": 130
+          },
+          "torsoScanWidthAt20": 16.5
+        },
+        {
+          "alphaBox": [
+            7.5,
+            4.25,
+            24.25,
+            35.0
+          ],
+          "alphaWidth": 16.75,
+          "alphaHeight": 30.75,
+          "bottomClearance": 5.0,
+          "faceProxy": {
+            "box": [
+              8.0,
+              23.0,
+              11.0,
+              26.25
+            ],
+            "width": 3.0,
+            "height": 3.25,
+            "area": 117
+          },
+          "torsoScanWidthAt20": 15.75
+        },
+        {
+          "alphaBox": [
+            8.5,
+            5.5,
+            23.5,
+            33.5
+          ],
+          "alphaWidth": 15.0,
+          "alphaHeight": 28.0,
+          "bottomClearance": 6.5,
+          "faceProxy": {
+            "box": [
+              9.0,
+              23.25,
+              11.5,
+              25.75
+            ],
+            "width": 2.5,
+            "height": 2.5,
+            "area": 72
+          },
+          "torsoScanWidthAt20": 14.0
+        },
+        {
+          "alphaBox": [
+            8.75,
+            5.5,
+            23.25,
+            33.5
+          ],
+          "alphaWidth": 14.5,
+          "alphaHeight": 28.0,
+          "bottomClearance": 6.5,
+          "faceProxy": {
+            "box": [
+              18.5,
+              10.5,
+              21.75,
+              15.0
+            ],
+            "width": 3.25,
+            "height": 4.5,
+            "area": 113
+          },
+          "torsoScanWidthAt20": 12.25
+        },
+        {
+          "alphaBox": [
+            8.75,
+            5.0,
+            23.25,
+            33.5
+          ],
+          "alphaWidth": 14.5,
+          "alphaHeight": 28.5,
+          "bottomClearance": 6.5,
+          "faceProxy": {
+            "box": [
+              13.5,
+              10.0,
+              20.5,
+              14.75
+            ],
+            "width": 7.0,
+            "height": 4.75,
+            "area": 249
+          },
+          "torsoScanWidthAt20": 13.0
+        },
+        {
+          "alphaBox": [
+            8.5,
+            5.0,
+            23.5,
+            33.5
+          ],
+          "alphaWidth": 15.0,
+          "alphaHeight": 28.5,
+          "bottomClearance": 6.5,
+          "faceProxy": {
+            "box": [
+              12.5,
+              9.75,
+              19.5,
+              14.5
+            ],
+            "width": 7.0,
+            "height": 4.75,
+            "area": 325
+          },
+          "torsoScanWidthAt20": 14.0
+        }
+      ],
+      "originalComparison": {
+        "reference": "keeper_walk",
+        "revision": "2026-10-09-original-comparison-v2",
+        "type": "articulated-landmark-at-fixed-scale",
+        "verdict": "fixed-scale-visual-pass",
+        "silhouetteHeightRatio": null,
+        "torsoScanDifference": null,
         "visualReviewDate": "2026-10-09",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": []

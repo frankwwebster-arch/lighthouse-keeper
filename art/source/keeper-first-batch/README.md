@@ -245,6 +245,13 @@ not retained as a production source. The runtime strip keeps the shared
 `(25,20)` handle point and feet anchor, and each frame must remain one connected
 hard-alpha component so edge speckling cannot silently return.
 
+`keeper-walk-into-lift-generated-source.png` uses the standard rear turn and
+front-neutral identity as references, with the sou'wester rear walk used only
+for leg/arm rhythm. `depth_scale_sequence` then applies the exact production
+perspective path: 100%, 94%, 88%, 81%, then 75% for the turn, alongside a
+0→6 logical-pixel upward move. This baked depth change is intentional and is
+declared in both the source sidecar and runtime manifest.
+
 `keeper-carry-cake-generated-source.png` and
 `keeper-carry-meal-generated-source.png` extend those serving sequences with
 eight-frame right-facing walks. Both use the canonical gait and 48 × 40 tray

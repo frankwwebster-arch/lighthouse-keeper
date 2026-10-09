@@ -41,7 +41,7 @@ As the numbers stand, he is 3 px taller than the room he stands in, and a door t
 Options:
 
 - **Taller floors.** For example, 48–52 logical px per band, which fits a 40–44 px door with a ceiling above it. The three delivered room plates and the shell would need redrawing at the new height, and the game constant `FLOOR_STEP` would change. Furniture contact heights are unaffected, because they are measured from the floor.
-- **Smaller keeper.** This breaks Codex's locked scale and all 171 delivered sheets (including the 153 accepted animation sheets). Not recommended.
+- **Smaller keeper.** This breaks Codex's locked scale and all 172 delivered sheets (including the 154 accepted animation sheets). Not recommended.
 - **Drawing the keeper at a different pixel size from the rooms.** This breaks the "one logical pixel = 4 screen pixels everywhere" rule and makes the pixels mismatched. Not recommended.
 
 **Recommendation:** taller floors, settled by Frank and Codex before the next room or shell art. Whatever height is chosen becomes the one fixed band height for every standard floor and is never changed again.
@@ -194,7 +194,7 @@ handover; an unexplained first-frame pop is not a seamless join.
 Delivered in `docs/keeper-scale-audit/review.html`:
 
 - A dedicated untouched `keeper_walk` scale-authority panel, followed by all
-  153 accepted clips at one unchanged relative world scale on a shared 96 × 96
+  154 accepted clips at one unchanged relative world scale on a shared 96 × 96
   stage, with floor, skull, shoulder, hip and seat guide lines and optional
   pose-aware comparison ghosts. A focused view steps through one large card at
   a time with Previous/Next controls, progress and arrow-key navigation while
@@ -247,7 +247,7 @@ Delivered in `docs/keeper-scale-audit/review.html`:
 - Action-only, raw matching-outfit walk seams and routes containing the known
   turn/sit/bed bridges.
 - A seam-freeze onion skin of the final approach frame and first action frame.
-- One filename-ordered gallery showing all 153 clips without search or filters;
+- One filename-ordered gallery showing all 154 clips without search or filters;
   every card names its runtime PNG and source strip. Global controls pause or
   play the whole gallery and apply or remove pose-aware comparison ghosts from all
   clips together. The summary still counts the 33 missing facing/posture

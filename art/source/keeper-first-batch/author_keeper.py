@@ -372,6 +372,28 @@ def generated_frames(filename, expected, fallback=None, logical_width=32, logica
     return frames
 
 
+def depth_scale_sequence(frames, scales, rise_logical):
+    """Bake a deliberate walk-away depth change without changing the canvas."""
+    if len(frames) != len(scales) or len(frames) != len(rise_logical):
+        raise ValueError("Depth sequence controls must match the frame count")
+    result = []
+    for frame, scale, rise in zip(frames, scales, rise_logical):
+        box = frame.getchannel("A").getbbox()
+        if box is None:
+            raise ValueError("Depth sequence frame is empty")
+        pose = frame.crop(box)
+        pose = pose.resize(
+            (max(1, round(pose.width * scale)), max(1, round(pose.height * scale))),
+            Image.Resampling.LANCZOS,
+        )
+        pose.putalpha(pose.getchannel("A").point(lambda value: 255 if value >= 128 else 0))
+        canvas = Image.new("RGBA", frame.size, (0, 0, 0, 0))
+        bottom = frame.height - 2 - round(rise * D)
+        canvas.alpha_composite(pose, ((frame.width - pose.width) // 2, bottom - pose.height))
+        result.append(canvas)
+    return result
+
+
 def draw_party_hat(draw, center_x=16, base_y=13):
     """Draw the approved small paper party hat from the supplied reference."""
     # A narrow pale-pink cardboard cone, small red pom-pom and irregular red
@@ -539,7 +561,7 @@ DEFAULT_KEEPER_ANIMATION_FPS = 4
 KEEPER_FPS_OVERRIDES = {}
 
 
-def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=True, seat_point=None, hand_use_point=None, pedal_point=None, bowl_point=None, look_target_point=None, bed_surface_point=None, pillow_point=None, movement_vector=None, outfit=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
+def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=True, seat_point=None, hand_use_point=None, pedal_point=None, bowl_point=None, look_target_point=None, bed_surface_point=None, pillow_point=None, movement_vector=None, depth_scale_range=None, depth_offset_y=None, outfit=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
     value = {"w": w, "h": h, "frames": frames, "fps": fps, "density": D, "anchor": anchor_point or [w // 2, h], "z": 50}
     if pivot is not None: value["pivot"] = pivot
     value["loop"] = loop
@@ -551,6 +573,8 @@ def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=Tru
     if bed_surface_point is not None: value["bedSurfacePoint"] = bed_surface_point
     if pillow_point is not None: value["pillowPoint"] = pillow_point
     if movement_vector is not None: value["movementVector"] = movement_vector
+    if depth_scale_range is not None: value["depthScaleRange"] = depth_scale_range
+    if depth_offset_y is not None: value["depthOffsetY"] = depth_offset_y
     if outfit is not None: value["outfit"] = outfit
     if reverse_for is not None: value["reverseFor"] = reverse_for
     if mirror_safe: value["mirrorSafe"] = True
@@ -613,6 +637,11 @@ stairs_up_frames = generated_frames("keeper-stairs-up-generated-source.png", 8)
 stairs_down_frames = generated_frames("keeper-stairs-down-generated-source.png", 8)
 switch_side_frames = generated_frames("keeper-switch-side-generated-source.png", 6)
 switch_back_frames = generated_frames("keeper-switch-back-generated-source.png", 6)
+walk_into_lift_frames = depth_scale_sequence(
+    generated_frames("keeper-walk-into-lift-generated-source.png", 8),
+    (1.0, 0.94, 0.88, 0.81, 0.75, 0.75, 0.75, 0.75),
+    (0, 1.5, 3, 4.5, 6, 6, 6, 6),
+)
 parachute_jump_frames = generated_frames("keeper-parachute-jump-generated-source.png", 9, logical_width=48, logical_height=84, scale_reference_index=0)
 platform_dive_frames = generated_frames("keeper-platform-dive-generated-source.png", 10, logical_width=48, logical_height=56, scale_reference_index=0)
 dig_frames = generated_frames("keeper-dig-generated-source.png", 8)
@@ -695,6 +724,7 @@ save("keeper_stairs_up", stairs_up_frames, 10, mirror_safe=True)
 save("keeper_stairs_down", stairs_down_frames, 10, mirror_safe=True)
 save("keeper_switch_press_side", switch_side_frames, 8, loop=False, hand_use_point=[27, 17], reverse_for="switch_withdraw_side", mirror_safe=True, facing="right", interaction="press-switch", mirrors_for="left")
 save("keeper_switch_press_back", switch_back_frames, 8, loop=False, hand_use_point=[26, 17], reverse_for="switch_withdraw_back", mirror_safe=True, facing="back", interaction="press-switch", mirrors_for="back-left-hand")
+save("keeper_walk_into_lift", walk_into_lift_frames, 8, loop=False, movement_vector=[0, -1], depth_scale_range=[1.0, 0.75], depth_offset_y=[0, -6], facing="back-to-front", interaction="enter-lift")
 save("keeper_parachute_jump", parachute_jump_frames, 10, loop=False, mirror_safe=True, facing="right", interaction="parachute-jump", mirrors_for="left")
 save("keeper_platform_dive", platform_dive_frames, 10, loop=False, mirror_safe=True, facing="right", interaction="platform-dive", mirrors_for="left")
 save("keeper_dig", dig_frames, 8, hand_use_point=[27, 38], mirror_safe=True, facing="right", interaction="dig-ground", mirrors_for="left")
@@ -766,6 +796,7 @@ save_preview("keeper-stairs-down", stairs_down_frames, 100)
 save_preview("keeper-switch-press-right", switch_side_frames, 120, ping_pong=True)
 save_preview("keeper-switch-press-left", [ImageOps.mirror(frame) for frame in switch_side_frames], 120, ping_pong=True)
 save_preview("keeper-switch-press-back", switch_back_frames, 120, ping_pong=True)
+save_preview("keeper-walk-into-lift", walk_into_lift_frames, 120)
 save_preview("keeper-parachute-jump", parachute_jump_frames, 100)
 save_preview("keeper-platform-dive", platform_dive_frames, 100)
 save_preview("keeper-dig", dig_frames, 120)

@@ -61,6 +61,7 @@ per-clip override without changing the sprite strip.
 | `stairs_down` | side | 8 · 4 | yes | balanced descent; mirror left |
 | `switch_press_side` | side | 6 · 4 | no | fingertip `(27,17)`; mirror left; reverse to withdraw |
 | `switch_press_back` | back | 6 · 4 | no | fingertip `(26,17)`; same height as side; mirror hand; reverse |
+| `walk_into_lift` | rear to front | 8 · 4 | no | rearward depth walk; baked 100%→75% scale and 0→−6 px rise; finishes fully front-facing |
 | `parachute_jump` | side | 9 · 4 | no | 48 × 84; pack opens and round canopy deploys |
 | `platform_dive` | side | 10 · 4 | no | 48 × 56; ends vertical head-first; splash separate |
 | `dig` | side | 8 · 4 | yes | spade contact `(27,38)`; mirror left |

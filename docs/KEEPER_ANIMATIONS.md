@@ -134,6 +134,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Drink handled pint | `keeper_drink_pint` | seated front-right; mirror front-left; tankard included |
 | Use stationary exercise bike | `keeper_ride_bike_front` | direct front; 48 × 48; old-school workout kit; actor only; align separate bike to hand `(24,27)`, seat `(24,35)` and pedal `(24,42)` |
 | Press lift button | `keeper_lift_button_front` | front, right-hand reach; mirror to swap hand |
+| Walk into lift | `keeper_walk_into_lift` | rear walk scales from 100% to 75% and rises 6 px, then turns fully front; one-shot depth transition |
 | Spiral stairs up | `keeper_spiral_stairs_up` | right three-quarter to rear curved ascent; staircase/rail separate |
 | Spiral stairs down | `keeper_spiral_stairs_down` | rear to front-right curved descent; staircase/rail separate |
 | Spiral stairs legacy alias | `keeper_spiral_stairs` | retained ascent for compatibility; use the explicit `up` clip for new work |

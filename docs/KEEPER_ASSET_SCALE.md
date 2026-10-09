@@ -62,7 +62,7 @@ then run `scripts/audit_keeper_scale.py` with the bundled Python runtime.
 
 The audit uses the untouched approved `keeper_walk` as its primary reference:
 
-1. It measures every frame in all 171 sheets (1,216 frames at present).
+1. It measures every frame in all 172 sheets (1,224 frames at present).
 2. It prints the original first in every contact-sheet row, followed by the
    tested sheet's first, middle and last representative frames at exactly the
    same fixed scale. No image is fitted to its available canvas.
@@ -229,13 +229,13 @@ the established switch heights, canvas scale or feet anchors.
 The complete starting dimensions for chairs, sofas, tables, beds, toilets,
 baths, showers and object stations are in
 `data/keeper_object_dimensions.json`. The per-frame measurement evidence for
-all 171 sheets is in `docs/keeper-scale-audit/keeper-scale-metrics.json`; the
+all 172 sheets is in `docs/keeper-scale-audit/keeper-scale-metrics.json`; the
 eight contact sheets render every sample at one fixed display scale so a larger
 transparent canvas can never make its keeper look smaller.
 
 For interactive comparison, open `docs/keeper-scale-audit/review.html`. It puts
 the untouched `keeper_walk` in a dedicated scale-authority panel, followed by
-all 153 accepted animation sheets in one filename-ordered gallery, without
+all 154 accepted animation sheets in one filename-ordered gallery, without
 search, filters or card fitting. For standard upright cap poses, its gold badge
 crossing the blue skull-top line is a convenient calibrated proxy; it does not
 replace anatomical landmarks for altered posture, head angle or headwear.
@@ -277,7 +277,7 @@ The page performs a one-time migration of older browser-saved default timings to
 4fps; speed choices saved after that migration are retained.
 At 1500px browser width or above, focused mode lays out the pinned canon, stage
 and compact two-column control console horizontally. Size controls are amber,
-ghost controls purple, action transforms blue, frame navigation teal, and
+ghost mirror, rotation and position controls purple, action transforms blue, frame navigation teal, and
 review/notes green or red.
 Each character-width and character-height slider also has −0.5% and +0.5%
 buttons for precise adjustment. These buttons update the same saved/exported
@@ -298,11 +298,11 @@ party front idle is derived from this same frame.
 There is no canonical rear-sitting reference yet, so rear comparisons require an
 explicit choice and remain visual evidence rather than a certified pose match.
 Each card's Save button persists its width, height, proposed runtime FPS, horizontal/vertical position,
-comparison-ghost controls, reviewed-animation rotation/opacity, free-text notes,
+comparison-ghost mirror, rotation and position controls, reviewed-animation rotation/opacity, free-text notes,
 happy checkbox and mutually exclusive full-re-draft request in the browser.
 Orange denotes unsaved changes, green a saved happy decision and red a saved
 re-draft request. Export is blocked until every changed card is saved, and
-version 6 of `keeper-scale-choices.json` contains the saved review register,
+version 7 of `keeper-scale-choices.json` contains the saved review register,
 notes and re-draft list as well as independent width/height/position production proposals.
 Its `animationFps` value is intended for the clip's source JSON sidecar and the
 generated `public/sprites/manifest.json`; it is not baked into the PNG pixels.

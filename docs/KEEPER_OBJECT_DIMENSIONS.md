@@ -15,6 +15,7 @@ The main furniture datums are:
 | Low coffee table | 12 px above floor |
 | Door handle | 20 px above floor |
 | Light switch, instrument and lift control | 23 px above floor |
+| Rear lift entry | opening at least 24 × 40 px; `keeper_walk_into_lift` bakes a 100%→75% depth scale and 0→−6 px vertical path |
 | TV screen centre from a seated keeper | 26 px above floor |
 | Machete plant-cut contact | 12 px above floor; 18 px right of keeper anchor |
 

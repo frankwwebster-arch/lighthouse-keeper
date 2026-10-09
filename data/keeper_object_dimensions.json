@@ -133,6 +133,13 @@
       "plateSize": [4, 6],
       "keeperClips": ["keeper_lift_button_front"]
     },
+    "liftCabin": {
+      "minimumOpeningHeight": 40,
+      "minimumOpeningWidth": 24,
+      "entryDepthScaleRange": [1.0, 0.75],
+      "entryDepthOffsetY": [0, -6],
+      "keeperClips": ["keeper_walk_into_lift"]
+    },
     "door": {
       "handleCentreHeight": 20,
       "minimumOpeningHeight": 40,

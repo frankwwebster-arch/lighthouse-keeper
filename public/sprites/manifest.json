@@ -3321,6 +3321,34 @@
   "mirrorSafe": true,
   "z": 50
  },
+ "keeper_walk_into_lift": {
+  "file": "keeper_walk_into_lift.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "movementVector": [
+   0,
+   -1
+  ],
+  "depthScaleRange": [
+   1,
+   0.75
+  ],
+  "depthOffsetY": [
+   0,
+   -6
+  ],
+  "loop": false,
+  "facing": "back-to-front",
+  "interaction": "enter-lift",
+  "z": 50
+ },
  "keeper_wash_back": {
   "file": "keeper_wash_back.png",
   "w": 32,

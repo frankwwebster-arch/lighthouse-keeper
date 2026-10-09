@@ -8,7 +8,7 @@ Codex task should be able to continue from here without relying on the old chat.
 
 1. Read this document in full.
 2. Open `docs/keeper-scale-audit/review.html`. A dedicated panel first shows
-   the untouched `keeper_walk` scale authority, followed by all 153 accepted
+   the untouched `keeper_walk` scale authority, followed by all 154 accepted
    clips at one unchanged relative scale in filename order. Every card prints
    its runtime and source filename. Switch View to `One animation at a time`
    for a much larger card, progress/filename status, Previous/Next buttons and
@@ -165,8 +165,8 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 
 ## Current evidence and files
 
-- 171 keeper sheets and 1,216 frames are in the technical batch.
-- 153 animation sheets are accepted into the review gallery.
+- 172 keeper sheets and 1,224 frames are in the technical batch.
+- 154 animation sheets are accepted into the review gallery.
 - 18 obsolete modular/reference sheets are excluded from review and must not
   return to production.
 - 59 sheets were rebuilt or anatomy-normalised in the latest full pass.
@@ -327,7 +327,7 @@ evidence, not final acceptance.
 |---|---:|---|
 | `bridge-clip` | 5 | Existing reusable bridge artwork |
 | `direct-test` | 44 | Same-outfit walk can be juxtaposed for review; seam unproven |
-| `known-bridge` | 36 | Viewer can insert an existing turn/sit/bed bridge; full route still needs endpoint proof |
+| `known-bridge` | 37 | Viewer can insert an existing turn/sit/bed bridge; full route still needs endpoint proof |
 | `locomotion` | 11 | Walking source/family |
 | `missing-bridge` | 33 | Known facing/posture bridge does not exist |
 | `no-walk` | 21 | Outfit/privacy state has no walking family; may instead require an occlusion route |
@@ -604,6 +604,16 @@ timing. This keeps later in-game tuning to a metadata edit rather than a redraw.
   turn, cake eating and dancing. Hat is an overlay, not a new keeper.
 - Knight armour, spaceman, pirate captain, family-friendly Tarzan, Halloween
   costume and mechanic: canonical side/rear/front movement.
+
+### Lift depth transition
+
+- `keeper_walk_into_lift` is the deliberate exception to the otherwise fixed
+  within-clip actor scale. Frames 1–5 walk directly away while shrinking from
+  100% to 75% and rising 6 logical pixels into the rear lift. Frames 6–8 retain
+  the 75% depth scale while turning through three-quarter to a full-front,
+  arms-down neutral endpoint. The baked change is recorded as
+  `depthScaleRange: [1.0, 0.75]` and `depthOffsetY: [0, -6]`; do not “correct”
+  it back to a common per-frame height during scale review.
 - Costume changes are always door-hidden, as defined above.
 
 ## Correction history that must not regress
@@ -680,8 +690,9 @@ npm run build
 
 Also inspect `docs/keeper-scale-audit/review.html` visually:
 
-- every one of the 153 accepted cards is present and named;
-- global Pause and Original ghost controls affect every card;
+- every one of the 154 accepted cards is present and named;
+- global Pause and Original-ghost controls affect every card;
+- each card's ghost mirror, rotation and position choices save and export independently;
 - no card scales its sprite to fit;
 - all directly comparable bodies retain identity and scale;
 - first/last/loop seams and complete routes are checked in frozen onion-skin;
@@ -689,4 +700,4 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 
 ## Ready-to-paste opening prompt for the new Codex task
 
-> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md` in full before changing anything, then read the authoritative scale/animation/door documents it links. I have new comments on clips in `docs/keeper-scale-audit/review.html`; capture every comment by exact filename into a dated review record, triage keep/fix/rebuild/delete/decision-needed, and resolve them. Treat the untouched `keeper_walk` as the immutable identity and scale reference. Costumes and props are overlays; never redraw or resize the keeper merely for clothing, canvas or an object. Costume changes happen only while fully hidden behind a foreground door. Most importantly, make every accepted action reachable seamlessly and reversibly from idle/walking: phase-aware walk stop, correct turn, sit/crouch/climb/prop handover, activity entry/loop/exit, then a clean return to walking. Build the P0 production neutral poses, walk-start/stop and side↔front/back transition system before bulk object wiring; add explicit startPose/endPose and object-event metadata, and test complete routes rather than isolated loops. Rerun the full 171-sheet/1,216-frame scale audit and all project verification, update the handoff/index, commit and push the completed work to remote `main`.
+> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md` in full before changing anything, then read the authoritative scale/animation/door documents it links. I have new comments on clips in `docs/keeper-scale-audit/review.html`; capture every comment by exact filename into a dated review record, triage keep/fix/rebuild/delete/decision-needed, and resolve them. Treat the untouched `keeper_walk` as the immutable identity and scale reference. Costumes and props are overlays; never redraw or resize the keeper merely for clothing, canvas or an object. Costume changes happen only while fully hidden behind a foreground door. Most importantly, make every accepted action reachable seamlessly and reversibly from idle/walking: phase-aware walk stop, correct turn, sit/crouch/climb/prop handover, activity entry/loop/exit, then a clean return to walking. Build the P0 production neutral poses, walk-start/stop and side↔front/back transition system before bulk object wiring; add explicit startPose/endPose and object-event metadata, and test complete routes rather than isolated loops. Rerun the full 172-sheet/1,224-frame scale audit and all project verification, update the handoff/index, commit and push the completed work to remote `main`.
