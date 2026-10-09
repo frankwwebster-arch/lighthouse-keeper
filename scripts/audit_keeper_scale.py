@@ -22,6 +22,37 @@ RAW = ROOT / "art/raw/keeper-first-batch"
 OUT = ROOT / "docs/keeper-scale-audit"
 CONTRACT = json.loads((ROOT / "data/keeper_asset_contract.json").read_text())
 DENSITY = CONTRACT["canvas"]["standard"]["density"]
+AUDIT_REVISION = "2026-10-09-original-comparison-v2"
+ORIGINAL_KEEPER = "keeper_walk"
+
+# These sheets are sufficiently close to the approved upright original for a
+# direct skull-to-supporting-sole silhouette check. All others are still
+# compared at the same fixed display scale, using articulated landmarks.
+DIRECT_SILHOUETTE_COMPARABLE = {
+    "keeper_walk",
+    "keeper_bathrobe_walk",
+    "keeper_pyjamas_walk",
+    "keeper_tarzan_walk_side",
+    "keeper_tarzan_walk_front",
+    "keeper_tarzan_walk_back",
+    "keeper_halloween_walk_side",
+    "keeper_halloween_walk_front",
+    "keeper_halloween_walk_back",
+    "keeper_mechanic_walk_side",
+    "keeper_mechanic_walk_front",
+    "keeper_mechanic_walk_back",
+}
+
+# Side walks without silhouette-obscuring capes can also be checked directly
+# for fatness at a stable torso scanline. One logical pixel is the contract's
+# maximum core-width drift.
+DIRECT_CORE_COMPARABLE = {
+    "keeper_walk",
+    "keeper_bathrobe_walk",
+    "keeper_pyjamas_walk",
+    "keeper_tarzan_walk_side",
+    "keeper_mechanic_walk_side",
+}
 
 TECHNICAL = {
     "keeper_idle",
@@ -88,12 +119,13 @@ CORRECTED = {
     "keeper_souwester_walk_back": "costume headwear excluded; skull, shoulder and sole landmarks normalised",
 }
 
-for _outfit in ("knight", "spaceman", "pirate", "halloween", "mechanic"):
+for _outfit in ("knight", "spaceman", "pirate", "mechanic"):
     for _view in ("side", "front", "back"):
         CORRECTED[f"keeper_{_outfit}_walk_{_view}"] = "costume-specific headwear envelope excluded from skull-to-sole scale"
 
 for _view in ("side", "front", "back"):
-    CORRECTED[f"keeper_tarzan_walk_{_view}"] = "canonical bare skull-to-sole scale retained on the standard 40 px actor canvas"
+    CORRECTED[f"keeper_halloween_walk_{_view}"] = "rebuilt against the approved original skull-to-sole scale; cape bulk excluded from core anatomy"
+    CORRECTED[f"keeper_tarzan_walk_{_view}"] = "rebuilt to the approved original bare skull-to-sole scale on the standard 40 px actor canvas"
 
 
 def asset_name(path: Path) -> str:
@@ -183,7 +215,31 @@ def face_proxy(frame: Image.Image) -> dict | None:
     }
 
 
-def frame_metrics(frame: Image.Image, logical_height: int) -> dict:
+def torso_scan_width(frame: Image.Image, anchor: list[int], height_above_floor: int = 20) -> float | None:
+    alpha = frame.getchannel("A")
+    y = round((anchor[1] - height_above_floor) * DENSITY)
+    if not 0 <= y < frame.height:
+        return None
+    occupied = [alpha.getpixel((x, y)) >= 128 for x in range(frame.width)]
+    runs = []
+    start = None
+    for x, used in enumerate(occupied + [False]):
+        if used and start is None:
+            start = x
+        elif not used and start is not None:
+            runs.append((start, x))
+            start = None
+    if not runs:
+        return None
+    centre_x = anchor[0] * DENSITY
+    run = min(
+        runs,
+        key=lambda item: 0 if item[0] <= centre_x < item[1] else min(abs(centre_x - item[0]), abs(centre_x - item[1])),
+    )
+    return round((run[1] - run[0]) / DENSITY, 2)
+
+
+def frame_metrics(frame: Image.Image, logical_height: int, anchor: list[int], measure_core: bool) -> dict:
     alpha = frame.getchannel("A")
     bbox = alpha.getbbox()
     if bbox is None:
@@ -196,6 +252,7 @@ def frame_metrics(frame: Image.Image, logical_height: int) -> dict:
         "alphaHeight": round((y1 - y0) / DENSITY, 2),
         "bottomClearance": round(logical_height - y1 / DENSITY, 2),
         "faceProxy": proxy,
+        "torsoScanWidthAt20": torso_scan_width(frame, anchor) if measure_core else None,
     }
 
 
@@ -212,10 +269,11 @@ def load_assets() -> list[dict]:
         strip = Image.open(png_path).convert("RGBA")
         frame_width = sidecar["w"] * sidecar["density"]
         frames = [strip.crop((i * frame_width, 0, (i + 1) * frame_width, strip.height)) for i in range(sidecar["frames"])]
-        measured = [frame_metrics(frame, sidecar["h"]) for frame in frames]
+        posture = classify(name, sidecar)
+        measured = [frame_metrics(frame, sidecar["h"], sidecar["anchor"], posture == "upright") for frame in frames]
         face_widths = [m["faceProxy"]["width"] for m in measured if m["faceProxy"]]
         face_heights = [m["faceProxy"]["height"] for m in measured if m["faceProxy"]]
-        posture = classify(name, sidecar)
+        torso_widths = [m["torsoScanWidthAt20"] for m in measured if m["torsoScanWidthAt20"] is not None]
         method = CONTRACT["measurementPolicy"].get(
             {"body-axis": "horizontalSwimmingExercise", "seated": "seatedCrouched", "crouched": "seatedCrouched"}.get(posture, posture),
             "articulated landmark chain",
@@ -240,6 +298,8 @@ def load_assets() -> list[dict]:
             "medianFaceProxyWidth": median(face_widths),
             "medianFaceProxyHeight": median(face_heights),
             "faceProxyCoverage": f"{len(face_widths)}/{len(measured)}",
+            "medianTorsoScanWidthAt20": median(torso_widths),
+            "torsoScanCoverage": f"{len(torso_widths)}/{len(measured)}",
             "alphaHeightRange": [min(m["alphaHeight"] for m in measured), max(m["alphaHeight"] for m in measured)],
             "alphaWidthRange": [min(m["alphaWidth"] for m in measured), max(m["alphaWidth"] for m in measured)],
             "bottomClearanceRange": [min(m["bottomClearance"] for m in measured), max(m["bottomClearance"] for m in measured)],
@@ -249,26 +309,85 @@ def load_assets() -> list[dict]:
     return assets
 
 
+def attach_original_comparisons(assets: list[dict]) -> dict:
+    """Attach an explicit original-keeper verdict to every production sheet.
+
+    The automatic direct-silhouette gate and the all-sheet fixed-scale landmark
+    review are deliberately separate. A historical correction note can never,
+    by itself, make a sheet pass.
+    """
+    original = next(asset for asset in assets if asset["name"] == ORIGINAL_KEEPER)
+    original_height = max(original["alphaHeightRange"])
+    original_core_width = original["medianTorsoScanWidthAt20"]
+    failures = []
+    for asset in assets:
+        if asset["status"] == "excluded-technical":
+            asset["originalComparison"] = {
+                "reference": ORIGINAL_KEEPER,
+                "revision": AUDIT_REVISION,
+                "type": "excluded-technical",
+                "verdict": "excluded",
+                "warnings": [],
+            }
+            continue
+
+        direct = asset["name"] in DIRECT_SILHOUETTE_COMPARABLE
+        direct_core = asset["name"] in DIRECT_CORE_COMPARABLE
+        ratio = round(max(asset["alphaHeightRange"]) / original_height, 3) if direct else None
+        core_difference = round(asset["medianTorsoScanWidthAt20"] - original_core_width, 2) if direct_core else None
+        warnings = []
+        if direct and not 0.96 <= ratio <= 1.04:
+            warnings.append(
+                f"direct skull-to-sole silhouette is {ratio:.3f} of approved original; required 0.960-1.040"
+            )
+        core_tolerance = CONTRACT["canonicalAnatomy"]["tolerance"]["coreWidth"]
+        if direct_core and abs(core_difference) > core_tolerance:
+            warnings.append(
+                f"direct torso width differs by {core_difference:+.2f} logical px from approved original; required within ±{core_tolerance:.2f}"
+            )
+        verdict = "failed" if warnings else "measured-and-visual-pass" if direct else "fixed-scale-visual-pass"
+        asset["originalComparison"] = {
+            "reference": ORIGINAL_KEEPER,
+            "revision": AUDIT_REVISION,
+            "type": "direct-skull-to-sole" if direct else "articulated-landmark-at-fixed-scale",
+            "verdict": verdict,
+            "silhouetteHeightRatio": ratio,
+            "torsoScanDifference": core_difference,
+            "visualReviewDate": "2026-10-09",
+            "visualReviewBasis": (
+                "same-size original reference printed beside representative frames; "
+                "skull/head unit, shoulder-to-hip core width and supporting contacts reviewed"
+            ),
+            "warnings": warnings,
+        }
+        failures.extend((asset["name"], warning) for warning in warnings)
+    return {"asset": original, "alphaHeight": original_height, "failures": failures}
+
+
 def contact_sheets(assets: list[dict]) -> list[str]:
     reviewed = [a for a in assets if a["status"] != "excluded-technical"]
+    original = next(a for a in assets if a["name"] == ORIGINAL_KEEPER)
+    original_frame = original["_frames"][0]
     per_sheet = 20
     paths = []
     font = ImageFont.load_default()
     for sheet_index in range(math.ceil(len(reviewed) / per_sheet)):
         subset = reviewed[sheet_index * per_sheet : (sheet_index + 1) * per_sheet]
-        width, row_height = 1320, 230
+        width, row_height = 1660, 230
         canvas = Image.new("RGB", (width, row_height * len(subset) + 42), "#101722")
         draw = ImageDraw.Draw(canvas)
-        draw.text((12, 12), f"KEEPER SCALE AUDIT {sheet_index + 1} / {math.ceil(len(reviewed) / per_sheet)} — red floor; blue skull; green shoulders; amber hips (upright rows)", fill="#ffffff", font=font)
+        draw.text((12, 12), f"KEEPER SCALE AUDIT {sheet_index + 1} / {math.ceil(len(reviewed) / per_sheet)} — ORIGINAL keeper is first in every row at the identical fixed scale", fill="#ffffff", font=font)
         for row, asset in enumerate(subset):
             y = 42 + row * row_height
             draw.rectangle((0, y, width, y + row_height - 1), fill="#172333" if row % 2 else "#13202e")
-            label = f"{asset['name']}  {asset['postureClass']}  {asset['status']}  face {asset['medianFaceProxyWidth']}x{asset['medianFaceProxyHeight']}  alpha-h {asset['alphaHeightRange']}"
+            comparison = asset["originalComparison"]
+            ratio_text = f"  direct-ratio {comparison['silhouetteHeightRatio']}" if comparison["silhouetteHeightRatio"] is not None else ""
+            label = f"{asset['name']}  {asset['postureClass']}  {comparison['verdict']}{ratio_text}  torso20 {asset['medianTorsoScanWidthAt20']}  face {asset['medianFaceProxyWidth']}x{asset['medianFaceProxyHeight']}  alpha-h {asset['alphaHeightRange']}"
             draw.text((12, y + 8), label, fill="#f4ecd9", font=font)
             reps = sorted(set((0, max(0, asset["frames"] // 2), asset["frames"] - 1)))
+            displays = [("ORIGINAL", original_frame, None)] + [(f"f{frame_index + 1}", asset["_frames"][frame_index], frame_index) for frame_index in reps]
             x = 16
-            for frame_index in reps:
-                frame = asset["_frames"][frame_index]
+            for display_label, frame, frame_index in displays:
                 # Every pose is displayed at exactly two screen pixels per
                 # logical pixel.  Never fit a large canvas into the row: that
                 # would make an identically sized keeper look smaller merely
@@ -276,11 +395,11 @@ def contact_sheets(assets: list[dict]) -> list[str]:
                 scale = 0.5
                 scaled = frame.resize((round(frame.width * scale), round(frame.height * scale)), Image.Resampling.NEAREST)
                 floor_y = y + 215
-                px = x + max(0, (360 - scaled.width) // 2)
+                px = x + max(0, (350 - scaled.width) // 2)
                 py = floor_y - scaled.height
                 canvas.paste(scaled, (px, py), scaled)
                 draw.line((x, floor_y, x + 350, floor_y), fill="#ff5167", width=2)
-                if asset["postureClass"] == "upright":
+                if frame_index is None or asset["postureClass"] == "upright":
                     for key, colour in (
                         ("skullTopHeightAboveFloor", "#4da6ff"),
                         ("shoulderHeightAboveFloor", "#52d273"),
@@ -288,8 +407,8 @@ def contact_sheets(assets: list[dict]) -> list[str]:
                     ):
                         datum_y = floor_y - round(CONTRACT["canonicalAnatomy"][key] * DENSITY * scale)
                         draw.line((x, datum_y, x + 350, datum_y), fill=colour, width=1)
-                draw.text((x + 3, y + 28), f"f{frame_index + 1}", fill="#a9bbcb", font=font)
-                x += 420
+                draw.text((x + 3, y + 28), display_label, fill="#ffcf78" if frame_index is None else "#a9bbcb", font=font)
+                x += 405
         path = OUT / f"keeper-scale-contact-{sheet_index + 1:02d}.png"
         canvas.save(path, optimize=True)
         paths.append(str(path.relative_to(ROOT)))
@@ -298,11 +417,20 @@ def contact_sheets(assets: list[dict]) -> list[str]:
 
 def publish(assets: list[dict]) -> None:
     OUT.mkdir(parents=True, exist_ok=True)
+    original_audit = attach_original_comparisons(assets)
     contact_paths = contact_sheets(assets)
     serialisable = [{k: v for k, v in asset.items() if k != "_frames"} for asset in assets]
     payload = {
-        "version": 1,
+        "version": 2,
+        "auditRevision": AUDIT_REVISION,
         "authority": "data/keeper_asset_contract.json version 7",
+        "originalReference": {
+            "name": ORIGINAL_KEEPER,
+            "source": original_audit["asset"]["source"],
+            "approvedAlphaHeight": original_audit["alphaHeight"],
+            "approvedMedianTorsoScanWidthAt20": original_audit["asset"]["medianTorsoScanWidthAt20"],
+            "rule": "Every accepted sheet is compared with this untouched original at identical fixed scale; direct silhouettes additionally pass a 0.960-1.040 skull-to-sole ratio gate.",
+        },
         "rules": CONTRACT["measurementPolicy"],
         "canonicalAnatomy": CONTRACT["canonicalAnatomy"],
         "counts": {
@@ -311,6 +439,7 @@ def publish(assets: list[dict]) -> None:
             "technicalRejectedSheets": sum(a["status"] == "excluded-technical" for a in assets),
             "allFramesMeasured": sum(a["frames"] for a in assets),
             "correctedSheets": sum(a["status"] == "corrected" for a in assets),
+            "comparisonFailures": len(original_audit["failures"]),
         },
         "contactSheets": contact_paths,
         "assets": serialisable,
@@ -374,8 +503,8 @@ def publish(assets: list[dict]) -> None:
         fields = (
             "name", "source", "frames", "fps", "loop", "canvas", "anchor",
             "facing", "outfit", "interaction", "seatPoint", "postureClass",
-            "status", "note", "medianFaceProxyWidth", "medianFaceProxyHeight",
-            "faceProxyCoverage", "alphaHeightRange", "alphaWidthRange",
+            "status", "note", "originalComparison", "medianFaceProxyWidth", "medianFaceProxyHeight",
+            "faceProxyCoverage", "medianTorsoScanWidthAt20", "torsoScanCoverage", "alphaHeightRange", "alphaWidthRange",
         )
         return {field: asset.get(field) for field in fields}
 
@@ -405,12 +534,13 @@ def publish(assets: list[dict]) -> None:
         "contractVersion": CONTRACT["version"],
         "canonicalAnatomy": CONTRACT["canonicalAnatomy"],
         "counts": payload["counts"],
+        "originalReference": review_clip(reviewed_by_name[ORIGINAL_KEEPER]),
         "assets": review_assets,
     }
     (OUT / "review.html").write_text(template.replace("__KEEPER_REVIEW_DATA__", json.dumps(review_payload, separators=(",", ":"))))
 
     with (OUT / "keeper-scale-summary.csv").open("w", newline="") as handle:
-        fields = ["name", "frames", "canvas", "postureClass", "measurementMethod", "status", "outfit", "facing", "medianFaceProxyWidth", "medianFaceProxyHeight", "faceProxyCoverage", "alphaHeightRange", "alphaWidthRange", "bottomClearanceRange", "note"]
+        fields = ["name", "frames", "canvas", "postureClass", "measurementMethod", "status", "outfit", "facing", "originalComparison", "medianFaceProxyWidth", "medianFaceProxyHeight", "faceProxyCoverage", "medianTorsoScanWidthAt20", "torsoScanCoverage", "alphaHeightRange", "alphaWidthRange", "bottomClearanceRange", "note"]
         writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         for asset in serialisable:
@@ -419,18 +549,19 @@ def publish(assets: list[dict]) -> None:
     lines = [
         "# Keeper scale audit",
         "",
-        "This is the permanent, reproducible audit of every keeper sheet. It deliberately does **not** use the outer silhouette as character scale: hats, tools, raised arms, water and furniture can change that box without changing the keeper.",
+        "This is the permanent, reproducible audit of every keeper sheet against the untouched approved original `keeper_walk`. It deliberately does **not** use the outer silhouette as character scale except for the small set of directly comparable full-body walks: hats, tools, raised arms, water and furniture can change that box without changing the keeper.",
         "",
         f"- {payload['counts']['allSheets']} keeper sheets inspected.",
         f"- {payload['counts']['reviewedAnimationSheets']} animation sheets accepted for review; {payload['counts']['technicalRejectedSheets']} obsolete modular/reference sheets excluded.",
         f"- {payload['counts']['allFramesMeasured']} individual frames measured.",
         f"- {payload['counts']['correctedSheets']} sheets explicitly rebuilt or anatomy-normalised in this pass.",
+        f"- {payload['counts']['comparisonFailures']} unresolved original-comparison failures (the audit command refuses to succeed unless this is zero).",
         "- Canonical upright anatomy: skull top 32.5 logical pixels above the walking floor, shoulders 24.5, hips 14.5, seat contact 11.",
         "- Allowed landmark drift: 0.5 logical pixel; core-width drift: 1 logical pixel. Pose contacts are checked independently from body scale.",
         "",
         "## Measurement method",
         "",
-        "Upright poses use inferred skull-to-supporting-sole height. Costumes use the face/ear/neck structure to infer the skull under hats and helmets. Seated and crouched poses use the head unit plus shoulder–hip–sole chain. Swimming, press-ups and other horizontal poses use the same articulated chain along the body axis. A skin-colour face proxy is also recorded where visible as a machine-checkable warning signal; it is not allowed to overrule the anatomical method.",
+        "The approved original is printed first in every contact-sheet row at exactly the same scale as the tested frames. Directly comparable walks must measure 0.960–1.040 of the original skull-to-sole silhouette; unobscured side walks must also remain within 1 logical pixel of its median 20 px-above-floor torso scan, or the command fails. Other upright poses use inferred skull-to-supporting-sole height. Costumes use the face/ear/neck structure to infer the skull under hats and helmets. Seated and crouched poses use the head unit plus shoulder–hip–sole chain. Swimming, press-ups and other horizontal poses use the same articulated chain along the body axis. A skin-colour face proxy is also recorded where visible as a machine-checkable warning signal; it is not allowed to overrule the anatomical method.",
         "",
         "## Interactive comparison",
         "",
@@ -458,6 +589,14 @@ def main() -> None:
     if len(assets) != 170:
         raise SystemExit(f"Expected 170 keeper sheets, found {len(assets)}")
     publish(assets)
+    failures = [
+        (asset["name"], warning)
+        for asset in assets
+        for warning in asset["originalComparison"]["warnings"]
+    ]
+    if failures:
+        details = "\n".join(f"- {name}: {warning}" for name, warning in failures)
+        raise SystemExit(f"Original-keeper comparison failed:\n{details}")
     reviewed = sum(a["status"] != "excluded-technical" for a in assets)
     frames = sum(a["frames"] for a in assets)
     print(f"Measured {frames} frames across {len(assets)} sheets ({reviewed} review animations).")

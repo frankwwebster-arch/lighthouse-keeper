@@ -547,10 +547,32 @@ assert object_dimensions['fixturesAndStations']['wallSwitch']['centreHeight']==2
 assert object_dimensions['fixturesAndStations']['gardenPlantCutting']['cutContactHeight']==12
 assert object_dimensions['fixturesAndStations']['gardenPlantCutting']['bladeEdge']=='smooth'
 scale_audit=json.loads((root/'docs/keeper-scale-audit/keeper-scale-metrics.json').read_text())
+assert scale_audit['version']==2
+assert scale_audit['auditRevision']=='2026-10-09-original-comparison-v2'
+assert scale_audit['originalReference']['name']=='keeper_walk'
+assert scale_audit['originalReference']['source']=='art/raw/keeper-first-batch/keeper_walk_f8.png'
+assert scale_audit['originalReference']['approvedMedianTorsoScanWidthAt20']==13.75
 assert scale_audit['counts']['allSheets']==170
 assert scale_audit['counts']['reviewedAnimationSheets']==152
 assert scale_audit['counts']['technicalRejectedSheets']==18
 assert scale_audit['counts']['allFramesMeasured']==1210
+assert scale_audit['counts']['comparisonFailures']==0
+assert len(scale_audit['assets'])==170
+assert all('originalComparison' in asset for asset in scale_audit['assets'])
+assert all(
+    asset['originalComparison']['verdict'] in {'measured-and-visual-pass','fixed-scale-visual-pass'}
+    for asset in scale_audit['assets']
+    if asset['status']!='excluded-technical'
+)
+direct_comparisons=[
+    asset for asset in scale_audit['assets']
+    if asset['originalComparison']['type']=='direct-skull-to-sole'
+]
+assert len(direct_comparisons)==12
+assert all(0.96<=asset['originalComparison']['silhouetteHeightRatio']<=1.04 for asset in direct_comparisons)
+direct_core=[asset for asset in direct_comparisons if asset['originalComparison']['torsoScanDifference'] is not None]
+assert len(direct_core)==5
+assert all(abs(asset['originalComparison']['torsoScanDifference'])<=1 for asset in direct_core)
 assert len(scale_audit['contactSheets'])==8
 assert all((root/path).exists() for path in scale_audit['contactSheets'])
 scale_review=(root/'docs/keeper-scale-audit/review.html').read_text()
@@ -559,6 +581,7 @@ assert '"reviewedAnimationSheets":152' in scale_review
 for token in (
     'Action only', 'Raw matching-walk seam', 'Known bridge route',
     'Seam freeze / onion skin', 'keeper_walk', 'Matching-outfit walking source',
+    'Original ghost off', 'measured-and-visual-pass', 'torso difference',
 ):
     assert token in scale_review,token
 walk=Image.open(root/'public/sprites'/manifest['keeper_walk']['file']).convert('RGBA')

@@ -1,17 +1,18 @@
 # Keeper scale audit
 
-This is the permanent, reproducible audit of every keeper sheet. It deliberately does **not** use the outer silhouette as character scale: hats, tools, raised arms, water and furniture can change that box without changing the keeper.
+This is the permanent, reproducible audit of every keeper sheet against the untouched approved original `keeper_walk`. It deliberately does **not** use the outer silhouette as character scale except for the small set of directly comparable full-body walks: hats, tools, raised arms, water and furniture can change that box without changing the keeper.
 
 - 170 keeper sheets inspected.
 - 152 animation sheets accepted for review; 18 obsolete modular/reference sheets excluded.
 - 1210 individual frames measured.
 - 59 sheets explicitly rebuilt or anatomy-normalised in this pass.
+- 0 unresolved original-comparison failures (the audit command refuses to succeed unless this is zero).
 - Canonical upright anatomy: skull top 32.5 logical pixels above the walking floor, shoulders 24.5, hips 14.5, seat contact 11.
 - Allowed landmark drift: 0.5 logical pixel; core-width drift: 1 logical pixel. Pose contacts are checked independently from body scale.
 
 ## Measurement method
 
-Upright poses use inferred skull-to-supporting-sole height. Costumes use the face/ear/neck structure to infer the skull under hats and helmets. Seated and crouched poses use the head unit plus shoulder–hip–sole chain. Swimming, press-ups and other horizontal poses use the same articulated chain along the body axis. A skin-colour face proxy is also recorded where visible as a machine-checkable warning signal; it is not allowed to overrule the anatomical method.
+The approved original is printed first in every contact-sheet row at exactly the same scale as the tested frames. Directly comparable walks must measure 0.960–1.040 of the original skull-to-sole silhouette; unobscured side walks must also remain within 1 logical pixel of its median 20 px-above-floor torso scan, or the command fails. Other upright poses use inferred skull-to-supporting-sole height. Costumes use the face/ear/neck structure to infer the skull under hats and helmets. Seated and crouched poses use the head unit plus shoulder–hip–sole chain. Swimming, press-ups and other horizontal poses use the same articulated chain along the body axis. A skin-colour face proxy is also recorded where visible as a machine-checkable warning signal; it is not allowed to overrule the anatomical method.
 
 ## Interactive comparison
 
@@ -27,9 +28,9 @@ Open [the sizing and transition review](review.html) to see every accepted anima
 - `keeper_drive_speedboat` — seated anatomy normalised to the sit-side head and torso unit.
 - `keeper_eat_seated` — seated anatomy normalised to the sit-side head and torso unit.
 - `keeper_fish_standing` — enlarged on a 64 by 56 canvas so the keeper, not the rod and line, determines actor scale.
-- `keeper_halloween_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
-- `keeper_halloween_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
-- `keeper_halloween_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_halloween_walk_back` — rebuilt against the approved original skull-to-sole scale; cape bulk excluded from core anatomy.
+- `keeper_halloween_walk_front` — rebuilt against the approved original skull-to-sole scale; cape bulk excluded from core anatomy.
+- `keeper_halloween_walk_side` — rebuilt against the approved original skull-to-sole scale; cape bulk excluded from core anatomy.
 - `keeper_hot_drink_drink` — neighbouring-frame flecks removed while retaining canonical actor, mug and steam.
 - `keeper_hot_drink_put_down` — neighbouring-frame flecks removed while retaining the released mug.
 - `keeper_hot_tub` — redrawn and normalised by the visible head/shoulder unit rather than the water silhouette.
@@ -72,9 +73,9 @@ Open [the sizing and transition review](review.html) to see every accepted anima
 - `keeper_spaceman_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_spiral_stairs_down` — frame 4 redrawn to remove an erroneous third hand while preserving the descent cycle.
 - `keeper_swim_costume_horizontal` — enlarged on an expanded canvas so horizontal anatomy matches the upright keeper.
-- `keeper_tarzan_walk_back` — canonical bare skull-to-sole scale retained on the standard 40 px actor canvas.
-- `keeper_tarzan_walk_front` — canonical bare skull-to-sole scale retained on the standard 40 px actor canvas.
-- `keeper_tarzan_walk_side` — canonical bare skull-to-sole scale retained on the standard 40 px actor canvas.
+- `keeper_tarzan_walk_back` — rebuilt to the approved original bare skull-to-sole scale on the standard 40 px actor canvas.
+- `keeper_tarzan_walk_front` — rebuilt to the approved original bare skull-to-sole scale on the standard 40 px actor canvas.
+- `keeper_tarzan_walk_side` — rebuilt to the approved original bare skull-to-sole scale on the standard 40 px actor canvas.
 - `keeper_watch_movie` — seated anatomy normalised to the sit-side head and torso unit.
 - `keeper_watch_tv` — seated anatomy normalised to the sit-side head and torso unit.
 - `keeper_water_plants_side` — expanded to a 48 px side-action canvas so the watering can and spout remain complete.

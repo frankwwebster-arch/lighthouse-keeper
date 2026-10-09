@@ -170,7 +170,8 @@ Props appearing or disappearing at a handover are acceptable when they are in hi
 Delivered in `docs/keeper-scale-audit/review.html`:
 
 - All 152 accepted clips at one unchanged world scale on a shared 96 × 96 stage,
-  with floor, skull, shoulder, hip and seat guide lines and 2×/3×/4× integer zoom.
+  with floor, skull, shoulder, hip and seat guide lines, an optional untouched
+  original-keeper ghost, and 2×/3×/4× integer zoom.
 - Action-only, raw matching-outfit walk seams and routes containing the known
   turn/sit/bed bridges.
 - A seam-freeze onion skin of the final approach frame and first action frame.

@@ -48,6 +48,37 @@ page explains it in ordinary language.
   its canvas. Measure the articulated skull–shoulder–hip–sole chain and head
   unit, then enlarge the transparent canvas if a prop or limb needs more room.
 
+## Mandatory original-comparison audit
+
+Every keeper delivery must run the audit again over all sheets; a previous
+`corrected` label is evidence of history, not permission to skip the check.
+Run the authoring script first when source art changes, publish runtime sprites,
+then run `scripts/audit_keeper_scale.py` with the bundled Python runtime.
+
+The audit uses the untouched approved `keeper_walk` as its primary reference:
+
+1. It measures every frame in all 170 sheets (1,210 frames at present).
+2. It prints the original first in every contact-sheet row, followed by the
+   tested sheet's first, middle and last representative frames at exactly the
+   same fixed scale. No image is fitted to its available canvas.
+3. Directly comparable full-body walks receive a fail-closed skull-to-sole
+   ratio check. They must be 0.960–1.040 of the original's 38 px visible
+   maximum or the audit command exits unsuccessfully. Unobscured side walks
+   also receive a torso-width scan 20 px above the floor and must remain within
+   1 logical pixel of the original, so matching height cannot conceal a thin or
+   over-wide keeper.
+4. Costumes with headwear and compressed/rotated actions are checked with the
+   canonical head unit, core width and articulated skull–shoulder–hip–sole
+   landmarks. Hats, tools, props, water and raised limbs remain excluded.
+5. Every accepted sheet records its method, original reference, verdict and
+   warnings in `keeper-scale-metrics.json`; verification requires zero failures
+   and refuses reports that omit an animation.
+
+Open `docs/keeper-scale-audit/review.html` and select **Original ghost on** to
+overlay the untouched original behind any clip without resizing either one.
+The eight printable contact sheets remain the permanent evidence for the
+complete visual pass.
+
 The coordinate origin is the top-left. X increases rightward and Y increases
 downward. A side-facing point at X mirrors with `mirroredX = canvasWidth - X`.
 

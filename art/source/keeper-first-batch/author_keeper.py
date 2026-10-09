@@ -895,8 +895,11 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
         "keeper_knight_walk_": 0.92,
         "keeper_spaceman_walk_": 0.84,
         "keeper_pirate_walk_": 0.86,
-        "keeper_tarzan_walk_": 0.73,
-        "keeper_halloween_walk_": 0.76,
+        # These two bare-headed families can be compared directly with the
+        # approved original walk.  The earlier multipliers produced only a
+        # 33-35 px skull-to-sole silhouette versus the original's 38 px.
+        "keeper_tarzan_walk_": 0.84,
+        "keeper_halloween_walk_": 0.84,
         "keeper_mechanic_walk_": 0.83,
     }.items() if clip_name.startswith(prefix)), None)
     anatomy_scale = {
@@ -982,9 +985,9 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
     if clip_name in {"keeper_bath_wash", "keeper_hot_tub"}:
         frames = [remove_small_alpha_components(frame, min_pixels=80) for frame in frames]
     if clip_name.startswith("keeper_tarzan_walk_"):
-        # Tarzan is bare-headed. Preserve his already-canonical skull-to-sole
-        # scale but remove the 8 px of logical headwear clearance inherited by
-        # the other costume families.
+        # Tarzan is bare-headed. Preserve the now original-matched
+        # skull-to-sole scale but remove the 8 px of logical headwear clearance
+        # inherited by the other costume families.
         frames = [frame.crop((0, 8 * D, 32 * D, 48 * D)) for frame in frames]
     if clip_name == "keeper_put_record":
         # The source's two middle poses touch by a few pixels.  The usable
