@@ -7,7 +7,7 @@ import type { DoOrder } from './game/commands'
 import { answeredChat, arrive, ask, buy, completeMission, dropChat, gift, giftUpgrade, setRules, upgrade, nextDay, order, rightAnswer, rollPersonality, shopOpen, startGame, stopDoing, tick, wrongAnswer, type State } from './game/engine'
 import { isNo, isYes, read } from './game/matcher'
 import { checkAnswer, makeQuiz } from './game/quiz'
-import { changePin, deleteGame, saveGame, saveRules, verifyPin, type Player } from './game/remote'
+import { changePin, deleteGame, saveAnimFps, saveGame, saveRules, verifyPin, type Player } from './game/remote'
 import type { Rules } from './game/config'
 import { ack, tell } from './game/words'
 import { Alerts, CommandBar, Diary, Hud, Missions, ObjectMenu, PromptBar, GrownUps, Report, SettingsMenu, Setup, Shop, type Entry } from './ui/Panels'
@@ -259,6 +259,7 @@ export default function App({ player, db, initial, rules: ownRules, onSwitch }: 
           credits={s.credits}
           who={player.name}
           verify={(pin) => verifyPin(pin, db)}
+          onAnimFps={(fps, pin) => void saveAnimFps(pin, fps, db)}
           onRules={(r, pin) => { setOwnRules(r); void saveRules(player.id, pin, r, db); update((x) => setRules(x, r)) }}
           onGift={(n) => update((x) => gift(x, n))}
           onGiftUpgrade={(id) => update((x) => giftUpgrade(x, id))}

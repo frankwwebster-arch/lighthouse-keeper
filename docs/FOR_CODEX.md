@@ -2,6 +2,10 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Animation speeds set in the game (9 Oct 2026)
+
+Frank can now change any animation's fps while playing (Grown-ups → Animation speeds), using the same 1–20 fps, 0.5-step range as your review page. Those are live overrides only. When he is happy, "Copy for Codex" gives `{ "animationFps": { "<sprite name>": <fps>, … } }`: please write each value into that clip's source JSON sidecar so `npm run sprites` puts it in the manifest. The override then matches the drawn speed and can be cleared. Logic: `src/game/animFps.ts`; storage key `animFps` in the `settings` table.
+
 ## Doors, stairway and costumes (9 Oct 2026)
 
 Frank has answered every open question; the full record is `docs/DOORS_STAIRS_AND_COSTUMES.md` (sections 2 and 9). What it asks of you:

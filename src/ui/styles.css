@@ -111,3 +111,14 @@ input { font: inherit; font-size: 18px; min-height: 48px; padding: 6px 12px; bor
 .num input[type=range] { min-height:30px; } .num b { grid-column:2; }
 
 .players { display:grid; gap:10px; } .players .big.on { outline:4px solid #ffd35a; }
+/* Grown-ups: animation speeds */
+.speeds { display:grid; gap:8px; } .speeds input[type=search] { width:100%; }
+.speed-list { max-height:240px; overflow-y:auto; display:grid; gap:2px; border:1px solid #ccd; border-radius:8px; padding:4px; }
+.speed-list button { display:flex; justify-content:space-between; gap:8px; text-align:left; padding:6px 8px; min-height:36px; }
+.speed-list button span { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; } .speed-list button.on { outline:2px solid var(--accent); }
+.speed-list b { font-weight:400; color:#667; white-space:nowrap; } .speed-list b.own { font-weight:700; color:var(--accent); }
+.speed-pick { display:grid; grid-template-columns:auto 1fr; gap:12px; align-items:center; }
+.speed-preview { height:180px; width:auto; max-width:200px; background:#eef1f6; border-radius:8px; image-rendering:pixelated; }
+.speed-pick .row { align-items:center; flex-wrap:wrap; } .speed-pick input[type=range] { flex:1; min-width:100px; min-height:30px; }
+.speeds textarea { width:100%; font-family:ui-monospace,monospace; font-size:.8rem; }
+@media (max-width:520px) { .speed-pick { grid-template-columns:1fr; } .speed-preview { justify-self:center; } }

@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react'
+import type { FpsOverrides } from '../game/animFps'
+import { AnimationSpeeds } from './AnimSpeeds'
 import { DEFAULT_RULES, FOODS, MISSIONS, INTERACTIONS, NEEDS, NEED_LABEL, OBJECTS, UPGRADES, VISITOR_ONLY, foodById, baseTierName, objectById, upgradeKey, upgradeTier, type InteractionDef, type NeedId, type ObjectId, type PetKind, type Rules } from '../game/config'
 import { insideVisit, moodOf, moodWord, nextUpgrade, owned, priceOf, tierOf, upgradePrice, waitingVisit, type DayResult, type Prompt, type State } from '../game/engine'
 import type { Order } from '../game/engine'
@@ -371,7 +373,7 @@ const Num = ({ label, hint, value, onChange, min = 0, max = 999 }: { label: stri
   </label>
 )
 
-export function GrownUps({ s, rules, credits, who, verify, onRules, onGift, onGiftUpgrade, onFinishMission, onPin, onClose }: { s: State; rules: Rules; credits: number; who: string; verify: (pin: string) => Promise<boolean>; onRules: (r: Rules, pin: string) => void; onGift: (n: number) => void; onGiftUpgrade: (id: ObjectId) => void; onFinishMission: (id: string) => void; onPin: (pin: string, newPin: string) => Promise<boolean>; onClose: () => void }) {
+export function GrownUps({ s, rules, credits, who, verify, onRules, onGift, onGiftUpgrade, onFinishMission, onPin, onAnimFps, onClose }: { s: State; rules: Rules; credits: number; who: string; verify: (pin: string) => Promise<boolean>; onRules: (r: Rules, pin: string) => void; onAnimFps: (fps: FpsOverrides, pin: string) => void; onGift: (n: number) => void; onGiftUpgrade: (id: ObjectId) => void; onFinishMission: (id: string) => void; onPin: (pin: string, newPin: string) => Promise<boolean>; onClose: () => void }) {
   const [typed, setTyped] = useState('')
   const [pin, setPin] = useState<string | null>(null)
   const [wrong, setWrong] = useState(false)
@@ -495,6 +497,11 @@ export function GrownUps({ s, rules, credits, who, verify, onRules, onGift, onGi
           </div>
         ))}
         <p className="dim">A finished floor mission builds its floor overnight: it appears the next morning (one new floor a morning). The lift goes in at once.</p>
+        <h3>Animation speeds</h3>
+        <details className="mission-dials">
+          <summary>Change how fast each animation plays <small>(the whole game, not just {who})</small></summary>
+          <AnimationSpeeds onSave={(fps) => onAnimFps(fps, pin ?? '')} />
+        </details>
         <h3>PIN</h3>
         <div className="row">
           <input value={newPin} onChange={(e) => setNewPin(e.target.value.replace(/\D/g, '').slice(0, 8))} placeholder="New PIN (digits)" inputMode="numeric" />

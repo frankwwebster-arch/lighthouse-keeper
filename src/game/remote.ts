@@ -5,6 +5,7 @@
  * browser and the game still works.
  */
 
+import { cleanFps, type FpsOverrides } from './animFps'
 import { DEFAULT_RULES, type Rules } from './config'
 import type { State } from './engine'
 import { clear, load, revive, save } from './storage'
@@ -17,6 +18,7 @@ export interface Player {
 const PLAYERS = 'lighthouse-keeper:players'
 const RULES = (id: string) => `lighthouse-keeper:rules:${id}`
 const PIN = 'lighthouse-keeper:pin'
+const ANIM_FPS = 'lighthouse-keeper:anim-fps'
 
 async function api<T>(url: string, init?: RequestInit): Promise<T | null> {
   try {
@@ -113,4 +115,24 @@ export async function changePin(pin: string, newPin: string, db: boolean): Promi
     return false
   }
   return true
+}
+
+/** The grown-ups' animation speeds (one set for the whole game). From the database when there is one, else this browser. */
+export async function loadAnimFps(): Promise<FpsOverrides> {
+  const r = await api<{ db: boolean; fps: unknown }>('/api/anim-fps')
+  if (r?.db) return cleanFps(r.fps)
+  try {
+    return cleanFps(JSON.parse(localStorage.getItem(ANIM_FPS) ?? '{}'))
+  } catch {
+    return {}
+  }
+}
+
+export async function saveAnimFps(pin: string, fps: FpsOverrides, db: boolean): Promise<void> {
+  try {
+    localStorage.setItem(ANIM_FPS, JSON.stringify(fps))
+  } catch {
+    // fine
+  }
+  if (db) await api('/api/anim-fps', json('PUT', { pin, fps }))
 }
