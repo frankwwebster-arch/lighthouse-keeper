@@ -90,8 +90,8 @@ Initial clips:
 | `souwester_walk_front` | front | 8 · 10 | yes | direct walk toward camera; vector `(0,1)` |
 | `dance` | front | 8 · 10 | yes | joyful full-body loop with strong arm and leg motion |
 | `play_guitar` | front ¾ | 8 · 10 | yes | 48 × 40; guitar included; mirror front-left |
-| `play_drums_front` | front seated | 8 · 10 | yes | 32 × 48; seat `(16,37)`; strike centre `(16,27)` |
-| `play_drums_back` | rear seated | 8 · 10 | yes | 32 × 48; same seat and strike points; kit separate |
+| `play_drums_front` | front seated | 8 · 10 | yes | 32 × 48; paired timing/scale master; seat `(16,37)`; strike centre `(16,27)` |
+| `play_drums_back` | rear seated | 8 · 10 | yes | 32 × 48; same eight poses through 180°; identical seat and strike points; kit separate |
 | `watch_movie` | rear ¾ reclined | 8 · 6 | yes | 48 × 40; popcorn included; seating and screen separate |
 | `clear_snow` | side | 8 · 8 | yes | 48 × 40; winter coat and shovel; contact `(43,37)`; mirror left |
 | `crouch_work_back` | rear crouched | 8 · 8 | yes | reusable low work proxy; ground contact `(16,38)` |

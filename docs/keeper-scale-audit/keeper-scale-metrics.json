@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "authority": "data/keeper_asset_contract.json version 4",
+  "authority": "data/keeper_asset_contract.json version 5",
   "rules": {
     "upright": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
     "seatedCrouched": "head unit plus articulated shoulder-hip-sole chain; compressed silhouette height is never used as scale",
@@ -17751,17 +17751,17 @@
       "postureClass": "seated",
       "measurementMethod": "head unit plus articulated shoulder-hip-sole chain; compressed silhouette height is never used as scale",
       "status": "corrected",
-      "note": "seated anatomy normalised to the sit-side head and torso unit",
-      "medianFaceProxyWidth": 3.75,
-      "medianFaceProxyHeight": 3.25,
+      "note": "normalised to the front drum master with matching seated envelope and 180-degree frame timing",
+      "medianFaceProxyWidth": 4.5,
+      "medianFaceProxyHeight": 4.25,
       "faceProxyCoverage": "8/8",
       "alphaHeightRange": [
-        33.25,
-        41.5
+        38.75,
+        45.5
       ],
       "alphaWidthRange": [
-        21.5,
-        23.0
+        23.0,
+        24.75
       ],
       "bottomClearanceRange": [
         0.5,
@@ -17770,178 +17770,178 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            4.75,
-            14.25,
-            27.0,
+            4.25,
+            3.5,
+            27.75,
             47.5
           ],
-          "alphaWidth": 22.25,
-          "alphaHeight": 33.25,
+          "alphaWidth": 23.5,
+          "alphaHeight": 44.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              4.75,
+              11.25,
+              8.75,
+              15.75
+            ],
+            "width": 4.0,
+            "height": 4.5,
+            "area": 226
+          }
+        },
+        {
+          "alphaBox": [
+            4.25,
+            8.75,
+            27.5,
+            47.5
+          ],
+          "alphaWidth": 23.25,
+          "alphaHeight": 38.75,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              10.75,
+              16.0,
+              22.25,
+              20.0
+            ],
+            "width": 11.5,
+            "height": 4.0,
+            "area": 116
+          }
+        },
+        {
+          "alphaBox": [
+            4.0,
+            4.75,
+            27.75,
+            47.5
+          ],
+          "alphaWidth": 23.75,
+          "alphaHeight": 42.75,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
               23.25,
-              22.25,
-              24.75,
-              28.25
-            ],
-            "width": 1.5,
-            "height": 6.0,
-            "area": 51
-          }
-        },
-        {
-          "alphaBox": [
-            5.0,
-            11.25,
-            27.0,
-            47.5
-          ],
-          "alphaWidth": 22.0,
-          "alphaHeight": 36.25,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              22.5,
-              17.5,
-              26.5,
-              20.75
+              13.0,
+              27.25,
+              17.25
             ],
             "width": 4.0,
-            "height": 3.25,
-            "area": 147
+            "height": 4.25,
+            "area": 212
           }
         },
         {
           "alphaBox": [
-            5.0,
-            11.25,
-            27.0,
+            3.5,
+            2.0,
+            28.25,
             47.5
           ],
-          "alphaWidth": 22.0,
-          "alphaHeight": 36.25,
+          "alphaWidth": 24.75,
+          "alphaHeight": 45.5,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
+              4.5,
+              9.5,
+              8.5,
+              13.5
+            ],
+            "width": 4.0,
+            "height": 4.0,
+            "area": 186
+          }
+        },
+        {
+          "alphaBox": [
+            4.25,
+            8.75,
+            27.5,
+            47.5
+          ],
+          "alphaWidth": 23.25,
+          "alphaHeight": 38.75,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              10.25,
+              16.0,
               22.5,
-              17.5,
-              26.25,
               20.75
             ],
-            "width": 3.75,
-            "height": 3.25,
-            "area": 142
-          }
-        },
-        {
-          "alphaBox": [
-            5.25,
-            14.25,
-            26.75,
-            47.5
-          ],
-          "alphaWidth": 21.5,
-          "alphaHeight": 33.25,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              7.5,
-              21.5,
-              8.5,
-              27.25
-            ],
-            "width": 1.0,
-            "height": 5.75,
-            "area": 46
+            "width": 12.25,
+            "height": 4.75,
+            "area": 139
           }
         },
         {
           "alphaBox": [
             4.5,
-            6.0,
+            8.75,
             27.5,
             47.5
           ],
           "alphaWidth": 23.0,
-          "alphaHeight": 41.5,
+          "alphaHeight": 38.75,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              6.5,
-              13.5,
-              10.5,
-              17.25
+              7.75,
+              29.75,
+              12.5,
+              34.5
             ],
-            "width": 4.0,
-            "height": 3.75,
-            "area": 162
+            "width": 4.75,
+            "height": 4.75,
+            "area": 247
           }
         },
         {
           "alphaBox": [
-            5.25,
-            11.25,
-            26.75,
+            4.0,
+            3.5,
+            28.0,
             47.5
           ],
-          "alphaWidth": 21.5,
-          "alphaHeight": 36.25,
+          "alphaWidth": 24.0,
+          "alphaHeight": 44.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              6.0,
-              17.5,
-              9.75,
-              20.5
+              23.25,
+              11.75,
+              27.5,
+              16.0
             ],
-            "width": 3.75,
-            "height": 3.0,
-            "area": 142
+            "width": 4.25,
+            "height": 4.25,
+            "area": 216
           }
         },
         {
           "alphaBox": [
-            5.0,
-            11.25,
-            26.75,
+            4.25,
+            8.5,
+            27.5,
             47.5
           ],
-          "alphaWidth": 21.75,
-          "alphaHeight": 36.25,
+          "alphaWidth": 23.25,
+          "alphaHeight": 39.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              22.0,
-              17.5,
-              26.0,
-              20.75
+              9.25,
+              16.0,
+              21.5,
+              19.5
             ],
-            "width": 4.0,
-            "height": 3.25,
-            "area": 147
-          }
-        },
-        {
-          "alphaBox": [
-            5.25,
-            14.25,
-            26.75,
-            47.5
-          ],
-          "alphaWidth": 21.5,
-          "alphaHeight": 33.25,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              20.0,
-              21.0,
-              21.75,
-              23.0
-            ],
-            "width": 1.75,
-            "height": 2.0,
-            "area": 38
+            "width": 12.25,
+            "height": 3.5,
+            "area": 118
           }
         }
       ]
@@ -17963,7 +17963,7 @@
       "postureClass": "seated",
       "measurementMethod": "head unit plus articulated shoulder-hip-sole chain; compressed silhouette height is never used as scale",
       "status": "corrected",
-      "note": "seated anatomy normalised to the sit-side head and torso unit",
+      "note": "paired front/rear drum master; seated anatomy and frame timing are authoritative",
       "medianFaceProxyWidth": 15.75,
       "medianFaceProxyHeight": 6.75,
       "faceProxyCoverage": "8/8",

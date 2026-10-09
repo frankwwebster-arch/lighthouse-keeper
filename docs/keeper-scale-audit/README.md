@@ -40,8 +40,8 @@ Upright poses use inferred skull-to-supporting-sole height. Costumes use the fac
 - `keeper_pirate_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_pirate_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_place_cake` — redrawn for the standard 19 px table datum and a fully straight final pose.
-- `keeper_play_drums_back` — seated anatomy normalised to the sit-side head and torso unit.
-- `keeper_play_drums_front` — seated anatomy normalised to the sit-side head and torso unit.
+- `keeper_play_drums_back` — normalised to the front drum master with matching seated envelope and 180-degree frame timing.
+- `keeper_play_drums_front` — paired front/rear drum master; seated anatomy and frame timing are authoritative.
 - `keeper_pressups_side` — redrawn and body-axis-normalised without shrinking its canonical head/core depth.
 - `keeper_put_record` — expanded to a 48 px side-action canvas so the record remains complete in frames 5–7.
 - `keeper_ride_bike_front` — enlarged from its undersized head unit on a 48 px interaction canvas.

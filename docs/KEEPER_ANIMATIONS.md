@@ -88,8 +88,8 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Walk toward camera in sou'wester | `keeper_souwester_walk_front` | direct front view; movement vector `(0,1)` |
 | Dance | `keeper_dance` | front-facing eight-frame loop; broad arm and leg motion |
 | Play guitar | `keeper_play_guitar` | standing front-right; guitar included; mirror front-left |
-| Play drums facing camera | `keeper_play_drums_front` | seated direct front; sticks included; stool and kit separate |
-| Play drums back to camera | `keeper_play_drums_back` | seated direct rear; sticks included; stool and kit separate |
+| Play drums facing camera | `keeper_play_drums_front` | seated direct front; paired motion/scale master; sticks included; stool and kit separate |
+| Play drums back to camera | `keeper_play_drums_back` | the same eight poses viewed through 180°; identical seated scale, seat/strike contacts and timing; sticks included; stool and kit separate |
 | Watch a movie | `keeper_watch_movie` | reclined rear-right with popcorn; mirror rear-left; seating and screen separate |
 | Clear snow | `keeper_clear_snow` | thick winter coat and shovel; right; mirror left; snow bank/effects separate |
 | Crouched ground work | `keeper_crouch_work_back` | direct rear reusable proxy; animated low alternating arm reaches |

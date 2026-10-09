@@ -60,6 +60,12 @@ outer silhouette width is no longer accepted as a scale proxy. The standing
 fishing clip now uses a 64 × 56 transparent canvas so the keeper reaches the
 canonical actor height without fitting him to the rod, line or catch.
 
+Paired-animation correction: `keeper_play_drums_front` is now the scale and
+timing master for `keeper_play_drums_back`. The rear strip uses the same eight
+arm/stick phases viewed through 180 degrees, with its seated body envelope
+normalised independently of raised-stick whitespace. Both retain seat `(16,37)`
+and strike `(16,27)`.
+
 ## Removed from the public art-review set
 
 The modular front/back limb, torso and head layers, `keeper_reference`, and the

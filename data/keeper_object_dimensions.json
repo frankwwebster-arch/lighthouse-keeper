@@ -9,7 +9,7 @@
     "depth": "side-view footprint; no perspective scaling"
   },
   "keeperBasis": {
-    "source": "data/keeper_asset_contract.json version 4",
+    "source": "data/keeper_asset_contract.json version 5",
     "skullTopHeight": 32.5,
     "shoulderHeight": 24.5,
     "hipHeight": 14.5,

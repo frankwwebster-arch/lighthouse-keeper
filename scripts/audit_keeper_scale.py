@@ -67,8 +67,8 @@ CORRECTED = {
     "keeper_row_boat": "seated anatomy normalised to the sit-side head and torso unit",
     "keeper_drive_speedboat": "seated anatomy normalised to the sit-side head and torso unit",
     "keeper_watch_tv": "seated anatomy normalised to the sit-side head and torso unit",
-    "keeper_play_drums_front": "seated anatomy normalised to the sit-side head and torso unit",
-    "keeper_play_drums_back": "seated anatomy normalised to the sit-side head and torso unit",
+    "keeper_play_drums_front": "paired front/rear drum master; seated anatomy and frame timing are authoritative",
+    "keeper_play_drums_back": "normalised to the front drum master with matching seated envelope and 180-degree frame timing",
     "keeper_watch_movie": "seated anatomy normalised to the sit-side head and torso unit",
     "keeper_bath_wash": "redrawn and normalised from the standing bare-headed and seated canonical landmarks",
     "keeper_hot_tub": "redrawn and normalised by the visible head/shoulder unit rather than the water silhouette",
@@ -289,7 +289,7 @@ def publish(assets: list[dict]) -> None:
     serialisable = [{k: v for k, v in asset.items() if k != "_frames"} for asset in assets]
     payload = {
         "version": 1,
-        "authority": "data/keeper_asset_contract.json version 4",
+        "authority": "data/keeper_asset_contract.json version 5",
         "rules": CONTRACT["measurementPolicy"],
         "canonicalAnatomy": CONTRACT["canonicalAnatomy"],
         "counts": {

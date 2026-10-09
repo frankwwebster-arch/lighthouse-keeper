@@ -147,8 +147,11 @@ either hat fit. Sou'wester movement vectors are right `(1,0)`, rear/up
 
 Wide held instruments and reclined poses use the 48 × 40
 `extendedHeldInstrument` canvas without changing body scale. Raised drumsticks
-use the 32 × 48 `extendedRaisedArmsAction` canvas. Front and rear drumming align
-the stool at `(16,37)` and the drum surface at `(16,27)`. Movie seating aligns
+use the 32 × 48 `extendedRaisedArmsAction` canvas. Front drumming is the timing
+and anatomy master; rear drumming is the same eight-frame motion viewed through
+180 degrees. Both align the stool at `(16,37)` and drum surface at `(16,27)`,
+and paired neutral frames may differ by no more than 0.75 px in visible height.
+Movie seating aligns
 at `(24,29)` on its wider canvas; the screen centre is 32 pixels to the viewed
 side and 15 pixels above that seat point.
 

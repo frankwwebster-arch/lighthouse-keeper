@@ -264,6 +264,23 @@ for name,facing in [('keeper_play_drums_front','front'),('keeper_play_drums_back
     assert manifest[name]['h']==48 and manifest[name]['anchor']==[16,48]
     assert manifest[name]['seatPoint']==[16,37] and manifest[name]['handUsePoint']==[16,27]
     assert manifest[name]['facing']==facing and manifest[name]['interaction']=='play-drums'
+drum_front=Image.open(root/'public/sprites'/manifest['keeper_play_drums_front']['file']).convert('RGBA')
+drum_back=Image.open(root/'public/sprites'/manifest['keeper_play_drums_back']['file']).convert('RGBA')
+drum_pair_bounds=[]
+for frame_index in range(8):
+    front_frame=drum_front.crop((frame_index*32*4,0,(frame_index+1)*32*4,48*4))
+    back_frame=drum_back.crop((frame_index*32*4,0,(frame_index+1)*32*4,48*4))
+    front_box=front_frame.getchannel('A').getbbox()
+    back_box=back_frame.getchannel('A').getbbox()
+    assert front_box is not None and back_box is not None
+    front_size=((front_box[2]-front_box[0])/4,(front_box[3]-front_box[1])/4)
+    back_size=((back_box[2]-back_box[0])/4,(back_box[3]-back_box[1])/4)
+    drum_pair_bounds.append((front_size,back_size))
+    assert abs(front_size[0]-back_size[0])<=2.5,(frame_index,front_size,back_size)
+    assert (48*4-front_box[3])==(48*4-back_box[3]),(frame_index,front_box,back_box)
+for frame_index in [1,4,5,7]:
+    front_size,back_size=drum_pair_bounds[frame_index]
+    assert abs(front_size[1]-back_size[1])<=0.75,(frame_index,front_size,back_size)
 assert manifest['keeper_watch_movie']['w']==48 and manifest['keeper_watch_movie']['seatPoint']==[24,29]
 assert manifest['keeper_watch_movie']['lookTargetPoint']==[56,14] and manifest['keeper_watch_movie']['handUsePoint']==[34,19]
 assert manifest['keeper_watch_movie']['mirrorSafe'] is True and manifest['keeper_watch_movie']['mirrorsFor']=='rear-left'
@@ -358,7 +375,7 @@ for view in ['side','back','front']:
     assert tarzan['outfit']=='tarzan' and tarzan['w']==32 and tarzan['h']==40 and tarzan['anchor']==[16,40]
 assert manifest['keeper_tarzan_walk_side']['mirrorSafe'] is True
 asset_contract=json.loads((root/'data/keeper_asset_contract.json').read_text())
-assert asset_contract['version']==4 and asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
+assert asset_contract['version']==5 and asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
 assert asset_contract['derivedObjectDataset']=='data/keeper_object_dimensions.json'
 assert asset_contract['canvas']['standard']=={'width':32,'height':40,'density':4,'anchor':[16,40]}
 assert asset_contract['canvas']['extendedAirborne']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
@@ -383,6 +400,9 @@ assert asset_contract['interactionProfiles']['placeCakeRight']['handUsePoint']==
 assert asset_contract['interactionProfiles']['mealTableRight']['handUsePoint']==[39,21]
 assert asset_contract['interactionProfiles']['exerciseBikeFront']['pedalPoint']==[24,42]
 assert asset_contract['interactionProfiles']['fishingStandingRight']['handUsePoint']==[56,24]
+assert asset_contract['interactionProfiles']['drumsFront']['timingMaster'] is True
+assert asset_contract['interactionProfiles']['drumsFront']['pairedWith']=='drumsBack'
+assert asset_contract['interactionProfiles']['drumsBack']['viewRotationDegrees']==180
 assert asset_contract['interactionProfiles']['vomitToiletBack']['bowlPoint']==[32,35]
 assert asset_contract['interactionProfiles']['showerDoorBathrobeRight']['handUsePoint']==[35,18]
 assert asset_contract['interactionProfiles']['showerEntryBathrobe']['thresholdPoint']==[20,40]

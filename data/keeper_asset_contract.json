@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "status": "authoritative",
   "units": "logical-pixels",
   "derivedObjectDataset": "data/keeper_object_dimensions.json",
@@ -98,8 +98,8 @@
     "sawWoodRight": { "clip": "keeper_saw_wood", "handUsePoint": [35, 23], "offsetFromFeet": [15, -17], "mirrorFor": "sawWoodLeft" },
     "bedEntryRight": { "clip": "keeper_get_into_bed", "bedSurfacePoint": [24, 31], "pillowPoint": [38, 22], "surfaceOffsetFromFloor": [0, -9], "mirrorFor": "bedEntryLeft" },
     "snoreRight": { "clip": "keeper_pyjamas_snore", "bedSurfacePoint": [24, 31], "pillowPoint": [38, 22], "surfaceOffsetFromFloor": [0, -9], "mirrorFor": "snoreLeft" },
-    "drumsFront": { "clip": "keeper_play_drums_front", "seatPoint": [16, 37], "handUsePoint": [16, 27], "drumSurfaceOffsetFromSeat": [0, -10] },
-    "drumsBack": { "clip": "keeper_play_drums_back", "seatPoint": [16, 37], "handUsePoint": [16, 27], "drumSurfaceOffsetFromSeat": [0, -10] },
+    "drumsFront": { "clip": "keeper_play_drums_front", "seatPoint": [16, 37], "handUsePoint": [16, 27], "drumSurfaceOffsetFromSeat": [0, -10], "timingMaster": true, "pairedWith": "drumsBack" },
+    "drumsBack": { "clip": "keeper_play_drums_back", "seatPoint": [16, 37], "handUsePoint": [16, 27], "drumSurfaceOffsetFromSeat": [0, -10], "pairedWith": "drumsFront", "viewRotationDegrees": 180 },
     "watchMovieRight": { "clip": "keeper_watch_movie", "seatPoint": [24, 29], "handUsePoint": [34, 19], "lookTargetPoint": [56, 14], "screenCentreOffsetFromSeat": [32, -15], "mirrorFor": "watchMovieLeft" },
     "watchMovieLeft": { "clip": "keeper_watch_movie", "seatPoint": [24, 29], "handUsePoint": [14, 19], "lookTargetPoint": [-8, 14], "screenCentreOffsetFromSeat": [-32, -15], "mirroredFrom": "watchMovieRight" },
     "clearSnowRight": { "clip": "keeper_clear_snow", "handUsePoint": [43, 37], "offsetFromFeet": [19, -3], "mirrorFor": "clearSnowLeft" },

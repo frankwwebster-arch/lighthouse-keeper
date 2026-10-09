@@ -517,7 +517,19 @@ souwester_front_frames = generated_frames("keeper-souwester-walk-front-generated
 dance_frames = generated_frames("keeper-dance-generated-source.png", 8)
 play_guitar_frames = generated_frames("keeper-play-guitar-generated-source.png", 8, logical_width=48)
 play_drums_front_frames = generated_frames("keeper-play-drums-front-generated-source.png", 8, logical_height=48, scale_multiplier=0.90)
-play_drums_back_frames = generated_frames("keeper-play-drums-back-generated-source.png", 8, logical_height=48, scale_multiplier=0.90)
+# Front is the timing and anatomy master. The rear source has more transparent
+# height around its sticks, so independent fit-to-bounds makes its seated body
+# about 10% smaller. Normalise the actor height while preserving body width.
+play_drums_back_frames = generated_frames(
+    "keeper-play-drums-back-generated-source.png",
+    8,
+    logical_height=48,
+    scale_multiplier=0.99,
+    horizontal_scale=0.95,
+)
+# Frame 7 repeats the front sheet's single raised screen-left stroke. A 180°
+# viewpoint change places that physical arm on screen-right in the rear view.
+play_drums_back_frames[6] = ImageOps.mirror(play_drums_back_frames[6])
 watch_movie_frames = generated_frames("keeper-watch-movie-generated-source.png", 8, logical_width=48, scale_multiplier=0.90)
 clear_snow_frames = generated_frames("keeper-clear-snow-generated-source.png", 8, logical_width=48)
 crouch_work_back_frames = generated_frames("keeper-crouch-work-back-generated-source.png", 8)
