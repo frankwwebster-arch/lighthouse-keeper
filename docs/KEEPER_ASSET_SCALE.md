@@ -239,9 +239,10 @@ shared controls pause or play every animation at once, apply pose-aware
 comparison ghosts to every card, and draw the shared
 skull/shoulder/hip/seat/floor rulers. A 1×–6× display-size slider magnifies all
 stages equally and never changes source or relative sprite scale. The page can
-also resize an individual reviewed action from 70% to 130% around its fixed
-contact anchor. The reference, ruler, ghost, approach walk and bridge remain at
-100%, adjusted cards turn amber, and choices persist in the browser until reset.
+independently stretch an individual reviewed action from 50% to 150% in width
+and height around its fixed contact anchor. The reference, ruler, ghost,
+approach walk and bridge remain at 100%; earlier uniform choices migrate to
+both axes.
 Export produces `keeper-scale-choices.json` for an authoring pass; it never
 silently changes production sprites. The page can also play the matching
 same-outfit walk immediately before an action. The raw seam, known-bridge and
@@ -253,12 +254,12 @@ other cards use the standing reference. Per-card controls can select a different
 reference, rotate/reset it, place it alongside and fade only the reviewed action.
 There is no canonical rear-sitting reference yet, so rear comparisons require an
 explicit choice and remain visual evidence rather than a certified pose match.
-Each card's Save button persists its size, comparison-ghost controls, reviewed
-animation opacity and happy checkbox in the browser. Orange denotes unsaved
+Each card's Save button persists its width, height, comparison-ghost controls,
+reviewed-animation rotation/opacity and happy checkbox in the browser. Orange denotes unsaved
 changes; green denotes a saved happy decision. Export is blocked until every
-changed card is saved, and version 2 of `keeper-scale-choices.json` contains the
-saved review register as well as non-100% production scale proposals. Existing
-legacy size choices are retained and offered for migration into full reviews.
+changed card is saved, and version 3 of `keeper-scale-choices.json` contains the
+saved review register as well as independent width/height production proposals.
+Existing legacy uniform choices are retained and applied to both axes.
 The reviewed animation has its own −180° to +180° rotation control, independent
 of the ghost. It rotates every action frame around the fixed review anchor and
 is persisted/exported as comparison evidence, not silently applied to sprites.

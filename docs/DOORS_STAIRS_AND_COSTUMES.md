@@ -193,10 +193,10 @@ Delivered in `docs/keeper-scale-audit/review.html`:
   equally without changing the source art or its relative scale. For upright
   standard-cap poses, the gold badge on the blue skull line is a calibrated
   proxy only; changed posture, head angle and headwear need anatomy checks.
-- A per-animation 70%–130% character-size proposal slider scales the action
-  around its declared contact anchor while the reference, ruler, ghost, walk
-  and bridge stay at 100%. Amber proposals persist in the browser and export as
-  JSON for later source-art rebuilding; the viewer never edits sprites itself.
+- Per-animation 50%–150% width and height sliders reshape the action around its
+  declared contact anchor while the reference, ruler, ghost, walk and bridge
+  stay at 100%. Earlier uniform choices migrate to both axes. Saved proposals
+  export as JSON for later source-art rebuilding; the viewer never edits sprites.
 - Flying and swimming cards align their first-frame figure bottom to the red
   floor line. Global Pause resets every card to frame 1 of its action.
 - Seated cards automatically use the canonical front/side sitting endpoint.
