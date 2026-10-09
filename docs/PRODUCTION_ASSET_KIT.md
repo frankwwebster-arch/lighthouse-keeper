@@ -76,10 +76,10 @@ Initial clips:
 | `pyjamas_turn_back` | front to back | 6 · 8 | no | reverse to turn front |
 | `get_into_bed` | side | 8 · 8 | no | 48 × 40; surface `(24,31)`; pillow `(38,22)`; reverse to rise |
 | `pyjamas_snore` | lying side | 6 · 4 | yes | 48 × 40 breathing/snore loop; bed separate |
-| `swim_costume_horizontal` | side | 8 · 8 | yes | 64 × 48 centred; right, mirror left; canonical body scale |
+| `swim_costume_horizontal` | side | 8 · 8 | yes | 80 × 48 centred; right, mirror left; expanded canvas preserves canonical body scale |
 | `swim_costume_up` | rear | 8 · 8 | yes | 48 × 48 centred; vector `(0,-1)` |
 | `swim_costume_down` | front | 8 · 8 | yes | 48 × 48 centred; vector `(0,1)` |
-| `scuba_swim_horizontal` | side | 8 · 8 | yes | 64 × 48 centred; right, mirror left; canonical body scale |
+| `scuba_swim_horizontal` | side | 8 · 8 | yes | 80 × 48 centred; right, mirror left; expanded canvas preserves canonical body scale |
 | `scuba_swim_up` | rear | 8 · 8 | yes | mask, tank, regulator and fins |
 | `scuba_swim_down` | front | 8 · 8 | yes | mask, tank, regulator and fins |
 | `party_idle` | front | 4 · 6 | yes | 32 × 48; cardboard cone party hat |
@@ -99,7 +99,7 @@ Initial clips:
 | `cake_turn_right` | rear to side | 6 · 8 | no | 48 × 40; tray carry `(34,20)`; mirror for left |
 | `loo_hide` | hidden | 0 | n/a | keeper is not drawn |
 
-The old part files and `keeper_reference.png` are no longer required review deliveries. Airborne strips may expand to 48 × 56 for the dive or 48 × 84 for parachute deployment without rescaling the keeper. Long side tools may use 40 × 40, bed poses 48 × 40, vertical swimming 48 × 48, horizontal swimming 64 × 48, press-ups 64 × 40, overhead weights 48 × 56, and tall headwear 32 × 48. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. `data/keeper_asset_contract.json` is authoritative for scale and use points.
+The old part files and `keeper_reference.png` are no longer required review deliveries. Airborne strips may expand to 48 × 56 for the dive or 48 × 84 for parachute deployment without rescaling the keeper. Long side tools may use 40 × 40, bed poses 48 × 40, vertical swimming 48 × 48, horizontal swimming 80 × 48, press-ups 64 × 40, overhead weights 48 × 56, and tall headwear 32 × 48. Props are separate `prop_<name>.png` files with their own tight bounds and explicit wrist pivot. `data/keeper_asset_contract.json` is authoritative for scale and use points.
 
 The dive outfit reuses every pivot. Its approved reference is a traditional full-length red-and-white striped one-piece costume, without cap or helmet and with bare feet. Changing is an invisible clip: inner door closes, keeper disappears, zip/rustle SFX, outfit swaps, exterior door opens, dressed keeper exits. There is never a visible frame between the two doors.
 

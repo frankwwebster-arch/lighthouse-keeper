@@ -74,10 +74,10 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Turn away in pyjamas | `keeper_pyjamas_turn_back` | light powder blue; reverse to face camera |
 | Get into bed | `keeper_get_into_bed` | light powder blue; right-side bed; mirror left; reverse to get out |
 | Snore in pyjamas | `keeper_pyjamas_snore` | light powder blue; right-side loop; mirror left; bed and bedding separate |
-| Swim left/right | `keeper_swim_costume_horizontal` | striped costume; right; mirror left; 64 × 48 canonical-scale horizontal canvas |
+| Swim left/right | `keeper_swim_costume_horizontal` | striped costume; right; mirror left; 80 × 48 canonical-scale horizontal canvas |
 | Swim up | `keeper_swim_costume_up` | striped costume; direct rear view |
 | Swim down | `keeper_swim_costume_down` | striped costume; direct front view |
-| Scuba swim left/right | `keeper_scuba_swim_horizontal` | right; mirror left; 64 × 48 canonical-scale horizontal canvas; bubbles separate |
+| Scuba swim left/right | `keeper_scuba_swim_horizontal` | right; mirror left; 80 × 48 canonical-scale horizontal canvas; bubbles separate |
 | Scuba swim up | `keeper_scuba_swim_up` | direct rear view; bubbles separate |
 | Scuba swim down | `keeper_scuba_swim_down` | direct front view; bubbles separate |
 | Party idle | `keeper_party_idle` | front; normal clothes plus cardboard party hat |

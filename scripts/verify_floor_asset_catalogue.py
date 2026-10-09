@@ -92,7 +92,7 @@ for raw in keeper_pngs:
     sidecar=json.loads(raw.with_suffix('.json').read_text())
     im=Image.open(raw).convert('RGBA')
     assert im.size==(sidecar['w']*sidecar['density']*sidecar['frames'],sidecar['h']*sidecar['density'])
-    assert sidecar['w'] in {32,40,48,64} and sidecar['h'] in {40,48,56,84}
+    assert sidecar['w'] in {32,40,48,64,80} and sidecar['h'] in {40,48,56,84}
     assert sidecar['density']==4
     is_centred_swim=raw.stem.startswith(('keeper_swim_costume_','keeper_scuba_swim_','keeper_anti_gravity_'))
     expected_anchor=[sidecar['w']//2,sidecar['h']//2] if is_centred_swim else [sidecar['w']//2,sidecar['h']]
@@ -245,7 +245,7 @@ for name,vector in [('keeper_swim_costume_up',[0,-1]),('keeper_swim_costume_down
     assert manifest[name]['w']==48 and manifest[name]['h']==48 and manifest[name]['anchor']==[24,24]
     assert manifest[name]['movementVector']==vector
 for name in ['keeper_swim_costume_horizontal','keeper_scuba_swim_horizontal']:
-    assert manifest[name]['w']==64 and manifest[name]['h']==48 and manifest[name]['anchor']==[32,24]
+    assert manifest[name]['w']==80 and manifest[name]['h']==48 and manifest[name]['anchor']==[40,24]
     assert manifest[name]['movementVector']==[1,0]
 assert manifest['keeper_swim_costume_horizontal']['mirrorSafe'] is True
 assert manifest['keeper_scuba_swim_horizontal']['mirrorSafe'] is True
@@ -300,11 +300,14 @@ for frame_index in range(manifest['keeper_pressups_side']['frames']):
 for name in ['keeper_swim_costume_horizontal','keeper_scuba_swim_horizontal']:
     horizontal=Image.open(root/'public/sprites'/manifest[name]['file']).convert('RGBA')
     widths=[]
+    heights=[]
     for frame_index in range(manifest[name]['frames']):
-        frame=horizontal.crop((frame_index*64*4,0,(frame_index+1)*64*4,48*4))
+        frame=horizontal.crop((frame_index*80*4,0,(frame_index+1)*80*4,48*4))
         visible=frame.getchannel('A').getbbox()
         widths.append((visible[2]-visible[0])//4)
+        heights.append((visible[3]-visible[1])//4)
     assert max(widths)>=60,(name,widths)
+    assert min(heights)>=32,(name,heights)
 for name in ['keeper_fish_feed_up','keeper_aquarium_brush','keeper_aquarium_net','keeper_hammer_side','keeper_read_side','keeper_write_side','keeper_telescope','keeper_put_record','keeper_paint_side','keeper_meal_place_side','keeper_snooker','keeper_table_tennis','keeper_darts','keeper_machete_side','keeper_pressups_side','keeper_bowling','keeper_video_game','keeper_water_plants_side','keeper_fish_standing','keeper_fish_seated','keeper_mechanic_fix']:
     assert manifest[name]['mirrorSafe'] is True and manifest[name]['mirrorsFor']
 assert manifest['keeper_anti_gravity']['anchor']==[24,24]
@@ -331,7 +334,7 @@ assert asset_contract['canvas']['extendedBoatAction']=={'width':40,'height':40,'
 assert asset_contract['canvas']['extendedSideTool']=={'width':40,'height':40,'density':4,'anchor':[20,40]}
 assert asset_contract['canvas']['extendedBedAction']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
 assert asset_contract['canvas']['centredSwimAction']=={'width':48,'height':48,'density':4,'anchor':[24,24]}
-assert asset_contract['canvas']['horizontalSwimAction']=={'width':64,'height':48,'density':4,'anchor':[32,24]}
+assert asset_contract['canvas']['horizontalSwimAction']=={'width':80,'height':48,'density':4,'anchor':[40,24],'minimumVisibleActorThickness':32}
 assert asset_contract['canvas']['extendedHeadwear']=={'width':32,'height':48,'density':4,'anchor':[16,48]}
 assert asset_contract['canvas']['extendedHeldInstrument']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
 assert asset_contract['canvas']['extendedRaisedArmsAction']=={'width':32,'height':48,'density':4,'anchor':[16,48]}

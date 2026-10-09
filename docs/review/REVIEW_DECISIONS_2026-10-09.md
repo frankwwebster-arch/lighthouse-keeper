@@ -20,13 +20,17 @@ how each comment is being applied.
 - Rebuild `keeper_crouch_work_back`: canonical body width, hands in front in
   every working pose, especially frames 3 and 5.
 - Rebuild the rough `keeper_party_turn_back` transition.
-- Rebuild `keeper_scuba_swim_down` to restore the approved keeper identity.
-- Measure and correct `keeper_scuba_swim_up`, `keeper_sit_front`, and all three
+- Rebuild all three scuba directions to restore the approved keeper identity,
+  coherent equipment and matching swim-cycle anatomy.
+- Expand `keeper_swim_costume_horizontal` and the horizontal scuba clip to an
+  80 × 48 canvas so long poses do not force the keeper smaller.
+- Measure and correct `keeper_sit_front`, and all three
   sou'wester walks against skull-to-sole and core-body landmarks.
 - Improve `fx_broken_smoke`; it remains a shared effect, but the present draft
   is not approved.
 
-Completed in this pass: the crouch, party turn, scuba-down and sit-front strips
+Completed in this pass: the crouch, party turn, all scuba directions,
+horizontal swimming and sit-front strips
 were redrawn; seated sources were normalised against the sit transitions; every
 costume family now excludes its hat/helmet envelope from anatomy scale; the
 bath-wash and hot-tub figures were rebuilt and measured from their visible head

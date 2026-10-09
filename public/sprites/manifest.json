@@ -2382,13 +2382,13 @@
  },
  "keeper_scuba_swim_horizontal": {
   "file": "keeper_scuba_swim_horizontal.png",
-  "w": 64,
+  "w": 80,
   "h": 48,
   "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
-   32,
+   40,
    24
   ],
   "movementVector": [
@@ -2885,13 +2885,13 @@
  },
  "keeper_swim_costume_horizontal": {
   "file": "keeper_swim_costume_horizontal.png",
-  "w": 64,
+  "w": 80,
   "h": 48,
   "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
-   32,
+   40,
    24
   ],
   "movementVector": [

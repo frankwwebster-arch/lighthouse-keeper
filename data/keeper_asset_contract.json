@@ -19,7 +19,7 @@
     "extendedSideTool": { "width": 40, "height": 40, "density": 4, "anchor": [20, 40] },
     "extendedBedAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
     "centredSwimAction": { "width": 48, "height": 48, "density": 4, "anchor": [24, 24] },
-    "horizontalSwimAction": { "width": 64, "height": 48, "density": 4, "anchor": [32, 24] },
+    "horizontalSwimAction": { "width": 80, "height": 48, "density": 4, "anchor": [40, 24], "minimumVisibleActorThickness": 32 },
     "extendedHeadwear": { "width": 32, "height": 48, "density": 4, "anchor": [16, 48] },
     "extendedHeldInstrument": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
     "extendedRaisedArmsAction": { "width": 32, "height": 48, "density": 4, "anchor": [16, 48] },

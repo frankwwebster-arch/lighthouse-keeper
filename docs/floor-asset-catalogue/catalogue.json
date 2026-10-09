@@ -51545,7 +51545,7 @@
       "category": "shared",
       "placement_rule": "world layers / explicit anchors",
       "stack_eligible": false,
-      "dimensions": "64x48",
+      "dimensions": "80x48",
       "dependencies": "renderer",
       "activities": "all spaces",
       "unlock_challenge": "none",
@@ -51556,12 +51556,12 @@
       "required_states": "on",
       "frames": "8@8fps",
       "keeper_pose": "swim_costume_horizontal",
-      "anchor": "anchor (32,24)",
+      "anchor": "anchor (40,24)",
       "reusable_source": "shared keeper",
       "breakdown_effect": "none",
       "priority": "P0",
       "implementation_status": "delivered-review",
-      "notes": "Aligned 64x48 frames; hand-drawn rotations only."
+      "notes": "Aligned 80x48 frames; hand-drawn rotations only."
     },
     {
       "space_id": "shared",
@@ -51617,7 +51617,7 @@
       "category": "shared",
       "placement_rule": "world layers / explicit anchors",
       "stack_eligible": false,
-      "dimensions": "64x48",
+      "dimensions": "80x48",
       "dependencies": "renderer",
       "activities": "all spaces",
       "unlock_challenge": "none",
@@ -51628,12 +51628,12 @@
       "required_states": "on",
       "frames": "8@8fps",
       "keeper_pose": "scuba_swim_horizontal",
-      "anchor": "anchor (32,24)",
+      "anchor": "anchor (40,24)",
       "reusable_source": "shared keeper",
       "breakdown_effect": "none",
       "priority": "P0",
       "implementation_status": "delivered-review",
-      "notes": "Aligned 64x48 frames; hand-drawn rotations only."
+      "notes": "Aligned 80x48 frames; hand-drawn rotations only."
     },
     {
       "space_id": "shared",

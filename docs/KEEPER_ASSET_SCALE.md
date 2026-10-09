@@ -27,8 +27,10 @@ page explains it in ordinary language.
 - Press-ups use a 64 × 40 extended horizontal canvas. The keeper's
   head-to-toe body length must be at least 52 logical pixels in every frame;
   the horizontal pose is never scaled down as if it were a standing figure.
-- Left/right swimming uses a 64 × 48 canvas and movement anchor `(32,24)` so
-  the horizontal body keeps canonical scale. Up/down swimming remains centred
+- Left/right swimming uses an 80 × 48 canvas and movement anchor `(40,24)` so
+  the horizontal body keeps canonical scale without width-fitting shrinkage;
+  every frame must retain at least 32 logical pixels of visible actor thickness.
+  Up/down swimming remains centred
   on 48 × 48 at `(24,24)`. Party headwear uses 32 × 48 with feet anchor `(16,48)`.
 - Never scale the keeper to make him meet an object. Position and size the
   object from the interaction points below.
