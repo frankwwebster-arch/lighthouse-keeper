@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "authority": "data/keeper_asset_contract.json version 5",
+  "authority": "data/keeper_asset_contract.json version 6",
   "rules": {
     "upright": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
     "seatedCrouched": "head unit plus articulated shoulder-hip-sole chain; compressed silhouette height is never used as scale",
@@ -31,7 +31,7 @@
     "reviewedAnimationSheets": 149,
     "technicalRejectedSheets": 18,
     "allFramesMeasured": 1186,
-    "correctedSheets": 50
+    "correctedSheets": 51
   },
   "contactSheets": [
     "docs/keeper-scale-audit/keeper-scale-contact-01.png",
@@ -15517,17 +15517,17 @@
       "postureClass": "upright",
       "measurementMethod": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
       "status": "corrected",
-      "note": "redrawn from the corrected party identity",
-      "medianFaceProxyWidth": 12.0,
-      "medianFaceProxyHeight": 8.38,
+      "note": "canonical front identity inherited exactly; party hat is headwear-only",
+      "medianFaceProxyWidth": 10.0,
+      "medianFaceProxyHeight": 6.75,
       "faceProxyCoverage": "4/4",
       "alphaHeightRange": [
-        45.0,
-        46.0
+        47.5,
+        47.5
       ],
       "alphaWidthRange": [
-        24.5,
-        24.75
+        22.75,
+        22.75
       ],
       "bottomClearanceRange": [
         0.5,
@@ -15536,90 +15536,90 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            3.5,
-            1.5,
-            28.25,
+            4.75,
+            0.0,
+            27.5,
             47.5
           ],
-          "alphaWidth": 24.75,
-          "alphaHeight": 46.0,
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              11.25,
-              12.75,
-              22.0,
-              21.25
+              10.5,
+              16.75,
+              20.5,
+              23.5
+            ],
+            "width": 10.0,
+            "height": 6.75,
+            "area": 584
+          }
+        },
+        {
+          "alphaBox": [
+            4.75,
+            0.0,
+            27.5,
+            47.5
+          ],
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              11.5,
+              16.25,
+              22.25,
+              22.75
             ],
             "width": 10.75,
-            "height": 8.5,
-            "area": 845
+            "height": 6.5,
+            "area": 660
           }
         },
         {
           "alphaBox": [
-            3.5,
-            2.5,
-            28.25,
+            4.75,
+            0.0,
+            27.5,
             47.5
           ],
-          "alphaWidth": 24.75,
-          "alphaHeight": 45.0,
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              9.5,
-              13.75,
-              22.25,
-              22.25
+              11.5,
+              16.5,
+              21.25,
+              23.25
             ],
-            "width": 12.75,
-            "height": 8.5,
-            "area": 917
+            "width": 9.75,
+            "height": 6.75,
+            "area": 575
           }
         },
         {
           "alphaBox": [
-            3.75,
-            1.5,
-            28.25,
+            4.75,
+            0.0,
+            27.5,
             47.5
           ],
-          "alphaWidth": 24.5,
-          "alphaHeight": 46.0,
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              10.25,
-              13.0,
-              22.25,
-              21.25
+              10.5,
+              16.75,
+              20.5,
+              23.5
             ],
-            "width": 12.0,
-            "height": 8.25,
-            "area": 860
-          }
-        },
-        {
-          "alphaBox": [
-            3.5,
-            1.5,
-            28.25,
-            47.5
-          ],
-          "alphaWidth": 24.75,
-          "alphaHeight": 46.0,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              11.25,
-              13.25,
-              23.25,
-              21.25
-            ],
-            "width": 12.0,
-            "height": 8.0,
-            "area": 866
+            "width": 10.0,
+            "height": 6.75,
+            "area": 584
           }
         }
       ]
@@ -15641,17 +15641,17 @@
       "postureClass": "upright",
       "measurementMethod": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
       "status": "corrected",
-      "note": "redrawn as a coherent front-to-rear turn",
-      "medianFaceProxyWidth": 6.88,
-      "medianFaceProxyHeight": 7.5,
+      "note": "canonical turn identity inherited exactly; party hat is headwear-only",
+      "medianFaceProxyWidth": 4.25,
+      "medianFaceProxyHeight": 4.25,
       "faceProxyCoverage": "6/6",
       "alphaHeightRange": [
-        45.75,
-        46.0
+        47.5,
+        47.5
       ],
       "alphaWidthRange": [
-        15.25,
-        23.0
+        22.75,
+        22.75
       ],
       "bottomClearanceRange": [
         0.5,
@@ -15660,134 +15660,134 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            4.5,
-            1.5,
+            4.75,
+            0.0,
             27.5,
             47.5
           ],
-          "alphaWidth": 23.0,
-          "alphaHeight": 46.0,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              9.75,
-              12.75,
-              22.5,
-              21.0
-            ],
-            "width": 12.75,
-            "height": 8.25,
-            "area": 864
-          }
-        },
-        {
-          "alphaBox": [
-            5.5,
-            1.5,
-            26.5,
-            47.5
-          ],
-          "alphaWidth": 21.0,
-          "alphaHeight": 46.0,
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
               13.0,
-              11.0,
-              22.25,
-              20.5
+              16.5,
+              23.5,
+              23.25
             ],
-            "width": 9.25,
-            "height": 9.5,
-            "area": 719
-          }
-        },
-        {
-          "alphaBox": [
-            8.25,
-            1.75,
-            23.5,
-            47.5
-          ],
-          "alphaWidth": 15.25,
-          "alphaHeight": 45.75,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              13.5,
-              11.75,
-              22.75,
-              21.0
-            ],
-            "width": 9.25,
-            "height": 9.25,
-            "area": 555
-          }
-        },
-        {
-          "alphaBox": [
-            5.5,
-            1.5,
-            26.5,
-            47.5
-          ],
-          "alphaWidth": 21.0,
-          "alphaHeight": 46.0,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              9.25,
-              13.75,
-              13.75,
-              20.5
-            ],
-            "width": 4.5,
+            "width": 10.5,
             "height": 6.75,
-            "area": 211
+            "area": 511
           }
         },
         {
           "alphaBox": [
-            4.5,
-            1.5,
-            27.25,
-            47.5
-          ],
-          "alphaWidth": 22.75,
-          "alphaHeight": 46.0,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              5.25,
-              32.25,
-              9.25,
-              35.75
-            ],
-            "width": 4.0,
-            "height": 3.5,
-            "area": 168
-          }
-        },
-        {
-          "alphaBox": [
-            4.5,
-            1.5,
+            4.75,
+            0.0,
             27.5,
             47.5
           ],
-          "alphaWidth": 23.0,
-          "alphaHeight": 46.0,
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              22.75,
-              32.25,
-              26.75,
-              35.5
+              15.25,
+              16.5,
+              24.25,
+              23.25
             ],
-            "width": 4.0,
-            "height": 3.25,
-            "area": 154
+            "width": 9.0,
+            "height": 6.75,
+            "area": 404
+          }
+        },
+        {
+          "alphaBox": [
+            4.75,
+            0.0,
+            27.5,
+            47.5
+          ],
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              14.0,
+              0.5,
+              18.25,
+              4.75
+            ],
+            "width": 4.25,
+            "height": 4.25,
+            "area": 225
+          }
+        },
+        {
+          "alphaBox": [
+            4.75,
+            0.0,
+            27.5,
+            47.5
+          ],
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              14.0,
+              0.5,
+              18.25,
+              4.75
+            ],
+            "width": 4.25,
+            "height": 4.25,
+            "area": 225
+          }
+        },
+        {
+          "alphaBox": [
+            4.75,
+            0.0,
+            27.5,
+            47.5
+          ],
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              14.0,
+              0.5,
+              18.25,
+              4.75
+            ],
+            "width": 4.25,
+            "height": 4.25,
+            "area": 225
+          }
+        },
+        {
+          "alphaBox": [
+            4.75,
+            0.0,
+            27.5,
+            47.5
+          ],
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              14.0,
+              0.5,
+              18.25,
+              4.75
+            ],
+            "width": 4.25,
+            "height": 4.25,
+            "area": 225
           }
         }
       ]
@@ -15808,18 +15808,18 @@
       "outfit": "party-hat",
       "postureClass": "upright",
       "measurementMethod": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
-      "status": "measured-pass",
-      "note": "measured against the canonical anatomy for its pose class",
+      "status": "corrected",
+      "note": "canonical side-walk identity inherited exactly; party hat is headwear-only",
       "medianFaceProxyWidth": 9.88,
-      "medianFaceProxyHeight": 8.25,
+      "medianFaceProxyHeight": 6.75,
       "faceProxyCoverage": "8/8",
       "alphaHeightRange": [
-        44.0,
-        46.0
+        47.5,
+        47.5
       ],
       "alphaWidthRange": [
-        16.25,
-        24.5
+        22.75,
+        22.75
       ],
       "bottomClearanceRange": [
         0.5,
@@ -15828,178 +15828,178 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            5.75,
-            1.5,
-            26.25,
-            47.5
-          ],
-          "alphaWidth": 20.5,
-          "alphaHeight": 46.0,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              12.25,
-              11.75,
-              22.0,
-              20.25
-            ],
-            "width": 9.75,
-            "height": 8.5,
-            "area": 752
-          }
-        },
-        {
-          "alphaBox": [
-            3.75,
-            1.75,
-            28.25,
-            47.5
-          ],
-          "alphaWidth": 24.5,
-          "alphaHeight": 45.75,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              12.5,
-              12.0,
-              22.0,
-              20.75
-            ],
-            "width": 9.5,
-            "height": 8.75,
-            "area": 769
-          }
-        },
-        {
-          "alphaBox": [
-            4.25,
-            2.25,
+            4.75,
+            0.0,
             27.5,
             47.5
           ],
-          "alphaWidth": 23.25,
-          "alphaHeight": 45.25,
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              14.75,
-              13.25,
-              24.75,
-              21.25
+              12.75,
+              17.0,
+              22.5,
+              23.5
             ],
-            "width": 10.0,
-            "height": 8.0,
-            "area": 771
+            "width": 9.75,
+            "height": 6.5,
+            "area": 488
           }
         },
         {
           "alphaBox": [
-            6.25,
-            3.5,
-            25.75,
+            4.75,
+            0.0,
+            27.5,
             47.5
           ],
-          "alphaWidth": 19.5,
-          "alphaHeight": 44.0,
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
               13.75,
-              13.25,
+              17.75,
               23.75,
-              21.5
+              24.5
             ],
             "width": 10.0,
-            "height": 8.25,
-            "area": 729
+            "height": 6.75,
+            "area": 496
           }
         },
         {
           "alphaBox": [
-            7.75,
-            2.0,
-            24.0,
-            47.5
-          ],
-          "alphaWidth": 16.25,
-          "alphaHeight": 45.5,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              13.0,
-              12.75,
-              22.75,
-              21.0
-            ],
-            "width": 9.75,
-            "height": 8.25,
-            "area": 772
-          }
-        },
-        {
-          "alphaBox": [
-            4.25,
-            2.75,
+            4.75,
+            0.0,
             27.5,
             47.5
           ],
-          "alphaWidth": 23.25,
-          "alphaHeight": 44.75,
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
               13.0,
-              13.25,
-              22.25,
-              21.5
-            ],
-            "width": 9.25,
-            "height": 8.25,
-            "area": 734
-          }
-        },
-        {
-          "alphaBox": [
-            5.5,
-            2.75,
-            26.25,
-            47.5
-          ],
-          "alphaWidth": 20.75,
-          "alphaHeight": 44.75,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              12.75,
-              13.25,
+              16.75,
               22.75,
-              21.75
+              23.5
             ],
-            "width": 10.0,
-            "height": 8.5,
-            "area": 775
+            "width": 9.75,
+            "height": 6.75,
+            "area": 487
           }
         },
         {
           "alphaBox": [
-            5.25,
-            1.5,
-            26.5,
+            4.75,
+            0.0,
+            27.5,
             47.5
           ],
-          "alphaWidth": 21.25,
-          "alphaHeight": 46.0,
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              13.25,
+              16.5,
+              23.25,
+              23.0
+            ],
+            "width": 10.0,
+            "height": 6.5,
+            "area": 491
+          }
+        },
+        {
+          "alphaBox": [
+            4.75,
+            0.0,
+            27.5,
+            47.5
+          ],
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              13.75,
+              17.0,
+              22.25,
+              23.75
+            ],
+            "width": 8.5,
+            "height": 6.75,
+            "area": 407
+          }
+        },
+        {
+          "alphaBox": [
+            4.75,
+            0.0,
+            27.5,
+            47.5
+          ],
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
               13.0,
-              12.0,
+              17.25,
               23.0,
-              20.25
+              24.25
             ],
             "width": 10.0,
-            "height": 8.25,
-            "area": 774
+            "height": 7.0,
+            "area": 512
+          }
+        },
+        {
+          "alphaBox": [
+            4.75,
+            0.0,
+            27.5,
+            47.5
+          ],
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              13.25,
+              16.5,
+              23.0,
+              23.0
+            ],
+            "width": 9.75,
+            "height": 6.5,
+            "area": 481
+          }
+        },
+        {
+          "alphaBox": [
+            4.75,
+            0.0,
+            27.5,
+            47.5
+          ],
+          "alphaWidth": 22.75,
+          "alphaHeight": 47.5,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              13.5,
+              16.25,
+              23.5,
+              23.0
+            ],
+            "width": 10.0,
+            "height": 6.75,
+            "area": 512
           }
         }
       ]

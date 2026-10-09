@@ -19,6 +19,8 @@ for space in spaces:
                     assert state in tier['required_states'].lower(), (space['space_id'],item['id'],state)
 manifest=json.loads((root/'public/sprites/manifest.json').read_text())
 contracts=json.loads((root/'art/source/floor-asset-catalogue/export-contract.json').read_text())
+keeper_contract=json.loads((root/'data/keeper_asset_contract.json').read_text())
+assert keeper_contract['version']==6 and keeper_contract['status']=='authoritative'
 for name,c in contracts.items():
     raw=root/c['file']; im=Image.open(raw).convert('RGBA')
     assert im.size==(c['w']*c['density']*c['frames'],c['h']*c['density'])
@@ -251,6 +253,26 @@ assert manifest['keeper_swim_costume_horizontal']['mirrorSafe'] is True
 assert manifest['keeper_scuba_swim_horizontal']['mirrorSafe'] is True
 for name in ['keeper_party_idle','keeper_party_walk','keeper_party_turn_back']:
     assert manifest[name]['h']==48 and manifest[name]['anchor']==[16,48] and manifest[name]['outfit']=='party-hat'
+party_identity=keeper_contract['costumeIdentityRules']['partyHat']
+assert party_identity['clips']==['keeper_party_idle','keeper_party_walk','keeper_party_turn_back']
+assert party_identity['baseFamilies']==['keeper_wave_camera','keeper_walk','keeper_turn_back']
+assert party_identity['headwearOnly'] is True and party_identity['skullScaleChanges'] is False
+assert party_identity['faceIdentity']=='canonical-keeper'
+
+# Below the hat/cap overlap, party pixels must be the canonical frames exactly,
+# merely shifted eight logical pixels down into the taller headwear canvas.
+party_pairs={
+    'keeper_party_idle':('keeper_wave_camera',[0,1,7,0]),
+    'keeper_party_walk':('keeper_walk',list(range(8))),
+    'keeper_party_turn_back':('keeper_turn_back',list(range(6))),
+}
+for party_name,(base_name,base_indices) in party_pairs.items():
+    party_strip=Image.open(root/'public/sprites'/manifest[party_name]['file']).convert('RGBA')
+    base_strip=Image.open(root/'public/sprites'/manifest[base_name]['file']).convert('RGBA')
+    for party_index,base_index in enumerate(base_indices):
+        party_body=party_strip.crop((party_index*128,68,(party_index+1)*128,192))
+        base_body=base_strip.crop((base_index*128,36,(base_index+1)*128,160))
+        assert ImageChops.difference(party_body,base_body).getbbox() is None,(party_name,party_index)
 assert manifest['keeper_party_walk']['mirrorSafe'] is True
 assert manifest['keeper_party_turn_back']['reverseFor']=='party_turn_front'
 for name,vector,facing in [('keeper_souwester_walk_side',[1,0],'right'),('keeper_souwester_walk_back',[0,-1],'back'),('keeper_souwester_walk_front',[0,1],'front')]:
@@ -374,8 +396,8 @@ for view in ['side','back','front']:
     tarzan=manifest[f'keeper_tarzan_walk_{view}']
     assert tarzan['outfit']=='tarzan' and tarzan['w']==32 and tarzan['h']==40 and tarzan['anchor']==[16,40]
 assert manifest['keeper_tarzan_walk_side']['mirrorSafe'] is True
-asset_contract=json.loads((root/'data/keeper_asset_contract.json').read_text())
-assert asset_contract['version']==5 and asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
+asset_contract=keeper_contract
+assert asset_contract['version']==6 and asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
 assert asset_contract['derivedObjectDataset']=='data/keeper_object_dimensions.json'
 assert asset_contract['canvas']['standard']=={'width':32,'height':40,'density':4,'anchor':[16,40]}
 assert asset_contract['canvas']['extendedAirborne']=={'width':48,'height':40,'density':4,'anchor':[24,40]}

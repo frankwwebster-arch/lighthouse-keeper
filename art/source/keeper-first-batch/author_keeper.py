@@ -372,6 +372,36 @@ def generated_frames(filename, expected, fallback=None, logical_width=32, logica
     return frames
 
 
+def party_hat_frames(base_frames):
+    """Add party headwear without redrawing or rescaling the keeper identity.
+
+    The canonical 32x40 keeper frame is bottom-aligned in the 32x48 headwear
+    canvas.  The cone and band deliberately cover the ordinary cap while the
+    established face, beard, hair, body and motion remain byte-for-byte from
+    their approved animation family.
+    """
+    result = []
+    for base in base_frames:
+        frame = Image.new("RGBA", (32 * D, 48 * D), (0, 0, 0, 0))
+        frame.alpha_composite(base, (0, 8 * D))
+        d = ImageDraw.Draw(frame)
+
+        # Cone, cap-covering band and pom-pom.  Coordinates are shared by all
+        # views so a costume can never alter the keeper's anatomical scale.
+        poly(d, [(5, 15), (16, 3), (27, 15)], "#1769a7", INK, 3)
+        poly(d, [(7, 13), (16, 4), (25, 13)], "#247fc0", None)
+        rect(d, (5, 13, 27, 16), NAVY, INK, 3)
+        rect(d, (7, 13, 25, 14), NAVY_HI)
+        ellipse(d, (13.5, 0, 18.5, 5), "#f0a52b", INK, 2)
+
+        # Readable cream spots, kept clear of the face and hat outline.
+        ellipse(d, (11, 9, 14, 12), CREAM_HI, None)
+        ellipse(d, (19, 10, 22, 13), CREAM_HI, None)
+        ellipse(d, (15, 5, 18, 8), CREAM_HI, None)
+        result.append(frame)
+    return result
+
+
 def remove_small_alpha_components(frame, min_pixels=200):
     """Remove neighbouring-cell flecks while retaining actor and released props."""
     width, height = frame.size
@@ -508,9 +538,12 @@ swim_costume_down_frames = generated_frames("keeper-swim-costume-down-generated-
 scuba_horizontal_frames = generated_frames("keeper-scuba-horizontal-generated-source.png", 8, logical_width=80, logical_height=48, force_equal_cells=True)
 scuba_up_frames = generated_frames("keeper-scuba-up-generated-source.png", 8, logical_width=48, logical_height=48, force_equal_cells=True)
 scuba_down_frames = generated_frames("keeper-scuba-down-generated-source.png", 8, logical_width=48, logical_height=48, force_equal_cells=True)
-party_idle_frames = generated_frames("keeper-party-idle-generated-source.png", 4, logical_height=48)
-party_walk_frames = generated_frames("keeper-party-walk-generated-source.png", 8, logical_height=48)
-party_turn_back_frames = generated_frames("keeper-party-turn-back-generated-source.png", 6, logical_height=48)
+# Party costume is headwear-only.  Derive every pose from the approved keeper
+# families so the face, skull, beard and body can never drift between costumes.
+party_idle_reference = generated_frames("keeper-wave-generated-source.png", 8)
+party_idle_frames = party_hat_frames([party_idle_reference[index] for index in (0, 1, 7, 0)])
+party_walk_frames = party_hat_frames(walk_frames)
+party_turn_back_frames = party_hat_frames(turn_frames)
 souwester_side_frames = generated_frames("keeper-souwester-walk-side-generated-source.png", 8, logical_height=48, scale_multiplier=0.86)
 souwester_back_frames = generated_frames("keeper-souwester-walk-back-generated-source.png", 8, logical_height=48, scale_multiplier=0.86)
 souwester_front_frames = generated_frames("keeper-souwester-walk-front-generated-source.png", 8, logical_height=48, scale_multiplier=0.86)

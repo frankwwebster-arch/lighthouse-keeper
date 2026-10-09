@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "status": "authoritative",
   "units": "logical-pixels",
   "derivedObjectDataset": "data/keeper_object_dimensions.json",
@@ -64,6 +64,16 @@
     "costume": "infer skull under headwear from face, ear and neck landmarks; costume bulk is excluded from core width",
     "rearView": "infer skull from cap band or hair crown and use shoulder/hip/sole landmarks",
     "rule": "One uniform scale is applied to the whole frame sequence. Never fit the keeper to the canvas or to a prop. Increase transparent canvas space instead."
+  },
+  "costumeIdentityRules": {
+    "partyHat": {
+      "clips": ["keeper_party_idle", "keeper_party_walk", "keeper_party_turn_back"],
+      "baseFamilies": ["keeper_wave_camera", "keeper_walk", "keeper_turn_back"],
+      "headwearOnly": true,
+      "faceIdentity": "canonical-keeper",
+      "skullScaleChanges": false,
+      "rule": "Add the cardboard party hat over the ordinary cap; inherit the approved face, beard, hair, body, scale and movement from the named canonical base family."
+    }
   },
   "rigPivots": {
     "neck": [16, 11],

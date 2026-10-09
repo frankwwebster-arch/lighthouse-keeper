@@ -80,9 +80,9 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Scuba swim left/right | `keeper_scuba_swim_horizontal` | right; mirror left; 80 × 48 canonical-scale horizontal canvas; bubbles separate |
 | Scuba swim up | `keeper_scuba_swim_up` | direct rear view; bubbles separate |
 | Scuba swim down | `keeper_scuba_swim_down` | direct front view; bubbles separate |
-| Party idle | `keeper_party_idle` | front; normal clothes plus cardboard party hat |
-| Party walk | `keeper_party_walk` | right; mirror left |
-| Party turn away | `keeper_party_turn_back` | reverse to face camera |
+| Party idle | `keeper_party_idle` | exact canonical front face/body; normal clothes plus cardboard party hat |
+| Party walk | `keeper_party_walk` | exact canonical side-walk identity; right; mirror left |
+| Party turn away | `keeper_party_turn_back` | exact canonical turn identity; reverse to face camera |
 | Walk in sou'wester left/right | `keeper_souwester_walk_side` | yellow oilskins; right; mirror left |
 | Walk away in sou'wester | `keeper_souwester_walk_back` | direct rear view; movement vector `(0,-1)` |
 | Walk toward camera in sou'wester | `keeper_souwester_walk_front` | direct front view; movement vector `(0,1)` |

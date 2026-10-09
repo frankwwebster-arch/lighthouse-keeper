@@ -19,7 +19,9 @@ how each comment is being applied.
 
 - Rebuild `keeper_crouch_work_back`: canonical body width, hands in front in
   every working pose, especially frames 3 and 5.
-- Rebuild the rough `keeper_party_turn_back` transition.
+- Rebuild all three party clips: the party hat is headwear only, so the face,
+  beard, hair, body and movement must come directly from the approved canonical
+  front, side-walk and turn families.
 - Rebuild all three scuba directions to restore the approved keeper identity,
   coherent equipment and matching swim-cycle anatomy.
 - Expand `keeper_swim_costume_horizontal` and the horizontal scuba clip to an
@@ -36,6 +38,12 @@ costume family now excludes its hat/helmet envelope from anatomy scale; the
 bath-wash and hot-tub figures were rebuilt and measured from their visible head
 and shoulder landmarks. `fx_broken_smoke` is now an irregular curling eight-frame
 effect rather than stacked circular puffs.
+
+Party-identity correction: `keeper_party_idle`, `keeper_party_walk` and
+`keeper_party_turn_back` now inherit the exact canonical keeper frames and add
+only the cardboard party hat. This removes the gnome/Santa-like alternate face
+that had appeared in the generated party artwork and prevents future costume
+work from changing the keeper's identity.
 
 Subsequent review correction: `keeper_spiral_stairs_down` frame 4 had an
 erroneous third hand behind the keeper's hip. The extra hand was removed at the

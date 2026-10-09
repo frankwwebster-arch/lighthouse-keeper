@@ -148,8 +148,12 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
   and `keeper-scuba-down-generated-source.png` — the same directional coverage
   in the locked navy wetsuit, mask, regulator, yellow tank and fins.
 - `keeper-party-idle-generated-source.png`, `keeper-party-walk-generated-source.png`
-  and `keeper-party-turn-back-generated-source.png` — normal uniform with a
-  blue dotted cardboard cone hat, covering idle, mirrored walk and turn.
+  and `keeper-party-turn-back-generated-source.png` — retained visual studies
+  for the blue dotted cardboard cone hat. Production does not redraw the
+  keeper from these sheets: `author_keeper.py` inherits the exact approved
+  `keeper_wave_camera`, `keeper_walk` and `keeper_turn_back` frames and adds
+  only the hat. This makes the face, beard, hair, body and scale identical to
+  the ordinary keeper by construction.
 - `keeper-souwester-walk-side-generated-source.png`,
   `keeper-souwester-walk-back-generated-source.png` and
   `keeper-souwester-walk-front-generated-source.png` — full mustard-yellow

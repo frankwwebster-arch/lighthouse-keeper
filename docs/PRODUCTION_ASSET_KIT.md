@@ -82,9 +82,9 @@ Initial clips:
 | `scuba_swim_horizontal` | side | 8 · 8 | yes | 80 × 48 centred; right, mirror left; expanded canvas preserves canonical body scale |
 | `scuba_swim_up` | rear | 8 · 8 | yes | mask, tank, regulator and fins |
 | `scuba_swim_down` | front | 8 · 8 | yes | mask, tank, regulator and fins |
-| `party_idle` | front | 4 · 6 | yes | 32 × 48; cardboard cone party hat |
-| `party_walk` | side | 8 · 10 | yes | 32 × 48; right, mirror left |
-| `party_turn_back` | front to back | 6 · 8 | no | 32 × 48; reverse to turn front |
+| `party_idle` | front | 4 · 6 | yes | 32 × 48; exact canonical front identity plus cardboard cone party hat |
+| `party_walk` | side | 8 · 10 | yes | 32 × 48; exact canonical side walk; right, mirror left |
+| `party_turn_back` | front to back | 6 · 8 | no | 32 × 48; exact canonical turn; reverse to turn front |
 | `souwester_walk_side` | side | 8 · 10 | yes | 32 × 48 yellow oilskins; right, mirror left |
 | `souwester_walk_back` | rear | 8 · 10 | yes | direct walk away; vector `(0,-1)` |
 | `souwester_walk_front` | front | 8 · 10 | yes | direct walk toward camera; vector `(0,1)` |

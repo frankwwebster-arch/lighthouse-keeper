@@ -35,6 +35,10 @@ page explains it in ordinary language.
   every frame must retain at least 32 logical pixels of visible actor thickness.
   Up/down swimming remains centred
   on 48 × 48 at `(24,24)`. Party headwear uses 32 × 48 with feet anchor `(16,48)`.
+- A costume may not redesign the keeper. The party clips inherit their face,
+  beard, hair, body and motion directly from `keeper_wave_camera`, `keeper_walk`
+  and `keeper_turn_back`; only the cardboard hat changes. This headwear-only
+  rule is enforced by contract version 6.
 - Never scale the keeper to make him meet an object. Position and size the
   object from the interaction points below.
 - Never scale a crouched, seated, horizontal or prop-carrying silhouette to fill
