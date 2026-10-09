@@ -372,32 +372,69 @@ def generated_frames(filename, expected, fallback=None, logical_width=32, logica
     return frames
 
 
-def party_hat_frames(base_frames):
-    """Add party headwear without redrawing or rescaling the keeper identity.
+def draw_party_hat(draw, center_x=16, base_y=13):
+    """Draw the approved small paper party hat from the supplied reference."""
+    # A narrow pale-pink cardboard cone, small red pom-pom and irregular red
+    # paper fringe. It sits on the captain's cap without changing the skull,
+    # face or canonical body scale beneath it.
+    poly(draw, [(center_x - 5, base_y - 1), (center_x, base_y - 11), (center_x + 5, base_y - 1)], "#f1c7ca", INK, 1)
+    poly(draw, [(center_x - 4, base_y - 2), (center_x, base_y - 10), (center_x, base_y - 2)], "#f7dadd", None)
+    ellipse(draw, (center_x - 2, base_y - 14, center_x + 2, base_y - 10), "#c62828", INK, 1)
+    rect(draw, (center_x - 5, base_y - 2, center_x + 5, base_y), "#c62828", INK, 1)
+    # Uneven paper fringe, as in the user's physical reference.
+    poly(draw, [(center_x - 5, base_y), (center_x - 4, base_y + 2), (center_x - 2, base_y), (center_x, base_y + 2), (center_x + 2, base_y), (center_x + 4, base_y + 2), (center_x + 5, base_y)], "#d32f2f", None)
 
-    The canonical 32x40 keeper frame is bottom-aligned in the 32x48 headwear
-    canvas.  The cone and band deliberately cover the ordinary cap while the
-    established face, beard, hair, body and motion remain byte-for-byte from
-    their approved animation family.
-    """
+
+def party_hat_frames(base_frames):
+    """Add small party headwear without redrawing/rescaling keeper identity."""
     result = []
     for base in base_frames:
         frame = Image.new("RGBA", (32 * D, 48 * D), (0, 0, 0, 0))
         frame.alpha_composite(base, (0, 8 * D))
-        d = ImageDraw.Draw(frame)
+        draw_party_hat(ImageDraw.Draw(frame))
+        result.append(frame)
+    return result
 
-        # Cone, cap-covering band and pom-pom.  Coordinates are shared by all
-        # views so a costume can never alter the keeper's anatomical scale.
-        poly(d, [(5, 15), (16, 3), (27, 15)], "#1769a7", INK, 3)
-        poly(d, [(7, 13), (16, 4), (25, 13)], "#247fc0", None)
-        rect(d, (5, 13, 27, 16), NAVY, INK, 3)
-        rect(d, (7, 13, 25, 14), NAVY_HI)
-        ellipse(d, (13.5, 0, 18.5, 5), "#f0a52b", INK, 2)
 
-        # Readable cream spots, kept clear of the face and hat outline.
-        ellipse(d, (11, 9, 14, 12), CREAM_HI, None)
-        ellipse(d, (19, 10, 22, 13), CREAM_HI, None)
-        ellipse(d, (15, 5, 18, 8), CREAM_HI, None)
+def party_hat_put_on_back_frames(idle_frames, raised_frames):
+    """Back-view reveal: lift the loose hat behind the body onto the cap."""
+    # Recombine approved rear-view frames: stable idle legs with the canonical
+    # ladder-climb upper-body reach. No keeper anatomy is regenerated.
+    raised_indices = (None, 7, 2, 3, 3, 2, 7, None)
+    hat_base_y = (40, 33, 25, 18, 13, 13, 13, 13)
+    frames = []
+    for step, raised_index in enumerate(raised_indices):
+        actor = idle_frames[0].copy()
+        if raised_index is not None:
+            ImageDraw.Draw(actor).rectangle((0, 0, actor.width, 25 * D), fill=(0, 0, 0, 0))
+            actor.alpha_composite(raised_frames[raised_index].crop((0, 0, actor.width, 25 * D)), (0, 0))
+        frame = Image.new("RGBA", (32 * D, 48 * D), (0, 0, 0, 0))
+        base_y = hat_base_y[step]
+        if 2 <= step < 5:
+            # Drawing first makes the loose hat rise behind his torso/head;
+            # only the emerging top is visible until it reaches the cap.
+            draw_party_hat(ImageDraw.Draw(frame), center_x=16, base_y=base_y)
+        frame.alpha_composite(actor, (0, 8 * D))
+        if step >= 4:
+            draw_party_hat(ImageDraw.Draw(frame), center_x=16, base_y=13)
+        frames.append(frame)
+    return frames
+
+
+def party_cake_eat_frames(base_frames):
+    """Party-hat variant of the approved seated eating loop with cake slice."""
+    result = []
+    for base in base_frames:
+        frame = Image.new("RGBA", (40 * D, 48 * D), (0, 0, 0, 0))
+        frame.alpha_composite(base, (0, 8 * D))
+        draw = ImageDraw.Draw(frame)
+        draw_party_hat(draw)
+        # Small plate and a readable slice of the established jam-layer cake.
+        ellipse(draw, (29, 32, 39, 34), CREAM_HI, INK, 1)
+        poly(draw, [(31, 28), (38, 29), (38, 32), (31, 32)], "#e7b86b", INK, 1)
+        rect(draw, (31, 30, 38, 31), "#b72e3b")
+        rect(draw, (31, 27, 38, 29), CREAM_HI)
+        ellipse(draw, (34.5, 25.5, 36.5, 28), "#c62828", INK, 1)
         result.append(frame)
     return result
 
@@ -428,6 +465,59 @@ def remove_small_alpha_components(frame, min_pixels=200):
     cleaned = frame.copy()
     cleaned.putalpha(Image.frombytes("L", frame.size, bytes(keep)))
     return cleaned
+
+
+def snooker_frames():
+    """Extract the eight overlapping source poses without neighbouring actors."""
+    source = Image.open(Path(__file__).with_name("keeper-snooker-generated-source.png")).convert("RGBA")
+    # Discard isolated generation flecks below the shared feet line before
+    # measuring scale; otherwise invisible debris makes the keeper tiny.
+    source = source.crop((0, 130, source.width, 580))
+    # These ranges follow the actual pose centres rather than equal sheet cells.
+    ranges = ((0, 245), (235, 522), (470, 800), (730, 995), (975, 1265), (1270, 1578), (1530, 1848), (1790, 2172))
+    poses = []
+    for x0, x1 in ranges:
+        pose = source.crop((x0, 0, x1, source.height))
+        box = pose.getchannel("A").getbbox()
+        if box is None:
+            raise ValueError("Empty snooker pose")
+        poses.append(pose.crop(box))
+
+    tallest = max(pose.height for pose in poses)
+    widest = max(pose.width for pose in poses)
+    scale = min(152 / tallest, 184 / widest)
+    frames = []
+    for pose in poses:
+        pose = pose.resize((round(pose.width * scale), round(pose.height * scale)), Image.Resampling.LANCZOS)
+        pose.putalpha(pose.getchannel("A").point(lambda value: 255 if value >= 128 else 0))
+        frame = Image.new("RGBA", (48 * D, 40 * D), (0, 0, 0, 0))
+        frame.alpha_composite(pose, ((frame.width - pose.width) // 2, frame.height - 2 - pose.height))
+        frames.append(frame)
+
+    # Remove only the adjacent-pose incursions. The two cue tips that share
+    # those contaminated regions are restored below as prop-only pixels.
+    clear_rectangles = {
+        0: ((130, 105, 192, 160),),
+        1: ((0, 0, 52, 160), (125, 0, 192, 160)),
+        2: ((0, 0, 38, 160), (125, 0, 192, 160)),
+        3: ((0, 0, 45, 160),),
+        4: ((0, 0, 62, 160),),
+        5: ((0, 0, 60, 160),),
+        6: ((0, 0, 58, 160),),
+        7: ((0, 0, 60, 160),),
+    }
+    for frame_index, rectangles in clear_rectangles.items():
+        draw = ImageDraw.Draw(frames[frame_index])
+        for box in rectangles:
+            draw.rectangle(box, fill=(0, 0, 0, 0))
+    # Restore the two forward cue extensions after the neighbouring boots have
+    # been removed. These are prop pixels only; keeper anatomy is untouched.
+    for frame_index, start_x in ((1, 122), (2, 128)):
+        draw = ImageDraw.Draw(frames[frame_index])
+        draw.rectangle((start_x, 87, 170, 95), fill=INK)
+        draw.rectangle((start_x, 89, 166, 93), fill="#a9683c")
+        draw.rectangle((166, 89, 171, 93), fill=CREAM_HI)
+    return frames
 
 
 def part(which, rear=False, mood="neutral"):
@@ -544,10 +634,13 @@ party_idle_reference = generated_frames("keeper-wave-generated-source.png", 8)
 party_idle_frames = party_hat_frames([party_idle_reference[index] for index in (0, 1, 7, 0)])
 party_walk_frames = party_hat_frames(walk_frames)
 party_turn_back_frames = party_hat_frames(turn_frames)
+party_hat_put_on_back = party_hat_put_on_back_frames(work_frames, ladder_frames)
+party_cake_eat = party_cake_eat_frames(eat_seated_frames)
 souwester_side_frames = generated_frames("keeper-souwester-walk-side-generated-source.png", 8, logical_height=48, scale_multiplier=0.86)
 souwester_back_frames = generated_frames("keeper-souwester-walk-back-generated-source.png", 8, logical_height=48, scale_multiplier=0.86)
 souwester_front_frames = generated_frames("keeper-souwester-walk-front-generated-source.png", 8, logical_height=48, scale_multiplier=0.86)
 dance_frames = generated_frames("keeper-dance-generated-source.png", 8)
+party_dance_frames = party_hat_frames(dance_frames)
 play_guitar_frames = generated_frames("keeper-play-guitar-generated-source.png", 8, logical_width=48)
 play_drums_front_frames = generated_frames("keeper-play-drums-front-generated-source.png", 8, logical_height=48, scale_multiplier=0.90)
 # Front is the timing and anatomy master. The rear source has more transparent
@@ -619,6 +712,9 @@ save("keeper_scuba_swim_down", scuba_down_frames, 8, anchor_point=[24, 24], move
 save("keeper_party_idle", party_idle_frames, 6, anchor_point=[16, 48], outfit="party-hat", facing="front", interaction="party-idle")
 save("keeper_party_walk", party_walk_frames, 10, anchor_point=[16, 48], outfit="party-hat", mirror_safe=True, facing="right", interaction="party-walk", mirrors_for="left")
 save("keeper_party_turn_back", party_turn_back_frames, 8, anchor_point=[16, 48], outfit="party-hat", loop=False, reverse_for="party_turn_front", facing="front-to-back", interaction="party-turn")
+save("keeper_party_hat_put_on_back", party_hat_put_on_back, 8, anchor_point=[16, 48], hand_use_point=[16, 13], outfit="party-hat-transition", loop=False, reverse_for="party-hat-remove-back", facing="back", interaction="put-on-party-hat")
+save("keeper_party_eat_cake", party_cake_eat, 8, anchor_point=[16, 48], seat_point=[16, 37], hand_use_point=[27, 25], outfit="party-hat", facing="right", interaction="eat-cake", mirror_safe=True, mirrors_for="left")
+save("keeper_party_dance", party_dance_frames, 10, anchor_point=[16, 48], outfit="party-hat", facing="front", interaction="party-dance")
 save("keeper_souwester_walk_side", souwester_side_frames, 10, anchor_point=[16, 48], movement_vector=[1, 0], outfit="souwester", mirror_safe=True, facing="right", interaction="souwester-walk", mirrors_for="left")
 save("keeper_souwester_walk_back", souwester_back_frames, 10, anchor_point=[16, 48], movement_vector=[0, -1], outfit="souwester", facing="back", interaction="souwester-walk-away")
 save("keeper_souwester_walk_front", souwester_front_frames, 10, anchor_point=[16, 48], movement_vector=[0, 1], outfit="souwester", facing="front", interaction="souwester-walk-toward")
@@ -687,6 +783,9 @@ save_preview("keeper-scuba-swim-down", scuba_down_frames, 120)
 save_preview("keeper-party-idle", party_idle_frames, 160)
 save_preview("keeper-party-walk", party_walk_frames, 100)
 save_preview("keeper-party-turn-back", party_turn_back_frames, 120, ping_pong=True)
+save_preview("keeper-party-hat-put-on-back", party_hat_put_on_back, 120)
+save_preview("keeper-party-eat-cake", party_cake_eat, 120)
+save_preview("keeper-party-dance", party_dance_frames, 100)
 save_preview("keeper-souwester-walk-side", souwester_side_frames, 100)
 save_preview("keeper-souwester-walk-back", souwester_back_frames, 100)
 save_preview("keeper-souwester-walk-front", souwester_front_frames, 100)
@@ -820,7 +919,25 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
     elif clip_name.startswith("keeper_hot_drink_"):
         # Keep the kettle, mug, spoon, liquid and steam in fixed equal cells,
         # including frames where the mug has detached from the keeper's hand.
-        frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, group_equal_components=clip_name == "keeper_hot_drink_pour", preserve_equal_cells=clip_name != "keeper_hot_drink_pour", scale_multiplier=anatomy_scale)
+        # Actor-centred component grouping excludes neighbouring poses whose
+        # source silhouettes overlap the nominal equal-cell boundaries.
+        if clip_name in {"keeper_hot_drink_drink", "keeper_hot_drink_put_down"}:
+            frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, group_equal_components=True, scale_multiplier=anatomy_scale)
+            # Steam and released mugs remain substantial/attached components;
+            # the accidental neighbouring-frame slivers are all smaller.
+            frames = [remove_small_alpha_components(frame, min_pixels=200) for frame in frames]
+        else:
+            frames = generated_frames(
+                source_name,
+                frame_count,
+                logical_width=logical_width,
+                logical_height=logical_height,
+                group_equal_components=clip_name == "keeper_hot_drink_pour",
+                preserve_equal_cells=clip_name != "keeper_hot_drink_pour",
+                scale_multiplier=anatomy_scale,
+            )
+    elif clip_name == "keeper_snooker":
+        frames = snooker_frames()
     elif clip_name == "keeper_meal_place_side":
         # After release, the plated meal is detached from the keeper but must
         # remain in the actor strip until the world object takes over.  The

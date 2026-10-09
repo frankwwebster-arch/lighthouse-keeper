@@ -2,10 +2,10 @@
 
 This is the permanent, reproducible audit of every keeper sheet. It deliberately does **not** use the outer silhouette as character scale: hats, tools, raised arms, water and furniture can change that box without changing the keeper.
 
-- 167 keeper sheets inspected.
-- 149 animation sheets accepted for review; 18 obsolete modular/reference sheets excluded.
-- 1186 individual frames measured.
-- 52 sheets explicitly rebuilt or anatomy-normalised in this pass.
+- 170 keeper sheets inspected.
+- 152 animation sheets accepted for review; 18 obsolete modular/reference sheets excluded.
+- 1210 individual frames measured.
+- 58 sheets explicitly rebuilt or anatomy-normalised in this pass.
 - Canonical upright anatomy: skull top 32.5 logical pixels above the walking floor, shoulders 24.5, hips 14.5, seat contact 11.
 - Allowed landmark drift: 0.5 logical pixel; core-width drift: 1 logical pixel. Pose contacts are checked independently from body scale.
 
@@ -25,6 +25,8 @@ Upright poses use inferred skull-to-supporting-sole height. Costumes use the fac
 - `keeper_halloween_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_halloween_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_halloween_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_hot_drink_drink` — neighbouring-frame flecks removed while retaining canonical actor, mug and steam.
+- `keeper_hot_drink_put_down` — neighbouring-frame flecks removed while retaining the released mug.
 - `keeper_hot_tub` — redrawn and normalised by the visible head/shoulder unit rather than the water silhouette.
 - `keeper_knight_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_knight_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
@@ -34,6 +36,9 @@ Upright poses use inferred skull-to-supporting-sole height. Costumes use the fac
 - `keeper_mechanic_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_mechanic_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_mechanic_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
+- `keeper_party_dance` — canonical dance anatomy inherited exactly; party hat is an overlay.
+- `keeper_party_eat_cake` — canonical seated-eat anatomy inherited exactly; party hat and cake are overlays.
+- `keeper_party_hat_put_on_back` — canonical rear work, raised-arm and leg components recombined; hat overlay only.
 - `keeper_party_idle` — canonical front identity inherited exactly; party hat is headwear-only.
 - `keeper_party_turn_back` — canonical turn identity inherited exactly; party hat is headwear-only.
 - `keeper_party_walk` — canonical side-walk identity inherited exactly; party hat is headwear-only.
@@ -53,6 +58,7 @@ Upright poses use inferred skull-to-supporting-sole height. Costumes use the fac
 - `keeper_scuba_swim_up` — redrawn from the approved rear swim anatomy with coherent scuba equipment.
 - `keeper_search_boxes` — reuses canonical corrected low rear work anatomy.
 - `keeper_sit_front` — redrawn and width-normalised against canonical front body.
+- `keeper_snooker` — overlapping source poses isolated without fitting actor scale to the cue.
 - `keeper_souwester_walk_back` — costume headwear excluded; skull, shoulder and sole landmarks normalised.
 - `keeper_souwester_walk_front` — costume headwear excluded; skull, shoulder and sole landmarks normalised.
 - `keeper_souwester_walk_side` — costume headwear excluded; skull, shoulder and sole landmarks normalised.

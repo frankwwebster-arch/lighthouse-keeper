@@ -1,0 +1,26 @@
+{
+  "w": 40,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    16,
+    48
+  ],
+  "z": 50,
+  "loop": true,
+  "seatPoint": [
+    16,
+    37
+  ],
+  "handUsePoint": [
+    27,
+    25
+  ],
+  "outfit": "party-hat",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "eat-cake",
+  "mirrorsFor": "left"
+}

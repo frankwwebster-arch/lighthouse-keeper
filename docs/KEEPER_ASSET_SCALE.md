@@ -35,10 +35,13 @@ page explains it in ordinary language.
   every frame must retain at least 32 logical pixels of visible actor thickness.
   Up/down swimming remains centred
   on 48 × 48 at `(24,24)`. Party headwear uses 32 × 48 with feet anchor `(16,48)`.
-- A costume may not redesign the keeper. The party clips inherit their face,
-  beard, hair, body and motion directly from `keeper_wave_camera`, `keeper_walk`
-  and `keeper_turn_back`; only the cardboard hat changes. This headwear-only
-  rule is enforced by contract version 6.
+- Costumes, hats, handheld props and equipment are overlays on approved
+  canonical keeper frames. They never justify regenerating the actor. Only a
+  genuinely new body pose may be newly authored, and it must pass the full
+  anatomy audit before acceptance. The party clips inherit their body and
+  motion from the relevant wave, walk, turn, rear-work/raised-arm, seated-eat
+  and dance families; only the hat/cake prop layers change. Contract version 7
+  enforces this project-wide rule.
 - Never scale the keeper to make him meet an object. Position and size the
   object from the interaction points below.
 - Never scale a crouched, seated, horizontal or prop-carrying silhouette to fill
@@ -190,7 +193,7 @@ the established switch heights, canvas scale or feet anchors.
 The complete starting dimensions for chairs, sofas, tables, beds, toilets,
 baths, showers and object stations are in
 `data/keeper_object_dimensions.json`. The per-frame measurement evidence for
-all 167 sheets is in `docs/keeper-scale-audit/keeper-scale-metrics.json`; the
+all 170 sheets is in `docs/keeper-scale-audit/keeper-scale-metrics.json`; the
 eight contact sheets render every sample at one fixed display scale so a larger
 transparent canvas can never make its keeper look smaller.
 

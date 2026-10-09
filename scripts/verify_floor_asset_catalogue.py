@@ -4,6 +4,22 @@ import csv, hashlib, json
 from pathlib import Path
 from PIL import Image, ImageChops
 root=Path(__file__).resolve().parents[1]
+
+def alpha_component_sizes(image):
+    width,height=image.size
+    source=bytearray(image.getchannel('A').tobytes())
+    sizes=[]
+    for start,value in enumerate(source):
+        if not value: continue
+        source[start]=0; pending=[start]; size=0
+        while pending:
+            index=pending.pop(); size+=1; y,x=divmod(index,width)
+            for neighbour in (index-1,index+1,index-width,index+width):
+                if 0<=neighbour<width*height and source[neighbour] and (neighbour//width==y or neighbour%width==x):
+                    source[neighbour]=0; pending.append(neighbour)
+        sizes.append(size)
+    return sizes
+
 data=json.loads((root/'docs/floor-asset-catalogue/catalogue.json').read_text())
 spaces=data['spaces']; rows=data['rows']
 assert len(spaces)==71 and len({s['space_id'] for s in spaces})==71
@@ -20,7 +36,7 @@ for space in spaces:
 manifest=json.loads((root/'public/sprites/manifest.json').read_text())
 contracts=json.loads((root/'art/source/floor-asset-catalogue/export-contract.json').read_text())
 keeper_contract=json.loads((root/'data/keeper_asset_contract.json').read_text())
-assert keeper_contract['version']==6 and keeper_contract['status']=='authoritative'
+assert keeper_contract['version']==7 and keeper_contract['status']=='authoritative'
 for name,c in contracts.items():
     raw=root/c['file']; im=Image.open(raw).convert('RGBA')
     assert im.size==(c['w']*c['density']*c['frames'],c['h']*c['density'])
@@ -41,7 +57,7 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==167
+assert len(keeper_pngs)==170
 required_clips={
     'keeper_idle':(4,6), 'keeper_walk':(8,10),
     'keeper_turn_back':(6,8), 'keeper_work_back':(8,8),
@@ -79,6 +95,8 @@ required_clips={
     'keeper_scuba_swim_up':(8,8), 'keeper_scuba_swim_down':(8,8),
     'keeper_party_idle':(4,6), 'keeper_party_walk':(8,10),
     'keeper_party_turn_back':(6,8),
+    'keeper_party_hat_put_on_back':(8,8),
+    'keeper_party_eat_cake':(8,8), 'keeper_party_dance':(8,10),
     'keeper_souwester_walk_side':(8,10),
     'keeper_souwester_walk_back':(8,10),
     'keeper_souwester_walk_front':(8,10),
@@ -98,6 +116,7 @@ for raw in keeper_pngs:
     assert sidecar['density']==4
     is_centred_swim=raw.stem.startswith(('keeper_swim_costume_','keeper_scuba_swim_','keeper_anti_gravity_'))
     expected_anchor=[sidecar['w']//2,sidecar['h']//2] if is_centred_swim else [sidecar['w']//2,sidecar['h']]
+    if raw.stem.startswith('keeper_party_eat_cake_'): expected_anchor=[16,48]
     assert sidecar['anchor']==expected_anchor,(raw.name,sidecar['anchor'])
     assert set(im.getchannel('A').tobytes()) <= {0,255}
     name=raw.stem.rsplit('_f',1)[0]
@@ -217,8 +236,11 @@ for name,interaction,point in [
     drink_strip=Image.open(root/'public/sprites'/manifest[name]['file']).convert('RGBA')
     drink_heights=[]
     for frame_index in range(frame_count):
-        visible=drink_strip.crop((frame_index*48*4,0,(frame_index+1)*48*4,40*4)).getchannel('A').getbbox()
+        drink_frame=drink_strip.crop((frame_index*48*4,0,(frame_index+1)*48*4,40*4))
+        visible=drink_frame.getchannel('A').getbbox()
         assert visible[0]>0 and visible[2]<48*4,(name,frame_index,visible)
+        if name in {'keeper_hot_drink_drink','keeper_hot_drink_put_down'}:
+            assert min(alpha_component_sizes(drink_frame))>=200,(name,frame_index,alpha_component_sizes(drink_frame))
         drink_heights.append(visible[3]-visible[1])
     assert max(drink_heights)==152 and min(drink_heights)>=131,(name,drink_heights)
 for name,interaction,facing in [
@@ -251,13 +273,19 @@ for name in ['keeper_swim_costume_horizontal','keeper_scuba_swim_horizontal']:
     assert manifest[name]['movementVector']==[1,0]
 assert manifest['keeper_swim_costume_horizontal']['mirrorSafe'] is True
 assert manifest['keeper_scuba_swim_horizontal']['mirrorSafe'] is True
-for name in ['keeper_party_idle','keeper_party_walk','keeper_party_turn_back']:
+for name in ['keeper_party_idle','keeper_party_walk','keeper_party_turn_back','keeper_party_eat_cake','keeper_party_dance']:
     assert manifest[name]['h']==48 and manifest[name]['anchor']==[16,48] and manifest[name]['outfit']=='party-hat'
+assert manifest['keeper_party_hat_put_on_back']['h']==48 and manifest['keeper_party_hat_put_on_back']['anchor']==[16,48]
+assert manifest['keeper_party_hat_put_on_back']['facing']=='back' and manifest['keeper_party_hat_put_on_back']['loop'] is False
+assert manifest['keeper_party_hat_put_on_back']['reverseFor']=='party-hat-remove-back'
 party_identity=keeper_contract['costumeIdentityRules']['partyHat']
-assert party_identity['clips']==['keeper_party_idle','keeper_party_walk','keeper_party_turn_back']
-assert party_identity['baseFamilies']==['keeper_wave_camera','keeper_walk','keeper_turn_back']
+assert party_identity['clips']==['keeper_party_idle','keeper_party_walk','keeper_party_turn_back','keeper_party_hat_put_on_back','keeper_party_eat_cake','keeper_party_dance']
+assert party_identity['baseFamilies']==['keeper_wave_camera','keeper_walk','keeper_turn_back','keeper_work_back','keeper_ladder_climb','keeper_eat_seated','keeper_dance']
 assert party_identity['headwearOnly'] is True and party_identity['skullScaleChanges'] is False
 assert party_identity['faceIdentity']=='canonical-keeper'
+general_identity=keeper_contract['costumeIdentityRules']['general']
+assert general_identity['baseActorPolicy']=='overlay-approved-canonical-frames'
+assert general_identity['keeperRegenerationAllowed'] is False
 
 # Below the hat/cap overlap, party pixels must be the canonical frames exactly,
 # merely shifted eight logical pixels down into the taller headwear canvas.
@@ -265,6 +293,7 @@ party_pairs={
     'keeper_party_idle':('keeper_wave_camera',[0,1,7,0]),
     'keeper_party_walk':('keeper_walk',list(range(8))),
     'keeper_party_turn_back':('keeper_turn_back',list(range(6))),
+    'keeper_party_dance':('keeper_dance',list(range(8))),
 }
 for party_name,(base_name,base_indices) in party_pairs.items():
     party_strip=Image.open(root/'public/sprites'/manifest[party_name]['file']).convert('RGBA')
@@ -275,6 +304,14 @@ for party_name,(base_name,base_indices) in party_pairs.items():
         assert ImageChops.difference(party_body,base_body).getbbox() is None,(party_name,party_index)
 assert manifest['keeper_party_walk']['mirrorSafe'] is True
 assert manifest['keeper_party_turn_back']['reverseFor']=='party_turn_front'
+# Cake and plate occupy only the right prop bay; the seated keeper body remains
+# byte-identical to the canonical eating strip below the headwear overlap.
+party_cake=Image.open(root/'public/sprites'/manifest['keeper_party_eat_cake']['file']).convert('RGBA')
+base_eat=Image.open(root/'public/sprites'/manifest['keeper_eat_seated']['file']).convert('RGBA')
+for frame_index in range(8):
+    party_body=party_cake.crop((frame_index*160,68,frame_index*160+112,192))
+    base_body=base_eat.crop((frame_index*128,36,(frame_index+1)*128-16,160))
+    assert ImageChops.difference(party_body,base_body).getbbox() is None,('keeper_party_eat_cake',frame_index)
 for name,vector,facing in [('keeper_souwester_walk_side',[1,0],'right'),('keeper_souwester_walk_back',[0,-1],'back'),('keeper_souwester_walk_front',[0,1],'front')]:
     assert manifest[name]['h']==48 and manifest[name]['anchor']==[16,48]
     assert manifest[name]['outfit']=='souwester' and manifest[name]['movementVector']==vector
@@ -370,6 +407,15 @@ for name in ['keeper_swim_costume_horizontal','keeper_scuba_swim_horizontal']:
     assert min(heights)>=32,(name,heights)
 for name in ['keeper_fish_feed_up','keeper_aquarium_brush','keeper_aquarium_net','keeper_hammer_side','keeper_read_side','keeper_write_side','keeper_telescope','keeper_put_record','keeper_paint_side','keeper_meal_place_side','keeper_snooker','keeper_table_tennis','keeper_darts','keeper_machete_side','keeper_pressups_side','keeper_bowling','keeper_video_game','keeper_water_plants_side','keeper_fish_standing','keeper_fish_seated','keeper_mechanic_fix']:
     assert manifest[name]['mirrorSafe'] is True and manifest[name]['mirrorsFor']
+snooker_strip=Image.open(root/'public/sprites'/manifest['keeper_snooker']['file']).convert('RGBA')
+snooker_frames=[snooker_strip.crop((index*192,0,(index+1)*192,160)) for index in range(8)]
+assert not snooker_frames[0].crop((130,105,192,160)).getbbox()
+for index in (1,2):
+    assert not snooker_frames[index].crop((172,0,192,160)).getbbox()
+    assert not snooker_frames[index].crop((135,0,172,86)).getbbox()
+    assert not snooker_frames[index].crop((135,96,172,160)).getbbox()
+assert not snooker_frames[4].crop((0,0,62,160)).getbbox()
+assert not snooker_frames[5].crop((0,0,60,160)).getbbox()
 machete=manifest['keeper_machete_side']
 assert machete['w']==64 and machete['h']==40 and machete['anchor']==[32,40]
 assert machete['handUsePoint']==[50,28] and machete['interaction']=='chop-plants'
@@ -411,7 +457,7 @@ for view in ['side','back','front']:
     assert tarzan['outfit']=='tarzan' and tarzan['w']==32 and tarzan['h']==40 and tarzan['anchor']==[16,40]
 assert manifest['keeper_tarzan_walk_side']['mirrorSafe'] is True
 asset_contract=keeper_contract
-assert asset_contract['version']==6 and asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
+assert asset_contract['version']==7 and asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
 assert asset_contract['derivedObjectDataset']=='data/keeper_object_dimensions.json'
 assert asset_contract['canvas']['standard']=={'width':32,'height':40,'density':4,'anchor':[16,40]}
 assert asset_contract['canvas']['extendedAirborne']=={'width':48,'height':40,'density':4,'anchor':[24,40]}
@@ -487,10 +533,10 @@ assert object_dimensions['fixturesAndStations']['wallSwitch']['centreHeight']==2
 assert object_dimensions['fixturesAndStations']['gardenPlantCutting']['cutContactHeight']==12
 assert object_dimensions['fixturesAndStations']['gardenPlantCutting']['bladeEdge']=='smooth'
 scale_audit=json.loads((root/'docs/keeper-scale-audit/keeper-scale-metrics.json').read_text())
-assert scale_audit['counts']['allSheets']==167
-assert scale_audit['counts']['reviewedAnimationSheets']==149
+assert scale_audit['counts']['allSheets']==170
+assert scale_audit['counts']['reviewedAnimationSheets']==152
 assert scale_audit['counts']['technicalRejectedSheets']==18
-assert scale_audit['counts']['allFramesMeasured']==1186
+assert scale_audit['counts']['allFramesMeasured']==1210
 assert len(scale_audit['contactSheets'])==8
 assert all((root/path).exists() for path in scale_audit['contactSheets'])
 walk=Image.open(root/'public/sprites'/manifest['keeper_walk']['file']).convert('RGBA')
@@ -534,6 +580,8 @@ previews={
     'keeper-scuba-swim-up':(8,120), 'keeper-scuba-swim-down':(8,120),
     'keeper-party-idle':(4,160), 'keeper-party-walk':(8,100),
     'keeper-party-turn-back':(10,120),
+    'keeper-party-hat-put-on-back':(8,120),
+    'keeper-party-eat-cake':(8,120), 'keeper-party-dance':(8,100),
     'keeper-souwester-walk-side':(8,100),
     'keeper-souwester-walk-back':(8,100),
     'keeper-souwester-walk-front':(8,100),
@@ -549,6 +597,6 @@ for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
 keeper_previews=list((root/'docs/floor-asset-catalogue').glob('keeper-*-preview.gif'))
-assert len(keeper_previews)==151
+assert len(keeper_previews)==154
 assert all(Image.open(path).is_animated for path in keeper_previews)
-print('Verified: 71 spaces, 1576 rows, owned-item states, 9 TV/lamp/FX exports, 167 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
+print('Verified: 71 spaces, 1576 rows, owned-item states, 9 TV/lamp/FX exports, 170 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')

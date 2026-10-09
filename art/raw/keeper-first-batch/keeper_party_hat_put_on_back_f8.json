@@ -1,0 +1,21 @@
+{
+  "w": 32,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    16,
+    48
+  ],
+  "z": 50,
+  "loop": false,
+  "handUsePoint": [
+    16,
+    13
+  ],
+  "outfit": "party-hat-transition",
+  "reverseFor": "party-hat-remove-back",
+  "facing": "back",
+  "interaction": "put-on-party-hat"
+}

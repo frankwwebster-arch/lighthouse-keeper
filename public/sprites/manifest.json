@@ -1786,6 +1786,72 @@
   "mirrorsFor": "left",
   "z": 50
  },
+ "keeper_party_dance": {
+  "file": "keeper_party_dance.png",
+  "w": 32,
+  "h": 48,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "outfit": "party-hat",
+  "loop": true,
+  "facing": "front",
+  "interaction": "party-dance",
+  "z": 50
+ },
+ "keeper_party_eat_cake": {
+  "file": "keeper_party_eat_cake.png",
+  "w": 40,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "seatPoint": [
+   16,
+   37
+  ],
+  "handUsePoint": [
+   27,
+   25
+  ],
+  "outfit": "party-hat",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "eat-cake",
+  "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_party_hat_put_on_back": {
+  "file": "keeper_party_hat_put_on_back.png",
+  "w": 32,
+  "h": 48,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "handUsePoint": [
+   16,
+   13
+  ],
+  "outfit": "party-hat-transition",
+  "loop": false,
+  "reverseFor": "party-hat-remove-back",
+  "facing": "back",
+  "interaction": "put-on-party-hat",
+  "z": 50
+ },
  "keeper_party_idle": {
   "file": "keeper_party_idle.png",
   "w": 32,

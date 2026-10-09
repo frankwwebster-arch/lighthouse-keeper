@@ -59,6 +59,15 @@ Turn and sit previews ping-pong only to demonstrate their reversible contracts.
 The generated study is reference material, not a runtime sprite. The authored
 PNGs in `art/raw/keeper-first-batch/` are the review candidates.
 
+## Canonical actor and overlay rule
+
+Never regenerate or redraw the keeper merely to add a costume, hat, handheld
+prop or equipment. Those elements are separate layers composited over an
+approved canonical animation family. A genuinely new body pose is the sole
+exception and must pass the complete skull-to-sole, head-unit, core-width and
+landmark audit before it can become a production base. This is an enforced
+contract rule, not a prompt-writing preference.
+
 ## Generation provenance
 
 The generated sheets were made with the built-in image generator in referenced-
@@ -148,12 +157,15 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
   and `keeper-scuba-down-generated-source.png` — the same directional coverage
   in the locked navy wetsuit, mask, regulator, yellow tank and fins.
 - `keeper-party-idle-generated-source.png`, `keeper-party-walk-generated-source.png`
-  and `keeper-party-turn-back-generated-source.png` — retained visual studies
-  for the blue dotted cardboard cone hat. Production does not redraw the
+  and `keeper-party-turn-back-generated-source.png` — rejected visual studies
+  for the old oversized blue dotted hat. Production does not redraw the
   keeper from these sheets: `author_keeper.py` inherits the exact approved
   `keeper_wave_camera`, `keeper_walk` and `keeper_turn_back` frames and adds
-  only the hat. This makes the face, beard, hair, body and scale identical to
-  the ordinary keeper by construction.
+  only a small pale-pink cone, red pom-pom and red fringe based on Frank's
+  physical reference. The rear put-on reveal recombines approved rear work and
+  raised-arm frames; cake eating and party dancing inherit the approved eating
+  and dancing bodies. Face, beard, hair, body and scale therefore remain
+  identical to the ordinary keeper by construction.
 - `keeper-souwester-walk-side-generated-source.png`,
   `keeper-souwester-walk-back-generated-source.png` and
   `keeper-souwester-walk-front-generated-source.png` — full mustard-yellow

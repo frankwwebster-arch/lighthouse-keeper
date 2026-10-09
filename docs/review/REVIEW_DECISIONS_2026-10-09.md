@@ -45,6 +45,20 @@ only the cardboard party hat. This removes the gnome/Santa-like alternate face
 that had appeared in the generated party artwork and prevents future costume
 work from changing the keeper's identity.
 
+Party-headwear correction: the oversized blue dotted cone was rejected. The
+production layer is now a modest pale-pink cardboard cone with a small red
+pom-pom and irregular red fringe, based on Frank's supplied physical reference.
+`keeper_party_hat_put_on_back` is a rear-view reveal assembled from approved
+rear work/raised-arm components; `keeper_party_eat_cake` and
+`keeper_party_dance` inherit the approved eating and dancing bodies. The loose
+hat belongs to a designated world object and transfers to outfit state only on
+the transition's final frame; reversing the clip removes it.
+
+Project-wide identity decision: costumes, hats, handheld props and equipment
+must be overlays on approved canonical keeper frames. They never justify a new
+keeper drawing. Only a genuinely new body pose may be newly authored, and it
+must pass the complete skull-to-sole, head-unit, core-width and landmark audit.
+
 Subsequent review correction: `keeper_spiral_stairs_down` frame 4 had an
 erroneous third hand behind the keeper's hip. The extra hand was removed at the
 source while retaining the two legitimate arms and the existing descent cycle.
@@ -66,6 +80,12 @@ Machete correction: `keeper_machete_side` now carries one consistent broad,
 smooth-edged machete in every frame. The serrated saw-like final tool was
 removed, and a 64 × 40 long-tool canvas preserves the full right-hand blade
 without rescaling the keeper or changing its floor-relative contact.
+
+Frame-isolation correction: `keeper_hot_drink_drink` and
+`keeper_hot_drink_put_down` no longer contain neighbouring-frame flecks; the
+released mug and intended steam remain. `keeper_snooker` now isolates each
+keeper-and-cue pose rather than exposing pieces of adjacent bodies at the cell
+edges, without fitting actor scale to the long cue.
 
 Scale correction: `keeper_pressups_side` was redrawn and normalised along its
 horizontal body axis while preserving canonical head height and core depth;

@@ -24,6 +24,9 @@ Folders named `replaced-*` are history only. Never use those in the game.
   hand reaches to the object.
 - Furniture, doors, switches, ladders and stairs are separate object art. They
   are deliberately not baked into the keeper frames.
+- Costumes, headwear, handheld props and equipment are overlays on canonical
+  keeper frames. Never regenerate the actor just to change what he wears or
+  carries; a genuinely new pose must pass the full anatomy audit.
 
 ## Current reusable clips
 
@@ -80,9 +83,12 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Scuba swim left/right | `keeper_scuba_swim_horizontal` | right; mirror left; 80 × 48 canonical-scale horizontal canvas; bubbles separate |
 | Scuba swim up | `keeper_scuba_swim_up` | direct rear view; bubbles separate |
 | Scuba swim down | `keeper_scuba_swim_down` | direct front view; bubbles separate |
-| Party idle | `keeper_party_idle` | exact canonical front face/body; normal clothes plus cardboard party hat |
+| Party idle | `keeper_party_idle` | exact canonical front face/body; small pale-pink cone, red pom-pom/fringe |
 | Party walk | `keeper_party_walk` | exact canonical side-walk identity; right; mirror left |
 | Party turn away | `keeper_party_turn_back` | exact canonical turn identity; reverse to face camera |
+| Put on party hat | `keeper_party_hat_put_on_back` | rear-view one-shot; play after ordinary turn-away; reverse to remove |
+| Eat party cake | `keeper_party_eat_cake` | canonical seated-eat body with party hat and jam-layer cake slice; mirror left |
+| Party dance | `keeper_party_dance` | canonical dance body with party hat |
 | Walk in sou'wester left/right | `keeper_souwester_walk_side` | yellow oilskins; right; mirror left |
 | Walk away in sou'wester | `keeper_souwester_walk_back` | direct rear view; movement vector `(0,-1)` |
 | Walk toward camera in sou'wester | `keeper_souwester_walk_front` | direct front view; movement vector `(0,1)` |
@@ -217,6 +223,29 @@ For a new switch, button or control:
 The sprite manifest carries `interaction`, `facing`, `handUsePoint`,
 `mirrorSafe`, `mirrorsFor` and `reverseFor`, so application code does not need
 hard-coded knowledge of the artwork.
+
+## Costume transitions and object binding
+
+Objects should declare an interaction profile, not directly force an arbitrary
+animation. The controller owns the short transition graph between locomotion,
+facing and action states. For the party hat:
+
+1. The loose-hat object exposes a use point and the `put-on-party-hat`
+   interaction.
+2. The keeper walks to that point, stops, and plays `keeper_turn_back`.
+3. The object transfers the loose hat prop to
+   `keeper_party_hat_put_on_back`; the rear-view clip raises it behind his head.
+4. On the final frame, gameplay sets outfit state `party-hat` and hides the
+   loose object. The keeper may then reverse the party turn to face camera or
+   enter a party action directly.
+5. Removal uses the put-on clip in reverse, restores the loose object on its
+   final frame and clears the outfit state.
+
+The same model applies to pyjamas, bathrobe, diving/scuba kit and later
+costumes: object interaction chooses a transition recipe; the recipe supplies
+walk-stop, facing change, equip/unequip and the final activity. Individual
+furniture therefore needs only its stable use/seat/hand points and interaction
+tag—the controller fills the standard approach and departure transitions.
 
 ## Current integration boundary
 

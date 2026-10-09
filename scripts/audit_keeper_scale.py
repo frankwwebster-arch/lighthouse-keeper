@@ -63,6 +63,12 @@ CORRECTED = {
     "keeper_party_turn_back": "canonical turn identity inherited exactly; party hat is headwear-only",
     "keeper_party_idle": "canonical front identity inherited exactly; party hat is headwear-only",
     "keeper_party_walk": "canonical side-walk identity inherited exactly; party hat is headwear-only",
+    "keeper_party_hat_put_on_back": "canonical rear work, raised-arm and leg components recombined; hat overlay only",
+    "keeper_party_eat_cake": "canonical seated-eat anatomy inherited exactly; party hat and cake are overlays",
+    "keeper_party_dance": "canonical dance anatomy inherited exactly; party hat is an overlay",
+    "keeper_hot_drink_drink": "neighbouring-frame flecks removed while retaining canonical actor, mug and steam",
+    "keeper_hot_drink_put_down": "neighbouring-frame flecks removed while retaining the released mug",
+    "keeper_snooker": "overlapping source poses isolated without fitting actor scale to the cue",
     "keeper_piano": "seated anatomy normalised to the sit-side head and torso unit",
     "keeper_eat_seated": "seated anatomy normalised to the sit-side head and torso unit",
     "keeper_row_boat": "seated anatomy normalised to the sit-side head and torso unit",
@@ -291,7 +297,7 @@ def publish(assets: list[dict]) -> None:
     serialisable = [{k: v for k, v in asset.items() if k != "_frames"} for asset in assets]
     payload = {
         "version": 1,
-        "authority": "data/keeper_asset_contract.json version 6",
+        "authority": "data/keeper_asset_contract.json version 7",
         "rules": CONTRACT["measurementPolicy"],
         "canonicalAnatomy": CONTRACT["canonicalAnatomy"],
         "counts": {
@@ -347,8 +353,8 @@ def publish(assets: list[dict]) -> None:
 
 def main() -> None:
     assets = load_assets()
-    if len(assets) != 167:
-        raise SystemExit(f"Expected 167 keeper sheets, found {len(assets)}")
+    if len(assets) != 170:
+        raise SystemExit(f"Expected 170 keeper sheets, found {len(assets)}")
     publish(assets)
     reviewed = sum(a["status"] != "excluded-technical" for a in assets)
     frames = sum(a["frames"] for a in assets)

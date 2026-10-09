@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "status": "authoritative",
   "units": "logical-pixels",
   "derivedObjectDataset": "data/keeper_object_dimensions.json",
@@ -66,13 +66,20 @@
     "rule": "One uniform scale is applied to the whole frame sequence. Never fit the keeper to the canvas or to a prop. Increase transparent canvas space instead."
   },
   "costumeIdentityRules": {
+    "general": {
+      "baseActorPolicy": "overlay-approved-canonical-frames",
+      "appliesTo": ["costumes", "headwear", "handheld-props", "equipment"],
+      "keeperRegenerationAllowed": false,
+      "newPoseException": "Only a genuinely new body pose may be newly authored; it must pass the full skull-to-sole, head-unit, core-width and landmark audit before acceptance.",
+      "rule": "Never redraw the keeper merely to add or change clothing, headwear, a handheld prop or equipment. Composite those layers over an approved canonical animation family."
+    },
     "partyHat": {
-      "clips": ["keeper_party_idle", "keeper_party_walk", "keeper_party_turn_back"],
-      "baseFamilies": ["keeper_wave_camera", "keeper_walk", "keeper_turn_back"],
+      "clips": ["keeper_party_idle", "keeper_party_walk", "keeper_party_turn_back", "keeper_party_hat_put_on_back", "keeper_party_eat_cake", "keeper_party_dance"],
+      "baseFamilies": ["keeper_wave_camera", "keeper_walk", "keeper_turn_back", "keeper_work_back", "keeper_ladder_climb", "keeper_eat_seated", "keeper_dance"],
       "headwearOnly": true,
       "faceIdentity": "canonical-keeper",
       "skullScaleChanges": false,
-      "rule": "Add the cardboard party hat over the ordinary cap; inherit the approved face, beard, hair, body, scale and movement from the named canonical base family."
+      "rule": "Add the small pale-pink cone, red pom-pom and red fringe over the ordinary cap; inherit the approved face, beard, hair, body, scale and movement from the named canonical base family."
     }
   },
   "rigPivots": {
