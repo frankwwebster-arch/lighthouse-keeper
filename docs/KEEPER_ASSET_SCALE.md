@@ -266,6 +266,12 @@ displayed clip filename and exact frame; seam-freeze mode identifies both frames
 The adjacent `Play animation` button previews only that card from frame 1. Its
 selector either plays once and holds the final frame or loops until paused;
 this review-only choice does not dirty the saved review.
+The same teal panel has a per-animation proposed game-speed slider from 1–20fps,
+with −0.5fps/+0.5fps buttons, an authored-speed reset and a live full-cycle
+duration. It changes the reviewed action's preview only; approach walks and
+bridge clips continue at their own authored speeds. Unlike play-once/loop, the
+proposed FPS is a production decision, so it dirties, saves and exports with the
+card.
 At 1500px browser width or above, focused mode lays out the pinned canon, stage
 and compact two-column control console horizontally. Size controls are amber,
 ghost controls purple, action transforms blue, frame navigation teal, and
@@ -288,13 +294,15 @@ as the canonical standard-outfit facing-front ghost; the exact-inheritance
 party front idle is derived from this same frame.
 There is no canonical rear-sitting reference yet, so rear comparisons require an
 explicit choice and remain visual evidence rather than a certified pose match.
-Each card's Save button persists its width, height, horizontal/vertical position,
+Each card's Save button persists its width, height, proposed runtime FPS, horizontal/vertical position,
 comparison-ghost controls, reviewed-animation rotation/opacity, free-text notes,
 happy checkbox and mutually exclusive full-re-draft request in the browser.
 Orange denotes unsaved changes, green a saved happy decision and red a saved
 re-draft request. Export is blocked until every changed card is saved, and
-version 5 of `keeper-scale-choices.json` contains the saved review register,
+version 6 of `keeper-scale-choices.json` contains the saved review register,
 notes and re-draft list as well as independent width/height/position production proposals.
+Its `animationFps` value is intended for the clip's source JSON sidecar and the
+generated `public/sprites/manifest.json`; it is not baked into the PNG pixels.
 Existing legacy uniform choices are retained and applied to both axes.
 The reviewed animation has its own −180° to +180° rotation control, independent
 of the ghost. It rotates every action frame around the fixed review anchor and

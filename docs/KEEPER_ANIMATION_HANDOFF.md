@@ -520,6 +520,15 @@ art in `docs/KEEPER_ANIMATIONS.md`; “delivered” never waives transition revi
 `keeper_drive_speedboat` is deliberately authored at 4fps (eight frames over a
 two-second loop). Runtime animation speed is clip-specific manifest metadata;
 the shared sprite renderer reads it independently for each animation.
+The unified review page therefore exposes a separate 1–20fps proposed game-speed
+slider for every action, with 0.5fps fine controls, an authored-speed reset and
+a live cycle-duration readout. The chosen `animationFps` saves and exports with
+the card. It affects only the reviewed action during seam previews, leaving the
+approach walk and bridge at their own authored speeds. When Frank returns the
+export, write accepted values into the corresponding
+`art/raw/keeper-first-batch/*.json` source sidecars and rebuild
+`public/sprites/manifest.json`; the PNG sprite strips themselves do not contain
+timing. This keeps later in-game tuning to a metadata edit rather than a redraw.
 - Fishing standing and seated, including reeling in a fish.
 - Anti-gravity flight: on his front in goggles, bobbing/circling and performing
   a back flip, with no parachute.

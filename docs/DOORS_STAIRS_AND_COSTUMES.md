@@ -218,6 +218,11 @@ Delivered in `docs/keeper-scale-audit/review.html`:
   floor line. Global Pause resets every card to frame 1 of its action.
 - Every card has Previous/Next frame buttons and an exact frame counter. Using
   them pauses playback and steps through the action without dirtying the review.
+- A separate 1–20fps proposed game-speed slider, −0.5fps/+0.5fps buttons and an
+  authored-speed reset preview timing live and save/export `animationFps` as a
+  production decision. Seam approach walks and bridges retain their own FPS.
+  Accepted values go into each source JSON sidecar and the generated runtime
+  manifest, not into the sprite PNG.
   A prominent pane badge continuously shows the displayed clip and frame,
   including during playback and for both sides of a frozen seam.
 - The adjacent Play animation button starts only that action at frame 1. Its
