@@ -31,7 +31,7 @@
     "reviewedAnimationSheets": 149,
     "technicalRejectedSheets": 18,
     "allFramesMeasured": 1186,
-    "correctedSheets": 46
+    "correctedSheets": 48
   },
   "contactSheets": [
     "docs/keeper-scale-audit/keeper-scale-contact-01.png",
@@ -18799,19 +18799,19 @@
       "source": "art/raw/keeper-first-batch/keeper_put_record_f8.png",
       "frames": 8,
       "canvas": [
-        40,
+        48,
         40
       ],
       "anchor": [
-        20,
+        24,
         40
       ],
       "facing": "right",
       "outfit": "standard",
       "postureClass": "upright",
       "measurementMethod": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
-      "status": "measured-pass",
-      "note": "measured against the canonical anatomy for its pose class",
+      "status": "corrected",
+      "note": "expanded to a 48 px side-action canvas so the record remains complete in frames 5\u20137",
       "medianFaceProxyWidth": 9.0,
       "medianFaceProxyHeight": 6.12,
       "faceProxyCoverage": "8/8",
@@ -18830,9 +18830,9 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            10.5,
+            14.5,
             1.5,
-            29.25,
+            33.25,
             39.5
           ],
           "alphaWidth": 18.75,
@@ -18840,9 +18840,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              14.0,
+              18.0,
               7.75,
-              24.0,
+              28.0,
               14.25
             ],
             "width": 10.0,
@@ -18852,9 +18852,9 @@
         },
         {
           "alphaBox": [
-            10.75,
+            14.75,
             1.5,
-            29.0,
+            33.0,
             39.5
           ],
           "alphaWidth": 18.25,
@@ -18862,9 +18862,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              15.75,
+              19.75,
               7.75,
-              24.75,
+              28.75,
               13.75
             ],
             "width": 9.0,
@@ -18874,9 +18874,9 @@
         },
         {
           "alphaBox": [
-            10.5,
+            14.5,
             1.75,
-            29.5,
+            33.5,
             39.5
           ],
           "alphaWidth": 19.0,
@@ -18884,9 +18884,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              15.75,
+              19.75,
               8.0,
-              24.75,
+              28.75,
               14.0
             ],
             "width": 9.0,
@@ -18896,9 +18896,9 @@
         },
         {
           "alphaBox": [
-            10.0,
+            14.0,
             1.5,
-            30.0,
+            34.0,
             39.5
           ],
           "alphaWidth": 20.0,
@@ -18906,9 +18906,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              15.25,
+              19.25,
               7.75,
-              24.25,
+              28.25,
               13.75
             ],
             "width": 9.0,
@@ -18918,9 +18918,9 @@
         },
         {
           "alphaBox": [
-            9.25,
+            13.25,
             6.75,
-            30.5,
+            34.5,
             39.5
           ],
           "alphaWidth": 21.25,
@@ -18928,9 +18928,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              17.5,
+              21.5,
               12.75,
-              28.0,
+              32.0,
               19.0
             ],
             "width": 10.5,
@@ -18940,9 +18940,9 @@
         },
         {
           "alphaBox": [
-            9.25,
+            13.25,
             9.75,
-            30.5,
+            34.5,
             39.5
           ],
           "alphaWidth": 21.25,
@@ -18950,9 +18950,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              19.25,
+              23.25,
               15.75,
-              28.0,
+              32.0,
               22.25
             ],
             "width": 8.75,
@@ -18962,9 +18962,9 @@
         },
         {
           "alphaBox": [
-            10.75,
+            14.75,
             8.75,
-            29.0,
+            33.0,
             39.5
           ],
           "alphaWidth": 18.25,
@@ -18972,9 +18972,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              19.0,
+              23.0,
               14.5,
-              27.75,
+              31.75,
               20.75
             ],
             "width": 8.75,
@@ -18984,9 +18984,9 @@
         },
         {
           "alphaBox": [
-            11.75,
+            15.75,
             1.5,
-            28.0,
+            32.0,
             39.5
           ],
           "alphaWidth": 16.25,
@@ -18994,9 +18994,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              17.75,
+              21.75,
               7.75,
-              26.75,
+              30.75,
               13.75
             ],
             "width": 9.0,
@@ -30589,19 +30589,19 @@
       "source": "art/raw/keeper-first-batch/keeper_water_plants_side_f8.png",
       "frames": 8,
       "canvas": [
-        40,
+        48,
         40
       ],
       "anchor": [
-        20,
+        24,
         40
       ],
       "facing": "right",
       "outfit": "standard",
       "postureClass": "upright",
       "measurementMethod": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
-      "status": "measured-pass",
-      "note": "measured against the canonical anatomy for its pose class",
+      "status": "corrected",
+      "note": "expanded to a 48 px side-action canvas so the watering can and spout remain complete",
       "medianFaceProxyWidth": 8.5,
       "medianFaceProxyHeight": 5.75,
       "faceProxyCoverage": "8/8",
@@ -30620,9 +30620,9 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            10.75,
+            14.75,
             1.5,
-            29.0,
+            33.0,
             39.5
           ],
           "alphaWidth": 18.25,
@@ -30630,9 +30630,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              15.25,
+              19.25,
               7.5,
-              24.0,
+              28.0,
               13.5
             ],
             "width": 8.75,
@@ -30642,9 +30642,9 @@
         },
         {
           "alphaBox": [
-            10.0,
+            14.0,
             3.25,
-            30.0,
+            34.0,
             39.5
           ],
           "alphaWidth": 20.0,
@@ -30652,9 +30652,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              15.25,
+              19.25,
               9.25,
-              24.0,
+              28.0,
               14.75
             ],
             "width": 8.75,
@@ -30664,9 +30664,9 @@
         },
         {
           "alphaBox": [
-            10.0,
+            14.0,
             5.5,
-            30.0,
+            34.0,
             39.5
           ],
           "alphaWidth": 20.0,
@@ -30674,9 +30674,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              16.0,
+              20.0,
               11.5,
-              24.5,
+              28.5,
               17.25
             ],
             "width": 8.5,
@@ -30686,9 +30686,9 @@
         },
         {
           "alphaBox": [
-            9.75,
+            13.75,
             7.75,
-            30.0,
+            34.0,
             39.5
           ],
           "alphaWidth": 20.25,
@@ -30696,9 +30696,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              17.25,
+              21.25,
               13.75,
-              25.75,
+              29.75,
               19.5
             ],
             "width": 8.5,
@@ -30708,9 +30708,9 @@
         },
         {
           "alphaBox": [
-            9.75,
+            13.75,
             11.0,
-            30.25,
+            34.25,
             39.5
           ],
           "alphaWidth": 20.5,
@@ -30718,9 +30718,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              22.25,
+              26.25,
               17.0,
-              28.0,
+              32.0,
               22.5
             ],
             "width": 5.75,
@@ -30730,9 +30730,9 @@
         },
         {
           "alphaBox": [
-            11.25,
+            15.25,
             10.5,
-            28.5,
+            32.5,
             39.5
           ],
           "alphaWidth": 17.25,
@@ -30740,9 +30740,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              18.25,
+              22.25,
               16.5,
-              26.75,
+              30.75,
               22.0
             ],
             "width": 8.5,
@@ -30752,9 +30752,9 @@
         },
         {
           "alphaBox": [
-            11.5,
+            15.5,
             4.75,
-            28.25,
+            32.25,
             39.5
           ],
           "alphaWidth": 16.75,
@@ -30762,9 +30762,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              16.75,
+              20.75,
               10.75,
-              25.25,
+              29.25,
               16.5
             ],
             "width": 8.5,
@@ -30774,9 +30774,9 @@
         },
         {
           "alphaBox": [
-            11.25,
+            15.25,
             1.5,
-            28.5,
+            32.5,
             39.5
           ],
           "alphaWidth": 17.25,
@@ -30784,9 +30784,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              18.0,
+              22.0,
               7.75,
-              24.25,
+              28.25,
               13.5
             ],
             "width": 6.25,

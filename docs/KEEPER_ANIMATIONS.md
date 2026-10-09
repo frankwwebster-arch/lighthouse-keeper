@@ -106,7 +106,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Check wall instrument | `keeper_check_instrument_side` / `keeper_check_instrument_back` | semantic reuse of switch reach at the same control height |
 | Inspect tabletop | `keeper_lean_table_back` | rear lean; table separate |
 | Look through telescope | `keeper_telescope` | right; mirror left; telescope mount separate |
-| Put on a record | `keeper_put_record` | right; mirror left; record included, turntable separate |
+| Put on a record | `keeper_put_record` | right; mirror left; 48 × 40 side-action canvas; record included and edge-safe; turntable separate |
 | Paint | `keeper_paint_side` / `keeper_paint_back` | splodged artist smock; side mirrors left; canvas/easel separate |
 | Use potter's wheel | `keeper_pottery_front` | seated front in artist smock; clay included, wheel separate |
 | Type at computer | `keeper_type_computer` | semantic reuse of piano hand motion; desk/computer separate |
@@ -139,7 +139,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Soak in hot tub | `keeper_hot_tub` | seated front with opaque water/foam privacy band; tub separate |
 | Ten-pin bowling | `keeper_bowling` | right; mirror left; ball included, lane/pins separate |
 | Play video game | `keeper_video_game` | rear-right with controller; mirror rear-left; TV/seat separate |
-| Water plants | `keeper_water_plants_side` / `keeper_water_plants_back` / `keeper_water_plants_front` | side mirrors left; can/stream included, plants separate |
+| Water plants | `keeper_water_plants_side` / `keeper_water_plants_back` / `keeper_water_plants_front` | side uses 48 × 40 and mirrors left; can/stream included and edge-safe; plants separate |
 | Fish standing | `keeper_fish_standing` | right; mirror left; rod, line and catch included |
 | Fish seated | `keeper_fish_seated` | right; mirror left; seat/water separate |
 | Collect eggs | `keeper_collect_eggs_back` | canonical low rear work loop; basket, eggs and coop are separate aligned objects |

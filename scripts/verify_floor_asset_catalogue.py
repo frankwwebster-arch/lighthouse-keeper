@@ -316,6 +316,15 @@ for name in ['keeper_swim_costume_horizontal','keeper_scuba_swim_horizontal']:
     assert min(heights)>=32,(name,heights)
 for name in ['keeper_fish_feed_up','keeper_aquarium_brush','keeper_aquarium_net','keeper_hammer_side','keeper_read_side','keeper_write_side','keeper_telescope','keeper_put_record','keeper_paint_side','keeper_meal_place_side','keeper_snooker','keeper_table_tennis','keeper_darts','keeper_machete_side','keeper_pressups_side','keeper_bowling','keeper_video_game','keeper_water_plants_side','keeper_fish_standing','keeper_fish_seated','keeper_mechanic_fix']:
     assert manifest[name]['mirrorSafe'] is True and manifest[name]['mirrorsFor']
+for name,hand_point in [('keeper_put_record',[38,27]),('keeper_water_plants_side',[39,31])]:
+    prop_clip=manifest[name]
+    assert prop_clip['w']==48 and prop_clip['h']==40 and prop_clip['anchor']==[24,40]
+    assert prop_clip['handUsePoint']==hand_point
+    prop_image=Image.open(root/'public/sprites'/prop_clip['file']).convert('RGBA')
+    for frame_index in range(prop_clip['frames']):
+        frame=prop_image.crop((frame_index*48*4,0,(frame_index+1)*48*4,40*4))
+        visible=frame.getchannel('A').getbbox()
+        assert visible is not None and visible[0]>=2*4 and visible[2]<=46*4,(name,frame_index,visible)
 assert manifest['keeper_anti_gravity']['anchor']==[24,24]
 assert manifest['keeper_fish_feed_up']['handUsePoint']==[26,7]
 assert manifest['keeper_type_computer']['interaction']=='type-computer'

@@ -49,6 +49,11 @@ with unchanged floor-relative bike contacts. `keeper_carry_shopping` was
 redrawn so every frame has exactly two hands, one attached to each bag-carrying
 arm.
 
+Edge-clipping correction: `keeper_put_record` and
+`keeper_water_plants_side` now use 48 × 40 side-action canvases. The larger
+transparent bounds retain the full record in frames 5–7 and the entire watering
+can/spout without changing keeper scale or floor-relative interaction offsets.
+
 ## Removed from the public art-review set
 
 The modular front/back limb, torso and head layers, `keeper_reference`, and the

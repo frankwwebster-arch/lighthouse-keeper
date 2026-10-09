@@ -55,6 +55,8 @@ CORRECTED = {
     "keeper_spiral_stairs_down": "frame 4 redrawn to remove an erroneous third hand while preserving the descent cycle",
     "keeper_ride_bike_front": "enlarged from its undersized head unit on a 48 px interaction canvas",
     "keeper_carry_shopping": "hand anatomy redrawn so each frame has exactly two hands attached to the two bag-carrying arms",
+    "keeper_put_record": "expanded to a 48 px side-action canvas so the record remains complete in frames 5–7",
+    "keeper_water_plants_side": "expanded to a 48 px side-action canvas so the watering can and spout remain complete",
     "keeper_sit_front": "redrawn and width-normalised against canonical front body",
     "keeper_party_turn_back": "redrawn as a coherent front-to-rear turn",
     "keeper_party_idle": "redrawn from the corrected party identity",

@@ -2127,17 +2127,17 @@
  },
  "keeper_put_record": {
   "file": "keeper_put_record.png",
-  "w": 40,
+  "w": 48,
   "h": 40,
   "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
-   20,
+   24,
    40
   ],
   "handUsePoint": [
-   34,
+   38,
    27
   ],
   "loop": true,
@@ -3347,17 +3347,17 @@
  },
  "keeper_water_plants_side": {
   "file": "keeper_water_plants_side.png",
-  "w": 40,
+  "w": 48,
   "h": 40,
   "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
-   20,
+   24,
    40
   ],
   "handUsePoint": [
-   35,
+   39,
    31
   ],
   "loop": true,
