@@ -26,6 +26,10 @@ Codex task should be able to continue from here without relying on the old chat.
    pinned reference left, large viewport-height stage centre, and a compact
    two-column control console right. Amber means size, purple ghost, blue
    animation transform, teal frame navigation, and green/red review decisions.
+   Display zoom is saved immediately in browser-local progress. Each card save
+   also records that filename as the latest completed animation; reloading opens
+   focused mode on the following filename-ordered animation with the same zoom.
+   Saving the final animation resumes on that final card because no successor exists.
 3. Ask Frank for his new comments and exported `keeper-scale-choices.json`.
    Each card's Save button persists independent width/height, rotation,
    horizontal/vertical position, ghost settings, opacity and the

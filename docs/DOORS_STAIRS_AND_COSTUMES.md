@@ -212,6 +212,9 @@ Delivered in `docs/keeper-scale-audit/review.html`:
 - On browser widths of 1500px or more, focused mode uses a three-part horizontal
   workstation: pinned canon, large stage and compact two-column control console.
   Control families have distinct amber, purple, blue, teal and green/red colours.
+- Browser-local progress retains display zoom immediately. Every card save marks
+  that animation as the latest completed one; reload resumes in focused mode on
+  the following filename-ordered animation, or the final card when already last.
 - Seated cards automatically use the canonical front/side sitting endpoint.
   Per-card controls select, rotate, reset or move the ghost alongside and fade
   the reviewed animation. Rear sitting still has no canonical neutral reference.

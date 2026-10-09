@@ -615,6 +615,8 @@ for token in (
     'class="frameNumber"', 'card.frameNumber.textContent',
     'Ghost comparison', 'Animation transform', 'Decision and production notes',
     '@media(min-width:1500px)', 'grid-template-areas:"head head" "stage body"',
+    "REVIEW_PROGRESS_STORAGE_KEY='lighthouse-keeper-review-progress-v1'",
+    'function persistReviewProgress', 'lastSavedAnimation', 'initialZoom',
     'runtime: ${asset.name}.png', 'source: ${basename(asset.source)}',
     'animations, all shown', 'function buildGallery()',
 ):
