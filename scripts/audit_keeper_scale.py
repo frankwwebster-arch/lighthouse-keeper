@@ -506,7 +506,9 @@ def publish(assets: list[dict]) -> None:
             "status", "note", "originalComparison", "medianFaceProxyWidth", "medianFaceProxyHeight",
             "faceProxyCoverage", "medianTorsoScanWidthAt20", "torsoScanCoverage", "alphaHeightRange", "alphaWidthRange",
         )
-        return {field: asset.get(field) for field in fields}
+        clip = {field: asset.get(field) for field in fields}
+        clip["firstFrameAlphaBox"] = asset["frameMeasurements"][0]["alphaBox"]
+        return clip
 
     review_assets = []
     for asset in serialisable:
@@ -565,7 +567,7 @@ def publish(assets: list[dict]) -> None:
         "",
         "## Interactive comparison",
         "",
-        "Open [the sizing and transition review](review.html) to see a dedicated untouched `keeper_walk` scale-authority panel followed by all 152 accepted animations in one filename-ordered gallery, with no search or filters required. In upright standard-cap poses, the gold badge crossing the blue skull-top guide is a calibrated visual proxy; use anatomical landmarks for tilted, bent, seated, crouched, horizontal, bare-headed or alternate-headwear poses. The display-size slider magnifies every stage equally from 1× to 6× without changing the art or its relative scale. Each animation also has a separate 70%–130% character-size proposal slider, anchored at the declared contact while the reference, rulers, ghost, approach walk and bridges remain at 100%. Those choices save in the browser and export as `keeper-scale-choices.json`; they do not alter production art automatically. One global control pauses every animation and another overlays the untouched original on every card. The page can also prepend the matching same-outfit walk, insert known bridge clips, or freeze the exact walk-to-action seam with onion skin. Every card prints its runtime PNG and authored source-strip filename.",
+        "Open [the sizing and transition review](review.html) to see a dedicated untouched `keeper_walk` scale-authority panel followed by all 152 accepted animations in one filename-ordered gallery, with no search or filters required. In upright standard-cap poses, the gold badge crossing the blue skull-top guide is a calibrated visual proxy; use anatomical landmarks for tilted, bent, seated, crouched, horizontal, bare-headed or alternate-headwear poses. The display-size slider magnifies every stage equally from 1× to 6× without changing the art or its relative scale. Each animation also has a separate 70%–130% character-size proposal slider, anchored at the declared contact while the reference, rulers, ghost, approach walk and bridges remain at 100%. Flying and swimming clips place the bottom of the first-frame figure on the red floor line so their size is easier to compare. Pausing resets every card to its action's first frame. Character-size choices save in the browser and export as `keeper-scale-choices.json`; they do not alter production art automatically. The page can also prepend the matching same-outfit walk, insert known bridge clips, or freeze the exact walk-to-action seam with onion skin. Every card prints its runtime PNG and authored source-strip filename.",
         "",
         "## Corrected sheets",
         "",

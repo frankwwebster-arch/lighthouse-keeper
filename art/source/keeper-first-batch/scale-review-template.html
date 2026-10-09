@@ -44,7 +44,7 @@
   <div class="legend"><span><i class="swatch" style="background:var(--red)"></i>floor</span><span><i class="swatch" style="background:var(--blue)"></i>skull top</span><span><i class="swatch" style="background:var(--green)"></i>shoulders</span><span><i class="swatch" style="background:var(--amber)"></i>hips</span><span><i class="swatch" style="background:var(--purple)"></i>seat</span></div>
 </header>
 <main>
-  <div class="help"><b>How to read this:</b> The display-size slider magnifies the whole review only. To alter a keeper by eye, use <b>Character size</b> on that animation’s card. It scales only that action around its fixed feet/seat/contact anchor; the untouched reference, ruler, original ghost, approach walk and bridge clips stay at 100%. Adjusted cards turn amber. Choices save in this browser and <b>Export my character sizes</b> downloads them for production work. “Raw” deliberately exposes walk-to-action jumps. “Seam freeze” overlays the last approach and first action frames.</div>
+  <div class="help"><b>How to read this:</b> The display-size slider magnifies the whole review only. To alter a keeper by eye, use <b>Character size</b> on that animation’s card. It scales only that action around its fixed feet/seat/contact anchor; the untouched reference, ruler, original ghost, approach walk and bridge clips stay at 100%. Flying and swimming clips place the bottom of their first-frame figure on the red line. Adjusted cards turn amber. Choices save in this browser and <b>Export my character sizes</b> downloads them for production work. Pressing <b>Pause</b> resets every card to its action’s first frame.</div>
   <h2 class="reference-title">Untouched scale authority</h2>
   <div id="reference" class="grid reference-grid"></div>
   <h2 class="gallery-title">Animation gallery</h2>
@@ -73,18 +73,21 @@ function clipsFor(asset,mode=state.mode){
   return [...lead,...(asset.bridge||[]),asset];
 }
 function routeFor(asset){return clipsFor(asset).map(c=>c.name.replace('keeper_','')).join(' → ')||asset.name}
-function stageY(clip){return clip.postureClass==='body-axis'?logical.h/2:logical.floor}
+const floorAlignedInteractions=new Set(['swim','scuba-swim','anti-gravity-float','platform-dive','parachute-jump']);
+function floorAligned(clip){return floorAlignedInteractions.has(clip.interaction)}
+function stageY(clip){return floorAligned(clip)?logical.floor:clip.postureClass==='body-axis'?logical.h/2:logical.floor}
 function drawGuides(ctx,z){if(!state.rulers)return;const a=DATA.canonicalAnatomy;const lines=[
   [logical.floor,'#ff5167'],[logical.floor-a.skullTopHeightAboveFloor,'#4da6ff'],[logical.floor-a.shoulderHeightAboveFloor,'#52d273'],[logical.floor-a.hipHeightAboveFloor,'#f2b84b'],[logical.floor-a.seatContactHeightAboveFloor,'#c792ea']];
   ctx.save();ctx.globalAlpha=.86;ctx.lineWidth=1;for(const[y,c]of lines){ctx.strokeStyle=c;ctx.beginPath();ctx.moveTo(0,Math.round(y*z)+.5);ctx.lineTo(logical.w*z,Math.round(y*z)+.5);ctx.stroke()}ctx.restore()}
 function drawFrame(ctx,clip,frame,alpha=1,characterScale=1){
   const img=imageFor(clip),z=state.zoom;if(!img.complete||!img.naturalWidth){img.addEventListener('load',()=>renderAll(),{once:true});return}
-  const[cw,ch]=clip.canvas,[ax,ay]=clip.anchor;const sw=cw*4,sh=ch*4;const sx=(frame%clip.frames)*sw;
+  const[cw,ch]=clip.canvas,[ax,declaredAy]=clip.anchor,ay=floorAligned(clip)?clip.firstFrameAlphaBox[3]:declaredAy;const sw=cw*4,sh=ch*4;const sx=(frame%clip.frames)*sw;
   const dw=cw*z*characterScale,dh=ch*z*characterScale,dx=Math.round(logical.w/2*z-ax*z*characterScale),dy=Math.round(stageY(clip)*z-ay*z*characterScale);
   ctx.save();ctx.globalAlpha=alpha;ctx.imageSmoothingEnabled=false;ctx.drawImage(img,sx,0,sw,sh,dx,dy,dw,dh);ctx.restore();
 }
 function timeline(card,now){
-  const mode=card.localMode||state.mode,clips=clipsFor(card.asset,mode);if(mode==='freeze')return {clips,boundary:clips.length>1,freeze:true,label:clips.length>1?'last approach + first action':'first action frame (no matching walk)'};
+  const mode=card.localMode||state.mode,clips=clipsFor(card.asset,mode);if(!state.playing)return {clip:card.asset,frame:0,boundary:false,label:card.asset.name.replace('keeper_','')};
+  if(mode==='freeze')return {clips,boundary:clips.length>1,freeze:true,label:clips.length>1?'last approach + first action':'first action frame (no matching walk)'};
   const frames=[];clips.forEach((clip,si)=>{const start=si<clips.length-1&&si===0&&clips.length>1?Math.max(0,clip.frames-4):0;for(let f=start;f<clip.frames;f++)frames.push({clip,frame:f,boundary:si>0&&f===start,duration:1000/(clip.fps||8)})});
   if(!frames.length)return null;const total=frames.reduce((sum,f)=>sum+f.duration,0),elapsed=(state.playing?now-card.started:card.pausedAt-card.started)%total;let cursor=0,current=frames[0];for(const frame of frames){cursor+=frame.duration;if(elapsed<cursor){current=frame;break}}return {...current,label:current.clip.name.replace('keeper_','')};
 }
@@ -114,7 +117,7 @@ function buildGallery(){
 function refreshScaleSummary(){const target=$('scaleSummary');if(target){const count=Object.keys(state.scaleChoices).length;target.innerHTML=`<b>${count}</b> saved size ${count===1?'choice':'choices'}`}}
 $('mode').onchange=e=>{state.mode=e.target.value;for(const c of state.cards.values()){c.localMode=null;c.started=performance.now();c.pausedAt=c.started;if(!c.reference)c.el.querySelector('.route').textContent=routeFor(c.asset)}renderAll()};
 $('zoom').oninput=e=>{state.zoom=Number(e.target.value);$('zoomValue').value=`${state.zoom}×`;renderAll()};
-$('play').onclick=()=>{state.playing=!state.playing;const now=performance.now();for(const c of state.cards.values()){if(state.playing)c.started+=now-c.pausedAt;else c.pausedAt=now}$('play').textContent=state.playing?'Pause every animation':'Play every animation';$('play').classList.toggle('active',state.playing);renderAll(now)};
+$('play').onclick=()=>{state.playing=!state.playing;const now=performance.now();for(const c of state.cards.values()){if(state.playing)c.started=now;else{c.started=now;c.pausedAt=now}}$('play').textContent=state.playing?'Pause every animation':'Play every animation';$('play').classList.toggle('active',state.playing);renderAll(now)};
 $('rulers').onclick=()=>{state.rulers=!state.rulers;$('rulers').textContent=state.rulers?'Rulers on':'Rulers off';$('rulers').classList.toggle('active',state.rulers);renderAll()};
 $('original').onclick=()=>{state.original=!state.original;$('original').textContent=state.original?'Remove original ghost from all':'Ghost original on every animation';$('original').classList.toggle('active',state.original);renderAll()};
 $('exportScales').onclick=()=>{const choices=Object.entries(state.scaleChoices).sort(([a],[b])=>a.localeCompare(b)).map(([name,percent])=>({name,percent}));const payload={version:1,reference:'keeper_walk at 100%',anchorRule:'Scale each action around its declared contact anchor; do not scale the reference, approach walk or bridge.',choices};const link=document.createElement('a');link.href=URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)+'\n'],{type:'application/json'}));link.download='keeper-scale-choices.json';link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1000)};

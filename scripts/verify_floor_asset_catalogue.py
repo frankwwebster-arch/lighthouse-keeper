@@ -589,6 +589,8 @@ for token in (
     'gold badge crosses the blue skull-top guide',
     'Character size', 'Export my character sizes', 'keeper-scale-choices.json',
     "STORAGE_KEY='lighthouse-keeper-scale-choices-v1'",
+    'floorAlignedInteractions', 'firstFrameAlphaBox',
+    "if(!state.playing)return {clip:card.asset,frame:0",
     'runtime: ${asset.name}.png', 'source: ${basename(asset.source)}',
     'animations, all shown', 'function buildGallery()',
 ):

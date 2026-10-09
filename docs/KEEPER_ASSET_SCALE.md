@@ -245,7 +245,9 @@ contact anchor. The reference, ruler, ghost, approach walk and bridge remain at
 Export produces `keeper-scale-choices.json` for an authoring pass; it never
 silently changes production sprites. The page can also play the matching
 same-outfit walk immediately before an action. The raw seam, known-bridge and
-onion-skin modes make transition problems visible.
+onion-skin modes make transition problems visible. Flying and swimming cards
+align the bottom of the first-frame figure to the red floor line for comparison.
+Global Pause always resets every card to the action's first frame.
 
 The sad, hungry, bored and cross reactions share one enforced upright scale:
 their visible height is 38 logical pixels (152 pixels in the density-4 source)

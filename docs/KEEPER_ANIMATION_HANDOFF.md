@@ -32,6 +32,9 @@ declared feet/seat/contact anchor. The untouched reference, rulers, original
 ghost, matching walk and bridge clips remain at 100%, so Frank can judge the
 proposed action scale against fixed evidence. An amber card is a saved proposal,
 not a production change; ingest its exported percentage before rebuilding art.
+Flying and swimming review clips align the bottom of their first-frame figure
+to the red floor line. Pressing global Pause resets every card to frame 1 of its
+action, even when a route or onion-skin mode is selected.
 
 The exact human-readable clip inventory is in `docs/KEEPER_ANIMATIONS.md`.
 The machine-readable runtime inventory is `public/sprites/manifest.json`.

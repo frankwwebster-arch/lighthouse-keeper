@@ -197,6 +197,8 @@ Delivered in `docs/keeper-scale-audit/review.html`:
   around its declared contact anchor while the reference, ruler, ghost, walk
   and bridge stay at 100%. Amber proposals persist in the browser and export as
   JSON for later source-art rebuilding; the viewer never edits sprites itself.
+- Flying and swimming cards align their first-frame figure bottom to the red
+  floor line. Global Pause resets every card to frame 1 of its action.
 - Action-only, raw matching-outfit walk seams and routes containing the known
   turn/sit/bed bridges.
 - A seam-freeze onion skin of the final approach frame and first action frame.
