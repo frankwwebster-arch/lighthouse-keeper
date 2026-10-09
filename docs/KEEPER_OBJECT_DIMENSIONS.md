@@ -18,6 +18,7 @@ The main furniture datums are:
 | Rear lift entry | opening at least 24 × 40 px; `keeper_walk_into_lift` bakes a 100%→75% depth scale and 0→−6 px vertical path |
 | TV screen centre from a seated keeper | 26 px above floor |
 | Machete plant-cut contact | 12 px above floor; 18 px right of keeper anchor |
+| Guitar rack grip | 31 px above floor; keeper hand `(45,25)` on the 64 × 56 pickup canvas; prop transfers on frame 6 |
 
 These are contact dimensions, not suggestions. Object silhouettes and tiers may
 change, but their keeper-facing contact points remain fixed within 0.5 logical

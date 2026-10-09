@@ -27,7 +27,8 @@
     "extendedTrayAction": { "width": 48, "height": 40, "density": 4, "anchor": [24, 40] },
     "extendedHorizontalExercise": { "width": 64, "height": 40, "density": 4, "anchor": [32, 40], "canonicalBodyAxisLengthRange": [47, 52] },
     "extendedStandingFishing": { "width": 64, "height": 56, "density": 4, "anchor": [32, 56], "minimumActorHeight": 36 },
-    "extendedOverheadExercise": { "width": 48, "height": 56, "density": 4, "anchor": [24, 56] }
+    "extendedOverheadExercise": { "width": 48, "height": 56, "density": 4, "anchor": [24, 56] },
+    "extendedGuitarPickup": { "width": 64, "height": 56, "density": 4, "anchor": [32, 56] }
   },
   "measuredReference": {
     "source": "public/sprites/keeper_walk.png",
@@ -163,7 +164,14 @@
     "hotDrinkSipRight": { "clip": "keeper_hot_drink_drink", "heldMugPoint": [34, 17], "mirrorFor": "hotDrinkSipLeft" },
     "hotDrinkPutDownRight": { "clip": "keeper_hot_drink_put_down", "surfacePoint": [40, 28], "heldMugPoint": [34, 17], "mirrorFor": "hotDrinkPutDownLeft" },
     "boatEnterRight": { "clip": "keeper_boat_enter", "gunwalePoint": [39, 23], "seatPoint": [36, 35], "mirrorFor": "boatEnterLeft" },
-    "boatExitRight": { "clip": "keeper_boat_exit", "gunwalePoint": [39, 23], "seatPoint": [36, 35], "mirrorFor": "boatExitLeft" }
+    "boatExitRight": { "clip": "keeper_boat_exit", "gunwalePoint": [39, 23], "seatPoint": [36, 35], "mirrorFor": "boatExitLeft" },
+    "artistSmockWalkRight": { "clip": "keeper_artist_smock_walk", "outfit": "artist-smock", "movementVector": [1, 0], "mirrorFor": "artistSmockWalkLeft" },
+    "artistSmockTurnBack": { "clip": "keeper_artist_smock_turn_back", "outfit": "artist-smock", "startPose": "standing-side-right", "endPose": "standing-back" },
+    "artistSmockTurnFront": { "clip": "keeper_artist_smock_turn_front", "outfit": "artist-smock", "startPose": "standing-side-right", "endPose": "standing-front" },
+    "artistSmockSitFront": { "clip": "keeper_artist_smock_sit_front", "outfit": "artist-smock", "seatPoint": [16, 29], "startPose": "standing-front", "endPose": "sitting-front" },
+    "guitarPickupAcoustic": { "clip": "keeper_guitar_pickup_acoustic", "handUsePoint": [45, 25], "propHandoffFrame": 6, "propVariant": "acoustic", "upgradeTier": 1 },
+    "guitarPickupGretsch": { "clip": "keeper_guitar_pickup_gretsch", "handUsePoint": [45, 25], "propHandoffFrame": 6, "propVariant": "black-gretsch", "upgradeTier": 2 },
+    "guitarPickupFlyingV1967": { "clip": "keeper_guitar_pickup_flying_v_1967", "handUsePoint": [45, 25], "propHandoffFrame": 6, "propVariant": "red-flying-v-1967", "upgradeTier": 3 }
   },
   "movementProfiles": {
     "swimRight": { "movementVector": [1, 0], "mirrorFor": "swimLeft" },
@@ -200,6 +208,7 @@
     "machetePlantContactHeightAboveFloor": 12,
     "wateringTargetHeightAboveFloor": 9,
     "instrumentControlHeightAboveFloor": 23,
+    "guitarRackGripHeightAboveFloor": 31,
     "liftButtonHeightAboveFloor": 23,
     "weldingContactHeightAboveFloor": 18,
     "sawingContactHeightAboveFloor": 17,

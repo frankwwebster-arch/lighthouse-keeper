@@ -1,0 +1,24 @@
+{
+  "w": 64,
+  "h": 56,
+  "frames": 12,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    32,
+    56
+  ],
+  "z": 50,
+  "loop": false,
+  "handUsePoint": [
+    45,
+    25
+  ],
+  "propHandoffFrame": 6,
+  "propVariant": "red-flying-v-1967",
+  "upgradeTier": 3,
+  "startPose": "standing-side-right",
+  "endPose": "play-guitar-flying-v-1967",
+  "facing": "side-to-back-to-front-right",
+  "interaction": "pick-up-guitar"
+}

@@ -1,0 +1,22 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "movementVector": [
+    1,
+    0
+  ],
+  "outfit": "artist-smock",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "artist-smock-walk",
+  "mirrorsFor": "left"
+}

@@ -1,0 +1,21 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "seatPoint": [
+    16,
+    29
+  ],
+  "outfit": "artist-smock",
+  "reverseFor": "artist_smock_stand_front",
+  "facing": "front",
+  "interaction": "sit-front"
+}

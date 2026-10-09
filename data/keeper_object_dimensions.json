@@ -202,6 +202,15 @@
       "minimumWidth": 20,
       "keeperClips": ["keeper_put_record"]
     },
+    "guitarRack": {
+      "gripHeight": 31,
+      "minimumWidth": 28,
+      "minimumClearanceFromKeeperAnchor": 13,
+      "propHandoffFrame": 6,
+      "variantsByTier": ["acoustic", "black-gretsch", "red-flying-v-1967"],
+      "keeperClips": ["keeper_guitar_pickup_acoustic", "keeper_guitar_pickup_gretsch", "keeper_guitar_pickup_flying_v_1967"],
+      "status": "authoritative-interaction-datums"
+    },
     "gardenPlantCutting": {
       "cutContactHeight": 12,
       "minimumHorizontalClearanceFromKeeper": 18,

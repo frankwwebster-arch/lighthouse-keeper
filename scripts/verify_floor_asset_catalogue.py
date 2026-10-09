@@ -57,7 +57,7 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==173
+assert len(keeper_pngs)==182
 required_clips={
     'keeper_idle':(4,4), 'keeper_walk':(8,4),
     'keeper_turn_back':(6,4), 'keeper_work_back':(8,4),
@@ -103,6 +103,15 @@ required_clips={
     'keeper_souwester_walk_back':(8,4),
     'keeper_souwester_walk_front':(8,4),
     'keeper_dance':(8,4), 'keeper_play_guitar':(8,4),
+    'keeper_artist_smock_walk':(8,4),
+    'keeper_artist_smock_turn_back':(6,4),
+    'keeper_artist_smock_turn_front':(6,4),
+    'keeper_artist_smock_sit_front':(6,4),
+    'keeper_play_guitar_gretsch':(8,4),
+    'keeper_play_guitar_flying_v_1967':(8,4),
+    'keeper_guitar_pickup_acoustic':(12,4),
+    'keeper_guitar_pickup_gretsch':(12,4),
+    'keeper_guitar_pickup_flying_v_1967':(12,4),
     'keeper_play_drums_front':(8,4), 'keeper_play_drums_back':(8,4),
     'keeper_watch_movie':(8,4),
     'keeper_clear_snow':(8,4), 'keeper_crouch_work_back':(8,4),
@@ -196,6 +205,29 @@ assert manifest['keeper_saw_wood']['w']==40 and manifest['keeper_saw_wood']['anc
 assert manifest['keeper_saw_wood']['handUsePoint']==[35,23] and manifest['keeper_saw_wood']['interaction']=='saw-workpiece'
 assert manifest['keeper_wave_camera']['facing']=='front' and manifest['keeper_wave_camera']['loop'] is False
 assert manifest['keeper_yawn']['interaction']=='emote-yawn' and manifest['keeper_yawn']['loop'] is False
+assert manifest['keeper_artist_smock_walk']['outfit']=='artist-smock'
+assert manifest['keeper_artist_smock_walk']['movementVector']==[1,0]
+assert manifest['keeper_artist_smock_turn_back']['loop'] is False
+assert manifest['keeper_artist_smock_turn_front']['loop'] is False
+assert manifest['keeper_artist_smock_sit_front']['seatPoint']==[16,29]
+assert manifest['keeper_artist_smock_sit_front']['reverseFor']=='artist_smock_stand_front'
+guitar_variants={
+    'keeper_play_guitar':('acoustic',1),
+    'keeper_play_guitar_gretsch':('black-gretsch',2),
+    'keeper_play_guitar_flying_v_1967':('red-flying-v-1967',3),
+}
+for name,(variant,tier) in guitar_variants.items():
+    assert manifest[name]['propVariant']==variant and manifest[name]['upgradeTier']==tier
+for name,(variant,tier,end_pose) in {
+    'keeper_guitar_pickup_acoustic':('acoustic',1,'play-guitar-acoustic'),
+    'keeper_guitar_pickup_gretsch':('black-gretsch',2,'play-guitar-gretsch'),
+    'keeper_guitar_pickup_flying_v_1967':('red-flying-v-1967',3,'play-guitar-flying-v-1967'),
+}.items():
+    clip=manifest[name]
+    assert clip['w']==64 and clip['h']==56 and clip['anchor']==[32,56]
+    assert clip['loop'] is False and clip['propHandoffFrame']==6
+    assert clip['propVariant']==variant and clip['upgradeTier']==tier
+    assert clip['startPose']=='standing-side-right' and clip['endPose']==end_pose
 for name,interaction in [('keeper_sad','emote-sad'),('keeper_hungry','emote-hungry'),('keeper_bored','emote-bored'),('keeper_cross','emote-cross')]:
     assert manifest[name]['facing']=='front' and manifest[name]['interaction']==interaction
     strip=Image.open(root/'public/sprites'/manifest[name]['file']).convert('RGBA')
@@ -513,6 +545,7 @@ assert asset_contract['canvas']['extendedTrayAction']=={'width':48,'height':40,'
 assert asset_contract['canvas']['extendedHorizontalExercise']=={'width':64,'height':40,'density':4,'anchor':[32,40],'canonicalBodyAxisLengthRange':[47,52]}
 assert asset_contract['canvas']['extendedStandingFishing']=={'width':64,'height':56,'density':4,'anchor':[32,56],'minimumActorHeight':36}
 assert asset_contract['canvas']['extendedOverheadExercise']=={'width':48,'height':56,'density':4,'anchor':[24,56]}
+assert asset_contract['canvas']['extendedGuitarPickup']=={'width':64,'height':56,'density':4,'anchor':[32,56]}
 assert asset_contract['interactionProfiles']['carryCakeRight']['handUsePoint']==[34,20]
 assert asset_contract['interactionProfiles']['carryMealRight']['handUsePoint']==[34,20]
 assert asset_contract['interactionProfiles']['placeCakeRight']['handUsePoint']==[39,21]
@@ -521,6 +554,9 @@ assert asset_contract['interactionProfiles']['machetePlantRight']['handUsePoint'
 assert asset_contract['interactionProfiles']['machetePlantRight']['bladeEdge']=='smooth'
 assert asset_contract['interactionProfiles']['exerciseBikeFront']['pedalPoint']==[24,42]
 assert asset_contract['interactionProfiles']['rearSeat']=={'clip':'keeper_sit_back','seatPoint':[16,29],'offsetFromFeet':[0,-11]}
+assert asset_contract['interactionProfiles']['artistSmockSitFront']['seatPoint']==[16,29]
+assert asset_contract['interactionProfiles']['guitarPickupGretsch']['propHandoffFrame']==6
+assert asset_contract['interactionProfiles']['guitarPickupGretsch']['propVariant']=='black-gretsch'
 assert asset_contract['interactionProfiles']['fishingStandingRight']['handUsePoint']==[56,24]
 assert asset_contract['interactionProfiles']['drumsFront']['timingMaster'] is True
 assert asset_contract['interactionProfiles']['drumsFront']['pairedWith']=='drumsBack'
@@ -560,6 +596,7 @@ assert asset_contract['objectRules']['turntablePlatterHeightAboveFloor']==13
 assert asset_contract['objectRules']['mealTableSurfaceHeightAboveFloor']==19
 assert asset_contract['objectRules']['machetePlantContactHeightAboveFloor']==12
 assert asset_contract['objectRules']['instrumentControlHeightAboveFloor']==23
+assert asset_contract['objectRules']['guitarRackGripHeightAboveFloor']==31
 assert asset_contract['objectRules']['liftButtonHeightAboveFloor']==23
 object_dimensions=json.loads((root/'data/keeper_object_dimensions.json').read_text())
 assert object_dimensions['keeperBasis']['skullTopHeight']==32.5
@@ -571,18 +608,20 @@ assert object_dimensions['furniture']['bed']['mattressTopHeight']==9
 assert object_dimensions['fixturesAndStations']['wallSwitch']['centreHeight']==23
 assert object_dimensions['fixturesAndStations']['gardenPlantCutting']['cutContactHeight']==12
 assert object_dimensions['fixturesAndStations']['gardenPlantCutting']['bladeEdge']=='smooth'
+assert object_dimensions['fixturesAndStations']['guitarRack']['propHandoffFrame']==6
+assert object_dimensions['fixturesAndStations']['guitarRack']['variantsByTier']==['acoustic','black-gretsch','red-flying-v-1967']
 scale_audit=json.loads((root/'docs/keeper-scale-audit/keeper-scale-metrics.json').read_text())
 assert scale_audit['version']==2
 assert scale_audit['auditRevision']=='2026-10-09-original-comparison-v2'
 assert scale_audit['originalReference']['name']=='keeper_walk'
 assert scale_audit['originalReference']['source']=='art/raw/keeper-first-batch/keeper_walk_f8.png'
 assert scale_audit['originalReference']['approvedMedianTorsoScanWidthAt20']==13.75
-assert scale_audit['counts']['allSheets']==173
-assert scale_audit['counts']['reviewedAnimationSheets']==155
+assert scale_audit['counts']['allSheets']==182
+assert scale_audit['counts']['reviewedAnimationSheets']==164
 assert scale_audit['counts']['technicalRejectedSheets']==18
-assert scale_audit['counts']['allFramesMeasured']==1230
+assert scale_audit['counts']['allFramesMeasured']==1308
 assert scale_audit['counts']['comparisonFailures']==0
-assert len(scale_audit['assets'])==173
+assert len(scale_audit['assets'])==182
 assert all('originalComparison' in asset for asset in scale_audit['assets'])
 scale_assets_by_name={asset['name']:asset for asset in scale_audit['assets']}
 standing_face=scale_assets_by_name['keeper_walk']['frameMeasurements'][0]['faceProxy']
@@ -598,16 +637,16 @@ direct_comparisons=[
     asset for asset in scale_audit['assets']
     if asset['originalComparison']['type']=='direct-skull-to-sole'
 ]
-assert len(direct_comparisons)==12
+assert len(direct_comparisons)==13
 assert all(0.96<=asset['originalComparison']['silhouetteHeightRatio']<=1.04 for asset in direct_comparisons)
 direct_core=[asset for asset in direct_comparisons if asset['originalComparison']['torsoScanDifference'] is not None]
-assert len(direct_core)==5
+assert len(direct_core)==6
 assert all(abs(asset['originalComparison']['torsoScanDifference'])<=1 for asset in direct_core)
-assert len(scale_audit['contactSheets'])==8
+assert len(scale_audit['contactSheets'])==9
 assert all((root/path).exists() for path in scale_audit['contactSheets'])
 scale_review=(root/'docs/keeper-scale-audit/review.html').read_text()
 assert '__KEEPER_REVIEW_DATA__' not in scale_review
-assert '"reviewedAnimationSheets":155' in scale_review
+assert '"reviewedAnimationSheets":164' in scale_review
 for removed_control in ('id="search"','id="outfit"','id="posture"','id="kind"','id="sort"'):
     assert removed_control not in scale_review,removed_control
 for token in (
@@ -729,6 +768,15 @@ previews={
     'keeper-souwester-walk-back':(8,250),
     'keeper-souwester-walk-front':(8,250),
     'keeper-dance':(8,250), 'keeper-play-guitar':(8,250),
+    'keeper-artist-smock-walk':(8,250),
+    'keeper-artist-smock-turn-back':(10,250),
+    'keeper-artist-smock-turn-front':(10,250),
+    'keeper-artist-smock-sit-front':(10,250),
+    'keeper-play-guitar-gretsch':(8,250),
+    'keeper-play-guitar-flying-v-1967':(8,250),
+    'keeper-guitar-pickup-acoustic':(12,250),
+    'keeper-guitar-pickup-gretsch':(12,250),
+    'keeper-guitar-pickup-flying-v-1967':(12,250),
     'keeper-play-drums-front':(8,250), 'keeper-play-drums-back':(8,250),
     'keeper-watch-movie-right':(8,250), 'keeper-watch-movie-left':(8,250),
     'keeper-clear-snow-right':(8,250), 'keeper-clear-snow-left':(8,250),
@@ -740,6 +788,6 @@ for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
 keeper_previews=list((root/'docs/floor-asset-catalogue').glob('keeper-*-preview.gif'))
-assert len(keeper_previews)==157
+assert len(keeper_previews)==166
 assert all(Image.open(path).is_animated for path in keeper_previews)
-print('Verified: 71 spaces, 1576 rows, owned-item states, 9 TV/lamp/FX exports, 173 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
+print('Verified: 71 spaces, 1576 rows, owned-item states, 9 TV/lamp/FX exports, 182 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')

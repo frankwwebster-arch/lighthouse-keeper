@@ -96,7 +96,12 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Walk away in sou'wester | `keeper_souwester_walk_back` | direct rear view; movement vector `(0,-1)` |
 | Walk toward camera in sou'wester | `keeper_souwester_walk_front` | direct front view; movement vector `(0,1)` |
 | Dance | `keeper_dance` | front-facing eight-frame loop; broad arm and leg motion |
-| Play guitar | `keeper_play_guitar` | standing front-right; guitar included; mirror front-left |
+| Pick up acoustic guitar | `keeper_guitar_pickup_acoustic` | side → rear rack reach → front-right play stance; guitar transfers from separate rack on frame 6 |
+| Pick up black Gretsch | `keeper_guitar_pickup_gretsch` | tier 2; same route and frame-6 handoff; separate rack |
+| Pick up red 1967 Flying V | `keeper_guitar_pickup_flying_v_1967` | tier 3; same route and frame-6 handoff; separate rack |
+| Play acoustic guitar | `keeper_play_guitar` | tier 1; standing front-right; mirror front-left |
+| Play black Gretsch | `keeper_play_guitar_gretsch` | tier 2; standing front-right; mirror front-left |
+| Play red 1967 Flying V | `keeper_play_guitar_flying_v_1967` | tier 3; 64 × 40 long-instrument canvas; mirror front-left |
 | Play drums facing camera | `keeper_play_drums_front` | seated direct front; paired motion/scale master; sticks included; stool and kit separate |
 | Play drums back to camera | `keeper_play_drums_back` | the same eight poses viewed through 180°; identical seated scale, seat/strike contacts and timing; sticks included; stool and kit separate |
 | Watch a movie | `keeper_watch_movie` | reclined rear-right with popcorn; mirror rear-left; seating and screen separate |
@@ -116,6 +121,9 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Inspect tabletop | `keeper_lean_table_back` | rear lean; table separate |
 | Look through telescope | `keeper_telescope` | right; mirror left; telescope mount separate |
 | Put on a record | `keeper_put_record` | right; mirror left; 48 × 40 side-action canvas; record included and edge-safe; turntable separate |
+| Walk in artist smock | `keeper_artist_smock_walk` | frame-by-frame matched to canonical walk height; right; mirror left |
+| Turn rear/front in artist smock | `keeper_artist_smock_turn_back` / `keeper_artist_smock_turn_front` | matching-outfit one-shots; reverse metadata supplies return routes |
+| Sit front in artist smock | `keeper_artist_smock_sit_front` | canonical `(16,29)` seat point; reverse to stand; routes into pottery |
 | Paint | `keeper_paint_side` / `keeper_paint_back` | splodged artist smock; side mirrors left; canvas/easel separate |
 | Use potter's wheel | `keeper_pottery_front` | seated front in artist smock; clay included, wheel separate |
 | Type at computer | `keeper_type_computer` | semantic reuse of piano hand motion; desk/computer separate |
@@ -255,10 +263,12 @@ Seam freeze overlays the final approach pose and first action pose. A standard
 uniform action uses `keeper_walk`; costume actions use their own walking family
 so the viewer never creates a magical outfit change merely to test a seam.
 
-The current generated inventory gives 119 actions a same-outfit walk and 36 a
-known bridge. It labels 33 facing/posture gaps, 21 outfits or states without a
-walking family, and 3 water/air actions requiring special entry. Five reusable
-bridge clips are also identified separately. These labels
+The current generated inventory labels 47 actions as direct same-outfit seam
+candidates and 43 as having a known bridge. It also records 12 locomotion
+sources, 8 reusable bridge clips, 33 facing/posture gaps, 18 outfit or fixture
+states without a walking family, and 3 water/air actions requiring special
+entry. The detailed non-standard-outfit audit and next bridge batch are in
+`docs/KEEPER_COSTUME_ROUTE_AUDIT.md`. These labels
 are design evidence, not promises that an unimplemented bridge already exists.
 
 ## Current integration boundary

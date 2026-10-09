@@ -41,6 +41,7 @@ DIRECT_SILHOUETTE_COMPARABLE = {
     "keeper_mechanic_walk_side",
     "keeper_mechanic_walk_front",
     "keeper_mechanic_walk_back",
+    "keeper_artist_smock_walk",
 }
 
 # Side walks without silhouette-obscuring capes can also be checked directly
@@ -52,6 +53,7 @@ DIRECT_CORE_COMPARABLE = {
     "keeper_pyjamas_walk",
     "keeper_tarzan_walk_side",
     "keeper_mechanic_walk_side",
+    "keeper_artist_smock_walk",
 }
 
 TECHNICAL = {
@@ -76,6 +78,15 @@ TECHNICAL = {
 }
 
 CORRECTED = {
+    "keeper_artist_smock_walk": "new artist-smock locomotion family; every pose is independently height-matched to the corresponding canonical walk frame after frame 4 was identified as undersized in the generated source",
+    "keeper_artist_smock_turn_back": "new matching-outfit side-to-rear transition for activity routing",
+    "keeper_artist_smock_turn_front": "new matching-outfit side-to-front transition for activity routing",
+    "keeper_artist_smock_sit_front": "new matching-outfit front stand-to-sit transition with the canonical seat datum",
+    "keeper_play_guitar_gretsch": "new tier-2 black Gretsch playing loop at canonical keeper scale",
+    "keeper_play_guitar_flying_v_1967": "new tier-3 red 1967 Flying V playing loop at canonical keeper scale",
+    "keeper_guitar_pickup_acoustic": "new side-to-rear rack pickup and return-to-play transition; prop handoff occurs on frame 6",
+    "keeper_guitar_pickup_gretsch": "new tier-2 rack pickup and return-to-play transition; prop handoff occurs on frame 6",
+    "keeper_guitar_pickup_flying_v_1967": "new tier-3 rack pickup and return-to-play transition; prop handoff occurs on frame 6",
     "keeper_sit_back": "new canonical rear stand-to-sit transition; final frame is the standard back-to-camera seated comparison ghost",
     "keeper_walk_into_lift": "intentional depth transition: rear walk scales from 100% to 75%, rises 6 logical pixels, then turns to a full-front neutral pose",
     "keeper_door_open_side_pyjamas": "clean six-frame side-door redraw in the canonical light-blue pyjama family; handle and floor interaction geometry are unchanged",
@@ -462,15 +473,28 @@ def publish(assets: list[dict]) -> None:
         "tarzan": "keeper_tarzan_walk_side",
         "halloween": "keeper_halloween_walk_side",
         "mechanic": "keeper_mechanic_walk_side",
+        "artist-smock": "keeper_artist_smock_walk",
     }
     bridge_sources = {
         "keeper_turn_back", "keeper_sit_side", "keeper_sit_front",
+        "keeper_artist_smock_turn_back", "keeper_artist_smock_turn_front", "keeper_artist_smock_sit_front",
         "keeper_get_into_bed", "keeper_party_hat_put_on_back",
     }
 
     def bridge_for(asset: dict) -> list[str]:
         if asset["name"] == "keeper_pyjamas_snore":
             return ["keeper_get_into_bed"]
+        if asset["outfit"] == "artist-smock":
+            if asset["name"] in {
+                "keeper_artist_smock_walk", "keeper_artist_smock_turn_back",
+                "keeper_artist_smock_turn_front", "keeper_artist_smock_sit_front",
+            }:
+                return []
+            if asset.get("seatPoint") or asset.get("facing") == "front":
+                return ["keeper_artist_smock_turn_front", "keeper_artist_smock_sit_front"]
+            if asset.get("facing") and any(token in asset["facing"] for token in ("back", "rear")):
+                return ["keeper_artist_smock_turn_back"]
+            return []
         if asset["outfit"] != "standard":
             return []
         if asset["name"] in {"keeper_sit_side", "keeper_sit_front", "keeper_turn_back"}:
@@ -578,7 +602,7 @@ def publish(assets: list[dict]) -> None:
         "",
         "## Interactive comparison",
         "",
-        "Open [the sizing and transition review](review.html) to see a dedicated untouched `keeper_walk` scale-authority panel followed by all 155 accepted animations in one filename-ordered gallery, with no search or filters required. A focused one-animation view provides a much larger stage, Previous/Next buttons, progress and filename status, and Left/Right arrow-key navigation without rebuilding cards or losing in-progress edits. It keeps a compact canonical reference pinned beside the reviewed card; choose standing or one sitting canon. The sitting endpoint's measured 9.75 × 6.5 face proxy exactly matches the standing reference frame, making it the sitting height/proportion authority. In upright standard-cap poses, the gold badge crossing the blue skull-top guide is a calibrated visual proxy; use anatomical landmarks for tilted, bent, seated, crouched, horizontal, bare-headed or alternate-headwear poses. The display-size slider magnifies gallery stages, or the focused reviewed stage, from 1× to 12× without changing the art or its relative scale; the pinned reference remains at a compact 2×. Each animation has independent 50%–150% character-width and character-height proposal sliders plus horizontal and vertical position controls, applied only to the reviewed action while the reference, rulers, ghost, approach walk and bridges remain unchanged. Earlier uniform size choices migrate to both axes. Comparison ghosts automatically use the canonical front, side or rear sitting endpoint for seated poses and the standing walk reference otherwise. Per-card controls can override that reference with the canonical standing side, standing facing-front, standing back-to-camera, sitting side, sitting front or sitting back figure, mirror, rotate and reset the ghost, move it alongside on a wider stage, rotate and reposition every frame of the reviewed animation around its fixed review anchor, and fade only that animation. The facing-front ghost is the neutral arms-down first frame of `keeper_wave_camera`, from which the exact-canonical-identity party idle is also derived. The back-to-camera standing ghost is the final frame of `keeper_turn_back`: the audited standard-outfit rear endpoint at the same 32 × 40 canvas, [16, 40] feet anchor and 38-pixel height as the standing authority. The sitting-back ghost is the final frame of `keeper_sit_back`, with the same [16, 29] seat point as the front and side sitting standards. Flying and swimming clips initially place the bottom of the first-frame figure on the red floor line so their size is easier to compare; manual position changes are explicit saved proposals. Pausing resets every card to its action's first frame. Per-card Previous/Next frame buttons pause globally, select action-only mode and step without wrapping from frame 1 through the final frame; frame inspection does not dirty the saved review. A separate 1–20fps proposed game-speed slider, 0.5fps buttons, authored-speed reset and live cycle-duration readout preview the reviewed action without changing approach-walk or bridge timing. Every card has a free-text production-notes field, mutually exclusive happy, full-re-draft and re-review-later decisions, a `Save this review` button and saved/unsaved status. `Save & re-review later` records the reminder immediately and advances to the next clip in focused mode; the reminder can be removed when that card is revisited. Saving persists notes, the decision, width, height, proposed runtime FPS, reviewed-animation rotation and position, ghost mirror, rotation and position controls, opacity and approval in the browser. Orange cards have unsaved changes, saved-and-happy cards are green, saved re-draft cards are red, saved re-review cards are blue, the summary counts progress, and export refuses to proceed while edits remain unsaved. `keeper-scale-choices.json` version 8 contains independent width/height/position/FPS production proposals, notes, re-draft requests, re-review reminders and the complete saved review/approval register. Accepted `animationFps` values belong in each clip's source JSON sidecar and generated runtime manifest, not in the PNG pixels. Comparison settings remain visual aids and do not alter production art. The page can also prepend the matching same-outfit walk, insert known bridge clips, or freeze the exact walk-to-action seam with onion skin. Every card prints its runtime PNG and authored source-strip filename.",
+        f"Open [the sizing and transition review](review.html) to see a dedicated untouched `keeper_walk` scale-authority panel followed by all {payload['counts']['reviewedAnimationSheets']} accepted animations in one filename-ordered gallery, with no search or filters required. A focused one-animation view provides a much larger stage, Previous/Next buttons, progress and filename status, and Left/Right arrow-key navigation without rebuilding cards or losing in-progress edits. It keeps a compact canonical reference pinned beside the reviewed card; choose standing or one sitting canon. The sitting endpoint's measured 9.75 × 6.5 face proxy exactly matches the standing reference frame, making it the sitting height/proportion authority. In upright standard-cap poses, the gold badge crossing the blue skull-top guide is a calibrated visual proxy; use anatomical landmarks for tilted, bent, seated, crouched, horizontal, bare-headed or alternate-headwear poses. The display-size slider magnifies gallery stages, or the focused reviewed stage, from 1× to 12× without changing the art or its relative scale; the pinned reference remains at a compact 2×. Each animation has independent 50%–150% character-width and character-height proposal sliders plus horizontal and vertical position controls, applied only to the reviewed action while the reference, rulers, ghost, approach walk and bridges remain unchanged. Earlier uniform size choices migrate to both axes. Comparison ghosts automatically use the canonical front, side or rear sitting endpoint for seated poses and the standing walk reference otherwise. Per-card controls can override that reference with the canonical standing side, standing facing-front, standing back-to-camera, sitting side, sitting front or sitting back figure, mirror, rotate and reset the ghost, move it alongside on a wider stage, rotate and reposition every frame of the reviewed animation around its fixed review anchor, and fade only that animation. The facing-front ghost is the neutral arms-down first frame of `keeper_wave_camera`, from which the exact-canonical-identity party idle is also derived. The back-to-camera standing ghost is the final frame of `keeper_turn_back`: the audited standard-outfit rear endpoint at the same 32 × 40 canvas, [16, 40] feet anchor and 38-pixel height as the standing authority. The sitting-back ghost is the final frame of `keeper_sit_back`, with the same [16, 29] seat point as the front and side sitting standards. Flying and swimming clips initially place the bottom of the first-frame figure on the red floor line so their size is easier to compare; manual position changes are explicit saved proposals. Pausing resets every card to its action's first frame. Per-card Previous/Next frame buttons pause globally, select action-only mode and step without wrapping from frame 1 through the final frame; frame inspection does not dirty the saved review. A separate 1–20fps proposed game-speed slider, 0.5fps buttons, authored-speed reset and live cycle-duration readout preview the reviewed action without changing approach-walk or bridge timing. Every card has a free-text production-notes field, mutually exclusive happy, full-re-draft and re-review-later decisions, a `Save this review` button and saved/unsaved status. `Save & re-review later` records the reminder immediately and advances to the next clip in focused mode; the reminder can be removed when that card is revisited. Saving persists notes, the decision, width, height, proposed runtime FPS, reviewed-animation rotation and position, ghost mirror, rotation and position controls, opacity and approval in the browser. Orange cards have unsaved changes, saved-and-happy cards are green, saved re-draft cards are red, saved re-review cards are blue, the summary counts progress, and export refuses to proceed while edits remain unsaved. `keeper-scale-choices.json` version 8 contains independent width/height/position/FPS production proposals, notes, re-draft requests, re-review reminders and the complete saved review/approval register. Accepted `animationFps` values belong in each clip's source JSON sidecar and generated runtime manifest, not in the PNG pixels. Comparison settings remain visual aids and do not alter production art. The page can also prepend the matching same-outfit walk, insert known bridge clips, or freeze the exact walk-to-action seam with onion skin. Every card prints its runtime PNG and authored source-strip filename.",
         "The character-width and character-height sliders each have adjacent −0.5% and +0.5% buttons for precise adjustments. They update the same per-animation values, obey the same 50%–150% limits and become part of the normal Save/export workflow.",
         "Every blue animation-transform slider also has −0.5/+0.5 buttons: degrees for rotation, logical pixels for horizontal/vertical position and percentage points for opacity. They update the same limited, saved and exported values as their sliders.",
         "Each card's frame-control block can play only that reviewed action from frame 1. `Play once` stops on the final frame; `Loop` repeats until paused. This playback choice is inspection-only and does not dirty the review.",
@@ -604,8 +628,8 @@ def publish(assets: list[dict]) -> None:
 
 def main() -> None:
     assets = load_assets()
-    if len(assets) != 173:
-        raise SystemExit(f"Expected 173 keeper sheets, found {len(assets)}")
+    if len(assets) != 182:
+        raise SystemExit(f"Expected 182 keeper sheets, found {len(assets)}")
     publish(assets)
     failures = [
         (asset["name"], warning)

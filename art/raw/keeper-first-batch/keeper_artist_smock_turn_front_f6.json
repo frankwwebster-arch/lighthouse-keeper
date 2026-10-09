@@ -1,0 +1,17 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "artist-smock",
+  "reverseFor": "artist_smock_turn_side_from_front",
+  "facing": "right-to-front",
+  "interaction": "turn-front"
+}

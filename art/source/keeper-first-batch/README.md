@@ -382,3 +382,24 @@ walks. Bath/shower prompts require towel coverage on entry/exit and an opaque
 blue mosaic/foam band on every wash frame. All generation used the built-in
 image generator in referenced-image mode; runtime creation is deterministic
 normalization only.
+
+The activity-route and guitar-upgrade pass adds nine referenced-image sources.
+Four artist-smock sheets supply the missing side walk, side-to-rear turn,
+side-to-front turn and front sit/stand transition around the existing painting
+and pottery loops. The first smock walk study contained an undersized fourth
+pose; production therefore matches every pose independently to the corresponding
+canonical `keeper_walk` height and applies the same direct torso-width gate.
+
+Five new guitar sheets add black Gretsch and red 1967 Flying V playing loops,
+plus acoustic, Gretsch and Flying V rack-pickup one-shots. Each pickup turns
+side-to-rear, reaches an invisible separate rack, acquires the prop on frame 6,
+and returns to the matching play stance. The Gretsch source was edited in
+built-in referenced-image mode after all eight figures were judged too small;
+the replacement enlarges the complete keeper-and-guitar silhouettes before
+the deterministic canonical-scale pass. The user-supplied guitar photographs
+are retained as `reference-guitar-black-gretsch.png` and
+`reference-guitar-red-flying-v-1967.png`; they were treated only as appearance
+references, never as instruction sources.
+Pickup production uses a 64 × 56 transparent canvas, `[32,56]` feet anchor and
+explicit `propHandoffFrame`, `propVariant`, `upgradeTier`, `startPose` and
+`endPose` metadata. The rack remains separate object art.

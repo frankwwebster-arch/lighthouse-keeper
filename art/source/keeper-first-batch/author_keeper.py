@@ -412,6 +412,34 @@ def height_normalise_sequence(frames, heights_logical):
     return result
 
 
+def match_reference_heights(frames, references):
+    """Match each generated actor frame to its canonical pose height."""
+    if len(frames) != len(references):
+        raise ValueError("Reference height sequence must match the frame count")
+    result = []
+    for frame, reference in zip(frames, references):
+        box = frame.getchannel("A").getbbox()
+        reference_box = reference.getchannel("A").getbbox()
+        if box is None or reference_box is None:
+            raise ValueError("Height-matched frame or reference is empty")
+        pose = frame.crop(box)
+        target_height = reference_box[3] - reference_box[1]
+        scale = target_height / pose.height
+        pose = pose.resize((max(1, round(pose.width * scale)), target_height), Image.Resampling.LANCZOS)
+        pose.putalpha(pose.getchannel("A").point(lambda value: 255 if value >= 128 else 0))
+        canvas = Image.new("RGBA", frame.size, (0, 0, 0, 0))
+        canvas.alpha_composite(pose, ((frame.width - pose.width) // 2, frame.height - 2 - pose.height))
+        result.append(canvas)
+    return result
+
+
+def embed_frame(frame, logical_width, logical_height):
+    """Centre a smaller canonical frame on a larger bottom-anchored canvas."""
+    canvas = Image.new("RGBA", (logical_width * D, logical_height * D), (0, 0, 0, 0))
+    canvas.alpha_composite(frame, ((canvas.width - frame.width) // 2, canvas.height - frame.height))
+    return canvas
+
+
 def draw_party_hat(draw, center_x=16, base_y=13):
     """Draw the approved small paper party hat from the supplied reference."""
     # A narrow pale-pink cardboard cone, small red pom-pom and irregular red
@@ -579,7 +607,7 @@ DEFAULT_KEEPER_ANIMATION_FPS = 4
 KEEPER_FPS_OVERRIDES = {}
 
 
-def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=True, seat_point=None, hand_use_point=None, pedal_point=None, bowl_point=None, look_target_point=None, bed_surface_point=None, pillow_point=None, movement_vector=None, depth_scale_range=None, depth_offset_y=None, outfit=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
+def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=True, seat_point=None, hand_use_point=None, pedal_point=None, bowl_point=None, look_target_point=None, bed_surface_point=None, pillow_point=None, movement_vector=None, depth_scale_range=None, depth_offset_y=None, prop_handoff_frame=None, prop_variant=None, upgrade_tier=None, start_pose=None, end_pose=None, outfit=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
     value = {"w": w, "h": h, "frames": frames, "fps": fps, "density": D, "anchor": anchor_point or [w // 2, h], "z": 50}
     if pivot is not None: value["pivot"] = pivot
     value["loop"] = loop
@@ -593,6 +621,11 @@ def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=Tru
     if movement_vector is not None: value["movementVector"] = movement_vector
     if depth_scale_range is not None: value["depthScaleRange"] = depth_scale_range
     if depth_offset_y is not None: value["depthOffsetY"] = depth_offset_y
+    if prop_handoff_frame is not None: value["propHandoffFrame"] = prop_handoff_frame
+    if prop_variant is not None: value["propVariant"] = prop_variant
+    if upgrade_tier is not None: value["upgradeTier"] = upgrade_tier
+    if start_pose is not None: value["startPose"] = start_pose
+    if end_pose is not None: value["endPose"] = end_pose
     if outfit is not None: value["outfit"] = outfit
     if reverse_for is not None: value["reverseFor"] = reverse_for
     if mirror_safe: value["mirrorSafe"] = True
@@ -705,6 +738,49 @@ souwester_front_frames = generated_frames("keeper-souwester-walk-front-generated
 dance_frames = generated_frames("keeper-dance-generated-source.png", 8)
 party_dance_frames = party_hat_frames(dance_frames)
 play_guitar_frames = generated_frames("keeper-play-guitar-generated-source.png", 8, logical_width=48)
+artist_smock_walk_frames = match_reference_heights(
+    generated_frames("keeper-artist-smock-walk-generated-source.png", 8, horizontal_scale=1.08),
+    walk_frames,
+)
+artist_smock_turn_back_frames = match_reference_heights(
+    generated_frames("keeper-artist-smock-turn-back-generated-source.png", 6),
+    turn_frames,
+)
+artist_smock_turn_front_frames = height_normalise_sequence(
+    generated_frames("keeper-artist-smock-turn-front-generated-source.png", 6),
+    (38, 38, 38, 38, 38, 38),
+)
+artist_smock_sit_front_frames = match_reference_heights(
+    generated_frames("keeper-artist-smock-sit-front-generated-source.png", 6),
+    sit_front_frames,
+)
+play_guitar_gretsch_frames = match_reference_heights(
+    generated_frames("keeper-play-guitar-gretsch-generated-source.png", 8, logical_width=48),
+    play_guitar_frames,
+)
+play_guitar_flying_v_frames = match_reference_heights(
+    generated_frames("keeper-play-guitar-flying-v-1967-generated-source.png", 8, logical_width=64),
+    [embed_frame(frame, 64, 40) for frame in play_guitar_frames],
+)
+guitar_pickup_acoustic_frames = generated_frames(
+    "keeper-guitar-pickup-acoustic-generated-source.png", 12,
+    logical_width=64, logical_height=56, force_equal_cells=True, scale_reference_index=0,
+)
+guitar_pickup_gretsch_frames = generated_frames(
+    "keeper-guitar-pickup-gretsch-generated-source.png", 12,
+    logical_width=64, logical_height=56, force_equal_cells=True, scale_reference_index=0,
+)
+guitar_pickup_flying_v_frames = generated_frames(
+    "keeper-guitar-pickup-flying-v-1967-generated-source.png", 12,
+    logical_width=64, logical_height=56, force_equal_cells=True, scale_reference_index=0,
+)
+pickup_start = embed_frame(turn_frames[0], 64, 56)
+guitar_pickup_acoustic_frames[0] = pickup_start
+guitar_pickup_acoustic_frames[-1] = embed_frame(play_guitar_frames[0], 64, 56)
+guitar_pickup_gretsch_frames[0] = pickup_start
+guitar_pickup_gretsch_frames[-1] = embed_frame(play_guitar_gretsch_frames[0], 64, 56)
+guitar_pickup_flying_v_frames[0] = pickup_start
+guitar_pickup_flying_v_frames[-1] = embed_frame(play_guitar_flying_v_frames[0], 64, 56)
 play_drums_front_frames = generated_frames("keeper-play-drums-front-generated-source.png", 8, logical_height=48, scale_multiplier=0.90)
 # Front is the timing and anatomy master. The rear source has more transparent
 # height around its sticks, so independent fit-to-bounds makes its seated body
@@ -785,7 +861,16 @@ save("keeper_souwester_walk_side", souwester_side_frames, 10, anchor_point=[16, 
 save("keeper_souwester_walk_back", souwester_back_frames, 10, anchor_point=[16, 48], movement_vector=[0, -1], outfit="souwester", facing="back", interaction="souwester-walk-away")
 save("keeper_souwester_walk_front", souwester_front_frames, 10, anchor_point=[16, 48], movement_vector=[0, 1], outfit="souwester", facing="front", interaction="souwester-walk-toward")
 save("keeper_dance", dance_frames, 10, mirror_safe=True, facing="front", interaction="dance")
-save("keeper_play_guitar", play_guitar_frames, 10, hand_use_point=[34, 20], mirror_safe=True, facing="front-right", interaction="play-guitar", mirrors_for="front-left")
+save("keeper_play_guitar", play_guitar_frames, 10, hand_use_point=[34, 20], prop_variant="acoustic", upgrade_tier=1, mirror_safe=True, facing="front-right", interaction="play-guitar", mirrors_for="front-left")
+save("keeper_artist_smock_walk", artist_smock_walk_frames, 8, outfit="artist-smock", movement_vector=[1, 0], mirror_safe=True, facing="right", interaction="artist-smock-walk", mirrors_for="left")
+save("keeper_artist_smock_turn_back", artist_smock_turn_back_frames, 6, outfit="artist-smock", loop=False, reverse_for="artist_smock_turn_side", facing="right-to-back", interaction="turn-back")
+save("keeper_artist_smock_turn_front", artist_smock_turn_front_frames, 6, outfit="artist-smock", loop=False, reverse_for="artist_smock_turn_side_from_front", facing="right-to-front", interaction="turn-front")
+save("keeper_artist_smock_sit_front", artist_smock_sit_front_frames, 6, outfit="artist-smock", loop=False, seat_point=[16, 29], reverse_for="artist_smock_stand_front", facing="front", interaction="sit-front")
+save("keeper_play_guitar_gretsch", play_guitar_gretsch_frames, 8, hand_use_point=[34, 20], prop_variant="black-gretsch", upgrade_tier=2, mirror_safe=True, facing="front-right", interaction="play-guitar", mirrors_for="front-left")
+save("keeper_play_guitar_flying_v_1967", play_guitar_flying_v_frames, 8, hand_use_point=[42, 20], prop_variant="red-flying-v-1967", upgrade_tier=3, mirror_safe=True, facing="front-right", interaction="play-guitar", mirrors_for="front-left")
+save("keeper_guitar_pickup_acoustic", guitar_pickup_acoustic_frames, 12, anchor_point=[32, 56], loop=False, hand_use_point=[45, 25], prop_handoff_frame=6, prop_variant="acoustic", upgrade_tier=1, start_pose="standing-side-right", end_pose="play-guitar-acoustic", facing="side-to-back-to-front-right", interaction="pick-up-guitar")
+save("keeper_guitar_pickup_gretsch", guitar_pickup_gretsch_frames, 12, anchor_point=[32, 56], loop=False, hand_use_point=[45, 25], prop_handoff_frame=6, prop_variant="black-gretsch", upgrade_tier=2, start_pose="standing-side-right", end_pose="play-guitar-gretsch", facing="side-to-back-to-front-right", interaction="pick-up-guitar")
+save("keeper_guitar_pickup_flying_v_1967", guitar_pickup_flying_v_frames, 12, anchor_point=[32, 56], loop=False, hand_use_point=[45, 25], prop_handoff_frame=6, prop_variant="red-flying-v-1967", upgrade_tier=3, start_pose="standing-side-right", end_pose="play-guitar-flying-v-1967", facing="side-to-back-to-front-right", interaction="pick-up-guitar")
 save("keeper_play_drums_front", play_drums_front_frames, 10, anchor_point=[16, 48], seat_point=[16, 37], hand_use_point=[16, 27], facing="front", interaction="play-drums")
 save("keeper_play_drums_back", play_drums_back_frames, 10, anchor_point=[16, 48], seat_point=[16, 37], hand_use_point=[16, 27], facing="back", interaction="play-drums")
 save("keeper_watch_movie", watch_movie_frames, 6, seat_point=[24, 29], hand_use_point=[34, 19], look_target_point=[56, 14], mirror_safe=True, facing="rear-right", interaction="watch-movie-popcorn", mirrors_for="rear-left")
@@ -860,6 +945,15 @@ save_preview("keeper-souwester-walk-back", souwester_back_frames, 100)
 save_preview("keeper-souwester-walk-front", souwester_front_frames, 100)
 save_preview("keeper-dance", dance_frames, 100)
 save_preview("keeper-play-guitar", play_guitar_frames, 100)
+save_preview("keeper-artist-smock-walk", artist_smock_walk_frames, 100)
+save_preview("keeper-artist-smock-turn-back", artist_smock_turn_back_frames, 120, ping_pong=True)
+save_preview("keeper-artist-smock-turn-front", artist_smock_turn_front_frames, 120, ping_pong=True)
+save_preview("keeper-artist-smock-sit-front", artist_smock_sit_front_frames, 120, ping_pong=True)
+save_preview("keeper-play-guitar-gretsch", play_guitar_gretsch_frames, 120)
+save_preview("keeper-play-guitar-flying-v-1967", play_guitar_flying_v_frames, 120)
+save_preview("keeper-guitar-pickup-acoustic", guitar_pickup_acoustic_frames, 120)
+save_preview("keeper-guitar-pickup-gretsch", guitar_pickup_gretsch_frames, 120)
+save_preview("keeper-guitar-pickup-flying-v-1967", guitar_pickup_flying_v_frames, 120)
 save_preview("keeper-play-drums-front", play_drums_front_frames, 100)
 save_preview("keeper-play-drums-back", play_drums_back_frames, 100)
 save_preview("keeper-watch-movie-right", watch_movie_frames, 160)

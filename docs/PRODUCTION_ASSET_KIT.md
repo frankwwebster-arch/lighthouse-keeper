@@ -97,6 +97,12 @@ per-clip override without changing the sprite strip.
 | `souwester_walk_front` | front | 8 · 4 | yes | direct walk toward camera; vector `(0,1)` |
 | `dance` | front | 8 · 4 | yes | joyful full-body loop with strong arm and leg motion |
 | `play_guitar` | front ¾ | 8 · 4 | yes | 48 × 40; guitar included; mirror front-left |
+| `play_guitar_gretsch` | front ¾ | 8 · 4 | yes | tier 2 black Gretsch; canonical actor scale; mirror front-left |
+| `play_guitar_flying_v_1967` | front ¾ | 8 · 4 | yes | tier 3 red 1967 Flying V; 64 × 40; mirror front-left |
+| `guitar_pickup_*` | side → rear → front ¾ | 12 · 4 | no | 64 × 56; separate rack; prop handoff on frame 6; acoustic/Gretsch/Flying V tiers |
+| `artist_smock_walk` | side | 8 · 4 | yes | canonical walk heights; right, mirror left |
+| `artist_smock_turn_back/front` | side to rear/front | 6 · 4 | no | matching-outfit activity bridges; reversible |
+| `artist_smock_sit_front` | front stand to sit | 6 · 4 | no | seat `(16,29)`; reverse to stand |
 | `play_drums_front` | front seated | 8 · 4 | yes | 32 × 48; paired timing/scale master; seat `(16,37)`; strike centre `(16,27)` |
 | `play_drums_back` | rear seated | 8 · 4 | yes | 32 × 48; same eight poses through 180°; identical seat and strike points; kit separate |
 | `watch_movie` | rear ¾ reclined | 8 · 4 | yes | 48 × 40; popcorn included; seating and screen separate |

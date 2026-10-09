@@ -8,7 +8,7 @@ Codex task should be able to continue from here without relying on the old chat.
 
 1. Read this document in full.
 2. Open `docs/keeper-scale-audit/review.html`. A dedicated panel first shows
-   the untouched `keeper_walk` scale authority, followed by all 155 accepted
+   the untouched `keeper_walk` scale authority, followed by all 164 accepted
    clips at one unchanged relative scale in filename order. Every card prints
    its runtime and source filename. Switch View to `One animation at a time`
    for a much larger card, progress/filename status, Previous/Next buttons and
@@ -167,16 +167,16 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 
 ## Current evidence and files
 
-- 173 keeper sheets and 1,230 frames are in the technical batch.
-- 155 animation sheets are accepted into the review gallery.
+- 182 keeper sheets and 1,308 frames are in the technical batch.
+- 164 animation sheets are accepted into the review gallery.
 - 18 obsolete modular/reference sheets are excluded from review and must not
   return to production.
-- 62 sheets were rebuilt or anatomy-normalised in the latest full pass.
+- 71 sheets were rebuilt or anatomy-normalised in the latest full pass.
 - The audit currently reports zero unresolved original-comparison failures.
-- The 12 directly comparable full-body families are constrained to a
+- The 13 directly comparable full-body families are constrained to a
   0.960–1.040 skull-to-sole ratio; unobscured side torsos must be within one
   logical pixel of the original torso scan.
-- The permanent evidence is in `docs/keeper-scale-audit/`: eight fixed-scale
+- The permanent evidence is in `docs/keeper-scale-audit/`: nine fixed-scale
   contact sheets, `keeper-scale-metrics.json`, `keeper-scale-summary.csv` and
   the unified review page.
 - Runtime sprites are under `public/sprites/`; authored source strips and JSON
@@ -185,6 +185,8 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 - Object scale and contact authority lives in
   `data/keeper_asset_contract.json`, `data/keeper_object_dimensions.json`,
   `docs/KEEPER_ASSET_SCALE.md` and `docs/KEEPER_OBJECT_DIMENSIONS.md`.
+- The non-standard-outfit inventory and next bridge batch are in
+  `docs/KEEPER_COSTUME_ROUTE_AUDIT.md`.
 - Frank's earlier floor-catalogue comments are preserved in
   `docs/review/frank-floor-review-2026-10-09.json`. Those are historical
   evidence; many named faults were subsequently corrected. New review comments
@@ -327,23 +329,26 @@ evidence, not final acceptance.
 
 | Kind | Count | Meaning |
 |---|---:|---|
-| `bridge-clip` | 5 | Existing reusable bridge artwork |
-| `direct-test` | 44 | Same-outfit walk can be juxtaposed for review; seam unproven |
-| `known-bridge` | 38 | Viewer can insert an existing turn/sit/bed bridge; full route still needs endpoint proof |
-| `locomotion` | 11 | Walking source/family |
+| `bridge-clip` | 8 | Existing reusable bridge artwork |
+| `direct-test` | 47 | Same-outfit walk can be juxtaposed for review; seam unproven |
+| `known-bridge` | 43 | Viewer can insert an existing turn/sit/bed bridge; full route still needs endpoint proof |
+| `locomotion` | 12 | Walking source/family |
 | `missing-bridge` | 33 | Known facing/posture bridge does not exist |
-| `no-walk` | 21 | Outfit/privacy state has no walking family; may instead require an occlusion route |
+| `no-walk` | 18 | Outfit/privacy state has no walking family; may instead require an occlusion route |
 | `special-entry` | 3 | Air/water/horizontal action needs a bespoke environment entry |
 
-### Existing bridge clips (5)
+### Existing bridge clips (8)
 
 - `keeper_turn_back`
 - `keeper_sit_side`
 - `keeper_sit_front`
 - `keeper_get_into_bed`
 - `keeper_party_hat_put_on_back` — optional flavour only under the door rule
+- `keeper_artist_smock_turn_back`
+- `keeper_artist_smock_turn_front`
+- `keeper_artist_smock_sit_front`
 
-### Locomotion families (11)
+### Locomotion families (12)
 
 - `keeper_walk`
 - `keeper_bathrobe_walk`
@@ -356,6 +361,7 @@ evidence, not final acceptance.
 - `keeper_tarzan_walk_side`
 - `keeper_halloween_walk_side`
 - `keeper_mechanic_walk_side`
+- `keeper_artist_smock_walk`
 
 ### Missing facing/posture bridges (33)
 
@@ -375,7 +381,7 @@ evidence, not final acceptance.
 - Bathrobe/shower: `keeper_shower_door_open_bathrobe`,
   `keeper_shower_enter_bathrobe`.
 
-### States without a walking family (21)
+### States without a walking family (18)
 
 - Bath/shower/privacy: `keeper_bath_enter`, `keeper_bath_exit`,
   `keeper_bath_wash`, `keeper_hot_tub`, `keeper_shower_enter`,
@@ -384,16 +390,38 @@ evidence, not final acceptance.
 - Winter: `keeper_clear_snow`.
 - Workout kit: `keeper_lift_weights_back`, `keeper_pressups_side`,
   `keeper_ride_bike_front`, `keeper_trampoline_front`.
-- Artist's smock: `keeper_paint_back`, `keeper_paint_side`,
-  `keeper_pottery_front`.
 - Scuba: `keeper_scuba_swim_down`, `keeper_scuba_swim_horizontal`,
   `keeper_scuba_swim_up`.
 - Striped swimsuit: `keeper_swim_costume_down`,
   `keeper_swim_costume_horizontal`, `keeper_swim_costume_up`.
 
-For winter/workout/artist clothing, decide whether he traverses visible room
-space after the door. If yes, author canonical-overlay neutral and side-walk
-families. For swimming/scuba, a door-to-water occlusion or short visible walk
+The artist-smock family now has its canonical-height walk, front/rear turns and
+front sit/stand bridge. For winter/workout clothing, author canonical-overlay
+neutral and walking/turning coverage where he traverses visible room space.
+
+## Artist-smock and guitar routes added in this pass
+
+- Artist: `keeper_artist_smock_walk` → optional
+  `keeper_artist_smock_turn_front` → `keeper_artist_smock_sit_front` →
+  `keeper_pottery_front`; painting uses the same walk and the side or rear turn
+  before `keeper_paint_side` / `keeper_paint_back`. Each one-shot reverses only
+  where the endpoints are identical.
+- The smock walk's generated frame 4 was undersized. Every production frame is
+  now independently height-matched to the corresponding canonical walk pose,
+  and the full walk passes the direct height and torso-width gates.
+- Guitar tier 1 is acoustic, tier 2 is the black Gretsch and tier 3 is the red
+  1967 Flying V. Each tier has a 12-frame rack-pickup one-shot and its own
+  eight-frame playing loop.
+- Pickup clips start in the canonical side stance, turn fully rearward, reach
+  the separate rack, acquire the instrument on one-based frame 6, turn back
+  and end on the exact first frame of their matching play loop. Runtime must
+  hide/remove the rack prop on `propHandoffFrame`; it must not infer transfer
+  from alpha pixels.
+- The Gretsch source was enlarged after all eight original figures were marked
+  undersized. Production remains canonically measured rather than scaled by
+  its transparent source canvas.
+
+For swimming/scuba, a door-to-water occlusion or short visible walk
 must be designed explicitly; never jump directly from standard walking to a
 horizontal swimmer.
 
@@ -692,7 +720,7 @@ npm run build
 
 Also inspect `docs/keeper-scale-audit/review.html` visually:
 
-- every one of the 155 accepted cards is present and named;
+- every one of the 164 accepted cards is present and named;
 - global Pause and Original-ghost controls affect every card;
 - each card's ghost mirror, rotation and position choices save and export independently;
 - no card scales its sprite to fit;
@@ -702,4 +730,4 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 
 ## Ready-to-paste opening prompt for the new Codex task
 
-> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md` in full before changing anything, then read the authoritative scale/animation/door documents it links. I have new comments on clips in `docs/keeper-scale-audit/review.html`; capture every comment by exact filename into a dated review record, triage keep/fix/rebuild/delete/decision-needed/re-review-later, and resolve them. Treat the untouched `keeper_walk` as the immutable identity and scale reference. Costumes and props are overlays; never redraw or resize the keeper merely for clothing, canvas or an object. Costume changes happen only while fully hidden behind a foreground door. Most importantly, make every accepted action reachable seamlessly and reversibly from idle/walking: phase-aware walk stop, correct turn, sit/crouch/climb/prop handover, activity entry/loop/exit, then a clean return to walking. Build the P0 production neutral poses, walk-start/stop and side↔front/back transition system before bulk object wiring; add explicit startPose/endPose and object-event metadata, and test complete routes rather than isolated loops. Rerun the full 173-sheet/1,230-frame scale audit and all project verification, update the handoff/index, commit and push the completed work to remote `main`.
+> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md` and `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` in full before changing anything, then read the authoritative scale/animation/door documents they link. I have new comments on clips in `docs/keeper-scale-audit/review.html`; capture every comment by exact filename into a dated review record, triage keep/fix/rebuild/delete/decision-needed/re-review-later, and resolve them. Treat the untouched `keeper_walk` as the immutable identity and scale reference. Costumes and props are overlays; never redraw or resize the keeper merely for clothing, canvas or an object. Costume changes happen only while fully hidden behind a foreground door. Make every accepted action reachable seamlessly and reversibly from idle/walking: phase-aware walk stop, correct turn, sit/crouch/climb/prop handover, activity entry/loop/exit, then a clean return to walking. Preserve the artist-smock route and the guitar frame-6 prop-handoff contracts. Build the remaining P0 neutral poses, walk-start/stop and side↔front/back transition system before bulk object wiring; test complete routes rather than isolated loops. Rerun the full 182-sheet/1,308-frame scale audit and all project verification, update the handoff/index, commit and push the completed work to remote `main`.

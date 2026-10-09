@@ -14,6 +14,8 @@
     34,
     20
   ],
+  "propVariant": "acoustic",
+  "upgradeTier": 1,
   "mirrorSafe": true,
   "facing": "front-right",
   "interaction": "play-guitar",

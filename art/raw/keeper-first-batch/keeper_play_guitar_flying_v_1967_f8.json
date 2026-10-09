@@ -1,0 +1,23 @@
+{
+  "w": 64,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    32,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "handUsePoint": [
+    42,
+    20
+  ],
+  "propVariant": "red-flying-v-1967",
+  "upgradeTier": 3,
+  "mirrorSafe": true,
+  "facing": "front-right",
+  "interaction": "play-guitar",
+  "mirrorsFor": "front-left"
+}

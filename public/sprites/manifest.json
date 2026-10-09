@@ -85,6 +85,87 @@
   "mirrorsFor": "left",
   "z": 50
  },
+ "keeper_artist_smock_sit_front": {
+  "file": "keeper_artist_smock_sit_front.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "seatPoint": [
+   16,
+   29
+  ],
+  "outfit": "artist-smock",
+  "loop": false,
+  "reverseFor": "artist_smock_stand_front",
+  "facing": "front",
+  "interaction": "sit-front",
+  "z": 50
+ },
+ "keeper_artist_smock_turn_back": {
+  "file": "keeper_artist_smock_turn_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "outfit": "artist-smock",
+  "loop": false,
+  "reverseFor": "artist_smock_turn_side",
+  "facing": "right-to-back",
+  "interaction": "turn-back",
+  "z": 50
+ },
+ "keeper_artist_smock_turn_front": {
+  "file": "keeper_artist_smock_turn_front.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "outfit": "artist-smock",
+  "loop": false,
+  "reverseFor": "artist_smock_turn_side_from_front",
+  "facing": "right-to-front",
+  "interaction": "turn-front",
+  "z": 50
+ },
+ "keeper_artist_smock_walk": {
+  "file": "keeper_artist_smock_walk.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "outfit": "artist-smock",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "artist-smock-walk",
+  "mirrorsFor": "left",
+  "z": 50
+ },
  "keeper_back_arm_l": {
   "file": "keeper_back_arm_l.png",
   "w": 32,
@@ -1159,6 +1240,81 @@
   "mirrorsFor": "left",
   "z": 50
  },
+ "keeper_guitar_pickup_acoustic": {
+  "file": "keeper_guitar_pickup_acoustic.png",
+  "w": 64,
+  "h": 56,
+  "frames": 12,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   32,
+   56
+  ],
+  "handUsePoint": [
+   45,
+   25
+  ],
+  "propHandoffFrame": 6,
+  "propVariant": "acoustic",
+  "upgradeTier": 1,
+  "startPose": "standing-side-right",
+  "endPose": "play-guitar-acoustic",
+  "loop": false,
+  "facing": "side-to-back-to-front-right",
+  "interaction": "pick-up-guitar",
+  "z": 50
+ },
+ "keeper_guitar_pickup_flying_v_1967": {
+  "file": "keeper_guitar_pickup_flying_v_1967.png",
+  "w": 64,
+  "h": 56,
+  "frames": 12,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   32,
+   56
+  ],
+  "handUsePoint": [
+   45,
+   25
+  ],
+  "propHandoffFrame": 6,
+  "propVariant": "red-flying-v-1967",
+  "upgradeTier": 3,
+  "startPose": "standing-side-right",
+  "endPose": "play-guitar-flying-v-1967",
+  "loop": false,
+  "facing": "side-to-back-to-front-right",
+  "interaction": "pick-up-guitar",
+  "z": 50
+ },
+ "keeper_guitar_pickup_gretsch": {
+  "file": "keeper_guitar_pickup_gretsch.png",
+  "w": 64,
+  "h": 56,
+  "frames": 12,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   32,
+   56
+  ],
+  "handUsePoint": [
+   45,
+   25
+  ],
+  "propHandoffFrame": 6,
+  "propVariant": "black-gretsch",
+  "upgradeTier": 2,
+  "startPose": "standing-side-right",
+  "endPose": "play-guitar-gretsch",
+  "loop": false,
+  "facing": "side-to-back-to-front-right",
+  "interaction": "pick-up-guitar",
+  "z": 50
+ },
  "keeper_halloween_walk_back": {
   "file": "keeper_halloween_walk_back.png",
   "w": 32,
@@ -2164,6 +2320,56 @@
    34,
    20
   ],
+  "propVariant": "acoustic",
+  "upgradeTier": 1,
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "front-right",
+  "interaction": "play-guitar",
+  "mirrorsFor": "front-left",
+  "z": 50
+ },
+ "keeper_play_guitar_flying_v_1967": {
+  "file": "keeper_play_guitar_flying_v_1967.png",
+  "w": 64,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   32,
+   40
+  ],
+  "handUsePoint": [
+   42,
+   20
+  ],
+  "propVariant": "red-flying-v-1967",
+  "upgradeTier": 3,
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "front-right",
+  "interaction": "play-guitar",
+  "mirrorsFor": "front-left",
+  "z": 50
+ },
+ "keeper_play_guitar_gretsch": {
+  "file": "keeper_play_guitar_gretsch.png",
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "handUsePoint": [
+   34,
+   20
+  ],
+  "propVariant": "black-gretsch",
+  "upgradeTier": 2,
   "loop": true,
   "mirrorSafe": true,
   "facing": "front-right",
