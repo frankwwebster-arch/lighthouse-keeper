@@ -87,7 +87,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Party idle | `keeper_party_idle` | exact canonical front face/body; small pale-pink cone, red pom-pom/fringe |
 | Party walk | `keeper_party_walk` | exact canonical side-walk identity; right; mirror left |
 | Party turn away | `keeper_party_turn_back` | exact canonical turn identity; reverse to face camera |
-| Put on party hat | `keeper_party_hat_put_on_back` | rear-view one-shot; play after ordinary turn-away; reverse to remove |
+| Put on party hat | `keeper_party_hat_put_on_back` | optional rear-view flavour/reference one-shot only; gameplay changes the hat while he is fully hidden behind a door |
 | Eat party cake | `keeper_party_eat_cake` | canonical seated-eat body with party hat and jam-layer cake slice; mirror left |
 | Party dance | `keeper_party_dance` | canonical dance body with party hat |
 | Walk in sou'wester left/right | `keeper_souwester_walk_side` | yellow oilskins; right; mirror left |
@@ -228,25 +228,21 @@ hard-coded knowledge of the artwork.
 ## Costume transitions and object binding
 
 Objects should declare an interaction profile, not directly force an arbitrary
-animation. The controller owns the short transition graph between locomotion,
-facing and action states. For the party hat:
+animation. The controller owns the transition graph between locomotion, facing,
+posture, object handover and action states. Every costume change, including the
+party hat, happens only while the keeper is fully hidden behind a foreground
+door hinged on the player's side. The runtime swaps outfit state during that
+full-body occlusion; there is no visible dressing or morphing transition.
+`keeper_party_hat_put_on_back` is optional flavour/reference art, not required
+gameplay plumbing.
 
-1. The loose-hat object exposes a use point and the `put-on-party-hat`
-   interaction.
-2. The keeper walks to that point, stops, and plays `keeper_turn_back`.
-3. The object transfers the loose hat prop to
-   `keeper_party_hat_put_on_back`; the rear-view clip raises it behind his head.
-4. On the final frame, gameplay sets outfit state `party-hat` and hides the
-   loose object. The keeper may then reverse the party turn to face camera or
-   enter a party action directly.
-5. Removal uses the put-on clip in reverse, restores the loose object on its
-   final frame and clears the outfit state.
-
-The same model applies to pyjamas, bathrobe, diving/scuba kit and later
-costumes: object interaction chooses a transition recipe; the recipe supplies
-walk-stop, facing change, equip/unequip and the final activity. Individual
-furniture therefore needs only its stable use/seat/hand points and interaction
-tag—the controller fills the standard approach and departure transitions.
+Use two hidden swaps between rooms—costume to standard while leaving, standard
+to the target costume while entering—so only the standard uniform needs shared
+stairs, ladders, lift and slide. Furniture declares stable approach, use, seat,
+look and hand points plus a semantic interaction tag. The controller supplies
+phase-aware walk-stop, facing/posture bridges, action entry/loop/exit and the
+return to walking. The full required graph and current gaps are in
+`docs/KEEPER_ANIMATION_HANDOFF.md`.
 
 Use `docs/keeper-scale-audit/review.html` to test those recipes before they are
 wired into gameplay. Its raw-seam mode appends an action directly to the final

@@ -131,7 +131,7 @@ What exists and what is missing today, from `public/sprites/manifest.json`:
 
 | Costume | Delivered | Missing for the minimum set |
 |---|---|---|
-| standard | 114 clips incl. `idle`, `walk`, `turn_back`, doors, stairs | none |
+| standard | 114 clips incl. `walk`, `turn_back`, doors and stairs; the old technical `keeper_idle` is rejected | production standing neutral/idle and phase-aware walk start/stop |
 | party hat | idle, walk, turn | none |
 | light-blue pyjamas | walk, turn, get into bed, snore | standing frame |
 | cream bathrobe | walk, shower door, shower entry | standing frame |
@@ -177,7 +177,10 @@ The manifest would gain `startPose` and `endPose` on each clip. Reversed playbac
 | Declared chains (cake, meal, hot drink, boat, shower) line up frame to frame at each handover | exact at the contact point (tray, mug, gunwale) |
 | Every activity has a route of clips from `stand` to its loop and back to `stand` in its costume | must exist (game-side test) |
 
-Props appearing or disappearing at a handover are acceptable when they are in his hand on the first frame. That reads as a cut, not a glitch.
+Props may appear or disappear only at an explicit acquire/release event, behind
+an object that conceals the handover, or during full door/cubicle occlusion.
+The prop and keeper hand must share the same contact point on both sides of the
+handover; an unexplained first-frame pop is not a seamless join.
 
 ### The review page
 
