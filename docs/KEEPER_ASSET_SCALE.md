@@ -235,8 +235,8 @@ search, filters or card fitting. For standard upright cap poses, its gold badge
 crossing the blue skull-top line is a convenient calibrated proxy; it does not
 replace anatomical landmarks for altered posture, head angle or headwear.
 Every card prints both its runtime PNG and authored source-strip filename. The
-shared controls pause or play every animation at once, overlay the original
-keeper on every card at once, and draw the shared
+shared controls pause or play every animation at once, apply pose-aware
+comparison ghosts to every card, and draw the shared
 skull/shoulder/hip/seat/floor rulers. A 1×–6× display-size slider magnifies all
 stages equally and never changes source or relative sprite scale. The page can
 also resize an individual reviewed action from 70% to 130% around its fixed
@@ -248,6 +248,11 @@ same-outfit walk immediately before an action. The raw seam, known-bridge and
 onion-skin modes make transition problems visible. Flying and swimming cards
 align the bottom of the first-frame figure to the red floor line for comparison.
 Global Pause always resets every card to the action's first frame.
+Seated cards automatically use the canonical front or side sitting endpoint;
+other cards use the standing reference. Per-card controls can select a different
+reference, rotate/reset it, place it alongside and fade only the reviewed action.
+There is no canonical rear-sitting reference yet, so rear comparisons require an
+explicit choice and remain visual evidence rather than a certified pose match.
 
 The sad, hungry, bored and cross reactions share one enforced upright scale:
 their visible height is 38 logical pixels (152 pixels in the density-4 source)

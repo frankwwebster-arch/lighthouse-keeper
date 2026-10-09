@@ -12,7 +12,7 @@ Codex task should be able to continue from here without relying on the old chat.
    clips at one unchanged relative scale in filename order. Every card prints
    its runtime and source filename. The display-size slider magnifies every
    stage equally from 1× to 6× without changing the art; the other global
-   controls pause/play everything and apply the original-keeper ghost.
+   controls pause/play everything and apply pose-aware comparison ghosts.
 3. Ask Frank for his new comments and exported `keeper-scale-choices.json`, if
    he has adjusted character sizes. Per-animation 70%–130% proposals save in
    his browser and export as JSON, but they do not alter production art. **The
@@ -35,6 +35,12 @@ not a production change; ingest its exported percentage before rebuilding art.
 Flying and swimming review clips align the bottom of their first-frame figure
 to the red floor line. Pressing global Pause resets every card to frame 1 of its
 action, even when a route or onion-skin mode is selected.
+Seated cards automatically use the canonical direct-front or side sitting
+endpoint as their ghost; other cards use the standing reference. Each card can
+override the ghost reference, rotate it, reset it, place it alongside on a wider
+stage and reduce only the reviewed animation's opacity. A canonical rear-sitting
+ghost does not yet exist, so rear cases must be judged with an explicitly chosen
+reference rather than being treated as an automatic match.
 
 The exact human-readable clip inventory is in `docs/KEEPER_ANIMATIONS.md`.
 The machine-readable runtime inventory is `public/sprites/manifest.json`.

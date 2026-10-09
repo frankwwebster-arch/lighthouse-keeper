@@ -537,6 +537,11 @@ def publish(assets: list[dict]) -> None:
         "canonicalAnatomy": CONTRACT["canonicalAnatomy"],
         "counts": payload["counts"],
         "originalReference": review_clip(reviewed_by_name[ORIGINAL_KEEPER]),
+        "ghostReferences": {
+            "standingSide": review_clip(reviewed_by_name[ORIGINAL_KEEPER]),
+            "sittingSide": review_clip(reviewed_by_name["keeper_sit_side"]),
+            "sittingFront": review_clip(reviewed_by_name["keeper_sit_front"]),
+        },
         "assets": review_assets,
     }
     (OUT / "review.html").write_text(template.replace("__KEEPER_REVIEW_DATA__", json.dumps(review_payload, separators=(",", ":"))))
@@ -567,7 +572,7 @@ def publish(assets: list[dict]) -> None:
         "",
         "## Interactive comparison",
         "",
-        "Open [the sizing and transition review](review.html) to see a dedicated untouched `keeper_walk` scale-authority panel followed by all 152 accepted animations in one filename-ordered gallery, with no search or filters required. In upright standard-cap poses, the gold badge crossing the blue skull-top guide is a calibrated visual proxy; use anatomical landmarks for tilted, bent, seated, crouched, horizontal, bare-headed or alternate-headwear poses. The display-size slider magnifies every stage equally from 1× to 6× without changing the art or its relative scale. Each animation also has a separate 70%–130% character-size proposal slider, anchored at the declared contact while the reference, rulers, ghost, approach walk and bridges remain at 100%. Flying and swimming clips place the bottom of the first-frame figure on the red floor line so their size is easier to compare. Pausing resets every card to its action's first frame. Character-size choices save in the browser and export as `keeper-scale-choices.json`; they do not alter production art automatically. The page can also prepend the matching same-outfit walk, insert known bridge clips, or freeze the exact walk-to-action seam with onion skin. Every card prints its runtime PNG and authored source-strip filename.",
+        "Open [the sizing and transition review](review.html) to see a dedicated untouched `keeper_walk` scale-authority panel followed by all 152 accepted animations in one filename-ordered gallery, with no search or filters required. In upright standard-cap poses, the gold badge crossing the blue skull-top guide is a calibrated visual proxy; use anatomical landmarks for tilted, bent, seated, crouched, horizontal, bare-headed or alternate-headwear poses. The display-size slider magnifies every stage equally from 1× to 6× without changing the art or its relative scale. Each animation also has a separate 70%–130% character-size proposal slider, anchored at the declared contact while the reference, rulers, ghost, approach walk and bridges remain at 100%. Comparison ghosts automatically use the canonical front or side sitting endpoint for seated poses and the standing walk reference otherwise. Per-card controls can override that reference, rotate and reset the ghost, move it alongside on a wider stage, and fade only the reviewed animation. There is no canonical rear-sitting ghost yet, so rear cases remain explicitly selectable rather than being presented as a proven match. Flying and swimming clips place the bottom of the first-frame figure on the red floor line so their size is easier to compare. Pausing resets every card to its action's first frame. Character-size choices save in the browser and export as `keeper-scale-choices.json`; comparison controls are visual aids and do not alter production art. The page can also prepend the matching same-outfit walk, insert known bridge clips, or freeze the exact walk-to-action seam with onion skin. Every card prints its runtime PNG and authored source-strip filename.",
         "",
         "## Corrected sheets",
         "",

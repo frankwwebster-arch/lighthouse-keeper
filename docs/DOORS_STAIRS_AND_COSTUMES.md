@@ -189,7 +189,7 @@ Delivered in `docs/keeper-scale-audit/review.html`:
 - A dedicated untouched `keeper_walk` scale-authority panel, followed by all
   152 accepted clips at one unchanged relative world scale on a shared 96 × 96
   stage, with floor, skull, shoulder, hip and seat guide lines and an optional
-  original-keeper ghost. The 1×–6× display-size slider magnifies every stage
+  pose-aware comparison ghosts. The 1×–6× display-size slider magnifies every stage
   equally without changing the source art or its relative scale. For upright
   standard-cap poses, the gold badge on the blue skull line is a calibrated
   proxy only; changed posture, head angle and headwear need anatomy checks.
@@ -199,12 +199,15 @@ Delivered in `docs/keeper-scale-audit/review.html`:
   JSON for later source-art rebuilding; the viewer never edits sprites itself.
 - Flying and swimming cards align their first-frame figure bottom to the red
   floor line. Global Pause resets every card to frame 1 of its action.
+- Seated cards automatically use the canonical front/side sitting endpoint.
+  Per-card controls select, rotate, reset or move the ghost alongside and fade
+  the reviewed animation. Rear sitting still has no canonical neutral reference.
 - Action-only, raw matching-outfit walk seams and routes containing the known
   turn/sit/bed bridges.
 - A seam-freeze onion skin of the final approach frame and first action frame.
 - One filename-ordered gallery showing all 152 clips without search or filters;
   every card names its runtime PNG and source strip. Global controls pause or
-  play the whole gallery and apply or remove the original-keeper ghost from all
+  play the whole gallery and apply or remove pose-aware comparison ghosts from all
   clips together. The summary still counts the 33 missing facing/posture
   bridges, 21 states without a walking family, 3 special water/air entries and
   5 bridge clips.
