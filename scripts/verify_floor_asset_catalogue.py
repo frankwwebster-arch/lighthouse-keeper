@@ -587,6 +587,8 @@ for token in (
     'Pause every animation', 'Ghost original on every animation',
     'Display size (review only)', 'id="reference"', 'dedicated untouched reference',
     'gold badge crosses the blue skull-top guide',
+    'Character size', 'Export my character sizes', 'keeper-scale-choices.json',
+    "STORAGE_KEY='lighthouse-keeper-scale-choices-v1'",
     'runtime: ${asset.name}.png', 'source: ${basename(asset.source)}',
     'animations, all shown', 'function buildGallery()',
 ):

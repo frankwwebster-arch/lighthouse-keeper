@@ -13,10 +13,11 @@ Codex task should be able to continue from here without relying on the old chat.
    its runtime and source filename. The display-size slider magnifies every
    stage equally from 1× to 6× without changing the art; the other global
    controls pause/play everything and apply the original-keeper ghost.
-3. Ask Frank for his new comments, or ingest the file/export in which he has
-   recorded them. **The sizing review page is currently display-only. It does
-   not save comments.** Do not assume comments seen only in Frank's browser
-   have entered the repository.
+3. Ask Frank for his new comments and exported `keeper-scale-choices.json`, if
+   he has adjusted character sizes. Per-animation 70%–130% proposals save in
+   his browser and export as JSON, but they do not alter production art. **The
+   page still does not save written comments.** Do not assume comments seen
+   only in Frank's browser have entered the repository.
 4. Record every new comment by exact `keeper_*` filename before changing art.
    Triage it as `keep`, `fix`, `rebuild`, `delete`, or `decision needed`, and
    distinguish an art fault from a missing transition or missing object.
@@ -25,6 +26,12 @@ Codex task should be able to continue from here without relying on the old chat.
    canvas, prop, costume or object.
 6. Rebuild, publish and rerun the complete all-sheet audit after every keeper
    art pass. It must finish with zero failures.
+
+The per-card character-size slider scales only the reviewed action around its
+declared feet/seat/contact anchor. The untouched reference, rulers, original
+ghost, matching walk and bridge clips remain at 100%, so Frank can judge the
+proposed action scale against fixed evidence. An amber card is a saved proposal,
+not a production change; ingest its exported percentage before rebuilding art.
 
 The exact human-readable clip inventory is in `docs/KEEPER_ANIMATIONS.md`.
 The machine-readable runtime inventory is `public/sprites/manifest.json`.

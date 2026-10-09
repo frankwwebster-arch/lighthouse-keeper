@@ -239,9 +239,13 @@ shared controls pause or play every animation at once, overlay the original
 keeper on every card at once, and draw the shared
 skull/shoulder/hip/seat/floor rulers. A 1×–6× display-size slider magnifies all
 stages equally and never changes source or relative sprite scale. The page can
-also play the matching same-outfit walk immediately before an action. The raw
-seam, known-bridge and onion-skin modes make transition problems visible
-without changing the underlying sprite scale.
+also resize an individual reviewed action from 70% to 130% around its fixed
+contact anchor. The reference, ruler, ghost, approach walk and bridge remain at
+100%, adjusted cards turn amber, and choices persist in the browser until reset.
+Export produces `keeper-scale-choices.json` for an authoring pass; it never
+silently changes production sprites. The page can also play the matching
+same-outfit walk immediately before an action. The raw seam, known-bridge and
+onion-skin modes make transition problems visible.
 
 The sad, hungry, bored and cross reactions share one enforced upright scale:
 their visible height is 38 logical pixels (152 pixels in the density-4 source)
