@@ -2268,26 +2268,26 @@
  },
  "keeper_ride_bike_front": {
   "file": "keeper_ride_bike_front.png",
-  "w": 40,
-  "h": 40,
+  "w": 48,
+  "h": 48,
   "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
-   20,
-   40
+   24,
+   48
   ],
   "seatPoint": [
-   20,
-   27
+   24,
+   35
   ],
   "handUsePoint": [
-   20,
-   19
+   24,
+   27
   ],
   "pedalPoint": [
-   20,
-   34
+   24,
+   42
   ],
   "outfit": "old-school-workout-kit",
   "loop": true,
@@ -2998,13 +2998,13 @@
  "keeper_tarzan_walk_back": {
   "file": "keeper_tarzan_walk_back.png",
   "w": 32,
-  "h": 48,
+  "h": 40,
   "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
    16,
-   48
+   40
   ],
   "movementVector": [
    0,
@@ -3019,13 +3019,13 @@
  "keeper_tarzan_walk_front": {
   "file": "keeper_tarzan_walk_front.png",
   "w": 32,
-  "h": 48,
+  "h": 40,
   "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
    16,
-   48
+   40
   ],
   "movementVector": [
    0,
@@ -3040,13 +3040,13 @@
  "keeper_tarzan_walk_side": {
   "file": "keeper_tarzan_walk_side.png",
   "w": 32,
-  "h": 48,
+  "h": 40,
   "frames": 8,
   "fps": 8,
   "density": 4,
   "anchor": [
    16,
-   48
+   40
   ],
   "movementVector": [
    1,

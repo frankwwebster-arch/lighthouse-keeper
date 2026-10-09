@@ -41,6 +41,14 @@ Subsequent review correction: `keeper_spiral_stairs_down` frame 4 had an
 erroneous third hand behind the keeper's hip. The extra hand was removed at the
 source while retaining the two legitimate arms and the existing descent cycle.
 
+Further scale/anatomy corrections: all three bare-headed Tarzan walks retain
+their measured canonical body but now use the standard 32 × 40 actor canvas
+rather than misleading 48 px headwear clearance. `keeper_ride_bike_front` was
+genuinely undersized and is now canonical on a 48 × 48 interaction canvas,
+with unchanged floor-relative bike contacts. `keeper_carry_shopping` was
+redrawn so every frame has exactly two hands, one attached to each bag-carrying
+arm.
+
 ## Removed from the public art-review set
 
 The modular front/back limb, torso and head layers, `keeper_reference`, and the

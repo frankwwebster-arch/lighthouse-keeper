@@ -701,7 +701,7 @@ ADDITIONAL_CLIPS = [
     ("keeper_anti_gravity", "keeper-anti-gravity-generated-source.png", 48, 48, dict(anchor_point=[24, 24], facing="front", interaction="anti-gravity-float")),
     ("keeper_machete_side", "keeper-machete-side-generated-source.png", 48, 40, dict(hand_use_point=[42, 28], facing="right", interaction="chop-plants", mirror_safe=True, mirrors_for="left")),
     ("keeper_drink_pint", "keeper-drink-pint-generated-source.png", 40, 40, dict(seat_point=[20, 29], hand_use_point=[25, 16], facing="front-right", interaction="drink-pint", mirror_safe=True, mirrors_for="front-left")),
-    ("keeper_ride_bike_front", "keeper-bike-front-generated-source.png", 40, 40, dict(seat_point=[20, 27], hand_use_point=[20, 19], pedal_point=[20, 34], outfit="old-school-workout-kit", facing="front", interaction="use-stationary-exercise-bike")),
+    ("keeper_ride_bike_front", "keeper-bike-front-generated-source.png", 48, 48, dict(seat_point=[24, 35], hand_use_point=[24, 27], pedal_point=[24, 42], outfit="old-school-workout-kit", facing="front", interaction="use-stationary-exercise-bike")),
     ("keeper_lift_button_front", "keeper-lift-button-front-generated-source.png", 32, 40, dict(hand_use_point=[27, 17], facing="front", interaction="press-lift-button", mirror_safe=True, mirrors_for="front-left-hand")),
     ("keeper_spiral_stairs", "keeper-spiral-stairs-generated-source.png", 40, 48, dict(facing="three-quarter", interaction="climb-spiral-stairs")),
     ("keeper_spiral_stairs_up", "keeper-spiral-stairs-generated-source.png", 40, 48, dict(movement_vector=[0, -1], facing="rotating-right-to-rear", interaction="spiral-stairs-up")),
@@ -758,6 +758,7 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
     anatomy_scale = {
         "keeper_bath_wash": 0.90,
         "keeper_hot_tub": 0.65,
+        "keeper_ride_bike_front": 0.965,
     }.get(clip_name, costume_family_scale if costume_family_scale is not None else (0.90 if "seat_point" in metadata else 1.0))
     if clip_name in {"keeper_search_boxes", "keeper_collect_eggs_back"}:
         # Both actions are object-specific uses of the canonical low rear work
@@ -790,6 +791,11 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
             frames = generated_frames(source_name, frame_count, logical_width=logical_width, logical_height=logical_height, force_equal_cells=True, scale_multiplier=anatomy_scale)
     if clip_name in {"keeper_bath_wash", "keeper_hot_tub"}:
         frames = [remove_small_alpha_components(frame, min_pixels=80) for frame in frames]
+    if clip_name.startswith("keeper_tarzan_walk_"):
+        # Tarzan is bare-headed. Preserve his already-canonical skull-to-sole
+        # scale but remove the 8 px of logical headwear clearance inherited by
+        # the other costume families.
+        frames = [frame.crop((0, 8 * D, 32 * D, 48 * D)) for frame in frames]
     if clip_name == "keeper_put_record":
         # The source's two middle poses touch by a few pixels.  The usable
         # figure begins well inside the cell; clear only that neighbour fringe.

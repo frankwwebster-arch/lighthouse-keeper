@@ -124,7 +124,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Float in anti-gravity | `keeper_anti_gravity` | centred 48 × 48 loop; room applies drift/circling translation |
 | Chop plants | `keeper_machete_side` | right; mirror left; machete included, plants separate |
 | Drink handled pint | `keeper_drink_pint` | seated front-right; mirror front-left; tankard included |
-| Use stationary exercise bike | `keeper_ride_bike_front` | direct front; old-school workout kit; actor only; align separate bike to hand, seat and pedal points |
+| Use stationary exercise bike | `keeper_ride_bike_front` | direct front; 48 × 48; old-school workout kit; actor only; align separate bike to hand `(24,27)`, seat `(24,35)` and pedal `(24,42)` |
 | Press lift button | `keeper_lift_button_front` | front, right-hand reach; mirror to swap hand |
 | Spiral stairs up | `keeper_spiral_stairs_up` | right three-quarter to rear curved ascent; staircase/rail separate |
 | Spiral stairs down | `keeper_spiral_stairs_down` | rear to front-right curved descent; staircase/rail separate |
@@ -148,7 +148,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Walk as knight | `keeper_knight_walk_side/back/front` | side mirrors left; three-view canonical movement |
 | Walk as spaceman | `keeper_spaceman_walk_side/back/front` | side mirrors left; three-view canonical movement |
 | Walk as pirate captain | `keeper_pirate_walk_side/back/front` | side mirrors left; three-view canonical movement |
-| Walk as Tarzan | `keeper_tarzan_walk_side/back/front` | family-friendly tunic; side mirrors left; three-view movement |
+| Walk as Tarzan | `keeper_tarzan_walk_side/back/front` | family-friendly tunic; bare-headed standard 32 × 40 canvas; side mirrors left; three-view movement |
 | Walk in Halloween costume | `keeper_halloween_walk_side/back/front` | friendly face-visible vampire; side mirrors left |
 | Walk as mechanic | `keeper_mechanic_walk_side/back/front` | side mirrors left; three-view canonical movement |
 | Fix car or boat | `keeper_mechanic_fix` | right; mirror left; spanner included, vehicle/engine separate |

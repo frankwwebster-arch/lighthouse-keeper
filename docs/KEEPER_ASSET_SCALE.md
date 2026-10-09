@@ -69,9 +69,9 @@ downward. A side-facing point at X mirrors with `mirroredX = canvasWidth - X`.
 | Watering target | 9 px | extended side canvas `(35,31)` |
 | Barometer / instrument control | 23 px | side `(27,17)`; rear `(26,17)` |
 | Lift button | 23 px | front `(27,17)` |
-| Exercise-bike handlebar centre | 21 px | front `(20,19)` on 40 × 40 canvas |
-| Exercise-bike seat | 13 px | front `(20,27)` on 40 × 40 canvas |
-| Exercise-bike pedal centre | 6 px | front `(20,34)` on 40 × 40 canvas |
+| Exercise-bike handlebar centre | 21 px | front `(24,27)` on 48 × 48 canvas |
+| Exercise-bike seat | 13 px | front `(24,35)` on 48 × 48 canvas |
+| Exercise-bike pedal centre | 6 px | front `(24,42)` on 48 × 48 canvas |
 | Toilet bowl vomit target | 5 px | rear extended canvas `(32,35)` |
 | Shower-door handle | 22 px | rear-right extended canvas `(35,18)` |
 | Hot-drink worktop / mug base | 12 px | right extended canvas `(40,28)` |
@@ -114,8 +114,9 @@ The shared pivot landmarks are neck `(16,11)`, shoulders `(10,15)` and
 landmarks. The striped swimming costume, parachute harness, light powder-blue pyjamas and yellow sou'wester oilskins
 therefore change clothing only, never body proportions. Knight, spaceman,
 pirate, Tarzan, Halloween and mechanic sets use the same three-view movement
-contract: side/right (mirror for left), direct rear and direct front, all on a
-32 × 48 canvas with an unchanged body scale.
+contract: side/right (mirror for left), direct rear and direct front. Headwear
+costumes use 32 × 48; bare-headed Tarzan uses the standard 32 × 40 canvas. The
+body scale is unchanged in either case.
 
 Fitness clips use the `old-school-workout-kit` outfit: blue terrycloth
 headband, white sleeveless vest, blue shorts, white socks and blue-and-white
@@ -127,10 +128,11 @@ Rear weightlifting uses a 48 × 56 overhead-action canvas anchored at `(24,56)`.
 The extra height belongs to raised arms and the barbell; it must never be
 obtained by shrinking the keeper's body below the canonical reference scale.
 
-The stationary exercise-bike loop is actor-only in the same workout kit. Build
-the bike as a separate object and align its handlebar centre, saddle and crank
-to `(20,19)`, `(20,27)` and `(20,34)` respectively. The keeper remains fixed in
-place; only his knees, feet and small exertion bob animate.
+The stationary exercise-bike loop is actor-only in the same workout kit. Its
+48 × 48 canvas preserves the canonical head unit while allowing the bent legs.
+Build the bike as a separate object and align its handlebar centre, saddle and
+crank to `(24,27)`, `(24,35)` and `(24,42)` respectively. The keeper remains
+fixed in place; only his knees, feet and small exertion bob animate.
 
 Directional underwater movement reads `movementVector` from the manifest:
 right `(1,0)`, mirrored left `(-1,0)`, up `(0,-1)`, and down `(0,1)`. Water,

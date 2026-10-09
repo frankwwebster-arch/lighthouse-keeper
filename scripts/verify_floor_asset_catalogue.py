@@ -288,8 +288,14 @@ for name in ['keeper_trampoline_front','keeper_lift_weights_back','keeper_pressu
 exercise_bike=manifest['keeper_ride_bike_front']
 assert exercise_bike['outfit']=='old-school-workout-kit'
 assert exercise_bike['interaction']=='use-stationary-exercise-bike'
-assert exercise_bike['handUsePoint']==[20,19] and exercise_bike['seatPoint']==[20,27]
-assert exercise_bike['pedalPoint']==[20,34]
+assert exercise_bike['w']==48 and exercise_bike['h']==48 and exercise_bike['anchor']==[24,48]
+assert exercise_bike['handUsePoint']==[24,27] and exercise_bike['seatPoint']==[24,35]
+assert exercise_bike['pedalPoint']==[24,42]
+exercise_bike_image=Image.open(root/'public/sprites'/exercise_bike['file']).convert('RGBA')
+for frame_index in range(exercise_bike['frames']):
+    frame=exercise_bike_image.crop((frame_index*48*4,0,(frame_index+1)*48*4,48*4))
+    visible=frame.getchannel('A').getbbox()
+    assert visible is not None and visible[3]-visible[1]>=43*4,(frame_index,visible)
 assert manifest['keeper_lift_weights_back']['w']==48 and manifest['keeper_lift_weights_back']['h']==56
 assert manifest['keeper_lift_weights_back']['anchor']==[24,56] and manifest['keeper_lift_weights_back']['handUsePoint']==[24,5]
 pressups=Image.open(root/'public/sprites'/manifest['keeper_pressups_side']['file']).convert('RGBA')
@@ -318,11 +324,15 @@ for name in ['keeper_bath_enter','keeper_bath_exit','keeper_shower_enter','keepe
     assert manifest[name]['outfit']=='towel-privacy' and manifest[name]['loop'] is False
 for name in ['keeper_bath_wash','keeper_shower_wash']:
     assert manifest[name]['outfit']=='mosaic-privacy'
-for outfit in ['knight','spaceman','pirate','tarzan','halloween','mechanic']:
+for outfit in ['knight','spaceman','pirate','halloween','mechanic']:
     for view in ['side','back','front']:
         clip=manifest[f'keeper_{outfit}_walk_{view}']
         assert clip['outfit']==outfit and clip['h']==48 and clip['frames']==8
     assert manifest[f'keeper_{outfit}_walk_side']['mirrorSafe'] is True
+for view in ['side','back','front']:
+    tarzan=manifest[f'keeper_tarzan_walk_{view}']
+    assert tarzan['outfit']=='tarzan' and tarzan['w']==32 and tarzan['h']==40 and tarzan['anchor']==[16,40]
+assert manifest['keeper_tarzan_walk_side']['mirrorSafe'] is True
 asset_contract=json.loads((root/'data/keeper_asset_contract.json').read_text())
 assert asset_contract['version']==3 and asset_contract['status']=='authoritative' and asset_contract['units']=='logical-pixels'
 assert asset_contract['derivedObjectDataset']=='data/keeper_object_dimensions.json'
@@ -346,7 +356,7 @@ assert asset_contract['interactionProfiles']['carryCakeRight']['handUsePoint']==
 assert asset_contract['interactionProfiles']['carryMealRight']['handUsePoint']==[34,20]
 assert asset_contract['interactionProfiles']['placeCakeRight']['handUsePoint']==[39,21]
 assert asset_contract['interactionProfiles']['mealTableRight']['handUsePoint']==[39,21]
-assert asset_contract['interactionProfiles']['exerciseBikeFront']['pedalPoint']==[20,34]
+assert asset_contract['interactionProfiles']['exerciseBikeFront']['pedalPoint']==[24,42]
 assert asset_contract['interactionProfiles']['vomitToiletBack']['bowlPoint']==[32,35]
 assert asset_contract['interactionProfiles']['showerDoorBathrobeRight']['handUsePoint']==[35,18]
 assert asset_contract['interactionProfiles']['showerEntryBathrobe']['thresholdPoint']==[20,40]

@@ -53,6 +53,8 @@ CORRECTED = {
     "keeper_scuba_swim_down": "redrawn from the approved front swim anatomy with coherent scuba equipment",
     "keeper_swim_costume_horizontal": "enlarged on an expanded canvas so horizontal anatomy matches the upright keeper",
     "keeper_spiral_stairs_down": "frame 4 redrawn to remove an erroneous third hand while preserving the descent cycle",
+    "keeper_ride_bike_front": "enlarged from its undersized head unit on a 48 px interaction canvas",
+    "keeper_carry_shopping": "hand anatomy redrawn so each frame has exactly two hands attached to the two bag-carrying arms",
     "keeper_sit_front": "redrawn and width-normalised against canonical front body",
     "keeper_party_turn_back": "redrawn as a coherent front-to-rear turn",
     "keeper_party_idle": "redrawn from the corrected party identity",
@@ -73,9 +75,12 @@ CORRECTED = {
     "keeper_souwester_walk_back": "costume headwear excluded; skull, shoulder and sole landmarks normalised",
 }
 
-for _outfit in ("knight", "spaceman", "pirate", "tarzan", "halloween", "mechanic"):
+for _outfit in ("knight", "spaceman", "pirate", "halloween", "mechanic"):
     for _view in ("side", "front", "back"):
         CORRECTED[f"keeper_{_outfit}_walk_{_view}"] = "costume-specific headwear envelope excluded from skull-to-sole scale"
+
+for _view in ("side", "front", "back"):
+    CORRECTED[f"keeper_tarzan_walk_{_view}"] = "canonical bare skull-to-sole scale retained on the standard 40 px actor canvas"
 
 
 def asset_name(path: Path) -> str:
