@@ -10,8 +10,12 @@ Codex task should be able to continue from here without relying on the old chat.
 2. Open `docs/keeper-scale-audit/review.html`. A dedicated panel first shows
    the untouched `keeper_walk` scale authority, followed by all 152 accepted
    clips at one unchanged relative scale in filename order. Every card prints
-   its runtime and source filename. The display-size slider magnifies every
-   stage equally from 1× to 6× without changing the art; the other global
+   its runtime and source filename. Switch View to `One animation at a time`
+   for a much larger card, progress/filename status, Previous/Next buttons and
+   Left/Right arrow-key navigation. A compact reference stays pinned alongside;
+   choose standing or the single sitting canon, whose endpoint has the exact
+   same measured 9.75 × 6.5 face proxy as the standing reference frame. The display-size slider magnifies the reviewed stage from
+   1× to 12× without changing the art; the other global
    controls pause/play everything and apply pose-aware comparison ghosts.
 3. Ask Frank for his new comments and exported `keeper-scale-choices.json`.
    Each card's Save button persists independent width/height, rotation, ghost

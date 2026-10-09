@@ -237,8 +237,13 @@ replace anatomical landmarks for altered posture, head angle or headwear.
 Every card prints both its runtime PNG and authored source-strip filename. The
 shared controls pause or play every animation at once, apply pose-aware
 comparison ghosts to every card, and draw the shared
-skull/shoulder/hip/seat/floor rulers. A 1×–6× display-size slider magnifies all
-stages equally and never changes source or relative sprite scale. The page can
+skull/shoulder/hip/seat/floor rulers. The focused view steps through animations
+one at a time on a much larger card using Previous/Next or Left/Right arrows;
+switching views preserves in-progress card state. A compact canonical reference
+stays pinned beside it and can show standing or one sitting canon. The sitting
+endpoint's 9.75 × 6.5 face proxy exactly matches the standing reference frame. A
+1×–12× display-size slider magnifies gallery stages or the focused reviewed
+stage and never changes source or relative sprite scale. The page can
 independently stretch an individual reviewed action from 50% to 150% in width
 and height around its fixed contact anchor. The reference, ruler, ghost,
 approach walk and bridge remain at 100%; earlier uniform choices migrate to

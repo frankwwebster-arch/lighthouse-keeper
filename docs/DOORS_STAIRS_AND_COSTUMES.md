@@ -188,9 +188,14 @@ Delivered in `docs/keeper-scale-audit/review.html`:
 
 - A dedicated untouched `keeper_walk` scale-authority panel, followed by all
   152 accepted clips at one unchanged relative world scale on a shared 96 × 96
-  stage, with floor, skull, shoulder, hip and seat guide lines and an optional
-  pose-aware comparison ghosts. The 1×–6× display-size slider magnifies every stage
-  equally without changing the source art or its relative scale. For upright
+  stage, with floor, skull, shoulder, hip and seat guide lines and optional
+  pose-aware comparison ghosts. A focused view steps through one large card at
+  a time with Previous/Next controls, progress and arrow-key navigation while
+  retaining card edits. A pinned compact reference can show standing or one
+  sitting canon; its endpoint's measured 9.75 × 6.5 face proxy exactly matches
+  the standing reference frame. The
+  1×–12× display-size slider magnifies the reviewed stage without changing the
+  source art or its relative scale. For upright
   standard-cap poses, the gold badge on the blue skull line is a calibrated
   proxy only; changed posture, head angle and headwear need anatomy checks.
 - Per-animation 50%–150% width and height sliders reshape the action around its

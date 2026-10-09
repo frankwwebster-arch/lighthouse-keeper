@@ -559,6 +559,11 @@ assert scale_audit['counts']['allFramesMeasured']==1210
 assert scale_audit['counts']['comparisonFailures']==0
 assert len(scale_audit['assets'])==170
 assert all('originalComparison' in asset for asset in scale_audit['assets'])
+scale_assets_by_name={asset['name']:asset for asset in scale_audit['assets']}
+standing_face=scale_assets_by_name['keeper_walk']['frameMeasurements'][0]['faceProxy']
+sitting_face=scale_assets_by_name['keeper_sit_side']['frameMeasurements'][-1]['faceProxy']
+assert (standing_face['width'],standing_face['height'])==(9.75,6.5)
+assert (sitting_face['width'],sitting_face['height'])==(standing_face['width'],standing_face['height'])
 assert all(
     asset['originalComparison']['verdict'] in {'measured-and-visual-pass','fixed-scale-visual-pass'}
     for asset in scale_audit['assets']
@@ -586,6 +591,10 @@ for token in (
     'measured-and-visual-pass', 'torso difference',
     'Pause every animation', 'Comparison ghosts on',
     'Display size (review only)', 'id="reference"', 'dedicated untouched reference',
+    'One animation at a time', 'id="detailNav"', 'Previous animation',
+    'Next animation', 'max="12"', 'function updateDetailView', 'function stepDetail',
+    'Canonical reference', '<option value="sittingSide">Sitting</option>',
+    'same measured 9.75 × 6.5 face proxy', 'function canonicalReference',
     'gold badge crosses the blue skull-top guide',
     'Character width', 'Character height', 'Export my character sizes', 'keeper-scale-choices.json',
     "STORAGE_KEY='lighthouse-keeper-scale-choices-v1'",
