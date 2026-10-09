@@ -127,6 +127,8 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
   hull, seat, rowlocks and water remain separate.
 - `keeper-drive-speedboat-generated-source.png` — eight seated helm poses with
   hands held at one invisible wheel point; boat and dashboard remain separate.
+  Its clip metadata is intentionally 4fps, giving the subtle helm motion a
+  two-second loop instead of the original one-second 8fps loop.
 - `keeper-operate-outboard-generated-source.png` — eight rear-three-quarter
   tiller-control poses; motor, boat, water and wake remain separate.
 - `keeper-watch-tv-generated-source.png` — eight seated rear-three-quarter

@@ -59,7 +59,7 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Row boat | `keeper_row_boat` | seated; two oars included; hull/water separate |
 | Climb into boat | `keeper_boat_enter` | right; fixed gunwale `(39,23)` and bench `(36,35)`; hull/dock separate; mirror left |
 | Climb out of boat | `keeper_boat_exit` | front-right; independent weight transfer; same gunwale/bench; mirror left |
-| Drive speedboat | `keeper_drive_speedboat` | seated at invisible helm; mirror when layout permits |
+| Drive speedboat | `keeper_drive_speedboat` | seated at invisible helm; mirror when layout permits; intentionally slow 4fps helm cycle |
 | Operate outboard | `keeper_operate_outboard` | rear three-quarter; fixed tiller point; mirror left |
 | Watch TV | `keeper_watch_tv` | rear three-quarter right; mirror left; screen stays visible |
 | Weld | `keeper_weld` | right; mirror left; goggles, gloves and torch included; workpiece separate |

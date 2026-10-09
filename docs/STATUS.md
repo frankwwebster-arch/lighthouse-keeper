@@ -37,4 +37,4 @@ Upgrades: almost every object has Basic, Middle and Top tiers, listed in `data/u
 
 ## Verification and delivery
 
-The current production asset delivery passes 114 tests, TypeScript checking, a production build, sprite export, catalogue verification and the complete 1,210-frame scale audit. All 170 keeper exports have exact source dimensions and hard alpha; runtime rendering remains nearest-neighbour at 4× logical size. The repository continues to deploy from `main` through the existing Vercel workflow.
+The current production asset delivery passes 114 tests, TypeScript checking, a production build, sprite export, catalogue verification and the complete 1,210-frame scale audit. All 170 keeper exports have exact source dimensions and hard alpha; runtime rendering remains nearest-neighbour at 4× logical size. Animation FPS is clip-specific; `keeper_drive_speedboat` now uses a deliberately slow 4fps two-second helm loop while other clips retain their own timings. The repository continues to deploy from `main` through the existing Vercel workflow.

@@ -516,6 +516,10 @@ art in `docs/KEEPER_ANIMATIONS.md`; “delivered” never waives transition revi
   hat, ending fully head-first with arms extended.
 - Matching scuba versions; horizontal/up/down swimming in swimsuit and scuba.
 - Row boat, drive speedboat, operate outboard motor, climb into/out of boat.
+
+`keeper_drive_speedboat` is deliberately authored at 4fps (eight frames over a
+two-second loop). Runtime animation speed is clip-specific manifest metadata;
+the shared sprite renderer reads it independently for each animation.
 - Fishing standing and seated, including reeling in a fish.
 - Anti-gravity flight: on his front in goggles, bobbing/circling and performing
   a back flip, with no parachute.

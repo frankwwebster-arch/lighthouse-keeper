@@ -7828,7 +7828,7 @@
       "name": "keeper_drive_speedboat",
       "source": "art/raw/keeper-first-batch/keeper_drive_speedboat_f8.png",
       "frames": 8,
-      "fps": 8,
+      "fps": 4,
       "loop": true,
       "canvas": [
         32,

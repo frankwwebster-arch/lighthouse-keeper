@@ -65,7 +65,7 @@ Initial clips:
 | `pick_fruit` | side | 8 · 8 | no | high harvest `(25,14)`; mirror left |
 | `carry_shopping` | side | 8 · 10 | yes | two-bag walk; mirror left |
 | `row_boat` | side | 8 · 8 | yes | 40 × 40; seat `(20,29)`; oar hands `(30,20)` |
-| `drive_speedboat` | side | 8 · 8 | yes | seat `(16,29)`; helm hands `(25,20)` |
+| `drive_speedboat` | side | 8 · 4 | yes | deliberately slow 2-second helm cycle; seat `(16,29)`; helm hands `(25,20)` |
 | `operate_outboard` | rear ¾ | 8 · 8 | yes | tiller hand `(4,21)`; mirror left |
 | `watch_tv` | rear ¾ | 8 · 6 | yes | seat `(16,29)`; screen target `(40,14)`; mirror left |
 | `weld` | side | 8 · 8 | yes | torch contact `(27,22)`; goggles/gloves included; workpiece separate |
