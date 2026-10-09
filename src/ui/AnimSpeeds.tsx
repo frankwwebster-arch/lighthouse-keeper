@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { FPS, fpsExport, fpsFor, withFps, type FpsOverrides } from '../game/animFps'
+import { FPS, fpsExport, fpsFor, isTweaked, pruneFps, withFps, type FpsOverrides } from '../game/animFps'
 import { PX, Sprite, useAnimSpeeds, useSprites } from './Sprite'
 
 /**
@@ -28,18 +28,21 @@ export function AnimationSpeeds({ onSave }: { onSave: (fps: FpsOverrides) => voi
   const words = find.trim().toLowerCase().split(/[\s_]+/).filter(Boolean)
   const shown = animated.filter((a) => words.every((w) => a.name.includes(w)))
   const sel = animated.find((a) => a.name === pick)
-  const changed = Object.keys(fps).length
+  // Tweaks the sheets have moved on from no longer count (the sheet's metadata wins).
+  const live = pruneFps(fps, (n) => animated.find((a) => a.name === n)?.drawn)
+  const changed = Object.keys(live).length
 
   const change = (next: FpsOverrides) => {
-    setFps(next)
+    const kept = pruneFps(next, (n) => animated.find((a) => a.name === n)?.drawn)
+    setFps(kept)
     clearTimeout(timer.current)
-    timer.current = setTimeout(() => onSave(next), 400)
+    timer.current = setTimeout(() => onSave(kept), 400)
   }
   const copy = async () => {
-    const text = fpsExport(fps)
+    const text = fpsExport(live)
     try {
       await navigator.clipboard.writeText(text)
-      setCopied('Copied. Paste it to Codex to make these speeds permanent in the art files.')
+      setCopied('Copied. Put these speeds into each sprite sheet’s metadata; once a sheet has the new speed, its tweak here is no longer needed.')
     } catch {
       setCopied(text)
     }
@@ -49,11 +52,11 @@ export function AnimationSpeeds({ onSave }: { onSave: (fps: FpsOverrides) => voi
   const now = sel ? fpsFor(fps, sel.name, sel.drawn) : 0
   return (
     <div className="speeds">
-      <p className="dim">Frames per second for any animation. A change shows straight away in the game, on every device. Most keeper animations are not in the game yet, so pick one to watch it here.</p>
+      <p className="dim">Frames per second for any animation, on top of the speed in its sprite sheet’s metadata. A change shows straight away in the game, on every device. If a sheet’s own speed is changed later, the sheet wins and the tweak here drops away.</p>
       <input type="search" value={find} onChange={(e) => setFind(e.target.value)} placeholder={`Find one of ${animated.length} (e.g. walk, tv, pyjamas)`} />
       <div className="speed-list" role="listbox" aria-label="Animations">
         {shown.map((a) => {
-          const own = fps[a.name] !== undefined
+          const own = isTweaked(fps, a.name, a.drawn)
           return (
             <button key={a.name} role="option" aria-selected={a.name === pick} className={a.name === pick ? 'on' : undefined} onClick={() => { setPick(a.name); setReplay((n) => n + 1) }}>
               <span>{a.name}</span>
@@ -83,14 +86,14 @@ export function AnimationSpeeds({ onSave }: { onSave: (fps: FpsOverrides) => voi
             </div>
             <div className="row">
               <button onClick={() => setReplay((n) => n + 1)}>▶ Play again</button>
-              <button disabled={fps[sel.name] === undefined} onClick={() => change(withFps(fps, sel.name, undefined, sel.drawn))}>Back to {sel.drawn} fps</button>
+              <button disabled={!isTweaked(fps, sel.name, sel.drawn)} onClick={() => change(withFps(fps, sel.name, undefined, sel.drawn))}>Back to {sel.drawn} fps</button>
             </div>
           </div>
         </div>
       )}
       <div className="row">
-        <button disabled={!changed} onClick={copy}>Copy {changed} change{changed === 1 ? '' : 's'} for Codex</button>
-        <button disabled={!changed} onClick={() => { if (confirm('Put every animation back to the speed it was drawn at?')) change({}) }}>Put all back as drawn</button>
+        <button disabled={!changed} onClick={copy}>Copy {changed} change{changed === 1 ? '' : 's'} for the metadata</button>
+        <button disabled={!changed} onClick={() => { if (confirm('Put every animation back to its sprite sheet’s speed?')) change({}) }}>Put all back to the sheets’ speeds</button>
       </div>
       {copied && (copied.startsWith('{') ? <textarea readOnly value={copied} rows={6} onFocus={(e) => e.target.select()} /> : <p className="dim">{copied}</p>)}
     </div>
