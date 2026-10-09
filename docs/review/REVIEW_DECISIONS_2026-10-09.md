@@ -37,6 +37,10 @@ bath-wash and hot-tub figures were rebuilt and measured from their visible head
 and shoulder landmarks. `fx_broken_smoke` is now an irregular curling eight-frame
 effect rather than stacked circular puffs.
 
+Subsequent review correction: `keeper_spiral_stairs_down` frame 4 had an
+erroneous third hand behind the keeper's hip. The extra hand was removed at the
+source while retaining the two legitimate arms and the existing descent cycle.
+
 ## Removed from the public art-review set
 
 The modular front/back limb, torso and head layers, `keeper_reference`, and the

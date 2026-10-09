@@ -31,7 +31,7 @@
     "reviewedAnimationSheets": 149,
     "technicalRejectedSheets": 18,
     "allFramesMeasured": 1186,
-    "correctedSheets": 43
+    "correctedSheets": 44
   },
   "contactSheets": [
     "docs/keeper-scale-audit/keeper-scale-contact-01.png",
@@ -25052,9 +25052,9 @@
       "outfit": "standard",
       "postureClass": "transition",
       "measurementMethod": "articulated landmark chain",
-      "status": "measured-pass",
-      "note": "measured against the canonical anatomy for its pose class",
-      "medianFaceProxyWidth": 11.75,
+      "status": "corrected",
+      "note": "frame 4 redrawn to remove an erroneous third hand while preserving the descent cycle",
+      "medianFaceProxyWidth": 11.25,
       "medianFaceProxyHeight": 7.5,
       "faceProxyCoverage": "8/8",
       "alphaHeightRange": [
@@ -25062,8 +25062,8 @@
         46.0
       ],
       "alphaWidthRange": [
-        24.25,
-        26.25
+        21.5,
+        26.5
       ],
       "bottomClearanceRange": [
         0.5,
@@ -25072,156 +25072,156 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            7.75,
+            7.5,
             3.0,
             32.25,
             47.5
           ],
-          "alphaWidth": 24.5,
+          "alphaWidth": 24.75,
           "alphaHeight": 44.5,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              8.5,
-              29.0,
-              12.75,
-              32.75
+              22.5,
+              10.5,
+              26.75,
+              17.0
             ],
             "width": 4.25,
-            "height": 3.75,
-            "area": 176
+            "height": 6.5,
+            "area": 178
           }
         },
         {
           "alphaBox": [
             7.25,
-            2.75,
+            2.25,
             32.5,
             47.5
           ],
           "alphaWidth": 25.25,
-          "alphaHeight": 44.75,
+          "alphaHeight": 45.25,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
               8.25,
               29.5,
               12.5,
-              33.5
+              33.25
             ],
             "width": 4.25,
-            "height": 4.0,
-            "area": 193
-          }
-        },
-        {
-          "alphaBox": [
-            7.75,
-            1.75,
-            32.25,
-            47.5
-          ],
-          "alphaWidth": 24.5,
-          "alphaHeight": 45.75,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              16.0,
-              9.25,
-              27.75,
-              16.25
-            ],
-            "width": 11.75,
-            "height": 7.0,
-            "area": 361
-          }
-        },
-        {
-          "alphaBox": [
-            7.25,
-            1.75,
-            32.75,
-            47.5
-          ],
-          "alphaWidth": 25.5,
-          "alphaHeight": 45.75,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              17.5,
-              9.5,
-              28.75,
-              17.5
-            ],
-            "width": 11.25,
-            "height": 8.0,
-            "area": 633
-          }
-        },
-        {
-          "alphaBox": [
-            7.75,
-            1.75,
-            32.0,
-            47.5
-          ],
-          "alphaWidth": 24.25,
-          "alphaHeight": 45.75,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              16.0,
-              9.75,
-              27.75,
-              17.25
-            ],
-            "width": 11.75,
-            "height": 7.5,
-            "area": 681
+            "height": 3.75,
+            "area": 195
           }
         },
         {
           "alphaBox": [
             7.5,
-            1.75,
+            1.5,
             32.25,
             47.5
           ],
           "alphaWidth": 24.75,
-          "alphaHeight": 45.75,
+          "alphaHeight": 46.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              21.5,
+              9.25,
+              27.75,
+              16.25
+            ],
+            "width": 6.25,
+            "height": 7.0,
+            "area": 268
+          }
+        },
+        {
+          "alphaBox": [
+            9.25,
+            1.5,
+            30.75,
+            47.5
+          ],
+          "alphaWidth": 21.5,
+          "alphaHeight": 46.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              15.5,
+              9.25,
+              26.5,
+              16.75
+            ],
+            "width": 11.0,
+            "height": 7.5,
+            "area": 638
+          }
+        },
+        {
+          "alphaBox": [
+            7.75,
+            1.5,
+            32.0,
+            47.5
+          ],
+          "alphaWidth": 24.25,
+          "alphaHeight": 46.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
               16.0,
-              9.75,
-              28.0,
-              17.25
+              9.5,
+              27.5,
+              17.0
             ],
-            "width": 12.0,
+            "width": 11.5,
             "height": 7.5,
-            "area": 721
+            "area": 697
+          }
+        },
+        {
+          "alphaBox": [
+            7.5,
+            1.5,
+            32.25,
+            47.5
+          ],
+          "alphaWidth": 24.75,
+          "alphaHeight": 46.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              16.0,
+              9.5,
+              27.75,
+              18.0
+            ],
+            "width": 11.75,
+            "height": 8.5,
+            "area": 736
           }
         },
         {
           "alphaBox": [
             6.75,
-            1.75,
-            33.0,
+            1.5,
+            33.25,
             47.5
           ],
-          "alphaWidth": 26.25,
-          "alphaHeight": 45.75,
+          "alphaWidth": 26.5,
+          "alphaHeight": 46.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              15.75,
-              9.75,
+              15.0,
+              9.5,
               27.5,
-              17.25
+              17.0
             ],
-            "width": 11.75,
+            "width": 12.5,
             "height": 7.5,
-            "area": 710
+            "area": 744
           }
         },
         {
@@ -25238,12 +25238,12 @@
             "box": [
               14.5,
               9.5,
-              27.0,
+              26.75,
               17.25
             ],
-            "width": 12.5,
+            "width": 12.25,
             "height": 7.75,
-            "area": 785
+            "area": 805
           }
         }
       ]

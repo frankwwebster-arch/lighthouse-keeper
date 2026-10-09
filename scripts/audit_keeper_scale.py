@@ -52,6 +52,7 @@ CORRECTED = {
     "keeper_scuba_swim_up": "redrawn from the approved rear swim anatomy with coherent scuba equipment",
     "keeper_scuba_swim_down": "redrawn from the approved front swim anatomy with coherent scuba equipment",
     "keeper_swim_costume_horizontal": "enlarged on an expanded canvas so horizontal anatomy matches the upright keeper",
+    "keeper_spiral_stairs_down": "frame 4 redrawn to remove an erroneous third hand while preserving the descent cycle",
     "keeper_sit_front": "redrawn and width-normalised against canonical front body",
     "keeper_party_turn_back": "redrawn as a coherent front-to-rear turn",
     "keeper_party_idle": "redrawn from the corrected party identity",
