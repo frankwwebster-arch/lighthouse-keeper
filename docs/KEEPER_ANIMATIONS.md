@@ -59,6 +59,11 @@ Folders named `replaced-*` are history only. Never use those in the game.
 | Saw wood | `keeper_saw_wood` | right; mirror left; hand saw included; timber and bench separate |
 | Wave to camera | `keeper_wave_camera` | front-facing one-shot greeting |
 | Yawn | `keeper_yawn` | front three-quarter one-shot sleepy reaction |
+| Sad | `keeper_sad` | front; drooping eyes, downturned mouth, slumped shoulders and eye wipe |
+| Hungry | `keeper_hungry` | front; worried sad face and repeated tummy rub |
+| Bored | `keeper_bored` | front; half-lidded face, loose posture and boot tap |
+| Cross | `keeper_cross` | front; knitted eyebrows, frown, folded arms and clean boot stamp |
+| Vomit into toilet | `keeper_vomit_loo_back` | direct rear one-shot; separate toilet aligns its bowl target to `(32,35)` |
 | Walk in pyjamas | `keeper_pyjamas_walk` | light powder blue with cream piping; right; mirror left |
 | Turn away in pyjamas | `keeper_pyjamas_turn_back` | light powder blue; reverse to face camera |
 | Get into bed | `keeper_get_into_bed` | light powder blue; right-side bed; mirror left; reverse to get out |

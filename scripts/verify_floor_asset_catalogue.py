@@ -7,7 +7,7 @@ root=Path(__file__).resolve().parents[1]
 data=json.loads((root/'docs/floor-asset-catalogue/catalogue.json').read_text())
 spaces=data['spaces']; rows=data['rows']
 assert len(spaces)==71 and len({s['space_id'] for s in spaces})==71
-assert len(rows)==1559
+assert len(rows)==1564
 with (root/'docs/floor-asset-catalogue/catalogue.csv').open(newline='') as f:
     assert len(list(csv.DictReader(f)))==len(rows)
 for space in spaces:
@@ -39,7 +39,7 @@ assert contracts['obj_tv_broken']['frames']==1
 assert contracts['room_lamp']['w']==95
 keeper_dir=root/'art/raw/keeper-first-batch'
 keeper_pngs=sorted(keeper_dir.glob('*.png'))
-assert len(keeper_pngs)==150
+assert len(keeper_pngs)==155
 required_clips={
     'keeper_idle':(4,6), 'keeper_walk':(8,10),
     'keeper_turn_back':(6,8), 'keeper_work_back':(8,8),
@@ -59,6 +59,9 @@ required_clips={
     'keeper_operate_outboard':(8,8), 'keeper_watch_tv':(8,6),
     'keeper_weld':(8,8), 'keeper_saw_wood':(8,8),
     'keeper_wave_camera':(8,8), 'keeper_yawn':(8,8),
+    'keeper_sad':(8,8), 'keeper_hungry':(8,8),
+    'keeper_bored':(8,8), 'keeper_cross':(8,8),
+    'keeper_vomit_loo_back':(8,8),
     'keeper_pyjamas_walk':(8,10), 'keeper_pyjamas_turn_back':(6,8),
     'keeper_get_into_bed':(8,8), 'keeper_pyjamas_snore':(6,4),
     'keeper_swim_costume_horizontal':(8,8), 'keeper_swim_costume_up':(8,8),
@@ -141,6 +144,24 @@ assert manifest['keeper_saw_wood']['w']==40 and manifest['keeper_saw_wood']['anc
 assert manifest['keeper_saw_wood']['handUsePoint']==[35,23] and manifest['keeper_saw_wood']['interaction']=='saw-workpiece'
 assert manifest['keeper_wave_camera']['facing']=='front' and manifest['keeper_wave_camera']['loop'] is False
 assert manifest['keeper_yawn']['interaction']=='emote-yawn' and manifest['keeper_yawn']['loop'] is False
+for name,interaction in [('keeper_sad','emote-sad'),('keeper_hungry','emote-hungry'),('keeper_bored','emote-bored'),('keeper_cross','emote-cross')]:
+    assert manifest[name]['facing']=='front' and manifest[name]['interaction']==interaction
+    strip=Image.open(root/'public/sprites'/manifest[name]['file']).convert('RGBA')
+    heights=[]
+    for frame_index in range(8):
+        visible=strip.crop((frame_index*32*4,0,(frame_index+1)*32*4,40*4)).getchannel('A').getbbox()
+        heights.append(visible[3]-visible[1])
+    assert max(heights)==152 and min(heights)>=150,(name,heights)
+vomit=manifest['keeper_vomit_loo_back']
+assert vomit['w']==40 and vomit['h']==40 and vomit['anchor']==[20,40]
+assert vomit['facing']=='back' and vomit['interaction']=='vomit-into-toilet' and vomit['loop'] is False
+assert vomit['handUsePoint']==[31,27] and vomit['bowlPoint']==[32,35]
+vomit_strip=Image.open(root/'public/sprites'/vomit['file']).convert('RGBA')
+vomit_heights=[]
+for frame_index in range(8):
+    visible=vomit_strip.crop((frame_index*40*4,0,(frame_index+1)*40*4,40*4)).getchannel('A').getbbox()
+    vomit_heights.append(visible[3]-visible[1])
+assert vomit_heights[0]==152 and vomit_heights[-1]==152 and min(vomit_heights)<120,vomit_heights
 assert manifest['keeper_pyjamas_walk']['mirrorSafe'] is True and manifest['keeper_pyjamas_walk']['mirrorsFor']=='left'
 assert manifest['keeper_pyjamas_turn_back']['reverseFor']=='pyjamas_turn_front'
 for name in ['keeper_pyjamas_walk','keeper_pyjamas_turn_back','keeper_get_into_bed','keeper_pyjamas_snore']:
@@ -249,6 +270,7 @@ assert asset_contract['interactionProfiles']['carryCakeRight']['handUsePoint']==
 assert asset_contract['interactionProfiles']['carryMealRight']['handUsePoint']==[34,20]
 assert asset_contract['interactionProfiles']['placeCakeRight']['handUsePoint']==[39,28]
 assert asset_contract['interactionProfiles']['exerciseBikeFront']['pedalPoint']==[20,34]
+assert asset_contract['interactionProfiles']['vomitToiletBack']['bowlPoint']==[32,35]
 assert asset_contract['interactionProfiles']['switchSideRight']['handUsePoint']==[27,17]
 assert asset_contract['interactionProfiles']['switchBackRightHand']['handUsePoint']==[26,17]
 assert asset_contract['interactionProfiles']['drumsFront']['seatPoint']==[16,37]
@@ -296,6 +318,9 @@ previews={
     'keeper-watch-tv-right':(8,160), 'keeper-watch-tv-left':(8,160),
     'keeper-weld':(8,120), 'keeper-saw-wood':(8,120),
     'keeper-wave-camera':(8,120), 'keeper-yawn':(8,120),
+    'keeper-sad':(8,120), 'keeper-hungry':(8,120),
+    'keeper-bored':(8,120), 'keeper-cross':(8,120),
+    'keeper-vomit-loo-back':(8,120),
     'keeper-pyjamas-walk':(8,100), 'keeper-pyjamas-turn-back':(10,120),
     'keeper-get-into-bed':(8,120), 'keeper-pyjamas-snore':(6,250),
     'keeper-swim-costume-horizontal':(8,120), 'keeper-swim-costume-up':(8,120),
@@ -318,6 +343,6 @@ for name,(frames,duration) in previews.items():
     preview=Image.open(root/f'docs/floor-asset-catalogue/{name}-preview.gif')
     assert preview.is_animated and preview.n_frames==frames and preview.info['duration']==duration,name
 keeper_previews=list((root/'docs/floor-asset-catalogue').glob('keeper-*-preview.gif'))
-assert len(keeper_previews)==134
+assert len(keeper_previews)==139
 assert all(Image.open(path).is_animated for path in keeper_previews)
-print('Verified: 71 spaces, 1559 rows, owned-item states, 9 TV/lamp/FX exports, 150 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')
+print('Verified: 71 spaces, 1564 rows, owned-item states, 9 TV/lamp/FX exports, 155 aligned keeper exports, hard alpha, animated clips, scale contract and manifest contracts.')

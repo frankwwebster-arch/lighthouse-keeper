@@ -58,6 +58,7 @@ downward. A side-facing point at X mirrors with `mirroredX = canvasWidth - X`.
 | Exercise-bike handlebar centre | 21 px | front `(20,19)` on 40 × 40 canvas |
 | Exercise-bike seat | 13 px | front `(20,27)` on 40 × 40 canvas |
 | Exercise-bike pedal centre | 6 px | front `(20,34)` on 40 × 40 canvas |
+| Toilet bowl vomit target | 5 px | rear extended canvas `(32,35)` |
 
 These are interaction datums, not mandatory object sizes. For example, a light
 switch can have any suitable plate size, but its button centre must be 23 px
@@ -154,6 +155,14 @@ keeper returns to a fully upright empty-handed final frame.
 Any new prop-based animation must add its hand, seat or ground point to the
 JSON contract and its sprite sidecar. Verification rejects changes that break
 the established switch heights, canvas scale or feet anchors.
+
+The sad, hungry, bored and cross reactions share one enforced upright scale:
+their visible height is 38 logical pixels (152 pixels in the density-4 source)
+inside the standard 32 × 40 canvas. The rear vomiting clip uses that identical
+body scale on a 40 × 40 canvas; its visible height decreases only because the
+keeper bends and kneels. Align a separate toilet's bowl target to `(32,35)`.
+The keeper, small vomit effect and bracing hand are in the actor strip; the
+toilet and room remain separate assets.
 
 Bath, shower and hot-tub clips use the same scale but carry explicit privacy
 metadata. Entry and exit frames use `towel-privacy`; washing uses

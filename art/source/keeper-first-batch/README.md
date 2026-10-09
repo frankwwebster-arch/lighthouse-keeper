@@ -239,6 +239,29 @@ hardware is a separate object aligned through manifest hand, seat and pedal
 points. The superseded road-bike sheet is retained under
 `replaced-bicycle-v1/`.
 
+The emotional/needs pass adds five referenced-image source sheets:
+
+- `keeper-sad-generated-source.png` — front-facing dejected loop with raised
+  inner brows, drooping eyes, downturned mouth, slumped shoulders and eye wipe.
+- `keeper-hungry-generated-source.png` — front-facing worried/sad expression
+  with both hands visibly rubbing the tummy.
+- `keeper-bored-generated-source.png` — front-facing half-lidded expression,
+  loose posture and an alternating boot tap.
+- `keeper-cross-generated-source.png` — front-facing knitted brows, narrowed
+  eyes, pronounced frown, tightly folded arms and one clean boot stamp. A first
+  version with detached cartoon marks was rejected and never copied here.
+- `keeper-vomit-loo-back-generated-source.png` — direct-rear bend, kneel and
+  heave sequence with a small pale-green effect aimed at the fixed bowl point;
+  the toilet remains a separate object.
+
+The built-in generator prompts locked the established uniform, elderly face,
+beard, palette, transparent eight-cell layout and canonical apparent size. Each
+emotion prompt specified its facial landmarks and body action separately. The
+vomiting prompt fixed the rear viewpoint and bowl-directed contact while
+explicitly excluding the toilet and scenery. Deterministic normalization then
+enforces 152 source pixels (38 logical pixels) for every upright emotion pose;
+the vomiting keeper uses the same scale and only becomes shorter by crouching.
+
 Production mode is deterministic normalization rather than generative editing:
 `author_keeper.py` segments each source pose, applies a shared scale and baseline,
 hardens alpha, places it on a density-4 contract canvas, and emits the manifest

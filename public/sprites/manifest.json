@@ -267,6 +267,22 @@
   "interaction": "use-bbq",
   "z": 50
  },
+ "keeper_bored": {
+  "file": "keeper_bored.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "loop": true,
+  "facing": "front",
+  "interaction": "emote-bored",
+  "z": 50
+ },
  "keeper_bowling": {
   "file": "keeper_bowling.png",
   "w": 48,
@@ -536,6 +552,22 @@
   "loop": true,
   "facing": "front",
   "interaction": "count-money",
+  "z": 50
+ },
+ "keeper_cross": {
+  "file": "keeper_cross.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "loop": true,
+  "facing": "front",
+  "interaction": "emote-cross",
   "z": 50
  },
  "keeper_crouch_work_back": {
@@ -1154,6 +1186,22 @@
   "loop": true,
   "facing": "front",
   "interaction": "soak-hot-tub",
+  "z": 50
+ },
+ "keeper_hungry": {
+  "file": "keeper_hungry.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "loop": true,
+  "facing": "front",
+  "interaction": "emote-hungry",
   "z": 50
  },
  "keeper_idle": {
@@ -2088,6 +2136,22 @@
   "mirrorsFor": "left",
   "z": 50
  },
+ "keeper_sad": {
+  "file": "keeper_sad.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "loop": true,
+  "facing": "front",
+  "interaction": "emote-sad",
+  "z": 50
+ },
  "keeper_saw_wood": {
   "file": "keeper_saw_wood.png",
   "w": 40,
@@ -2855,6 +2919,30 @@
   "facing": "rear-right",
   "interaction": "play-video-game",
   "mirrorsFor": "rear-left",
+  "z": 50
+ },
+ "keeper_vomit_loo_back": {
+  "file": "keeper_vomit_loo_back.png",
+  "w": 40,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   20,
+   40
+  ],
+  "handUsePoint": [
+   31,
+   27
+  ],
+  "bowlPoint": [
+   32,
+   35
+  ],
+  "loop": false,
+  "facing": "back",
+  "interaction": "vomit-into-toilet",
   "z": 50
  },
  "keeper_walk": {

@@ -366,13 +366,14 @@ def part(which, rear=False, mood="neutral"):
     return im
 
 
-def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=True, seat_point=None, hand_use_point=None, pedal_point=None, look_target_point=None, bed_surface_point=None, pillow_point=None, movement_vector=None, outfit=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
+def contract(frames, fps, pivot=None, *, w=32, h=40, anchor_point=None, loop=True, seat_point=None, hand_use_point=None, pedal_point=None, bowl_point=None, look_target_point=None, bed_surface_point=None, pillow_point=None, movement_vector=None, outfit=None, reverse_for=None, mirror_safe=False, facing=None, interaction=None, mirrors_for=None):
     value = {"w": w, "h": h, "frames": frames, "fps": fps, "density": D, "anchor": anchor_point or [w // 2, h], "z": 50}
     if pivot is not None: value["pivot"] = pivot
     value["loop"] = loop
     if seat_point is not None: value["seatPoint"] = seat_point
     if hand_use_point is not None: value["handUsePoint"] = hand_use_point
     if pedal_point is not None: value["pedalPoint"] = pedal_point
+    if bowl_point is not None: value["bowlPoint"] = bowl_point
     if look_target_point is not None: value["lookTargetPoint"] = look_target_point
     if bed_surface_point is not None: value["bedSurfacePoint"] = bed_surface_point
     if pillow_point is not None: value["pillowPoint"] = pillow_point
@@ -616,6 +617,11 @@ save_preview("keeper-place-cake", place_cake_frames, 120)
 # logical width, logical height, and runtime placement metadata.  Large room
 # objects stay separate; hand/seat/look points are the attachment contract.
 ADDITIONAL_CLIPS = [
+    ("keeper_sad", "keeper-sad-generated-source.png", 32, 40, dict(facing="front", interaction="emote-sad")),
+    ("keeper_hungry", "keeper-hungry-generated-source.png", 32, 40, dict(facing="front", interaction="emote-hungry")),
+    ("keeper_bored", "keeper-bored-generated-source.png", 32, 40, dict(facing="front", interaction="emote-bored")),
+    ("keeper_cross", "keeper-cross-generated-source.png", 32, 40, dict(facing="front", interaction="emote-cross")),
+    ("keeper_vomit_loo_back", "keeper-vomit-loo-back-generated-source.png", 40, 40, dict(hand_use_point=[31, 27], bowl_point=[32, 35], facing="back", interaction="vomit-into-toilet", loop=False)),
     ("keeper_fish_feed_up", "keeper-fish-feed-up-generated-source.png", 32, 48, dict(hand_use_point=[26, 7], facing="right", interaction="feed-fish-high", mirror_safe=True, mirrors_for="left")),
     ("keeper_aquarium_brush", "keeper-aquarium-brush-generated-source.png", 40, 40, dict(hand_use_point=[34, 17], facing="right", interaction="clean-aquarium", mirror_safe=True, mirrors_for="left")),
     ("keeper_aquarium_net", "keeper-aquarium-net-generated-source.png", 40, 40, dict(hand_use_point=[34, 21], facing="right", interaction="net-aquarium-fish", mirror_safe=True, mirrors_for="left")),

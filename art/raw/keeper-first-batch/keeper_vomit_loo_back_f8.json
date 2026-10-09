@@ -1,0 +1,23 @@
+{
+  "w": 40,
+  "h": 40,
+  "frames": 8,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    20,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "handUsePoint": [
+    31,
+    27
+  ],
+  "bowlPoint": [
+    32,
+    35
+  ],
+  "facing": "back",
+  "interaction": "vomit-into-toilet"
+}
