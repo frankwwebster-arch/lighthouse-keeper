@@ -4,7 +4,14 @@ Working split: Codex owns art, design and layout; Claude owns game logic and wir
 
 ## Doors, stairway and costumes (9 Oct 2026)
 
-Frank has agreed a separate full-height stairway, a door on every room, and costume changes only while the keeper is hidden in a doorway. Full write-up: `docs/DOORS_STAIRS_AND_COSTUMES.md`. Before any more room, shell, door or stair art, please look at its section 3: the keeper stands 38 px, but a floor band is 35 px and your door spec needs a 40 px opening, so the band height has to change first. Decisions marked Codex in its table are yours (stairway side, lamp-room trapdoor, door design, a still standing frame per costume, splitting `privacy` from `outfit` in the manifest). Section 6 lists the missing clips per costume (mostly a standing frame and a side walk).
+Frank has answered every open question; the full record is `docs/DOORS_STAIRS_AND_COSTUMES.md` (sections 2 and 9). What it asks of you:
+
+- **Floors are 56 px floorboards to ceiling.** Set the floor/ceiling thickness, then that band height is fixed for every standard floor. Redraw the three room plates and the shell at the new height.
+- **Stairway alongside the rooms; you pick the side.** Ladders first, then a spiral staircase (if it can look right), then the lift. How the lift arrives is yours, as part of the lighthouse growing left, right, up and down. The slide goes on the outside of the tower.
+- **Doors** open as he enters, stay open during the activity and shut as he leaves; the frame must fully hide him (with hats, 48 px tall). Room doors never break.
+- **Bedroom floor:** en suite only through the bedroom, a walk-in closet off the bedroom, and the toilet in its own cubicle (door shut only for a poo). Other loos follow the same format.
+- **New clips:** a pyjama door-open for the en-suite door (morning), and a standing neutral frame for every outfit. Naps happen in an armchair, so the armchair is a new object.
+- Yours to settle without Frank: lamp-room access (trapdoor and ladder suggested), the shared door design, splitting `privacy` from `outfit` in the manifest.
 
 ## Missions and new floors (updated 8 Oct 2026: any order)
 

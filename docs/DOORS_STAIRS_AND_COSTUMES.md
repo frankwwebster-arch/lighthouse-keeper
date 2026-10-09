@@ -1,7 +1,7 @@
 # Doors, stairway, costumes and seamless animation
 
 Date: 9 October 2026
-Status: agreed design plus open decisions. The fixed-scale visual transition review described in section 7 is now built; the door/stair/costume-routing gameplay and automated pose contracts are not. Written for Frank, Codex and later Claude sessions. Decisions Frank has agreed are marked **Agreed**; everything else is either a recommendation or a decision still to make (the list is at the end).
+Status: agreed design. Frank answered the open decisions on 9 October 2026 (section 9); the remaining layout choices are Codex's. The fixed-scale visual transition review described in section 7 is now built; the door/stair/costume-routing gameplay and automated pose contracts are not. Written for Frank, Codex and later Claude sessions. Decisions Frank has agreed are marked **Agreed**.
 
 This builds on Codex's keeper work rather than replacing it:
 
@@ -23,11 +23,24 @@ The stairs are a single tall stairway, separate from the rooms and running from 
 5. **Agreed.** Every activity knows its costume. Swimming and then reading puts him back in his standard clothes before he reads.
 6. **Agreed.** At bedtime he goes to brush his teeth and changes into pyjamas on the way into the bathroom. In the morning he wakes, goes to the bathroom, and is back in his normal clothes by the time he gets there.
 7. **Agreed.** If he is already in the right room but needs a different costume, he steps out of the door and back in (option "a"). Many rooms that need a costume will have their own changing place anyway.
-8. **Agreed.** The bed (under the covers) and the loo (door shut) also hide him, so they can be changing points too.
+8. **Agreed.** The bed (under the covers) and the loo cubicle (door shut) also hide him, so they can be changing points too.
+9. **Agreed.** A door opens as he goes in, **stays open while the activity runs**, and shuts behind him when he leaves. Each room visit therefore has two hidden moments: in and out.
+10. **Agreed.** He changes at both doors. Leaving a room he goes back to standard clothes; entering the next he puts on its costume. He is always in standard clothes on the stairway, and he always opens and shuts stairway doors in standard clothes.
+11. **Agreed.** Every standard floor is **56 logical px** from floorboards to ceiling (section 3).
+12. **Agreed.** The stairway runs **alongside** the rooms, so every room keeps its full width. Codex chooses the side.
+13. **Agreed.** Climbing starts with **ladders**, then a **spiral staircase** (if it can be made to look right), then a **lift**. Codex owns how the lift arrives, as part of a magical lighthouse that can grow left, right, up and down. The helter-skelter slide goes on the **outside** of the tower.
+14. **Agreed.** The en suite is reached only through the bedroom. In the morning he opens the bathroom door in pyjamas, the only pyjama door clip needed (Codex is making it). Other loos elsewhere in the house follow the same format.
+15. **Agreed.** The bedroom has a **walk-in closet**. He steps in and comes out changed, so going to bed from the bedroom needs no trip out.
+16. **Agreed.** Washing and teeth mean pyjamas **from 19:00**.
+17. **Agreed.** He never naps in bed. Naps happen in an **armchair**.
+18. **Agreed.** The toilet sits in its own **cubicle**. He wees standing up in view and poos with the cubicle door shut (the animations exist).
+19. **Agreed.** Room doors never break. The front door can break (greeting visitors suffers) but never stops him going in or out.
+20. **Agreed.** Codex adds a still standing (neutral) frame for every outfit.
+21. **Agreed.** Codex builds the long animation loops; Claude checks the joins and wires everything into the game.
 
-## 3. A blocking problem: the keeper is taller than a floor
+## 3. Floor height: settled at 56 px
 
-This has to be settled before any door, stairway or new room art is made.
+The keeper sets the size of everything, so the floor is made to fit him rather than the other way round. Today's numbers:
 
 | Measure | Logical px | On screen (4×) |
 |---|---:|---:|
@@ -36,22 +49,33 @@ This has to be settled before any door, stairway or new room art is made.
 | Keeper canvas (standard / with hat) | 40 / 48 | 160 / 192 |
 | Minimum door opening (`keeper_object_dimensions.json`) | 40 | 160 |
 
-As the numbers stand, he is 3 px taller than the room he stands in, and a door tall enough for him does not fit in a floor. A doorway cannot hide him unless the door is taller than he is, with his tallest hat included.
+As those numbers stand, he is 3 px taller than the room he stands in, and no door can hide him.
 
-Options:
+**Agreed: 56 logical px of clear height inside every standard floor**, floorboards to ceiling. It fits every indoor clip:
 
-- **Taller floors.** For example, 48–52 logical px per band, which fits a 40–44 px door with a ceiling above it. The three delivered room plates and the shell would need redrawing at the new height, and the game constant `FLOOR_STEP` would change. Furniture contact heights are unaffected, because they are measured from the floor.
-- **Smaller keeper.** This breaks Codex's locked scale and all 183 delivered sheets (including the 165 accepted animation sheets). Not recommended.
-- **Drawing the keeper at a different pixel size from the rooms.** This breaks the "one logical pixel = 4 screen pixels everywhere" rule and makes the pixels mismatched. Not recommended.
+| Tallest indoor poses | Visible height |
+|---|---:|
+| Weights with the bar overhead | 54 |
+| Party hat | 47.5 |
+| Trampoline, spiral stairs, swimming | 46 |
+| Standing | 38 |
 
-**Recommendation:** taller floors, settled by Frank and Codex before the next room or shell art. Whatever height is chosen becomes the one fixed band height for every standard floor and is never changed again.
+That leaves room for a door about 44 px tall with a lintel above it. The parachute (79), platform dive (52) and standing fishing (54) all happen outside.
+
+What follows (Codex for art, Claude for code):
+
+- The band height is 56 plus whatever floor and ceiling thickness Codex draws. Once Codex sets it, it is fixed for every standard floor for good.
+- The three delivered room plates (105 × 35) and the shell are redrawn at the new height. Furniture contact heights stay as they are, because they are measured from the floor.
+- The game's `FLOOR_STEP` (today 140 on screen) changes to match. The whole-tower view zooms out further, and the camera's close-up on an activity is unchanged.
 
 ## 4. The stairway
 
+- **Alongside the rooms (agreed); Codex picks the side.** The diving extension is currently on the right.
 - **One column, built from one section per floor.** When a floor is inserted at its random middle position, the stairway simply gains a section. The stripe pattern still comes from world height, so nothing else moves.
-- **Lamp room.** The stairway ends at the lamp room. A trapdoor and short ladder (`keeper_ladder_climb` exists) also hides him as he climbs through, so it counts as a doorway.
+- **Climbing improves over time (agreed):** ladders, then a spiral staircase, then a lift. Codex designs how the lift arrives (the game currently opens the "Puffed Out" lift mission at 5 floors; Frank has 6 in mind) as part of the lighthouse growing magically in every direction.
+- **The slide goes on the outside of the tower (agreed).** He is out of sight inside its tube, so it is a hiding point.
+- **Lamp room.** The stairway ends at the lamp room. With ladders on day 1, a trapdoor and ladder fits naturally, and it hides him as he climbs through. Codex decides.
 - **Underground stays a surprise.** On day 1 the stairway visibly stops at the ground floor. The section below ground appears only when the lair is revealed (the existing rule: no hint of a basement on day 1).
-- **Later transport lives here.** The lift runs in or beside the stairway. The helter-skelter slide wraps around it, with an exit at every floor. Each counts as a hiding point, because he is out of sight inside the lift car or the tube.
 - **The cat and visitors use the doors too.** Cat flaps are a nice touch.
 
 Clips already delivered for climbing: `keeper_stairs_up` / `keeper_stairs_down` (straight stairs), `keeper_spiral_stairs_up` / `_down`, `keeper_ladder_climb`, `keeper_slide_side` and `keeper_lift_button_front`.
@@ -59,9 +83,12 @@ Clips already delivered for climbing: `keeper_stairs_up` / `keeper_stairs_down` 
 ## 5. Doors
 
 - **Two layers of art.** The door leaf animates open and shut. The door frame and the wall beside it are drawn **in front of** the keeper. For a few frames he is entirely behind the frame, and that is when any costume swap happens. Per the clip rules, no uncovered in-between frame is ever shown.
-- **Room doors never break.** A jammed door could trap him or cut him off from the loo. At most a door squeaks or sticks for a beat.
-- **The front door** is today a breakable object (greeting visitors). A broken front door may stop the greeting but must never stop him going outside.
-- **The bathroom door already exists.** The delivered bedroom plate includes the en-suite partition and doorway. It becomes a real door that hides him.
+- **Open while he is in there (agreed).** A door opens as he enters, stays open while the activity runs, and shuts behind him when he leaves.
+- **Room doors never break (agreed).** A jammed door could trap him or cut him off from the loo. At most a door squeaks or sticks for a beat.
+- **The front door (agreed)** can break, which spoils greeting visitors until it is repaired, but it never stops him going in or out.
+- **The bathroom door already exists.** The delivered bedroom plate includes the en-suite partition and doorway. It becomes a real door that hides him. The en suite has no stairway door of its own. Its door is the one door he opens in pyjamas (the morning trip).
+- **The loo has its own cubicle (agreed).** He wees standing up in view; for a poo the cubicle door shuts. Every other loo in the house works the same way.
+- **The walk-in closet** off the bedroom has a doorway like any other room.
 - **Timing.** Each door adds a short pause, roughly half a second at the game's speed. The pause is a tunable number in `config.ts`.
 
 ## 6. Costumes
@@ -77,10 +104,10 @@ A small table says what each activity needs. The default is the standard uniform
 | Gym: weights, press-ups, bike, trampoline | old-school workout kit | always |
 | Paint, pottery | artist's smock | always |
 | Mechanic jobs | mechanic overalls | always |
-| Brush teeth, wash | light-blue pyjamas | from bedtime (19:00, `GAME.day.bedFrom`) |
-| Wash, brush teeth | standard | before bedtime (the morning change) |
+| Brush teeth, wash | light-blue pyjamas | from 19:00 (agreed; `GAME.day.bedFrom`) |
+| Wash, brush teeth | standard | before 19:00 (the morning change) |
 | Go to bed for the night | light-blue pyjamas | always |
-| Nap | standard | always (on top of the covers) |
+| Nap | standard | in an armchair, never the bed (agreed) |
 | Shower | cream bathrobe → towel → washing | always (the shower sequence) |
 | Outside jobs | sou'wester oilskins | when raining (later weather) |
 | Outside jobs | winter coat | when snowing (later weather) |
@@ -109,7 +136,7 @@ hidden swap.
 
 These save him from stepping out and back in:
 
-- **Bedroom wardrobe.** He steps in and comes out in pyjamas, which covers "go straight to bed". This is an object for Codex if agreed.
+- **Bedroom walk-in closet (agreed).** He steps in and comes out in pyjamas. A doorway off the bedroom that Codex fits into the bedroom floor alongside the en suite.
 - **Pool changing cubicle** (already in `EXPANSION_DESIGN.md`).
 - **Diving changing room.** The existing two-door changing room by the bedroom.
 - **Gym changing room.**
@@ -127,7 +154,7 @@ Any costume he can wear in a room needs:
 Only the standard uniform needs stair, ladder, lift and slide clips under this
 door-occluded two-swap rule.
 
-What exists and what is missing today, from `public/sprites/manifest.json`:
+Frank reports every outfit is now drawn and is reviewing each animation for consistency; the keeper art is **not ready to import** until that review finishes. Codex is adding a standing neutral for every outfit (agreed) and the pyjama bathroom-door clip. The table below is from `public/sprites/manifest.json` on 9 October and will be refreshed at import:
 
 | Costume | Delivered | Missing for the minimum set |
 |---|---|---|
@@ -270,31 +297,36 @@ There are no mood versions of every clip; 80+ clips × 4 moods would be unmanage
 None of this is built. When it is:
 
 - The game state records what he is wearing.
-- The costume table lives in `config.ts` (or a CSV like the upgrade list if Frank wants to edit it).
+- The costume table lives in `data/costumes.csv`, copied into the game by a script, like the upgrade list (Frank had no preference; a CSV keeps it readable for him and Codex).
+- `FLOOR_STEP` and the room geometry follow the new 56 px floors once Codex fixes the band height.
+- Doors: open on entry, stay open, shut on leaving; the en-suite door opens with the pyjama clip in the morning; room doors are removed from breakdowns; a broken front door never blocks travel.
+- "Have a nap" moves from the bed to an armchair. "Go to the loo" (wee) is no longer private; "Do a poo" shuts the cubicle door.
+- The lift mission's floor requirement follows Codex's lift design (Frank has 6 floors in mind).
+- Claude checks clip joins (named start and end poses, legal routes) as well as wiring.
 - Each route gains door stops: walk to the door, door opens, he steps behind the frame (the costume swaps here if needed), door shuts, stairway, next door, room.
 - The clip table: the game picks a clip by activity and costume, then by animation type, then falls back to the vector drawing. A test fails if an activity has no clip for its costume.
 - Lift and slide travel reads the saved floor order, so random floor placement keeps working.
 - The `?clip=<name>` and `?costume=<name>` preview URLs work like `?tiers=`.
 
-## 9. Decisions to make
+## 9. Decisions (answered 9 October 2026)
 
-| # | Decision | Options | Recommendation | Who |
-|---|---|---|---|---|
-| 1 | **Floor height (blocking)** | taller bands / smaller keeper / mixed pixel sizes | taller bands (about 48–52 px), fixed for good | Frank + Codex |
-| 2 | Where the stairway goes | inside the 110 px width (rooms narrower, redraw plates) / alongside it (tower wider, rooms untouched) / behind the rooms (unseen) | alongside | Frank + Codex |
-| 3 | Which side | left / right | left: the front door and today's stairs are on the left, and the diving extension is on the right | Codex |
-| 4 | Stair type on day 1, and whether stairs are an upgrade | ladder / straight stairs / spiral; upgrade tiers for speed | straight stairs on day 1 (clips exist). The ladder → stairs → spiral → slide → lift progression in `EXPANSION_DESIGN.md` could be the stairway's upgrade tiers, since speed is a real benefit | Frank |
-| 5 | Who opens doors | he opens each one by hand / they open by themselves as he arrives | by themselves for room doors (fast, magical, and no door clip needed per costume). Opening by hand stays for the front door, shower and wardrobe | Frank |
-| 6 | Which door he changes at | entry door only / exit door only / both (standard clothes on the stairway) | both | Frank |
-| 7 | Pyjamas on the stairway at night | change back to standard / stay in pyjamas / dressing gown | standard (follows from 6) | Frank |
-| 8 | Bedroom wardrobe as a changing place | yes / no | yes | Frank |
-| 9 | Bedtime switch for pyjamas | from 19:00 (`bedFrom`) / from 20:00 (`bedtime`) / only the bedtime routine | from 19:00 | Frank |
-| 10 | Pyjamas for daytime naps | yes / no | no | Frank |
-| 11 | Lamp-room access | door / trapdoor and ladder | trapdoor and ladder | Codex |
-| 12 | Door design | one shared door / a themed door per room | one shared door frame, optional themed leaf | Codex |
-| 13 | Front door breakdowns | keep breakable but never block going out / unbreakable | keep breakable, never blocks travel | Frank |
-| 14 | Neutral frame per costume | new still frame per costume / first frame of its walk | new still frame per costume (a walk frame is mid-stride) | Codex |
-| 15 | Who builds the join checks | Codex extends the scale audit / Claude adds game tests / both | both: Codex's visual seam review is delivered; named-pose art checks and Claude's legal-route game tests remain | Frank |
-| 16 | `privacy` split from `outfit` in the manifest | yes / no | yes | Codex |
-| 17 | Lift and slide placement | inside the stairway column / a second column beside it | the slide wraps the stairway; the lift takes the stairway's back half or a second column, depending on 2 | Codex |
-| 18 | Costume table format | in `config.ts` / a CSV Frank can edit | CSV, matching the upgrade list | Frank |
+| # | Decision | Answer | Who acts |
+|---|---|---|---|
+| 1 | Floor height | 56 px clear height inside every standard floor | Codex (band, plates, shell), Claude (`FLOOR_STEP`) |
+| 2 | Where the stairway goes | alongside the rooms | Codex |
+| 3 | Which side | Codex decides | Codex |
+| 4 | Climbing progression | ladders, then spiral staircase (if it looks right), then lift; slide on the outside of the tower | Codex |
+| 5 | Lift unlock | Codex designs it, with the lighthouse growing left, right, up and down | Codex |
+| 6 | Which door he changes at | both: standard clothes on the stairway | Claude |
+| 7 | Door behaviour | opens on entry, stays open during the activity, shuts when he leaves | Codex (art), Claude (logic) |
+| 8 | Bedroom ↔ en suite | en suite only through the bedroom; pyjama door-open clip for the morning | Codex |
+| 9 | Changing in the bedroom | walk-in closet | Codex |
+| 10 | Pyjama time | from 19:00 | Claude |
+| 11 | Naps | in an armchair, never the bed | Claude (and Codex for the armchair) |
+| 12 | Loo | own cubicle; wee standing in view, poo with the door shut; same format everywhere | Codex, Claude |
+| 13 | Breakdowns | room doors never break; front door breaks but never blocks | Claude |
+| 14 | Neutral frame per outfit | Codex adds one per outfit | Codex |
+| 15 | Join checks | Codex builds the loops; Claude checks the joins and wires them up | Claude |
+| 16 | Costume table | CSV (`data/costumes.csv`) | Claude |
+
+Still Codex's to settle, no answer needed from Frank: lamp-room access (trapdoor and ladder suggested), door design (one shared frame suggested), splitting `privacy` from `outfit` in the manifest.
