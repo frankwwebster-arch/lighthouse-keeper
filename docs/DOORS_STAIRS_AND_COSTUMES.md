@@ -200,7 +200,8 @@ Delivered in `docs/keeper-scale-audit/review.html`:
   proxy only; changed posture, head angle and headwear need anatomy checks.
 - Per-animation 50%–150% width and height sliders reshape the action around its
   declared contact anchor while the reference, ruler, ghost, walk and bridge
-  stay at 100%. Earlier uniform choices migrate to both axes. Saved proposals
+  stay at 100%. Horizontal and vertical controls reposition only the reviewed
+  action and include a zero-offset reset. Earlier uniform choices migrate to both axes. Saved proposals
   export as JSON for later source-art rebuilding; the viewer never edits sprites.
 - Flying and swimming cards align their first-frame figure bottom to the red
   floor line. Global Pause resets every card to frame 1 of its action.
@@ -210,8 +211,8 @@ Delivered in `docs/keeper-scale-audit/review.html`:
 - Every card has a happy checkbox, Save button and saved/unsaved indicator.
   Saved review state survives reloads; export includes approvals and is blocked
   while any card remains dirty.
-- Reviewed-animation rotation is independent of ghost rotation, persists per
-  card and is a review aid for horizontal poses rather than a sprite edit.
+- Reviewed-animation rotation and position are independent of the ghost,
+  persist per card and are review aids for horizontal poses rather than sprite edits.
 - Action-only, raw matching-outfit walk seams and routes containing the known
   turn/sit/bed bridges.
 - A seam-freeze onion skin of the final approach frame and first action frame.

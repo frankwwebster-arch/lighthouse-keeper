@@ -18,9 +18,10 @@ Codex task should be able to continue from here without relying on the old chat.
    1× to 12× without changing the art; the other global
    controls pause/play everything and apply pose-aware comparison ghosts.
 3. Ask Frank for his new comments and exported `keeper-scale-choices.json`.
-   Each card's Save button persists independent width/height, rotation, ghost
-   settings, opacity and the happy/not-yet-happy decision in his browser.
-   Version 3 of the export includes both production shape proposals and this
+   Each card's Save button persists independent width/height, rotation,
+   horizontal/vertical position, ghost settings, opacity and the
+   happy/not-yet-happy decision in his browser. Version 4 of the export includes
+   both production shape/position proposals and this
    complete review register, but it
    does not alter production art. **The page still does not save written
    comments.** Do not assume comments seen only in Frank's browser have entered

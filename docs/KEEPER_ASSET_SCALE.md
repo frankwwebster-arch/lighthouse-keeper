@@ -259,15 +259,17 @@ other cards use the standing reference. Per-card controls can select a different
 reference, rotate/reset it, place it alongside and fade only the reviewed action.
 There is no canonical rear-sitting reference yet, so rear comparisons require an
 explicit choice and remain visual evidence rather than a certified pose match.
-Each card's Save button persists its width, height, comparison-ghost controls,
-reviewed-animation rotation/opacity and happy checkbox in the browser. Orange denotes unsaved
+Each card's Save button persists its width, height, horizontal/vertical position,
+comparison-ghost controls, reviewed-animation rotation/opacity and happy checkbox in the browser. Orange denotes unsaved
 changes; green denotes a saved happy decision. Export is blocked until every
-changed card is saved, and version 3 of `keeper-scale-choices.json` contains the
-saved review register as well as independent width/height production proposals.
+changed card is saved, and version 4 of `keeper-scale-choices.json` contains the
+saved review register as well as independent width/height/position production proposals.
 Existing legacy uniform choices are retained and applied to both axes.
 The reviewed animation has its own −180° to +180° rotation control, independent
 of the ghost. It rotates every action frame around the fixed review anchor and
 is persisted/exported as comparison evidence, not silently applied to sprites.
+Horizontal and vertical position controls move only the reviewed action relative
+to that anchor; a dedicated button resets both offsets to zero.
 
 The sad, hungry, bored and cross reactions share one enforced upright scale:
 their visible height is 38 logical pixels (152 pixels in the density-4 source)

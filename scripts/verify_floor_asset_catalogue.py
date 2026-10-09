@@ -604,8 +604,10 @@ for token in (
     'Alongside right', 'Reset ghost', 'Reviewed animation opacity',
     'Happy with this animation', 'Save this review', 'Unsaved changes',
     "REVIEW_STORAGE_KEY='lighthouse-keeper-animation-reviews-v1'",
-    'happyAnimations', 'version:3', 'widthPercent', 'heightPercent',
+    'happyAnimations', 'version:4', 'widthPercent', 'heightPercent',
     'Reviewed animation rotation', 'actionRotation',
+    'Animation horizontal position', 'Animation vertical position',
+    'Reset animation position', 'actionOffsetX', 'actionOffsetY',
     'runtime: ${asset.name}.png', 'source: ${basename(asset.source)}',
     'animations, all shown', 'function buildGallery()',
 ):
