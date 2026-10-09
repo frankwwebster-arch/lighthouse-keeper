@@ -277,6 +277,9 @@ reference, including the canonical back-to-camera standing endpoint (frame 6 of
 `keeper_turn_back`), rotate/reset it, place it alongside and fade only the
 reviewed action. That rear endpoint retains the standard outfit, 32 × 40 canvas,
 [16, 40] feet anchor and 38-pixel standing height used by the canonical keeper.
+The menu also offers the neutral arms-down first frame of `keeper_wave_camera`
+as the canonical standard-outfit facing-front ghost; the exact-inheritance
+party front idle is derived from this same frame.
 There is no canonical rear-sitting reference yet, so rear comparisons require an
 explicit choice and remain visual evidence rather than a certified pose match.
 Each card's Save button persists its width, height, horizontal/vertical position,

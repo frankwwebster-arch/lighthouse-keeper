@@ -58,9 +58,12 @@ to the red floor line. Pressing global Pause resets every card to frame 1 of its
 action, even when a route or onion-skin mode is selected.
 Seated cards automatically use the canonical direct-front or side sitting
 endpoint as their ghost; other cards use the standing reference. Each card can
-override the ghost reference with a standing side, standing back-to-camera,
-sitting side or sitting front figure, rotate it, reset it, place it alongside on
-a wider stage and reduce only the reviewed animation's opacity. The standing
+override the ghost reference with a standing side, standing facing-front,
+standing back-to-camera, sitting side or sitting front figure, rotate it, reset
+it, place it alongside on a wider stage and reduce only the reviewed animation's
+opacity. The standing front ghost is the neutral arms-down frame 1 of
+`keeper_wave_camera`; this is the same canonical front identity used as the
+source for the exact-inheritance party idle. The standing
 back ghost is frame 6 of `keeper_turn_back`, the audited standard-outfit rear
 endpoint with the same 32 × 40 canvas, [16, 40] feet anchor and 38-pixel height
 as the canonical standing keeper. A canonical rear-sitting

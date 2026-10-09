@@ -170,6 +170,9 @@ The manifest would gain `startPose` and `endPose` on each clip. Reversed playbac
 The animation review sheet uses frame 6 of `keeper_turn_back` as its canonical
 standing back-to-camera ghost. It is the standard-outfit `stand-rear` endpoint,
 not a work-action or costume substitute.
+Its facing-front standing ghost is the neutral arms-down frame 1 of
+`keeper_wave_camera`, which is also the source used by the exact-canonical-
+identity party front idle.
 
 ### What gets checked
 
@@ -220,8 +223,9 @@ Delivered in `docs/keeper-scale-audit/review.html`:
   that animation as the latest completed one; reload resumes in focused mode on
   the following filename-ordered animation, or the final card when already last.
 - Seated cards automatically use the canonical front/side sitting endpoint.
-  Per-card controls select, rotate, reset or move the ghost alongside and fade
-  the reviewed animation. Rear sitting still has no canonical neutral reference.
+  Per-card controls can instead select the canonical standing side, facing-front
+  or back-to-camera ghost, rotate/reset it or move it alongside, and fade the
+  reviewed animation. Rear sitting still has no canonical neutral reference.
 - Every card has a free-text notes field, mutually exclusive happy and full
   re-draft decisions, a Save button and saved/unsaved indicator. Saved review
   state survives reloads; export includes notes, approvals and the re-draft
