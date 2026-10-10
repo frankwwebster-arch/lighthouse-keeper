@@ -55,4 +55,4 @@ JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
 ## Verification and delivery
 
-The preceding remote production delivery passed the project tests, TypeScript checking, production build, sprite export, catalogue verification and complete 1,420-frame identity/scale audit. The neutral-contract delivery must rerun those checks, push `main`, verify the Vercel deployment and then replace this paragraph with the new delivered commit/deployment evidence.
+Keeper neutral-contract commit `e74b93b` passed all 149 project tests, TypeScript checking, the production build, sprite export, the 310-sheet runtime catalogue verification and the historical 191-sheet / 1,420-frame identity audit. It is on remote `main`; the canonical Vercel home and `/studio` routes both returned HTTP 200 on 10 October 2026, with `/studio` serving the same built chunk as the verified local production build.
