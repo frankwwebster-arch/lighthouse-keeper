@@ -5,17 +5,17 @@
   "fps": 3,
   "density": 4,
   "anchor": [
-    24.0,
-    40.0
+    24,
+    40
   ],
   "z": 50,
   "loop": false,
   "bedSurfacePoint": [
-    24.0,
+    24,
     31.99
   ],
   "pillowPoint": [
-    38.0,
+    38,
     23.98
   ],
   "outfit": "light-blue-pyjamas",
@@ -31,5 +31,8 @@
   "reviewOffset": [
     0,
     0
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-side-right",
+  "endPose": "lying-side-right"
 }

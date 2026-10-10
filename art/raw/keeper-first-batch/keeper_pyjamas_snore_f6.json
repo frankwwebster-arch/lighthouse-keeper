@@ -5,13 +5,13 @@
   "fps": 1,
   "density": 4,
   "anchor": [
-    24.0,
-    40.0
+    24,
+    40
   ],
   "z": 50,
   "loop": true,
   "bedSurfacePoint": [
-    24.0,
+    24,
     31.09
   ],
   "pillowPoint": [
@@ -30,5 +30,8 @@
   "reviewOffset": [
     0,
     0
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "lying-side-right",
+  "endPose": "lying-side-right"
 }

@@ -1,0 +1,23 @@
+{
+  "w": 34,
+  "h": 40,
+  "frames": 4,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    17,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "seatPoint": [
+    16,
+    29
+  ],
+  "reverseFor": "sitting_turn_rear_to_back",
+  "facing": "back-to-rear-right",
+  "interaction": "turn-seated",
+  "assetRole": "bridge",
+  "startPose": "sitting-back",
+  "endPose": "sitting-rear-right"
+}

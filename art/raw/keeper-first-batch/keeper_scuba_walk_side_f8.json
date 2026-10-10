@@ -20,5 +20,16 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "scuba-jetty-walk",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "assetRole": "clip",
+  "sfxCues": [
+    {
+      "frame": 0,
+      "cue": "footstep"
+    },
+    {
+      "frame": 4,
+      "cue": "footstep"
+    }
+  ]
 }

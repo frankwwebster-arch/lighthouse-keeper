@@ -19,5 +19,8 @@
   "reviewOffset": [
     0,
     0
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-front",
+  "endPose": "standing-front"
 }

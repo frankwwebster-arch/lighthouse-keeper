@@ -1,0 +1,30 @@
+{
+  "w": 34,
+  "h": 40,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    17,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "outfit": "light-blue-pyjamas",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "walk-pyjamas",
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "sfxCues": [
+    {
+      "frame": 2,
+      "cue": "slipper_step"
+    },
+    {
+      "frame": 6,
+      "cue": "slipper_step"
+    }
+  ]
+}

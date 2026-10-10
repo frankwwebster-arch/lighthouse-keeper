@@ -33,5 +33,8 @@
   "reviewOffset": [
     0,
     0
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "sitting-rear-right",
+  "endPose": "sitting-rear-right"
 }

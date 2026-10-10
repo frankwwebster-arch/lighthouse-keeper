@@ -1,0 +1,34 @@
+{
+  "w": 32,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    16,
+    48
+  ],
+  "z": 50,
+  "loop": true,
+  "outfit": "mechanic",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "mechanic-walk",
+  "movementVector": [
+    1,
+    0
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "sfxCues": [
+    {
+      "frame": 2,
+      "cue": "boot_step"
+    },
+    {
+      "frame": 6,
+      "cue": "boot_step"
+    }
+  ]
+}

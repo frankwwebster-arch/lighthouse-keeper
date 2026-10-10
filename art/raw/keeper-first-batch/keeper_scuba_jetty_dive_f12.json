@@ -20,5 +20,6 @@
   "mirrorSafe": true,
   "facing": "right-to-prone",
   "interaction": "scuba-water-entry",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "assetRole": "clip"
 }

@@ -1,0 +1,6883 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-10-10",
+  "actionClips": 233,
+  "endpointChecks": 466,
+  "passingEndpoints": 166,
+  "failingEndpoints": 300,
+  "rows": [
+    {
+      "outfit": "standard",
+      "clip": "keeper_anti_gravity",
+      "end": "start",
+      "pose": "floating-prone-right",
+      "neutral": "keeper_neutral_floating-prone-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_anti_gravity",
+      "end": "end",
+      "pose": "floating-prone-right",
+      "neutral": "keeper_neutral_floating-prone-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_aquarium_brush",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.98,
+      "canvasAnchorDelta": [
+        -1.5,
+        0
+      ],
+      "landmarkMaxDelta": 5.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_aquarium_brush",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.99,
+      "canvasAnchorDelta": [
+        -1.5,
+        0
+      ],
+      "landmarkMaxDelta": 9.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_aquarium_net",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.86,
+      "canvasAnchorDelta": [
+        -2,
+        0
+      ],
+      "landmarkMaxDelta": 5.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_aquarium_net",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.95,
+      "canvasAnchorDelta": [
+        -2,
+        0
+      ],
+      "landmarkMaxDelta": 5.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_artist_smock_sit_front",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_artist-smock_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.62,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_artist_smock_sit_front",
+      "end": "end",
+      "pose": "sitting-front",
+      "neutral": "keeper_artist-smock_neutral_sitting-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_artist_smock_turn_back",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_artist-smock_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.96,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_artist_smock_turn_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_artist-smock_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_artist_smock_turn_front",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_artist-smock_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.93,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 2.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_artist_smock_turn_front",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_artist-smock_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_artist_smock_walk",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_artist-smock_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.89,
+      "canvasAnchorDelta": [
+        1,
+        0
+      ],
+      "landmarkMaxDelta": 3,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_artist_smock_walk",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_artist-smock_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        1,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_artist_smock_walk_cycle",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_artist-smock_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_artist_smock_walk_cycle",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_artist-smock_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_artist_smock_walk_start",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_artist-smock_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_artist_smock_walk_start",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_artist-smock_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_artist_smock_walk_stop",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_artist-smock_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_artist_smock_walk_stop",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_artist-smock_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "towel-privacy",
+      "clip": "keeper_bath_enter",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_towel-privacy_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "towel-privacy",
+      "clip": "keeper_bath_enter",
+      "end": "end",
+      "pose": "sitting-front",
+      "neutral": "keeper_towel-privacy_neutral_sitting-front",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "towel-privacy",
+      "clip": "keeper_bath_exit",
+      "end": "start",
+      "pose": "sitting-front",
+      "neutral": "keeper_towel-privacy_neutral_sitting-front",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "towel-privacy",
+      "clip": "keeper_bath_exit",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_towel-privacy_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.4,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "mosaic-privacy",
+      "clip": "keeper_bath_wash",
+      "end": "start",
+      "pose": "sitting-front",
+      "neutral": "keeper_mosaic-privacy_neutral_sitting-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "mosaic-privacy",
+      "clip": "keeper_bath_wash",
+      "end": "end",
+      "pose": "sitting-front",
+      "neutral": "keeper_mosaic-privacy_neutral_sitting-front",
+      "status": "fail",
+      "mismatchPercent": 98.78,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "cream-bathrobe",
+      "clip": "keeper_bathrobe_walk",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_cream-bathrobe_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.5,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 2.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "cream-bathrobe",
+      "clip": "keeper_bathrobe_walk",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_cream-bathrobe_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.47,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "cream-bathrobe",
+      "clip": "keeper_bathrobe_walk_cycle",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_cream-bathrobe_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "cream-bathrobe",
+      "clip": "keeper_bathrobe_walk_cycle",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_cream-bathrobe_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "cream-bathrobe",
+      "clip": "keeper_bathrobe_walk_start",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_cream-bathrobe_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "cream-bathrobe",
+      "clip": "keeper_bathrobe_walk_start",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_cream-bathrobe_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "cream-bathrobe",
+      "clip": "keeper_bathrobe_walk_stop",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_cream-bathrobe_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "cream-bathrobe",
+      "clip": "keeper_bathrobe_walk_stop",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_cream-bathrobe_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_bbq_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.82,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_bbq_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.85,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_boat_enter",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.87,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 3.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_boat_enter",
+      "end": "end",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.81,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 2.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_boat_exit",
+      "end": "start",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.89,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_boat_exit",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.9,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 2.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_bored",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.88,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_bored",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_bowling",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.91,
+      "canvasAnchorDelta": [
+        -2,
+        0
+      ],
+      "landmarkMaxDelta": 4.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_bowling",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.98,
+      "canvasAnchorDelta": [
+        -2,
+        0
+      ],
+      "landmarkMaxDelta": 10.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_brush_teeth_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_brush_teeth_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_cake_from_oven_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.8,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_cake_from_oven_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_cake_turn_right",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.96,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 6.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_cake_turn_right",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.99,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 5.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_carry_cake",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.77,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 5.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_carry_cake",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 4.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_carry_meal",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.91,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 3,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_carry_meal",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.96,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 3,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_carry_shopping",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        1,
+        0
+      ],
+      "landmarkMaxDelta": 4,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_carry_shopping",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.86,
+      "canvasAnchorDelta": [
+        1,
+        0
+      ],
+      "landmarkMaxDelta": 4.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_check_instrument_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.39,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_check_instrument_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.66,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_check_instrument_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.76,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_check_instrument_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.87,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 4.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "winter-coat",
+      "clip": "keeper_clear_snow",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_winter-coat_neutral_standing-side-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "winter-coat",
+      "clip": "keeper_clear_snow",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_winter-coat_neutral_standing-side-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_collect_eggs_back",
+      "end": "start",
+      "pose": "crouching-back",
+      "neutral": "keeper_neutral_crouching-back",
+      "status": "fail",
+      "mismatchPercent": 99.78,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 8,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_collect_eggs_back",
+      "end": "end",
+      "pose": "crouching-back",
+      "neutral": "keeper_neutral_crouching-back",
+      "status": "fail",
+      "mismatchPercent": 99.8,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 8,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_cook_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_cook_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_count_money",
+      "end": "start",
+      "pose": "sitting-front",
+      "neutral": "keeper_neutral_sitting-front",
+      "status": "fail",
+      "mismatchPercent": 99.85,
+      "canvasAnchorDelta": [
+        0,
+        -2
+      ],
+      "landmarkMaxDelta": 1.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_count_money",
+      "end": "end",
+      "pose": "sitting-front",
+      "neutral": "keeper_neutral_sitting-front",
+      "status": "fail",
+      "mismatchPercent": 99.91,
+      "canvasAnchorDelta": [
+        0,
+        -2
+      ],
+      "landmarkMaxDelta": 1.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_cross",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_cross",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.9,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_crouch_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_crouch_back",
+      "end": "end",
+      "pose": "crouching-back",
+      "neutral": "keeper_neutral_crouching-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_crouch_work_back",
+      "end": "start",
+      "pose": "crouching-back",
+      "neutral": "keeper_neutral_crouching-back",
+      "status": "fail",
+      "mismatchPercent": 99.72,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 8,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_crouch_work_back",
+      "end": "end",
+      "pose": "crouching-back",
+      "neutral": "keeper_neutral_crouching-back",
+      "status": "fail",
+      "mismatchPercent": 99.71,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 8,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_dance",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_dance",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_darts",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.8,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_darts",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.85,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_dig",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        -2.5,
+        0
+      ],
+      "landmarkMaxDelta": 6.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_dig",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.96,
+      "canvasAnchorDelta": [
+        -2.5,
+        0
+      ],
+      "landmarkMaxDelta": 6.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_door_open_back",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.95,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 3,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_door_open_back",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.96,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 3,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_door_open_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.77,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_door_open_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.97,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 2.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_door_open_side_pyjamas",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_light-blue-pyjamas_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.84,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 2.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_door_open_side_pyjamas",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_light-blue-pyjamas_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.71,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 4.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_drink_pint",
+      "end": "start",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.92,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_drink_pint",
+      "end": "end",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.96,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_drive_speedboat",
+      "end": "start",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.82,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_drive_speedboat",
+      "end": "end",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.8,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 1.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_eat_seated",
+      "end": "start",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.89,
+      "canvasAnchorDelta": [
+        0,
+        -1
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_eat_seated",
+      "end": "end",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.91,
+      "canvasAnchorDelta": [
+        0,
+        -1
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_feed_animals",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.89,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_feed_animals",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.97,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_fish_feed_up",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.93,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_fish_feed_up",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.97,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_fish_seated",
+      "end": "start",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 100,
+      "canvasAnchorDelta": [
+        -4.5,
+        -42
+      ],
+      "landmarkMaxDelta": 41.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_fish_seated",
+      "end": "end",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.99,
+      "canvasAnchorDelta": [
+        -4.5,
+        -42
+      ],
+      "landmarkMaxDelta": 41.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_fish_standing",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 100,
+      "canvasAnchorDelta": [
+        -2.5,
+        -32
+      ],
+      "landmarkMaxDelta": 30.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_fish_standing",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 100,
+      "canvasAnchorDelta": [
+        -2.5,
+        -32
+      ],
+      "landmarkMaxDelta": 30.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_get_into_bed",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_light-blue-pyjamas_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_get_into_bed",
+      "end": "end",
+      "pose": "lying-side-right",
+      "neutral": "keeper_light-blue-pyjamas_neutral_lying-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_guitar_pickup_acoustic",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.84,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_guitar_pickup_acoustic",
+      "end": "end",
+      "pose": "play-guitar-acoustic",
+      "neutral": "keeper_neutral_play-guitar-acoustic",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_guitar_pickup_flying_v_1967",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.84,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_guitar_pickup_flying_v_1967",
+      "end": "end",
+      "pose": "play-guitar-flying-v-1967",
+      "neutral": "keeper_neutral_play-guitar-flying-v-1967",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_guitar_pickup_gretsch",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.84,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_guitar_pickup_gretsch",
+      "end": "end",
+      "pose": "play-guitar-gretsch",
+      "neutral": "keeper_neutral_play-guitar-gretsch",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_halloween_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.48,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_halloween_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.33,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_back_cycle",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_halloween_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_back_cycle",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_halloween_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_front",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_halloween_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.54,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_front",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_halloween_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.33,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_front_cycle",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_halloween_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_front_cycle",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_halloween_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_halloween_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.72,
+      "canvasAnchorDelta": [
+        1.5,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_halloween_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.48,
+      "canvasAnchorDelta": [
+        1.5,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_side_cycle",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_halloween_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_side_cycle",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_halloween_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_side_start",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_halloween_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_side_start",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_halloween_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_side_stop",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_halloween_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "halloween",
+      "clip": "keeper_halloween_walk_side_stop",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_halloween_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hammer_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.64,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hammer_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.84,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 3,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hammer_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.91,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 4,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hammer_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.79,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 4.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hoover_basic",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.97,
+      "canvasAnchorDelta": [
+        -2,
+        0
+      ],
+      "landmarkMaxDelta": 9.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hoover_basic",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 100,
+      "canvasAnchorDelta": [
+        -2,
+        0
+      ],
+      "landmarkMaxDelta": 9.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hoover_super",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 100,
+      "canvasAnchorDelta": [
+        -3.5,
+        -1
+      ],
+      "landmarkMaxDelta": 12.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hoover_super",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.98,
+      "canvasAnchorDelta": [
+        -3.5,
+        -1
+      ],
+      "landmarkMaxDelta": 13,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hot_drink_drink",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        -1.5,
+        0
+      ],
+      "landmarkMaxDelta": 3.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hot_drink_drink",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.9,
+      "canvasAnchorDelta": [
+        -1.5,
+        0
+      ],
+      "landmarkMaxDelta": 3.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hot_drink_pickup",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.83,
+      "canvasAnchorDelta": [
+        -1.5,
+        0
+      ],
+      "landmarkMaxDelta": 4.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hot_drink_pickup",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.91,
+      "canvasAnchorDelta": [
+        -1.5,
+        0
+      ],
+      "landmarkMaxDelta": 5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hot_drink_pour",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.97,
+      "canvasAnchorDelta": [
+        -3,
+        0
+      ],
+      "landmarkMaxDelta": 5.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hot_drink_pour",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 100,
+      "canvasAnchorDelta": [
+        -3,
+        0
+      ],
+      "landmarkMaxDelta": 5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hot_drink_put_down",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.96,
+      "canvasAnchorDelta": [
+        -2,
+        0
+      ],
+      "landmarkMaxDelta": 3,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hot_drink_put_down",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.92,
+      "canvasAnchorDelta": [
+        -2,
+        0
+      ],
+      "landmarkMaxDelta": 5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hot_drink_stir",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.84,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 2.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hot_drink_stir",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.95,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 2.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "privacy-foam",
+      "clip": "keeper_hot_tub",
+      "end": "start",
+      "pose": "sitting-front",
+      "neutral": "keeper_privacy-foam_neutral_sitting-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "privacy-foam",
+      "clip": "keeper_hot_tub",
+      "end": "end",
+      "pose": "sitting-front",
+      "neutral": "keeper_privacy-foam_neutral_sitting-front",
+      "status": "fail",
+      "mismatchPercent": 99.14,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hungry",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.92,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_hungry",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.91,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_idle",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_idle",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_knight_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.48,
+      "canvasAnchorDelta": [
+        1,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_knight_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.79,
+      "canvasAnchorDelta": [
+        1,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_back_cycle",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_knight_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_back_cycle",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_knight_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_front",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_knight_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 98.6,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_front",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_knight_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 98.37,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_front_cycle",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_knight_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_front_cycle",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_knight_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_knight_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 98.83,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_knight_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 97.43,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_side_cycle",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_knight_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_side_cycle",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_knight_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_side_start",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_knight_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_side_start",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_knight_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_side_stop",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_knight_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "knight",
+      "clip": "keeper_knight_walk_side_stop",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_knight_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_ladder_climb",
+      "end": "start",
+      "pose": "climbing-back",
+      "neutral": "keeper_neutral_climbing-back",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_ladder_climb",
+      "end": "end",
+      "pose": "climbing-back",
+      "neutral": "keeper_neutral_climbing-back",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_lawn_mower_push",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.99,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 6,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_lawn_mower_push",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 100,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 5.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_lean_table_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.79,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_lean_table_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.75,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_lift_button_front",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.98,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_lift_button_front",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.97,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "old-school-workout-kit",
+      "clip": "keeper_lift_weights_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_old-school-workout-kit_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "old-school-workout-kit",
+      "clip": "keeper_lift_weights_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_old-school-workout-kit_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 94.95,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_machete_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.75,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 4.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_machete_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.93,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 4.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_meal_from_oven_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.6,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_meal_from_oven_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.73,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_meal_place_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.91,
+      "canvasAnchorDelta": [
+        -1.5,
+        0
+      ],
+      "landmarkMaxDelta": 4.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_meal_place_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.93,
+      "canvasAnchorDelta": [
+        -1.5,
+        0
+      ],
+      "landmarkMaxDelta": 2.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_fix",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_mechanic_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.93,
+      "canvasAnchorDelta": [
+        2,
+        0
+      ],
+      "landmarkMaxDelta": 5.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_fix",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_mechanic_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.89,
+      "canvasAnchorDelta": [
+        2,
+        0
+      ],
+      "landmarkMaxDelta": 5.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_mechanic_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.42,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_mechanic_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.54,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_back_cycle",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_mechanic_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_back_cycle",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_mechanic_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_front",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_mechanic_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.62,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_front",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_mechanic_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.79,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_front_cycle",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_mechanic_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_front_cycle",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_mechanic_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_mechanic_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.52,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_mechanic_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.52,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_side_cycle",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_mechanic_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_side_cycle",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_mechanic_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_side_start",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_mechanic_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_side_start",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_mechanic_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_side_stop",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_mechanic_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "mechanic",
+      "clip": "keeper_mechanic_walk_side_stop",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_mechanic_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_nap_seated",
+      "end": "start",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_nap_seated",
+      "end": "end",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_operate_outboard",
+      "end": "start",
+      "pose": "standing-rear-right",
+      "neutral": "keeper_neutral_standing-rear-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_operate_outboard",
+      "end": "end",
+      "pose": "standing-rear-right",
+      "neutral": "keeper_neutral_standing-rear-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_paint_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_artist-smock_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.87,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_paint_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_artist-smock_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.9,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 4,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_paint_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_artist-smock_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.99,
+      "canvasAnchorDelta": [
+        -1.5,
+        0
+      ],
+      "landmarkMaxDelta": 5.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_paint_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_artist-smock_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.99,
+      "canvasAnchorDelta": [
+        -1.5,
+        0
+      ],
+      "landmarkMaxDelta": 5.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_parachute_drift",
+      "end": "start",
+      "pose": "parachute-open",
+      "neutral": "keeper_neutral_parachute-open",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_parachute_drift",
+      "end": "end",
+      "pose": "parachute-open",
+      "neutral": "keeper_neutral_parachute-open",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_parachute_jump",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.95,
+      "canvasAnchorDelta": [
+        2.5,
+        0
+      ],
+      "landmarkMaxDelta": 7.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_parachute_jump",
+      "end": "end",
+      "pose": "parachute-open",
+      "neutral": "keeper_neutral_parachute-open",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_parachute_landing",
+      "end": "start",
+      "pose": "parachute-open",
+      "neutral": "keeper_neutral_parachute-open",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_parachute_landing",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.99,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 18.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_dance",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_party-hat_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 80.21,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_dance",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_party-hat_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 80.27,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_eat_cake",
+      "end": "start",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_party-hat_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 8.74,
+      "canvasAnchorDelta": [
+        -4,
+        0
+      ],
+      "landmarkMaxDelta": 7.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_eat_cake",
+      "end": "end",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_party-hat_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 70.26,
+      "canvasAnchorDelta": [
+        -4,
+        0
+      ],
+      "landmarkMaxDelta": 7.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "party-hat-transition",
+      "clip": "keeper_party_hat_put_on_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_party-hat-transition_neutral_standing-back",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "party-hat-transition",
+      "clip": "keeper_party_hat_put_on_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_party-hat-transition_neutral_standing-back",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_idle",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_party-hat_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_idle",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_party-hat_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_turn_back",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_party-hat_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 81.17,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_turn_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_party-hat_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_walk",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_party-hat_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 78.12,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 3.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_walk",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_party-hat_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 76.65,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_walk_cycle",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_party-hat_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_walk_cycle",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_party-hat_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_walk_start",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_party-hat_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_walk_start",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_party-hat_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_walk_stop",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_party-hat_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "party-hat",
+      "clip": "keeper_party_walk_stop",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_party-hat_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_piano",
+      "end": "start",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.99,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_piano",
+      "end": "end",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.97,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_pick_fruit",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.88,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_pick_fruit",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.84,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_pick_up_low",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_pick_up_low",
+      "end": "end",
+      "pose": "holding-small-object-side-right",
+      "neutral": "keeper_neutral_holding-small-object-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_pick_vegetable",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.96,
+      "canvasAnchorDelta": [
+        -1.5,
+        0
+      ],
+      "landmarkMaxDelta": 3,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_pick_vegetable",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.89,
+      "canvasAnchorDelta": [
+        -1.5,
+        0
+      ],
+      "landmarkMaxDelta": 3.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_pirate_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 98.53,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_pirate_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 98.9,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_back_cycle",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_pirate_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_back_cycle",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_pirate_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_front",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_pirate_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.4,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_front",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_pirate_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.48,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_front_cycle",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_pirate_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_front_cycle",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_pirate_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_pirate_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.47,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_pirate_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 98.96,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_side_cycle",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_pirate_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_side_cycle",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_pirate_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_side_start",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_pirate_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_side_start",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_pirate_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_side_stop",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_pirate_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "pirate",
+      "clip": "keeper_pirate_walk_side_stop",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_pirate_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_place_cake",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.91,
+      "canvasAnchorDelta": [
+        -2,
+        0
+      ],
+      "landmarkMaxDelta": 6,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_place_cake",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.91,
+      "canvasAnchorDelta": [
+        -2,
+        0
+      ],
+      "landmarkMaxDelta": 8,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_platform_dive",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.99,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 2.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_platform_dive",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.98,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 9.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_play_drums_back",
+      "end": "start",
+      "pose": "sitting-back",
+      "neutral": "keeper_neutral_sitting-back",
+      "status": "fail",
+      "mismatchPercent": 99.96,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 3,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_play_drums_back",
+      "end": "end",
+      "pose": "sitting-back",
+      "neutral": "keeper_neutral_sitting-back",
+      "status": "fail",
+      "mismatchPercent": 99.98,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_play_drums_front",
+      "end": "start",
+      "pose": "sitting-front",
+      "neutral": "keeper_neutral_sitting-front",
+      "status": "fail",
+      "mismatchPercent": 99.89,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_play_drums_front",
+      "end": "end",
+      "pose": "sitting-front",
+      "neutral": "keeper_neutral_sitting-front",
+      "status": "fail",
+      "mismatchPercent": 99.9,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_play_guitar",
+      "end": "start",
+      "pose": "play-guitar-acoustic",
+      "neutral": "keeper_neutral_play-guitar-acoustic",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_play_guitar",
+      "end": "end",
+      "pose": "play-guitar-acoustic",
+      "neutral": "keeper_neutral_play-guitar-acoustic",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_play_guitar_flying_v_1967",
+      "end": "start",
+      "pose": "play-guitar-flying-v-1967",
+      "neutral": "keeper_neutral_play-guitar-flying-v-1967",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_play_guitar_flying_v_1967",
+      "end": "end",
+      "pose": "play-guitar-flying-v-1967",
+      "neutral": "keeper_neutral_play-guitar-flying-v-1967",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_play_guitar_gretsch",
+      "end": "start",
+      "pose": "play-guitar-gretsch",
+      "neutral": "keeper_neutral_play-guitar-gretsch",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_play_guitar_gretsch",
+      "end": "end",
+      "pose": "play-guitar-gretsch",
+      "neutral": "keeper_neutral_play-guitar-gretsch",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_pottery_front",
+      "end": "start",
+      "pose": "sitting-front",
+      "neutral": "keeper_artist-smock_neutral_sitting-front",
+      "status": "fail",
+      "mismatchPercent": 99.9,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "artist-smock",
+      "clip": "keeper_pottery_front",
+      "end": "end",
+      "pose": "sitting-front",
+      "neutral": "keeper_artist-smock_neutral_sitting-front",
+      "status": "fail",
+      "mismatchPercent": 99.93,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "old-school-workout-kit",
+      "clip": "keeper_pressups_side",
+      "end": "start",
+      "pose": "prone-side-right",
+      "neutral": "keeper_old-school-workout-kit_neutral_prone-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "old-school-workout-kit",
+      "clip": "keeper_pressups_side",
+      "end": "end",
+      "pose": "prone-side-right",
+      "neutral": "keeper_old-school-workout-kit_neutral_prone-side-right",
+      "status": "fail",
+      "mismatchPercent": 98.82,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_put_record",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.96,
+      "canvasAnchorDelta": [
+        -2,
+        0
+      ],
+      "landmarkMaxDelta": 3.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_put_record",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.98,
+      "canvasAnchorDelta": [
+        -2,
+        0
+      ],
+      "landmarkMaxDelta": 13.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_pyjamas_snore",
+      "end": "start",
+      "pose": "lying-side-right",
+      "neutral": "keeper_light-blue-pyjamas_neutral_lying-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_pyjamas_snore",
+      "end": "end",
+      "pose": "lying-side-right",
+      "neutral": "keeper_light-blue-pyjamas_neutral_lying-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_pyjamas_turn_back",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_light-blue-pyjamas_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_pyjamas_turn_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_light-blue-pyjamas_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_pyjamas_walk",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_light-blue-pyjamas_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.64,
+      "canvasAnchorDelta": [
+        0.5,
+        -1
+      ],
+      "landmarkMaxDelta": 2.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_pyjamas_walk",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_light-blue-pyjamas_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.55,
+      "canvasAnchorDelta": [
+        0.5,
+        -1
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_pyjamas_walk_cycle",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_light-blue-pyjamas_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_pyjamas_walk_cycle",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_light-blue-pyjamas_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_pyjamas_walk_start",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_light-blue-pyjamas_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_pyjamas_walk_start",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_light-blue-pyjamas_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_pyjamas_walk_stop",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_light-blue-pyjamas_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "light-blue-pyjamas",
+      "clip": "keeper_pyjamas_walk_stop",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_light-blue-pyjamas_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_reach_high",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_reach_high",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_reach_low",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_reach_low",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_read_front",
+      "end": "start",
+      "pose": "sitting-front",
+      "neutral": "keeper_neutral_sitting-front",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_read_front",
+      "end": "end",
+      "pose": "sitting-front",
+      "neutral": "keeper_neutral_sitting-front",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_read_side",
+      "end": "start",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.95,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_read_side",
+      "end": "end",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.95,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "old-school-workout-kit",
+      "clip": "keeper_ride_bike_front",
+      "end": "start",
+      "pose": "sitting-front",
+      "neutral": "keeper_old-school-workout-kit_neutral_sitting-front",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "old-school-workout-kit",
+      "clip": "keeper_ride_bike_front",
+      "end": "end",
+      "pose": "sitting-front",
+      "neutral": "keeper_old-school-workout-kit_neutral_sitting-front",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_row_boat",
+      "end": "start",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.93,
+      "canvasAnchorDelta": [
+        -3.5,
+        -2
+      ],
+      "landmarkMaxDelta": 8.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_row_boat",
+      "end": "end",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.92,
+      "canvasAnchorDelta": [
+        -3.5,
+        -2
+      ],
+      "landmarkMaxDelta": 7,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_sad",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.99,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_sad",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.99,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_saw_wood",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.87,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 4.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_saw_wood",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.79,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 5.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_jetty_dive",
+      "end": "start",
+      "pose": "scuba-standing-side-right",
+      "neutral": "keeper_scuba_neutral_scuba-standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.95,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_jetty_dive",
+      "end": "end",
+      "pose": "scuba-swim-right",
+      "neutral": "keeper_scuba_neutral_scuba-swim-right",
+      "status": "fail",
+      "mismatchPercent": 100,
+      "canvasAnchorDelta": [
+        0,
+        24
+      ],
+      "landmarkMaxDelta": 24,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_swim_down",
+      "end": "start",
+      "pose": "swimming-front",
+      "neutral": "keeper_scuba_neutral_swimming-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_swim_down",
+      "end": "end",
+      "pose": "swimming-front",
+      "neutral": "keeper_scuba_neutral_swimming-front",
+      "status": "fail",
+      "mismatchPercent": 97.88,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_swim_horizontal",
+      "end": "start",
+      "pose": "swimming-side-right",
+      "neutral": "keeper_scuba_neutral_swimming-side-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_swim_horizontal",
+      "end": "end",
+      "pose": "swimming-side-right",
+      "neutral": "keeper_scuba_neutral_swimming-side-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_swim_up",
+      "end": "start",
+      "pose": "swimming-back",
+      "neutral": "keeper_scuba_neutral_swimming-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_swim_up",
+      "end": "end",
+      "pose": "swimming-back",
+      "neutral": "keeper_scuba_neutral_swimming-back",
+      "status": "fail",
+      "mismatchPercent": 99.32,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 5.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_walk_side",
+      "end": "start",
+      "pose": "scuba-standing-side-right",
+      "neutral": "keeper_scuba_neutral_scuba-standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_walk_side",
+      "end": "end",
+      "pose": "scuba-standing-side-right",
+      "neutral": "keeper_scuba_neutral_scuba-standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.74,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 2.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_walk_side_cycle",
+      "end": "start",
+      "pose": "scuba-standing-side-right",
+      "neutral": "keeper_scuba_neutral_scuba-standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_walk_side_cycle",
+      "end": "end",
+      "pose": "scuba-standing-side-right",
+      "neutral": "keeper_scuba_neutral_scuba-standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_walk_side_start",
+      "end": "start",
+      "pose": "scuba-standing-side-right",
+      "neutral": "keeper_scuba_neutral_scuba-standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_walk_side_start",
+      "end": "end",
+      "pose": "scuba-standing-side-right",
+      "neutral": "keeper_scuba_neutral_scuba-standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_walk_side_stop",
+      "end": "start",
+      "pose": "scuba-standing-side-right",
+      "neutral": "keeper_scuba_neutral_scuba-standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "scuba",
+      "clip": "keeper_scuba_walk_side_stop",
+      "end": "end",
+      "pose": "scuba-standing-side-right",
+      "neutral": "keeper_scuba_neutral_scuba-standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_search_boxes",
+      "end": "start",
+      "pose": "crouching-back",
+      "neutral": "keeper_neutral_crouching-back",
+      "status": "fail",
+      "mismatchPercent": 99.78,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 9,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_search_boxes",
+      "end": "end",
+      "pose": "crouching-back",
+      "neutral": "keeper_neutral_crouching-back",
+      "status": "fail",
+      "mismatchPercent": 99.75,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 9,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "cream-bathrobe",
+      "clip": "keeper_shower_door_open_bathrobe",
+      "end": "start",
+      "pose": "standing-rear-right",
+      "neutral": "keeper_cream-bathrobe_neutral_standing-rear-right",
+      "status": "fail",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "fix endpoint frame"
+    },
+    {
+      "outfit": "cream-bathrobe",
+      "clip": "keeper_shower_door_open_bathrobe",
+      "end": "end",
+      "pose": "standing-rear-right",
+      "neutral": "keeper_cream-bathrobe_neutral_standing-rear-right",
+      "status": "fail",
+      "mismatchPercent": 99.92,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "towel-privacy",
+      "clip": "keeper_shower_enter",
+      "end": "start",
+      "pose": "standing-rear-right",
+      "neutral": "keeper_towel-privacy_neutral_standing-rear-right",
+      "status": "fail",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        1,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "fix endpoint frame"
+    },
+    {
+      "outfit": "towel-privacy",
+      "clip": "keeper_shower_enter",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_towel-privacy_neutral_standing-back",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "cream-bathrobe",
+      "clip": "keeper_shower_enter_bathrobe",
+      "end": "start",
+      "pose": "standing-rear-right",
+      "neutral": "keeper_cream-bathrobe_neutral_standing-rear-right",
+      "status": "fail",
+      "mismatchPercent": 99.52,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 3.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "cream-bathrobe",
+      "clip": "keeper_shower_enter_bathrobe",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_cream-bathrobe_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "towel-privacy",
+      "clip": "keeper_shower_exit",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_towel-privacy_neutral_standing-back",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "towel-privacy",
+      "clip": "keeper_shower_exit",
+      "end": "end",
+      "pose": "standing-rear-right",
+      "neutral": "keeper_towel-privacy_neutral_standing-rear-right",
+      "status": "fail",
+      "mismatchPercent": 99.85,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "mosaic-privacy",
+      "clip": "keeper_shower_wash",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_mosaic-privacy_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "mosaic-privacy",
+      "clip": "keeper_shower_wash",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_mosaic-privacy_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 74.84,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_sit_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_sit_back",
+      "end": "end",
+      "pose": "sitting-back",
+      "neutral": "keeper_neutral_sitting-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_sit_front",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_sit_front",
+      "end": "end",
+      "pose": "sitting-front",
+      "neutral": "keeper_neutral_sitting-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_sit_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_sit_side",
+      "end": "end",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_sitting_turn_back_to_rear",
+      "end": "start",
+      "pose": "sitting-back",
+      "neutral": "keeper_neutral_sitting-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_sitting_turn_back_to_rear",
+      "end": "end",
+      "pose": "sitting-rear-right",
+      "neutral": "keeper_neutral_sitting-rear-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_slide_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.91,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 7,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_slide_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.78,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_snooker",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 3.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_snooker",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.97,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 4.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_souwester_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 97.6,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_souwester_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 97.89,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_back_cycle",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_souwester_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_back_cycle",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_souwester_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_front",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_souwester_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 98.95,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_front",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_souwester_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 98.43,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_front_cycle",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_souwester_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_front_cycle",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_souwester_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_souwester_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.46,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_souwester_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.42,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_side_cycle",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_souwester_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_side_cycle",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_souwester_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_side_start",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_souwester_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_side_start",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_souwester_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_side_stop",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_souwester_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "souwester",
+      "clip": "keeper_souwester_walk_side_stop",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_souwester_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_sow_seeds",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.88,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_sow_seeds",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.91,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_spaceman_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.42,
+      "canvasAnchorDelta": [
+        2,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_spaceman_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.73,
+      "canvasAnchorDelta": [
+        2,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_back_cycle",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_spaceman_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_back_cycle",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_spaceman_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_front",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_spaceman_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.03,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_front",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_spaceman_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.42,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_front_cycle",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_spaceman_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_front_cycle",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_spaceman_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_spaceman_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.69,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_spaceman_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.09,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_side_cycle",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_spaceman_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_side_cycle",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_spaceman_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_side_start",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_spaceman_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_side_start",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_spaceman_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_side_stop",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_spaceman_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "spaceman",
+      "clip": "keeper_spaceman_walk_side_stop",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_spaceman_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_spiral_stairs",
+      "end": "start",
+      "pose": "standing-rear-right",
+      "neutral": "keeper_neutral_standing-rear-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_spiral_stairs",
+      "end": "end",
+      "pose": "standing-rear-right",
+      "neutral": "keeper_neutral_standing-rear-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_spiral_stairs_down",
+      "end": "start",
+      "pose": "standing-rear-right",
+      "neutral": "keeper_neutral_standing-rear-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_spiral_stairs_down",
+      "end": "end",
+      "pose": "standing-rear-right",
+      "neutral": "keeper_neutral_standing-rear-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_spiral_stairs_up",
+      "end": "start",
+      "pose": "standing-rear-right",
+      "neutral": "keeper_neutral_standing-rear-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_spiral_stairs_up",
+      "end": "end",
+      "pose": "standing-rear-right",
+      "neutral": "keeper_neutral_standing-rear-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_stairs_down",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.95,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 4.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_stairs_down",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.93,
+      "canvasAnchorDelta": [
+        -1,
+        0
+      ],
+      "landmarkMaxDelta": 2.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_stairs_up",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        1.5,
+        0
+      ],
+      "landmarkMaxDelta": 3.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_stairs_up",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.93,
+      "canvasAnchorDelta": [
+        1.5,
+        0
+      ],
+      "landmarkMaxDelta": 2.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_sweep_broom",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.9,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 2.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_sweep_broom",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.95,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 3.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "striped-swimming-costume",
+      "clip": "keeper_swim_costume_down",
+      "end": "start",
+      "pose": "swimming-front",
+      "neutral": "keeper_striped-swimming-costume_neutral_swimming-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "striped-swimming-costume",
+      "clip": "keeper_swim_costume_down",
+      "end": "end",
+      "pose": "swimming-front",
+      "neutral": "keeper_striped-swimming-costume_neutral_swimming-front",
+      "status": "fail",
+      "mismatchPercent": 97.67,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "striped-swimming-costume",
+      "clip": "keeper_swim_costume_horizontal",
+      "end": "start",
+      "pose": "swimming-side-right",
+      "neutral": "keeper_striped-swimming-costume_neutral_swimming-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "striped-swimming-costume",
+      "clip": "keeper_swim_costume_horizontal",
+      "end": "end",
+      "pose": "swimming-side-right",
+      "neutral": "keeper_striped-swimming-costume_neutral_swimming-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.96,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 11.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "striped-swimming-costume",
+      "clip": "keeper_swim_costume_up",
+      "end": "start",
+      "pose": "swimming-back",
+      "neutral": "keeper_striped-swimming-costume_neutral_swimming-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "striped-swimming-costume",
+      "clip": "keeper_swim_costume_up",
+      "end": "end",
+      "pose": "swimming-back",
+      "neutral": "keeper_striped-swimming-costume_neutral_swimming-back",
+      "status": "fail",
+      "mismatchPercent": 95.7,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_switch_press_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.39,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_switch_press_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.66,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_switch_press_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.87,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_switch_press_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.93,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 4.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_table_tennis",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.92,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 4,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_table_tennis",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.93,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 4,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_tarzan_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 98.8,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_tarzan_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.17,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_back_cycle",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_tarzan_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_back_cycle",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_tarzan_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_front",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_tarzan_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 98.98,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_front",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_tarzan_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.25,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_front_cycle",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_tarzan_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_front_cycle",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_tarzan_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_tarzan_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.14,
+      "canvasAnchorDelta": [
+        1,
+        0
+      ],
+      "landmarkMaxDelta": 2.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_tarzan_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.31,
+      "canvasAnchorDelta": [
+        1,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_side_cycle",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_tarzan_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_side_cycle",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_tarzan_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_side_start",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_tarzan_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_side_start",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_tarzan_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_side_stop",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_tarzan_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "tarzan",
+      "clip": "keeper_tarzan_walk_side_stop",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_tarzan_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_telescope",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.95,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_telescope",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 0.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "old-school-workout-kit",
+      "clip": "keeper_trampoline_front",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_old-school-workout-kit_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "old-school-workout-kit",
+      "clip": "keeper_trampoline_front",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_old-school-workout-kit_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 96.04,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_turn_back",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_turn_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_turn_front",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_turn_front",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_type_computer",
+      "end": "start",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.99,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_type_computer",
+      "end": "end",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.97,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_urinate_back",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.91,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_urinate_back",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.91,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_video_game",
+      "end": "start",
+      "pose": "sitting-rear-right",
+      "neutral": "keeper_neutral_sitting-rear-right",
+      "status": "fail",
+      "mismatchPercent": 99.96,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 2.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_video_game",
+      "end": "end",
+      "pose": "sitting-rear-right",
+      "neutral": "keeper_neutral_sitting-rear-right",
+      "status": "fail",
+      "mismatchPercent": 99.96,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 2.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_vomit_loo_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.76,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_vomit_loo_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.85,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_walk",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.61,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 2,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_walk",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.73,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_walk_cycle",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_walk_cycle",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_walk_into_lift",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.85,
+      "canvasAnchorDelta": [
+        1,
+        0
+      ],
+      "landmarkMaxDelta": 1.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_walk_into_lift",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.95,
+      "canvasAnchorDelta": [
+        1,
+        0
+      ],
+      "landmarkMaxDelta": 6,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_walk_start",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_walk_start",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_walk_stop",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_walk_stop",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_wash_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_wash_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_watch_movie",
+      "end": "start",
+      "pose": "sitting-rear-right",
+      "neutral": "keeper_neutral_sitting-rear-right",
+      "status": "fail",
+      "mismatchPercent": 99.98,
+      "canvasAnchorDelta": [
+        -2,
+        0
+      ],
+      "landmarkMaxDelta": 6,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_watch_movie",
+      "end": "end",
+      "pose": "sitting-rear-right",
+      "neutral": "keeper_neutral_sitting-rear-right",
+      "status": "fail",
+      "mismatchPercent": 99.91,
+      "canvasAnchorDelta": [
+        -2,
+        0
+      ],
+      "landmarkMaxDelta": 4.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_watch_tv",
+      "end": "start",
+      "pose": "sitting-rear-right",
+      "neutral": "keeper_neutral_sitting-rear-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_watch_tv",
+      "end": "end",
+      "pose": "sitting-rear-right",
+      "neutral": "keeper_neutral_sitting-rear-right",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_water_plants_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.73,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_water_plants_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "fail",
+      "mismatchPercent": 99.78,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 1.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_water_plants_front",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.48,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_water_plants_front",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.59,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_water_plants_side",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.97,
+      "canvasAnchorDelta": [
+        -1.5,
+        0
+      ],
+      "landmarkMaxDelta": 5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_water_plants_side",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.95,
+      "canvasAnchorDelta": [
+        -1.5,
+        0
+      ],
+      "landmarkMaxDelta": 4.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_wave_camera",
+      "end": "start",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 100,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_wave_camera",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "fail",
+      "mismatchPercent": 99.99,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0.5,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_weld",
+      "end": "start",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.94,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 2.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_weld",
+      "end": "end",
+      "pose": "standing-side-right",
+      "neutral": "keeper_neutral_standing-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.93,
+      "canvasAnchorDelta": [
+        -0.5,
+        0
+      ],
+      "landmarkMaxDelta": 2,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_work_back",
+      "end": "start",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_work_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_write_back",
+      "end": "start",
+      "pose": "sitting-back",
+      "neutral": "keeper_neutral_sitting-back",
+      "status": "fail",
+      "mismatchPercent": 99.99,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 3.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_write_back",
+      "end": "end",
+      "pose": "sitting-back",
+      "neutral": "keeper_neutral_sitting-back",
+      "status": "fail",
+      "mismatchPercent": 99.96,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 3.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_write_side",
+      "end": "start",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 100,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 1.25,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_write_side",
+      "end": "end",
+      "pose": "sitting-side-right",
+      "neutral": "keeper_neutral_sitting-side-right",
+      "status": "fail",
+      "mismatchPercent": 99.92,
+      "canvasAnchorDelta": [
+        0.5,
+        0
+      ],
+      "landmarkMaxDelta": 1.75,
+      "remedy": "add bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_yawn",
+      "end": "start",
+      "pose": "standing-rear-right",
+      "neutral": "keeper_neutral_standing-rear-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_yawn",
+      "end": "end",
+      "pose": "standing-rear-right",
+      "neutral": "keeper_neutral_standing-rear-right",
+      "status": "missing-neutral",
+      "mismatchPercent": null,
+      "canvasAnchorDelta": null,
+      "landmarkMaxDelta": null,
+      "remedy": "add neutral and bridge"
+    }
+  ]
+}

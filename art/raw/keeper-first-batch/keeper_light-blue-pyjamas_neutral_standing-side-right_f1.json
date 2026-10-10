@@ -1,0 +1,20 @@
+{
+  "w": 34,
+  "h": 40,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    17,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "light-blue-pyjamas",
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "pose": "standing-side-right",
+  "assetRole": "neutral",
+  "facing": "right",
+  "mirrorSafe": true
+}

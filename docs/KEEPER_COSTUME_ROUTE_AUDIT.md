@@ -5,6 +5,17 @@ sidecars, `data/keeper_asset_contract.json` and the 173-card transition review.
 This audit excludes the standard blue uniform and treats privacy coverings as
 transition states rather than ordinary wearable costumes.
 
+## Neutral-contract update — 10 October 2026
+
+The outfit order in this document is now machine-readable in
+`data/keeper_pose_registry.json` and drives the endpoint report. Every outfit
+with an approved side walk has a matching exact neutral, neutral-ended
+`*_walk_cycle`, `*_walk_start` and `*_walk_stop`; approved front/back walks also
+have neutral-ended cycles. This closes locomotion starts and stops without
+pretending the still-missing bathrobe, party, workout, winter, water-exit and
+novelty activity bridges below have been drawn. Those missing route bridges
+remain the production order after the standard failure queue.
+
 The lawn-mower and three cleaning-tool routes wear the standard uniform and
 therefore create no new costume bridge requirement. Their shed/cupboard-door
 occlusion is equipment entry, not a hidden outfit change. The cleaning family

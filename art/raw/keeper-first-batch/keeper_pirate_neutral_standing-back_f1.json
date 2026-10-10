@@ -1,0 +1,19 @@
+{
+  "w": 38,
+  "h": 48,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    19,
+    48
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "pirate",
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "pose": "standing-back",
+  "assetRole": "neutral",
+  "facing": "back"
+}

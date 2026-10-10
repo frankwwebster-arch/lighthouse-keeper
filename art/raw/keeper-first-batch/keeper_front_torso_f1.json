@@ -13,5 +13,6 @@
     16,
     25
   ],
-  "loop": true
+  "loop": true,
+  "assetRole": "component"
 }

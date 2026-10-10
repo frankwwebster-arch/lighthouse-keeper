@@ -24,5 +24,18 @@
   "reviewOffset": [
     0,
     0
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "sfxCues": [
+    {
+      "frame": 0,
+      "cue": "footstep"
+    },
+    {
+      "frame": 4,
+      "cue": "footstep"
+    }
   ]
 }

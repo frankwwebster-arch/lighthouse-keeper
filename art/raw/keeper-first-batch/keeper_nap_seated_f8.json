@@ -19,5 +19,6 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "nap-seated",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "assetRole": "clip"
 }

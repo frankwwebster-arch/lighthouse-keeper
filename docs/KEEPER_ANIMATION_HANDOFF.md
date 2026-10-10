@@ -4,6 +4,26 @@
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
 
+## Neutral endpoint contract checkpoint — 10 October 2026
+
+`scripts/keeper-contract.ts` is now the authority for recipe-facing pose
+metadata, neutral stills, reusable derived bridges and the real-RGBA endpoint
+audit. `npm test` runs its read-only check first. The current contract has 310
+keeper sheets: the reviewed 191-sheet source batch plus deterministic neutral
+and bridge derivatives. All full-body sidecars carry registered `startPose` and
+`endPose`; technical component/reference sheets are explicitly excluded.
+
+The priority sample flows now have exact walk start/stop/cycle, side-to-front
+and side-to-back turns, side/front/back sits, crouch/stand, reach high/low,
+pick-up/put-down, seated back-to-rear TV turn, seated nap, rear brush and
+pyjama bed-entry/sleep endpoints. `watch_tv.json` uses the new seated bridge;
+`standard_bridge_review.json` exercises the reusable standard set. The exact
+failure queue remains in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`, standard
+first and then the costume-audit order. Its 300 current legacy failures are
+frozen in `data/keeper_endpoint_exceptions.json`; any new failure or regression
+fails `npm test`. Do not add an exception instead of drawing or repairing a new
+sheet.
+
 ## Start here in the next task
 
 1. Read this document in full.

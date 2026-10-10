@@ -5,13 +5,13 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    19.0,
-    42.0
+    19,
+    42
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    19.0,
+    19,
     6.98
   ],
   "reverseFor": "ladder_descend",
@@ -22,5 +22,8 @@
   "reviewOffset": [
     0,
     0
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "climbing-back",
+  "endPose": "climbing-back"
 }

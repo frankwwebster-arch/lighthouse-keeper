@@ -23,6 +23,16 @@ The living-room nap now belongs to an upgradeable passive armchair: basic
 armchair → rocking chair → Lazyboy-style recliner. All tiers retain the same
 11 px seat contact, and passive furniture is excluded from breakdowns.
 
+The recipe studio now consumes a checked keeper pose contract. The reviewed
+191-sheet keeper source batch is unchanged as the visual-history denominator;
+60 exact neutral stills and reusable bridge derivatives bring the working raw
+inventory to 310 keeper sheets. Standard sample flows and the TV seated turn
+have exact neutral joins, approved outfit walks have neutral-ended cycle/start/
+stop derivatives, and every full-body sidecar has registered pose metadata.
+The remaining 300 legacy endpoint repairs are measured from real RGBA pixels
+and ordered in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`. `npm test` rejects new
+or regressed endpoint failures against that frozen migration boundary.
+
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 
 ## Not built yet (agreed design)
@@ -31,7 +41,7 @@ Keeper review cards now also preview, save and export a proposed per-clip
 runtime FPS. Accepted `animationFps` values belong in each animation's source
 JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
-1. Continue Frank's keeper review from the imported production pass: 88 of 173 animations are Happy, 70 Awaiting new draft review, 3 Review later and 12 Unreviewed. The corrective pass checked all 70 awaiting-input comments, re-rendered the clips whose first completion was not genuine, and gives every one a specific read-only response. The review page filters those states and keeps cyclic Previous/Next navigation inside the active filter. Frank's saved per-animation width and height are final production art direction—including accepted costumes and redrafts—while the fixed keeper references protect identity, beard and anatomy. The full 191-sheet technical batch contains 1,420 audited frames with no unresolved verification failure. The scuba jetty walk/dive/swim and parachute jump/drift/landing routes are delivered with exact hand-off frames. `keeper_nap_seated` retains the canonical ragged/tapered side beard and `(16,29)` seat contact. The three cleaning tiers still fetch their complete tool only behind the foreground cupboard door; lawn-mower, artist-smock and guitar routes remain as documented in the animation handoff.
+1. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. In parallel, Frank's imported visual review remains 88 of 173 animations Happy, 70 Awaiting new draft review, 3 Review later and 12 Unreviewed. Frank's saved per-animation width and height remain final production art direction.
 2. Art for the mission floors (aquarium, weather station, hidden lair), their furniture, the lift and a floor-arrival effect (Codex; hooks in docs/FOR_CODEX.md).
 3. Tier art for upgrades (Codex; list in docs/FOR_CODEX.md). Typed commands for upgrading ("upgrade the TV") are not in yet; upgrades are bought from the tap menu.
 4. Mini games: fishing, cooking, telescope spotting.
@@ -45,4 +55,4 @@ JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
 ## Verification and delivery
 
-The current production asset delivery passes the project tests, TypeScript checking, a production build, sprite export, catalogue verification and the complete 1,420-frame identity/scale audit with Frank's saved visual sizes preserved. All 191 keeper exports have exact source dimensions and hard alpha; runtime rendering remains nearest-neighbour at 4× logical size. The delivery is on remote `main`; its Vercel production deployment completed successfully and the canonical live URL returned HTTP 200 on 10 October 2026.
+The preceding remote production delivery passed the project tests, TypeScript checking, production build, sprite export, catalogue verification and complete 1,420-frame identity/scale audit. The neutral-contract delivery must rerun those checks, push `main`, verify the Vercel deployment and then replace this paragraph with the new delivered commit/deployment evidence.

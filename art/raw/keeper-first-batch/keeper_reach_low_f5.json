@@ -1,0 +1,20 @@
+{
+  "w": 38,
+  "h": 40,
+  "frames": 5,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    19,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "interaction": "reach-low",
+  "reverseFor": "withdraw_low"
+}

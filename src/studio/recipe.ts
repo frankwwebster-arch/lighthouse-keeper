@@ -289,11 +289,12 @@ export function cleanCategory(raw: unknown): Category | null {
   return { id: d.id, kind: 'category', label: typeof d.label === 'string' ? d.label : d.id, notes: typeof d.notes === 'string' ? d.notes : '', layer: d.layer === 'front' ? 'front' : d.layer === 'back' ? 'back' : undefined, solid: typeof d.solid === 'boolean' ? d.solid : undefined, spots, variants }
 }
 
-/** The walk for each outfit (the standard uniform's is `keeper_walk`). */
+/** The neutral-ended walk cycle for each outfit, falling back to its approved walk. */
 export const walkFor = (outfit: string, has: (name: string) => boolean): string => {
-  if (outfit === 'standard') return 'keeper_walk'
+  if (outfit === 'standard') return has('keeper_walk_cycle') ? 'keeper_walk_cycle' : 'keeper_walk'
   const short = { 'light-blue-pyjamas': 'pyjamas', 'cream-bathrobe': 'bathrobe', 'party-hat': 'party', souwester: 'souwester', 'artist-smock': 'artist_smock' }[outfit] ?? outfit
-  return [`keeper_${short}_walk`, `keeper_${short}_walk_side`].find(has) ?? 'keeper_walk'
+  const base = [`keeper_${short}_walk`, `keeper_${short}_walk_side`].find(has)
+  return (base && has(`${base}_cycle`) ? `${base}_cycle` : base) ?? (has('keeper_walk_cycle') ? 'keeper_walk_cycle' : 'keeper_walk')
 }
 
 // ─── The timeline ────────────────────────────────────────────────────────────

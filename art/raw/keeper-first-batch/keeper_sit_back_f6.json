@@ -5,13 +5,13 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    17.0,
-    40.0
+    17,
+    40
   ],
   "z": 50,
   "loop": false,
   "seatPoint": [
-    17.0,
+    17,
     29.33
   ],
   "reverseFor": "stand_back",
@@ -23,5 +23,8 @@
   "reviewOffset": [
     0,
     0
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-back",
+  "endPose": "sitting-back"
 }

@@ -5,14 +5,14 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    26.0,
-    40.0
+    26,
+    40
   ],
   "z": 50,
   "loop": false,
   "handUsePoint": [
-    26.0,
-    30.0
+    26,
+    30
   ],
   "facing": "back",
   "interaction": "retrieve-meal-from-oven",
@@ -23,5 +23,8 @@
   "reviewOffset": [
     0,
     0
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-back",
+  "endPose": "standing-back"
 }

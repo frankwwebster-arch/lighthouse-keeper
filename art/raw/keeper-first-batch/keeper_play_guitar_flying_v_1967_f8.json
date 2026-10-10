@@ -19,5 +19,8 @@
   "mirrorSafe": true,
   "facing": "front-right",
   "interaction": "play-guitar",
-  "mirrorsFor": "front-left"
+  "mirrorsFor": "front-left",
+  "assetRole": "clip",
+  "startPose": "play-guitar-flying-v-1967",
+  "endPose": "play-guitar-flying-v-1967"
 }

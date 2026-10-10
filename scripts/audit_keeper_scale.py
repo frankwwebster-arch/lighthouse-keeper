@@ -302,6 +302,8 @@ def load_assets() -> list[dict]:
     assets = []
     for sidecar_path in sorted(RAW.glob("keeper_*_f*.json")):
         sidecar = json.loads(sidecar_path.read_text())
+        if sidecar.get("assetRole") in {"neutral", "bridge"}:
+            continue
         png_path = sidecar_path.with_suffix(".png")
         name = asset_name(png_path)
         strip = Image.open(png_path).convert("RGBA")

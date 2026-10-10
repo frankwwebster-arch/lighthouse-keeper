@@ -75,6 +75,13 @@ image/edit mode, using the approved turnaround as the identity lock. Prompt set:
 
 - `keeper-turn-back-generated-source.png` — exact same keeper, six evenly spaced
   frames from side/three-quarter to full rear, fixed feet and centre, transparent.
+- `keeper-turn-front-generated-source.png` — the approved six-pose artist-smock
+  side-to-front motion edited back to the standard blue-and-cream uniform while
+  preserving pose, identity, spacing and transparent layout.
+- `keeper-sitting-turn-back-to-rear-generated-source.png` — four seated poses
+  rotating from the exact square-back sit neutral to the rear-right TV neutral;
+  the contract pass normalises both endpoints to the shared `(17,40)` seated
+  canvas anchor and supplies reverse playback for the return.
 - `keeper-work-back-generated-source.png` — exact same rear-facing keeper, eight
   frames of broad rhythmic two-arm work at an imaginary waist-high surface.
 - `keeper-sit-side-generated-source.png` — exact same right-facing keeper, six

@@ -1,0 +1,19 @@
+{
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    16,
+    48
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "mechanic",
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "pose": "standing-front",
+  "assetRole": "neutral",
+  "facing": "front"
+}

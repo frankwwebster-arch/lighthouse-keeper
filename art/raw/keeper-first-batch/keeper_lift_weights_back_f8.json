@@ -5,13 +5,13 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    27.0,
-    56.0
+    27,
+    56
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    27.0,
+    27,
     10.355
   ],
   "outfit": "old-school-workout-kit",
@@ -24,5 +24,8 @@
   "reviewOffset": [
     0,
     0
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-back",
+  "endPose": "standing-back"
 }

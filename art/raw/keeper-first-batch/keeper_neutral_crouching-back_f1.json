@@ -1,0 +1,18 @@
+{
+  "w": 36,
+  "h": 40,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    18,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "startPose": "crouching-back",
+  "endPose": "crouching-back",
+  "pose": "crouching-back",
+  "assetRole": "neutral",
+  "facing": "back"
+}

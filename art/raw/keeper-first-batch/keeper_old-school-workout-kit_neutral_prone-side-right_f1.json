@@ -1,0 +1,20 @@
+{
+  "w": 64,
+  "h": 40,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    32,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "old-school-workout-kit",
+  "startPose": "prone-side-right",
+  "endPose": "prone-side-right",
+  "pose": "prone-side-right",
+  "assetRole": "neutral",
+  "facing": "right",
+  "mirrorSafe": true
+}

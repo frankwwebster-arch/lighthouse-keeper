@@ -1,0 +1,19 @@
+{
+  "w": 36,
+  "h": 40,
+  "frames": 4,
+  "fps": 6,
+  "density": 4,
+  "anchor": [
+    18,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "facing": "back",
+  "interaction": "crouch",
+  "startPose": "standing-back",
+  "endPose": "crouching-back",
+  "reverseFor": "stand_back_from_crouch",
+  "assetRole": "bridge"
+}

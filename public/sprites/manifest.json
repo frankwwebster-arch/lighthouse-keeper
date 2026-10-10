@@ -36,6 +36,9 @@
    25,
    24
   ],
+  "startPose": "floating-prone-right",
+  "endPose": "floating-prone-right",
+  "assetRole": "clip",
   "loop": true,
   "facing": "right-prone",
   "interaction": "anti-gravity-float",
@@ -56,6 +59,9 @@
    41.65,
    21.17
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -78,6 +84,9 @@
    37.33,
    22.335
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -100,6 +109,9 @@
    17,
    29.385
   ],
+  "startPose": "standing-front",
+  "endPose": "sitting-front",
+  "assetRole": "clip",
   "outfit": "artist-smock",
   "loop": false,
   "reverseFor": "artist_smock_stand_front",
@@ -118,6 +130,9 @@
    16,
    40
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "outfit": "artist-smock",
   "loop": false,
   "reverseFor": "artist_smock_turn_side",
@@ -136,6 +151,9 @@
    16,
    40
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-front",
+  "assetRole": "clip",
   "outfit": "artist-smock",
   "loop": false,
   "reverseFor": "artist_smock_turn_side_from_front",
@@ -158,12 +176,201 @@
    1,
    0
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "artist-smock",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "artist-smock-walk",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_artist_smock_walk_cycle": {
+  "file": "keeper_artist_smock_walk_cycle.png",
+  "w": 36,
+  "h": 40,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   18,
+   40
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "artist-smock",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "artist-smock-walk",
+  "z": 50
+ },
+ "keeper_artist_smock_walk_start": {
+  "file": "keeper_artist_smock_walk_start.png",
+  "w": 36,
+  "h": 40,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   18,
+   40
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "artist-smock",
+  "loop": false,
+  "reverseFor": "walk_stop",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "artist-smock-walk-start",
+  "z": 50
+ },
+ "keeper_artist_smock_walk_stop": {
+  "file": "keeper_artist_smock_walk_stop.png",
+  "w": 36,
+  "h": 40,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   18,
+   40
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "artist-smock",
+  "loop": false,
+  "reverseFor": "walk_start",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "artist-smock-walk-stop",
+  "z": 50
+ },
+ "keeper_artist-smock_neutral_sitting-front": {
+  "file": "keeper_artist-smock_neutral_sitting-front.png",
+  "w": 34,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   17,
+   40
+  ],
+  "startPose": "sitting-front",
+  "endPose": "sitting-front",
+  "assetRole": "neutral",
+  "pose": "sitting-front",
+  "outfit": "artist-smock",
+  "loop": false,
+  "facing": "front",
+  "z": 50
+ },
+ "keeper_artist-smock_neutral_standing-back": {
+  "file": "keeper_artist-smock_neutral_standing-back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "neutral",
+  "pose": "standing-back",
+  "outfit": "artist-smock",
+  "loop": false,
+  "facing": "right-to-back",
+  "z": 50
+ },
+ "keeper_artist-smock_neutral_standing-front": {
+  "file": "keeper_artist-smock_neutral_standing-front.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "neutral",
+  "pose": "standing-front",
+  "outfit": "artist-smock",
+  "loop": false,
+  "facing": "right-to-front",
+  "z": 50
+ },
+ "keeper_artist-smock_neutral_standing-side-right": {
+  "file": "keeper_artist-smock_neutral_standing-side-right.png",
+  "w": 36,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   18,
+   40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "neutral",
+  "pose": "standing-side-right",
+  "outfit": "artist-smock",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
   "z": 50
  },
  "keeper_back_arm_l": {
@@ -180,6 +387,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -197,6 +405,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -214,6 +423,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -231,6 +441,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -248,6 +459,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -265,6 +477,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -279,6 +492,9 @@
    23,
    40
   ],
+  "startPose": "standing-side-right",
+  "endPose": "sitting-front",
+  "assetRole": "clip",
   "outfit": "towel-privacy",
   "loop": false,
   "reverseFor": "bath-exit",
@@ -299,6 +515,9 @@
    23,
    40
   ],
+  "startPose": "sitting-front",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "towel-privacy",
   "loop": false,
   "mirrorSafe": true,
@@ -322,6 +541,9 @@
    19.5,
    30.045
   ],
+  "startPose": "sitting-front",
+  "endPose": "sitting-front",
+  "assetRole": "clip",
   "outfit": "mosaic-privacy",
   "loop": true,
   "facing": "front",
@@ -343,12 +565,124 @@
    1,
    0
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "cream-bathrobe",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "bathrobe-walk",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_bathrobe_walk_cycle": {
+  "file": "keeper_bathrobe_walk_cycle.png",
+  "w": 32,
+  "h": 40,
+  "frames": 9,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "slipper_step"
+   },
+   {
+    "frame": 6,
+    "cue": "slipper_step"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "cream-bathrobe",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "bathrobe-walk",
+  "z": 50
+ },
+ "keeper_bathrobe_walk_start": {
+  "file": "keeper_bathrobe_walk_start.png",
+  "w": 32,
+  "h": 40,
+  "frames": 5,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "slipper_step"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "cream-bathrobe",
+  "loop": false,
+  "reverseFor": "walk_stop",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "bathrobe-walk-start",
+  "z": 50
+ },
+ "keeper_bathrobe_walk_stop": {
+  "file": "keeper_bathrobe_walk_stop.png",
+  "w": 32,
+  "h": 40,
+  "frames": 5,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "slipper_step"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "cream-bathrobe",
+  "loop": false,
+  "reverseFor": "walk_start",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "bathrobe-walk-stop",
   "z": 50
  },
  "keeper_bbq_back": {
@@ -366,6 +700,9 @@
    17,
    22.09
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "loop": true,
   "facing": "back",
   "interaction": "use-bbq",
@@ -390,6 +727,9 @@
    40.6,
    23.75
   ],
+  "startPose": "standing-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "clip",
   "loop": false,
   "mirrorSafe": true,
   "facing": "right",
@@ -416,6 +756,9 @@
    40.6,
    23.875
   ],
+  "startPose": "sitting-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "mirrorSafe": true,
   "facing": "front-right",
@@ -434,6 +777,9 @@
    16,
    40
   ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
   "loop": true,
   "facing": "front",
   "interaction": "emote-bored",
@@ -454,6 +800,9 @@
    42.125,
    35.925
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -476,6 +825,9 @@
    16,
    21
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "loop": true,
   "z": 50
  },
@@ -494,6 +846,9 @@
    27,
    30.15
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "loop": false,
   "facing": "back",
   "interaction": "retrieve-cake-from-oven",
@@ -514,6 +869,9 @@
    39.55,
    20
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "mirrorSafe": true,
   "facing": "back-to-right",
@@ -536,6 +894,9 @@
    35.4,
    20.3
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -558,6 +919,9 @@
    35.15,
    20.5
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -576,6 +940,9 @@
    18,
    40
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -598,6 +965,9 @@
    26,
    17
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "loop": true,
   "facing": "back",
   "interaction": "check-instrument",
@@ -618,6 +988,9 @@
    27.555,
    17.575
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -640,6 +1013,9 @@
    47.4,
    37.195
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "winter-coat",
   "loop": true,
   "mirrorSafe": true,
@@ -663,6 +1039,9 @@
    18,
    38.05
   ],
+  "startPose": "crouching-back",
+  "endPose": "crouching-back",
+  "assetRole": "clip",
   "loop": true,
   "facing": "back",
   "interaction": "collect-eggs",
@@ -683,6 +1062,9 @@
    16,
    21
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "loop": true,
   "z": 50
  },
@@ -705,9 +1087,72 @@
    20,
    22.12
   ],
+  "startPose": "sitting-front",
+  "endPose": "sitting-front",
+  "assetRole": "clip",
   "loop": true,
   "facing": "front",
   "interaction": "count-money",
+  "z": 50
+ },
+ "keeper_cream-bathrobe_neutral_standing-back": {
+  "file": "keeper_cream-bathrobe_neutral_standing-back.png",
+  "w": 56,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   28,
+   40
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "neutral",
+  "pose": "standing-back",
+  "outfit": "cream-bathrobe",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_cream-bathrobe_neutral_standing-rear-right": {
+  "file": "keeper_cream-bathrobe_neutral_standing-rear-right.png",
+  "w": 42,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   21,
+   40
+  ],
+  "startPose": "standing-rear-right",
+  "endPose": "standing-rear-right",
+  "assetRole": "neutral",
+  "pose": "standing-rear-right",
+  "outfit": "cream-bathrobe",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "rear-right",
+  "z": 50
+ },
+ "keeper_cream-bathrobe_neutral_standing-side-right": {
+  "file": "keeper_cream-bathrobe_neutral_standing-side-right.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "neutral",
+  "pose": "standing-side-right",
+  "outfit": "cream-bathrobe",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
   "z": 50
  },
  "keeper_cross": {
@@ -721,9 +1166,32 @@
    16,
    40
   ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
   "loop": true,
   "facing": "front",
   "interaction": "emote-cross",
+  "z": 50
+ },
+ "keeper_crouch_back": {
+  "file": "keeper_crouch_back.png",
+  "w": 36,
+  "h": 40,
+  "frames": 4,
+  "fps": 6,
+  "density": 4,
+  "anchor": [
+   18,
+   40
+  ],
+  "startPose": "standing-back",
+  "endPose": "crouching-back",
+  "assetRole": "bridge",
+  "loop": false,
+  "reverseFor": "stand_back_from_crouch",
+  "facing": "back",
+  "interaction": "crouch",
   "z": 50
  },
  "keeper_crouch_work_back": {
@@ -741,6 +1209,9 @@
    18,
    38.05
   ],
+  "startPose": "crouching-back",
+  "endPose": "crouching-back",
+  "assetRole": "clip",
   "loop": true,
   "facing": "back",
   "interaction": "ground-work",
@@ -757,6 +1228,9 @@
    16,
    40
   ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "front",
@@ -782,6 +1256,9 @@
    56,
    12.84
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -804,6 +1281,9 @@
    31.5,
    38.07
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -826,6 +1306,9 @@
    25.16,
    20.5
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "reverseFor": "door_close_back",
   "mirrorSafe": true,
@@ -846,6 +1329,9 @@
    25.5,
    20.1
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "reverseFor": "door_close_side",
   "mirrorSafe": true,
@@ -866,6 +1352,9 @@
    25.5,
    21.5
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "light-blue-pyjamas",
   "loop": false,
   "reverseFor": "door_close_side_pyjamas",
@@ -894,6 +1383,9 @@
    28.675,
    16.48
   ],
+  "startPose": "sitting-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "front-right",
@@ -920,6 +1412,9 @@
    25.635,
    20.8
   ],
+  "startPose": "sitting-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -946,6 +1441,9 @@
    25.16,
    17.27
   ],
+  "startPose": "sitting-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "z": 50
@@ -965,6 +1463,9 @@
    30.375,
    34.21
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "mirrorSafe": true,
   "facing": "right",
@@ -987,6 +1488,9 @@
    24.4,
    14.175
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -1013,6 +1517,9 @@
    109.2,
    37.9
   ],
+  "startPose": "sitting-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -1035,6 +1542,9 @@
    85,
    33.08
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -1056,6 +1566,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -1073,6 +1584,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -1090,6 +1602,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -1107,6 +1620,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -1124,6 +1638,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -1141,6 +1656,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -1158,6 +1674,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -1175,6 +1692,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -1192,6 +1710,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -1209,6 +1728,7 @@
    16,
    40
   ],
+  "assetRole": "component",
   "loop": true,
   "z": 50
  },
@@ -1231,6 +1751,9 @@
    38,
    23.98
   ],
+  "startPose": "standing-side-right",
+  "endPose": "lying-side-right",
+  "assetRole": "clip",
   "outfit": "light-blue-pyjamas",
   "loop": false,
   "reverseFor": "get_out_of_bed",
@@ -1260,6 +1783,7 @@
   "upgradeTier": 1,
   "startPose": "standing-side-right",
   "endPose": "play-guitar-acoustic",
+  "assetRole": "clip",
   "loop": false,
   "facing": "side-to-back-to-front-right",
   "interaction": "pick-up-guitar",
@@ -1285,6 +1809,7 @@
   "upgradeTier": 3,
   "startPose": "standing-side-right",
   "endPose": "play-guitar-flying-v-1967",
+  "assetRole": "clip",
   "loop": false,
   "facing": "side-to-back-to-front-right",
   "interaction": "pick-up-guitar",
@@ -1310,9 +1835,68 @@
   "upgradeTier": 2,
   "startPose": "standing-side-right",
   "endPose": "play-guitar-gretsch",
+  "assetRole": "clip",
   "loop": false,
   "facing": "side-to-back-to-front-right",
   "interaction": "pick-up-guitar",
+  "z": 50
+ },
+ "keeper_halloween_neutral_standing-back": {
+  "file": "keeper_halloween_neutral_standing-back.png",
+  "w": 34,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   17,
+   48
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "neutral",
+  "pose": "standing-back",
+  "outfit": "halloween",
+  "loop": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_halloween_neutral_standing-front": {
+  "file": "keeper_halloween_neutral_standing-front.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "neutral",
+  "pose": "standing-front",
+  "outfit": "halloween",
+  "loop": false,
+  "facing": "front",
+  "z": 50
+ },
+ "keeper_halloween_neutral_standing-side-right": {
+  "file": "keeper_halloween_neutral_standing-side-right.png",
+  "w": 38,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   19,
+   48
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "neutral",
+  "pose": "standing-side-right",
+  "outfit": "halloween",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
   "z": 50
  },
  "keeper_halloween_walk_back": {
@@ -1330,6 +1914,53 @@
    0,
    -1
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
+  "outfit": "halloween",
+  "loop": true,
+  "facing": "back",
+  "interaction": "halloween-walk",
+  "z": 50
+ },
+ "keeper_halloween_walk_back_cycle": {
+  "file": "keeper_halloween_walk_back_cycle.png",
+  "w": 34,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   17,
+   48
+  ],
+  "movementVector": [
+   0,
+   -1
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "bridge",
   "outfit": "halloween",
   "loop": true,
   "facing": "back",
@@ -1351,6 +1982,53 @@
    0,
    1
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
+  "outfit": "halloween",
+  "loop": true,
+  "facing": "front",
+  "interaction": "halloween-walk",
+  "z": 50
+ },
+ "keeper_halloween_walk_front_cycle": {
+  "file": "keeper_halloween_walk_front_cycle.png",
+  "w": 32,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   0,
+   1
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "bridge",
   "outfit": "halloween",
   "loop": true,
   "facing": "front",
@@ -1372,12 +2050,124 @@
    1,
    0
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "halloween",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "halloween-walk",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_halloween_walk_side_cycle": {
+  "file": "keeper_halloween_walk_side_cycle.png",
+  "w": 38,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   19,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "halloween",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "halloween-walk",
+  "z": 50
+ },
+ "keeper_halloween_walk_side_start": {
+  "file": "keeper_halloween_walk_side_start.png",
+  "w": 38,
+  "h": 48,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   19,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "halloween",
+  "loop": false,
+  "reverseFor": "walk_stop",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "halloween-walk-start",
+  "z": 50
+ },
+ "keeper_halloween_walk_side_stop": {
+  "file": "keeper_halloween_walk_side_stop.png",
+  "w": 38,
+  "h": 48,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   19,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "halloween",
+  "loop": false,
+  "reverseFor": "walk_start",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "halloween-walk-stop",
   "z": 50
  },
  "keeper_hammer_back": {
@@ -1395,6 +2185,9 @@
    17,
    23.1
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "loop": true,
   "facing": "back",
   "interaction": "hammer-workbench",
@@ -1415,6 +2208,9 @@
    37.3,
    25.3
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -1443,6 +2239,9 @@
   ],
   "propVariant": "basic-upright-hoover",
   "upgradeTier": 2,
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -1471,6 +2270,9 @@
   ],
   "propVariant": "eccentric-super-hoover",
   "upgradeTier": 3,
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -1493,6 +2295,9 @@
    36.2,
    17.115
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -1515,6 +2320,10 @@
    42.5,
    28
   ],
+  "propHandoffFrame": 5,
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "mirrorSafe": true,
   "facing": "right",
@@ -1537,6 +2346,9 @@
    45.46,
    28.36
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "mirrorSafe": true,
   "facing": "right",
@@ -1559,6 +2371,10 @@
    44.6,
    28.36
   ],
+  "propHandoffFrame": 5,
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "mirrorSafe": true,
   "facing": "right",
@@ -1581,6 +2397,9 @@
    41.16,
    28.24
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "mirrorSafe": true,
   "facing": "right",
@@ -1603,6 +2422,9 @@
    20,
    28.775
   ],
+  "startPose": "sitting-front",
+  "endPose": "sitting-front",
+  "assetRole": "clip",
   "outfit": "privacy-foam",
   "loop": true,
   "facing": "front",
@@ -1620,6 +2442,9 @@
    16,
    40
   ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
   "loop": true,
   "facing": "front",
   "interaction": "emote-hungry",
@@ -1636,7 +2461,68 @@
    16,
    40
   ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
   "loop": true,
+  "z": 50
+ },
+ "keeper_knight_neutral_standing-back": {
+  "file": "keeper_knight_neutral_standing-back.png",
+  "w": 38,
+  "h": 50,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   19,
+   50
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "neutral",
+  "pose": "standing-back",
+  "outfit": "knight",
+  "loop": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_knight_neutral_standing-front": {
+  "file": "keeper_knight_neutral_standing-front.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "neutral",
+  "pose": "standing-front",
+  "outfit": "knight",
+  "loop": false,
+  "facing": "front",
+  "z": 50
+ },
+ "keeper_knight_neutral_standing-side-right": {
+  "file": "keeper_knight_neutral_standing-side-right.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "neutral",
+  "pose": "standing-side-right",
+  "outfit": "knight",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
   "z": 50
  },
  "keeper_knight_walk_back": {
@@ -1654,6 +2540,53 @@
    0,
    -1
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
+  "outfit": "knight",
+  "loop": true,
+  "facing": "back",
+  "interaction": "knight-walk",
+  "z": 50
+ },
+ "keeper_knight_walk_back_cycle": {
+  "file": "keeper_knight_walk_back_cycle.png",
+  "w": 38,
+  "h": 50,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   19,
+   50
+  ],
+  "movementVector": [
+   0,
+   -1
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "bridge",
   "outfit": "knight",
   "loop": true,
   "facing": "back",
@@ -1675,6 +2608,53 @@
    0,
    1
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
+  "outfit": "knight",
+  "loop": true,
+  "facing": "front",
+  "interaction": "knight-walk",
+  "z": 50
+ },
+ "keeper_knight_walk_front_cycle": {
+  "file": "keeper_knight_walk_front_cycle.png",
+  "w": 32,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   0,
+   1
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "bridge",
   "outfit": "knight",
   "loop": true,
   "facing": "front",
@@ -1696,12 +2676,124 @@
    1,
    0
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "knight",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "knight-walk",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_knight_walk_side_cycle": {
+  "file": "keeper_knight_walk_side_cycle.png",
+  "w": 32,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "knight",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "knight-walk",
+  "z": 50
+ },
+ "keeper_knight_walk_side_start": {
+  "file": "keeper_knight_walk_side_start.png",
+  "w": 32,
+  "h": 48,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "knight",
+  "loop": false,
+  "reverseFor": "walk_stop",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "knight-walk-start",
+  "z": 50
+ },
+ "keeper_knight_walk_side_stop": {
+  "file": "keeper_knight_walk_side_stop.png",
+  "w": 32,
+  "h": 48,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "knight",
+  "loop": false,
+  "reverseFor": "walk_start",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "knight-walk-stop",
   "z": 50
  },
  "keeper_ladder_climb": {
@@ -1719,6 +2811,9 @@
    19,
    6.98
   ],
+  "startPose": "climbing-back",
+  "endPose": "climbing-back",
+  "assetRole": "clip",
   "loop": true,
   "reverseFor": "ladder_descend",
   "z": 50
@@ -1743,6 +2838,9 @@
    0
   ],
   "propVariant": "manual-reel-mower",
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -1765,6 +2863,9 @@
    16,
    27.26
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "loop": true,
   "facing": "back",
   "interaction": "inspect-table",
@@ -1785,6 +2886,9 @@
    28.495,
    17.23
   ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "front",
@@ -1807,10 +2911,91 @@
    27,
    10.355
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "outfit": "old-school-workout-kit",
   "loop": true,
   "facing": "back",
   "interaction": "lift-weights",
+  "z": 50
+ },
+ "keeper_light-blue-pyjamas_neutral_lying-side-right": {
+  "file": "keeper_light-blue-pyjamas_neutral_lying-side-right.png",
+  "w": 48,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   24,
+   40
+  ],
+  "startPose": "lying-side-right",
+  "endPose": "lying-side-right",
+  "assetRole": "neutral",
+  "pose": "lying-side-right",
+  "outfit": "light-blue-pyjamas",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "z": 50
+ },
+ "keeper_light-blue-pyjamas_neutral_standing-back": {
+  "file": "keeper_light-blue-pyjamas_neutral_standing-back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "neutral",
+  "pose": "standing-back",
+  "outfit": "light-blue-pyjamas",
+  "loop": false,
+  "facing": "front-to-back",
+  "z": 50
+ },
+ "keeper_light-blue-pyjamas_neutral_standing-front": {
+  "file": "keeper_light-blue-pyjamas_neutral_standing-front.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "neutral",
+  "pose": "standing-front",
+  "outfit": "light-blue-pyjamas",
+  "loop": false,
+  "facing": "front-to-back",
+  "z": 50
+ },
+ "keeper_light-blue-pyjamas_neutral_standing-side-right": {
+  "file": "keeper_light-blue-pyjamas_neutral_standing-side-right.png",
+  "w": 34,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   17,
+   40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "neutral",
+  "pose": "standing-side-right",
+  "outfit": "light-blue-pyjamas",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
   "z": 50
  },
  "keeper_machete_side": {
@@ -1828,6 +3013,9 @@
    84.65,
    36.52
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -1850,6 +3038,9 @@
    26,
    30
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "loop": false,
   "facing": "back",
   "interaction": "retrieve-meal-from-oven",
@@ -1870,6 +3061,9 @@
    44.525,
    22.14
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "mirrorSafe": true,
   "facing": "right",
@@ -1892,12 +3086,73 @@
    34.5,
    22.45
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "mechanic",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "fix-vehicle",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_mechanic_neutral_standing-back": {
+  "file": "keeper_mechanic_neutral_standing-back.png",
+  "w": 36,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   18,
+   48
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "neutral",
+  "pose": "standing-back",
+  "outfit": "mechanic",
+  "loop": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_mechanic_neutral_standing-front": {
+  "file": "keeper_mechanic_neutral_standing-front.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "neutral",
+  "pose": "standing-front",
+  "outfit": "mechanic",
+  "loop": false,
+  "facing": "front",
+  "z": 50
+ },
+ "keeper_mechanic_neutral_standing-side-right": {
+  "file": "keeper_mechanic_neutral_standing-side-right.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "neutral",
+  "pose": "standing-side-right",
+  "outfit": "mechanic",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
   "z": 50
  },
  "keeper_mechanic_walk_back": {
@@ -1915,6 +3170,53 @@
    0,
    -1
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
+  "outfit": "mechanic",
+  "loop": true,
+  "facing": "back",
+  "interaction": "mechanic-walk",
+  "z": 50
+ },
+ "keeper_mechanic_walk_back_cycle": {
+  "file": "keeper_mechanic_walk_back_cycle.png",
+  "w": 36,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   18,
+   48
+  ],
+  "movementVector": [
+   0,
+   -1
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "boot_step"
+   },
+   {
+    "frame": 6,
+    "cue": "boot_step"
+   }
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "bridge",
   "outfit": "mechanic",
   "loop": true,
   "facing": "back",
@@ -1936,6 +3238,53 @@
    0,
    1
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
+  "outfit": "mechanic",
+  "loop": true,
+  "facing": "front",
+  "interaction": "mechanic-walk",
+  "z": 50
+ },
+ "keeper_mechanic_walk_front_cycle": {
+  "file": "keeper_mechanic_walk_front_cycle.png",
+  "w": 32,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   0,
+   1
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "boot_step"
+   },
+   {
+    "frame": 6,
+    "cue": "boot_step"
+   }
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "bridge",
   "outfit": "mechanic",
   "loop": true,
   "facing": "front",
@@ -1957,12 +3306,162 @@
    1,
    0
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "mechanic",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "mechanic-walk",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_mechanic_walk_side_cycle": {
+  "file": "keeper_mechanic_walk_side_cycle.png",
+  "w": 32,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "boot_step"
+   },
+   {
+    "frame": 6,
+    "cue": "boot_step"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "mechanic",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "mechanic-walk",
+  "z": 50
+ },
+ "keeper_mechanic_walk_side_start": {
+  "file": "keeper_mechanic_walk_side_start.png",
+  "w": 32,
+  "h": 48,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "boot_step"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "mechanic",
+  "loop": false,
+  "reverseFor": "walk_stop",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "mechanic-walk-start",
+  "z": 50
+ },
+ "keeper_mechanic_walk_side_stop": {
+  "file": "keeper_mechanic_walk_side_stop.png",
+  "w": 32,
+  "h": 48,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "boot_step"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "mechanic",
+  "loop": false,
+  "reverseFor": "walk_start",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "mechanic-walk-stop",
+  "z": 50
+ },
+ "keeper_mosaic-privacy_neutral_sitting-front": {
+  "file": "keeper_mosaic-privacy_neutral_sitting-front.png",
+  "w": 40,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   20,
+   40
+  ],
+  "startPose": "sitting-front",
+  "endPose": "sitting-front",
+  "assetRole": "neutral",
+  "pose": "sitting-front",
+  "outfit": "mosaic-privacy",
+  "loop": false,
+  "facing": "front",
+  "z": 50
+ },
+ "keeper_mosaic-privacy_neutral_standing-back": {
+  "file": "keeper_mosaic-privacy_neutral_standing-back.png",
+  "w": 50,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   25,
+   40
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "neutral",
+  "pose": "standing-back",
+  "outfit": "mosaic-privacy",
+  "loop": false,
+  "facing": "back",
   "z": 50
  },
  "keeper_nap_seated": {
@@ -1982,11 +3481,231 @@
   ],
   "startPose": "sitting-side-right",
   "endPose": "sitting-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "nap-seated",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_neutral_crouching-back": {
+  "file": "keeper_neutral_crouching-back.png",
+  "w": 36,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   18,
+   40
+  ],
+  "startPose": "crouching-back",
+  "endPose": "crouching-back",
+  "assetRole": "neutral",
+  "pose": "crouching-back",
+  "loop": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_neutral_holding-small-object-side-right": {
+  "file": "keeper_neutral_holding-small-object-side-right.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "holding-small-object-side-right",
+  "endPose": "holding-small-object-side-right",
+  "assetRole": "neutral",
+  "pose": "holding-small-object-side-right",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "z": 50
+ },
+ "keeper_neutral_sitting-back": {
+  "file": "keeper_neutral_sitting-back.png",
+  "w": 34,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   17,
+   40
+  ],
+  "startPose": "sitting-back",
+  "endPose": "sitting-back",
+  "assetRole": "neutral",
+  "pose": "sitting-back",
+  "loop": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_neutral_sitting-front": {
+  "file": "keeper_neutral_sitting-front.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "sitting-front",
+  "endPose": "sitting-front",
+  "assetRole": "neutral",
+  "pose": "sitting-front",
+  "loop": false,
+  "z": 50
+ },
+ "keeper_neutral_sitting-rear-right": {
+  "file": "keeper_neutral_sitting-rear-right.png",
+  "w": 34,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   17,
+   40
+  ],
+  "startPose": "sitting-rear-right",
+  "endPose": "sitting-rear-right",
+  "assetRole": "neutral",
+  "pose": "sitting-rear-right",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "rear-right",
+  "z": 50
+ },
+ "keeper_neutral_sitting-side-right": {
+  "file": "keeper_neutral_sitting-side-right.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "sitting-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "neutral",
+  "pose": "sitting-side-right",
+  "loop": false,
+  "mirrorSafe": true,
+  "z": 50
+ },
+ "keeper_neutral_standing-back": {
+  "file": "keeper_neutral_standing-back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "neutral",
+  "pose": "standing-back",
+  "loop": false,
+  "z": 50
+ },
+ "keeper_neutral_standing-front": {
+  "file": "keeper_neutral_standing-front.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "neutral",
+  "pose": "standing-front",
+  "loop": false,
+  "z": 50
+ },
+ "keeper_neutral_standing-side-right": {
+  "file": "keeper_neutral_standing-side-right.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "neutral",
+  "pose": "standing-side-right",
+  "loop": false,
+  "mirrorSafe": true,
+  "z": 50
+ },
+ "keeper_old-school-workout-kit_neutral_prone-side-right": {
+  "file": "keeper_old-school-workout-kit_neutral_prone-side-right.png",
+  "w": 64,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   32,
+   40
+  ],
+  "startPose": "prone-side-right",
+  "endPose": "prone-side-right",
+  "assetRole": "neutral",
+  "pose": "prone-side-right",
+  "outfit": "old-school-workout-kit",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "z": 50
+ },
+ "keeper_old-school-workout-kit_neutral_standing-back": {
+  "file": "keeper_old-school-workout-kit_neutral_standing-back.png",
+  "w": 54,
+  "h": 56,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   27,
+   56
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "neutral",
+  "pose": "standing-back",
+  "outfit": "old-school-workout-kit",
+  "loop": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_old-school-workout-kit_neutral_standing-front": {
+  "file": "keeper_old-school-workout-kit_neutral_standing-front.png",
+  "w": 32,
+  "h": 80,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   80
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "neutral",
+  "pose": "standing-front",
+  "outfit": "old-school-workout-kit",
+  "loop": false,
+  "facing": "front",
   "z": 50
  },
  "keeper_operate_outboard": {
@@ -2004,6 +3723,9 @@
    4.5,
    21.31
   ],
+  "startPose": "standing-rear-right",
+  "endPose": "standing-rear-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "rear-right",
@@ -2026,6 +3748,9 @@
    20.5,
    17.345
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "outfit": "artist-smock",
   "loop": true,
   "facing": "back",
@@ -2047,6 +3772,9 @@
    39.81,
    18.035
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "artist-smock",
   "loop": true,
   "mirrorSafe": true,
@@ -2068,6 +3796,7 @@
   ],
   "startPose": "parachute-open",
   "endPose": "parachute-open",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -2086,6 +3815,9 @@
    36,
    84
   ],
+  "startPose": "standing-side-right",
+  "endPose": "parachute-open",
+  "assetRole": "clip",
   "loop": false,
   "mirrorSafe": true,
   "facing": "right",
@@ -2106,6 +3838,7 @@
   ],
   "startPose": "parachute-open",
   "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "mirrorSafe": true,
   "facing": "right",
@@ -2124,6 +3857,9 @@
    16,
    48
   ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
   "outfit": "party-hat",
   "loop": true,
   "facing": "front",
@@ -2149,6 +3885,9 @@
    27,
    25
   ],
+  "startPose": "sitting-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "clip",
   "outfit": "party-hat",
   "loop": true,
   "mirrorSafe": true,
@@ -2172,6 +3911,9 @@
    16,
    13
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "outfit": "party-hat-transition",
   "loop": false,
   "reverseFor": "party-hat-remove-back",
@@ -2190,6 +3932,9 @@
    16,
    48
   ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
   "outfit": "party-hat",
   "loop": true,
   "facing": "front",
@@ -2207,6 +3952,9 @@
    16,
    48
   ],
+  "startPose": "standing-front",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "outfit": "party-hat",
   "loop": false,
   "reverseFor": "party_turn_front",
@@ -2225,12 +3973,190 @@
    16,
    48
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "party-hat",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "party-walk",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_party_walk_cycle": {
+  "file": "keeper_party_walk_cycle.png",
+  "w": 32,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "party-hat",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "party-walk",
+  "z": 50
+ },
+ "keeper_party_walk_start": {
+  "file": "keeper_party_walk_start.png",
+  "w": 32,
+  "h": 48,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "party-hat",
+  "loop": false,
+  "reverseFor": "walk_stop",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "party-walk-start",
+  "z": 50
+ },
+ "keeper_party_walk_stop": {
+  "file": "keeper_party_walk_stop.png",
+  "w": 32,
+  "h": 48,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "party-hat",
+  "loop": false,
+  "reverseFor": "walk_start",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "party-walk-stop",
+  "z": 50
+ },
+ "keeper_party-hat_neutral_sitting-side-right": {
+  "file": "keeper_party-hat_neutral_sitting-side-right.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "sitting-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "neutral",
+  "pose": "sitting-side-right",
+  "outfit": "party-hat",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "z": 50
+ },
+ "keeper_party-hat_neutral_standing-back": {
+  "file": "keeper_party-hat_neutral_standing-back.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "neutral",
+  "pose": "standing-back",
+  "outfit": "party-hat",
+  "loop": false,
+  "facing": "front-to-back",
+  "z": 50
+ },
+ "keeper_party-hat_neutral_standing-front": {
+  "file": "keeper_party-hat_neutral_standing-front.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "neutral",
+  "pose": "standing-front",
+  "outfit": "party-hat",
+  "loop": false,
+  "facing": "front",
+  "z": 50
+ },
+ "keeper_party-hat_neutral_standing-side-right": {
+  "file": "keeper_party-hat_neutral_standing-side-right.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "neutral",
+  "pose": "standing-side-right",
+  "outfit": "party-hat",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
   "z": 50
  },
  "keeper_piano": {
@@ -2252,6 +4178,9 @@
    24,
    20
   ],
+  "startPose": "sitting-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "clip",
   "loop": true,
   "z": 50
  },
@@ -2270,11 +4199,37 @@
    25,
    14
   ],
+  "propHandoffFrame": 5,
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "harvest-high",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_pick_up_low": {
+  "file": "keeper_pick_up_low.png",
+  "w": 38,
+  "h": 40,
+  "frames": 8,
+  "fps": 5,
+  "density": 4,
+  "anchor": [
+   19,
+   40
+  ],
+  "propHandoffFrame": 5,
+  "startPose": "standing-side-right",
+  "endPose": "holding-small-object-side-right",
+  "assetRole": "bridge",
+  "loop": false,
+  "reverseFor": "put_down_low",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "pick-up-low",
   "z": 50
  },
  "keeper_pick_vegetable": {
@@ -2292,11 +4247,73 @@
    28.5,
    36.14
   ],
+  "propHandoffFrame": 5,
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "harvest-low",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_pirate_neutral_standing-back": {
+  "file": "keeper_pirate_neutral_standing-back.png",
+  "w": 38,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   19,
+   48
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "neutral",
+  "pose": "standing-back",
+  "outfit": "pirate",
+  "loop": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_pirate_neutral_standing-front": {
+  "file": "keeper_pirate_neutral_standing-front.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "neutral",
+  "pose": "standing-front",
+  "outfit": "pirate",
+  "loop": false,
+  "facing": "front",
+  "z": 50
+ },
+ "keeper_pirate_neutral_standing-side-right": {
+  "file": "keeper_pirate_neutral_standing-side-right.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "neutral",
+  "pose": "standing-side-right",
+  "outfit": "pirate",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
   "z": 50
  },
  "keeper_pirate_walk_back": {
@@ -2314,6 +4331,53 @@
    0,
    -1
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
+  "outfit": "pirate",
+  "loop": true,
+  "facing": "back",
+  "interaction": "pirate-walk",
+  "z": 50
+ },
+ "keeper_pirate_walk_back_cycle": {
+  "file": "keeper_pirate_walk_back_cycle.png",
+  "w": 38,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   19,
+   48
+  ],
+  "movementVector": [
+   0,
+   -1
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "bridge",
   "outfit": "pirate",
   "loop": true,
   "facing": "back",
@@ -2335,6 +4399,53 @@
    0,
    1
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
+  "outfit": "pirate",
+  "loop": true,
+  "facing": "front",
+  "interaction": "pirate-walk",
+  "z": 50
+ },
+ "keeper_pirate_walk_front_cycle": {
+  "file": "keeper_pirate_walk_front_cycle.png",
+  "w": 32,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   0,
+   1
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "bridge",
   "outfit": "pirate",
   "loop": true,
   "facing": "front",
@@ -2356,12 +4467,124 @@
    1,
    0
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "pirate",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "pirate-walk",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_pirate_walk_side_cycle": {
+  "file": "keeper_pirate_walk_side_cycle.png",
+  "w": 32,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "pirate",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "pirate-walk",
+  "z": 50
+ },
+ "keeper_pirate_walk_side_start": {
+  "file": "keeper_pirate_walk_side_start.png",
+  "w": 32,
+  "h": 48,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "pirate",
+  "loop": false,
+  "reverseFor": "walk_stop",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "pirate-walk-start",
+  "z": 50
+ },
+ "keeper_pirate_walk_side_stop": {
+  "file": "keeper_pirate_walk_side_stop.png",
+  "w": 32,
+  "h": 48,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "pirate",
+  "loop": false,
+  "reverseFor": "walk_start",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "pirate-walk-stop",
   "z": 50
  },
  "keeper_place_cake": {
@@ -2379,6 +4602,9 @@
    47.425,
    21.76
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "mirrorSafe": true,
   "facing": "right",
@@ -2397,6 +4623,9 @@
    24,
    56
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "mirrorSafe": true,
   "facing": "right",
@@ -2423,6 +4652,9 @@
    15,
    30.78
   ],
+  "startPose": "sitting-back",
+  "endPose": "sitting-back",
+  "assetRole": "clip",
   "loop": true,
   "facing": "back",
   "interaction": "play-drums",
@@ -2447,6 +4679,9 @@
    16.5,
    30.78
   ],
+  "startPose": "sitting-front",
+  "endPose": "sitting-front",
+  "assetRole": "clip",
   "loop": true,
   "facing": "front",
   "interaction": "play-drums",
@@ -2469,6 +4704,9 @@
   ],
   "propVariant": "acoustic",
   "upgradeTier": 1,
+  "startPose": "play-guitar-acoustic",
+  "endPose": "play-guitar-acoustic",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "front-right",
@@ -2493,6 +4731,9 @@
   ],
   "propVariant": "red-flying-v-1967",
   "upgradeTier": 3,
+  "startPose": "play-guitar-flying-v-1967",
+  "endPose": "play-guitar-flying-v-1967",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "front-right",
@@ -2517,6 +4758,9 @@
   ],
   "propVariant": "black-gretsch",
   "upgradeTier": 2,
+  "startPose": "play-guitar-gretsch",
+  "endPose": "play-guitar-gretsch",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "front-right",
@@ -2543,6 +4787,9 @@
    20,
    24.02
   ],
+  "startPose": "sitting-front",
+  "endPose": "sitting-front",
+  "assetRole": "clip",
   "outfit": "artist-smock",
   "loop": true,
   "facing": "front",
@@ -2560,12 +4807,34 @@
    32,
    40
   ],
+  "startPose": "prone-side-right",
+  "endPose": "prone-side-right",
+  "assetRole": "clip",
   "outfit": "old-school-workout-kit",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "press-ups",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_privacy-foam_neutral_sitting-front": {
+  "file": "keeper_privacy-foam_neutral_sitting-front.png",
+  "w": 40,
+  "h": 47,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   20,
+   47
+  ],
+  "startPose": "sitting-front",
+  "endPose": "sitting-front",
+  "assetRole": "neutral",
+  "pose": "sitting-front",
+  "outfit": "privacy-foam",
+  "loop": false,
+  "facing": "front",
   "z": 50
  },
  "keeper_put_record": {
@@ -2583,6 +4852,9 @@
    48.84,
    25.6
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -2609,6 +4881,9 @@
    36.81,
    22.18
   ],
+  "startPose": "lying-side-right",
+  "endPose": "lying-side-right",
+  "assetRole": "clip",
   "outfit": "light-blue-pyjamas",
   "loop": true,
   "mirrorSafe": true,
@@ -2628,6 +4903,9 @@
    16,
    40
   ],
+  "startPose": "standing-front",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "outfit": "light-blue-pyjamas",
   "loop": false,
   "reverseFor": "pyjamas_turn_front",
@@ -2646,12 +4924,154 @@
    17,
    40
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "light-blue-pyjamas",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "walk-pyjamas",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_pyjamas_walk_cycle": {
+  "file": "keeper_pyjamas_walk_cycle.png",
+  "w": 34,
+  "h": 40,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   17,
+   40
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "slipper_step"
+   },
+   {
+    "frame": 6,
+    "cue": "slipper_step"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "light-blue-pyjamas",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "walk-pyjamas",
+  "z": 50
+ },
+ "keeper_pyjamas_walk_start": {
+  "file": "keeper_pyjamas_walk_start.png",
+  "w": 34,
+  "h": 40,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   17,
+   40
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "slipper_step"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "light-blue-pyjamas",
+  "loop": false,
+  "reverseFor": "walk_stop",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "walk-pyjamas-start",
+  "z": 50
+ },
+ "keeper_pyjamas_walk_stop": {
+  "file": "keeper_pyjamas_walk_stop.png",
+  "w": 34,
+  "h": 40,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   17,
+   40
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "slipper_step"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "light-blue-pyjamas",
+  "loop": false,
+  "reverseFor": "walk_start",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "walk-pyjamas-stop",
+  "z": 50
+ },
+ "keeper_reach_high": {
+  "file": "keeper_reach_high.png",
+  "w": 32,
+  "h": 40,
+  "frames": 5,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "loop": false,
+  "reverseFor": "withdraw_high",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "reach-high",
+  "z": 50
+ },
+ "keeper_reach_low": {
+  "file": "keeper_reach_low.png",
+  "w": 38,
+  "h": 40,
+  "frames": 5,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   19,
+   40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "loop": false,
+  "reverseFor": "withdraw_low",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "reach-low",
   "z": 50
  },
  "keeper_read_front": {
@@ -2669,6 +5089,9 @@
    16,
    29.275
   ],
+  "startPose": "sitting-front",
+  "endPose": "sitting-front",
+  "assetRole": "clip",
   "loop": true,
   "facing": "front",
   "interaction": "read-book",
@@ -2689,6 +5112,9 @@
    17,
    29.165
   ],
+  "startPose": "sitting-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -2706,6 +5132,7 @@
    16,
    40
   ],
+  "assetRole": "reference",
   "loop": true,
   "z": 50
  },
@@ -2732,6 +5159,9 @@
    24,
    43.92
   ],
+  "startPose": "sitting-front",
+  "endPose": "sitting-front",
+  "assetRole": "clip",
   "outfit": "old-school-workout-kit",
   "loop": true,
   "facing": "front",
@@ -2757,6 +5187,9 @@
    35.4,
    22.2
   ],
+  "startPose": "sitting-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -2775,6 +5208,9 @@
    16,
    41
   ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
   "loop": true,
   "facing": "front",
   "interaction": "emote-sad",
@@ -2795,6 +5231,9 @@
    52,
    23
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -2819,12 +5258,91 @@
   ],
   "startPose": "scuba-standing-side-right",
   "endPose": "scuba-swim-right",
+  "assetRole": "clip",
   "outfit": "scuba",
   "loop": false,
   "mirrorSafe": true,
   "facing": "right-to-prone",
   "interaction": "scuba-water-entry",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_scuba_neutral_scuba-standing-side-right": {
+  "file": "keeper_scuba_neutral_scuba-standing-side-right.png",
+  "w": 48,
+  "h": 56,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   24,
+   56
+  ],
+  "startPose": "scuba-standing-side-right",
+  "endPose": "scuba-standing-side-right",
+  "assetRole": "neutral",
+  "pose": "scuba-standing-side-right",
+  "outfit": "scuba",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "z": 50
+ },
+ "keeper_scuba_neutral_scuba-swim-right": {
+  "file": "keeper_scuba_neutral_scuba-swim-right.png",
+  "w": 80,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   40,
+   24
+  ],
+  "startPose": "scuba-swim-right",
+  "endPose": "scuba-swim-right",
+  "assetRole": "neutral",
+  "pose": "scuba-swim-right",
+  "outfit": "scuba",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "z": 50
+ },
+ "keeper_scuba_neutral_swimming-back": {
+  "file": "keeper_scuba_neutral_swimming-back.png",
+  "w": 48,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   24,
+   24
+  ],
+  "startPose": "swimming-back",
+  "endPose": "swimming-back",
+  "assetRole": "neutral",
+  "pose": "swimming-back",
+  "outfit": "scuba",
+  "loop": false,
+  "facing": "up",
+  "z": 50
+ },
+ "keeper_scuba_neutral_swimming-front": {
+  "file": "keeper_scuba_neutral_swimming-front.png",
+  "w": 48,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   24,
+   24
+  ],
+  "startPose": "swimming-front",
+  "endPose": "swimming-front",
+  "assetRole": "neutral",
+  "pose": "swimming-front",
+  "outfit": "scuba",
+  "loop": false,
+  "facing": "down",
   "z": 50
  },
  "keeper_scuba_swim_down": {
@@ -2842,6 +5360,9 @@
    0,
    1
   ],
+  "startPose": "swimming-front",
+  "endPose": "swimming-front",
+  "assetRole": "clip",
   "outfit": "scuba",
   "loop": true,
   "facing": "down",
@@ -2863,6 +5384,9 @@
    1,
    0
   ],
+  "startPose": "swimming-side-right",
+  "endPose": "swimming-side-right",
+  "assetRole": "clip",
   "outfit": "scuba",
   "loop": true,
   "mirrorSafe": true,
@@ -2886,6 +5410,9 @@
    0,
    -1
   ],
+  "startPose": "swimming-back",
+  "endPose": "swimming-back",
+  "assetRole": "clip",
   "outfit": "scuba",
   "loop": true,
   "facing": "up",
@@ -2907,14 +5434,124 @@
    1,
    0
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
   "startPose": "scuba-standing-side-right",
   "endPose": "scuba-standing-side-right",
+  "assetRole": "clip",
   "outfit": "scuba",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "scuba-jetty-walk",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_scuba_walk_side_cycle": {
+  "file": "keeper_scuba_walk_side_cycle.png",
+  "w": 48,
+  "h": 56,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   24,
+   56
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "boot_step"
+   },
+   {
+    "frame": 6,
+    "cue": "boot_step"
+   }
+  ],
+  "startPose": "scuba-standing-side-right",
+  "endPose": "scuba-standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "scuba",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "scuba-jetty-walk",
+  "z": 50
+ },
+ "keeper_scuba_walk_side_start": {
+  "file": "keeper_scuba_walk_side_start.png",
+  "w": 48,
+  "h": 56,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   24,
+   56
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "boot_step"
+   }
+  ],
+  "startPose": "scuba-standing-side-right",
+  "endPose": "scuba-standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "scuba",
+  "loop": false,
+  "reverseFor": "walk_stop",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "scuba-jetty-walk-start",
+  "z": 50
+ },
+ "keeper_scuba_walk_side_stop": {
+  "file": "keeper_scuba_walk_side_stop.png",
+  "w": 48,
+  "h": 56,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   24,
+   56
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "boot_step"
+   }
+  ],
+  "startPose": "scuba-standing-side-right",
+  "endPose": "scuba-standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "scuba",
+  "loop": false,
+  "reverseFor": "walk_start",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "scuba-jetty-walk-stop",
   "z": 50
  },
  "keeper_search_boxes": {
@@ -2932,6 +5569,9 @@
    17,
    38
   ],
+  "startPose": "crouching-back",
+  "endPose": "crouching-back",
+  "assetRole": "clip",
   "loop": true,
   "facing": "back",
   "interaction": "search-boxes",
@@ -2952,6 +5592,9 @@
    38.5,
    19.32
   ],
+  "startPose": "standing-rear-right",
+  "endPose": "standing-rear-right",
+  "assetRole": "clip",
   "outfit": "cream-bathrobe",
   "loop": false,
   "mirrorSafe": true,
@@ -2971,6 +5614,9 @@
    25,
    40
   ],
+  "startPose": "standing-rear-right",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "outfit": "towel-privacy",
   "loop": false,
   "mirrorSafe": true,
@@ -2994,6 +5640,9 @@
    0,
    -1
   ],
+  "startPose": "standing-rear-right",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "outfit": "cream-bathrobe",
   "loop": false,
   "mirrorSafe": true,
@@ -3013,6 +5662,9 @@
    24,
    40
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-rear-right",
+  "assetRole": "clip",
   "outfit": "towel-privacy",
   "loop": false,
   "mirrorSafe": true,
@@ -3032,6 +5684,9 @@
    25,
    40
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "outfit": "mosaic-privacy",
   "loop": true,
   "facing": "back",
@@ -3053,6 +5708,9 @@
    17,
    29.33
   ],
+  "startPose": "standing-back",
+  "endPose": "sitting-back",
+  "assetRole": "clip",
   "loop": false,
   "reverseFor": "stand_back",
   "facing": "back",
@@ -3073,6 +5731,9 @@
    16,
    29.22
   ],
+  "startPose": "standing-front",
+  "endPose": "sitting-front",
+  "assetRole": "clip",
   "loop": false,
   "reverseFor": "stand_front",
   "z": 50
@@ -3092,9 +5753,36 @@
    16,
    29.44
   ],
+  "startPose": "standing-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "clip",
   "loop": false,
   "reverseFor": "stand_side",
   "mirrorSafe": true,
+  "z": 50
+ },
+ "keeper_sitting_turn_back_to_rear": {
+  "file": "keeper_sitting_turn_back_to_rear.png",
+  "w": 34,
+  "h": 40,
+  "frames": 4,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   17,
+   40
+  ],
+  "seatPoint": [
+   16,
+   29
+  ],
+  "startPose": "sitting-back",
+  "endPose": "sitting-rear-right",
+  "assetRole": "bridge",
+  "loop": false,
+  "reverseFor": "sitting_turn_rear_to_back",
+  "facing": "back-to-rear-right",
+  "interaction": "turn-seated",
   "z": 50
  },
  "keeper_slide_side": {
@@ -3108,6 +5796,9 @@
    24,
    40
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -3130,11 +5821,72 @@
    55,
    25
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "play-snooker",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_souwester_neutral_standing-back": {
+  "file": "keeper_souwester_neutral_standing-back.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "neutral",
+  "pose": "standing-back",
+  "outfit": "souwester",
+  "loop": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_souwester_neutral_standing-front": {
+  "file": "keeper_souwester_neutral_standing-front.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "neutral",
+  "pose": "standing-front",
+  "outfit": "souwester",
+  "loop": false,
+  "facing": "front",
+  "z": 50
+ },
+ "keeper_souwester_neutral_standing-side-right": {
+  "file": "keeper_souwester_neutral_standing-side-right.png",
+  "w": 34,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   17,
+   48
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "neutral",
+  "pose": "standing-side-right",
+  "outfit": "souwester",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
   "z": 50
  },
  "keeper_souwester_walk_back": {
@@ -3152,6 +5904,53 @@
    0,
    -1
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
+  "outfit": "souwester",
+  "loop": true,
+  "facing": "back",
+  "interaction": "souwester-walk-away",
+  "z": 50
+ },
+ "keeper_souwester_walk_back_cycle": {
+  "file": "keeper_souwester_walk_back_cycle.png",
+  "w": 32,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   0,
+   -1
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "boot_step"
+   },
+   {
+    "frame": 6,
+    "cue": "boot_step"
+   }
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "bridge",
   "outfit": "souwester",
   "loop": true,
   "facing": "back",
@@ -3173,6 +5972,53 @@
    0,
    1
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
+  "outfit": "souwester",
+  "loop": true,
+  "facing": "front",
+  "interaction": "souwester-walk-toward",
+  "z": 50
+ },
+ "keeper_souwester_walk_front_cycle": {
+  "file": "keeper_souwester_walk_front_cycle.png",
+  "w": 32,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   0,
+   1
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "boot_step"
+   },
+   {
+    "frame": 6,
+    "cue": "boot_step"
+   }
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "bridge",
   "outfit": "souwester",
   "loop": true,
   "facing": "front",
@@ -3194,12 +6040,124 @@
    1,
    0
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "souwester",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "souwester-walk",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_souwester_walk_side_cycle": {
+  "file": "keeper_souwester_walk_side_cycle.png",
+  "w": 34,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   17,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "boot_step"
+   },
+   {
+    "frame": 6,
+    "cue": "boot_step"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "souwester",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "souwester-walk",
+  "z": 50
+ },
+ "keeper_souwester_walk_side_start": {
+  "file": "keeper_souwester_walk_side_start.png",
+  "w": 34,
+  "h": 48,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   17,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "boot_step"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "souwester",
+  "loop": false,
+  "reverseFor": "walk_stop",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "souwester-walk-start",
+  "z": 50
+ },
+ "keeper_souwester_walk_side_stop": {
+  "file": "keeper_souwester_walk_side_stop.png",
+  "w": 34,
+  "h": 48,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   17,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "boot_step"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "souwester",
+  "loop": false,
+  "reverseFor": "walk_start",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "souwester-walk-stop",
   "z": 50
  },
  "keeper_sow_seeds": {
@@ -3217,11 +6175,72 @@
    28.11,
    34.09
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "sow-ground",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_spaceman_neutral_standing-back": {
+  "file": "keeper_spaceman_neutral_standing-back.png",
+  "w": 40,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   20,
+   48
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "neutral",
+  "pose": "standing-back",
+  "outfit": "spaceman",
+  "loop": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_spaceman_neutral_standing-front": {
+  "file": "keeper_spaceman_neutral_standing-front.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "neutral",
+  "pose": "standing-front",
+  "outfit": "spaceman",
+  "loop": false,
+  "facing": "front",
+  "z": 50
+ },
+ "keeper_spaceman_neutral_standing-side-right": {
+  "file": "keeper_spaceman_neutral_standing-side-right.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "neutral",
+  "pose": "standing-side-right",
+  "outfit": "spaceman",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
   "z": 50
  },
  "keeper_spaceman_walk_back": {
@@ -3239,6 +6258,53 @@
    0,
    -1
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
+  "outfit": "spaceman",
+  "loop": true,
+  "facing": "back",
+  "interaction": "spaceman-walk",
+  "z": 50
+ },
+ "keeper_spaceman_walk_back_cycle": {
+  "file": "keeper_spaceman_walk_back_cycle.png",
+  "w": 40,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   20,
+   48
+  ],
+  "movementVector": [
+   0,
+   -1
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "bridge",
   "outfit": "spaceman",
   "loop": true,
   "facing": "back",
@@ -3260,6 +6326,53 @@
    0,
    1
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
+  "outfit": "spaceman",
+  "loop": true,
+  "facing": "front",
+  "interaction": "spaceman-walk",
+  "z": 50
+ },
+ "keeper_spaceman_walk_front_cycle": {
+  "file": "keeper_spaceman_walk_front_cycle.png",
+  "w": 32,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   0,
+   1
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "bridge",
   "outfit": "spaceman",
   "loop": true,
   "facing": "front",
@@ -3281,12 +6394,124 @@
    1,
    0
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "spaceman",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "spaceman-walk",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_spaceman_walk_side_cycle": {
+  "file": "keeper_spaceman_walk_side_cycle.png",
+  "w": 32,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "spaceman",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "spaceman-walk",
+  "z": 50
+ },
+ "keeper_spaceman_walk_side_start": {
+  "file": "keeper_spaceman_walk_side_start.png",
+  "w": 32,
+  "h": 48,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "spaceman",
+  "loop": false,
+  "reverseFor": "walk_stop",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "spaceman-walk-start",
+  "z": 50
+ },
+ "keeper_spaceman_walk_side_stop": {
+  "file": "keeper_spaceman_walk_side_stop.png",
+  "w": 32,
+  "h": 48,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "spaceman",
+  "loop": false,
+  "reverseFor": "walk_start",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "spaceman-walk-stop",
   "z": 50
  },
  "keeper_spiral_stairs": {
@@ -3300,6 +6525,9 @@
    20,
    48
   ],
+  "startPose": "standing-rear-right",
+  "endPose": "standing-rear-right",
+  "assetRole": "clip",
   "loop": true,
   "facing": "three-quarter",
   "interaction": "climb-spiral-stairs",
@@ -3320,6 +6548,9 @@
    0,
    1
   ],
+  "startPose": "standing-rear-right",
+  "endPose": "standing-rear-right",
+  "assetRole": "clip",
   "loop": true,
   "facing": "rotating-rear-to-front-right",
   "interaction": "spiral-stairs-down",
@@ -3340,6 +6571,9 @@
    0,
    -1
   ],
+  "startPose": "standing-rear-right",
+  "endPose": "standing-rear-right",
+  "assetRole": "clip",
   "loop": true,
   "facing": "rotating-right-to-rear",
   "interaction": "spiral-stairs-up",
@@ -3356,6 +6590,9 @@
    17,
    40
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "z": 50
@@ -3371,8 +6608,69 @@
    19,
    41
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
+  "z": 50
+ },
+ "keeper_striped-swimming-costume_neutral_swimming-back": {
+  "file": "keeper_striped-swimming-costume_neutral_swimming-back.png",
+  "w": 54,
+  "h": 51,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   27,
+   24
+  ],
+  "startPose": "swimming-back",
+  "endPose": "swimming-back",
+  "assetRole": "neutral",
+  "pose": "swimming-back",
+  "outfit": "striped-swimming-costume",
+  "loop": false,
+  "facing": "up",
+  "z": 50
+ },
+ "keeper_striped-swimming-costume_neutral_swimming-front": {
+  "file": "keeper_striped-swimming-costume_neutral_swimming-front.png",
+  "w": 48,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   24,
+   24
+  ],
+  "startPose": "swimming-front",
+  "endPose": "swimming-front",
+  "assetRole": "neutral",
+  "pose": "swimming-front",
+  "outfit": "striped-swimming-costume",
+  "loop": false,
+  "facing": "down",
+  "z": 50
+ },
+ "keeper_striped-swimming-costume_neutral_swimming-side-right": {
+  "file": "keeper_striped-swimming-costume_neutral_swimming-side-right.png",
+  "w": 80,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   40,
+   24
+  ],
+  "startPose": "swimming-side-right",
+  "endPose": "swimming-side-right",
+  "assetRole": "neutral",
+  "pose": "swimming-side-right",
+  "outfit": "striped-swimming-costume",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
   "z": 50
  },
  "keeper_sweep_broom": {
@@ -3396,6 +6694,9 @@
   ],
   "propVariant": "traditional-broom",
   "upgradeTier": 1,
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -3418,6 +6719,9 @@
    0,
    1
   ],
+  "startPose": "swimming-front",
+  "endPose": "swimming-front",
+  "assetRole": "clip",
   "outfit": "striped-swimming-costume",
   "loop": true,
   "facing": "down",
@@ -3439,6 +6743,9 @@
    1,
    0
   ],
+  "startPose": "swimming-side-right",
+  "endPose": "swimming-side-right",
+  "assetRole": "clip",
   "outfit": "striped-swimming-costume",
   "loop": true,
   "mirrorSafe": true,
@@ -3462,6 +6769,9 @@
    0,
    -1
   ],
+  "startPose": "swimming-back",
+  "endPose": "swimming-back",
+  "assetRole": "clip",
   "outfit": "striped-swimming-costume",
   "loop": true,
   "facing": "up",
@@ -3483,6 +6793,9 @@
    26,
    17
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "loop": false,
   "reverseFor": "switch_withdraw_back",
   "mirrorSafe": true,
@@ -3506,6 +6819,9 @@
    27.5,
    17.805
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": false,
   "reverseFor": "switch_withdraw_side",
   "mirrorSafe": true,
@@ -3529,11 +6845,72 @@
    34,
    20
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "play-table-tennis",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_tarzan_neutral_standing-back": {
+  "file": "keeper_tarzan_neutral_standing-back.png",
+  "w": 34,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   17,
+   40
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "neutral",
+  "pose": "standing-back",
+  "outfit": "tarzan",
+  "loop": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_tarzan_neutral_standing-front": {
+  "file": "keeper_tarzan_neutral_standing-front.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "neutral",
+  "pose": "standing-front",
+  "outfit": "tarzan",
+  "loop": false,
+  "facing": "front",
+  "z": 50
+ },
+ "keeper_tarzan_neutral_standing-side-right": {
+  "file": "keeper_tarzan_neutral_standing-side-right.png",
+  "w": 36,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   18,
+   40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "neutral",
+  "pose": "standing-side-right",
+  "outfit": "tarzan",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
   "z": 50
  },
  "keeper_tarzan_walk_back": {
@@ -3551,6 +6928,53 @@
    0,
    -1
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
+  "outfit": "tarzan",
+  "loop": true,
+  "facing": "back",
+  "interaction": "tarzan-walk",
+  "z": 50
+ },
+ "keeper_tarzan_walk_back_cycle": {
+  "file": "keeper_tarzan_walk_back_cycle.png",
+  "w": 34,
+  "h": 40,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   17,
+   40
+  ],
+  "movementVector": [
+   0,
+   -1
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "bridge",
   "outfit": "tarzan",
   "loop": true,
   "facing": "back",
@@ -3572,6 +6996,53 @@
    0,
    1
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
+  "outfit": "tarzan",
+  "loop": true,
+  "facing": "front",
+  "interaction": "tarzan-walk",
+  "z": 50
+ },
+ "keeper_tarzan_walk_front_cycle": {
+  "file": "keeper_tarzan_walk_front_cycle.png",
+  "w": 32,
+  "h": 40,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "movementVector": [
+   0,
+   1
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "bridge",
   "outfit": "tarzan",
   "loop": true,
   "facing": "front",
@@ -3593,12 +7064,124 @@
    1,
    0
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "outfit": "tarzan",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "tarzan-walk",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_tarzan_walk_side_cycle": {
+  "file": "keeper_tarzan_walk_side_cycle.png",
+  "w": 36,
+  "h": 40,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   18,
+   40
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "tarzan",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "tarzan-walk",
+  "z": 50
+ },
+ "keeper_tarzan_walk_side_start": {
+  "file": "keeper_tarzan_walk_side_start.png",
+  "w": 36,
+  "h": 40,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   18,
+   40
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "tarzan",
+  "loop": false,
+  "reverseFor": "walk_stop",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "tarzan-walk-start",
+  "z": 50
+ },
+ "keeper_tarzan_walk_side_stop": {
+  "file": "keeper_tarzan_walk_side_stop.png",
+  "w": 36,
+  "h": 40,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   18,
+   40
+  ],
+  "movementVector": [
+   1,
+   0
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "tarzan",
+  "loop": false,
+  "reverseFor": "walk_start",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "tarzan-walk-stop",
   "z": 50
  },
  "keeper_telescope": {
@@ -3620,11 +7203,54 @@
    48.5,
    12.7
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "use-telescope",
   "mirrorsFor": "left",
+  "z": 50
+ },
+ "keeper_towel-privacy_neutral_standing-rear-right": {
+  "file": "keeper_towel-privacy_neutral_standing-rear-right.png",
+  "w": 50,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   25,
+   40
+  ],
+  "startPose": "standing-rear-right",
+  "endPose": "standing-rear-right",
+  "assetRole": "neutral",
+  "pose": "standing-rear-right",
+  "outfit": "towel-privacy",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "rear-right",
+  "z": 50
+ },
+ "keeper_towel-privacy_neutral_standing-side-right": {
+  "file": "keeper_towel-privacy_neutral_standing-side-right.png",
+  "w": 46,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   23,
+   40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "neutral",
+  "pose": "standing-side-right",
+  "outfit": "towel-privacy",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
   "z": 50
  },
  "keeper_trampoline_front": {
@@ -3638,6 +7264,9 @@
    16,
    80
   ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
   "outfit": "old-school-workout-kit",
   "loop": true,
   "facing": "front",
@@ -3655,8 +7284,31 @@
    16,
    40
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "loop": false,
   "reverseFor": "turn_front",
+  "z": 50
+ },
+ "keeper_turn_front": {
+  "file": "keeper_turn_front.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-front",
+  "assetRole": "bridge",
+  "loop": false,
+  "reverseFor": "turn_side_from_front",
+  "facing": "right-to-front",
+  "interaction": "turn-front",
   "z": 50
  },
  "keeper_type_computer": {
@@ -3678,6 +7330,9 @@
    24,
    20
   ],
+  "startPose": "sitting-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "front-right",
@@ -3700,6 +7355,9 @@
    16,
    27
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "z": 50
  },
@@ -3726,6 +7384,9 @@
    56,
    14
   ],
+  "startPose": "sitting-rear-right",
+  "endPose": "sitting-rear-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "rear-right",
@@ -3752,6 +7413,9 @@
    34.72,
    35.025
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "loop": false,
   "facing": "back",
   "interaction": "vomit-into-toilet",
@@ -3768,8 +7432,51 @@
    16,
    40
   ],
+  "sfxCues": [
+   {
+    "frame": 0,
+    "cue": "footstep"
+   },
+   {
+    "frame": 4,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
+  "z": 50
+ },
+ "keeper_walk_cycle": {
+  "file": "keeper_walk_cycle.png",
+  "w": 32,
+  "h": 40,
+  "frames": 9,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   },
+   {
+    "frame": 6,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "walk",
   "z": 50
  },
  "keeper_walk_into_lift": {
@@ -3795,9 +7502,66 @@
    0,
    -6
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-front",
+  "assetRole": "clip",
   "loop": false,
   "facing": "back-to-front",
   "interaction": "enter-lift",
+  "z": 50
+ },
+ "keeper_walk_start": {
+  "file": "keeper_walk_start.png",
+  "w": 32,
+  "h": 40,
+  "frames": 5,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "loop": false,
+  "reverseFor": "walk_stop",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "walk-start",
+  "z": 50
+ },
+ "keeper_walk_stop": {
+  "file": "keeper_walk_stop.png",
+  "w": 32,
+  "h": 40,
+  "frames": 5,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "sfxCues": [
+   {
+    "frame": 2,
+    "cue": "footstep"
+   }
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "loop": false,
+  "reverseFor": "walk_start",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "walk-stop",
   "z": 50
  },
  "keeper_wash_back": {
@@ -3815,6 +7579,9 @@
    16,
    21
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "loop": true,
   "z": 50
  },
@@ -3841,6 +7608,9 @@
    59.5,
    14.74
   ],
+  "startPose": "sitting-rear-right",
+  "endPose": "sitting-rear-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "rear-right",
@@ -3856,7 +7626,7 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   17,
    40
   ],
   "seatPoint": [
@@ -3867,6 +7637,9 @@
    41.5,
    14.52
   ],
+  "startPose": "sitting-rear-right",
+  "endPose": "sitting-rear-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "rear-right",
@@ -3889,6 +7662,9 @@
    23,
    31
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "loop": true,
   "facing": "back",
   "interaction": "water-plants",
@@ -3909,6 +7685,9 @@
    20,
    31.18
   ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
   "loop": true,
   "facing": "front",
   "interaction": "water-plants",
@@ -3929,6 +7708,9 @@
    44.675,
    31.315
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -3947,6 +7729,9 @@
    16,
    40
   ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "clip",
   "loop": false,
   "facing": "front",
   "interaction": "emote-wave",
@@ -3967,6 +7752,9 @@
    27.5,
    22
   ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -3989,6 +7777,9 @@
    16,
    21
   ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
   "loop": true,
   "z": 50
  },
@@ -4011,6 +7802,9 @@
    17,
    23.47
   ],
+  "startPose": "sitting-back",
+  "endPose": "sitting-back",
+  "assetRole": "clip",
   "loop": true,
   "facing": "back",
   "interaction": "write",
@@ -4035,6 +7829,9 @@
    34,
    21.81
   ],
+  "startPose": "sitting-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "clip",
   "loop": true,
   "mirrorSafe": true,
   "facing": "right",
@@ -4053,6 +7850,9 @@
    16,
    40
   ],
+  "startPose": "standing-rear-right",
+  "endPose": "standing-rear-right",
+  "assetRole": "clip",
   "loop": false,
   "facing": "front-right",
   "interaction": "emote-yawn",

@@ -1,0 +1,33 @@
+{
+  "w": 34,
+  "h": 40,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    17,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "outfit": "tarzan",
+  "facing": "back",
+  "interaction": "tarzan-walk",
+  "movementVector": [
+    0,
+    -1
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "bridge",
+  "sfxCues": [
+    {
+      "frame": 2,
+      "cue": "footstep"
+    },
+    {
+      "frame": 6,
+      "cue": "footstep"
+    }
+  ]
+}

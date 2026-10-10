@@ -65,8 +65,8 @@
         48
       ],
       "anchor": [
-        25.0,
-        24.0
+        25,
+        24
       ],
       "facing": "right-prone",
       "outfit": "standard",
@@ -395,8 +395,8 @@
         49
       ],
       "anchor": [
-        23.0,
-        49.0
+        23,
+        49
       ],
       "facing": "right",
       "outfit": "standard",
@@ -636,8 +636,8 @@
         42
       ],
       "anchor": [
-        20.0,
-        42.0
+        20,
+        42
       ],
       "facing": "right",
       "outfit": "standard",
@@ -877,14 +877,14 @@
         40
       ],
       "anchor": [
-        17.0,
-        40.0
+        17,
+        40
       ],
       "facing": "front",
       "outfit": "artist-smock",
       "interaction": "sit-front",
       "seatPoint": [
-        17.0,
+        17,
         29.385
       ],
       "postureClass": "seated",
@@ -1075,8 +1075,8 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": "right-to-back",
       "outfit": "artist-smock",
@@ -1270,8 +1270,8 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": "right-to-front",
       "outfit": "artist-smock",
@@ -1465,8 +1465,8 @@
         40
       ],
       "anchor": [
-        18.0,
-        40.0
+        18,
+        40
       ],
       "facing": "right",
       "outfit": "artist-smock",
@@ -2108,8 +2108,8 @@
         40
       ],
       "anchor": [
-        23.0,
-        40.0
+        23,
+        40
       ],
       "facing": "right",
       "outfit": "towel-privacy",
@@ -2349,8 +2349,8 @@
         40
       ],
       "anchor": [
-        23.0,
-        40.0
+        23,
+        40
       ],
       "facing": "right",
       "outfit": "towel-privacy",
@@ -2590,8 +2590,8 @@
         40
       ],
       "anchor": [
-        20.0,
-        40.0
+        20,
+        40
       ],
       "facing": "front",
       "outfit": "mosaic-privacy",
@@ -2834,8 +2834,8 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": "right",
       "outfit": "cream-bathrobe",
@@ -3075,8 +3075,8 @@
         40
       ],
       "anchor": [
-        17.0,
-        40.0
+        17,
+        40
       ],
       "facing": "back",
       "outfit": "standard",
@@ -3316,8 +3316,8 @@
         48
       ],
       "anchor": [
-        24.0,
-        48.0
+        24,
+        48
       ],
       "facing": "right",
       "outfit": "standard",
@@ -3560,8 +3560,8 @@
         48
       ],
       "anchor": [
-        25.0,
-        48.0
+        25,
+        48
       ],
       "facing": "front-right",
       "outfit": "standard",
@@ -4042,8 +4042,8 @@
         41
       ],
       "anchor": [
-        24.0,
-        41.0
+        24,
+        41
       ],
       "facing": "right",
       "outfit": "standard",
@@ -4294,10 +4294,10 @@
       "measurementMethod": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
       "status": "measured-pass",
       "note": "measured against the canonical anatomy for its pose class",
-      "medianFaceProxyWidth": 2.0,
+      "medianFaceProxyWidth": 2.38,
       "medianFaceProxyHeight": 3.5,
       "faceProxyCoverage": "8/8",
-      "medianTorsoScanWidthAt20": 19.38,
+      "medianTorsoScanWidthAt20": 19.25,
       "torsoScanCoverage": "8/8",
       "alphaHeightRange": [
         38.0,
@@ -4305,7 +4305,7 @@
       ],
       "alphaWidthRange": [
         19.0,
-        20.5
+        22.25
       ],
       "bottomClearanceRange": [
         0.5,
@@ -4314,26 +4314,26 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            5.75,
+            4.75,
             1.5,
-            26.25,
+            27.0,
             39.5
           ],
-          "alphaWidth": 20.5,
+          "alphaWidth": 22.25,
           "alphaHeight": 38.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              9.0,
-              9.0,
-              11.0,
-              12.75
+              22.75,
+              25.75,
+              26.25,
+              28.75
             ],
-            "width": 2.0,
-            "height": 3.75,
-            "area": 60
+            "width": 3.5,
+            "height": 3.0,
+            "area": 118
           },
-          "torsoScanWidthAt20": 20.5
+          "torsoScanWidthAt20": 19.25
         },
         {
           "alphaBox": [
@@ -4475,24 +4475,24 @@
         },
         {
           "alphaBox": [
-            6.0,
+            4.75,
             1.5,
-            26.0,
+            27.0,
             39.5
           ],
-          "alphaWidth": 20.0,
+          "alphaWidth": 22.25,
           "alphaHeight": 38.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              9.5,
-              10.0,
-              12.25,
-              12.75
+              22.75,
+              25.75,
+              26.25,
+              28.75
             ],
-            "width": 2.75,
-            "height": 2.75,
-            "area": 59
+            "width": 3.5,
+            "height": 3.0,
+            "area": 118
           },
           "torsoScanWidthAt20": 19.25
         }
@@ -4521,8 +4521,8 @@
         40
       ],
       "anchor": [
-        27.0,
-        40.0
+        27,
+        40
       ],
       "facing": "back",
       "outfit": "standard",
@@ -4762,8 +4762,8 @@
         40
       ],
       "anchor": [
-        27.0,
-        40.0
+        27,
+        40
       ],
       "facing": "back-to-right",
       "outfit": "standard",
@@ -4957,8 +4957,8 @@
         40
       ],
       "anchor": [
-        24.0,
-        40.0
+        24,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -5198,8 +5198,8 @@
         40
       ],
       "anchor": [
-        25.0,
-        40.0
+        25,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -5439,8 +5439,8 @@
         40
       ],
       "anchor": [
-        18.0,
-        40.0
+        18,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -5872,8 +5872,8 @@
         40
       ],
       "anchor": [
-        17.0,
-        40.0
+        17,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -6067,8 +6067,8 @@
         40
       ],
       "anchor": [
-        24.0,
-        40.0
+        24,
+        40
       ],
       "facing": "right",
       "outfit": "winter-coat",
@@ -6308,8 +6308,8 @@
         40
       ],
       "anchor": [
-        18.0,
-        40.0
+        18,
+        40
       ],
       "facing": "back",
       "outfit": "standard",
@@ -6560,10 +6560,10 @@
       "measurementMethod": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
       "status": "measured-pass",
       "note": "measured against the canonical anatomy for its pose class",
-      "medianFaceProxyWidth": 2.0,
+      "medianFaceProxyWidth": 2.38,
       "medianFaceProxyHeight": 3.5,
       "faceProxyCoverage": "8/8",
-      "medianTorsoScanWidthAt20": 19.38,
+      "medianTorsoScanWidthAt20": 19.25,
       "torsoScanCoverage": "8/8",
       "alphaHeightRange": [
         38.0,
@@ -6571,7 +6571,7 @@
       ],
       "alphaWidthRange": [
         19.0,
-        20.5
+        22.25
       ],
       "bottomClearanceRange": [
         0.5,
@@ -6580,26 +6580,26 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            5.75,
+            4.75,
             1.5,
-            26.25,
+            27.0,
             39.5
           ],
-          "alphaWidth": 20.5,
+          "alphaWidth": 22.25,
           "alphaHeight": 38.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              9.0,
-              9.0,
-              11.0,
-              12.75
+              22.75,
+              25.75,
+              26.25,
+              28.75
             ],
-            "width": 2.0,
-            "height": 3.75,
-            "area": 60
+            "width": 3.5,
+            "height": 3.0,
+            "area": 118
           },
-          "torsoScanWidthAt20": 20.5
+          "torsoScanWidthAt20": 19.25
         },
         {
           "alphaBox": [
@@ -6741,24 +6741,24 @@
         },
         {
           "alphaBox": [
-            6.0,
+            4.75,
             1.5,
-            26.0,
+            27.0,
             39.5
           ],
-          "alphaWidth": 20.0,
+          "alphaWidth": 22.25,
           "alphaHeight": 38.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              9.5,
-              10.0,
-              12.25,
-              12.75
+              22.75,
+              25.75,
+              26.25,
+              28.75
             ],
-            "width": 2.75,
-            "height": 2.75,
-            "area": 59
+            "width": 3.5,
+            "height": 3.0,
+            "area": 118
           },
           "torsoScanWidthAt20": 19.25
         }
@@ -6787,14 +6787,14 @@
         42
       ],
       "anchor": [
-        20.0,
-        40.0
+        20,
+        40
       ],
       "facing": "front",
       "outfit": "standard",
       "interaction": "count-money",
       "seatPoint": [
-        20.0,
+        20,
         30.28
       ],
       "postureClass": "seated",
@@ -7031,8 +7031,8 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": "front",
       "outfit": "standard",
@@ -7272,8 +7272,8 @@
         40
       ],
       "anchor": [
-        18.0,
-        40.0
+        18,
+        40
       ],
       "facing": "back",
       "outfit": "standard",
@@ -7513,8 +7513,8 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": "front",
       "outfit": "standard",
@@ -7754,8 +7754,8 @@
         40
       ],
       "anchor": [
-        28.0,
-        40.0
+        28,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -8133,8 +8133,8 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -8374,8 +8374,8 @@
         41
       ],
       "anchor": [
-        17.0,
-        41.0
+        17,
+        41
       ],
       "facing": null,
       "outfit": "standard",
@@ -8569,8 +8569,8 @@
         40
       ],
       "anchor": [
-        17.0,
-        40.0
+        17,
+        40
       ],
       "facing": null,
       "outfit": "standard",
@@ -8764,8 +8764,8 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": "right",
       "outfit": "light-blue-pyjamas",
@@ -8959,14 +8959,14 @@
         40
       ],
       "anchor": [
-        22.0,
-        40.0
+        22,
+        40
       ],
       "facing": "front-right",
       "outfit": "standard",
       "interaction": "drink-pint",
       "seatPoint": [
-        23.0,
+        23,
         29.22
       ],
       "postureClass": "seated",
@@ -9203,8 +9203,8 @@
         41
       ],
       "anchor": [
-        16.0,
-        41.0
+        16,
+        41
       ],
       "facing": "right",
       "outfit": "standard",
@@ -9447,14 +9447,14 @@
         41
       ],
       "anchor": [
-        17.0,
-        40.0
+        17,
+        40
       ],
       "facing": null,
       "outfit": "standard",
       "interaction": null,
       "seatPoint": [
-        17.0,
+        17,
         29.39
       ],
       "postureClass": "seated",
@@ -9691,8 +9691,8 @@
         40
       ],
       "anchor": [
-        18.0,
-        40.0
+        18,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -9932,8 +9932,8 @@
         48
       ],
       "anchor": [
-        16.0,
-        48.0
+        16,
+        48
       ],
       "facing": "right",
       "outfit": "standard",
@@ -10311,8 +10311,8 @@
         115
       ],
       "anchor": [
-        63.0,
-        73.0
+        63,
+        73
       ],
       "facing": "right",
       "outfit": "standard",
@@ -10739,8 +10739,8 @@
         88
       ],
       "anchor": [
-        48.0,
-        56.0
+        48,
+        56
       ],
       "facing": "right",
       "outfit": "standard",
@@ -11854,8 +11854,8 @@
         40
       ],
       "anchor": [
-        24.0,
-        40.0
+        24,
+        40
       ],
       "facing": "right",
       "outfit": "light-blue-pyjamas",
@@ -11865,44 +11865,44 @@
       "measurementMethod": "articulated landmark chain",
       "status": "measured-pass",
       "note": "measured against the canonical anatomy for its pose class",
-      "medianFaceProxyWidth": 9.75,
-      "medianFaceProxyHeight": 7.75,
+      "medianFaceProxyWidth": 9.88,
+      "medianFaceProxyHeight": 7.88,
       "faceProxyCoverage": "8/8",
       "medianTorsoScanWidthAt20": null,
       "torsoScanCoverage": "0/8",
       "alphaHeightRange": [
         18.75,
-        33.75
+        35.25
       ],
       "alphaWidthRange": [
-        15.0,
+        15.25,
         32.0
       ],
       "bottomClearanceRange": [
-        0.5,
+        0.0,
         0.5
       ],
       "frameMeasurements": [
         {
           "alphaBox": [
-            16.5,
-            5.75,
-            31.5,
-            39.5
+            15.5,
+            4.75,
+            30.75,
+            40.0
           ],
-          "alphaWidth": 15.0,
-          "alphaHeight": 33.75,
-          "bottomClearance": 0.5,
+          "alphaWidth": 15.25,
+          "alphaHeight": 35.25,
+          "bottomClearance": 0.0,
           "faceProxy": {
             "box": [
-              20.75,
-              7.75,
-              30.5,
+              19.75,
+              6.5,
+              29.75,
               15.25
             ],
-            "width": 9.75,
-            "height": 7.5,
-            "area": 555
+            "width": 10.0,
+            "height": 8.75,
+            "area": 591
           },
           "torsoScanWidthAt20": null
         },
@@ -13085,8 +13085,8 @@
         48
       ],
       "anchor": [
-        17.0,
-        48.0
+        17,
+        48
       ],
       "facing": "back",
       "outfit": "halloween",
@@ -13326,8 +13326,8 @@
         48
       ],
       "anchor": [
-        16.0,
-        48.0
+        16,
+        48
       ],
       "facing": "front",
       "outfit": "halloween",
@@ -13567,8 +13567,8 @@
         48
       ],
       "anchor": [
-        19.0,
-        48.0
+        19,
+        48
       ],
       "facing": "right",
       "outfit": "halloween",
@@ -13808,8 +13808,8 @@
         42
       ],
       "anchor": [
-        17.0,
-        42.0
+        17,
+        42
       ],
       "facing": "back",
       "outfit": "standard",
@@ -14049,8 +14049,8 @@
         44
       ],
       "anchor": [
-        24.0,
-        44.0
+        24,
+        44
       ],
       "facing": "right",
       "outfit": "standard",
@@ -14290,8 +14290,8 @@
         40
       ],
       "anchor": [
-        24.0,
-        40.0
+        24,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -14531,8 +14531,8 @@
         41
       ],
       "anchor": [
-        24.0,
-        40.0
+        24,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -14772,8 +14772,8 @@
         40
       ],
       "anchor": [
-        24.0,
-        40.0
+        24,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -15013,8 +15013,8 @@
         40
       ],
       "anchor": [
-        24.0,
-        40.0
+        24,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -15251,8 +15251,8 @@
         40
       ],
       "anchor": [
-        24.0,
-        40.0
+        24,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -15538,8 +15538,8 @@
         40
       ],
       "anchor": [
-        25.0,
-        40.0
+        25,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -15779,8 +15779,8 @@
         40
       ],
       "anchor": [
-        24.0,
-        40.0
+        24,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -16020,14 +16020,14 @@
         47
       ],
       "anchor": [
-        20.0,
-        47.0
+        20,
+        47
       ],
       "facing": "front",
       "outfit": "privacy-foam",
       "interaction": "soak-hot-tub",
       "seatPoint": [
-        20.0,
+        20,
         28.775
       ],
       "postureClass": "seated",
@@ -16264,8 +16264,8 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": "front",
       "outfit": "standard",
@@ -16516,44 +16516,44 @@
       "measurementMethod": "articulated landmark chain",
       "status": "excluded-technical",
       "note": "measured against the canonical anatomy for its pose class",
-      "medianFaceProxyWidth": 17.75,
-      "medianFaceProxyHeight": 7.75,
+      "medianFaceProxyWidth": 15.0,
+      "medianFaceProxyHeight": 6.88,
       "faceProxyCoverage": "4/4",
       "medianTorsoScanWidthAt20": null,
       "torsoScanCoverage": "0/4",
       "alphaHeightRange": [
-        38.25,
+        37.25,
         39.25
       ],
       "alphaWidthRange": [
-        24.75,
+        18.25,
         24.75
       ],
       "bottomClearanceRange": [
-        0.75,
+        0.5,
         0.75
       ],
       "frameMeasurements": [
         {
           "alphaBox": [
-            3.75,
-            1.0,
-            28.5,
-            39.25
+            6.75,
+            2.25,
+            25.0,
+            39.5
           ],
-          "alphaWidth": 24.75,
-          "alphaHeight": 38.25,
-          "bottomClearance": 0.75,
+          "alphaWidth": 18.25,
+          "alphaHeight": 37.25,
+          "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              7.25,
-              7.25,
-              25.0,
-              15.0
+              9.75,
+              8.75,
+              22.0,
+              14.75
             ],
-            "width": 17.75,
-            "height": 7.75,
-            "area": 1265
+            "width": 12.25,
+            "height": 6.0,
+            "area": 651
           },
           "torsoScanWidthAt20": null
         },
@@ -16605,24 +16605,24 @@
         },
         {
           "alphaBox": [
-            3.75,
-            1.0,
-            28.5,
-            39.25
+            6.75,
+            2.25,
+            25.0,
+            39.5
           ],
-          "alphaWidth": 24.75,
-          "alphaHeight": 38.25,
-          "bottomClearance": 0.75,
+          "alphaWidth": 18.25,
+          "alphaHeight": 37.25,
+          "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              7.25,
-              7.25,
-              25.0,
-              15.0
+              9.75,
+              8.75,
+              22.0,
+              14.75
             ],
-            "width": 17.75,
-            "height": 7.75,
-            "area": 1265
+            "width": 12.25,
+            "height": 6.0,
+            "area": 651
           },
           "torsoScanWidthAt20": null
         }
@@ -16646,8 +16646,8 @@
         50
       ],
       "anchor": [
-        19.0,
-        50.0
+        19,
+        50
       ],
       "facing": "back",
       "outfit": "knight",
@@ -16887,8 +16887,8 @@
         48
       ],
       "anchor": [
-        16.0,
-        48.0
+        16,
+        48
       ],
       "facing": "front",
       "outfit": "knight",
@@ -17128,8 +17128,8 @@
         48
       ],
       "anchor": [
-        16.0,
-        48.0
+        16,
+        48
       ],
       "facing": "right",
       "outfit": "knight",
@@ -17369,8 +17369,8 @@
         42
       ],
       "anchor": [
-        19.0,
-        42.0
+        19,
+        42
       ],
       "facing": null,
       "outfit": "standard",
@@ -17848,8 +17848,8 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": "back",
       "outfit": "standard",
@@ -18089,8 +18089,8 @@
         40
       ],
       "anchor": [
-        17.0,
-        40.0
+        17,
+        40
       ],
       "facing": "front",
       "outfit": "standard",
@@ -18330,8 +18330,8 @@
         56
       ],
       "anchor": [
-        27.0,
-        56.0
+        27,
+        56
       ],
       "facing": "back",
       "outfit": "old-school-workout-kit",
@@ -18571,8 +18571,8 @@
         52
       ],
       "anchor": [
-        51.0,
-        52.0
+        51,
+        52
       ],
       "facing": "right",
       "outfit": "standard",
@@ -18812,8 +18812,8 @@
         40
       ],
       "anchor": [
-        26.0,
-        40.0
+        26,
+        40
       ],
       "facing": "back",
       "outfit": "standard",
@@ -19053,8 +19053,8 @@
         40
       ],
       "anchor": [
-        26.0,
-        40.0
+        26,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -19294,8 +19294,8 @@
         40
       ],
       "anchor": [
-        24.0,
-        40.0
+        24,
+        40
       ],
       "facing": "right",
       "outfit": "mechanic",
@@ -19535,8 +19535,8 @@
         48
       ],
       "anchor": [
-        18.0,
-        48.0
+        18,
+        48
       ],
       "facing": "back",
       "outfit": "mechanic",
@@ -19776,8 +19776,8 @@
         48
       ],
       "anchor": [
-        16.0,
-        48.0
+        16,
+        48
       ],
       "facing": "front",
       "outfit": "mechanic",
@@ -20017,8 +20017,8 @@
         48
       ],
       "anchor": [
-        16.0,
-        48.0
+        16,
+        48
       ],
       "facing": "right",
       "outfit": "mechanic",
@@ -20278,12 +20278,12 @@
       "medianTorsoScanWidthAt20": null,
       "torsoScanCoverage": "0/8",
       "alphaHeightRange": [
-        34.25,
+        33.0,
         34.25
       ],
       "alphaWidthRange": [
         18.25,
-        18.75
+        20.0
       ],
       "bottomClearanceRange": [
         0.5,
@@ -20292,24 +20292,24 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            6.75,
-            5.25,
-            25.0,
+            6.0,
+            6.5,
+            26.0,
             39.5
           ],
-          "alphaWidth": 18.25,
-          "alphaHeight": 34.25,
+          "alphaWidth": 20.0,
+          "alphaHeight": 33.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              12.0,
-              10.5,
-              20.25,
-              17.5
+              11.5,
+              13.0,
+              21.0,
+              19.25
             ],
-            "width": 8.25,
-            "height": 7.0,
-            "area": 378
+            "width": 9.5,
+            "height": 6.25,
+            "area": 445
           },
           "torsoScanWidthAt20": null
         },
@@ -20453,24 +20453,24 @@
         },
         {
           "alphaBox": [
-            6.75,
-            5.25,
-            25.25,
+            6.0,
+            6.5,
+            26.0,
             39.5
           ],
-          "alphaWidth": 18.5,
-          "alphaHeight": 34.25,
+          "alphaWidth": 20.0,
+          "alphaHeight": 33.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              12.0,
-              10.5,
-              20.25,
-              17.25
+              11.5,
+              13.0,
+              21.0,
+              19.25
             ],
-            "width": 8.25,
-            "height": 6.75,
-            "area": 395
+            "width": 9.5,
+            "height": 6.25,
+            "area": 445
           },
           "torsoScanWidthAt20": null
         }
@@ -20499,8 +20499,8 @@
         41
       ],
       "anchor": [
-        18.0,
-        40.0
+        18,
+        40
       ],
       "facing": "rear-right",
       "outfit": "standard",
@@ -20740,8 +20740,8 @@
         40
       ],
       "anchor": [
-        19.0,
-        40.0
+        19,
+        40
       ],
       "facing": "back",
       "outfit": "artist-smock",
@@ -20981,8 +20981,8 @@
         40
       ],
       "anchor": [
-        22.0,
-        40.0
+        22,
+        40
       ],
       "facing": "right",
       "outfit": "artist-smock",
@@ -21460,8 +21460,8 @@
         84
       ],
       "anchor": [
-        36.0,
-        84.0
+        36,
+        84
       ],
       "facing": "right",
       "outfit": "standard",
@@ -23760,8 +23760,8 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -24001,8 +24001,8 @@
         48
       ],
       "anchor": [
-        19.0,
-        48.0
+        19,
+        48
       ],
       "facing": "back",
       "outfit": "pirate",
@@ -24242,8 +24242,8 @@
         48
       ],
       "anchor": [
-        16.0,
-        48.0
+        16,
+        48
       ],
       "facing": "front",
       "outfit": "pirate",
@@ -24483,8 +24483,8 @@
         48
       ],
       "anchor": [
-        16.0,
-        48.0
+        16,
+        48
       ],
       "facing": "right",
       "outfit": "pirate",
@@ -24724,8 +24724,8 @@
         40
       ],
       "anchor": [
-        27.0,
-        40.0
+        27,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -24965,8 +24965,8 @@
         56
       ],
       "anchor": [
-        24.0,
-        56.0
+        24,
+        56
       ],
       "facing": "right",
       "outfit": "standard",
@@ -25242,14 +25242,14 @@
         48
       ],
       "anchor": [
-        16.0,
-        48.0
+        16,
+        48
       ],
       "facing": "back",
       "outfit": "standard",
       "interaction": "play-drums",
       "seatPoint": [
-        15.0,
+        15,
         38.98
       ],
       "postureClass": "seated",
@@ -25486,8 +25486,8 @@
         48
       ],
       "anchor": [
-        16.0,
-        48.0
+        16,
+        48
       ],
       "facing": "front",
       "outfit": "standard",
@@ -25730,8 +25730,8 @@
         40
       ],
       "anchor": [
-        24.0,
-        40.0
+        24,
+        40
       ],
       "facing": "front-right",
       "outfit": "standard",
@@ -26447,14 +26447,14 @@
         40
       ],
       "anchor": [
-        20.0,
-        40.0
+        20,
+        40
       ],
       "facing": "front",
       "outfit": "artist-smock",
       "interaction": "pottery-wheel",
       "seatPoint": [
-        20.0,
+        20,
         29.66
       ],
       "postureClass": "seated",
@@ -26691,8 +26691,8 @@
         40
       ],
       "anchor": [
-        32.0,
-        40.0
+        32,
+        40
       ],
       "facing": "right",
       "outfit": "old-school-workout-kit",
@@ -26922,8 +26922,8 @@
         40
       ],
       "anchor": [
-        32.0,
-        40.0
+        32,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -27163,8 +27163,8 @@
         40
       ],
       "anchor": [
-        24.0,
-        40.0
+        24,
+        40
       ],
       "facing": "right",
       "outfit": "light-blue-pyjamas",
@@ -27175,17 +27175,17 @@
       "status": "measured-pass",
       "note": "measured against the canonical anatomy for its pose class",
       "medianFaceProxyWidth": 13.25,
-      "medianFaceProxyHeight": 15.62,
+      "medianFaceProxyHeight": 15.0,
       "faceProxyCoverage": "6/6",
       "medianTorsoScanWidthAt20": null,
       "torsoScanCoverage": "0/6",
       "alphaHeightRange": [
-        21.75,
+        18.75,
         22.25
       ],
       "alphaWidthRange": [
-        37.75,
-        42.0
+        32.0,
+        41.25
       ],
       "bottomClearanceRange": [
         0.5,
@@ -27194,24 +27194,24 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            3.0,
-            17.75,
-            45.0,
+            8.0,
+            20.75,
+            40.0,
             39.5
           ],
-          "alphaWidth": 42.0,
-          "alphaHeight": 21.75,
+          "alphaWidth": 32.0,
+          "alphaHeight": 18.75,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              31.75,
-              20.75,
-              44.5,
-              36.75
+              29.0,
+              23.25,
+              39.25,
+              31.0
             ],
-            "width": 12.75,
-            "height": 16.0,
-            "area": 1083
+            "width": 10.25,
+            "height": 7.75,
+            "area": 538
           },
           "torsoScanWidthAt20": null
         },
@@ -27309,24 +27309,24 @@
         },
         {
           "alphaBox": [
-            3.75,
-            17.75,
-            44.25,
+            8.0,
+            20.75,
+            40.0,
             39.5
           ],
-          "alphaWidth": 40.5,
-          "alphaHeight": 21.75,
+          "alphaWidth": 32.0,
+          "alphaHeight": 18.75,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              30.5,
-              21.0,
-              43.75,
-              36.5
+              29.0,
+              23.25,
+              39.25,
+              31.0
             ],
-            "width": 13.25,
-            "height": 15.5,
-            "area": 1147
+            "width": 10.25,
+            "height": 7.75,
+            "area": 538
           },
           "torsoScanWidthAt20": null
         }
@@ -27358,8 +27358,8 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": "front-to-back",
       "outfit": "light-blue-pyjamas",
@@ -27553,8 +27553,8 @@
         41
       ],
       "anchor": [
-        17.0,
-        40.0
+        17,
+        40
       ],
       "facing": "right",
       "outfit": "light-blue-pyjamas",
@@ -27794,14 +27794,14 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": "front",
       "outfit": "standard",
       "interaction": "read-book",
       "seatPoint": [
-        16.0,
+        16,
         29.275
       ],
       "postureClass": "seated",
@@ -28038,14 +28038,14 @@
         40
       ],
       "anchor": [
-        17.0,
-        40.0
+        17,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
       "interaction": "read-book",
       "seatPoint": [
-        17.0,
+        17,
         29.165
       ],
       "postureClass": "seated",
@@ -28354,14 +28354,14 @@
         48
       ],
       "anchor": [
-        24.0,
-        48.0
+        24,
+        48
       ],
       "facing": "front",
       "outfit": "old-school-workout-kit",
       "interaction": "use-stationary-exercise-bike",
       "seatPoint": [
-        24.0,
+        24,
         39.16
       ],
       "postureClass": "seated",
@@ -28598,14 +28598,14 @@
         44
       ],
       "anchor": [
-        20.0,
-        42.0
+        20,
+        42
       ],
       "facing": "right",
       "outfit": "standard",
       "interaction": "row-boat",
       "seatPoint": [
-        24.0,
+        24,
         32.01
       ],
       "postureClass": "seated",
@@ -28842,8 +28842,8 @@
         41
       ],
       "anchor": [
-        16.0,
-        41.0
+        16,
+        41
       ],
       "facing": "front",
       "outfit": "standard",
@@ -29083,8 +29083,8 @@
         40
       ],
       "anchor": [
-        32.0,
-        40.0
+        32,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -29879,8 +29879,8 @@
         48
       ],
       "anchor": [
-        40.0,
-        24.0
+        40,
+        24
       ],
       "facing": "right",
       "outfit": "scuba",
@@ -30596,8 +30596,8 @@
         40
       ],
       "anchor": [
-        17.0,
-        40.0
+        17,
+        40
       ],
       "facing": "back",
       "outfit": "standard",
@@ -30837,8 +30837,8 @@
         40
       ],
       "anchor": [
-        21.0,
-        40.0
+        21,
+        40
       ],
       "facing": "rear-right",
       "outfit": "cream-bathrobe",
@@ -31124,8 +31124,8 @@
         40
       ],
       "anchor": [
-        28.0,
-        40.0
+        28,
+        40
       ],
       "facing": "back",
       "outfit": "cream-bathrobe",
@@ -31365,8 +31365,8 @@
         40
       ],
       "anchor": [
-        25.0,
-        40.0
+        25,
+        40
       ],
       "facing": "rear-right",
       "outfit": "towel-privacy",
@@ -31606,8 +31606,8 @@
         40
       ],
       "anchor": [
-        24.0,
-        40.0
+        24,
+        40
       ],
       "facing": "rear-right",
       "outfit": "towel-privacy",
@@ -31847,8 +31847,8 @@
         40
       ],
       "anchor": [
-        25.0,
-        40.0
+        25,
+        40
       ],
       "facing": "back",
       "outfit": "mosaic-privacy",
@@ -32088,14 +32088,14 @@
         40
       ],
       "anchor": [
-        17.0,
-        40.0
+        17,
+        40
       ],
       "facing": "back",
       "outfit": "standard",
       "interaction": null,
       "seatPoint": [
-        17.0,
+        17,
         29.33
       ],
       "postureClass": "seated",
@@ -32103,17 +32103,17 @@
       "status": "corrected",
       "note": "new canonical rear stand-to-sit transition; final frame is the standard back-to-camera seated comparison ghost",
       "medianFaceProxyWidth": 2.5,
-      "medianFaceProxyHeight": 3.12,
+      "medianFaceProxyHeight": 3.0,
       "faceProxyCoverage": "6/6",
       "medianTorsoScanWidthAt20": null,
       "torsoScanCoverage": "0/6",
       "alphaHeightRange": [
         33.0,
-        36.75
+        38.0
       ],
       "alphaWidthRange": [
         21.0,
-        21.75
+        22.25
       ],
       "bottomClearanceRange": [
         0.5,
@@ -32122,24 +32122,24 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            6.0,
-            2.75,
-            27.75,
+            5.75,
+            1.5,
+            28.0,
             39.5
           ],
-          "alphaWidth": 21.75,
-          "alphaHeight": 36.75,
+          "alphaWidth": 22.25,
+          "alphaHeight": 38.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              6.5,
+              23.75,
               25.75,
-              10.5,
-              29.0
+              27.25,
+              28.75
             ],
-            "width": 4.0,
-            "height": 3.25,
-            "area": 143
+            "width": 3.5,
+            "height": 3.0,
+            "area": 118
           },
           "torsoScanWidthAt20": null
         },
@@ -32286,14 +32286,14 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": null,
       "outfit": "standard",
       "interaction": null,
       "seatPoint": [
-        16.0,
+        16,
         29.22
       ],
       "postureClass": "seated",
@@ -32484,14 +32484,14 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": null,
       "outfit": "standard",
       "interaction": null,
       "seatPoint": [
-        16.0,
+        16,
         29.44
       ],
       "postureClass": "seated",
@@ -32505,10 +32505,10 @@
       "torsoScanCoverage": "0/6",
       "alphaHeightRange": [
         32.75,
-        36.5
+        37.5
       ],
       "alphaWidthRange": [
-        15.75,
+        16.25,
         21.25
       ],
       "bottomClearanceRange": [
@@ -32518,24 +32518,24 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            8.25,
-            3.0,
+            7.75,
+            2.0,
             24.0,
             39.5
           ],
-          "alphaWidth": 15.75,
-          "alphaHeight": 36.5,
+          "alphaWidth": 16.25,
+          "alphaHeight": 37.5,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              13.5,
-              9.0,
+              13.0,
+              8.75,
               22.75,
-              15.25
+              15.5
             ],
-            "width": 9.25,
-            "height": 6.25,
-            "area": 421
+            "width": 9.75,
+            "height": 6.75,
+            "area": 487
           },
           "torsoScanWidthAt20": null
         },
@@ -33396,8 +33396,8 @@
         48
       ],
       "anchor": [
-        16.0,
-        48.0
+        16,
+        48
       ],
       "facing": "front",
       "outfit": "souwester",
@@ -33637,8 +33637,8 @@
         48
       ],
       "anchor": [
-        17.0,
-        48.0
+        17,
+        48
       ],
       "facing": "right",
       "outfit": "souwester",
@@ -33878,8 +33878,8 @@
         40
       ],
       "anchor": [
-        17.0,
-        40.0
+        17,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -34119,8 +34119,8 @@
         48
       ],
       "anchor": [
-        20.0,
-        48.0
+        20,
+        48
       ],
       "facing": "back",
       "outfit": "spaceman",
@@ -34360,8 +34360,8 @@
         48
       ],
       "anchor": [
-        16.0,
-        48.0
+        16,
+        48
       ],
       "facing": "front",
       "outfit": "spaceman",
@@ -34601,8 +34601,8 @@
         48
       ],
       "anchor": [
-        16.0,
-        48.0
+        16,
+        48
       ],
       "facing": "right",
       "outfit": "spaceman",
@@ -34842,8 +34842,8 @@
         48
       ],
       "anchor": [
-        20.0,
-        48.0
+        20,
+        48
       ],
       "facing": "rotating-rear-to-front-right",
       "outfit": "standard",
@@ -35083,8 +35083,8 @@
         48
       ],
       "anchor": [
-        20.0,
-        48.0
+        20,
+        48
       ],
       "facing": "three-quarter",
       "outfit": "standard",
@@ -35324,8 +35324,8 @@
         48
       ],
       "anchor": [
-        20.0,
-        48.0
+        20,
+        48
       ],
       "facing": "rotating-right-to-rear",
       "outfit": "standard",
@@ -35565,8 +35565,8 @@
         40
       ],
       "anchor": [
-        17.0,
-        40.0
+        17,
+        40
       ],
       "facing": null,
       "outfit": "standard",
@@ -35806,8 +35806,8 @@
         41
       ],
       "anchor": [
-        19.0,
-        41.0
+        19,
+        41
       ],
       "facing": null,
       "outfit": "standard",
@@ -36523,8 +36523,8 @@
         48
       ],
       "anchor": [
-        40.0,
-        24.0
+        40,
+        24
       ],
       "facing": "right",
       "outfit": "striped-swimming-costume",
@@ -36764,8 +36764,8 @@
         51
       ],
       "anchor": [
-        27.0,
-        24.0
+        27,
+        24
       ],
       "facing": "up",
       "outfit": "striped-swimming-costume",
@@ -37197,8 +37197,8 @@
         40
       ],
       "anchor": [
-        17.0,
-        40.0
+        17,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -37630,8 +37630,8 @@
         40
       ],
       "anchor": [
-        17.0,
-        40.0
+        17,
+        40
       ],
       "facing": "back",
       "outfit": "tarzan",
@@ -37871,8 +37871,8 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": "front",
       "outfit": "tarzan",
@@ -38112,8 +38112,8 @@
         40
       ],
       "anchor": [
-        18.0,
-        40.0
+        18,
+        40
       ],
       "facing": "right",
       "outfit": "tarzan",
@@ -38353,8 +38353,8 @@
         40
       ],
       "anchor": [
-        25.0,
-        40.0
+        25,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -38594,8 +38594,8 @@
         80
       ],
       "anchor": [
-        16.0,
-        80.0
+        16,
+        80
       ],
       "facing": "front",
       "outfit": "old-school-workout-kit",
@@ -38852,11 +38852,11 @@
       "medianTorsoScanWidthAt20": 15.88,
       "torsoScanCoverage": "6/6",
       "alphaHeightRange": [
-        38.0,
+        37.5,
         38.0
       ],
       "alphaWidthRange": [
-        18.5,
+        16.25,
         22.25
       ],
       "bottomClearanceRange": [
@@ -38866,26 +38866,26 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            6.75,
-            1.5,
-            25.25,
+            7.75,
+            2.0,
+            24.0,
             39.5
           ],
-          "alphaWidth": 18.5,
-          "alphaHeight": 38.0,
+          "alphaWidth": 16.25,
+          "alphaHeight": 37.5,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
               13.0,
-              8.5,
-              23.5,
-              15.25
+              8.75,
+              22.75,
+              15.5
             ],
-            "width": 10.5,
+            "width": 9.75,
             "height": 6.75,
-            "area": 511
+            "area": 487
           },
-          "torsoScanWidthAt20": 14.25
+          "torsoScanWidthAt20": 13.0
         },
         {
           "alphaBox": [
@@ -39701,8 +39701,8 @@
         40
       ],
       "anchor": [
-        22.0,
-        40.0
+        22,
+        40
       ],
       "facing": "back",
       "outfit": "standard",
@@ -40180,8 +40180,8 @@
         40
       ],
       "anchor": [
-        18.0,
-        40.0
+        18,
+        40
       ],
       "facing": "back-to-front",
       "outfit": "standard",
@@ -40432,10 +40432,10 @@
       "measurementMethod": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
       "status": "measured-pass",
       "note": "measured against the canonical anatomy for its pose class",
-      "medianFaceProxyWidth": 2.0,
+      "medianFaceProxyWidth": 2.38,
       "medianFaceProxyHeight": 3.5,
       "faceProxyCoverage": "8/8",
-      "medianTorsoScanWidthAt20": 19.38,
+      "medianTorsoScanWidthAt20": 19.25,
       "torsoScanCoverage": "8/8",
       "alphaHeightRange": [
         38.0,
@@ -40443,7 +40443,7 @@
       ],
       "alphaWidthRange": [
         19.0,
-        20.5
+        22.25
       ],
       "bottomClearanceRange": [
         0.5,
@@ -40452,26 +40452,26 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            5.75,
+            4.75,
             1.5,
-            26.25,
+            27.0,
             39.5
           ],
-          "alphaWidth": 20.5,
+          "alphaWidth": 22.25,
           "alphaHeight": 38.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              9.0,
-              9.0,
-              11.0,
-              12.75
+              22.75,
+              25.75,
+              26.25,
+              28.75
             ],
-            "width": 2.0,
-            "height": 3.75,
-            "area": 60
+            "width": 3.5,
+            "height": 3.0,
+            "area": 118
           },
-          "torsoScanWidthAt20": 20.5
+          "torsoScanWidthAt20": 19.25
         },
         {
           "alphaBox": [
@@ -40613,24 +40613,24 @@
         },
         {
           "alphaBox": [
-            6.0,
+            4.75,
             1.5,
-            26.0,
+            27.0,
             39.5
           ],
-          "alphaWidth": 20.0,
+          "alphaWidth": 22.25,
           "alphaHeight": 38.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              9.5,
-              10.0,
-              12.25,
-              12.75
+              22.75,
+              25.75,
+              26.25,
+              28.75
             ],
-            "width": 2.75,
-            "height": 2.75,
-            "area": 59
+            "width": 3.5,
+            "height": 3.0,
+            "area": 118
           },
           "torsoScanWidthAt20": 19.25
         }
@@ -40659,8 +40659,8 @@
         41
       ],
       "anchor": [
-        24.0,
-        41.0
+        24,
+        41
       ],
       "facing": "rear-right",
       "outfit": "standard",
@@ -40903,8 +40903,8 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        17,
+        40
       ],
       "facing": "rear-right",
       "outfit": "standard",
@@ -40917,7 +40917,7 @@
       "measurementMethod": "head unit plus articulated shoulder-hip-sole chain; compressed silhouette height is never used as scale",
       "status": "corrected",
       "note": "seated anatomy normalised to the sit-side head and torso unit",
-      "medianFaceProxyWidth": 3.0,
+      "medianFaceProxyWidth": 2.88,
       "medianFaceProxyHeight": 3.75,
       "faceProxyCoverage": "8/8",
       "medianTorsoScanWidthAt20": null,
@@ -40927,7 +40927,7 @@
         33.5
       ],
       "alphaWidthRange": [
-        17.75,
+        19.0,
         20.25
       ],
       "bottomClearanceRange": [
@@ -40937,9 +40937,9 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            7.5,
+            8.5,
             6.5,
-            27.25,
+            28.25,
             39.5
           ],
           "alphaWidth": 19.75,
@@ -40947,9 +40947,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              18.5,
+              19.5,
               12.5,
-              21.25,
+              22.25,
               16.25
             ],
             "width": 2.75,
@@ -40960,9 +40960,9 @@
         },
         {
           "alphaBox": [
-            7.5,
+            8.5,
             6.0,
-            27.25,
+            28.25,
             39.5
           ],
           "alphaWidth": 19.75,
@@ -40970,9 +40970,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              18.5,
+              19.5,
               12.25,
-              21.75,
+              22.75,
               16.0
             ],
             "width": 3.25,
@@ -40983,9 +40983,9 @@
         },
         {
           "alphaBox": [
-            7.5,
+            8.5,
             7.25,
-            27.5,
+            28.5,
             39.5
           ],
           "alphaWidth": 20.0,
@@ -40993,9 +40993,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              19.5,
+              20.5,
               13.25,
-              22.5,
+              23.5,
               17.0
             ],
             "width": 3.0,
@@ -41006,9 +41006,9 @@
         },
         {
           "alphaBox": [
-            7.75,
+            8.75,
             6.5,
-            27.25,
+            28.25,
             39.5
           ],
           "alphaWidth": 19.5,
@@ -41016,78 +41016,9 @@
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              19.5,
+              20.5,
               12.75,
-              22.25,
-              16.5
-            ],
-            "width": 2.75,
-            "height": 3.75,
-            "area": 96
-          },
-          "torsoScanWidthAt20": null
-        },
-        {
-          "alphaBox": [
-            7.5,
-            6.25,
-            27.5,
-            39.5
-          ],
-          "alphaWidth": 20.0,
-          "alphaHeight": 33.25,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              18.5,
-              12.25,
-              21.5,
-              16.0
-            ],
-            "width": 3.0,
-            "height": 3.75,
-            "area": 101
-          },
-          "torsoScanWidthAt20": null
-        },
-        {
-          "alphaBox": [
-            7.25,
-            6.25,
-            27.5,
-            39.5
-          ],
-          "alphaWidth": 20.25,
-          "alphaHeight": 33.25,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              14.75,
-              12.0,
-              21.5,
-              18.0
-            ],
-            "width": 6.75,
-            "height": 6.0,
-            "area": 286
-          },
-          "torsoScanWidthAt20": null
-        },
-        {
-          "alphaBox": [
-            8.0,
-            6.75,
-            27.0,
-            39.5
-          ],
-          "alphaWidth": 19.0,
-          "alphaHeight": 32.75,
-          "bottomClearance": 0.5,
-          "faceProxy": {
-            "box": [
-              19.0,
-              12.75,
-              21.75,
+              23.25,
               16.5
             ],
             "width": 2.75,
@@ -41099,23 +41030,92 @@
         {
           "alphaBox": [
             8.5,
-            7.0,
-            26.25,
+            6.25,
+            28.5,
             39.5
           ],
-          "alphaWidth": 17.75,
-          "alphaHeight": 32.5,
+          "alphaWidth": 20.0,
+          "alphaHeight": 33.25,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              19.25,
-              13.0,
-              22.25,
-              16.75
+              19.5,
+              12.25,
+              22.5,
+              16.0
             ],
             "width": 3.0,
             "height": 3.75,
-            "area": 92
+            "area": 101
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            8.25,
+            6.25,
+            28.5,
+            39.5
+          ],
+          "alphaWidth": 20.25,
+          "alphaHeight": 33.25,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              15.75,
+              12.0,
+              22.5,
+              18.0
+            ],
+            "width": 6.75,
+            "height": 6.0,
+            "area": 286
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            9.0,
+            6.75,
+            28.0,
+            39.5
+          ],
+          "alphaWidth": 19.0,
+          "alphaHeight": 32.75,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              20.0,
+              12.75,
+              22.75,
+              16.5
+            ],
+            "width": 2.75,
+            "height": 3.75,
+            "area": 96
+          },
+          "torsoScanWidthAt20": null
+        },
+        {
+          "alphaBox": [
+            8.5,
+            6.5,
+            28.25,
+            39.5
+          ],
+          "alphaWidth": 19.75,
+          "alphaHeight": 33.0,
+          "bottomClearance": 0.5,
+          "faceProxy": {
+            "box": [
+              19.5,
+              12.5,
+              22.25,
+              16.25
+            ],
+            "width": 2.75,
+            "height": 3.75,
+            "area": 98
           },
           "torsoScanWidthAt20": null
         }
@@ -41147,8 +41147,8 @@
         40
       ],
       "anchor": [
-        23.0,
-        40.0
+        23,
+        40
       ],
       "facing": "back",
       "outfit": "standard",
@@ -41388,8 +41388,8 @@
         40
       ],
       "anchor": [
-        20.0,
-        40.0
+        20,
+        40
       ],
       "facing": "front",
       "outfit": "standard",
@@ -41629,8 +41629,8 @@
         40
       ],
       "anchor": [
-        26.0,
-        40.0
+        26,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -42108,8 +42108,8 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": "right",
       "outfit": "standard",
@@ -42357,10 +42357,10 @@
       "measurementMethod": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
       "status": "measured-pass",
       "note": "measured against the canonical anatomy for its pose class",
-      "medianFaceProxyWidth": 2.0,
+      "medianFaceProxyWidth": 2.38,
       "medianFaceProxyHeight": 3.5,
       "faceProxyCoverage": "8/8",
-      "medianTorsoScanWidthAt20": 19.38,
+      "medianTorsoScanWidthAt20": 19.25,
       "torsoScanCoverage": "8/8",
       "alphaHeightRange": [
         38.0,
@@ -42368,7 +42368,7 @@
       ],
       "alphaWidthRange": [
         19.0,
-        20.5
+        22.25
       ],
       "bottomClearanceRange": [
         0.5,
@@ -42377,26 +42377,26 @@
       "frameMeasurements": [
         {
           "alphaBox": [
-            5.75,
+            4.75,
             1.5,
-            26.25,
+            27.0,
             39.5
           ],
-          "alphaWidth": 20.5,
+          "alphaWidth": 22.25,
           "alphaHeight": 38.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              9.0,
-              9.0,
-              11.0,
-              12.75
+              22.75,
+              25.75,
+              26.25,
+              28.75
             ],
-            "width": 2.0,
-            "height": 3.75,
-            "area": 60
+            "width": 3.5,
+            "height": 3.0,
+            "area": 118
           },
-          "torsoScanWidthAt20": 20.5
+          "torsoScanWidthAt20": 19.25
         },
         {
           "alphaBox": [
@@ -42538,24 +42538,24 @@
         },
         {
           "alphaBox": [
-            6.0,
+            4.75,
             1.5,
-            26.0,
+            27.0,
             39.5
           ],
-          "alphaWidth": 20.0,
+          "alphaWidth": 22.25,
           "alphaHeight": 38.0,
           "bottomClearance": 0.5,
           "faceProxy": {
             "box": [
-              9.5,
-              10.0,
-              12.25,
-              12.75
+              22.75,
+              25.75,
+              26.25,
+              28.75
             ],
-            "width": 2.75,
-            "height": 2.75,
-            "area": 59
+            "width": 3.5,
+            "height": 3.0,
+            "area": 118
           },
           "torsoScanWidthAt20": 19.25
         }
@@ -42584,14 +42584,14 @@
         40
       ],
       "anchor": [
-        17.0,
-        40.0
+        17,
+        40
       ],
       "facing": "back",
       "outfit": "standard",
       "interaction": "write",
       "seatPoint": [
-        17.0,
+        17,
         30.43
       ],
       "postureClass": "seated",
@@ -42828,14 +42828,14 @@
         41
       ],
       "anchor": [
-        21.0,
-        41.0
+        21,
+        41
       ],
       "facing": "right",
       "outfit": "standard",
       "interaction": "write",
       "seatPoint": [
-        20.0,
+        20,
         29.89
       ],
       "postureClass": "seated",
@@ -43072,8 +43072,8 @@
         40
       ],
       "anchor": [
-        16.0,
-        40.0
+        16,
+        40
       ],
       "facing": "front-right",
       "outfit": "standard",

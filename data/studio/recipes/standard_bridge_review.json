@@ -1,0 +1,54 @@
+{
+  "id": "standard_bridge_review",
+  "kind": "recipe",
+  "title": "Standard keeper bridge review",
+  "notes": "A compact studio route for judging the reusable neutral-to-neutral bridge set. It deliberately visits side, front, rear, seated and crouched poses in one continuous flow.",
+  "status": "draft",
+  "outfit": "standard",
+  "startAt": "stairs",
+  "facing": "right",
+  "room": {
+    "name": "Animation workshop",
+    "inner": false
+  },
+  "objects": [
+    {
+      "id": "mark",
+      "label": "Review mark",
+      "x": 70,
+      "w": 1,
+      "h": 1,
+      "layer": "back",
+      "solid": false
+    }
+  ],
+  "action": {
+    "object": "mark",
+    "dx": 0,
+    "facing": "right"
+  },
+  "walkSpeed": 20,
+  "steps": [
+    { "id": "enter", "kind": "macro", "macro": "enter_room", "label": "Enter the workshop", "params": { "swapTo": "" } },
+    { "id": "walk-start", "kind": "play", "clip": "keeper_walk_start", "label": "Start walking" },
+    { "id": "walk", "kind": "walk", "to": "action", "label": "Walk to the review mark" },
+    { "id": "walk-stop", "kind": "play", "clip": "keeper_walk_stop", "label": "Stop walking" },
+    { "id": "turn-back", "kind": "play", "clip": "keeper_turn_back", "label": "Turn side to back" },
+    { "id": "turn-side", "kind": "play", "clip": "keeper_turn_back", "reverse": true, "label": "Turn back to side" },
+    { "id": "turn-front", "kind": "play", "clip": "keeper_turn_front", "label": "Turn side to front" },
+    { "id": "front-to-side", "kind": "play", "clip": "keeper_turn_front", "reverse": true, "label": "Turn front to side" },
+    { "id": "sit-side", "kind": "play", "clip": "keeper_sit_side", "label": "Sit from the side" },
+    { "id": "stand-side", "kind": "play", "clip": "keeper_sit_side", "reverse": true, "label": "Stand from the side" },
+    { "id": "face-back", "kind": "play", "clip": "keeper_turn_back", "label": "Face away" },
+    { "id": "sit-back", "kind": "play", "clip": "keeper_sit_back", "label": "Sit facing away" },
+    { "id": "stand-back", "kind": "play", "clip": "keeper_sit_back", "reverse": true, "label": "Stand facing away" },
+    { "id": "crouch", "kind": "play", "clip": "keeper_crouch_back", "label": "Crouch" },
+    { "id": "uncrouch", "kind": "play", "clip": "keeper_crouch_back", "reverse": true, "label": "Stand from crouch" },
+    { "id": "face-side", "kind": "play", "clip": "keeper_turn_back", "reverse": true, "label": "Face right again" },
+    { "id": "reach-high", "kind": "play", "clip": "keeper_reach_high", "label": "Reach high" },
+    { "id": "reach-low", "kind": "play", "clip": "keeper_reach_low", "label": "Reach low" },
+    { "id": "pick", "kind": "play", "clip": "keeper_pick_up_low", "label": "Pick up", "main": true },
+    { "id": "put", "kind": "play", "clip": "keeper_pick_up_low", "reverse": true, "label": "Put down" },
+    { "id": "leave", "kind": "macro", "macro": "leave_room", "label": "Leave the workshop" }
+  ]
+}

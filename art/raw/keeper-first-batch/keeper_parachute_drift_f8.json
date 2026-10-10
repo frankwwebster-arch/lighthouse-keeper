@@ -15,5 +15,6 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "parachute-drift",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "assetRole": "clip"
 }

@@ -106,13 +106,15 @@ Frank's rule: he can never walk into a solid thing, and nothing solid in front o
 
 These match Codex's plan for the keeper sheets.
 
-- **`startPose` and `endPose`** on every sidecar, from this shared list: `standing-side-right`, `standing-front`, `standing-back`, `sitting-side-right`, `sitting-front`, `sitting-back`, `lying-side-right`, `crouching-back`. Add new names only when an activity needs one, and add them here when you do. Reversed playback swaps start and end.
+- **`startPose` and `endPose`** on every full-body sidecar, from this shared list: `standing-side-right`, `standing-front`, `standing-back`, `sitting-side-right`, `sitting-front`, `sitting-back`, `lying-side-right`, `crouching-back`, `standing-rear-right`, `sitting-rear-right`, `prone-side-right`, `swimming-side-right`, `swimming-front`, `swimming-back`, `floating-prone-right`, `climbing-back`, `holding-small-object-side-right`, `parachute-open`, `scuba-standing-side-right`, `scuba-swim-right`, `play-guitar-acoustic`, `play-guitar-gretsch`, `play-guitar-flying-v-1967`. Add new names only when an activity needs one, and add them both here and to `data/keeper_pose_registry.json`. Reversed playback swaps start and end.
 - A **neutral still frame per outfit and pose**: `keeper_neutral_<pose>` for the standard uniform, `keeper_<outfit>_neutral_<pose>` for the rest.
 - **`sfxCues`** on the sidecar, as `[{ "frame": 3, "cue": "door_creak" }]`.
   - `frame` counts from **0**.
   - `cue` uses lower-case letters, digits, `_` and `-`.
   - The studio plays these automatically in every recipe that uses the clip, each time that frame comes round (in a loop too, and in the right place when reversed). They show on the timeline as belonging to the sheet. So mark footsteps once on the walk, and every walk in every recipe has them.
-- `reverseFor`, `mirrorSafe`, `facing`, `anchor`, `loop` and `propHandoffFrame` as today. The studio already reads `facing` and `mirrorSafe` to decide when to flip a clip. A clip with no facing and no `mirrorSafe` (a rear view) is never flipped.
+- `reverseFor`, `mirrorSafe`, `facing`, `anchor`, `loop` and `propHandoffFrame` as today. `assetRole` distinguishes `neutral`, `bridge`, ordinary `clip`, and technical `component` / `reference` sheets. The studio already reads `facing` and `mirrorSafe` to decide when to flip a clip. A clip with no facing and no `mirrorSafe` (a rear view) is never flipped.
+
+`npm test` runs `scripts/keeper-contract.ts --check` before Vitest. It checks the shared pose names, zero-based sound frames, the pixel/anchor endpoint audit and the frozen legacy-exception list. Any new endpoint failure, stale audit entry or regression from an exact endpoint fails the normal test command. The ordered human repair queue is `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`; its machine data is `data/keeper_endpoint_audit.json`.
 
 ## Drafting a recipe for a new animation
 

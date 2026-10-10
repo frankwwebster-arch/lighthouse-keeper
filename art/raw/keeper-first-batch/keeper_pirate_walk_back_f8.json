@@ -5,8 +5,8 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    19.0,
-    48.0
+    19,
+    48
   ],
   "z": 50,
   "loop": true,
@@ -24,5 +24,18 @@
   "reviewOffset": [
     0,
     0
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "sfxCues": [
+    {
+      "frame": 0,
+      "cue": "footstep"
+    },
+    {
+      "frame": 4,
+      "cue": "footstep"
+    }
   ]
 }

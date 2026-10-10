@@ -1,0 +1,19 @@
+{
+  "w": 54,
+  "h": 51,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    27,
+    24
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "striped-swimming-costume",
+  "startPose": "swimming-back",
+  "endPose": "swimming-back",
+  "pose": "swimming-back",
+  "assetRole": "neutral",
+  "facing": "up"
+}

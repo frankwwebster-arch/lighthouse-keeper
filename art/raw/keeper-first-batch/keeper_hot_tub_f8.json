@@ -5,13 +5,13 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    20.0,
-    47.0
+    20,
+    47
   ],
   "z": 50,
   "loop": true,
   "seatPoint": [
-    20.0,
+    20,
     28.775
   ],
   "outfit": "privacy-foam",
@@ -24,5 +24,8 @@
   "reviewOffset": [
     0,
     -7.5
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "sitting-front",
+  "endPose": "sitting-front"
 }

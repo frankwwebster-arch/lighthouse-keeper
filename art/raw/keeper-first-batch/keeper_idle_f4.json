@@ -9,5 +9,8 @@
     40
   ],
   "z": 50,
-  "loop": true
+  "loop": true,
+  "assetRole": "clip",
+  "startPose": "standing-front",
+  "endPose": "standing-front"
 }

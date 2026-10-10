@@ -901,6 +901,10 @@ save("keeper_reference", [compose("front", "neutral")])
 save("keeper_idle", [compose("front", "neutral", bob=b) for b in (0, 0, -1, 0)], 6)
 walk_frames = generated_frames("keeper-walk-generated-source.png", 8, [side_walk(p) for p in (-3, -2, 0, 2, 3, 2, 0, -2)])
 turn_frames = generated_frames("keeper-turn-back-generated-source.png", 6)
+turn_front_frames = height_normalise_sequence(
+    generated_frames("keeper-turn-front-generated-source.png", 6),
+    (38, 38, 38, 38, 38, 38),
+)
 work_frames = generated_frames("keeper-work-back-generated-source.png", 8)
 sit_side_frames = generated_frames("keeper-sit-side-generated-source.png", 6)
 nap_seated_frames = match_reference_heights(
@@ -911,6 +915,10 @@ sit_front_frames = generated_frames("keeper-sit-front-generated-source.png", 6, 
 sit_back_frames = height_normalise_sequence(
     generated_frames("keeper-sit-back-generated-source.png", 6),
     (38, 37, 36, 35, 34, 34),
+)
+sitting_turn_back_to_rear_frames = height_normalise_sequence(
+    generated_frames("keeper-sitting-turn-back-to-rear-generated-source.png", 4),
+    (34, 34, 34, 34),
 )
 piano_frames = generated_frames("keeper-piano-generated-source.png", 8, scale_multiplier=0.90)
 urinate_frames = generated_frames("keeper-loo-stand-generated-source.png", 6)
@@ -1133,6 +1141,7 @@ place_cake_frames = generated_frames("keeper-place-cake-generated-source.png", 8
 place_cake_frames = [remove_small_alpha_components(frame) for frame in place_cake_frames]
 save("keeper_walk", walk_frames, 10, mirror_safe=True)
 save("keeper_turn_back", turn_frames, 8, loop=False, reverse_for="turn_front")
+save("keeper_turn_front", turn_front_frames, 8, loop=False, reverse_for="turn_side_from_front", facing="right-to-front", interaction="turn-front")
 save("keeper_work_back", work_frames, 8, hand_use_point=[16, 21])
 save("keeper_cook_back", work_frames, 8, hand_use_point=[16, 21])
 save("keeper_wash_back", work_frames, 8, hand_use_point=[16, 21])
@@ -1141,6 +1150,7 @@ save("keeper_sit_side", sit_side_frames, 8, loop=False, seat_point=[16, 29], rev
 save("keeper_nap_seated", nap_seated_frames, 8, seat_point=[16, 29], mirror_safe=True, start_pose="sitting-side-right", end_pose="sitting-side-right", facing="right", interaction="nap-seated", mirrors_for="left")
 save("keeper_sit_front", sit_front_frames, 8, loop=False, seat_point=[16, 29], reverse_for="stand_front")
 save("keeper_sit_back", sit_back_frames, 8, loop=False, seat_point=[16, 29], reverse_for="stand_back", facing="back")
+save("keeper_sitting_turn_back_to_rear", sitting_turn_back_to_rear_frames, 8, loop=False, seat_point=[16, 29], reverse_for="sitting_turn_rear_to_back", facing="back-to-rear-right", interaction="turn-seated")
 save("keeper_piano", piano_frames, 10, seat_point=[16, 29], hand_use_point=[24, 20])
 save("keeper_urinate_back", urinate_frames, 8, hand_use_point=[16, 27])
 save("keeper_eat_seated", eat_seated_frames, 8, seat_point=[16, 29], hand_use_point=[24, 17], mirror_safe=True)
@@ -1226,11 +1236,13 @@ contact.save(Path(__file__).with_name("keeper-contact-sheet.png"), optimize=True
 
 save_preview("keeper-walk", walk_frames, 100)
 save_preview("keeper-turn-back", turn_frames, 120, ping_pong=True)
+save_preview("keeper-turn-front", turn_front_frames, 120, ping_pong=True)
 save_preview("keeper-work-back", work_frames, 120)
 save_preview("keeper-sit-side", sit_side_frames, 120, ping_pong=True)
 save_preview("keeper-nap-seated", nap_seated_frames, 250)
 save_preview("keeper-sit-front", sit_front_frames, 120, ping_pong=True)
 save_preview("keeper-sit-back", sit_back_frames, 120, ping_pong=True)
+save_preview("keeper-sitting-turn-back-to-rear", sitting_turn_back_to_rear_frames, 120, ping_pong=True)
 save_preview("keeper-piano", piano_frames, 100)
 save_preview("keeper-urinate-back", urinate_frames, 120)
 save_preview("keeper-eat-seated", eat_seated_frames, 120)

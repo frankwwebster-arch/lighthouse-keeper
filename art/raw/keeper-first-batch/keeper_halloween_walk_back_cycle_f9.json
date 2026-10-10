@@ -1,0 +1,33 @@
+{
+  "w": 34,
+  "h": 48,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    17,
+    48
+  ],
+  "z": 50,
+  "loop": true,
+  "outfit": "halloween",
+  "facing": "back",
+  "interaction": "halloween-walk",
+  "movementVector": [
+    0,
+    -1
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "bridge",
+  "sfxCues": [
+    {
+      "frame": 2,
+      "cue": "footstep"
+    },
+    {
+      "frame": 6,
+      "cue": "footstep"
+    }
+  ]
+}

@@ -7,9 +7,10 @@
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
-    "test": "vitest run",
+    "test": "node scripts/keeper-contract.ts --check && vitest run",
     "typecheck": "tsc --noEmit",
-    "sprites": "node scripts/sprites.ts",
+    "sprites": "node scripts/keeper-contract.ts && node scripts/sprites.ts",
+    "keeper-contract": "node scripts/keeper-contract.ts",
     "upgrades": "node scripts/upgrades.ts"
   },
   "dependencies": {

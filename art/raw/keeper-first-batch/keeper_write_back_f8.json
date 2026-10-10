@@ -5,17 +5,17 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    17.0,
-    40.0
+    17,
+    40
   ],
   "z": 50,
   "loop": true,
   "seatPoint": [
-    17.0,
+    17,
     30.43
   ],
   "handUsePoint": [
-    17.0,
+    17,
     23.47
   ],
   "facing": "back",
@@ -27,5 +27,8 @@
   "reviewOffset": [
     0,
     0
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "sitting-back",
+  "endPose": "sitting-back"
 }

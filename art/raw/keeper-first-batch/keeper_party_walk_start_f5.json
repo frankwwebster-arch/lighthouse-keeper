@@ -1,0 +1,27 @@
+{
+  "w": 32,
+  "h": 48,
+  "frames": 5,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    16,
+    48
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "party-hat",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "party-walk-start",
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "sfxCues": [
+    {
+      "frame": 2,
+      "cue": "footstep"
+    }
+  ],
+  "reverseFor": "walk_stop"
+}

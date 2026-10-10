@@ -1,0 +1,19 @@
+{
+  "w": 38,
+  "h": 50,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    19,
+    50
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "knight",
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "pose": "standing-back",
+  "assetRole": "neutral",
+  "facing": "back"
+}

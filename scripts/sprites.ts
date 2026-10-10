@@ -44,8 +44,12 @@ interface Entry {
   propHandoffFrame?: number
   propVariant?: string
   upgradeTier?: number
+  /** Zero-based sound events played whenever this frame is shown. */
+  sfxCues?: { frame: number; cue: string }[]
   startPose?: string
   endPose?: string
+  assetRole?: 'clip' | 'component' | 'reference' | 'neutral' | 'bridge'
+  pose?: string
   outfit?: string
   loop?: boolean
   reverseFor?: string
@@ -125,7 +129,7 @@ for (const path of files.sort()) {
   }
   const file = `${s.name}.png`
   write(join(OUT, file), s.img)
-  manifest[s.name] = { file, w: s.frameW, h: contract?.h ?? s.img.h, frames: s.frames, ...(s.fps ? { fps: s.fps } : {}), ...(s.pivot ? { pivot: s.pivot } : {}), ...(contract ? { density: contract.density, anchor: contract.anchor, keeperUsePoint: contract.keeperUsePoint, effectOrigin: contract.effectOrigin, bubbleOrigin: contract.bubbleOrigin, seatPoint: contract.seatPoint, handUsePoint: contract.handUsePoint, pedalPoint: contract.pedalPoint, bowlPoint: contract.bowlPoint, lookTargetPoint: contract.lookTargetPoint, bedSurfacePoint: contract.bedSurfacePoint, pillowPoint: contract.pillowPoint, movementVector: contract.movementVector, depthScaleRange: contract.depthScaleRange, depthOffsetY: contract.depthOffsetY, propHandoffFrame: contract.propHandoffFrame, propVariant: contract.propVariant, upgradeTier: contract.upgradeTier, startPose: contract.startPose, endPose: contract.endPose, outfit: contract.outfit, loop: contract.loop, reverseFor: contract.reverseFor, mirrorSafe: contract.mirrorSafe, facing: contract.facing, interaction: contract.interaction, mirrorsFor: contract.mirrorsFor, z: contract.z } : {}) }
+  manifest[s.name] = { file, w: s.frameW, h: contract?.h ?? s.img.h, frames: s.frames, ...(s.fps ? { fps: s.fps } : {}), ...(s.pivot ? { pivot: s.pivot } : {}), ...(contract ? { density: contract.density, anchor: contract.anchor, keeperUsePoint: contract.keeperUsePoint, effectOrigin: contract.effectOrigin, bubbleOrigin: contract.bubbleOrigin, seatPoint: contract.seatPoint, handUsePoint: contract.handUsePoint, pedalPoint: contract.pedalPoint, bowlPoint: contract.bowlPoint, lookTargetPoint: contract.lookTargetPoint, bedSurfacePoint: contract.bedSurfacePoint, pillowPoint: contract.pillowPoint, movementVector: contract.movementVector, depthScaleRange: contract.depthScaleRange, depthOffsetY: contract.depthOffsetY, propHandoffFrame: contract.propHandoffFrame, propVariant: contract.propVariant, upgradeTier: contract.upgradeTier, sfxCues: contract.sfxCues, startPose: contract.startPose, endPose: contract.endPose, assetRole: contract.assetRole, pose: contract.pose, outfit: contract.outfit, loop: contract.loop, reverseFor: contract.reverseFor, mirrorSafe: contract.mirrorSafe, facing: contract.facing, interaction: contract.interaction, mirrorsFor: contract.mirrorsFor, z: contract.z } : {}) }
   const size = `${s.frameW}x${contract?.h ?? s.img.h}${s.frames > 1 ? ` x${s.frames} @${s.fps}fps` : ''}${contract ? ` density ${density}` : ''}`
   const scale = s.scale === 1 ? 'already 1x' : `÷${Number.isInteger(s.scale) ? s.scale : s.scale.toFixed(2)}`
   console.log(`${s.warnings.length ? '!' : '✓'}  ${s.name.padEnd(34)} ${size.padEnd(22)} ${scale}`)

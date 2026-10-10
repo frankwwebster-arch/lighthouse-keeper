@@ -22,5 +22,8 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "push-lawn-mower",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "assetRole": "clip",
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right"
 }

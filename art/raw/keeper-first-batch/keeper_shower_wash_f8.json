@@ -5,8 +5,8 @@
   "fps": 2,
   "density": 4,
   "anchor": [
-    25.0,
-    40.0
+    25,
+    40
   ],
   "z": 50,
   "loop": true,
@@ -20,5 +20,8 @@
   "reviewOffset": [
     0,
     0
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-back",
+  "endPose": "standing-back"
 }

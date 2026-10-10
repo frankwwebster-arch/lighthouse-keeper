@@ -5,17 +5,17 @@
   "fps": 3,
   "density": 4,
   "anchor": [
-    28.0,
-    40.0
+    28,
+    40
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    46.0,
+    46,
     15.75
   ],
   "lookTargetPoint": [
-    56.0,
+    56,
     12.84
   ],
   "mirrorSafe": true,
@@ -29,5 +29,8 @@
   "reviewOffset": [
     0,
     0
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right"
 }

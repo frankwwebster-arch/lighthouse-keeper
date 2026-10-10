@@ -24,5 +24,8 @@
   "reviewOffset": [
     0,
     0
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "swimming-front",
+  "endPose": "swimming-front"
 }

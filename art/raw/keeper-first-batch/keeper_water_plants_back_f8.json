@@ -5,14 +5,14 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    23.0,
-    40.0
+    23,
+    40
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    23.0,
-    31.0
+    23,
+    31
   ],
   "facing": "back",
   "interaction": "water-plants",
@@ -23,5 +23,8 @@
   "reviewOffset": [
     0,
     0
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-back",
+  "endPose": "standing-back"
 }

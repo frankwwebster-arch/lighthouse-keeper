@@ -23,5 +23,8 @@
   "mirrorSafe": true,
   "facing": "right",
   "interaction": "clean-floor",
-  "mirrorsFor": "left"
+  "mirrorsFor": "left",
+  "assetRole": "clip",
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right"
 }

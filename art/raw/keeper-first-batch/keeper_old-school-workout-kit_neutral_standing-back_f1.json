@@ -1,0 +1,19 @@
+{
+  "w": 54,
+  "h": 56,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    27,
+    56
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "old-school-workout-kit",
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "pose": "standing-back",
+  "assetRole": "neutral",
+  "facing": "back"
+}

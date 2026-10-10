@@ -70,7 +70,7 @@ assert floor_contracts["room_lamp"]["w"] == 95
 
 # Every keeper strip must agree byte-for-byte with its sidecar and runtime copy.
 keeper_pngs = sorted(KEEPER_DIR.glob("*.png"))
-assert len(keeper_pngs) == 191
+assert len(keeper_pngs) == 310
 keeper_names = set()
 keeper_sidecars = {}
 for raw_path in keeper_pngs:
@@ -101,6 +101,14 @@ for raw_path in keeper_pngs:
     assert sidecar["fps"] == 0 if sidecar["frames"] == 1 else 1 <= sidecar["fps"] <= 20
     exported = Image.open(SPRITE_DIR / runtime["file"]).convert("RGBA")
     assert ImageChops.difference(raw, exported).getbbox() is None, name
+
+# The immutable visual-review denominator excludes deterministic neutrals and
+# recipe bridge derivatives. It remains the original 191-sheet production set.
+review_source_names = {
+    name for name, sidecar in keeper_sidecars.items()
+    if sidecar.get("assetRole") not in {"neutral", "bridge"}
+}
+assert len(review_source_names) == 191
 
 # Review-accepted timing changes are production data; every other animated clip
 # keeps its authored 4 fps baseline.
@@ -134,7 +142,7 @@ accepted_fps = {
     "keeper_type_computer": 8.5,
     "keeper_work_back": 3,
 }
-for name in keeper_names:
+for name in review_source_names:
     clip = manifest[name]
     if clip["frames"] > 1:
         assert clip["fps"] == accepted_fps.get(name, 4), (name, clip["fps"])
@@ -441,13 +449,14 @@ for token in (
 # Every generated keeper preview remains animated and the four new route clips
 # have dedicated previews in addition to the pre-existing mirrored variants.
 preview_paths = list((ROOT / "docs/floor-asset-catalogue").glob("keeper-*-preview.gif"))
-assert len(preview_paths) == 179
+assert len(preview_paths) == 181
 assert all(Image.open(path).is_animated for path in preview_paths)
 for slug in ("keeper-scuba-walk-side", "keeper-scuba-jetty-dive", "keeper-parachute-drift", "keeper-parachute-landing"):
     assert (ROOT / f"docs/floor-asset-catalogue/{slug}-preview.gif").exists()
 
 print(
-    "Verified: 71 spaces, 1579 catalogue rows, floor exports, 191 keeper sheets/1420 frames, "
+    "Verified: 71 spaces, 1579 catalogue rows, floor exports, 310 working keeper sheets, "
+    "the historical 191-sheet/1420-frame review set, "
     "reviewed visual sizing and identity authorities, scuba/parachute routes, cleaning cupboard occlusion, "
-    "review evidence/statuses/responses, filtered cyclic navigation and 179 animated previews."
+    "review evidence/statuses/responses, filtered cyclic navigation and 181 animated previews."
 )

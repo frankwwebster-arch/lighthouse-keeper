@@ -14,6 +14,7 @@ import bakeCake from '../../data/studio/recipes/bake_cake.json'
 import brushTeeth from '../../data/studio/recipes/brush_teeth.json'
 import goToBed from '../../data/studio/recipes/go_to_bed.json'
 import makeTea from '../../data/studio/recipes/make_tea.json'
+import standardBridgeReview from '../../data/studio/recipes/standard_bridge_review.json'
 import watchTv from '../../data/studio/recipes/watch_tv.json'
 import { cleanCategory, cleanRecipe, type Category, type Recipe } from './recipe'
 
@@ -25,6 +26,7 @@ export const DRAFT_FILES = {
   'recipes/brush_teeth': brushTeeth,
   'recipes/go_to_bed': goToBed,
   'recipes/make_tea': makeTea,
+  'recipes/standard_bridge_review': standardBridgeReview,
   'recipes/watch_tv': watchTv,
 } as const
 

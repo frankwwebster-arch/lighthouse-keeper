@@ -1,0 +1,34 @@
+{
+  "w": 48,
+  "h": 56,
+  "frames": 9,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    24,
+    56
+  ],
+  "z": 50,
+  "loop": true,
+  "outfit": "scuba",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "scuba-jetty-walk",
+  "movementVector": [
+    1,
+    0
+  ],
+  "startPose": "scuba-standing-side-right",
+  "endPose": "scuba-standing-side-right",
+  "assetRole": "bridge",
+  "sfxCues": [
+    {
+      "frame": 2,
+      "cue": "boot_step"
+    },
+    {
+      "frame": 6,
+      "cue": "boot_step"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "light-blue-pyjamas",
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "pose": "standing-front",
+  "assetRole": "neutral",
+  "facing": "front-to-back"
+}

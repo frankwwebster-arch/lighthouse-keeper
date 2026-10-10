@@ -20,5 +20,6 @@
   "startPose": "standing-side-right",
   "endPose": "play-guitar-acoustic",
   "facing": "side-to-back-to-front-right",
-  "interaction": "pick-up-guitar"
+  "interaction": "pick-up-guitar",
+  "assetRole": "clip"
 }

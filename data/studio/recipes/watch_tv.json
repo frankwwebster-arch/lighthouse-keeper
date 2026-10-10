@@ -71,6 +71,12 @@
     },
     {
       "id": "watch",
+      "kind": "play",
+      "clip": "keeper_sitting_turn_back_to_rear",
+      "label": "Turn toward the TV"
+    },
+    {
+      "id": "watch-loop",
       "kind": "loop",
       "clip": "keeper_watch_tv",
       "seconds": 6,
@@ -87,6 +93,13 @@
           "loop": true
         }
       ]
+    },
+    {
+      "id": "turn-back",
+      "kind": "play",
+      "clip": "keeper_sitting_turn_back_to_rear",
+      "reverse": true,
+      "label": "Turn back on the sofa"
     },
     {
       "id": "stand",

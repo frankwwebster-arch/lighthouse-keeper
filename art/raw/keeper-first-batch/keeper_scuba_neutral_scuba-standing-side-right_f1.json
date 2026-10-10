@@ -1,0 +1,20 @@
+{
+  "w": 48,
+  "h": 56,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    24,
+    56
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "scuba",
+  "startPose": "scuba-standing-side-right",
+  "endPose": "scuba-standing-side-right",
+  "pose": "scuba-standing-side-right",
+  "assetRole": "neutral",
+  "facing": "right",
+  "mirrorSafe": true
+}

@@ -5,13 +5,13 @@
   "fps": 4.5,
   "density": 4,
   "anchor": [
-    17.0,
-    40.0
+    17,
+    40
   ],
   "z": 50,
   "loop": false,
   "seatPoint": [
-    17.0,
+    17,
     29.385
   ],
   "outfit": "artist-smock",
@@ -25,5 +25,8 @@
   "reviewOffset": [
     0,
     0
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-front",
+  "endPose": "sitting-front"
 }

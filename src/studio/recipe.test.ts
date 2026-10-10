@@ -262,10 +262,10 @@ describe('editing helpers', () => {
 
   it('finds each outfit’s walk', () => {
     const has = (n: string) => !!manifest[n]
-    expect(walkFor('standard', has)).toBe('keeper_walk')
-    expect(walkFor('light-blue-pyjamas', has)).toBe('keeper_pyjamas_walk')
-    expect(walkFor('knight', has)).toBe('keeper_knight_walk_side')
-    expect(walkFor('no-such-outfit', has)).toBe('keeper_walk')
+    expect(walkFor('standard', has)).toBe('keeper_walk_cycle')
+    expect(walkFor('light-blue-pyjamas', has)).toBe('keeper_pyjamas_walk_cycle')
+    expect(walkFor('knight', has)).toBe('keeper_knight_walk_side_cycle')
+    expect(walkFor('no-such-outfit', has)).toBe('keeper_walk_cycle')
   })
 
   it('refuses junk and fills gaps when reading a saved recipe', () => {

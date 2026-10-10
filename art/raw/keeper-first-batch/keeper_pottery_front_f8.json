@@ -5,17 +5,17 @@
   "fps": 4,
   "density": 4,
   "anchor": [
-    20.0,
-    40.0
+    20,
+    40
   ],
   "z": 50,
   "loop": true,
   "seatPoint": [
-    20.0,
+    20,
     29.66
   ],
   "handUsePoint": [
-    20.0,
+    20,
     24.02
   ],
   "outfit": "artist-smock",
@@ -28,5 +28,8 @@
   "reviewOffset": [
     0,
     0
-  ]
+  ],
+  "assetRole": "clip",
+  "startPose": "sitting-front",
+  "endPose": "sitting-front"
 }
