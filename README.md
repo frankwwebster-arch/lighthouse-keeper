@@ -45,6 +45,8 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 - `docs/keeper-scale-audit/review.html` — unified sizing and walk-to-action transition review for all 173 accepted animations, with review-state filters, filter-aware cyclic Previous/Next navigation, a specific read-only Codex response on every awaiting-input card, reload-resumable progress/filter/zoom, focused one-animation mode, frame stepping, current-card play-once/loop, canonical standing and sitting references, precise ±0.5 controls, notes/decision flags and version-9 JSON export.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.
 - `docs/DOORS_STAIRS_AND_COSTUMES.md` — agreed stairway, door and costume-change rules, seamless clip joins, and the decisions still to make.
+- `docs/AMBIENCE_AND_BACKDROP.md` — backdrop layers, weather overlays, ambient sound, the lamp's start-up, audio file specs and the decisions still to make.
+- `docs/RECIPES.md` — the recipe format, the recipe studio and what each animation sheet needs for it.
 - `docs/EXPANSION_DESIGN.md` — living write-up of agreed room ideas, random floor placement, night reveals, weather, transport, island expansions and energy systems.
 - `art/manifest.json` and `art/asset_inventory.json` — facts about the concept/prototype image pack; these are not a production rig.
 

@@ -339,6 +339,8 @@ Unlock challenge: check for a dry weather window, gather ingredients, demonstrat
 
 ## Weather and gameplay
 
+How each weather looks and sounds (shared weather keys, backdrop layers and ambience) is in `docs/AMBIENCE_AND_BACKDROP.md`.
+
 Weather changes preferences, safety and room value rather than merely recolouring the scene.
 
 | Weather | Effects |

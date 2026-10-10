@@ -2,6 +2,17 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Backdrop, weather, ambience and the lamp (10 Oct 2026)
+
+Frank wants ambient sound (a gentle seascape and changing weather) planned as part of the backdrop art, so every moving outdoor layer has a sound partner and both follow one weather value. The full instructions are in `docs/AMBIENCE_AND_BACKDROP.md`:
+- the shared weather keys;
+- each backdrop layer with what changes per weather and time of day;
+- the weather overlays (rain, snow, fog, lightning, heat), masked out of the cutaway rooms;
+- `weather` and `sfxCues` on backdrop sidecars;
+- the great lamp's start-up animation: about 3 s of warm-up glow, then the lens turning up to speed, then the beam. Hand-drawn turning frames, the beam locked to the lens, beam strength showing the lamp's shine, and a version per upgrade tier.
+
+Audio files come from Frank, not from you.
+
 ## Recipes and the recipe studio (10 Oct 2026)
 
 The recipe format now exists: `docs/RECIPES.md`. Please follow it for the sidecar fields in your animation-contract plan: the shared pose names, 0-based `sfxCues` frames (the studio plays them automatically in every recipe that uses the clip), and the neutral filenames. Draft a recipe in `data/studio/recipes/` alongside each new animation, and list the file in `src/studio/drafts.ts`. Object layers and solidity (back wall, or in front and opaque) matter to Frank: see "Solid things". The door geometry in `recipe.ts` (`DOOR`) is a placeholder until your door art sets it.
