@@ -40,24 +40,38 @@ Inspect the named source clip and its final production strip; inspect the
 mirror/derived output as a consumer, but do not duplicate a source correction
 for a deterministic mirror.
 
-The defect to look for is an occlusion-order error: in the darts example, the
-Keeper's beard overlaps a hand that is physically in front of it. The correct
-beard is the fuller, stepped side-on Keeper beard from the accepted shovelling-
-snow animation (`keeper_clear_snow`). Treat that beard silhouette, colour,
-edge treatment, and identity as authoritative. Preserve the beard itself; do
-not shorten, smooth, recolour, or redesign it. The correction is the layer
-order at the crossing: a foreground hand/fingers/wrist must render over the
-beard, while a genuinely rear hand remains behind it. The beard must never
-cover foreground fingers, erase a wrist, or create a pale beard-coloured halo
-around the hand.
+The primary defect to look for is the wrong side-on beard being used. The
+accepted shovelling-snow animation (`keeper_clear_snow`) contains the
+authoritative fuller, stepped side-on Keeper beard. Treat its silhouette,
+length, stepped lower edge, colour, edge treatment, and identity as the
+canonical beard format. This is not an optional reference or a single-clip
+fix: compare that beard against EVERY sprite in the manifest. Whenever any
+frame reaches a true 90-degree side view to the player—whether the actor is
+standing or sitting, and whether the side view occurs briefly during a turn,
+transition, interaction, mirror, or derived variant—the frame must use that
+same fuller, stepped side-on beard. Audit every frame, not just the first or
+representative frame, and record the exact animation name and frame numbers
+where the beard is missing, shortened, rounded, front-facing, back-facing, or
+otherwise inconsistent. Preserve the beard itself; do not shorten, smooth,
+recolour, or redesign it. The correction is to reproduce the canonical beard
+silhouette and its correct layer placement in each affected side-on frame.
+
+Also check the related occlusion-order defect: in the darts example, the
+Keeper's beard overlaps a hand that is physically in front of it. A foreground
+hand/fingers/wrist must render over the beard, while a genuinely rear hand
+remains behind it. The beard must never cover foreground fingers, erase a
+wrist, or create a pale beard-coloured halo around the hand.
 
 Start with a complete exact-name inventory and a defect/delta list. For every
-side-on standing or sitting sheet, record whether the head/beard/neck and each
-arm/hand have the correct physical occlusion in every frame. Never join a
-comment, frame, or response by list position, filtered position, or display
-order. Frank's saved dimensions, frame count, timing, identity, beard
-silhouette, anatomy, interaction contacts, held-prop contacts, and cupboard-
-occlusion contract remain authoritative.
+sprite in the manifest, classify every frame and transition as side-on,
+front-facing, rear-facing, or indeterminate. For every side-on standing or
+sitting frame, compare the beard directly with the canonical
+`keeper_clear_snow` beard and record pass/fail, exact frame number, and the
+reason. Then record whether the head/beard/neck and each arm/hand have the
+correct physical occlusion. Never join a comment, frame, or response by list
+position, filtered position, or display order. Frank's saved dimensions, frame
+count, timing, identity, beard silhouette, anatomy, interaction contacts,
+held-prop contacts, and cupboard-occlusion contract remain authoritative.
 
 Draft-first amendment contract (mandatory): before changing any affected
 animation, copy its current canonical source and sidecar into a versioned
@@ -75,9 +89,11 @@ leaving canonical files untouched as the automatic rollback point.
 
 Apply fixes in this order:
 
-1. Prefer deterministic recomposition from canonical head/beard, torso, arm,
-   and hand components or masks. Change only the affected occlusion pixels;
-   do not redraw a whole animation when the correct parts already exist.
+1. Prefer deterministic recomposition from the canonical
+   `keeper_clear_snow` head/beard component plus the existing torso, arm, and
+   hand components or masks. Change only the affected beard and occlusion
+   pixels; do not redraw a whole animation when the correct parts already
+   exist.
 2. If a raster sheet has inseparable pixels, isolate the affected pose(s) and
    rerender only those pose(s), using `keeper_clear_snow` for the beard/head
    identity reference and `keeper_walk` for the standard side-on body
@@ -87,20 +103,24 @@ Apply fixes in this order:
    occlusion mistake by cropping tighter, moving the Keeper, changing saved
    width/height, or hiding the hand behind the beard.
 
-Inspect the FINAL production strip for every corrected animation at 1x and a
-zoomed view. Check all frames, including the first/last frame and any hand
-crossing, held-object handoff, sit/stand transition, and mirrored output. The
-hand must be visibly in front exactly when its pose requires it; the beard
+Inspect the FINAL draft production strip for every corrected animation at 1x
+and a zoomed view. Check all frames, including the first/last frame, every
+90-degree side-on moment, every turn and sit/stand transition, held-object
+handoff, hand crossing, and mirrored/derived output. For each side-on frame,
+the beard must visibly match the fuller, stepped `keeper_clear_snow` format;
+the hand must be in front exactly when its pose requires it; and the beard
 edge must remain clean and anatomically continuous everywhere else. Confirm
 that no neighbour-frame pixels, detached props, or transparent halos were
 introduced.
 
 Extend the permanent verifier with a side-on occlusion audit register. It
-must identify every audited exact animation name, preserve the canonical beard
-reference hash, record corrected frame numbers and layer-order decisions, and
-fail future changes when a declared foreground hand is covered by beard pixels
-or when a corrected side-on sheet loses its transparent frame gutters. Keep
-responses read-only and specific to the exact animation name.
+must identify every audited exact animation name and frame, preserve the
+canonical `keeper_clear_snow` beard reference hash, record side-on beard
+classification and corrected frame numbers, and fail future changes when a
+90-degree side-on frame does not match the canonical fuller stepped beard, a
+declared foreground hand is covered by beard pixels, or a corrected side-on
+sheet loses its transparent frame gutters. Keep responses read-only and
+specific to the exact animation name.
 
 After the delta is stable, generate only affected draft sheets, draft strips,
 previews, contact sheets, scale evidence, and draft review artifacts. Extend
