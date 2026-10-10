@@ -8,10 +8,14 @@ work.
 
 ## Recommended model
 
-Use **GPT-5.6 Luna, High reasoning**. This is a bounded, repetitive visual
-consistency audit, so Luna High is sufficient and avoids spending Sol-level
-capacity on routine frame-by-frame inspection. Escalate only a genuinely
-inseparable raster reconstruction to a stronger model if needed.
+Use **GPT-5.6 Sol, High reasoning**. This run is no longer a narrow occlusion
+spot-check: it must classify every frame in the manifest, compare every true
+side-on pose with one exact beard reference, distinguish deterministic edits
+from pose-specific rerenders, and preserve reversible draft provenance across
+the reviewer and verifier. Sol High is the appropriate higher-capability model
+for that cross-library visual and implementation judgement. Do not use Max or
+Ultra unless the run encounters a genuinely inseparable reconstruction that
+High cannot resolve.
 
 ## Ready-to-paste prompt
 
@@ -19,6 +23,12 @@ inseparable raster reconstruction to a stronger model if needed.
 Continue the Lighthouse Keeper work in:
 
 /Users/frank/Documents/ChatGPT/Lighthouse Keeper
+
+Work on `main` from restored rollback commit
+`240c7613fa0d71b8288acc56b939655ee4e4d3a9`. Confirm the worktree is clean
+before starting. The failed second-round art pass and the rejected v1
+beard/hand draft are historical evidence only; neither is a valid source for
+new artwork.
 
 This is the FIRST audit in a two-audit sequence. Complete and commit this
 side-on beard/hand-occlusion audit before starting the later exhaustive
@@ -44,10 +54,20 @@ The primary defect to look for is the wrong side-on beard being used. The
 accepted shovelling-snow animation (`keeper_clear_snow`) contains the
 authoritative fuller, stepped side-on Keeper beard. Treat its silhouette,
 length, stepped lower edge, colour, edge treatment, and identity as the
-canonical beard format. This is not an optional reference or a single-clip
-fix: compare that beard against EVERY sprite in the manifest. Whenever any
-frame reaches a true 90-degree side view to the player—whether the actor is
-standing or sitting, and whether the side view occurs briefly during a turn,
+canonical beard format. Pin the restored canonical files before inspecting any
+draft:
+
+- `art/raw/keeper-first-batch/keeper_clear_snow_f8.png` SHA-256
+  `5c302892825949656978a5e263b1b33ca48d26e8cbcdb7d575ee54a7c0b206b6`
+- `art/source/keeper-first-batch/keeper-clear-snow-round2-grid-generated-source.png`
+  SHA-256
+  `b5470890cef0448794414393947e50eb55971884d59cb389a8947bdbbf5dc455`
+
+If either hash differs, stop and report the mismatch; do not silently choose a
+different reference. This is not an optional reference or a single-clip fix:
+compare that beard against EVERY sprite in the manifest. Whenever any frame
+reaches a true 90-degree side view to the player—whether the actor is standing
+or sitting, and whether the side view occurs briefly during a turn,
 transition, interaction, mirror, or derived variant—the frame must use that
 same fuller, stepped side-on beard. Audit every frame, not just the first or
 representative frame, and record the exact animation name and frame numbers
@@ -73,18 +93,23 @@ position, filtered position, or display order. Frank's saved dimensions, frame
 count, timing, identity, beard silhouette, anatomy, interaction contacts,
 held-prop contacts, and cupboard-occlusion contract remain authoritative.
 
-Draft-first amendment contract (mandatory): before changing any affected
-animation, copy its current canonical source and sidecar into a versioned
-`art/drafts/keeper-side-on-beard-occlusion-<audit-id>/` directory. Record the
-original and draft SHA-256 values in a draft register. Apply fixes only to the
-working copy and write draft strips, previews, contact sheets, scale evidence,
-and review evidence outside `art/raw/`, `public/sprites/`, the runtime
-manifest, immutable review exports, and existing previews. Do not create a
-draft for a clean animation. The existing review tool must show the canonical
-and draft variants together for direct comparison, with exact animation-name
-labels and no replacement of the canonical preview. Stop with a
-current-versus-draft comparison and request Frank's explicit promotion
-decision; rejecting a draft must require only discarding its draft directory,
+Draft-first amendment contract (mandatory): create a NEW versioned directory,
+`art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/`. Never reuse,
+reactivate, amend, copy artwork from, or overwrite the rejected
+`art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` directory. Before
+changing any affected animation, copy its current canonical source and sidecar
+from restored commit `240c761` into the v2 working directory. Record the
+canonical and draft SHA-256 values in a new v2 draft register. Apply fixes only
+to the v2 working copy and write draft strips, previews, contact sheets, scale
+evidence, and review evidence outside `art/raw/`, `public/sprites/`, the
+runtime manifest, immutable review exports, and existing previews. Do not
+create a draft for a clean animation. The existing review tool must show the
+canonical and v2 draft variants together for direct comparison, with exact
+animation-name labels and no replacement of the canonical preview. Every card
+must state `Canonical` and `Draft v2`, show both hashes, and retain Frank's
+existing exact-name review, dimensions, status, and complete comment. Stop
+with a current-versus-draft comparison and request Frank's explicit promotion
+decision; rejecting v2 must require only discarding its v2 draft directory,
 leaving canonical files untouched as the automatic rollback point.
 
 Apply fixes in this order:
@@ -122,18 +147,25 @@ declared foreground hand is covered by beard pixels, or a corrected side-on
 sheet loses its transparent frame gutters. Keep responses read-only and
 specific to the exact animation name.
 
-After the delta is stable, generate only affected draft sheets, draft strips,
-previews, contact sheets, scale evidence, and draft review artifacts. Extend
-the existing review tool so canonical and draft variants are visible
+After the delta is stable, generate only affected v2 draft sheets, draft
+strips, previews, contact sheets, scale evidence, and draft review artifacts.
+Extend the existing review tool so canonical and Draft v2 variants are visible
 side-by-side for each exact animation name. Run the keeper verifier and
 scale/identity audit against draft outputs where possible, then tests,
-typecheck, and a production build without promoting drafts. Do not modify
-canonical production assets, do not deploy, and do not claim completion. Stop
-with draft paths, hashes, side-by-side review, and an explicit
-promotion/rejection decision requested from Frank. Promotion, commit, push,
-deployment, and final live verification belong to a later task after approval.
+typecheck, and a production build without promoting drafts. Inspect the final
+rendered v2 strips, not merely their source files.
 
-Report only: side-on sheets audited; sheets changed; exact frames with
-occlusion corrections; any comments qualified rather than implemented;
-verification results; commit and deployment status.
+Commit and push the draft-only audit, verifier, evidence, and review-tool
+changes to remote `main`, allow Vercel to deploy the comparison reviewer, wait
+for success, and verify the canonical live review URL returns HTTP 200. This
+deployment is authorised only to expose reversible draft comparisons: do not
+modify or promote canonical production assets. Stop with the online
+canonical-versus-Draft-v2 comparison ready for Frank and request an explicit
+promotion/rejection decision. Draft promotion remains a later task after
+approval.
+
+Report only: side-on sheets audited; sheets given a v2 draft; exact frames with
+beard or occlusion corrections; any comments qualified rather than
+implemented; verification results; final commit; comparison-reviewer
+deployment status; confirmation that canonical assets remain byte-identical.
 ```
