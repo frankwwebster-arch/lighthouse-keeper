@@ -6,6 +6,66 @@
       "status": "active-review-draft",
       "label": "Frank-selected draft",
       "register": "art/drafts/keeper-darts-user-selected-2026-10-10-v1/draft-register.json"
+    },
+    {
+      "name": "keeper_guitar_pickup_flying_v_1967",
+      "status": "promoted-review-draft",
+      "label": "Previous version",
+      "register": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_flying_v_1967/draft-register.json"
+    },
+    {
+      "name": "keeper_guitar_pickup_gretsch",
+      "status": "promoted-review-draft",
+      "label": "Previous version",
+      "register": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_gretsch/draft-register.json"
+    },
+    {
+      "name": "keeper_guitar_pickup_acoustic",
+      "status": "promoted-review-draft",
+      "label": "Previous version",
+      "register": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_acoustic/draft-register.json"
+    },
+    {
+      "name": "keeper_fish_standing",
+      "status": "promoted-review-draft",
+      "label": "Previous version",
+      "register": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_standing/draft-register.json"
+    },
+    {
+      "name": "keeper_fish_seated",
+      "status": "promoted-review-draft",
+      "label": "Previous version",
+      "register": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_seated/draft-register.json"
+    },
+    {
+      "name": "keeper_clear_snow",
+      "status": "promoted-review-draft",
+      "label": "Previous version",
+      "register": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_clear_snow/draft-register.json"
+    },
+    {
+      "name": "keeper_meal_place_side",
+      "status": "promoted-review-draft",
+      "label": "Previous version",
+      "register": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_meal_place_side/draft-register.json"
+    },
+    {
+      "name": "keeper_parachute_drift",
+      "status": "promoted-review-draft",
+      "label": "Previous version",
+      "register": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_drift/draft-register.json"
+    },
+    {
+      "name": "keeper_machete_side",
+      "status": "promoted-review-draft",
+      "label": "Previous version",
+      "register": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_machete_side/draft-register.json"
+    },
+    {
+      "name": "keeper_parachute_landing",
+      "status": "promoted-review-draft",
+      "label": "Previous version",
+      "register": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_landing/draft-register.json"
     }
   ]
 }

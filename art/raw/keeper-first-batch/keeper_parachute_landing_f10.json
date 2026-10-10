@@ -1,12 +1,12 @@
 {
   "w": 96,
-  "h": 84,
+  "h": 103,
   "frames": 10,
   "fps": 4,
   "density": 4,
   "anchor": [
     48,
-    84
+    100
   ],
   "z": 50,
   "loop": false,

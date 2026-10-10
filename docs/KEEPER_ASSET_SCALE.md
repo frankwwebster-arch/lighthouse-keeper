@@ -80,7 +80,7 @@ then run `scripts/audit_keeper_scale.py` with the bundled Python runtime.
 
 The audit uses the untouched approved `keeper_walk` as its primary reference:
 
-1. It measures every frame in all 191 sheets (1,420 frames after the rejected second-round pass was restored).
+1. It measures every frame in all 191 sheets (1,479 frames after the ten separately selected canonical replacements and their dependent parachute-landing bridge).
 2. It prints the original first in every contact-sheet row, followed by the
    tested sheet's first, middle and last representative frames at exactly the
    same fixed scale. No image is fitted to its available canvas.

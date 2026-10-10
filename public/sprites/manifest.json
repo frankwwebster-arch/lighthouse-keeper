@@ -1020,18 +1020,18 @@
  },
  "keeper_clear_snow": {
   "file": "keeper_clear_snow.png",
-  "w": 53,
-  "h": 40,
+  "w": 81,
+  "h": 41,
   "frames": 8,
   "fps": 3.5,
   "density": 4,
   "anchor": [
-   24,
-   40
+   37,
+   41
   ],
   "handUsePoint": [
-   47.4,
-   37.195
+   47.7,
+   38.181
   ],
   "startPose": "standing-side-right",
   "endPose": "standing-side-right",
@@ -1540,22 +1540,22 @@
  },
  "keeper_fish_seated": {
   "file": "keeper_fish_seated.png",
-  "w": 135,
-  "h": 115,
-  "frames": 16,
+  "w": 179,
+  "h": 146,
+  "frames": 41,
   "fps": 3,
   "density": 4,
   "anchor": [
-   63,
+   35,
    73
   ],
   "seatPoint": [
-   67.5,
-   58.7
+   37.25,
+   65.85
   ],
   "handUsePoint": [
-   109.2,
-   37.9
+   47.675,
+   55.45
   ],
   "startPose": "sitting-side-right",
   "endPose": "sitting-side-right",
@@ -1569,18 +1569,18 @@
  },
  "keeper_fish_standing": {
   "file": "keeper_fish_standing.png",
-  "w": 101,
-  "h": 88,
-  "frames": 16,
+  "w": 133,
+  "h": 112,
+  "frames": 50,
   "fps": 4,
   "density": 4,
   "anchor": [
-   48,
+   28,
    56
   ],
   "handUsePoint": [
-   85,
-   33.08
+   50,
+   30.215
   ],
   "startPose": "standing-side-right",
   "endPose": "standing-side-right",
@@ -1805,18 +1805,18 @@
  },
  "keeper_guitar_pickup_acoustic": {
   "file": "keeper_guitar_pickup_acoustic.png",
-  "w": 64,
+  "w": 77,
   "h": 56,
   "frames": 12,
-  "fps": 4,
+  "fps": 8,
   "density": 4,
   "anchor": [
    32,
    56
   ],
   "handUsePoint": [
-   45,
-   25
+   48.28,
+   26.24
   ],
   "propHandoffFrame": 6,
   "propVariant": "acoustic",
@@ -1831,7 +1831,7 @@
  },
  "keeper_guitar_pickup_flying_v_1967": {
   "file": "keeper_guitar_pickup_flying_v_1967.png",
-  "w": 64,
+  "w": 72,
   "h": 56,
   "frames": 12,
   "fps": 4,
@@ -1857,18 +1857,18 @@
  },
  "keeper_guitar_pickup_gretsch": {
   "file": "keeper_guitar_pickup_gretsch.png",
-  "w": 64,
+  "w": 73,
   "h": 56,
   "frames": 12,
   "fps": 4,
   "density": 4,
   "anchor": [
-   32,
+   33,
    56
   ],
   "handUsePoint": [
-   45,
-   25
+   45.5,
+   25.62
   ],
   "propHandoffFrame": 6,
   "propVariant": "black-gretsch",
@@ -3100,17 +3100,17 @@
  },
  "keeper_machete_side": {
   "file": "keeper_machete_side.png",
-  "w": 103,
+  "w": 123,
   "h": 52,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   51,
+   61,
    52
   ],
   "handUsePoint": [
-   84.65,
+   94.65,
    36.52
   ],
   "startPose": "standing-side-right",
@@ -3148,17 +3148,17 @@
  },
  "keeper_meal_place_side": {
   "file": "keeper_meal_place_side.png",
-  "w": 55,
+  "w": 73,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   26,
+   35,
    40
   ],
   "handUsePoint": [
-   44.525,
+   58.065,
    22.14
   ],
   "startPose": "standing-side-right",
@@ -3925,13 +3925,13 @@
  "keeper_parachute_drift": {
   "file": "keeper_parachute_drift.png",
   "w": 96,
-  "h": 84,
+  "h": 103,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
    48,
-   84
+   100
   ],
   "startPose": "parachute-open",
   "endPose": "parachute-open",
@@ -3967,13 +3967,13 @@
  "keeper_parachute_landing": {
   "file": "keeper_parachute_landing.png",
   "w": 96,
-  "h": 84,
+  "h": 103,
   "frames": 10,
   "fps": 4,
   "density": 4,
   "anchor": [
    48,
-   84
+   100
   ],
   "startPose": "parachute-open",
   "endPose": "standing-side-right",

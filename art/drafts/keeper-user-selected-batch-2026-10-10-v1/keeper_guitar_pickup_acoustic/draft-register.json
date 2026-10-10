@@ -1,0 +1,146 @@
+{
+  "draftId": "keeper-user-selected-batch-2026-10-10-v1-keeper_guitar_pickup_acoustic",
+  "animation": "keeper_guitar_pickup_acoustic",
+  "status": "promoted-review-draft",
+  "label": "Frank-selected replacement",
+  "selection": "Frank supplied this sheet and requested that it replace the current exact-name animation.",
+  "canonical": {
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_acoustic/previous/keeper_guitar_pickup_acoustic_f12.png",
+    "stripSha256": "5e67f974e3703282efe50af35221a4cd8922f4629de0fe61b966e0c007c420a4",
+    "runtime": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_acoustic/previous/keeper_guitar_pickup_acoustic.png",
+    "runtimeSha256": "3d849e1113472c6c312a56d3047d65501439dda0f3d332cd78944f6ddc2efe69",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_acoustic/previous/keeper_guitar_pickup_acoustic_f12.json",
+    "sidecarSha256": "0384bb9158267fc5316c2d0bf4c0f5f6528a33ab2441705fcdc8d084273c659a"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_acoustic/source/exec-96d5e306-fc19-4d7d-b76f-2ca9d950c5d3.png",
+    "sourceSha256": "97220284e11ed3bd664c5d65be655b63fe3284f800a2f86c93912dbcad3b6893",
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_acoustic/candidate/keeper_guitar_pickup_acoustic_f12.png",
+    "stripSha256": "88155849244cd51ca0ea9a7795e6c09cbdb1d30961cbe2b824d70c151b49cfbe",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_acoustic/candidate/keeper_guitar_pickup_acoustic_f12.json",
+    "sidecarSha256": "f38394828936aa09de37cb757175142bc46fa88353c2499a64dbc2ffa0bdffc4",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          115,
+          76,
+          194,
+          222
+        ]
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          116,
+          75,
+          193,
+          222
+        ]
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          113,
+          75,
+          196,
+          222
+        ]
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          112,
+          76,
+          197,
+          222
+        ]
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          109,
+          75,
+          199,
+          222
+        ]
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          117,
+          75,
+          192,
+          222
+        ]
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          117,
+          75,
+          192,
+          222
+        ]
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          112,
+          74,
+          197,
+          222
+        ]
+      },
+      {
+        "frame": 9,
+        "alphaBox": [
+          116,
+          75,
+          192,
+          222
+        ]
+      },
+      {
+        "frame": 10,
+        "alphaBox": [
+          121,
+          73,
+          187,
+          222
+        ]
+      },
+      {
+        "frame": 11,
+        "alphaBox": [
+          116,
+          74,
+          193,
+          222
+        ]
+      },
+      {
+        "frame": 12,
+        "alphaBox": [
+          108,
+          77,
+          201,
+          222
+        ]
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_acoustic/evidence/final-candidate-frames.jpg"
+    ]
+  },
+  "qualification": null,
+  "rollback": "Restore the three files in previous/ and discard this exact animation draft; no other keeper animation is involved.",
+  "promotion": {
+    "strip": "art/raw/keeper-first-batch/keeper_guitar_pickup_acoustic_f12.png",
+    "stripSha256": "88155849244cd51ca0ea9a7795e6c09cbdb1d30961cbe2b824d70c151b49cfbe",
+    "sidecar": "art/raw/keeper-first-batch/keeper_guitar_pickup_acoustic_f12.json",
+    "sidecarSha256": "f38394828936aa09de37cb757175142bc46fa88353c2499a64dbc2ffa0bdffc4",
+    "runtime": "public/sprites/keeper_guitar_pickup_acoustic.png",
+    "runtimeSha256": "96d6d37b723ce6d548995718ad003bca90c19cf30e40f18ffd587c7295e95162"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "w": 96,
+  "h": 84,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    48,
+    84
+  ],
+  "z": 50,
+  "loop": true,
+  "startPose": "parachute-open",
+  "endPose": "parachute-open",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "parachute-drift",
+  "mirrorsFor": "left",
+  "assetRole": "clip"
+}

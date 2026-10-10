@@ -1,0 +1,146 @@
+{
+  "draftId": "keeper-user-selected-batch-2026-10-10-v1-keeper_guitar_pickup_gretsch",
+  "animation": "keeper_guitar_pickup_gretsch",
+  "status": "promoted-review-draft",
+  "label": "Frank-selected replacement",
+  "selection": "Frank supplied this sheet and requested that it replace the current exact-name animation.",
+  "canonical": {
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_gretsch/previous/keeper_guitar_pickup_gretsch_f12.png",
+    "stripSha256": "fdd9ef7b2135ec14f4978b302b9bc3003c9a599992addef1ec8c8d0362de4cf0",
+    "runtime": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_gretsch/previous/keeper_guitar_pickup_gretsch.png",
+    "runtimeSha256": "97380d3f75865fa98bc8f59c23306bd4e2bcea426bcbc8ccdf0f0e5d9d51610a",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_gretsch/previous/keeper_guitar_pickup_gretsch_f12.json",
+    "sidecarSha256": "c8875e07aa4aecfc13ee404aea8c1e68489b8035e9ed9edf24566e2624a6262f"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_gretsch/source/exec-c2da8dec-a980-40a8-9c2b-45d09face5fc.png",
+    "sourceSha256": "62319e80e21c9d093178f18521580b926ffcc2ed785c5946321959d42b09fae6",
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_gretsch/candidate/keeper_guitar_pickup_gretsch_f12.png",
+    "stripSha256": "c52c317b4450308a7c247ab5227c83394d6c0307f16447e0621bc388d276d29f",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_gretsch/candidate/keeper_guitar_pickup_gretsch_f12.json",
+    "sidecarSha256": "a99557cd9d3efc9e44b1673d03acd9e89d95fdde8098ddb1f1b56e6d6d50a1ae",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          109,
+          73,
+          183,
+          222
+        ]
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          106,
+          72,
+          185,
+          222
+        ]
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          104,
+          73,
+          188,
+          222
+        ]
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          104,
+          72,
+          187,
+          222
+        ]
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          103,
+          72,
+          189,
+          222
+        ]
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          103,
+          44,
+          188,
+          222
+        ]
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          104,
+          47,
+          188,
+          222
+        ]
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          103,
+          68,
+          188,
+          222
+        ]
+      },
+      {
+        "frame": 9,
+        "alphaBox": [
+          101,
+          71,
+          191,
+          222
+        ]
+      },
+      {
+        "frame": 10,
+        "alphaBox": [
+          94,
+          71,
+          197,
+          222
+        ]
+      },
+      {
+        "frame": 11,
+        "alphaBox": [
+          91,
+          71,
+          200,
+          222
+        ]
+      },
+      {
+        "frame": 12,
+        "alphaBox": [
+          95,
+          74,
+          197,
+          222
+        ]
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_gretsch/evidence/final-candidate-frames.jpg"
+    ]
+  },
+  "qualification": null,
+  "rollback": "Restore the three files in previous/ and discard this exact animation draft; no other keeper animation is involved.",
+  "promotion": {
+    "strip": "art/raw/keeper-first-batch/keeper_guitar_pickup_gretsch_f12.png",
+    "stripSha256": "c52c317b4450308a7c247ab5227c83394d6c0307f16447e0621bc388d276d29f",
+    "sidecar": "art/raw/keeper-first-batch/keeper_guitar_pickup_gretsch_f12.json",
+    "sidecarSha256": "a99557cd9d3efc9e44b1673d03acd9e89d95fdde8098ddb1f1b56e6d6d50a1ae",
+    "runtime": "public/sprites/keeper_guitar_pickup_gretsch.png",
+    "runtimeSha256": "9a6a8c58752879b84cb21c9b2bf0f7cc1df6cc4a6cc2cbbda66b3769819675fe"
+  }
+}

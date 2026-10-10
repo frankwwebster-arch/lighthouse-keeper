@@ -24,7 +24,7 @@ OUT = ROOT / "docs/keeper-scale-audit"
 PUBLIC_REVIEW = ROOT / "public/keeper-review"
 CONTRACT = json.loads((ROOT / "data/keeper_asset_contract.json").read_text())
 DENSITY = CONTRACT["canvas"]["standard"]["density"]
-AUDIT_REVISION = "2026-10-10-second-review-rollback-v1"
+AUDIT_REVISION = "2026-10-10-user-selected-replacements-v1"
 ORIGINAL_KEEPER = "keeper_walk"
 REVIEW_IMPORT_PATH = ROOT / "docs/review/frank-keeper-animation-review-2026-10-10.json"
 CODEX_RESPONSE_PATHS = (
@@ -665,7 +665,7 @@ def publish(assets: list[dict]) -> None:
     if REVIEW_DRAFTS_PATH.exists():
         review_draft_registry = json.loads(REVIEW_DRAFTS_PATH.read_text())
         for item in review_draft_registry.get("drafts", []):
-            if item.get("status") != "active-review-draft":
+            if item.get("status") not in {"active-review-draft", "promoted-review-draft"}:
                 continue
             name = item["name"]
             if name in active_review_drafts:
@@ -673,8 +673,10 @@ def publish(assets: list[dict]) -> None:
             draft_record = json.loads((ROOT / item["register"]).read_text())
             if draft_record["animation"] != name:
                 raise SystemExit(f"Review draft register is attached to the wrong exact name: {name}")
-            draft_sidecar = json.loads((ROOT / draft_record["draft"]["sidecar"]).read_text())
-            draft_image = Image.open(ROOT / draft_record["draft"]["strip"]).convert("RGBA")
+            promoted = item.get("status") == "promoted-review-draft"
+            comparison = draft_record["canonical"] if promoted else draft_record["draft"]
+            draft_sidecar = json.loads((ROOT / comparison["sidecar"]).read_text())
+            draft_image = Image.open(ROOT / comparison["strip"]).convert("RGBA")
             first_frame = draft_image.crop((0, 0, draft_sidecar["w"] * DENSITY, draft_sidecar["h"] * DENSITY))
             first_box = first_frame.getchannel("A").getbbox()
             if first_box is None:
@@ -685,8 +687,8 @@ def publish(assets: list[dict]) -> None:
                     continue
                 asset["draftVariant"] = {
                     "name": name,
-                    "label": draft_record["label"],
-                    "source": draft_record["draft"]["strip"],
+                    "label": "Previous version" if promoted else draft_record["label"],
+                    "source": comparison["strip"],
                     "frames": draft_sidecar["frames"],
                     "fps": draft_sidecar["fps"],
                     "canvas": [draft_sidecar["w"], draft_sidecar["h"]],
@@ -694,8 +696,11 @@ def publish(assets: list[dict]) -> None:
                     "postureClass": asset["postureClass"],
                     "interaction": asset["interaction"],
                     "firstFrameAlphaBox": [round(value / DENSITY, 2) for value in first_box],
-                    "sha256": draft_record["draft"]["stripSha256"],
-                    "canonicalSha256": draft_record["canonical"]["stripSha256"],
+                    "sha256": comparison["stripSha256"],
+                    "canonicalSha256": (
+                        draft_record["promotion"]["stripSha256"]
+                        if promoted else draft_record["canonical"]["stripSha256"]
+                    ),
                     "selection": draft_record["selection"],
                 }
                 break
@@ -755,7 +760,7 @@ def publish(assets: list[dict]) -> None:
             "sittingFront": review_clip(reviewed_by_name["keeper_sit_front"]),
             "sittingBack": review_clip(reviewed_by_name["keeper_sit_back"]),
         },
-        "reviewRevision": "2026-10-10-darts-user-selected-draft-v1",
+        "reviewRevision": "2026-10-10-user-selected-replacements-v1",
         "sideOnOcclusionAudit": side_on_register if SIDE_ON_OCCLUSION_REGISTER_PATH.exists() else None,
         "reviewDrafts": review_draft_registry,
         "initialReviews": initial_reviews,
@@ -774,7 +779,12 @@ def publish(assets: list[dict]) -> None:
     for draft_record in active_review_drafts.values():
         draft_public_dir = PUBLIC_REVIEW / "drafts"
         draft_public_dir.mkdir(parents=True, exist_ok=True)
-        draft_strip = ROOT / draft_record["draft"]["strip"]
+        comparison = (
+            draft_record["canonical"]
+            if draft_record.get("status") == "promoted-review-draft"
+            else draft_record["draft"]
+        )
+        draft_strip = ROOT / comparison["strip"]
         shutil.copyfile(draft_strip, draft_public_dir / draft_strip.name)
 
     def table_text(value: object) -> str:
@@ -783,11 +793,15 @@ def publish(assets: list[dict]) -> None:
     resolution_lines = [
         "# Keeper animation review resolution — 2026-10-10",
         "",
-        "This table is generated from Frank's immutable review export and the current production asset set. The second-round art pass was rejected and restored from commit `131191c`. Consequently, `Awaiting new draft review` identifies an unresolved request that needs a fresh versioned draft; it does not claim that the rejected amendment remains in production. Older `Changed/Rebuilt` decision labels below describe the attempted pass and are superseded by each row's current rollback response.",
+        "This table is generated from Frank's immutable review export and the current production asset set. The second-round art pass was rejected and restored from commit `131191c`; its historical rows remain evidence only. On 2026-10-10, Frank explicitly selected ten separate replacements (nine named sheets plus the necessary `keeper_parachute_landing` bridge). Those are now canonical production, with each prior version retained as an exact-name `Previous version` comparison in the reviewer. All other `Awaiting new draft review` rows still identify an unresolved request requiring a new versioned draft.",
         "",
         "| Animation | Frames | Frank's comment | Class | Decision | Proposed/implemented change | Status | Verification | Commit |",
         "|---|---:|---|---|---|---|---|---|---|",
     ]
+    draft_statuses = {
+        item["name"]: item.get("status")
+        for item in review_draft_registry.get("drafts", [])
+    }
     for asset in review_assets:
         imported = imported_reviews.get(asset["name"])
         comment = imported.get("notes", "") if imported else ""
@@ -811,10 +825,14 @@ def publish(assets: list[dict]) -> None:
             classification = "fix"
             decision = "Changed and ready for Frank's verdict"
             change = codex_responses.get(asset["name"], asset["note"])
-        if asset["name"] in rolled_back_second_round:
+        draft_status = draft_statuses.get(asset["name"])
+        if asset["name"] in rolled_back_second_round and draft_status != "promoted-review-draft":
             decision = "Rejected and restored"
-        if asset["name"] in active_review_drafts:
+        if draft_status == "active-review-draft":
             decision = "User-selected draft ready for Frank's verdict"
+            change = codex_responses.get(asset["name"], asset["note"])
+        if draft_status == "promoted-review-draft":
+            decision = "Frank-selected replacement promoted"
             change = codex_responses.get(asset["name"], asset["note"])
         if asset["name"] == "keeper_darts" and SIDE_ON_OCCLUSION_REGISTER_PATH.exists() and not side_on_rejected:
             change = "Canonical production remains unchanged; a draft-only foreground-hand-over-beard correction is recorded for frames 3–6 and awaits explicit promotion or rejection."
@@ -823,10 +841,12 @@ def publish(assets: list[dict]) -> None:
             "Deferred; unchanged" if asset["reviewStatus"] == "review-later" else
             "Full audit; Frank visual verdict pending"
         )
-        if asset["name"] in rolled_back_second_round:
+        if asset["name"] in rolled_back_second_round and draft_status != "promoted-review-draft":
             verification = "Restored pre-pass canonical; fresh draft required"
-        if asset["name"] in active_review_drafts:
+        if draft_status == "active-review-draft":
             verification = "Draft extracted and verified; canonical unchanged"
+        if draft_status == "promoted-review-draft":
+            verification = "Promoted after final-strip inspection; previous version retained"
         status_label = {
             "happy": "Happy",
             "review-later": "Review later",
@@ -847,9 +867,9 @@ def publish(assets: list[dict]) -> None:
     if active_review_drafts:
         resolution_lines.extend([
             "",
-            "## Active user-selected review draft",
+            "## User-selected review comparisons",
             "",
-            "Frank selected the supplied 14-pose darts image for review. It is extracted into a separate versioned draft and shown beside the restored canonical `keeper_darts`; neither canonical raw nor runtime sprite is modified.",
+            "Frank's supplied 14-pose darts image remains a draft-only comparison beside canonical `keeper_darts`. The nine separately selected replacements and the dependent parachute-landing bridge were promoted only after final-strip inspection; their original canonical strips remain visible as exact-name `Previous version` comparisons. Every comparison is SHA-256-pinned in `data/keeper_review_drafts.json`.",
         ])
     resolution_path = ROOT / "docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md"
     resolution_path.write_text("\n".join(resolution_lines) + "\n")
@@ -883,7 +903,7 @@ def publish(assets: list[dict]) -> None:
         f"Open [the sizing and transition review](review.html) to inspect all {payload['counts']['reviewedAnimationSheets']} accepted animations beside the untouched `keeper_walk` authority. Review-state filters cover Needs my input, Happy, Awaiting new draft review, Review later, Unreviewed and Has Codex response. In focused mode Previous/Next and the Left/Right keys stay inside the selected filter and wrap from its final result to its first.",
         "The pinned reference can show standing side/front/back or sitting side/front/back identity ghosts. These fixed ghosts are anatomy comparisons, not a replacement for each reviewed clip's saved production size. In upright standard-cap poses the gold badge crossing the blue skull-top guide is a calibrated visual proxy; tilted, bent, seated, crouched, horizontal, bare-headed and alternate-headwear poses still require anatomical landmarks.",
         "Each card retains precise size, position, rotation, opacity, ghost, frame-step and 1–20fps timing controls. The imported production pass starts those viewer transforms at neutral because accepted geometry and cadence are already baked into the delivered sprite and manifest. Comparison settings remain visual aids until saved/exported as a later review proposal.",
-        "Every card has Frank's notes and decision controls plus a read-only Codex response field. After the second-round rollback, affected Awaiting new draft review cards explicitly name the restored canonical strip and state that a fresh draft is still required. Orange cards have unsaved changes; saved happy, new-draft and later-review cards use distinct status colours.",
+        "Every card has Frank's notes and decision controls plus a read-only Codex response field. The rejected second-round pass remains historical evidence; the ten later selected canonical promotions show their exact prior strip as `Previous version`, while all other Awaiting new draft review cards still require a fresh draft. Orange cards have unsaved changes; saved happy, new-draft and later-review cards use distinct status colours.",
         "`keeper-scale-choices.json` version 9 exports the complete review register, current review status and Codex response for every animation as well as any new per-card proposals. Export remains blocked while a card has unsaved edits. Import validates exact `keeper_*` names, rejects duplicates/unknown names and safely reconciles stale status-list entries from the matching named review. The page can also prepend matching walks, insert known bridges or freeze a seam with onion skin; every card prints its runtime PNG and authored source-strip filename.",
         "The character-width and character-height sliders each have adjacent −0.5% and +0.5% buttons for precise adjustments. They update the same per-animation values, obey the same 50%–150% limits and become part of the normal Save/export workflow.",
         "Every blue animation-transform slider also has −0.5/+0.5 buttons: degrees for rotation, logical pixels for horizontal/vertical position and percentage points for opacity. They update the same limited, saved and exported values as their sliders.",
@@ -893,8 +913,8 @@ def publish(assets: list[dict]) -> None:
         "",
         "## Reversible review drafts",
         "",
-        "The rejected partial v1 side-on beard/hand audit remains immutable evidence under `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` and is not displayed. Frank's newly selected 14-pose darts image is independently preserved under `art/drafts/keeper-darts-user-selected-2026-10-10-v1/` and displayed beside the restored canonical `keeper_darts` for a new verdict.",
-        "The new draft register pins source, canonical and draft SHA-256 values. Canonical production art, `public/sprites/`, the runtime manifest, immutable review exports and existing previews remain untouched. Rejecting the new draft requires only deleting its draft directory and exact-name entry from `data/keeper_review_drafts.json`.",
+        "The rejected partial v1 side-on beard/hand audit remains immutable evidence under `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` and is not displayed. Frank's original 14-pose darts image remains a draft-only comparison beside canonical `keeper_darts`. The ten later selected canonical promotions retain their exact prior strips as `Previous version` comparisons.",
+        "The review-draft register pins source, previous/current canonical and draft SHA-256 values. New amendments remain draft-only: canonical production art, `public/sprites/`, the runtime manifest, immutable review exports and existing previews remain untouched until explicit promotion. Rejecting a new draft requires only deleting its draft directory and exact-name entry from `data/keeper_review_drafts.json`.",
         "",
         "## Corrected sheets",
         "",

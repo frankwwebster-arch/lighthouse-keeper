@@ -1,0 +1,128 @@
+{
+  "draftId": "keeper-user-selected-batch-2026-10-10-v1-keeper_parachute_landing",
+  "animation": "keeper_parachute_landing",
+  "status": "promoted-review-draft",
+  "label": "Dependent route bridge",
+  "selection": "The selected parachute drift changes the open-canopy canvas and anchor; this deterministic landing derivative preserves the byte-exact drift-to-landing hand-off.",
+  "canonical": {
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_landing/previous/keeper_parachute_landing_f10.png",
+    "stripSha256": "9ba91763c9e6e49e8ddf9dd75362a54c410b5860f7d6e6d92caa481062ae7fc8",
+    "runtime": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_landing/previous/keeper_parachute_landing.png",
+    "runtimeSha256": "9b2308a599b0c4b3de825812ecd1c57d994c3b762efdd919e9238d1fc031650d",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_landing/previous/keeper_parachute_landing_f10.json",
+    "sidecarSha256": "92bad782425bea616af77398aa6e137d97e98467da84f2c35e6121240db0d468"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_landing/source/keeper-parachute-landing-generated-source.png",
+    "sourceSha256": "6a0b199f02897906e20207bd4badbbe79687daaea36472322f1681129e861976",
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_landing/candidate/keeper_parachute_landing_f10.png",
+    "stripSha256": "b262bb17c87e90426ff18c307b6f84293056f23ac6c38459efcb2dfc469bb481",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_landing/candidate/keeper_parachute_landing_f10.json",
+    "sidecarSha256": "a0641287ed1f2870c9298a7e7698608cfdaf9b8d643c5d63f7f27a0d4672d77d",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          101,
+          74,
+          279,
+          410
+        ]
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          88,
+          111,
+          295,
+          398
+        ]
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          89,
+          112,
+          294,
+          398
+        ]
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          96,
+          117,
+          288,
+          398
+        ]
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          100,
+          130,
+          282,
+          398
+        ]
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          81,
+          151,
+          303,
+          398
+        ]
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          81,
+          254,
+          303,
+          398
+        ]
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          90,
+          249,
+          292,
+          398
+        ]
+      },
+      {
+        "frame": 9,
+        "alphaBox": [
+          84,
+          246,
+          299,
+          398
+        ]
+      },
+      {
+        "frame": 10,
+        "alphaBox": [
+          86,
+          245,
+          296,
+          398
+        ]
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_landing/evidence/final-candidate-frames.jpg"
+    ]
+  },
+  "qualification": "This is a required route-contact derivative, not an independently selected redraw.",
+  "rollback": "Restore the three files in previous/ together with keeper_parachute_drift's previous version.",
+  "promotion": {
+    "strip": "art/raw/keeper-first-batch/keeper_parachute_landing_f10.png",
+    "stripSha256": "b262bb17c87e90426ff18c307b6f84293056f23ac6c38459efcb2dfc469bb481",
+    "sidecar": "art/raw/keeper-first-batch/keeper_parachute_landing_f10.json",
+    "sidecarSha256": "a0641287ed1f2870c9298a7e7698608cfdaf9b8d643c5d63f7f27a0d4672d77d",
+    "runtime": "public/sprites/keeper_parachute_landing.png",
+    "runtimeSha256": "e180ae902ecbeacd07dc434488965956350f710fa69953d3c78ef366970664de"
+  }
+}

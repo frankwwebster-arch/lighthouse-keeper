@@ -1,0 +1,488 @@
+{
+  "draftId": "keeper-user-selected-batch-2026-10-10-v1-keeper_fish_standing",
+  "animation": "keeper_fish_standing",
+  "status": "promoted-review-draft",
+  "label": "Frank-selected replacement",
+  "selection": "Frank supplied this sheet and requested that it replace the current exact-name animation.",
+  "canonical": {
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_standing/previous/keeper_fish_standing_f16.png",
+    "stripSha256": "a32792cc1f75314be8f61ee35ca6ebb26de79ea5e87517832ef3d9bd8fcd11a2",
+    "runtime": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_standing/previous/keeper_fish_standing.png",
+    "runtimeSha256": "3745865388bfbc0b08fb8649ebc4187bee611df3df42f6e458b34ae4b102d874",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_standing/previous/keeper_fish_standing_f16.json",
+    "sidecarSha256": "d4e9ce91335fe0e598b2d1a62b8b8c75d5193f606a7f5c046231a0659040e4dc"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_standing/source/exec-565653f3-f431-424e-a283-b90f264f8336.png",
+    "sourceSha256": "9ecf2af163e9290499be1379e61580c459685d966e6a82d2db0312aca7f87124",
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_standing/candidate/keeper_fish_standing_f50.png",
+    "stripSha256": "8d9a602ea39b701d5a35c84f352df8bc5d0aac3bec2539567926c1d8adc617bf",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_standing/candidate/keeper_fish_standing_f50.json",
+    "sidecarSha256": "a631778e74cc5033b7441d9840cbdbfe35b2aa9b10a72fa2bf2e7ff413c21357",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          99,
+          77,
+          178,
+          231
+        ]
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          99,
+          77,
+          178,
+          231
+        ]
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          99,
+          77,
+          178,
+          231
+        ]
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          99,
+          77,
+          178,
+          231
+        ]
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          82,
+          77,
+          178,
+          230
+        ]
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          82,
+          77,
+          178,
+          230
+        ]
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          82,
+          77,
+          178,
+          230
+        ]
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          82,
+          77,
+          178,
+          230
+        ]
+      },
+      {
+        "frame": 9,
+        "alphaBox": [
+          85,
+          78,
+          173,
+          226
+        ]
+      },
+      {
+        "frame": 10,
+        "alphaBox": [
+          85,
+          78,
+          173,
+          226
+        ]
+      },
+      {
+        "frame": 11,
+        "alphaBox": [
+          85,
+          78,
+          173,
+          226
+        ]
+      },
+      {
+        "frame": 12,
+        "alphaBox": [
+          85,
+          78,
+          173,
+          226
+        ]
+      },
+      {
+        "frame": 13,
+        "alphaBox": [
+          88,
+          79,
+          172,
+          227
+        ]
+      },
+      {
+        "frame": 14,
+        "alphaBox": [
+          88,
+          79,
+          172,
+          227
+        ]
+      },
+      {
+        "frame": 15,
+        "alphaBox": [
+          88,
+          79,
+          172,
+          227
+        ]
+      },
+      {
+        "frame": 16,
+        "alphaBox": [
+          88,
+          79,
+          172,
+          227
+        ]
+      },
+      {
+        "frame": 17,
+        "alphaBox": [
+          88,
+          78,
+          172,
+          226
+        ]
+      },
+      {
+        "frame": 18,
+        "alphaBox": [
+          88,
+          78,
+          172,
+          226
+        ]
+      },
+      {
+        "frame": 19,
+        "alphaBox": [
+          88,
+          78,
+          172,
+          226
+        ]
+      },
+      {
+        "frame": 20,
+        "alphaBox": [
+          88,
+          78,
+          172,
+          226
+        ]
+      },
+      {
+        "frame": 21,
+        "alphaBox": [
+          92,
+          79,
+          177,
+          230
+        ]
+      },
+      {
+        "frame": 22,
+        "alphaBox": [
+          92,
+          79,
+          177,
+          230
+        ]
+      },
+      {
+        "frame": 23,
+        "alphaBox": [
+          92,
+          79,
+          177,
+          230
+        ]
+      },
+      {
+        "frame": 24,
+        "alphaBox": [
+          92,
+          79,
+          177,
+          230
+        ]
+      },
+      {
+        "frame": 25,
+        "alphaBox": [
+          79,
+          64,
+          173,
+          231
+        ]
+      },
+      {
+        "frame": 26,
+        "alphaBox": [
+          79,
+          64,
+          173,
+          231
+        ]
+      },
+      {
+        "frame": 27,
+        "alphaBox": [
+          79,
+          64,
+          173,
+          231
+        ]
+      },
+      {
+        "frame": 28,
+        "alphaBox": [
+          79,
+          64,
+          173,
+          231
+        ]
+      },
+      {
+        "frame": 29,
+        "alphaBox": [
+          74,
+          35,
+          178,
+          231
+        ]
+      },
+      {
+        "frame": 30,
+        "alphaBox": [
+          74,
+          35,
+          178,
+          231
+        ]
+      },
+      {
+        "frame": 31,
+        "alphaBox": [
+          74,
+          35,
+          178,
+          231
+        ]
+      },
+      {
+        "frame": 32,
+        "alphaBox": [
+          74,
+          35,
+          178,
+          231
+        ]
+      },
+      {
+        "frame": 33,
+        "alphaBox": [
+          82,
+          26,
+          182,
+          232
+        ]
+      },
+      {
+        "frame": 34,
+        "alphaBox": [
+          82,
+          26,
+          182,
+          232
+        ]
+      },
+      {
+        "frame": 35,
+        "alphaBox": [
+          82,
+          26,
+          182,
+          232
+        ]
+      },
+      {
+        "frame": 36,
+        "alphaBox": [
+          82,
+          26,
+          182,
+          232
+        ]
+      },
+      {
+        "frame": 37,
+        "alphaBox": [
+          81,
+          24,
+          183,
+          231
+        ]
+      },
+      {
+        "frame": 38,
+        "alphaBox": [
+          81,
+          24,
+          183,
+          231
+        ]
+      },
+      {
+        "frame": 39,
+        "alphaBox": [
+          81,
+          24,
+          183,
+          231
+        ]
+      },
+      {
+        "frame": 40,
+        "alphaBox": [
+          81,
+          24,
+          183,
+          231
+        ]
+      },
+      {
+        "frame": 41,
+        "alphaBox": [
+          82,
+          24,
+          182,
+          232
+        ]
+      },
+      {
+        "frame": 42,
+        "alphaBox": [
+          81,
+          23,
+          190,
+          231
+        ]
+      },
+      {
+        "frame": 43,
+        "alphaBox": [
+          78,
+          10,
+          182,
+          227
+        ]
+      },
+      {
+        "frame": 44,
+        "alphaBox": [
+          81,
+          10,
+          183,
+          232
+        ]
+      },
+      {
+        "frame": 45,
+        "alphaBox": [
+          80,
+          10,
+          183,
+          231
+        ]
+      },
+      {
+        "frame": 46,
+        "alphaBox": [
+          78,
+          10,
+          188,
+          226
+        ]
+      },
+      {
+        "frame": 47,
+        "alphaBox": [
+          83,
+          77,
+          180,
+          225
+        ]
+      },
+      {
+        "frame": 48,
+        "alphaBox": [
+          92,
+          78,
+          172,
+          224
+        ]
+      },
+      {
+        "frame": 49,
+        "alphaBox": [
+          80,
+          75,
+          234,
+          224
+        ]
+      },
+      {
+        "frame": 50,
+        "alphaBox": [
+          99,
+          77,
+          178,
+          231
+        ]
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_standing/evidence/final-candidate-frames.jpg"
+    ]
+  },
+  "qualification": null,
+  "rollback": "Restore the three files in previous/ and discard this exact animation draft; no other keeper animation is involved.",
+  "promotion": {
+    "strip": "art/raw/keeper-first-batch/keeper_fish_standing_f50.png",
+    "stripSha256": "8d9a602ea39b701d5a35c84f352df8bc5d0aac3bec2539567926c1d8adc617bf",
+    "sidecar": "art/raw/keeper-first-batch/keeper_fish_standing_f50.json",
+    "sidecarSha256": "a631778e74cc5033b7441d9840cbdbfe35b2aa9b10a72fa2bf2e7ff413c21357",
+    "runtime": "public/sprites/keeper_fish_standing.png",
+    "runtimeSha256": "c3d43e4199bed39a46bd0c37f929d1e1c50929e2e378aa368ca31c4eb8fece0b"
+  }
+}

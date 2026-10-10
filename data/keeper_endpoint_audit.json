@@ -1437,10 +1437,10 @@
       "status": "fail",
       "mismatchPercent": 100,
       "canvasAnchorDelta": [
-        -4.5,
-        -42
+        -54.5,
+        -73
       ],
-      "landmarkMaxDelta": 41.5,
+      "landmarkMaxDelta": 8.75,
       "remedy": "add bridge"
     },
     {
@@ -1450,12 +1450,12 @@
       "pose": "sitting-side-right",
       "neutral": "keeper_neutral_sitting-side-right",
       "status": "fail",
-      "mismatchPercent": 99.99,
+      "mismatchPercent": 100,
       "canvasAnchorDelta": [
-        -4.5,
-        -42
+        -54.5,
+        -73
       ],
-      "landmarkMaxDelta": 41.5,
+      "landmarkMaxDelta": 8.75,
       "remedy": "add bridge"
     },
     {
@@ -1467,10 +1467,10 @@
       "status": "fail",
       "mismatchPercent": 100,
       "canvasAnchorDelta": [
-        -2.5,
-        -32
+        -38.5,
+        -56
       ],
-      "landmarkMaxDelta": 30.5,
+      "landmarkMaxDelta": 8.5,
       "remedy": "add bridge"
     },
     {
@@ -1482,10 +1482,10 @@
       "status": "fail",
       "mismatchPercent": 100,
       "canvasAnchorDelta": [
-        -2.5,
-        -32
+        -38.5,
+        -56
       ],
-      "landmarkMaxDelta": 30.5,
+      "landmarkMaxDelta": 8.5,
       "remedy": "add bridge"
     },
     {
@@ -1525,12 +1525,12 @@
       "pose": "standing-side-right",
       "neutral": "keeper_neutral_standing-side-right",
       "status": "fail",
-      "mismatchPercent": 99.84,
+      "mismatchPercent": 100,
       "canvasAnchorDelta": [
-        0,
+        -6.5,
         0
       ],
-      "landmarkMaxDelta": 1.25,
+      "landmarkMaxDelta": 8.5,
       "remedy": "add bridge"
     },
     {
@@ -1552,12 +1552,12 @@
       "pose": "standing-side-right",
       "neutral": "keeper_neutral_standing-side-right",
       "status": "fail",
-      "mismatchPercent": 99.84,
+      "mismatchPercent": 99.91,
       "canvasAnchorDelta": [
-        0,
+        -4,
         0
       ],
-      "landmarkMaxDelta": 1.25,
+      "landmarkMaxDelta": 5.25,
       "remedy": "add bridge"
     },
     {
@@ -1579,12 +1579,12 @@
       "pose": "standing-side-right",
       "neutral": "keeper_neutral_standing-side-right",
       "status": "fail",
-      "mismatchPercent": 99.84,
+      "mismatchPercent": 99.89,
       "canvasAnchorDelta": [
-        0,
+        -3.5,
         0
       ],
-      "landmarkMaxDelta": 1.25,
+      "landmarkMaxDelta": 4.75,
       "remedy": "add bridge"
     },
     {
@@ -2590,12 +2590,12 @@
       "pose": "standing-side-right",
       "neutral": "keeper_neutral_standing-side-right",
       "status": "fail",
-      "mismatchPercent": 99.75,
+      "mismatchPercent": 99.95,
       "canvasAnchorDelta": [
         -0.5,
         0
       ],
-      "landmarkMaxDelta": 4.75,
+      "landmarkMaxDelta": 6,
       "remedy": "add bridge"
     },
     {
@@ -2605,12 +2605,12 @@
       "pose": "standing-side-right",
       "neutral": "keeper_neutral_standing-side-right",
       "status": "fail",
-      "mismatchPercent": 99.93,
+      "mismatchPercent": 99.97,
       "canvasAnchorDelta": [
         -0.5,
         0
       ],
-      "landmarkMaxDelta": 4.75,
+      "landmarkMaxDelta": 6.25,
       "remedy": "add bridge"
     },
     {
@@ -2650,12 +2650,12 @@
       "pose": "standing-side-right",
       "neutral": "keeper_neutral_standing-side-right",
       "status": "fail",
-      "mismatchPercent": 99.91,
+      "mismatchPercent": 99.97,
       "canvasAnchorDelta": [
         -1.5,
         0
       ],
-      "landmarkMaxDelta": 4.75,
+      "landmarkMaxDelta": 4.5,
       "remedy": "add bridge"
     },
     {
@@ -2665,7 +2665,7 @@
       "pose": "standing-side-right",
       "neutral": "keeper_neutral_standing-side-right",
       "status": "fail",
-      "mismatchPercent": 99.93,
+      "mismatchPercent": 99.89,
       "canvasAnchorDelta": [
         -1.5,
         0
@@ -3130,7 +3130,7 @@
       "mismatchPercent": 99.99,
       "canvasAnchorDelta": [
         0,
-        0
+        -3
       ],
       "landmarkMaxDelta": 18.25,
       "remedy": "add bridge"

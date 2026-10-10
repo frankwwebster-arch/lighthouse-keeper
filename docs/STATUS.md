@@ -42,7 +42,7 @@ Keeper review cards now also preview, save and export a proposed per-clip
 runtime FPS. Accepted `animationFps` values belong in each animation's source
 JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
-1. Review the new canonical-versus-Frank-selected `keeper_darts` comparison, then run the side-on beard/hand-occlusion audit in `docs/prompts/KEEPER_SIDE_ON_BEARD_OCCLUSION_AUDIT.md`. The beard audit must include the selected draft without overwriting it. Run the exhaustive sprite-frame isolation audit in `docs/prompts/KEEPER_SPRITE_FRAME_ISOLATION_AUDIT.md` afterwards.
+1. Use the online reviewer for the current canonical/previous-version comparisons, then run the canonical beard/hand-occlusion audit with GPT-5.6 Terra High in `docs/prompts/KEEPER_SIDE_ON_BEARD_OCCLUSION_AUDIT.md`. It must include every standing and sitting 90-degree side frame and preserve the selected darts draft. Only after its verifier passes, run the exhaustive frame-isolation audit with GPT-5.6 Terra High in `docs/prompts/KEEPER_SPRITE_FRAME_ISOLATION_AUDIT.md`; it must preserve beard-audit decisions. Once both are complete, process Frank's next exact-name JSON review with `docs/prompts/KEEPER_POST_AUDIT_REVIEW_DELTA.md`.
 2. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. In parallel, Frank's immutable second visual review has 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed. Frank's saved per-animation width and height remain final production art direction.
 3. Art for the mission floors (aquarium, weather station, hidden lair), their furniture, the lift and a floor-arrival effect (Codex; hooks in docs/FOR_CODEX.md).
 4. Tier art for upgrades (Codex; list in docs/FOR_CODEX.md). Typed commands for upgrading ("upgrade the TV") are not in yet; upgrades are bought from the tap menu.
@@ -57,9 +57,11 @@ JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
 ## Verification and delivery
 
-The keeper review batch is 191 sheets / 1,420 frames after the rejected
-second-round production pass was restored from commit `131191c`. The newer
-online/offline reviewer and Frank's immutable comments remain, while the
-failed jumper-stripe/darts amendments and their dependent production outputs
-are no longer active. Current delivery evidence is recorded in
-`docs/review/KEEPER_ANIMATION_SECOND_ROUND_DELTA_2026-10-10.md`.
+The keeper review batch is 191 sheets / 1,479 frames. The rejected second-round
+production pass remains historical evidence after its rollback from commit
+`131191c`. Separately, ten exact-name source selections (including the
+dependent parachute-landing bridge) were promoted after final-strip inspection;
+the online reviewer shows each former canonical strip as `Previous version`.
+The original darts selection remains an unpromoted comparison draft. Current
+delivery and review evidence is recorded in
+`docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md`.

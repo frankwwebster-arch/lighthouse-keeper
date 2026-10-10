@@ -4,7 +4,7 @@ This is the permanent, reproducible audit of every keeper sheet against the unto
 
 - 191 keeper sheets inspected.
 - 173 animation sheets accepted for review; 18 obsolete modular/reference sheets excluded.
-- 1420 individual frames measured.
+- 1479 individual frames measured.
 - 81 sheets explicitly rebuilt or anatomy-normalised in this pass.
 - 0 unresolved original-comparison failures (the audit command refuses to succeed unless this is zero).
 - Canonical upright anatomy: skull top 32.5 logical pixels above the walking floor, shoulders 24.5, hips 14.5, seat contact 11.
@@ -19,7 +19,7 @@ The approved original is printed first in every contact-sheet row. Frank's saved
 Open [the sizing and transition review](review.html) to inspect all 173 accepted animations beside the untouched `keeper_walk` authority. Review-state filters cover Needs my input, Happy, Awaiting new draft review, Review later, Unreviewed and Has Codex response. In focused mode Previous/Next and the Left/Right keys stay inside the selected filter and wrap from its final result to its first.
 The pinned reference can show standing side/front/back or sitting side/front/back identity ghosts. These fixed ghosts are anatomy comparisons, not a replacement for each reviewed clip's saved production size. In upright standard-cap poses the gold badge crossing the blue skull-top guide is a calibrated visual proxy; tilted, bent, seated, crouched, horizontal, bare-headed and alternate-headwear poses still require anatomical landmarks.
 Each card retains precise size, position, rotation, opacity, ghost, frame-step and 1–20fps timing controls. The imported production pass starts those viewer transforms at neutral because accepted geometry and cadence are already baked into the delivered sprite and manifest. Comparison settings remain visual aids until saved/exported as a later review proposal.
-Every card has Frank's notes and decision controls plus a read-only Codex response field. After the second-round rollback, affected Awaiting new draft review cards explicitly name the restored canonical strip and state that a fresh draft is still required. Orange cards have unsaved changes; saved happy, new-draft and later-review cards use distinct status colours.
+Every card has Frank's notes and decision controls plus a read-only Codex response field. The rejected second-round pass remains historical evidence; the ten later selected canonical promotions show their exact prior strip as `Previous version`, while all other Awaiting new draft review cards still require a fresh draft. Orange cards have unsaved changes; saved happy, new-draft and later-review cards use distinct status colours.
 `keeper-scale-choices.json` version 9 exports the complete review register, current review status and Codex response for every animation as well as any new per-card proposals. Export remains blocked while a card has unsaved edits. Import validates exact `keeper_*` names, rejects duplicates/unknown names and safely reconciles stale status-list entries from the matching named review. The page can also prepend matching walks, insert known bridges or freeze a seam with onion skin; every card prints its runtime PNG and authored source-strip filename.
 The character-width and character-height sliders each have adjacent −0.5% and +0.5% buttons for precise adjustments. They update the same per-animation values, obey the same 50%–150% limits and become part of the normal Save/export workflow.
 Every blue animation-transform slider also has −0.5/+0.5 buttons: degrees for rotation, logical pixels for horizontal/vertical position and percentage points for opacity. They update the same limited, saved and exported values as their sliders.
@@ -29,8 +29,8 @@ Review progress is browser-local: changing display zoom or review-state filter s
 
 ## Reversible review drafts
 
-The rejected partial v1 side-on beard/hand audit remains immutable evidence under `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` and is not displayed. Frank's newly selected 14-pose darts image is independently preserved under `art/drafts/keeper-darts-user-selected-2026-10-10-v1/` and displayed beside the restored canonical `keeper_darts` for a new verdict.
-The new draft register pins source, canonical and draft SHA-256 values. Canonical production art, `public/sprites/`, the runtime manifest, immutable review exports and existing previews remain untouched. Rejecting the new draft requires only deleting its draft directory and exact-name entry from `data/keeper_review_drafts.json`.
+The rejected partial v1 side-on beard/hand audit remains immutable evidence under `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` and is not displayed. Frank's original 14-pose darts image remains a draft-only comparison beside canonical `keeper_darts`. The ten later selected canonical promotions retain their exact prior strips as `Previous version` comparisons.
+The review-draft register pins source, previous/current canonical and draft SHA-256 values. New amendments remain draft-only: canonical production art, `public/sprites/`, the runtime manifest, immutable review exports and existing previews remain untouched until explicit promotion. Rejecting a new draft requires only deleting its draft directory and exact-name entry from `data/keeper_review_drafts.json`.
 
 ## Corrected sheets
 

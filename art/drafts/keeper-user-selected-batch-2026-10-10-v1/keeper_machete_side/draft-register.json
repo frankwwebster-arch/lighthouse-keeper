@@ -1,0 +1,112 @@
+{
+  "draftId": "keeper-user-selected-batch-2026-10-10-v1-keeper_machete_side",
+  "animation": "keeper_machete_side",
+  "status": "promoted-review-draft",
+  "label": "Frank-selected replacement",
+  "selection": "Frank supplied this sheet and requested that it replace the current exact-name animation.",
+  "canonical": {
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_machete_side/previous/keeper_machete_side_f8.png",
+    "stripSha256": "6e30f1202456962d9e7815ba20b311b92fabd216a60952391319a4138fc802aa",
+    "runtime": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_machete_side/previous/keeper_machete_side.png",
+    "runtimeSha256": "8966c6b80734e598e08bda51d329c7c9142b02d757a5ede1823061f87b52ebf9",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_machete_side/previous/keeper_machete_side_f8.json",
+    "sidecarSha256": "b9b76f6112be2f711e5a82854a674eb97a3ce497e6862a5232336a239993b70c"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_machete_side/source/exec-4284d279-2218-4606-b4fc-76592b11df0b.png",
+    "sourceSha256": "df6209ee8d6a0b5abb7133881721164846b9065bcfd189ce03d5b60c1eac7fc0",
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_machete_side/candidate/keeper_machete_side_f8.png",
+    "stripSha256": "14cc7e21affa09d4957f6420229128755be805fdfde03f6164b2f60ddaa1ed96",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_machete_side/candidate/keeper_machete_side_f8.json",
+    "sidecarSha256": "6636869f15a7fc16952e5209d8686e537bb038d7bc9d57a96cc305d96fb1ac16",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          191,
+          53,
+          300,
+          205
+        ]
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          195,
+          24,
+          297,
+          205
+        ]
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          201,
+          10,
+          291,
+          205
+        ]
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          186,
+          46,
+          306,
+          205
+        ]
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          169,
+          59,
+          323,
+          205
+        ]
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          168,
+          59,
+          324,
+          205
+        ]
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          178,
+          42,
+          314,
+          205
+        ]
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          190,
+          55,
+          301,
+          205
+        ]
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_machete_side/evidence/final-candidate-frames.jpg"
+    ],
+    "workingSource": "art/source/keeper-first-batch/keeper-machete-side-round2-grid-generated-source.png",
+    "workingSourceSha256": "6424439fb6be1809242bb587042763bfcd5d245472bae2d34c54e4acb1a1da64"
+  },
+  "qualification": "Two poses touch in the supplied one-row sheet; the matching isolated-grid working copy supplies the same eight poses without ambiguous shared pixels.",
+  "rollback": "Restore the three files in previous/ and discard this exact animation draft; no other keeper animation is involved.",
+  "promotion": {
+    "strip": "art/raw/keeper-first-batch/keeper_machete_side_f8.png",
+    "stripSha256": "14cc7e21affa09d4957f6420229128755be805fdfde03f6164b2f60ddaa1ed96",
+    "sidecar": "art/raw/keeper-first-batch/keeper_machete_side_f8.json",
+    "sidecarSha256": "6636869f15a7fc16952e5209d8686e537bb038d7bc9d57a96cc305d96fb1ac16",
+    "runtime": "public/sprites/keeper_machete_side.png",
+    "runtimeSha256": "8f31d8d30cfbbf010ab349238fa87dac4a707595476316841b53f559f7892543"
+  }
+}

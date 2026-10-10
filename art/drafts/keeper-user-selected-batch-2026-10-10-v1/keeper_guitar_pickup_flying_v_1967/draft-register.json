@@ -1,0 +1,146 @@
+{
+  "draftId": "keeper-user-selected-batch-2026-10-10-v1-keeper_guitar_pickup_flying_v_1967",
+  "animation": "keeper_guitar_pickup_flying_v_1967",
+  "status": "promoted-review-draft",
+  "label": "Frank-selected replacement",
+  "selection": "Frank supplied this sheet and requested that it replace the current exact-name animation.",
+  "canonical": {
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_flying_v_1967/previous/keeper_guitar_pickup_flying_v_1967_f12.png",
+    "stripSha256": "c663a9693246a6780c6e549623eac3a66d4e28ba6ba5cb7687c656fd4c867383",
+    "runtime": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_flying_v_1967/previous/keeper_guitar_pickup_flying_v_1967.png",
+    "runtimeSha256": "8b0b1875d57fca4a005efd8db9e6039b8cedc42474dc8bb482242bf15433e3a6",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_flying_v_1967/previous/keeper_guitar_pickup_flying_v_1967_f12.json",
+    "sidecarSha256": "f2ab7eabc62ccb1369f16757f55d56406daa86379854328b137f2ed86bf6e054"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_flying_v_1967/source/exec-81f7097c-8efc-40db-b602-1687af35613e.png",
+    "sourceSha256": "183e9ad3b1f7288c327a7109a2f1e3f507f909e1f67482b6e33be763d842dc69",
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_flying_v_1967/candidate/keeper_guitar_pickup_flying_v_1967_f12.png",
+    "stripSha256": "90dc1920fef823881544a2245e03db0df4a1c8c58de248348e2b1f1342d9ae4e",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_flying_v_1967/candidate/keeper_guitar_pickup_flying_v_1967_f12.json",
+    "sidecarSha256": "3f19b0fb5b6bc44154b0fa4972a3ceb365bb263f3a5fc79d4a9765a86494f692",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          107,
+          70,
+          181,
+          222
+        ]
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          105,
+          70,
+          182,
+          222
+        ]
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          105,
+          72,
+          182,
+          222
+        ]
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          95,
+          72,
+          192,
+          222
+        ]
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          97,
+          72,
+          190,
+          222
+        ]
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          106,
+          45,
+          181,
+          222
+        ]
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          103,
+          55,
+          184,
+          222
+        ]
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          99,
+          61,
+          188,
+          222
+        ]
+      },
+      {
+        "frame": 9,
+        "alphaBox": [
+          104,
+          68,
+          184,
+          222
+        ]
+      },
+      {
+        "frame": 10,
+        "alphaBox": [
+          90,
+          68,
+          198,
+          222
+        ]
+      },
+      {
+        "frame": 11,
+        "alphaBox": [
+          90,
+          71,
+          197,
+          222
+        ]
+      },
+      {
+        "frame": 12,
+        "alphaBox": [
+          86,
+          71,
+          201,
+          222
+        ]
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_guitar_pickup_flying_v_1967/evidence/final-candidate-frames.jpg"
+    ]
+  },
+  "qualification": null,
+  "rollback": "Restore the three files in previous/ and discard this exact animation draft; no other keeper animation is involved.",
+  "promotion": {
+    "strip": "art/raw/keeper-first-batch/keeper_guitar_pickup_flying_v_1967_f12.png",
+    "stripSha256": "90dc1920fef823881544a2245e03db0df4a1c8c58de248348e2b1f1342d9ae4e",
+    "sidecar": "art/raw/keeper-first-batch/keeper_guitar_pickup_flying_v_1967_f12.json",
+    "sidecarSha256": "3f19b0fb5b6bc44154b0fa4972a3ceb365bb263f3a5fc79d4a9765a86494f692",
+    "runtime": "public/sprites/keeper_guitar_pickup_flying_v_1967.png",
+    "runtimeSha256": "cc55efbd078decb04818973901a1094eda51f7f23436c590e07018671706b2f4"
+  }
+}

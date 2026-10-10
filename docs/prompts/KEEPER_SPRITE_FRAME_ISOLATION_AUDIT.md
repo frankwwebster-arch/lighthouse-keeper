@@ -2,11 +2,10 @@
 
 ## Recommended model
 
-Use **GPT-5.6 Sol with High reasoning**. This audit combines exhaustive file
+Use **GPT-5.6 Terra with High reasoning**. This audit combines exhaustive file
 inventory, image inspection, deterministic extraction work, verifier design,
-and cautious art repair. High reasoning is the best balance; use X-High only if
-the first pass finds ambiguous overlapping artwork that needs extensive visual
-reconstruction.
+and cautious art repair. Terra High is the agreed balance for this full-library
+audit; do not use a lower-reasoning model.
 
 ## Ready-to-paste prompt
 
@@ -27,6 +26,7 @@ Work from the current remote main branch. Read these first:
 2. docs/KEEPER_ANIMATION_HANDOFF.md
 3. docs/review/KEEPER_ANIMATION_SECOND_ROUND_DELTA_2026-10-10.md
 4. docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md
+5. docs/prompts/KEEPER_SIDE_ON_BEARD_OCCLUSION_AUDIT.md
 
 Audit EVERY sprite sheet in the repository, not just the keeper review subset,
 and make frame isolation a permanent build invariant. A frame is isolated only
@@ -39,6 +39,11 @@ production manifest, and generated outputs. Record exact sheet name, path,
 frame count, declared cell dimensions, and whether each shared edge is clean.
 Do not associate anything by list position or display order. Produce the full
 audit/delta before changing artwork.
+
+Do not alter, replace, or obscure any beard/hand correction or v2 beard-audit
+draft created by the completed first audit. Preserve its exact frame-level
+identity and occlusion decisions; this second audit addresses only packing,
+separation, crop and component ownership.
 
 Then fix every sheet with overlap, cross-frame contamination, an opaque shared
 edge, or ambiguous source-component ownership. Do not regenerate clean sheets.
@@ -76,9 +81,11 @@ After the work is stable, generate only affected draft assets and dependent
 draft review artifacts. Keep canonical and draft variants visible side-by-side
 in the existing review tool. Run the verifier against draft outputs where
 possible, the keeper scale/identity audit, tests, typecheck, and production
-build once. Do not promote, overwrite canonical assets, commit a production
-change, push, deploy, or claim completion. Stop for Frank's explicit approval;
-promotion and final delivery happen later.
+build once. Do not promote or overwrite canonical assets. Commit and push only
+the draft-only audit, verifier, evidence and comparison-reviewer changes so
+Frank can inspect them online; wait for deployment success and verify the
+review URL returns HTTP 200. Stop for Frank's explicit approval; promotion and
+final production delivery happen later.
 
 Report only: sheets inspected; sheets changed; any artwork rerendered rather
 than deterministically repaired; verifier/test results; commit and deployment.

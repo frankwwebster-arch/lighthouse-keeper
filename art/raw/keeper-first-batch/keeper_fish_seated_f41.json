@@ -1,0 +1,56 @@
+{
+  "w": 179,
+  "h": 146,
+  "frames": 41,
+  "fps": 3,
+  "density": 4,
+  "anchor": [
+    35,
+    73
+  ],
+  "z": 50,
+  "loop": true,
+  "seatPoint": [
+    37.25,
+    65.85
+  ],
+  "handUsePoint": [
+    47.675,
+    55.45
+  ],
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "fish-and-reel",
+  "mirrorsFor": "left",
+  "reviewScale": [
+    69.5,
+    65
+  ],
+  "reviewOffset": [
+    4.5,
+    0
+  ],
+  "reviewScaleRounds": {
+    "2026-10-09": [
+      139,
+      130
+    ],
+    "2026-10-10": [
+      50,
+      50
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-09": [
+      4.5,
+      0
+    ],
+    "2026-10-10": [
+      0,
+      0
+    ]
+  },
+  "assetRole": "clip",
+  "startPose": "sitting-side-right",
+  "endPose": "sitting-side-right"
+}

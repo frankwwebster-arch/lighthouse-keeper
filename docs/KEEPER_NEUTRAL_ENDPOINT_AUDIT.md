@@ -70,15 +70,15 @@ Migration guard: the current legacy failures are frozen in `data/keeper_endpoint
 | `keeper_feed_animals` | end | `standing-side-right` | pixels 99.97%; anchor (0, 0); landmarks 1px | add bridge |
 | `keeper_fish_feed_up` | start | `standing-side-right` | pixels 99.93%; anchor (0, 0); landmarks 1px | add bridge |
 | `keeper_fish_feed_up` | end | `standing-side-right` | pixels 99.97%; anchor (0, 0); landmarks 1px | add bridge |
-| `keeper_fish_seated` | start | `sitting-side-right` | pixels 100%; anchor (-4.5, -42); landmarks 41.5px | add bridge |
-| `keeper_fish_seated` | end | `sitting-side-right` | pixels 99.99%; anchor (-4.5, -42); landmarks 41.5px | add bridge |
-| `keeper_fish_standing` | start | `standing-side-right` | pixels 100%; anchor (-2.5, -32); landmarks 30.5px | add bridge |
-| `keeper_fish_standing` | end | `standing-side-right` | pixels 100%; anchor (-2.5, -32); landmarks 30.5px | add bridge |
-| `keeper_guitar_pickup_acoustic` | start | `standing-side-right` | pixels 99.84%; anchor (0, 0); landmarks 1.25px | add bridge |
+| `keeper_fish_seated` | start | `sitting-side-right` | pixels 100%; anchor (-54.5, -73); landmarks 8.75px | add bridge |
+| `keeper_fish_seated` | end | `sitting-side-right` | pixels 100%; anchor (-54.5, -73); landmarks 8.75px | add bridge |
+| `keeper_fish_standing` | start | `standing-side-right` | pixels 100%; anchor (-38.5, -56); landmarks 8.5px | add bridge |
+| `keeper_fish_standing` | end | `standing-side-right` | pixels 100%; anchor (-38.5, -56); landmarks 8.5px | add bridge |
+| `keeper_guitar_pickup_acoustic` | start | `standing-side-right` | pixels 100%; anchor (-6.5, 0); landmarks 8.5px | add bridge |
 | `keeper_guitar_pickup_acoustic` | end | `play-guitar-acoustic` | neutral missing | add neutral and bridge |
-| `keeper_guitar_pickup_flying_v_1967` | start | `standing-side-right` | pixels 99.84%; anchor (0, 0); landmarks 1.25px | add bridge |
+| `keeper_guitar_pickup_flying_v_1967` | start | `standing-side-right` | pixels 99.91%; anchor (-4, 0); landmarks 5.25px | add bridge |
 | `keeper_guitar_pickup_flying_v_1967` | end | `play-guitar-flying-v-1967` | neutral missing | add neutral and bridge |
-| `keeper_guitar_pickup_gretsch` | start | `standing-side-right` | pixels 99.84%; anchor (0, 0); landmarks 1.25px | add bridge |
+| `keeper_guitar_pickup_gretsch` | start | `standing-side-right` | pixels 99.89%; anchor (-3.5, 0); landmarks 4.75px | add bridge |
 | `keeper_guitar_pickup_gretsch` | end | `play-guitar-gretsch` | neutral missing | add neutral and bridge |
 | `keeper_hammer_back` | start | `standing-back` | pixels 99.64%; anchor (-0.5, 0); landmarks 1.25px | add bridge |
 | `keeper_hammer_back` | end | `standing-back` | pixels 99.84%; anchor (-0.5, 0); landmarks 3px | add bridge |
@@ -108,12 +108,12 @@ Migration guard: the current legacy failures are frozen in `data/keeper_endpoint
 | `keeper_lean_table_back` | end | `standing-back` | pixels 99.75%; anchor (0, 0); landmarks 1px | add bridge |
 | `keeper_lift_button_front` | start | `standing-front` | pixels 99.98%; anchor (0, 0); landmarks 1px | add bridge |
 | `keeper_lift_button_front` | end | `standing-front` | pixels 99.97%; anchor (0, 0); landmarks 1.25px | add bridge |
-| `keeper_machete_side` | start | `standing-side-right` | pixels 99.75%; anchor (-0.5, 0); landmarks 4.75px | add bridge |
-| `keeper_machete_side` | end | `standing-side-right` | pixels 99.93%; anchor (-0.5, 0); landmarks 4.75px | add bridge |
+| `keeper_machete_side` | start | `standing-side-right` | pixels 99.95%; anchor (-0.5, 0); landmarks 6px | add bridge |
+| `keeper_machete_side` | end | `standing-side-right` | pixels 99.97%; anchor (-0.5, 0); landmarks 6.25px | add bridge |
 | `keeper_meal_from_oven_back` | start | `standing-back` | pixels 99.6%; anchor (0, 0); landmarks 0.25px | add bridge |
 | `keeper_meal_from_oven_back` | end | `standing-back` | pixels 99.73%; anchor (0, 0); landmarks 0.25px | add bridge |
-| `keeper_meal_place_side` | start | `standing-side-right` | pixels 99.91%; anchor (-1.5, 0); landmarks 4.75px | add bridge |
-| `keeper_meal_place_side` | end | `standing-side-right` | pixels 99.93%; anchor (-1.5, 0); landmarks 2.25px | add bridge |
+| `keeper_meal_place_side` | start | `standing-side-right` | pixels 99.97%; anchor (-1.5, 0); landmarks 4.5px | add bridge |
+| `keeper_meal_place_side` | end | `standing-side-right` | pixels 99.89%; anchor (-1.5, 0); landmarks 2.25px | add bridge |
 | `keeper_operate_outboard` | start | `standing-rear-right` | neutral missing | add neutral and bridge |
 | `keeper_operate_outboard` | end | `standing-rear-right` | neutral missing | add neutral and bridge |
 | `keeper_parachute_drift` | start | `parachute-open` | neutral missing | add neutral and bridge |
@@ -121,7 +121,7 @@ Migration guard: the current legacy failures are frozen in `data/keeper_endpoint
 | `keeper_parachute_jump` | start | `standing-side-right` | pixels 99.95%; anchor (2.5, 0); landmarks 7.25px | add bridge |
 | `keeper_parachute_jump` | end | `parachute-open` | neutral missing | add neutral and bridge |
 | `keeper_parachute_landing` | start | `parachute-open` | neutral missing | add neutral and bridge |
-| `keeper_parachute_landing` | end | `standing-side-right` | pixels 99.99%; anchor (0, 0); landmarks 18.25px | add bridge |
+| `keeper_parachute_landing` | end | `standing-side-right` | pixels 99.99%; anchor (0, -3); landmarks 18.25px | add bridge |
 | `keeper_piano` | start | `sitting-side-right` | pixels 99.99%; anchor (0, 0); landmarks 1px | add bridge |
 | `keeper_piano` | end | `sitting-side-right` | pixels 99.97%; anchor (0, 0); landmarks 0.5px | add bridge |
 | `keeper_pick_fruit` | start | `standing-side-right` | pixels 99.88%; anchor (0, 0); landmarks 1.25px | add bridge |

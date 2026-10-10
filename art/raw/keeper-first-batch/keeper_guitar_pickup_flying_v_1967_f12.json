@@ -1,5 +1,5 @@
 {
-  "w": 64,
+  "w": 72,
   "h": 56,
   "frames": 12,
   "fps": 4,
@@ -21,5 +21,25 @@
   "endPose": "play-guitar-flying-v-1967",
   "facing": "side-to-back-to-front-right",
   "interaction": "pick-up-guitar",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ],
+  "reviewScaleRounds": {
+    "2026-10-10": [
+      100,
+      100
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-10": [
+      0,
+      0
+    ]
+  },
   "assetRole": "clip"
 }

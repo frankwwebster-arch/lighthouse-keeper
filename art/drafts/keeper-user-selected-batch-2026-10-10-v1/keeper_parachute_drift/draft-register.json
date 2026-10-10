@@ -1,0 +1,110 @@
+{
+  "draftId": "keeper-user-selected-batch-2026-10-10-v1-keeper_parachute_drift",
+  "animation": "keeper_parachute_drift",
+  "status": "promoted-review-draft",
+  "label": "Frank-selected replacement",
+  "selection": "Frank supplied this sheet and requested that it replace the current exact-name animation.",
+  "canonical": {
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_drift/previous/keeper_parachute_drift_f8.png",
+    "stripSha256": "d044898f66583f83b8b0df3445bc517f140c690ab5351d928f1e69976d578e66",
+    "runtime": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_drift/previous/keeper_parachute_drift.png",
+    "runtimeSha256": "95ac3f077d59d1b97684e4aa70d69126aaac651cd4984513c5d7b388a71112c8",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_drift/previous/keeper_parachute_drift_f8.json",
+    "sidecarSha256": "0ad36a961a7ed661da6fc4ff2aff611ed8d264956e0277fb488eb4e2bc862755"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_drift/source/exec-b2870e70-1651-44a3-8d74-4d709d0c6711.png",
+    "sourceSha256": "5f461731f05c2eeb7c2e7e911e5a5760e70a127337f2be81b6b4399f8612a39f",
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_drift/candidate/keeper_parachute_drift_f8.png",
+    "stripSha256": "8a3ec25af6d14151b25c6b07e601236c551152ca14e5474bcda79090eb5f29ef",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_drift/candidate/keeper_parachute_drift_f8.json",
+    "sidecarSha256": "16d7244dc3ee84db5ed8ceb469c87ef08328f1ba4744d5b8d7255b9cbaf6361b",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          101,
+          74,
+          279,
+          410
+        ]
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          120,
+          74,
+          261,
+          410
+        ]
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          120,
+          74,
+          260,
+          410
+        ]
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          121,
+          74,
+          260,
+          410
+        ]
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          120,
+          74,
+          261,
+          410
+        ]
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          120,
+          74,
+          260,
+          410
+        ]
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          121,
+          74,
+          260,
+          410
+        ]
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          121,
+          74,
+          260,
+          410
+        ]
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_drift/evidence/final-candidate-frames.jpg"
+    ]
+  },
+  "qualification": null,
+  "rollback": "Restore the three files in previous/ and discard this exact animation draft; no other keeper animation is involved.",
+  "promotion": {
+    "strip": "art/raw/keeper-first-batch/keeper_parachute_drift_f8.png",
+    "stripSha256": "8a3ec25af6d14151b25c6b07e601236c551152ca14e5474bcda79090eb5f29ef",
+    "sidecar": "art/raw/keeper-first-batch/keeper_parachute_drift_f8.json",
+    "sidecarSha256": "16d7244dc3ee84db5ed8ceb469c87ef08328f1ba4744d5b8d7255b9cbaf6361b",
+    "runtime": "public/sprites/keeper_parachute_drift.png",
+    "runtimeSha256": "3f674ef93b3c3ecd4da098510cc8b45c207c5aa44e7cc7c110fd92f017f4c8b8"
+  }
+}

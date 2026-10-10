@@ -1,0 +1,110 @@
+{
+  "draftId": "keeper-user-selected-batch-2026-10-10-v1-keeper_meal_place_side",
+  "animation": "keeper_meal_place_side",
+  "status": "promoted-review-draft",
+  "label": "Frank-selected replacement",
+  "selection": "Frank supplied this sheet and requested that it replace the current exact-name animation.",
+  "canonical": {
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_meal_place_side/previous/keeper_meal_place_side_f8.png",
+    "stripSha256": "e0cf063fa88eb3eca7813de8290da8aae354614ce94b6075480ca849d6c3c4ba",
+    "runtime": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_meal_place_side/previous/keeper_meal_place_side.png",
+    "runtimeSha256": "9ae3b9e79fb3448005e7009b1baada036997540b21cae23eaafd42dad1206605",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_meal_place_side/previous/keeper_meal_place_side_f8.json",
+    "sidecarSha256": "55229ac6e001221bef83989cd115a5d4d958eee3cde102fe9ed1458bdfa1a268"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_meal_place_side/source/exec-c450ecd5-e433-48f9-a3e2-cdbe85d692a2.png",
+    "sourceSha256": "46b5157591944ac624118f759a4c6bf6949501e391b3e7e06a1fa442788302e4",
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_meal_place_side/candidate/keeper_meal_place_side_f8.png",
+    "stripSha256": "302dde9ed5a162a85737a1b4729449f73b8b297e195c53aa86ee7840edc02654",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_meal_place_side/candidate/keeper_meal_place_side_f8.json",
+    "sidecarSha256": "f1d01fe4ee1f0faf3b1a56f793296844e918b5471d198bbd3736cccf4c7e371d",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          102,
+          18,
+          190,
+          158
+        ]
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          98,
+          19,
+          192,
+          158
+        ]
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          98,
+          19,
+          189,
+          158
+        ]
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          100,
+          27,
+          193,
+          158
+        ]
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          98,
+          36,
+          194,
+          158
+        ]
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          106,
+          40,
+          194,
+          158
+        ]
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          116,
+          25,
+          192,
+          158
+        ]
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          111,
+          16,
+          181,
+          158
+        ]
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_meal_place_side/evidence/final-candidate-frames.jpg"
+    ]
+  },
+  "qualification": null,
+  "rollback": "Restore the three files in previous/ and discard this exact animation draft; no other keeper animation is involved.",
+  "promotion": {
+    "strip": "art/raw/keeper-first-batch/keeper_meal_place_side_f8.png",
+    "stripSha256": "302dde9ed5a162a85737a1b4729449f73b8b297e195c53aa86ee7840edc02654",
+    "sidecar": "art/raw/keeper-first-batch/keeper_meal_place_side_f8.json",
+    "sidecarSha256": "f1d01fe4ee1f0faf3b1a56f793296844e918b5471d198bbd3736cccf4c7e371d",
+    "runtime": "public/sprites/keeper_meal_place_side.png",
+    "runtimeSha256": "7578f4767bb67beccad6bf2cb65005fcf349cffc6d41346f10c4318d38ef0b49"
+  }
+}

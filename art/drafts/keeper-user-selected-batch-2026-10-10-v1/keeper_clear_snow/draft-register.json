@@ -1,0 +1,112 @@
+{
+  "draftId": "keeper-user-selected-batch-2026-10-10-v1-keeper_clear_snow",
+  "animation": "keeper_clear_snow",
+  "status": "promoted-review-draft",
+  "label": "Frank-selected replacement",
+  "selection": "Frank supplied this sheet and requested that it replace the current exact-name animation.",
+  "canonical": {
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_clear_snow/previous/keeper_clear_snow_f8.png",
+    "stripSha256": "5c302892825949656978a5e263b1b33ca48d26e8cbcdb7d575ee54a7c0b206b6",
+    "runtime": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_clear_snow/previous/keeper_clear_snow.png",
+    "runtimeSha256": "f1bf04a7a8158475b2d7c4678f7c99cd3d94e0031ddf48df19a4613fa75411ab",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_clear_snow/previous/keeper_clear_snow_f8.json",
+    "sidecarSha256": "d5b41859d0b768c3e9b046c4d7a4267e3c879e7899260056db0fe875e80f3d5c"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_clear_snow/source/exec-77d26231-3d0c-4ff9-a918-e8cc055ecf8c.png",
+    "sourceSha256": "c4eea3f639873f14d91736a10c7f411d6da4423ac158fb6346fe79a3cb3c87a6",
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_clear_snow/candidate/keeper_clear_snow_f8.png",
+    "stripSha256": "fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_clear_snow/candidate/keeper_clear_snow_f8.json",
+    "sidecarSha256": "4aab26d5dc5abc22cad6fea8b6098fc7f8e37674fe419668d42a98b73aa0623b",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          114,
+          19,
+          207,
+          162
+        ]
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          108,
+          23,
+          213,
+          162
+        ]
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          105,
+          36,
+          216,
+          162
+        ]
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          104,
+          39,
+          217,
+          162
+        ]
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          96,
+          24,
+          224,
+          162
+        ]
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          94,
+          20,
+          227,
+          162
+        ]
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          83,
+          21,
+          236,
+          162
+        ]
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          113,
+          19,
+          208,
+          162
+        ]
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_clear_snow/evidence/final-candidate-frames.jpg"
+    ],
+    "workingSource": "art/source/keeper-first-batch/keeper-clear-snow-round2-grid-generated-source.png",
+    "workingSourceSha256": "b5470890cef0448794414393947e50eb55971884d59cb389a8947bdbbf5dc455"
+  },
+  "qualification": "The earlier supplied one-row snow source joins neighbouring poses; the later supplied separated version identifies the selected artwork and the matching isolated-grid source is used for deterministic production extraction.",
+  "rollback": "Restore the three files in previous/ and discard this exact animation draft; no other keeper animation is involved.",
+  "promotion": {
+    "strip": "art/raw/keeper-first-batch/keeper_clear_snow_f8.png",
+    "stripSha256": "fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96",
+    "sidecar": "art/raw/keeper-first-batch/keeper_clear_snow_f8.json",
+    "sidecarSha256": "4aab26d5dc5abc22cad6fea8b6098fc7f8e37674fe419668d42a98b73aa0623b",
+    "runtime": "public/sprites/keeper_clear_snow.png",
+    "runtimeSha256": "2fd4646a09ea3e836fa2c6665362004e46b76dfbf3f0e09c94f4583adc1cb28c"
+  }
+}

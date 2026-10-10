@@ -1,0 +1,407 @@
+{
+  "draftId": "keeper-user-selected-batch-2026-10-10-v1-keeper_fish_seated",
+  "animation": "keeper_fish_seated",
+  "status": "promoted-review-draft",
+  "label": "Frank-selected replacement",
+  "selection": "Frank supplied this sheet and requested that it replace the current exact-name animation.",
+  "canonical": {
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_seated/previous/keeper_fish_seated_f16.png",
+    "stripSha256": "09dbaa31ea91bbef1f640c72a0bb6a5117675213baf343761b9bf8b8472ad950",
+    "runtime": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_seated/previous/keeper_fish_seated.png",
+    "runtimeSha256": "01421200d1139df4e721d430e1a4760e9970dfb8e6b84048d574beccad954710",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_seated/previous/keeper_fish_seated_f16.json",
+    "sidecarSha256": "096a1d57ad9be077f5cf1c340b0bc17ee8c8a9dec7a2285558026d5ea7fe25df"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_seated/source/exec-4e62f4b3-55cb-499e-b593-1bc168d2017e.png",
+    "sourceSha256": "8dedc0f4473fcdc49d8d67e2ff494f0e99e17391ca8e5a7462bbb592c2c06580",
+    "strip": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_seated/candidate/keeper_fish_seated_f41.png",
+    "stripSha256": "e952660e52ca1a1a0f24c4a5abd41f3cc57329b4d9117e441548f679edc9075b",
+    "sidecar": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_seated/candidate/keeper_fish_seated_f41.json",
+    "sidecarSha256": "60cb3fc414f5693fdb0a21eb60061bae5f88a7cab6b5f2c0aceda4af08a22b20",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          124,
+          193,
+          184,
+          310
+        ]
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          124,
+          193,
+          184,
+          310
+        ]
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          124,
+          193,
+          184,
+          310
+        ]
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          112,
+          193,
+          183,
+          319
+        ]
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          112,
+          193,
+          183,
+          319
+        ]
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          112,
+          193,
+          183,
+          319
+        ]
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          119,
+          192,
+          189,
+          316
+        ]
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          119,
+          192,
+          189,
+          316
+        ]
+      },
+      {
+        "frame": 9,
+        "alphaBox": [
+          119,
+          192,
+          189,
+          316
+        ]
+      },
+      {
+        "frame": 10,
+        "alphaBox": [
+          112,
+          193,
+          185,
+          316
+        ]
+      },
+      {
+        "frame": 11,
+        "alphaBox": [
+          112,
+          193,
+          185,
+          316
+        ]
+      },
+      {
+        "frame": 12,
+        "alphaBox": [
+          112,
+          193,
+          185,
+          316
+        ]
+      },
+      {
+        "frame": 13,
+        "alphaBox": [
+          118,
+          192,
+          194,
+          320
+        ]
+      },
+      {
+        "frame": 14,
+        "alphaBox": [
+          118,
+          192,
+          194,
+          320
+        ]
+      },
+      {
+        "frame": 15,
+        "alphaBox": [
+          118,
+          192,
+          194,
+          320
+        ]
+      },
+      {
+        "frame": 16,
+        "alphaBox": [
+          108,
+          192,
+          185,
+          320
+        ]
+      },
+      {
+        "frame": 17,
+        "alphaBox": [
+          108,
+          192,
+          185,
+          320
+        ]
+      },
+      {
+        "frame": 18,
+        "alphaBox": [
+          108,
+          192,
+          185,
+          320
+        ]
+      },
+      {
+        "frame": 19,
+        "alphaBox": [
+          112,
+          192,
+          183,
+          320
+        ]
+      },
+      {
+        "frame": 20,
+        "alphaBox": [
+          112,
+          192,
+          183,
+          320
+        ]
+      },
+      {
+        "frame": 21,
+        "alphaBox": [
+          112,
+          192,
+          183,
+          320
+        ]
+      },
+      {
+        "frame": 22,
+        "alphaBox": [
+          117,
+          177,
+          187,
+          318
+        ]
+      },
+      {
+        "frame": 23,
+        "alphaBox": [
+          117,
+          177,
+          187,
+          318
+        ]
+      },
+      {
+        "frame": 24,
+        "alphaBox": [
+          117,
+          177,
+          187,
+          318
+        ]
+      },
+      {
+        "frame": 25,
+        "alphaBox": [
+          114,
+          175,
+          182,
+          313
+        ]
+      },
+      {
+        "frame": 26,
+        "alphaBox": [
+          114,
+          175,
+          182,
+          313
+        ]
+      },
+      {
+        "frame": 27,
+        "alphaBox": [
+          114,
+          175,
+          182,
+          313
+        ]
+      },
+      {
+        "frame": 28,
+        "alphaBox": [
+          120,
+          173,
+          187,
+          316
+        ]
+      },
+      {
+        "frame": 29,
+        "alphaBox": [
+          120,
+          173,
+          187,
+          316
+        ]
+      },
+      {
+        "frame": 30,
+        "alphaBox": [
+          120,
+          173,
+          187,
+          316
+        ]
+      },
+      {
+        "frame": 31,
+        "alphaBox": [
+          126,
+          177,
+          170,
+          291
+        ]
+      },
+      {
+        "frame": 32,
+        "alphaBox": [
+          130,
+          179,
+          170,
+          292
+        ]
+      },
+      {
+        "frame": 33,
+        "alphaBox": [
+          126,
+          170,
+          170,
+          292
+        ]
+      },
+      {
+        "frame": 34,
+        "alphaBox": [
+          124,
+          164,
+          173,
+          292
+        ]
+      },
+      {
+        "frame": 35,
+        "alphaBox": [
+          119,
+          156,
+          176,
+          292
+        ]
+      },
+      {
+        "frame": 36,
+        "alphaBox": [
+          115,
+          146,
+          183,
+          294
+        ]
+      },
+      {
+        "frame": 37,
+        "alphaBox": [
+          113,
+          153,
+          184,
+          296
+        ]
+      },
+      {
+        "frame": 38,
+        "alphaBox": [
+          110,
+          155,
+          198,
+          293
+        ]
+      },
+      {
+        "frame": 39,
+        "alphaBox": [
+          99,
+          192,
+          185,
+          307
+        ]
+      },
+      {
+        "frame": 40,
+        "alphaBox": [
+          110,
+          192,
+          214,
+          314
+        ]
+      },
+      {
+        "frame": 41,
+        "alphaBox": [
+          124,
+          193,
+          184,
+          310
+        ]
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_fish_seated/evidence/final-candidate-frames.jpg"
+    ]
+  },
+  "qualification": null,
+  "rollback": "Restore the three files in previous/ and discard this exact animation draft; no other keeper animation is involved.",
+  "promotion": {
+    "strip": "art/raw/keeper-first-batch/keeper_fish_seated_f41.png",
+    "stripSha256": "e952660e52ca1a1a0f24c4a5abd41f3cc57329b4d9117e441548f679edc9075b",
+    "sidecar": "art/raw/keeper-first-batch/keeper_fish_seated_f41.json",
+    "sidecarSha256": "60cb3fc414f5693fdb0a21eb60061bae5f88a7cab6b5f2c0aceda4af08a22b20",
+    "runtime": "public/sprites/keeper_fish_seated.png",
+    "runtimeSha256": "bed5afb75e7b7b415e8fe80e2002d7571f28ac2d73d1985a01283d98e48f6ae6"
+  }
+}

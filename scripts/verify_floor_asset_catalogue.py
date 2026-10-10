@@ -187,6 +187,7 @@ accepted_fps = {
     "keeper_feed_animals": 5.5,
     "keeper_fish_feed_up": 5,
     "keeper_fish_seated": 3,
+    "keeper_guitar_pickup_acoustic": 8,
     "keeper_get_into_bed": 3,
     "keeper_hammer_back": 5,
     "keeper_hammer_side": 5,
@@ -203,9 +204,9 @@ for name in review_source_names:
     if clip["frames"] > 1:
         assert clip["fps"] == accepted_fps.get(name, 4), (name, clip["fps"])
 
-# Frank's saved visual sizing remains immutable review direction. The rejected
-# second-round pass must not claim that its 2026-10-10 values are present in
-# the restored pre-pass canonical sidecars.
+# Frank's saved visual sizing remains immutable review direction. Only the
+# explicitly promoted selected replacements carry their 2026-10-10 values;
+# the rest of the rejected second-round set remains on its restored sidecars.
 regenerated_second_round = {
     "keeper_bath_enter", "keeper_bath_exit", "keeper_carry_shopping", "keeper_clear_snow",
     "keeper_collect_eggs_back", "keeper_crouch_work_back", "keeper_darts", "keeper_eat_seated",
@@ -217,16 +218,31 @@ regenerated_second_round = {
     "keeper_mechanic_walk_front", "keeper_nap_seated", "keeper_operate_outboard",
     "keeper_parachute_drift",
 }
-for name in regenerated_second_round:
+promoted_selected = {
+    "keeper_clear_snow", "keeper_fish_seated", "keeper_fish_standing",
+    "keeper_guitar_pickup_acoustic", "keeper_guitar_pickup_flying_v_1967",
+    "keeper_guitar_pickup_gretsch", "keeper_machete_side",
+    "keeper_meal_place_side", "keeper_parachute_drift",
+}
+for name in regenerated_second_round - promoted_selected:
     assert "2026-10-10" not in keeper_sidecars[name].get("reviewScaleRounds", {}), name
+second_round_reviews = {
+    review["name"]: review
+    for review in json.loads((ROOT / "docs/review/frank-keeper-animation-review-2026-10-10.json").read_text())["reviews"]
+}
+for name in promoted_selected:
+    review = second_round_reviews[name]
+    assert keeper_sidecars[name]["reviewScaleRounds"]["2026-10-10"] == [
+        review.get("widthPercent", 100), review.get("heightPercent", 100)
+    ], name
 
 # Rebuilt and newly introduced production sequences.
 required_frames = {
     "keeper_anti_gravity": 12,
     "keeper_darts": 14,
     "keeper_fish_feed_up": 14,
-    "keeper_fish_seated": 16,
-    "keeper_fish_standing": 16,
+    "keeper_fish_seated": 41,
+    "keeper_fish_standing": 50,
     "keeper_hot_drink_pickup": 8,
     "keeper_hot_drink_pour": 10,
     "keeper_lift_button_front": 8,
@@ -402,13 +418,13 @@ assert resolution.count("\n| `keeper_") == 173
 # visual size as authoritative wherever the review changed width or height.
 scale_audit = json.loads((ROOT / "docs/keeper-scale-audit/keeper-scale-metrics.json").read_text())
 assert scale_audit["version"] == 2
-assert scale_audit["auditRevision"] == "2026-10-10-second-review-rollback-v1"
+assert scale_audit["auditRevision"] == "2026-10-10-user-selected-replacements-v1"
 assert scale_audit["originalReference"]["name"] == "keeper_walk"
 assert scale_audit["counts"] == {
     "allSheets": 191,
     "reviewedAnimationSheets": 173,
     "technicalRejectedSheets": 18,
-    "allFramesMeasured": 1420,
+    "allFramesMeasured": 1479,
     "correctedSheets": 81,
     "comparisonFailures": 0,
 }
@@ -470,24 +486,25 @@ page_reviews = review_page_data["initialReviews"]
 page_assets = {asset["name"]: asset for asset in review_page_data["assets"]}
 assert len(page_assets) == 173
 draft_assets = [asset for asset in page_assets.values() if asset.get("draftVariant")]
-assert [asset["name"] for asset in draft_assets] == ["keeper_darts"]
 review_draft_registry = json.loads((ROOT / "data/keeper_review_drafts.json").read_text())
 assert review_page_data["reviewDrafts"] == review_draft_registry
-active_review_draft = review_draft_registry["drafts"][0]
-assert active_review_draft == {
-    "name": "keeper_darts",
-    "status": "active-review-draft",
-    "label": "Frank-selected draft",
-    "register": "art/drafts/keeper-darts-user-selected-2026-10-10-v1/draft-register.json",
-}
-active_draft_register = json.loads((ROOT / active_review_draft["register"]).read_text())
-assert active_draft_register["animation"] == "keeper_darts"
-assert draft_assets[0]["draftVariant"]["source"] == active_draft_register["draft"]["strip"]
-assert draft_assets[0]["draftVariant"]["sha256"] == active_draft_register["draft"]["stripSha256"]
-assert draft_assets[0]["draftVariant"]["canonicalSha256"] == active_draft_register["canonical"]["stripSha256"]
-assert hashlib.sha256((ROOT / active_draft_register["canonical"]["strip"]).read_bytes()).hexdigest() == active_draft_register["canonical"]["stripSha256"]
-assert hashlib.sha256((ROOT / active_draft_register["canonical"]["runtime"]).read_bytes()).hexdigest() == active_draft_register["canonical"]["runtimeSha256"]
-assert hashlib.sha256((ROOT / active_draft_register["draft"]["strip"]).read_bytes()).hexdigest() == active_draft_register["draft"]["stripSha256"]
+draft_assets_by_name = {asset["name"]: asset for asset in draft_assets}
+assert set(draft_assets_by_name) == {item["name"] for item in review_draft_registry["drafts"]}
+for item in review_draft_registry["drafts"]:
+    record = json.loads((ROOT / item["register"]).read_text())
+    asset_variant = draft_assets_by_name[item["name"]]["draftVariant"]
+    assert record["animation"] == item["name"]
+    if item["status"] == "active-review-draft":
+        assert item["name"] == "keeper_darts"
+        assert asset_variant["source"] == record["draft"]["strip"]
+        assert asset_variant["sha256"] == record["draft"]["stripSha256"]
+        assert asset_variant["canonicalSha256"] == record["canonical"]["stripSha256"]
+    else:
+        assert item["status"] == "promoted-review-draft"
+        assert asset_variant["label"] == "Previous version"
+        assert asset_variant["source"] == record["canonical"]["strip"]
+        assert asset_variant["sha256"] == record["canonical"]["stripSha256"]
+        assert asset_variant["canonicalSha256"] == record["promotion"]["stripSha256"]
 rejected_draft_register = json.loads(
     (ROOT / "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/draft-register.json").read_text()
 )
@@ -525,7 +542,7 @@ assert {name: len(assets) for name, assets in filter_groups.items()} == {
     "awaiting-new-draft": 68,
     "review-later": 3,
     "unreviewed": 6,
-    "has-response": 85,
+    "has-response": 86,
 }
 for filtered_assets in filter_groups.values():
     # A complete Next cycle visits each same-filter object exactly once and
@@ -581,7 +598,7 @@ for slug in ("keeper-scuba-walk-side", "keeper-scuba-jetty-dive", "keeper-parach
 
 print(
     "Verified: 71 spaces, 1579 catalogue rows, floor exports, 325 working keeper sheets, "
-    "the restored 191-sheet/1420-frame review set, "
+    "the 191-sheet/1479-frame review set with reversible selected replacements, "
     "reviewed visual sizing and identity authorities, scuba/parachute routes, cleaning cupboard occlusion, "
     "review evidence/statuses/responses, filtered cyclic navigation and 181 animated previews."
 )

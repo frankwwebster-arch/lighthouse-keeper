@@ -8,14 +8,13 @@ work.
 
 ## Recommended model
 
-Use **GPT-5.6 Sol, High reasoning**. This run is no longer a narrow occlusion
+Use **GPT-5.6 Terra, High reasoning**. This run is no longer a narrow occlusion
 spot-check: it must classify every frame in the manifest, compare every true
 side-on pose with one exact beard reference, distinguish deterministic edits
 from pose-specific rerenders, and preserve reversible draft provenance across
-the reviewer and verifier. Sol High is the appropriate higher-capability model
-for that cross-library visual and implementation judgement. Do not use Max or
-Ultra unless the run encounters a genuinely inseparable reconstruction that
-High cannot resolve.
+the reviewer and verifier. Terra High is the agreed higher-capability model
+for that cross-library visual and implementation judgement. Do not use a
+lower-reasoning model for this audit.
 
 ## Ready-to-paste prompt
 
@@ -25,10 +24,13 @@ Continue the Lighthouse Keeper work in:
 /Users/frank/Documents/ChatGPT/Lighthouse Keeper
 
 Work on the current remote `main` and confirm the worktree is clean before
-starting. Verify that restored rollback commit
+starting. Verify that historical rollback commit
 `240c7613fa0d71b8288acc56b939655ee4e4d3a9` is an ancestor; do not reset back
 to it. The failed second-round art pass and the rejected v1 beard/hand draft
-are historical evidence only; neither is a valid source for new artwork.
+are historical evidence only; neither is a valid source for new artwork. Keep
+the ten later user-selected canonical promotions intact, including current
+`keeper_clear_snow`; their previous versions are reviewer evidence, not sources
+to restore.
 The separate `keeper-darts-user-selected-2026-10-10-v1` review draft is a new
 explicit selection by Frank and must be included in the visual audit, but it
 is not canonical and must not be overwritten or silently promoted. If it
@@ -63,7 +65,7 @@ canonical beard format. Pin the restored canonical files before inspecting any
 draft:
 
 - `art/raw/keeper-first-batch/keeper_clear_snow_f8.png` SHA-256
-  `5c302892825949656978a5e263b1b33ca48d26e8cbcdb7d575ee54a7c0b206b6`
+  `fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96`
 - `art/source/keeper-first-batch/keeper-clear-snow-round2-grid-generated-source.png`
   SHA-256
   `b5470890cef0448794414393947e50eb55971884d59cb389a8947bdbbf5dc455`
@@ -103,7 +105,7 @@ Draft-first amendment contract (mandatory): create a NEW versioned directory,
 reactivate, amend, copy artwork from, or overwrite the rejected
 `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` directory. Before
 changing any affected animation, copy its current canonical source and sidecar
-from restored commit `240c761` into the v2 working directory. Record the
+from current `main` into the v2 working directory. Record the
 canonical and draft SHA-256 values in a new v2 draft register. Apply fixes only
 to the v2 working copy and write draft strips, previews, contact sheets, scale
 evidence, and review evidence outside `art/raw/`, `public/sprites/`, the
