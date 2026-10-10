@@ -37,9 +37,9 @@ is not canonical and must not be overwritten or silently promoted. If it
 needs a beard/occlusion correction, copy that selected draft into the new
 audit-v2 working directory and record both sets of hashes.
 
-This is the FIRST audit in a two-audit sequence. Complete and commit this
-side-on beard/hand-occlusion audit before starting the later exhaustive
-sprite-frame isolation audit. Do not mix the two audits.
+This is the FIRST audit in a three-audit sequence. Complete and commit this
+side-on beard/hand-occlusion audit before the later exhaustive sprite-frame
+isolation audit, then the released-prop surface-datum audit. Do not mix them.
 
 Read these before changing anything:
 

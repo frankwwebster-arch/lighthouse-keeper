@@ -829,12 +829,15 @@ The comprehensive per-sheet correction list is in
 
 ## Review-comments workflow for a later feedback round
 
-1. Do not process another review export until the two prerequisite audits have
+1. Do not process another review export until the three prerequisite audits have
    completed in order: first `docs/prompts/KEEPER_SIDE_ON_BEARD_OCCLUSION_AUDIT.md`
    with GPT-5.6 Terra High, then
    `docs/prompts/KEEPER_SPRITE_FRAME_ISOLATION_AUDIT.md` with GPT-5.6 Terra
    High. The second audit must preserve all beard/hand results from the first.
-   Then use `docs/prompts/KEEPER_POST_AUDIT_REVIEW_DELTA.md` for the next
+   Third run `docs/prompts/KEEPER_RELEASE_SURFACE_DATUM_AUDIT.md` with GPT-5.6
+   Terra High: it audits every release hand-off and makes standard tabletop
+   support 19 logical pixels above floor, 8 pixels above the purple 11-pixel
+   seat guide. Then use `docs/prompts/KEEPER_POST_AUDIT_REVIEW_DELTA.md` for the next
    review round.
 2. Obtain Frank's newly exported `keeper-scale-choices.json` and read every saved
    per-animation note before triage or drawing. A full-re-draft flag authorises

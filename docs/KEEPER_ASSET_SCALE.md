@@ -240,6 +240,14 @@ right-facing `keeper_place_cake` or `keeper_meal_place_side` canvas and mirror
 to `(9,21)` for left. Each one-shot lowers and releases its food before the
 keeper returns to a fully upright empty-handed final frame.
 
+The standard tabletop is a permanent release datum: 19 logical pixels above
+the floor, exactly 8 pixels above the purple 11-pixel seat-contact guide. It
+is the base-contact height for cake, plate, record and any other table-height
+released prop—not the top of the prop. The third ordered audit prompt,
+`docs/prompts/KEEPER_RELEASE_SURFACE_DATUM_AUDIT.md`, checks every put/place
+action and requires a separately named datum for a truly different physical
+surface such as a low table, oven rack, bed or workbench.
+
 Any new prop-based animation must add its hand, seat or ground point to the
 JSON contract and its sprite sidecar. Verification rejects changes that break
 the established switch heights, canvas scale or feet anchors.
