@@ -26,4 +26,9 @@ verifying a sprite sheet.
 - Add or extend a deterministic verifier so every new or changed sheet fails
   validation when a shared frame edge contains alpha or source pixels can be
   assigned to more than one frame.
-
+- Work draft-first. Copy the canonical source and sidecar into a versioned
+  draft directory before any amendment; never overwrite `art/raw/`,
+  `public/sprites/`, the runtime manifest, authoritative review data, or
+  existing previews until Frank explicitly approves promotion. Keep the
+  original hash as the rollback point; rejected drafts must be discardable
+  without restoring production art.

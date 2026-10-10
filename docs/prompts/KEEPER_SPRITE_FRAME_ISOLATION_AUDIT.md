@@ -50,6 +50,16 @@ timing, interaction contacts, detached-prop ownership, neutral endpoints, and
 cupboard-occlusion contract. Saved review dimensions are authoritative; never
 replace them with automatic measurements.
 
+Draft-first amendment contract (mandatory): copy each affected canonical
+source and sidecar into a versioned `art/drafts/<audit-id>/` directory before
+editing. Never overwrite `art/raw/`, `public/sprites/`, the runtime manifest,
+immutable review exports, or existing previews. Record original and draft
+SHA-256 values, keep draft outputs outside the runtime manifest, and expose
+canonical and draft variants side-by-side in the existing review tool under
+the exact animation name. Stop for Frank's explicit approval. Rejection must
+require only discarding the draft; untouched canonical files are the rollback
+point.
+
 Inspect every repaired FINAL production strip frame by frame. In particular,
 verify that detached projectiles or tools remain entirely with their intended
 frame and that a later frame cannot inherit pixels from its neighbour. Do not
@@ -62,11 +72,13 @@ than one frame. Keep exact-name provenance from source through raw output,
 manifest, previews, and review artifacts. Generate a concise machine-readable
 audit register and human summary.
 
-After the work is stable, regenerate only affected assets and dependent review
-artifacts. Run the sprite verifier, keeper scale/identity audit, tests,
-typecheck, and production build once. Complete the documentation audit, commit
-and push directly to remote main, wait for Vercel success, and verify the
-canonical live URL returns HTTP 200.
+After the work is stable, generate only affected draft assets and dependent
+draft review artifacts. Keep canonical and draft variants visible side-by-side
+in the existing review tool. Run the verifier against draft outputs where
+possible, the keeper scale/identity audit, tests, typecheck, and production
+build once. Do not promote, overwrite canonical assets, commit a production
+change, push, deploy, or claim completion. Stop for Frank's explicit approval;
+promotion and final delivery happen later.
 
 Report only: sheets inspected; sheets changed; any artwork rerendered rather
 than deterministically repaired; verifier/test results; commit and deployment.

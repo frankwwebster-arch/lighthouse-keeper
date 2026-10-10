@@ -59,6 +59,20 @@ order. Frank's saved dimensions, frame count, timing, identity, beard
 silhouette, anatomy, interaction contacts, held-prop contacts, and cupboard-
 occlusion contract remain authoritative.
 
+Draft-first amendment contract (mandatory): before changing any affected
+animation, copy its current canonical source and sidecar into a versioned
+`art/drafts/keeper-side-on-beard-occlusion-<audit-id>/` directory. Record the
+original and draft SHA-256 values in a draft register. Apply fixes only to the
+working copy and write draft strips, previews, contact sheets, scale evidence,
+and review evidence outside `art/raw/`, `public/sprites/`, the runtime
+manifest, immutable review exports, and existing previews. Do not create a
+draft for a clean animation. The existing review tool must show the canonical
+and draft variants together for direct comparison, with exact animation-name
+labels and no replacement of the canonical preview. Stop with a
+current-versus-draft comparison and request Frank's explicit promotion
+decision; rejecting a draft must require only discarding its draft directory,
+leaving canonical files untouched as the automatic rollback point.
+
 Apply fixes in this order:
 
 1. Prefer deterministic recomposition from canonical head/beard, torso, arm,
@@ -88,12 +102,16 @@ fail future changes when a declared foreground hand is covered by beard pixels
 or when a corrected side-on sheet loses its transparent frame gutters. Keep
 responses read-only and specific to the exact animation name.
 
-After the delta is stable, regenerate only affected raw sheets, production
-strips, previews, contact sheets, scale evidence, and review artifacts. Run
-the keeper verifier and scale/identity audit once, then tests, typecheck,
-production build, and documentation audit. Commit and push directly to remote
-main, wait for Vercel success, and verify the canonical live URL returns HTTP
-200.
+After the delta is stable, generate only affected draft sheets, draft strips,
+previews, contact sheets, scale evidence, and draft review artifacts. Extend
+the existing review tool so canonical and draft variants are visible
+side-by-side for each exact animation name. Run the keeper verifier and
+scale/identity audit against draft outputs where possible, then tests,
+typecheck, and a production build without promoting drafts. Do not modify
+canonical production assets, do not deploy, and do not claim completion. Stop
+with draft paths, hashes, side-by-side review, and an explicit
+promotion/rejection decision requested from Frank. Promotion, commit, push,
+deployment, and final live verification belong to a later task after approval.
 
 Report only: side-on sheets audited; sheets changed; exact frames with
 occlusion corrections; any comments qualified rather than implemented;
