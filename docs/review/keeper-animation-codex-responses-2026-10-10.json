@@ -7,7 +7,7 @@
   "keeper_collect_eggs_back": "Reshaped the rear cream jumper stripe so both ends turn upward through the crouch cycle without changing the hands or ground contact.",
   "keeper_count_money": "Retained the accepted money-counting animation unchanged.",
   "keeper_crouch_work_back": "Reshaped the rear cream jumper stripe so both ends turn upward through all eight work poses while preserving the established crouch and hand placement.",
-  "keeper_darts": "Matched the darts Keeper's beard and moustache silhouette to the accepted shovelling-snow Keeper, preserving the 14 isolated darts poses, right-hand release sequence, released darts in frames 11–13, and clean neutral frame 14.",
+  "keeper_darts": "Matched the darts Keeper's beard and moustache silhouette to the accepted shovelling-snow Keeper, preserving the 14 isolated darts poses, right-hand release sequence, released darts in frames 11–13, and clean neutral frame 14. Frank's new finding at approximately x34.2%, y19%—the foreground hand must render over the beard—is queued for the separate all-side-on occlusion audit; no pixel change was made for that follow-up yet.",
   "keeper_drink_pint": "Retained the accepted pint-drinking animation unchanged.",
   "keeper_drive_speedboat": "Retained the accepted speedboat-driving animation unchanged.",
   "keeper_eat_seated": "Replaced the four inconsistent utensil poses, including frame 7, with clean neighbouring poses so one fork remains in the right hand and one knife in the left throughout.",

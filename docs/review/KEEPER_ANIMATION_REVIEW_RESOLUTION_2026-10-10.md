@@ -177,3 +177,12 @@ This table is generated from Frank's immutable review export and the current pro
 | `keeper_write_back` | 8 | cannot be correctly scaled | fix | Changed and ready for Frank's verdict | Fully re-rendered the rear writing loop with a consistent standard-model head, jumper and body, then baked your 104.5% width / 87% height choice. | Awaiting new draft review | Full audit; Frank visual verdict pending | current main delivery |
 | `keeper_write_side` | 8 |  | keep | Retain accepted animation | Frank's accepted visual scale and cadence are baked into production | Happy | Retained; full audit | current main delivery |
 | `keeper_yawn` | 8 |  | keep | Retain accepted animation | Frank's accepted visual scale and cadence are baked into production | Happy | Retained; full audit | current main delivery |
+
+## Follow-up queued after this export
+
+`keeper_darts`: Frank reports that at approximately x34.2%, y19%, the beard
+overlaps a foreground hand and the hand should render in front. The beard
+silhouette correction is retained, but this new occlusion-order issue is not
+implemented in this checkpoint; it is the seed defect for the separate
+all-side-on standing/sitting beard audit in
+`docs/prompts/KEEPER_SIDE_ON_BEARD_OCCLUSION_AUDIT.md`.
