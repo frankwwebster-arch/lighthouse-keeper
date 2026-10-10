@@ -1,31 +1,51 @@
 {
-  "w": 34,
+  "w": 36,
   "h": 41,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    18,
+    19,
     40
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    4.5,
-    21.31
+    4.96,
+    21.497
   ],
   "mirrorSafe": true,
   "facing": "rear-right",
   "interaction": "operate-outboard",
   "mirrorsFor": "rear-left",
   "reviewScale": [
-    100,
-    101
+    104,
+    99.99
   ],
   "reviewOffset": [
     -1.5,
     0.5
   ],
+  "reviewScaleRounds": {
+    "2026-10-09": [
+      100,
+      101
+    ],
+    "2026-10-10": [
+      104,
+      99
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-09": [
+      -1.5,
+      0.5
+    ],
+    "2026-10-10": [
+      0,
+      0
+    ]
+  },
   "assetRole": "clip",
   "startPose": "standing-rear-right",
   "endPose": "standing-rear-right"

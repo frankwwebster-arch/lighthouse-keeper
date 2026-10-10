@@ -69,8 +69,8 @@ Completed in the first implementation slice:
 
 Next priorities:
 
-1. Review delivery-order item 2 in `docs/floor-asset-catalogue/review.html`, then use `docs/keeper-scale-audit/review.html` for the 173 accepted keeper animations and their walk/action seams. Frank's completed review is imported: 88 Happy, 70 Awaiting new draft review, 3 Review later and 12 Unreviewed. Use the state filters and focused view; Previous/Next stays inside the filter and wraps at either end. Each card has a read-only Codex response field as well as canonical standing/sitting comparison references. Obsolete modular/reference art remains hidden.
-2. Use `data/keeper_asset_contract.json` and `data/keeper_object_dimensions.json` as the authority for all new object scale, keeper pivots and interaction heights. The 1,420-frame original-comparison record and fixed-scale transition viewer are in `docs/keeper-scale-audit/`; the 191-sheet audit must be rerun for every keeper delivery and must report zero failures.
+1. Review delivery-order item 2 in `docs/floor-asset-catalogue/review.html`, then use `docs/keeper-scale-audit/review.html` for the 173 accepted keeper animations and their walk/action seams. Frank's immutable second review is imported: 96 Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed. Use the state filters and focused view; Previous/Next stays inside the filter and wraps at either end. Each card has a read-only Codex response field as well as canonical standing/sitting comparison references. Obsolete modular/reference art remains hidden.
+2. Use `data/keeper_asset_contract.json` and `data/keeper_object_dimensions.json` as the authority for all new object scale, keeper pivots and interaction heights. The 1,475-frame original-comparison record and fixed-scale transition viewer are in `docs/keeper-scale-audit/`; the 191-sheet audit must be rerun for every keeper delivery and must report zero failures.
    Multi-frame keeper clips use 4fps by default. Accepted per-clip overrides
    from 1fps to 10.5fps live in `KEEPER_FPS_OVERRIDES`, each source sidecar and
    the runtime manifest.

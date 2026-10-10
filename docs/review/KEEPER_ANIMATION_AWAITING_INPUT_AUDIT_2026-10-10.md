@@ -1,5 +1,22 @@
 # Keeper animation awaiting-input corrective audit — 2026-10-10
 
+## Second-round addendum
+
+Frank's second export is now the current review authority. It is preserved
+byte-for-byte as `frank-keeper-animation-review-2026-10-10.json`, SHA-256
+`e72a6ddf3e7c30e3093195b5044ebd2b9d9af62ba94c9e493158af49b1e7ace7`.
+The exact-name comparison found 31 semantic deltas: four status-only
+acceptances were not regenerated, 27 animations were regenerated, and the
+dependent parachute landing strip was rebased only to retain its exact hand-off.
+Current state is 96 Happy, 68 Awaiting new draft review, 3 Review later and 6
+Unreviewed. Every awaiting card has a specific response.
+
+The full list, status reconciliation and documentation audit are in
+`KEEPER_ANIMATION_SECOND_ROUND_DELTA_2026-10-10.md`. The remainder of this
+document records the first-round 70-card corrective pass and is retained as
+historical evidence rather than rewritten as if it described the second
+export.
+
 ## Scope and authority
 
 - All 70 animations in `Awaiting new draft review` were checked against

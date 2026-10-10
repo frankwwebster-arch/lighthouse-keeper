@@ -4,7 +4,7 @@ This is the permanent, reproducible audit of every keeper sheet against the unto
 
 - 191 keeper sheets inspected.
 - 173 animation sheets accepted for review; 18 obsolete modular/reference sheets excluded.
-- 1420 individual frames measured.
+- 1475 individual frames measured.
 - 81 sheets explicitly rebuilt or anatomy-normalised in this pass.
 - 0 unresolved original-comparison failures (the audit command refuses to succeed unless this is zero).
 - Canonical upright anatomy: skull top 32.5 logical pixels above the walking floor, shoulders 24.5, hips 14.5, seat contact 11.
@@ -20,12 +20,12 @@ Open [the sizing and transition review](review.html) to inspect all 173 accepted
 The pinned reference can show standing side/front/back or sitting side/front/back identity ghosts. These fixed ghosts are anatomy comparisons, not a replacement for each reviewed clip's saved production size. In upright standard-cap poses the gold badge crossing the blue skull-top guide is a calibrated visual proxy; tilted, bent, seated, crouched, horizontal, bare-headed and alternate-headwear poses still require anatomical landmarks.
 Each card retains precise size, position, rotation, opacity, ghost, frame-step and 1–20fps timing controls. The imported production pass starts those viewer transforms at neutral because accepted geometry and cadence are already baked into the delivered sprite and manifest. Comparison settings remain visual aids until saved/exported as a later review proposal.
 Every card has Frank's notes and decision controls plus a read-only Codex response field. Every Awaiting new draft review card has a specific response naming the delivered change; responses also state any genuine qualification rather than implying that an unmade change was completed. Orange cards have unsaved changes; saved happy, new-draft and later-review cards use distinct status colours.
-`keeper-scale-choices.json` version 9 exports the complete review register, current review status and Codex response for every animation as well as any new per-card proposals. Export remains blocked while a card has unsaved edits. The page can also prepend matching walks, insert known bridges or freeze a seam with onion skin; every card prints its runtime PNG and authored source-strip filename.
+`keeper-scale-choices.json` version 9 exports the complete review register, current review status and Codex response for every animation as well as any new per-card proposals. Export remains blocked while a card has unsaved edits. Import validates exact `keeper_*` names, rejects duplicates/unknown names and safely reconciles stale status-list entries from the matching named review. The page can also prepend matching walks, insert known bridges or freeze a seam with onion skin; every card prints its runtime PNG and authored source-strip filename.
 The character-width and character-height sliders each have adjacent −0.5% and +0.5% buttons for precise adjustments. They update the same per-animation values, obey the same 50%–150% limits and become part of the normal Save/export workflow.
 Every blue animation-transform slider also has −0.5/+0.5 buttons: degrees for rotation, logical pixels for horizontal/vertical position and percentage points for opacity. They update the same limited, saved and exported values as their sliders.
 Each card's frame-control block can play only that reviewed action from frame 1. `Play once` stops on the final frame; `Loop` repeats until paused. This playback choice is inspection-only and does not dirty the review.
 At browser widths of 1500px or more, focused mode becomes a widescreen workstation with the pinned canon on the left, a viewport-height animation stage in the centre and a compact two-column control console on the right. Control groups are colour-coded: amber for character size, purple for the ghost, blue for animation transforms, teal for frame navigation and green/red for review decisions and notes.
-Review progress is browser-local: changing display zoom or review-state filter saves immediately, and every `Save this review` records that animation as the latest completed card. Reloading restores the focused view and filter. Saving or advancing from the final result wraps to the first result in that same filter.
+Review progress is browser-local: changing display zoom or review-state filter saves immediately, and every `Save this review` records that animation as the latest completed card. Reloading restores the focused view and filter. Offline and online browser storage do not synchronise automatically; use Export on one copy and Import review JSON on the other. Saving or advancing from the final result wraps to the first result in that same filter.
 
 ## Corrected sheets
 
@@ -35,20 +35,20 @@ Review progress is browser-local: changing display zoom or review-state filter s
 - `keeper_artist_smock_turn_front` — new matching-outfit side-to-front transition for activity routing.
 - `keeper_artist_smock_walk` — new artist-smock locomotion family; every pose is independently height-matched to the corresponding canonical walk frame after frame 4 was identified as undersized in the generated source.
 - `keeper_bath_wash` — redrawn and normalised from the standing bare-headed and seated canonical landmarks.
-- `keeper_carry_shopping` — hand anatomy redrawn so each frame has exactly two hands attached to the two bag-carrying arms.
+- `keeper_carry_shopping` — frames 1 and 7 replaced with clean adjacent poses so all eight frames carry exactly two bags; cadence reduced to 5fps.
 - `keeper_collect_eggs_back` — reuses canonical corrected low rear work anatomy.
 - `keeper_crouch_work_back` — redrawn; hands work in front and body width restored.
 - `keeper_door_open_side_pyjamas` — clean six-frame side-door redraw in the canonical light-blue pyjama family; handle and floor interaction geometry are unchanged.
 - `keeper_drive_speedboat` — seated anatomy normalised to the sit-side head and torso unit.
 - `keeper_eat_seated` — seated anatomy normalised to the sit-side head and torso unit.
-- `keeper_fish_seated` — extended to 16 frames on a 96 by 88 interaction canvas with the float and fish below the dock/foot anchor.
-- `keeper_fish_standing` — extended to 16 frames on a 96 by 88 interaction canvas with the float and fish below the foot anchor.
+- `keeper_fish_seated` — extended to 41 frames with a ten-second wait, stable seat contact, longer rod, gradual pull/reel, held catch, ground placement and return to fishing.
+- `keeper_fish_standing` — extended to 50 frames with a ten-second wait, stable actor contact, gradual pull/reel, held catch, ground placement and return to fishing.
 - `keeper_guitar_pickup_acoustic` — new side-to-rear rack pickup and return-to-play transition; prop handoff occurs on frame 6.
 - `keeper_guitar_pickup_flying_v_1967` — new tier-3 rack pickup and return-to-play transition; prop handoff occurs on frame 6.
 - `keeper_guitar_pickup_gretsch` — new tier-2 rack pickup and return-to-play transition; prop handoff occurs on frame 6.
-- `keeper_halloween_walk_back` — identity rebuilt against the approved original, then resized to Frank's saved 102% width / 89.5% height.
-- `keeper_halloween_walk_front` — identity rebuilt against the approved original, then resized to Frank's saved 95% width / 91.5% height.
-- `keeper_halloween_walk_side` — identity rebuilt against the approved original, then resized to Frank's saved 101% width / 88% height.
+- `keeper_halloween_walk_back` — identity rebuilt against the approved original, then resized to Frank's saved 100% width / 100% height.
+- `keeper_halloween_walk_front` — identity rebuilt against the approved original, then resized to Frank's saved 100% width / 100% height.
+- `keeper_halloween_walk_side` — identity rebuilt against the approved original, then resized to Frank's saved 100% width / 100% height.
 - `keeper_hoover_basic` — review-sized tier-2 cleaning loop with its ordinary upright hoover included; runtime swaps tools only while fully hidden by the cupboard door.
 - `keeper_hoover_super` — review-sized tier-3 cleaning loop with its original eccentric super hoover included; runtime swaps tools only while fully hidden by the cupboard door.
 - `keeper_hot_drink_drink` — neighbouring-frame flecks removed while retaining canonical actor, mug and steam.
@@ -57,15 +57,15 @@ Review progress is browser-local: changing display zoom or review-state filter s
 - `keeper_knight_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_knight_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_knight_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
-- `keeper_lawn_mower_push` — new baseline-anatomy side walk pushing an included manual reel mower; runtime translates the complete unit from behind a foreground shed door.
-- `keeper_machete_side` — smooth machete restored on an 80 px logical long-tool canvas; Frank's saved 127.5% width / 129% height is baked.
-- `keeper_meal_place_side` — beard corrected and released plate restored; Frank's saved 113.5% width / 94% height is baked.
+- `keeper_lawn_mower_push` — new baseline-anatomy side walk pushing an included manual reel mower; neighbouring-pose slivers removed; runtime translates the complete unit from behind a foreground shed door.
+- `keeper_machete_side` — smooth machete restored from eight isolated grid cells on a 96 px logical long-tool canvas; Frank's saved 127.5% width / 129% height is baked.
+- `keeper_meal_place_side` — beard corrected and released plate restored; Frank's original saved 113.5% width / 94% height is now baked.
 - `keeper_mechanic_walk_back` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_mechanic_walk_front` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_mechanic_walk_side` — costume-specific headwear envelope excluded from skull-to-sole scale.
 - `keeper_nap_seated` — baseline-anatomy side-seated nap loop with closed eyes, clearly reclined head and open mouth; beard silhouette was corrected from a smooth oval to the standard stepped, ragged side-view margin; furniture remains separate.
-- `keeper_parachute_drift` — new slow left/right open-canopy loop that can repeat for arbitrary fall height.
-- `keeper_parachute_landing` — new one-shot open-canopy touchdown, compression and canopy-collapse sequence.
+- `keeper_parachute_drift` — high-resolution eight-pose open-canopy loop, matched to both route hand-offs and baked at the saved 84% width / 122% height.
+- `keeper_parachute_landing` — one-shot open-canopy touchdown, compression and canopy-collapse sequence with its entry canvas rebased to the resized drift hand-off.
 - `keeper_party_dance` — canonical dance anatomy inherited exactly; party hat is an overlay.
 - `keeper_party_eat_cake` — canonical seated-eat anatomy inherited exactly; party hat and cake are overlays.
 - `keeper_party_hat_put_on_back` — canonical rear work, raised-arm and leg components recombined; hat overlay only.
@@ -103,9 +103,9 @@ Review progress is browser-local: changing display zoom or review-state filter s
 - `keeper_spiral_stairs_down` — frame 4 redrawn to remove an erroneous third hand while preserving the descent cycle.
 - `keeper_sweep_broom` — new baseline-anatomy tier-1 cleaning loop with its traditional broom included; runtime swaps tools only while fully hidden by the cupboard door.
 - `keeper_swim_costume_horizontal` — re-rendered on an expanded horizontal canvas; Frank's saved 95.5% width / 100% height is baked.
-- `keeper_tarzan_walk_back` — bare-headed identity rebuilt against the approved original, then resized to Frank's saved 102.5% width / 95% height.
-- `keeper_tarzan_walk_front` — bare-headed identity rebuilt against the approved original, then resized to Frank's saved 98% width / 93% height.
-- `keeper_tarzan_walk_side` — bare-headed identity rebuilt against the approved original, then resized to Frank's saved 101% width / 91.5% height.
+- `keeper_tarzan_walk_back` — bare-headed identity rebuilt against the approved original, then resized to Frank's saved 100% width / 100% height.
+- `keeper_tarzan_walk_front` — bare-headed identity rebuilt against the approved original, then resized to Frank's saved 100% width / 100% height.
+- `keeper_tarzan_walk_side` — bare-headed identity rebuilt against the approved original, then resized to Frank's saved 100% width / 100% height.
 - `keeper_walk_into_lift` — intentional depth transition: rear walk scales from 100% to 75%, rises 6 logical pixels, then turns to a full-front neutral pose.
 - `keeper_watch_movie` — seated anatomy normalised to the sit-side head and torso unit.
 - `keeper_watch_tv` — seated anatomy normalised to the sit-side head and torso unit.

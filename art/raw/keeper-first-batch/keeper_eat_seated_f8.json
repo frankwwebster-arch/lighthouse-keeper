@@ -27,6 +27,26 @@
     0,
     0.5
   ],
+  "reviewScaleRounds": {
+    "2026-10-09": [
+      102,
+      101
+    ],
+    "2026-10-10": [
+      100,
+      100
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-09": [
+      0,
+      0.5
+    ],
+    "2026-10-10": [
+      0,
+      0
+    ]
+  },
   "assetRole": "clip",
   "startPose": "sitting-side-right",
   "endPose": "sitting-side-right"

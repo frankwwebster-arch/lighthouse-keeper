@@ -22,10 +22,13 @@ RAW = ROOT / "art/raw/keeper-first-batch"
 OUT = ROOT / "docs/keeper-scale-audit"
 CONTRACT = json.loads((ROOT / "data/keeper_asset_contract.json").read_text())
 DENSITY = CONTRACT["canvas"]["standard"]["density"]
-AUDIT_REVISION = "2026-10-10-user-visual-size-v3"
+AUDIT_REVISION = "2026-10-10-second-review-delta-v4"
 ORIGINAL_KEEPER = "keeper_walk"
-REVIEW_IMPORT_PATH = ROOT / "docs/review/frank-keeper-animation-review-2026-10-09.json"
-CODEX_RESPONSES_PATH = ROOT / "docs/review/keeper-animation-codex-responses-2026-10-09.json"
+REVIEW_IMPORT_PATH = ROOT / "docs/review/frank-keeper-animation-review-2026-10-10.json"
+CODEX_RESPONSE_PATHS = (
+    ROOT / "docs/review/keeper-animation-codex-responses-2026-10-09.json",
+    ROOT / "docs/review/keeper-animation-codex-responses-2026-10-10.json",
+)
 REVIEW_SETTINGS = {
     review["name"]: review
     for review in json.loads(REVIEW_IMPORT_PATH.read_text())["reviews"]
@@ -85,7 +88,7 @@ TECHNICAL = {
 
 CORRECTED = {
     "keeper_nap_seated": "baseline-anatomy side-seated nap loop with closed eyes, clearly reclined head and open mouth; beard silhouette was corrected from a smooth oval to the standard stepped, ragged side-view margin; furniture remains separate",
-    "keeper_lawn_mower_push": "new baseline-anatomy side walk pushing an included manual reel mower; runtime translates the complete unit from behind a foreground shed door",
+    "keeper_lawn_mower_push": "new baseline-anatomy side walk pushing an included manual reel mower; neighbouring-pose slivers removed; runtime translates the complete unit from behind a foreground shed door",
     "keeper_sweep_broom": "new baseline-anatomy tier-1 cleaning loop with its traditional broom included; runtime swaps tools only while fully hidden by the cupboard door",
     "keeper_hoover_basic": "review-sized tier-2 cleaning loop with its ordinary upright hoover included; runtime swaps tools only while fully hidden by the cupboard door",
     "keeper_hoover_super": "review-sized tier-3 cleaning loop with its original eccentric super hoover included; runtime swaps tools only while fully hidden by the cupboard door",
@@ -110,17 +113,17 @@ CORRECTED = {
     "keeper_scuba_swim_down": "redrawn from the approved front swim anatomy with coherent scuba equipment",
     "keeper_scuba_walk_side": "new matching-outfit jetty locomotion for the scuba route",
     "keeper_scuba_jetty_dive": "new one-shot jetty dive whose endpoint is the exact first horizontal scuba-swim frame",
-    "keeper_parachute_drift": "new slow left/right open-canopy loop that can repeat for arbitrary fall height",
-    "keeper_parachute_landing": "new one-shot open-canopy touchdown, compression and canopy-collapse sequence",
+    "keeper_parachute_drift": "high-resolution eight-pose open-canopy loop, matched to both route hand-offs and baked at the saved 84% width / 122% height",
+    "keeper_parachute_landing": "one-shot open-canopy touchdown, compression and canopy-collapse sequence with its entry canvas rebased to the resized drift hand-off",
     "keeper_swim_costume_horizontal": "re-rendered on an expanded horizontal canvas; Frank's saved 95.5% width / 100% height is baked",
     "keeper_spiral_stairs_down": "frame 4 redrawn to remove an erroneous third hand while preserving the descent cycle",
     "keeper_ride_bike_front": "enlarged from its undersized head unit on a 48 px interaction canvas",
-    "keeper_carry_shopping": "hand anatomy redrawn so each frame has exactly two hands attached to the two bag-carrying arms",
+    "keeper_carry_shopping": "frames 1 and 7 replaced with clean adjacent poses so all eight frames carry exactly two bags; cadence reduced to 5fps",
     "keeper_put_record": "expanded to a 64 px side-action canvas so the record remains complete through release",
     "keeper_water_plants_side": "expanded to a 48 px side-action canvas so the watering can and spout remain complete",
     "keeper_pressups_side": "redrawn cleanly, then resized to Frank's saved 79% width / 65% height",
-    "keeper_fish_standing": "extended to 16 frames on a 96 by 88 interaction canvas with the float and fish below the foot anchor",
-    "keeper_fish_seated": "extended to 16 frames on a 96 by 88 interaction canvas with the float and fish below the dock/foot anchor",
+    "keeper_fish_standing": "extended to 50 frames with a ten-second wait, stable actor contact, gradual pull/reel, held catch, ground placement and return to fishing",
+    "keeper_fish_seated": "extended to 41 frames with a ten-second wait, stable seat contact, longer rod, gradual pull/reel, held catch, ground placement and return to fishing",
     "keeper_sit_front": "redrawn and width-normalised against canonical front body",
     "keeper_party_turn_back": "canonical turn identity inherited exactly; party hat is headwear-only",
     "keeper_party_idle": "canonical front identity inherited exactly; party hat is headwear-only",
@@ -142,8 +145,8 @@ CORRECTED = {
     "keeper_bath_wash": "redrawn and normalised from the standing bare-headed and seated canonical landmarks",
     "keeper_hot_tub": "redrawn and normalised by the visible head/shoulder unit rather than the water silhouette",
     "keeper_place_cake": "redrawn for the standard 19 px table datum and a fully straight final pose",
-    "keeper_meal_place_side": "beard corrected and released plate restored; Frank's saved 113.5% width / 94% height is baked",
-    "keeper_machete_side": "smooth machete restored on an 80 px logical long-tool canvas; Frank's saved 127.5% width / 129% height is baked",
+    "keeper_meal_place_side": "beard corrected and released plate restored; Frank's original saved 113.5% width / 94% height is now baked",
+    "keeper_machete_side": "smooth machete restored from eight isolated grid cells on a 96 px logical long-tool canvas; Frank's saved 127.5% width / 129% height is baked",
     "keeper_souwester_walk_side": "costume headwear excluded; skull, shoulder and sole landmarks normalised",
     "keeper_souwester_walk_front": "costume headwear excluded; skull, shoulder and sole landmarks normalised",
     "keeper_souwester_walk_back": "costume headwear excluded; skull, shoulder and sole landmarks normalised",
@@ -331,6 +334,7 @@ def load_assets() -> list[dict]:
             "outfit": sidecar.get("outfit", "standard"),
             "interaction": sidecar.get("interaction"),
             "seatPoint": sidecar.get("seatPoint"),
+            "reviewScale": sidecar.get("reviewScale", [100, 100]),
             "postureClass": posture,
             "measurementMethod": method,
             "status": status,
@@ -372,10 +376,8 @@ def attach_original_comparisons(assets: list[dict]) -> dict:
             continue
 
         saved_review = REVIEW_SETTINGS.get(asset["name"])
-        user_sized = bool(saved_review) and (
-            saved_review.get("widthPercent", 100) != 100
-            or saved_review.get("heightPercent", 100) != 100
-        )
+        review_scale = asset.get("reviewScale", [100, 100])
+        user_sized = review_scale != [100, 100]
         direct = asset["name"] in DIRECT_SILHOUETTE_COMPARABLE
         direct_core = asset["name"] in DIRECT_CORE_COMPARABLE
         ratio = round(max(asset["alphaHeightRange"]) / original_height, 3) if direct else None
@@ -410,14 +412,14 @@ def attach_original_comparisons(assets: list[dict]) -> dict:
             "visualReviewDate": "2026-10-10",
             "visualReviewBasis": (
                 f"Frank's saved visual sizing is authoritative: "
-                f"{saved_review.get('widthPercent', 100)}% width / {saved_review.get('heightPercent', 100)}% height"
+                f"{review_scale[0]}% cumulative width / {review_scale[1]}% cumulative height"
                 if user_sized else
                 "same-size original reference printed beside representative frames; "
                 "skull/head unit, shoulder-to-hip core width and supporting contacts reviewed"
             ),
             "warnings": warnings,
             "reviewScale": (
-                [saved_review.get("widthPercent", 100), saved_review.get("heightPercent", 100)]
+                review_scale
                 if user_sized else None
             ),
         }
@@ -510,7 +512,9 @@ def publish(assets: list[dict]) -> None:
     reviewed_by_name = {asset["name"]: asset for asset in serialisable if asset["status"] != "excluded-technical"}
     review_import = json.loads(REVIEW_IMPORT_PATH.read_text())
     imported_reviews = {review["name"]: review for review in review_import["reviews"]}
-    codex_responses = json.loads(CODEX_RESPONSES_PATH.read_text())
+    codex_responses = {}
+    for response_path in CODEX_RESPONSE_PATHS:
+        codex_responses.update(json.loads(response_path.read_text()))
     walk_by_outfit = {
         "standard": "keeper_walk",
         "party-hat": "keeper_party_walk",
@@ -665,7 +669,7 @@ def publish(assets: list[dict]) -> None:
             "sittingFront": review_clip(reviewed_by_name["keeper_sit_front"]),
             "sittingBack": review_clip(reviewed_by_name["keeper_sit_back"]),
         },
-        "reviewRevision": "2026-10-10-corrective-production-pass-v2",
+        "reviewRevision": "2026-10-10-second-review-delta-v3",
         "initialReviews": initial_reviews,
         "assets": review_assets,
     }
@@ -675,7 +679,7 @@ def publish(assets: list[dict]) -> None:
         return str(value or "").replace("|", "\\|").replace("\n", "<br>")
 
     resolution_lines = [
-        "# Keeper animation review resolution — 2026-10-09",
+        "# Keeper animation review resolution — 2026-10-10",
         "",
         "This table is generated from Frank's immutable review export and the current production asset set. `Awaiting new draft review` means the requested production change is present and now needs Frank's verdict; it does not mean the redraw is still outstanding.",
         "",
@@ -720,7 +724,7 @@ def publish(assets: list[dict]) -> None:
             f"| `{asset['name']}` | {asset['frames']} | {table_text(comment)} | {classification} | "
             f"{table_text(decision)} | {table_text(change)} | {status_label} | {verification} | current main delivery |"
         )
-    resolution_path = ROOT / "docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-09.md"
+    resolution_path = ROOT / "docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md"
     resolution_path.write_text("\n".join(resolution_lines) + "\n")
 
     with (OUT / "keeper-scale-summary.csv").open("w", newline="") as handle:
@@ -753,12 +757,12 @@ def publish(assets: list[dict]) -> None:
         "The pinned reference can show standing side/front/back or sitting side/front/back identity ghosts. These fixed ghosts are anatomy comparisons, not a replacement for each reviewed clip's saved production size. In upright standard-cap poses the gold badge crossing the blue skull-top guide is a calibrated visual proxy; tilted, bent, seated, crouched, horizontal, bare-headed and alternate-headwear poses still require anatomical landmarks.",
         "Each card retains precise size, position, rotation, opacity, ghost, frame-step and 1–20fps timing controls. The imported production pass starts those viewer transforms at neutral because accepted geometry and cadence are already baked into the delivered sprite and manifest. Comparison settings remain visual aids until saved/exported as a later review proposal.",
         "Every card has Frank's notes and decision controls plus a read-only Codex response field. Every Awaiting new draft review card has a specific response naming the delivered change; responses also state any genuine qualification rather than implying that an unmade change was completed. Orange cards have unsaved changes; saved happy, new-draft and later-review cards use distinct status colours.",
-        "`keeper-scale-choices.json` version 9 exports the complete review register, current review status and Codex response for every animation as well as any new per-card proposals. Export remains blocked while a card has unsaved edits. The page can also prepend matching walks, insert known bridges or freeze a seam with onion skin; every card prints its runtime PNG and authored source-strip filename.",
+        "`keeper-scale-choices.json` version 9 exports the complete review register, current review status and Codex response for every animation as well as any new per-card proposals. Export remains blocked while a card has unsaved edits. Import validates exact `keeper_*` names, rejects duplicates/unknown names and safely reconciles stale status-list entries from the matching named review. The page can also prepend matching walks, insert known bridges or freeze a seam with onion skin; every card prints its runtime PNG and authored source-strip filename.",
         "The character-width and character-height sliders each have adjacent −0.5% and +0.5% buttons for precise adjustments. They update the same per-animation values, obey the same 50%–150% limits and become part of the normal Save/export workflow.",
         "Every blue animation-transform slider also has −0.5/+0.5 buttons: degrees for rotation, logical pixels for horizontal/vertical position and percentage points for opacity. They update the same limited, saved and exported values as their sliders.",
         "Each card's frame-control block can play only that reviewed action from frame 1. `Play once` stops on the final frame; `Loop` repeats until paused. This playback choice is inspection-only and does not dirty the review.",
         "At browser widths of 1500px or more, focused mode becomes a widescreen workstation with the pinned canon on the left, a viewport-height animation stage in the centre and a compact two-column control console on the right. Control groups are colour-coded: amber for character size, purple for the ghost, blue for animation transforms, teal for frame navigation and green/red for review decisions and notes.",
-        "Review progress is browser-local: changing display zoom or review-state filter saves immediately, and every `Save this review` records that animation as the latest completed card. Reloading restores the focused view and filter. Saving or advancing from the final result wraps to the first result in that same filter.",
+        "Review progress is browser-local: changing display zoom or review-state filter saves immediately, and every `Save this review` records that animation as the latest completed card. Reloading restores the focused view and filter. Offline and online browser storage do not synchronise automatically; use Export on one copy and Import review JSON on the other. Saving or advancing from the final result wraps to the first result in that same filter.",
         "",
         "## Corrected sheets",
         "",

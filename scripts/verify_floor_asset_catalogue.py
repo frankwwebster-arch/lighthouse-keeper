@@ -29,6 +29,30 @@ def embedded(frame, width, height):
     return canvas
 
 
+def alpha_component_sizes(frame, min_pixels=20):
+    """Return material hard-alpha component sizes for final-frame assertions."""
+    width, height = frame.size
+    pixels = bytearray(frame.getchannel("A").tobytes())
+    sizes = []
+    for start, value in enumerate(pixels):
+        if not value:
+            continue
+        pixels[start] = 0
+        pending = [start]
+        size = 0
+        while pending:
+            index = pending.pop()
+            size += 1
+            y, x = divmod(index, width)
+            for neighbour in (index - 1, index + 1, index - width, index + width):
+                if 0 <= neighbour < width * height and pixels[neighbour] and (neighbour // width == y or neighbour % width == x):
+                    pixels[neighbour] = 0
+                    pending.append(neighbour)
+        if size >= min_pixels:
+            sizes.append(size)
+    return sorted(sizes, reverse=True)
+
+
 # Floor catalogue and non-keeper export integrity.
 catalogue = json.loads((ROOT / "docs/floor-asset-catalogue/catalogue.json").read_text())
 spaces = catalogue["spaces"]
@@ -85,8 +109,9 @@ for raw_path in keeper_pngs:
     ), name
     # Frank's saved production scaling may expand the transparent staging
     # canvas beyond the old automatic-audit ceiling (seated fishing is the
-    # largest current example at 135 × 115 logical pixels).
-    assert 16 <= sidecar["w"] <= 160 and 16 <= sidecar["h"] <= 128
+    # largest current example is the deliberately long, review-sized seated
+    # fishing canvas at 179 × 146 logical pixels.
+    assert 16 <= sidecar["w"] <= 192 and 16 <= sidecar["h"] <= 160
     assert sidecar["density"] == 4
     assert 0 <= sidecar["anchor"][0] <= sidecar["w"]
     assert 0 <= sidecar["anchor"][1] <= sidecar["h"]
@@ -110,6 +135,35 @@ review_source_names = {
 }
 assert len(review_source_names) == 191
 
+# Horizontal strips must leave a transparent gutter on both sides of every
+# registered frame. This catches equal-width source slicing, a long prop, or a
+# neighbouring-pose fragment before it can be mistaken for part of the next
+# runtime frame. Top and bottom contact remain legal for hats and floor props.
+for name in review_source_names:
+    clip = manifest[name]
+    for frame_index in range(clip["frames"]):
+        alpha_bbox = frame_image(name, frame_index).getchannel("A").getbbox()
+        assert alpha_bbox is not None, (name, frame_index + 1, "empty frame")
+        assert alpha_bbox[0] > 0, (name, frame_index + 1, "left-edge frame bleed")
+        assert alpha_bbox[2] < clip["w"] * clip["density"], (
+            name, frame_index + 1, "right-edge frame bleed"
+        )
+
+# Long-prop sources that could not be safely separated in one row are pinned
+# to immutable isolated-grid revisions. The final darts keep released darts as
+# distinct components in frames 12–13 and end on one clean neutral component.
+isolated_grid_sources = {
+    "keeper-clear-snow-round2-grid-generated-source.png": "b5470890cef0448794414393947e50eb55971884d59cb389a8947bdbbf5dc455",
+    "keeper-darts-round2-grid-generated-source.png": "7314006c114f2da64004a0fafa6c3d00f4da140250666fc45155724e21e0ece9",
+    "keeper-machete-side-round2-grid-generated-source.png": "6424439fb6be1809242bb587042763bfcd5d245472bae2d34c54e4acb1a1da64",
+}
+for filename, expected_hash in isolated_grid_sources.items():
+    source_path = ROOT / "art/source/keeper-first-batch" / filename
+    assert hashlib.sha256(source_path.read_bytes()).hexdigest() == expected_hash, filename
+assert len(alpha_component_sizes(frame_image("keeper_darts", 11))) == 2
+assert len(alpha_component_sizes(frame_image("keeper_darts", 12))) == 2
+assert len(alpha_component_sizes(frame_image("keeper_darts", 13))) == 1
+
 # Review-accepted timing changes are production data; every other animated clip
 # keeps its authored 4 fps baseline.
 accepted_fps = {
@@ -120,7 +174,7 @@ accepted_fps = {
     "keeper_cake_turn_right": 7.5,
     "keeper_carry_cake": 8,
     "keeper_carry_meal": 8,
-    "keeper_carry_shopping": 8,
+    "keeper_carry_shopping": 5,
     "keeper_check_instrument_back": 6,
     "keeper_clear_snow": 3.5,
     "keeper_count_money": 6,
@@ -129,11 +183,12 @@ accepted_fps = {
     "keeper_door_open_back": 5.5,
     "keeper_door_open_side": 5,
     "keeper_feed_animals": 5.5,
-    "keeper_fish_feed_up": 5,
     "keeper_fish_seated": 3,
+    "keeper_guitar_pickup_acoustic": 8,
     "keeper_get_into_bed": 3,
     "keeper_hammer_back": 5,
     "keeper_hammer_side": 5,
+    "keeper_lift_button_front": 8,
     "keeper_pyjamas_snore": 1,
     "keeper_row_boat": 3,
     "keeper_shower_wash": 2,
@@ -150,25 +205,41 @@ for name in review_source_names:
 # Frank's saved visual sizing is production art direction. Every imported
 # review must be recorded byte-for-byte in the authored sidecar so a future
 # scale audit cannot silently replace it with an automatic measurement.
-review_export = json.loads(
-    (ROOT / "docs/review/frank-keeper-animation-review-2026-10-09.json").read_text()
-)
-for review in review_export["reviews"]:
-    sidecar = keeper_sidecars[review["name"]]
-    assert sidecar["reviewScale"] == [
-        review.get("widthPercent", 100),
-        review.get("heightPercent", 100),
-    ], review["name"]
-    assert sidecar["fps"] == review.get("animationFps", sidecar["fps"]), review["name"]
+review_exports = {
+    "2026-10-09": json.loads((ROOT / "docs/review/frank-keeper-animation-review-2026-10-09.json").read_text()),
+    "2026-10-10": json.loads((ROOT / "docs/review/frank-keeper-animation-review-2026-10-10.json").read_text()),
+}
+regenerated_second_round = {
+    "keeper_bath_enter", "keeper_bath_exit", "keeper_carry_shopping", "keeper_clear_snow",
+    "keeper_collect_eggs_back", "keeper_crouch_work_back", "keeper_darts", "keeper_eat_seated",
+    "keeper_fish_feed_up", "keeper_fish_seated", "keeper_fish_standing",
+    "keeper_guitar_pickup_acoustic", "keeper_guitar_pickup_flying_v_1967", "keeper_guitar_pickup_gretsch",
+    "keeper_hot_drink_pickup", "keeper_hot_drink_pour", "keeper_lawn_mower_push",
+    "keeper_lean_table_back", "keeper_lift_button_front", "keeper_lift_weights_back",
+    "keeper_machete_side", "keeper_meal_from_oven_back", "keeper_meal_place_side",
+    "keeper_mechanic_walk_front", "keeper_nap_seated", "keeper_operate_outboard",
+    "keeper_parachute_drift",
+}
+for revision, exported in review_exports.items():
+    imported = {review["name"]: review for review in exported["reviews"]}
+    names_to_check = regenerated_second_round if revision == "2026-10-10" else regenerated_second_round & imported.keys()
+    for name in names_to_check:
+        review = imported[name]
+        assert keeper_sidecars[name]["reviewScaleRounds"][revision] == [
+            review.get("widthPercent", 100), review.get("heightPercent", 100)
+        ], (revision, name)
 
 # Rebuilt and newly introduced production sequences.
 required_frames = {
     "keeper_anti_gravity": 12,
     "keeper_darts": 14,
     "keeper_fish_feed_up": 14,
-    "keeper_fish_seated": 16,
-    "keeper_fish_standing": 16,
-    "keeper_hot_drink_pour": 10,
+    "keeper_fish_seated": 41,
+    "keeper_fish_standing": 50,
+    "keeper_hot_drink_pickup": 7,
+    "keeper_hot_drink_pour": 9,
+    "keeper_lift_button_front": 7,
+    "keeper_nap_seated": 7,
     "keeper_parachute_jump": 9,
     "keeper_parachute_drift": 8,
     "keeper_parachute_landing": 10,
@@ -215,7 +286,8 @@ swim_first = frame_image("keeper_scuba_swim_horizontal", 0)
 assert ImageChops.difference(dive_last, embedded(swim_first, dive_last.width, dive_last.height)).getbbox() is None
 
 # Parachuting is split into entry, a gentle loop and a one-shot landing. The
-# neutral open-canopy frame is byte-identical at both production hand-offs.
+# independently review-sized drift keeps the same contact anchor at entry; its
+# exit is byte-identical to the resized landing entry.
 parachute_jump = manifest["keeper_parachute_jump"]
 parachute_drift = manifest["keeper_parachute_drift"]
 parachute_landing = manifest["keeper_parachute_landing"]
@@ -225,10 +297,9 @@ assert parachute_landing["loop"] is False
 assert parachute_drift["startPose"] == parachute_drift["endPose"] == "parachute-open"
 assert parachute_landing["startPose"] == "parachute-open"
 assert parachute_landing["endPose"] == "standing-side-right"
-jump_last = frame_image("keeper_parachute_jump", parachute_jump["frames"] - 1)
 drift_first = frame_image("keeper_parachute_drift", 0)
 landing_first = frame_image("keeper_parachute_landing", 0)
-assert ImageChops.difference(embedded(jump_last, drift_first.width, drift_first.height), drift_first).getbbox() is None
+assert parachute_drift["anchor"] == parachute_landing["anchor"]
 assert ImageChops.difference(drift_first, landing_first).getbbox() is None
 
 # Long tools, fishing lines and props retain at least their expanded staging
@@ -288,42 +359,65 @@ assert keeper_contract["interactionProfiles"]["rearSeat"] == {
     "clip": "keeper_sit_back", "seatPoint": [16, 29], "offsetFromFeet": [0, -11]
 }
 
-# Frank's immutable review export is retained byte-for-byte; the generated
-# audit adds neutral imported baselines and read-only Codex responses without
-# mutating that evidence file.
-review_path = ROOT / "docs/review/frank-keeper-animation-review-2026-10-09.json"
-assert hashlib.sha256(review_path.read_bytes()).hexdigest() == "c19129f8419df2c046f3abb06de9f339f1cd8edb31c2d505dea8e79562d5f486"
+# Both immutable review exports are retained byte-for-byte. The second export
+# is the current exact-name authority; its three stale status-list entries are
+# deliberately reconciled from the same named review flags, never by order.
+first_review_path = ROOT / "docs/review/frank-keeper-animation-review-2026-10-09.json"
+review_path = ROOT / "docs/review/frank-keeper-animation-review-2026-10-10.json"
+assert hashlib.sha256(first_review_path.read_bytes()).hexdigest() == "c19129f8419df2c046f3abb06de9f339f1cd8edb31c2d505dea8e79562d5f486"
+assert hashlib.sha256(review_path.read_bytes()).hexdigest() == "e72a6ddf3e7c30e3093195b5044ebd2b9d9af62ba94c9e493158af49b1e7ace7"
 review_export = json.loads(review_path.read_text())
-assert review_export["version"] == 8 and len(review_export["reviews"]) == 161
+assert review_export["version"] == 9 and len(review_export["reviews"]) == 167
 review_names = [review["name"] for review in review_export["reviews"]]
-assert len(review_names) == len(set(review_names)) == 161
-assert len(review_export["happyAnimations"]) == 88
-assert len(review_export["redraftAnimations"]) == 28
+status_names = [status["name"] for status in review_export["reviewStatuses"]]
+assert len(review_names) == len(set(review_names)) == 167
+assert len(status_names) == len(set(status_names)) == 173
+assert set(review_names) <= keeper_names and set(status_names) == {asset["name"] for asset in json.loads((ROOT / "docs/keeper-scale-audit/keeper-scale-metrics.json").read_text())["assets"] if asset["status"] != "excluded-technical"}
+assert len(review_export["happyAnimations"]) == 96
+assert len(review_export["redraftAnimations"]) == 9
 assert len(review_export["reviewLaterAnimations"]) == 3
-responses = json.loads((ROOT / "docs/review/keeper-animation-codex-responses-2026-10-09.json").read_text())
-assert len(responses) == 79 and set(responses) <= keeper_names
+status_by_name = {status["name"]: status["status"] for status in review_export["reviewStatuses"]}
+decision_by_name = {
+    review["name"]: (
+        "happy" if review.get("happy") else
+        "review-later" if review.get("reviewLater") else
+        "awaiting-new-draft"
+    )
+    for review in review_export["reviews"]
+}
+assert {
+    name for name, status in decision_by_name.items() if status_by_name[name] != status
+} == {"keeper_anti_gravity", "keeper_bath_exit", "keeper_count_money", "keeper_nap_seated"}
+responses = {}
+for response_path in (
+    ROOT / "docs/review/keeper-animation-codex-responses-2026-10-09.json",
+    ROOT / "docs/review/keeper-animation-codex-responses-2026-10-10.json",
+):
+    responses.update(json.loads(response_path.read_text()))
+responses = {name: response for name, response in responses.items() if isinstance(response, str) and response.strip()}
+assert set(responses) <= keeper_names
 assert all(isinstance(value, str) and value.strip() for value in responses.values())
 awaiting_names = {
     review["name"]
     for review in review_export["reviews"]
     if not review.get("happy") and not review.get("reviewLater")
 }
-assert len(awaiting_names) == 70 and awaiting_names <= responses.keys()
+assert len(awaiting_names) == 68 and awaiting_names <= responses.keys()
 assert all("Implemented as requested" not in responses[name] for name in awaiting_names)
-resolution = (ROOT / "docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-09.md").read_text()
+resolution = (ROOT / "docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md").read_text()
 assert resolution.count("\n| `keeper_") == 173
 
 # The all-sheet audit retains identity/anatomy evidence while recording Frank's
 # visual size as authoritative wherever the review changed width or height.
 scale_audit = json.loads((ROOT / "docs/keeper-scale-audit/keeper-scale-metrics.json").read_text())
 assert scale_audit["version"] == 2
-assert scale_audit["auditRevision"] == "2026-10-10-user-visual-size-v3"
+assert scale_audit["auditRevision"] == "2026-10-10-second-review-delta-v4"
 assert scale_audit["originalReference"]["name"] == "keeper_walk"
 assert scale_audit["counts"] == {
     "allSheets": 191,
     "reviewedAnimationSheets": 173,
     "technicalRejectedSheets": 18,
-    "allFramesMeasured": 1420,
+    "allFramesMeasured": 1475,
     "correctedSheets": 81,
     "comparisonFailures": 0,
 }
@@ -342,10 +436,10 @@ for asset in review_assets:
     )
     status_counts[status] = status_counts.get(status, 0) + 1
 assert status_counts == {
-    "happy": 88,
-    "awaiting-new-draft": 70,
+    "happy": 96,
+    "awaiting-new-draft": 68,
     "review-later": 3,
-    "unreviewed": 12,
+    "unreviewed": 6,
 }
 assert all("originalComparison" in asset for asset in scale_audit["assets"])
 assert all(
@@ -363,13 +457,8 @@ user_sized = [
     asset for asset in review_assets
     if asset["originalComparison"]["verdict"] == "user-visual-size-authority"
 ]
-assert len(user_sized) == 128
 for asset in user_sized:
-    imported = imported_reviews[asset["name"]]
-    assert asset["originalComparison"]["reviewScale"] == [
-        imported.get("widthPercent", 100),
-        imported.get("heightPercent", 100),
-    ]
+    assert asset["originalComparison"]["reviewScale"] == keeper_sidecars[asset["name"]].get("reviewScale")
 assert len(scale_audit["contactSheets"]) == 9
 assert all((ROOT / path).exists() for path in scale_audit["contactSheets"])
 
@@ -415,12 +504,12 @@ filter_groups = {
 }
 assert {name: len(assets) for name, assets in filter_groups.items()} == {
     "all": 173,
-    "needs-input": 85,
-    "happy": 88,
-    "awaiting-new-draft": 70,
+    "needs-input": 77,
+    "happy": 96,
+    "awaiting-new-draft": 68,
     "review-later": 3,
-    "unreviewed": 12,
-    "has-response": 79,
+    "unreviewed": 6,
+    "has-response": 85,
 }
 for filtered_assets in filter_groups.values():
     # A complete Next cycle visits each same-filter object exactly once and
@@ -454,6 +543,11 @@ for token in (
     "version:9",
     "reviewStatuses",
     "codexResponse",
+    "Import review JSON",
+    "statusForReview",
+    "known.has(raw.name)",
+    "seen.has(raw.name)",
+    "Any conflicting status-list entries were safely reconciled",
 ):
     assert token in review_html, token
 
@@ -467,7 +561,7 @@ for slug in ("keeper-scuba-walk-side", "keeper-scuba-jetty-dive", "keeper-parach
 
 print(
     "Verified: 71 spaces, 1579 catalogue rows, floor exports, 325 working keeper sheets, "
-    "the historical 191-sheet/1420-frame review set, "
+    "the 191-sheet/1475-frame review set, "
     "reviewed visual sizing and identity authorities, scuba/parachute routes, cleaning cupboard occlusion, "
     "review evidence/statuses/responses, filtered cyclic navigation and 181 animated previews."
 )

@@ -1,5 +1,5 @@
 {
-  "w": 48,
+  "w": 53,
   "h": 40,
   "frames": 8,
   "fps": 4,
@@ -11,8 +11,8 @@
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    23,
-    22
+    26.99,
+    22.36
   ],
   "movementVector": [
     1,
@@ -23,6 +23,26 @@
   "facing": "right",
   "interaction": "push-lawn-mower",
   "mirrorsFor": "left",
+  "reviewScale": [
+    101,
+    98
+  ],
+  "reviewOffset": [
+    4,
+    0
+  ],
+  "reviewScaleRounds": {
+    "2026-10-10": [
+      101,
+      98
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-10": [
+      4,
+      0
+    ]
+  },
   "assetRole": "clip",
   "startPose": "standing-side-right",
   "endPose": "standing-side-right"

@@ -32,7 +32,9 @@ sheet.
    on this Mac, double-click `Open Keeper Review Offline.command` at the
    repository root and leave its Terminal window open; it serves the same page
    and local sprite strips only on `127.0.0.1:8765`, while browser saves and the
-   version-9 JSON export continue to work normally. A dedicated panel first shows
+   version-9 JSON export/import continue to work normally. Offline and online
+   browser storage do not synchronise automatically: Export on one copy, then
+   Import review JSON on the other. A dedicated panel first shows
    the untouched `keeper_walk` identity/anatomy baseline, followed by all 173 accepted
    clips at one unchanged relative scale in filename order. Filter the register
    by Needs my input, Happy, Awaiting new draft review, Review later,
@@ -42,18 +44,19 @@ sheet.
    pinned alongside; standing side/front/back and sitting side/front/back
    canons are available. These are fixed identity/anatomy comparison ghosts;
    they do not replace the saved production size of the reviewed clip.
-3. Every card has a read-only Codex response field. All 70 `Awaiting new draft
+3. Every card has a read-only Codex response field. All 68 `Awaiting new draft
    review` cards have a specific narrative naming the delivered production
    change. Any genuine qualification is stated explicitly; a generic response
    is not evidence that work was completed.
-4. Frank's supplied export is preserved byte-for-byte at
-   `docs/review/frank-keeper-animation-review-2026-10-09.json`; do not edit or
-   replace it. The complete 173-row disposition is
-   `docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-09.md`, and agent
-   responses live separately in
-   `docs/review/keeper-animation-codex-responses-2026-10-09.json`.
-   The corrective 70-card verification is recorded in
-   `docs/review/KEEPER_ANIMATION_AWAITING_INPUT_AUDIT_2026-10-10.md`.
+4. Frank's supplied exports are preserved byte-for-byte at
+   `docs/review/frank-keeper-animation-review-2026-10-09.json` and
+   `docs/review/frank-keeper-animation-review-2026-10-10.json`; do not edit or
+   replace either file. The current complete 173-row disposition is
+   `docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md`, and agent
+   responses live separately in the two dated
+   `keeper-animation-codex-responses-*.json` files. The exact second-round
+   comparison and implementation scope is recorded in
+   `docs/review/KEEPER_ANIMATION_SECOND_ROUND_DELTA_2026-10-10.md`.
 5. The display-size slider magnifies the reviewed stage from 1× to 12× without
    changing art. Global controls pause/play everything and apply pose-aware
    comparison ghosts.
@@ -72,7 +75,7 @@ sheet.
    Display zoom and filter are saved immediately in browser-local progress.
    Saving or advancing from the final result wraps to the first result in the
    same filter.
-6. For a later review round, ask Frank for the newly exported
+6. For the next review round, ask Frank for the newly exported
    `keeper-scale-choices.json`.
    Each card's Save button persists independent width/height, rotation,
    horizontal/vertical position, ghost settings, opacity and the
@@ -221,15 +224,15 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 
 ## Current evidence and files
 
-- 191 keeper sheets and 1,420 frames are in the technical batch.
+- 191 keeper sheets and 1,475 frames are in the technical review batch.
 - 173 animation sheets are accepted into the review gallery.
 - 18 obsolete modular/reference sheets are excluded from review and must not
   return to production.
 - 81 sheets are recorded as rebuilt or anatomy-normalised in the latest full
   audit.
 - The audit currently reports zero unresolved original-comparison failures.
-- Imported review state is 88 Happy, 70 Awaiting new draft review, 3 Review
-  later and 12 Unreviewed. “Awaiting new draft review” means the requested
+- Imported review state is 96 Happy, 68 Awaiting new draft review, 3 Review
+  later and 6 Unreviewed. “Awaiting new draft review” means the requested
   production work is now present and awaits Frank's verdict.
 - Directly comparable full-body families without a saved visual resize are
   constrained to a 0.960–1.040 skull-to-sole ratio; unobscured side torsos
@@ -247,11 +250,12 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   `docs/KEEPER_ASSET_SCALE.md` and `docs/KEEPER_OBJECT_DIMENSIONS.md`.
 - The non-standard-outfit inventory and next bridge batch are in
   `docs/KEEPER_COSTUME_ROUTE_AUDIT.md`.
-- Frank's animation review is preserved byte-identically in
-  `docs/review/frank-keeper-animation-review-2026-10-09.json`; its SHA-256 is
-  `c19129f8419df2c046f3abb06de9f339f1cd8edb31c2d505dea8e79562d5f486`.
+- Frank's first and second animation reviews are preserved byte-identically in
+  the dated files under `docs/review/`. Their SHA-256 values are respectively
+  `c19129f8419df2c046f3abb06de9f339f1cd8edb31c2d505dea8e79562d5f486` and
+  `e72a6ddf3e7c30e3093195b5044ebd2b9d9af62ba94c9e493158af49b1e7ace7`.
   New review comments must be captured as another dated export rather than
-  silently overwriting it. Earlier floor-catalogue evidence remains in
+  silently overwriting either one. Earlier floor-catalogue evidence remains in
   `docs/review/frank-floor-review-2026-10-09.json`.
 
 ## The route every ordinary activity needs
@@ -836,4 +840,4 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 
 ## Ready-to-paste opening prompt for the new Codex task
 
-> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md` and `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` in full before changing anything, then read the authoritative scale/animation/door documents they link. Frank's completed 2026-10-09 source review, 173-row resolution register and separate Codex responses are under `docs/review/`; preserve them and capture any new export as a separately dated immutable record. Treat untouched `keeper_walk` and the canonical sitting references as immutable identity/scale authorities. Costumes and props are overlays; changes happen only under the declared foreground occlusion. Preserve the exact scuba jetty-dive-to-swim and parachute jump/drift/landing hand-offs, the cleaning cupboard route, seated nap route, mower shed route, artist-smock route and guitar frame-6 prop handoff. Rerun the full 191-sheet/1,420-frame scale audit and all project verification, update the handoff/index, commit and push the completed work to remote `main`.
+> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, `docs/review/KEEPER_ANIMATION_SECOND_ROUND_DELTA_2026-10-10.md` and `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` before changing anything. Frank's immutable 2026-10-09 and 2026-10-10 source reviews, current 173-row resolution register and separate dated Codex responses are under `docs/review/`; preserve them and capture any new export as a separately dated immutable record. Compare by exact `keeper_*` name, never list position. Treat Frank's saved width/height as authoritative and untouched `keeper_walk` plus the canonical sitting references as identity/anatomy authorities. Preserve source-cell isolation, exact scuba and parachute hand-offs, cleaning cupboard occlusion, seated nap, mower shed, artist-smock and guitar frame-6 hand-off. Rerun the full 191-sheet/1,475-frame scale audit and project verification, update the documentation, commit and push the completed work to remote `main`.

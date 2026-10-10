@@ -1,11 +1,11 @@
 {
-  "w": 32,
+  "w": 34,
   "h": 48,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    16,
+    17,
     48
   ],
   "z": 50,
@@ -18,13 +18,33 @@
   "facing": "front",
   "interaction": "mechanic-walk",
   "reviewScale": [
-    94,
+    99.64,
     98.5
   ],
   "reviewOffset": [
     0,
     0
   ],
+  "reviewScaleRounds": {
+    "2026-10-09": [
+      94,
+      98.5
+    ],
+    "2026-10-10": [
+      106,
+      100
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-09": [
+      0,
+      0
+    ],
+    "2026-10-10": [
+      0,
+      0
+    ]
+  },
   "assetRole": "clip",
   "startPose": "standing-front",
   "endPose": "standing-front",

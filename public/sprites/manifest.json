@@ -504,13 +504,13 @@
  "keeper_bath_enter": {
   "file": "keeper_bath_enter.png",
   "w": 47,
-  "h": 40,
+  "h": 41,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
    23,
-   40
+   41
   ],
   "startPose": "standing-side-right",
   "endPose": "sitting-front",
@@ -526,14 +526,14 @@
  },
  "keeper_bath_exit": {
   "file": "keeper_bath_exit.png",
-  "w": 46,
-  "h": 40,
+  "w": 50,
+  "h": 47,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   23,
-   40
+   27,
+   47
   ],
   "startPose": "sitting-front",
   "endPose": "standing-side-right",
@@ -954,7 +954,7 @@
   "w": 34,
   "h": 40,
   "frames": 8,
-  "fps": 8,
+  "fps": 5,
   "density": 4,
   "anchor": [
    18,
@@ -1020,18 +1020,18 @@
  },
  "keeper_clear_snow": {
   "file": "keeper_clear_snow.png",
-  "w": 53,
-  "h": 40,
+  "w": 81,
+  "h": 41,
   "frames": 8,
   "fps": 3.5,
   "density": 4,
   "anchor": [
-   24,
-   40
+   37,
+   41
   ],
   "handUsePoint": [
-   47.4,
-   37.195
+   47.7,
+   38.181
   ],
   "startPose": "standing-side-right",
   "endPose": "standing-side-right",
@@ -1279,21 +1279,21 @@
  },
  "keeper_darts": {
   "file": "keeper_darts.png",
-  "w": 56,
+  "w": 72,
   "h": 40,
   "frames": 14,
   "fps": 3,
   "density": 4,
   "anchor": [
-   28,
+   36,
    40
   ],
   "handUsePoint": [
-   46,
+   54,
    15.75
   ],
   "lookTargetPoint": [
-   56,
+   72,
    12.84
   ],
   "startPose": "standing-side-right",
@@ -1518,7 +1518,7 @@
   "w": 32,
   "h": 48,
   "frames": 14,
-  "fps": 5,
+  "fps": 4,
   "density": 4,
   "anchor": [
    16,
@@ -1540,22 +1540,22 @@
  },
  "keeper_fish_seated": {
   "file": "keeper_fish_seated.png",
-  "w": 135,
-  "h": 115,
-  "frames": 16,
+  "w": 179,
+  "h": 146,
+  "frames": 41,
   "fps": 3,
   "density": 4,
   "anchor": [
-   63,
+   35,
    73
   ],
   "seatPoint": [
-   67.5,
-   58.7
+   37.25,
+   65.85
   ],
   "handUsePoint": [
-   109.2,
-   37.9
+   47.675,
+   55.45
   ],
   "startPose": "sitting-side-right",
   "endPose": "sitting-side-right",
@@ -1569,18 +1569,18 @@
  },
  "keeper_fish_standing": {
   "file": "keeper_fish_standing.png",
-  "w": 101,
-  "h": 88,
-  "frames": 16,
+  "w": 133,
+  "h": 112,
+  "frames": 50,
   "fps": 4,
   "density": 4,
   "anchor": [
-   48,
+   28,
    56
   ],
   "handUsePoint": [
-   85,
-   33.08
+   50,
+   30.215
   ],
   "startPose": "standing-side-right",
   "endPose": "standing-side-right",
@@ -1805,18 +1805,18 @@
  },
  "keeper_guitar_pickup_acoustic": {
   "file": "keeper_guitar_pickup_acoustic.png",
-  "w": 64,
+  "w": 77,
   "h": 56,
   "frames": 12,
-  "fps": 4,
+  "fps": 8,
   "density": 4,
   "anchor": [
    32,
    56
   ],
   "handUsePoint": [
-   45,
-   25
+   48.28,
+   26.24
   ],
   "propHandoffFrame": 6,
   "propVariant": "acoustic",
@@ -1831,7 +1831,7 @@
  },
  "keeper_guitar_pickup_flying_v_1967": {
   "file": "keeper_guitar_pickup_flying_v_1967.png",
-  "w": 64,
+  "w": 72,
   "h": 56,
   "frames": 12,
   "fps": 4,
@@ -1857,18 +1857,18 @@
  },
  "keeper_guitar_pickup_gretsch": {
   "file": "keeper_guitar_pickup_gretsch.png",
-  "w": 64,
+  "w": 73,
   "h": 56,
   "frames": 12,
   "fps": 4,
   "density": 4,
   "anchor": [
-   32,
+   33,
    56
   ],
   "handUsePoint": [
-   45,
-   25
+   45.5,
+   25.62
   ],
   "propHandoffFrame": 6,
   "propVariant": "black-gretsch",
@@ -2369,7 +2369,7 @@
   "file": "keeper_hot_drink_pickup.png",
   "w": 51,
   "h": 40,
-  "frames": 8,
+  "frames": 7,
   "fps": 4,
   "density": 4,
   "anchor": [
@@ -2393,13 +2393,13 @@
  },
  "keeper_hot_drink_pour": {
   "file": "keeper_hot_drink_pour.png",
-  "w": 54,
+  "w": 58,
   "h": 40,
-  "frames": 10,
+  "frames": 9,
   "fps": 4,
   "density": 4,
   "anchor": [
-   24,
+   28,
    40
   ],
   "handUsePoint": [
@@ -2900,7 +2900,7 @@
  },
  "keeper_lawn_mower_push": {
   "file": "keeper_lawn_mower_push.png",
-  "w": 48,
+  "w": 53,
   "h": 40,
   "frames": 8,
   "fps": 4,
@@ -2910,8 +2910,8 @@
    40
   ],
   "handUsePoint": [
-   23,
-   22
+   26.99,
+   22.36
   ],
   "movementVector": [
    1,
@@ -2955,8 +2955,8 @@
   "file": "keeper_lift_button_front.png",
   "w": 34,
   "h": 40,
-  "frames": 8,
-  "fps": 4,
+  "frames": 7,
+  "fps": 8,
   "density": 4,
   "anchor": [
    17,
@@ -2978,17 +2978,17 @@
  },
  "keeper_lift_weights_back": {
   "file": "keeper_lift_weights_back.png",
-  "w": 55,
+  "w": 82,
   "h": 56,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   27,
+   41,
    56
   ],
   "handUsePoint": [
-   27,
+   41,
    10.355
   ],
   "startPose": "standing-back",
@@ -3100,17 +3100,17 @@
  },
  "keeper_machete_side": {
   "file": "keeper_machete_side.png",
-  "w": 103,
+  "w": 123,
   "h": 52,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   51,
+   61,
    52
   ],
   "handUsePoint": [
-   84.65,
+   94.65,
    36.52
   ],
   "startPose": "standing-side-right",
@@ -3125,18 +3125,18 @@
  },
  "keeper_meal_from_oven_back": {
   "file": "keeper_meal_from_oven_back.png",
-  "w": 52,
+  "w": 57,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   26,
+   27,
    40
   ],
   "handUsePoint": [
-   26,
-   30
+   28.5,
+   30.3
   ],
   "startPose": "standing-back",
   "endPose": "standing-back",
@@ -3148,17 +3148,17 @@
  },
  "keeper_meal_place_side": {
   "file": "keeper_meal_place_side.png",
-  "w": 55,
+  "w": 73,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   26,
+   35,
    40
   ],
   "handUsePoint": [
-   44.525,
+   58.065,
    22.14
   ],
   "startPose": "standing-side-right",
@@ -3218,12 +3218,12 @@
  },
  "keeper_mechanic_neutral_standing-front": {
   "file": "keeper_mechanic_neutral_standing-front.png",
-  "w": 32,
+  "w": 34,
   "h": 48,
   "frames": 1,
   "density": 4,
   "anchor": [
-   16,
+   17,
    48
   ],
   "startPose": "standing-front",
@@ -3345,13 +3345,13 @@
  },
  "keeper_mechanic_walk_front": {
   "file": "keeper_mechanic_walk_front.png",
-  "w": 32,
+  "w": 34,
   "h": 48,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   17,
    48
   ],
   "movementVector": [
@@ -3379,13 +3379,13 @@
  },
  "keeper_mechanic_walk_front_cycle": {
   "file": "keeper_mechanic_walk_front_cycle.png",
-  "w": 32,
+  "w": 34,
   "h": 48,
   "frames": 9,
   "fps": 4,
   "density": 4,
   "anchor": [
-   16,
+   17,
    48
   ],
   "movementVector": [
@@ -3588,7 +3588,7 @@
   "file": "keeper_nap_seated.png",
   "w": 32,
   "h": 40,
-  "frames": 8,
+  "frames": 7,
   "fps": 4,
   "density": 4,
   "anchor": [
@@ -3811,12 +3811,12 @@
  },
  "keeper_old-school-workout-kit_neutral_standing-back": {
   "file": "keeper_old-school-workout-kit_neutral_standing-back.png",
-  "w": 54,
+  "w": 82,
   "h": 56,
   "frames": 1,
   "density": 4,
   "anchor": [
-   27,
+   41,
    56
   ],
   "startPose": "standing-back",
@@ -3849,18 +3849,18 @@
  },
  "keeper_operate_outboard": {
   "file": "keeper_operate_outboard.png",
-  "w": 34,
+  "w": 36,
   "h": 41,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-   18,
+   19,
    40
   ],
   "handUsePoint": [
-   4.5,
-   21.31
+   4.96,
+   21.497
   ],
   "startPose": "standing-rear-right",
   "endPose": "standing-rear-right",
@@ -3925,13 +3925,13 @@
  "keeper_parachute_drift": {
   "file": "keeper_parachute_drift.png",
   "w": 96,
-  "h": 84,
+  "h": 103,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
    48,
-   84
+   100
   ],
   "startPose": "parachute-open",
   "endPose": "parachute-open",
@@ -3967,13 +3967,13 @@
  "keeper_parachute_landing": {
   "file": "keeper_parachute_landing.png",
   "w": 96,
-  "h": 84,
+  "h": 103,
   "frames": 10,
   "fps": 4,
   "density": 4,
   "anchor": [
    48,
-   84
+   100
   ],
   "startPose": "parachute-open",
   "endPose": "standing-side-right",
@@ -7475,12 +7475,12 @@
  "keeper_towel-privacy_neutral_standing-side-left": {
   "file": "keeper_towel-privacy_neutral_standing-side-left.png",
   "w": 46,
-  "h": 40,
+  "h": 41,
   "frames": 1,
   "density": 4,
   "anchor": [
    23,
-   40
+   41
   ],
   "startPose": "standing-side-left",
   "endPose": "standing-side-left",
@@ -7495,12 +7495,12 @@
  "keeper_towel-privacy_neutral_standing-side-right": {
   "file": "keeper_towel-privacy_neutral_standing-side-right.png",
   "w": 46,
-  "h": 40,
+  "h": 41,
   "frames": 1,
   "density": 4,
   "anchor": [
    23,
-   40
+   41
   ],
   "startPose": "standing-side-right",
   "endPose": "standing-side-right",

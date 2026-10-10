@@ -1,17 +1,17 @@
 {
-  "w": 55,
+  "w": 82,
   "h": 56,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    27,
+    41,
     56
   ],
   "z": 50,
   "loop": true,
   "handUsePoint": [
-    27,
+    41,
     10.355
   ],
   "outfit": "old-school-workout-kit",
@@ -25,6 +25,26 @@
     0,
     0
   ],
+  "reviewScaleRounds": {
+    "2026-10-09": [
+      113,
+      89.5
+    ],
+    "2026-10-10": [
+      100,
+      100
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-09": [
+      0,
+      0
+    ],
+    "2026-10-10": [
+      0,
+      0
+    ]
+  },
   "assetRole": "clip",
   "startPose": "standing-back",
   "endPose": "standing-back"

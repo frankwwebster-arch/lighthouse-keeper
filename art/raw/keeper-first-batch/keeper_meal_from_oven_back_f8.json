@@ -1,29 +1,49 @@
 {
-  "w": 52,
+  "w": 57,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    26,
+    27,
     40
   ],
   "z": 50,
   "loop": false,
   "handUsePoint": [
-    26,
-    30
+    28.5,
+    30.3
   ],
   "facing": "back",
   "interaction": "retrieve-meal-from-oven",
   "reviewScale": [
-    107,
-    100
+    115.56,
+    97
   ],
   "reviewOffset": [
-    0,
+    1.5,
     0
   ],
+  "reviewScaleRounds": {
+    "2026-10-09": [
+      107,
+      100
+    ],
+    "2026-10-10": [
+      108,
+      97
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-09": [
+      0,
+      0
+    ],
+    "2026-10-10": [
+      1.5,
+      0
+    ]
+  },
   "assetRole": "clip",
   "startPose": "standing-back",
   "endPose": "standing-back"

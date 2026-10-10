@@ -1,17 +1,17 @@
 {
-  "w": 55,
+  "w": 73,
   "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    26,
+    35,
     40
   ],
   "z": 50,
   "loop": false,
   "handUsePoint": [
-    44.525,
+    58.065,
     22.14
   ],
   "mirrorSafe": true,
@@ -26,6 +26,26 @@
     1.5,
     0
   ],
+  "reviewScaleRounds": {
+    "2026-10-09": [
+      113.5,
+      94
+    ],
+    "2026-10-10": [
+      100,
+      100
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-09": [
+      1.5,
+      0
+    ],
+    "2026-10-10": [
+      0,
+      0
+    ]
+  },
   "assetRole": "clip",
   "startPose": "standing-side-right",
   "endPose": "standing-side-right"

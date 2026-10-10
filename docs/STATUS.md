@@ -42,7 +42,7 @@ Keeper review cards now also preview, save and export a proposed per-clip
 runtime FPS. Accepted `animationFps` values belong in each animation's source
 JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
-1. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. In parallel, Frank's imported visual review remains 88 of 173 animations Happy, 70 Awaiting new draft review, 3 Review later and 12 Unreviewed. Frank's saved per-animation width and height remain final production art direction.
+1. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. In parallel, Frank's immutable second visual review has 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed. Frank's saved per-animation width and height remain final production art direction.
 2. Art for the mission floors (aquarium, weather station, hidden lair), their furniture, the lift and a floor-arrival effect (Codex; hooks in docs/FOR_CODEX.md).
 3. Tier art for upgrades (Codex; list in docs/FOR_CODEX.md). Typed commands for upgrading ("upgrade the TV") are not in yet; upgrades are bought from the tap menu.
 4. Mini games: fishing, cooking, telescope spotting.
@@ -56,4 +56,4 @@ JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
 ## Verification and delivery
 
-Keeper neutral-contract commit `e74b93b` passed all 149 project tests, TypeScript checking, the production build, sprite export, the 310-sheet runtime catalogue verification and the historical 191-sheet / 1,420-frame identity audit. It is on remote `main`; the canonical Vercel home and `/studio` routes both returned HTTP 200 on 10 October 2026, with `/studio` serving the same built chunk as the verified local production build.
+The prior neutral-contract checkpoint at commit `e74b93b` passed all 149 project tests, TypeScript checking, the production build and its then-current sprite/audit checks. It was deployed on remote `main`, and the canonical Vercel home and `/studio` routes both returned HTTP 200 on 10 October 2026. The current keeper review audit has since advanced to 191 sheets / 1,475 frames; its delivery evidence is recorded in `docs/review/KEEPER_ANIMATION_SECOND_ROUND_DELTA_2026-10-10.md`.

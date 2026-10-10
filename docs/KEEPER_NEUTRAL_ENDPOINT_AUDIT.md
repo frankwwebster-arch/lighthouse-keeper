@@ -36,24 +36,24 @@ Migration guard: the current legacy failures are frozen in `data/keeper_endpoint
 | `keeper_carry_cake` | end | `standing-side-right` | pixels 99.94%; anchor (-1, 0); landmarks 4.75px | add bridge |
 | `keeper_carry_meal` | start | `standing-side-right` | pixels 99.91%; anchor (0, 0); landmarks 3px | add bridge |
 | `keeper_carry_meal` | end | `standing-side-right` | pixels 99.96%; anchor (0, 0); landmarks 3px | add bridge |
-| `keeper_carry_shopping` | start | `standing-side-right` | pixels 99.94%; anchor (1, 0); landmarks 4px | add bridge |
+| `keeper_carry_shopping` | start | `standing-side-right` | pixels 99.95%; anchor (1, 0); landmarks 4.5px | add bridge |
 | `keeper_carry_shopping` | end | `standing-side-right` | pixels 99.86%; anchor (1, 0); landmarks 4.75px | add bridge |
 | `keeper_check_instrument_back` | start | `standing-back` | pixels 99.39%; anchor (0, 0); landmarks 0.25px | add bridge |
 | `keeper_check_instrument_back` | end | `standing-back` | pixels 99.66%; anchor (0, 0); landmarks 1.75px | add bridge |
 | `keeper_check_instrument_side` | start | `standing-side-right` | pixels 99.76%; anchor (0.5, 0); landmarks 0.5px | add bridge |
 | `keeper_check_instrument_side` | end | `standing-side-right` | pixels 99.87%; anchor (0.5, 0); landmarks 4.75px | add bridge |
-| `keeper_collect_eggs_back` | start | `crouching-back` | pixels 99.78%; anchor (0, 0); landmarks 8px | add bridge |
-| `keeper_collect_eggs_back` | end | `crouching-back` | pixels 99.8%; anchor (0, 0); landmarks 8px | add bridge |
+| `keeper_collect_eggs_back` | start | `crouching-back` | pixels 99.77%; anchor (0, 0); landmarks 8px | add bridge |
+| `keeper_collect_eggs_back` | end | `crouching-back` | pixels 99.79%; anchor (0, 0); landmarks 8px | add bridge |
 | `keeper_count_money` | start | `sitting-front` | pixels 99.85%; anchor (0, -2); landmarks 1.5px | add bridge |
 | `keeper_count_money` | end | `sitting-front` | pixels 99.91%; anchor (0, -2); landmarks 1.5px | add bridge |
 | `keeper_cross` | start | `standing-front` | pixels 99.94%; anchor (0, 0); landmarks 0.75px | add bridge |
 | `keeper_cross` | end | `standing-front` | pixels 99.9%; anchor (0, 0); landmarks 1px | add bridge |
-| `keeper_crouch_work_back` | start | `crouching-back` | pixels 99.72%; anchor (0, 0); landmarks 8px | add bridge |
+| `keeper_crouch_work_back` | start | `crouching-back` | pixels 99.73%; anchor (0, 0); landmarks 8px | add bridge |
 | `keeper_crouch_work_back` | end | `crouching-back` | pixels 99.71%; anchor (0, 0); landmarks 8px | add bridge |
 | `keeper_dance` | start | `standing-front` | pixels 99.94%; anchor (0, 0); landmarks 1px | add bridge |
 | `keeper_dance` | end | `standing-front` | pixels 99.94%; anchor (0, 0); landmarks 1px | add bridge |
-| `keeper_darts` | start | `standing-side-right` | pixels 99.8%; anchor (0, 0); landmarks 0.75px | add bridge |
-| `keeper_darts` | end | `standing-side-right` | pixels 99.85%; anchor (0, 0); landmarks 0.75px | add bridge |
+| `keeper_darts` | start | `standing-side-right` | pixels 99.95%; anchor (0, 0); landmarks 1px | add bridge |
+| `keeper_darts` | end | `standing-side-right` | pixels 99.99%; anchor (0, 0); landmarks 1.25px | add bridge |
 | `keeper_dig` | start | `standing-side-right` | pixels 99.94%; anchor (-2.5, 0); landmarks 6.75px | add bridge |
 | `keeper_dig` | end | `standing-side-right` | pixels 99.96%; anchor (-2.5, 0); landmarks 6.5px | add bridge |
 | `keeper_door_open_back` | start | `standing-side-right` | pixels 99.95%; anchor (0, 0); landmarks 3px | add bridge |
@@ -70,15 +70,15 @@ Migration guard: the current legacy failures are frozen in `data/keeper_endpoint
 | `keeper_feed_animals` | end | `standing-side-right` | pixels 99.97%; anchor (0, 0); landmarks 1px | add bridge |
 | `keeper_fish_feed_up` | start | `standing-side-right` | pixels 99.93%; anchor (0, 0); landmarks 1px | add bridge |
 | `keeper_fish_feed_up` | end | `standing-side-right` | pixels 99.97%; anchor (0, 0); landmarks 1px | add bridge |
-| `keeper_fish_seated` | start | `sitting-side-right` | pixels 100%; anchor (-4.5, -42); landmarks 41.5px | add bridge |
-| `keeper_fish_seated` | end | `sitting-side-right` | pixels 99.99%; anchor (-4.5, -42); landmarks 41.5px | add bridge |
-| `keeper_fish_standing` | start | `standing-side-right` | pixels 100%; anchor (-2.5, -32); landmarks 30.5px | add bridge |
-| `keeper_fish_standing` | end | `standing-side-right` | pixels 100%; anchor (-2.5, -32); landmarks 30.5px | add bridge |
-| `keeper_guitar_pickup_acoustic` | start | `standing-side-right` | pixels 99.84%; anchor (0, 0); landmarks 1.25px | add bridge |
+| `keeper_fish_seated` | start | `sitting-side-right` | pixels 100%; anchor (-54.5, -73); landmarks 8.75px | add bridge |
+| `keeper_fish_seated` | end | `sitting-side-right` | pixels 100%; anchor (-54.5, -73); landmarks 8.75px | add bridge |
+| `keeper_fish_standing` | start | `standing-side-right` | pixels 100%; anchor (-38.5, -56); landmarks 8.5px | add bridge |
+| `keeper_fish_standing` | end | `standing-side-right` | pixels 100%; anchor (-38.5, -56); landmarks 8.5px | add bridge |
+| `keeper_guitar_pickup_acoustic` | start | `standing-side-right` | pixels 100%; anchor (-6.5, 0); landmarks 8.5px | add bridge |
 | `keeper_guitar_pickup_acoustic` | end | `play-guitar-acoustic` | neutral missing | add neutral and bridge |
-| `keeper_guitar_pickup_flying_v_1967` | start | `standing-side-right` | pixels 99.84%; anchor (0, 0); landmarks 1.25px | add bridge |
+| `keeper_guitar_pickup_flying_v_1967` | start | `standing-side-right` | pixels 99.91%; anchor (-4, 0); landmarks 5.25px | add bridge |
 | `keeper_guitar_pickup_flying_v_1967` | end | `play-guitar-flying-v-1967` | neutral missing | add neutral and bridge |
-| `keeper_guitar_pickup_gretsch` | start | `standing-side-right` | pixels 99.84%; anchor (0, 0); landmarks 1.25px | add bridge |
+| `keeper_guitar_pickup_gretsch` | start | `standing-side-right` | pixels 99.89%; anchor (-3.5, 0); landmarks 4.75px | add bridge |
 | `keeper_guitar_pickup_gretsch` | end | `play-guitar-gretsch` | neutral missing | add neutral and bridge |
 | `keeper_hammer_back` | start | `standing-back` | pixels 99.64%; anchor (-0.5, 0); landmarks 1.25px | add bridge |
 | `keeper_hammer_back` | end | `standing-back` | pixels 99.84%; anchor (-0.5, 0); landmarks 3px | add bridge |
@@ -91,9 +91,9 @@ Migration guard: the current legacy failures are frozen in `data/keeper_endpoint
 | `keeper_hot_drink_drink` | start | `standing-side-right` | pixels 99.94%; anchor (-1.5, 0); landmarks 3.75px | add bridge |
 | `keeper_hot_drink_drink` | end | `standing-side-right` | pixels 99.9%; anchor (-1.5, 0); landmarks 3.75px | add bridge |
 | `keeper_hot_drink_pickup` | start | `standing-side-right` | pixels 99.83%; anchor (-1.5, 0); landmarks 4.75px | add bridge |
-| `keeper_hot_drink_pickup` | end | `standing-side-right` | pixels 99.91%; anchor (-1.5, 0); landmarks 5px | add bridge |
-| `keeper_hot_drink_pour` | start | `standing-side-right` | pixels 99.97%; anchor (-3, 0); landmarks 5.25px | add bridge |
-| `keeper_hot_drink_pour` | end | `standing-side-right` | pixels 100%; anchor (-3, 0); landmarks 5px | add bridge |
+| `keeper_hot_drink_pickup` | end | `standing-side-right` | pixels 99.93%; anchor (-1.5, 0); landmarks 4.75px | add bridge |
+| `keeper_hot_drink_pour` | start | `standing-side-right` | pixels 99.95%; anchor (-1, 0); landmarks 1.25px | add bridge |
+| `keeper_hot_drink_pour` | end | `standing-side-right` | pixels 99.94%; anchor (-1, 0); landmarks 1.75px | add bridge |
 | `keeper_hot_drink_put_down` | start | `standing-side-right` | pixels 99.96%; anchor (-2, 0); landmarks 3px | add bridge |
 | `keeper_hot_drink_put_down` | end | `standing-side-right` | pixels 99.92%; anchor (-2, 0); landmarks 5px | add bridge |
 | `keeper_hot_drink_stir` | start | `standing-side-right` | pixels 99.84%; anchor (-1, 0); landmarks 2.25px | add bridge |
@@ -102,18 +102,18 @@ Migration guard: the current legacy failures are frozen in `data/keeper_endpoint
 | `keeper_hungry` | end | `standing-front` | pixels 99.91%; anchor (0, 0); landmarks 1.25px | add bridge |
 | `keeper_ladder_climb` | start | `climbing-back` | neutral missing | add neutral and bridge |
 | `keeper_ladder_climb` | end | `climbing-back` | neutral missing | add neutral and bridge |
-| `keeper_lawn_mower_push` | start | `standing-side-right` | pixels 99.99%; anchor (0, 0); landmarks 6px | add bridge |
-| `keeper_lawn_mower_push` | end | `standing-side-right` | pixels 100%; anchor (0, 0); landmarks 5.75px | add bridge |
-| `keeper_lean_table_back` | start | `standing-back` | pixels 99.79%; anchor (0, 0); landmarks 1.25px | add bridge |
-| `keeper_lean_table_back` | end | `standing-back` | pixels 99.75%; anchor (0, 0); landmarks 1px | add bridge |
+| `keeper_lawn_mower_push` | start | `standing-side-right` | pixels 99.99%; anchor (-2.5, 0); landmarks 10.25px | add bridge |
+| `keeper_lawn_mower_push` | end | `standing-side-right` | pixels 99.97%; anchor (-2.5, 0); landmarks 10px | add bridge |
+| `keeper_lean_table_back` | start | `standing-back` | pixels 99.82%; anchor (0, 0); landmarks 1.25px | add bridge |
+| `keeper_lean_table_back` | end | `standing-back` | pixels 99.76%; anchor (0, 0); landmarks 1px | add bridge |
 | `keeper_lift_button_front` | start | `standing-front` | pixels 99.98%; anchor (0, 0); landmarks 1px | add bridge |
 | `keeper_lift_button_front` | end | `standing-front` | pixels 99.97%; anchor (0, 0); landmarks 1.25px | add bridge |
-| `keeper_machete_side` | start | `standing-side-right` | pixels 99.75%; anchor (-0.5, 0); landmarks 4.75px | add bridge |
-| `keeper_machete_side` | end | `standing-side-right` | pixels 99.93%; anchor (-0.5, 0); landmarks 4.75px | add bridge |
-| `keeper_meal_from_oven_back` | start | `standing-back` | pixels 99.6%; anchor (0, 0); landmarks 0.25px | add bridge |
-| `keeper_meal_from_oven_back` | end | `standing-back` | pixels 99.73%; anchor (0, 0); landmarks 0.25px | add bridge |
-| `keeper_meal_place_side` | start | `standing-side-right` | pixels 99.91%; anchor (-1.5, 0); landmarks 4.75px | add bridge |
-| `keeper_meal_place_side` | end | `standing-side-right` | pixels 99.93%; anchor (-1.5, 0); landmarks 2.25px | add bridge |
+| `keeper_machete_side` | start | `standing-side-right` | pixels 99.95%; anchor (-0.5, 0); landmarks 6px | add bridge |
+| `keeper_machete_side` | end | `standing-side-right` | pixels 99.97%; anchor (-0.5, 0); landmarks 6.25px | add bridge |
+| `keeper_meal_from_oven_back` | start | `standing-back` | pixels 99.82%; anchor (-1.5, 0); landmarks 2.5px | add bridge |
+| `keeper_meal_from_oven_back` | end | `standing-back` | pixels 99.82%; anchor (-1.5, 0); landmarks 2.25px | add bridge |
+| `keeper_meal_place_side` | start | `standing-side-right` | pixels 99.97%; anchor (-1.5, 0); landmarks 4.5px | add bridge |
+| `keeper_meal_place_side` | end | `standing-side-right` | pixels 99.89%; anchor (-1.5, 0); landmarks 2.25px | add bridge |
 | `keeper_operate_outboard` | start | `standing-rear-right` | neutral missing | add neutral and bridge |
 | `keeper_operate_outboard` | end | `standing-rear-right` | neutral missing | add neutral and bridge |
 | `keeper_parachute_drift` | start | `parachute-open` | neutral missing | add neutral and bridge |
@@ -121,7 +121,7 @@ Migration guard: the current legacy failures are frozen in `data/keeper_endpoint
 | `keeper_parachute_jump` | start | `standing-side-right` | pixels 99.95%; anchor (2.5, 0); landmarks 7.25px | add bridge |
 | `keeper_parachute_jump` | end | `parachute-open` | neutral missing | add neutral and bridge |
 | `keeper_parachute_landing` | start | `parachute-open` | neutral missing | add neutral and bridge |
-| `keeper_parachute_landing` | end | `standing-side-right` | pixels 99.99%; anchor (0, 0); landmarks 18.25px | add bridge |
+| `keeper_parachute_landing` | end | `standing-side-right` | pixels 99.99%; anchor (0, -3); landmarks 18.25px | add bridge |
 | `keeper_piano` | start | `sitting-side-right` | pixels 99.99%; anchor (0, 0); landmarks 1px | add bridge |
 | `keeper_piano` | end | `sitting-side-right` | pixels 99.97%; anchor (0, 0); landmarks 0.5px | add bridge |
 | `keeper_pick_fruit` | start | `standing-side-right` | pixels 99.88%; anchor (0, 0); landmarks 1.25px | add bridge |
@@ -268,8 +268,8 @@ Migration guard: the current legacy failures are frozen in `data/keeper_endpoint
 | `keeper_mechanic_fix` | end | `standing-side-right` | pixels 99.89%; anchor (2, 0); landmarks 5.75px | add bridge |
 | `keeper_mechanic_walk_back` | start | `standing-back` | pixels 99.42%; anchor (0, 0); landmarks 0.5px | add bridge |
 | `keeper_mechanic_walk_back` | end | `standing-back` | pixels 99.54%; anchor (0, 0); landmarks 0.5px | add bridge |
-| `keeper_mechanic_walk_front` | start | `standing-front` | pixels 99.62%; anchor (0, 0); landmarks 0.5px | add bridge |
-| `keeper_mechanic_walk_front` | end | `standing-front` | pixels 99.79%; anchor (0, 0); landmarks 0.5px | add bridge |
+| `keeper_mechanic_walk_front` | start | `standing-front` | pixels 99.7%; anchor (0, 0); landmarks 0.5px | add bridge |
+| `keeper_mechanic_walk_front` | end | `standing-front` | pixels 99.77%; anchor (0, 0); landmarks 0.5px | add bridge |
 | `keeper_mechanic_walk_side` | start | `standing-side-right` | pixels 99.52%; anchor (0, 0); landmarks 1.75px | add bridge |
 | `keeper_mechanic_walk_side` | end | `standing-side-right` | pixels 99.52%; anchor (0, 0); landmarks 1px | add bridge |
 
@@ -277,7 +277,7 @@ Migration guard: the current legacy failures are frozen in `data/keeper_endpoint
 
 | Clip | Failing end | Expected pose | Delta | Remedy |
 |---|---|---|---|---|
-| `keeper_lift_weights_back` | end | `standing-back` | pixels 94.95%; anchor (-0.5, 0); landmarks 0px | add bridge |
+| `keeper_lift_weights_back` | end | `standing-back` | pixels 97.62%; anchor (0, 0); landmarks 0.25px | add bridge |
 | `keeper_pressups_side` | end | `prone-side-right` | pixels 98.82%; anchor (0, 0); landmarks 0.75px | add bridge |
 | `keeper_ride_bike_front` | start | `sitting-front` | neutral missing | add neutral and bridge |
 | `keeper_ride_bike_front` | end | `sitting-front` | neutral missing | add neutral and bridge |
@@ -382,7 +382,7 @@ Migration guard: the current legacy failures are frozen in `data/keeper_endpoint
 |---|---|---|---|---|
 | `keeper_bath_enter` | end | `sitting-front` | neutral missing | add neutral and bridge |
 | `keeper_bath_exit` | start | `sitting-front` | neutral missing | add neutral and bridge |
-| `keeper_bath_exit` | end | `standing-side-right` | pixels 99.4%; anchor (0, 0); landmarks 0.25px | add bridge |
+| `keeper_bath_exit` | end | `standing-side-right` | pixels 99.79%; anchor (2, 0); landmarks 4.75px | add bridge |
 | `keeper_shower_enter` | start | `standing-rear-right` | pixels 0%; anchor (1, 0); landmarks 0px | fix endpoint frame |
 | `keeper_shower_enter` | end | `standing-back` | neutral missing | add neutral and bridge |
 | `keeper_shower_exit` | start | `standing-back` | neutral missing | add neutral and bridge |

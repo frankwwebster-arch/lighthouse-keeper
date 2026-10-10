@@ -1,7 +1,7 @@
 {
   "w": 32,
   "h": 40,
-  "frames": 8,
+  "frames": 7,
   "fps": 4,
   "density": 4,
   "anchor": [
@@ -20,5 +20,25 @@
   "facing": "right",
   "interaction": "nap-seated",
   "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ],
+  "reviewScaleRounds": {
+    "2026-10-10": [
+      100,
+      100
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-10": [
+      0,
+      0
+    ]
+  },
   "assetRole": "clip"
 }

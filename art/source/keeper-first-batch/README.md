@@ -214,8 +214,17 @@ hammer studies were never copied into this source directory. The corrected box
 search ends with both arms reaching forward on the far side of the torso; its
 hands-behind-body predecessor is retained in `replaced-search-boxes-v1/` only.
 The corrected machete source uses the same broad, smooth-edged blade in all
-eight poses—never saw teeth—and production uses a 64 × 40 long-tool canvas so
+eight poses—never saw teeth—and production uses a 96 × 40 long-tool canvas so
 the low follow-through and final frame retain the complete blade.
+
+The 10 October second-round sources, exact prompt intent and SHA-256 register
+are recorded in `docs/review/KEEPER_ANIMATION_IMAGEGEN_PROMPTS_2026-10-10.md`.
+Snow clearing, darts and machete production now extract from isolated 4×2 or
+5×3 component grids rather than tightly packed one-row studies. The retained
+one-row files are provenance only. `author_keeper.py` requires the exact number
+of dominant keeper components, associates detached darts with the nearest
+same-grid keeper, and the permanent verifier rejects every review frame whose
+alpha lacks a transparent left/right gutter.
 
 `keeper-anti-gravity-generated-source.png` was rebuilt in referenced-image edit
 mode after the original seated float was rejected. The final prompt requires
