@@ -42,13 +42,14 @@ Keeper review cards now also preview, save and export a proposed per-clip
 runtime FPS. Accepted `animationFps` values belong in each animation's source
 JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
-1. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. In parallel, Frank's immutable second visual review has 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed. Frank's saved per-animation width and height remain final production art direction.
-2. Art for the mission floors (aquarium, weather station, hidden lair), their furniture, the lift and a floor-arrival effect (Codex; hooks in docs/FOR_CODEX.md).
-3. Tier art for upgrades (Codex; list in docs/FOR_CODEX.md). Typed commands for upgrading ("upgrade the TV") are not in yet; upgrades are bought from the tap menu.
-4. Mini games: fishing, cooking, telescope spotting.
-5. Day/night palette, non-skippable ~30s night recap.
-6. Replace the temporary on-island shop fallback with an early off-island unlock and boat travel through an indoor water-filled boathouse/dry dock. Boat tiers: rowing boat, tug, speedboat. The external shop never breaks; the keeper's boathouse, jetty and boat may.
-7. Workshop floor that reduces breakdown pressure; tune its effect only after Ralph's playtesting shows whether faults are fun or irritating.
+1. Run the exhaustive sprite-frame isolation audit in `docs/prompts/KEEPER_SPRITE_FRAME_ISOLATION_AUDIT.md`. Inspect every sheet, repair only sheets with shared-edge contamination or ambiguous component ownership, and make the no-overlap rule a build invariant.
+2. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. In parallel, Frank's immutable second visual review has 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed. Frank's saved per-animation width and height remain final production art direction.
+3. Art for the mission floors (aquarium, weather station, hidden lair), their furniture, the lift and a floor-arrival effect (Codex; hooks in docs/FOR_CODEX.md).
+4. Tier art for upgrades (Codex; list in docs/FOR_CODEX.md). Typed commands for upgrading ("upgrade the TV") are not in yet; upgrades are bought from the tap menu.
+5. Mini games: fishing, cooking, telescope spotting.
+6. Day/night palette, non-skippable ~30s night recap.
+7. Replace the temporary on-island shop fallback with an early off-island unlock and boat travel through an indoor water-filled boathouse/dry dock. Boat tiers: rowing boat, tug, speedboat. The external shop never breaks; the keeper's boathouse, jetty and boat may.
+8. Workshop floor that reduces breakdown pressure; tune its effect only after Ralph's playtesting shows whether faults are fun or irritating.
 
 ## Housekeeping for Frank
 - Change the grown-ups PIN from 1234.

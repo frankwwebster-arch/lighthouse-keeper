@@ -1,0 +1,29 @@
+---
+description: Prevent pixels, props, and effects from crossing sprite-frame boundaries
+alwaysApply: true
+---
+
+# Sprite-sheet frame isolation
+
+Apply this whenever creating, editing, extracting, packing, reviewing, or
+verifying a sprite sheet.
+
+- Treat declared frame cells as authoritative. The character, clothing, held
+  objects, detached props, particles, shadows, and projectiles belonging to a
+  frame must remain wholly inside that frame's cell.
+- Leave a fully transparent safety gutter between opaque pixels and every cell
+  edge shared with another frame. No opaque or partially transparent pixel may
+  touch or cross a shared boundary.
+- Never infer pose ownership from list position, visual order, or a crop that
+  cuts through opaque pixels. Assign source components to an exact named frame
+  and keep detached components with that frame.
+- If poses overlap in source art, do not conceal the problem with tighter
+  cropping. Re-extract from genuinely isolated source poses or rerender only
+  the affected artwork while preserving identity, anatomy, contacts, scale,
+  timing, and accepted dimensions.
+- Inspect the final production strip frame by frame. Source files or successful
+  generation alone are not proof of completion.
+- Add or extend a deterministic verifier so every new or changed sheet fails
+  validation when a shared frame edge contains alpha or source pixels can be
+  assigned to more than one frame.
+
