@@ -276,11 +276,13 @@ review_path = ROOT / "docs/review/frank-keeper-animation-review-2026-10-09.json"
 assert hashlib.sha256(review_path.read_bytes()).hexdigest() == "c19129f8419df2c046f3abb06de9f339f1cd8edb31c2d505dea8e79562d5f486"
 review_export = json.loads(review_path.read_text())
 assert review_export["version"] == 8 and len(review_export["reviews"]) == 161
+review_names = [review["name"] for review in review_export["reviews"]]
+assert len(review_names) == len(set(review_names)) == 161
 assert len(review_export["happyAnimations"]) == 88
 assert len(review_export["redraftAnimations"]) == 28
 assert len(review_export["reviewLaterAnimations"]) == 3
 responses = json.loads((ROOT / "docs/review/keeper-animation-codex-responses-2026-10-09.json").read_text())
-assert responses and set(responses) <= keeper_names
+assert len(responses) == 79 and set(responses) <= keeper_names
 assert all(isinstance(value, str) and value.strip() for value in responses.values())
 awaiting_names = {
     review["name"]
@@ -357,6 +359,60 @@ assert all((ROOT / path).exists() for path in scale_audit["contactSheets"])
 review_html = (ROOT / "docs/keeper-scale-audit/review.html").read_text()
 assert "__KEEPER_REVIEW_DATA__" not in review_html
 assert '"reviewedAnimationSheets":173' in review_html
+# Parse the exact payload used by the page, then prove every imported note and
+# decision remains attached to its original keeper_* name. Filters only retain
+# card objects; they must never join notes to cards by visible-list position.
+review_page_data = json.loads(
+    review_html.split("const DATA=", 1)[1].split(";\nconst $=", 1)[0]
+)
+page_reviews = review_page_data["initialReviews"]
+page_assets = {asset["name"]: asset for asset in review_page_data["assets"]}
+assert len(page_assets) == 173
+assert set(page_reviews) == set(review_names)
+for imported in review_export["reviews"]:
+    name = imported["name"]
+    delivered = page_reviews[name]
+    assert delivered["notes"] == imported.get("notes", ""), name
+    assert delivered["happy"] is imported.get("happy", False), name
+    assert delivered["reviewLater"] is imported.get("reviewLater", False), name
+    expected_status = (
+        "happy" if imported.get("happy") else
+        "review-later" if imported.get("reviewLater") else
+        "awaiting-new-draft"
+    )
+    assert page_assets[name]["reviewStatus"] == expected_status, name
+    escaped_comment = str(imported.get("notes", "") or "").replace("|", "\\|").replace("\n", "<br>")
+    expected_row_start = f"| `{name}` | {page_assets[name]['frames']} | {escaped_comment} |"
+    assert resolution.count(expected_row_start) == 1, name
+ordered_page_assets = sorted(page_assets.values(), key=lambda asset: asset["name"])
+filter_groups = {
+    "all": ordered_page_assets,
+    "needs-input": [asset for asset in ordered_page_assets if asset["reviewStatus"] != "happy"],
+    "happy": [asset for asset in ordered_page_assets if asset["reviewStatus"] == "happy"],
+    "awaiting-new-draft": [asset for asset in ordered_page_assets if asset["reviewStatus"] == "awaiting-new-draft"],
+    "review-later": [asset for asset in ordered_page_assets if asset["reviewStatus"] == "review-later"],
+    "unreviewed": [asset for asset in ordered_page_assets if asset["reviewStatus"] == "unreviewed"],
+    "has-response": [asset for asset in ordered_page_assets if asset["codexResponse"]],
+}
+assert {name: len(assets) for name, assets in filter_groups.items()} == {
+    "all": 173,
+    "needs-input": 85,
+    "happy": 88,
+    "awaiting-new-draft": 70,
+    "review-later": 3,
+    "unreviewed": 12,
+    "has-response": 79,
+}
+for filtered_assets in filter_groups.values():
+    # A complete Next cycle visits each same-filter object exactly once and
+    # wraps to the first. Its comment is still looked up by that object's name.
+    names = [asset["name"] for asset in filtered_assets]
+    assert names and len(names) == len(set(names))
+    walked = [names[index % len(names)] for index in range(len(names) + 1)]
+    assert walked[:-1] == names and walked[-1] == names[0]
+    for name in names:
+        if name in imported_reviews:
+            assert page_reviews[name]["notes"] == imported_reviews[name].get("notes", "")
 for token in (
     "Needs my input",
     "Happy",
@@ -371,6 +427,10 @@ for token in (
     "function filteredReviewCards()",
     "function applyReviewFilter",
     "function stepDetail(delta)",
+    "savedReview(asset.name)",
+    "reviewNotes.value=card.notes",
+    "state.savedReviews[asset.name]",
+    "state.reviewCards.indexOf(next)",
     "(Math.max(0,position)+delta+filtered.length)%filtered.length",
     "version:9",
     "reviewStatuses",

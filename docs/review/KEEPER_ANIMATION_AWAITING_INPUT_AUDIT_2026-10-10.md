@@ -71,6 +71,22 @@ Previous/Next navigation and the arrow keys remain within the selected filter
 and wrap from its final result to its first, so the final card never drops the
 reviewer into another category.
 
+### Original-comment identity check
+
+The review pipeline attaches saved state by the exact `keeper_*` animation
+name, never by a card's current visible position. The filter retains the same
+card objects and only changes which objects are visible; Previous/Next selects
+from that filtered object list and then resolves the selected object back to
+its stable full-list index.
+
+The verifier parses the data embedded in the generated review page and compares
+all 161 keyed records with Frank's immutable export. It requires unique source
+names, the identical set of page names, byte-for-byte matching note text,
+matching Happy/Review-later decisions, the expected status on the same named
+asset, and the exact comment in the same named resolution-table row. The
+2026-10-10 audit found zero missing names, extra names, comment/decision
+mismatches or status mismatches.
+
 The generated resolution register is
 `KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-09.md`; per-card narratives are
 stored separately in `keeper-animation-codex-responses-2026-10-09.json` so
