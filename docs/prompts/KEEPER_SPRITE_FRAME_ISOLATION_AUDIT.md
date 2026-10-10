@@ -11,6 +11,12 @@ reconstruction.
 ## Ready-to-paste prompt
 
 ```text
+This is the SECOND audit in the project sequence. First confirm that the
+side-on beard/hand-occlusion audit in
+`docs/prompts/KEEPER_SIDE_ON_BEARD_OCCLUSION_AUDIT.md` has completed, passed
+its verifier, and is present on remote main. If it has not, stop and report
+that prerequisite.
+
 Continue the Lighthouse Keeper work in:
 
 /Users/frank/Documents/ChatGPT/Lighthouse Keeper
@@ -65,4 +71,3 @@ canonical live URL returns HTTP 200.
 Report only: sheets inspected; sheets changed; any artwork rerendered rather
 than deterministically repaired; verifier/test results; commit and deployment.
 ```
-

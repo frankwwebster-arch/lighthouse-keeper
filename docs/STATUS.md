@@ -42,7 +42,7 @@ Keeper review cards now also preview, save and export a proposed per-clip
 runtime FPS. Accepted `animationFps` values belong in each animation's source
 JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
-1. Run the exhaustive sprite-frame isolation audit in `docs/prompts/KEEPER_SPRITE_FRAME_ISOLATION_AUDIT.md`. Inspect every sheet, repair only sheets with shared-edge contamination or ambiguous component ownership, and make the no-overlap rule a build invariant.
+1. Run the side-on beard/hand-occlusion audit in `docs/prompts/KEEPER_SIDE_ON_BEARD_OCCLUSION_AUDIT.md` first, then run the exhaustive sprite-frame isolation audit in `docs/prompts/KEEPER_SPRITE_FRAME_ISOLATION_AUDIT.md`.
 2. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. In parallel, Frank's immutable second visual review has 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed. Frank's saved per-animation width and height remain final production art direction.
 3. Art for the mission floors (aquarium, weather station, hidden lair), their furniture, the lift and a floor-arrival effect (Codex; hooks in docs/FOR_CODEX.md).
 4. Tier art for upgrades (Codex; list in docs/FOR_CODEX.md). Typed commands for upgrading ("upgrade the TV") are not in yet; upgrades are bought from the tap menu.

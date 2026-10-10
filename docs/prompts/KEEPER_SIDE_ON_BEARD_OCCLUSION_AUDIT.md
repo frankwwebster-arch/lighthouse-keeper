@@ -2,10 +2,9 @@
 
 ## When to run this
 
-Run this as a separate second-stage audit **after**
-`KEEPER_SPRITE_FRAME_ISOLATION_AUDIT.md` has completed, been verified, and
-been committed. Do not combine the two audits or use this prompt to reopen
-already-clean frame-spacing work.
+Run this **first**, before `KEEPER_SPRITE_FRAME_ISOLATION_AUDIT.md`. It is a
+separate identity and layer-order audit; do not combine it with frame-spacing
+work.
 
 ## Recommended model
 
@@ -21,18 +20,16 @@ Continue the Lighthouse Keeper work in:
 
 /Users/frank/Documents/ChatGPT/Lighthouse Keeper
 
-This is a SECOND-STAGE audit. First confirm that the exhaustive sprite-frame
-isolation audit in docs/prompts/KEEPER_SPRITE_FRAME_ISOLATION_AUDIT.md has
-completed, passed its verifier, and is present on remote main. If it has not,
-stop and report that prerequisite instead of mixing the audits.
+This is the FIRST audit in a two-audit sequence. Complete and commit this
+side-on beard/hand-occlusion audit before starting the later exhaustive
+sprite-frame isolation audit. Do not mix the two audits.
 
 Read these before changing anything:
 
 1. .cursor/rules/sprite-sheet-frame-isolation.mdc
 2. docs/KEEPER_ANIMATION_HANDOFF.md
-3. docs/prompts/KEEPER_SPRITE_FRAME_ISOLATION_AUDIT.md
-4. docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md
-5. art/source/keeper-first-batch/README.md
+3. docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md
+4. art/source/keeper-first-batch/README.md
 
 Audit ALL side-on Keeper animations whose actor is standing or sitting. Use
 the source sidecars and manifest to find every right-facing, left-facing,
