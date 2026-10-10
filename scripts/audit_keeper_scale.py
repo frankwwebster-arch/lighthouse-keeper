@@ -11,6 +11,7 @@ from __future__ import annotations
 import csv
 import json
 import math
+import shutil
 import statistics
 from pathlib import Path
 
@@ -20,6 +21,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "art/raw/keeper-first-batch"
 OUT = ROOT / "docs/keeper-scale-audit"
+PUBLIC_REVIEW = ROOT / "public/keeper-review"
 CONTRACT = json.loads((ROOT / "data/keeper_asset_contract.json").read_text())
 DENSITY = CONTRACT["canvas"]["standard"]["density"]
 AUDIT_REVISION = "2026-10-10-second-review-delta-v4"
@@ -29,6 +31,7 @@ CODEX_RESPONSE_PATHS = (
     ROOT / "docs/review/keeper-animation-codex-responses-2026-10-09.json",
     ROOT / "docs/review/keeper-animation-codex-responses-2026-10-10.json",
 )
+SIDE_ON_OCCLUSION_REGISTER_PATH = ROOT / "data/keeper_side_on_beard_occlusion_audit.json"
 REVIEW_SETTINGS = {
     review["name"]: review
     for review in json.loads(REVIEW_IMPORT_PATH.read_text())["reviews"]
@@ -629,6 +632,33 @@ def publish(assets: list[dict]) -> None:
             "codexResponse": codex_responses.get(asset["name"], ""),
         })
 
+    # Drafts are opt-in review consumers. They never replace the canonical
+    # source strip, runtime manifest entry, or existing production preview.
+    if SIDE_ON_OCCLUSION_REGISTER_PATH.exists():
+        side_on_register = json.loads(SIDE_ON_OCCLUSION_REGISTER_PATH.read_text())
+        draft_record_path = ROOT / side_on_register["draft"]["register"]
+        if draft_record_path.exists():
+            draft_record = json.loads(draft_record_path.read_text())
+            for asset in review_assets:
+                if asset["name"] != draft_record["animation"]:
+                    continue
+                draft_sidecar = json.loads((ROOT / draft_record["draft"]["sidecar"]).read_text())
+                asset["draftVariant"] = {
+                    "name": asset["name"],
+                    "source": draft_record["draft"]["strip"],
+                    "frames": draft_sidecar["frames"],
+                    "fps": draft_sidecar["fps"],
+                    "canvas": [draft_sidecar["w"], draft_sidecar["h"]],
+                    "anchor": draft_sidecar["anchor"],
+                    "postureClass": asset["postureClass"],
+                    "interaction": asset["interaction"],
+                    "firstFrameAlphaBox": asset["firstFrameAlphaBox"],
+                    "sha256": draft_record["draft"]["stripSha256"],
+                    "correctedFrames": draft_record["draft"]["correctedFrames"],
+                    "layerOrderDecision": "foreground hand/fingers/wrist over beard at the declared crossing; rear hand remains behind beard",
+                }
+                break
+
     initial_reviews = {}
     for asset in review_assets:
         imported = imported_reviews.get(asset["name"])
@@ -670,10 +700,20 @@ def publish(assets: list[dict]) -> None:
             "sittingBack": review_clip(reviewed_by_name["keeper_sit_back"]),
         },
         "reviewRevision": "2026-10-10-second-review-delta-v3",
+        "sideOnOcclusionAudit": side_on_register if SIDE_ON_OCCLUSION_REGISTER_PATH.exists() else None,
         "initialReviews": initial_reviews,
         "assets": review_assets,
     }
-    (OUT / "review.html").write_text(template.replace("__KEEPER_REVIEW_DATA__", json.dumps(review_payload, separators=(",", ":"))))
+    review_html = template.replace("__KEEPER_REVIEW_DATA__", json.dumps(review_payload, separators=(",", ":")))
+    (OUT / "review.html").write_text(review_html)
+    PUBLIC_REVIEW.mkdir(parents=True, exist_ok=True)
+    (PUBLIC_REVIEW / "index.html").write_text(review_html)
+    if SIDE_ON_OCCLUSION_REGISTER_PATH.exists():
+        draft_public_dir = PUBLIC_REVIEW / "drafts"
+        draft_public_dir.mkdir(parents=True, exist_ok=True)
+        draft_record = json.loads((ROOT / side_on_register["draft"]["register"]).read_text())
+        draft_strip = ROOT / draft_record["draft"]["strip"]
+        shutil.copyfile(draft_strip, draft_public_dir / draft_strip.name)
 
     def table_text(value: object) -> str:
         return str(value or "").replace("|", "\\|").replace("\n", "<br>")
@@ -709,6 +749,8 @@ def publish(assets: list[dict]) -> None:
             classification = "fix"
             decision = "Changed and ready for Frank's verdict"
             change = codex_responses.get(asset["name"], asset["note"])
+        if asset["name"] == "keeper_darts" and SIDE_ON_OCCLUSION_REGISTER_PATH.exists():
+            change = "Canonical production remains unchanged; a draft-only foreground-hand-over-beard correction is recorded for frames 3–6 and awaits explicit promotion or rejection."
         verification = (
             "Retained; full audit" if asset["reviewStatus"] == "happy" else
             "Deferred; unchanged" if asset["reviewStatus"] == "review-later" else
@@ -724,6 +766,13 @@ def publish(assets: list[dict]) -> None:
             f"| `{asset['name']}` | {asset['frames']} | {table_text(comment)} | {classification} | "
             f"{table_text(decision)} | {table_text(change)} | {status_label} | {verification} | current main delivery |"
         )
+    if SIDE_ON_OCCLUSION_REGISTER_PATH.exists():
+        resolution_lines.extend([
+            "",
+            "## Draft-only side-on beard/hand occlusion audit",
+            "",
+            "`keeper_darts` frames 3–6 have a qualified draft correction for the foreground hand/beard layer order. The partial v1 exact-name register inventories 101 standing/sitting side-action sheets and records mirrored/derived outputs as consumers, but it did not complete the required frame-by-frame comparison with the fuller stepped `keeper_clear_snow` beard. Canonical art, runtime strips, the manifest and immutable review exports remain untouched; rerun the corrected beard audit before any promotion decision.",
+        ])
     resolution_path = ROOT / "docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md"
     resolution_path.write_text("\n".join(resolution_lines) + "\n")
 
@@ -763,6 +812,11 @@ def publish(assets: list[dict]) -> None:
         "Each card's frame-control block can play only that reviewed action from frame 1. `Play once` stops on the final frame; `Loop` repeats until paused. This playback choice is inspection-only and does not dirty the review.",
         "At browser widths of 1500px or more, focused mode becomes a widescreen workstation with the pinned canon on the left, a viewport-height animation stage in the centre and a compact two-column control console on the right. Control groups are colour-coded: amber for character size, purple for the ghost, blue for animation transforms, teal for frame navigation and green/red for review decisions and notes.",
         "Review progress is browser-local: changing display zoom or review-state filter saves immediately, and every `Save this review` records that animation as the latest completed card. Reloading restores the focused view and filter. Offline and online browser storage do not synchronise automatically; use Export on one copy and Import review JSON on the other. Saving or advancing from the final result wraps to the first result in that same filter.",
+        "",
+        "## Draft-only side-on beard/hand occlusion audit",
+        "",
+        "The partial v1 audit is recorded in `data/keeper_side_on_beard_occlusion_audit.json`. It inventories 101 exact standing/seated side-on names and their mirrored/derived consumers, but it does not claim the required frame-by-frame comparison with the fuller stepped `keeper_clear_snow` beard. Its only draft is the `keeper_darts` foreground-hand-over-beard correction in frames 3–6. Canonical production art, `public/sprites/`, the runtime manifest, immutable review exports and existing previews remain untouched. The canonical and draft strips are shown together on the exact `keeper_darts` card in this review page.",
+        "The versioned draft, original/draft SHA-256 register, frame evidence and rollback point are under `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/`. Run `node scripts/verify_side_on_beard_occlusion.ts` to validate that partial evidence, then rerun the corrected canonical-beard audit before promotion. Rejecting the draft requires only deleting that versioned directory.",
         "",
         "## Corrected sheets",
         "",

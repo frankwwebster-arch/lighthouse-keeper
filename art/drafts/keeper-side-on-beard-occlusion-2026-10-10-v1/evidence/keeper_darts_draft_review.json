@@ -1,0 +1,15 @@
+{
+  "auditId": "2026-10-10-v1",
+  "animation": "keeper_darts",
+  "canonical": "art/raw/keeper-first-batch/keeper_darts_f14.png",
+  "draft": "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/keeper_darts_f14.png",
+  "exactFrames": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "decision": "qualified draft correction for explicit promotion or rejection",
+  "layerOrderDecision": "foreground throwing hand/fingers/wrist over the canonical beard at the ear-crossing; rear dart hand remains behind the beard",
+  "canonicalRemainsAuthoritative": true
+}

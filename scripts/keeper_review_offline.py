@@ -20,10 +20,13 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 HOST = "127.0.0.1"
 PORT = 8765
-REVIEW_ROUTE = "/docs/keeper-scale-audit/review.html"
-REVIEW_PATH = ROOT / REVIEW_ROUTE.removeprefix("/")
+REVIEW_ROUTE = "/keeper-review/"
+REVIEW_PATH = ROOT / "public" / REVIEW_ROUTE.removeprefix("/") / "index.html"
 REVIEW_URL = f"http://{HOST}:{PORT}{REVIEW_ROUTE}"
-SOURCE_PREFIX = "/art/raw/keeper-first-batch/"
+SOURCE_PREFIXES = (
+    "/sprites/",
+    "/keeper-review/drafts/",
+)
 PAGE_MARKER = "<title>Keeper sizing and transition review</title>"
 PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
 
@@ -60,9 +63,17 @@ def validate_local_files() -> list[str]:
     if PAGE_MARKER not in page:
         raise RuntimeError("the generated review page has the wrong title")
     sources = review_sources()
-    if len(sources) != 173:
+    canonical_names = set()
+    draft_names = set()
+    payload_text = page.split("const DATA=", 1)[1].split(";\nconst $=", 1)[0]
+    payload = json.loads(payload_text)
+    for asset in payload["assets"]:
+        canonical_names.add(asset["name"])
+        if asset.get("draftVariant"):
+            draft_names.add(Path(asset["draftVariant"]["source"]).name)
+    if len(canonical_names) != 173 or not draft_names:
         raise RuntimeError(
-            f"the generated review page names {len(sources)} unique sprite strips, expected 173"
+            f"the generated review page names {len(canonical_names)} canonical and {len(draft_names)} draft sprite strips; expected 173 canonical and at least one draft"
         )
     for source in sources:
         path = (ROOT / source).resolve()
@@ -75,7 +86,17 @@ def validate_local_files() -> list[str]:
         with path.open("rb") as handle:
             if handle.read(8) != PNG_SIGNATURE:
                 raise RuntimeError(f"review source is not a PNG: {source}")
-    return sources
+    for name in canonical_names:
+        path = ROOT / "public/sprites" / f"{name}.png"
+        if not path.is_file():
+            raise RuntimeError(f"published review sprite is missing: {path.relative_to(ROOT)}")
+    for name in draft_names:
+        path = ROOT / "public/keeper-review/drafts" / name
+        if not path.is_file():
+            raise RuntimeError(f"published draft sprite is missing: {path.relative_to(ROOT)}")
+    return [f"sprites/{name}.png" for name in sorted(canonical_names)] + [
+        f"keeper-review/drafts/{name}" for name in sorted(draft_names)
+    ]
 
 
 class OfflineReviewHandler(SimpleHTTPRequestHandler):
@@ -84,7 +105,7 @@ class OfflineReviewHandler(SimpleHTTPRequestHandler):
     def allowed(self) -> bool:
         route = unquote(urlsplit(self.path).path)
         return route == REVIEW_ROUTE or (
-            route.startswith(SOURCE_PREFIX) and route.endswith(".png")
+            any(route.startswith(prefix) for prefix in SOURCE_PREFIXES) and route.endswith(".png")
         )
 
     def redirect_root(self) -> bool:
@@ -142,7 +163,7 @@ def page_is_served(sources: list[str]) -> bool:
 
 
 def new_server() -> ThreadingHTTPServer:
-    handler = partial(OfflineReviewHandler, directory=str(ROOT))
+    handler = partial(OfflineReviewHandler, directory=str(ROOT / "public"))
     server = ThreadingHTTPServer((HOST, PORT), handler)
     server.daemon_threads = True
     return server

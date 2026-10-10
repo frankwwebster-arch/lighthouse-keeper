@@ -1,0 +1,2315 @@
+{
+  "auditId": "2026-10-10-v1",
+  "scope": "partial v1 side-on standing and sitting occlusion inventory; canonical keeper_clear_snow beard comparison still requires the corrected rerun",
+  "auditStatus": "partial-superseded-by-corrected-beard-prompt",
+  "canonicalBeardFrameAuditComplete": false,
+  "generatedAt": "2026-10-10",
+  "beardReference": {
+    "name": "keeper_clear_snow",
+    "source": "art/source/keeper-first-batch/keeper-clear-snow-round2-grid-generated-source.png",
+    "strip": "art/raw/keeper-first-batch/keeper_clear_snow_f8.png",
+    "sourceSha256": "b5470890cef0448794414393947e50eb55971884d59cb389a8947bdbbf5dc455",
+    "stripSha256": "fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96",
+    "identityRule": "accepted stepped side-on beard silhouette, colour, edge treatment, and identity; this v1 audit preserved its hash but did not complete the required frame-by-frame silhouette comparison"
+  },
+  "auditedSheetCount": 101,
+  "auditedSheetNames": [
+    "keeper_aquarium_brush",
+    "keeper_aquarium_net",
+    "keeper_artist_smock_turn_back",
+    "keeper_artist_smock_turn_front",
+    "keeper_artist_smock_walk",
+    "keeper_bath_enter",
+    "keeper_bath_exit",
+    "keeper_bathrobe_walk",
+    "keeper_boat_enter",
+    "keeper_boat_exit",
+    "keeper_bowling",
+    "keeper_cake_turn_right",
+    "keeper_carry_cake",
+    "keeper_carry_meal",
+    "keeper_carry_shopping",
+    "keeper_check_instrument_side",
+    "keeper_clear_snow",
+    "keeper_darts",
+    "keeper_dig",
+    "keeper_door_open_back",
+    "keeper_door_open_side",
+    "keeper_door_open_side_pyjamas",
+    "keeper_drink_pint",
+    "keeper_drive_speedboat",
+    "keeper_eat_seated",
+    "keeper_feed_animals",
+    "keeper_fish_feed_up",
+    "keeper_fish_seated",
+    "keeper_fish_standing",
+    "keeper_get_into_bed",
+    "keeper_guitar_pickup_acoustic",
+    "keeper_guitar_pickup_flying_v_1967",
+    "keeper_guitar_pickup_gretsch",
+    "keeper_halloween_walk_side",
+    "keeper_hammer_side",
+    "keeper_hoover_basic",
+    "keeper_hoover_super",
+    "keeper_hot_drink_drink",
+    "keeper_hot_drink_pickup",
+    "keeper_hot_drink_pour",
+    "keeper_hot_drink_put_down",
+    "keeper_hot_drink_stir",
+    "keeper_knight_walk_side",
+    "keeper_lawn_mower_push",
+    "keeper_lift_button_front",
+    "keeper_machete_side",
+    "keeper_meal_place_side",
+    "keeper_mechanic_fix",
+    "keeper_mechanic_walk_side",
+    "keeper_nap_seated",
+    "keeper_operate_outboard",
+    "keeper_paint_side",
+    "keeper_parachute_jump",
+    "keeper_parachute_landing",
+    "keeper_party_eat_cake",
+    "keeper_party_walk",
+    "keeper_piano",
+    "keeper_pick_fruit",
+    "keeper_pick_vegetable",
+    "keeper_pirate_walk_side",
+    "keeper_place_cake",
+    "keeper_platform_dive",
+    "keeper_put_record",
+    "keeper_pyjamas_walk",
+    "keeper_read_side",
+    "keeper_row_boat",
+    "keeper_saw_wood",
+    "keeper_scuba_jetty_dive",
+    "keeper_scuba_walk_side",
+    "keeper_shower_door_open_bathrobe",
+    "keeper_shower_enter",
+    "keeper_shower_enter_bathrobe",
+    "keeper_shower_exit",
+    "keeper_sit_side",
+    "keeper_slide_side",
+    "keeper_snooker",
+    "keeper_souwester_walk_side",
+    "keeper_sow_seeds",
+    "keeper_spaceman_walk_side",
+    "keeper_spiral_stairs",
+    "keeper_spiral_stairs_down",
+    "keeper_spiral_stairs_up",
+    "keeper_stairs_down",
+    "keeper_stairs_up",
+    "keeper_sweep_broom",
+    "keeper_switch_press_back",
+    "keeper_switch_press_side",
+    "keeper_table_tennis",
+    "keeper_tarzan_walk_side",
+    "keeper_telescope",
+    "keeper_turn_back",
+    "keeper_type_computer",
+    "keeper_urinate_back",
+    "keeper_video_game",
+    "keeper_walk",
+    "keeper_watch_movie",
+    "keeper_watch_tv",
+    "keeper_water_plants_side",
+    "keeper_weld",
+    "keeper_write_side",
+    "keeper_yawn"
+  ],
+  "sheetsChanged": [
+    "keeper_darts"
+  ],
+  "exactFramesChanged": {
+    "keeper_darts": [
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "inventory": [
+    {
+      "name": "keeper_aquarium_brush",
+      "frames": 8,
+      "canvas": [
+        49,
+        49
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_aquarium_brush_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_aquarium_brush_f8.json",
+      "mirrorConsumers": [
+        "derived:aquariumBrushRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_aquarium_net",
+      "frames": 8,
+      "canvas": [
+        44,
+        42
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_aquarium_net_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_aquarium_net_f8.json",
+      "mirrorConsumers": [
+        "derived:aquariumNetRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_artist_smock_turn_back",
+      "frames": 6,
+      "canvas": [
+        32,
+        40
+      ],
+      "facing": "right-to-back",
+      "startPose": "standing-side-right",
+      "endPose": "standing-back",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_artist_smock_turn_back_f6.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_artist_smock_turn_back_f6.json",
+      "mirrorConsumers": [
+        "reverse:artist_smock_turn_side"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_artist_smock_turn_front",
+      "frames": 6,
+      "canvas": [
+        32,
+        40
+      ],
+      "facing": "right-to-front",
+      "startPose": "standing-side-right",
+      "endPose": "standing-front",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_artist_smock_turn_front_f6.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_artist_smock_turn_front_f6.json",
+      "mirrorConsumers": [
+        "reverse:artist_smock_turn_side_from_front"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_artist_smock_walk",
+      "frames": 8,
+      "canvas": [
+        34,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_artist_smock_walk_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_artist_smock_walk_f8.json",
+      "mirrorConsumers": [
+        "derived:artistSmockWalkRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_bath_enter",
+      "frames": 8,
+      "canvas": [
+        47,
+        41
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "sitting-front",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_bath_enter_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_bath_enter_f8.json",
+      "mirrorConsumers": [
+        "mirror:left",
+        "reverse:bath-exit"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_bath_exit",
+      "frames": 8,
+      "canvas": [
+        50,
+        47
+      ],
+      "facing": "right",
+      "startPose": "sitting-front",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_bath_exit_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_bath_exit_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_bathrobe_walk",
+      "frames": 8,
+      "canvas": [
+        32,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_bathrobe_walk_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_bathrobe_walk_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_boat_enter",
+      "frames": 8,
+      "canvas": [
+        50,
+        48
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "sitting-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_boat_enter_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_boat_enter_f8.json",
+      "mirrorConsumers": [
+        "derived:boatEnterRight",
+        "mirror:left"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_boat_exit",
+      "frames": 8,
+      "canvas": [
+        50,
+        48
+      ],
+      "facing": "front-right",
+      "startPose": "sitting-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_boat_exit_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_boat_exit_f8.json",
+      "mirrorConsumers": [
+        "derived:boatExitRight",
+        "mirror:left"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_bowling",
+      "frames": 8,
+      "canvas": [
+        52,
+        41
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_bowling_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_bowling_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_cake_turn_right",
+      "frames": 6,
+      "canvas": [
+        56,
+        40
+      ],
+      "facing": "back-to-right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_cake_turn_right_f6.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_cake_turn_right_f6.json",
+      "mirrorConsumers": [
+        "derived:cakeTurnLeft",
+        "derived:cakeTurnRight",
+        "mirror:back-to-left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_carry_cake",
+      "frames": 8,
+      "canvas": [
+        50,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_carry_cake_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_carry_cake_f8.json",
+      "mirrorConsumers": [
+        "derived:carryCakeLeft",
+        "derived:carryCakeRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_carry_meal",
+      "frames": 8,
+      "canvas": [
+        50,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_carry_meal_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_carry_meal_f8.json",
+      "mirrorConsumers": [
+        "derived:carryMealLeft",
+        "derived:carryMealRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_carry_shopping",
+      "frames": 8,
+      "canvas": [
+        34,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_carry_shopping_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_carry_shopping_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_check_instrument_side",
+      "frames": 6,
+      "canvas": [
+        33,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_check_instrument_side_f6.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_check_instrument_side_f6.json",
+      "mirrorConsumers": [
+        "derived:instrumentCheckSide",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_clear_snow",
+      "frames": 8,
+      "canvas": [
+        81,
+        41
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_clear_snow_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_clear_snow_f8.json",
+      "mirrorConsumers": [
+        "derived:clearSnowLeft",
+        "derived:clearSnowRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_darts",
+      "frames": 14,
+      "canvas": [
+        72,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_darts_f14.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_darts_f14.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "draft-occlusion-corrected-beard-audit-pending",
+      "correctedFrames": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "layerOrderDecision": "Foreground throwing hand/fingers/wrist are composited over the canonical beard at the ear-crossing in frames 3–6; the rear dart hand remains behind the beard.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_dig",
+      "frames": 8,
+      "canvas": [
+        37,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_dig_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_dig_f8.json",
+      "mirrorConsumers": [
+        "derived:digGroundRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_door_open_back",
+      "frames": 6,
+      "canvas": [
+        34,
+        41
+      ],
+      "facing": null,
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_door_open_back_f6.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_door_open_back_f6.json",
+      "mirrorConsumers": [
+        "derived:doorBackRightHand",
+        "reverse:door_close_back"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_door_open_side",
+      "frames": 6,
+      "canvas": [
+        33,
+        40
+      ],
+      "facing": null,
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_door_open_side_f6.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_door_open_side_f6.json",
+      "mirrorConsumers": [
+        "derived:doorSideRight",
+        "reverse:door_close_side"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_door_open_side_pyjamas",
+      "frames": 6,
+      "canvas": [
+        33,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_door_open_side_pyjamas_f6.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_door_open_side_pyjamas_f6.json",
+      "mirrorConsumers": [
+        "derived:doorSidePyjamasRight",
+        "mirror:left",
+        "reverse:door_close_side_pyjamas"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_drink_pint",
+      "frames": 8,
+      "canvas": [
+        46,
+        40
+      ],
+      "facing": "front-right",
+      "startPose": "sitting-side-right",
+      "endPose": "sitting-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_drink_pint_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_drink_pint_f8.json",
+      "mirrorConsumers": [
+        "mirror:front-left"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_drive_speedboat",
+      "frames": 8,
+      "canvas": [
+        33,
+        41
+      ],
+      "facing": "right",
+      "startPose": "sitting-side-right",
+      "endPose": "sitting-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_drive_speedboat_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_drive_speedboat_f8.json",
+      "mirrorConsumers": [
+        "derived:speedboatHelmRight",
+        "mirror:left"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_eat_seated",
+      "frames": 8,
+      "canvas": [
+        34,
+        41
+      ],
+      "facing": null,
+      "startPose": "sitting-side-right",
+      "endPose": "sitting-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_eat_seated_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_eat_seated_f8.json",
+      "mirrorConsumers": [],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_feed_animals",
+      "frames": 8,
+      "canvas": [
+        36,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_feed_animals_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_feed_animals_f8.json",
+      "mirrorConsumers": [
+        "derived:animalBowlRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_fish_feed_up",
+      "frames": 14,
+      "canvas": [
+        32,
+        48
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_fish_feed_up_f14.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_fish_feed_up_f14.json",
+      "mirrorConsumers": [
+        "derived:fishFeedHighRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_fish_seated",
+      "frames": 41,
+      "canvas": [
+        179,
+        146
+      ],
+      "facing": "right",
+      "startPose": "sitting-side-right",
+      "endPose": "sitting-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_fish_seated_f41.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_fish_seated_f41.json",
+      "mirrorConsumers": [
+        "derived:fishingSeatedRight",
+        "mirror:left"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_fish_standing",
+      "frames": 50,
+      "canvas": [
+        133,
+        112
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_fish_standing_f50.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_fish_standing_f50.json",
+      "mirrorConsumers": [
+        "derived:fishingStandingRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_get_into_bed",
+      "frames": 8,
+      "canvas": [
+        48,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "lying-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_get_into_bed_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_get_into_bed_f8.json",
+      "mirrorConsumers": [
+        "derived:bedEntryRight",
+        "mirror:left",
+        "reverse:get_out_of_bed"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_guitar_pickup_acoustic",
+      "frames": 12,
+      "canvas": [
+        77,
+        56
+      ],
+      "facing": "side-to-back-to-front-right",
+      "startPose": "standing-side-right",
+      "endPose": "play-guitar-acoustic",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_guitar_pickup_acoustic_f12.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_guitar_pickup_acoustic_f12.json",
+      "mirrorConsumers": [],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_guitar_pickup_flying_v_1967",
+      "frames": 12,
+      "canvas": [
+        72,
+        56
+      ],
+      "facing": "side-to-back-to-front-right",
+      "startPose": "standing-side-right",
+      "endPose": "play-guitar-flying-v-1967",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_guitar_pickup_flying_v_1967_f12.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_guitar_pickup_flying_v_1967_f12.json",
+      "mirrorConsumers": [],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_guitar_pickup_gretsch",
+      "frames": 12,
+      "canvas": [
+        73,
+        56
+      ],
+      "facing": "side-to-back-to-front-right",
+      "startPose": "standing-side-right",
+      "endPose": "play-guitar-gretsch",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_guitar_pickup_gretsch_f12.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_guitar_pickup_gretsch_f12.json",
+      "mirrorConsumers": [],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_halloween_walk_side",
+      "frames": 8,
+      "canvas": [
+        35,
+        48
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_halloween_walk_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_halloween_walk_side_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_hammer_side",
+      "frames": 8,
+      "canvas": [
+        47,
+        44
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_hammer_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_hammer_side_f8.json",
+      "mirrorConsumers": [
+        "derived:workbenchHammerRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_hoover_basic",
+      "frames": 8,
+      "canvas": [
+        52,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_hoover_basic_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_hoover_basic_f8.json",
+      "mirrorConsumers": [
+        "derived:hooverBasicLeft",
+        "derived:hooverBasicRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_hoover_super",
+      "frames": 8,
+      "canvas": [
+        55,
+        41
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_hoover_super_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_hoover_super_f8.json",
+      "mirrorConsumers": [
+        "derived:hooverSuperLeft",
+        "derived:hooverSuperRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_hot_drink_drink",
+      "frames": 8,
+      "canvas": [
+        51,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_hot_drink_drink_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_hot_drink_drink_f8.json",
+      "mirrorConsumers": [
+        "derived:hotDrinkSipRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_hot_drink_pickup",
+      "frames": 7,
+      "canvas": [
+        51,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_hot_drink_pickup_f7.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_hot_drink_pickup_f7.json",
+      "mirrorConsumers": [
+        "derived:hotDrinkPickupRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_hot_drink_pour",
+      "frames": 9,
+      "canvas": [
+        58,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_hot_drink_pour_f9.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_hot_drink_pour_f9.json",
+      "mirrorConsumers": [
+        "derived:hotDrinkPourRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_hot_drink_put_down",
+      "frames": 8,
+      "canvas": [
+        54,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_hot_drink_put_down_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_hot_drink_put_down_f8.json",
+      "mirrorConsumers": [
+        "derived:hotDrinkPutDownRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_hot_drink_stir",
+      "frames": 8,
+      "canvas": [
+        50,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_hot_drink_stir_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_hot_drink_stir_f8.json",
+      "mirrorConsumers": [
+        "derived:hotDrinkStirRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_knight_walk_side",
+      "frames": 8,
+      "canvas": [
+        32,
+        48
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_knight_walk_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_knight_walk_side_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_lawn_mower_push",
+      "frames": 8,
+      "canvas": [
+        53,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_lawn_mower_push_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_lawn_mower_push_f8.json",
+      "mirrorConsumers": [
+        "derived:lawnMowerPushLeft",
+        "derived:lawnMowerPushRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_lift_button_front",
+      "frames": 7,
+      "canvas": [
+        34,
+        40
+      ],
+      "facing": "front",
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_lift_button_front_f7.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_lift_button_front_f7.json",
+      "mirrorConsumers": [
+        "derived:liftButtonFront",
+        "mirror:front-left-hand"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_machete_side",
+      "frames": 8,
+      "canvas": [
+        123,
+        52
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_machete_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_machete_side_f8.json",
+      "mirrorConsumers": [
+        "derived:machetePlantRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_meal_place_side",
+      "frames": 8,
+      "canvas": [
+        73,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_meal_place_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_meal_place_side_f8.json",
+      "mirrorConsumers": [
+        "derived:mealTableRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_mechanic_fix",
+      "frames": 8,
+      "canvas": [
+        44,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_mechanic_fix_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_mechanic_fix_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_mechanic_walk_side",
+      "frames": 8,
+      "canvas": [
+        32,
+        48
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_mechanic_walk_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_mechanic_walk_side_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_nap_seated",
+      "frames": 7,
+      "canvas": [
+        32,
+        40
+      ],
+      "facing": "right",
+      "startPose": "sitting-side-right",
+      "endPose": "sitting-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_nap_seated_f7.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_nap_seated_f7.json",
+      "mirrorConsumers": [
+        "derived:seatedNapRight",
+        "mirror:left"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_operate_outboard",
+      "frames": 8,
+      "canvas": [
+        36,
+        41
+      ],
+      "facing": "rear-right",
+      "startPose": "standing-rear-right",
+      "endPose": "standing-rear-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_operate_outboard_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_operate_outboard_f8.json",
+      "mirrorConsumers": [
+        "derived:outboardRight",
+        "mirror:rear-left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_paint_side",
+      "frames": 8,
+      "canvas": [
+        47,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_paint_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_paint_side_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_parachute_jump",
+      "frames": 9,
+      "canvas": [
+        67,
+        84
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "parachute-open",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_parachute_jump_f9.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_parachute_jump_f9.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_parachute_landing",
+      "frames": 10,
+      "canvas": [
+        96,
+        103
+      ],
+      "facing": "right",
+      "startPose": "parachute-open",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_parachute_landing_f10.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_parachute_landing_f10.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_party_eat_cake",
+      "frames": 8,
+      "canvas": [
+        40,
+        48
+      ],
+      "facing": "right",
+      "startPose": "sitting-side-right",
+      "endPose": "sitting-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_party_eat_cake_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_party_eat_cake_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_party_walk",
+      "frames": 8,
+      "canvas": [
+        32,
+        48
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_party_walk_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_party_walk_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_piano",
+      "frames": 8,
+      "canvas": [
+        32,
+        40
+      ],
+      "facing": null,
+      "startPose": "sitting-side-right",
+      "endPose": "sitting-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_piano_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_piano_f8.json",
+      "mirrorConsumers": [],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_pick_fruit",
+      "frames": 8,
+      "canvas": [
+        32,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_pick_fruit_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_pick_fruit_f8.json",
+      "mirrorConsumers": [
+        "derived:harvestHighRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_pick_vegetable",
+      "frames": 8,
+      "canvas": [
+        35,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_pick_vegetable_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_pick_vegetable_f8.json",
+      "mirrorConsumers": [
+        "derived:harvestLowRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_pirate_walk_side",
+      "frames": 8,
+      "canvas": [
+        32,
+        48
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_pirate_walk_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_pirate_walk_side_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_place_cake",
+      "frames": 8,
+      "canvas": [
+        58,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_place_cake_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_place_cake_f8.json",
+      "mirrorConsumers": [
+        "derived:placeCakeLeft",
+        "derived:placeCakeRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_platform_dive",
+      "frames": 10,
+      "canvas": [
+        48,
+        56
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_platform_dive_f10.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_platform_dive_f10.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_put_record",
+      "frames": 8,
+      "canvas": [
+        68,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_put_record_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_put_record_f8.json",
+      "mirrorConsumers": [
+        "derived:turntableRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_pyjamas_walk",
+      "frames": 8,
+      "canvas": [
+        33,
+        41
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_pyjamas_walk_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_pyjamas_walk_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_read_side",
+      "frames": 8,
+      "canvas": [
+        33,
+        40
+      ],
+      "facing": "right",
+      "startPose": "sitting-side-right",
+      "endPose": "sitting-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_read_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_read_side_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_row_boat",
+      "frames": 8,
+      "canvas": [
+        47,
+        44
+      ],
+      "facing": "right",
+      "startPose": "sitting-side-right",
+      "endPose": "sitting-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_row_boat_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_row_boat_f8.json",
+      "mirrorConsumers": [
+        "derived:rowBoatRight",
+        "mirror:left"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_saw_wood",
+      "frames": 8,
+      "canvas": [
+        65,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_saw_wood_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_saw_wood_f8.json",
+      "mirrorConsumers": [
+        "derived:sawWoodRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_scuba_jetty_dive",
+      "frames": 12,
+      "canvas": [
+        80,
+        72
+      ],
+      "facing": "right-to-prone",
+      "startPose": "scuba-standing-side-right",
+      "endPose": "scuba-swim-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_scuba_jetty_dive_f12.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_scuba_jetty_dive_f12.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_scuba_walk_side",
+      "frames": 8,
+      "canvas": [
+        48,
+        56
+      ],
+      "facing": "right",
+      "startPose": "scuba-standing-side-right",
+      "endPose": "scuba-standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_scuba_walk_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_scuba_walk_side_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_shower_door_open_bathrobe",
+      "frames": 10,
+      "canvas": [
+        44,
+        40
+      ],
+      "facing": "rear-right",
+      "startPose": "standing-rear-right",
+      "endPose": "standing-rear-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_shower_door_open_bathrobe_f10.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_shower_door_open_bathrobe_f10.json",
+      "mirrorConsumers": [
+        "derived:showerDoorBathrobeRight",
+        "mirror:rear-left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_shower_enter",
+      "frames": 8,
+      "canvas": [
+        48,
+        40
+      ],
+      "facing": "rear-right",
+      "startPose": "standing-rear-right",
+      "endPose": "standing-back",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_shower_enter_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_shower_enter_f8.json",
+      "mirrorConsumers": [
+        "mirror:rear-left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_shower_enter_bathrobe",
+      "frames": 8,
+      "canvas": [
+        57,
+        40
+      ],
+      "facing": "back",
+      "startPose": "standing-rear-right",
+      "endPose": "standing-back",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_shower_enter_bathrobe_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_shower_enter_bathrobe_f8.json",
+      "mirrorConsumers": [
+        "mirror:rear-left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_shower_exit",
+      "frames": 8,
+      "canvas": [
+        48,
+        40
+      ],
+      "facing": "rear-right",
+      "startPose": "standing-back",
+      "endPose": "standing-rear-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_shower_exit_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_shower_exit_f8.json",
+      "mirrorConsumers": [
+        "mirror:rear-left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_sit_side",
+      "frames": 6,
+      "canvas": [
+        32,
+        40
+      ],
+      "facing": null,
+      "startPose": "standing-side-right",
+      "endPose": "sitting-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_sit_side_f6.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_sit_side_f6.json",
+      "mirrorConsumers": [
+        "reverse:stand_side"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_slide_side",
+      "frames": 8,
+      "canvas": [
+        48,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_slide_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_slide_side_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_snooker",
+      "frames": 8,
+      "canvas": [
+        64,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_snooker_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_snooker_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_souwester_walk_side",
+      "frames": 8,
+      "canvas": [
+        33,
+        48
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_souwester_walk_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_souwester_walk_side_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_sow_seeds",
+      "frames": 8,
+      "canvas": [
+        33,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_sow_seeds_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_sow_seeds_f8.json",
+      "mirrorConsumers": [
+        "derived:sowGroundRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_spaceman_walk_side",
+      "frames": 8,
+      "canvas": [
+        32,
+        48
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_spaceman_walk_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_spaceman_walk_side_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_spiral_stairs",
+      "frames": 8,
+      "canvas": [
+        40,
+        48
+      ],
+      "facing": "three-quarter",
+      "startPose": "standing-rear-right",
+      "endPose": "standing-rear-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_spiral_stairs_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_spiral_stairs_f8.json",
+      "mirrorConsumers": [],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_spiral_stairs_down",
+      "frames": 8,
+      "canvas": [
+        40,
+        48
+      ],
+      "facing": "rotating-rear-to-front-right",
+      "startPose": "standing-rear-right",
+      "endPose": "standing-rear-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_spiral_stairs_down_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_spiral_stairs_down_f8.json",
+      "mirrorConsumers": [],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_spiral_stairs_up",
+      "frames": 8,
+      "canvas": [
+        40,
+        48
+      ],
+      "facing": "rotating-right-to-rear",
+      "startPose": "standing-rear-right",
+      "endPose": "standing-rear-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_spiral_stairs_up_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_spiral_stairs_up_f8.json",
+      "mirrorConsumers": [],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_stairs_down",
+      "frames": 8,
+      "canvas": [
+        36,
+        40
+      ],
+      "facing": null,
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_stairs_down_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_stairs_down_f8.json",
+      "mirrorConsumers": [],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_stairs_up",
+      "frames": 8,
+      "canvas": [
+        35,
+        41
+      ],
+      "facing": null,
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_stairs_up_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_stairs_up_f8.json",
+      "mirrorConsumers": [],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_sweep_broom",
+      "frames": 8,
+      "canvas": [
+        48,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_sweep_broom_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_sweep_broom_f8.json",
+      "mirrorConsumers": [
+        "derived:sweepBroomLeft",
+        "derived:sweepBroomRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_switch_press_back",
+      "frames": 6,
+      "canvas": [
+        32,
+        40
+      ],
+      "facing": "back",
+      "startPose": "standing-back",
+      "endPose": "standing-back",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_switch_press_back_f6.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_switch_press_back_f6.json",
+      "mirrorConsumers": [
+        "derived:switchBackLeftHand",
+        "derived:switchBackRightHand",
+        "mirror:back-left-hand",
+        "reverse:switch_withdraw_back"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_switch_press_side",
+      "frames": 6,
+      "canvas": [
+        33,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_switch_press_side_f6.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_switch_press_side_f6.json",
+      "mirrorConsumers": [
+        "derived:switchSideLeft",
+        "derived:switchSideRight",
+        "mirror:left",
+        "reverse:switch_withdraw_side"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_table_tennis",
+      "frames": 8,
+      "canvas": [
+        40,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_table_tennis_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_table_tennis_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_tarzan_walk_side",
+      "frames": 8,
+      "canvas": [
+        34,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_tarzan_walk_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_tarzan_walk_side_f8.json",
+      "mirrorConsumers": [
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_telescope",
+      "frames": 8,
+      "canvas": [
+        49,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_telescope_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_telescope_f8.json",
+      "mirrorConsumers": [
+        "derived:telescopeRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_turn_back",
+      "frames": 6,
+      "canvas": [
+        32,
+        40
+      ],
+      "facing": null,
+      "startPose": "standing-side-right",
+      "endPose": "standing-back",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_turn_back_f6.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_turn_back_f6.json",
+      "mirrorConsumers": [
+        "reverse:turn_front"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_type_computer",
+      "frames": 8,
+      "canvas": [
+        32,
+        40
+      ],
+      "facing": "front-right",
+      "startPose": "sitting-side-right",
+      "endPose": "sitting-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_type_computer_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_type_computer_f8.json",
+      "mirrorConsumers": [
+        "mirror:front-left"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_urinate_back",
+      "frames": 6,
+      "canvas": [
+        32,
+        40
+      ],
+      "facing": null,
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_urinate_back_f6.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_urinate_back_f6.json",
+      "mirrorConsumers": [],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_video_game",
+      "frames": 8,
+      "canvas": [
+        48,
+        40
+      ],
+      "facing": "rear-right",
+      "startPose": "sitting-rear-right",
+      "endPose": "sitting-rear-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_video_game_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_video_game_f8.json",
+      "mirrorConsumers": [
+        "derived:videoGameRight",
+        "mirror:rear-left"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_walk",
+      "frames": 8,
+      "canvas": [
+        32,
+        40
+      ],
+      "facing": null,
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_walk_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_walk_f8.json",
+      "mirrorConsumers": [],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_watch_movie",
+      "frames": 8,
+      "canvas": [
+        52,
+        41
+      ],
+      "facing": "rear-right",
+      "startPose": "sitting-rear-right",
+      "endPose": "sitting-rear-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_watch_movie_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_watch_movie_f8.json",
+      "mirrorConsumers": [
+        "derived:watchMovieLeft",
+        "derived:watchMovieRight",
+        "mirror:rear-left"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_watch_tv",
+      "frames": 8,
+      "canvas": [
+        34,
+        40
+      ],
+      "facing": "rear-right",
+      "startPose": "sitting-rear-right",
+      "endPose": "sitting-rear-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_watch_tv_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_watch_tv_f8.json",
+      "mirrorConsumers": [
+        "derived:watchTvLeft",
+        "derived:watchTvRight",
+        "mirror:rear-left"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_water_plants_side",
+      "frames": 8,
+      "canvas": [
+        55,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_water_plants_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_water_plants_side_f8.json",
+      "mirrorConsumers": [
+        "derived:waterPlantsRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_weld",
+      "frames": 8,
+      "canvas": [
+        33,
+        40
+      ],
+      "facing": "right",
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_weld_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_weld_f8.json",
+      "mirrorConsumers": [
+        "derived:weldRight",
+        "mirror:left"
+      ],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_write_side",
+      "frames": 8,
+      "canvas": [
+        41,
+        41
+      ],
+      "facing": "right",
+      "startPose": "sitting-side-right",
+      "endPose": "sitting-side-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_write_side_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_write_side_f8.json",
+      "mirrorConsumers": [
+        "derived:tableWritingRight",
+        "mirror:left"
+      ],
+      "posture": "sitting",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    },
+    {
+      "name": "keeper_yawn",
+      "frames": 8,
+      "canvas": [
+        34,
+        40
+      ],
+      "facing": "front-right",
+      "startPose": "standing-rear-right",
+      "endPose": "standing-rear-right",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_yawn_f8.png",
+      "sourceSidecar": "art/raw/keeper-first-batch/keeper_yawn_f8.json",
+      "mirrorConsumers": [],
+      "posture": "standing",
+      "status": "occlusion-only-beard-audit-pending",
+      "correctedFrames": [],
+      "layerOrderDecision": "Preserve the canonical beard above genuinely rear hands; foreground hand/finger/wrist pixels remain above the beard at every declared crossing.",
+      "sourceExists": true
+    }
+  ],
+  "draft": {
+    "directory": "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1",
+    "register": "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/draft-register.json",
+    "promotionRequired": true,
+    "canonicalPromotion": false
+  },
+  "verifierContract": {
+    "exactNameResponsesOnly": true,
+    "failIfForegroundHandCoveredByBeard": true,
+    "failIfCorrectedSheetLosesTransparentFrameGutters": true,
+    "mirrorAndDerivedOutputsAreConsumersOnly": true,
+    "canonicalBeardFrameAuditComplete": false
+  }
+}

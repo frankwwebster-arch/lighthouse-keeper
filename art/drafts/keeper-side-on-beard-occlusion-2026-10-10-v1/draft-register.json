@@ -1,0 +1,69 @@
+{
+  "auditId": "2026-10-10-v1",
+  "animation": "keeper_darts",
+  "original": {
+    "source": "art/source/keeper-first-batch/keeper-darts-round2-grid-generated-source-beard-corrected.png",
+    "sourceSha256": "ed8fd9e733c4468541f20b4976e75111838f76194c592951ecf6b27211aefa48",
+    "strip": "art/raw/keeper-first-batch/keeper_darts_f14.png",
+    "stripSha256": "4d20777e18b0243b58a855c7b93e8866626319c5303a35d6087bb80af983468b",
+    "sidecar": "art/raw/keeper-first-batch/keeper_darts_f14.json",
+    "sidecarSha256": "cb03fafbdf80913355c5ad7b6b100a3a34fa3c40832061ece5e2004de30c19e5"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/source/keeper-darts-round2-grid-generated-source-beard-corrected.png",
+    "sourceSha256": "ed8fd9e733c4468541f20b4976e75111838f76194c592951ecf6b27211aefa48",
+    "strip": "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/keeper_darts_f14.png",
+    "stripSha256": "2f41a4fa8fa0b750d75a3c72fd3e98c9e4cb94798f2cd72b29d16dff64578f91",
+    "sidecar": "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/source/keeper_darts_f14.json",
+    "sidecarSha256": "f3113c48e250a3ec258cb51456aff05e7160cebe515032348de7d4d253f626b7",
+    "correctedFrames": [
+      {
+        "frame": 3,
+        "pixels": 20,
+        "logicalBox": [
+          36,
+          10,
+          38,
+          14
+        ]
+      },
+      {
+        "frame": 4,
+        "pixels": 21,
+        "logicalBox": [
+          36,
+          11,
+          38,
+          16
+        ]
+      },
+      {
+        "frame": 5,
+        "pixels": 32,
+        "logicalBox": [
+          36,
+          10,
+          38,
+          17
+        ]
+      },
+      {
+        "frame": 6,
+        "pixels": 27,
+        "logicalBox": [
+          36,
+          10,
+          38,
+          18
+        ]
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/evidence/keeper_darts_canonical_vs_draft_contact_sheet.png",
+      "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/evidence/keeper_darts_draft_preview.png",
+      "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/evidence/keeper_darts_scale_evidence.json",
+      "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/evidence/keeper_darts_draft_review.json"
+    ]
+  },
+  "rollback": "discard this versioned draft directory; canonical source, strip, sidecar, manifest and existing review exports remain untouched"
+}

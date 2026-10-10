@@ -14,15 +14,17 @@ npm run keeper-contract # rebuild neutral stills, bridges and the endpoint audit
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
 
-The keeper animation reviewer works without Wi-Fi on this Mac. Double-click
-`Open Keeper Review Offline.command`, leave its Terminal window open, and use
-the browser page it opens. It serves only over `127.0.0.1`, loads all 173
-animation strips from this repository, retains saved review progress in that
-browser and downloads `keeper-scale-choices.json` normally. Browser storage is
-not synchronised between the offline and online copies: use Export on one and
-Import review JSON on the other. Import validates exact `keeper_*` names, so
-comments and decisions are never joined by display position. No `npm` command,
-internet connection or Vercel access is required.
+The canonical online keeper animation reviewer is
+`https://lighthouse-keeper-mu.vercel.app/keeper-review/`. The offline launcher
+serves an exact repository copy of that same generated page and review-only
+draft assets: double-click `Open Keeper Review Offline.command`, leave its
+Terminal window open, and use the browser page it opens. Both versions load all
+173 animation strips, retain saved review progress in that browser and download
+`keeper-scale-choices.json` normally. Browser storage is not synchronised
+between the online and offline origins: use Export on one and Import review JSON
+on the other. Import validates exact `keeper_*` names, so comments and decisions
+are never joined by display position. The offline copy needs no `npm` command,
+internet connection or Vercel access.
 
 ## Current implementation
 
@@ -36,6 +38,7 @@ internet connection or Vercel access is required.
 - Keeper-owned assets can now break during play, block their normal actions, and be repaired. Grown-ups control average fault frequency and maximum concurrent faults; defaults are off / one. Breakdown events expose placeholder SFX categories for later audio. The shop is excluded because it is not the keeper's asset.
 - The reviewed production keeper batch remains 191 aligned exports: 173 animation sheets (1,475 frames) plus 18 technical component/reference sheets. The neutral contract adds deterministic derived stills and bridges without changing that review denominator; the current raw contract contains 325 keeper sheets and publishes 339 total pictures including room/effect art. Every full-body sheet has registered `startPose` / `endPose`, walk sounds are authored once as zero-based `sfxCues`, and `npm test` rejects new or regressed endpoint failures. The exact-pixel migration audit is `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`; 300 legacy endpoints remain an explicit, costume-ordered bridge/frame repair queue rather than being silently treated as exact. The five sample routes already have exact walk, four-facing turn, sit, nap, brush, TV-turn and bed endpoints; tea's specialised held-prop handoffs remain in that queue. Frank's immutable second review leaves 96 happy, 68 awaiting new-draft review, 3 marked for later and 6 unreviewed. See `docs/review/KEEPER_ANIMATION_SECOND_ROUND_DELTA_2026-10-10.md` for the exact delta and current visual-review audit.
 - Every sprite-sheet workflow must keep each frame's character, props, effects and projectiles wholly inside its declared cell, with a transparent safety gutter at shared edges. The permanent project rule is `.cursor/rules/sprite-sheet-frame-isolation.mdc`; the exhaustive existing-sheet audit is the next dedicated art task in `docs/prompts/KEEPER_SPRITE_FRAME_ISOLATION_AUDIT.md`. All amendments are draft-first and require explicit promotion before canonical assets or deployment change; the existing reviewer must show old and draft variants side-by-side.
+- The partial v1 side-on audit is registered in `data/keeper_side_on_beard_occlusion_audit.json` and checked by `scripts/verify_side_on_beard_occlusion.ts`. It inventories 101 exact standing/sitting side-action names and provides a qualified `keeper_darts` frames 3–6 occlusion draft, but it did not complete the required frame-by-frame comparison with the fuller stepped `keeper_clear_snow` beard. Rerun the corrected beard prompt before promotion; canonical art and runtime outputs remain authoritative.
 - Multi-frame keeper animations use 4fps by default. Frank's accepted timing changes are explicit `KEEPER_FPS_OVERRIDES` values from 1fps to 10.5fps, written to each clip's source JSON sidecar and regenerated into the runtime manifest without changing sprite pixels. The shared sprite renderer reads each manifest FPS independently, and the keeper review page can preview, save and export a later 1–20fps proposal for every action.
 - Sprite manifest entries may be old string paths or metadata objects with frames, fps and optional loop/mirror/reverse/interaction-point contracts. Horizontal strips animate without CSS scaling or rotation.
 - All SVG object targets work by touch, mouse, Enter and Space. At a 1024 × 768 iPad viewport, the first-three-floor targets were verified at a minimum 82 × 94 CSS px.
@@ -57,7 +60,8 @@ internet connection or Vercel access is required.
 - `data/keeper_asset_contract.json` — authoritative machine-readable scale, pivots and interaction points.
 - `data/keeper_pose_registry.json`, `data/keeper_endpoint_audit.json` and `data/keeper_endpoint_exceptions.json` — shared pose vocabulary, current real-pixel endpoint evidence, and the frozen legacy migration boundary.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
-- `docs/keeper-scale-audit/review.html` — unified sizing and walk-to-action transition review for all 173 accepted animations, with review-state filters, filter-aware cyclic Previous/Next navigation, a specific read-only Codex response on every awaiting-input card, reload-resumable progress/filter/zoom, focused one-animation mode, frame stepping, current-card play-once/loop, canonical standing and sitting references, precise ±0.5 controls, notes/decision flags and version-9 JSON export/import by exact animation name. Double-click `Open Keeper Review Offline.command` to use this complete workflow without Wi-Fi; transfer progress manually by Export/Import because browser storage does not auto-sync.
+- `public/keeper-review/index.html` — canonical online reviewer deployed at `/keeper-review/`; the offline launcher serves this exact same file and its review-only draft assets. `docs/keeper-scale-audit/review.html` remains the generated audit copy and must be byte-identical. The reviewer covers all 173 accepted animations with review-state filters, filter-aware cyclic navigation, canonical/draft comparisons, frame stepping, exact-name JSON import/export and saved browser-local progress. Transfer progress manually by Export/Import because browser storage does not auto-sync between origins.
+- `data/keeper_side_on_beard_occlusion_audit.json` and `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` — exact-name inventory, rollback hashes, draft strip/sidecar, contact sheet, preview, scale evidence and review evidence for the first beard/hand occlusion audit. Run `npm run verify:side-on-beard-occlusion` or `npm test` to verify it without promoting the draft.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.
 - `docs/DOORS_STAIRS_AND_COSTUMES.md` — agreed stairway, door and costume-change rules, seamless clip joins, and the decisions still to make.
 - `docs/BACKGROUND_ELEMENTS.md` — Codex's brief for every background layer, sunrise and sunset, night lighting, and the every-asset-can-be-upgraded rule for objects.

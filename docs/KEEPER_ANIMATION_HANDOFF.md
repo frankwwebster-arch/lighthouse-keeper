@@ -224,6 +224,25 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 
 ## Current evidence and files
 
+- The partial v1 side-on beard/hand occlusion audit (2026-10-10) is recorded in
+  `data/keeper_side_on_beard_occlusion_audit.json`. It inventories 101 exact
+  standing/sitting side-action names, including mirrored and derived consumers;
+  it does not prove those frames use the fuller stepped `keeper_clear_snow`
+  beard. Only `keeper_darts` is qualified for an occlusion draft in frames 3–6.
+  The corrected beard audit must be rerun before promotion. The versioned draft is under
+  `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/`, with rollback
+  hashes, contact sheet, preview, scale evidence and review evidence. The
+  canonical source, raw strip, manifest, runtime output and immutable review
+  exports are untouched. Promotion or rejection requires an explicit decision;
+  do not run the canonical sprite publish step as part of this audit.
+- The permanent check is `node scripts/verify_side_on_beard_occlusion.ts` and
+  is included in `npm test`. The unified review page renders the canonical and
+  draft `keeper_darts` variants side-by-side with exact-name labels while
+  leaving the canonical panel authoritative.
+- The deployed online reviewer and offline launcher now use the same generated
+  `public/keeper-review/index.html`; its review-only draft assets live under
+  `public/keeper-review/drafts/` and are not runtime manifest entries. Browser
+  progress remains origin-local and moves only through exact-name Export/Import.
 - 191 keeper sheets and 1,475 frames are in the technical review batch.
 - 173 animation sheets are accepted into the review gallery.
 - 18 obsolete modular/reference sheets are excluded from review and must not

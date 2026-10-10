@@ -1,0 +1,69 @@
+{
+  "auditId": "2026-10-10-v1",
+  "animation": "keeper_darts",
+  "exactName": "keeper_darts",
+  "canvas": [
+    72,
+    40
+  ],
+  "frames": 14,
+  "fps": 3,
+  "density": 4,
+  "anchor": [
+    36,
+    40
+  ],
+  "handUsePoint": [
+    54,
+    15.75
+  ],
+  "lookTargetPoint": [
+    72,
+    12.84
+  ],
+  "originalStripSha256": "4d20777e18b0243b58a855c7b93e8866626319c5303a35d6087bb80af983468b",
+  "draftStripSha256": "2f41a4fa8fa0b750d75a3c72fd3e98c9e4cb94798f2cd72b29d16dff64578f91",
+  "correctedFrames": [
+    {
+      "frame": 3,
+      "pixels": 20,
+      "logicalBox": [
+        36,
+        10,
+        38,
+        14
+      ]
+    },
+    {
+      "frame": 4,
+      "pixels": 21,
+      "logicalBox": [
+        36,
+        11,
+        38,
+        16
+      ]
+    },
+    {
+      "frame": 5,
+      "pixels": 32,
+      "logicalBox": [
+        36,
+        10,
+        38,
+        17
+      ]
+    },
+    {
+      "frame": 6,
+      "pixels": 27,
+      "logicalBox": [
+        36,
+        10,
+        38,
+        18
+      ]
+    }
+  ],
+  "reviewScaleRule": "canonical and draft are rendered at the same logical canvas, frame timing, anchor, and exact-name labels; the canonical panel remains authoritative until promotion approval"
+}

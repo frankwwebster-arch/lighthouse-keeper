@@ -466,6 +466,8 @@ assert all((ROOT / path).exists() for path in scale_audit["contactSheets"])
 # Review UI: status filters, read-only agent narrative, and filter-aware cyclic
 # Previous/Next navigation are all part of the delivered review workflow.
 review_html = (ROOT / "docs/keeper-scale-audit/review.html").read_text()
+public_review_html = (ROOT / "public/keeper-review/index.html").read_text()
+assert public_review_html == review_html
 assert "__KEEPER_REVIEW_DATA__" not in review_html
 assert '"reviewedAnimationSheets":173' in review_html
 # Parse the exact payload used by the page, then prove every imported note and
@@ -477,6 +479,14 @@ review_page_data = json.loads(
 page_reviews = review_page_data["initialReviews"]
 page_assets = {asset["name"]: asset for asset in review_page_data["assets"]}
 assert len(page_assets) == 173
+draft_assets = [asset for asset in page_assets.values() if asset.get("draftVariant")]
+assert [asset["name"] for asset in draft_assets] == ["keeper_darts"]
+assert draft_assets[0]["draftVariant"]["source"] == (
+    "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/keeper_darts_f14.png"
+)
+assert (ROOT / "public/keeper-review/drafts/keeper_darts_f14.png").read_bytes() == (
+    ROOT / draft_assets[0]["draftVariant"]["source"]
+).read_bytes()
 assert set(page_reviews) == set(review_names)
 for imported in review_export["reviews"]:
     name = imported["name"]
@@ -549,6 +559,9 @@ for token in (
     "known.has(raw.name)",
     "seen.has(raw.name)",
     "Any conflicting status-list entries were safely reconciled",
+    ".detail-mode article.detail-current .draftcompare .stagewrap{grid-area:auto",
+    "Canonical · ${card.asset.name}",
+    "Draft · ${card.asset.name}",
 ):
     assert token in review_html, token
 
