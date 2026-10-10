@@ -74,6 +74,7 @@ const poseSet = new Set(registry.poses)
 const COMPONENT = /^keeper_(?:front|back)_(?:torso|arm_[lr]|leg_[lr]|head(?:_[a-z]+)?)$/
 const GENERATED = new Set([
   'keeper_walk_cycle', 'keeper_walk_start', 'keeper_walk_stop', 'keeper_pyjamas_walk_cycle',
+  'keeper_turn_left_front', 'keeper_turn_left_back',
   'keeper_crouch_back', 'keeper_reach_high', 'keeper_reach_low', 'keeper_pick_up_low',
   'keeper_sitting_turn_back_to_rear',
 ])
@@ -109,6 +110,16 @@ function frameOf(a: Asset, index: number): PNG {
   const i = Math.max(0, Math.min(a.sidecar.frames - 1, index))
   const out = blank(fw, h)
   PNG.bitblt(a.image, out, i * fw, 0, fw, h, 0, 0)
+  return out
+}
+
+function mirrorFrame(source: PNG): PNG {
+  const out = blank(source.width, source.height)
+  for (let y = 0; y < source.height; y++) for (let x = 0; x < source.width; x++) {
+    const from = (y * source.width + x) * 4
+    const to = (y * source.width + source.width - 1 - x) * 4
+    source.data.copy(out.data, to, from, from + 4)
+  }
   return out
 }
 
@@ -160,6 +171,8 @@ function inferPoses(name: string, s: Sidecar): [string, string] {
   const explicit: Record<string, [string, string]> = {
     keeper_turn_back: ['standing-side-right', 'standing-back'],
     keeper_turn_front: ['standing-side-right', 'standing-front'],
+    keeper_turn_left_back: ['standing-side-left', 'standing-back'],
+    keeper_turn_left_front: ['standing-side-left', 'standing-front'],
     keeper_sit_side: ['standing-side-right', 'sitting-side-right'],
     keeper_sit_front: ['standing-front', 'sitting-front'],
     keeper_sit_back: ['standing-back', 'sitting-back'],
@@ -234,6 +247,12 @@ function enrich(a: Asset): void {
   else s.assetRole = 'clip'
   const [start, end] = inferPoses(a.name, s)
   s.startPose = start; s.endPose = end
+  // Keep the accepted right-to-back source sidecar stable; its cardinal route
+  // is expressed by startPose/endPose, while derived left bridges carry facing.
+  if (a.name === 'keeper_turn_back') {
+    delete s.facing
+    delete s.interaction
+  }
   if (/walk/.test(a.name) && s.frames > 1 && !a.name.includes('walk_into_lift') && !s.sfxCues?.length) {
     const second = Math.min(s.frames - 1, Math.floor(s.frames / 2))
     s.sfxCues = [{ frame: 0, cue: 'footstep' }, { frame: second, cue: 'footstep' }]
@@ -315,6 +334,20 @@ function buildNeutrals(assets: Map<string, Asset>): void {
     }
     assets.set(name, writeAsset(name, [alignedFrame(source, n.frame, sidecar)], sidecar))
   }
+  const leftPose = 'standing-side-left'
+  if (!poseSet.has(leftPose)) throw new Error(`Neutral uses unregistered pose ${leftPose}`)
+  for (const outfit of [...new Set(neutralSources.filter((n) => n.pose === 'standing-side-right').map((n) => n.outfit))]) {
+    const right = neutralFor(assets, outfit, 'standing-side-right')
+    if (!right) throw new Error(`Right-facing neutral is missing for ${outfit}`)
+    const sidecar: Sidecar = {
+      ...right.sidecar,
+      anchor: [right.sidecar.w - right.sidecar.anchor[0], right.sidecar.anchor[1]],
+      facing: 'left', startPose: leftPose, endPose: leftPose, pose: leftPose,
+      assetRole: 'neutral', mirrorSafe: true,
+    }
+    const name = neutralName(outfit, leftPose)
+    assets.set(name, writeAsset(name, [mirrorFrame(frameOf(right, 0))], sidecar))
+  }
 }
 
 function neutralFor(assets: Map<string, Asset>, outfit: string, pose: string): Asset | undefined {
@@ -347,6 +380,22 @@ function buildBridges(assets: Map<string, Asset>): void {
     const meta: Sidecar = { ...source.sidecar, w: 34, h: 40, anchor: [17, 40] }
     const reframed = Array.from({ length: source.sidecar.frames }, (_, i) => alignedFrame(source, i, meta))
     assets.set(name, writeAsset(name, reframed, meta))
+  }
+  for (const [sourceName, name, endPose, facing, interaction, reverseFor] of [
+    ['keeper_turn_front', 'keeper_turn_left_front', 'standing-front', 'left-to-front', 'turn-front', 'turn_left_from_front'],
+    ['keeper_turn_back', 'keeper_turn_left_back', 'standing-back', 'left-to-back', 'turn-back', 'turn_left_from_back'],
+  ] as const) {
+    const source = assets.get(sourceName)
+    if (!source) throw new Error(`Turn source is missing: ${sourceName}`)
+    const meta: Sidecar = {
+      ...source.sidecar,
+      anchor: [source.sidecar.w - source.sidecar.anchor[0], source.sidecar.anchor[1]],
+      facing, interaction, reverseFor, startPose: 'standing-side-left', endPose,
+      assetRole: 'bridge', mirrorSafe: false,
+    }
+    const frames = Array.from({ length: source.sidecar.frames }, (_, i) => mirrorFrame(frameOf(source, i)))
+    const bridge = writeAsset(name, frames, meta)
+    assets.set(name, bridge)
   }
   const walk = assets.get('keeper_walk')!, side = neutralFor(assets, 'standard', 'standing-side-right')!
   const n = frameOf(side, 0)
@@ -574,10 +623,24 @@ function validate(assets: Map<string, Asset>): void {
     }
     if (s.propHandoffFrame !== undefined && (!Number.isInteger(s.propHandoffFrame) || s.propHandoffFrame < 1 || s.propHandoffFrame > s.frames)) errors.push(`${a.name}: invalid propHandoffFrame`)
   }
+  for (const outfit of [...new Set(neutralSources.filter((n) => n.pose === 'standing-side-right').map((n) => n.outfit))]) {
+    const right = neutralFor(assets, outfit, 'standing-side-right')
+    const left = neutralFor(assets, outfit, 'standing-side-left')
+    if (!right || !left) {
+      errors.push(`${outfit}: missing right/left standing neutral pair`)
+      continue
+    }
+    const expected = mirrorFrame(frameOf(right, 0)), actual = frameOf(left, 0)
+    if (expected.width !== actual.width || expected.height !== actual.height || !expected.data.equals(actual.data)) errors.push(`${outfit}: left standing neutral is not an exact mirror of right`)
+    const expectedAnchor: [number, number] = [right.sidecar.w - right.sidecar.anchor[0], right.sidecar.anchor[1]]
+    if (left.sidecar.anchor[0] !== expectedAnchor[0] || left.sidecar.anchor[1] !== expectedAnchor[1]) errors.push(`${outfit}: left standing neutral anchor is not mirrored exactly`)
+  }
   for (const [clip, outfit, start, end] of [
     ['keeper_walk_cycle', 'standard', 'standing-side-right', 'standing-side-right'],
     ['keeper_turn_back', 'standard', 'standing-side-right', 'standing-back'],
     ['keeper_turn_front', 'standard', 'standing-side-right', 'standing-front'],
+    ['keeper_turn_left_back', 'standard', 'standing-side-left', 'standing-back'],
+    ['keeper_turn_left_front', 'standard', 'standing-side-left', 'standing-front'],
     ['keeper_sit_side', 'standard', 'standing-side-right', 'sitting-side-right'],
     ['keeper_sit_back', 'standard', 'standing-back', 'sitting-back'],
     ['keeper_sitting_turn_back_to_rear', 'standard', 'sitting-back', 'sitting-rear-right'],
@@ -611,6 +674,8 @@ if (CHECK) {
   for (const [clip, end, outfit, pose] of [
     ['keeper_turn_back', 'start', 'standard', 'standing-side-right'], ['keeper_turn_back', 'end', 'standard', 'standing-back'],
     ['keeper_turn_front', 'start', 'standard', 'standing-side-right'], ['keeper_turn_front', 'end', 'standard', 'standing-front'],
+    ['keeper_turn_left_back', 'start', 'standard', 'standing-side-left'], ['keeper_turn_left_back', 'end', 'standard', 'standing-back'],
+    ['keeper_turn_left_front', 'start', 'standard', 'standing-side-left'], ['keeper_turn_left_front', 'end', 'standard', 'standing-front'],
     ['keeper_sit_side', 'start', 'standard', 'standing-side-right'], ['keeper_sit_side', 'end', 'standard', 'sitting-side-right'],
     ['keeper_sit_front', 'start', 'standard', 'standing-front'], ['keeper_sit_front', 'end', 'standard', 'sitting-front'],
     ['keeper_sit_back', 'start', 'standard', 'standing-back'], ['keeper_sit_back', 'end', 'standard', 'sitting-back'],

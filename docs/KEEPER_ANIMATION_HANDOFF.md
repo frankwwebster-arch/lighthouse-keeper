@@ -8,13 +8,14 @@ Codex task should be able to continue from here without relying on the old chat.
 
 `scripts/keeper-contract.ts` is now the authority for recipe-facing pose
 metadata, neutral stills, reusable derived bridges and the real-RGBA endpoint
-audit. `npm test` runs its read-only check first. The current contract has 310
+audit. `npm test` runs its read-only check first. The current contract has 325
 keeper sheets: the reviewed 191-sheet source batch plus deterministic neutral
 and bridge derivatives. All full-body sidecars carry registered `startPose` and
 `endPose`; technical component/reference sheets are explicitly excluded.
 
-The priority sample flows now have exact walk start/stop/cycle, side-to-front
-and side-to-back turns, side/front/back sits, crouch/stand, reach high/low,
+The priority sample flows now have exact walk start/stop/cycle,
+right/left-to-front and right/left-to-back turns (with reverse routes to all
+four facings), side/front/back sits, crouch/stand, reach high/low,
 pick-up/put-down, seated back-to-rear TV turn, seated nap, rear brush and
 pyjama bed-entry/sleep endpoints. `watch_tv.json` uses the new seated bridge;
 `standard_bridge_review.json` exercises the reusable standard set. The exact

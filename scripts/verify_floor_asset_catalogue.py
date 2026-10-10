@@ -70,7 +70,7 @@ assert floor_contracts["room_lamp"]["w"] == 95
 
 # Every keeper strip must agree byte-for-byte with its sidecar and runtime copy.
 keeper_pngs = sorted(KEEPER_DIR.glob("*.png"))
-assert len(keeper_pngs) == 310
+assert len(keeper_pngs) == 325
 keeper_names = set()
 keeper_sidecars = {}
 for raw_path in keeper_pngs:
@@ -187,6 +187,17 @@ for name in ("keeper_walk", "keeper_turn_back", "keeper_wave_camera"):
 assert manifest["keeper_walk"]["mirrorSafe"] is True
 assert manifest["keeper_sit_side"]["reverseFor"] == "stand_side"
 assert manifest["keeper_sit_front"]["reverseFor"] == "stand_front"
+for name, start_pose, end_pose in (
+    ("keeper_turn_back", "standing-side-right", "standing-back"),
+    ("keeper_turn_front", "standing-side-right", "standing-front"),
+    ("keeper_turn_left_back", "standing-side-left", "standing-back"),
+    ("keeper_turn_left_front", "standing-side-left", "standing-front"),
+):
+    assert manifest[name]["startPose"] == start_pose
+    assert manifest[name]["endPose"] == end_pose
+assert manifest["keeper_turn_front"]["facing"] == "right-to-front"
+assert manifest["keeper_turn_left_back"]["facing"] == "left-to-back"
+assert manifest["keeper_turn_left_front"]["facing"] == "left-to-front"
 
 # Scuba route: visible jetty locomotion, one-shot water entry and an exact
 # hand-off to the established horizontal swim loop.
@@ -455,7 +466,7 @@ for slug in ("keeper-scuba-walk-side", "keeper-scuba-jetty-dive", "keeper-parach
     assert (ROOT / f"docs/floor-asset-catalogue/{slug}-preview.gif").exists()
 
 print(
-    "Verified: 71 spaces, 1579 catalogue rows, floor exports, 310 working keeper sheets, "
+    "Verified: 71 spaces, 1579 catalogue rows, floor exports, 325 working keeper sheets, "
     "the historical 191-sheet/1420-frame review set, "
     "reviewed visual sizing and identity authorities, scuba/parachute routes, cleaning cupboard occlusion, "
     "review evidence/statuses/responses, filtered cyclic navigation and 181 animated previews."

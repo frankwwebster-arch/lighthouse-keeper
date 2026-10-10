@@ -1,0 +1,28 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 10.5,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "reverseFor": "turn_left_from_back",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ],
+  "assetRole": "bridge",
+  "startPose": "standing-side-left",
+  "endPose": "standing-back",
+  "facing": "left-to-back",
+  "interaction": "turn-back",
+  "mirrorSafe": false
+}

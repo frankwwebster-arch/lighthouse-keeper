@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "measuredAt": "2026-10-10",
-  "actionClips": 233,
-  "endpointChecks": 466,
-  "passingEndpoints": 166,
+  "actionClips": 235,
+  "endpointChecks": 470,
+  "passingEndpoints": 170,
   "failingEndpoints": 300,
   "rows": [
     {
@@ -6243,6 +6243,66 @@
     {
       "outfit": "standard",
       "clip": "keeper_turn_front",
+      "end": "end",
+      "pose": "standing-front",
+      "neutral": "keeper_neutral_standing-front",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_turn_left_back",
+      "end": "start",
+      "pose": "standing-side-left",
+      "neutral": "keeper_neutral_standing-side-left",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_turn_left_back",
+      "end": "end",
+      "pose": "standing-back",
+      "neutral": "keeper_neutral_standing-back",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_turn_left_front",
+      "end": "start",
+      "pose": "standing-side-left",
+      "neutral": "keeper_neutral_standing-side-left",
+      "status": "pass",
+      "mismatchPercent": 0,
+      "canvasAnchorDelta": [
+        0,
+        0
+      ],
+      "landmarkMaxDelta": 0,
+      "remedy": "none"
+    },
+    {
+      "outfit": "standard",
+      "clip": "keeper_turn_left_front",
       "end": "end",
       "pose": "standing-front",
       "neutral": "keeper_neutral_standing-front",

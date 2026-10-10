@@ -1,0 +1,20 @@
+{
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    16,
+    48
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "spaceman",
+  "startPose": "standing-side-left",
+  "endPose": "standing-side-left",
+  "pose": "standing-side-left",
+  "assetRole": "neutral",
+  "facing": "left",
+  "mirrorSafe": true
+}

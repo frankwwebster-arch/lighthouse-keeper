@@ -1,0 +1,20 @@
+{
+  "w": 46,
+  "h": 40,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    23,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "towel-privacy",
+  "startPose": "standing-side-left",
+  "endPose": "standing-side-left",
+  "pose": "standing-side-left",
+  "assetRole": "neutral",
+  "facing": "left",
+  "mirrorSafe": true
+}

@@ -353,6 +353,26 @@
   "facing": "right-to-front",
   "z": 50
  },
+ "keeper_artist-smock_neutral_standing-side-left": {
+  "file": "keeper_artist-smock_neutral_standing-side-left.png",
+  "w": 36,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   18,
+   40
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "standing-side-left",
+  "assetRole": "neutral",
+  "pose": "standing-side-left",
+  "outfit": "artist-smock",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "left",
+  "z": 50
+ },
  "keeper_artist-smock_neutral_standing-side-right": {
   "file": "keeper_artist-smock_neutral_standing-side-right.png",
   "w": 36,
@@ -1135,6 +1155,26 @@
   "facing": "rear-right",
   "z": 50
  },
+ "keeper_cream-bathrobe_neutral_standing-side-left": {
+  "file": "keeper_cream-bathrobe_neutral_standing-side-left.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "standing-side-left",
+  "assetRole": "neutral",
+  "pose": "standing-side-left",
+  "outfit": "cream-bathrobe",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "left",
+  "z": 50
+ },
  "keeper_cream-bathrobe_neutral_standing-side-right": {
   "file": "keeper_cream-bathrobe_neutral_standing-side-right.png",
   "w": 32,
@@ -1879,6 +1919,26 @@
   "facing": "front",
   "z": 50
  },
+ "keeper_halloween_neutral_standing-side-left": {
+  "file": "keeper_halloween_neutral_standing-side-left.png",
+  "w": 38,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   19,
+   48
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "standing-side-left",
+  "assetRole": "neutral",
+  "pose": "standing-side-left",
+  "outfit": "halloween",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "left",
+  "z": 50
+ },
  "keeper_halloween_neutral_standing-side-right": {
   "file": "keeper_halloween_neutral_standing-side-right.png",
   "w": 38,
@@ -2505,6 +2565,26 @@
   "facing": "front",
   "z": 50
  },
+ "keeper_knight_neutral_standing-side-left": {
+  "file": "keeper_knight_neutral_standing-side-left.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "standing-side-left",
+  "assetRole": "neutral",
+  "pose": "standing-side-left",
+  "outfit": "knight",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "left",
+  "z": 50
+ },
  "keeper_knight_neutral_standing-side-right": {
   "file": "keeper_knight_neutral_standing-side-right.png",
   "w": 32,
@@ -2978,6 +3058,26 @@
   "facing": "front-to-back",
   "z": 50
  },
+ "keeper_light-blue-pyjamas_neutral_standing-side-left": {
+  "file": "keeper_light-blue-pyjamas_neutral_standing-side-left.png",
+  "w": 34,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   17,
+   40
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "standing-side-left",
+  "assetRole": "neutral",
+  "pose": "standing-side-left",
+  "outfit": "light-blue-pyjamas",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "left",
+  "z": 50
+ },
  "keeper_light-blue-pyjamas_neutral_standing-side-right": {
   "file": "keeper_light-blue-pyjamas_neutral_standing-side-right.png",
   "w": 34,
@@ -3133,6 +3233,26 @@
   "outfit": "mechanic",
   "loop": false,
   "facing": "front",
+  "z": 50
+ },
+ "keeper_mechanic_neutral_standing-side-left": {
+  "file": "keeper_mechanic_neutral_standing-side-left.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "standing-side-left",
+  "assetRole": "neutral",
+  "pose": "standing-side-left",
+  "outfit": "mechanic",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "left",
   "z": 50
  },
  "keeper_mechanic_neutral_standing-side-right": {
@@ -3630,6 +3750,25 @@
   "assetRole": "neutral",
   "pose": "standing-front",
   "loop": false,
+  "z": 50
+ },
+ "keeper_neutral_standing-side-left": {
+  "file": "keeper_neutral_standing-side-left.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "standing-side-left",
+  "assetRole": "neutral",
+  "pose": "standing-side-left",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "left",
   "z": 50
  },
  "keeper_neutral_standing-side-right": {
@@ -4139,6 +4278,26 @@
   "facing": "front",
   "z": 50
  },
+ "keeper_party-hat_neutral_standing-side-left": {
+  "file": "keeper_party-hat_neutral_standing-side-left.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "standing-side-left",
+  "assetRole": "neutral",
+  "pose": "standing-side-left",
+  "outfit": "party-hat",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "left",
+  "z": 50
+ },
  "keeper_party-hat_neutral_standing-side-right": {
   "file": "keeper_party-hat_neutral_standing-side-right.png",
   "w": 32,
@@ -4294,6 +4453,26 @@
   "outfit": "pirate",
   "loop": false,
   "facing": "front",
+  "z": 50
+ },
+ "keeper_pirate_neutral_standing-side-left": {
+  "file": "keeper_pirate_neutral_standing-side-left.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "standing-side-left",
+  "assetRole": "neutral",
+  "pose": "standing-side-left",
+  "outfit": "pirate",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "left",
   "z": 50
  },
  "keeper_pirate_neutral_standing-side-right": {
@@ -5869,6 +6048,26 @@
   "facing": "front",
   "z": 50
  },
+ "keeper_souwester_neutral_standing-side-left": {
+  "file": "keeper_souwester_neutral_standing-side-left.png",
+  "w": 34,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   17,
+   48
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "standing-side-left",
+  "assetRole": "neutral",
+  "pose": "standing-side-left",
+  "outfit": "souwester",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "left",
+  "z": 50
+ },
  "keeper_souwester_neutral_standing-side-right": {
   "file": "keeper_souwester_neutral_standing-side-right.png",
   "w": 34,
@@ -6221,6 +6420,26 @@
   "outfit": "spaceman",
   "loop": false,
   "facing": "front",
+  "z": 50
+ },
+ "keeper_spaceman_neutral_standing-side-left": {
+  "file": "keeper_spaceman_neutral_standing-side-left.png",
+  "w": 32,
+  "h": 48,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   48
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "standing-side-left",
+  "assetRole": "neutral",
+  "pose": "standing-side-left",
+  "outfit": "spaceman",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "left",
   "z": 50
  },
  "keeper_spaceman_neutral_standing-side-right": {
@@ -6893,6 +7112,26 @@
   "facing": "front",
   "z": 50
  },
+ "keeper_tarzan_neutral_standing-side-left": {
+  "file": "keeper_tarzan_neutral_standing-side-left.png",
+  "w": 36,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   18,
+   40
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "standing-side-left",
+  "assetRole": "neutral",
+  "pose": "standing-side-left",
+  "outfit": "tarzan",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "left",
+  "z": 50
+ },
  "keeper_tarzan_neutral_standing-side-right": {
   "file": "keeper_tarzan_neutral_standing-side-right.png",
   "w": 36,
@@ -7233,6 +7472,26 @@
   "facing": "rear-right",
   "z": 50
  },
+ "keeper_towel-privacy_neutral_standing-side-left": {
+  "file": "keeper_towel-privacy_neutral_standing-side-left.png",
+  "w": 46,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   23,
+   40
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "standing-side-left",
+  "assetRole": "neutral",
+  "pose": "standing-side-left",
+  "outfit": "towel-privacy",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "left",
+  "z": 50
+ },
  "keeper_towel-privacy_neutral_standing-side-right": {
   "file": "keeper_towel-privacy_neutral_standing-side-right.png",
   "w": 46,
@@ -7308,6 +7567,48 @@
   "loop": false,
   "reverseFor": "turn_side_from_front",
   "facing": "right-to-front",
+  "interaction": "turn-front",
+  "z": 50
+ },
+ "keeper_turn_left_back": {
+  "file": "keeper_turn_left_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 10.5,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "standing-back",
+  "assetRole": "bridge",
+  "loop": false,
+  "reverseFor": "turn_left_from_back",
+  "mirrorSafe": false,
+  "facing": "left-to-back",
+  "interaction": "turn-back",
+  "z": 50
+ },
+ "keeper_turn_left_front": {
+  "file": "keeper_turn_left_front.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "standing-front",
+  "assetRole": "bridge",
+  "loop": false,
+  "reverseFor": "turn_left_from_front",
+  "mirrorSafe": false,
+  "facing": "left-to-front",
   "interaction": "turn-front",
   "z": 50
  },

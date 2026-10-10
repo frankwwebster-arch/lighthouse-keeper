@@ -25,9 +25,10 @@ armchair → rocking chair → Lazyboy-style recliner. All tiers retain the same
 
 The recipe studio now consumes a checked keeper pose contract. The reviewed
 191-sheet keeper source batch is unchanged as the visual-history denominator;
-60 exact neutral stills and reusable bridge derivatives bring the working raw
-inventory to 310 keeper sheets. Standard sample flows and the TV seated turn
-have exact neutral joins, approved outfit walks have neutral-ended cycle/start/
+73 exact neutral stills and reusable bridge derivatives bring the working raw
+inventory to 325 keeper sheets. Standard sample flows, four-facing standing
+turns and the TV seated turn have exact neutral joins, approved outfit walks
+have neutral-ended cycle/start/
 stop derivatives, and every full-body sidecar has registered pose metadata.
 The remaining 300 legacy endpoint repairs are measured from real RGBA pixels
 and ordered in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`. `npm test` rejects new
