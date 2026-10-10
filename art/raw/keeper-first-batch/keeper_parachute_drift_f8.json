@@ -1,12 +1,12 @@
 {
   "w": 96,
-  "h": 103,
+  "h": 84,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
     48,
-    100
+    84
   ],
   "z": 50,
   "loop": true,
@@ -16,25 +16,5 @@
   "facing": "right",
   "interaction": "parachute-drift",
   "mirrorsFor": "left",
-  "reviewScale": [
-    84,
-    122
-  ],
-  "reviewOffset": [
-    -0.5,
-    3
-  ],
-  "reviewScaleRounds": {
-    "2026-10-10": [
-      84,
-      122
-    ]
-  },
-  "reviewOffsetRounds": {
-    "2026-10-10": [
-      -0.5,
-      3
-    ]
-  },
   "assetRole": "clip"
 }

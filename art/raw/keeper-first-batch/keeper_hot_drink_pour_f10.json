@@ -1,11 +1,11 @@
 {
-  "w": 58,
+  "w": 54,
   "h": 40,
-  "frames": 9,
+  "frames": 10,
   "fps": 4,
   "density": 4,
   "anchor": [
-    28,
+    24,
     40
   ],
   "z": 50,
@@ -23,29 +23,9 @@
     97
   ],
   "reviewOffset": [
-    0.5,
+    4.5,
     0
   ],
-  "reviewScaleRounds": {
-    "2026-10-09": [
-      106,
-      97
-    ],
-    "2026-10-10": [
-      100,
-      100
-    ]
-  },
-  "reviewOffsetRounds": {
-    "2026-10-09": [
-      4.5,
-      0
-    ],
-    "2026-10-10": [
-      -4,
-      0
-    ]
-  },
   "assetRole": "clip",
   "startPose": "standing-side-right",
   "endPose": "standing-side-right"

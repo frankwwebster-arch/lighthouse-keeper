@@ -24,7 +24,7 @@ OUT = ROOT / "docs/keeper-scale-audit"
 PUBLIC_REVIEW = ROOT / "public/keeper-review"
 CONTRACT = json.loads((ROOT / "data/keeper_asset_contract.json").read_text())
 DENSITY = CONTRACT["canvas"]["standard"]["density"]
-AUDIT_REVISION = "2026-10-10-second-review-delta-v4"
+AUDIT_REVISION = "2026-10-10-second-review-rollback-v1"
 ORIGINAL_KEEPER = "keeper_walk"
 REVIEW_IMPORT_PATH = ROOT / "docs/review/frank-keeper-animation-review-2026-10-10.json"
 CODEX_RESPONSE_PATHS = (
@@ -637,7 +637,7 @@ def publish(assets: list[dict]) -> None:
     if SIDE_ON_OCCLUSION_REGISTER_PATH.exists():
         side_on_register = json.loads(SIDE_ON_OCCLUSION_REGISTER_PATH.read_text())
         draft_record_path = ROOT / side_on_register["draft"]["register"]
-        if draft_record_path.exists():
+        if not side_on_register["draft"].get("rejected") and draft_record_path.exists():
             draft_record = json.loads(draft_record_path.read_text())
             for asset in review_assets:
                 if asset["name"] != draft_record["animation"]:
@@ -660,6 +660,21 @@ def publish(assets: list[dict]) -> None:
                 break
 
     initial_reviews = {}
+    rolled_back_second_round = {
+        "keeper_bath_enter", "keeper_bath_exit", "keeper_carry_shopping", "keeper_clear_snow",
+        "keeper_collect_eggs_back", "keeper_crouch_work_back", "keeper_darts", "keeper_eat_seated",
+        "keeper_fish_feed_up", "keeper_fish_seated", "keeper_fish_standing",
+        "keeper_guitar_pickup_acoustic", "keeper_guitar_pickup_flying_v_1967", "keeper_guitar_pickup_gretsch",
+        "keeper_hot_drink_pickup", "keeper_hot_drink_pour", "keeper_lawn_mower_push",
+        "keeper_lean_table_back", "keeper_lift_button_front", "keeper_lift_weights_back",
+        "keeper_machete_side", "keeper_meal_from_oven_back", "keeper_meal_place_side",
+        "keeper_mechanic_walk_front", "keeper_nap_seated", "keeper_operate_outboard",
+        "keeper_parachute_drift",
+    }
+    side_on_rejected = False
+    if SIDE_ON_OCCLUSION_REGISTER_PATH.exists():
+        side_on_rejected = json.loads(SIDE_ON_OCCLUSION_REGISTER_PATH.read_text()).get("draft", {}).get("rejected", False)
+
     for asset in review_assets:
         imported = imported_reviews.get(asset["name"])
         if imported is None:
@@ -699,7 +714,7 @@ def publish(assets: list[dict]) -> None:
             "sittingFront": review_clip(reviewed_by_name["keeper_sit_front"]),
             "sittingBack": review_clip(reviewed_by_name["keeper_sit_back"]),
         },
-        "reviewRevision": "2026-10-10-second-review-delta-v3",
+        "reviewRevision": "2026-10-10-second-review-rollback-v1",
         "sideOnOcclusionAudit": side_on_register if SIDE_ON_OCCLUSION_REGISTER_PATH.exists() else None,
         "initialReviews": initial_reviews,
         "assets": review_assets,
@@ -708,7 +723,7 @@ def publish(assets: list[dict]) -> None:
     (OUT / "review.html").write_text(review_html)
     PUBLIC_REVIEW.mkdir(parents=True, exist_ok=True)
     (PUBLIC_REVIEW / "index.html").write_text(review_html)
-    if SIDE_ON_OCCLUSION_REGISTER_PATH.exists():
+    if SIDE_ON_OCCLUSION_REGISTER_PATH.exists() and not side_on_register["draft"].get("rejected"):
         draft_public_dir = PUBLIC_REVIEW / "drafts"
         draft_public_dir.mkdir(parents=True, exist_ok=True)
         draft_record = json.loads((ROOT / side_on_register["draft"]["register"]).read_text())
@@ -721,7 +736,7 @@ def publish(assets: list[dict]) -> None:
     resolution_lines = [
         "# Keeper animation review resolution — 2026-10-10",
         "",
-        "This table is generated from Frank's immutable review export and the current production asset set. `Awaiting new draft review` means the requested production change is present and now needs Frank's verdict; it does not mean the redraw is still outstanding.",
+        "This table is generated from Frank's immutable review export and the current production asset set. The second-round art pass was rejected and restored from commit `131191c`. Consequently, `Awaiting new draft review` identifies an unresolved request that needs a fresh versioned draft; it does not claim that the rejected amendment remains in production. Older `Changed/Rebuilt` decision labels below describe the attempted pass and are superseded by each row's current rollback response.",
         "",
         "| Animation | Frames | Frank's comment | Class | Decision | Proposed/implemented change | Status | Verification | Commit |",
         "|---|---:|---|---|---|---|---|---|---|",
@@ -749,13 +764,17 @@ def publish(assets: list[dict]) -> None:
             classification = "fix"
             decision = "Changed and ready for Frank's verdict"
             change = codex_responses.get(asset["name"], asset["note"])
-        if asset["name"] == "keeper_darts" and SIDE_ON_OCCLUSION_REGISTER_PATH.exists():
+        if asset["name"] in rolled_back_second_round:
+            decision = "Rejected and restored"
+        if asset["name"] == "keeper_darts" and SIDE_ON_OCCLUSION_REGISTER_PATH.exists() and not side_on_rejected:
             change = "Canonical production remains unchanged; a draft-only foreground-hand-over-beard correction is recorded for frames 3–6 and awaits explicit promotion or rejection."
         verification = (
             "Retained; full audit" if asset["reviewStatus"] == "happy" else
             "Deferred; unchanged" if asset["reviewStatus"] == "review-later" else
             "Full audit; Frank visual verdict pending"
         )
+        if asset["name"] in rolled_back_second_round:
+            verification = "Restored pre-pass canonical; fresh draft required"
         status_label = {
             "happy": "Happy",
             "review-later": "Review later",
@@ -769,9 +788,9 @@ def publish(assets: list[dict]) -> None:
     if SIDE_ON_OCCLUSION_REGISTER_PATH.exists():
         resolution_lines.extend([
             "",
-            "## Draft-only side-on beard/hand occlusion audit",
+            "## Rejected side-on beard/hand occlusion draft",
             "",
-            "`keeper_darts` frames 3–6 have a qualified draft correction for the foreground hand/beard layer order. The partial v1 exact-name register inventories 101 standing/sitting side-action sheets and records mirrored/derived outputs as consumers, but it did not complete the required frame-by-frame comparison with the fuller stepped `keeper_clear_snow` beard. Canonical art, runtime strips, the manifest and immutable review exports remain untouched; rerun the corrected beard audit before any promotion decision.",
+            "The archived `keeper_darts` frames 3–6 draft inherited the rejected second-round art. It is excluded from the active reviewer and cannot be promoted. Rerun the corrected beard audit from the restored canonical sprites and create a new versioned draft.",
         ])
     resolution_path = ROOT / "docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md"
     resolution_path.write_text("\n".join(resolution_lines) + "\n")
@@ -805,7 +824,7 @@ def publish(assets: list[dict]) -> None:
         f"Open [the sizing and transition review](review.html) to inspect all {payload['counts']['reviewedAnimationSheets']} accepted animations beside the untouched `keeper_walk` authority. Review-state filters cover Needs my input, Happy, Awaiting new draft review, Review later, Unreviewed and Has Codex response. In focused mode Previous/Next and the Left/Right keys stay inside the selected filter and wrap from its final result to its first.",
         "The pinned reference can show standing side/front/back or sitting side/front/back identity ghosts. These fixed ghosts are anatomy comparisons, not a replacement for each reviewed clip's saved production size. In upright standard-cap poses the gold badge crossing the blue skull-top guide is a calibrated visual proxy; tilted, bent, seated, crouched, horizontal, bare-headed and alternate-headwear poses still require anatomical landmarks.",
         "Each card retains precise size, position, rotation, opacity, ghost, frame-step and 1–20fps timing controls. The imported production pass starts those viewer transforms at neutral because accepted geometry and cadence are already baked into the delivered sprite and manifest. Comparison settings remain visual aids until saved/exported as a later review proposal.",
-        "Every card has Frank's notes and decision controls plus a read-only Codex response field. Every Awaiting new draft review card has a specific response naming the delivered change; responses also state any genuine qualification rather than implying that an unmade change was completed. Orange cards have unsaved changes; saved happy, new-draft and later-review cards use distinct status colours.",
+        "Every card has Frank's notes and decision controls plus a read-only Codex response field. After the second-round rollback, affected Awaiting new draft review cards explicitly name the restored canonical strip and state that a fresh draft is still required. Orange cards have unsaved changes; saved happy, new-draft and later-review cards use distinct status colours.",
         "`keeper-scale-choices.json` version 9 exports the complete review register, current review status and Codex response for every animation as well as any new per-card proposals. Export remains blocked while a card has unsaved edits. Import validates exact `keeper_*` names, rejects duplicates/unknown names and safely reconciles stale status-list entries from the matching named review. The page can also prepend matching walks, insert known bridges or freeze a seam with onion skin; every card prints its runtime PNG and authored source-strip filename.",
         "The character-width and character-height sliders each have adjacent −0.5% and +0.5% buttons for precise adjustments. They update the same per-animation values, obey the same 50%–150% limits and become part of the normal Save/export workflow.",
         "Every blue animation-transform slider also has −0.5/+0.5 buttons: degrees for rotation, logical pixels for horizontal/vertical position and percentage points for opacity. They update the same limited, saved and exported values as their sliders.",

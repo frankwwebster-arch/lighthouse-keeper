@@ -1,5 +1,18 @@
 # Keeper animation second-round delta — 2026-10-10
 
+## Rollback decision
+
+Frank rejected the second-round visual pass after finding corrupted/pixelated
+jumper-stripe amendments and a pixelated darts sequence whose released dart
+became an oversized arrow. All 27 regenerated review animations, plus the
+dependent parachute landing and six derived/neutral outputs touched by that
+pass, were restored from commit `131191c`. The immutable review exports and
+comments remain authoritative review data; they are not evidence that the
+requested art changes are currently implemented. The rejected darts
+beard/hand draft remains archived but is excluded from the active reviewer.
+
+The restored review denominator is 191 sheets / 1,420 frames.
+
 ## Immutable review evidence
 
 - First round: `frank-keeper-animation-review-2026-10-09.json`, SHA-256 `c19129f8419df2c046f3abb06de9f339f1cd8edb31c2d505dea8e79562d5f486`.
@@ -16,11 +29,15 @@ The first and second exports differ semantically for 31 animations:
 
 Four were status-only acceptances and were not regenerated: `keeper_anti_gravity`, `keeper_count_money`, `keeper_drink_pint`, `keeper_drive_speedboat`.
 
-The other 27 were regenerated from the second-round review data. `keeper_parachute_landing` was also regenerated solely to preserve its exact resized drift-to-landing entry hand-off; it is not an additional review delta.
+The other 27 were regenerated from the second-round review data, then rejected
+and restored to their pre-pass canonical versions. `keeper_parachute_landing`
+was restored with them because it had been regenerated solely to preserve the
+rejected resized drift-to-landing entry hand-off.
 
 ## Cropping and source-overlap correction
 
-Every one of the 191 review-source sheets now passes a permanent per-frame lateral-gutter check: no opaque pixel touches a registered frame's left or right edge. This prevents runtime pixels from crossing into the adjacent frame.
+The statements below describe the rejected pass and are retained only as
+historical evidence; they do not describe the restored canonical artwork.
 
 The final changed strips were also inspected for fragments just inside a cell. `keeper_clear_snow`, `keeper_darts` and `keeper_machete_side` required new isolated grid sources because their earlier one-row generated sources painted long props over neighbouring poses. `keeper_lawn_mower_push` was recoverable deterministically by retaining only its connected actor/tool pose. The dart production strip has 14 frames, released darts only in frames 11–13, a clean neutral frame 14 and no frame 15.
 
@@ -28,4 +45,6 @@ The final changed strips were also inspected for fragments just inside a cell. `
 
 The review page imports a version-9 review JSON by exact animation name, rejects unknown or duplicate names, preserves complete notes, derives status from the named review flags, and keeps Codex responses generated and read-only. Offline and online browser storage do not synchronise automatically: transfer progress with Export on one copy and Import review JSON on the other.
 
-The documentation audit reconciled the review counts, 1,475-frame audit total, immutable export hashes, offline transfer behaviour, source provenance, generated resolution register and permanent verifier. No historical accepted/unchanged animation was regenerated.
+The rollback documentation audit reconciled the restored 1,420-frame total,
+immutable export hashes, offline transfer behaviour, rejected-draft status,
+source provenance, generated resolution register and permanent verifier.

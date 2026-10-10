@@ -57,4 +57,9 @@ JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
 ## Verification and delivery
 
-The prior neutral-contract checkpoint at commit `e74b93b` passed all 149 project tests, TypeScript checking, the production build and its then-current sprite/audit checks. It was deployed on remote `main`, and the canonical Vercel home and `/studio` routes both returned HTTP 200 on 10 October 2026. The current keeper review audit has since advanced to 191 sheets / 1,475 frames; its delivery evidence is recorded in `docs/review/KEEPER_ANIMATION_SECOND_ROUND_DELTA_2026-10-10.md`.
+The keeper review batch is 191 sheets / 1,420 frames after the rejected
+second-round production pass was restored from commit `131191c`. The newer
+online/offline reviewer and Frank's immutable comments remain, while the
+failed jumper-stripe/darts amendments and their dependent production outputs
+are no longer active. Current delivery evidence is recorded in
+`docs/review/KEEPER_ANIMATION_SECOND_ROUND_DELTA_2026-10-10.md`.

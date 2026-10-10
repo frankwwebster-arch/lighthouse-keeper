@@ -1,8 +1,8 @@
 {
-  "w": 77,
+  "w": 64,
   "h": 56,
   "frames": 12,
-  "fps": 8,
+  "fps": 4,
   "density": 4,
   "anchor": [
     32,
@@ -11,8 +11,8 @@
   "z": 50,
   "loop": false,
   "handUsePoint": [
-    48.28,
-    26.24
+    45,
+    25
   ],
   "propHandoffFrame": 6,
   "propVariant": "acoustic",
@@ -21,25 +21,5 @@
   "endPose": "play-guitar-acoustic",
   "facing": "side-to-back-to-front-right",
   "interaction": "pick-up-guitar",
-  "reviewScale": [
-    106,
-    96
-  ],
-  "reviewOffset": [
-    2.5,
-    0
-  ],
-  "reviewScaleRounds": {
-    "2026-10-10": [
-      106,
-      96
-    ]
-  },
-  "reviewOffsetRounds": {
-    "2026-10-10": [
-      2.5,
-      0
-    ]
-  },
   "assetRole": "clip"
 }

@@ -211,6 +211,9 @@ function checkFrameGutters(file: string, frames: number) {
 }
 
 function main(checkOnly = false) {
+  if (fs.existsSync(REGISTER_PATH) && readJson(REGISTER_PATH).draft?.rejected === true) {
+    throw new Error('The 2026-10-10-v1 beard/occlusion draft is rejected and immutable. Create a new versioned v2 audit from the restored canonical sprites; never overwrite or reactivate v1.')
+  }
   const inventory = loadInventory()
   if (inventory.length < 90) throw new Error(`side-on inventory unexpectedly small: ${inventory.length}`)
   if (inventory.some((item) => !item.sourceExists)) throw new Error('side-on inventory has a missing exact source strip or sidecar')

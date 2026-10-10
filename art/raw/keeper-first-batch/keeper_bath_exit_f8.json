@@ -1,12 +1,12 @@
 {
-  "w": 50,
-  "h": 47,
+  "w": 46,
+  "h": 40,
   "frames": 8,
   "fps": 4,
   "density": 4,
   "anchor": [
-    27,
-    47
+    23,
+    40
   ],
   "z": 50,
   "loop": false,
@@ -17,32 +17,12 @@
   "mirrorsFor": "left",
   "reviewScale": [
     114,
-    102.96
+    88
   ],
   "reviewOffset": [
-    -3.5,
+    0,
     0
   ],
-  "reviewScaleRounds": {
-    "2026-10-09": [
-      114,
-      88
-    ],
-    "2026-10-10": [
-      100,
-      117
-    ]
-  },
-  "reviewOffsetRounds": {
-    "2026-10-09": [
-      0,
-      0
-    ],
-    "2026-10-10": [
-      -3.5,
-      0
-    ]
-  },
   "assetRole": "clip",
   "startPose": "sitting-front",
   "endPose": "standing-side-right"

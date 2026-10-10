@@ -6,8 +6,10 @@ Frank's second export is now the current review authority. It is preserved
 byte-for-byte as `frank-keeper-animation-review-2026-10-10.json`, SHA-256
 `e72a6ddf3e7c30e3093195b5044ebd2b9d9af62ba94c9e493158af49b1e7ace7`.
 The exact-name comparison found 31 semantic deltas: four status-only
-acceptances were not regenerated, 27 animations were regenerated, and the
-dependent parachute landing strip was rebased only to retain its exact hand-off.
+acceptances were not regenerated, while 27 animations and the dependent
+parachute landing were regenerated and subsequently rejected after visual
+review. Those production assets are restored from pre-pass commit `131191c`;
+the attempted amendments survive only as history/evidence.
 Current state is 96 Happy, 68 Awaiting new draft review, 3 Review later and 6
 Unreviewed. Every awaiting card has a specific response.
 

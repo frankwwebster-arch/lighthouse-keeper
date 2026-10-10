@@ -2302,6 +2302,9 @@
   "draft": {
     "directory": "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1",
     "register": "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/draft-register.json",
+    "status": "rejected-after-visual-review",
+    "rejected": true,
+    "rejectionReason": "Frank rejected the second-round visual pass because the jumper-stripe animations and darts animation contained pixelated/corrupted artefacts and the released dart became an oversized arrow. The archive remains immutable evidence only and must not appear as an active review draft.",
     "promotionRequired": true,
     "canonicalPromotion": false
   },

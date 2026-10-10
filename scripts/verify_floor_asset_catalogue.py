@@ -149,9 +149,10 @@ for name in review_source_names:
             name, frame_index + 1, "right-edge frame bleed"
         )
 
-# Long-prop sources that could not be safely separated in one row are pinned
-# to immutable isolated-grid revisions. The final darts keep released darts as
-# distinct components in frames 12–13 and end on one clean neutral component.
+# Rejected second-round long-prop sources remain pinned as immutable evidence,
+# but they are not canonical production inputs. The restored darts strip is
+# pinned to the pre-review bytes so the pixelated/oversized-arrow redraft
+# cannot silently return.
 isolated_grid_sources = {
     "keeper-clear-snow-round2-grid-generated-source.png": "b5470890cef0448794414393947e50eb55971884d59cb389a8947bdbbf5dc455",
     "keeper-darts-round2-grid-generated-source.png": "7314006c114f2da64004a0fafa6c3d00f4da140250666fc45155724e21e0ece9",
@@ -161,9 +162,9 @@ isolated_grid_sources = {
 for filename, expected_hash in isolated_grid_sources.items():
     source_path = ROOT / "art/source/keeper-first-batch" / filename
     assert hashlib.sha256(source_path.read_bytes()).hexdigest() == expected_hash, filename
-assert len(alpha_component_sizes(frame_image("keeper_darts", 11))) == 2
-assert len(alpha_component_sizes(frame_image("keeper_darts", 12))) == 2
-assert len(alpha_component_sizes(frame_image("keeper_darts", 13))) == 1
+assert hashlib.sha256((ROOT / "art/raw/keeper-first-batch/keeper_darts_f14.png").read_bytes()).hexdigest() == "a52db90e64bb9d5389085f8fd3801208bd884f2c486f997d01b6f0d5b50bd974"
+assert hashlib.sha256((ROOT / "public/sprites/keeper_darts.png").read_bytes()).hexdigest() == "7469f0ad727751d30214629c007123b47dae1d9bde087915b72b790834dd26f3"
+assert all(len(alpha_component_sizes(frame_image("keeper_darts", frame))) == 1 for frame in (10, 11, 12, 13))
 
 # Review-accepted timing changes are production data; every other animated clip
 # keeps its authored 4 fps baseline.
@@ -175,7 +176,7 @@ accepted_fps = {
     "keeper_cake_turn_right": 7.5,
     "keeper_carry_cake": 8,
     "keeper_carry_meal": 8,
-    "keeper_carry_shopping": 5,
+    "keeper_carry_shopping": 8,
     "keeper_check_instrument_back": 6,
     "keeper_clear_snow": 3.5,
     "keeper_count_money": 6,
@@ -184,12 +185,11 @@ accepted_fps = {
     "keeper_door_open_back": 5.5,
     "keeper_door_open_side": 5,
     "keeper_feed_animals": 5.5,
+    "keeper_fish_feed_up": 5,
     "keeper_fish_seated": 3,
-    "keeper_guitar_pickup_acoustic": 8,
     "keeper_get_into_bed": 3,
     "keeper_hammer_back": 5,
     "keeper_hammer_side": 5,
-    "keeper_lift_button_front": 8,
     "keeper_pyjamas_snore": 1,
     "keeper_row_boat": 3,
     "keeper_shower_wash": 2,
@@ -203,13 +203,9 @@ for name in review_source_names:
     if clip["frames"] > 1:
         assert clip["fps"] == accepted_fps.get(name, 4), (name, clip["fps"])
 
-# Frank's saved visual sizing is production art direction. Every imported
-# review must be recorded byte-for-byte in the authored sidecar so a future
-# scale audit cannot silently replace it with an automatic measurement.
-review_exports = {
-    "2026-10-09": json.loads((ROOT / "docs/review/frank-keeper-animation-review-2026-10-09.json").read_text()),
-    "2026-10-10": json.loads((ROOT / "docs/review/frank-keeper-animation-review-2026-10-10.json").read_text()),
-}
+# Frank's saved visual sizing remains immutable review direction. The rejected
+# second-round pass must not claim that its 2026-10-10 values are present in
+# the restored pre-pass canonical sidecars.
 regenerated_second_round = {
     "keeper_bath_enter", "keeper_bath_exit", "keeper_carry_shopping", "keeper_clear_snow",
     "keeper_collect_eggs_back", "keeper_crouch_work_back", "keeper_darts", "keeper_eat_seated",
@@ -221,26 +217,20 @@ regenerated_second_round = {
     "keeper_mechanic_walk_front", "keeper_nap_seated", "keeper_operate_outboard",
     "keeper_parachute_drift",
 }
-for revision, exported in review_exports.items():
-    imported = {review["name"]: review for review in exported["reviews"]}
-    names_to_check = regenerated_second_round if revision == "2026-10-10" else regenerated_second_round & imported.keys()
-    for name in names_to_check:
-        review = imported[name]
-        assert keeper_sidecars[name]["reviewScaleRounds"][revision] == [
-            review.get("widthPercent", 100), review.get("heightPercent", 100)
-        ], (revision, name)
+for name in regenerated_second_round:
+    assert "2026-10-10" not in keeper_sidecars[name].get("reviewScaleRounds", {}), name
 
 # Rebuilt and newly introduced production sequences.
 required_frames = {
     "keeper_anti_gravity": 12,
     "keeper_darts": 14,
     "keeper_fish_feed_up": 14,
-    "keeper_fish_seated": 41,
-    "keeper_fish_standing": 50,
-    "keeper_hot_drink_pickup": 7,
-    "keeper_hot_drink_pour": 9,
-    "keeper_lift_button_front": 7,
-    "keeper_nap_seated": 7,
+    "keeper_fish_seated": 16,
+    "keeper_fish_standing": 16,
+    "keeper_hot_drink_pickup": 8,
+    "keeper_hot_drink_pour": 10,
+    "keeper_lift_button_front": 8,
+    "keeper_nap_seated": 8,
     "keeper_parachute_jump": 9,
     "keeper_parachute_drift": 8,
     "keeper_parachute_landing": 10,
@@ -412,13 +402,13 @@ assert resolution.count("\n| `keeper_") == 173
 # visual size as authoritative wherever the review changed width or height.
 scale_audit = json.loads((ROOT / "docs/keeper-scale-audit/keeper-scale-metrics.json").read_text())
 assert scale_audit["version"] == 2
-assert scale_audit["auditRevision"] == "2026-10-10-second-review-delta-v4"
+assert scale_audit["auditRevision"] == "2026-10-10-second-review-rollback-v1"
 assert scale_audit["originalReference"]["name"] == "keeper_walk"
 assert scale_audit["counts"] == {
     "allSheets": 191,
     "reviewedAnimationSheets": 173,
     "technicalRejectedSheets": 18,
-    "allFramesMeasured": 1475,
+    "allFramesMeasured": 1420,
     "correctedSheets": 81,
     "comparisonFailures": 0,
 }
@@ -480,13 +470,11 @@ page_reviews = review_page_data["initialReviews"]
 page_assets = {asset["name"]: asset for asset in review_page_data["assets"]}
 assert len(page_assets) == 173
 draft_assets = [asset for asset in page_assets.values() if asset.get("draftVariant")]
-assert [asset["name"] for asset in draft_assets] == ["keeper_darts"]
-assert draft_assets[0]["draftVariant"]["source"] == (
-    "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/keeper_darts_f14.png"
+assert draft_assets == []
+rejected_draft_register = json.loads(
+    (ROOT / "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/draft-register.json").read_text()
 )
-assert (ROOT / "public/keeper-review/drafts/keeper_darts_f14.png").read_bytes() == (
-    ROOT / draft_assets[0]["draftVariant"]["source"]
-).read_bytes()
+assert rejected_draft_register["animation"] == "keeper_darts"
 assert set(page_reviews) == set(review_names)
 for imported in review_export["reviews"]:
     name = imported["name"]
@@ -575,7 +563,7 @@ for slug in ("keeper-scuba-walk-side", "keeper-scuba-jetty-dive", "keeper-parach
 
 print(
     "Verified: 71 spaces, 1579 catalogue rows, floor exports, 325 working keeper sheets, "
-    "the 191-sheet/1475-frame review set, "
+    "the restored 191-sheet/1420-frame review set, "
     "reviewed visual sizing and identity authorities, scuba/parachute routes, cleaning cupboard occlusion, "
     "review evidence/statuses/responses, filtered cyclic navigation and 181 animated previews."
 )

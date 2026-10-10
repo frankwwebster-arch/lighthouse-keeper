@@ -228,22 +228,19 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   `data/keeper_side_on_beard_occlusion_audit.json`. It inventories 101 exact
   standing/sitting side-action names, including mirrored and derived consumers;
   it does not prove those frames use the fuller stepped `keeper_clear_snow`
-  beard. Only `keeper_darts` is qualified for an occlusion draft in frames 3–6.
-  The corrected beard audit must be rerun before promotion. The versioned draft is under
+  beard. Its `keeper_darts` draft inherited the rejected second-round art and
+  is now rejected evidence, not a promotion candidate. The corrected beard
+  audit must be rerun from the restored canonical sprites. The versioned archive is under
   `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/`, with rollback
-  hashes, contact sheet, preview, scale evidence and review evidence. The
-  canonical source, raw strip, manifest, runtime output and immutable review
-  exports are untouched. Promotion or rejection requires an explicit decision;
-  do not run the canonical sprite publish step as part of this audit.
+  hashes, contact sheet, preview, scale evidence and review evidence.
 - The permanent check is `node scripts/verify_side_on_beard_occlusion.ts` and
-  is included in `npm test`. The unified review page renders the canonical and
-  draft `keeper_darts` variants side-by-side with exact-name labels while
-  leaving the canonical panel authoritative.
+  is included in `npm test`. It verifies the rejected archive remains intact;
+  the unified review page deliberately excludes that draft.
 - The deployed online reviewer and offline launcher now use the same generated
   `public/keeper-review/index.html`; its review-only draft assets live under
   `public/keeper-review/drafts/` and are not runtime manifest entries. Browser
   progress remains origin-local and moves only through exact-name Export/Import.
-- 191 keeper sheets and 1,475 frames are in the technical review batch.
+- 191 keeper sheets and 1,420 frames are in the restored technical review batch.
 - 173 animation sheets are accepted into the review gallery.
 - 18 obsolete modular/reference sheets are excluded from review and must not
   return to production.
@@ -251,8 +248,8 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   audit.
 - The audit currently reports zero unresolved original-comparison failures.
 - Imported review state is 96 Happy, 68 Awaiting new draft review, 3 Review
-  later and 6 Unreviewed. “Awaiting new draft review” means the requested
-  production work is now present and awaits Frank's verdict.
+  later and 6 Unreviewed. After the second-round rollback, affected awaiting
+  entries require a fresh versioned draft and are not claimed as implemented.
 - Directly comparable full-body families without a saved visual resize are
   constrained to a 0.960–1.040 skull-to-sole ratio; unobscured side torsos
   without a saved visual resize must be within one logical pixel of the
@@ -859,4 +856,4 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 
 ## Ready-to-paste opening prompt for the new Codex task
 
-> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, `docs/review/KEEPER_ANIMATION_SECOND_ROUND_DELTA_2026-10-10.md` and `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` before changing anything. Frank's immutable 2026-10-09 and 2026-10-10 source reviews, current 173-row resolution register and separate dated Codex responses are under `docs/review/`; preserve them and capture any new export as a separately dated immutable record. Compare by exact `keeper_*` name, never list position. Treat Frank's saved width/height as authoritative and untouched `keeper_walk` plus the canonical sitting references as identity/anatomy authorities. Preserve source-cell isolation, exact scuba and parachute hand-offs, cleaning cupboard occlusion, seated nap, mower shed, artist-smock and guitar frame-6 hand-off. Rerun the full 191-sheet/1,475-frame scale audit and project verification, update the documentation, commit and push the completed work to remote `main`.
+> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, `docs/review/KEEPER_ANIMATION_SECOND_ROUND_DELTA_2026-10-10.md` and `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` before changing anything. The rejected second-round production pass has been restored from commit `131191c`; never promote or reuse its archived darts draft. Frank's immutable 2026-10-09 and 2026-10-10 source reviews, current 173-row resolution register and separate dated Codex responses are under `docs/review/`; preserve them and capture any new export as a separately dated immutable record. Compare by exact `keeper_*` name, never list position. Treat Frank's saved width/height as authoritative and untouched `keeper_walk` plus the canonical sitting references as identity/anatomy authorities. Make every amendment in a new versioned draft and show it beside canonical before promotion. Rerun the full 191-sheet/1,420-frame scale audit and project verification, update the documentation, commit and push the completed work to remote `main`.

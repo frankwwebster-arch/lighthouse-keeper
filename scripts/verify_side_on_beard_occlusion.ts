@@ -53,6 +53,18 @@ function verifyForegroundHandDraft(draftFile: string, sidecar: Record<string, an
   }
 }
 
+if (register.draft?.rejected === true) {
+  const draftRegisterPath = absolute(register.draft.register)
+  if (!fs.existsSync(draftRegisterPath)) fail('rejected draft register missing')
+  const rejected = JSON.parse(fs.readFileSync(draftRegisterPath, 'utf8')) as Record<string, any>
+  if (rejected.animation !== 'keeper_darts') fail('rejected draft attached to the wrong exact animation')
+  if (rejected.draft.stripSha256 !== sha256(absolute(rejected.draft.strip))) fail('rejected draft strip hash register is stale')
+  if (rejected.draft.sidecarSha256 !== sha256(absolute(rejected.draft.sidecar))) fail('rejected draft sidecar hash register is stale')
+  for (const evidence of rejected.draft.evidence as string[]) if (!fs.existsSync(absolute(evidence))) fail(`rejected draft evidence missing: ${evidence}`)
+  console.log('Verified rejected side-on occlusion draft archive; it is excluded from canonical production and active review')
+  process.exit(0)
+}
+
 const inventory = Object.entries(MANIFEST)
   .filter(([, clip]) => isAuditedClip(clip as Record<string, any>))
   .sort(([left], [right]) => left.localeCompare(right))
