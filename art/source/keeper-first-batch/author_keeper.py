@@ -1687,7 +1687,7 @@ ADDITIONAL_CLIPS = [
     ("keeper_count_money", "keeper-count-money-generated-source.png", 40, 40, dict(seat_point=[20, 29], hand_use_point=[20, 21], facing="front", interaction="count-money")),
     ("keeper_snooker", "keeper-snooker-generated-source.png", 64, 40, dict(anchor_point=[32, 40], hand_use_point=[55, 25], facing="right", interaction="play-snooker", mirror_safe=True, mirrors_for="left")),
     ("keeper_table_tennis", "keeper-table-tennis-generated-source.png", 40, 40, dict(hand_use_point=[34, 20], facing="right", interaction="play-table-tennis", mirror_safe=True, mirrors_for="left")),
-    ("keeper_darts", "keeper-darts-round2-grid-generated-source.png", 72, 40, dict(anchor_point=[36, 40], hand_use_point=[54, 15], look_target_point=[72, 12], facing="right", interaction="play-darts", mirror_safe=True, mirrors_for="left")),
+    ("keeper_darts", "keeper-darts-round2-grid-generated-source-beard-corrected.png", 72, 40, dict(anchor_point=[36, 40], hand_use_point=[54, 15], look_target_point=[72, 12], facing="right", interaction="play-darts", mirror_safe=True, mirrors_for="left")),
     ("keeper_trampoline_front", "keeper-trampoline-front-generated-source.png", 32, 48, dict(outfit="old-school-workout-kit", facing="front", interaction="bounce-trampoline")),
     ("keeper_lift_weights_back", "keeper-weights-back-round2-generated-source.png", 72, 56, dict(anchor_point=[36, 56], hand_use_point=[36, 5], outfit="old-school-workout-kit", facing="back", interaction="lift-weights")),
     ("keeper_pressups_side", "keeper-pressups-side-generated-source.png", 64, 40, dict(outfit="old-school-workout-kit", facing="right", interaction="press-ups", mirror_safe=True, mirrors_for="left")),
@@ -1838,8 +1838,11 @@ for clip_name, source_name, logical_width, logical_height, metadata in ADDITIONA
                 preserve_equal_cells=True, scale_multiplier=anatomy_scale,
             )
     elif clip_name == "keeper_darts":
-        source_frames = generated_grid_frames(source_name, 5, 3, 15, logical_width, logical_height)
-        frames = [frame for index, frame in enumerate(source_frames) if index != 4]
+        # The corrected beard source is a 14-actor grid. The original source
+        # contained one extra cell, but dropping a fixed position would lose a
+        # real Keeper pose after the identity correction. Detached darts are
+        # assigned to the nearest actor by generated_grid_frames.
+        frames = generated_grid_frames(source_name, 5, 3, 14, logical_width, logical_height)
         frames = [remove_small_alpha_components(frame, min_pixels=500) for frame in frames]
         for frame_index, dart_x in zip((10, 11, 12), (44, 54, 64)):
             frames[frame_index] = draw_flying_dart(frames[frame_index], dart_x)

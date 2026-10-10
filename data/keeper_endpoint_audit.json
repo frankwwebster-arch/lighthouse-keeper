@@ -1135,12 +1135,12 @@
       "pose": "standing-side-right",
       "neutral": "keeper_neutral_standing-side-right",
       "status": "fail",
-      "mismatchPercent": 99.95,
+      "mismatchPercent": 99.91,
       "canvasAnchorDelta": [
         0,
         0
       ],
-      "landmarkMaxDelta": 1,
+      "landmarkMaxDelta": 0.75,
       "remedy": "add bridge"
     },
     {
@@ -1150,12 +1150,12 @@
       "pose": "standing-side-right",
       "neutral": "keeper_neutral_standing-side-right",
       "status": "fail",
-      "mismatchPercent": 99.99,
+      "mismatchPercent": 100,
       "canvasAnchorDelta": [
         0,
         0
       ],
-      "landmarkMaxDelta": 1.25,
+      "landmarkMaxDelta": 3.75,
       "remedy": "add bridge"
     },
     {

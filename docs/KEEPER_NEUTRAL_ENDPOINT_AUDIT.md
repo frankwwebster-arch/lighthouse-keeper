@@ -52,8 +52,8 @@ Migration guard: the current legacy failures are frozen in `data/keeper_endpoint
 | `keeper_crouch_work_back` | end | `crouching-back` | pixels 99.71%; anchor (0, 0); landmarks 8px | add bridge |
 | `keeper_dance` | start | `standing-front` | pixels 99.94%; anchor (0, 0); landmarks 1px | add bridge |
 | `keeper_dance` | end | `standing-front` | pixels 99.94%; anchor (0, 0); landmarks 1px | add bridge |
-| `keeper_darts` | start | `standing-side-right` | pixels 99.95%; anchor (0, 0); landmarks 1px | add bridge |
-| `keeper_darts` | end | `standing-side-right` | pixels 99.99%; anchor (0, 0); landmarks 1.25px | add bridge |
+| `keeper_darts` | start | `standing-side-right` | pixels 99.91%; anchor (0, 0); landmarks 0.75px | add bridge |
+| `keeper_darts` | end | `standing-side-right` | pixels 100%; anchor (0, 0); landmarks 3.75px | add bridge |
 | `keeper_dig` | start | `standing-side-right` | pixels 99.94%; anchor (-2.5, 0); landmarks 6.75px | add bridge |
 | `keeper_dig` | end | `standing-side-right` | pixels 99.96%; anchor (-2.5, 0); landmarks 6.5px | add bridge |
 | `keeper_door_open_back` | start | `standing-side-right` | pixels 99.95%; anchor (0, 0); landmarks 3px | add bridge |

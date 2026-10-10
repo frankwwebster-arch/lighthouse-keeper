@@ -155,6 +155,7 @@ for name in review_source_names:
 isolated_grid_sources = {
     "keeper-clear-snow-round2-grid-generated-source.png": "b5470890cef0448794414393947e50eb55971884d59cb389a8947bdbbf5dc455",
     "keeper-darts-round2-grid-generated-source.png": "7314006c114f2da64004a0fafa6c3d00f4da140250666fc45155724e21e0ece9",
+    "keeper-darts-round2-grid-generated-source-beard-corrected.png": "ed8fd9e733c4468541f20b4976e75111838f76194c592951ecf6b27211aefa48",
     "keeper-machete-side-round2-grid-generated-source.png": "6424439fb6be1809242bb587042763bfcd5d245472bae2d34c54e4acb1a1da64",
 }
 for filename, expected_hash in isolated_grid_sources.items():
