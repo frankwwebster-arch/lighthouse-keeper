@@ -246,7 +246,12 @@ all 191 sheets is in `docs/keeper-scale-audit/keeper-scale-metrics.json`; the
 nine contact sheets render every sample at one fixed display scale so a larger
 transparent canvas can never make its keeper look smaller.
 
-For interactive comparison, open `docs/keeper-scale-audit/review.html`. It puts
+For interactive comparison, open `docs/keeper-scale-audit/review.html`. On this
+Mac, `Open Keeper Review Offline.command` at the repository root launches the
+same page and all of its local sprite strips without Wi-Fi. Leave the launcher’s
+Terminal window open during review; saved browser progress and the exported
+`keeper-scale-choices.json` work normally at its stable `127.0.0.1:8765`
+address. The reviewer puts
 the untouched `keeper_walk` in a dedicated identity-baseline panel, followed by
 all 173 accepted animation sheets in one filename-ordered gallery. Review-state
 filters cover Needs my input, Happy, Awaiting new draft review, Review later,

@@ -27,7 +27,11 @@ sheet.
 ## Start here in the next task
 
 1. Read this document in full.
-2. Open `docs/keeper-scale-audit/review.html`. A dedicated panel first shows
+2. Open `docs/keeper-scale-audit/review.html`. For a reliable no-Wi-Fi session
+   on this Mac, double-click `Open Keeper Review Offline.command` at the
+   repository root and leave its Terminal window open; it serves the same page
+   and local sprite strips only on `127.0.0.1:8765`, while browser saves and the
+   version-9 JSON export continue to work normally. A dedicated panel first shows
    the untouched `keeper_walk` identity/anatomy baseline, followed by all 173 accepted
    clips at one unchanged relative scale in filename order. Filter the register
    by Needs my input, Happy, Awaiting new draft review, Review later,

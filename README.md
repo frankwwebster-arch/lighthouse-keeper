@@ -14,6 +14,13 @@ npm run keeper-contract # rebuild neutral stills, bridges and the endpoint audit
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
 
+The keeper animation reviewer works without Wi-Fi on this Mac. Double-click
+`Open Keeper Review Offline.command`, leave its Terminal window open, and use
+the browser page it opens. It serves only over `127.0.0.1`, loads all 173
+animation strips from this repository, retains saved review progress in that
+browser and downloads `keeper-scale-choices.json` normally. No `npm` command,
+internet connection or Vercel access is required.
+
 ## Current implementation
 
 - Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The first production Pixel batch now supplies the red/white shell bands and those three 105 × 35 room plates; interactive furniture remains separate. The toilet and wash basin are both in the en suite.
@@ -44,7 +51,7 @@ On an iPad: open the address in Safari, Share, Add to Home Screen for full scree
 - `data/keeper_asset_contract.json` — authoritative machine-readable scale, pivots and interaction points.
 - `data/keeper_pose_registry.json`, `data/keeper_endpoint_audit.json` and `data/keeper_endpoint_exceptions.json` — shared pose vocabulary, current real-pixel endpoint evidence, and the frozen legacy migration boundary.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
-- `docs/keeper-scale-audit/review.html` — unified sizing and walk-to-action transition review for all 173 accepted animations, with review-state filters, filter-aware cyclic Previous/Next navigation, a specific read-only Codex response on every awaiting-input card, reload-resumable progress/filter/zoom, focused one-animation mode, frame stepping, current-card play-once/loop, canonical standing and sitting references, precise ±0.5 controls, notes/decision flags and version-9 JSON export.
+- `docs/keeper-scale-audit/review.html` — unified sizing and walk-to-action transition review for all 173 accepted animations, with review-state filters, filter-aware cyclic Previous/Next navigation, a specific read-only Codex response on every awaiting-input card, reload-resumable progress/filter/zoom, focused one-animation mode, frame stepping, current-card play-once/loop, canonical standing and sitting references, precise ±0.5 controls, notes/decision flags and version-9 JSON export. Double-click `Open Keeper Review Offline.command` to use this complete workflow without Wi-Fi.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.
 - `docs/DOORS_STAIRS_AND_COSTUMES.md` — agreed stairway, door and costume-change rules, seamless clip joins, and the decisions still to make.
 - `docs/BACKGROUND_ELEMENTS.md` — Codex's brief for every background layer, sunrise and sunset, night lighting, and the every-asset-can-be-upgraded rule for objects.
