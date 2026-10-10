@@ -497,6 +497,9 @@ export function GrownUps({ s, rules, credits, who, verify, onRules, onGift, onGi
           </div>
         ))}
         <p className="dim">A finished floor mission builds its floor overnight: it appears the next morning (one new floor a morning). The lift goes in at once.</p>
+        <h3>Recipe studio</h3>
+        <p className="dim">Put together and fine-tune how each activity plays: walks, doors, costume changes, animations and sounds.</p>
+        <a className="studio-link" href="/studio" target="_blank" rel="noopener">Open the recipe studio ↗</a>
         <h3>Animation speeds</h3>
         <details className="mission-dials">
           <summary>Change how fast each animation plays <small>(the whole game, not just {who})</small></summary>

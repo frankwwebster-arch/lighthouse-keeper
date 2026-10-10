@@ -1,0 +1,94 @@
+{
+  "kind": "recipe",
+  "notes": "Frank: naps happen in an armchair, never the bed. Seat height 11 px.",
+  "status": "draft",
+  "outfit": "standard",
+  "startAt": "stairs",
+  "facing": "right",
+  "room": {
+    "name": "Living room",
+    "inner": false
+  },
+  "objects": [
+    {
+      "id": "armchair",
+      "label": "Armchair",
+      "x": 70,
+      "w": 26,
+      "h": 24,
+      "marks": [
+        {
+          "label": "seat",
+          "y": 11
+        }
+      ],
+      "layer": "back",
+      "solid": true
+    }
+  ],
+  "action": {
+    "object": "armchair",
+    "dx": 0,
+    "facing": "right"
+  },
+  "walkSpeed": 20,
+  "steps": [
+    {
+      "id": "enter",
+      "kind": "macro",
+      "macro": "enter_room",
+      "label": "Enter the room",
+      "params": {
+        "swapTo": ""
+      }
+    },
+    {
+      "id": "go",
+      "kind": "walk",
+      "to": "action",
+      "label": "Walk to the armchair"
+    },
+    {
+      "id": "sit",
+      "kind": "play",
+      "clip": "keeper_sit_side",
+      "label": "Sit down"
+    },
+    {
+      "id": "nap",
+      "kind": "loop",
+      "clip": "keeper_nap_seated",
+      "seconds": 6,
+      "main": true,
+      "untilStopped": true,
+      "label": "Nap",
+      "cues": [
+        {
+          "id": "c1",
+          "sound": "snore",
+          "at": 0.5,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": true
+        }
+      ]
+    },
+    {
+      "id": "stand",
+      "kind": "play",
+      "clip": "keeper_sit_side",
+      "reverse": true,
+      "label": "Stand up"
+    },
+    {
+      "id": "leave",
+      "kind": "macro",
+      "macro": "leave_room",
+      "label": "Leave the room"
+    }
+  ],
+  "id": "armchair_nap",
+  "title": "Nap in the armchair",
+  "activity": "tv_nap"
+}

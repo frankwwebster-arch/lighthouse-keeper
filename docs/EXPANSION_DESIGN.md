@@ -386,3 +386,16 @@ Do not implement all ideas as independent floors at once. Prefer connected syste
 - Bank + allowance + shop + upgrades create a gentle saving and long-term-planning loop.
 
 Before implementation, choose a small set of eligible missions and make their order genuinely non-linear. Every new mission should add varied goals and avoid raw repetition counts where a short bespoke challenge would be more enjoyable.
+
+## Wants, thought bubbles and feelings (proposed 10 Oct 2026, not built)
+
+Frank's idea, to be designed properly before it is built.
+
+- **Thought bubbles.** When the keeper wants to do something, a bubble above his head shows it: a small picture of the object (the piano, the kettle) or a generic symbol (a musical note, a fish). Each recipe would name its icon, so every activity can show itself as a want with no extra wiring.
+- **Feedback while he does something.** In The Sims, pink hearts rose from a character doing something they liked and minus signs from something they didn't. Our camera is further out, so floating symbols may be too small to read on the iPad. They might work only when the camera is zoomed in on an activity.
+- **A "Numskulls" panel.** A sidebar showing what he wants to do inside a funny outline of his brain (or a little control room in his head), next to a gently animated face that shows his mood, from happy to cross. The game already tracks his needs, mood, likes and dislikes, so the panel would read those.
+- **Questions to settle:**
+  - Does a want come only from needs (hungry → food), or also from his personality (likes the piano)?
+  - How many wants show at once?
+  - Can tapping a want in the panel order it?
+  - Do the symbols and the face need their own art batch from Codex?

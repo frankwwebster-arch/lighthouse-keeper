@@ -122,3 +122,4 @@ input { font: inherit; font-size: 18px; min-height: 48px; padding: 6px 12px; bor
 .speed-pick .row { align-items:center; flex-wrap:wrap; } .speed-pick input[type=range] { flex:1; min-width:100px; min-height:30px; }
 .speeds textarea { width:100%; font-family:ui-monospace,monospace; font-size:.8rem; }
 @media (max-width:520px) { .speed-pick { grid-template-columns:1fr; } .speed-preview { justify-self:center; } }
+.studio-link { display:inline-block; padding:8px 14px; border-radius:12px; border:2px solid #c9b88f; background:#fff3d6; color:var(--ink); text-decoration:none; font-weight:600; }

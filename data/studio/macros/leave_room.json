@@ -1,0 +1,55 @@
+{
+  "kind": "macro",
+  "notes": "Walk back to the door, which is still open, and step through. While hidden he goes back into his standard clothes; the door closes behind him and he walks on to the stairs.",
+  "status": "draft",
+  "outfit": "standard",
+  "startAt": "stairs",
+  "facing": "right",
+  "room": {
+    "name": "Room",
+    "inner": false
+  },
+  "objects": [],
+  "action": {
+    "object": "",
+    "dx": 0,
+    "facing": "right"
+  },
+  "walkSpeed": 20,
+  "steps": [
+    {
+      "id": "walk",
+      "kind": "walk",
+      "to": "doorIn",
+      "label": "Walk back to the open door"
+    },
+    {
+      "id": "through",
+      "kind": "hide",
+      "through": "door",
+      "seconds": 0.6,
+      "swapTo": "standard",
+      "doorAfter": "close",
+      "label": "Step through (back to standard clothes)",
+      "cues": [
+        {
+          "id": "c1",
+          "sound": "door_close",
+          "at": 0.45,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": false
+        }
+      ]
+    },
+    {
+      "id": "stairs",
+      "kind": "walk",
+      "to": "stairs",
+      "label": "Walk to the stairs"
+    }
+  ],
+  "id": "leave_room",
+  "title": "Leave a room through its open door"
+}

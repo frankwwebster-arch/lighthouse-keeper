@@ -1,0 +1,102 @@
+{
+  "kind": "recipe",
+  "notes": "Daytime version in standard clothes. At night (from 19:00) he changes into pyjamas at the en-suite door; that needs a pyjama brushing clip.",
+  "status": "draft",
+  "outfit": "standard",
+  "startAt": "stairs",
+  "facing": "right",
+  "room": {
+    "name": "En suite",
+    "inner": false
+  },
+  "objects": [
+    {
+      "id": "basin",
+      "label": "Wash basin",
+      "x": 76,
+      "w": 18,
+      "h": 26,
+      "marks": [
+        {
+          "label": "rim",
+          "y": 19
+        }
+      ],
+      "layer": "back",
+      "solid": false
+    }
+  ],
+  "action": {
+    "object": "basin",
+    "dx": 0,
+    "facing": "right"
+  },
+  "walkSpeed": 20,
+  "steps": [
+    {
+      "id": "enter",
+      "kind": "macro",
+      "macro": "enter_room",
+      "label": "Enter the room",
+      "params": {
+        "swapTo": ""
+      }
+    },
+    {
+      "id": "go",
+      "kind": "walk",
+      "to": "action",
+      "label": "Walk to the basin"
+    },
+    {
+      "id": "turn",
+      "kind": "play",
+      "clip": "keeper_turn_back",
+      "label": "Turn to the basin"
+    },
+    {
+      "id": "brush",
+      "kind": "loop",
+      "clip": "keeper_brush_teeth_back",
+      "seconds": 5,
+      "main": true,
+      "label": "Brush",
+      "cues": [
+        {
+          "id": "c1",
+          "sound": "tap_running",
+          "at": 0,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": true
+        },
+        {
+          "id": "c2",
+          "sound": "toothbrush",
+          "at": 0.4,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": true
+        }
+      ]
+    },
+    {
+      "id": "unturn",
+      "kind": "play",
+      "clip": "keeper_turn_back",
+      "reverse": true,
+      "label": "Turn back round"
+    },
+    {
+      "id": "leave",
+      "kind": "macro",
+      "macro": "leave_room",
+      "label": "Leave the room"
+    }
+  ],
+  "id": "brush_teeth",
+  "title": "Brush teeth (morning)",
+  "activity": "brush_teeth"
+}

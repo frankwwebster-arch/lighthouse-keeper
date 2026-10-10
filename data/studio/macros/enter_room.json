@@ -1,0 +1,67 @@
+{
+  "kind": "macro",
+  "notes": "From the stairway landing: walk to the door, open it, step through. While the doorway hides him he changes into the outfit the recipe asks for (swapTo), or stays as he is. The door stays open while he is in the room.",
+  "status": "draft",
+  "outfit": "standard",
+  "startAt": "stairs",
+  "facing": "right",
+  "room": {
+    "name": "Room",
+    "inner": false
+  },
+  "objects": [],
+  "action": {
+    "object": "",
+    "dx": 0,
+    "facing": "right"
+  },
+  "walkSpeed": 20,
+  "steps": [
+    {
+      "id": "walk",
+      "kind": "walk",
+      "to": "doorOut",
+      "label": "Walk to the door"
+    },
+    {
+      "id": "open",
+      "kind": "play",
+      "clip": "keeper_door_open_side",
+      "facing": "right",
+      "doorAfter": "open",
+      "label": "Open the door",
+      "cues": [
+        {
+          "id": "c1",
+          "sound": "door_open",
+          "at": 0.6,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": false
+        }
+      ]
+    },
+    {
+      "id": "through",
+      "kind": "hide",
+      "through": "door",
+      "seconds": 0.6,
+      "swapTo": "$swapTo",
+      "label": "Step through (hidden: costume change)",
+      "cues": [
+        {
+          "id": "c2",
+          "sound": "footstep_doorway",
+          "at": 0.1,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": false
+        }
+      ]
+    }
+  ],
+  "id": "enter_room",
+  "title": "Enter a room through its door"
+}

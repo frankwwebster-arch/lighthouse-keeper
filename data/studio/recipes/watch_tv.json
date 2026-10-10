@@ -1,0 +1,108 @@
+{
+  "kind": "recipe",
+  "notes": "Codex's TV contract: his seat sits 24 px to one side of the screen centre, which is 15 px above the seat, so the screen stays visible. He sits on the sofa, so the sofa is the object he is using.",
+  "status": "draft",
+  "outfit": "standard",
+  "startAt": "stairs",
+  "facing": "right",
+  "room": {
+    "name": "Living room",
+    "inner": false
+  },
+  "objects": [
+    {
+      "id": "tv",
+      "label": "TV",
+      "x": 96,
+      "w": 28,
+      "h": 32,
+      "marks": [
+        {
+          "label": "screen centre",
+          "y": 26
+        }
+      ],
+      "layer": "back",
+      "solid": false
+    },
+    {
+      "id": "sofa",
+      "label": "Sofa",
+      "x": 62,
+      "w": 40,
+      "h": 22,
+      "marks": [
+        {
+          "label": "seat",
+          "y": 11
+        }
+      ],
+      "layer": "back",
+      "solid": true
+    }
+  ],
+  "action": {
+    "object": "sofa",
+    "dx": 10,
+    "facing": "right"
+  },
+  "walkSpeed": 20,
+  "steps": [
+    {
+      "id": "enter",
+      "kind": "macro",
+      "macro": "enter_room",
+      "label": "Enter the room",
+      "params": {
+        "swapTo": ""
+      }
+    },
+    {
+      "id": "go",
+      "kind": "walk",
+      "to": "action",
+      "label": "Walk to the sofa"
+    },
+    {
+      "id": "sit",
+      "kind": "play",
+      "clip": "keeper_sit_back",
+      "label": "Sit down facing the TV"
+    },
+    {
+      "id": "watch",
+      "kind": "loop",
+      "clip": "keeper_watch_tv",
+      "seconds": 6,
+      "main": true,
+      "label": "Watch",
+      "cues": [
+        {
+          "id": "c1",
+          "sound": "tv_chatter",
+          "at": 0,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": true
+        }
+      ]
+    },
+    {
+      "id": "stand",
+      "kind": "play",
+      "clip": "keeper_sit_back",
+      "reverse": true,
+      "label": "Stand up"
+    },
+    {
+      "id": "leave",
+      "kind": "macro",
+      "macro": "leave_room",
+      "label": "Leave the room"
+    }
+  ],
+  "id": "watch_tv",
+  "title": "Watch TV on the sofa",
+  "activity": "tv_watch"
+}

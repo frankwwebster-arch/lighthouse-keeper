@@ -1,0 +1,136 @@
+{
+  "kind": "recipe",
+  "notes": "Five connected hot-drink clips. The mug sits at the fixed worktop point in each clip, so placement is mostly about where he stands.",
+  "status": "draft",
+  "outfit": "standard",
+  "startAt": "stairs",
+  "facing": "right",
+  "room": {
+    "name": "Kitchen",
+    "inner": false
+  },
+  "objects": [
+    {
+      "id": "worktop",
+      "label": "Worktop",
+      "x": 80,
+      "w": 40,
+      "h": 19,
+      "marks": [
+        {
+          "label": "worktop",
+          "y": 19
+        }
+      ],
+      "layer": "back",
+      "solid": true
+    }
+  ],
+  "action": {
+    "object": "worktop",
+    "dx": -26,
+    "facing": "right"
+  },
+  "walkSpeed": 20,
+  "steps": [
+    {
+      "id": "enter",
+      "kind": "macro",
+      "macro": "enter_room",
+      "label": "Enter the room",
+      "params": {
+        "swapTo": ""
+      }
+    },
+    {
+      "id": "go",
+      "kind": "walk",
+      "to": "action",
+      "label": "Walk to the worktop"
+    },
+    {
+      "id": "pour",
+      "kind": "play",
+      "clip": "keeper_hot_drink_pour",
+      "label": "Pour",
+      "cues": [
+        {
+          "id": "c1",
+          "sound": "kettle_pour",
+          "at": 0.8,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": false
+        }
+      ]
+    },
+    {
+      "id": "stir",
+      "kind": "play",
+      "clip": "keeper_hot_drink_stir",
+      "label": "Stir",
+      "cues": [
+        {
+          "id": "c2",
+          "sound": "spoon_clink",
+          "at": 0.5,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": false
+        }
+      ]
+    },
+    {
+      "id": "pick",
+      "kind": "play",
+      "clip": "keeper_hot_drink_pickup",
+      "label": "Pick up the mug"
+    },
+    {
+      "id": "drink",
+      "kind": "loop",
+      "clip": "keeper_hot_drink_drink",
+      "seconds": 5,
+      "main": true,
+      "label": "Drink",
+      "cues": [
+        {
+          "id": "c3",
+          "sound": "sip",
+          "at": 1,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": false
+        }
+      ]
+    },
+    {
+      "id": "down",
+      "kind": "play",
+      "clip": "keeper_hot_drink_put_down",
+      "label": "Put the mug down",
+      "cues": [
+        {
+          "id": "c4",
+          "sound": "mug_down",
+          "at": 1.2,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": false
+        }
+      ]
+    },
+    {
+      "id": "leave",
+      "kind": "macro",
+      "macro": "leave_room",
+      "label": "Leave the room"
+    }
+  ],
+  "id": "make_tea",
+  "title": "Make a cup of tea"
+}

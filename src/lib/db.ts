@@ -19,6 +19,9 @@ export function ensureSchema(): Promise<void> {
       await q`create table if not exists saves (player_id text primary key references players(id) on delete cascade, state jsonb not null, updated_at timestamptz not null default now())`
       await q`create table if not exists player_rules (player_id text primary key references players(id) on delete cascade, rules jsonb not null)`
       await q`create table if not exists settings (key text primary key, value text not null)`
+      // The recipe studio: Frank's edited recipes and macros, and the sound library.
+      await q`create table if not exists studio_docs (id text primary key, doc jsonb not null, updated_at timestamptz not null default now())`
+      await q`create table if not exists studio_sounds (id text primary key, label text not null, mime text not null, data text not null, bytes integer not null, updated_at timestamptz not null default now())`
     })().catch((e) => {
       ready = null
       throw e

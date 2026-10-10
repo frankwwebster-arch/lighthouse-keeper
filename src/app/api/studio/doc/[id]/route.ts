@@ -1,0 +1,29 @@
+import { NextResponse } from 'next/server'
+import { ensureSchema, hasDb, pinOk, sql } from '../../../../../lib/db'
+import { cleanRecipe } from '../../../../../studio/recipe'
+
+export const dynamic = 'force-dynamic'
+
+/** Save Frank's version of a recipe or macro (it wins over the draft). */
+export async function PUT(req: Request, { params }: { params: { id: string } }) {
+  if (!hasDb()) return NextResponse.json({ error: 'no database' }, { status: 503 })
+  const body = (await req.json().catch(() => ({}))) as { pin?: unknown; doc?: unknown }
+  await ensureSchema()
+  if (!(await pinOk(body.pin))) return NextResponse.json({ error: 'wrong pin' }, { status: 403 })
+  const doc = cleanRecipe(body.doc)
+  if (!doc || doc.id !== params.id) return NextResponse.json({ error: 'not a recipe' }, { status: 400 })
+  const meta = (body.doc as { draftHash?: unknown }).draftHash
+  const saved = { ...doc, draftHash: typeof meta === 'string' ? meta : undefined }
+  await sql()`insert into studio_docs (id, doc, updated_at) values (${doc.id}, ${JSON.stringify(saved)}, now()) on conflict (id) do update set doc = excluded.doc, updated_at = now()`
+  return NextResponse.json({ ok: true })
+}
+
+/** Forget Frank's version, so the draft shows again. */
+export async function DELETE(req: Request, { params }: { params: { id: string } }) {
+  if (!hasDb()) return NextResponse.json({ error: 'no database' }, { status: 503 })
+  const body = (await req.json().catch(() => ({}))) as { pin?: unknown }
+  await ensureSchema()
+  if (!(await pinOk(body.pin))) return NextResponse.json({ error: 'wrong pin' }, { status: 403 })
+  await sql()`delete from studio_docs where id = ${params.id}`
+  return NextResponse.json({ ok: true })
+}

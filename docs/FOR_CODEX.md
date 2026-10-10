@@ -2,6 +2,10 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Recipes and the recipe studio (10 Oct 2026)
+
+The recipe format now exists: `docs/RECIPES.md`. Please follow it for the sidecar fields in your animation-contract plan: the shared pose names, 0-based `sfxCues` frames (the studio plays them automatically in every recipe that uses the clip), and the neutral filenames. Draft a recipe in `data/studio/recipes/` alongside each new animation, and list the file in `src/studio/drafts.ts`. Object layers and solidity (back wall, or in front and opaque) matter to Frank: see "Solid things". The door geometry in `recipe.ts` (`DOOR`) is a placeholder until your door art sets it.
+
 ## Animation speeds set in the game (9 Oct 2026)
 
 Frank can now change any animation's fps while playing (Grown-ups → Animation speeds), using the same 1–20 fps, 0.5-step range as your review page. Frank is writing a proposed speed for every clip into its sheet's metadata, which stays the real record. The in-game setting is a global tweak on top, for when clips are wired and playing in place. Each tweak remembers the sheet speed it was made against: once the metadata changes, the sheet wins and the tweak stops applying. "Copy for the metadata" gives `{ "animationFps": { "<sprite name>": <fps>, … } }` to write back into the sidecars. Logic: `src/game/animFps.ts`; storage key `animFps` in the `settings` table.

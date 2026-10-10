@@ -1,0 +1,105 @@
+{
+  "kind": "recipe",
+  "notes": "Shows a costume change: he goes in through the bedroom door in uniform and comes out of the doorway in pyjamas. In the game the night ends while he snores; getting up and leaving are here so the whole flow can be checked.",
+  "status": "draft",
+  "outfit": "standard",
+  "startAt": "stairs",
+  "facing": "right",
+  "room": {
+    "name": "Bedroom",
+    "inner": false
+  },
+  "objects": [
+    {
+      "id": "bed",
+      "label": "Bed",
+      "x": 74,
+      "w": 50,
+      "h": 14,
+      "marks": [
+        {
+          "label": "mattress",
+          "y": 9
+        }
+      ],
+      "layer": "back",
+      "solid": true
+    }
+  ],
+  "action": {
+    "object": "bed",
+    "dx": -14,
+    "facing": "right"
+  },
+  "walkSpeed": 20,
+  "steps": [
+    {
+      "id": "enter",
+      "kind": "macro",
+      "macro": "enter_room",
+      "label": "Enter the bedroom (into pyjamas)",
+      "params": {
+        "swapTo": "light-blue-pyjamas"
+      }
+    },
+    {
+      "id": "go",
+      "kind": "walk",
+      "to": "action",
+      "label": "Walk to the bed"
+    },
+    {
+      "id": "in",
+      "kind": "play",
+      "clip": "keeper_get_into_bed",
+      "label": "Get into bed",
+      "cues": [
+        {
+          "id": "c1",
+          "sound": "bed_creak",
+          "at": 1.2,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": false
+        }
+      ]
+    },
+    {
+      "id": "sleep",
+      "kind": "loop",
+      "clip": "keeper_pyjamas_snore",
+      "seconds": 6,
+      "main": true,
+      "untilStopped": true,
+      "label": "Sleep",
+      "cues": [
+        {
+          "id": "c2",
+          "sound": "snore",
+          "at": 0.5,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": true
+        }
+      ]
+    },
+    {
+      "id": "out",
+      "kind": "play",
+      "clip": "keeper_get_into_bed",
+      "reverse": true,
+      "label": "Get out of bed"
+    },
+    {
+      "id": "leave",
+      "kind": "macro",
+      "macro": "leave_room",
+      "label": "Leave the room"
+    }
+  ],
+  "id": "go_to_bed",
+  "title": "Go to bed (pyjamas at the door)",
+  "activity": "bed_sleep"
+}
