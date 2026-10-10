@@ -27,10 +27,10 @@ Each card's frame-control block can play only that reviewed action from frame 1.
 At browser widths of 1500px or more, focused mode becomes a widescreen workstation with the pinned canon on the left, a viewport-height animation stage in the centre and a compact two-column control console on the right. Control groups are colour-coded: amber for character size, purple for the ghost, blue for animation transforms, teal for frame navigation and green/red for review decisions and notes.
 Review progress is browser-local: changing display zoom or review-state filter saves immediately, and every `Save this review` records that animation as the latest completed card. Reloading restores the focused view and filter. Offline and online browser storage do not synchronise automatically; use Export on one copy and Import review JSON on the other. Saving or advancing from the final result wraps to the first result in that same filter.
 
-## Draft-only side-on beard/hand occlusion audit
+## Reversible review drafts
 
-The partial v1 audit is recorded in `data/keeper_side_on_beard_occlusion_audit.json`. It inventories 101 exact standing/seated side-on names and their mirrored/derived consumers, but it does not claim the required frame-by-frame comparison with the fuller stepped `keeper_clear_snow` beard. Its only draft is the `keeper_darts` foreground-hand-over-beard correction in frames 3–6. Canonical production art, `public/sprites/`, the runtime manifest, immutable review exports and existing previews remain untouched. The canonical and draft strips are shown together on the exact `keeper_darts` card in this review page.
-The versioned draft, original/draft SHA-256 register, frame evidence and rollback point are under `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/`. Run `node scripts/verify_side_on_beard_occlusion.ts` to validate that partial evidence, then rerun the corrected canonical-beard audit before promotion. Rejecting the draft requires only deleting that versioned directory.
+The rejected partial v1 side-on beard/hand audit remains immutable evidence under `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` and is not displayed. Frank's newly selected 14-pose darts image is independently preserved under `art/drafts/keeper-darts-user-selected-2026-10-10-v1/` and displayed beside the restored canonical `keeper_darts` for a new verdict.
+The new draft register pins source, canonical and draft SHA-256 values. Canonical production art, `public/sprites/`, the runtime manifest, immutable review exports and existing previews remain untouched. Rejecting the new draft requires only deleting its draft directory and exact-name entry from `data/keeper_review_drafts.json`.
 
 ## Corrected sheets
 

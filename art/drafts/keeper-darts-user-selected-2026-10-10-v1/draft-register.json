@@ -1,0 +1,349 @@
+{
+  "draftId": "keeper-darts-user-selected-2026-10-10-v1",
+  "animation": "keeper_darts",
+  "status": "active-review-draft",
+  "label": "Frank-selected draft",
+  "selection": "Frank identified the attached 14-pose image as a good darts animation and requested that it be put into the review.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_darts_f14.png",
+    "stripSha256": "a52db90e64bb9d5389085f8fd3801208bd884f2c486f997d01b6f0d5b50bd974",
+    "runtime": "public/sprites/keeper_darts.png",
+    "runtimeSha256": "7469f0ad727751d30214629c007123b47dae1d9bde087915b72b790834dd26f3",
+    "sidecar": "art/raw/keeper-first-batch/keeper_darts_f14.json",
+    "sidecarSha256": "b435e85733fcfc42886a9a9a2bcf26bcb706408b31e8cc6be3758bd7c5cabe31"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-darts-user-selected-2026-10-10-v1/source/keeper-darts-user-selected-source.png",
+    "sourceSha256": "ed8fd9e733c4468541f20b4976e75111838f76194c592951ecf6b27211aefa48",
+    "strip": "art/drafts/keeper-darts-user-selected-2026-10-10-v1/keeper_darts_user_selected_f14.png",
+    "stripSha256": "315109693389031844a4055737ff511cbe0c798a8a3b1ca6949155789afb3770",
+    "sidecar": "art/drafts/keeper-darts-user-selected-2026-10-10-v1/source/keeper_darts_f14.json",
+    "sidecarSha256": "306e470f5ad0acd5d36d718710405aab44010fc1ba5bab87f6ef3902951daf13",
+    "frames": 14,
+    "canvas": [
+      56,
+      40
+    ],
+    "density": 4,
+    "anchor": [
+      28,
+      40
+    ],
+    "scale": 0.5487364620938628,
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "sourceActorBox": [
+          150,
+          47,
+          275,
+          324
+        ],
+        "sourceOwnedBox": [
+          150,
+          47,
+          275,
+          324
+        ],
+        "draftAlphaBox": [
+          78,
+          6,
+          147,
+          158
+        ],
+        "detachedComponentCount": 0
+      },
+      {
+        "frame": 2,
+        "sourceActorBox": [
+          438,
+          47,
+          592,
+          324
+        ],
+        "sourceOwnedBox": [
+          438,
+          47,
+          592,
+          324
+        ],
+        "draftAlphaBox": [
+          70,
+          6,
+          155,
+          158
+        ],
+        "detachedComponentCount": 0
+      },
+      {
+        "frame": 3,
+        "sourceActorBox": [
+          735,
+          47,
+          865,
+          324
+        ],
+        "sourceOwnedBox": [
+          735,
+          47,
+          865,
+          324
+        ],
+        "draftAlphaBox": [
+          76,
+          6,
+          147,
+          158
+        ],
+        "detachedComponentCount": 0
+      },
+      {
+        "frame": 4,
+        "sourceActorBox": [
+          1032,
+          47,
+          1162,
+          324
+        ],
+        "sourceOwnedBox": [
+          1032,
+          47,
+          1162,
+          324
+        ],
+        "draftAlphaBox": [
+          76,
+          6,
+          147,
+          158
+        ],
+        "detachedComponentCount": 0
+      },
+      {
+        "frame": 5,
+        "sourceActorBox": [
+          1334,
+          47,
+          1465,
+          324
+        ],
+        "sourceOwnedBox": [
+          1334,
+          47,
+          1465,
+          324
+        ],
+        "draftAlphaBox": [
+          76,
+          6,
+          148,
+          158
+        ],
+        "detachedComponentCount": 0
+      },
+      {
+        "frame": 6,
+        "sourceActorBox": [
+          142,
+          366,
+          275,
+          640
+        ],
+        "sourceOwnedBox": [
+          142,
+          366,
+          275,
+          640
+        ],
+        "draftAlphaBox": [
+          76,
+          8,
+          149,
+          158
+        ],
+        "detachedComponentCount": 0
+      },
+      {
+        "frame": 7,
+        "sourceActorBox": [
+          418,
+          364,
+          603,
+          640
+        ],
+        "sourceOwnedBox": [
+          418,
+          364,
+          603,
+          640
+        ],
+        "draftAlphaBox": [
+          61,
+          7,
+          163,
+          158
+        ],
+        "detachedComponentCount": 0
+      },
+      {
+        "frame": 8,
+        "sourceActorBox": [
+          708,
+          364,
+          899,
+          640
+        ],
+        "sourceOwnedBox": [
+          708,
+          364,
+          899,
+          640
+        ],
+        "draftAlphaBox": [
+          60,
+          7,
+          165,
+          158
+        ],
+        "detachedComponentCount": 0
+      },
+      {
+        "frame": 9,
+        "sourceActorBox": [
+          1006,
+          364,
+          1213,
+          640
+        ],
+        "sourceOwnedBox": [
+          1006,
+          364,
+          1213,
+          640
+        ],
+        "draftAlphaBox": [
+          55,
+          7,
+          169,
+          158
+        ],
+        "detachedComponentCount": 0
+      },
+      {
+        "frame": 10,
+        "sourceActorBox": [
+          1309,
+          364,
+          1508,
+          640
+        ],
+        "sourceOwnedBox": [
+          1309,
+          364,
+          1536,
+          640
+        ],
+        "draftAlphaBox": [
+          57,
+          7,
+          182,
+          158
+        ],
+        "detachedComponentCount": 1
+      },
+      {
+        "frame": 11,
+        "sourceActorBox": [
+          92,
+          667,
+          294,
+          940
+        ],
+        "sourceOwnedBox": [
+          92,
+          667,
+          345,
+          940
+        ],
+        "draftAlphaBox": [
+          57,
+          8,
+          196,
+          158
+        ],
+        "detachedComponentCount": 1
+      },
+      {
+        "frame": 12,
+        "sourceActorBox": [
+          397,
+          667,
+          600,
+          940
+        ],
+        "sourceOwnedBox": [
+          397,
+          667,
+          661,
+          940
+        ],
+        "draftAlphaBox": [
+          56,
+          8,
+          201,
+          158
+        ],
+        "detachedComponentCount": 1
+      },
+      {
+        "frame": 13,
+        "sourceActorBox": [
+          692,
+          667,
+          894,
+          940
+        ],
+        "sourceOwnedBox": [
+          692,
+          667,
+          969,
+          940
+        ],
+        "draftAlphaBox": [
+          57,
+          8,
+          209,
+          158
+        ],
+        "detachedComponentCount": 1
+      },
+      {
+        "frame": 14,
+        "sourceActorBox": [
+          1012,
+          667,
+          1185,
+          940
+        ],
+        "sourceOwnedBox": [
+          1012,
+          667,
+          1185,
+          940
+        ],
+        "draftAlphaBox": [
+          65,
+          8,
+          160,
+          158
+        ],
+        "detachedComponentCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-darts-user-selected-2026-10-10-v1/evidence/keeper_darts_canonical_vs_user_selected_draft.png",
+      "art/drafts/keeper-darts-user-selected-2026-10-10-v1/evidence/keeper_darts_user_selected_draft.png"
+    ]
+  },
+  "rollback": "Remove this draft directory and its exact-name registry entry; canonical raw/runtime sprites, manifest and immutable review exports are untouched."
+}

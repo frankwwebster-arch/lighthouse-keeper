@@ -35,6 +35,11 @@ page explains it in ordinary language.
   stepped, slightly ragged outer and lower margins and its taper around the
   mouth and chin in left-facing, right-facing and mirrored frames, including
   seated, reclined and head-tilted poses.
+- Frank's independently selected 14-pose darts source is currently a review
+  draft, not a new scale or identity authority. Its 14 isolated 56 × 40 cells
+  use the existing `keeper_darts` anchor, timing and saved review transform;
+  the side-on beard audit must judge its beard and hand ordering before any
+  promotion.
 - The vertical dive starts from a 48 × 56 canvas with anchor `(24,56)`. Full
   parachute deployment starts from 48 × 84 with anchor `(24,84)`. Transparent
   space is expanded before the saved review sizing is applied.

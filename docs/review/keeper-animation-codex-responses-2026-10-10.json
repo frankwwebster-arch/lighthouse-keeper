@@ -7,7 +7,7 @@
   "keeper_collect_eggs_back": "Restored the pre-second-round rear egg-collecting strip after the jumper-stripe amendment produced corrupted, pixelated artwork.",
   "keeper_count_money": "Retained the accepted money-counting animation unchanged.",
   "keeper_crouch_work_back": "Restored the pre-second-round rear crouch-work strip after the jumper-stripe amendment produced corrupted, pixelated artwork.",
-  "keeper_darts": "Restored the pre-second-round 14-frame darts strip, removing the pixelated redraft and oversized release arrow. The rejected beard/hand draft is archived and no longer appears as an active comparison.",
+  "keeper_darts": "Added your selected 14-pose darts image as a new reversible review draft beside the restored canonical strip. The poses and flying darts were extracted into isolated 56×40 cells; no production sprite was replaced.",
   "keeper_drink_pint": "Retained the accepted pint-drinking animation unchanged.",
   "keeper_drive_speedboat": "Retained the accepted speedboat-driving animation unchanged.",
   "keeper_eat_seated": "Restored the pre-second-round eight-frame seated-eating strip after rejecting the replacement utensil poses.",

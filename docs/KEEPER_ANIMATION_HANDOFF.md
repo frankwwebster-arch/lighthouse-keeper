@@ -235,7 +235,17 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   hashes, contact sheet, preview, scale evidence and review evidence.
 - The permanent check is `node scripts/verify_side_on_beard_occlusion.ts` and
   is included in `npm test`. It verifies the rejected archive remains intact;
-  the unified review page deliberately excludes that draft.
+  the unified review page deliberately excludes that rejected draft.
+- Frank subsequently selected the same original 14-pose image as a good darts
+  animation and explicitly requested a new review comparison. That selection
+  is independently preserved under
+  `art/drafts/keeper-darts-user-selected-2026-10-10-v1/`, extracted into 14
+  isolated 56 × 40 frames, and registered by exact `keeper_darts` name in
+  `data/keeper_review_drafts.json`. It is not the rejected altered v1 strip;
+  canonical raw/runtime darts remain byte-identical and appear beside it.
+- `node scripts/verify_keeper_review_drafts.ts` checks source, canonical,
+  draft and published-review hashes, geometry, transparent gutters, detached
+  dart ownership and exact-name reviewer attachment.
 - The deployed online reviewer and offline launcher now use the same generated
   `public/keeper-review/index.html`; its review-only draft assets live under
   `public/keeper-review/drafts/` and are not runtime manifest entries. Browser

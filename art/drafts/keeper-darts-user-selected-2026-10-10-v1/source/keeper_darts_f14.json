@@ -1,0 +1,43 @@
+{
+  "w": 56,
+  "h": 40,
+  "frames": 14,
+  "fps": 3,
+  "density": 4,
+  "anchor": [
+    28,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "handUsePoint": [
+    46,
+    15.75
+  ],
+  "lookTargetPoint": [
+    56,
+    12.84
+  ],
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "play-darts",
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    97
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "reviewDraft": {
+    "draftId": "keeper-darts-user-selected-2026-10-10-v1",
+    "label": "Frank-selected draft",
+    "sourceSha256": "ed8fd9e733c4468541f20b4976e75111838f76194c592951ecf6b27211aefa48",
+    "canonicalPromotion": false,
+    "extraction": "14 largest actor components in reading order; detached darts assigned to the nearest actor; actor centre and floor contact aligned without fitting by full prop bounds"
+  }
+}

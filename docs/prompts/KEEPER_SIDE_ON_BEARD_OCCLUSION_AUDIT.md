@@ -24,11 +24,16 @@ Continue the Lighthouse Keeper work in:
 
 /Users/frank/Documents/ChatGPT/Lighthouse Keeper
 
-Work on `main` from restored rollback commit
-`240c7613fa0d71b8288acc56b939655ee4e4d3a9`. Confirm the worktree is clean
-before starting. The failed second-round art pass and the rejected v1
-beard/hand draft are historical evidence only; neither is a valid source for
-new artwork.
+Work on the current remote `main` and confirm the worktree is clean before
+starting. Verify that restored rollback commit
+`240c7613fa0d71b8288acc56b939655ee4e4d3a9` is an ancestor; do not reset back
+to it. The failed second-round art pass and the rejected v1 beard/hand draft
+are historical evidence only; neither is a valid source for new artwork.
+The separate `keeper-darts-user-selected-2026-10-10-v1` review draft is a new
+explicit selection by Frank and must be included in the visual audit, but it
+is not canonical and must not be overwritten or silently promoted. If it
+needs a beard/occlusion correction, copy that selected draft into the new
+audit-v2 working directory and record both sets of hashes.
 
 This is the FIRST audit in a two-audit sequence. Complete and commit this
 side-on beard/hand-occlusion audit before starting the later exhaustive

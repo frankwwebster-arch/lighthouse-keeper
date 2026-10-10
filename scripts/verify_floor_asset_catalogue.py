@@ -470,7 +470,24 @@ page_reviews = review_page_data["initialReviews"]
 page_assets = {asset["name"]: asset for asset in review_page_data["assets"]}
 assert len(page_assets) == 173
 draft_assets = [asset for asset in page_assets.values() if asset.get("draftVariant")]
-assert draft_assets == []
+assert [asset["name"] for asset in draft_assets] == ["keeper_darts"]
+review_draft_registry = json.loads((ROOT / "data/keeper_review_drafts.json").read_text())
+assert review_page_data["reviewDrafts"] == review_draft_registry
+active_review_draft = review_draft_registry["drafts"][0]
+assert active_review_draft == {
+    "name": "keeper_darts",
+    "status": "active-review-draft",
+    "label": "Frank-selected draft",
+    "register": "art/drafts/keeper-darts-user-selected-2026-10-10-v1/draft-register.json",
+}
+active_draft_register = json.loads((ROOT / active_review_draft["register"]).read_text())
+assert active_draft_register["animation"] == "keeper_darts"
+assert draft_assets[0]["draftVariant"]["source"] == active_draft_register["draft"]["strip"]
+assert draft_assets[0]["draftVariant"]["sha256"] == active_draft_register["draft"]["stripSha256"]
+assert draft_assets[0]["draftVariant"]["canonicalSha256"] == active_draft_register["canonical"]["stripSha256"]
+assert hashlib.sha256((ROOT / active_draft_register["canonical"]["strip"]).read_bytes()).hexdigest() == active_draft_register["canonical"]["stripSha256"]
+assert hashlib.sha256((ROOT / active_draft_register["canonical"]["runtime"]).read_bytes()).hexdigest() == active_draft_register["canonical"]["runtimeSha256"]
+assert hashlib.sha256((ROOT / active_draft_register["draft"]["strip"]).read_bytes()).hexdigest() == active_draft_register["draft"]["stripSha256"]
 rejected_draft_register = json.loads(
     (ROOT / "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/draft-register.json").read_text()
 )
@@ -549,7 +566,8 @@ for token in (
     "Any conflicting status-list entries were safely reconciled",
     ".detail-mode article.detail-current .draftcompare .stagewrap{grid-area:auto",
     "Canonical · ${card.asset.name}",
-    "Draft · ${card.asset.name}",
+    "${variant.label||'Draft'} · ${card.asset.name}",
+    "Frank-selected draft",
 ):
     assert token in review_html, token
 
