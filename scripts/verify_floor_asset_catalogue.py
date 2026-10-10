@@ -582,7 +582,7 @@ for token in (
     "seen.has(raw.name)",
     "Any conflicting status-list entries were safely reconciled",
     ".detail-mode article.detail-current .draftcompare .stagewrap{grid-area:auto",
-    "Canonical · ${card.asset.name}",
+    "Current selected replacement",
     "${variant.label||'Draft'} · ${card.asset.name}",
     "Frank-selected draft",
 ):
