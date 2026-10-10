@@ -67,6 +67,26 @@ Any step may end with `doorAfter: "open"` or `"close"`, and may carry sound `cue
 - `loop` repeats the sound until the step ends.
 - A sound is named; the studio's library holds the files (database `studio_sounds`, up to 3 MB each). A name with no file yet is a **placeholder**: it plays a short blip with its own pitch, so timing can be judged now. Frank drops a file on the placeholder and every cue with that name gets it.
 
+## Object types: one recipe for every variant
+
+Every asset in the game can be upgraded (Frank), so a recipe normally names an object **type** rather than one particular object.
+
+- A type lives in `data/studio/categories/<id>.json`: the game's object id (`cooker`), its standing **spots** (`use`, `seat`), whether it is `back` or `front` and `solid`, and its **variants**, usually its upgrade tiers.
+- Each variant gives its own size, sprite, contact marks and, for each spot, where his feet go from its bottom-centre and which way he faces.
+- In a recipe:
+  - an object with `category` and `variant` takes all of that from the variant;
+  - `action.spot` puts the action point at that spot, with `action.dx` as a nudge on top.
+- Swap the variant and he stands in the right place for the new oven. The studio's **Every variant** row replays the recipe with each variant and shows a tick or the number of problems for each one.
+- A walk can go **to an object**: `"@table"` stops him just clear of its nearer edge, and `"@cooker:use"` sends him to a spot. So routes stretch when things are moved, swapped or upgraded.
+- List new type files in `CATEGORY_FILES` in `src/studio/drafts.ts`. The tests check every draft recipe against every variant of its types. Frank's edits to a type (variant sizes, spots) are saved in the database and apply to every recipe that uses it.
+- Plain objects (no `category`) are only stand-ins.
+
+## Seeing the route, the poses and the evening
+
+- **Route** draws his whole route in a stark magenta: each walk as a line with an arrow, each hidden doorway crossing dashed in blue, and a numbered marker at each stop (the number is the step's number). It is worked out from the objects' positions, so it stretches live as you drag them.
+- **Ghosts** shows faint copies of him in the first pose of each stop.
+- **Evening** darkens the outside and shades the room. The room's light is on only while its door is open (he opens it on the way in; it closes behind him as he leaves). The stairway is always lit.
+
 ## Solid things
 
 Frank's rule: he can never walk into a solid thing, and nothing solid in front of him may ever clip his animation.
@@ -106,4 +126,5 @@ These match Codex's plan for the keeper sheets.
 - The game itself playing recipes, with routes between floors and the doors on the way.
 - Real door, stairway and furniture art (the studio shows placeholders and switches to the art when it exists).
 - A pyjama brushing clip (the bedtime version of brushing teeth).
+- Reading object types straight from Codex's sidecars (`docs/BACKGROUND_ELEMENTS.md` §5) instead of `data/studio/categories/`.
 - Thought bubbles and the keeper's feelings panel (proposed in `docs/EXPANSION_DESIGN.md`). Recipes would carry the icon he shows when he wants to do the activity.

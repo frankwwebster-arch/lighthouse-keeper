@@ -15,8 +15,13 @@
 // ─── The format ──────────────────────────────────────────────────────────────
 
 export type Facing = 'left' | 'right'
-/** Where a walk goes: a named place in the room, or an x. */
-export type Target = 'stairs' | 'doorOut' | 'doorIn' | 'innerIn' | 'innerOut' | 'action' | number
+/**
+ * Where a walk goes: a named place in the room, an object (`@table`, or
+ * `@cooker:use` for one of its type's standing spots), or an x. Walking to an
+ * object without a spot stops him just clear of its nearer edge, so the route
+ * stretches when the object is moved, swapped or upgraded.
+ */
+export type Target = 'stairs' | 'doorOut' | 'doorIn' | 'innerIn' | 'innerOut' | 'action' | `@${string}` | number
 
 export interface Cue {
   id: string
@@ -87,7 +92,52 @@ export interface StageObject {
   layer?: 'back' | 'front'
   /** He can never walk into or through it (except the object he is using: he sits on the armchair). Front objects are always solid. */
   solid?: boolean
+  /**
+   * Its type (the game's object id, e.g. `cooker`) and which variant (usually
+   * the upgrade tier). With a type, its size, art, contact marks and standing
+   * spots come from that variant, so one recipe serves every oven.
+   */
+  category?: string
+  variant?: string
+  /** Filled in from its variant when the recipe is resolved. */
+  spots?: Record<string, Spot>
 }
+
+// ─── Object types: one recipe for every variant ──────────────────────────────
+
+/** Where he stands to use one variant: from its bottom-centre, and the way he faces. */
+export interface Spot {
+  dx: number
+  facing: Facing
+}
+
+export interface Variant {
+  id: string
+  label: string
+  /** The upgrade tier it is, if it is one. */
+  tier?: number
+  /** The sprite's base name (`obj_cooker_t2`); a placeholder box until it exists. */
+  sprite?: string
+  w: number
+  h: number
+  marks?: { label: string; y: number }[]
+  /** Each of the type's spots, for this variant. */
+  spots: Record<string, Spot>
+}
+
+/** A type of object (an oven), its standing spots, and its variants (the three ovens). */
+export interface Category {
+  id: string
+  kind: 'category'
+  label: string
+  notes: string
+  layer?: 'back' | 'front'
+  solid?: boolean
+  spots: { id: string; label: string }[]
+  variants: Variant[]
+}
+
+export const variantOf = (c: Category | undefined, id: string | undefined) => (c ? c.variants.find((v) => v.id === id) ?? c.variants[0] : undefined)
 
 export interface Recipe {
   id: string
@@ -102,8 +152,12 @@ export interface Recipe {
   facing: Facing
   room: { name: string; inner: boolean }
   objects: StageObject[]
-  /** Where he stands to do it: from that object's bottom-centre, and the way he faces. */
-  action: { object: string; dx: number; facing: Facing }
+  /**
+   * Where he stands to do it. With `spot`, the object's type says where (and
+   * which way he faces) for whichever variant is in the room, and `dx` is a
+   * nudge on top; without one, `dx` is from the object's bottom-centre.
+   */
+  action: { object: string; spot?: string; dx: number; facing: Facing }
   walkSpeed: number
   steps: Step[]
 }
@@ -150,13 +204,89 @@ const PLACES = {
 } as const
 export const DOORWAY = { door: 0, inner: STAGE.roomW } as const
 
-export const placeX = (r: Recipe, t: Target): number => {
+export const placeX = (r: Recipe, t: Target, from?: number): number => {
   if (typeof t === 'number') return Math.round(t)
   if (t === 'action') {
     const o = r.objects.find((x) => x.id === r.action.object)
     return Math.round((o?.x ?? STAGE.roomW / 2) + r.action.dx)
   }
-  return PLACES[t]
+  if (t.startsWith('@')) {
+    const [id, spot] = t.slice(1).split(':')
+    const o = r.objects.find((x) => x.id === id)
+    if (!o) return from ?? STAGE.roomW / 2
+    const s = spot ? o.spots?.[spot] : undefined
+    if (s) return Math.round(o.x + s.dx)
+    // Just clear of the nearer edge.
+    const side = (from ?? 0) <= o.x ? -1 : 1
+    return Math.round(o.x + side * (o.w / 2 + KEEPER_HALF + 1))
+  }
+  return PLACES[t as keyof typeof PLACES]
+}
+
+/** Which way he faces on arriving at an object target. */
+const facingAt = (r: Recipe, t: Target, x: number): Facing | null => {
+  if (typeof t !== 'string' || !t.startsWith('@')) return null
+  const [id, spot] = t.slice(1).split(':')
+  const o = r.objects.find((y) => y.id === id)
+  if (!o) return null
+  return (spot && o.spots?.[spot]?.facing) || (o.x >= x ? 'right' : 'left')
+}
+
+/**
+ * A recipe with every typed object filled in from its variant (size, art,
+ * marks, spots) and the action point worked out from its spot. Compiling and
+ * checking always use this; editing changes the recipe itself.
+ */
+export function resolveRecipe(r: Recipe, cats: Record<string, Category>): { recipe: Recipe; problems: string[] } {
+  const problems: string[] = []
+  const objects = r.objects.map((o) => {
+    if (!o.category) return o
+    const c = cats[o.category]
+    const v = variantOf(c, o.variant)
+    if (!c || !v) {
+      problems.push(`${o.label} is a ${o.category}, but there is no such object type`)
+      return o
+    }
+    return { ...o, label: o.label || c.label, w: v.w, h: v.h, sprite: v.sprite ?? o.sprite, marks: v.marks ?? o.marks, layer: c.layer ?? o.layer, solid: c.solid ?? o.solid, variant: v.id, spots: v.spots }
+  })
+  let action = r.action
+  if (r.action.spot) {
+    const o = objects.find((x) => x.id === r.action.object)
+    const s = o?.spots?.[r.action.spot]
+    if (s) action = { ...r.action, dx: s.dx + r.action.dx, facing: s.facing }
+    else problems.push(`${o?.label ?? r.action.object} has no “${r.action.spot}” spot`)
+  }
+  return { recipe: { ...r, objects, action }, problems }
+}
+
+/** The same recipe with each variant of each typed object in turn (the others as they are). */
+export function everyVariant(r: Recipe, cats: Record<string, Category>): { object: StageObject; variant: Variant; recipe: Recipe }[] {
+  return r.objects.flatMap((o) => {
+    const c = o.category ? cats[o.category] : undefined
+    return (c?.variants ?? []).map((v) => ({ object: o, variant: v, recipe: { ...r, objects: r.objects.map((x) => (x.id === o.id ? { ...x, variant: v.id } : x)) } }))
+  })
+}
+
+/** An object type from saved or drafted JSON (anything missing gets a safe default). */
+export function cleanCategory(raw: unknown): Category | null {
+  if (!raw || typeof raw !== 'object') return null
+  const d = raw as Partial<Category>
+  if (typeof d.id !== 'string' || !/^[a-z0-9_-]{1,60}$/.test(d.id)) return null
+  const spots = Array.isArray(d.spots) ? d.spots.filter((s) => s && typeof s.id === 'string').map((s) => ({ id: s.id, label: typeof s.label === 'string' ? s.label : s.id })) : []
+  const variants = (Array.isArray(d.variants) ? d.variants : [])
+    .filter((v) => v && typeof v.id === 'string')
+    .map((v) => ({
+      id: v.id,
+      label: typeof v.label === 'string' ? v.label : v.id,
+      tier: typeof v.tier === 'number' ? v.tier : undefined,
+      sprite: typeof v.sprite === 'string' && v.sprite ? v.sprite : undefined,
+      w: typeof v.w === 'number' && v.w > 0 ? v.w : 20,
+      h: typeof v.h === 'number' && v.h > 0 ? v.h : 20,
+      marks: Array.isArray(v.marks) ? v.marks : undefined,
+      spots: Object.fromEntries(spots.map((s) => [s.id, { dx: Number(v.spots?.[s.id]?.dx) || 0, facing: v.spots?.[s.id]?.facing === 'left' ? 'left' : 'right' } as Spot])),
+    }))
+  if (!variants.length) return null
+  return { id: d.id, kind: 'category', label: typeof d.label === 'string' ? d.label : d.id, notes: typeof d.notes === 'string' ? d.notes : '', layer: d.layer === 'front' ? 'front' : d.layer === 'back' ? 'back' : undefined, solid: typeof d.solid === 'boolean' ? d.solid : undefined, spots, variants }
 }
 
 /** The walk for each outfit (the standard uniform's is `keeper_walk`). */
@@ -269,7 +399,7 @@ export function compile(r: Recipe, macros: Record<string, Recipe>, clips: ClipLo
         touches: s.doorAfter && s.kind !== 'hide' ? (s.through ?? 'door') : null,
       }
       if (s.kind === 'walk') {
-        const to = placeX(r, s.to ?? 'action')
+        const to = placeX(r, s.to ?? 'action', x)
         const clip = s.clip || walkFor(outfit, has)
         const info = clips(clip) ?? null
         if (!info) problems.push(`No walk clip ${clip}`)
@@ -283,6 +413,7 @@ export function compile(r: Recipe, macros: Record<string, Recipe>, clips: ClipLo
         x = to
         if (s.facing && s.facing !== 'auto') facing = s.facing
         else if ((s.to ?? 'action') === 'action') facing = r.action.facing
+        else facing = facingAt(r, s.to!, x) ?? facing
       } else if (s.kind === 'play' || s.kind === 'loop' || s.kind === 'wait') {
         if (s.facing && s.facing !== 'auto') facing = s.facing
         const clip = s.clip || (s.kind === 'wait' ? walkFor(outfit, has) : '')
@@ -538,7 +669,7 @@ export function cleanRecipe(raw: unknown): Recipe | null {
     facing: d.facing === 'left' ? 'left' : 'right',
     room: { name: d.room?.name ?? 'Room', inner: !!d.room?.inner },
     objects: Array.isArray(d.objects) ? d.objects.filter((o) => o && typeof o.id === 'string') : [],
-    action: { object: d.action?.object ?? '', dx: d.action?.dx ?? 0, facing: d.action?.facing === 'left' ? 'left' : 'right' },
+    action: { object: d.action?.object ?? '', spot: typeof d.action?.spot === 'string' ? d.action.spot : undefined, dx: d.action?.dx ?? 0, facing: d.action?.facing === 'left' ? 'left' : 'right' },
     walkSpeed: typeof d.walkSpeed === 'number' && d.walkSpeed > 0 ? d.walkSpeed : 20,
     steps: Array.isArray(d.steps) ? d.steps.filter((s) => s && typeof s.id === 'string' && typeof s.kind === 'string') : [],
   }

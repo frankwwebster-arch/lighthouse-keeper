@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import { DRAFTS, DRAFT_FILES } from './drafts'
-import { checkSolids, cleanRecipe, compile, frameFrom, hashOf, mainOf, moveStep, newCue, placeX, shotAt, soundsUsed, walkFor, type BoundsLookup, type ClipInfo, type ClipLookup, type Recipe } from './recipe'
+import { CATEGORIES, CATEGORY_FILES, DRAFTS, DRAFT_FILES } from './drafts'
+import { KEEPER_HALF, checkSolids, cleanCategory, cleanRecipe, compile, everyVariant, resolveRecipe, frameFrom, hashOf, mainOf, moveStep, newCue, placeX, shotAt, soundsUsed, walkFor, type BoundsLookup, type ClipInfo, type ClipLookup, type Recipe, type StageObject } from './recipe'
 
 const manifest = JSON.parse(readFileSync('public/sprites/manifest.json', 'utf8')) as Record<string, { w: number; h: number; frames: number; fps?: number; anchor?: [number, number]; facing?: string; mirrorSafe?: boolean }>
 const fromManifest: ClipLookup = (name) => {
@@ -20,6 +20,9 @@ const base = (steps: Recipe['steps']): Recipe =>
 
 describe('the drafts', () => {
   it('lists every JSON file in data/studio', () => {
+    const cats = readdirSync('data/studio/categories').filter((f) => f.endsWith('.json')).map((f) => `categories/${f.replace(/\.json$/, '')}`)
+    expect(Object.keys(CATEGORY_FILES).sort()).toEqual(cats.sort())
+    expect(Object.keys(CATEGORIES)).toHaveLength(cats.length)
     const files = ['macros', 'recipes'].flatMap((dir) => readdirSync(`data/studio/${dir}`).filter((f) => f.endsWith('.json')).map((f) => `${dir}/${f.replace(/\.json$/, '')}`))
     expect(Object.keys(DRAFT_FILES).sort()).toEqual(files.sort())
   })
@@ -30,7 +33,9 @@ describe('the drafts', () => {
   })
 
   it('compile with no problems, and every clip they use is in the sprites', () => {
-    for (const r of recipes) {
+    for (const raw of recipes) {
+      const { recipe: r, problems } = resolveRecipe(raw, CATEGORIES)
+      expect(problems, raw.id).toEqual([])
       const tl = compile(r, macros, fromManifest)
       expect(tl.problems, r.id).toEqual([])
       for (const s of tl.segments) if (s.clip) expect(manifest[s.clip], `${r.id}: ${s.clip}`).toBeTruthy()
@@ -38,12 +43,18 @@ describe('the drafts', () => {
     }
   })
 
-  it('never walk into anything solid or get covered by anything in front of him', () => {
-    for (const r of recipes) expect(checkSolids(r, compile(r, macros, fromManifest)), r.id).toEqual([])
+  it('never walk into anything solid or get covered by anything in front of him, with every variant of every object', () => {
+    for (const raw of recipes) {
+      for (const { variant, recipe } of [{ variant: { id: 'as drafted' }, recipe: raw }, ...everyVariant(raw, CATEGORIES)]) {
+        const r = resolveRecipe(recipe, CATEGORIES).recipe
+        expect(checkSolids(r, compile(r, macros, fromManifest)), `${raw.id} with ${variant.id}`).toEqual([])
+      }
+    }
   })
 
   it('come in by the door and leave by it, ending at the stairs in standard clothes', () => {
-    for (const r of recipes) {
+    for (const raw of recipes) {
+      const r = resolveRecipe(raw, CATEGORIES).recipe
       const tl = compile(r, macros, fromManifest)
       const hides = tl.segments.filter((s) => s.kind === 'hide')
       expect(hides.length, r.id).toBe(2)
@@ -207,6 +218,35 @@ describe('solid things', () => {
     expect(checkSolids(near, compile(near, {}, tiny)).map((i) => i.text.split(' (')[0])).toEqual(['the open door covers part of him'])
     const clear = { ...r, startAt: placeX(r, 'doorIn') }
     expect(checkSolids(clear, compile(clear, {}, tiny))).toEqual([])
+  })
+})
+
+describe('object types and variants', () => {
+  const oven = cleanCategory({ id: 'oven', label: 'Oven', layer: 'back', solid: true, spots: [{ id: 'use', label: 'Use' }], variants: [{ id: 'small', label: 'Small', w: 20, h: 20, spots: { use: { dx: 0, facing: 'right' } } }, { id: 'big', label: 'Big', w: 50, h: 24, spots: { use: { dx: -12, facing: 'left' } } }] })!
+  const table: StageObject = { id: 'table', label: 'Table', x: 100, w: 20, h: 19, layer: 'back', solid: true }
+  const r = cleanRecipe({ id: 'cook', startAt: 20, objects: [{ id: 'o', label: '', x: 60, w: 1, h: 1, category: 'oven', variant: 'small' }, table], action: { object: 'o', spot: 'use', dx: 1, facing: 'right' }, steps: [{ id: 'a', kind: 'walk', to: 'action' }, { id: 'b', kind: 'walk', to: '@table' }] })!
+
+  it('takes size, label and standing spot from the variant, with the recipe’s nudge on top', () => {
+    const small = resolveRecipe(r, { oven }).recipe
+    expect(small.objects[0]).toMatchObject({ w: 20, h: 20, label: 'Oven', solid: true })
+    expect(placeX(small, 'action')).toBe(61)
+    const big = resolveRecipe({ ...r, objects: [{ ...r.objects[0], variant: 'big' }, table] }, { oven }).recipe
+    expect(big.objects[0].w).toBe(50)
+    expect(placeX(big, 'action')).toBe(60 - 12 + 1)
+    expect(big.action.facing).toBe('left')
+  })
+
+  it('stops just clear of an object he walks to, so the route stretches when it changes size', () => {
+    const res = resolveRecipe(r, { oven }).recipe
+    const tl = compile(res, {}, tiny)
+    expect(tl.segments[1].x1).toBe(100 - 10 - KEEPER_HALF - 1)
+    const wide = { ...res, objects: [res.objects[0], { ...table, w: 40 }] }
+    expect(compile(wide, {}, tiny).segments[1].x1).toBe(100 - 20 - KEEPER_HALF - 1)
+  })
+
+  it('lists the recipe with each variant in turn, and reports an unknown type or spot', () => {
+    expect(everyVariant(r, { oven }).map((v) => v.variant.id)).toEqual(['small', 'big'])
+    expect(resolveRecipe(r, {}).problems).toHaveLength(2)
   })
 })
 

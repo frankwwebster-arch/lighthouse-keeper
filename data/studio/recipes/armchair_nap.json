@@ -1,6 +1,6 @@
 {
   "kind": "recipe",
-  "notes": "Frank: naps happen in an armchair, never the bed. Seat height 11 px.",
+  "notes": "Frank: naps happen in an armchair, never the bed. The armchair is an object type with three tiers; switch the variant to check the same recipe works in each.",
   "status": "draft",
   "outfit": "standard",
   "startAt": "stairs",
@@ -16,18 +16,13 @@
       "x": 70,
       "w": 26,
       "h": 24,
-      "marks": [
-        {
-          "label": "seat",
-          "y": 11
-        }
-      ],
-      "layer": "back",
-      "solid": true
+      "category": "armchair",
+      "variant": "t1"
     }
   ],
   "action": {
     "object": "armchair",
+    "spot": "seat",
     "dx": 0,
     "facing": "right"
   },

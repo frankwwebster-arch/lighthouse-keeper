@@ -103,3 +103,17 @@
 .st-library small { color: var(--st-dim); font-size: 11px; }
 .st-list { overflow-x: hidden; } .st-library li { min-width: 0; } .st-library .st-name { min-width: 0; }
 .st-inline { display: flex; align-items: center; gap: 6px; } .st-inline input[type=range] { flex: 1; min-width: 0; }
+/* Route, ghosts and evening light */
+.st-route line { stroke: #ff1fb4; stroke-width: 1; }
+.st-route path { fill: none; stroke: #ff1fb4; stroke-width: 1; }
+.st-route .hid line { stroke: #00b3ff; stroke-dasharray: 1.5 1; }
+.st-route circle { fill: #ff1fb4; } .st-route text { font: 700 2.6px ui-sans-serif, system-ui; fill: #fff; }
+.st-night { fill: #0b1236; opacity: .62; }
+.st-dark { fill: #0b1236; opacity: .58; }
+.st-lamp { fill: #ffcf6e; opacity: .14; }
+.st-lighttext { font: 600 2.8px ui-sans-serif, system-ui; fill: #ffe7ad; }
+.st-variants { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; font-size: 12px; }
+.st-variants button.good { border-color: var(--st-ok); color: var(--st-ok); } .st-variants button.bad { border-color: var(--st-accent); color: var(--st-accent); }
+.st-variants button.on { background: #e3edf7; font-weight: 600; }
+.st-spot { display: grid; gap: 4px; padding: 6px; border: 1px solid var(--st-line); border-radius: 6px; }
+.st-lighttext.on { fill: #8a5a12; }

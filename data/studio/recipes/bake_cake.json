@@ -1,0 +1,141 @@
+{
+  "id": "bake_cake",
+  "kind": "recipe",
+  "title": "Bake a cake",
+  "notes": "One recipe for all three ovens: he stands at the oven type's own spot, so swapping the oven moves where he stands and the route stretches to the table. Cake clips: oven retrieval, turn, carry, place at the 19 px table datum.",
+  "status": "draft",
+  "activity": "cooker_cook",
+  "outfit": "standard",
+  "startAt": "stairs",
+  "facing": "right",
+  "room": {
+    "name": "Kitchen",
+    "inner": false
+  },
+  "objects": [
+    {
+      "id": "cooker",
+      "label": "Oven",
+      "x": 46,
+      "w": 28,
+      "h": 22,
+      "category": "cooker",
+      "variant": "t1"
+    },
+    {
+      "id": "table",
+      "label": "Table",
+      "x": 96,
+      "w": 24,
+      "h": 19,
+      "layer": "back",
+      "solid": true,
+      "marks": [
+        {
+          "label": "table",
+          "y": 19
+        }
+      ]
+    }
+  ],
+  "action": {
+    "object": "cooker",
+    "spot": "use",
+    "dx": 0,
+    "facing": "right"
+  },
+  "walkSpeed": 20,
+  "steps": [
+    {
+      "id": "enter",
+      "kind": "macro",
+      "macro": "enter_room",
+      "label": "Enter the kitchen",
+      "params": {
+        "swapTo": ""
+      }
+    },
+    {
+      "id": "go",
+      "kind": "walk",
+      "to": "action",
+      "label": "Walk to the oven"
+    },
+    {
+      "id": "turn",
+      "kind": "play",
+      "clip": "keeper_turn_back",
+      "label": "Turn to the oven"
+    },
+    {
+      "id": "take",
+      "kind": "play",
+      "clip": "keeper_cake_from_oven_back",
+      "label": "Take the cake out",
+      "main": false,
+      "cues": [
+        {
+          "id": "c1",
+          "sound": "oven_door",
+          "at": 0.3,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": false
+        },
+        {
+          "id": "c2",
+          "sound": "oven_tray",
+          "at": 1.2,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": false
+        }
+      ]
+    },
+    {
+      "id": "spin",
+      "kind": "play",
+      "clip": "keeper_cake_turn_right",
+      "label": "Turn with the cake"
+    },
+    {
+      "id": "carry",
+      "kind": "walk",
+      "to": "@table",
+      "clip": "keeper_carry_cake",
+      "label": "Carry it to the table"
+    },
+    {
+      "id": "place",
+      "kind": "play",
+      "clip": "keeper_place_cake",
+      "label": "Put it on the table",
+      "cues": [
+        {
+          "id": "c3",
+          "sound": "plate_down",
+          "at": 1.4,
+          "trimStart": 0,
+          "trimEnd": null,
+          "volume": 1,
+          "loop": false
+        }
+      ]
+    },
+    {
+      "id": "admire",
+      "kind": "wait",
+      "seconds": 2,
+      "main": true,
+      "label": "Admire it"
+    },
+    {
+      "id": "leave",
+      "kind": "macro",
+      "macro": "leave_room",
+      "label": "Leave the kitchen"
+    }
+  ]
+}

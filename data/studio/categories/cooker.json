@@ -1,0 +1,88 @@
+{
+  "id": "cooker",
+  "kind": "category",
+  "label": "Oven",
+  "notes": "Against the back wall: he stands in front of it, back to the camera, to use it (the rear oven clips align the rack at the middle of his body). Sizes are placeholders until Codex's oven art fixes them; each variant's standing spot is where his feet go for that oven.",
+  "layer": "back",
+  "solid": false,
+  "spots": [
+    {
+      "id": "use",
+      "label": "Use the oven"
+    }
+  ],
+  "variants": [
+    {
+      "id": "t1",
+      "label": "Basic oven",
+      "tier": 1,
+      "sprite": "obj_cooker",
+      "w": 28,
+      "h": 22,
+      "marks": [
+        {
+          "label": "worktop",
+          "y": 19
+        },
+        {
+          "label": "rack",
+          "y": 10
+        }
+      ],
+      "spots": {
+        "use": {
+          "dx": 0,
+          "facing": "right"
+        }
+      }
+    },
+    {
+      "id": "t2",
+      "label": "Two-oven range",
+      "tier": 2,
+      "sprite": "obj_cooker_t2",
+      "w": 42,
+      "h": 24,
+      "marks": [
+        {
+          "label": "worktop",
+          "y": 19
+        },
+        {
+          "label": "rack",
+          "y": 10
+        }
+      ],
+      "spots": {
+        "use": {
+          "dx": -9,
+          "facing": "right"
+        }
+      }
+    },
+    {
+      "id": "t3",
+      "label": "Fancy professional kitchen",
+      "tier": 3,
+      "sprite": "obj_cooker_t3",
+      "w": 58,
+      "h": 28,
+      "marks": [
+        {
+          "label": "worktop",
+          "y": 19
+        },
+        {
+          "label": "rack",
+          "y": 10
+        }
+      ],
+      "spots": {
+        "use": {
+          "dx": -14,
+          "facing": "right"
+        }
+      }
+    }
+  ]
+}

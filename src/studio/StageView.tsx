@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { DOOR, DOORWAY, STAGE, isFront, isSolid, placeX, type Recipe, type Shot, type StageObject } from './recipe'
+import { DOOR, DOORWAY, STAGE, frameFrom, isFront, isSolid, placeX, type Recipe, type Shot, type StageObject, type Timeline } from './recipe'
 
 /** A sprite entry as the manifest gives it (only what the stage needs). */
 export interface SheetEntry {
@@ -61,9 +61,53 @@ function ObjectView({ o, sheet, selected, onPointerDown }: { o: StageObject; she
  * the objects and the keeper. Objects and the action point can be dragged;
  * everything snaps to whole logical pixels.
  */
-export function StageView({ doc, shot, zoom, sel, sheet, onSelect, onObjectX, onActionDx, editable }: {
+/**
+ * His whole route in a stark colour: each walk as a line with an arrow, each
+ * hidden doorway crossing dashed, and a numbered marker at every stop. It is
+ * worked out from where the objects are, so it stretches when one is moved,
+ * swapped or upgraded.
+ */
+function Route({ tl, steps }: { tl: Timeline; steps: string[] }) {
+  const stops = tl.segments.filter((s) => s.kind !== 'walk' && s.kind !== 'hide')
+  const seen = new Set<string>()
+  return (
+    <g className="st-route" pointerEvents="none">
+      {tl.segments.map((s, i) => {
+        if (s.kind !== 'walk' && s.kind !== 'hide') return null
+        const y = 3 + (i % 2)
+        const dir = s.x1 >= s.x0 ? 1 : -1
+        return (
+          <g key={i} className={s.kind === 'hide' ? 'hid' : ''}>
+            <line x1={s.x0} x2={s.x1} y1={y} y2={y} />
+            {Math.abs(s.x1 - s.x0) > 4 && <path d={`M${s.x1 - dir * 2.5} ${y - 1.5} L${s.x1} ${y} L${s.x1 - dir * 2.5} ${y + 1.5}`} />}
+          </g>
+        )
+      })}
+      {stops.map((s, i) => {
+        const x = s.x0 + s.dx
+        const key = `${x}`
+        const first = !seen.has(key)
+        seen.add(key)
+        const n = steps.indexOf(s.stepId) + 1
+        return first ? (
+          <g key={i}>
+            <circle cx={x} cy={7.5} r={2.2} />
+            <text x={x} y={8.5} textAnchor="middle">{n}</text>
+          </g>
+        ) : null
+      })}
+    </g>
+  )
+}
+
+export function StageView({ doc, shot, tl, zoom, sel, sheet, onSelect, onObjectX, onActionDx, editable, showRoute, showGhosts, evening }: {
   doc: Recipe
   shot: Shot
+  tl: Timeline
+  showRoute: boolean
+  showGhosts: boolean
+  /** Dark outside: the room's light is on only while its door is open (he is in there); the stairway is always lit. */
+  evening: boolean
   zoom: number
   sel: Sel | null
   sheet: (name: string) => SheetEntry | undefined
@@ -75,7 +119,7 @@ export function StageView({ doc, shot, zoom, sel, sheet, onSelect, onObjectX, on
   const svg = useRef<SVGSVGElement>(null)
   const right = doc.room.inner ? VIEW.right : STAGE.roomW + 8
   const W = right - VIEW.left
-  const H = -VIEW.top + 8
+  const H = -VIEW.top + 13
   const toX = (clientX: number) => {
     const m = svg.current?.getScreenCTM()
     return m ? (clientX - m.e) / m.a : 0
@@ -98,7 +142,11 @@ export function StageView({ doc, shot, zoom, sel, sheet, onSelect, onObjectX, on
   const front = doc.objects.filter(isFront)
   const keeper = shot.clip ? sheet(shot.clip) : undefined
   const ax = placeX(doc, 'action')
-  const objSheet = (o: StageObject) => (o.sprite ? sheet(o.sprite) ?? sheet(`obj_${o.sprite}_standard`) : undefined)
+  const objSheet = (o: StageObject) => (o.sprite ? sheet(o.sprite) ?? sheet(`${o.sprite}_standard`) ?? sheet(`obj_${o.sprite}_standard`) : undefined)
+  // Faint copies of him at each stop: the first frame of each pose he holds there.
+  const ghosts = showGhosts
+    ? tl.segments.filter((s) => s.visible && s.info && s.clip && s.kind !== 'walk').map((s) => ({ s, e: sheet(s.clip!), frame: frameFrom(s, 0) })).filter((g) => g.e)
+    : []
   const actionObj = doc.objects.find((o) => o.id === doc.action.object)
 
   return (
@@ -124,11 +172,22 @@ export function StageView({ doc, shot, zoom, sel, sheet, onSelect, onObjectX, on
         </g>
       )}
 
+      {ghosts.map((g, i) => <Frame key={i} e={g.e!} frame={g.frame} x={g.s.x0 + g.s.dx} y={g.s.dy} mirror={g.s.mirror} opacity={0.22} />)}
       {shot.visible && keeper && <Frame e={keeper} frame={shot.frame} x={shot.x} y={shot.y} mirror={shot.mirror} />}
 
       {front.map((o) => <ObjectView key={o.id} o={o} sheet={objSheet(o)} selected={sel?.type === 'object' && sel.id === o.id} onPointerDown={(e) => { onSelect({ type: 'object', id: o.id }); drag(e, o.x, (x) => onObjectX(o.id, x)) }} />)}
       <Door at={DOORWAY.door} open={shot.door} side="left" />
       {doc.room.inner && <Door at={DOORWAY.inner} open={shot.inner} side="right" />}
+      {evening && (
+        <g pointerEvents="none">
+          {/* Outside is dark; inside, each area has its own light. */}
+          <path className="st-night" fillRule="evenodd" d={`M${VIEW.left} ${VIEW.top} h${W} v${H} h${-W} z M${-STAGE.stairW} ${-STAGE.roomH} h${STAGE.stairW + STAGE.roomW} v${STAGE.roomH} h${-(STAGE.stairW + STAGE.roomW)} z`} />
+          <rect className="st-lamp" x={-STAGE.stairW} y={-STAGE.roomH} width={STAGE.stairW} height={STAGE.roomH} />
+          <rect className={shot.door ? 'st-lamp' : 'st-dark'} x={0} y={-STAGE.roomH} width={STAGE.roomW} height={STAGE.roomH} />
+          <text className={`st-lighttext ${shot.door ? "on" : ""}`} x={STAGE.roomW - 2} y={-STAGE.roomH + 5} textAnchor="end">{shot.door ? 'light on' : 'light off'}</text>
+        </g>
+      )}
+      {showRoute && <Route tl={tl} steps={doc.steps.map((s) => s.id)} />}
       {!shot.visible && <text className="st-hidden" x={shot.x} y={-20} textAnchor="middle">hidden{shot.segment?.label ? ` · ${shot.segment.label}` : ''}</text>}
     </svg>
   )

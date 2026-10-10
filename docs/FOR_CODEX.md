@@ -2,6 +2,17 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Background elements brief (10 Oct 2026)
+
+`docs/BACKGROUND_ELEMENTS.md` is your brief for everything behind and around the tower:
+- the layers as tiles or modules, because the world grows up, down and sideways;
+- sizes, frames and what changes with weather and time;
+- the sunrise and sunset sequences;
+- night lighting: rooms shaded by the game, plus lit and dark tower windows;
+- a delivery order and the decisions for Frank.
+
+It also records Frank's rule that **every asset can be upgraded**. Please give each object variant's sidecar `category`, `tier`, footprint, `layer`, `solid` and `keeperUsePoints` per spot, so one animation set serves every tier.
+
 ## Backdrop, weather, ambience and the lamp (10 Oct 2026)
 
 Frank wants ambient sound (a gentle seascape and changing weather) planned as part of the backdrop art, so every moving outdoor layer has a sound partner and both follow one weather value. The full instructions are in `docs/AMBIENCE_AND_BACKDROP.md`:

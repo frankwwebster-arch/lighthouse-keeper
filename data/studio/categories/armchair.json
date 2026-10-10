@@ -1,0 +1,76 @@
+{
+  "id": "armchair",
+  "kind": "category",
+  "label": "Armchair",
+  "notes": "Side-on in the walking lane, so solid. The seat stays at 11 px on every tier (upgrades.csv), so the same sit, nap and stand clips work for all three; only the chair around him changes.",
+  "layer": "back",
+  "solid": true,
+  "spots": [
+    {
+      "id": "seat",
+      "label": "Sit in it"
+    }
+  ],
+  "variants": [
+    {
+      "id": "t1",
+      "label": "Basic armchair",
+      "tier": 1,
+      "sprite": "obj_armchair",
+      "w": 26,
+      "h": 24,
+      "marks": [
+        {
+          "label": "seat",
+          "y": 11
+        }
+      ],
+      "spots": {
+        "seat": {
+          "dx": 0,
+          "facing": "right"
+        }
+      }
+    },
+    {
+      "id": "t2",
+      "label": "Rocking chair",
+      "tier": 2,
+      "sprite": "obj_armchair_t2",
+      "w": 30,
+      "h": 27,
+      "marks": [
+        {
+          "label": "seat",
+          "y": 11
+        }
+      ],
+      "spots": {
+        "seat": {
+          "dx": 1,
+          "facing": "right"
+        }
+      }
+    },
+    {
+      "id": "t3",
+      "label": "Lazyboy-style recliner",
+      "tier": 3,
+      "sprite": "obj_armchair_t3",
+      "w": 36,
+      "h": 26,
+      "marks": [
+        {
+          "label": "seat",
+          "y": 11
+        }
+      ],
+      "spots": {
+        "seat": {
+          "dx": 2,
+          "facing": "right"
+        }
+      }
+    }
+  ]
+}

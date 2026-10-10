@@ -4,12 +4,12 @@ import { verifyPin } from '../game/remote'
 import { SpriteProvider, useAnimSpeeds, useSprites } from '../ui/Sprite'
 import { Mixer } from './audio'
 import { measureSheet } from './bounds'
-import { DRAFTS } from './drafts'
+import { CATEGORIES, DRAFTS } from './drafts'
 import { Inspector, KIND_LABEL } from './Inspector'
-import { checkSolids, cleanRecipe, compile, hashOf, mainOf, moveStep, newCue, newId, shotAt, soundsUsed, withStep, type Bounds, type ClipInfo, type Recipe, type Step, type StepKind } from './recipe'
+import { checkSolids, cleanRecipe, compile, everyVariant, hashOf, mainOf, moveStep, newCue, newId, resolveRecipe, shotAt, soundsUsed, withStep, type Bounds, type Category, type ClipInfo, type Recipe, type Step, type StepKind } from './recipe'
 import { SoundLibrary } from './SoundLibrary'
 import { StageView, type Sel, type SheetEntry } from './StageView'
-import { deleteSound, loadStudio, resetDoc, saveDoc, soundIdFrom, uploadSound, type SavedDoc, type SoundInfo } from './store'
+import { deleteSound, loadStudio, resetDoc, saveDoc, saveType, soundIdFrom, uploadSound, type SavedCategory, type SavedDoc, type SoundInfo } from './store'
 import { TimelineView } from './TimelineView'
 
 type Rich = SheetEntry & { fps?: number; facing?: string; mirrorSafe?: boolean; outfit?: string; density?: number; sfxCues?: { frame: number; cue: string }[] }
@@ -34,6 +34,8 @@ function Studio() {
   const [loaded, setLoaded] = useState(false)
   const [saved, setSaved] = useState<Record<string, SavedDoc>>({})
   const [docs, setDocs] = useState<Record<string, Recipe>>(DRAFT_BY_ID)
+  const [cats, setCats] = useState<Record<string, Category>>(CATEGORIES)
+  const [savedTypes, setSavedTypes] = useState<Record<string, SavedCategory>>({})
   const [sounds, setSounds] = useState<SoundInfo[]>([])
   const [pin, setPin] = useState<string | null>(null)
   const [typed, setTyped] = useState('')
@@ -48,6 +50,8 @@ function Studio() {
       setDb(r.db)
       setSaved(r.saved)
       setDocs({ ...DRAFT_BY_ID, ...r.saved })
+      setSavedTypes(r.types)
+      setCats({ ...CATEGORIES, ...r.types })
       setSounds(r.sounds)
       setLoaded(true)
     })
@@ -64,6 +68,9 @@ function Studio() {
   const [zoom, setZoom] = useState(4)
   const [pps, setPps] = useState(60)
   const [filter, setFilter] = useState('')
+  const [showRoute, setShowRoute] = useState(true)
+  const [showGhosts, setShowGhosts] = useState(false)
+  const [evening, setEvening] = useState(false)
   const doc = docs[docId] ?? DRAFTS[0]
   useEffect(() => {
     if (typeof history !== 'undefined') history.replaceState(null, '', `#${doc.id}`)
@@ -84,7 +91,10 @@ function Studio() {
   const outfits = useMemo(() => ['standard', ...[...new Set(Object.values(manifest).flatMap((e) => (typeof e !== 'string' && e.outfit && !NOT_OUTFITS.has(e.outfit) ? [e.outfit] : [])))].sort()], [manifest])
 
   const macros = useMemo(() => Object.fromEntries(Object.values(docs).filter((d) => d.kind === 'macro').map((d) => [d.id, d])), [docs])
-  const tl = useMemo(() => compile(doc, macros, lookup, { mainSeconds: mainCut }), [doc, macros, lookup, mainCut])
+  // The recipe with each typed object filled in from its variant: what plays and what is checked.
+  const resolved = useMemo(() => resolveRecipe(doc, cats), [doc, cats])
+  const live = resolved.recipe
+  const tl = useMemo(() => compile(live, macros, lookup, { mainSeconds: mainCut }), [live, macros, lookup, mainCut])
 
   // ── Each frame's real pixels, for the "covered by something in front" check ──
   const [bounds, setBounds] = useState<Record<string, (Bounds | null)[]>>({})
@@ -96,10 +106,17 @@ function Studio() {
     }
   }, [tl, manifest, bounds])
   const ready = Object.keys(manifest).length > 0
-  const issues = useMemo(() => (ready ? checkSolids(doc, tl, (clip, frame) => bounds[clip]?.[frame] ?? null) : []), [ready, doc, tl, bounds])
-  const problems = ready ? [...new Set(tl.problems)] : []
+  const boundsOf = useCallback((clip: string, frame: number) => bounds[clip]?.[frame] ?? null, [bounds])
+  const issues = useMemo(() => (ready ? checkSolids(live, tl, boundsOf) : []), [ready, live, tl, boundsOf])
+  const problems = ready ? [...new Set([...resolved.problems, ...tl.problems])] : []
+  // The same recipe with every variant of every typed object: one recipe must work for all three ovens.
+  const variants = useMemo(() => (ready ? everyVariant(doc, cats).map(({ object, variant, recipe }) => {
+    const r = resolveRecipe(recipe, cats).recipe
+    const vtl = compile(r, macros, lookup)
+    return { object, variant, count: vtl.problems.length + checkSolids(r, vtl, boundsOf).length }
+  }) : []), [ready, doc, cats, macros, lookup, boundsOf])
 
-  const shot = shotAt(tl, t, doc)
+  const shot = shotAt(tl, t, live)
   const main = mainOf(tl)
 
   // ── The clock ──
@@ -162,6 +179,13 @@ function Studio() {
   }
   const docsRef = useRef(docs)
   docsRef.current = docs
+  const catsRef = useRef(cats)
+  catsRef.current = cats
+  const editType = (next: Category) => {
+    if (!pin) return
+    setCats((c) => ({ ...c, [next.id]: next }))
+    setDirty((s) => new Set(s).add(`cat-${next.id}`))
+  }
   useEffect(() => {
     if (!pin || !dirty.size) return
     const timer = setTimeout(async () => {
@@ -171,6 +195,14 @@ function Studio() {
       let ok = true
       const done: Record<string, SavedDoc> = {}
       for (const id of ids) {
+        if (id.startsWith('cat-')) {
+          const c = catsRef.current[id.slice(4)]
+          const draft = CATEGORIES[c.id]
+          const s: SavedCategory = { ...c, draftHash: savedTypes[c.id]?.draftHash ?? (draft ? hashOf(draft) : undefined) }
+          if (await saveType(pin, s, db)) setSavedTypes((m) => ({ ...m, [c.id]: s }))
+          else ok = false
+          continue
+        }
         const d = docsRef.current[id]
         const draft = DRAFT_BY_ID[id]
         const s: SavedDoc = { ...d, draftHash: saved[id]?.draftHash ?? (draft ? hashOf(draft) : undefined) }
@@ -181,7 +213,7 @@ function Studio() {
       setSaveState(ok ? 'saved' : 'error')
     }, 700)
     return () => clearTimeout(timer)
-  }, [dirty, pin, db, saved])
+  }, [dirty, pin, db, saved, savedTypes])
 
   const unlock = async () => {
     if (await verifyPin(typed, db)) {
@@ -333,7 +365,7 @@ function Studio() {
         {draftMoved && <p className="st-warn">The draft has been updated since you edited this. Your version is showing; “Back to the draft” shows theirs.</p>}
 
         <div className="st-stagewrap">
-          <StageView doc={doc} shot={shot} zoom={zoom} sel={sel} sheet={sheet} editable={editable} onSelect={setSel} onObjectX={(id, x) => edit({ ...doc, objects: doc.objects.map((o) => (o.id === id ? { ...o, x } : o)) })} onActionDx={(dx) => edit({ ...doc, action: { ...doc.action, dx } })} />
+          <StageView doc={live} shot={shot} tl={tl} showRoute={showRoute} showGhosts={showGhosts} evening={evening} zoom={zoom} sel={sel} sheet={sheet} editable={editable} onSelect={setSel} onObjectX={(id, x) => edit({ ...doc, objects: doc.objects.map((o) => (o.id === id ? { ...o, x } : o)) })} onActionDx={(dx) => edit({ ...doc, action: { ...doc.action, dx: dx - (live.action.dx - doc.action.dx) } })} />
         </div>
 
         <div className="st-transport">
@@ -343,6 +375,9 @@ function Studio() {
           <button type="button" onClick={() => frameStep(1)} title="Forward one frame (.)">frame ▶</button>
           <button type="button" className="st-stop" disabled={!main || t < main.start || t >= main.end} onClick={stopNow} title="As if the player gave another order">✋ Stop now</button>
           <label><input type="checkbox" checked={looping} onChange={(e) => setLooping(e.target.checked)} /> Loop</label>
+          <label title="His whole route, worked out from where things are"><input type="checkbox" checked={showRoute} onChange={(e) => setShowRoute(e.target.checked)} /> Route</label>
+          <label title="Faint copies of him at each stop"><input type="checkbox" checked={showGhosts} onChange={(e) => setShowGhosts(e.target.checked)} /> Ghosts</label>
+          <label title="Dark outside: the room is lit only while its door is open"><input type="checkbox" checked={evening} onChange={(e) => setEvening(e.target.checked)} /> Evening</label>
           <select value={rate} onChange={(e) => setRate(Number(e.target.value))} title="Speed (sound plays at full speed only)">
             <option value={1}>1×</option>
             <option value={0.5}>½×</option>
@@ -367,6 +402,16 @@ function Studio() {
               </li>
             ))}
           </ul>
+        )}
+        {variants.length > 0 && (
+          <div className="st-variants">
+            <b>Every variant:</b>
+            {variants.map(({ object, variant, count }) => (
+              <button key={object.id + variant.id} type="button" className={`${count ? 'bad' : 'good'} ${(object.variant ?? cats[object.category!]?.variants[0].id) === variant.id ? 'on' : ''}`} onClick={() => setDocs((d) => ({ ...d, [doc.id]: { ...doc, objects: doc.objects.map((o) => (o.id === object.id ? { ...o, variant: variant.id } : o)) } }))} title="Show the recipe with this one (not saved unless you change something else)">
+                {cats[object.category!]?.label}: {variant.label} {count ? `· ${count} problem${count > 1 ? 's' : ''}` : '✓'}
+              </button>
+            ))}
+          </div>
         )}
         {ready && !problems.length && !issues.length && <p className="st-ok">No problems: he never walks into anything solid, and nothing in front of him covers him while he can be seen.</p>}
       </main>
@@ -398,7 +443,7 @@ function Studio() {
             </select>
           </div>
         )}
-        <Inspector doc={doc} sel={sel} macros={Object.values(macros)} clips={clipNames} outfits={outfits} sounds={[...sounds.map((s) => ({ id: s.id, url: s.url })), ...placeholders.map((id) => ({ id }))]} mixer={mixer} editable={editable} onChange={edit} onSelect={(s) => setSel(s ?? { type: 'recipe' })} onOpenMacro={(id) => { setDocId(id); setSel({ type: 'recipe' }); setT(0) }} />
+        <Inspector doc={doc} live={live} cats={cats} onType={editType} sel={sel} macros={Object.values(macros)} clips={clipNames} outfits={outfits} sounds={[...sounds.map((s) => ({ id: s.id, url: s.url })), ...placeholders.map((id) => ({ id }))]} mixer={mixer} editable={editable} onChange={edit} onSelect={(s) => setSel(s ?? { type: 'recipe' })} onOpenMacro={(id) => { setDocId(id); setSel({ type: 'recipe' }); setT(0) }} />
         <datalist id="st-clips">{clipNames.map((c) => <option key={c} value={c} />)}</datalist>
         <datalist id="st-sounds">{[...sounds.map((s) => s.id), ...placeholders].map((s) => <option key={s} value={s} />)}</datalist>
       </aside>

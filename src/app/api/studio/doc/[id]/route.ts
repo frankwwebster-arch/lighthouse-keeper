@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { ensureSchema, hasDb, pinOk, sql } from '../../../../../lib/db'
-import { cleanRecipe } from '../../../../../studio/recipe'
+import { cleanCategory, cleanRecipe } from '../../../../../studio/recipe'
 
 export const dynamic = 'force-dynamic'
 
@@ -10,11 +10,13 @@ export async function PUT(req: Request, { params }: { params: { id: string } }) 
   const body = (await req.json().catch(() => ({}))) as { pin?: unknown; doc?: unknown }
   await ensureSchema()
   if (!(await pinOk(body.pin))) return NextResponse.json({ error: 'wrong pin' }, { status: 403 })
-  const doc = cleanRecipe(body.doc)
-  if (!doc || doc.id !== params.id) return NextResponse.json({ error: 'not a recipe' }, { status: 400 })
+  // Object types are kept as `cat-<id>`, so they never clash with a recipe of the same name.
+  const isType = params.id.startsWith('cat-')
+  const doc = isType ? cleanCategory(body.doc) : cleanRecipe(body.doc)
+  if (!doc || (isType ? `cat-${doc.id}` : doc.id) !== params.id) return NextResponse.json({ error: isType ? 'not an object type' : 'not a recipe' }, { status: 400 })
   const meta = (body.doc as { draftHash?: unknown }).draftHash
   const saved = { ...doc, draftHash: typeof meta === 'string' ? meta : undefined }
-  await sql()`insert into studio_docs (id, doc, updated_at) values (${doc.id}, ${JSON.stringify(saved)}, now()) on conflict (id) do update set doc = excluded.doc, updated_at = now()`
+  await sql()`insert into studio_docs (id, doc, updated_at) values (${params.id}, ${JSON.stringify(saved)}, now()) on conflict (id) do update set doc = excluded.doc, updated_at = now()`
   return NextResponse.json({ ok: true })
 }
 

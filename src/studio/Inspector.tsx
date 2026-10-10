@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import type { Mixer } from './audio'
-import { isFront, isSolid, newCue, newId, withStep, type Cue, type Recipe, type StageObject, type Step, type StepKind, type Target } from './recipe'
+import { isFront, isSolid, newCue, newId, variantOf, withStep, type Category, type Cue, type Recipe, type StageObject, type Step, type StepKind, type Target } from './recipe'
 import { Waveform } from './SoundLibrary'
 import type { Sel } from './StageView'
 
@@ -32,8 +32,12 @@ function Num({ value, onChange, step = 1, min, max, disabled }: { value: number;
 }
 
 /** Everything about whatever is selected: the recipe, a step, a sound cue or an object. */
-export function Inspector({ doc, sel, macros, clips, outfits, sounds, mixer, editable, onChange, onSelect, onOpenMacro }: {
+export function Inspector({ doc, live, cats, onType, sel, macros, clips, outfits, sounds, mixer, editable, onChange, onSelect, onOpenMacro }: {
   doc: Recipe
+  /** The recipe with typed objects filled in from their variants. */
+  live: Recipe
+  cats: Record<string, Category>
+  onType: (c: Category) => void
   sel: Sel | null
   macros: Recipe[]
   clips: string[]
@@ -100,9 +104,48 @@ export function Inspector({ doc, sel, macros, clips, outfits, sounds, mixer, edi
     const o = doc.objects.find((x) => x.id === sel.id)
     if (!o) return null
     const setObj = (patch: Partial<StageObject>) => onChange({ ...doc, objects: doc.objects.map((x) => (x.id === o.id ? { ...x, ...patch } : x)) })
+    const cat = o.category ? cats[o.category] : undefined
+    const v = variantOf(cat, o.variant)
+    const typeRow = (
+      <Row label="Type" hint="(every asset can be upgraded)">
+        <select value={o.category ?? ''} disabled={ro} onChange={(e) => setObj(e.target.value ? { category: e.target.value, variant: cats[e.target.value]?.variants[0]?.id } : { category: undefined, variant: undefined })}>
+          <option value="">(a plain stand-in box)</option>
+          {Object.values(cats).map((c) => <option key={c.id} value={c.id}>{c.label}</option>)}
+        </select>
+      </Row>
+    )
+    if (cat && v) {
+      const setSpot = (spot: string, patch: Partial<{ dx: number; facing: 'left' | 'right' }>) => onType({ ...cat, variants: cat.variants.map((x) => (x.id === v.id ? { ...x, spots: { ...x.spots, [spot]: { ...x.spots[spot], ...patch } } } : x)) })
+      const setSize = (patch: { w?: number; h?: number }) => onType({ ...cat, variants: cat.variants.map((x) => (x.id === v.id ? { ...x, ...patch } : x)) })
+      return (
+        <div className="st-inspector">
+          <h3>{cat.label}: {v.label}</h3>
+          {typeRow}
+          <Row label="Variant">
+            <select value={v.id} onChange={(e) => setObj({ variant: e.target.value })} disabled={ro}>
+              {cat.variants.map((x) => <option key={x.id} value={x.id}>{x.tier ? `Tier ${x.tier}: ` : ''}{x.label}</option>)}
+            </select>
+          </Row>
+          <Row label="Across" hint="px from the left wall (bottom-centre)"><Num value={o.x} onChange={(x) => setObj({ x })} disabled={ro} /></Row>
+          <p className="st-dim">The rest belongs to the {cat.label.toLowerCase()} type, so changing it changes every recipe with this {v.label.toLowerCase()} in it.</p>
+          <Row label="Width" hint="this variant"><Num value={v.w} min={1} onChange={(w) => setSize({ w })} disabled={ro} /></Row>
+          <Row label="Height" hint="this variant"><Num value={v.h} min={1} onChange={(h) => setSize({ h })} disabled={ro} /></Row>
+          {cat.spots.map((s) => (
+            <div key={s.id} className="st-spot">
+              <b>Spot: {s.label}</b>
+              <Row label="Feet from its centre" hint="px, this variant"><Num value={v.spots[s.id]?.dx ?? 0} onChange={(dx) => setSpot(s.id, { dx })} disabled={ro} /></Row>
+              <Row label="Faces"><select value={v.spots[s.id]?.facing ?? 'right'} disabled={ro} onChange={(e) => setSpot(s.id, { facing: e.target.value as 'left' | 'right' })}><option value="right">right</option><option value="left">left</option></select></Row>
+            </div>
+          ))}
+          <p className="st-dim">Sits {cat.layer === 'front' ? 'in front of him (opaque, solid)' : `against the back wall${cat.solid ? ', solid' : ''}`}. Art: {v.sprite ?? '(none yet)'}.</p>
+          {editable && <button type="button" onClick={() => { onChange({ ...doc, objects: doc.objects.filter((x) => x.id !== o.id) }); onSelect(null) }}>Remove object</button>}
+        </div>
+      )
+    }
     return (
       <div className="st-inspector">
         <h3>Object: {o.label}</h3>
+        {typeRow}
         <Row label="Name"><input value={o.label} disabled={ro} onChange={(e) => setObj({ label: e.target.value })} /></Row>
         <Row label="Across" hint="px from the left wall (bottom-centre)"><Num value={o.x} onChange={(x) => setObj({ x })} disabled={ro} /></Row>
         <Row label="Width"><Num value={o.w} min={1} onChange={(w) => setObj({ w })} disabled={ro} /></Row>
@@ -150,6 +193,7 @@ export function Inspector({ doc, sel, macros, clips, outfits, sounds, mixer, edi
             <Row label="To">
               <select value={typeof step.to === 'number' ? 'x' : step.to ?? 'action'} disabled={ro} onChange={(e) => setStep({ to: e.target.value === 'x' ? 55 : (e.target.value as Target) })}>
                 {TARGETS.map((x) => <option key={String(x.v)} value={String(x.v)}>{x.label}</option>)}
+                {live.objects.flatMap((o) => [<option key={o.id} value={`@${o.id}`}>next to the {o.label.toLowerCase()}</option>, ...Object.keys(o.spots ?? {}).map((s) => <option key={`${o.id}:${s}`} value={`@${o.id}:${s}`}>the {o.label.toLowerCase()}’s “{s}” spot</option>)])}
                 <option value="x">a spot I choose</option>
               </select>
             </Row>
@@ -233,9 +277,27 @@ export function Inspector({ doc, sel, macros, clips, outfits, sounds, mixer, edi
               {doc.objects.map((o) => <option key={o.id} value={o.id}>{o.label}</option>)}
             </select>
           </Row>
-          <Row label="Action point" hint="px from its centre (drag the red diamond)"><Num value={doc.action.dx} onChange={(dx) => set({ action: { ...doc.action, dx } })} disabled={ro} /></Row>
-          <Row label="Faces it"><select value={doc.action.facing} disabled={ro} onChange={(e) => set({ action: { ...doc.action, facing: e.target.value as Recipe['facing'] } })}><option value="right">right</option><option value="left">left</option></select></Row>
-          {editable && <button type="button" onClick={() => set({ objects: [...doc.objects, { id: newId('obj'), label: 'New object', x: 55, w: 20, h: 20, layer: 'back' }] })}>Add an object</button>}
+          {(() => {
+            const o = doc.objects.find((x) => x.id === doc.action.object)
+            const c = o?.category ? cats[o.category] : undefined
+            return c ? (
+              <Row label="At its spot">
+                <select value={doc.action.spot ?? ''} disabled={ro} onChange={(e) => set({ action: { ...doc.action, spot: e.target.value || undefined, dx: 0 } })}>
+                  <option value="">(a place I set myself)</option>
+                  {c.spots.map((s) => <option key={s.id} value={s.id}>{s.label}</option>)}
+                </select>
+              </Row>
+            ) : null
+          })()}
+          <Row label={doc.action.spot ? 'Nudge from the spot' : 'Action point'} hint="px (drag the red diamond)"><Num value={doc.action.dx} onChange={(dx) => set({ action: { ...doc.action, dx } })} disabled={ro} /></Row>
+          {!doc.action.spot && <Row label="Faces it"><select value={doc.action.facing} disabled={ro} onChange={(e) => set({ action: { ...doc.action, facing: e.target.value as Recipe['facing'] } })}><option value="right">right</option><option value="left">left</option></select></Row>}
+          {editable && (
+            <select value="" onChange={(e) => { const c = cats[e.target.value]; if (!e.target.value) return; set({ objects: [...doc.objects, c ? { id: newId(c.id), label: c.label, x: 55, w: 20, h: 20, category: c.id, variant: c.variants[0].id } : { id: newId('obj'), label: 'New object', x: 55, w: 20, h: 20, layer: 'back' }] }) }}>
+              <option value="">Add an object…</option>
+              {Object.values(cats).map((c) => <option key={c.id} value={c.id}>{c.label}</option>)}
+              <option value="plain">A plain stand-in box</option>
+            </select>
+          )}
         </>
       )}
     </div>
