@@ -24,7 +24,11 @@ export function ensureSchema(): Promise<void> {
       await q`create table if not exists studio_sounds (id text primary key, label text not null, mime text not null, data text not null, bytes integer not null, updated_at timestamptz not null default now())`
       // Review batches submitted from the public Keeper animation reviewer.
       // Canonical art is never written here: this is an exact-name handoff queue.
-      await q`create table if not exists keeper_review_handoffs (id text primary key, review jsonb not null, animation_count integer not null, source text not null, submitted_at timestamptz not null default now())`
+      await q`create table if not exists keeper_review_handoffs (id text primary key, review jsonb not null, animation_count integer not null, source text not null, submitted_at timestamptz not null default now(), status text not null default 'queued', processing_started_at timestamptz, completed_at timestamptz, processing_note text not null default '')`
+      await q`alter table keeper_review_handoffs add column if not exists status text not null default 'queued'`
+      await q`alter table keeper_review_handoffs add column if not exists processing_started_at timestamptz`
+      await q`alter table keeper_review_handoffs add column if not exists completed_at timestamptz`
+      await q`alter table keeper_review_handoffs add column if not exists processing_note text not null default ''`
     })().catch((e) => {
       ready = null
       throw e

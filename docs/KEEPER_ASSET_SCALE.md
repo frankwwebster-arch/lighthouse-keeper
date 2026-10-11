@@ -300,6 +300,9 @@ durable review queue. The queue compares records by exact animation name and
 ignores save timestamps: the first server hand-back uses the shipped-review
 baseline, then later Codex work only reviews changes from the preceding
 hand-back; it never silently changes production sprites.
+When Codex claims a batch for amendment, the online reviewer is locked against
+feedback changes until that delivery completes; it remains usable for playback
+and visual inspection.
 The page can also play the matching
 same-outfit walk immediately before an action. The raw seam, known-bridge and
 onion-skin modes make transition problems visible. Flying and swimming cards

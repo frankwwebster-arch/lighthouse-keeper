@@ -13,6 +13,8 @@ type StoredReviewBatch = ReviewBatch & {
     comparisonBaseline: 'initial-review' | 'previous-handoff'
   }
 }
+type HandoffStatus = 'queued' | 'processing' | 'completed'
+type HandoffRow = { id: string; review: unknown; animation_count: number; source: string; submitted_at: string; status: HandoffStatus; processing_started_at: string | null; completed_at: string | null; processing_note: string }
 
 function validBatch(value: unknown): value is ReviewBatch {
   if (!value || typeof value !== 'object') return false
@@ -51,17 +53,35 @@ export async function POST(req: Request) {
     handoffDelta: { changedAnimationNames, comparedToHandoffId: latest[0]?.id ?? null, comparisonBaseline },
   }
   const payload = JSON.stringify(stored)
-  const rows = (await sql()`insert into keeper_review_handoffs (id, review, animation_count, source) values (${id}, ${payload}::jsonb, ${body.reviews.length}, 'keeper-review') returning submitted_at`) as { submitted_at: string }[]
+  const rows = (await sql()`insert into keeper_review_handoffs (id, review, animation_count, source, status) values (${id}, ${payload}::jsonb, ${body.reviews.length}, 'keeper-review', 'queued') returning submitted_at`) as { submitted_at: string }[]
   return NextResponse.json({ ok: true, handoff: { id, animationCount: body.reviews.length, changedAnimationCount: changedAnimationNames.length, changedAnimationNames, comparedToHandoffId: latest[0]?.id ?? null, comparisonBaseline, submittedAt: rows[0]?.submitted_at } })
+}
+
+/** Claim before draft work; complete after delivery, or release if no work was started. */
+export async function PATCH(req: Request) {
+  if (!hasDb()) return NextResponse.json({ error: 'review handoff is unavailable because no database is configured' }, { status: 503 })
+  const body: unknown = await req.json().catch(() => null)
+  if (!body || typeof body !== 'object') return NextResponse.json({ error: 'invalid handoff status update' }, { status: 400 })
+  const { id, action, note } = body as { id?: unknown; action?: unknown; note?: unknown }
+  if (typeof id !== 'string' || !/^[0-9a-f-]{36}$/i.test(id) || (action !== 'claim' && action !== 'complete' && action !== 'release')) return NextResponse.json({ error: 'invalid handoff status update' }, { status: 400 })
+  if (note !== undefined && (typeof note !== 'string' || note.length > 1000)) return NextResponse.json({ error: 'invalid handoff status note' }, { status: 400 })
+  await ensureSchema()
+  const nextStatus: HandoffStatus = action === 'claim' ? 'processing' : action === 'complete' ? 'completed' : 'queued'
+  const rows = (await sql()`update keeper_review_handoffs set status = ${nextStatus}, processing_started_at = case when ${action} = 'claim' then now() when ${action} = 'release' then null else processing_started_at end, completed_at = case when ${action} = 'complete' then now() else null end, processing_note = ${typeof note === 'string' ? note : ''} where id = ${id} and status = ${action === 'claim' ? 'queued' : 'processing'} returning id, status, animation_count, processing_started_at, completed_at`) as { id: string; status: HandoffStatus; animation_count: number; processing_started_at: string | null; completed_at: string | null }[]
+  if (!rows.length) return NextResponse.json({ error: action === 'claim' ? 'handoff is no longer available to claim' : 'handoff is not currently processing' }, { status: 409 })
+  const row = rows[0]
+  return NextResponse.json({ ok: true, handoff: { id: row.id, status: row.status, animationCount: row.animation_count, processingStartedAt: row.processing_started_at, completedAt: row.completed_at } })
 }
 
 /** The latest queue entries are intentionally readable by a future Codex task. */
 export async function GET() {
   if (!hasDb()) return NextResponse.json({ db: false, handoffs: [] })
   await ensureSchema()
-  const rows = (await sql()`select id, review, animation_count, source, submitted_at from keeper_review_handoffs order by submitted_at desc limit 20`) as { id: string; review: unknown; animation_count: number; source: string; submitted_at: string }[]
+  const rows = (await sql()`select id, review, animation_count, source, submitted_at, status, processing_started_at, completed_at, processing_note from keeper_review_handoffs order by submitted_at desc limit 20`) as HandoffRow[]
+  const processing = rows.find((row) => row.status === 'processing')
   return NextResponse.json({
     db: true,
+    processingHandoff: processing ? { id: processing.id, animationCount: processing.animation_count, startedAt: processing.processing_started_at, note: processing.processing_note } : null,
     handoffs: rows.map((row) => {
       const delta = (row.review as Partial<StoredReviewBatch> | null)?.handoffDelta
       const changedAnimationNames = Array.isArray(delta?.changedAnimationNames) ? delta.changedAnimationNames : null
@@ -77,6 +97,10 @@ export async function GET() {
         comparisonBaseline: delta?.comparisonBaseline === 'initial-review' || delta?.comparisonBaseline === 'previous-handoff' ? delta.comparisonBaseline : null,
         source: row.source,
         submittedAt: row.submitted_at,
+        status: row.status,
+        processingStartedAt: row.processing_started_at,
+        completedAt: row.completed_at,
+        processingNote: row.processing_note,
       }
     }),
   })
