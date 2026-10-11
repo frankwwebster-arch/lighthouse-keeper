@@ -234,9 +234,11 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   sheets. The pinned `keeper_clear_snow` raw SHA-256
   `fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96` is the
   authoritative fuller, stepped side-on beard. The result is intentionally
-  fail-closed: only eight exact reference self-comparisons match; 994
-  different-pose frames are non-comparable because no approved beard masks,
-  facial landmarks, or hand depth/component ownership evidence exists. In
+  fail-closed: a landmark-aligned beard-mask silhouette may differ by at most
+  one logical pixel and still pass. The eight reference self-comparisons have
+  zero difference; 994 different-pose frames are non-comparable because no
+  approved beard masks, facial landmarks, or hand depth/component ownership
+  evidence exists. In
   particular, `keeper_darts` frames 3–6 are not a confirmed occlusion defect.
   No new beard draft is active or promotable. v1 and v2 draft files remain
   historical, non-promotable evidence under their existing draft directories.
@@ -909,4 +911,4 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 
 ## Ready-to-paste opening prompt for the new Codex task
 
-> Continue the Lighthouse Keeper beard-audit work in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main` using GPT-5.6 Sol. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, `data/keeper_side_on_beard_occlusion_audit.json` and `docs/KEEPER_ASSET_SCALE.md`. `keeper_clear_snow` is the SHA-256-pinned canonical right-facing beard, but the audit is blocked fail-closed: no approved normalized beard masks, facial landmarks, or hand depth/component ownership masks exist, so 994 cross-pose side frames—including `keeper_darts` 3–6—are non-comparable and no correction may be guessed. First author or obtain those deterministic comparison inputs and define how they are pinned; only then rerun the audit and create versioned draft-only corrections for confirmed mismatches. Preserve all canonical art, historical v1/v2 draft evidence, the Frank-selected Darts comparison and existing selected promotions. Do not start the later frame-isolation audit until the beard gate is resolved.
+> Continue the Lighthouse Keeper beard-audit work in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main` using GPT-5.6 Sol. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, `data/keeper_side_on_beard_occlusion_audit.json` and `docs/KEEPER_ASSET_SCALE.md`. `keeper_clear_snow` is the SHA-256-pinned canonical right-facing beard. Once an approved normalized beard mask and face alignment exist, a symmetric silhouette difference of at most one logical pixel passes. The audit remains blocked for 994 cross-pose side frames—including `keeper_darts` 3–6—because no beard masks, facial landmarks, or hand depth/component ownership masks currently exist; no correction may be guessed. First author or obtain and pin those deterministic inputs, then rerun the audit and create versioned draft-only corrections only for confirmed mismatches. Preserve all canonical art, historical v1/v2 draft evidence, the Frank-selected Darts comparison and existing selected promotions. Do not start the later frame-isolation audit until the beard gate is resolved.

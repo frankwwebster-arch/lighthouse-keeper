@@ -2,7 +2,7 @@
   "auditId": "2026-10-11-evidence-v3",
   "generatedAt": "2026-10-11",
   "auditStatus": "blocked-no-discriminating-comparison-method",
-  "scope": "Every manifest Keeper frame is classified. Every standing/sitting frame whose metadata establishes a 90-degree side view is inventoried with source hashes and frame geometry. A pass is permitted only for exact canonical self-comparison; all other candidates fail closed as non-comparable.",
+  "scope": "Every manifest Keeper frame is classified. Every standing/sitting frame whose metadata establishes a 90-degree side view is inventoried with source hashes and frame geometry. An eligible beard-mask comparison passes when its symmetric silhouette difference is at most one logical pixel; all candidates without the required comparison evidence fail closed as non-comparable.",
   "beardReference": {
     "name": "keeper_clear_snow",
     "strip": "art/raw/keeper-first-batch/keeper_clear_snow_f8.png",
@@ -12,7 +12,8 @@
     "authority": "The current authored brief, source-authoring chain, and production contract identify this accepted winter-coat clip as the authoritative fuller stepped right-facing beard."
   },
   "method": {
-    "beardSilhouette": "Exact raster equality only. A cross-pose result requires an approved normalized beard mask tied to facial landmarks; no such asset exists in this repository.",
+    "beardSilhouette": "An approved normalized beard mask tied to facial landmarks is compared by symmetric silhouette difference. At most one logical pixel may differ and still pass (Frank-approved tolerance); no such cross-pose mask exists in this repository. The canonical self-comparison has delta zero.",
+    "maximumAcceptedSilhouetteDeltaLogicalPixels": 1,
     "beardLocation": "The required landmark map (eye/nose/chin/head origin) is absent, so location cannot be normalized across canvases or head tilts.",
     "occlusion": "The flattened PNG/sidecar pair contains no depth or component ownership mask. Colour predicates are explicitly rejected as evidence of hand-over-beard ordering.",
     "cellGeometry": "PNG width must divide exactly by declared frames; source sidecar and strip SHA-256 values are pinned.",
@@ -18023,15 +18024,18 @@
           "reason": "manifest facing=right",
           "beard": {
             "result": "match",
-            "reason": "exact self-comparison of the pinned canonical right-facing beard frame",
+            "reason": "canonical self-comparison has a zero-pixel silhouette delta, within the approved one-logical-pixel tolerance",
             "evidence": [
               "canonical strip SHA-256=fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96",
               "frame=1",
-              "comparison=exact same raster bytes"
+              "comparison=exact same raster bytes",
+              "silhouette symmetric difference=0 logical pixels"
             ],
             "comparison": {
               "method": "exact-canonical-self-raster",
-              "referenceFrame": 1
+              "referenceFrame": 1,
+              "silhouetteDeltaLogicalPixels": 0,
+              "maximumAcceptedSilhouetteDeltaLogicalPixels": 1
             }
           },
           "geometry": {
@@ -18046,15 +18050,18 @@
           "reason": "manifest facing=right",
           "beard": {
             "result": "match",
-            "reason": "exact self-comparison of the pinned canonical right-facing beard frame",
+            "reason": "canonical self-comparison has a zero-pixel silhouette delta, within the approved one-logical-pixel tolerance",
             "evidence": [
               "canonical strip SHA-256=fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96",
               "frame=2",
-              "comparison=exact same raster bytes"
+              "comparison=exact same raster bytes",
+              "silhouette symmetric difference=0 logical pixels"
             ],
             "comparison": {
               "method": "exact-canonical-self-raster",
-              "referenceFrame": 2
+              "referenceFrame": 2,
+              "silhouetteDeltaLogicalPixels": 0,
+              "maximumAcceptedSilhouetteDeltaLogicalPixels": 1
             }
           },
           "geometry": {
@@ -18069,15 +18076,18 @@
           "reason": "manifest facing=right",
           "beard": {
             "result": "match",
-            "reason": "exact self-comparison of the pinned canonical right-facing beard frame",
+            "reason": "canonical self-comparison has a zero-pixel silhouette delta, within the approved one-logical-pixel tolerance",
             "evidence": [
               "canonical strip SHA-256=fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96",
               "frame=3",
-              "comparison=exact same raster bytes"
+              "comparison=exact same raster bytes",
+              "silhouette symmetric difference=0 logical pixels"
             ],
             "comparison": {
               "method": "exact-canonical-self-raster",
-              "referenceFrame": 3
+              "referenceFrame": 3,
+              "silhouetteDeltaLogicalPixels": 0,
+              "maximumAcceptedSilhouetteDeltaLogicalPixels": 1
             }
           },
           "geometry": {
@@ -18092,15 +18102,18 @@
           "reason": "manifest facing=right",
           "beard": {
             "result": "match",
-            "reason": "exact self-comparison of the pinned canonical right-facing beard frame",
+            "reason": "canonical self-comparison has a zero-pixel silhouette delta, within the approved one-logical-pixel tolerance",
             "evidence": [
               "canonical strip SHA-256=fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96",
               "frame=4",
-              "comparison=exact same raster bytes"
+              "comparison=exact same raster bytes",
+              "silhouette symmetric difference=0 logical pixels"
             ],
             "comparison": {
               "method": "exact-canonical-self-raster",
-              "referenceFrame": 4
+              "referenceFrame": 4,
+              "silhouetteDeltaLogicalPixels": 0,
+              "maximumAcceptedSilhouetteDeltaLogicalPixels": 1
             }
           },
           "geometry": {
@@ -18115,15 +18128,18 @@
           "reason": "manifest facing=right",
           "beard": {
             "result": "match",
-            "reason": "exact self-comparison of the pinned canonical right-facing beard frame",
+            "reason": "canonical self-comparison has a zero-pixel silhouette delta, within the approved one-logical-pixel tolerance",
             "evidence": [
               "canonical strip SHA-256=fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96",
               "frame=5",
-              "comparison=exact same raster bytes"
+              "comparison=exact same raster bytes",
+              "silhouette symmetric difference=0 logical pixels"
             ],
             "comparison": {
               "method": "exact-canonical-self-raster",
-              "referenceFrame": 5
+              "referenceFrame": 5,
+              "silhouetteDeltaLogicalPixels": 0,
+              "maximumAcceptedSilhouetteDeltaLogicalPixels": 1
             }
           },
           "geometry": {
@@ -18138,15 +18154,18 @@
           "reason": "manifest facing=right",
           "beard": {
             "result": "match",
-            "reason": "exact self-comparison of the pinned canonical right-facing beard frame",
+            "reason": "canonical self-comparison has a zero-pixel silhouette delta, within the approved one-logical-pixel tolerance",
             "evidence": [
               "canonical strip SHA-256=fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96",
               "frame=6",
-              "comparison=exact same raster bytes"
+              "comparison=exact same raster bytes",
+              "silhouette symmetric difference=0 logical pixels"
             ],
             "comparison": {
               "method": "exact-canonical-self-raster",
-              "referenceFrame": 6
+              "referenceFrame": 6,
+              "silhouetteDeltaLogicalPixels": 0,
+              "maximumAcceptedSilhouetteDeltaLogicalPixels": 1
             }
           },
           "geometry": {
@@ -18161,15 +18180,18 @@
           "reason": "manifest facing=right",
           "beard": {
             "result": "match",
-            "reason": "exact self-comparison of the pinned canonical right-facing beard frame",
+            "reason": "canonical self-comparison has a zero-pixel silhouette delta, within the approved one-logical-pixel tolerance",
             "evidence": [
               "canonical strip SHA-256=fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96",
               "frame=7",
-              "comparison=exact same raster bytes"
+              "comparison=exact same raster bytes",
+              "silhouette symmetric difference=0 logical pixels"
             ],
             "comparison": {
               "method": "exact-canonical-self-raster",
-              "referenceFrame": 7
+              "referenceFrame": 7,
+              "silhouetteDeltaLogicalPixels": 0,
+              "maximumAcceptedSilhouetteDeltaLogicalPixels": 1
             }
           },
           "geometry": {
@@ -18184,15 +18206,18 @@
           "reason": "manifest facing=right",
           "beard": {
             "result": "match",
-            "reason": "exact self-comparison of the pinned canonical right-facing beard frame",
+            "reason": "canonical self-comparison has a zero-pixel silhouette delta, within the approved one-logical-pixel tolerance",
             "evidence": [
               "canonical strip SHA-256=fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96",
               "frame=8",
-              "comparison=exact same raster bytes"
+              "comparison=exact same raster bytes",
+              "silhouette symmetric difference=0 logical pixels"
             ],
             "comparison": {
               "method": "exact-canonical-self-raster",
-              "referenceFrame": 8
+              "referenceFrame": 8,
+              "silhouetteDeltaLogicalPixels": 0,
+              "maximumAcceptedSilhouetteDeltaLogicalPixels": 1
             }
           },
           "geometry": {
@@ -52860,11 +52885,11 @@
           7,
           8
         ],
-        "evidence": "Each is an exact self-raster comparison to the SHA-256-pinned canonical reference."
+        "evidence": "Each is a zero-delta canonical self-raster comparison, within the approved maximum silhouette difference of one logical pixel."
       }
     ],
     "confirmedMismatches": [],
-    "nonComparable": "All non-reference side-on standing/sitting frames are deliberately recorded at frame level in inventory[].frameAudit[].beard. No unsupported positive result is emitted.",
+    "nonComparable": "All non-reference side-on standing/sitting frames are deliberately recorded at frame level in inventory[].frameAudit[].beard. The one-pixel tolerance applies only after an approved mask and landmark alignment exists; no unsupported positive result is emitted.",
     "dartsHistoricalClaim": {
       "animation": "keeper_darts",
       "frames": [

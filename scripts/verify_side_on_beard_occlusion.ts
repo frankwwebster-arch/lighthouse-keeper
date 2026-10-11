@@ -12,6 +12,7 @@ const sha256 = (file: string) => crypto.createHash('sha256').update(fs.readFileS
 const fail = (message: string): never => { throw new Error(`side-on beard audit: ${message}`) }
 if (audit.auditId !== '2026-10-11-evidence-v3' || audit.auditStatus !== 'blocked-no-discriminating-comparison-method') fail('evidence-based fail-closed audit is absent or stale')
 if (sha256(absolute(audit.beardReference.strip)) !== audit.beardReference.stripSha256 || sha256(absolute(audit.beardReference.source)) !== audit.beardReference.sourceSha256) fail('canonical beard reference hash changed')
+if (audit.method?.maximumAcceptedSilhouetteDeltaLogicalPixels !== 1) fail('the approved one-logical-pixel beard-silhouette tolerance is missing or changed')
 if (Object.keys(audit.manifestFrameAudit).length !== Object.keys(manifest).length) fail('manifest frame audit is incomplete or stale')
 if (audit.summary.confirmedMismatches !== 0 || audit.summary.draftCorrectionsCreated !== 0 || audit.drafts.active.length !== 0) fail('a correction was claimed without a discriminating comparison method')
 let gutterFailures = 0
@@ -25,7 +26,7 @@ for (const sheet of audit.inventory as Array<Record<string, any>>) {
     const beard = frame.beard; if (!beard) continue
     if (edgeAlpha) gutterFailures += 1
     if (!['match', 'mismatch', 'non-comparable'].includes(beard.result)) fail(`${sheet.name} frame ${frame.frame} has an invalid beard result`)
-    if (beard.result === 'match' && (sheet.name !== audit.beardReference.name || beard.comparison?.method !== 'exact-canonical-self-raster')) fail(`${sheet.name} frame ${frame.frame} claims an unsupported beard match`)
+    if (beard.result === 'match' && (sheet.name !== audit.beardReference.name || beard.comparison?.method !== 'exact-canonical-self-raster' || beard.comparison?.silhouetteDeltaLogicalPixels !== 0 || beard.comparison?.maximumAcceptedSilhouetteDeltaLogicalPixels !== 1)) fail(`${sheet.name} frame ${frame.frame} claims an unsupported beard match`)
     if (beard.result === 'mismatch') fail(`${sheet.name} frame ${frame.frame} claims a mismatch although this blocked audit has no discriminating comparator`)
     if (beard.result === 'non-comparable' && !beard.evidence?.some((item: string) => item.includes('required comparison asset missing'))) fail(`${sheet.name} frame ${frame.frame} non-comparability lacks exact missing evidence`)
   }

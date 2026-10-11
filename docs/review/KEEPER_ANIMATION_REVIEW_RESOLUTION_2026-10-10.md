@@ -180,7 +180,7 @@ This table is generated from Frank's immutable review export and the current pro
 
 ## Side-on beard/hand occlusion audit
 
-The evidence-based audit classifies every manifest frame and pins the `keeper_clear_snow` beard reference. It is fail-closed: exact self-raster comparison confirms only the reference frames; no cross-pose beard or hand-occlusion claim is accepted because the repository lacks approved landmark, beard-mask and depth/component evidence. No new beard correction draft is available or promoted. Historical v1 and v2 draft files remain preserved as non-promotable evidence only.
+The evidence-based audit classifies every manifest frame and pins the `keeper_clear_snow` beard reference. An eligible landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It is otherwise fail-closed: no cross-pose beard or hand-occlusion claim is accepted because the repository lacks approved landmark, beard-mask and depth/component evidence. No new beard correction draft is available or promoted. Historical v1 and v2 draft files remain preserved as non-promotable evidence only.
 
 ## User-selected review comparisons
 
