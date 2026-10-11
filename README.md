@@ -86,6 +86,7 @@ must remain paused to avoid duplicate alerts.
 - `docs/DOORS_STAIRS_AND_COSTUMES.md` — agreed stairway, door and costume-change rules, seamless clip joins, and the decisions still to make.
 - `docs/BACKGROUND_ELEMENTS.md` — Codex's brief for every background layer, sunrise and sunset, night lighting, and the every-asset-can-be-upgraded rule for objects.
 - `docs/AMBIENCE_AND_BACKDROP.md` — backdrop layers, weather overlays, ambient sound, the lamp's start-up, audio file specs and the decisions still to make.
+- `docs/CLAUDE_WORKBENCH_NOTES.md` — Claude's plan of approach for the shared review workbench (the next major build).
 - `docs/RECIPES.md` — the recipe format, the recipe studio and what each animation sheet needs for it.
 - `docs/EXPANSION_DESIGN.md` — living write-up of agreed room ideas, random floor placement, night reveals, weather, transport, island expansions and energy systems.
 - `art/manifest.json` and `art/asset_inventory.json` — facts about the concept/prototype image pack; these are not a production rig.
