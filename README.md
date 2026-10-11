@@ -32,6 +32,14 @@ a second review workspace: opening it outside the deployed route sends the
 viewer to the online reviewer, keeping saved feedback and the work lock in one
 place.
 
+The four-hour review hand-back monitor is deliberately outside Codex: the
+per-user macOS `launchd` job installed by
+`scripts/install_keeper_review_handoff_monitor.sh` reads only the public queue
+and shows a native notification only for a new batch with a non-zero semantic
+change count. It keeps its own local “already notified” list under Application
+Support and never edits review data or sprite assets. The older Codex heartbeat
+must remain paused to avoid duplicate alerts.
+
 ## Current implementation
 
 - Floors 1–3 are modular fixed-width components in `src/ui/floors.tsx`: kitchen, living room, and bedroom with en suite. The first production Pixel batch now supplies the red/white shell bands and those three 105 × 35 room plates; interactive furniture remains separate. The toilet and wash basin are both in the en suite.
@@ -61,6 +69,7 @@ place.
 - `docs/PRODUCTION_ASSET_KIT.md` — exact Pixel filenames, dimensions, anchors, pivots, z-order, frame counts, fps, and delivery order.
 - `docs/KEEPER_ANIMATIONS.md` — plain-English animation index, direction rules and object-alignment instructions.
 - `docs/KEEPER_ANIMATION_HANDOFF.md` — complete keeper review checkpoint, correction history, exact transition-gap inventory, object-binding design and ready-to-paste next-task prompt.
+- `scripts/keeper_review_handoff_monitor.py` and `scripts/install_keeper_review_handoff_monitor.sh` — independent macOS notification monitor and its per-user `launchd` installer; it reads the hand-back queue every four hours without opening Codex.
 - `docs/prompts/KEEPER_SIDE_ON_BEARD_OCCLUSION_AUDIT.md` — first-stage ready-to-paste audit/fix prompt for beard, hand and arm layer order across every side-on standing and sitting animation.
 - `docs/prompts/KEEPER_SPRITE_FRAME_ISOLATION_AUDIT.md` — second-stage ready-to-paste exhaustive audit/fix prompt for frame overlap and future enforcement.
 - `docs/prompts/KEEPER_POST_AUDIT_REVIEW_DELTA.md` — ready-to-paste exact-name, JSON-ingestion prompt for Frank's next review after all three audits.
