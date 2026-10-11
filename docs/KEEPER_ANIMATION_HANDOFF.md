@@ -32,13 +32,15 @@ sheet.
    on this Mac, double-click `Open Keeper Review Offline.command` at the
    repository root and leave its Terminal window open; it serves the same page
    and local sprite strips only on `127.0.0.1:8765`, while browser saves and the
-   version-9 JSON export/import continue to work normally. Offline and online
+   version-11 JSON export/import continues to accept prior exports normally. Offline and online
    browser storage do not synchronise automatically: Export on one copy, then
    Import review JSON on the other. A dedicated panel first shows
    the untouched `keeper_walk` identity/anatomy baseline, followed by all 173 accepted
    clips at one unchanged relative scale in filename order. Filter the register
    by Needs my input, Happy, Awaiting new draft review, Review later,
-   Unreviewed or Has Codex response. Switch View to `One animation at a time`
+   Unreviewed or Has Codex response; independently filter pose as standing,
+   sitting or crouching (with direction subcategories) and use list as active,
+   reserve-only or all. Switch View to `One animation at a time`
    for a much larger card. Previous/Next and Left/Right stay inside the active
    filter and wrap from its final result to its first. A compact reference stays
    pinned alongside; standing side/front/back and sitting side/front/back
@@ -74,17 +76,19 @@ sheet.
    pinned reference left, large viewport-height stage centre, and a compact
    two-column control console right. Amber means size, purple ghost, blue
    animation transform, teal frame navigation, and green/red review decisions.
-   Display zoom and filter are saved immediately in browser-local progress.
+   Display zoom and all three filters are saved immediately in browser-local progress.
    Saving or advancing from the final result wraps to the first result in the
    same filter.
 6. For the next review round, ask Frank for the newly exported
    `keeper-scale-choices.json`.
    Each card's Save button persists independent width/height, rotation,
    horizontal/vertical position, ghost settings, opacity and the
-   happy/not-yet-happy decision, free-text notes and full-re-draft request in
-   his browser. Version 9 includes production proposals, the complete review
-   register/statuses and the read-only Codex response, but it does not alter
-   production art by itself.
+   happy/not-yet-happy decision, free-text notes, full-re-draft request,
+   pose override and reversible reserve membership in his browser. Version 11
+   includes production proposals, the complete review register/statuses,
+   preferred candidate, pose/reserve values and the read-only Codex response,
+   but it does not alter production art by itself. Cards with retained draft
+   variants can compress/expand those comparisons without removing any draft.
 7. Record every new comment by exact `keeper_*` filename before changing art.
    Triage it as `keep`, `fix`, `rebuild`, `delete`, or `decision needed`, and
    distinguish an art fault from a missing transition or missing object.

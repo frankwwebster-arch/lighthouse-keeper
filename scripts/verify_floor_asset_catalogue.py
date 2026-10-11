@@ -485,6 +485,21 @@ review_page_data = json.loads(
 page_reviews = review_page_data["initialReviews"]
 page_assets = {asset["name"]: asset for asset in review_page_data["assets"]}
 assert len(page_assets) == 173
+pose_tags = {
+    "standing-front", "standing-back", "standing-side", "standing-three-quarter", "standing-turning",
+    "seated-front", "seated-back", "seated-side", "seated-three-quarter",
+    "crouching-front", "crouching-back", "crouching-side", "body-axis", "transition", "other",
+}
+assert all(asset["poseTag"] in pose_tags for asset in page_assets.values())
+assert {name: page_assets[name]["poseTag"] for name in (
+    "keeper_darts", "keeper_sit_front", "keeper_turn_back", "keeper_crouch_work_back", "keeper_swim_costume_down",
+)} == {
+    "keeper_darts": "standing-side",
+    "keeper_sit_front": "seated-front",
+    "keeper_turn_back": "standing-turning",
+    "keeper_crouch_work_back": "crouching-back",
+    "keeper_swim_costume_down": "body-axis",
+}
 draft_assets = [asset for asset in page_assets.values() if asset.get("draftVariants") or asset.get("draftVariant")]
 review_draft_registry = json.loads((ROOT / "data/keeper_review_drafts.json").read_text())
 assert review_page_data["reviewDrafts"] == review_draft_registry
@@ -586,7 +601,7 @@ for token in (
     "state.savedReviews[asset.name]",
     "state.reviewCards.indexOf(next)",
     "(Math.max(0,position)+delta+filtered.length)%filtered.length",
-    "version:10",
+    "version:11",
     "reviewStatuses",
     "codexResponse",
     "Import review JSON",
@@ -602,6 +617,13 @@ for token in (
     "candidateId",
     "Last local save/redraft",
     "Open close review",
+    "Pose tag",
+    "Reserve list only",
+    "Relegate to reserve list",
+    "Compress ${variants.length} retained draft",
+    "poseTag",
+    "reserved",
+    "DRAFT_DISPLAY_STORAGE_KEY",
     "main:not(.detail-mode) #grid article .filenames",
 ):
     assert token in review_html, token

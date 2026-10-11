@@ -268,7 +268,9 @@ address. The reviewer puts
 the untouched `keeper_walk` in a dedicated identity-baseline panel, followed by
 all 173 accepted animation sheets in one filename-ordered gallery. Review-state
 filters cover Needs my input, Happy, Awaiting new draft review, Review later,
-Unreviewed and Has Codex response. For standard upright cap poses, its gold badge
+Unreviewed and Has Codex response; a separate pose filter groups standing,
+sitting and crouching clips by front/back/side/turning direction, and a use-list
+filter switches between active, reserve-only and all clips. For standard upright cap poses, its gold badge
 crossing the blue skull-top line is a convenient calibrated proxy; it does not
 replace anatomical landmarks for altered posture, head angle or headwear.
 Every card prints both its runtime PNG and authored source-strip filename. The
@@ -288,9 +290,12 @@ and height around its fixed contact anchor. The reference, ruler, ghost,
 approach walk and bridge remain at 100%; earlier uniform choices migrate to
 both axes.
 Each card also has a read-only Codex response field, blank where no production
-qualification was needed. Export version 10 produces `keeper-scale-choices.json`
-with the complete status/response register, timestamp and preferred-promotion
-candidate for an authoring pass; it never silently changes production sprites.
+qualification was needed. Close review lets the reviewer override the inferred
+pose tag, relegate an animation to a non-destructive reserve list, and
+expand/compress retained draft comparisons. Export version 11 produces
+`keeper-scale-choices.json` with the complete status/response register,
+timestamp, preferred-promotion candidate, pose override and reserve membership
+for an authoring pass; it never silently changes production sprites.
 The page can also play the matching
 same-outfit walk immediately before an action. The raw seam, known-bridge and
 onion-skin modes make transition problems visible. Flying and swimming cards
