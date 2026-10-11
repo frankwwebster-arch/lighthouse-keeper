@@ -297,8 +297,9 @@ normal online workflow: its confirmation saves all edited cards in that browser
 before it sends the complete saved status/response register, timestamp,
 preferred-promotion candidate, pose override and reserve membership to the
 durable review queue. The queue compares records by exact animation name and
-ignores save timestamps, so later Codex work only reviews changed decisions or
-notes; it never silently changes production sprites.
+ignores save timestamps: the first server hand-back uses the shipped-review
+baseline, then later Codex work only reviews changes from the preceding
+hand-back; it never silently changes production sprites.
 The page can also play the matching
 same-outfit walk immediately before an action. The raw seam, known-bridge and
 onion-skin modes make transition problems visible. Flying and swimming cards

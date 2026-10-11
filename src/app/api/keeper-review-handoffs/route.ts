@@ -5,11 +5,12 @@ import { changedReviewNames, type HandoffReview } from '../../../lib/keeperRevie
 
 export const dynamic = 'force-dynamic'
 
-type ReviewBatch = { reviews: HandoffReview[]; reviewStatuses?: unknown; version?: unknown; [key: string]: unknown }
+type ReviewBatch = { reviews: HandoffReview[]; baselineReviews?: HandoffReview[]; reviewStatuses?: unknown; version?: unknown; [key: string]: unknown }
 type StoredReviewBatch = ReviewBatch & {
   handoffDelta: {
     changedAnimationNames: string[]
     comparedToHandoffId: string | null
+    comparisonBaseline: 'initial-review' | 'previous-handoff'
   }
 }
 
@@ -22,6 +23,8 @@ function validBatch(value: unknown): value is ReviewBatch {
     if (!review || typeof review.name !== 'string' || !/^keeper_[a-z0-9_]+$/.test(review.name) || names.has(review.name)) return false
     names.add(review.name)
   }
+  const baselineReviews = (value as { baselineReviews?: unknown }).baselineReviews
+  if (baselineReviews !== undefined && (!Array.isArray(baselineReviews) || baselineReviews.length !== reviews.length)) return false
   return true
 }
 
@@ -38,14 +41,18 @@ export async function POST(req: Request) {
   const id = randomUUID()
   const latest = (await sql()`select id, review from keeper_review_handoffs order by submitted_at desc limit 1`) as { id: string; review: unknown }[]
   const previous = latest[0]?.review as Partial<ReviewBatch> | undefined
-  const changedAnimationNames = changedReviewNames(body.reviews, Array.isArray(previous?.reviews) ? previous.reviews as HandoffReview[] : undefined)
+  const previousReviews = Array.isArray(previous?.reviews) ? previous.reviews as HandoffReview[] : undefined
+  const initialReviews = !previousReviews && Array.isArray(body.baselineReviews) ? body.baselineReviews : undefined
+  const comparisonBaseline = previousReviews ? 'previous-handoff' : 'initial-review'
+  const changedAnimationNames = changedReviewNames(body.reviews, previousReviews ?? initialReviews)
+  const { baselineReviews: _baselineReviews, ...snapshot } = body
   const stored: StoredReviewBatch = {
-    ...body,
-    handoffDelta: { changedAnimationNames, comparedToHandoffId: latest[0]?.id ?? null },
+    ...snapshot,
+    handoffDelta: { changedAnimationNames, comparedToHandoffId: latest[0]?.id ?? null, comparisonBaseline },
   }
   const payload = JSON.stringify(stored)
   const rows = (await sql()`insert into keeper_review_handoffs (id, review, animation_count, source) values (${id}, ${payload}::jsonb, ${body.reviews.length}, 'keeper-review') returning submitted_at`) as { submitted_at: string }[]
-  return NextResponse.json({ ok: true, handoff: { id, animationCount: body.reviews.length, changedAnimationCount: changedAnimationNames.length, changedAnimationNames, comparedToHandoffId: latest[0]?.id ?? null, submittedAt: rows[0]?.submitted_at } })
+  return NextResponse.json({ ok: true, handoff: { id, animationCount: body.reviews.length, changedAnimationCount: changedAnimationNames.length, changedAnimationNames, comparedToHandoffId: latest[0]?.id ?? null, comparisonBaseline, submittedAt: rows[0]?.submitted_at } })
 }
 
 /** The latest queue entries are intentionally readable by a future Codex task. */
@@ -67,6 +74,7 @@ export async function GET() {
         changedAnimationCount: changedAnimationNames?.length ?? null,
         changedAnimationNames,
         comparedToHandoffId: typeof delta?.comparedToHandoffId === 'string' ? delta.comparedToHandoffId : null,
+        comparisonBaseline: delta?.comparisonBaseline === 'initial-review' || delta?.comparisonBaseline === 'previous-handoff' ? delta.comparisonBaseline : null,
         source: row.source,
         submittedAt: row.submitted_at,
       }

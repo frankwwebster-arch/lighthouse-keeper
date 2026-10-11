@@ -639,6 +639,8 @@ for token in (
     "card.saveReview?.()",
     "changed since the previous handoff",
     "changedAnimationCount",
+    "initialReviewSnapshot",
+    "shipped review baseline",
     "Advanced backup / import",
     "Reset review-only sizes",
     "This never edits, crops, replaces, or deletes any canonical sprite art or draft.",
