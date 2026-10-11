@@ -38,7 +38,10 @@ const acceptedArtistDraftStrips: Record<string, string> = {
   keeper_paint_side: '3cf424326da7394357c12845c7e10ce21af0efc09777cade72c1672357be610f',
   keeper_pottery_front: '2fac8fb3c10b92df68efa0c365cdba0e83736caed14903246bd5babd8a288c95',
 }
-const expectedNames = new Set([...Object.keys(selectedSources), ...Object.keys(acceptedArtistDraftStrips)])
+const acceptedSnookerDraftStrips: Record<string, string> = {
+  keeper_snooker: '01bb338512f37561efd86ceb4256c855e4f7b3e250a49b1b5e275d528a25eab0',
+}
+const expectedNames = new Set([...Object.keys(selectedSources), ...Object.keys(acceptedArtistDraftStrips), ...Object.keys(acceptedSnookerDraftStrips)])
 const promotedNames = new Set(Object.keys(selectedSources).filter((name) => name !== 'keeper_darts'))
 
 if (!fs.existsSync(REGISTRY)) fail('registry is missing')
@@ -71,6 +74,7 @@ for (const item of registry.drafts as Record<string, any>[]) {
   }
   if (name in selectedSources && record.draft.sourceSha256 !== selectedSources[name]) fail(`${name} is not attached to Frank's selected source bytes`)
   if (name in acceptedArtistDraftStrips && record.draft.stripSha256 !== acceptedArtistDraftStrips[name]) fail(`${name} is not attached to the accepted V11 artist strip bytes`)
+  if (name in acceptedSnookerDraftStrips && record.draft.stripSha256 !== acceptedSnookerDraftStrips[name]) fail(`${name} is not attached to the accepted snooker route bytes`)
   if (record.canonical.stripSha256 === record.draft.stripSha256) fail(`${name} replacement is byte-identical to its previous version`)
   if (record.draft.workingSource) {
     const working = absolute(record.draft.workingSource)
@@ -139,4 +143,4 @@ const oldSnow = superseded.keeper_clear_snow
 if (oldSnow.sha256 !== 'b34b7c40710d9110ef93eb5d7aecf6b4b3d6a69df54534c45ffdcebb8ebe26d6' || sha256(absolute(oldSnow.stored)) !== oldSnow.sha256) fail('superseded overlapping snow source is not preserved byte-for-byte')
 if (!oldSnow.reason.includes('frame ownership')) fail('superseded snow qualification is missing')
 
-console.log(`Verified ${promotedNames.size} promoted replacements, one active darts draft, and ${Object.keys(acceptedArtistDraftStrips).length} accepted V11 artist drafts; every exact-name comparison remains attached and frame-isolated`)
+console.log(`Verified ${promotedNames.size} promoted replacements, one active darts draft, ${Object.keys(acceptedArtistDraftStrips).length} accepted V11 artist drafts, and one accepted snooker-route draft; every exact-name comparison remains attached and frame-isolated`)

@@ -1,0 +1,29 @@
+{
+  "w": 80,
+  "h": 40,
+  "frames": 65,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    32,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "mirrorSafe": false,
+  "facing": "complete-right-to-left-route",
+  "interaction": "play-snooker-route-review",
+  "assetRole": "clip",
+  "startPose": "walking-side-right",
+  "endPose": "walking-side-left",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ],
+  "reviewOnly": true,
+  "acceptedPreviewSha256": "b5ae7a9cdf99918628c4a45867713bb9e738682e138f2a4302c82c3913b62e89"
+}

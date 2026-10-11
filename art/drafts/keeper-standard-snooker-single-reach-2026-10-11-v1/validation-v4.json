@@ -1,0 +1,107 @@
+{
+  "status": "draft-only-awaiting-frank-review",
+  "operation": "clear the complete erroneous rear arm from shoulder/sleeve through hand",
+  "source": {
+    "path": "inputs/first-attempt-reach-with-extra-arm.png",
+    "sha256": "fe41ce74e03deda1aa95a7ede3f7d6fbccde605283adbbaf44f64b34bc53965e"
+  },
+  "removalPolygon": [
+    [
+      128,
+      265
+    ],
+    [
+      145,
+      268
+    ],
+    [
+      150,
+      281
+    ],
+    [
+      146,
+      304
+    ],
+    [
+      143,
+      332
+    ],
+    [
+      144,
+      361
+    ],
+    [
+      149,
+      386
+    ],
+    [
+      155,
+      408
+    ],
+    [
+      153,
+      427
+    ],
+    [
+      140,
+      443
+    ],
+    [
+      111,
+      443
+    ],
+    [
+      91,
+      430
+    ],
+    [
+      85,
+      409
+    ],
+    [
+      89,
+      381
+    ],
+    [
+      97,
+      352
+    ],
+    [
+      106,
+      321
+    ],
+    [
+      117,
+      291
+    ]
+  ],
+  "changedPixelsInsideMask": 6849,
+  "removedOpaquePixels": 6841,
+  "unchangedOutsideMask": true,
+  "sourceOpaqueBounds": [
+    0,
+    17,
+    615,
+    639
+  ],
+  "outputOpaqueBounds": [
+    0,
+    17,
+    615,
+    639
+  ],
+  "deterministicRerun": true,
+  "output": {
+    "path": "generated/single-reach-pose-v4-complete-rear-arm-removed.png",
+    "sha256": "c68c0ec394cf8342a8bb2ee542f108eacf5ba3f6480d0236e7d949e12c14a859"
+  },
+  "scopeGate": {
+    "headChanged": false,
+    "beardChanged": false,
+    "reachingArmChanged": false,
+    "loweredForegroundArmChanged": false,
+    "normalized": false,
+    "registered": false,
+    "promoted": false
+  }
+}

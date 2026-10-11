@@ -1,0 +1,758 @@
+{
+  "draftId": "keeper_snooker-standard-canon-route-2026-10-11-v1",
+  "animation": "keeper_snooker",
+  "status": "active-review-draft",
+  "label": "Accepted canonical-keeper snooker route",
+  "selection": "Frank accepted the complete half-speed walk-right, stop, cue acquisition, two-stroke snooker action, cue release, turn and walk-left sequence on 2026-10-11. This registration requests a separate manual decision in the review platform and does not promote production art.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_snooker_f8.png",
+    "stripSha256": "d14f6fe22d379171cf0857e8a9d8d4bfdb060f62954d7bae3dfea95eed6b69e6",
+    "runtime": "public/sprites/keeper_snooker.png",
+    "runtimeSha256": "d62df40529df1d51c9aec388d5b6432d5b2b7adea19da63531e2ae9ec98cae50",
+    "sidecar": "art/raw/keeper-first-batch/keeper_snooker_f8.json",
+    "sidecarSha256": "a63fd31754d6d781ffc54577651c011deb1ad7a378d159ea60a1c0292865feeb"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/drafts/keeper-walk-stop-snooker-turn-walk-half-speed.gif",
+    "sourceSha256": "b5ae7a9cdf99918628c4a45867713bb9e738682e138f2a4302c82c3913b62e89",
+    "strip": "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/drafts/keeper_snooker_route_review_f65.png",
+    "stripSha256": "01bb338512f37561efd86ceb4256c855e4f7b3e250a49b1b5e275d528a25eab0",
+    "sidecar": "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/drafts/keeper_snooker_route_review_f65.json",
+    "sidecarSha256": "8e87c0160388bcae38eaa47d32386df3175d0bc20be672ddd928100e0740c9c3",
+    "frames": 65,
+    "canvas": [
+      80,
+      40
+    ],
+    "density": 4,
+    "anchor": [
+      32,
+      40
+    ],
+    "fixedSourceScale": 0.14204545454545456,
+    "acceptedPreviewSha256": "b5ae7a9cdf99918628c4a45867713bb9e738682e138f2a4302c82c3913b62e89",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          94,
+          7,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          86,
+          9,
+          170,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          89,
+          10,
+          167,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          96,
+          7,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          93,
+          6,
+          162,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          87,
+          9,
+          168,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          90,
+          12,
+          166,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 9,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 10,
+        "routeLabel": "STOP",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 11,
+        "routeLabel": "STOP",
+        "draftAlphaBox": [
+          93,
+          6,
+          162,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 12,
+        "routeLabel": "STOP",
+        "draftAlphaBox": [
+          87,
+          9,
+          168,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 13,
+        "routeLabel": "STOP",
+        "draftAlphaBox": [
+          90,
+          12,
+          166,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 14,
+        "routeLabel": "STOP",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 15,
+        "routeLabel": "EXACT CANON NEUTRAL",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 16,
+        "routeLabel": "EXACT CANON NEUTRAL",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 17,
+        "routeLabel": "REACH",
+        "draftAlphaBox": [
+          95,
+          8,
+          205,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 18,
+        "routeLabel": "REACH",
+        "draftAlphaBox": [
+          95,
+          8,
+          205,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 19,
+        "routeLabel": "CUE CONTACT",
+        "draftAlphaBox": [
+          96,
+          14,
+          241,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 20,
+        "routeLabel": "CUE CONTACT",
+        "draftAlphaBox": [
+          96,
+          14,
+          241,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 21,
+        "routeLabel": "LOWER",
+        "draftAlphaBox": [
+          88,
+          46,
+          271,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 22,
+        "routeLabel": "LOWER",
+        "draftAlphaBox": [
+          88,
+          46,
+          271,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 23,
+        "routeLabel": "AIM",
+        "draftAlphaBox": [
+          85,
+          51,
+          276,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 24,
+        "routeLabel": "AIM",
+        "draftAlphaBox": [
+          85,
+          51,
+          276,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 25,
+        "routeLabel": "STROKE 1",
+        "draftAlphaBox": [
+          84,
+          50,
+          279,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 26,
+        "routeLabel": "STROKE 1",
+        "draftAlphaBox": [
+          84,
+          50,
+          279,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 27,
+        "routeLabel": "RECOVER 1",
+        "draftAlphaBox": [
+          85,
+          51,
+          276,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 28,
+        "routeLabel": "RECOVER 1",
+        "draftAlphaBox": [
+          85,
+          51,
+          276,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 29,
+        "routeLabel": "STROKE 2",
+        "draftAlphaBox": [
+          84,
+          50,
+          279,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 30,
+        "routeLabel": "STROKE 2",
+        "draftAlphaBox": [
+          84,
+          50,
+          279,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 31,
+        "routeLabel": "RECOVER 2",
+        "draftAlphaBox": [
+          85,
+          51,
+          276,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 32,
+        "routeLabel": "RECOVER 2",
+        "draftAlphaBox": [
+          85,
+          51,
+          276,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 33,
+        "routeLabel": "RISE",
+        "draftAlphaBox": [
+          88,
+          46,
+          271,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 34,
+        "routeLabel": "RISE",
+        "draftAlphaBox": [
+          88,
+          46,
+          271,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 35,
+        "routeLabel": "CUE HELD",
+        "draftAlphaBox": [
+          96,
+          14,
+          241,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 36,
+        "routeLabel": "CUE HELD",
+        "draftAlphaBox": [
+          96,
+          14,
+          241,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 37,
+        "routeLabel": "RELEASE CUE",
+        "draftAlphaBox": [
+          95,
+          8,
+          205,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 38,
+        "routeLabel": "RELEASE CUE",
+        "draftAlphaBox": [
+          95,
+          8,
+          205,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 39,
+        "routeLabel": "EXACT CANON NEUTRAL",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 40,
+        "routeLabel": "EXACT CANON NEUTRAL",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 41,
+        "routeLabel": "TURN RIGHT TO BACK",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 42,
+        "routeLabel": "TURN RIGHT TO BACK",
+        "draftAlphaBox": [
+          90,
+          6,
+          165,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 43,
+        "routeLabel": "TURN RIGHT TO BACK",
+        "draftAlphaBox": [
+          90,
+          6,
+          165,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 44,
+        "routeLabel": "TURN RIGHT TO BACK",
+        "draftAlphaBox": [
+          88,
+          6,
+          167,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 45,
+        "routeLabel": "TURN RIGHT TO BACK",
+        "draftAlphaBox": [
+          86,
+          6,
+          169,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 46,
+        "routeLabel": "TURN RIGHT TO BACK",
+        "draftAlphaBox": [
+          83,
+          6,
+          172,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 47,
+        "routeLabel": "TURN BACK TO LEFT",
+        "draftAlphaBox": [
+          87,
+          6,
+          170,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 48,
+        "routeLabel": "TURN BACK TO LEFT",
+        "draftAlphaBox": [
+          89,
+          6,
+          168,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 49,
+        "routeLabel": "TURN BACK TO LEFT",
+        "draftAlphaBox": [
+          91,
+          6,
+          166,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 50,
+        "routeLabel": "TURN BACK TO LEFT",
+        "draftAlphaBox": [
+          91,
+          6,
+          166,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 51,
+        "routeLabel": "TURN BACK TO LEFT",
+        "draftAlphaBox": [
+          96,
+          8,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 52,
+        "routeLabel": "START WALK LEFT",
+        "draftAlphaBox": [
+          96,
+          8,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 53,
+        "routeLabel": "START WALK LEFT",
+        "draftAlphaBox": [
+          95,
+          7,
+          162,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 54,
+        "routeLabel": "START WALK LEFT",
+        "draftAlphaBox": [
+          86,
+          9,
+          170,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 55,
+        "routeLabel": "START WALK LEFT",
+        "draftAlphaBox": [
+          89,
+          10,
+          167,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 56,
+        "routeLabel": "START WALK LEFT",
+        "draftAlphaBox": [
+          96,
+          8,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 57,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          96,
+          8,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 58,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          95,
+          7,
+          162,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 59,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          86,
+          9,
+          170,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 60,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          89,
+          10,
+          167,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 61,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          96,
+          7,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 62,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          94,
+          6,
+          163,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 63,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          88,
+          9,
+          169,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 64,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          90,
+          12,
+          166,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 65,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          96,
+          8,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/drafts/snooker-action-key-poses-contact-sheet.png",
+      "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/drafts/keeper-walk-stop-snooker-turn-walk-half-speed.gif",
+      "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/evidence/build-manifest.json"
+    ]
+  },
+  "rollback": "Remove this exact-name registry entry and its published review-only strip; canonical raw/runtime sprites and the runtime manifest are untouched."
+}

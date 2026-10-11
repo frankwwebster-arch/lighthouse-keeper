@@ -8,6 +8,12 @@
       "register": "art/drafts/keeper-darts-user-selected-2026-10-10-v1/draft-register.json"
     },
     {
+      "name": "keeper_snooker",
+      "status": "active-review-draft",
+      "label": "Accepted canonical-keeper snooker route",
+      "register": "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/draft-register.json"
+    },
+    {
       "name": "keeper_guitar_pickup_flying_v_1967",
       "status": "promoted-review-draft",
       "label": "Previous version",

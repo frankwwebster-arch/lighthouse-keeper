@@ -1,0 +1,1270 @@
+{
+  "status": "visually-accepted-draft-not-yet-promoted",
+  "visual_acceptance": {
+    "accepted_by": "Frank",
+    "accepted_on": "2026-10-11",
+    "accepted_preview_sha256": "b5ae7a9cdf99918628c4a45867713bb9e738682e138f2a4302c82c3913b62e89",
+    "scope": "complete half-speed walk-stop-snooker-turn-walk sequence"
+  },
+  "production_assets_changed": false,
+  "preview": "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/drafts/keeper-walk-stop-snooker-turn-walk-half-speed.gif",
+  "preview_sha256": "b5ae7a9cdf99918628c4a45867713bb9e738682e138f2a4302c82c3913b62e89",
+  "key_pose_contact_sheet": "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/drafts/snooker-action-key-poses-contact-sheet.png",
+  "key_pose_contact_sheet_sha256": "88caa17e4c48160e6bf0951c2c66473947bec8ed1d1438af844cd13fcdeac8c8",
+  "canvas": [
+    320,
+    160
+  ],
+  "anchor": [
+    128,
+    158
+  ],
+  "frame_count": 52,
+  "duration_ms": 15590,
+  "review_strip": {
+    "path": "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/drafts/keeper_snooker_route_review_f65.png",
+    "sha256": "01bb338512f37561efd86ceb4256c855e4f7b3e250a49b1b5e275d528a25eab0",
+    "sidecar": "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/drafts/keeper_snooker_route_review_f65.json",
+    "sidecar_sha256": "8e87c0160388bcae38eaa47d32386df3175d0bc20be672ddd928100e0740c9c3",
+    "frames": 65,
+    "fps": 4,
+    "duration_ms": 16250,
+    "timing_conversion": "250 ms route frames occur once; 500 ms route frames occur twice; 190 ms turn frames round to one 250 ms review frame",
+    "frame_evidence": [
+      {
+        "frame": 1,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          94,
+          7,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          86,
+          9,
+          170,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          89,
+          10,
+          167,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          96,
+          7,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          93,
+          6,
+          162,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          87,
+          9,
+          168,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          90,
+          12,
+          166,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 9,
+        "routeLabel": "WALK RIGHT",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 10,
+        "routeLabel": "STOP",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 11,
+        "routeLabel": "STOP",
+        "draftAlphaBox": [
+          93,
+          6,
+          162,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 12,
+        "routeLabel": "STOP",
+        "draftAlphaBox": [
+          87,
+          9,
+          168,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 13,
+        "routeLabel": "STOP",
+        "draftAlphaBox": [
+          90,
+          12,
+          166,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 14,
+        "routeLabel": "STOP",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 15,
+        "routeLabel": "EXACT CANON NEUTRAL",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 16,
+        "routeLabel": "EXACT CANON NEUTRAL",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 17,
+        "routeLabel": "REACH",
+        "draftAlphaBox": [
+          95,
+          8,
+          205,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 18,
+        "routeLabel": "REACH",
+        "draftAlphaBox": [
+          95,
+          8,
+          205,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 19,
+        "routeLabel": "CUE CONTACT",
+        "draftAlphaBox": [
+          96,
+          14,
+          241,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 20,
+        "routeLabel": "CUE CONTACT",
+        "draftAlphaBox": [
+          96,
+          14,
+          241,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 21,
+        "routeLabel": "LOWER",
+        "draftAlphaBox": [
+          88,
+          46,
+          271,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 22,
+        "routeLabel": "LOWER",
+        "draftAlphaBox": [
+          88,
+          46,
+          271,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 23,
+        "routeLabel": "AIM",
+        "draftAlphaBox": [
+          85,
+          51,
+          276,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 24,
+        "routeLabel": "AIM",
+        "draftAlphaBox": [
+          85,
+          51,
+          276,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 25,
+        "routeLabel": "STROKE 1",
+        "draftAlphaBox": [
+          84,
+          50,
+          279,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 26,
+        "routeLabel": "STROKE 1",
+        "draftAlphaBox": [
+          84,
+          50,
+          279,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 27,
+        "routeLabel": "RECOVER 1",
+        "draftAlphaBox": [
+          85,
+          51,
+          276,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 28,
+        "routeLabel": "RECOVER 1",
+        "draftAlphaBox": [
+          85,
+          51,
+          276,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 29,
+        "routeLabel": "STROKE 2",
+        "draftAlphaBox": [
+          84,
+          50,
+          279,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 30,
+        "routeLabel": "STROKE 2",
+        "draftAlphaBox": [
+          84,
+          50,
+          279,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 31,
+        "routeLabel": "RECOVER 2",
+        "draftAlphaBox": [
+          85,
+          51,
+          276,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 32,
+        "routeLabel": "RECOVER 2",
+        "draftAlphaBox": [
+          85,
+          51,
+          276,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 33,
+        "routeLabel": "RISE",
+        "draftAlphaBox": [
+          88,
+          46,
+          271,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 34,
+        "routeLabel": "RISE",
+        "draftAlphaBox": [
+          88,
+          46,
+          271,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 35,
+        "routeLabel": "CUE HELD",
+        "draftAlphaBox": [
+          96,
+          14,
+          241,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 36,
+        "routeLabel": "CUE HELD",
+        "draftAlphaBox": [
+          96,
+          14,
+          241,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 37,
+        "routeLabel": "RELEASE CUE",
+        "draftAlphaBox": [
+          95,
+          8,
+          205,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 38,
+        "routeLabel": "RELEASE CUE",
+        "draftAlphaBox": [
+          95,
+          8,
+          205,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 39,
+        "routeLabel": "EXACT CANON NEUTRAL",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 40,
+        "routeLabel": "EXACT CANON NEUTRAL",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 41,
+        "routeLabel": "TURN RIGHT TO BACK",
+        "draftAlphaBox": [
+          95,
+          8,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 42,
+        "routeLabel": "TURN RIGHT TO BACK",
+        "draftAlphaBox": [
+          90,
+          6,
+          165,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 43,
+        "routeLabel": "TURN RIGHT TO BACK",
+        "draftAlphaBox": [
+          90,
+          6,
+          165,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 44,
+        "routeLabel": "TURN RIGHT TO BACK",
+        "draftAlphaBox": [
+          88,
+          6,
+          167,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 45,
+        "routeLabel": "TURN RIGHT TO BACK",
+        "draftAlphaBox": [
+          86,
+          6,
+          169,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 46,
+        "routeLabel": "TURN RIGHT TO BACK",
+        "draftAlphaBox": [
+          83,
+          6,
+          172,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 47,
+        "routeLabel": "TURN BACK TO LEFT",
+        "draftAlphaBox": [
+          87,
+          6,
+          170,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 48,
+        "routeLabel": "TURN BACK TO LEFT",
+        "draftAlphaBox": [
+          89,
+          6,
+          168,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 49,
+        "routeLabel": "TURN BACK TO LEFT",
+        "draftAlphaBox": [
+          91,
+          6,
+          166,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 50,
+        "routeLabel": "TURN BACK TO LEFT",
+        "draftAlphaBox": [
+          91,
+          6,
+          166,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 51,
+        "routeLabel": "TURN BACK TO LEFT",
+        "draftAlphaBox": [
+          96,
+          8,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 52,
+        "routeLabel": "START WALK LEFT",
+        "draftAlphaBox": [
+          96,
+          8,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 53,
+        "routeLabel": "START WALK LEFT",
+        "draftAlphaBox": [
+          95,
+          7,
+          162,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 54,
+        "routeLabel": "START WALK LEFT",
+        "draftAlphaBox": [
+          86,
+          9,
+          170,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 55,
+        "routeLabel": "START WALK LEFT",
+        "draftAlphaBox": [
+          89,
+          10,
+          167,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 56,
+        "routeLabel": "START WALK LEFT",
+        "draftAlphaBox": [
+          96,
+          8,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 57,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          96,
+          8,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 58,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          95,
+          7,
+          162,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 59,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          86,
+          9,
+          170,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 60,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          89,
+          10,
+          167,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 61,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          96,
+          7,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 62,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          94,
+          6,
+          163,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 63,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          88,
+          9,
+          169,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 64,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          90,
+          12,
+          166,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 65,
+        "routeLabel": "WALK LEFT",
+        "draftAlphaBox": [
+          96,
+          8,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ]
+  },
+  "loop": true,
+  "verification": {
+    "all_route_frames_match_canvas_geometry": true,
+    "all_route_frames_have_clear_canvas_edges": true,
+    "stop_last_equals_neutral": true,
+    "neutral_equals_turn_first": true,
+    "right_turn_back_equals_left_turn_back": true,
+    "left_turn_end_equals_mirrored_walk_start": true
+  },
+  "route": [
+    {
+      "frame": 0,
+      "label": "WALK RIGHT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 1,
+      "label": "WALK RIGHT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 2,
+      "label": "WALK RIGHT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 3,
+      "label": "WALK RIGHT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 4,
+      "label": "WALK RIGHT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 5,
+      "label": "WALK RIGHT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 6,
+      "label": "WALK RIGHT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 7,
+      "label": "WALK RIGHT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 8,
+      "label": "WALK RIGHT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 9,
+      "label": "STOP",
+      "duration_ms": 250
+    },
+    {
+      "frame": 10,
+      "label": "STOP",
+      "duration_ms": 250
+    },
+    {
+      "frame": 11,
+      "label": "STOP",
+      "duration_ms": 250
+    },
+    {
+      "frame": 12,
+      "label": "STOP",
+      "duration_ms": 250
+    },
+    {
+      "frame": 13,
+      "label": "STOP",
+      "duration_ms": 250
+    },
+    {
+      "frame": 14,
+      "label": "EXACT CANON NEUTRAL",
+      "duration_ms": 500
+    },
+    {
+      "frame": 15,
+      "label": "REACH",
+      "duration_ms": 500
+    },
+    {
+      "frame": 16,
+      "label": "CUE CONTACT",
+      "duration_ms": 500
+    },
+    {
+      "frame": 17,
+      "label": "LOWER",
+      "duration_ms": 500
+    },
+    {
+      "frame": 18,
+      "label": "AIM",
+      "duration_ms": 500
+    },
+    {
+      "frame": 19,
+      "label": "STROKE 1",
+      "duration_ms": 500
+    },
+    {
+      "frame": 20,
+      "label": "RECOVER 1",
+      "duration_ms": 500
+    },
+    {
+      "frame": 21,
+      "label": "STROKE 2",
+      "duration_ms": 500
+    },
+    {
+      "frame": 22,
+      "label": "RECOVER 2",
+      "duration_ms": 500
+    },
+    {
+      "frame": 23,
+      "label": "RISE",
+      "duration_ms": 500
+    },
+    {
+      "frame": 24,
+      "label": "CUE HELD",
+      "duration_ms": 500
+    },
+    {
+      "frame": 25,
+      "label": "RELEASE CUE",
+      "duration_ms": 500
+    },
+    {
+      "frame": 26,
+      "label": "EXACT CANON NEUTRAL",
+      "duration_ms": 500
+    },
+    {
+      "frame": 27,
+      "label": "TURN RIGHT TO BACK",
+      "duration_ms": 190
+    },
+    {
+      "frame": 28,
+      "label": "TURN RIGHT TO BACK",
+      "duration_ms": 190
+    },
+    {
+      "frame": 29,
+      "label": "TURN RIGHT TO BACK",
+      "duration_ms": 190
+    },
+    {
+      "frame": 30,
+      "label": "TURN RIGHT TO BACK",
+      "duration_ms": 190
+    },
+    {
+      "frame": 31,
+      "label": "TURN RIGHT TO BACK",
+      "duration_ms": 190
+    },
+    {
+      "frame": 32,
+      "label": "TURN RIGHT TO BACK",
+      "duration_ms": 190
+    },
+    {
+      "frame": 33,
+      "label": "TURN BACK TO LEFT",
+      "duration_ms": 190
+    },
+    {
+      "frame": 34,
+      "label": "TURN BACK TO LEFT",
+      "duration_ms": 190
+    },
+    {
+      "frame": 35,
+      "label": "TURN BACK TO LEFT",
+      "duration_ms": 190
+    },
+    {
+      "frame": 36,
+      "label": "TURN BACK TO LEFT",
+      "duration_ms": 190
+    },
+    {
+      "frame": 37,
+      "label": "TURN BACK TO LEFT",
+      "duration_ms": 190
+    },
+    {
+      "frame": 38,
+      "label": "START WALK LEFT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 39,
+      "label": "START WALK LEFT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 40,
+      "label": "START WALK LEFT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 41,
+      "label": "START WALK LEFT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 42,
+      "label": "START WALK LEFT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 43,
+      "label": "WALK LEFT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 44,
+      "label": "WALK LEFT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 45,
+      "label": "WALK LEFT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 46,
+      "label": "WALK LEFT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 47,
+      "label": "WALK LEFT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 48,
+      "label": "WALK LEFT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 49,
+      "label": "WALK LEFT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 50,
+      "label": "WALK LEFT",
+      "duration_ms": 250
+    },
+    {
+      "frame": 51,
+      "label": "WALK LEFT",
+      "duration_ms": 250
+    }
+  ],
+  "normalization": [
+    {
+      "name": "reach",
+      "source": "art/drafts/keeper-standard-snooker-single-reach-2026-10-11-v1/generated/single-reach-pose-v5-fresh-two-arm-redraft.png",
+      "source_sha256": "edad59744798973b83af65d386261f94e4f8ba4da7fd8eb26fc4614820226539",
+      "source_size": [
+        1230,
+        1279
+      ],
+      "source_alpha_threshold": 32,
+      "source_foreground_bbox": [
+        290,
+        139,
+        1066,
+        1195
+      ],
+      "fixed_source_scale": 0.14204545454545456,
+      "resized_foreground_size": [
+        110,
+        150
+      ],
+      "foot_anchor_target": [
+        128,
+        158
+      ],
+      "placement": [
+        95,
+        8
+      ],
+      "final_alpha_threshold": 128,
+      "output": "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/drafts/reach.png",
+      "output_sha256": "c90adf01758f1d9fe1713fa7312b0f2d71defd1f026b105eea31ff628569aea9",
+      "output_alpha_bbox": [
+        95,
+        8,
+        205,
+        158
+      ],
+      "opaque_pixels_on_canvas_edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      }
+    },
+    {
+      "name": "cue_contact",
+      "source": "art/drafts/keeper-standard-snooker-authoring-robustness-test-2026-10-11-v1/generated/cue-contact-v1.png",
+      "source_sha256": "b2d0e2e0b3dba7f89dbbda0b4f9575d12044eede001077fae9bac78a4ee3a830",
+      "source_size": [
+        1230,
+        1279
+      ],
+      "source_alpha_threshold": 32,
+      "source_foreground_bbox": [
+        169,
+        162,
+        1190,
+        1175
+      ],
+      "fixed_source_scale": 0.14204545454545456,
+      "resized_foreground_size": [
+        145,
+        144
+      ],
+      "foot_anchor_target": [
+        128,
+        158
+      ],
+      "placement": [
+        96,
+        14
+      ],
+      "final_alpha_threshold": 128,
+      "output": "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/drafts/cue_contact.png",
+      "output_sha256": "152e1979d73c00c97bf566dcc76214aa0f14cb791f7e69b18f63e12ba8fc0c6c",
+      "output_alpha_bbox": [
+        96,
+        14,
+        241,
+        158
+      ],
+      "opaque_pixels_on_canvas_edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      }
+    },
+    {
+      "name": "mid_lean",
+      "source": "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/generated/mid-lean-v1.png",
+      "source_sha256": "f7e2916dbb963f88f85049ff469fc66107ed70b517ff8621a16b3a8d6d8ade4f",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_alpha_threshold": 32,
+      "source_foreground_bbox": [
+        188,
+        145,
+        1476,
+        930
+      ],
+      "fixed_source_scale": 0.14204545454545456,
+      "resized_foreground_size": [
+        183,
+        112
+      ],
+      "foot_anchor_target": [
+        128,
+        158
+      ],
+      "placement": [
+        88,
+        46
+      ],
+      "final_alpha_threshold": 128,
+      "output": "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/drafts/mid_lean.png",
+      "output_sha256": "c2f908ab634349a641caea372efa84a47533a3b2ecc1eb4266cd201fd699aaa5",
+      "output_alpha_bbox": [
+        88,
+        46,
+        271,
+        158
+      ],
+      "opaque_pixels_on_canvas_edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      }
+    },
+    {
+      "name": "deep_lean",
+      "source": "art/drafts/keeper-standard-snooker-authoring-robustness-test-2026-10-11-v1/generated/deep-lean-v1-failed.png",
+      "source_sha256": "9ce261cb5ad8acd261ff45bb8276a5d1a33be38bbd65f685c22f3f24d4c8b6e8",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_alpha_threshold": 32,
+      "source_foreground_bbox": [
+        148,
+        176,
+        1496,
+        928
+      ],
+      "fixed_source_scale": 0.14204545454545456,
+      "resized_foreground_size": [
+        191,
+        107
+      ],
+      "foot_anchor_target": [
+        128,
+        158
+      ],
+      "placement": [
+        85,
+        51
+      ],
+      "final_alpha_threshold": 128,
+      "output": "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/drafts/deep_lean.png",
+      "output_sha256": "fc029a192b2c12dcd041cbba8fda8b0472546442f84ae20521c4e8f1972bb228",
+      "output_alpha_bbox": [
+        85,
+        51,
+        276,
+        158
+      ],
+      "opaque_pixels_on_canvas_edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      }
+    },
+    {
+      "name": "stroke_forward",
+      "source": "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/generated/stroke-forward-v1.png",
+      "source_sha256": "88764925e818b25e0ee0800e80c2904b464ac44da0f6a48b8f3870e7f81215e9",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_alpha_threshold": 32,
+      "source_foreground_bbox": [
+        136,
+        162,
+        1508,
+        925
+      ],
+      "fixed_source_scale": 0.14204545454545456,
+      "resized_foreground_size": [
+        195,
+        108
+      ],
+      "foot_anchor_target": [
+        128,
+        158
+      ],
+      "placement": [
+        84,
+        50
+      ],
+      "final_alpha_threshold": 128,
+      "output": "art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/drafts/stroke_forward.png",
+      "output_sha256": "608d46df314154f3a508a4ba6f06c22883ccbd94776d3bd4926a1f3b40eeec39",
+      "output_alpha_bbox": [
+        84,
+        50,
+        279,
+        158
+      ],
+      "opaque_pixels_on_canvas_edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      }
+    }
+  ],
+  "canonical_sources": [
+    {
+      "path": "art/raw/keeper-first-batch/keeper_walk_cycle_f9.png",
+      "sha256": "dbd4e1827753ed384371044f3e976bef5c7529ce0f40cabfc4249902407b7e3c"
+    },
+    {
+      "path": "art/raw/keeper-first-batch/keeper_walk_stop_f5.png",
+      "sha256": "ed7c58911ea9c5dfa56e7bed2e67e106740d88835e860ffaa16ac18dd9d8a6e5"
+    },
+    {
+      "path": "art/raw/keeper-first-batch/keeper_neutral_standing-side-right_f1.png",
+      "sha256": "02106cfc54b224c8d4e9985e58420f1350f114d24e2e6c6258cad68e513657ce"
+    },
+    {
+      "path": "art/raw/keeper-first-batch/keeper_turn_back_f6.png",
+      "sha256": "b950027233b2005897fcc2056f993ff0d9d38c1f4501b60ad31d1c6cba29b635"
+    },
+    {
+      "path": "art/raw/keeper-first-batch/keeper_turn_left_back_f6.png",
+      "sha256": "9527040421defe01fcbde0e53cd4b2d88169b67cbf2158ff93664f1051aabe35"
+    },
+    {
+      "path": "art/raw/keeper-first-batch/keeper_walk_start_f5.png",
+      "sha256": "979b36cd669b149c11f87ddaff5cecb3902b46e3b099352f90b4b1830a585fc5"
+    }
+  ]
+}

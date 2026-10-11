@@ -48,9 +48,12 @@ JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
    as seven active authored-animation comparisons plus eight deterministic
    technical neutral/bridge assets. Its front-turn final frame is byte-identical
    to the preferred front-sit first frame. Production remains unchanged until
-   Frank selects the exact-name candidates in the reviewer. A same-day snooker
-   study was rejected because it did not retain the canonical `keeper_walk`
-   beard; no snooker draft is active.
+   Frank selects the exact-name candidates in the reviewer. A later
+   canonical-identity snooker route was visually accepted and is now an active
+   exact-name `keeper_snooker` comparison: walk right, exact stop, acquire the
+   cue, play two strokes, release it, return to exact neutral, turn and walk
+   left. The production eight-frame snooker strip remains unchanged pending
+   Frank's separate platform verdict.
 3. Art for the mission floors (aquarium, weather station, hidden lair), their furniture, the lift and a floor-arrival effect (Codex; hooks in docs/FOR_CODEX.md).
 4. Tier art for upgrades (Codex; list in docs/FOR_CODEX.md). Typed commands for upgrading ("upgrade the TV") are not in yet; upgrades are bought from the tap menu.
 5. Mini games: fishing, cooking, telescope spotting.
@@ -70,7 +73,8 @@ production pass remains historical evidence after its rollback from commit
 dependent parachute-landing bridge) were promoted after final-strip inspection;
 the online reviewer shows each former canonical strip as `Previous version`.
 The original darts selection remains an unpromoted comparison draft. Current
-delivery also includes seven reversible V11 artist-smock comparisons; its eight
-derived neutral/bridge assets remain outside the review-gallery denominator.
+delivery also includes seven reversible V11 artist-smock comparisons and one
+reversible complete-route `keeper_snooker` comparison; the artist family's
+eight derived neutral/bridge assets remain outside the review-gallery denominator.
 Current review evidence is recorded in
 `docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md`.

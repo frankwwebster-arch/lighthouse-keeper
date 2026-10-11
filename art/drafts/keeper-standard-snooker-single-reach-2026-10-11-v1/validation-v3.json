@@ -1,0 +1,75 @@
+{
+  "status": "draft-only-awaiting-frank-review",
+  "operation": "clear only the small erroneous rear hand/arm protrusion",
+  "source": {
+    "path": "inputs/first-attempt-reach-with-extra-arm.png",
+    "sha256": "fe41ce74e03deda1aa95a7ede3f7d6fbccde605283adbbaf44f64b34bc53965e"
+  },
+  "removalPolygon": [
+    [
+      91,
+      383
+    ],
+    [
+      113,
+      377
+    ],
+    [
+      137,
+      383
+    ],
+    [
+      151,
+      397
+    ],
+    [
+      151,
+      426
+    ],
+    [
+      137,
+      438
+    ],
+    [
+      111,
+      438
+    ],
+    [
+      94,
+      426
+    ],
+    [
+      88,
+      405
+    ]
+  ],
+  "changedPixelsInsideMask": 3001,
+  "removedOpaquePixels": 3001,
+  "unchangedOutsideMask": true,
+  "sourceOpaqueBounds": [
+    0,
+    17,
+    615,
+    639
+  ],
+  "outputOpaqueBounds": [
+    0,
+    17,
+    615,
+    639
+  ],
+  "deterministicRerun": true,
+  "output": {
+    "path": "generated/single-reach-pose-v3-rear-extra-arm-removed.png",
+    "sha256": "9bc154a5e0429a73cedd35fc2f564bd20147a6f9b7abeb856a1b4385e995f136"
+  },
+  "scopeGate": {
+    "headChanged": false,
+    "beardChanged": false,
+    "reachingArmChanged": false,
+    "loweredForegroundArmChanged": false,
+    "normalized": false,
+    "registered": false,
+    "promoted": false
+  }
+}

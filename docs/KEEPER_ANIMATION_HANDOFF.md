@@ -285,12 +285,18 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   active `V11 consistent artist set` comparisons; the five neutral stills and
   three walk start/stop/cycle strips remain deterministic technical assets and
   therefore do not create phantom gallery rows. Production is unchanged.
-- A referenced-image standard-uniform `keeper_snooker` redraw study was
-  rejected in the same session because three generated attempts still failed
-  to hold the canonical `keeper_walk` beard through the leaning poses. Its
-  exact inputs, prompts and untouched outputs are preserved under
-  `art/drafts/keeper-standard-snooker-canon-redraw-2026-10-11-v1/`; no snooker
-  draft is registered and no further blind variants should be generated.
+- An earlier referenced-image standard-uniform `keeper_snooker` redraw study
+  was rejected because it failed to hold the canonical `keeper_walk` beard.
+  Frank then accepted a new canonical-identity route assembled pose by pose:
+  walk right → exact stop/neutral → reach → cue contact → lower → two snooker
+  strokes → rise/release → exact neutral → canonical turns → walk left. Its
+  exact successful prompts, generator outputs, fixed-scale normalization,
+  source/output hashes and seam checks are preserved under
+  `art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/`.
+  The 65-frame constant-4-fps review representation is registered by exact
+  `keeper_snooker` name as an active comparison. The canonical eight-frame
+  raw/runtime snooker strip remains unchanged until Frank makes a later manual
+  decision in the deployed reviewer.
 - `node scripts/verify_keeper_review_drafts.ts` checks source, previous/current
   canonical or draft and published-review hashes, geometry, transparent gutters,
   detached-prop ownership, the V11 whole-frame front seam and exact-name

@@ -1,0 +1,89 @@
+{
+  "status": "draft-animation-preview-only-awaiting-frank-review",
+  "normalization": {
+    "sourceForegroundThreshold": 32,
+    "sourceForegroundBounds": [
+      290,
+      139,
+      1066,
+      1195
+    ],
+    "sourceForegroundSize": [
+      776,
+      1056
+    ],
+    "uniformScale": 0.14204545454545456,
+    "normalizedForegroundSize": [
+      110,
+      150
+    ],
+    "footCenterInNormalizedCrop": 32.5,
+    "placement": [
+      96,
+      8
+    ],
+    "canvas": [
+      256,
+      160
+    ],
+    "anchor": [
+      128,
+      160
+    ],
+    "opaqueBounds": [
+      96,
+      8,
+      206,
+      158
+    ],
+    "binaryAlpha": true,
+    "opaqueBorderPixelCount": 0,
+    "deterministicRerun": true,
+    "output": {
+      "path": "generated/single-reach-pose-v5-normalized.png",
+      "sha256": "be3a7dc28580f976e02be56da8068a4ffe8250a80772f186d8b8dd63fb7f635c"
+    }
+  },
+  "sequence": [
+    {
+      "clip": "keeper_walk_cycle",
+      "frames": 9,
+      "durationMsPerFrame": 125
+    },
+    {
+      "clip": "keeper_walk_stop",
+      "frames": 5,
+      "durationMsPerFrame": 125
+    },
+    {
+      "clip": "keeper_neutral_standing-side-right",
+      "frames": 1,
+      "durationMs": 250
+    },
+    {
+      "clip": "single-reach-pose-v5",
+      "frames": 1,
+      "durationMs": 375
+    },
+    {
+      "clip": "keeper_snooker",
+      "frames": 8,
+      "durationMsPerFrame": 250,
+      "status": "legacy-rejected-identity"
+    }
+  ],
+  "preview": {
+    "path": "single-reach-v5-in-walk-stop-snooker-preview.gif",
+    "sha256": "abb38693f63f9ae0781708d3b59912bccb6e22975a306c04c3d37e5339e3c7b2"
+  },
+  "contactSheet": {
+    "path": "single-reach-v5-in-walk-stop-snooker-contact-sheet.png",
+    "sha256": "b04dfef65ca1b9bdc406e3395eca13b6fbe3f49145882d4b47c1001020d55843"
+  },
+  "scopeGate": {
+    "productionChanged": false,
+    "reviewerChanged": false,
+    "registered": false,
+    "promoted": false
+  }
+}
