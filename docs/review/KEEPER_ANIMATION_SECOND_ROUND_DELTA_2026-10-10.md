@@ -43,8 +43,8 @@ The final changed strips were also inspected for fragments just inside a cell. `
 
 ## Workflow and documentation audit
 
-The review page imports a version-9 review JSON by exact animation name, rejects unknown or duplicate names, preserves complete notes, derives status from the named review flags, and keeps Codex responses generated and read-only. Offline and online browser storage do not synchronise automatically: transfer progress with Export on one copy and Import review JSON on the other.
+The review page imports a version-9 review JSON by exact animation name, rejects unknown or duplicate names, preserves complete notes, derives status from the named review flags, and keeps Codex responses generated and read-only. This transfer note is retained as history only: the reviewer is now online-only so feedback, hand-backs and work locking share one browser origin.
 
 The rollback documentation audit reconciled the restored 1,420-frame total,
-immutable export hashes, offline transfer behaviour, rejected-draft status,
+immutable export hashes, the former offline transfer behaviour, rejected-draft status,
 source provenance, generated resolution register and permanent verifier.

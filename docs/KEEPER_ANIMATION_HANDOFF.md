@@ -28,12 +28,10 @@ sheet.
 ## Start here in the next task
 
 1. Read this document in full.
-2. Open `docs/keeper-scale-audit/review.html`. For a reliable no-Wi-Fi session
-   on this Mac, double-click `Open Keeper Review Offline.command` at the
-   repository root and leave its Terminal window open; it serves the same page
-   and local sprite strips only on `127.0.0.1:8765`. Use the deployed online
-   reviewer's **Hand back to Codex** button for the normal durable handoff;
-   the collapsed version-11 JSON backup/import is only for exceptional offline
+2. Open the deployed online reviewer at
+   `https://lighthouse-keeper-mu.vercel.app/keeper-review`. It is the only
+   reviewer and the only place to save feedback or use **Hand back to Codex**;
+   the collapsed version-11 JSON backup/import is only for exceptional browser
    recovery. A dedicated panel first shows
    the untouched `keeper_walk` identity/anatomy baseline, followed by all 173 accepted
    clips at one unchanged relative scale in filename order. Filter the register
@@ -267,11 +265,13 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 - `node scripts/verify_keeper_review_drafts.ts` checks source, previous/current
   canonical or draft and published-review hashes, geometry, transparent gutters,
   detached-prop ownership and exact-name reviewer attachment.
-- The deployed online reviewer and offline launcher now use the same generated
-  `public/keeper-review/index.html`; its review-only draft assets live under
-  `public/keeper-review/drafts/` and are not runtime manifest entries. Browser
-  progress remains origin-local, but the deployed reviewer submits a complete
-  exact-name batch to the durable handoff queue through Hand back to Codex.
+- The deployed reviewer is online only at `/keeper-review/`; its review-only
+  draft assets live under `public/keeper-review/drafts/` and are not runtime
+  manifest entries. The generated audit artifact remains byte-identical for
+  verification, but sends any local opening to the deployed reviewer.
+  Browser progress remains tied to that single origin, and the deployed
+  reviewer submits a complete exact-name batch to the durable handoff queue
+  through Hand back to Codex.
   Gallery cards are deliberately animation-first: name, current review state,
   latest local save/redraft timestamp, playback and frame stepping, with an
   `Open close review` action. Close review exposes an exact-name canonical/draft

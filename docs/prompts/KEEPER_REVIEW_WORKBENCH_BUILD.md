@@ -132,8 +132,9 @@ repacking. No canonical strip may be changed by this foundation.
 
 Extend Hand back to Codex so it submits annotations, asset reviews, crop/anchor
 proposals, animation requests, routines and relationship proposals together in
-one durable, exact-id batch. Explain the limits of the online/offline modes in
-plain language. Add deterministic verifiers for every new schema and every
+one durable, exact-id batch. Preserve the online-only reviewer as the single
+source of truth; do not add an offline review mode or a second browser storage
+origin. Add deterministic verifiers for every new schema and every
 sprite-sheet proposal invariant. Update README, handoff documents, architecture
 notes and the prioritized backlog. Verify with focused unit tests, the existing
 catalogue/sprite verifiers, typecheck, production build, public deployment and

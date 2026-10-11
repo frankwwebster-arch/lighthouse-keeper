@@ -6,7 +6,7 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 ```
 npm install
 npm run dev      # Next.js 14; open http://localhost:3000 (or this computer’s address on the same wifi, for the iPad)
-npm test         # 149 tests
+npm test         # full verification suite
 npm run upgrades # copy data/upgrades.csv (the upgrade list) into the game
 npm run build    # production build
 npm run sprites  # snap Codex's PNGs in art/raw/ into public/sprites/ (docs/CODEX_ASSETS.md)
@@ -14,26 +14,23 @@ npm run keeper-contract # rebuild neutral stills, bridges and the endpoint audit
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
 
-The canonical online keeper animation reviewer is
-`https://lighthouse-keeper-mu.vercel.app/keeper-review/`. The offline launcher
-serves an exact repository copy of that same generated page and review-only
-draft assets: double-click `Open Keeper Review Offline.command`, leave its
-Terminal window open, and use the browser page it opens. Both versions load all
-173 animation strips and retain saved review progress in that browser. In the
-online reviewer, use **Hand back to Codex** whenever a batch is ready: its
+The keeper animation reviewer is online only at
+`https://lighthouse-keeper-mu.vercel.app/keeper-review/`. Use **Hand back to
+Codex** whenever a batch is ready: its
 confirmation explains that it will first save any edited cards locally, then
 sends the complete exact-name review register to the durable handoff queue. The
 queue records an authoritative exact-name delta, so a later Codex task reviews
 only animation decisions or notes changed since the previous hand-back (or the
 shipped saved-review baseline for the first server hand-back); the receipt
 reports that count on-screen—no JSON download is needed. The collapsed
-Advanced backup/import control remains only for exceptional offline recovery.
+Advanced backup/import control remains only for exceptional browser recovery.
 When Codex claims a queued batch to make amendments, the online reviewer polls
 that server state and becomes read-only until the amended delivery is marked
 complete. Playback and inspection remain available, but no review decisions can
-diverge while work is in progress.
-The offline copy needs no `npm` command, internet connection or Vercel access,
-but cannot submit a handoff until the batch is opened online.
+diverge while work is in progress. The repository’s generated audit page is not
+a second review workspace: opening it outside the deployed route sends the
+viewer to the online reviewer, keeping saved feedback and the work lock in one
+place.
 
 ## Current implementation
 
@@ -73,7 +70,7 @@ but cannot submit a handoff until the batch is opened online.
 - `data/keeper_asset_contract.json` — authoritative machine-readable scale, pivots and interaction points.
 - `data/keeper_pose_registry.json`, `data/keeper_endpoint_audit.json` and `data/keeper_endpoint_exceptions.json` — shared pose vocabulary, current real-pixel endpoint evidence, and the frozen legacy migration boundary.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
-- `public/keeper-review/index.html` — canonical online reviewer deployed at `/keeper-review/`; the offline launcher serves this exact same file and its review-only draft assets. `docs/keeper-scale-audit/review.html` remains the generated audit copy and must be byte-identical. Its gallery is a compact visual scan (name, review state, last local save/redraft, playback and frame stepping); `Open close review` opens any chosen card immediately. `Find animation` searches names and overrides all other filters; otherwise independently filter by review state, pose and active/reserve use list. Close review lets Frank override the inferred pose tag, relegate a likely duplicate to the reversible reserve list, expand/compress retained draft comparisons, and select canonical or every exact-name draft as an exportable preferred-promotion candidate—without mutating production. **Hand back to Codex** always asks for confirmation, saves any unsaved cards to that browser if confirmed, then submits the full batch to the durable server-side queue. The server records a semantic exact-name delta (ignoring save timestamps), comparing the first server hand-back to the shipped review baseline and later ones to the prior hand-back; the receipt reports only the changed animation count for later Codex work. When Codex claims a batch, the online reviewer becomes read-only until the delivery is completed, while retaining playback and inspection; JSON backup/import is collapsed as an exceptional recovery option.
+- `public/keeper-review/index.html` — canonical online-only reviewer deployed at `/keeper-review/`; `docs/keeper-scale-audit/review.html` is the generated audit artifact and must be byte-identical, but when opened outside `/keeper-review` it sends the viewer to the live platform instead of presenting a second workspace. Its gallery is a compact visual scan (name, review state, last local save/redraft, playback and frame stepping); `Open close review` opens any chosen card immediately. `Find animation` searches names and overrides all other filters; otherwise independently filter by review state, pose and active/reserve use list. Close review lets Frank override the inferred pose tag, relegate a likely duplicate to the reversible reserve list, expand/compress retained draft comparisons, and select canonical or every exact-name draft as an exportable preferred-promotion candidate—without mutating production. **Hand back to Codex** always asks for confirmation, saves any unsaved cards to that browser if confirmed, then submits the full batch to the durable server-side queue. The server records a semantic exact-name delta (ignoring save timestamps), comparing the first server hand-back to the shipped review baseline and later ones to the prior hand-back; the receipt reports only the changed animation count for later Codex work. When Codex claims a batch, the online reviewer becomes read-only until the delivery is completed, while retaining playback and inspection; JSON backup/import is collapsed as an exceptional browser-recovery option.
 - `data/keeper_side_on_beard_occlusion_audit.json`, `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/`, and `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` — completed draft-only v2 beard/hand audit and preserved rejected v1 history. The active reviewer shows v2 beside canonical and the separate Frank-selected darts draft; the verifier prevents implicit promotion.
 - `data/keeper_review_drafts.json` and `art/drafts/` — SHA-256-pinned, exact-name review comparisons: the draft-only darts candidate plus the ten selected canonical promotions and their reversible previous versions. `scripts/verify_keeper_review_drafts.ts` checks their source, canonical/current, comparison strips, sidecars, gutters and reviewer attachment.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.
