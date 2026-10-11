@@ -29,6 +29,16 @@ const selectedSources: Record<string, string> = {
   keeper_parachute_landing: '6a0b199f02897906e20207bd4badbbe79687daaea36472322f1681129e861976',
   keeper_machete_side: 'df6209ee8d6a0b5abb7133881721164846b9065bcfd189ce03d5b60c1eac7fc0',
 }
+const acceptedArtistDraftStrips: Record<string, string> = {
+  keeper_artist_smock_sit_front: 'ab7bdc63c78dbebdbdf8010fda7593cb42ae805b5e2d2a2e10fccaea6e7f4788',
+  keeper_artist_smock_turn_back: '67dfa4b1cf64b3fa60dd67e4161ec1b73a887f92ba3a86666049f65c9c4068dd',
+  keeper_artist_smock_turn_front: 'cf1f5f6af7eaad6e19368497de3c019df57a9fd245be37c6f62456964c4af911',
+  keeper_artist_smock_walk: 'aab1c99a9f5d97edf6937437d744085aecf162a839bf23d9581683956b4f7af3',
+  keeper_paint_back: '0395c4db55062516df1eaf752dfe81e093f2186886e6e191eb1730b658659e85',
+  keeper_paint_side: '3cf424326da7394357c12845c7e10ce21af0efc09777cade72c1672357be610f',
+  keeper_pottery_front: '2fac8fb3c10b92df68efa0c365cdba0e83736caed14903246bd5babd8a288c95',
+}
+const expectedNames = new Set([...Object.keys(selectedSources), ...Object.keys(acceptedArtistDraftStrips)])
 const promotedNames = new Set(Object.keys(selectedSources).filter((name) => name !== 'keeper_darts'))
 
 if (!fs.existsSync(REGISTRY)) fail('registry is missing')
@@ -36,7 +46,7 @@ const registry = readJson(REGISTRY)
 if (registry.version !== 1 || !Array.isArray(registry.drafts)) fail('registry schema is invalid')
 const names = registry.drafts.map((item: Record<string, any>) => item.name)
 if (new Set(names).size !== names.length) fail('registry contains duplicate exact animation names')
-if (names.length !== Object.keys(selectedSources).length || names.some((name: string) => !(name in selectedSources))) fail('registry exact-name set does not match the selected review set')
+if (names.length !== expectedNames.size || names.some((name: string) => !expectedNames.has(name))) fail('registry exact-name set does not match the selected review set')
 
 const reviewHtml = fs.readFileSync(path.join(ROOT, 'public/keeper-review/index.html'), 'utf8')
 const payload = JSON.parse(reviewHtml.split('const DATA=', 2)[1].split(';\nconst $=', 1)[0]) as Record<string, any>
@@ -44,7 +54,7 @@ const pageAssets = new Map(payload.assets.map((asset: Record<string, any>) => [a
 
 for (const item of registry.drafts as Record<string, any>[]) {
   const name = item.name as string
-  const expectedStatus = name === 'keeper_darts' ? 'active-review-draft' : 'promoted-review-draft'
+  const expectedStatus = promotedNames.has(name) ? 'promoted-review-draft' : 'active-review-draft'
   if (item.status !== expectedStatus) fail(`${name} has unexpected status ${item.status}`)
   const record = readJson(absolute(item.register))
   if (record.animation !== name) fail(`${name} register detached from its exact animation name`)
@@ -59,7 +69,8 @@ for (const item of registry.drafts as Record<string, any>[]) {
       if (section[`${key}Sha256`] !== sha256(file)) fail(`${name} ${sectionName} ${key} SHA-256 is stale`)
     }
   }
-  if (record.draft.sourceSha256 !== selectedSources[name]) fail(`${name} is not attached to Frank's selected source bytes`)
+  if (name in selectedSources && record.draft.sourceSha256 !== selectedSources[name]) fail(`${name} is not attached to Frank's selected source bytes`)
+  if (name in acceptedArtistDraftStrips && record.draft.stripSha256 !== acceptedArtistDraftStrips[name]) fail(`${name} is not attached to the accepted V11 artist strip bytes`)
   if (record.canonical.stripSha256 === record.draft.stripSha256) fail(`${name} replacement is byte-identical to its previous version`)
   if (record.draft.workingSource) {
     const working = absolute(record.draft.workingSource)
@@ -86,7 +97,8 @@ for (const item of registry.drafts as Record<string, any>[]) {
   const page = pageAssets.get(name) as Record<string, any> | undefined
   const variants = page?.draftVariants ?? (page?.draftVariant ? [page.draftVariant] : [])
   if (!variants.length) fail(`${name} has no side-by-side reviewer variant`)
-  const pageVariant = variants.find((variant: Record<string, any>) => expectedStatus === 'active-review-draft' ? variant.label === 'Frank-selected draft' : variant.label === 'Previous version')
+  const expectedLabel = expectedStatus === 'active-review-draft' ? item.label : 'Previous version'
+  const pageVariant = variants.find((variant: Record<string, any>) => variant.label === expectedLabel)
   if (!pageVariant) fail(`${name} has no correctly-labelled reviewer variant`)
   if (expectedStatus === 'active-review-draft') {
     if (pageVariant.source !== record.draft.strip || pageVariant.sha256 !== record.draft.stripSha256) fail(`${name} active draft is stale in the reviewer`)
@@ -105,9 +117,26 @@ for (const item of registry.drafts as Record<string, any>[]) {
   if (!fs.existsSync(published) || sha256(published) !== comparison.stripSha256) fail(`${name} published comparison is missing or stale`)
 }
 
+const turnRegister = readJson(path.join(ROOT, 'art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/registers/keeper_artist_smock_turn_front.json'))
+const sitRegister = readJson(path.join(ROOT, 'art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/registers/keeper_artist_smock_sit_front.json'))
+const turnImage = PNG.sync.read(fs.readFileSync(absolute(turnRegister.draft.strip)))
+const sitImage = PNG.sync.read(fs.readFileSync(absolute(sitRegister.draft.strip)))
+const seamWidth = 128
+const seamHeight = 160
+const turnLast = Buffer.alloc(seamWidth * seamHeight * 4)
+const sitFirst = Buffer.alloc(seamWidth * seamHeight * 4)
+for (let y = 0; y < seamHeight; y += 1) for (let x = 0; x < seamWidth; x += 1) {
+  const target = (y * seamWidth + x) * 4
+  const turnSource = (y * turnImage.width + (5 * seamWidth + x)) * 4
+  const sitSource = (y * sitImage.width + x) * 4
+  turnImage.data.copy(turnLast, target, turnSource, turnSource + 4)
+  sitImage.data.copy(sitFirst, target, sitSource, sitSource + 4)
+}
+if (!turnLast.equals(sitFirst)) fail('accepted V11 front transition seam is no longer complete-frame identical')
+
 const superseded = readJson(path.join(ROOT, 'art/drafts/keeper-user-selected-batch-2026-10-10-v1/superseded-sources.json'))
 const oldSnow = superseded.keeper_clear_snow
 if (oldSnow.sha256 !== 'b34b7c40710d9110ef93eb5d7aecf6b4b3d6a69df54534c45ffdcebb8ebe26d6' || sha256(absolute(oldSnow.stored)) !== oldSnow.sha256) fail('superseded overlapping snow source is not preserved byte-for-byte')
 if (!oldSnow.reason.includes('frame ownership')) fail('superseded snow qualification is missing')
 
-console.log(`Verified ${promotedNames.size} promoted reversible replacements and one active darts draft; every exact-name comparison remains attached and frame-isolated`)
+console.log(`Verified ${promotedNames.size} promoted replacements, one active darts draft, and ${Object.keys(acceptedArtistDraftStrips).length} accepted V11 artist drafts; every exact-name comparison remains attached and frame-isolated`)

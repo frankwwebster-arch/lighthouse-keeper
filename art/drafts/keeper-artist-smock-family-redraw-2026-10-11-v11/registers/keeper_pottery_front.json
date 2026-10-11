@@ -1,0 +1,122 @@
+{
+  "draftId": "keeper_pottery_front-artist-smock-v11",
+  "animation": "keeper_pottery_front",
+  "status": "active-review-draft",
+  "label": "V11 consistent artist set",
+  "selection": "Frank accepted the internally consistent V11 artist-smock family, subject only to the exact turn-front-to-sit-front seam; the registered V11 strips enforce whole-frame identity at that seam.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_pottery_front_f8.png",
+    "stripSha256": "9ca3e4702ff6e7d89793dea289a994f0d44ae6b8cac573c862253fe965e6d531",
+    "runtime": "public/sprites/keeper_pottery_front.png",
+    "runtimeSha256": "e01494cc5a0986bb58297a68a1b360abbe1abb9e3fef015904f0d53fb67979f0",
+    "sidecar": "art/raw/keeper-first-batch/keeper_pottery_front_f8.json",
+    "sidecarSha256": "ef32d3ccc6efb367b17c096e98db618bfe7423d6454200c8da9648a39ee9d667"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/generated/keeper_pottery_front-source.png",
+    "sourceSha256": "d987310ed9b5a920dd0627e11a8b8f9a79864c7f4b3cb729fffad717cee9dfc8",
+    "strip": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_pottery_front_f8.png",
+    "stripSha256": "2fac8fb3c10b92df68efa0c365cdba0e83736caed14903246bd5babd8a288c95",
+    "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_pottery_front_f8.json",
+    "sidecarSha256": "48709bb701680f7e46aad5a4657d05361adf3c311c505e42d6a913ed4d349e07",
+    "frames": 8,
+    "canvas": [
+      40,
+      40
+    ],
+    "density": 4,
+    "anchor": [
+      20,
+      40
+    ],
+    "uniformScale": 0.2545454545454545,
+    "derivedFrom": null,
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "draftAlphaBox": [
+          48,
+          32,
+          112,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "draftAlphaBox": [
+          48,
+          31,
+          111,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "draftAlphaBox": [
+          48,
+          31,
+          111,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "draftAlphaBox": [
+          48,
+          31,
+          111,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "draftAlphaBox": [
+          48,
+          31,
+          112,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "draftAlphaBox": [
+          48,
+          32,
+          111,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "draftAlphaBox": [
+          48,
+          31,
+          112,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "draftAlphaBox": [
+          48,
+          31,
+          111,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/artist-smock-family-overview.png",
+      "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/front-transition-seam-proof.png",
+      "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_pottery_front-comparison.gif"
+    ]
+  }
+}

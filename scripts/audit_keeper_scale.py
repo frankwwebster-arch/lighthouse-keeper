@@ -718,7 +718,7 @@ def publish(assets: list[dict]) -> None:
                 raise SystemExit(f"Review draft first frame is empty: {name}")
             active_review_drafts.setdefault(name, []).append({
                 "name": name,
-                "label": "Previous version" if promoted else "Frank-selected draft",
+                "label": "Previous version" if promoted else item.get("label", draft_record.get("label", "Review draft")),
                 "source": comparison["strip"],
                 "frames": draft_sidecar["frames"],
                 "fps": draft_sidecar["fps"],

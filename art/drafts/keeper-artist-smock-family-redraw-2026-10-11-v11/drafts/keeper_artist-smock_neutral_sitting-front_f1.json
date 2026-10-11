@@ -1,0 +1,21 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "artist-smock",
+  "startPose": "sitting-front",
+  "endPose": "sitting-front",
+  "pose": "sitting-front",
+  "assetRole": "neutral",
+  "facing": "front",
+  "draft": true,
+  "draftFamily": "keeper-artist-smock-family-redraw-2026-10-11-v11"
+}

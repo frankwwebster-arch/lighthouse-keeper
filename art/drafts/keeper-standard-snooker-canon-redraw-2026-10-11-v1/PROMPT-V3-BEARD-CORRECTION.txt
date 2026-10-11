@@ -1,0 +1,7 @@
+Use case: identity-preserve
+Asset type: targeted correction of the eight-pose keeper_snooker source grid
+Primary request: Correct only the Keeper's white facial-hair system in all eight poses of Image 1 so it matches the canonical keeper_walk facial-hair geometry in Image 2. Keep everything else in Image 1 unchanged.
+Input images: Image 1 is the edit target and fixes the eight poses, 3-by-3 layout, body ratios, action, uniform, cap, hands, cue and transparent spacing. Image 2 is the immutable canonical authority for beard, moustache, sideburn and white eyebrow.
+Exact beard correction: reproduce the keeper_walk beard's full volume, firm stepped outer edge, broad cheek connection, forward chin mass and pointed lower termination. Preserve the same beard-to-head ratio at every lean angle; rotate the coherent canonical facial-hair volume with the head rather than shrinking, rounding, shortening or tapering it. Match the canonical moustache, sideburn and eyebrow as one coherent white facial-hair system.
+Invariants: do not change the cap, skin, eye, nose, head size, torso, arms, hands, legs, boots, uniform, cue, pose order, choreography, scale, baseline, cell placement, transparent background or empty ninth cell. Do not paste a detached head or create double beard outlines.
+Constraints: exactly eight complete poses; fully transparent background; no cell-boundary overlap; no extra characters, props, scenery, text, guides or borders.

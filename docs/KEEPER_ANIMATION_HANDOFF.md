@@ -225,6 +225,16 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 - Bathroom privacy can use the same door/cubicle occlusion. Privacy mosaic,
   foam and towels are privacy states, not outfits, and should eventually move
   from manifest `outfit` to a separate `privacy` field.
+- Frank's 11 October review established the visual acceptance rule for special
+  outfits: a special-outfit family must be internally consistent across every
+  animation used in its room, while a small standard-to-costume difference is
+  tolerable only across the complete door occlusion where the change is never
+  visible. This does not relax any same-outfit seam. End/start frames used
+  consecutively in one outfit must still be identical where declared.
+- Standard-uniform activities have no such tolerance. Their visible approach
+  and exit use the standard walk family, so head, eye, nose, beard, hands and
+  body ratios must remain compatible with `keeper_walk`; a one-off action is
+  cheaper to rebuild than to accept a visible identity jump.
 
 ## Current evidence and files
 
@@ -266,9 +276,25 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   `art/drafts/keeper-user-selected-batch-2026-10-10-v1/` and appear as
   `Previous version` beside the current strip in the reviewer. They are not
   evidence that the rejected second-round batch was restored.
+- Frank accepted the internally consistent V11 artist-smock family on 11
+  October, with one exact seam condition: the final frame of
+  `keeper_artist_smock_turn_front` must be the complete first frame of
+  `keeper_artist_smock_sit_front`. The normalized cells are byte-identical and
+  `scripts/verify_keeper_review_drafts.ts` now rejects any regression. All
+  seven artist animations present in the review gallery are registered as
+  active `V11 consistent artist set` comparisons; the five neutral stills and
+  three walk start/stop/cycle strips remain deterministic technical assets and
+  therefore do not create phantom gallery rows. Production is unchanged.
+- A referenced-image standard-uniform `keeper_snooker` redraw study was
+  rejected in the same session because three generated attempts still failed
+  to hold the canonical `keeper_walk` beard through the leaning poses. Its
+  exact inputs, prompts and untouched outputs are preserved under
+  `art/drafts/keeper-standard-snooker-canon-redraw-2026-10-11-v1/`; no snooker
+  draft is registered and no further blind variants should be generated.
 - `node scripts/verify_keeper_review_drafts.ts` checks source, previous/current
   canonical or draft and published-review hashes, geometry, transparent gutters,
-  detached-prop ownership and exact-name reviewer attachment.
+  detached-prop ownership, the V11 whole-frame front seam and exact-name
+  reviewer attachment.
 - The deployed reviewer is online only at `/keeper-review/`; its review-only
   draft assets live under `public/keeper-review/drafts/` and are not runtime
   manifest entries. The generated audit artifact remains byte-identical for
@@ -527,9 +553,13 @@ evidence, not final acceptance.
 - Striped swimsuit: `keeper_swim_costume_down`,
   `keeper_swim_costume_horizontal`, `keeper_swim_costume_up`.
 
-The artist-smock family now has its reviewed-size walk, front/rear turns and
-front sit/stand bridge. For winter/workout clothing, author canonical-overlay
-neutral and walking/turning coverage where he traverses visible room space.
+The artist-smock family now has its complete internally consistent V11 walk,
+front/rear turns, front sit/stand, painting and pottery set plus deterministic
+neutral/walk bridge derivatives. Seven authored animations are active reviewer
+drafts; no V11 pixels are production yet. For winter/workout clothing, author
+complete internally consistent room families where the keeper traverses
+visible space, and keep every within-outfit hand-off exact even though the
+door-hidden standard-to-costume swap may tolerate a small appearance change.
 
 ### Garden shed and lawn mower route
 

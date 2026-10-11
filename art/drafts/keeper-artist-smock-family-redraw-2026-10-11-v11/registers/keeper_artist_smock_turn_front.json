@@ -1,0 +1,102 @@
+{
+  "draftId": "keeper_artist_smock_turn_front-artist-smock-v11",
+  "animation": "keeper_artist_smock_turn_front",
+  "status": "active-review-draft",
+  "label": "V11 consistent artist set",
+  "selection": "Frank accepted the internally consistent V11 artist-smock family, subject only to the exact turn-front-to-sit-front seam; the registered V11 strips enforce whole-frame identity at that seam.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_artist_smock_turn_front_f6.png",
+    "stripSha256": "aaa5c774caf354bb825430f24ac187d90b398f9977a82d1a354480e298669711",
+    "runtime": "public/sprites/keeper_artist_smock_turn_front.png",
+    "runtimeSha256": "b90cc91f4cd6cb1699540906d3ac7e7ced100fe154f57b76dc206a641b442161",
+    "sidecar": "art/raw/keeper-first-batch/keeper_artist_smock_turn_front_f6.json",
+    "sidecarSha256": "43eaac6ee5d9de2d59b5cd3f641b5f85cf96d7a0bfd77b986b463aeaff31622a"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/generated/keeper_artist_smock_turn_front-source.png",
+    "sourceSha256": "d3f6ce9769e85fe30c175ced22910d9fcb5bd112a776463fb4a85433da41f36f",
+    "strip": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_turn_front_f6.png",
+    "stripSha256": "cf1f5f6af7eaad6e19368497de3c019df57a9fd245be37c6f62456964c4af911",
+    "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_turn_front_f6.json",
+    "sidecarSha256": "22557950b869579b4377568de7dd446007a37d2253d04ea90f8ed0473870ec70",
+    "frames": 6,
+    "canvas": [
+      32,
+      40
+    ],
+    "density": 4,
+    "anchor": [
+      16,
+      40
+    ],
+    "uniformScale": 0.2555366269165247,
+    "derivedFrom": null,
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "draftAlphaBox": [
+          32,
+          8,
+          95,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "draftAlphaBox": [
+          32,
+          6,
+          96,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "draftAlphaBox": [
+          30,
+          7,
+          98,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "draftAlphaBox": [
+          26,
+          6,
+          100,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "draftAlphaBox": [
+          25,
+          5,
+          102,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "draftAlphaBox": [
+          24,
+          9,
+          102,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/artist-smock-family-overview.png",
+      "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/front-transition-seam-proof.png",
+      "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_artist_smock_turn_front-comparison.gif"
+    ]
+  }
+}

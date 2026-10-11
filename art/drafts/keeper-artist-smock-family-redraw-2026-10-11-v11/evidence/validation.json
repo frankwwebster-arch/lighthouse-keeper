@@ -1,0 +1,500 @@
+{
+  "status": "complete-artist-smock-family-draft-awaiting-frank-review",
+  "acceptedCostumeAuthority": {
+    "path": "art/drafts/keeper-canon-model-pack-artist-smock-2026-10-11-v10/generated/artist-smock-fresh-source.png",
+    "sha256": "0101b38c45a406cbe49dd5cbca4da0fd1592a7b185807afbb5f98bd898af937b"
+  },
+  "authoredClips": {
+    "keeper_artist_smock_walk": {
+      "source": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/generated/keeper_artist_smock_walk-source.png",
+      "sourceSha256": "01270fbbc694986bab3a3f41b206e28f7553ce124c6da9f0856dc58b9453aa99",
+      "reference": "art/raw/keeper-first-batch/keeper_walk_f8.png",
+      "referenceSha256": "03df0efc1f028e139e5c9ca9cf1746a45496887a565f5290c38ad6a4b66fe6b1",
+      "layout": "row",
+      "uniformScale": 0.3117154811715481,
+      "canvas": [
+        128,
+        160
+      ],
+      "frames": 8,
+      "fps": 4,
+      "deterministicNormalizationRerun": true,
+      "draft": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_walk_f8.png",
+      "draftSha256": "aab1c99a9f5d97edf6937437d744085aecf162a839bf23d9581683956b4f7af3",
+      "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_walk_f8.json",
+      "sidecarSha256": "82766c5a49e729e5f5ec26d3c2c74f8b9a847eca07d4189ab91c6b6e11d6fd0a",
+      "preview": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_artist_smock_walk-preview.gif",
+      "previewSha256": "65ef276c384c8020acc48afdcb01a2f8245526335974b5574133564f08ea99ab",
+      "comparisonPreview": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_artist_smock_walk-comparison.gif",
+      "comparisonPreviewSha256": "b2abe25578cbafbad2b233e3079b51c4a098b841a3f9e6db40960ea64329c8b3",
+      "binaryAlpha": true,
+      "opaqueBorderPixelCount": 0,
+      "frameHashes": [
+        "e4d896be00759b3cd6ef3a8fe455fc6a5197f06059bd33a0f9fabca00dc49301",
+        "17966c040118f93693636b91ff6623cad1629add2b02974be0029cd596e9f729",
+        "357841ac891c26652713b0d364b0633ddb4e5a638191b2d077091eda02156165",
+        "4be20e7289e0a94cc1b4957073137ab70067cacbb7acfd8197a998dc1a5cdd12",
+        "05ce2468a412cfa5e7f5df278b14578f9c6c9f17fc3f80255a11600ea374a5e7",
+        "6205ef0258d41a69ed5214c6dd60b1c0b75b77cda27f1ee5d6ff3fa67db90614",
+        "fd36c272618155516094ec62654df62511bba91cfd634f7df1db0ad9185bad5b",
+        "88c0678e7ecb6812da4c11e3dfffe6f33edb552b9bd3c2d3361d8bb3c8d5e825"
+      ],
+      "generation": {
+        "method": "built-in image generator; referenced-image identity-preserve mode",
+        "prompt": {
+          "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/prompts/keeper_artist_smock_walk.txt",
+          "sha256": "502535449014892cb1528e4d883510413d6942fc70bc67d83b97a7e1e117b41f"
+        },
+        "inputs": [
+          {
+            "path": "art/drafts/keeper-canon-model-pack-artist-smock-2026-10-11-v10/generated/artist-smock-fresh-source.png",
+            "sha256": "0101b38c45a406cbe49dd5cbca4da0fd1592a7b185807afbb5f98bd898af937b"
+          },
+          {
+            "path": "art/drafts/keeper-canon-model-pack-artist-smock-2026-10-11-v10/evidence/canon-model-pack.png",
+            "sha256": "9ebf6124ffa2fe53ebbfbd065e5abb0aed5df0c0acba08c05253f5da6f48eb20"
+          },
+          {
+            "path": "art/source/keeper-first-batch/keeper-walk-generated-source.png",
+            "sha256": "637b3c4e66b4019730eaa7354812b18df788aedc4ab3e3b7c619589854e0da5f"
+          }
+        ]
+      }
+    },
+    "keeper_artist_smock_turn_back": {
+      "source": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/generated/keeper_artist_smock_turn_back-source.png",
+      "sourceSha256": "5c29f0ec65fc536f7153f5d3b2070790781f2dec8ee2ccf1d45e10eaf40146bb",
+      "reference": "art/raw/keeper-first-batch/keeper_turn_back_f6.png",
+      "referenceSha256": "b950027233b2005897fcc2056f993ff0d9d38c1f4501b60ad31d1c6cba29b635",
+      "layout": "row",
+      "uniformScale": 0.25210084033613445,
+      "canvas": [
+        128,
+        160
+      ],
+      "frames": 6,
+      "fps": 4,
+      "deterministicNormalizationRerun": true,
+      "draft": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_turn_back_f6.png",
+      "draftSha256": "67dfa4b1cf64b3fa60dd67e4161ec1b73a887f92ba3a86666049f65c9c4068dd",
+      "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_turn_back_f6.json",
+      "sidecarSha256": "22557950b869579b4377568de7dd446007a37d2253d04ea90f8ed0473870ec70",
+      "preview": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_artist_smock_turn_back-preview.gif",
+      "previewSha256": "1453c703869c810885411113f1d7b7c228ade9b8c60e97ff5c37cb0470aca2ba",
+      "comparisonPreview": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_artist_smock_turn_back-comparison.gif",
+      "comparisonPreviewSha256": "695e35d6e4cf23e9a5541941b6d9a7ceb0504ff25f68b1a1dff6071bae5f77e8",
+      "binaryAlpha": true,
+      "opaqueBorderPixelCount": 0,
+      "frameHashes": [
+        "357841ac891c26652713b0d364b0633ddb4e5a638191b2d077091eda02156165",
+        "32ed753f5dedfac13a22d06007cb51a9b4ecd9e533e1827d235f9fd785bc354c",
+        "71e2f0e9029d2ef1aa00af54a5a12d4702fe8442aefee38ff9ed57adc785ecfe",
+        "3670fea9c279813477c1e7ca932f90245fc4915ee87f4c2b79ddc80cb1039556",
+        "4c602519736b8b38d0e4989a871c5540362c84bd7dd9183a9c16090387ca2a5c",
+        "d0da0dafc8d47a293147ce3a2f7f674eb406fe379ea6cffec04e6ff97a2112c4"
+      ],
+      "generation": {
+        "method": "built-in image generator; referenced-image identity-preserve mode",
+        "prompt": {
+          "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/prompts/keeper_artist_smock_turn_back.txt",
+          "sha256": "88edf9e8ed1c7572646ca9d7bd00cd7701862de619366519c4a025470a43d6ea"
+        },
+        "inputs": [
+          {
+            "path": "art/drafts/keeper-canon-model-pack-artist-smock-2026-10-11-v10/generated/artist-smock-fresh-source.png",
+            "sha256": "0101b38c45a406cbe49dd5cbca4da0fd1592a7b185807afbb5f98bd898af937b"
+          },
+          {
+            "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/generated/keeper_artist_smock_walk-source.png",
+            "sha256": "01270fbbc694986bab3a3f41b206e28f7553ce124c6da9f0856dc58b9453aa99"
+          },
+          {
+            "path": "art/source/keeper-first-batch/keeper-turn-back-generated-source.png",
+            "sha256": "dbe36e75be4cf441c9df77b66f3eba448ca6f85a5b73266f042610fc1ba15f4a"
+          }
+        ]
+      }
+    },
+    "keeper_artist_smock_turn_front": {
+      "source": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/generated/keeper_artist_smock_turn_front-source.png",
+      "sourceSha256": "d3f6ce9769e85fe30c175ced22910d9fcb5bd112a776463fb4a85433da41f36f",
+      "reference": "art/raw/keeper-first-batch/keeper_turn_front_f6.png",
+      "referenceSha256": "cab51cb946eb39e1a05e2665ccff7f0f3cb6523621d42a4766ccb8212d86b57b",
+      "layout": "row",
+      "uniformScale": 0.2555366269165247,
+      "canvas": [
+        128,
+        160
+      ],
+      "frames": 6,
+      "fps": 4,
+      "deterministicNormalizationRerun": true,
+      "draft": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_turn_front_f6.png",
+      "draftSha256": "cf1f5f6af7eaad6e19368497de3c019df57a9fd245be37c6f62456964c4af911",
+      "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_turn_front_f6.json",
+      "sidecarSha256": "22557950b869579b4377568de7dd446007a37d2253d04ea90f8ed0473870ec70",
+      "preview": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_artist_smock_turn_front-preview.gif",
+      "previewSha256": "2a8c283be2a87f4f88b80755299b2a1b23b627bb0a1a62fd03edb9132562fb66",
+      "comparisonPreview": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_artist_smock_turn_front-comparison.gif",
+      "comparisonPreviewSha256": "072d376a9250b8b7545f597cf8b57986ad3414ea24f7b2ed7e21d65df1ef7f48",
+      "binaryAlpha": true,
+      "opaqueBorderPixelCount": 0,
+      "frameHashes": [
+        "357841ac891c26652713b0d364b0633ddb4e5a638191b2d077091eda02156165",
+        "307781f62fb721e0ff3183dc23376e1760200428a02144c42c2cd7409be684d6",
+        "608ba8fab218ea8a7c720b4d77b7d15349731da465e359075b4c2e35f8181ae3",
+        "a83cdd056c40a404ef822e7706f596ea83ff6d54b8991e5ea3cc7b67391f05f8",
+        "432e69c5a53c602958dbcad17e9653f7c139e34baf4cbf8afe5ef77cf763748e",
+        "81698546232a33b68610e0f2ba9a50f652c869fc0bad36bc0a4b76b26de2041a"
+      ],
+      "generation": {
+        "method": "built-in image generator; referenced-image identity-preserve mode",
+        "prompt": {
+          "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/prompts/keeper_artist_smock_turn_front.txt",
+          "sha256": "cbe6a2f426afa2c8bf9e41954bfa12868b1f6d9d80fbf77fdacb69e461873d1e"
+        },
+        "inputs": [
+          {
+            "path": "art/drafts/keeper-canon-model-pack-artist-smock-2026-10-11-v10/generated/artist-smock-fresh-source.png",
+            "sha256": "0101b38c45a406cbe49dd5cbca4da0fd1592a7b185807afbb5f98bd898af937b"
+          },
+          {
+            "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/generated/keeper_artist_smock_walk-source.png",
+            "sha256": "01270fbbc694986bab3a3f41b206e28f7553ce124c6da9f0856dc58b9453aa99"
+          },
+          {
+            "path": "art/source/keeper-first-batch/keeper-turn-front-generated-source.png",
+            "sha256": "7f770d5c7b7049c535b04b8ef596e3f36ad18cf6146a226bce111cc70d23aaed"
+          }
+        ]
+      }
+    },
+    "keeper_artist_smock_sit_front": {
+      "source": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/generated/keeper_artist_smock_sit_front-source.png",
+      "sourceSha256": "e41b59335896b841ac900c0181f1ead395ca75e8ea746d30def8c15b448e2f00",
+      "reference": "art/raw/keeper-first-batch/keeper_sit_front_f6.png",
+      "referenceSha256": "70885b36d108ffb891244bf896eacea804e38970ab82a917706eb371866db3e2",
+      "layout": "row",
+      "uniformScale": 0.2534013605442177,
+      "canvas": [
+        128,
+        160
+      ],
+      "frames": 6,
+      "fps": 4.5,
+      "deterministicNormalizationRerun": true,
+      "draft": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_sit_front_f6.png",
+      "draftSha256": "ab7bdc63c78dbebdbdf8010fda7593cb42ae805b5e2d2a2e10fccaea6e7f4788",
+      "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_sit_front_f6.json",
+      "sidecarSha256": "dfd2046d1af962727520942954b862c5fa0fc39cee7171e5047fb13c79c23585",
+      "preview": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_artist_smock_sit_front-preview.gif",
+      "previewSha256": "79bce7b468917c438bae1140be9c210f228925c5769866dddc968ca5f54b3429",
+      "comparisonPreview": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_artist_smock_sit_front-comparison.gif",
+      "comparisonPreviewSha256": "659032fe450d303891f9cf16832d0da7b843ef62ed838f0dd6ad9beb1ab6f340",
+      "binaryAlpha": true,
+      "opaqueBorderPixelCount": 0,
+      "frameHashes": [
+        "81698546232a33b68610e0f2ba9a50f652c869fc0bad36bc0a4b76b26de2041a",
+        "a5449d1bcc4bdf0a11d7ac892ca2fc2028e5e23e28c5cc8bc1d0ee30ae17766d",
+        "2c3e76420516569a55e3bd620ca42c7576b93a57110418740440c5467c81f5ee",
+        "602d0e153046f598f4ef83a3209acb081369c0967b4c1d174f6d7cee9d0bc9c8",
+        "791360c399b7d7019862cbf9e20a1d59e51f6be1dea26a8285059b2628d2a4b9",
+        "9e05414aee41a9fbf3040410e6353832079c9a4da9bed86da7cabe47c680c47b"
+      ],
+      "generation": {
+        "method": "built-in image generator; referenced-image identity-preserve mode",
+        "prompt": {
+          "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/prompts/keeper_artist_smock_sit_front.txt",
+          "sha256": "bd8a3e3e8b2e632912cf472550a3e699da71cb028e56f34b8ef6e067236bbab4"
+        },
+        "inputs": [
+          {
+            "path": "art/drafts/keeper-canon-model-pack-artist-smock-2026-10-11-v10/generated/artist-smock-fresh-source.png",
+            "sha256": "0101b38c45a406cbe49dd5cbca4da0fd1592a7b185807afbb5f98bd898af937b"
+          },
+          {
+            "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/generated/keeper_artist_smock_walk-source.png",
+            "sha256": "01270fbbc694986bab3a3f41b206e28f7553ce124c6da9f0856dc58b9453aa99"
+          },
+          {
+            "path": "art/source/keeper-first-batch/keeper-sit-front-generated-source.png",
+            "sha256": "606d59765d254276edb2c852fae667353c90262f109e370f3ed7ee42e3d78509"
+          }
+        ]
+      }
+    },
+    "keeper_paint_side": {
+      "source": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/generated/keeper_paint_side-source.png",
+      "sourceSha256": "648ec7a9224f28960d9f9aa830c9e201ddd89fac90a1492121e0a8edacdbf995",
+      "reference": "art/raw/keeper-first-batch/keeper_paint_side_f8.png",
+      "referenceSha256": "dd64a8592a567adc20a703e77e4b052b02bc7c42181d8a5b53590883460c1202",
+      "layout": "grid4x2",
+      "uniformScale": 0.32286995515695066,
+      "canvas": [
+        160,
+        192
+      ],
+      "frames": 8,
+      "fps": 4,
+      "deterministicNormalizationRerun": true,
+      "draft": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_paint_side_f8.png",
+      "draftSha256": "3cf424326da7394357c12845c7e10ce21af0efc09777cade72c1672357be610f",
+      "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_paint_side_f8.json",
+      "sidecarSha256": "6a4ceedbe638e67296506666f4bc2a8638d8dc4c8384ea9ebac8e0040baafa99",
+      "preview": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_paint_side-preview.gif",
+      "previewSha256": "8b79ae844e77757356488196f0d104826ee0db27ae9e416782f830a5a202a1dd",
+      "comparisonPreview": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_paint_side-comparison.gif",
+      "comparisonPreviewSha256": "1ab38cf13d4cfa2ba0c2ab934e1c47f141c6f27aaec7be911908f319b6d9949d",
+      "binaryAlpha": true,
+      "opaqueBorderPixelCount": 0,
+      "frameHashes": [
+        "10ba8b7c61ce6eb1b46f5b3063a46742807a68bc015b2e1d71869bf2ba11e442",
+        "87fe29babfc8c012015f37dee0ef7c820cf0569602f4af42a6a106e03f30ef20",
+        "fc4a04180cee8ed1e9d322c642152891085981980f9df5022c1e94b0b3e98338",
+        "00860210774e55259d6cb17bf59bc2d611239712f2c9f68d298ef3cbfd80b00a",
+        "3602d5778d27c8a28a0d6e4ff472bcfeb91e606b950e2d126f7af1e4eb183256",
+        "d32303c3f87947348fa39aae41ecc2f24f565860c5449a876af7fe969312230a",
+        "b66c4fdd9b13dd9bc04a5185674d0abc9e91e5863c75ac4ef420d5b83b706703",
+        "e17a1f7777131d1727a2f37b99425190c4260c1ed5469ee459e55a544c626ac4"
+      ],
+      "generation": {
+        "method": "built-in image generator; referenced-image identity-preserve mode",
+        "prompt": {
+          "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/prompts/keeper_paint_side.txt",
+          "sha256": "7a6244a499779e8116f13fb0396c076f96d7da38f58a0589425f89db4081bf07"
+        },
+        "inputs": [
+          {
+            "path": "art/drafts/keeper-canon-model-pack-artist-smock-2026-10-11-v10/generated/artist-smock-fresh-source.png",
+            "sha256": "0101b38c45a406cbe49dd5cbca4da0fd1592a7b185807afbb5f98bd898af937b"
+          },
+          {
+            "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/generated/keeper_artist_smock_walk-source.png",
+            "sha256": "01270fbbc694986bab3a3f41b206e28f7553ce124c6da9f0856dc58b9453aa99"
+          },
+          {
+            "path": "art/source/keeper-first-batch/keeper-paint-side-generated-source.png",
+            "sha256": "e17828be00a0274fca4e3b7e6c984b4b5f0fb8598e78b3be5d91a2b2782528ef"
+          }
+        ]
+      }
+    },
+    "keeper_paint_back": {
+      "source": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/generated/keeper_paint_back-source.png",
+      "sourceSha256": "08abdd1ae75fb8c00fb8a9f38b6762233eb9dc770f03211dc9049c69f40159ea",
+      "reference": "art/raw/keeper-first-batch/keeper_paint_back_f8.png",
+      "referenceSha256": "34eb90f54035b63615a395c95d7677645324dba13fb106cc61fe744b232435e7",
+      "layout": "grid4x2",
+      "uniformScale": 0.36432160804020103,
+      "canvas": [
+        160,
+        192
+      ],
+      "frames": 8,
+      "fps": 4,
+      "deterministicNormalizationRerun": true,
+      "draft": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_paint_back_f8.png",
+      "draftSha256": "0395c4db55062516df1eaf752dfe81e093f2186886e6e191eb1730b658659e85",
+      "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_paint_back_f8.json",
+      "sidecarSha256": "6a4ceedbe638e67296506666f4bc2a8638d8dc4c8384ea9ebac8e0040baafa99",
+      "preview": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_paint_back-preview.gif",
+      "previewSha256": "cc99e298f768977c7421abf848056bac5f80e87aca3d4782fe96b1df4c425588",
+      "comparisonPreview": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_paint_back-comparison.gif",
+      "comparisonPreviewSha256": "9a87bef550fe5cdc3c453bfa72948f95aba0a782cda5bf7f875e99f46c85c29b",
+      "binaryAlpha": true,
+      "opaqueBorderPixelCount": 0,
+      "frameHashes": [
+        "707443fe14fb045af82f2a03a49baa728d62964b5a589d9637c30b750e870537",
+        "f3ebb8908012fc69eb11cd34be457a36beac90315082345ea082c8425aaa9965",
+        "8f3c98658ebac828be6950b043279c2a77ab5b2434665f3b164b299d322c765c",
+        "bc3965065fb2a31110e98702a6ac7df0eef931bcbeb95a936664423602946912",
+        "a9a84e12defe824b50249824f2a6c9bb7dec1edd0f0dad5d7b9e2f33a81af544",
+        "600a835e71603437796ffa38e9426754b8601564651e7a99a9a44cafb8591d1d",
+        "8094bb3440c7c0237bd6c1dc3164d606a3affa8e6ebc73823d62cb7e120d1e23",
+        "dec3079344697a9ef26d3194073fed8c49a22f4bcadc591210cecb4bce0d9cbd"
+      ],
+      "generation": {
+        "method": "built-in image generator; referenced-image identity-preserve mode",
+        "prompt": {
+          "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/prompts/keeper_paint_back.txt",
+          "sha256": "4b5de9ffbf24d2f02fe6c2c97221f7dadcb68a82be9911e9b39cb55f4f636c86"
+        },
+        "inputs": [
+          {
+            "path": "art/drafts/keeper-canon-model-pack-artist-smock-2026-10-11-v10/generated/artist-smock-fresh-source.png",
+            "sha256": "0101b38c45a406cbe49dd5cbca4da0fd1592a7b185807afbb5f98bd898af937b"
+          },
+          {
+            "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/generated/keeper_artist_smock_turn_back-source.png",
+            "sha256": "5c29f0ec65fc536f7153f5d3b2070790781f2dec8ee2ccf1d45e10eaf40146bb"
+          },
+          {
+            "path": "art/source/keeper-first-batch/keeper-paint-back-generated-source.png",
+            "sha256": "ba0f13a1e69ffc5988bc6b9434acbcec120047a2fcecbc7ce0399c4a94b062d8"
+          }
+        ]
+      }
+    },
+    "keeper_pottery_front": {
+      "source": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/generated/keeper_pottery_front-source.png",
+      "sourceSha256": "d987310ed9b5a920dd0627e11a8b8f9a79864c7f4b3cb729fffad717cee9dfc8",
+      "reference": "art/raw/keeper-first-batch/keeper_pottery_front_f8.png",
+      "referenceSha256": "9ca3e4702ff6e7d89793dea289a994f0d44ae6b8cac573c862253fe965e6d531",
+      "layout": "row",
+      "uniformScale": 0.2545454545454545,
+      "canvas": [
+        160,
+        160
+      ],
+      "frames": 8,
+      "fps": 4,
+      "deterministicNormalizationRerun": true,
+      "draft": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_pottery_front_f8.png",
+      "draftSha256": "2fac8fb3c10b92df68efa0c365cdba0e83736caed14903246bd5babd8a288c95",
+      "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_pottery_front_f8.json",
+      "sidecarSha256": "48709bb701680f7e46aad5a4657d05361adf3c311c505e42d6a913ed4d349e07",
+      "preview": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_pottery_front-preview.gif",
+      "previewSha256": "dc62bd4fbeb3c1076ca6bcc45f0a6bcc532d15cf0189bccb91eb4f3d6eeee731",
+      "comparisonPreview": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/keeper_pottery_front-comparison.gif",
+      "comparisonPreviewSha256": "ded1a35c0e3889dceb690bbe44cda701dce22c3635121f8946d1ce840c70d7a6",
+      "binaryAlpha": true,
+      "opaqueBorderPixelCount": 0,
+      "frameHashes": [
+        "08491a623facd634d1e7feb9420d744cb02afc3f72c2964fb3af343c238651c5",
+        "9172d71c8ceca974574ea38506251f9c75a99e654e6307d77dac3027d9d30dd6",
+        "b6511662d552617d7c8d85a6ddc39fec6618d20883170dc870a92e2d161e0633",
+        "dabe9075486158b99314ef9bd226b18ac90d2bbcd9e66bb9880821f235c17158",
+        "f9c1e8ff218f46724ddc2e0728d59cb42f72cbe0c11ea947273d3e3b9f983194",
+        "d8be29ffed5f6f65b03b9fc9c26cbef4ea2c5895634fef0c40d5908b09a1a93a",
+        "c915f1ea9019090bd0c3bfa8c99da1dd63eabcb33de2f92f16e317bd46372a85",
+        "4144490a26cb477236623698ed33c9c5c0b706b6458bf5ca729b85f1f2034542"
+      ],
+      "generation": {
+        "method": "built-in image generator; referenced-image identity-preserve mode",
+        "prompt": {
+          "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/prompts/keeper_pottery_front.txt",
+          "sha256": "0212fdc74657bf2efb5582cb8662010ea0e8605cfc72ef80c4413c386e977948"
+        },
+        "inputs": [
+          {
+            "path": "art/drafts/keeper-canon-model-pack-artist-smock-2026-10-11-v10/generated/artist-smock-fresh-source.png",
+            "sha256": "0101b38c45a406cbe49dd5cbca4da0fd1592a7b185807afbb5f98bd898af937b"
+          },
+          {
+            "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/generated/keeper_artist_smock_sit_front-source.png",
+            "sha256": "e41b59335896b841ac900c0181f1ead395ca75e8ea746d30def8c15b448e2f00"
+          },
+          {
+            "path": "art/source/keeper-first-batch/keeper-pottery-front-generated-source.png",
+            "sha256": "7754fc20060be633bd3ce5821489c5be5b4e865743d1f91514a13a04d4e46c4d"
+          }
+        ]
+      }
+    }
+  },
+  "derivedAssets": {
+    "keeper_artist-smock_neutral_standing-side-right": {
+      "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_standing-side-right_f1.png",
+      "sha256": "10359a618c07f88917b2bbc80ef5d285d249e0f318bae71a91504d721c6c9a81",
+      "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_standing-side-right_f1.json",
+      "sidecarSha256": "10e53758701d6fd3b41330c25c01b198f5214f83dae84c4630096a3be5085b41",
+      "frameHash": "357841ac891c26652713b0d364b0633ddb4e5a638191b2d077091eda02156165"
+    },
+    "keeper_artist-smock_neutral_standing-side-left": {
+      "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_standing-side-left_f1.png",
+      "sha256": "4f0ba91355c6f345b1b3e27cfae8620d84a9266af618ce8113de2e630e03a5d7",
+      "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_standing-side-left_f1.json",
+      "sidecarSha256": "59fcc7bca4e628b893b58f92f5af8cbcb5b7b3a3e277a44d86cb2e92bef887fd",
+      "frameHash": "c5eb4953538e2d87badd3487629e38029a427668846ea445915860aedb6393c9"
+    },
+    "keeper_artist-smock_neutral_standing-front": {
+      "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_standing-front_f1.png",
+      "sha256": "14c70ab69c9cb558d1a7b9b092425718a43269ea8fb2a20ad3d64638d30ea17a",
+      "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_standing-front_f1.json",
+      "sidecarSha256": "9b5ca57f9b88b43056a7dcc0a192a3f7eebfc67b27d87fd054896ea0646f201e",
+      "frameHash": "81698546232a33b68610e0f2ba9a50f652c869fc0bad36bc0a4b76b26de2041a"
+    },
+    "keeper_artist-smock_neutral_standing-back": {
+      "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_standing-back_f1.png",
+      "sha256": "690aba1b93f1910b9a7ff351e8db3ba4f2a737018c3705715ecf394ff44abda3",
+      "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_standing-back_f1.json",
+      "sidecarSha256": "0b611097087caef216399324b82c0b55408ecda3c617c319a50f26a74c7cfede",
+      "frameHash": "d0da0dafc8d47a293147ce3a2f7f674eb406fe379ea6cffec04e6ff97a2112c4"
+    },
+    "keeper_artist-smock_neutral_sitting-front": {
+      "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_sitting-front_f1.png",
+      "sha256": "81535f9f89ebb04e71b59a00a0e7ece45c05ea9f8a47d7782273d9095aef299d",
+      "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_sitting-front_f1.json",
+      "sidecarSha256": "d1b24b983bd77e45e3f5537f3f0010c5684ac3d9c0da2f4c97abb9a0bc6ba28e",
+      "frameHash": "9e05414aee41a9fbf3040410e6353832079c9a4da9bed86da7cabe47c680c47b"
+    },
+    "keeper_artist_smock_walk_start": {
+      "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_walk_start_f5.png",
+      "sha256": "71a0489d41f469f3e3e9c476fba6cc712a4d36fbdc67db0abb0118b13f6cb291",
+      "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_walk_start_f5.json",
+      "sidecarSha256": "c0135cd114c0da2a201128294789aab6a39e1bf07767e736f432846f6b3612b2",
+      "frameHashes": [
+        "357841ac891c26652713b0d364b0633ddb4e5a638191b2d077091eda02156165",
+        "4be20e7289e0a94cc1b4957073137ab70067cacbb7acfd8197a998dc1a5cdd12",
+        "05ce2468a412cfa5e7f5df278b14578f9c6c9f17fc3f80255a11600ea374a5e7",
+        "6205ef0258d41a69ed5214c6dd60b1c0b75b77cda27f1ee5d6ff3fa67db90614",
+        "357841ac891c26652713b0d364b0633ddb4e5a638191b2d077091eda02156165"
+      ]
+    },
+    "keeper_artist_smock_walk_stop": {
+      "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_walk_stop_f5.png",
+      "sha256": "9de2f400c3d7505dee8dabac778e47ed49d0c125610afb396c5f99bd0dc248cb",
+      "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_walk_stop_f5.json",
+      "sidecarSha256": "4db9fee4976e743b7c2f785edca9a5ca0bc8a75329bb753efcbf7d13071bbef4",
+      "frameHashes": [
+        "357841ac891c26652713b0d364b0633ddb4e5a638191b2d077091eda02156165",
+        "88c0678e7ecb6812da4c11e3dfffe6f33edb552b9bd3c2d3361d8bb3c8d5e825",
+        "e4d896be00759b3cd6ef3a8fe455fc6a5197f06059bd33a0f9fabca00dc49301",
+        "17966c040118f93693636b91ff6623cad1629add2b02974be0029cd596e9f729",
+        "357841ac891c26652713b0d364b0633ddb4e5a638191b2d077091eda02156165"
+      ]
+    },
+    "keeper_artist_smock_walk_cycle": {
+      "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_walk_cycle_f9.png",
+      "sha256": "b3a294bd8114c47eaed453e570a25b9e9e9ec7ed07a7f8881dc7687aa9bdf5b8",
+      "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist_smock_walk_cycle_f9.json",
+      "sidecarSha256": "4d70041f4c5917cb49f57d660a3d036b1c11afa3dd689eb4727e5b33aa813ad3",
+      "frameHashes": [
+        "357841ac891c26652713b0d364b0633ddb4e5a638191b2d077091eda02156165",
+        "4be20e7289e0a94cc1b4957073137ab70067cacbb7acfd8197a998dc1a5cdd12",
+        "05ce2468a412cfa5e7f5df278b14578f9c6c9f17fc3f80255a11600ea374a5e7",
+        "6205ef0258d41a69ed5214c6dd60b1c0b75b77cda27f1ee5d6ff3fa67db90614",
+        "fd36c272618155516094ec62654df62511bba91cfd634f7df1db0ad9185bad5b",
+        "88c0678e7ecb6812da4c11e3dfffe6f33edb552b9bd3c2d3361d8bb3c8d5e825",
+        "e4d896be00759b3cd6ef3a8fe455fc6a5197f06059bd33a0f9fabca00dc49301",
+        "17966c040118f93693636b91ff6623cad1629add2b02974be0029cd596e9f729",
+        "357841ac891c26652713b0d364b0633ddb4e5a638191b2d077091eda02156165"
+      ]
+    }
+  },
+  "seams": {
+    "turnFrontLastEqualsSitFrontFirst": true,
+    "preferredAuthority": "keeper_artist_smock_sit_front frame 1",
+    "turnBackFirstEqualsWalkNeutral": true,
+    "turnFrontFirstEqualsWalkNeutral": true
+  },
+  "overview": {
+    "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/artist-smock-family-overview.png",
+    "sha256": "8a1bd21e19f266d373681a57ef3bcdfbe799263c070500e75c45de659f8d6eba"
+  },
+  "frontSeamProof": {
+    "path": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/front-transition-seam-proof.png",
+    "sha256": "b7fb74a59cb10e25b09bf001232085cc3ff5b6a1e9cb166ea03828367bddbeb1"
+  },
+  "scopeGate": {
+    "authoredAnimations": 7,
+    "manifestFamilyEntriesCovered": 15,
+    "productionFilesChanged": false,
+    "registered": true,
+    "promoted": false,
+    "committed": false,
+    "pushed": false,
+    "reviewerAuthoredAnimations": 7,
+    "reviewerTechnicalDerivativesExcluded": 8
+  }
+}

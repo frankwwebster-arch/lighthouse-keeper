@@ -66,6 +66,48 @@
       "status": "promoted-review-draft",
       "label": "Previous version",
       "register": "art/drafts/keeper-user-selected-batch-2026-10-10-v1/keeper_parachute_landing/draft-register.json"
+    },
+    {
+      "name": "keeper_artist_smock_walk",
+      "status": "active-review-draft",
+      "label": "V11 consistent artist set",
+      "register": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/registers/keeper_artist_smock_walk.json"
+    },
+    {
+      "name": "keeper_artist_smock_turn_back",
+      "status": "active-review-draft",
+      "label": "V11 consistent artist set",
+      "register": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/registers/keeper_artist_smock_turn_back.json"
+    },
+    {
+      "name": "keeper_artist_smock_turn_front",
+      "status": "active-review-draft",
+      "label": "V11 consistent artist set",
+      "register": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/registers/keeper_artist_smock_turn_front.json"
+    },
+    {
+      "name": "keeper_artist_smock_sit_front",
+      "status": "active-review-draft",
+      "label": "V11 consistent artist set",
+      "register": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/registers/keeper_artist_smock_sit_front.json"
+    },
+    {
+      "name": "keeper_paint_side",
+      "status": "active-review-draft",
+      "label": "V11 consistent artist set",
+      "register": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/registers/keeper_paint_side.json"
+    },
+    {
+      "name": "keeper_paint_back",
+      "status": "active-review-draft",
+      "label": "V11 consistent artist set",
+      "register": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/registers/keeper_paint_back.json"
+    },
+    {
+      "name": "keeper_pottery_front",
+      "status": "active-review-draft",
+      "label": "V11 consistent artist set",
+      "register": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/registers/keeper_pottery_front.json"
     }
   ]
 }

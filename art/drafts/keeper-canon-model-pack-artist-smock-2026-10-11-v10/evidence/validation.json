@@ -1,0 +1,323 @@
+{
+  "status": "reference-preparation-only",
+  "scope": "all nine accepted canonical/contract Keeper pose models",
+  "productionFilesChanged": false,
+  "models": [
+    {
+      "pose": "standing-side-right",
+      "clip": "keeper_walk",
+      "frame": 2,
+      "role": "contract neutral",
+      "source": "art/raw/keeper-first-batch/keeper_walk_f8.png",
+      "sourceSha256": "03df0efc1f028e139e5c9ca9cf1746a45496887a565f5290c38ad6a4b66fe6b1",
+      "sidecar": "art/raw/keeper-first-batch/keeper_walk_f8.json",
+      "sidecarSha256": "c35e887dadff50261517f7fff2c4cf51cf5ec50e9be5ea9071252879b385a4f9",
+      "canvas": [
+        128,
+        160
+      ],
+      "opaqueBounds": [
+        31,
+        8,
+        96,
+        158
+      ],
+      "binaryAlpha": true,
+      "modelFile": "models/standing-side-right.png",
+      "modelSha256": "7a80ddd33783ef658f67f60efbe887edbdf9c69e2b3b873cc87f0bc7a112073b",
+      "outlineFile": "outlines/standing-side-right-outline.png",
+      "outlineSha256": "ee6f5be6abb95dccac0ff31807f5a4f5826dbea74f62ac69b732bb2aea72c893"
+    },
+    {
+      "pose": "standing-front",
+      "clip": "keeper_wave_camera",
+      "frame": 0,
+      "role": "reviewer ghost",
+      "source": "art/raw/keeper-first-batch/keeper_wave_camera_f8.png",
+      "sourceSha256": "67f15961780deeb7e42a7633e67937429a1ac6d0b6b61e9b750bd84bcb20bbd1",
+      "sidecar": "art/raw/keeper-first-batch/keeper_wave_camera_f8.json",
+      "sidecarSha256": "8041180a74daac32c8ce40a08b416badfe120db4877eb4a157f239406ceea2b6",
+      "canvas": [
+        128,
+        160
+      ],
+      "opaqueBounds": [
+        26,
+        10,
+        102,
+        158
+      ],
+      "binaryAlpha": true,
+      "modelFile": "models/standing-front.png",
+      "modelSha256": "ad5e09588967fdb322100725493760ccd0e8d81399d2ee73fa244c03358e317b",
+      "outlineFile": "outlines/standing-front-outline.png",
+      "outlineSha256": "72dda67c9cf27bca703760ce1bb8a27e838af2c27935ae8d45e8a47b17c0b394"
+    },
+    {
+      "pose": "standing-back",
+      "clip": "keeper_turn_back",
+      "frame": 5,
+      "role": "reviewer ghost / contract neutral",
+      "source": "art/raw/keeper-first-batch/keeper_turn_back_f6.png",
+      "sourceSha256": "b950027233b2005897fcc2056f993ff0d9d38c1f4501b60ad31d1c6cba29b635",
+      "sidecar": "art/raw/keeper-first-batch/keeper_turn_back_f6.json",
+      "sidecarSha256": "4049f42de4f63365c50455eebd6562fb1579f44895f037c0f11df31c6e03fc98",
+      "canvas": [
+        128,
+        160
+      ],
+      "opaqueBounds": [
+        19,
+        6,
+        108,
+        158
+      ],
+      "binaryAlpha": true,
+      "modelFile": "models/standing-back.png",
+      "modelSha256": "5055d40a6d68201a7a4fad98ca03896ce8137168f6db3d0c40006db086b21ba6",
+      "outlineFile": "outlines/standing-back-outline.png",
+      "outlineSha256": "66548d07b41ce3c37e95dd7cae0d88993731d8eda71709245550f3a865fe98b4"
+    },
+    {
+      "pose": "sitting-side-right",
+      "clip": "keeper_sit_side",
+      "frame": 5,
+      "role": "reviewer ghost / contract neutral",
+      "source": "art/raw/keeper-first-batch/keeper_sit_side_f6.png",
+      "sourceSha256": "b5030c9ef9758bb684370a85178f6456ef0244f3221ac0adc5f8418eb131b7f5",
+      "sidecar": "art/raw/keeper-first-batch/keeper_sit_side_f6.json",
+      "sidecarSha256": "516585fff4d527f233624cd74e38c22e28bc1e1db572dca12e2dc7432ad5b2d1",
+      "canvas": [
+        128,
+        160
+      ],
+      "opaqueBounds": [
+        24,
+        26,
+        104,
+        158
+      ],
+      "binaryAlpha": true,
+      "modelFile": "models/sitting-side-right.png",
+      "modelSha256": "d0794ad81baeef6c7d3771e3fb1bc7913a9e6cf5c6aa0c65fd6823c45a50a531",
+      "outlineFile": "outlines/sitting-side-right-outline.png",
+      "outlineSha256": "d1b0455b9eefb0cc9bec56a7f822e483728ad4b9ec0a1c40589f23c638380cbc"
+    },
+    {
+      "pose": "sitting-front",
+      "clip": "keeper_sit_front",
+      "frame": 5,
+      "role": "reviewer ghost / contract neutral",
+      "source": "art/raw/keeper-first-batch/keeper_sit_front_f6.png",
+      "sourceSha256": "70885b36d108ffb891244bf896eacea804e38970ab82a917706eb371866db3e2",
+      "sidecar": "art/raw/keeper-first-batch/keeper_sit_front_f6.json",
+      "sidecarSha256": "9a0eebaa51440bdcef83ee7d78ea9ab451d8eaac427d646f5403c7bdcf6c41a5",
+      "canvas": [
+        128,
+        160
+      ],
+      "opaqueBounds": [
+        28,
+        29,
+        99,
+        158
+      ],
+      "binaryAlpha": true,
+      "modelFile": "models/sitting-front.png",
+      "modelSha256": "0bb1a01d255ebb3c386cd671d2055c8325be1534801a10300a3a66b3a2942263",
+      "outlineFile": "outlines/sitting-front-outline.png",
+      "outlineSha256": "1117fa141c5f3f999c8bb7fe023047595c89862bd15191b0c7a4369b7f6125c5"
+    },
+    {
+      "pose": "sitting-back",
+      "clip": "keeper_sit_back",
+      "frame": 5,
+      "role": "reviewer ghost / contract neutral",
+      "source": "art/raw/keeper-first-batch/keeper_sit_back_f6.png",
+      "sourceSha256": "b797513b67a6890f2af18eff088b583d6e7c2916e8a4ad9d8f926745135ec936",
+      "sidecar": "art/raw/keeper-first-batch/keeper_sit_back_f6.json",
+      "sidecarSha256": "e4b960d614687e5488aa025c7c39ba09e313624b07ad53dde6d480728ebf6ba4",
+      "canvas": [
+        136,
+        160
+      ],
+      "opaqueBounds": [
+        26,
+        26,
+        110,
+        158
+      ],
+      "binaryAlpha": true,
+      "modelFile": "models/sitting-back.png",
+      "modelSha256": "1503291ef9026bb440a9b23934cbebcc547738e472cc32e2b85ff9a8a6ab704b",
+      "outlineFile": "outlines/sitting-back-outline.png",
+      "outlineSha256": "73de244187a41e0ce97e3653efa5c666f727ee8754c8acc12503247e22cadc0e"
+    },
+    {
+      "pose": "sitting-rear-right",
+      "clip": "keeper_watch_tv",
+      "frame": 0,
+      "role": "contract neutral",
+      "source": "art/raw/keeper-first-batch/keeper_watch_tv_f8.png",
+      "sourceSha256": "c9f7a740d8e07cec1f8f78371f12b7cb02e68bec754440a0f4b7f8b0e96822a1",
+      "sidecar": "art/raw/keeper-first-batch/keeper_watch_tv_f8.json",
+      "sidecarSha256": "e09e2d8f0f1dd114122dcf989c88e512511f4c7eef47c8597ca37bfd7285cead",
+      "canvas": [
+        136,
+        160
+      ],
+      "opaqueBounds": [
+        34,
+        26,
+        113,
+        158
+      ],
+      "binaryAlpha": true,
+      "modelFile": "models/sitting-rear-right.png",
+      "modelSha256": "d117406398594e0f45603cbd85e3e6774fd66aadd5207919e902f9fb3a1f6083",
+      "outlineFile": "outlines/sitting-rear-right-outline.png",
+      "outlineSha256": "8d0e93ddcd56c4943328a52e7bcdd61493ce51fba5c34dbe913b5e8208761a35"
+    },
+    {
+      "pose": "crouching-back",
+      "clip": "keeper_crouch_work_back",
+      "frame": 3,
+      "role": "contract neutral",
+      "source": "art/raw/keeper-first-batch/keeper_crouch_work_back_f8.png",
+      "sourceSha256": "c6b9e016a77695aad9c3932286baab26848e6872fbefe9e4e6fdaede604726f1",
+      "sidecar": "art/raw/keeper-first-batch/keeper_crouch_work_back_f8.json",
+      "sidecarSha256": "22d34a52570242edbb2b1a28a83dc449d6c5f35a796373bf2449f73a033ae222",
+      "canvas": [
+        144,
+        160
+      ],
+      "opaqueBounds": [
+        23,
+        42,
+        119,
+        158
+      ],
+      "binaryAlpha": true,
+      "modelFile": "models/crouching-back.png",
+      "modelSha256": "f0ca85694f953ecc1359c4d1c06a0600321f461f9a48300684e6db86ad37387b",
+      "outlineFile": "outlines/crouching-back-outline.png",
+      "outlineSha256": "ca0805cc7d260a4994651f106558de7118b2978983fadc4868b415c1be3b743a"
+    },
+    {
+      "pose": "holding-small-object-side-right",
+      "clip": "keeper_pick_vegetable",
+      "frame": 7,
+      "role": "contract endpoint",
+      "source": "art/raw/keeper-first-batch/keeper_pick_vegetable_f8.png",
+      "sourceSha256": "9027c75c9ff0d64f0a9947f4d6cc55f528b6677dafd71a0e55c96cb20d9a66c5",
+      "sidecar": "art/raw/keeper-first-batch/keeper_pick_vegetable_f8.json",
+      "sidecarSha256": "342b0f0171f95efb438ac7b3b33bc59f47ece9eec5b23a5281ed1845c0d70dea",
+      "canvas": [
+        140,
+        160
+      ],
+      "opaqueBounds": [
+        39,
+        12,
+        109,
+        158
+      ],
+      "binaryAlpha": true,
+      "modelFile": "models/holding-small-object-side-right.png",
+      "modelSha256": "7a872b66395c58a7da52209eaf20443e8eeaba38fd98a88b02eb3a02cc37c4dd",
+      "outlineFile": "outlines/holding-small-object-side-right-outline.png",
+      "outlineSha256": "01ecd0bf534752480b7b8f8725f9d172c12bbe5434fc735efacc7464fbcbdd59"
+    }
+  ],
+  "sheet": {
+    "path": "evidence/canon-model-pack.png",
+    "sha256": "9ebf6124ffa2fe53ebbfbd065e5abb0aed5df0c0acba08c05253f5da6f48eb20"
+  },
+  "generation": {
+    "method": "built-in image generator; referenced-image identity-preserve mode",
+    "source": {
+      "path": "generated/artist-smock-fresh-source.png",
+      "sha256": "0101b38c45a406cbe49dd5cbca4da0fd1592a7b185807afbb5f98bd898af937b"
+    },
+    "prompt": {
+      "path": "PROMPT.txt",
+      "sha256": "5e120f1f3c0ba8c38b2f4488a02f1530928729e82eed35a7533b744005c14f19"
+    },
+    "referencedInputs": [
+      {
+        "path": "art/drafts/keeper-canon-model-pack-artist-smock-2026-10-11-v10/evidence/canon-model-pack.png",
+        "sha256": "9ebf6124ffa2fe53ebbfbd065e5abb0aed5df0c0acba08c05253f5da6f48eb20"
+      },
+      {
+        "path": "art/source/keeper-first-batch/keeper-turnaround-source.png",
+        "sha256": "4a5778d663b69a8368348101f9a84475f19cfcc746f6ba2230706be06d673988"
+      },
+      {
+        "path": "art/source/keeper-first-batch/keeper-walk-generated-source.png",
+        "sha256": "637b3c4e66b4019730eaa7354812b18df788aedc4ab3e3b7c619589854e0da5f"
+      }
+    ],
+    "selectedCandidateCount": 1
+  },
+  "normalization": {
+    "sourceForegroundThreshold": 32,
+    "sourceForegroundBounds": [
+      226,
+      122,
+      782,
+      1420
+    ],
+    "sourceForegroundSize": [
+      556,
+      1298
+    ],
+    "uniformScale": 0.11556240369799692,
+    "normalizedForegroundSize": [
+      64,
+      150
+    ],
+    "placement": [
+      32,
+      8
+    ],
+    "canvas": [
+      128,
+      160
+    ],
+    "opaqueBounds": [
+      32,
+      8,
+      96,
+      158
+    ],
+    "binaryAlpha": true,
+    "opaqueBorderPixelCount": 0,
+    "aspectRatioSource": 0.4283513097072419,
+    "aspectRatioNormalized": 0.4266666666666667,
+    "deterministicRerun": true,
+    "output": {
+      "path": "drafts/artist-smock-first-frame-normalized.png",
+      "sha256": "d9caf0cde0f42212e21797c7e84148eb91f75df55d8dc0dcfb5dfb0ba5c24d46"
+    }
+  },
+  "reviewEvidence": {
+    "sourceView": {
+      "path": "evidence/artist-smock-source-view.png",
+      "sha256": "85235f6e906c58e742a964a799ee543ba70e131e7edeeb52eb0d2c350d8657b9"
+    },
+    "nativeComparison": {
+      "path": "evidence/artist-smock-native-comparison.png",
+      "sha256": "824375a98598782e50c764e06c69d3a698edd5bcdf7be1095797f33ca5812f8e"
+    }
+  },
+  "scopeGate": {
+    "generatedCharacters": 1,
+    "outfit": "artist-smock",
+    "animationFramesStarted": 0,
+    "otherCostumesStarted": 0,
+    "registered": false,
+    "promoted": false,
+    "committed": false,
+    "pushed": false
+  }
+}

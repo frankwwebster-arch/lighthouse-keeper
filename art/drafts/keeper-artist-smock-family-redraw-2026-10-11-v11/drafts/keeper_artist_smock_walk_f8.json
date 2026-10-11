@@ -1,0 +1,14 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "outfit": "artist-smock",
+  "draft": true
+}

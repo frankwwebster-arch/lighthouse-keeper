@@ -277,6 +277,16 @@ phase-aware walk-stop, facing/posture bridges, action entry/loop/exit and the
 return to walking. The full required graph and current gaps are in
 `docs/KEEPER_ANIMATION_HANDOFF.md`.
 
+Special-outfit art is accepted as a complete internally consistent room family:
+because the outfit swap occurs under full-body door occlusion, a small visual
+difference between standard uniform and the special family is tolerable at that
+hidden boundary. It is not tolerable inside the family—visible same-outfit
+end/start pairs must share the declared whole frame. Standard-uniform actions
+must continue to match `keeper_walk` directly because the approach and action
+join are visible. In particular, preserve its head, rectangular eye, angular
+nose, full stepped beard, hands and body ratios rather than accepting a
+near-match from a one-off activity render.
+
 Use `docs/keeper-scale-audit/review.html` to test those recipes before they are
 wired into gameplay. Its raw-seam mode appends an action directly to the final
 four frames of the matching same-outfit walk, deliberately exposing jumps. Its

@@ -1,4 +1,4 @@
-# Lighthouse Keeper: status write-up (10 Oct 2026)
+# Lighthouse Keeper: status write-up (11 Oct 2026)
 
 ## What it is
 A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthouse; kids type commands (typo-tolerant, curated, no live AI) or click objects (Sims-style menus, auto-zoom camera). Needs and mood, credits, phone, bedtime, multi-day play, a day report, quiz pop-ins, time-aware chat, cheeky humour.
@@ -44,6 +44,13 @@ JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
 1. The evidence-based beard/hand audit classifies every manifest frame and pins `keeper_clear_snow` as the canonical fuller stepped beard. A landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It remains fail-closed for unavailable evidence: 163 side-on standing/sitting sheets are inventoried, eight zero-difference reference self-comparisons match, and 994 different-pose frames—including `keeper_darts` 3–6—are non-comparable because no approved beard masks, facial landmarks or hand-depth/component evidence exists. Frank reviewed Darts 3–6 visually on 11 October and accepted the beards with no amendment required; no beard draft is active or promotable. Next, use GPT-5.6 Sol to establish comparison inputs for any future claim, then run the later frame-isolation and released-prop audits.
 2. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. Frank's immutable second visual review recorded 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed; the current reviewer has 97 Happy and 67 Awaiting after Frank selected the Darts draft as his preferred candidate. Frank's saved per-animation width and height remain final production art direction.
+   The complete internally consistent V11 artist-smock family is now preserved
+   as seven active authored-animation comparisons plus eight deterministic
+   technical neutral/bridge assets. Its front-turn final frame is byte-identical
+   to the preferred front-sit first frame. Production remains unchanged until
+   Frank selects the exact-name candidates in the reviewer. A same-day snooker
+   study was rejected because it did not retain the canonical `keeper_walk`
+   beard; no snooker draft is active.
 3. Art for the mission floors (aquarium, weather station, hidden lair), their furniture, the lift and a floor-arrival effect (Codex; hooks in docs/FOR_CODEX.md).
 4. Tier art for upgrades (Codex; list in docs/FOR_CODEX.md). Typed commands for upgrading ("upgrade the TV") are not in yet; upgrades are bought from the tap menu.
 5. Mini games: fishing, cooking, telescope spotting.
@@ -63,5 +70,7 @@ production pass remains historical evidence after its rollback from commit
 dependent parachute-landing bridge) were promoted after final-strip inspection;
 the online reviewer shows each former canonical strip as `Previous version`.
 The original darts selection remains an unpromoted comparison draft. Current
-delivery and review evidence is recorded in
+delivery also includes seven reversible V11 artist-smock comparisons; its eight
+derived neutral/bridge assets remain outside the review-gallery denominator.
+Current review evidence is recorded in
 `docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md`.
