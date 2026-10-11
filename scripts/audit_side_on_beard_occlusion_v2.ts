@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 /**
- * Reproducible v2, draft-only Keeper side-on beard and hand-occlusion audit.
+ * Fail-closed side-on Keeper beard audit.
  *
- * This deliberately does not pack, publish, or otherwise mutate canonical
- * artwork. The one confirmed delta is isolated below art/drafts/ so rejection
- * remains a directory deletion rather than a production rollback.
+ * The prior v2 script wrote the word "pass" for every metadata-selected side
+ * frame without comparing beard pixels. It also inferred a Darts hand-layer
+ * defect from broad colour predicates. This replacement deliberately records
+ * only conclusions supported by an exact raster comparison. It is an audit
+ * result, not an art authoring tool: no canonical or draft artwork is written.
  */
 import crypto from 'node:crypto'
 import fs from 'node:fs'
@@ -12,175 +14,104 @@ import path from 'node:path'
 import { PNG } from 'pngjs'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
-const RAW = path.join(ROOT, 'art/raw/keeper-first-batch')
-const SOURCE = path.join(ROOT, 'art/source/keeper-first-batch')
-const MANIFEST_PATH = path.join(ROOT, 'public/sprites/manifest.json')
-const REGISTER = path.join(ROOT, 'data/keeper_side_on_beard_occlusion_audit.json')
-const ID = '2026-10-10-v2'
-const DRAFT_DIR = path.join(ROOT, `art/drafts/keeper-side-on-beard-occlusion-${ID}`)
-const DARTS = 'keeper_darts'
+const MANIFEST = path.join(ROOT, 'public/sprites/manifest.json')
+const OUTPUT = path.join(ROOT, 'data/keeper_side_on_beard_occlusion_audit.json')
+const AUDIT_ID = '2026-10-11-evidence-v3'
 const REFERENCE = {
   name: 'keeper_clear_snow',
   strip: 'art/raw/keeper-first-batch/keeper_clear_snow_f8.png',
   source: 'art/source/keeper-first-batch/keeper-clear-snow-round2-grid-generated-source.png',
   stripSha256: 'fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96',
   sourceSha256: 'b5470890cef0448794414393947e50eb55971884d59cb389a8947bdbbf5dc455',
+  authority: 'The current authored brief, source-authoring chain, and production contract identify this accepted winter-coat clip as the authoritative fuller stepped right-facing beard.',
 }
+const HISTORICAL_V2 = 'art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/keeper_darts/draft-register.json'
 
-const rel = (file: string) => path.relative(ROOT, file).split(path.sep).join('/')
+type Clip = Record<string, any>
 const abs = (file: string) => path.join(ROOT, file)
-const sha256 = (file: string) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')
 const readJson = (file: string) => JSON.parse(fs.readFileSync(file, 'utf8')) as Record<string, any>
+const sha256 = (file: string) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')
 const writeJson = (file: string, value: unknown) => fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`)
-const png = (file: string) => PNG.sync.read(fs.readFileSync(file))
-const writePng = (file: string, image: PNG) => fs.writeFileSync(file, PNG.sync.write(image, { colorType: 6 }))
-const includesAny = (value: unknown, terms: string[]) => terms.some((term) => String(value ?? '').toLowerCase().includes(term))
+const has = (value: unknown, word: string) => String(value ?? '').toLowerCase().includes(word)
 
-function isSideStandingOrSitting(clip: Record<string, any>) {
-  if (clip.assetRole && clip.assetRole !== 'clip') return false
-  const text = [clip.facing, clip.startPose, clip.endPose, clip.mirrorsFor].join(' ').toLowerCase()
-  return includesAny(text, ['standing', 'sitting', 'seated']) && includesAny(text, ['right', 'left', 'side', 'rear'])
-}
-
-function posture(clip: Record<string, any>) {
-  const text = [clip.startPose, clip.endPose].join(' ').toLowerCase()
-  if (includesAny(text, ['sitting', 'seated'])) return 'sitting'
-  if (includesAny(text, ['standing'])) return 'standing'
+function posture(clip: Clip) {
+  const text = `${clip.startPose ?? ''} ${clip.endPose ?? ''}`.toLowerCase()
+  if (has(text, 'sitting') || has(text, 'seated')) return 'sitting'
+  if (has(text, 'standing')) return 'standing'
   return 'other'
 }
 
-function frameClassification(clip: Record<string, any>, frame: number) {
+function classifyFrame(clip: Clip, frame: number) {
   const facing = String(clip.facing ?? '').toLowerCase()
   const start = String(clip.startPose ?? '').toLowerCase()
   const end = String(clip.endPose ?? '').toLowerCase()
-  if (!facing && !start && !end) return { classification: 'indeterminate', reason: 'No recorded facing metadata.' }
-  if (facing === 'front') return { classification: 'front-facing', reason: 'Direct manifest facing.' }
-  if (facing === 'back') return { classification: 'rear-facing', reason: 'Direct manifest facing.' }
-  if (facing.includes('to-back') || (start.includes('side') && end.includes('back'))) {
-    if (frame === 1) return { classification: 'side-on', reason: 'Declared side endpoint.' }
-    if (frame === clip.frames) return { classification: 'rear-facing', reason: 'Declared rear endpoint.' }
-    return { classification: 'indeterminate', reason: 'Turn between side and rear.' }
-  }
-  if (facing.includes('back-to-') || (start.includes('back') && end.includes('side'))) {
-    if (frame === 1) return { classification: 'rear-facing', reason: 'Declared rear endpoint.' }
-    if (frame === clip.frames) return { classification: 'side-on', reason: 'Declared side endpoint.' }
-    return { classification: 'indeterminate', reason: 'Turn between rear and side.' }
-  }
-  if (facing.includes('to-front') || (start.includes('side') && end.includes('front'))) {
-    if (frame === 1) return { classification: 'side-on', reason: 'Declared side endpoint.' }
-    if (frame === clip.frames) return { classification: 'front-facing', reason: 'Declared front endpoint.' }
-    return { classification: 'indeterminate', reason: 'Turn between side and front.' }
-  }
-  if (facing.includes('front-right') || facing.includes('front-left') || facing.includes('rear-right') || facing.includes('rear-left') || facing.includes('three-quarter')) return { classification: 'indeterminate', reason: 'Three-quarter pose is not a true 90-degree side view.' }
-  if (facing === 'right' || facing === 'left' || start.includes('side') || end.includes('side')) return { classification: 'side-on', reason: 'Direct side-action metadata and visual inspection.' }
-  if (start.includes('back') || end.includes('back')) return { classification: 'rear-facing', reason: 'Rear-facing metadata.' }
-  if (start.includes('front') || end.includes('front')) return { classification: 'front-facing', reason: 'Front-facing metadata.' }
-  return { classification: 'indeterminate', reason: 'Metadata does not establish a 90-degree view.' }
+  const sidePose = has(start, 'side') || has(end, 'side')
+  if (facing === 'front') return { classification: 'front-facing', reason: 'manifest facing=front' }
+  if (facing === 'back') return { classification: 'rear-facing', reason: 'manifest facing=back' }
+  if (/front-(left|right)|rear-(left|right)|three-quarter/.test(facing)) return { classification: 'indeterminate', reason: `manifest facing=${facing} is three-quarter, not a proven 90-degree face` }
+  if (facing.includes('to-back') || (sidePose && has(end, 'back'))) return frame === 1 ? { classification: 'side-on', reason: 'manifest side endpoint at frame 1' } : frame === Number(clip.frames) ? { classification: 'rear-facing', reason: 'manifest rear endpoint at final frame' } : { classification: 'indeterminate', reason: 'turn between side and rear' }
+  if (facing.includes('back-to-') || (has(start, 'back') && sidePose)) return frame === Number(clip.frames) ? { classification: 'side-on', reason: 'manifest side endpoint at final frame' } : frame === 1 ? { classification: 'rear-facing', reason: 'manifest rear endpoint at frame 1' } : { classification: 'indeterminate', reason: 'turn between rear and side' }
+  if (facing.includes('to-front') || (sidePose && has(end, 'front'))) return frame === 1 ? { classification: 'side-on', reason: 'manifest side endpoint at frame 1' } : frame === Number(clip.frames) ? { classification: 'front-facing', reason: 'manifest front endpoint at final frame' } : { classification: 'indeterminate', reason: 'turn between side and front' }
+  if (facing === 'left' || facing === 'right' || (sidePose && !has(start, 'front') && !has(start, 'back') && !has(end, 'front') && !has(end, 'back'))) return { classification: 'side-on', reason: facing === 'left' || facing === 'right' ? `manifest facing=${facing}` : 'both manifest endpoints are side-on' }
+  if (has(start, 'front') || has(end, 'front')) return { classification: 'front-facing', reason: 'manifest front endpoint(s)' }
+  if (has(start, 'back') || has(end, 'back')) return { classification: 'rear-facing', reason: 'manifest rear endpoint(s)' }
+  return { classification: 'indeterminate', reason: 'metadata does not establish the face angle' }
 }
 
-function hasGutters(file: string, frames: number) {
-  const image = png(file); const frameWidth = image.width / frames
-  if (!Number.isInteger(frameWidth)) return false
-  for (let frame = 0; frame < frames; frame += 1) for (let y = 0; y < image.height; y += 1) {
-    if (image.data[(y * image.width + frame * frameWidth) * 4 + 3] > 0) return false
-    if (image.data[(y * image.width + (frame + 1) * frameWidth - 1) * 4 + 3] > 0) return false
-  }
-  return true
-}
-
-const isSkin = (r: number, g: number, b: number, a: number) => a > 0 && r > 150 && g > 60 && g < 205 && b < 150 && r > g * 1.1 && g > b * 0.9
-const isBeard = (r: number, g: number, b: number, a: number) => a > 0 && r > 170 && g > 155 && b > 120 && r - b < 150
-
-function correctDarts(canonicalFile: string, draftFile: string) {
-  const canonical = png(canonicalFile); const frames = 14; const frameWidth = canonical.width / frames
-  if (!Number.isInteger(frameWidth) || canonical.height !== 160) throw new Error('keeper_darts geometry changed; v2 stopped')
-  const draft = new PNG({ width: canonical.width, height: canonical.height }); canonical.data.copy(draft.data)
-  const corrections: Array<{ frame: number; pixels: number; logicalBox: [number, number, number, number] }> = []
-  for (const frame of [3, 4, 5, 6]) {
-    const base = (frame - 1) * frameWidth; let changed = 0; let minX = frameWidth; let minY = canonical.height; let maxX = 0; let maxY = 0
-    // The current canonical raster places the crossing hand at logical x 25–35
-    // (the rejected v1 source used a different wider sheet). Copy only an
-    // immediately adjacent skin edge onto beard-coloured pixels: this is a
-    // compositing repair, not a beard redraw or an actor move.
-    for (let y = 10 * 4; y < 18 * 4; y += 1) for (let x = 25 * 4; x < 35 * 4; x += 1) {
-      const source = (y * canonical.width + base + x) * 4
-      if (!isSkin(canonical.data[source], canonical.data[source + 1], canonical.data[source + 2], canonical.data[source + 3])) continue
-      const targetX = x + 4; const target = (y * canonical.width + base + targetX) * 4
-      if (!isBeard(canonical.data[target], canonical.data[target + 1], canonical.data[target + 2], canonical.data[target + 3])) continue
-      for (let channel = 0; channel < 4; channel += 1) draft.data[target + channel] = canonical.data[source + channel]
-      changed += 1; minX = Math.min(minX, targetX); minY = Math.min(minY, y); maxX = Math.max(maxX, targetX); maxY = Math.max(maxY, y)
+function geometry(file: string, frames: number) {
+  const image = PNG.sync.read(fs.readFileSync(file)); const frameWidth = image.width / frames
+  if (!Number.isInteger(frameWidth)) throw new Error(`${file} width is not divisible by frame count`)
+  const result: Array<{ frame: number; opaquePixels: number; gutter: 'pass' | 'fail' }> = []
+  for (let frame = 0; frame < frames; frame += 1) {
+    let opaquePixels = 0; let edgeAlpha = false
+    for (let y = 0; y < image.height; y += 1) for (let x = 0; x < frameWidth; x += 1) {
+      const alpha = image.data[(y * image.width + frame * frameWidth + x) * 4 + 3]
+      if (!alpha) continue
+      opaquePixels += 1
+      if (x === 0 || x === frameWidth - 1 || y === 0 || y === image.height - 1) edgeAlpha = true
     }
-    if (!changed) throw new Error(`No current canonical foreground-hand beard crossing found in ${DARTS} frame ${frame}`)
-    corrections.push({ frame, pixels: changed, logicalBox: [Math.floor(minX / 4), Math.floor(minY / 4), Math.ceil((maxX + 1) / 4), Math.ceil((maxY + 1) / 4)] })
+    result.push({ frame: frame + 1, opaquePixels, gutter: edgeAlpha ? 'fail' : 'pass' })
   }
-  writePng(draftFile, draft)
-  return corrections
+  return { image: [image.width, image.height], framePixels: [frameWidth, image.height], frames: result }
 }
 
-function contactSheet(canonicalFile: string, draftFile: string, destination: string) {
-  const canonical = png(canonicalFile); const draft = png(draftFile); const frameWidth = canonical.width / 14; const scale = 2
-  const out = new PNG({ width: frameWidth * 7 * scale, height: canonical.height * 4 * scale })
-  for (let frame = 0; frame < 14; frame += 1) for (let variant = 0; variant < 2; variant += 1) {
-    const source = variant ? draft : canonical; const column = frame % 7; const row = Math.floor(frame / 7) * 2 + variant
-    for (let y = 0; y < canonical.height; y += 1) for (let x = 0; x < frameWidth; x += 1) for (let yy = 0; yy < scale; yy += 1) for (let xx = 0; xx < scale; xx += 1) {
-      const src = (y * source.width + frame * frameWidth + x) * 4
-      const dst = (((row * canonical.height * scale + y * scale + yy) * out.width) + column * frameWidth * scale + x * scale + xx) * 4
-      for (let channel = 0; channel < 4; channel += 1) out.data[dst + channel] = source.data[src + channel]
-    }
+function beardResult(name: string, frame: number, classification: string, pose: string, source: string, frameGeometry: Record<string, any>) {
+  if (classification !== 'side-on' || !['standing', 'sitting'].includes(pose)) return null
+  if (frameGeometry.opaquePixels === 0) return { result: 'non-comparable', reason: 'empty frame; no beard silhouette exists to compare', evidence: ['frame alpha count=0'] }
+  if (name === REFERENCE.name) return { result: 'match', reason: 'exact self-comparison of the pinned canonical right-facing beard frame', evidence: [`canonical strip SHA-256=${REFERENCE.stripSha256}`, `frame=${frame}`, 'comparison=exact same raster bytes'], comparison: { method: 'exact-canonical-self-raster', referenceFrame: frame } }
+  return {
+    result: 'non-comparable',
+    reason: 'No approved facial landmark map, beard segmentation mask, or facing/head-tilt-specific canonical mask exists for this different raster. Pixel-colour heuristics cannot distinguish beard from hair, coat trim, props, or a legitimately occluded beard.',
+    evidence: [`source strip SHA-256=${sha256(abs(source))}`, `frame=${frame}`, `classification=${classification}`, 'required comparison asset missing: normalized beard mask anchored to eye/nose/chin and explicit occlusion/depth metadata'],
+    comparison: { method: 'blocked-fail-closed', reference: REFERENCE.name, missing: ['approved normalized beard mask', 'facial landmarks', 'pose/facing-specific expected silhouette', 'hand depth/layer mask where applicable'] },
   }
-  writePng(destination, out)
 }
 
 function main() {
-  if (sha256(abs(REFERENCE.strip)) !== REFERENCE.stripSha256 || sha256(abs(REFERENCE.source)) !== REFERENCE.sourceSha256) throw new Error('Canonical keeper_clear_snow beard reference hash mismatch; refusing audit')
-  const manifest = readJson(MANIFEST_PATH)
-  const allFrameAudit: Record<string, any> = {}
-  const sideInventory: Array<Record<string, any>> = []
-  for (const [name, clipValue] of Object.entries(manifest).sort(([a], [b]) => a.localeCompare(b))) {
-    const clip = clipValue as Record<string, any>; const frames = Number(clip.frames ?? 1); const isKeeper = name.startsWith('keeper_')
-    const classes = Array.from({ length: frames }, (_, index) => ({ frame: index + 1, ...frameClassification(clip, index + 1) }))
-    allFrameAudit[name] = { frameCount: frames, actor: isKeeper ? 'keeper' : 'non-keeper', transition: `${clip.startPose ?? '—'} → ${clip.endPose ?? '—'}`, frames: classes }
-    if (!isKeeper || !isSideStandingOrSitting(clip)) continue
-    const raw = `art/raw/keeper-first-batch/${name}_f${frames}.png`; const sidecar = `art/raw/keeper-first-batch/${name}_f${frames}.json`
-    if (!fs.existsSync(abs(raw)) || !fs.existsSync(abs(sidecar))) throw new Error(`${name} source strip or sidecar is missing`)
-    const pose = posture(clip)
-    sideInventory.push({
-      name, frames, canvas: [clip.w, clip.h], posture: pose, facing: clip.facing ?? null, startPose: clip.startPose ?? null, endPose: clip.endPose ?? null,
-      sourceStrip: raw, sourceStripSha256: sha256(abs(raw)), sourceSidecar: sidecar, sourceSidecarSha256: sha256(abs(sidecar)),
-      mirrorConsumers: [clip.mirrorsFor ? `mirror:${clip.mirrorsFor}` : null, clip.reverseFor ? `reverse:${clip.reverseFor}` : null].filter(Boolean),
-      frameAudit: classes.map((entry) => ({ ...entry, beard: entry.classification === 'side-on' && pose !== 'other' ? { result: name === DARTS && [3, 4, 5, 6].includes(entry.frame) ? 'fail-current-corrected-in-draft-v2' : 'pass', reason: name === DARTS && [3, 4, 5, 6].includes(entry.frame) ? 'Foreground throwing fingers/wrist are covered by beard pixels in the current canonical raster.' : 'Fuller stepped keeper_clear_snow side beard visually matched; hand/head/neck order is physically coherent.' } : null })),
+  if (sha256(abs(REFERENCE.strip)) !== REFERENCE.stripSha256 || sha256(abs(REFERENCE.source)) !== REFERENCE.sourceSha256) throw new Error('canonical side-on reference hash mismatch; refusing to choose another reference')
+  const manifest = readJson(MANIFEST); const frameAudit: Record<string, any> = {}; const inventory: Record<string, any>[] = []
+  let comparableFrames = 0; let nonComparableFrames = 0; let gutterFailures = 0
+  for (const [name, value] of Object.entries(manifest).sort(([a], [b]) => a.localeCompare(b))) {
+    const clip = value as Clip; const frames = Number(clip.frames ?? 1); const sourceStrip = `art/raw/keeper-first-batch/${name}_f${frames}.png`; const sourceSidecar = `art/raw/keeper-first-batch/${name}_f${frames}.json`
+    const classes = Array.from({ length: frames }, (_, index) => ({ frame: index + 1, ...classifyFrame(clip, index + 1) })); frameAudit[name] = { frameCount: frames, actor: name.startsWith('keeper_') ? 'keeper' : 'non-keeper', frames: classes }
+    if (!name.startsWith('keeper_') || !fs.existsSync(abs(sourceStrip)) || !fs.existsSync(abs(sourceSidecar))) continue
+    const pose = posture(clip); const geo = geometry(abs(sourceStrip), frames); const details = classes.map((entry, index) => {
+      const beard = beardResult(name, entry.frame, entry.classification, pose, sourceStrip, geo.frames[index]); if (beard?.result === 'match') comparableFrames += 1; if (beard?.result === 'non-comparable') nonComparableFrames += 1; if (beard && geo.frames[index].gutter === 'fail') gutterFailures += 1
+      return { ...entry, beard, geometry: geo.frames[index] }
     })
+    if (details.some((frame) => frame.beard)) inventory.push({ name, frames, posture: pose, facing: clip.facing ?? null, startPose: clip.startPose ?? null, endPose: clip.endPose ?? null, sourceStrip, sourceStripSha256: sha256(abs(sourceStrip)), sourceSidecar, sourceSidecarSha256: sha256(abs(sourceSidecar)), geometry: geo, mirrorConsumers: [clip.mirrorsFor ? `mirror:${clip.mirrorsFor}` : null, clip.reverseFor ? `reverse:${clip.reverseFor}` : null].filter(Boolean), frameAudit: details })
   }
-  fs.mkdirSync(path.join(DRAFT_DIR, 'keeper_darts/source'), { recursive: true }); fs.mkdirSync(path.join(DRAFT_DIR, 'keeper_darts/evidence'), { recursive: true })
-  const canonicalStrip = path.join(RAW, 'keeper_darts_f14.png'); const canonicalSidecar = path.join(RAW, 'keeper_darts_f14.json')
-  const canonicalSource = path.join(SOURCE, 'keeper-darts-generated-source.png')
-  const selectedSource = path.join(SOURCE, 'keeper-darts-round2-grid-generated-source-beard-corrected.png')
-  const workspace = path.join(DRAFT_DIR, 'keeper_darts'); const draftStrip = path.join(workspace, 'keeper_darts_f14.png'); const draftSidecar = path.join(workspace, 'source/keeper_darts_f14.json')
-  fs.copyFileSync(canonicalSource, path.join(workspace, 'source/keeper-darts-generated-source.png')); fs.copyFileSync(canonicalSidecar, draftSidecar)
-  const corrections = correctDarts(canonicalStrip, draftStrip)
-  const contact = path.join(workspace, 'evidence/keeper_darts_canonical_vs_draft_v2.png'); contactSheet(canonicalStrip, draftStrip, contact)
-  const sidecar = readJson(draftSidecar); sidecar.sideOnBeardOcclusionAudit = { auditId: ID, reference: REFERENCE.name, correctedFrames: corrections.map((item) => item.frame), layerOrder: 'foreground-hand-over-beard' }; writeJson(draftSidecar, sidecar)
-  const reviewEvidence = path.join(workspace, 'evidence/keeper_darts_draft_v2_review.json'); const scaleEvidence = path.join(workspace, 'evidence/keeper_darts_draft_v2_scale.json')
-  writeJson(reviewEvidence, { auditId: ID, animation: DARTS, label: 'Draft v2', decision: 'Await Frank promotion or rejection; canonical remains authoritative.', correctedFrames: corrections, canonical: rel(canonicalStrip), draft: rel(draftStrip) })
-  writeJson(scaleEvidence, { auditId: ID, animation: DARTS, frames: sidecar.frames, canvas: [sidecar.w, sidecar.h], density: sidecar.density, anchor: sidecar.anchor, canonicalStripSha256: sha256(canonicalStrip), draftStripSha256: sha256(draftStrip), gutters: 'pass' })
-  const draftRegister = {
-    auditId: ID, animation: DARTS, label: 'Draft v2', status: 'active-review-draft',
-    canonical: { source: rel(canonicalSource), sourceSha256: sha256(canonicalSource), strip: rel(canonicalStrip), stripSha256: sha256(canonicalStrip), sidecar: rel(canonicalSidecar), sidecarSha256: sha256(canonicalSidecar), runtime: 'public/sprites/keeper_darts.png', runtimeSha256: sha256(path.join(ROOT, 'public/sprites/keeper_darts.png')) },
-    draft: { source: rel(path.join(workspace, 'source/keeper-darts-generated-source.png')), sourceSha256: sha256(path.join(workspace, 'source/keeper-darts-generated-source.png')), strip: rel(draftStrip), stripSha256: sha256(draftStrip), sidecar: rel(draftSidecar), sidecarSha256: sha256(draftSidecar), correctedFrames: corrections, evidence: [rel(contact), rel(scaleEvidence), rel(reviewEvidence)] },
-    relatedFrankSelectedDraft: { register: 'art/drafts/keeper-darts-user-selected-2026-10-10-v1/draft-register.json', source: rel(selectedSource), sourceSha256: sha256(selectedSource), disposition: 'Included as visual evidence only; left byte-identical and unpromoted.' },
-    rollback: 'Discard art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/; canonical raw/runtime assets, manifest, source, reviews and previous drafts remain untouched.',
-  }
-  const registerPath = path.join(workspace, 'draft-register.json'); writeJson(registerPath, draftRegister)
-  writeJson(REGISTER, {
-    auditId: ID, auditStatus: 'complete-awaiting-promotion-decision', generatedAt: '2026-10-11', scope: 'All manifest frames classified; all standing/sitting true-side frames compared against the pinned keeper_clear_snow stepped beard.', beardReference: REFERENCE,
-    historicalV1: { rejected: true, directory: 'art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1', register: 'art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/draft-register.json' },
-    manifestFrameAudit: allFrameAudit, auditedSheetNames: sideInventory.map((item) => item.name), auditedSheetCount: sideInventory.length, inventory: sideInventory,
-    defects: [{ animation: DARTS, frames: [3, 4, 5, 6], type: 'foreground-hand-covered-by-beard', disposition: 'deterministic Draft v2 only' }], sheetsChanged: [DARTS], exactFramesChanged: { [DARTS]: [3, 4, 5, 6] },
-    draft: { directory: rel(DRAFT_DIR), register: rel(registerPath), promotionRequired: true, canonicalPromotion: false },
-    verifierContract: { exactNameResponsesOnly: true, failIfSideOnBeardRecordMissing: true, failIfForegroundHandCoveredByBeard: true, failIfCorrectedSideOnSheetLosesTransparentFrameGutters: true, mirrorAndDerivedOutputsAreConsumersOnly: true },
+  const invalidV2 = readJson(abs(HISTORICAL_V2))
+  writeJson(OUTPUT, {
+    auditId: AUDIT_ID, generatedAt: '2026-10-11', auditStatus: 'blocked-no-discriminating-comparison-method',
+    scope: 'Every manifest Keeper frame is classified. Every standing/sitting frame whose metadata establishes a 90-degree side view is inventoried with source hashes and frame geometry. A pass is permitted only for exact canonical self-comparison; all other candidates fail closed as non-comparable.', beardReference: REFERENCE,
+    method: { beardSilhouette: 'Exact raster equality only. A cross-pose result requires an approved normalized beard mask tied to facial landmarks; no such asset exists in this repository.', beardLocation: 'The required landmark map (eye/nose/chin/head origin) is absent, so location cannot be normalized across canvases or head tilts.', occlusion: 'The flattened PNG/sidecar pair contains no depth or component ownership mask. Colour predicates are explicitly rejected as evidence of hand-over-beard ordering.', cellGeometry: 'PNG width must divide exactly by declared frames; source sidecar and strip SHA-256 values are pinned.', transparentGutters: 'Every audited frame is checked for alpha on all four cell borders; a changed draft would require the same check frame-by-frame.', failClosedRule: 'Missing beard pixels, missing comparison data, or a non-comparable pose is never a pass.' },
+    summary: { auditedSheets: inventory.length, confirmedMatches: comparableFrames, confirmedMismatches: 0, nonComparableFrames, existingCanonicalGutterFailures: gutterFailures, draftCorrectionsCreated: 0 }, manifestFrameAudit: frameAudit, auditedSheetNames: inventory.map((item) => item.name), inventory,
+    findings: { confirmedMatches: [{ animation: REFERENCE.name, frames: [1, 2, 3, 4, 5, 6, 7, 8], evidence: 'Each is an exact self-raster comparison to the SHA-256-pinned canonical reference.' }], confirmedMismatches: [], nonComparable: 'All non-reference side-on standing/sitting frames are deliberately recorded at frame level in inventory[].frameAudit[].beard. No unsupported positive result is emitted.', dartsHistoricalClaim: { animation: 'keeper_darts', frames: [3, 4, 5, 6], result: 'non-comparable', reason: 'The historical v2 hand-over-beard claim used broad colour predicates and a one-pixel copy. Neither establishes that the source pixels are a foreground hand or that the target pixels are an occluded beard. No correction is justified.' } },
+    drafts: { active: [], correctionsCreated: false, reviewerStatus: 'No new comparison draft is displayed because no correction cleared the evidence gate.' },
+    historical: { rejectedV1: 'art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/draft-register.json', invalidatedV2: { register: HISTORICAL_V2, registerSha256: sha256(abs(HISTORICAL_V2)), disposition: 'Retained immutable for evidence only; not a promotion candidate and not proof of a defect.', canonicalDartsSha256: invalidV2.canonical?.stripSha256, historicalDraftSha256: invalidV2.draft?.stripSha256 } },
+    escalation: { required: true, blocker: 'A deterministic cross-pose beard comparison cannot distinguish an acceptable facing/head-angle/occlusion variant from a mismatch with the assets and metadata currently available.', requiredEvidence: ['approved canonical beard mask(s) at one or more named facings', 'facial landmark anchors for every comparable frame or deterministic extraction rule', 'depth/component masks for claimed hand/beard crossings'], affected: 'Every non-reference standing/sitting side-on frame; particularly keeper_darts frames 3–6 for the prior occlusion claim.', nextModel: 'GPT-5.6 Sol' },
   })
-  if (!hasGutters(draftStrip, 14)) throw new Error('Draft v2 lost transparent frame gutters')
-  console.log(`Generated ${ID}: ${sideInventory.length} side-action sheets; ${DARTS} frames 3–6 corrected in draft only; canonical assets untouched`)
+  console.log(`Wrote ${AUDIT_ID}: ${inventory.length} side-on standing/sitting sheets; ${comparableFrames} exact canonical self matches; ${nonComparableFrames} fail-closed non-comparable frames; no draft artwork created.`)
 }
-
 main()

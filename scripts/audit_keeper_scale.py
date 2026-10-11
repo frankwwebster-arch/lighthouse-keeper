@@ -677,8 +677,10 @@ def publish(assets: list[dict]) -> None:
     draft_comparisons: list[dict] = []
     if SIDE_ON_OCCLUSION_REGISTER_PATH.exists():
         side_on_register = json.loads(SIDE_ON_OCCLUSION_REGISTER_PATH.read_text())
-        draft_record_path = ROOT / side_on_register["draft"]["register"]
-        if not side_on_register["draft"].get("rejected") and draft_record_path.exists():
+        side_on_draft = side_on_register.get("draft", {})
+        draft_register = side_on_draft.get("register")
+        draft_record_path = ROOT / draft_register if draft_register else None
+        if draft_record_path and not side_on_draft.get("rejected") and draft_record_path.exists():
             draft_record = json.loads(draft_record_path.read_text())
             draft_sidecar = json.loads((ROOT / draft_record["draft"]["sidecar"]).read_text())
             active_review_drafts.setdefault(draft_record["animation"], []).append({
@@ -805,7 +807,7 @@ def publish(assets: list[dict]) -> None:
     (OUT / "review.html").write_text(review_html)
     PUBLIC_REVIEW.mkdir(parents=True, exist_ok=True)
     (PUBLIC_REVIEW / "index.html").write_text(review_html)
-    if SIDE_ON_OCCLUSION_REGISTER_PATH.exists() and not side_on_register["draft"].get("rejected"):
+    if SIDE_ON_OCCLUSION_REGISTER_PATH.exists() and side_on_register.get("draft", {}).get("register") and not side_on_register["draft"].get("rejected"):
         draft_public_dir = PUBLIC_REVIEW / "drafts"
         draft_public_dir.mkdir(parents=True, exist_ok=True)
         draft_record = json.loads((ROOT / side_on_register["draft"]["register"]).read_text())
@@ -864,9 +866,9 @@ def publish(assets: list[dict]) -> None:
         if draft_status == "promoted-review-draft":
             decision = "Frank-selected replacement promoted"
             change = codex_responses.get(asset["name"], asset["note"])
-        if asset["name"] == "keeper_darts" and SIDE_ON_OCCLUSION_REGISTER_PATH.exists() and not side_on_rejected:
-            decision = "Draft v2 hand/beard repair ready for Frank's verdict; prior Frank-selected draft remains comparison-only"
-            change = "Canonical production remains unchanged; a draft-only foreground-hand-over-beard correction is recorded for frames 3–6 and awaits explicit promotion or rejection."
+        if asset["name"] == "keeper_darts" and side_on_register.get("auditStatus") == "complete-awaiting-promotion-decision" and not side_on_rejected:
+            decision = "Legacy beard-audit draft requires re-evidence"
+            change = "Canonical production remains unchanged; no historical colour-predicate hand/beard edit is eligible for promotion."
         verification = (
             "Retained; full audit" if asset["reviewStatus"] == "happy" else
             "Deferred; unchanged" if asset["reviewStatus"] == "review-later" else
@@ -878,8 +880,8 @@ def publish(assets: list[dict]) -> None:
             verification = "Draft extracted and verified; canonical unchanged"
         if draft_status == "promoted-review-draft":
             verification = "Promoted after final-strip inspection; previous version retained"
-        if asset["name"] == "keeper_darts" and SIDE_ON_OCCLUSION_REGISTER_PATH.exists() and not side_on_rejected:
-            verification = "Draft v2 and selected-draft comparison verified; canonical unchanged"
+        if asset["name"] == "keeper_darts" and side_on_register.get("auditStatus") == "complete-awaiting-promotion-decision" and not side_on_rejected:
+            verification = "Historical beard-audit evidence retained; canonical unchanged"
         status_label = {
             "happy": "Happy",
             "review-later": "Review later",
@@ -893,16 +895,16 @@ def publish(assets: list[dict]) -> None:
     if SIDE_ON_OCCLUSION_REGISTER_PATH.exists():
         resolution_lines.extend([
             "",
-            "## Side-on beard/hand occlusion audit v2",
+            "## Side-on beard/hand occlusion audit",
             "",
-            "All manifest Keeper frames are classified as side-on, front-facing, rear-facing or indeterminate, and the 101 exact standing/sitting side-action sheets are SHA-256-pinned against the restored production set. The pinned `keeper_clear_snow` side-beard reference remains byte-identical. Only canonical `keeper_darts` frames 3–6 have a confirmed foreground-hand-over-beard issue; the narrowly-scoped correction is shown as `Draft v2` beside canonical, while canonical production remains unchanged pending Frank's explicit decision. The earlier v1 draft is rejected historical evidence only.",
+            "The evidence-based audit classifies every manifest frame and pins the `keeper_clear_snow` beard reference. It is fail-closed: exact self-raster comparison confirms only the reference frames; no cross-pose beard or hand-occlusion claim is accepted because the repository lacks approved landmark, beard-mask and depth/component evidence. No new beard correction draft is available or promoted. Historical v1 and v2 draft files remain preserved as non-promotable evidence only.",
         ])
     if active_review_drafts:
         resolution_lines.extend([
             "",
             "## User-selected review comparisons",
             "",
-            "Frank's supplied 14-pose darts image remains byte-identical as the `Frank-selected draft` comparison beside canonical `keeper_darts` and the new `Draft v2`; neither darts draft is promoted. The nine separately selected replacements and the dependent parachute-landing bridge were promoted only after final-strip inspection; their original canonical strips remain visible as exact-name `Previous version` comparisons. Every comparison is SHA-256-pinned in `data/keeper_review_drafts.json` and the v2 audit register.",
+            "Frank's supplied 14-pose darts image remains byte-identical as the `Frank-selected draft` comparison beside canonical `keeper_darts`; it is not a beard reference and is not promoted. The historical beard-audit v2 image is intentionally absent from promotion choices because its colour-predicate evidence did not establish a correction. The nine separately selected replacements and the dependent parachute-landing bridge retain their exact prior strips as `Previous version` comparisons.",
         ])
     resolution_path = ROOT / "docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md"
     resolution_path.write_text("\n".join(resolution_lines) + "\n")
@@ -946,7 +948,7 @@ def publish(assets: list[dict]) -> None:
         "",
         "## Reversible review drafts",
         "",
-        "The completed v2 side-on beard/hand audit keeps the canonical production `keeper_darts` strip alongside the narrowly-scoped `Draft v2` hand-over-beard correction for frames 3–6 and Frank's separate byte-identical selected draft. Neither darts draft is promoted. The rejected partial v1 audit remains immutable historical evidence under `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/`. The ten later selected canonical promotions retain their exact prior strips as `Previous version` comparisons.",
+        "The evidence-based side-on beard audit pins `keeper_clear_snow` but blocks all cross-pose conclusions until approved masks, landmarks and hand-depth/component evidence exist. Historical v1/v2 Darts images are non-promotable evidence; Frank's selected Darts image remains a comparison, not a beard reference. The ten later selected canonical promotions retain their exact prior strips as `Previous version` comparisons.",
         "The review-draft register pins source, previous/current canonical and draft SHA-256 values. New amendments remain draft-only: canonical production art, `public/sprites/`, the runtime manifest, immutable review exports and existing previews remain untouched until explicit promotion. Rejecting a new draft requires only deleting its draft directory and exact-name entry from `data/keeper_review_drafts.json`.",
         "",
         "## Corrected sheets",

@@ -29,7 +29,7 @@ Review progress is browser-local to the deployed reviewer: changing display zoom
 
 ## Reversible review drafts
 
-The completed v2 side-on beard/hand audit keeps the canonical production `keeper_darts` strip alongside the narrowly-scoped `Draft v2` hand-over-beard correction for frames 3–6 and Frank's separate byte-identical selected draft. Neither darts draft is promoted. The rejected partial v1 audit remains immutable historical evidence under `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/`. The ten later selected canonical promotions retain their exact prior strips as `Previous version` comparisons.
+The evidence-based side-on beard audit pins `keeper_clear_snow` but blocks all cross-pose conclusions until approved masks, landmarks and hand-depth/component evidence exist. Historical v1/v2 Darts images are non-promotable evidence; Frank's selected Darts image remains a comparison, not a beard reference. The ten later selected canonical promotions retain their exact prior strips as `Previous version` comparisons.
 The review-draft register pins source, previous/current canonical and draft SHA-256 values. New amendments remain draft-only: canonical production art, `public/sprites/`, the runtime manifest, immutable review exports and existing previews remain untouched until explicit promotion. Rejecting a new draft requires only deleting its draft directory and exact-name entry from `data/keeper_review_drafts.json`.
 
 ## Corrected sheets

@@ -228,24 +228,24 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 
 ## Current evidence and files
 
-- The v2 side-on beard/hand occlusion audit (2026-10-10) is recorded in
+- The evidence-based side-on beard/hand audit (2026-10-11) is recorded in
   `data/keeper_side_on_beard_occlusion_audit.json`. It classifies every
-  manifest Keeper frame and inventories 101 exact standing/sitting true-side
-  sheets, including mirrored and derived consumers. The pinned current
-  `keeper_clear_snow` raw SHA-256
+  manifest Keeper frame and inventories 163 standing/sitting true-side source
+  sheets. The pinned `keeper_clear_snow` raw SHA-256
   `fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96` is the
-  authoritative fuller, stepped side-on beard. The only confirmed issue is
-  canonical `keeper_darts` frames 3–6, where the foreground hand is covered by
-  beard pixels. Its limited correction is isolated under
-  `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/`; it is explicitly
-  unpromoted and can be rejected by discarding that directory. The v1 archive
-  remains rejected historical evidence under
-  `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/`.
+  authoritative fuller, stepped side-on beard. The result is intentionally
+  fail-closed: only eight exact reference self-comparisons match; 994
+  different-pose frames are non-comparable because no approved beard masks,
+  facial landmarks, or hand depth/component ownership evidence exists. In
+  particular, `keeper_darts` frames 3–6 are not a confirmed occlusion defect.
+  No new beard draft is active or promotable. v1 and v2 draft files remain
+  historical, non-promotable evidence under their existing draft directories.
 - The permanent check is `node scripts/verify_side_on_beard_occlusion.ts` and
-  is included in `npm test`. It pins the canonical beard reference, every
-  inventory sheet and sidecar, classifications, gutters, and the declared
-  Draft v2 hand-over-beard pixels. The unified reviewer shows canonical,
-  `Draft v2`, and the separate Frank-selected Darts draft together.
+  is included in `npm test`. It pins the canonical reference, source/sidecar
+  hashes, classifications and frame-edge gutter evidence, and rejects any
+  unsupported match or mismatch. The reviewer shows canonical Darts beside
+  Frank's selected draft and explicitly states the evidence gate; it does not
+  show the historical v2 colour-predicate image as an active draft.
 - Frank subsequently selected the same original 14-pose image as a good darts
   animation and explicitly requested a new review comparison. That selection
   is independently preserved under
@@ -845,10 +845,12 @@ The comprehensive per-sheet correction list is in
 
 ## Review-comments workflow for a later feedback round
 
-1. Do not process another review export until the remaining two prerequisite
-   audits have completed in order: first
+1. Do not process another review export until the beard evidence gate is
+   resolved with GPT-5.6 Sol: author/pin normalized beard masks, facial
+   landmarks and hand depth/component ownership evidence, then rerun the
+   fail-closed audit. Only after that may the remaining audits run in order:
    `docs/prompts/KEEPER_SPRITE_FRAME_ISOLATION_AUDIT.md` with GPT-5.6 Terra
-   High, preserving the completed v2 beard/hand results. Then run
+   High, followed by
    `docs/prompts/KEEPER_RELEASE_SURFACE_DATUM_AUDIT.md` with GPT-5.6
    Terra High: it audits every release hand-off and makes standard tabletop
    support 19 logical pixels above floor, 8 pixels above the purple 11-pixel
@@ -907,4 +909,4 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 
 ## Ready-to-paste opening prompt for the new Codex task
 
-> Continue the keeper-animation review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, the two remaining ordered audit prompts and `docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md` before changing anything. The rejected second-round production pass and side-on audit v1 are historical evidence only. The completed v2 beard/hand audit pins `keeper_clear_snow` as the fuller, stepped side-on beard reference and keeps the unpromoted `keeper_darts` frames 3–6 correction reversible beside canonical and Frank's selected draft. Next run the Terra High frame-isolation audit without changing those beard decisions, then the released-prop surface audit. Frank's immutable review exports, 173-row resolution register and dated Codex responses are under `docs/review/`; preserve them and capture any later export as a separately dated immutable record with SHA-256. Compare only by exact `keeper_*` name, never list position. Treat Frank's saved width/height as authoritative. New amendments are versioned drafts first and appear beside canonical; the existing ten user-selected promotions retain their `Previous version` comparison. Rerun the full 191-sheet/1,479-frame scale audit and project verification, update documentation, commit and push completed draft-only audit/review work to remote `main`.
+> Continue the Lighthouse Keeper beard-audit work in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main` using GPT-5.6 Sol. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, `data/keeper_side_on_beard_occlusion_audit.json` and `docs/KEEPER_ASSET_SCALE.md`. `keeper_clear_snow` is the SHA-256-pinned canonical right-facing beard, but the audit is blocked fail-closed: no approved normalized beard masks, facial landmarks, or hand depth/component ownership masks exist, so 994 cross-pose side frames—including `keeper_darts` 3–6—are non-comparable and no correction may be guessed. First author or obtain those deterministic comparison inputs and define how they are pinned; only then rerun the audit and create versioned draft-only corrections for confirmed mismatches. Preserve all canonical art, historical v1/v2 draft evidence, the Frank-selected Darts comparison and existing selected promotions. Do not start the later frame-isolation audit until the beard gate is resolved.
