@@ -635,6 +635,8 @@ for token in (
     "Hand back to Codex",
     "keeper-review-handoffs",
     "Advanced backup / import",
+    "Reset review-only sizes",
+    "This never edits, crops, replaces, or deletes any canonical sprite art or draft.",
     "main:not(.detail-mode) #grid article .filenames",
 ):
     assert token in review_html, token
