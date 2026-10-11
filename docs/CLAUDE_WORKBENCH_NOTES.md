@@ -22,6 +22,21 @@ Two tools exist today and overlap:
 | Saves to | browser, then `keeper_review_handoffs` (a database queue that Codex reads) | `studio_docs`, `studio_sounds` (database); drafts are files in `data/studio/` |
 | Planned next | `docs/prompts/KEEPER_REVIEW_WORKBENCH_BUILD.md`, sections 1–8. **Sections 5 and 6 (routines, triggers, context preview) duplicate the recipe studio.** | the shared review loop (versions, hand-back into the repo, independent reviews) |
 
+## Decided: build our own (Frank, 11 October 2026)
+
+No existing platform does the whole job, so we build our own thin workbench. These were considered:
+- Unity's Animator, Godot's AnimationTree, Rive, Spine;
+- Unreal's Smart Objects;
+- LDtk and Tiled;
+- SyncSketch, ShotGrid (Flow), ftrack, Frame.io;
+- Aseprite.
+
+**Borrow their proven ideas:**
+- named states and transitions with explicit "finish this before moving on" rules (Unity, Rive);
+- objects that declare their own spots and behaviours (Smart Objects; we already do this);
+- notes pinned to an exact frame, numbered versions, and a simple status flow of needs review → changes requested → approved (SyncSketch, ShotGrid);
+- LDtk as a possible ready-made room-layout editor later, rather than writing one.
+
 ## How to proceed (in this order; do not skip to building)
 
 1. **Read** Codex's handover (pasted by Frank), this file, and then, in full:
