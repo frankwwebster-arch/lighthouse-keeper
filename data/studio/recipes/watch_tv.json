@@ -28,8 +28,8 @@
     {
       "id": "sofa",
       "label": "Sofa",
-      "x": 62,
-      "w": 40,
+      "x": 66,
+      "w": 36,
       "h": 22,
       "marks": [
         {
@@ -43,7 +43,7 @@
   ],
   "action": {
     "object": "sofa",
-    "dx": 10,
+    "dx": 6,
     "facing": "right"
   },
   "walkSpeed": 20,
@@ -62,6 +62,13 @@
       "kind": "walk",
       "to": "action",
       "label": "Walk to the sofa"
+    },
+    {
+      "id": "bridge-0-turn_back",
+      "kind": "play",
+      "clip": "keeper_turn_back",
+      "facing": "right",
+      "label": "Turn (standing-side-right → standing-back)"
     },
     {
       "id": "sit",
@@ -107,6 +114,14 @@
       "clip": "keeper_sit_back",
       "reverse": true,
       "label": "Stand up"
+    },
+    {
+      "id": "bridge-1-turn_left_back",
+      "kind": "play",
+      "clip": "keeper_turn_left_back",
+      "reverse": true,
+      "facing": "left",
+      "label": "Turn (standing-back → standing-side-left)"
     },
     {
       "id": "leave",

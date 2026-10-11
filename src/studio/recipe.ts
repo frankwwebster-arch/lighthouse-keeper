@@ -175,7 +175,21 @@ export interface ClipInfo {
   mirrorSafe: boolean
   /** Sounds marked on the sheet itself (Codex's sidecar `sfxCues`): every recipe using the clip gets them. */
   sfxCues?: { frame: number; cue: string }[]
+  /**
+   * A closed cycle (Codex's `*_cycle` walks): its last frame repeats its first,
+   * the standing pose, so it loops on the frames before it and a walk always
+   * finishes on a whole stride, landing on that standing pose.
+   */
+  closed?: boolean
+  /** Its registered start and end poses (docs/RECIPES.md), for joins and bridges. */
+  startPose?: string
+  endPose?: string
+  /** The outfit it is drawn in (none = the standard uniform). */
+  outfit?: string
 }
+
+/** Frames in one round of a looping clip. */
+export const roundOf = (c: ClipInfo) => (c.closed && c.frames > 1 ? c.frames - 1 : c.frames)
 export type ClipLookup = (name: string) => ClipInfo | undefined
 
 // ─── The stage ───────────────────────────────────────────────────────────────
@@ -189,11 +203,17 @@ export const STAGE = { roomW: 110, roomH: 56, stairW: 38, wall: 0, ladderX: -27 
 export const KEEPER_HALF = 11
 /**
  * A doorway, until Codex's door art fixes the numbers: the jamb on the
- * stairway side, and the open door leaf on the room side. Both are opaque and
- * in front of him; the leaf is what hides him as he passes. He stands clear of
- * both before and after.
+ * stairway side, and the open door leaf on the room side, 24 wide (Codex's
+ * minimum opening) so it can hide all of him. Both are opaque and in front of
+ * him. He walks through without stopping: behind the open leaf he is out of
+ * sight for a moment, and that is where his costume changes.
  */
-export const DOOR = { jamb: 4, leaf: 12, height: 44 } as const
+export const DOOR = { jamb: 4, leaf: 24, height: 44 } as const
+/**
+ * Frank's rule: every room keeps a clear area at each door where no object may
+ * stand: the open door's swing plus room for him to stand clear of it.
+ */
+export const DOOR_CLEAR = DOOR.leaf + 2 * KEEPER_HALF
 /** Each side of a doorway he stands, and the doorways themselves. */
 const PLACES = {
   stairs: STAGE.ladderX,
@@ -327,6 +347,14 @@ export interface Segment {
   untilStopped: boolean
   /** He works this doorway's door in this step (opens or closes it), so his hand may touch it. */
   touches: 'door' | 'inner' | null
+  /** Passing through a doorway: the door is meant to cover him here. */
+  covered: boolean
+  /** Frames already walked before this piece (a doorway walk is split where the costume changes). */
+  phase: number
+  /** Stand still on this frame (a wait step). */
+  hold?: number
+  /** He comes out of the doorway in this outfit, changed at this piece's start. */
+  changes?: string
 }
 
 export interface TimedCue extends Cue {
@@ -398,6 +426,8 @@ export function compile(r: Recipe, macros: Record<string, Recipe>, clips: ClipLo
         main: !!s.main,
         untilStopped: !!s.untilStopped,
         touches: s.doorAfter && s.kind !== 'hide' ? (s.through ?? 'door') : null,
+        covered: false,
+        phase: 0,
       }
       if (s.kind === 'walk') {
         const to = placeX(r, s.to ?? 'action', x)
@@ -408,7 +438,8 @@ export function compile(r: Recipe, macros: Record<string, Recipe>, clips: ClipLo
         const dist = Math.abs(to - x)
         if (to !== x) facing = to > x ? 'right' : 'left'
         if (s.facing && s.facing !== 'auto' && dist === 0) facing = s.facing
-        const dur = dist / speed
+        // Whole strides only, so he arrives on the standing frame (the speed gives a little).
+        const dur = info && dist > 0 ? (Math.max(1, Math.round(((dist / speed) * info.fps) / roundOf(info))) * roundOf(info)) / info.fps : dist / speed
         if (dur > 0) segments.push({ ...base, kind: 'walk', start: t, end: t + dur, clip, info, x0: x, x1: to, mirror: mirrorFor(info, facing), once: false, visible: true })
         t += dur
         x = to
@@ -421,16 +452,37 @@ export function compile(r: Recipe, macros: Record<string, Recipe>, clips: ClipLo
         const info = clip ? clips(clip) ?? null : null
         if (s.kind !== 'wait' && !info) problems.push(`Step “${s.label ?? s.id}” needs a clip${clip ? ` (${clip} is not in the sprites)` : ''}`)
         let dur = s.kind === 'play' ? (info ? info.frames / info.fps : 1) : Math.max(0, s.seconds ?? 2)
-        if (s.main && opts.mainSeconds !== undefined) dur = Math.max(0, Math.min(dur, opts.mainSeconds))
-        segments.push({ ...base, kind: s.kind, start: t, end: t + dur, clip: clip || null, info, x0: x, x1: x, mirror: mirrorFor(info, facing), once: s.kind === 'play' || s.kind === 'wait', visible: true })
+        // A loop runs whole rounds, so it ends where it began; stopped early, it finishes the round it is in.
+        const round = s.kind === 'loop' && info ? roundOf(info) / info.fps : 0
+        if (round) dur = Math.max(1, Math.round(dur / round)) * round
+        if (s.main && opts.mainSeconds !== undefined) dur = Math.max(0, Math.min(dur, round ? Math.ceil(opts.mainSeconds / round - 1e-9) * round : opts.mainSeconds))
+        segments.push({ ...base, kind: s.kind, start: t, end: t + dur, clip: clip || null, info, x0: x, x1: x, mirror: mirrorFor(info, facing), once: s.kind === 'play' || s.kind === 'wait', visible: true, hold: s.kind === 'wait' ? 0 : undefined })
         t += dur
       } else if (s.kind === 'hide') {
+        // He walks straight through the doorway. Behind the open leaf he is out of sight, and his costume changes there.
         const way = s.through ?? 'door'
         const wall = DOORWAY[way]
         const to = way === 'door' ? (x < wall ? PLACES.doorIn : PLACES.doorOut) : x < wall ? PLACES.innerOut : PLACES.innerIn
+        const behind = way === 'door' ? DOOR.leaf / 2 : STAGE.roomW - DOOR.leaf / 2
         facing = to > x ? 'right' : 'left'
-        const dur = Math.max(0.1, s.seconds ?? 0.6)
-        segments.push({ ...base, kind: 'hide', start: t, end: t + dur, clip: null, info: null, x0: x, x1: to, mirror: false, once: false, visible: false })
+        const clipA = walkFor(outfit, has)
+        const infoA = clips(clipA) ?? null
+        const speed = Math.max(1, s.speed ?? r.walkSpeed)
+        const dist = Math.abs(to - x)
+        const dur = infoA ? (Math.max(1, Math.round(((dist / speed) * infoA.fps) / roundOf(infoA))) * roundOf(infoA)) / infoA.fps : dist / speed
+        const cover = { ...base, kind: 'hide' as const, once: false, visible: true, covered: true }
+        if ((door || way !== 'door') && (inner || way !== 'inner')) {
+          // fine: the door is open
+        } else problems.push(`Step “${s.label ?? s.id}” walks through a closed door: open it first`)
+        if (swap && swap !== outfit && dist > 0) {
+          const tSwap = t + (dur * Math.abs(behind - x)) / dist
+          segments.push({ ...cover, start: t, end: tSwap, clip: clipA, info: infoA, x0: x, x1: behind, mirror: mirrorFor(infoA, facing) })
+          const clipB = walkFor(swap, has)
+          const infoB = clips(clipB) ?? null
+          const walked = infoA ? Math.floor((tSwap - t) * infoA.fps + 1e-9) : 0
+          segments.push({ ...cover, outfit: swap, changes: swap, start: tSwap, end: t + dur, clip: clipB, info: infoB, x0: behind, x1: to, mirror: mirrorFor(infoB, facing), phase: walked })
+          outfit = swap
+        } else if (dur > 0) segments.push({ ...cover, start: t, end: t + dur, clip: clipA, info: infoA, x0: x, x1: to, mirror: mirrorFor(infoA, facing) })
         t += dur
         x = to
         if (swap) outfit = swap
@@ -490,8 +542,9 @@ export interface Shot {
 export function frameFrom(seg: Segment, local: number): number {
   const info = seg.info
   if (!info) return 0
+  if (seg.hold !== undefined) return Math.min(info.frames - 1, seg.hold)
   const n = Math.floor(Math.max(0, local) * info.fps + 1e-9)
-  const i = seg.once ? Math.min(info.frames - 1, n) : n % info.frames
+  const i = seg.once ? Math.min(info.frames - 1, n) : (n + seg.phase) % roundOf(info)
   return seg.reverse ? info.frames - 1 - i : i
 }
 
@@ -563,7 +616,7 @@ const bodyBounds: Bounds = { left: -KEEPER_HALF, right: KEEPER_HALF, bottom: 0, 
 export interface Issue {
   time: number
   stepId: string
-  kind: 'walk' | 'cover'
+  kind: 'walk' | 'cover' | 'swap' | 'seam' | 'place'
   text: string
 }
 
@@ -610,6 +663,7 @@ export function checkSolids(r: Recipe, tl: Timeline, boundsOf: BoundsLookup = ()
       const left = seg.mirror ? x - b.right : x + b.left
       const right = seg.mirror ? x - b.left : x + b.right
       for (const z of zones) {
+        if (seg.covered && (z.kind === 'wall' || z.kind === 'door')) continue // passing through: the door is meant to cover him
         if (seg.touches === 'door' && (z.id === 'wall' || z.id === 'door')) continue // his hand is on the door
         if (seg.touches === 'inner' && (z.id === 'wall-far' || z.id === 'inner')) continue
         if (!z.front || right <= z.x0 || left >= z.x1 || b.bottom + seg.dy >= z.top) continue
@@ -617,7 +671,94 @@ export function checkSolids(r: Recipe, tl: Timeline, boundsOf: BoundsLookup = ()
       }
     }
   }
+  // Nothing may stand in a door's clear area (any variant: each is checked as it is shown).
+  const clear = [{ x0: 0, x1: DOOR_CLEAR, label: 'the door' }, ...(r.room.inner ? [{ x0: STAGE.roomW - DOOR_CLEAR, x1: STAGE.roomW, label: 'the inner door' }] : [])]
+  for (const o of r.objects) {
+    for (const c of clear) if (o.x + o.w / 2 > c.x0 && o.x - o.w / 2 < c.x1) add({ time: 0, stepId: '', kind: 'place', text: `${o.label} stands in the clear area by ${c.label} (${Math.round(o.x - o.w / 2)}–${Math.round(o.x + o.w / 2)} px; keep ${c.x0}–${c.x1} px free)` }, `place-${o.id}-${c.label}`)
+  }
+  // Where his costume changes he must be completely behind the open door: every pixel of that frame.
+  for (const seg of tl.segments) {
+    if (!seg.changes || !seg.info) continue
+    const way = seg.x0 < STAGE.roomW / 2 ? 'door' : 'inner'
+    const leaf = way === 'door' ? { x0: 0, x1: DOOR.leaf } : { x0: STAGE.roomW - DOOR.leaf, x1: STAGE.roomW }
+    const b = boundsOf(seg.clip!, frameFrom(seg, 0)) ?? bodyBounds
+    const x = Math.round(seg.x0) + seg.dx
+    const left = seg.mirror ? x - b.right : x + b.left
+    const right = seg.mirror ? x - b.left : x + b.right
+    if (left < leaf.x0 || right > leaf.x1 || b.top > DOOR.height) add({ time: seg.start, stepId: seg.stepId, kind: 'swap', text: `his costume changes where part of him can still be seen (${left}–${right} px; the door covers ${leaf.x0}–${leaf.x1})` }, 'swap')
+  }
   return out.sort((a, b) => a.time - b.time)
+}
+
+// ─── Joins between clips ─────────────────────────────────────────────────────
+
+/** One handover from one clip to the next, as he is drawn either side of it. */
+export interface Join {
+  time: number
+  a: Segment
+  b: Segment
+  /** The frame the outgoing clip would show next (its last, or for a loop the frame it returns to). */
+  aFrame: number
+  bFrame: number
+  ax: number
+  bx: number
+  /** The poses either side, from the clips' metadata, when known. */
+  aPose?: string
+  bPose?: string
+}
+
+/** Every place one visible clip hands over to another. The studio compares the two frames' pixels. */
+export function joinsOf(tl: Timeline): Join[] {
+  const seen = tl.segments.filter((s) => s.visible && s.clip && s.info)
+  const out: Join[] = []
+  for (let k = 1; k < seen.length; k++) {
+    const a = seen[k - 1]
+    const b = seen[k]
+    if (Math.abs(a.end - b.start) > 1e-6 || !a.info || !b.info) continue
+    if (a.changes || b.changes) continue // a costume change happens out of sight
+    const aFrame = a.once ? frameFrom(a, a.end - a.start - 1e-6) : frameFrom(a, a.end - a.start + 1e-6)
+    const aPose = flipPose(a.once ? (a.reverse ? a.info.startPose : a.info.endPose) : a.info.startPose, a.mirror)
+    const bPose = flipPose(b.reverse ? b.info.endPose : b.info.startPose, b.mirror)
+    out.push({ time: b.start, a, b, aFrame, bFrame: frameFrom(b, 0), ax: Math.round(a.x1) + a.dx, bx: Math.round(b.x0) + b.dx, aPose, bPose })
+  }
+  return out
+}
+
+/** A pose as seen when the clip is flipped: facing right becomes facing left. */
+export const flipPose = (pose: string | undefined, mirror: boolean) => (!pose || !mirror ? pose : pose.replace(/-(right|left)\b/, (_, s) => (s === 'right' ? '-left' : '-right')))
+
+/**
+ * The ordinary poses a bridge may pass through: standing, sitting, crouching or
+ * lying, facing a side, the front or the back. A bridge never goes through a
+ * special state (a parachute open, swimming), however the poses happen to match.
+ */
+export const isOrdinaryPose = (pose: string) => /^(standing|sitting|crouching|lying)-(front|back|side-(left|right)|rear-(left|right))$/.test(pose)
+
+/** One way to play a clip in a bridge: forwards or backwards, as drawn or flipped. */
+export interface BridgeClip {
+  name: string
+  reverse: boolean
+  mirror: boolean
+}
+
+/**
+ * Clips that could bridge a join: from the pose one side ends in to the pose
+ * the other starts in, played forwards or backwards, as drawn or flipped, on
+ * their own or two in a row (right → front → left turns him round).
+ */
+export function bridgesFor(join: Join, all: { name: string; info: ClipInfo }[]): BridgeClip[][] {
+  if (!join.aPose || !join.bPose || join.aPose === join.bPose) return []
+  const outfit = join.a.outfit
+  const ways = all.flatMap(({ name, info }) => {
+    if ((info.outfit ?? 'standard') !== outfit) return []
+    if (!info.startPose || !info.endPose || info.startPose === info.endPose || info.frames < 2 || !isOrdinaryPose(info.startPose) || !isOrdinaryPose(info.endPose)) return []
+    return [false, true].flatMap((reverse) =>
+      [false, ...(info.mirrorSafe ? [true] : [])].map((mirror) => ({ way: { name, reverse, mirror }, from: flipPose(reverse ? info.endPose : info.startPose, mirror)!, to: flipPose(reverse ? info.startPose : info.endPose, mirror)! })),
+    )
+  })
+  const singles = ways.filter((w) => w.from === join.aPose && w.to === join.bPose).map((w) => [w.way])
+  const pairs = ways.filter((w) => w.from === join.aPose).flatMap((w1) => ways.filter((w2) => w2.from === w1.to && w2.to === join.bPose).map((w2) => [w1.way, w2.way]))
+  return [...singles, ...pairs].slice(0, 8)
 }
 
 /** The main step's segment, if the recipe has one. */

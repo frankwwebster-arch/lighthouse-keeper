@@ -3,16 +3,16 @@ import { fpsFor } from '../game/animFps'
 import { verifyPin } from '../game/remote'
 import { SpriteProvider, useAnimSpeeds, useSprites } from '../ui/Sprite'
 import { Mixer } from './audio'
-import { measureSheet } from './bounds'
+import { joinChange, measureSheet, sheetPixels, type SheetInfo } from './bounds'
 import { CATEGORIES, DRAFTS } from './drafts'
 import { Inspector, KIND_LABEL } from './Inspector'
-import { checkSolids, cleanRecipe, compile, everyVariant, hashOf, mainOf, moveStep, newCue, newId, resolveRecipe, shotAt, soundsUsed, withStep, type Bounds, type Category, type ClipInfo, type Recipe, type Step, type StepKind } from './recipe'
+import { bridgesFor, checkSolids, type BridgeClip, cleanRecipe, compile, everyVariant, joinsOf, type Issue, type Join, hashOf, mainOf, moveStep, newCue, newId, resolveRecipe, shotAt, soundsUsed, withStep, type Bounds, type Category, type ClipInfo, type Recipe, type Step, type StepKind } from './recipe'
 import { SoundLibrary } from './SoundLibrary'
 import { StageView, type Sel, type SheetEntry } from './StageView'
 import { deleteSound, loadStudio, resetDoc, saveDoc, saveType, soundIdFrom, uploadSound, type SavedCategory, type SavedDoc, type SoundInfo } from './store'
 import { TimelineView } from './TimelineView'
 
-type Rich = SheetEntry & { fps?: number; facing?: string; mirrorSafe?: boolean; outfit?: string; density?: number; sfxCues?: { frame: number; cue: string }[] }
+type Rich = SheetEntry & { fps?: number; facing?: string; mirrorSafe?: boolean; outfit?: string; density?: number; sfxCues?: { frame: number; cue: string }[]; loop?: boolean; startPose?: string; endPose?: string }
 const NOT_OUTFITS = new Set(['mosaic-privacy', 'towel-privacy', 'privacy-foam', 'party-hat-transition'])
 const DRAFT_BY_ID = Object.fromEntries(DRAFTS.map((d) => [d.id, d]))
 
@@ -85,7 +85,7 @@ function Studio() {
     const e = manifest[name]
     if (!e || typeof e === 'string' || !e.w) return undefined
     const drawn = e.fps ?? 4
-    return { w: e.w, h: e.h, frames: e.frames ?? 1, fps: fpsFor(speeds, name, drawn), anchor: e.anchor ?? [Math.round(e.w / 2), e.h], native: e.facing?.includes('left') ? 'left' : e.facing?.includes('right') ? 'right' : null, mirrorSafe: !!e.mirrorSafe, sfxCues: Array.isArray(e.sfxCues) ? e.sfxCues : undefined }
+    return { w: e.w, h: e.h, frames: e.frames ?? 1, fps: fpsFor(speeds, name, drawn), anchor: e.anchor ?? [Math.round(e.w / 2), e.h], native: e.facing?.includes('left') ? 'left' : e.facing?.includes('right') ? 'right' : null, mirrorSafe: !!e.mirrorSafe, sfxCues: Array.isArray(e.sfxCues) ? e.sfxCues : undefined, closed: name.endsWith('_cycle') && e.loop !== false, startPose: e.startPose, endPose: e.endPose, outfit: e.outfit }
   }, [manifest, speeds])
   const clipNames = useMemo(() => Object.keys(manifest).filter((k) => k.startsWith('keeper_')).sort(), [manifest])
   const outfits = useMemo(() => ['standard', ...[...new Set(Object.values(manifest).flatMap((e) => (typeof e !== 'string' && e.outfit && !NOT_OUTFITS.has(e.outfit) ? [e.outfit] : [])))].sort()], [manifest])
@@ -115,6 +115,57 @@ function Studio() {
     const vtl = compile(r, macros, lookup)
     return { object, variant, count: vtl.problems.length + checkSolids(r, vtl, boundsOf).length }
   }) : []), [ready, doc, cats, macros, lookup, boundsOf])
+
+  // Every handover between two clips, compared pixel for pixel: a jump there is the flash you see.
+  const sheetInfo = useCallback((name: string): SheetInfo | null => {
+    const e = manifest[name]
+    return e && typeof e !== 'string' && e.w ? { file: e.file, w: e.w, h: e.h, frames: e.frames ?? 1, anchor: e.anchor ?? [Math.round(e.w / 2), e.h], density: e.density ?? 1 } : null
+  }, [manifest])
+  const joins = useMemo(() => (ready ? joinsOf(tl) : []), [ready, tl])
+  const joinKey = (j: Join) => [j.a.clip, j.aFrame, j.ax, j.a.dy, j.a.mirror, j.b.clip, j.bFrame, j.bx, j.b.dy, j.b.mirror].join('|')
+  const [changes, setChanges] = useState<Record<string, number>>({})
+  useEffect(() => {
+    let alive = true
+    for (const j of joins) {
+      const key = joinKey(j)
+      const a = sheetInfo(j.a.clip!)
+      const b = sheetInfo(j.b.clip!)
+      if (key in changes || !a || !b) continue
+      void Promise.all([sheetPixels(a), sheetPixels(b)]).then(([pa, pb]) => {
+        if (alive && pa && pb) setChanges((m) => ({ ...m, [key]: joinChange(pa, j.aFrame, j.ax, j.a.dy, j.a.mirror, pb, j.bFrame, j.bx, j.b.dy, j.b.mirror) }))
+      })
+    }
+    return () => {
+      alive = false
+    }
+  }, [joins, sheetInfo, changes])
+  const JOIN_OK = 3
+  const joinIssues: (Issue & { join: Join; change: number })[] = joins.flatMap((j) => {
+    const change = changes[joinKey(j)]
+    if (change === undefined || (change <= JOIN_OK && j.ax === j.bx)) return []
+    const shift = j.ax !== j.bx ? `, and his feet jump ${Math.abs(j.bx - j.ax)} px` : ''
+    return [{ time: j.time, stepId: j.b.stepId, kind: 'seam' as const, join: j, change, text: `jump between ${j.a.label} and ${j.b.label}: ${change}% of him changes in one frame${shift} (${j.a.clip} frame ${j.aFrame + 1} → ${j.b.clip} frame ${j.bFrame + 1})` }]
+  })
+  const allIssues: (Issue & { join?: Join; change?: number })[] = [...issues, ...joinIssues].sort((a, b) => a.time - b.time)
+  const keeperClips = useMemo(() => clipNames.flatMap((name) => { const info = lookup(name); return info ? [{ name, info }] : [] }), [clipNames, lookup])
+  const [look, setLook] = useState<Join | null>(null)
+  const [bridgesOpen, setBridgesOpen] = useState<number | null>(null)
+  const nameOf = (b: BridgeClip) => `${b.name.replace(/^keeper_/, '').replace(/_/g, ' ')}${b.reverse ? ' backwards' : ''}${b.mirror ? ' flipped' : ''}`
+  const insertBridge = (j: Join, chain: BridgeClip[]) => {
+    if (j.a.stepId === j.b.stepId) return setMessage('This join is inside one step or macro: open the macro to add a bridge there.')
+    const i = doc.steps.findIndex((s) => s.id === j.b.stepId)
+    if (i < 0) return
+    // A flipped clip plays facing the other way from how it was drawn.
+    const added: Step[] = chain.map((b) => ({ id: newId('bridge'), kind: 'play', clip: b.name, reverse: b.reverse, facing: (lookup(b.name)?.native === 'left') !== b.mirror ? 'left' : 'right', label: `Bridge: ${nameOf(b)}` }))
+    edit({ ...doc, steps: [...doc.steps.slice(0, i), ...added, ...doc.steps.slice(i)] })
+    setBridgesOpen(null)
+    setMessage(`Added a bridge before “${doc.steps[i].label ?? doc.steps[i].kind}”.`)
+  }
+  const noteForCodex = (j: Join, change: number) => {
+    const line = `Join at ${j.time.toFixed(2)}s: ${j.a.clip} frame ${j.aFrame + 1} → ${j.b.clip} frame ${j.bFrame + 1} changes ${change}%${j.ax !== j.bx ? ` and shifts ${Math.abs(j.bx - j.ax)} px` : ''}. Needs ${j.aPose && j.bPose && j.aPose !== j.bPose ? `a bridge from ${j.aPose} to ${j.bPose}` : `matching end frames (both should be ${j.aPose ?? 'the same pose'})`}.`
+    edit({ ...doc, notes: doc.notes ? `${doc.notes}\n${line}` : line })
+    setMessage('Added to the recipe’s notes for Codex.')
+  }
 
   const shot = shotAt(tl, t, live)
   const main = mainOf(tl)
@@ -365,7 +416,7 @@ function Studio() {
         {draftMoved && <p className="st-warn">The draft has been updated since you edited this. Your version is showing; “Back to the draft” shows theirs.</p>}
 
         <div className="st-stagewrap">
-          <StageView doc={live} shot={shot} tl={tl} showRoute={showRoute} showGhosts={showGhosts} evening={evening} zoom={zoom} sel={sel} sheet={sheet} editable={editable} onSelect={setSel} onObjectX={(id, x) => edit({ ...doc, objects: doc.objects.map((o) => (o.id === id ? { ...o, x } : o)) })} onActionDx={(dx) => edit({ ...doc, action: { ...doc.action, dx: dx - (live.action.dx - doc.action.dx) } })} />
+          <StageView doc={live} shot={shot} tl={tl} look={look ? { e: sheet(look.a.clip!), frame: look.aFrame, x: look.ax, y: look.a.dy, mirror: look.a.mirror } : null} showRoute={showRoute} showGhosts={showGhosts} evening={evening} zoom={zoom} sel={sel} sheet={sheet} editable={editable} onSelect={setSel} onObjectX={(id, x) => edit({ ...doc, objects: doc.objects.map((o) => (o.id === id ? { ...o, x } : o)) })} onActionDx={(dx) => edit({ ...doc, action: { ...doc.action, dx: dx - (live.action.dx - doc.action.dx) } })} />
         </div>
 
         <div className="st-transport">
@@ -391,16 +442,34 @@ function Studio() {
           <label>Timeline <select value={pps} onChange={(e) => setPps(Number(e.target.value))}>{[30, 60, 120, 240].map((z) => <option key={z} value={z}>{z} px/s</option>)}</select></label>
         </div>
 
-        <TimelineView tl={tl} t={t} pps={pps} sel={sel} issues={issues} soundLength={(s) => (s && sounds.some((x) => x.id === s) ? 1 : 0.2)} onSeek={seek} onSelect={setSel} onMoveCue={(stepId, cueId, at) => edit(withStep(doc, stepId, (s) => ({ ...s, cues: (s.cues ?? []).map((c) => (c.id === cueId ? { ...c, at } : c)) })))} onDropSound={(time, s) => editable ? addCue(time, s) : setMessage('Unlock with the PIN to add sounds.')} onDropFile={async (time, f) => { const id = await upload(f); if (id) addCue(time, id) }} />
+        <TimelineView tl={tl} t={t} pps={pps} sel={sel} issues={allIssues} soundLength={(s) => (s && sounds.some((x) => x.id === s) ? 1 : 0.2)} onSeek={seek} onSelect={setSel} onMoveCue={(stepId, cueId, at) => edit(withStep(doc, stepId, (s) => ({ ...s, cues: (s.cues ?? []).map((c) => (c.id === cueId ? { ...c, at } : c)) })))} onDropSound={(time, s) => editable ? addCue(time, s) : setMessage('Unlock with the PIN to add sounds.')} onDropFile={async (time, f) => { const id = await upload(f); if (id) addCue(time, id) }} />
 
-        {(problems.length > 0 || issues.length > 0) && (
+        {(problems.length > 0 || allIssues.length > 0) && (
           <ul className="st-problems">
             {problems.map((p) => <li key={p}>{p}</li>)}
-            {issues.map((i, k) => (
-              <li key={k}>
-                <button type="button" className="st-link" onClick={() => { seek(i.time); setSel({ type: 'step', id: i.stepId }) }}>{i.time.toFixed(2)}s</button> {i.kind === 'walk' ? '🚧' : '🙈'} {i.text}
-              </li>
-            ))}
+            {allIssues.map((i, k) => {
+              const j = i.join ? { join: i.join, change: i.change ?? 0 } : null
+              const bridges = j ? bridgesFor(j.join, keeperClips) : []
+              return (
+                <li key={k}>
+                  <button type="button" className="st-link" onClick={() => { seek(i.time); setSel({ type: 'step', id: i.stepId }) }}>{i.time.toFixed(2)}s</button> {i.kind === 'walk' ? '🚧' : i.kind === 'seam' ? '⚡' : i.kind === 'swap' ? '👀' : i.kind === 'place' ? '🚪' : '🙈'} {i.text}
+                  {j && (
+                    <span className="st-fixes">
+                      <button type="button" className="st-mini" onClick={() => { setPlaying(false); setT(Math.max(0, j.join.time + 1e-4)); setLook(look === j.join ? null : j.join) }}>{look === j.join ? 'Stop looking' : 'Look'}</button>
+                      {editable && <button type="button" className="st-mini" onClick={() => setBridgesOpen(bridgesOpen === k ? null : k)}>Bridges ({bridges.length})</button>}
+                      {editable && <button type="button" className="st-mini" onClick={() => noteForCodex(j.join, j.change)}>Note for Codex</button>}
+                    </span>
+                  )}
+                  {j && bridgesOpen === k && (
+                    <div className="st-bridges">
+                      {j.join.aPose && j.join.bPose ? <small>From <b>{j.join.aPose}</b> to <b>{j.join.bPose}</b>:</small> : <small>These clips have no recorded poses, so no bridge can be suggested.</small>}
+                      {bridges.map((chain) => <button key={chain.map(nameOf).join('+')} type="button" className="st-mini" onClick={() => insertBridge(j.join, chain)}>{chain.map(nameOf).join(' → ')}</button>)}
+                      {j.join.aPose && j.join.bPose && !bridges.length && <small>{j.join.aPose === j.join.bPose ? 'Same pose both sides, so the frames themselves differ: a note for Codex is the fix.' : 'No clip makes this move yet: a note for Codex is the fix.'}</small>}
+                    </div>
+                  )}
+                </li>
+              )
+            })}
           </ul>
         )}
         {variants.length > 0 && (
@@ -413,7 +482,7 @@ function Studio() {
             ))}
           </div>
         )}
-        {ready && !problems.length && !issues.length && <p className="st-ok">No problems: he never walks into anything solid, and nothing in front of him covers him while he can be seen.</p>}
+        {ready && !problems.length && !allIssues.length && <p className="st-ok">No problems: every join between clips matches, he never walks into anything solid, nothing in front of him covers him while he can be seen, and his costume only changes out of sight.</p>}
       </main>
 
       <aside className="st-side">

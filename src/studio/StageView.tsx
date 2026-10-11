@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { DOOR, DOORWAY, STAGE, frameFrom, isFront, isSolid, placeX, type Recipe, type Shot, type StageObject, type Timeline } from './recipe'
+import { DOOR, DOORWAY, DOOR_CLEAR, STAGE, frameFrom, isFront, isSolid, placeX, type Recipe, type Shot, type StageObject, type Timeline } from './recipe'
 
 /** A sprite entry as the manifest gives it (only what the stage needs). */
 export interface SheetEntry {
@@ -83,6 +83,12 @@ function Route({ tl, steps }: { tl: Timeline; steps: string[] }) {
           </g>
         )
       })}
+      {tl.segments.filter((s) => s.changes).map((s, i) => (
+        <g key={`swap${i}`} className="swap">
+          <path d={`M${s.x0} ${-STAGE.roomH + 7} l1.5 1.5 l-1.5 1.5 l-1.5 -1.5 z`} />
+          <text x={s.x0 + 3} y={-STAGE.roomH + 9.2}>→ {s.changes}</text>
+        </g>
+      ))}
       {stops.map((s, i) => {
         const x = s.x0 + s.dx
         const key = `${x}`
@@ -100,10 +106,12 @@ function Route({ tl, steps }: { tl: Timeline; steps: string[] }) {
   )
 }
 
-export function StageView({ doc, shot, tl, zoom, sel, sheet, onSelect, onObjectX, onActionDx, editable, showRoute, showGhosts, evening }: {
+export function StageView({ doc, shot, tl, look, zoom, sel, sheet, onSelect, onObjectX, onActionDx, editable, showRoute, showGhosts, evening }: {
   doc: Recipe
   shot: Shot
   tl: Timeline
+  /** A join being inspected: the outgoing clip's frame, drawn as a red onion skin over the incoming one. */
+  look: { e: SheetEntry | undefined; frame: number; x: number; y: number; mirror: boolean } | null
   showRoute: boolean
   showGhosts: boolean
   /** Dark outside: the room's light is on only while its door is open (he is in there); the stairway is always lit. */
@@ -151,6 +159,11 @@ export function StageView({ doc, shot, tl, zoom, sel, sheet, onSelect, onObjectX
 
   return (
     <svg ref={svg} className="st-stage" viewBox={`${VIEW.left} ${VIEW.top} ${W} ${H}`} width={W * zoom} height={H * zoom} shapeRendering="crispEdges" onPointerDown={() => onSelect({ type: 'recipe' })}>
+      <defs>
+        {/* The onion skin: the outgoing frame in red, so any difference from the incoming frame shows. */}
+        <pattern id="st-hatch" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1" height="3" fill="#3d7bd9" /></pattern>
+        <filter id="st-red"><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 0.1  0 0 0 0 0.2  0 0 0 1 0" /></filter>
+      </defs>
       <rect className="st-stair" x={-STAGE.stairW} y={-STAGE.roomH} width={STAGE.stairW} height={STAGE.roomH} />
       <text className="st-roomname" x={-STAGE.stairW + 2} y={-STAGE.roomH + 5}>Stairway</text>
       <g className="st-ladder">
@@ -161,6 +174,9 @@ export function StageView({ doc, shot, tl, zoom, sel, sheet, onSelect, onObjectX
       <rect className="st-room" x={0} y={-STAGE.roomH} width={STAGE.roomW} height={STAGE.roomH} />
       <text className="st-roomname" x={DOOR.leaf + 2} y={-STAGE.roomH + 5}>{doc.room.name}</text>
       {doc.room.inner && <rect className="st-stair" x={STAGE.roomW} y={-STAGE.roomH} width={VIEW.right - STAGE.roomW - 2} height={STAGE.roomH} />}
+      {/* Each door's clear area: no object may stand here. */}
+      <rect className="st-clear" x={0} y={-STAGE.roomH} width={DOOR_CLEAR} height={STAGE.roomH} />
+      {doc.room.inner && <rect className="st-clear" x={STAGE.roomW - DOOR_CLEAR} y={-STAGE.roomH} width={DOOR_CLEAR} height={STAGE.roomH} />}
       <line className="st-floor" x1={VIEW.left} x2={right} y1={0.5} y2={0.5} />
       {back.map((o) => <ObjectView key={o.id} o={o} sheet={objSheet(o)} selected={sel?.type === 'object' && sel.id === o.id} onPointerDown={(e) => { onSelect({ type: 'object', id: o.id }); drag(e, o.x, (x) => onObjectX(o.id, x)) }} />)}
 
@@ -173,7 +189,8 @@ export function StageView({ doc, shot, tl, zoom, sel, sheet, onSelect, onObjectX
       )}
 
       {ghosts.map((g, i) => <Frame key={i} e={g.e!} frame={g.frame} x={g.s.x0 + g.s.dx} y={g.s.dy} mirror={g.s.mirror} opacity={0.22} />)}
-      {shot.visible && keeper && <Frame e={keeper} frame={shot.frame} x={shot.x} y={shot.y} mirror={shot.mirror} />}
+      {shot.visible && keeper && <Frame e={keeper} frame={shot.frame} x={shot.x} y={shot.y} mirror={shot.mirror} opacity={look ? 0.6 : 1} />}
+      {look?.e && <g className="st-onion"><Frame e={look.e} frame={look.frame} x={look.x} y={look.y} mirror={look.mirror} opacity={0.55} /></g>}
 
       {front.map((o) => <ObjectView key={o.id} o={o} sheet={objSheet(o)} selected={sel?.type === 'object' && sel.id === o.id} onPointerDown={(e) => { onSelect({ type: 'object', id: o.id }); drag(e, o.x, (x) => onObjectX(o.id, x)) }} />)}
       <Door at={DOORWAY.door} open={shot.door} side="left" />

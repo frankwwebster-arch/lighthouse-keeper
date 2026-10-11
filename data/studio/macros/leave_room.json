@@ -1,6 +1,6 @@
 {
   "kind": "macro",
-  "notes": "Walk back to the door, which is still open, and step through. While hidden he goes back into his standard clothes; the door closes behind him and he walks on to the stairs.",
+  "notes": "Walk back to the door, which is still open, and walk straight through. Behind the open door he goes back into his standard clothes; the door closes behind him and he walks on to the stairs.",
   "status": "draft",
   "outfit": "standard",
   "startAt": "stairs",
@@ -27,10 +27,9 @@
       "id": "through",
       "kind": "hide",
       "through": "door",
-      "seconds": 0.6,
       "swapTo": "standard",
       "doorAfter": "close",
-      "label": "Step through (back to standard clothes)",
+      "label": "Walk back through (into standard clothes behind the door)",
       "cues": [
         {
           "id": "c1",

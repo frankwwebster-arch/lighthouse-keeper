@@ -2,7 +2,7 @@
   "id": "bake_cake",
   "kind": "recipe",
   "title": "Bake a cake",
-  "notes": "One recipe for all three ovens: he stands at the oven type's own spot, so swapping the oven moves where he stands and the route stretches to the table. Cake clips: oven retrieval, turn, carry, place at the 19 px table datum.",
+  "notes": "One recipe for all three ovens: he stands at the oven type's own spot, so swapping the oven moves where he stands and the route stretches to the table. Cake clips: oven retrieval, turn, carry, place at the 19 px table datum. The join between taking the cake out and turning with it is flagged on purpose: the poses don't yet say he is holding the cake, so no empty-handed turn may bridge it (a note for Codex).",
   "status": "draft",
   "activity": "cooker_cook",
   "outfit": "standard",
@@ -16,7 +16,7 @@
     {
       "id": "cooker",
       "label": "Oven",
-      "x": 46,
+      "x": 70,
       "w": 28,
       "h": 22,
       "category": "cooker",
@@ -25,8 +25,8 @@
     {
       "id": "table",
       "label": "Table",
-      "x": 96,
-      "w": 24,
+      "x": 101,
+      "w": 16,
       "h": 19,
       "layer": "back",
       "solid": true,
@@ -130,6 +130,21 @@
       "seconds": 2,
       "main": true,
       "label": "Admire it"
+    },
+    {
+      "id": "bridge-10-turn_back",
+      "kind": "play",
+      "clip": "keeper_turn_back",
+      "facing": "right",
+      "label": "Turn (standing-side-right \u2192 standing-side-left, part 1)"
+    },
+    {
+      "id": "bridge-11-turn_left_back",
+      "kind": "play",
+      "clip": "keeper_turn_left_back",
+      "reverse": true,
+      "facing": "left",
+      "label": "Turn (standing-side-right \u2192 standing-side-left, part 2)"
     },
     {
       "id": "leave",

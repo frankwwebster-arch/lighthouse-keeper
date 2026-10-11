@@ -2,7 +2,7 @@
   "id": "cooker",
   "kind": "category",
   "label": "Oven",
-  "notes": "Against the back wall: he stands in front of it, back to the camera, to use it (the rear oven clips align the rack at the middle of his body). Sizes are placeholders until Codex's oven art fixes them; each variant's standing spot is where his feet go for that oven.",
+  "notes": "Against the back wall: he stands in front of it, back to the camera, to use it (the rear oven clips align the rack at the middle of his body). Sizes are placeholders until Codex's oven art fixes them; each variant's standing spot is where his feet go for that oven. Every room keeps its door's clear area free (the first 46 px), so the kitchen's furniture has 64 px: the biggest oven is 46 wide here until Codex's art decides.",
   "layer": "back",
   "solid": false,
   "spots": [
@@ -65,7 +65,7 @@
       "label": "Fancy professional kitchen",
       "tier": 3,
       "sprite": "obj_cooker_t3",
-      "w": 58,
+      "w": 46,
       "h": 28,
       "marks": [
         {

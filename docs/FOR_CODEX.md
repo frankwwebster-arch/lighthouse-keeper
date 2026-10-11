@@ -2,6 +2,17 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Joins the recipe studio flags for you (11 Oct 2026)
+
+The studio now checks every handover between clips, pixel for pixel (`docs/RECIPES.md`, "Clean joins between clips"). With the walks fixed to finish on whole strides, what is left in the drafts is art and metadata for you:
+
+- `keeper_door_open_side`: its first frame isn't the standing pose (103% different from the walk's standing frame), and its last frame isn't either (112%). It is in every recipe through the door macros, so it's the top priority.
+- The hot-drink chain (pour → stir → pick up → drink → put down) and the cake chain (oven → turn → carry → place) don't join each other or the standing pose.
+- **Poses need held props.** `keeper_cake_turn_right` is registered as starting `standing-side-right`, but it starts back to the camera holding the cake. Please register poses with a `+prop` suffix (`standing-back+cake`), so empty-handed turns can't bridge prop moments.
+- `keeper_turn_right_front` has no poses at all.
+- **Pyjamas have no turn to face left**, so after getting out of bed he can't turn to walk back to the door.
+- Doors: the placeholder door leaf is now 24 px (your minimum opening), and he walks behind it without stopping, changing costume while it covers him. **Room layouts must keep 46 px clear at each door** (Frank's rule), which leaves 64 px of a 110 px room for furniture.
+
 ## Background elements brief (10 Oct 2026)
 
 `docs/BACKGROUND_ELEMENTS.md` is your brief for everything behind and around the tower:

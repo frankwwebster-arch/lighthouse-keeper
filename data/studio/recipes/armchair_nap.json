@@ -77,6 +77,21 @@
       "label": "Stand up"
     },
     {
+      "id": "bridge-00-turn_back",
+      "kind": "play",
+      "clip": "keeper_turn_back",
+      "facing": "right",
+      "label": "Turn (standing-side-right → standing-side-left, part 1)"
+    },
+    {
+      "id": "bridge-01-turn_left_back",
+      "kind": "play",
+      "clip": "keeper_turn_left_back",
+      "reverse": true,
+      "facing": "left",
+      "label": "Turn (standing-side-right → standing-side-left, part 2)"
+    },
+    {
       "id": "leave",
       "kind": "macro",
       "macro": "leave_room",

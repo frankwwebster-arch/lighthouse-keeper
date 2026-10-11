@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import { CATEGORIES, CATEGORY_FILES, DRAFTS, DRAFT_FILES } from './drafts'
-import { KEEPER_HALF, checkSolids, cleanCategory, cleanRecipe, compile, everyVariant, resolveRecipe, frameFrom, hashOf, mainOf, moveStep, newCue, placeX, shotAt, soundsUsed, walkFor, type BoundsLookup, type ClipInfo, type ClipLookup, type Recipe, type StageObject } from './recipe'
+import { DOOR, DOOR_CLEAR, KEEPER_HALF, bridgesFor, checkSolids, flipPose, isOrdinaryPose, joinsOf, cleanCategory, cleanRecipe, compile, everyVariant, resolveRecipe, frameFrom, hashOf, mainOf, moveStep, newCue, placeX, shotAt, soundsUsed, walkFor, type BoundsLookup, type ClipInfo, type ClipLookup, type Recipe, type StageObject } from './recipe'
 
 const manifest = JSON.parse(readFileSync('public/sprites/manifest.json', 'utf8')) as Record<string, { w: number; h: number; frames: number; fps?: number; anchor?: [number, number]; facing?: string; mirrorSafe?: boolean }>
 const fromManifest: ClipLookup = (name) => {
@@ -56,8 +56,8 @@ describe('the drafts', () => {
     for (const raw of recipes) {
       const r = resolveRecipe(raw, CATEGORIES).recipe
       const tl = compile(r, macros, fromManifest)
-      const hides = tl.segments.filter((s) => s.kind === 'hide')
-      expect(hides.length, r.id).toBe(2)
+      const doorways = new Set(tl.segments.filter((s) => s.kind === 'hide').map((s) => `${s.stepId}/${s.innerId}`))
+      expect(doorways.size, r.id).toBe(2)
       const end = shotAt(tl, tl.duration, r)
       expect(end.x, r.id).toBe(placeX(r, 'stairs'))
       expect(tl.segments[tl.segments.length - 1].outfit, r.id).toBe('standard')
@@ -72,7 +72,8 @@ describe('compiling a recipe', () => {
     const walk = tl.segments[0]
     expect(walk.x0).toBe(placeX(r, 'stairs'))
     expect(walk.x1).toBe(60)
-    expect(walk.end).toBeCloseTo((60 - placeX(r, 'stairs')) / 20)
+    // Whole strides: the nearest whole number of 2 s rounds (8 frames at 4 fps) to the distance at 20 px/s.
+    expect(walk.end).toBeCloseTo(Math.max(1, Math.round((60 - placeX(r, 'stairs')) / 20 / 2)) * 2)
     expect(walk.mirror).toBe(false) // walking right, drawn facing right
     const r2 = { ...r, steps: [...r.steps, { id: 'b', kind: 'play' as const, clip: 'sit' }] }
     expect(compile(r2, {}, tiny).segments[1].mirror).toBe(true) // arrived facing left (the action's facing)
@@ -97,22 +98,29 @@ describe('compiling a recipe', () => {
     const r = base([{ id: 'a', kind: 'loop', clip: 'nap', seconds: 10, main: true }, { id: 'b', kind: 'play', clip: 'sit', reverse: true }])
     const tl = compile(r, {}, tiny)
     expect(frameFrom(tl.segments[0], 2.5)).toBe(1) // 4 frames at 2 fps: frame 5 wraps to 1
+    // 4 frames at 2 fps is a 2 s round: stopped at 3 s, he finishes the round he is in.
     const cut = compile(r, {}, tiny, { mainSeconds: 3 })
-    expect(cut.segments[0].end).toBe(3)
-    expect(cut.segments[1].start).toBe(3)
-    expect(cut.duration).toBeCloseTo(3 + 6 / 4)
+    expect(cut.segments[0].end).toBe(4)
+    expect(cut.segments[1].start).toBe(4)
+    expect(cut.duration).toBeCloseTo(4 + 6 / 4)
+    expect(compile(r, {}, tiny, { mainSeconds: 0.1 }).segments[0].end).toBe(2)
   })
 
-  it('hides him in the doorway, swaps the outfit there, and opens or closes the door', () => {
-    const enter: Recipe = cleanRecipe({ id: 'enter', kind: 'macro', steps: [{ id: 'w', kind: 'walk', to: 'doorOut' }, { id: 'o', kind: 'play', clip: 'door', doorAfter: 'open' }, { id: 'h', kind: 'hide', through: 'door', seconds: 0.5, swapTo: '$swapTo' }] })!
+  it('walks him straight through the doorway, changing his outfit behind the open door', () => {
+    const enter: Recipe = cleanRecipe({ id: 'enter', kind: 'macro', steps: [{ id: 'w', kind: 'walk', to: 'doorOut' }, { id: 'o', kind: 'play', clip: 'door', doorAfter: 'open' }, { id: 'h', kind: 'hide', through: 'door', swapTo: '$swapTo' }] })!
     const r = base([{ id: 'm', kind: 'macro', macro: 'enter', params: { swapTo: 'light-blue-pyjamas' } }, { id: 'g', kind: 'walk', to: 'action' }])
     const tl = compile(r, { enter }, tiny)
-    const hide = tl.segments.find((s) => s.kind === 'hide')!
-    expect(hide.visible).toBe(false)
-    expect(hide.door).toBe(true)
-    expect(hide.x0).toBeLessThan(0)
-    expect(hide.x1).toBeGreaterThan(0)
-    expect(hide.stepId).toBe('m') // macro steps belong to the recipe's macro step
+    const [before, after] = tl.segments.filter((s) => s.kind === 'hide')
+    expect(before.visible).toBe(true) // seen walking up to and behind the door, never popping in
+    expect(before.covered).toBe(true)
+    expect(before.door).toBe(true)
+    expect(before.x0).toBeLessThan(0)
+    expect(before.x1).toBe(DOOR.leaf / 2) // the costume changes where the open door covers all of him
+    expect(after.changes).toBe('light-blue-pyjamas')
+    expect(after.clip).toBe('keeper_pyjamas_walk')
+    expect(after.start).toBeCloseTo(before.end)
+    expect(after.x1).toBe(placeX(r, 'doorIn'))
+    expect(after.stepId).toBe('m') // macro steps belong to the recipe's macro step
     const walkIn = tl.segments[tl.segments.length - 1]
     expect(walkIn.outfit).toBe('light-blue-pyjamas')
     expect(walkIn.clip).toBe('keeper_pyjamas_walk')
@@ -177,7 +185,7 @@ describe('solid things', () => {
   })
 
   it('lets him walk in front of things against the back wall', () => {
-    const shelf = { id: 'shelf', label: 'Bookshelf', x: 60, w: 30, h: 40, layer: 'back' }
+    const shelf = { id: 'shelf', label: 'Bookshelf', x: 70, w: 30, h: 40, layer: 'back' }
     const r = room([shelf, chair], [{ id: 'a', kind: 'walk', to: 'action' }])
     expect(checkSolids(r, compile(r, {}, tiny))).toEqual([])
   })
@@ -185,22 +193,26 @@ describe('solid things', () => {
   it('never lets him walk through a wall: only a hidden doorway step crosses one', () => {
     const r = room([chair], [{ id: 'a', kind: 'walk', to: 'stairs' }])
     expect(checkSolids(r, compile(r, {}, tiny)).map((i) => i.text)).toContain('walks into the wall by the door')
-    const ok = room([chair], [{ id: 'a', kind: 'walk', to: 'doorIn' }, { id: 'h', kind: 'hide', through: 'door' }, { id: 'b', kind: 'walk', to: 'stairs' }])
+    const ok = room([chair], [{ id: 'a', kind: 'walk', to: 'doorIn' }, { id: 'o', kind: 'wait', seconds: 0.5, doorAfter: 'open' }, { id: 'h', kind: 'hide', through: 'door' }, { id: 'b', kind: 'walk', to: 'stairs' }])
+    expect(compile(ok, {}, tiny).problems).toEqual([])
     expect(checkSolids(ok, compile(ok, {}, tiny))).toEqual([])
+    // Through a closed door is a problem.
+    const shut = room([chair], [{ id: 'a', kind: 'walk', to: 'doorIn' }, { id: 'h', kind: 'hide', through: 'door' }])
+    expect(compile(shut, {}, tiny).problems[0]).toMatch(/closed door/)
   })
 
   it('flags anything in front of him that would cover him, using the frame’s own pixels', () => {
-    const plant = { id: 'plant', label: 'Tall plant', x: 50, w: 10, h: 30, layer: 'front' }
+    const plant = { id: 'plant', label: 'Tall plant', x: 60, w: 10, h: 30, layer: 'front' }
     const r = room([plant, chair], [{ id: 'a', kind: 'wait', clip: 'keeper_walk', seconds: 1 }])
     const at = (x: number) => ({ ...r, startAt: x })
-    expect(checkSolids(at(40), compile(at(40), {}, tiny))).toHaveLength(1) // body 29–51 reaches the plant at 45
-    expect(checkSolids(at(30), compile(at(30), {}, tiny))).toEqual([]) // body 19–41 is clear
+    expect(checkSolids(at(50), compile(at(50), {}, tiny))).toHaveLength(1) // body 39–61 reaches the plant at 55
+    expect(checkSolids(at(40), compile(at(40), {}, tiny))).toEqual([]) // body 29–51 is clear
     // A narrow frame (arms tucked in) can stand closer than the plain body width.
     const narrow: BoundsLookup = () => ({ left: -4, right: 4, bottom: 0, top: 38 })
-    expect(checkSolids(at(40), compile(at(40), {}, tiny), narrow)).toEqual([])
+    expect(checkSolids(at(50), compile(at(50), {}, tiny), narrow)).toEqual([])
     // Mirrored, a frame that reaches out to its right reaches to his left.
     const reach: BoundsLookup = () => ({ left: -4, right: 14, bottom: 0, top: 38 })
-    const facingLeft = { ...at(62), facing: 'left' as const }
+    const facingLeft = { ...at(72), facing: 'left' as const }
     expect(checkSolids(facingLeft, compile(facingLeft, {}, tiny), reach)).toHaveLength(1)
   })
 
@@ -218,6 +230,74 @@ describe('solid things', () => {
     expect(checkSolids(near, compile(near, {}, tiny)).map((i) => i.text.split(' (')[0])).toEqual(['the open door covers part of him'])
     const clear = { ...r, startAt: placeX(r, 'doorIn') }
     expect(checkSolids(clear, compile(clear, {}, tiny))).toEqual([])
+  })
+})
+
+describe('whole strides and clean joins', () => {
+  it('finishes every walk on a whole stride, landing on the standing frame', () => {
+    const closed: ClipLookup = (n) => (n === 'keeper_walk' ? { ...clip(9, 8), closed: true, startPose: 'standing-side-right', endPose: 'standing-side-right' } : tiny(n))
+    const r = { ...base([{ id: 'a', kind: 'walk', to: 70 }, { id: 'b', kind: 'play', clip: 'sit' }]), startAt: 10 as const }
+    const tl = compile(r, {}, closed)
+    const walk = tl.segments[0]
+    expect(((walk.end - walk.start) * 8) % 8).toBeCloseTo(0) // whole rounds of 8 frames
+    expect(frameFrom(walk, walk.end - walk.start + 1e-6)).toBe(0) // the next frame would be the standing frame
+    expect(shotAt(tl, walk.end - 1e-6, r).x).toBe(70) // and he is on his spot
+    // A closed cycle never shows its repeated last frame mid-walk.
+    for (let s = 0; s < walk.end; s += 0.125) expect(frameFrom(walk, s)).toBeLessThan(8)
+  })
+
+  it('lists each handover with the poses either side, and suggests bridges', () => {
+    const posed: ClipLookup = (n) => ({ keeper_walk: { ...clip(9, 8), closed: true, startPose: 'standing-side-right', endPose: 'standing-side-right' }, back: { ...clip(4, 4, null), startPose: 'standing-back', endPose: 'standing-back' }, turn: { ...clip(6, 8), startPose: 'standing-side-right', endPose: 'standing-back' } } as Record<string, ClipInfo>)[n]
+    const r = { ...base([{ id: 'a', kind: 'walk', to: 70 }, { id: 'b', kind: 'loop', clip: 'back', seconds: 1 }]), startAt: 10 as const }
+    const joins = joinsOf(compile(r, {}, posed))
+    expect(joins).toHaveLength(1)
+    expect(joins[0]).toMatchObject({ aPose: 'standing-side-right', bPose: 'standing-back', aFrame: 0, bFrame: 0 })
+    expect(bridgesFor(joins[0], [{ name: 'turn', info: posed('turn')! }, { name: 'back', info: posed('back')! }])[0]).toEqual([{ name: 'turn', reverse: false, mirror: false }])
+  })
+
+  it('knows a flipped clip faces the other way, and turns him round with two clips', () => {
+    expect(flipPose('standing-side-right', true)).toBe('standing-side-left')
+    expect(flipPose('sitting-rear-left', true)).toBe('sitting-rear-right')
+    expect(flipPose('standing-front', true)).toBe('standing-front')
+    const posed: ClipLookup = (n) => ({ keeper_walk: { ...clip(9, 8), closed: true, startPose: 'standing-side-right', endPose: 'standing-side-right' }, toFront: { ...clip(4, 8), startPose: 'standing-side-right', endPose: 'standing-front' } } as Record<string, ClipInfo>)[n]
+    // Walks right, then walks back left: an instant about-turn.
+    const r = { ...base([{ id: 'a', kind: 'walk', to: 70 }, { id: 'b', kind: 'walk', to: 20 }]), startAt: 10 as const }
+    const [j] = joinsOf(compile(r, {}, posed))
+    expect([j.aPose, j.bPose]).toEqual(['standing-side-right', 'standing-side-left'])
+    expect(bridgesFor(j, [{ name: 'toFront', info: posed('toFront')! }])).toEqual([[{ name: 'toFront', reverse: false, mirror: false }, { name: 'toFront', reverse: true, mirror: true }]])
+    // Never through a special state, however the poses line up.
+    const chute = { ...clip(9, 8), startPose: 'standing-side-right', endPose: 'parachute-open', mirrorSafe: true }
+    expect(bridgesFor(j, [{ name: 'chute', info: chute }])).toEqual([])
+    expect(isOrdinaryPose('sitting-rear-left')).toBe(true)
+    expect(isOrdinaryPose('scuba-swim-right')).toBe(false)
+    // Only clips in the outfit he is wearing.
+    expect(bridgesFor(j, [{ name: 'partyToFront', info: { ...posed('toFront')!, outfit: 'party-hat' } }])).toEqual([])
+  })
+
+  it('holds the standing frame while he stands still', () => {
+    const r = base([{ id: 'w', kind: 'wait', clip: 'keeper_walk', seconds: 3 }])
+    const seg = compile(r, {}, tiny).segments[0]
+    expect([0, 1.3, 2.9].map((s) => frameFrom(seg, s))).toEqual([0, 0, 0])
+  })
+
+  it('flags a costume change where part of him would still be seen', () => {
+    const enter = cleanRecipe({ id: 'enter', kind: 'macro', steps: [{ id: 'o', kind: 'wait', seconds: 0.2, doorAfter: 'open' }, { id: 'h', kind: 'hide', through: 'door', swapTo: 'light-blue-pyjamas' }] })!
+    const r = { ...base([{ id: 'm', kind: 'macro', macro: 'enter' }]), startAt: 'doorOut' as const }
+    const tl = compile(r, { enter }, tiny)
+    expect(checkSolids(r, tl)).toEqual([]) // a 22 px body behind a 24 px door
+    const wide: BoundsLookup = () => ({ left: -14, right: 14, bottom: 0, top: 38 })
+    expect(checkSolids(r, tl, wide).map((i) => i.kind)).toEqual(['swap'])
+  })
+})
+
+describe('the door’s clear area', () => {
+  it('keeps every door’s clear area free of objects, and checks the inner door too', () => {
+    const r = cleanRecipe({ id: 'clear', objects: [{ id: 'box', label: 'Toy box', x: 40, w: 16, h: 10 }], action: { object: 'box', dx: 0, facing: 'right' }, steps: [] })!
+    expect(checkSolids(r, compile(r, {}, tiny)).map((i) => i.kind)).toEqual(['place'])
+    const moved = { ...r, objects: [{ ...r.objects[0], x: DOOR_CLEAR + 8 }] }
+    expect(checkSolids(moved, compile(moved, {}, tiny))).toEqual([])
+    const inner = { ...moved, room: { name: 'Room', inner: true }, objects: [{ ...r.objects[0], x: 100 }] }
+    expect(checkSolids(inner, compile(inner, {}, tiny)).map((i) => i.text)).toEqual([expect.stringContaining('the inner door')])
   })
 })
 

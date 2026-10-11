@@ -117,3 +117,8 @@
 .st-variants button.on { background: #e3edf7; font-weight: 600; }
 .st-spot { display: grid; gap: 4px; padding: 6px; border: 1px solid var(--st-line); border-radius: 6px; }
 .st-lighttext.on { fill: #8a5a12; }
+.st-fixes { display: inline-flex; gap: 4px; margin-left: 6px; }
+.st-bridges { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; margin: 4px 0 2px; }
+.st-onion { filter: url(#st-red); }
+.st-route .swap path { fill: #00b3ff; } .st-route .swap text { font: 600 2.2px ui-sans-serif, system-ui; fill: #0077b6; }
+.st-clear { fill: url(#st-hatch); opacity: .5; pointer-events: none; }

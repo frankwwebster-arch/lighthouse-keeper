@@ -19,7 +19,8 @@ Code: `src/studio/recipe.ts` (format, compiler and checks; pure and tested), `sr
 All units are the art's logical pixels and real seconds.
 
 - The room is **110 wide and 56 tall** (the agreed floor height). x = 0 is the room's left wall; the **stairway** runs alongside on the left (x from −38 to 0). Floor y = 0; heights count upwards.
-- The door is in the wall at x = 0. Until Codex's door art fixes the numbers, `DOOR` in `recipe.ts` says: a 4 px jamb on the stairway side, and a 12 px leaf that opens into the room towards the camera, 44 px tall. Change those constants when the real door exists; every recipe follows.
+- The door is in the wall at x = 0. Until Codex's door art fixes the numbers, `DOOR` in `recipe.ts` says: a 4 px jamb on the stairway side, and a **24 px** leaf (Codex's minimum opening) that opens into the room towards the camera, 44 px tall. That is wide enough to hide all of him. Change those constants when the real door exists; every recipe follows.
+- **Every door has a clear area** (Frank's rule): no object may stand in the first `DOOR_CLEAR` = 46 px of the room at each door (the open leaf plus room for him to stand clear of it). The studio shades it and flags any object, or any variant of one, that intrudes. A 110 px room therefore has 64 px for furniture (less with an inner door).
 - Named places he can walk to: `stairs` (the ladder, x = −27), `doorOut` and `doorIn` (just clear of the doorway on each side), `innerIn` and `innerOut` (for a room with an inner door on the right), `action` (the action point), or any number.
 - `KEEPER_HALF` = 11 is his standing half-width, used where a frame's own pixels aren't known.
 
@@ -51,7 +52,7 @@ All units are the art's logical pixels and real seconds.
 | `play` | One clip once, holding its last frame. `reverse` plays it backwards, so standing up is sitting down reversed. | `clip`, `reverse`, `facing`, `dx`, `dy` |
 | `loop` | One clip repeated for `seconds`. Mark the activity itself `main`. The player can stop the main step at any moment, and `untilStopped` says the game runs it until another order. | `clip`, `seconds`, `main`, `untilStopped` |
 | `wait` | Holds a frame (by default the outfit's walk, frame 1) for `seconds`. | `seconds`, `clip` |
-| `hide` | Passes through a doorway, unseen. `swapTo` is the outfit he comes out in. This is the only step that crosses a wall. | `through` (`door` / `inner`), `seconds`, `swapTo` |
+| `hide` | Walks straight through an open doorway without stopping. The open door is opaque and in front of him, so for a moment he is completely behind it; that is where `swapTo` changes his outfit, and he walks out from behind it already changed (he never pops into view). The only step that crosses a wall; through a closed door is a problem. | `through` (`door` / `inner`), `swapTo`, `speed` |
 | `macro` | Runs a macro. `params.swapTo` is the outfit its hidden doorway changes him into. Inside a macro, `"swapTo": "$swapTo"` means "whatever the recipe asks". | `macro`, `params` |
 
 Any step may end with `doorAfter: "open"` or `"close"`, and may carry sound `cues`. `dx` and `dy` nudge him from where he stands. Frank does this by dragging or with the arrow keys.
@@ -86,6 +87,18 @@ Every asset in the game can be upgraded (Frank), so a recipe normally names an o
 - **Route** draws his whole route in a stark magenta: each walk as a line with an arrow, each hidden doorway crossing dashed in blue, and a numbered marker at each stop (the number is the step's number). It is worked out from the objects' positions, so it stretches live as you drag them.
 - **Ghosts** shows faint copies of him in the first pose of each stop.
 - **Evening** darkens the outside and shades the room. The room's light is on only while its door is open (he opens it on the way in; it closes behind him as he leaves). The stairway is always lit.
+
+## Clean joins between clips
+
+- **Walks finish on a whole stride.** Codex's walk cycles (`*_cycle`) begin and end on the standing frame, so a walk always runs whole strides. The speed gives a little, so he lands on his spot on the standing frame. A walk that stops mid-stride snaps his legs together in one frame, which was the flash.
+- **Loops run whole rounds**, so a loop ends where it began. Stopped early ("Stop now"), the activity finishes the round it is in before he gets up.
+- **Stand still** holds the standing frame.
+- **Every join is checked.** At each handover from one clip to the next, the studio compares the two frames pixel for pixel, as they are drawn. More than 3% different, or his feet moving, is a **jump** (⚡). For each jump it offers:
+  - **Look:** a frozen onion skin, with the outgoing frame in red over the incoming one;
+  - **Bridges:** clips in his outfit that make the move, from the pose one side ends in to the pose the other starts in, played forwards or backwards, as drawn or flipped, alone or two in a row (turning round goes right → back → left). One click inserts them;
+  - **Note for Codex:** adds the join to the recipe's notes. This is the fix when both sides claim the same pose but the frames differ (the art needs repairing).
+- Poses are flipped with the clip: a mirrored `standing-side-right` is `standing-side-left`. Bridges only pass through the ordinary poses: standing, sitting, crouching or lying, facing a side, the front or the back (never through a parachute or a swim).
+- **Held props must be part of the pose.** "Back to the camera holding the cake" is not "back to the camera". Without that in the metadata, the matcher could bridge with an empty-handed turn. Use a `+prop` suffix (for example `standing-back+cake`) until we agree a better form.
 
 ## Solid things
 

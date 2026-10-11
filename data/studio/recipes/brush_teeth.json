@@ -83,11 +83,12 @@
       ]
     },
     {
-      "id": "unturn",
+      "id": "bridge-01-turn_left_back",
       "kind": "play",
-      "clip": "keeper_turn_back",
+      "clip": "keeper_turn_left_back",
       "reverse": true,
-      "label": "Turn back round"
+      "facing": "left",
+      "label": "Turn round to go"
     },
     {
       "id": "leave",
