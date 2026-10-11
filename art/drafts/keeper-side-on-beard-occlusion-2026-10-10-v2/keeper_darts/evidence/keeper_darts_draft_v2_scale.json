@@ -1,0 +1,17 @@
+{
+  "auditId": "2026-10-10-v2",
+  "animation": "keeper_darts",
+  "frames": 14,
+  "canvas": [
+    56,
+    40
+  ],
+  "density": 4,
+  "anchor": [
+    28,
+    40
+  ],
+  "canonicalStripSha256": "a52db90e64bb9d5389085f8fd3801208bd884f2c486f997d01b6f0d5b50bd974",
+  "draftStripSha256": "c2e68d4514507a138d6a207df700fd1b438ec9344652bb294f965eebd287689a",
+  "gutters": "pass"
+}

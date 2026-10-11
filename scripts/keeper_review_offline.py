@@ -69,8 +69,8 @@ def validate_local_files() -> list[str]:
     payload = json.loads(payload_text)
     for asset in payload["assets"]:
         canonical_names.add(asset["name"])
-        if asset.get("draftVariant"):
-            draft_names.add(Path(asset["draftVariant"]["source"]).name)
+        for variant in asset.get("draftVariants") or ([asset["draftVariant"]] if asset.get("draftVariant") else []):
+            draft_names.add(Path(variant["source"]).name)
     if len(canonical_names) != 173 or not draft_names:
         raise RuntimeError(
             f"the generated review page names {len(canonical_names)} canonical and {len(draft_names)} draft sprite strips; expected 173 canonical and at least one draft"

@@ -1,0 +1,50 @@
+{
+  "auditId": "2026-10-10-v2",
+  "animation": "keeper_darts",
+  "label": "Draft v2",
+  "decision": "Await Frank promotion or rejection; canonical remains authoritative.",
+  "correctedFrames": [
+    {
+      "frame": 3,
+      "pixels": 69,
+      "logicalBox": [
+        26,
+        10,
+        33,
+        17
+      ]
+    },
+    {
+      "frame": 4,
+      "pixels": 28,
+      "logicalBox": [
+        26,
+        10,
+        35,
+        15
+      ]
+    },
+    {
+      "frame": 5,
+      "pixels": 69,
+      "logicalBox": [
+        26,
+        10,
+        33,
+        17
+      ]
+    },
+    {
+      "frame": 6,
+      "pixels": 28,
+      "logicalBox": [
+        26,
+        10,
+        35,
+        15
+      ]
+    }
+  ],
+  "canonical": "art/raw/keeper-first-batch/keeper_darts_f14.png",
+  "draft": "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/keeper_darts/keeper_darts_f14.png"
+}

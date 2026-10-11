@@ -84,18 +84,21 @@ for (const item of registry.drafts as Record<string, any>[]) {
   for (const evidence of record.draft.evidence ?? []) if (!fs.existsSync(absolute(evidence))) fail(`${name} evidence is missing: ${evidence}`)
 
   const page = pageAssets.get(name) as Record<string, any> | undefined
-  if (!page?.draftVariant) fail(`${name} has no side-by-side reviewer variant`)
+  const variants = page?.draftVariants ?? (page?.draftVariant ? [page.draftVariant] : [])
+  if (!variants.length) fail(`${name} has no side-by-side reviewer variant`)
+  const pageVariant = variants.find((variant: Record<string, any>) => expectedStatus === 'active-review-draft' ? variant.label === 'Frank-selected draft' : variant.label === 'Previous version')
+  if (!pageVariant) fail(`${name} has no correctly-labelled reviewer variant`)
   if (expectedStatus === 'active-review-draft') {
-    if (page.draftVariant.source !== record.draft.strip || page.draftVariant.sha256 !== record.draft.stripSha256) fail(`${name} active draft is stale in the reviewer`)
-    if (page.draftVariant.canonicalSha256 !== record.canonical.stripSha256) fail(`${name} canonical reviewer hash is stale`)
+    if (pageVariant.source !== record.draft.strip || pageVariant.sha256 !== record.draft.stripSha256) fail(`${name} active draft is stale in the reviewer`)
+    if (pageVariant.canonicalSha256 !== record.canonical.stripSha256) fail(`${name} canonical reviewer hash is stale`)
   } else {
     for (const key of ['strip', 'runtime', 'sidecar']) {
       const file = absolute(record.promotion[key])
       if (!fs.existsSync(file) || sha256(file) !== record.promotion[`${key}Sha256`]) fail(`${name} promoted ${key} is stale`)
     }
     if (record.promotion.stripSha256 !== record.draft.stripSha256 || pixelSha256(absolute(record.promotion.runtime)) !== pixelSha256(absolute(record.draft.strip))) fail(`${name} promoted pixels differ from its inspected draft`)
-    if (page.draftVariant.label !== 'Previous version' || page.draftVariant.source !== record.canonical.strip) fail(`${name} previous version is not visible beside production`)
-    if (page.draftVariant.sha256 !== record.canonical.stripSha256 || page.draftVariant.canonicalSha256 !== record.promotion.stripSha256) fail(`${name} promoted reviewer hashes are stale`)
+    if (pageVariant.source !== record.canonical.strip) fail(`${name} previous version is not visible beside production`)
+    if (pageVariant.sha256 !== record.canonical.stripSha256 || pageVariant.canonicalSha256 !== record.promotion.stripSha256) fail(`${name} promoted reviewer hashes are stale`)
   }
   const comparison = expectedStatus === 'active-review-draft' ? record.draft : record.canonical
   const published = path.join(ROOT, 'public/keeper-review/drafts', path.basename(comparison.strip))

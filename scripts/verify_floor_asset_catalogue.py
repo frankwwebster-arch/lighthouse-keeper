@@ -485,14 +485,18 @@ review_page_data = json.loads(
 page_reviews = review_page_data["initialReviews"]
 page_assets = {asset["name"]: asset for asset in review_page_data["assets"]}
 assert len(page_assets) == 173
-draft_assets = [asset for asset in page_assets.values() if asset.get("draftVariant")]
+draft_assets = [asset for asset in page_assets.values() if asset.get("draftVariants") or asset.get("draftVariant")]
 review_draft_registry = json.loads((ROOT / "data/keeper_review_drafts.json").read_text())
 assert review_page_data["reviewDrafts"] == review_draft_registry
 draft_assets_by_name = {asset["name"]: asset for asset in draft_assets}
 assert set(draft_assets_by_name) == {item["name"] for item in review_draft_registry["drafts"]}
 for item in review_draft_registry["drafts"]:
     record = json.loads((ROOT / item["register"]).read_text())
-    asset_variant = draft_assets_by_name[item["name"]]["draftVariant"]
+    variants = draft_assets_by_name[item["name"]].get("draftVariants") or [draft_assets_by_name[item["name"]]["draftVariant"]]
+    asset_variant = next(
+        variant for variant in variants
+        if variant["label"] == ("Frank-selected draft" if item["status"] == "active-review-draft" else "Previous version")
+    )
     assert record["animation"] == item["name"]
     if item["status"] == "active-review-draft":
         assert item["name"] == "keeper_darts"

@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "test": "node scripts/keeper-contract.ts --check && node scripts/verify_side_on_beard_occlusion.ts && node scripts/verify_keeper_review_drafts.ts && vitest run",
+    "audit:side-on-beard-occlusion": "node scripts/audit_side_on_beard_occlusion_v2.ts",
     "verify:side-on-beard-occlusion": "node scripts/verify_side_on_beard_occlusion.ts",
     "verify:keeper-review-drafts": "node scripts/verify_keeper_review_drafts.ts",
     "typecheck": "tsc --noEmit",
