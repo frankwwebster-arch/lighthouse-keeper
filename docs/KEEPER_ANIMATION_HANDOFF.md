@@ -31,10 +31,10 @@ sheet.
 2. Open `docs/keeper-scale-audit/review.html`. For a reliable no-Wi-Fi session
    on this Mac, double-click `Open Keeper Review Offline.command` at the
    repository root and leave its Terminal window open; it serves the same page
-   and local sprite strips only on `127.0.0.1:8765`, while browser saves and the
-   version-11 JSON export/import continues to accept prior exports normally. Offline and online
-   browser storage do not synchronise automatically: Export on one copy, then
-   Import review JSON on the other. A dedicated panel first shows
+   and local sprite strips only on `127.0.0.1:8765`. Use the deployed online
+   reviewer's **Hand back to Codex** button for the normal durable handoff;
+   the collapsed version-11 JSON backup/import is only for exceptional offline
+   recovery. A dedicated panel first shows
    the untouched `keeper_walk` identity/anatomy baseline, followed by all 173 accepted
    clips at one unchanged relative scale in filename order. Filter the register
    by Needs my input, Happy, Awaiting new draft review, Review later,
@@ -79,8 +79,8 @@ sheet.
    Display zoom and all three filters are saved immediately in browser-local progress.
    Saving or advancing from the final result wraps to the first result in the
    same filter.
-6. For the next review round, ask Frank for the newly exported
-   `keeper-scale-choices.json`.
+6. For the next review round, ask Frank to press **Hand back to Codex** in the
+   deployed reviewer, then read the newest queue entry before starting work.
    Each card's Save button persists independent width/height, rotation,
    horizontal/vertical position, ghost settings, opacity and the
    happy/not-yet-happy decision, free-text notes, full-re-draft request,
@@ -125,7 +125,7 @@ the side and front sitting standards.
 Every card has `Happy with this animation`, `Save this review`, `Save & re-review later`
 and an explicit saved/unsaved state. The re-review button saves immediately and
 advances in focused mode. Orange means unsaved; green means saved and happy;
-blue means saved for later review. Export
+blue means saved for later review. Hand back to Codex
 is blocked until changed cards are saved. Existing browser-saved size choices
 are loaded into the new workflow rather than discarded.
 The reviewed animation itself can rotate from −180° to +180° around its fixed
@@ -270,7 +270,8 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 - The deployed online reviewer and offline launcher now use the same generated
   `public/keeper-review/index.html`; its review-only draft assets live under
   `public/keeper-review/drafts/` and are not runtime manifest entries. Browser
-  progress remains origin-local and moves only through exact-name Export/Import.
+  progress remains origin-local, but the deployed reviewer submits a complete
+  exact-name batch to the durable handoff queue through Hand back to Codex.
   Gallery cards are deliberately animation-first: name, current review state,
   latest local save/redraft timestamp, playback and frame stepping, with an
   `Open close review` action. Close review exposes an exact-name canonical/draft
@@ -853,7 +854,7 @@ The comprehensive per-sheet correction list is in
    support 19 logical pixels above floor, 8 pixels above the purple 11-pixel
    seat guide. Then use `docs/prompts/KEEPER_POST_AUDIT_REVIEW_DELTA.md` for the next
    review round.
-2. Obtain Frank's newly exported `keeper-scale-choices.json` and read every saved
+2. Read the latest submitted review-handoff queue entry and every saved
    per-animation note before triage or drawing. A full-re-draft flag authorises
    rebuilding the clip; it never authorises ignoring that clip's written notes.
    Treat beard-length and side-silhouette comments as identity corrections that

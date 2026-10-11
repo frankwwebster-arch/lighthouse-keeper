@@ -292,10 +292,10 @@ both axes.
 Each card also has a read-only Codex response field, blank where no production
 qualification was needed. Close review lets the reviewer override the inferred
 pose tag, relegate an animation to a non-destructive reserve list, and
-expand/compress retained draft comparisons. Export version 11 produces
-`keeper-scale-choices.json` with the complete status/response register,
+expand/compress retained draft comparisons. **Hand back to Codex** is the
+normal online workflow: it sends the complete saved status/response register,
 timestamp, preferred-promotion candidate, pose override and reserve membership
-for an authoring pass; it never silently changes production sprites.
+to the durable review queue; it never silently changes production sprites.
 The page can also play the matching
 same-outfit walk immediately before an action. The raw seam, known-bridge and
 onion-skin modes make transition problems visible. Flying and swimming cards
@@ -345,9 +345,10 @@ Each card's Save button persists its width, height, proposed runtime FPS, horizo
 comparison-ghost mirror, rotation and position controls, reviewed-animation rotation/opacity, free-text notes,
 happy checkbox and mutually exclusive full-re-draft or re-review-later request in the browser.
 Orange denotes unsaved changes, green a saved happy decision and red a saved
-re-draft request. Export is blocked until every changed card is saved, and
-version 8 of `keeper-scale-choices.json` contains the saved review register,
-notes, re-draft list and re-review-later list as well as independent width/height/position production proposals.
+re-draft request. Hand back to Codex is blocked until every changed card is
+saved; its durable submitted batch contains the saved review register, notes,
+re-draft list, re-review-later list, and independent width/height/position
+production proposals.
 Its `animationFps` value is intended for the clip's source JSON sidecar and the
 generated `public/sprites/manifest.json`; it is not baked into the PNG pixels.
 Existing legacy uniform choices are retained and applied to both axes.

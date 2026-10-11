@@ -476,6 +476,10 @@ public_review_html = (ROOT / "public/keeper-review/index.html").read_text()
 assert public_review_html == review_html
 assert "__KEEPER_REVIEW_DATA__" not in review_html
 assert '"reviewedAnimationSheets":173' in review_html
+handoff_route = (ROOT / "src/app/api/keeper-review-handoffs/route.ts").read_text()
+assert "keeper_review_handoffs" in handoff_route
+assert "validBatch" in handoff_route
+assert "randomUUID" in handoff_route
 # Parse the exact payload used by the page, then prove every imported note and
 # decision remains attached to its original keeper_* name. Filters only retain
 # card objects; they must never join notes to cards by visible-list position.
@@ -624,6 +628,9 @@ for token in (
     "poseTag",
     "reserved",
     "DRAFT_DISPLAY_STORAGE_KEY",
+    "Hand back to Codex",
+    "keeper-review-handoffs",
+    "Advanced backup / import",
     "main:not(.detail-mode) #grid article .filenames",
 ):
     assert token in review_html, token

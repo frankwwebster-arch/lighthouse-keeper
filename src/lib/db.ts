@@ -22,6 +22,9 @@ export function ensureSchema(): Promise<void> {
       // The recipe studio: Frank's edited recipes and macros, and the sound library.
       await q`create table if not exists studio_docs (id text primary key, doc jsonb not null, updated_at timestamptz not null default now())`
       await q`create table if not exists studio_sounds (id text primary key, label text not null, mime text not null, data text not null, bytes integer not null, updated_at timestamptz not null default now())`
+      // Review batches submitted from the public Keeper animation reviewer.
+      // Canonical art is never written here: this is an exact-name handoff queue.
+      await q`create table if not exists keeper_review_handoffs (id text primary key, review jsonb not null, animation_count integer not null, source text not null, submitted_at timestamptz not null default now())`
     })().catch((e) => {
       ready = null
       throw e

@@ -19,12 +19,13 @@ The canonical online keeper animation reviewer is
 serves an exact repository copy of that same generated page and review-only
 draft assets: double-click `Open Keeper Review Offline.command`, leave its
 Terminal window open, and use the browser page it opens. Both versions load all
-173 animation strips, retain saved review progress in that browser and download
-`keeper-scale-choices.json` normally. Browser storage is not synchronised
-between the online and offline origins: use Export on one and Import review JSON
-on the other. Import validates exact `keeper_*` names, so comments and decisions
-are never joined by display position. The offline copy needs no `npm` command,
-internet connection or Vercel access.
+173 animation strips and retain saved review progress in that browser. In the
+online reviewer, use **Hand back to Codex** whenever a batch is ready: it sends
+the complete exact-name review register to the durable handoff queue and
+confirms the receipt on-screen—no JSON download is needed. The collapsed
+Advanced backup/import control remains only for exceptional offline recovery.
+The offline copy needs no `npm` command, internet connection or Vercel access,
+but cannot submit a handoff until the batch is opened online.
 
 ## Current implementation
 
@@ -63,7 +64,7 @@ internet connection or Vercel access.
 - `data/keeper_asset_contract.json` — authoritative machine-readable scale, pivots and interaction points.
 - `data/keeper_pose_registry.json`, `data/keeper_endpoint_audit.json` and `data/keeper_endpoint_exceptions.json` — shared pose vocabulary, current real-pixel endpoint evidence, and the frozen legacy migration boundary.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
-- `public/keeper-review/index.html` — canonical online reviewer deployed at `/keeper-review/`; the offline launcher serves this exact same file and its review-only draft assets. `docs/keeper-scale-audit/review.html` remains the generated audit copy and must be byte-identical. Its gallery is a compact visual scan (name, review state, last local save/redraft, playback and frame stepping); `Open close review` opens any chosen card immediately. Independently filter by review state, pose and active/reserve use list. Close review lets Frank override the inferred pose tag, relegate a likely duplicate to the reversible reserve list, expand/compress retained draft comparisons, and select canonical or every exact-name draft as an exportable preferred-promotion candidate—without mutating production. Transfer saved choices manually by Export/Import because browser storage does not auto-sync between origins.
+- `public/keeper-review/index.html` — canonical online reviewer deployed at `/keeper-review/`; the offline launcher serves this exact same file and its review-only draft assets. `docs/keeper-scale-audit/review.html` remains the generated audit copy and must be byte-identical. Its gallery is a compact visual scan (name, review state, last local save/redraft, playback and frame stepping); `Open close review` opens any chosen card immediately. Independently filter by review state, pose and active/reserve use list. Close review lets Frank override the inferred pose tag, relegate a likely duplicate to the reversible reserve list, expand/compress retained draft comparisons, and select canonical or every exact-name draft as an exportable preferred-promotion candidate—without mutating production. **Hand back to Codex** submits the full saved batch to the durable server-side queue; JSON backup/import is collapsed as an exceptional recovery option.
 - `data/keeper_side_on_beard_occlusion_audit.json`, `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/`, and `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` — completed draft-only v2 beard/hand audit and preserved rejected v1 history. The active reviewer shows v2 beside canonical and the separate Frank-selected darts draft; the verifier prevents implicit promotion.
 - `data/keeper_review_drafts.json` and `art/drafts/` — SHA-256-pinned, exact-name review comparisons: the draft-only darts candidate plus the ten selected canonical promotions and their reversible previous versions. `scripts/verify_keeper_review_drafts.ts` checks their source, canonical/current, comparison strips, sidecars, gutters and reviewer attachment.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.
