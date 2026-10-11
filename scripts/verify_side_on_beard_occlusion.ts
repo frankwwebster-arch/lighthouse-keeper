@@ -29,8 +29,11 @@ for (const sheet of audit.inventory as Array<Record<string, any>>) {
     if (beard.result === 'match' && (sheet.name !== audit.beardReference.name || beard.comparison?.method !== 'exact-canonical-self-raster' || beard.comparison?.silhouetteDeltaLogicalPixels !== 0 || beard.comparison?.maximumAcceptedSilhouetteDeltaLogicalPixels !== 1)) fail(`${sheet.name} frame ${frame.frame} claims an unsupported beard match`)
     if (beard.result === 'mismatch') fail(`${sheet.name} frame ${frame.frame} claims a mismatch although this blocked audit has no discriminating comparator`)
     if (beard.result === 'non-comparable' && !beard.evidence?.some((item: string) => item.includes('required comparison asset missing'))) fail(`${sheet.name} frame ${frame.frame} non-comparability lacks exact missing evidence`)
+    if (beard.disposition === 'accepted-user-visual-review-no-amendment' && (!beard.userReview || sheet.name !== 'keeper_darts' || ![3, 4, 5, 6].includes(frame.frame))) fail(`${sheet.name} frame ${frame.frame} has an unsupported user-visual beard disposition`)
   }
 }
+const accepted = audit.findings?.acceptedUserVisualReviewNoAmendment
+if (!Array.isArray(accepted) || accepted.length !== 1 || accepted[0].animation !== 'keeper_darts' || accepted[0].frames.join(',') !== '3,4,5,6') fail('the limited Darts no-amendment visual review is absent or altered')
 const historical = audit.historical?.invalidatedV2
 if (!historical || !fs.existsSync(absolute(historical.register)) || sha256(absolute(historical.register)) !== historical.registerSha256) fail('invalid historical v2 evidence is not preserved')
 if (audit.summary.existingCanonicalGutterFailures !== gutterFailures) fail('canonical gutter-failure count drifted')

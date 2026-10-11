@@ -240,7 +240,9 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   approved beard masks, facial landmarks, or hand depth/component ownership
   evidence exists. In
   particular, `keeper_darts` frames 3–6 are not a confirmed occlusion defect.
-  No new beard draft is active or promotable. v1 and v2 draft files remain
+  Frank visually reviewed those displayed frames on 11 October and accepted
+  their beards as fine with no amendment required. No new beard draft is
+  active or promotable. v1 and v2 draft files remain
   historical, non-promotable evidence under their existing draft directories.
 - The permanent check is `node scripts/verify_side_on_beard_occlusion.ts` and
   is included in `npm test`. It pins the canonical reference, source/sidecar

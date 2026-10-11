@@ -897,7 +897,7 @@ def publish(assets: list[dict]) -> None:
             "",
             "## Side-on beard/hand occlusion audit",
             "",
-            "The evidence-based audit classifies every manifest frame and pins the `keeper_clear_snow` beard reference. An eligible landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It is otherwise fail-closed: no cross-pose beard or hand-occlusion claim is accepted because the repository lacks approved landmark, beard-mask and depth/component evidence. No new beard correction draft is available or promoted. Historical v1 and v2 draft files remain preserved as non-promotable evidence only.",
+            "The evidence-based audit classifies every manifest frame and pins the `keeper_clear_snow` beard reference. An eligible landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It is otherwise fail-closed: no cross-pose beard or hand-occlusion claim is accepted because the repository lacks approved landmark, beard-mask and depth/component evidence. Frank visually accepted Darts frames 3–6 as fine with no amendment required. No new beard correction draft is available or promoted. Historical v1 and v2 draft files remain preserved as non-promotable evidence only.",
         ])
     if active_review_drafts:
         resolution_lines.extend([
@@ -948,7 +948,7 @@ def publish(assets: list[dict]) -> None:
         "",
         "## Reversible review drafts",
         "",
-        "The evidence-based side-on beard audit pins `keeper_clear_snow`: a landmark-aligned, approved beard-mask comparison passes with at most one logical-pixel symmetric silhouette difference. It blocks all cross-pose conclusions until approved masks, landmarks and hand-depth/component evidence exist. Historical v1/v2 Darts images are non-promotable evidence; Frank's selected Darts image remains a comparison, not a beard reference. The ten later selected canonical promotions retain their exact prior strips as `Previous version` comparisons.",
+        "The evidence-based side-on beard audit pins `keeper_clear_snow`: a landmark-aligned, approved beard-mask comparison passes with at most one logical-pixel symmetric silhouette difference. It blocks all cross-pose conclusions until approved masks, landmarks and hand-depth/component evidence exist. Frank visually accepted Darts frames 3–6 as fine with no amendment required. Historical v1/v2 Darts images are non-promotable evidence; Frank's selected Darts image remains a comparison, not a beard reference. The ten later selected canonical promotions retain their exact prior strips as `Previous version` comparisons.",
         "The review-draft register pins source, previous/current canonical and draft SHA-256 values. New amendments remain draft-only: canonical production art, `public/sprites/`, the runtime manifest, immutable review exports and existing previews remain untouched until explicit promotion. Rejecting a new draft requires only deleting its draft directory and exact-name entry from `data/keeper_review_drafts.json`.",
         "",
         "## Corrected sheets",
