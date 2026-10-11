@@ -637,6 +637,8 @@ for token in (
     "Hand this complete review batch back to Codex?",
     "save the ${dirty.length} animation card",
     "card.saveReview?.()",
+    "changed since the previous handoff",
+    "changedAnimationCount",
     "Advanced backup / import",
     "Reset review-only sizes",
     "This never edits, crops, replaces, or deletes any canonical sprite art or draft.",
