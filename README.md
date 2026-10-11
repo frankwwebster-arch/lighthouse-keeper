@@ -69,6 +69,7 @@ must remain paused to avoid duplicate alerts.
 - `docs/PRODUCTION_ASSET_KIT.md` — exact Pixel filenames, dimensions, anchors, pivots, z-order, frame counts, fps, and delivery order.
 - `docs/KEEPER_ANIMATIONS.md` — plain-English animation index, direction rules and object-alignment instructions.
 - `docs/KEEPER_ANIMATION_HANDOFF.md` — complete keeper review checkpoint, correction history, exact transition-gap inventory, object-binding design and ready-to-paste next-task prompt.
+- `docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md` — proven Keeper artwork recipe, continuity rules, rejected methods, accepted artist/snooker case studies, evidence checklist and exact-name review workflow.
 - `scripts/keeper_review_handoff_monitor.py` and `scripts/install_keeper_review_handoff_monitor.sh` — independent macOS notification monitor and its per-user `launchd` installer; it reads the hand-back queue every four hours without opening Codex.
 - `docs/prompts/KEEPER_SIDE_ON_BEARD_OCCLUSION_AUDIT.md` — first-stage ready-to-paste audit/fix prompt for beard, hand and arm layer order across every side-on standing and sitting animation.
 - `docs/prompts/KEEPER_SPRITE_FRAME_ISOLATION_AUDIT.md` — second-stage ready-to-paste exhaustive audit/fix prompt for frame overlap and future enforcement.

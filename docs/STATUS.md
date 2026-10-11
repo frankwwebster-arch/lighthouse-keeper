@@ -67,6 +67,11 @@ JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
 ## Verification and delivery
 
+The reusable artwork method, failed approaches, continuity standards, exact
+accepted references and future review-platform workflow are consolidated in
+`docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md`. Future correction scope
+comes only from Frank's exact-name platform handoffs.
+
 The keeper review batch is 191 sheets / 1,479 frames. The rejected second-round
 production pass remains historical evidence after its rollback from commit
 `131191c`. Separately, ten exact-name source selections (including the

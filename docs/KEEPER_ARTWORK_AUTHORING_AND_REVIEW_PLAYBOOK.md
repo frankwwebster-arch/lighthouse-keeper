@@ -1,0 +1,444 @@
+# Keeper artwork authoring and review playbook
+
+Last updated: 11 October 2026.
+
+This document records the durable lessons from the bathrobe, artist-smock and
+standard-uniform snooker work. It is the operating guide for future Keeper
+redrafts requested through the review platform. It separates proven methods,
+accepted visual decisions, unresolved work and rejected techniques so that a
+fresh Codex context does not repeat the same failures.
+
+## Current authority and status
+
+The review platform is the scope authority. Frank will inspect the complete
+platform and mark the exact animation names that need new artwork. That
+exact-name reviewed queue—not visual similarity, a family guess, an automated
+shortlist or an earlier sample set—defines later correction scope.
+
+| Area | Current status | Consequence |
+|---|---|---|
+| Side-right standard-uniform identity | The canonical standing side-right raster is pinned | Use it and the high-resolution walk source as identity and proportion authorities |
+| Artist-smock design | The V10 costume design is accepted; seven V11 authored animations are active review drafts | Keep this family internally consistent and await exact-name platform decisions before production promotion |
+| Standard-uniform snooker route | The complete route is visually accepted and is an active `keeper_snooker` review draft | The platform verdict is still required; production remains the old eight-frame strip |
+| Bathrobe | No replacement family is accepted | Do not revive head transfer, beard transfer or procedural redraw experiments; wait for exact-name platform requests |
+| Other costumes and activities | Not implied by the work above | Start only from a reviewed exact-name request |
+
+The canonical side-right gameplay raster is:
+
+- `art/raw/keeper-first-batch/keeper_neutral_standing-side-right_f1.png`
+- SHA-256 `02106cfc54b224c8d4e9985e58420f1350f114d24e2e6c6258cad68e513657ce`
+- 128 × 160 source pixels, representing a 32 × 40 logical cell at density 4
+- logical anchor `[16, 40]`
+
+The fuller canon is a linked identity system, not merely a beard outline. The
+compact rectangular eye, stepped forehead, compact angular nose, ear,
+sideburn, moustache, beard, neck attachment, head/body ratio, hands, outline
+weight, legs and boots all contribute to recognition and continuity.
+
+## The most important visual lesson
+
+Absolute output size is adjustable in the reviewer. Internal ratios are not.
+The eye-relative and head-relative geometry must survive every pose:
+
+- compact dark rectangular eye rather than a rounded or highlighted eye;
+- compact stepped nose rather than a bulbous or lengthened one;
+- full, firm beard with a broad cheek connection, forward chin mass and a
+  stepped downward termination rather than a soft outward balloon;
+- canonical forehead without an eyebrow-induced central bump;
+- coherent skin and hair palettes rather than pasted colour patches;
+- broad outline weight relative to the eye and facial features;
+- stable hand, boot, limb and head/body proportions.
+
+Uniformly resizing a different head does not repair these ratios. Animations
+that meet in the same outfit will expose even a small internal mismatch as a
+visual jump.
+
+## Two continuity standards
+
+### Standard uniform
+
+An activity in the ordinary blue Keeper uniform must connect directly to the
+canonical walk, stop, neutral and turn system. There is no hidden costume
+change to excuse a different beard, face or body. The activity must therefore
+begin and end on exact canonical route poses, and the generated action poses
+must preserve the standard-uniform identity throughout.
+
+Snooker is the reference example:
+
+`walk right → stop → exact neutral → reach → cue contact → lower → aim/stroke
+loop → rise → release → exact neutral → turn → walk left`
+
+### Special outfits
+
+Costume changes occur out of sight behind a door. A special-outfit family may
+therefore differ slightly from the standard-uniform model at the hidden
+handover, but every animation used while that outfit is visible in the room
+must form one internally consistent set.
+
+For the artist studio, family consistency is more important than forcing each
+old artist animation to preserve a different legacy costume rendering. The
+accepted smock language is a warm-ivory mid-thigh painter's coat with navy V
+binding and cuffs, two low patch pockets, and separated, clearly defined
+vermillion, ochre, teal and green paint marks. The garment must hang low enough
+and its front and rear designs must belong to the same coat.
+
+This principle does not authorize a family automatically. The review queue
+still controls which exact animations are redrafted and later promoted.
+
+## Proven authoring method
+
+The successful method has two separate stages: generative drawing and
+deterministic normalization. Do not ask either stage to do the other's job.
+
+### 1. Resolve exact scope first
+
+Before authoring:
+
+1. Read the newest claimed review-platform handoff.
+2. List only the exact requested animation names.
+3. Determine whether they belong to a standard-uniform continuity route or a
+   special-outfit family.
+4. Inspect related front, rear, side, walk, sit and turn clips in the reviewer.
+   The rear smock design was discoverable only by looking at the back-facing
+   animation; it should not be guessed from the front.
+5. Identify the exact route seams that will be visible in play.
+6. Create a new dated, versioned draft directory. Never overwrite canonical,
+   raw, runtime, reviewer-export or previously reviewed draft files.
+
+### 2. Establish a strict reference hierarchy
+
+References have separate jobs and must not be allowed to compete:
+
+1. **Identity authority:** the approved canonical Keeper, preferably both a
+   clean high-resolution source and an exact gameplay raster.
+2. **Family continuity authority:** an already accepted source from the same
+   outfit or action family.
+3. **Pose/action authority:** the matching legacy action, used only for stance,
+   movement, prop direction and choreography.
+4. **Costume authority:** the accepted costume model for a special outfit.
+
+Identity takes priority over defects in an action or costume source. Pose
+takes priority over the neutral stance. Costume takes priority over the
+identity reference's clothing. A prompt should state those priorities
+explicitly.
+
+Useful pinned standard-uniform sources are:
+
+- `art/source/keeper-first-batch/keeper-walk-generated-source.png` — SHA-256
+  `637b3c4e66b4019730eaa7354812b18df788aedc4ab3e3b7c619589854e0da5f`;
+- `art/source/keeper-first-batch/keeper-snooker-generated-source.png` — action
+  geometry only, SHA-256
+  `d78fd0505de0fa0b4dd477a6fb035ec1eed1fd241694d11b93a8c2210cf08d58`.
+
+The accepted artist-smock costume authority is:
+
+- `art/drafts/keeper-canon-model-pack-artist-smock-2026-10-11-v10/generated/artist-smock-fresh-source.png`
+- SHA-256 `0101b38c45a406cbe49dd5cbca4da0fd1592a7b185807afbb5f98bd898af937b`
+
+The nine-model canon pack and its perimeter outlines remain useful comparison
+references for facing, envelope and outline weight. They are not a drawing
+mechanism. An outline alone cannot specify a coherent costume, hidden crown,
+neck junction, surface shading or action anatomy.
+
+### 3. Generate a coherent full character
+
+Use the built-in image generator in referenced-image, identity-preserve mode.
+Ask for a fresh, coherent full-character render on genuine transparency. The
+head, neck, costume and body must be authored together.
+
+The prompt should specify:
+
+- exact identity and ratio authority;
+- the allowed pose or action change;
+- the accepted costume authority, if any;
+- exact limb and hand count;
+- which hand owns a prop and where that prop enters the frame;
+- one continuous rear torso silhouette;
+- the complete eye, nose, beard, skin, palette and outline constraints;
+- generous transparent clearance;
+- no scenery, text, borders, guides, shadows, glow, detached fragments,
+  duplicate headwear, duplicate ears or residual clothing;
+- smooth high-resolution source art rather than deliberately enlarged pixel
+  art.
+
+For a single difficult action, generate one isolated pose at a time. This was
+the reliable approach for cue acquisition and deep snooker leans. It makes
+anatomy count and prop ownership easy to inspect before spending effort on the
+rest of the sequence.
+
+For a coherent costume clip, one isolated source sheet per animation can work.
+This was successful for the V11 artist family, but only after rejecting source
+grids in which long brushes crossed implied frame boundaries. Props and limbs
+must have transparent separation around every source cell. A crop must never
+be used to disguise overlap.
+
+### 4. Inspect source art before normalization
+
+Reject the source immediately if it has any of these defects:
+
+- wrong beard, eye, nose, forehead, cap or skin tone;
+- changed head/body ratio;
+- an extra arm, hand, sleeve, ear, headwear element or beard outline;
+- a missing rear torso or a flattened back caused by erasing a limb;
+- a costume that ends too high, has undefined paint marks or contradicts its
+  rear view;
+- a prop crossing a source-cell boundary;
+- cropped clothing, cue, brush, hand, foot or headwear;
+- coarse pixel enlargement where smooth source art was requested.
+
+Do not try to rescue a structurally wrong source with deterministic patches.
+Generate a new coherent pose with more explicit anatomy instructions.
+
+### 5. Normalize mechanically
+
+Normalization may isolate, uniformly scale, align, harden alpha and place the
+accepted source. It must not redraw anatomy or resize individual body parts.
+
+Required rules:
+
+- isolate valid foreground using native alpha;
+- remove low-alpha glow by a recorded threshold;
+- use one uniform scale for the complete character;
+- use one shared scale for all frames extracted from the same source sheet;
+- when individually authored poses belong to one action family, keep one
+  controlled source-to-game scale rather than forcing every pose to the same
+  height;
+- align by the feet/baseline and declared logical anchor;
+- harden alpha only after the single resize;
+- preserve binary alpha in the normalized draft;
+- expand the logical canvas for long tools or raised props rather than
+  shrinking the Keeper;
+- require a transparent gutter on all four edges of every frame;
+- record crop, scale, placement, bounds, hashes and a byte-identical rerun.
+
+The accepted snooker action uses:
+
+- foreground threshold: alpha 32;
+- fixed uniform scale: `0.14204545454545456`;
+- final alpha threshold: 128;
+- common source-pixel foot anchor: `[128, 158]`;
+- 320 × 160 review canvas, equivalent to an 80 × 40 logical cell at density 4.
+
+The lean poses are naturally shorter than the standing poses. Normalizing each
+pose to the same height would destroy the action's internal proportions.
+
+The V11 artist family uses one shared uniform scale per generated source sheet,
+calculated from its first pose and matching action reference, then applied
+unchanged to every pose in that sheet. Painting clips use expanded 40 × 48
+logical canvases so brushes remain isolated without shrinking the Keeper.
+
+### 6. Build routes from exact seam authorities
+
+The first and last frames of adjoining animations should be byte-identical
+whenever they represent the same physical pose. Similar-looking frames are not
+enough.
+
+If two legacy endpoints disagree, Frank's preferred frame is the authority.
+Reuse that complete normalized raster at both sides of the seam. Do not copy
+only its head or beard.
+
+Examples:
+
+- The final frame of V11 `keeper_artist_smock_turn_front` is the complete first
+  frame of `keeper_artist_smock_sit_front`, which Frank preferred. Their RGBA
+  difference is zero.
+- Both V11 artist turns begin on the complete walk-neutral raster.
+- The snooker stop ends on the exact canonical side-right neutral; that same
+  neutral begins the canonical right-to-back turn.
+- The canonical right turn and left-turn bridge share the exact back pose.
+- The back-to-left turn ends on the exact mirrored walk-start pose.
+
+Props need acquisition and release transitions. A cue should not jump from
+absent to a fully leaned playing pose. The accepted sequence uses a single
+reach, cue contact, lower, aim/stroke loop, rise, cue-held and release path.
+
+### 7. Review complete routes, not isolated art only
+
+Present both:
+
+- source-art comparisons for illustration quality; and
+- native/gameplay-scale animation at an intentionally slow review speed.
+
+The slow route reveals ratio drift, extra limbs, abrupt prop changes and seam
+jumps that a contact sheet can hide. Frank's visual verdict is authoritative.
+Automated measurements prove registration, containment and repeatability; they
+do not declare a likeness successful or unsuccessful.
+
+This distinction matters: the snooker robustness images initially looked
+questionable to the authoring process, but Frank judged both usable. Their
+visual acceptance overrides the historical filename
+`deep-lean-v1-failed.png`. Status belongs in the manifest and handoff, not in
+an old filename.
+
+## Rejected methods and why they failed
+
+### Beard-only reshaping
+
+Mask transfer, row terraces and inward/downward deformation did not solve the
+bathrobe identity mismatch. Some changes were invisible at gameplay scale;
+others produced spikes or changed the wrong contour. The forehead, eye, nose,
+moustache, beard and neck are coupled, so beard-only editing is too narrow when
+the complete head system differs.
+
+### Head transplantation
+
+Exact canonical head transfer still looked visibly pasted onto the bathrobe
+and smock bodies. Neck, collar, costume occlusion, palette and torso geometry
+did not integrate. Frank explicitly rejected this method: do not attempt it
+again.
+
+A capped canonical head also cannot reveal a correct capless crown. A future
+capless outfit needs its own coherent, visually approved capless identity
+source; hidden crown geometry cannot be inferred safely by deleting the cap.
+
+### Repeated targeted generator corrections
+
+Requests such as “make the beard fuller,” “make the eye rectangular” or “fix
+the nose” did not converge when the underlying generated head ratios were
+already wrong. Each edit could change cap, skin, forehead or proportions while
+repairing another feature. Once the structural identity drifts, restart from
+the reference hierarchy with a fresh coherent render.
+
+### Procedural or manual redraw from measurements
+
+The hand-authored full-character trial produced a different illustration
+rather than the established Keeper. Measurements and masks are valuable for
+validation, but they are not a substitute drawing system for this character.
+
+### Repainting the canonical jumper into a costume
+
+The canonical-outline smock repaint produced a repeatable face but a garment
+that was too short and inadequately defined. A costume has its own silhouette,
+coverage and rear design; recolouring the existing jumper cannot create a
+longer coat coherently.
+
+### Multi-pose grids without ownership gutters
+
+The first snooker and painting grids allowed cues or brushes to cross implied
+cell boundaries. That makes component ownership ambiguous and invalidates the
+sheet. Use isolated poses, wider cells or grids with genuine transparent
+separation.
+
+### Removing the wrong arm or only part of an arm
+
+The first cue-acquisition pose had three arms. Removing the wrong arm, then
+only its hand, produced progressively worse anatomy and erased back definition.
+The successful correction was a fresh render with explicit requirements:
+exactly two anatomically connected arms, exactly two hands, one reaching arm,
+one naturally lowered arm, no rear limb, and a continuous rounded back.
+
+### Treating scale as the main defect
+
+The review platform can resize a coherent character. It cannot fix a rounded
+eye, wrong nose, shortened beard, thin outline or altered head/body ratio.
+Prioritize internal ratios and transitions over matching an arbitrary bounding
+box.
+
+## Accepted reference implementations
+
+### Artist-smock V11 family
+
+The family is documented at:
+
+- `art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/HANDOFF.md`;
+- `art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/evidence/validation.json`;
+- `art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/prompts/`;
+- `art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/normalize_family.py`.
+
+It contains seven authored animations and eight deterministic neutral/bridge
+derivatives. The seven authored clips are active review comparisons; the eight
+technical derivatives are intentionally excluded from the 173-animation
+gallery. Production is unchanged.
+
+### Standard-uniform snooker route
+
+The accepted route and full provenance are documented at:
+
+- `art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/HANDOFF.md`;
+- `art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/build_preview.py`;
+- `art/drafts/keeper-standard-snooker-complete-sequence-2026-10-11-v1/evidence/build-manifest.json`;
+- `art/drafts/keeper-standard-snooker-single-reach-2026-10-11-v1/`;
+- `art/drafts/keeper-standard-snooker-authoring-robustness-test-2026-10-11-v1/`.
+
+The visually accepted half-speed preview has SHA-256
+`b5ae7a9cdf99918628c4a45867713bb9e738682e138f2a4302c82c3913b62e89`.
+The 65-frame, 4 fps review strip has SHA-256
+`01bb338512f37561efd86ceb4256c855e4f7b3e250a49b1b5e275d528a25eab0`.
+It is registered as an active `keeper_snooker` comparison. The canonical
+eight-frame production strip is unchanged.
+
+## Review-platform workflow for future amendments
+
+1. Frank reviews the deployed platform and records decisions against exact
+   animation names.
+2. Frank uses **Hand back to Codex**.
+3. Codex claims the newest handoff before changing mutable art or metadata.
+4. Codex treats the exact-name delta as the complete scope for that pass.
+5. Each amendment is created in a new versioned draft directory with its
+   canonical comparison, hashes, prompt, generator output and deterministic
+   normalization evidence.
+6. Canonical and draft variants are exposed side by side under the same exact
+   animation name.
+7. Production art remains unchanged while the item is an
+   `active-review-draft`.
+8. Frank manually chooses a preferred promotion candidate and hands the review
+   back again.
+9. Only a later explicit promotion copies accepted bytes into raw/runtime
+   production, updates manifests and retains the previous version for rollback.
+
+Do not infer a whole correction family from one marked animation unless Frank
+explicitly requests a consistent family. Conversely, when Frank requests the
+whole special-outfit family, inspect and cover every manifest entry in that
+family, including technical neutral and bridge dependencies, while exposing
+only real authored animations as gallery rows.
+
+## Mandatory evidence checklist
+
+Every new or amended sheet must preserve:
+
+- exact input paths and SHA-256 values;
+- exact prompt text and reference order;
+- untouched generator output;
+- selected and rejected candidate disposition;
+- normalization script and settings;
+- uniform scale and anchor placement;
+- canvas, density, frames and FPS metadata;
+- per-frame alpha bounds;
+- binary-alpha result;
+- zero opaque pixels on all cell edges;
+- no ambiguous cross-cell component ownership;
+- source, normalized and published-review hashes;
+- exact seam comparisons where routes meet;
+- deterministic byte-identical rerun;
+- a rollback statement;
+- explicit status: draft, visually accepted, active review, rejected or
+  promoted.
+
+The deterministic verifier must reject geometry/metadata mismatch, empty
+frames, shared-edge alpha, stale hashes, missing evidence and detached
+exact-name registration.
+
+## Practical decision rules
+
+- If identity is wrong, regenerate the complete character; do not transplant
+  the head.
+- If one generated pose has wrong anatomy, discard it and render that pose
+  again with explicit limb ownership.
+- If a prop will not fit, enlarge the cell; do not shrink the Keeper.
+- If two route endpoints represent the same pose, reuse one complete frame.
+- If a costume source conflicts with the accepted family, the accepted family
+  wins.
+- If an action source conflicts with canonical identity, canonical identity
+  wins and the source supplies choreography only.
+- If an automated result and Frank's visual verdict differ, Frank's verdict
+  controls acceptance.
+- If the review queue does not name an animation, do not begin it.
+- If a visually accepted item has not received a later platform promotion
+  decision, keep production unchanged.
+
+## Documentation and handoff rule
+
+At the end of every accepted draft pass, update this playbook only when the
+method itself has gained new evidence. Update the ordinary README, status and
+animation handoff whenever reviewer state, accepted family state or production
+state changes. Chat history is not an authoritative record.

@@ -301,6 +301,10 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   canonical or draft and published-review hashes, geometry, transparent gutters,
   detached-prop ownership, the V11 whole-frame front seam and exact-name
   reviewer attachment.
+- `docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md` consolidates the
+  durable method learned from the bathrobe failures, accepted V11 artist-smock
+  family and accepted standard-uniform snooker route. It is the starting point
+  for future exact-name artwork requests from the review platform.
 - The deployed reviewer is online only at `/keeper-review/`; its review-only
   draft assets live under `public/keeper-review/drafts/` and are not runtime
   manifest entries. The generated audit artifact remains byte-identical for
