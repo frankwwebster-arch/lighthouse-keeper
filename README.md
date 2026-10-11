@@ -60,6 +60,7 @@ but cannot submit a handoff until the batch is opened online.
 - `docs/prompts/KEEPER_SPRITE_FRAME_ISOLATION_AUDIT.md` — second-stage ready-to-paste exhaustive audit/fix prompt for frame overlap and future enforcement.
 - `docs/prompts/KEEPER_POST_AUDIT_REVIEW_DELTA.md` — ready-to-paste exact-name, JSON-ingestion prompt for Frank's next review after all three audits.
 - `docs/prompts/KEEPER_RELEASE_SURFACE_DATUM_AUDIT.md` — third-stage ready-to-paste audit prompt for consistent tabletop release height and prop hand-off.
+- `docs/prompts/KEEPER_REVIEW_WORKBENCH_BUILD.md` — ready-to-paste separate build prompt for the project-specific next stage of the reviewer: rooms, furniture, annotations, crop proposals, routines, triggers and context preview, with later generic productisation deliberately deferred.
 - `docs/KEEPER_ASSET_SCALE.md` — human-readable keeper measurements and the rules for sizing/placing objects.
 - `data/keeper_asset_contract.json` — authoritative machine-readable scale, pivots and interaction points.
 - `data/keeper_pose_registry.json`, `data/keeper_endpoint_audit.json` and `data/keeper_endpoint_exceptions.json` — shared pose vocabulary, current real-pixel endpoint evidence, and the frozen legacy migration boundary.
