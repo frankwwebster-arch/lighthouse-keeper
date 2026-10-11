@@ -267,6 +267,11 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   `public/keeper-review/index.html`; its review-only draft assets live under
   `public/keeper-review/drafts/` and are not runtime manifest entries. Browser
   progress remains origin-local and moves only through exact-name Export/Import.
+  Gallery cards are deliberately animation-first: name, current review state,
+  latest local save/redraft timestamp, playback and frame stepping, with an
+  `Open close review` action. Close review exposes an exact-name canonical/draft
+  selector that records an exportable preferred-promotion candidate only; it
+  never silently promotes or overwrites production art.
 - 191 keeper sheets and 1,479 frames are in the current technical review batch.
 - 173 animation sheets are accepted into the review gallery.
 - 18 obsolete modular/reference sheets are excluded from review and must not
@@ -274,10 +279,13 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 - 81 sheets are recorded as rebuilt or anatomy-normalised in the latest full
   audit.
 - The audit currently reports zero unresolved original-comparison failures.
-- Imported review state remains 96 Happy, 68 Awaiting new draft review, 3
-  Review later and 6 Unreviewed. The ten selected replacements are a narrow,
-  separately documented canonical promotion; all other affected awaiting rows
-  still require a fresh versioned draft and are not claimed as implemented.
+- The immutable imported review remains 96 Happy, 68 Awaiting new draft review,
+  3 Review later and 6 Unreviewed. The current reviewer is 97 Happy and 67
+  Awaiting after Frank selected the retained Darts draft as his preferred
+  candidate; that preference is not a canonical promotion. The ten selected
+  replacements are a narrow, separately documented canonical promotion; all
+  other affected awaiting rows still require a fresh versioned draft and are
+  not claimed as implemented.
 - Directly comparable full-body families without a saved visual resize are
   constrained to a 0.960–1.040 skull-to-sole ratio; unobscured side torsos
   without a saved visual resize must be within one logical pixel of the

@@ -33,6 +33,7 @@ CODEX_RESPONSE_PATHS = (
 )
 SIDE_ON_OCCLUSION_REGISTER_PATH = ROOT / "data/keeper_side_on_beard_occlusion_audit.json"
 REVIEW_DRAFTS_PATH = ROOT / "data/keeper_review_drafts.json"
+REVIEW_CANDIDATE_DECISIONS_PATH = ROOT / "data/keeper_review_candidate_decisions.json"
 REVIEW_SETTINGS = {
     review["name"]: review
     for review in json.loads(REVIEW_IMPORT_PATH.read_text())["reviews"]
@@ -516,6 +517,12 @@ def publish(assets: list[dict]) -> None:
     reviewed_by_name = {asset["name"]: asset for asset in serialisable if asset["status"] != "excluded-technical"}
     review_import = json.loads(REVIEW_IMPORT_PATH.read_text())
     imported_reviews = {review["name"]: review for review in review_import["reviews"]}
+    candidate_decisions = {}
+    if REVIEW_CANDIDATE_DECISIONS_PATH.exists():
+        decision_payload = json.loads(REVIEW_CANDIDATE_DECISIONS_PATH.read_text())
+        if decision_payload.get("version") != 1 or not isinstance(decision_payload.get("decisions"), list):
+            raise SystemExit("Review candidate decision register has an invalid schema")
+        candidate_decisions = {decision["name"]: decision for decision in decision_payload["decisions"]}
     codex_responses = {}
     for response_path in CODEX_RESPONSE_PATHS:
         codex_responses.update(json.loads(response_path.read_text()))
@@ -623,6 +630,9 @@ def publish(assets: list[dict]) -> None:
             "review-later" if imported.get("reviewLater") else
             "awaiting-new-draft"
         )
+        decision = candidate_decisions.get(asset["name"])
+        if decision:
+            review_status = "happy" if decision.get("happy") else review_status
         review_assets.append({
             **review_clip(asset),
             "leadIn": review_clip(reviewed_by_name[lead_name]) if lead_name else None,
@@ -717,7 +727,8 @@ def publish(assets: list[dict]) -> None:
 
     for asset in review_assets:
         imported = imported_reviews.get(asset["name"])
-        if imported is None:
+        decision = candidate_decisions.get(asset["name"])
+        if imported is None and decision is None:
             continue
         # Geometry and cadence were baked by the production author. Re-review
         # therefore starts from the delivered asset at neutral viewer controls,
@@ -726,18 +737,20 @@ def publish(assets: list[dict]) -> None:
             "widthPercent": 100,
             "heightPercent": 100,
             "animationFps": asset["fps"],
-            "ghostReference": imported.get("ghostReference", "auto"),
-            "ghostPosition": imported.get("ghostPosition", "overlay"),
-            "ghostRotation": imported.get("ghostRotation", 0),
-            "ghostMirrored": imported.get("ghostMirrored", False),
+            "ghostReference": (imported or {}).get("ghostReference", "auto"),
+            "ghostPosition": (imported or {}).get("ghostPosition", "overlay"),
+            "ghostRotation": (imported or {}).get("ghostRotation", 0),
+            "ghostMirrored": (imported or {}).get("ghostMirrored", False),
             "actionRotation": 0,
             "actionOffsetX": 0,
             "actionOffsetY": 0,
             "actionOpacityPercent": 100,
-            "notes": imported.get("notes", ""),
+            "notes": (imported or {}).get("notes", ""),
             "redraftRequested": False,
-            "happy": imported.get("happy", False),
-            "reviewLater": imported.get("reviewLater", False),
+            "happy": decision.get("happy", False) if decision else (imported or {}).get("happy", False),
+            "reviewLater": False if decision else (imported or {}).get("reviewLater", False),
+            "candidateId": decision.get("candidateId") if decision else None,
+            "updatedAt": decision.get("recordedAt") if decision else None,
         }
 
     template = (ROOT / "art/source/keeper-first-batch/scale-review-template.html").read_text()
@@ -892,11 +905,11 @@ def publish(assets: list[dict]) -> None:
         "",
         "## Interactive comparison",
         "",
-        f"Open [the sizing and transition review](review.html) to inspect all {payload['counts']['reviewedAnimationSheets']} accepted animations beside the untouched `keeper_walk` authority. Review-state filters cover Needs my input, Happy, Awaiting new draft review, Review later, Unreviewed and Has Codex response. In focused mode Previous/Next and the Left/Right keys stay inside the selected filter and wrap from its final result to its first.",
+        f"Open [the sizing and transition review](review.html) to inspect all {payload['counts']['reviewedAnimationSheets']} accepted animations. Gallery mode is deliberately compact: each card shows the animation, its current review-state pill, latest local save/redraft timestamp, large playback and frame-stepping controls, plus an `Open close review` button. Review-state filters cover Needs my input, Happy, Awaiting new draft review, Review later, Unreviewed and Has Codex response. In close review, Previous/Next and the Left/Right keys stay inside the selected filter and wrap from its final result to its first.",
         "The pinned reference can show standing side/front/back or sitting side/front/back identity ghosts. These fixed ghosts are anatomy comparisons, not a replacement for each reviewed clip's saved production size. In upright standard-cap poses the gold badge crossing the blue skull-top guide is a calibrated visual proxy; tilted, bent, seated, crouched, horizontal, bare-headed and alternate-headwear poses still require anatomical landmarks.",
-        "Each card retains precise size, position, rotation, opacity, ghost, frame-step and 1–20fps timing controls. The imported production pass starts those viewer transforms at neutral because accepted geometry and cadence are already baked into the delivered sprite and manifest. Comparison settings remain visual aids until saved/exported as a later review proposal.",
+        "Close-review cards retain precise candidate, size, position, rotation, opacity, ghost, frame-step and 1–20fps timing controls. `Preferred promotion candidate` offers canonical production and every available draft for that exact animation. Recording the selection adds a timestamp and exportable `candidateId`; it deliberately does not mutate production art, so a later explicit, reversible promotion can also revert to any retained prior variant. The imported production pass starts viewer transforms at neutral because accepted geometry and cadence are already baked into the delivered sprite and manifest.",
         "Every card has Frank's notes and decision controls plus a read-only Codex response field. The rejected second-round pass remains historical evidence; the ten later selected canonical promotions show their exact prior strip as `Previous version`, while all other Awaiting new draft review cards still require a fresh draft. Orange cards have unsaved changes; saved happy, new-draft and later-review cards use distinct status colours.",
-        "`keeper-scale-choices.json` version 9 exports the complete review register, current review status and Codex response for every animation as well as any new per-card proposals. Export remains blocked while a card has unsaved edits. Import validates exact `keeper_*` names, rejects duplicates/unknown names and safely reconciles stale status-list entries from the matching named review. The page can also prepend matching walks, insert known bridges or freeze a seam with onion skin; every card prints its runtime PNG and authored source-strip filename.",
+        "`keeper-scale-choices.json` version 10 exports the complete review register, current review status, candidate preference and timestamp, and Codex response for every animation as well as any new per-card proposals. Export remains blocked while a card has unsaved edits. Import validates exact `keeper_*` names, rejects duplicates/unknown names and safely reconciles stale status-list entries from the matching named review. The close-review page can also prepend matching walks, insert known bridges or freeze a seam with onion skin; it prints the runtime PNG and authored source-strip filename.",
         "The character-width and character-height sliders each have adjacent −0.5% and +0.5% buttons for precise adjustments. They update the same per-animation values, obey the same 50%–150% limits and become part of the normal Save/export workflow.",
         "Every blue animation-transform slider also has −0.5/+0.5 buttons: degrees for rotation, logical pixels for horizontal/vertical position and percentage points for opacity. They update the same limited, saved and exported values as their sliders.",
         "Each card's frame-control block can play only that reviewed action from frame 1. `Play once` stops on the final frame; `Loop` repeats until paused. This playback choice is inspection-only and does not dirty the review.",

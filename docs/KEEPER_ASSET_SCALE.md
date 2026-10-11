@@ -288,9 +288,10 @@ and height around its fixed contact anchor. The reference, ruler, ghost,
 approach walk and bridge remain at 100%; earlier uniform choices migrate to
 both axes.
 Each card also has a read-only Codex response field, blank where no production
-qualification was needed. Export version 9 produces `keeper-scale-choices.json`
-with the complete status/response register for an authoring pass; it never
-silently changes production sprites. The page can also play the matching
+qualification was needed. Export version 10 produces `keeper-scale-choices.json`
+with the complete status/response register, timestamp and preferred-promotion
+candidate for an authoring pass; it never silently changes production sprites.
+The page can also play the matching
 same-outfit walk immediately before an action. The raw seam, known-bridge and
 onion-skin modes make transition problems visible. Flying and swimming cards
 align the bottom of the first-frame figure to the red floor line for comparison.

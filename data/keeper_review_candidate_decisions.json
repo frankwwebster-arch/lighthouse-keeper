@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "decisions": [
+    {
+      "name": "keeper_darts",
+      "candidateId": "draft:315109693389031844a4055737ff511cbe0c798a8a3b1ca6949155789afb3770",
+      "candidateLabel": "Frank-selected draft",
+      "happy": true,
+      "recordedAt": "2026-10-11T06:46:35Z",
+      "disposition": "Frank confirmed that he is happy with the Frank-selected Darts draft. This is a review preference only; it does not promote or mutate canonical production art."
+    }
+  ]
+}

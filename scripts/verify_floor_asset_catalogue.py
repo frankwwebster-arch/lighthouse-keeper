@@ -513,14 +513,23 @@ rejected_draft_register = json.loads(
     (ROOT / "art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/draft-register.json").read_text()
 )
 assert rejected_draft_register["animation"] == "keeper_darts"
+candidate_decision_payload = json.loads((ROOT / "data/keeper_review_candidate_decisions.json").read_text())
+assert candidate_decision_payload["version"] == 1
+candidate_decisions = {item["name"]: item for item in candidate_decision_payload["decisions"]}
+assert set(candidate_decisions) == {"keeper_darts"}
 assert set(page_reviews) == set(review_names)
 for imported in review_export["reviews"]:
     name = imported["name"]
     delivered = page_reviews[name]
+    decision = candidate_decisions.get(name)
     assert delivered["notes"] == imported.get("notes", ""), name
-    assert delivered["happy"] is imported.get("happy", False), name
-    assert delivered["reviewLater"] is imported.get("reviewLater", False), name
+    assert delivered["happy"] is (decision.get("happy", False) if decision else imported.get("happy", False)), name
+    assert delivered["reviewLater"] is (False if decision else imported.get("reviewLater", False)), name
+    if decision:
+        assert delivered["candidateId"] == decision["candidateId"], name
+        assert delivered["updatedAt"] == decision["recordedAt"], name
     expected_status = (
+        "happy" if decision and decision.get("happy") else
         "happy" if imported.get("happy") else
         "review-later" if imported.get("reviewLater") else
         "awaiting-new-draft"
@@ -541,9 +550,9 @@ filter_groups = {
 }
 assert {name: len(assets) for name, assets in filter_groups.items()} == {
     "all": 173,
-    "needs-input": 77,
-    "happy": 96,
-    "awaiting-new-draft": 68,
+    "needs-input": 76,
+    "happy": 97,
+    "awaiting-new-draft": 67,
     "review-later": 3,
     "unreviewed": 6,
     "has-response": 86,
@@ -577,7 +586,7 @@ for token in (
     "state.savedReviews[asset.name]",
     "state.reviewCards.indexOf(next)",
     "(Math.max(0,position)+delta+filtered.length)%filtered.length",
-    "version:9",
+    "version:10",
     "reviewStatuses",
     "codexResponse",
     "Import review JSON",
@@ -589,6 +598,11 @@ for token in (
     "Current selected replacement",
     "${variant.label||'Draft'} · ${card.asset.name}",
     "Frank-selected draft",
+    "Preferred promotion candidate",
+    "candidateId",
+    "Last local save/redraft",
+    "Open close review",
+    "main:not(.detail-mode) #grid article .filenames",
 ):
     assert token in review_html, token
 
