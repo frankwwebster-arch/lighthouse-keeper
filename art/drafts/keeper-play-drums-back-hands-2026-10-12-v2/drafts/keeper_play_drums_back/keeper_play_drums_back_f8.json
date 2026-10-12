@@ -1,0 +1,56 @@
+{
+  "w": 32,
+  "h": 48,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    16,
+    48
+  ],
+  "z": 50,
+  "loop": true,
+  "seatPoint": [
+    15,
+    38.98
+  ],
+  "handUsePoint": [
+    15,
+    30.78
+  ],
+  "facing": "back",
+  "interaction": "play-drums",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ],
+  "assetRole": "clip",
+  "startPose": "sitting-back",
+  "endPose": "sitting-back",
+  "reviewScaleRounds": {
+    "2026-10-11": [
+      100,
+      100
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-11": [
+      0,
+      0
+    ]
+  },
+  "draftId": "keeper-play-drums-back-hands-2026-10-12-v2",
+  "canonicalUnchanged": true,
+  "amendment": {
+    "date": "2026-10-12",
+    "frames": [
+      6
+    ],
+    "reason": "Hands and crossed drumsticks were incorrectly posed behind the Keeper's back.",
+    "invariant": "Frames 1-5 and 7-8 are byte-identical to the 11 October draft; frame 6 keeps the hands in the playable front/side plane."
+  }
+}

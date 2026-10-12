@@ -32,6 +32,13 @@ frame 1 is copied to frame 8 because the first draft established those frames
 as byte-identical loop endpoints; frames 2–6 are byte-identical to the first
 draft. Canonical art and both review variants remain unpromoted.
 
+`keeper_play_drums_back` has a second reversible comparison in
+`art/drafts/keeper-play-drums-back-hands-2026-10-12-v2/`: only frame 6 changes,
+removing the hands and crossed sticks from behind the Keeper's back and
+wrapping both forearms forward at his sides toward the unseen drum kit. Frames
+1–5 and 7–8 are byte-identical to the first draft. Canonical art and both
+review variants remain unpromoted.
+
 Frank withdrew all newly rendered face-to-camera candidates on 12 October.
 Twelve registers are marked `withdrawn-by-user` and excluded from
 `data/keeper_review_drafts.json`; their files remain only as rejected
@@ -1006,4 +1013,4 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 
 ## Ready-to-paste opening prompt for the next review iteration
 
-> Continue the Lighthouse Keeper amendment review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, `docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md`, `docs/review/keeper-animation-codex-responses-2026-10-12.json`, `art/drafts/keeper-review-amendments-2026-10-11-v1/README.md`, `art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/README.md` and `art/drafts/keeper-carry-shopping-right-bag-2026-10-12-v2/README.md`. Treat handoff `d9081e53-2808-4b1f-8422-2df09cf38c3c` and its 81 exact names as the only scope. Review the 41 exact-name amendment candidates plus the separate `keeper_party_hat_put_on_back` frame-2 and `keeper_carry_shopping` frames-1/7 v2 comparisons in the online tool; preserve canonical art, all historical variants and the 12 retained `withdrawn-by-user` face-to-camera candidates. The deleted `keeper_count_money` amendment must not be regenerated without a new explicit instruction. Do not reactivate, regenerate or promote any other face-to-camera amendment without an explicit new instruction. Iterate with Frank on `keeper_fish_seated`, `keeper_shower_exit` and `keeper_shower_wash`; leave `keeper_slide_side` deferred until helter-skelter geometry exists. Promote nothing without explicit approval.
+> Continue the Lighthouse Keeper amendment review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, `docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md`, `docs/review/keeper-animation-codex-responses-2026-10-12.json`, `art/drafts/keeper-review-amendments-2026-10-11-v1/README.md`, `art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/README.md`, `art/drafts/keeper-carry-shopping-right-bag-2026-10-12-v2/README.md` and `art/drafts/keeper-play-drums-back-hands-2026-10-12-v2/README.md`. Treat handoff `d9081e53-2808-4b1f-8422-2df09cf38c3c` and its 81 exact names as the only scope. Review the 41 exact-name amendment candidates plus the separate `keeper_party_hat_put_on_back` frame-2, `keeper_carry_shopping` frames-1/7 and `keeper_play_drums_back` frame-6 v2 comparisons in the online tool; preserve canonical art, all historical variants and the 12 retained `withdrawn-by-user` face-to-camera candidates. The deleted `keeper_count_money` amendment must not be regenerated without a new explicit instruction. Do not reactivate, regenerate or promote any other face-to-camera amendment without an explicit new instruction. Iterate with Frank on `keeper_fish_seated`, `keeper_shower_exit` and `keeper_shower_wash`; leave `keeper_slide_side` deferred until helter-skelter geometry exists. Promote nothing without explicit approval.
