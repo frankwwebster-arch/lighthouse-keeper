@@ -35,6 +35,13 @@ the crossed hands and sticks are removed from the back plane and both forearms
 wrap forward at the sides toward the unseen drum kit. This batch's first
 variant remains unchanged for direct comparison and rollback.
 
+Frank's supplied removal mask for `keeper_put_record` is preserved as a
+separate sibling candidate in
+`art/drafts/keeper-put-record-removal-2026-10-12-v2/`. Only the marked
+floating-record regions in frames 5–8 become transparent; frames 1–4 and every
+surviving v1 pixel remain byte-identical. This batch's first variant remains
+unchanged for direct comparison and rollback.
+
 The party outfit rule is one red-and-cream conical paper party hat replacing the
 navy cap; the hat does not expose or invent a bald dome and remains stable
 across every retained side/rear pose.

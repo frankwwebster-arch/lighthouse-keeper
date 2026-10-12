@@ -1,0 +1,185 @@
+{
+  "animation": "keeper_put_record",
+  "priorStripSha256": "bce7f629d26049b885cd9aab6b268b09487c222b9ca3f48ffbf2fb4845d61911",
+  "draftStripSha256": "56c6b1af150ea96c7cc37c7dc3c3c778137082ec97e1450d7c9bcee3fedfe354",
+  "changedFrameNumbers": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "unchangedFrameNumbers": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "removalEvidence": [
+    {
+      "frame": 5,
+      "sourceMaskBox": [
+        195,
+        383,
+        260,
+        441
+      ],
+      "sourceMaskPixelCount": 2793,
+      "normalizedRemovedBox": [
+        161,
+        81,
+        201,
+        116
+      ],
+      "normalizedRemovedPixelCount": 1035
+    },
+    {
+      "frame": 6,
+      "sourceMaskBox": [
+        189,
+        383,
+        257,
+        441
+      ],
+      "sourceMaskPixelCount": 3023,
+      "normalizedRemovedBox": [
+        157,
+        81,
+        198,
+        116
+      ],
+      "normalizedRemovedPixelCount": 1111
+    },
+    {
+      "frame": 7,
+      "sourceMaskBox": [
+        209,
+        383,
+        271,
+        441
+      ],
+      "sourceMaskPixelCount": 2990,
+      "normalizedRemovedBox": [
+        163,
+        81,
+        201,
+        116
+      ],
+      "normalizedRemovedPixelCount": 1105
+    },
+    {
+      "frame": 8,
+      "sourceMaskBox": [
+        173,
+        383,
+        241,
+        441
+      ],
+      "sourceMaskPixelCount": 3122,
+      "normalizedRemovedBox": [
+        170,
+        81,
+        210,
+        116
+      ],
+      "normalizedRemovedPixelCount": 1132
+    }
+  ],
+  "frameEvidence": [
+    {
+      "frame": 1,
+      "alphaBox": [
+        93,
+        3,
+        181,
+        158
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "935f051db606d289b3138f39858ddd1e1fac1da320490bd53d9b856987b68e27",
+      "changedFromV1": false
+    },
+    {
+      "frame": 2,
+      "alphaBox": [
+        93,
+        3,
+        178,
+        158
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "dc0e88dc349dd5fc861c2089904870d6cf81550a210b547e879b3902710c98e1",
+      "changedFromV1": false
+    },
+    {
+      "frame": 3,
+      "alphaBox": [
+        91,
+        3,
+        180,
+        158
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "a33fd6851964628166a0ebed88827603dbb3366fee071eb9bbdb62b69f610d1d",
+      "changedFromV1": false
+    },
+    {
+      "frame": 4,
+      "alphaBox": [
+        87,
+        2,
+        186,
+        157
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "41d2305b2354933166c8c6d954b0a5f3b00c32340222c83c8acdbf70d222ae85",
+      "changedFromV1": false
+    },
+    {
+      "frame": 5,
+      "alphaBox": [
+        70,
+        24,
+        172,
+        158
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "cbafbbea3f90c43c0adaf8bbe57266db99fbe2db3e0f3f08104e00cadca1d49e",
+      "changedFromV1": true
+    },
+    {
+      "frame": 6,
+      "alphaBox": [
+        73,
+        29,
+        168,
+        158
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "2236c50d794f663554291a2731997ae3a162e3765ab4db5db8d9934d66961884",
+      "changedFromV1": true
+    },
+    {
+      "frame": 7,
+      "alphaBox": [
+        72,
+        26,
+        161,
+        158
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "ee0445a83045fdac98e2614d71a6f894c8b62ead41fa967f903ab7e4c88cbcb2",
+      "changedFromV1": true
+    },
+    {
+      "frame": 8,
+      "alphaBox": [
+        100,
+        3,
+        167,
+        158
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "6001ca62e8168dfa49aef90a2d42eb6d6518fe31e95d9f52770b64da1333e5db",
+      "changedFromV1": true
+    }
+  ]
+}
