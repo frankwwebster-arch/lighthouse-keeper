@@ -32,6 +32,10 @@ reactivated by a family rebuild. Canonical front-facing art remains authoritativ
 until Frank gives a new explicit direction. For retained side and
 three-quarter amendments, do not introduce a generic smile or open grin;
 action-specific mouths are allowed only when the physical action requires one.
+The rejected `keeper_pyjamas_turn_back-v2-neutral.png` is a pinned negative
+example: its front pose erases the moustache/mouth definition and turns the
+remaining line into the cutesy curved "pixie grin" Frank rejected. Never use
+that source as a face, moustache or expression reference.
 
 The canonical side-right gameplay raster is:
 

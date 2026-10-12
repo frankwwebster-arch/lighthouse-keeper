@@ -4,7 +4,7 @@
   "animation": "keeper_pyjamas_turn_back",
   "status": "withdrawn-by-user",
   "label": "11 Oct amendment draft v1",
-  "selection": "Withdrawn on 2026-10-12: revert every newly rendered face-to-camera candidate. Retained only as rejected provenance; never expose as an active review candidate.",
+  "selection": "Withdrawn on 2026-10-12: revert every newly rendered face-to-camera candidate. The front pose loses the defined moustache and mouth and collapses them into the cheesy pixie grin Frank explicitly rejected. Retained only as rejected provenance; never expose as an active review candidate.",
   "canonical": {
     "strip": "art/raw/keeper-first-batch/keeper_pyjamas_turn_back_f6.png",
     "stripSha256": "3ae5aef6a26b1e2739473ff9f90970055b12a18a426ee79c9e012ed338491f3e",
@@ -89,6 +89,6 @@
     "fixedSourceScale": 0.38235294117647056,
     "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
   },
-  "qualification": "Coherent full-character render; neutral front face and stable turn. No body-part transplant.",
+  "qualification": "Rejected: the front pose loses canonical moustache and mouth definition and substitutes a cutesy curved grin. This source is provenance only and is not an acceptable face reference.",
   "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
 }

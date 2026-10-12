@@ -27,7 +27,9 @@
     },
     {
       "animation": "keeper_pyjamas_turn_back",
-      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_pyjamas_turn_back/draft-register.json"
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_pyjamas_turn_back/draft-register.json",
+      "sourceSha256": "a1e34e26df0a6feb22b1f08883c0c512875baf90c44b7053ecdd83c003570730",
+      "rejectionReason": "The front pose loses the defined moustache and mouth and collapses them into the cheesy pixie grin Frank explicitly rejected."
     },
     {
       "animation": "keeper_scuba_swim_down",
