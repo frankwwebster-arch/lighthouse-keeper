@@ -88,6 +88,24 @@ Every asset in the game can be upgraded (Frank), so a recipe normally names an o
 - **Ghosts** shows faint copies of him in the first pose of each stop.
 - **Evening** darkens the outside and shades the room. The room's light is on only while its door is open (he opens it on the way in; it closes behind him as he leaves). The stairway is always lit.
 
+## Universal action ingress
+
+Every action uses the same visible sequence:
+
+`walk → stop → optional turn to front/back → action`
+
+The walk is not a fixed-length authored clip. The recipe compiler derives its
+distance from the Keeper's position and the target object/asset placement and
+runs whole strides. Crucially, the walk cycle begins during the doorway's fully
+occluded `hide` step. The Keeper must emerge already mid-stride; he must never
+appear standing outside the door and only then begin walking. A hidden costume
+swap does not exempt the action from the remaining walk, stop, optional turn
+and action ingress.
+
+The separate `/animation-workbench` uses one representative walk cycle and a
+door mask to review this handover. Runtime remains responsible for extending
+the whole-stride walk to the actual target position.
+
 ## Clean joins between clips
 
 - **Walks finish on a whole stride.** Codex's walk cycles (`*_cycle`) begin and end on the standing frame, so a walk always runs whole strides. The speed gives a little, so he lands on his spot on the standing frame. A walk that stops mid-stride snaps his legs together in one frame, which was the flash.

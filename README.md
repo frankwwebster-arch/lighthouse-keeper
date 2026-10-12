@@ -35,9 +35,11 @@ place.
 The separate Keeper Animation Workbench is at
 `https://lighthouse-keeper-mu.vercel.app/animation-workbench`. It has immutable
 **Final** and browser-local, exportable **Draft** lanes for frame sequencing,
-whole-animation and section looping, and complete same-costume transition
-previews. It does not share data with the existing reviewer and cannot promote
-art into production; see `docs/KEEPER_ANIMATION_WORKBENCH.md`.
+whole-animation and section looping, and the mandatory walk → stop → optional
+turn → action ingress preview. The game engine alone extends the walk from
+world placement, beginning the cycle while the Keeper is still hidden behind
+the departure door. The workbench does not share data with the existing reviewer
+and cannot promote art into production; see `docs/KEEPER_ANIMATION_WORKBENCH.md`.
 
 The four-hour review hand-back monitor is deliberately outside Codex: the
 per-user macOS `launchd` job installed by
@@ -77,7 +79,7 @@ must remain paused to avoid duplicate alerts.
 - `art/source/first-production-batch/` — untouched generated sources and prompt/provenance notes; `scripts/build_first_asset_batch.py` rebuilds the exact `art/raw/` deliveries, then `npm run sprites` publishes them.
 - `docs/PRODUCTION_ASSET_KIT.md` — exact Pixel filenames, dimensions, anchors, pivots, z-order, frame counts, fps, and delivery order.
 - `docs/KEEPER_ANIMATIONS.md` — plain-English animation index, direction rules and object-alignment instructions.
-- `docs/KEEPER_ANIMATION_WORKBENCH.md`, `data/keeper_animation_workbench.json` and `src/animation-workbench/` — the separate Draft/Final framework for non-destructive frame editing, section loops and complete visible transition previews. The initial Final library contains the two approved V2 standard-uniform turns; production remains unchanged.
+- `docs/KEEPER_ANIMATION_WORKBENCH.md`, `data/keeper_animation_workbench.json` and `src/animation-workbench/` — the separate Draft/Final framework for non-destructive frame editing, section loops and mandatory ingress previews. Every animation is reviewed as walk → stop → optional front/back turn → action; only the walk-cycle count varies deterministically from game-world placement, and it starts while the Keeper is still hidden behind the departure door. The initial Final library contains the two approved V2 standard-uniform turns; production remains unchanged.
 - `docs/KEEPER_ANIMATION_HANDOFF.md` — complete keeper review checkpoint, correction history, exact transition-gap inventory, object-binding design and ready-to-paste next-task prompt.
 - `docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md` — proven Keeper artwork recipe, continuity rules, rejected methods, accepted artist/snooker case studies, evidence checklist and exact-name review workflow.
 - `docs/KEEPER_FULL_FACE_INVENTORY.md`, `data/keeper_full_face_inventory.json` and `art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/` — the complete read-only front-facing inventory and approved, reversible full-face canon pack. The first two unpromoted V2 redraws are isolated in `art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/`; their rejected V1 predecessor remains historical and unmodified.

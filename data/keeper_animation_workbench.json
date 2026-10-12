@@ -7,7 +7,7 @@
   "principles": {
     "final": "Approved, immutable source strips. Editing begins by copying an item to Draft.",
     "draft": "Non-destructive playback recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
-    "transitions": "Every visible same-costume action must carry an inspectable walk \u2192 stop \u2192 optional turn \u2192 action/recovery route. Door-hidden costume changes are explicitly exempt."
+    "transitions": "Every action must carry an inspectable walk \u2192 stop \u2192 optional facing turn \u2192 action ingress. The engine varies only the walk-cycle count from world placement; a door may hide a costume swap but does not exempt the action ingress."
   },
   "lanes": {
     "final": [
@@ -47,11 +47,12 @@
         "sectionLoops": [],
         "overallLoop": false,
         "transitionPolicy": "required",
-        "transitionReason": "Standard-uniform movement remains visible; walk, stop, turn and arrival must read as one continuous route.",
+        "transitionReason": "Every action begins with walk, stop and any required facing turn. The game engine extends only the walk from world placement.",
         "transitionRoute": [
           {
             "id": "walk",
-            "label": "Walk",
+            "role": "walk",
+            "label": "Walk (runtime length)",
             "assetId": "runtime:keeper_walk_cycle",
             "frames": [
               0,
@@ -63,11 +64,14 @@
               6,
               7
             ],
-            "repeats": 2,
-            "mirror": false
+            "repeats": 1,
+            "mirror": false,
+            "distanceMode": "runtime-placement",
+            "entryOcclusion": "door-left"
           },
           {
             "id": "stop",
+            "role": "stop",
             "label": "Stop",
             "assetId": "runtime:keeper_walk_stop",
             "frames": [
@@ -82,7 +86,8 @@
           },
           {
             "id": "turn",
-            "label": "Turn",
+            "role": "action",
+            "label": "Action: turn",
             "assetId": "final:keeper_turn_front:v2",
             "frames": [
               0,
@@ -94,17 +99,6 @@
             ],
             "repeats": 1,
             "mirror": false
-          },
-          {
-            "id": "arrive",
-            "label": "Front idle",
-            "assetId": "runtime:keeper_neutral_standing-front",
-            "frames": [
-              0
-            ],
-            "repeats": 4,
-            "mirror": false,
-            "fps": 4
           }
         ],
         "approval": {
@@ -157,11 +151,12 @@
         "sectionLoops": [],
         "overallLoop": false,
         "transitionPolicy": "required",
-        "transitionReason": "Standard-uniform movement remains visible; walk, stop, turn and arrival must read as one continuous route.",
+        "transitionReason": "Every action begins with walk, stop and any required facing turn. The game engine extends only the walk from world placement.",
         "transitionRoute": [
           {
             "id": "walk",
-            "label": "Walk",
+            "role": "walk",
+            "label": "Walk (runtime length)",
             "assetId": "runtime:keeper_walk_cycle",
             "frames": [
               0,
@@ -173,11 +168,14 @@
               6,
               7
             ],
-            "repeats": 2,
-            "mirror": true
+            "repeats": 1,
+            "mirror": true,
+            "distanceMode": "runtime-placement",
+            "entryOcclusion": "door-right"
           },
           {
             "id": "stop",
+            "role": "stop",
             "label": "Stop",
             "assetId": "runtime:keeper_walk_stop",
             "frames": [
@@ -192,7 +190,8 @@
           },
           {
             "id": "turn",
-            "label": "Turn",
+            "role": "action",
+            "label": "Action: turn",
             "assetId": "final:keeper_turn_left_front:v2",
             "frames": [
               0,
@@ -204,17 +203,6 @@
             ],
             "repeats": 1,
             "mirror": false
-          },
-          {
-            "id": "arrive",
-            "label": "Front idle",
-            "assetId": "runtime:keeper_neutral_standing-front",
-            "frames": [
-              0
-            ],
-            "repeats": 4,
-            "mirror": false,
-            "fps": 4
           }
         ],
         "approval": {
@@ -370,9 +358,21 @@
     ],
     "transitionPreview": true,
     "transitionPolicies": [
-      "required",
-      "door-hidden"
+      "required"
     ],
+    "ingressStages": [
+      "walk",
+      "stop",
+      "optional-turn",
+      "action"
+    ],
+    "walkExtension": {
+      "owner": "game-engine",
+      "strategy": "deterministic-runtime-placement",
+      "workbenchPreviewCycles": 1,
+      "startVisibility": "hidden-behind-door",
+      "firstVisibleState": "walking-mid-stride"
+    },
     "futureSafe": "Timeline entries use stable IDs and asset/frame references; approved PNG bytes remain immutable."
   },
   "provenance": {

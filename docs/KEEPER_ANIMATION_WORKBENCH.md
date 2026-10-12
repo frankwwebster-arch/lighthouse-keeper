@@ -11,10 +11,10 @@ The workbench is the assembly and transition layer for the new animation set:
 
 - **Final** contains approved, immutable animation strips and recipes;
 - **Draft** contains non-destructive working recipes made from Final assets;
-- visible same-costume routes can be played as one sequence, rather than
-  judging an action strip in isolation;
-- costume-to-costume joins can be marked `door-hidden`, because the closed
-  doors provide the transition.
+- every animation is judged through one ingress sequence—walk, stop, optional
+  facing turn, then the action—rather than as an isolated strip;
+- a closed door may hide the costume swap itself, but it does not exempt the
+  resulting animation from that ingress contract.
 
 This framework does not promote anything into `art/raw/`, `public/sprites/` or
 the runtime manifest. A separate explicit instruction is still required for
@@ -31,8 +31,8 @@ therefore starts with:
 
 Each Final entry points to a content-hashed public copy of the approved V2
 draft strip. The original draft path and SHA-256 remain in the catalogue. The
-runtime walk, stop and neutral strips are read-only context assets used only to
-compose transition previews.
+runtime walk, stop and neutral strips are read-only context assets. Walk and
+stop compose the ingress preview; the neutral remains endpoint context.
 
 ## Draft and Final architecture
 
@@ -65,29 +65,41 @@ reordering remain explicit. Overlapping section loops are disabled rather than
 being interpreted ambiguously. This supports a future snooker recipe in which
 the stroke section repeats before the recovery, idle and departure sequence.
 
-## Transition contract
+## Ingress contract
 
-Every item declares one of two policies:
+Every animation has the same ordered contract:
 
-- `required`: the join remains visible and must have a reviewable route;
-- `door-hidden`: a costume change is fully hidden and the visible seam check is
-  intentionally exempt.
+1. `walk` — one representative cycle in the workbench;
+2. `stop` — the matching stop strip;
+3. `turn` — optional, only when the action needs front or back facing;
+4. `action` — the selected animation begins.
 
-The initial right-facing route is:
+The game engine owns the only variable stitching: it deterministically repeats
+the walk cycle from the Keeper's world position and the target asset's world
+placement. The workbench does not author a guessed distance or save bespoke
+walk counts. The walk begins while the Keeper is still fully hidden behind the
+departure door, so his first visible state is already mid-stride; it must never
+spawn him visibly and then start the cycle. The ingress preview simulates that
+door-side emergence. Once the Keeper reaches the stop point, stop, turn if
+needed and action use their fixed authored frames.
 
-`walk ×2 → stop → V2 turn → canonical front idle`
+The initial turn-item route is therefore:
 
-The left-facing route mirrors only the mirror-safe production walk and stop;
-it then uses the authored left-to-front V2 turn and the same canonical front
-idle. The interface plays the real strips consecutively and exposes every
-route segment. Metadata diagnostics reject pose or outfit disagreement at a
-join. This makes the player's important sequence—walk, settle, turn, act and
-recover—an ordinary review object rather than a later integration check.
+`walk (one representative cycle) → stop → action: V2 turn`
 
-Future action entries should include the complete visible route relevant to
-that action. For example, a snooker item can use:
+The left-facing route mirrors only the mirror-safe production walk and stop,
+then begins the authored left-to-front V2 turn. The turn's own final frame is
+already the exact canonical front neutral, so no extra join is invented. The
+interface plays the real strips consecutively and exposes every route segment.
+Metadata diagnostics reject pose or outfit disagreement at a join.
 
-`walk → stop → turn if required → acquire cue → repeated stroke section → release cue → idle → turn → depart`
+Future action entries must include this ingress. For example, a front-facing
+snooker item can use:
+
+`walk (runtime length) → stop → turn to front → snooker action`
+
+The snooker action recipe can then repeat its stroke section before continuing
+through its authored stand-up, idle, turn and departure frames.
 
 ## Source layout
 
@@ -104,7 +116,7 @@ that action. For example, a snooker item can use:
 - `scripts/build_keeper_animation_workbench.py` — deterministic initial
   catalogue/asset builder;
 - `scripts/verify_keeper_animation_workbench.ts` — immutable asset, geometry,
-  gutter, approval and route-contract verifier.
+gutter, approval and ingress-contract verifier.
 
 ## Rebuild and verification
 
@@ -121,8 +133,8 @@ npm run build
 The verifier checks that the data and deployed catalogues are byte-identical;
 all asset hashes and strip dimensions match; Final frames are non-empty and
 clear of every cell edge; approval scope cannot imply runtime promotion; and
-both routes contain walk, stop, turn and front-idle segments with compatible
-pose metadata.
+every route is exactly walk, stop, optional turn and action; walk length is
+runtime-owned; and all joins have compatible pose metadata.
 
 ## Extension points for Claude's review
 
@@ -137,14 +149,17 @@ The invariants to preserve are:
 1. Final never mutates in the browser.
 2. Draft operations manipulate references, not source PNG bytes.
 3. A new Final version receives a new ID and content-hashed asset path.
-4. Same-costume visible routes require transition preview.
-5. Door-hidden costume changes are the only automatic transition exemption.
+4. Every action requires an ingress preview, including actions whose costume
+   swap was hidden by a door.
+5. The engine determines walk repetition only from world placement; authors do
+   not bake distance-specific walk counts into recipes. The cycle starts behind
+   the door and visibility begins only after motion has begun.
 6. Production promotion remains a separate explicit decision.
 
 ## Known limitations
 
 - Drafts are currently local to one browser unless exported as JSON.
-- The route definition is repository-authored; the UI does not yet add or
+- The ingress definition is repository-authored; the UI does not yet add or
   remove route segments.
 - Join diagnostics currently enforce asset, pose and outfit metadata. Visual
   judgement happens in the live transition player; automated per-join pixel,

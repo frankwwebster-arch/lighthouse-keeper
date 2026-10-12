@@ -48,6 +48,12 @@ function Preview({ title, sequence, assets, loop, onLoopChange, empty }: {
   }, [index, playing, loop, sequence])
   const current = sequence[Math.min(index, Math.max(0, sequence.length - 1))]
   const asset = current ? assets.get(current.assetId) : undefined
+  const entryDoor = sequence.find((frame) => frame.entryOcclusion)?.entryOcclusion
+  const actorPosition = current?.role === 'walk'
+    ? current.entryOcclusion === 'door-right'
+      ? 100 - (current.travelProgress ?? 0) * 50
+      : (current.travelProgress ?? 0) * 50
+    : 50
   return (
     <section className={styles.previewPanel}>
       <div className={styles.sectionHeading}>
@@ -55,7 +61,8 @@ function Preview({ title, sequence, assets, loop, onLoopChange, empty }: {
         <label className={styles.check}><input type="checkbox" checked={loop} onChange={(event) => onLoopChange(event.target.checked)} /> Loop</label>
       </div>
       <div className={styles.stage}>
-        {asset && current ? <SpriteFrame asset={asset} frame={current.frame} mirror={current.mirror} /> : <p>{empty ?? 'No frames in this preview.'}</p>}
+        {asset && current ? <div className={entryDoor ? styles.routeActor : styles.staticActor} style={entryDoor ? { left: `${actorPosition}%` } : undefined}><SpriteFrame asset={asset} frame={current.frame} mirror={current.mirror} /></div> : <p>{empty ?? 'No frames in this preview.'}</p>}
+        {entryDoor && <div className={`${styles.doorMask} ${entryDoor === 'door-left' ? styles.doorLeft : styles.doorRight}`} aria-hidden="true"><span>hidden lead-in</span></div>}
       </div>
       <div className={styles.transport}>
         <button type="button" className={styles.primaryButton} disabled={!sequence.length} onClick={() => setPlaying((value) => !value)}>{playing ? 'Pause' : 'Play'}</button>
@@ -182,7 +189,7 @@ export default function AnimationWorkbench() {
         <div>
           <p className={styles.eyebrow}>Separate review surface · production unchanged</p>
           <h1>Keeper Animation Workbench</h1>
-          <p>Approved strips live in immutable <strong>Final</strong>. Experiments live in non-destructive <strong>Draft</strong>.</p>
+          <p>Approved strips live in immutable <strong>Final</strong>. Every action previews walk → stop → optional turn → action.</p>
         </div>
         <nav><a href="/">Game</a><a href="/studio">Recipe Studio</a></nav>
       </header>
@@ -204,7 +211,7 @@ export default function AnimationWorkbench() {
             <p>{lane === 'final' ? 'Final is immutable. Copy an animation to Draft before editing.' : 'Draft changes are stored in this browser and can be exported for handoff.'}</p>
           </div>
           <ul>
-            {visibleItems.map((item) => <li key={item.id}><button type="button" className={item.id === selected?.id ? styles.selectedItem : ''} onClick={() => setSelectedId(item.id)}><strong>{item.title}</strong><span>{item.name}</span><small>{item.transitionPolicy === 'required' ? 'Visible transition required' : 'Door-hidden transition'}</small></button></li>)}
+            {visibleItems.map((item) => <li key={item.id}><button type="button" className={item.id === selected?.id ? styles.selectedItem : ''} onClick={() => setSelectedId(item.id)}><strong>{item.title}</strong><span>{item.name}</span><small>Walk / stop / turn if needed / action</small></button></li>)}
           </ul>
           {!visibleItems.length && <p className={styles.empty}>{lane === 'draft' ? 'No Draft animations yet. Copy one from Final.' : 'No matching Final animations.'}</p>}
         </aside>
@@ -226,12 +233,12 @@ export default function AnimationWorkbench() {
 
             <div className={styles.previewGrid}>
               <Preview title="Animation preview" sequence={animationSequence} assets={assets} loop={previewLoop} onLoopChange={(next) => { setPreviewLoop(next); if (selected.lane === 'draft') updateDraft((item) => ({ ...item, overallLoop: next })) }} />
-              <Preview title="Transition preview" sequence={routeSequence} assets={assets} loop={routeLoop} onLoopChange={setRouteLoop} empty={selected.transitionPolicy === 'door-hidden' ? 'Transition hidden behind a door; no visible seam review required.' : 'No transition route has been defined.'} />
+              <Preview title="Ingress preview" sequence={routeSequence} assets={assets} loop={routeLoop} onLoopChange={setRouteLoop} empty="No walk / stop / turn / action ingress has been defined." />
             </div>
 
             <section className={styles.routePanel}>
-              <div className={styles.sectionHeading}><div><h2>Transition route</h2><p>{selected.transitionReason}</p></div><span className={selected.transitionPolicy === 'required' ? styles.required : styles.exempt}>{selected.transitionPolicy === 'required' ? 'Must be smooth' : 'Door-hidden exemption'}</span></div>
-              <ol className={styles.route}>{selected.transitionRoute.map((segment) => <li key={segment.id}><strong>{segment.label}</strong><span>{assets.get(segment.assetId)?.name ?? 'missing asset'}</span>{segment.repeats > 1 && <small>× {segment.repeats}</small>}{segment.mirror && <small>mirrored</small>}</li>)}</ol>
+              <div className={styles.sectionHeading}><div><h2>Ingress route</h2><p>{selected.transitionReason}</p></div><span className={styles.required}>Required for every action</span></div>
+              <ol className={styles.route}>{selected.transitionRoute.map((segment) => <li key={segment.id}><strong>{segment.label}</strong><span>{assets.get(segment.assetId)?.name ?? 'missing asset'}</span>{segment.entryOcclusion && <small>begins hidden behind {segment.entryOcclusion === 'door-left' ? 'left' : 'right'} door</small>}{segment.distanceMode === 'runtime-placement' && <small>cycles set by game placement</small>}{segment.repeats > 1 && <small>× {segment.repeats}</small>}{segment.mirror && <small>mirrored</small>}</li>)}</ol>
               {routeWarnings.length ? <ul className={styles.warnings}>{routeWarnings.map((warning) => <li key={warning}>{warning}</li>)}</ul> : <p className={styles.pass}>Pose and costume metadata agree at every route join.</p>}
             </section>
 

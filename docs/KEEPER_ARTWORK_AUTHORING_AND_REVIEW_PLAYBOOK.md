@@ -408,15 +408,18 @@ The separate `/animation-workbench` surface complements, but does not replace,
 the exact-name `/keeper-review/` workflow. The established reviewer remains the
 source for amendment decisions and handoffs. The workbench is the place to
 assemble approved material into editable Draft recipes and judge complete
-same-costume routes.
+action ingress routes.
 
 Final workbench items are immutable and repository-backed. Frame copying,
 removal, reordering and section repetition begin only after **Copy to Draft**;
 these operations change frame references, never approved sprite bytes. Every
-visible same-costume action must expose its walk, stop, optional turn, action,
-recovery and departure as applicable. Costume changes fully hidden by closed
-doors are explicitly exempt. Workbench Final approval never implies raw or
-runtime promotion.
+animation must expose `walk → stop → optional front/back turn → action`. The
+game engine alone extends the walk deterministically from world placement; no
+distance-specific walk count belongs in an authored recipe. Walking begins
+while the Keeper is still fully hidden behind the departure door, so his first
+visible state is already mid-stride. Closed doors may
+hide costume swaps but do not exempt the resulting action from its ingress.
+Workbench Final approval never implies raw or runtime promotion.
 
 The complete contract is in `docs/KEEPER_ANIMATION_WORKBENCH.md`.
 

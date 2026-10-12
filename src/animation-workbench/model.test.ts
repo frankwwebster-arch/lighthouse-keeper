@@ -6,8 +6,9 @@ const item: WorkbenchItem = {
   timeline: [0, 1, 2, 3].map((frame) => ({ id: `f${frame}`, frame })), sectionLoops: [], overallLoop: false,
   transitionPolicy: 'required', transitionReason: '', tags: [],
   transitionRoute: [
-    { id: 'walk', label: 'Walk', assetId: 'walk', frames: [0, 1], repeats: 2, mirror: false },
-    { id: 'turn', label: 'Turn', assetId: 'turn', frames: [0, 1, 2, 3], repeats: 1, mirror: false },
+    { id: 'walk', role: 'walk', label: 'Walk (runtime length)', assetId: 'walk', frames: [0, 1], repeats: 1, mirror: false, distanceMode: 'runtime-placement', entryOcclusion: 'door-left' },
+    { id: 'stop', role: 'stop', label: 'Stop', assetId: 'walk', frames: [1], repeats: 1, mirror: false },
+    { id: 'turn', role: 'action', label: 'Action: turn', assetId: 'turn', frames: [0, 1, 2, 3], repeats: 1, mirror: false },
   ],
 }
 
@@ -49,9 +50,11 @@ describe('animation workbench timeline', () => {
   })
 
   it('compiles repeated route segments and checks pose seams', () => {
-    expect(transitionPlayback(item, assets)).toHaveLength(8)
+    expect(transitionPlayback(item, assets)).toHaveLength(7)
+    expect(transitionPlayback(item, assets)[0]).toMatchObject({ role: 'walk', entryOcclusion: 'door-left', travelProgress: 0 })
+    expect(transitionPlayback(item, assets)[1]).toMatchObject({ role: 'walk', travelProgress: 1 })
     expect(transitionWarnings(item, assets)).toEqual([])
-    const broken = { ...item, transitionRoute: [...item.transitionRoute, { id: 'walk2', label: 'Walk again', assetId: 'walk', frames: [0], repeats: 1, mirror: false }] }
-    expect(transitionWarnings(broken, assets)).toEqual(['Turn ends standing-front; Walk again starts standing-side-right.'])
+    const broken = { ...item, transitionRoute: [...item.transitionRoute, { id: 'walk2', role: 'walk' as const, label: 'Walk again', assetId: 'walk', frames: [0], repeats: 1, mirror: false }] }
+    expect(transitionWarnings(broken, assets)).toEqual(['Action: turn ends standing-front; Walk again starts standing-side-right.'])
   })
 })

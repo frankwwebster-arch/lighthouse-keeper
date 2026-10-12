@@ -110,18 +110,22 @@ def final_item(name: str, direction: str) -> dict:
         "sectionLoops": [],
         "overallLoop": False,
         "transitionPolicy": "required",
-        "transitionReason": "Standard-uniform movement remains visible; walk, stop, turn and arrival must read as one continuous route.",
+        "transitionReason": "Every action begins with walk, stop and any required facing turn. The game engine extends only the walk from world placement.",
         "transitionRoute": [
             {
                 "id": "walk",
-                "label": "Walk",
+                "role": "walk",
+                "label": "Walk (runtime length)",
                 "assetId": "runtime:keeper_walk_cycle",
                 "frames": list(range(8)),
-                "repeats": 2,
+                "repeats": 1,
                 "mirror": left,
+                "distanceMode": "runtime-placement",
+                "entryOcclusion": "door-right" if left else "door-left",
             },
             {
                 "id": "stop",
+                "role": "stop",
                 "label": "Stop",
                 "assetId": "runtime:keeper_walk_stop",
                 "frames": list(range(5)),
@@ -130,20 +134,12 @@ def final_item(name: str, direction: str) -> dict:
             },
             {
                 "id": "turn",
-                "label": "Turn",
+                "role": "action",
+                "label": "Action: turn",
                 "assetId": f"final:{name}:v2",
                 "frames": list(range(6)),
                 "repeats": 1,
                 "mirror": False,
-            },
-            {
-                "id": "arrive",
-                "label": "Front idle",
-                "assetId": "runtime:keeper_neutral_standing-front",
-                "frames": [0],
-                "repeats": 4,
-                "mirror": False,
-                "fps": 4,
             },
         ],
         "approval": {
@@ -175,7 +171,7 @@ def main() -> None:
         "principles": {
             "final": "Approved, immutable source strips. Editing begins by copying an item to Draft.",
             "draft": "Non-destructive playback recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
-            "transitions": "Every visible same-costume action must carry an inspectable walk → stop → optional turn → action/recovery route. Door-hidden costume changes are explicitly exempt.",
+            "transitions": "Every action must carry an inspectable walk → stop → optional facing turn → action ingress. The engine varies only the walk-cycle count from world placement; a door may hide a costume swap but does not exempt the action ingress.",
         },
         "lanes": {
             "final": [
@@ -193,7 +189,15 @@ def main() -> None:
             "frameOperations": ["copy", "remove", "move-left", "move-right"],
             "playback": ["play", "pause", "restart", "overall-loop", "section-loop"],
             "transitionPreview": True,
-            "transitionPolicies": ["required", "door-hidden"],
+            "transitionPolicies": ["required"],
+            "ingressStages": ["walk", "stop", "optional-turn", "action"],
+            "walkExtension": {
+                "owner": "game-engine",
+                "strategy": "deterministic-runtime-placement",
+                "workbenchPreviewCycles": 1,
+                "startVisibility": "hidden-behind-door",
+                "firstVisibleState": "walking-mid-stride",
+            },
             "futureSafe": "Timeline entries use stable IDs and asset/frame references; approved PNG bytes remain immutable.",
         },
         "provenance": {

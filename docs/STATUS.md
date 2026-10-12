@@ -87,12 +87,17 @@ reviewer at `/animation-workbench`. Its shared item architecture has an
 immutable repository-backed Final lane and browser-local, JSON-exportable Draft
 lane. Draft recipes can copy, remove and reorder source-frame references, loop
 the whole preview and repeat selected contiguous sections without modifying any
-PNG. Every visible same-costume item has a complete transition player; only
-door-hidden costume changes are exempt.
+PNG. Every animation has a required ingress player: walk, stop, optional front
+or back turn, then action. Closed doors may hide a costume swap but never exempt
+the resulting action. The game engine deterministically extends only the walk,
+using the Keeper and target asset's world placement. It starts that cycle while
+the Keeper is hidden behind the departure door, so the first visible state is
+already mid-stride. The ingress player simulates the matching door-side reveal.
 
 Frank approved the two complete V2 standard-uniform turn redraws on 12 October
-2026 and they seed Final. Their transition routes play the real runtime walk
-and stop strips, the approved V2 turn and the canonical front idle. This is
+2026 and they seed Final. Their ingress routes play one representative runtime
+walk cycle, the stop strip and the approved V2 turn as the action. That turn's
+final frame is already the exact canonical front neutral. This is
 workbench approval only: raw art, runtime sprites and the runtime manifest are
 unchanged. Architecture, limitations and Claude extension points are in
 `docs/KEEPER_ANIMATION_WORKBENCH.md`; the deterministic gate is

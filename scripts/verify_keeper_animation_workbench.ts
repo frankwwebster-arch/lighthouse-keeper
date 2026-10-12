@@ -26,6 +26,7 @@ const catalogue = JSON.parse(fs.readFileSync(DATA, 'utf8')) as Record<string, an
 if (catalogue.version !== 1 || catalogue.platformId !== 'keeper-animation-workbench') fail('catalogue identity changed')
 if (catalogue.separateFrom !== '/keeper-review/') fail('new workbench is not explicitly separated from the existing reviewer')
 if (catalogue.provenance?.productionSpritesChanged !== false || catalogue.provenance?.runtimeManifestChanged !== false) fail('production mutation guard changed')
+if (catalogue.featureContract?.walkExtension?.owner !== 'game-engine' || catalogue.featureContract?.walkExtension?.startVisibility !== 'hidden-behind-door' || catalogue.featureContract?.walkExtension?.firstVisibleState !== 'walking-mid-stride') fail('door-hidden runtime walk-lead-in contract changed')
 if (catalogue.lanes?.draft?.length !== 0) fail('repository catalogue must not ship mutable Draft records')
 if (JSON.stringify(catalogue.lanes?.final?.map((item: Record<string, any>) => item.id)) !== JSON.stringify(EXPECTED_FINALS)) fail('Final library scope changed')
 
@@ -47,7 +48,12 @@ for (const item of catalogue.lanes.final as Record<string, any>[]) {
   if (item.timeline?.length !== 6 || item.timeline.map((entry: Record<string, any>) => entry.frame).join(',') !== '0,1,2,3,4,5') fail(`${item.id} Final timeline changed`)
   if (item.sectionLoops?.length || item.overallLoop !== false) fail(`${item.id} Final recipe was mutated`)
   if (item.transitionPolicy !== 'required') fail(`${item.id} lost its visible-transition gate`)
-  if (item.transitionRoute.map((segment: Record<string, any>) => segment.label).join('→') !== 'Walk→Stop→Turn→Front idle') fail(`${item.id} route no longer covers walk, stop, turn and arrival`)
+  const roles = item.transitionRoute.map((segment: Record<string, any>) => segment.role)
+  if (JSON.stringify(roles) !== '["walk","stop","action"]' && JSON.stringify(roles) !== '["walk","stop","turn","action"]') fail(`${item.id} ingress is not walk → stop → optional turn → action`)
+  if (item.transitionRoute[0]?.distanceMode !== 'runtime-placement' || item.transitionRoute[0]?.repeats !== 1) fail(`${item.id} walk extension is not delegated to deterministic runtime placement`)
+  const expectedDoor = item.name === 'keeper_turn_left_front' ? 'door-right' : 'door-left'
+  if (item.transitionRoute[0]?.entryOcclusion !== expectedDoor) fail(`${item.id} does not begin walking behind the correct door`)
+  if (item.transitionRoute.at(-1)?.assetId !== item.assetId) fail(`${item.id} ingress does not end by beginning the selected action`)
   const currentAsset = assets.get(item.assetId)
   if (!currentAsset || currentAsset.source !== `${item.sourceDraft}/drafts/${item.name}/${item.name}_f6.png`) fail(`${item.id} does not resolve to its approved V2 source`)
   let priorEnd: string | undefined
@@ -78,11 +84,11 @@ for (const item of catalogue.lanes.final as Record<string, any>[]) {
 }
 
 const ui = fs.readFileSync(UI, 'utf8')
-for (const label of ['Final', 'Draft', 'Copy to Draft', 'Copy frame', 'Remove frame', 'Move left', 'Move right', 'Repeat section', 'Transition preview', 'Door-hidden exemption', 'Export Draft JSON', 'Import Draft JSON']) {
+for (const label of ['Final', 'Draft', 'Copy to Draft', 'Copy frame', 'Remove frame', 'Move left', 'Move right', 'Repeat section', 'Ingress preview', 'Required for every action', 'begins hidden behind', 'cycles set by game placement', 'Export Draft JSON', 'Import Draft JSON']) {
   if (!ui.includes(label)) fail(`UI omits ${label}`)
 }
 for (const functionName of ['copyTimelineEntry', 'removeTimelineEntry', 'moveTimelineEntry', 'expandTimeline', 'transitionPlayback', 'transitionWarnings']) {
   if (!fs.readFileSync(MODEL, 'utf8').includes(`function ${functionName}`)) fail(`model omits ${functionName}`)
 }
 
-console.log('Verified Keeper Animation Workbench: separate immutable Final library, non-destructive Draft editing, section loops, and complete same-costume transition routes')
+console.log('Verified Keeper Animation Workbench: immutable Final, non-destructive Draft editing, and door-hidden walk → stop → optional turn → action ingress with runtime-owned walk length')

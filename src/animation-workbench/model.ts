@@ -1,5 +1,6 @@
 export type Lane = 'draft' | 'final'
-export type TransitionPolicy = 'required' | 'door-hidden'
+export type TransitionPolicy = 'required'
+export type RouteRole = 'walk' | 'stop' | 'turn' | 'action'
 
 export type SpriteAsset = {
   id: string
@@ -25,12 +26,15 @@ export type TimelineEntry = { id: string; frame: number }
 export type SectionLoop = { id: string; startId: string; endId: string; repeats: number }
 export type RouteSegment = {
   id: string
+  role: RouteRole
   label: string
   assetId: string
   frames: number[]
   repeats: number
   mirror: boolean
   fps?: number
+  distanceMode?: 'runtime-placement'
+  entryOcclusion?: 'door-left' | 'door-right'
 }
 
 export type Approval = {
@@ -80,6 +84,9 @@ export type PlaybackFrame = {
   fps: number
   label: string
   mirror: boolean
+  role?: RouteRole
+  entryOcclusion?: 'door-left' | 'door-right'
+  travelProgress?: number
   sourceEntryId?: string
 }
 
@@ -168,7 +175,6 @@ function mirroredPose(pose: string | undefined, mirror: boolean) {
 }
 
 export function transitionWarnings(item: WorkbenchItem, assets: Map<string, SpriteAsset>) {
-  if (item.transitionPolicy === 'door-hidden') return []
   const warnings: string[] = []
   for (let index = 0; index < item.transitionRoute.length - 1; index += 1) {
     const current = item.transitionRoute[index]
@@ -200,19 +206,22 @@ export function itemPlayback(item: WorkbenchItem, asset: SpriteAsset): PlaybackF
 }
 
 export function transitionPlayback(item: WorkbenchItem, assets: Map<string, SpriteAsset>): PlaybackFrame[] {
-  if (item.transitionPolicy === 'door-hidden') return []
   const expandedItem = expandTimeline(item.timeline, item.sectionLoops)
   return item.transitionRoute.flatMap((segment) => {
     const asset = assets.get(segment.assetId)
     if (!asset) return []
     const frames = segment.assetId === item.assetId ? expandedItem.map((entry) => entry.frame) : segment.frames
-    return Array.from({ length: Math.max(1, segment.repeats) }, (_, repeat) => frames.map((frame, index) => ({
-      key: `${segment.id}-${repeat}-${index}`,
-      assetId: asset.id,
-      frame: Math.max(0, Math.min(asset.frames - 1, frame)),
-      fps: segment.fps || asset.fps || 4,
-      label: segment.label,
-      mirror: segment.mirror,
-    }))).flat()
+    const repeated = Array.from({ length: Math.max(1, segment.repeats) }, () => frames).flat()
+    return repeated.map((frame, index) => ({
+        key: `${segment.id}-${index}`,
+        assetId: asset.id,
+        frame: Math.max(0, Math.min(asset.frames - 1, frame)),
+        fps: segment.fps || asset.fps || 4,
+        label: segment.label,
+        mirror: segment.mirror,
+        role: segment.role,
+        entryOcclusion: segment.entryOcclusion,
+        travelProgress: segment.role === 'walk' ? (repeated.length <= 1 ? 1 : index / (repeated.length - 1)) : undefined,
+      }))
   })
 }

@@ -1022,18 +1022,23 @@ Draft controls copy, remove and reorder frame references, loop a complete
 animation, and repeat a selected contiguous section. They never rewrite source
 strips. Overlapping section loops fail closed.
 
-Transition preview is mandatory for visible same-costume routes. The initial
-two items play `walk ×2 → stop → approved V2 turn → canonical front idle`; the
-left route mirrors only the mirror-safe walk/stop assets. Metadata diagnostics
-check pose and outfit agreement at joins. Costume-to-costume joins may use the
-explicit `door-hidden` policy because the closed doors obscure them.
+Ingress preview is mandatory for every animation: `walk → stop → optional
+front/back turn → action`. The game engine deterministically chooses the walk
+cycle count from the Keeper's starting position and the target asset's world
+placement; the workbench shows one representative cycle and authors no
+distance-specific count. The walk cycle begins while the Keeper is fully
+hidden behind the departure door; his first visible state is already in motion,
+and the workbench simulates that door-side reveal. The initial items use `walk → stop → action: approved
+V2 turn`; the left route mirrors only the mirror-safe walk/stop assets. A door
+may hide a costume swap, but the resulting action still requires the same
+ingress preview. Metadata diagnostics check pose and outfit agreement at joins.
 
 Full architecture, extension points and verification are in
 `docs/KEEPER_ANIMATION_WORKBENCH.md`. The authoritative catalogue is
 `data/keeper_animation_workbench.json`; its public copy is byte-identical.
 `scripts/verify_keeper_animation_workbench.ts` checks approval evidence,
 content hashes, strip geometry, transparent cell gutters, immutable Final
-scope and complete transition routes. Raw/runtime sprites and the manifest
+scope and complete ingress routes. Raw/runtime sprites and the manifest
 remain unchanged.
 
 ## Review-comments workflow for a later feedback round
