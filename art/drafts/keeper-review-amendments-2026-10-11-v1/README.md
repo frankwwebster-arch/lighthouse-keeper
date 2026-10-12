@@ -15,6 +15,11 @@ decision record. The other exact handoff names are either verified canonical
 keeps or explicit iterative/deferred responses. `sync_review_registry.py`
 publishes only registers whose status remains `active-review-draft`.
 
+Frank's later annotated frame-2 correction for `keeper_party_hat_put_on_back`
+is preserved as a separate sibling candidate in
+`art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/`; this batch's
+first variant remains unchanged for direct comparison and rollback.
+
 The party outfit rule is one red-and-cream conical paper party hat replacing the
 navy cap; the hat does not expose or invent a bald dome and remains stable
 across every retained side/rear pose.

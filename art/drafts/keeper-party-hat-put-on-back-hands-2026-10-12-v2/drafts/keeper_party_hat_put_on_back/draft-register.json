@@ -1,0 +1,132 @@
+{
+  "draftId": "keeper-party-hat-put-on-back-hands-2026-10-12-v2",
+  "handoffId": "direct-review-2026-10-12-party-hat-frame-2",
+  "animation": "keeper_party_hat_put_on_back",
+  "status": "active-review-draft",
+  "label": "12 Oct rear-hand correction v2",
+  "selection": "Direct annotated review correction; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_party_hat_put_on_back_f8.png",
+    "stripSha256": "ca3877f5de83830f0e3609b7857f117093908396e5d2ed6ac640357c0823a935",
+    "runtime": "public/sprites/keeper_party_hat_put_on_back.png",
+    "runtimeSha256": "c4fcf7b8b155579bd0bd786ea9a3506486d5bc4547e877b9c2501970914fc529",
+    "sidecar": "art/raw/keeper-first-batch/keeper_party_hat_put_on_back_f8.json",
+    "sidecarSha256": "0e6cd596ed4d7fb25e3a7f6b5e882ed59bdf8cfee9ebc8eefb170f6f1f68570c"
+  },
+  "previousDraft": {
+    "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_hat_put_on_back/draft-register.json",
+    "registerSha256": "d5ff7d7734d5581d5f59a822be4a521e5d9971e9c5326d9ea99c26bbb2b8421a",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_hat_put_on_back/keeper_party_hat_put_on_back_f8.png",
+    "stripSha256": "319b7ea9e97fed22dd0c4cf35b501602b0ea4d054e21593818b3f40ca26d7adf",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_hat_put_on_back/keeper_party_hat_put_on_back_f8.json",
+    "sidecarSha256": "245e7e40951fdc367fbdde082ca2dbf53bc9087ee0fb404288439de2d30a8799"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/frame-2-corrected-generated.png",
+    "sourceSha256": "757d8432b7eeec91c4513e95bb80b3839da9252a16a850029c659dad63fcdb93",
+    "workingSource": "art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/frame-2-source.png",
+    "workingSourceSha256": "7b36812a37ba79cd3fd5eb3f79906c1e3650d10587d2112b0601e366e643072d",
+    "strip": "art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/drafts/keeper_party_hat_put_on_back/keeper_party_hat_put_on_back_f8.png",
+    "stripSha256": "f782da08d76f30182c748dd38fddfa9e95b676f4ab772cf10d42303ce9dae31f",
+    "sidecar": "art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/drafts/keeper_party_hat_put_on_back/keeper_party_hat_put_on_back_f8.json",
+    "sidecarSha256": "8ba4a3882936e5849b6f581bf88332c23c907ff06e64a18a3506c6389dc83ee2",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          20,
+          73,
+          108,
+          222
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "a04830df54c9b2afe9a99b71322cd260838f712943879e0408a4546dbbbd260c"
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          21,
+          73,
+          107,
+          222
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "794c8207bf903bca39de4498b7e504a30552bdeee005f8997c9df04657ade026"
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          19,
+          38,
+          108,
+          222
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "e0bb4ec584a8e4526396bf7290ae8586cbe798e5eb2a577115979b0c59f79780"
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          19,
+          32,
+          109,
+          222
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "08453116da34249b8f6feb98dec4c69421a40aa838807c9c241fd1544e45c88d"
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          16,
+          38,
+          113,
+          222
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "fe83f383f48c5511a843542a9b41dc812e6f20b74901cce3f2cd4a9cfab6c8f7"
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          12,
+          42,
+          116,
+          222
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "d84488b0dfa5ffa7b6a1c28819e8edb2fe7f0b96b2b5fdc02c4497ff2b43481c"
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          19,
+          38,
+          109,
+          222
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "8a2a58f2f0972cf7afac630514aa2983a7b153e85772ccaa2b4abd69a7c81644"
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          19,
+          38,
+          109,
+          222
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "8a2a58f2f0972cf7afac630514aa2983a7b153e85772ccaa2b4abd69a7c81644"
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/evidence/keeper_party_hat_put_on_back/frames.png",
+      "art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/evidence/keeper_party_hat_put_on_back/preview.gif"
+    ],
+    "normalization": "Frame 2 alpha crop >=32, uniform height match to rejected frame 2, final binary alpha >=128, bottom-centred on the unchanged 128x224 review cell.",
+    "seam": "rear-no-hat to connected rear-plane arm lift to overhead hat raise; frames 1 and 3-8 unchanged"
+  },
+  "qualification": "Only frame 2 is re-rendered. It replaces the impossible front-plane hand placement with connected rear-view arms holding the hat at the nape; every other frame is byte-identical to the prior draft.",
+  "rollback": "Remove this draft directory and registry entry; canonical and the complete 11 October draft remain unchanged."
+}

@@ -19,6 +19,12 @@ or runtime keeper sprite has been replaced. The reviewer publishes comparison
 images by content hash, allowing a current amendment and a retained prior
 version with the same exact filename to coexist safely.
 
+`keeper_party_hat_put_on_back` additionally has a second reversible comparison
+in `art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/`: only frame 2
+changes, replacing the impossible front-plane hands with connected rear-plane
+arms holding the hat at the nape. Frames 1 and 3–8 are byte-identical to the
+first draft, and neither variant is promoted.
+
 Frank withdrew all newly rendered face-to-camera candidates on 12 October.
 Thirteen registers are marked `withdrawn-by-user` and are excluded from
 `data/keeper_review_drafts.json`; their files remain only as rejected
@@ -991,4 +997,4 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 
 ## Ready-to-paste opening prompt for the next review iteration
 
-> Continue the Lighthouse Keeper amendment review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, `docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md`, `docs/review/keeper-animation-codex-responses-2026-10-12.json` and `art/drafts/keeper-review-amendments-2026-10-11-v1/README.md`. Treat handoff `d9081e53-2808-4b1f-8422-2df09cf38c3c` and its 81 exact names as the only scope. Review the 41 active versioned candidates in the online tool; preserve canonical art, all historical variants and the 13 `withdrawn-by-user` face-to-camera candidates. Do not reactivate, regenerate or promote any face-to-camera amendment without an explicit new instruction. Iterate with Frank on `keeper_fish_seated`, `keeper_shower_exit` and `keeper_shower_wash`; leave `keeper_slide_side` deferred until helter-skelter geometry exists. Promote nothing without explicit approval.
+> Continue the Lighthouse Keeper amendment review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, `docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md`, `docs/review/keeper-animation-codex-responses-2026-10-12.json`, `art/drafts/keeper-review-amendments-2026-10-11-v1/README.md` and `art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/README.md`. Treat handoff `d9081e53-2808-4b1f-8422-2df09cf38c3c` and its 81 exact names as the only scope. Review the 41 exact-name amendment candidates plus the separate `keeper_party_hat_put_on_back` frame-2 v2 comparison in the online tool; preserve canonical art, all historical variants and the 13 `withdrawn-by-user` face-to-camera candidates. Do not reactivate, regenerate or promote any face-to-camera amendment without an explicit new instruction. Iterate with Frank on `keeper_fish_seated`, `keeper_shower_exit` and `keeper_shower_wash`; leave `keeper_slide_side` deferred until helter-skelter geometry exists. Promote nothing without explicit approval.
