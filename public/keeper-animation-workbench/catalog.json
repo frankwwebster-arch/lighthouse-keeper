@@ -6,7 +6,7 @@
   "separateFrom": "/keeper-review/",
   "principles": {
     "final": "Currently empty. An animation enters Final only after explicit visual approval of its complete transition route.",
-    "draft": "Currently empty while the approved Prime Master V1 receives reviewable 90\u00b0 side and 180\u00b0 back endpoints. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
+    "draft": "Currently empty while the exact-silhouette Prime Master V2 back receives visual review. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
     "transitions": "Every action must carry an inspectable walk \u2192 stop \u2192 optional facing turn \u2192 action ingress and a compatible action \u2192 stop \u2192 walk egress. Root motion continues through stop/start; the engine varies only walking distance from world placement."
   },
   "lanes": {
@@ -466,7 +466,7 @@
     }
   ],
   "storage": {
-    "drafts": "empty pending approval of Prime Master V1 orthographic endpoints; prior V1/V2 strips remain provenance assets and are not active proposals",
+    "drafts": "empty pending approval of the exact-silhouette Prime orthographic V2 back; prior transition strips and orthographic V1 remain provenance only",
     "final": "empty by explicit user decision; browser tools never mutate Final records"
   },
   "featureContract": {
@@ -526,8 +526,8 @@
     "keeperPrimeCoreV1RegisterSha256": "79c6edf251958dfae15d30d26b7c8ac62b36a6f71342fb93bf82629c87cbe1ff",
     "primeMasterRegister": "art/drafts/keeper-prime-master-2026-10-12-v1/master-pack-register.json",
     "primeMasterRegisterSha256": "ff8e1d06bf26d28a4791ea44a239a443c7f102e87c08a0be6e971e24716278e2",
-    "primeOrthographicRegister": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v1/batch-register.json",
-    "primeOrthographicRegisterSha256": "7165e23c6f843b8104a38cc615de548ce07ddb1727823f26e8ff71c3eb9f61b2",
+    "primeOrthographicRegister": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/batch-register.json",
+    "primeOrthographicRegisterSha256": "b58fa1d7f2c21a427703462dffa78af9e018d89387f9e40332edde35f8be4325",
     "runtimeManifest": "public/sprites/manifest.json",
     "runtimeManifestSha256": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
     "productionSpritesChanged": false,

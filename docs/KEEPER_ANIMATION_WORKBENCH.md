@@ -15,10 +15,11 @@ Frank permanently approved
 `art/drafts/keeper-prime-master-2026-10-12-v1/` on 13 October 2026 with the
 wording “Approved. Make sure this is NEVER forgotten.” It is the sole identity,
 rendering, proportion, face and single-band uniform authority. The only active
-visual proposal is its reversible 90° side-right and 180° back endpoint pack at
-`art/drafts/keeper-prime-orthographic-views-2026-10-13-v1/`, reviewed at
-`/keeper-review/keeper-prime-orthographic-v1/`. No animation redrafting begins
-until Frank approves those orthographic endpoints.
+visual proposal is `keeper-prime-orthographic-views-2026-10-13-v2`, reviewed at
+`/keeper-review/keeper-prime-orthographic-v2/`. It carries the V1 90° side
+forward byte-identically and replaces the approximate V1 back with an exact
+approved-front alpha silhouette. No animation redrafting begins until Frank
+approves that V2 back endpoint.
 
 ## Prime Keeper authority
 
@@ -37,13 +38,12 @@ rendering-quality comparison only. All double-stripe generations are rejected
 provenance. The approved PNG and approval wording are hash- and text-pinned by
 the verifier so a later rebuild cannot silently replace or demote it.
 
-The orthographic V1 pack aligns both proposals to the approved front's centre
-axis, cap top and floor anchor. Its review page shows the approved front in cyan
-over each full-colour proposal. Deterministic cross-sections require the back
-silhouette to remain within four source pixels of the front width at twelve
-registered landmark rows. Its centre must remain within half a source pixel at
-every occupied row. The selected first back view's full cream rear mass is hair,
-not beard; the later too-short hair edit is rejected provenance.
+The orthographic V2 pack shows the approved front in cyan over each full-colour
+view. For the back, all 81,920 alpha values are copied from the approved front,
+so contour, transparent gaps, cap top, floor, centreline and every row width
+match exactly. The rear RGB detail remains a true back view with full cream rear
+hair—not beard—and one broad pale band. Orthographic V1 is superseded but
+retained unchanged as provenance.
 
 ## Purpose and boundary
 
@@ -110,7 +110,10 @@ still be recovered manually.
   `scripts/verify_keeper_prime_master_v1.ts` — new smooth foundation pack.
 - `scripts/build_keeper_prime_orthographic_views_v1.py` and
   `scripts/verify_keeper_prime_orthographic_views_v1.ts` — aligned side/back
-  candidates, ghost overlays and cross-section constraints.
+  historical candidates and tolerance-based cross-sections;
+- `scripts/build_keeper_prime_orthographic_views_v2.py` and
+  `scripts/verify_keeper_prime_orthographic_views_v2.ts` — active exact-alpha
+  back candidate and zero-mismatch front/back contract.
 
 Historical V1/V2 public assets remain content-addressed so provenance and old
 exported recipes are recoverable. Presence in the asset table is not approval
@@ -121,9 +124,11 @@ and does not place an item in either active lane.
 ```sh
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_master_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v1.py
+/Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v2.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_animation_workbench.py
 npm run verify:keeper-prime-master-v1
 npm run verify:keeper-prime-orthographic-v1
+npm run verify:keeper-prime-orthographic-v2
 npm run verify:keeper-animation-workbench
 npm test
 npm run typecheck
@@ -138,8 +143,8 @@ confirm raw/runtime art and the runtime manifest remain unchanged.
 
 ## Next approval gate
 
-Frank must approve the Prime side-right and back orthographic endpoints before
-any animation is redrafted. After approval, restart at the core set in small
+Frank must approve the exact-silhouette V2 back endpoint before any animation
+is redrafted. The side is unchanged from V1. After approval, restart at the core set in small
 reviewable batches: walk and exact stop, stop-to-walk, side-to-front/back turns,
 then sit/stand. Every frame in a batch must be authored from the same smooth
 high-resolution family. Only after the core joins are accepted should action

@@ -18,7 +18,7 @@ shortlist or an earlier sample set—defines later correction scope.
 | Area | Current status | Consequence |
 |---|---|---|
 | Keeper Prime identity | Frame 6 remains identity, stance, head-position and endpoint evidence, but its coarse raster was rejected as an animation rendering source. Frank permanently approved `keeper-prime-master-2026-10-12-v1` on 13 October 2026 with “Approved. Make sure this is NEVER forgotten.” | Treat the approved smooth master as the sole identity, rendering, proportion and face authority. Its exact approval and bytes are verifier-pinned. Derive every later direction, pose, outfit and expression from that one smooth family. |
-| Orthographic endpoints | `keeper-prime-orthographic-views-2026-10-13-v1` proposes aligned 90° side-right and 180° back views. Cyan front ghosts, fixed guides and row cross-sections expose silhouette drift. | Await explicit approval of both views before redrawing animation. The selected first back has full rear hair; the later too-short edit is rejected provenance. |
+| Orthographic endpoints | V2 carries the V1 90° side byte-identically and replaces its approximate back. The V2 rear alpha channel is pixel-for-pixel identical to the approved front across all 81,920 pixels. | Await explicit approval of the V2 back before redrawing animation. Preserve full rear hair, one pale band and rear-only internal detail. V1 and the too-short hair edit remain provenance. |
 | Standard uniform | Frank preferred the first smooth render and judged the double-stripe jumper too difficult to retain consistently. | The approved Prime Master uses one broad pale chest-and-sleeve band. Double-stripe generated variants are rejected provenance. |
 | Animation workbench | Final and active Draft both contain zero animations. | Historical V1/V2 transition assets remain recoverable provenance only; do not present or reuse them as active candidates. |
 | Artist-smock design | The V10 costume design is accepted; seven V11 authored animations are active review drafts | Keep this family internally consistent and await exact-name platform decisions before production promotion |
@@ -73,11 +73,12 @@ October 2026: a smooth density-8 front neutral based on Frank's preferred first
 generated render, with one broad pale band and explicit face/landmark guides.
 Its approval is a permanent authority record, but not production promotion.
 The active follow-on proposal is
-`art/drafts/keeper-prime-orthographic-views-2026-10-13-v1/`, which aligns a 90°
-right profile and 180° rear elevation to the approved centre axis, cap height
-and floor contact. Cyan front ghosts and deterministic row cross-sections are
-mandatory review evidence. The selected full cream rear mass is hair, not
-beard; the later hair-cut-too-short edit is rejected provenance. The full read-only
+`art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/`. Its side is
+byte-identical to V1; its 180° rear elevation copies the approved front alpha
+channel exactly after fitting rear-specific RGB detail. Cyan ghost evidence and
+a zero-mismatch verifier make the overlay claim deterministic. The full cream
+rear mass is hair, not beard. V1 and the later hair-cut-too-short mistake are
+retained provenance. The full read-only
 62-asset scope is recorded in
 `docs/KEEPER_FULL_FACE_INVENTORY.md` and
 `data/keeper_full_face_inventory.json`.

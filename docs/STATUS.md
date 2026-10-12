@@ -51,10 +51,10 @@ Frank permanently approved `keeper-prime-master-2026-10-12-v1` on 13 October
 2026 with “Approved. Make sure this is NEVER forgotten.” It is the sole smooth
 density-8 identity authority and uses Frank's preferred first render with one
 broad pale jumper band rather than the harder-to-maintain double stripe. The
-active `keeper-prime-orthographic-views-2026-10-13-v1` draft proposes aligned
-90° side-right and 180° back endpoints with cyan front ghost overlays and
-deterministic silhouette cross-sections. The selected back retains full rear
-hair; the later too-short edit is rejected provenance. The 62-asset inventory
+active `keeper-prime-orthographic-views-2026-10-13-v2` draft carries the V1
+side byte-identically and gives the back all 81,920 approved-front alpha values.
+Its overlay therefore matches pixel for pixel while retaining rear-only detail
+and full rear hair. V1 and the too-short edit remain provenance. The 62-asset inventory
 remains untouched pending approval of these endpoints. No production sprite or
 manifest has changed.
 
@@ -104,7 +104,7 @@ strips no longer seed Final after the visible pixel-density/model jump was
 rejected. Raw art, runtime sprites and the runtime manifest are unchanged.
 The permanently approved smooth master is at
 `/keeper-review/keeper-prime-master-v1/`; aligned side/back proposals and their
-ghost overlays are at `/keeper-review/keeper-prime-orthographic-v1/`.
+exact front/back overlay is at `/keeper-review/keeper-prime-orthographic-v2/`.
 Architecture, limitations and extension points are in
 `docs/KEEPER_ANIMATION_WORKBENCH.md`; the deterministic gate is
 `npm run verify:keeper-animation-workbench`.

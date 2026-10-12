@@ -1,0 +1,21 @@
+{
+  "name": "keeper_prime_master-neutral-standing-side-right",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "fps": 1,
+  "density": 8,
+  "anchor": [
+    16,
+    40
+  ],
+  "loop": false,
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "outfit": "standard-single-broad-band",
+  "status": "draft-awaiting-visual-approval",
+  "identityAuthority": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+  "generatedSource": null,
+  "carriedForwardFrom": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+  "alphaSilhouetteAuthority": null
+}

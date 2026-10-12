@@ -16,7 +16,7 @@ V2 = ROOT / "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2"
 CORE_V1 = ROOT / "art/drafts/keeper-prime-core-transitions-2026-10-12-v1"
 CORE = ROOT / "art/drafts/keeper-prime-core-transitions-2026-10-12-v2"
 PRIME_MASTER = ROOT / "art/drafts/keeper-prime-master-2026-10-12-v1"
-PRIME_ORTHOGRAPHIC = ROOT / "art/drafts/keeper-prime-orthographic-views-2026-10-13-v1"
+PRIME_ORTHOGRAPHIC = ROOT / "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2"
 PUBLIC = ROOT / "public/keeper-animation-workbench"
 DATA_PATH = ROOT / "data/keeper_animation_workbench.json"
 APPROVAL_WORDING = "I am very happy with your V2."
@@ -294,7 +294,7 @@ def main() -> None:
         "separateFrom": "/keeper-review/",
         "principles": {
             "final": "Currently empty. An animation enters Final only after explicit visual approval of its complete transition route.",
-            "draft": "Currently empty while the approved Prime Master V1 receives reviewable 90° side and 180° back endpoints. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
+            "draft": "Currently empty while the exact-silhouette Prime Master V2 back receives visual review. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
             "transitions": "Every action must carry an inspectable walk → stop → optional facing turn → action ingress and a compatible action → stop → walk egress. Root motion continues through stop/start; the engine varies only walking distance from world placement.",
         },
         "lanes": {
@@ -303,7 +303,7 @@ def main() -> None:
         },
         "assets": assets,
         "storage": {
-            "drafts": "empty pending approval of Prime Master V1 orthographic endpoints; prior V1/V2 strips remain provenance assets and are not active proposals",
+            "drafts": "empty pending approval of the exact-silhouette Prime orthographic V2 back; prior transition strips and orthographic V1 remain provenance only",
             "final": "empty by explicit user decision; browser tools never mutate Final records",
         },
         "featureContract": {

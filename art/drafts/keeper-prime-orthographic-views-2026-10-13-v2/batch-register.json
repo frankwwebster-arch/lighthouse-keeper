@@ -1,0 +1,459 @@
+{
+  "batchId": "keeper-prime-orthographic-views-2026-10-13-v2",
+  "status": "draft-awaiting-visual-approval",
+  "purpose": "Replace the approximate V1 rear silhouette with a back whose complete alpha channel exactly matches the permanently approved front.",
+  "approvedFront": {
+    "file": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+    "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+    "register": "art/drafts/keeper-prime-master-2026-10-12-v1/master-pack-register.json",
+    "registerSha256": "ff8e1d06bf26d28a4791ea44a239a443c7f102e87c08a0be6e971e24716278e2"
+  },
+  "poseReferences": {
+    "legacySide": {
+      "file": "art/raw/keeper-first-batch/keeper_neutral_standing-side-right_f1.png",
+      "sha256": "02106cfc54b224c8d4e9985e58420f1350f114d24e2e6c6258cad68e513657ce",
+      "role": "pose only"
+    },
+    "legacyBack": {
+      "file": "art/raw/keeper-first-batch/keeper_neutral_standing-back_f1.png",
+      "sha256": "9bf53472c3ebf1c93cdba8f0a6bec7acb45d2a8f02e5ff117105efe90b39e422",
+      "role": "pose only"
+    }
+  },
+  "generatedSources": {
+    "back180": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/sources/keeper-prime-back-exact-silhouette-generated.png",
+      "sha256": "70d25f2e22c6d9ca7c09a189c5af2ace786df0302922aca426ea00e3086d4b7d"
+    }
+  },
+  "previousV1": {
+    "register": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v1/batch-register.json",
+      "sha256": "7165e23c6f843b8104a38cc615de548ce07ddb1727823f26e8ff71c3eb9f61b2"
+    },
+    "sideCandidate": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+      "sha256": "d2171f148b6b14666a23198112aebf20e50048d583fda77ff0fc91f9d04d4f9a",
+      "role": "carried forward byte-identically"
+    },
+    "backCandidate": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+      "sha256": "973cd144f88ddb45cefd600be3e57b073569847fc226af2d873fab458984874b",
+      "role": "superseded approximate silhouette"
+    }
+  },
+  "candidates": {
+    "sideRight90": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+      "sha256": "d2171f148b6b14666a23198112aebf20e50048d583fda77ff0fc91f9d04d4f9a",
+      "sidecar": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/drafts/keeper_prime_master-neutral-standing-side-right_f1.json",
+      "sidecarSha256": "1881c4432ecefb23d31e5b955dddec86de05a8d49231db11103ad4fde03d5f01",
+      "promotionAllowed": false
+    },
+    "back180": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+      "sha256": "c349f6095a83a429d491bfc8d7cdd619ea71ecec8196ba3a1e49d94a98a366f6",
+      "sidecar": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/drafts/keeper_prime_master-neutral-standing-back_f1.json",
+      "sidecarSha256": "e4b2624f6374f14b9750931ff158a4bc11617f58f0487f98dfa75c328840162f",
+      "promotionAllowed": false
+    }
+  },
+  "geometry": {
+    "approvedFront": {
+      "normalizedOpaqueBoundsExclusive": [
+        52,
+        18,
+        204,
+        316
+      ],
+      "opaqueWidth": 152,
+      "opaqueHeight": 298,
+      "opaqueCenterX": 128.0,
+      "capTopY": 18,
+      "floorY": 316
+    },
+    "sideRight90": {
+      "sourcePixels": [
+        256,
+        320
+      ],
+      "normalizedOpaqueBoundsExclusive": [
+        74,
+        18,
+        181,
+        316
+      ],
+      "opaqueWidth": 107,
+      "opaqueHeight": 298,
+      "opaqueCenterX": 127.5,
+      "capTopY": 18,
+      "floorY": 316
+    },
+    "back180": {
+      "sourcePixels": [
+        1122,
+        1402
+      ],
+      "normalizedOpaqueBoundsExclusive": [
+        52,
+        18,
+        204,
+        316
+      ],
+      "opaqueWidth": 152,
+      "opaqueHeight": 298,
+      "opaqueCenterX": 128.0,
+      "capTopY": 18,
+      "floorY": 316
+    }
+  },
+  "crossSections": {
+    "45": {
+      "approvedFront": {
+        "left": 75,
+        "rightExclusive": 181,
+        "width": 106,
+        "centerX": 128.0
+      },
+      "sideRight90": {
+        "left": 89,
+        "rightExclusive": 172,
+        "width": 83,
+        "centerX": 130.5
+      },
+      "back180": {
+        "left": 75,
+        "rightExclusive": 181,
+        "width": 106,
+        "centerX": 128.0
+      },
+      "backWidthDeltaFromFront": 0,
+      "backCenterDeltaFromFront": 0.0
+    },
+    "80": {
+      "approvedFront": {
+        "left": 76,
+        "rightExclusive": 180,
+        "width": 104,
+        "centerX": 128.0
+      },
+      "sideRight90": {
+        "left": 85,
+        "rightExclusive": 167,
+        "width": 82,
+        "centerX": 126.0
+      },
+      "back180": {
+        "left": 76,
+        "rightExclusive": 180,
+        "width": 104,
+        "centerX": 128.0
+      },
+      "backWidthDeltaFromFront": 0,
+      "backCenterDeltaFromFront": 0.0
+    },
+    "120": {
+      "approvedFront": {
+        "left": 82,
+        "rightExclusive": 174,
+        "width": 92,
+        "centerX": 128.0
+      },
+      "sideRight90": {
+        "left": 95,
+        "rightExclusive": 181,
+        "width": 86,
+        "centerX": 138.0
+      },
+      "back180": {
+        "left": 82,
+        "rightExclusive": 174,
+        "width": 92,
+        "centerX": 128.0
+      },
+      "backWidthDeltaFromFront": 0,
+      "backCenterDeltaFromFront": 0.0
+    },
+    "150": {
+      "approvedFront": {
+        "left": 63,
+        "rightExclusive": 192,
+        "width": 129,
+        "centerX": 127.5
+      },
+      "sideRight90": {
+        "left": 82,
+        "rightExclusive": 169,
+        "width": 87,
+        "centerX": 125.5
+      },
+      "back180": {
+        "left": 63,
+        "rightExclusive": 192,
+        "width": 129,
+        "centerX": 127.5
+      },
+      "backWidthDeltaFromFront": 0,
+      "backCenterDeltaFromFront": 0.0
+    },
+    "165": {
+      "approvedFront": {
+        "left": 58,
+        "rightExclusive": 198,
+        "width": 140,
+        "centerX": 128.0
+      },
+      "sideRight90": {
+        "left": 79,
+        "rightExclusive": 174,
+        "width": 95,
+        "centerX": 126.5
+      },
+      "back180": {
+        "left": 58,
+        "rightExclusive": 198,
+        "width": 140,
+        "centerX": 128.0
+      },
+      "backWidthDeltaFromFront": 0,
+      "backCenterDeltaFromFront": 0.0
+    },
+    "185": {
+      "approvedFront": {
+        "left": 53,
+        "rightExclusive": 203,
+        "width": 150,
+        "centerX": 128.0
+      },
+      "sideRight90": {
+        "left": 78,
+        "rightExclusive": 177,
+        "width": 99,
+        "centerX": 127.5
+      },
+      "back180": {
+        "left": 53,
+        "rightExclusive": 203,
+        "width": 150,
+        "centerX": 128.0
+      },
+      "backWidthDeltaFromFront": 0,
+      "backCenterDeltaFromFront": 0.0
+    },
+    "205": {
+      "approvedFront": {
+        "left": 55,
+        "rightExclusive": 200,
+        "width": 145,
+        "centerX": 127.5
+      },
+      "sideRight90": {
+        "left": 83,
+        "rightExclusive": 175,
+        "width": 92,
+        "centerX": 129.0
+      },
+      "back180": {
+        "left": 55,
+        "rightExclusive": 200,
+        "width": 145,
+        "centerX": 127.5
+      },
+      "backWidthDeltaFromFront": 0,
+      "backCenterDeltaFromFront": 0.0
+    },
+    "225": {
+      "approvedFront": {
+        "left": 60,
+        "rightExclusive": 196,
+        "width": 136,
+        "centerX": 128.0
+      },
+      "sideRight90": {
+        "left": 92,
+        "rightExclusive": 158,
+        "width": 66,
+        "centerX": 125.0
+      },
+      "back180": {
+        "left": 60,
+        "rightExclusive": 196,
+        "width": 136,
+        "centerX": 128.0
+      },
+      "backWidthDeltaFromFront": 0,
+      "backCenterDeltaFromFront": 0.0
+    },
+    "250": {
+      "approvedFront": {
+        "left": 86,
+        "rightExclusive": 170,
+        "width": 84,
+        "centerX": 128.0
+      },
+      "sideRight90": {
+        "left": 99,
+        "rightExclusive": 149,
+        "width": 50,
+        "centerX": 124.0
+      },
+      "back180": {
+        "left": 86,
+        "rightExclusive": 170,
+        "width": 84,
+        "centerX": 128.0
+      },
+      "backWidthDeltaFromFront": 0,
+      "backCenterDeltaFromFront": 0.0
+    },
+    "275": {
+      "approvedFront": {
+        "left": 88,
+        "rightExclusive": 169,
+        "width": 81,
+        "centerX": 128.5
+      },
+      "sideRight90": {
+        "left": 98,
+        "rightExclusive": 142,
+        "width": 44,
+        "centerX": 120.0
+      },
+      "back180": {
+        "left": 88,
+        "rightExclusive": 169,
+        "width": 81,
+        "centerX": 128.5
+      },
+      "backWidthDeltaFromFront": 0,
+      "backCenterDeltaFromFront": 0.0
+    },
+    "300": {
+      "approvedFront": {
+        "left": 72,
+        "rightExclusive": 185,
+        "width": 113,
+        "centerX": 128.5
+      },
+      "sideRight90": {
+        "left": 97,
+        "rightExclusive": 167,
+        "width": 70,
+        "centerX": 132.0
+      },
+      "back180": {
+        "left": 72,
+        "rightExclusive": 185,
+        "width": 113,
+        "centerX": 128.5
+      },
+      "backWidthDeltaFromFront": 0,
+      "backCenterDeltaFromFront": 0.0
+    },
+    "315": {
+      "approvedFront": {
+        "left": 78,
+        "rightExclusive": 178,
+        "width": 100,
+        "centerX": 128.0
+      },
+      "sideRight90": {
+        "left": 105,
+        "rightExclusive": 162,
+        "width": 57,
+        "centerX": 133.5
+      },
+      "back180": {
+        "left": 78,
+        "rightExclusive": 178,
+        "width": 100,
+        "centerX": 128.0
+      },
+      "backWidthDeltaFromFront": 0,
+      "backCenterDeltaFromFront": 0.0
+    }
+  },
+  "evidence": {
+    "lineup": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/evidence/orthographic-lineup.png",
+      "sha256": "e1da83fd4136861905eee6099900099aa778efb07924a6f62365a1c112b5f46e"
+    },
+    "sideGhostOverlay": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/evidence/front-ghost-over-side-right.png",
+      "sha256": "d60e40168e5bad16bd112485dcffed157295fe9e3024a126e0720f89fa41f13e"
+    },
+    "backGhostOverlay": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/evidence/front-ghost-over-back.png",
+      "sha256": "d331a172c270ccd70ec5b02dccbf44b0870b1526e8609db8d6681f6279a03795"
+    }
+  },
+  "alignmentContract": {
+    "cell": [
+      256,
+      320
+    ],
+    "logicalCell": [
+      32,
+      40
+    ],
+    "density": 8,
+    "anchor": [
+      16,
+      40
+    ],
+    "capTopY": 18,
+    "floorY": 316,
+    "identityAxisX": 128,
+    "ghostAuthority": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png"
+  },
+  "identityContract": {
+    "masterApprovalWording": "Approved. Make sure this is NEVER forgotten.",
+    "uniform": "one broad pale chest-and-sleeve band; never restore the double stripe",
+    "renderFamily": "smooth high-resolution Prime Master V1 only",
+    "side": "exact right-facing 90-degree orthographic profile",
+    "back": "exact 180-degree rear elevation with no facial features; the full cream mass below the cap is rear hair, not beard",
+    "silhouette": "the complete back alpha channel is byte-identical to the approved front alpha channel"
+  },
+  "validation": {
+    "cellGeometryMatches": true,
+    "transparentSafetyGutters": true,
+    "edgePixels": {
+      "sideRight90": 0,
+      "back180": 0
+    },
+    "sharedCapTop": true,
+    "sharedFloor": true,
+    "backAlphaMatchesFrontExactly": true,
+    "backAlphaMismatchPixels": 0,
+    "generatedBackBeforeLockGeometry": {
+      "sourcePixels": [
+        1122,
+        1402
+      ],
+      "sourceSignificantAlphaBoundsExclusive": [
+        218,
+        76,
+        903,
+        1386
+      ],
+      "normalizedOpaqueBoundsExclusive": [
+        50,
+        18,
+        206,
+        316
+      ],
+      "opaqueWidth": 156,
+      "opaqueHeight": 298,
+      "opaqueCenterX": 128.0,
+      "capTopY": 18,
+      "floorY": 316
+    },
+    "backMaxRegisteredWidthDelta": 0,
+    "backMaxRegisteredCenterDelta": 0.0,
+    "backMaxAllOccupiedRowCenterDelta": 0.0,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false
+  },
+  "promptLog": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/PROMPT_LOG.md",
+  "rollback": "Delete only art/drafts/keeper-prime-orthographic-views-2026-10-13-v2 and public/keeper-review/keeper-prime-orthographic-v2; the approved front and all production/runtime art remain unchanged."
+}
