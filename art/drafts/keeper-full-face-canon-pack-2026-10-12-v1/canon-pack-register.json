@@ -1,0 +1,263 @@
+{
+  "packId": "keeper-full-face-canon-pack-2026-10-12-v1",
+  "status": "approved-for-batch-authoring",
+  "purpose": "Lock the direct-front Keeper identity before any animation normalization batch.",
+  "candidateDecision": "The V1 candidate is a byte-identical, non-generative copy of the selected primary geometry authority. The V11 image is comparison-only finish evidence; no pixels were blended or transplanted.",
+  "approval": {
+    "approvedBy": "Frank",
+    "approvedOn": "2026-10-12",
+    "wording": "Approve full-face canon pack V1. These are excellent",
+    "scope": "canon geometry, landmarks, masks/guides and reference hierarchy; authorizes small reversible review batches only"
+  },
+  "primaryGeometryAuthority": {
+    "file": "art/raw/keeper-first-batch/keeper_neutral_standing-front_f1.png",
+    "sha256": "6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a",
+    "sidecar": "art/raw/keeper-first-batch/keeper_neutral_standing-front_f1.json",
+    "sidecarSha256": "3a0cc0f9922f18d6341263ca8684690dc9346e3470509ca2a7bea3ea163e735b",
+    "storedCopy": "art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/references/primary-geometry-authority.png",
+    "storedCopySha256": "6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a"
+  },
+  "renderingQualityReference": {
+    "file": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_standing-front_f1.png",
+    "sha256": "14c70ab69c9cb558d1a7b9b092425718a43269ea8fb2a20ad3d64638d30ea17a",
+    "sidecar": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_standing-front_f1.json",
+    "sidecarSha256": "9b5ca57f9b88b43056a7dcc0a192a3f7eebfc67b27d87fd054896ea0646f201e",
+    "storedCopy": "art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/references/v11-rendering-quality-reference.png",
+    "storedCopySha256": "14c70ab69c9cb558d1a7b9b092425718a43269ea8fb2a20ad3d64638d30ea17a",
+    "productionStatus": "accepted V11 review draft; not promoted"
+  },
+  "candidate": {
+    "file": "art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/drafts/keeper_full-face-canon_standard-neutral_f1.png",
+    "sha256": "6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a",
+    "sidecar": "art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/drafts/keeper_full-face-canon_standard-neutral_f1.json",
+    "sidecarSha256": "4137477539866eba3674a29e927bed0860b2b1db25effa0f886ea3e12ff591e1",
+    "pixelRelationship": "byte-identical-to-primary-geometry-authority",
+    "promotionAllowed": false
+  },
+  "geometry": {
+    "sourcePixels": [
+      128,
+      160
+    ],
+    "logicalCell": [
+      32,
+      40
+    ],
+    "density": 4,
+    "logicalAnchor": [
+      16,
+      40
+    ],
+    "sourceAnchor": [
+      64,
+      160
+    ],
+    "landmarksSourcePixels": {
+      "verticalIdentityAxisX": 64,
+      "capTopY": 9,
+      "leftEyeDarkComponentBoundsExclusive": [
+        55,
+        43,
+        58,
+        47
+      ],
+      "rightEyeDarkComponentBoundsExclusive": [
+        69,
+        43,
+        72,
+        47
+      ],
+      "noseGuideBoundsExclusive": [
+        55,
+        49,
+        74,
+        69
+      ],
+      "moustacheGuideBoundsExclusive": [
+        39,
+        55,
+        90,
+        75
+      ],
+      "mouthGuideBoundsExclusive": [
+        58,
+        66,
+        71,
+        77
+      ],
+      "beardEnvelopeGuideBoundsExclusive": [
+        34,
+        56,
+        95,
+        107
+      ],
+      "headEnvelopeGuideBoundsExclusive": [
+        28,
+        9,
+        100,
+        107
+      ],
+      "floorAnchor": [
+        64,
+        160
+      ]
+    },
+    "landmarksLogicalPixels": {
+      "verticalIdentityAxisX": 16,
+      "capTopY": 2.25,
+      "leftEyeDarkComponentBoundsExclusive": [
+        13.75,
+        10.75,
+        14.5,
+        11.75
+      ],
+      "rightEyeDarkComponentBoundsExclusive": [
+        17.25,
+        10.75,
+        18.0,
+        11.75
+      ],
+      "floorAnchor": [
+        16,
+        40
+      ]
+    }
+  },
+  "identityRules": {
+    "eyes": "solid compact dark rectangular components; no white glints, round pupils or childlike enlargement",
+    "moustache": "separate readable moustache above and around the mouth; never collapse it into a curved grin",
+    "mouth": "restrained closed mouth readable beneath the moustache; no generic smile or pixie grin",
+    "beard": "preserve the established broad symmetrical beard mass, cheek connections and pointed/stepped lower termination",
+    "expressions": "controlled local deviations only, returning cleanly to this neutral geometry at registered endpoints"
+  },
+  "masksAndGuides": {
+    "eye-mask": {
+      "file": "art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/masks/eye-mask.png",
+      "sha256": "9baccdda8757fe07d5056950827892a688ca0e3aeddd22953008e9983345b301",
+      "boundsExclusive": [
+        55,
+        43,
+        72,
+        47
+      ],
+      "pixelCount": 20
+    },
+    "beard-envelope-guide-mask": {
+      "file": "art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/masks/beard-envelope-guide-mask.png",
+      "sha256": "21b3cfd6b1675d992796898978de428664fa0ce2fea9530c0d79b2451261358b",
+      "boundsExclusive": [
+        34,
+        56,
+        95,
+        107
+      ],
+      "pixelCount": 2266
+    },
+    "moustache-guide-mask": {
+      "file": "art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/masks/moustache-guide-mask.png",
+      "sha256": "2e54f3da3e84a61c30832ad21dc1c31376bf65a93df92ffce403cd20aeb786af",
+      "boundsExclusive": [
+        39,
+        55,
+        90,
+        75
+      ],
+      "pixelCount": 649
+    },
+    "mouth-local-guide-mask": {
+      "file": "art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/masks/mouth-local-guide-mask.png",
+      "sha256": "e727fd436396296afaa42348988dc8d5b518a6eebaa5ca15efda89c3a5ef810f",
+      "boundsExclusive": [
+        58,
+        66,
+        71,
+        77
+      ],
+      "pixelCount": 143
+    },
+    "nose-local-guide-mask": {
+      "file": "art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/masks/nose-local-guide-mask.png",
+      "sha256": "482e5349969c248aed15012110d0a5a1c531d7dd03d3ba4575837bb318a9138a",
+      "boundsExclusive": [
+        55,
+        49,
+        74,
+        69
+      ],
+      "pixelCount": 380
+    },
+    "head-envelope-guide-mask": {
+      "file": "art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/masks/head-envelope-guide-mask.png",
+      "sha256": "f70f13f184254958a86d040321544adb61b50e1050b9d62759aa5bef40832f65",
+      "boundsExclusive": [
+        28,
+        9,
+        100,
+        107
+      ],
+      "pixelCount": 7056
+    }
+  },
+  "evidence": {
+    "fullBodyComparison": {
+      "file": "art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/evidence/full-face-canon-comparison.png",
+      "sha256": "806a13bd355d4086100562606a0419c79d138a73e901d2c1610f4f1d2d3effcc"
+    },
+    "headComparison": {
+      "file": "art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/evidence/full-face-head-comparison.png",
+      "sha256": "5592549150898c74c34fff110c145780a6abe1feefc0d7cebec16f0aae50c9dc"
+    },
+    "landmarkOverlay": {
+      "file": "art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/evidence/full-face-landmark-overlay.png",
+      "sha256": "e2abda94d2702e57669aaa88a15180096f6d7f6c352fc4a15a05aa5942e73769"
+    },
+    "inventory": {
+      "file": "data/keeper_full_face_inventory.json",
+      "count": 62
+    }
+  },
+  "validation": {
+    "primaryHashPinned": true,
+    "qualityReferenceHashPinned": true,
+    "candidateByteIdenticalToPrimary": true,
+    "candidateGeometryMatchesSidecar": true,
+    "binaryAlpha": true,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "transparentSafetyGutter": true,
+    "opaqueCellEdgePixels": 0,
+    "opaqueCellEdgePixelsByFrame": [
+      0
+    ],
+    "inventoryStripSidecarGeometryChecked": true,
+    "inventoryLegacyEdgeRisksRecorded": true,
+    "deterministicByteIdenticalRerun": true,
+    "deterministicRerunMethod": "aggregate SHA-256 of every versioned draft/public pack file matched before and after a second build"
+  },
+  "provenancePolicy": {
+    "withdrawnFaceCameraDrafts": "rejected provenance only; not registered, displayed as candidates or reused",
+    "keeperCountMoney": "deleted amendment remains deleted; no regeneration performed"
+  },
+  "scopeGate": {
+    "rawAssetsChanged": false,
+    "runtimeSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "existingDraftsChanged": false,
+    "immutableReviewExportsChanged": false,
+    "productionPromoted": false
+  },
+  "documentationAudit": {
+    "result": "pass",
+    "filesReconciled": [
+      "README.md",
+      "docs/STATUS.md",
+      "docs/KEEPER_ANIMATION_HANDOFF.md",
+      "docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md",
+      "docs/KEEPER_FULL_FACE_INVENTORY.md"
+    ],
+    "finding": "Documentation now distinguishes the 62-asset read-only inventory, explicitly approved V1 canon pack, unpromoted V11 reference, withdrawn provenance and deleted count-money amendment. Production/runtime status remains unchanged."
+  },
+  "rollback": "Remove only art/drafts/keeper-full-face-canon-pack-2026-10-12-v1, public/keeper-review/full-face-canon-v1, data/keeper_full_face_inventory.json, docs/KEEPER_FULL_FACE_INVENTORY.md and the reviewer link/test registration added for this pack."
+}

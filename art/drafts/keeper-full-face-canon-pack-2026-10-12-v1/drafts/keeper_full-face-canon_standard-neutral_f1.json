@@ -1,0 +1,23 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "pose": "standing-front",
+  "assetRole": "neutral",
+  "draft": true,
+  "draftFamily": "keeper-full-face-canon-pack-2026-10-12-v1",
+  "status": "approved-for-batch-authoring",
+  "geometryAuthority": "art/raw/keeper-first-batch/keeper_neutral_standing-front_f1.png",
+  "renderingQualityReference": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_standing-front_f1.png",
+  "promotionAllowed": false
+}

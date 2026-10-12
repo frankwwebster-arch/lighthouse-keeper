@@ -102,11 +102,27 @@ The standard neutral is the geometric authority; the V11 endpoint is the
 quality and finish reference. Emotion and action-specific expressions must be
 controlled deviations from this neutral base, never substitute neutral models.
 
-The next workstream belongs in a fresh task. It must first inventory every
-full-face/front-facing production animation and its outfit/action dependencies,
-then build a versioned full-face canon pack from these two selected references
-before normalising animation families in reviewable batches. Canonical and all
-historical draft assets remain untouched until explicit per-batch promotion.
+The first phase is now delivered as the reversible
+`art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/` pack. It inventories 62
+direct or near-direct front manifest assets in
+`docs/KEEPER_FULL_FACE_INVENTORY.md` and
+`data/keeper_full_face_inventory.json`, including exact frame ranges, current
+face families, outfits, endpoints, edge evidence and transition risks. The V1
+standard neutral is byte-identical to the selected primary geometry authority;
+the V11 smock neutral remains an unmodified rendering-quality comparison.
+Exact eye masks, beard/moustache/mouth guides and deterministic geometry,
+binary-alpha and gutter checks are included. Review it online at
+`/keeper-review/full-face-canon-v1/`. Frank explicitly approved V1 on 12 October
+2026 with “Approve full-face canon pack V1. These are excellent.” This approval
+authorizes small reversible authoring batches, not production promotion. The
+first batch contains only `keeper_turn_front` and `keeper_turn_left_front`.
+Frank rejected the V1 F5-only transplant and requested a complete moving-model
+redraw with a non-jumping exact-canon endpoint. V2 is at
+`art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/`: F1–F5 are
+new approved-model rotations, F6 is byte-identical to canon, and F5/F6 share
+the same baseline, height and centreline with at most two source pixels of
+width difference. V2 awaits separate visual approval. No withdrawn face-camera
+work was reactivated.
 
 ## Neutral endpoint contract checkpoint — 10 October 2026
 

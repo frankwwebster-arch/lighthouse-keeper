@@ -1,0 +1,38 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "reverseFor": "turn_left_from_front",
+  "facing": "left-to-front",
+  "interaction": "turn-front",
+  "assetRole": "bridge",
+  "startPose": "standing-side-left",
+  "endPose": "standing-front",
+  "mirrorSafe": false,
+  "draft": true,
+  "draftId": "keeper-full-face-standard-turn-endpoints-2026-10-12-v1",
+  "canonicalUnchanged": true,
+  "approvalRequiredForPromotion": true,
+  "amendment": {
+    "authoredFrames": [
+      5
+    ],
+    "unchangedFrames": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "scope": "declared head/face replacement mask only",
+    "endpoint": "F6 remains byte-identical to the approved standing-front neutral"
+  }
+}

@@ -1,0 +1,3578 @@
+{
+  "version": 1,
+  "date": "2026-10-12",
+  "status": "read-only-inventory; no production art changed",
+  "scopeRule": "Every non-component manifest asset rendered direct-front for at least one frame, plus obsolete front reference/idle evidence. Three-quarter front-right is excluded from the canon and tracked only as a transition dependency.",
+  "count": 62,
+  "countsByAssetRole": {
+    "bridge": 9,
+    "clip": 34,
+    "neutral": 18,
+    "reference": 1
+  },
+  "groups": {
+    "standard-uniform": [
+      "keeper_bored",
+      "keeper_count_money",
+      "keeper_cross",
+      "keeper_dance",
+      "keeper_hungry",
+      "keeper_idle",
+      "keeper_lift_button_front",
+      "keeper_neutral_sitting-front",
+      "keeper_neutral_standing-front",
+      "keeper_play_drums_front",
+      "keeper_read_front",
+      "keeper_reference",
+      "keeper_sad",
+      "keeper_sit_front",
+      "keeper_turn_front",
+      "keeper_turn_left_front",
+      "keeper_walk_into_lift",
+      "keeper_water_plants_front",
+      "keeper_wave_camera"
+    ],
+    "outfit-costume": [
+      "keeper_artist-smock_neutral_sitting-front",
+      "keeper_artist-smock_neutral_standing-front",
+      "keeper_artist_smock_sit_front",
+      "keeper_artist_smock_turn_front",
+      "keeper_bath_wash",
+      "keeper_halloween_neutral_standing-front",
+      "keeper_halloween_walk_front",
+      "keeper_halloween_walk_front_cycle",
+      "keeper_hot_tub",
+      "keeper_knight_neutral_standing-front",
+      "keeper_knight_walk_front",
+      "keeper_knight_walk_front_cycle",
+      "keeper_light-blue-pyjamas_neutral_standing-front",
+      "keeper_mechanic_neutral_standing-front",
+      "keeper_mechanic_walk_front",
+      "keeper_mechanic_walk_front_cycle",
+      "keeper_mosaic-privacy_neutral_sitting-front",
+      "keeper_old-school-workout-kit_neutral_standing-front",
+      "keeper_party-hat_neutral_standing-front",
+      "keeper_party_dance",
+      "keeper_party_idle",
+      "keeper_party_turn_back",
+      "keeper_pirate_neutral_standing-front",
+      "keeper_pirate_walk_front",
+      "keeper_pirate_walk_front_cycle",
+      "keeper_pottery_front",
+      "keeper_privacy-foam_neutral_sitting-front",
+      "keeper_pyjamas_turn_back",
+      "keeper_ride_bike_front",
+      "keeper_scuba_neutral_swimming-front",
+      "keeper_scuba_swim_down",
+      "keeper_souwester_neutral_standing-front",
+      "keeper_souwester_walk_front",
+      "keeper_souwester_walk_front_cycle",
+      "keeper_spaceman_neutral_standing-front",
+      "keeper_spaceman_walk_front",
+      "keeper_spaceman_walk_front_cycle",
+      "keeper_striped-swimming-costume_neutral_swimming-front",
+      "keeper_swim_costume_down",
+      "keeper_tarzan_neutral_standing-front",
+      "keeper_tarzan_walk_front",
+      "keeper_tarzan_walk_front_cycle",
+      "keeper_trampoline_front"
+    ],
+    "seated": [
+      "keeper_artist-smock_neutral_sitting-front",
+      "keeper_artist_smock_sit_front",
+      "keeper_bath_wash",
+      "keeper_count_money",
+      "keeper_hot_tub",
+      "keeper_mosaic-privacy_neutral_sitting-front",
+      "keeper_neutral_sitting-front",
+      "keeper_play_drums_front",
+      "keeper_pottery_front",
+      "keeper_privacy-foam_neutral_sitting-front",
+      "keeper_read_front",
+      "keeper_ride_bike_front",
+      "keeper_sit_front"
+    ],
+    "locomotion": [
+      "keeper_halloween_walk_front",
+      "keeper_halloween_walk_front_cycle",
+      "keeper_knight_walk_front",
+      "keeper_knight_walk_front_cycle",
+      "keeper_mechanic_walk_front",
+      "keeper_mechanic_walk_front_cycle",
+      "keeper_pirate_walk_front",
+      "keeper_pirate_walk_front_cycle",
+      "keeper_scuba_neutral_swimming-front",
+      "keeper_scuba_swim_down",
+      "keeper_souwester_walk_front",
+      "keeper_souwester_walk_front_cycle",
+      "keeper_spaceman_walk_front",
+      "keeper_spaceman_walk_front_cycle",
+      "keeper_striped-swimming-costume_neutral_swimming-front",
+      "keeper_swim_costume_down",
+      "keeper_tarzan_walk_front",
+      "keeper_tarzan_walk_front_cycle",
+      "keeper_walk_into_lift"
+    ],
+    "interaction": [
+      "keeper_artist_smock_sit_front",
+      "keeper_artist_smock_turn_front",
+      "keeper_bath_wash",
+      "keeper_count_money",
+      "keeper_dance",
+      "keeper_hot_tub",
+      "keeper_lift_button_front",
+      "keeper_party_dance",
+      "keeper_party_turn_back",
+      "keeper_play_drums_front",
+      "keeper_pottery_front",
+      "keeper_pyjamas_turn_back",
+      "keeper_read_front",
+      "keeper_ride_bike_front",
+      "keeper_trampoline_front",
+      "keeper_turn_front",
+      "keeper_turn_left_front",
+      "keeper_walk_into_lift",
+      "keeper_water_plants_front"
+    ],
+    "expression": [
+      "keeper_bored",
+      "keeper_cross",
+      "keeper_dance",
+      "keeper_hungry",
+      "keeper_party_dance",
+      "keeper_sad",
+      "keeper_wave_camera"
+    ],
+    "technical-neutral": [
+      "keeper_artist-smock_neutral_sitting-front",
+      "keeper_artist-smock_neutral_standing-front",
+      "keeper_halloween_neutral_standing-front",
+      "keeper_knight_neutral_standing-front",
+      "keeper_light-blue-pyjamas_neutral_standing-front",
+      "keeper_mechanic_neutral_standing-front",
+      "keeper_mosaic-privacy_neutral_sitting-front",
+      "keeper_neutral_sitting-front",
+      "keeper_neutral_standing-front",
+      "keeper_old-school-workout-kit_neutral_standing-front",
+      "keeper_party-hat_neutral_standing-front",
+      "keeper_pirate_neutral_standing-front",
+      "keeper_privacy-foam_neutral_sitting-front",
+      "keeper_reference",
+      "keeper_scuba_neutral_swimming-front",
+      "keeper_souwester_neutral_standing-front",
+      "keeper_spaceman_neutral_standing-front",
+      "keeper_striped-swimming-costume_neutral_swimming-front",
+      "keeper_tarzan_neutral_standing-front"
+    ]
+  },
+  "visualMetadataExclusions": {
+    "keeper_bath_enter": "metadata ends at sitting-front, but all eight rendered frames remain side-facing",
+    "keeper_bath_exit": "metadata starts at sitting-front, but all eight rendered frames remain side-facing"
+  },
+  "withdrawnProvenance": {
+    "decision": "withdraw-all-generated-face-camera-candidates",
+    "date": "2026-10-12",
+    "reason": "Frank judged the face-to-camera amendments completely wrong.",
+    "canonicalAssetsChanged": false,
+    "activeHistoricalDraftsChanged": false,
+    "withdrawn": [
+      {
+        "animation": "keeper_lift_button_front",
+        "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_lift_button_front/draft-register.json"
+      },
+      {
+        "animation": "keeper_mechanic_walk_front",
+        "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_mechanic_walk_front/draft-register.json"
+      },
+      {
+        "animation": "keeper_party_dance",
+        "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_dance/draft-register.json"
+      },
+      {
+        "animation": "keeper_party_idle",
+        "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_idle/draft-register.json"
+      },
+      {
+        "animation": "keeper_pyjamas_turn_back",
+        "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_pyjamas_turn_back/draft-register.json",
+        "sourceSha256": "a1e34e26df0a6feb22b1f08883c0c512875baf90c44b7053ecdd83c003570730",
+        "rejectionReason": "The front pose loses the defined moustache and mouth and collapses them into the cheesy pixie grin Frank explicitly rejected."
+      },
+      {
+        "animation": "keeper_scuba_swim_down",
+        "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_scuba_swim_down/draft-register.json"
+      },
+      {
+        "animation": "keeper_souwester_walk_front",
+        "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_souwester_walk_front/draft-register.json"
+      },
+      {
+        "animation": "keeper_spaceman_walk_front",
+        "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_spaceman_walk_front/draft-register.json"
+      },
+      {
+        "animation": "keeper_swim_costume_down",
+        "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_swim_costume_down/draft-register.json"
+      },
+      {
+        "animation": "keeper_tarzan_walk_front",
+        "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_tarzan_walk_front/draft-register.json"
+      },
+      {
+        "animation": "keeper_trampoline_front",
+        "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_trampoline_front/draft-register.json"
+      },
+      {
+        "animation": "keeper_water_plants_front",
+        "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_water_plants_front/draft-register.json",
+        "sourceSha256": "8ec472c601ad24c3ff5892ebc86269e5214c0ca56819247cb82e58242dd47cfc",
+        "rejectionReason": "Frank judged all eight poses unacceptable and explicitly reverted the complete amendment to the previous canonical version."
+      }
+    ],
+    "deleted": [
+      {
+        "animation": "keeper_count_money",
+        "deletedAtUserRequest": "2026-10-12",
+        "reason": "Frank judged every pose terrible and explicitly requested deletion and reversion to the previous version.",
+        "sourceSha256": "3567b77564ed483776d90ba504606f4ec4c96c4abbabd668484b37ea560232ee",
+        "draftStripSha256": "499eadb2658812bfb58c90618bf50ebc1d2bbc060e7e026ed590c96043a4c64f",
+        "canonicalStripSha256": "451c620ce890021930b04aa0bdecddc756d6bd830c552ad0ce6ea61d1d34c7a2",
+        "canonicalRuntimeSha256": "47002b4c2d69148e4a172ca8fff5be4ea251c34b501a26e6ce63022f4b867a64",
+        "recovery": "Rejected files remain recoverable from Git history before their explicit deletion; canonical raw and runtime assets were never changed."
+      }
+    ]
+  },
+  "entries": [
+    {
+      "name": "keeper_artist-smock_neutral_sitting-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral",
+        "seated"
+      ],
+      "assetRole": "neutral",
+      "outfit": "artist-smock",
+      "facing": "front",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        34,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        17,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "sitting-front",
+      "endPose": "sitting-front",
+      "currentFaceFamily": "legacy-production-artist-smock-front; accepted V11 review family is the finish dependency",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_artist-smock_neutral_sitting-front_f1.png",
+      "sourceStripSha256": "75aaceb74141a9f27b275e4faa614fdc5278fd2b372077712a05a7b11c4c1230",
+      "sidecar": "art/raw/keeper-first-batch/keeper_artist-smock_neutral_sitting-front_f1.json",
+      "sidecarSha256": "f9f1e8ddad458ce6d8cf71355d129f34a78a9359e0215dc2d07acf8be329a465",
+      "runtimeStrip": "public/sprites/keeper_artist-smock_neutral_sitting-front.png",
+      "runtimeStripSha256": "75aaceb74141a9f27b275e4faa614fdc5278fd2b372077712a05a7b11c4c1230",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "must stay internally continuous with the accepted but unpromoted V11 artist-smock family",
+        "preserve registered seat contact and head height; do not substitute the standing head without pose-aware integration"
+      ]
+    },
+    {
+      "name": "keeper_artist-smock_neutral_standing-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral"
+      ],
+      "assetRole": "neutral",
+      "outfit": "artist-smock",
+      "facing": "right-to-front",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-production-artist-smock-front; accepted V11 review family is the finish dependency",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_artist-smock_neutral_standing-front_f1.png",
+      "sourceStripSha256": "4abb383c32cba50ac725a662a12e6989216c41a1bef0f78e588e1396572b5953",
+      "sidecar": "art/raw/keeper-first-batch/keeper_artist-smock_neutral_standing-front_f1.json",
+      "sidecarSha256": "14f2dac41bdb5f091a71fe876cabf281c5b661fdd468e047363618b85d4122dc",
+      "runtimeStrip": "public/sprites/keeper_artist-smock_neutral_standing-front.png",
+      "runtimeStripSha256": "4abb383c32cba50ac725a662a12e6989216c41a1bef0f78e588e1396572b5953",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "must stay internally continuous with the accepted but unpromoted V11 artist-smock family"
+      ]
+    },
+    {
+      "name": "keeper_artist_smock_sit_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "seated",
+        "interaction"
+      ],
+      "assetRole": "clip",
+      "outfit": "artist-smock",
+      "facing": "front",
+      "interaction": "sit-front",
+      "frames": 6,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F6",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        34,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        17,
+        40
+      ],
+      "seatPoint": [
+        17,
+        29.385
+      ],
+      "startPose": "standing-front",
+      "endPose": "sitting-front",
+      "currentFaceFamily": "legacy-production-artist-smock-front; accepted V11 review family is the finish dependency",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_artist_smock_sit_front_f6.png",
+      "sourceStripSha256": "6f5eb1bdb702edcc614e061ade801b1acd38c1cb34510d96a9b6626c3efaf1ec",
+      "sidecar": "art/raw/keeper-first-batch/keeper_artist_smock_sit_front_f6.json",
+      "sidecarSha256": "af12d06c638fc9cd16e9c8cfc91525b4d28dcbdea47ed2b0bd2cbc9cec5f5de1",
+      "runtimeStrip": "public/sprites/keeper_artist_smock_sit_front.png",
+      "runtimeStripSha256": "123e4e6af6d080e25322fb9b7da6804cf9b8fcc0a2e18051af2d6d45791ec309",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "must stay internally continuous with the accepted but unpromoted V11 artist-smock family",
+        "preserve registered seat contact and head height; do not substitute the standing head without pose-aware integration"
+      ]
+    },
+    {
+      "name": "keeper_artist_smock_turn_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "interaction"
+      ],
+      "assetRole": "clip",
+      "outfit": "artist-smock",
+      "facing": "right-to-front",
+      "interaction": "turn-front",
+      "frames": 6,
+      "fullFaceFrameRanges": [
+        [
+          5,
+          6
+        ]
+      ],
+      "fullFaceFrameRangeText": "F5\u2013F6",
+      "directNeutralEndpointFrames": [
+        6
+      ],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-side-right",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-production-artist-smock-front; accepted V11 review family is the finish dependency",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_artist_smock_turn_front_f6.png",
+      "sourceStripSha256": "aaa5c774caf354bb825430f24ac187d90b398f9977a82d1a354480e298669711",
+      "sidecar": "art/raw/keeper-first-batch/keeper_artist_smock_turn_front_f6.json",
+      "sidecarSha256": "43eaac6ee5d9de2d59b5cd3f641b5f85cf96d7a0bfd77b986b463aeaff31622a",
+      "runtimeStrip": "public/sprites/keeper_artist_smock_turn_front.png",
+      "runtimeStripSha256": "b90cc91f4cd6cb1699540906d3ac7e7ced100fe154f57b76dc206a641b442161",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "front-face geometry appears inside a turning/depth route; preserve adjacent head position, scale and endpoint continuity",
+        "production remains the legacy artist family; the accepted V11 turn/sit whole-frame seam is a separate unpromoted dependency"
+      ]
+    },
+    {
+      "name": "keeper_bath_wash",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "seated",
+        "interaction"
+      ],
+      "assetRole": "clip",
+      "outfit": "mosaic-privacy",
+      "facing": "front",
+      "interaction": "wash-in-bath",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        40,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        20,
+        40
+      ],
+      "seatPoint": [
+        19.5,
+        30.045
+      ],
+      "startPose": "sitting-front",
+      "endPose": "sitting-front",
+      "currentFaceFamily": "legacy-privacy-state full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_bath_wash_f8.png",
+      "sourceStripSha256": "c990a91baaeb4dd298dbf731e03f0f491cbb2c9f83841ca79acff8def2baab30",
+      "sidecar": "art/raw/keeper-first-batch/keeper_bath_wash_f8.json",
+      "sidecarSha256": "b408c04d2987640e4df8308727f794b140563196ea6d3e5b8c572f75dbc63040",
+      "runtimeStrip": "public/sprites/keeper_bath_wash.png",
+      "runtimeStripSha256": "c7340528ba64588b46f7f72c30699ff1ed818ec5f08be8437dad4652b5fe2c33",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve registered seat contact and head height; do not substitute the standing head without pose-aware integration"
+      ]
+    },
+    {
+      "name": "keeper_bored",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "expression"
+      ],
+      "assetRole": "clip",
+      "outfit": "standard",
+      "facing": "front",
+      "interaction": "emote-bored",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-expression-specific-generated-front",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_bored_f8.png",
+      "sourceStripSha256": "f0f16fd0729ff9f70ba84b7453c436a3a0720d334ce855b7577eb4305acab18f",
+      "sidecar": "art/raw/keeper-first-batch/keeper_bored_f8.json",
+      "sidecarSha256": "404ddbf8f80a88092c660189ad6f94413ba32a12e89c29e35d2a82acc039b860",
+      "runtimeStrip": "public/sprites/keeper_bored.png",
+      "runtimeStripSha256": "9d2fb187966d0ec651757339b68c8779f3aabd65e2ba9c8feac1007f35b18daa",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "action expression may deviate only locally and must return cleanly to the selected neutral face"
+      ]
+    },
+    {
+      "name": "keeper_count_money",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "seated",
+        "interaction"
+      ],
+      "assetRole": "clip",
+      "outfit": "standard",
+      "facing": "front",
+      "interaction": "count-money",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        40,
+        42
+      ],
+      "density": 4,
+      "anchor": [
+        20,
+        40
+      ],
+      "seatPoint": [
+        20,
+        30.28
+      ],
+      "startPose": "sitting-front",
+      "endPose": "sitting-front",
+      "currentFaceFamily": "legacy-generated-standard-full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_count_money_f8.png",
+      "sourceStripSha256": "451c620ce890021930b04aa0bdecddc756d6bd830c552ad0ce6ea61d1d34c7a2",
+      "sidecar": "art/raw/keeper-first-batch/keeper_count_money_f8.json",
+      "sidecarSha256": "c0f5336c8fc0769c2e89971ff9f0295f985dc68d3fef64190091359871828e76",
+      "runtimeStrip": "public/sprites/keeper_count_money.png",
+      "runtimeStripSha256": "47002b4c2d69148e4a172ca8fff5be4ea251c34b501a26e6ce63022f4b867a64",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "deleted-do-not-regenerate",
+      "transitionRisks": [
+        "preserve registered seat contact and head height; do not substitute the standing head without pose-aware integration",
+        "the previous amendment was explicitly deleted; inventory only\u2014do not regenerate without a new direct instruction"
+      ]
+    },
+    {
+      "name": "keeper_cross",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "expression"
+      ],
+      "assetRole": "clip",
+      "outfit": "standard",
+      "facing": "front",
+      "interaction": "emote-cross",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-expression-specific-generated-front",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_cross_f8.png",
+      "sourceStripSha256": "1fc8a9cb354fd387ea7509aea5933a12516c914f9c12613618edb798bff43179",
+      "sidecar": "art/raw/keeper-first-batch/keeper_cross_f8.json",
+      "sidecarSha256": "4b971924fa18d22b091a6229bd781572ee334d725f81d460d36e39edd9dc2f7e",
+      "runtimeStrip": "public/sprites/keeper_cross.png",
+      "runtimeStripSha256": "cf98ee0d605f0f0255d6031a93bdf56b15459f4da74ae56b6600c91ff7b92e35",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "action expression may deviate only locally and must return cleanly to the selected neutral face"
+      ]
+    },
+    {
+      "name": "keeper_dance",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "interaction",
+        "expression"
+      ],
+      "assetRole": "clip",
+      "outfit": "standard",
+      "facing": "front",
+      "interaction": "dance",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-generated-standard-full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_dance_f8.png",
+      "sourceStripSha256": "a4a55ce3e8dc937cd6b9c139f1b4923aea79c1757c38f37b7585848fa6683c71",
+      "sidecar": "art/raw/keeper-first-batch/keeper_dance_f8.json",
+      "sidecarSha256": "8d52ee0ee3d1184c5710ecd1f82e4220727c0111fabf8176a8ab5d66a2a53cdd",
+      "runtimeStrip": "public/sprites/keeper_dance.png",
+      "runtimeStripSha256": "839bab1625f03b8d2ee0b08e25e7eedda2a47b098f2b4712f57d4055b099a6c9",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve full-strip scale, anchor, outfit/prop occlusion and exact first/last frame relationships"
+      ]
+    },
+    {
+      "name": "keeper_halloween_neutral_standing-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral"
+      ],
+      "assetRole": "neutral",
+      "outfit": "halloween",
+      "facing": "front",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-halloween generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_halloween_neutral_standing-front_f1.png",
+      "sourceStripSha256": "e14c4f497d986e3e6fcd2d3a25762cc9aa8176ccbd3b8359d935428e6ee0a794",
+      "sidecar": "art/raw/keeper-first-batch/keeper_halloween_neutral_standing-front_f1.json",
+      "sidecarSha256": "872fa7f213e7a5b0bc6132ea4f63c627e7a55804fd5d677077ef1cde9d497b50",
+      "runtimeStrip": "public/sprites/keeper_halloween_neutral_standing-front.png",
+      "runtimeStripSha256": "e14c4f497d986e3e6fcd2d3a25762cc9aa8176ccbd3b8359d935428e6ee0a794",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve full-strip scale, anchor, outfit/prop occlusion and exact first/last frame relationships"
+      ]
+    },
+    {
+      "name": "keeper_halloween_walk_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "clip",
+      "outfit": "halloween",
+      "facing": "front",
+      "interaction": "halloween-walk",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-halloween generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_halloween_walk_front_f8.png",
+      "sourceStripSha256": "3715fd31f3adfe5ae4ad34f321aa76d3212ea219691f0e2c502414eba4f15daf",
+      "sidecar": "art/raw/keeper-first-batch/keeper_halloween_walk_front_f8.json",
+      "sidecarSha256": "3b8ca9cfb95ec56ef69dcfbe334a5cbcd3673deb2acbc5bf1170cf0a5c986722",
+      "runtimeStrip": "public/sprites/keeper_halloween_walk_front.png",
+      "runtimeStripSha256": "350b6e7675e102e51f1e245048cb04ebf01c8c5db6da6b4a05f89907fc4c0fc8",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve full-strip scale, anchor, outfit/prop occlusion and exact first/last frame relationships"
+      ]
+    },
+    {
+      "name": "keeper_halloween_walk_front_cycle",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "bridge",
+      "outfit": "halloween",
+      "facing": "front",
+      "interaction": "halloween-walk",
+      "frames": 9,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          9
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F9",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-halloween generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_halloween_walk_front_cycle_f9.png",
+      "sourceStripSha256": "596dd4fdce82beb754861e34314d766686b4a504160d0242ff5548a13d4f889a",
+      "sidecar": "art/raw/keeper-first-batch/keeper_halloween_walk_front_cycle_f9.json",
+      "sidecarSha256": "5134dfa190bafe4e7a7c10950136de0779aa22becf666e83e9f59846d5d00872",
+      "runtimeStrip": "public/sprites/keeper_halloween_walk_front_cycle.png",
+      "runtimeStripSha256": "596dd4fdce82beb754861e34314d766686b4a504160d0242ff5548a13d4f889a",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "technical nine-frame cycle repeats its endpoint; preserve the exact loop seam and parent eight-frame locomotion dependency"
+      ]
+    },
+    {
+      "name": "keeper_hot_tub",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "seated",
+        "interaction"
+      ],
+      "assetRole": "clip",
+      "outfit": "privacy-foam",
+      "facing": "front",
+      "interaction": "soak-hot-tub",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        40,
+        47
+      ],
+      "density": 4,
+      "anchor": [
+        20,
+        47
+      ],
+      "seatPoint": [
+        20,
+        28.775
+      ],
+      "startPose": "sitting-front",
+      "endPose": "sitting-front",
+      "currentFaceFamily": "legacy-privacy-state full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_hot_tub_f8.png",
+      "sourceStripSha256": "013e5f14cec2978fa394fb21f67f8f0d044291610e44d1656bf236f3f2480c50",
+      "sidecar": "art/raw/keeper-first-batch/keeper_hot_tub_f8.json",
+      "sidecarSha256": "43339ad6ddbed42f916728b2b77b34322b52848a2a010c004db36b51c928033a",
+      "runtimeStrip": "public/sprites/keeper_hot_tub.png",
+      "runtimeStripSha256": "28558f92c4d1186cf08a8a81ca976530ecca8af46a805d06c5af75b7e427bb91",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve registered seat contact and head height; do not substitute the standing head without pose-aware integration"
+      ]
+    },
+    {
+      "name": "keeper_hungry",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "expression"
+      ],
+      "assetRole": "clip",
+      "outfit": "standard",
+      "facing": "front",
+      "interaction": "emote-hungry",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-expression-specific-generated-front",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_hungry_f8.png",
+      "sourceStripSha256": "ea66b05948bef6390bd1d8d8b105de3a9ba32f2766747a3105ff1815dc908ce2",
+      "sidecar": "art/raw/keeper-first-batch/keeper_hungry_f8.json",
+      "sidecarSha256": "3f49bd8a36af870818a61b0d0a4b92686e3062b76870d6a4fd013f88c3424a10",
+      "runtimeStrip": "public/sprites/keeper_hungry.png",
+      "runtimeStripSha256": "c0cddf4d2b27edf028f93211a4dc889019a4afcf5e95f947e76ab228b2e81ab1",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "action expression may deviate only locally and must return cleanly to the selected neutral face"
+      ]
+    },
+    {
+      "name": "keeper_idle",
+      "classification": "obsolete-technical",
+      "groups": [
+        "standard-uniform"
+      ],
+      "assetRole": "clip",
+      "outfit": "standard",
+      "facing": null,
+      "interaction": null,
+      "frames": 4,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          4
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F4",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "obsolete-procedural-modular-front",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_idle_f4.png",
+      "sourceStripSha256": "a747ac4224cb919a137afc12113bbb3f98eb631db8f7077ff89b3eac25679b93",
+      "sidecar": "art/raw/keeper-first-batch/keeper_idle_f4.json",
+      "sidecarSha256": "ba7797360b19005aaf9005acc554db883cd70cb8deff981bab23860f93626d99",
+      "runtimeStrip": "public/sprites/keeper_idle.png",
+      "runtimeStripSha256": "a747ac4224cb919a137afc12113bbb3f98eb631db8f7077ff89b3eac25679b93",
+      "opaqueCellEdgePixels": 51,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        51,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "current strip has 51 opaque cell-edge pixels; any replacement must restore a transparent gutter",
+        "rejected legacy idle excluded from the 173-animation reviewer; do not revive it as the new neutral"
+      ]
+    },
+    {
+      "name": "keeper_knight_neutral_standing-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral"
+      ],
+      "assetRole": "neutral",
+      "outfit": "knight",
+      "facing": "front",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-knight generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_knight_neutral_standing-front_f1.png",
+      "sourceStripSha256": "9778f9850404cc9eb2840d659a64d2d870a1fa66f321365e9a6e43e9977625be",
+      "sidecar": "art/raw/keeper-first-batch/keeper_knight_neutral_standing-front_f1.json",
+      "sidecarSha256": "76d4901407bcf71268e518e7b72400f12dc3c95f9b1bfd682a83a2b1d91273bf",
+      "runtimeStrip": "public/sprites/keeper_knight_neutral_standing-front.png",
+      "runtimeStripSha256": "9778f9850404cc9eb2840d659a64d2d870a1fa66f321365e9a6e43e9977625be",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve full-strip scale, anchor, outfit/prop occlusion and exact first/last frame relationships"
+      ]
+    },
+    {
+      "name": "keeper_knight_walk_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "clip",
+      "outfit": "knight",
+      "facing": "front",
+      "interaction": "knight-walk",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-knight generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_knight_walk_front_f8.png",
+      "sourceStripSha256": "9bede1dc74a24e3727d172948c91c1d6cef985225a5c3215574659b3e6ddcf5d",
+      "sidecar": "art/raw/keeper-first-batch/keeper_knight_walk_front_f8.json",
+      "sidecarSha256": "878cb6113de1e2600a88e00c4f06826dd70a24293efa73356233aa6e92c4c414",
+      "runtimeStrip": "public/sprites/keeper_knight_walk_front.png",
+      "runtimeStripSha256": "939699844fc6e801946fc19dd82f33de3c4d01ebd3f36b0e3506f56dc8d7f41f",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve full-strip scale, anchor, outfit/prop occlusion and exact first/last frame relationships"
+      ]
+    },
+    {
+      "name": "keeper_knight_walk_front_cycle",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "bridge",
+      "outfit": "knight",
+      "facing": "front",
+      "interaction": "knight-walk",
+      "frames": 9,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          9
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F9",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-knight generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_knight_walk_front_cycle_f9.png",
+      "sourceStripSha256": "1b1613d8362034de0d7c050e64269e17cafd87d42733ece7c1c5c2d0230fabfe",
+      "sidecar": "art/raw/keeper-first-batch/keeper_knight_walk_front_cycle_f9.json",
+      "sidecarSha256": "0083addff99294db4d75c18f6517de1480809c1bb7ddcf64afe1a634df4b8fe9",
+      "runtimeStrip": "public/sprites/keeper_knight_walk_front_cycle.png",
+      "runtimeStripSha256": "1b1613d8362034de0d7c050e64269e17cafd87d42733ece7c1c5c2d0230fabfe",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "technical nine-frame cycle repeats its endpoint; preserve the exact loop seam and parent eight-frame locomotion dependency"
+      ]
+    },
+    {
+      "name": "keeper_lift_button_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "interaction"
+      ],
+      "assetRole": "clip",
+      "outfit": "standard",
+      "facing": "front",
+      "interaction": "press-lift-button",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        34,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        17,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-generated-standard-full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_lift_button_front_f8.png",
+      "sourceStripSha256": "f30e2bbdec969231af029cd6a6bd0d686e8bd165ca616dfdf254fc8d0d98da2c",
+      "sidecar": "art/raw/keeper-first-batch/keeper_lift_button_front_f8.json",
+      "sidecarSha256": "fe70227553d25e0e6fd9b52dfd4404f00bc43f8ecfd808a0feeab025f8be8f42",
+      "runtimeStrip": "public/sprites/keeper_lift_button_front.png",
+      "runtimeStripSha256": "352dfa3db6fd86b7b17fa173fd878e125449a19c843c3172c2272ed0c3af87a6",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "withdrawn-rejected-provenance-only",
+      "transitionRisks": [
+        "the previous face-camera amendment is withdrawn-by-user rejected provenance and must not be reused"
+      ]
+    },
+    {
+      "name": "keeper_light-blue-pyjamas_neutral_standing-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral"
+      ],
+      "assetRole": "neutral",
+      "outfit": "light-blue-pyjamas",
+      "facing": "front-to-back",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-light-blue-pyjamas generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_light-blue-pyjamas_neutral_standing-front_f1.png",
+      "sourceStripSha256": "84da23ed56be3949e375b1bd2fd4ecaaef30c29335a47a294bafd45ea3f6f7a5",
+      "sidecar": "art/raw/keeper-first-batch/keeper_light-blue-pyjamas_neutral_standing-front_f1.json",
+      "sidecarSha256": "e90c2479553040ab782483a02d87d819be0bb815e29c1c4f84e934c4bdd9c9a0",
+      "runtimeStrip": "public/sprites/keeper_light-blue-pyjamas_neutral_standing-front.png",
+      "runtimeStripSha256": "84da23ed56be3949e375b1bd2fd4ecaaef30c29335a47a294bafd45ea3f6f7a5",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve full-strip scale, anchor, outfit/prop occlusion and exact first/last frame relationships"
+      ]
+    },
+    {
+      "name": "keeper_mechanic_neutral_standing-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral"
+      ],
+      "assetRole": "neutral",
+      "outfit": "mechanic",
+      "facing": "front",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-mechanic generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_mechanic_neutral_standing-front_f1.png",
+      "sourceStripSha256": "5557fb4061489a135d5b39a5b1051c015983a330c558119aa86d8507e92afb21",
+      "sidecar": "art/raw/keeper-first-batch/keeper_mechanic_neutral_standing-front_f1.json",
+      "sidecarSha256": "25e301acdf3f8bbd4ac3023fc8100019e545613401256c7d90742ce01944b673",
+      "runtimeStrip": "public/sprites/keeper_mechanic_neutral_standing-front.png",
+      "runtimeStripSha256": "5557fb4061489a135d5b39a5b1051c015983a330c558119aa86d8507e92afb21",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve full-strip scale, anchor, outfit/prop occlusion and exact first/last frame relationships"
+      ]
+    },
+    {
+      "name": "keeper_mechanic_walk_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "clip",
+      "outfit": "mechanic",
+      "facing": "front",
+      "interaction": "mechanic-walk",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-mechanic generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_mechanic_walk_front_f8.png",
+      "sourceStripSha256": "c17ca9cc1cb5b4d290fc269559e16906bc21d783a20437a38ee7757f56530d3d",
+      "sidecar": "art/raw/keeper-first-batch/keeper_mechanic_walk_front_f8.json",
+      "sidecarSha256": "50f29535c2a2213b09204870ad814940998d5af6f1b8700b92d1df736d8dfb45",
+      "runtimeStrip": "public/sprites/keeper_mechanic_walk_front.png",
+      "runtimeStripSha256": "da5bab8b58a36d337eac065cfb776861da8d113a04b9934bab43cbfc49d37bf3",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "withdrawn-rejected-provenance-only",
+      "transitionRisks": [
+        "the previous face-camera amendment is withdrawn-by-user rejected provenance and must not be reused"
+      ]
+    },
+    {
+      "name": "keeper_mechanic_walk_front_cycle",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "bridge",
+      "outfit": "mechanic",
+      "facing": "front",
+      "interaction": "mechanic-walk",
+      "frames": 9,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          9
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F9",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-mechanic generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_mechanic_walk_front_cycle_f9.png",
+      "sourceStripSha256": "c9f493700c579ab6934bb08afb9f80ec71d1d7ab95a078590152e8ca214bd9a4",
+      "sidecar": "art/raw/keeper-first-batch/keeper_mechanic_walk_front_cycle_f9.json",
+      "sidecarSha256": "b04cd7dc09b648392bbccddea5aa6d011e007e29cde51376ad1eeef2fac39f8b",
+      "runtimeStrip": "public/sprites/keeper_mechanic_walk_front_cycle.png",
+      "runtimeStripSha256": "c9f493700c579ab6934bb08afb9f80ec71d1d7ab95a078590152e8ca214bd9a4",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "technical nine-frame cycle repeats its endpoint; preserve the exact loop seam and parent eight-frame locomotion dependency"
+      ]
+    },
+    {
+      "name": "keeper_mosaic-privacy_neutral_sitting-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral",
+        "seated"
+      ],
+      "assetRole": "neutral",
+      "outfit": "mosaic-privacy",
+      "facing": "front",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        40,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        20,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "sitting-front",
+      "endPose": "sitting-front",
+      "currentFaceFamily": "legacy-privacy-state full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_mosaic-privacy_neutral_sitting-front_f1.png",
+      "sourceStripSha256": "96cedfcb0495f8d4812786f94aba6851e92f89c15ed427ce968974604f77a7eb",
+      "sidecar": "art/raw/keeper-first-batch/keeper_mosaic-privacy_neutral_sitting-front_f1.json",
+      "sidecarSha256": "be2bde4fee22fd93e8ecdd7882a7e923bde3d31ea89bda358da44423c1ab63eb",
+      "runtimeStrip": "public/sprites/keeper_mosaic-privacy_neutral_sitting-front.png",
+      "runtimeStripSha256": "96cedfcb0495f8d4812786f94aba6851e92f89c15ed427ce968974604f77a7eb",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve registered seat contact and head height; do not substitute the standing head without pose-aware integration"
+      ]
+    },
+    {
+      "name": "keeper_neutral_sitting-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "technical-neutral",
+        "seated"
+      ],
+      "assetRole": "neutral",
+      "outfit": "standard",
+      "facing": null,
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "sitting-front",
+      "endPose": "sitting-front",
+      "currentFaceFamily": "legacy-generated-standard-full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_neutral_sitting-front_f1.png",
+      "sourceStripSha256": "e0b3332e5bafd81620c6de3fa65cde929d23f550f00b700ec02d363e6770b74c",
+      "sidecar": "art/raw/keeper-first-batch/keeper_neutral_sitting-front_f1.json",
+      "sidecarSha256": "f46e8802f4977930477606af901fbbc56244f3d1cc50e3ab501d7ee9a97a5d62",
+      "runtimeStrip": "public/sprites/keeper_neutral_sitting-front.png",
+      "runtimeStripSha256": "e0b3332e5bafd81620c6de3fa65cde929d23f550f00b700ec02d363e6770b74c",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve registered seat contact and head height; do not substitute the standing head without pose-aware integration"
+      ]
+    },
+    {
+      "name": "keeper_neutral_standing-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "technical-neutral"
+      ],
+      "assetRole": "neutral",
+      "outfit": "standard",
+      "facing": null,
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "selected-primary-standard-full-face-canon",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_neutral_standing-front_f1.png",
+      "sourceStripSha256": "6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a",
+      "sidecar": "art/raw/keeper-first-batch/keeper_neutral_standing-front_f1.json",
+      "sidecarSha256": "3a0cc0f9922f18d6341263ca8684690dc9346e3470509ca2a7bea3ea163e735b",
+      "runtimeStrip": "public/sprites/keeper_neutral_standing-front.png",
+      "runtimeStripSha256": "6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve full-strip scale, anchor, outfit/prop occlusion and exact first/last frame relationships"
+      ]
+    },
+    {
+      "name": "keeper_old-school-workout-kit_neutral_standing-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral"
+      ],
+      "assetRole": "neutral",
+      "outfit": "old-school-workout-kit",
+      "facing": "front",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        80
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        80
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-old-school-workout-kit generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_old-school-workout-kit_neutral_standing-front_f1.png",
+      "sourceStripSha256": "75a9b52648021042792038ed1726284d74cd2fc70c45f985da05ea558b3d1007",
+      "sidecar": "art/raw/keeper-first-batch/keeper_old-school-workout-kit_neutral_standing-front_f1.json",
+      "sidecarSha256": "8adc37c8de9c078557678fdf4ed7070643f240d7b56b270b4da9dd07982b531e",
+      "runtimeStrip": "public/sprites/keeper_old-school-workout-kit_neutral_standing-front.png",
+      "runtimeStripSha256": "75a9b52648021042792038ed1726284d74cd2fc70c45f985da05ea558b3d1007",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve full-strip scale, anchor, outfit/prop occlusion and exact first/last frame relationships"
+      ]
+    },
+    {
+      "name": "keeper_party-hat_neutral_standing-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral"
+      ],
+      "assetRole": "neutral",
+      "outfit": "party-hat",
+      "facing": "front",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "party-overlay front family derived from the standard identity",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_party-hat_neutral_standing-front_f1.png",
+      "sourceStripSha256": "4525a796d024b52a396226be004a72435f8eb7da4140d2c07b46611a4eeffc90",
+      "sidecar": "art/raw/keeper-first-batch/keeper_party-hat_neutral_standing-front_f1.json",
+      "sidecarSha256": "29cb43ee779fd4d04656d0ad4eb9c9b647de1be1a94708e5f9d58be8620ef729",
+      "runtimeStrip": "public/sprites/keeper_party-hat_neutral_standing-front.png",
+      "runtimeStripSha256": "4525a796d024b52a396226be004a72435f8eb7da4140d2c07b46611a4eeffc90",
+      "opaqueCellEdgePixels": 5,
+      "opaqueCellEdgePixelsByFrame": [
+        5
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "current strip has 5 opaque cell-edge pixels; any replacement must restore a transparent gutter"
+      ]
+    },
+    {
+      "name": "keeper_party_dance",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "interaction",
+        "expression"
+      ],
+      "assetRole": "clip",
+      "outfit": "party-hat",
+      "facing": "front",
+      "interaction": "party-dance",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "party-overlay front family derived from the standard identity",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_party_dance_f8.png",
+      "sourceStripSha256": "1ed668b9f4eded485539a938bb4f33080b03eb793c3356163e4ce901c04c257b",
+      "sidecar": "art/raw/keeper-first-batch/keeper_party_dance_f8.json",
+      "sidecarSha256": "98fd44c268cb6667a237ba9356987ae4eff1128ce15a9de31dbf21c50de3bef2",
+      "runtimeStrip": "public/sprites/keeper_party_dance.png",
+      "runtimeStripSha256": "a70435b2f78005bd1ae8cf28757bb09650eeb54e5e699dd81d5703bde22d45e3",
+      "opaqueCellEdgePixels": 40,
+      "opaqueCellEdgePixelsByFrame": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "withdrawnAmendmentPolicy": "withdrawn-rejected-provenance-only",
+      "transitionRisks": [
+        "current strip has 40 opaque cell-edge pixels; any replacement must restore a transparent gutter",
+        "the previous face-camera amendment is withdrawn-by-user rejected provenance and must not be reused"
+      ]
+    },
+    {
+      "name": "keeper_party_idle",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume"
+      ],
+      "assetRole": "clip",
+      "outfit": "party-hat",
+      "facing": "front",
+      "interaction": "party-idle",
+      "frames": 4,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          4
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F4",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "party-overlay front family derived from the standard identity",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_party_idle_f4.png",
+      "sourceStripSha256": "e0326fafad5c9aee9ba5c432c862a409aecc504f0e0ddd04bf9ff69df4eed818",
+      "sidecar": "art/raw/keeper-first-batch/keeper_party_idle_f4.json",
+      "sidecarSha256": "80bce717adee64b118742805c5b27102413457e0ea70a8c951552e7f182a26a6",
+      "runtimeStrip": "public/sprites/keeper_party_idle.png",
+      "runtimeStripSha256": "5147dab0b1f1921c332a084afc27fb8be819467c1f89f64e2f72a6102f5829a5",
+      "opaqueCellEdgePixels": 20,
+      "opaqueCellEdgePixelsByFrame": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "withdrawnAmendmentPolicy": "withdrawn-rejected-provenance-only",
+      "transitionRisks": [
+        "current strip has 20 opaque cell-edge pixels; any replacement must restore a transparent gutter",
+        "the previous face-camera amendment is withdrawn-by-user rejected provenance and must not be reused"
+      ]
+    },
+    {
+      "name": "keeper_party_turn_back",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "interaction"
+      ],
+      "assetRole": "clip",
+      "outfit": "party-hat",
+      "facing": "front-to-back",
+      "interaction": "party-turn",
+      "frames": 6,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [
+        1
+      ],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-back",
+      "currentFaceFamily": "party-overlay front family derived from the standard identity",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_party_turn_back_f6.png",
+      "sourceStripSha256": "703b1852a6a138c81f3f89c194f4f9f5effa941d38590a5500a652cc77069a60",
+      "sidecar": "art/raw/keeper-first-batch/keeper_party_turn_back_f6.json",
+      "sidecarSha256": "b8c5b1cd61fa0582088651cafebcc68bea3e413f24a1962e0488e31b2098ca17",
+      "runtimeStrip": "public/sprites/keeper_party_turn_back.png",
+      "runtimeStripSha256": "cfca1423d464829c7cf6e5315ea770259cf3c8ef69056a5ddc3192e18facc8e0",
+      "opaqueCellEdgePixels": 30,
+      "opaqueCellEdgePixelsByFrame": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "current strip has 30 opaque cell-edge pixels; any replacement must restore a transparent gutter",
+        "front-face geometry appears inside a turning/depth route; preserve adjacent head position, scale and endpoint continuity"
+      ]
+    },
+    {
+      "name": "keeper_pirate_neutral_standing-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral"
+      ],
+      "assetRole": "neutral",
+      "outfit": "pirate",
+      "facing": "front",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-pirate generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_pirate_neutral_standing-front_f1.png",
+      "sourceStripSha256": "dd73c85e65f6dac79f3a7e11d05ce7218fef52a190f3160098591d9e8f53116e",
+      "sidecar": "art/raw/keeper-first-batch/keeper_pirate_neutral_standing-front_f1.json",
+      "sidecarSha256": "ae24b2f5a4774a96a4f5f5c44ad3d57d7b589ba0d6c7d4971d670c416cece8d3",
+      "runtimeStrip": "public/sprites/keeper_pirate_neutral_standing-front.png",
+      "runtimeStripSha256": "dd73c85e65f6dac79f3a7e11d05ce7218fef52a190f3160098591d9e8f53116e",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve full-strip scale, anchor, outfit/prop occlusion and exact first/last frame relationships"
+      ]
+    },
+    {
+      "name": "keeper_pirate_walk_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "clip",
+      "outfit": "pirate",
+      "facing": "front",
+      "interaction": "pirate-walk",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-pirate generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_pirate_walk_front_f8.png",
+      "sourceStripSha256": "fa0435746e4f2d3f12a4b76b16a96d2b3430b3ea48c5e5f1a463fdfa70038e7e",
+      "sidecar": "art/raw/keeper-first-batch/keeper_pirate_walk_front_f8.json",
+      "sidecarSha256": "891f1bf83ebef8c015c536372ba441cb4c007d28470c40d96bf5b28587a1379d",
+      "runtimeStrip": "public/sprites/keeper_pirate_walk_front.png",
+      "runtimeStripSha256": "1ca8b059671c579ed532b253249e688bf37fa1b03f24f35d3b9a4e37695ef9c8",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve full-strip scale, anchor, outfit/prop occlusion and exact first/last frame relationships"
+      ]
+    },
+    {
+      "name": "keeper_pirate_walk_front_cycle",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "bridge",
+      "outfit": "pirate",
+      "facing": "front",
+      "interaction": "pirate-walk",
+      "frames": 9,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          9
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F9",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-pirate generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_pirate_walk_front_cycle_f9.png",
+      "sourceStripSha256": "7ae9b9fb941d54ec5fe1358be548141d27ca8fe64cbb79087c369b731c41c911",
+      "sidecar": "art/raw/keeper-first-batch/keeper_pirate_walk_front_cycle_f9.json",
+      "sidecarSha256": "6353332643fa5528dbe79b04a4ecd568958ff8fd243f8ff7be268622a79469c3",
+      "runtimeStrip": "public/sprites/keeper_pirate_walk_front_cycle.png",
+      "runtimeStripSha256": "7ae9b9fb941d54ec5fe1358be548141d27ca8fe64cbb79087c369b731c41c911",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "technical nine-frame cycle repeats its endpoint; preserve the exact loop seam and parent eight-frame locomotion dependency"
+      ]
+    },
+    {
+      "name": "keeper_play_drums_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "seated",
+        "interaction"
+      ],
+      "assetRole": "clip",
+      "outfit": "standard",
+      "facing": "front",
+      "interaction": "play-drums",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": [
+        16.5,
+        38.98
+      ],
+      "startPose": "sitting-front",
+      "endPose": "sitting-front",
+      "currentFaceFamily": "legacy-generated-standard-full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_play_drums_front_f8.png",
+      "sourceStripSha256": "86835d5eecd1f47ecaeaf19a799a1a8811e2fab91423e1469da9cfab8efb9552",
+      "sidecar": "art/raw/keeper-first-batch/keeper_play_drums_front_f8.json",
+      "sidecarSha256": "9857d2d25fa812bbf1b419329e8818211e23ca14c88fb7ecb03b71d53b37e903",
+      "runtimeStrip": "public/sprites/keeper_play_drums_front.png",
+      "runtimeStripSha256": "e571dcbfcb8cadba98fc22bc73b63c6728adb966c6cef2e35469b64256dbba0b",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve registered seat contact and head height; do not substitute the standing head without pose-aware integration"
+      ]
+    },
+    {
+      "name": "keeper_pottery_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "seated",
+        "interaction"
+      ],
+      "assetRole": "clip",
+      "outfit": "artist-smock",
+      "facing": "front",
+      "interaction": "pottery-wheel",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        40,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        20,
+        40
+      ],
+      "seatPoint": [
+        20,
+        29.66
+      ],
+      "startPose": "sitting-front",
+      "endPose": "sitting-front",
+      "currentFaceFamily": "legacy-production-artist-smock-front; accepted V11 review family is the finish dependency",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_pottery_front_f8.png",
+      "sourceStripSha256": "9ca3e4702ff6e7d89793dea289a994f0d44ae6b8cac573c862253fe965e6d531",
+      "sidecar": "art/raw/keeper-first-batch/keeper_pottery_front_f8.json",
+      "sidecarSha256": "ef32d3ccc6efb367b17c096e98db618bfe7423d6454200c8da9648a39ee9d667",
+      "runtimeStrip": "public/sprites/keeper_pottery_front.png",
+      "runtimeStripSha256": "e01494cc5a0986bb58297a68a1b360abbe1abb9e3fef015904f0d53fb67979f0",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "must stay internally continuous with the accepted but unpromoted V11 artist-smock family",
+        "preserve registered seat contact and head height; do not substitute the standing head without pose-aware integration"
+      ]
+    },
+    {
+      "name": "keeper_privacy-foam_neutral_sitting-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral",
+        "seated"
+      ],
+      "assetRole": "neutral",
+      "outfit": "privacy-foam",
+      "facing": "front",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        40,
+        47
+      ],
+      "density": 4,
+      "anchor": [
+        20,
+        47
+      ],
+      "seatPoint": null,
+      "startPose": "sitting-front",
+      "endPose": "sitting-front",
+      "currentFaceFamily": "legacy-privacy-state full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_privacy-foam_neutral_sitting-front_f1.png",
+      "sourceStripSha256": "aa37f8e3b3ce029c38ae5b9a1f1ccef30ba834788a9dd1981ad15324c9740d0c",
+      "sidecar": "art/raw/keeper-first-batch/keeper_privacy-foam_neutral_sitting-front_f1.json",
+      "sidecarSha256": "38153b572d3388f8ee75295f5a8bf9bb76747d61d39af6d3ea0f434a9b3d8fca",
+      "runtimeStrip": "public/sprites/keeper_privacy-foam_neutral_sitting-front.png",
+      "runtimeStripSha256": "aa37f8e3b3ce029c38ae5b9a1f1ccef30ba834788a9dd1981ad15324c9740d0c",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve registered seat contact and head height; do not substitute the standing head without pose-aware integration"
+      ]
+    },
+    {
+      "name": "keeper_pyjamas_turn_back",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "interaction"
+      ],
+      "assetRole": "clip",
+      "outfit": "light-blue-pyjamas",
+      "facing": "front-to-back",
+      "interaction": "turn-pyjamas",
+      "frames": 6,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [
+        1
+      ],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-back",
+      "currentFaceFamily": "legacy-light-blue-pyjamas generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_pyjamas_turn_back_f6.png",
+      "sourceStripSha256": "3ae5aef6a26b1e2739473ff9f90970055b12a18a426ee79c9e012ed338491f3e",
+      "sidecar": "art/raw/keeper-first-batch/keeper_pyjamas_turn_back_f6.json",
+      "sidecarSha256": "8f6431eb9c2a0aeffd311cc94f2dd2ff75ae7095ac60742aaf286f704fc16835",
+      "runtimeStrip": "public/sprites/keeper_pyjamas_turn_back.png",
+      "runtimeStripSha256": "3ae5aef6a26b1e2739473ff9f90970055b12a18a426ee79c9e012ed338491f3e",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "withdrawn-rejected-provenance-only",
+      "transitionRisks": [
+        "front-face geometry appears inside a turning/depth route; preserve adjacent head position, scale and endpoint continuity",
+        "the previous face-camera amendment is withdrawn-by-user rejected provenance and must not be reused"
+      ]
+    },
+    {
+      "name": "keeper_read_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "seated",
+        "interaction"
+      ],
+      "assetRole": "clip",
+      "outfit": "standard",
+      "facing": "front",
+      "interaction": "read-book",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": [
+        16,
+        29.275
+      ],
+      "startPose": "sitting-front",
+      "endPose": "sitting-front",
+      "currentFaceFamily": "legacy-generated-standard-full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_read_front_f8.png",
+      "sourceStripSha256": "f463a60e295d8ca36be810ad53bc64220f49df6da831a70154dcf8b495301c83",
+      "sidecar": "art/raw/keeper-first-batch/keeper_read_front_f8.json",
+      "sidecarSha256": "2bc04eee2b17175f14267012668ced62121c2fcbde1c31ec51700e2097462ffe",
+      "runtimeStrip": "public/sprites/keeper_read_front.png",
+      "runtimeStripSha256": "a082aad18bb62137fffe272b6c49d739b93d24cc2e71eaa1a156a8cb9ef1b5ef",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve registered seat contact and head height; do not substitute the standing head without pose-aware integration"
+      ]
+    },
+    {
+      "name": "keeper_reference",
+      "classification": "obsolete-technical",
+      "groups": [
+        "standard-uniform",
+        "technical-neutral"
+      ],
+      "assetRole": "reference",
+      "outfit": "standard",
+      "facing": null,
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": null,
+      "endPose": null,
+      "currentFaceFamily": "obsolete-procedural-modular-front",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_reference_f1.png",
+      "sourceStripSha256": "1686eab190030d02d8ad60b87e3743453b71d7ba35f6fd68fa0b4778c78d2804",
+      "sidecar": "art/raw/keeper-first-batch/keeper_reference_f1.json",
+      "sidecarSha256": "fd97fddd127e5cf1210decb4d65e1380e7f563508512dcaae748bc2f6bf91802",
+      "runtimeStrip": "public/sprites/keeper_reference.png",
+      "runtimeStripSha256": "1bfcf387b6c900aa332900444f3a83f87115a82f35e0eb1bc9aa03f08d48b0f8",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "obsolete modular reference; inventory evidence only and not a production identity authority"
+      ]
+    },
+    {
+      "name": "keeper_ride_bike_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "seated",
+        "interaction"
+      ],
+      "assetRole": "clip",
+      "outfit": "old-school-workout-kit",
+      "facing": "front",
+      "interaction": "use-stationary-exercise-bike",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        48,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        24,
+        48
+      ],
+      "seatPoint": [
+        24,
+        39.16
+      ],
+      "startPose": "sitting-front",
+      "endPose": "sitting-front",
+      "currentFaceFamily": "legacy-old-school-workout-kit generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_ride_bike_front_f8.png",
+      "sourceStripSha256": "1c142cea67c1ccbb10d47d5fade74d9546e9f4a2fa0f850d10a271879fd8cabd",
+      "sidecar": "art/raw/keeper-first-batch/keeper_ride_bike_front_f8.json",
+      "sidecarSha256": "3734a1acb6e897195422cd93415af6fb962518e834d60c3ac143dc1241291655",
+      "runtimeStrip": "public/sprites/keeper_ride_bike_front.png",
+      "runtimeStripSha256": "6ad701180e43ae535f46c7c5ed97bd746615b4424d9cd716a830c6af6d0f8844",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve registered seat contact and head height; do not substitute the standing head without pose-aware integration"
+      ]
+    },
+    {
+      "name": "keeper_sad",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "expression"
+      ],
+      "assetRole": "clip",
+      "outfit": "standard",
+      "facing": "front",
+      "interaction": "emote-sad",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        41
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        41
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-expression-specific-generated-front",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_sad_f8.png",
+      "sourceStripSha256": "5cb5c826939a46ba9d9452556698136c816da0cf2edc9fad7831e1f64dc70d68",
+      "sidecar": "art/raw/keeper-first-batch/keeper_sad_f8.json",
+      "sidecarSha256": "60bbf9230fd80bbe4394ce01af83dccffbdc19fee2bb735012ab0fe9236a1032",
+      "runtimeStrip": "public/sprites/keeper_sad.png",
+      "runtimeStripSha256": "73dc840c05dd6e1091151a1c7661406cf4f7053cde93d342ddb93b9c4844625c",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "action expression may deviate only locally and must return cleanly to the selected neutral face"
+      ]
+    },
+    {
+      "name": "keeper_scuba_neutral_swimming-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral",
+        "locomotion"
+      ],
+      "assetRole": "neutral",
+      "outfit": "scuba",
+      "facing": "down",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        48,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        24,
+        24
+      ],
+      "seatPoint": null,
+      "startPose": "swimming-front",
+      "endPose": "swimming-front",
+      "currentFaceFamily": "legacy-vertical-swim full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_scuba_neutral_swimming-front_f1.png",
+      "sourceStripSha256": "d3d5dd4023458bb10fda18c6cd09e7bffa355abe41addf437c002981924aa0c1",
+      "sidecar": "art/raw/keeper-first-batch/keeper_scuba_neutral_swimming-front_f1.json",
+      "sidecarSha256": "ecfa20d13cdda55531f3673135c33387b8333a5586cc715d35a0e2a84d621f41",
+      "runtimeStrip": "public/sprites/keeper_scuba_neutral_swimming-front.png",
+      "runtimeStripSha256": "d3d5dd4023458bb10fda18c6cd09e7bffa355abe41addf437c002981924aa0c1",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "direct-front swimming uses a centred body-axis anchor, not the standing floor anchor"
+      ]
+    },
+    {
+      "name": "keeper_scuba_swim_down",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "clip",
+      "outfit": "scuba",
+      "facing": "down",
+      "interaction": "scuba-swim",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        48,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        24,
+        24
+      ],
+      "seatPoint": null,
+      "startPose": "swimming-front",
+      "endPose": "swimming-front",
+      "currentFaceFamily": "legacy-vertical-swim full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_scuba_swim_down_f8.png",
+      "sourceStripSha256": "8cdd7b6ba4fd0e51814816493e0164509c3fce5b2912c5cb957d5fe06f98f699",
+      "sidecar": "art/raw/keeper-first-batch/keeper_scuba_swim_down_f8.json",
+      "sidecarSha256": "731651c82ee6fd6dc1a87b4aac860b05fc28afaec0d8bfb520a01e903bc1589f",
+      "runtimeStrip": "public/sprites/keeper_scuba_swim_down.png",
+      "runtimeStripSha256": "b2d9a2287c862720718a33e077bdbe22cb82ee5bf19f8cb411de8633ba328c88",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "withdrawn-rejected-provenance-only",
+      "transitionRisks": [
+        "direct-front swimming uses a centred body-axis anchor, not the standing floor anchor",
+        "the previous face-camera amendment is withdrawn-by-user rejected provenance and must not be reused"
+      ]
+    },
+    {
+      "name": "keeper_sit_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "seated"
+      ],
+      "assetRole": "clip",
+      "outfit": "standard",
+      "facing": null,
+      "interaction": null,
+      "frames": 6,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F6",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": [
+        16,
+        29.22
+      ],
+      "startPose": "standing-front",
+      "endPose": "sitting-front",
+      "currentFaceFamily": "legacy-generated-standard-full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_sit_front_f6.png",
+      "sourceStripSha256": "70885b36d108ffb891244bf896eacea804e38970ab82a917706eb371866db3e2",
+      "sidecar": "art/raw/keeper-first-batch/keeper_sit_front_f6.json",
+      "sidecarSha256": "9a0eebaa51440bdcef83ee7d78ea9ab451d8eaac427d646f5403c7bdcf6c41a5",
+      "runtimeStrip": "public/sprites/keeper_sit_front.png",
+      "runtimeStripSha256": "70885b36d108ffb891244bf896eacea804e38970ab82a917706eb371866db3e2",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve registered seat contact and head height; do not substitute the standing head without pose-aware integration"
+      ]
+    },
+    {
+      "name": "keeper_souwester_neutral_standing-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral"
+      ],
+      "assetRole": "neutral",
+      "outfit": "souwester",
+      "facing": "front",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-souwester generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_souwester_neutral_standing-front_f1.png",
+      "sourceStripSha256": "c390b6645a879a77f6bb53d47a71531f1c3e9bc4cc7ec1abb5641978f3f0e6c3",
+      "sidecar": "art/raw/keeper-first-batch/keeper_souwester_neutral_standing-front_f1.json",
+      "sidecarSha256": "a725b2cb0fa2ddb9b503c397b77480300490efe85b9969f89ff649bfda5c6af2",
+      "runtimeStrip": "public/sprites/keeper_souwester_neutral_standing-front.png",
+      "runtimeStripSha256": "c390b6645a879a77f6bb53d47a71531f1c3e9bc4cc7ec1abb5641978f3f0e6c3",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve full-strip scale, anchor, outfit/prop occlusion and exact first/last frame relationships"
+      ]
+    },
+    {
+      "name": "keeper_souwester_walk_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "clip",
+      "outfit": "souwester",
+      "facing": "front",
+      "interaction": "souwester-walk-toward",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-souwester generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_souwester_walk_front_f8.png",
+      "sourceStripSha256": "3af50258ef201271eef4afaecb69b0168c5f7c6bc840d32f9f4c4b67208f9318",
+      "sidecar": "art/raw/keeper-first-batch/keeper_souwester_walk_front_f8.json",
+      "sidecarSha256": "30cf3d6b6931753bdb301d3a5221f5244a9aaf992381a45ecfb1b8c7d39d83ad",
+      "runtimeStrip": "public/sprites/keeper_souwester_walk_front.png",
+      "runtimeStripSha256": "d08f7255c62268f4e036120bbe589f2484014f1f2fb20a1b8810b1092597ca99",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "withdrawn-rejected-provenance-only",
+      "transitionRisks": [
+        "the previous face-camera amendment is withdrawn-by-user rejected provenance and must not be reused"
+      ]
+    },
+    {
+      "name": "keeper_souwester_walk_front_cycle",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "bridge",
+      "outfit": "souwester",
+      "facing": "front",
+      "interaction": "souwester-walk-toward",
+      "frames": 9,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          9
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F9",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-souwester generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_souwester_walk_front_cycle_f9.png",
+      "sourceStripSha256": "c5c3cca1e3fc786ceb1a30b991c749436049030d82b5e3d7aa112c4761469024",
+      "sidecar": "art/raw/keeper-first-batch/keeper_souwester_walk_front_cycle_f9.json",
+      "sidecarSha256": "bb033ab219a2913e4d58459ce4591fb49141b895cce9fac9ad45ea99ac5cdd4c",
+      "runtimeStrip": "public/sprites/keeper_souwester_walk_front_cycle.png",
+      "runtimeStripSha256": "c5c3cca1e3fc786ceb1a30b991c749436049030d82b5e3d7aa112c4761469024",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "technical nine-frame cycle repeats its endpoint; preserve the exact loop seam and parent eight-frame locomotion dependency"
+      ]
+    },
+    {
+      "name": "keeper_spaceman_neutral_standing-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral"
+      ],
+      "assetRole": "neutral",
+      "outfit": "spaceman",
+      "facing": "front",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-spaceman generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_spaceman_neutral_standing-front_f1.png",
+      "sourceStripSha256": "474dad3b0b6a16813d3e34e97d30097a4a82093f3268cf3f4b7883a6f064cd56",
+      "sidecar": "art/raw/keeper-first-batch/keeper_spaceman_neutral_standing-front_f1.json",
+      "sidecarSha256": "d6addb9df7c85949c3f6ae981f8c77eb88ee5c8e7fa0d0d292085cdb4a43a685",
+      "runtimeStrip": "public/sprites/keeper_spaceman_neutral_standing-front.png",
+      "runtimeStripSha256": "474dad3b0b6a16813d3e34e97d30097a4a82093f3268cf3f4b7883a6f064cd56",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve full-strip scale, anchor, outfit/prop occlusion and exact first/last frame relationships"
+      ]
+    },
+    {
+      "name": "keeper_spaceman_walk_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "clip",
+      "outfit": "spaceman",
+      "facing": "front",
+      "interaction": "spaceman-walk",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-spaceman generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_spaceman_walk_front_f8.png",
+      "sourceStripSha256": "6e58e192dcbcd7f766ee61bc8400c16ee5079a533ced5a0b9064d79a12a81cdb",
+      "sidecar": "art/raw/keeper-first-batch/keeper_spaceman_walk_front_f8.json",
+      "sidecarSha256": "b09d3a7d13c20cd08011519691d5645fb88914b314cdaeca82a10e09f4e225d8",
+      "runtimeStrip": "public/sprites/keeper_spaceman_walk_front.png",
+      "runtimeStripSha256": "edb5d9c35f23d399375fc97e99dacf9cf065a07d47391c7b301c45cc7cadd3ff",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "withdrawn-rejected-provenance-only",
+      "transitionRisks": [
+        "the previous face-camera amendment is withdrawn-by-user rejected provenance and must not be reused"
+      ]
+    },
+    {
+      "name": "keeper_spaceman_walk_front_cycle",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "bridge",
+      "outfit": "spaceman",
+      "facing": "front",
+      "interaction": "spaceman-walk",
+      "frames": 9,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          9
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F9",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        48
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-spaceman generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_spaceman_walk_front_cycle_f9.png",
+      "sourceStripSha256": "a3f75e5a7c678f756f4bb7c320a86132b9f8517aa71367ff3d32e92109b0dcbf",
+      "sidecar": "art/raw/keeper-first-batch/keeper_spaceman_walk_front_cycle_f9.json",
+      "sidecarSha256": "3738c0363e654bc35efaa98a299cc74e510e0237829c81a1fa13189b819384be",
+      "runtimeStrip": "public/sprites/keeper_spaceman_walk_front_cycle.png",
+      "runtimeStripSha256": "a3f75e5a7c678f756f4bb7c320a86132b9f8517aa71367ff3d32e92109b0dcbf",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "technical nine-frame cycle repeats its endpoint; preserve the exact loop seam and parent eight-frame locomotion dependency"
+      ]
+    },
+    {
+      "name": "keeper_striped-swimming-costume_neutral_swimming-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral",
+        "locomotion"
+      ],
+      "assetRole": "neutral",
+      "outfit": "striped-swimming-costume",
+      "facing": "down",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        48,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        24,
+        24
+      ],
+      "seatPoint": null,
+      "startPose": "swimming-front",
+      "endPose": "swimming-front",
+      "currentFaceFamily": "legacy-vertical-swim full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_striped-swimming-costume_neutral_swimming-front_f1.png",
+      "sourceStripSha256": "c7afeb2dc8bba81afd5826848c7112f9ec0ac4496f826038ad62ad2c74f4c22e",
+      "sidecar": "art/raw/keeper-first-batch/keeper_striped-swimming-costume_neutral_swimming-front_f1.json",
+      "sidecarSha256": "e7cffb5632459d27de579b7860e34e29993fd11035d911eac5bbdbd9626f534a",
+      "runtimeStrip": "public/sprites/keeper_striped-swimming-costume_neutral_swimming-front.png",
+      "runtimeStripSha256": "c7afeb2dc8bba81afd5826848c7112f9ec0ac4496f826038ad62ad2c74f4c22e",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "direct-front swimming uses a centred body-axis anchor, not the standing floor anchor"
+      ]
+    },
+    {
+      "name": "keeper_swim_costume_down",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "clip",
+      "outfit": "striped-swimming-costume",
+      "facing": "down",
+      "interaction": "swim",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        48,
+        48
+      ],
+      "density": 4,
+      "anchor": [
+        24,
+        24
+      ],
+      "seatPoint": null,
+      "startPose": "swimming-front",
+      "endPose": "swimming-front",
+      "currentFaceFamily": "legacy-vertical-swim full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_swim_costume_down_f8.png",
+      "sourceStripSha256": "2b14bea948d4f39e974cade895983b3ae6e8eb34b86c0cc8613a4a67cc8c0507",
+      "sidecar": "art/raw/keeper-first-batch/keeper_swim_costume_down_f8.json",
+      "sidecarSha256": "5da8ef2c5b543648cdce31d96ebdd39869d862d463e11c14a971b264ce613708",
+      "runtimeStrip": "public/sprites/keeper_swim_costume_down.png",
+      "runtimeStripSha256": "aef0135d4b0f887a5cd981936d94277252557c577e1af720d64ee054a64e248a",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "withdrawn-rejected-provenance-only",
+      "transitionRisks": [
+        "direct-front swimming uses a centred body-axis anchor, not the standing floor anchor",
+        "the previous face-camera amendment is withdrawn-by-user rejected provenance and must not be reused"
+      ]
+    },
+    {
+      "name": "keeper_tarzan_neutral_standing-front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "technical-neutral"
+      ],
+      "assetRole": "neutral",
+      "outfit": "tarzan",
+      "facing": "front",
+      "interaction": null,
+      "frames": 1,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-tarzan generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_tarzan_neutral_standing-front_f1.png",
+      "sourceStripSha256": "d368e979ffc40c3ecd723c1aef060e2a785bda868308f5fdf092bbf1fdbb4938",
+      "sidecar": "art/raw/keeper-first-batch/keeper_tarzan_neutral_standing-front_f1.json",
+      "sidecarSha256": "63affbfa07ae4d708cae4eb79cc28f4fadd8f9b1abaf2b6cef731612781351a6",
+      "runtimeStrip": "public/sprites/keeper_tarzan_neutral_standing-front.png",
+      "runtimeStripSha256": "d368e979ffc40c3ecd723c1aef060e2a785bda868308f5fdf092bbf1fdbb4938",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "preserve full-strip scale, anchor, outfit/prop occlusion and exact first/last frame relationships"
+      ]
+    },
+    {
+      "name": "keeper_tarzan_walk_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "clip",
+      "outfit": "tarzan",
+      "facing": "front",
+      "interaction": "tarzan-walk",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-tarzan generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_tarzan_walk_front_f8.png",
+      "sourceStripSha256": "72f31ec993070c42c2992cc6eeaf1a396c1f6ce06aa57cefc282a2b02ec21140",
+      "sidecar": "art/raw/keeper-first-batch/keeper_tarzan_walk_front_f8.json",
+      "sidecarSha256": "9261efa5d8fce4b0e28c3be1f23433160500116e2fc3a5c9f897db5ddde34ec6",
+      "runtimeStrip": "public/sprites/keeper_tarzan_walk_front.png",
+      "runtimeStripSha256": "f0f1c01bf26eb53e71715adc6b61b7ead26edb9b326b5c885b1a8effd814bf36",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "withdrawn-rejected-provenance-only",
+      "transitionRisks": [
+        "the previous face-camera amendment is withdrawn-by-user rejected provenance and must not be reused"
+      ]
+    },
+    {
+      "name": "keeper_tarzan_walk_front_cycle",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "locomotion"
+      ],
+      "assetRole": "bridge",
+      "outfit": "tarzan",
+      "facing": "front",
+      "interaction": "tarzan-walk",
+      "frames": 9,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          9
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F9",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-tarzan generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_tarzan_walk_front_cycle_f9.png",
+      "sourceStripSha256": "a13b44aae6b737c27c3976b3b1aa8bcc09f8357f7796f8182cf352740d6b1ef6",
+      "sidecar": "art/raw/keeper-first-batch/keeper_tarzan_walk_front_cycle_f9.json",
+      "sidecarSha256": "77fccc559cd66d3ff5e2283761e068d4698dceba56d3a5d3300ec053dd639423",
+      "runtimeStrip": "public/sprites/keeper_tarzan_walk_front_cycle.png",
+      "runtimeStripSha256": "a13b44aae6b737c27c3976b3b1aa8bcc09f8357f7796f8182cf352740d6b1ef6",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "technical nine-frame cycle repeats its endpoint; preserve the exact loop seam and parent eight-frame locomotion dependency"
+      ]
+    },
+    {
+      "name": "keeper_trampoline_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "outfit-costume",
+        "interaction"
+      ],
+      "assetRole": "clip",
+      "outfit": "old-school-workout-kit",
+      "facing": "front",
+      "interaction": "bounce-trampoline",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        80
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        80
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-old-school-workout-kit generated full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_trampoline_front_f8.png",
+      "sourceStripSha256": "06fe53acd0ae173945efb232e3d6319fa834e320f6404003150daadd298405ce",
+      "sidecar": "art/raw/keeper-first-batch/keeper_trampoline_front_f8.json",
+      "sidecarSha256": "475ef5f7d7109d85ff71be12364587e9aeb3ae5aa97d6dd7892024bab73d86c9",
+      "runtimeStrip": "public/sprites/keeper_trampoline_front.png",
+      "runtimeStripSha256": "e405f04332b488a297b4c7d80e3ee482ba45cb8208b5ef7746ad72c9fdbb95d1",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "withdrawn-rejected-provenance-only",
+      "transitionRisks": [
+        "the previous face-camera amendment is withdrawn-by-user rejected provenance and must not be reused"
+      ]
+    },
+    {
+      "name": "keeper_turn_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "interaction"
+      ],
+      "assetRole": "bridge",
+      "outfit": "standard",
+      "facing": "right-to-front",
+      "interaction": "turn-front",
+      "frames": 6,
+      "fullFaceFrameRanges": [
+        [
+          5,
+          6
+        ]
+      ],
+      "fullFaceFrameRangeText": "F5\u2013F6",
+      "directNeutralEndpointFrames": [
+        6
+      ],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-side-right",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-generated-standard-full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_turn_front_f6.png",
+      "sourceStripSha256": "cab51cb946eb39e1a05e2665ccff7f0f3cb6523621d42a4766ccb8212d86b57b",
+      "sidecar": "art/raw/keeper-first-batch/keeper_turn_front_f6.json",
+      "sidecarSha256": "85baf8ff097f371a2f68501e45815a63b2a98023548751ff14c7a4f15e11ebb4",
+      "runtimeStrip": "public/sprites/keeper_turn_front.png",
+      "runtimeStripSha256": "cab51cb946eb39e1a05e2665ccff7f0f3cb6523621d42a4766ccb8212d86b57b",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "front-face geometry appears inside a turning/depth route; preserve adjacent head position, scale and endpoint continuity",
+        "near-front F5 currently changes face family before the exact selected neutral at F6"
+      ]
+    },
+    {
+      "name": "keeper_turn_left_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "interaction"
+      ],
+      "assetRole": "bridge",
+      "outfit": "standard",
+      "facing": "left-to-front",
+      "interaction": "turn-front",
+      "frames": 6,
+      "fullFaceFrameRanges": [
+        [
+          5,
+          6
+        ]
+      ],
+      "fullFaceFrameRangeText": "F5\u2013F6",
+      "directNeutralEndpointFrames": [
+        6
+      ],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-side-left",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-generated-standard-full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_turn_left_front_f6.png",
+      "sourceStripSha256": "7060620c5009a76e74dfa222c9f21bb6a33b6e49545b9a9c177539b2a6323599",
+      "sidecar": "art/raw/keeper-first-batch/keeper_turn_left_front_f6.json",
+      "sidecarSha256": "5aded3040ed9c27ea9f34c2b6db1dabb2a692f37c9f6047c31e19bb99ca733bb",
+      "runtimeStrip": "public/sprites/keeper_turn_left_front.png",
+      "runtimeStripSha256": "7060620c5009a76e74dfa222c9f21bb6a33b6e49545b9a9c177539b2a6323599",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "front-face geometry appears inside a turning/depth route; preserve adjacent head position, scale and endpoint continuity",
+        "near-front F5 currently changes face family before the exact selected neutral at F6"
+      ]
+    },
+    {
+      "name": "keeper_walk_into_lift",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "locomotion",
+        "interaction"
+      ],
+      "assetRole": "clip",
+      "outfit": "standard",
+      "facing": "back-to-front",
+      "interaction": "enter-lift",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          8,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F8",
+      "directNeutralEndpointFrames": [
+        8
+      ],
+      "canvas": [
+        34,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        18,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-back",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-generated-standard-full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_walk_into_lift_f8.png",
+      "sourceStripSha256": "a09988e83dc3165723f32cff52e67e0028d915f99d24277e5e2787d1864bb5b2",
+      "sidecar": "art/raw/keeper-first-batch/keeper_walk_into_lift_f8.json",
+      "sidecarSha256": "0141b486aec86a83a75fa773be8dcff98cc3a1302e97520436e1587d650db2c1",
+      "runtimeStrip": "public/sprites/keeper_walk_into_lift.png",
+      "runtimeStripSha256": "e440cc96b5c8299fa9b05187735661cc283e3ee3f9db06944e89cfce4933c797",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "front-face geometry appears inside a turning/depth route; preserve adjacent head position, scale and endpoint continuity",
+        "intentional 100%\u219275% depth scale and six-pixel rise; do not normalize away the designed depth transition"
+      ]
+    },
+    {
+      "name": "keeper_water_plants_front",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "interaction"
+      ],
+      "assetRole": "clip",
+      "outfit": "standard",
+      "facing": "front",
+      "interaction": "water-plants",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        40,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        20,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-generated-standard-full-face",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_water_plants_front_f8.png",
+      "sourceStripSha256": "6a901769a4728ed3ac5402db7f917a328ef72aec8ac4574481467f8853c5f25f",
+      "sidecar": "art/raw/keeper-first-batch/keeper_water_plants_front_f8.json",
+      "sidecarSha256": "32a4f2e0713272b32860d0f8b99181865dc6ec8f296dee11727706b6e72befdb",
+      "runtimeStrip": "public/sprites/keeper_water_plants_front.png",
+      "runtimeStripSha256": "0a8c7244791e5f652f1782f27a622c0ae99748e2b9d2e8ede16e6141acf9aef1",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "withdrawn-rejected-provenance-only",
+      "transitionRisks": [
+        "the previous face-camera amendment is withdrawn-by-user rejected provenance and must not be reused"
+      ]
+    },
+    {
+      "name": "keeper_wave_camera",
+      "classification": "production-or-derived-contract-asset",
+      "groups": [
+        "standard-uniform",
+        "expression"
+      ],
+      "assetRole": "clip",
+      "outfit": "standard",
+      "facing": "front",
+      "interaction": "emote-wave",
+      "frames": 8,
+      "fullFaceFrameRanges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "fullFaceFrameRangeText": "F1\u2013F8",
+      "directNeutralEndpointFrames": [],
+      "canvas": [
+        32,
+        40
+      ],
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "seatPoint": null,
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "currentFaceFamily": "legacy-expression-specific-generated-front",
+      "sourceStrip": "art/raw/keeper-first-batch/keeper_wave_camera_f8.png",
+      "sourceStripSha256": "67f15961780deeb7e42a7633e67937429a1ac6d0b6b61e9b750bd84bcb20bbd1",
+      "sidecar": "art/raw/keeper-first-batch/keeper_wave_camera_f8.json",
+      "sidecarSha256": "8041180a74daac32c8ce40a08b416badfe120db4877eb4a157f239406ceea2b6",
+      "runtimeStrip": "public/sprites/keeper_wave_camera.png",
+      "runtimeStripSha256": "689160e7f9b8716771fef8e827955f185fa6cddd7f05188a0bf5a876040d2b3a",
+      "opaqueCellEdgePixels": 0,
+      "opaqueCellEdgePixelsByFrame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withdrawnAmendmentPolicy": "none",
+      "transitionRisks": [
+        "action expression may deviate only locally and must return cleanly to the selected neutral face"
+      ]
+    }
+  ]
+}

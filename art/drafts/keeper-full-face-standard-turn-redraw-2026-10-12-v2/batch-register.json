@@ -1,0 +1,466 @@
+{
+  "batchId": "keeper-full-face-standard-turn-redraw-2026-10-12-v2",
+  "status": "awaiting-explicit-user-approval",
+  "canonPack": "art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/canon-pack-register.json",
+  "canonPackSha256": "1c981edf58fbeb785a3369affc8553cba5dca82ede7549d0bc24ce79885930cd",
+  "canonSha256": "6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a",
+  "scope": [
+    "keeper_turn_front",
+    "keeper_turn_left_front"
+  ],
+  "supersedes": {
+    "draft": "art/drafts/keeper-full-face-standard-turn-endpoints-2026-10-12-v1",
+    "decision": "V1 F5-only transplant rejected in favour of a complete moving-model redraw",
+    "preservation": "V1 remains historical and unmodified"
+  },
+  "candidates": [
+    {
+      "animation": "keeper_turn_front",
+      "status": "active-review-draft",
+      "canonical": {
+        "strip": "art/raw/keeper-first-batch/keeper_turn_front_f6.png",
+        "stripSha256": "cab51cb946eb39e1a05e2665ccff7f0f3cb6523621d42a4766ccb8212d86b57b",
+        "sidecar": "art/raw/keeper-first-batch/keeper_turn_front_f6.json",
+        "sidecarSha256": "85baf8ff097f371a2f68501e45815a63b2a98023548751ff14c7a4f15e11ebb4"
+      },
+      "generatedSource": {
+        "file": "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/generated-sources/keeper_turn_front-generated.png",
+        "sha256": "f45c2abf02c1b0115e606e7b37401d9f3e1a97f2a511d355990ed0db117b2476",
+        "prompt": "Use case: identity-preserve\nAsset type: six-frame 2D game sprite turning animation source sheet\nPrimary request: Redraw the entire right-profile-to-front turning animation as six clean, evenly spaced full-body poses of the SAME approved Lighthouse Keeper model. Image 1 is the binding identity and exact final front-facing pose. Image 2 supplies only the intended right-side-to-front rotation order. Rebuild the moving poses from Image 1's adult proportions and restrained design rather than copying Image 2's oversized smiling transitional head.\nInput images: Image 1: primary identity authority and exact final pose; Image 2: motion/order reference only.\nScene/backdrop: genuinely transparent background.\nSubject: one adult lighthouse keeper in navy cap, blue sweater with cream stripe, dark trousers and boots, rotating in place from exact right profile through 72\u00b0, 54\u00b0, 36\u00b0, 18\u00b0, to exact front view. Six poses total, left to right. Natural tiny counter-movements of arms and feet are allowed, but floor contact and body scale remain stable.\nStyle/medium: polished high-resolution pixel-art/cartoon game sprite matching Image 1 exactly in rendering, palette, outline weight, shading, anatomy and beard mass.\nComposition/framing: single horizontal sprite sheet, six isolated equal cells, one character centered per cell, identical baseline and overall scale, generous transparent gutter around every pose. The final pose must visually match Image 1. Frame 5 must already be almost canonical so frame 5 to frame 6 is only the last small rotational step with no jump in head size, cap size, shoulder width, torso width, head height or foot placement.\nConstraints: adult restrained face; solid dark rectangular eyes as visible; separate moustache; readable closed mouth; established broad beard; stable head position; native body width comparable to Image 1; coherent continuous rotation; no props; no text; no shadows; no scene; transparent background. Preserve the same Keeper identity in every frame. The turn must end at the canonical front pose without a model swap.\nAvoid: cheesy pixie grin, generic smile, open mouth, moustache merged into mouth, white eye glints, round childlike eyes, oversized head, changing body proportions, sudden front-view scale change, duplicated/missing limbs, frame overlap, cropped pixels, background tiles, labels or watermark.",
+        "tool": "built-in image_gen"
+      },
+      "draft": {
+        "strip": "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/drafts/keeper_turn_front/keeper_turn_front_f6.png",
+        "stripSha256": "d2a5d162047591409ffed4aa364bc374fcd26ab1fad310c01c0ad769819456f6",
+        "sidecar": "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/drafts/keeper_turn_front/keeper_turn_front_f6.json",
+        "sidecarSha256": "26844b9e2dc861ddfadb71fc4efed1b68ddabd58886c77e0fa86e5c5e403a3fc"
+      },
+      "normalization": {
+        "sourcePoseBoundsExclusive": [
+          [
+            4,
+            4,
+            222,
+            543
+          ],
+          [
+            4,
+            4,
+            219,
+            546
+          ],
+          [
+            4,
+            4,
+            244,
+            546
+          ],
+          [
+            4,
+            4,
+            262,
+            548
+          ],
+          [
+            4,
+            4,
+            288,
+            548
+          ],
+          [
+            4,
+            4,
+            281,
+            549
+          ]
+        ],
+        "normalizedPoseBoundsExclusive": [
+          [
+            35,
+            9,
+            93,
+            158
+          ],
+          [
+            36,
+            9,
+            93,
+            158
+          ],
+          [
+            32,
+            9,
+            95,
+            158
+          ],
+          [
+            30,
+            9,
+            98,
+            158
+          ],
+          [
+            26,
+            9,
+            101,
+            158
+          ],
+          [
+            28,
+            9,
+            101,
+            158
+          ]
+        ],
+        "targetOpaqueHeight": 149,
+        "horizontalFactor": 0.96052632,
+        "generatedEndpointPixelSha256": "da1aafc32c3933afa58a7aca2da7a4d6f2c4b0017d86ece2d5ddecb092152a61",
+        "deliveredEndpointPixelSha256": "f5ac6eca2c8fef7acec4b750830c48e11081f24fe345ebb4f0f046db53a9556b"
+      },
+      "endpointContinuity": {
+        "frame5AlphaBoundsExclusive": [
+          26,
+          9,
+          101,
+          158
+        ],
+        "frame6AlphaBoundsExclusive": [
+          27,
+          9,
+          100,
+          158
+        ],
+        "widthDeltaPixels": 2,
+        "heightDeltaPixels": 0,
+        "centreXDeltaPixels": 0.0,
+        "baselineDeltaPixels": 0
+      },
+      "frameEvidence": [
+        {
+          "frame": 1,
+          "canonicalPixelSha256": "6f768c2b891a9684ff152156113f96bd56fb2ef05b56f681ea57d8575388e538",
+          "draftPixelSha256": "26a9367818aef0dbd464d6190ea77ec8f1b3a9aa0800631e80e3aca3f091cf26",
+          "redrawn": true,
+          "opaqueCellEdgePixels": 0,
+          "alphaBoundsExclusive": [
+            35,
+            9,
+            93,
+            158
+          ]
+        },
+        {
+          "frame": 2,
+          "canonicalPixelSha256": "6c4a0b61790169e4ec4677f6f6abf6c0a531a9729bcbb7288b21b892094d0f35",
+          "draftPixelSha256": "170aae809e9925f724fcd0a2ac0371272d2ea0e5e0b047b36111226c2bde9e5b",
+          "redrawn": true,
+          "opaqueCellEdgePixels": 0,
+          "alphaBoundsExclusive": [
+            36,
+            9,
+            93,
+            158
+          ]
+        },
+        {
+          "frame": 3,
+          "canonicalPixelSha256": "4e0aeb018487a600e89e49b4aa21b2b82d806d8905c68b461a014a3de4e965c3",
+          "draftPixelSha256": "71c0a1edf935e49cd0c0994bff4324b188bc2219391589274c1e87453400a97c",
+          "redrawn": true,
+          "opaqueCellEdgePixels": 0,
+          "alphaBoundsExclusive": [
+            32,
+            9,
+            95,
+            158
+          ]
+        },
+        {
+          "frame": 4,
+          "canonicalPixelSha256": "91aa92968b97d67bd0b6046e5df82c6102c55ee061e6a01dd6c8923139f97ce5",
+          "draftPixelSha256": "a1dda795fb58c2b84015d8978fd0ea06191b2c2f557103752b090ee70ac9a57a",
+          "redrawn": true,
+          "opaqueCellEdgePixels": 0,
+          "alphaBoundsExclusive": [
+            30,
+            9,
+            98,
+            158
+          ]
+        },
+        {
+          "frame": 5,
+          "canonicalPixelSha256": "fb9da095f65521e46a41989b167a3b4d8215f5e1d153cdfe74cdacc07d010039",
+          "draftPixelSha256": "b2180bc91d241eb5647f72fa2e4243205d901880de9da288fd16023b2d8e5e63",
+          "redrawn": true,
+          "opaqueCellEdgePixels": 0,
+          "alphaBoundsExclusive": [
+            26,
+            9,
+            101,
+            158
+          ]
+        },
+        {
+          "frame": 6,
+          "canonicalPixelSha256": "f5ac6eca2c8fef7acec4b750830c48e11081f24fe345ebb4f0f046db53a9556b",
+          "draftPixelSha256": "f5ac6eca2c8fef7acec4b750830c48e11081f24fe345ebb4f0f046db53a9556b",
+          "redrawn": false,
+          "opaqueCellEdgePixels": 0,
+          "alphaBoundsExclusive": [
+            27,
+            9,
+            100,
+            158
+          ]
+        }
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "evidence": [
+        "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/evidence/keeper_turn_front/canonical.gif",
+        "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/evidence/keeper_turn_front/candidate.gif",
+        "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/evidence/keeper_turn_front/comparison.gif",
+        "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/evidence/keeper_turn_front/strip-comparison.png"
+      ]
+    },
+    {
+      "animation": "keeper_turn_left_front",
+      "status": "active-review-draft",
+      "canonical": {
+        "strip": "art/raw/keeper-first-batch/keeper_turn_left_front_f6.png",
+        "stripSha256": "7060620c5009a76e74dfa222c9f21bb6a33b6e49545b9a9c177539b2a6323599",
+        "sidecar": "art/raw/keeper-first-batch/keeper_turn_left_front_f6.json",
+        "sidecarSha256": "5aded3040ed9c27ea9f34c2b6db1dabb2a692f37c9f6047c31e19bb99ca733bb"
+      },
+      "generatedSource": {
+        "file": "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/generated-sources/keeper_turn_left_front-generated.png",
+        "sha256": "3a7502caeb23a9e9195b018b82d4343d0c5d2564e78aed7668415d9d21f3244b",
+        "prompt": "Use case: identity-preserve\nAsset type: six-frame 2D game sprite turning animation source sheet\nPrimary request: Redraw the entire left-profile-to-front turning animation as six clean, evenly spaced full-body poses of the SAME approved Lighthouse Keeper model. Image 1 is the binding identity and exact final front-facing pose. Image 2 supplies only the intended left-side-to-front rotation order. Rebuild the moving poses from Image 1's adult proportions and restrained design rather than copying Image 2's oversized smiling transitional head.\nInput images: Image 1: primary identity authority and exact final pose; Image 2: motion/order reference only.\nScene/backdrop: genuinely transparent background.\nSubject: one adult lighthouse keeper in navy cap, blue sweater with cream stripe, dark trousers and boots, rotating in place from exact left profile through 72\u00b0, 54\u00b0, 36\u00b0, 18\u00b0, to exact front view. Six poses total, left to right. Natural tiny counter-movements of arms and feet are allowed, but floor contact and body scale remain stable.\nStyle/medium: polished high-resolution pixel-art/cartoon game sprite matching Image 1 exactly in rendering, palette, outline weight, shading, anatomy and beard mass.\nComposition/framing: single horizontal sprite sheet, six isolated equal cells, one character centered per cell, identical baseline and overall scale, generous transparent gutter around every pose. The final pose must visually match Image 1. Frame 5 must already be almost canonical so frame 5 to frame 6 is only the last small rotational step with no jump in head size, cap size, shoulder width, torso width, head height or foot placement.\nConstraints: adult restrained face; solid dark rectangular eyes as visible; separate moustache; readable closed mouth; established broad beard; stable head position; native body width comparable to Image 1; coherent continuous rotation; no props; no text; no shadows; no scene; transparent background. Preserve the same Keeper identity in every frame. The turn must end at the canonical front pose without a model swap.\nAvoid: cheesy pixie grin, generic smile, open mouth, moustache merged into mouth, white eye glints, round childlike eyes, oversized head, changing body proportions, sudden front-view scale change, duplicated/missing limbs, frame overlap, cropped pixels, background tiles, labels or watermark.",
+        "tool": "built-in image_gen"
+      },
+      "draft": {
+        "strip": "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/drafts/keeper_turn_left_front/keeper_turn_left_front_f6.png",
+        "stripSha256": "2366158eaddf9bc62d7856fde4731a3fee2189f6fa4a843568b3a00c7e8da155",
+        "sidecar": "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/drafts/keeper_turn_left_front/keeper_turn_left_front_f6.json",
+        "sidecarSha256": "83de4b34ebd9ffe8cd1d3aaff9883f80a4566497af72c352a95313a47b96b3bb"
+      },
+      "normalization": {
+        "sourcePoseBoundsExclusive": [
+          [
+            4,
+            4,
+            218,
+            532
+          ],
+          [
+            4,
+            4,
+            216,
+            537
+          ],
+          [
+            4,
+            4,
+            244,
+            541
+          ],
+          [
+            4,
+            4,
+            258,
+            540
+          ],
+          [
+            4,
+            4,
+            274,
+            540
+          ],
+          [
+            4,
+            4,
+            271,
+            541
+          ]
+        ],
+        "normalizedPoseBoundsExclusive": [
+          [
+            34,
+            9,
+            94,
+            158
+          ],
+          [
+            35,
+            9,
+            93,
+            158
+          ],
+          [
+            31,
+            9,
+            97,
+            158
+          ],
+          [
+            29,
+            9,
+            99,
+            158
+          ],
+          [
+            27,
+            9,
+            101,
+            158
+          ],
+          [
+            28,
+            9,
+            101,
+            158
+          ]
+        ],
+        "targetOpaqueHeight": 149,
+        "horizontalFactor": 0.98648649,
+        "generatedEndpointPixelSha256": "b5b27cd7b643f5f7cbc6b9c7f9f716df2302449dbb4326954a703c994f54888c",
+        "deliveredEndpointPixelSha256": "f5ac6eca2c8fef7acec4b750830c48e11081f24fe345ebb4f0f046db53a9556b"
+      },
+      "endpointContinuity": {
+        "frame5AlphaBoundsExclusive": [
+          27,
+          9,
+          101,
+          158
+        ],
+        "frame6AlphaBoundsExclusive": [
+          27,
+          9,
+          100,
+          158
+        ],
+        "widthDeltaPixels": 1,
+        "heightDeltaPixels": 0,
+        "centreXDeltaPixels": 0.5,
+        "baselineDeltaPixels": 0
+      },
+      "frameEvidence": [
+        {
+          "frame": 1,
+          "canonicalPixelSha256": "3106634579527bfb67de22786af59501b5ae6d31a0139c6cfc43d798636b7703",
+          "draftPixelSha256": "7cbf0b38c1cad5a58e3b1588a5c8f24bc8fb96ebcd70d3988cecf75d5a55d2e6",
+          "redrawn": true,
+          "opaqueCellEdgePixels": 0,
+          "alphaBoundsExclusive": [
+            34,
+            9,
+            94,
+            158
+          ]
+        },
+        {
+          "frame": 2,
+          "canonicalPixelSha256": "b64c58c10cf71dda9b912d404e34068135c41153eefa72b379f9cd644839f2bb",
+          "draftPixelSha256": "c5429599766e2ea0352519ed5de642263cbbdad71bc7030f65ae8bc95cba9e31",
+          "redrawn": true,
+          "opaqueCellEdgePixels": 0,
+          "alphaBoundsExclusive": [
+            35,
+            9,
+            93,
+            158
+          ]
+        },
+        {
+          "frame": 3,
+          "canonicalPixelSha256": "84fa3a79fb4286c79a9ef8e4c2bdbd0c5da72f5636139a633cd018ab894eb1c6",
+          "draftPixelSha256": "186934c14a36a69bebeb30a8727548217e0f2ee3d8b106dcc854e03f36cf256b",
+          "redrawn": true,
+          "opaqueCellEdgePixels": 0,
+          "alphaBoundsExclusive": [
+            31,
+            9,
+            97,
+            158
+          ]
+        },
+        {
+          "frame": 4,
+          "canonicalPixelSha256": "f9fa269c98fa14dffc8cdbfe4f8e09155f80a678b88f33142d48d15920130eac",
+          "draftPixelSha256": "15d6744f290ca9822d19da8bc07718b69553283f24e17afb050c8d751607b051",
+          "redrawn": true,
+          "opaqueCellEdgePixels": 0,
+          "alphaBoundsExclusive": [
+            29,
+            9,
+            99,
+            158
+          ]
+        },
+        {
+          "frame": 5,
+          "canonicalPixelSha256": "9d1742297209190edc48ee5ac3eb765ba9d1085ee04541fce654011f3b147332",
+          "draftPixelSha256": "3b06548a255ee0c61c5fea95c464c40762b3d3bf0035b4c931967188b4c28f11",
+          "redrawn": true,
+          "opaqueCellEdgePixels": 0,
+          "alphaBoundsExclusive": [
+            27,
+            9,
+            101,
+            158
+          ]
+        },
+        {
+          "frame": 6,
+          "canonicalPixelSha256": "f5ac6eca2c8fef7acec4b750830c48e11081f24fe345ebb4f0f046db53a9556b",
+          "draftPixelSha256": "f5ac6eca2c8fef7acec4b750830c48e11081f24fe345ebb4f0f046db53a9556b",
+          "redrawn": false,
+          "opaqueCellEdgePixels": 0,
+          "alphaBoundsExclusive": [
+            27,
+            9,
+            100,
+            158
+          ]
+        }
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "evidence": [
+        "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/evidence/keeper_turn_left_front/canonical.gif",
+        "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/evidence/keeper_turn_left_front/candidate.gif",
+        "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/evidence/keeper_turn_left_front/comparison.gif",
+        "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/evidence/keeper_turn_left_front/strip-comparison.png"
+      ]
+    }
+  ],
+  "checks": {
+    "stripSidecarAgreement": true,
+    "binaryAlpha": true,
+    "transparentCellEdges": true,
+    "exactCanonicalFinalFrames": true,
+    "smoothF5ToF6Geometry": true,
+    "productionChanged": false
+  },
+  "exclusions": {
+    "keeper_count_money": "explicitly deleted amendment remains deleted and was not regenerated",
+    "withdrawnFaceCameraDrafts": "rejected provenance only; not reused",
+    "remainingInventory": "not touched pending review of these two V2 candidates"
+  },
+  "documentationAudit": {
+    "result": "pass",
+    "filesReconciled": [
+      "README.md",
+      "docs/STATUS.md",
+      "docs/KEEPER_ANIMATION_HANDOFF.md",
+      "docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md"
+    ],
+    "finding": "Documentation records canon approval, V1 rejection, V2 F1-F5 full-motion scope, exact-canon F6 endpoints, unchanged production and the remaining visual-approval gate."
+  },
+  "rollback": "Delete only art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2 and public/keeper-review/full-face-standard-turn-redraw-v2; canonical raw/runtime art, V1 history and manifests are unchanged."
+}

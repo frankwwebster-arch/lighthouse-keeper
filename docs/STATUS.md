@@ -1,4 +1,4 @@
-# Lighthouse Keeper: status write-up (11 Oct 2026)
+# Lighthouse Keeper: status write-up (12 Oct 2026)
 
 ## What it is
 A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthouse; kids type commands (typo-tolerant, curated, no live AI) or click objects (Sims-style menus, auto-zoom camera). Needs and mood, credits, phone, bedtime, multi-day play, a day report, quiz pop-ins, time-aware chat, cheeky humour.
@@ -41,6 +41,18 @@ or regressed endpoint failures against that frozen migration boundary.
 Keeper review cards now also preview, save and export a proposed per-clip
 runtime FPS. Accepted `animationFps` values belong in each animation's source
 JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
+
+The first full-face normalisation phase is approved. Frank approved the
+versioned V1 canon pack uses the selected standard front neutral byte-for-byte,
+shows the accepted V11 artist-smock neutral as its finish reference, and adds
+exact face landmarks, masks/guides and deterministic alpha/gutter checks. Its
+read-only inventory covers 62 direct or near-direct front assets and reports
+five existing legacy cell-edge risks without changing them. No production
+sprite or manifest has been changed. The first review batch is deliberately
+limited to `keeper_turn_front` and `keeper_turn_left_front`. Frank rejected the
+V1 F5-only transplant approach; V2 redraws each complete moving model in F1–F5,
+then restores exact canon pixels in F6. Both V2 candidates await explicit visual
+approval before any promotion or wider normalisation.
 
 1. The evidence-based beard/hand audit classifies every manifest frame and pins `keeper_clear_snow` as the canonical fuller stepped beard. A landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It remains fail-closed for unavailable evidence: 163 side-on standing/sitting sheets are inventoried, eight zero-difference reference self-comparisons match, and 994 different-pose frames—including `keeper_darts` 3–6—are non-comparable because no approved beard masks, facial landmarks or hand-depth/component evidence exists. Frank reviewed Darts 3–6 visually on 11 October and accepted the beards with no amendment required; no beard draft is active or promotable. Next, use GPT-5.6 Sol to establish comparison inputs for any future claim, then run the later frame-isolation and released-prop audits.
 2. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. Frank's immutable second visual review recorded 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed; the current reviewer has 97 Happy and 67 Awaiting after Frank selected the Darts draft as his preferred candidate. Frank's saved per-animation width and height remain final production art direction.

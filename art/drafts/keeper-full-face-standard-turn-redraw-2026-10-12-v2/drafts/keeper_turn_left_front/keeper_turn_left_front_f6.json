@@ -1,0 +1,36 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "reverseFor": "turn_left_from_front",
+  "facing": "left-to-front",
+  "interaction": "turn-front",
+  "assetRole": "bridge",
+  "startPose": "standing-side-left",
+  "endPose": "standing-front",
+  "mirrorSafe": false,
+  "draft": true,
+  "draftId": "keeper-full-face-standard-turn-redraw-2026-10-12-v2",
+  "canonicalUnchanged": true,
+  "approvalRequiredForPromotion": true,
+  "amendment": {
+    "authoredFrames": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "lockedCanonicalEndpointFrame": 6,
+    "scope": "complete moving model redraw using approved front model as identity authority",
+    "widthPolicy": "native model width retained; reviewer width scaling remains a separate user decision"
+  }
+}

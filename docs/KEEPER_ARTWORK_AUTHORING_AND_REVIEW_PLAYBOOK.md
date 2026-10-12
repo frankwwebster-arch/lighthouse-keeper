@@ -18,6 +18,7 @@ shortlist or an earlier sample set—defines later correction scope.
 | Area | Current status | Consequence |
 |---|---|---|
 | Side-right standard-uniform identity | The canonical standing side-right raster is pinned | Use it and the high-resolution walk source as identity and proportion authorities |
+| Full-face standard-uniform identity | Frank approved V1 on 12 October 2026; its standard neutral is byte-identical to the selected primary front raster | Use it as geometry authority for small reversible review batches; production promotion still requires separate explicit approval |
 | Artist-smock design | The V10 costume design is accepted; seven V11 authored animations are active review drafts | Keep this family internally consistent and await exact-name platform decisions before production promotion |
 | Standard-uniform snooker route | The complete route is visually accepted and is an active `keeper_snooker` review draft | The platform verdict is still required; production remains the old eight-frame strip |
 | Bathrobe | No replacement family is accepted | Do not revive head transfer, beard transfer or procedural redraw experiments; wait for exact-name platform requests |
@@ -42,6 +43,19 @@ that source as a face, moustache or expression reference.
 The complete eight-pose `keeper_water_plants_front-v1-neutral.png` amendment is
 also rejected, not a source from which individual poses may be salvaged; the
 previous canonical front-watering strip remains authoritative.
+
+The replacement full-face workstream begins from a clean, separate V1 canon
+pack at `art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/`. It does not
+reuse the withdrawn images. Its candidate is an exact copy of the selected
+standard front neutral, and its V11 artist-smock reference is comparison-only.
+Frank approved the pack on 12 October 2026 for small-batch authoring. It still
+cannot authorize production promotion by itself. The first two-animation batch
+is limited to the standard-uniform side-to-front turns. Its V1 F5-only head
+transplants were rejected; V2 redraws the complete moving models in F1–F5 and
+locks F6 to exact canon, with deterministic endpoint-geometry checks. V2 awaits
+separate visual approval. The full read-only 62-asset scope is recorded in
+`docs/KEEPER_FULL_FACE_INVENTORY.md` and
+`data/keeper_full_face_inventory.json`.
 
 The canonical side-right gameplay raster is:
 

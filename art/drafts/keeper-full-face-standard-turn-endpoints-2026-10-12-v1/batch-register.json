@@ -1,0 +1,200 @@
+{
+  "batchId": "keeper-full-face-standard-turn-endpoints-2026-10-12-v1",
+  "status": "awaiting-explicit-user-approval",
+  "canonPack": "art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/canon-pack-register.json",
+  "canonPackSha256": "1c981edf58fbeb785a3369affc8553cba5dca82ede7549d0bc24ce79885930cd",
+  "canonSha256": "6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a",
+  "scope": [
+    "keeper_turn_front",
+    "keeper_turn_left_front"
+  ],
+  "method": "Replace only the declared F5 head/face zone with the exact approved neutral pixels; leave F1-F4 and F6 byte-identical to canonical production.",
+  "mask": {
+    "file": "art/drafts/keeper-full-face-standard-turn-endpoints-2026-10-12-v1/masks/frame-5-head-face-replacement-mask.png",
+    "sha256": "3ccab8abdceb36de0ef41af96d69f533424bf717d783e9772768beaa195e8e68",
+    "boundsExclusive": [
+      18,
+      0,
+      112,
+      108
+    ]
+  },
+  "candidates": [
+    {
+      "animation": "keeper_turn_front",
+      "status": "active-review-draft",
+      "canonical": {
+        "strip": "art/raw/keeper-first-batch/keeper_turn_front_f6.png",
+        "stripSha256": "cab51cb946eb39e1a05e2665ccff7f0f3cb6523621d42a4766ccb8212d86b57b",
+        "sidecar": "art/raw/keeper-first-batch/keeper_turn_front_f6.json",
+        "sidecarSha256": "85baf8ff097f371a2f68501e45815a63b2a98023548751ff14c7a4f15e11ebb4"
+      },
+      "draft": {
+        "strip": "art/drafts/keeper-full-face-standard-turn-endpoints-2026-10-12-v1/drafts/keeper_turn_front/keeper_turn_front_f6.png",
+        "stripSha256": "1b9bdae2c3c47d576f6c2a64db5ba58c5c10d4de055df2901509601fb0fd47fe",
+        "sidecar": "art/drafts/keeper-full-face-standard-turn-endpoints-2026-10-12-v1/drafts/keeper_turn_front/keeper_turn_front_f6.json",
+        "sidecarSha256": "f44177ef64c9163642502adbdfcfce9d5d1c378040c13ec78cfb75b6c5542fed"
+      },
+      "frameEvidence": [
+        {
+          "frame": 1,
+          "canonicalPixelSha256": "6f768c2b891a9684ff152156113f96bd56fb2ef05b56f681ea57d8575388e538",
+          "draftPixelSha256": "6f768c2b891a9684ff152156113f96bd56fb2ef05b56f681ea57d8575388e538",
+          "changed": false,
+          "opaqueCellEdgePixels": 0
+        },
+        {
+          "frame": 2,
+          "canonicalPixelSha256": "6c4a0b61790169e4ec4677f6f6abf6c0a531a9729bcbb7288b21b892094d0f35",
+          "draftPixelSha256": "6c4a0b61790169e4ec4677f6f6abf6c0a531a9729bcbb7288b21b892094d0f35",
+          "changed": false,
+          "opaqueCellEdgePixels": 0
+        },
+        {
+          "frame": 3,
+          "canonicalPixelSha256": "4e0aeb018487a600e89e49b4aa21b2b82d806d8905c68b461a014a3de4e965c3",
+          "draftPixelSha256": "4e0aeb018487a600e89e49b4aa21b2b82d806d8905c68b461a014a3de4e965c3",
+          "changed": false,
+          "opaqueCellEdgePixels": 0
+        },
+        {
+          "frame": 4,
+          "canonicalPixelSha256": "91aa92968b97d67bd0b6046e5df82c6102c55ee061e6a01dd6c8923139f97ce5",
+          "draftPixelSha256": "91aa92968b97d67bd0b6046e5df82c6102c55ee061e6a01dd6c8923139f97ce5",
+          "changed": false,
+          "opaqueCellEdgePixels": 0
+        },
+        {
+          "frame": 5,
+          "canonicalPixelSha256": "fb9da095f65521e46a41989b167a3b4d8215f5e1d153cdfe74cdacc07d010039",
+          "draftPixelSha256": "ac5cadaafc86b7b03bd0d28c8dbe51456dfc3492299a77b4e331bd9531ae60a2",
+          "changed": true,
+          "opaqueCellEdgePixels": 0
+        },
+        {
+          "frame": 6,
+          "canonicalPixelSha256": "f5ac6eca2c8fef7acec4b750830c48e11081f24fe345ebb4f0f046db53a9556b",
+          "draftPixelSha256": "f5ac6eca2c8fef7acec4b750830c48e11081f24fe345ebb4f0f046db53a9556b",
+          "changed": false,
+          "opaqueCellEdgePixels": 0
+        }
+      ],
+      "authoredFrame": 5,
+      "changedPixelCount": 5811,
+      "changedPixelBoundsExclusive": [
+        30,
+        6,
+        100,
+        108
+      ],
+      "unchangedOutOfScopePixels": true,
+      "endpointFrame": 6,
+      "endpointByteIdenticalToCanon": true,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "evidence": [
+        "art/drafts/keeper-full-face-standard-turn-endpoints-2026-10-12-v1/evidence/keeper_turn_front/canonical.gif",
+        "art/drafts/keeper-full-face-standard-turn-endpoints-2026-10-12-v1/evidence/keeper_turn_front/candidate.gif",
+        "art/drafts/keeper-full-face-standard-turn-endpoints-2026-10-12-v1/evidence/keeper_turn_front/comparison.gif",
+        "art/drafts/keeper-full-face-standard-turn-endpoints-2026-10-12-v1/evidence/keeper_turn_front/strip-comparison.png"
+      ]
+    },
+    {
+      "animation": "keeper_turn_left_front",
+      "status": "active-review-draft",
+      "canonical": {
+        "strip": "art/raw/keeper-first-batch/keeper_turn_left_front_f6.png",
+        "stripSha256": "7060620c5009a76e74dfa222c9f21bb6a33b6e49545b9a9c177539b2a6323599",
+        "sidecar": "art/raw/keeper-first-batch/keeper_turn_left_front_f6.json",
+        "sidecarSha256": "5aded3040ed9c27ea9f34c2b6db1dabb2a692f37c9f6047c31e19bb99ca733bb"
+      },
+      "draft": {
+        "strip": "art/drafts/keeper-full-face-standard-turn-endpoints-2026-10-12-v1/drafts/keeper_turn_left_front/keeper_turn_left_front_f6.png",
+        "stripSha256": "af5967d580b083f857772ed8b0b6033998fc6928cee2a4f4ad0fe5ffb44dc0e5",
+        "sidecar": "art/drafts/keeper-full-face-standard-turn-endpoints-2026-10-12-v1/drafts/keeper_turn_left_front/keeper_turn_left_front_f6.json",
+        "sidecarSha256": "9d1c1111bd0db4e7e2d2741c852a5ff70e1d805c90b01a6a5bb72f8d62e218c2"
+      },
+      "frameEvidence": [
+        {
+          "frame": 1,
+          "canonicalPixelSha256": "3106634579527bfb67de22786af59501b5ae6d31a0139c6cfc43d798636b7703",
+          "draftPixelSha256": "3106634579527bfb67de22786af59501b5ae6d31a0139c6cfc43d798636b7703",
+          "changed": false,
+          "opaqueCellEdgePixels": 0
+        },
+        {
+          "frame": 2,
+          "canonicalPixelSha256": "b64c58c10cf71dda9b912d404e34068135c41153eefa72b379f9cd644839f2bb",
+          "draftPixelSha256": "b64c58c10cf71dda9b912d404e34068135c41153eefa72b379f9cd644839f2bb",
+          "changed": false,
+          "opaqueCellEdgePixels": 0
+        },
+        {
+          "frame": 3,
+          "canonicalPixelSha256": "84fa3a79fb4286c79a9ef8e4c2bdbd0c5da72f5636139a633cd018ab894eb1c6",
+          "draftPixelSha256": "84fa3a79fb4286c79a9ef8e4c2bdbd0c5da72f5636139a633cd018ab894eb1c6",
+          "changed": false,
+          "opaqueCellEdgePixels": 0
+        },
+        {
+          "frame": 4,
+          "canonicalPixelSha256": "f9fa269c98fa14dffc8cdbfe4f8e09155f80a678b88f33142d48d15920130eac",
+          "draftPixelSha256": "f9fa269c98fa14dffc8cdbfe4f8e09155f80a678b88f33142d48d15920130eac",
+          "changed": false,
+          "opaqueCellEdgePixels": 0
+        },
+        {
+          "frame": 5,
+          "canonicalPixelSha256": "9d1742297209190edc48ee5ac3eb765ba9d1085ee04541fce654011f3b147332",
+          "draftPixelSha256": "f73e5e4f0cc92769ddc7d46f4858e7d1eb29445821e3276d51a954421db69e66",
+          "changed": true,
+          "opaqueCellEdgePixels": 0
+        },
+        {
+          "frame": 6,
+          "canonicalPixelSha256": "f5ac6eca2c8fef7acec4b750830c48e11081f24fe345ebb4f0f046db53a9556b",
+          "draftPixelSha256": "f5ac6eca2c8fef7acec4b750830c48e11081f24fe345ebb4f0f046db53a9556b",
+          "changed": false,
+          "opaqueCellEdgePixels": 0
+        }
+      ],
+      "authoredFrame": 5,
+      "changedPixelCount": 5817,
+      "changedPixelBoundsExclusive": [
+        30,
+        6,
+        100,
+        108
+      ],
+      "unchangedOutOfScopePixels": true,
+      "endpointFrame": 6,
+      "endpointByteIdenticalToCanon": true,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "evidence": [
+        "art/drafts/keeper-full-face-standard-turn-endpoints-2026-10-12-v1/evidence/keeper_turn_left_front/canonical.gif",
+        "art/drafts/keeper-full-face-standard-turn-endpoints-2026-10-12-v1/evidence/keeper_turn_left_front/candidate.gif",
+        "art/drafts/keeper-full-face-standard-turn-endpoints-2026-10-12-v1/evidence/keeper_turn_left_front/comparison.gif",
+        "art/drafts/keeper-full-face-standard-turn-endpoints-2026-10-12-v1/evidence/keeper_turn_left_front/strip-comparison.png"
+      ]
+    }
+  ],
+  "checks": {
+    "stripSidecarAgreement": true,
+    "binaryAlpha": true,
+    "transparentCellEdges": true,
+    "unchangedOutOfScopePixels": true,
+    "endpointContinuity": "Both F6 endpoints are byte-identical to the approved neutral canon; F5 and F6 share the same canonical head placement and scale.",
+    "productionChanged": false
+  },
+  "exclusions": {
+    "keeper_count_money": "explicitly deleted amendment remains deleted and was not regenerated",
+    "withdrawnFaceCameraDrafts": "rejected provenance only; not reused",
+    "remainingInventory": "not touched pending review of these first two candidates"
+  },
+  "rollback": "Delete only art/drafts/keeper-full-face-standard-turn-endpoints-2026-10-12-v1 and public/keeper-review/full-face-standard-turn-endpoints-v1; canonical raw/runtime art and manifests are unchanged."
+}
