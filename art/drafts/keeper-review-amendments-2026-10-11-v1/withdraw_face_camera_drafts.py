@@ -39,6 +39,10 @@ REJECTION_DETAILS = {
         "sourceSha256": "a1e34e26df0a6feb22b1f08883c0c512875baf90c44b7053ecdd83c003570730",
         "rejectionReason": "The front pose loses the defined moustache and mouth and collapses them into the cheesy pixie grin Frank explicitly rejected.",
     },
+    "keeper_water_plants_front": {
+        "sourceSha256": "8ec472c601ad24c3ff5892ebc86269e5214c0ca56819247cb82e58242dd47cfc",
+        "rejectionReason": "Frank judged all eight poses unacceptable and explicitly reverted the complete amendment to the previous canonical version.",
+    },
 }
 
 

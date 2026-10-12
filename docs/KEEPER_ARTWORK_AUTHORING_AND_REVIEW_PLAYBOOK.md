@@ -39,6 +39,9 @@ The rejected `keeper_pyjamas_turn_back-v2-neutral.png` is a pinned negative
 example: its front pose erases the moustache/mouth definition and turns the
 remaining line into the cutesy curved "pixie grin" Frank rejected. Never use
 that source as a face, moustache or expression reference.
+The complete eight-pose `keeper_water_plants_front-v1-neutral.png` amendment is
+also rejected, not a source from which individual poses may be salvaged; the
+previous canonical front-watering strip remains authoritative.
 
 The canonical side-right gameplay raster is:
 

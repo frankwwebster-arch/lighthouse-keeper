@@ -53,7 +53,9 @@
     },
     {
       "animation": "keeper_water_plants_front",
-      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_water_plants_front/draft-register.json"
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_water_plants_front/draft-register.json",
+      "sourceSha256": "8ec472c601ad24c3ff5892ebc86269e5214c0ca56819247cb82e58242dd47cfc",
+      "rejectionReason": "Frank judged all eight poses unacceptable and explicitly reverted the complete amendment to the previous canonical version."
     }
   ],
   "deleted": [

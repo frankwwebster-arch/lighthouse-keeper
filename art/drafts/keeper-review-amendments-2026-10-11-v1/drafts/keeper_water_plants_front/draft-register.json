@@ -4,7 +4,7 @@
   "animation": "keeper_water_plants_front",
   "status": "withdrawn-by-user",
   "label": "11 Oct amendment draft v1",
-  "selection": "Withdrawn on 2026-10-12: revert every newly rendered face-to-camera candidate. Retained only as rejected provenance; never expose as an active review candidate.",
+  "selection": "Withdrawn on 2026-10-12: revert every newly rendered face-to-camera candidate. Frank judged all eight poses unacceptable and explicitly reverted the complete amendment to the previous canonical version. Retained only as rejected provenance; never expose as an active review candidate.",
   "canonical": {
     "strip": "art/raw/keeper-first-batch/keeper_water_plants_front_f8.png",
     "stripSha256": "6a901769a4728ed3ac5402db7f917a328ef72aec8ac4574481467f8853c5f25f",
