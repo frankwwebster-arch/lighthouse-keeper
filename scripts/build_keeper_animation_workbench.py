@@ -13,7 +13,8 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "public/sprites/manifest.json"
 V2 = ROOT / "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2"
-CORE = ROOT / "art/drafts/keeper-prime-core-transitions-2026-10-12-v1"
+CORE_V1 = ROOT / "art/drafts/keeper-prime-core-transitions-2026-10-12-v1"
+CORE = ROOT / "art/drafts/keeper-prime-core-transitions-2026-10-12-v2"
 PUBLIC = ROOT / "public/keeper-animation-workbench"
 DATA_PATH = ROOT / "data/keeper_animation_workbench.json"
 APPROVAL_WORDING = "I am very happy with your V2."
@@ -98,8 +99,8 @@ def final_turn_asset(name: str) -> dict:
     }
 
 
-def draft_asset(name: str) -> dict:
-    matches = sorted((CORE / "drafts").glob(f"{name}_f*.png"))
+def draft_asset(name: str, core: Path = CORE, version: str = "kp-v2") -> dict:
+    matches = sorted((core / "drafts").glob(f"{name}_f*.png"))
     if len(matches) != 1:
         raise RuntimeError(f"expected one Keeper Prime Draft strip for {name}, found {len(matches)}")
     source = matches[0]
@@ -110,11 +111,11 @@ def draft_asset(name: str) -> dict:
     if image.size != expected:
         raise RuntimeError(f"Keeper Prime Draft asset {name} disagrees with its sidecar")
     digest = sha256(source)
-    target = PUBLIC / "assets/draft" / f"{name}-kp-v1-{digest[:16]}.png"
+    target = PUBLIC / "assets/draft" / f"{name}-{version}-{digest[:16]}.png"
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(source, target)
     return {
-        "id": f"draft:{name}:kp-v1",
+        "id": f"draft:{name}:{version}",
         "name": name,
         "file": f"/keeper-animation-workbench/assets/draft/{target.name}",
         "sha256": digest,
@@ -195,7 +196,7 @@ def final_item(name: str, direction: str) -> dict:
 def segment(identifier: str, role: str, label: str, asset: str, frames: list[int], motion: list[float] | None = None, *, start_pose: str | None = None, end_pose: str | None = None) -> dict:
     value = {
         "id": identifier, "role": role, "label": label,
-        "assetId": f"draft:{asset}:kp-v1", "frames": frames,
+        "assetId": f"draft:{asset}:kp-v2", "frames": frames,
         "repeats": 1, "mirror": False,
     }
     if motion is not None:
@@ -212,8 +213,10 @@ def keeper_prime_drafts() -> list[dict]:
     walk_motion = [1.0] * len(walk_frames)
     stop_frames = [0, 1, 2, 3]
     stop_motion = [0.8, 0.55, 0.3, 0.0]
-    start_frames = [3, 2, 1, 0]
-    start_motion = [0.0, 0.3, 0.55, 0.8]
+    # The exact stop is held once by the preceding route state.  Acceleration
+    # begins immediately on the first distinct reversed stop frame.
+    start_frames = [2, 1, 0]
+    start_motion = [0.35, 0.65, 0.9]
     restart_walk = [4, 3, 2, 1, 0, 7, 6, 5, 4]
 
     walk = segment("walk", "walk", "Walk — continuous root motion", "keeper_prime_walk_cycle", walk_frames, walk_motion, start_pose="standing-side-right", end_pose="standing-side-right")
@@ -224,20 +227,20 @@ def keeper_prime_drafts() -> list[dict]:
 
     def item(identifier: str, title: str, description: str, asset: str, frames: list[int], route: list[dict], tags: list[str]) -> dict:
         return {
-            "id": f"{identifier}-kp-v1-draft",
+            "id": f"{identifier}-kp-v2-draft",
             "lane": "draft",
             "name": identifier,
             "title": title,
             "description": description,
-            "assetId": f"draft:{asset}:kp-v1",
+            "assetId": f"draft:{asset}:kp-v2",
             "timeline": [{"id": f"{identifier}-frame-{index + 1}", "frame": frame} for index, frame in enumerate(frames)],
             "sectionLoops": [],
             "overallLoop": False,
             "transitionPolicy": "required",
-            "transitionReason": "Keeper Prime Draft V1. Root motion continues through deceleration; shared stop/action endpoints are exact pixels.",
+            "transitionReason": "Keeper Prime Draft V2. Accepted deceleration is unchanged; acceleration begins on the first distinct moving frame; each action uses one coherent render family.",
             "transitionRoute": route,
             "sourceDraft": rel(CORE),
-            "tags": ["keeper-prime", "core-transition", "awaiting-approval", *tags],
+            "tags": ["keeper-prime", "core-transition", "v2", "awaiting-approval", *tags],
             "updatedAt": "2026-10-12T00:00:00Z",
         }
 
@@ -248,11 +251,11 @@ def keeper_prime_drafts() -> list[dict]:
 
     return [
         item("keeper_prime_walk_to_stop", "1. Walk → stop", "A moving walk decelerates into the one exact Keeper Prime side stop; there are no stationary walking frames.", "keeper_prime_walk_stop", stop_frames, [walk, stop], ["walk", "stop"]),
-        item("keeper_prime_stop_to_walk", "2. Stop → walk", "The exact stop reverses the same four transition frames, then joins a temporally reversed walk phase while root motion accelerates.", "keeper_prime_walk_stop", start_frames, [hold, start, resume], ["stop", "walk-start"]),
-        item("keeper_prime_walk_turn_front", "3. Walk → stop → full face", "Walk, decelerate to the shared stop, then turn to the byte-identical Keeper Prime front selected from V2 frame 6.", "keeper_prime_turn_front", list(range(6)), [walk, stop, turn_front], ["turn", "front", "exact-endpoint"]),
-        item("keeper_prime_walk_turn_back", "4. Walk → stop → fully away", "Walk, decelerate to the shared stop, then turn until the Keeper is completely back-facing.", "keeper_prime_turn_back", list(range(6)), [walk, stop, turn_back], ["turn", "back", "exact-endpoint"]),
-        item("keeper_prime_walk_stop_sit", "5. Walk → stop → sit", "Walk and decelerate to the exact side stop before the seated action begins.", "keeper_prime_sit_side", list(range(6)), [walk, stop, sit], ["sit", "seated"]),
-        item("keeper_prime_sit_stop_walk", "6. Sit → stop → walk", "Stand uses the exact reverse of the sit frames, lands on the shared stop, then reverses the stop transition and walks away.", "keeper_prime_stand_side", list(range(6)), [stand, hold, start, resume], ["stand", "walk-start", "exact-reverse"]),
+        item("keeper_prime_stop_to_walk", "2. Stop → walk", "One exact-stop beat is followed immediately by the first distinct reversed stop frame with root acceleration; the duplicated stationary frame is removed.", "keeper_prime_walk_stop", start_frames, [hold, start, resume], ["stop", "walk-start", "shortened-acceleration"]),
+        item("keeper_prime_walk_turn_front", "3. Walk → stop → full face", "Walk and accepted deceleration, then one coherent side-to-front redraw ending on byte-identical Keeper Prime. The rejected step 19→20 model swap is removed.", "keeper_prime_turn_front", list(range(6)), [walk, stop, turn_front], ["turn", "front", "exact-endpoint", "coherent-source"]),
+        item("keeper_prime_walk_turn_back", "4. Walk → stop → fully away", "Walk and accepted deceleration, then one coherent side-to-back redraw with a stable camera and body volume.", "keeper_prime_turn_back", list(range(6)), [walk, stop, turn_back], ["turn", "back", "exact-endpoint", "coherent-source"]),
+        item("keeper_prime_walk_stop_sit", "5. Walk → stop → sit", "Walk and accepted deceleration, then one coherent sit redraw whose early frames match Keeper Prime's scale and rendering density.", "keeper_prime_sit_side", list(range(6)), [walk, stop, sit], ["sit", "seated", "coherent-source"]),
+        item("keeper_prime_sit_stop_walk", "6. Sit → stop → walk", "Stand is the exact reverse of V2 sit. Its last frame supplies the single exact-stop beat, so acceleration begins immediately without a duplicate hold.", "keeper_prime_stand_side", list(range(6)), [stand, start, resume], ["stand", "walk-start", "exact-reverse", "shortened-acceleration"]),
     ]
 
 
@@ -271,6 +274,9 @@ def main() -> None:
         "keeper_prime_neutral_standing-back",
     )
     assets.extend(draft_asset(name) for name in draft_names)
+    # Keep V1 source assets addressable so any user-authored browser Draft
+    # copied from that review survives the repository-seed upgrade to V2.
+    assets.extend(draft_asset(name, CORE_V1, "kp-v1") for name in draft_names)
     draft_items = keeper_prime_drafts()
     catalogue = {
         "version": 1,
@@ -318,6 +324,8 @@ def main() -> None:
             "v2RegisterSha256": sha256(V2 / "batch-register.json"),
             "keeperPrimeCoreRegister": rel(CORE / "batch-register.json"),
             "keeperPrimeCoreRegisterSha256": sha256(CORE / "batch-register.json"),
+            "keeperPrimeCoreV1Register": rel(CORE_V1 / "batch-register.json"),
+            "keeperPrimeCoreV1RegisterSha256": sha256(CORE_V1 / "batch-register.json"),
             "runtimeManifest": rel(MANIFEST_PATH),
             "runtimeManifestSha256": sha256(MANIFEST_PATH),
             "productionSpritesChanged": False,

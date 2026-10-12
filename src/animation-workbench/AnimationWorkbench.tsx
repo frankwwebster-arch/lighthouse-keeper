@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import styles from './workbench.module.css'
-import { copyTimelineEntry, copyToDraft, expandTimeline, itemPlayback, loopConflicts, moveTimelineEntry, removeTimelineEntry, resolvedLoops, transitionPlayback, transitionWarnings, type PlaybackFrame, type SectionLoop, type SpriteAsset, type WorkbenchCatalogue, type WorkbenchItem } from './model'
+import { copyTimelineEntry, copyToDraft, expandTimeline, itemPlayback, loopConflicts, moveTimelineEntry, reconcileDraftLibrary, removeTimelineEntry, resolvedLoops, transitionPlayback, transitionWarnings, type PlaybackFrame, type SectionLoop, type SpriteAsset, type WorkbenchCatalogue, type WorkbenchItem } from './model'
 
 const STORAGE_KEY = 'keeper-animation-workbench:v2'
 
@@ -105,6 +105,16 @@ export default function AnimationWorkbench() {
   const importRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
+    let savedDrafts: WorkbenchItem[] = []
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY)
+      if (saved) {
+        const parsed = JSON.parse(saved) as { drafts?: WorkbenchItem[] }
+        if (Array.isArray(parsed.drafts)) savedDrafts = parsed.drafts
+      }
+    } catch {
+      setMessage('The saved Draft library could not be read; Final remains unaffected.')
+    }
     void fetch('/keeper-animation-workbench/catalog.json', { cache: 'no-store' })
       .then((response) => {
         if (!response.ok) throw new Error(`Catalogue returned ${response.status}`)
@@ -112,19 +122,10 @@ export default function AnimationWorkbench() {
       })
       .then((next) => {
         setCatalogue(next)
-        setDrafts((current) => current.length ? current : next.lanes.draft)
+        setDrafts(reconcileDraftLibrary(next.lanes.draft, savedDrafts, new Set(next.assets.map((asset) => asset.id))))
+        setStorageReady(true)
       })
       .catch((error: Error) => setLoadError(error.message))
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY)
-      if (saved) {
-        const parsed = JSON.parse(saved) as { drafts?: WorkbenchItem[] }
-        if (Array.isArray(parsed.drafts)) setDrafts(parsed.drafts.filter((item) => item.lane === 'draft'))
-      }
-    } catch {
-      setMessage('The saved Draft library could not be read; Final remains unaffected.')
-    }
-    setStorageReady(true)
   }, [])
 
   useEffect(() => {

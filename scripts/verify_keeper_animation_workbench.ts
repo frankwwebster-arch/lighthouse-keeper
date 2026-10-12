@@ -12,20 +12,21 @@ const PAGE = path.join(ROOT, 'src/app/animation-workbench/page.tsx')
 const UI = path.join(ROOT, 'src/animation-workbench/AnimationWorkbench.tsx')
 const MODEL = path.join(ROOT, 'src/animation-workbench/model.ts')
 const CSS = path.join(ROOT, 'src/animation-workbench/workbench.module.css')
+const CORE_V2_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-core-transitions-2026-10-12-v2/batch-register.json')
 const EXPECTED_FINALS = ['keeper_turn_front-v2-final', 'keeper_turn_left_front-v2-final']
 const EXPECTED_DRAFTS = [
-  'keeper_prime_walk_to_stop-kp-v1-draft',
-  'keeper_prime_stop_to_walk-kp-v1-draft',
-  'keeper_prime_walk_turn_front-kp-v1-draft',
-  'keeper_prime_walk_turn_back-kp-v1-draft',
-  'keeper_prime_walk_stop_sit-kp-v1-draft',
-  'keeper_prime_sit_stop_walk-kp-v1-draft',
+  'keeper_prime_walk_to_stop-kp-v2-draft',
+  'keeper_prime_stop_to_walk-kp-v2-draft',
+  'keeper_prime_walk_turn_front-kp-v2-draft',
+  'keeper_prime_walk_turn_back-kp-v2-draft',
+  'keeper_prime_walk_stop_sit-kp-v2-draft',
+  'keeper_prime_sit_stop_walk-kp-v2-draft',
 ]
 const APPROVAL = 'I am very happy with your V2.'
 const fail = (message: string): never => { throw new Error(`keeper animation workbench: ${message}`) }
 const sha256 = (file: string) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')
 
-for (const file of [DATA, PUBLIC, PAGE, UI, MODEL, CSS]) {
+for (const file of [DATA, PUBLIC, PAGE, UI, MODEL, CSS, CORE_V2_REGISTER]) {
   if (!fs.existsSync(file)) fail(`missing ${path.relative(ROOT, file)}`)
 }
 if (!fs.readFileSync(DATA).equals(fs.readFileSync(PUBLIC))) fail('data and public catalogues differ')
@@ -129,13 +130,16 @@ const frameBytes = (assetId: string, frame: number) => {
   }
   return bytes
 }
-const walkId = 'draft:keeper_prime_walk_cycle:kp-v1'
-const stopId = 'draft:keeper_prime_walk_stop:kp-v1'
-const frontId = 'draft:keeper_prime_turn_front:kp-v1'
-const backId = 'draft:keeper_prime_turn_back:kp-v1'
-const sitId = 'draft:keeper_prime_sit_side:kp-v1'
-const standId = 'draft:keeper_prime_stand_side:kp-v1'
-const backNeutralId = 'draft:keeper_prime_neutral_standing-back:kp-v1'
+const walkId = 'draft:keeper_prime_walk_cycle:kp-v2'
+const stopId = 'draft:keeper_prime_walk_stop:kp-v2'
+const frontId = 'draft:keeper_prime_turn_front:kp-v2'
+const backId = 'draft:keeper_prime_turn_back:kp-v2'
+const sitId = 'draft:keeper_prime_sit_side:kp-v2'
+const standId = 'draft:keeper_prime_stand_side:kp-v2'
+const backNeutralId = 'draft:keeper_prime_neutral_standing-back:kp-v2'
+for (const historicalId of [walkId, stopId, frontId, backId, sitId, standId, backNeutralId].map((id) => id.replace(':kp-v2', ':kp-v1'))) {
+  if (!assets.has(historicalId)) fail(`missing addressable historical V1 asset ${historicalId}`)
+}
 const sideState = frameBytes(stopId, 3)
 for (const [assetId, frame] of [[walkId, 0], [walkId, 4], [walkId, 8], [frontId, 0], [backId, 0], [sitId, 0], [standId, 5]] as [string, number][]) {
   if (!sideState.equals(frameBytes(assetId, frame))) fail(`${assetId} F${frame + 1} does not equal the shared Keeper Prime side stop`)
@@ -147,12 +151,24 @@ if (!frameBytes(frontId, 5).equals(primeFront.data)) fail('front turn does not e
 const walkStop = catalogue.lanes.draft.find((item: Record<string, any>) => item.id === EXPECTED_DRAFTS[0])
 const stopMotion = walkStop.transitionRoute.find((segment: Record<string, any>) => segment.id === 'stop')?.motion
 if (JSON.stringify(stopMotion) !== JSON.stringify([0.8, 0.55, 0.3, 0])) fail('walk-to-stop no longer decelerates through residual root motion')
+const stopWalk = catalogue.lanes.draft.find((item: Record<string, any>) => item.id === EXPECTED_DRAFTS[1])
+const startSegment = stopWalk.transitionRoute.find((segment: Record<string, any>) => segment.id === 'walk-start')
+if (JSON.stringify(startSegment?.frames) !== JSON.stringify([2, 1, 0]) || JSON.stringify(startSegment?.motion) !== JSON.stringify([0.35, 0.65, 0.9])) fail('stop-to-walk retains the duplicated stationary acceleration frame')
+const sitStopWalk = catalogue.lanes.draft.find((item: Record<string, any>) => item.id === EXPECTED_DRAFTS[5])
+if (sitStopWalk.transitionRoute.some((segment: Record<string, any>) => segment.id === 'stop-hold')) fail('sit-to-stop-to-walk duplicates the exact stop after stand already supplies it')
+
+const coreV2 = JSON.parse(fs.readFileSync(CORE_V2_REGISTER, 'utf8')) as Record<string, any>
+if (coreV2.batchId !== 'keeper-prime-core-transitions-2026-10-12-v2' || coreV2.productionChanged !== false) fail('V2 register identity or production guard changed')
+if (!coreV2.deterministicChecks?.walkStopOutOfScopePixelsUnchanged || !coreV2.deterministicChecks?.singleGeneratedSourcePerMovingAction) fail('V2 unchanged-scope/render-family checks are missing')
+for (const [name, seam] of Object.entries(coreV2.criticalSeamChecks ?? {}) as [string, Record<string, number>][]) {
+  if (Math.abs(seam.widthDelta) > 8 || Math.abs(seam.heightDelta) > 8 || seam.opaqueAreaRatio < 0.82 || seam.opaqueAreaRatio > 1.18 || seam.baselineDelta !== 0) fail(`${name} violates the V2 route-step continuity bounds`)
+}
 
 const ui = fs.readFileSync(UI, 'utf8')
 for (const label of ['Final', 'Draft', 'Copy to Draft', 'Copy frame', 'Remove frame', 'Move left', 'Move right', 'Repeat section', 'Transition preview', 'Required for every action', 'begins hidden behind', 'cycles set by game placement', 'Export Draft JSON', 'Import Draft JSON']) {
   if (!ui.includes(label)) fail(`UI omits ${label}`)
 }
-for (const functionName of ['copyTimelineEntry', 'removeTimelineEntry', 'moveTimelineEntry', 'expandTimeline', 'transitionPlayback', 'transitionWarnings']) {
+for (const functionName of ['copyTimelineEntry', 'removeTimelineEntry', 'moveTimelineEntry', 'expandTimeline', 'transitionPlayback', 'transitionWarnings', 'reconcileDraftLibrary']) {
   if (!fs.readFileSync(MODEL, 'utf8').includes(`function ${functionName}`)) fail(`model omits ${functionName}`)
 }
 

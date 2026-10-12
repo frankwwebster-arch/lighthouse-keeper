@@ -173,6 +173,17 @@ export function copyToDraft(item: WorkbenchItem, id: string, timestamp: string):
   }
 }
 
+export function reconcileDraftLibrary(seeded: WorkbenchItem[], saved: WorkbenchItem[], availableAssetIds: Set<string>) {
+  const seededNames = new Set(seeded.map((item) => item.name))
+  const supersededRepositorySeed = (item: WorkbenchItem) => (
+    seededNames.has(item.name) && /-kp-v\d+-draft$/.test(item.id)
+  )
+  const preserved = saved.filter((item) => (
+    item.lane === 'draft' && availableAssetIds.has(item.assetId) && !supersededRepositorySeed(item)
+  ))
+  return [...seeded, ...preserved.filter((item) => !seeded.some((seed) => seed.id === item.id))]
+}
+
 function mirroredPose(pose: string | undefined, mirror: boolean) {
   if (!pose || !mirror) return pose
   return pose.replace('side-right', 'SIDE').replace('side-left', 'side-right').replace('SIDE', 'side-left')

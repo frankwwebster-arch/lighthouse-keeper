@@ -135,13 +135,28 @@ which every other Keeper image must stem. Its durable name is **Keeper Prime**
 (`KP`, slug `keeper_prime`). The V2 approval remains historical Final evidence,
 but those complete turn strips are superseded as a route foundation.
 
-The first new reversible proposal is
-`art/drafts/keeper-prime-core-transitions-2026-10-12-v1/`. It derives a shared
-side stop, walk, moving stop/start, exact-front turn, exact-back turn and exact
-reversible sit/stand from KP. Production art and manifests remain unchanged.
-The six approval routes are walk→stop, stop→walk, walk→stop→front,
-walk→stop→back, walk→stop→sit, and sit→stop→walk. Stop/start retains residual
-root motion; the Keeper must never walk on the spot.
+The first reversible proposal at
+`art/drafts/keeper-prime-core-transitions-2026-10-12-v1/` is retained intact as
+review history. Frank accepted route 1 and particularly its small deceleration,
+but found route 2's acceleration stationary for too long; routes 3 and 4 changed
+perspective, height and width at route steps 19→20; and routes 5 and 6 exposed
+an apparent-pixel-density mismatch around Keeper Prime.
+
+The current unapproved replacement is
+`art/drafts/keeper-prime-core-transitions-2026-10-12-v2/`. It preserves V1 walk
+and stop strips byte-for-byte, removes the duplicated exact-stop frame from the
+acceleration sequence, and rebuilds front turn, back turn and sit from one
+coherent six-pose generated source each. Stand remains the exact reverse of
+sit. The six review routes and exact KP endpoints are unchanged. Numeric seam
+checks now cover width, height, centre, baseline and opaque area, including the
+three specifically rejected F2→F3 joins. Production art and manifests remain
+unchanged; V2 requires explicit visual approval.
+
+The 12 October V2 documentation audit reconciled this handoff, the authoring
+playbook, the workbench guide and `README.md` with the generated catalogue,
+browser Draft migration, deterministic checks and unchanged production state.
+Setup, verification, deployment boundary, rollback path and next approval gate
+are current.
 
 ## Neutral endpoint contract checkpoint — 10 October 2026
 

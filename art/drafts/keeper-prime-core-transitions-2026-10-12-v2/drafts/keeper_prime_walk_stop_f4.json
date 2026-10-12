@@ -1,0 +1,20 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 4,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "startPose": "walking-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "draft-bridge",
+  "identity": "keeper_prime",
+  "reverseFor": "keeper_prime_walk_start"
+}

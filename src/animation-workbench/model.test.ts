@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { copyTimelineEntry, copyToDraft, expandTimeline, loopConflicts, moveTimelineEntry, removeTimelineEntry, transitionPlayback, transitionWarnings, type SpriteAsset, type WorkbenchItem } from './model'
+import { copyTimelineEntry, copyToDraft, expandTimeline, loopConflicts, moveTimelineEntry, reconcileDraftLibrary, removeTimelineEntry, transitionPlayback, transitionWarnings, type SpriteAsset, type WorkbenchItem } from './model'
 
 const item: WorkbenchItem = {
   id: 'final', lane: 'final', name: 'turn', title: 'Turn', description: '', assetId: 'turn',
@@ -47,6 +47,17 @@ describe('animation workbench timeline', () => {
     expect(draft.sourceFinalId).toBe('final')
     expect(draft.approval).toBeUndefined()
     expect(draft.timeline).not.toBe(item.timeline)
+  })
+
+  it('upgrades repository-seeded Drafts without losing valid user working copies', () => {
+    const seeded = { ...item, id: 'turn-kp-v2-draft', lane: 'draft' as const, assetId: 'turn-v2' }
+    const oldSeed = { ...item, id: 'turn-kp-v1-draft', lane: 'draft' as const, assetId: 'turn-v1' }
+    const workingCopy = { ...item, id: 'turn-draft-123', lane: 'draft' as const, assetId: 'turn-v1', tags: ['working-copy'] }
+    const missing = { ...workingCopy, id: 'missing-draft', assetId: 'missing' }
+    expect(reconcileDraftLibrary([seeded], [oldSeed, workingCopy, missing], new Set(['turn-v1', 'turn-v2'])).map((draft) => draft.id)).toEqual([
+      'turn-kp-v2-draft',
+      'turn-draft-123',
+    ])
   })
 
   it('compiles repeated route segments and checks pose seams', () => {

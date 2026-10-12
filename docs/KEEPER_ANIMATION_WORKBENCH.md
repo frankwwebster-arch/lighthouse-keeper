@@ -38,10 +38,19 @@ The exact V2 right-turn frame 6—byte-identical to
 `keeper_neutral_standing-front_f1.png`—is now named **Keeper Prime (KP)** and is
 the binding identity for every new direction, pose, outfit and expression.
 
-The first repository Draft set is
-`art/drafts/keeper-prime-core-transitions-2026-10-12-v1/`. It contains a new
-KP-derived walk, moving stop/start, front turn, back turn and reversible
-sit/stand. No raw/runtime art or manifest is changed.
+The first repository Draft set,
+`art/drafts/keeper-prime-core-transitions-2026-10-12-v1/`, remains immutable
+review history. Frank accepted its walk→stop route and particularly the small
+deceleration, but found the acceleration held the stationary endpoint too long;
+the front/back turns changed perspective and body volume at route steps 19→20;
+and sit/stand exposed a different apparent pixel density around Keeper Prime.
+
+The current proposal is
+`art/drafts/keeper-prime-core-transitions-2026-10-12-v2/`. It copies the V1 walk
+and stop strips byte-for-byte, begins acceleration on the first distinct reverse
+stop frame, and rebuilds the front turn, back turn and sit from one coherent
+six-pose source each. Stand is still the exact reverse of sit. No raw/runtime
+art or manifest is changed.
 
 ## Draft and Final architecture
 
@@ -55,9 +64,12 @@ offers no Final mutation controls. **Copy to Draft** clones the recipe, removes
 approval status and assigns new timeline IDs, while retaining provenance back
 to the Final record.
 
-The six core repository proposals load into Draft on first use. Local edits are
-saved under `keeper-animation-workbench:v2` and can be exported/imported as
-JSON. Editing changes timeline references only; the versioned Draft PNGs remain
+The six current core repository proposals are reconciled into Draft on load.
+Superseded repository-seeded V1 route records are replaced by V2, while valid
+user-created working copies are retained; both V1 and V2 source assets remain
+addressable so an older working copy can still render. Local edits are saved
+under `keeper-animation-workbench:v2` and can be exported/imported as JSON.
+Editing changes timeline references only; the versioned Draft PNGs remain
 unchanged.
 
 Draft controls currently support:
@@ -96,7 +108,7 @@ spawn him visibly and then start the cycle. The ingress preview simulates that
 door-side emergence. Once the Keeper reaches the stop point, stop, turn if
 needed and action use their fixed authored frames.
 
-Draft V1 exposes six running routes in this exact order:
+Draft V2 exposes six running routes in this exact order:
 
 1. walk → stop;
 2. stop → walk;
@@ -105,10 +117,21 @@ Draft V1 exposes six running routes in this exact order:
 5. walk → stop → sit;
 6. exact reversed sit → stop → exact reversed walk-start → walk.
 
-All routes share the same side-stop pixels. The front route ends on the exact
+All routes share the same side-stop pixels. Route 1's accepted stop and root
+motion are unchanged from V1. Route 2 holds the exact stop once, then uses
+reverse stop frames F3→F1 with root motion `[0.35, 0.65, 0.9]`; route 6 does
+not add another hold after stand has already supplied the exact-stop frame.
+The front route ends on the exact
 Keeper Prime bytes; the back route ends on its registered Draft back neutral;
 stand is the exact reverse of sit. Per-frame root motion continues through the
 stop/start frames, eliminating the earlier walking-on-the-spot preview.
+
+The deterministic V2 seam evidence records width, height, centre, baseline and
+opaque-area change for every adjacent pair. At the specifically rejected
+F2→F3 joins, front changes by −2 px width/+2 px height, back by 0/0, and sit by
++5/−7 while lowering naturally; all retain the same baseline and opaque-area
+ratios of 0.97–0.99. Each moving action records one generated source and one
+uniform normalization transform, preventing the previous mixed-family splice.
 
 Future action entries must include this ingress. For example, a front-facing
 snooker item can use:
@@ -132,16 +155,20 @@ through its authored stand-up, idle, turn and departure frames.
   compiler;
 - `src/animation-workbench/AnimationWorkbench.tsx` — interactive review UI;
 - `src/app/animation-workbench/page.tsx` — separate Next.js route;
+- `scripts/build_keeper_prime_core_transitions_v2.py` — deterministic V2
+  source normalization, endpoint replacement, V1 preservation and comparison
+  evidence builder;
 - `scripts/build_keeper_animation_workbench.py` — deterministic initial
   catalogue/asset builder;
 - `scripts/verify_keeper_animation_workbench.ts` — immutable asset, geometry,
-gutter, approval and ingress-contract verifier.
+  gutter, approval and ingress-contract verifier.
 
 ## Rebuild and verification
 
 The builder uses Pillow and should be run with the bundled workspace Python:
 
 ```sh
+/Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_core_transitions_v2.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_animation_workbench.py
 npm run verify:keeper-animation-workbench
 npm test
@@ -152,7 +179,9 @@ npm run build
 The verifier checks byte-identical catalogues; content hashes; strip/sidecar
 geometry; binary alpha; transparent cell gutters; historical Final approval
 scope; the six Draft routes; residual stop root motion; exact shared side/front/
-back endpoints; and exact sit/stand reversal.
+back endpoints; exact sit/stand reversal; unchanged V1 walk/stop pixels;
+single-source moving actions; the shortened acceleration recipe; and numeric
+continuity bounds at the three rejected F2→F3 seams.
 
 ## Extension points for Claude's review
 

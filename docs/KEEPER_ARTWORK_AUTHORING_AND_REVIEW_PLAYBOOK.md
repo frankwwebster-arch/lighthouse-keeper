@@ -57,9 +57,14 @@ approved both V2 turns for the Animation Workbench Final lane on 12 October;
 this is not production promotion. Running-route review later rejected their
 joins as a foundation for further redrafting; retain them only as immutable
 historical Final evidence. Their exact right-turn F6 became **Keeper Prime
-(KP)**. The first KP transition Draft is
-`art/drafts/keeper-prime-core-transitions-2026-10-12-v1/`, containing six
-complete routes around one exact side stop. The full read-only 62-asset scope is recorded in
+(KP)**. The first KP transition Draft at
+`art/drafts/keeper-prime-core-transitions-2026-10-12-v1/` remains rejected
+review history except for its accepted walk→stop deceleration. The current V2
+proposal is `art/drafts/keeper-prime-core-transitions-2026-10-12-v2/`: it
+preserves those walk/stop bytes, removes the duplicated stationary acceleration
+frame, and derives each turn and sit from one coherent six-pose source to remove
+the route-step 19→20 perspective, scale and apparent-pixel-density swaps. It is
+still an unapproved Draft. The full read-only 62-asset scope is recorded in
 `docs/KEEPER_FULL_FACE_INVENTORY.md` and
 `data/keeper_full_face_inventory.json`.
 
