@@ -1,0 +1,57 @@
+{
+  "w": 48,
+  "h": 56,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    24,
+    56
+  ],
+  "z": 50,
+  "loop": true,
+  "movementVector": [
+    1,
+    0
+  ],
+  "startPose": "scuba-standing-side-right",
+  "endPose": "scuba-standing-side-right",
+  "outfit": "scuba",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "scuba-jetty-walk",
+  "mirrorsFor": "left",
+  "assetRole": "clip",
+  "sfxCues": [
+    {
+      "frame": 0,
+      "cue": "footstep"
+    },
+    {
+      "frame": 4,
+      "cue": "footstep"
+    }
+  ],
+  "reviewScale": [
+    100,
+    75
+  ],
+  "reviewOffset": [
+    -3,
+    0
+  ],
+  "reviewScaleRounds": {
+    "2026-10-11": [
+      100,
+      75
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-11": [
+      -3,
+      0
+    ]
+  },
+  "draftId": "keeper-review-amendments-2026-10-11-v1",
+  "canonicalUnchanged": true
+}

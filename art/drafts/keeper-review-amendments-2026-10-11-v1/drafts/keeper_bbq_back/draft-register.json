@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_bbq_back",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_bbq_back",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_bbq_back_f8.png",
+    "stripSha256": "88d6e399d1fd41cc43f51e0ed0913eaac1ffc027fe448d32a46d6f16184f136b",
+    "runtime": "public/sprites/keeper_bbq_back.png",
+    "runtimeSha256": "a707c3ef15a4c9357a01ebedd528f269583e23f964f955f4428b57c5d952d367",
+    "sidecar": "art/raw/keeper-first-batch/keeper_bbq_back_f8.json",
+    "sidecarSha256": "cbb40ff38fcea535b1ab160422dd202ea9f8f25a77e71b1b9abb9f1c96c08d6f"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_bbq_back-v1.png",
+    "sourceSha256": "c407fe8fc654c0d5951bf451862a75969433ca4bae15814374e9a65902f233ed",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_bbq_back/keeper_bbq_back_f8.png",
+    "stripSha256": "01690f35a574399d3e74de08c9d0643cc5d2de13946e30c0df36fbef2079d0a9",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_bbq_back/keeper_bbq_back_f8.json",
+    "sidecarSha256": "e408fa07205297d6262308062f348be93fb719005891b5957e91582d29dd2ee6",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          38,
+          52,
+          98,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          34,
+          51,
+          103,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          38,
+          33,
+          97,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          36,
+          22,
+          101,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          38,
+          8,
+          98,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          34,
+          36,
+          101,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          38,
+          43,
+          97,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          38,
+          52,
+          98,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_bbq_back/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_bbq_back/preview.gif"
+    ],
+    "fixedSourceScale": 0.31901840490797545,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; smoke rises behind the body with one rapid flame flash. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

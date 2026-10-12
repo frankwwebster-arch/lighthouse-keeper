@@ -1,0 +1,55 @@
+{
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "movementVector": [
+    0,
+    1
+  ],
+  "outfit": "tarzan",
+  "facing": "front",
+  "interaction": "tarzan-walk",
+  "reviewScale": [
+    79.5,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "sfxCues": [
+    {
+      "frame": 0,
+      "cue": "footstep"
+    },
+    {
+      "frame": 4,
+      "cue": "footstep"
+    }
+  ],
+  "reviewScaleRounds": {
+    "2026-10-11": [
+      79.5,
+      100
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-11": [
+      0,
+      0
+    ]
+  },
+  "draftId": "keeper-review-amendments-2026-10-11-v1",
+  "canonicalUnchanged": true
+}

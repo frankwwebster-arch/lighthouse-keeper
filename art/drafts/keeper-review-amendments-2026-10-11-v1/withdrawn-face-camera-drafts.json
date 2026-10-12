@@ -1,0 +1,61 @@
+{
+  "decision": "withdraw-all-generated-face-camera-candidates",
+  "date": "2026-10-12",
+  "reason": "Frank judged the face-to-camera amendments completely wrong.",
+  "canonicalAssetsChanged": false,
+  "activeHistoricalDraftsChanged": false,
+  "withdrawn": [
+    {
+      "animation": "keeper_count_money",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_count_money/draft-register.json"
+    },
+    {
+      "animation": "keeper_lift_button_front",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_lift_button_front/draft-register.json"
+    },
+    {
+      "animation": "keeper_mechanic_walk_front",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_mechanic_walk_front/draft-register.json"
+    },
+    {
+      "animation": "keeper_party_dance",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_dance/draft-register.json"
+    },
+    {
+      "animation": "keeper_party_idle",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_idle/draft-register.json"
+    },
+    {
+      "animation": "keeper_pyjamas_turn_back",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_pyjamas_turn_back/draft-register.json"
+    },
+    {
+      "animation": "keeper_scuba_swim_down",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_scuba_swim_down/draft-register.json"
+    },
+    {
+      "animation": "keeper_souwester_walk_front",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_souwester_walk_front/draft-register.json"
+    },
+    {
+      "animation": "keeper_spaceman_walk_front",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_spaceman_walk_front/draft-register.json"
+    },
+    {
+      "animation": "keeper_swim_costume_down",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_swim_costume_down/draft-register.json"
+    },
+    {
+      "animation": "keeper_tarzan_walk_front",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_tarzan_walk_front/draft-register.json"
+    },
+    {
+      "animation": "keeper_trampoline_front",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_trampoline_front/draft-register.json"
+    },
+    {
+      "animation": "keeper_water_plants_front",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_water_plants_front/draft-register.json"
+    }
+  ]
+}

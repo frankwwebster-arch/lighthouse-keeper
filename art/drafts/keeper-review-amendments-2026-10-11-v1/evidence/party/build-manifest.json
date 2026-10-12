@@ -1,0 +1,224 @@
+{
+  "family": "party",
+  "fixedSourceScales": {
+    "keeper_party_walk-v3.png": 0.47058823529411764,
+    "keeper_party_turn_back-v2.png": 0.3687374749498998,
+    "keeper_party_hat_put_on_back-v2.png": 0.4634760705289673,
+    "keeper_party_eat_cake-v4.png": 0.48548812664907653
+  },
+  "sourceAlphaThreshold": 32,
+  "finalAlphaThreshold": 128,
+  "animations": {
+    "keeper_party_walk": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_walk/draft-register.json",
+      "sourceCellBboxes": [
+        [
+          42,
+          162,
+          241,
+          553
+        ],
+        [
+          50,
+          162,
+          220,
+          553
+        ],
+        [
+          65,
+          162,
+          211,
+          553
+        ],
+        [
+          46,
+          162,
+          202,
+          553
+        ],
+        [
+          35,
+          164,
+          243,
+          553
+        ],
+        [
+          49,
+          162,
+          210,
+          553
+        ],
+        [
+          59,
+          162,
+          204,
+          553
+        ],
+        [
+          44,
+          162,
+          200,
+          553
+        ]
+      ],
+      "draftStripSha256": "11abd0645e9ce7040cedc0d52b4e7f75727ca903f679c7b62bbfda0b8b279b06",
+      "canonicalStripSha256": "5013886b6220478da281a538d8aa23d04a935af8e2d8158f87bcbeb4c49b75cd"
+    },
+    "keeper_party_turn_back": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_turn_back/draft-register.json",
+      "sourceCellBboxes": [
+        [
+          92,
+          144,
+          289,
+          643
+        ],
+        [
+          79,
+          144,
+          286,
+          643
+        ],
+        [
+          66,
+          144,
+          279,
+          643
+        ],
+        [
+          63,
+          144,
+          284,
+          643
+        ],
+        [
+          55,
+          144,
+          298,
+          643
+        ],
+        [
+          53,
+          144,
+          296,
+          643
+        ]
+      ],
+      "draftStripSha256": "6efade1397c68154aed48d2df97c890abbb0bbf78f9d78561ec53e875adab483",
+      "canonicalStripSha256": "703b1852a6a138c81f3f89c194f4f9f5effa941d38590a5500a652cc77069a60"
+    },
+    "keeper_party_hat_put_on_back": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_hat_put_on_back/draft-register.json",
+      "sourceCellBboxes": [
+        [
+          49,
+          262,
+          239,
+          584
+        ],
+        [
+          47,
+          262,
+          233,
+          584
+        ],
+        [
+          44,
+          187,
+          239,
+          584
+        ],
+        [
+          44,
+          174,
+          239,
+          584
+        ],
+        [
+          34,
+          187,
+          244,
+          584
+        ],
+        [
+          25,
+          195,
+          249,
+          584
+        ],
+        [
+          35,
+          188,
+          229,
+          584
+        ],
+        [
+          31,
+          187,
+          223,
+          584
+        ]
+      ],
+      "draftStripSha256": "319b7ea9e97fed22dd0c4cf35b501602b0ea4d054e21593818b3f40ca26d7adf",
+      "canonicalStripSha256": "ca3877f5de83830f0e3609b7857f117093908396e5d2ed6ac640357c0823a935"
+    },
+    "keeper_party_eat_cake": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_eat_cake/draft-register.json",
+      "sourceCellBboxes": [
+        [
+          41,
+          171,
+          263,
+          551
+        ],
+        [
+          37,
+          172,
+          259,
+          551
+        ],
+        [
+          35,
+          172,
+          258,
+          551
+        ],
+        [
+          34,
+          172,
+          248,
+          551
+        ],
+        [
+          26,
+          172,
+          245,
+          551
+        ],
+        [
+          20,
+          172,
+          243,
+          551
+        ],
+        [
+          18,
+          171,
+          243,
+          551
+        ],
+        [
+          18,
+          171,
+          243,
+          551
+        ]
+      ],
+      "draftStripSha256": "de6e2f27e207f55afd76898baabaf4801145dfb272276d80dcc4534fba81af9d",
+      "canonicalStripSha256": "9b3f33dad99c6909a4d483ba0198c9d7d72aa9e8d4fa8017715e9bb546087979"
+    }
+  },
+  "seamAssertions": [
+    "party_hat_put_on_back frames 7-8 == party_turn_back frame 6"
+  ]
+}

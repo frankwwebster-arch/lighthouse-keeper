@@ -1,0 +1,93 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_nap_seated",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_nap_seated",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name timing/canvas amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_nap_seated_f8.png",
+    "stripSha256": "47cbdf4417f7b4b79ded3fa73a4133ed02238eb6dc1e793e008113288588f4e6",
+    "runtime": "public/sprites/keeper_nap_seated.png",
+    "runtimeSha256": "47cbdf4417f7b4b79ded3fa73a4133ed02238eb6dc1e793e008113288588f4e6",
+    "sidecar": "art/raw/keeper-first-batch/keeper_nap_seated_f8.json",
+    "sidecarSha256": "52a5f1d712c026f192c010290e0e1b9afafb234ac03de4828f6b97310e256947"
+  },
+  "draft": {
+    "source": "art/raw/keeper-first-batch/keeper_nap_seated_f8.png",
+    "sourceSha256": "47cbdf4417f7b4b79ded3fa73a4133ed02238eb6dc1e793e008113288588f4e6",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_nap_seated/keeper_nap_seated_f6.png",
+    "stripSha256": "e4de34fc77995919a9e6c623122bb9a5de6c47324c64b31994a24911677d4d8a",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_nap_seated/keeper_nap_seated_f6.json",
+    "sidecarSha256": "af14d252341abcce71e58ed403403b7e0ba675e6183577228d9defb2fca81559",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          26,
+          21,
+          101,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          27,
+          21,
+          100,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          27,
+          21,
+          101,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          27,
+          21,
+          101,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          27,
+          21,
+          101,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          27,
+          21,
+          101,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/timing/keeper_nap_seated/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/timing/keeper_nap_seated/preview.gif"
+    ],
+    "normalization": "exact canonical frame copies only; reviewed frame order/holds and optional transparent canvas extension; no repainting"
+  },
+  "qualification": "neutral frames 1 and 8 removed; only head-back open-mouth nap remains",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

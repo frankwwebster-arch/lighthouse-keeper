@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_water_plants_back",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_water_plants_back",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_water_plants_back_f8.png",
+    "stripSha256": "797f222c37ddd0db2635c8cb6029b645b93362db2692af0f764b8faa5263a454",
+    "runtime": "public/sprites/keeper_water_plants_back.png",
+    "runtimeSha256": "5881d22949fd7037c6fcea5b29088c868a88765cea688eca6b76a720a5d90a45",
+    "sidecar": "art/raw/keeper-first-batch/keeper_water_plants_back_f8.json",
+    "sidecarSha256": "b1113c3f5c4324b29143df293c7cff64563f7188d84b6f9e3fd9e434c94fb39d"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_water_plants_back-v1.png",
+    "sourceSha256": "4be219765beefc65634e9f560e1cebd6d9f0530312b38adf1cbbb106d1392368",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_water_plants_back/keeper_water_plants_back_f8.png",
+    "stripSha256": "1a4c97ff72964c24a62fb2d12628802e0a23bfc34ba31b9c3ef51d3e99f4ccf4",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_water_plants_back/keeper_water_plants_back_f8.json",
+    "sidecarSha256": "de0b31d226d8712b9760219562ecbb88ec48b1fd383122e21a8bf1c0f32bb76f",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          50,
+          5,
+          133,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          42,
+          5,
+          141,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          37,
+          5,
+          149,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          36,
+          4,
+          148,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          36,
+          2,
+          149,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          41,
+          4,
+          143,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          44,
+          3,
+          141,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          50,
+          5,
+          133,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_water_plants_back/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_water_plants_back/preview.gif"
+    ],
+    "fixedSourceScale": 0.5148514851485149,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; canonical rear stripe with stable watering prop. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

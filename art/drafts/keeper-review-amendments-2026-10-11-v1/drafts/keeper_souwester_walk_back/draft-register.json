@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_souwester_walk_back",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_souwester_walk_back",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_souwester_walk_back_f8.png",
+    "stripSha256": "bd7eceb4de0465ce9b29344c17f5d56ffab13bfcdcf7a4a11592c38c6feb13aa",
+    "runtime": "public/sprites/keeper_souwester_walk_back.png",
+    "runtimeSha256": "b58504630dc6cba33df7f73e679ebae5cb1b0b0486187dec66d92df79e26405c",
+    "sidecar": "art/raw/keeper-first-batch/keeper_souwester_walk_back_f8.json",
+    "sidecarSha256": "fdb4e1af246f2f5ee4731cf1ccdc204b6fd22fc018b7c84b0dc99d06143e79e9"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_souwester_walk_back-v1.png",
+    "sourceSha256": "568d48ee9ad8f0d70d5a8d1efad5954301b18a933a7135bfdcb304d02bb74d49",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_souwester_walk_back/keeper_souwester_walk_back_f8.png",
+    "stripSha256": "44995bd6cd07767a962a0a88e22cf77f57f649a1886f03c03df126bfa3f88151",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_souwester_walk_back/keeper_souwester_walk_back_f8.json",
+    "sidecarSha256": "479a18056b24da38e6988f1bb83b032a2a6288b5769dfe261bd80df6a45a9d03",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          12,
+          3,
+          117,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          10,
+          3,
+          119,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          13,
+          3,
+          114,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          10,
+          3,
+          118,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          10,
+          3,
+          117,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          13,
+          3,
+          115,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          10,
+          3,
+          118,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          12,
+          3,
+          117,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_souwester_walk_back/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_souwester_walk_back/preview.gif"
+    ],
+    "fixedSourceScale": 0.5481049562682215,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; alternating rear gait. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

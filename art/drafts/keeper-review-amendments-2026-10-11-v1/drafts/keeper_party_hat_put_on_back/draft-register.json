@@ -1,0 +1,115 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_party_hat_put_on_back",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_party_hat_put_on_back",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Generated only for Frank's exact-name 11 October amendment handoff; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_party_hat_put_on_back_f8.png",
+    "stripSha256": "ca3877f5de83830f0e3609b7857f117093908396e5d2ed6ac640357c0823a935",
+    "runtime": "public/sprites/keeper_party_hat_put_on_back.png",
+    "runtimeSha256": "c4fcf7b8b155579bd0bd786ea9a3506486d5bc4547e877b9c2501970914fc529",
+    "sidecar": "art/raw/keeper-first-batch/keeper_party_hat_put_on_back_f8.json",
+    "sidecarSha256": "0e6cd596ed4d7fb25e3a7f6b5e882ed59bdf8cfee9ebc8eefb170f6f1f68570c"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/party/keeper_party_hat_put_on_back-v2.png",
+    "sourceSha256": "1d2d646594a66c7de795722e1d1c3c47f1255683956a1fc6f8aea01e24176b45",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_hat_put_on_back/keeper_party_hat_put_on_back_f8.png",
+    "stripSha256": "319b7ea9e97fed22dd0c4cf35b501602b0ea4d054e21593818b3f40ca26d7adf",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_hat_put_on_back/keeper_party_hat_put_on_back_f8.json",
+    "sidecarSha256": "245e7e40951fdc367fbdde082ca2dbf53bc9087ee0fb404288439de2d30a8799",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          20,
+          73,
+          108,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          21,
+          73,
+          107,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          19,
+          38,
+          108,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          19,
+          32,
+          109,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          16,
+          38,
+          113,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          12,
+          42,
+          116,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          19,
+          38,
+          109,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          19,
+          38,
+          109,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/party/keeper_party_hat_put_on_back/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/party/keeper_party_hat_put_on_back/preview.gif"
+    ],
+    "fixedSourceScale": 0.4634760705289673,
+    "normalization": "equal source cells, alpha crop >=32, one fixed scale per immutable generated source calibrated to a 184px upright party silhouette, final binary alpha >=128, anchor-aligned on a shared 56-logical-pixel canvas",
+    "seam": "rear-no-hat-to-rear-party"
+  },
+  "qualification": "Every pose is a coherent full-character render. No head, beard, hat, or body part was transplanted from another frame.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

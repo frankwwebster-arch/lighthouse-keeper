@@ -1,0 +1,92 @@
+{
+  "family": "timing-and-canvas",
+  "animations": {
+    "keeper_eat_seated": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_eat_seated/draft-register.json",
+      "canonicalStripSha256": "8ffa31c2d9ff2f8be085a86c46365a016aa4cc6102d793db4b2ac2efe20167a1",
+      "draftStripSha256": "a4cd61ecee761c0bd2ed0c65922d6786bfc5fafe6d06029a80ffbad9630861e8",
+      "frameOrder": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2
+      ]
+    },
+    "keeper_nap_seated": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_nap_seated/draft-register.json",
+      "canonicalStripSha256": "47cbdf4417f7b4b79ded3fa73a4133ed02238eb6dc1e793e008113288588f4e6",
+      "draftStripSha256": "e4de34fc77995919a9e6c623122bb9a5de6c47324c64b31994a24911677d4d8a",
+      "frameOrder": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "keeper_fish_feed_up": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_fish_feed_up/draft-register.json",
+      "canonicalStripSha256": "7a78466f9ff97bce0addebec9d4177e11c242bf96d42fc621614a1ac273f850e",
+      "draftStripSha256": "1220fd4087b44f582db8115fc3143e0a60f9abbcca977cb91636ecafbb268407",
+      "frameOrder": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "keeper_shower_enter_bathrobe": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_shower_enter_bathrobe/draft-register.json",
+      "canonicalStripSha256": "ff0adad9d1be172630c395ffdbf3d2f0b6822167074b2190b13c339d5aba818e",
+      "draftStripSha256": "844f1baaa33c42df356261ceb87e1c68bbfb8039f621c0fae4d9796049088579",
+      "frameOrder": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "keeper_shower_door_open_bathrobe": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_shower_door_open_bathrobe/draft-register.json",
+      "canonicalStripSha256": "04c0a3d76c4b670c107829cc2abb1786cb3c7cacf5a3df22d068e4c02e08a4ea",
+      "draftStripSha256": "5c24ecee01993918d8c1e499c19e4374af4139483ab9dccd1c461b03fe808dfc",
+      "frameOrder": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  }
+}

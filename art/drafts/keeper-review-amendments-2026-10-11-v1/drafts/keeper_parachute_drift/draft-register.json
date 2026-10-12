@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_parachute_drift",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_parachute_drift",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_parachute_drift_f8.png",
+    "stripSha256": "8a3ec25af6d14151b25c6b07e601236c551152ca14e5474bcda79090eb5f29ef",
+    "runtime": "public/sprites/keeper_parachute_drift.png",
+    "runtimeSha256": "3f674ef93b3c3ecd4da098510cc8b45c207c5aa44e7cc7c110fd92f017f4c8b8",
+    "sidecar": "art/raw/keeper-first-batch/keeper_parachute_drift_f8.json",
+    "sidecarSha256": "16d7244dc3ee84db5ed8ceb469c87ef08328f1ba4744d5b8d7255b9cbaf6361b"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_parachute_drift-v1-neutral.png",
+    "sourceSha256": "6e4c401cc3ad04d2a1bc260d90b79cd2fb9412260de717e049f6b7f679ec13fe",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_parachute_drift/keeper_parachute_drift_f8.png",
+    "stripSha256": "4a5ed7fd888d57df49773adea44e276094df53ca47f3c12863e6b1932c22b545",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_parachute_drift/keeper_parachute_drift_f8.json",
+    "sidecarSha256": "e388638394dbb8be26d8c74b273ffe8c42a6662fb86396017fcd811d4e32deeb",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          95,
+          5,
+          290,
+          409
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          95,
+          4,
+          290,
+          409
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          96,
+          9,
+          287,
+          409
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          95,
+          11,
+          288,
+          409
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          95,
+          11,
+          289,
+          410
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          95,
+          9,
+          288,
+          410
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          95,
+          7,
+          289,
+          410
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          95,
+          5,
+          290,
+          409
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_parachute_drift/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_parachute_drift/preview.gif"
+    ],
+    "fixedSourceScale": 0.9400921658986175,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; fixed character/canopy scale and neutral face. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

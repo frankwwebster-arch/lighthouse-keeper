@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_meal_from_oven_back",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_meal_from_oven_back",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_meal_from_oven_back_f8.png",
+    "stripSha256": "cc0cb36b897a646c981e44d9a8a69a279ee22673828fff05ebe718ce68d84579",
+    "runtime": "public/sprites/keeper_meal_from_oven_back.png",
+    "runtimeSha256": "12d94ae6134fd6c0d0679514580f6b573c79925b5ad3abb6e47ef91f9e915282",
+    "sidecar": "art/raw/keeper-first-batch/keeper_meal_from_oven_back_f8.json",
+    "sidecarSha256": "282d1533731ad7542b4d61840e8e0630f04c22d9ec4f4de873bfb7be9309296d"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_meal_from_oven_back-v1.png",
+    "sourceSha256": "dd7dc08731380fead25db9611f8ab1cdbaf1f6b0a628ffa7fec36a5e1f4f1c62",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_meal_from_oven_back/keeper_meal_from_oven_back_f8.png",
+    "stripSha256": "acdcdc7f2aeab8701448efec30cf303d8df2b656588ee42162bfe383148291f0",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_meal_from_oven_back/keeper_meal_from_oven_back_f8.json",
+    "sidecarSha256": "aa63f60eb10fe3bc2a389cac9089c11d1345702cf837b884d13e9371f8be8669",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          62,
+          10,
+          145,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          61,
+          26,
+          147,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          61,
+          45,
+          147,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          60,
+          49,
+          148,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          75,
+          30,
+          162,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          75,
+          12,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          74,
+          2,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          60,
+          2,
+          148,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_meal_from_oven_back/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_meal_from_oven_back/preview.gif"
+    ],
+    "fixedSourceScale": 0.4250681198910082,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; canonical upward-ended rear stripe. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

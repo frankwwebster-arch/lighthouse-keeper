@@ -1,0 +1,43 @@
+{
+  "w": 64,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    32,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "outfit": "old-school-workout-kit",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "press-ups",
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ],
+  "assetRole": "clip",
+  "startPose": "prone-side-right",
+  "endPose": "prone-side-right",
+  "reviewScaleRounds": {
+    "2026-10-11": [
+      100,
+      100
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-11": [
+      0,
+      0
+    ]
+  },
+  "draftId": "keeper-review-amendments-2026-10-11-v1",
+  "canonicalUnchanged": true
+}

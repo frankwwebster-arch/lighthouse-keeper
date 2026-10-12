@@ -1,0 +1,133 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_shower_door_open_bathrobe",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_shower_door_open_bathrobe",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name timing/canvas amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_shower_door_open_bathrobe_f10.png",
+    "stripSha256": "04c0a3d76c4b670c107829cc2abb1786cb3c7cacf5a3df22d068e4c02e08a4ea",
+    "runtime": "public/sprites/keeper_shower_door_open_bathrobe.png",
+    "runtimeSha256": "3f53921590d7a2b621e87f4ca994e6ad23dca3af4456c30f74fa0cde1080b50e",
+    "sidecar": "art/raw/keeper-first-batch/keeper_shower_door_open_bathrobe_f10.json",
+    "sidecarSha256": "090e20567a6483c267ff32f476832a7588dc63ea5f6bdcfde8f1a99c83432f0b"
+  },
+  "draft": {
+    "source": "art/raw/keeper-first-batch/keeper_shower_door_open_bathrobe_f10.png",
+    "sourceSha256": "04c0a3d76c4b670c107829cc2abb1786cb3c7cacf5a3df22d068e4c02e08a4ea",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_shower_door_open_bathrobe/keeper_shower_door_open_bathrobe_f10.png",
+    "stripSha256": "5c24ecee01993918d8c1e499c19e4374af4139483ab9dccd1c461b03fe808dfc",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_shower_door_open_bathrobe/keeper_shower_door_open_bathrobe_f10.json",
+    "sidecarSha256": "286029530a775678d8291edee9e81b39a2c3aff568143ecb31a66f576c68b6a8",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          46,
+          20,
+          130,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          46,
+          20,
+          129,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          51,
+          16,
+          125,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          38,
+          16,
+          136,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          40,
+          16,
+          135,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          48,
+          16,
+          134,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          38,
+          16,
+          120,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          37,
+          17,
+          113,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 9,
+        "alphaBox": [
+          37,
+          16,
+          130,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 10,
+        "alphaBox": [
+          41,
+          16,
+          135,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/timing/keeper_shower_door_open_bathrobe/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/timing/keeper_shower_door_open_bathrobe/preview.gif"
+    ],
+    "normalization": "exact canonical frame copies only; reviewed frame order/holds and optional transparent canvas extension; no repainting"
+  },
+  "qualification": "two logical pixels of right-side canvas margin added for the reported crop",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

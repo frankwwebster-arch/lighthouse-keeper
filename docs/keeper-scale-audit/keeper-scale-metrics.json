@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "auditRevision": "2026-10-10-user-selected-replacements-v1",
+  "auditRevision": "2026-10-12-exact-name-amendment-drafts-v1",
   "authority": "data/keeper_asset_contract.json version 7",
   "originalReference": {
     "name": "keeper_walk",
@@ -377,12 +377,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -619,12 +619,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 122.5% cumulative width / 121% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -864,12 +864,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 109.5% cumulative width / 103.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -1066,12 +1066,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 105% cumulative width / 96.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -1265,12 +1265,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 91% cumulative width / 97.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -1464,12 +1464,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 93% cumulative width / 96% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -1709,12 +1709,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": 0.987,
         "torsoScanDifference": 0.25,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 98.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -1793,7 +1793,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -1869,7 +1869,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -1945,7 +1945,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -2011,7 +2011,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -2077,7 +2077,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -2143,7 +2143,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -2380,12 +2380,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 115.5% cumulative width / 88.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -2625,12 +2625,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 114% cumulative width / 88% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -2873,12 +2873,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 83% cumulative width / 90.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -3118,12 +3118,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": 0.928,
         "torsoScanDifference": -1.0,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 93% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -3363,12 +3363,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 106.5% cumulative width / 99.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -3611,12 +3611,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 104% cumulative width / 97% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -3859,12 +3859,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 104% cumulative width / 96.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -4104,12 +4104,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -4346,12 +4346,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 107.5% cumulative width / 101.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -4591,12 +4591,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -4833,12 +4833,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 111.5% cumulative width / 98.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -5032,12 +5032,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 115.5% cumulative width / 100% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -5277,12 +5277,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 104% cumulative width / 98.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -5522,12 +5522,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 101.5% cumulative width / 97.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -5767,12 +5767,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100.5% cumulative width / 98% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -5966,12 +5966,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -6162,12 +6162,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100.5% cumulative width / 97.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -6407,12 +6407,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 110% cumulative width / 93.9675% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -6652,12 +6652,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 111.5% cumulative width / 97.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -6897,12 +6897,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -7142,12 +7142,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 90.5% cumulative width / 102% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -7387,12 +7387,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 97% cumulative width / 97.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -7632,12 +7632,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 108% cumulative width / 97.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -7877,12 +7877,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 97% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -8260,12 +8260,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 97% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -8505,12 +8505,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 96.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -8704,12 +8704,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 102% cumulative width / 102.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -8903,12 +8903,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 99.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -9102,12 +9102,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 92.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -9350,12 +9350,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 113.5% cumulative width / 98% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -9598,12 +9598,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 101.5% cumulative width / 101% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -9846,12 +9846,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 102% cumulative width / 101% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -10091,12 +10091,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 112.5% cumulative width / 96.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -10474,12 +10474,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 84% cumulative width / 82.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -11481,12 +11481,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 69.5% cumulative width / 65% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -12692,12 +12692,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 95.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -12776,7 +12776,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -12852,7 +12852,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -12928,7 +12928,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -13004,7 +13004,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -13080,7 +13080,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -13156,7 +13156,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -13232,7 +13232,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -13298,7 +13298,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -13364,7 +13364,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -13430,7 +13430,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -13667,12 +13667,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 89% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -14004,12 +14004,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 106% cumulative width / 96% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -14341,12 +14341,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -14675,12 +14675,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 98% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -14920,12 +14920,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": 0.914,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 102% cumulative width / 89.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -15165,12 +15165,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": 0.934,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 95% cumulative width / 91.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -15410,12 +15410,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": 0.888,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 101% cumulative width / 88% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -15655,12 +15655,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 107% cumulative width / 105% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -15900,12 +15900,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 115% cumulative width / 110% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -16145,12 +16145,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 98.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -16390,12 +16390,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 102.5% cumulative width / 100% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -16635,12 +16635,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 102% cumulative width / 99.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -16880,12 +16880,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -17168,12 +17168,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 106% cumulative width / 97% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -17413,12 +17413,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 110% cumulative width / 97% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -17658,12 +17658,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 101% cumulative width / 98% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -17906,12 +17906,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 75% cumulative width / 97.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -18151,12 +18151,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 80.5% cumulative width / 99% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -18304,7 +18304,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -18541,12 +18541,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 112.5% cumulative width / 103% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -18786,12 +18786,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 90.5% cumulative width / 92% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -19031,12 +19031,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 85% cumulative width / 90% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -19276,12 +19276,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 118% cumulative width / 103% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -19521,12 +19521,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -19763,12 +19763,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 94% cumulative width / 98% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -20008,12 +20008,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 104.5% cumulative width / 99% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -20253,12 +20253,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 113% cumulative width / 89.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -20498,12 +20498,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 127.5% cumulative width / 129% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -20743,12 +20743,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 107% cumulative width / 100% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -20988,12 +20988,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 113.5% cumulative width / 94% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -21233,12 +21233,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 97.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -21478,12 +21478,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": 1.007,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 111.5% cumulative width / 100% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -21723,12 +21723,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": 0.993,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 94% cumulative width / 98.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -21968,12 +21968,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": 0.993,
         "torsoScanDifference": -0.25,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 94% cumulative width / 98.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -22216,12 +22216,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -22458,12 +22458,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 101% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -22703,12 +22703,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 123% cumulative width / 98.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -22948,12 +22948,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 116.5% cumulative width / 95.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -23193,12 +23193,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 84% cumulative width / 122% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -23441,12 +23441,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 139% cumulative width / 87.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -23732,12 +23732,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -23974,12 +23974,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -24219,12 +24219,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -24461,12 +24461,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -24611,12 +24611,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -24807,12 +24807,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -25049,12 +25049,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -25294,12 +25294,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -25536,12 +25536,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -25778,12 +25778,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 96.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -26023,12 +26023,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 117.5% cumulative width / 95.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -26268,12 +26268,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 87.5% cumulative width / 96% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -26513,12 +26513,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 87.5% cumulative width / 95.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -26758,12 +26758,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 119.5% cumulative width / 96% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -27039,12 +27039,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 92% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -27287,12 +27287,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 84.5% cumulative width / 82% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -27535,12 +27535,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 74.5% cumulative width / 82% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -27780,12 +27780,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 97.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -28025,12 +28025,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -28267,12 +28267,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -28512,12 +28512,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 91% cumulative width / 94% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -28747,12 +28747,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 79% cumulative width / 65% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -28992,12 +28992,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 106% cumulative width / 96% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -29191,12 +29191,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 91.5% cumulative width / 99% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -29390,12 +29390,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 95% cumulative width / 92% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -29635,12 +29635,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": 0.934,
         "torsoScanDifference": -0.5,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 96% cumulative width / 93.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -29883,12 +29883,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 84.5% cumulative width / 97.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -30131,12 +30131,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 101% cumulative width / 98.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -30215,7 +30215,7 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "excluded-technical",
         "verdict": "excluded",
         "warnings": []
@@ -30455,12 +30455,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 77.5% cumulative width / 68% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -30703,12 +30703,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 114% cumulative width / 109% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -30948,12 +30948,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 95.5% cumulative width / 100.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -31193,12 +31193,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -31517,12 +31517,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -31759,12 +31759,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -32001,12 +32001,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 81% cumulative width / 86% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -32246,12 +32246,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -32488,12 +32488,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -32730,12 +32730,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 105.5% cumulative width / 100% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -33021,12 +33021,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 110% cumulative width / 94% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -33266,12 +33266,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 140.5% cumulative width / 90.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -33511,12 +33511,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 116.5% cumulative width / 88% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -33756,12 +33756,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 117.5% cumulative width / 91.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -34001,12 +34001,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 125.5% cumulative width / 98% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -34203,12 +34203,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 104.5% cumulative width / 97% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -34405,12 +34405,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 98% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -34607,12 +34607,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 97.5% cumulative width / 96% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -34852,12 +34852,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -35094,12 +35094,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -35336,12 +35336,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -35578,12 +35578,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 93% cumulative width / 91% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -35823,12 +35823,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 93.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -36068,12 +36068,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 101% cumulative width / 98.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -36313,12 +36313,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 97.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -36558,12 +36558,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 97.5% cumulative width / 99.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -36803,12 +36803,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 94.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -37048,12 +37048,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 88% cumulative width / 80% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -37293,12 +37293,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 82% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -37538,12 +37538,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 80.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -37783,12 +37783,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 107.5% cumulative width / 97% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -38028,12 +38028,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 107.5% cumulative width / 101.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -38273,12 +38273,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -38515,12 +38515,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -38757,12 +38757,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 95.5% cumulative width / 100% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -39002,12 +39002,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 111% cumulative width / 100% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -39201,12 +39201,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -39397,12 +39397,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 96.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -39642,12 +39642,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -39884,12 +39884,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": 0.967,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 102.5% cumulative width / 95% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -39923,7 +39923,7 @@
       "postureClass": "upright",
       "measurementMethod": "inferred skull top to supporting sole; headwear, raised limbs and props excluded",
       "status": "corrected",
-      "note": "bare-headed identity rebuilt against the approved original, then resized to Frank's saved 100% width / 100% height",
+      "note": "bare-headed identity rebuilt against the approved original, then resized to Frank's saved 79.5% width / 100% height",
       "medianFaceProxyWidth": 16.5,
       "medianFaceProxyHeight": 10.25,
       "faceProxyCoverage": "8/8",
@@ -40129,12 +40129,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": 0.947,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 98% cumulative width / 93% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -40374,12 +40374,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": 0.928,
         "torsoScanDifference": 1.5,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 101% cumulative width / 91.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -40619,12 +40619,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 97.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -40864,12 +40864,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 68.5% cumulative width / 99% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -41063,12 +41063,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -41308,12 +41308,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -41504,12 +41504,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -41749,12 +41749,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -41991,12 +41991,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 106% cumulative width / 99.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -42236,12 +42236,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "direct-skull-to-sole",
         "verdict": "measured-and-visual-pass",
         "silhouetteHeightRatio": 1.0,
         "torsoScanDifference": 0.0,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -42478,12 +42478,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 104% cumulative width / 100% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -42723,12 +42723,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -42968,12 +42968,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 101% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -43216,12 +43216,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 98% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -43461,12 +43461,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 114.5% cumulative width / 100% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -43706,12 +43706,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 92% cumulative width / 98% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -43951,12 +43951,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 114.5% cumulative width / 96.5% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -44196,12 +44196,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -44438,12 +44438,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -44680,12 +44680,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null
@@ -44925,12 +44925,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 104.5% cumulative width / 87% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -45173,12 +45173,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "user-reviewed-visual-sizing",
         "verdict": "user-visual-size-authority",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "Frank's saved visual sizing is authoritative: 100% cumulative width / 101% cumulative height",
         "warnings": [],
         "reviewScale": [
@@ -45418,12 +45418,12 @@
       ],
       "originalComparison": {
         "reference": "keeper_walk",
-        "revision": "2026-10-10-user-selected-replacements-v1",
+        "revision": "2026-10-12-exact-name-amendment-drafts-v1",
         "type": "articulated-landmark-at-fixed-scale",
         "verdict": "fixed-scale-visual-pass",
         "silhouetteHeightRatio": null,
         "torsoScanDifference": null,
-        "visualReviewDate": "2026-10-10",
+        "visualReviewDate": "2026-10-12",
         "visualReviewBasis": "same-size original reference printed beside representative frames; skull/head unit, shoulder-to-hip core width and supporting contacts reviewed",
         "warnings": [],
         "reviewScale": null

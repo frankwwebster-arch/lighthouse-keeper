@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_video_game",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_video_game",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_video_game_f8.png",
+    "stripSha256": "386b1bce6cf8ecc0151971b51a2d954d24f6a62d8b1fd08b893ae33912d6969a",
+    "runtime": "public/sprites/keeper_video_game.png",
+    "runtimeSha256": "8728fb5ce65c839f02734aaa2fd0e65d1bc852c1e40dcfa2190622ba0280d148",
+    "sidecar": "art/raw/keeper-first-batch/keeper_video_game_f8.json",
+    "sidecarSha256": "3f90a58d67ebee991d9c3ccec802ce090a8c10d16b97f1b5e91a90c4b6babaa2"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_video_game-v1-neutral.png",
+    "sourceSha256": "1f9fc629347ad1120e8b05252453923f1e39f8ed0b4cb749b12d5f99156f9d6d",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_video_game/keeper_video_game_f8.png",
+    "stripSha256": "d9ec9639742e4e48118521c5a99f60fe267f079e24f2bc93f2070b2692d9f49d",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_video_game/keeper_video_game_f8.json",
+    "sidecarSha256": "a19d0b92a38d3ed845036beb0969dbc0a7129134250fc5c972de65bc7862039d",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          46,
+          2,
+          145,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          47,
+          2,
+          145,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          47,
+          2,
+          145,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          47,
+          2,
+          145,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          47,
+          2,
+          145,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          47,
+          3,
+          145,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          48,
+          2,
+          145,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          46,
+          2,
+          145,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_video_game/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_video_game/preview.gif"
+    ],
+    "fixedSourceScale": 0.50814332247557,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; single 45-degree orientation and visible white controller. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

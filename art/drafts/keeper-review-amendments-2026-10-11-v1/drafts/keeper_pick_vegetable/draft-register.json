@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_pick_vegetable",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_pick_vegetable",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_pick_vegetable_f8.png",
+    "stripSha256": "9027c75c9ff0d64f0a9947f4d6cc55f528b6677dafd71a0e55c96cb20d9a66c5",
+    "runtime": "public/sprites/keeper_pick_vegetable.png",
+    "runtimeSha256": "a272200f7a4d360fec3a3a2faccd17a8dc2b9afc3db807d86bea04a5152a71af",
+    "sidecar": "art/raw/keeper-first-batch/keeper_pick_vegetable_f8.json",
+    "sidecarSha256": "342b0f0171f95efb438ac7b3b33bc59f47ece9eec5b23a5281ed1845c0d70dea"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_pick_vegetable-v1-neutral.png",
+    "sourceSha256": "2c8feb19aedaf137968db0aa27230099a720509705276225b30553fc91fdd345",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_pick_vegetable/keeper_pick_vegetable_f8.png",
+    "stripSha256": "b0b2535f824a15a4cfdaeb7671daafab503255aa919058bf02bfc75eee26bd39",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_pick_vegetable/keeper_pick_vegetable_f8.json",
+    "sidecarSha256": "1a368ab34689407e987e9f287f79c226c1a6c284029f8b17856cf370ccb50762",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          37,
+          3,
+          105,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          36,
+          4,
+          105,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          26,
+          23,
+          113,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          23,
+          48,
+          117,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          24,
+          49,
+          117,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          24,
+          22,
+          115,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          32,
+          3,
+          107,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          30,
+          3,
+          109,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_pick_vegetable/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_pick_vegetable/preview.gif"
+    ],
+    "fixedSourceScale": 0.4984025559105431,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; canonical beard, size and neutral side face. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

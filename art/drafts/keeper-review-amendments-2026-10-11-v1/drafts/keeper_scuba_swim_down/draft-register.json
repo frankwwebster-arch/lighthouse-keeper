@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_scuba_swim_down",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_scuba_swim_down",
+  "status": "withdrawn-by-user",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Withdrawn on 2026-10-12: revert every newly rendered face-to-camera candidate. Retained only as rejected provenance; never expose as an active review candidate.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_scuba_swim_down_f8.png",
+    "stripSha256": "8cdd7b6ba4fd0e51814816493e0164509c3fce5b2912c5cb957d5fe06f98f699",
+    "runtime": "public/sprites/keeper_scuba_swim_down.png",
+    "runtimeSha256": "b2d9a2287c862720718a33e077bdbe22cb82ee5bf19f8cb411de8633ba328c88",
+    "sidecar": "art/raw/keeper-first-batch/keeper_scuba_swim_down_f8.json",
+    "sidecarSha256": "731651c82ee6fd6dc1a87b4aac860b05fc28afaec0d8bfb520a01e903bc1589f"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/scuba/keeper_scuba_swim_down-v1.png",
+    "sourceSha256": "42c2fab9b7e5f6a3864c4a126e3ed2893ed44e10a69332c99f4a8225b0304539",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_scuba_swim_down/keeper_scuba_swim_down_f8.png",
+    "stripSha256": "c804a3e9eef62138774b1f2533a2a290b6ffd939b62b01378e5a492438edd333",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_scuba_swim_down/keeper_scuba_swim_down_f8.json",
+    "sidecarSha256": "1f05aa6a2c20c440e0d49a1d54c04a977ab3dc1084d91551a62d8ea930970f69",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          62,
+          4,
+          130,
+          188
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          36,
+          15,
+          155,
+          176
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          24,
+          27,
+          169,
+          166
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          36,
+          6,
+          157,
+          186
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          53,
+          26,
+          138,
+          167
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          61,
+          6,
+          132,
+          187
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          54,
+          11,
+          137,
+          180
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          62,
+          4,
+          130,
+          188
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/scuba/keeper_scuba_swim_down/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/scuba/keeper_scuba_swim_down/preview.gif"
+    ],
+    "fixedSourceScale": 0.5542168674698795,
+    "normalization": "equal source cells; source alpha >= 32; one fixed scale for the immutable source; final binary alpha >= 128; placement mode centre"
+  },
+  "qualification": "One coherent scuba model and outfit are used for the full exact-name clip; no head or limb transplant was used.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

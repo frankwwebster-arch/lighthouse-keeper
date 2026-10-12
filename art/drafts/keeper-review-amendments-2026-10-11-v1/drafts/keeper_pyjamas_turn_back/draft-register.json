@@ -1,0 +1,94 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_pyjamas_turn_back",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_pyjamas_turn_back",
+  "status": "withdrawn-by-user",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Withdrawn on 2026-10-12: revert every newly rendered face-to-camera candidate. Retained only as rejected provenance; never expose as an active review candidate.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_pyjamas_turn_back_f6.png",
+    "stripSha256": "3ae5aef6a26b1e2739473ff9f90970055b12a18a426ee79c9e012ed338491f3e",
+    "runtime": "public/sprites/keeper_pyjamas_turn_back.png",
+    "runtimeSha256": "3ae5aef6a26b1e2739473ff9f90970055b12a18a426ee79c9e012ed338491f3e",
+    "sidecar": "art/raw/keeper-first-batch/keeper_pyjamas_turn_back_f6.json",
+    "sidecarSha256": "8f6431eb9c2a0aeffd311cc94f2dd2ff75ae7095ac60742aaf286f704fc16835"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_pyjamas_turn_back-v2-neutral.png",
+    "sourceSha256": "a1e34e26df0a6feb22b1f08883c0c512875baf90c44b7053ecdd83c003570730",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_pyjamas_turn_back/keeper_pyjamas_turn_back_f6.png",
+    "stripSha256": "e5a1ca0533b7b557cf908a46fe12ff13602f8cb31b9fa7396b70719ed3689652",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_pyjamas_turn_back/keeper_pyjamas_turn_back_f6.json",
+    "sidecarSha256": "0e717bc62b0da9f8b17fa8d0d4377843af1f89811781780ad7914f1dc711f20c",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          18,
+          2,
+          110,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          24,
+          2,
+          105,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          28,
+          2,
+          99,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          25,
+          3,
+          103,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          22,
+          4,
+          106,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          19,
+          5,
+          109,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_pyjamas_turn_back/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_pyjamas_turn_back/preview.gif"
+    ],
+    "fixedSourceScale": 0.38235294117647056,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; neutral front face and stable turn. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

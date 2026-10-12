@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_stairs_down",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_stairs_down",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_stairs_down_f8.png",
+    "stripSha256": "8ce200389c1a8ec3a936b56e7bc7d51ceff10a1f6162ad1a3aa7c108e42e9703",
+    "runtime": "public/sprites/keeper_stairs_down.png",
+    "runtimeSha256": "d52c7ebc76fb560c2931318c77f01e12cea93a4f82c8f004f153f2b2463c1663",
+    "sidecar": "art/raw/keeper-first-batch/keeper_stairs_down_f8.json",
+    "sidecarSha256": "4d401cf23c49d1ee451bdeb4acee4c56cc08041b28de9bf143fa311a521aab42"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_stairs_down-v1-neutral.png",
+    "sourceSha256": "60f31d253246c090dbafb100a16792a586d3027f6a8f483ca92f2408855fd82f",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_stairs_down/keeper_stairs_down_f8.png",
+    "stripSha256": "aa7618c8b3257ec82e05138fb47db25d2b477a47801fb850c34d16f1cf828edc",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_stairs_down/keeper_stairs_down_f8.json",
+    "sidecarSha256": "e7f612fd8a360c7b70a0afc5837399cb4a206214939a6d1ea4ba0d2fc3b6bfef",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          24,
+          2,
+          120,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          34,
+          3,
+          109,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          38,
+          3,
+          105,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          35,
+          2,
+          109,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          30,
+          2,
+          113,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          26,
+          2,
+          119,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          38,
+          3,
+          106,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          35,
+          3,
+          109,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_stairs_down/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_stairs_down/preview.gif"
+    ],
+    "fixedSourceScale": 0.48297213622291024,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; canonical beard and restrained side face. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

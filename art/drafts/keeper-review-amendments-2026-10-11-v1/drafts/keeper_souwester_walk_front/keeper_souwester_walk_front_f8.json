@@ -1,0 +1,55 @@
+{
+  "w": 32,
+  "h": 48,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    16,
+    48
+  ],
+  "z": 50,
+  "loop": true,
+  "movementVector": [
+    0,
+    1
+  ],
+  "outfit": "souwester",
+  "facing": "front",
+  "interaction": "souwester-walk-toward",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "sfxCues": [
+    {
+      "frame": 0,
+      "cue": "footstep"
+    },
+    {
+      "frame": 4,
+      "cue": "footstep"
+    }
+  ],
+  "reviewScaleRounds": {
+    "2026-10-11": [
+      100,
+      100
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-11": [
+      0,
+      0
+    ]
+  },
+  "draftId": "keeper-review-amendments-2026-10-11-v1",
+  "canonicalUnchanged": true
+}

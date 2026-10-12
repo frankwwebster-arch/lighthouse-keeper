@@ -1,0 +1,115 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_party_walk",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_party_walk",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Generated only for Frank's exact-name 11 October amendment handoff; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_party_walk_f8.png",
+    "stripSha256": "5013886b6220478da281a538d8aa23d04a935af8e2d8158f87bcbeb4c49b75cd",
+    "runtime": "public/sprites/keeper_party_walk.png",
+    "runtimeSha256": "e274cd7fc53ecb1de4715e276dcedb88de3519f8cf7c6124fc05b1660ea452a1",
+    "sidecar": "art/raw/keeper-first-batch/keeper_party_walk_f8.json",
+    "sidecarSha256": "49595aceb6ff1cdab3cb17071e5cef83d2663665236d7b399d4079d0b1b4f480"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/party/keeper_party_walk-v3.png",
+    "sourceSha256": "98a61a3e45c22d5a7f166ab4ad7b3c2152fb48ebeef2937faddea43985ed5d1d",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_walk/keeper_party_walk_f8.png",
+    "stripSha256": "11abd0645e9ce7040cedc0d52b4e7f75727ca903f679c7b62bbfda0b8b279b06",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_walk/keeper_party_walk_f8.json",
+    "sidecarSha256": "9d03730a7eec1c66c1414acd183f91f84483b5347871de46b39abb035cb64980",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          17,
+          38,
+          111,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          24,
+          38,
+          103,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          30,
+          38,
+          99,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          28,
+          38,
+          101,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          16,
+          39,
+          113,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          26,
+          38,
+          102,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          30,
+          38,
+          98,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          28,
+          38,
+          101,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/party/keeper_party_walk/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/party/keeper_party_walk/preview.gif"
+    ],
+    "fixedSourceScale": 0.47058823529411764,
+    "normalization": "equal source cells, alpha crop >=32, one fixed scale per immutable generated source calibrated to a 184px upright party silhouette, final binary alpha >=128, anchor-aligned on a shared 56-logical-pixel canvas",
+    "seam": "loop"
+  },
+  "qualification": "Every pose is a coherent full-character render. No head, beard, hat, or body part was transplanted from another frame.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

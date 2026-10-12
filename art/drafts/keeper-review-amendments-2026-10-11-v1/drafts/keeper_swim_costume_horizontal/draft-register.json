@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_swim_costume_horizontal",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_swim_costume_horizontal",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Generated only for Frank's exact-name 11 October amendment handoff; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_swim_costume_horizontal_f8.png",
+    "stripSha256": "28a566a37ad123ce7a9e14bd00dad0b17e70139b3e67a541ed018d102b0791a7",
+    "runtime": "public/sprites/keeper_swim_costume_horizontal.png",
+    "runtimeSha256": "273a8b4499dc3655a36029a459621fdbf41ed70e3b6aac16f3298866880084d6",
+    "sidecar": "art/raw/keeper-first-batch/keeper_swim_costume_horizontal_f8.json",
+    "sidecarSha256": "76bd7fcbff22fc750db51e0c982f117dc1b594dbb27fcb217329a2560ac02a6e"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/swim-costume/keeper_swim_costume_horizontal-v2-neutral.png",
+    "sourceSha256": "a3071927a59d881d16c07090db8b9e124b5c95b5ad69a145fe9c31b477cacec7",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_swim_costume_horizontal/keeper_swim_costume_horizontal_f8.png",
+    "stripSha256": "ef37c8ea98d792f877e7eb95a6bd5abb22f6d5290974354d0ac794939ef87dd8",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_swim_costume_horizontal/keeper_swim_costume_horizontal_f8.json",
+    "sidecarSha256": "d7bb525089b28812fd62c49ec0ab5e61fb18609407c8e6c41951c8810e8142dc",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          26,
+          23,
+          294,
+          170
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          33,
+          14,
+          286,
+          178
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          54,
+          9,
+          266,
+          183
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          51,
+          7,
+          268,
+          185
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          31,
+          23,
+          289,
+          170
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          25,
+          25,
+          296,
+          166
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          35,
+          13,
+          285,
+          179
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          26,
+          23,
+          294,
+          170
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/swim-costume/keeper_swim_costume_horizontal/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/swim-costume/keeper_swim_costume_horizontal/preview.gif"
+    ],
+    "fixedSourceScale": 1.152542372881356,
+    "normalization": "equal source cells, fixed immutable-source scale, binary final alpha, body-axis anchor alignment"
+  },
+  "qualification": "Both exact-name clips use the same canonical-ratio striped swimming model; no head or body-part transplant was used.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

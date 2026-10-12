@@ -1,0 +1,115 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_party_eat_cake",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_party_eat_cake",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Generated only for Frank's exact-name 11 October amendment handoff; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_party_eat_cake_f8.png",
+    "stripSha256": "9b3f33dad99c6909a4d483ba0198c9d7d72aa9e8d4fa8017715e9bb546087979",
+    "runtime": "public/sprites/keeper_party_eat_cake.png",
+    "runtimeSha256": "a98f05b7678f581641201f21f9280e4138de5aa78c2f8e8be0cd795cfde057ce",
+    "sidecar": "art/raw/keeper-first-batch/keeper_party_eat_cake_f8.json",
+    "sidecarSha256": "71354a023525ef5df9c2891280e1f0ffc0874f910fc1cca1015cb85fd2571f9f"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/party/keeper_party_eat_cake-v4.png",
+    "sourceSha256": "17e68ed361695503ae7cbb2370de550cc7c719746f0d91ba9224e0f04860900f",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_eat_cake/keeper_party_eat_cake_f8.png",
+    "stripSha256": "de6e2f27e207f55afd76898baabaf4801145dfb272276d80dcc4534fba81af9d",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_eat_cake/keeper_party_eat_cake_f8.json",
+    "sidecarSha256": "fcd3ab25866668b42c12502d67a6ad8943a906ee0a7f76d37583554edd6f4e0f",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          10,
+          38,
+          118,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          10,
+          38,
+          118,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          10,
+          38,
+          118,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          12,
+          38,
+          116,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          11,
+          38,
+          117,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          10,
+          38,
+          118,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          10,
+          38,
+          119,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          10,
+          38,
+          118,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/party/keeper_party_eat_cake/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/party/keeper_party_eat_cake/preview.gif"
+    ],
+    "fixedSourceScale": 0.48548812664907653,
+    "normalization": "equal source cells, alpha crop >=32, one fixed scale per immutable generated source calibrated to a 184px upright party silhouette, final binary alpha >=128, anchor-aligned on a shared 56-logical-pixel canvas",
+    "seam": "loop"
+  },
+  "qualification": "Every pose is a coherent full-character render. No head, beard, hat, or body part was transplanted from another frame.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

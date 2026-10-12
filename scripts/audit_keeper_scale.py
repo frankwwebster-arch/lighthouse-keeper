@@ -24,19 +24,21 @@ OUT = ROOT / "docs/keeper-scale-audit"
 PUBLIC_REVIEW = ROOT / "public/keeper-review"
 CONTRACT = json.loads((ROOT / "data/keeper_asset_contract.json").read_text())
 DENSITY = CONTRACT["canvas"]["standard"]["density"]
-AUDIT_REVISION = "2026-10-10-user-selected-replacements-v1"
+AUDIT_REVISION = "2026-10-12-exact-name-amendment-drafts-v1"
 ORIGINAL_KEEPER = "keeper_walk"
-REVIEW_IMPORT_PATH = ROOT / "docs/review/frank-keeper-animation-review-2026-10-10.json"
+REVIEW_IMPORT_PATH = ROOT / "docs/review/keeper-review-handoff-2026-10-11T221440Z.json"
 CODEX_RESPONSE_PATHS = (
     ROOT / "docs/review/keeper-animation-codex-responses-2026-10-09.json",
     ROOT / "docs/review/keeper-animation-codex-responses-2026-10-10.json",
+    ROOT / "docs/review/keeper-animation-codex-responses-2026-10-12.json",
 )
 SIDE_ON_OCCLUSION_REGISTER_PATH = ROOT / "data/keeper_side_on_beard_occlusion_audit.json"
 REVIEW_DRAFTS_PATH = ROOT / "data/keeper_review_drafts.json"
 REVIEW_CANDIDATE_DECISIONS_PATH = ROOT / "data/keeper_review_candidate_decisions.json"
+_review_import_payload = json.loads(REVIEW_IMPORT_PATH.read_text())
 REVIEW_SETTINGS = {
     review["name"]: review
-    for review in json.loads(REVIEW_IMPORT_PATH.read_text())["reviews"]
+    for review in _review_import_payload.get("reviews", _review_import_payload.get("review", {}).get("reviews", []))
 }
 
 # These sheets are sufficiently close to the approved upright original for a
@@ -414,7 +416,7 @@ def attach_original_comparisons(assets: list[dict]) -> dict:
             "verdict": verdict,
             "silhouetteHeightRatio": ratio,
             "torsoScanDifference": core_difference,
-            "visualReviewDate": "2026-10-10",
+            "visualReviewDate": "2026-10-12",
             "visualReviewBasis": (
                 f"Frank's saved visual sizing is authoritative: "
                 f"{review_scale[0]}% cumulative width / {review_scale[1]}% cumulative height"
@@ -516,7 +518,8 @@ def publish(assets: list[dict]) -> None:
 
     reviewed_by_name = {asset["name"]: asset for asset in serialisable if asset["status"] != "excluded-technical"}
     review_import = json.loads(REVIEW_IMPORT_PATH.read_text())
-    imported_reviews = {review["name"]: review for review in review_import["reviews"]}
+    review_rows = review_import.get("reviews", review_import.get("review", {}).get("reviews", []))
+    imported_reviews = {review["name"]: review for review in review_rows}
     candidate_decisions = {}
     if REVIEW_CANDIDATE_DECISIONS_PATH.exists():
         decision_payload = json.loads(REVIEW_CANDIDATE_DECISIONS_PATH.read_text())
@@ -687,6 +690,7 @@ def publish(assets: list[dict]) -> None:
                 "name": draft_record["animation"],
                 "label": draft_record["label"],
                 "source": draft_record["draft"]["strip"],
+                "publicSource": f"/keeper-review/drafts/{draft_record['draft']['stripSha256']}.png",
                 "frames": draft_sidecar["frames"],
                 "fps": draft_sidecar["fps"],
                 "canvas": [draft_sidecar["w"], draft_sidecar["h"]],
@@ -720,6 +724,7 @@ def publish(assets: list[dict]) -> None:
                 "name": name,
                 "label": "Previous version" if promoted else item.get("label", draft_record.get("label", "Review draft")),
                 "source": comparison["strip"],
+                "publicSource": f"/keeper-review/drafts/{comparison['stripSha256']}.png",
                 "frames": draft_sidecar["frames"],
                 "fps": draft_sidecar["fps"],
                 "canvas": [draft_sidecar["w"], draft_sidecar["h"]],
@@ -764,17 +769,17 @@ def publish(assets: list[dict]) -> None:
         # therefore starts from the delivered asset at neutral viewer controls,
         # while retaining Frank's exact notes and resolved decision state.
         initial_reviews[asset["name"]] = {
-            "widthPercent": 100,
-            "heightPercent": 100,
-            "animationFps": asset["fps"],
+            "widthPercent": (imported or {}).get("widthPercent", 100),
+            "heightPercent": (imported or {}).get("heightPercent", 100),
+            "animationFps": (imported or {}).get("animationFps", asset["fps"]),
             "ghostReference": (imported or {}).get("ghostReference", "auto"),
             "ghostPosition": (imported or {}).get("ghostPosition", "overlay"),
             "ghostRotation": (imported or {}).get("ghostRotation", 0),
             "ghostMirrored": (imported or {}).get("ghostMirrored", False),
-            "actionRotation": 0,
-            "actionOffsetX": 0,
-            "actionOffsetY": 0,
-            "actionOpacityPercent": 100,
+            "actionRotation": (imported or {}).get("actionRotation", 0),
+            "actionOffsetX": (imported or {}).get("actionOffsetX", 0),
+            "actionOffsetY": (imported or {}).get("actionOffsetY", 0),
+            "actionOpacityPercent": (imported or {}).get("actionOpacityPercent", 100),
             "notes": (imported or {}).get("notes", ""),
             "redraftRequested": False,
             "happy": decision.get("happy", False) if decision else (imported or {}).get("happy", False),
@@ -797,7 +802,7 @@ def publish(assets: list[dict]) -> None:
             "sittingFront": review_clip(reviewed_by_name["keeper_sit_front"]),
             "sittingBack": review_clip(reviewed_by_name["keeper_sit_back"]),
         },
-        "reviewRevision": "2026-10-11-snooker-route-review-v1",
+        "reviewRevision": "2026-10-12-exact-name-amendment-drafts-v1",
         "sideOnOcclusionAudit": side_on_register if SIDE_ON_OCCLUSION_REGISTER_PATH.exists() else None,
         "reviewDrafts": review_draft_registry,
         "initialReviews": initial_reviews,
@@ -812,20 +817,20 @@ def publish(assets: list[dict]) -> None:
         draft_public_dir.mkdir(parents=True, exist_ok=True)
         draft_record = json.loads((ROOT / side_on_register["draft"]["register"]).read_text())
         draft_strip = ROOT / draft_record["draft"]["strip"]
-        shutil.copyfile(draft_strip, draft_public_dir / draft_strip.name)
+        shutil.copyfile(draft_strip, draft_public_dir / f"{draft_record['draft']['stripSha256']}.png")
     for comparison in draft_comparisons:
         draft_public_dir = PUBLIC_REVIEW / "drafts"
         draft_public_dir.mkdir(parents=True, exist_ok=True)
         draft_strip = ROOT / comparison["strip"]
-        shutil.copyfile(draft_strip, draft_public_dir / draft_strip.name)
+        shutil.copyfile(draft_strip, draft_public_dir / f"{comparison['stripSha256']}.png")
 
     def table_text(value: object) -> str:
         return str(value or "").replace("|", "\\|").replace("\n", "<br>")
 
     resolution_lines = [
-        "# Keeper animation review resolution — 2026-10-10",
+        "# Keeper animation review resolution — 2026-10-12",
         "",
-        "This table is generated from Frank's immutable review export and the current production asset set. The second-round art pass was rejected and restored from commit `131191c`; its historical rows remain evidence only. On 2026-10-10, Frank explicitly selected ten separate replacements (nine named sheets plus the necessary `keeper_parachute_landing` bridge). Those are now canonical production, with each prior version retained as an exact-name `Previous version` comparison in the reviewer. All other `Awaiting new draft review` rows still identify an unresolved request requiring a new versioned draft.",
+        "This table is generated from the immutable 11 October review-platform handoff and the current production asset set. The 81 exact names in that handoff are the sole amendment scope. New candidates are reversible drafts beside canonical production; none is promoted. On 12 October, every newly rendered face-to-camera candidate was withdrawn at Frank's request and retained only as rejected provenance.",
         "",
         "| Animation | Frames | Frank's comment | Class | Decision | Proposed/implemented change | Status | Verification | Commit |",
         "|---|---:|---|---|---|---|---|---|---|",
@@ -906,7 +911,7 @@ def publish(assets: list[dict]) -> None:
             "",
             "Frank's supplied 14-pose darts image remains byte-identical as the `Frank-selected draft` comparison beside canonical `keeper_darts`; it is not a beard reference and is not promoted. The historical beard-audit v2 image is intentionally absent from promotion choices because its colour-predicate evidence did not establish a correction. The nine separately selected replacements and the dependent parachute-landing bridge retain their exact prior strips as `Previous version` comparisons.",
         ])
-    resolution_path = ROOT / "docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md"
+    resolution_path = ROOT / "docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-12.md"
     resolution_path.write_text("\n".join(resolution_lines) + "\n")
 
     with (OUT / "keeper-scale-summary.csv").open("w", newline="") as handle:

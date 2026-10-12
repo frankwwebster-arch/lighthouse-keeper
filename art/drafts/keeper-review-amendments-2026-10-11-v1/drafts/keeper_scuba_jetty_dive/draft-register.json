@@ -1,0 +1,154 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_scuba_jetty_dive",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_scuba_jetty_dive",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Generated only for Frank's exact-name 11 October amendment handoff; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_scuba_jetty_dive_f12.png",
+    "stripSha256": "4828da7fbb551b68c0aa2ef2e1c7074db828d9728ec5622276510c178e21f2c2",
+    "runtime": "public/sprites/keeper_scuba_jetty_dive.png",
+    "runtimeSha256": "97397389f6dbe4c810bfe0141afd0b19a76d8d7e494579a61b3657f1fb75b008",
+    "sidecar": "art/raw/keeper-first-batch/keeper_scuba_jetty_dive_f12.json",
+    "sidecarSha256": "2c5514bfb34a93b9a73c9c0d468b563a960648541c1fbe32846f32af4740904e"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/scuba/keeper_scuba_jetty_dive-v2-grid.png",
+    "sourceSha256": "5a0d9b82207910e4f17a3b77d0c4852c74ca3b3e77638cd938f53512745f05ab",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_scuba_jetty_dive/keeper_scuba_jetty_dive_f12.png",
+    "stripSha256": "c7aaf3ae7c4c877907c767e22f2e44a118422ed748c4113dac265505794fd030",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_scuba_jetty_dive/keeper_scuba_jetty_dive_f12.json",
+    "sidecarSha256": "af6ce888e45f824ffee8048559f2cb3c9fd0e9434a3a16e981e8c12cbed53ece",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          110,
+          102,
+          209,
+          286
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          102,
+          133,
+          217,
+          280
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          90,
+          130,
+          231,
+          273
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          88,
+          80,
+          231,
+          274
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          78,
+          85,
+          242,
+          268
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          70,
+          104,
+          251,
+          256
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          59,
+          132,
+          260,
+          237
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          50,
+          145,
+          270,
+          219
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 9,
+        "alphaBox": [
+          85,
+          69,
+          235,
+          248
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 10,
+        "alphaBox": [
+          115,
+          47,
+          205,
+          255
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 11,
+        "alphaBox": [
+          118,
+          42,
+          202,
+          252
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 12,
+        "alphaBox": [
+          56,
+          92,
+          265,
+          196
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/scuba/keeper_scuba_jetty_dive/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/scuba/keeper_scuba_jetty_dive/preview.gif"
+    ],
+    "fixedSourceScale": 0.6764705882352942,
+    "normalization": "equal source cells; source alpha >= 32; one fixed scale for the immutable source; final binary alpha >= 128; placement mode dive"
+  },
+  "qualification": "One coherent scuba model and outfit are used for the full exact-name clip; no head or limb transplant was used.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

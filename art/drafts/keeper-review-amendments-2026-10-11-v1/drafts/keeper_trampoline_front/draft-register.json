@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_trampoline_front",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_trampoline_front",
+  "status": "withdrawn-by-user",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Withdrawn on 2026-10-12: revert every newly rendered face-to-camera candidate. Retained only as rejected provenance; never expose as an active review candidate.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_trampoline_front_f8.png",
+    "stripSha256": "06fe53acd0ae173945efb232e3d6319fa834e320f6404003150daadd298405ce",
+    "runtime": "public/sprites/keeper_trampoline_front.png",
+    "runtimeSha256": "e405f04332b488a297b4c7d80e3ee482ba45cb8208b5ef7746ad72c9fdbb95d1",
+    "sidecar": "art/raw/keeper-first-batch/keeper_trampoline_front_f8.json",
+    "sidecarSha256": "475ef5f7d7109d85ff71be12364587e9aeb3ae5aa97d6dd7892024bab73d86c9"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_trampoline_front-v1-neutral.png",
+    "sourceSha256": "ab23eab77a6861f5eaf79679b2346955916c0a9399123753c125144f4efb4d1d",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_trampoline_front/keeper_trampoline_front_f8.png",
+    "stripSha256": "b226aa96dbd14ddc51808ee944d6d7f6cd8a524b91e61cfc99406c429ef65870",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_trampoline_front/keeper_trampoline_front_f8.json",
+    "sidecarSha256": "d373578450b5b72ed9e922c8becea24e68eb60cb79dc1dcab7f59379ac043f32",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          11,
+          166,
+          117,
+          317
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          12,
+          119,
+          116,
+          301
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          11,
+          69,
+          119,
+          268
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          9,
+          31,
+          119,
+          239
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          11,
+          2,
+          119,
+          219
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          6,
+          42,
+          121,
+          249
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          12,
+          109,
+          117,
+          288
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          11,
+          166,
+          117,
+          317
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_trampoline_front/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_trampoline_front/preview.gif"
+    ],
+    "fixedSourceScale": 0.673773987206823,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; higher jump arc, shorter canonical beard and neutral face. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

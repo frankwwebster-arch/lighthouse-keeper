@@ -1,0 +1,104 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_hot_drink_pickup",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_hot_drink_pickup",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_hot_drink_pickup_f8.png",
+    "stripSha256": "91f1e5837a9b5b800b47baf70354b65e72e7497e0cb5e8b44a98f115ff7ae10f",
+    "runtime": "public/sprites/keeper_hot_drink_pickup.png",
+    "runtimeSha256": "f5e81c40f11c05408a84f74dd0cc240187b2f1bee34561193e43db315eb257e2",
+    "sidecar": "art/raw/keeper-first-batch/keeper_hot_drink_pickup_f8.json",
+    "sidecarSha256": "9c3375ba9e69beaac00ea90ff17f6656fe31cad2669eb3936f82e563c88f1e4f"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_hot_drink_pickup-v1-neutral-f7.png",
+    "sourceSha256": "64aa9f02fa4ad2116f150959491124322bb9e246d7e5a8c910433369c06fd392",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_hot_drink_pickup/keeper_hot_drink_pickup_f7.png",
+    "stripSha256": "db2b95c13e224e05751b539388089bc4dff6c56bfad248c46c38a730c599a3cb",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_hot_drink_pickup/keeper_hot_drink_pickup_f7.json",
+    "sidecarSha256": "b2a54ff9d8c013f6fd39a110dd312b1df2b23966a462468213012edd51bef998",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          54,
+          4,
+          149,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          42,
+          4,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          45,
+          5,
+          159,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          58,
+          5,
+          147,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          59,
+          4,
+          145,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          60,
+          2,
+          144,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          61,
+          2,
+          143,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_hot_drink_pickup/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_hot_drink_pickup/preview.gif"
+    ],
+    "fixedSourceScale": 0.48148148148148145,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; frame 8 removed and mug starts at tabletop level. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

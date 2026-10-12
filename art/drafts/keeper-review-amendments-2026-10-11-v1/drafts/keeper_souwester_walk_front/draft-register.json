@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_souwester_walk_front",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_souwester_walk_front",
+  "status": "withdrawn-by-user",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Withdrawn on 2026-10-12: revert every newly rendered face-to-camera candidate. Retained only as rejected provenance; never expose as an active review candidate.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_souwester_walk_front_f8.png",
+    "stripSha256": "3af50258ef201271eef4afaecb69b0168c5f7c6bc840d32f9f4c4b67208f9318",
+    "runtime": "public/sprites/keeper_souwester_walk_front.png",
+    "runtimeSha256": "d08f7255c62268f4e036120bbe589f2484014f1f2fb20a1b8810b1092597ca99",
+    "sidecar": "art/raw/keeper-first-batch/keeper_souwester_walk_front_f8.json",
+    "sidecarSha256": "30cf3d6b6931753bdb301d3a5221f5244a9aaf992381a45ecfb1b8c7d39d83ad"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_souwester_walk_front-v3-neutral.png",
+    "sourceSha256": "7d9e71c833c3a64ea7c3b6de6b57ec19e5e8f3b764e5231dd7d9608164e62e69",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_souwester_walk_front/keeper_souwester_walk_front_f8.png",
+    "stripSha256": "116bd91343adcfe0289dbf728c14a462b05d61fcf8a33864af6b8fce28ade4b3",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_souwester_walk_front/keeper_souwester_walk_front_f8.json",
+    "sidecarSha256": "97fb443cf07867933538ddf6cfb16449c542ee604cdce8eb9cabc4c5881595ae",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          14,
+          2,
+          115,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          16,
+          2,
+          113,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          14,
+          2,
+          113,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          14,
+          2,
+          114,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          16,
+          2,
+          113,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          14,
+          2,
+          113,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          15,
+          2,
+          113,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          14,
+          2,
+          115,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_souwester_walk_front/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_souwester_walk_front/preview.gif"
+    ],
+    "fixedSourceScale": 0.4688279301745636,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; neutral face; no cap under rain hat. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

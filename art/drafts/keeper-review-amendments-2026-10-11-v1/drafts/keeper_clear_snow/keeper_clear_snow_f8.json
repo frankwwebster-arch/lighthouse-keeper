@@ -1,0 +1,63 @@
+{
+  "w": 81,
+  "h": 41,
+  "frames": 8,
+  "fps": 3.5,
+  "density": 4,
+  "anchor": [
+    37,
+    41
+  ],
+  "z": 50,
+  "loop": true,
+  "handUsePoint": [
+    47.7,
+    38.181
+  ],
+  "outfit": "winter-coat",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "clear-snow",
+  "mirrorsFor": "left",
+  "reviewScale": [
+    97,
+    103
+  ],
+  "reviewOffset": [
+    -2,
+    0
+  ],
+  "reviewScaleRounds": {
+    "2026-10-09": [
+      110,
+      93.5
+    ],
+    "2026-10-10": [
+      100,
+      100.5
+    ],
+    "2026-10-11": [
+      97,
+      103
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-09": [
+      2.5,
+      0
+    ],
+    "2026-10-10": [
+      0.5,
+      0
+    ],
+    "2026-10-11": [
+      -2,
+      0
+    ]
+  },
+  "assetRole": "clip",
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "draftId": "keeper-review-amendments-2026-10-11-v1",
+  "canonicalUnchanged": true
+}

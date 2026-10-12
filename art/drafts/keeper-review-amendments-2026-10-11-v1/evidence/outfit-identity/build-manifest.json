@@ -1,0 +1,168 @@
+{
+  "family": "outfit-identity",
+  "faceRule": "closed or hidden mouth; no generic grin",
+  "animations": {
+    "keeper_bath_enter": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_bath_enter/draft-register.json",
+      "canonicalStripSha256": "cef917a3c8b7244d4a1e13a54d6f7e8b490ccfeb7b56bf8a4223df5e281f3802",
+      "draftStripSha256": "d8bed12fe6c22b1e251baacddda566f6824ff54b013a6d2512543f9a5fca149c",
+      "fixedSourceScale": 0.48148148148148145
+    },
+    "keeper_bath_exit": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_bath_exit/draft-register.json",
+      "canonicalStripSha256": "9630cfb78eadf013c305f493dc72650a08ec90a2fab4f0e83f5cddba09ba3840",
+      "draftStripSha256": "89ff9d702750a3bb78ab5924e4c21b59e0c255060cd1e2f36b532b33bae2aadf",
+      "fixedSourceScale": 0.45614035087719296
+    },
+    "keeper_collect_eggs_back": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_collect_eggs_back/draft-register.json",
+      "canonicalStripSha256": "e62b96c7e13d16818dee0b23eb9209ad49682c3da7f3e8eab3f51d321fd6aec0",
+      "draftStripSha256": "b37d2c15113f63dfcffe27f50192f93f6ff6785dd8212166cd579153d567daf6",
+      "fixedSourceScale": 0.42857142857142855
+    },
+    "keeper_crouch_work_back": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_crouch_work_back/draft-register.json",
+      "canonicalStripSha256": "c6b9e016a77695aad9c3932286baab26848e6872fbefe9e4e6fdaede604726f1",
+      "draftStripSha256": "902ef2b33dbb3cb2ae562da2cb8d60197878320ffb28cb0509878df4cdc1fa73",
+      "fixedSourceScale": 0.43333333333333335
+    },
+    "keeper_lean_table_back": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_lean_table_back/draft-register.json",
+      "canonicalStripSha256": "1f10b07177218d161c43cbc2800794cb2bae9605f5938b54f6ae927dfc45745a",
+      "draftStripSha256": "63dcf413ea1f2f2134358995fcab44584b69d58bc8daf5ec8ea336af444dcbd6",
+      "fixedSourceScale": 0.4469914040114613
+    },
+    "keeper_lift_weights_back": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_lift_weights_back/draft-register.json",
+      "canonicalStripSha256": "191eaaee9212cf5d09edeacf210fbececf1ad0f37c0f2b36f50cc5ff56162422",
+      "draftStripSha256": "044718be91bfd90c354e6a875d41955b01bae1596570e4fe7d2938f6ac715631",
+      "fixedSourceScale": 0.6666666666666666
+    },
+    "keeper_parachute_drift": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_parachute_drift/draft-register.json",
+      "canonicalStripSha256": "8a3ec25af6d14151b25c6b07e601236c551152ca14e5474bcda79090eb5f29ef",
+      "draftStripSha256": "4a5ed7fd888d57df49773adea44e276094df53ca47f3c12863e6b1932c22b545",
+      "fixedSourceScale": 0.9400921658986175
+    },
+    "keeper_pressups_side": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_pressups_side/draft-register.json",
+      "canonicalStripSha256": "ae1f9c4163e37e86812be77aaa0e0746fafcfd9574bae9bd0353beaae155a23c",
+      "draftStripSha256": "1d2beea7b8a0a023f3327db08f5354946fe9c2c142f146f0ee33e64c5ef8989b",
+      "fixedSourceScale": 1.1063829787234043
+    },
+    "keeper_place_cake": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_place_cake/draft-register.json",
+      "canonicalStripSha256": "89ec29459a1aa50d3ad08e2077320ca78894dfb3e35d4d04a3862d33e95ede74",
+      "draftStripSha256": "b56cc76116200f6332fdb6e30f0e6c98fd13e7ef0e39ac6c82507e03198741bf",
+      "fixedSourceScale": 0.6215139442231076
+    },
+    "keeper_platform_dive": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_platform_dive/draft-register.json",
+      "canonicalStripSha256": "f1e0c7de2a6631cfb53502da6c8e3f05f78042ab3b6d44891c497564f132094a",
+      "draftStripSha256": "ff4875a479cbdb06161d9a823f2c7cf83a94a98b0f4ad344cfb2b46f22991059",
+      "fixedSourceScale": 0.5136612021857924
+    },
+    "keeper_video_game": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_video_game/draft-register.json",
+      "canonicalStripSha256": "386b1bce6cf8ecc0151971b51a2d954d24f6a62d8b1fd08b893ae33912d6969a",
+      "draftStripSha256": "d9ec9639742e4e48118521c5a99f60fe267f079e24f2bc93f2070b2692d9f49d",
+      "fixedSourceScale": 0.50814332247557
+    },
+    "keeper_stairs_down": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_stairs_down/draft-register.json",
+      "canonicalStripSha256": "8ce200389c1a8ec3a936b56e7bc7d51ceff10a1f6162ad1a3aa7c108e42e9703",
+      "draftStripSha256": "aa7618c8b3257ec82e05138fb47db25d2b477a47801fb850c34d16f1cf828edc",
+      "fixedSourceScale": 0.48297213622291024
+    },
+    "keeper_search_boxes": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_search_boxes/draft-register.json",
+      "canonicalStripSha256": "24191c79d77aefa902cc7e2560f6eda5cbe84b1c9ac0c9884d50d3cbbfff47ab",
+      "draftStripSha256": "b6395029e26456b0878745f2c27300f3c1ad4bb6b22276b6599a43738af44d5b",
+      "fixedSourceScale": 0.43333333333333335
+    },
+    "keeper_clear_snow": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_clear_snow/draft-register.json",
+      "canonicalStripSha256": "fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96",
+      "draftStripSha256": "dbce1a1cacbda99389c86acf088c748d4f1c813f712bb6627a5bbb1ae4620e4a",
+      "fixedSourceScale": 0.7079646017699115
+    },
+    "keeper_meal_from_oven_back": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_meal_from_oven_back/draft-register.json",
+      "canonicalStripSha256": "cc0cb36b897a646c981e44d9a8a69a279ee22673828fff05ebe718ce68d84579",
+      "draftStripSha256": "acdcdc7f2aeab8701448efec30cf303d8df2b656588ee42162bfe383148291f0",
+      "fixedSourceScale": 0.4250681198910082
+    },
+    "keeper_meal_place_side": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_meal_place_side/draft-register.json",
+      "canonicalStripSha256": "302dde9ed5a162a85737a1b4729449f73b8b297e195c53aa86ee7840edc02654",
+      "draftStripSha256": "52205b8bc5aab7dd2dfc5ceb4aa70189d5dce3a09f4d0e8025cf8f096b7a1373",
+      "fixedSourceScale": 0.5454545454545454
+    },
+    "keeper_water_plants_back": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_water_plants_back/draft-register.json",
+      "canonicalStripSha256": "797f222c37ddd0db2635c8cb6029b645b93362db2692af0f764b8faa5263a454",
+      "draftStripSha256": "1a4c97ff72964c24a62fb2d12628802e0a23bfc34ba31b9c3ef51d3e99f4ccf4",
+      "fixedSourceScale": 0.5148514851485149
+    },
+    "keeper_water_plants_side": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_water_plants_side/draft-register.json",
+      "canonicalStripSha256": "643b846d31989da6d2fc82512554f09df77d6e4e127f05f050116e561668a1b9",
+      "draftStripSha256": "c7ee7310140853e719d32808cc3bbc595539d66711662c435cbff0487f5080fe",
+      "fixedSourceScale": 0.6
+    },
+    "keeper_hot_drink_pickup": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_hot_drink_pickup/draft-register.json",
+      "canonicalStripSha256": "91f1e5837a9b5b800b47baf70354b65e72e7497e0cb5e8b44a98f115ff7ae10f",
+      "draftStripSha256": "db2b95c13e224e05751b539388089bc4dff6c56bfad248c46c38a730c599a3cb",
+      "fixedSourceScale": 0.48148148148148145
+    },
+    "keeper_hot_drink_pour": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_hot_drink_pour/draft-register.json",
+      "canonicalStripSha256": "0c7b0b49a0b76d6402d998cad0a3c288ea3598d2cc6c1015ee8ff6b74c08cae6",
+      "draftStripSha256": "4ddba85f7bc5df7e0e93c107ba428b60961996529758092b323d938813802035",
+      "fixedSourceScale": 0.5735294117647058
+    },
+    "keeper_put_record": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_put_record/draft-register.json",
+      "canonicalStripSha256": "a29da757c3217dcbe3f8bb6d16526e061f5ba9d8323705fd3f1054ddad315586",
+      "draftStripSha256": "bce7f629d26049b885cd9aab6b268b09487c222b9ca3f48ffbf2fb4845d61911",
+      "fixedSourceScale": 0.6190476190476191
+    },
+    "keeper_play_drums_back": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_play_drums_back/draft-register.json",
+      "canonicalStripSha256": "a280e810808293c475755329cb85f008e0b134ec8b74430de119a8a212393adb",
+      "draftStripSha256": "ff9057711d7f866a51bb8e38e777eaa6bcea855a2d4b5e5de6241c16fc33f85b",
+      "fixedSourceScale": 0.5340909090909091
+    },
+    "keeper_play_guitar_gretsch": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_play_guitar_gretsch/draft-register.json",
+      "canonicalStripSha256": "c05c6a38f0ef2f276d5dc40e96225b669c67aa8a4c582fd1aace2d76531d671b",
+      "draftStripSha256": "00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271",
+      "fixedSourceScale": 0.4642857142857143
+    },
+    "keeper_bbq_back": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_bbq_back/draft-register.json",
+      "canonicalStripSha256": "88d6e399d1fd41cc43f51e0ed0913eaac1ffc027fe448d32a46d6f16184f136b",
+      "draftStripSha256": "01690f35a574399d3e74de08c9d0643cc5d2de13946e30c0df36fbef2079d0a9",
+      "fixedSourceScale": 0.31901840490797545
+    },
+    "keeper_carry_shopping": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_carry_shopping/draft-register.json",
+      "canonicalStripSha256": "14f15ffb437c67ecf613190e7b6c3789c1352a01ca99cee0900af99fd8171128",
+      "draftStripSha256": "8300433ceac02037a105e4e1f97ca2975a3d007771a701a707178acdcc22cc3f",
+      "fixedSourceScale": 0.5098039215686274
+    },
+    "keeper_pick_vegetable": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_pick_vegetable/draft-register.json",
+      "canonicalStripSha256": "9027c75c9ff0d64f0a9947f4d6cc55f528b6677dafd71a0e55c96cb20d9a66c5",
+      "draftStripSha256": "b0b2535f824a15a4cfdaeb7671daafab503255aa919058bf02bfc75eee26bd39",
+      "fixedSourceScale": 0.4984025559105431
+    },
+    "keeper_souwester_walk_back": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_souwester_walk_back/draft-register.json",
+      "canonicalStripSha256": "bd7eceb4de0465ce9b29344c17f5d56ffab13bfcdcf7a4a11592c38c6feb13aa",
+      "draftStripSha256": "44995bd6cd07767a962a0a88e22cf77f57f649a1886f03c03df126bfa3f88151",
+      "fixedSourceScale": 0.5481049562682215
+    }
+  }
+}

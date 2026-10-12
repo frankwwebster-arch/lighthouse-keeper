@@ -1,0 +1,47 @@
+{
+  "w": 57,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    28,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "movementVector": [
+    0,
+    -1
+  ],
+  "outfit": "cream-bathrobe",
+  "mirrorSafe": true,
+  "facing": "back",
+  "interaction": "enter-shower-cubicle",
+  "mirrorsFor": "rear-left",
+  "reviewScale": [
+    72,
+    104.5
+  ],
+  "reviewOffset": [
+    -0.5,
+    0
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-rear-right",
+  "endPose": "standing-back",
+  "reviewScaleRounds": {
+    "2026-10-11": [
+      72,
+      104.5
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-11": [
+      -0.5,
+      0
+    ]
+  },
+  "draftId": "keeper-review-amendments-2026-10-11-v1",
+  "canonicalUnchanged": true
+}

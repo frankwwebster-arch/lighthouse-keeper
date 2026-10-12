@@ -110,7 +110,7 @@ The active `keeper_snooker` comparison is Frank's visually accepted complete wal
 - `keeper_sweep_broom` — new baseline-anatomy tier-1 cleaning loop with its traditional broom included; runtime swaps tools only while fully hidden by the cupboard door.
 - `keeper_swim_costume_horizontal` — re-rendered on an expanded horizontal canvas; Frank's saved 95.5% width / 100% height is baked.
 - `keeper_tarzan_walk_back` — bare-headed identity rebuilt against the approved original, then resized to Frank's saved 100% width / 100% height.
-- `keeper_tarzan_walk_front` — bare-headed identity rebuilt against the approved original, then resized to Frank's saved 100% width / 100% height.
+- `keeper_tarzan_walk_front` — bare-headed identity rebuilt against the approved original, then resized to Frank's saved 79.5% width / 100% height.
 - `keeper_tarzan_walk_side` — bare-headed identity rebuilt against the approved original, then resized to Frank's saved 100% width / 100% height.
 - `keeper_walk_into_lift` — intentional depth transition: rear walk scales from 100% to 75%, rises 6 logical pixels, then turns to a full-front neutral pose.
 - `keeper_watch_movie` — seated anatomy normalised to the sit-side head and torso unit.

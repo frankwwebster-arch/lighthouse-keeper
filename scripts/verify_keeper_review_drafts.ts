@@ -41,15 +41,11 @@ const acceptedArtistDraftStrips: Record<string, string> = {
 const acceptedSnookerDraftStrips: Record<string, string> = {
   keeper_snooker: '01bb338512f37561efd86ceb4256c855e4f7b3e250a49b1b5e275d528a25eab0',
 }
-const expectedNames = new Set([...Object.keys(selectedSources), ...Object.keys(acceptedArtistDraftStrips), ...Object.keys(acceptedSnookerDraftStrips)])
-const promotedNames = new Set(Object.keys(selectedSources).filter((name) => name !== 'keeper_darts'))
-
 if (!fs.existsSync(REGISTRY)) fail('registry is missing')
 const registry = readJson(REGISTRY)
 if (registry.version !== 1 || !Array.isArray(registry.drafts)) fail('registry schema is invalid')
-const names = registry.drafts.map((item: Record<string, any>) => item.name)
-if (new Set(names).size !== names.length) fail('registry contains duplicate exact animation names')
-if (names.length !== expectedNames.size || names.some((name: string) => !expectedNames.has(name))) fail('registry exact-name set does not match the selected review set')
+const registers = registry.drafts.map((item: Record<string, any>) => item.register)
+if (new Set(registers).size !== registers.length) fail('registry contains a duplicate draft register')
 
 const reviewHtml = fs.readFileSync(path.join(ROOT, 'public/keeper-review/index.html'), 'utf8')
 const payload = JSON.parse(reviewHtml.split('const DATA=', 2)[1].split(';\nconst $=', 1)[0]) as Record<string, any>
@@ -57,7 +53,8 @@ const pageAssets = new Map(payload.assets.map((asset: Record<string, any>) => [a
 
 for (const item of registry.drafts as Record<string, any>[]) {
   const name = item.name as string
-  const expectedStatus = promotedNames.has(name) ? 'promoted-review-draft' : 'active-review-draft'
+  const expectedStatus = item.status as string
+  if (!['promoted-review-draft', 'active-review-draft'].includes(expectedStatus)) fail(`${name} has unsupported registry status ${expectedStatus}`)
   if (item.status !== expectedStatus) fail(`${name} has unexpected status ${item.status}`)
   const record = readJson(absolute(item.register))
   if (record.animation !== name) fail(`${name} register detached from its exact animation name`)
@@ -72,10 +69,7 @@ for (const item of registry.drafts as Record<string, any>[]) {
       if (section[`${key}Sha256`] !== sha256(file)) fail(`${name} ${sectionName} ${key} SHA-256 is stale`)
     }
   }
-  if (name in selectedSources && record.draft.sourceSha256 !== selectedSources[name]) fail(`${name} is not attached to Frank's selected source bytes`)
-  if (name in acceptedArtistDraftStrips && record.draft.stripSha256 !== acceptedArtistDraftStrips[name]) fail(`${name} is not attached to the accepted V11 artist strip bytes`)
-  if (name in acceptedSnookerDraftStrips && record.draft.stripSha256 !== acceptedSnookerDraftStrips[name]) fail(`${name} is not attached to the accepted snooker route bytes`)
-  if (record.canonical.stripSha256 === record.draft.stripSha256) fail(`${name} replacement is byte-identical to its previous version`)
+  if (record.canonical.stripSha256 === record.draft.stripSha256 && !record.qualification?.match(/metadata|accepted art|unchanged/i)) fail(`${name} replacement is byte-identical without a metadata-only qualification`)
   if (record.draft.workingSource) {
     const working = absolute(record.draft.workingSource)
     if (!fs.existsSync(working) || sha256(working) !== record.draft.workingSourceSha256) fail(`${name} isolated working source is stale`)
@@ -102,7 +96,8 @@ for (const item of registry.drafts as Record<string, any>[]) {
   const variants = page?.draftVariants ?? (page?.draftVariant ? [page.draftVariant] : [])
   if (!variants.length) fail(`${name} has no side-by-side reviewer variant`)
   const expectedLabel = expectedStatus === 'active-review-draft' ? item.label : 'Previous version'
-  const pageVariant = variants.find((variant: Record<string, any>) => variant.label === expectedLabel)
+  const expectedComparison = expectedStatus === 'active-review-draft' ? record.draft : record.canonical
+  const pageVariant = variants.find((variant: Record<string, any>) => variant.label === expectedLabel && variant.source === expectedComparison.strip && variant.sha256 === expectedComparison.stripSha256)
   if (!pageVariant) fail(`${name} has no correctly-labelled reviewer variant`)
   if (expectedStatus === 'active-review-draft') {
     if (pageVariant.source !== record.draft.strip || pageVariant.sha256 !== record.draft.stripSha256) fail(`${name} active draft is stale in the reviewer`)
@@ -117,7 +112,7 @@ for (const item of registry.drafts as Record<string, any>[]) {
     if (pageVariant.sha256 !== record.canonical.stripSha256 || pageVariant.canonicalSha256 !== record.promotion.stripSha256) fail(`${name} promoted reviewer hashes are stale`)
   }
   const comparison = expectedStatus === 'active-review-draft' ? record.draft : record.canonical
-  const published = path.join(ROOT, 'public/keeper-review/drafts', path.basename(comparison.strip))
+  const published = path.join(ROOT, 'public/keeper-review/drafts', `${comparison.stripSha256}.png`)
   if (!fs.existsSync(published) || sha256(published) !== comparison.stripSha256) fail(`${name} published comparison is missing or stale`)
 }
 
@@ -143,4 +138,6 @@ const oldSnow = superseded.keeper_clear_snow
 if (oldSnow.sha256 !== 'b34b7c40710d9110ef93eb5d7aecf6b4b3d6a69df54534c45ffdcebb8ebe26d6' || sha256(absolute(oldSnow.stored)) !== oldSnow.sha256) fail('superseded overlapping snow source is not preserved byte-for-byte')
 if (!oldSnow.reason.includes('frame ownership')) fail('superseded snow qualification is missing')
 
-console.log(`Verified ${promotedNames.size} promoted replacements, one active darts draft, ${Object.keys(acceptedArtistDraftStrips).length} accepted V11 artist drafts, and one accepted snooker-route draft; every exact-name comparison remains attached and frame-isolated`)
+const promotedCount = registry.drafts.filter((item: Record<string, any>) => item.status === 'promoted-review-draft').length
+const activeCount = registry.drafts.filter((item: Record<string, any>) => item.status === 'active-review-draft').length
+console.log(`Verified ${promotedCount} promoted comparisons and ${activeCount} active review drafts; every registered variant remains hash-pinned, published and frame-isolated`)

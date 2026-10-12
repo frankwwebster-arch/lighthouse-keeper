@@ -1,0 +1,75 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_party_idle",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_party_idle",
+  "status": "withdrawn-by-user",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Withdrawn on 2026-10-12: revert every newly rendered face-to-camera candidate. Retained only as rejected provenance; never expose as an active review candidate.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_party_idle_f4.png",
+    "stripSha256": "e0326fafad5c9aee9ba5c432c862a409aecc504f0e0ddd04bf9ff69df4eed818",
+    "runtime": "public/sprites/keeper_party_idle.png",
+    "runtimeSha256": "5147dab0b1f1921c332a084afc27fb8be819467c1f89f64e2f72a6102f5829a5",
+    "sidecar": "art/raw/keeper-first-batch/keeper_party_idle_f4.json",
+    "sidecarSha256": "80bce717adee64b118742805c5b27102413457e0ea70a8c951552e7f182a26a6"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/party/keeper_party_idle-v2-neutral.png",
+    "sourceSha256": "a3c6c15d49643c106715f41e641b29130e419b5da1f56b1a2376af91c0216c65",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_idle/keeper_party_idle_f4.png",
+    "stripSha256": "379f0d36bf6087a0e757ea8001133863945b99d0595a3e5477f4fdecbb38681b",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_idle/keeper_party_idle_f4.json",
+    "sidecarSha256": "abfff4b0b322d405e8d4a1e439138dce00762441087cd8961e89d684b8dec6cd",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          18,
+          38,
+          110,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          18,
+          35,
+          110,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          18,
+          38,
+          110,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          18,
+          38,
+          110,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/party/keeper_party_idle/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/party/keeper_party_idle/preview.gif"
+    ],
+    "fixedSourceScale": 0.313458262350937,
+    "normalization": "equal source cells, alpha crop >=32, one fixed scale per immutable generated source calibrated to a 184px upright party silhouette, final binary alpha >=128, anchor-aligned on a shared 56-logical-pixel canvas",
+    "seam": "subtle-loop"
+  },
+  "qualification": "Every pose is a coherent full-character render. No head, beard, hat, or body part was transplanted from another frame.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

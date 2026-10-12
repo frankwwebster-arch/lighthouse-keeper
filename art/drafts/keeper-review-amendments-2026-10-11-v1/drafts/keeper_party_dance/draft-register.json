@@ -1,0 +1,115 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_party_dance",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_party_dance",
+  "status": "withdrawn-by-user",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Withdrawn on 2026-10-12: revert every newly rendered face-to-camera candidate. Retained only as rejected provenance; never expose as an active review candidate.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_party_dance_f8.png",
+    "stripSha256": "1ed668b9f4eded485539a938bb4f33080b03eb793c3356163e4ce901c04c257b",
+    "runtime": "public/sprites/keeper_party_dance.png",
+    "runtimeSha256": "a70435b2f78005bd1ae8cf28757bb09650eeb54e5e699dd81d5703bde22d45e3",
+    "sidecar": "art/raw/keeper-first-batch/keeper_party_dance_f8.json",
+    "sidecarSha256": "98fd44c268cb6667a237ba9356987ae4eff1128ce15a9de31dbf21c50de3bef2"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/party/keeper_party_dance-v3-neutral.png",
+    "sourceSha256": "511a73f15cddd0b9a457da8a338fc6a592f4486a29f99d50bf3e1086579b70f5",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_dance/keeper_party_dance_f8.png",
+    "stripSha256": "1a2b9abffdd2cdb4bd9a24538d475a6728eab9bf0a789a8bea566ae2d73edaf7",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_dance/keeper_party_dance_f8.json",
+    "sidecarSha256": "301875e5d5834d30357b6a948bc06b11fee79d297b756c02e4d3c0438f278e11",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          20,
+          38,
+          109,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          14,
+          38,
+          114,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          14,
+          38,
+          113,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          14,
+          38,
+          113,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          20,
+          38,
+          109,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          16,
+          38,
+          112,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          11,
+          38,
+          117,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          20,
+          38,
+          109,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/party/keeper_party_dance/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/party/keeper_party_dance/preview.gif"
+    ],
+    "fixedSourceScale": 0.44878048780487806,
+    "normalization": "equal source cells, alpha crop >=32, one fixed scale per immutable generated source calibrated to a 184px upright party silhouette, final binary alpha >=128, anchor-aligned on a shared 56-logical-pixel canvas",
+    "seam": "loop"
+  },
+  "qualification": "Every pose is a coherent full-character render. No head, beard, hat, or body part was transplanted from another frame.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

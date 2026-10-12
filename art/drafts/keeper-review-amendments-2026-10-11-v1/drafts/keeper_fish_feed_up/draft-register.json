@@ -1,0 +1,173 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_fish_feed_up",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_fish_feed_up",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name timing/canvas amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_fish_feed_up_f14.png",
+    "stripSha256": "7a78466f9ff97bce0addebec9d4177e11c242bf96d42fc621614a1ac273f850e",
+    "runtime": "public/sprites/keeper_fish_feed_up.png",
+    "runtimeSha256": "199dc9a82c3c06eca3f3bf441c88ac441231a8e4a66b9a79dcc9a0c0076ae69d",
+    "sidecar": "art/raw/keeper-first-batch/keeper_fish_feed_up_f14.json",
+    "sidecarSha256": "e304e55030824eaf9291b6b09686b547bb825b8935f0b8f9335b7f2992dde172"
+  },
+  "draft": {
+    "source": "art/raw/keeper-first-batch/keeper_fish_feed_up_f14.png",
+    "sourceSha256": "7a78466f9ff97bce0addebec9d4177e11c242bf96d42fc621614a1ac273f850e",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_fish_feed_up/keeper_fish_feed_up_f14.png",
+    "stripSha256": "1220fd4087b44f582db8115fc3143e0a60f9abbcca977cb91636ecafbb268407",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_fish_feed_up/keeper_fish_feed_up_f14.json",
+    "sidecarSha256": "e3e84a8c3dd1def2d21c4284b117b9afccce60b9176d37cd9b6d51b9099a1e32",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          29,
+          44,
+          99,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          29,
+          44,
+          99,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          23,
+          42,
+          105,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          20,
+          39,
+          107,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          23,
+          42,
+          105,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          26,
+          44,
+          102,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          28,
+          44,
+          99,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          29,
+          44,
+          98,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 9,
+        "alphaBox": [
+          29,
+          44,
+          98,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 10,
+        "alphaBox": [
+          29,
+          44,
+          98,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 11,
+        "alphaBox": [
+          29,
+          44,
+          98,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 12,
+        "alphaBox": [
+          29,
+          44,
+          98,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 13,
+        "alphaBox": [
+          29,
+          44,
+          98,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 14,
+        "alphaBox": [
+          29,
+          44,
+          98,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/timing/keeper_fish_feed_up/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/timing/keeper_fish_feed_up/preview.gif"
+    ],
+    "normalization": "exact canonical frame copies only; reviewed frame order/holds and optional transparent canvas extension; no repainting"
+  },
+  "qualification": "verified frame 8 plus six byte-identical hold frames; reviewer cadence applied",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

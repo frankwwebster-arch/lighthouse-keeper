@@ -1,0 +1,64 @@
+{
+  "family": "striped-swimming-costume",
+  "animations": {
+    "keeper_swim_costume_horizontal": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_swim_costume_horizontal/draft-register.json",
+      "sourceCellBboxes": [
+        [
+          18,
+          305,
+          252,
+          433
+        ],
+        [
+          32,
+          303,
+          252,
+          447
+        ],
+        [
+          44,
+          287,
+          228,
+          440
+        ],
+        [
+          42,
+          284,
+          232,
+          440
+        ],
+        [
+          29,
+          305,
+          254,
+          434
+        ],
+        [
+          29,
+          309,
+          265,
+          433
+        ],
+        [
+          37,
+          299,
+          255,
+          444
+        ],
+        [
+          51,
+          284,
+          234,
+          442
+        ]
+      ],
+      "fixedSourceScale": 1.152542372881356,
+      "canonicalStripSha256": "28a566a37ad123ce7a9e14bd00dad0b17e70139b3e67a541ed018d102b0791a7",
+      "draftStripSha256": "ef37c8ea98d792f877e7eb95a6bd5abb22f6d5290974354d0ac794939ef87dd8"
+    }
+  },
+  "seamAssertions": [
+    "Frame 8 is byte-identical to frame 1 in both loops."
+  ]
+}

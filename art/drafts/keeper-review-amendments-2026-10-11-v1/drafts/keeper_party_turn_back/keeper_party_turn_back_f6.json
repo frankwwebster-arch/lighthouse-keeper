@@ -1,0 +1,42 @@
+{
+  "w": 32,
+  "h": 56,
+  "frames": 6,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    16,
+    56
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "party-hat",
+  "reverseFor": "party_turn_front",
+  "facing": "front-to-back",
+  "interaction": "party-turn",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-front",
+  "endPose": "standing-back",
+  "reviewScaleRounds": {
+    "2026-10-11": [
+      100,
+      100
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-11": [
+      0,
+      0
+    ]
+  },
+  "draftId": "keeper-review-amendments-2026-10-11-v1",
+  "canonicalUnchanged": true
+}

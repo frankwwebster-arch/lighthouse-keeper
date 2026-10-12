@@ -1,0 +1,113 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_shower_enter_bathrobe",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_shower_enter_bathrobe",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name timing/canvas amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_shower_enter_bathrobe_f8.png",
+    "stripSha256": "ff0adad9d1be172630c395ffdbf3d2f0b6822167074b2190b13c339d5aba818e",
+    "runtime": "public/sprites/keeper_shower_enter_bathrobe.png",
+    "runtimeSha256": "75ab2f385fe5f54063035cc7177340554325a9753ad5015f1bbad8325d70d436",
+    "sidecar": "art/raw/keeper-first-batch/keeper_shower_enter_bathrobe_f8.json",
+    "sidecarSha256": "afec962d1cb531325a1f5325108808fba6fc3ee81a840f5dcd4fec3714189570"
+  },
+  "draft": {
+    "source": "art/raw/keeper-first-batch/keeper_shower_enter_bathrobe_f8.png",
+    "sourceSha256": "ff0adad9d1be172630c395ffdbf3d2f0b6822167074b2190b13c339d5aba818e",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_shower_enter_bathrobe/keeper_shower_enter_bathrobe_f8.png",
+    "stripSha256": "844f1baaa33c42df356261ceb87e1c68bbfb8039f621c0fae4d9796049088579",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_shower_enter_bathrobe/keeper_shower_enter_bathrobe_f8.json",
+    "sidecarSha256": "94ffb1e2cd5694524bbc5259250985dc8fb6f8028240058584b643fb2fd94b81",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          59,
+          25,
+          166,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          59,
+          25,
+          165,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          63,
+          21,
+          160,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          62,
+          21,
+          163,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          60,
+          20,
+          165,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          60,
+          20,
+          165,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          62,
+          20,
+          163,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          62,
+          20,
+          162,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/timing/keeper_shower_enter_bathrobe/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/timing/keeper_shower_enter_bathrobe/preview.gif"
+    ],
+    "normalization": "exact canonical frame copies only; reviewed frame order/holds and optional transparent canvas extension; no repainting"
+  },
+  "qualification": "reviewer size and position saved without repainting accepted art",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

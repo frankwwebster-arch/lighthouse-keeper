@@ -1,6 +1,6 @@
 # Keeper artwork authoring and review playbook
 
-Last updated: 11 October 2026.
+Last updated: 12 October 2026.
 
 This document records the durable lessons from the bathrobe, artist-smock and
 standard-uniform snooker work. It is the operating guide for future Keeper
@@ -22,6 +22,16 @@ shortlist or an earlier sample set—defines later correction scope.
 | Standard-uniform snooker route | The complete route is visually accepted and is an active `keeper_snooker` review draft | The platform verdict is still required; production remains the old eight-frame strip |
 | Bathrobe | No replacement family is accepted | Do not revive head transfer, beard transfer or procedural redraw experiments; wait for exact-name platform requests |
 | Other costumes and activities | Not implied by the work above | Start only from a reviewed exact-name request |
+
+### Face-to-camera amendment decision — 12 October 2026
+
+Frank withdrew every newly rendered face-to-camera candidate from handoff
+`d9081e53-2808-4b1f-8422-2df09cf38c3c`; the generated results were judged
+completely wrong. They remain rejected provenance only and must not be
+reactivated by a family rebuild. Canonical front-facing art remains authoritative
+until Frank gives a new explicit direction. For retained side and
+three-quarter amendments, do not introduce a generic smile or open grin;
+action-specific mouths are allowed only when the physical action requires one.
 
 The canonical side-right gameplay raster is:
 

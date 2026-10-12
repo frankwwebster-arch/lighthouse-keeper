@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_bath_exit",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_bath_exit",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_bath_exit_f8.png",
+    "stripSha256": "9630cfb78eadf013c305f493dc72650a08ec90a2fab4f0e83f5cddba09ba3840",
+    "runtime": "public/sprites/keeper_bath_exit.png",
+    "runtimeSha256": "abd8acbb4c1644bf083191b08caf09aa0e9de98ecedd86b9cc28750b3ea4d4b2",
+    "sidecar": "art/raw/keeper-first-batch/keeper_bath_exit_f8.json",
+    "sidecarSha256": "2488c135d50112a3d0d07d05680f297b3e3047bbb6778ade3be043884d1c4ca9"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_bath_exit-v1-neutral.png",
+    "sourceSha256": "236cbe983b3528d4308cd76e352580d80397e8691b1fa9777d47b6fd6033abaa",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_bath_exit/keeper_bath_exit_f8.png",
+    "stripSha256": "89ff9d702750a3bb78ab5924e4c21b59e0c255060cd1e2f36b532b33bae2aadf",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_bath_exit/keeper_bath_exit_f8.json",
+    "sidecarSha256": "15684db056d9e1e56b85b3f4a2da0cc472660b73208586dd4fb7f5b6a4053446",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          53,
+          38,
+          131,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          52,
+          26,
+          133,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          52,
+          21,
+          132,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          43,
+          7,
+          141,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          48,
+          4,
+          136,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          60,
+          2,
+          125,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          56,
+          2,
+          129,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          60,
+          2,
+          124,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_bath_exit/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_bath_exit/preview.gif"
+    ],
+    "fixedSourceScale": 0.45614035087719296,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; canonical pale skin and neutral side face. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

@@ -1,0 +1,43 @@
+{
+  "w": 46,
+  "h": 40,
+  "frames": 8,
+  "fps": 1.5,
+  "density": 4,
+  "anchor": [
+    23,
+    40
+  ],
+  "z": 50,
+  "loop": false,
+  "outfit": "towel-privacy",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "exit-bath",
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    117
+  ],
+  "reviewOffset": [
+    -3.5,
+    0
+  ],
+  "assetRole": "clip",
+  "startPose": "sitting-front",
+  "endPose": "standing-side-right",
+  "reviewScaleRounds": {
+    "2026-10-11": [
+      100,
+      117
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-11": [
+      -3.5,
+      0
+    ]
+  },
+  "draftId": "keeper-review-amendments-2026-10-11-v1",
+  "canonicalUnchanged": true
+}

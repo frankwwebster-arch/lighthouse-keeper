@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_play_guitar_gretsch",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_play_guitar_gretsch",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_play_guitar_gretsch_f8.png",
+    "stripSha256": "c05c6a38f0ef2f276d5dc40e96225b669c67aa8a4c582fd1aace2d76531d671b",
+    "runtime": "public/sprites/keeper_play_guitar_gretsch.png",
+    "runtimeSha256": "aef08f9d191e53ee9533a36500ea729fc6a649979aabf401f62134dcc72f2078",
+    "sidecar": "art/raw/keeper-first-batch/keeper_play_guitar_gretsch_f8.json",
+    "sidecarSha256": "dfb35f72cba787530f68de044ba55e4fe4fa05c302cb99a00fa8353e9b3d5940"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_play_guitar_gretsch-v1-green-neutral.png",
+    "sourceSha256": "73a2bd5ba1d6f55b84718a23f72749730235ea01558b83e41d76b6022240a202",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_play_guitar_gretsch/keeper_play_guitar_gretsch_f8.png",
+    "stripSha256": "00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_play_guitar_gretsch/keeper_play_guitar_gretsch_f8.json",
+    "sidecarSha256": "c41c207984dad8eebccd317005ed701dd8e1c22a190a5d2629a347785d8cdec3",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          42,
+          2,
+          151,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          42,
+          2,
+          150,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          42,
+          2,
+          151,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          42,
+          2,
+          151,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          41,
+          2,
+          151,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          42,
+          2,
+          150,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          42,
+          2,
+          151,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          42,
+          2,
+          151,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_play_guitar_gretsch/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_play_guitar_gretsch/preview.gif"
+    ],
+    "fixedSourceScale": 0.4642857142857143,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; solid rectangular eye without a white glint and neutral mouth. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

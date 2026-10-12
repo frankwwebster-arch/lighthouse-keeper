@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_place_cake",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_place_cake",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_place_cake_f8.png",
+    "stripSha256": "89ec29459a1aa50d3ad08e2077320ca78894dfb3e35d4d04a3862d33e95ede74",
+    "runtime": "public/sprites/keeper_place_cake.png",
+    "runtimeSha256": "6a332390cadd2bfa329fb0ebe354bf26df8770df79ef6a072a3ca465e3fec32c",
+    "sidecar": "art/raw/keeper-first-batch/keeper_place_cake_f8.json",
+    "sidecarSha256": "f2128f50af8fe0f6428f20081517682c29f91d5a089cfeb6f86b51cbb63e4edf"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_place_cake-v1-neutral.png",
+    "sourceSha256": "b8017494686cd5e7dfe3552e5d53cb59a5febda6f3fcce5f1ef458142e478577",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_place_cake/keeper_place_cake_f8.png",
+    "stripSha256": "b56cc76116200f6332fdb6e30f0e6c98fd13e7ef0e39ac6c82507e03198741bf",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_place_cake/keeper_place_cake_f8.json",
+    "sidecarSha256": "c3b2a4db4584f821dd07666dff84ddef5ecfd2b355eebe2eb0dbfa034d969c7a",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          69,
+          4,
+          163,
+          157
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          65,
+          3,
+          167,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          59,
+          7,
+          172,
+          157
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          55,
+          21,
+          177,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          55,
+          25,
+          178,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          46,
+          24,
+          185,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          61,
+          3,
+          173,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          59,
+          3,
+          175,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_place_cake/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_place_cake/preview.gif"
+    ],
+    "fixedSourceScale": 0.6215139442231076,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; coherent cake placement at tabletop height. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

@@ -373,16 +373,23 @@ first_review_path = ROOT / "docs/review/frank-keeper-animation-review-2026-10-09
 review_path = ROOT / "docs/review/frank-keeper-animation-review-2026-10-10.json"
 assert hashlib.sha256(first_review_path.read_bytes()).hexdigest() == "c19129f8419df2c046f3abb06de9f339f1cd8edb31c2d505dea8e79562d5f486"
 assert hashlib.sha256(review_path.read_bytes()).hexdigest() == "e72a6ddf3e7c30e3093195b5044ebd2b9d9af62ba94c9e493158af49b1e7ace7"
-review_export = json.loads(review_path.read_text())
-assert review_export["version"] == 9 and len(review_export["reviews"]) == 167
+old_review_export = json.loads(review_path.read_text())
+assert old_review_export["version"] == 9 and len(old_review_export["reviews"]) == 167
+handoff_path = ROOT / "docs/review/keeper-review-handoff-2026-10-11T221440Z.json"
+assert hashlib.sha256(handoff_path.read_bytes()).hexdigest() == "cfd889542743b2febdfb5bdfa79e54149a377bf1bd9cfbbe0d73a2116dfc6e75"
+handoff = json.loads(handoff_path.read_text())
+assert handoff["id"] == "d9081e53-2808-4b1f-8422-2df09cf38c3c"
+assert handoff["changedAnimationCount"] == len(handoff["changedAnimationNames"]) == 81
+review_export = handoff["review"]
+assert review_export["version"] == 11 and len(review_export["reviews"]) == 173
 review_names = [review["name"] for review in review_export["reviews"]]
 status_names = [status["name"] for status in review_export["reviewStatuses"]]
-assert len(review_names) == len(set(review_names)) == 167
+assert len(review_names) == len(set(review_names)) == 173
 assert len(status_names) == len(set(status_names)) == 173
 assert set(review_names) <= keeper_names and set(status_names) == {asset["name"] for asset in json.loads((ROOT / "docs/keeper-scale-audit/keeper-scale-metrics.json").read_text())["assets"] if asset["status"] != "excluded-technical"}
-assert len(review_export["happyAnimations"]) == 96
-assert len(review_export["redraftAnimations"]) == 9
-assert len(review_export["reviewLaterAnimations"]) == 3
+assert len(review_export["happyAnimations"]) == 125
+assert len(review_export["redraftAnimations"]) == 26
+assert len(review_export["reviewLaterAnimations"]) == 2
 status_by_name = {status["name"]: status["status"] for status in review_export["reviewStatuses"]}
 decision_by_name = {
     review["name"]: (
@@ -394,11 +401,12 @@ decision_by_name = {
 }
 assert {
     name for name, status in decision_by_name.items() if status_by_name[name] != status
-} == {"keeper_anti_gravity", "keeper_bath_exit", "keeper_count_money", "keeper_nap_seated"}
+} == {"keeper_parachute_landing"}
 responses = {}
 for response_path in (
     ROOT / "docs/review/keeper-animation-codex-responses-2026-10-09.json",
     ROOT / "docs/review/keeper-animation-codex-responses-2026-10-10.json",
+    ROOT / "docs/review/keeper-animation-codex-responses-2026-10-12.json",
 ):
     responses.update(json.loads(response_path.read_text()))
 responses = {name: response for name, response in responses.items() if isinstance(response, str) and response.strip()}
@@ -409,16 +417,16 @@ awaiting_names = {
     for review in review_export["reviews"]
     if not review.get("happy") and not review.get("reviewLater")
 }
-assert len(awaiting_names) == 68 and awaiting_names <= responses.keys()
+assert len(awaiting_names) == 46 and awaiting_names <= responses.keys()
 assert all("Implemented as requested" not in responses[name] for name in awaiting_names)
-resolution = (ROOT / "docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-10.md").read_text()
+resolution = (ROOT / "docs/review/KEEPER_ANIMATION_REVIEW_RESOLUTION_2026-10-12.md").read_text()
 assert resolution.count("\n| `keeper_") == 173
 
 # The all-sheet audit retains identity/anatomy evidence while recording Frank's
 # visual size as authoritative wherever the review changed width or height.
 scale_audit = json.loads((ROOT / "docs/keeper-scale-audit/keeper-scale-metrics.json").read_text())
 assert scale_audit["version"] == 2
-assert scale_audit["auditRevision"] == "2026-10-10-user-selected-replacements-v1"
+assert scale_audit["auditRevision"] == "2026-10-12-exact-name-amendment-drafts-v1"
 assert scale_audit["originalReference"]["name"] == "keeper_walk"
 assert scale_audit["counts"] == {
     "allSheets": 191,
@@ -443,10 +451,9 @@ for asset in review_assets:
     )
     status_counts[status] = status_counts.get(status, 0) + 1
 assert status_counts == {
-    "happy": 96,
-    "awaiting-new-draft": 68,
-    "review-later": 3,
-    "unreviewed": 6,
+    "happy": 125,
+    "awaiting-new-draft": 46,
+    "review-later": 2,
 }
 assert all("originalComparison" in asset for asset in scale_audit["assets"])
 assert all(
@@ -512,13 +519,15 @@ assert set(draft_assets_by_name) == {item["name"] for item in review_draft_regis
 for item in review_draft_registry["drafts"]:
     record = json.loads((ROOT / item["register"]).read_text())
     variants = draft_assets_by_name[item["name"]].get("draftVariants") or [draft_assets_by_name[item["name"]]["draftVariant"]]
+    expected_comparison = record["draft"] if item["status"] == "active-review-draft" else record["canonical"]
     asset_variant = next(
         variant for variant in variants
-        if variant["label"] == ("Frank-selected draft" if item["status"] == "active-review-draft" else "Previous version")
+        if variant["label"] == (item["label"] if item["status"] == "active-review-draft" else "Previous version")
+        and variant["source"] == expected_comparison["strip"]
+        and variant["sha256"] == expected_comparison["stripSha256"]
     )
     assert record["animation"] == item["name"]
     if item["status"] == "active-review-draft":
-        assert item["name"] == "keeper_darts"
         assert asset_variant["source"] == record["draft"]["strip"]
         assert asset_variant["sha256"] == record["draft"]["stripSha256"]
         assert asset_variant["canonicalSha256"] == record["canonical"]["stripSha256"]
@@ -569,18 +578,20 @@ filter_groups = {
 }
 assert {name: len(assets) for name, assets in filter_groups.items()} == {
     "all": 173,
-    "needs-input": 76,
-    "happy": 97,
-    "awaiting-new-draft": 67,
-    "review-later": 3,
-    "unreviewed": 6,
-    "has-response": 86,
+    "needs-input": 48,
+    "happy": 125,
+    "awaiting-new-draft": 46,
+    "review-later": 2,
+    "unreviewed": 0,
+    "has-response": 92,
 }
 for filtered_assets in filter_groups.values():
     # A complete Next cycle visits each same-filter object exactly once and
     # wraps to the first. Its comment is still looked up by that object's name.
     names = [asset["name"] for asset in filtered_assets]
-    assert names and len(names) == len(set(names))
+    assert len(names) == len(set(names))
+    if not names:
+        continue
     walked = [names[index % len(names)] for index in range(len(names) + 1)]
     assert walked[:-1] == names and walked[-1] == names[0]
     for name in names:

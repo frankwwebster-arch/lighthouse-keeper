@@ -1,0 +1,48 @@
+{
+  "w": 48,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    24,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "handUsePoint": [
+    34,
+    20
+  ],
+  "propVariant": "black-gretsch",
+  "upgradeTier": 2,
+  "mirrorSafe": true,
+  "facing": "front-right",
+  "interaction": "play-guitar",
+  "mirrorsFor": "front-left",
+  "assetRole": "clip",
+  "startPose": "play-guitar-gretsch",
+  "endPose": "play-guitar-gretsch",
+  "reviewScale": [
+    100,
+    97
+  ],
+  "reviewOffset": [
+    3.5,
+    0
+  ],
+  "reviewScaleRounds": {
+    "2026-10-11": [
+      100,
+      97
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-11": [
+      3.5,
+      0
+    ]
+  },
+  "draftId": "keeper-review-amendments-2026-10-11-v1",
+  "canonicalUnchanged": true
+}

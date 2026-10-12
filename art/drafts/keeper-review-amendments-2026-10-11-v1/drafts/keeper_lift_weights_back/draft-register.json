@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_lift_weights_back",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_lift_weights_back",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_lift_weights_back_f8.png",
+    "stripSha256": "191eaaee9212cf5d09edeacf210fbececf1ad0f37c0f2b36f50cc5ff56162422",
+    "runtime": "public/sprites/keeper_lift_weights_back.png",
+    "runtimeSha256": "f673c7d1ff816cba66115c3157db73f21a47986bea2d2142b8a7f5f020c15172",
+    "sidecar": "art/raw/keeper-first-batch/keeper_lift_weights_back_f8.json",
+    "sidecarSha256": "912966603f4621a2b54763f9ab5caf9370d47728d134287dff775ac674d18d8a"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_lift_weights_back-v1.png",
+    "sourceSha256": "71efaa726539cab991e60bb15da50844b25c32af53d0c14a318f32552786c183",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_lift_weights_back/keeper_lift_weights_back_f8.png",
+    "stripSha256": "044718be91bfd90c354e6a875d41955b01bae1596570e4fe7d2938f6ac715631",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_lift_weights_back/keeper_lift_weights_back_f8.json",
+    "sidecarSha256": "c90011d5946096bf51d1b39b6c10305fff7405473f560a3d79fcb83f51e4af0c",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          38,
+          68,
+          182,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          37,
+          50,
+          185,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          36,
+          33,
+          184,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          36,
+          14,
+          184,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          35,
+          2,
+          185,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          35,
+          31,
+          184,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          36,
+          47,
+          185,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          38,
+          68,
+          182,
+          222
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_lift_weights_back/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_lift_weights_back/preview.gif"
+    ],
+    "fixedSourceScale": 0.6666666666666666,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; coherent gym outfit and single barbell. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

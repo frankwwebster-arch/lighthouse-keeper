@@ -4,6 +4,44 @@
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
 
+## Exact-name amendment checkpoint — 12 October 2026
+
+Handoff `d9081e53-2808-4b1f-8422-2df09cf38c3c` is preserved byte-for-byte at
+`docs/review/keeper-review-handoff-2026-10-11T221440Z.json` (SHA-256
+`cfd889542743b2febdfb5bdfa79e54149a377bf1bd9cfbbe0d73a2116dfc6e75`).
+Its 81 `changedAnimationNames` are the sole scope of this amendment round.
+
+The reversible batch lives at
+`art/drafts/keeper-review-amendments-2026-10-11-v1/`. It exposes 41 active
+side/rear, timing or object-action candidates. Each register pins the original
+and draft SHA-256 values, sidecar geometry and per-frame alpha evidence. No raw
+or runtime keeper sprite has been replaced. The reviewer publishes comparison
+images by content hash, allowing a current amendment and a retained prior
+version with the same exact filename to coexist safely.
+
+Frank withdrew all newly rendered face-to-camera candidates on 12 October.
+Thirteen registers are marked `withdrawn-by-user` and are excluded from
+`data/keeper_review_drafts.json`; their files remain only as rejected
+provenance. This withdrawal includes the frontal party, money, button,
+costume/down-axis, outfit-walk, watering, trampoline and pyjama-turn candidates.
+Do not reactivate them without a new explicit instruction. Side and
+three-quarter candidates must not use a generic smile or open grin; action
+mouths are permitted only where physically required.
+
+`docs/review/keeper-animation-codex-responses-2026-10-12.json` has one response
+for each of the 81 exact names. `keeper_fish_seated`, `keeper_shower_exit` and
+`keeper_shower_wash` request another iteration rather than presenting an
+unreliable amendment; `keeper_slide_side` remains deferred until the
+helter-skelter route exists, and `keeper_shower_enter` remains Review later.
+Canonical gutters for `keeper_guitar_pickup_gretsch`, `keeper_machete_side` and
+`keeper_saw_wood` were measured directly and already pass without a new draft.
+
+Rebuild this batch by running its five `build_*_family.py` scripts, followed by
+`withdraw_face_camera_drafts.py`, `sync_review_registry.py`,
+`scripts/audit_keeper_scale.py`, `npm run verify:keeper-review-drafts` and
+`scripts/verify_floor_asset_catalogue.py`. Explicit visual approval is still
+required before any active amendment may be promoted.
+
 ## Neutral endpoint contract checkpoint — 10 October 2026
 
 `scripts/keeper-contract.ts` is now the authority for recipe-facing pose
@@ -951,6 +989,6 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 - first/last/loop seams and complete routes are checked in frozen onion-skin;
 - props and costumes change only at declared handovers or full occlusion.
 
-## Ready-to-paste opening prompt for the new Codex task
+## Ready-to-paste opening prompt for the next review iteration
 
-> Continue the Lighthouse Keeper beard-audit work in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main` using GPT-5.6 Sol. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, `data/keeper_side_on_beard_occlusion_audit.json` and `docs/KEEPER_ASSET_SCALE.md`. `keeper_clear_snow` is the SHA-256-pinned canonical right-facing beard. Once an approved normalized beard mask and face alignment exist, a symmetric silhouette difference of at most one logical pixel passes. The audit remains blocked for 994 cross-pose side frames—including `keeper_darts` 3–6—because no beard masks, facial landmarks, or hand depth/component ownership masks currently exist; no correction may be guessed. First author or obtain and pin those deterministic inputs, then rerun the audit and create versioned draft-only corrections only for confirmed mismatches. Preserve all canonical art, historical v1/v2 draft evidence, the Frank-selected Darts comparison and existing selected promotions. Do not start the later frame-isolation audit until the beard gate is resolved.
+> Continue the Lighthouse Keeper amendment review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, `docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md`, `docs/review/keeper-animation-codex-responses-2026-10-12.json` and `art/drafts/keeper-review-amendments-2026-10-11-v1/README.md`. Treat handoff `d9081e53-2808-4b1f-8422-2df09cf38c3c` and its 81 exact names as the only scope. Review the 41 active versioned candidates in the online tool; preserve canonical art, all historical variants and the 13 `withdrawn-by-user` face-to-camera candidates. Do not reactivate, regenerate or promote any face-to-camera amendment without an explicit new instruction. Iterate with Frank on `keeper_fish_seated`, `keeper_shower_exit` and `keeper_shower_wash`; leave `keeper_slide_side` deferred until helter-skelter geometry exists. Promote nothing without explicit approval.

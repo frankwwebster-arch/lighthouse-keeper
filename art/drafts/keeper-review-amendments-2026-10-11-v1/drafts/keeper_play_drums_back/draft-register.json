@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_play_drums_back",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_play_drums_back",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_play_drums_back_f8.png",
+    "stripSha256": "a280e810808293c475755329cb85f008e0b134ec8b74430de119a8a212393adb",
+    "runtime": "public/sprites/keeper_play_drums_back.png",
+    "runtimeSha256": "b4c0e62cae9f9929070c1b67cdbd9e76342979c5a56376aef5a03a8b2fd89099",
+    "sidecar": "art/raw/keeper-first-batch/keeper_play_drums_back_f8.json",
+    "sidecarSha256": "e3d5f6a146dd3ecabdda66596c2228ea33403123c9aad17e3ca1be4dd1d77c4d"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_play_drums_back-v1.png",
+    "sourceSha256": "0bcc3cebc634464565403651d70a27b8b689d22c839c493745b1a9a2f70d0833",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_play_drums_back/keeper_play_drums_back_f8.png",
+    "stripSha256": "ff9057711d7f866a51bb8e38e777eaa6bcea855a2d4b5e5de6241c16fc33f85b",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_play_drums_back/keeper_play_drums_back_f8.json",
+    "sidecarSha256": "3e32e9f954ed71eeae353dd7a2fa89268cb2e7ee88e97f07f17ee5a77bca5430",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          14,
+          9,
+          115,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          14,
+          30,
+          113,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          14,
+          9,
+          115,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          10,
+          2,
+          119,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          14,
+          30,
+          114,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          14,
+          30,
+          112,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          13,
+          10,
+          115,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          14,
+          9,
+          115,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_play_drums_back/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_play_drums_back/preview.gif"
+    ],
+    "fixedSourceScale": 0.5340909090909091,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; both sticks remain on the correct anatomical side. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

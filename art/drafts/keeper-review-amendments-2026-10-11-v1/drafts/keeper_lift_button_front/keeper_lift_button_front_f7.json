@@ -1,0 +1,46 @@
+{
+  "w": 34,
+  "h": 40,
+  "frames": 7,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+    17,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "handUsePoint": [
+    28.495,
+    17.23
+  ],
+  "mirrorSafe": true,
+  "facing": "front",
+  "interaction": "press-lift-button",
+  "mirrorsFor": "front-left-hand",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "reviewScaleRounds": {
+    "2026-10-11": [
+      100,
+      100
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-11": [
+      0,
+      0
+    ]
+  },
+  "draftId": "keeper-review-amendments-2026-10-11-v1",
+  "canonicalUnchanged": true
+}

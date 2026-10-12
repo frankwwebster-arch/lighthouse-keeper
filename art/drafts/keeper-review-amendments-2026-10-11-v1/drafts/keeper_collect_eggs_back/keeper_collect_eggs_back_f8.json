@@ -1,0 +1,44 @@
+{
+  "w": 36,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    18,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "handUsePoint": [
+    18,
+    38.05
+  ],
+  "facing": "back",
+  "interaction": "collect-eggs",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ],
+  "assetRole": "clip",
+  "startPose": "crouching-back",
+  "endPose": "crouching-back",
+  "reviewScaleRounds": {
+    "2026-10-11": [
+      100,
+      100
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-11": [
+      0,
+      0
+    ]
+  },
+  "draftId": "keeper-review-amendments-2026-10-11-v1",
+  "canonicalUnchanged": true
+}

@@ -1,0 +1,45 @@
+{
+  "w": 48,
+  "h": 48,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    24,
+    24
+  ],
+  "z": 50,
+  "loop": true,
+  "movementVector": [
+    0,
+    1
+  ],
+  "outfit": "scuba",
+  "facing": "down",
+  "interaction": "scuba-swim",
+  "reviewScale": [
+    100,
+    100
+  ],
+  "reviewOffset": [
+    -6.5,
+    0
+  ],
+  "assetRole": "clip",
+  "startPose": "swimming-front",
+  "endPose": "swimming-front",
+  "reviewScaleRounds": {
+    "2026-10-11": [
+      100,
+      100
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-11": [
+      -6.5,
+      0
+    ]
+  },
+  "draftId": "keeper-review-amendments-2026-10-11-v1",
+  "canonicalUnchanged": true
+}

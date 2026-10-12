@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_tarzan_walk_front",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_tarzan_walk_front",
+  "status": "withdrawn-by-user",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Withdrawn on 2026-10-12: revert every newly rendered face-to-camera candidate. Retained only as rejected provenance; never expose as an active review candidate.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_tarzan_walk_front_f8.png",
+    "stripSha256": "72f31ec993070c42c2992cc6eeaf1a396c1f6ce06aa57cefc282a2b02ec21140",
+    "runtime": "public/sprites/keeper_tarzan_walk_front.png",
+    "runtimeSha256": "f0f1c01bf26eb53e71715adc6b61b7ead26edb9b326b5c885b1a8effd814bf36",
+    "sidecar": "art/raw/keeper-first-batch/keeper_tarzan_walk_front_f8.json",
+    "sidecarSha256": "9261efa5d8fce4b0e28c3be1f23433160500116e2fc3a5c9f897db5ddde34ec6"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_tarzan_walk_front-v2-neutral.png",
+    "sourceSha256": "ced79510b7ad09742f75bc65d4c97c17c3a50389aa6a5f05889292e2a0fd8b1a",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_tarzan_walk_front/keeper_tarzan_walk_front_f8.png",
+    "stripSha256": "5dd136d62453774c9d64e3baccc562b4416d927ee099d1772eb625472cd4c38a",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_tarzan_walk_front/keeper_tarzan_walk_front_f8.json",
+    "sidecarSha256": "e102704e3680a7bb490f220b25cf236f10dc72e2279efd21ae2aa0c35a620258",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          20,
+          4,
+          108,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          21,
+          3,
+          107,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          22,
+          3,
+          107,
+          157
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          22,
+          3,
+          106,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          21,
+          3,
+          107,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          21,
+          3,
+          107,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          22,
+          3,
+          106,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          20,
+          4,
+          108,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_tarzan_walk_front/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_tarzan_walk_front/preview.gif"
+    ],
+    "fixedSourceScale": 0.4875,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; full white hair; neutral face. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

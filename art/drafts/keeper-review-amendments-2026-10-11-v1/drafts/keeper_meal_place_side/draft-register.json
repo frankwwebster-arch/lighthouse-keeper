@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_meal_place_side",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_meal_place_side",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_meal_place_side_f8.png",
+    "stripSha256": "302dde9ed5a162a85737a1b4729449f73b8b297e195c53aa86ee7840edc02654",
+    "runtime": "public/sprites/keeper_meal_place_side.png",
+    "runtimeSha256": "7578f4767bb67beccad6bf2cb65005fcf349cffc6d41346f10c4318d38ef0b49",
+    "sidecar": "art/raw/keeper-first-batch/keeper_meal_place_side_f8.json",
+    "sidecarSha256": "f1d01fe4ee1f0faf3b1a56f793296844e918b5471d198bbd3736cccf4c7e371d"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_meal_place_side-v2-transparent-neutral.png",
+    "sourceSha256": "a8b0246955fd7934709dccf6afd72a17d0b9609ef43e803e1435d2605e85ae3f",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_meal_place_side/keeper_meal_place_side_f8.png",
+    "stripSha256": "52205b8bc5aab7dd2dfc5ceb4aa70189d5dce3a09f4d0e8025cf8f096b7a1373",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_meal_place_side/keeper_meal_place_side_f8.json",
+    "sidecarSha256": "6a4f21e496653b95095b417e36dfce37c56cff68040b442317b6c50d3eea0838",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          100,
+          11,
+          190,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          96,
+          10,
+          195,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          91,
+          22,
+          201,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          81,
+          30,
+          211,
+          157
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          76,
+          29,
+          216,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          73,
+          29,
+          219,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          72,
+          21,
+          221,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          68,
+          2,
+          224,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_meal_place_side/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_meal_place_side/preview.gif"
+    ],
+    "fixedSourceScale": 0.5454545454545454,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; plate settles and remains fixed at standard tabletop height while the side face stays neutral. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

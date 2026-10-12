@@ -1,0 +1,173 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_eat_seated",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_eat_seated",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name timing/canvas amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_eat_seated_f8.png",
+    "stripSha256": "8ffa31c2d9ff2f8be085a86c46365a016aa4cc6102d793db4b2ac2efe20167a1",
+    "runtime": "public/sprites/keeper_eat_seated.png",
+    "runtimeSha256": "1c00840e5602accbe450f4e9f21457a1a74fc374e29fbf5102d24148741546ed",
+    "sidecar": "art/raw/keeper-first-batch/keeper_eat_seated_f8.json",
+    "sidecarSha256": "593f30804bae3989c23d6773a228ed0c52337c9a6f02b7d1a73dd4c92adcd6d3"
+  },
+  "draft": {
+    "source": "art/raw/keeper-first-batch/keeper_eat_seated_f8.png",
+    "sourceSha256": "8ffa31c2d9ff2f8be085a86c46365a016aa4cc6102d793db4b2ac2efe20167a1",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_eat_seated/keeper_eat_seated_f14.png",
+    "stripSha256": "a4cd61ecee761c0bd2ed0c65922d6786bfc5fafe6d06029a80ffbad9630861e8",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_eat_seated/keeper_eat_seated_f14.json",
+    "sidecarSha256": "fd543496b816d3290c9a9d1e13803a0a0dd62844409374583ff4feb4cc87f47e",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          31,
+          21,
+          106,
+          160
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          29,
+          21,
+          107,
+          160
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          31,
+          21,
+          105,
+          160
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          30,
+          21,
+          106,
+          160
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          31,
+          21,
+          105,
+          160
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          30,
+          21,
+          106,
+          160
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          31,
+          21,
+          105,
+          160
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          31,
+          21,
+          105,
+          160
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 9,
+        "alphaBox": [
+          31,
+          21,
+          105,
+          160
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 10,
+        "alphaBox": [
+          30,
+          21,
+          106,
+          160
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 11,
+        "alphaBox": [
+          31,
+          21,
+          105,
+          160
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 12,
+        "alphaBox": [
+          30,
+          21,
+          106,
+          160
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 13,
+        "alphaBox": [
+          31,
+          21,
+          105,
+          160
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 14,
+        "alphaBox": [
+          29,
+          21,
+          107,
+          160
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/timing/keeper_eat_seated/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/timing/keeper_eat_seated/preview.gif"
+    ],
+    "normalization": "exact canonical frame copies only; reviewed frame order/holds and optional transparent canvas extension; no repainting"
+  },
+  "qualification": "mirrored lowering phase added after the raise sequence",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_spaceman_walk_front",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_spaceman_walk_front",
+  "status": "withdrawn-by-user",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Withdrawn on 2026-10-12: revert every newly rendered face-to-camera candidate. Retained only as rejected provenance; never expose as an active review candidate.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_spaceman_walk_front_f8.png",
+    "stripSha256": "6e58e192dcbcd7f766ee61bc8400c16ee5079a533ced5a0b9064d79a12a81cdb",
+    "runtime": "public/sprites/keeper_spaceman_walk_front.png",
+    "runtimeSha256": "edb5d9c35f23d399375fc97e99dacf9cf065a07d47391c7b301c45cc7cadd3ff",
+    "sidecar": "art/raw/keeper-first-batch/keeper_spaceman_walk_front_f8.json",
+    "sidecarSha256": "b09d3a7d13c20cd08011519691d5645fb88914b314cdaeca82a10e09f4e225d8"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_spaceman_walk_front-v2-neutral.png",
+    "sourceSha256": "897b39de5b6643552ee8a74cbf799083a0505944be0576f6d50e34ba3517911b",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_spaceman_walk_front/keeper_spaceman_walk_front_f8.png",
+    "stripSha256": "4605facd7dad9f7c7d5de4ec6d7efec957c0346e5e1ad47777b23da0e34d7d6d",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_spaceman_walk_front/keeper_spaceman_walk_front_f8.json",
+    "sidecarSha256": "2291b7e3bd9b20f0ec4f926c65d07557e756aa2af4fbc5b72d08a99714e0fa75",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          16,
+          8,
+          112,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          17,
+          3,
+          112,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          14,
+          3,
+          113,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          16,
+          8,
+          111,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          17,
+          7,
+          112,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          14,
+          3,
+          112,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          16,
+          3,
+          112,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          16,
+          8,
+          112,
+          190
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_spaceman_walk_front/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_spaceman_walk_front/preview.gif"
+    ],
+    "fixedSourceScale": 0.5310734463276836,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; full white hair; neutral face. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

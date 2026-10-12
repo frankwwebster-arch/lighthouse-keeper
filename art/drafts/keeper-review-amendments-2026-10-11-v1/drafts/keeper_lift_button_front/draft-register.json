@@ -1,0 +1,104 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_lift_button_front",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_lift_button_front",
+  "status": "withdrawn-by-user",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Withdrawn on 2026-10-12: revert every newly rendered face-to-camera candidate. Retained only as rejected provenance; never expose as an active review candidate.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_lift_button_front_f8.png",
+    "stripSha256": "f30e2bbdec969231af029cd6a6bd0d686e8bd165ca616dfdf254fc8d0d98da2c",
+    "runtime": "public/sprites/keeper_lift_button_front.png",
+    "runtimeSha256": "352dfa3db6fd86b7b17fa173fd878e125449a19c843c3172c2272ed0c3af87a6",
+    "sidecar": "art/raw/keeper-first-batch/keeper_lift_button_front_f8.json",
+    "sidecarSha256": "fe70227553d25e0e6fd9b52dfd4404f00bc43f8ecfd808a0feeab025f8be8f42"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_lift_button_front-v1-neutral-f7.png",
+    "sourceSha256": "46e4e86d38c6e8ed0105e9c55df9289b0d409e97497287ef077bf2596c937cd2",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_lift_button_front/keeper_lift_button_front_f7.png",
+    "stripSha256": "897e9cf3ecb03523c4a6d18e9b83f34a79b1aee95ba2f15a434f4db4691878fe",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_lift_button_front/keeper_lift_button_front_f7.json",
+    "sidecarSha256": "2c05ea027adb797f9d086d2e1f04628b3e61546f4bfda489592e29b7bf160842",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          22,
+          2,
+          113,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          16,
+          2,
+          121,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          12,
+          2,
+          123,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          13,
+          2,
+          123,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          18,
+          2,
+          119,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          26,
+          2,
+          111,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          22,
+          2,
+          113,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_lift_button_front/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_lift_button_front/preview.gif"
+    ],
+    "fixedSourceScale": 0.4083769633507853,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; reviewed frame 7 removed and neutral front face. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

@@ -103,7 +103,7 @@ function initialReviewSnapshot(){const currentReviews=state.savedReviews,current
 function statusForReview(raw,fallback='unreviewed'){if(!raw)return fallback;if(raw.happy===true&&raw.redraftRequested!==true)return'happy';if(raw.reviewLater===true&&raw.redraftRequested!==true)return'review-later';return'awaiting-new-draft'}
 const logical={w:96,h:96,floor:84};
 const imageCache=new Map();
-function reviewImageUrl(clip){return String(clip.source||'').startsWith('art/drafts/')?`/keeper-review/drafts/${basename(clip.source)}`:`/sprites/${clip.name}.png`}
+function reviewImageUrl(clip){return clip.publicSource||(String(clip.source||'').startsWith('art/drafts/')?`/keeper-review/drafts/${basename(clip.source)}`:`/sprites/${clip.name}.png`)}
 function imageFor(clip){
   if(!imageCache.has(clip.source)){const img=new Image();img.src=reviewImageUrl(clip);imageCache.set(clip.source,img)}
   return imageCache.get(clip.source);

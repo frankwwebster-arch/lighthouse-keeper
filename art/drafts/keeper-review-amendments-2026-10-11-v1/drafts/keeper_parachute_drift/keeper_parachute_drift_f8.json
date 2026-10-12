@@ -1,0 +1,50 @@
+{
+  "w": 96,
+  "h": 103,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    48,
+    100
+  ],
+  "z": 50,
+  "loop": true,
+  "startPose": "parachute-open",
+  "endPose": "parachute-open",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "parachute-drift",
+  "mirrorsFor": "left",
+  "reviewScale": [
+    94,
+    95.5
+  ],
+  "reviewOffset": [
+    -0.5,
+    -2.5
+  ],
+  "reviewScaleRounds": {
+    "2026-10-10": [
+      84,
+      122
+    ],
+    "2026-10-11": [
+      94,
+      95.5
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-10": [
+      -0.5,
+      3
+    ],
+    "2026-10-11": [
+      -0.5,
+      -2.5
+    ]
+  },
+  "assetRole": "clip",
+  "draftId": "keeper-review-amendments-2026-10-11-v1",
+  "canonicalUnchanged": true
+}

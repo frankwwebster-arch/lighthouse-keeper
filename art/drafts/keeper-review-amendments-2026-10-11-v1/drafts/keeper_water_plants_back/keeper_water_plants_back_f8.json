@@ -1,0 +1,44 @@
+{
+  "w": 46,
+  "h": 40,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    23,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "handUsePoint": [
+    23,
+    31
+  ],
+  "facing": "back",
+  "interaction": "water-plants",
+  "reviewScale": [
+    110,
+    98
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "reviewScaleRounds": {
+    "2026-10-11": [
+      110,
+      98
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-11": [
+      0,
+      0
+    ]
+  },
+  "draftId": "keeper-review-amendments-2026-10-11-v1",
+  "canonicalUnchanged": true
+}

@@ -1,0 +1,260 @@
+{
+  "family": "scuba",
+  "sourceAlphaThreshold": 32,
+  "finalAlphaThreshold": 128,
+  "animations": {
+    "keeper_scuba_walk_side": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_scuba_walk_side/draft-register.json",
+      "sourceCellBboxes": [
+        [
+          41,
+          204,
+          243,
+          529
+        ],
+        [
+          45,
+          206,
+          225,
+          529
+        ],
+        [
+          50,
+          201,
+          225,
+          529
+        ],
+        [
+          40,
+          206,
+          228,
+          530
+        ],
+        [
+          30,
+          206,
+          255,
+          529
+        ],
+        [
+          45,
+          204,
+          222,
+          529
+        ],
+        [
+          45,
+          204,
+          221,
+          529
+        ],
+        [
+          39,
+          203,
+          223,
+          529
+        ]
+      ],
+      "fixedSourceScale": 0.5661538461538461,
+      "canonicalStripSha256": "a43d641350b2b2fb657fd2d3d3574bb35d997485e56d3dff410cd46f5e79760a",
+      "draftStripSha256": "1e974e7eb75ca2543208955dca1d834148457844fbbfdc976d00676ff06625dc"
+    },
+    "keeper_scuba_jetty_dive": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_scuba_jetty_dive/draft-register.json",
+      "sourceCellBboxes": [
+        [
+          97,
+          75,
+          245,
+          347
+        ],
+        [
+          104,
+          130,
+          274,
+          347
+        ],
+        [
+          79,
+          135,
+          288,
+          347
+        ],
+        [
+          87,
+          56,
+          299,
+          343
+        ],
+        [
+          62,
+          65,
+          305,
+          335
+        ],
+        [
+          44,
+          95,
+          311,
+          319
+        ],
+        [
+          20,
+          135,
+          319,
+          291
+        ],
+        [
+          10,
+          160,
+          336,
+          273
+        ],
+        [
+          84,
+          30,
+          306,
+          296
+        ],
+        [
+          130,
+          15,
+          265,
+          323
+        ],
+        [
+          116,
+          16,
+          240,
+          326
+        ],
+        [
+          14,
+          137,
+          324,
+          290
+        ]
+      ],
+      "fixedSourceScale": 0.6764705882352942,
+      "canonicalStripSha256": "4828da7fbb551b68c0aa2ef2e1c7074db828d9728ec5622276510c178e21f2c2",
+      "draftStripSha256": "c7aaf3ae7c4c877907c767e22f2e44a118422ed748c4113dac265505794fd030"
+    },
+    "keeper_scuba_swim_horizontal": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_scuba_swim_horizontal/draft-register.json",
+      "sourceCellBboxes": [
+        [
+          26,
+          304,
+          259,
+          437
+        ],
+        [
+          29,
+          303,
+          250,
+          455
+        ],
+        [
+          34,
+          304,
+          236,
+          453
+        ],
+        [
+          20,
+          303,
+          255,
+          437
+        ],
+        [
+          27,
+          303,
+          251,
+          457
+        ],
+        [
+          25,
+          302,
+          229,
+          452
+        ],
+        [
+          16,
+          303,
+          253,
+          437
+        ],
+        [
+          25,
+          303,
+          247,
+          457
+        ]
+      ],
+      "fixedSourceScale": 1.1476793248945147,
+      "canonicalStripSha256": "8960e7fe4f7ab9388040d2a4f3938c39ad097875ca4746c5870043e14707bc42",
+      "draftStripSha256": "44ca7f5043aab93a3ad5655db93e1a833f58325df108337a79d5dbb86eb718ab"
+    },
+    "keeper_scuba_swim_up": {
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_scuba_swim_up/draft-register.json",
+      "sourceCellBboxes": [
+        [
+          69,
+          183,
+          203,
+          557
+        ],
+        [
+          40,
+          229,
+          230,
+          557
+        ],
+        [
+          28,
+          228,
+          246,
+          557
+        ],
+        [
+          55,
+          228,
+          216,
+          557
+        ],
+        [
+          27,
+          228,
+          246,
+          557
+        ],
+        [
+          69,
+          183,
+          202,
+          557
+        ],
+        [
+          40,
+          228,
+          230,
+          557
+        ],
+        [
+          28,
+          228,
+          244,
+          557
+        ]
+      ],
+      "fixedSourceScale": 0.4919786096256685,
+      "canonicalStripSha256": "7210489eadea4f75a4d18d2f4f041b7fa12902cc89530f712f1e44c52f5c8edc",
+      "draftStripSha256": "0e30b2f8cee8f7c6c5fd4f9265a424c2b4dbea43f64a4ff1faf2f4d00ac394ab"
+    }
+  },
+  "seamAssertions": [
+    "Every looping swim clip reuses frame 1 exactly as frame 8.",
+    "Jetty dive uses one fixed scale from upright entry through horizontal exit.",
+    "All five clips share the same pinned scuba model pack and outfit specification."
+  ]
+}

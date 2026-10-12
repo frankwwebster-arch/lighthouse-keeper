@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_water_plants_front",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_water_plants_front",
+  "status": "withdrawn-by-user",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Withdrawn on 2026-10-12: revert every newly rendered face-to-camera candidate. Retained only as rejected provenance; never expose as an active review candidate.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_water_plants_front_f8.png",
+    "stripSha256": "6a901769a4728ed3ac5402db7f917a328ef72aec8ac4574481467f8853c5f25f",
+    "runtime": "public/sprites/keeper_water_plants_front.png",
+    "runtimeSha256": "0a8c7244791e5f652f1782f27a622c0ae99748e2b9d2e8ede16e6141acf9aef1",
+    "sidecar": "art/raw/keeper-first-batch/keeper_water_plants_front_f8.json",
+    "sidecarSha256": "32a4f2e0713272b32860d0f8b99181865dc6ec8f296dee11727706b6e72befdb"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_water_plants_front-v1-neutral.png",
+    "sourceSha256": "8ec472c601ad24c3ff5892ebc86269e5214c0ca56819247cb82e58242dd47cfc",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_water_plants_front/keeper_water_plants_front_f8.png",
+    "stripSha256": "b5c49dd540dd8d1cbbf48fa82ca8fe37264e77639a88cff96fbbc88668b44915",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_water_plants_front/keeper_water_plants_front_f8.json",
+    "sidecarSha256": "632ab02f8b66a3774cc088f995ad7e13d25c4a663f4875fef24b4affb1097c83",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          40,
+          3,
+          120,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          40,
+          3,
+          121,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          39,
+          2,
+          121,
+          157
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          40,
+          3,
+          121,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          40,
+          2,
+          121,
+          157
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          40,
+          2,
+          121,
+          157
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          39,
+          3,
+          120,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          40,
+          3,
+          120,
+          158
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_water_plants_front/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_water_plants_front/preview.gif"
+    ],
+    "fixedSourceScale": 0.5288135593220339,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; reviewed scale and neutral front face. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

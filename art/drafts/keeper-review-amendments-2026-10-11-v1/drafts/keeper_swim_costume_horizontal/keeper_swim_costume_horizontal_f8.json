@@ -1,0 +1,47 @@
+{
+  "w": 80,
+  "h": 48,
+  "frames": 8,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+    40,
+    24
+  ],
+  "z": 50,
+  "loop": true,
+  "movementVector": [
+    1,
+    0
+  ],
+  "outfit": "striped-swimming-costume",
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "swim",
+  "mirrorsFor": "left",
+  "reviewScale": [
+    71.5,
+    69
+  ],
+  "reviewOffset": [
+    0,
+    0
+  ],
+  "assetRole": "clip",
+  "startPose": "swimming-side-right",
+  "endPose": "swimming-side-right",
+  "reviewScaleRounds": {
+    "2026-10-11": [
+      71.5,
+      69
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-11": [
+      0,
+      0
+    ]
+  },
+  "draftId": "keeper-review-amendments-2026-10-11-v1",
+  "canonicalUnchanged": true
+}

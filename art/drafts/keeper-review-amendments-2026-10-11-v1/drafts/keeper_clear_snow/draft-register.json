@@ -1,0 +1,114 @@
+{
+  "draftId": "keeper-review-amendments-2026-10-11-v1-keeper_clear_snow",
+  "handoffId": "d9081e53-2808-4b1f-8422-2df09cf38c3c",
+  "animation": "keeper_clear_snow",
+  "status": "active-review-draft",
+  "label": "11 Oct amendment draft v1",
+  "selection": "Exact-name review amendment only; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_clear_snow_f8.png",
+    "stripSha256": "fd866ef8f433211946b596c27cd1941dfdcc0bf40e0efb8555cb87c375a39d96",
+    "runtime": "public/sprites/keeper_clear_snow.png",
+    "runtimeSha256": "2fd4646a09ea3e836fa2c6665362004e46b76dfbf3f0e09c94f4583adc1cb28c",
+    "sidecar": "art/raw/keeper-first-batch/keeper_clear_snow_f8.json",
+    "sidecarSha256": "4aab26d5dc5abc22cad6fea8b6098fc7f8e37674fe419668d42a98b73aa0623b"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-review-amendments-2026-10-11-v1/generated/outfit-walks/keeper_clear_snow-v1-neutral.png",
+    "sourceSha256": "2134a03b9cd55eea546c0ffb65593c1550c8fa9b6949a3803fa338027d1ceefe",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_clear_snow/keeper_clear_snow_f8.png",
+    "stripSha256": "dbce1a1cacbda99389c86acf088c748d4f1c813f712bb6627a5bbb1ae4620e4a",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_clear_snow/keeper_clear_snow_f8.json",
+    "sidecarSha256": "de6ddadb3ac65c9954e4226fe5f4f40f37321d26dbc4ccc745fb43491c475bf3",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          110,
+          3,
+          213,
+          162
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          104,
+          4,
+          220,
+          162
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          101,
+          24,
+          224,
+          162
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          96,
+          26,
+          229,
+          161
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          93,
+          7,
+          231,
+          162
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          87,
+          2,
+          237,
+          161
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          80,
+          6,
+          244,
+          161
+        ],
+        "opaqueBorderPixelCount": 0
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          110,
+          3,
+          213,
+          162
+        ],
+        "opaqueBorderPixelCount": 0
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_clear_snow/frames.png",
+      "art/drafts/keeper-review-amendments-2026-10-11-v1/evidence/outfit-identity/keeper_clear_snow/preview.gif"
+    ],
+    "fixedSourceScale": 0.7079646017699115,
+    "normalization": "equal source cells; one fixed source scale; binary final alpha; bottom-centred in the canonical canvas; two-pixel gutter"
+  },
+  "qualification": "Coherent full-character render; canonical beard length and neutral side face. No body-part transplant.",
+  "rollback": "Discard this exact-name draft directory and registry entry; canonical and earlier draft assets are unchanged."
+}

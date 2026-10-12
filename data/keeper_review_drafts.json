@@ -114,6 +114,252 @@
       "status": "active-review-draft",
       "label": "V11 consistent artist set",
       "register": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/registers/keeper_pottery_front.json"
+    },
+    {
+      "name": "keeper_bath_enter",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_bath_enter/draft-register.json"
+    },
+    {
+      "name": "keeper_bath_exit",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_bath_exit/draft-register.json"
+    },
+    {
+      "name": "keeper_bbq_back",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_bbq_back/draft-register.json"
+    },
+    {
+      "name": "keeper_carry_shopping",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_carry_shopping/draft-register.json"
+    },
+    {
+      "name": "keeper_clear_snow",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_clear_snow/draft-register.json"
+    },
+    {
+      "name": "keeper_collect_eggs_back",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_collect_eggs_back/draft-register.json"
+    },
+    {
+      "name": "keeper_crouch_work_back",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_crouch_work_back/draft-register.json"
+    },
+    {
+      "name": "keeper_eat_seated",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_eat_seated/draft-register.json"
+    },
+    {
+      "name": "keeper_fish_feed_up",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_fish_feed_up/draft-register.json"
+    },
+    {
+      "name": "keeper_hot_drink_pickup",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_hot_drink_pickup/draft-register.json"
+    },
+    {
+      "name": "keeper_hot_drink_pour",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_hot_drink_pour/draft-register.json"
+    },
+    {
+      "name": "keeper_lean_table_back",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_lean_table_back/draft-register.json"
+    },
+    {
+      "name": "keeper_lift_weights_back",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_lift_weights_back/draft-register.json"
+    },
+    {
+      "name": "keeper_meal_from_oven_back",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_meal_from_oven_back/draft-register.json"
+    },
+    {
+      "name": "keeper_meal_place_side",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_meal_place_side/draft-register.json"
+    },
+    {
+      "name": "keeper_nap_seated",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_nap_seated/draft-register.json"
+    },
+    {
+      "name": "keeper_parachute_drift",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_parachute_drift/draft-register.json"
+    },
+    {
+      "name": "keeper_party_eat_cake",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_eat_cake/draft-register.json"
+    },
+    {
+      "name": "keeper_party_hat_put_on_back",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_hat_put_on_back/draft-register.json"
+    },
+    {
+      "name": "keeper_party_turn_back",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_turn_back/draft-register.json"
+    },
+    {
+      "name": "keeper_party_walk",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_party_walk/draft-register.json"
+    },
+    {
+      "name": "keeper_pick_vegetable",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_pick_vegetable/draft-register.json"
+    },
+    {
+      "name": "keeper_place_cake",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_place_cake/draft-register.json"
+    },
+    {
+      "name": "keeper_platform_dive",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_platform_dive/draft-register.json"
+    },
+    {
+      "name": "keeper_play_drums_back",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_play_drums_back/draft-register.json"
+    },
+    {
+      "name": "keeper_play_guitar_gretsch",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_play_guitar_gretsch/draft-register.json"
+    },
+    {
+      "name": "keeper_pressups_side",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_pressups_side/draft-register.json"
+    },
+    {
+      "name": "keeper_put_record",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_put_record/draft-register.json"
+    },
+    {
+      "name": "keeper_scuba_jetty_dive",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_scuba_jetty_dive/draft-register.json"
+    },
+    {
+      "name": "keeper_scuba_swim_horizontal",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_scuba_swim_horizontal/draft-register.json"
+    },
+    {
+      "name": "keeper_scuba_swim_up",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_scuba_swim_up/draft-register.json"
+    },
+    {
+      "name": "keeper_scuba_walk_side",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_scuba_walk_side/draft-register.json"
+    },
+    {
+      "name": "keeper_search_boxes",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_search_boxes/draft-register.json"
+    },
+    {
+      "name": "keeper_shower_door_open_bathrobe",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_shower_door_open_bathrobe/draft-register.json"
+    },
+    {
+      "name": "keeper_shower_enter_bathrobe",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_shower_enter_bathrobe/draft-register.json"
+    },
+    {
+      "name": "keeper_souwester_walk_back",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_souwester_walk_back/draft-register.json"
+    },
+    {
+      "name": "keeper_stairs_down",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_stairs_down/draft-register.json"
+    },
+    {
+      "name": "keeper_swim_costume_horizontal",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_swim_costume_horizontal/draft-register.json"
+    },
+    {
+      "name": "keeper_video_game",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_video_game/draft-register.json"
+    },
+    {
+      "name": "keeper_water_plants_back",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_water_plants_back/draft-register.json"
+    },
+    {
+      "name": "keeper_water_plants_side",
+      "status": "active-review-draft",
+      "label": "11 Oct amendment draft v1",
+      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_water_plants_side/draft-register.json"
     }
   ]
 }
