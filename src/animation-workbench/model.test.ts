@@ -50,9 +50,11 @@ describe('animation workbench timeline', () => {
   })
 
   it('compiles repeated route segments and checks pose seams', () => {
-    expect(transitionPlayback(item, assets)).toHaveLength(7)
-    expect(transitionPlayback(item, assets)[0]).toMatchObject({ role: 'walk', entryOcclusion: 'door-left', travelProgress: 0 })
-    expect(transitionPlayback(item, assets)[1]).toMatchObject({ role: 'walk', travelProgress: 1 })
+    const playback = transitionPlayback(item, assets)
+    expect(playback).toHaveLength(7)
+    expect(playback[0]).toMatchObject({ role: 'walk', entryOcclusion: 'door-left', travelProgress: 0, rootPosition: 0 })
+    expect(playback[1]).toMatchObject({ role: 'walk', travelProgress: 1, rootPosition: 1 })
+    expect(playback.slice(2).map((frame) => frame.rootPosition)).toEqual([2, 2, 2, 2, 2])
     expect(transitionWarnings(item, assets)).toEqual([])
     const broken = { ...item, transitionRoute: [...item.transitionRoute, { id: 'walk2', role: 'walk' as const, label: 'Walk again', assetId: 'walk', frames: [0], repeats: 1, mirror: false }] }
     expect(transitionWarnings(broken, assets)).toEqual(['Action: turn ends standing-front; Walk again starts standing-side-right.'])

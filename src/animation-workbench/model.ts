@@ -35,6 +35,9 @@ export type RouteSegment = {
   fps?: number
   distanceMode?: 'runtime-placement'
   entryOcclusion?: 'door-left' | 'door-right'
+  motion?: number[]
+  startPose?: string
+  endPose?: string
 }
 
 export type Approval = {
@@ -87,6 +90,7 @@ export type PlaybackFrame = {
   role?: RouteRole
   entryOcclusion?: 'door-left' | 'door-right'
   travelProgress?: number
+  rootPosition?: number
   sourceEntryId?: string
 }
 
@@ -185,8 +189,8 @@ export function transitionWarnings(item: WorkbenchItem, assets: Map<string, Spri
       warnings.push(`Missing route asset between ${current.label} and ${next.label}.`)
       continue
     }
-    const from = mirroredPose(a.endPose, current.mirror)
-    const to = mirroredPose(b.startPose, next.mirror)
+    const from = mirroredPose(current.endPose ?? a.endPose, current.mirror)
+    const to = mirroredPose(next.startPose ?? b.startPose, next.mirror)
     if (from && to && from !== to) warnings.push(`${current.label} ends ${from}; ${next.label} starts ${to}.`)
     if (a.outfit && b.outfit && a.outfit !== b.outfit) warnings.push(`${current.label} uses ${a.outfit}; ${next.label} uses ${b.outfit}.`)
   }
@@ -207,12 +211,15 @@ export function itemPlayback(item: WorkbenchItem, asset: SpriteAsset): PlaybackF
 
 export function transitionPlayback(item: WorkbenchItem, assets: Map<string, SpriteAsset>): PlaybackFrame[] {
   const expandedItem = expandTimeline(item.timeline, item.sectionLoops)
-  return item.transitionRoute.flatMap((segment) => {
+  const playback: PlaybackFrame[] = []
+  let rootPosition = 0
+  item.transitionRoute.forEach((segment) => {
     const asset = assets.get(segment.assetId)
-    if (!asset) return []
+    if (!asset) return
     const frames = segment.assetId === item.assetId ? expandedItem.map((entry) => entry.frame) : segment.frames
     const repeated = Array.from({ length: Math.max(1, segment.repeats) }, () => frames).flat()
-    return repeated.map((frame, index) => ({
+    repeated.forEach((frame, index) => {
+      playback.push({
         key: `${segment.id}-${index}`,
         assetId: asset.id,
         frame: Math.max(0, Math.min(asset.frames - 1, frame)),
@@ -222,6 +229,11 @@ export function transitionPlayback(item: WorkbenchItem, assets: Map<string, Spri
         role: segment.role,
         entryOcclusion: segment.entryOcclusion,
         travelProgress: segment.role === 'walk' ? (repeated.length <= 1 ? 1 : index / (repeated.length - 1)) : undefined,
-      }))
+        rootPosition,
+      })
+      const motion = segment.motion?.[index % Math.max(1, segment.motion.length)] ?? (segment.role === 'walk' ? 1 : 0)
+      rootPosition += motion * (segment.mirror ? -1 : 1)
+    })
   })
+  return playback
 }

@@ -1,0 +1,980 @@
+{
+  "batchId": "keeper-prime-core-transitions-2026-10-12-v1",
+  "status": "draft-awaiting-visual-approval",
+  "identity": {
+    "name": "Keeper Prime",
+    "shorthand": "KP",
+    "front": "art/raw/keeper-first-batch/keeper_neutral_standing-front_f1.png",
+    "frontSha256": "6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a",
+    "side": "art/drafts/keeper-prime-side-foundation-2026-10-12-v1/drafts/keeper_prime_neutral_standing-side-right_f1.png",
+    "sideSha256": "6f782bb4d59003166b34573b3109d40bae5c408fc108106e256153d80f8c8e3f"
+  },
+  "generatedSources": {
+    "walk": {
+      "file": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/generated-sources/keeper_prime_walk_cycle-generated.png",
+      "sha256": "209846c41e2b0c7cf84b641094a44b22a637cfb637bdd1f838b08b79e0167a77",
+      "tool": "built-in image_gen",
+      "promptSummary": "Keeper Prime identity-preserving nine-frame right walk; old walk supplied choreography only; exact side-neutral endpoints; transparent isolated poses."
+    },
+    "back": {
+      "file": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/generated-sources/keeper_prime_neutral_standing-back-generated.png",
+      "sha256": "c8214ace6ba79de9ee05a4f276ef91976ab25b7a818baa61a9efeefae1b49bcf",
+      "tool": "built-in image_gen",
+      "promptSummary": "Keeper Prime exact directly-away neutral; front and derived side bound identity; old back supplied orientation only."
+    },
+    "front_turn": {
+      "file": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/generated-sources/keeper_prime_turn_front-generated.png",
+      "sha256": "2a82458c2e3c0d2468970023dd7f0af6330f9f29a9c9aaa52ee72c2300fa5c08",
+      "tool": "built-in image_gen",
+      "promptSummary": "Six-step exact side-to-exact-front Keeper Prime turn; old turn supplied rotation choreography only."
+    },
+    "front_near_side": {
+      "file": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/generated-sources/keeper_prime_turn_front_near-side-generated.png",
+      "sha256": "1818c9a3104892d24e1ef3424e18a35ca5a2721a92ad890bf6a70b42874519af",
+      "tool": "built-in image_gen",
+      "promptSummary": "Keeper Prime 72-degree near-side correction derived directly from the exact side to prevent an early model/scale jump."
+    },
+    "front_near_sequence": {
+      "file": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/generated-sources/keeper_prime_turn_front_near-sequence-generated.png",
+      "sha256": "4a24acca1e7ba58e14b2eb4bae713369c0b7e2ff8a21c69d1582477dd1d049cf",
+      "tool": "built-in image_gen",
+      "promptSummary": "Keeper Prime 54/36/18-degree near-front corrections derived directly from the exact front to prevent an endpoint model/scale jump."
+    },
+    "back_turn": {
+      "file": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/generated-sources/keeper_prime_turn_back-generated.png",
+      "sha256": "96c603966eb91cd0136dbc5d06ba3ebbdaf4dab04155a02ca454aafb261a9adf",
+      "tool": "built-in image_gen",
+      "promptSummary": "Six-step exact side-to-exact-back Keeper Prime turn; old turn supplied rotation choreography only."
+    },
+    "sit": {
+      "file": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/generated-sources/keeper_prime_sit_side-generated.png",
+      "sha256": "36a48456ba509a3987220b2039b8e00962c342e87df570d53d1ef98fa3891d09",
+      "tool": "built-in image_gen",
+      "promptSummary": "Six-step exact side-neutral-to-seated Keeper Prime motion; old sit supplied body mechanics only; no chair drawn."
+    }
+  },
+  "canonicalComparisons": {
+    "walk": {
+      "file": "art/raw/keeper-first-batch/keeper_walk_cycle_f9.png",
+      "sha256": "dbd4e1827753ed384371044f3e976bef5c7529ce0f40cabfc4249902407b7e3c",
+      "authority": "production comparison/choreography only; not Keeper Prime identity"
+    },
+    "stop": {
+      "file": "art/raw/keeper-first-batch/keeper_walk_stop_f5.png",
+      "sha256": "ed7c58911ea9c5dfa56e7bed2e67e106740d88835e860ffaa16ac18dd9d8a6e5",
+      "authority": "production comparison/choreography only; not Keeper Prime identity"
+    },
+    "front_turn": {
+      "file": "art/raw/keeper-first-batch/keeper_turn_front_f6.png",
+      "sha256": "cab51cb946eb39e1a05e2665ccff7f0f3cb6523621d42a4766ccb8212d86b57b",
+      "authority": "production comparison/choreography only; not Keeper Prime identity"
+    },
+    "back_turn": {
+      "file": "art/raw/keeper-first-batch/keeper_turn_back_f6.png",
+      "sha256": "b950027233b2005897fcc2056f993ff0d9d38c1f4501b60ad31d1c6cba29b635",
+      "authority": "production comparison/choreography only; not Keeper Prime identity"
+    },
+    "sit": {
+      "file": "art/raw/keeper-first-batch/keeper_sit_side_f6.png",
+      "sha256": "b5030c9ef9758bb684370a85178f6456ef0244f3221ac0adc5f8418eb131b7f5",
+      "authority": "production comparison/choreography only; not Keeper Prime identity"
+    },
+    "back": {
+      "file": "art/raw/keeper-first-batch/keeper_neutral_standing-back_f1.png",
+      "sha256": "9bf53472c3ebf1c93cdba8f0a6bec7acb45d2a8f02e5ff117105efe90b39e422",
+      "authority": "production comparison/choreography only; not Keeper Prime identity"
+    }
+  },
+  "supersededGeneratedSources": [
+    {
+      "file": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/generated-sources/keeper_prime_turn_front_near-front-generated.png",
+      "sha256": "ed707416cfd63d5960fe91e39e1b3aaff9b8e50daf72ffdb7245e1a9d125d684",
+      "reason": "single near-front correction still produced an abrupt F4\u2192F5 scale change; retained as rejected provenance only"
+    }
+  ],
+  "normalisation": {
+    "walk": {
+      "sourcePoseBoundsExclusive": [
+        [
+          0,
+          0,
+          144,
+          336
+        ],
+        [
+          0,
+          0,
+          155,
+          337
+        ],
+        [
+          0,
+          0,
+          197,
+          337
+        ],
+        [
+          0,
+          0,
+          173,
+          336
+        ],
+        [
+          0,
+          0,
+          147,
+          336
+        ],
+        [
+          0,
+          0,
+          160,
+          336
+        ],
+        [
+          0,
+          0,
+          199,
+          338
+        ],
+        [
+          0,
+          0,
+          171,
+          336
+        ],
+        [
+          0,
+          0,
+          143,
+          336
+        ]
+      ],
+      "normalisedPoseBoundsExclusive": [
+        [
+          24,
+          9,
+          104,
+          158
+        ],
+        [
+          21,
+          9,
+          107,
+          158
+        ],
+        [
+          10,
+          9,
+          118,
+          158
+        ],
+        [
+          16,
+          9,
+          112,
+          158
+        ],
+        [
+          24,
+          9,
+          104,
+          158
+        ],
+        [
+          20,
+          9,
+          108,
+          158
+        ],
+        [
+          9,
+          8,
+          118,
+          158
+        ],
+        [
+          16,
+          9,
+          111,
+          158
+        ],
+        [
+          24,
+          9,
+          103,
+          158
+        ]
+      ],
+      "scale": 0.44345238,
+      "horizontalFactor": 1.25,
+      "baselineExclusive": 158,
+      "centreX": 64
+    },
+    "back": {
+      "sourceBoundsExclusive": [
+        251,
+        97,
+        871,
+        1291
+      ],
+      "normalisedBoundsExclusive": [
+        26,
+        9,
+        103,
+        158
+      ],
+      "targetOpaqueHeight": 149
+    },
+    "frontTurn": {
+      "sourcePoseBoundsExclusive": [
+        [
+          0,
+          0,
+          204,
+          480
+        ],
+        [
+          0,
+          0,
+          204,
+          483
+        ],
+        [
+          0,
+          0,
+          220,
+          484
+        ],
+        [
+          0,
+          0,
+          245,
+          483
+        ],
+        [
+          0,
+          0,
+          267,
+          479
+        ],
+        [
+          0,
+          0,
+          251,
+          479
+        ]
+      ],
+      "normalisedPoseBoundsExclusive": [
+        [
+          24,
+          9,
+          104,
+          158
+        ],
+        [
+          24,
+          8,
+          104,
+          158
+        ],
+        [
+          20,
+          8,
+          107,
+          158
+        ],
+        [
+          16,
+          8,
+          113,
+          158
+        ],
+        [
+          12,
+          9,
+          117,
+          158
+        ],
+        [
+          14,
+          9,
+          113,
+          158
+        ]
+      ],
+      "scale": 0.31041667,
+      "horizontalFactor": 1.26984127,
+      "baselineExclusive": 158,
+      "centreX": 64,
+      "convergedWidths": [
+        80,
+        79,
+        77,
+        76,
+        74,
+        73
+      ],
+      "nearSideCorrection": {
+        "sourceBoundsExclusive": [
+          317,
+          131,
+          806,
+          1254
+        ],
+        "normalisedBoundsExclusive": [
+          32,
+          9,
+          97,
+          158
+        ],
+        "targetOpaqueHeight": 149
+      },
+      "nearFrontSequence": {
+        "sourcePoseBoundsExclusive": [
+          [
+            0,
+            0,
+            309,
+            663
+          ],
+          [
+            0,
+            0,
+            317,
+            662
+          ],
+          [
+            0,
+            0,
+            335,
+            662
+          ]
+        ],
+        "normalisedPoseBoundsExclusive": [
+          [
+            28,
+            9,
+            101,
+            158
+          ],
+          [
+            26,
+            9,
+            101,
+            158
+          ],
+          [
+            24,
+            9,
+            104,
+            158
+          ]
+        ],
+        "scale": 0.22473605,
+        "horizontalFactor": 1.05797101,
+        "baselineExclusive": 158,
+        "centreX": 64
+      }
+    },
+    "backTurn": {
+      "sourcePoseBoundsExclusive": [
+        [
+          0,
+          0,
+          235,
+          496
+        ],
+        [
+          0,
+          0,
+          249,
+          499
+        ],
+        [
+          0,
+          0,
+          264,
+          499
+        ],
+        [
+          0,
+          0,
+          276,
+          500
+        ],
+        [
+          0,
+          0,
+          290,
+          496
+        ],
+        [
+          0,
+          0,
+          291,
+          496
+        ]
+      ],
+      "normalisedPoseBoundsExclusive": [
+        [
+          24,
+          9,
+          104,
+          158
+        ],
+        [
+          22,
+          8,
+          106,
+          158
+        ],
+        [
+          20,
+          8,
+          109,
+          158
+        ],
+        [
+          18,
+          8,
+          111,
+          158
+        ],
+        [
+          15,
+          9,
+          113,
+          158
+        ],
+        [
+          15,
+          9,
+          113,
+          158
+        ]
+      ],
+      "scale": 0.30040323,
+      "horizontalFactor": 1.12676056,
+      "baselineExclusive": 158,
+      "centreX": 64,
+      "convergedWidths": [
+        80,
+        79,
+        79,
+        78,
+        78,
+        77
+      ]
+    },
+    "sit": {
+      "sourcePoseBoundsExclusive": [
+        [
+          0,
+          0,
+          207,
+          477
+        ],
+        [
+          0,
+          0,
+          212,
+          464
+        ],
+        [
+          0,
+          0,
+          234,
+          448
+        ],
+        [
+          0,
+          0,
+          263,
+          420
+        ],
+        [
+          0,
+          0,
+          282,
+          414
+        ],
+        [
+          0,
+          0,
+          275,
+          411
+        ]
+      ],
+      "normalisedPoseBoundsExclusive": [
+        [
+          24,
+          9,
+          104,
+          158
+        ],
+        [
+          23,
+          13,
+          105,
+          158
+        ],
+        [
+          19,
+          18,
+          109,
+          158
+        ],
+        [
+          14,
+          27,
+          115,
+          158
+        ],
+        [
+          10,
+          29,
+          118,
+          158
+        ],
+        [
+          11,
+          30,
+          117,
+          158
+        ]
+      ],
+      "scale": 0.31236897,
+      "horizontalFactor": 1.23076923,
+      "baselineExclusive": 158,
+      "centreX": 64
+    }
+  },
+  "assets": [
+    {
+      "name": "keeper_prime_walk_cycle",
+      "strip": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_walk_cycle_f9.png",
+      "stripSha256": "f2a8ccfab05ccfbc53935ea5687ed526ab124026fd03e1d30b31c1e76db5433c",
+      "sidecar": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_walk_cycle_f9.json",
+      "sidecarSha256": "4ec84b40ac33f039b7772e9719f98f42b7e7e73f92491da13f6e775544f1249c",
+      "framePixelSha256": [
+        "2d8b5c221a158e1120f0b24ec9278caf89ccaddbacd712fff18c8ac12c3ddccf",
+        "a72617227d9a2e34eb98f2680ad10743ffc10fe7fd9430f1aee29c37c6ca00bb",
+        "bbd434f12b0fb94152192b434a1ac1d4c54fae7c2cc9e8d2488f8b45852878b0",
+        "73bd460586cf23ca2f0e8c402bd0bf1c56e94e578a060813fddf759548f338cf",
+        "2d8b5c221a158e1120f0b24ec9278caf89ccaddbacd712fff18c8ac12c3ddccf",
+        "1cf2c99f6fceb7e3a35214262fe7d222745211c5cf74b1a8e98da916bb6d9abe",
+        "d4fe27aba46a439daaab82aa3ea84b35f758640149202e8cb87abe461fc4883f",
+        "661744bb53ad92abd9f3d86b9793a72643123bb7dcf5e0383d70424a756b6f10",
+        "2d8b5c221a158e1120f0b24ec9278caf89ccaddbacd712fff18c8ac12c3ddccf"
+      ],
+      "frameBoundsExclusive": [
+        [
+          24,
+          9,
+          104,
+          158
+        ],
+        [
+          21,
+          9,
+          107,
+          158
+        ],
+        [
+          10,
+          9,
+          118,
+          158
+        ],
+        [
+          16,
+          9,
+          112,
+          158
+        ],
+        [
+          24,
+          9,
+          104,
+          158
+        ],
+        [
+          20,
+          9,
+          108,
+          158
+        ],
+        [
+          9,
+          8,
+          118,
+          158
+        ],
+        [
+          16,
+          9,
+          111,
+          158
+        ],
+        [
+          24,
+          9,
+          104,
+          158
+        ]
+      ],
+      "cellEdgeAlphaPixels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "keeper_prime_walk_stop",
+      "strip": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_walk_stop_f4.png",
+      "stripSha256": "b2e90b69b9e3d1ad8b534516a6585417604638379b2cf377be559037abba66f2",
+      "sidecar": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_walk_stop_f4.json",
+      "sidecarSha256": "3f04f266f4190ad778ef494ada8cc6cea2c60f58e31a9d8f6c9aefb7cc52919d",
+      "framePixelSha256": [
+        "1cf2c99f6fceb7e3a35214262fe7d222745211c5cf74b1a8e98da916bb6d9abe",
+        "d4fe27aba46a439daaab82aa3ea84b35f758640149202e8cb87abe461fc4883f",
+        "661744bb53ad92abd9f3d86b9793a72643123bb7dcf5e0383d70424a756b6f10",
+        "2d8b5c221a158e1120f0b24ec9278caf89ccaddbacd712fff18c8ac12c3ddccf"
+      ],
+      "frameBoundsExclusive": [
+        [
+          20,
+          9,
+          108,
+          158
+        ],
+        [
+          9,
+          8,
+          118,
+          158
+        ],
+        [
+          16,
+          9,
+          111,
+          158
+        ],
+        [
+          24,
+          9,
+          104,
+          158
+        ]
+      ],
+      "cellEdgeAlphaPixels": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "keeper_prime_turn_front",
+      "strip": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_turn_front_f6.png",
+      "stripSha256": "535167c7b9c5694ccfefef7537d0e40e6df4c4633d859594a8d537aace9a75f6",
+      "sidecar": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_turn_front_f6.json",
+      "sidecarSha256": "64430f68ef60440b7635e4922a59610ce87af7be1bb2c2ccdd9c1c9d986f7ff2",
+      "framePixelSha256": [
+        "2d8b5c221a158e1120f0b24ec9278caf89ccaddbacd712fff18c8ac12c3ddccf",
+        "2b0de0226ffa88f129405cd3c2ef0ab467895b6c7a9319b3fe2c631ee1de2cc2",
+        "a29d19b2c3621a10e2affaf3e3df0ab7e6c6d2f7c8bc8f6ee74080c6e5031444",
+        "24c7757f0d1936e32b5858fc7b6cca491572702c090c56c96b18dcea5d5c8ad7",
+        "69755173b5d9124e2251486ac8d1c4230b253cfd70e18abc46a7aefa4caea3c9",
+        "f5ac6eca2c8fef7acec4b750830c48e11081f24fe345ebb4f0f046db53a9556b"
+      ],
+      "frameBoundsExclusive": [
+        [
+          24,
+          9,
+          104,
+          158
+        ],
+        [
+          24,
+          9,
+          103,
+          158
+        ],
+        [
+          26,
+          9,
+          103,
+          158
+        ],
+        [
+          26,
+          9,
+          102,
+          158
+        ],
+        [
+          27,
+          9,
+          101,
+          158
+        ],
+        [
+          27,
+          9,
+          100,
+          158
+        ]
+      ],
+      "cellEdgeAlphaPixels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "keeper_prime_turn_back",
+      "strip": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_turn_back_f6.png",
+      "stripSha256": "d8511941c8eb0ccca945e351385b8b243394dccb61f3e4dd77a62888d31bdf3b",
+      "sidecar": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_turn_back_f6.json",
+      "sidecarSha256": "d809e864929e419c03aedb52fdb061d73d2e0e2a952e168cbfede5431c22d412",
+      "framePixelSha256": [
+        "2d8b5c221a158e1120f0b24ec9278caf89ccaddbacd712fff18c8ac12c3ddccf",
+        "0e67151190ebdc35a6872933bd77a32722baf6fe67bf4092b293f566cc8d19bb",
+        "b0007966ec8b42458c1b0e61b748398d96d8f0598b0ddc364523e969d00a8e9d",
+        "aacdde0df8728d9cd26f8331ba443e7cbd69150336e31771f998a028c22c6a08",
+        "a017d03c044fbb0362c3e90685ba9b60ffd3dfdcc5aac84f233d16247486d865",
+        "ad751ee35946bd91a227c064a21e407f3c147cb1fa5d70486d9a2c6cec2c2d78"
+      ],
+      "frameBoundsExclusive": [
+        [
+          24,
+          9,
+          104,
+          158
+        ],
+        [
+          24,
+          8,
+          103,
+          158
+        ],
+        [
+          24,
+          8,
+          103,
+          158
+        ],
+        [
+          25,
+          8,
+          103,
+          158
+        ],
+        [
+          25,
+          9,
+          103,
+          158
+        ],
+        [
+          26,
+          9,
+          103,
+          158
+        ]
+      ],
+      "cellEdgeAlphaPixels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "keeper_prime_sit_side",
+      "strip": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_sit_side_f6.png",
+      "stripSha256": "85c445f5df0d6d3cdb963d518949ad0d5c7bc592fc34705f4810b4e62ff458ec",
+      "sidecar": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_sit_side_f6.json",
+      "sidecarSha256": "a3a6b9704d737dc5a51531bccad81a8efc3e8c9c9c79abd0106ccac14e04bdae",
+      "framePixelSha256": [
+        "2d8b5c221a158e1120f0b24ec9278caf89ccaddbacd712fff18c8ac12c3ddccf",
+        "af1bac05aeb5c578918a62959649e533224aef9ee8d97f14a67de641879d61e6",
+        "2883ffec1eb964628f5168e79ce51a56c2591784b2cf7a504f6ae3a802f56f75",
+        "5bc14e1b6cbc71b9f5031e2112709bd4f85d114947fdb495ce3a3789341b306e",
+        "ec14961dfeca72be670e60a2af737c3a55a1d4d3986d5fc2266f7c850afe5397",
+        "88f74e21ec45fb098dfa69df242dd893b52a83a3d2415ff08a18c30de245accf"
+      ],
+      "frameBoundsExclusive": [
+        [
+          24,
+          9,
+          104,
+          158
+        ],
+        [
+          23,
+          13,
+          105,
+          158
+        ],
+        [
+          19,
+          18,
+          109,
+          158
+        ],
+        [
+          14,
+          27,
+          115,
+          158
+        ],
+        [
+          10,
+          29,
+          118,
+          158
+        ],
+        [
+          11,
+          30,
+          117,
+          158
+        ]
+      ],
+      "cellEdgeAlphaPixels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "keeper_prime_stand_side",
+      "strip": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_stand_side_f6.png",
+      "stripSha256": "fcb854d569ae02a55ca0a93a42bc56e60af89d47123e4476b8c660e53eb2f88a",
+      "sidecar": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_stand_side_f6.json",
+      "sidecarSha256": "18bfce7de632ff8089e8ccace69c019fd659fc9cd718a24a27ace8bf529f475a",
+      "framePixelSha256": [
+        "88f74e21ec45fb098dfa69df242dd893b52a83a3d2415ff08a18c30de245accf",
+        "ec14961dfeca72be670e60a2af737c3a55a1d4d3986d5fc2266f7c850afe5397",
+        "5bc14e1b6cbc71b9f5031e2112709bd4f85d114947fdb495ce3a3789341b306e",
+        "2883ffec1eb964628f5168e79ce51a56c2591784b2cf7a504f6ae3a802f56f75",
+        "af1bac05aeb5c578918a62959649e533224aef9ee8d97f14a67de641879d61e6",
+        "2d8b5c221a158e1120f0b24ec9278caf89ccaddbacd712fff18c8ac12c3ddccf"
+      ],
+      "frameBoundsExclusive": [
+        [
+          11,
+          30,
+          117,
+          158
+        ],
+        [
+          10,
+          29,
+          118,
+          158
+        ],
+        [
+          14,
+          27,
+          115,
+          158
+        ],
+        [
+          19,
+          18,
+          109,
+          158
+        ],
+        [
+          23,
+          13,
+          105,
+          158
+        ],
+        [
+          24,
+          9,
+          104,
+          158
+        ]
+      ],
+      "cellEdgeAlphaPixels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "keeper_prime_neutral_standing-back",
+      "strip": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_neutral_standing-back_f1.png",
+      "stripSha256": "1cddf5ac365c407bab5cdd16737a0be294db068d51aae73aff1234b48af478d6",
+      "sidecar": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_neutral_standing-back_f1.json",
+      "sidecarSha256": "97fd92e43d20c999749617aa5bd71e11de2a1b4e4e2aab7ac9ad85b3f89ce94a",
+      "framePixelSha256": [
+        "ad751ee35946bd91a227c064a21e407f3c147cb1fa5d70486d9a2c6cec2c2d78"
+      ],
+      "frameBoundsExclusive": [
+        [
+          26,
+          9,
+          103,
+          158
+        ]
+      ],
+      "cellEdgeAlphaPixels": [
+        0
+      ]
+    }
+  ],
+  "exactEndpointChecks": {
+    "walkNeutralFramesExact": true,
+    "stopEndpointExact": true,
+    "frontTurnStartExact": true,
+    "frontTurnEndByteIdentity": true,
+    "backTurnStartExact": true,
+    "backTurnEndExact": true,
+    "sitStartExact": true,
+    "standExactReverse": true
+  },
+  "deterministicChecks": {
+    "binaryAlpha": true,
+    "transparentCellEdges": true,
+    "fixedCellGeometry": [
+      128,
+      160
+    ],
+    "logicalCell": [
+      32,
+      40
+    ],
+    "density": 4,
+    "stripSidecarAgreement": true
+  },
+  "evidence": {
+    "contactSheet": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/evidence/keeper-prime-core-transitions-v1.png",
+    "sha256": "ff77ef6f3e25367e311fdcf348e3b1db2837898be790ae61078debd863f170a5"
+  },
+  "productionChanged": false,
+  "rollback": "Delete only art/drafts/keeper-prime-core-transitions-2026-10-12-v1 and its public review copies. Raw/runtime art and manifests are unchanged."
+}

@@ -7,7 +7,7 @@
   "principles": {
     "final": "Approved, immutable source strips. Editing begins by copying an item to Draft.",
     "draft": "Non-destructive playback recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
-    "transitions": "Every action must carry an inspectable walk \u2192 stop \u2192 optional facing turn \u2192 action ingress. The engine varies only the walk-cycle count from world placement; a door may hide a costume swap but does not exempt the action ingress."
+    "transitions": "Every action must carry an inspectable walk \u2192 stop \u2192 optional facing turn \u2192 action ingress and a compatible action \u2192 stop \u2192 walk egress. Root motion continues through stop/start; the engine varies only walking distance from world placement."
   },
   "lanes": {
     "final": [
@@ -16,7 +16,7 @@
         "lane": "final",
         "name": "keeper_turn_front",
         "title": "Turn right profile to front",
-        "description": "Approved V2 complete moving-model redraw with an exact canonical front endpoint.",
+        "description": "Historical V2 approval retained immutably. Live route review later rejected its joins; it is not the Keeper Prime transition foundation.",
         "assetId": "final:keeper_turn_front:v2",
         "timeline": [
           {
@@ -112,7 +112,9 @@
           "standard",
           "turn",
           "front-endpoint",
-          "approved-v2"
+          "approved-v2",
+          "historical",
+          "superseded-route-foundation"
         ]
       },
       {
@@ -120,7 +122,7 @@
         "lane": "final",
         "name": "keeper_turn_left_front",
         "title": "Turn left profile to front",
-        "description": "Approved V2 complete moving-model redraw with an exact canonical front endpoint.",
+        "description": "Historical V2 approval retained immutably. Live route review later rejected its joins; it is not the Keeper Prime transition foundation.",
         "assetId": "final:keeper_turn_left_front:v2",
         "timeline": [
           {
@@ -216,11 +218,787 @@
           "standard",
           "turn",
           "front-endpoint",
-          "approved-v2"
+          "approved-v2",
+          "historical",
+          "superseded-route-foundation"
         ]
       }
     ],
-    "draft": []
+    "draft": [
+      {
+        "id": "keeper_prime_walk_to_stop-kp-v1-draft",
+        "lane": "draft",
+        "name": "keeper_prime_walk_to_stop",
+        "title": "1. Walk \u2192 stop",
+        "description": "A moving walk decelerates into the one exact Keeper Prime side stop; there are no stationary walking frames.",
+        "assetId": "draft:keeper_prime_walk_stop:kp-v1",
+        "timeline": [
+          {
+            "id": "keeper_prime_walk_to_stop-frame-1",
+            "frame": 0
+          },
+          {
+            "id": "keeper_prime_walk_to_stop-frame-2",
+            "frame": 1
+          },
+          {
+            "id": "keeper_prime_walk_to_stop-frame-3",
+            "frame": 2
+          },
+          {
+            "id": "keeper_prime_walk_to_stop-frame-4",
+            "frame": 3
+          }
+        ],
+        "sectionLoops": [],
+        "overallLoop": false,
+        "transitionPolicy": "required",
+        "transitionReason": "Keeper Prime Draft V1. Root motion continues through deceleration; shared stop/action endpoints are exact pixels.",
+        "transitionRoute": [
+          {
+            "id": "walk",
+            "role": "walk",
+            "label": "Walk \u2014 continuous root motion",
+            "assetId": "draft:keeper_prime_walk_cycle:kp-v1",
+            "frames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              1,
+              2,
+              3,
+              4
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "startPose": "standing-side-right",
+            "endPose": "standing-side-right"
+          },
+          {
+            "id": "stop",
+            "role": "stop",
+            "label": "Decelerate to exact stop",
+            "assetId": "draft:keeper_prime_walk_stop:kp-v1",
+            "frames": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              0.8,
+              0.55,
+              0.3,
+              0.0
+            ],
+            "startPose": "standing-side-right",
+            "endPose": "standing-side-right"
+          }
+        ],
+        "sourceDraft": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1",
+        "tags": [
+          "keeper-prime",
+          "core-transition",
+          "awaiting-approval",
+          "walk",
+          "stop"
+        ],
+        "updatedAt": "2026-10-12T00:00:00Z"
+      },
+      {
+        "id": "keeper_prime_stop_to_walk-kp-v1-draft",
+        "lane": "draft",
+        "name": "keeper_prime_stop_to_walk",
+        "title": "2. Stop \u2192 walk",
+        "description": "The exact stop reverses the same four transition frames, then joins a temporally reversed walk phase while root motion accelerates.",
+        "assetId": "draft:keeper_prime_walk_stop:kp-v1",
+        "timeline": [
+          {
+            "id": "keeper_prime_stop_to_walk-frame-1",
+            "frame": 3
+          },
+          {
+            "id": "keeper_prime_stop_to_walk-frame-2",
+            "frame": 2
+          },
+          {
+            "id": "keeper_prime_stop_to_walk-frame-3",
+            "frame": 1
+          },
+          {
+            "id": "keeper_prime_stop_to_walk-frame-4",
+            "frame": 0
+          }
+        ],
+        "sectionLoops": [],
+        "overallLoop": false,
+        "transitionPolicy": "required",
+        "transitionReason": "Keeper Prime Draft V1. Root motion continues through deceleration; shared stop/action endpoints are exact pixels.",
+        "transitionRoute": [
+          {
+            "id": "stop-hold",
+            "role": "stop",
+            "label": "Exact Keeper Prime side stop",
+            "assetId": "draft:keeper_prime_walk_stop:kp-v1",
+            "frames": [
+              3
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              0.0
+            ],
+            "startPose": "standing-side-right",
+            "endPose": "standing-side-right"
+          },
+          {
+            "id": "walk-start",
+            "role": "stop",
+            "label": "Exact reverse: stop to walk",
+            "assetId": "draft:keeper_prime_walk_stop:kp-v1",
+            "frames": [
+              3,
+              2,
+              1,
+              0
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              0.0,
+              0.3,
+              0.55,
+              0.8
+            ],
+            "startPose": "standing-side-right",
+            "endPose": "walking-side-right"
+          },
+          {
+            "id": "walk-resume",
+            "role": "walk",
+            "label": "Walk away \u2014 continuous root motion",
+            "assetId": "draft:keeper_prime_walk_cycle:kp-v1",
+            "frames": [
+              4,
+              3,
+              2,
+              1,
+              0,
+              7,
+              6,
+              5,
+              4
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "startPose": "walking-side-right",
+            "endPose": "standing-side-right"
+          }
+        ],
+        "sourceDraft": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1",
+        "tags": [
+          "keeper-prime",
+          "core-transition",
+          "awaiting-approval",
+          "stop",
+          "walk-start"
+        ],
+        "updatedAt": "2026-10-12T00:00:00Z"
+      },
+      {
+        "id": "keeper_prime_walk_turn_front-kp-v1-draft",
+        "lane": "draft",
+        "name": "keeper_prime_walk_turn_front",
+        "title": "3. Walk \u2192 stop \u2192 full face",
+        "description": "Walk, decelerate to the shared stop, then turn to the byte-identical Keeper Prime front selected from V2 frame 6.",
+        "assetId": "draft:keeper_prime_turn_front:kp-v1",
+        "timeline": [
+          {
+            "id": "keeper_prime_walk_turn_front-frame-1",
+            "frame": 0
+          },
+          {
+            "id": "keeper_prime_walk_turn_front-frame-2",
+            "frame": 1
+          },
+          {
+            "id": "keeper_prime_walk_turn_front-frame-3",
+            "frame": 2
+          },
+          {
+            "id": "keeper_prime_walk_turn_front-frame-4",
+            "frame": 3
+          },
+          {
+            "id": "keeper_prime_walk_turn_front-frame-5",
+            "frame": 4
+          },
+          {
+            "id": "keeper_prime_walk_turn_front-frame-6",
+            "frame": 5
+          }
+        ],
+        "sectionLoops": [],
+        "overallLoop": false,
+        "transitionPolicy": "required",
+        "transitionReason": "Keeper Prime Draft V1. Root motion continues through deceleration; shared stop/action endpoints are exact pixels.",
+        "transitionRoute": [
+          {
+            "id": "walk",
+            "role": "walk",
+            "label": "Walk \u2014 continuous root motion",
+            "assetId": "draft:keeper_prime_walk_cycle:kp-v1",
+            "frames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              1,
+              2,
+              3,
+              4
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "startPose": "standing-side-right",
+            "endPose": "standing-side-right"
+          },
+          {
+            "id": "stop",
+            "role": "stop",
+            "label": "Decelerate to exact stop",
+            "assetId": "draft:keeper_prime_walk_stop:kp-v1",
+            "frames": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              0.8,
+              0.55,
+              0.3,
+              0.0
+            ],
+            "startPose": "standing-side-right",
+            "endPose": "standing-side-right"
+          },
+          {
+            "id": "turn-front",
+            "role": "turn",
+            "label": "Turn to exact Keeper Prime full face",
+            "assetId": "draft:keeper_prime_turn_front:kp-v1",
+            "frames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "startPose": "standing-side-right",
+            "endPose": "standing-front"
+          }
+        ],
+        "sourceDraft": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1",
+        "tags": [
+          "keeper-prime",
+          "core-transition",
+          "awaiting-approval",
+          "turn",
+          "front",
+          "exact-endpoint"
+        ],
+        "updatedAt": "2026-10-12T00:00:00Z"
+      },
+      {
+        "id": "keeper_prime_walk_turn_back-kp-v1-draft",
+        "lane": "draft",
+        "name": "keeper_prime_walk_turn_back",
+        "title": "4. Walk \u2192 stop \u2192 fully away",
+        "description": "Walk, decelerate to the shared stop, then turn until the Keeper is completely back-facing.",
+        "assetId": "draft:keeper_prime_turn_back:kp-v1",
+        "timeline": [
+          {
+            "id": "keeper_prime_walk_turn_back-frame-1",
+            "frame": 0
+          },
+          {
+            "id": "keeper_prime_walk_turn_back-frame-2",
+            "frame": 1
+          },
+          {
+            "id": "keeper_prime_walk_turn_back-frame-3",
+            "frame": 2
+          },
+          {
+            "id": "keeper_prime_walk_turn_back-frame-4",
+            "frame": 3
+          },
+          {
+            "id": "keeper_prime_walk_turn_back-frame-5",
+            "frame": 4
+          },
+          {
+            "id": "keeper_prime_walk_turn_back-frame-6",
+            "frame": 5
+          }
+        ],
+        "sectionLoops": [],
+        "overallLoop": false,
+        "transitionPolicy": "required",
+        "transitionReason": "Keeper Prime Draft V1. Root motion continues through deceleration; shared stop/action endpoints are exact pixels.",
+        "transitionRoute": [
+          {
+            "id": "walk",
+            "role": "walk",
+            "label": "Walk \u2014 continuous root motion",
+            "assetId": "draft:keeper_prime_walk_cycle:kp-v1",
+            "frames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              1,
+              2,
+              3,
+              4
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "startPose": "standing-side-right",
+            "endPose": "standing-side-right"
+          },
+          {
+            "id": "stop",
+            "role": "stop",
+            "label": "Decelerate to exact stop",
+            "assetId": "draft:keeper_prime_walk_stop:kp-v1",
+            "frames": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              0.8,
+              0.55,
+              0.3,
+              0.0
+            ],
+            "startPose": "standing-side-right",
+            "endPose": "standing-side-right"
+          },
+          {
+            "id": "turn-back",
+            "role": "turn",
+            "label": "Turn until completely back-facing",
+            "assetId": "draft:keeper_prime_turn_back:kp-v1",
+            "frames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "startPose": "standing-side-right",
+            "endPose": "standing-back"
+          }
+        ],
+        "sourceDraft": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1",
+        "tags": [
+          "keeper-prime",
+          "core-transition",
+          "awaiting-approval",
+          "turn",
+          "back",
+          "exact-endpoint"
+        ],
+        "updatedAt": "2026-10-12T00:00:00Z"
+      },
+      {
+        "id": "keeper_prime_walk_stop_sit-kp-v1-draft",
+        "lane": "draft",
+        "name": "keeper_prime_walk_stop_sit",
+        "title": "5. Walk \u2192 stop \u2192 sit",
+        "description": "Walk and decelerate to the exact side stop before the seated action begins.",
+        "assetId": "draft:keeper_prime_sit_side:kp-v1",
+        "timeline": [
+          {
+            "id": "keeper_prime_walk_stop_sit-frame-1",
+            "frame": 0
+          },
+          {
+            "id": "keeper_prime_walk_stop_sit-frame-2",
+            "frame": 1
+          },
+          {
+            "id": "keeper_prime_walk_stop_sit-frame-3",
+            "frame": 2
+          },
+          {
+            "id": "keeper_prime_walk_stop_sit-frame-4",
+            "frame": 3
+          },
+          {
+            "id": "keeper_prime_walk_stop_sit-frame-5",
+            "frame": 4
+          },
+          {
+            "id": "keeper_prime_walk_stop_sit-frame-6",
+            "frame": 5
+          }
+        ],
+        "sectionLoops": [],
+        "overallLoop": false,
+        "transitionPolicy": "required",
+        "transitionReason": "Keeper Prime Draft V1. Root motion continues through deceleration; shared stop/action endpoints are exact pixels.",
+        "transitionRoute": [
+          {
+            "id": "walk",
+            "role": "walk",
+            "label": "Walk \u2014 continuous root motion",
+            "assetId": "draft:keeper_prime_walk_cycle:kp-v1",
+            "frames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              1,
+              2,
+              3,
+              4
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "startPose": "standing-side-right",
+            "endPose": "standing-side-right"
+          },
+          {
+            "id": "stop",
+            "role": "stop",
+            "label": "Decelerate to exact stop",
+            "assetId": "draft:keeper_prime_walk_stop:kp-v1",
+            "frames": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              0.8,
+              0.55,
+              0.3,
+              0.0
+            ],
+            "startPose": "standing-side-right",
+            "endPose": "standing-side-right"
+          },
+          {
+            "id": "sit",
+            "role": "action",
+            "label": "Sit from exact stop",
+            "assetId": "draft:keeper_prime_sit_side:kp-v1",
+            "frames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "startPose": "standing-side-right",
+            "endPose": "sitting-side-right"
+          }
+        ],
+        "sourceDraft": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1",
+        "tags": [
+          "keeper-prime",
+          "core-transition",
+          "awaiting-approval",
+          "sit",
+          "seated"
+        ],
+        "updatedAt": "2026-10-12T00:00:00Z"
+      },
+      {
+        "id": "keeper_prime_sit_stop_walk-kp-v1-draft",
+        "lane": "draft",
+        "name": "keeper_prime_sit_stop_walk",
+        "title": "6. Sit \u2192 stop \u2192 walk",
+        "description": "Stand uses the exact reverse of the sit frames, lands on the shared stop, then reverses the stop transition and walks away.",
+        "assetId": "draft:keeper_prime_stand_side:kp-v1",
+        "timeline": [
+          {
+            "id": "keeper_prime_sit_stop_walk-frame-1",
+            "frame": 0
+          },
+          {
+            "id": "keeper_prime_sit_stop_walk-frame-2",
+            "frame": 1
+          },
+          {
+            "id": "keeper_prime_sit_stop_walk-frame-3",
+            "frame": 2
+          },
+          {
+            "id": "keeper_prime_sit_stop_walk-frame-4",
+            "frame": 3
+          },
+          {
+            "id": "keeper_prime_sit_stop_walk-frame-5",
+            "frame": 4
+          },
+          {
+            "id": "keeper_prime_sit_stop_walk-frame-6",
+            "frame": 5
+          }
+        ],
+        "sectionLoops": [],
+        "overallLoop": false,
+        "transitionPolicy": "required",
+        "transitionReason": "Keeper Prime Draft V1. Root motion continues through deceleration; shared stop/action endpoints are exact pixels.",
+        "transitionRoute": [
+          {
+            "id": "stand",
+            "role": "action",
+            "label": "Exact reverse: sit to stop",
+            "assetId": "draft:keeper_prime_stand_side:kp-v1",
+            "frames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "startPose": "sitting-side-right",
+            "endPose": "standing-side-right"
+          },
+          {
+            "id": "stop-hold",
+            "role": "stop",
+            "label": "Exact Keeper Prime side stop",
+            "assetId": "draft:keeper_prime_walk_stop:kp-v1",
+            "frames": [
+              3
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              0.0
+            ],
+            "startPose": "standing-side-right",
+            "endPose": "standing-side-right"
+          },
+          {
+            "id": "walk-start",
+            "role": "stop",
+            "label": "Exact reverse: stop to walk",
+            "assetId": "draft:keeper_prime_walk_stop:kp-v1",
+            "frames": [
+              3,
+              2,
+              1,
+              0
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              0.0,
+              0.3,
+              0.55,
+              0.8
+            ],
+            "startPose": "standing-side-right",
+            "endPose": "walking-side-right"
+          },
+          {
+            "id": "walk-resume",
+            "role": "walk",
+            "label": "Walk away \u2014 continuous root motion",
+            "assetId": "draft:keeper_prime_walk_cycle:kp-v1",
+            "frames": [
+              4,
+              3,
+              2,
+              1,
+              0,
+              7,
+              6,
+              5,
+              4
+            ],
+            "repeats": 1,
+            "mirror": false,
+            "motion": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "startPose": "walking-side-right",
+            "endPose": "standing-side-right"
+          }
+        ],
+        "sourceDraft": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1",
+        "tags": [
+          "keeper-prime",
+          "core-transition",
+          "awaiting-approval",
+          "stand",
+          "walk-start",
+          "exact-reverse"
+        ],
+        "updatedAt": "2026-10-12T00:00:00Z"
+      }
+    ]
   },
   "assets": [
     {
@@ -336,10 +1114,178 @@
       "sourceSidecar": "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/drafts/keeper_turn_left_front/keeper_turn_left_front_f6.json",
       "sourceSidecarSha256": "83de4b34ebd9ffe8cd1d3aaff9883f80a4566497af72c352a95313a47b96b3bb",
       "immutable": true
+    },
+    {
+      "id": "draft:keeper_prime_walk_cycle:kp-v1",
+      "name": "keeper_prime_walk_cycle",
+      "file": "/keeper-animation-workbench/assets/draft/keeper_prime_walk_cycle-kp-v1-f2a8ccfab05ccfbc.png",
+      "sha256": "f2a8ccfab05ccfbc53935ea5687ed526ab124026fd03e1d30b31c1e76db5433c",
+      "w": 32,
+      "h": 40,
+      "frames": 9,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "outfit": "standard",
+      "loop": true,
+      "mirrorSafe": true,
+      "source": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_walk_cycle_f9.png",
+      "sourceSidecar": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_walk_cycle_f9.json",
+      "sourceSidecarSha256": "4ec84b40ac33f039b7772e9719f98f42b7e7e73f92491da13f6e775544f1249c",
+      "immutable": false
+    },
+    {
+      "id": "draft:keeper_prime_walk_stop:kp-v1",
+      "name": "keeper_prime_walk_stop",
+      "file": "/keeper-animation-workbench/assets/draft/keeper_prime_walk_stop-kp-v1-b2e90b69b9e3d1ad.png",
+      "sha256": "b2e90b69b9e3d1ad8b534516a6585417604638379b2cf377be559037abba66f2",
+      "w": 32,
+      "h": 40,
+      "frames": 4,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "startPose": "walking-side-right",
+      "endPose": "standing-side-right",
+      "outfit": "standard",
+      "loop": false,
+      "mirrorSafe": true,
+      "source": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_walk_stop_f4.png",
+      "sourceSidecar": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_walk_stop_f4.json",
+      "sourceSidecarSha256": "3f04f266f4190ad778ef494ada8cc6cea2c60f58e31a9d8f6c9aefb7cc52919d",
+      "immutable": false
+    },
+    {
+      "id": "draft:keeper_prime_turn_front:kp-v1",
+      "name": "keeper_prime_turn_front",
+      "file": "/keeper-animation-workbench/assets/draft/keeper_prime_turn_front-kp-v1-535167c7b9c5694c.png",
+      "sha256": "535167c7b9c5694ccfefef7537d0e40e6df4c4633d859594a8d537aace9a75f6",
+      "w": 32,
+      "h": 40,
+      "frames": 6,
+      "fps": 6,
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "startPose": "standing-side-right",
+      "endPose": "standing-front",
+      "outfit": "standard",
+      "loop": false,
+      "mirrorSafe": true,
+      "source": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_turn_front_f6.png",
+      "sourceSidecar": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_turn_front_f6.json",
+      "sourceSidecarSha256": "64430f68ef60440b7635e4922a59610ce87af7be1bb2c2ccdd9c1c9d986f7ff2",
+      "immutable": false
+    },
+    {
+      "id": "draft:keeper_prime_turn_back:kp-v1",
+      "name": "keeper_prime_turn_back",
+      "file": "/keeper-animation-workbench/assets/draft/keeper_prime_turn_back-kp-v1-d8511941c8eb0ccc.png",
+      "sha256": "d8511941c8eb0ccca945e351385b8b243394dccb61f3e4dd77a62888d31bdf3b",
+      "w": 32,
+      "h": 40,
+      "frames": 6,
+      "fps": 6,
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "startPose": "standing-side-right",
+      "endPose": "standing-back",
+      "outfit": "standard",
+      "loop": false,
+      "mirrorSafe": true,
+      "source": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_turn_back_f6.png",
+      "sourceSidecar": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_turn_back_f6.json",
+      "sourceSidecarSha256": "d809e864929e419c03aedb52fdb061d73d2e0e2a952e168cbfede5431c22d412",
+      "immutable": false
+    },
+    {
+      "id": "draft:keeper_prime_sit_side:kp-v1",
+      "name": "keeper_prime_sit_side",
+      "file": "/keeper-animation-workbench/assets/draft/keeper_prime_sit_side-kp-v1-85c445f5df0d6d3c.png",
+      "sha256": "85c445f5df0d6d3cdb963d518949ad0d5c7bc592fc34705f4810b4e62ff458ec",
+      "w": 32,
+      "h": 40,
+      "frames": 6,
+      "fps": 6,
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "startPose": "standing-side-right",
+      "endPose": "sitting-side-right",
+      "outfit": "standard",
+      "loop": false,
+      "mirrorSafe": true,
+      "source": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_sit_side_f6.png",
+      "sourceSidecar": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_sit_side_f6.json",
+      "sourceSidecarSha256": "a3a6b9704d737dc5a51531bccad81a8efc3e8c9c9c79abd0106ccac14e04bdae",
+      "immutable": false
+    },
+    {
+      "id": "draft:keeper_prime_stand_side:kp-v1",
+      "name": "keeper_prime_stand_side",
+      "file": "/keeper-animation-workbench/assets/draft/keeper_prime_stand_side-kp-v1-fcb854d569ae02a5.png",
+      "sha256": "fcb854d569ae02a55ca0a93a42bc56e60af89d47123e4476b8c660e53eb2f88a",
+      "w": 32,
+      "h": 40,
+      "frames": 6,
+      "fps": 6,
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "startPose": "sitting-side-right",
+      "endPose": "standing-side-right",
+      "outfit": "standard",
+      "loop": false,
+      "mirrorSafe": true,
+      "source": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_stand_side_f6.png",
+      "sourceSidecar": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_stand_side_f6.json",
+      "sourceSidecarSha256": "18bfce7de632ff8089e8ccace69c019fd659fc9cd718a24a27ace8bf529f475a",
+      "immutable": false
+    },
+    {
+      "id": "draft:keeper_prime_neutral_standing-back:kp-v1",
+      "name": "keeper_prime_neutral_standing-back",
+      "file": "/keeper-animation-workbench/assets/draft/keeper_prime_neutral_standing-back-kp-v1-1cddf5ac365c407b.png",
+      "sha256": "1cddf5ac365c407bab5cdd16737a0be294db068d51aae73aff1234b48af478d6",
+      "w": 32,
+      "h": 40,
+      "frames": 1,
+      "fps": 0,
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "startPose": "standing-back",
+      "endPose": "standing-back",
+      "outfit": "standard",
+      "loop": false,
+      "mirrorSafe": true,
+      "source": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_neutral_standing-back_f1.png",
+      "sourceSidecar": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/drafts/keeper_prime_neutral_standing-back_f1.json",
+      "sourceSidecarSha256": "97fd92e43d20c999749617aa5bd71e11de2a1b4e4e2aab7ac9ad85b3f89ce94a",
+      "immutable": false
     }
   ],
   "storage": {
-    "drafts": "browser-local under keeper-animation-workbench:v1; export/import JSON is the portable handoff",
+    "drafts": "repository Keeper Prime proposals plus browser-local edits under keeper-animation-workbench:v2; export/import JSON is the portable handoff",
     "final": "repository catalogue only; browser tools never mutate Final records"
   },
   "featureContract": {
@@ -362,10 +1308,25 @@
     ],
     "ingressStages": [
       "walk",
-      "stop",
+      "moving-stop",
       "optional-turn",
       "action"
     ],
+    "egressStages": [
+      "action",
+      "exact-stop",
+      "reversed-walk-start",
+      "walk"
+    ],
+    "coreReviewRoutes": [
+      "walk-to-stop",
+      "stop-to-walk",
+      "walk-stop-turn-front",
+      "walk-stop-turn-back",
+      "walk-stop-sit",
+      "sit-stop-walk"
+    ],
+    "rootMotionPreview": "Per-frame motion continues through stop/start; no walking-on-the-spot preview frames.",
     "walkExtension": {
       "owner": "game-engine",
       "strategy": "deterministic-runtime-placement",
@@ -378,6 +1339,8 @@
   "provenance": {
     "v2Register": "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/batch-register.json",
     "v2RegisterSha256": "1696bc89de5b97ab86f65977b4cd64772ff876940231eca3d95b31689ceee433",
+    "keeperPrimeCoreRegister": "art/drafts/keeper-prime-core-transitions-2026-10-12-v1/batch-register.json",
+    "keeperPrimeCoreRegisterSha256": "79c6edf251958dfae15d30d26b7c8ac62b36a6f71342fb93bf82629c87cbe1ff",
     "runtimeManifest": "public/sprites/manifest.json",
     "runtimeManifestSha256": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
     "productionSpritesChanged": false,

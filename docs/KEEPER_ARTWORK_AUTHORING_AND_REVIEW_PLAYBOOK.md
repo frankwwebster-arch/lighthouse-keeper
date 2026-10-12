@@ -17,8 +17,8 @@ shortlist or an earlier sample set—defines later correction scope.
 
 | Area | Current status | Consequence |
 |---|---|---|
-| Side-right standard-uniform identity | The canonical standing side-right raster is pinned | Use it and the high-resolution walk source as identity and proportion authorities |
-| Full-face standard-uniform identity | Frank approved V1 on 12 October 2026; its standard neutral is byte-identical to the selected primary front raster | Use it as geometry authority for small reversible review batches; production promotion still requires separate explicit approval |
+| Keeper Prime identity | Frank selected V2 right-turn frame 6, byte-identical to `keeper_neutral_standing-front_f1.png`, as the one model from which everything stems | Use Keeper Prime as the binding identity for every direction, pose, outfit and expression; production promotion still requires separate explicit approval |
+| Side-right standard-uniform stop | A new Keeper Prime-derived side stop is isolated in `keeper-prime-side-foundation-2026-10-12-v1` | Use it as the shared Draft transition endpoint; the older production side raster is choreography/pose evidence only |
 | Artist-smock design | The V10 costume design is accepted; seven V11 authored animations are active review drafts | Keep this family internally consistent and await exact-name platform decisions before production promotion |
 | Standard-uniform snooker route | The complete route is visually accepted and is an active `keeper_snooker` review draft | The platform verdict is still required; production remains the old eight-frame strip |
 | Bathrobe | No replacement family is accepted | Do not revive head transfer, beard transfer or procedural redraw experiments; wait for exact-name platform requests |
@@ -54,16 +54,26 @@ is limited to the standard-uniform side-to-front turns. Its V1 F5-only head
 transplants were rejected; V2 redraws the complete moving models in F1–F5 and
 locks F6 to exact canon, with deterministic endpoint-geometry checks. Frank
 approved both V2 turns for the Animation Workbench Final lane on 12 October;
-this is not production promotion. The full read-only 62-asset scope is recorded in
+this is not production promotion. Running-route review later rejected their
+joins as a foundation for further redrafting; retain them only as immutable
+historical Final evidence. Their exact right-turn F6 became **Keeper Prime
+(KP)**. The first KP transition Draft is
+`art/drafts/keeper-prime-core-transitions-2026-10-12-v1/`, containing six
+complete routes around one exact side stop. The full read-only 62-asset scope is recorded in
 `docs/KEEPER_FULL_FACE_INVENTORY.md` and
 `data/keeper_full_face_inventory.json`.
 
-The canonical side-right gameplay raster is:
+The legacy production side-right gameplay raster is:
 
 - `art/raw/keeper-first-batch/keeper_neutral_standing-side-right_f1.png`
 - SHA-256 `02106cfc54b224c8d4e9985e58420f1350f114d24e2e6c6258cad68e513657ce`
 - 128 × 160 source pixels, representing a 32 × 40 logical cell at density 4
 - logical anchor `[16, 40]`
+
+It remains unchanged in production, but is no longer an identity authority.
+Use it only for pose/choreography and current-runtime comparison. The proposed
+Keeper Prime side stop is versioned separately and must be approved through the
+new complete-route Draft before any promotion.
 
 The fuller canon is a linked identity system, not merely a beard outline. The
 compact rectangular eye, stepped forehead, compact angular nose, ear,
@@ -407,13 +417,16 @@ eight-frame production strip is unchanged.
 The separate `/animation-workbench` surface complements, but does not replace,
 the exact-name `/keeper-review/` workflow. The established reviewer remains the
 source for amendment decisions and handoffs. The workbench is the place to
-assemble approved material into editable Draft recipes and judge complete
-action ingress routes.
+assemble immutable history and versioned proposals into editable Draft recipes
+and judge complete ingress and egress routes.
 
 Final workbench items are immutable and repository-backed. Frame copying,
 removal, reordering and section repetition begin only after **Copy to Draft**;
 these operations change frame references, never approved sprite bytes. Every
-animation must expose `walk → stop → optional front/back turn → action`. The
+animation must expose `walk → moving stop → optional front/back turn → action`
+and return compatibly through `action → exact stop → reversed start → walk`.
+The stop/start preview retains per-frame root motion so no walking pose is held
+stationary. The
 game engine alone extends the walk deterministically from world placement; no
 distance-specific walk count belongs in an authored recipe. Walking begins
 while the Keeper is still fully hidden behind the departure door, so his first

@@ -1,0 +1,106 @@
+{
+  "batchId": "keeper-prime-side-foundation-2026-10-12-v1",
+  "status": "incorporated-into-core-transition-draft-awaiting-route-approval",
+  "identityName": "Keeper Prime",
+  "identityShorthand": "KP",
+  "identityRule": "The exact front image is the sole binding identity authority. Every other Keeper image must derive from Keeper Prime.",
+  "keeperPrime": {
+    "source": "art/raw/keeper-first-batch/keeper_neutral_standing-front_f1.png",
+    "sourceSha256": "6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a",
+    "draftAlias": "art/drafts/keeper-prime-side-foundation-2026-10-12-v1/drafts/keeper_prime_neutral_standing-front_f1.png",
+    "draftAliasSha256": "6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a",
+    "byteIdentical": true
+  },
+  "poseReferenceOnly": {
+    "source": "art/raw/keeper-first-batch/keeper_neutral_standing-side-right_f1.png",
+    "sha256": "02106cfc54b224c8d4e9985e58420f1350f114d24e2e6c6258cad68e513657ce",
+    "identityAuthority": false
+  },
+  "generatedSource": {
+    "file": "art/drafts/keeper-prime-side-foundation-2026-10-12-v1/generated-sources/keeper_prime_neutral_standing-side-right-generated.png",
+    "sha256": "f1d3f453a01dda021152732c8f574bc5ef821e7db2b9a4e2f0bd735cb756120b",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: identity-preserve\nAsset type: foundational 2D game-sprite model reference, single full-body pose\nPrimary request: Create the exact right-profile neutral standing view of the SAME Lighthouse Keeper shown in Image 1. Image 1 is the sole binding identity authority. Everything\u2014adult proportions, head-to-body ratio, rotund torso, cap size and construction, blue-and-cream uniform, dark trousers and boots, beard mass, moustache, restrained expression, palette, outline weight and rendering finish\u2014must stem from Image 1. Image 2 supplies only the right-profile orientation, arms-down stance, foot placement and floor-facing choreography; do not copy Image 2's slimmer body, different face, hard/jagged outline or earlier model family.\nInput images: Image 1: sole identity and rendering authority; Image 2: pose/orientation reference only.\nScene/backdrop: genuinely transparent background.\nSubject: one adult lighthouse keeper standing completely still in exact right profile, arms relaxed naturally at his sides, feet together on one stable baseline. Preserve Image 1's slightly rotund body, broad established beard and mature restrained character. The visible eye is a solid dark rectangular eye with no white glint. The moustache is clearly separate from a readable closed mouth. The nose, ear, cap brim, beard and chest must form a convincing clean profile of Image 1, not a new character.\nStyle/medium: polished high-resolution pixel-art/cartoon sprite matching Image 1 exactly; same color palette, soft but deliberate outline treatment, shading density and material finish.\nComposition/framing: one isolated full-body character centered on a transparent canvas, generous transparent gutter, same apparent standing height and floor anchor as Image 1.\nConstraints: exact same Keeper identity as Image 1; adult and restrained; native rotundness retained; stable anatomy; exactly two arms, two hands, two legs and two boots; no prop; no text; no shadow; no floor; no scene; actual transparent background.\nAvoid: copying Image 2's old identity; thin or shortened torso; childlike proportions; oversized or round eye; eye glint; smile or pixie grin; open mouth; moustache merged into mouth; shortened or smooth bulb beard; thick black cartoon outline; altered cap; pose motion; detached limbs; cropped pixels; background; labels; watermark."
+  },
+  "candidates": [
+    {
+      "name": "keeper_prime_neutral_standing-side-right",
+      "file": "art/drafts/keeper-prime-side-foundation-2026-10-12-v1/drafts/keeper_prime_neutral_standing-side-right_f1.png",
+      "sha256": "6f782bb4d59003166b34573b3109d40bae5c408fc108106e256153d80f8c8e3f",
+      "pixelSha256": "2d8b5c221a158e1120f0b24ec9278caf89ccaddbacd712fff18c8ac12c3ddccf",
+      "boundsExclusive": [
+        24,
+        9,
+        104,
+        158
+      ],
+      "edgeAlphaPixels": 0,
+      "derivedBy": "image generation plus deterministic normalization"
+    },
+    {
+      "name": "keeper_prime_neutral_standing-side-left",
+      "file": "art/drafts/keeper-prime-side-foundation-2026-10-12-v1/drafts/keeper_prime_neutral_standing-side-left_f1.png",
+      "sha256": "c15c82bd04b4f982daf4d8be3ebc8fb65eb7589338f178473fdc0cf0e73c53ce",
+      "pixelSha256": "694f699e6f798328de89d13fd81a8c9a9c11cb6a660556885627f6c4fff5bbd2",
+      "boundsExclusive": [
+        24,
+        9,
+        104,
+        158
+      ],
+      "edgeAlphaPixels": 0,
+      "derivedBy": "exact horizontal mirror of the right candidate"
+    }
+  ],
+  "normalization": {
+    "sourceBoundsExclusive": [
+      351,
+      109,
+      775,
+      1297
+    ],
+    "frontBoundsExclusive": [
+      27,
+      9,
+      100,
+      158
+    ],
+    "normalizedBoundsExclusive": [
+      24,
+      9,
+      104,
+      158
+    ],
+    "targetOpaqueWidth": 80,
+    "targetOpaqueHeight": 149,
+    "baselineExclusive": 158,
+    "centreX": 64,
+    "normalization": "source alpha crop \u2192 80\u00d7149 LANCZOS \u2192 binary alpha \u2192 centred at x64/baseline158"
+  },
+  "evidence": {
+    "turnaround": "art/drafts/keeper-prime-side-foundation-2026-10-12-v1/evidence/keeper-prime-turnaround-v1.png",
+    "turnaroundSha256": "457944998e3e1b95eb0ce9e9c7cc077bfe6383bfce739d0b07595d989b42bd9b"
+  },
+  "transitionContract": {
+    "states": [
+      "walk",
+      "stop",
+      "action"
+    ],
+    "roundTrip": [
+      "walk-to-stop",
+      "stop-to-action",
+      "action-to-stop",
+      "stop-to-walk"
+    ],
+    "doorExample": "walk begins behind door \u2192 translated decelerating stop \u2192 exact side neutral \u2192 reach/open/return \u2192 exact side neutral held one 8fps tick \u2192 reversed stop/start \u2192 walk until fully door-occluded"
+  },
+  "checks": {
+    "productionChanged": false,
+    "frontByteIdentical": true,
+    "binaryAlpha": true,
+    "transparentCellEdges": true,
+    "leftExactMirror": true
+  },
+  "rollback": "Delete only art/drafts/keeper-prime-side-foundation-2026-10-12-v1. No raw/runtime art, manifest, existing draft or review export was changed."
+}

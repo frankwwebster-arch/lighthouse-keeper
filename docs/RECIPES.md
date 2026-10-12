@@ -92,7 +92,11 @@ Every asset in the game can be upgraded (Frank), so a recipe normally names an o
 
 Every action uses the same visible sequence:
 
-`walk → stop → optional turn to front/back → action`
+`walk → moving stop → optional turn to front/back → action`
+
+The compatible exit is:
+
+`action → exact stop → reversed walk-start → walk`
 
 The walk is not a fixed-length authored clip. The recipe compiler derives its
 distance from the Keeper's position and the target object/asset placement and
@@ -100,11 +104,13 @@ runs whole strides. Crucially, the walk cycle begins during the doorway's fully
 occluded `hide` step. The Keeper must emerge already mid-stride; he must never
 appear standing outside the door and only then begin walking. A hidden costume
 swap does not exempt the action from the remaining walk, stop, optional turn
-and action ingress.
+and action ingress. The stop/start bridge retains residual translation; walking
+poses must never play stationary while the Keeper is visibly stopping.
 
-The separate `/animation-workbench` uses one representative walk cycle and a
-door mask to review this handover. Runtime remains responsible for extending
-the whole-stride walk to the actual target position.
+The separate `/animation-workbench` uses representative translated walk frames,
+per-frame stop/start root motion and a door mask to review this handover.
+Runtime remains responsible for extending the whole-stride walk to the actual
+target position.
 
 ## Clean joins between clips
 

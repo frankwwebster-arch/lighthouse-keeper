@@ -125,6 +125,24 @@ width difference. Frank approved both V2 turns for the separate Animation
 Workbench Final lane on 12 October; this does not authorize raw/runtime
 promotion. No withdrawn face-camera work was reactivated.
 
+### Keeper Prime checkpoint — 12 October 2026
+
+Running the assembled ingress exposed unacceptable joins at the old
+walk/stop→V2-turn boundary and at the V2 near-front→exact-front endpoint. Frank
+therefore selected **Turn right profile to front F6**—the same pixels as ingress
+preview F19 and `keeper_neutral_standing-front_f1.png`—as the sole model from
+which every other Keeper image must stem. Its durable name is **Keeper Prime**
+(`KP`, slug `keeper_prime`). The V2 approval remains historical Final evidence,
+but those complete turn strips are superseded as a route foundation.
+
+The first new reversible proposal is
+`art/drafts/keeper-prime-core-transitions-2026-10-12-v1/`. It derives a shared
+side stop, walk, moving stop/start, exact-front turn, exact-back turn and exact
+reversible sit/stand from KP. Production art and manifests remain unchanged.
+The six approval routes are walk→stop, stop→walk, walk→stop→front,
+walk→stop→back, walk→stop→sit, and sit→stop→walk. Stop/start retains residual
+root motion; the Keeper must never walk on the spot.
+
 ## Neutral endpoint contract checkpoint — 10 October 2026
 
 `scripts/keeper-contract.ts` is now the authority for recipe-facing pose
@@ -1011,34 +1029,40 @@ The comprehensive per-sheet correction list is in
 ## Separate Draft/Final animation workbench (12 October 2026)
 
 Frank approved both complete moving-model V2 turn redraws with the exact
-wording “I am very happy with your V2.” They now seed the immutable Final lane
+wording “I am very happy with your V2.” They remain in the immutable Final lane
 of a new `/animation-workbench` surface. This is deliberately separate from
 `/keeper-review/`: it does not consume that platform's saved reviews, handoff
 queue or locks, and Final-lane acceptance is not production promotion.
 
-The workbench uses the same recipe structure for both Final and Draft. Final is
-locked; **Copy to Draft** makes a browser-local, JSON-exportable working copy.
+Later route review superseded the V2 strips as an authoring foundation without
+rewriting or deleting that approval history. Keeper Prime core-transition V1
+now supplies six repository-backed, unapproved Draft routes. Local edits use
+the same recipe structure as Final and remain browser-local/JSON-exportable.
 Draft controls copy, remove and reorder frame references, loop a complete
 animation, and repeat a selected contiguous section. They never rewrite source
 strips. Overlapping section loops fail closed.
 
-Ingress preview is mandatory for every animation: `walk → stop → optional
-front/back turn → action`. The game engine deterministically chooses the walk
+Complete transition preview is mandatory for every animation: `walk → moving
+stop → optional front/back turn → action`, with a compatible `action → exact
+stop → reversed walk-start → walk` egress. The game engine deterministically chooses the walk
 cycle count from the Keeper's starting position and the target asset's world
 placement; the workbench shows one representative cycle and authors no
 distance-specific count. The walk cycle begins while the Keeper is fully
 hidden behind the departure door; his first visible state is already in motion,
-and the workbench simulates that door-side reveal. The initial items use `walk → stop → action: approved
-V2 turn`; the left route mirrors only the mirror-safe walk/stop assets. A door
+and the workbench simulates that door-side reveal. The initial Keeper Prime
+Draft also carries residual translation through stop/start so the Keeper never
+walks on the spot. A door
 may hide a costume swap, but the resulting action still requires the same
-ingress preview. Metadata diagnostics check pose and outfit agreement at joins.
+complete transition preview. Metadata diagnostics check pose and outfit
+agreement at joins.
 
 Full architecture, extension points and verification are in
 `docs/KEEPER_ANIMATION_WORKBENCH.md`. The authoritative catalogue is
 `data/keeper_animation_workbench.json`; its public copy is byte-identical.
 `scripts/verify_keeper_animation_workbench.ts` checks approval evidence,
-content hashes, strip geometry, transparent cell gutters, immutable Final
-scope and complete ingress routes. Raw/runtime sprites and the manifest
+content hashes, strip/sidecar geometry, binary alpha, transparent cell gutters,
+immutable historical Final scope, all six Draft routes, residual root motion,
+shared exact endpoints and exact sit/stand reversal. Raw/runtime sprites and the manifest
 remain unchanged.
 
 ## Review-comments workflow for a later feedback round
