@@ -1,0 +1,117 @@
+{
+  "animation": "keeper_party_hat_put_on_back",
+  "sourceSha256": "4fbef541ae0d04553e81763a3ea14b56a6fdf337f816088c52180ef04b99a845",
+  "v1StripSha256": "319b7ea9e97fed22dd0c4cf35b501602b0ea4d054e21593818b3f40ca26d7adf",
+  "v2StripSha256": "f782da08d76f30182c748dd38fddfa9e95b676f4ab772cf10d42303ce9dae31f",
+  "draftStripSha256": "ced7a5b79298f3069aad8b6b0c525a358e87f20af73d639bf94d9b29c317fd2f",
+  "changedFrameNumbers": [
+    2
+  ],
+  "unchangedFrameNumbers": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "frameEvidence": [
+    {
+      "frame": 1,
+      "alphaBox": [
+        20,
+        73,
+        108,
+        222
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "a04830df54c9b2afe9a99b71322cd260838f712943879e0408a4546dbbbd260c",
+      "changedFromV2": false
+    },
+    {
+      "frame": 2,
+      "alphaBox": [
+        21,
+        38,
+        107,
+        222
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "eca7e5f4b0fa373395a8126c280f6d9b5a8101bcfd5e1c8485cb3f9b1365a605",
+      "changedFromV2": true
+    },
+    {
+      "frame": 3,
+      "alphaBox": [
+        19,
+        38,
+        108,
+        222
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "e0bb4ec584a8e4526396bf7290ae8586cbe798e5eb2a577115979b0c59f79780",
+      "changedFromV2": false
+    },
+    {
+      "frame": 4,
+      "alphaBox": [
+        19,
+        32,
+        109,
+        222
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "08453116da34249b8f6feb98dec4c69421a40aa838807c9c241fd1544e45c88d",
+      "changedFromV2": false
+    },
+    {
+      "frame": 5,
+      "alphaBox": [
+        16,
+        38,
+        113,
+        222
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "fe83f383f48c5511a843542a9b41dc812e6f20b74901cce3f2cd4a9cfab6c8f7",
+      "changedFromV2": false
+    },
+    {
+      "frame": 6,
+      "alphaBox": [
+        12,
+        42,
+        116,
+        222
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "d84488b0dfa5ffa7b6a1c28819e8edb2fe7f0b96b2b5fdc02c4497ff2b43481c",
+      "changedFromV2": false
+    },
+    {
+      "frame": 7,
+      "alphaBox": [
+        19,
+        38,
+        109,
+        222
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "8a2a58f2f0972cf7afac630514aa2983a7b153e85772ccaa2b4abd69a7c81644",
+      "changedFromV2": false
+    },
+    {
+      "frame": 8,
+      "alphaBox": [
+        19,
+        38,
+        109,
+        222
+      ],
+      "opaqueBorderPixelCount": 0,
+      "pixelSha256": "8a2a58f2f0972cf7afac630514aa2983a7b153e85772ccaa2b4abd69a7c81644",
+      "changedFromV2": false
+    }
+  ]
+}

@@ -21,6 +21,11 @@ is preserved as a separate sibling candidate in
 `art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/`; this batch's
 first variant remains unchanged for direct comparison and rollback.
 
+Frank's follow-up arm-plane correction is preserved as a third sibling in
+`art/drafts/keeper-party-hat-put-on-back-front-arm-plane-2026-10-12-v3/`.
+Frame 2 keeps both connected arms clear of the head while lifting the hat
+toward unchanged frame 3; canonical, v1 and v2 remain unchanged.
+
 Frank's later annotated right-hand-bag correction for `keeper_carry_shopping`
 is likewise preserved as a separate sibling candidate in
 `art/drafts/keeper-carry-shopping-right-bag-2026-10-12-v2/`. It authors the
