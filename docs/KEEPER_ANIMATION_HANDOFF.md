@@ -85,6 +85,29 @@ Rebuild this batch by running its five `build_*_family.py` scripts, followed by
 `scripts/verify_floor_asset_catalogue.py`. Explicit visual approval is still
 required before any active amendment may be promoted.
 
+## Full-face canon decision — 12 October 2026
+
+Frank selected two aligned frontal references as the foundation for normalising
+all face-to-camera Keeper animation:
+
+- primary canonical geometry:
+  `art/raw/keeper-first-batch/keeper_neutral_standing-front_f1.png`;
+- recent rendering-quality reference:
+  `art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_standing-front_f1.png`.
+
+These references intentionally converge on the same adult, restrained facial
+system: solid dark rectangular eyes, a defined separate moustache, a readable
+closed mouth, the established beard mass, and no generic smile or pixie grin.
+The standard neutral is the geometric authority; the V11 endpoint is the
+quality and finish reference. Emotion and action-specific expressions must be
+controlled deviations from this neutral base, never substitute neutral models.
+
+The next workstream belongs in a fresh task. It must first inventory every
+full-face/front-facing production animation and its outfit/action dependencies,
+then build a versioned full-face canon pack from these two selected references
+before normalising animation families in reviewable batches. Canonical and all
+historical draft assets remain untouched until explicit per-batch promotion.
+
 ## Neutral endpoint contract checkpoint — 10 October 2026
 
 `scripts/keeper-contract.ts` is now the authority for recipe-facing pose
@@ -1035,3 +1058,13 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 ## Ready-to-paste opening prompt for the next review iteration
 
 > Continue the Lighthouse Keeper amendment review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, `docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md`, `docs/review/keeper-animation-codex-responses-2026-10-12.json`, `art/drafts/keeper-review-amendments-2026-10-11-v1/README.md`, `art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/README.md`, `art/drafts/keeper-party-hat-put-on-back-front-arm-plane-2026-10-12-v3/README.md`, `art/drafts/keeper-carry-shopping-right-bag-2026-10-12-v2/README.md`, `art/drafts/keeper-play-drums-back-hands-2026-10-12-v2/README.md`, `art/drafts/keeper-put-record-removal-2026-10-12-v2/README.md` and `art/drafts/keeper-put-record-horizontal-frame5-2026-10-12-v3/README.md`. Treat handoff `d9081e53-2808-4b1f-8422-2df09cf38c3c` and its 81 exact names as the only scope. Review the 41 exact-name amendment candidates plus retained v2/v3 comparisons for `keeper_party_hat_put_on_back` and `keeper_put_record`, the `keeper_carry_shopping` frames-1/7 correction and the `keeper_play_drums_back` frame-6 correction. The party-hat v3 keeps frame-2 arms clear of the head; the put-record v3 keeps a level record in frame 5 and removes it in frames 6–8. Preserve canonical art, all historical variants and the 12 retained `withdrawn-by-user` face-to-camera candidates. The deleted `keeper_count_money` amendment must not be regenerated without a new explicit instruction. Do not reactivate, regenerate or promote any other face-to-camera amendment without an explicit new instruction. Iterate with Frank on `keeper_fish_seated`, `keeper_shower_exit` and `keeper_shower_wash`; leave `keeper_slide_side` deferred until helter-skelter geometry exists. Promote nothing without explicit approval.
+
+## Ready-to-paste opening prompt for full-face normalisation
+
+> Work in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md` and `docs/KEEPER_ANIMATION_HANDOFF.md` completely before changing anything. The new objective is to normalise every full-face/front-facing Keeper animation around the full-face canon Frank has selected. Use `art/raw/keeper-first-batch/keeper_neutral_standing-front_f1.png` as the primary geometry authority and `art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_standing-front_f1.png` as the recent rendering-quality reference. The canon is an adult, restrained face with solid dark rectangular eyes, a clearly defined separate moustache, a readable closed mouth and the established beard mass. Do not use the cheesy pixie grin, a generic smile, oversized or round childlike eyes, white eye glints, or a mouth merged into the moustache. Action-specific expressions are allowed only as controlled deviations that return cleanly to the neutral canon.
+>
+> Start with a read-only inventory of every production animation and technical neutral whose pose is full-face/front-facing, grouped by standard uniform, outfit/costume, seated, locomotion, interaction and expression. Identify exact frame ranges, current face families, outfit dependencies, endpoints and transition risks. Treat the previously withdrawn face-camera amendments as rejected provenance only; do not reactivate them, and do not regenerate the explicitly deleted `keeper_count_money` amendment without a new direct instruction. Then create a versioned, reversible full-face canon pack from the two selected references: at minimum a standard standing neutral, its exact head/face landmarks, beard/moustache/mouth masks or guides, and comparison evidence against both references. Show that canon pack for Frank's approval before applying it across the inventory.
+>
+> After the canon pack is approved, normalise the animations methodically in small reviewable batches. Preserve each animation's accepted body, outfit, prop, timing, emotion and action wherever possible; amend only the head/face region unless anatomy or occlusion makes a wider change unavoidable. Keep identity, scale, floor anchor and head position stable across adjacent frames, and design first/last frames for seamless transitions into the registered neutral and neighboring clips. Every frame's character, clothing, props and effects must remain isolated inside its declared cell with a transparent safety gutter. Add deterministic verification for cell edges, geometry, unchanged out-of-scope pixels, endpoint continuity and strip/sidecar agreement.
+>
+> Make every proposal in a new versioned draft directory. Never overwrite canonical raw/runtime art, existing drafts, manifests, immutable review exports or current previews. Record original and draft SHA-256 values and publish canonical, historical drafts and each new candidate side by side in the existing online review platform. Promote nothing without Frank's explicit approval. Keep the repository documentation current, test the complete reviewer and sprite contract, commit and push finished review batches to remote `main`, verify the public deployment and leave the work ready for iterative visual review.
