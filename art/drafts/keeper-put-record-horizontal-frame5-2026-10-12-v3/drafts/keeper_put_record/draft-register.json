@@ -1,0 +1,147 @@
+{
+  "draftId": "keeper-put-record-horizontal-frame5-2026-10-12-v3",
+  "handoffId": "direct-review-2026-10-12-put-record-horizontal-frame5",
+  "animation": "keeper_put_record",
+  "status": "active-review-draft",
+  "label": "12 Oct horizontal held-record correction v3",
+  "selection": "Direct annotated review correction; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_put_record_f8.png",
+    "stripSha256": "a29da757c3217dcbe3f8bb6d16526e061f5ba9d8323705fd3f1054ddad315586",
+    "runtime": "public/sprites/keeper_put_record.png",
+    "runtimeSha256": "51af0d4ca89d8afd073d3c6a0431ba411f977b753cf5e8c574f1dfca57f6e600",
+    "sidecar": "art/raw/keeper-first-batch/keeper_put_record_f8.json",
+    "sidecarSha256": "647f16c7f97252dae18e9fa22d595a749c74a25360bdcc738164e498f0944bf7"
+  },
+  "previousDraft": {
+    "register": "art/drafts/keeper-put-record-removal-2026-10-12-v2/drafts/keeper_put_record/draft-register.json",
+    "registerSha256": "69584c746fb09a864d4ce57c1024ccf8dd08035b6c0f90740e02a8b37bd57ec8",
+    "strip": "art/drafts/keeper-put-record-removal-2026-10-12-v2/drafts/keeper_put_record/keeper_put_record_f8.png",
+    "stripSha256": "56c6b1af150ea96c7cc37c7dc3c3c778137082ec97e1450d7c9bcee3fedfe354",
+    "sidecar": "art/drafts/keeper-put-record-removal-2026-10-12-v2/drafts/keeper_put_record/keeper_put_record_f8.json",
+    "sidecarSha256": "56ba08d73356decf808cfa218087d0182aaab11d38164cb06ac7d3a131ea5bf8"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-put-record-horizontal-frame5-2026-10-12-v3/frame-5-horizontal-record-generated.png",
+    "sourceSha256": "949c7ee7c4287999b169449327fe199272b23938db67c050fee3cc0caae2a04c",
+    "strip": "art/drafts/keeper-put-record-horizontal-frame5-2026-10-12-v3/drafts/keeper_put_record/keeper_put_record_f8.png",
+    "stripSha256": "5a1b160cf91db8c53edd4b5433fad767c49aac71cb818a4b099a62d5ee637157",
+    "sidecar": "art/drafts/keeper-put-record-horizontal-frame5-2026-10-12-v3/drafts/keeper_put_record/keeper_put_record_f8.json",
+    "sidecarSha256": "a06ff51ee72bdf8b8588440f85cb1b3887da5fd538f6725a9ffd4a0fff7806be",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          93,
+          3,
+          181,
+          158
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "935f051db606d289b3138f39858ddd1e1fac1da320490bd53d9b856987b68e27",
+        "changedFromV2": false
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          93,
+          3,
+          178,
+          158
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "dc0e88dc349dd5fc861c2089904870d6cf81550a210b547e879b3902710c98e1",
+        "changedFromV2": false
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          91,
+          3,
+          180,
+          158
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "a33fd6851964628166a0ebed88827603dbb3366fee071eb9bbdb62b69f610d1d",
+        "changedFromV2": false
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          87,
+          2,
+          186,
+          157
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "41d2305b2354933166c8c6d954b0a5f3b00c32340222c83c8acdbf70d222ae85",
+        "changedFromV2": false
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          70,
+          24,
+          173,
+          158
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "faa26d81fbfefad5ddd32f4a9a2937128174ac4a527ac4671865139a4f74eeae",
+        "changedFromV2": true
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          73,
+          29,
+          168,
+          158
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "2236c50d794f663554291a2731997ae3a162e3765ab4db5db8d9934d66961884",
+        "changedFromV2": false
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          72,
+          26,
+          161,
+          158
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "ee0445a83045fdac98e2614d71a6f894c8b62ead41fa967f903ab7e4c88cbcb2",
+        "changedFromV2": false
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          100,
+          3,
+          167,
+          158
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "6001ca62e8168dfa49aef90a2d42eb6d6518fe31e95d9f52770b64da1333e5db",
+        "changedFromV2": false
+      }
+    ],
+    "editBox": [
+      139,
+      78,
+      193,
+      118
+    ],
+    "evidence": [
+      "art/drafts/keeper-put-record-horizontal-frame5-2026-10-12-v3/evidence/keeper_put_record/frames.png",
+      "art/drafts/keeper-put-record-horizontal-frame5-2026-10-12-v3/evidence/keeper_put_record/frames-4-6-transition.png",
+      "art/drafts/keeper-put-record-horizontal-frame5-2026-10-12-v3/evidence/keeper_put_record/preview.gif",
+      "art/drafts/keeper-put-record-horizontal-frame5-2026-10-12-v3/evidence/keeper_put_record/frame-5-generated-normalized.png"
+    ],
+    "normalization": "The built-in edit is normalized to the exact v2 frame-5 height and cap/body alignment; only the tight hands-and-record box is composited into v2.",
+    "seam": "frame 4 holds the record horizontally; frame 5 keeps it horizontal in both hands while bending; frame 6 has released it after placement"
+  },
+  "qualification": "Only frame 5 and only its hands/record box changes from v2. Frames 1-4 and 6-8 are byte-identical to v2.",
+  "rollback": "Remove this exact draft directory and registry entry; canonical, v1 and v2 remain unchanged.",
+  "pinnedV1StripSha256": "bce7f629d26049b885cd9aab6b268b09487c222b9ca3f48ffbf2fb4845d61911"
+}

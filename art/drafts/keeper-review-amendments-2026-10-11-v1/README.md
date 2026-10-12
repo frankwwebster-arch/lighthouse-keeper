@@ -42,6 +42,12 @@ floating-record regions in frames 5–8 become transparent; frames 1–4 and eve
 surviving v1 pixel remain byte-identical. This batch's first variant remains
 unchanged for direct comparison and rollback.
 
+Frank's follow-up clarification is preserved as a third sibling candidate in
+`art/drafts/keeper-put-record-horizontal-frame5-2026-10-12-v3/`. Frame 5 again
+holds one record between both hands, now edge-on and parallel to ground level;
+frames 1–4 and 6–8 remain byte-identical to v2. Canonical, v1 and v2 remain
+unchanged for direct comparison and rollback.
+
 The party outfit rule is one red-and-cream conical paper party hat replacing the
 navy cap; the hat does not expose or invent a bald dome and remains stable
 across every retained side/rear pose.
