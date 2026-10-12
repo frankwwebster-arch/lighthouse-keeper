@@ -15,6 +15,7 @@ MANIFEST_PATH = ROOT / "public/sprites/manifest.json"
 V2 = ROOT / "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2"
 CORE_V1 = ROOT / "art/drafts/keeper-prime-core-transitions-2026-10-12-v1"
 CORE = ROOT / "art/drafts/keeper-prime-core-transitions-2026-10-12-v2"
+PRIME_MASTER = ROOT / "art/drafts/keeper-prime-master-2026-10-12-v1"
 PUBLIC = ROOT / "public/keeper-animation-workbench"
 DATA_PATH = ROOT / "data/keeper_animation_workbench.json"
 APPROVAL_WORDING = "I am very happy with your V2."
@@ -279,7 +280,11 @@ def main() -> None:
     # Keep V1 source assets addressable so any user-authored browser Draft
     # copied from that review survives the repository-seed upgrade to V2.
     assets.extend(draft_asset(name, CORE_V1, "kp-v1") for name in draft_names)
-    draft_items = keeper_prime_drafts()
+    # The V1/V2 route work remains addressable provenance, but Frank reset the
+    # active library after deciding that the coarse Frame 6 raster itself was
+    # not a viable animation endpoint. New routes begin only after approval of
+    # the smooth Prime Master V1 proposal.
+    draft_items = []
     catalogue = {
         "version": 1,
         "platformId": "keeper-animation-workbench",
@@ -287,21 +292,18 @@ def main() -> None:
         "updatedOn": "2026-10-12",
         "separateFrom": "/keeper-review/",
         "principles": {
-            "final": "Approved, immutable source strips. Editing begins by copying an item to Draft.",
-            "draft": "Non-destructive playback recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
+            "final": "Currently empty. An animation enters Final only after explicit visual approval of its complete transition route.",
+            "draft": "Currently empty while Prime Master V1 awaits approval. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
             "transitions": "Every action must carry an inspectable walk → stop → optional facing turn → action ingress and a compatible action → stop → walk egress. Root motion continues through stop/start; the engine varies only walking distance from world placement.",
         },
         "lanes": {
-            "final": [
-                final_item("keeper_turn_front", "right"),
-                final_item("keeper_turn_left_front", "left"),
-            ],
+            "final": [],
             "draft": draft_items,
         },
         "assets": assets,
         "storage": {
-            "drafts": "repository Keeper Prime proposals plus browser-local edits under keeper-animation-workbench:v2; export/import JSON is the portable handoff",
-            "final": "repository catalogue only; browser tools never mutate Final records",
+            "drafts": "empty pending Prime Master V1 approval; prior V1/V2 strips remain provenance assets and are not active proposals",
+            "final": "empty by explicit user decision; browser tools never mutate Final records",
         },
         "featureContract": {
             "frameOperations": ["copy", "remove", "move-left", "move-right"],
@@ -328,6 +330,8 @@ def main() -> None:
             "keeperPrimeCoreRegisterSha256": sha256(CORE / "batch-register.json"),
             "keeperPrimeCoreV1Register": rel(CORE_V1 / "batch-register.json"),
             "keeperPrimeCoreV1RegisterSha256": sha256(CORE_V1 / "batch-register.json"),
+            "primeMasterRegister": rel(PRIME_MASTER / "master-pack-register.json"),
+            "primeMasterRegisterSha256": sha256(PRIME_MASTER / "master-pack-register.json"),
             "runtimeManifest": rel(MANIFEST_PATH),
             "runtimeManifestSha256": sha256(MANIFEST_PATH),
             "productionSpritesChanged": False,

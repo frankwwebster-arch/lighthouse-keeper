@@ -1,0 +1,250 @@
+{
+  "packId": "keeper-prime-master-2026-10-12-v1",
+  "status": "draft-awaiting-visual-approval",
+  "purpose": "Replace visibly pixelated Frame 6 endpoints with one smooth master family before any animation is redrafted.",
+  "userDecision": "Prefer the first smooth render and replace the double-stripe jumper with one broad pale band for animation consistency.",
+  "references": {
+    "frame6": {
+      "file": "art/raw/keeper-first-batch/keeper_neutral_standing-front_f1.png",
+      "sha256": "6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a",
+      "role": "identity, stance, head-position and endpoint geometry authority; coarse raster is not a rendering target"
+    },
+    "v11": {
+      "file": "art/drafts/keeper-artist-smock-family-redraw-2026-10-11-v11/drafts/keeper_artist-smock_neutral_standing-front_f1.png",
+      "sha256": "14c70ab69c9cb558d1a7b9b092425718a43269ea8fb2a20ad3d64638d30ea17a",
+      "role": "smooth rendering-quality reference only"
+    }
+  },
+  "generatedSource": {
+    "file": "art/drafts/keeper-prime-master-2026-10-12-v1/sources/keeper-prime-master-front-generated.png",
+    "sha256": "34d726cd44659d5de6c54c49a042bdb107a5cc1e7a506cd41aab578bd6e9e917",
+    "role": "user-preferred first smooth single-band render"
+  },
+  "candidate": {
+    "file": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+    "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+    "sidecar": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.json",
+    "sidecarSha256": "e0e814fd998f1a080eb8a6af86039091071af8c929f6965b59f642e764774e1c",
+    "promotionAllowed": false
+  },
+  "geometry": {
+    "sourcePixels": [
+      1122,
+      1402
+    ],
+    "sourceSignificantAlphaBoundsExclusive": [
+      250,
+      80,
+      871,
+      1296
+    ],
+    "normalizedOpaqueBoundsExclusive": [
+      52,
+      18,
+      204,
+      316
+    ],
+    "normalizedOpaqueWidthHeightRatio": 0.510067,
+    "logicalCell": [
+      32,
+      40
+    ],
+    "density": 8,
+    "sourceCell": [
+      256,
+      320
+    ],
+    "logicalAnchor": [
+      16,
+      40
+    ],
+    "sourceAnchor": [
+      128,
+      320
+    ],
+    "landmarksSourcePixels": {
+      "verticalIdentityAxisX": 128,
+      "floorAnchor": [
+        128,
+        320
+      ],
+      "capTopY": 18,
+      "headEnvelopeBoundsExclusive": [
+        73,
+        18,
+        184,
+        148
+      ],
+      "leftEyeBoundsExclusive": [
+        111,
+        75,
+        120,
+        87
+      ],
+      "rightEyeBoundsExclusive": [
+        137,
+        75,
+        146,
+        87
+      ],
+      "noseBoundsExclusive": [
+        118,
+        86,
+        139,
+        105
+      ],
+      "moustacheBoundsExclusive": [
+        96,
+        91,
+        162,
+        119
+      ],
+      "mouthBoundsExclusive": [
+        119,
+        108,
+        137,
+        114
+      ],
+      "beardEnvelopeBoundsExclusive": [
+        86,
+        82,
+        171,
+        149
+      ],
+      "chestBandBoundsExclusive": [
+        48,
+        145,
+        208,
+        178
+      ]
+    }
+  },
+  "masksAndGuides": {
+    "eye-left": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/masks/eye-left-guide-mask.png",
+      "sha256": "677fe9ab3616c2218720a14191a490e34e0d70fa65732d81d6c739c4789ec0b9",
+      "boundsExclusive": [
+        111,
+        75,
+        120,
+        87
+      ]
+    },
+    "eye-right": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/masks/eye-right-guide-mask.png",
+      "sha256": "30c42e0541af33d65d7d6151be249263b98ff06898062d8a8e6c73b66d1818c0",
+      "boundsExclusive": [
+        137,
+        75,
+        146,
+        87
+      ]
+    },
+    "nose": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/masks/nose-guide-mask.png",
+      "sha256": "fb48b44ed9d827323667568bddcef8f164a77e31b23adb4cdd101c35d2597a50",
+      "boundsExclusive": [
+        118,
+        86,
+        139,
+        105
+      ]
+    },
+    "moustache": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/masks/moustache-guide-mask.png",
+      "sha256": "b6313ced1982ecd8cd89b2b0c77e077cdeb731d51f5a5e4398d5c0050815c318",
+      "boundsExclusive": [
+        96,
+        91,
+        162,
+        119
+      ]
+    },
+    "mouth": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/masks/mouth-guide-mask.png",
+      "sha256": "d2343fa43a3d960cd0564d0c393fb52948c402966975b1a7f54e13f314de4b33",
+      "boundsExclusive": [
+        119,
+        108,
+        137,
+        114
+      ]
+    },
+    "beard-envelope": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/masks/beard-envelope-guide-mask.png",
+      "sha256": "957f3175de492d787758257e8fae5eae29a766cd0254bc717d4546351d680c50",
+      "boundsExclusive": [
+        86,
+        82,
+        171,
+        149
+      ]
+    },
+    "head-envelope": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/masks/head-envelope-guide-mask.png",
+      "sha256": "3f72e504b34048dd9ede85d2b6cbaae273cd2a0a5453161414bb43c02e4984db",
+      "boundsExclusive": [
+        73,
+        18,
+        184,
+        148
+      ]
+    },
+    "chest-band": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/masks/chest-band-guide-mask.png",
+      "sha256": "31a605402ed5d1fe217efda8efc77ecb25174fda88dd682e1d7e464c4a23ac76",
+      "boundsExclusive": [
+        48,
+        145,
+        208,
+        178
+      ]
+    }
+  },
+  "evidence": {
+    "comparison": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/evidence/keeper-prime-master-comparison.png",
+      "sha256": "04c93b6c514e7de9370c377f6c78c6d2c97f256626d7ebb9911043cd67f94989"
+    },
+    "landmarkOverlay": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/evidence/keeper-prime-master-landmark-overlay.png",
+      "sha256": "04fab7bbcbe81c441c204cfca647dbbef53bb638c002d287c7abd1358d6fcfd9"
+    }
+  },
+  "identityRules": {
+    "eyes": "solid dark rectangular eyes; no glints, whites, round or childlike eyes",
+    "moustache": "clearly separate from the mouth",
+    "mouth": "short straight readable closed mouth; no grin or generic smile",
+    "beard": "established broad cream beard mass",
+    "uniform": "one broad pale chest-and-sleeve band; do not restore the legacy double stripe"
+  },
+  "rejectedGeneratedProvenance": [
+    {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/rejected-sources/double-stripe-smooth-render.png",
+      "sha256": "73521fe2bc54a7203cfdf087c868a44880eba334ae86d5b98c0bcbc9370acd0a",
+      "reason": "preferred rendering lost the single-band uniform"
+    },
+    {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/rejected-sources/double-stripe-narrow-render.png",
+      "sha256": "1786de2cdff80744c02591fb9928d0a2d64867a0cf424eef03d3259603438dd4",
+      "reason": "double stripe rejected as difficult to retain consistently"
+    },
+    {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/rejected-sources/double-stripe-neutral-mouth-render.png",
+      "sha256": "73a6922fe1740e30547a0088823c1695ea0635c8c99c53fcfbd8bf816ba0bc69",
+      "reason": "double stripe rejected; superseded surgical mouth variant"
+    }
+  ],
+  "validation": {
+    "candidateGeometryMatchesSidecar": true,
+    "transparentSafetyGutter": true,
+    "opaqueCellEdgePixels": 0,
+    "alphaCropThreshold": 8,
+    "deterministicNormalization": true,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "finalAnimations": 0
+  },
+  "promptLog": "art/drafts/keeper-prime-master-2026-10-12-v1/PROMPT_LOG.md",
+  "rollback": "Delete only art/drafts/keeper-prime-master-2026-10-12-v1 and public/keeper-review/keeper-prime-master-v1; production and historical drafts remain untouched."
+}

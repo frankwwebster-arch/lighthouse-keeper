@@ -121,9 +121,10 @@ redraw with a non-jumping exact-canon endpoint. V2 is at
 `art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/`: F1–F5 are
 new approved-model rotations, F6 is byte-identical to canon, and F5/F6 share
 the same baseline, height and centreline with at most two source pixels of
-width difference. Frank approved both V2 turns for the separate Animation
-Workbench Final lane on 12 October; this does not authorize raw/runtime
-promotion. No withdrawn face-camera work was reactivated.
+width difference. Frank initially approved both V2 turns on 12 October, then
+rejected their live route joins and reset the workbench to zero Final and zero
+active Draft animations. The old approval is provenance only and does not
+authorize raw/runtime promotion. No withdrawn face-camera work was reactivated.
 
 ### Keeper Prime checkpoint — 12 October 2026
 
@@ -132,8 +133,9 @@ walk/stop→V2-turn boundary and at the V2 near-front→exact-front endpoint. Fr
 therefore selected **Turn right profile to front F6**—the same pixels as ingress
 preview F19 and `keeper_neutral_standing-front_f1.png`—as the sole model from
 which every other Keeper image must stem. Its durable name is **Keeper Prime**
-(`KP`, slug `keeper_prime`). The V2 approval remains historical Final evidence,
-but those complete turn strips are superseded as a route foundation.
+(`KP`, slug `keeper_prime`). The V2 approval remains historical provenance,
+but no longer appears in Final and those complete turn strips are superseded as
+a route foundation.
 
 The first reversible proposal at
 `art/drafts/keeper-prime-core-transitions-2026-10-12-v1/` is retained intact as
@@ -142,15 +144,26 @@ but found route 2's acceleration stationary for too long; routes 3 and 4 changed
 perspective, height and width at route steps 19→20; and routes 5 and 6 exposed
 an apparent-pixel-density mismatch around Keeper Prime.
 
-The current unapproved replacement is
+The later unapproved V2 replacement is
 `art/drafts/keeper-prime-core-transitions-2026-10-12-v2/`. It preserves V1 walk
 and stop strips byte-for-byte, removes the duplicated exact-stop frame from the
 acceleration sequence, and rebuilds front turn, back turn and sit from one
 coherent six-pose generated source each. Stand remains the exact reverse of
-sit. The six review routes and exact KP endpoints are unchanged. Numeric seam
+sit. Numeric seam
 checks now cover width, height, centre, baseline and opaque area, including the
 three specifically rejected F2→F3 joins. Production art and manifests remain
-unchanged; V2 requires explicit visual approval.
+unchanged. Live review found that its return to the coarse Frame 6 pixels still
+produced an unacceptable density/model jump, so V2 is now rejected provenance,
+not an active Draft.
+
+Frank then reset the foundation. Frame 6 remains identity, stance, head-position
+and endpoint evidence, but its pixelated raster is not the render master. The
+sole current proposal is
+`art/drafts/keeper-prime-master-2026-10-12-v1/`, reviewed at
+`/keeper-review/keeper-prime-master-v1/`. It uses Frank's preferred first smooth
+render, normalized to a 256 × 320 density-8 cell with the same logical anchor,
+and replaces the difficult-to-maintain double stripe with one broad pale band.
+All animations await redrafting from this family after explicit master approval.
 
 The 12 October V2 documentation audit reconciled this handoff, the authoring
 playbook, the workbench guide and `README.md` with the generated catalogue,
@@ -1043,16 +1056,18 @@ The comprehensive per-sheet correction list is in
 
 ## Separate Draft/Final animation workbench (12 October 2026)
 
-Frank approved both complete moving-model V2 turn redraws with the exact
-wording “I am very happy with your V2.” They remain in the immutable Final lane
-of a new `/animation-workbench` surface. This is deliberately separate from
+Frank initially approved both complete moving-model V2 turn redraws with the
+exact wording “I am very happy with your V2.” Subsequent live-route review
+superseded that decision. The new `/animation-workbench` surface now contains
+zero Final and zero active Draft animations. This is deliberately separate from
 `/keeper-review/`: it does not consume that platform's saved reviews, handoff
 queue or locks, and Final-lane acceptance is not production promotion.
 
-Later route review superseded the V2 strips as an authoring foundation without
-rewriting or deleting that approval history. Keeper Prime core-transition V1
-now supplies six repository-backed, unapproved Draft routes. Local edits use
-the same recipe structure as Final and remain browser-local/JSON-exportable.
+The V1/V2 strips and approval record remain content-addressed provenance without
+being listed in either active lane. Browser storage moved to the `v3` namespace
+so rejected local route state is not automatically restored; older storage is
+left untouched for recovery. Future local edits use the same recipe structure
+as Final and remain browser-local/JSON-exportable.
 Draft controls copy, remove and reorder frame references, loop a complete
 animation, and repeat a selected contiguous section. They never rewrite source
 strips. Overlapping section loops fail closed.
@@ -1064,9 +1079,8 @@ cycle count from the Keeper's starting position and the target asset's world
 placement; the workbench shows one representative cycle and authors no
 distance-specific count. The walk cycle begins while the Keeper is fully
 hidden behind the departure door; his first visible state is already in motion,
-and the workbench simulates that door-side reveal. The initial Keeper Prime
-Draft also carries residual translation through stop/start so the Keeper never
-walks on the spot. A door
+and the workbench simulates that door-side reveal. New core drafts must carry
+residual translation through stop/start so the Keeper never walks on the spot. A door
 may hide a costume swap, but the resulting action still requires the same
 complete transition preview. Metadata diagnostics check pose and outfit
 agreement at joins.
@@ -1074,11 +1088,12 @@ agreement at joins.
 Full architecture, extension points and verification are in
 `docs/KEEPER_ANIMATION_WORKBENCH.md`. The authoritative catalogue is
 `data/keeper_animation_workbench.json`; its public copy is byte-identical.
-`scripts/verify_keeper_animation_workbench.ts` checks approval evidence,
-content hashes, strip/sidecar geometry, binary alpha, transparent cell gutters,
-immutable historical Final scope, all six Draft routes, residual root motion,
-shared exact endpoints and exact sit/stand reversal. Raw/runtime sprites and the manifest
-remain unchanged.
+`scripts/verify_keeper_animation_workbench.ts` checks the zero-lane approval
+gate, content hashes, historical strip/sidecar geometry, transparent cell
+gutters and preserved editor framework. `scripts/verify_keeper_prime_master_v1.ts`
+checks the selected/rejected generated provenance, normalized candidate,
+landmarks, masks, hashes and public comparison. Raw/runtime sprites and the
+manifest remain unchanged.
 
 ## Review-comments workflow for a later feedback round
 

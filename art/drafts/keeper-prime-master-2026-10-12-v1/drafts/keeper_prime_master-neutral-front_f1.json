@@ -1,0 +1,74 @@
+{
+  "name": "keeper_prime_master-neutral-front",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "fps": 1,
+  "density": 8,
+  "anchor": [
+    16,
+    40
+  ],
+  "loop": false,
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "status": "draft-awaiting-visual-approval",
+  "source": "art/drafts/keeper-prime-master-2026-10-12-v1/sources/keeper-prime-master-front-generated.png",
+  "uniform": "standard-single-broad-band",
+  "landmarksSourcePixels": {
+    "verticalIdentityAxisX": 128,
+    "floorAnchor": [
+      128,
+      320
+    ],
+    "capTopY": 18,
+    "headEnvelopeBoundsExclusive": [
+      73,
+      18,
+      184,
+      148
+    ],
+    "leftEyeBoundsExclusive": [
+      111,
+      75,
+      120,
+      87
+    ],
+    "rightEyeBoundsExclusive": [
+      137,
+      75,
+      146,
+      87
+    ],
+    "noseBoundsExclusive": [
+      118,
+      86,
+      139,
+      105
+    ],
+    "moustacheBoundsExclusive": [
+      96,
+      91,
+      162,
+      119
+    ],
+    "mouthBoundsExclusive": [
+      119,
+      108,
+      137,
+      114
+    ],
+    "beardEnvelopeBoundsExclusive": [
+      86,
+      82,
+      171,
+      149
+    ],
+    "chestBandBoundsExclusive": [
+      48,
+      145,
+      208,
+      178
+    ]
+  }
+}

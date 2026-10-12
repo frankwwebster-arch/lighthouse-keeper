@@ -13,20 +13,13 @@ const UI = path.join(ROOT, 'src/animation-workbench/AnimationWorkbench.tsx')
 const MODEL = path.join(ROOT, 'src/animation-workbench/model.ts')
 const CSS = path.join(ROOT, 'src/animation-workbench/workbench.module.css')
 const CORE_V2_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-core-transitions-2026-10-12-v2/batch-register.json')
-const EXPECTED_FINALS = ['keeper_turn_front-v2-final', 'keeper_turn_left_front-v2-final']
-const EXPECTED_DRAFTS = [
-  'keeper_prime_walk_to_stop-kp-v2-draft',
-  'keeper_prime_stop_to_walk-kp-v2-draft',
-  'keeper_prime_walk_turn_front-kp-v2-draft',
-  'keeper_prime_walk_turn_back-kp-v2-draft',
-  'keeper_prime_walk_stop_sit-kp-v2-draft',
-  'keeper_prime_sit_stop_walk-kp-v2-draft',
-]
-const APPROVAL = 'I am very happy with your V2.'
+const PRIME_MASTER_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-master-2026-10-12-v1/master-pack-register.json')
+const EXPECTED_FINALS: string[] = []
+const EXPECTED_DRAFTS: string[] = []
 const fail = (message: string): never => { throw new Error(`keeper animation workbench: ${message}`) }
 const sha256 = (file: string) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')
 
-for (const file of [DATA, PUBLIC, PAGE, UI, MODEL, CSS, CORE_V2_REGISTER]) {
+for (const file of [DATA, PUBLIC, PAGE, UI, MODEL, CSS, CORE_V2_REGISTER, PRIME_MASTER_REGISTER]) {
   if (!fs.existsSync(file)) fail(`missing ${path.relative(ROOT, file)}`)
 }
 if (!fs.readFileSync(DATA).equals(fs.readFileSync(PUBLIC))) fail('data and public catalogues differ')
@@ -37,7 +30,8 @@ if (catalogue.separateFrom !== '/keeper-review/') fail('new workbench is not exp
 if (catalogue.provenance?.productionSpritesChanged !== false || catalogue.provenance?.runtimeManifestChanged !== false) fail('production mutation guard changed')
 if (catalogue.featureContract?.walkExtension?.owner !== 'game-engine' || catalogue.featureContract?.walkExtension?.startVisibility !== 'hidden-behind-door' || catalogue.featureContract?.walkExtension?.firstVisibleState !== 'walking-mid-stride') fail('door-hidden runtime walk-lead-in contract changed')
 if (JSON.stringify(catalogue.lanes?.final?.map((item: Record<string, any>) => item.id)) !== JSON.stringify(EXPECTED_FINALS)) fail('Final library scope changed')
-if (JSON.stringify(catalogue.lanes?.draft?.map((item: Record<string, any>) => item.id)) !== JSON.stringify(EXPECTED_DRAFTS)) fail('Keeper Prime Draft route scope changed')
+if (JSON.stringify(catalogue.lanes?.draft?.map((item: Record<string, any>) => item.id)) !== JSON.stringify(EXPECTED_DRAFTS)) fail('Draft library must remain empty until Prime Master approval')
+if (!catalogue.principles?.final?.startsWith('Currently empty') || !catalogue.principles?.draft?.startsWith('Currently empty')) fail('empty-library approval gate changed')
 
 const assets = new Map<string, Record<string, any>>(catalogue.assets.map((asset: Record<string, any>) => [asset.id, asset]))
 for (const asset of catalogue.assets as Record<string, any>[]) {
@@ -67,7 +61,7 @@ for (const asset of catalogue.assets as Record<string, any>[]) {
 }
 
 for (const item of catalogue.lanes.final as Record<string, any>[]) {
-  if (item.lane !== 'final' || item.approval?.wording !== APPROVAL) fail(`${item.id} is missing exact Final approval evidence`)
+  if (item.lane !== 'final') fail(`${item.id} has the wrong Final lane`)
   if (!item.approval?.scope?.includes('runtime promotion remains a separate decision')) fail(`${item.id} approval scope could imply production promotion`)
   if (item.timeline?.length !== 6 || item.timeline.map((entry: Record<string, any>) => entry.frame).join(',') !== '0,1,2,3,4,5') fail(`${item.id} Final timeline changed`)
   if (item.sectionLoops?.length || item.overallLoop !== false) fail(`${item.id} Final recipe was mutated`)
@@ -151,29 +145,22 @@ if (!frameBytes(backId, 5).equals(frameBytes(backNeutralId, 0))) fail('back turn
 for (let frame = 0; frame < 6; frame += 1) if (!frameBytes(sitId, frame).equals(frameBytes(standId, 5 - frame))) fail(`stand F${6 - frame} is not the exact reverse of sit F${frame + 1}`)
 const primeFront = PNG.sync.read(fs.readFileSync(path.join(ROOT, 'art/raw/keeper-first-batch/keeper_neutral_standing-front_f1.png')))
 if (!frameBytes(frontId, 5).equals(primeFront.data)) fail('front turn does not end on byte-identical Keeper Prime pixels')
-const walkStop = catalogue.lanes.draft.find((item: Record<string, any>) => item.id === EXPECTED_DRAFTS[0])
-const stopMotion = walkStop.transitionRoute.find((segment: Record<string, any>) => segment.id === 'stop')?.motion
-if (JSON.stringify(stopMotion) !== JSON.stringify([0.8, 0.55, 0.3, 0])) fail('walk-to-stop no longer decelerates through residual root motion')
-const stopWalk = catalogue.lanes.draft.find((item: Record<string, any>) => item.id === EXPECTED_DRAFTS[1])
-const startSegment = stopWalk.transitionRoute.find((segment: Record<string, any>) => segment.id === 'walk-start')
-if (JSON.stringify(startSegment?.frames) !== JSON.stringify([2, 1, 0]) || JSON.stringify(startSegment?.motion) !== JSON.stringify([0.35, 0.65, 0.9])) fail('stop-to-walk retains the duplicated stationary acceleration frame')
-if (stopWalk.timelineSegmentId !== 'walk-start' || stopWalk.transitionRoute.find((segment: Record<string, any>) => segment.id === 'stop-hold')?.frames?.join(',') !== '3') fail('stop-to-walk editable timeline also controls the one-frame stop hold')
-const sitStopWalk = catalogue.lanes.draft.find((item: Record<string, any>) => item.id === EXPECTED_DRAFTS[5])
-if (sitStopWalk.transitionRoute.some((segment: Record<string, any>) => segment.id === 'stop-hold')) fail('sit-to-stop-to-walk duplicates the exact stop after stand already supplies it')
-
 const coreV2 = JSON.parse(fs.readFileSync(CORE_V2_REGISTER, 'utf8')) as Record<string, any>
 if (coreV2.batchId !== 'keeper-prime-core-transitions-2026-10-12-v2' || coreV2.productionChanged !== false) fail('V2 register identity or production guard changed')
 if (!coreV2.deterministicChecks?.walkStopOutOfScopePixelsUnchanged || !coreV2.deterministicChecks?.singleGeneratedSourcePerMovingAction) fail('V2 unchanged-scope/render-family checks are missing')
 for (const [name, seam] of Object.entries(coreV2.criticalSeamChecks ?? {}) as [string, Record<string, number>][]) {
   if (Math.abs(seam.widthDelta) > 8 || Math.abs(seam.heightDelta) > 8 || seam.opaqueAreaRatio < 0.82 || seam.opaqueAreaRatio > 1.18 || seam.baselineDelta !== 0) fail(`${name} violates the V2 route-step continuity bounds`)
 }
+const primeMaster = JSON.parse(fs.readFileSync(PRIME_MASTER_REGISTER, 'utf8')) as Record<string, any>
+if (primeMaster.status !== 'draft-awaiting-visual-approval' || primeMaster.validation?.finalAnimations !== 0 || primeMaster.candidate?.promotionAllowed !== false) fail('Prime Master approval gate changed')
+if (catalogue.provenance?.primeMasterRegisterSha256 !== sha256(PRIME_MASTER_REGISTER)) fail('workbench does not pin the Prime Master register')
 
 const ui = fs.readFileSync(UI, 'utf8')
-for (const label of ['Final', 'Draft', 'Copy to Draft', 'Copy frame', 'Remove frame', 'Move left', 'Move right', 'Repeat section', 'Transition preview', 'Required for every action', 'begins hidden behind', 'cycles set by game placement', 'Export Draft JSON', 'Import Draft JSON']) {
+for (const label of ['Final', 'Draft', 'Copy to Draft', 'Copy frame', 'Remove frame', 'Move left', 'Move right', 'Repeat section', 'Transition preview', 'Required for every action', 'begins hidden behind', 'cycles set by game placement', 'Export Draft JSON', 'Import Draft JSON', 'Final is empty', 'No animations are currently Final', 'Prime Master V1']) {
   if (!ui.includes(label)) fail(`UI omits ${label}`)
 }
 for (const functionName of ['copyTimelineEntry', 'removeTimelineEntry', 'moveTimelineEntry', 'expandTimeline', 'transitionPlayback', 'transitionWarnings', 'reconcileDraftLibrary']) {
   if (!fs.readFileSync(MODEL, 'utf8').includes(`function ${functionName}`)) fail(`model omits ${functionName}`)
 }
 
-console.log('Verified Keeper Animation Workbench: historical Final, six reversible Keeper Prime Draft routes, exact shared endpoints, root-motion stop/start, cell gutters and strip/sidecar agreement')
+console.log('Verified Keeper Animation Workbench reset: 0 Final, 0 active Draft, Prime Master V1 approval gate, historical asset provenance and editor framework intact')

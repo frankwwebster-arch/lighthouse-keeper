@@ -17,8 +17,9 @@ shortlist or an earlier sample set—defines later correction scope.
 
 | Area | Current status | Consequence |
 |---|---|---|
-| Keeper Prime identity | Frank selected V2 right-turn frame 6, byte-identical to `keeper_neutral_standing-front_f1.png`, as the one model from which everything stems | Use Keeper Prime as the binding identity for every direction, pose, outfit and expression; production promotion still requires separate explicit approval |
-| Side-right standard-uniform stop | A new Keeper Prime-derived side stop is isolated in `keeper-prime-side-foundation-2026-10-12-v1` | Use it as the shared Draft transition endpoint; the older production side raster is choreography/pose evidence only |
+| Keeper Prime identity | Frame 6 remains identity, stance, head-position and endpoint evidence, but its coarse raster was rejected as an animation rendering source. `keeper-prime-master-2026-10-12-v1` is the sole smooth replacement proposal. | Await explicit approval of Prime Master V1 before drawing any animation. Derive every later direction, pose, outfit and expression from that one smooth family. |
+| Standard uniform | Frank preferred the first smooth render and judged the double-stripe jumper too difficult to retain consistently. | Prime Master V1 uses one broad pale chest-and-sleeve band. Double-stripe generated variants are rejected provenance. |
+| Animation workbench | Final and active Draft both contain zero animations. | Historical V1/V2 transition assets remain recoverable provenance only; do not present or reuse them as active candidates. |
 | Artist-smock design | The V10 costume design is accepted; seven V11 authored animations are active review drafts | Keep this family internally consistent and await exact-name platform decisions before production promotion |
 | Standard-uniform snooker route | The complete route is visually accepted and is an active `keeper_snooker` review draft | The platform verdict is still required; production remains the old eight-frame strip |
 | Bathrobe | No replacement family is accepted | Do not revive head transfer, beard transfer or procedural redraw experiments; wait for exact-name platform requests |
@@ -53,18 +54,23 @@ cannot authorize production promotion by itself. The first two-animation batch
 is limited to the standard-uniform side-to-front turns. Its V1 F5-only head
 transplants were rejected; V2 redraws the complete moving models in F1–F5 and
 locks F6 to exact canon, with deterministic endpoint-geometry checks. Frank
-approved both V2 turns for the Animation Workbench Final lane on 12 October;
-this is not production promotion. Running-route review later rejected their
-joins as a foundation for further redrafting; retain them only as immutable
-historical Final evidence. Their exact right-turn F6 became **Keeper Prime
-(KP)**. The first KP transition Draft at
+initially approved both V2 turns on 12 October, but running-route review later
+rejected their joins and then rejected the coarse Frame 6 raster as an
+animation endpoint. The workbench has consequently been reset to zero Final
+and zero active Draft animations; the approval remains historical provenance,
+not a current lane entry. Their exact right-turn F6 remains **Keeper Prime
+(KP)** identity and geometry evidence. The first KP transition Draft at
 `art/drafts/keeper-prime-core-transitions-2026-10-12-v1/` remains rejected
 review history except for its accepted walk→stop deceleration. The current V2
 proposal is `art/drafts/keeper-prime-core-transitions-2026-10-12-v2/`: it
 preserves those walk/stop bytes, removes the duplicated stationary acceleration
-frame, and derives each turn and sit from one coherent six-pose source to remove
-the route-step 19→20 perspective, scale and apparent-pixel-density swaps. It is
-still an unapproved Draft. The full read-only 62-asset scope is recorded in
+frame, and derives each turn and sit from one coherent six-pose source. Live
+review found it still visually unchanged because every route returned to the
+coarse Prime pixels. It is rejected provenance, not an active Draft. The sole
+current proposal is `art/drafts/keeper-prime-master-2026-10-12-v1/`: a smooth
+density-8 front neutral based on Frank's preferred first generated render,
+with one broad pale band and explicit face/landmark guides. The full read-only
+62-asset scope is recorded in
 `docs/KEEPER_FULL_FACE_INVENTORY.md` and
 `data/keeper_full_face_inventory.json`.
 
