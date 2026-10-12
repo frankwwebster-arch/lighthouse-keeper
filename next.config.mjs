@@ -23,6 +23,11 @@ export default {
         destination: '/keeper-review/keeper-prime-orthographic-v2/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/keeper-prime-orthographic-v3',
+        destination: '/keeper-review/keeper-prime-orthographic-v3/index.html',
+        permanent: false,
+      },
     ]
   },
 }

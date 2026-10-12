@@ -1098,15 +1098,17 @@ manifest remain unchanged.
 Frank permanently approved the smooth, single-band Prime Master V1 on 13
 October 2026 with the exact wording “Approved. Make sure this is NEVER
 forgotten.” The builder and verifier pin both that wording and the approved PNG
-hash. The next reversible gate is
-`art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/`. The V1 90° side is
-carried forward byte-identically. The V2 180° back copies the approved front's
-complete alpha channel, so all 81,920 alpha values, contour pixels, transparent
-gaps, cap top, floor and every row width match exactly in the cyan overlay. Rear
-hair, clothing and anatomy remain back-specific RGB detail. V1 and the mistaken
-short-hair edit remain immutable provenance. Both workbench lanes remain empty, and no
-production sprite or animation may change until the endpoints are explicitly
-approved.
+hash. V2 remains immutable: its carried-forward 90° side has the selected design
+and its 180° back copies all 81,920 approved-front alpha values, contour pixels,
+transparent gaps, cap top, floor and row widths. The next reversible gate is
+`art/drafts/keeper-prime-orthographic-views-2026-10-13-v3/`. Front, selected side
+and back are each exactly 298 source pixels high, from cap y=18 to floor y=316,
+but V3's 15-point front-to-side skeleton proves the side passes only five hard
+internal datums. Badge, ear, shoulder, beard base, midriff stripe, palm and knee
+drift are visible and fail closed. Two guided correction generations are
+retained as rejected provenance. Both workbench lanes remain empty, and no
+production sprite or animation may change until a zero-delta side endpoint is
+explicitly approved.
 
 ## Review-comments workflow for a later feedback round
 

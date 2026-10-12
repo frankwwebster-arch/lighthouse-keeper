@@ -14,12 +14,14 @@ addressable provenance; they are not Final and must not seed new animation.
 Frank permanently approved
 `art/drafts/keeper-prime-master-2026-10-12-v1/` on 13 October 2026 with the
 wording “Approved. Make sure this is NEVER forgotten.” It is the sole identity,
-rendering, proportion, face and single-band uniform authority. The only active
-visual proposal is `keeper-prime-orthographic-views-2026-10-13-v2`, reviewed at
-`/keeper-review/keeper-prime-orthographic-v2/`. It carries the V1 90° side
-forward byte-identically and replaces the approximate V1 back with an exact
-approved-front alpha silhouette. No animation redrafting begins until Frank
-approves that V2 back endpoint.
+rendering, proportion, face and single-band uniform authority. The current
+review gate is `keeper-prime-orthographic-views-2026-10-13-v3`, reviewed at
+`/keeper-review/keeper-prime-orthographic-v3/`. V2 remains immutable: it carries
+the V1 90° side forward and gives the back an exact approved-front alpha
+silhouette. V3 proves all three views are exactly 298 source pixels high, then
+adds 15 internal vertical datums. The selected side passes only five and is
+blocked for redraft. No animation redrafting begins until a side endpoint has
+zero delta at every hard datum.
 
 ## Prime Keeper authority
 
@@ -44,6 +46,14 @@ so contour, transparent gaps, cap top, floor, centreline and every row width
 match exactly. The rear RGB detail remains a true back view with full cream rear
 hair—not beard—and one broad pale band. Orthographic V1 is superseded but
 retained unchanged as provenance.
+
+Orthographic V3 adds the stronger front-to-side vertical skeleton: cap top,
+badge centre, ear centre, shoulder apex, beard base, arm-stripe top/centre/base,
+midriff-stripe top/centre/base, palm centre/base, knee band and floor. The
+selected side already matches total height (298 source pixels, y=18→316), arm
+stripe and outer anchors. It misses badge, ear, shoulder, beard, midriff stripe,
+palm and knee datums, so it is not transition-ready. Two guided generation
+attempts remain rejected provenance because they also failed the hard register.
 
 ## Purpose and boundary
 
@@ -112,8 +122,11 @@ still be recovered manually.
   `scripts/verify_keeper_prime_orthographic_views_v1.ts` — aligned side/back
   historical candidates and tolerance-based cross-sections;
 - `scripts/build_keeper_prime_orthographic_views_v2.py` and
-  `scripts/verify_keeper_prime_orthographic_views_v2.ts` — active exact-alpha
-  back candidate and zero-mismatch front/back contract.
+  `scripts/verify_keeper_prime_orthographic_views_v2.ts` — exact-alpha back
+  candidate and zero-mismatch front/back contract;
+- `scripts/build_keeper_prime_orthographic_views_v3.py` and
+  `scripts/verify_keeper_prime_orthographic_views_v3.ts` — active 15-point
+  front-to-side vertical skeleton and fail-closed side-redraft gate.
 
 Historical V1/V2 public assets remain content-addressed so provenance and old
 exported recipes are recoverable. Presence in the asset table is not approval
@@ -125,10 +138,12 @@ and does not place an item in either active lane.
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_master_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v2.py
+/Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v3.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_animation_workbench.py
 npm run verify:keeper-prime-master-v1
 npm run verify:keeper-prime-orthographic-v1
 npm run verify:keeper-prime-orthographic-v2
+npm run verify:keeper-prime-orthographic-v3
 npm run verify:keeper-animation-workbench
 npm test
 npm run typecheck
@@ -143,9 +158,11 @@ confirm raw/runtime art and the runtime manifest remain unchanged.
 
 ## Next approval gate
 
-Frank must approve the exact-silhouette V2 back endpoint before any animation
-is redrafted. The side is unchanged from V1. After approval, restart at the core set in small
-reviewable batches: walk and exact stop, stop-to-walk, side-to-front/back turns,
+The V2 back keeps its exact approved-front silhouette. Before any animation is
+redrafted, replace the selected side with a V3 successor that preserves its
+visual design and reaches zero vertical delta at all 15 registered points. After
+that endpoint is approved, restart at the core set in small reviewable batches:
+walk and exact stop, stop-to-walk, side-to-front/back turns,
 then sit/stand. Every frame in a batch must be authored from the same smooth
 high-resolution family. Only after the core joins are accepted should action
 and costume inventories follow.

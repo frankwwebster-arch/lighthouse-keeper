@@ -18,7 +18,7 @@ shortlist or an earlier sample set—defines later correction scope.
 | Area | Current status | Consequence |
 |---|---|---|
 | Keeper Prime identity | Frame 6 remains identity, stance, head-position and endpoint evidence, but its coarse raster was rejected as an animation rendering source. Frank permanently approved `keeper-prime-master-2026-10-12-v1` on 13 October 2026 with “Approved. Make sure this is NEVER forgotten.” | Treat the approved smooth master as the sole identity, rendering, proportion and face authority. Its exact approval and bytes are verifier-pinned. Derive every later direction, pose, outfit and expression from that one smooth family. |
-| Orthographic endpoints | V2 carries the V1 90° side byte-identically and replaces its approximate back. The V2 rear alpha channel is pixel-for-pixel identical to the approved front across all 81,920 pixels. | Await explicit approval of the V2 back before redrawing animation. Preserve full rear hair, one pale band and rear-only internal detail. V1 and the too-short hair edit remain provenance. |
+| Orthographic endpoints | V2 carries the selected 90° side and makes the rear alpha channel pixel-for-pixel identical to the approved front across all 81,920 pixels. V3 proves all views are 298 source pixels high but the side passes only 5 of 15 hard internal datums. | Preserve the selected side design and exact V2 back, but do not redraw animation until a new side reaches zero delta for cap, badge, ear, shoulder, beard, stripe, hand, knee and floor. V1, V2 and failed V3 edits remain provenance. |
 | Standard uniform | Frank preferred the first smooth render and judged the double-stripe jumper too difficult to retain consistently. | The approved Prime Master uses one broad pale chest-and-sleeve band. Double-stripe generated variants are rejected provenance. |
 | Animation workbench | Final and active Draft both contain zero animations. | Historical V1/V2 transition assets remain recoverable provenance only; do not present or reuse them as active candidates. |
 | Artist-smock design | The V10 costume design is accepted; seven V11 authored animations are active review drafts | Keep this family internally consistent and await exact-name platform decisions before production promotion |
@@ -72,13 +72,18 @@ permanently approved `art/drafts/keeper-prime-master-2026-10-12-v1/` on 13
 October 2026: a smooth density-8 front neutral based on Frank's preferred first
 generated render, with one broad pale band and explicit face/landmark guides.
 Its approval is a permanent authority record, but not production promotion.
-The active follow-on proposal is
-`art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/`. Its side is
-byte-identical to V1; its 180° rear elevation copies the approved front alpha
-channel exactly after fitting rear-specific RGB detail. Cyan ghost evidence and
-a zero-mismatch verifier make the overlay claim deterministic. The full cream
-rear mass is hair, not beard. V1 and the later hair-cut-too-short mistake are
-retained provenance. The full read-only
+Orthographic V2 remains immutable: its side is byte-identical to V1 and its
+180° rear elevation copies the approved front alpha channel exactly after
+fitting rear-specific RGB detail. Cyan ghost evidence and a zero-mismatch
+verifier make the back-overlay claim deterministic. The current follow-on gate
+is `art/drafts/keeper-prime-orthographic-views-2026-10-13-v3/`. It proves all
+three views share a 298-source-pixel height, then registers 15 horizontal
+front-to-side datums spanning the cap, badge, ear, shoulder, beard base, arm and
+midriff stripes, hand, knee and floor. The selected side passes only five and
+must be redrafted before turn authoring. Two guided generation attempts are
+rejected provenance because exact total height did not prevent internal drift.
+The full cream rear mass is hair, not beard. V1 and the later hair-cut-too-short
+mistake are retained provenance. The full read-only
 62-asset scope is recorded in
 `docs/KEEPER_FULL_FACE_INVENTORY.md` and
 `data/keeper_full_face_inventory.json`.

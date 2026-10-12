@@ -1,0 +1,306 @@
+{
+  "batchId": "keeper-prime-orthographic-views-2026-10-13-v3",
+  "status": "draft-landmark-redraft-required",
+  "purpose": "Register a hard front-to-side vertical skeleton before authoring any turn frames.",
+  "approvedFront": {
+    "file": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+    "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+    "register": "art/drafts/keeper-prime-master-2026-10-12-v1/master-pack-register.json",
+    "registerSha256": "ff8e1d06bf26d28a4791ea44a239a443c7f102e87c08a0be6e971e24716278e2"
+  },
+  "immutableV2": {
+    "register": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/batch-register.json",
+    "registerSha256": "b58fa1d7f2c21a427703462dffa78af9e018d89387f9e40332edde35f8be4325",
+    "side": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+      "sha256": "d2171f148b6b14666a23198112aebf20e50048d583fda77ff0fc91f9d04d4f9a"
+    },
+    "back": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+      "sha256": "c349f6095a83a429d491bfc8d7cdd619ea71ecec8196ba3a1e49d94a98a366f6"
+    }
+  },
+  "geometry": {
+    "approvedFront": {
+      "opaqueBoundsExclusive": [
+        52,
+        18,
+        204,
+        316
+      ],
+      "opaqueWidth": 152,
+      "opaqueHeight": 298,
+      "opaqueCenterX": 128.0,
+      "capTopY": 18,
+      "floorY": 316
+    },
+    "selectedSideRight90": {
+      "opaqueBoundsExclusive": [
+        74,
+        18,
+        181,
+        316
+      ],
+      "opaqueWidth": 107,
+      "opaqueHeight": 298,
+      "opaqueCenterX": 127.5,
+      "capTopY": 18,
+      "floorY": 316
+    },
+    "v2Back180": {
+      "opaqueBoundsExclusive": [
+        52,
+        18,
+        204,
+        316
+      ],
+      "opaqueWidth": 152,
+      "opaqueHeight": 298,
+      "opaqueCenterX": 128.0,
+      "capTopY": 18,
+      "floorY": 316
+    }
+  },
+  "verticalLandmarks": [
+    {
+      "id": "capTop",
+      "label": "cap top",
+      "frontY": 18,
+      "sideY": 18,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "measurement": "outer silhouette"
+    },
+    {
+      "id": "badgeCentre",
+      "label": "golden badge centre",
+      "frontY": 48.5,
+      "sideY": 46.0,
+      "deltaY": -2.5,
+      "requiredDeltaY": 0,
+      "passesExact": false,
+      "measurement": "gold component centre"
+    },
+    {
+      "id": "earCentre",
+      "label": "visible ear centre",
+      "frontY": 88.5,
+      "sideY": 89.5,
+      "deltaY": 1.0,
+      "requiredDeltaY": 0,
+      "passesExact": false,
+      "measurement": "skin component centre"
+    },
+    {
+      "id": "shoulderApex",
+      "label": "shoulder apex",
+      "frontY": 121,
+      "sideY": 108,
+      "deltaY": -13,
+      "requiredDeltaY": 0,
+      "passesExact": false,
+      "measurement": "upper blue body envelope"
+    },
+    {
+      "id": "beardBase",
+      "label": "beard base",
+      "frontY": 149,
+      "sideY": 142,
+      "deltaY": -7,
+      "requiredDeltaY": 0,
+      "passesExact": false,
+      "measurement": "cream beard envelope, exclusive base"
+    },
+    {
+      "id": "armStripeTop",
+      "label": "arm stripe top",
+      "frontY": 150,
+      "sideY": 150,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "measurement": "near sleeve cream envelope"
+    },
+    {
+      "id": "armStripeCentre",
+      "label": "arm stripe centre",
+      "frontY": 159,
+      "sideY": 159,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "measurement": "near sleeve cream centre"
+    },
+    {
+      "id": "armStripeBase",
+      "label": "arm stripe base",
+      "frontY": 168,
+      "sideY": 168,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "measurement": "near sleeve cream envelope"
+    },
+    {
+      "id": "midriffStripeTop",
+      "label": "midriff stripe top",
+      "frontY": 157,
+      "sideY": 155,
+      "deltaY": -2,
+      "requiredDeltaY": 0,
+      "passesExact": false,
+      "measurement": "torso cream envelope"
+    },
+    {
+      "id": "midriffStripeCentre",
+      "label": "midriff stripe centre",
+      "frontY": 165.5,
+      "sideY": 162.5,
+      "deltaY": -3.0,
+      "requiredDeltaY": 0,
+      "passesExact": false,
+      "measurement": "torso cream centre"
+    },
+    {
+      "id": "midriffStripeBase",
+      "label": "midriff stripe base",
+      "frontY": 174,
+      "sideY": 170,
+      "deltaY": -4,
+      "requiredDeltaY": 0,
+      "passesExact": false,
+      "measurement": "torso cream envelope"
+    },
+    {
+      "id": "palmCentre",
+      "label": "resting palm centre",
+      "frontY": 215,
+      "sideY": 218,
+      "deltaY": 3,
+      "requiredDeltaY": 0,
+      "passesExact": false,
+      "measurement": "skin component centre"
+    },
+    {
+      "id": "palmBase",
+      "label": "resting palm base",
+      "frontY": 227,
+      "sideY": 231,
+      "deltaY": 4,
+      "requiredDeltaY": 0,
+      "passesExact": false,
+      "measurement": "skin component, exclusive base"
+    },
+    {
+      "id": "kneeBandCentre",
+      "label": "knee band centre",
+      "frontY": 266.5,
+      "sideY": 264.5,
+      "deltaY": -2.0,
+      "requiredDeltaY": 0,
+      "passesExact": false,
+      "measurement": "blue knee-band centre"
+    },
+    {
+      "id": "floor",
+      "label": "floor bound",
+      "frontY": 316,
+      "sideY": 316,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "measurement": "opaque bound, exclusive floor"
+    }
+  ],
+  "evidence": {
+    "landmarkBoard": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v3/evidence/front-side-vertical-landmark-register.png",
+      "sha256": "068b476cd9d0365824fe6382f989e64679b2a85874445496b4d62b9ebb8a1d1a"
+    }
+  },
+  "rejectedGeneratedAttempts": [
+    {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v3/rejected-sources/side-landmark-edit-attempt-1.png",
+      "sha256": "4eb5deeb7bae03139f2652e06084cd867e11000c621cb34185ea4ea0d25f1708",
+      "reason": "missed hard internal datums after normalization"
+    },
+    {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v3/rejected-sources/side-landmark-edit-attempt-2.png",
+      "sha256": "795066dc9a85a216c833346735374aa1b10873336a9102e88df56fed0ca1dffa",
+      "reason": "improved guidance still missed beard, shoulder, stripe and hand datums"
+    }
+  ],
+  "alignmentContract": {
+    "cell": [
+      256,
+      320
+    ],
+    "logicalCell": [
+      32,
+      40
+    ],
+    "density": 8,
+    "anchor": [
+      16,
+      40
+    ],
+    "capTopY": 18,
+    "floorY": 316,
+    "opaqueHeight": 298,
+    "requiredLandmarkDeltaY": 0
+  },
+  "validation": {
+    "allViewsSameHeight": true,
+    "allViewsShareCapTop": true,
+    "allViewsShareFloor": true,
+    "exactLandmarkPassCount": 5,
+    "exactLandmarkTotal": 15,
+    "sideLandmarkRegistrationReady": false,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "animationDraftsChanged": false
+  },
+  "previousV2Validation": {
+    "cellGeometryMatches": true,
+    "transparentSafetyGutters": true,
+    "edgePixels": {
+      "sideRight90": 0,
+      "back180": 0
+    },
+    "sharedCapTop": true,
+    "sharedFloor": true,
+    "backAlphaMatchesFrontExactly": true,
+    "backAlphaMismatchPixels": 0,
+    "generatedBackBeforeLockGeometry": {
+      "sourcePixels": [
+        1122,
+        1402
+      ],
+      "sourceSignificantAlphaBoundsExclusive": [
+        218,
+        76,
+        903,
+        1386
+      ],
+      "normalizedOpaqueBoundsExclusive": [
+        50,
+        18,
+        206,
+        316
+      ],
+      "opaqueWidth": 156,
+      "opaqueHeight": 298,
+      "opaqueCenterX": 128.0,
+      "capTopY": 18,
+      "floorY": 316
+    },
+    "backMaxRegisteredWidthDelta": 0,
+    "backMaxRegisteredCenterDelta": 0.0,
+    "backMaxAllOccupiedRowCenterDelta": 0.0,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false
+  },
+  "promptLog": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v3/PROMPT_LOG.md",
+  "rollback": "Delete only art/drafts/keeper-prime-orthographic-views-2026-10-13-v3 and public/keeper-review/keeper-prime-orthographic-v3; V2, Prime Master and production remain unchanged."
+}
