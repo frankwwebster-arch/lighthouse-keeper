@@ -9,9 +9,10 @@ This directory is the reversible working area for handoff `d9081e53-2808-4b1f-84
 - A candidate becomes production art only after a separate explicit promotion instruction.
 
 The batch currently exposes 41 active amendment candidates. Thirteen generated
-face-to-camera candidates were withdrawn by Frank on 12 October and are retained
-only as rejected provenance; `withdrawn-face-camera-drafts.json` is the exact
-decision record. The other exact handoff names are either verified canonical
+face-to-camera candidates were withdrawn by Frank on 12 October. Twelve remain
+as rejected provenance; Frank explicitly ordered the complete
+`keeper_count_money` amendment deleted and reverted to canonical.
+`withdrawn-face-camera-drafts.json` is the exact hash and decision record. The other exact handoff names are either verified canonical
 keeps or explicit iterative/deferred responses. `sync_review_registry.py`
 publishes only registers whose status remains `active-review-draft`.
 

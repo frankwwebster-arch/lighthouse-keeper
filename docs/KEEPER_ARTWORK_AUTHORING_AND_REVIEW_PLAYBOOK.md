@@ -32,6 +32,9 @@ reactivated by a family rebuild. Canonical front-facing art remains authoritativ
 until Frank gives a new explicit direction. For retained side and
 three-quarter amendments, do not introduce a generic smile or open grin;
 action-specific mouths are allowed only when the physical action requires one.
+The rejected `keeper_count_money` source, normalized strip and review evidence
+were subsequently deleted at Frank's explicit request; only their SHA-256
+values and deletion record remain. Never regenerate that amendment implicitly.
 The rejected `keeper_pyjamas_turn_back-v2-neutral.png` is a pinned negative
 example: its front pose erases the moustache/mouth definition and turns the
 remaining line into the cutesy curved "pixie grin" Frank rejected. Never use

@@ -6,10 +6,6 @@
   "activeHistoricalDraftsChanged": false,
   "withdrawn": [
     {
-      "animation": "keeper_count_money",
-      "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_count_money/draft-register.json"
-    },
-    {
       "animation": "keeper_lift_button_front",
       "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_lift_button_front/draft-register.json"
     },
@@ -58,6 +54,18 @@
     {
       "animation": "keeper_water_plants_front",
       "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_water_plants_front/draft-register.json"
+    }
+  ],
+  "deleted": [
+    {
+      "animation": "keeper_count_money",
+      "deletedAtUserRequest": "2026-10-12",
+      "reason": "Frank judged every pose terrible and explicitly requested deletion and reversion to the previous version.",
+      "sourceSha256": "3567b77564ed483776d90ba504606f4ec4c96c4abbabd668484b37ea560232ee",
+      "draftStripSha256": "499eadb2658812bfb58c90618bf50ebc1d2bbc060e7e026ed590c96043a4c64f",
+      "canonicalStripSha256": "451c620ce890021930b04aa0bdecddc756d6bd830c552ad0ce6ea61d1d34c7a2",
+      "canonicalRuntimeSha256": "47002b4c2d69148e4a172ca8fff5be4ea251c34b501a26e6ce63022f4b867a64",
+      "recovery": "Rejected files remain recoverable from Git history before their explicit deletion; canonical raw and runtime assets were never changed."
     }
   ]
 }
