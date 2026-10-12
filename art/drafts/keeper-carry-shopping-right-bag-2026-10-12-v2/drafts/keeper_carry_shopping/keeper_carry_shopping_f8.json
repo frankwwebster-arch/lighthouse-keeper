@@ -1,0 +1,52 @@
+{
+  "w": 34,
+  "h": 40,
+  "frames": 8,
+  "fps": 6,
+  "density": 4,
+  "anchor": [
+    18,
+    40
+  ],
+  "z": 50,
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "interaction": "carry-shopping",
+  "mirrorsFor": "left",
+  "reviewScale": [
+    100,
+    99
+  ],
+  "reviewOffset": [
+    0.5,
+    0
+  ],
+  "assetRole": "clip",
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "reviewScaleRounds": {
+    "2026-10-11": [
+      100,
+      99
+    ]
+  },
+  "reviewOffsetRounds": {
+    "2026-10-11": [
+      0.5,
+      0
+    ]
+  },
+  "draftId": "keeper-carry-shopping-right-bag-2026-10-12-v2",
+  "canonicalUnchanged": true,
+  "amendment": {
+    "date": "2026-10-12",
+    "authoredFrames": [
+      1,
+      7
+    ],
+    "derivedLoopEndpointFrame": 8,
+    "reason": "Right-hand shopping bag was missing in annotated frames 1 and 7 while surrounding gait frames retained it; frame 8 follows corrected frame 1 to preserve the existing exact loop endpoint.",
+    "invariant": "Frames 2-6 are byte-identical to the 11 October draft; frame 8 is byte-identical to corrected frame 1; face, beard, torso and rear bag are preserved in the authored corrections."
+  }
+}

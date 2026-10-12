@@ -21,6 +21,13 @@ is preserved as a separate sibling candidate in
 `art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/`; this batch's
 first variant remains unchanged for direct comparison and rollback.
 
+Frank's later annotated right-hand-bag correction for `keeper_carry_shopping`
+is likewise preserved as a separate sibling candidate in
+`art/drafts/keeper-carry-shopping-right-bag-2026-10-12-v2/`. It authors the
+missing bag in frames 1 and 7 and synchronizes frame 8 to corrected frame 1 so
+the established exact loop endpoint remains seamless. This batch's first
+variant remains unchanged for direct comparison and rollback.
+
 The party outfit rule is one red-and-cream conical paper party hat replacing the
 navy cap; the hat does not expose or invent a bald dome and remains stable
 across every retained side/rear pose.

@@ -1,0 +1,155 @@
+{
+  "draftId": "keeper-carry-shopping-right-bag-2026-10-12-v2",
+  "handoffId": "direct-review-2026-10-12-carry-shopping-right-bag",
+  "animation": "keeper_carry_shopping",
+  "status": "active-review-draft",
+  "label": "12 Oct right-hand bag correction v2",
+  "selection": "Direct annotated review correction; requires separate explicit promotion.",
+  "canonical": {
+    "strip": "art/raw/keeper-first-batch/keeper_carry_shopping_f8.png",
+    "stripSha256": "14f15ffb437c67ecf613190e7b6c3789c1352a01ca99cee0900af99fd8171128",
+    "runtime": "public/sprites/keeper_carry_shopping.png",
+    "runtimeSha256": "e5b3e241157a6643327f25a4cc30c451b837ea98ec2ba57ae344399eb5040384",
+    "sidecar": "art/raw/keeper-first-batch/keeper_carry_shopping_f8.json",
+    "sidecarSha256": "cf39fe2310e704c77079f459bb97ca318f99e0df89eac9f046d59b38e7442a0f"
+  },
+  "previousDraft": {
+    "register": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_carry_shopping/draft-register.json",
+    "registerSha256": "95a732d425bd33c3f80bb8c8d88ed48babd44cc0e2f8e5d0daffc2469835abb7",
+    "strip": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_carry_shopping/keeper_carry_shopping_f8.png",
+    "stripSha256": "8300433ceac02037a105e4e1f97ca2975a3d007771a701a707178acdcc22cc3f",
+    "sidecar": "art/drafts/keeper-review-amendments-2026-10-11-v1/drafts/keeper_carry_shopping/keeper_carry_shopping_f8.json",
+    "sidecarSha256": "ea8d766c9105a3b6e0ac437cf7a896af7d59288187b64eb54d0d26c6b7dc28ff"
+  },
+  "draft": {
+    "source": "art/drafts/keeper-carry-shopping-right-bag-2026-10-12-v2/frame-1-corrected-generated.png",
+    "sourceSha256": "c5680c54146f8a30f3cb055ce9395510ea986efe2b1060b34b7d9c476b44343d",
+    "workingSource": "art/drafts/keeper-carry-shopping-right-bag-2026-10-12-v2/frame-7-corrected-generated.png",
+    "workingSourceSha256": "f673d6998545c6fbb97845b567d70a8e26316cd4c3bee001ed01e3c7881bba47",
+    "strip": "art/drafts/keeper-carry-shopping-right-bag-2026-10-12-v2/drafts/keeper_carry_shopping/keeper_carry_shopping_f8.png",
+    "stripSha256": "c0a38a128b3b14735bc8cd479e238c2c0f1fbd1a35f4f28fa86ca1807f02bc9c",
+    "sidecar": "art/drafts/keeper-carry-shopping-right-bag-2026-10-12-v2/drafts/keeper_carry_shopping/keeper_carry_shopping_f8.json",
+    "sidecarSha256": "0dcb47aeab8baa19317acd34c90076562b0753b1e692a4401cfd2c9b54d84cd9",
+    "frameEvidence": [
+      {
+        "frame": 1,
+        "alphaBox": [
+          24,
+          3,
+          113,
+          158
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "acbae8d67ee3cee923ede20090fdb33a858357fabc5a077ff362363bd527273d",
+        "changedPixelBoxFromV1": [
+          70,
+          72,
+          113,
+          158
+        ]
+      },
+      {
+        "frame": 2,
+        "alphaBox": [
+          20,
+          3,
+          115,
+          157
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "d9767aeb8c3eb87eba23d700b5f51152bb9f59f3a79fcf5078c15be56559410e",
+        "changedPixelBoxFromV1": null
+      },
+      {
+        "frame": 3,
+        "alphaBox": [
+          32,
+          3,
+          104,
+          158
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "a7a53a1c344a7a99a151b7635fc59f75f642ea0d5736c6cced74d5295e9bf4d7",
+        "changedPixelBoxFromV1": null
+      },
+      {
+        "frame": 4,
+        "alphaBox": [
+          22,
+          2,
+          114,
+          157
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "546ec6220623c51aa44f9196dfd570291581d23e243a12edce2bf5959d79fa50",
+        "changedPixelBoxFromV1": null
+      },
+      {
+        "frame": 5,
+        "alphaBox": [
+          18,
+          2,
+          118,
+          158
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "1c327d3ba5b7d464e8ef9ca7c111a4f2a76ea1bd9ee1b2154b1031ac3c70c507",
+        "changedPixelBoxFromV1": null
+      },
+      {
+        "frame": 6,
+        "alphaBox": [
+          22,
+          4,
+          115,
+          158
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "fe2ebf5ea4719e84465f0851b79d770f63a7853677974a7bc2c88fff34f848df",
+        "changedPixelBoxFromV1": null
+      },
+      {
+        "frame": 7,
+        "alphaBox": [
+          24,
+          2,
+          111,
+          158
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "6f53d4d6d9849566ccf0f9ceca1456238e5887c8a416985382b99dfcc28c4a7e",
+        "changedPixelBoxFromV1": [
+          70,
+          72,
+          111,
+          158
+        ]
+      },
+      {
+        "frame": 8,
+        "alphaBox": [
+          24,
+          3,
+          113,
+          158
+        ],
+        "opaqueBorderPixelCount": 0,
+        "pixelSha256": "acbae8d67ee3cee923ede20090fdb33a858357fabc5a077ff362363bd527273d",
+        "changedPixelBoxFromV1": [
+          70,
+          72,
+          113,
+          158
+        ]
+      }
+    ],
+    "evidence": [
+      "art/drafts/keeper-carry-shopping-right-bag-2026-10-12-v2/evidence/keeper_carry_shopping/frames.png",
+      "art/drafts/keeper-carry-shopping-right-bag-2026-10-12-v2/evidence/keeper_carry_shopping/preview.gif"
+    ],
+    "normalization": "Corrected full poses are alpha-cropped and height-matched; only their viewer-right lower quadrant is composited over frames 1 and 7, preserving all other v1 pixels. Corrected frame 1 is copied exactly to frame 8 as the established loop endpoint.",
+    "seam": "right-hand bag remains present through the complete eight-frame gait; frames 1 and 8 are byte-identical loop endpoints; frames 2-6 are unchanged"
+  },
+  "qualification": "Only the forward/right hand and shopping-bag quadrant is authored in frames 1 and 7; corrected frame 1 is copied to frame 8 to retain the exact loop endpoint. The face, beard, cap, torso, rear bag, gait family and frames 2-6 remain from the reviewed v1 draft.",
+  "rollback": "Remove this exact draft directory and registry entry; canonical and the complete 11 October draft remain unchanged."
+}
