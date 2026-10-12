@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "platformId": "keeper-animation-workbench",
+  "title": "Keeper Animation Workbench",
+  "updatedOn": "2026-10-12",
+  "separateFrom": "/keeper-review/",
+  "principles": {
+    "final": "Approved, immutable source strips. Editing begins by copying an item to Draft.",
+    "draft": "Non-destructive playback recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
+    "transitions": "Every visible same-costume action must carry an inspectable walk \u2192 stop \u2192 optional turn \u2192 action/recovery route. Door-hidden costume changes are explicitly exempt."
+  },
+  "lanes": {
+    "final": [
+      {
+        "id": "keeper_turn_front-v2-final",
+        "lane": "final",
+        "name": "keeper_turn_front",
+        "title": "Turn right profile to front",
+        "description": "Approved V2 complete moving-model redraw with an exact canonical front endpoint.",
+        "assetId": "final:keeper_turn_front:v2",
+        "timeline": [
+          {
+            "id": "frame-1",
+            "frame": 0
+          },
+          {
+            "id": "frame-2",
+            "frame": 1
+          },
+          {
+            "id": "frame-3",
+            "frame": 2
+          },
+          {
+            "id": "frame-4",
+            "frame": 3
+          },
+          {
+            "id": "frame-5",
+            "frame": 4
+          },
+          {
+            "id": "frame-6",
+            "frame": 5
+          }
+        ],
+        "sectionLoops": [],
+        "overallLoop": false,
+        "transitionPolicy": "required",
+        "transitionReason": "Standard-uniform movement remains visible; walk, stop, turn and arrival must read as one continuous route.",
+        "transitionRoute": [
+          {
+            "id": "walk",
+            "label": "Walk",
+            "assetId": "runtime:keeper_walk_cycle",
+            "frames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "repeats": 2,
+            "mirror": false
+          },
+          {
+            "id": "stop",
+            "label": "Stop",
+            "assetId": "runtime:keeper_walk_stop",
+            "frames": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "repeats": 1,
+            "mirror": false
+          },
+          {
+            "id": "turn",
+            "label": "Turn",
+            "assetId": "final:keeper_turn_front:v2",
+            "frames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "repeats": 1,
+            "mirror": false
+          },
+          {
+            "id": "arrive",
+            "label": "Front idle",
+            "assetId": "runtime:keeper_neutral_standing-front",
+            "frames": [
+              0
+            ],
+            "repeats": 4,
+            "mirror": false,
+            "fps": 4
+          }
+        ],
+        "approval": {
+          "approvedBy": "Frank",
+          "approvedOn": "2026-10-12",
+          "wording": "I am very happy with your V2.",
+          "scope": "Approved for the workbench Final lane; canonical runtime promotion remains a separate decision."
+        },
+        "sourceDraft": "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2",
+        "tags": [
+          "standard",
+          "turn",
+          "front-endpoint",
+          "approved-v2"
+        ]
+      },
+      {
+        "id": "keeper_turn_left_front-v2-final",
+        "lane": "final",
+        "name": "keeper_turn_left_front",
+        "title": "Turn left profile to front",
+        "description": "Approved V2 complete moving-model redraw with an exact canonical front endpoint.",
+        "assetId": "final:keeper_turn_left_front:v2",
+        "timeline": [
+          {
+            "id": "frame-1",
+            "frame": 0
+          },
+          {
+            "id": "frame-2",
+            "frame": 1
+          },
+          {
+            "id": "frame-3",
+            "frame": 2
+          },
+          {
+            "id": "frame-4",
+            "frame": 3
+          },
+          {
+            "id": "frame-5",
+            "frame": 4
+          },
+          {
+            "id": "frame-6",
+            "frame": 5
+          }
+        ],
+        "sectionLoops": [],
+        "overallLoop": false,
+        "transitionPolicy": "required",
+        "transitionReason": "Standard-uniform movement remains visible; walk, stop, turn and arrival must read as one continuous route.",
+        "transitionRoute": [
+          {
+            "id": "walk",
+            "label": "Walk",
+            "assetId": "runtime:keeper_walk_cycle",
+            "frames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "repeats": 2,
+            "mirror": true
+          },
+          {
+            "id": "stop",
+            "label": "Stop",
+            "assetId": "runtime:keeper_walk_stop",
+            "frames": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "repeats": 1,
+            "mirror": true
+          },
+          {
+            "id": "turn",
+            "label": "Turn",
+            "assetId": "final:keeper_turn_left_front:v2",
+            "frames": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "repeats": 1,
+            "mirror": false
+          },
+          {
+            "id": "arrive",
+            "label": "Front idle",
+            "assetId": "runtime:keeper_neutral_standing-front",
+            "frames": [
+              0
+            ],
+            "repeats": 4,
+            "mirror": false,
+            "fps": 4
+          }
+        ],
+        "approval": {
+          "approvedBy": "Frank",
+          "approvedOn": "2026-10-12",
+          "wording": "I am very happy with your V2.",
+          "scope": "Approved for the workbench Final lane; canonical runtime promotion remains a separate decision."
+        },
+        "sourceDraft": "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2",
+        "tags": [
+          "standard",
+          "turn",
+          "front-endpoint",
+          "approved-v2"
+        ]
+      }
+    ],
+    "draft": []
+  },
+  "assets": [
+    {
+      "id": "runtime:keeper_walk_cycle",
+      "name": "keeper_walk_cycle",
+      "file": "/sprites/keeper_walk_cycle.png",
+      "sha256": "dbd4e1827753ed384371044f3e976bef5c7529ce0f40cabfc4249902407b7e3c",
+      "w": 32,
+      "h": 40,
+      "frames": 9,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "outfit": "standard",
+      "loop": true,
+      "mirrorSafe": true,
+      "source": "production-runtime-context",
+      "immutable": true
+    },
+    {
+      "id": "runtime:keeper_walk_stop",
+      "name": "keeper_walk_stop",
+      "file": "/sprites/keeper_walk_stop.png",
+      "sha256": "ed7c58911ea9c5dfa56e7bed2e67e106740d88835e860ffaa16ac18dd9d8a6e5",
+      "w": 32,
+      "h": 40,
+      "frames": 5,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "startPose": "standing-side-right",
+      "endPose": "standing-side-right",
+      "outfit": "standard",
+      "loop": false,
+      "mirrorSafe": true,
+      "source": "production-runtime-context",
+      "immutable": true
+    },
+    {
+      "id": "runtime:keeper_neutral_standing-front",
+      "name": "keeper_neutral_standing-front",
+      "file": "/sprites/keeper_neutral_standing-front.png",
+      "sha256": "6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a",
+      "w": 32,
+      "h": 40,
+      "frames": 1,
+      "fps": 0,
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "startPose": "standing-front",
+      "endPose": "standing-front",
+      "outfit": "standard",
+      "loop": false,
+      "mirrorSafe": false,
+      "source": "production-runtime-context",
+      "immutable": true
+    },
+    {
+      "id": "final:keeper_turn_front:v2",
+      "name": "keeper_turn_front",
+      "file": "/keeper-animation-workbench/assets/final/keeper_turn_front-v2-d2a5d16204759140.png",
+      "sha256": "d2a5d162047591409ffed4aa364bc374fcd26ab1fad310c01c0ad769819456f6",
+      "w": 32,
+      "h": 40,
+      "frames": 6,
+      "fps": 4,
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "startPose": "standing-side-right",
+      "endPose": "standing-front",
+      "outfit": "standard",
+      "loop": false,
+      "mirrorSafe": false,
+      "source": "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/drafts/keeper_turn_front/keeper_turn_front_f6.png",
+      "sourceSidecar": "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/drafts/keeper_turn_front/keeper_turn_front_f6.json",
+      "sourceSidecarSha256": "26844b9e2dc861ddfadb71fc4efed1b68ddabd58886c77e0fa86e5c5e403a3fc",
+      "immutable": true
+    },
+    {
+      "id": "final:keeper_turn_left_front:v2",
+      "name": "keeper_turn_left_front",
+      "file": "/keeper-animation-workbench/assets/final/keeper_turn_left_front-v2-2366158eaddf9bc6.png",
+      "sha256": "2366158eaddf9bc62d7856fde4731a3fee2189f6fa4a843568b3a00c7e8da155",
+      "w": 32,
+      "h": 40,
+      "frames": 6,
+      "fps": 4,
+      "density": 4,
+      "anchor": [
+        16,
+        40
+      ],
+      "startPose": "standing-side-left",
+      "endPose": "standing-front",
+      "outfit": "standard",
+      "loop": false,
+      "mirrorSafe": false,
+      "source": "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/drafts/keeper_turn_left_front/keeper_turn_left_front_f6.png",
+      "sourceSidecar": "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/drafts/keeper_turn_left_front/keeper_turn_left_front_f6.json",
+      "sourceSidecarSha256": "83de4b34ebd9ffe8cd1d3aaff9883f80a4566497af72c352a95313a47b96b3bb",
+      "immutable": true
+    }
+  ],
+  "storage": {
+    "drafts": "browser-local under keeper-animation-workbench:v1; export/import JSON is the portable handoff",
+    "final": "repository catalogue only; browser tools never mutate Final records"
+  },
+  "featureContract": {
+    "frameOperations": [
+      "copy",
+      "remove",
+      "move-left",
+      "move-right"
+    ],
+    "playback": [
+      "play",
+      "pause",
+      "restart",
+      "overall-loop",
+      "section-loop"
+    ],
+    "transitionPreview": true,
+    "transitionPolicies": [
+      "required",
+      "door-hidden"
+    ],
+    "futureSafe": "Timeline entries use stable IDs and asset/frame references; approved PNG bytes remain immutable."
+  },
+  "provenance": {
+    "v2Register": "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/batch-register.json",
+    "v2RegisterSha256": "1696bc89de5b97ab86f65977b4cd64772ff876940231eca3d95b31689ceee433",
+    "runtimeManifest": "public/sprites/manifest.json",
+    "runtimeManifestSha256": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false
+  }
+}

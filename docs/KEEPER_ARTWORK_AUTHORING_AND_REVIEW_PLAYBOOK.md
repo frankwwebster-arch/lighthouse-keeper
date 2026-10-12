@@ -52,8 +52,9 @@ Frank approved the pack on 12 October 2026 for small-batch authoring. It still
 cannot authorize production promotion by itself. The first two-animation batch
 is limited to the standard-uniform side-to-front turns. Its V1 F5-only head
 transplants were rejected; V2 redraws the complete moving models in F1–F5 and
-locks F6 to exact canon, with deterministic endpoint-geometry checks. V2 awaits
-separate visual approval. The full read-only 62-asset scope is recorded in
+locks F6 to exact canon, with deterministic endpoint-geometry checks. Frank
+approved both V2 turns for the Animation Workbench Final lane on 12 October;
+this is not production promotion. The full read-only 62-asset scope is recorded in
 `docs/KEEPER_FULL_FACE_INVENTORY.md` and
 `data/keeper_full_face_inventory.json`.
 
@@ -400,6 +401,24 @@ The 65-frame, 4 fps review strip has SHA-256
 `01bb338512f37561efd86ceb4256c855e4f7b3e250a49b1b5e275d528a25eab0`.
 It is registered as an active `keeper_snooker` comparison. The canonical
 eight-frame production strip is unchanged.
+
+## Assembly and transition review
+
+The separate `/animation-workbench` surface complements, but does not replace,
+the exact-name `/keeper-review/` workflow. The established reviewer remains the
+source for amendment decisions and handoffs. The workbench is the place to
+assemble approved material into editable Draft recipes and judge complete
+same-costume routes.
+
+Final workbench items are immutable and repository-backed. Frame copying,
+removal, reordering and section repetition begin only after **Copy to Draft**;
+these operations change frame references, never approved sprite bytes. Every
+visible same-costume action must expose its walk, stop, optional turn, action,
+recovery and departure as applicable. Costume changes fully hidden by closed
+doors are explicitly exempt. Workbench Final approval never implies raw or
+runtime promotion.
+
+The complete contract is in `docs/KEEPER_ANIMATION_WORKBENCH.md`.
 
 ## Review-platform workflow for future amendments
 

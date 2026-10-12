@@ -121,8 +121,9 @@ redraw with a non-jumping exact-canon endpoint. V2 is at
 `art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/`: F1–F5 are
 new approved-model rotations, F6 is byte-identical to canon, and F5/F6 share
 the same baseline, height and centreline with at most two source pixels of
-width difference. V2 awaits separate visual approval. No withdrawn face-camera
-work was reactivated.
+width difference. Frank approved both V2 turns for the separate Animation
+Workbench Final lane on 12 October; this does not authorize raw/runtime
+promotion. No withdrawn face-camera work was reactivated.
 
 ## Neutral endpoint contract checkpoint — 10 October 2026
 
@@ -1006,6 +1007,34 @@ technical regressions may return:
 
 The comprehensive per-sheet correction list is in
 `docs/keeper-scale-audit/README.md`.
+
+## Separate Draft/Final animation workbench (12 October 2026)
+
+Frank approved both complete moving-model V2 turn redraws with the exact
+wording “I am very happy with your V2.” They now seed the immutable Final lane
+of a new `/animation-workbench` surface. This is deliberately separate from
+`/keeper-review/`: it does not consume that platform's saved reviews, handoff
+queue or locks, and Final-lane acceptance is not production promotion.
+
+The workbench uses the same recipe structure for both Final and Draft. Final is
+locked; **Copy to Draft** makes a browser-local, JSON-exportable working copy.
+Draft controls copy, remove and reorder frame references, loop a complete
+animation, and repeat a selected contiguous section. They never rewrite source
+strips. Overlapping section loops fail closed.
+
+Transition preview is mandatory for visible same-costume routes. The initial
+two items play `walk ×2 → stop → approved V2 turn → canonical front idle`; the
+left route mirrors only the mirror-safe walk/stop assets. Metadata diagnostics
+check pose and outfit agreement at joins. Costume-to-costume joins may use the
+explicit `door-hidden` policy because the closed doors obscure them.
+
+Full architecture, extension points and verification are in
+`docs/KEEPER_ANIMATION_WORKBENCH.md`. The authoritative catalogue is
+`data/keeper_animation_workbench.json`; its public copy is byte-identical.
+`scripts/verify_keeper_animation_workbench.ts` checks approval evidence,
+content hashes, strip geometry, transparent cell gutters, immutable Final
+scope and complete transition routes. Raw/runtime sprites and the manifest
+remain unchanged.
 
 ## Review-comments workflow for a later feedback round
 

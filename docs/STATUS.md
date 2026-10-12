@@ -42,8 +42,8 @@ Keeper review cards now also preview, save and export a proposed per-clip
 runtime FPS. Accepted `animationFps` values belong in each animation's source
 JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 
-The first full-face normalisation phase is approved. Frank approved the
-versioned V1 canon pack uses the selected standard front neutral byte-for-byte,
+The first full-face normalisation phase is approved. The versioned V1 canon
+pack uses the selected standard front neutral byte-for-byte,
 shows the accepted V11 artist-smock neutral as its finish reference, and adds
 exact face landmarks, masks/guides and deterministic alpha/gutter checks. Its
 read-only inventory covers 62 direct or near-direct front assets and reports
@@ -51,8 +51,9 @@ five existing legacy cell-edge risks without changing them. No production
 sprite or manifest has been changed. The first review batch is deliberately
 limited to `keeper_turn_front` and `keeper_turn_left_front`. Frank rejected the
 V1 F5-only transplant approach; V2 redraws each complete moving model in F1–F5,
-then restores exact canon pixels in F6. Both V2 candidates await explicit visual
-approval before any promotion or wider normalisation.
+then restores exact canon pixels in F6. Frank approved both V2 turns for the
+Animation Workbench Final lane on 12 October. Production promotion and wider
+normalisation still require separate explicit instructions.
 
 1. The evidence-based beard/hand audit classifies every manifest frame and pins `keeper_clear_snow` as the canonical fuller stepped beard. A landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It remains fail-closed for unavailable evidence: 163 side-on standing/sitting sheets are inventoried, eight zero-difference reference self-comparisons match, and 994 different-pose frames—including `keeper_darts` 3–6—are non-comparable because no approved beard masks, facial landmarks or hand-depth/component evidence exists. Frank reviewed Darts 3–6 visually on 11 October and accepted the beards with no amendment required; no beard draft is active or promotable. Next, use GPT-5.6 Sol to establish comparison inputs for any future claim, then run the later frame-isolation and released-prop audits.
 2. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. Frank's immutable second visual review recorded 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed; the current reviewer has 97 Happy and 67 Awaiting after Frank selected the Darts draft as his preferred candidate. Frank's saved per-animation width and height remain final production art direction.
@@ -78,6 +79,24 @@ approval before any promotion or wider normalisation.
 - Add Ralph and Eddie on the Who is playing screen (none exist yet).
 
 ## Verification and delivery
+
+### Separate Draft/Final animation workbench
+
+The new Keeper Animation Workbench is deployed separately from the established
+reviewer at `/animation-workbench`. Its shared item architecture has an
+immutable repository-backed Final lane and browser-local, JSON-exportable Draft
+lane. Draft recipes can copy, remove and reorder source-frame references, loop
+the whole preview and repeat selected contiguous sections without modifying any
+PNG. Every visible same-costume item has a complete transition player; only
+door-hidden costume changes are exempt.
+
+Frank approved the two complete V2 standard-uniform turn redraws on 12 October
+2026 and they seed Final. Their transition routes play the real runtime walk
+and stop strips, the approved V2 turn and the canonical front idle. This is
+workbench approval only: raw art, runtime sprites and the runtime manifest are
+unchanged. Architecture, limitations and Claude extension points are in
+`docs/KEEPER_ANIMATION_WORKBENCH.md`; the deterministic gate is
+`npm run verify:keeper-animation-workbench`.
 
 The reusable artwork method, failed approaches, continuity standards, exact
 accepted references and future review-platform workflow are consolidated in
