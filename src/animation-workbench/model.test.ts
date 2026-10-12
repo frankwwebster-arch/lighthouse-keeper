@@ -5,6 +5,7 @@ const item: WorkbenchItem = {
   id: 'final', lane: 'final', name: 'turn', title: 'Turn', description: '', assetId: 'turn',
   timeline: [0, 1, 2, 3].map((frame) => ({ id: `f${frame}`, frame })), sectionLoops: [], overallLoop: false,
   transitionPolicy: 'required', transitionReason: '', tags: [],
+  timelineSegmentId: 'turn',
   transitionRoute: [
     { id: 'walk', role: 'walk', label: 'Walk (runtime length)', assetId: 'walk', frames: [0, 1], repeats: 1, mirror: false, distanceMode: 'runtime-placement', entryOcclusion: 'door-left' },
     { id: 'stop', role: 'stop', label: 'Stop', assetId: 'walk', frames: [1], repeats: 1, mirror: false },
@@ -69,5 +70,21 @@ describe('animation workbench timeline', () => {
     expect(transitionWarnings(item, assets)).toEqual([])
     const broken = { ...item, transitionRoute: [...item.transitionRoute, { id: 'walk2', role: 'walk' as const, label: 'Walk again', assetId: 'walk', frames: [0], repeats: 1, mirror: false }] }
     expect(transitionWarnings(broken, assets)).toEqual(['Action: turn ends standing-front; Walk again starts standing-side-right.'])
+  })
+
+  it('applies the editable timeline only to its declared route segment', () => {
+    const sharedAssetRoute: WorkbenchItem = {
+      ...item,
+      id: 'shared-strip',
+      lane: 'draft',
+      assetId: 'turn',
+      timeline: [2, 1, 0].map((frame) => ({ id: `start-${frame}`, frame })),
+      timelineSegmentId: 'walk-start',
+      transitionRoute: [
+        { id: 'stop-hold', role: 'stop', label: 'Hold', assetId: 'turn', frames: [3], repeats: 1, mirror: false },
+        { id: 'walk-start', role: 'stop', label: 'Start', assetId: 'turn', frames: [2, 1, 0], repeats: 1, mirror: false },
+      ],
+    }
+    expect(transitionPlayback(sharedAssetRoute, assets).map((frame) => frame.frame)).toEqual([3, 2, 1, 0])
   })
 })

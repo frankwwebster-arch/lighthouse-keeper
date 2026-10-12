@@ -72,6 +72,7 @@ for (const item of catalogue.lanes.final as Record<string, any>[]) {
   if (item.timeline?.length !== 6 || item.timeline.map((entry: Record<string, any>) => entry.frame).join(',') !== '0,1,2,3,4,5') fail(`${item.id} Final timeline changed`)
   if (item.sectionLoops?.length || item.overallLoop !== false) fail(`${item.id} Final recipe was mutated`)
   if (item.transitionPolicy !== 'required') fail(`${item.id} lost its visible-transition gate`)
+  if (item.transitionRoute.filter((segment: Record<string, any>) => segment.id === item.timelineSegmentId).length !== 1) fail(`${item.id} does not declare exactly one editable timeline route segment`)
   const roles = item.transitionRoute.map((segment: Record<string, any>) => segment.role)
   if (JSON.stringify(roles) !== '["walk","stop","action"]' && JSON.stringify(roles) !== '["walk","stop","turn","action"]') fail(`${item.id} ingress is not walk → stop → optional turn → action`)
   if (item.transitionRoute[0]?.distanceMode !== 'runtime-placement' || item.transitionRoute[0]?.repeats !== 1) fail(`${item.id} walk extension is not delegated to deterministic runtime placement`)
@@ -110,6 +111,8 @@ for (const item of catalogue.lanes.final as Record<string, any>[]) {
 for (const item of catalogue.lanes.draft as Record<string, any>[]) {
   if (item.lane !== 'draft' || item.approval) fail(`${item.id} is not an unapproved Draft`)
   if (item.transitionPolicy !== 'required' || !item.sourceDraft?.includes('keeper-prime-core-transitions')) fail(`${item.id} lost the Keeper Prime Draft boundary`)
+  const timelineSegments = item.transitionRoute.filter((segment: Record<string, any>) => segment.id === item.timelineSegmentId)
+  if (timelineSegments.length !== 1 || timelineSegments[0].assetId !== item.assetId) fail(`${item.id} does not declare exactly one matching editable timeline route segment`)
   for (const segment of item.transitionRoute as Record<string, any>[]) {
     const asset = assets.get(segment.assetId)
     if (!asset) fail(`${item.id} route references missing ${segment.assetId}`)
@@ -154,6 +157,7 @@ if (JSON.stringify(stopMotion) !== JSON.stringify([0.8, 0.55, 0.3, 0])) fail('wa
 const stopWalk = catalogue.lanes.draft.find((item: Record<string, any>) => item.id === EXPECTED_DRAFTS[1])
 const startSegment = stopWalk.transitionRoute.find((segment: Record<string, any>) => segment.id === 'walk-start')
 if (JSON.stringify(startSegment?.frames) !== JSON.stringify([2, 1, 0]) || JSON.stringify(startSegment?.motion) !== JSON.stringify([0.35, 0.65, 0.9])) fail('stop-to-walk retains the duplicated stationary acceleration frame')
+if (stopWalk.timelineSegmentId !== 'walk-start' || stopWalk.transitionRoute.find((segment: Record<string, any>) => segment.id === 'stop-hold')?.frames?.join(',') !== '3') fail('stop-to-walk editable timeline also controls the one-frame stop hold')
 const sitStopWalk = catalogue.lanes.draft.find((item: Record<string, any>) => item.id === EXPECTED_DRAFTS[5])
 if (sitStopWalk.transitionRoute.some((segment: Record<string, any>) => segment.id === 'stop-hold')) fail('sit-to-stop-to-walk duplicates the exact stop after stand already supplies it')
 

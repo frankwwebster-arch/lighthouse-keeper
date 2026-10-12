@@ -150,6 +150,7 @@ def final_item(name: str, direction: str) -> dict:
         "sectionLoops": [],
         "overallLoop": False,
         "transitionPolicy": "required",
+        "timelineSegmentId": "turn",
         "transitionReason": "Every action begins with walk, stop and any required facing turn. The game engine extends only the walk from world placement.",
         "transitionRoute": [
             {
@@ -225,7 +226,7 @@ def keeper_prime_drafts() -> list[dict]:
     start = segment("walk-start", "stop", "Exact reverse: stop to walk", "keeper_prime_walk_stop", start_frames, start_motion, start_pose="standing-side-right", end_pose="walking-side-right")
     resume = segment("walk-resume", "walk", "Walk away — continuous root motion", "keeper_prime_walk_cycle", restart_walk, [1.0] * len(restart_walk), start_pose="walking-side-right", end_pose="standing-side-right")
 
-    def item(identifier: str, title: str, description: str, asset: str, frames: list[int], route: list[dict], tags: list[str]) -> dict:
+    def item(identifier: str, title: str, description: str, asset: str, frames: list[int], route: list[dict], timeline_segment_id: str, tags: list[str]) -> dict:
         return {
             "id": f"{identifier}-kp-v2-draft",
             "lane": "draft",
@@ -237,6 +238,7 @@ def keeper_prime_drafts() -> list[dict]:
             "sectionLoops": [],
             "overallLoop": False,
             "transitionPolicy": "required",
+            "timelineSegmentId": timeline_segment_id,
             "transitionReason": "Keeper Prime Draft V2. Accepted deceleration is unchanged; acceleration begins on the first distinct moving frame; each action uses one coherent render family.",
             "transitionRoute": route,
             "sourceDraft": rel(CORE),
@@ -250,12 +252,12 @@ def keeper_prime_drafts() -> list[dict]:
     stand = segment("stand", "action", "Exact reverse: sit to stop", "keeper_prime_stand_side", list(range(6)), [0.0] * 6, start_pose="sitting-side-right", end_pose="standing-side-right")
 
     return [
-        item("keeper_prime_walk_to_stop", "1. Walk → stop", "A moving walk decelerates into the one exact Keeper Prime side stop; there are no stationary walking frames.", "keeper_prime_walk_stop", stop_frames, [walk, stop], ["walk", "stop"]),
-        item("keeper_prime_stop_to_walk", "2. Stop → walk", "One exact-stop beat is followed immediately by the first distinct reversed stop frame with root acceleration; the duplicated stationary frame is removed.", "keeper_prime_walk_stop", start_frames, [hold, start, resume], ["stop", "walk-start", "shortened-acceleration"]),
-        item("keeper_prime_walk_turn_front", "3. Walk → stop → full face", "Walk and accepted deceleration, then one coherent side-to-front redraw ending on byte-identical Keeper Prime. The rejected step 19→20 model swap is removed.", "keeper_prime_turn_front", list(range(6)), [walk, stop, turn_front], ["turn", "front", "exact-endpoint", "coherent-source"]),
-        item("keeper_prime_walk_turn_back", "4. Walk → stop → fully away", "Walk and accepted deceleration, then one coherent side-to-back redraw with a stable camera and body volume.", "keeper_prime_turn_back", list(range(6)), [walk, stop, turn_back], ["turn", "back", "exact-endpoint", "coherent-source"]),
-        item("keeper_prime_walk_stop_sit", "5. Walk → stop → sit", "Walk and accepted deceleration, then one coherent sit redraw whose early frames match Keeper Prime's scale and rendering density.", "keeper_prime_sit_side", list(range(6)), [walk, stop, sit], ["sit", "seated", "coherent-source"]),
-        item("keeper_prime_sit_stop_walk", "6. Sit → stop → walk", "Stand is the exact reverse of V2 sit. Its last frame supplies the single exact-stop beat, so acceleration begins immediately without a duplicate hold.", "keeper_prime_stand_side", list(range(6)), [stand, start, resume], ["stand", "walk-start", "exact-reverse", "shortened-acceleration"]),
+        item("keeper_prime_walk_to_stop", "1. Walk → stop", "A moving walk decelerates into the one exact Keeper Prime side stop; there are no stationary walking frames.", "keeper_prime_walk_stop", stop_frames, [walk, stop], "stop", ["walk", "stop"]),
+        item("keeper_prime_stop_to_walk", "2. Stop → walk", "One exact-stop beat is followed immediately by the first distinct reversed stop frame with root acceleration; the duplicated stationary frame is removed.", "keeper_prime_walk_stop", start_frames, [hold, start, resume], "walk-start", ["stop", "walk-start", "shortened-acceleration"]),
+        item("keeper_prime_walk_turn_front", "3. Walk → stop → full face", "Walk and accepted deceleration, then one coherent side-to-front redraw ending on byte-identical Keeper Prime. The rejected step 19→20 model swap is removed.", "keeper_prime_turn_front", list(range(6)), [walk, stop, turn_front], "turn-front", ["turn", "front", "exact-endpoint", "coherent-source"]),
+        item("keeper_prime_walk_turn_back", "4. Walk → stop → fully away", "Walk and accepted deceleration, then one coherent side-to-back redraw with a stable camera and body volume.", "keeper_prime_turn_back", list(range(6)), [walk, stop, turn_back], "turn-back", ["turn", "back", "exact-endpoint", "coherent-source"]),
+        item("keeper_prime_walk_stop_sit", "5. Walk → stop → sit", "Walk and accepted deceleration, then one coherent sit redraw whose early frames match Keeper Prime's scale and rendering density.", "keeper_prime_sit_side", list(range(6)), [walk, stop, sit], "sit", ["sit", "seated", "coherent-source"]),
+        item("keeper_prime_sit_stop_walk", "6. Sit → stop → walk", "Stand is the exact reverse of V2 sit. Its last frame supplies the single exact-stop beat, so acceleration begins immediately without a duplicate hold.", "keeper_prime_stand_side", list(range(6)), [stand, start, resume], "stand", ["stand", "walk-start", "exact-reverse", "shortened-acceleration"]),
     ]
 
 

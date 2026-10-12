@@ -56,7 +56,10 @@ art or manifest is changed.
 
 Both lanes use the same `WorkbenchItem` structure. A timeline entry contains a
 stable ID and a reference to a source-frame index; it never contains rewritten
-image data.
+image data. Each item also declares `timelineSegmentId`, the one route segment
+controlled by that editable timeline. This is essential when a stop hold and a
+walk-start share one source strip: editing the acceleration must not expand the
+one-frame hold.
 
 Final entries are loaded only from
 `public/keeper-animation-workbench/catalog.json`. The interface intentionally

@@ -60,6 +60,7 @@ export type WorkbenchItem = {
   transitionPolicy: TransitionPolicy
   transitionReason: string
   transitionRoute: RouteSegment[]
+  timelineSegmentId?: string
   approval?: Approval
   sourceDraft?: string
   sourceFinalId?: string
@@ -227,7 +228,10 @@ export function transitionPlayback(item: WorkbenchItem, assets: Map<string, Spri
   item.transitionRoute.forEach((segment) => {
     const asset = assets.get(segment.assetId)
     if (!asset) return
-    const frames = segment.assetId === item.assetId ? expandedItem.map((entry) => entry.frame) : segment.frames
+    const usesTimeline = item.timelineSegmentId
+      ? segment.id === item.timelineSegmentId
+      : segment.assetId === item.assetId
+    const frames = usesTimeline ? expandedItem.map((entry) => entry.frame) : segment.frames
     const repeated = Array.from({ length: Math.max(1, segment.repeats) }, () => frames).flat()
     repeated.forEach((frame, index) => {
       playback.push({

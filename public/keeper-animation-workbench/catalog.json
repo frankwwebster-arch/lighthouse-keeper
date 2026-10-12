@@ -47,6 +47,7 @@
         "sectionLoops": [],
         "overallLoop": false,
         "transitionPolicy": "required",
+        "timelineSegmentId": "turn",
         "transitionReason": "Every action begins with walk, stop and any required facing turn. The game engine extends only the walk from world placement.",
         "transitionRoute": [
           {
@@ -153,6 +154,7 @@
         "sectionLoops": [],
         "overallLoop": false,
         "transitionPolicy": "required",
+        "timelineSegmentId": "turn",
         "transitionReason": "Every action begins with walk, stop and any required facing turn. The game engine extends only the walk from world placement.",
         "transitionRoute": [
           {
@@ -253,6 +255,7 @@
         "sectionLoops": [],
         "overallLoop": false,
         "transitionPolicy": "required",
+        "timelineSegmentId": "stop",
         "transitionReason": "Keeper Prime Draft V2. Accepted deceleration is unchanged; acceleration begins on the first distinct moving frame; each action uses one coherent render family.",
         "transitionRoute": [
           {
@@ -353,6 +356,7 @@
         "sectionLoops": [],
         "overallLoop": false,
         "transitionPolicy": "required",
+        "timelineSegmentId": "walk-start",
         "transitionReason": "Keeper Prime Draft V2. Accepted deceleration is unchanged; acceleration begins on the first distinct moving frame; each action uses one coherent render family.",
         "transitionRoute": [
           {
@@ -472,6 +476,7 @@
         "sectionLoops": [],
         "overallLoop": false,
         "transitionPolicy": "required",
+        "timelineSegmentId": "turn-front",
         "transitionReason": "Keeper Prime Draft V2. Accepted deceleration is unchanged; acceleration begins on the first distinct moving frame; each action uses one coherent render family.",
         "transitionRoute": [
           {
@@ -612,6 +617,7 @@
         "sectionLoops": [],
         "overallLoop": false,
         "transitionPolicy": "required",
+        "timelineSegmentId": "turn-back",
         "transitionReason": "Keeper Prime Draft V2. Accepted deceleration is unchanged; acceleration begins on the first distinct moving frame; each action uses one coherent render family.",
         "transitionRoute": [
           {
@@ -752,6 +758,7 @@
         "sectionLoops": [],
         "overallLoop": false,
         "transitionPolicy": "required",
+        "timelineSegmentId": "sit",
         "transitionReason": "Keeper Prime Draft V2. Accepted deceleration is unchanged; acceleration begins on the first distinct moving frame; each action uses one coherent render family.",
         "transitionRoute": [
           {
@@ -891,6 +898,7 @@
         "sectionLoops": [],
         "overallLoop": false,
         "transitionPolicy": "required",
+        "timelineSegmentId": "stand",
         "transitionReason": "Keeper Prime Draft V2. Accepted deceleration is unchanged; acceleration begins on the first distinct moving frame; each action uses one coherent render family.",
         "transitionRoute": [
           {
