@@ -1,6 +1,6 @@
 # Keeper artwork authoring and review playbook
 
-Last updated: 12 October 2026.
+Last updated: 13 October 2026.
 
 This document records the durable lessons from the bathrobe, artist-smock and
 standard-uniform snooker work. It is the operating guide for future Keeper
@@ -17,8 +17,9 @@ shortlist or an earlier sample set—defines later correction scope.
 
 | Area | Current status | Consequence |
 |---|---|---|
-| Keeper Prime identity | Frame 6 remains identity, stance, head-position and endpoint evidence, but its coarse raster was rejected as an animation rendering source. `keeper-prime-master-2026-10-12-v1` is the sole smooth replacement proposal. | Await explicit approval of Prime Master V1 before drawing any animation. Derive every later direction, pose, outfit and expression from that one smooth family. |
-| Standard uniform | Frank preferred the first smooth render and judged the double-stripe jumper too difficult to retain consistently. | Prime Master V1 uses one broad pale chest-and-sleeve band. Double-stripe generated variants are rejected provenance. |
+| Keeper Prime identity | Frame 6 remains identity, stance, head-position and endpoint evidence, but its coarse raster was rejected as an animation rendering source. Frank permanently approved `keeper-prime-master-2026-10-12-v1` on 13 October 2026 with “Approved. Make sure this is NEVER forgotten.” | Treat the approved smooth master as the sole identity, rendering, proportion and face authority. Its exact approval and bytes are verifier-pinned. Derive every later direction, pose, outfit and expression from that one smooth family. |
+| Orthographic endpoints | `keeper-prime-orthographic-views-2026-10-13-v1` proposes aligned 90° side-right and 180° back views. Cyan front ghosts, fixed guides and row cross-sections expose silhouette drift. | Await explicit approval of both views before redrawing animation. The selected first back has full rear hair; the later too-short edit is rejected provenance. |
+| Standard uniform | Frank preferred the first smooth render and judged the double-stripe jumper too difficult to retain consistently. | The approved Prime Master uses one broad pale chest-and-sleeve band. Double-stripe generated variants are rejected provenance. |
 | Animation workbench | Final and active Draft both contain zero animations. | Historical V1/V2 transition assets remain recoverable provenance only; do not present or reuse them as active candidates. |
 | Artist-smock design | The V10 costume design is accepted; seven V11 authored animations are active review drafts | Keep this family internally consistent and await exact-name platform decisions before production promotion |
 | Standard-uniform snooker route | The complete route is visually accepted and is an active `keeper_snooker` review draft | The platform verdict is still required; production remains the old eight-frame strip |
@@ -66,10 +67,17 @@ proposal is `art/drafts/keeper-prime-core-transitions-2026-10-12-v2/`: it
 preserves those walk/stop bytes, removes the duplicated stationary acceleration
 frame, and derives each turn and sit from one coherent six-pose source. Live
 review found it still visually unchanged because every route returned to the
-coarse Prime pixels. It is rejected provenance, not an active Draft. The sole
-current proposal is `art/drafts/keeper-prime-master-2026-10-12-v1/`: a smooth
-density-8 front neutral based on Frank's preferred first generated render,
-with one broad pale band and explicit face/landmark guides. The full read-only
+coarse Prime pixels. It is rejected provenance, not an active Draft. Frank
+permanently approved `art/drafts/keeper-prime-master-2026-10-12-v1/` on 13
+October 2026: a smooth density-8 front neutral based on Frank's preferred first
+generated render, with one broad pale band and explicit face/landmark guides.
+Its approval is a permanent authority record, but not production promotion.
+The active follow-on proposal is
+`art/drafts/keeper-prime-orthographic-views-2026-10-13-v1/`, which aligns a 90°
+right profile and 180° rear elevation to the approved centre axis, cap height
+and floor contact. Cyan front ghosts and deterministic row cross-sections are
+mandatory review evidence. The selected full cream rear mass is hair, not
+beard; the later hair-cut-too-short edit is rejected provenance. The full read-only
 62-asset scope is recorded in
 `docs/KEEPER_FULL_FACE_INVENTORY.md` and
 `data/keeper_full_face_inventory.json`.

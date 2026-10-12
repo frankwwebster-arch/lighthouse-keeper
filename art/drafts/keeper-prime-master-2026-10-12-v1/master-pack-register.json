@@ -1,6 +1,6 @@
 {
   "packId": "keeper-prime-master-2026-10-12-v1",
-  "status": "draft-awaiting-visual-approval",
+  "status": "approved-permanent-identity-authority",
   "purpose": "Replace visibly pixelated Frame 6 endpoints with one smooth master family before any animation is redrafted.",
   "userDecision": "Prefer the first smooth render and replace the double-stripe jumper with one broad pale band for animation consistency.",
   "references": {
@@ -24,8 +24,15 @@
     "file": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
     "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
     "sidecar": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.json",
-    "sidecarSha256": "e0e814fd998f1a080eb8a6af86039091071af8c929f6965b59f642e764774e1c",
-    "promotionAllowed": false
+    "sidecarSha256": "d3dec524e88764aa5904a30ed5e8666724eb39385a31dbf4f3b9bf789df87627",
+    "animationAuthoringAllowed": true,
+    "productionPromotionAllowed": false
+  },
+  "approval": {
+    "approvedBy": "Frank",
+    "approvedOn": "2026-10-13",
+    "wording": "Approved. Make sure this is NEVER forgotten.",
+    "scope": "Permanent Keeper identity, rendering, proportions, face and single-band standard uniform authority; authorizes derivative review drafts, not production promotion."
   },
   "geometry": {
     "sourcePixels": [

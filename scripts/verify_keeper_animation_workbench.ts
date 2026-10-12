@@ -14,12 +14,13 @@ const MODEL = path.join(ROOT, 'src/animation-workbench/model.ts')
 const CSS = path.join(ROOT, 'src/animation-workbench/workbench.module.css')
 const CORE_V2_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-core-transitions-2026-10-12-v2/batch-register.json')
 const PRIME_MASTER_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-master-2026-10-12-v1/master-pack-register.json')
+const PRIME_ORTHOGRAPHIC_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-orthographic-views-2026-10-13-v1/batch-register.json')
 const EXPECTED_FINALS: string[] = []
 const EXPECTED_DRAFTS: string[] = []
 const fail = (message: string): never => { throw new Error(`keeper animation workbench: ${message}`) }
 const sha256 = (file: string) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')
 
-for (const file of [DATA, PUBLIC, PAGE, UI, MODEL, CSS, CORE_V2_REGISTER, PRIME_MASTER_REGISTER]) {
+for (const file of [DATA, PUBLIC, PAGE, UI, MODEL, CSS, CORE_V2_REGISTER, PRIME_MASTER_REGISTER, PRIME_ORTHOGRAPHIC_REGISTER]) {
   if (!fs.existsSync(file)) fail(`missing ${path.relative(ROOT, file)}`)
 }
 if (!fs.readFileSync(DATA).equals(fs.readFileSync(PUBLIC))) fail('data and public catalogues differ')
@@ -30,7 +31,7 @@ if (catalogue.separateFrom !== '/keeper-review/') fail('new workbench is not exp
 if (catalogue.provenance?.productionSpritesChanged !== false || catalogue.provenance?.runtimeManifestChanged !== false) fail('production mutation guard changed')
 if (catalogue.featureContract?.walkExtension?.owner !== 'game-engine' || catalogue.featureContract?.walkExtension?.startVisibility !== 'hidden-behind-door' || catalogue.featureContract?.walkExtension?.firstVisibleState !== 'walking-mid-stride') fail('door-hidden runtime walk-lead-in contract changed')
 if (JSON.stringify(catalogue.lanes?.final?.map((item: Record<string, any>) => item.id)) !== JSON.stringify(EXPECTED_FINALS)) fail('Final library scope changed')
-if (JSON.stringify(catalogue.lanes?.draft?.map((item: Record<string, any>) => item.id)) !== JSON.stringify(EXPECTED_DRAFTS)) fail('Draft library must remain empty until Prime Master approval')
+if (JSON.stringify(catalogue.lanes?.draft?.map((item: Record<string, any>) => item.id)) !== JSON.stringify(EXPECTED_DRAFTS)) fail('Draft library must remain empty until Prime orthographic endpoint approval')
 if (!catalogue.principles?.final?.startsWith('Currently empty') || !catalogue.principles?.draft?.startsWith('Currently empty')) fail('empty-library approval gate changed')
 
 const assets = new Map<string, Record<string, any>>(catalogue.assets.map((asset: Record<string, any>) => [asset.id, asset]))
@@ -152,15 +153,16 @@ for (const [name, seam] of Object.entries(coreV2.criticalSeamChecks ?? {}) as [s
   if (Math.abs(seam.widthDelta) > 8 || Math.abs(seam.heightDelta) > 8 || seam.opaqueAreaRatio < 0.82 || seam.opaqueAreaRatio > 1.18 || seam.baselineDelta !== 0) fail(`${name} violates the V2 route-step continuity bounds`)
 }
 const primeMaster = JSON.parse(fs.readFileSync(PRIME_MASTER_REGISTER, 'utf8')) as Record<string, any>
-if (primeMaster.status !== 'draft-awaiting-visual-approval' || primeMaster.validation?.finalAnimations !== 0 || primeMaster.candidate?.promotionAllowed !== false) fail('Prime Master approval gate changed')
+if (primeMaster.status !== 'approved-permanent-identity-authority' || primeMaster.approval?.wording !== 'Approved. Make sure this is NEVER forgotten.' || primeMaster.validation?.finalAnimations !== 0 || primeMaster.candidate?.productionPromotionAllowed !== false) fail('permanent Prime Master approval gate changed')
 if (catalogue.provenance?.primeMasterRegisterSha256 !== sha256(PRIME_MASTER_REGISTER)) fail('workbench does not pin the Prime Master register')
+if (catalogue.provenance?.primeOrthographicRegisterSha256 !== sha256(PRIME_ORTHOGRAPHIC_REGISTER)) fail('workbench does not pin the orthographic register')
 
 const ui = fs.readFileSync(UI, 'utf8')
-for (const label of ['Final', 'Draft', 'Copy to Draft', 'Copy frame', 'Remove frame', 'Move left', 'Move right', 'Repeat section', 'Transition preview', 'Required for every action', 'begins hidden behind', 'cycles set by game placement', 'Export Draft JSON', 'Import Draft JSON', 'Final is empty', 'No animations are currently Final', 'Prime Master V1']) {
+for (const label of ['Final', 'Draft', 'Copy to Draft', 'Copy frame', 'Remove frame', 'Move left', 'Move right', 'Repeat section', 'Transition preview', 'Required for every action', 'begins hidden behind', 'cycles set by game placement', 'Export Draft JSON', 'Import Draft JSON', 'Final is empty', 'No animations are currently Final', 'Prime Master V1', '90° side', '180° back']) {
   if (!ui.includes(label)) fail(`UI omits ${label}`)
 }
 for (const functionName of ['copyTimelineEntry', 'removeTimelineEntry', 'moveTimelineEntry', 'expandTimeline', 'transitionPlayback', 'transitionWarnings', 'reconcileDraftLibrary']) {
   if (!fs.readFileSync(MODEL, 'utf8').includes(`function ${functionName}`)) fail(`model omits ${functionName}`)
 }
 
-console.log('Verified Keeper Animation Workbench reset: 0 Final, 0 active Draft, Prime Master V1 approval gate, historical asset provenance and editor framework intact')
+console.log('Verified Keeper Animation Workbench reset: 0 Final, 0 active Draft, permanent Prime Master authority and orthographic approval gate intact')

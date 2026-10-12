@@ -196,8 +196,8 @@ export default function AnimationWorkbench() {
         <div>
           <p className={styles.eyebrow}>Separate review surface · production unchanged</p>
           <h1>Keeper Animation Workbench</h1>
-          <p><strong>Final is empty.</strong> Prime Master V1 is awaiting approval before any animation is redrafted. Earlier V1/V2 routes remain provenance only.</p>
-          <p><a href="/keeper-review/keeper-prime-master-v1/">Review the Prime Keeper master proposal →</a></p>
+          <p><strong>Final is empty.</strong> Prime Master V1 is permanently approved; its 90° side and 180° back views now await review before animation redrafting. Earlier V1/V2 routes remain provenance only.</p>
+          <p><a href="/keeper-review/keeper-prime-orthographic-v1/">Review the aligned side and back proposals →</a></p>
         </div>
         <nav><a href="/">Game</a><a href="/studio">Recipe Studio</a></nav>
       </header>
@@ -216,16 +216,16 @@ export default function AnimationWorkbench() {
         <aside className={styles.library}>
           <div className={styles.libraryIntro}>
             <h2>{lane === 'final' ? 'Approved animations' : 'Working copies'}</h2>
-            <p>{lane === 'final' ? 'No animation is currently Final.' : 'No active route remains: animation redrafting starts after Prime Master V1 approval.'}</p>
+            <p>{lane === 'final' ? 'No animation is currently Final.' : 'No active route remains: the approved Prime Master is receiving its side/back endpoint set first.'}</p>
           </div>
           <ul>
             {visibleItems.map((item) => <li key={item.id}><button type="button" className={item.id === selected?.id ? styles.selectedItem : ''} onClick={() => setSelectedId(item.id)}><strong>{item.title}</strong><span>{item.name}</span><small>Complete transition route</small></button></li>)}
           </ul>
-          {!visibleItems.length && <p className={styles.empty}>{lane === 'draft' ? 'No active Draft animations. Prime Master V1 is awaiting approval.' : 'No animations are currently Final.'}</p>}
+          {!visibleItems.length && <p className={styles.empty}>{lane === 'draft' ? 'No active Draft animations. The Prime side/back endpoints are in visual review.' : 'No animations are currently Final.'}</p>}
         </aside>
 
         <div className={styles.content}>
-          {!selected || !asset ? <section className={styles.emptyStage}><h2>Animation library reset</h2><p>Approve the smooth Prime Master V1 foundation before the first transition is redrafted.</p><p><a href="/keeper-review/keeper-prime-master-v1/">Open Prime Master V1 review</a></p></section> : <>
+          {!selected || !asset ? <section className={styles.emptyStage}><h2>Animation library reset</h2><p>Prime Master V1 is permanently approved. Review its aligned 90° side and 180° back views before the first transition is redrafted.</p><p><a href="/keeper-review/keeper-prime-orthographic-v1/">Open orthographic view review</a></p></section> : <>
             <section className={styles.itemHeader}>
               <div>
                 <div className={styles.badges}><span className={selected.lane === 'final' ? styles.finalBadge : styles.draftBadge}>{selected.lane}</span><span>{asset.frames} source frames</span><span>{asset.fps} fps</span><span>{asset.outfit ?? 'standard'}</span></div>

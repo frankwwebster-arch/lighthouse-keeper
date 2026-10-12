@@ -159,6 +159,10 @@ def write_page(register: dict) -> None:
         )
     masks_html = "".join(mask_cards)
     page = f"""<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Keeper Prime Master V1</title><style>:root{{color-scheme:dark;--bg:#0b1218;--panel:#17232d;--line:#40515e;--ink:#edf5fa;--muted:#aabac5;--amber:#f0b84d}}*{{box-sizing:border-box}}body{{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,sans-serif}}header,main{{max-width:1420px;margin:auto;padding:22px}}header{{border-bottom:1px solid var(--line)}}h1{{margin:.2rem 0}}.status{{display:inline-block;border:1px solid var(--amber);border-radius:999px;padding:5px 10px;color:#ffd889}}.grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}}article{{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}}img{{display:block;max-width:100%;height:auto;margin:auto;background:repeating-conic-gradient(#273640 0 25%,#1b2831 0 50%) 50%/24px 24px}}.sprite{{height:520px;max-height:62vh;object-fit:contain}}.wide{{width:100%}}code{{overflow-wrap:anywhere;color:#b8dbef}}.rule{{border-left:4px solid var(--amber);background:#2a2518;padding:10px 14px}}a{{color:#8ed2fa}}</style></head><body><header><a href=\"/animation-workbench\">← Animation Workbench</a><h1>Keeper Prime Master V1</h1><span class=\"status\">Draft · awaiting visual approval · Final contains 0 animations</span><p>A new smooth high-resolution foundation derived from Frame 6 identity. No animation, raw sprite, runtime sprite or manifest has been promoted.</p></header><main><section class=\"grid\"><article><h2>Frame 6 identity authority</h2><img class=\"sprite\" src=\"assets/{urls['primary']}\" alt=\"Frame 6 identity authority\"><p><code>{register['references']['frame6']['sha256']}</code></p></article><article><h2>V11 finish reference</h2><img class=\"sprite\" src=\"assets/{urls['quality']}\" alt=\"V11 rendering reference\"><p><code>{register['references']['v11']['sha256']}</code></p></article><article><h2>Prime Master V1 proposal</h2><img class=\"sprite\" src=\"assets/{urls['master']}\" alt=\"Prime Master V1 proposal\"><p><code>{register['candidate']['sha256']}</code></p></article></section><p class=\"rule\"><strong>User-selected design decision:</strong> one broad pale chest band replaces the legacy double stripe so the uniform remains stable through turns and action poses. The double-stripe generations are rejected provenance.</p><h2>Side-by-side evidence</h2><article><img class=\"wide\" src=\"assets/{urls['comparison']}\" alt=\"Frame 6, V11 and Prime Master comparison\"></article><h2>Landmark evidence</h2><article><img class=\"sprite\" src=\"assets/{urls['overlay']}\" alt=\"Prime Master landmark overlay\"><pre>{html.escape(json.dumps(register['geometry']['landmarksSourcePixels'], indent=2))}</pre></article><h2>Approval boundary</h2><article><p>This is the only active foundation candidate. Every existing animation is unapproved. Full animation redrafting begins only after explicit approval of this master.</p></article></main></body></html>"""
+    page = page.replace("Draft · awaiting visual approval · Final contains 0 animations", "Approved permanent identity authority · Final animations remain 0")
+    page = page.replace("A new smooth high-resolution foundation derived from Frame 6 identity. No animation, raw sprite, runtime sprite or manifest has been promoted.", "The permanently approved smooth high-resolution identity foundation. No animation, raw sprite, runtime sprite or manifest has been promoted.")
+    page = page.replace("Prime Master V1 proposal", "Approved Prime Master V1")
+    page = page.replace("This is the only active foundation candidate. Every existing animation is unapproved. Full animation redrafting begins only after explicit approval of this master.", "Frank approved this identity permanently with: “Approved. Make sure this is NEVER forgotten.” Every direction, pose, outfit and expression must derive from this smooth single-band master. Animation and runtime promotion remain separate decisions.")
     page = page.replace(
         "<h2>Approval boundary</h2>",
         f'<h2>Masks and guides</h2><section class="grid">{masks_html}</section><h2>Approval boundary</h2>',
@@ -183,7 +187,7 @@ def main() -> None:
         "w": LOGICAL_CELL[0], "h": LOGICAL_CELL[1], "frames": 1, "fps": 1,
         "density": DENSITY, "anchor": list(ANCHOR), "loop": False,
         "startPose": "standing-front", "endPose": "standing-front",
-        "status": "draft-awaiting-visual-approval",
+        "status": "approved-permanent-identity-authority",
         "source": relative(SOURCE),
         "uniform": "standard-single-broad-band",
         "landmarksSourcePixels": feature_landmarks,
@@ -222,7 +226,7 @@ def main() -> None:
             rejected.append({"file": relative(path), "sha256": digest(path), "reason": reason})
     register = {
         "packId": "keeper-prime-master-2026-10-12-v1",
-        "status": "draft-awaiting-visual-approval",
+        "status": "approved-permanent-identity-authority",
         "purpose": "Replace visibly pixelated Frame 6 endpoints with one smooth master family before any animation is redrafted.",
         "userDecision": "Prefer the first smooth render and replace the double-stripe jumper with one broad pale band for animation consistency.",
         "references": {
@@ -230,7 +234,13 @@ def main() -> None:
             "v11": {"file": relative(QUALITY), "sha256": digest(QUALITY), "role": "smooth rendering-quality reference only"},
         },
         "generatedSource": {"file": relative(SOURCE), "sha256": digest(SOURCE), "role": "user-preferred first smooth single-band render"},
-        "candidate": {"file": relative(master_path), "sha256": digest(master_path), "sidecar": relative(sidecar_path), "sidecarSha256": digest(sidecar_path), "promotionAllowed": False},
+        "candidate": {"file": relative(master_path), "sha256": digest(master_path), "sidecar": relative(sidecar_path), "sidecarSha256": digest(sidecar_path), "animationAuthoringAllowed": True, "productionPromotionAllowed": False},
+        "approval": {
+            "approvedBy": "Frank",
+            "approvedOn": "2026-10-13",
+            "wording": "Approved. Make sure this is NEVER forgotten.",
+            "scope": "Permanent Keeper identity, rendering, proportions, face and single-band standard uniform authority; authorizes derivative review drafts, not production promotion.",
+        },
         "geometry": {**geometry, "landmarksSourcePixels": feature_landmarks},
         "masksAndGuides": mask_records,
         "evidence": {

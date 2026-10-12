@@ -16,8 +16,9 @@ for (const file of [REGISTER, PUBLIC, path.join(PACK, 'HANDOFF.md'), path.join(P
   if (!fs.existsSync(file)) fail(`missing ${path.relative(ROOT, file)}`)
 }
 const register = JSON.parse(fs.readFileSync(REGISTER, 'utf8')) as Record<string, any>
-if (register.packId !== 'keeper-prime-master-2026-10-12-v1' || register.status !== 'draft-awaiting-visual-approval') fail('pack identity/status changed')
-if (register.candidate?.promotionAllowed !== false || register.validation?.finalAnimations !== 0) fail('approval boundary changed')
+if (register.packId !== 'keeper-prime-master-2026-10-12-v1' || register.status !== 'approved-permanent-identity-authority') fail('permanent pack identity/status changed')
+if (register.approval?.wording !== 'Approved. Make sure this is NEVER forgotten.' || register.approval?.approvedOn !== '2026-10-13') fail('permanent approval record changed')
+if (register.candidate?.animationAuthoringAllowed !== true || register.candidate?.productionPromotionAllowed !== false || register.validation?.finalAnimations !== 0) fail('approval boundary changed')
 if (register.identityRules?.uniform !== 'one broad pale chest-and-sleeve band; do not restore the legacy double stripe') fail('single-band uniform decision changed')
 
 const verifyRecord = (record: Record<string, any>, label: string) => {
@@ -66,7 +67,7 @@ if ((register.rejectedGeneratedProvenance as any[]).length !== 3) fail('rejected
 for (const [index, record] of (register.rejectedGeneratedProvenance as any[]).entries()) verifyRecord(record, `rejected source ${index + 1}`)
 
 const html = fs.readFileSync(PUBLIC, 'utf8')
-for (const phrase of ['Draft · awaiting visual approval', 'Final contains 0 animations', 'one broad pale chest band', 'Masks and guides', register.candidate.sha256]) {
+for (const phrase of ['Approved permanent identity authority', 'Approved. Make sure this is NEVER forgotten.', 'one broad pale chest band', 'Masks and guides', register.candidate.sha256]) {
   if (!html.includes(phrase)) fail(`public review omits ${phrase}`)
 }
 console.log(`Keeper Prime Master V1 verified: ${opaque} non-transparent pixels, 0 edge pixels, Final count 0.`)

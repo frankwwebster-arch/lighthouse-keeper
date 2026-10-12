@@ -13,6 +13,11 @@ export default {
         destination: '/keeper-review/keeper-prime-master-v1/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/keeper-prime-orthographic-v1',
+        destination: '/keeper-review/keeper-prime-orthographic-v1/index.html',
+        permanent: false,
+      },
     ]
   },
 }

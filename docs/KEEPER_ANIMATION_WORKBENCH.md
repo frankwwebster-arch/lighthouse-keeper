@@ -1,6 +1,6 @@
 # Keeper Animation Workbench
 
-Last updated: 12 October 2026.
+Last updated: 13 October 2026.
 
 ## Current state
 
@@ -11,10 +11,14 @@ created visible pixel-density, width, height, face and perspective changes at
 route joins. Earlier V1/V2 turn and core-transition assets remain hash-pinned,
 addressable provenance; they are not Final and must not seed new animation.
 
-The only active visual proposal is the separate
-`art/drafts/keeper-prime-master-2026-10-12-v1/` foundation pack, reviewed at
-`/keeper-review/keeper-prime-master-v1/`. Animation redrafting begins only
-after Frank explicitly approves that master.
+Frank permanently approved
+`art/drafts/keeper-prime-master-2026-10-12-v1/` on 13 October 2026 with the
+wording “Approved. Make sure this is NEVER forgotten.” It is the sole identity,
+rendering, proportion, face and single-band uniform authority. The only active
+visual proposal is its reversible 90° side-right and 180° back endpoint pack at
+`art/drafts/keeper-prime-orthographic-views-2026-10-13-v1/`, reviewed at
+`/keeper-review/keeper-prime-orthographic-v1/`. No animation redrafting begins
+until Frank approves those orthographic endpoints.
 
 ## Prime Keeper authority
 
@@ -30,7 +34,16 @@ same 32 × 40 logical cell at density 8, with anchor `[16, 40]`. It retains the
 adult rectangular eyes, separate moustache, straight closed mouth, established
 beard mass and slightly fuller body. The V11 artist-smock neutral remains a
 rendering-quality comparison only. All double-stripe generations are rejected
-provenance.
+provenance. The approved PNG and approval wording are hash- and text-pinned by
+the verifier so a later rebuild cannot silently replace or demote it.
+
+The orthographic V1 pack aligns both proposals to the approved front's centre
+axis, cap top and floor anchor. Its review page shows the approved front in cyan
+over each full-colour proposal. Deterministic cross-sections require the back
+silhouette to remain within four source pixels of the front width at twelve
+registered landmark rows. Its centre must remain within half a source pixel at
+every occupied row. The selected first back view's full cream rear mass is hair,
+not beard; the later too-short hair edit is rejected provenance.
 
 ## Purpose and boundary
 
@@ -95,6 +108,9 @@ still be recovered manually.
   gutter and framework verifier;
 - `scripts/build_keeper_prime_master_v1.py` and
   `scripts/verify_keeper_prime_master_v1.ts` — new smooth foundation pack.
+- `scripts/build_keeper_prime_orthographic_views_v1.py` and
+  `scripts/verify_keeper_prime_orthographic_views_v1.ts` — aligned side/back
+  candidates, ghost overlays and cross-section constraints.
 
 Historical V1/V2 public assets remain content-addressed so provenance and old
 exported recipes are recoverable. Presence in the asset table is not approval
@@ -104,8 +120,10 @@ and does not place an item in either active lane.
 
 ```sh
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_master_v1.py
+/Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_animation_workbench.py
 npm run verify:keeper-prime-master-v1
+npm run verify:keeper-prime-orthographic-v1
 npm run verify:keeper-animation-workbench
 npm test
 npm run typecheck
@@ -120,11 +138,12 @@ confirm raw/runtime art and the runtime manifest remain unchanged.
 
 ## Next approval gate
 
-Frank must approve Prime Master V1 before any animation is redrafted. After
-approval, restart at the core set in small reviewable batches: walk and exact
-stop, stop-to-walk, side-to-front/back turns, then sit/stand. Every frame in a
-batch must be authored from the same smooth high-resolution family. Only after
-the core joins are accepted should action and costume inventories follow.
+Frank must approve the Prime side-right and back orthographic endpoints before
+any animation is redrafted. After approval, restart at the core set in small
+reviewable batches: walk and exact stop, stop-to-walk, side-to-front/back turns,
+then sit/stand. Every frame in a batch must be authored from the same smooth
+high-resolution family. Only after the core joins are accepted should action
+and costume inventories follow.
 
 ## Known limitations
 

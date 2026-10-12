@@ -16,6 +16,7 @@ V2 = ROOT / "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2"
 CORE_V1 = ROOT / "art/drafts/keeper-prime-core-transitions-2026-10-12-v1"
 CORE = ROOT / "art/drafts/keeper-prime-core-transitions-2026-10-12-v2"
 PRIME_MASTER = ROOT / "art/drafts/keeper-prime-master-2026-10-12-v1"
+PRIME_ORTHOGRAPHIC = ROOT / "art/drafts/keeper-prime-orthographic-views-2026-10-13-v1"
 PUBLIC = ROOT / "public/keeper-animation-workbench"
 DATA_PATH = ROOT / "data/keeper_animation_workbench.json"
 APPROVAL_WORDING = "I am very happy with your V2."
@@ -282,8 +283,8 @@ def main() -> None:
     assets.extend(draft_asset(name, CORE_V1, "kp-v1") for name in draft_names)
     # The V1/V2 route work remains addressable provenance, but Frank reset the
     # active library after deciding that the coarse Frame 6 raster itself was
-    # not a viable animation endpoint. New routes begin only after approval of
-    # the smooth Prime Master V1 proposal.
+    # not a viable animation endpoint. Prime Master V1 is now permanently
+    # approved; new animation routes wait for its 90°/180° endpoints.
     draft_items = []
     catalogue = {
         "version": 1,
@@ -293,7 +294,7 @@ def main() -> None:
         "separateFrom": "/keeper-review/",
         "principles": {
             "final": "Currently empty. An animation enters Final only after explicit visual approval of its complete transition route.",
-            "draft": "Currently empty while Prime Master V1 awaits approval. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
+            "draft": "Currently empty while the approved Prime Master V1 receives reviewable 90° side and 180° back endpoints. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
             "transitions": "Every action must carry an inspectable walk → stop → optional facing turn → action ingress and a compatible action → stop → walk egress. Root motion continues through stop/start; the engine varies only walking distance from world placement.",
         },
         "lanes": {
@@ -302,7 +303,7 @@ def main() -> None:
         },
         "assets": assets,
         "storage": {
-            "drafts": "empty pending Prime Master V1 approval; prior V1/V2 strips remain provenance assets and are not active proposals",
+            "drafts": "empty pending approval of Prime Master V1 orthographic endpoints; prior V1/V2 strips remain provenance assets and are not active proposals",
             "final": "empty by explicit user decision; browser tools never mutate Final records",
         },
         "featureContract": {
@@ -332,6 +333,8 @@ def main() -> None:
             "keeperPrimeCoreV1RegisterSha256": sha256(CORE_V1 / "batch-register.json"),
             "primeMasterRegister": rel(PRIME_MASTER / "master-pack-register.json"),
             "primeMasterRegisterSha256": sha256(PRIME_MASTER / "master-pack-register.json"),
+            "primeOrthographicRegister": rel(PRIME_ORTHOGRAPHIC / "batch-register.json"),
+            "primeOrthographicRegisterSha256": sha256(PRIME_ORTHOGRAPHIC / "batch-register.json"),
             "runtimeManifest": rel(MANIFEST_PATH),
             "runtimeManifestSha256": sha256(MANIFEST_PATH),
             "productionSpritesChanged": False,

@@ -1054,7 +1054,7 @@ technical regressions may return:
 The comprehensive per-sheet correction list is in
 `docs/keeper-scale-audit/README.md`.
 
-## Separate Draft/Final animation workbench (12 October 2026)
+## Separate Draft/Final animation workbench (updated 13 October 2026)
 
 Frank initially approved both complete moving-model V2 turn redraws with the
 exact wording “I am very happy with your V2.” Subsequent live-route review
@@ -1094,6 +1094,21 @@ gutters and preserved editor framework. `scripts/verify_keeper_prime_master_v1.t
 checks the selected/rejected generated provenance, normalized candidate,
 landmarks, masks, hashes and public comparison. Raw/runtime sprites and the
 manifest remain unchanged.
+
+Frank permanently approved the smooth, single-band Prime Master V1 on 13
+October 2026 with the exact wording “Approved. Make sure this is NEVER
+forgotten.” The builder and verifier pin both that wording and the approved PNG
+hash. The next reversible gate is
+`art/drafts/keeper-prime-orthographic-views-2026-10-13-v1/`: a 90° side-right
+and 180° back pair aligned to the master's centre axis, cap top and floor
+contact. The public review shows the approved front as a cyan ghost over each
+proposal and publishes landmark-row body cross-sections. The back must stay
+within four source pixels of front width at twelve registered rows, and within
+0.5 source pixel of the front centreline at every occupied row. Its full cream
+rear mass is hair, not beard; the later shorter hair edit is rejected
+provenance. Both workbench lanes remain empty, and no
+production sprite or animation may change until the endpoints are explicitly
+approved.
 
 ## Review-comments workflow for a later feedback round
 
