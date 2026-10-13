@@ -1134,10 +1134,17 @@ immutable V5 approval record and enhanced page at
 `/keeper-review/keeper-prime-turn-side-back-v5/` pin every V4 frame, both strips,
 the standard-uniform palette and rear boot endpoint. The page adds previous/next
 frame controls and synchronized large and exact 128 × 160 game-scale animation
-views; it changes no artwork. V1–V4 and the approved rear master are untouched.
-Both
-workbench lanes remain empty; no production sprite or runtime animation has
-changed.
+views; it changes no artwork. Reviewing at both scales exposed three residual
+issues: F1 trousers/boots are too dark, F7 is slightly too tall and F8 carries
+pixelated edges from its older low-resolution proxy. The separate V6 candidate
+at `/keeper-review/keeper-prime-turn-side-back-v6/` changes only those points.
+F1 receives masked palette offsets with unchanged alpha and geometry; F2–F6 are
+byte-identical; F7 is uniformly reduced from 298 to 296 opaque pixels while
+retaining floor y=316; and F8 is uniformly Lanczos-registered from the already
+approved 1122 × 1402 smooth rear master before its six outfit masks are matched
+to the approved palette. V1–V5 and the approved rear master are untouched. V6
+awaits visual approval. Both workbench lanes remain empty; no production sprite
+or runtime animation has changed.
 
 Frank authorized and then approved a **Keeper Prime Construction Rig (KP Rig
 V1)** before animation redrafting. His exact 13 October 2026 approval was
@@ -1160,9 +1167,10 @@ October 2026 with “Approved, very good indeed”. Its first authorized derived
 task produced the separate rigged Side-right V1, now approved as an artwork
 authority. Its first animation derivative is the eight-pose front ↔ side Turn
 V1, now approved with its slight 45° cadence limitation recorded. Its second
-animation derivative is the now-approved eight-pose side-right ↔ back V4 turn.
-V1–V4 remain reversible provenance; the approval and scale-review surface is at
-`/keeper-review/keeper-prime-turn-side-back-v5/`. Every
+animation derivative is the approved eight-pose side-right ↔ back V4 turn,
+pinned by V5. V6 is a separate unapproved refinement of the three issues exposed
+by that scale-review surface. V1–V5 remain reversible provenance; the current
+candidate review is at `/keeper-review/keeper-prime-turn-side-back-v6/`. Every
 rig-derived model must keep a super-smooth high-resolution
 master; rough edges or jagged internal linework fail even when all geometry
 datums pass.

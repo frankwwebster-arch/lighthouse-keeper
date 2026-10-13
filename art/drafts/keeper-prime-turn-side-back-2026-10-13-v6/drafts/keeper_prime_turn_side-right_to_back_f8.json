@@ -1,0 +1,30 @@
+{
+  "name": "keeper_prime_turn_side-right_to_back_v6",
+  "w": 32,
+  "h": 40,
+  "density": 8,
+  "frames": 8,
+  "fps": 8,
+  "anchor": [
+    16,
+    40
+  ],
+  "loop": false,
+  "outfit": "standard-single-band",
+  "palette": "keeper-standard-outfit-palette-2026-10-13-v1-draft",
+  "paletteApproval": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v5/batch-register.json",
+  "status": "draft-v6-awaiting-visual-approval",
+  "startPose": "standing-side-right-palette-corrected",
+  "endPose": "standing-back-smooth-master",
+  "sha256": "7269a14cdf92b7e97599f78da3e35565fb3b157e351c12392504d6f066692a78",
+  "frameFiles": [
+    "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f1.png",
+    "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f2.png",
+    "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f3.png",
+    "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f4.png",
+    "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f5.png",
+    "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f6.png",
+    "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f7.png",
+    "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f8.png"
+  ]
+}
