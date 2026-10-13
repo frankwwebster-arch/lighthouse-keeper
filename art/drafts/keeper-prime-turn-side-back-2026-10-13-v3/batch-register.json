@@ -1,0 +1,202 @@
+{
+  "batchId": "keeper-prime-turn-side-back-2026-10-13-v3",
+  "status": "draft-side-back-turn-v3-full-outfit-palette-awaiting-visual-approval",
+  "purpose": "Remove all F7\u2192F8 standard-outfit colour jumps and define a reusable palette contract for future standard-uniform animation batches.",
+  "priorDraft": {
+    "register": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v2/batch-register.json",
+    "registerSha256": "68b1608d011d138adc9e42e818025e5bef4a31e42f0faa4eecd938fc994cc784"
+  },
+  "generatedPaletteReference": {
+    "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/sources/keeper-prime-back-full-outfit-palette-generated-reference.png",
+    "sha256": "9fd08f85dfa16697365de6d8b27cb5529b7fe7a7ca4f667ebc5d79fae041cfa9",
+    "disposition": "colour evidence only; rejected as geometry because it redrew the Keeper"
+  },
+  "palette": {
+    "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/keeper-standard-outfit-palette-v1-draft.json",
+    "sha256": "606594128f94531b4d9626071c0f6be8145a4560238f20c4ada0204cb4cf59d1",
+    "status": "draft-awaiting-visual-approval"
+  },
+  "frames": [
+    {
+      "frame": 1,
+      "angleDegrees": 90,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/drafts/frames/keeper_prime_turn_side-right_to_back_f1.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "sourceV2Sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "change": "none-byte-identical",
+      "opaqueBoundsExclusive": [
+        77,
+        18,
+        179,
+        316
+      ],
+      "opaqueHeight": 298,
+      "edgeAlphaPixels": 0
+    },
+    {
+      "frame": 2,
+      "angleDegrees": 98,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/drafts/frames/keeper_prime_turn_side-right_to_back_f2.png",
+      "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "sourceV2Sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "change": "none-byte-identical",
+      "opaqueBoundsExclusive": [
+        79,
+        18,
+        178,
+        316
+      ],
+      "opaqueHeight": 298,
+      "edgeAlphaPixels": 0
+    },
+    {
+      "frame": 3,
+      "angleDegrees": 105,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/drafts/frames/keeper_prime_turn_side-right_to_back_f3.png",
+      "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "sourceV2Sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "change": "none-byte-identical",
+      "opaqueBoundsExclusive": [
+        78,
+        18,
+        183,
+        316
+      ],
+      "opaqueHeight": 298,
+      "edgeAlphaPixels": 0
+    },
+    {
+      "frame": 4,
+      "angleDegrees": 120,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/drafts/frames/keeper_prime_turn_side-right_to_back_f4.png",
+      "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "sourceV2Sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "change": "none-byte-identical",
+      "opaqueBoundsExclusive": [
+        78,
+        18,
+        184,
+        316
+      ],
+      "opaqueHeight": 298,
+      "edgeAlphaPixels": 0
+    },
+    {
+      "frame": 5,
+      "angleDegrees": 135,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/drafts/frames/keeper_prime_turn_side-right_to_back_f5.png",
+      "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "sourceV2Sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "change": "none-byte-identical",
+      "opaqueBoundsExclusive": [
+        76,
+        18,
+        184,
+        316
+      ],
+      "opaqueHeight": 298,
+      "edgeAlphaPixels": 0
+    },
+    {
+      "frame": 6,
+      "angleDegrees": 150,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/drafts/frames/keeper_prime_turn_side-right_to_back_f6.png",
+      "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "sourceV2Sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "change": "none-byte-identical",
+      "opaqueBoundsExclusive": [
+        67,
+        18,
+        192,
+        316
+      ],
+      "opaqueHeight": 298,
+      "edgeAlphaPixels": 0
+    },
+    {
+      "frame": 7,
+      "angleDegrees": 165,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/drafts/frames/keeper_prime_turn_side-right_to_back_f7.png",
+      "sha256": "ba4a9ee3bf122e226e2cda411b724374c7b04749aa7f398e449d7ee42071c77b",
+      "sourceV2Sha256": "ba4a9ee3bf122e226e2cda411b724374c7b04749aa7f398e449d7ee42071c77b",
+      "change": "none-byte-identical",
+      "opaqueBoundsExclusive": [
+        57,
+        18,
+        201,
+        316
+      ],
+      "opaqueHeight": 298,
+      "edgeAlphaPixels": 0
+    },
+    {
+      "frame": 8,
+      "angleDegrees": 180,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/drafts/frames/keeper_prime_turn_side-right_to_back_f8.png",
+      "sha256": "6a2a4f05d3eb6f4b7616c20df29fde64bf13dbb2cb3843330de5bc148980035d",
+      "sourceV2Sha256": "7f7d5f1da1d8120a1a6435c6d45b9ddcab883048fbde8b0ff2b202ae911550a2",
+      "change": "standard-outfit-palette-only",
+      "opaqueBoundsExclusive": [
+        52,
+        18,
+        204,
+        316
+      ],
+      "opaqueHeight": 298,
+      "edgeAlphaPixels": 0
+    }
+  ],
+  "animation": {
+    "fps": 8,
+    "cell": [
+      256,
+      320
+    ],
+    "forward": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/drafts/keeper_prime_turn_side-right_to_back_f8.png",
+      "sha256": "c4b0a5623aca82cf616e6a81d10473f6ac1ddbcb0aa443fbff98060cb46e1168",
+      "sidecar": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/drafts/keeper_prime_turn_side-right_to_back_f8.json",
+      "sidecarSha256": "3529d7fafbcb72f98add11b6f287a098e17bd145567ab36109add12d511a814f"
+    },
+    "reverse": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/drafts/keeper_prime_turn_back_to_side-right_f8.png",
+      "sha256": "54ee0590e8a9fde2444f44b36e54ef84528235314a1f9deaba28f10f1a06562c",
+      "sidecar": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/drafts/keeper_prime_turn_back_to_side-right_f8.json",
+      "sidecarSha256": "a39c1280429a9dc70e817324c631b207c2a075bcfb166316de5cccc3e3202412",
+      "exactFrameOrderReverse": true
+    }
+  },
+  "evidence": {
+    "comparison": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/evidence/f7-f8-full-outfit-palette-comparison.png",
+      "sha256": "b1341ebba6b810420553182c3491821cba2224b3c0dd65a9303d0b868b09ff67"
+    },
+    "paletteSwatches": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/evidence/standard-outfit-palette-swatches.png",
+      "sha256": "6b9550e8d20f5e77b0dc8d799eb2eac8c23fc961fa6bbda303a4a87419f13348"
+    },
+    "contactSheet": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/evidence/turn-contact-sheet-corrected.png",
+      "sha256": "79c5d5c391125f5770fba7cac7ebea5c4987cfea3c502e920e3c5a298f3365a7"
+    }
+  },
+  "validation": {
+    "frames1To7ByteIdenticalToV2": true,
+    "frame8AlphaByteIdenticalToV2": true,
+    "frame8GeometryUnchanged": true,
+    "frame8OnlyRegisteredOutfitPixelsChanged": true,
+    "everyFrameTransparentCellEdge": true,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "approvedBackMasterChanged": false,
+    "priorDraftsChanged": false
+  },
+  "approvalBoundary": {
+    "sideBackTurnV3Approved": false,
+    "standardOutfitPaletteApproved": false,
+    "finalLaneEntryAllowed": false,
+    "productionPromotionAllowed": false
+  },
+  "nextGate": "Frank reviews F7\u2192F8 full-outfit colour continuity and the proposed reusable standard-outfit palette anchors.",
+  "rollback": "Delete only art/drafts/keeper-prime-turn-side-back-2026-10-13-v3 and public/keeper-review/keeper-prime-turn-side-back-v3; V1/V2, approved authorities and production remain unchanged."
+}

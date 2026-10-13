@@ -1,0 +1,489 @@
+{
+  "id": "keeper-standard-outfit-palette-2026-10-13-v1-draft",
+  "status": "draft-awaiting-visual-approval",
+  "authorityFrame": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v2/drafts/frames/keeper_prime_turn_side-right_to_back_f7.png",
+  "authorityFrameSha256": "ba4a9ee3bf122e226e2cda411b724374c7b04749aa7f398e449d7ee42071c77b",
+  "components": {
+    "capCrownBlue": {
+      "label": "Cap crown blue",
+      "coverageMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/masks/capCrownBlue-coverage.png",
+      "coverageMaskSha256": "c90a7bac5ae423c9a0982dcee908a69b089c0965d3407f9aeb5d4de1bd88ea1e",
+      "changedMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/masks/capCrownBlue-changed.png",
+      "changedMaskSha256": "c90a7bac5ae423c9a0982dcee908a69b089c0965d3407f9aeb5d4de1bd88ea1e",
+      "source": {
+        "pixels": 3265,
+        "medianRGB": [
+          0,
+          82,
+          183
+        ],
+        "medianHSV": [
+          0.592391,
+          1.0,
+          0.717647
+        ],
+        "hsvP10": [
+          0.586601,
+          0.994624,
+          0.556863
+        ],
+        "hsvP90": [
+          0.596244,
+          1.0,
+          0.792157
+        ]
+      },
+      "target": {
+        "pixels": 2984,
+        "medianRGB": [
+          0,
+          109,
+          231
+        ],
+        "medianHSV": [
+          0.588406,
+          1.0,
+          0.905882
+        ],
+        "hsvP10": [
+          0.587302,
+          0.995,
+          0.772549
+        ],
+        "hsvP90": [
+          0.5925,
+          1.0,
+          0.964706
+        ]
+      },
+      "corrected": {
+        "pixels": 3265,
+        "medianRGB": [
+          0,
+          109,
+          231
+        ],
+        "medianHSV": [
+          0.588362,
+          1.0,
+          0.905882
+        ],
+        "hsvP10": [
+          0.582661,
+          0.995726,
+          0.745098
+        ],
+        "hsvP90": [
+          0.592199,
+          1.0,
+          0.980392
+        ]
+      },
+      "changedPixels": 3265
+    },
+    "capBandNavy": {
+      "label": "Cap band navy",
+      "coverageMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/masks/capBandNavy-coverage.png",
+      "coverageMaskSha256": "a7afafde45b5bc2c02a523b0981bb715a92da9df94a0e5cd12ad3edb9611f472",
+      "changedMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/masks/capBandNavy-changed.png",
+      "changedMaskSha256": "a7afafde45b5bc2c02a523b0981bb715a92da9df94a0e5cd12ad3edb9611f472",
+      "source": {
+        "pixels": 676,
+        "medianRGB": [
+          37,
+          47,
+          77
+        ],
+        "medianHSV": [
+          0.620833,
+          0.521127,
+          0.301961
+        ],
+        "hsvP10": [
+          0.617424,
+          0.491803,
+          0.25098
+        ],
+        "hsvP90": [
+          0.626984,
+          0.550725,
+          0.333333
+        ]
+      },
+      "target": {
+        "pixels": 536,
+        "medianRGB": [
+          59,
+          67,
+          99
+        ],
+        "medianHSV": [
+          0.634146,
+          0.40404,
+          0.388235
+        ],
+        "hsvP10": [
+          0.628472,
+          0.387097,
+          0.34902
+        ],
+        "hsvP90": [
+          0.6375,
+          0.422414,
+          0.415686
+        ]
+      },
+      "corrected": {
+        "pixels": 676,
+        "medianRGB": [
+          59,
+          66,
+          99
+        ],
+        "medianHSV": [
+          0.634259,
+          0.405063,
+          0.388235
+        ],
+        "hsvP10": [
+          0.630952,
+          0.373494,
+          0.337255
+        ],
+        "hsvP90": [
+          0.641026,
+          0.43299,
+          0.419608
+        ]
+      },
+      "changedPixels": 676
+    },
+    "jumperBlue": {
+      "label": "Jumper blue",
+      "coverageMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/masks/jumperBlue-coverage.png",
+      "coverageMaskSha256": "2f6eae365f6c0d2bd63411c4bc5167b03fcb65f89acc337cd53fb768089625ab",
+      "changedMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/masks/jumperBlue-changed.png",
+      "changedMaskSha256": "b343c1122c8a78564105b7667175f2c12ca4efd8c325a081e0375348f077c54c",
+      "source": {
+        "pixels": 8885,
+        "medianRGB": [
+          0,
+          108,
+          230
+        ],
+        "medianHSV": [
+          0.588406,
+          1.0,
+          0.901961
+        ],
+        "hsvP10": [
+          0.585507,
+          0.995516,
+          0.662745
+        ],
+        "hsvP90": [
+          0.593972,
+          1.0,
+          0.913725
+        ]
+      },
+      "target": {
+        "pixels": 8793,
+        "medianRGB": [
+          0,
+          108,
+          230
+        ],
+        "medianHSV": [
+          0.58845,
+          1.0,
+          0.901961
+        ],
+        "hsvP10": [
+          0.58658,
+          0.993789,
+          0.670588
+        ],
+        "hsvP90": [
+          0.592949,
+          1.0,
+          0.913725
+        ]
+      },
+      "corrected": {
+        "pixels": 8885,
+        "medianRGB": [
+          0,
+          108,
+          230
+        ],
+        "medianHSV": [
+          0.588406,
+          1.0,
+          0.901961
+        ],
+        "hsvP10": [
+          0.585507,
+          0.995516,
+          0.662745
+        ],
+        "hsvP90": [
+          0.593972,
+          1.0,
+          0.913725
+        ]
+      },
+      "changedPixels": 0,
+      "disposition": "retained exact V2 pixels because the V2 jumper correction already matches F7"
+    },
+    "jumperCream": {
+      "label": "Jumper cream band",
+      "coverageMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/masks/jumperCream-coverage.png",
+      "coverageMaskSha256": "f891d2df8782ba6b807d55fb0bbe4d7696c6deb6c29522e992dc61ccac270b03",
+      "changedMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/masks/jumperCream-changed.png",
+      "changedMaskSha256": "f891d2df8782ba6b807d55fb0bbe4d7696c6deb6c29522e992dc61ccac270b03",
+      "source": {
+        "pixels": 1451,
+        "medianRGB": [
+          248,
+          228,
+          198
+        ],
+        "medianHSV": [
+          0.098639,
+          0.199187,
+          0.972549
+        ],
+        "hsvP10": [
+          0.095238,
+          0.188525,
+          0.945098
+        ],
+        "hsvP90": [
+          0.104167,
+          0.211765,
+          0.984314
+        ]
+      },
+      "target": {
+        "pixels": 1498,
+        "medianRGB": [
+          251,
+          232,
+          206
+        ],
+        "medianHSV": [
+          0.094697,
+          0.179283,
+          0.984314
+        ],
+        "hsvP10": [
+          0.090909,
+          0.167364,
+          0.964706
+        ],
+        "hsvP90": [
+          0.107527,
+          0.186508,
+          1.0
+        ]
+      },
+      "corrected": {
+        "pixels": 1451,
+        "medianRGB": [
+          251,
+          232,
+          205
+        ],
+        "medianHSV": [
+          0.096296,
+          0.180723,
+          0.984314
+        ],
+        "hsvP10": [
+          0.092593,
+          0.17004,
+          0.956863
+        ],
+        "hsvP90": [
+          0.101449,
+          0.192157,
+          0.996078
+        ]
+      },
+      "changedPixels": 1451
+    },
+    "trouserNavy": {
+      "label": "Trouser navy",
+      "coverageMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/masks/trouserNavy-coverage.png",
+      "coverageMaskSha256": "00a3e921e6ca73254a6566f64ecdffdf0fb31c87f0d01512ea8e7f861f47f930",
+      "changedMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/masks/trouserNavy-changed.png",
+      "changedMaskSha256": "00a3e921e6ca73254a6566f64ecdffdf0fb31c87f0d01512ea8e7f861f47f930",
+      "source": {
+        "pixels": 2947,
+        "medianRGB": [
+          42,
+          52,
+          87
+        ],
+        "medianHSV": [
+          0.625926,
+          0.52809,
+          0.341176
+        ],
+        "hsvP10": [
+          0.620833,
+          0.505376,
+          0.247059
+        ],
+        "hsvP90": [
+          0.633333,
+          0.567164,
+          0.364706
+        ]
+      },
+      "target": {
+        "pixels": 3724,
+        "medianRGB": [
+          63,
+          75,
+          112
+        ],
+        "medianHSV": [
+          0.625926,
+          0.432432,
+          0.439216
+        ],
+        "hsvP10": [
+          0.623333,
+          0.395604,
+          0.34902
+        ],
+        "hsvP90": [
+          0.633333,
+          0.442478,
+          0.447059
+        ]
+      },
+      "corrected": {
+        "pixels": 2947,
+        "medianRGB": [
+          65,
+          75,
+          112
+        ],
+        "medianHSV": [
+          0.625926,
+          0.431034,
+          0.439216
+        ],
+        "hsvP10": [
+          0.620155,
+          0.40678,
+          0.345098
+        ],
+        "hsvP90": [
+          0.633333,
+          0.47191,
+          0.462745
+        ]
+      },
+      "changedPixels": 2947
+    },
+    "bootNavy": {
+      "label": "Boot navy",
+      "coverageMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/masks/bootNavy-coverage.png",
+      "coverageMaskSha256": "2bf4195b33d4895e4d2bfc21c91e688917f77206eecbe07fc0dc684c7f4740fb",
+      "changedMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/masks/bootNavy-changed.png",
+      "changedMaskSha256": "2bf4195b33d4895e4d2bfc21c91e688917f77206eecbe07fc0dc684c7f4740fb",
+      "source": {
+        "pixels": 3675,
+        "medianRGB": [
+          38,
+          48,
+          81
+        ],
+        "medianHSV": [
+          0.624031,
+          0.53012,
+          0.317647
+        ],
+        "hsvP10": [
+          0.618056,
+          0.5,
+          0.239216
+        ],
+        "hsvP90": [
+          0.631313,
+          0.571429,
+          0.372549
+        ]
+      },
+      "target": {
+        "pixels": 4030,
+        "medianRGB": [
+          63,
+          74,
+          111
+        ],
+        "medianHSV": [
+          0.628472,
+          0.431818,
+          0.435294
+        ],
+        "hsvP10": [
+          0.624378,
+          0.406593,
+          0.294118
+        ],
+        "hsvP90": [
+          0.634146,
+          0.448276,
+          0.494118
+        ]
+      },
+      "corrected": {
+        "pixels": 3675,
+        "medianRGB": [
+          63,
+          73,
+          111
+        ],
+        "medianHSV": [
+          0.628472,
+          0.431193,
+          0.435294
+        ],
+        "hsvP10": [
+          0.622449,
+          0.403361,
+          0.356863
+        ],
+        "hsvP90": [
+          0.635965,
+          0.472527,
+          0.490196
+        ]
+      },
+      "changedPixels": 3675
+    }
+  },
+  "futureBatchContract": {
+    "componentMasksRequired": true,
+    "medianHsvTolerance": [
+      0.02,
+      0.08,
+      0.02
+    ],
+    "noUnmaskedColourChanges": true,
+    "transparentCellGutterRequired": true
+  },
+  "coverageUnion": {
+    "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/masks/standard-outfit-all-components-coverage.png",
+    "sha256": "42e7ed28f995f7a531131544b5bd18c98b5a8568a80ce2ef08748b180c295a04"
+  },
+  "changedUnion": {
+    "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/masks/standard-outfit-all-components-changed.png",
+    "sha256": "5d813e545cb795a0bef29f2b51fc38e78dae71996f4834bd71494c7a47e70e22"
+  }
+}

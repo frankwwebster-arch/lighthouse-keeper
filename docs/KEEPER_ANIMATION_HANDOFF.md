@@ -1118,11 +1118,15 @@ the slight 45° cadence change as an accepted minor limitation. The separate
 side-right ↔ back Turn V1 joins the exact approved side and V5 rear endpoints
 through six independently drawn rear-quarter poses and an exact reverse strip.
 During review Frank identified a visible palette discontinuity: the jumper
-darkened at its exact rear F8 endpoint. The new V2 candidate at
-`/keeper-review/keeper-prime-turn-side-back-v2/` retains exact V1 bytes for
-F1–F7 and changes only 8,940 masked blue-jumper pixels in F8. Its alpha,
-geometry, cream stripe, cap and every non-jumper pixel remain unchanged. V1 and
-the approved rear master are untouched; V2 awaits visual approval. Both
+darkened at its exact rear F8 endpoint. V2 corrected only the jumper. Frank then
+identified that the cap, trousers and boots also darkened and established a
+general rule: every standard-uniform animation must use consistent component
+colours. The current V3 candidate at
+`/keeper-review/keeper-prime-turn-side-back-v3/` retains exact prior bytes for
+F1–F7 and changes only 12,014 pixels inside six registered F8 component masks:
+cap crown, cap band, jumper blue, cream band, trousers and boots. Its alpha and
+geometry remain exact. V1, V2 and the approved rear master are untouched; V3
+and its reusable draft palette await visual approval. Both
 workbench lanes remain empty; no production sprite or runtime animation has
 changed.
 
@@ -1148,8 +1152,8 @@ task produced the separate rigged Side-right V1, now approved as an artwork
 authority. Its first animation derivative is the eight-pose front ↔ side Turn
 V1, now approved with its slight 45° cadence limitation recorded. Its second
 animation derivative is the unapproved eight-pose side-right ↔ back turn. V1
-remains reversible provenance; the current V2 jumper-colour correction
-candidate is at `/keeper-review/keeper-prime-turn-side-back-v2/`. Every
+and V2 remain reversible provenance; the current V3 full-outfit colour
+candidate is at `/keeper-review/keeper-prime-turn-side-back-v3/`. Every
 rig-derived model must keep a super-smooth high-resolution
 master; rough edges or jagged internal linework fail even when all geometry
 datums pass.
