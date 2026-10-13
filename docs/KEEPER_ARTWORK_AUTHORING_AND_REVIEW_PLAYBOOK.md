@@ -18,7 +18,8 @@ shortlist or an earlier sample set—defines later correction scope.
 | Area | Current status | Consequence |
 |---|---|---|
 | Keeper Prime identity | Frame 6 remains identity, stance, head-position and endpoint evidence, but its coarse raster was rejected as an animation rendering source. Frank permanently approved `keeper-prime-master-2026-10-12-v1` on 13 October 2026 with “Approved. Make sure this is NEVER forgotten.” | Treat the approved smooth master as the sole identity, rendering, proportion and face authority. Its exact approval and bytes are verifier-pinned. Derive every later direction, pose, outfit and expression from that one smooth family. |
-| Orthographic endpoints | V2 carries the selected 90° side and makes the rear alpha channel pixel-for-pixel identical to the approved front across all 81,920 pixels. V3 proves all views are 298 source pixels high but the side passes only 5 of 15 hard internal datums. | Preserve the selected side design and exact V2 back, but do not redraw animation until a new side reaches zero delta for cap, badge, ear, shoulder, beard, stripe, hand, knee and floor. V1, V2 and failed V3 edits remain provenance. |
+| Orthographic endpoints | V2 achieved an exact front/back alpha match but is rejected because its rear boots still faced the player. V3 proves the side passes only 5 of 15 hard internal datums. V4 changes only rear rows 273–315 to flat heel backs and seams while retaining the exact alpha match. | Review V4 visually and preserve its unchanged upper body. Do not redraw animation until the back is approved and a new side reaches zero delta for cap, badge, ear, shoulder, beard, stripe, hand, knee and floor. Earlier packs and failed edits remain provenance. |
+| KP construction rig | Frank authorized KP Rig V1 as the common posable measurement foundation for all later directions, poses and costumes. | Build it after the V4 back and corrected side are accepted. Fix segment lengths and anatomical volumes; treat view widths as projections; redraw beard, hair and clothing around the rig rather than stretching finished pixels. |
 | Standard uniform | Frank preferred the first smooth render and judged the double-stripe jumper too difficult to retain consistently. | The approved Prime Master uses one broad pale chest-and-sleeve band. Double-stripe generated variants are rejected provenance. |
 | Animation workbench | Final and active Draft both contain zero animations. | Historical V1/V2 transition assets remain recoverable provenance only; do not present or reuse them as active candidates. |
 | Artist-smock design | The V10 costume design is accepted; seven V11 authored animations are active review drafts | Keep this family internally consistent and await exact-name platform decisions before production promotion |
@@ -73,17 +74,18 @@ October 2026: a smooth density-8 front neutral based on Frank's preferred first
 generated render, with one broad pale band and explicit face/landmark guides.
 Its approval is a permanent authority record, but not production promotion.
 Orthographic V2 remains immutable: its side is byte-identical to V1 and its
-180° rear elevation copies the approved front alpha channel exactly after
-fitting rear-specific RGB detail. Cyan ghost evidence and a zero-mismatch
-verifier make the back-overlay claim deterministic. The current follow-on gate
-is `art/drafts/keeper-prime-orthographic-views-2026-10-13-v3/`. It proves all
-three views share a 298-source-pixel height, then registers 15 horizontal
+180° rear elevation copies the approved front alpha channel exactly. The later
+finding that its boots face the player proves silhouette agreement alone is not
+an orientation check. V3 registers 15 horizontal
 front-to-side datums spanning the cap, badge, ear, shoulder, beard base, arm and
 midriff stripes, hand, knee and floor. The selected side passes only five and
 must be redrafted before turn authoring. Two guided generation attempts are
 rejected provenance because exact total height did not prevent internal drift.
-The full cream rear mass is hair, not beard. V1 and the later hair-cut-too-short
-mistake are retained provenance. The full read-only
+The active V4 back correction keeps V2 rows 0–272 byte-identical, replaces only
+the lower legs/boots with flat heel backs, rear seams and rear sole edges, and
+retains the zero-mismatch alpha overlay. Its first rounded-heel attempt is also
+rejected as ambiguous. The full cream rear mass is hair, not beard. V1 and the
+later hair-cut-too-short mistake are retained provenance. The full read-only
 62-asset scope is recorded in
 `docs/KEEPER_FULL_FACE_INVENTORY.md` and
 `data/keeper_full_face_inventory.json`.

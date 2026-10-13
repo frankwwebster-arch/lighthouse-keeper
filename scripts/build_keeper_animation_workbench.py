@@ -16,7 +16,7 @@ V2 = ROOT / "art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2"
 CORE_V1 = ROOT / "art/drafts/keeper-prime-core-transitions-2026-10-12-v1"
 CORE = ROOT / "art/drafts/keeper-prime-core-transitions-2026-10-12-v2"
 PRIME_MASTER = ROOT / "art/drafts/keeper-prime-master-2026-10-12-v1"
-PRIME_ORTHOGRAPHIC = ROOT / "art/drafts/keeper-prime-orthographic-views-2026-10-13-v3"
+PRIME_ORTHOGRAPHIC = ROOT / "art/drafts/keeper-prime-orthographic-views-2026-10-13-v4"
 PUBLIC = ROOT / "public/keeper-animation-workbench"
 DATA_PATH = ROOT / "data/keeper_animation_workbench.json"
 APPROVAL_WORDING = "I am very happy with your V2."
@@ -294,7 +294,7 @@ def main() -> None:
         "separateFrom": "/keeper-review/",
         "principles": {
             "final": "Currently empty. An animation enters Final only after explicit visual approval of its complete transition route.",
-            "draft": "Currently empty while the Prime orthographic V3 vertical-landmark gate requires a corrected side endpoint. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
+            "draft": "Currently empty while the Prime orthographic V4 rear-boot correction awaits review and the V3 vertical-landmark gate requires a corrected side endpoint. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
             "transitions": "Every action must carry an inspectable walk → stop → optional facing turn → action ingress and a compatible action → stop → walk egress. Root motion continues through stop/start; the engine varies only walking distance from world placement.",
         },
         "lanes": {
@@ -303,7 +303,7 @@ def main() -> None:
         },
         "assets": assets,
         "storage": {
-            "drafts": "empty pending a side endpoint with zero delta at every V3 vertical landmark; prior transitions and orthographic V1/V2 remain provenance only",
+            "drafts": "empty pending visual approval of the V4 rear-facing boots and a side endpoint with zero delta at every V3 vertical landmark; prior transitions and orthographic V1/V2 remain provenance only",
             "final": "empty by explicit user decision; browser tools never mutate Final records",
         },
         "featureContract": {

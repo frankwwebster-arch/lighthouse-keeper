@@ -1098,17 +1098,25 @@ manifest remain unchanged.
 Frank permanently approved the smooth, single-band Prime Master V1 on 13
 October 2026 with the exact wording “Approved. Make sure this is NEVER
 forgotten.” The builder and verifier pin both that wording and the approved PNG
-hash. V2 remains immutable: its carried-forward 90° side has the selected design
-and its 180° back copies all 81,920 approved-front alpha values, contour pixels,
-transparent gaps, cap top, floor and row widths. The next reversible gate is
-`art/drafts/keeper-prime-orthographic-views-2026-10-13-v3/`. Front, selected side
-and back are each exactly 298 source pixels high, from cap y=18 to floor y=316,
-but V3's 15-point front-to-side skeleton proves the side passes only five hard
-internal datums. Badge, ear, shoulder, beard base, midriff stripe, palm and knee
-drift are visible and fail closed. Two guided correction generations are
-retained as rejected provenance. Both workbench lanes remain empty, and no
-production sprite or animation may change until a zero-delta side endpoint is
-explicitly approved.
+hash. V2 remains immutable rejected provenance. Its back copies all 81,920
+approved-front alpha values, but later inspection found that the rendered boots
+still face the player. V3's 15-point front-to-side skeleton separately proves
+the selected side passes only five hard internal datums. The active V4 back
+correction keeps rows 0–272 byte-identical to V2, changes only rows 273–315 to
+flat squared heel backs, vertical rear seams and rear sole edges, and retains
+zero alpha mismatches. Its first rounded-heel edit is rejected as ambiguous.
+Both workbench lanes remain empty, and no production sprite or animation may
+change until the V4 back and a zero-delta side endpoint are explicitly approved.
+
+Frank has authorized a **Keeper Prime Construction Rig (KP Rig V1)** before
+animation redrafting. It will register a posable 2D bone/joint skeleton, fixed
+segment lengths, front/side/back body-volume envelopes, head/ear/shoulder/chest/
+waist/hip measurements, beard/hair and clothing datums, prop contacts, pose
+limits, occlusion order and floor anchoring. The rig must distinguish invariant
+anatomy from view-dependent projected widths and must not mechanically stretch
+finished beard, hair or clothing art. Work on the rig is paused only long enough
+to avoid encoding the invalid V2 boots; resume from the reviewed V4 back and the
+eventual zero-delta side without requiring a new chat or relying on chat memory.
 
 ## Review-comments workflow for a later feedback round
 

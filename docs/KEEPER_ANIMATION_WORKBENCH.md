@@ -15,13 +15,14 @@ Frank permanently approved
 `art/drafts/keeper-prime-master-2026-10-12-v1/` on 13 October 2026 with the
 wording “Approved. Make sure this is NEVER forgotten.” It is the sole identity,
 rendering, proportion, face and single-band uniform authority. The current
-review gate is `keeper-prime-orthographic-views-2026-10-13-v3`, reviewed at
-`/keeper-review/keeper-prime-orthographic-v3/`. V2 remains immutable: it carries
-the V1 90° side forward and gives the back an exact approved-front alpha
-silhouette. V3 proves all three views are exactly 298 source pixels high, then
-adds 15 internal vertical datums. The selected side passes only five and is
-blocked for redraft. No animation redrafting begins until a side endpoint has
-zero delta at every hard datum.
+review gate is `keeper-prime-orthographic-views-2026-10-13-v4`, reviewed at
+`/keeper-review/keeper-prime-orthographic-v4/`. V2 remains immutable rejected
+provenance: although its rear alpha silhouette exactly matches the front, its
+boots face the player. V4 changes only lower rows 273–315 to flat heel backs,
+rear seams and rear sole edges while preserving the complete alpha match. V3
+still proves the selected side passes only five of 15 internal vertical datums.
+No animation redrafting begins until the V4 back is visually approved and a
+side endpoint has zero delta at every hard datum.
 
 ## Prime Keeper authority
 
@@ -43,9 +44,9 @@ the verifier so a later rebuild cannot silently replace or demote it.
 The orthographic V2 pack shows the approved front in cyan over each full-colour
 view. For the back, all 81,920 alpha values are copied from the approved front,
 so contour, transparent gaps, cap top, floor, centreline and every row width
-match exactly. The rear RGB detail remains a true back view with full cream rear
-hair—not beard—and one broad pale band. Orthographic V1 is superseded but
-retained unchanged as provenance.
+match exactly. Later visual review found its rounded toe-cap construction still
+faced the player, so V2 is not a valid rear endpoint despite its exact outer
+silhouette. Orthographic V1 and V2 are retained unchanged as provenance.
 
 Orthographic V3 adds the stronger front-to-side vertical skeleton: cap top,
 badge centre, ear centre, shoulder apex, beard base, arm-stripe top/centre/base,
@@ -54,6 +55,12 @@ selected side already matches total height (298 source pixels, y=18→316), arm
 stripe and outer anchors. It misses badge, ear, shoulder, beard, midriff stripe,
 palm and knee datums, so it is not transition-ready. Two guided generation
 attempts remain rejected provenance because they also failed the hard register.
+
+Orthographic V4 corrects the independent back-view error. It preserves V2 rows
+0–272 byte-for-byte and replaces only rows 273–315 with flat squared heel backs,
+vertical rear seams and rear sole edges. Its complete alpha channel still has
+zero mismatches against the approved front. The first rounded-heel correction
+attempt is rejected because it could still be misread as a toe cap.
 
 ## Purpose and boundary
 
@@ -126,7 +133,10 @@ still be recovered manually.
   candidate and zero-mismatch front/back contract;
 - `scripts/build_keeper_prime_orthographic_views_v3.py` and
   `scripts/verify_keeper_prime_orthographic_views_v3.ts` — active 15-point
-  front-to-side vertical skeleton and fail-closed side-redraft gate.
+  front-to-side vertical skeleton and fail-closed side-redraft gate;
+- `scripts/build_keeper_prime_orthographic_views_v4.py` and
+  `scripts/verify_keeper_prime_orthographic_views_v4.ts` — active rear-boot
+  correction with exact alpha and unchanged-upper-body verification.
 
 Historical V1/V2 public assets remain content-addressed so provenance and old
 exported recipes are recoverable. Presence in the asset table is not approval
@@ -139,11 +149,13 @@ and does not place an item in either active lane.
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v2.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v3.py
+/Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v4.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_animation_workbench.py
 npm run verify:keeper-prime-master-v1
 npm run verify:keeper-prime-orthographic-v1
 npm run verify:keeper-prime-orthographic-v2
 npm run verify:keeper-prime-orthographic-v3
+npm run verify:keeper-prime-orthographic-v4
 npm run verify:keeper-animation-workbench
 npm test
 npm run typecheck
@@ -158,14 +170,21 @@ confirm raw/runtime art and the runtime manifest remain unchanged.
 
 ## Next approval gate
 
-The V2 back keeps its exact approved-front silhouette. Before any animation is
-redrafted, replace the selected side with a V3 successor that preserves its
-visual design and reaches zero vertical delta at all 15 registered points. After
-that endpoint is approved, restart at the core set in small reviewable batches:
+First review the V4 rear-facing boot correction. Before any animation is
+redrafted, also replace the selected side with a V3 successor that preserves its
+visual design and reaches zero vertical delta at all 15 registered points. Once
+both endpoints are approved, restart at the core set in small reviewable batches:
 walk and exact stop, stop-to-walk, side-to-front/back turns,
 then sit/stand. Every frame in a batch must be authored from the same smooth
 high-resolution family. Only after the core joins are accepted should action
 and costume inventories follow.
+
+Before those transition batches, build the authorized **KP Rig V1**: a posable
+2D construction skeleton with fixed bone lengths, view-specific projected
+measurements, body-volume envelopes, facial/beard/clothing datums, prop contacts,
+occlusion rules and floor anchors. It is an authoring underlay and measurement
+contract, not a mechanical deformation of final raster art. Rig construction is
+paused only until V4's rear boots and the corrected side endpoint are accepted.
 
 ## Known limitations
 

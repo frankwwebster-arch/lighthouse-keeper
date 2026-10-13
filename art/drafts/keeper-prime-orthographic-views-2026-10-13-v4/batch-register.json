@@ -1,0 +1,126 @@
+{
+  "batchId": "keeper-prime-orthographic-views-2026-10-13-v4",
+  "status": "draft-back-boot-correction-awaiting-visual-approval",
+  "purpose": "Correct the invalid front-facing boots in the 180-degree rear endpoint before KP Rig construction.",
+  "approvedFront": {
+    "file": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+    "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+    "register": "art/drafts/keeper-prime-master-2026-10-12-v1/master-pack-register.json",
+    "registerSha256": "ff8e1d06bf26d28a4791ea44a239a443c7f102e87c08a0be6e971e24716278e2"
+  },
+  "selectedSide": {
+    "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+    "sha256": "d2171f148b6b14666a23198112aebf20e50048d583fda77ff0fc91f9d04d4f9a",
+    "status": "blocked-by-v3-landmark-register"
+  },
+  "rejectedV2Back": {
+    "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+    "sha256": "c349f6095a83a429d491bfc8d7cdd619ea71ecec8196ba3a1e49d94a98a366f6",
+    "reason": "feet retain front-facing toe-cap construction"
+  },
+  "immutablePredecessors": {
+    "v2Register": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/batch-register.json",
+    "v2RegisterSha256": "b58fa1d7f2c21a427703462dffa78af9e018d89387f9e40332edde35f8be4325",
+    "v3Register": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v3/batch-register.json",
+    "v3RegisterSha256": "87cbff2fa3e62e558c76b5dfb3ed7bbb58cf0fb8246044ac9e07f117c5c9c28e"
+  },
+  "generatedSource": {
+    "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v4/sources/keeper-prime-back-rear-boots-generated.png",
+    "sha256": "82400d6f0135e268b66c06d3b161295a97a9f990ac5635387272d037af22c543",
+    "normalizedGeometry": {
+      "sourcePixels": [
+        1122,
+        1402
+      ],
+      "sourceSignificantAlphaBoundsExclusive": [
+        225,
+        79,
+        897,
+        1379
+      ],
+      "normalizedBoundsExclusive": [
+        51,
+        18,
+        205,
+        316
+      ]
+    }
+  },
+  "rejectedGeneratedAttempt": {
+    "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v4/rejected-sources/rounded-heel-counter-attempt.png",
+    "sha256": "2371101e33fcd2b9b27cbfdbcecdc1587c41783d5773605117a4678b5ac3ecc6",
+    "reason": "rear seams improved orientation, but rounded heel counters remained too easy to read as toe caps"
+  },
+  "legacyPoseEvidence": {
+    "file": "art/raw/keeper-first-batch/keeper_neutral_standing-back_f1.png",
+    "sha256": "9bf53472c3ebf1c93cdba8f0a6bec7acb45d2a8f02e5ff117105efe90b39e422",
+    "role": "rear boot orientation only"
+  },
+  "candidate": {
+    "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v4/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+    "sha256": "7228c4027401b70369a9fb4fd0856f8da3baf40c5978dd3336ea56a1748608a2",
+    "sidecar": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v4/drafts/keeper_prime_master-neutral-standing-back_f1.json",
+    "sidecarSha256": "ead45032bf6e007f2b7cd892fbe7493e70f13951a0a26f5e17a885f17f474799",
+    "promotionAllowed": false
+  },
+  "editRegion": {
+    "topYInclusive": 273,
+    "bottomYExclusive": 316,
+    "scope": "lower legs and boots only"
+  },
+  "geometry": {
+    "boundsExclusive": [
+      52,
+      18,
+      204,
+      316
+    ],
+    "opaqueWidth": 152,
+    "opaqueHeight": 298,
+    "capTopY": 18,
+    "floorY": 316,
+    "centreX": 128.0
+  },
+  "evidence": {
+    "bootComparison": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v4/evidence/v2-v4-boot-orientation-comparison.png",
+      "sha256": "5ee53ea88dfcfac2ab8fd5248493b2e82a7b5a84249d4ea5d978e5f28e2a0fc8"
+    },
+    "frontGhostOverCorrectedBack": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v4/evidence/front-ghost-over-corrected-back.png",
+      "sha256": "790af48df191639f86394e9993af4b510eaa34ab0b1c284f2eefed0ffc90d764"
+    }
+  },
+  "orientationContract": {
+    "view": "exact 180-degree rear",
+    "requiredBootCues": [
+      "flat squared heel backs",
+      "rectangular heel-counter panels",
+      "vertical back seams",
+      "rear sole edges"
+    ],
+    "forbiddenBootCues": [
+      "front toe caps",
+      "rounded toe-like panels",
+      "front vamp highlights",
+      "shoelaces"
+    ]
+  },
+  "validation": {
+    "cellGeometryMatches": true,
+    "transparentSafetyGutter": true,
+    "edgePixels": 0,
+    "alphaMatchesApprovedFrontExactly": true,
+    "alphaMismatchPixels": 0,
+    "upperBodyMatchesV2Exactly": true,
+    "changedPixelsInsideEditRegion": 3686,
+    "changedPixelsOutsideEditRegion": 0,
+    "same298PixelHeight": true,
+    "sideLandmarkRegistrationReady": false,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "animationDraftsChanged": false
+  },
+  "promptLog": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v4/PROMPT_LOG.md",
+  "rollback": "Delete only art/drafts/keeper-prime-orthographic-views-2026-10-13-v4 and public/keeper-review/keeper-prime-orthographic-v4; V2, V3, Prime Master and production remain unchanged."
+}

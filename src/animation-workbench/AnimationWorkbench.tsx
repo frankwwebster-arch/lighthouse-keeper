@@ -196,8 +196,8 @@ export default function AnimationWorkbench() {
         <div>
           <p className={styles.eyebrow}>Separate review surface · production unchanged</p>
           <h1>Keeper Animation Workbench</h1>
-          <p><strong>Final is empty.</strong> Prime Master V1 is permanently approved and the V2 back has an exact pixel-for-pixel front silhouette. V3 proves that the selected side has the same total height but still misses internal vertical landmarks, so animation redrafting remains blocked.</p>
-          <p><a href="/keeper-review/keeper-prime-orthographic-v3/">Review the front-to-side landmark register →</a></p>
+          <p><strong>Final is empty.</strong> Prime Master V1 is permanently approved. The V2 back had an exact pixel-for-pixel front silhouette, but its boots incorrectly faced the player. Review the V4 rear-boot correction; the side also remains blocked by the V3 internal-landmark register.</p>
+          <p><a href="/keeper-review/keeper-prime-orthographic-v4/">Open the orthographic V4 rear-boot review →</a></p>
         </div>
         <nav><a href="/">Game</a><a href="/studio">Recipe Studio</a></nav>
       </header>
@@ -225,7 +225,7 @@ export default function AnimationWorkbench() {
         </aside>
 
         <div className={styles.content}>
-          {!selected || !asset ? <section className={styles.emptyStage}><h2>Animation library reset</h2><p>Prime Master V1 is permanently approved. The first transition waits for a side endpoint that matches the V3 cap, badge, ear, shoulder, beard, stripe, hand, knee and floor datums.</p><p><a href="/keeper-review/keeper-prime-orthographic-v3/">Open orthographic V3 registration review</a></p></section> : <>
+          {!selected || !asset ? <section className={styles.emptyStage}><h2>Animation library reset</h2><p>Prime Master V1 is permanently approved. The first transition waits for approval of the V4 rear-facing boots and a side endpoint matching every V3 cap, badge, ear, shoulder, beard, stripe, hand, knee and floor datum.</p><p><a href="/keeper-review/keeper-prime-orthographic-v4/">Open orthographic V4 rear-boot review</a></p></section> : <>
             <section className={styles.itemHeader}>
               <div>
                 <div className={styles.badges}><span className={selected.lane === 'final' ? styles.finalBadge : styles.draftBadge}>{selected.lane}</span><span>{asset.frames} source frames</span><span>{asset.fps} fps</span><span>{asset.outfit ?? 'standard'}</span></div>

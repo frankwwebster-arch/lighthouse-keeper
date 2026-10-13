@@ -28,6 +28,11 @@ export default {
         destination: '/keeper-review/keeper-prime-orthographic-v3/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/keeper-prime-orthographic-v4',
+        destination: '/keeper-review/keeper-prime-orthographic-v4/index.html',
+        permanent: false,
+      },
     ]
   },
 }
