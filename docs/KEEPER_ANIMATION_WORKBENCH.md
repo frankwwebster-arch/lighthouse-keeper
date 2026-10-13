@@ -15,14 +15,14 @@ Frank permanently approved
 `art/drafts/keeper-prime-master-2026-10-12-v1/` on 13 October 2026 with the
 wording “Approved. Make sure this is NEVER forgotten.” It is the sole identity,
 rendering, proportion, face and single-band uniform authority. The current
-review gate is `keeper-prime-orthographic-views-2026-10-13-v4`, reviewed at
-`/keeper-review/keeper-prime-orthographic-v4/`. V2 remains immutable rejected
+approved rear authority is `keeper-prime-orthographic-views-2026-10-13-v5`, at
+`/keeper-review/keeper-prime-orthographic-v5/`. V2 remains immutable rejected
 provenance: although its rear alpha silhouette exactly matches the front, its
-boots face the player. V4 changes only lower rows 273–315 to flat heel backs,
-rear seams and rear sole edges while preserving the complete alpha match. V3
-still proves the selected side passes only five of 15 internal vertical datums.
-No animation redrafting begins until the V4 back is visually approved and a
-side endpoint has zero delta at every hard datum.
+boots face the player. Frank approved V5's exact first smooth rear-boot render;
+its proxy changes only lower rows 273–315 while preserving the complete alpha
+match. V3 still proves the selected side passes only five of 15 internal
+vertical datums. No animation redrafting begins until KP Rig V1 produces a
+smooth side endpoint with zero delta at every hard datum.
 
 ## Prime Keeper authority
 
@@ -56,11 +56,14 @@ stripe and outer anchors. It misses badge, ear, shoulder, beard, midriff stripe,
 palm and knee datums, so it is not transition-ready. Two guided generation
 attempts remain rejected provenance because they also failed the hard register.
 
-Orthographic V4 corrects the independent back-view error. It preserves V2 rows
-0–272 byte-for-byte and replaces only rows 273–315 with flat squared heel backs,
-vertical rear seams and rear sole edges. Its complete alpha channel still has
-zero mismatches against the approved front. The first rounded-heel correction
-attempt is rejected because it could still be misread as a toe cap.
+Orthographic V5 records Frank's explicit selection of the first rear-boot
+render: rounded rear heel counters, central back seams and rear sole edges. It
+preserves V2 rows 0–272 byte-for-byte and changes only rows 273–315. Its complete
+alpha channel still has zero mismatches against the approved front. The exact
+1122 × 1402 source is the smooth artwork master; the 256 × 320 registered image
+is a Lanczos-resampled measurement/export proxy. V4's second, rougher and more
+squared render is historical provenance, not a visual authority. Every future
+approved model must pass smooth-render review separately from geometry.
 
 ## Purpose and boundary
 
@@ -150,12 +153,14 @@ and does not place an item in either active lane.
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v2.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v3.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v4.py
+/Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v5.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_animation_workbench.py
 npm run verify:keeper-prime-master-v1
 npm run verify:keeper-prime-orthographic-v1
 npm run verify:keeper-prime-orthographic-v2
 npm run verify:keeper-prime-orthographic-v3
 npm run verify:keeper-prime-orthographic-v4
+npm run verify:keeper-prime-orthographic-v5
 npm run verify:keeper-animation-workbench
 npm test
 npm run typecheck
@@ -170,10 +175,10 @@ confirm raw/runtime art and the runtime manifest remain unchanged.
 
 ## Next approval gate
 
-First review the V4 rear-facing boot correction. Before any animation is
-redrafted, also replace the selected side with a V3 successor that preserves its
-visual design and reaches zero vertical delta at all 15 registered points. Once
-both endpoints are approved, restart at the core set in small reviewable batches:
+Build KP Rig V1 from the approved smooth front and V5 rear, then replace the
+selected side with a smooth rig-derived successor that preserves its visual
+design and reaches zero vertical delta at all 15 registered points. Once the
+side endpoint is approved, restart at the core set in small reviewable batches:
 walk and exact stop, stop-to-walk, side-to-front/back turns,
 then sit/stand. Every frame in a batch must be authored from the same smooth
 high-resolution family. Only after the core joins are accepted should action
@@ -184,7 +189,7 @@ Before those transition batches, build the authorized **KP Rig V1**: a posable
 measurements, body-volume envelopes, facial/beard/clothing datums, prop contacts,
 occlusion rules and floor anchors. It is an authoring underlay and measurement
 contract, not a mechanical deformation of final raster art. Rig construction is
-paused only until V4's rear boots and the corrected side endpoint are accepted.
+now unblocked; the side correction is its first derived-art validation.
 
 ## Known limitations
 

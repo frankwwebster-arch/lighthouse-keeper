@@ -1101,12 +1101,14 @@ forgotten.” The builder and verifier pin both that wording and the approved PN
 hash. V2 remains immutable rejected provenance. Its back copies all 81,920
 approved-front alpha values, but later inspection found that the rendered boots
 still face the player. V3's 15-point front-to-side skeleton separately proves
-the selected side passes only five hard internal datums. The active V4 back
-correction keeps rows 0–272 byte-identical to V2, changes only rows 273–315 to
-flat squared heel backs, vertical rear seams and rear sole edges, and retains
-zero alpha mismatches. Its first rounded-heel edit is rejected as ambiguous.
-Both workbench lanes remain empty, and no production sprite or animation may
-change until the V4 back and a zero-delta side endpoint are explicitly approved.
+the selected side passes only five hard internal datums. Frank explicitly
+approved the first, smooth rear-boot render for V5: it keeps rows 0–272
+byte-identical to V2, changes only rows 273–315, and retains zero alpha
+mismatches. The 1122 × 1402 source is the rendering-quality authority; the 256
+× 320 registered endpoint is an anti-aliased proxy. V4's rougher, over-squared
+alternative remains historical provenance. Both workbench lanes remain empty,
+and no production sprite or animation may change until a smooth zero-delta side
+endpoint is explicitly approved.
 
 Frank has authorized a **Keeper Prime Construction Rig (KP Rig V1)** before
 animation redrafting. It will register a posable 2D bone/joint skeleton, fixed
@@ -1114,9 +1116,11 @@ segment lengths, front/side/back body-volume envelopes, head/ear/shoulder/chest/
 waist/hip measurements, beard/hair and clothing datums, prop contacts, pose
 limits, occlusion order and floor anchoring. The rig must distinguish invariant
 anatomy from view-dependent projected widths and must not mechanically stretch
-finished beard, hair or clothing art. Work on the rig is paused only long enough
-to avoid encoding the invalid V2 boots; resume from the reviewed V4 back and the
-eventual zero-delta side without requiring a new chat or relying on chat memory.
+finished beard, hair or clothing art. Rig work now resumes from the approved
+smooth front and V5 back. Its first derived art task is the zero-delta side,
+without requiring a new chat or relying on chat memory. Every rig-derived model
+must keep a super-smooth high-resolution master; rough edges or jagged internal
+linework fail even when all geometry datums pass.
 
 ## Review-comments workflow for a later feedback round
 

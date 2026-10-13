@@ -1,0 +1,161 @@
+{
+  "batchId": "keeper-prime-orthographic-views-2026-10-13-v5",
+  "status": "approved-rear-endpoint-authority-for-kp-rig",
+  "purpose": "Record Frank's approved first rear-boot render and integrate only that source's boot detail into the registered back endpoint.",
+  "approvedFront": {
+    "file": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+    "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+    "register": "art/drafts/keeper-prime-master-2026-10-12-v1/master-pack-register.json",
+    "registerSha256": "ff8e1d06bf26d28a4791ea44a239a443c7f102e87c08a0be6e971e24716278e2"
+  },
+  "selectedSide": {
+    "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+    "sha256": "d2171f148b6b14666a23198112aebf20e50048d583fda77ff0fc91f9d04d4f9a",
+    "status": "blocked-by-v3-landmark-register"
+  },
+  "approvedSource": {
+    "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/sources/keeper-prime-back-user-approved-rear-boots.png",
+    "sha256": "2371101e33fcd2b9b27cbfdbcecdc1587c41783d5773605117a4678b5ac3ecc6",
+    "originalFile": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v4/rejected-sources/rounded-heel-counter-attempt.png",
+    "originalSha256": "2371101e33fcd2b9b27cbfdbcecdc1587c41783d5773605117a4678b5ac3ecc6",
+    "normalizedGeometry": {
+      "sourcePixels": [
+        1122,
+        1402
+      ],
+      "sourceSignificantAlphaBoundsExclusive": [
+        227,
+        79,
+        894,
+        1363
+      ],
+      "normalizedBoundsExclusive": [
+        50,
+        18,
+        205,
+        316
+      ]
+    },
+    "regenerated": false
+  },
+  "approval": {
+    "approvedBy": "Frank",
+    "approvedOn": "2026-10-13",
+    "wording": "They don't look like toe caps, they are excellent. Approved.",
+    "scope": "The first generated rear-boot design and its deterministic orthographic integration; authorizes KP Rig V1 use, not raw/runtime promotion."
+  },
+  "history": {
+    "v2InvalidBack": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+      "sha256": "c349f6095a83a429d491bfc8d7cdd619ea71ecec8196ba3a1e49d94a98a366f6",
+      "reason": "feet face the player"
+    },
+    "v4SupersededBack": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v4/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+      "sha256": "7228c4027401b70369a9fb4fd0856f8da3baf40c5978dd3336ea56a1748608a2",
+      "reason": "over-squared substitute not selected by Frank"
+    },
+    "v2Register": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/batch-register.json",
+      "sha256": "b58fa1d7f2c21a427703462dffa78af9e018d89387f9e40332edde35f8be4325"
+    },
+    "v3Register": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v3/batch-register.json",
+      "sha256": "87cbff2fa3e62e558c76b5dfb3ed7bbb58cf0fb8246044ac9e07f117c5c9c28e"
+    },
+    "v4Register": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v4/batch-register.json",
+      "sha256": "3d60860efb6b0f84efba9b9b7d62262f7e9c24dc279dcac6e13ccbcb16738d19"
+    }
+  },
+  "approvedRearEndpoint": {
+    "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+    "sha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86",
+    "sidecar": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/drafts/keeper_prime_master-neutral-standing-back_f1.json",
+    "sidecarSha256": "2ef33613670c56e5dab90c9612605552ed10b9f7215762ffefc7b1f005f5af2e",
+    "animationAuthoringAllowed": true,
+    "productionPromotionAllowed": false
+  },
+  "editRegion": {
+    "topYInclusive": 273,
+    "bottomYExclusive": 316,
+    "scope": "lower legs and boots only"
+  },
+  "geometry": {
+    "boundsExclusive": [
+      52,
+      18,
+      204,
+      316
+    ],
+    "opaqueWidth": 152,
+    "opaqueHeight": 298,
+    "capTopY": 18,
+    "floorY": 316,
+    "centreX": 128.0
+  },
+  "evidence": {
+    "bootComparison": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/evidence/v2-v4-v5-boot-history.png",
+      "sha256": "482e7146f07488ce00761d0b423e94c0a329f0a59131bd87df23e69e31acd43f"
+    },
+    "frontGhostOverApprovedBack": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/evidence/front-ghost-over-approved-back.png",
+      "sha256": "1018119fd3f19bd15e14970340b488f8eba1c683a74cf7da8e4d00e07b7f9b2c"
+    }
+  },
+  "orientationContract": {
+    "view": "exact 180-degree rear",
+    "requiredBootCues": [
+      "rounded rear heel-counter panels",
+      "central vertical back seams",
+      "rear heel backs",
+      "rear sole edges"
+    ],
+    "forbiddenBootCues": [
+      "forward-facing construction",
+      "front vamp highlights",
+      "shoelaces"
+    ]
+  },
+  "renderQualityContract": {
+    "approvedArtworkMaster": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/sources/keeper-prime-back-user-approved-rear-boots.png",
+    "minimumMasterDimensions": [
+      1122,
+      1402
+    ],
+    "actualMasterDimensions": [
+      1122,
+      1402
+    ],
+    "masterMustRemainSmooth": true,
+    "registeredProxyResampling": "LANCZOS",
+    "registeredProxyAlphaAuthority": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+    "outerAlphaMatchesAuthorityExactly": true,
+    "nearestNeighbourMasterResamplingAllowed": false,
+    "roughOrJaggedInternalLineworkAllowed": false
+  },
+  "validation": {
+    "cellGeometryMatches": true,
+    "transparentSafetyGutter": true,
+    "edgePixels": 0,
+    "alphaMatchesApprovedFrontExactly": true,
+    "alphaMismatchPixels": 0,
+    "upperBodyMatchesV2Exactly": true,
+    "changedPixelsInsideEditRegion": 3691,
+    "changedPixelsOutsideEditRegion": 0,
+    "pixelsDifferentFromV4": 3668,
+    "same298PixelHeight": true,
+    "sideLandmarkRegistrationReady": false,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "animationDraftsChanged": false
+  },
+  "legacyPoseEvidence": {
+    "file": "art/raw/keeper-first-batch/keeper_neutral_standing-back_f1.png",
+    "sha256": "9bf53472c3ebf1c93cdba8f0a6bec7acb45d2a8f02e5ff117105efe90b39e422",
+    "role": "orientation evidence only"
+  },
+  "promptLog": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/PROMPT_LOG.md",
+  "rollback": "Delete only art/drafts/keeper-prime-orthographic-views-2026-10-13-v5 and public/keeper-review/keeper-prime-orthographic-v5; V2\u2013V4, Prime Master and production remain unchanged."
+}

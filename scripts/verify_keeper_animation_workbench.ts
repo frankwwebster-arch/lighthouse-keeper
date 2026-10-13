@@ -14,7 +14,7 @@ const MODEL = path.join(ROOT, 'src/animation-workbench/model.ts')
 const CSS = path.join(ROOT, 'src/animation-workbench/workbench.module.css')
 const CORE_V2_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-core-transitions-2026-10-12-v2/batch-register.json')
 const PRIME_MASTER_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-master-2026-10-12-v1/master-pack-register.json')
-const PRIME_ORTHOGRAPHIC_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-orthographic-views-2026-10-13-v4/batch-register.json')
+const PRIME_ORTHOGRAPHIC_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/batch-register.json')
 const EXPECTED_FINALS: string[] = []
 const EXPECTED_DRAFTS: string[] = []
 const fail = (message: string): never => { throw new Error(`keeper animation workbench: ${message}`) }
@@ -158,7 +158,7 @@ if (catalogue.provenance?.primeMasterRegisterSha256 !== sha256(PRIME_MASTER_REGI
 if (catalogue.provenance?.primeOrthographicRegisterSha256 !== sha256(PRIME_ORTHOGRAPHIC_REGISTER)) fail('workbench does not pin the orthographic register')
 
 const ui = fs.readFileSync(UI, 'utf8')
-for (const label of ['Final', 'Draft', 'Copy to Draft', 'Copy frame', 'Remove frame', 'Move left', 'Move right', 'Repeat section', 'Transition preview', 'Required for every action', 'begins hidden behind', 'cycles set by game placement', 'Export Draft JSON', 'Import Draft JSON', 'Final is empty', 'No animations are currently Final', 'Prime Master V1', 'exact pixel-for-pixel front silhouette', 'orthographic V4 rear-boot review']) {
+for (const label of ['Final', 'Draft', 'Copy to Draft', 'Copy frame', 'Remove frame', 'Move left', 'Move right', 'Repeat section', 'Transition preview', 'Required for every action', 'begins hidden behind', 'cycles set by game placement', 'Export Draft JSON', 'Import Draft JSON', 'Final is empty', 'No animations are currently Final', 'Prime Master V1', 'exact pixel-for-pixel front silhouette', 'orthographic V5 approved rear endpoint']) {
   if (!ui.includes(label)) fail(`UI omits ${label}`)
 }
 for (const functionName of ['copyTimelineEntry', 'removeTimelineEntry', 'moveTimelineEntry', 'expandTimeline', 'transitionPlayback', 'transitionWarnings', 'reconcileDraftLibrary']) {

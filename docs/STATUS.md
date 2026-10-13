@@ -53,12 +53,13 @@ density-8 identity authority and uses Frank's preferred first render with one
 broad pale jumper band rather than the harder-to-maintain double stripe. The
 immutable V2 draft gives the back all 81,920 approved-front alpha values, but
 later review found its boots still face the player. V3 blocks the selected side
-at 5 of 15 internal vertical datums. The active V4 proposal changes only rear
-rows 273–315 to flat heel backs and seams, with zero upper-body or alpha change.
-V1, V2, the too-short edit, two failed V3 side attempts and one ambiguous V4
-rounded-heel attempt remain provenance. The 62-asset inventory remains
-untouched pending approval of V4 and a zero-delta side. No production sprite or
-manifest has changed.
+at 5 of 15 internal vertical datums. Frank approved the first smooth rear-boot
+render for V5; its registered proxy changes only rear rows 273–315, with zero
+upper-body or alpha change. V4's rougher, over-squared substitute and the older
+failed packs remain provenance. Every approved model now requires a smooth
+high-resolution master in addition to passing geometry. The 62-asset inventory
+remains untouched pending a rig-derived zero-delta side. No production sprite
+or manifest has changed.
 
 1. The evidence-based beard/hand audit classifies every manifest frame and pins `keeper_clear_snow` as the canonical fuller stepped beard. A landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It remains fail-closed for unavailable evidence: 163 side-on standing/sitting sheets are inventoried, eight zero-difference reference self-comparisons match, and 994 different-pose frames—including `keeper_darts` 3–6—are non-comparable because no approved beard masks, facial landmarks or hand-depth/component evidence exists. Frank reviewed Darts 3–6 visually on 11 October and accepted the beards with no amendment required; no beard draft is active or promotable. Next, use GPT-5.6 Sol to establish comparison inputs for any future claim, then run the later frame-isolation and released-prop audits.
 2. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. Frank's immutable second visual review recorded 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed; the current reviewer has 97 Happy and 67 Awaiting after Frank selected the Darts draft as his preferred candidate. Frank's saved per-animation width and height remain final production art direction.
@@ -105,8 +106,8 @@ Frank's earlier V2 approval is retained as historical provenance, but those
 strips no longer seed Final after the visible pixel-density/model jump was
 rejected. Raw art, runtime sprites and the runtime manifest are unchanged.
 The permanently approved smooth master is at
-`/keeper-review/keeper-prime-master-v1/`; the active rear-boot correction is at
-`/keeper-review/keeper-prime-orthographic-v4/`, linking back to the V3 side
+`/keeper-review/keeper-prime-master-v1/`; the approved rear endpoint is at
+`/keeper-review/keeper-prime-orthographic-v5/`, linking back to the V3 side
 registration audit and immutable V2 predecessor.
 Architecture, limitations and extension points are in
 `docs/KEEPER_ANIMATION_WORKBENCH.md`; the deterministic gate is
