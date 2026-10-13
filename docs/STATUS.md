@@ -58,8 +58,9 @@ render for V5; its registered proxy changes only rear rows 273–315, with zero
 upper-body or alpha change. V4's rougher, over-squared substitute and the older
 failed packs remain provenance. Every approved model now requires a smooth
 high-resolution master in addition to passing geometry. The 62-asset inventory
-remains untouched. A rig-derived zero-delta side now exists as a review-only
-candidate; no production sprite or manifest has changed.
+remains untouched. The rig-derived zero-delta Side-right V1 is now an approved
+artwork authority; its separate Turn V1 derivative remains review-only. No
+production sprite or manifest has changed.
 Frank approved KP Rig V1 on 13 October 2026 with “Approve KP Rig V1, let's see
 it animated”. The V1 pack remains immutable and unpromoted, with fixed
 front/back anatomy, a side-projection skeleton, 15 target y-datums, body
@@ -70,11 +71,12 @@ five seconds at 168 px/s instead of two steps over two seconds at 420 px/s,
 with greater thigh swing and knee lift. Idle, reach and planted-ankle sit/stand
 remain exact V2 records, and all registered limb lengths remain exact. Frank
 approved Motion V3 on 13 October 2026 with “Approved, very good indeed”. The
-resulting separate super-smooth side-right V1 candidate is now reviewable at
-`/keeper-review/keeper-prime-side-right-rigged-v1/`: its registered proxy
-passes all 15 vertical datums exactly and keeps a transparent safety gutter.
-It awaits visual approval and has not entered Final, turn authoring or
-production.
+resulting separate super-smooth Side-right V1 passes all 15 vertical datums and
+keeps a transparent safety gutter. Frank approved it with “Approve side-right
+V1 and build Turn V1.” Turn V1 is now reviewable at
+`/keeper-review/keeper-prime-turn-front-side-v1/`: eight poses, exact approved
+endpoints and exact reverse frame order. It awaits visual approval and has not
+entered Final or production.
 
 1. The evidence-based beard/hand audit classifies every manifest frame and pins `keeper_clear_snow` as the canonical fuller stepped beard. A landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It remains fail-closed for unavailable evidence: 163 side-on standing/sitting sheets are inventoried, eight zero-difference reference self-comparisons match, and 994 different-pose frames—including `keeper_darts` 3–6—are non-comparable because no approved beard masks, facial landmarks or hand-depth/component evidence exists. Frank reviewed Darts 3–6 visually on 11 October and accepted the beards with no amendment required; no beard draft is active or promotable. Next, use GPT-5.6 Sol to establish comparison inputs for any future claim, then run the later frame-isolation and released-prop audits.
 2. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. Frank's immutable second visual review recorded 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed; the current reviewer has 97 Happy and 67 Awaiting after Frank selected the Darts draft as his preferred candidate. Frank's saved per-animation width and height remain final production art direction.
@@ -105,8 +107,8 @@ production.
 
 The Keeper Animation Workbench is deployed separately from the established
 reviewer at `/animation-workbench`. Its Final and active Draft lanes are both
-currently empty pending visual approval of the 15/15 Prime side-right endpoint;
-the V5 back endpoint is already approved.
+currently empty pending visual approval of front ↔ side Turn V1; the Prime
+front, Side-right V1 and V5 back artwork endpoints are approved authorities.
 Its shared architecture still
 supports immutable repository-backed Final items and browser-local,
 JSON-exportable Draft recipes that can copy, remove and reorder source-frame references, loop

@@ -6,7 +6,7 @@
   "separateFrom": "/keeper-review/",
   "principles": {
     "final": "Currently empty. An animation enters Final only after explicit visual approval of its complete transition route.",
-    "draft": "Currently empty. The separate super-smooth side-right endpoint now passes all 15 vertical datums and is awaiting visual approval. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
+    "draft": "Currently empty. Side-right V1 is approved as an artwork authority; the separate eight-pose front \u2194 side Turn V1 is awaiting visual approval outside the active animation lane. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
     "transitions": "Every action must carry an inspectable walk \u2192 stop \u2192 optional facing turn \u2192 action ingress and a compatible action \u2192 stop \u2192 walk egress. Root motion continues through stop/start; the engine varies only walking distance from world placement."
   },
   "lanes": {
@@ -466,7 +466,7 @@
     }
   ],
   "storage": {
-    "drafts": "empty while the smooth side-right endpoint receives visual review; it passes all 15 V3 vertical landmarks but is not approved, while KP Rig V1, KP Rig Motion V3 and the V5 rear endpoint are approved authorities and prior transitions remain provenance only",
+    "drafts": "empty while Turn V1 receives visual review; Side-right V1, KP Rig V1, KP Rig Motion V3 and the V5 rear endpoint are approved authorities, and prior transitions remain provenance only",
     "final": "empty by explicit user decision; browser tools never mutate Final records"
   },
   "featureContract": {
@@ -536,6 +536,10 @@
     "primeRigMotionApprovalRegisterSha256": "47d3b3f2cf5eb2c073b2716cfa2ff79b56f18a3e50574c5dbc0b6da41dbdd884",
     "primeSideRightRegister": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/batch-register.json",
     "primeSideRightRegisterSha256": "2063bfbbb63fa9f30e1607a65d3f9f942a4ae5d24929f87e90d5843f5dca8a8d",
+    "primeSideRightApprovalRegister": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v2/batch-register.json",
+    "primeSideRightApprovalRegisterSha256": "8330a011536651433253eca6a449666249af8332a1e4bf7c339c608d3061e19d",
+    "primeTurnFrontSideRegister": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/batch-register.json",
+    "primeTurnFrontSideRegisterSha256": "9a4a9340ad1ba84101f0654d15b69f5770da52d4adfc016a7e10e4f3d5acb07f",
     "runtimeManifest": "public/sprites/manifest.json",
     "runtimeManifestSha256": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
     "productionSpritesChanged": false,

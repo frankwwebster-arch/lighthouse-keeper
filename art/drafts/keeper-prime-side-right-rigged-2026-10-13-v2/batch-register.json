@@ -1,0 +1,46 @@
+{
+  "batchId": "keeper-prime-side-right-rigged-2026-10-13-v2",
+  "status": "approved-side-right-artwork-authority",
+  "purpose": "Preserve Frank's approval of Side-right V1 without changing the approved V1 review pack.",
+  "approval": {
+    "approvedBy": "Frank",
+    "approvedOn": "2026-10-13",
+    "wording": "Approve side-right V1 and build Turn V1.",
+    "scope": "The smooth 90-degree Keeper Prime side-right artwork master and its exact 15/15 registered endpoint."
+  },
+  "approvedCandidate": {
+    "register": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/batch-register.json",
+    "registerSha256": "2063bfbbb63fa9f30e1607a65d3f9f942a4ae5d24929f87e90d5843f5dca8a8d",
+    "generatedSource": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/sources/keeper-prime-side-right-rigged-generated.png",
+    "generatedSourceSha256": "275caba38f9168a8b6627b5e8c8164959a216e30fd06032dfaaa2eb90be63393",
+    "cleanMaster": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/sources/keeper-prime-side-right-rigged-clean-master.png",
+    "cleanMasterSha256": "64b23827057c99fe8e9c00cf7a9e52847a50db00d4b402834fd0d0694b687714",
+    "registeredEndpoint": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+    "registeredEndpointSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+    "publicReview": "/keeper-review/keeper-prime-side-right-rigged-v1/",
+    "publicPage": "public/keeper-review/keeper-prime-side-right-rigged-v1/index.html",
+    "publicPageSha256": "7f70418e6d1f0ae9855a7dbc242bc1ab45c9234168439ec6aac753f34c68f0d8"
+  },
+  "approvedGeometry": {
+    "cell": [256, 320],
+    "density": 8,
+    "opaqueBoundsExclusive": [77, 18, 179, 316],
+    "standingHeightPixels": 298,
+    "exactLandmarkPassCount": 15,
+    "exactLandmarkTotal": 15,
+    "edgeAlphaPixels": 0
+  },
+  "approvalBoundary": {
+    "sideRightArtworkApproved": true,
+    "authorizesTurnV1Draft": true,
+    "turnV1Approved": false,
+    "finishedAnimationApproved": false,
+    "productionPromotionAllowed": false
+  },
+  "approvalReview": {
+    "publicReview": "/keeper-review/keeper-prime-side-right-rigged-v2/",
+    "publicPage": "public/keeper-review/keeper-prime-side-right-rigged-v2/index.html"
+  },
+  "nextGate": "Author one separate smooth Turn V1 draft from the exact approved front to the exact approved side-right endpoint, then return the complete looping and route-context preview for visual approval.",
+  "rollback": "Delete only art/drafts/keeper-prime-side-right-rigged-2026-10-13-v2; the approved V1 artwork pack, all earlier authorities and production remain unchanged."
+}

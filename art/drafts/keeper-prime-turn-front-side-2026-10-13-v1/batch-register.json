@@ -1,0 +1,625 @@
+{
+  "batchId": "keeper-prime-turn-front-side-2026-10-13-v1",
+  "status": "draft-turn-v1-awaiting-visual-approval",
+  "purpose": "Show how the exact approved Keeper Prime front rotates smoothly into the exact approved side-right endpoint and back.",
+  "authorities": {
+    "front": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "register": "art/drafts/keeper-prime-master-2026-10-12-v1/master-pack-register.json",
+      "registerSha256": "ff8e1d06bf26d28a4791ea44a239a443c7f102e87c08a0be6e971e24716278e2"
+    },
+    "sideRight": {
+      "file": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "register": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/batch-register.json",
+      "registerSha256": "2063bfbbb63fa9f30e1607a65d3f9f942a4ae5d24929f87e90d5843f5dca8a8d",
+      "approval": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v2/batch-register.json",
+      "approvalSha256": "8330a011536651433253eca6a449666249af8332a1e4bf7c339c608d3061e19d",
+      "approvalWording": "Approve side-right V1 and build Turn V1."
+    },
+    "rig": {
+      "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/rig/keeper-prime-rig-v1.json",
+      "sha256": "5786df6eb654471f81dda161fc909a5768abb2d96aade24fb84448beb7cdf765"
+    }
+  },
+  "generation": {
+    "tool": "built-in image generation",
+    "mode": "six independently drawn angular poses; an 8\u00b0 near-front bridge and projected-width redraws prevent an abrupt front join",
+    "rawSources": [
+      {
+        "angleDegrees": 8,
+        "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/sources/keeper-prime-turn-angle-8-generated.png",
+        "sha256": "29f23079bfe63ddab7d50add9b3e5358f58ab29cad84280450c1e59a3ca7fbb9"
+      },
+      {
+        "angleDegrees": 15,
+        "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/sources/keeper-prime-turn-angle-15-generated.png",
+        "sha256": "894869db11e0fb84fa84870f478c4f2c8ae110d1f357f0c62bd013498855bae4"
+      },
+      {
+        "angleDegrees": 30,
+        "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/sources/keeper-prime-turn-angle-30-generated.png",
+        "sha256": "d6c76526c9681500c86f9e9f179ccdeb08344bece58344379c58d5425c58a3b4"
+      },
+      {
+        "angleDegrees": 45,
+        "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/sources/keeper-prime-turn-angle-45-generated.png",
+        "sha256": "15d497d1ab4d174568c3015d31d7f91f243ef25dd088b918b3da08171cc13339"
+      },
+      {
+        "angleDegrees": 60,
+        "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/sources/keeper-prime-turn-angle-60-generated.png",
+        "sha256": "2ef10d4cd629608e94425958ce217892ddb1673e4a60e8726fa8e7b4b4329458"
+      },
+      {
+        "angleDegrees": 75,
+        "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/sources/keeper-prime-turn-angle-75-generated.png",
+        "sha256": "63ef7693361c62adc6577ea0fc2557747ed720edc0f5bc91d2c3fc0a70feade0"
+      }
+    ],
+    "cleanSources": [
+      {
+        "angleDegrees": 8,
+        "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/sources/keeper-prime-turn-angle-8-clean.png",
+        "sha256": "3d4cd0843e41a015e7cfa76aaf3e31ea189099df939f555c0e41a75bf487ea46"
+      },
+      {
+        "angleDegrees": 15,
+        "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/sources/keeper-prime-turn-angle-15-clean.png",
+        "sha256": "8a8ede25b233e55b5272429c8f0919007915dc880c45ed35f99bdb0e91fa8874"
+      },
+      {
+        "angleDegrees": 30,
+        "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/sources/keeper-prime-turn-angle-30-clean.png",
+        "sha256": "e2ad1097544e89a252fe7ff878fd0a663624faad7a84ece697c8475eb143bc3b"
+      },
+      {
+        "angleDegrees": 45,
+        "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/sources/keeper-prime-turn-angle-45-clean.png",
+        "sha256": "b68013740e67aeb2ea2f566ff498db5be9cf6b6cac89ddbe1386871afd442abb"
+      },
+      {
+        "angleDegrees": 60,
+        "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/sources/keeper-prime-turn-angle-60-clean.png",
+        "sha256": "881baddc52872f60ed2b09a4ab6a7e1ae19cb71b940bdd607f5dfd683a97b159"
+      },
+      {
+        "angleDegrees": 75,
+        "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/sources/keeper-prime-turn-angle-75-clean.png",
+        "sha256": "1acc535bb0753a8bbfe490b76daae6a40032fd9e08e9ae3648ac4c16cedf8b82"
+      }
+    ],
+    "lowAlphaCleanupThreshold": 8,
+    "creativePixelWarp": false
+  },
+  "animation": {
+    "anglesDegrees": [
+      0,
+      8,
+      15,
+      30,
+      45,
+      60,
+      75,
+      90
+    ],
+    "fps": 8,
+    "durationSeconds": 1.0,
+    "cell": [
+      256,
+      320
+    ],
+    "logicalCell": [
+      32,
+      40
+    ],
+    "density": 8,
+    "anchor": [
+      128,
+      320
+    ],
+    "forward": {
+      "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/keeper_prime_turn_front_to_side-right_f8.png",
+      "sha256": "8abdcde40f587f40b9b9f1487f06db7ba63d281409a1165b630671c58c7db66d",
+      "sidecar": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/keeper_prime_turn_front_to_side-right_f8.json",
+      "sidecarSha256": "2385aa4124c0d24af98043315638b989cf33ca08f6f266f05e6cbf59d924aff5",
+      "startPose": "standing-front",
+      "endPose": "standing-side-right"
+    },
+    "reverse": {
+      "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/keeper_prime_turn_side-right_to_front_f8.png",
+      "sha256": "3842b22f0e40bfc237d76ec6dec223c78d5695a5f6ccb82e890e56fb83b578fa",
+      "sidecar": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/keeper_prime_turn_side-right_to_front_f8.json",
+      "sidecarSha256": "5ae3310e0e8da2bcc8cd4ac98deb9c04ea26e10f44a2a2e552a647515be0c768",
+      "startPose": "standing-side-right",
+      "endPose": "standing-front",
+      "exactFrameOrderReverse": true
+    }
+  },
+  "frames": [
+    {
+      "frame": 1,
+      "angleDegrees": 0,
+      "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f1.png",
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "endpointAuthority": "approved-front",
+      "opaqueBoundsExclusive": [
+        52,
+        18,
+        204,
+        316
+      ],
+      "opaqueWidth": 152,
+      "opaqueHeight": 298,
+      "opaqueArea": 31280,
+      "alphaCentroid": [
+        127.491,
+        167.464
+      ],
+      "headAlphaCentroid": [
+        127.503,
+        88.383
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": null
+    },
+    {
+      "frame": 2,
+      "angleDegrees": 8,
+      "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f2.png",
+      "sha256": "af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e",
+      "endpointAuthority": null,
+      "opaqueBoundsExclusive": [
+        56,
+        18,
+        201,
+        316
+      ],
+      "opaqueWidth": 145,
+      "opaqueHeight": 298,
+      "opaqueArea": 29991,
+      "alphaCentroid": [
+        129.345,
+        168.814
+      ],
+      "headAlphaCentroid": [
+        129.214,
+        88.119
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": {
+        "rawCanvas": [
+          1122,
+          1402
+        ],
+        "cleanSignificantAlphaBoundsExclusive": [
+          262,
+          79,
+          861,
+          1307
+        ],
+        "scale": 0.242671009772,
+        "registeredSize": [
+          145,
+          298
+        ],
+        "registeredOffset": [
+          56,
+          18
+        ],
+        "sourceAxisX": 560,
+        "targetAxisX": 128,
+        "filter": "Lanczos",
+        "creativePixelWarp": false
+      }
+    },
+    {
+      "frame": 3,
+      "angleDegrees": 15,
+      "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f3.png",
+      "sha256": "5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41",
+      "endpointAuthority": null,
+      "opaqueBoundsExclusive": [
+        60,
+        18,
+        199,
+        316
+      ],
+      "opaqueWidth": 139,
+      "opaqueHeight": 298,
+      "opaqueArea": 28393,
+      "alphaCentroid": [
+        130.31,
+        170.296
+      ],
+      "headAlphaCentroid": [
+        129.032,
+        88.958
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": {
+        "rawCanvas": [
+          1122,
+          1402
+        ],
+        "cleanSignificantAlphaBoundsExclusive": [
+          272,
+          78,
+          855,
+          1332
+        ],
+        "scale": 0.237639553429,
+        "registeredSize": [
+          139,
+          298
+        ],
+        "registeredOffset": [
+          60,
+          18
+        ],
+        "sourceAxisX": 560,
+        "targetAxisX": 128,
+        "filter": "Lanczos",
+        "creativePixelWarp": false
+      }
+    },
+    {
+      "frame": 4,
+      "angleDegrees": 30,
+      "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f4.png",
+      "sha256": "081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a",
+      "endpointAuthority": null,
+      "opaqueBoundsExclusive": [
+        64,
+        18,
+        192,
+        316
+      ],
+      "opaqueWidth": 128,
+      "opaqueHeight": 298,
+      "opaqueArea": 27124,
+      "alphaCentroid": [
+        129.59,
+        168.913
+      ],
+      "headAlphaCentroid": [
+        129.675,
+        88.683
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": {
+        "rawCanvas": [
+          1122,
+          1402
+        ],
+        "cleanSignificantAlphaBoundsExclusive": [
+          292,
+          83,
+          827,
+          1332
+        ],
+        "scale": 0.238590872698,
+        "registeredSize": [
+          128,
+          298
+        ],
+        "registeredOffset": [
+          64,
+          18
+        ],
+        "sourceAxisX": 560,
+        "targetAxisX": 128,
+        "filter": "Lanczos",
+        "creativePixelWarp": false
+      }
+    },
+    {
+      "frame": 5,
+      "angleDegrees": 45,
+      "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f5.png",
+      "sha256": "2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5",
+      "endpointAuthority": null,
+      "opaqueBoundsExclusive": [
+        65,
+        18,
+        191,
+        316
+      ],
+      "opaqueWidth": 126,
+      "opaqueHeight": 298,
+      "opaqueArea": 26679,
+      "alphaCentroid": [
+        128.933,
+        167.872
+      ],
+      "headAlphaCentroid": [
+        128.124,
+        88.351
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": {
+        "rawCanvas": [
+          1122,
+          1402
+        ],
+        "cleanSignificantAlphaBoundsExclusive": [
+          295,
+          81,
+          826,
+          1333
+        ],
+        "scale": 0.238019169329,
+        "registeredSize": [
+          126,
+          298
+        ],
+        "registeredOffset": [
+          65,
+          18
+        ],
+        "sourceAxisX": 560,
+        "targetAxisX": 128,
+        "filter": "Lanczos",
+        "creativePixelWarp": false
+      }
+    },
+    {
+      "frame": 6,
+      "angleDegrees": 60,
+      "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f6.png",
+      "sha256": "8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb",
+      "endpointAuthority": null,
+      "opaqueBoundsExclusive": [
+        75,
+        18,
+        188,
+        316
+      ],
+      "opaqueWidth": 113,
+      "opaqueHeight": 298,
+      "opaqueArea": 24502,
+      "alphaCentroid": [
+        130.301,
+        167.395
+      ],
+      "headAlphaCentroid": [
+        129.518,
+        87.662
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": {
+        "rawCanvas": [
+          1122,
+          1402
+        ],
+        "cleanSignificantAlphaBoundsExclusive": [
+          336,
+          80,
+          809,
+          1331
+        ],
+        "scale": 0.238209432454,
+        "registeredSize": [
+          113,
+          298
+        ],
+        "registeredOffset": [
+          75,
+          18
+        ],
+        "sourceAxisX": 560,
+        "targetAxisX": 128,
+        "filter": "Lanczos",
+        "creativePixelWarp": false
+      }
+    },
+    {
+      "frame": 7,
+      "angleDegrees": 75,
+      "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f7.png",
+      "sha256": "85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9",
+      "endpointAuthority": "approved-side-right",
+      "opaqueBoundsExclusive": [
+        80,
+        18,
+        180,
+        316
+      ],
+      "opaqueWidth": 100,
+      "opaqueHeight": 298,
+      "opaqueArea": 22168,
+      "alphaCentroid": [
+        130.464,
+        165.27
+      ],
+      "headAlphaCentroid": [
+        130.78,
+        87.85
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": {
+        "rawCanvas": [
+          1122,
+          1402
+        ],
+        "cleanSignificantAlphaBoundsExclusive": [
+          359,
+          76,
+          779,
+          1328
+        ],
+        "scale": 0.238019169329,
+        "registeredSize": [
+          100,
+          298
+        ],
+        "registeredOffset": [
+          80,
+          18
+        ],
+        "sourceAxisX": 560,
+        "targetAxisX": 128,
+        "filter": "Lanczos",
+        "creativePixelWarp": false
+      }
+    },
+    {
+      "frame": 8,
+      "angleDegrees": 90,
+      "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f8.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "endpointAuthority": null,
+      "opaqueBoundsExclusive": [
+        77,
+        18,
+        179,
+        316
+      ],
+      "opaqueWidth": 102,
+      "opaqueHeight": 298,
+      "opaqueArea": 22157,
+      "alphaCentroid": [
+        129.428,
+        159.433
+      ],
+      "headAlphaCentroid": [
+        131.226,
+        87.578
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": null
+    }
+  ],
+  "continuity": [
+    {
+      "fromFrame": 1,
+      "toFrame": 2,
+      "opaqueWidthDelta": -7,
+      "opaqueHeightDelta": 0,
+      "alphaCentroidDelta": [
+        1.854,
+        1.35
+      ],
+      "headAlphaCentroidDelta": [
+        1.711,
+        -0.264
+      ]
+    },
+    {
+      "fromFrame": 2,
+      "toFrame": 3,
+      "opaqueWidthDelta": -6,
+      "opaqueHeightDelta": 0,
+      "alphaCentroidDelta": [
+        0.965,
+        1.482
+      ],
+      "headAlphaCentroidDelta": [
+        -0.182,
+        0.839
+      ]
+    },
+    {
+      "fromFrame": 3,
+      "toFrame": 4,
+      "opaqueWidthDelta": -11,
+      "opaqueHeightDelta": 0,
+      "alphaCentroidDelta": [
+        -0.72,
+        -1.383
+      ],
+      "headAlphaCentroidDelta": [
+        0.643,
+        -0.275
+      ]
+    },
+    {
+      "fromFrame": 4,
+      "toFrame": 5,
+      "opaqueWidthDelta": -2,
+      "opaqueHeightDelta": 0,
+      "alphaCentroidDelta": [
+        -0.657,
+        -1.041
+      ],
+      "headAlphaCentroidDelta": [
+        -1.551,
+        -0.332
+      ]
+    },
+    {
+      "fromFrame": 5,
+      "toFrame": 6,
+      "opaqueWidthDelta": -13,
+      "opaqueHeightDelta": 0,
+      "alphaCentroidDelta": [
+        1.368,
+        -0.477
+      ],
+      "headAlphaCentroidDelta": [
+        1.394,
+        -0.689
+      ]
+    },
+    {
+      "fromFrame": 6,
+      "toFrame": 7,
+      "opaqueWidthDelta": -13,
+      "opaqueHeightDelta": 0,
+      "alphaCentroidDelta": [
+        0.163,
+        -2.125
+      ],
+      "headAlphaCentroidDelta": [
+        1.262,
+        0.188
+      ]
+    },
+    {
+      "fromFrame": 7,
+      "toFrame": 8,
+      "opaqueWidthDelta": 2,
+      "opaqueHeightDelta": 0,
+      "alphaCentroidDelta": [
+        -1.036,
+        -5.837
+      ],
+      "headAlphaCentroidDelta": [
+        0.446,
+        -0.272
+      ]
+    }
+  ],
+  "evidence": {
+    "contactSheet": {
+      "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/evidence/turn-contact-sheet.png",
+      "sha256": "4be7c07b85f8425b9ac56456a37c50b85a13161c3483d7a142ac62af21defdcd"
+    },
+    "horizontalDatums": {
+      "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/evidence/turn-horizontal-datums.png",
+      "sha256": "59e9d85aa6a0d4bec500df39482395c1da612b965b62ba86b799862c9c0039c8"
+    }
+  },
+  "validation": {
+    "frontEndpointByteIdentical": true,
+    "sideEndpointByteIdentical": true,
+    "reverseIsExactFrameOrderReverse": true,
+    "everyFrameHeightPixels": 298,
+    "everyFrameCapTopY": 18,
+    "everyFrameFloorExclusiveY": 316,
+    "everyFrameTransparentCellEdge": true,
+    "uniformRegistrationOnly": true,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "otherAnimationDraftsChanged": false
+  },
+  "approvalBoundary": {
+    "sideRightArtworkApproved": true,
+    "turnV1Approved": false,
+    "finalLaneEntryAllowed": false,
+    "productionPromotionAllowed": false
+  },
+  "nextGate": "Frank reviews the looping front \u2194 side transition and route context for visible jumps before any side \u2194 back turn or wider core animation authoring.",
+  "rollback": "Delete only art/drafts/keeper-prime-turn-front-side-2026-10-13-v1 and public/keeper-review/keeper-prime-turn-front-side-v1; approved authorities, existing drafts and production remain unchanged."
+}
