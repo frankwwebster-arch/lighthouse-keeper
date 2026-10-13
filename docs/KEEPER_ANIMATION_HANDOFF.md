@@ -1151,8 +1151,17 @@ to V6. Its F8 uses disjoint `[202,254)` trouser and `[254,317)` boot masks and
 eases the high-resolution master to five-percent lower-leg expansion before
 normalization. The resulting lower bounds exactly match V4 at
 `[75,260,180,316]`; the floor and full F8 bounds remain unchanged. V6 remains
-immutable provenance and V7 awaits visual approval. Both workbench lanes remain
-empty; no production sprite or runtime animation has changed.
+immutable provenance. After review exposed that the far-left ear appeared too
+abruptly at the 180° endpoint, V8 at
+`/keeper-review/keeper-prime-turn-side-back-v8/` retained every V7 pose
+byte-for-byte and inserted eight smooth 1122 × 1402 authored intermediates.
+It runs 16 poses at 16 fps over the same one-second duration as V7's eight poses
+at 8 fps. The final 165°→170°→175°→180° sequence keeps the far ear hidden, then
+shows a narrow sliver, a partial ear and finally the complete rear ear. V8 is a
+cadence trial awaiting visual approval; only if it works should comparable
+authored density become the working assumption for other core animations. Both
+workbench lanes remain empty; no production sprite or runtime animation has
+changed.
 
 Frank authorized and then approved a **Keeper Prime Construction Rig (KP Rig
 V1)** before animation redrafting. His exact 13 October 2026 approval was
@@ -1178,8 +1187,8 @@ V1, now approved with its slight 45° cadence limitation recorded. Its second
 animation derivative is the approved eight-pose side-right ↔ back V4 turn,
 pinned by V5. V6 records the first separate scale-review refinement; V7 is the
 current unapproved correction of its F8 lower-leg mask and geometry defects.
-V1–V6 remain reversible provenance; the current candidate review is at
-`/keeper-review/keeper-prime-turn-side-back-v7/`. Every
+V1–V7 remain reversible provenance; the current unapproved cadence trial is at
+`/keeper-review/keeper-prime-turn-side-back-v8/`. Every
 rig-derived model must keep a super-smooth high-resolution
 master; rough edges or jagged internal linework fail even when all geometry
 datums pass.
