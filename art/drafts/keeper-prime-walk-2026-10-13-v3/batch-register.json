@@ -1,0 +1,969 @@
+{
+  "batchId": "keeper-prime-walk-2026-10-13-v3",
+  "status": "draft-opposing-arm-walk-v3-awaiting-visual-approval",
+  "purpose": "Correct Walk V1's under-animated far/left arm using the approved Rig Motion V3 as an explicit opposing-arm pose guide while preserving the eight-pose walk contract.",
+  "authorities": {
+    "sideRight": {
+      "file": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "smoothMaster": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/sources/keeper-prime-side-right-rigged-clean-master.png",
+      "smoothMasterSha256": "64b23827057c99fe8e9c00cf7a9e52847a50db00d4b402834fd0d0694b687714",
+      "approval": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v2/batch-register.json",
+      "approvalSha256": "8330a011536651433253eca6a449666249af8332a1e4bf7c339c608d3061e19d",
+      "approvalWording": "Approve side-right V1 and build Turn V1."
+    },
+    "motion": {
+      "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v3/motion/keeper-prime-rig-motion-v3.json",
+      "sha256": "683b564fe8766d3616f3be596bed11908eeab5ee3731596c929bb7442326da44",
+      "approval": "art/drafts/keeper-prime-construction-rig-2026-10-13-v4/batch-register.json",
+      "approvalSha256": "47d3b3f2cf5eb2c073b2716cfa2ff79b56f18a3e50574c5dbc0b6da41dbdd884",
+      "approvalWording": "Approved, very good indeed"
+    }
+  },
+  "canonicalComparison": {
+    "rawStrip": {
+      "file": "art/raw/keeper-first-batch/keeper_walk_f8.png",
+      "sha256": "03df0efc1f028e139e5c9ca9cf1746a45496887a565f5290c38ad6a4b66fe6b1"
+    },
+    "rawSidecar": {
+      "file": "art/raw/keeper-first-batch/keeper_walk_f8.json",
+      "sha256": "c35e887dadff50261517f7fff2c4cf51cf5ec50e9be5ea9071252879b385a4f9"
+    },
+    "runtimeStrip": {
+      "file": "public/sprites/keeper_walk.png",
+      "sha256": "6f30eb81827bdef0acd6b73bf6815525190f861a02204810d9bbf81a7488bbb4"
+    },
+    "allRemainUnchanged": true
+  },
+  "generation": {
+    "mode": "built-in-image-generation-identity-preserve-with-approved-rig-arm-overlay",
+    "selectedSource": {
+      "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/sources/keeper-prime-walk-8pose-rig-guided.png",
+      "sha256": "a1fe0f983f83e8f66154fc0522617e84c76699759ad3bb10a979089770070209"
+    },
+    "cleanSource": {
+      "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/sources/keeper-prime-walk-8pose-clean.png",
+      "sha256": "f5959259a139b6d0489013367e58ca7810cd0ce1bfe321b3f85607baa43751a5",
+      "lowAlphaCleanupThreshold": 8
+    },
+    "rejectedSources": [
+      {
+        "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/sources/rejected-verbal-arm-pass-v1.png",
+        "sha256": "b184304b43eaabf1ced619cdcbd5405276f2e292ea94edcde8ddb886418d523f",
+        "reason": "bottom-row scale drift"
+      },
+      {
+        "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/sources/rejected-verbal-arm-pass-v2.png",
+        "sha256": "e67f599e1d905f4cc95ecf8e5b1442490757707c54bfa91dc152a036720da8cc",
+        "reason": "unneeded background-only iteration"
+      },
+      {
+        "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/sources/rejected-single-contact-arm-pass.png",
+        "sha256": "a793e7581c7f91d01f56dc4c721ca72956e35673444e85ac8609293f11e87d67",
+        "reason": "single-contact edit preserved the original arm relationship and was not used"
+      },
+      {
+        "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/sources/rejected-bottom-row-arm-pass.png",
+        "sha256": "127e9aa2877099f085ddb4fe1bfef705aa994fd870b0cf3a829087fb1f595620",
+        "reason": "four-pose edit retained the same rear-arm depth ordering"
+      },
+      {
+        "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/sources/rejected-single-f7-guide-pass.png",
+        "sha256": "2058cec0dfb8d4415f5c758c27360d1f02671ea1dab3d201129c57dd1aaa7da2",
+        "reason": "single-frame guide retained the near arm in front"
+      },
+      {
+        "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/sources/rejected-single-marching-pass.png",
+        "sha256": "3a055285f06a4d02b1b6ef733619ab304d0966d03f82fb90c16b588c9ecd6c7b",
+        "reason": "marching-language edit retained the original arm ordering"
+      },
+      {
+        "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/sources/rejected-fresh-rig-sheet-pass.png",
+        "sha256": "33d4fbe5c3f631327f941a23d7dcdd267d57b091252a4c281613af12fe423ce9",
+        "reason": "fresh full-sheet render still left the far arm static"
+      },
+      {
+        "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/sources/rejected-opposite-contact-pass.png",
+        "sha256": "2eaa745f410bf0722e1e23ac618d06ce32b7e3c5dcae27dd0ee767d0a5aca567",
+        "reason": "fresh opposite-contact render retained the near arm in front"
+      }
+    ],
+    "sourceGrid": {
+      "columns": 4,
+      "rows": 2,
+      "cell": [
+        384,
+        512
+      ],
+      "frameOrder": "top row left-to-right, then bottom row left-to-right"
+    },
+    "sourceCells": [
+      {
+        "frame": 1,
+        "sourceCell": [
+          0,
+          0
+        ],
+        "significantAlphaBoundsExclusive": [
+          50,
+          17,
+          363,
+          502
+        ],
+        "opaqueWidth": 313,
+        "opaqueHeight": 485,
+        "edgeAlphaPixels": 0
+      },
+      {
+        "frame": 2,
+        "sourceCell": [
+          1,
+          0
+        ],
+        "significantAlphaBoundsExclusive": [
+          79,
+          17,
+          319,
+          505
+        ],
+        "opaqueWidth": 240,
+        "opaqueHeight": 488,
+        "edgeAlphaPixels": 0
+      },
+      {
+        "frame": 3,
+        "sourceCell": [
+          2,
+          0
+        ],
+        "significantAlphaBoundsExclusive": [
+          89,
+          18,
+          313,
+          504
+        ],
+        "opaqueWidth": 224,
+        "opaqueHeight": 486,
+        "edgeAlphaPixels": 0
+      },
+      {
+        "frame": 4,
+        "sourceCell": [
+          3,
+          0
+        ],
+        "significantAlphaBoundsExclusive": [
+          48,
+          18,
+          361,
+          505
+        ],
+        "opaqueWidth": 313,
+        "opaqueHeight": 487,
+        "edgeAlphaPixels": 0
+      },
+      {
+        "frame": 5,
+        "sourceCell": [
+          0,
+          1
+        ],
+        "significantAlphaBoundsExclusive": [
+          60,
+          13,
+          364,
+          490
+        ],
+        "opaqueWidth": 304,
+        "opaqueHeight": 477,
+        "edgeAlphaPixels": 0
+      },
+      {
+        "frame": 6,
+        "sourceCell": [
+          1,
+          1
+        ],
+        "significantAlphaBoundsExclusive": [
+          79,
+          13,
+          299,
+          491
+        ],
+        "opaqueWidth": 220,
+        "opaqueHeight": 478,
+        "edgeAlphaPixels": 0
+      },
+      {
+        "frame": 7,
+        "sourceCell": [
+          2,
+          1
+        ],
+        "significantAlphaBoundsExclusive": [
+          71,
+          15,
+          309,
+          492
+        ],
+        "opaqueWidth": 238,
+        "opaqueHeight": 477,
+        "edgeAlphaPixels": 0
+      },
+      {
+        "frame": 8,
+        "sourceCell": [
+          3,
+          1
+        ],
+        "significantAlphaBoundsExclusive": [
+          52,
+          13,
+          356,
+          490
+        ],
+        "opaqueWidth": 304,
+        "opaqueHeight": 477,
+        "edgeAlphaPixels": 0
+      }
+    ],
+    "promptLog": "art/drafts/keeper-prime-walk-2026-10-13-v3/PROMPT_LOG.md",
+    "poseGuide": {
+      "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/sources/rig-arm-overlay.png",
+      "sha256": "bd8dd94d988cff06b837e2424a331762bad5a186992057499854eb196ed3d8f9",
+      "authority": "art/drafts/keeper-prime-construction-rig-2026-10-13-v3/motion/keeper-prime-rig-motion-v3.json",
+      "authoritySha256": "683b564fe8766d3616f3be596bed11908eeab5ee3731596c929bb7442326da44",
+      "nearArmColour": "cyan",
+      "farArmColour": "magenta",
+      "retainedInFinalPixels": false
+    }
+  },
+  "animation": {
+    "name": "keeper_prime_walk-right",
+    "frames": 8,
+    "fps": 8,
+    "durationSeconds": 1,
+    "loop": true,
+    "strip": {
+      "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/keeper_prime_walk-right_f8.png",
+      "sha256": "937f82d24017ffa385f16129f03d0da737612291d0961fcb1fb644130457ba70",
+      "sidecar": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/keeper_prime_walk-right_f8.json",
+      "sidecarSha256": "5517c25259a413ab00f9e132f54c7cc4f456e0b18a6f456a83abbd0297ecbcaf"
+    },
+    "rootMotion": {
+      "bakedIntoStrip": false,
+      "speedHighResolutionPixelsPerSecond": 168,
+      "speedLogicalPixelsPerSecond": 21,
+      "representativeDurationSeconds": 5,
+      "beginsAndEndsFullyHidden": true
+    }
+  },
+  "frames": [
+    {
+      "frame": 1,
+      "pose": "contact",
+      "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f1.png",
+      "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "opaqueBoundsExclusive": [
+        41,
+        18,
+        233,
+        316
+      ],
+      "opaqueWidth": 192,
+      "opaqueHeight": 298,
+      "opaqueArea": 31745,
+      "alphaCentroid": [
+        134.284,
+        175.335
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": {
+        "sharedScale": 0.614432989691,
+        "sourceAxisX": 192,
+        "targetAxisX": 128,
+        "targetFloorExclusive": 316,
+        "registeredSize": [
+          192,
+          298
+        ],
+        "registeredOffset": [
+          41,
+          18
+        ],
+        "filter": "Lanczos",
+        "perFrameScaleChange": false,
+        "creativePixelWarp": false
+      }
+    },
+    {
+      "frame": 2,
+      "pose": "down",
+      "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f2.png",
+      "sha256": "32e057dfe006101740098a984efb605109fbc9d56e074ccf7b0a585ef11b00fa",
+      "opaqueBoundsExclusive": [
+        59,
+        16,
+        206,
+        316
+      ],
+      "opaqueWidth": 147,
+      "opaqueHeight": 300,
+      "opaqueArea": 27052,
+      "alphaCentroid": [
+        133.532,
+        166.734
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": {
+        "sharedScale": 0.614432989691,
+        "sourceAxisX": 192,
+        "targetAxisX": 128,
+        "targetFloorExclusive": 316,
+        "registeredSize": [
+          147,
+          300
+        ],
+        "registeredOffset": [
+          59,
+          16
+        ],
+        "filter": "Lanczos",
+        "perFrameScaleChange": false,
+        "creativePixelWarp": false
+      }
+    },
+    {
+      "frame": 3,
+      "pose": "passing",
+      "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f3.png",
+      "sha256": "739bdbdf5ab5cc230a4b5d4a7261a5be012666becd61c63c5b73143f98a17202",
+      "opaqueBoundsExclusive": [
+        65,
+        17,
+        203,
+        316
+      ],
+      "opaqueWidth": 138,
+      "opaqueHeight": 299,
+      "opaqueArea": 26401,
+      "alphaCentroid": [
+        137.109,
+        163.188
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": {
+        "sharedScale": 0.614432989691,
+        "sourceAxisX": 192,
+        "targetAxisX": 128,
+        "targetFloorExclusive": 316,
+        "registeredSize": [
+          138,
+          299
+        ],
+        "registeredOffset": [
+          65,
+          17
+        ],
+        "filter": "Lanczos",
+        "perFrameScaleChange": false,
+        "creativePixelWarp": false
+      }
+    },
+    {
+      "frame": 4,
+      "pose": "up",
+      "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f4.png",
+      "sha256": "353372c335ebea3b080296cc39b32a159bfd58d223a148f846e9783153ff5293",
+      "opaqueBoundsExclusive": [
+        40,
+        17,
+        232,
+        316
+      ],
+      "opaqueWidth": 192,
+      "opaqueHeight": 299,
+      "opaqueArea": 30369,
+      "alphaCentroid": [
+        135.321,
+        171.95
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": {
+        "sharedScale": 0.614432989691,
+        "sourceAxisX": 192,
+        "targetAxisX": 128,
+        "targetFloorExclusive": 316,
+        "registeredSize": [
+          192,
+          299
+        ],
+        "registeredOffset": [
+          40,
+          17
+        ],
+        "filter": "Lanczos",
+        "perFrameScaleChange": false,
+        "creativePixelWarp": false
+      }
+    },
+    {
+      "frame": 5,
+      "pose": "opposite contact",
+      "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f5.png",
+      "sha256": "2e3c494e8e28c7ba9d96c69993cd56be867333e6d9b0a679677f0c2a0a77b3d6",
+      "opaqueBoundsExclusive": [
+        47,
+        23,
+        234,
+        316
+      ],
+      "opaqueWidth": 187,
+      "opaqueHeight": 293,
+      "opaqueArea": 30669,
+      "alphaCentroid": [
+        134.47,
+        178.056
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": {
+        "sharedScale": 0.614432989691,
+        "sourceAxisX": 192,
+        "targetAxisX": 128,
+        "targetFloorExclusive": 316,
+        "registeredSize": [
+          187,
+          293
+        ],
+        "registeredOffset": [
+          47,
+          23
+        ],
+        "filter": "Lanczos",
+        "perFrameScaleChange": false,
+        "creativePixelWarp": false
+      }
+    },
+    {
+      "frame": 6,
+      "pose": "opposite down",
+      "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f6.png",
+      "sha256": "d420ce28ff67c2d12aad3b84fe502a8cc8c54668d811565267363b7585e70c6f",
+      "opaqueBoundsExclusive": [
+        59,
+        22,
+        194,
+        316
+      ],
+      "opaqueWidth": 135,
+      "opaqueHeight": 294,
+      "opaqueArea": 27486,
+      "alphaCentroid": [
+        131.03,
+        171.922
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": {
+        "sharedScale": 0.614432989691,
+        "sourceAxisX": 192,
+        "targetAxisX": 128,
+        "targetFloorExclusive": 316,
+        "registeredSize": [
+          135,
+          294
+        ],
+        "registeredOffset": [
+          59,
+          22
+        ],
+        "filter": "Lanczos",
+        "perFrameScaleChange": false,
+        "creativePixelWarp": false
+      }
+    },
+    {
+      "frame": 7,
+      "pose": "opposite passing",
+      "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f7.png",
+      "sha256": "06918f64d0d2e1b2c9f4ff310984a52ed823c20854e6b45578e4aa0325813336",
+      "opaqueBoundsExclusive": [
+        54,
+        23,
+        200,
+        316
+      ],
+      "opaqueWidth": 146,
+      "opaqueHeight": 293,
+      "opaqueArea": 28309,
+      "alphaCentroid": [
+        132.831,
+        172.269
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": {
+        "sharedScale": 0.614432989691,
+        "sourceAxisX": 192,
+        "targetAxisX": 128,
+        "targetFloorExclusive": 316,
+        "registeredSize": [
+          146,
+          293
+        ],
+        "registeredOffset": [
+          54,
+          23
+        ],
+        "filter": "Lanczos",
+        "perFrameScaleChange": false,
+        "creativePixelWarp": false
+      }
+    },
+    {
+      "frame": 8,
+      "pose": "opposite up",
+      "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f8.png",
+      "sha256": "43fde698fc7e35da81971b37e98c7ca58a8f19e82bdbdf65d37cfdbd3c802ebe",
+      "opaqueBoundsExclusive": [
+        42,
+        23,
+        229,
+        316
+      ],
+      "opaqueWidth": 187,
+      "opaqueHeight": 293,
+      "opaqueArea": 30092,
+      "alphaCentroid": [
+        135.401,
+        173.384
+      ],
+      "edgeAlphaPixels": 0,
+      "registration": {
+        "sharedScale": 0.614432989691,
+        "sourceAxisX": 192,
+        "targetAxisX": 128,
+        "targetFloorExclusive": 316,
+        "registeredSize": [
+          187,
+          293
+        ],
+        "registeredOffset": [
+          42,
+          23
+        ],
+        "filter": "Lanczos",
+        "perFrameScaleChange": false,
+        "creativePixelWarp": false
+      }
+    }
+  ],
+  "palette": {
+    "method": "median alpha>=128 samples in registered vertical regions",
+    "approvedSideReference": {
+      "capBlue": [
+        0,
+        84,
+        200
+      ],
+      "jumperBlue": [
+        0,
+        86,
+        202
+      ],
+      "trouserNavy": [
+        50,
+        57,
+        93
+      ],
+      "bootNavy": [
+        52,
+        58,
+        96
+      ]
+    },
+    "frames": [
+      {
+        "capBlue": [
+          0,
+          84,
+          208
+        ],
+        "jumperBlue": [
+          0,
+          89,
+          204
+        ],
+        "trouserNavy": [
+          54,
+          60,
+          101
+        ],
+        "bootNavy": [
+          61,
+          66,
+          110
+        ]
+      },
+      {
+        "capBlue": [
+          0,
+          84,
+          206
+        ],
+        "jumperBlue": [
+          0,
+          85,
+          197
+        ],
+        "trouserNavy": [
+          55,
+          61,
+          102
+        ],
+        "bootNavy": [
+          61,
+          66,
+          111
+        ]
+      },
+      {
+        "capBlue": [
+          0,
+          82,
+          205
+        ],
+        "jumperBlue": [
+          1,
+          86,
+          199
+        ],
+        "trouserNavy": [
+          53,
+          59,
+          99
+        ],
+        "bootNavy": [
+          62,
+          67,
+          111
+        ]
+      },
+      {
+        "capBlue": [
+          0,
+          84,
+          206
+        ],
+        "jumperBlue": [
+          1,
+          85,
+          197
+        ],
+        "trouserNavy": [
+          55,
+          61,
+          102
+        ],
+        "bootNavy": [
+          61,
+          67,
+          111
+        ]
+      },
+      {
+        "capBlue": [
+          0,
+          83,
+          209
+        ],
+        "jumperBlue": [
+          0,
+          87,
+          201
+        ],
+        "trouserNavy": [
+          55,
+          62,
+          103
+        ],
+        "bootNavy": [
+          63,
+          68,
+          112
+        ]
+      },
+      {
+        "capBlue": [
+          0,
+          85,
+          211
+        ],
+        "jumperBlue": [
+          0,
+          89,
+          205
+        ],
+        "trouserNavy": [
+          56,
+          61,
+          103
+        ],
+        "bootNavy": [
+          63,
+          68,
+          112
+        ]
+      },
+      {
+        "capBlue": [
+          0,
+          84,
+          209
+        ],
+        "jumperBlue": [
+          0,
+          86,
+          200
+        ],
+        "trouserNavy": [
+          55,
+          61,
+          102
+        ],
+        "bootNavy": [
+          63,
+          68,
+          113
+        ]
+      },
+      {
+        "capBlue": [
+          0,
+          84,
+          209
+        ],
+        "jumperBlue": [
+          1,
+          84,
+          196
+        ],
+        "trouserNavy": [
+          55,
+          61,
+          102
+        ],
+        "bootNavy": [
+          62,
+          67,
+          112
+        ]
+      }
+    ]
+  },
+  "continuity": [
+    {
+      "fromFrame": 1,
+      "toFrame": 2,
+      "opaqueHeightDelta": 2,
+      "opaqueWidthDelta": -45,
+      "alphaCentroidDelta": [
+        -0.752,
+        -8.601
+      ],
+      "opaqueAreaRatio": 0.852166
+    },
+    {
+      "fromFrame": 2,
+      "toFrame": 3,
+      "opaqueHeightDelta": -1,
+      "opaqueWidthDelta": -9,
+      "alphaCentroidDelta": [
+        3.577,
+        -3.546
+      ],
+      "opaqueAreaRatio": 0.975935
+    },
+    {
+      "fromFrame": 3,
+      "toFrame": 4,
+      "opaqueHeightDelta": 0,
+      "opaqueWidthDelta": 54,
+      "alphaCentroidDelta": [
+        -1.788,
+        8.762
+      ],
+      "opaqueAreaRatio": 1.150297
+    },
+    {
+      "fromFrame": 4,
+      "toFrame": 5,
+      "opaqueHeightDelta": -6,
+      "opaqueWidthDelta": -5,
+      "alphaCentroidDelta": [
+        -0.851,
+        6.106
+      ],
+      "opaqueAreaRatio": 1.009878
+    },
+    {
+      "fromFrame": 5,
+      "toFrame": 6,
+      "opaqueHeightDelta": 1,
+      "opaqueWidthDelta": -52,
+      "alphaCentroidDelta": [
+        -3.44,
+        -6.134
+      ],
+      "opaqueAreaRatio": 0.896214
+    },
+    {
+      "fromFrame": 6,
+      "toFrame": 7,
+      "opaqueHeightDelta": -1,
+      "opaqueWidthDelta": 11,
+      "alphaCentroidDelta": [
+        1.801,
+        0.347
+      ],
+      "opaqueAreaRatio": 1.029943
+    },
+    {
+      "fromFrame": 7,
+      "toFrame": 8,
+      "opaqueHeightDelta": 0,
+      "opaqueWidthDelta": 41,
+      "alphaCentroidDelta": [
+        2.57,
+        1.115
+      ],
+      "opaqueAreaRatio": 1.062984
+    },
+    {
+      "fromFrame": 8,
+      "toFrame": 1,
+      "opaqueHeightDelta": 5,
+      "opaqueWidthDelta": 5,
+      "alphaCentroidDelta": [
+        -1.117,
+        1.951
+      ],
+      "opaqueAreaRatio": 1.054932
+    }
+  ],
+  "evidence": {
+    "contactSheet": {
+      "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/evidence/walk-contact-sheet.png",
+      "sha256": "54c1fa1cb7598ae88e122356bada0c3159f4934f6e085ef4c8d86cb4d6390b96"
+    },
+    "approvedSideComparison": {
+      "file": "art/drafts/keeper-prime-walk-2026-10-13-v3/evidence/approved-side-vs-walk.png",
+      "sha256": "cbf29a4bbb8f88fc6605868c8df5de163223cee88c36ef0a4d98748105b16604"
+    }
+  },
+  "validation": {
+    "sharedScaleOnly": true,
+    "perFrameScaleChange": false,
+    "everySourceCellHasTransparentEdge": true,
+    "everyOutputCellHasTransparentEdge": true,
+    "stripMatchesFrames": true,
+    "sidecarMatchesStrip": true,
+    "leftWalkDeferredToDeterministicMirror": true,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "workbenchFinalChanged": false,
+    "approvedRigOpposingArmGuideUsed": true,
+    "walkV1FilesChanged": false
+  },
+  "approvalBoundary": {
+    "walkV3Approved": false,
+    "walkStopApproved": false,
+    "finalLaneEntryAllowed": false,
+    "productionPromotionAllowed": false
+  },
+  "nextGate": "Frank visually reviews whether both arms now swing naturally in opposition before any walk-to-stop frames are authored.",
+  "rollback": "Delete only art/drafts/keeper-prime-walk-2026-10-13-v3 and public/keeper-review/keeper-prime-walk-v3; Walk V1/V2, approved authorities, production sprites, manifests and prior drafts remain unchanged.",
+  "userFeedback": "the arm swing isn't quite right, his left arm remains far more static than the right",
+  "priorCandidates": {
+    "walkV1": {
+      "register": "art/drafts/keeper-prime-walk-2026-10-13-v1/batch-register.json",
+      "sha256": "ee0a6ea1dcdb4776068d1e9fe03e51583c0182efc02daaaf5a0ec129536aab12",
+      "artworkChanged": false
+    },
+    "walkV2RoutingWrapper": {
+      "register": "art/drafts/keeper-prime-walk-2026-10-13-v2/batch-register.json",
+      "sha256": "042a019bb4a627880b3ca53ebdff6cea8701ef59d57900489cddf8e7a0438a02",
+      "artworkChanged": false
+    }
+  },
+  "previousWalkV1FrameComparison": [
+    {
+      "frame": 1,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v1/drafts/frames/keeper_prime_walk-right_f1.png",
+      "sourceSha256": "3499a062802a629513ce32e09f9b8cb6555b48bcd894c588f3348abcac4fb267",
+      "public": "public/keeper-review/keeper-prime-walk-v3/assets/previous-v1-frame1-3499a062802a6295.png",
+      "publicSha256": "3499a062802a629513ce32e09f9b8cb6555b48bcd894c588f3348abcac4fb267",
+      "byteIdentical": true
+    },
+    {
+      "frame": 2,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v1/drafts/frames/keeper_prime_walk-right_f2.png",
+      "sourceSha256": "7e2c61656c6959e6855521244f5cc0c1b0e92cb93e9c28658d749e47f4ac2747",
+      "public": "public/keeper-review/keeper-prime-walk-v3/assets/previous-v1-frame2-7e2c61656c6959e6.png",
+      "publicSha256": "7e2c61656c6959e6855521244f5cc0c1b0e92cb93e9c28658d749e47f4ac2747",
+      "byteIdentical": true
+    },
+    {
+      "frame": 3,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v1/drafts/frames/keeper_prime_walk-right_f3.png",
+      "sourceSha256": "295f3da8ca76ab76a7783773413b018f07eef0eea616eec834acd1211831c9ee",
+      "public": "public/keeper-review/keeper-prime-walk-v3/assets/previous-v1-frame3-295f3da8ca76ab76.png",
+      "publicSha256": "295f3da8ca76ab76a7783773413b018f07eef0eea616eec834acd1211831c9ee",
+      "byteIdentical": true
+    },
+    {
+      "frame": 4,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v1/drafts/frames/keeper_prime_walk-right_f4.png",
+      "sourceSha256": "e493baef1e4628376178b513ff09e70ab73951f95b1e011e0a0b73b62f508902",
+      "public": "public/keeper-review/keeper-prime-walk-v3/assets/previous-v1-frame4-e493baef1e462837.png",
+      "publicSha256": "e493baef1e4628376178b513ff09e70ab73951f95b1e011e0a0b73b62f508902",
+      "byteIdentical": true
+    },
+    {
+      "frame": 5,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v1/drafts/frames/keeper_prime_walk-right_f5.png",
+      "sourceSha256": "9b3e58f2dbe808a99a1254a7646e69ef569221429a881b0880be9c7dc1306367",
+      "public": "public/keeper-review/keeper-prime-walk-v3/assets/previous-v1-frame5-9b3e58f2dbe808a9.png",
+      "publicSha256": "9b3e58f2dbe808a99a1254a7646e69ef569221429a881b0880be9c7dc1306367",
+      "byteIdentical": true
+    },
+    {
+      "frame": 6,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v1/drafts/frames/keeper_prime_walk-right_f6.png",
+      "sourceSha256": "b9f307a4313324f99028f8bf78880cfaae742975ebbccb7013fc9246467f73a4",
+      "public": "public/keeper-review/keeper-prime-walk-v3/assets/previous-v1-frame6-b9f307a4313324f9.png",
+      "publicSha256": "b9f307a4313324f99028f8bf78880cfaae742975ebbccb7013fc9246467f73a4",
+      "byteIdentical": true
+    },
+    {
+      "frame": 7,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v1/drafts/frames/keeper_prime_walk-right_f7.png",
+      "sourceSha256": "66ed639cf5e56882a1fddcdac46670f89a1c5da9c26d073b971fbbf4a13dd02e",
+      "public": "public/keeper-review/keeper-prime-walk-v3/assets/previous-v1-frame7-66ed639cf5e56882.png",
+      "publicSha256": "66ed639cf5e56882a1fddcdac46670f89a1c5da9c26d073b971fbbf4a13dd02e",
+      "byteIdentical": true
+    },
+    {
+      "frame": 8,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v1/drafts/frames/keeper_prime_walk-right_f8.png",
+      "sourceSha256": "0118fb1d5a8684ad6a22b400c266f354e526ac99c4a3f22f3a90681c1a591b3e",
+      "public": "public/keeper-review/keeper-prime-walk-v3/assets/previous-v1-frame8-0118fb1d5a8684ad.png",
+      "publicSha256": "0118fb1d5a8684ad6a22b400c266f354e526ac99c4a3f22f3a90681c1a591b3e",
+      "byteIdentical": true
+    }
+  ],
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-walk-v3/index.html",
+    "sha256": "3b262b291ce3de8ab0f6988bc2d9cbd22e6fab7fa363b6310cee20cc6bcf92ad",
+    "assetPrefix": "/keeper-review/keeper-prime-walk-v3/assets/",
+    "relativeAssetUrls": false
+  }
+}

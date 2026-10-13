@@ -1200,21 +1200,23 @@ rig-derived model must keep a super-smooth high-resolution
 master; rough edges or jagged internal linework fail even when all geometry
 datums pass.
 
-The next one-at-a-time core candidate is the artwork in
-`art/drafts/keeper-prime-walk-2026-10-13-v1/`, now reviewed through the
-technical V2 wrapper at `/keeper-review/keeper-prime-walk-v2/`. The V2 wrapper
-copies all 13 V1 review images byte-for-byte and changes only their public URLs
-from relative `assets/...` paths to absolute V2 paths. This prevents Vercel's
-trailing-slash canonicalization from resolving the images incorrectly beneath
-`/keeper-review/assets/`; V1 remains immutable provenance. It is the first finished-art right-facing
-walk proposal derived from the approved Side-right artwork and approved Rig
-Motion V3. One coherent 1536 × 1024 source supplies eight isolated poses; all
-eight are registered with one shared scale, fixed body axis and common floor.
+The next one-at-a-time core candidate is
+`art/drafts/keeper-prime-walk-2026-10-13-v3/`, reviewed at
+`/keeper-review/keeper-prime-walk-v3/`. V1 remains immutable provenance and V2
+remains its byte-identical technical routing wrapper. Frank found V1's left/far
+arm substantially more static than the right. V3 uses the approved Rig Motion
+V3 as an explicit arm guide: cyan registers the near shoulder–elbow–wrist–hand
+chain and magenta registers the far chain. A fresh 1536 × 1024 source supplies
+eight isolated poses; all eight are registered with one shared scale, fixed
+body axis and common floor. The V3 page keeps the absolute asset URLs established
+by V2, preventing Vercel's trailing-slash canonicalization from resolving
+frames under `/keeper-review/assets/`.
 The review page synchronizes large and exact 128 × 160 game-scale views, has
 previous/next stepping, and translates the same strip at 168 high-resolution
 pixels per second for five seconds from fully hidden to fully hidden. Standard
 cap, jumper, trouser and boot palette samples are checked per frame. The loop is
-awaiting Frank's visual approval; walk→stop, stop→walk, the deterministic left
+awaiting Frank's visual approval, specifically of the opposing arm motion;
+walk→stop, stop→walk, the deterministic left
 mirror, workbench Final and production promotion remain deliberately untouched.
 
 ## Review-comments workflow for a later feedback round
