@@ -6,7 +6,7 @@
   "separateFrom": "/keeper-review/",
   "principles": {
     "final": "Currently empty. An animation enters Final only after explicit visual approval of its complete transition route.",
-    "draft": "Currently empty while KP Rig V1 is built from the approved smooth Prime front and V5 rear endpoint, then used to produce a side endpoint that passes the V3 vertical-landmark gate. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
+    "draft": "Currently empty while KP Rig V1 is reviewed, before it is used to produce a smooth side endpoint that passes the V3 vertical-landmark gate. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
     "transitions": "Every action must carry an inspectable walk \u2192 stop \u2192 optional facing turn \u2192 action ingress and a compatible action \u2192 stop \u2192 walk egress. Root motion continues through stop/start; the engine varies only walking distance from world placement."
   },
   "lanes": {
@@ -466,7 +466,7 @@
     }
   ],
   "storage": {
-    "drafts": "empty pending KP Rig V1 and a smooth side endpoint with zero delta at every V3 vertical landmark; the V5 rear endpoint is approved for rig authoring and prior transitions remain provenance only",
+    "drafts": "empty pending approval of KP Rig V1 and a smooth side endpoint with zero delta at every V3 vertical landmark; the V5 rear endpoint is approved for rig authoring and prior transitions remain provenance only",
     "final": "empty by explicit user decision; browser tools never mutate Final records"
   },
   "featureContract": {
@@ -528,6 +528,8 @@
     "primeMasterRegisterSha256": "ff8e1d06bf26d28a4791ea44a239a443c7f102e87c08a0be6e971e24716278e2",
     "primeOrthographicRegister": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/batch-register.json",
     "primeOrthographicRegisterSha256": "82d0ce5b8f070d89514a81b3c39dcfe2a41b5421c0d5e46d088688350edde61a",
+    "primeRigRegister": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/batch-register.json",
+    "primeRigRegisterSha256": "78ba5378f680413b15a73784f9b4b7bb8fa3d177933876b62c75f847e8f2720d",
     "runtimeManifest": "public/sprites/manifest.json",
     "runtimeManifestSha256": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
     "productionSpritesChanged": false,

@@ -1110,17 +1110,18 @@ alternative remains historical provenance. Both workbench lanes remain empty,
 and no production sprite or animation may change until a smooth zero-delta side
 endpoint is explicitly approved.
 
-Frank has authorized a **Keeper Prime Construction Rig (KP Rig V1)** before
-animation redrafting. It will register a posable 2D bone/joint skeleton, fixed
-segment lengths, front/side/back body-volume envelopes, head/ear/shoulder/chest/
-waist/hip measurements, beard/hair and clothing datums, prop contacts, pose
-limits, occlusion order and floor anchoring. The rig must distinguish invariant
-anatomy from view-dependent projected widths and must not mechanically stretch
-finished beard, hair or clothing art. Rig work now resumes from the approved
-smooth front and V5 back. Its first derived art task is the zero-delta side,
-without requiring a new chat or relying on chat memory. Every rig-derived model
-must keep a super-smooth high-resolution master; rough edges or jagged internal
-linework fail even when all geometry datums pass.
+Frank authorized a **Keeper Prime Construction Rig (KP Rig V1)** before
+animation redrafting. The versioned V1 review pack now registers a posable 2D
+bone/joint skeleton, fixed segment lengths, front/side/back body-volume
+envelopes, head/ear/shoulder/chest/waist/hip measurements, beard/hair and
+clothing datums, prop contacts, pose limits, occlusion order and floor anchoring.
+Its public pose lab rotates limbs without changing their registered lengths.
+The rig distinguishes invariant anatomy from view-dependent projected widths
+and never mechanically stretches finished beard, hair or clothing art. It is
+awaiting visual approval at `/keeper-review/keeper-prime-rig-v1/`; only after
+approval does its first derived art task—the zero-delta side—begin. Every
+rig-derived model must keep a super-smooth high-resolution master; rough edges
+or jagged internal linework fail even when all geometry datums pass.
 
 ## Review-comments workflow for a later feedback round
 

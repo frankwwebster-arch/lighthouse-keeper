@@ -21,8 +21,11 @@ provenance: although its rear alpha silhouette exactly matches the front, its
 boots face the player. Frank approved V5's exact first smooth rear-boot render;
 its proxy changes only lower rows 273–315 while preserving the complete alpha
 match. V3 still proves the selected side passes only five of 15 internal
-vertical datums. No animation redrafting begins until KP Rig V1 produces a
-smooth side endpoint with zero delta at every hard datum.
+vertical datums. KP Rig V1 is now in review at
+`/keeper-review/keeper-prime-rig-v1/`; it contains the fixed posable construction
+contract but no new side artwork. No animation redrafting begins until the rig
+is approved and produces a smooth side endpoint with zero delta at every hard
+datum.
 
 ## Prime Keeper authority
 
@@ -154,6 +157,7 @@ and does not place an item in either active lane.
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v3.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v4.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v5.py
+/Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_rig_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_animation_workbench.py
 npm run verify:keeper-prime-master-v1
 npm run verify:keeper-prime-orthographic-v1
@@ -161,6 +165,7 @@ npm run verify:keeper-prime-orthographic-v2
 npm run verify:keeper-prime-orthographic-v3
 npm run verify:keeper-prime-orthographic-v4
 npm run verify:keeper-prime-orthographic-v5
+npm run verify:keeper-prime-rig-v1
 npm run verify:keeper-animation-workbench
 npm test
 npm run typecheck
@@ -175,10 +180,10 @@ confirm raw/runtime art and the runtime manifest remain unchanged.
 
 ## Next approval gate
 
-Build KP Rig V1 from the approved smooth front and V5 rear, then replace the
-selected side with a smooth rig-derived successor that preserves its visual
-design and reaches zero vertical delta at all 15 registered points. Once the
-side endpoint is approved, restart at the core set in small reviewable batches:
+Review KP Rig V1, then replace the selected side with a smooth rig-derived
+successor that preserves its visual design and reaches zero vertical delta at
+all 15 registered points. Once the side endpoint is approved, restart at the
+core set in small reviewable batches:
 walk and exact stop, stop-to-walk, side-to-front/back turns,
 then sit/stand. Every frame in a batch must be authored from the same smooth
 high-resolution family. Only after the core joins are accepted should action
@@ -188,8 +193,9 @@ Before those transition batches, build the authorized **KP Rig V1**: a posable
 2D construction skeleton with fixed bone lengths, view-specific projected
 measurements, body-volume envelopes, facial/beard/clothing datums, prop contacts,
 occlusion rules and floor anchors. It is an authoring underlay and measurement
-contract, not a mechanical deformation of final raster art. Rig construction is
-now unblocked; the side correction is its first derived-art validation.
+contract, not a mechanical deformation of final raster art. Rig V1 is now built
+as a reversible review pack; the side correction is its first derived-art
+validation after explicit rig approval.
 
 ## Known limitations
 

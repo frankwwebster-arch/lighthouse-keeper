@@ -1,0 +1,256 @@
+{
+  "batchId": "keeper-prime-construction-rig-2026-10-13-v1",
+  "status": "draft-construction-contract-awaiting-visual-approval",
+  "purpose": "Create the fixed, posable Keeper Prime measurement foundation before any side correction or animation redraw.",
+  "authorities": {
+    "front": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "register": "art/drafts/keeper-prime-master-2026-10-12-v1/master-pack-register.json",
+      "registerSha256": "ff8e1d06bf26d28a4791ea44a239a443c7f102e87c08a0be6e971e24716278e2"
+    },
+    "back": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+      "sha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86",
+      "smoothMaster": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/sources/keeper-prime-back-user-approved-rear-boots.png",
+      "smoothMasterSha256": "2371101e33fcd2b9b27cbfdbcecdc1587c41783d5773605117a4678b5ac3ecc6",
+      "register": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/batch-register.json",
+      "registerSha256": "82d0ce5b8f070d89514a81b3c39dcfe2a41b5421c0d5e46d088688350edde61a"
+    },
+    "historicalSideDesign": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v2/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+      "sha256": "d2171f148b6b14666a23198112aebf20e50048d583fda77ff0fc91f9d04d4f9a",
+      "register": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v3/batch-register.json",
+      "registerSha256": "87cbff2fa3e62e558c76b5dfb3ed7bbb58cf0fb8246044ac9e07f117c5c9c28e",
+      "landmarkPasses": 5,
+      "landmarkTotal": 15
+    }
+  },
+  "rig": {
+    "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/rig/keeper-prime-rig-v1.json",
+    "sha256": "5786df6eb654471f81dda161fc909a5768abb2d96aade24fb84448beb7cdf765"
+  },
+  "verticalDatums": [
+    {
+      "id": "capTop",
+      "label": "cap top",
+      "targetY": 18,
+      "targetLogicalY": 2.25,
+      "currentSideY": 18,
+      "currentSideDeltaY": 0,
+      "passesCurrentSide": true,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "badgeCentre",
+      "label": "golden badge centre",
+      "targetY": 48.5,
+      "targetLogicalY": 6.0625,
+      "currentSideY": 46.0,
+      "currentSideDeltaY": -2.5,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "earCentre",
+      "label": "visible ear centre",
+      "targetY": 88.5,
+      "targetLogicalY": 11.0625,
+      "currentSideY": 89.5,
+      "currentSideDeltaY": 1.0,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "shoulderApex",
+      "label": "shoulder apex",
+      "targetY": 121,
+      "targetLogicalY": 15.125,
+      "currentSideY": 108,
+      "currentSideDeltaY": -13,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "beardBase",
+      "label": "beard base",
+      "targetY": 149,
+      "targetLogicalY": 18.625,
+      "currentSideY": 142,
+      "currentSideDeltaY": -7,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "armStripeTop",
+      "label": "arm stripe top",
+      "targetY": 150,
+      "targetLogicalY": 18.75,
+      "currentSideY": 150,
+      "currentSideDeltaY": 0,
+      "passesCurrentSide": true,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "armStripeCentre",
+      "label": "arm stripe centre",
+      "targetY": 159,
+      "targetLogicalY": 19.875,
+      "currentSideY": 159,
+      "currentSideDeltaY": 0,
+      "passesCurrentSide": true,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "armStripeBase",
+      "label": "arm stripe base",
+      "targetY": 168,
+      "targetLogicalY": 21.0,
+      "currentSideY": 168,
+      "currentSideDeltaY": 0,
+      "passesCurrentSide": true,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "midriffStripeTop",
+      "label": "midriff stripe top",
+      "targetY": 157,
+      "targetLogicalY": 19.625,
+      "currentSideY": 155,
+      "currentSideDeltaY": -2,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "midriffStripeCentre",
+      "label": "midriff stripe centre",
+      "targetY": 165.5,
+      "targetLogicalY": 20.6875,
+      "currentSideY": 162.5,
+      "currentSideDeltaY": -3.0,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "midriffStripeBase",
+      "label": "midriff stripe base",
+      "targetY": 174,
+      "targetLogicalY": 21.75,
+      "currentSideY": 170,
+      "currentSideDeltaY": -4,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "palmCentre",
+      "label": "resting palm centre",
+      "targetY": 215,
+      "targetLogicalY": 26.875,
+      "currentSideY": 218,
+      "currentSideDeltaY": 3,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "palmBase",
+      "label": "resting palm base",
+      "targetY": 227,
+      "targetLogicalY": 28.375,
+      "currentSideY": 231,
+      "currentSideDeltaY": 4,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "kneeBandCentre",
+      "label": "knee band centre",
+      "targetY": 266.5,
+      "targetLogicalY": 33.3125,
+      "currentSideY": 264.5,
+      "currentSideDeltaY": -2.0,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "floor",
+      "label": "floor bound",
+      "targetY": 316,
+      "targetLogicalY": 39.5,
+      "currentSideY": 316,
+      "currentSideDeltaY": 0,
+      "passesCurrentSide": true,
+      "requiredDeltaY": 0
+    }
+  ],
+  "measurements": {
+    "sourcePixels": {
+      "overallOpaqueHeight": 298,
+      "headEnvelopeWidth": 111,
+      "earToEarOuter": 108,
+      "shoulderJointSpan": 92,
+      "shoulderVisibleEnvelope": 116,
+      "waistCoreWidth": 92,
+      "hipJointSpan": 48
+    },
+    "logicalUnits": {
+      "overallOpaqueHeight": 37.25,
+      "headEnvelopeWidth": 13.875,
+      "earToEarOuter": 13.5,
+      "shoulderJointSpan": 11.5,
+      "shoulderVisibleEnvelope": 14.5,
+      "waistCoreWidth": 11.5,
+      "hipJointSpan": 6.0
+    }
+  },
+  "evidence": {
+    "frontRigOverlay": {
+      "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/overlays/front-rig-only.png",
+      "sha256": "61435b9a5e293e7756ef0fdc76ab00f51625cd88544f6358157e3b7ed56ad58e"
+    },
+    "sideTargetOverlay": {
+      "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/overlays/side-target-rig-only.png",
+      "sha256": "842ad135bf45ae4f1d4cde3635fbe9ddfb93d5df7592d58f683663e09b26db90"
+    },
+    "backRigOverlay": {
+      "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/overlays/back-rig-only.png",
+      "sha256": "61435b9a5e293e7756ef0fdc76ab00f51625cd88544f6358157e3b7ed56ad58e"
+    },
+    "frontComposite": {
+      "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/evidence/front-rig-overlay.png",
+      "sha256": "c94061da269fad955efe5c6fdb9996f0ad198dc6121b834560b0a5652a927b4d"
+    },
+    "sideComposite": {
+      "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/evidence/historical-side-target-rig-overlay.png",
+      "sha256": "83471f6a7d53be7e8fa7bd0ae07e2a2546ffe20e737b30f5ba05fa2adcbbc7c0"
+    },
+    "backComposite": {
+      "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/evidence/back-rig-overlay.png",
+      "sha256": "fac926f5479fcb9ab76ec4e3d477f1a2fe264a7f8548c5ea8ab633527cd9229f"
+    },
+    "orthographicBoard": {
+      "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/evidence/orthographic-rig-board.png",
+      "sha256": "6065ed2a8a1f81430348fc5db3ed4002433ed3f889dbe6f60053ca029af9a2bc"
+    },
+    "measurementSheet": {
+      "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/evidence/keeper-prime-measurement-sheet.png",
+      "sha256": "cf12b190ecbc3d1c7bb43796609e30497c7e5fd0c1582fb6d960e36326c6465c"
+    }
+  },
+  "validation": {
+    "frontBackJointIdentity": true,
+    "mirroredArmLengthsExact": true,
+    "mirroredLegLengthsExact": true,
+    "sideNearFarLongSegmentLengthsExact": true,
+    "allTargetDatumsUseApprovedFrontY": true,
+    "targetLandmarkPassCount": 15,
+    "targetLandmarkTotal": 15,
+    "historicalSidePassCount": 5,
+    "historicalSideBlocked": true,
+    "smoothMasterRequired": true,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "animationDraftsChanged": false
+  },
+  "nextGate": "Approve KP Rig V1, then author one separate super-smooth side-right endpoint with 15/15 exact y-datums.",
+  "rollback": "Delete only art/drafts/keeper-prime-construction-rig-2026-10-13-v1 and public/keeper-review/keeper-prime-rig-v1; all authorities, production sprites and manifests remain unchanged."
+}

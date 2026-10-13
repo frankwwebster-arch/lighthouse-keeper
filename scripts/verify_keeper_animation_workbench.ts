@@ -15,12 +15,13 @@ const CSS = path.join(ROOT, 'src/animation-workbench/workbench.module.css')
 const CORE_V2_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-core-transitions-2026-10-12-v2/batch-register.json')
 const PRIME_MASTER_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-master-2026-10-12-v1/master-pack-register.json')
 const PRIME_ORTHOGRAPHIC_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/batch-register.json')
+const PRIME_RIG_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-construction-rig-2026-10-13-v1/batch-register.json')
 const EXPECTED_FINALS: string[] = []
 const EXPECTED_DRAFTS: string[] = []
 const fail = (message: string): never => { throw new Error(`keeper animation workbench: ${message}`) }
 const sha256 = (file: string) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')
 
-for (const file of [DATA, PUBLIC, PAGE, UI, MODEL, CSS, CORE_V2_REGISTER, PRIME_MASTER_REGISTER, PRIME_ORTHOGRAPHIC_REGISTER]) {
+for (const file of [DATA, PUBLIC, PAGE, UI, MODEL, CSS, CORE_V2_REGISTER, PRIME_MASTER_REGISTER, PRIME_ORTHOGRAPHIC_REGISTER, PRIME_RIG_REGISTER]) {
   if (!fs.existsSync(file)) fail(`missing ${path.relative(ROOT, file)}`)
 }
 if (!fs.readFileSync(DATA).equals(fs.readFileSync(PUBLIC))) fail('data and public catalogues differ')
@@ -156,9 +157,10 @@ const primeMaster = JSON.parse(fs.readFileSync(PRIME_MASTER_REGISTER, 'utf8')) a
 if (primeMaster.status !== 'approved-permanent-identity-authority' || primeMaster.approval?.wording !== 'Approved. Make sure this is NEVER forgotten.' || primeMaster.validation?.finalAnimations !== 0 || primeMaster.candidate?.productionPromotionAllowed !== false) fail('permanent Prime Master approval gate changed')
 if (catalogue.provenance?.primeMasterRegisterSha256 !== sha256(PRIME_MASTER_REGISTER)) fail('workbench does not pin the Prime Master register')
 if (catalogue.provenance?.primeOrthographicRegisterSha256 !== sha256(PRIME_ORTHOGRAPHIC_REGISTER)) fail('workbench does not pin the orthographic register')
+if (catalogue.provenance?.primeRigRegisterSha256 !== sha256(PRIME_RIG_REGISTER)) fail('workbench does not pin the construction rig register')
 
 const ui = fs.readFileSync(UI, 'utf8')
-for (const label of ['Final', 'Draft', 'Copy to Draft', 'Copy frame', 'Remove frame', 'Move left', 'Move right', 'Repeat section', 'Transition preview', 'Required for every action', 'begins hidden behind', 'cycles set by game placement', 'Export Draft JSON', 'Import Draft JSON', 'Final is empty', 'No animations are currently Final', 'Prime Master V1', 'exact pixel-for-pixel front silhouette', 'orthographic V5 approved rear endpoint']) {
+for (const label of ['Final', 'Draft', 'Copy to Draft', 'Copy frame', 'Remove frame', 'Move left', 'Move right', 'Repeat section', 'Transition preview', 'Required for every action', 'begins hidden behind', 'cycles set by game placement', 'Export Draft JSON', 'Import Draft JSON', 'Final is empty', 'No animations are currently Final', 'Prime Master V1', 'historical side remains blocked at 5/15', 'Keeper Prime Construction Rig V1 review']) {
   if (!ui.includes(label)) fail(`UI omits ${label}`)
 }
 for (const functionName of ['copyTimelineEntry', 'removeTimelineEntry', 'moveTimelineEntry', 'expandTimeline', 'transitionPlayback', 'transitionWarnings', 'reconcileDraftLibrary']) {

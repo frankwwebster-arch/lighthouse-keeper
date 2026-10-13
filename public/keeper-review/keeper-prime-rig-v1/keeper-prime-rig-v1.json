@@ -1,0 +1,1219 @@
+{
+  "rigId": "keeper-prime-construction-rig-2026-10-13-v1",
+  "status": "draft-construction-contract-awaiting-visual-approval",
+  "coordinateSystem": {
+    "sourceCell": [
+      256,
+      320
+    ],
+    "logicalCell": [
+      32,
+      40
+    ],
+    "density": 8,
+    "axisX": 128.0,
+    "capTopY": 18.0,
+    "opaqueFloorY": 316.0,
+    "anchor": [
+      128,
+      320.0
+    ]
+  },
+  "frontBackInvariant": {
+    "joints": {
+      "root": {
+        "source": [
+          128.0,
+          224.0
+        ],
+        "logical": [
+          16.0,
+          28.0
+        ]
+      },
+      "spineLower": {
+        "source": [
+          128.0,
+          202.0
+        ],
+        "logical": [
+          16.0,
+          25.25
+        ]
+      },
+      "spineMid": {
+        "source": [
+          128.0,
+          174.0
+        ],
+        "logical": [
+          16.0,
+          21.75
+        ]
+      },
+      "chest": {
+        "source": [
+          128.0,
+          145.0
+        ],
+        "logical": [
+          16.0,
+          18.125
+        ]
+      },
+      "neck": {
+        "source": [
+          128.0,
+          121.0
+        ],
+        "logical": [
+          16.0,
+          15.125
+        ]
+      },
+      "headCentre": {
+        "source": [
+          128.0,
+          83.5
+        ],
+        "logical": [
+          16.0,
+          10.4375
+        ]
+      },
+      "crown": {
+        "source": [
+          128.0,
+          18.0
+        ],
+        "logical": [
+          16.0,
+          2.25
+        ]
+      },
+      "shoulderLeft": {
+        "source": [
+          82.0,
+          124.0
+        ],
+        "logical": [
+          10.25,
+          15.5
+        ]
+      },
+      "elbowLeft": {
+        "source": [
+          63.0,
+          170.0
+        ],
+        "logical": [
+          7.875,
+          21.25
+        ]
+      },
+      "wristLeft": {
+        "source": [
+          68.0,
+          203.0
+        ],
+        "logical": [
+          8.5,
+          25.375
+        ]
+      },
+      "handLeft": {
+        "source": [
+          70.0,
+          215.0
+        ],
+        "logical": [
+          8.75,
+          26.875
+        ]
+      },
+      "shoulderRight": {
+        "source": [
+          174.0,
+          124.0
+        ],
+        "logical": [
+          21.75,
+          15.5
+        ]
+      },
+      "elbowRight": {
+        "source": [
+          193.0,
+          170.0
+        ],
+        "logical": [
+          24.125,
+          21.25
+        ]
+      },
+      "wristRight": {
+        "source": [
+          188.0,
+          203.0
+        ],
+        "logical": [
+          23.5,
+          25.375
+        ]
+      },
+      "handRight": {
+        "source": [
+          186.0,
+          215.0
+        ],
+        "logical": [
+          23.25,
+          26.875
+        ]
+      },
+      "hipLeft": {
+        "source": [
+          104.0,
+          224.0
+        ],
+        "logical": [
+          13.0,
+          28.0
+        ]
+      },
+      "kneeLeft": {
+        "source": [
+          103.0,
+          266.5
+        ],
+        "logical": [
+          12.875,
+          33.3125
+        ]
+      },
+      "ankleLeft": {
+        "source": [
+          102.0,
+          292.0
+        ],
+        "logical": [
+          12.75,
+          36.5
+        ]
+      },
+      "heelLeft": {
+        "source": [
+          84.0,
+          316.0
+        ],
+        "logical": [
+          10.5,
+          39.5
+        ]
+      },
+      "toeLeft": {
+        "source": [
+          112.0,
+          316.0
+        ],
+        "logical": [
+          14.0,
+          39.5
+        ]
+      },
+      "hipRight": {
+        "source": [
+          152.0,
+          224.0
+        ],
+        "logical": [
+          19.0,
+          28.0
+        ]
+      },
+      "kneeRight": {
+        "source": [
+          153.0,
+          266.5
+        ],
+        "logical": [
+          19.125,
+          33.3125
+        ]
+      },
+      "ankleRight": {
+        "source": [
+          154.0,
+          292.0
+        ],
+        "logical": [
+          19.25,
+          36.5
+        ]
+      },
+      "heelRight": {
+        "source": [
+          172.0,
+          316.0
+        ],
+        "logical": [
+          21.5,
+          39.5
+        ]
+      },
+      "toeRight": {
+        "source": [
+          144.0,
+          316.0
+        ],
+        "logical": [
+          18.0,
+          39.5
+        ]
+      }
+    },
+    "bones": [
+      {
+        "id": "head-axis",
+        "from": "crown",
+        "to": "headCentre",
+        "lengthSourcePixels": 65.5,
+        "lengthLogical": 8.1875,
+        "fixedLength": true
+      },
+      {
+        "id": "head-neck",
+        "from": "headCentre",
+        "to": "neck",
+        "lengthSourcePixels": 37.5,
+        "lengthLogical": 4.6875,
+        "fixedLength": true
+      },
+      {
+        "id": "upper-spine",
+        "from": "neck",
+        "to": "chest",
+        "lengthSourcePixels": 24.0,
+        "lengthLogical": 3.0,
+        "fixedLength": true
+      },
+      {
+        "id": "chest-spine",
+        "from": "chest",
+        "to": "spineMid",
+        "lengthSourcePixels": 29.0,
+        "lengthLogical": 3.625,
+        "fixedLength": true
+      },
+      {
+        "id": "mid-spine",
+        "from": "spineMid",
+        "to": "spineLower",
+        "lengthSourcePixels": 28.0,
+        "lengthLogical": 3.5,
+        "fixedLength": true
+      },
+      {
+        "id": "lower-spine",
+        "from": "spineLower",
+        "to": "root",
+        "lengthSourcePixels": 22.0,
+        "lengthLogical": 2.75,
+        "fixedLength": true
+      },
+      {
+        "id": "left-clavicle",
+        "from": "neck",
+        "to": "shoulderLeft",
+        "lengthSourcePixels": 46.0977,
+        "lengthLogical": 5.7622,
+        "fixedLength": true
+      },
+      {
+        "id": "left-upper-arm",
+        "from": "shoulderLeft",
+        "to": "elbowLeft",
+        "lengthSourcePixels": 49.7695,
+        "lengthLogical": 6.2212,
+        "fixedLength": true
+      },
+      {
+        "id": "left-forearm",
+        "from": "elbowLeft",
+        "to": "wristLeft",
+        "lengthSourcePixels": 33.3766,
+        "lengthLogical": 4.1721,
+        "fixedLength": true
+      },
+      {
+        "id": "left-hand",
+        "from": "wristLeft",
+        "to": "handLeft",
+        "lengthSourcePixels": 12.1655,
+        "lengthLogical": 1.5207,
+        "fixedLength": true
+      },
+      {
+        "id": "right-clavicle",
+        "from": "neck",
+        "to": "shoulderRight",
+        "lengthSourcePixels": 46.0977,
+        "lengthLogical": 5.7622,
+        "fixedLength": true
+      },
+      {
+        "id": "right-upper-arm",
+        "from": "shoulderRight",
+        "to": "elbowRight",
+        "lengthSourcePixels": 49.7695,
+        "lengthLogical": 6.2212,
+        "fixedLength": true
+      },
+      {
+        "id": "right-forearm",
+        "from": "elbowRight",
+        "to": "wristRight",
+        "lengthSourcePixels": 33.3766,
+        "lengthLogical": 4.1721,
+        "fixedLength": true
+      },
+      {
+        "id": "right-hand",
+        "from": "wristRight",
+        "to": "handRight",
+        "lengthSourcePixels": 12.1655,
+        "lengthLogical": 1.5207,
+        "fixedLength": true
+      },
+      {
+        "id": "left-pelvis",
+        "from": "root",
+        "to": "hipLeft",
+        "lengthSourcePixels": 24.0,
+        "lengthLogical": 3.0,
+        "fixedLength": true
+      },
+      {
+        "id": "left-thigh",
+        "from": "hipLeft",
+        "to": "kneeLeft",
+        "lengthSourcePixels": 42.5118,
+        "lengthLogical": 5.314,
+        "fixedLength": true
+      },
+      {
+        "id": "left-shin",
+        "from": "kneeLeft",
+        "to": "ankleLeft",
+        "lengthSourcePixels": 25.5196,
+        "lengthLogical": 3.19,
+        "fixedLength": true
+      },
+      {
+        "id": "left-rear-foot",
+        "from": "ankleLeft",
+        "to": "heelLeft",
+        "lengthSourcePixels": 30.0,
+        "lengthLogical": 3.75,
+        "fixedLength": true
+      },
+      {
+        "id": "left-front-foot",
+        "from": "ankleLeft",
+        "to": "toeLeft",
+        "lengthSourcePixels": 26.0,
+        "lengthLogical": 3.25,
+        "fixedLength": true
+      },
+      {
+        "id": "right-pelvis",
+        "from": "root",
+        "to": "hipRight",
+        "lengthSourcePixels": 24.0,
+        "lengthLogical": 3.0,
+        "fixedLength": true
+      },
+      {
+        "id": "right-thigh",
+        "from": "hipRight",
+        "to": "kneeRight",
+        "lengthSourcePixels": 42.5118,
+        "lengthLogical": 5.314,
+        "fixedLength": true
+      },
+      {
+        "id": "right-shin",
+        "from": "kneeRight",
+        "to": "ankleRight",
+        "lengthSourcePixels": 25.5196,
+        "lengthLogical": 3.19,
+        "fixedLength": true
+      },
+      {
+        "id": "right-rear-foot",
+        "from": "ankleRight",
+        "to": "heelRight",
+        "lengthSourcePixels": 30.0,
+        "lengthLogical": 3.75,
+        "fixedLength": true
+      },
+      {
+        "id": "right-front-foot",
+        "from": "ankleRight",
+        "to": "toeRight",
+        "lengthSourcePixels": 26.0,
+        "lengthLogical": 3.25,
+        "fixedLength": true
+      }
+    ]
+  },
+  "sideRightProjection": {
+    "joints": {
+      "root": {
+        "source": [
+          128.0,
+          224.0
+        ],
+        "logical": [
+          16.0,
+          28.0
+        ]
+      },
+      "spineLower": {
+        "source": [
+          128.0,
+          202.0
+        ],
+        "logical": [
+          16.0,
+          25.25
+        ]
+      },
+      "spineMid": {
+        "source": [
+          128.0,
+          174.0
+        ],
+        "logical": [
+          16.0,
+          21.75
+        ]
+      },
+      "chest": {
+        "source": [
+          128.0,
+          145.0
+        ],
+        "logical": [
+          16.0,
+          18.125
+        ]
+      },
+      "neck": {
+        "source": [
+          128.0,
+          121.0
+        ],
+        "logical": [
+          16.0,
+          15.125
+        ]
+      },
+      "headCentre": {
+        "source": [
+          132.0,
+          83.5
+        ],
+        "logical": [
+          16.5,
+          10.4375
+        ]
+      },
+      "crown": {
+        "source": [
+          128.0,
+          18.0
+        ],
+        "logical": [
+          16.0,
+          2.25
+        ]
+      },
+      "shoulderNear": {
+        "source": [
+          119.0,
+          124.0
+        ],
+        "logical": [
+          14.875,
+          15.5
+        ]
+      },
+      "elbowNear": {
+        "source": [
+          100.0,
+          170.0
+        ],
+        "logical": [
+          12.5,
+          21.25
+        ]
+      },
+      "wristNear": {
+        "source": [
+          105.0,
+          203.0
+        ],
+        "logical": [
+          13.125,
+          25.375
+        ]
+      },
+      "handNear": {
+        "source": [
+          107.0,
+          215.0
+        ],
+        "logical": [
+          13.375,
+          26.875
+        ]
+      },
+      "shoulderFar": {
+        "source": [
+          133.0,
+          124.0
+        ],
+        "logical": [
+          16.625,
+          15.5
+        ]
+      },
+      "elbowFar": {
+        "source": [
+          152.0,
+          170.0
+        ],
+        "logical": [
+          19.0,
+          21.25
+        ]
+      },
+      "wristFar": {
+        "source": [
+          147.0,
+          203.0
+        ],
+        "logical": [
+          18.375,
+          25.375
+        ]
+      },
+      "handFar": {
+        "source": [
+          145.0,
+          215.0
+        ],
+        "logical": [
+          18.125,
+          26.875
+        ]
+      },
+      "hipNear": {
+        "source": [
+          120.0,
+          224.0
+        ],
+        "logical": [
+          15.0,
+          28.0
+        ]
+      },
+      "kneeNear": {
+        "source": [
+          119.0,
+          266.5
+        ],
+        "logical": [
+          14.875,
+          33.3125
+        ]
+      },
+      "ankleNear": {
+        "source": [
+          118.0,
+          292.0
+        ],
+        "logical": [
+          14.75,
+          36.5
+        ]
+      },
+      "heelNear": {
+        "source": [
+          104.0,
+          316.0
+        ],
+        "logical": [
+          13.0,
+          39.5
+        ]
+      },
+      "toeNear": {
+        "source": [
+          150.0,
+          316.0
+        ],
+        "logical": [
+          18.75,
+          39.5
+        ]
+      },
+      "hipFar": {
+        "source": [
+          134.0,
+          224.0
+        ],
+        "logical": [
+          16.75,
+          28.0
+        ]
+      },
+      "kneeFar": {
+        "source": [
+          135.0,
+          266.5
+        ],
+        "logical": [
+          16.875,
+          33.3125
+        ]
+      },
+      "ankleFar": {
+        "source": [
+          136.0,
+          292.0
+        ],
+        "logical": [
+          17.0,
+          36.5
+        ]
+      },
+      "heelFar": {
+        "source": [
+          122.0,
+          316.0
+        ],
+        "logical": [
+          15.25,
+          39.5
+        ]
+      },
+      "toeFar": {
+        "source": [
+          162.0,
+          316.0
+        ],
+        "logical": [
+          20.25,
+          39.5
+        ]
+      }
+    },
+    "bones": [
+      {
+        "id": "head-axis",
+        "from": "crown",
+        "to": "headCentre",
+        "lengthSourcePixels": 65.622,
+        "lengthLogical": 8.2027,
+        "fixedLength": true
+      },
+      {
+        "id": "head-neck",
+        "from": "headCentre",
+        "to": "neck",
+        "lengthSourcePixels": 37.7127,
+        "lengthLogical": 4.7141,
+        "fixedLength": true
+      },
+      {
+        "id": "upper-spine",
+        "from": "neck",
+        "to": "chest",
+        "lengthSourcePixels": 24.0,
+        "lengthLogical": 3.0,
+        "fixedLength": true
+      },
+      {
+        "id": "chest-spine",
+        "from": "chest",
+        "to": "spineMid",
+        "lengthSourcePixels": 29.0,
+        "lengthLogical": 3.625,
+        "fixedLength": true
+      },
+      {
+        "id": "mid-spine",
+        "from": "spineMid",
+        "to": "spineLower",
+        "lengthSourcePixels": 28.0,
+        "lengthLogical": 3.5,
+        "fixedLength": true
+      },
+      {
+        "id": "lower-spine",
+        "from": "spineLower",
+        "to": "root",
+        "lengthSourcePixels": 22.0,
+        "lengthLogical": 2.75,
+        "fixedLength": true
+      },
+      {
+        "id": "near-clavicle",
+        "from": "neck",
+        "to": "shoulderNear",
+        "lengthSourcePixels": 9.4868,
+        "lengthLogical": 1.1859,
+        "fixedLength": true
+      },
+      {
+        "id": "near-upper-arm",
+        "from": "shoulderNear",
+        "to": "elbowNear",
+        "lengthSourcePixels": 49.7695,
+        "lengthLogical": 6.2212,
+        "fixedLength": true
+      },
+      {
+        "id": "near-forearm",
+        "from": "elbowNear",
+        "to": "wristNear",
+        "lengthSourcePixels": 33.3766,
+        "lengthLogical": 4.1721,
+        "fixedLength": true
+      },
+      {
+        "id": "near-hand",
+        "from": "wristNear",
+        "to": "handNear",
+        "lengthSourcePixels": 12.1655,
+        "lengthLogical": 1.5207,
+        "fixedLength": true
+      },
+      {
+        "id": "far-clavicle",
+        "from": "neck",
+        "to": "shoulderFar",
+        "lengthSourcePixels": 5.831,
+        "lengthLogical": 0.7289,
+        "fixedLength": true
+      },
+      {
+        "id": "far-upper-arm",
+        "from": "shoulderFar",
+        "to": "elbowFar",
+        "lengthSourcePixels": 49.7695,
+        "lengthLogical": 6.2212,
+        "fixedLength": true
+      },
+      {
+        "id": "far-forearm",
+        "from": "elbowFar",
+        "to": "wristFar",
+        "lengthSourcePixels": 33.3766,
+        "lengthLogical": 4.1721,
+        "fixedLength": true
+      },
+      {
+        "id": "far-hand",
+        "from": "wristFar",
+        "to": "handFar",
+        "lengthSourcePixels": 12.1655,
+        "lengthLogical": 1.5207,
+        "fixedLength": true
+      },
+      {
+        "id": "near-pelvis",
+        "from": "root",
+        "to": "hipNear",
+        "lengthSourcePixels": 8.0,
+        "lengthLogical": 1.0,
+        "fixedLength": true
+      },
+      {
+        "id": "near-thigh",
+        "from": "hipNear",
+        "to": "kneeNear",
+        "lengthSourcePixels": 42.5118,
+        "lengthLogical": 5.314,
+        "fixedLength": true
+      },
+      {
+        "id": "near-shin",
+        "from": "kneeNear",
+        "to": "ankleNear",
+        "lengthSourcePixels": 25.5196,
+        "lengthLogical": 3.19,
+        "fixedLength": true
+      },
+      {
+        "id": "near-rear-foot",
+        "from": "ankleNear",
+        "to": "heelNear",
+        "lengthSourcePixels": 27.7849,
+        "lengthLogical": 3.4731,
+        "fixedLength": true
+      },
+      {
+        "id": "near-front-foot",
+        "from": "ankleNear",
+        "to": "toeNear",
+        "lengthSourcePixels": 40.0,
+        "lengthLogical": 5.0,
+        "fixedLength": true
+      },
+      {
+        "id": "far-pelvis",
+        "from": "root",
+        "to": "hipFar",
+        "lengthSourcePixels": 6.0,
+        "lengthLogical": 0.75,
+        "fixedLength": true
+      },
+      {
+        "id": "far-thigh",
+        "from": "hipFar",
+        "to": "kneeFar",
+        "lengthSourcePixels": 42.5118,
+        "lengthLogical": 5.314,
+        "fixedLength": true
+      },
+      {
+        "id": "far-shin",
+        "from": "kneeFar",
+        "to": "ankleFar",
+        "lengthSourcePixels": 25.5196,
+        "lengthLogical": 3.19,
+        "fixedLength": true
+      },
+      {
+        "id": "far-rear-foot",
+        "from": "ankleFar",
+        "to": "heelFar",
+        "lengthSourcePixels": 27.7849,
+        "lengthLogical": 3.4731,
+        "fixedLength": true
+      },
+      {
+        "id": "far-front-foot",
+        "from": "ankleFar",
+        "to": "toeFar",
+        "lengthSourcePixels": 35.3836,
+        "lengthLogical": 4.423,
+        "fixedLength": true
+      }
+    ],
+    "rule": "vertical anatomy and segment lengths remain invariant; x positions and visible depth are projected"
+  },
+  "invariantSegmentLengths": {
+    "upperArm": 49.7695,
+    "forearm": 33.3766,
+    "wristToPalmCentre": 12.1655,
+    "thigh": 42.5118,
+    "shin": 25.5196
+  },
+  "bodyVolumeEnvelopes": {
+    "head": {
+      "frontBoundsExclusive": [
+        73,
+        18,
+        184,
+        149
+      ],
+      "frontWidth": 111,
+      "earToEarAtY88": [
+        74,
+        182
+      ],
+      "earToEarWidth": 108
+    },
+    "shoulders": {
+      "datumY": 121,
+      "jointSpan": [
+        82,
+        174
+      ],
+      "jointWidth": 92,
+      "visibleEnvelopeAtY135": [
+        70,
+        186
+      ],
+      "visibleWidth": 116
+    },
+    "torso": {
+      "chestBandBoundsExclusive": [
+        48,
+        145,
+        208,
+        178
+      ],
+      "coreWidthAtY205": [
+        82,
+        174
+      ],
+      "coreWidth": 92,
+      "waistY": 205
+    },
+    "pelvis": {
+      "hipJointSpan": [
+        104,
+        152
+      ],
+      "jointWidth": 48,
+      "rootY": 224
+    },
+    "beard": {
+      "frontBoundsExclusive": [
+        86,
+        82,
+        171,
+        149
+      ],
+      "baseY": 149,
+      "redrawAroundRig": true
+    }
+  },
+  "verticalDatums": [
+    {
+      "id": "capTop",
+      "label": "cap top",
+      "targetY": 18,
+      "targetLogicalY": 2.25,
+      "currentSideY": 18,
+      "currentSideDeltaY": 0,
+      "passesCurrentSide": true,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "badgeCentre",
+      "label": "golden badge centre",
+      "targetY": 48.5,
+      "targetLogicalY": 6.0625,
+      "currentSideY": 46.0,
+      "currentSideDeltaY": -2.5,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "earCentre",
+      "label": "visible ear centre",
+      "targetY": 88.5,
+      "targetLogicalY": 11.0625,
+      "currentSideY": 89.5,
+      "currentSideDeltaY": 1.0,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "shoulderApex",
+      "label": "shoulder apex",
+      "targetY": 121,
+      "targetLogicalY": 15.125,
+      "currentSideY": 108,
+      "currentSideDeltaY": -13,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "beardBase",
+      "label": "beard base",
+      "targetY": 149,
+      "targetLogicalY": 18.625,
+      "currentSideY": 142,
+      "currentSideDeltaY": -7,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "armStripeTop",
+      "label": "arm stripe top",
+      "targetY": 150,
+      "targetLogicalY": 18.75,
+      "currentSideY": 150,
+      "currentSideDeltaY": 0,
+      "passesCurrentSide": true,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "armStripeCentre",
+      "label": "arm stripe centre",
+      "targetY": 159,
+      "targetLogicalY": 19.875,
+      "currentSideY": 159,
+      "currentSideDeltaY": 0,
+      "passesCurrentSide": true,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "armStripeBase",
+      "label": "arm stripe base",
+      "targetY": 168,
+      "targetLogicalY": 21.0,
+      "currentSideY": 168,
+      "currentSideDeltaY": 0,
+      "passesCurrentSide": true,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "midriffStripeTop",
+      "label": "midriff stripe top",
+      "targetY": 157,
+      "targetLogicalY": 19.625,
+      "currentSideY": 155,
+      "currentSideDeltaY": -2,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "midriffStripeCentre",
+      "label": "midriff stripe centre",
+      "targetY": 165.5,
+      "targetLogicalY": 20.6875,
+      "currentSideY": 162.5,
+      "currentSideDeltaY": -3.0,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "midriffStripeBase",
+      "label": "midriff stripe base",
+      "targetY": 174,
+      "targetLogicalY": 21.75,
+      "currentSideY": 170,
+      "currentSideDeltaY": -4,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "palmCentre",
+      "label": "resting palm centre",
+      "targetY": 215,
+      "targetLogicalY": 26.875,
+      "currentSideY": 218,
+      "currentSideDeltaY": 3,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "palmBase",
+      "label": "resting palm base",
+      "targetY": 227,
+      "targetLogicalY": 28.375,
+      "currentSideY": 231,
+      "currentSideDeltaY": 4,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "kneeBandCentre",
+      "label": "knee band centre",
+      "targetY": 266.5,
+      "targetLogicalY": 33.3125,
+      "currentSideY": 264.5,
+      "currentSideDeltaY": -2.0,
+      "passesCurrentSide": false,
+      "requiredDeltaY": 0
+    },
+    {
+      "id": "floor",
+      "label": "floor bound",
+      "targetY": 316,
+      "targetLogicalY": 39.5,
+      "currentSideY": 316,
+      "currentSideDeltaY": 0,
+      "passesCurrentSide": true,
+      "requiredDeltaY": 0
+    }
+  ],
+  "poseLimitsDegrees": {
+    "shoulder": [
+      -65,
+      65
+    ],
+    "elbowBend": [
+      0,
+      100
+    ],
+    "hip": [
+      -35,
+      35
+    ],
+    "kneeBend": [
+      0,
+      90
+    ],
+    "neckTurn": [
+      -90,
+      90
+    ]
+  },
+  "occlusionOrder": {
+    "front": [
+      "far-limbs",
+      "torso",
+      "near-limbs",
+      "beard-hair",
+      "face",
+      "props"
+    ],
+    "sideRight": [
+      "far-limbs",
+      "torso",
+      "far-hair",
+      "near-limbs",
+      "near-beard",
+      "face",
+      "props"
+    ],
+    "back": [
+      "far-limbs",
+      "torso",
+      "near-limbs",
+      "rear-hair",
+      "props"
+    ]
+  },
+  "contacts": {
+    "floor": {
+      "y": 316.0,
+      "anchorY": 320.0
+    },
+    "leftPalm": [
+      70.0,
+      215.0
+    ],
+    "rightPalm": [
+      186.0,
+      215.0
+    ],
+    "seatReference": [
+      128,
+      233
+    ],
+    "propGripRadius": 7
+  },
+  "renderQuality": {
+    "smoothHighResolutionMasterRequired": true,
+    "nearestNeighbourMasterResizeAllowed": false,
+    "registeredProxyResampling": "LANCZOS",
+    "roughOuterEdgesAllowed": false,
+    "jaggedInternalLineworkAllowed": false,
+    "finishedRasterMechanicalStretchAllowed": false
+  },
+  "approvalBoundary": {
+    "rigApprovalAllowsSideAuthoring": true,
+    "productionPromotionAllowed": false,
+    "animationAuthoringAllowed": false
+  }
+}
