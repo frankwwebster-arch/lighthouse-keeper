@@ -1125,12 +1125,17 @@ colours. V3 at `/keeper-review/keeper-prime-turn-side-back-v3/` retains exact
 prior bytes for F1–F7 and changes only 12,014 pixels inside six registered F8
 component masks: cap crown, cap band, jumper blue, cream band, trousers and
 boots. Its alpha and geometry remain exact. Frank then identified a remaining
-F7 → F8 boot-shape jump. The current V4 candidate at
+F7 → F8 boot-shape jump. V4 at
 `/keeper-review/keeper-prime-turn-side-back-v4/` retains F1–F7 byte-for-byte
 from V3, retains exact V3 F8 pixels above y=250, and redraws only the rear boot
 assemblies below that boundary. It preserves the palette, cap top and common
-floor. V1–V3 and the approved rear master are untouched; V4 and the reusable
-draft palette await visual approval. Both
+floor. Frank approved the exact V4 turn on 13 October 2026 with “Approved.” Its
+immutable V5 approval record and enhanced page at
+`/keeper-review/keeper-prime-turn-side-back-v5/` pin every V4 frame, both strips,
+the standard-uniform palette and rear boot endpoint. The page adds previous/next
+frame controls and synchronized large and exact 128 × 160 game-scale animation
+views; it changes no artwork. V1–V4 and the approved rear master are untouched.
+Both
 workbench lanes remain empty; no production sprite or runtime animation has
 changed.
 
@@ -1155,9 +1160,9 @@ October 2026 with “Approved, very good indeed”. Its first authorized derived
 task produced the separate rigged Side-right V1, now approved as an artwork
 authority. Its first animation derivative is the eight-pose front ↔ side Turn
 V1, now approved with its slight 45° cadence limitation recorded. Its second
-animation derivative is the unapproved eight-pose side-right ↔ back turn. V1–V3
-remain reversible provenance; the current V4 boot-continuity candidate is at
-`/keeper-review/keeper-prime-turn-side-back-v4/`. Every
+animation derivative is the now-approved eight-pose side-right ↔ back V4 turn.
+V1–V4 remain reversible provenance; the approval and scale-review surface is at
+`/keeper-review/keeper-prime-turn-side-back-v5/`. Every
 rig-derived model must keep a super-smooth high-resolution
 master; rough edges or jagged internal linework fail even when all geometry
 datums pass.

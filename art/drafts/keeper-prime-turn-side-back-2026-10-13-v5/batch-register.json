@@ -1,0 +1,140 @@
+{
+  "batchId": "keeper-prime-turn-side-back-2026-10-13-v5",
+  "status": "approved-side-back-turn-artwork-authority",
+  "purpose": "Preserve Frank's approval of exact Turn V4 artwork and add an independently versioned synchronized large/game-scale review surface without changing V4.",
+  "approval": {
+    "approvedBy": "Frank",
+    "approvedOn": "2026-10-13",
+    "wording": "Approved.",
+    "scope": "The exact eight-frame reversible Keeper Prime side-right-to-back Turn V4, including its corrected F8 standard-uniform palette and rear-facing boot construction."
+  },
+  "approvedCandidate": {
+    "register": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v4/batch-register.json",
+    "registerSha256": "5845e47151e0de3c299a4b8a3f0447058f6118f392b3d5fc47121f4837aeac7d",
+    "frames": [
+      {
+        "frame": 1,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v4/drafts/frames/keeper_prime_turn_side-right_to_back_f1.png",
+        "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+      },
+      {
+        "frame": 2,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v4/drafts/frames/keeper_prime_turn_side-right_to_back_f2.png",
+        "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5"
+      },
+      {
+        "frame": 3,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v4/drafts/frames/keeper_prime_turn_side-right_to_back_f3.png",
+        "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859"
+      },
+      {
+        "frame": 4,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v4/drafts/frames/keeper_prime_turn_side-right_to_back_f4.png",
+        "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655"
+      },
+      {
+        "frame": 5,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v4/drafts/frames/keeper_prime_turn_side-right_to_back_f5.png",
+        "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc"
+      },
+      {
+        "frame": 6,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v4/drafts/frames/keeper_prime_turn_side-right_to_back_f6.png",
+        "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c"
+      },
+      {
+        "frame": 7,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v4/drafts/frames/keeper_prime_turn_side-right_to_back_f7.png",
+        "sha256": "ba4a9ee3bf122e226e2cda411b724374c7b04749aa7f398e449d7ee42071c77b"
+      },
+      {
+        "frame": 8,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v4/drafts/frames/keeper_prime_turn_side-right_to_back_f8.png",
+        "sha256": "89192561909568824a5b9dd6e30200a0ca9421b955201d3d2aeb865b388f51d8"
+      }
+    ],
+    "forwardStrip": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v4/drafts/keeper_prime_turn_side-right_to_back_f8.png",
+      "sha256": "bff5fb2428c23f26b9618a4ce5b46e543b3ee4f1636a823e248a36d84cd62f9f",
+      "sidecar": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v4/drafts/keeper_prime_turn_side-right_to_back_f8.json",
+      "sidecarSha256": "953d40411715d3dd9d2644db6d3ff1180404525811c3bb90e4c057822121adf7"
+    },
+    "reverseStrip": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v4/drafts/keeper_prime_turn_back_to_side-right_f8.png",
+      "sha256": "13ce475c350fa6a55f5bad7847a05f7ab89c24de03e035c6deab26f1830eedc7",
+      "sidecar": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v4/drafts/keeper_prime_turn_back_to_side-right_f8.json",
+      "sidecarSha256": "59a3dae95a47f4692b5e052b2c54ad247b9477877b2733bf57f6261f5066255b",
+      "exactFrameOrderReverse": true
+    },
+    "palette": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/keeper-standard-outfit-palette-v1-draft.json",
+      "sha256": "606594128f94531b4d9626071c0f6be8145a4560238f20c4ada0204cb4cf59d1",
+      "status": "draft-awaiting-visual-approval"
+    },
+    "rearBootChangedMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v4/drafts/masks/keeper_prime_turn_f8_boot_geometry_changed.png",
+    "rearBootChangedMaskSha256": "5058192cfdd67d20bccb6600bc46cc4ee35748a7ad0c251113d465b9afb3e9f1"
+  },
+  "displayContract": {
+    "logicalCell": [
+      32,
+      40
+    ],
+    "sourceCell": [
+      256,
+      320
+    ],
+    "sourceDensity": 8,
+    "gamePixelsPerLogicalPixel": 4,
+    "gameCssDisplay": [
+      128,
+      160
+    ],
+    "browserZoomForDirectSizeJudgementPercent": 100,
+    "assetContract": "data/keeper_asset_contract.json",
+    "assetContractSha256": "f03aaf0f48069152a324a39e4f5c09130dd99626db3d3ed27e4aa9c1dea17d23",
+    "spriteRenderer": "src/ui/Sprite.tsx",
+    "spriteRendererSha256": "de18e9f1f37a7fc4db10d49d10a22e7332d00f152430adeff8f3257072dd2441",
+    "method": "The exact density-8 V4 PNG is rendered into the same 32\u00d740 logical box at the game's current PX=4; no review-only character scaling is applied."
+  },
+  "reviewSurface": {
+    "publicReview": "/keeper-review/keeper-prime-turn-side-back-v5/",
+    "publicPage": "public/keeper-review/keeper-prime-turn-side-back-v5/index.html",
+    "publicPageSha256": "bf32f4f72729656687d90197fea480e5ff770d3177d685d5ae8910d4288c0e8f",
+    "controls": [
+      "previous-frame",
+      "next-frame",
+      "play-forward",
+      "play-reverse",
+      "loop-both",
+      "pause",
+      "frame-time",
+      "direct-frame-selection"
+    ],
+    "views": [
+      "large-inspection",
+      "game-scale-128x160"
+    ],
+    "viewsFrameSynchronized": true
+  },
+  "validation": {
+    "v4RegisterUnchanged": true,
+    "allApprovedFrameHashesPinned": true,
+    "publicFramesByteIdenticalToV4": true,
+    "largeAndGameViewsUseSameFrameUrls": true,
+    "artPixelsChangedByV5": false,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "finalLaneChanged": false,
+    "priorDraftsChanged": false
+  },
+  "approvalBoundary": {
+    "sideBackTurnV4Approved": true,
+    "rearBootEndpointApproved": true,
+    "standardOutfitPaletteApproved": true,
+    "coreTurnArtworkAuthority": true,
+    "finalLaneEntryAllowed": true,
+    "productionPromotionAllowed": false
+  },
+  "nextGate": "Use this synchronized large/game-scale control set for later core-animation reviews. Production promotion remains a separate explicit gate.",
+  "rollback": "Delete only art/drafts/keeper-prime-turn-side-back-2026-10-13-v5 and public/keeper-review/keeper-prime-turn-side-back-v5; immutable V1\u2013V4, approved endpoints and production remain unchanged."
+}
