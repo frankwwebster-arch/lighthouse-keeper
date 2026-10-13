@@ -76,12 +76,13 @@ side-right ↔ back Turn V1 remains reversible provenance at
 that its exact approved rear endpoint made the jumper darken visibly at F8. V2
 corrected the jumper alone and remains reversible provenance. Frank then
 identified the same discontinuity in the cap, trousers and boots and established
-that every standard-uniform animation must use a consistent outfit palette. The
-current V3 candidate at `/keeper-review/keeper-prime-turn-side-back-v3/` keeps
-F1–F7 byte-identical and changes only 12,014 pixels inside six registered F8
-component masks: cap crown, cap band, jumper blue, cream band, trousers and
-boots. Its alpha and geometry remain exact. V3 and its draft reusable palette
-await visual approval.
+that every standard-uniform animation must use a consistent outfit palette. V3
+corrected all six registered F8 outfit components but exposed a remaining boot-
+construction jump at F7 → F8. The current V4 candidate at
+`/keeper-review/keeper-prime-turn-side-back-v4/` keeps F1–F7 byte-identical to
+V3 and keeps F8 exact above y=250. It redraws only the rear-facing boots below
+that boundary, retains the V3 palette and common floor, and awaits visual
+approval. V3 and its draft reusable palette remain unchanged provenance.
 Neither turn is Final or production.
 The game engine will extend only the
 walk from world placement, beginning the cycle while the Keeper is still hidden
@@ -127,7 +128,7 @@ must remain paused to avoid duplicate alerts.
 - `art/source/first-production-batch/` — untouched generated sources and prompt/provenance notes; `scripts/build_first_asset_batch.py` rebuilds the exact `art/raw/` deliveries, then `npm run sprites` publishes them.
 - `docs/PRODUCTION_ASSET_KIT.md` — exact Pixel filenames, dimensions, anchors, pivots, z-order, frame counts, fps, and delivery order.
 - `docs/KEEPER_ANIMATIONS.md` — plain-English animation index, direction rules and object-alignment instructions.
-- `docs/KEEPER_ANIMATION_WORKBENCH.md`, `data/keeper_animation_workbench.json` and `src/animation-workbench/` — the separate Draft/Final framework for non-destructive frame editing, section loops and complete transition previews. Its editor remains implemented, but the library is intentionally empty while side-right ↔ back Turn V3 receives visual review for the complete F8 standard-outfit palette correction. Front ↔ side Turn V1 is an approved artwork authority with one accepted minor 45° cadence limitation. Only world-distance walking will vary in runtime, beginning hidden behind the departure door; production remains unchanged.
+- `docs/KEEPER_ANIMATION_WORKBENCH.md`, `data/keeper_animation_workbench.json` and `src/animation-workbench/` — the separate Draft/Final framework for non-destructive frame editing, section loops and complete transition previews. Its editor remains implemented, but the library is intentionally empty while side-right ↔ back Turn V4 receives visual review for its boot-only F8 continuity correction. Front ↔ side Turn V1 is an approved artwork authority with one accepted minor 45° cadence limitation. Only world-distance walking will vary in runtime, beginning hidden behind the departure door; production remains unchanged.
 - `docs/KEEPER_ANIMATION_HANDOFF.md` — complete keeper review checkpoint, correction history, exact transition-gap inventory, object-binding design and ready-to-paste next-task prompt.
 - `docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md` — proven Keeper artwork recipe, continuity rules, rejected methods, accepted artist/snooker case studies, evidence checklist and exact-name review workflow.
 - `docs/KEEPER_FULL_FACE_INVENTORY.md`, `data/keeper_full_face_inventory.json` and `art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/` — the complete read-only front-facing inventory and approved, reversible full-face canon pack. The first two unpromoted V2 redraws are isolated in `art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/`; their rejected V1 predecessor remains historical and unmodified.

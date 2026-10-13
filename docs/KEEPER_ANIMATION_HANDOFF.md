@@ -1121,12 +1121,16 @@ During review Frank identified a visible palette discontinuity: the jumper
 darkened at its exact rear F8 endpoint. V2 corrected only the jumper. Frank then
 identified that the cap, trousers and boots also darkened and established a
 general rule: every standard-uniform animation must use consistent component
-colours. The current V3 candidate at
-`/keeper-review/keeper-prime-turn-side-back-v3/` retains exact prior bytes for
-F1–F7 and changes only 12,014 pixels inside six registered F8 component masks:
-cap crown, cap band, jumper blue, cream band, trousers and boots. Its alpha and
-geometry remain exact. V1, V2 and the approved rear master are untouched; V3
-and its reusable draft palette await visual approval. Both
+colours. V3 at `/keeper-review/keeper-prime-turn-side-back-v3/` retains exact
+prior bytes for F1–F7 and changes only 12,014 pixels inside six registered F8
+component masks: cap crown, cap band, jumper blue, cream band, trousers and
+boots. Its alpha and geometry remain exact. Frank then identified a remaining
+F7 → F8 boot-shape jump. The current V4 candidate at
+`/keeper-review/keeper-prime-turn-side-back-v4/` retains F1–F7 byte-for-byte
+from V3, retains exact V3 F8 pixels above y=250, and redraws only the rear boot
+assemblies below that boundary. It preserves the palette, cap top and common
+floor. V1–V3 and the approved rear master are untouched; V4 and the reusable
+draft palette await visual approval. Both
 workbench lanes remain empty; no production sprite or runtime animation has
 changed.
 
@@ -1151,9 +1155,9 @@ October 2026 with “Approved, very good indeed”. Its first authorized derived
 task produced the separate rigged Side-right V1, now approved as an artwork
 authority. Its first animation derivative is the eight-pose front ↔ side Turn
 V1, now approved with its slight 45° cadence limitation recorded. Its second
-animation derivative is the unapproved eight-pose side-right ↔ back turn. V1
-and V2 remain reversible provenance; the current V3 full-outfit colour
-candidate is at `/keeper-review/keeper-prime-turn-side-back-v3/`. Every
+animation derivative is the unapproved eight-pose side-right ↔ back turn. V1–V3
+remain reversible provenance; the current V4 boot-continuity candidate is at
+`/keeper-review/keeper-prime-turn-side-back-v4/`. Every
 rig-derived model must keep a super-smooth high-resolution
 master; rough edges or jagged internal linework fail even when all geometry
 datums pass.
