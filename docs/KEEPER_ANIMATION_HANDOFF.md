@@ -1200,6 +1200,19 @@ rig-derived model must keep a super-smooth high-resolution
 master; rough edges or jagged internal linework fail even when all geometry
 datums pass.
 
+The next one-at-a-time core candidate is now
+`art/drafts/keeper-prime-walk-2026-10-13-v1/`, reviewed at
+`/keeper-review/keeper-prime-walk-v1/`. It is the first finished-art right-facing
+walk proposal derived from the approved Side-right artwork and approved Rig
+Motion V3. One coherent 1536 × 1024 source supplies eight isolated poses; all
+eight are registered with one shared scale, fixed body axis and common floor.
+The review page synchronizes large and exact 128 × 160 game-scale views, has
+previous/next stepping, and translates the same strip at 168 high-resolution
+pixels per second for five seconds from fully hidden to fully hidden. Standard
+cap, jumper, trouser and boot palette samples are checked per frame. The loop is
+awaiting Frank's visual approval; walk→stop, stop→walk, the deterministic left
+mirror, workbench Final and production promotion remain deliberately untouched.
+
 ## Review-comments workflow for a later feedback round
 
 1. Do not process another review export until the beard evidence gate is
