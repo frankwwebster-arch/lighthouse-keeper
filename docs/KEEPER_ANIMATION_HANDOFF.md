@@ -1106,9 +1106,12 @@ approved the first, smooth rear-boot render for V5: it keeps rows 0–272
 byte-identical to V2, changes only rows 273–315, and retains zero alpha
 mismatches. The 1122 × 1402 source is the rendering-quality authority; the 256
 × 320 registered endpoint is an anti-aliased proxy. V4's rougher, over-squared
-alternative remains historical provenance. Both workbench lanes remain empty,
-and no production sprite or animation may change until a smooth zero-delta side
-endpoint is explicitly approved.
+alternative remains historical provenance. The new rigged side-right V1 at
+`/keeper-review/keeper-prime-side-right-rigged-v1/` is a smooth 1122 × 1402
+master with a uniformly registered 256 × 320 proxy, exact zero delta at all 15
+datums and a transparent gutter. Both workbench lanes remain empty, and no
+turn, production sprite or animation may change until that candidate is
+explicitly approved.
 
 Frank authorized and then approved a **Keeper Prime Construction Rig (KP Rig
 V1)** before animation redrafting. His exact 13 October 2026 approval was
@@ -1128,9 +1131,10 @@ at 420 px/s, with greater thigh swing and knee lift. Idle, reach and planted-
 ankle sit/stand are exact V2 records. This deliberately simplified mannequin
 deforms no finished raster and promotes nothing. Frank approved Motion V3 on 13
 October 2026 with “Approved, very good indeed”. Its first authorized derived-art
-task is now a separate smooth zero-delta side-right endpoint. Every rig-derived model
-must keep a super-smooth high-resolution master; rough edges or jagged internal
-linework fail even when all geometry datums pass.
+task produced the separate rigged side-right V1 candidate. It passes all 15
+datums and now awaits visual approval. Every rig-derived model must keep a
+super-smooth high-resolution master; rough edges or jagged internal linework
+fail even when all geometry datums pass.
 
 ## Review-comments workflow for a later feedback round
 

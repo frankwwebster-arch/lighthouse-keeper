@@ -196,8 +196,8 @@ export default function AnimationWorkbench() {
         <div>
           <p className={styles.eyebrow}>Separate review surface · production unchanged</p>
           <h1>Keeper Animation Workbench</h1>
-          <p><strong>Final is empty.</strong> KP Rig V1 is approved, alongside Prime Master V1 and the smooth V5 rear endpoint. KP Rig Motion V3 is approved with its eight steps over five seconds. The historical side remains blocked at 5/15; the next candidate is a separate super-smooth 15/15 side-right endpoint.</p>
-          <p><a href="/keeper-review/keeper-prime-rig-v3/">Open approved Keeper Prime Rig Motion V3 →</a> · <a href="/keeper-review/keeper-prime-rig-v1/">Approved Rig V1</a></p>
+          <p><strong>Final is empty.</strong> KP Rig V1 is approved, alongside Prime Master V1 and the smooth V5 rear endpoint. KP Rig Motion V3 is approved with its eight steps over five seconds. The new super-smooth side-right candidate passes 15/15 rig landmarks and is awaiting visual approval; the historical side remains blocked at 5/15.</p>
+          <p><a href="/keeper-review/keeper-prime-side-right-rigged-v1/">Review the new 15/15 side-right Keeper →</a> · <a href="/keeper-review/keeper-prime-rig-v3/">Approved Motion V3</a> · <a href="/keeper-review/keeper-prime-rig-v1/">Approved Rig V1</a></p>
         </div>
         <nav><a href="/">Game</a><a href="/studio">Recipe Studio</a></nav>
       </header>
@@ -225,7 +225,7 @@ export default function AnimationWorkbench() {
         </aside>
 
         <div className={styles.content}>
-          {!selected || !asset ? <section className={styles.emptyStage}><h2>Animation library reset</h2><p>Prime Master V1, the smooth V5 rear endpoint, KP Rig V1 and KP Rig Motion V3 are approved. The next review candidate is the separate super-smooth side-right endpoint matching every V3 cap, badge, ear, shoulder, beard, stripe, hand, knee and floor datum.</p><p><a href="/keeper-review/keeper-prime-rig-v3/">Open approved Keeper Prime Rig Motion V3</a></p></section> : <>
+          {!selected || !asset ? <section className={styles.emptyStage}><h2>Animation library reset</h2><p>Prime Master V1, the smooth V5 rear endpoint, KP Rig V1 and KP Rig Motion V3 are approved. The new super-smooth side-right candidate now matches every V3 cap, badge, ear, shoulder, beard, stripe, hand, knee and floor datum; it remains outside Final until you approve it visually.</p><p><a href="/keeper-review/keeper-prime-side-right-rigged-v1/">Review the 15/15 side-right Keeper</a></p></section> : <>
             <section className={styles.itemHeader}>
               <div>
                 <div className={styles.badges}><span className={selected.lane === 'final' ? styles.finalBadge : styles.draftBadge}>{selected.lane}</span><span>{asset.frames} source frames</span><span>{asset.fps} fps</span><span>{asset.outfit ?? 'standard'}</span></div>

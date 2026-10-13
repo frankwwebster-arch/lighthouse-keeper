@@ -1,0 +1,289 @@
+{
+  "name": "keeper_prime_master-neutral-standing-side-right",
+  "w": 32,
+  "h": 40,
+  "density": 8,
+  "frames": 1,
+  "fps": 0,
+  "anchor": [
+    16,
+    40
+  ],
+  "outfit": "standard-single-band",
+  "view": "side-right-90",
+  "pose": "neutral-standing",
+  "status": "draft-awaiting-visual-approval",
+  "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+  "verticalLandmarks": [
+    {
+      "id": "capTop",
+      "label": "cap top",
+      "targetY": 18,
+      "candidateY": 18,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "candidateX": 155,
+      "pixelEvidence": {
+        "sample": [
+          155,
+          18
+        ],
+        "alpha": 229,
+        "passes": true
+      }
+    },
+    {
+      "id": "badgeCentre",
+      "label": "golden badge centre",
+      "targetY": 48.5,
+      "candidateY": 48.5,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "candidateX": 162,
+      "pixelEvidence": {
+        "sample": [
+          162,
+          48
+        ],
+        "alpha": 253,
+        "passes": true
+      }
+    },
+    {
+      "id": "earCentre",
+      "label": "visible ear centre",
+      "targetY": 88.5,
+      "candidateY": 88.5,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "candidateX": 118,
+      "pixelEvidence": {
+        "sample": [
+          118,
+          88
+        ],
+        "alpha": 253,
+        "passes": true
+      }
+    },
+    {
+      "id": "shoulderApex",
+      "label": "shoulder apex",
+      "targetY": 121,
+      "candidateY": 121,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "candidateX": 101,
+      "pixelEvidence": {
+        "sample": [
+          101,
+          121
+        ],
+        "alpha": 252,
+        "passes": true
+      }
+    },
+    {
+      "id": "beardBase",
+      "label": "beard base",
+      "targetY": 149,
+      "candidateY": 149,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "candidateX": 164,
+      "pixelEvidence": {
+        "sample": [
+          164,
+          149
+        ],
+        "alpha": 250,
+        "passes": true
+      }
+    },
+    {
+      "id": "armStripeTop",
+      "label": "arm stripe top",
+      "targetY": 150,
+      "candidateY": 150,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "candidateX": 91,
+      "pixelEvidence": {
+        "sample": [
+          91,
+          150
+        ],
+        "alpha": 253,
+        "passes": true
+      }
+    },
+    {
+      "id": "armStripeCentre",
+      "label": "arm stripe centre",
+      "targetY": 159,
+      "candidateY": 159,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "candidateX": 90,
+      "pixelEvidence": {
+        "sample": [
+          90,
+          159
+        ],
+        "alpha": 253,
+        "passes": true
+      }
+    },
+    {
+      "id": "armStripeBase",
+      "label": "arm stripe base",
+      "targetY": 168,
+      "candidateY": 168,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "candidateX": 89,
+      "pixelEvidence": {
+        "sample": [
+          89,
+          168
+        ],
+        "alpha": 253,
+        "passes": true
+      }
+    },
+    {
+      "id": "midriffStripeTop",
+      "label": "midriff stripe top",
+      "targetY": 157,
+      "candidateY": 157,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "candidateX": 160,
+      "pixelEvidence": {
+        "sample": [
+          160,
+          157
+        ],
+        "alpha": 254,
+        "passes": true
+      }
+    },
+    {
+      "id": "midriffStripeCentre",
+      "label": "midriff stripe centre",
+      "targetY": 165.5,
+      "candidateY": 165.5,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "candidateX": 160,
+      "pixelEvidence": {
+        "sample": [
+          160,
+          166
+        ],
+        "alpha": 254,
+        "passes": true
+      }
+    },
+    {
+      "id": "midriffStripeBase",
+      "label": "midriff stripe base",
+      "targetY": 174,
+      "candidateY": 174,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "candidateX": 160,
+      "pixelEvidence": {
+        "sample": [
+          160,
+          174
+        ],
+        "alpha": 253,
+        "passes": true
+      }
+    },
+    {
+      "id": "palmCentre",
+      "label": "resting palm centre",
+      "targetY": 215,
+      "candidateY": 215,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "candidateX": 123,
+      "pixelEvidence": {
+        "sample": [
+          123,
+          215
+        ],
+        "alpha": 253,
+        "passes": true
+      }
+    },
+    {
+      "id": "palmBase",
+      "label": "resting palm base",
+      "targetY": 227,
+      "candidateY": 227,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "candidateX": 123,
+      "pixelEvidence": {
+        "sample": [
+          123,
+          227
+        ],
+        "alpha": 253,
+        "passes": true
+      }
+    },
+    {
+      "id": "kneeBandCentre",
+      "label": "knee band centre",
+      "targetY": 266.5,
+      "candidateY": 266.5,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "candidateX": 125,
+      "pixelEvidence": {
+        "sample": [
+          125,
+          266
+        ],
+        "alpha": 253,
+        "passes": true
+      }
+    },
+    {
+      "id": "floor",
+      "label": "floor bound",
+      "targetY": 316,
+      "candidateY": 316,
+      "deltaY": 0,
+      "requiredDeltaY": 0,
+      "passesExact": true,
+      "candidateX": 145,
+      "pixelEvidence": {
+        "sample": [
+          145,
+          315
+        ],
+        "alpha": 196,
+        "passes": true
+      }
+    }
+  ]
+}

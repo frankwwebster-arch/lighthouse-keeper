@@ -30,8 +30,12 @@ It changes only the walk: eight steps over five seconds and 168 px/s instead of
 two steps over two seconds and 420 px/s, with larger thigh swing and knee lift.
 Idle, reach and planted-ankle sit/stand remain exact V2 records. The mannequin
 is not finished Keeper raster art. Frank approved Motion V3 on 13 October 2026
-with “Approved, very good indeed”. The next artwork gate is now authorized: a
-separate super-smooth side-right endpoint with zero delta at every hard datum.
+with “Approved, very good indeed”. Its first authorized artwork candidate is
+now at `/keeper-review/keeper-prime-side-right-rigged-v1/`: a super-smooth
+1122 × 1402 master uniformly registered into the standard 256 × 320 cell. It
+has exact zero delta at all 15 hard datums and a transparent safety gutter, but
+is still awaiting visual approval. It is not Final and does not authorize turn
+animation authoring or production promotion.
 
 ## Prime Keeper authority
 
@@ -64,6 +68,15 @@ selected side already matches total height (298 source pixels, y=18→316), arm
 stripe and outer anchors. It misses badge, ear, shoulder, beard, midriff stripe,
 palm and knee datums, so it is not transition-ready. Two guided generation
 attempts remain rejected provenance because they also failed the hard register.
+
+The rigged side-right V1 pack supersedes that historical side only as a review
+candidate. It preserves the approved Prime identity, single broad stripe,
+adult rectangular profile eye, separate moustache and readable closed mouth;
+rear hair remains distinct from the forward beard. Its high-resolution source,
+registered proxy, sidecar, front/side/back lineup, 15-point board and ghost
+overlay are SHA-256-pinned. No non-uniform warp was used: registration is one
+Lanczos scale plus translation. The candidate remains unapproved until Frank's
+visual verdict.
 
 Orthographic V5 records Frank's explicit selection of the first rear-boot
 render: rounded rear heel counters, central back seams and rear sole edges. It
@@ -148,7 +161,15 @@ still be recovered manually.
   front-to-side vertical skeleton and fail-closed side-redraft gate;
 - `scripts/build_keeper_prime_orthographic_views_v4.py` and
   `scripts/verify_keeper_prime_orthographic_views_v4.ts` — active rear-boot
-  correction with exact alpha and unchanged-upper-body verification.
+  alternative provenance;
+- `scripts/build_keeper_prime_orthographic_views_v5.py` and
+  `scripts/verify_keeper_prime_orthographic_views_v5.ts` — approved smooth
+  rear-boot authority with exact alpha and unchanged-upper-body verification;
+- `scripts/build_keeper_prime_rig_v1.py` and the rig-motion builders/verifiers
+  — fixed anatomy, 15 datums and the approved eight-step motion authority;
+- `scripts/build_keeper_prime_side_right_rigged_v1.py` and
+  `scripts/verify_keeper_prime_side_right_rigged_v1.ts` — current smooth
+  side-right review candidate, exact 15/15 registration and approval boundary.
 
 Historical V1/V2 public assets remain content-addressed so provenance and old
 exported recipes are recoverable. Presence in the asset table is not approval
@@ -166,6 +187,7 @@ and does not place an item in either active lane.
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_rig_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_rig_motion_v2.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_rig_motion_v3.py
+/Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_side_right_rigged_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_animation_workbench.py
 npm run verify:keeper-prime-master-v1
 npm run verify:keeper-prime-orthographic-v1
@@ -177,6 +199,7 @@ npm run verify:keeper-prime-rig-v1
 npm run verify:keeper-prime-rig-v2
 npm run verify:keeper-prime-rig-v3
 npm run verify:keeper-prime-rig-v4
+npm run verify:keeper-prime-side-right-rigged-v1
 npm run verify:keeper-animation-workbench
 npm test
 npm run typecheck
@@ -191,10 +214,11 @@ confirm raw/runtime art and the runtime manifest remain unchanged.
 
 ## Next approval gate
 
-Create the authorized separate smooth rig-derived side successor that preserves
-the historical preferred design and reaches zero vertical delta at all 15
-registered points. Once the side endpoint is approved, restart at the core set
-in small reviewable batches:
+Visually review the new smooth rig-derived side-right V1 at
+`/keeper-review/keeper-prime-side-right-rigged-v1/`. Its geometry already
+reaches zero vertical delta at all 15 registered points; the open question is
+whether its identity, silhouette and finish are right. Once the side endpoint
+is explicitly approved, restart at the core set in small reviewable batches:
 walk and exact stop, stop-to-walk, side-to-front/back turns,
 then sit/stand. Every frame in a batch must be authored from the same smooth
 high-resolution family. Only after the core joins are accepted should action

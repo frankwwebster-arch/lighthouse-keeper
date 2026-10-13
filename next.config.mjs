@@ -53,6 +53,11 @@ export default {
         destination: '/keeper-review/keeper-prime-rig-v3/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/keeper-prime-side-right-rigged-v1',
+        destination: '/keeper-review/keeper-prime-side-right-rigged-v1/index.html',
+        permanent: false,
+      },
     ]
   },
 }
