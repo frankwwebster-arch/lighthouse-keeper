@@ -9,3 +9,5 @@ The six intermediate angular poses were independently drawn with the built-in im
 Visual review should concentrate on the face and forward beard disappearing into rear hair, the cap badge disappearing, the widening from 135° through 180°, and both boots resolving into the approved rear boot backs. The registered height and floor are deterministic; perceived perspective continuity remains the visual approval gate.
 
 Nothing in production, Final, the runtime manifest, prior authorities or prior review exports has changed.
+
+The review page uses route-absolute asset URLs under its own versioned directory. This avoids Vercel's trailing-slash canonicalisation resolving animation frames one directory too high, and the verifier rejects any return to trailing-slash-dependent relative URLs.

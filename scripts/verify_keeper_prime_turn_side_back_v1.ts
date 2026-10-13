@@ -9,6 +9,7 @@ const ROOT = path.resolve(import.meta.dirname, '..')
 const PACK = path.join(ROOT, 'art/drafts/keeper-prime-turn-side-back-2026-10-13-v1')
 const REGISTER = path.join(PACK, 'batch-register.json')
 const PUBLIC = path.join(ROOT, 'public/keeper-review/keeper-prime-turn-side-back-v1')
+const PUBLIC_ROUTE = '/keeper-review/keeper-prime-turn-side-back-v1'
 const SIDE = path.join(ROOT, 'art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png')
 const BACK = path.join(ROOT, 'art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/drafts/keeper_prime_master-neutral-standing-back_f1.png')
 const TURN_APPROVAL = path.join(ROOT, 'art/drafts/keeper-prime-turn-front-side-2026-10-13-v2/batch-register.json')
@@ -104,6 +105,15 @@ for (const item of [...frames, register.animation.forward, register.animation.re
 }
 const html = fs.readFileSync(path.join(PUBLIC, 'index.html'), 'utf8')
 for (const phrase of ['Keeper Prime Turn V1 · side-right ↔ back', 'Eight-pose smooth draft · awaiting visual approval', 'Side → back', 'Back → side', 'Loop both', 'Route context', 'Nothing has entered Final or production', 'side-right and back endpoints are approved authorities', 'Height remains 298px']) if (!html.includes(phrase)) fail(`public review omits ${phrase}`)
+if (html.includes('src="assets/') || html.includes('"assets/')) fail('public review uses trailing-slash-dependent relative asset URLs')
+for (let index = 1; index <= 8; index += 1) {
+  const asset = fs.readdirSync(path.join(PUBLIC, 'assets')).find((name) => name.startsWith(`frame${index}-`))
+  if (!asset || !html.includes(`${PUBLIC_ROUTE}/assets/${asset}`)) fail(`public review does not route frame ${index} from its own review directory`)
+}
+for (const key of ['contact', 'datums']) {
+  const asset = fs.readdirSync(path.join(PUBLIC, 'assets')).find((name) => name.startsWith(`${key}-`))
+  if (!asset || !html.includes(`${PUBLIC_ROUTE}/assets/${asset}`)) fail(`public review does not route ${key} from its own review directory`)
+}
 const script = html.split('<script>')[1]?.split('</script>')[0]
 if (!script) fail('public playback script missing')
 new Function(script)
