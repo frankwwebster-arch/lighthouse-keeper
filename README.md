@@ -52,9 +52,12 @@ Frank approved KP Rig V1 on 13 October 2026 with “Approve KP Rig V1, let's see
 it animated”. The immutable measurement pack remains at
 `/keeper-review/keeper-prime-rig-v1/`; it defines 24 front/back bones, 24 side
 projection bones, fixed bilateral limb lengths, body-volume envelopes and all
-15 target y-datums. Its separate V2 construction-motion proof is at
-`/keeper-review/keeper-prime-rig-v2/`, with restrained idle, a genuinely
-translating off-stage walk, controlled reach and planted-ankle sit/stand. It
+15 target y-datums. After reviewing Motion V2, Frank requested more leg
+movement, more steps and a slower walk while judging the rest very good. The
+separate V3 construction-motion revision is at
+`/keeper-review/keeper-prime-rig-v3/`: its walk now uses eight steps over five
+seconds instead of two steps over two seconds, with greater thigh swing and
+knee lift. Idle, reach and planted-ankle sit/stand are unchanged from V2. It
 deforms no finished raster art and promotes nothing. Motion review is the gate
 before the separate smooth 15/15 side artwork draft.
 The game engine will extend only the

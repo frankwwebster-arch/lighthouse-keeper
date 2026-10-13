@@ -48,6 +48,11 @@ export default {
         destination: '/keeper-review/keeper-prime-rig-v2/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/keeper-prime-rig-v3',
+        destination: '/keeper-review/keeper-prime-rig-v3/index.html',
+        permanent: false,
+      },
     ]
   },
 }

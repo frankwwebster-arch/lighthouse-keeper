@@ -1,0 +1,88 @@
+{
+  "batchId": "keeper-prime-construction-rig-2026-10-13-v3",
+  "status": "walk-cadence-revision-awaiting-review",
+  "purpose": "Respond only to Frank's V2 walk-cadence feedback while preserving the three accepted motion demonstrations unchanged.",
+  "feedback": {
+    "by": "Frank",
+    "on": "2026-10-13",
+    "wording": "He needs to do more leg movement during the walk, moves too fast with too few steps. Otherwise very good indeed."
+  },
+  "predecessor": {
+    "register": "art/drafts/keeper-prime-construction-rig-2026-10-13-v2/batch-register.json",
+    "registerSha256": "d8ae1525d70d60835e63e1a202d24fdf1b0c57889294be64d0460143010e6bae",
+    "motion": "art/drafts/keeper-prime-construction-rig-2026-10-13-v2/motion/keeper-prime-rig-motion-v2.json",
+    "motionSha256": "bedfc66f174e7ce7598ca55b642595dc28cb6b805a82828df4a9f296ea45059e",
+    "publicPageSha256": "af4614387401b0f2f3c548bd274a3bbe806bf6f4d91b64ff836eb62440ef1287"
+  },
+  "motion": {
+    "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v3/motion/keeper-prime-rig-motion-v3.json",
+    "sha256": "683b564fe8766d3616f3be596bed11908eeab5ee3731596c929bb7442326da44",
+    "clips": [
+      "idle",
+      "walk",
+      "reach",
+      "sitStand"
+    ]
+  },
+  "evidence": {
+    "motionContactSheet": {
+      "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v3/evidence/rig-motion-keyframes.png",
+      "sha256": "46d4e6b39413c83c673adc31a592ba693aff26806bb8ee2b45de7aa11c0c7ca5"
+    }
+  },
+  "walkRevision": {
+    "previousFrames": 60,
+    "candidateFrames": 150,
+    "previousDurationSeconds": 2,
+    "candidateDurationSeconds": 5,
+    "previousGaitCycles": 1,
+    "candidateGaitCycles": 4,
+    "previousImpliedSteps": 2,
+    "candidateImpliedSteps": 8,
+    "previousRootSpeedPixelsPerSecond": 420,
+    "candidateRootSpeedPixelsPerSecond": 168,
+    "previousThighSwingDegrees": 25,
+    "candidateThighSwingDegrees": 32,
+    "previousMaximumKneeLiftDegrees": 34,
+    "candidateMaximumKneeLiftDegrees": 44
+  },
+  "unchangedClips": [
+    "idle",
+    "reach",
+    "sitStand"
+  ],
+  "validation": {
+    "maximumInvariantSegmentErrorPixels": 0.0,
+    "allInvariantSegmentErrorsBelowOneMillionthPixel": true,
+    "idleFirstLastJointDelta": 0.295457,
+    "reachReturnsToNeutral": true,
+    "sitStandReturnsToNeutral": true,
+    "sitStandNearAnkleMaximumDrift": 0.0,
+    "sitStandFarAnkleMaximumDrift": 0.0,
+    "walkRootTravelPixels": 840.0,
+    "walkStartsAndEndsHidden": true,
+    "finishedRasterDeformed": false,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "animationDraftsChanged": false,
+    "walkFrameCount": 150,
+    "walkDurationSeconds": 5.0,
+    "walkGaitCycles": 4,
+    "walkImpliedSteps": 8,
+    "walkRootSpeedPixelsPerSecond": 168.0,
+    "v2WalkFrameCount": 60,
+    "v2WalkRootSpeedPixelsPerSecond": 420.0,
+    "unchangedClipIds": [
+      "idle",
+      "reach",
+      "sitStand"
+    ]
+  },
+  "approvalBoundary": {
+    "motionRevisionApproved": false,
+    "finishedAnimationApproved": false,
+    "productionPromotionAllowed": false
+  },
+  "nextGate": "Review the slower eight-step walk; after motion approval, author the separate smooth side-right endpoint with 15/15 exact y-datums.",
+  "rollback": "Delete only art/drafts/keeper-prime-construction-rig-2026-10-13-v3 and public/keeper-review/keeper-prime-rig-v3; V1, V2, orthographic authorities and production remain unchanged."
+}

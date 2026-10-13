@@ -1120,14 +1120,16 @@ clothing datums, prop contacts, pose limits, occlusion order and floor anchoring
 Its public pose lab rotates limbs without changing their registered lengths.
 The rig distinguishes invariant anatomy from view-dependent projected widths
 and never mechanically stretches finished beard, hair or clothing art. Its
-separate V2 construction-motion proof is reviewable at
-`/keeper-review/keeper-prime-rig-v2/`: restrained idle, an 840 px root-motion
-walk whose reset occurs off-stage, controlled reach and sit/stand with planted
-ankles. This deliberately simplified mannequin deforms no finished raster and
-promotes nothing. After motion review, its first derived-art task is a separate
-smooth zero-delta side. Every rig-derived model must keep a super-smooth
-high-resolution master; rough edges or jagged internal linework fail even when
-all geometry datums pass.
+separate V2 construction-motion proof remains immutable provenance. Frank
+judged it otherwise very good but asked for more leg movement, more steps and a
+slower walk. V3 at `/keeper-review/keeper-prime-rig-v3/` changes only that walk:
+eight steps over five seconds at 168 px/s rather than two steps over two seconds
+at 420 px/s, with greater thigh swing and knee lift. Idle, reach and planted-
+ankle sit/stand are exact V2 records. This deliberately simplified mannequin
+deforms no finished raster and promotes nothing. After motion review, its first
+derived-art task is a separate smooth zero-delta side. Every rig-derived model
+must keep a super-smooth high-resolution master; rough edges or jagged internal
+linework fail even when all geometry datums pass.
 
 ## Review-comments workflow for a later feedback round
 

@@ -23,10 +23,13 @@ its proxy changes only lower rows 273–315 while preserving the complete alpha
 match. V3 still proves the selected side passes only five of 15 internal
 vertical datums. Frank approved KP Rig V1 on 13 October 2026 with “Approve KP
 Rig V1, let's see it animated”. Its immutable measurement contract remains at
-`/keeper-review/keeper-prime-rig-v1/`; the separate construction-motion proof is
-at `/keeper-review/keeper-prime-rig-v2/`. Motion V2 uses a simplified mannequin,
-not finished Keeper raster art, and covers idle, an 840 px translating walk,
-reach and planted-ankle sit/stand. The next artwork gate remains a super-smooth
+`/keeper-review/keeper-prime-rig-v1/`. Frank judged Motion V2 otherwise very
+good but asked for more leg movement, more steps and a slower walk. The current
+V3 construction-motion revision is at `/keeper-review/keeper-prime-rig-v3/`.
+It changes only the walk: eight steps over five seconds and 168 px/s instead of
+two steps over two seconds and 420 px/s, with larger thigh swing and knee lift.
+Idle, reach and planted-ankle sit/stand remain exact V2 records. The mannequin
+is not finished Keeper raster art. The next artwork gate remains a super-smooth
 side endpoint with zero delta at every hard datum.
 
 ## Prime Keeper authority
@@ -161,6 +164,7 @@ and does not place an item in either active lane.
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_orthographic_views_v5.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_rig_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_rig_motion_v2.py
+/Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_rig_motion_v3.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_animation_workbench.py
 npm run verify:keeper-prime-master-v1
 npm run verify:keeper-prime-orthographic-v1
@@ -170,6 +174,7 @@ npm run verify:keeper-prime-orthographic-v4
 npm run verify:keeper-prime-orthographic-v5
 npm run verify:keeper-prime-rig-v1
 npm run verify:keeper-prime-rig-v2
+npm run verify:keeper-prime-rig-v3
 npm run verify:keeper-animation-workbench
 npm test
 npm run typecheck
@@ -184,7 +189,7 @@ confirm raw/runtime art and the runtime manifest remain unchanged.
 
 ## Next approval gate
 
-Review KP Rig Motion V2, then create a separate smooth rig-derived side
+Review KP Rig Motion V3, then create a separate smooth rig-derived side
 successor that preserves the historical preferred design and reaches zero
 vertical delta at all 15 registered points. Once the side endpoint is approved,
 restart at the core set in small reviewable batches:
@@ -198,9 +203,9 @@ Before those transition batches, use the approved **KP Rig V1**: a posable
 measurements, body-volume envelopes, facial/beard/clothing datums, prop contacts,
 occlusion rules and floor anchors. It is an authoring underlay and measurement
 contract, not a mechanical deformation of final raster art. Rig V1 remains an
-immutable reversible review pack. Motion V2 tests that contract without
-finished artwork; the side correction is its first derived-art validation after
-motion review.
+immutable reversible review pack. Motion V3 tests that contract without
+finished artwork while preserving V2 as feedback provenance; the side
+correction is its first derived-art validation after motion review.
 
 ## Known limitations
 
