@@ -1,0 +1,725 @@
+{
+  "batchId": "keeper-prime-turn-side-back-2026-10-13-v7",
+  "status": "draft-v7-f8-lower-leg-correction-awaiting-visual-approval",
+  "purpose": "Remove F8 pale patches caused by overlapping trouser/boot palette masks and broaden the smooth F8 lower legs to the approved V4 silhouette.",
+  "sourceCandidate": {
+    "register": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/batch-register.json",
+    "registerSha256": "271f5e98874cfdda3418ca85a4437be5b778234ad5a0d4ac52b32ce87d015675",
+    "disposition": "immutable V6 candidate; V7 changes only F8"
+  },
+  "approvalProvenance": {
+    "register": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v5/batch-register.json",
+    "registerSha256": "d6858100c3c874a4c338b4c25aaff1a94c533b9acce83171ccb4c3eb1a12c867",
+    "wording": "Approved.",
+    "disposition": "immutable approved V4/V5 provenance; no production promotion"
+  },
+  "geometryReference": {
+    "register": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v4/batch-register.json",
+    "registerSha256": "5845e47151e0de3c299a4b8a3f0447058f6118f392b3d5fc47121f4837aeac7d",
+    "f8Sha256": "89192561909568824a5b9dd6e30200a0ca9421b955201d3d2aeb865b388f51d8",
+    "targetLowerBoundsFromY260": [
+      75,
+      260,
+      180,
+      316
+    ]
+  },
+  "smoothMaster": {
+    "original": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/sources/keeper-prime-back-user-approved-rear-boots.png",
+      "sha256": "2371101e33fcd2b9b27cbfdbcecdc1587c41783d5773605117a4678b5ac3ecc6",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    "draft": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/sources/keeper-prime-back-v7-lower-leg-registration.png",
+      "sha256": "a840a502381b8b3e600587afd198db84a74f59fabbf26150253384c4df47d1c9",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    "lowerRegistration": {
+      "startSourceY": 1068,
+      "fullSourceY": 1120,
+      "maximumHorizontalScale": 1.05,
+      "easing": "smoothstep",
+      "filter": "Lanczos",
+      "centreX": 560.5,
+      "upperMasterRowsUnchanged": true
+    },
+    "normalization": {
+      "sourcePixels": [
+        1122,
+        1402
+      ],
+      "sourceSignificantAlphaBoundsExclusive": [
+        227,
+        79,
+        894,
+        1363
+      ],
+      "normalizedBoundsExclusive": [
+        50,
+        18,
+        205,
+        316
+      ]
+    }
+  },
+  "palette": {
+    "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v3/palette/keeper-standard-outfit-palette-v1-draft.json",
+    "sha256": "606594128f94531b4d9626071c0f6be8145a4560238f20c4ada0204cb4cf59d1",
+    "componentChecks": {
+      "capCrownBlue": {
+        "source": {
+          "pixels": 3440,
+          "medianRGB": [
+            0,
+            86,
+            191
+          ],
+          "medianHSV": [
+            0.591623,
+            1.0,
+            0.74902
+          ],
+          "hsvP10": [
+            0.584906,
+            0.994652,
+            0.607843
+          ],
+          "hsvP90": [
+            0.595085,
+            1.0,
+            0.823529
+          ]
+        },
+        "targetMedianHSV": [
+          0.588406,
+          1.0,
+          0.905882
+        ],
+        "corrected": {
+          "pixels": 3440,
+          "medianRGB": [
+            0,
+            108,
+            231
+          ],
+          "medianHSV": [
+            0.588745,
+            1.0,
+            0.905882
+          ],
+          "hsvP10": [
+            0.581781,
+            0.995595,
+            0.764706
+          ],
+          "hsvP90": [
+            0.59187,
+            1.0,
+            0.980392
+          ]
+        },
+        "changedPixels": 3440,
+        "method": "masked additive HSV offset; gradients retained",
+        "coverageMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/masks/f8-capCrownBlue-coverage.png",
+        "coverageMaskSha256": "5f09b575db2ce0b9c53abdd7e99acf0dc091059a107cc74cfa7bb9c24eac2c5d",
+        "changedMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/masks/f8-capCrownBlue-changed.png",
+        "changedMaskSha256": "5f09b575db2ce0b9c53abdd7e99acf0dc091059a107cc74cfa7bb9c24eac2c5d",
+        "yRange": [
+          15,
+          63
+        ]
+      },
+      "capBandNavy": {
+        "source": {
+          "pixels": 723,
+          "medianRGB": [
+            42,
+            55,
+            86
+          ],
+          "medianHSV": [
+            0.616667,
+            0.51087,
+            0.337255
+          ],
+          "hsvP10": [
+            0.613475,
+            0.480769,
+            0.262745
+          ],
+          "hsvP90": [
+            0.621212,
+            0.527473,
+            0.372549
+          ]
+        },
+        "targetMedianHSV": [
+          0.634146,
+          0.40404,
+          0.388235
+        ],
+        "corrected": {
+          "pixels": 723,
+          "medianRGB": [
+            59,
+            67,
+            99
+          ],
+          "medianHSV": [
+            0.634146,
+            0.402174,
+            0.388235
+          ],
+          "hsvP10": [
+            0.630081,
+            0.373984,
+            0.313725
+          ],
+          "hsvP90": [
+            0.639535,
+            0.421053,
+            0.423529
+          ]
+        },
+        "changedPixels": 723,
+        "method": "masked additive HSV offset; gradients retained",
+        "coverageMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/masks/f8-capBandNavy-coverage.png",
+        "coverageMaskSha256": "61d6ca25f68ce2a77e8d751383d454bc998851515cd749b063228d5a8bc19e13",
+        "changedMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/masks/f8-capBandNavy-changed.png",
+        "changedMaskSha256": "61d6ca25f68ce2a77e8d751383d454bc998851515cd749b063228d5a8bc19e13",
+        "yRange": [
+          60,
+          78
+        ]
+      },
+      "jumperBlue": {
+        "source": {
+          "pixels": 9528,
+          "medianRGB": [
+            0,
+            87,
+            191
+          ],
+          "medianHSV": [
+            0.591146,
+            1.0,
+            0.74902
+          ],
+          "hsvP10": [
+            0.589286,
+            0.994595,
+            0.560784
+          ],
+          "hsvP90": [
+            0.596491,
+            1.0,
+            0.772549
+          ]
+        },
+        "targetMedianHSV": [
+          0.58845,
+          1.0,
+          0.901961
+        ],
+        "corrected": {
+          "pixels": 9528,
+          "medianRGB": [
+            0,
+            108,
+            230
+          ],
+          "medianHSV": [
+            0.588745,
+            1.0,
+            0.901961
+          ],
+          "hsvP10": [
+            0.586525,
+            0.995536,
+            0.713725
+          ],
+          "hsvP90": [
+            0.593651,
+            1.0,
+            0.92549
+          ]
+        },
+        "changedPixels": 9528,
+        "method": "masked additive HSV offset; gradients retained",
+        "coverageMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/masks/f8-jumperBlue-coverage.png",
+        "coverageMaskSha256": "7df259a03f0071cb3c7b7a2b6bf36a91066aac4957606453990b6b26242e7319",
+        "changedMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/masks/f8-jumperBlue-changed.png",
+        "changedMaskSha256": "7df259a03f0071cb3c7b7a2b6bf36a91066aac4957606453990b6b26242e7319",
+        "yRange": [
+          104,
+          215
+        ]
+      },
+      "jumperCream": {
+        "source": {
+          "pixels": 902,
+          "medianRGB": [
+            250,
+            230,
+            202
+          ],
+          "medianHSV": [
+            0.098639,
+            0.192,
+            0.980392
+          ],
+          "hsvP10": [
+            0.095238,
+            0.178138,
+            0.945098
+          ],
+          "hsvP90": [
+            0.114035,
+            0.202703,
+            1.0
+          ]
+        },
+        "targetMedianHSV": [
+          0.094697,
+          0.179283,
+          0.984314
+        ],
+        "corrected": {
+          "pixels": 902,
+          "medianRGB": [
+            251,
+            231,
+            206
+          ],
+          "medianHSV": [
+            0.094203,
+            0.179283,
+            0.984314
+          ],
+          "hsvP10": [
+            0.09058,
+            0.165323,
+            0.94902
+          ],
+          "hsvP90": [
+            0.11,
+            0.189516,
+            1.0
+          ]
+        },
+        "changedPixels": 902,
+        "method": "masked additive HSV offset; gradients retained",
+        "coverageMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/masks/f8-jumperCream-coverage.png",
+        "coverageMaskSha256": "9b5ae48d61ee0ddfd726edac50e2ce50ce8ea7f181ed09f3dbfebbf04aa8239e",
+        "changedMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/masks/f8-jumperCream-changed.png",
+        "changedMaskSha256": "9b5ae48d61ee0ddfd726edac50e2ce50ce8ea7f181ed09f3dbfebbf04aa8239e",
+        "yRange": [
+          126,
+          166
+        ]
+      },
+      "trouserNavy": {
+        "source": {
+          "pixels": 3021,
+          "medianRGB": [
+            44,
+            59,
+            94
+          ],
+          "medianHSV": [
+            0.617647,
+            0.53125,
+            0.368627
+          ],
+          "hsvP10": [
+            0.614379,
+            0.515464,
+            0.270588
+          ],
+          "hsvP90": [
+            0.622024,
+            0.561224,
+            0.384314
+          ]
+        },
+        "targetMedianHSV": [
+          0.625926,
+          0.432432,
+          0.439216
+        ],
+        "corrected": {
+          "pixels": 3021,
+          "medianRGB": [
+            64,
+            76,
+            112
+          ],
+          "medianHSV": [
+            0.62585,
+            0.431034,
+            0.439216
+          ],
+          "hsvP10": [
+            0.622222,
+            0.414414,
+            0.341176
+          ],
+          "hsvP90": [
+            0.630719,
+            0.464789,
+            0.454902
+          ]
+        },
+        "changedPixels": 3021,
+        "method": "masked additive HSV offset; gradients retained",
+        "coverageMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/masks/f8-trouserNavy-coverage.png",
+        "coverageMaskSha256": "4a456a7288d8de6961125c88d75d32da373b3b57651fb23ce3a579d0cdc02be1",
+        "changedMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/masks/f8-trouserNavy-changed.png",
+        "changedMaskSha256": "4a456a7288d8de6961125c88d75d32da373b3b57651fb23ce3a579d0cdc02be1",
+        "yRange": [
+          202,
+          254
+        ]
+      },
+      "bootNavy": {
+        "source": {
+          "pixels": 3552,
+          "medianRGB": [
+            40,
+            51,
+            83
+          ],
+          "medianHSV": [
+            0.621212,
+            0.526316,
+            0.32549
+          ],
+          "hsvP10": [
+            0.616279,
+            0.5,
+            0.254902
+          ],
+          "hsvP90": [
+            0.628788,
+            0.561644,
+            0.380392
+          ]
+        },
+        "targetMedianHSV": [
+          0.628472,
+          0.431818,
+          0.435294
+        ],
+        "corrected": {
+          "pixels": 3552,
+          "medianRGB": [
+            64,
+            74,
+            111
+          ],
+          "medianHSV": [
+            0.628788,
+            0.431373,
+            0.435294
+          ],
+          "hsvP10": [
+            0.623333,
+            0.40678,
+            0.364706
+          ],
+          "hsvP90": [
+            0.636364,
+            0.468254,
+            0.490196
+          ]
+        },
+        "changedPixels": 3552,
+        "method": "masked additive HSV offset; gradients retained",
+        "coverageMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/masks/f8-bootNavy-coverage.png",
+        "coverageMaskSha256": "c77dd807cf2eacfd7bdf83fffeb8639237b6b4c49777b74e20eb044dcf23a1d6",
+        "changedMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/masks/f8-bootNavy-changed.png",
+        "changedMaskSha256": "c77dd807cf2eacfd7bdf83fffeb8639237b6b4c49777b74e20eb044dcf23a1d6",
+        "yRange": [
+          254,
+          317
+        ]
+      }
+    },
+    "trouserBootMaskOverlapPixels": 0,
+    "v6PatchBrightness": {
+      "rows": [
+        250,
+        254
+      ],
+      "pixels": 246,
+      "medianRgbMean": 110.333333,
+      "p90RgbMean": 113.666667
+    },
+    "v7PatchBrightness": {
+      "rows": [
+        250,
+        254
+      ],
+      "pixels": 250,
+      "medianRgbMean": 83.333333,
+      "p90RgbMean": 86.333333
+    }
+  },
+  "changes": {
+    "frames1To7": "byte-identical-to-v6",
+    "frame8": {
+      "scope": "smooth master rows 1068+ plus non-overlapping target palette masks",
+      "earliestChangedNormalizedRow": 245,
+      "changedPixels": 5259,
+      "aggregateMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/masks/f8-all-changed.png",
+      "aggregateMaskSha256": "bccd2c230ecf0774e065e2b111765e1272287912a09ca92c67b150d5a8b8a3f8",
+      "upperIdentityAndOutfit": "unchanged smooth authority except deterministic palette regeneration",
+      "floorY": 316
+    }
+  },
+  "frames": [
+    {
+      "frame": 1,
+      "angleDegrees": 90,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/frames/keeper_prime_turn_side-right_to_back_f1.png",
+      "sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+      "sourceV6File": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f1.png",
+      "sourceV6Sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+      "change": "none-byte-identical-to-v6",
+      "changedPixels": 0,
+      "changedMask": null,
+      "changedMaskSha256": null,
+      "opaqueBoundsExclusive": [
+        77,
+        18,
+        179,
+        316
+      ],
+      "opaqueHeight": 298,
+      "edgeAlphaPixels": 0,
+      "partialAlphaPixels": 22303
+    },
+    {
+      "frame": 2,
+      "angleDegrees": 98,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/frames/keeper_prime_turn_side-right_to_back_f2.png",
+      "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "sourceV6File": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f2.png",
+      "sourceV6Sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "change": "none-byte-identical-to-v6",
+      "changedPixels": 0,
+      "changedMask": null,
+      "changedMaskSha256": null,
+      "opaqueBoundsExclusive": [
+        79,
+        18,
+        178,
+        316
+      ],
+      "opaqueHeight": 298,
+      "edgeAlphaPixels": 0,
+      "partialAlphaPixels": 22548
+    },
+    {
+      "frame": 3,
+      "angleDegrees": 105,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/frames/keeper_prime_turn_side-right_to_back_f3.png",
+      "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "sourceV6File": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f3.png",
+      "sourceV6Sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "change": "none-byte-identical-to-v6",
+      "changedPixels": 0,
+      "changedMask": null,
+      "changedMaskSha256": null,
+      "opaqueBoundsExclusive": [
+        78,
+        18,
+        183,
+        316
+      ],
+      "opaqueHeight": 298,
+      "edgeAlphaPixels": 0,
+      "partialAlphaPixels": 23809
+    },
+    {
+      "frame": 4,
+      "angleDegrees": 120,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/frames/keeper_prime_turn_side-right_to_back_f4.png",
+      "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "sourceV6File": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f4.png",
+      "sourceV6Sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "change": "none-byte-identical-to-v6",
+      "changedPixels": 0,
+      "changedMask": null,
+      "changedMaskSha256": null,
+      "opaqueBoundsExclusive": [
+        78,
+        18,
+        184,
+        316
+      ],
+      "opaqueHeight": 298,
+      "edgeAlphaPixels": 0,
+      "partialAlphaPixels": 24314
+    },
+    {
+      "frame": 5,
+      "angleDegrees": 135,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/frames/keeper_prime_turn_side-right_to_back_f5.png",
+      "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "sourceV6File": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f5.png",
+      "sourceV6Sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "change": "none-byte-identical-to-v6",
+      "changedPixels": 0,
+      "changedMask": null,
+      "changedMaskSha256": null,
+      "opaqueBoundsExclusive": [
+        76,
+        18,
+        184,
+        316
+      ],
+      "opaqueHeight": 298,
+      "edgeAlphaPixels": 0,
+      "partialAlphaPixels": 24838
+    },
+    {
+      "frame": 6,
+      "angleDegrees": 150,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/frames/keeper_prime_turn_side-right_to_back_f6.png",
+      "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "sourceV6File": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f6.png",
+      "sourceV6Sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "change": "none-byte-identical-to-v6",
+      "changedPixels": 0,
+      "changedMask": null,
+      "changedMaskSha256": null,
+      "opaqueBoundsExclusive": [
+        67,
+        18,
+        192,
+        316
+      ],
+      "opaqueHeight": 298,
+      "edgeAlphaPixels": 0,
+      "partialAlphaPixels": 26163
+    },
+    {
+      "frame": 7,
+      "angleDegrees": 165,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/frames/keeper_prime_turn_side-right_to_back_f7.png",
+      "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+      "sourceV6File": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f7.png",
+      "sourceV6Sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+      "change": "none-byte-identical-to-v6",
+      "changedPixels": 0,
+      "changedMask": null,
+      "changedMaskSha256": null,
+      "opaqueBoundsExclusive": [
+        58,
+        20,
+        201,
+        316
+      ],
+      "opaqueHeight": 296,
+      "edgeAlphaPixels": 0,
+      "partialAlphaPixels": 28396
+    },
+    {
+      "frame": 8,
+      "angleDegrees": 180,
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/frames/keeper_prime_turn_side-right_to_back_f8.png",
+      "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "sourceV6File": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v6/drafts/frames/keeper_prime_turn_side-right_to_back_f8.png",
+      "sourceV6Sha256": "74bf5c28d8a1fc58a9cc0ef07cdec5c9a82fee1e9c43527c026d6e8d5ba089b7",
+      "change": "f8-smooth-lower-leg-width-and-nonoverlap-palette",
+      "changedPixels": 5259,
+      "changedMask": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/masks/f8-all-changed.png",
+      "changedMaskSha256": "bccd2c230ecf0774e065e2b111765e1272287912a09ca92c67b150d5a8b8a3f8",
+      "opaqueBoundsExclusive": [
+        50,
+        18,
+        205,
+        316
+      ],
+      "opaqueHeight": 298,
+      "edgeAlphaPixels": 0,
+      "partialAlphaPixels": 30544
+    }
+  ],
+  "animation": {
+    "fps": 8,
+    "cell": [
+      256,
+      320
+    ],
+    "logicalCell": [
+      32,
+      40
+    ],
+    "density": 8,
+    "forward": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/keeper_prime_turn_side-right_to_back_f8.png",
+      "sha256": "7f8cf8b6ecec7e550492e342672ea6ffd4e5588caef2ea551883e1fb16eb6f39",
+      "sidecar": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/keeper_prime_turn_side-right_to_back_f8.json",
+      "sidecarSha256": "fd9b17cec844af08618a27d6aca71755bcbe77cac9a9904c5ed458f62e4eb45e"
+    },
+    "reverse": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/keeper_prime_turn_back_to_side-right_f8.png",
+      "sha256": "4f7053be3da6c61de3558bd2950de802cb1a79b2d53dc83b74a5d580895fe15d",
+      "sidecar": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/drafts/keeper_prime_turn_back_to_side-right_f8.json",
+      "sidecarSha256": "5c6a5e1b4a5f8b7d8d5569f4748970961eb80ec810f65750aedeb2fb7fa5c7d3",
+      "exactFrameOrderReverse": true
+    }
+  },
+  "reviewSurface": {
+    "publicReview": "/keeper-review/keeper-prime-turn-side-back-v7/",
+    "publicPage": "public/keeper-review/keeper-prime-turn-side-back-v7/index.html",
+    "publicPageSha256": "d4e504edecae88a8bea6a25f26d24eac4284b2eeb7223dded48e98fe32f5f4eb",
+    "largeAndGameViewsSynchronized": true,
+    "gameCssDisplay": [
+      128,
+      160
+    ],
+    "previousNextControls": true
+  },
+  "evidence": {
+    "comparison": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/evidence/v6-v7-f8-lower-leg-comparison.png",
+      "sha256": "29661e0c7630bc3cf532c6205f8096f2a69e567f7302231a3be04416460fac03"
+    },
+    "contactSheet": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v7/evidence/v7-contact-sheet.png",
+      "sha256": "4f2ed05ce7ead3618aa09750df9a06f091b5a89ead80ad5861feebdeecd4c75a"
+    }
+  },
+  "validation": {
+    "frames1To7ByteIdenticalToV6": true,
+    "frame8BoundsStable": true,
+    "frame8FloorStable": true,
+    "trouserBootMasksDisjoint": true,
+    "patchBrightnessReduced": true,
+    "lowerBoundsMatchApprovedV4": true,
+    "everyFrameTransparentCellEdge": true,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "finalLaneChanged": false,
+    "priorDraftsChanged": false
+  },
+  "approvalBoundary": {
+    "v7Approved": false,
+    "v6Superseded": false,
+    "v5ApprovalRevoked": false,
+    "productionPromotionAllowed": false,
+    "finalLaneEntryAllowed": false
+  },
+  "nextGate": "Frank reviews F7\u2192F8 at large and game scale before any authority changes.",
+  "rollback": "Delete only art/drafts/keeper-prime-turn-side-back-2026-10-13-v7 and public/keeper-review/keeper-prime-turn-side-back-v7; V1\u2013V6, Final and production remain unchanged."
+}

@@ -1143,8 +1143,16 @@ byte-identical; F7 is uniformly reduced from 298 to 296 opaque pixels while
 retaining floor y=316; and F8 is uniformly Lanczos-registered from the already
 approved 1122 × 1402 smooth rear master before its six outfit masks are matched
 to the approved palette. V1–V5 and the approved rear master are untouched. V6
-awaits visual approval. Both workbench lanes remain empty; no production sprite
-or runtime animation has changed.
+review exposed a four-row overlap between the F8 trouser and boot colour masks,
+which double-corrected the pale patches above the boot cuffs, and a smooth F8
+lower silhouette roughly five percent narrower than the accepted V4 endpoint.
+V7 at `/keeper-review/keeper-prime-turn-side-back-v7/` keeps F1–F7 byte-identical
+to V6. Its F8 uses disjoint `[202,254)` trouser and `[254,317)` boot masks and
+eases the high-resolution master to five-percent lower-leg expansion before
+normalization. The resulting lower bounds exactly match V4 at
+`[75,260,180,316]`; the floor and full F8 bounds remain unchanged. V6 remains
+immutable provenance and V7 awaits visual approval. Both workbench lanes remain
+empty; no production sprite or runtime animation has changed.
 
 Frank authorized and then approved a **Keeper Prime Construction Rig (KP Rig
 V1)** before animation redrafting. His exact 13 October 2026 approval was
@@ -1168,9 +1176,10 @@ task produced the separate rigged Side-right V1, now approved as an artwork
 authority. Its first animation derivative is the eight-pose front ↔ side Turn
 V1, now approved with its slight 45° cadence limitation recorded. Its second
 animation derivative is the approved eight-pose side-right ↔ back V4 turn,
-pinned by V5. V6 is a separate unapproved refinement of the three issues exposed
-by that scale-review surface. V1–V5 remain reversible provenance; the current
-candidate review is at `/keeper-review/keeper-prime-turn-side-back-v6/`. Every
+pinned by V5. V6 records the first separate scale-review refinement; V7 is the
+current unapproved correction of its F8 lower-leg mask and geometry defects.
+V1–V6 remain reversible provenance; the current candidate review is at
+`/keeper-review/keeper-prime-turn-side-back-v7/`. Every
 rig-derived model must keep a super-smooth high-resolution
 master; rough edges or jagged internal linework fail even when all geometry
 datums pass.
