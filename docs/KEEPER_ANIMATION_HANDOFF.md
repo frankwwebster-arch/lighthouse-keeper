@@ -1156,10 +1156,13 @@ abruptly at the 180° endpoint, V8 at
 `/keeper-review/keeper-prime-turn-side-back-v8/` retained every V7 pose
 byte-for-byte and inserted eight smooth 1122 × 1402 authored intermediates.
 It runs 16 poses at 16 fps over the same one-second duration as V7's eight poses
-at 8 fps. The final 165°→170°→175°→180° sequence keeps the far ear hidden, then
-shows a narrow sliver, a partial ear and finally the complete rear ear. V8 is a
-cadence trial awaiting visual approval; only if it works should comparable
-authored density become the working assumption for other core animations. Both
+at 8 fps. Frank found the result significantly jerkier, so V8 is rejected
+provenance and must not establish a general higher-frame-rate rule. V9 at
+`/keeper-review/keeper-prime-turn-side-back-v9/` returns directly to V7, keeps
+all eight V7 frames byte-identical and adds only one controlled 172.5° pose
+between 165° and 180°. It runs nine poses at 9 fps over the same one-second
+duration; the midpoint is 297 pixels high between its 296- and 298-pixel
+neighbors, with the common floor at y=316. V9 awaits visual approval. Both
 workbench lanes remain empty; no production sprite or runtime animation has
 changed.
 
@@ -1187,8 +1190,9 @@ V1, now approved with its slight 45° cadence limitation recorded. Its second
 animation derivative is the approved eight-pose side-right ↔ back V4 turn,
 pinned by V5. V6 records the first separate scale-review refinement; V7 is the
 current unapproved correction of its F8 lower-leg mask and geometry defects.
-V1–V7 remain reversible provenance; the current unapproved cadence trial is at
-`/keeper-review/keeper-prime-turn-side-back-v8/`. Every
+V1–V8 remain reversible provenance; V8 is rejected and the current unapproved
+single-intermediate trial is at
+`/keeper-review/keeper-prime-turn-side-back-v9/`. Every
 rig-derived model must keep a super-smooth high-resolution
 master; rough edges or jagged internal linework fail even when all geometry
 datums pass.
