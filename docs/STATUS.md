@@ -75,7 +75,11 @@ resulting separate super-smooth Side-right V1 passes all 15 vertical datums and
 keeps a transparent safety gutter. Frank approved it with “Approve side-right
 V1 and build Turn V1.” Turn V1 is now reviewable at
 `/keeper-review/keeper-prime-turn-front-side-v1/`: eight poses, exact approved
-endpoints and exact reverse frame order. It awaits visual approval and has not
+endpoints and exact reverse frame order. Frank approved it with “it is ever so
+slightly jumpy at about 45deg in the turn but I am happy”; the slight 45° jump
+is an accepted recorded limitation. The next unapproved side-right ↔ back Turn
+V1 is at `/keeper-review/keeper-prime-turn-side-back-v1/`, with exact approved
+side/rear endpoints and six new rear-quarter poses. Neither transition has
 entered Final or production.
 
 1. The evidence-based beard/hand audit classifies every manifest frame and pins `keeper_clear_snow` as the canonical fuller stepped beard. A landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It remains fail-closed for unavailable evidence: 163 side-on standing/sitting sheets are inventoried, eight zero-difference reference self-comparisons match, and 994 different-pose frames—including `keeper_darts` 3–6—are non-comparable because no approved beard masks, facial landmarks or hand-depth/component evidence exists. Frank reviewed Darts 3–6 visually on 11 October and accepted the beards with no amendment required; no beard draft is active or promotable. Next, use GPT-5.6 Sol to establish comparison inputs for any future claim, then run the later frame-isolation and released-prop audits.
@@ -107,8 +111,10 @@ entered Final or production.
 
 The Keeper Animation Workbench is deployed separately from the established
 reviewer at `/animation-workbench`. Its Final and active Draft lanes are both
-currently empty pending visual approval of front ↔ side Turn V1; the Prime
-front, Side-right V1 and V5 back artwork endpoints are approved authorities.
+currently empty pending visual approval of side-right ↔ back Turn V1; the Prime
+front, Side-right V1, V5 back and front ↔ side Turn V1 are approved artwork
+authorities. The approved front ↔ side turn carries one accepted slight 45°
+cadence limitation.
 Its shared architecture still
 supports immutable repository-backed Final items and browser-local,
 JSON-exportable Draft recipes that can copy, remove and reorder source-frame references, loop

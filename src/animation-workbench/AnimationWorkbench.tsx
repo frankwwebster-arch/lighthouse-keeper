@@ -196,8 +196,8 @@ export default function AnimationWorkbench() {
         <div>
           <p className={styles.eyebrow}>Separate review surface · production unchanged</p>
           <h1>Keeper Animation Workbench</h1>
-          <p><strong>Final is empty.</strong> Prime Master V1, Side-right V1, the smooth V5 rear endpoint, KP Rig V1 and KP Rig Motion V3 are approved authorities. The separate eight-pose front ↔ side Turn V1 is awaiting visual approval.</p>
-          <p><a href="/keeper-review/keeper-prime-turn-front-side-v1/">Review Turn V1 →</a> · <a href="/keeper-review/keeper-prime-side-right-rigged-v2/">Side-right approval</a> · <a href="/keeper-review/keeper-prime-rig-v3/">Approved Motion V3</a></p>
+          <p><strong>Final is empty.</strong> Prime Master V1, Side-right V1, the smooth V5 rear endpoint, KP Rig V1, KP Rig Motion V3 and front ↔ side Turn V1 are approved authorities. The separate eight-pose side-right ↔ back Turn V1 is awaiting visual approval.</p>
+          <p><a href="/keeper-review/keeper-prime-turn-side-back-v1/">Review side ↔ back Turn V1 →</a> · <a href="/keeper-review/keeper-prime-turn-front-side-v2/">Front ↔ side approval</a> · <a href="/keeper-review/keeper-prime-rig-v3/">Approved Motion V3</a></p>
         </div>
         <nav><a href="/">Game</a><a href="/studio">Recipe Studio</a></nav>
       </header>
@@ -225,7 +225,7 @@ export default function AnimationWorkbench() {
         </aside>
 
         <div className={styles.content}>
-          {!selected || !asset ? <section className={styles.emptyStage}><h2>Animation library reset</h2><p>Prime Master V1, Side-right V1, the smooth V5 rear endpoint, KP Rig V1 and KP Rig Motion V3 are approved. Turn V1 now joins the exact approved front and side endpoints through six smooth intermediate poses; it remains outside Final until you approve the moving transition.</p><p><a href="/keeper-review/keeper-prime-turn-front-side-v1/">Review front ↔ side Turn V1</a></p></section> : <>
+          {!selected || !asset ? <section className={styles.emptyStage}><h2>Animation library reset</h2><p>Prime Master V1, Side-right V1, the smooth V5 rear endpoint, KP Rig V1, KP Rig Motion V3 and front ↔ side Turn V1 are approved. The next proposed core join rotates from the exact side-right endpoint through six smooth rear-quarter poses into the exact approved back endpoint.</p><p><a href="/keeper-review/keeper-prime-turn-side-back-v1/">Review side ↔ back Turn V1</a></p></section> : <>
             <section className={styles.itemHeader}>
               <div>
                 <div className={styles.badges}><span className={selected.lane === 'final' ? styles.finalBadge : styles.draftBadge}>{selected.lane}</span><span>{asset.frames} source frames</span><span>{asset.fps} fps</span><span>{asset.outfit ?? 'standard'}</span></div>

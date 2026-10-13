@@ -6,7 +6,7 @@
   "separateFrom": "/keeper-review/",
   "principles": {
     "final": "Currently empty. An animation enters Final only after explicit visual approval of its complete transition route.",
-    "draft": "Currently empty. Side-right V1 is approved as an artwork authority; the separate eight-pose front \u2194 side Turn V1 is awaiting visual approval outside the active animation lane. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
+    "draft": "Currently empty. Front \u2194 side Turn V1 is an approved artwork authority with one accepted minor 45\u00b0 cadence limitation; the separate eight-pose side-right \u2194 back Turn V1 is awaiting visual approval outside the active animation lane. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
     "transitions": "Every action must carry an inspectable walk \u2192 stop \u2192 optional facing turn \u2192 action ingress and a compatible action \u2192 stop \u2192 walk egress. Root motion continues through stop/start; the engine varies only walking distance from world placement."
   },
   "lanes": {
@@ -540,6 +540,10 @@
     "primeSideRightApprovalRegisterSha256": "8330a011536651433253eca6a449666249af8332a1e4bf7c339c608d3061e19d",
     "primeTurnFrontSideRegister": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/batch-register.json",
     "primeTurnFrontSideRegisterSha256": "9a4a9340ad1ba84101f0654d15b69f5770da52d4adfc016a7e10e4f3d5acb07f",
+    "primeTurnFrontSideApprovalRegister": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v2/batch-register.json",
+    "primeTurnFrontSideApprovalRegisterSha256": "7eba001f046d9435667772ab830ba1de846ed5697c0c86d58f7d59537efed248",
+    "primeTurnSideBackRegister": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v1/batch-register.json",
+    "primeTurnSideBackRegisterSha256": "8daeb9859bdbd6e15e3d6f6c4cb30b0fd332262546e90552f5c5c88508bdc030",
     "runtimeManifest": "public/sprites/manifest.json",
     "runtimeManifestSha256": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
     "productionSpritesChanged": false,

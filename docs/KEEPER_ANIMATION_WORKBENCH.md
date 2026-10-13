@@ -36,9 +36,15 @@ now at `/keeper-review/keeper-prime-side-right-rigged-v1/`: a super-smooth
 has exact zero delta at all 15 hard datums and a transparent safety gutter.
 Frank approved it with “Approve side-right V1 and build Turn V1.” The separate
 eight-pose front ↔ side Turn V1 is now at
-`/keeper-review/keeper-prime-turn-front-side-v1/` awaiting visual approval. It
-uses exact approved endpoints, six independently drawn smooth poses, exact
-reverse frame order and no non-uniform warp. It is not Final or production.
+`/keeper-review/keeper-prime-turn-front-side-v1/`. Frank approved it with “it
+is ever so slightly jumpy at about 45deg in the turn but I am happy”. The
+slight 45° cadence change is explicitly preserved as an accepted minor
+limitation in `/keeper-review/keeper-prime-turn-front-side-v2/`; the V1 bytes
+remain unchanged. The next separate eight-pose side-right ↔ back draft is at
+`/keeper-review/keeper-prime-turn-side-back-v1/`. It uses the exact approved
+side and rear endpoints, six independently drawn rear-quarter poses, exact
+reverse frame order and no non-uniform warp. It is awaiting visual approval and
+is not Final or production.
 
 ## Prime Keeper authority
 
@@ -195,6 +201,7 @@ and does not place an item in either active lane.
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_rig_motion_v3.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_side_right_rigged_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_turn_front_side_v1.py
+/Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_turn_side_back_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_animation_workbench.py
 npm run verify:keeper-prime-master-v1
 npm run verify:keeper-prime-orthographic-v1
@@ -208,6 +215,7 @@ npm run verify:keeper-prime-rig-v3
 npm run verify:keeper-prime-rig-v4
 npm run verify:keeper-prime-side-right-rigged-v1
 npm run verify:keeper-prime-turn-front-side-v1
+npm run verify:keeper-prime-turn-side-back-v1
 npm run verify:keeper-animation-workbench
 npm test
 npm run typecheck
@@ -222,12 +230,15 @@ confirm raw/runtime art and the runtime manifest remain unchanged.
 
 ## Next approval gate
 
-Visually review front ↔ side Turn V1 at
-`/keeper-review/keeper-prime-turn-front-side-v1/` in both directions and route
-context. Its endpoints, height and gutters already pass deterministically; the
-open question is perceived continuity of width, head position, beard mass,
-eyes and timing. Once approved, continue the core set in this chat: side ↔ back
-turn, walk ↔ exact stop and stand ↔ sit. Only after those core joins are
+Visually review side-right ↔ back Turn V1 at
+`/keeper-review/keeper-prime-turn-side-back-v1/` in both directions and route
+context. Its exact approved endpoints, height, floor, reverse order and gutters
+already pass deterministically; the open question is perceived continuity as
+the profile face and beard disappear into rear hair, the cap widens and both
+boots resolve into the approved rear construction. Front ↔ side Turn V1 is now
+an approved artwork authority with its slight 45° cadence change recorded as an
+accepted limitation. After side ↔ back review, continue the core set in this
+chat: walk ↔ exact stop and stand ↔ sit. Only after those core joins are
 accepted should action and costume inventories move to the next chat.
 
 Before those transition batches, use the approved **KP Rig V1**: a posable

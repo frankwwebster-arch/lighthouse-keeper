@@ -21,12 +21,14 @@ const PRIME_RIG_MOTION_APPROVAL_REGISTER = path.join(ROOT, 'art/drafts/keeper-pr
 const PRIME_SIDE_RIGHT_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/batch-register.json')
 const PRIME_SIDE_RIGHT_APPROVAL_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-side-right-rigged-2026-10-13-v2/batch-register.json')
 const PRIME_TURN_FRONT_SIDE_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/batch-register.json')
+const PRIME_TURN_FRONT_SIDE_APPROVAL_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-turn-front-side-2026-10-13-v2/batch-register.json')
+const PRIME_TURN_SIDE_BACK_REGISTER = path.join(ROOT, 'art/drafts/keeper-prime-turn-side-back-2026-10-13-v1/batch-register.json')
 const EXPECTED_FINALS: string[] = []
 const EXPECTED_DRAFTS: string[] = []
 const fail = (message: string): never => { throw new Error(`keeper animation workbench: ${message}`) }
 const sha256 = (file: string) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')
 
-for (const file of [DATA, PUBLIC, PAGE, UI, MODEL, CSS, CORE_V2_REGISTER, PRIME_MASTER_REGISTER, PRIME_ORTHOGRAPHIC_REGISTER, PRIME_RIG_REGISTER, PRIME_RIG_MOTION_REGISTER, PRIME_RIG_MOTION_APPROVAL_REGISTER, PRIME_SIDE_RIGHT_REGISTER, PRIME_SIDE_RIGHT_APPROVAL_REGISTER, PRIME_TURN_FRONT_SIDE_REGISTER]) {
+for (const file of [DATA, PUBLIC, PAGE, UI, MODEL, CSS, CORE_V2_REGISTER, PRIME_MASTER_REGISTER, PRIME_ORTHOGRAPHIC_REGISTER, PRIME_RIG_REGISTER, PRIME_RIG_MOTION_REGISTER, PRIME_RIG_MOTION_APPROVAL_REGISTER, PRIME_SIDE_RIGHT_REGISTER, PRIME_SIDE_RIGHT_APPROVAL_REGISTER, PRIME_TURN_FRONT_SIDE_REGISTER, PRIME_TURN_FRONT_SIDE_APPROVAL_REGISTER, PRIME_TURN_SIDE_BACK_REGISTER]) {
   if (!fs.existsSync(file)) fail(`missing ${path.relative(ROOT, file)}`)
 }
 if (!fs.readFileSync(DATA).equals(fs.readFileSync(PUBLIC))) fail('data and public catalogues differ')
@@ -168,9 +170,11 @@ if (catalogue.provenance?.primeRigMotionApprovalRegisterSha256 !== sha256(PRIME_
 if (catalogue.provenance?.primeSideRightRegisterSha256 !== sha256(PRIME_SIDE_RIGHT_REGISTER)) fail('workbench does not pin the 15/15 side-right candidate')
 if (catalogue.provenance?.primeSideRightApprovalRegisterSha256 !== sha256(PRIME_SIDE_RIGHT_APPROVAL_REGISTER)) fail('workbench does not pin the side-right approval')
 if (catalogue.provenance?.primeTurnFrontSideRegisterSha256 !== sha256(PRIME_TURN_FRONT_SIDE_REGISTER)) fail('workbench does not pin Turn V1')
+if (catalogue.provenance?.primeTurnFrontSideApprovalRegisterSha256 !== sha256(PRIME_TURN_FRONT_SIDE_APPROVAL_REGISTER)) fail('workbench does not pin front ↔ side Turn V1 approval')
+if (catalogue.provenance?.primeTurnSideBackRegisterSha256 !== sha256(PRIME_TURN_SIDE_BACK_REGISTER)) fail('workbench does not pin side ↔ back Turn V1')
 
 const ui = fs.readFileSync(UI, 'utf8')
-for (const label of ['Final', 'Draft', 'Copy to Draft', 'Copy frame', 'Remove frame', 'Move left', 'Move right', 'Repeat section', 'Transition preview', 'Required for every action', 'begins hidden behind', 'cycles set by game placement', 'Export Draft JSON', 'Import Draft JSON', 'Final is empty', 'No animations are currently Final', 'Prime Master V1', 'Side-right V1', 'KP Rig V1', 'KP Rig Motion V3', 'eight-pose front ↔ side Turn V1 is awaiting visual approval', 'Review Turn V1']) {
+for (const label of ['Final', 'Draft', 'Copy to Draft', 'Copy frame', 'Remove frame', 'Move left', 'Move right', 'Repeat section', 'Transition preview', 'Required for every action', 'begins hidden behind', 'cycles set by game placement', 'Export Draft JSON', 'Import Draft JSON', 'Final is empty', 'No animations are currently Final', 'Prime Master V1', 'Side-right V1', 'KP Rig V1', 'KP Rig Motion V3', 'front ↔ side Turn V1 are approved authorities', 'side-right ↔ back Turn V1 is awaiting visual approval', 'Review side ↔ back Turn V1']) {
   if (!ui.includes(label)) fail(`UI omits ${label}`)
 }
 for (const functionName of ['copyTimelineEntry', 'removeTimelineEntry', 'moveTimelineEntry', 'expandTimeline', 'transitionPlayback', 'transitionWarnings', 'reconcileDraftLibrary']) {

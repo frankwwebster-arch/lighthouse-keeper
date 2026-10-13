@@ -68,7 +68,12 @@ approved Motion V3 on 13 October 2026 with “Approved, very good indeed”. Tha
 approval authorized the now-approved smooth 15/15 side-right artwork. The
 separate eight-pose Turn V1 at
 `/keeper-review/keeper-prime-turn-front-side-v1/` joins the exact approved front
-and side endpoints and awaits visual approval; it is not Final or production.
+and side endpoints. Frank approved it with “it is ever so slightly jumpy at
+about 45deg in the turn but I am happy”; the slight 45° cadence change is an
+accepted recorded limitation, not an unmentioned perfection claim. The
+separate side-right ↔ back Turn V1 draft is now at
+`/keeper-review/keeper-prime-turn-side-back-v1/`, joining the exact approved
+side and rear endpoints. Neither turn is Final or production.
 The game engine will extend only the
 walk from world placement, beginning the cycle while the Keeper is still hidden
 behind the departure door. The workbench does not share data with the existing
@@ -113,7 +118,7 @@ must remain paused to avoid duplicate alerts.
 - `art/source/first-production-batch/` — untouched generated sources and prompt/provenance notes; `scripts/build_first_asset_batch.py` rebuilds the exact `art/raw/` deliveries, then `npm run sprites` publishes them.
 - `docs/PRODUCTION_ASSET_KIT.md` — exact Pixel filenames, dimensions, anchors, pivots, z-order, frame counts, fps, and delivery order.
 - `docs/KEEPER_ANIMATIONS.md` — plain-English animation index, direction rules and object-alignment instructions.
-- `docs/KEEPER_ANIMATION_WORKBENCH.md`, `data/keeper_animation_workbench.json` and `src/animation-workbench/` — the separate Draft/Final framework for non-destructive frame editing, section loops and complete transition previews. Its editor remains implemented, but the library is intentionally empty while front ↔ side Turn V1 receives visual review. Only world-distance walking will vary in runtime, beginning hidden behind the departure door; production remains unchanged.
+- `docs/KEEPER_ANIMATION_WORKBENCH.md`, `data/keeper_animation_workbench.json` and `src/animation-workbench/` — the separate Draft/Final framework for non-destructive frame editing, section loops and complete transition previews. Its editor remains implemented, but the library is intentionally empty while side-right ↔ back Turn V1 receives visual review. Front ↔ side Turn V1 is an approved artwork authority with one accepted minor 45° cadence limitation. Only world-distance walking will vary in runtime, beginning hidden behind the departure door; production remains unchanged.
 - `docs/KEEPER_ANIMATION_HANDOFF.md` — complete keeper review checkpoint, correction history, exact transition-gap inventory, object-binding design and ready-to-paste next-task prompt.
 - `docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md` — proven Keeper artwork recipe, continuity rules, rejected methods, accepted artist/snooker case studies, evidence checklist and exact-name review workflow.
 - `docs/KEEPER_FULL_FACE_INVENTORY.md`, `data/keeper_full_face_inventory.json` and `art/drafts/keeper-full-face-canon-pack-2026-10-12-v1/` — the complete read-only front-facing inventory and approved, reversible full-face canon pack. The first two unpromoted V2 redraws are isolated in `art/drafts/keeper-full-face-standard-turn-redraw-2026-10-12-v2/`; their rejected V1 predecessor remains historical and unmodified.

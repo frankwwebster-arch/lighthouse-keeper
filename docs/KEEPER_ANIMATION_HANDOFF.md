@@ -1112,8 +1112,13 @@ master with a uniformly registered 256 × 320 proxy, exact zero delta at all 15
 datums and a transparent gutter. Frank approved it with “Approve side-right V1
 and build Turn V1.” The resulting Turn V1 review pack joins the exact approved
 front and side endpoints with six smooth intermediate poses and an exact
-reverse strip. Both workbench lanes remain empty, and Turn V1 remains
-unapproved; no production sprite or runtime animation has changed.
+reverse strip. Frank approved that turn with “it is ever so slightly jumpy at
+about 45deg in the turn but I am happy”. Its immutable V2 approval record keeps
+the slight 45° cadence change as an accepted minor limitation. The separate
+side-right ↔ back Turn V1 now joins the exact approved side and V5 rear
+endpoints through six independently drawn rear-quarter poses and an exact
+reverse strip. It awaits visual approval. Both workbench lanes remain empty;
+no production sprite or runtime animation has changed.
 
 Frank authorized and then approved a **Keeper Prime Construction Rig (KP Rig
 V1)** before animation redrafting. His exact 13 October 2026 approval was
@@ -1134,8 +1139,10 @@ ankle sit/stand are exact V2 records. This deliberately simplified mannequin
 deforms no finished raster and promotes nothing. Frank approved Motion V3 on 13
 October 2026 with “Approved, very good indeed”. Its first authorized derived-art
 task produced the separate rigged Side-right V1, now approved as an artwork
-authority. Its first animation derivative is the unapproved eight-pose front ↔
-side Turn V1. Every rig-derived model must keep a super-smooth high-resolution
+authority. Its first animation derivative is the eight-pose front ↔ side Turn
+V1, now approved with its slight 45° cadence limitation recorded. Its second
+animation derivative is the unapproved eight-pose side-right ↔ back Turn V1 at
+`/keeper-review/keeper-prime-turn-side-back-v1/`. Every rig-derived model must keep a super-smooth high-resolution
 master; rough edges or jagged internal linework fail even when all geometry
 datums pass.
 

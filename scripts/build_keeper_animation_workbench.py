@@ -23,6 +23,8 @@ PRIME_RIG_MOTION_APPROVAL = ROOT / "art/drafts/keeper-prime-construction-rig-202
 PRIME_SIDE_RIGHT = ROOT / "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1"
 PRIME_SIDE_RIGHT_APPROVAL = ROOT / "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v2"
 PRIME_TURN_FRONT_SIDE = ROOT / "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1"
+PRIME_TURN_FRONT_SIDE_APPROVAL = ROOT / "art/drafts/keeper-prime-turn-front-side-2026-10-13-v2"
+PRIME_TURN_SIDE_BACK = ROOT / "art/drafts/keeper-prime-turn-side-back-2026-10-13-v1"
 PUBLIC = ROOT / "public/keeper-animation-workbench"
 DATA_PATH = ROOT / "data/keeper_animation_workbench.json"
 APPROVAL_WORDING = "I am very happy with your V2."
@@ -300,7 +302,7 @@ def main() -> None:
         "separateFrom": "/keeper-review/",
         "principles": {
             "final": "Currently empty. An animation enters Final only after explicit visual approval of its complete transition route.",
-            "draft": "Currently empty. Side-right V1 is approved as an artwork authority; the separate eight-pose front ↔ side Turn V1 is awaiting visual approval outside the active animation lane. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
+            "draft": "Currently empty. Front ↔ side Turn V1 is an approved artwork authority with one accepted minor 45° cadence limitation; the separate eight-pose side-right ↔ back Turn V1 is awaiting visual approval outside the active animation lane. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
             "transitions": "Every action must carry an inspectable walk → stop → optional facing turn → action ingress and a compatible action → stop → walk egress. Root motion continues through stop/start; the engine varies only walking distance from world placement.",
         },
         "lanes": {
@@ -353,6 +355,10 @@ def main() -> None:
             "primeSideRightApprovalRegisterSha256": sha256(PRIME_SIDE_RIGHT_APPROVAL / "batch-register.json"),
             "primeTurnFrontSideRegister": rel(PRIME_TURN_FRONT_SIDE / "batch-register.json"),
             "primeTurnFrontSideRegisterSha256": sha256(PRIME_TURN_FRONT_SIDE / "batch-register.json"),
+            "primeTurnFrontSideApprovalRegister": rel(PRIME_TURN_FRONT_SIDE_APPROVAL / "batch-register.json"),
+            "primeTurnFrontSideApprovalRegisterSha256": sha256(PRIME_TURN_FRONT_SIDE_APPROVAL / "batch-register.json"),
+            "primeTurnSideBackRegister": rel(PRIME_TURN_SIDE_BACK / "batch-register.json"),
+            "primeTurnSideBackRegisterSha256": sha256(PRIME_TURN_SIDE_BACK / "batch-register.json"),
             "runtimeManifest": rel(MANIFEST_PATH),
             "runtimeManifestSha256": sha256(MANIFEST_PATH),
             "productionSpritesChanged": False,

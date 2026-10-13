@@ -1,0 +1,49 @@
+{
+  "batchId": "keeper-prime-turn-front-side-2026-10-13-v2",
+  "status": "approved-front-side-turn-artwork-authority",
+  "purpose": "Preserve Frank's visual approval of Turn V1, including its accepted slight 45-degree cadence limitation, without changing the immutable V1 review pack.",
+  "approval": {
+    "approvedBy": "Frank",
+    "approvedOn": "2026-10-13",
+    "wording": "it is ever so slightly jumpy at about 45deg in the turn but I am happy",
+    "scope": "The eight-frame reversible Keeper Prime front-to-side-right turn shown in Turn V1.",
+    "acceptedLimitation": "A very slight visual jump around the 45-degree stage is accepted for this artwork authority. It is documented rather than silently described as perfect."
+  },
+  "approvedCandidate": {
+    "register": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/batch-register.json",
+    "registerSha256": "9a4a9340ad1ba84101f0654d15b69f5770da52d4adfc016a7e10e4f3d5acb07f",
+    "forwardStrip": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/keeper_prime_turn_front_to_side-right_f8.png",
+    "forwardStripSha256": "8abdcde40f587f40b9b9f1487f06db7ba63d281409a1165b630671c58c7db66d",
+    "reverseStrip": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/keeper_prime_turn_side-right_to_front_f8.png",
+    "reverseStripSha256": "3842b22f0e40bfc237d76ec6dec223c78d5695a5f6ccb82e890e56fb83b578fa",
+    "publicReview": "/keeper-review/keeper-prime-turn-front-side-v1/",
+    "publicPage": "public/keeper-review/keeper-prime-turn-front-side-v1/index.html",
+    "publicPageSha256": "a34a219b1636c1b12b47a6b5ba0d3a63b2b6af07119d7d27cd8da9992b56fab7"
+  },
+  "approvedGeometry": {
+    "anglesDegrees": [0, 8, 15, 30, 45, 60, 75, 90],
+    "frames": 8,
+    "fps": 8,
+    "cell": [256, 320],
+    "density": 8,
+    "standingHeightPixels": 298,
+    "edgeAlphaPixelsPerFrame": 0,
+    "frontEndpointByteIdentical": true,
+    "sideEndpointByteIdentical": true,
+    "reverseIsExactFrameOrderReverse": true
+  },
+  "approvalBoundary": {
+    "turnV1Approved": true,
+    "acceptedMinorLimitationRecorded": true,
+    "authorizesSideBackTurnV1Draft": true,
+    "sideBackTurnApproved": false,
+    "finishedAnimationApproved": false,
+    "productionPromotionAllowed": false
+  },
+  "approvalReview": {
+    "publicReview": "/keeper-review/keeper-prime-turn-front-side-v2/",
+    "publicPage": "public/keeper-review/keeper-prime-turn-front-side-v2/index.html"
+  },
+  "nextGate": "Author a separate reversible side-right-to-back Turn V1 draft from the exact approved side-right and exact approved V5 rear endpoints, then return its animation and route-context preview for visual approval.",
+  "rollback": "Delete only art/drafts/keeper-prime-turn-front-side-2026-10-13-v2 and public/keeper-review/keeper-prime-turn-front-side-v2; the approved V1 artwork pack, earlier authorities and production remain unchanged."
+}
