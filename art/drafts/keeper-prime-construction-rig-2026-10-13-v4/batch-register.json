@@ -1,0 +1,46 @@
+{
+  "batchId": "keeper-prime-construction-rig-2026-10-13-v4",
+  "status": "approved-motion-authority",
+  "purpose": "Preserve Frank's approval of KP Rig Motion V3 without changing the approved V3 review pack.",
+  "approval": {
+    "approvedBy": "Frank",
+    "approvedOn": "2026-10-13",
+    "wording": "Approved, very good indeed",
+    "scope": "KP Rig Motion V3 construction motion: restrained idle, slower eight-step translating walk, controlled reach and planted-ankle sit/stand."
+  },
+  "approvedCandidate": {
+    "register": "art/drafts/keeper-prime-construction-rig-2026-10-13-v3/batch-register.json",
+    "registerSha256": "fca833a2153e33f6672b1a42203c88b705e35e0a6d689c34721992a3c5965f34",
+    "motion": "art/drafts/keeper-prime-construction-rig-2026-10-13-v3/motion/keeper-prime-rig-motion-v3.json",
+    "motionSha256": "683b564fe8766d3616f3be596bed11908eeab5ee3731596c929bb7442326da44",
+    "publicReview": "/keeper-review/keeper-prime-rig-v3/",
+    "publicPage": "public/keeper-review/keeper-prime-rig-v3/index.html",
+    "publicPageSha256": "e341da8c5a80b23efff94b845a532eca6e45e1db9d6842f25b5ddb87c76f2cdc"
+  },
+  "approvedMotion": {
+    "walkFrames": 150,
+    "walkFps": 30,
+    "walkDurationSeconds": 5,
+    "walkGaitCycles": 4,
+    "walkImpliedSteps": 8,
+    "walkRootTravelPixels": 840,
+    "walkRootSpeedPixelsPerSecond": 168,
+    "walkThighSwingDegrees": 32,
+    "walkMaximumKneeLiftDegrees": 44,
+    "maximumInvariantSegmentErrorPixels": 0,
+    "unchangedFromV2": [
+      "idle",
+      "reach",
+      "sitStand"
+    ]
+  },
+  "approvalBoundary": {
+    "constructionMotionApproved": true,
+    "authorizesSmoothSideRightDraft": true,
+    "finishedKeeperArtworkApproved": false,
+    "finishedAnimationApproved": false,
+    "productionPromotionAllowed": false
+  },
+  "nextGate": "Author one separate super-smooth side-right Keeper Prime endpoint that passes all 15 registered y-datums, then return it for explicit visual approval before turn animation authoring.",
+  "rollback": "Delete only art/drafts/keeper-prime-construction-rig-2026-10-13-v4; approved V1 and V3 packs, orthographic authorities and production remain unchanged."
+}

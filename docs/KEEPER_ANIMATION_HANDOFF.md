@@ -1126,8 +1126,9 @@ slower walk. V3 at `/keeper-review/keeper-prime-rig-v3/` changes only that walk:
 eight steps over five seconds at 168 px/s rather than two steps over two seconds
 at 420 px/s, with greater thigh swing and knee lift. Idle, reach and planted-
 ankle sit/stand are exact V2 records. This deliberately simplified mannequin
-deforms no finished raster and promotes nothing. After motion review, its first
-derived-art task is a separate smooth zero-delta side. Every rig-derived model
+deforms no finished raster and promotes nothing. Frank approved Motion V3 on 13
+October 2026 with “Approved, very good indeed”. Its first authorized derived-art
+task is now a separate smooth zero-delta side-right endpoint. Every rig-derived model
 must keep a super-smooth high-resolution master; rough edges or jagged internal
 linework fail even when all geometry datums pass.
 
