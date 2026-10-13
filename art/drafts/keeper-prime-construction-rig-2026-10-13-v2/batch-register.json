@@ -1,0 +1,55 @@
+{
+  "batchId": "keeper-prime-construction-rig-2026-10-13-v2",
+  "status": "approved-rig-motion-demo-awaiting-review",
+  "purpose": "Record Frank's KP Rig V1 approval and prove its fixed-length construction skeleton under representative motion before finished side artwork.",
+  "approvedV1": {
+    "register": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/batch-register.json",
+    "registerSha256": "78ba5378f680413b15a73784f9b4b7bb8fa3d177933876b62c75f847e8f2720d",
+    "rig": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/rig/keeper-prime-rig-v1.json",
+    "rigSha256": "5786df6eb654471f81dda161fc909a5768abb2d96aade24fb84448beb7cdf765"
+  },
+  "approval": {
+    "approvedBy": "Frank",
+    "approvedOn": "2026-10-13",
+    "wording": "Approve KP Rig V1, let's see it animated",
+    "scope": "KP Rig V1 measurement and posable construction contract; authorizes construction-motion proof, not finished art or production promotion."
+  },
+  "motion": {
+    "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v2/motion/keeper-prime-rig-motion-v2.json",
+    "sha256": "bedfc66f174e7ce7598ca55b642595dc28cb6b805a82828df4a9f296ea45059e",
+    "clips": [
+      "idle",
+      "walk",
+      "reach",
+      "sitStand"
+    ]
+  },
+  "evidence": {
+    "motionContactSheet": {
+      "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v2/evidence/rig-motion-keyframes.png",
+      "sha256": "0e64dc88b2b2c30a1e7141ecb66c8a26d5af5c89bcdf672531589b6314887fcc"
+    }
+  },
+  "validation": {
+    "maximumInvariantSegmentErrorPixels": 0.0,
+    "allInvariantSegmentErrorsBelowOneMillionthPixel": true,
+    "idleFirstLastJointDelta": 0.295457,
+    "reachReturnsToNeutral": true,
+    "sitStandReturnsToNeutral": true,
+    "sitStandNearAnkleMaximumDrift": 0.0,
+    "sitStandFarAnkleMaximumDrift": 0.0,
+    "walkRootTravelPixels": 840.0,
+    "walkStartsAndEndsHidden": true,
+    "finishedRasterDeformed": false,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "animationDraftsChanged": false
+  },
+  "approvalBoundary": {
+    "motionReviewAllowsSideArtworkAuthoring": true,
+    "finishedAnimationApproved": false,
+    "productionPromotionAllowed": false
+  },
+  "nextGate": "Review construction motion, then author one separate smooth side-right endpoint with 15/15 exact y-datums.",
+  "rollback": "Delete only art/drafts/keeper-prime-construction-rig-2026-10-13-v2 and public/keeper-review/keeper-prime-rig-v2; approved V1, orthographic authorities and production remain unchanged."
+}

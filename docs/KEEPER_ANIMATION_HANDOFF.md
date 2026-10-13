@@ -1110,18 +1110,24 @@ alternative remains historical provenance. Both workbench lanes remain empty,
 and no production sprite or animation may change until a smooth zero-delta side
 endpoint is explicitly approved.
 
-Frank authorized a **Keeper Prime Construction Rig (KP Rig V1)** before
-animation redrafting. The versioned V1 review pack now registers a posable 2D
+Frank authorized and then approved a **Keeper Prime Construction Rig (KP Rig
+V1)** before animation redrafting. His exact 13 October 2026 approval was
+“Approve KP Rig V1, let's see it animated”. The immutable versioned V1 review
+pack registers a posable 2D
 bone/joint skeleton, fixed segment lengths, front/side/back body-volume
 envelopes, head/ear/shoulder/chest/waist/hip measurements, beard/hair and
 clothing datums, prop contacts, pose limits, occlusion order and floor anchoring.
 Its public pose lab rotates limbs without changing their registered lengths.
 The rig distinguishes invariant anatomy from view-dependent projected widths
-and never mechanically stretches finished beard, hair or clothing art. It is
-awaiting visual approval at `/keeper-review/keeper-prime-rig-v1/`; only after
-approval does its first derived art task—the zero-delta side—begin. Every
-rig-derived model must keep a super-smooth high-resolution master; rough edges
-or jagged internal linework fail even when all geometry datums pass.
+and never mechanically stretches finished beard, hair or clothing art. Its
+separate V2 construction-motion proof is reviewable at
+`/keeper-review/keeper-prime-rig-v2/`: restrained idle, an 840 px root-motion
+walk whose reset occurs off-stage, controlled reach and sit/stand with planted
+ankles. This deliberately simplified mannequin deforms no finished raster and
+promotes nothing. After motion review, its first derived-art task is a separate
+smooth zero-delta side. Every rig-derived model must keep a super-smooth
+high-resolution master; rough edges or jagged internal linework fail even when
+all geometry datums pass.
 
 ## Review-comments workflow for a later feedback round
 

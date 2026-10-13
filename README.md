@@ -48,11 +48,15 @@ and keeps the complete front/back alpha match. Its 1122 × 1402 source is the
 rendering-quality master; the 256 × 320 orthographic image is only its
 anti-aliased registration proxy. The V3 side audit still blocks that endpoint
 at 5 of 15 hard internal datums.
-KP Rig V1 is now a separate reversible review pack at
-`/keeper-review/keeper-prime-rig-v1/`. It defines 24 front/back bones, 24 side
-projection bones, fixed bilateral limb lengths, body-volume envelopes, all 15
-target y-datums and an interactive fixed-length pose lab. It contains no new
-side artwork and promotes nothing.
+Frank approved KP Rig V1 on 13 October 2026 with “Approve KP Rig V1, let's see
+it animated”. The immutable measurement pack remains at
+`/keeper-review/keeper-prime-rig-v1/`; it defines 24 front/back bones, 24 side
+projection bones, fixed bilateral limb lengths, body-volume envelopes and all
+15 target y-datums. Its separate V2 construction-motion proof is at
+`/keeper-review/keeper-prime-rig-v2/`, with restrained idle, a genuinely
+translating off-stage walk, controlled reach and planted-ankle sit/stand. It
+deforms no finished raster art and promotes nothing. Motion review is the gate
+before the separate smooth 15/15 side artwork draft.
 The game engine will extend only the
 walk from world placement, beginning the cycle while the Keeper is still hidden
 behind the departure door. The workbench does not share data with the existing

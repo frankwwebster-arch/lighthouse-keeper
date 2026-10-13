@@ -18,6 +18,7 @@ CORE = ROOT / "art/drafts/keeper-prime-core-transitions-2026-10-12-v2"
 PRIME_MASTER = ROOT / "art/drafts/keeper-prime-master-2026-10-12-v1"
 PRIME_ORTHOGRAPHIC = ROOT / "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5"
 PRIME_RIG = ROOT / "art/drafts/keeper-prime-construction-rig-2026-10-13-v1"
+PRIME_RIG_MOTION = ROOT / "art/drafts/keeper-prime-construction-rig-2026-10-13-v2"
 PUBLIC = ROOT / "public/keeper-animation-workbench"
 DATA_PATH = ROOT / "data/keeper_animation_workbench.json"
 APPROVAL_WORDING = "I am very happy with your V2."
@@ -295,7 +296,7 @@ def main() -> None:
         "separateFrom": "/keeper-review/",
         "principles": {
             "final": "Currently empty. An animation enters Final only after explicit visual approval of its complete transition route.",
-            "draft": "Currently empty while KP Rig V1 is reviewed, before it is used to produce a smooth side endpoint that passes the V3 vertical-landmark gate. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
+            "draft": "Currently empty while the approved KP Rig V1 is motion-tested, before it is used to produce a smooth side endpoint that passes the V3 vertical-landmark gate. Future non-destructive recipes may copy, remove and reorder frame references or repeat selected sections without changing source PNGs.",
             "transitions": "Every action must carry an inspectable walk → stop → optional facing turn → action ingress and a compatible action → stop → walk egress. Root motion continues through stop/start; the engine varies only walking distance from world placement.",
         },
         "lanes": {
@@ -304,7 +305,7 @@ def main() -> None:
         },
         "assets": assets,
         "storage": {
-            "drafts": "empty pending approval of KP Rig V1 and a smooth side endpoint with zero delta at every V3 vertical landmark; the V5 rear endpoint is approved for rig authoring and prior transitions remain provenance only",
+            "drafts": "empty pending review of KP Rig Motion V2 and a smooth side endpoint with zero delta at every V3 vertical landmark; KP Rig V1 and the V5 rear endpoint are approved authorities and prior transitions remain provenance only",
             "final": "empty by explicit user decision; browser tools never mutate Final records",
         },
         "featureContract": {
@@ -338,6 +339,8 @@ def main() -> None:
             "primeOrthographicRegisterSha256": sha256(PRIME_ORTHOGRAPHIC / "batch-register.json"),
             "primeRigRegister": rel(PRIME_RIG / "batch-register.json"),
             "primeRigRegisterSha256": sha256(PRIME_RIG / "batch-register.json"),
+            "primeRigMotionRegister": rel(PRIME_RIG_MOTION / "batch-register.json"),
+            "primeRigMotionRegisterSha256": sha256(PRIME_RIG_MOTION / "batch-register.json"),
             "runtimeManifest": rel(MANIFEST_PATH),
             "runtimeManifestSha256": sha256(MANIFEST_PATH),
             "productionSpritesChanged": False,
