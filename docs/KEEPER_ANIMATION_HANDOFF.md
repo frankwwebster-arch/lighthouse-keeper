@@ -1115,10 +1115,16 @@ front and side endpoints with six smooth intermediate poses and an exact
 reverse strip. Frank approved that turn with “it is ever so slightly jumpy at
 about 45deg in the turn but I am happy”. Its immutable V2 approval record keeps
 the slight 45° cadence change as an accepted minor limitation. The separate
-side-right ↔ back Turn V1 now joins the exact approved side and V5 rear
-endpoints through six independently drawn rear-quarter poses and an exact
-reverse strip. It awaits visual approval. Both workbench lanes remain empty;
-no production sprite or runtime animation has changed.
+side-right ↔ back Turn V1 joins the exact approved side and V5 rear endpoints
+through six independently drawn rear-quarter poses and an exact reverse strip.
+During review Frank identified a visible palette discontinuity: the jumper
+darkened at its exact rear F8 endpoint. The new V2 candidate at
+`/keeper-review/keeper-prime-turn-side-back-v2/` retains exact V1 bytes for
+F1–F7 and changes only 8,940 masked blue-jumper pixels in F8. Its alpha,
+geometry, cream stripe, cap and every non-jumper pixel remain unchanged. V1 and
+the approved rear master are untouched; V2 awaits visual approval. Both
+workbench lanes remain empty; no production sprite or runtime animation has
+changed.
 
 Frank authorized and then approved a **Keeper Prime Construction Rig (KP Rig
 V1)** before animation redrafting. His exact 13 October 2026 approval was
@@ -1141,8 +1147,10 @@ October 2026 with “Approved, very good indeed”. Its first authorized derived
 task produced the separate rigged Side-right V1, now approved as an artwork
 authority. Its first animation derivative is the eight-pose front ↔ side Turn
 V1, now approved with its slight 45° cadence limitation recorded. Its second
-animation derivative is the unapproved eight-pose side-right ↔ back Turn V1 at
-`/keeper-review/keeper-prime-turn-side-back-v1/`. Every rig-derived model must keep a super-smooth high-resolution
+animation derivative is the unapproved eight-pose side-right ↔ back turn. V1
+remains reversible provenance; the current V2 jumper-colour correction
+candidate is at `/keeper-review/keeper-prime-turn-side-back-v2/`. Every
+rig-derived model must keep a super-smooth high-resolution
 master; rough edges or jagged internal linework fail even when all geometry
 datums pass.
 
