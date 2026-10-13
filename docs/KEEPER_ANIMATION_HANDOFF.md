@@ -1200,9 +1200,13 @@ rig-derived model must keep a super-smooth high-resolution
 master; rough edges or jagged internal linework fail even when all geometry
 datums pass.
 
-The next one-at-a-time core candidate is now
-`art/drafts/keeper-prime-walk-2026-10-13-v1/`, reviewed at
-`/keeper-review/keeper-prime-walk-v1/`. It is the first finished-art right-facing
+The next one-at-a-time core candidate is the artwork in
+`art/drafts/keeper-prime-walk-2026-10-13-v1/`, now reviewed through the
+technical V2 wrapper at `/keeper-review/keeper-prime-walk-v2/`. The V2 wrapper
+copies all 13 V1 review images byte-for-byte and changes only their public URLs
+from relative `assets/...` paths to absolute V2 paths. This prevents Vercel's
+trailing-slash canonicalization from resolving the images incorrectly beneath
+`/keeper-review/assets/`; V1 remains immutable provenance. It is the first finished-art right-facing
 walk proposal derived from the approved Side-right artwork and approved Rig
 Motion V3. One coherent 1536 × 1024 source supplies eight isolated poses; all
 eight are registered with one shared scale, fixed body axis and common floor.
