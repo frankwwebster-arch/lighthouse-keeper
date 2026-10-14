@@ -151,6 +151,9 @@ still be recovered manually.
 - `art/drafts/keeper-fast-transition-timing-2026-10-14-v1/` — Frank's
   approved fast-transition values, scope exclusions and unchanged-authority
   hashes;
+- `art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v1/` — the active
+  review-only route combining exact Walk V6, the approved stop bridge, exact
+  side/back V9 and Fast Timing V1 without new character drawing;
 - `scripts/build_keeper_animation_workbench.py` — deterministic catalogue and
   historical-asset publisher;
 - `scripts/verify_keeper_animation_workbench.ts` — lane, provenance, geometry,
@@ -200,6 +203,7 @@ and does not place an item in either active lane.
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_side_right_rigged_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_turn_front_side_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_turn_side_back_v1.py
+/Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_walk_stop_turn_back_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_animation_workbench.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_timing_lab_v1.py
 npm run verify:keeper-prime-master-v1
@@ -215,6 +219,7 @@ npm run verify:keeper-prime-rig-v4
 npm run verify:keeper-prime-side-right-rigged-v1
 npm run verify:keeper-prime-turn-front-side-v1
 npm run verify:keeper-prime-turn-side-back-v1
+npm run verify:keeper-prime-walk-stop-turn-back-v1
 npm run verify:keeper-animation-workbench
 npm run verify:keeper-timing-lab-v1
 npm test
@@ -232,10 +237,14 @@ confirm raw/runtime art and the runtime manifest remain unchanged.
 
 Fast Timing V1 is approved and hash-pinned at
 `art/drafts/keeper-fast-transition-timing-2026-10-14-v1/`; the compared frame
-URLs remain identical. The next one-at-a-time core route is front → side → walk,
-followed by walk → stop → back,
-back → side → walk and the two sit/stand routes. Only after those core joins are
-accepted should action and costume inventories move to the next chat.
+URLs remain identical. Walk → stop → turn fully away V1 is now the active
+one-at-a-time review route. It contains 32 playback frames, travels 374
+high-resolution pixels and lasts approximately 3.058 seconds: 16 walk frames
+at 10 fps, four deceleration frames at 12 fps, eight turn frames at 16 fps and
+the approved 625 ms rear hold. It replays neither the walk contact nor the
+stationary side entry frame. Review it before front → side → walk, back → side
+→ walk and the two sit/stand routes. Only after those core joins are accepted
+should action and costume inventories move to the next chat.
 
 Before those transition batches, use the approved **KP Rig V1**: a posable
 2D construction skeleton with fixed bone lengths, view-specific projected

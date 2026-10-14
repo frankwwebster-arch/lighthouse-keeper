@@ -128,12 +128,11 @@ successor to `cca03dc` before changing these contracts.
 
 Continue one route at a time, with Frank reviewing each deployed proposal:
 
-1. Improve the Timing Lab inspection layout so a complete translated route can
-   use a full-width or expanded stage. Do not change animation data as part of
-   that UI repair.
+1. After the Vercel repair, deploy and review the prepared walk → stop → turn
+   fully away V1. Its dedicated large and game-scale travel lanes are already
+   full width; it remains outside Final until Frank approves the composite.
 2. Build front → side → walk using approved Fast Timing V1.
-3. Build walk → stop → back, then back → side → walk using approved Fast Timing
-   V1.
+3. Build back → side → walk using approved Fast Timing V1.
 4. Build walk → stop → sit and sit → stop → walk using fixed seat/contact
    anchors.
 5. Only after these core joins are accepted, move to action animations and
@@ -220,6 +219,17 @@ truth. `data/keeper_object_dimensions.json`, `docs/KEEPER_OBJECT_DIMENSIONS.md`,
 `docs/DOORS_STAIRS_AND_COSTUMES.md` are relevant inputs.
 
 ## Collaboration protocol
+
+### Codex animation progress after this handoff
+
+Fast Timing V1 is now the approved transition policy. Codex has prepared the
+next isolated review candidate, walk → stop → turn fully away V1, at
+`art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v1/` with its future
+public route `/keeper-review/keeper-prime-walk-stop-turn-back-v1/`. It uses only
+approved artwork and does not touch the runtime manifest or Workbench lanes.
+The route is deliberately not being deployed while Claude completes the Vercel
+repair. Claude's furniture/locomotion work must therefore treat this directory
+as read-only and need not consume the route until Frank visually approves it.
 
 To avoid Codex and Claude overwriting one another:
 
