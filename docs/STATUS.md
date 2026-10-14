@@ -6,7 +6,7 @@ A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthou
 ## Where it lives
 - Code: github.com/frankwwebster-arch/lighthouse-keeper (branch `main`).
 - Live: **https://lighthouse-keeper-mu.vercel.app** (the one address to use and bookmark).
-- Vercel project `lighthouse-keeper` (team frankwwebster-4308s-projects). Every push to `main` deploys to production.
+- Vercel project `lighthouse-keeper` (team frankwwebster-4308s-projects). Pushes do not deploy; only a `[deploy]` commit on `main` builds production (`npm run deploy`, or the GitHub Actions "Deploy to production" button). See `docs/DEPLOYMENT.md`.
 - The long addresses like `lighthouse-keeper-di4axnjgx-...vercel.app` are one-off links for a single deploy. Ignore them; they are also login-protected.
 - Database: Neon Postgres via `DATABASE_URL` (verified: `/api/players` answers `db:true`). Tables are created on first use: players, saves, player_rules, settings (PIN hash).
 

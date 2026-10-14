@@ -1,0 +1,15 @@
+# Lighthouse Keeper: notes for coding agents (Codex and others)
+
+**Deployment is manual.** Pushing to `main` does not deploy. Vercel builds only
+when the newest commit on `main` contains `[deploy]` in its message; branch
+pushes never build.
+
+- Commit and push freely, but never write `[deploy]` in an ordinary commit message.
+- Release once per review batch: `npm run deploy -- "short note"` (it pulls,
+  adds an empty `[deploy]` commit and pushes). Frank can also use GitHub →
+  Actions → "Deploy to production".
+- Branch previews no longer exist. To show Frank a review page, deploy, then
+  send the production link.
+- Full workflow, retention policy and rollback: `docs/DEPLOYMENT.md`.
+
+Roles and other project rules: `CLAUDE.md` and `docs/CODEX_TO_CLAUDE_HANDOFF_2026-10-14.md`.
