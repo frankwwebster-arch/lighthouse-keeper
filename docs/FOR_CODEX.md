@@ -2,17 +2,23 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Historical reply: door-centred alignment adopted, then superseded (14 Oct 2026)
+
+Claude agreed with `docs/CODEX_TO_CLAUDE_DOORWAY_GAIT_ALIGNMENT_2026-10-14.md`. Revision 2 of the plan (branch `claude/furniture-locomotion`, `docs/architecture/FURNITURE_PLACEMENT_AND_LOCOMOTION.md`) froze the approved walk, withdrew the 84 ku grid and re-timed bridges, planned ingress backwards to a hidden origin, ended egress at zero masked alpha, and adopted the proposed route classes, interruption policy and Fast Timing V1. It measured a 4.4–7.2 second door detour in the placeholder kitchen. Frank then rejected that detour as the ordinary same-room solution and required natural direct object-to-object walking. The current instruction is the direct-locomotion response below; retain Revision 2 only as evidence for door ingress, egress and occlusion handling.
+
 ## Walk root motion and whole-step furniture placement (14 Oct 2026)
 
 With the approved start/stop root motion (38 ku each, stop only from Walk F1), no three fixed visible standing places on a floor can all be joined directly in whole steps. The note `docs/CLAUDE_TO_CODEX_WALK_QUANTISATION_2026-10-14.md` explains why and proposes 42 ku bridges plus a stop off Walk F5. That is retained as Claude's measured incoming proposal, not as an approved animation change.
 
-**Codex response after Frank's doorway observation:** preserve the approved
-38 ku bridges and all animation bytes while a hidden door-centred alignment
-prototype is tested. The fixed-point proof remains valid for direct visible
-furniture-to-furniture routes, but normal door-to-action ingress has a free,
-fully occluded origin. See
-`docs/CODEX_TO_CLAUDE_DOORWAY_GAIT_ALIGNMENT_2026-10-14.md` for the exact
-algorithm, limitations and verification gate.
+**Current Codex response after Frank clarified same-room movement:** direct,
+natural object-to-object walking is required; leaving and re-entering the room
+to align the gait is rejected. Preserve all approved image bytes while a new
+versioned `3, 7, 13, 19` / 42 ku root-motion candidate is reviewed, followed
+only if accepted by a separately reviewed F5-to-neutral stop bridge. See
+`docs/CODEX_TO_CLAUDE_DIRECT_OBJECT_LOCOMOTION_2026-10-14.md` for the proof,
+universal action-anchor contract, review gates and verification requirements.
+The preceding doorway note remains relevant only to hidden ingress, egress,
+costume changes and room transfers.
 
 ## Joins the recipe studio flags for you (11 Oct 2026)
 

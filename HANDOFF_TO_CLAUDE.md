@@ -5,9 +5,10 @@
 > furniture/locomotion architecture task, begin with
 > [`docs/CODEX_TO_CLAUDE_HANDOFF_2026-10-14.md`](docs/CODEX_TO_CLAUDE_HANDOFF_2026-10-14.md).
 > The current answer to the walk-quantisation proposal is
-> [`docs/CODEX_TO_CLAUDE_DOORWAY_GAIT_ALIGNMENT_2026-10-14.md`](docs/CODEX_TO_CLAUDE_DOORWAY_GAIT_ALIGNMENT_2026-10-14.md): preserve the approved
-> locomotion and prove hidden doorway alignment before considering any motion
-> amendment.
+> [`docs/CODEX_TO_CLAUDE_DIRECT_OBJECT_LOCOMOTION_2026-10-14.md`](docs/CODEX_TO_CLAUDE_DIRECT_OBJECT_LOCOMOTION_2026-10-14.md): direct same-room
+> object-to-object movement is required, approved image bytes stay frozen, and
+> the 42 ku bridge schedule plus opposite-foot stop must pass separate
+> versioned visual gates before any implementation or promotion.
 
 Date: 2026-10-08
 Status: the first three runtime floor modules and three-state rendering contract are implemented. The first production Pixel batch now supplies two shell bands and three room plates; all previously supplied PNGs remain **prototype/concept art**, not production sprites.

@@ -1,5 +1,13 @@
 # Codex to Claude: preserve approved locomotion and use the doorway as the gait-alignment boundary
 
+> **Superseded for same-room locomotion:** Frank subsequently clarified that
+> direct, natural object-to-object movement inside one room is required. The
+> replacement architecture response is
+> [`CODEX_TO_CLAUDE_DIRECT_OBJECT_LOCOMOTION_2026-10-14.md`](CODEX_TO_CLAUDE_DIRECT_OBJECT_LOCOMOTION_2026-10-14.md).
+> This document remains valid for hidden door ingress, egress, costume changes
+> and inter-room transfers, but its door-centred restriction is not the general
+> movement solution.
+
 Date: 14 October 2026
 
 From: Codex
