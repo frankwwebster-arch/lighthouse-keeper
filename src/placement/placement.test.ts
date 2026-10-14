@@ -5,7 +5,7 @@ import {
   type Catalogue, type ObjectType, type Placement,
 } from './room'
 import { CATALOGUE, KITCHEN, KITCHEN_PLACEMENTS, LIVING_PLACEMENTS, LIVING_ROOM } from './rooms.data'
-import { packRoom, planDrop, planUpgrade, shuffleAround, snapX } from './shuffle'
+import { DROP_VARIANTS, packRoom, planDrop, planUpgrade, roomHoldsFullyUpgraded, shuffleAround, snapX } from './shuffle'
 import { STEP_KU, lpToKu } from './units'
 import { errorsOf, keeperEnvelope, validateRoom, validateType, validateWithGrowth, type LayoutInput } from './validator'
 
@@ -202,6 +202,35 @@ describe('shuffle and drop (test 14)', () => {
   it('packRoom reproduces the recorded living room', () => {
     const r = packRoom({ room: LIVING_ROOM, catalogue: CATALOGUE, variants: 'all' }, LIVING_PLACEMENTS.map((p) => ({ object: p.object, anchor: p.anchor, tier: 1 })))
     expect(r?.placements).toEqual(LIVING_PLACEMENTS)
+  })
+})
+
+describe('Frank\'s answers of 14 October (questions 1–3)', () => {
+  it('a drop checks only the tier he has now; a bigger upgrade shuffles later', () => {
+    expect(DROP_VARIANTS).toBe('current')
+    const ps = move(KITCHEN_PLACEMENTS, 'cooker', 788)
+    expect(planDrop(kitchen(ps), 'cooker', 788).verdict).toBe('fits')
+    expect(planDrop(kitchen(ps, { variants: 'all' }), 'cooker', 788).verdict).not.toBe('fits')
+  })
+
+  it('every room must hold every item fully upgraded', () => {
+    const items = (ps: Placement[]) => ps.map((p) => ({ object: p.object, anchor: p.anchor }))
+    const living = roomHoldsFullyUpgraded({ room: LIVING_ROOM, catalogue: CATALOGUE }, items(LIVING_PLACEMENTS))
+    expect(living?.placements.find((p) => p.object === 'armchair')?.tier).toBe(3)
+    expect(roomHoldsFullyUpgraded({ room: KITCHEN, catalogue: CATALOGUE }, items(KITCHEN_PLACEMENTS))).not.toBeNull()
+    expect(roomHoldsFullyUpgraded({ room: { ...KITCHEN, widthKu: lpToKu(100) }, catalogue: CATALOGUE }, items(KITCHEN_PLACEMENTS))).toBeNull()
+  })
+
+  it('a far-wall cupboard whose open door hides him makes the last line usable', () => {
+    const anchor = { id: 'use', offsetSteps: 0, facing: 'right' as const, entryPose: 'standing-side-right', exitPose: 'standing-side-right' }
+    const cupboard = (concealed: boolean): ObjectType => ({
+      id: 'cupboard', label: 'Cupboard', lane: 'back', source: 'test fixture',
+      anchors: [{ ...anchor, ...(concealed ? { concealedBy: { label: 'cupboard door', span: [-60, 120] as [number, number] } } : {}) }],
+      tiers: [{ tier: 1, label: 'Cupboard', sprite: 'x', renderAnchor: [0, 0], footprint: [-42, 84], solid: [], contacts: {} }],
+    })
+    const at = (concealed: boolean) => rules({ room: LIVING_ROOM, catalogue: { ...CATALOGUE, cupboard: cupboard(concealed) }, placements: [{ object: 'cupboard', room: 'living', xKu: 1292, anchor: 'use', tier: 1 }] })
+    expect(at(false)).toContain(7)
+    expect(at(true)).toEqual([])
   })
 })
 

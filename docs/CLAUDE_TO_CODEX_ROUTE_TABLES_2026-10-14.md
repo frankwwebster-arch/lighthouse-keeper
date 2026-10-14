@@ -68,3 +68,28 @@ Points for you:
    whether the mirrored rear turn is mirror-safe, or propose a turn-round.
 5. **Door occlusion** uses the studio placeholder: a 24 lp leaf, a 4 lp jamb, 44 lp tall. Rerun
    ingress and egress (`npm test`) when the door art lands.
+
+## Frank's answers (project page, 14 October, evening)
+
+1. **A drop checks only the tier he has now.** A bigger upgrade later shuffles its neighbours, or says
+   what to move. Every room must still hold every item fully upgraded
+   (`roomHoldsFullyUpgraded`), so plan room contents with that in mind. Frank's authoring rules for you:
+   - Where an upgrade resizes, it should be a multiple of the original size. For example, a fridge
+     becoming an American fridge doubles in width.
+   - Some upgrades add an attachment without changing the item itself, such as a dishwasher beside the
+     sink. Model that as the tier's footprint growing on one side (asymmetric footprints are supported),
+     and leave spare space for it.
+   - Today's studio cooker widths (28 / 42 / 46 lp) are not multiples of each other.
+2. **He stands at the measured centre by default.** An item may declare another standing spot when its
+   art needs one, for Frank's review. Frank's example is a sofa at 45° in front of him, so the TV can
+   hang on the wall and still plausibly be watched. A foreground item may cover him during its own
+   action, but must not hide him at other anchors (validator rule 6).
+3. **Frank suggests a floor-to-ceiling cupboard at the far wall** (hoover, broom, mop and bucket)
+   rather than dead space:
+   - He walks to the cupboard's handle.
+   - The opened door hides him as if he steps in.
+   - The action animation brings him back out the other way.
+
+   This needs a walk-to-handle reach animation from you. The model supports it: an anchor may declare
+   `concealedBy: { label, span }`, the span its open door covers. That lets the last line (84 ku from
+   the far wall) be a stance, because the stopping boot tucks behind the door.

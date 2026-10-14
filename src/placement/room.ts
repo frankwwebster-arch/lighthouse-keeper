@@ -109,6 +109,12 @@ export interface KeeperUseAnchor {
   outfit?: string
   prop?: string
   action?: ActionSpec
+  /**
+   * Frank's far-wall cupboard: the item's own opened door is drawn in front of him at this anchor,
+   * hiding [from, to) ku relative to the placement point, so his stopping boot may tuck behind it
+   * past the wall line. The door art is Codex's, for Frank's review.
+   */
+  concealedBy?: { label: string; span: [Ku, Ku] }
 }
 
 export interface ObjectType {

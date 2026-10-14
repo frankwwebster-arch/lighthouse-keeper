@@ -101,10 +101,11 @@ export function snapX(room: Room, xKu: number): Ku {
 }
 
 /**
- * Codex's room-grid contract: a drop is accepted only when every variant (tier) of the object fits.
- * Open for Frank (project page, question 1, recommended); 'current' checks only the tier he has.
+ * Frank (project page, 14 October, question 1): a drop checks only the tier he has now; a bigger
+ * upgrade later shuffles its neighbours (D3). Every room must still hold every item fully upgraded:
+ * see roomHoldsFullyUpgraded. 'all' is Codex's stricter contract, kept as an option.
  */
-export const DROP_VARIANTS: 'all' | 'current' = 'all'
+export const DROP_VARIANTS: 'all' | 'current' = 'current'
 
 /** A child drags an item so its selected anchor snaps to xKu (or the shop places a new one there). */
 export function planDrop(base: LayoutInput, object: string, xKu: Ku, opts: { tier?: number; anchor?: string } = {}): DropPlan {
@@ -154,4 +155,20 @@ export function packRoom(base: Omit<LayoutInput, 'placements'>, order: { object:
   }
   const usedKu = Math.max(...placed.map((p) => p.xKu + base.catalogue[p.object].tiers.find((t) => t.tier === p.tier)!.footprint[1]))
   return { placements: canonicalPlacements(placed), usedKu }
+}
+
+const permutations = <T,>(xs: T[]): T[][] => (xs.length <= 1 ? [xs] : xs.flatMap((x, i) => permutations([...xs.slice(0, i), ...xs.slice(i + 1)]).map((r) => [x, ...r])))
+
+/**
+ * Frank: every room must fit every fully upgraded asset. Tries every order of the room's items, each at
+ * its largest tier, and returns the tightest arrangement found, or null if none fits.
+ */
+export function roomHoldsFullyUpgraded(base: Omit<LayoutInput, 'placements'>, objects: { object: string; anchor: string }[]): { placements: Placement[]; usedKu: Ku } | null {
+  let best: { placements: Placement[]; usedKu: Ku } | null = null
+  const maxed = objects.map((o) => ({ ...o, tier: Math.max(...base.catalogue[o.object].tiers.map((t) => t.tier)) }))
+  for (const order of permutations(maxed)) {
+    const r = packRoom({ ...base, variants: 'current' }, order)
+    if (r && (!best || r.usedKu < best.usedKu)) best = r
+  }
+  return best
 }

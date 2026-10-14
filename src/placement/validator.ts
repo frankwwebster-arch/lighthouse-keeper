@@ -105,7 +105,7 @@ export function keeperEnvelope(profile: RootProfile, x: number, side: 'left' | '
 
 const hull = (xs: Interval[]): Interval => ({ from: Math.min(...xs.map((i) => i.from)), to: Math.max(...xs.map((i) => i.to)) })
 
-type Endpoint = { kind: 'anchor'; x: number; owner: string; label: string } | { kind: 'door'; x: number; label: string }
+type Endpoint = { kind: 'anchor'; x: number; owner: string; label: string; concealed: Interval | null } | { kind: 'door'; x: number; label: string }
 
 export function validateRoom(input: LayoutInput): Issue[] {
   const issues = validateTiers(input)
@@ -152,7 +152,10 @@ function validateTiers(input: LayoutInput): Issue[] {
 
   // 5, 6, 7: sweep between every pair of endpoints.
   const ends: Endpoint[] = [
-    ...items.flatMap((it) => it.anchors.map((a): Endpoint => ({ kind: 'anchor', x: a.xKu, owner: it.type.id, label: it.type.label }))),
+    ...items.flatMap((it) => it.anchors.map((a): Endpoint => {
+      const c = a.anchor.concealedBy
+      return { kind: 'anchor', x: a.xKu, owner: it.type.id, label: it.type.label, concealed: c ? { from: it.xKu + c.span[0], to: it.xKu + c.span[1] } : null }
+    })),
     ...room.doors.map((d): Endpoint => ({ kind: 'door', x: doorWallX(room, d), label: 'the door' })),
   ]
   const envelope = (e: Endpoint, towards: number) => keeperEnvelope(profile, e.x, towards < e.x ? 'left' : 'right').extent
@@ -177,13 +180,15 @@ function validateTiers(input: LayoutInput): Issue[] {
         else if (it.type.lane === 'front' && overlaps(it.footprint, sweep))
           once(`6:${anchorEnd.owner}:${it.type.id}`, { rule: 6, severity: 'error', object: anchorEnd.owner, other: it.type.id, text: `${it.type.label} would hide him on the way to ${anchorEnd.label}.` })
       }
-      // 7: walls without a door; a door's own clear area covers its side.
+      // 7: walls without a door; a door's own clear area covers its side. Past a wall is allowed
+      // only behind the anchor's own concealing door (the far-wall cupboard).
       for (const [e, o] of [[p, q], [q, p]] as const) {
         if (e.kind !== 'anchor') continue
         const env = envelope(e, o.x)
         const doorLeft = room.doors.some((d) => d.wall === 'left')
         const doorRight = room.doors.some((d) => d.wall === 'right')
-        if ((!doorLeft && env.from < 0) || (!doorRight && env.to > room.widthKu))
+        const hidden = (from: number, to: number) => !!e.concealed && e.concealed.from <= from && e.concealed.to >= to
+        if ((!doorLeft && env.from < 0 && !hidden(env.from, 0)) || (!doorRight && env.to > room.widthKu && !hidden(room.widthKu, env.to)))
           once(`7:${e.owner}`, { rule: 7, severity: 'error', object: e.owner, text: `He wouldn't fit between ${e.label} and the wall.` })
       }
     }
