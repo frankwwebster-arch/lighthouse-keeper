@@ -65,8 +65,14 @@ version at the URL above.
 
 ## Retention policy
 
-Set on the project (Vercel → lighthouse-keeper → Settings → Security →
-Deployment Retention Policy):
+**Status (14 October 2026): not yet applied.** The policy can be changed only
+in the Vercel dashboard (the API and connector cannot set it), and Claude in
+Chrome is not permitted on vercel.com. Until it is set, Hobby's default of
+30 days applies. The deploy gate already stops the growth; the shorter policy
+only clears old builds faster.
+
+Target policy (Vercel → lighthouse-keeper → Settings → Security →
+Deployment Retention Policy → Save):
 
 | Deployment state | Kept for |
 | --- | --- |
