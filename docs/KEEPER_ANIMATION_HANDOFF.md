@@ -1201,27 +1201,31 @@ master; rough edges or jagged internal linework fail even when all geometry
 datums pass.
 
 The active one-at-a-time core candidate is
-`art/drafts/keeper-prime-walk-2026-10-14-v4/`, reviewed at
-`/keeper-review/keeper-prime-walk-v4/`. V1–V3 remain immutable provenance; V2
-is still V1's byte-identical routing wrapper. Frank found V3's rear/screen-left
-arm still too static: F2/F3 were almost identical and F5/F6/F7 barely advanced.
-V4 therefore authors exactly those five phases separately as rearward-to-
-passing, passing, compact return, passing and rearward swing. F1, F4 and F8
-remain byte-identical to V3. F2, F3 and F5–F7 are registered from separate
-smooth generated sources and composited only within declared rear-arm masks;
-the verifier rejects any changed pixel outside those masks. Two F4 occlusion
-attempts are retained only as rejected provenance: one left a circular shoulder
-loop, while the clean full-frame occlusion introduced an unacceptable body-model
-jump. Keeping exact V3 F4 is preferable to disguising that wider discontinuity.
+`art/drafts/keeper-prime-walk-2026-10-14-v5/`, reviewed at
+`/keeper-review/keeper-prime-walk-v5/`. V1–V4 remain immutable provenance; V2
+is still V1's byte-identical routing wrapper. V4's rear-arm-only correction did
+not solve the gait. Frank's decisive observation was that the accepted legs
+already define the arm timing: the two arms must be derived together from those
+eight phases, not improved independently.
 
-The V4 page keeps V2's absolute asset-path correction, preventing Vercel's
-trailing-slash canonicalization from resolving frames under
-`/keeper-review/assets/`. It synchronizes V3 and V4 at exact 128 × 160 game
-size, retains previous/next stepping, and translates the same strip at 168
-high-resolution pixels per second for five seconds from fully hidden to fully
-hidden. V4 remains awaiting Frank's visual approval; walk→stop, stop→walk, the
-deterministic left mirror, workbench Final and production promotion remain
-deliberately untouched.
+V5 therefore records a deterministic joint map with the near/foreground arm
+back at F1, passing vertically at F3, forward at F5, passing again at F7, and
+returning back through F8→F1; the far/background arm is always opposite. F1 and
+F5 are byte-identical V4 endpoints. F2–F4 and F6–F8 are registered from smooth
+generated sources and composited only inside declared two-arm/immediate-
+occlusion masks. The two failed direct F8 attempts are rejected provenance
+because both reversed the foreground/background roles; F8 deliberately reuses
+the successful F2 arm source as its symmetric loop partner. The verifier rejects
+out-of-mask changes and separately proves that the complete lower-leg/boot rows
+remain exact V4 pixels.
+
+The V5 page keeps absolute asset paths, preventing Vercel's trailing-slash
+canonicalization from resolving frames under `/keeper-review/assets/`. It
+synchronizes V4 and V5 at exact 128 × 160 game size, retains previous/next
+stepping, and translates the same strip at 168 high-resolution pixels per second
+for five seconds from fully hidden to fully hidden. V5 remains awaiting Frank's
+visual approval; walk→stop, stop→walk, the deterministic left mirror, workbench
+Final and production promotion remain deliberately untouched.
 
 ## Review-comments workflow for a later feedback round
 
