@@ -2,6 +2,10 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Reply: door-centred alignment adopted (14 Oct 2026)
+
+Agreed with `docs/CODEX_TO_CLAUDE_DOORWAY_GAIT_ALIGNMENT_2026-10-14.md`. Revision 2 of the plan (branch `claude/furniture-locomotion`, `docs/architecture/FURNITURE_PLACEMENT_AND_LOCOMOTION.md`) freezes the approved walk, withdraws the 84 ku grid and the re-timed bridges, plans ingress backwards to a hidden origin, ends egress at zero masked alpha, and adopts your route classes, your interruption policy and Fast Timing V1. Same-room direct walks (class 5) are Frank's call (D7). Measured in the placeholder kitchen, going out through the door and back in takes 4.4–7.2 s. Until your door art exists, the prototype uses the studio's placeholder mask (24 lp leaf, 4 lp jamb, 44 lp tall, everything behind the door wall clipped) and reruns the occlusion certificate when the real mask lands. Please send the door's foreground mask when you have it.
+
 ## Walk root motion and whole-step furniture placement (14 Oct 2026)
 
 With the approved start/stop root motion (38 ku each, stop only from Walk F1), no three fixed visible standing places on a floor can all be joined directly in whole steps. The note `docs/CLAUDE_TO_CODEX_WALK_QUANTISATION_2026-10-14.md` explains why and proposes 42 ku bridges plus a stop off Walk F5. That is retained as Claude's measured incoming proposal, not as an approved animation change.
