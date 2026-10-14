@@ -1237,9 +1237,10 @@ stepping, and translates the same strip at 168 high-resolution pixels per second
 for five seconds from fully hidden to fully hidden. V6 is approved locomotion
 artwork, but it has not been promoted to Final or production.
 
-The active one-at-a-time core candidate is stop → walk → stop V1 at
-`art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/`, reviewed at
-`/keeper-review/keeper-prime-stop-walk-stop-v1/`. Its five-pose forward bridge
+Frank approved exact stop → walk → stop V1 on 14 October 2026. The artwork-free
+V2 approval record at `art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v2/`,
+reviewed at `/keeper-review/keeper-prime-stop-walk-stop-v2/`, pins the complete
+candidate. Its five-pose forward bridge
 is exact approved Side-right stop, three new registered in-betweens at 15%, 50%
 and 75%, and exact approved Walk V6 F1. Walk → stop is the byte-reverse of those
 same five frames, so the return endpoint is the identical stop rather than a
@@ -1252,8 +1253,8 @@ high-resolution pixels. Large and exact 128 × 160 players, frame stepping,
 route looping and isolated bridge direction controls are provided. Deterministic
 verification pins source hashes, exact endpoints, transparency gutters,
 forward/reverse strip order, sidecars, public assets and displacement. The route
-awaits visual approval; the left mirror, workbench Final and production remain
-unchanged.
+is now an approved core transition authority; the left mirror, workbench Final
+and production remain unchanged.
 
 ## Review-comments workflow for a later feedback round
 
