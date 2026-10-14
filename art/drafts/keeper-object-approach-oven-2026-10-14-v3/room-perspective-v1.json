@@ -1,0 +1,43 @@
+{
+  "schema": "lighthouse-keeper/room-perspective@1",
+  "status": "draft-perspective-and-placement-awaiting-review",
+  "oven": {
+    "baseRaiseLp": 0.5,
+    "reason": "The approved Keeper boot alpha ends 0.5 lp above the 40-lp cell bottom.",
+    "footprintLp": [
+      30,
+      30
+    ],
+    "interactionCentreLp": 120
+  },
+  "perspective": {
+    "roomDepthLp": 42,
+    "roomDepthIntervals": 4,
+    "standardAssetDepthLp": 10.5,
+    "assetBackPlaneZLp": 42,
+    "assetFrontInteractionPlaneZLp": 31.5,
+    "projectionDistanceLp": 1008,
+    "horizonYLp": 20,
+    "backWallAbsoluteScale": 0.96,
+    "interactionPlaneAbsoluteScale": 0.9696969696969697,
+    "assetBackToFrontScale": 0.99,
+    "assetBackEdgeRiseLp": 0.36,
+    "authoringRule": "Normalize artwork at the front interaction plane; converge only the standard-depth rear face."
+  },
+  "grid": {
+    "worldPitchLp": 10.5,
+    "worldPitchKu": 84,
+    "storedInWorldSpace": true,
+    "keeperScaleAtInteractionPlane": 1,
+    "runtimeRasterScalingRequired": false,
+    "collisionFootprintsChange": false,
+    "authoringRounding": "Round projected density-8 coordinates to nearest ku; preserve bilateral symmetry; maximum 1-ku per-side error."
+  },
+  "boundaries": {
+    "approvedKeeperPixelsChanged": false,
+    "approvedTimingChanged": false,
+    "runtimeGridChanged": false,
+    "productionChanged": false,
+    "approvalChanged": false
+  }
+}

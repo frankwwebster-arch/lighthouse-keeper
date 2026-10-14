@@ -1,0 +1,32 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-object-approach-oven-2026-10-14-v3",
+  "status": "draft-perspective-and-placement-awaiting-review",
+  "authorities": {
+    "ovenApproachV1Register": {
+      "file": "art/drafts/keeper-object-approach-oven-2026-10-14-v1/batch-register.json",
+      "sha256": "28ff95b4ac42a26c94fd5686a8ce813b1d45faec809bd48c0ab50d6dcc893d45"
+    },
+    "ovenApproachV1Page": {
+      "file": "public/keeper-review/keeper-object-approach-oven-v1/index.html",
+      "sha256": "7a5c6fcd7f0ee71aa083f73b5d9368a41889bbd20b94d172b518c4b6c35743bf"
+    }
+  },
+  "spec": {
+    "file": "art/drafts/keeper-object-approach-oven-2026-10-14-v3/room-perspective-v1.json",
+    "sha256": "131d03226cfce8c0898dbab39ab1d1d73c4ea14b1114acfc0428c86b56f7bead"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-object-approach-oven-v3/index.html",
+    "sha256": "1e94311e8be79228e890937690a7f39c485e6aa0948861f16e6496807b25cc51"
+  },
+  "validation": {
+    "ovenRaisedByExactBootGutter": true,
+    "v1KeeperFrameUrlsReused": true,
+    "worldGridUnchanged": true,
+    "keeperInteractionScaleUnchanged": true,
+    "approvedKeeperPixelsChanged": false,
+    "runtimeChanged": false,
+    "approvalChanged": false
+  }
+}

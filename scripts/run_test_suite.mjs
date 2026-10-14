@@ -28,6 +28,13 @@ const ovenApproach = spawnSync('node', ['scripts/verify_keeper_object_approach_o
 })
 if (ovenApproach.error) throw ovenApproach.error
 if (ovenApproach.status !== 0) process.exit(ovenApproach.status ?? 1)
+const ovenPerspective = spawnSync('node', ['scripts/verify_keeper_object_approach_oven_v3.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (ovenPerspective.error) throw ovenPerspective.error
+if (ovenPerspective.status !== 0) process.exit(ovenPerspective.status ?? 1)
 const liftEntry = spawnSync('node', ['scripts/verify_keeper_lift_entry_alignment_v1.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },

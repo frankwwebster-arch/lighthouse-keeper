@@ -89,6 +89,11 @@ export default {
         permanent: false,
       },
       {
+        source: '/keeper-review/keeper-object-approach-oven-v3',
+        destination: '/keeper-review/keeper-object-approach-oven-v3/index.html',
+        permanent: false,
+      },
+      {
         source: '/keeper-review/keeper-lift-entry-alignment-v1',
         destination: '/keeper-review/keeper-lift-entry-alignment-v1/index.html',
         permanent: false,
