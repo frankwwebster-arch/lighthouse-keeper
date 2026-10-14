@@ -6,9 +6,11 @@
 // tells it to BUILD. A skipped build is recorded as Canceled and stores no
 // build output, so it costs no deployment storage.
 //
-// Rule: build only when the newest commit on `main` contains the marker
-// "[deploy]" in its message. Every other push (ordinary work on main, and all
-// branch pushes such as claude/* or codex/*) is skipped.
+// Rule: build only when the SUBJECT LINE (first line) of the newest commit on
+// `main` ends with the marker "[deploy]". Mentioning the marker anywhere else
+// (mid-subject, or in the body) does not count, so prose about the workflow
+// cannot trigger a release by accident. Every other push (ordinary work on
+// main, and all branch pushes such as claude/* or codex/*) is skipped.
 //
 // See docs/DEPLOYMENT.md for the full workflow.
 
@@ -26,10 +28,11 @@ export function decide({ ref = '', message = '' } = {}) {
       reason: `Branch "${ref || '(none)'}" is not ${PRODUCTION_BRANCH}; branch pushes never deploy.`,
     }
   }
-  if (!message.toLowerCase().includes(DEPLOY_MARKER)) {
+  const subject = message.split(/\r?\n/, 1)[0].trim().toLowerCase()
+  if (!subject.endsWith(DEPLOY_MARKER)) {
     return {
       build: false,
-      reason: `No ${DEPLOY_MARKER} marker in the latest commit message; skipping. Run "npm run deploy" to release.`,
+      reason: `Latest commit subject does not end with ${DEPLOY_MARKER}; skipping. Run "npm run deploy" to release.`,
     }
   }
   return { build: true, reason: `${DEPLOY_MARKER} marker found on ${PRODUCTION_BRANCH}; building.` }

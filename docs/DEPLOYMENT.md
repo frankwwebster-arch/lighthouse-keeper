@@ -26,8 +26,10 @@ were made in a week. Each deployment is an immutable copy, so the storage added 
 **A push no longer deploys.** Vercel runs `scripts/vercel-ignore-build.mjs`
 (wired up in `vercel.json` as the Ignored Build Step) before every Git build:
 
-- A push to `main` builds **only** if the newest commit's message contains
-  `[deploy]`.
+- A push to `main` builds **only** if the newest commit's subject line (its
+  first line) **ends with** `[deploy]`. The marker anywhere else (mid-subject
+  or in the body) is ignored, so writing about the workflow cannot trigger a
+  release.
 - Every other push to `main` is skipped.
 - Branch pushes (`claude/*`, `codex/*`, anything not `main`) never build.
 
@@ -46,15 +48,15 @@ commit marked `[deploy]` on top of `main`.
    `npm run deploy -- "short note"`.
 2. **One click on GitHub.** Go to the repository's **Actions** tab, choose
    **Deploy to production**, then **Run workflow**. A note is optional.
-3. **By hand** (any agent or terminal): end the last commit message of a push
-   with `[deploy]`.
+3. **By hand** (any agent or terminal): make the last commit of a push end its
+   subject line with `[deploy]`.
 
 The build takes a few minutes. When it finishes, production shows the new
 version at the URL above.
 
 ### Rules for agents (Claude and Codex)
 
-- Do not put `[deploy]` in ordinary commit messages.
+- Never end an ordinary commit subject with `[deploy]`.
 - Batch review work. Deploy once per review round, not once per tweak.
 - To show Frank a review page, deploy, then send the production link.
   Branch previews no longer exist.
@@ -101,11 +103,13 @@ release it again, so fix forward on `main` before deploying.
 
 ## State after the 14 October cleanup
 
-- **Production:** commit `abe2372` (deployment `dpl_92escRn4NfBbcM3z3EP7LavLpAjJ`).
-  This is newer than the `65fe2ec` quoted in the brief.
-- **Rollback candidates kept:** `65fe2ec` (`dpl_7z1DU7sjJCDg8PDAhuLtL7GUGgf2`) and
-  `cca03dc` (`dpl_29EHFkfNdX3beJshRvsB2hpxpQJu`), plus the deployment that releases
-  this change.
+- **Production:** commit `bf5075a`, the commit that introduced this workflow
+  (deployment `dpl_83W6vQ9gQ7tyJcUJ8on6PUrfKMPe`). Its subject mentioned the
+  marker mid-line, which the first version of the rule counted. The rule now
+  requires the marker at the end of the subject.
+- **Rollback candidates kept:** `abe2372` (`dpl_92escRn4NfBbcM3z3EP7LavLpAjJ`,
+  production before this change), `65fe2ec` (`dpl_7z1DU7sjJCDg8PDAhuLtL7GUGgf2`)
+  and `cca03dc` (`dpl_29EHFkfNdX3beJshRvsB2hpxpQJu`).
 - The ~200 older deployments had already been removed by Vercel's 30-day Hobby
   retention. They sit in the 30-day recovery window, so the usage figure falls
   over the following days rather than instantly.

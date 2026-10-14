@@ -19,9 +19,14 @@ describe('vercel ignored build step', () => {
     expect(decide({ ref: 'main', message: 'Add Keeper timing lab' }).build).toBe(false)
   })
 
-  it('builds main when the latest commit carries the deploy marker', () => {
+  it('builds main when the subject line ends with the deploy marker', () => {
     expect(decide({ ref: 'main', message: 'Deploy: review batch 3 [deploy]' }).build).toBe(true)
-    expect(decide({ ref: 'main', message: 'Release\n\nbody [DEPLOY]' }).build).toBe(true)
+    expect(decide({ ref: 'main', message: 'Deploy: batch [DEPLOY]  \n\nbody text' }).build).toBe(true)
+  })
+
+  it('ignores the marker mid-subject or in the body', () => {
+    expect(decide({ ref: 'main', message: 'Release in [deploy] batches' }).build).toBe(false)
+    expect(decide({ ref: 'main', message: 'Docs\n\nUse [deploy] to release' }).build).toBe(false)
   })
 
   it('never builds branch pushes, even with the marker', () => {
