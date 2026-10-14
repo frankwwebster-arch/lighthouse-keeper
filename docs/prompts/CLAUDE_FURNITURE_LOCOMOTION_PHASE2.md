@@ -1,40 +1,41 @@
 Continue Lighthouse Keeper: Phase 2 of furniture placement and walking
-(the pure model, its tests and a diagnostic doorway prototype; no game or
-studio wiring, no art).
+(the pure placement and route model with its tests; no game or studio
+wiring, no art, no review pages).
 
 Start here
-1. Pull main, then check out claude/furniture-locomotion (revision 2 of the
-   plan or a documented successor) and merge main into it. Quote both commits.
+1. Pull main, then check out claude/furniture-locomotion (plan revision 3 or
+   a documented successor) and merge main into it. Quote both commits.
 2. Read CLAUDE.md, then the project page
    (https://claude.ai/artifact/Ehjz6SdSEvsDYLTLWuKZP4; read it with the
-   Artifact tool). My answers to D3-D8 are saved there and are binding.
+   Artifact tool). My answers are saved there and are binding.
 3. Read in full docs/architecture/FURNITURE_PLACEMENT_AND_LOCOMOTION.md
-   (revision 2) and docs/CODEX_TO_CLAUDE_DOORWAY_GAIT_ALIGNMENT_2026-10-14.md.
-   The approved walk is frozen: never change the start, stop or walk deltas,
-   frames, order or Fast Timing V1, and never ask Codex for new bridge art.
-4. Check for any newer Codex note, door art or occlusion mask, and record
-   what you find.
+   (revision 3) and docs/CODEX_TO_CLAUDE_DIRECT_OBJECT_LOCOMOTION_2026-10-14.md.
+4. Check how far Codex's review gates have got (the re-timed root-motion
+   candidate, the Walk F5 stop bridge, the lattice and real-room proofs) and
+   which, if any, I have approved. Record what you find.
 
 Build
 - A new isolated module, src/placement/, with no imports from the UI: ku
-  types, room records with clear area, aperture, occlusion mask and hidden
-  pocket kept separate, the validator, the shuffle, the route compiler
-  (route classes 1-5, ingress planned backwards from the target, egress until
-  zero masked alpha) and the frame-table builder.
-- Root motion and Fast Timing V1 are read from Codex's registers and
-  catalogue, never copied by hand.
-- The tests in section 7 of the plan.
-- The diagnostic prototype page from section 8: one room, the placeholder
-  door mask, at least three furniture centres that are not on any step
-  lattice, complete ingress and egress, and one same-room trip as I decided
-  in D7, at large inspection scale and exact game scale, with a mask overlay
-  and the debug readout. Use Codex's approved frames read-only.
+  types, room records (lattice origin, clear area, aperture, occlusion mask
+  and hidden pocket kept separate), keeperUseAnchor records, the validator,
+  the shuffle, the route compiler (route classes 1-5) and the frame-table
+  builder.
+- Root-motion tables are data read from Codex's registers: keep the approved
+  table and the candidate table side by side and labelled. Use only what I
+  have approved for anything presented as the default; until the F5 stop is
+  approved, even-step same-room routes must report "unsupported", never
+  improvise.
+- The tests in section 7 of the plan, including the proof that the approved
+  numbers fail the three-anchor case and the candidate numbers pass it.
+- An export of exact frame and root tables for 1-, 2-, 3- and 4-step routes
+  and for one real room, so Codex's lattice and real-room review pages can
+  use them.
 - Never edit Keeper PNGs, registers, manifests, review pages, the Workbench
-  or Final, and never approve or promote anything.
+  or Final, never change approved root motion or timing, and never approve
+  or promote anything.
 
 Hand back the branch, commit, changed files, npm test / typecheck / build
-results, the prototype link (deploy only with npm run deploy if I ask), and
-anything still open.
+results, and anything still open.
 
 How I work
 - Anything I need to read, answer or decide goes on the project page (same
