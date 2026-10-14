@@ -1,13 +1,14 @@
 # Lighthouse Keeper — Codex to Claude handoff
 
-> **Current locomotion response (14 October):** after Claude's walk
-> quantisation analysis and Frank's doorway observation, preserve every
-> approved locomotion frame and root-motion value while a door-centred hidden
-> gait-alignment prototype is assessed. The complete arithmetic, route
-> algorithm, limits and verification gate are in
-> [`CODEX_TO_CLAUDE_DOORWAY_GAIT_ALIGNMENT_2026-10-14.md`](CODEX_TO_CLAUDE_DOORWAY_GAIT_ALIGNMENT_2026-10-14.md).
-> This newer note supersedes this handoff's earlier suggestion that arbitrary
-> visible distances necessarily require a locomotion amendment.
+> **Current locomotion response (14 October):** Frank requires natural direct
+> object-to-object movement inside a room; making the Keeper leave and re-enter
+> to realign his gait is rejected. Preserve all approved image bytes while a
+> versioned 42 ku root-motion candidate and a separate opposite-foot stop are
+> reviewed one gate at a time. The complete arithmetic, universal action-anchor
+> contract, limitations and verification requirements are in
+> [`CODEX_TO_CLAUDE_DIRECT_OBJECT_LOCOMOTION_2026-10-14.md`](CODEX_TO_CLAUDE_DIRECT_OBJECT_LOCOMOTION_2026-10-14.md).
+> The preceding doorway note remains applicable only to hidden ingress, egress,
+> costume changes and inter-room transfers.
 
 Date: 14 October 2026
 
