@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 1600 1600" role="img" aria-labelledby="title desc">
+  <title id="title">Lighthouse Keeper standard room grid — 172 by 56 logical pixels</title>
+  <desc id="desc">Dimensioned planning sketch showing a fixed 38 pixel stair core, a 172 by 56 pixel room, a 46 pixel doorway exclusion zone, twelve 10.5 pixel furnishing intervals, Keeper standing and mid-stride envelopes, snap anchors and two future 21 pixel room expansions.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#22344a"/>
+    </marker>
+    <pattern id="doorHatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="12" height="12" fill="#f7dfb2"/>
+      <rect width="4" height="12" fill="#efc977"/>
+    </pattern>
+    <style>
+      .title { font: 700 36px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #172235; }
+      .subtitle { font: 500 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #53647a; }
+      .label { font: 600 17px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #22344a; }
+      .small { font: 500 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #52647b; }
+      .tiny { font: 600 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #607188; }
+      .dimension { stroke: #22344a; stroke-width: 2; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .extension { stroke: #2c7a68; stroke-width: 2; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .guide { stroke: #97a9bc; stroke-width: 1; stroke-dasharray: 5 5; }
+      .grid { stroke: #b8c7d6; stroke-width: 1; }
+      .grid-major { stroke: #6f879f; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="1600" fill="#f8fafc"/>
+
+  <text x="52" y="58" class="title">Standard lighthouse room · agreed planning geometry</text>
+  <text x="52" y="88" class="subtitle">All measurements are logical pixels (lp). Store positions as integer keeper units: 1 lp = 8 ku.</text>
+
+  <!-- Overall room dimension -->
+  <line x1="280" y1="148" x2="1312" y2="148" class="dimension"/>
+  <line x1="280" y1="156" x2="280" y2="218" class="guide"/>
+  <line x1="1312" y1="156" x2="1312" y2="218" class="guide"/>
+  <rect x="700" y="124" width="192" height="44" rx="8" fill="#f8fafc"/>
+  <text x="796" y="151" class="label" text-anchor="middle">172 lp · 1,376 ku</text>
+
+  <!-- Stair core -->
+  <rect x="52" y="220" width="228" height="336" fill="#dce5ed" stroke="#526b84" stroke-width="3"/>
+  <path d="M 76 526 L 256 250 M 76 454 L 208 250 M 124 526 L 256 322" fill="none" stroke="#8da1b5" stroke-width="8"/>
+  <text x="166" y="384" class="label" text-anchor="middle">STAIR CORE</text>
+  <text x="166" y="407" class="small" text-anchor="middle">38 lp</text>
+  <text x="166" y="430" class="tiny" text-anchor="middle">fixed outside room</text>
+
+  <!-- Room -->
+  <rect x="280" y="220" width="1032" height="336" fill="#ffffff" stroke="#22344a" stroke-width="4"/>
+
+  <!-- Door clear -->
+  <rect x="280" y="220" width="276" height="336" fill="url(#doorHatch)" opacity="0.78"/>
+  <line x1="556" y1="220" x2="556" y2="556" stroke="#c58e29" stroke-width="4"/>
+  <text x="418" y="252" class="label" text-anchor="middle">DOORWAY EXCLUSION</text>
+  <text x="418" y="278" class="small" text-anchor="middle">46 lp · 368 ku</text>
+  <text x="418" y="302" class="tiny" text-anchor="middle">no furniture footprint</text>
+
+  <!-- Door leaf / opening -->
+  <rect x="281" y="356" width="16" height="198" fill="#38546f"/>
+  <path d="M 296 554 A 150 150 0 0 1 446 404" fill="none" stroke="#785423" stroke-width="7"/>
+  <line x1="296" y1="554" x2="446" y2="404" stroke="#a87936" stroke-width="12"/>
+  <text x="365" y="492" class="tiny" text-anchor="middle" transform="rotate(-45 365 492)">door swing / ingress cover</text>
+
+  <!-- Furnishing field and 12 interval grid -->
+  <rect x="556" y="220" width="756" height="336" fill="#eaf5f2" opacity="0.6"/>
+  <text x="934" y="252" class="label" text-anchor="middle">FURNISHING + INTERACTION FIELD</text>
+  <text x="934" y="278" class="small" text-anchor="middle">126 lp · 1,008 ku · exactly 12 × 10.5 lp intervals</text>
+
+  <line x1="556" y1="220" x2="556" y2="556" class="grid-major"/>
+  <line x1="619" y1="294" x2="619" y2="556" class="grid"/>
+  <line x1="682" y1="294" x2="682" y2="556" class="grid-major"/>
+  <line x1="745" y1="294" x2="745" y2="556" class="grid"/>
+  <line x1="808" y1="294" x2="808" y2="556" class="grid-major"/>
+  <line x1="871" y1="294" x2="871" y2="556" class="grid"/>
+  <line x1="934" y1="294" x2="934" y2="556" class="grid-major"/>
+  <line x1="997" y1="294" x2="997" y2="556" class="grid"/>
+  <line x1="1060" y1="294" x2="1060" y2="556" class="grid-major"/>
+  <line x1="1123" y1="294" x2="1123" y2="556" class="grid"/>
+  <line x1="1186" y1="294" x2="1186" y2="556" class="grid-major"/>
+  <line x1="1249" y1="294" x2="1249" y2="556" class="grid"/>
+  <line x1="1312" y1="220" x2="1312" y2="556" class="grid-major"/>
+
+  <!-- Cell numbers -->
+  <g class="tiny" text-anchor="middle">
+    <text x="587.5" y="320">1</text><text x="650.5" y="320">2</text>
+    <text x="713.5" y="320">3</text><text x="776.5" y="320">4</text>
+    <text x="839.5" y="320">5</text><text x="902.5" y="320">6</text>
+    <text x="965.5" y="320">7</text><text x="1028.5" y="320">8</text>
+    <text x="1091.5" y="320">9</text><text x="1154.5" y="320">10</text>
+    <text x="1217.5" y="320">11</text><text x="1280.5" y="320">12</text>
+  </g>
+
+  <!-- Example furniture footprints -->
+  <rect x="570" y="360" width="98" height="116" rx="5" fill="#6c8ebf" stroke="#355b8b" stroke-width="3"/>
+  <text x="619" y="412" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700" text-anchor="middle">OBJECT</text>
+  <text x="619" y="435" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" text-anchor="middle">actual footprint</text>
+  <line x1="682" y1="476" x2="682" y2="544" stroke="#c73f4c" stroke-width="3"/>
+  <circle cx="682" cy="544" r="8" fill="#c73f4c" stroke="#ffffff" stroke-width="3"/>
+  <text x="682" y="346" class="tiny" text-anchor="middle">registered action anchor</text>
+
+  <!-- Keeper standing and gait envelope -->
+  <rect x="736" y="328" width="144" height="228" rx="54" fill="none" stroke="#d28f2e" stroke-width="3" stroke-dasharray="10 7"/>
+  <path d="M 784 385 C 784 358 805 340 808 340 C 811 340 832 358 832 385 L 838 447 L 828 500 L 826 556 L 790 556 L 788 500 L 778 447 Z" fill="#1e75bd" stroke="#163c5f" stroke-width="3"/>
+  <circle cx="808" cy="370" r="31" fill="#f4c68e" stroke="#163c5f" stroke-width="3"/>
+  <path d="M 779 370 Q 808 399 837 370 L 830 410 Q 808 430 786 410 Z" fill="#f2eadb" stroke="#163c5f" stroke-width="3"/>
+  <line x1="808" y1="330" x2="808" y2="556" stroke="#c73f4c" stroke-width="2" stroke-dasharray="5 5"/>
+  <circle cx="808" cy="544" r="8" fill="#c73f4c" stroke="#ffffff" stroke-width="3"/>
+  <text x="808" y="582" class="tiny" text-anchor="middle">snap/action line</text>
+  <text x="736" y="612" class="small">Standing: 13 × 38 lp</text>
+  <text x="736" y="634" class="small">Mid-stride envelope: 24 lp wide</text>
+
+  <!-- Room height dimension -->
+  <line x1="1360" y1="220" x2="1360" y2="556" class="dimension"/>
+  <line x1="1318" y1="220" x2="1352" y2="220" class="guide"/>
+  <line x1="1318" y1="556" x2="1352" y2="556" class="guide"/>
+  <text x="1386" y="392" class="label" transform="rotate(90 1386 392)" text-anchor="middle">56 lp · 448 ku</text>
+
+  <!-- Pitch dimension -->
+  <line x1="556" y1="676" x2="619" y2="676" class="dimension"/>
+  <line x1="556" y1="560" x2="556" y2="668" class="guide"/>
+  <line x1="619" y1="560" x2="619" y2="668" class="guide"/>
+  <text x="587.5" y="704" class="label" text-anchor="middle">10.5 lp</text>
+  <text x="587.5" y="725" class="tiny" text-anchor="middle">84 ku · one gait interval</text>
+
+  <!-- Formula / rules -->
+  <rect x="936" y="592" width="376" height="142" rx="12" fill="#ffffff" stroke="#97a9bc" stroke-width="2"/>
+  <text x="960" y="622" class="label">Snap contract</text>
+  <text x="960" y="650" class="small">candidate x = 368 ku + (84 ku × n)</text>
+  <text x="960" y="675" class="small">snap the interaction anchor, not the artwork</text>
+  <text x="960" y="700" class="small">accept only if footprint, gait envelope and route fit</text>
+  <text x="960" y="722" class="tiny">Floor/wall/foreground objects retain their declared y lane.</text>
+
+  <!-- Expansion tiers -->
+  <text x="52" y="788" class="label">Future whole-lighthouse expansion</text>
+  <text x="52" y="814" class="small">The stair/door datum and every existing anchor remain fixed. Only the far wall moves.</text>
+
+  <rect x="52" y="840" width="516" height="54" fill="#f7dfb2" stroke="#22344a" stroke-width="2"/>
+  <rect x="190" y="840" width="378" height="54" fill="#dcefeb"/>
+  <text x="68" y="873" class="label">BASE</text>
+  <text x="550" y="873" class="small" text-anchor="end">172 lp</text>
+
+  <rect x="604" y="840" width="579" height="54" fill="#f7dfb2" stroke="#22344a" stroke-width="2"/>
+  <rect x="742" y="840" width="378" height="54" fill="#dcefeb"/>
+  <rect x="1120" y="840" width="63" height="54" fill="#75b9a8"/>
+  <text x="620" y="873" class="label">EXPANSION I</text>
+  <text x="1100" y="873" class="small" text-anchor="end">172</text>
+  <text x="1151.5" y="873" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="700" text-anchor="middle">+21</text>
+  <text x="1188" y="873" class="small">= 193 lp</text>
+
+  <rect x="604" y="912" width="642" height="54" fill="#f7dfb2" stroke="#22344a" stroke-width="2"/>
+  <rect x="742" y="912" width="378" height="54" fill="#dcefeb"/>
+  <rect x="1120" y="912" width="126" height="54" fill="#75b9a8"/>
+  <text x="620" y="945" class="label">EXPANSION II</text>
+  <text x="1100" y="945" class="small" text-anchor="end">172</text>
+  <text x="1183" y="945" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="700" text-anchor="middle">+21 +21</text>
+  <text x="1254" y="945" class="small">= 214 lp</text>
+
+  <!-- Legend -->
+  <rect x="1350" y="622" width="20" height="20" fill="url(#doorHatch)" stroke="#c58e29"/>
+  <text x="1382" y="638" class="small">door-clear zone</text>
+  <rect x="1350" y="656" width="20" height="20" fill="#dcefeb" stroke="#6f879f"/>
+  <text x="1382" y="672" class="small">existing usable field</text>
+  <rect x="1350" y="690" width="20" height="20" fill="#75b9a8"/>
+  <text x="1382" y="706" class="small">new expansion cells</text>
+  <circle cx="1360" cy="734" r="7" fill="#c73f4c"/>
+  <text x="1382" y="739" class="small">registered action anchor</text>
+
+  <text x="52" y="990" class="tiny">Planning sketch V1 · 14 October 2026 · standard floors only; inset lamp room and local extension bays remain exceptions.</text>
+
+  <!-- Implementation summary for handoff -->
+  <line x1="52" y1="1040" x2="1548" y2="1040" stroke="#c5d1dd" stroke-width="2"/>
+  <text x="52" y="1094" class="title" font-size="30">Drag, snap and validation contract</text>
+
+  <rect x="52" y="1130" width="720" height="190" rx="14" fill="#ffffff" stroke="#97a9bc" stroke-width="2"/>
+  <text x="82" y="1170" class="label">1 · SNAP THE ACTION ANCHOR</text>
+  <text x="82" y="1204" class="small">• Store integer ku, never rounded CSS coordinates.</text>
+  <text x="82" y="1234" class="small">• candidate x = 368 ku + (84 ku × n)</text>
+  <text x="82" y="1264" class="small">• Furniture keeps its real footprint and artwork dimensions.</text>
+  <text x="82" y="1294" class="small">• Floor, foreground, wall and ceiling objects retain their declared y lane.</text>
+
+  <rect x="828" y="1130" width="720" height="190" rx="14" fill="#ffffff" stroke="#97a9bc" stroke-width="2"/>
+  <text x="858" y="1170" class="label">2 · VALIDATE BEFORE SAVING</text>
+  <text x="858" y="1204" class="small">• No footprint inside the 368-ku doorway exclusion.</text>
+  <text x="858" y="1234" class="small">• Keep every variant inside the room and clear of other objects.</text>
+  <text x="858" y="1264" class="small">• Reserve the required standing, action and 24-lp gait envelopes.</text>
+  <text x="858" y="1294" class="small">• Require a reachable registered anchor; invalid drops cannot be saved.</text>
+
+  <rect x="52" y="1350" width="720" height="190" rx="14" fill="#ffffff" stroke="#97a9bc" stroke-width="2"/>
+  <text x="82" y="1390" class="label">3 · EXPAND WITHOUT MOVING CONTENTS</text>
+  <text x="82" y="1424" class="small">• Add 168 ku / 21 lp / two intervals at the far wall only.</text>
+  <text x="82" y="1454" class="small">• Existing coordinates and the stair/door datum never change.</text>
+  <text x="82" y="1484" class="small">• Build shells from fixed end caps plus repeatable centre sections.</text>
+  <text x="82" y="1514" class="small">• All standard floors share one active width tier.</text>
+
+  <rect x="828" y="1350" width="720" height="190" rx="14" fill="#ffffff" stroke="#97a9bc" stroke-width="2"/>
+  <text x="858" y="1390" class="label">4 · VERIFY THE FULL PACING LAYOUT</text>
+  <text x="858" y="1424" class="small">• Preview doorway-to-object and every object-to-object route.</text>
+  <text x="858" y="1454" class="small">• Test both directions at the approved Fast Timing preset.</text>
+  <text x="858" y="1484" class="small">• Extend travel only by repeating complete steady gait cycles.</text>
+  <text x="858" y="1514" class="small">• Never stretch root motion or Keeper artwork to absorb a remainder.</text>
+</svg>

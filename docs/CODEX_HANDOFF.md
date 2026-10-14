@@ -33,7 +33,7 @@ Broken objects share a visual grammar: gentle casing wobble, looping smoke, and 
 - Day 1 begins with four floors, bottom to top: kitchen, living room, bedroom with en suite, and lamp room.
 - The lighthouse can expand upward and downward. It does not need to be realistic.
 - The lamp room must always remain at the top.
-- The main gameplay shaft is a constant 110 × 35 logical pixels per floor and never tapers. Any apparent taper is decorative exterior shading only. The lamp room is inset/fixed-width, with a wraparound rail and outdoor walkway.
+- The main gameplay shaft uses one active standard-room width per floor and never tapers. The delivered first-generation assets are 110 × 35; the agreed replacement initial target is 172 × 56, with later whole-lighthouse tiers of 193 and 214. Any apparent taper is decorative exterior shading only. The lamp room is inset/fixed-width, with a wraparound rail and outdoor walkway. See `KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`.
 - Future standard-floor progression is deliberately non-linear. Keep kitchen at the base, lamp room topmost and bedroom directly below it; give every other eligible floor a one-time random middle-stack position and persist the resulting order. Do not pre-assign future room types to heights or let concept-art taper dictate their order. Derive stripe phase from world Y.
 - New floors can slide into place or materialise in a large puff of smoke. Reuse one arrival animation for all new floors.
 - New floors must continue the alternating exterior stripe pattern. Calculate stripe phase from world/floor position so inserted floors align automatically.

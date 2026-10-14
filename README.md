@@ -2,6 +2,13 @@
 
 A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by typing or tapping objects, then keep him happy through the day. The playable cutaway currently has a kitchen, living room, bedroom with en suite, and lamp room.
 
+The current runtime still uses the first-generation room plates. The agreed
+replacement standard-room geometry is **172 × 56 logical pixels**, with a
+46-pixel doorway exclusion and twelve 10.5-pixel furnishing/interaction
+intervals. Drag/drop, expansion and pacing requirements are in
+[`docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`](docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md);
+implementation is pending and must not rescale the historical room art.
+
 ## Run it
 ```
 npm install

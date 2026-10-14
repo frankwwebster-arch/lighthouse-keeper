@@ -65,7 +65,7 @@ That leaves room for a door about 44 px tall with a lintel above it. The parachu
 What follows (Codex for art, Claude for code):
 
 - The band height is 56 plus whatever floor and ceiling thickness Codex draws. Once Codex sets it, it is fixed for every standard floor for good.
-- The three delivered room plates (105 × 35) and the shell are redrawn at the new height. Furniture contact heights stay as they are, because they are measured from the floor.
+- The three delivered room plates (105 × 35) and shell remain historical source. Their replacements use the subsequently agreed 172 × 56 standard-room target in `KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`. Furniture contact heights stay as they are, because they are measured from the floor.
 - The game's `FLOOR_STEP` (today 140 on screen) changes to match. The whole-tower view zooms out further, and the camera's close-up on an activity is unchanged.
 
 ## 4. The stairway

@@ -2,7 +2,7 @@
 
 Base: `cdb109b2904ce0834fa559760e5d34e1ddc8f4f2`. 71 discussed spaces/variants, including retired garage. All non-runtime numbers are proposals. Frank selected sharp detailed artwork and the original CRT style; coarse exports, the full-width lamp room and stretched TV are rejected. The top lantern cap is inset (95x35 logical), with a wraparound walkway, rather than an ordinary 110-wide floor. Density-4 source images preserve footprints and TV proportions. ON is required for operating devices; passive furniture uses standard art plus actor-layer occupied/seated poses. No progression code changed.
 
-Standard bands: 110 × 35. Plates: 105 × 35. Kitchen base, lamp top, bedroom beneath lamp, other standard floors saved random middle position. Nonstandard previews show their separate proposed footprints. No fixed-height dependency.
+Historical catalogue bands: 110 × 35. Plates: 105 × 35. The agreed replacement standard-room target is 172 × 56 (`../KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`); these catalogue dimensions remain provenance until the migration is implemented. Kitchen base, lamp top, bedroom beneath lamp, other standard floors saved random middle position. Nonstandard previews show their separate proposed footprints. No fixed-height dependency.
 
 ## Decision register
 
@@ -2797,4 +2797,3 @@ Standard bands: 110 × 35. Plates: 105 × 35. Kitchen base, lamp top, bedroom be
 
 - [ ] Reviewed
 - Notes:
-

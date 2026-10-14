@@ -20,6 +20,17 @@ The room-fit check you asked for, using catalogue frame widths (only the TV has 
 
 So the grid costs 1.5–19.5 lp of room width. The living room, bedroom, weather station and the professional-oven kitchen exceed 110 lp even without a grid. Frank is being asked about room widths (D5). Details are in plan section 3.5 and Appendix B. If Frank agrees, my pure route compiler can export exact frame and root tables for your gate 4 and 5 pages.
 
+## Current standard-room geometry (agreed 14 Oct 2026)
+
+Frank approved a 172 × 56 logical-pixel initial standard room: 46 px clear at
+the stair-side doorway plus twelve proposed 10.5 px furnishing/interaction
+intervals. Global width upgrades add 21 px/two intervals at the far wall while
+all existing coordinates stay fixed. The dimensioned Claude handoff and exact
+drag/drop contract are in
+`docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`. The 110 × 56 studio and
+110 × 35/105 × 35 delivered assets remain the current implementation and
+historical provenance until that migration is built.
+
 ## Historical reply: door-centred alignment adopted, then superseded (14 Oct 2026)
 
 Claude agreed with `docs/CODEX_TO_CLAUDE_DOORWAY_GAIT_ALIGNMENT_2026-10-14.md`. Revision 2 of the plan (branch `claude/furniture-locomotion`, `docs/architecture/FURNITURE_PLACEMENT_AND_LOCOMOTION.md`) froze the approved walk, withdrew the 84 ku grid and re-timed bridges, planned ingress backwards to a hidden origin, ended egress at zero masked alpha, and adopted the proposed route classes, interruption policy and Fast Timing V1. It measured a 4.4–7.2 second door detour in the placeholder kitchen. Frank then rejected that detour as the ordinary same-room solution and required natural direct object-to-object walking. The current instruction is the direct-locomotion response below; retain Revision 2 only as evidence for door ingress, egress and occlusion handling.
@@ -47,7 +58,7 @@ The studio now checks every handover between clips, pixel for pixel (`docs/RECIP
 - **Poses need held props.** `keeper_cake_turn_right` is registered as starting `standing-side-right`, but it starts back to the camera holding the cake. Please register poses with a `+prop` suffix (`standing-back+cake`), so empty-handed turns can't bridge prop moments.
 - `keeper_turn_right_front` has no poses at all.
 - **Pyjamas have no turn to face left**, so after getting out of bed he can't turn to walk back to the door.
-- Doors: the placeholder door leaf is now 24 px (your minimum opening), and he walks behind it without stopping, changing costume while it covers him. **Room layouts must keep 46 px clear at each door** (Frank's rule), which leaves 64 px of a 110 px room for furniture.
+- Doors: the placeholder door leaf is now 24 px (your minimum opening), and he walks behind it without stopping, changing costume while it covers him. **Room layouts must keep 46 px clear at each door** (Frank's rule). That leaves 64 px in the current 110 px studio and 126 px/twelve proposed locomotion intervals in the agreed 172 px target.
 
 ## Background elements brief (10 Oct 2026)
 
@@ -105,7 +116,7 @@ The fixed mission chain is gone. Logic follows the locked layout in `docs/EXPANS
 - Preview: `?floors=all` shows every floor and the lift.
 - Underground: day 1 shows nothing below the ground. The view grows downward only once the lair arrives.
 
-Authoritative detail is in `HANDOFF_TO_CLAUDE.md` under **“Locked rule: future floor progression is non-linear”**. Geometry and art must never force mission order: all standard bands remain 110 × 35 logical pixels, the lamp room stays topmost, and stripes come from world Y.
+Authoritative progression detail is in `HANDOFF_TO_CLAUDE.md` under **“Locked rule: future floor progression is non-linear”**. Geometry and art must never force mission order: all standard floors share the active width tier, the lamp room stays topmost, and stripes come from world Y. The agreed replacement initial band is 172 × 56; the delivered 110 × 35 assets are historical.
 
 The consolidated design backlog—including floor reveal, moving bedroom/diving board, weather, pool, boiler, transport, solar and proposed rooms—is `docs/EXPANSION_DESIGN.md`.
 
