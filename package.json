@@ -58,7 +58,8 @@
     "typecheck": "tsc --noEmit",
     "sprites": "node scripts/keeper-contract.ts && node scripts/sprites.ts",
     "keeper-contract": "node scripts/keeper-contract.ts",
-    "upgrades": "node scripts/upgrades.ts"
+    "upgrades": "node scripts/upgrades.ts",
+    "export:placement": "PLACEMENT_EXPORT_WRITE=1 vitest run src/placement/export.test.ts"
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.10.4",

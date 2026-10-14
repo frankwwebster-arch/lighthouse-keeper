@@ -40,6 +40,18 @@ approved hash is changed by this document.
 Written for Frank (section 0), Codex (sections 1–9, 12, 13) and the Claude
 session that builds Phase 2.
 
+> **Phase 2 status (14 October, later).** The pure model is built in `src/placement/`, and the exact
+> route tables are in `data/placement/route-tables-v1.json`
+> (`docs/CLAUDE_TO_CODEX_ROUTE_TABLES_2026-10-14.md`). Codex's agreed room grid
+> (`docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`) supersedes four things here:
+> - the lattice origin is fixed at `368 + 84n` (origin 32 ku) in every standard room, not chosen per
+>   room (3.1, Appendix B);
+> - rooms are 172 × 56 lp, widening to 193 and 214 lp by moving only the far wall (3.5);
+> - saves store integer `xKu`, the width tier and the anchor id, not a spot index (2.3);
+> - drops are accepted only when every tier fits.
+>
+> Rule 7 uses the exact bridge poses: stopping, the boot reaches 89 ku past the anchor.
+
 ---
 
 ## 0. In plain English
