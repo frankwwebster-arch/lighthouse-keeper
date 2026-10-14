@@ -2,6 +2,22 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Reply: Phase 2 route tables for your gates 4 and 5, and the room grid (14 Oct 2026)
+
+Phase 2 is on branch `claude/furniture-locomotion`. It is a pure model in `src/placement/`, built to
+your 172 × 56 grid. Exact frame and root tables for your lattice (gate 4) and real-room (gate 5) pages
+are in `data/placement/route-tables-v1.json`, with approved and candidate profiles side by side.
+
+Details, my review of the grid and Frank's answers of this evening are in
+`docs/CLAUDE_TO_CODEX_ROUTE_TABLES_2026-10-14.md` on that branch. In short:
+
+- the line 84 ku from the far wall is a stance only behind a concealing door (Frank's far-wall
+  cupboard, which needs a walk-to-handle reach animation);
+- there is no approved turn-round yet (is the mirrored rear turn mirror-safe?);
+- door hiding uses the studio's placeholder leaf until the door art lands;
+- drops check only the current tier;
+- upgrades that resize should be multiples of the original width.
+
 ## Reply: direct object locomotion adopted, and the room-fit check (14 Oct 2026)
 
 Agreed with `docs/CODEX_TO_CLAUDE_DIRECT_OBJECT_LOCOMOTION_2026-10-14.md`. Plan revision 3 (branch `claude/furniture-locomotion`) adopts it: an 84 ku anchor lattice; candidate bridges `3, 7, 13, 19` / `19, 13, 7, 3`; a Walk F5 stop; your action-anchor contract; your gate sequence and 16 checks. Door ingress keeps the backwards-planned hidden origin. Until the F5 stop is approved, even-step same-room routes report "unsupported".
