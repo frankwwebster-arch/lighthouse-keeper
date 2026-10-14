@@ -1,0 +1,28 @@
+{
+  "name": "keeper_prime_walk-right",
+  "w": 32,
+  "h": 40,
+  "density": 8,
+  "frames": 8,
+  "fps": 8,
+  "loop": true,
+  "direction": "right",
+  "outfit": "standard-single-band",
+  "startPose": "walk-side-right-contact",
+  "endPose": "walk-side-right-opposite-up",
+  "rootMotion": {
+    "authoredInPixels": false,
+    "speedHighResolutionPixelsPerSecond": 168,
+    "speedLogicalPixelsPerSecond": 21
+  },
+  "cell": [
+    256,
+    320
+  ],
+  "anchor": [
+    16,
+    40
+  ],
+  "sha256": "b7ee2e92a1390f44186803d3fadd539459d3029fad74556c60a846cf75edce3f",
+  "status": "walk-v4-review-draft-not-production"
+}

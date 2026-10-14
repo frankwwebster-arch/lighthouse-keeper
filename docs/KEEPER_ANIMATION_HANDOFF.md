@@ -1200,24 +1200,28 @@ rig-derived model must keep a super-smooth high-resolution
 master; rough edges or jagged internal linework fail even when all geometry
 datums pass.
 
-The next one-at-a-time core candidate is
-`art/drafts/keeper-prime-walk-2026-10-13-v3/`, reviewed at
-`/keeper-review/keeper-prime-walk-v3/`. V1 remains immutable provenance and V2
-remains its byte-identical technical routing wrapper. Frank found V1's left/far
-arm substantially more static than the right. V3 uses the approved Rig Motion
-V3 as an explicit arm guide: cyan registers the near shoulder–elbow–wrist–hand
-chain and magenta registers the far chain. A fresh 1536 × 1024 source supplies
-eight isolated poses; all eight are registered with one shared scale, fixed
-body axis and common floor. The V3 page keeps the absolute asset URLs established
-by V2, preventing Vercel's trailing-slash canonicalization from resolving
-frames under `/keeper-review/assets/`.
-The review page synchronizes large and exact 128 × 160 game-scale views, has
-previous/next stepping, and translates the same strip at 168 high-resolution
-pixels per second for five seconds from fully hidden to fully hidden. Standard
-cap, jumper, trouser and boot palette samples are checked per frame. The loop is
-awaiting Frank's visual approval, specifically of the opposing arm motion;
-walk→stop, stop→walk, the deterministic left
-mirror, workbench Final and production promotion remain deliberately untouched.
+The active one-at-a-time core candidate is
+`art/drafts/keeper-prime-walk-2026-10-14-v4/`, reviewed at
+`/keeper-review/keeper-prime-walk-v4/`. V1–V3 remain immutable provenance; V2
+is still V1's byte-identical routing wrapper. Frank found V3's rear/screen-left
+arm still too static: F2/F3 were almost identical and F5/F6/F7 barely advanced.
+V4 therefore authors exactly those five phases separately as rearward-to-
+passing, passing, compact return, passing and rearward swing. F1, F4 and F8
+remain byte-identical to V3. F2, F3 and F5–F7 are registered from separate
+smooth generated sources and composited only within declared rear-arm masks;
+the verifier rejects any changed pixel outside those masks. Two F4 occlusion
+attempts are retained only as rejected provenance: one left a circular shoulder
+loop, while the clean full-frame occlusion introduced an unacceptable body-model
+jump. Keeping exact V3 F4 is preferable to disguising that wider discontinuity.
+
+The V4 page keeps V2's absolute asset-path correction, preventing Vercel's
+trailing-slash canonicalization from resolving frames under
+`/keeper-review/assets/`. It synchronizes V3 and V4 at exact 128 × 160 game
+size, retains previous/next stepping, and translates the same strip at 168
+high-resolution pixels per second for five seconds from fully hidden to fully
+hidden. V4 remains awaiting Frank's visual approval; walk→stop, stop→walk, the
+deterministic left mirror, workbench Final and production promotion remain
+deliberately untouched.
 
 ## Review-comments workflow for a later feedback round
 

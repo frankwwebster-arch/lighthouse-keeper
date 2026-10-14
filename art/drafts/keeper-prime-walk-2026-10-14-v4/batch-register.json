@@ -1,0 +1,1316 @@
+{
+  "batchId": "keeper-prime-walk-2026-10-14-v4",
+  "status": "draft-rear-arm-cadence-v4-awaiting-visual-approval",
+  "purpose": "Replace Walk V3's held rear/screen-left arm with an explicit, continuous eight-frame arm cycle without changing approved production or Final assets.",
+  "userFeedback": "left are still too static - frames 2 and 3 are almost identical as are 5 6 ad 7",
+  "previousCandidate": {
+    "register": "art/drafts/keeper-prime-walk-2026-10-13-v3/batch-register.json",
+    "sha256": "c8b44f890bd83ade03fbe76b627cd39271a71f9ca36eba1be28fc762eda395cb",
+    "filesChanged": false
+  },
+  "generation": {
+    "mode": "built-in-image-generation-per-frame-precise-object-edit, followed by deterministic cap-badge registration and declared-region compositing",
+    "selectedSources": [
+      {
+        "frame": 2,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/keeper-prime-walk-v4-f2-halfway-arm.png",
+        "sha256": "ffeea4c61b649dd99109976abccf750e798551b752f610819b7dbe803f34e0f1"
+      },
+      {
+        "frame": 3,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/keeper-prime-walk-v4-f3-passing-arm.png",
+        "sha256": "968eda802aa93dc7f23e64ec05cc6e18ec22bd53d26c089eb83419be2dfe744f"
+      },
+      {
+        "frame": 5,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/keeper-prime-walk-v4-f5-reappearing-arm.png",
+        "sha256": "c59192d3b6203b238ef4090428e6dbad47df0eb3b6261707ec17071e94bda438"
+      },
+      {
+        "frame": 6,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/keeper-prime-walk-v4-f6-passing-arm.png",
+        "sha256": "5899246da27b2c2cffbbb116a4d3fdaa361af799f77c00a012c80c6d2222e664"
+      },
+      {
+        "frame": 7,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/keeper-prime-walk-v4-f7-rearward-arm.png",
+        "sha256": "f7024bc128a0688bd0137cdff8f27ad8d575fbc8591cbf8da48ae5b82895ae4f"
+      }
+    ],
+    "rejectedSources": [
+      {
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/rejected-f2-maximum-rearward.png",
+        "sha256": "7927dd2bd43ca9d1a51d982610a1614f976021b17c9984268586a74190849f63",
+        "reason": "made F2 a second rearward maximum instead of a transition toward F3"
+      },
+      {
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/rejected-f4-shoulder-loop.png",
+        "sha256": "c774ea9af20ab0e3f741fa9085a689bb68231c2fe294b76a1da98173f70dc39a",
+        "reason": "left a circular sleeve/shoulder loop instead of a clean occluded rear arm"
+      },
+      {
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/rejected-f4-full-occlusion-model-shift.png",
+        "sha256": "30725d9d5ae333ad2c01e3f26cd876789303876f9acc1b290d81810fc079dede",
+        "reason": "clean occlusion required a full-frame redraw that introduced an unacceptable body-model shift"
+      }
+    ],
+    "promptLog": "art/drafts/keeper-prime-walk-2026-10-14-v4/PROMPT_LOG.md",
+    "editMethod": "Only F2, F3 and F5\u2013F7 change, each through a declared rear-arm polygon. F1, F4 and F8 remain byte-identical to Walk V3."
+  },
+  "animation": {
+    "name": "keeper_prime_walk-right",
+    "frames": 8,
+    "fps": 8,
+    "durationSeconds": 1,
+    "loop": true,
+    "strip": {
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/drafts/keeper_prime_walk-right_f8.png",
+      "sha256": "b7ee2e92a1390f44186803d3fadd539459d3029fad74556c60a846cf75edce3f",
+      "sidecar": "art/drafts/keeper-prime-walk-2026-10-14-v4/drafts/keeper_prime_walk-right_f8.json",
+      "sidecarSha256": "b4ffc3289ce3cfb06440f7e99c5f3d11ac3b791490486e1b10bf5a71b8f4c197"
+    },
+    "rootMotion": {
+      "bakedIntoStrip": false,
+      "speedHighResolutionPixelsPerSecond": 168,
+      "speedLogicalPixelsPerSecond": 21,
+      "representativeDurationSeconds": 5,
+      "beginsAndEndsFullyHidden": true
+    }
+  },
+  "rearArmCycle": [
+    {
+      "frame": 1,
+      "state": "rearward maximum authority (unchanged V3)"
+    },
+    {
+      "frame": 2,
+      "state": "rearward-to-passing halfway"
+    },
+    {
+      "frame": 3,
+      "state": "vertical passing"
+    },
+    {
+      "frame": 4,
+      "state": "up-pose authority (unchanged V3)"
+    },
+    {
+      "frame": 5,
+      "state": "forward return, cuff and hand begin reappearing"
+    },
+    {
+      "frame": 6,
+      "state": "vertical passing on return"
+    },
+    {
+      "frame": 7,
+      "state": "clear rearward swing"
+    },
+    {
+      "frame": 8,
+      "state": "rearward approach to loop seam (unchanged V3)"
+    }
+  ],
+  "frames": [
+    {
+      "frame": 1,
+      "pose": "contact",
+      "rearArmState": "rearward maximum authority (unchanged V3)",
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/drafts/frames/keeper_prime_walk-right_f1.png",
+      "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "opaqueBoundsExclusive": [
+        41,
+        18,
+        233,
+        316
+      ],
+      "opaqueWidth": 192,
+      "opaqueHeight": 298,
+      "opaqueArea": 31745,
+      "alphaCentroid": [
+        134.284,
+        175.335
+      ],
+      "edgeAlphaPixels": 0,
+      "provenance": {
+        "source": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f1.png",
+        "sourceSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+        "byteIdenticalToV3": true
+      }
+    },
+    {
+      "frame": 2,
+      "pose": "down",
+      "rearArmState": "rearward-to-passing halfway",
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/drafts/frames/keeper_prime_walk-right_f2.png",
+      "sha256": "b5dfc390ff0b572c4113bae2698e063f4dd446cbb43e2438da8f8a28b90fba33",
+      "opaqueBoundsExclusive": [
+        60,
+        16,
+        206,
+        316
+      ],
+      "opaqueWidth": 146,
+      "opaqueHeight": 300,
+      "opaqueArea": 26943,
+      "alphaCentroid": [
+        133.79,
+        166.609
+      ],
+      "edgeAlphaPixels": 0,
+      "provenance": {
+        "base": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f2.png",
+        "baseSha256": "32e057dfe006101740098a984efb605109fbc9d56e074ccf7b0a585ef11b00fa",
+        "generatedArmSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/keeper-prime-walk-v4-f2-halfway-arm.png",
+        "generatedArmSourceSha256": "ffeea4c61b649dd99109976abccf750e798551b752f610819b7dbe803f34e0f1",
+        "registeredSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/evidence/registered-sources/frame-2.png",
+        "registeredSourceSha256": "de11cf4142274b62ef1ca612215976afa5328606b1c2bf5b806f2e966adc626c",
+        "registration": {
+          "method": "uniform Lanczos scale from significant-alpha height, floor alignment, and cap-badge horizontal alignment",
+          "sourceBadgeBoundsExclusive": [
+            765,
+            207,
+            813,
+            253
+          ],
+          "targetBadgeBoundsExclusive": [
+            168,
+            48,
+            178,
+            58
+          ],
+          "sourceAlphaBoundsExclusive": [
+            303,
+            71,
+            930,
+            1362
+          ],
+          "targetAlphaBoundsExclusive": [
+            59,
+            16,
+            206,
+            316
+          ],
+          "scale": 0.232378001549,
+          "offset": [
+            -10,
+            0
+          ],
+          "creativeWarp": false
+        },
+        "declaredEditPolygon": [
+          [
+            38,
+            137
+          ],
+          [
+            70,
+            122
+          ],
+          [
+            106,
+            132
+          ],
+          [
+            114,
+            174
+          ],
+          [
+            106,
+            224
+          ],
+          [
+            82,
+            244
+          ],
+          [
+            45,
+            240
+          ],
+          [
+            31,
+            205
+          ]
+        ],
+        "maskFeatherRadiusPixels": 0.65,
+        "pixelAudit": {
+          "changedPixels": 3778,
+          "changedInsideDeclaredRegion": 3778,
+          "changedOutsideDeclaredRegion": 0
+        },
+        "byteIdenticalToV3": false
+      }
+    },
+    {
+      "frame": 3,
+      "pose": "passing",
+      "rearArmState": "vertical passing",
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/drafts/frames/keeper_prime_walk-right_f3.png",
+      "sha256": "6cc485ed2ede9a23a2fb9b19bf73ee8ecfd20e90220fca49b49ced461be8a9c5",
+      "opaqueBoundsExclusive": [
+        84,
+        17,
+        203,
+        316
+      ],
+      "opaqueWidth": 119,
+      "opaqueHeight": 299,
+      "opaqueArea": 25179,
+      "alphaCentroid": [
+        139.915,
+        162.163
+      ],
+      "edgeAlphaPixels": 0,
+      "provenance": {
+        "base": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f3.png",
+        "baseSha256": "739bdbdf5ab5cc230a4b5d4a7261a5be012666becd61c63c5b73143f98a17202",
+        "generatedArmSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/keeper-prime-walk-v4-f3-passing-arm.png",
+        "generatedArmSourceSha256": "968eda802aa93dc7f23e64ec05cc6e18ec22bd53d26c089eb83419be2dfe744f",
+        "registeredSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/evidence/registered-sources/frame-3.png",
+        "registeredSourceSha256": "23a83aab688bc532daf0ab7e6fd48df66ee4af41fb50315a4b260bdebdd94389",
+        "registration": {
+          "method": "uniform Lanczos scale from significant-alpha height, floor alignment, and cap-badge horizontal alignment",
+          "sourceBadgeBoundsExclusive": [
+            770,
+            210,
+            815,
+            257
+          ],
+          "targetBadgeBoundsExclusive": [
+            175,
+            48,
+            185,
+            58
+          ],
+          "sourceAlphaBoundsExclusive": [
+            370,
+            73,
+            894,
+            1394
+          ],
+          "targetAlphaBoundsExclusive": [
+            65,
+            17,
+            203,
+            316
+          ],
+          "scale": 0.226343679031,
+          "offset": [
+            1,
+            0
+          ],
+          "creativeWarp": false
+        },
+        "declaredEditPolygon": [
+          [
+            45,
+            136
+          ],
+          [
+            73,
+            123
+          ],
+          [
+            108,
+            134
+          ],
+          [
+            112,
+            181
+          ],
+          [
+            103,
+            234
+          ],
+          [
+            76,
+            248
+          ],
+          [
+            47,
+            235
+          ],
+          [
+            38,
+            194
+          ]
+        ],
+        "maskFeatherRadiusPixels": 0.65,
+        "pixelAudit": {
+          "changedPixels": 3418,
+          "changedInsideDeclaredRegion": 3418,
+          "changedOutsideDeclaredRegion": 0
+        },
+        "byteIdenticalToV3": false
+      }
+    },
+    {
+      "frame": 4,
+      "pose": "up",
+      "rearArmState": "up-pose authority (unchanged V3)",
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/drafts/frames/keeper_prime_walk-right_f4.png",
+      "sha256": "353372c335ebea3b080296cc39b32a159bfd58d223a148f846e9783153ff5293",
+      "opaqueBoundsExclusive": [
+        40,
+        17,
+        232,
+        316
+      ],
+      "opaqueWidth": 192,
+      "opaqueHeight": 299,
+      "opaqueArea": 30369,
+      "alphaCentroid": [
+        135.321,
+        171.95
+      ],
+      "edgeAlphaPixels": 0,
+      "provenance": {
+        "source": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f4.png",
+        "sourceSha256": "353372c335ebea3b080296cc39b32a159bfd58d223a148f846e9783153ff5293",
+        "byteIdenticalToV3": true
+      }
+    },
+    {
+      "frame": 5,
+      "pose": "opposite contact",
+      "rearArmState": "forward return, cuff and hand begin reappearing",
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/drafts/frames/keeper_prime_walk-right_f5.png",
+      "sha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "opaqueBoundsExclusive": [
+        47,
+        23,
+        234,
+        316
+      ],
+      "opaqueWidth": 187,
+      "opaqueHeight": 293,
+      "opaqueArea": 28986,
+      "alphaCentroid": [
+        138.224,
+        177.955
+      ],
+      "edgeAlphaPixels": 0,
+      "provenance": {
+        "base": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f5.png",
+        "baseSha256": "2e3c494e8e28c7ba9d96c69993cd56be867333e6d9b0a679677f0c2a0a77b3d6",
+        "generatedArmSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/keeper-prime-walk-v4-f5-reappearing-arm.png",
+        "generatedArmSourceSha256": "c59192d3b6203b238ef4090428e6dbad47df0eb3b6261707ec17071e94bda438",
+        "registeredSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/evidence/registered-sources/frame-5.png",
+        "registeredSourceSha256": "cf177a3d61eb542da42e0a74f2c45f3e7a67c5b4874fbfa78fd69c639d5d3a7c",
+        "registration": {
+          "method": "uniform Lanczos scale from significant-alpha height, floor alignment, and cap-badge horizontal alignment",
+          "sourceBadgeBoundsExclusive": [
+            764,
+            232,
+            810,
+            280
+          ],
+          "targetBadgeBoundsExclusive": [
+            173,
+            53,
+            183,
+            63
+          ],
+          "sourceAlphaBoundsExclusive": [
+            208,
+            102,
+            1030,
+            1384
+          ],
+          "targetAlphaBoundsExclusive": [
+            47,
+            23,
+            234,
+            316
+          ],
+          "scale": 0.228549141966,
+          "offset": [
+            -2,
+            0
+          ],
+          "creativeWarp": false
+        },
+        "declaredEditPolygon": [
+          [
+            34,
+            142
+          ],
+          [
+            70,
+            128
+          ],
+          [
+            109,
+            140
+          ],
+          [
+            113,
+            186
+          ],
+          [
+            103,
+            229
+          ],
+          [
+            72,
+            241
+          ],
+          [
+            39,
+            228
+          ],
+          [
+            28,
+            184
+          ]
+        ],
+        "maskFeatherRadiusPixels": 0.65,
+        "pixelAudit": {
+          "changedPixels": 4470,
+          "changedInsideDeclaredRegion": 4470,
+          "changedOutsideDeclaredRegion": 0
+        },
+        "byteIdenticalToV3": false
+      }
+    },
+    {
+      "frame": 6,
+      "pose": "opposite down",
+      "rearArmState": "vertical passing on return",
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/drafts/frames/keeper_prime_walk-right_f6.png",
+      "sha256": "619de2c4d27c276560cf047f95adfc0e3e6d5d98795036ab872cdbba1ff0c18c",
+      "opaqueBoundsExclusive": [
+        63,
+        22,
+        194,
+        316
+      ],
+      "opaqueWidth": 131,
+      "opaqueHeight": 294,
+      "opaqueArea": 27368,
+      "alphaCentroid": [
+        131.379,
+        172.17
+      ],
+      "edgeAlphaPixels": 0,
+      "provenance": {
+        "base": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f6.png",
+        "baseSha256": "d420ce28ff67c2d12aad3b84fe502a8cc8c54668d811565267363b7585e70c6f",
+        "generatedArmSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/keeper-prime-walk-v4-f6-passing-arm.png",
+        "generatedArmSourceSha256": "5899246da27b2c2cffbbb116a4d3fdaa361af799f77c00a012c80c6d2222e664",
+        "registeredSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/evidence/registered-sources/frame-6.png",
+        "registeredSourceSha256": "509abb7a3ed2f2f836bf87fc5d04f659acf310ef8be791e079522b43e59cc0ef",
+        "registration": {
+          "method": "uniform Lanczos scale from significant-alpha height, floor alignment, and cap-badge horizontal alignment",
+          "sourceBadgeBoundsExclusive": [
+            746,
+            230,
+            791,
+            276
+          ],
+          "targetBadgeBoundsExclusive": [
+            170,
+            53,
+            180,
+            63
+          ],
+          "sourceAlphaBoundsExclusive": [
+            274,
+            93,
+            852,
+            1389
+          ],
+          "targetAlphaBoundsExclusive": [
+            59,
+            22,
+            194,
+            316
+          ],
+          "scale": 0.226851851852,
+          "offset": [
+            1,
+            1
+          ],
+          "creativeWarp": false
+        },
+        "declaredEditPolygon": [
+          [
+            42,
+            141
+          ],
+          [
+            73,
+            127
+          ],
+          [
+            109,
+            139
+          ],
+          [
+            113,
+            185
+          ],
+          [
+            104,
+            235
+          ],
+          [
+            77,
+            249
+          ],
+          [
+            46,
+            237
+          ],
+          [
+            36,
+            190
+          ]
+        ],
+        "maskFeatherRadiusPixels": 0.65,
+        "pixelAudit": {
+          "changedPixels": 4149,
+          "changedInsideDeclaredRegion": 4149,
+          "changedOutsideDeclaredRegion": 0
+        },
+        "byteIdenticalToV3": false
+      }
+    },
+    {
+      "frame": 7,
+      "pose": "opposite passing",
+      "rearArmState": "clear rearward swing",
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/drafts/frames/keeper_prime_walk-right_f7.png",
+      "sha256": "86202f116f90e7f5ecc05e800737c606e0842f5ad396fc68f015b35126ba0dd4",
+      "opaqueBoundsExclusive": [
+        37,
+        23,
+        200,
+        316
+      ],
+      "opaqueWidth": 163,
+      "opaqueHeight": 293,
+      "opaqueArea": 28494,
+      "alphaCentroid": [
+        131.847,
+        170.823
+      ],
+      "edgeAlphaPixels": 0,
+      "provenance": {
+        "base": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f7.png",
+        "baseSha256": "06918f64d0d2e1b2c9f4ff310984a52ed823c20854e6b45578e4aa0325813336",
+        "generatedArmSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/keeper-prime-walk-v4-f7-rearward-arm.png",
+        "generatedArmSourceSha256": "f7024bc128a0688bd0137cdff8f27ad8d575fbc8591cbf8da48ae5b82895ae4f",
+        "registeredSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/evidence/registered-sources/frame-7.png",
+        "registeredSourceSha256": "2b86572d3f134513764877dc5e3fc771eb46e238b99a055edcb33d2edc92f4a6",
+        "registration": {
+          "method": "uniform Lanczos scale from significant-alpha height, floor alignment, and cap-badge horizontal alignment",
+          "sourceBadgeBoundsExclusive": [
+            738,
+            231,
+            783,
+            277
+          ],
+          "targetBadgeBoundsExclusive": [
+            169,
+            54,
+            178,
+            63
+          ],
+          "sourceAlphaBoundsExclusive": [
+            171,
+            101,
+            872,
+            1371
+          ],
+          "targetAlphaBoundsExclusive": [
+            54,
+            23,
+            200,
+            316
+          ],
+          "scale": 0.230708661417,
+          "offset": [
+            -2,
+            0
+          ],
+          "creativeWarp": false
+        },
+        "declaredEditPolygon": [
+          [
+            32,
+            138
+          ],
+          [
+            68,
+            122
+          ],
+          [
+            108,
+            133
+          ],
+          [
+            114,
+            179
+          ],
+          [
+            106,
+            226
+          ],
+          [
+            78,
+            245
+          ],
+          [
+            38,
+            238
+          ],
+          [
+            23,
+            196
+          ]
+        ],
+        "maskFeatherRadiusPixels": 0.65,
+        "pixelAudit": {
+          "changedPixels": 5560,
+          "changedInsideDeclaredRegion": 5560,
+          "changedOutsideDeclaredRegion": 0
+        },
+        "byteIdenticalToV3": false
+      }
+    },
+    {
+      "frame": 8,
+      "pose": "opposite up",
+      "rearArmState": "rearward approach to loop seam (unchanged V3)",
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/drafts/frames/keeper_prime_walk-right_f8.png",
+      "sha256": "43fde698fc7e35da81971b37e98c7ca58a8f19e82bdbdf65d37cfdbd3c802ebe",
+      "opaqueBoundsExclusive": [
+        42,
+        23,
+        229,
+        316
+      ],
+      "opaqueWidth": 187,
+      "opaqueHeight": 293,
+      "opaqueArea": 30092,
+      "alphaCentroid": [
+        135.401,
+        173.384
+      ],
+      "edgeAlphaPixels": 0,
+      "provenance": {
+        "source": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f8.png",
+        "sourceSha256": "43fde698fc7e35da81971b37e98c7ca58a8f19e82bdbdf65d37cfdbd3c802ebe",
+        "byteIdenticalToV3": true
+      }
+    }
+  ],
+  "edits": [
+    {
+      "frame": 2,
+      "base": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f2.png",
+      "baseSha256": "32e057dfe006101740098a984efb605109fbc9d56e074ccf7b0a585ef11b00fa",
+      "generatedArmSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/keeper-prime-walk-v4-f2-halfway-arm.png",
+      "generatedArmSourceSha256": "ffeea4c61b649dd99109976abccf750e798551b752f610819b7dbe803f34e0f1",
+      "registeredSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/evidence/registered-sources/frame-2.png",
+      "registeredSourceSha256": "de11cf4142274b62ef1ca612215976afa5328606b1c2bf5b806f2e966adc626c",
+      "registration": {
+        "method": "uniform Lanczos scale from significant-alpha height, floor alignment, and cap-badge horizontal alignment",
+        "sourceBadgeBoundsExclusive": [
+          765,
+          207,
+          813,
+          253
+        ],
+        "targetBadgeBoundsExclusive": [
+          168,
+          48,
+          178,
+          58
+        ],
+        "sourceAlphaBoundsExclusive": [
+          303,
+          71,
+          930,
+          1362
+        ],
+        "targetAlphaBoundsExclusive": [
+          59,
+          16,
+          206,
+          316
+        ],
+        "scale": 0.232378001549,
+        "offset": [
+          -10,
+          0
+        ],
+        "creativeWarp": false
+      },
+      "declaredEditPolygon": [
+        [
+          38,
+          137
+        ],
+        [
+          70,
+          122
+        ],
+        [
+          106,
+          132
+        ],
+        [
+          114,
+          174
+        ],
+        [
+          106,
+          224
+        ],
+        [
+          82,
+          244
+        ],
+        [
+          45,
+          240
+        ],
+        [
+          31,
+          205
+        ]
+      ],
+      "maskFeatherRadiusPixels": 0.65,
+      "pixelAudit": {
+        "changedPixels": 3778,
+        "changedInsideDeclaredRegion": 3778,
+        "changedOutsideDeclaredRegion": 0
+      },
+      "byteIdenticalToV3": false
+    },
+    {
+      "frame": 3,
+      "base": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f3.png",
+      "baseSha256": "739bdbdf5ab5cc230a4b5d4a7261a5be012666becd61c63c5b73143f98a17202",
+      "generatedArmSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/keeper-prime-walk-v4-f3-passing-arm.png",
+      "generatedArmSourceSha256": "968eda802aa93dc7f23e64ec05cc6e18ec22bd53d26c089eb83419be2dfe744f",
+      "registeredSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/evidence/registered-sources/frame-3.png",
+      "registeredSourceSha256": "23a83aab688bc532daf0ab7e6fd48df66ee4af41fb50315a4b260bdebdd94389",
+      "registration": {
+        "method": "uniform Lanczos scale from significant-alpha height, floor alignment, and cap-badge horizontal alignment",
+        "sourceBadgeBoundsExclusive": [
+          770,
+          210,
+          815,
+          257
+        ],
+        "targetBadgeBoundsExclusive": [
+          175,
+          48,
+          185,
+          58
+        ],
+        "sourceAlphaBoundsExclusive": [
+          370,
+          73,
+          894,
+          1394
+        ],
+        "targetAlphaBoundsExclusive": [
+          65,
+          17,
+          203,
+          316
+        ],
+        "scale": 0.226343679031,
+        "offset": [
+          1,
+          0
+        ],
+        "creativeWarp": false
+      },
+      "declaredEditPolygon": [
+        [
+          45,
+          136
+        ],
+        [
+          73,
+          123
+        ],
+        [
+          108,
+          134
+        ],
+        [
+          112,
+          181
+        ],
+        [
+          103,
+          234
+        ],
+        [
+          76,
+          248
+        ],
+        [
+          47,
+          235
+        ],
+        [
+          38,
+          194
+        ]
+      ],
+      "maskFeatherRadiusPixels": 0.65,
+      "pixelAudit": {
+        "changedPixels": 3418,
+        "changedInsideDeclaredRegion": 3418,
+        "changedOutsideDeclaredRegion": 0
+      },
+      "byteIdenticalToV3": false
+    },
+    {
+      "frame": 5,
+      "base": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f5.png",
+      "baseSha256": "2e3c494e8e28c7ba9d96c69993cd56be867333e6d9b0a679677f0c2a0a77b3d6",
+      "generatedArmSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/keeper-prime-walk-v4-f5-reappearing-arm.png",
+      "generatedArmSourceSha256": "c59192d3b6203b238ef4090428e6dbad47df0eb3b6261707ec17071e94bda438",
+      "registeredSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/evidence/registered-sources/frame-5.png",
+      "registeredSourceSha256": "cf177a3d61eb542da42e0a74f2c45f3e7a67c5b4874fbfa78fd69c639d5d3a7c",
+      "registration": {
+        "method": "uniform Lanczos scale from significant-alpha height, floor alignment, and cap-badge horizontal alignment",
+        "sourceBadgeBoundsExclusive": [
+          764,
+          232,
+          810,
+          280
+        ],
+        "targetBadgeBoundsExclusive": [
+          173,
+          53,
+          183,
+          63
+        ],
+        "sourceAlphaBoundsExclusive": [
+          208,
+          102,
+          1030,
+          1384
+        ],
+        "targetAlphaBoundsExclusive": [
+          47,
+          23,
+          234,
+          316
+        ],
+        "scale": 0.228549141966,
+        "offset": [
+          -2,
+          0
+        ],
+        "creativeWarp": false
+      },
+      "declaredEditPolygon": [
+        [
+          34,
+          142
+        ],
+        [
+          70,
+          128
+        ],
+        [
+          109,
+          140
+        ],
+        [
+          113,
+          186
+        ],
+        [
+          103,
+          229
+        ],
+        [
+          72,
+          241
+        ],
+        [
+          39,
+          228
+        ],
+        [
+          28,
+          184
+        ]
+      ],
+      "maskFeatherRadiusPixels": 0.65,
+      "pixelAudit": {
+        "changedPixels": 4470,
+        "changedInsideDeclaredRegion": 4470,
+        "changedOutsideDeclaredRegion": 0
+      },
+      "byteIdenticalToV3": false
+    },
+    {
+      "frame": 6,
+      "base": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f6.png",
+      "baseSha256": "d420ce28ff67c2d12aad3b84fe502a8cc8c54668d811565267363b7585e70c6f",
+      "generatedArmSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/keeper-prime-walk-v4-f6-passing-arm.png",
+      "generatedArmSourceSha256": "5899246da27b2c2cffbbb116a4d3fdaa361af799f77c00a012c80c6d2222e664",
+      "registeredSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/evidence/registered-sources/frame-6.png",
+      "registeredSourceSha256": "509abb7a3ed2f2f836bf87fc5d04f659acf310ef8be791e079522b43e59cc0ef",
+      "registration": {
+        "method": "uniform Lanczos scale from significant-alpha height, floor alignment, and cap-badge horizontal alignment",
+        "sourceBadgeBoundsExclusive": [
+          746,
+          230,
+          791,
+          276
+        ],
+        "targetBadgeBoundsExclusive": [
+          170,
+          53,
+          180,
+          63
+        ],
+        "sourceAlphaBoundsExclusive": [
+          274,
+          93,
+          852,
+          1389
+        ],
+        "targetAlphaBoundsExclusive": [
+          59,
+          22,
+          194,
+          316
+        ],
+        "scale": 0.226851851852,
+        "offset": [
+          1,
+          1
+        ],
+        "creativeWarp": false
+      },
+      "declaredEditPolygon": [
+        [
+          42,
+          141
+        ],
+        [
+          73,
+          127
+        ],
+        [
+          109,
+          139
+        ],
+        [
+          113,
+          185
+        ],
+        [
+          104,
+          235
+        ],
+        [
+          77,
+          249
+        ],
+        [
+          46,
+          237
+        ],
+        [
+          36,
+          190
+        ]
+      ],
+      "maskFeatherRadiusPixels": 0.65,
+      "pixelAudit": {
+        "changedPixels": 4149,
+        "changedInsideDeclaredRegion": 4149,
+        "changedOutsideDeclaredRegion": 0
+      },
+      "byteIdenticalToV3": false
+    },
+    {
+      "frame": 7,
+      "base": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f7.png",
+      "baseSha256": "06918f64d0d2e1b2c9f4ff310984a52ed823c20854e6b45578e4aa0325813336",
+      "generatedArmSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/sources/keeper-prime-walk-v4-f7-rearward-arm.png",
+      "generatedArmSourceSha256": "f7024bc128a0688bd0137cdff8f27ad8d575fbc8591cbf8da48ae5b82895ae4f",
+      "registeredSource": "art/drafts/keeper-prime-walk-2026-10-14-v4/evidence/registered-sources/frame-7.png",
+      "registeredSourceSha256": "2b86572d3f134513764877dc5e3fc771eb46e238b99a055edcb33d2edc92f4a6",
+      "registration": {
+        "method": "uniform Lanczos scale from significant-alpha height, floor alignment, and cap-badge horizontal alignment",
+        "sourceBadgeBoundsExclusive": [
+          738,
+          231,
+          783,
+          277
+        ],
+        "targetBadgeBoundsExclusive": [
+          169,
+          54,
+          178,
+          63
+        ],
+        "sourceAlphaBoundsExclusive": [
+          171,
+          101,
+          872,
+          1371
+        ],
+        "targetAlphaBoundsExclusive": [
+          54,
+          23,
+          200,
+          316
+        ],
+        "scale": 0.230708661417,
+        "offset": [
+          -2,
+          0
+        ],
+        "creativeWarp": false
+      },
+      "declaredEditPolygon": [
+        [
+          32,
+          138
+        ],
+        [
+          68,
+          122
+        ],
+        [
+          108,
+          133
+        ],
+        [
+          114,
+          179
+        ],
+        [
+          106,
+          226
+        ],
+        [
+          78,
+          245
+        ],
+        [
+          38,
+          238
+        ],
+        [
+          23,
+          196
+        ]
+      ],
+      "maskFeatherRadiusPixels": 0.65,
+      "pixelAudit": {
+        "changedPixels": 5560,
+        "changedInsideDeclaredRegion": 5560,
+        "changedOutsideDeclaredRegion": 0
+      },
+      "byteIdenticalToV3": false
+    }
+  ],
+  "continuity": [
+    {
+      "fromFrame": 1,
+      "toFrame": 2,
+      "opaqueHeightDelta": 2,
+      "opaqueWidthDelta": -46,
+      "alphaCentroidDelta": [
+        -0.494,
+        -8.726
+      ],
+      "opaqueAreaRatio": 0.848732
+    },
+    {
+      "fromFrame": 2,
+      "toFrame": 3,
+      "opaqueHeightDelta": -1,
+      "opaqueWidthDelta": -27,
+      "alphaCentroidDelta": [
+        6.125,
+        -4.446
+      ],
+      "opaqueAreaRatio": 0.934528
+    },
+    {
+      "fromFrame": 3,
+      "toFrame": 4,
+      "opaqueHeightDelta": 0,
+      "opaqueWidthDelta": 73,
+      "alphaCentroidDelta": [
+        -4.594,
+        9.787
+      ],
+      "opaqueAreaRatio": 1.206124
+    },
+    {
+      "fromFrame": 4,
+      "toFrame": 5,
+      "opaqueHeightDelta": -6,
+      "opaqueWidthDelta": -5,
+      "alphaCentroidDelta": [
+        2.903,
+        6.005
+      ],
+      "opaqueAreaRatio": 0.95446
+    },
+    {
+      "fromFrame": 5,
+      "toFrame": 6,
+      "opaqueHeightDelta": 1,
+      "opaqueWidthDelta": -56,
+      "alphaCentroidDelta": [
+        -6.845,
+        -5.785
+      ],
+      "opaqueAreaRatio": 0.94418
+    },
+    {
+      "fromFrame": 6,
+      "toFrame": 7,
+      "opaqueHeightDelta": -1,
+      "opaqueWidthDelta": 32,
+      "alphaCentroidDelta": [
+        0.468,
+        -1.347
+      ],
+      "opaqueAreaRatio": 1.041143
+    },
+    {
+      "fromFrame": 7,
+      "toFrame": 8,
+      "opaqueHeightDelta": 0,
+      "opaqueWidthDelta": 24,
+      "alphaCentroidDelta": [
+        3.554,
+        2.561
+      ],
+      "opaqueAreaRatio": 1.056082
+    },
+    {
+      "fromFrame": 8,
+      "toFrame": 1,
+      "opaqueHeightDelta": 5,
+      "opaqueWidthDelta": 5,
+      "alphaCentroidDelta": [
+        -1.117,
+        1.951
+      ],
+      "opaqueAreaRatio": 1.054932
+    }
+  ],
+  "evidence": {
+    "contactSheet": {
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/evidence/walk-contact-sheet.png",
+      "sha256": "7f3f09592bf514229d94649cd1fdf7de1d2d1d2e25cf31c0dda30d318d780c00"
+    },
+    "approvedSideComparison": {
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v4/evidence/approved-side-vs-walk.png",
+      "sha256": "c45f97229f92d0d47b0ca978ff8d81f78faf8daf0ec0fc3eb126c710883c45a0"
+    }
+  },
+  "previousWalkV3FrameComparison": [
+    {
+      "frame": 1,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f1.png",
+      "sourceSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "public": "public/keeper-review/keeper-prime-walk-v4/assets/previous-v3-frame1-0e80ea65610452c9.png",
+      "publicSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "byteIdentical": true
+    },
+    {
+      "frame": 2,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f2.png",
+      "sourceSha256": "32e057dfe006101740098a984efb605109fbc9d56e074ccf7b0a585ef11b00fa",
+      "public": "public/keeper-review/keeper-prime-walk-v4/assets/previous-v3-frame2-32e057dfe0061017.png",
+      "publicSha256": "32e057dfe006101740098a984efb605109fbc9d56e074ccf7b0a585ef11b00fa",
+      "byteIdentical": true
+    },
+    {
+      "frame": 3,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f3.png",
+      "sourceSha256": "739bdbdf5ab5cc230a4b5d4a7261a5be012666becd61c63c5b73143f98a17202",
+      "public": "public/keeper-review/keeper-prime-walk-v4/assets/previous-v3-frame3-739bdbdf5ab5cc23.png",
+      "publicSha256": "739bdbdf5ab5cc230a4b5d4a7261a5be012666becd61c63c5b73143f98a17202",
+      "byteIdentical": true
+    },
+    {
+      "frame": 4,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f4.png",
+      "sourceSha256": "353372c335ebea3b080296cc39b32a159bfd58d223a148f846e9783153ff5293",
+      "public": "public/keeper-review/keeper-prime-walk-v4/assets/previous-v3-frame4-353372c335ebea3b.png",
+      "publicSha256": "353372c335ebea3b080296cc39b32a159bfd58d223a148f846e9783153ff5293",
+      "byteIdentical": true
+    },
+    {
+      "frame": 5,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f5.png",
+      "sourceSha256": "2e3c494e8e28c7ba9d96c69993cd56be867333e6d9b0a679677f0c2a0a77b3d6",
+      "public": "public/keeper-review/keeper-prime-walk-v4/assets/previous-v3-frame5-2e3c494e8e28c7ba.png",
+      "publicSha256": "2e3c494e8e28c7ba9d96c69993cd56be867333e6d9b0a679677f0c2a0a77b3d6",
+      "byteIdentical": true
+    },
+    {
+      "frame": 6,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f6.png",
+      "sourceSha256": "d420ce28ff67c2d12aad3b84fe502a8cc8c54668d811565267363b7585e70c6f",
+      "public": "public/keeper-review/keeper-prime-walk-v4/assets/previous-v3-frame6-d420ce28ff67c2d1.png",
+      "publicSha256": "d420ce28ff67c2d12aad3b84fe502a8cc8c54668d811565267363b7585e70c6f",
+      "byteIdentical": true
+    },
+    {
+      "frame": 7,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f7.png",
+      "sourceSha256": "06918f64d0d2e1b2c9f4ff310984a52ed823c20854e6b45578e4aa0325813336",
+      "public": "public/keeper-review/keeper-prime-walk-v4/assets/previous-v3-frame7-06918f64d0d2e1b2.png",
+      "publicSha256": "06918f64d0d2e1b2c9f4ff310984a52ed823c20854e6b45578e4aa0325813336",
+      "byteIdentical": true
+    },
+    {
+      "frame": 8,
+      "source": "art/drafts/keeper-prime-walk-2026-10-13-v3/drafts/frames/keeper_prime_walk-right_f8.png",
+      "sourceSha256": "43fde698fc7e35da81971b37e98c7ca58a8f19e82bdbdf65d37cfdbd3c802ebe",
+      "public": "public/keeper-review/keeper-prime-walk-v4/assets/previous-v3-frame8-43fde698fc7e35da.png",
+      "publicSha256": "43fde698fc7e35da81971b37e98c7ca58a8f19e82bdbdf65d37cfdbd3c802ebe",
+      "byteIdentical": true
+    }
+  ],
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-walk-v4/index.html",
+    "sha256": "1788a28940de4f12f777029a79e24a59cdf0aaad303dcba1cabf955b4a090d49",
+    "assetPrefix": "/keeper-review/keeper-prime-walk-v4/assets/",
+    "relativeAssetUrls": false
+  },
+  "validation": {
+    "framesOneFourAndEightByteIdenticalToV3": true,
+    "changedPixelsConfinedToDeclaredRegions": true,
+    "everyOutputCellHasTransparentEdge": true,
+    "stripMatchesFrames": true,
+    "sidecarMatchesStrip": true,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "workbenchFinalChanged": false
+  },
+  "approvalBoundary": {
+    "walkV4Approved": false,
+    "walkStopApproved": false,
+    "finalLaneEntryAllowed": false,
+    "productionPromotionAllowed": false
+  },
+  "nextGate": "Frank visually reviews Walk V4's rear-arm cadence at large and exact game scale before any walk-to-stop work continues.",
+  "rollback": "Delete only art/drafts/keeper-prime-walk-2026-10-14-v4 and public/keeper-review/keeper-prime-walk-v4; Walk V1\u2013V3, approved authorities, production sprites, manifests and Final remain unchanged."
+}
