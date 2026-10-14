@@ -13,16 +13,19 @@ deployment payload.
 - `review-archive/index.json` is the production redirect index and records the
   measured counts and byte savings.
 - `/keeper-review/<set>/assets/<name>` and `/keeper-review/drafts/<name>` return
-  permanent redirects to the declared external object URL.
+  short-lived temporary redirects to the declared external object URL. The
+  route stays replaceable if the external host changes.
 - `public/keeper-review` contains HTML and small JSON only. It must not contain
   PNG, GIF, JPEG, WebP or AVIF review media.
 - `public/sprites` is deliberately not archived because the running game reads
   it directly.
 
-The initial external host is jsDelivr over the public GitHub repository. The
-object filename is the complete SHA-256, redirects are cached for one year and
-the host can be replaced through regenerated manifests without changing the
-evidence bytes.
+The external host is GitHub's raw-content endpoint over the public repository.
+The object filename is the complete SHA-256. Do not use jsDelivr for this
+archive: it refuses uncached objects when the repository package exceeds
+50 MB. Animation review pages must preload and decode all moving-frame URLs
+before playback, so the redirect/download hop can never appear as a blank or
+stale animation frame.
 
 ## Normal authoring workflow
 
@@ -53,5 +56,6 @@ proposal.
 - historical sprite/reviewer verifiers still read the exact archived bytes;
 - known routes resolve and unknown archive paths fail closed.
 
-At migration, 550 legacy paths became 246 unique objects. The old review media
-represented 70.27 MiB per deployment; `public/` is now 43.01 MiB.
+After the first preload-safe route, 574 legacy paths resolve to the same 246
+unique objects. They represent 72.42 MiB of logical review media while the
+unique store remains 44.71 MiB; `public/` remains 43.01 MiB.

@@ -6,14 +6,14 @@
     "sha256": "af4614387401b0f2f3c548bd274a3bbe806bf6f4d91b64ff836eb62440ef1287",
     "bytes": 321255
   },
-  "objectsBaseUrl": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects",
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
   "entries": {
     "/keeper-review/keeper-prime-rig-v2/assets/motion-0e64dc88b2b2c30a.png": {
       "sha256": "0e64dc88b2b2c30a1e7141ecb66c8a26d5af5c89bcdf672531589b6314887fcc",
       "extension": ".png",
       "bytes": 24519,
       "object": "review-archive/objects/0e/0e64dc88b2b2c30a1e7141ecb66c8a26d5af5c89bcdf672531589b6314887fcc.png",
-      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/0e/0e64dc88b2b2c30a1e7141ecb66c8a26d5af5c89bcdf672531589b6314887fcc.png"
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0e64dc88b2b2c30a1e7141ecb66c8a26d5af5c89bcdf672531589b6314887fcc.png"
     }
   }
 }

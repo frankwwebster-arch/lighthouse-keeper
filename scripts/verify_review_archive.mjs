@@ -12,7 +12,7 @@ const fail = (message) => { throw new Error(`Review archive: ${message}`) }
 const hash = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')
 if (!fs.existsSync(INDEX)) fail('index.json is missing')
 const index = JSON.parse(fs.readFileSync(INDEX, 'utf8'))
-if (index.version !== 1 || !index.objectsBaseUrl.startsWith('https://')) fail('index identity/base URL invalid')
+if (index.version !== 1 || index.objectsBaseUrl !== 'https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects') fail('index identity/base URL invalid')
 
 const referencedObjects = new Set()
 let logicalBytes = 0

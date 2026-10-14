@@ -223,6 +223,7 @@ npm run verify:keeper-prime-side-right-rigged-v1
 npm run verify:keeper-prime-turn-front-side-v1
 npm run verify:keeper-prime-turn-side-back-v1
 npm run verify:keeper-prime-walk-stop-turn-back-v1
+npm run verify:keeper-prime-walk-stop-turn-back-v2
 npm run verify:keeper-animation-workbench
 npm run verify:keeper-timing-lab-v1
 npm test

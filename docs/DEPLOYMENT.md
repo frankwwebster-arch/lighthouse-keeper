@@ -134,18 +134,18 @@ explicit release.
    `scripts/vercel-ignore-build.mjs` rather than re-enabling all branches.
 3. **Dashboard redeploys.** "Redeploy" on a skipped commit is skipped too. Use
    `npm run deploy` or the GitHub button instead.
-4. **The archive CDN reads the public Git repository.** Review objects are
+4. **The archive host reads the public Git repository.** Review objects are
    immutable and addressed by full SHA-256, but availability still depends on
-   GitHub and jsDelivr. The manifest keeps the host replaceable if Vercel Blob
-   or another object store is preferred later.
+   GitHub's raw-content service. The manifest and short-lived redirect keep the
+   host replaceable if Vercel Blob or another object store is preferred later.
 
 ## Content-addressed review archive (implemented 14 October 2026)
 
 Keeper review media is now stored once outside `public/`, without deleting any
 evidence or changing immutable review-page bytes.
 
-**Measured result:** 550 historical review-media paths collapse to 246 unique
-objects. The old paths represented 70.27 MiB; the unique store is 44.71 MiB.
+**Measured result:** 574 historical review-media paths collapse to 246 unique
+objects. The paths represent 72.42 MiB; the unique store is 44.71 MiB.
 The real `public/` deployment payload is now 43.01 MiB rather than roughly
 115 MiB. The archive itself stays in Git but is outside `public/`, so Vercel
 does not copy those objects into every deployment.
@@ -155,19 +155,21 @@ does not copy those objects into every deployment.
 1. **One store, keyed by hash.** Every review asset is stored as
    `review-archive/objects/<sha256[0:2]>/<sha256>.<ext>`. The store stays in git,
    so all evidence remains versioned and reversible.
-2. **One manifest per review set.** The 36 files under
+2. **One manifest per review set.** The 37 files under
    `review-archive/sets/` map every legacy review path to its full object hash,
    byte length, repository object and external URL. `review-archive/index.json`
    is the deterministic route index and records aggregate savings.
 3. **Immutable HTML stays immutable.** Historical review HTML and approval
    registers keep their original `/keeper-review/...` addresses and original
-   SHA-256. Two narrow server routes resolve those addresses, return permanent
-   redirects and add a one-year immutable cache header. Unknown paths return
-   404.
-4. **Objects are hosted once outside deployments.** The initial backend is
-   jsDelivr over the public GitHub repository. URLs include the full SHA-256
-   object filename. The backend is declared in the manifests and can later be
-   replaced with Vercel Blob without changing evidence bytes.
+   SHA-256. Two narrow server routes resolve those addresses and return
+   short-lived temporary redirects, so hosting can change without leaving a
+   year-long redirect in a reviewer's browser cache. Unknown paths return 404.
+4. **Objects are hosted once outside deployments.** The backend is GitHub's
+   raw-content endpoint over the public repository. URLs include the full
+   SHA-256 object filename. jsDelivr is deliberately excluded because it
+   refuses uncached files once a repository package exceeds 50 MB. The backend
+   remains declared in the manifests and can later be replaced with Vercel
+   Blob without changing evidence bytes.
 5. **Keep the live game lean.** `public/sprites` (38 MB, used by the game) stays
    in the deployment. Approved Final artwork stays where the game reads it.
 6. **Verification and old contracts.** `scripts/verify_review_archive.mjs`
@@ -175,6 +177,11 @@ does not copy those objects into every deployment.
    and the sub-50-MiB payload boundary. The test-only filesystem hook lets old
    immutable verifiers resolve historical public paths from the archive;
    production uses redirects, never that hook.
+7. **Playback waits for media.** New moving review pages preload and decode
+   every unique frame before enabling their controls or starting playback.
+   If an existing immutable page lacks that gate, publish a new versioned page
+   with new asset paths; never overwrite the historical export or ask Frank to
+   clear browser caches.
 
 ### Adding or rebuilding review media
 

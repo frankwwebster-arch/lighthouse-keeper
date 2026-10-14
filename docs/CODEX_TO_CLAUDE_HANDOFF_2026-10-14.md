@@ -223,12 +223,13 @@ truth. `data/keeper_object_dimensions.json`, `docs/KEEPER_OBJECT_DIMENSIONS.md`,
 ### Codex animation progress after this handoff
 
 Fast Timing V1 is now the approved transition policy. Codex has prepared the
-next isolated review candidate, walk → stop → turn fully away V1, at
-`art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v1/` with its future
-public route `/keeper-review/keeper-prime-walk-stop-turn-back-v1/`. It uses only
-approved artwork and does not touch the runtime manifest or Workbench lanes.
-The route is deliberately not being deployed while Claude completes the Vercel
-repair. Claude's furniture/locomotion work must therefore treat this directory
+next isolated review candidate, walk → stop → turn fully away V2, at
+`art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v2/` with public route
+`/keeper-review/keeper-prime-walk-stop-turn-back-v2/`. Its art, timing and
+movement are byte-identical to V1; V2 uses new versioned archive paths and
+preloads every frame before playback after V1 exposed delivery flicker. It
+uses only approved artwork and does not touch the runtime manifest or
+Workbench lanes. Claude's furniture/locomotion work must treat this directory
 as read-only and need not consume the route until Frank visually approves it.
 
 To avoid Codex and Claude overwriting one another:

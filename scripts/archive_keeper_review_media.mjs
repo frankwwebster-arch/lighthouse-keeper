@@ -11,7 +11,7 @@ const ARCHIVE_ROOT = path.join(ROOT, 'review-archive')
 const OBJECT_ROOT = path.join(ARCHIVE_ROOT, 'objects')
 const SET_ROOT = path.join(ARCHIVE_ROOT, 'sets')
 const INDEX = path.join(ARCHIVE_ROOT, 'index.json')
-const BASE_URL = 'https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects'
+const BASE_URL = 'https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects'
 const MEDIA_EXTENSIONS = new Set(['.png', '.gif', '.jpg', '.jpeg', '.webp', '.avif'])
 
 const sha256 = (buffer) => crypto.createHash('sha256').update(buffer).digest('hex')
@@ -46,7 +46,13 @@ function pageForSet(setName) {
 }
 
 const previous = fs.existsSync(INDEX) ? JSON.parse(fs.readFileSync(INDEX, 'utf8')) : null
-const legacyPaths = { ...(previous?.legacyPaths ?? {}) }
+const legacyPaths = Object.fromEntries(Object.entries(previous?.legacyPaths ?? {}).map(([legacyPath, entry]) => [
+  legacyPath,
+  {
+    ...entry,
+    url: `${BASE_URL}/${entry.sha256.slice(0, 2)}/${entry.sha256}${entry.extension}`,
+  },
+]))
 const physicalMedia = walk(PUBLIC_ROOT).filter((file) => MEDIA_EXTENSIONS.has(path.extname(file).toLowerCase()))
 
 for (const file of physicalMedia) {

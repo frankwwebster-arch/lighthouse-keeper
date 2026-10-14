@@ -1295,10 +1295,13 @@ those remain independently timed so entertaining actions can be savoured.
 Artwork pixels, frame order, root motion and endpoints remain exact. The
 profile does not enter Workbench Final or promote production sprites.
 
-The next one-at-a-time composite is walk → stop → turn fully away V1 at
-`art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v1/`, prepared for
-review at `/keeper-review/keeper-prime-walk-stop-turn-back-v1/`. It introduces
-no new drawing. Two exact Walk V6 cycles feed the approved 18, 12, 6 and 2 px
+The next one-at-a-time composite is walk → stop → turn fully away V2 at
+`art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v2/`, prepared for
+review at `/keeper-review/keeper-prime-walk-stop-turn-back-v2/`. It introduces
+no new drawing and is pixel/timing-identical to V1. V2 uses fresh versioned
+archive paths and waits for every moving frame to load and decode before
+playback, correcting V1's delivery flicker without altering the animation.
+Two exact Walk V6 cycles feed the approved 18, 12, 6 and 2 px
 deceleration, after which all root motion is zero. The exact Side-right stop is
 the geometric turn seam; Fast Timing V1's zero settle means the visually
 equivalent V9 F1 is not replayed, and playback proceeds directly into exact V9
@@ -1310,7 +1313,8 @@ all four approval authorities, per-frame timing and displacement, exact source
 and public hashes, transparent gutters, strip/sidecar order, aligned side-entry
 alpha bounds, the exact rear endpoint and unchanged Workbench/production
 hashes. Its large and exact-game-scale travel lanes are full width. This route
-is awaiting visual approval and has not entered Final or production.
+is awaiting visual approval and has not entered Final or production. V1 stays
+unchanged as historical provenance.
 
 ## Review-comments workflow for a later feedback round
 

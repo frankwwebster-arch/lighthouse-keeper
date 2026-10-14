@@ -18,5 +18,8 @@ under `public/keeper-review`, but PNG/GIF/JPEG/WebP/AVIF evidence belongs in
 builder writes media, run `npm run archive:keeper-review`; it deduplicates the
 bytes, updates the per-set manifests and removes the public copies. `npm test`
 fails if public review media returns or an archive hash/manifest is wrong.
+Every new moving review page must preload and decode all unique frame URLs
+before enabling controls or starting playback. Use a fresh versioned page and
+asset prefix when correcting delivery; never rewrite an immutable old page.
 
 Roles and other project rules: `CLAUDE.md` and `docs/CODEX_TO_CLAUDE_HANDOFF_2026-10-14.md`.
