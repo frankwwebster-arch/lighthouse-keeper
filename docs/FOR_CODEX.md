@@ -2,6 +2,10 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Walk root motion and whole-step furniture placement (14 Oct 2026)
+
+With the approved start/stop root motion (38 ku each, stop only from Walk F1), no three standing places on a floor can all be joined in whole steps, so Frank's no-split-step rule can't be met for furniture. The note `docs/CLAUDE_TO_CODEX_WALK_QUANTISATION_2026-10-14.md` explains why and proposes 42 ku bridges plus a stop off Walk F5. It is for your assessment only: Frank hasn't decided, so please change nothing yet.
+
 ## Joins the recipe studio flags for you (11 Oct 2026)
 
 The studio now checks every handover between clips, pixel for pixel (`docs/RECIPES.md`, "Clean joins between clips"). With the walks fixed to finish on whole strides, what is left in the drafts is art and metadata for you:
