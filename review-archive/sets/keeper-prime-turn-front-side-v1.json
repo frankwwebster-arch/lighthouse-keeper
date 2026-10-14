@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "set": "keeper-prime-turn-front-side-v1",
+  "page": {
+    "path": "public/keeper-review/keeper-prime-turn-front-side-v1/index.html",
+    "sha256": "a34a219b1636c1b12b47a6b5ba0d3a63b2b6af07119d7d27cd8da9992b56fab7",
+    "bytes": 6940
+  },
+  "objectsBaseUrl": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects",
+  "entries": {
+    "/keeper-review/keeper-prime-turn-front-side-v1/assets/contact-4be7c07b85f8425b.png": {
+      "sha256": "4be7c07b85f8425b9ac56456a37c50b85a13161c3483d7a142ac62af21defdcd",
+      "extension": ".png",
+      "bytes": 424785,
+      "object": "review-archive/objects/4b/4be7c07b85f8425b9ac56456a37c50b85a13161c3483d7a142ac62af21defdcd.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/4b/4be7c07b85f8425b9ac56456a37c50b85a13161c3483d7a142ac62af21defdcd.png"
+    },
+    "/keeper-review/keeper-prime-turn-front-side-v1/assets/datums-59e9d85aa6a0d4be.png": {
+      "sha256": "59e9d85aa6a0d4bec500df39482395c1da612b965b62ba86b799862c9c0039c8",
+      "extension": ".png",
+      "bytes": 423933,
+      "object": "review-archive/objects/59/59e9d85aa6a0d4bec500df39482395c1da612b965b62ba86b799862c9c0039c8.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/59/59e9d85aa6a0d4bec500df39482395c1da612b965b62ba86b799862c9c0039c8.png"
+    },
+    "/keeper-review/keeper-prime-turn-front-side-v1/assets/forward-8abdcde40f587f40.png": {
+      "sha256": "8abdcde40f587f40b9b9f1487f06db7ba63d281409a1165b630671c58c7db66d",
+      "extension": ".png",
+      "bytes": 440088,
+      "object": "review-archive/objects/8a/8abdcde40f587f40b9b9f1487f06db7ba63d281409a1165b630671c58c7db66d.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/8a/8abdcde40f587f40b9b9f1487f06db7ba63d281409a1165b630671c58c7db66d.png"
+    },
+    "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame1-a9a5c37fe7222199.png": {
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "extension": ".png",
+      "bytes": 61567,
+      "object": "review-archive/objects/a9/a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/a9/a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e.png"
+    },
+    "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame2-af20e9290fb79d16.png": {
+      "sha256": "af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e",
+      "extension": ".png",
+      "bytes": 61429,
+      "object": "review-archive/objects/af/af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/af/af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e.png"
+    },
+    "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame3-5b4f9406f68e15d2.png": {
+      "sha256": "5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41",
+      "extension": ".png",
+      "bytes": 59529,
+      "object": "review-archive/objects/5b/5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/5b/5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41.png"
+    },
+    "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame4-081272e51f799f6d.png": {
+      "sha256": "081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a",
+      "extension": ".png",
+      "bytes": 57870,
+      "object": "review-archive/objects/08/081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/08/081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a.png"
+    },
+    "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame5-2e118ca8d10d126f.png": {
+      "sha256": "2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5",
+      "extension": ".png",
+      "bytes": 55992,
+      "object": "review-archive/objects/2e/2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/2e/2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5.png"
+    },
+    "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame6-8c20fc0436d4982d.png": {
+      "sha256": "8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb",
+      "extension": ".png",
+      "bytes": 51954,
+      "object": "review-archive/objects/8c/8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/8c/8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb.png"
+    },
+    "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame7-85f897ef55e76813.png": {
+      "sha256": "85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9",
+      "extension": ".png",
+      "bytes": 48975,
+      "object": "review-archive/objects/85/85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/85/85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9.png"
+    },
+    "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame8-a172a8a01a387a21.png": {
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "extension": ".png",
+      "bytes": 47873,
+      "object": "review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png"
+    },
+    "/keeper-review/keeper-prime-turn-front-side-v1/assets/reverse-3842b22f0e40bfc2.png": {
+      "sha256": "3842b22f0e40bfc237d76ec6dec223c78d5695a5f6ccb82e890e56fb83b578fa",
+      "extension": ".png",
+      "bytes": 440012,
+      "object": "review-archive/objects/38/3842b22f0e40bfc237d76ec6dec223c78d5695a5f6ccb82e890e56fb83b578fa.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/38/3842b22f0e40bfc237d76ec6dec223c78d5695a5f6ccb82e890e56fb83b578fa.png"
+    }
+  }
+}

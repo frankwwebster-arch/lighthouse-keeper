@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "set": "full-face-canon-v1",
+  "page": {
+    "path": "public/keeper-review/full-face-canon-v1/index.html",
+    "sha256": "1182b18a15383cffd9c057242ee388572a38e55a9a42941a4a7367b8d0717da5",
+    "bytes": 6059
+  },
+  "objectsBaseUrl": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects",
+  "entries": {
+    "/keeper-review/full-face-canon-v1/assets/beard-envelope-guide-mask-21b3cfd6b1675d99.png": {
+      "sha256": "21b3cfd6b1675d992796898978de428664fa0ce2fea9530c0d79b2451261358b",
+      "extension": ".png",
+      "bytes": 409,
+      "object": "review-archive/objects/21/21b3cfd6b1675d992796898978de428664fa0ce2fea9530c0d79b2451261358b.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/21/21b3cfd6b1675d992796898978de428664fa0ce2fea9530c0d79b2451261358b.png"
+    },
+    "/keeper-review/full-face-canon-v1/assets/candidate-6d3b5057f7dad441.png": {
+      "sha256": "6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a",
+      "extension": ".png",
+      "bytes": 18293,
+      "object": "review-archive/objects/6d/6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/6d/6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a.png"
+    },
+    "/keeper-review/full-face-canon-v1/assets/comparison-806a13bd355d4086.png": {
+      "sha256": "806a13bd355d4086100562606a0419c79d138a73e901d2c1610f4f1d2d3effcc",
+      "extension": ".png",
+      "bytes": 62515,
+      "object": "review-archive/objects/80/806a13bd355d4086100562606a0419c79d138a73e901d2c1610f4f1d2d3effcc.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/80/806a13bd355d4086100562606a0419c79d138a73e901d2c1610f4f1d2d3effcc.png"
+    },
+    "/keeper-review/full-face-canon-v1/assets/eye-mask-9baccdda8757fe07.png": {
+      "sha256": "9baccdda8757fe07d5056950827892a688ca0e3aeddd22953008e9983345b301",
+      "extension": ".png",
+      "bytes": 181,
+      "object": "review-archive/objects/9b/9baccdda8757fe07d5056950827892a688ca0e3aeddd22953008e9983345b301.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/9b/9baccdda8757fe07d5056950827892a688ca0e3aeddd22953008e9983345b301.png"
+    },
+    "/keeper-review/full-face-canon-v1/assets/head-envelope-guide-mask-f70f13f184254958.png": {
+      "sha256": "f70f13f184254958a86d040321544adb61b50e1050b9d62759aa5bef40832f65",
+      "extension": ".png",
+      "bytes": 290,
+      "object": "review-archive/objects/f7/f70f13f184254958a86d040321544adb61b50e1050b9d62759aa5bef40832f65.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/f7/f70f13f184254958a86d040321544adb61b50e1050b9d62759aa5bef40832f65.png"
+    },
+    "/keeper-review/full-face-canon-v1/assets/headComparison-5592549150898c74.png": {
+      "sha256": "5592549150898c74c34fff110c145780a6abe1feefc0d7cebec16f0aae50c9dc",
+      "extension": ".png",
+      "bytes": 60382,
+      "object": "review-archive/objects/55/5592549150898c74c34fff110c145780a6abe1feefc0d7cebec16f0aae50c9dc.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/55/5592549150898c74c34fff110c145780a6abe1feefc0d7cebec16f0aae50c9dc.png"
+    },
+    "/keeper-review/full-face-canon-v1/assets/moustache-guide-mask-2e54f3da3e84a61c.png": {
+      "sha256": "2e54f3da3e84a61c30832ad21dc1c31376bf65a93df92ffce403cd20aeb786af",
+      "extension": ".png",
+      "bytes": 322,
+      "object": "review-archive/objects/2e/2e54f3da3e84a61c30832ad21dc1c31376bf65a93df92ffce403cd20aeb786af.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/2e/2e54f3da3e84a61c30832ad21dc1c31376bf65a93df92ffce403cd20aeb786af.png"
+    },
+    "/keeper-review/full-face-canon-v1/assets/mouth-local-guide-mask-e727fd436396296a.png": {
+      "sha256": "e727fd436396296afaa42348988dc8d5b518a6eebaa5ca15efda89c3a5ef810f",
+      "extension": ".png",
+      "bytes": 189,
+      "object": "review-archive/objects/e7/e727fd436396296afaa42348988dc8d5b518a6eebaa5ca15efda89c3a5ef810f.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/e7/e727fd436396296afaa42348988dc8d5b518a6eebaa5ca15efda89c3a5ef810f.png"
+    },
+    "/keeper-review/full-face-canon-v1/assets/nose-local-guide-mask-482e5349969c248a.png": {
+      "sha256": "482e5349969c248aed15012110d0a5a1c531d7dd03d3ba4575837bb318a9138a",
+      "extension": ".png",
+      "bytes": 200,
+      "object": "review-archive/objects/48/482e5349969c248aed15012110d0a5a1c531d7dd03d3ba4575837bb318a9138a.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/48/482e5349969c248aed15012110d0a5a1c531d7dd03d3ba4575837bb318a9138a.png"
+    },
+    "/keeper-review/full-face-canon-v1/assets/overlay-e2abda94d2702e57.png": {
+      "sha256": "e2abda94d2702e57669aaa88a15180096f6d7f6c352fc4a15a05aa5942e73769",
+      "extension": ".png",
+      "bytes": 17607,
+      "object": "review-archive/objects/e2/e2abda94d2702e57669aaa88a15180096f6d7f6c352fc4a15a05aa5942e73769.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/e2/e2abda94d2702e57669aaa88a15180096f6d7f6c352fc4a15a05aa5942e73769.png"
+    },
+    "/keeper-review/full-face-canon-v1/assets/primary-6d3b5057f7dad441.png": {
+      "sha256": "6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a",
+      "extension": ".png",
+      "bytes": 18293,
+      "object": "review-archive/objects/6d/6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/6d/6d3b5057f7dad4410230c5c2a1959a2db468aca6f2d28486ec6db9e07827056a.png"
+    },
+    "/keeper-review/full-face-canon-v1/assets/quality-14c70ab69c9cb558.png": {
+      "sha256": "14c70ab69c9cb558d1a7b9b092425718a43269ea8fb2a20ad3d64638d30ea17a",
+      "extension": ".png",
+      "bytes": 20411,
+      "object": "review-archive/objects/14/14c70ab69c9cb558d1a7b9b092425718a43269ea8fb2a20ad3d64638d30ea17a.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/14/14c70ab69c9cb558d1a7b9b092425718a43269ea8fb2a20ad3d64638d30ea17a.png"
+    }
+  }
+}

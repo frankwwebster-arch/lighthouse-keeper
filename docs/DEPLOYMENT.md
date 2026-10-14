@@ -86,8 +86,8 @@ last 3 ready production deployments on Hobby, plus whichever deployment
 currently serves production. So **at least three production versions are always
 available to roll back to**, even after a quiet spell.
 
-Expected steady state: three or four ~115 MB production deployments, about
-0.5 GB, against 7.8 GB before.
+Expected steady state after the content-addressed archive release: three or four
+~43 MB production deployments, about 0.2 GB, against 7.8 GB before.
 
 ## Rollback
 
@@ -107,7 +107,11 @@ Nothing is rebuilt, and it takes seconds.
 After a rollback, `main` still holds the newer code. The next `[deploy]` will
 release it again, so fix forward on `main` before deploying.
 
-## State after the 14 October cleanup
+## Initial state after the 14 October cleanup
+
+This is the historical baseline before the content-addressed archive release;
+the current production deployment should be checked in Vercel after each
+explicit release.
 
 - **Production:** commit `bf5075a`, the commit that introduced this workflow
   (deployment `dpl_83W6vQ9gQ7tyJcUJ8on6PUrfKMPe`). Its subject mentioned the
@@ -123,46 +127,69 @@ release it again, so fix forward on `main` before deploying.
 
 ## Remaining limitations
 
-1. **Each release still copies all of `public/` (~115 MB).** The gate cuts the
-   number of copies, not their size. The archive below fixes the size.
-2. **Deleted deployments count for a while.** Usage reflects the recovery
+1. **Deleted deployments count for a while.** Usage reflects the recovery
    window, so expect the storage figure to drop over days, not minutes.
-3. **No branch previews.** Review happens on production after a `[deploy]`. If
+2. **No branch previews.** Review happens on production after a `[deploy]`. If
    isolated previews are ever needed, allow one named branch in
    `scripts/vercel-ignore-build.mjs` rather than re-enabling all branches.
-4. **Dashboard redeploys.** "Redeploy" on a skipped commit is skipped too. Use
+3. **Dashboard redeploys.** "Redeploy" on a skipped commit is skipped too. Use
    `npm run deploy` or the GitHub button instead.
+4. **The archive CDN reads the public Git repository.** Review objects are
+   immutable and addressed by full SHA-256, but availability still depends on
+   GitHub and jsDelivr. The manifest keeps the host replaceable if Vercel Blob
+   or another object store is preferred later.
 
-## Proposal: content-addressed review archive (not yet implemented)
+## Content-addressed review archive (implemented 14 October 2026)
 
-Codex owns the review pages and their media (see `CLAUDE.md`), so this is a
-proposal for Codex to implement, not a change made here.
+Keeper review media is now stored once outside `public/`, without deleting any
+evidence or changing immutable review-page bytes.
 
-**Measured on 14 October:** `public/` holds 924 files (116.5 MB). Only 628 are
-unique by SHA-256; 26.5 MB is byte-identical duplicates. Among the review
-folders, `public/keeper-review` is 75 MB, including `drafts/` at 21 MB. Review
-assets already carry hash suffixes (`frame1-c097d78aac2d2c52.png`), so a
-content-addressed layout is a small step from what exists.
+**Measured result:** 550 historical review-media paths collapse to 246 unique
+objects. The old paths represented 70.27 MiB; the unique store is 44.71 MiB.
+The real `public/` deployment payload is now 43.01 MiB rather than roughly
+115 MiB. The archive itself stays in Git but is outside `public/`, so Vercel
+does not copy those objects into every deployment.
 
-**Design:**
+### How it works
 
-1. **One store, keyed by hash.** Each review asset is stored once as
+1. **One store, keyed by hash.** Every review asset is stored as
    `review-archive/objects/<sha256[0:2]>/<sha256>.<ext>`. The store stays in git,
-   so all evidence is preserved, but sits outside `public/`, so it is not copied
-   into deployments.
-2. **One manifest per review set.** `review-archive/sets/<set-name>.json` maps
-   each page path to its object hash. The review HTML is unchanged apart from its
-   asset URLs.
-3. **Host the store once, outside deployments.** Upload each object to Vercel
-   Blob (or similar) a single time, named by its hash. Because the names never
-   change, objects are never re-uploaded and can be cached forever. Deployments
-   then carry only HTML and the active game sprites.
-4. **Keep the live game lean.** `public/sprites` (38 MB, used by the game) stays
+   so all evidence remains versioned and reversible.
+2. **One manifest per review set.** The 36 files under
+   `review-archive/sets/` map every legacy review path to its full object hash,
+   byte length, repository object and external URL. `review-archive/index.json`
+   is the deterministic route index and records aggregate savings.
+3. **Immutable HTML stays immutable.** Historical review HTML and approval
+   registers keep their original `/keeper-review/...` addresses and original
+   SHA-256. Two narrow server routes resolve those addresses, return permanent
+   redirects and add a one-year immutable cache header. Unknown paths return
+   404.
+4. **Objects are hosted once outside deployments.** The initial backend is
+   jsDelivr over the public GitHub repository. URLs include the full SHA-256
+   object filename. The backend is declared in the manifests and can later be
+   replaced with Vercel Blob without changing evidence bytes.
+5. **Keep the live game lean.** `public/sprites` (38 MB, used by the game) stays
    in the deployment. Approved Final artwork stays where the game reads it.
-5. **Verification.** A script checks that every manifest hash exists in the store
-   and that every stored object's hash matches its name. Add it to `npm test`
-   next to the existing `verify_keeper_*` scripts.
+6. **Verification and old contracts.** `scripts/verify_review_archive.mjs`
+   checks every hash, filename, manifest, immutable page, absence from public
+   and the sub-50-MiB payload boundary. The test-only filesystem hook lets old
+   immutable verifiers resolve historical public paths from the archive;
+   production uses redirects, never that hook.
 
-**Effect:** about 75 MB less per deployment (115 MB → about 40 MB). History
-stops growing with each release, because identical frames are stored once
-across all review versions.
+### Adding or rebuilding review media
+
+Existing authoring scripts may write a new versioned candidate into
+`public/keeper-review` for assembly. Before committing:
+
+```sh
+npm run archive:keeper-review
+npm test
+npm run typecheck
+npm run build
+```
+
+The archive command copies only new hashes, updates the set/global manifests,
+then removes public media copies. It never removes an old archive object, even
+if a legacy path later points to a newer hash. Do not manually edit object
+filenames or manifests. To change archive hosting, update the archive builder,
+regenerate manifests, verify, then release one tested batch.

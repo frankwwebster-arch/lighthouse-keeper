@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "set": "keeper-prime-rig-v3",
+  "page": {
+    "path": "public/keeper-review/keeper-prime-rig-v3/index.html",
+    "sha256": "e341da8c5a80b23efff94b845a532eca6e45e1db9d6842f25b5ddb87c76f2cdc",
+    "bytes": 416107
+  },
+  "objectsBaseUrl": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects",
+  "entries": {
+    "/keeper-review/keeper-prime-rig-v3/assets/motion-46d4e6b39413c83c.png": {
+      "sha256": "46d4e6b39413c83c673adc31a592ba693aff26806bb8ee2b45de7aa11c0c7ca5",
+      "extension": ".png",
+      "bytes": 25118,
+      "object": "review-archive/objects/46/46d4e6b39413c83c673adc31a592ba693aff26806bb8ee2b45de7aa11c0c7ca5.png",
+      "url": "https://cdn.jsdelivr.net/gh/frankwwebster-arch/lighthouse-keeper@main/review-archive/objects/46/46d4e6b39413c83c673adc31a592ba693aff26806bb8ee2b45de7aa11c0c7ca5.png"
+    }
+  }
+}

@@ -473,8 +473,10 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
   family and accepted standard-uniform snooker route. It is the starting point
   for future exact-name artwork requests from the review platform.
 - The deployed reviewer is online only at `/keeper-review/`; its review-only
-  draft assets live under `public/keeper-review/drafts/` and are not runtime
-  manifest entries. The generated audit artifact remains byte-identical for
+  media is content-addressed under `review-archive/objects/`, while legacy
+  `/keeper-review/drafts/...` URLs resolve through archive manifests and
+  permanent cached redirects. The media is not runtime sprite art. The
+  generated audit artifact remains byte-identical for
   verification, but sends any local opening to the deployed reviewer.
   Browser progress remains tied to that single origin, and the deployed
   reviewer submits a complete exact-name batch to the durable handoff queue

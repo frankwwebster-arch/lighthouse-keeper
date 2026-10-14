@@ -137,6 +137,9 @@ still be recovered manually.
 - `data/keeper_animation_workbench.json` — authoritative catalogue;
 - `public/keeper-animation-workbench/catalog.json` — byte-identical deployed
   catalogue;
+- `review-archive/objects/`, `review-archive/sets/` and
+  `review-archive/index.json` — deduplicated, SHA-256-addressed review media and
+  legacy-path redirects; no review image/GIF is shipped inside `public/`;
 - `src/animation-workbench/model.ts` — timeline, loop and transition compiler;
 - `src/animation-workbench/AnimationWorkbench.tsx` — review UI;
 - `src/keeper-timing-lab/` — phase-timing model, tests, A/B player and proposal
