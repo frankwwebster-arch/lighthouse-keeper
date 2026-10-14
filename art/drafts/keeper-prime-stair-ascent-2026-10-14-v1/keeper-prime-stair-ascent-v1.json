@@ -1,0 +1,57 @@
+{
+  "schema": "lighthouse-keeper/prime-stair-ascent@1",
+  "status": "draft-finished-art-walk-to-continuous-ascent-awaiting-review",
+  "direction": "bottom-right-to-top-left",
+  "art": {
+    "frames": 8,
+    "fps": 10,
+    "cell": [
+      256,
+      320
+    ],
+    "mirroredFromAuthoredRight": true
+  },
+  "route": {
+    "transferDoorRootLp": 115.5,
+    "stairBaseRootLp": 94.5,
+    "approvedWalkFrames": 8,
+    "walkDistanceLp": 21,
+    "pauseFramesAtJoin": 0,
+    "climbCycles": 8,
+    "climbFrames": 64,
+    "cycleRunKu": 84,
+    "cycleRiseKu": 60,
+    "flightRunKu": 672,
+    "flightRiseKu": 480,
+    "upperLandingRootLp": 10.5
+  },
+  "climbRootDeltasKu": {
+    "xTowardLeft": [
+      6,
+      10,
+      13,
+      13,
+      13,
+      13,
+      10,
+      6
+    ],
+    "yUp": [
+      3,
+      7,
+      10,
+      10,
+      3,
+      7,
+      10,
+      10
+    ]
+  },
+  "endpointBoundary": "Ends in continuous climb phase; upper-landing dismount/stop/walk is intentionally not proposed in V1.",
+  "unchanged": {
+    "approvedWalkPixels": true,
+    "runtimeGeometry": true,
+    "finalLane": true,
+    "production": true
+  }
+}

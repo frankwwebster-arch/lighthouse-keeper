@@ -52,6 +52,14 @@ and walk F8 hands directly to an already-advancing climb F1 with zero pause
 frames. The alternative lift centre at x=31.5 is exactly 84 lp/four full
 strides from that same doorway. The preliminary lift-only page remains intact
 as historical draft evidence; neither proposal is approved or wired.
+The first finished-art circulation gate is now available at
+`/keeper-review/keeper-prime-stair-ascent-v1/`. It uses one exact approved
+mirrored Walk V6 cycle from the transfer door to the measured stair base, then
+enters an advancing eight-pose climb with zero pause frames. Eight climb cycles
+close the full 16-riser flight at exactly 84 lp run and 60 lp rise. This V1
+deliberately ends in continuous climb; the upper-landing dismount, descent and
+opposite zigzag parity remain separate review gates. Nothing is in Final or
+production.
 
 ## Run it
 ```

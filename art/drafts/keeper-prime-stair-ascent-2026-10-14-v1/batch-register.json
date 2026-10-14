@@ -1,0 +1,68 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-stair-ascent-2026-10-14-v1",
+  "status": "draft-finished-art-walk-to-continuous-ascent-awaiting-review",
+  "authorities": {
+    "geometry": {
+      "file": "art/drafts/keeper-movement-foundation-2026-10-14-v1/geometry/keeper-vertical-circulation-v1.json",
+      "sha256": "cac4147afb0a2dded4a7ced52fdc0a659a94d88215bdf639d6c430c2bf9b2ac6"
+    },
+    "circulationEntry": {
+      "file": "art/drafts/keeper-circulation-entry-alignment-2026-10-14-v1/circulation-entry-alignment-v1.json",
+      "sha256": "682a048570d84d6fefe72241ebb0bb2b2e546f77ecc027302b34ec66ec50bf26"
+    },
+    "approvedWalk": {
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v7/batch-register.json",
+      "sha256": "ad788fb923009c6dd97840d3c4ae91c6e8084ef699ab6637bb2738b9532cb342"
+    },
+    "sourcePreparation": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-14-v1/source-preparation-v1.json",
+      "sha256": "15857bf84740998e870cfc8eb0ef987704a75168d98e98829d252ce18f2c7a4f"
+    }
+  },
+  "generation": {
+    "mode": "built-in-image-generation-with-deterministic-chroma-isolation",
+    "selectedRawSource": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-14-v1/sources/keeper-prime-stair-ascent-8pose-generated.png",
+      "sha256": "7d7e911a40c877feb4bdac0524953f938af3b9a35f2877e2de42249baf06b0bd"
+    },
+    "isolationSource": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-14-v1/sources/keeper-prime-stair-ascent-8pose-magenta.png",
+      "sha256": "b6fc78dea0dc5c1f4302d395113ede96c4401a05ca85aff7fd95844cb8e2f03b"
+    },
+    "rejectedSource": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-14-v1/sources/rejected-less-varied-stair-ascent.png",
+      "sha256": "31d37d5bfd05d0ee9bae43e934d879740cf7bc2ad414494437854ed2986065e6",
+      "reason": "less gait variation across the eight requested poses"
+    }
+  },
+  "spec": {
+    "file": "art/drafts/keeper-prime-stair-ascent-2026-10-14-v1/keeper-prime-stair-ascent-v1.json",
+    "sha256": "6a728dd1be57927e3da82c2189e28577c95f9f87678a779e9831c4e750386660"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-stair-ascent-v1/index.html",
+    "sha256": "bb65e8d989b4dde636234f4e82afc1cb17e856efaf46738282a843799e45668c"
+  },
+  "frameUrls": [
+    "/keeper-review/keeper-prime-stair-ascent-v1/assets/stair-left-f1-097d2e5134f82367.png",
+    "/keeper-review/keeper-prime-stair-ascent-v1/assets/stair-left-f2-1cb50762a28bcea2.png",
+    "/keeper-review/keeper-prime-stair-ascent-v1/assets/stair-left-f3-ec6a35bb01897ecd.png",
+    "/keeper-review/keeper-prime-stair-ascent-v1/assets/stair-left-f4-7d1a40e42a6ee67c.png",
+    "/keeper-review/keeper-prime-stair-ascent-v1/assets/stair-left-f5-980e3c96d7332a7f.png",
+    "/keeper-review/keeper-prime-stair-ascent-v1/assets/stair-left-f6-d65a98a41e3a22a8.png",
+    "/keeper-review/keeper-prime-stair-ascent-v1/assets/stair-left-f7-201e664d0e8b72d8.png",
+    "/keeper-review/keeper-prime-stair-ascent-v1/assets/stair-left-f8-bd4542a10ca685cd.png"
+  ],
+  "validation": {
+    "walkClosesAtBase": true,
+    "firstClimbFrameAdvances": true,
+    "pauseFramesAtJoin": 0,
+    "climbCycleCloses84x60Ku": true,
+    "flightCloses672x480Ku": true,
+    "approvedWalkPixelsChanged": false,
+    "runtimeChanged": false,
+    "finalChanged": false,
+    "productionChanged": false
+  }
+}

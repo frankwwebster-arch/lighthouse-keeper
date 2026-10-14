@@ -77,6 +77,13 @@ const circulationEntry = spawnSync('node', ['scripts/verify_keeper_circulation_e
 })
 if (circulationEntry.error) throw circulationEntry.error
 if (circulationEntry.status !== 0) process.exit(circulationEntry.status ?? 1)
+const stairAscent = spawnSync('node', ['scripts/verify_keeper_prime_stair_ascent_v1.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (stairAscent.error) throw stairAscent.error
+if (stairAscent.status !== 0) process.exit(stairAscent.status ?? 1)
 const walkAwayApproval = spawnSync('node', ['scripts/verify_keeper_prime_walk_stop_turn_back_v3.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },

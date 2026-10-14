@@ -1325,6 +1325,15 @@ Gate 1 plus measured construction motion for alternating stairs, a straight
 ladder and lift entry/exit. Its 60-lp finished-floor pitch and 105-lp stair core
 are proposals awaiting Frank's review, not runtime geometry.
 
+The first finished-art stair gate is
+`/keeper-review/keeper-prime-stair-ascent-v1/`. It joins one exact approved
+mirrored Walk V6 cycle directly into an advancing eight-pose climb with zero
+pause frames, then repeats the cycle eight times over the exact 16-riser,
+84-lp-run, 60-lp-rise flight. Deterministic root closure is 84 ku × 60 ku per
+cycle and 672 ku × 480 ku per flight. The V1 endpoint remains in continuous
+climb; landing dismount, descent and opposite parity are not yet proposed.
+Nothing is approved, in Final or in production.
+
 ## Review-comments workflow for a later feedback round
 
 1. Do not process another review export until the beard evidence gate is

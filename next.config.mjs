@@ -124,6 +124,11 @@ export default {
         permanent: false,
       },
       {
+        source: '/keeper-review/keeper-prime-stair-ascent-v1',
+        destination: '/keeper-review/keeper-prime-stair-ascent-v1/index.html',
+        permanent: false,
+      },
+      {
         source: '/keeper-review/keeper-prime-turn-front-side-v1',
         destination: '/keeper-review/keeper-prime-turn-front-side-v1/index.html',
         permanent: false,

@@ -56,6 +56,18 @@ runtime raster scaling. Full proposal:
 Everything remains a reversible draft awaiting Frank's review. Do not change
 Claude's route tables, runtime geometry, Keeper art or approval records yet.
 
+## First finished stair-ascent gate (15 Oct 2026)
+
+`/keeper-review/keeper-prime-stair-ascent-v1/` is the first finished-art test
+of the approved-walk-to-measured-stair contract. One exact approved mirrored
+Walk V6 cycle moves from x=115.5 lp to x=94.5 lp; the next frame is already an
+advancing climb pose, with zero stop or pause frames. The eight-pose climb
+cycle closes at 84 ku horizontal and 60 ku vertical, and eight cycles close
+the 16-riser flight at 672 ku run and 480 ku rise. The V1 endpoint remains in
+continuous climb: upper-landing dismount/stop/walk, descent and opposite flight
+parity are intentionally separate gates. It is a reversible unapproved draft;
+runtime geometry, Final and production remain unchanged.
+
 ## Lift entry alignment correction (14 Oct 2026)
 
 The focused construction review
