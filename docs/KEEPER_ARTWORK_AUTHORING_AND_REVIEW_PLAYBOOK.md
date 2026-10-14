@@ -25,7 +25,7 @@ shortlist or an earlier sample set—defines later correction scope.
 | Render smoothness | Frank requires every approved model at this stage to be super smooth; V4's second, rougher render is not acceptable even though its geometry passed. V5 scale review also exposed that an older low-resolution F8 endpoint looked pixelated when enlarged, even if the defect might be hidden at game scale. | Keep a high-resolution smooth artwork master, use anti-aliased/Lanczos reductions only for registered proxies, and reject rough outer contours or jagged internal linework independently of geometry or intended display size. |
 | Standard uniform | Frank preferred the first smooth render and judged the double-stripe jumper too difficult to retain consistently. During the side/back review he established that cap, jumper, cream band, trouser and boot colours must remain consistent in every animation using this outfit. He approved the corrected V4 turn, including its V3-derived palette, with “Approved.” Later scale review found F1's trousers and boots still too dark, then found pale F8 patches caused by overlapping component masks. | The approved Prime Master uses one broad pale chest-and-sleeve band. Double-stripe generated variants are rejected provenance. Every new standard-uniform batch must register component masks and deterministic palette comparisons; no frame may flash darker on reaching a new viewing angle. Adjacent clothing-component masks must also be proven disjoint before colour transfer. V7 corrects the V6 overlap; V8 applies the same disjoint component registration to every new intermediate while retaining each V7 pose exactly. |
 | Animation workbench | Final and active Draft both contain zero animations. | Historical V1/V2 transition assets remain recoverable provenance only; do not present or reuse them as active candidates. |
-| Timing lab | Frank judged walk → stop → turn to camera V1 excellent but requested a slightly faster turn and a general tuning platform rather than treating timing as concrete artwork. | Use `/keeper-timing-lab` to tune phase timing without changing approved pixels, frame order, endpoints or root motion. The recommended initial proposal changes only the turn from 8 to 10 fps; timing approval, Final entry and production promotion remain separate gates. |
+| Timing lab | Frank judged walk → stop → turn to camera V1 excellent, tuned a much faster child-focused profile in the Timing Lab and approved it with “approve fast timing v1” on 14 October 2026. | **Fast Timing V1** is the locomotion/transition authority: walk 10 fps, deceleration 12 fps, zero neutral pause, turn 16 fps and a 625 ms endpoint hold. It applies only to walks, stopping bridges and turns. Action entry, loops, exits, comic beats and prop choreography retain independent, activity-specific timing so enjoyable actions can be savoured. Artwork, Final entry and production promotion remain separate gates. |
 | Artist-smock design | The V10 costume design is accepted; seven V11 authored animations are active review drafts | Keep this family internally consistent and await exact-name platform decisions before production promotion |
 | Standard-uniform snooker route | The complete route is visually accepted and is an active `keeper_snooker` review draft | The platform verdict is still required; production remains the old eight-frame strip |
 | Bathrobe | No replacement family is accepted | Do not revive head transfer, beard transfer or procedural redraw experiments; wait for exact-name platform requests |
@@ -485,10 +485,13 @@ The complete contract is in `docs/KEEPER_ANIMATION_WORKBENCH.md`.
 Timing is a separate approval layer. `/keeper-timing-lab` compares the reviewed
 profile with a live proposal over the exact same frame URLs. Walk,
 deceleration, neutral settle, turn and endpoint-hold timing are independent.
-Saved proposals and project defaults remain device-local until exported as
-JSON; that export records the immutable artwork-register hash and only the
-changed timing fields. Never redraw or re-promote pixels merely to change fps
-or a deliberate hold.
+Frank's approved repository-backed **Fast Timing V1** applies to locomotion and
+turn transitions only. Action animations never inherit it automatically; each
+action keeps its own entertaining performance rhythm. Personal proposals and
+personal preview defaults remain device-local until exported as JSON; that
+export records the immutable artwork-register hash and only the changed timing
+fields. Never redraw or re-promote pixels merely to change fps or a deliberate
+hold.
 
 ## Review-platform workflow for future amendments
 

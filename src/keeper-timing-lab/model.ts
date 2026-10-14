@@ -35,8 +35,20 @@ export type TimingClip = {
   acceptedVisualLimitation: string
 }
 
-export type TimingPreset = { id: string; name: string; description: string; profile: TimingProfile }
+export type TimingPreset = { id: string; name: string; description: string; status?: 'approved' | 'superseded'; profile: TimingProfile }
 export type LoopSection = { id: string; label: string; phases: TimingPhase[] }
+export type ApprovedTransitionProfile = {
+  id: string
+  name: string
+  status: 'approved-transition-authority'
+  approvedOn: string
+  approvalWording: string
+  designDirection: string
+  profile: TimingProfile
+  appliesTo: string[]
+  excludes: string[]
+  policy: string
+}
 export type TimingCatalogue = {
   version: number
   platformId: string
@@ -44,6 +56,8 @@ export type TimingCatalogue = {
   updatedOn: string
   principles: Record<string, string>
   defaults: TimingProfile
+  approvedTransitionProfile?: ApprovedTransitionProfile
+  projectTimingPolicy?: { path: string; sha256: string }
   presets: TimingPreset[]
   clips: TimingClip[]
   loopSections: LoopSection[]

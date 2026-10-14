@@ -1,4 +1,4 @@
-# Lighthouse Keeper: status write-up (13 Oct 2026)
+# Lighthouse Keeper: status write-up (14 Oct 2026)
 
 ## What it is
 A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthouse; kids type commands (typo-tolerant, curated, no live AI) or click objects (Sims-style menus, auto-zoom camera). Needs and mood, credits, phone, bedtime, multi-day play, a day report, quiz pop-ins, time-aware chat, cheeky humour.
@@ -45,42 +45,30 @@ JSON sidecar and generated runtime manifest, not in the PNG sprite pixels.
 The first full-face canon pack remains approved historical geometry evidence,
 but live animation exposed that its exact Frame 6 raster is too visibly
 pixelated to serve as a modern render endpoint. Frank reset all animations:
-the Animation Workbench now contains zero Final and zero active Draft items.
+the Animation Workbench still contains zero Final and zero active Draft items.
 V1/V2 turn and transition work is retained only as reversible provenance.
 Frank permanently approved `keeper-prime-master-2026-10-12-v1` on 13 October
 2026 with “Approved. Make sure this is NEVER forgotten.” It is the sole smooth
-density-8 identity authority and uses Frank's preferred first render with one
-broad pale jumper band rather than the harder-to-maintain double stripe. The
-immutable V2 draft gives the back all 81,920 approved-front alpha values, but
-later review found its boots still face the player. V3 blocks the selected side
-at 5 of 15 internal vertical datums. Frank approved the first smooth rear-boot
-render for V5; its registered proxy changes only rear rows 273–315, with zero
-upper-body or alpha change. V4's rougher, over-squared substitute and the older
-failed packs remain provenance. Every approved model now requires a smooth
-high-resolution master in addition to passing geometry. The 62-asset inventory
-remains untouched. The rig-derived zero-delta Side-right V1 is now an approved
-artwork authority; its separate Turn V1 derivative remains review-only. No
-production sprite or manifest has changed.
-Frank approved KP Rig V1 on 13 October 2026 with “Approve KP Rig V1, let's see
-it animated”. The V1 pack remains immutable and unpromoted, with fixed
-front/back anatomy, a side-projection skeleton, 15 target y-datums, body
-envelopes and an interactive fixed-length pose lab. Frank found the separate V2
-mannequin motion proof otherwise very good but requested more leg movement,
-more steps and a slower walk. Motion V3 changes only that walk: eight steps over
-five seconds at 168 px/s instead of two steps over two seconds at 420 px/s,
-with greater thigh swing and knee lift. Idle, reach and planted-ankle sit/stand
-remain exact V2 records, and all registered limb lengths remain exact. Frank
-approved Motion V3 on 13 October 2026 with “Approved, very good indeed”. The
-resulting separate super-smooth Side-right V1 passes all 15 vertical datums and
-keeps a transparent safety gutter. Frank approved it with “Approve side-right
-V1 and build Turn V1.” Turn V1 is now reviewable at
-`/keeper-review/keeper-prime-turn-front-side-v1/`: eight poses, exact approved
-endpoints and exact reverse frame order. Frank approved it with “it is ever so
-slightly jumpy at about 45deg in the turn but I am happy”; the slight 45° jump
-is an accepted recorded limitation. The next unapproved side-right ↔ back Turn
-V1 is at `/keeper-review/keeper-prime-turn-side-back-v1/`, with exact approved
-side/rear endpoints and six new rear-quarter poses. Neither transition has
-entered Final or production.
+density-8 identity authority and uses one broad pale jumper band. The approved
+orthographic authorities are the smooth V5 rear with correctly rear-facing
+boots and the 15/15 rigged Side-right V1. KP Rig V1 and Motion V3 are approved
+construction authorities. Front ↔ side Turn V1 is approved with its recorded
+minor 45° cadence limitation, and exact nine-frame side-right ↔ back V9 is
+approved and pinned by V10; the 16-frame V8 experiment remains rejected as
+jerkier. Every approved model requires a smooth high-resolution master in
+addition to passing geometry.
+
+Frank approved exact Walk V6 and the exact stop → walk → stop V1 bridge on
+14 October. The latter uses reversible registered bridge poses and root-motion
+deltas 2, 6, 12 and 18 into the 21 px/frame walk cadence, with no walking on
+the spot. Walk → stop → turn to camera V1 composes only these approved artwork
+authorities and was judged excellent. Frank then approved **Fast Timing V1**:
+walk 10 fps, deceleration 12 fps, zero neutral pause, turn 16 fps and a 625 ms
+endpoint hold. This is the project timing authority only for locomotion,
+stopping bridges and turns. Action entry, loops, exits, reactions and prop
+choreography remain independently paced so enjoyable actions can be savoured.
+No Prime artwork has entered Workbench Final or production, and the runtime
+sprite manifest remains unchanged.
 
 1. The evidence-based beard/hand audit classifies every manifest frame and pins `keeper_clear_snow` as the canonical fuller stepped beard. A landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It remains fail-closed for unavailable evidence: 163 side-on standing/sitting sheets are inventoried, eight zero-difference reference self-comparisons match, and 994 different-pose frames—including `keeper_darts` 3–6—are non-comparable because no approved beard masks, facial landmarks or hand-depth/component evidence exists. Frank reviewed Darts 3–6 visually on 11 October and accepted the beards with no amendment required; no beard draft is active or promotable. Next, use GPT-5.6 Sol to establish comparison inputs for any future claim, then run the later frame-isolation and released-prop audits.
 2. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. Frank's immutable second visual review recorded 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed; the current reviewer has 97 Happy and 67 Awaiting after Frank selected the Darts draft as his preferred candidate. Frank's saved per-animation width and height remain final production art direction.
@@ -111,10 +99,11 @@ entered Final or production.
 
 The Keeper Animation Workbench is deployed separately from the established
 reviewer at `/animation-workbench`. Its Final and active Draft lanes are both
-currently empty pending visual approval of side-right ↔ back Turn V1; the Prime
-front, Side-right V1, V5 back and front ↔ side Turn V1 are approved artwork
-authorities. The approved front ↔ side turn carries one accepted slight 45°
-cadence limitation.
+currently empty. Prime front, Side-right V1, V5 back, front ↔ side Turn V1,
+side-right ↔ back Turn V9, Walk V6 and stop ↔ walk are approved artwork
+authorities. Walk → stop → turn to camera also has approved Fast Timing V1 for
+its transition phases. The approved front ↔ side turn carries one accepted
+slight 45° cadence limitation.
 Its shared architecture still
 supports immutable repository-backed Final items and browser-local,
 JSON-exportable Draft recipes that can copy, remove and reorder source-frame references, loop

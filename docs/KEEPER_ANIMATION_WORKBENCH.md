@@ -15,17 +15,20 @@ Frank permanently approved Prime Master V1, the smooth rear and Side-right
 endpoints, KP Rig V1, Motion V3, front ↔ side Turn V1 and exact nine-frame
 side-right ↔ back V9. Exact Walk V6 and stop → walk → stop V1 are also approved
 core authorities. Walk → stop → turn to camera V1 composes those exact bytes;
-Frank judged it excellent and requested only that its turn run slightly faster.
-The route therefore keeps its artwork, frame order, root motion and endpoints
-unchanged while timing is reviewed separately. None of these approvals has
-entered workbench Final or production.
+Frank judged it excellent and then approved **Fast Timing V1** for its
+locomotion and turn phases. The route therefore keeps its artwork, frame order,
+root motion and endpoints unchanged. None of these approvals has entered
+workbench Final or production.
 
-`/keeper-timing-lab` is the separate phase-timing surface. Its first proposal
-changes only the turn from 8 to 10 fps, shortening the seven moving turn frames
-from 875 ms to 700 ms. Walk, deceleration, the 125 ms neutral beat and endpoint
-hold remain unchanged. It provides A/B playback, large and exact game-scale
-views, complete or phase-only loops, frame stepping, presets, device-local
-saved proposals, project defaults and JSON export. Timing approval remains
+`/keeper-timing-lab` is the separate phase-timing surface. Its immutable V1
+history contains the original 10 fps turn-only proposal. The repository-backed
+V2 catalogue now exposes approved **Fast Timing V1**: walk 10 fps,
+deceleration 12 fps, zero neutral beat, turn 16 fps and a 625 ms endpoint hold.
+It provides A/B playback, large and exact game-scale views, complete or
+phase-only loops, frame stepping, presets, device-local personal proposals and
+JSON export. Fast Timing V1 applies only to locomotion, stopping bridges and
+turns; action entry, loops, exits, comic beats and prop choreography remain
+independently timed so activities can be savoured. Timing approval remains
 separate from artwork, Final and production approval.
 
 ## Prime Keeper authority
@@ -138,10 +141,16 @@ still be recovered manually.
 - `src/animation-workbench/AnimationWorkbench.tsx` — review UI;
 - `src/keeper-timing-lab/` — phase-timing model, tests, A/B player and proposal
   controls;
-- `public/keeper-timing-lab/catalog.json` — deployed immutable route references,
-  presets and phase definitions;
+- `public/keeper-timing-lab/catalog.json` — immutable Timing Lab V1 history;
+- `public/keeper-timing-lab/catalog-v2.json` — current deployed route,
+  Fast Timing V1 authority, presets and phase definitions;
+- `data/keeper_timing_policy.json` — machine-readable project transition
+  default and explicit action-timing non-inheritance rule;
 - `art/drafts/keeper-timing-lab-2026-10-14-v1/` — feedback, source hash,
   recommended 10 fps turn proposal and approval boundaries;
+- `art/drafts/keeper-fast-transition-timing-2026-10-14-v1/` — Frank's
+  approved fast-transition values, scope exclusions and unchanged-authority
+  hashes;
 - `scripts/build_keeper_animation_workbench.py` — deterministic catalogue and
   historical-asset publisher;
 - `scripts/verify_keeper_animation_workbench.ts` — lane, provenance, geometry,
@@ -221,12 +230,10 @@ confirm raw/runtime art and the runtime manifest remain unchanged.
 
 ## Next approval gate
 
-Review the recommended profile at `/keeper-timing-lab`. It changes only the
-turn from 8 to 10 fps while the compared frame URLs remain identical. Frank may
-tune any phase, loop only the stop-to-turn interval, save named proposals and
-export the preferred JSON. The exported artwork-register SHA-256 and timing
-delta become the next immutable approval record. After timing approval, resume
-the one-at-a-time core routes with front → side → walk, walk → stop → back,
+Fast Timing V1 is approved and hash-pinned at
+`art/drafts/keeper-fast-transition-timing-2026-10-14-v1/`; the compared frame
+URLs remain identical. The next one-at-a-time core route is front → side → walk,
+followed by walk → stop → back,
 back → side → walk and the two sit/stand routes. Only after those core joins are
 accepted should action and costume inventories move to the next chat.
 
@@ -243,8 +250,9 @@ first derived-art validation.
 
 - The workbench currently assembles recipes; it does not draw or rewrite PNGs.
 - Browser Drafts are local unless exported.
-- Timing Lab proposals and project defaults are also device-local unless
-  exported; they do not silently update repository or runtime metadata.
+- Fast Timing V1 is the repository-backed transition default. Other Timing Lab
+  proposals and personal preview defaults are device-local unless exported;
+  they do not silently update repository or runtime metadata.
 - The Timing Lab's two-column large inspection panes are too narrow to show a
   complete translated walk → stop → turn route comfortably. Add a full-width
   or expanded inspection mode without changing the underlying frames, root

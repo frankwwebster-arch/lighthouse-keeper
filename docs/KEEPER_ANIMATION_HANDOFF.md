@@ -1256,7 +1256,7 @@ forward/reverse strip order, sidecars, public assets and displacement. The route
 is now an approved core transition authority; the left mirror, workbench Final
 and production remain unchanged.
 
-The active one-at-a-time route candidate is walk → stop → turn to camera V1 at
+The completed one-at-a-time route is walk → stop → turn to camera V1 at
 `art/drafts/keeper-prime-walk-stop-turn-front-2026-10-14-v1/`, reviewed at
 `/keeper-review/keeper-prime-walk-stop-turn-front-v1/`. It introduces no new
 character drawing. Two exact Walk V6 cycles end on Walk F1 and feed the approved
@@ -1270,24 +1270,28 @@ frames, travels 374 high-resolution pixels, and provides synchronized large and
 exact 128 × 160 playback plus frame stepping. Deterministic verification pins
 all three approval records, every source/public hash, endpoint equality,
 transparent gutters, strip/sidecar order and the condition that translation has
-stopped before rotation. Frank judged the route excellent but requested a
-slightly faster turn. The frame sequence and joins therefore remain unchanged;
-timing has moved to a separate review layer. Final and production remain
-unchanged.
+stopped before rotation. Frank judged the route excellent, then approved the
+separate Fast Timing V1 profile described below. The frame sequence, joins and
+root motion remain unchanged. Final and production remain unchanged.
 
-Keeper Timing Lab V1 is deployed at `/keeper-timing-lab` and recorded in
-`art/drafts/keeper-timing-lab-2026-10-14-v1/`. It compares the reviewed route
-against a live proposal using identical frame URLs and root motion. The initial
-recommended profile keeps Walk V6 and deceleration at 8 fps, the neutral settle
-at 125 ms and the front hold at 500 ms, while increasing only the seven moving
-turn frames from 8 to 10 fps. That reduces the moving turn from 875 ms to
-700 ms and the complete review route from 4.000 s to 3.825 s. Controls allow
-independent walk, deceleration, settle, turn and hold tuning; complete or
-phase-only loops; synchronized A/B playback; frame stepping; presets;
-device-local named proposals; project defaults; and JSON export. Exported
-profiles include the source artwork-register SHA-256 so timing can be versioned
-without re-approving or altering pixels. The 10 fps proposal and the platform
-itself await Frank's review; neither enters Final or production.
+Keeper Timing Lab V1 is deployed at `/keeper-timing-lab` and its original
+10 fps turn-only proposal remains immutable history in
+`art/drafts/keeper-timing-lab-2026-10-14-v1/`. Frank used that platform to save
+`Fast walk to front turn`, then explicitly approved it with “approve fast
+timing v1” on 14 October 2026. The separate immutable approval record is
+`art/drafts/keeper-fast-transition-timing-2026-10-14-v1/` and its V2 catalogue
+is `public/keeper-timing-lab/catalog-v2.json`.
+
+**Fast Timing V1** sets walk to 10 fps, deceleration to 12 fps, the neutral
+settle to 0 ms, the seven-frame turn to 16 fps and the front endpoint hold to
+625 ms. The complete 32-frame review route lasts approximately 2.996 seconds
+instead of 4.000 seconds. It is the project timing authority only for
+locomotion, stopping bridges, facing turns and their brief readable endpoint
+hold. It deliberately does not govern action entry, action loops, action exit,
+comic reactions, prop choreography or any activity-specific performance;
+those remain independently timed so entertaining actions can be savoured.
+Artwork pixels, frame order, root motion and endpoints remain exact. The
+profile does not enter Workbench Final or promote production sprites.
 
 ## Review-comments workflow for a later feedback round
 

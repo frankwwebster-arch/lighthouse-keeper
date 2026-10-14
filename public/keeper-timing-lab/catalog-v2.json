@@ -1,0 +1,499 @@
+{
+  "version": 2,
+  "platformId": "keeper-timing-lab",
+  "title": "Keeper Timing Lab",
+  "updatedOn": "2026-10-14",
+  "principles": {
+    "artwork": "Approved frame bytes and frame order are immutable; timing proposals reference them without editing pixels.",
+    "timing": "Fast Timing V1 is the project default for locomotion, stopping bridges and turns; action performance timing remains independent.",
+    "approval": "Fast Timing V1 is approved for transitions only. Artwork, Workbench Final, production promotion and every action's timing retain separate gates.",
+    "export": "Repository defaults are authoritative; device-local proposals remain private experiments until exported and explicitly approved."
+  },
+  "defaults": {
+    "walkFps": 10,
+    "decelerationFps": 12,
+    "settleMs": 0,
+    "turnFps": 16,
+    "frontHoldMs": 625
+  },
+  "presets": [
+    {
+      "id": "fast-transition-v1",
+      "name": "Fast Timing V1 \u00b7 approved",
+      "description": "Project standard for brisk walks, stopping bridges and turns. It does not govern action animation timing.",
+      "status": "approved",
+      "profile": {
+        "walkFps": 10,
+        "decelerationFps": 12,
+        "settleMs": 0,
+        "turnFps": 16,
+        "frontHoldMs": 625
+      }
+    },
+    {
+      "id": "approved-baseline",
+      "name": "Reviewed V1 timing",
+      "description": "Exact timing shown in the excellent V1 review.",
+      "profile": {
+        "walkFps": 8,
+        "decelerationFps": 8,
+        "settleMs": 125,
+        "turnFps": 8,
+        "frontHoldMs": 500
+      }
+    },
+    {
+      "id": "quicker-turn",
+      "name": "Earlier 10 fps proposal",
+      "description": "Superseded review proposal retained as timing history.",
+      "profile": {
+        "walkFps": 8,
+        "decelerationFps": 8,
+        "settleMs": 125,
+        "turnFps": 10,
+        "frontHoldMs": 500
+      },
+      "status": "superseded"
+    },
+    {
+      "id": "crisp-turn",
+      "name": "Earlier 12 fps comparison",
+      "description": "Superseded comparison retained as timing history.",
+      "profile": {
+        "walkFps": 8,
+        "decelerationFps": 8,
+        "settleMs": 125,
+        "turnFps": 12,
+        "frontHoldMs": 500
+      },
+      "status": "superseded"
+    }
+  ],
+  "clips": [
+    {
+      "id": "keeper-prime-walk-stop-turn-front-v1",
+      "title": "Walk \u2192 stop \u2192 turn to camera",
+      "description": "Approved artwork sequence with approved Fast Timing V1 transition cadence.",
+      "outfit": "standard",
+      "status": "artwork-and-fast-transition-timing-approved",
+      "sourceRegister": "art/drafts/keeper-prime-walk-stop-turn-front-2026-10-14-v1/batch-register.json",
+      "sourceRegisterSha256": "730dec649217466bde895875d07e6729fe759d19d436cb93203698d41a94ab10",
+      "baseline": {
+        "walkFps": 8,
+        "decelerationFps": 8,
+        "settleMs": 125,
+        "turnFps": 8,
+        "frontHoldMs": 500
+      },
+      "recommended": {
+        "walkFps": 10,
+        "decelerationFps": 12,
+        "settleMs": 0,
+        "turnFps": 16,
+        "frontHoldMs": 625
+      },
+      "frames": [
+        {
+          "id": "route-f1",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame2-2b8e91de747b527d.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F2",
+          "dx": 21,
+          "x": 21
+        },
+        {
+          "id": "route-f2",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame3-b376254e9c29da38.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F3",
+          "dx": 21,
+          "x": 42
+        },
+        {
+          "id": "route-f3",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame4-982646b0b0e6f3f9.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F4",
+          "dx": 21,
+          "x": 63
+        },
+        {
+          "id": "route-f4",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame5-545e7338151e6e5a.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F5",
+          "dx": 21,
+          "x": 84
+        },
+        {
+          "id": "route-f5",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame6-17d007eee75c2e86.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F6",
+          "dx": 21,
+          "x": 105
+        },
+        {
+          "id": "route-f6",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame7-dbf5b3849624cec7.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F7",
+          "dx": 21,
+          "x": 126
+        },
+        {
+          "id": "route-f7",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame8-cf8c53e7ffa703a5.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F8",
+          "dx": 21,
+          "x": 147
+        },
+        {
+          "id": "route-f8",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame1-0e80ea65610452c9.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F1",
+          "dx": 21,
+          "x": 168
+        },
+        {
+          "id": "route-f9",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame2-2b8e91de747b527d.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F2",
+          "dx": 21,
+          "x": 189
+        },
+        {
+          "id": "route-f10",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame3-b376254e9c29da38.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F3",
+          "dx": 21,
+          "x": 210
+        },
+        {
+          "id": "route-f11",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame4-982646b0b0e6f3f9.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F4",
+          "dx": 21,
+          "x": 231
+        },
+        {
+          "id": "route-f12",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame5-545e7338151e6e5a.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F5",
+          "dx": 21,
+          "x": 252
+        },
+        {
+          "id": "route-f13",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame6-17d007eee75c2e86.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F6",
+          "dx": 21,
+          "x": 273
+        },
+        {
+          "id": "route-f14",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame7-dbf5b3849624cec7.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F7",
+          "dx": 21,
+          "x": 294
+        },
+        {
+          "id": "route-f15",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame8-cf8c53e7ffa703a5.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F8",
+          "dx": 21,
+          "x": 315
+        },
+        {
+          "id": "route-f16",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/walk-frame1-0e80ea65610452c9.png",
+          "phase": "walk",
+          "phaseLabel": "approved walk",
+          "pose": "Walk F1",
+          "dx": 21,
+          "x": 336
+        },
+        {
+          "id": "route-f17",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/stop-bridge-frame4-9f4192beb8fecbc8.png",
+          "phase": "deceleration",
+          "phaseLabel": "approved deceleration",
+          "pose": "75%",
+          "dx": 18,
+          "x": 354
+        },
+        {
+          "id": "route-f18",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/stop-bridge-frame3-0169b3642905389d.png",
+          "phase": "deceleration",
+          "phaseLabel": "approved deceleration",
+          "pose": "50%",
+          "dx": 12,
+          "x": 366
+        },
+        {
+          "id": "route-f19",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/stop-bridge-frame2-e54546ba14b4e5f7.png",
+          "phase": "deceleration",
+          "phaseLabel": "approved deceleration",
+          "pose": "15%",
+          "dx": 6,
+          "x": 372
+        },
+        {
+          "id": "route-f20",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/stop-bridge-frame1-a172a8a01a387a21.png",
+          "phase": "deceleration",
+          "phaseLabel": "approved deceleration",
+          "pose": "exact Side-right stop",
+          "dx": 2,
+          "x": 374
+        },
+        {
+          "id": "route-f21",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/stop-bridge-frame1-a172a8a01a387a21.png",
+          "phase": "settle",
+          "phaseLabel": "neutral settle",
+          "pose": "exact Side-right stop",
+          "dx": 0,
+          "x": 374
+        },
+        {
+          "id": "route-f22",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/turn-frame7-85f897ef55e76813.png",
+          "phase": "turn",
+          "phaseLabel": "approved turn to camera",
+          "pose": "75\u00b0",
+          "dx": 0,
+          "x": 374
+        },
+        {
+          "id": "route-f23",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/turn-frame6-8c20fc0436d4982d.png",
+          "phase": "turn",
+          "phaseLabel": "approved turn to camera",
+          "pose": "60\u00b0",
+          "dx": 0,
+          "x": 374
+        },
+        {
+          "id": "route-f24",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/turn-frame5-2e118ca8d10d126f.png",
+          "phase": "turn",
+          "phaseLabel": "approved turn to camera",
+          "pose": "45\u00b0",
+          "dx": 0,
+          "x": 374
+        },
+        {
+          "id": "route-f25",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/turn-frame4-081272e51f799f6d.png",
+          "phase": "turn",
+          "phaseLabel": "approved turn to camera",
+          "pose": "30\u00b0",
+          "dx": 0,
+          "x": 374
+        },
+        {
+          "id": "route-f26",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/turn-frame3-5b4f9406f68e15d2.png",
+          "phase": "turn",
+          "phaseLabel": "approved turn to camera",
+          "pose": "15\u00b0",
+          "dx": 0,
+          "x": 374
+        },
+        {
+          "id": "route-f27",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/turn-frame2-af20e9290fb79d16.png",
+          "phase": "turn",
+          "phaseLabel": "approved turn to camera",
+          "pose": "8\u00b0",
+          "dx": 0,
+          "x": 374
+        },
+        {
+          "id": "route-f28",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/turn-frame1-a9a5c37fe7222199.png",
+          "phase": "turn",
+          "phaseLabel": "approved turn to camera",
+          "pose": "0\u00b0",
+          "dx": 0,
+          "x": 374
+        },
+        {
+          "id": "route-f29",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/turn-frame1-a9a5c37fe7222199.png",
+          "phase": "frontHold",
+          "phaseLabel": "front hold",
+          "pose": "exact Prime front",
+          "dx": 0,
+          "x": 374
+        },
+        {
+          "id": "route-f30",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/turn-frame1-a9a5c37fe7222199.png",
+          "phase": "frontHold",
+          "phaseLabel": "front hold",
+          "pose": "exact Prime front",
+          "dx": 0,
+          "x": 374
+        },
+        {
+          "id": "route-f31",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/turn-frame1-a9a5c37fe7222199.png",
+          "phase": "frontHold",
+          "phaseLabel": "front hold",
+          "pose": "exact Prime front",
+          "dx": 0,
+          "x": 374
+        },
+        {
+          "id": "route-f32",
+          "src": "/keeper-review/keeper-prime-walk-stop-turn-front-v1/assets/turn-frame1-a9a5c37fe7222199.png",
+          "phase": "frontHold",
+          "phaseLabel": "front hold",
+          "pose": "exact Prime front",
+          "dx": 0,
+          "x": 374
+        }
+      ],
+      "distanceHighResolutionPixels": 374,
+      "artworkAuthorities": {
+        "walk": {
+          "approval": "art/drafts/keeper-prime-walk-2026-10-14-v7/batch-register.json",
+          "approvalSha256": "ad788fb923009c6dd97840d3c4ae91c6e8084ef699ab6637bb2738b9532cb342"
+        },
+        "stopWalkStop": {
+          "approval": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v2/batch-register.json",
+          "approvalSha256": "3cbdc5ea7f7467ea18a353d5abc8581c1d6afd088316570c629241612bc2542c"
+        },
+        "frontSideTurn": {
+          "approval": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v2/batch-register.json",
+          "approvalSha256": "7eba001f046d9435667772ab830ba1de846ed5697c0c86d58f7d59537efed248",
+          "acceptedLimitation": "very slight visual jump around 45\u00b0"
+        }
+      },
+      "endpointContract": {
+        "walkContact": {
+          "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+          "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656"
+        },
+        "sideStop": {
+          "file": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f1.png",
+          "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+          "turnSideEndpointSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+          "byteIdenticalAcrossDecelerationAndTurn": true
+        },
+        "front": {
+          "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f1.png",
+          "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e"
+        }
+      },
+      "acceptedVisualLimitation": "very slight visual jump around 45\u00b0",
+      "timingAuthority": "keeper-fast-transition-timing-v1"
+    }
+  ],
+  "loopSections": [
+    {
+      "id": "all",
+      "label": "Complete route",
+      "phases": [
+        "walk",
+        "deceleration",
+        "settle",
+        "turn",
+        "frontHold"
+      ]
+    },
+    {
+      "id": "walk",
+      "label": "Walk only",
+      "phases": [
+        "walk"
+      ]
+    },
+    {
+      "id": "stop",
+      "label": "Walk exit \u2192 stopped",
+      "phases": [
+        "deceleration",
+        "settle"
+      ]
+    },
+    {
+      "id": "stop-turn",
+      "label": "Stopped \u2192 full face",
+      "phases": [
+        "settle",
+        "turn"
+      ]
+    },
+    {
+      "id": "turn",
+      "label": "Turn only",
+      "phases": [
+        "turn"
+      ]
+    }
+  ],
+  "approvedTransitionProfile": {
+    "id": "keeper-fast-transition-timing-v1",
+    "name": "Fast Timing V1",
+    "status": "approved-transition-authority",
+    "approvedOn": "2026-10-14",
+    "approvalWording": "approve fast timing v1",
+    "designDirection": "Movement between activities should run quickly for a mainly child audience; entertaining action animations remain independently timed and worth savouring.",
+    "profile": {
+      "walkFps": 10,
+      "decelerationFps": 12,
+      "settleMs": 0,
+      "turnFps": 16,
+      "frontHoldMs": 625
+    },
+    "appliesTo": [
+      "steady standard locomotion",
+      "walk acceleration",
+      "walk deceleration",
+      "facing turns",
+      "brief transition endpoint holds"
+    ],
+    "excludes": [
+      "action entry",
+      "action loops",
+      "action exit",
+      "comic reactions",
+      "prop choreography",
+      "activity-specific performance timing"
+    ],
+    "policy": "Action animation timing is authored and approved per action; it never inherits Fast Timing V1 merely because it follows a transition."
+  },
+  "projectTimingPolicy": {
+    "path": "data/keeper_timing_policy.json",
+    "sha256": "fe06eedbc76940606cad821f33eb489849f914855c29aaf3be1d5bd129359250"
+  }
+}

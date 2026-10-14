@@ -36,9 +36,11 @@ are public and do not require authentication:
 - Source route: `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-walk-stop-turn-front-v1/?v=cca03dc`
 - Animation Workbench: `https://lighthouse-keeper-mu.vercel.app/animation-workbench?v=cca03dc`
 
-The Timing Lab is the best place for a visual timing review. Compare A and B at
-both large and game scale, and loop `stop → front` and `turn only`. The initial
-proposal changes only the turn from 8 fps to 10 fps.
+The Timing Lab is the best place for visual timing review. Compare A and B at
+both large and game scale, and loop `stop → front` and `turn only`. Frank has
+now approved **Fast Timing V1** for transition phases: walk 10 fps,
+deceleration 12 fps, no neutral pause, turn 16 fps and a 625 ms endpoint hold.
+It does not govern action animation timing.
 
 There is one current UI defect: the **large inspection pane is too narrow to
 show the complete walk → stop → turn route comfortably**. Do not interpret
@@ -72,11 +74,12 @@ Approved artwork/construction authorities now include:
 - the exact frame composition of walk → stop → turn to camera V1, which Frank
   judged excellent.
 
-The timing of walk → stop → turn to camera is **not yet approved**. Timing Lab
-V1 compares the reviewed profile with a proposal that changes only the seven
-moving turn frames from 8 fps to 10 fps: 875 ms becomes 700 ms and the complete
-route becomes 3.825 seconds rather than 4.000 seconds. Frame bytes, order,
-root motion and endpoints are identical in both panes.
+The timing of walk → stop → turn to camera is approved as **Fast Timing V1**.
+The complete route previews in approximately 2.996 seconds rather than 4.000
+seconds. Frame bytes, order, root motion and endpoints are identical. The
+approved scope is locomotion, stopping bridges, turns and their short readable
+endpoint hold. Action entry, loops, exits, reactions and prop choreography are
+explicitly excluded and retain independent, activity-specific timing.
 
 No animation is currently in Workbench **Final**, and no Keeper Prime draft has
 been promoted into canonical raw/runtime art or the production manifest.
@@ -117,26 +120,26 @@ unrelated constant speed.
 
 All new proposals remain versioned and reversible. Deterministic checks cover
 authority hashes, frame order, geometry, transparent gutters, public/source
-agreement and production non-mutation. Commit `cca03dc` passes all 169 tests,
-type-checking and the production build.
+agreement and production non-mutation. The Fast Timing V1 delivery passes all
+176 tests, type-checking and the production build; use the latest documented
+successor to `cca03dc` before changing these contracts.
 
 ## Next Keeper animation steps
 
 Continue one route at a time, with Frank reviewing each deployed proposal:
 
-1. Frank tunes and explicitly approves a Timing Lab profile for walk → stop →
-   turn to camera. The present 10 fps turn is only the recommended starting
-   point.
-2. Improve the Timing Lab inspection layout so a complete translated route can
+1. Improve the Timing Lab inspection layout so a complete translated route can
    use a full-width or expanded stage. Do not change animation data as part of
    that UI repair.
-3. Build front → side → walk.
-4. Build walk → stop → back, then back → side → walk.
-5. Build walk → stop → sit and sit → stop → walk using fixed seat/contact
+2. Build front → side → walk using approved Fast Timing V1.
+3. Build walk → stop → back, then back → side → walk using approved Fast Timing
+   V1.
+4. Build walk → stop → sit and sit → stop → walk using fixed seat/contact
    anchors.
-6. Only after these core joins are accepted, move to action animations and
+5. Only after these core joins are accepted, move to action animations and
    costume families. Costume changes may be hidden behind doors; visible joins
-   still require exact pose, scale, floor and timing continuity.
+   still require exact pose, scale, floor and timing continuity. Action timing
+   must remain expressive and must not inherit the fast transition preset.
 
 Do not batch-promote work merely because individual components are approved.
 

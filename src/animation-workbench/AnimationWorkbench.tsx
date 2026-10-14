@@ -196,7 +196,7 @@ export default function AnimationWorkbench() {
         <div>
           <p className={styles.eyebrow}>Separate review surface · production unchanged</p>
           <h1>Keeper Animation Workbench</h1>
-          <p><strong>Final is empty.</strong> Prime Master V1, Side-right V1, KP Rig V1, KP Rig Motion V3, front ↔ side Turn V1, side-right ↔ back Turn V9, finished Walk V6 and stop ↔ walk are approved authorities. Walk → stop → turn to camera has accepted artwork and is now in phase-specific timing review.</p>
+          <p><strong>Final is empty.</strong> Prime Master V1, Side-right V1, KP Rig V1, KP Rig Motion V3, front ↔ side Turn V1, side-right ↔ back Turn V9, finished Walk V6 and stop ↔ walk are approved authorities. Walk → stop → turn to camera has accepted artwork and approved Fast Timing V1 for its locomotion and turn phases; action timing remains independent.</p>
           <p><a href="/keeper-timing-lab">Open Keeper Timing Lab →</a> · <a href="/keeper-review/keeper-prime-walk-stop-turn-front-v1/">Source route</a> · <a href="/keeper-review/keeper-prime-stop-walk-stop-v2/">Approved stop ↔ walk</a></p>
         </div>
         <nav><a href="/keeper-timing-lab">Timing Lab</a><a href="/">Game</a><a href="/studio">Recipe Studio</a></nav>
@@ -225,7 +225,7 @@ export default function AnimationWorkbench() {
         </aside>
 
         <div className={styles.content}>
-          {!selected || !asset ? <section className={styles.emptyStage}><h2>Animation library remains deliberately empty</h2><p>Approved artwork authorities and timing proposals stay outside Final until their complete core routes are accepted. Walk → stop → turn to camera is currently being tuned without changing its frames.</p><p><a href="/keeper-timing-lab">Open Keeper Timing Lab</a></p></section> : <>
+          {!selected || !asset ? <section className={styles.emptyStage}><h2>Animation library remains deliberately empty</h2><p>Approved artwork and timing authorities stay outside Final until their complete core routes are accepted. Walk → stop → turn to camera now has approved Fast Timing V1 without any frame, root-motion or endpoint change.</p><p><a href="/keeper-timing-lab">Open Keeper Timing Lab</a></p></section> : <>
             <section className={styles.itemHeader}>
               <div>
                 <div className={styles.badges}><span className={selected.lane === 'final' ? styles.finalBadge : styles.draftBadge}>{selected.lane}</span><span>{asset.frames} source frames</span><span>{asset.fps} fps</span><span>{asset.outfit ?? 'standard'}</span></div>
