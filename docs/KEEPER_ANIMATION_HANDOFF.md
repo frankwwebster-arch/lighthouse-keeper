@@ -1256,6 +1256,23 @@ forward/reverse strip order, sidecars, public assets and displacement. The route
 is now an approved core transition authority; the left mirror, workbench Final
 and production remain unchanged.
 
+The active one-at-a-time route candidate is walk → stop → turn to camera V1 at
+`art/drafts/keeper-prime-walk-stop-turn-front-2026-10-14-v1/`, reviewed at
+`/keeper-review/keeper-prime-walk-stop-turn-front-v1/`. It introduces no new
+character drawing. Two exact Walk V6 cycles end on Walk F1 and feed the approved
+18, 12, 6, 2 px/frame deceleration into the exact Side-right neutral. That
+neutral is held for one additional frame (125 ms); root motion is already zero
+before the approved side-right → front turn begins. The route ends on the exact
+Prime front neutral. The standalone 13-frame join strip includes Walk F1 as its
+entry contact for evidence; when stitched after a complete walk loop, runtime
+enters at strip frame 2 so Walk F1 is not duplicated. The route has 32 review
+frames, travels 374 high-resolution pixels, and provides synchronized large and
+exact 128 × 160 playback plus frame stepping. Deterministic verification pins
+all three approval records, every source/public hash, endpoint equality,
+transparent gutters, strip/sidecar order and the condition that translation has
+stopped before rotation. It awaits visual approval; Final and production remain
+unchanged.
+
 ## Review-comments workflow for a later feedback round
 
 1. Do not process another review export until the beard evidence gate is
