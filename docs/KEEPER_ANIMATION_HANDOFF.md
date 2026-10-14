@@ -1201,8 +1201,8 @@ master; rough edges or jagged internal linework fail even when all geometry
 datums pass.
 
 The active one-at-a-time core candidate is
-`art/drafts/keeper-prime-walk-2026-10-14-v5/`, reviewed at
-`/keeper-review/keeper-prime-walk-v5/`. V1–V4 remain immutable provenance; V2
+`art/drafts/keeper-prime-walk-2026-10-14-v6/`, reviewed at
+`/keeper-review/keeper-prime-walk-v6/`. V1–V5 remain immutable provenance; V2
 is still V1's byte-identical routing wrapper. V4's rear-arm-only correction did
 not solve the gait. Frank's decisive observation was that the accepted legs
 already define the arm timing: the two arms must be derived together from those
@@ -1219,11 +1219,21 @@ the successful F2 arm source as its symmetric loop partner. The verifier rejects
 out-of-mask changes and separately proves that the complete lower-leg/boot rows
 remain exact V4 pixels.
 
-The V5 page keeps absolute asset paths, preventing Vercel's trailing-slash
+Frank then identified a clear V5 F8 failure: the legs were warped. The cause was
+not the accepted leg art or the arm phase map; V5 reused the successful F2 arm
+source for the symmetric F8 pose but allowed one broad mask to own part of the
+lower body. That admitted F2 trouser geometry into F8. V6 keeps F1–F7 exact V5
+bytes and rebuilds only F8 from the accepted V4 F8 base. Two separate tightened
+polygons admit the back-swinging near arm and forward-swinging far arm without
+owning the central trousers or legs. The verifier proves the central trouser
+region and every row containing the lower legs and boots are byte-identical to
+accepted V4 F8.
+
+The V6 page keeps absolute asset paths, preventing Vercel's trailing-slash
 canonicalization from resolving frames under `/keeper-review/assets/`. It
-synchronizes V4 and V5 at exact 128 × 160 game size, retains previous/next
+synchronizes V5 and V6 at exact 128 × 160 game size, retains previous/next
 stepping, and translates the same strip at 168 high-resolution pixels per second
-for five seconds from fully hidden to fully hidden. V5 remains awaiting Frank's
+for five seconds from fully hidden to fully hidden. V6 remains awaiting Frank's
 visual approval; walk→stop, stop→walk, the deterministic left mirror, workbench
 Final and production promotion remain deliberately untouched.
 
