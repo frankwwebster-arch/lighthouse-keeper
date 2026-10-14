@@ -1,0 +1,70 @@
+{
+  "batchId": "keeper-timing-lab-2026-10-14-v1",
+  "status": "timing-platform-v1-and-quicker-turn-proposal",
+  "purpose": "Separate immutable Keeper artwork authority from tunable motion timing and make timing review reusable across core and action routes.",
+  "feedback": {
+    "recordedOn": "2026-10-14",
+    "wording": "it's excellent, but the turn could run a little faster - and it's little things like the speed of any given animation that makes me think we need an overall tuning platform, not just building and approving as concrete."
+  },
+  "sourceRoute": {
+    "register": "art/drafts/keeper-prime-walk-stop-turn-front-2026-10-14-v1/batch-register.json",
+    "registerSha256": "730dec649217466bde895875d07e6729fe759d19d436cb93203698d41a94ab10",
+    "artworkPixelsChanged": false,
+    "frameOrderChanged": false,
+    "rootMotionChanged": false
+  },
+  "timingProposal": {
+    "baseline": {
+      "walkFps": 8,
+      "decelerationFps": 8,
+      "settleMs": 125,
+      "turnFps": 8,
+      "frontHoldMs": 500
+    },
+    "recommended": {
+      "walkFps": 8,
+      "decelerationFps": 8,
+      "settleMs": 125,
+      "turnFps": 10,
+      "frontHoldMs": 500
+    },
+    "onlyChangedField": "turnFps",
+    "from": 8,
+    "to": 10,
+    "turnDurationReductionPercent": 20
+  },
+  "platform": {
+    "route": "/keeper-timing-lab",
+    "catalogue": "public/keeper-timing-lab/catalog.json",
+    "catalogueSha256": "95d85d2754f8c443f80cc778bdd7800973fc869422c43aa95cdb9c98c9542689",
+    "features": [
+      "phase-specific timing",
+      "baseline-versus-proposal playback",
+      "large-and-game-scale preview",
+      "section loops",
+      "frame stepping",
+      "presets",
+      "device-local saved proposals",
+      "project defaults",
+      "JSON export",
+      "immutable authority display"
+    ]
+  },
+  "validation": {
+    "sourceRouteUnchanged": true,
+    "approvedArtworkReferencedOnly": true,
+    "timingIndependentOfArtwork": true,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "workbenchFinalChanged": false
+  },
+  "approvalBoundary": {
+    "routeArtworkAcceptedAsExcellent": true,
+    "recommendedTimingApproved": false,
+    "timingPlatformApproved": false,
+    "finalLaneEntryAllowed": false,
+    "productionPromotionAllowed": false
+  },
+  "nextGate": "Frank tunes or approves the 10 fps turn proposal in Keeper Timing Lab; exported settings become the next versioned timing record without changing artwork.",
+  "rollback": "Delete only art/drafts/keeper-timing-lab-2026-10-14-v1, public/keeper-timing-lab/catalog.json and the timing-lab application files; the V1 route and every approved source authority remain unchanged."
+}

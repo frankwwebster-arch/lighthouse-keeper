@@ -1270,8 +1270,24 @@ frames, travels 374 high-resolution pixels, and provides synchronized large and
 exact 128 × 160 playback plus frame stepping. Deterministic verification pins
 all three approval records, every source/public hash, endpoint equality,
 transparent gutters, strip/sidecar order and the condition that translation has
-stopped before rotation. It awaits visual approval; Final and production remain
+stopped before rotation. Frank judged the route excellent but requested a
+slightly faster turn. The frame sequence and joins therefore remain unchanged;
+timing has moved to a separate review layer. Final and production remain
 unchanged.
+
+Keeper Timing Lab V1 is deployed at `/keeper-timing-lab` and recorded in
+`art/drafts/keeper-timing-lab-2026-10-14-v1/`. It compares the reviewed route
+against a live proposal using identical frame URLs and root motion. The initial
+recommended profile keeps Walk V6 and deceleration at 8 fps, the neutral settle
+at 125 ms and the front hold at 500 ms, while increasing only the seven moving
+turn frames from 8 to 10 fps. That reduces the moving turn from 875 ms to
+700 ms and the complete review route from 4.000 s to 3.825 s. Controls allow
+independent walk, deceleration, settle, turn and hold tuning; complete or
+phase-only loops; synchronized A/B playback; frame stepping; presets;
+device-local named proposals; project defaults; and JSON export. Exported
+profiles include the source artwork-register SHA-256 so timing can be versioned
+without re-approving or altering pixels. The 10 fps proposal and the platform
+itself await Frank's review; neither enters Final or production.
 
 ## Review-comments workflow for a later feedback round
 

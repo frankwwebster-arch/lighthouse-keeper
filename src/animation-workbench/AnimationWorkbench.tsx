@@ -196,10 +196,10 @@ export default function AnimationWorkbench() {
         <div>
           <p className={styles.eyebrow}>Separate review surface · production unchanged</p>
           <h1>Keeper Animation Workbench</h1>
-          <p><strong>Final is empty.</strong> Prime Master V1, Side-right V1, the smooth V5 rear endpoint, KP Rig V1, KP Rig Motion V3 and front ↔ side Turn V1 are approved authorities. The separate eight-pose side-right ↔ back Turn V1 is awaiting visual approval.</p>
-          <p><a href="/keeper-review/keeper-prime-turn-side-back-v1/">Review side ↔ back Turn V1 →</a> · <a href="/keeper-review/keeper-prime-turn-front-side-v2/">Front ↔ side approval</a> · <a href="/keeper-review/keeper-prime-rig-v3/">Approved Motion V3</a></p>
+          <p><strong>Final is empty.</strong> Prime Master V1, Side-right V1, KP Rig V1, KP Rig Motion V3, front ↔ side Turn V1, side-right ↔ back Turn V9, finished Walk V6 and stop ↔ walk are approved authorities. Walk → stop → turn to camera has accepted artwork and is now in phase-specific timing review.</p>
+          <p><a href="/keeper-timing-lab">Open Keeper Timing Lab →</a> · <a href="/keeper-review/keeper-prime-walk-stop-turn-front-v1/">Source route</a> · <a href="/keeper-review/keeper-prime-stop-walk-stop-v2/">Approved stop ↔ walk</a></p>
         </div>
-        <nav><a href="/">Game</a><a href="/studio">Recipe Studio</a></nav>
+        <nav><a href="/keeper-timing-lab">Timing Lab</a><a href="/">Game</a><a href="/studio">Recipe Studio</a></nav>
       </header>
       <section className={styles.toolbar}>
         <div className={styles.laneTabs} role="tablist" aria-label="Animation library">
@@ -216,16 +216,16 @@ export default function AnimationWorkbench() {
         <aside className={styles.library}>
           <div className={styles.libraryIntro}>
             <h2>{lane === 'final' ? 'Approved animations' : 'Working copies'}</h2>
-            <p>{lane === 'final' ? 'No animation is currently Final.' : 'No active route remains: the approved Prime Master is receiving its side/back endpoint set first.'}</p>
+            <p>{lane === 'final' ? 'No animation is currently Final.' : 'No active route is in Draft: approved artwork authorities remain outside Final while route timing is tuned separately.'}</p>
           </div>
           <ul>
             {visibleItems.map((item) => <li key={item.id}><button type="button" className={item.id === selected?.id ? styles.selectedItem : ''} onClick={() => setSelectedId(item.id)}><strong>{item.title}</strong><span>{item.name}</span><small>Complete transition route</small></button></li>)}
           </ul>
-          {!visibleItems.length && <p className={styles.empty}>{lane === 'draft' ? 'No active Draft animations. The Prime side/back endpoints are in visual review.' : 'No animations are currently Final.'}</p>}
+          {!visibleItems.length && <p className={styles.empty}>{lane === 'draft' ? 'No active Draft animations. Approved artwork authorities and timing proposals remain separately reviewable.' : 'No animations are currently Final.'}</p>}
         </aside>
 
         <div className={styles.content}>
-          {!selected || !asset ? <section className={styles.emptyStage}><h2>Animation library reset</h2><p>Prime Master V1, Side-right V1, the smooth V5 rear endpoint, KP Rig V1, KP Rig Motion V3 and front ↔ side Turn V1 are approved. The next proposed core join rotates from the exact side-right endpoint through six smooth rear-quarter poses into the exact approved back endpoint.</p><p><a href="/keeper-review/keeper-prime-turn-side-back-v1/">Review side ↔ back Turn V1</a></p></section> : <>
+          {!selected || !asset ? <section className={styles.emptyStage}><h2>Animation library remains deliberately empty</h2><p>Approved artwork authorities and timing proposals stay outside Final until their complete core routes are accepted. Walk → stop → turn to camera is currently being tuned without changing its frames.</p><p><a href="/keeper-timing-lab">Open Keeper Timing Lab</a></p></section> : <>
             <section className={styles.itemHeader}>
               <div>
                 <div className={styles.badges}><span className={selected.lane === 'final' ? styles.finalBadge : styles.draftBadge}>{selected.lane}</span><span>{asset.frames} source frames</span><span>{asset.fps} fps</span><span>{asset.outfit ?? 'standard'}</span></div>

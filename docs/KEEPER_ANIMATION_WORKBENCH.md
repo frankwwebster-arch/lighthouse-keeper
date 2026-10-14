@@ -1,6 +1,6 @@
 # Keeper Animation Workbench
 
-Last updated: 13 October 2026.
+Last updated: 14 October 2026.
 
 ## Current state
 
@@ -11,40 +11,22 @@ created visible pixel-density, width, height, face and perspective changes at
 route joins. Earlier V1/V2 turn and core-transition assets remain hash-pinned,
 addressable provenance; they are not Final and must not seed new animation.
 
-Frank permanently approved
-`art/drafts/keeper-prime-master-2026-10-12-v1/` on 13 October 2026 with the
-wording “Approved. Make sure this is NEVER forgotten.” It is the sole identity,
-rendering, proportion, face and single-band uniform authority. The current
-approved rear authority is `keeper-prime-orthographic-views-2026-10-13-v5`, at
-`/keeper-review/keeper-prime-orthographic-v5/`. V2 remains immutable rejected
-provenance: although its rear alpha silhouette exactly matches the front, its
-boots face the player. Frank approved V5's exact first smooth rear-boot render;
-its proxy changes only lower rows 273–315 while preserving the complete alpha
-match. V3 still proves the selected side passes only five of 15 internal
-vertical datums. Frank approved KP Rig V1 on 13 October 2026 with “Approve KP
-Rig V1, let's see it animated”. Its immutable measurement contract remains at
-`/keeper-review/keeper-prime-rig-v1/`. Frank judged Motion V2 otherwise very
-good but asked for more leg movement, more steps and a slower walk. The current
-V3 construction-motion revision is at `/keeper-review/keeper-prime-rig-v3/`.
-It changes only the walk: eight steps over five seconds and 168 px/s instead of
-two steps over two seconds and 420 px/s, with larger thigh swing and knee lift.
-Idle, reach and planted-ankle sit/stand remain exact V2 records. The mannequin
-is not finished Keeper raster art. Frank approved Motion V3 on 13 October 2026
-with “Approved, very good indeed”. Its first authorized artwork candidate is
-now at `/keeper-review/keeper-prime-side-right-rigged-v1/`: a super-smooth
-1122 × 1402 master uniformly registered into the standard 256 × 320 cell. It
-has exact zero delta at all 15 hard datums and a transparent safety gutter.
-Frank approved it with “Approve side-right V1 and build Turn V1.” The separate
-eight-pose front ↔ side Turn V1 is now at
-`/keeper-review/keeper-prime-turn-front-side-v1/`. Frank approved it with “it
-is ever so slightly jumpy at about 45deg in the turn but I am happy”. The
-slight 45° cadence change is explicitly preserved as an accepted minor
-limitation in `/keeper-review/keeper-prime-turn-front-side-v2/`; the V1 bytes
-remain unchanged. The next separate eight-pose side-right ↔ back draft is at
-`/keeper-review/keeper-prime-turn-side-back-v1/`. It uses the exact approved
-side and rear endpoints, six independently drawn rear-quarter poses, exact
-reverse frame order and no non-uniform warp. It is awaiting visual approval and
-is not Final or production.
+Frank permanently approved Prime Master V1, the smooth rear and Side-right
+endpoints, KP Rig V1, Motion V3, front ↔ side Turn V1 and exact nine-frame
+side-right ↔ back V9. Exact Walk V6 and stop → walk → stop V1 are also approved
+core authorities. Walk → stop → turn to camera V1 composes those exact bytes;
+Frank judged it excellent and requested only that its turn run slightly faster.
+The route therefore keeps its artwork, frame order, root motion and endpoints
+unchanged while timing is reviewed separately. None of these approvals has
+entered workbench Final or production.
+
+`/keeper-timing-lab` is the separate phase-timing surface. Its first proposal
+changes only the turn from 8 to 10 fps, shortening the seven moving turn frames
+from 875 ms to 700 ms. Walk, deceleration, the 125 ms neutral beat and endpoint
+hold remain unchanged. It provides A/B playback, large and exact game-scale
+views, complete or phase-only loops, frame stepping, presets, device-local
+saved proposals, project defaults and JSON export. Timing approval remains
+separate from artwork, Final and production approval.
 
 ## Prime Keeper authority
 
@@ -84,8 +66,9 @@ adult rectangular profile eye, separate moustache and readable closed mouth;
 rear hair remains distinct from the forward beard. Its high-resolution source,
 registered proxy, sidecar, front/side/back lineup, 15-point board and ghost
 overlay are SHA-256-pinned. No non-uniform warp was used: registration is one
-Lanczos scale plus translation. The candidate remains unapproved until Frank's
-visual verdict.
+Lanczos scale plus translation. Frank approved Side-right V1 on 13 October
+2026; it remains an artwork authority rather than a Final or production
+promotion.
 
 Orthographic V5 records Frank's explicit selection of the first rear-boot
 render: rounded rear heel counters, central back seams and rear sole edges. It
@@ -153,6 +136,12 @@ still be recovered manually.
   catalogue;
 - `src/animation-workbench/model.ts` — timeline, loop and transition compiler;
 - `src/animation-workbench/AnimationWorkbench.tsx` — review UI;
+- `src/keeper-timing-lab/` — phase-timing model, tests, A/B player and proposal
+  controls;
+- `public/keeper-timing-lab/catalog.json` — deployed immutable route references,
+  presets and phase definitions;
+- `art/drafts/keeper-timing-lab-2026-10-14-v1/` — feedback, source hash,
+  recommended 10 fps turn proposal and approval boundaries;
 - `scripts/build_keeper_animation_workbench.py` — deterministic catalogue and
   historical-asset publisher;
 - `scripts/verify_keeper_animation_workbench.ts` — lane, provenance, geometry,
@@ -203,6 +192,7 @@ and does not place an item in either active lane.
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_turn_front_side_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_prime_turn_side_back_v1.py
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_animation_workbench.py
+/Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_keeper_timing_lab_v1.py
 npm run verify:keeper-prime-master-v1
 npm run verify:keeper-prime-orthographic-v1
 npm run verify:keeper-prime-orthographic-v2
@@ -217,6 +207,7 @@ npm run verify:keeper-prime-side-right-rigged-v1
 npm run verify:keeper-prime-turn-front-side-v1
 npm run verify:keeper-prime-turn-side-back-v1
 npm run verify:keeper-animation-workbench
+npm run verify:keeper-timing-lab-v1
 npm test
 npm run typecheck
 npm run build
@@ -230,15 +221,13 @@ confirm raw/runtime art and the runtime manifest remain unchanged.
 
 ## Next approval gate
 
-Visually review side-right ↔ back Turn V1 at
-`/keeper-review/keeper-prime-turn-side-back-v1/` in both directions and route
-context. Its exact approved endpoints, height, floor, reverse order and gutters
-already pass deterministically; the open question is perceived continuity as
-the profile face and beard disappear into rear hair, the cap widens and both
-boots resolve into the approved rear construction. Front ↔ side Turn V1 is now
-an approved artwork authority with its slight 45° cadence change recorded as an
-accepted limitation. After side ↔ back review, continue the core set in this
-chat: walk ↔ exact stop and stand ↔ sit. Only after those core joins are
+Review the recommended profile at `/keeper-timing-lab`. It changes only the
+turn from 8 to 10 fps while the compared frame URLs remain identical. Frank may
+tune any phase, loop only the stop-to-turn interval, save named proposals and
+export the preferred JSON. The exported artwork-register SHA-256 and timing
+delta become the next immutable approval record. After timing approval, resume
+the one-at-a-time core routes with front → side → walk, walk → stop → back,
+back → side → walk and the two sit/stand routes. Only after those core joins are
 accepted should action and costume inventories move to the next chat.
 
 Before those transition batches, use the approved **KP Rig V1**: a posable
@@ -254,6 +243,8 @@ first derived-art validation.
 
 - The workbench currently assembles recipes; it does not draw or rewrite PNGs.
 - Browser Drafts are local unless exported.
+- Timing Lab proposals and project defaults are also device-local unless
+  exported; they do not silently update repository or runtime metadata.
 - The UI does not yet add/remove route segments.
 - Visual seam judgement still happens in playback; the future redraw builder
   must add deterministic pixel, anchor, silhouette and unchanged-region checks

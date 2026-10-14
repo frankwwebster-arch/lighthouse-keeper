@@ -174,7 +174,7 @@ if (catalogue.provenance?.primeTurnFrontSideApprovalRegisterSha256 !== sha256(PR
 if (catalogue.provenance?.primeTurnSideBackRegisterSha256 !== sha256(PRIME_TURN_SIDE_BACK_REGISTER)) fail('workbench does not pin side ↔ back Turn V1')
 
 const ui = fs.readFileSync(UI, 'utf8')
-for (const label of ['Final', 'Draft', 'Copy to Draft', 'Copy frame', 'Remove frame', 'Move left', 'Move right', 'Repeat section', 'Transition preview', 'Required for every action', 'begins hidden behind', 'cycles set by game placement', 'Export Draft JSON', 'Import Draft JSON', 'Final is empty', 'No animations are currently Final', 'Prime Master V1', 'Side-right V1', 'KP Rig V1', 'KP Rig Motion V3', 'front ↔ side Turn V1 are approved authorities', 'side-right ↔ back Turn V1 is awaiting visual approval', 'Review side ↔ back Turn V1']) {
+for (const label of ['Final', 'Draft', 'Copy to Draft', 'Copy frame', 'Remove frame', 'Move left', 'Move right', 'Repeat section', 'Transition preview', 'Required for every action', 'begins hidden behind', 'cycles set by game placement', 'Export Draft JSON', 'Import Draft JSON', 'Final is empty', 'No animations are currently Final', 'Prime Master V1', 'Side-right V1', 'KP Rig V1', 'KP Rig Motion V3', 'front ↔ side Turn V1', 'side-right ↔ back Turn V9', 'Walk → stop → turn to camera has accepted artwork', 'Open Keeper Timing Lab']) {
   if (!ui.includes(label)) fail(`UI omits ${label}`)
 }
 for (const functionName of ['copyTimelineEntry', 'removeTimelineEntry', 'moveTimelineEntry', 'expandTimeline', 'transitionPlayback', 'transitionWarnings', 'reconcileDraftLibrary']) {
