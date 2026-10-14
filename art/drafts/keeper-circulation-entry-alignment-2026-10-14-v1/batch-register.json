@@ -1,0 +1,47 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-circulation-entry-alignment-2026-10-14-v1",
+  "status": "draft-construction-choreography-awaiting-review",
+  "authorities": {
+    "verticalCirculationGeometry": {
+      "file": "art/drafts/keeper-movement-foundation-2026-10-14-v1/geometry/keeper-vertical-circulation-v1.json",
+      "sha256": "cac4147afb0a2dded4a7ced52fdc0a659a94d88215bdf639d6c430c2bf9b2ac6"
+    },
+    "primeConstructionRig": {
+      "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/rig/keeper-prime-rig-v1.json",
+      "sha256": "5786df6eb654471f81dda161fc909a5768abb2d96aade24fb84448beb7cdf765"
+    }
+  },
+  "preservedEvidence": {
+    "verticalCirculationV1": {
+      "file": "public/keeper-review/keeper-vertical-circulation-v1/index.html",
+      "sha256": "75d09f18030d281ca480c7a5a98b8fee38824a1a3fccbc9560a16403f616751c"
+    },
+    "verticalCirculationV2": {
+      "file": "public/keeper-review/keeper-vertical-circulation-v2/index.html",
+      "sha256": "c7c41aeb6c49c774929d92dff00f16feefbf1ebdfdf8c630f1e1cc9c6121c688"
+    },
+    "liftEntryV1": {
+      "file": "public/keeper-review/keeper-lift-entry-alignment-v1/index.html",
+      "sha256": "798c10607e3d99fba171c490f59d51ebdb64c08e927520f87a59d47f57713c14"
+    }
+  },
+  "spec": {
+    "file": "art/drafts/keeper-circulation-entry-alignment-2026-10-14-v1/circulation-entry-alignment-v1.json",
+    "sha256": "682a048570d84d6fefe72241ebb0bb2b2e546f77ecc027302b34ec66ec50bf26"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-circulation-entry-alignment-v1/index.html",
+    "sha256": "559be03f1dd93916e16471ef61169ff0acac37b5d5d5a8b464b37ba6188c4783"
+  },
+  "validation": {
+    "sharedDoorAnchor": true,
+    "stairWholeWalkCycle": true,
+    "stairJoinHasZeroPauseFrames": true,
+    "firstClimbFrameAdvances": true,
+    "liftWholeStrideClosure": true,
+    "approvedPixelsChanged": false,
+    "runtimeChanged": false,
+    "approvalChanged": false
+  }
+}

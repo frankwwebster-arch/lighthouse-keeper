@@ -1,0 +1,58 @@
+{
+  "schema": "lighthouse-keeper/circulation-entry-alignment@1",
+  "status": "draft-construction-choreography-awaiting-review",
+  "units": {
+    "kuPerLp": 8,
+    "stepLp": 10.5,
+    "fullStrideLp": 21
+  },
+  "sharedGeometry": {
+    "circulationCoreWidthLp": 105,
+    "transferDoorCentreLp": 115.5,
+    "floorYLp": 70,
+    "landingRootMarginLp": 10.5
+  },
+  "stair": {
+    "baseRootLp": 94.5,
+    "doorToBaseLp": 21,
+    "doorToBaseKu": 168,
+    "walkStepIntervals": 2,
+    "fullWalkCycles": 1,
+    "visibleWalkFrames": 8,
+    "pauseFramesAtJoin": 0,
+    "firstClimbFrameAdvances": true,
+    "flightEndRootLp": 10.5,
+    "flightRunLp": 84,
+    "flightRiseLp": 60,
+    "risers": 16,
+    "treadLp": 5.25,
+    "riserLp": 3.75,
+    "direction": "bottom-right-to-top-left"
+  },
+  "lift": {
+    "thresholdRootLp": 31.5,
+    "doorToThresholdLp": 84,
+    "doorToThresholdKu": 672,
+    "walkStepIntervals": 8,
+    "fullWalkCycles": 4,
+    "openingLeftLp": 9.5,
+    "openingWidthLp": 44,
+    "buttonLp": [
+      42,
+      43.5
+    ],
+    "fixedRootPhases": [
+      "stop",
+      "right-hand button press",
+      "turn fully away",
+      "depth-only entry"
+    ],
+    "f5StopDependency": "not-drawn-not-approved"
+  },
+  "boundaries": {
+    "approvedPixelsChanged": false,
+    "runtimeGeometryChanged": false,
+    "approvalChanged": false,
+    "constructionOnly": true
+  }
+}

@@ -89,6 +89,16 @@ export default {
         permanent: false,
       },
       {
+        source: '/keeper-review/keeper-lift-entry-alignment-v1',
+        destination: '/keeper-review/keeper-lift-entry-alignment-v1/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/keeper-circulation-entry-alignment-v1',
+        destination: '/keeper-review/keeper-circulation-entry-alignment-v1/index.html',
+        permanent: false,
+      },
+      {
         source: '/keeper-review/keeper-prime-turn-front-side-v1',
         destination: '/keeper-review/keeper-prime-turn-front-side-v1/index.html',
         permanent: false,

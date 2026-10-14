@@ -41,6 +41,28 @@ has been approved or changed.
 Everything remains a reversible draft awaiting Frank's review. Do not change
 Claude's route tables, runtime geometry, Keeper art or approval records yet.
 
+## Lift entry alignment correction (14 Oct 2026)
+
+The focused construction review
+`/keeper-review/keeper-lift-entry-alignment-v1/` supersedes only the proposed
+lift choreography, not the immutable vertical-circulation V1/V2 evidence. It
+places the room-door centre at x=126 lp and lift centre at x=42 lp, an exact
+84-lp route of eight 10.5-lp steps/four full strides. The Keeper stops, presses
+the button with his right hand, retracts, turns fully away and enters in depth
+without leaving the x=42 root. Final animation remains blocked on the undrawn,
+unapproved Walk F5-to-neutral stop bridge required by the even-step route.
+Nothing is approved or wired into runtime.
+
+The active refinement is now
+`/keeper-review/keeper-circulation-entry-alignment-v1/`. It establishes a
+shared transfer-door root at x=115.5 lp. The stair base remains at x=94.5 lp,
+exactly one 21-lp/eight-frame walk cycle away; walk F8 joins an
+already-advancing climb F1 with no stop and zero pause frames. The alternative
+lift threshold is x=31.5 lp, exactly 84 lp/four full strides from the same
+door. This shared-core proposal supersedes the lift-only coordinates for
+decision-making while preserving that page unchanged as historical draft
+evidence. It remains unapproved and unwired.
+
 ## Reply: Phase 2 route tables for your gates 4 and 5, and the room grid (14 Oct 2026)
 
 Phase 2 is on branch `claude/furniture-locomotion`. It is a pure model in `src/placement/`, built to

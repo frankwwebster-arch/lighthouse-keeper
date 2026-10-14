@@ -1,0 +1,85 @@
+{
+  "schema": "lighthouse-keeper/lift-entry-alignment@1",
+  "status": "draft-construction-choreography-awaiting-review",
+  "units": {
+    "kuPerLp": 8,
+    "stepLp": 10.5,
+    "fullStrideLp": 21
+  },
+  "geometry": {
+    "roomDoorCentreLp": 126,
+    "liftThresholdCentreLp": 42,
+    "liftOpeningLeftLp": 20,
+    "liftOpeningWidthLp": 44,
+    "liftButtonLp": [
+      52.5,
+      43.5
+    ],
+    "floorYLp": 70,
+    "distanceLp": 84,
+    "distanceKu": 672,
+    "stepIntervals": 8,
+    "fullStrides": 4
+  },
+  "timeline": [
+    {
+      "start": 0,
+      "end": 31,
+      "phase": "walk from room doorway",
+      "root": "126 \u2192 52.5 lp"
+    },
+    {
+      "start": 32,
+      "end": 39,
+      "phase": "decelerate to exact lift threshold",
+      "root": "52.5 \u2192 42 lp"
+    },
+    {
+      "start": 40,
+      "end": 43,
+      "phase": "settled stop",
+      "root": "42 lp"
+    },
+    {
+      "start": 44,
+      "end": 51,
+      "phase": "right-hand button press",
+      "root": "42 lp"
+    },
+    {
+      "start": 52,
+      "end": 59,
+      "phase": "doors open and hand retracts",
+      "root": "42 lp"
+    },
+    {
+      "start": 60,
+      "end": 67,
+      "phase": "turn fully away",
+      "root": "42 lp"
+    },
+    {
+      "start": 68,
+      "end": 77,
+      "phase": "enter in depth only",
+      "root": "42 lp"
+    },
+    {
+      "start": 78,
+      "end": 85,
+      "phase": "doors close after occlusion",
+      "root": "42 lp"
+    }
+  ],
+  "artDependency": {
+    "id": "walk-f5-to-neutral-stop",
+    "status": "not-drawn-not-approved",
+    "reason": "An even eight-step route reaches the opposite walk phase; final pixels require the separate F5 stop bridge."
+  },
+  "boundaries": {
+    "changesApprovedPixels": false,
+    "changesRuntimeGeometry": false,
+    "changesApprovalRecords": false,
+    "constructionOnly": true
+  }
+}

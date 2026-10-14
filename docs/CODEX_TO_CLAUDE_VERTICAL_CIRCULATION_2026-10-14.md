@@ -69,6 +69,18 @@ The old 38-lp stair-core placeholder cannot be production geometry. A 60-lp rise
 
 One complete stair gait can use eight art frames and advance two treads: 84 ku horizontally and 60 ku vertically. Repeating it eight times closes one flight with no phase remainder. The construction preview currently samples four motion frames per individual stair contact (64 climb frames per flight); finished art timing remains open.
 
+### Door-to-stair approach correction after visual review
+
+The active shared-core review is
+`/keeper-review/keeper-circulation-entry-alignment-v1/`. It registers the
+transfer-door root at x=115.5 lp and preserves the measured bottom-right stair
+root at x=94.5 lp (105-lp core minus the 10.5-lp landing margin). Their
+difference is exactly 21 lp / 168 ku: two step intervals and one complete
+eight-frame walk cycle. The visible walk begins while the Keeper is still
+partly door-occluded. Walk F8 is followed immediately by an already-advancing
+climb F1; there is no neutral stop, idle beat or repeated-root frame. This join
+does not require the proposed F5 stop bridge.
+
 ## Straight ladder
 
 The ladder remains perfectly vertical and can continue through aligned floor openings.
@@ -84,6 +96,34 @@ The ladder remains perfectly vertical and can continue through aligned floor ope
 The review shows both required routes: continuous climbing past the landing, and climb → land → side dismount → horizontal walk to the room door. The continuous route must not reset limb phase at each storey. An exit may join the horizontal walk only after both feet are established on the landing.
 
 ## Lift
+
+### Focused lift-entry correction after visual review
+
+The later shared-core proposal
+`/keeper-review/keeper-circulation-entry-alignment-v1/` refines the preliminary
+lift-only coordinates below: use transfer door x=115.5 lp and lift threshold
+x=31.5 lp. They remain exactly 84 lp / 672 ku apart, while making the doorway
+anchor consistent with the stair route. The lift still uses a 44-lp opening,
+right-hand press, fixed horizontal action root and depth-only entry. The
+lift-only V1 page and coordinates remain historical draft evidence.
+
+Frank rejected the V1/V2 construction route's post-stop lateral movement. The
+new versioned review `/keeper-review/keeper-lift-entry-alignment-v1/` replaces
+that proposal without changing either historical page. Use these candidate
+coordinates if and only if Frank approves the focused review:
+
+- room-door centre: x=126 lp;
+- lift threshold/entry centre: x=42 lp;
+- route: 84 lp / 672 ku = eight 10.5-lp step intervals = four full strides;
+- lift clear opening: 44 lp, x=20..64 lp;
+- stop, right-hand button press, turn-away and depth entry: fixed x=42 lp;
+- entry changes depth/scale only, never horizontal root;
+- doors close only after the Keeper is inside and occluded.
+
+Because eight intervals is an even-step destination, the final route requires
+the still-undrawn Walk F5-to-neutral stop bridge from the direct-object
+locomotion plan. The construction page declares this dependency and does not
+invent substitute pixels. Runtime geometry remains unchanged pending approval.
 
 Lift stops repeat the exact 60-lp / 480-ku finished-floor pitch. The construction sequence includes:
 

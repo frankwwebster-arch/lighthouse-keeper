@@ -28,6 +28,20 @@ const ovenApproach = spawnSync('node', ['scripts/verify_keeper_object_approach_o
 })
 if (ovenApproach.error) throw ovenApproach.error
 if (ovenApproach.status !== 0) process.exit(ovenApproach.status ?? 1)
+const liftEntry = spawnSync('node', ['scripts/verify_keeper_lift_entry_alignment_v1.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (liftEntry.error) throw liftEntry.error
+if (liftEntry.status !== 0) process.exit(liftEntry.status ?? 1)
+const circulationEntry = spawnSync('node', ['scripts/verify_keeper_circulation_entry_alignment_v1.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (circulationEntry.error) throw circulationEntry.error
+if (circulationEntry.status !== 0) process.exit(circulationEntry.status ?? 1)
 const walkAwayApproval = spawnSync('node', ['scripts/verify_keeper_prime_walk_stop_turn_back_v3.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },
