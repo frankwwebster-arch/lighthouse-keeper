@@ -56,6 +56,13 @@ const ovenVisibleFloorDelivery = spawnSync('node', ['scripts/verify_keeper_objec
 })
 if (ovenVisibleFloorDelivery.error) throw ovenVisibleFloorDelivery.error
 if (ovenVisibleFloorDelivery.status !== 0) process.exit(ovenVisibleFloorDelivery.status ?? 1)
+const ovenRestrainedFloor = spawnSync('node', ['scripts/verify_keeper_object_approach_oven_v7.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (ovenRestrainedFloor.error) throw ovenRestrainedFloor.error
+if (ovenRestrainedFloor.status !== 0) process.exit(ovenRestrainedFloor.status ?? 1)
 const liftEntry = spawnSync('node', ['scripts/verify_keeper_lift_entry_alignment_v1.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },

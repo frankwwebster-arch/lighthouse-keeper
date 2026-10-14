@@ -1,0 +1,34 @@
+{
+  "schema": "lighthouse-keeper/oven-restrained-floor-placement@1",
+  "status": "draft-placement-and-perspective-awaiting-review",
+  "room": {
+    "heightLp": 56,
+    "frontFloorLipLp": 2,
+    "visibleFloorSurfaceDepthOnElevationLp": 5,
+    "rearWallFloorJunctionLpAboveStageBottom": 7,
+    "wallHeightPercent": 87.5
+  },
+  "oven": {
+    "ovenBaseLpAboveStageBottom": 7,
+    "footprintLp": [
+      30,
+      30
+    ],
+    "interactionCentreLp": 120
+  },
+  "preserved": {
+    "keeperFrameUrls": 20,
+    "routeValues": true,
+    "timing": true,
+    "perspectiveCalibration": true,
+    "interactionAnchor": true,
+    "keeperStageBottom": true
+  },
+  "boundaries": {
+    "approvedKeeperPixelsChanged": false,
+    "approvedTimingChanged": false,
+    "runtimeGridChanged": false,
+    "productionChanged": false,
+    "approvalChanged": false
+  }
+}

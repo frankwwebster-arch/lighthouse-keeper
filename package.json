@@ -58,6 +58,7 @@
     "verify:keeper-object-approach-oven-v4": "node scripts/verify_keeper_object_approach_oven_v4.ts",
     "verify:keeper-object-approach-oven-v5": "node scripts/verify_keeper_object_approach_oven_v5.ts",
     "verify:keeper-object-approach-oven-v6": "node scripts/verify_keeper_object_approach_oven_v6.ts",
+    "verify:keeper-object-approach-oven-v7": "node scripts/verify_keeper_object_approach_oven_v7.ts",
     "verify:keeper-lift-entry-alignment-v1": "node scripts/verify_keeper_lift_entry_alignment_v1.ts",
     "verify:keeper-circulation-entry-alignment-v1": "node scripts/verify_keeper_circulation_entry_alignment_v1.ts",
     "verify:keeper-timing-lab-v1": "node scripts/verify_keeper_timing_lab_v1.ts",

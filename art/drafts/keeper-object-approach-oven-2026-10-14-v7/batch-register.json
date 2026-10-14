@@ -1,0 +1,31 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-object-approach-oven-2026-10-14-v7",
+  "status": "draft-placement-and-perspective-awaiting-review",
+  "authorities": {
+    "ovenApproachV6Register": {
+      "file": "art/drafts/keeper-object-approach-oven-2026-10-14-v6/batch-register.json",
+      "sha256": "390adddc6b7fcb7eaad384df1fd717cfe90bfab3beb78c0a5fecf982b4cc736c"
+    },
+    "ovenApproachV6Page": {
+      "file": "public/keeper-review/keeper-object-approach-oven-v6/index.html",
+      "sha256": "7b3aa9d1c151a648529767e33c9139b1aa35089c7037686a7c4d8f3f4975ce97"
+    }
+  },
+  "spec": {
+    "file": "art/drafts/keeper-object-approach-oven-2026-10-14-v7/oven-restrained-floor-placement-v1.json",
+    "sha256": "bc567c14311f10f37aed5f9af5faa36a8b7faf6dd6abf56091269b8bc7b0fabb"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-object-approach-oven-v7/index.html",
+    "sha256": "d6bfafd15a9db0e8b67bbcb1e6844c21015918d1073ee666031c94429079acc2"
+  },
+  "validation": {
+    "ovenBaseEqualsRearFloorJunction": true,
+    "visibleFloorSurfaceIsExact": true,
+    "v6KeeperFramesRoutesAndPerspectivePreserved": true,
+    "approvedKeeperPixelsChanged": false,
+    "runtimeChanged": false,
+    "approvalChanged": false
+  }
+}
