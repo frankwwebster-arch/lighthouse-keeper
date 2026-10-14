@@ -1,0 +1,39 @@
+{
+  "batchId": "keeper-movement-foundation-2026-10-14-v2",
+  "status": "presentation-correction-awaiting-review",
+  "purpose": "Make the unchanged V1 root-motion and circulation decisions understandable; correct the misleading exact-game-scale label.",
+  "v1Authority": {
+    "file": "art/drafts/keeper-movement-foundation-2026-10-14-v1/batch-register.json",
+    "sha256": "89a50bc03e08091677f2d3f3bc9b4159ff4cc4d54e2c4db849e093dbe013139b"
+  },
+  "geometryAuthority": {
+    "file": "art/drafts/keeper-movement-foundation-2026-10-14-v1/geometry/keeper-vertical-circulation-v1.json",
+    "sha256": "cac4147afb0a2dded4a7ced52fdc0a659a94d88215bdf639d6c430c2bf9b2ac6"
+  },
+  "pages": {
+    "rootMotion": {
+      "file": "public/keeper-review/keeper-root-motion-gate-v2/index.html",
+      "sha256": "7b10f466ae9ffa6edaa5396405bcbaa3df0f2bada4efcac8e8f00318c2b34f1e"
+    },
+    "verticalCirculation": {
+      "file": "public/keeper-review/keeper-vertical-circulation-v2/index.html",
+      "sha256": "c7c41aeb6c49c774929d92dff00f16feefbf1ebdfdf8c630f1e1cc9c6121c688"
+    }
+  },
+  "unchanged": {
+    "rootProfiles": true,
+    "frameUrls": true,
+    "framePixels": true,
+    "timing": true,
+    "verticalGeometry": true,
+    "routes": true,
+    "production": true,
+    "approvals": true
+  },
+  "scaleLanguage": {
+    "removed": "exact game scale",
+    "replacement": "4\u00d7 authoring scale",
+    "runtimeReason": "The 1200 \u00d7 760 SVG scene responsively fits the available viewport, so CSS pixels per logical pixel are not fixed in play."
+  },
+  "rollback": "Delete only the V2 pack and the two V2 public page directories; V1 and all approved/runtime assets remain unchanged."
+}

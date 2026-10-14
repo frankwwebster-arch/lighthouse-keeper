@@ -69,8 +69,18 @@ export default {
         permanent: false,
       },
       {
+        source: '/keeper-review/keeper-root-motion-gate-v2',
+        destination: '/keeper-review/keeper-root-motion-gate-v2/index.html',
+        permanent: false,
+      },
+      {
         source: '/keeper-review/keeper-vertical-circulation-v1',
         destination: '/keeper-review/keeper-vertical-circulation-v1/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/keeper-vertical-circulation-v2',
+        destination: '/keeper-review/keeper-vertical-circulation-v2/index.html',
         permanent: false,
       },
       {

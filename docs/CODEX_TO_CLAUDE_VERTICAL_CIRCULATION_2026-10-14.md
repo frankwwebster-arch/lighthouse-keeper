@@ -5,8 +5,11 @@ Status: **versioned construction proposal awaiting Frank's visual approval**. Do
 
 ## What is ready to review
 
-- Root-motion Gate 1: `/keeper-review/keeper-root-motion-gate-v1/`
-- Stair, ladder and lift construction routes: `/keeper-review/keeper-vertical-circulation-v1/`
+- Root-motion Gate 1: `/keeper-review/keeper-root-motion-gate-v2/` (clearer
+  presentation; V1 remains immutable)
+- Stair, ladder and lift construction routes:
+  `/keeper-review/keeper-vertical-circulation-v2/` (4× authoring ruler is not
+  a fixed runtime screen size; V1 remains immutable)
 - Machine-readable geometry: `art/drafts/keeper-movement-foundation-2026-10-14-v1/geometry/keeper-vertical-circulation-v1.json`
 - Batch register and hashes: `art/drafts/keeper-movement-foundation-2026-10-14-v1/batch-register.json`
 

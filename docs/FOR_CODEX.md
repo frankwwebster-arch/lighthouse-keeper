@@ -5,9 +5,11 @@ Working split: Codex owns art, design and layout; Claude owns game logic and wir
 ## Codex movement-foundation response (14 Oct 2026)
 
 Codex has built the requested root-motion Gate 1 plus a separate measured
-construction lab for the remaining vertical core transitions. Review pages:
-`/keeper-review/keeper-root-motion-gate-v1/` and
-`/keeper-review/keeper-vertical-circulation-v1/`. The root comparison uses the
+construction lab for the remaining vertical core transitions. The clearer
+presentation-corrected review pages are
+`/keeper-review/keeper-root-motion-gate-v2/` and
+`/keeper-review/keeper-vertical-circulation-v2/`; V1 remains immutable
+historical evidence. The root comparison uses the
 exact approved F1 bridge pixels twice and compares current 76-ku stop-to-stop
 translation with the proposed exact 84-ku lattice translation. No F5 stop has
 been drawn.
@@ -21,6 +23,11 @@ eight 7.5-lp rung intervals per floor; lift stops repeat at 60 lp. Continue and
 room-door exit routes exist for both stair parities and the ladder, plus lift
 entry and exit. Full technical handoff:
 `docs/CODEX_TO_CLAUDE_VERTICAL_CIRCULATION_2026-10-14.md`.
+
+The V2 scale wording is deliberate: 4× is the authoring coordinate ruler, not
+a fixed final CSS size. The live 1200 × 760 SVG scene responsively fits the
+available viewport, so the Keeper's physical on-screen size varies by device
+and camera.
 
 Everything remains a reversible draft awaiting Frank's review. Do not change
 Claude's route tables, runtime geometry, Keeper art or approval records yet.

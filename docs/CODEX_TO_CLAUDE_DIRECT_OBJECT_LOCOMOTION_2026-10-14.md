@@ -107,7 +107,8 @@ is preferred over concentrating the additional motion late.
 
 This is not approved merely because the difference is small. It must be a new
 versioned root-motion candidate, compared against the untouched approved route
-at large inspection scale and exact game scale.
+at large inspection scale and at the documented 4× authoring scale, with the
+responsive runtime viewport distinction stated explicitly.
 
 ## The required opposite-foot stop
 
@@ -310,7 +311,7 @@ Proceed one gate at a time.
 
 1. **Root-motion comparison only.** Create a new versioned candidate that uses
    the exact approved F1 bridge pixels twice: current `2, 6, 12, 18` beside
-   proposed `3, 7, 13, 19`. Show large and exact game scale, frame stepping,
+   proposed `3, 7, 13, 19`. Show large and 4× authoring scale, frame stepping,
    ghosted foot/contact overlays and cumulative root positions. Do not alter
    the existing approval record.
 2. **Frank reviews the movement.** If the half-pixel cumulative change creates
