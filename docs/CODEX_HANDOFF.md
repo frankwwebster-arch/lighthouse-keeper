@@ -1,5 +1,11 @@
 # Lighthouse Keeper — handoff decisions
 
+> **Current cross-agent handoff:** this 8 October decision record remains useful
+> history. For current Keeper Prime authorities, Timing Lab state, next gates
+> and Claude's furniture/locomotion architecture task, read
+> [`CODEX_TO_CLAUDE_HANDOFF_2026-10-14.md`](CODEX_TO_CLAUDE_HANDOFF_2026-10-14.md)
+> first.
+
 Date: 2026-10-08
 
 This note records the decisions made in the visual-design conversation so implementation can continue without relying on chat history.

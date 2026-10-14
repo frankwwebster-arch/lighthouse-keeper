@@ -245,6 +245,10 @@ first derived-art validation.
 - Browser Drafts are local unless exported.
 - Timing Lab proposals and project defaults are also device-local unless
   exported; they do not silently update repository or runtime metadata.
+- The Timing Lab's two-column large inspection panes are too narrow to show a
+  complete translated walk → stop → turn route comfortably. Add a full-width
+  or expanded inspection mode without changing the underlying frames, root
+  motion or synchronized A/B and game-scale views.
 - The UI does not yet add/remove route segments.
 - Visual seam judgement still happens in playback; the future redraw builder
   must add deterministic pixel, anchor, silhouette and unchanged-region checks
