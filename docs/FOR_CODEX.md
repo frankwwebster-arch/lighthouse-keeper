@@ -29,6 +29,15 @@ a fixed final CSS size. The live 1200 × 760 SVG scene responsively fits the
 available viewport, so the Keeper's physical on-screen size varies by device
 and camera.
 
+The first practical context gate is
+`/keeper-review/keeper-object-approach-oven-v1/`. It places a deliberately
+opaque 30 × 30 lp oven proxy at x=120 lp in the 172 × 56 lp room. The default
+flow uses exact approved Keeper pixels with candidate-42 root motion over three
+10.5-lp intervals, then the approved fixed-root Turn V9 to the exact rear
+endpoint. A toggle shows the present approved root schedule finishing 1 lp
+short. This is still review-only: no oven art, root motion or production state
+has been approved or changed.
+
 Everything remains a reversible draft awaiting Frank's review. Do not change
 Claude's route tables, runtime geometry, Keeper art or approval records yet.
 

@@ -53,6 +53,7 @@
     "verify:keeper-prime-walk-stop-turn-back-v3": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_walk_stop_turn_back_v3.ts",
     "verify:keeper-movement-foundation-v1": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_movement_foundation_v1.ts",
     "verify:keeper-movement-foundation-v2": "node scripts/verify_keeper_movement_foundation_v2.ts",
+    "verify:keeper-object-approach-oven-v1": "node scripts/verify_keeper_object_approach_oven_v1.ts",
     "verify:keeper-timing-lab-v1": "node scripts/verify_keeper_timing_lab_v1.ts",
     "verify:keeper-fast-transition-timing-v1": "node scripts/verify_keeper_fast_transition_timing_v1.ts",
     "verify:keeper-full-face-turn-endpoints": "node scripts/verify_keeper_full_face_turn_endpoints.ts",

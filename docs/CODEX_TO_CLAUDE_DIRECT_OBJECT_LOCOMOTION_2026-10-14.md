@@ -328,6 +328,15 @@ Proceed one gate at a time.
    model. Runtime integration, Workbench Final and production promotion remain
    later and separate gates.
 
+The supplementary context page
+`/keeper-review/keeper-object-approach-oven-v1/` now shows Gate 1's candidate
+inside a 172 × 56 lp room: three odd lattice intervals to a solid 30 × 30 lp
+oven proxy, followed by the exact approved fixed-root turn to back. Its toggle
+shows the current schedule ending 1 lp short from the same origin. This makes
+the decision concrete but does **not** satisfy Gate 4: it tests only one
+rightward F1-stop route and cannot substitute for the still-undrawn F5 bridge,
+both directions or the complete one-to-four-space lattice proof.
+
 Rollback is deletion of the new versioned candidates and their new review
 pages. Approved Walk V6, stop -> walk -> stop V1, Fast Timing V1, their
 immutable review exports and all production art remain byte-identical.

@@ -84,6 +84,11 @@ export default {
         permanent: false,
       },
       {
+        source: '/keeper-review/keeper-object-approach-oven-v1',
+        destination: '/keeper-review/keeper-object-approach-oven-v1/index.html',
+        permanent: false,
+      },
+      {
         source: '/keeper-review/keeper-prime-turn-front-side-v1',
         destination: '/keeper-review/keeper-prime-turn-front-side-v1/index.html',
         permanent: false,

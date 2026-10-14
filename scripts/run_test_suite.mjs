@@ -21,6 +21,13 @@ const foundationV2 = spawnSync('node', ['scripts/verify_keeper_movement_foundati
 })
 if (foundationV2.error) throw foundationV2.error
 if (foundationV2.status !== 0) process.exit(foundationV2.status ?? 1)
+const ovenApproach = spawnSync('node', ['scripts/verify_keeper_object_approach_oven_v1.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (ovenApproach.error) throw ovenApproach.error
+if (ovenApproach.status !== 0) process.exit(ovenApproach.status ?? 1)
 const walkAwayApproval = spawnSync('node', ['scripts/verify_keeper_prime_walk_stop_turn_back_v3.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },

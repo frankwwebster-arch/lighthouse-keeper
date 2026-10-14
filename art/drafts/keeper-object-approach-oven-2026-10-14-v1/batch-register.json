@@ -1,0 +1,111 @@
+{
+  "batchId": "keeper-object-approach-oven-2026-10-14-v1",
+  "status": "draft-asset-context-root-motion-awaiting-review",
+  "purpose": "Show the proposed 42-ku bridge in a complete walk, stop and approved turn-away flow at an opaque 30-lp oven placeholder.",
+  "authorities": {
+    "approvedWalkStopTurnAway": {
+      "file": "art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v3/batch-register.json",
+      "sha256": "a90dd98aeb8d20ff0bb7e32aea419d833ecaf55866f55673785d205f3a50316c"
+    },
+    "rootMotionGateV2": {
+      "file": "art/drafts/keeper-movement-foundation-2026-10-14-v2/batch-register.json",
+      "sha256": "cd3ecddad51026af950a6d23bc0d7178483a477e4e6c05ab2441eb9fe8a64323"
+    }
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-object-approach-oven-v1/index.html",
+    "sha256": "7a5c6fcd7f0ee71aa083f73b5d9368a41889bbd20b94d172b518c4b6c35743bf"
+  },
+  "asset": {
+    "kind": "opaque-placeholder",
+    "label": "oven",
+    "footprintLp": [
+      30,
+      30
+    ],
+    "centreLp": 120,
+    "artAuthority": false
+  },
+  "route": {
+    "roomLp": [
+      172,
+      56
+    ],
+    "startRootKu": 708,
+    "targetRootKu": 960,
+    "candidateDistanceKu": 252,
+    "candidateDistanceLp": 31.5,
+    "currentDistanceKu": 244,
+    "currentMissKu": 8,
+    "currentMissLp": 1,
+    "candidateDeltasKu": [
+      3,
+      7,
+      13,
+      19,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      19,
+      13,
+      7,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "approvedDeltasKu": [
+      2,
+      6,
+      12,
+      18,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      18,
+      12,
+      6,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "frameCount": 25,
+    "finishedFacing": "back-to-camera",
+    "pixelsReusedExactly": true,
+    "preloadedBeforePlayback": true
+  },
+  "validation": {
+    "candidateClosesThreeLatticeIntervals": true,
+    "candidateEndsAtAssetAnchor": true,
+    "currentStopsOneLogicalPixelShort": true,
+    "turnRootMotionZero": true,
+    "canonicalArtworkChanged": false,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "approvalChanged": false
+  },
+  "rollback": "Delete only this V1 pack and public page. All approved art, prior reviews, Final and production remain unchanged."
+}
