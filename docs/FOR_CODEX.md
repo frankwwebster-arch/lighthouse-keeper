@@ -68,6 +68,15 @@ continuous climb: upper-landing dismount/stop/walk, descent and opposite flight
 parity are intentionally separate gates. It is a reversible unapproved draft;
 runtime geometry, Final and production remain unchanged.
 
+Frank rejected the V1 visual execution on 15 Oct 2026: the Keeper walked out
+of the right-hand transfer door backwards relative to his leftward root motion,
+and the second leg did not take a convincing alternating stair step. Keep V1
+immutable as rejected provenance. The correction is the unapproved
+`/keeper-review/keeper-prime-stair-ascent-v2/`. V2 horizontally mirrors the
+exact approved Walk V6 frames for the approach and redraws the climb against
+Walk V6's explicit F1–F4 first-leg / F5–F8 opposite-leg phase authority. It
+does not change route geometry, timing, Final or production.
+
 ## Lift entry alignment correction (14 Oct 2026)
 
 The focused construction review

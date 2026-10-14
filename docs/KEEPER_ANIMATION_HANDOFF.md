@@ -1334,6 +1334,15 @@ cycle and 672 ku × 480 ku per flight. The V1 endpoint remains in continuous
 climb; landing dismount, descent and opposite parity are not yet proposed.
 Nothing is approved, in Final or in production.
 
+Frank rejected Stair Ascent V1's visual execution on 15 Oct 2026 because the
+approach sprite faced backwards relative to its leftward root motion and the
+second climbing leg remained too static. V1 remains immutable rejected
+provenance. `/keeper-review/keeper-prime-stair-ascent-v2/` is the corrected
+unapproved candidate: its approach frames are exact horizontal mirrors of
+approved Walk V6, while its eight-pose climb is redrawn to follow Walk V6's
+first-leg F1–F4 and opposite-leg F5–F8 phase authority. The measured route,
+zero-pause join, Final and production remain unchanged.
+
 ## Review-comments workflow for a later feedback round
 
 1. Do not process another review export until the beard evidence gate is

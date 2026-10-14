@@ -84,6 +84,13 @@ const stairAscent = spawnSync('node', ['scripts/verify_keeper_prime_stair_ascent
 })
 if (stairAscent.error) throw stairAscent.error
 if (stairAscent.status !== 0) process.exit(stairAscent.status ?? 1)
+const stairAscentV2 = spawnSync('node', ['scripts/verify_keeper_prime_stair_ascent_v2.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (stairAscentV2.error) throw stairAscentV2.error
+if (stairAscentV2.status !== 0) process.exit(stairAscentV2.status ?? 1)
 const walkAwayApproval = spawnSync('node', ['scripts/verify_keeper_prime_walk_stop_turn_back_v3.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },

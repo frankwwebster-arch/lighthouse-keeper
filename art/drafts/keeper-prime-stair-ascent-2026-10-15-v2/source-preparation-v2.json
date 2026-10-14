@@ -1,0 +1,242 @@
+{
+  "schema": "lighthouse-keeper/stair-ascent-source-preparation@2",
+  "backgroundRemoval": {
+    "method": "edge-connected local-colour flood",
+    "maximumNeighbourRgbDistance": 12,
+    "transparentSeedMaximumAlpha": 63,
+    "removedPixels": 80653,
+    "sourcePixels": 1572864
+  },
+  "sourceCell": [
+    384,
+    512
+  ],
+  "targetCell": [
+    256,
+    320
+  ],
+  "sharedScale": 0.6365591397849463,
+  "headTopY": 18,
+  "directionCorrection": "Approach frames are exact horizontal mirrors of approved Walk V6 right-facing pixels.",
+  "alternatingLegAuthority": "Approved Walk V6 F1-F8 phase order used as the redraw guide.",
+  "frames": [
+    {
+      "frame": 1,
+      "sourceBounds": [
+        44,
+        39,
+        337,
+        491
+      ],
+      "registeredBounds": [
+        35,
+        18,
+        222,
+        306
+      ],
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-right/keeper_prime_stair-ascent-right_f1.png",
+      "rightSha256": "49b5d81c6dc7d52aa76f6431e4265808a446d397dab9a02da0ee6ce24d166854",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-left/keeper_prime_stair-ascent-left_f1.png",
+      "leftSha256": "1aef25985a201909ec753dd18911a53e8ba72ede6d677b4bf2a522a1040e32a9",
+      "edgeAlphaPixels": 0
+    },
+    {
+      "frame": 2,
+      "sourceBounds": [
+        75,
+        31,
+        336,
+        489
+      ],
+      "registeredBounds": [
+        45,
+        18,
+        211,
+        310
+      ],
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-right/keeper_prime_stair-ascent-right_f2.png",
+      "rightSha256": "66f457e6116e4ec24b0ba1c8a7c49103d6f612029a6e53a4e5aaaf12c8973c87",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-left/keeper_prime_stair-ascent-left_f2.png",
+      "leftSha256": "f08a55d1d581bb7722683c6ef2cb0a294fa86ce4e542aeb37e6fde548ea9abaa",
+      "edgeAlphaPixels": 0
+    },
+    {
+      "frame": 3,
+      "sourceBounds": [
+        49,
+        30,
+        323,
+        491
+      ],
+      "registeredBounds": [
+        41,
+        18,
+        215,
+        311
+      ],
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-right/keeper_prime_stair-ascent-right_f3.png",
+      "rightSha256": "dfdccfb6fef9d386778383194407cf1849f5a6f0385315a6d0afd00c5cd4d369",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-left/keeper_prime_stair-ascent-left_f3.png",
+      "leftSha256": "aeb65f677c46fe6e3b5040713e3a538343e5e191d4f47eab93d2deef71378e63",
+      "edgeAlphaPixels": 0
+    },
+    {
+      "frame": 4,
+      "sourceBounds": [
+        71,
+        31,
+        366,
+        492
+      ],
+      "registeredBounds": [
+        34,
+        18,
+        222,
+        311
+      ],
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-right/keeper_prime_stair-ascent-right_f4.png",
+      "rightSha256": "c0242ae488446b9b9a1c5fde331e69df97efd8c238c23b4402b9cfe9fec11e77",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-left/keeper_prime_stair-ascent-left_f4.png",
+      "leftSha256": "d68b317068b622f74b3675dc4d204c5e728d4c853631057df01b0a0a9017f96f",
+      "edgeAlphaPixels": 0
+    },
+    {
+      "frame": 5,
+      "sourceBounds": [
+        47,
+        21,
+        354,
+        483
+      ],
+      "registeredBounds": [
+        31,
+        18,
+        226,
+        312
+      ],
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-right/keeper_prime_stair-ascent-right_f5.png",
+      "rightSha256": "f5954d91df9508213e3aca61c7c00e799ce592f293a5e63ca95ae6ab4adc4871",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-left/keeper_prime_stair-ascent-left_f5.png",
+      "leftSha256": "e98131b459bb312b5196021d839e256e01477f47e10987a8d828cbfd236b1674",
+      "edgeAlphaPixels": 0
+    },
+    {
+      "frame": 6,
+      "sourceBounds": [
+        66,
+        21,
+        349,
+        480
+      ],
+      "registeredBounds": [
+        38,
+        18,
+        218,
+        310
+      ],
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-right/keeper_prime_stair-ascent-right_f6.png",
+      "rightSha256": "d1a7c43c7598ead48564477bd0adbfef759b0b0dcda4e246bf6430906e3c150c",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-left/keeper_prime_stair-ascent-left_f6.png",
+      "leftSha256": "3115ef0c113699319ef66d4a0a60f8ab06bf58f4247d402f0c41e59c362aeecb",
+      "edgeAlphaPixels": 0
+    },
+    {
+      "frame": 7,
+      "sourceBounds": [
+        61,
+        21,
+        340,
+        486
+      ],
+      "registeredBounds": [
+        39,
+        18,
+        217,
+        314
+      ],
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-right/keeper_prime_stair-ascent-right_f7.png",
+      "rightSha256": "968f3be99100d8e521c57dbce9a45980ad082d88bd15b8e35d8c3070ed841011",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-left/keeper_prime_stair-ascent-left_f7.png",
+      "leftSha256": "82e7740e9db3201cc9abacd9514898cee15924a59078ade9602930331ba01c4f",
+      "edgeAlphaPixels": 0
+    },
+    {
+      "frame": 8,
+      "sourceBounds": [
+        64,
+        21,
+        366,
+        484
+      ],
+      "registeredBounds": [
+        32,
+        18,
+        224,
+        313
+      ],
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-right/keeper_prime_stair-ascent-right_f8.png",
+      "rightSha256": "8b4d8d30559fa841f75d219395d5886e296fd4a515b6d4d54a5922936a61c866",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/frames-left/keeper_prime_stair-ascent-left_f8.png",
+      "leftSha256": "56630ccfe7f60581384871eac161a9a794814a03537d61e5e1f2c6710713116a",
+      "edgeAlphaPixels": 0
+    }
+  ],
+  "walkFrames": [
+    {
+      "frame": 1,
+      "rightAuthority": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+      "rightSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/approved-walk-left/keeper_prime_walk-left_f1.png",
+      "leftSha256": "2c8b806099331b30a6f05158614ec7f39a958b1439d5c126085c1e667a30af83"
+    },
+    {
+      "frame": 2,
+      "rightAuthority": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f2.png",
+      "rightSha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/approved-walk-left/keeper_prime_walk-left_f2.png",
+      "leftSha256": "f5a26dc9bd3986417c55eb0bf3f24612fdc745b5fb536e905f90ef67114ff6d1"
+    },
+    {
+      "frame": 3,
+      "rightAuthority": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f3.png",
+      "rightSha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/approved-walk-left/keeper_prime_walk-left_f3.png",
+      "leftSha256": "03ca95b46906ca72f618a8547b3586ffe821266191db6554a290dc5e3053c9fb"
+    },
+    {
+      "frame": 4,
+      "rightAuthority": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f4.png",
+      "rightSha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/approved-walk-left/keeper_prime_walk-left_f4.png",
+      "leftSha256": "cfc475297731d5aa72881c40655a7bbccf643d52ec64f25da3e273c083dd6d21"
+    },
+    {
+      "frame": 5,
+      "rightAuthority": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f5.png",
+      "rightSha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/approved-walk-left/keeper_prime_walk-left_f5.png",
+      "leftSha256": "b88530f5950b8fd82b9adbb95087ed2416e697b3c37e100697d42e87e24040da"
+    },
+    {
+      "frame": 6,
+      "rightAuthority": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f6.png",
+      "rightSha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/approved-walk-left/keeper_prime_walk-left_f6.png",
+      "leftSha256": "bbb2fa7817442ff023f86f2c4824a82ba47af405dab1b56ed1470e3f1cc3548a"
+    },
+    {
+      "frame": 7,
+      "rightAuthority": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f7.png",
+      "rightSha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/approved-walk-left/keeper_prime_walk-left_f7.png",
+      "leftSha256": "2e0bc904c3dc9959a8b68daf4636b3758c237aca13f850ae86ba4019d5ff831d"
+    },
+    {
+      "frame": 8,
+      "rightAuthority": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f8.png",
+      "rightSha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/drafts/approved-walk-left/keeper_prime_walk-left_f8.png",
+      "leftSha256": "23bcfc5d3a570fff388e531e063b4d35aa1ae8ecde36211a740bfbc933dfa274"
+    }
+  ]
+}

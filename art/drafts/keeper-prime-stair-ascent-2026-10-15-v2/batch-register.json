@@ -1,0 +1,97 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-stair-ascent-2026-10-15-v2",
+  "status": "draft-v2-forward-exit-alternating-leg-climb-awaiting-review",
+  "authorities": {
+    "v1": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-14-v1/batch-register.json",
+      "sha256": "9ba659b8b34e37da4b4051b5d3b3202aea93ed0b90f84735e10abff760802f58"
+    },
+    "geometry": {
+      "file": "art/drafts/keeper-movement-foundation-2026-10-14-v1/geometry/keeper-vertical-circulation-v1.json",
+      "sha256": "cac4147afb0a2dded4a7ced52fdc0a659a94d88215bdf639d6c430c2bf9b2ac6"
+    },
+    "circulationEntry": {
+      "file": "art/drafts/keeper-circulation-entry-alignment-2026-10-14-v1/circulation-entry-alignment-v1.json",
+      "sha256": "682a048570d84d6fefe72241ebb0bb2b2e546f77ecc027302b34ec66ec50bf26"
+    },
+    "approvedWalk": {
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v7/batch-register.json",
+      "sha256": "ad788fb923009c6dd97840d3c4ae91c6e8084ef699ab6637bb2738b9532cb342"
+    },
+    "sourcePreparation": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/source-preparation-v2.json",
+      "sha256": "fa128d4549ea6dfcc7a8f96a80d9e74621e81ac349f83a5736b23d0f6d1bfa0f"
+    }
+  },
+  "generation": {
+    "mode": "built-in-image-generation-guided-by-approved-walk-phase-authority-plus-deterministic-isolation",
+    "selectedSource": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/sources/keeper-prime-stair-ascent-v2-generated.png",
+      "sha256": "33a3bf9907c49800d9d5310767654322dc3a1c3819a466c31ee713ec09e46895"
+    },
+    "rejected": [
+      {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/sources/rejected-four-pose-complement-study.png",
+        "sha256": "a7f290ef5801a1aec599159de1312a4155a999563f65290433521f42a431e764",
+        "reason": "same-leg repetition or diagnostic study; retained as rejected provenance"
+      },
+      {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/sources/rejected-four-pose-left-leg-study.png",
+        "sha256": "0b1aee1b06090d165c1d56bdfcaf087e89c535daaa8db0e2486301f49ce0e000",
+        "reason": "same-leg repetition or diagnostic study; retained as rejected provenance"
+      },
+      {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/sources/rejected-same-leg-v2-attempt-1.png",
+        "sha256": "0914a2e1d31de3a3ad4757f6bc73e9432136669a1da0bdd4fb7a6219156b5292",
+        "reason": "same-leg repetition or diagnostic study; retained as rejected provenance"
+      },
+      {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/sources/rejected-same-leg-v2-attempt-2.png",
+        "sha256": "9d4572ccb5662552d02386458095d2632d57e8362ec2b9bd7c0413ff30584cb8",
+        "reason": "same-leg repetition or diagnostic study; retained as rejected provenance"
+      }
+    ]
+  },
+  "spec": {
+    "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v2/keeper-prime-stair-ascent-v2.json",
+    "sha256": "e4d819bc4b7868a2e991cf1357c293bdc822d4540d2aa92b3c5efe9b736b69df"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-stair-ascent-v2/index.html",
+    "sha256": "6b0e931ff45814bece8f055d0d76883b1261949b0dbc24d8dc5438b421fc0ff2"
+  },
+  "frameUrls": [
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/walk-left-f1-2c8b806099331b30.png",
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/walk-left-f2-f5a26dc9bd398641.png",
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/walk-left-f3-03ca95b46906ca72.png",
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/walk-left-f4-cfc475297731d5aa.png",
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/walk-left-f5-b88530f5950b8fd8.png",
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/walk-left-f6-bbb2fa7817442ff0.png",
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/walk-left-f7-2e0bc904c3dc9959.png",
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/walk-left-f8-23bcfc5d3a570fff.png",
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/stair-left-f1-1aef25985a201909.png",
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/stair-left-f2-f08a55d1d581bb77.png",
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/stair-left-f3-aeb65f677c46fe6e.png",
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/stair-left-f4-d68b317068b622f7.png",
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/stair-left-f5-e98131b459bb312b.png",
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/stair-left-f6-3115ef0c11369931.png",
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/stair-left-f7-82e7740e9db3201c.png",
+    "/keeper-review/keeper-prime-stair-ascent-v2/assets/stair-left-f8-56630ccfe7f60581.png"
+  ],
+  "validation": {
+    "spriteFacesRootMotion": true,
+    "approvedWalkMirroredOnly": true,
+    "oppositeLegHalfCyclesDeclared": true,
+    "walkClosesAtBase": true,
+    "firstClimbFrameAdvances": true,
+    "pauseFramesAtJoin": 0,
+    "climbCycleCloses84x60Ku": true,
+    "flightCloses672x480Ku": true,
+    "v1Changed": false,
+    "approvedWalkChanged": false,
+    "runtimeChanged": false,
+    "finalChanged": false,
+    "productionChanged": false
+  }
+}

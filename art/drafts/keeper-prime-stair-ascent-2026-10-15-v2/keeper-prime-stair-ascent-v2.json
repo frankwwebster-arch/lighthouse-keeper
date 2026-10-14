@@ -1,0 +1,51 @@
+{
+  "schema": "lighthouse-keeper/prime-stair-ascent@2",
+  "status": "draft-v2-forward-exit-alternating-leg-climb-awaiting-review",
+  "supersedesForReviewOnly": "keeper-prime-stair-ascent-2026-10-14-v1",
+  "corrections": {
+    "doorExit": "Exact approved Walk V6 frames horizontally mirrored so sprite faces the leftward root motion.",
+    "climb": "Redrawn against approved Walk V6 F1-F8 phase authority: first-leg F1-F4, opposite-leg F5-F8."
+  },
+  "route": {
+    "transferDoorRootLp": 115.5,
+    "stairBaseRootLp": 94.5,
+    "walkDistanceLp": 21,
+    "pauseFramesAtJoin": 0,
+    "climbCycles": 8,
+    "climbFrames": 64,
+    "cycleRunKu": 84,
+    "cycleRiseKu": 60,
+    "flightRunKu": 672,
+    "flightRiseKu": 480,
+    "upperLandingRootLp": 10.5
+  },
+  "climbRootDeltasKu": {
+    "xTowardLeft": [
+      6,
+      10,
+      13,
+      13,
+      13,
+      13,
+      10,
+      6
+    ],
+    "yUp": [
+      3,
+      7,
+      10,
+      10,
+      3,
+      7,
+      10,
+      10
+    ]
+  },
+  "unchanged": {
+    "v1": true,
+    "approvedWalkSourcePixels": true,
+    "runtimeGeometry": true,
+    "finalLane": true,
+    "production": true
+  }
+}
