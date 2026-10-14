@@ -144,9 +144,9 @@ explicit release.
 Keeper review media is now stored once outside `public/`, without deleting any
 evidence or changing immutable review-page bytes.
 
-**Measured result:** 574 historical review-media paths collapse to 246 unique
-objects. The paths represent 72.42 MiB; the unique store is 44.71 MiB.
-The real `public/` deployment payload is now 43.01 MiB rather than roughly
+**Measured result:** 579 historical review-media paths collapse to 246 unique
+objects. The paths represent 72.71 MiB; the unique store is 44.71 MiB.
+The real `public/` deployment payload is now 43.04 MiB rather than roughly
 115 MiB. The archive itself stays in Git but is outside `public/`, so Vercel
 does not copy those objects into every deployment.
 
@@ -155,7 +155,7 @@ does not copy those objects into every deployment.
 1. **One store, keyed by hash.** Every review asset is stored as
    `review-archive/objects/<sha256[0:2]>/<sha256>.<ext>`. The store stays in git,
    so all evidence remains versioned and reversible.
-2. **One manifest per review set.** The 37 files under
+2. **One manifest per review set.** The 38 files under
    `review-archive/sets/` map every legacy review path to its full object hash,
    byte length, repository object and external URL. `review-archive/index.json`
    is the deterministic route index and records aggregate savings.

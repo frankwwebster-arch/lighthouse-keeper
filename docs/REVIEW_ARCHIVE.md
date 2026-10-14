@@ -56,6 +56,6 @@ proposal.
 - historical sprite/reviewer verifiers still read the exact archived bytes;
 - known routes resolve and unknown archive paths fail closed.
 
-After the first preload-safe route, 574 legacy paths resolve to the same 246
-unique objects. They represent 72.42 MiB of logical review media while the
-unique store remains 44.71 MiB; `public/` remains 43.01 MiB.
+After the movement-foundation review batch, 579 legacy paths resolve to the
+same 246 unique objects. They represent 72.71 MiB of logical review media while
+the unique store remains 44.71 MiB; `public/` is 43.04 MiB.

@@ -64,6 +64,16 @@ export default {
         permanent: false,
       },
       {
+        source: '/keeper-review/keeper-root-motion-gate-v1',
+        destination: '/keeper-review/keeper-root-motion-gate-v1/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/keeper-vertical-circulation-v1',
+        destination: '/keeper-review/keeper-vertical-circulation-v1/index.html',
+        permanent: false,
+      },
+      {
         source: '/keeper-review/keeper-prime-turn-front-side-v1',
         destination: '/keeper-review/keeper-prime-turn-front-side-v1/index.html',
         permanent: false,

@@ -9,6 +9,10 @@
 > object-to-object movement is required, approved image bytes stay frozen, and
 > the 42 ku bridge schedule plus opposite-foot stop must pass separate
 > versioned visual gates before any implementation or promotion.
+> The next coupled geometry handoff is
+> [`docs/CODEX_TO_CLAUDE_VERTICAL_CIRCULATION_2026-10-14.md`](docs/CODEX_TO_CLAUDE_VERTICAL_CIRCULATION_2026-10-14.md): it proposes a 60-lp finished-floor pitch,
+> measured alternating stairs, a straight ladder and lift entry/exit. All are
+> construction drafts awaiting Frank's visual approval; runtime remains unchanged.
 
 Date: 2026-10-08
 Status: the first three runtime floor modules and three-state rendering contract are implemented. The first production Pixel batch now supplies two shell bands and three room plates; all previously supplied PNGs remain **prototype/concept art**, not production sprites.

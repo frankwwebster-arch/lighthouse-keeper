@@ -4,6 +4,16 @@ _Agreed by Frank on 14 October 2026. This is the target geometry for Claude's
 drag-and-drop and snap-to-grid work. It does not itself resize the current
 110 × 56 studio or replace the historical 110 × 35/105 × 35 art._
 
+> **Stair-core correction under review (14 October):** the `38 lp` stair core
+> in the original diagram was a spatial placeholder, not a tread calculation.
+> A new measured construction proposal uses a separate `105 lp` core, sixteen
+> `3.75 lp` risers and sixteen `5.25 lp` advances over a `60 lp` finished-floor
+> pitch. It is reviewable at `/keeper-review/keeper-vertical-circulation-v1/`
+> and specified in
+> `docs/CODEX_TO_CLAUDE_VERTICAL_CIRCULATION_2026-10-14.md`. The agreed
+> `172 × 56` room interior is unchanged. Do not implement either stair width
+> until Frank approves the new circulation geometry.
+
 ![Dimensioned 172 × 56 room grid](keeper-room-grid-172-v1.svg)
 
 ## Authoritative dimensions
@@ -15,7 +25,7 @@ half-logical-pixel value needs to be stored as a float.
 | --- | ---: | ---: |
 | Initial standard room width | 172 | 1,376 |
 | Standard room height | 56 | 448 |
-| Stair core beside room | 38 | 304 |
+| Historical stair-core placeholder (not implementation-ready) | 38 | 304 |
 | Doorway exclusion from the stair-side wall | 46 | 368 |
 | Usable furnishing/interaction field | 126 | 1,008 |
 | Locomotion/snap pitch | 10.5 | 84 |
@@ -24,9 +34,12 @@ half-logical-pixel value needs to be stored as a float.
 | Expansion I width | 193 | 1,544 |
 | Expansion II width | 214 | 1,712 |
 
-The room coordinate origin is the stair-side inside wall. The stair occupies
-`x = -304..0 ku`; the room occupies `x = 0..1376 ku`. The first `368 ku` of
-the room is the doorway exclusion. No furniture footprint may intrude into it.
+The room coordinate origin is the stair-side inside wall. The room occupies
+`x = 0..1376 ku`. The original sketch placed a provisional stair core at
+`x = -304..0 ku`; the measured candidate would instead occupy
+`x = -840..0 ku`. This negative-side correction does not move any room or
+furniture coordinate. The first `368 ku` of the room is the doorway exclusion.
+No furniture footprint may intrude into it.
 
 The initial usable field is therefore `x = 368..1376 ku`. It contains twelve
 84-ku planning intervals. The far boundary is a wall, not automatically a

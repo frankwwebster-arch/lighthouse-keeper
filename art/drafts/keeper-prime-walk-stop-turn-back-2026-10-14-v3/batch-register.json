@@ -1,0 +1,52 @@
+{
+  "batchId": "keeper-prime-walk-stop-turn-back-2026-10-14-v3",
+  "status": "approved-walk-stop-turn-back-v2-route-authority",
+  "purpose": "Preserve Frank's approval of exact preload-safe walk to stop to turn fully away V2 without changing artwork, timing, Final, production sprites or runtime manifest.",
+  "approval": {
+    "approvedBy": "Frank",
+    "approvedOn": "2026-10-14",
+    "wording": "good now working fine. approved.",
+    "scope": "Exact 32-frame Keeper Prime walk to stop to turn fully away V2 route: two Walk V6 cycles, approved deceleration, zero neutral settle, exact Turn V9 frames, Fast Timing V1, exact rear endpoint and preload-safe playback."
+  },
+  "approvedCandidate": {
+    "register": "art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v2/batch-register.json",
+    "registerSha256": "580c4fc487cba412ebe478e6ab5e71dfbc82496e7137dda1963931a99e7611b9",
+    "reviewPage": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/index.html",
+    "reviewPageSha256": "8d4b02ef2865d29a73460ef0395611f1f3c26986aeefa2dad080f6840127248b",
+    "joinStrip": "art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v2/drafts/keeper_prime_walk-contact_to_stop_to_back_f13.png",
+    "joinStripSha256": "b12e22215f8cdb68e32197a2da470737a556ed6990645b864fa9d9be12ea2eaa",
+    "joinSidecar": "art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v2/drafts/keeper_prime_walk-contact_to_stop_to_back_f13.json",
+    "joinSidecarSha256": "0ef33fb465b7412722d44a550ffeedcb31abfe7b710fcef9539724fe5e2fac73",
+    "frames": 32,
+    "durationMs": 3058.3333333333335,
+    "distanceHighResolutionPixels": 374,
+    "walkCycles": 2,
+    "decelerationDeltas": [18, 12, 6, 2],
+    "neutralSettleFrames": 0,
+    "turnFramesAfterSharedEndpoint": 8,
+    "rearHoldFrames": 4,
+    "preloadedBeforePlayback": true
+  },
+  "unchangedAuthorities": {
+    "runtimeManifest": "public/sprites/manifest.json",
+    "runtimeManifestSha256": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
+    "workbenchCatalogue": "data/keeper_animation_workbench.json",
+    "workbenchCatalogueSha256": "6c349a70f591cba21016cf9a7a49424b971d8aed895504ba775ebd158017c658"
+  },
+  "validation": {
+    "candidateRegisterPinned": true,
+    "candidatePagePinned": true,
+    "joinStripAndSidecarPinned": true,
+    "artPixelsChangedByV3": false,
+    "timingChangedByV3": false,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "workbenchFinalChanged": false
+  },
+  "approvalBoundary": {
+    "compositeRouteApproved": true,
+    "finalLaneEntryAllowed": false,
+    "productionPromotionAllowed": false
+  },
+  "rollback": "Delete only art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v3; V2 artwork, review media, Final and production remain unchanged."
+}

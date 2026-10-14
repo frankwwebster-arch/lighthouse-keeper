@@ -1295,7 +1295,7 @@ those remain independently timed so entertaining actions can be savoured.
 Artwork pixels, frame order, root motion and endpoints remain exact. The
 profile does not enter Workbench Final or promote production sprites.
 
-The next one-at-a-time composite is walk → stop → turn fully away V2 at
+The next one-at-a-time composite was walk → stop → turn fully away V2 at
 `art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v2/`, prepared for
 review at `/keeper-review/keeper-prime-walk-stop-turn-back-v2/`. It introduces
 no new drawing and is pixel/timing-identical to V1. V2 uses fresh versioned
@@ -1312,9 +1312,18 @@ but runtime enters at frame 2 after the loop. Deterministic verification pins
 all four approval authorities, per-frame timing and displacement, exact source
 and public hashes, transparent gutters, strip/sidecar order, aligned side-entry
 alpha bounds, the exact rear endpoint and unchanged Workbench/production
-hashes. Its large and exact-game-scale travel lanes are full width. This route
-is awaiting visual approval and has not entered Final or production. V1 stays
+hashes. Its large and exact-game-scale travel lanes are full width. Frank
+approved that exact preload-safe route on 14 October 2026 with “good now
+working fine. approved.” The approval-only V3 record is
+`art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v3/`. It is now a core
+transition authority but has not entered Final or production. V1 stays
 unchanged as historical provenance.
+
+The active review batch is now the movement foundation documented in
+`docs/CODEX_TO_CLAUDE_VERTICAL_CIRCULATION_2026-10-14.md`: exact-pixel root
+Gate 1 plus measured construction motion for alternating stairs, a straight
+ladder and lift entry/exit. Its 60-lp finished-floor pitch and 105-lp stair core
+are proposals awaiting Frank's review, not runtime geometry.
 
 ## Review-comments workflow for a later feedback round
 

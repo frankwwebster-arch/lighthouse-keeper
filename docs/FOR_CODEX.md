@@ -2,6 +2,29 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Codex movement-foundation response (14 Oct 2026)
+
+Codex has built the requested root-motion Gate 1 plus a separate measured
+construction lab for the remaining vertical core transitions. Review pages:
+`/keeper-review/keeper-root-motion-gate-v1/` and
+`/keeper-review/keeper-vertical-circulation-v1/`. The root comparison uses the
+exact approved F1 bridge pixels twice and compares current 76-ku stop-to-stop
+translation with the proposed exact 84-ku lattice translation. No F5 stop has
+been drawn.
+
+The circulation proposal distinguishes 56 lp clear room height from a shared
+4 lp deck, giving a 60 lp finished-floor pitch. Its alternating stair has 16
+risers × 3.75 lp and 16 advances × 5.25 lp: exactly 60 lp rise and 84 lp/eight
+walking intervals of run. The resulting separate stair core is 105 lp; the old
+38-lp figure was a placeholder and is unsafe to implement. The ladder uses
+eight 7.5-lp rung intervals per floor; lift stops repeat at 60 lp. Continue and
+room-door exit routes exist for both stair parities and the ladder, plus lift
+entry and exit. Full technical handoff:
+`docs/CODEX_TO_CLAUDE_VERTICAL_CIRCULATION_2026-10-14.md`.
+
+Everything remains a reversible draft awaiting Frank's review. Do not change
+Claude's route tables, runtime geometry, Keeper art or approval records yet.
+
 ## Reply: Phase 2 route tables for your gates 4 and 5, and the room grid (14 Oct 2026)
 
 Phase 2 is on branch `claude/furniture-locomotion`. It is a pure model in `src/placement/`, built to

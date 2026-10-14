@@ -1,0 +1,123 @@
+{
+  "batchId": "keeper-movement-foundation-2026-10-14-v1",
+  "status": "draft-root-motion-and-vertical-circulation-awaiting-review",
+  "purpose": "Resolve the horizontal 84-ku root-motion gate and measure ladder, alternating-flight stair and lift transitions before any finished-art animation is drawn.",
+  "authorities": {
+    "approvedStopWalkStop": {
+      "file": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v2/batch-register.json",
+      "sha256": "3cbdc5ea7f7467ea18a353d5abc8581c1d6afd088316570c629241612bc2542c"
+    },
+    "approvedConstructionRig": {
+      "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/rig/keeper-prime-rig-v1.json",
+      "sha256": "5786df6eb654471f81dda161fc909a5768abb2d96aade24fb84448beb7cdf765"
+    },
+    "roomGrid172": {
+      "file": "docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md",
+      "sha256": "6bfd382ba7a5776d06d9f93609a3992ca55a0b163cd994dca080f708255a5738"
+    }
+  },
+  "publishedAssets": [
+    {
+      "key": "neutral",
+      "source": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+      "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "public": "public/keeper-review/keeper-root-motion-gate-v1/assets/neutral-a172a8a01a387a21.png",
+      "publicSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "byteIdentical": true
+    },
+    {
+      "key": "bridge15",
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f2.png",
+      "sourceSha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "public": "public/keeper-review/keeper-root-motion-gate-v1/assets/bridge15-e54546ba14b4e5f7.png",
+      "publicSha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "byteIdentical": true
+    },
+    {
+      "key": "bridge50",
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f3.png",
+      "sourceSha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "public": "public/keeper-review/keeper-root-motion-gate-v1/assets/bridge50-0169b3642905389d.png",
+      "publicSha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "byteIdentical": true
+    },
+    {
+      "key": "bridge75",
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f4.png",
+      "sourceSha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "public": "public/keeper-review/keeper-root-motion-gate-v1/assets/bridge75-9f4192beb8fecbc8.png",
+      "publicSha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "byteIdentical": true
+    },
+    {
+      "key": "walkF1",
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+      "sourceSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "public": "public/keeper-review/keeper-root-motion-gate-v1/assets/walkF1-0e80ea65610452c9.png",
+      "publicSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "byteIdentical": true
+    }
+  ],
+  "rootMotionGate": {
+    "page": "public/keeper-review/keeper-root-motion-gate-v1/index.html",
+    "pageSha256": "ebcb0ff6c739084f7ef451cdc753a488897a98373c26b68f3a4ca250483a6991",
+    "approvedDeltasKu": [
+      2,
+      6,
+      12,
+      18,
+      18,
+      12,
+      6,
+      2
+    ],
+    "approvedDistanceKu": 76,
+    "candidateDeltasKu": [
+      3,
+      7,
+      13,
+      19,
+      19,
+      13,
+      7,
+      3
+    ],
+    "candidateDistanceKu": 84,
+    "exactApprovedPixels": true,
+    "preloadedBeforePlayback": true
+  },
+  "verticalCirculation": {
+    "page": "public/keeper-review/keeper-vertical-circulation-v1/index.html",
+    "pageSha256": "75d09f18030d281ca480c7a5a98b8fee38824a1a3fccbc9560a16403f616751c",
+    "geometry": "art/drafts/keeper-movement-foundation-2026-10-14-v1/geometry/keeper-vertical-circulation-v1.json",
+    "geometrySha256": "cac4147afb0a2dded4a7ced52fdc0a659a94d88215bdf639d6c430c2bf9b2ac6"
+  },
+  "routes": [
+    "stairs-continue",
+    "stairs-exit-far",
+    "stairs-exit-near",
+    "ladder-continue",
+    "ladder-exit",
+    "lift-enter",
+    "lift-exit"
+  ],
+  "validation": {
+    "stairRiseMatchesFinishedFloorPitch": true,
+    "stairRunMatchesEightWalkIntervals": true,
+    "treadAndRiserIntegralKu": true,
+    "ladderRiseMatchesFinishedFloorPitch": true,
+    "liftPitchMatchesFinishedFloorPitch": true,
+    "canonicalArtworkChanged": false,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "workbenchFinalChanged": false
+  },
+  "approvalBoundary": {
+    "geometryApproved": false,
+    "rootMotionCandidateApproved": false,
+    "constructionMotionApproved": false,
+    "finishedArtworkApproved": false,
+    "productionPromotionAllowed": false
+  },
+  "rollback": "Delete only art/drafts/keeper-movement-foundation-2026-10-14-v1, public/keeper-review/keeper-root-motion-gate-v1 and public/keeper-review/keeper-vertical-circulation-v1; approved art, Final and runtime remain unchanged."
+}

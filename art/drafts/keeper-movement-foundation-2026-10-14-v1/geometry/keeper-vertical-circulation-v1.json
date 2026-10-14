@@ -1,0 +1,52 @@
+{
+  "units": {
+    "kuPerLogicalPixel": 8,
+    "walkingPitchKu": 84,
+    "walkingPitchLogicalPixels": 10.5
+  },
+  "floor": {
+    "clearHeightLogicalPixels": 56,
+    "sharedDeckLogicalPixels": 4,
+    "finishedFloorPitchLogicalPixels": 60,
+    "finishedFloorPitchKu": 480
+  },
+  "stair": {
+    "coreWidthLogicalPixels": 105,
+    "coreWidthKu": 840,
+    "landingRootMarginLogicalPixels": 10.5,
+    "flightRunLogicalPixels": 84,
+    "flightRunKu": 672,
+    "flightWalkingIntervals": 8,
+    "risersPerFlight": 16,
+    "riserLogicalPixels": 3.75,
+    "riserKu": 30,
+    "treadLogicalPixels": 5.25,
+    "treadKu": 42,
+    "angleDegrees": 35.54,
+    "keeperBootLengthLogicalPixels": 8,
+    "supportedBootFraction": 0.65625,
+    "directionRule": "floor parity alternates bottom-right-to-top-left and bottom-left-to-top-right"
+  },
+  "ladder": {
+    "vertical": true,
+    "rungPitchLogicalPixels": 7.5,
+    "rungPitchKu": 60,
+    "intervalsPerFloor": 8,
+    "railWidthLogicalPixels": 18,
+    "fullCyclesPerFloor": 4
+  },
+  "lift": {
+    "verticalStopPitchLogicalPixels": 60,
+    "verticalStopPitchKu": 480,
+    "doorOpeningLogicalPixels": 44,
+    "entryDepthScale": 0.78,
+    "entryRiseLogicalPixels": 6
+  },
+  "keeper": {
+    "standingHeightLogicalPixels": 38,
+    "frontWidthLogicalPixels": 19,
+    "sideWidthLogicalPixels": 13,
+    "maximumStrideWidthLogicalPixels": 24,
+    "bootLengthLogicalPixels": 8
+  }
+}
