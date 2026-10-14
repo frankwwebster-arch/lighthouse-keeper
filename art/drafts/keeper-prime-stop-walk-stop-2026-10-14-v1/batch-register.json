@@ -1,0 +1,604 @@
+{
+  "batchId": "keeper-prime-stop-walk-stop-2026-10-14-v1",
+  "status": "draft-stop-walk-stop-v1-awaiting-visual-approval",
+  "purpose": "Review an exact stop accelerating into approved Walk V6 and decelerating through the byte-reversed bridge to the identical stop.",
+  "approvedWalkAuthority": {
+    "register": "art/drafts/keeper-prime-walk-2026-10-14-v6/batch-register.json",
+    "registerSha256": "d40fc2b524db23854f0bfd7cb75f3e830f51db50a895f2046954690456a82d66",
+    "approvalRecord": "art/drafts/keeper-prime-walk-2026-10-14-v7/batch-register.json",
+    "approvalRecordSha256": "ad788fb923009c6dd97840d3c4ae91c6e8084ef699ab6637bb2738b9532cb342",
+    "approvalWording": "Approved",
+    "approvedOn": "2026-10-14"
+  },
+  "stopAuthority": {
+    "file": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+    "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+  },
+  "generation": {
+    "mode": "built-in image generation with exact stop and Walk V6 F1 references, followed by deterministic badge/floor registration",
+    "selectedSources": [
+      {
+        "file": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/sources/bridge-25-start.png",
+        "sha256": "f8232ffb502caba3e0a5dbd6beef1d8859ebb08a3793a27b747a8cd1b935e37e"
+      },
+      {
+        "file": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/sources/bridge-50-mid.png",
+        "sha256": "516c983897783dff0880e767f8a6fda6867a2f6ee2199368f0074672cd446b6c"
+      },
+      {
+        "file": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/sources/bridge-75-late.png",
+        "sha256": "b1be9078995f24f5a60e1319a44629023bc8997875ddec6f3cb4379181e171d5"
+      }
+    ],
+    "promptLog": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/PROMPT_LOG.md"
+  },
+  "transition": {
+    "fps": 8,
+    "forward": {
+      "strip": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/keeper_prime_stop-to-walk-right_f5.png",
+      "sha256": "ffcff47b0d38535da9e171d3635cf420e9b5e9935f0d84eec4d63932e140264a",
+      "sidecar": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/keeper_prime_stop-to-walk-right_f5.json",
+      "sidecarSha256": "716919147be33459bbd544286954b51202fe094f57196f1919d476771235406b"
+    },
+    "reverse": {
+      "strip": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/keeper_prime_walk-to-stop-right_f5.png",
+      "sha256": "b6f528b0bfe03953a3c1f3fd468160c5f1ec2aff7babbca4f63e3bbf4bcb172c",
+      "sidecar": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/keeper_prime_walk-to-stop-right_f5.json",
+      "sidecarSha256": "aa7bb234c4360c62e8f90977e9166601b327aa583836027804ca50078be5b020"
+    },
+    "bridgeFrames": [
+      {
+        "frame": 2,
+        "fraction": 0.15,
+        "file": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f2.png",
+        "sha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+        "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/sources/bridge-25-start.png",
+        "sourceSha256": "f8232ffb502caba3e0a5dbd6beef1d8859ebb08a3793a27b747a8cd1b935e37e",
+        "registration": {
+          "method": "uniform Lanczos scale from significant-alpha height, floor alignment, and cap-badge horizontal alignment",
+          "sourceBadgeBoundsExclusive": [
+            737,
+            200,
+            780,
+            248
+          ],
+          "targetBadgeBoundsExclusive": [
+            172,
+            49,
+            182,
+            58
+          ],
+          "sourceAlphaBoundsExclusive": [
+            351,
+            80,
+            937,
+            1346
+          ],
+          "targetAlphaBoundsExclusive": [
+            41,
+            18,
+            233,
+            316
+          ],
+          "scale": 0.235387045814,
+          "offset": [
+            -2,
+            -1
+          ],
+          "creativeWarp": false
+        },
+        "opaqueBoundsExclusive": [
+          80,
+          17,
+          219,
+          316
+        ],
+        "edgeAlphaPixels": 0
+      },
+      {
+        "frame": 3,
+        "fraction": 0.5,
+        "file": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f3.png",
+        "sha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+        "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/sources/bridge-50-mid.png",
+        "sourceSha256": "516c983897783dff0880e767f8a6fda6867a2f6ee2199368f0074672cd446b6c",
+        "registration": {
+          "method": "uniform Lanczos scale from significant-alpha height, floor alignment, and cap-badge horizontal alignment",
+          "sourceBadgeBoundsExclusive": [
+            750,
+            200,
+            792,
+            247
+          ],
+          "targetBadgeBoundsExclusive": [
+            172,
+            49,
+            182,
+            58
+          ],
+          "sourceAlphaBoundsExclusive": [
+            284,
+            80,
+            963,
+            1348
+          ],
+          "targetAlphaBoundsExclusive": [
+            41,
+            18,
+            233,
+            316
+          ],
+          "scale": 0.235015772871,
+          "offset": [
+            -4,
+            -1
+          ],
+          "creativeWarp": false
+        },
+        "opaqueBoundsExclusive": [
+          63,
+          17,
+          223,
+          315
+        ],
+        "edgeAlphaPixels": 0
+      },
+      {
+        "frame": 4,
+        "fraction": 0.75,
+        "file": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f4.png",
+        "sha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+        "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/sources/bridge-75-late.png",
+        "sourceSha256": "b1be9078995f24f5a60e1319a44629023bc8997875ddec6f3cb4379181e171d5",
+        "registration": {
+          "method": "uniform Lanczos scale from significant-alpha height, floor alignment, and cap-badge horizontal alignment",
+          "sourceBadgeBoundsExclusive": [
+            756,
+            206,
+            800,
+            253
+          ],
+          "targetBadgeBoundsExclusive": [
+            172,
+            49,
+            182,
+            58
+          ],
+          "sourceAlphaBoundsExclusive": [
+            220,
+            90,
+            997,
+            1324
+          ],
+          "targetAlphaBoundsExclusive": [
+            41,
+            18,
+            233,
+            316
+          ],
+          "scale": 0.2414910859,
+          "offset": [
+            -11,
+            -4
+          ],
+          "creativeWarp": false
+        },
+        "opaqueBoundsExclusive": [
+          42,
+          17,
+          230,
+          317
+        ],
+        "edgeAlphaPixels": 0
+      }
+    ],
+    "startStopSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+    "finalStopSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+    "identicalStopEndpoints": true
+  },
+  "rootMotion": {
+    "bakedIntoStrips": false,
+    "fps": 8,
+    "accelerationDeltasHighResolutionPixels": [
+      2,
+      6,
+      12,
+      18
+    ],
+    "walkDeltaHighResolutionPixels": 21,
+    "decelerationDeltasHighResolutionPixels": [
+      18,
+      12,
+      6,
+      2
+    ],
+    "firstMovementFrameDelta": 2,
+    "walkingOnSpotFrames": 0,
+    "route": [
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame1-a172a8a01a387a21.png",
+        "phase": "stopped hold",
+        "pose": "exact stop",
+        "dx": 0,
+        "x": 0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame1-a172a8a01a387a21.png",
+        "phase": "stopped hold",
+        "pose": "exact stop",
+        "dx": 0,
+        "x": 0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame1-a172a8a01a387a21.png",
+        "phase": "stopped hold",
+        "pose": "exact stop",
+        "dx": 0,
+        "x": 0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame1-a172a8a01a387a21.png",
+        "phase": "stopped hold",
+        "pose": "exact stop",
+        "dx": 0,
+        "x": 0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame2-e54546ba14b4e5f7.png",
+        "phase": "accelerating",
+        "pose": "15%",
+        "dx": 2,
+        "x": 2
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame3-0169b3642905389d.png",
+        "phase": "accelerating",
+        "pose": "50%",
+        "dx": 6,
+        "x": 8
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame4-9f4192beb8fecbc8.png",
+        "phase": "accelerating",
+        "pose": "75%",
+        "dx": 12,
+        "x": 20
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame5-0e80ea65610452c9.png",
+        "phase": "accelerating",
+        "pose": "Walk F1",
+        "dx": 18,
+        "x": 38
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame2-2b8e91de747b527d.png",
+        "phase": "approved walk",
+        "pose": "Walk F2",
+        "dx": 21,
+        "x": 59
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame3-b376254e9c29da38.png",
+        "phase": "approved walk",
+        "pose": "Walk F3",
+        "dx": 21,
+        "x": 80
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame4-982646b0b0e6f3f9.png",
+        "phase": "approved walk",
+        "pose": "Walk F4",
+        "dx": 21,
+        "x": 101
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame5-545e7338151e6e5a.png",
+        "phase": "approved walk",
+        "pose": "Walk F5",
+        "dx": 21,
+        "x": 122
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame6-17d007eee75c2e86.png",
+        "phase": "approved walk",
+        "pose": "Walk F6",
+        "dx": 21,
+        "x": 143
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame7-dbf5b3849624cec7.png",
+        "phase": "approved walk",
+        "pose": "Walk F7",
+        "dx": 21,
+        "x": 164
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame8-cf8c53e7ffa703a5.png",
+        "phase": "approved walk",
+        "pose": "Walk F8",
+        "dx": 21,
+        "x": 185
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame1-0e80ea65610452c9.png",
+        "phase": "approved walk",
+        "pose": "Walk F1",
+        "dx": 21,
+        "x": 206
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame2-2b8e91de747b527d.png",
+        "phase": "approved walk",
+        "pose": "Walk F2",
+        "dx": 21,
+        "x": 227
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame3-b376254e9c29da38.png",
+        "phase": "approved walk",
+        "pose": "Walk F3",
+        "dx": 21,
+        "x": 248
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame4-982646b0b0e6f3f9.png",
+        "phase": "approved walk",
+        "pose": "Walk F4",
+        "dx": 21,
+        "x": 269
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame5-545e7338151e6e5a.png",
+        "phase": "approved walk",
+        "pose": "Walk F5",
+        "dx": 21,
+        "x": 290
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame6-17d007eee75c2e86.png",
+        "phase": "approved walk",
+        "pose": "Walk F6",
+        "dx": 21,
+        "x": 311
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame7-dbf5b3849624cec7.png",
+        "phase": "approved walk",
+        "pose": "Walk F7",
+        "dx": 21,
+        "x": 332
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame8-cf8c53e7ffa703a5.png",
+        "phase": "approved walk",
+        "pose": "Walk F8",
+        "dx": 21,
+        "x": 353
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame1-0e80ea65610452c9.png",
+        "phase": "approved walk",
+        "pose": "Walk F1",
+        "dx": 21,
+        "x": 374
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame4-9f4192beb8fecbc8.png",
+        "phase": "decelerating",
+        "pose": "75%",
+        "dx": 18,
+        "x": 392
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame3-0169b3642905389d.png",
+        "phase": "decelerating",
+        "pose": "50%",
+        "dx": 12,
+        "x": 404
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame2-e54546ba14b4e5f7.png",
+        "phase": "decelerating",
+        "pose": "15%",
+        "dx": 6,
+        "x": 410
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame1-a172a8a01a387a21.png",
+        "phase": "decelerating",
+        "pose": "exact stop",
+        "dx": 2,
+        "x": 412
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame1-a172a8a01a387a21.png",
+        "phase": "stopped hold",
+        "pose": "exact stop",
+        "dx": 0,
+        "x": 412
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame1-a172a8a01a387a21.png",
+        "phase": "stopped hold",
+        "pose": "exact stop",
+        "dx": 0,
+        "x": 412
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame1-a172a8a01a387a21.png",
+        "phase": "stopped hold",
+        "pose": "exact stop",
+        "dx": 0,
+        "x": 412
+      },
+      {
+        "src": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame1-a172a8a01a387a21.png",
+        "phase": "stopped hold",
+        "pose": "exact stop",
+        "dx": 0,
+        "x": 412
+      }
+    ]
+  },
+  "publishedAssets": [
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f1.png",
+      "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame1-a172a8a01a387a21.png",
+      "publicSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f2.png",
+      "sourceSha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame2-e54546ba14b4e5f7.png",
+      "publicSha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f3.png",
+      "sourceSha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame3-0169b3642905389d.png",
+      "publicSha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f4.png",
+      "sourceSha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame4-9f4192beb8fecbc8.png",
+      "publicSha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f5.png",
+      "sourceSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/transition-frame5-0e80ea65610452c9.png",
+      "publicSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+      "sourceSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame1-0e80ea65610452c9.png",
+      "publicSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f2.png",
+      "sourceSha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame2-2b8e91de747b527d.png",
+      "publicSha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f3.png",
+      "sourceSha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame3-b376254e9c29da38.png",
+      "publicSha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f4.png",
+      "sourceSha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame4-982646b0b0e6f3f9.png",
+      "publicSha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f5.png",
+      "sourceSha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame5-545e7338151e6e5a.png",
+      "publicSha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f6.png",
+      "sourceSha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame6-17d007eee75c2e86.png",
+      "publicSha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f7.png",
+      "sourceSha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame7-dbf5b3849624cec7.png",
+      "publicSha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f8.png",
+      "sourceSha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-frame8-cf8c53e7ffa703a5.png",
+      "publicSha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/evidence/stop-to-walk-contact-sheet.png",
+      "sourceSha256": "6eaadcbe89fbcb44c064aa4a020919bbb51c72b08f1b6454022a718e82226579",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/contact-6eaadcbe89fbcb44.png",
+      "publicSha256": "6eaadcbe89fbcb44c064aa4a020919bbb51c72b08f1b6454022a718e82226579",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/keeper_prime_stop-to-walk-right_f5.png",
+      "sourceSha256": "ffcff47b0d38535da9e171d3635cf420e9b5e9935f0d84eec4d63932e140264a",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/stop-to-walk-strip-ffcff47b0d38535d.png",
+      "publicSha256": "ffcff47b0d38535da9e171d3635cf420e9b5e9935f0d84eec4d63932e140264a",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/keeper_prime_walk-to-stop-right_f5.png",
+      "sourceSha256": "b6f528b0bfe03953a3c1f3fd468160c5f1ec2aff7babbca4f63e3bbf4bcb172c",
+      "public": "public/keeper-review/keeper-prime-stop-walk-stop-v1/assets/walk-to-stop-strip-b6f528b0bfe03953.png",
+      "publicSha256": "b6f528b0bfe03953a3c1f3fd468160c5f1ec2aff7babbca4f63e3bbf4bcb172c",
+      "byteIdentical": true
+    }
+  ],
+  "evidence": {
+    "contactSheet": {
+      "file": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/evidence/stop-to-walk-contact-sheet.png",
+      "sha256": "6eaadcbe89fbcb44c064aa4a020919bbb51c72b08f1b6454022a718e82226579"
+    }
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-stop-walk-stop-v1/index.html",
+    "sha256": "3270fe60bf0795a042eb2a9bbb675e3a2dd38f00348cdbe57adb40d06e442d1a",
+    "publicReview": "/keeper-review/keeper-prime-stop-walk-stop-v1/",
+    "assetPrefix": "/keeper-review/keeper-prime-stop-walk-stop-v1/assets/",
+    "relativeAssetUrls": false,
+    "controls": [
+      "play",
+      "pause",
+      "previous-frame",
+      "next-frame",
+      "restart",
+      "route-loop",
+      "bridge-forward",
+      "bridge-reverse"
+    ]
+  },
+  "validation": {
+    "approvedWalkV6Unchanged": true,
+    "stopAuthorityUnchanged": true,
+    "startAndFinalStopByteIdentical": true,
+    "walkToStopIsExactBridgeReverse": true,
+    "movementBeginsOnFirstGaitFrame": true,
+    "walkingOnSpotFrames": 0,
+    "transparentSafetyGutters": true,
+    "stripSidecarAgreement": true,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "workbenchFinalChanged": false
+  },
+  "approvalBoundary": {
+    "walkV6Approved": true,
+    "stopToWalkApproved": false,
+    "walkToStopApproved": false,
+    "completeRouteApproved": false,
+    "finalLaneEntryAllowed": false,
+    "productionPromotionAllowed": false
+  },
+  "nextGate": "Frank reviews the complete stop\u2192walk\u2192stop route, especially both endpoint seams and whether acceleration/deceleration ever reads as walking on the spot.",
+  "rollback": "Delete only art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1 and public/keeper-review/keeper-prime-stop-walk-stop-v1; approved Walk V6, side-right stop, prior drafts, Final and production remain unchanged."
+}

@@ -1,0 +1,176 @@
+{
+  "batchId": "keeper-prime-walk-2026-10-14-v7",
+  "status": "approved-walk-v6-locomotion-artwork-authority",
+  "purpose": "Preserve Frank's approval of exact Walk V6 without changing its artwork, Final, production sprites or runtime manifest.",
+  "approval": {
+    "approvedBy": "Frank",
+    "approvedOn": "2026-10-14",
+    "wording": "Approved",
+    "scope": "Exact eight-frame Keeper Prime Walk V6, including the leg-authoritative opposing-arm cycle and repaired F8 lower body, at 8 fps."
+  },
+  "approvedCandidate": {
+    "register": "art/drafts/keeper-prime-walk-2026-10-14-v6/batch-register.json",
+    "registerSha256": "d40fc2b524db23854f0bfd7cb75f3e830f51db50a895f2046954690456a82d66",
+    "frames": [
+      {
+        "frame": 1,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+        "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656"
+      },
+      {
+        "frame": 2,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f2.png",
+        "sha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf"
+      },
+      {
+        "frame": 3,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f3.png",
+        "sha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4"
+      },
+      {
+        "frame": 4,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f4.png",
+        "sha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b"
+      },
+      {
+        "frame": 5,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f5.png",
+        "sha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549"
+      },
+      {
+        "frame": 6,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f6.png",
+        "sha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52"
+      },
+      {
+        "frame": 7,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f7.png",
+        "sha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df"
+      },
+      {
+        "frame": 8,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f8.png",
+        "sha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61"
+      }
+    ],
+    "strip": {
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/keeper_prime_walk-right_f8.png",
+      "sha256": "59da79117719ca58368aab22e06520e4fb77dedd88e0fd118ffe80b4910db583",
+      "sidecar": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/keeper_prime_walk-right_f8.json",
+      "sidecarSha256": "59856bd1361e4e2f405ec6199a4c0c55517cf4913df19000bd16f17bb272ce20"
+    },
+    "fps": 8
+  },
+  "reviewSurface": {
+    "publicReview": "/keeper-review/keeper-prime-walk-v7/",
+    "publicPage": "public/keeper-review/keeper-prime-walk-v7/index.html",
+    "publicPageSha256": "f31373df652280ccc4df482a233cbd5585a415344056e4240752b2f6e12d2a9d",
+    "publicAssets": [
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/comparison-6c17c87131499e05.png",
+        "sha256": "6c17c87131499e05800396c7fb6b9be4602367a236b2f7508150689261254c61"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/contact-cd32ab899b94fa37.png",
+        "sha256": "cd32ab899b94fa37ef2926cc4443b45f01bfdf3b6c8fbda0b403b1d4ef920364"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/frame1-0e80ea65610452c9.png",
+        "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/frame2-2b8e91de747b527d.png",
+        "sha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/frame3-b376254e9c29da38.png",
+        "sha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/frame4-982646b0b0e6f3f9.png",
+        "sha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/frame5-545e7338151e6e5a.png",
+        "sha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/frame6-17d007eee75c2e86.png",
+        "sha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/frame7-dbf5b3849624cec7.png",
+        "sha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/frame8-cf8c53e7ffa703a5.png",
+        "sha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/original-03df0efc1f028e13.png",
+        "sha256": "03df0efc1f028e139e5c9ca9cf1746a45496887a565f5290c38ad6a4b66fe6b1"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/previous-v5-frame1-0e80ea65610452c9.png",
+        "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/previous-v5-frame2-2b8e91de747b527d.png",
+        "sha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/previous-v5-frame3-b376254e9c29da38.png",
+        "sha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/previous-v5-frame4-982646b0b0e6f3f9.png",
+        "sha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/previous-v5-frame5-545e7338151e6e5a.png",
+        "sha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/previous-v5-frame6-17d007eee75c2e86.png",
+        "sha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/previous-v5-frame7-dbf5b3849624cec7.png",
+        "sha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/previous-v5-frame8-28fd47f93aa80f81.png",
+        "sha256": "28fd47f93aa80f818677f52ff02a7c798b0a6112af20c3824488a82f149743ef"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/side-a172a8a01a387a21.png",
+        "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+      },
+      {
+        "file": "public/keeper-review/keeper-prime-walk-v7/assets/strip-59da79117719ca58.png",
+        "sha256": "59da79117719ca58368aab22e06520e4fb77dedd88e0fd118ffe80b4910db583"
+      }
+    ]
+  },
+  "validation": {
+    "v6RegisterUnchanged": true,
+    "allEightFrameHashesPinned": true,
+    "publicAssetsByteIdenticalToV6": true,
+    "approvalPackDuplicatesNoArtwork": true,
+    "artPixelsChangedByV7": false,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "finalLaneChanged": false,
+    "priorDraftsChanged": false
+  },
+  "approvalBoundary": {
+    "walkV6Approved": true,
+    "coreRightFacingLocomotionAuthority": true,
+    "stopToWalkApproved": false,
+    "walkToStopApproved": false,
+    "finalLaneEntryAllowed": true,
+    "productionPromotionAllowed": false
+  },
+  "nextGate": "Review stop\u2192walk\u2192stop V1; Final and production remain separate explicit gates.",
+  "rollback": "Delete only art/drafts/keeper-prime-walk-2026-10-14-v7 and public/keeper-review/keeper-prime-walk-v7; Walk V1\u2013V6, Final and production remain unchanged."
+}

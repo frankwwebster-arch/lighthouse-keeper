@@ -1200,13 +1200,14 @@ rig-derived model must keep a super-smooth high-resolution
 master; rough edges or jagged internal linework fail even when all geometry
 datums pass.
 
-The active one-at-a-time core candidate is
-`art/drafts/keeper-prime-walk-2026-10-14-v6/`, reviewed at
-`/keeper-review/keeper-prime-walk-v6/`. V1–V5 remain immutable provenance; V2
-is still V1's byte-identical routing wrapper. V4's rear-arm-only correction did
-not solve the gait. Frank's decisive observation was that the accepted legs
-already define the arm timing: the two arms must be derived together from those
-eight phases, not improved independently.
+Frank approved exact Walk V6 on 14 October 2026. The artwork-free immutable V7
+record at `art/drafts/keeper-prime-walk-2026-10-14-v7/`, reviewed at
+`/keeper-review/keeper-prime-walk-v7/`, pins all eight V6 frame hashes, the strip
+and 8 fps timing. V1–V5 remain immutable provenance; V2 is still V1's
+byte-identical routing wrapper. V4's rear-arm-only correction did not solve the
+gait. Frank's decisive observation was that the accepted legs already define
+the arm timing: the two arms must be derived together from those eight phases,
+not improved independently.
 
 V5 therefore records a deterministic joint map with the near/foreground arm
 back at F1, passing vertically at F3, forward at F5, passing again at F7, and
@@ -1233,9 +1234,26 @@ The V6 page keeps absolute asset paths, preventing Vercel's trailing-slash
 canonicalization from resolving frames under `/keeper-review/assets/`. It
 synchronizes V5 and V6 at exact 128 × 160 game size, retains previous/next
 stepping, and translates the same strip at 168 high-resolution pixels per second
-for five seconds from fully hidden to fully hidden. V6 remains awaiting Frank's
-visual approval; walk→stop, stop→walk, the deterministic left mirror, workbench
-Final and production promotion remain deliberately untouched.
+for five seconds from fully hidden to fully hidden. V6 is approved locomotion
+artwork, but it has not been promoted to Final or production.
+
+The active one-at-a-time core candidate is stop → walk → stop V1 at
+`art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/`, reviewed at
+`/keeper-review/keeper-prime-stop-walk-stop-v1/`. Its five-pose forward bridge
+is exact approved Side-right stop, three new registered in-betweens at 15%, 50%
+and 75%, and exact approved Walk V6 F1. Walk → stop is the byte-reverse of those
+same five frames, so the return endpoint is the identical stop rather than a
+similar redraw. Root motion is a separate deterministic schedule: acceleration
+uses 2, 6, 12 and 18 high-resolution px/frame before the approved 21 px/frame
+walk cadence; deceleration uses 18, 12, 6 and 2 px. Every gait pose therefore
+translates, and only the deliberate four-frame start/end stop holds have zero
+motion. The 32-frame review route runs two exact Walk V6 cycles and travels 412
+high-resolution pixels. Large and exact 128 × 160 players, frame stepping,
+route looping and isolated bridge direction controls are provided. Deterministic
+verification pins source hashes, exact endpoints, transparency gutters,
+forward/reverse strip order, sidecars, public assets and displacement. The route
+awaits visual approval; the left mirror, workbench Final and production remain
+unchanged.
 
 ## Review-comments workflow for a later feedback round
 

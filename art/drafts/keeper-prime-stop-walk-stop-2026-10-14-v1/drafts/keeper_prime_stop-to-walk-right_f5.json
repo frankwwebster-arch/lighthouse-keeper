@@ -1,0 +1,20 @@
+{
+  "name": "keeper_prime_stop-to-walk-right",
+  "w": 32,
+  "h": 40,
+  "density": 8,
+  "frames": 5,
+  "fps": 8,
+  "loop": false,
+  "startPose": "keeper_prime_stop-side-right",
+  "endPose": "keeper_prime_walk-right_f1",
+  "sha256": "ffcff47b0d38535da9e171d3635cf420e9b5e9935f0d84eec4d63932e140264a",
+  "frameSha256": [
+    "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+    "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+    "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+    "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+    "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656"
+  ],
+  "status": "stop-walk-stop-v1-review-draft-not-production"
+}
