@@ -1,5 +1,14 @@
 # Lighthouse Keeper — Codex to Claude handoff
 
+> **Current locomotion response (14 October):** after Claude's walk
+> quantisation analysis and Frank's doorway observation, preserve every
+> approved locomotion frame and root-motion value while a door-centred hidden
+> gait-alignment prototype is assessed. The complete arithmetic, route
+> algorithm, limits and verification gate are in
+> [`CODEX_TO_CLAUDE_DOORWAY_GAIT_ALIGNMENT_2026-10-14.md`](CODEX_TO_CLAUDE_DOORWAY_GAIT_ALIGNMENT_2026-10-14.md).
+> This newer note supersedes this handoff's earlier suggestion that arbitrary
+> visible distances necessarily require a locomotion amendment.
+
 Date: 14 October 2026
 
 Repository: `/Users/frank/Documents/ChatGPT/Lighthouse Keeper`
