@@ -18,9 +18,9 @@ Code: `src/studio/recipe.ts` (format, compiler and checks; pure and tested), `sr
 
 All units are the art's logical pixels and real seconds.
 
-- The room is **110 wide and 56 tall** (the agreed floor height). x = 0 is the room's left wall; the **stairway** runs alongside on the left (x from −38 to 0). Floor y = 0; heights count upwards.
+- The current studio implementation is **110 wide and 56 tall**. The agreed replacement standard-room target is **172 wide and 56 tall**, with implementation and migration still pending; see `KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`. x = 0 is the room's stair-side wall; the **stairway** runs alongside on the left (x from −38 to 0). Floor y = 0; heights count upwards.
 - The door is in the wall at x = 0. Until Codex's door art fixes the numbers, `DOOR` in `recipe.ts` says: a 4 px jamb on the stairway side, and a **24 px** leaf (Codex's minimum opening) that opens into the room towards the camera, 44 px tall. That is wide enough to hide all of him. Change those constants when the real door exists; every recipe follows.
-- **Every door has a clear area** (Frank's rule): no object may stand in the first `DOOR_CLEAR` = 46 px of the room at each door (the open leaf plus room for him to stand clear of it). The studio shades it and flags any object, or any variant of one, that intrudes. A 110 px room therefore has 64 px for furniture (less with an inner door).
+- **Every door has a clear area** (Frank's rule): no object may stand in the first `DOOR_CLEAR` = 46 px of the room at each door (the open leaf plus room for him to stand clear of it). The studio shades it and flags any object, or any variant of one, that intrudes. The current 110 px implementation leaves 64 px; the agreed 172 px target leaves 126 px, exactly twelve proposed 10.5 px locomotion intervals (less where an inner door adds another exclusion).
 - Named places he can walk to: `stairs` (the ladder, x = −27), `doorOut` and `doorIn` (just clear of the doorway on each side), `innerIn` and `innerOut` (for a room with an inner door on the right), `action` (the action point), or any number.
 - `KEEPER_HALF` = 11 is his standing half-width, used where a frame's own pixels aren't known.
 

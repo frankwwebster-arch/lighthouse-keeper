@@ -168,7 +168,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
 1. Day 1 floor order, bottom to top, is fixed: kitchen; living room; bedroom with en suite; lamp room. The lamp room is always the topmost room.
 2. The game is a flat, front-on 2D cutaway — not isometric and not full 3D. The lighthouse is the visual anchor: classic alternating red-and-white stripes, dark pixel outlines, funny but not babyish.
 3. The main shaft must retain a constant gameplay width. Do not taper ordinary floors. Any apparent taper is a tiny decorative outer-wall treatment only. The lamp room may be inset/fixed width and has a wraparound rail/outdoor walkway.
-4. Production floor-band size is locked at **110 x 35 logical pixels**; room plates are **105 x 35**. The runtime modules are implemented at 4× (440 x 140), and the first three room PNGs plus red/white shell stripes are delivered. Future room plates remain missing.
+4. The delivered first-generation floor bands are **110 x 35 logical pixels** with **105 x 35** room plates. They remain historical source/provenance, not the replacement geometry. Frank agreed the new standard-room target on 14 October 2026: **172 x 56**, including a 46 px doorway exclusion and twelve proposed 10.5 px interaction intervals. Claude's drag/drop, expansion and migration contract is `docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md`; implementation remains pending.
 5. Stripe continuity must be world-coordinate-based, never based on the insertion order of floor assets. Recommended rule, evaluated against global vertical coordinate:
 
    ```ts
@@ -180,7 +180,7 @@ This report answers the implementation questions raised for the Next.js 14 / Rea
 
 ### Locked rule: future floor progression is non-linear
 
-The tapered concept paintings do **not** impose a construction order. Future standard floors are interchangeable 110 x 35 bands, and the player may unlock eligible floor types in different orders. Do not assign Workshop, Weather Station, Radio Room, Marine Lab, Map Room, or other future standard floors to permanent height numbers merely to reproduce the concept silhouette. The full idea backlog and system relationships are in `docs/EXPANSION_DESIGN.md`.
+The tapered concept paintings do **not** impose a construction order. Future standard floors use the common active standard-room width and the player may unlock eligible floor types in different orders. The agreed initial target is 172 x 56; global width tiers are 193 and 214. Do not assign Workshop, Weather Station, Radio Room, Marine Lab, Map Room, or other future standard floors to permanent height numbers merely to reproduce the concept silhouette. The full idea backlog and system relationships are in `docs/EXPANSION_DESIGN.md`.
 
 When a standard floor is unlocked:
 
@@ -245,7 +245,7 @@ Side/rear extensions, the lift service core and the underground lair do not cons
 
    1. Extend the approved keeper set in the priority order in `docs/KEEPER_ANIMATIONS.md`, preserving `data/keeper_asset_contract.json`.
    2. Build object art against the keeper's fixed switch, handle, seat, worktop, bowl and ground-use heights.
-   3. Production 110 x 35 lighthouse shell bands and 105 x 35 room PNGs matching the implemented runtime modules.
+   3. Rebuild the standard lighthouse shell and room modules for the agreed 172 x 56 target, preserving the delivered 110 x 35 / 105 x 35 files as historical source rather than overwriting them.
    4. TV production assets for all three states, including separate wobble/smoke/spark effects; then cooker, shower and bed.
    5. Separated day/night world layers and the reusable floor-arrival smoke effect.
    6. Lift/expansion bay specification, then the Floor-3 diving changing-room sequence.
