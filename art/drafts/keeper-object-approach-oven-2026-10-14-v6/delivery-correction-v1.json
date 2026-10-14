@@ -1,0 +1,13 @@
+{
+  "schema": "lighthouse-keeper/oven-visible-floor-delivery@1",
+  "status": "draft-placement-and-perspective-awaiting-review",
+  "geometryInheritedExactlyFromV5": true,
+  "labelCorrection": "Both rulers identify the 14-lp rear wall / oven base datum.",
+  "boundaries": {
+    "approvedKeeperPixelsChanged": false,
+    "routeOrTimingChanged": false,
+    "floorOrOvenGeometryChangedFromV5": false,
+    "runtimeChanged": false,
+    "approvalChanged": false
+  }
+}

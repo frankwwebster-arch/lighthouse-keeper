@@ -3,7 +3,11 @@
 Date: 14 October 2026
 Status: **visual proposal awaiting Frank's approval**. Do not change runtime placement or existing artwork yet.
 
-Review: `/keeper-review/keeper-object-approach-oven-v3/`
+Active review: `/keeper-review/keeper-object-approach-oven-v6/`
+
+Historical placement evidence: V3 shared the oven base with the Keeper's foot
+datum; V4 raised it only to the 2-lp front lip and was superseded before visual
+review. Neither changes approved art or runtime state.
 
 ## Decision proposed
 
@@ -53,10 +57,16 @@ assets must keep equal left/right rounding, with no more than one ku of error
 per side. Because rear faces shrink inward, the projection does not expand an
 asset beyond its declared front footprint.
 
-## Oven correction in the same review
+## Rear-wall object and visible floor in the same review
 
-Oven Approach V1 placed the proxy at the absolute bottom of the 32 × 40 Keeper
-cell. The approved Keeper's lowest opaque boot pixel is 0.5 lp above that cell
-edge. V3 raises only the proxy by exactly 0.5 lp so its base shares the visible
-boot datum. Every approved Keeper URL, root-motion value, interaction x anchor,
-timing and endpoint remains unchanged.
+The oven is a rear-wall object, whereas the Keeper walks on the near
+interaction line. Oven Approach V6 therefore places the proxy base at the
+rear-wall/floor junction, exactly 14 lp above the stage bottom. A 12-lp visible
+floor surface runs forward from that junction to the 2-lp front floor lip.
+This depth staging—not a runtime scale change—provides the missing perspective
+cue and prevents the oven from appearing to share the Keeper's foot line.
+
+V3's 0.5-lp shared datum and V4's unshown 2-lp correction are retained as
+rejected/superseded placement provenance. V5 has the same geometry as V6 but
+keeps a stale V3 datum label in its large pane. Every approved Keeper URL,
+root-motion value, interaction x anchor, timing and endpoint remains unchanged.

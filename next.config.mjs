@@ -94,6 +94,21 @@ export default {
         permanent: false,
       },
       {
+        source: '/keeper-review/keeper-object-approach-oven-v4',
+        destination: '/keeper-review/keeper-object-approach-oven-v4/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/keeper-object-approach-oven-v5',
+        destination: '/keeper-review/keeper-object-approach-oven-v5/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/keeper-object-approach-oven-v6',
+        destination: '/keeper-review/keeper-object-approach-oven-v6/index.html',
+        permanent: false,
+      },
+      {
         source: '/keeper-review/keeper-lift-entry-alignment-v1',
         destination: '/keeper-review/keeper-lift-entry-alignment-v1/index.html',
         permanent: false,

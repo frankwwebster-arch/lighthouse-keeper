@@ -1,0 +1,32 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-object-approach-oven-2026-10-14-v4",
+  "status": "draft-placement-and-perspective-awaiting-review",
+  "authorities": {
+    "ovenApproachV3Register": {
+      "file": "art/drafts/keeper-object-approach-oven-2026-10-14-v3/batch-register.json",
+      "sha256": "bcf7221c28c7b847d65ceea6d03ed5f4d6307e27db7fbb83a402d5b0f9cb90c0"
+    },
+    "ovenApproachV3Page": {
+      "file": "public/keeper-review/keeper-object-approach-oven-v3/index.html",
+      "sha256": "1e94311e8be79228e890937690a7f39c485e6aa0948861f16e6496807b25cc51"
+    }
+  },
+  "spec": {
+    "file": "art/drafts/keeper-object-approach-oven-2026-10-14-v4/oven-floor-surface-placement-v1.json",
+    "sha256": "f193fbdb635cfb4041179d209caa023f27fe3846835f1edb35c0cbb94483deef"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-object-approach-oven-v4/index.html",
+    "sha256": "f605f9f74dec588a913f9c42c48dbbbe6f7c128e1c1a9d09ef679e1685281a89"
+  },
+  "validation": {
+    "ovenBaseEqualsFloorTop": true,
+    "additionalRaiseFromV3IsExact": true,
+    "v3KeeperFrameUrlsReused": true,
+    "v3PerspectiveCalibrationPreserved": true,
+    "approvedKeeperPixelsChanged": false,
+    "runtimeChanged": false,
+    "approvalChanged": false
+  }
+}

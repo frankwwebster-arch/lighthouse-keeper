@@ -38,15 +38,19 @@ endpoint. A toggle shows the present approved root schedule finishing 1 lp
 short. This is still review-only: no oven art, root motion or production state
 has been approved or changed.
 
-Oven Approach V3 is the active placement/perspective refinement at
-`/keeper-review/keeper-object-approach-oven-v3/`. It preserves every V1 Keeper
-frame and route value, raising only the placeholder oven by 0.5 lp to match the
-approved boot-alpha datum. The proposed shared authoring projection is a 42-lp
-room depth with one 10.5-lp standard asset-depth module: rear wall 96% against
-the open front, and asset rear face 99% against its interaction/front face.
-Keep the Keeper and object interaction plane at canonical 100% scale; retain
-the 84-ku world grid and collision footprints; do not add continuous runtime
-raster scaling. Full proposal:
+Oven Approach V6 is the active placement/perspective refinement at
+`/keeper-review/keeper-object-approach-oven-v6/`. It preserves every V1 Keeper
+frame and route value. The rear-wall oven base now sits at the wall/floor
+junction 14 lp above the stage bottom, leaving a 12-lp visible floor surface
+before the 2-lp front lip and the Keeper's unchanged near interaction line.
+V3's 0.5-lp shared foot datum and the unshown V4 2-lp correction are retained
+as historical placement evidence; V5 has exact V6 geometry but a stale datum
+label in its large pane. The proposed shared authoring projection is
+a 42-lp room depth with one 10.5-lp standard asset-depth module: rear wall 96%
+against the open front, and asset rear face 99% against its interaction/front
+face. Keep the Keeper and object interaction plane at canonical 100% scale;
+retain the 84-ku world grid and collision footprints; do not add continuous
+runtime raster scaling. Full proposal:
 `docs/KEEPER_ROOM_PERSPECTIVE_PROPOSAL_2026-10-14.md`. Await Frank's approval.
 
 Everything remains a reversible draft awaiting Frank's review. Do not change

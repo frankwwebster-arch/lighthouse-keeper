@@ -1,0 +1,30 @@
+{
+  "schema": "lighthouse-keeper/oven-floor-surface-placement@1",
+  "status": "draft-placement-and-perspective-awaiting-review",
+  "oven": {
+    "floorBandThicknessLp": 2,
+    "floorTopSurfaceLpAboveStageBottom": 2,
+    "ovenBaseLpAboveStageBottom": 2,
+    "v3BaseLpAboveStageBottom": 0.5,
+    "additionalRaiseFromV3Lp": 1.5,
+    "footprintLp": [
+      30,
+      30
+    ],
+    "interactionCentreLp": 120
+  },
+  "preserved": {
+    "keeperFrameUrls": 20,
+    "routeValues": true,
+    "timing": true,
+    "perspectiveCalibration": true,
+    "interactionAnchor": true
+  },
+  "boundaries": {
+    "approvedKeeperPixelsChanged": false,
+    "approvedTimingChanged": false,
+    "runtimeGridChanged": false,
+    "productionChanged": false,
+    "approvalChanged": false
+  }
+}

@@ -35,6 +35,27 @@ const ovenPerspective = spawnSync('node', ['scripts/verify_keeper_object_approac
 })
 if (ovenPerspective.error) throw ovenPerspective.error
 if (ovenPerspective.status !== 0) process.exit(ovenPerspective.status ?? 1)
+const ovenFloorSurface = spawnSync('node', ['scripts/verify_keeper_object_approach_oven_v4.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (ovenFloorSurface.error) throw ovenFloorSurface.error
+if (ovenFloorSurface.status !== 0) process.exit(ovenFloorSurface.status ?? 1)
+const ovenVisibleFloor = spawnSync('node', ['scripts/verify_keeper_object_approach_oven_v5.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (ovenVisibleFloor.error) throw ovenVisibleFloor.error
+if (ovenVisibleFloor.status !== 0) process.exit(ovenVisibleFloor.status ?? 1)
+const ovenVisibleFloorDelivery = spawnSync('node', ['scripts/verify_keeper_object_approach_oven_v6.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (ovenVisibleFloorDelivery.error) throw ovenVisibleFloorDelivery.error
+if (ovenVisibleFloorDelivery.status !== 0) process.exit(ovenVisibleFloorDelivery.status ?? 1)
 const liftEntry = spawnSync('node', ['scripts/verify_keeper_lift_entry_alignment_v1.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },

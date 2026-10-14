@@ -1,0 +1,23 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-object-approach-oven-2026-10-14-v6",
+  "status": "draft-placement-and-perspective-awaiting-review",
+  "authorities": {
+    "ovenApproachV5Register": {
+      "file": "art/drafts/keeper-object-approach-oven-2026-10-14-v5/batch-register.json",
+      "sha256": "88dd95f902aeff481a2cb628496570ff75d8b0b4d59e9e38cdc26c1516ac4d6b"
+    },
+    "ovenApproachV5Page": {
+      "file": "public/keeper-review/keeper-object-approach-oven-v5/index.html",
+      "sha256": "65017163516d392fe31083a6a126a6b35945e3ed872f47b41b652fb89ac5c346"
+    }
+  },
+  "spec": {
+    "file": "art/drafts/keeper-object-approach-oven-2026-10-14-v6/delivery-correction-v1.json",
+    "sha256": "7f7cdddfd0d4a7e5d13e8503eb07326cb775b8401fc20925a1c3c81ec0eef3ff"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-object-approach-oven-v6/index.html",
+    "sha256": "7b3aa9d1c151a648529767e33c9139b1aa35089c7037686a7c4d8f3f4975ce97"
+  }
+}

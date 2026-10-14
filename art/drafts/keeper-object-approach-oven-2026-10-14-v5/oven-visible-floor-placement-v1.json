@@ -1,0 +1,37 @@
+{
+  "schema": "lighthouse-keeper/oven-visible-floor-placement@1",
+  "status": "draft-placement-and-perspective-awaiting-review",
+  "room": {
+    "heightLp": 56,
+    "rearWallFloorJunctionLpAboveStageBottom": 14,
+    "frontFloorLipLp": 2,
+    "visibleFloorSurfaceDepthOnElevationLp": 12,
+    "rearWallWidthPercent": 96
+  },
+  "oven": {
+    "ovenBaseLpAboveStageBottom": 14,
+    "v3BaseLpAboveStageBottom": 0.5,
+    "v4UnshownBaseLpAboveStageBottom": 2,
+    "additionalRaiseFromV3Lp": 13.5,
+    "footprintLp": [
+      30,
+      30
+    ],
+    "interactionCentreLp": 120
+  },
+  "preserved": {
+    "keeperFrameUrls": 20,
+    "routeValues": true,
+    "timing": true,
+    "perspectiveCalibration": true,
+    "interactionAnchor": true,
+    "keeperStageBottom": true
+  },
+  "boundaries": {
+    "approvedKeeperPixelsChanged": false,
+    "approvedTimingChanged": false,
+    "runtimeGridChanged": false,
+    "productionChanged": false,
+    "approvalChanged": false
+  }
+}
