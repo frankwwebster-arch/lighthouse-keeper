@@ -1,0 +1,76 @@
+{
+  "batchId": "keeper-fast-transition-timing-2026-10-14-v1",
+  "status": "approved-transition-timing-authority",
+  "purpose": "Pin Frank's approved fast walk/stop/turn cadence while keeping action animations independently paced.",
+  "approval": {
+    "id": "keeper-fast-transition-timing-v1",
+    "name": "Fast Timing V1",
+    "status": "approved-transition-authority",
+    "approvedOn": "2026-10-14",
+    "approvalWording": "approve fast timing v1",
+    "designDirection": "Movement between activities should run quickly for a mainly child audience; entertaining action animations remain independently timed and worth savouring.",
+    "profile": {
+      "walkFps": 10,
+      "decelerationFps": 12,
+      "settleMs": 0,
+      "turnFps": 16,
+      "frontHoldMs": 625
+    },
+    "appliesTo": [
+      "steady standard locomotion",
+      "walk acceleration",
+      "walk deceleration",
+      "facing turns",
+      "brief transition endpoint holds"
+    ],
+    "excludes": [
+      "action entry",
+      "action loops",
+      "action exit",
+      "comic reactions",
+      "prop choreography",
+      "activity-specific performance timing"
+    ],
+    "policy": "Action animation timing is authored and approved per action; it never inherits Fast Timing V1 merely because it follows a transition."
+  },
+  "source": {
+    "timingLabV1Catalogue": "public/keeper-timing-lab/catalog.json",
+    "timingLabV1CatalogueSha256": "95d85d2754f8c443f80cc778bdd7800973fc869422c43aa95cdb9c98c9542689",
+    "routeRegister": "art/drafts/keeper-prime-walk-stop-turn-front-2026-10-14-v1/batch-register.json",
+    "routeRegisterSha256": "730dec649217466bde895875d07e6729fe759d19d436cb93203698d41a94ab10"
+  },
+  "candidate": {
+    "catalogue": "public/keeper-timing-lab/catalog-v2.json",
+    "catalogueSha256": "b0fdde5b2d262b674bd6ec292e2d0fba36184eb5b190b63349b8a31ad82949af",
+    "projectTimingPolicy": "data/keeper_timing_policy.json",
+    "projectTimingPolicySha256": "fe06eedbc76940606cad821f33eb489849f914855c29aaf3be1d5bd129359250",
+    "profile": {
+      "walkFps": 10,
+      "decelerationFps": 12,
+      "settleMs": 0,
+      "turnFps": 16,
+      "frontHoldMs": 625
+    },
+    "baselineDurationMs": 4000,
+    "approvedDurationMs": 2995.833333333333,
+    "durationReductionPercent": 25.10416666666667
+  },
+  "immutableBoundaries": {
+    "artworkPixelsChanged": false,
+    "frameOrderChanged": false,
+    "rootMotionChanged": false,
+    "endpointContractChanged": false,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "workbenchFinalChanged": false,
+    "actionTimingChanged": false
+  },
+  "unchangedAuthorities": {
+    "runtimeManifest": "public/sprites/manifest.json",
+    "runtimeManifestSha256": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
+    "workbenchCatalogue": "data/keeper_animation_workbench.json",
+    "workbenchCatalogueSha256": "6c349a70f591cba21016cf9a7a49424b971d8aed895504ba775ebd158017c658"
+  },
+  "promotionBoundary": "This approves the timing profile for locomotion and turns. It does not promote artwork to Workbench Final or production and does not approve any action animation timing.",
+  "rollback": "Delete art/drafts/keeper-fast-transition-timing-2026-10-14-v1 and public/keeper-timing-lab/catalog-v2.json, then point the Timing Lab back to public/keeper-timing-lab/catalog.json. No sprite or runtime manifest rollback is required."
+}

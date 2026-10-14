@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "set": "keeper-prime-orthographic-v3",
+  "page": {
+    "path": "public/keeper-review/keeper-prime-orthographic-v3/index.html",
+    "sha256": "3356d11c540367323436e9b94aa79211c9e0793b1f0c52e193ffb3db4dd0fae5",
+    "bytes": 5582
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/keeper-prime-orthographic-v3/assets/attempt1-4eb5deeb7bae0313.png": {
+      "sha256": "4eb5deeb7bae03139f2652e06084cd867e11000c621cb34185ea4ea0d25f1708",
+      "extension": ".png",
+      "bytes": 628713,
+      "object": "review-archive/objects/4e/4eb5deeb7bae03139f2652e06084cd867e11000c621cb34185ea4ea0d25f1708.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4e/4eb5deeb7bae03139f2652e06084cd867e11000c621cb34185ea4ea0d25f1708.png"
+    },
+    "/keeper-review/keeper-prime-orthographic-v3/assets/attempt2-795066dc9a85a216.png": {
+      "sha256": "795066dc9a85a216c833346735374aa1b10873336a9102e88df56fed0ca1dffa",
+      "extension": ".png",
+      "bytes": 600909,
+      "object": "review-archive/objects/79/795066dc9a85a216c833346735374aa1b10873336a9102e88df56fed0ca1dffa.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/79/795066dc9a85a216c833346735374aa1b10873336a9102e88df56fed0ca1dffa.png"
+    },
+    "/keeper-review/keeper-prime-orthographic-v3/assets/back-c349f6095a83a429.png": {
+      "sha256": "c349f6095a83a429d491bfc8d7cdd619ea71ecec8196ba3a1e49d94a98a366f6",
+      "extension": ".png",
+      "bytes": 59784,
+      "object": "review-archive/objects/c3/c349f6095a83a429d491bfc8d7cdd619ea71ecec8196ba3a1e49d94a98a366f6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c3/c349f6095a83a429d491bfc8d7cdd619ea71ecec8196ba3a1e49d94a98a366f6.png"
+    },
+    "/keeper-review/keeper-prime-orthographic-v3/assets/board-068b476cd9d03658.png": {
+      "sha256": "068b476cd9d0365824fe6382f989e64679b2a85874445496b4d62b9ebb8a1d1a",
+      "extension": ".png",
+      "bytes": 144714,
+      "object": "review-archive/objects/06/068b476cd9d0365824fe6382f989e64679b2a85874445496b4d62b9ebb8a1d1a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/06/068b476cd9d0365824fe6382f989e64679b2a85874445496b4d62b9ebb8a1d1a.png"
+    },
+    "/keeper-review/keeper-prime-orthographic-v3/assets/front-a9a5c37fe7222199.png": {
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "extension": ".png",
+      "bytes": 61567,
+      "object": "review-archive/objects/a9/a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a9/a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e.png"
+    },
+    "/keeper-review/keeper-prime-orthographic-v3/assets/side-d2171f148b6b1466.png": {
+      "sha256": "d2171f148b6b14666a23198112aebf20e50048d583fda77ff0fc91f9d04d4f9a",
+      "extension": ".png",
+      "bytes": 47665,
+      "object": "review-archive/objects/d2/d2171f148b6b14666a23198112aebf20e50048d583fda77ff0fc91f9d04d4f9a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d2/d2171f148b6b14666a23198112aebf20e50048d583fda77ff0fc91f9d04d4f9a.png"
+    }
+  }
+}

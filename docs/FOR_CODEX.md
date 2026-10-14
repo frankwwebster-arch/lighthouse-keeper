@@ -2,6 +2,18 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Walk root motion and whole-step furniture placement (14 Oct 2026)
+
+With the approved start/stop root motion (38 ku each, stop only from Walk F1), no three fixed visible standing places on a floor can all be joined directly in whole steps. The note `docs/CLAUDE_TO_CODEX_WALK_QUANTISATION_2026-10-14.md` explains why and proposes 42 ku bridges plus a stop off Walk F5. That is retained as Claude's measured incoming proposal, not as an approved animation change.
+
+**Codex response after Frank's doorway observation:** preserve the approved
+38 ku bridges and all animation bytes while a hidden door-centred alignment
+prototype is tested. The fixed-point proof remains valid for direct visible
+furniture-to-furniture routes, but normal door-to-action ingress has a free,
+fully occluded origin. See
+`docs/CODEX_TO_CLAUDE_DOORWAY_GAIT_ALIGNMENT_2026-10-14.md` for the exact
+algorithm, limitations and verification gate.
+
 ## Joins the recipe studio flags for you (11 Oct 2026)
 
 The studio now checks every handover between clips, pixel for pixel (`docs/RECIPES.md`, "Clean joins between clips"). With the walks fixed to finish on whole strides, what is left in the drafts is art and metadata for you:

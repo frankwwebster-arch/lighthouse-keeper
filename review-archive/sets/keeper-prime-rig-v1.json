@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "set": "keeper-prime-rig-v1",
+  "page": {
+    "path": "public/keeper-review/keeper-prime-rig-v1/index.html",
+    "sha256": "27d397e9673ff1f003bb0b914ef48ac121a15972fae07b35b37d8a49787e5df9",
+    "bytes": 11433
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/keeper-prime-rig-v1/assets/back-d1d409f098a18883.png": {
+      "sha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86",
+      "extension": ".png",
+      "bytes": 59998,
+      "object": "review-archive/objects/d1/d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d1/d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86.png"
+    },
+    "/keeper-review/keeper-prime-rig-v1/assets/backRig-61435b9a5e293e77.png": {
+      "sha256": "61435b9a5e293e7756ef0fdc76ab00f51625cd88544f6358157e3b7ed56ad58e",
+      "extension": ".png",
+      "bytes": 2304,
+      "object": "review-archive/objects/61/61435b9a5e293e7756ef0fdc76ab00f51625cd88544f6358157e3b7ed56ad58e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/61/61435b9a5e293e7756ef0fdc76ab00f51625cd88544f6358157e3b7ed56ad58e.png"
+    },
+    "/keeper-review/keeper-prime-rig-v1/assets/board-6065ed2a8a1f8143.png": {
+      "sha256": "6065ed2a8a1f81430348fc5db3ed4002433ed3f889dbe6f60053ca029af9a2bc",
+      "extension": ".png",
+      "bytes": 192253,
+      "object": "review-archive/objects/60/6065ed2a8a1f81430348fc5db3ed4002433ed3f889dbe6f60053ca029af9a2bc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/60/6065ed2a8a1f81430348fc5db3ed4002433ed3f889dbe6f60053ca029af9a2bc.png"
+    },
+    "/keeper-review/keeper-prime-rig-v1/assets/front-a9a5c37fe7222199.png": {
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "extension": ".png",
+      "bytes": 61567,
+      "object": "review-archive/objects/a9/a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a9/a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e.png"
+    },
+    "/keeper-review/keeper-prime-rig-v1/assets/frontRig-61435b9a5e293e77.png": {
+      "sha256": "61435b9a5e293e7756ef0fdc76ab00f51625cd88544f6358157e3b7ed56ad58e",
+      "extension": ".png",
+      "bytes": 2304,
+      "object": "review-archive/objects/61/61435b9a5e293e7756ef0fdc76ab00f51625cd88544f6358157e3b7ed56ad58e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/61/61435b9a5e293e7756ef0fdc76ab00f51625cd88544f6358157e3b7ed56ad58e.png"
+    },
+    "/keeper-review/keeper-prime-rig-v1/assets/measure-cf12b190ecbc3d1c.png": {
+      "sha256": "cf12b190ecbc3d1c7bb43796609e30497c7e5fd0c1582fb6d960e36326c6465c",
+      "extension": ".png",
+      "bytes": 151504,
+      "object": "review-archive/objects/cf/cf12b190ecbc3d1c7bb43796609e30497c7e5fd0c1582fb6d960e36326c6465c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cf12b190ecbc3d1c7bb43796609e30497c7e5fd0c1582fb6d960e36326c6465c.png"
+    },
+    "/keeper-review/keeper-prime-rig-v1/assets/side-d2171f148b6b1466.png": {
+      "sha256": "d2171f148b6b14666a23198112aebf20e50048d583fda77ff0fc91f9d04d4f9a",
+      "extension": ".png",
+      "bytes": 47665,
+      "object": "review-archive/objects/d2/d2171f148b6b14666a23198112aebf20e50048d583fda77ff0fc91f9d04d4f9a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d2/d2171f148b6b14666a23198112aebf20e50048d583fda77ff0fc91f9d04d4f9a.png"
+    },
+    "/keeper-review/keeper-prime-rig-v1/assets/sideRig-842ad135bf45ae4f.png": {
+      "sha256": "842ad135bf45ae4f1d4cde3635fbe9ddfb93d5df7592d58f683663e09b26db90",
+      "extension": ".png",
+      "bytes": 2572,
+      "object": "review-archive/objects/84/842ad135bf45ae4f1d4cde3635fbe9ddfb93d5df7592d58f683663e09b26db90.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/842ad135bf45ae4f1d4cde3635fbe9ddfb93d5df7592d58f683663e09b26db90.png"
+    }
+  }
+}

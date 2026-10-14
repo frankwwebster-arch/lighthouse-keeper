@@ -12,6 +12,7 @@ const frames: TimingFrame[] = [
   { id: 'h2', src: '/h2.png', phase: 'frontHold', phaseLabel: 'hold', pose: 'front', dx: 0, x: 60 },
 ]
 const profile: TimingProfile = { walkFps: 8, decelerationFps: 8, settleMs: 125, turnFps: 10, frontHoldMs: 500 }
+const fastTimingV1: TimingProfile = { walkFps: 10, decelerationFps: 12, settleMs: 0, turnFps: 16, frontHoldMs: 625 }
 
 describe('Keeper Timing Lab model', () => {
   it('assigns independent durations to each phase', () => {
@@ -36,5 +37,17 @@ describe('Keeper Timing Lab model', () => {
 
   it('clamps imported values to the supported tuning range', () => {
     expect(clampProfile({ walkFps: 1, decelerationFps: 20, settleMs: -4, turnFps: 99, frontHoldMs: 20 })).toEqual({ walkFps: 4, decelerationFps: 16, settleMs: 0, turnFps: 16, frontHoldMs: 125 })
+  })
+
+  it('reproduces the approved Fast Timing V1 route duration', () => {
+    const route = [
+      ...Array.from({ length: 16 }, (_, index) => ({ ...frames[0], id: `walk-${index}` })),
+      ...Array.from({ length: 4 }, (_, index) => ({ ...frames[2], id: `deceleration-${index}` })),
+      { ...frames[3], id: 'settle' },
+      ...Array.from({ length: 7 }, (_, index) => ({ ...frames[4], id: `turn-${index}` })),
+      ...Array.from({ length: 4 }, (_, index) => ({ ...frames[6], id: `hold-${index}` })),
+    ]
+    expect(profileDurationMs(route, fastTimingV1)).toBeCloseTo(2995.833333333333, 8)
+    expect(changedProfileFields({ walkFps: 8, decelerationFps: 8, settleMs: 125, turnFps: 8, frontHoldMs: 500 }, fastTimingV1)).toEqual(['walkFps', 'decelerationFps', 'settleMs', 'turnFps', 'frontHoldMs'])
   })
 })

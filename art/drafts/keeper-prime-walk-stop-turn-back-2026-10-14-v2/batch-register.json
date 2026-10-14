@@ -1,0 +1,604 @@
+{
+  "batchId": "keeper-prime-walk-stop-turn-back-2026-10-14-v2",
+  "status": "draft-walk-stop-turn-back-v2-awaiting-visual-approval",
+  "purpose": "Review the exact V1 artwork and timing with every frame preloaded and decoded before playback.",
+  "authorities": {
+    "walk": {
+      "approval": "art/drafts/keeper-prime-walk-2026-10-14-v7/batch-register.json",
+      "approvalSha256": "ad788fb923009c6dd97840d3c4ae91c6e8084ef699ab6637bb2738b9532cb342"
+    },
+    "stopWalkStop": {
+      "approval": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v2/batch-register.json",
+      "approvalSha256": "3cbdc5ea7f7467ea18a353d5abc8581c1d6afd088316570c629241612bc2542c"
+    },
+    "sideBackTurn": {
+      "approval": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v10/batch-register.json",
+      "approvalSha256": "1670b6d59b43302a6a1501a94f5e9f4b184e23ea9c3969535b48247861e2fffc"
+    },
+    "timing": {
+      "approval": "art/drafts/keeper-fast-transition-timing-2026-10-14-v1/approval-register.json",
+      "approvalSha256": "782964d45ee708ebbba325dbcea835e53ffbcf9dca596b113adb5a15ed611924",
+      "policy": "data/keeper_timing_policy.json",
+      "policySha256": "fe06eedbc76940606cad821f33eb489849f914855c29aaf3be1d5bd129359250",
+      "profile": {
+        "walkFps": 10,
+        "decelerationFps": 12,
+        "settleMs": 0,
+        "turnFps": 16,
+        "frontHoldMs": 625
+      }
+    }
+  },
+  "join": {
+    "strip": "art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v2/drafts/keeper_prime_walk-contact_to_stop_to_back_f13.png",
+    "sha256": "b12e22215f8cdb68e32197a2da470737a556ed6990645b864fa9d9be12ea2eaa",
+    "sidecar": "art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v2/drafts/keeper_prime_walk-contact_to_stop_to_back_f13.json",
+    "sidecarSha256": "0ef33fb465b7412722d44a550ffeedcb31abfe7b710fcef9539724fe5e2fac73",
+    "frames": 13,
+    "runtimeEntryFrameAfterWalkLoop": 2,
+    "frameSha256": [
+      "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+      "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+      "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+    ],
+    "frameDurationsMs": [
+      100.0,
+      83.33333333333333,
+      83.33333333333333,
+      83.33333333333333,
+      83.33333333333333,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5
+    ],
+    "labels": [
+      "Walk F1",
+      "75%",
+      "50%",
+      "15%",
+      "Side stop",
+      "98\u00b0",
+      "105\u00b0",
+      "120\u00b0",
+      "135\u00b0",
+      "150\u00b0",
+      "165\u00b0",
+      "172.5\u00b0",
+      "Back"
+    ]
+  },
+  "route": {
+    "frames": 32,
+    "durationMs": 3058.3333333333335,
+    "distanceHighResolutionPixels": 374,
+    "walkCycles": 2,
+    "walkDelta": 21,
+    "decelerationDeltas": [
+      18,
+      12,
+      6,
+      2
+    ],
+    "neutralSettleFrames": 0,
+    "turnFramesAfterSharedEndpoint": 8,
+    "rearHoldFrames": 4,
+    "rootMotionStopsBeforeTurn": true,
+    "framesData": [
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame2-2b8e91de747b527d.png",
+        "phase": "approved walk",
+        "pose": "Walk F2",
+        "dx": 21,
+        "x": 21,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame3-b376254e9c29da38.png",
+        "phase": "approved walk",
+        "pose": "Walk F3",
+        "dx": 21,
+        "x": 42,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame4-982646b0b0e6f3f9.png",
+        "phase": "approved walk",
+        "pose": "Walk F4",
+        "dx": 21,
+        "x": 63,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame5-545e7338151e6e5a.png",
+        "phase": "approved walk",
+        "pose": "Walk F5",
+        "dx": 21,
+        "x": 84,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame6-17d007eee75c2e86.png",
+        "phase": "approved walk",
+        "pose": "Walk F6",
+        "dx": 21,
+        "x": 105,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame7-dbf5b3849624cec7.png",
+        "phase": "approved walk",
+        "pose": "Walk F7",
+        "dx": 21,
+        "x": 126,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame8-cf8c53e7ffa703a5.png",
+        "phase": "approved walk",
+        "pose": "Walk F8",
+        "dx": 21,
+        "x": 147,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame1-0e80ea65610452c9.png",
+        "phase": "approved walk",
+        "pose": "Walk F1",
+        "dx": 21,
+        "x": 168,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame2-2b8e91de747b527d.png",
+        "phase": "approved walk",
+        "pose": "Walk F2",
+        "dx": 21,
+        "x": 189,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame3-b376254e9c29da38.png",
+        "phase": "approved walk",
+        "pose": "Walk F3",
+        "dx": 21,
+        "x": 210,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame4-982646b0b0e6f3f9.png",
+        "phase": "approved walk",
+        "pose": "Walk F4",
+        "dx": 21,
+        "x": 231,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame5-545e7338151e6e5a.png",
+        "phase": "approved walk",
+        "pose": "Walk F5",
+        "dx": 21,
+        "x": 252,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame6-17d007eee75c2e86.png",
+        "phase": "approved walk",
+        "pose": "Walk F6",
+        "dx": 21,
+        "x": 273,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame7-dbf5b3849624cec7.png",
+        "phase": "approved walk",
+        "pose": "Walk F7",
+        "dx": 21,
+        "x": 294,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame8-cf8c53e7ffa703a5.png",
+        "phase": "approved walk",
+        "pose": "Walk F8",
+        "dx": 21,
+        "x": 315,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame1-0e80ea65610452c9.png",
+        "phase": "approved walk",
+        "pose": "Walk F1",
+        "dx": 21,
+        "x": 336,
+        "durationMs": 100.0
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/stop-bridge-frame4-9f4192beb8fecbc8.png",
+        "phase": "approved deceleration",
+        "pose": "75%",
+        "dx": 18,
+        "x": 354,
+        "durationMs": 83.33333333333333
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/stop-bridge-frame3-0169b3642905389d.png",
+        "phase": "approved deceleration",
+        "pose": "50%",
+        "dx": 12,
+        "x": 366,
+        "durationMs": 83.33333333333333
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/stop-bridge-frame2-e54546ba14b4e5f7.png",
+        "phase": "approved deceleration",
+        "pose": "15%",
+        "dx": 6,
+        "x": 372,
+        "durationMs": 83.33333333333333
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/stop-bridge-frame1-a172a8a01a387a21.png",
+        "phase": "approved deceleration",
+        "pose": "exact Side-right stop",
+        "dx": 2,
+        "x": 374,
+        "durationMs": 83.33333333333333
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame2-e1dc020aabfe8f3b.png",
+        "phase": "approved turn away",
+        "pose": "98\u00b0",
+        "dx": 0,
+        "x": 374,
+        "durationMs": 62.5
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame3-34028d8821a7272a.png",
+        "phase": "approved turn away",
+        "pose": "105\u00b0",
+        "dx": 0,
+        "x": 374,
+        "durationMs": 62.5
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame4-0d278363a0e7e4f1.png",
+        "phase": "approved turn away",
+        "pose": "120\u00b0",
+        "dx": 0,
+        "x": 374,
+        "durationMs": 62.5
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame5-f827ac61f45aaaa4.png",
+        "phase": "approved turn away",
+        "pose": "135\u00b0",
+        "dx": 0,
+        "x": 374,
+        "durationMs": 62.5
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame6-fe06522abd0cd55c.png",
+        "phase": "approved turn away",
+        "pose": "150\u00b0",
+        "dx": 0,
+        "x": 374,
+        "durationMs": 62.5
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame7-d55afae023051e29.png",
+        "phase": "approved turn away",
+        "pose": "165\u00b0",
+        "dx": 0,
+        "x": 374,
+        "durationMs": 62.5
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame8-bb530610cf0e17bf.png",
+        "phase": "approved turn away",
+        "pose": "172.5\u00b0",
+        "dx": 0,
+        "x": 374,
+        "durationMs": 62.5
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame9-31dbac4efc00089f.png",
+        "phase": "approved turn away",
+        "pose": "180\u00b0",
+        "dx": 0,
+        "x": 374,
+        "durationMs": 62.5
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame9-31dbac4efc00089f.png",
+        "phase": "rear hold",
+        "pose": "exact approved back",
+        "dx": 0,
+        "x": 374,
+        "durationMs": 156.25
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame9-31dbac4efc00089f.png",
+        "phase": "rear hold",
+        "pose": "exact approved back",
+        "dx": 0,
+        "x": 374,
+        "durationMs": 156.25
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame9-31dbac4efc00089f.png",
+        "phase": "rear hold",
+        "pose": "exact approved back",
+        "dx": 0,
+        "x": 374,
+        "durationMs": 156.25
+      },
+      {
+        "src": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame9-31dbac4efc00089f.png",
+        "phase": "rear hold",
+        "pose": "exact approved back",
+        "dx": 0,
+        "x": 374,
+        "durationMs": 156.25
+      }
+    ]
+  },
+  "endpointContract": {
+    "walkContact": {
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+      "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656"
+    },
+    "sideStop": {
+      "file": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f1.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "turnEntry": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f01.png",
+      "turnEntrySha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+      "sharedFloorAnchor": true,
+      "sharedView": "side-right"
+    },
+    "rear": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f09.png",
+      "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+    }
+  },
+  "evidence": {
+    "contactSheet": {
+      "file": "art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v2/evidence/walk-stop-turn-back-contact-sheet.png",
+      "sha256": "549c4226b8045b118d1580467ccf61437407aede31dc8ab3615edd3243aff76c"
+    }
+  },
+  "publishedAssets": [
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+      "sourceSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame1-0e80ea65610452c9.png",
+      "publicSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f2.png",
+      "sourceSha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame2-2b8e91de747b527d.png",
+      "publicSha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f3.png",
+      "sourceSha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame3-b376254e9c29da38.png",
+      "publicSha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f4.png",
+      "sourceSha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame4-982646b0b0e6f3f9.png",
+      "publicSha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f5.png",
+      "sourceSha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame5-545e7338151e6e5a.png",
+      "publicSha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f6.png",
+      "sourceSha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame6-17d007eee75c2e86.png",
+      "publicSha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f7.png",
+      "sourceSha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame7-dbf5b3849624cec7.png",
+      "publicSha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f8.png",
+      "sourceSha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/walk-frame8-cf8c53e7ffa703a5.png",
+      "publicSha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f1.png",
+      "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/stop-bridge-frame1-a172a8a01a387a21.png",
+      "publicSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f2.png",
+      "sourceSha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/stop-bridge-frame2-e54546ba14b4e5f7.png",
+      "publicSha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f3.png",
+      "sourceSha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/stop-bridge-frame3-0169b3642905389d.png",
+      "publicSha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f4.png",
+      "sourceSha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/stop-bridge-frame4-9f4192beb8fecbc8.png",
+      "publicSha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f5.png",
+      "sourceSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/stop-bridge-frame5-0e80ea65610452c9.png",
+      "publicSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f01.png",
+      "sourceSha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame1-c097d78aac2d2c52.png",
+      "publicSha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f02.png",
+      "sourceSha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame2-e1dc020aabfe8f3b.png",
+      "publicSha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f03.png",
+      "sourceSha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame3-34028d8821a7272a.png",
+      "publicSha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f04.png",
+      "sourceSha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame4-0d278363a0e7e4f1.png",
+      "publicSha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f05.png",
+      "sourceSha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame5-f827ac61f45aaaa4.png",
+      "publicSha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f06.png",
+      "sourceSha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame6-fe06522abd0cd55c.png",
+      "publicSha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f07.png",
+      "sourceSha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame7-d55afae023051e29.png",
+      "publicSha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f08.png",
+      "sourceSha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame8-bb530610cf0e17bf.png",
+      "publicSha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f09.png",
+      "sourceSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/turn-frame9-31dbac4efc00089f.png",
+      "publicSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v2/drafts/keeper_prime_walk-contact_to_stop_to_back_f13.png",
+      "sourceSha256": "b12e22215f8cdb68e32197a2da470737a556ed6990645b864fa9d9be12ea2eaa",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/join-strip-b12e22215f8cdb68.png",
+      "publicSha256": "b12e22215f8cdb68e32197a2da470737a556ed6990645b864fa9d9be12ea2eaa",
+      "byteIdentical": true
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v2/evidence/walk-stop-turn-back-contact-sheet.png",
+      "sourceSha256": "549c4226b8045b118d1580467ccf61437407aede31dc8ab3615edd3243aff76c",
+      "public": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/contact-549c4226b8045b11.png",
+      "publicSha256": "549c4226b8045b118d1580467ccf61437407aede31dc8ab3615edd3243aff76c",
+      "byteIdentical": true
+    }
+  ],
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-walk-stop-turn-back-v2/index.html",
+    "sha256": "8d4b02ef2865d29a73460ef0395611f1f3c26986aeefa2dad080f6840127248b",
+    "publicReview": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/",
+    "assetPrefix": "/keeper-review/keeper-prime-walk-stop-turn-back-v2/assets/",
+    "relativeAssetUrls": false,
+    "controls": [
+      "play",
+      "pause",
+      "previous-frame",
+      "next-frame",
+      "restart",
+      "route-loop",
+      "join-play",
+      "join-step"
+    ],
+    "largeLaneFullWidth": true,
+    "gameLaneFullWidth": true,
+    "preloadedBeforePlayback": true
+  },
+  "unchangedAuthorities": {
+    "runtimeManifest": "public/sprites/manifest.json",
+    "runtimeManifestSha256": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
+    "workbenchCatalogue": "data/keeper_animation_workbench.json",
+    "workbenchCatalogueSha256": "6c349a70f591cba21016cf9a7a49424b971d8aed895504ba775ebd158017c658"
+  },
+  "validation": {
+    "allArtworkCopiedFromApprovedAuthorities": true,
+    "v1ArtworkByteIdentical": true,
+    "newCharacterDrawings": false,
+    "walkToDecelerationContactExact": true,
+    "turnFramesExact": true,
+    "rearEndpointExact": true,
+    "rootMotionStopsBeforeTurn": true,
+    "transparentSafetyGutters": true,
+    "stripSidecarAgreement": true,
+    "fastTimingV1Exact": true,
+    "preloadedBeforePlayback": true,
+    "productionSpritesChanged": false,
+    "runtimeManifestChanged": false,
+    "workbenchFinalChanged": false
+  },
+  "approvalBoundary": {
+    "sourceAuthoritiesApproved": true,
+    "compositeRouteApproved": false,
+    "finalLaneEntryAllowed": false,
+    "productionPromotionAllowed": false
+  },
+  "nextGate": "Frank confirms flicker-free V2 playback, then reviews the unchanged walk \u2192 stop \u2192 turn fully away route at large and exact game scale.",
+  "rollback": "Delete only art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v2 and public/keeper-review/keeper-prime-walk-stop-turn-back-v2; approved authorities, Final and production remain unchanged."
+}

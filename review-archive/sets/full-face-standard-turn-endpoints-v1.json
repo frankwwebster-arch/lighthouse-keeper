@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "set": "full-face-standard-turn-endpoints-v1",
+  "page": {
+    "path": "public/keeper-review/full-face-standard-turn-endpoints-v1/index.html",
+    "sha256": "d95c7c7f0085ad14ba82471cf40eaca907bd4e746ac2efc4b190f1f254a704ec",
+    "bytes": 4110
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/full-face-standard-turn-endpoints-v1/assets/keeper_turn_front-candidate-a7a23c7b457fe1d9.gif": {
+      "sha256": "a7a23c7b457fe1d92a87b2edfa9ef5c7965b943ef26d78bf71603131c9eaac33",
+      "extension": ".gif",
+      "bytes": 123665,
+      "object": "review-archive/objects/a7/a7a23c7b457fe1d92a87b2edfa9ef5c7965b943ef26d78bf71603131c9eaac33.gif",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a7/a7a23c7b457fe1d92a87b2edfa9ef5c7965b943ef26d78bf71603131c9eaac33.gif"
+    },
+    "/keeper-review/full-face-standard-turn-endpoints-v1/assets/keeper_turn_front-canonical-e12c4e114aec7bf1.gif": {
+      "sha256": "e12c4e114aec7bf1ae78a9eef825915a432efe5aa78ce30f014b37bc02f15bbd",
+      "extension": ".gif",
+      "bytes": 123685,
+      "object": "review-archive/objects/e1/e12c4e114aec7bf1ae78a9eef825915a432efe5aa78ce30f014b37bc02f15bbd.gif",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e1/e12c4e114aec7bf1ae78a9eef825915a432efe5aa78ce30f014b37bc02f15bbd.gif"
+    },
+    "/keeper-review/full-face-standard-turn-endpoints-v1/assets/keeper_turn_front-comparison-83aa8fa7c1c0215d.gif": {
+      "sha256": "83aa8fa7c1c0215d523d65fbd8b6415ef0e1a379c4818d39992992253c33ffef",
+      "extension": ".gif",
+      "bytes": 379350,
+      "object": "review-archive/objects/83/83aa8fa7c1c0215d523d65fbd8b6415ef0e1a379c4818d39992992253c33ffef.gif",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/83/83aa8fa7c1c0215d523d65fbd8b6415ef0e1a379c4818d39992992253c33ffef.gif"
+    },
+    "/keeper-review/full-face-standard-turn-endpoints-v1/assets/keeper_turn_front-strips-36936afd59d429bb.png": {
+      "sha256": "36936afd59d429bbe43f3c6ddac3ea097f34a41c608de3a963ababf0448d83b0",
+      "extension": ".png",
+      "bytes": 210863,
+      "object": "review-archive/objects/36/36936afd59d429bbe43f3c6ddac3ea097f34a41c608de3a963ababf0448d83b0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/36/36936afd59d429bbe43f3c6ddac3ea097f34a41c608de3a963ababf0448d83b0.png"
+    },
+    "/keeper-review/full-face-standard-turn-endpoints-v1/assets/keeper_turn_left_front-candidate-4855d11479807914.gif": {
+      "sha256": "4855d114798079149a7b3f8b92906b35c5f8a78fc94c4b35d5675186be99cafd",
+      "extension": ".gif",
+      "bytes": 123648,
+      "object": "review-archive/objects/48/4855d114798079149a7b3f8b92906b35c5f8a78fc94c4b35d5675186be99cafd.gif",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/48/4855d114798079149a7b3f8b92906b35c5f8a78fc94c4b35d5675186be99cafd.gif"
+    },
+    "/keeper-review/full-face-standard-turn-endpoints-v1/assets/keeper_turn_left_front-canonical-15a4937fff756bfc.gif": {
+      "sha256": "15a4937fff756bfcce16ddfaf64fb12182323cc63a343bff8faebe6ed3e46c43",
+      "extension": ".gif",
+      "bytes": 123633,
+      "object": "review-archive/objects/15/15a4937fff756bfcce16ddfaf64fb12182323cc63a343bff8faebe6ed3e46c43.gif",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/15/15a4937fff756bfcce16ddfaf64fb12182323cc63a343bff8faebe6ed3e46c43.gif"
+    },
+    "/keeper-review/full-face-standard-turn-endpoints-v1/assets/keeper_turn_left_front-comparison-0e1fab111b7ce1b2.gif": {
+      "sha256": "0e1fab111b7ce1b25e7d048d9ace785460a0a133e4b864d5add09c65e6631a62",
+      "extension": ".gif",
+      "bytes": 379260,
+      "object": "review-archive/objects/0e/0e1fab111b7ce1b25e7d048d9ace785460a0a133e4b864d5add09c65e6631a62.gif",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0e1fab111b7ce1b25e7d048d9ace785460a0a133e4b864d5add09c65e6631a62.gif"
+    },
+    "/keeper-review/full-face-standard-turn-endpoints-v1/assets/keeper_turn_left_front-strips-23f477af71182633.png": {
+      "sha256": "23f477af711826338095d3484f6855a947dafdbc7e27d1a78e64a3b3a773b1b8",
+      "extension": ".png",
+      "bytes": 211690,
+      "object": "review-archive/objects/23/23f477af711826338095d3484f6855a947dafdbc7e27d1a78e64a3b3a773b1b8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/23/23f477af711826338095d3484f6855a947dafdbc7e27d1a78e64a3b3a773b1b8.png"
+    }
+  }
+}

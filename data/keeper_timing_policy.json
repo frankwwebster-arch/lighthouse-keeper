@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "policyId": "keeper-fast-transition-timing-v1",
+  "status": "approved-project-timing-policy",
+  "approvedOn": "2026-10-14",
+  "approvalWording": "approve fast timing v1",
+  "transitionProfile": {
+    "walkFps": 10,
+    "decelerationFps": 12,
+    "settleMs": 0,
+    "turnFps": 16,
+    "frontHoldMs": 625
+  },
+  "transitionScope": [
+    "steady standard locomotion",
+    "walk acceleration",
+    "walk deceleration",
+    "facing turns",
+    "brief transition endpoint holds"
+  ],
+  "actionTiming": {
+    "inheritsTransitionProfile": false,
+    "scope": [
+      "action entry",
+      "action loops",
+      "action exit",
+      "comic reactions",
+      "prop choreography",
+      "activity-specific performance timing"
+    ],
+    "rule": "Action animation timing is authored and approved per action; it never inherits Fast Timing V1 merely because it follows a transition.",
+    "intent": "Action animations should be entertaining to watch and may use slower cadence, anticipation, repetition and comic holds."
+  },
+  "runtimeIntegration": {
+    "implemented": false,
+    "reason": "Keeper Prime authorities remain outside Workbench Final and production; consume this policy when the approved core routes are integrated."
+  }
+}

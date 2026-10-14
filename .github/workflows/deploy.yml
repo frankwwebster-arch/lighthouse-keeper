@@ -1,0 +1,41 @@
+# One-click production release for Lighthouse Keeper.
+#
+# GitHub → Actions → "Deploy to production" → Run workflow.
+# It pushes one empty "[deploy]" commit to main; Vercel builds only commits
+# carrying that marker (scripts/vercel-ignore-build.mjs). See docs/DEPLOYMENT.md.
+
+name: Deploy to production
+
+on:
+  workflow_dispatch:
+    inputs:
+      note:
+        description: What is in this release (optional)
+        required: false
+        default: release current main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Push the [deploy] commit
+        env:
+          NOTE: ${{ inputs.note }}
+        run: |
+          # Authored as the repository owner so Vercel's Hobby plan accepts the commit.
+          git config user.name "frankwwebster-arch"
+          git config user.email "frankwwebster@gmail.com"
+          git commit --allow-empty -m "Deploy: ${NOTE:-release current main} [deploy]"
+          git push origin HEAD:main

@@ -30,6 +30,7 @@
 .statusBar > span { padding:.28rem .55rem; border-radius:99px; font-size:.67rem; font-weight:900; letter-spacing:.05em; text-transform:uppercase; }
 .statusBar .locked { color:#245649; background:#dbece3; }
 .statusBar .pending { color:#7f3d2e; background:#f4dfd7; }
+.statusBar .approved { color:#185a40; background:#d8eee2; }
 .message { display:block; width:calc(100% - clamp(2rem,8vw,8rem)); margin:1rem auto 0; padding:.7rem 1rem; color:#184d4c; background:#dff0e6; border:1px solid #9dcbb8; border-radius:.55rem; text-align:left; }
 .shell { display:grid; grid-template-columns:minmax(15rem,19rem) minmax(0,1fr); gap:1.35rem; max-width:112rem; margin:auto; padding:1.5rem clamp(1rem,4vw,4rem) 4rem; }
 .sidebar { align-self:start; position:sticky; top:5rem; display:grid; gap:1rem; }
@@ -102,6 +103,13 @@
 .savePanel dt { color:var(--muted); font-size:.7rem; font-weight:900; text-transform:uppercase; }
 .savePanel dd { min-width:0; margin:0; overflow-wrap:anywhere; font: .72rem ui-monospace,SFMono-Regular,Menlo,monospace; }
 .contract { padding:1.2rem; }
+.scope { padding:1.2rem; border-top:4px solid #2f8065 !important; }
+.scope h2 { margin:.15rem 0 .35rem; font:600 clamp(1.35rem,2vw,1.8rem) Georgia,serif; }
+.scope > p { color:var(--muted); }
+.scope > div { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.8rem; margin-top:1rem; }
+.scope article { padding:.9rem; background:#edf3ef; border-radius:.55rem; }
+.scope ul { margin:.55rem 0 0; padding-left:1.2rem; color:var(--muted); font-size:.76rem; }
+.scope .policy { margin:.85rem 0 0; padding:.7rem .8rem; color:#184d4c; background:#dff0e6; border-radius:.5rem; font-weight:700; }
 .contract h2 { margin:0 0 .8rem; font:600 1.35rem Georgia,serif; }
 .contract > div { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.8rem; }
 .contract article { padding:.8rem; background:#edf3ef; border-radius:.55rem; }
@@ -112,5 +120,5 @@
 
 @media(max-width:1180px){.sliders{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:940px){.header{align-items:flex-start;flex-direction:column}.statusBar{position:static;flex-wrap:wrap}.shell{grid-template-columns:1fr}.sidebar{position:static;grid-template-columns:repeat(2,minmax(0,1fr))}.players{grid-template-columns:1fr}.sliders{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:650px){.header nav{width:100%}.header nav a{flex:1;text-align:center}.sidebar{grid-template-columns:1fr}.compareHeader,.panelHeading{flex-direction:column}.masterControls{justify-content:flex-start}.stage{height:300px}.actor{width:224px;height:280px}.actor img{width:224px;height:280px}.sliders,.presetGrid,.contract>div,.savePanel{grid-template-columns:1fr}.saveControls{justify-content:flex-start}.savePanel dl{grid-column:auto}.savePanel dl div{grid-template-columns:1fr;gap:.2rem}}
+@media(max-width:650px){.header nav{width:100%}.header nav a{flex:1;text-align:center}.sidebar{grid-template-columns:1fr}.compareHeader,.panelHeading{flex-direction:column}.masterControls{justify-content:flex-start}.stage{height:300px}.actor{width:224px;height:280px}.actor img{width:224px;height:280px}.sliders,.presetGrid,.contract>div,.scope>div,.savePanel{grid-template-columns:1fr}.saveControls{justify-content:flex-start}.savePanel dl{grid-column:auto}.savePanel dl div{grid-template-columns:1fr;gap:.2rem}}
 @media(prefers-reduced-motion:reduce){.statusBar{backdrop-filter:none}.frameMeter span{transition:none}}

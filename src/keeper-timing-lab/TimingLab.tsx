@@ -89,7 +89,7 @@ export default function TimingLab() {
   const [message, setMessage] = useState('')
 
   useEffect(() => {
-    void fetch('/keeper-timing-lab/catalog.json', { cache: 'no-store' })
+    void fetch('/keeper-timing-lab/catalog-v2.json', { cache: 'no-store' })
       .then((response) => { if (!response.ok) throw new Error(`Catalogue returned ${response.status}`); return response.json() as Promise<TimingCatalogue> })
       .then((next) => {
         setCatalogue(next)
@@ -114,8 +114,10 @@ export default function TimingLab() {
   useEffect(() => { if (clip) setProfile(clip.recommended) }, [clip?.id])
   const candidate = profile ?? clip?.recommended
   const changes = clip && candidate ? changedProfileFields(clip.baseline, candidate) : []
+  const isApprovedCandidate = candidate ? changedProfileFields(catalogue?.defaults ?? candidate, candidate).length === 0 : false
   const baselineDuration = clip ? profileDurationMs(clip.frames, clip.baseline) : 0
   const candidateDuration = clip && candidate ? profileDurationMs(clip.frames, candidate) : 0
+  const approvedTransition = catalogue?.approvedTransitionProfile
 
   const patchProfile = (change: Partial<TimingProfile>) => {
     if (!candidate) return
@@ -150,25 +152,25 @@ export default function TimingLab() {
     <section className={styles.statusBar}>
       <div><strong>{clip.title}</strong><span>{clip.description}</span></div>
       <span className={styles.locked}>Approved pixels locked</span>
-      <span className={styles.pending}>Timing proposal</span>
+      <span className={approvedTransition ? styles.approved : styles.pending}>{approvedTransition ? `${approvedTransition.name} approved` : 'Timing proposal'}</span>
     </section>
     {message && <button type="button" className={styles.message} onClick={() => setMessage('')}>{message}</button>}
 
     <div className={styles.shell}>
       <aside className={styles.sidebar}>
-        <section><h2>Animation library</h2><p>More approved routes can be added without changing this timing model.</p>{catalogue.clips.map((item) => <button key={item.id} type="button" className={item.id === clip.id ? styles.selectedClip : ''} onClick={() => setSelectedClipId(item.id)}><strong>{item.title}</strong><span>{item.outfit} uniform</span><small>Artwork accepted · timing open</small></button>)}</section>
+        <section><h2>Animation library</h2><p>More approved routes can be added without changing this timing model.</p>{catalogue.clips.map((item) => <button key={item.id} type="button" className={item.id === clip.id ? styles.selectedClip : ''} onClick={() => setSelectedClipId(item.id)}><strong>{item.title}</strong><span>{item.outfit} uniform</span><small>{item.status === 'artwork-and-fast-transition-timing-approved' ? 'Artwork + transition timing approved' : 'Artwork accepted · timing open'}</small></button>)}</section>
         <section><h2>Saved proposals</h2>{saved.filter((item) => item.clipId === clip.id).map((item) => <div className={styles.savedItem} key={item.id}><button type="button" onClick={() => { setProfile(item.profile); setMessage(`Loaded “${item.name}”.`) }}><strong>{item.name}</strong><span>{item.profile.turnFps} fps turn</span></button><button type="button" aria-label={`Delete ${item.name}`} onClick={() => setSaved((current) => current.filter((candidateItem) => candidateItem.id !== item.id))}>×</button></div>)}{!saved.some((item) => item.clipId === clip.id) && <p className={styles.empty}>No saved proposals yet.</p>}</section>
       </aside>
 
       <div className={styles.content}>
         <section className={styles.compareHeader}>
-          <div><p className={styles.kicker}>A/B timing comparison</p><h2>Reviewed timing against your live proposal</h2><p>The recommended starting point changes only the turn from 8 to 10 fps.</p></div>
+          <div><p className={styles.kicker}>A/B timing comparison</p><h2>Reviewed timing against your live proposal</h2><p>{approvedTransition ? 'Fast Timing V1 is approved for walks, stopping bridges and turns. Action animation timing remains independent.' : 'The recommended starting point changes only the turn from 8 to 10 fps.'}</p></div>
           <div className={styles.masterControls}><button type="button" className={styles.primary} onClick={() => setPlaySignal((value) => value + 1)}>Play both</button><button type="button" onClick={() => setPauseSignal((value) => value + 1)}>Pause both</button><label>Loop section<select value={sectionId} onChange={(event) => setSectionId(event.target.value)}>{catalogue.loopSections.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}</select></label><label className={styles.check}><input type="checkbox" checked={loop} onChange={(event) => setLoop(event.target.checked)} /> Loop</label></div>
         </section>
 
         <div className={styles.players}>
-          <Playback title="A · reviewed V1 timing" frames={clip.frames} profile={clip.baseline} section={section} loop={loop} playSignal={playSignal} pauseSignal={pauseSignal} distance={clip.distanceHighResolutionPixels} />
-          <Playback title="B · live timing proposal" frames={clip.frames} profile={candidate} section={section} loop={loop} playSignal={playSignal} pauseSignal={pauseSignal} distance={clip.distanceHighResolutionPixels} interactive />
+          <Playback title="A · original reviewed timing" frames={clip.frames} profile={clip.baseline} section={section} loop={loop} playSignal={playSignal} pauseSignal={pauseSignal} distance={clip.distanceHighResolutionPixels} />
+          <Playback title={approvedTransition && isApprovedCandidate ? 'B · approved Fast Timing V1' : 'B · live timing proposal'} frames={clip.frames} profile={candidate} section={section} loop={loop} playSignal={playSignal} pauseSignal={pauseSignal} distance={clip.distanceHighResolutionPixels} interactive />
         </div>
 
         <section className={styles.tuningPanel}>
@@ -184,14 +186,16 @@ export default function TimingLab() {
 
         <section className={styles.presets}>
           <div className={styles.panelHeading}><div><p className={styles.kicker}>Quick comparisons</p><h2>Timing presets</h2></div><p>{changes.length ? `${changes.length} field${changes.length === 1 ? '' : 's'} differ from reviewed V1.` : 'This matches reviewed V1.'}</p></div>
-          <div className={styles.presetGrid}>{catalogue.presets.map((preset) => <button type="button" key={preset.id} onClick={() => { setProfile(preset.profile); setMessage(`Applied “${preset.name}”.`) }}><strong>{preset.name}</strong><span>{preset.description}</span><small>{preset.profile.turnFps} fps turn</small></button>)}</div>
+          <div className={styles.presetGrid}>{catalogue.presets.map((preset) => <button type="button" key={preset.id} onClick={() => { setProfile(preset.profile); setMessage(`Applied “${preset.name}”.`) }}><strong>{preset.name}</strong><span>{preset.description}</span><small>{preset.status === 'approved' ? 'Project authority' : preset.status === 'superseded' ? 'Retained history' : `${preset.profile.turnFps} fps turn`}</small></button>)}</div>
         </section>
 
         <section className={styles.savePanel}>
-          <div><p className={styles.kicker}>Non-destructive proposals</p><h2>Save, share or establish defaults</h2><p>Saving never changes approved artwork, Final or production. Exported JSON is the reviewable handoff for a later versioned timing record.</p></div>
-          <div className={styles.saveControls}><input value={proposalName} onChange={(event) => setProposalName(event.target.value)} aria-label="Proposal name" /><button type="button" onClick={saveProposal}>Save proposal</button><button type="button" onClick={exportProposal}>Export JSON</button><button type="button" onClick={() => { setProjectDefaults(candidate); setMessage('Set this profile as the device’s project timing defaults.') }}>Use as project defaults</button><button type="button" onClick={() => { setProfile(clip.baseline); setMessage('Restored the reviewed V1 timing.') }}>Reset to reviewed</button></div>
-          <dl><div><dt>Device defaults</dt><dd>Walk {projectDefaults.walkFps} · deceleration {projectDefaults.decelerationFps} · turn {projectDefaults.turnFps} fps</dd></div><div><dt>Changed fields</dt><dd>{changes.length ? changes.join(', ') : 'none'}</dd></div><div><dt>Artwork SHA-256</dt><dd>{clip.sourceRegisterSha256}</dd></div></dl>
+          <div><p className={styles.kicker}>Non-destructive proposals</p><h2>Save or compare personal alternatives</h2><p>The approved project transition standard comes from the repository. Saving here keeps a private preview preference on this device and never changes artwork, Final, production or action timing.</p></div>
+          <div className={styles.saveControls}><input value={proposalName} onChange={(event) => setProposalName(event.target.value)} aria-label="Proposal name" /><button type="button" onClick={saveProposal}>Save proposal</button><button type="button" onClick={exportProposal}>Export JSON</button><button type="button" aria-label="Use as project defaults on this device only" onClick={() => { setProjectDefaults(candidate); setMessage('Set this profile as this device’s personal preview default.') }}>Use as personal preview default</button><button type="button" onClick={() => { setProfile(catalogue.defaults); setMessage('Restored approved Fast Timing V1.') }}>Reset to approved</button></div>
+          <dl><div><dt>Project default</dt><dd>Walk {catalogue.defaults.walkFps} · deceleration {catalogue.defaults.decelerationFps} · turn {catalogue.defaults.turnFps} fps</dd></div><div><dt>Personal preview</dt><dd>Walk {projectDefaults.walkFps} · deceleration {projectDefaults.decelerationFps} · turn {projectDefaults.turnFps} fps</dd></div><div><dt>Changed fields</dt><dd>{changes.length ? changes.join(', ') : 'none'}</dd></div><div><dt>Artwork SHA-256</dt><dd>{clip.sourceRegisterSha256}</dd></div></dl>
         </section>
+
+        {approvedTransition && <section className={styles.scope}><p className={styles.kicker}>Approved scope</p><h2>Fast between activities; expressive inside them</h2><p>{approvedTransition.designDirection}</p><div><article><strong>Fast Timing V1 applies to</strong><ul>{approvedTransition.appliesTo.map((item) => <li key={item}>{item}</li>)}</ul></article><article><strong>Timed separately per action</strong><ul>{approvedTransition.excludes.map((item) => <li key={item}>{item}</li>)}</ul></article></div><p className={styles.policy}>{approvedTransition.policy}</p></section>}
 
         <section className={styles.contract}><h2>Approval model</h2><div><article><strong>1 · Artwork authority</strong><p>Frame pixels, order, endpoints and root motion remain hash-pinned.</p></article><article><strong>2 · Timing profile</strong><p>Phase speeds and deliberate holds are tuned here and approved separately.</p></article><article><strong>3 · Final and production</strong><p>Still require their own explicit promotion after complete route review.</p></article></div><p className={styles.limit}>Recorded visual limitation: {clip.acceptedVisualLimitation}.</p></section>
       </div>
