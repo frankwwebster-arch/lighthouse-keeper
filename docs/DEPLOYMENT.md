@@ -144,9 +144,9 @@ explicit release.
 Keeper review media is now stored once outside `public/`, without deleting any
 evidence or changing immutable review-page bytes.
 
-**Measured result (15 October 2026, including Stair Ascent V9):** 695 review-
-media paths collapse to 308 unique objects. The paths represent 83.53 MiB; the
-unique store is 49.56 MiB. The real `public/` deployment payload remains about
+**Measured result (15 October 2026, including Stair Ascent V11):** 701 review-
+media paths collapse to 314 unique objects. The paths represent 83.84 MiB; the
+unique store is 49.87 MiB. The real `public/` deployment payload remains about
 45 MiB rather than roughly 115 MiB. The archive itself stays in Git but is
 outside `public/`, so Vercel does not copy those objects into every deployment.
 

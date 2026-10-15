@@ -110,6 +110,17 @@ are unchanged. V9 remains only a four-contact mechanical gate, not a complete
 transition and not approved. No approved walk, Final or production file
 changed.
 
+The active follow-on is the unapproved
+`/keeper-review/keeper-prime-stair-ascent-v11/`. V10's generated motion studies
+are retained but rejected because exact-size registration exposed inconsistent
+Prime silhouettes and contact geometry. V11 uses the same-family V6 lift/reach
+art and V7 contact-locked plant art. It shows four adjacent stairs with three
+frames per tread at 95 ms: RIGHT leg plus restrained LEFT arm, then LEFT leg
+plus clearer RIGHT arm, repeated. The collision-prone V6 pass pose is excluded;
+the deterministic verifier checks the bounded arm-only edit, unchanged lower
+legs, transparent gutters, exact 6-lp advance and no stair penetration beyond
+0.2 lp of anti-alias tolerance. Nothing is approved or promoted.
+
 ## Lift entry alignment correction (14 Oct 2026)
 
 The focused construction review

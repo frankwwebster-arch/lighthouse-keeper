@@ -93,6 +93,17 @@ riser. The V8 images, vertical positions, support/target markers, timing and
 stair dimensions remain exact. This is still a four-contact proof, not a
 complete transition. Nothing has entered Final or production.
 
+The active unapproved intermediate-motion candidate is
+`/keeper-review/keeper-prime-stair-ascent-v11/`. V10's image-generation studies
+are retained as rejected provenance because they changed the Prime silhouette
+and contact geometry. V11 returns to the same V6/V7 Keeper family and shows
+four adjacent stairs as repeated three-frame lift → reach → plant phrases:
+RIGHT leg with a restrained LEFT-arm counter-motion, then LEFT leg with a
+clearer RIGHT-arm counter-motion. The collision-prone old pass pose is omitted;
+all shown lower-leg pixels retain their source geometry and clear the stair
+surface within the 0.2-lp anti-alias tolerance. V11 is review-only and changes
+no Final art, runtime sprite or production geometry.
+
 ## Run it
 ```
 npm install

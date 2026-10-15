@@ -1,0 +1,110 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-stair-ascent-2026-10-15-v11",
+  "status": "draft-v11-alternating-intermediates-awaiting-review",
+  "authorities": {
+    "contactProofV9": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v9/batch-register.json",
+      "sha256": "8631475ca71f2daee243a7ddf3f727eff4300cf84df4c262f0b95e14068334ae"
+    },
+    "sourcePreparation": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v11/source-preparation-v11.json",
+      "sha256": "6b149c6b4a7f3e45692804d984dc4d498e0dc5e38bd82486490f9f999181a7a8"
+    },
+    "contactRig": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v11/stair-contact-rig-v11.json",
+      "sha256": "b9a94812ceb477bb8d93befe7d9405a57924e6999065fc5423588abbc68109ec"
+    }
+  },
+  "generation": {
+    "mode": "same-family-source-selection-plus-bounded-deterministic-arm-warp",
+    "frameUrls": [
+      "/keeper-review/keeper-prime-stair-ascent-v11/assets/right-lift-f1-29692d2aa051816a.png",
+      "/keeper-review/keeper-prime-stair-ascent-v11/assets/right-reach-f3-0c9b6ff0cbfdaa56.png",
+      "/keeper-review/keeper-prime-stair-ascent-v11/assets/right-plant-f4-3cbe4075784c4bae.png",
+      "/keeper-review/keeper-prime-stair-ascent-v11/assets/left-lift-f1-3444287d8553e579.png",
+      "/keeper-review/keeper-prime-stair-ascent-v11/assets/left-reach-f3-c1327bbb5b3b5e5b.png",
+      "/keeper-review/keeper-prime-stair-ascent-v11/assets/left-plant-f4-08596b2093e20566.png"
+    ]
+  },
+  "originalAndDraft": [
+    {
+      "leg": "right",
+      "pose": 1,
+      "originalFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-left_f01.png",
+      "originalSha256": "36fd70ed08996abff2e56a714b700bac3cd6b5a6eaa68365b4431b3a3e72d2b6",
+      "draftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v11/drafts/frames/keeper_prime_stair_right-leg_side-left_f01.png",
+      "draftSha256": "29692d2aa051816a4dbad7f33eeb2c142448cdc7f387f88b7f986fd9628bcbec"
+    },
+    {
+      "leg": "right",
+      "pose": 3,
+      "originalFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-left_f03.png",
+      "originalSha256": "45698bae98331d769da77e1235bf783ac382c7f3e69ab2169b59374994b07bcf",
+      "draftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v11/drafts/frames/keeper_prime_stair_right-leg_side-left_f03.png",
+      "draftSha256": "0c9b6ff0cbfdaa56242ca1fd0492f1a6762e76260f4c8a565bb927cd1372f06a"
+    },
+    {
+      "leg": "right",
+      "pose": 4,
+      "originalFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v7/drafts/frames/keeper_prime_stair_right-contact_side-left_f01.png",
+      "originalSha256": "f2c630a34f23cc0e1afdd6e00f138b24adf9a1b97a1609650c79e1b87a273f5b",
+      "draftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v11/drafts/frames/keeper_prime_stair_right-leg_side-left_f04.png",
+      "draftSha256": "3cbe4075784c4baea0795ae8959a35b4fed4f095406643371c39fb7a8232e1f1"
+    },
+    {
+      "leg": "left",
+      "pose": 1,
+      "originalFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-left_f01.png",
+      "originalSha256": "76757ffe8b17c13572974f6e13c90de0cd8334239a39d7fb7590d1a8650e5ede",
+      "draftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v11/drafts/frames/keeper_prime_stair_left-leg_side-left_f01.png",
+      "draftSha256": "3444287d8553e5792af0e395f84e66a4cf74424fcb850fdf7c561ed18d7cf016"
+    },
+    {
+      "leg": "left",
+      "pose": 3,
+      "originalFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-left_f03.png",
+      "originalSha256": "f8994a407446d6cc5f3bad354b4781bd8f4ed9667d0a32a023bcb328eea5e3fb",
+      "draftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v11/drafts/frames/keeper_prime_stair_left-leg_side-left_f03.png",
+      "draftSha256": "c1327bbb5b3b5e5bb37846e937af1b074efdb7bfdb7b037c5159eb2cd53d6e96"
+    },
+    {
+      "leg": "left",
+      "pose": 4,
+      "originalFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v7/drafts/frames/keeper_prime_stair_left-contact_side-left_f01.png",
+      "originalSha256": "25493bd2d85ba7b7654515d1a47efad8c5bc275b056e00c7b7c2e278493e1565",
+      "draftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v11/drafts/frames/keeper_prime_stair_left-leg_side-left_f04.png",
+      "draftSha256": "08596b2093e2056661f89dc5959c1366fb86e3caa87d44d86c405c4e515dfeb8"
+    }
+  ],
+  "spec": {
+    "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v11/keeper-prime-stair-ascent-v11.json",
+    "sha256": "5149f21cf87ea65ea1c1aae64772360bc68fff168db58e65914017f785f3e414"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-stair-ascent-v11/index.html",
+    "sha256": "6a4b7ba64a766957193138c5c14e1c3d0dbb305361c99e9eb4a1f340a1bb901d"
+  },
+  "frameUrls": [
+    "/keeper-review/keeper-prime-stair-ascent-v11/assets/right-lift-f1-29692d2aa051816a.png",
+    "/keeper-review/keeper-prime-stair-ascent-v11/assets/right-reach-f3-0c9b6ff0cbfdaa56.png",
+    "/keeper-review/keeper-prime-stair-ascent-v11/assets/right-plant-f4-3cbe4075784c4bae.png",
+    "/keeper-review/keeper-prime-stair-ascent-v11/assets/left-lift-f1-3444287d8553e579.png",
+    "/keeper-review/keeper-prime-stair-ascent-v11/assets/left-reach-f3-c1327bbb5b3b5e5b.png",
+    "/keeper-review/keeper-prime-stair-ascent-v11/assets/left-plant-f4-08596b2093e20566.png"
+  ],
+  "validation": {
+    "uniqueDrawings": 6,
+    "shownFrames": 12,
+    "rightLegSteps": 2,
+    "leftLegSteps": 2,
+    "framesPerStep": 3,
+    "armAmplitudeRightStepMaxPx": 3,
+    "armAmplitudeLeftStepMaxPx": 7,
+    "lowerLegsUnchangedFromY247": true,
+    "headUnchangedThroughY127": true,
+    "v1ThroughV10Changed": false,
+    "finalChanged": false,
+    "productionChanged": false
+  }
+}

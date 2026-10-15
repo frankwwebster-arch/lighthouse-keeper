@@ -11,11 +11,11 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 47,
-    "referenceCount": 695,
-    "uniqueObjectCount": 308,
-    "logicalBytes": 87590460,
-    "uniqueBytes": 51969364,
+    "setCount": 48,
+    "referenceCount": 701,
+    "uniqueObjectCount": 314,
+    "logicalBytes": 87912624,
+    "uniqueBytes": 52291528,
     "deduplicatedBytes": 35621096
   },
   "legacyPaths": {
@@ -1404,6 +1404,48 @@
       "bytes": 67111,
       "object": "review-archive/objects/bd/bd4542a10ca685cd4edd4941b3513dd83d0012f8624a199f6fef8af3cd25f205.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bd/bd4542a10ca685cd4edd4941b3513dd83d0012f8624a199f6fef8af3cd25f205.png"
+    },
+    "/keeper-review/keeper-prime-stair-ascent-v11/assets/left-lift-f1-3444287d8553e579.png": {
+      "sha256": "3444287d8553e5792af0e395f84e66a4cf74424fcb850fdf7c561ed18d7cf016",
+      "extension": ".png",
+      "bytes": 49863,
+      "object": "review-archive/objects/34/3444287d8553e5792af0e395f84e66a4cf74424fcb850fdf7c561ed18d7cf016.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/34/3444287d8553e5792af0e395f84e66a4cf74424fcb850fdf7c561ed18d7cf016.png"
+    },
+    "/keeper-review/keeper-prime-stair-ascent-v11/assets/left-plant-f4-08596b2093e20566.png": {
+      "sha256": "08596b2093e2056661f89dc5959c1366fb86e3caa87d44d86c405c4e515dfeb8",
+      "extension": ".png",
+      "bytes": 52041,
+      "object": "review-archive/objects/08/08596b2093e2056661f89dc5959c1366fb86e3caa87d44d86c405c4e515dfeb8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/08/08596b2093e2056661f89dc5959c1366fb86e3caa87d44d86c405c4e515dfeb8.png"
+    },
+    "/keeper-review/keeper-prime-stair-ascent-v11/assets/left-reach-f3-c1327bbb5b3b5e5b.png": {
+      "sha256": "c1327bbb5b3b5e5bb37846e937af1b074efdb7bfdb7b037c5159eb2cd53d6e96",
+      "extension": ".png",
+      "bytes": 56573,
+      "object": "review-archive/objects/c1/c1327bbb5b3b5e5bb37846e937af1b074efdb7bfdb7b037c5159eb2cd53d6e96.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c1/c1327bbb5b3b5e5bb37846e937af1b074efdb7bfdb7b037c5159eb2cd53d6e96.png"
+    },
+    "/keeper-review/keeper-prime-stair-ascent-v11/assets/right-lift-f1-29692d2aa051816a.png": {
+      "sha256": "29692d2aa051816a4dbad7f33eeb2c142448cdc7f387f88b7f986fd9628bcbec",
+      "extension": ".png",
+      "bytes": 54784,
+      "object": "review-archive/objects/29/29692d2aa051816a4dbad7f33eeb2c142448cdc7f387f88b7f986fd9628bcbec.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/29/29692d2aa051816a4dbad7f33eeb2c142448cdc7f387f88b7f986fd9628bcbec.png"
+    },
+    "/keeper-review/keeper-prime-stair-ascent-v11/assets/right-plant-f4-3cbe4075784c4bae.png": {
+      "sha256": "3cbe4075784c4baea0795ae8959a35b4fed4f095406643371c39fb7a8232e1f1",
+      "extension": ".png",
+      "bytes": 53931,
+      "object": "review-archive/objects/3c/3cbe4075784c4baea0795ae8959a35b4fed4f095406643371c39fb7a8232e1f1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3c/3cbe4075784c4baea0795ae8959a35b4fed4f095406643371c39fb7a8232e1f1.png"
+    },
+    "/keeper-review/keeper-prime-stair-ascent-v11/assets/right-reach-f3-0c9b6ff0cbfdaa56.png": {
+      "sha256": "0c9b6ff0cbfdaa56242ca1fd0492f1a6762e76260f4c8a565bb927cd1372f06a",
+      "extension": ".png",
+      "bytes": 54972,
+      "object": "review-archive/objects/0c/0c9b6ff0cbfdaa56242ca1fd0492f1a6762e76260f4c8a565bb927cd1372f06a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0c/0c9b6ff0cbfdaa56242ca1fd0492f1a6762e76260f4c8a565bb927cd1372f06a.png"
     },
     "/keeper-review/keeper-prime-stair-ascent-v2/assets/stair-left-f1-1aef25985a201909.png": {
       "sha256": "1aef25985a201909ec753dd18911a53e8ba72ede6d677b4bf2a522a1040e32a9",

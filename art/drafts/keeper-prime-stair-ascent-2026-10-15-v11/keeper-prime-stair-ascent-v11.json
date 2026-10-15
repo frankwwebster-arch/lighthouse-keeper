@@ -1,0 +1,36 @@
+{
+  "schema": "lighthouse-keeper/prime-stair-ascent@11",
+  "status": "draft-v11-alternating-intermediates-awaiting-review",
+  "rejectionOfV10": "Generated motion studies changed the Prime silhouette and could not maintain binding tread contacts.",
+  "correction": "Return to V6/V7 same-family art; select collision-safe lift/reach/plant poses; add bounded asymmetric contralateral arm warps.",
+  "geometry": {
+    "floorTopLp": 20,
+    "firstFloorSupportCentreLp": 103.5,
+    "firstTreadCentreLp": 97.5,
+    "flightRunLp": 84,
+    "flightRiseLp": 60,
+    "risers": 14,
+    "treadRunLp": 6,
+    "riserRiseLp": 4.285714285714286,
+    "framesPerStep": 3,
+    "millisecondsPerFrame": 95,
+    "millisecondsPerStep": 285,
+    "rightRootRunLp": [
+      0,
+      3.5,
+      6
+    ],
+    "leftRootRunLp": [
+      0,
+      2.25,
+      6
+    ]
+  },
+  "promoted": false,
+  "unchanged": {
+    "v1ThroughV10": true,
+    "v9TreadGeometry": true,
+    "finalLane": true,
+    "production": true
+  }
+}

@@ -1377,6 +1377,19 @@ timing and stair dimensions remain exact V8 values. V9 is still a four-contact
 mechanical gate only, not the complete ascent, and nothing is approved, in
 Final or in production.
 
+The next active review gate is
+`/keeper-review/keeper-prime-stair-ascent-v11/`. V10 is preserved as rejected
+source-study provenance: independently generated half-cycles did not preserve
+one exact Prime silhouette or binding tread geometry. V11 therefore derives
+from the established V6/V7 stair family. It uses three collision-safe drawings
+per tread—lift, reach and plant—over four adjacent treads. RIGHT-leg steps pair
+with a maximum 3-source-pixel LEFT-arm counter-motion; LEFT-leg steps pair with
+a clearer maximum 7-source-pixel RIGHT-arm counter-motion. Pixels outside the
+bounded arm region are unchanged, lower legs are unchanged from y=247, all
+cells retain transparent gutters, and the review page waits for all six unique
+drawings to decode before playback. V11 remains unapproved and changes no
+Final art, runtime sprite or production geometry.
+
 ## Review-comments workflow for a later feedback round
 
 1. Do not process another review export until the beard evidence gate is

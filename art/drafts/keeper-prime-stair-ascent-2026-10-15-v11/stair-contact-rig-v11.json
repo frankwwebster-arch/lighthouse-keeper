@@ -1,0 +1,45 @@
+{
+  "schema": "lighthouse-keeper/stair-contact-rig@11",
+  "status": "intermediate-motion-candidate-awaiting-review",
+  "direction": "leftward gameplay",
+  "cell": [
+    256,
+    320
+  ],
+  "density": 8,
+  "geometry": {
+    "floorTopLp": 20,
+    "firstFloorSupportCentreLp": 103.5,
+    "firstTreadCentreLp": 97.5,
+    "flightRunLp": 84,
+    "flightRiseLp": 60,
+    "risers": 14,
+    "treadRunLp": 6,
+    "riserRiseLp": 4.285714285714286,
+    "framesPerStep": 3,
+    "millisecondsPerFrame": 95,
+    "millisecondsPerStep": 285,
+    "rightRootRunLp": [
+      0,
+      3.5,
+      6
+    ],
+    "leftRootRunLp": [
+      0,
+      2.25,
+      6
+    ]
+  },
+  "contactOrder": [
+    "right",
+    "left",
+    "right",
+    "left"
+  ],
+  "contract": [
+    "Each step uses lift, reach and plant only; V6 pose 2 is deliberately excluded because its boot intersects the next riser.",
+    "RIGHT leg phases pair with a restrained LEFT-arm counter-motion; LEFT leg phases pair with a clearer RIGHT-arm counter-motion.",
+    "The complete root advances exactly one 6-lp tread per three-frame step and rises only when the support changes to the next tread.",
+    "Every selected lower-leg pixel is inherited unchanged from the V6/V7 same-family stair art; only the bounded arm region is warped."
+  ]
+}
