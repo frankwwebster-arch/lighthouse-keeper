@@ -180,19 +180,20 @@ room has 12, leaving one spare. The cupboard takes none.
    (and the basic hoover, for later), at 193 lp and at 298 lp. If the leaf
    cannot hide him, say so.
 
-3. **Room door direction and clear area.** Frank asked why the door zone
-   is 46 lp when the leaf is 24, and proposed that the room door open
-   **outward, into the stairwell**. Then the room keeps only a 4-lp frame
-   clear (lattice origin 32 ku instead of 368 ku), freeing two bays in
-   every room; the costume change happens behind the leaf on the stair
-   side. Please assess, without changing any approved transition: whether
-   an outward leaf fits beside the stairs and ladder in the 105-lp core,
-   and how the door-exit and stair-entry transitions would change. Also
-   measure the fallback: an inward door with a 25-lp clear area (the leaf
-   plus 1 lp), checking that every costume change and wide composite
-   (keeper plus mower, raised tools, party hat) stays hidden. Frank
-   decides between these on his page. Draw nothing differently for it;
-   only the room layouts would shift.
+3. **Room door direction: your decision.** Frank prefers the room door
+   to open **outward, into the stairwell**, and thinks it may help the
+   stair transition. He has left the final call to you. Outward, the room
+   keeps only a 4-lp frame clear (lattice origin 32 ku instead of
+   368 ku), freeing two bays in every room, and the costume change happens
+   behind the leaf on the stair side. Check that an outward leaf fits
+   beside the stairs and ladder in the 105-lp core and works with your
+   door-exit and stair-entry transitions. If outward doesn't work, the
+   fallback is an inward door with a 25-lp clear area (the leaf plus 1 lp),
+   provided every costume change and wide composite (keeper plus mower,
+   raised tools, party hat) stays hidden; failing both, keep 46 lp. Change
+   no approved transition to decide this: propose, and record your choice
+   and its clear-area width in your note to Claude. None of the furniture
+   drawings depend on it; only the room layouts shift.
 
 ## 6. Out of scope
 
