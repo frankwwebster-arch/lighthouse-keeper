@@ -1,0 +1,33 @@
+{
+  "schema": "lighthouse-keeper/stair-contact-rig@8",
+  "status": "four-contact-horizontal-index-correction",
+  "direction": "leftward gameplay",
+  "cell": [
+    256,
+    320
+  ],
+  "density": 8,
+  "geometry": {
+    "floorTopLp": 20,
+    "staircaseBoundaryXLp": 100.5,
+    "firstFloorSupportCentreXLp": 103.5,
+    "firstTreadCentreXLp": 97.5,
+    "treadRunLp": 6,
+    "riserRiseLp": 4.285714285714286,
+    "shownContacts": 4,
+    "horizontalCorrectionFromV7Lp": 6,
+    "contactDurationMs": 320
+  },
+  "contactOrder": [
+    "right",
+    "left",
+    "right",
+    "left"
+  ],
+  "contract": [
+    "Frame 1 support foot is on the floor immediately before the staircase, not over tread 1.",
+    "Frame 1 moving foot is on tread 1, not over tread 2.",
+    "Every later frame advances both foot contacts by exactly one adjacent tread.",
+    "V7 artwork, vertical positions, stair dimensions and timing are byte-for-byte unchanged."
+  ]
+}

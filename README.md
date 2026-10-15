@@ -83,15 +83,16 @@ foreground stair stringer and bannister above the boots/lower shins. Its mask
 is on by default and can be toggled off for an exact V3 comparison. V4 reuses
 the 17 V3 media hashes without adding archive objects.
 
-Frank rejected V6 because its intermediate drawings still let boots pass
-through the treads. Preserve V6 as rejected provenance. The active unapproved
-V7 diagnostic is `/keeper-review/keeper-prime-stair-ascent-v7/`. It deliberately
-uses only two unique planted-contact drawings and shows four states:
-RIGHT-forward/up, LEFT-forward/up, then the same pair once more. There are no
-swing, high-pass or transfer frames. Each support sole is registered to its
-lower tread and the moving sole to the immediately adjacent upper tread (6 lp
-run, 60/14 lp rise). This is a basic leg/contact proof, not a complete stair
-transition. Nothing has entered Final or production.
+Frank rejected V7 because its horizontal contact index was one tread ahead of
+its vertical index: frame 1 placed the support foot over tread 1 at floor
+height and the raised foot over tread 2 at tread-1 height. Preserve V7 as
+rejected provenance. The active unapproved V8 diagnostic is
+`/keeper-review/keeper-prime-stair-ascent-v8/`. V8 shifts the complete Keeper
+root and both contact markers exactly one 6-lp tread right. Frame 1 therefore
+supports on the floor and lands on tread 1; subsequent RIGHT/LEFT contacts
+advance one adjacent tread each. Artwork, vertical positions, timing and stair
+dimensions are unchanged. This remains a basic four-contact proof, not a
+complete transition. Nothing has entered Final or production.
 
 ## Run it
 ```

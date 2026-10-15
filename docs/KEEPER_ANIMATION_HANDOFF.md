@@ -1366,16 +1366,17 @@ default and toggleable for direct masked/unmasked comparison. V4 owns 17
 versioned archive aliases, all resolving to the same 17 immutable V3 objects;
 no binary art is duplicated and nothing has moved to Final or production.
 
-Frank rejected V6 because the added intermediate phases still let the feet pass
-through the drawn treads. V6 remains immutable rejected provenance. The active
-unapproved `/keeper-review/keeper-prime-stair-ascent-v7/` is intentionally much
-smaller: two unique planted-contact drawings shown as RIGHT, LEFT, RIGHT, LEFT.
-No lift, swing, high-pass or transfer frames are present. The support sole is
-locked to y316 and the moving sole to y282; deterministic page placement maps
-them to immediately adjacent treads (6 lp run and 60/14 lp rise). The original
-upper body is byte-identical through y219 and both 256×320 cells retain fully
-transparent edge gutters. V7 is a four-contact mechanical gate only, not the
-complete ascent, and nothing is approved, in Final or in production.
+Frank rejected V7 because its horizontal contact index was one tread ahead of
+its vertical index: the first support foot was horizontally over tread 1 while
+still at floor height, and the raised foot was over tread 2 at tread-1 height.
+V7 remains immutable rejected provenance. The active unapproved
+`/keeper-review/keeper-prime-stair-ascent-v8/` preserves both V7 image hashes,
+all vertical coordinates, 320-ms timing and stair dimensions. It shifts the
+complete Keeper root and both contact guides +6 lp, exactly one tread right.
+Frame 1 now supports on the floor at x=103.5 and lands on tread 1 at x=97.5;
+the remaining LEFT/RIGHT contacts advance by one adjacent tread. V8 is still a
+four-contact mechanical gate only, not the complete ascent, and nothing is
+approved, in Final or in production.
 
 ## Review-comments workflow for a later feedback round
 

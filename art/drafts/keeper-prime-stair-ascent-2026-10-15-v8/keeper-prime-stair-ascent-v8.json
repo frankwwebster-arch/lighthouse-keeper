@@ -1,0 +1,27 @@
+{
+  "schema": "lighthouse-keeper/prime-stair-ascent@8",
+  "status": "draft-v8-first-step-horizontal-registration-awaiting-review",
+  "rejectionOfV7": "V7 placed support tread n at the horizontal centre of tread n+1, so every foot was one tread too far up-flight.",
+  "correction": "Shift the Keeper root, support marker and target marker +6 lp without changing artwork, vertical geometry, timing or stairs.",
+  "geometry": {
+    "floorTopLp": 20,
+    "staircaseBoundaryXLp": 100.5,
+    "firstFloorSupportCentreXLp": 103.5,
+    "firstTreadCentreXLp": 97.5,
+    "treadRunLp": 6,
+    "riserRiseLp": 4.285714285714286,
+    "shownContacts": 4,
+    "horizontalCorrectionFromV7Lp": 6,
+    "contactDurationMs": 320
+  },
+  "promoted": false,
+  "unchanged": {
+    "v1ThroughV7": true,
+    "v7Artwork": true,
+    "v7VerticalPositions": true,
+    "v7Timing": true,
+    "stairGeometry": true,
+    "finalLane": true,
+    "production": true
+  }
+}

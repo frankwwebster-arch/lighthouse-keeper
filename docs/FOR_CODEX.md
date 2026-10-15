@@ -99,17 +99,17 @@ it off to expose the exact V3 motion. V4's 17 versioned asset aliases resolve
 to the existing V3 archive objects, so no binary artwork is duplicated. Do
 not promote the mask or V3 motion without Frank's explicit approval.
 
-Frank rejected V6 because the six intermediate phases still showed boots
-passing through tread surfaces. Preserve it unchanged as rejected provenance.
-The active unapproved V7 diagnostic is
-`/keeper-review/keeper-prime-stair-ascent-v7/`. It strips the test down to two
-unique planted-contact drawings and a four-frame RIGHT, LEFT, RIGHT, LEFT loop.
-There are no swing, high-pass or weight-transfer drawings. Each 256×320 cell
-keeps a transparent gutter and the original upper body through y219; the
-support sole is y316 and moving sole y282. Page placement binds the two soles
-to immediately adjacent treads of 6 lp run and 60/14 lp rise. V7 is only a
-mechanical leg/contact gate, not a complete stair transition and not approved.
-No approved walk, Final or production file changed.
+Frank rejected V7 because its horizontal foot-contact index was one tread ahead
+of its vertical index. Frame 1 therefore stood over tread 1 at floor height and
+reached over tread 2 at tread-1 height. Preserve V7 unchanged as rejected
+provenance. The active unapproved V8 diagnostic is
+`/keeper-review/keeper-prime-stair-ascent-v8/`. It shifts the complete Keeper
+root plus support and target markers exactly +6 lp, while retaining the exact
+V7 image hashes, vertical coordinates, 320-ms timing and stair geometry. Frame
+1 now supports at floor centre x=103.5 and lands on tread-1 centre x=97.5;
+later RIGHT/LEFT contacts advance one adjacent tread each. V8 remains only a
+four-contact mechanical gate, not a complete transition and not approved. No
+approved walk, Final or production file changed.
 
 ## Lift entry alignment correction (14 Oct 2026)
 

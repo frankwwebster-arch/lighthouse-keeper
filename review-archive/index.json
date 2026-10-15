@@ -11,12 +11,12 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 45,
-    "referenceCount": 691,
+    "setCount": 46,
+    "referenceCount": 693,
     "uniqueObjectCount": 308,
-    "logicalBytes": 87379502,
+    "logicalBytes": 87484981,
     "uniqueBytes": 51969364,
-    "deduplicatedBytes": 35410138
+    "deduplicatedBytes": 35515617
   },
   "legacyPaths": {
     "/keeper-review/drafts/00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271.png": {
@@ -2127,6 +2127,20 @@
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/25/25493bd2d85ba7b7654515d1a47efad8c5bc275b056e00c7b7c2e278493e1565.png"
     },
     "/keeper-review/keeper-prime-stair-ascent-v7/assets/right-contact-f2c630a34f23cc0e.png": {
+      "sha256": "f2c630a34f23cc0e1afdd6e00f138b24adf9a1b97a1609650c79e1b87a273f5b",
+      "extension": ".png",
+      "bytes": 53721,
+      "object": "review-archive/objects/f2/f2c630a34f23cc0e1afdd6e00f138b24adf9a1b97a1609650c79e1b87a273f5b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f2/f2c630a34f23cc0e1afdd6e00f138b24adf9a1b97a1609650c79e1b87a273f5b.png"
+    },
+    "/keeper-review/keeper-prime-stair-ascent-v8/assets/left-contact-25493bd2d85ba7b7.png": {
+      "sha256": "25493bd2d85ba7b7654515d1a47efad8c5bc275b056e00c7b7c2e278493e1565",
+      "extension": ".png",
+      "bytes": 51758,
+      "object": "review-archive/objects/25/25493bd2d85ba7b7654515d1a47efad8c5bc275b056e00c7b7c2e278493e1565.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/25/25493bd2d85ba7b7654515d1a47efad8c5bc275b056e00c7b7c2e278493e1565.png"
+    },
+    "/keeper-review/keeper-prime-stair-ascent-v8/assets/right-contact-f2c630a34f23cc0e.png": {
       "sha256": "f2c630a34f23cc0e1afdd6e00f138b24adf9a1b97a1609650c79e1b87a273f5b",
       "extension": ".png",
       "bytes": 53721,
