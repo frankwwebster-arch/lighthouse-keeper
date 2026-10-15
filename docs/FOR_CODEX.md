@@ -177,6 +177,41 @@ foreground layer should plausibly obscure parts of the boots/lower legs while
 the tread/contact geometry remains the approved 14-riser, 7-lp-tread,
 98-by-60-lp flight.
 
+## Stair entry and landing-exit transition gate (15 Oct 2026)
+
+The current review candidate is
+`/keeper-review/keeper-prime-stair-transitions-v1/`. Its approved authorities
+remain byte-identical: Walk V6, Stair Ascent V16, approved side/back Turn V9,
+the side/front turn source retained for the opposite flight, and the approved
+stop-to-walk bridge. Left travel is CSS-mirrored only. Two new masked
+right-hand door-reach cells are present as unapproved candidate art.
+
+- Lower door and upper door share x=140.5 lp; fully hidden root is x=161.5.
+- The lower stair root is x=119.5, exactly 21 lp/one full visible walk cycle
+  from the door. Two walk cycles are shown so the first begins while occluded.
+  Mirrored Walk F8 advances directly into Stair V16 F1 with no held frame.
+- The upper route establishes both feet on the x=14.5 landing root. Because
+  travel was bottom-right → top-left, it turns clockwise side-left → back →
+  side-right through approved Turn V9. The opposite flight must turn clockwise
+  side-right → front → side-left. He walks and decelerates to x=130, reaches
+  the x=144 handle with his right hand, opens the door, returns briefly to
+  exact neutral, restarts and finishes hidden at x=161.5.
+- The acceleration reuses exact approved bridge drawings with the proposed
+  `candidate-42` roots 3, 7, 13, 19 ku. This root schedule is still awaiting
+  Frank's visual approval and does not amend its approved source record.
+- Both generated landing experiments are rejected provenance only. One changed
+  the silhouette; the other faced the wrong way and had three arms. Neither is
+  copied to the public review assets or present in any route.
+- The later partial/full door-reach sources have exactly two arms. Only their
+  declared arm-region pixels are composited over the exact approved side
+  neutral; the verifier requires every out-of-mask pixel to remain identical.
+
+The page preloads and decodes all 27 unique URLs before enabling playback. Run
+`npm run verify:keeper-prime-stair-transitions-v1` to check authority hashes,
+256×320 transparent cell gutters, rejected-source exclusion, exact geometry,
+moving joins, hallway closure, controls and approval boundaries. Nothing is in
+Final or runtime until Frank approves the candidate.
+
 ## Lift entry alignment correction (14 Oct 2026)
 
 The focused construction review

@@ -1454,6 +1454,41 @@ architecturally honest occlusion layer above the Keeper, deliberately covering
 parts of the boots and lower legs; stair treads and rear structure remain
 behind him. Review this scenery separately at large and exact game scale.
 
+The first door/stair transition proposal is the immutable candidate page
+`/keeper-review/keeper-prime-stair-transitions-v1/`, backed by
+`art/drafts/keeper-prime-stair-transitions-2026-10-15-v1/`. It has two focused
+routes plus a complete door-to-door playback:
+
+1. Begin an exact mirrored Walk V6 cycle while the Keeper is hidden behind the
+   lower door, emerge, complete one full visible cycle from x=140.5 to x=119.5,
+   then advance from Walk F8 into Stair V16 F1 without a stop or repeated root.
+2. Show the final five approved stair frames, transfer the trailing foot onto
+   the flat landing with exact mirrored Walk V6 F3, establish the exact side
+   neutral at x=14.5, turn through the Prime full-face frame to side-right,
+   accelerate and cross the upper hallway door at x=140.5 before finishing
+   fully hidden at x=161.5.
+
+The landing-to-door distance is 126 lp, exactly twelve 10.5-lp step intervals;
+door-to-hidden is one further 21-lp cycle. Walk and turn playback use approved
+Fast Timing V1 (10 fps and 16 fps); the approved stair cadence remains 110 ms.
+The continuing route suppresses V16's terminal 900-ms review hold because the
+Keeper is exiting rather than stopping on the landing. The four acceleration
+frames carry proposed candidate-42 root deltas 3, 7, 13 and 19 ku; their art is
+exact approved bridge art, but the new root schedule is not approved.
+
+The builder rejected both generated landing studies. One redrew the silhouette
+too broadly and the other was wrong-facing with three arms. They remain only
+under the draft pack's `sources/rejected/` provenance folder. The timeline,
+public asset list and verifier contain no rejected-study bytes. The review page
+preloads all 27 unique images, supports pause/previous/next/restart/loop,
+sequence selection, root guides and door-occlusion removal, and displays both
+a 960-pixel inspection world and exact game scale. Run
+`npm run verify:keeper-prime-stair-transitions-v1`; it fails on authority hash,
+cell geometry/gutter, join/root, route/page, rejected-source or approval-boundary
+drift. No strip is emitted for this composition-only gate; source strips and
+sidecars remain unchanged and separately verified. Final, runtime and
+production remain unchanged pending Frank's explicit visual approval.
+
 ## Review-comments workflow for a later feedback round
 
 1. Do not process another review export until the beard evidence gate is

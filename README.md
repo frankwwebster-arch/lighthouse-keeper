@@ -159,6 +159,26 @@ handrail between them. That foreground architecture may naturally cover parts
 of the Keeper's boots and lower legs, but it may not change the approved
 fourteen-riser contact geometry.
 
+The next reversible transition gate is
+`/keeper-review/keeper-prime-stair-transitions-v1/`. It composes exact approved
+authorities plus two clearly labelled candidate door-reach cells into two
+reviewable sequences: lower transfer door → two walk cycles → moving Stair V16
+F1, and final Stair V16 contacts → flat landing → clockwise
+side-left/back/side-right turn → hallway walk → stop/reach/open → walk through
+to complete door occlusion.
+The lower door is one complete 21-lp visible walk cycle from the stair root;
+the upper landing is 126 lp/twelve step intervals from the matching door, with
+one additional 21-lp cycle behind it. The page preloads all 27 unique cells,
+offers frame stepping, root guides, door-occlusion toggling, a 960-pixel-wide
+inspection pane and exact 1-CSS-pixel-per-logical-pixel playback. Its
+candidate-42 acceleration/deceleration roots (3, 7, 13, 19 ku) and two-frame
+right-hand door reach are explicitly unapproved.
+Two generated landing studies—including a wrong-facing three-armed result—are
+quarantined as rejected provenance and contribute no displayed pixels. The
+selected reach sources have exactly two arms and are composited only inside a
+declared arm mask over the byte-identical approved side neutral. No Final,
+runtime or production asset has changed.
+
 ## Run it
 ```
 npm install
@@ -169,6 +189,7 @@ npm run build    # production build
 npm run sprites  # snap Codex's PNGs in art/raw/ into public/sprites/ (docs/CODEX_ASSETS.md)
 npm run keeper-contract # rebuild neutral stills, bridges and the endpoint audit
 npm run archive:keeper-review # deduplicate new review media before committing
+npm run verify:keeper-prime-stair-transitions-v1 # exact frames, gutters, roots, joins and review-page contract
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
 
@@ -353,7 +374,7 @@ must remain paused to avoid duplicate alerts.
 - `data/keeper_pose_registry.json`, `data/keeper_endpoint_audit.json` and `data/keeper_endpoint_exceptions.json` — shared pose vocabulary, current real-pixel endpoint evidence, and the frozen legacy migration boundary.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
 - `public/keeper-review/index.html` — canonical online-only reviewer deployed at `/keeper-review/`; `docs/keeper-scale-audit/review.html` is the generated audit artifact and must be byte-identical, but when opened outside `/keeper-review` it sends the viewer to the live platform instead of presenting a second workspace. Its gallery is a compact visual scan (name, review state, last local save/redraft, playback and frame stepping); `Open close review` opens any chosen card immediately. `Find animation` searches names and overrides all other filters; otherwise independently filter by review state, pose and active/reserve use list. Close review lets Frank override the inferred pose tag, relegate a likely duplicate to the reversible reserve list, expand/compress retained draft comparisons, and select canonical or every exact-name draft as an exportable preferred-promotion candidate—without mutating production. **Hand back to Codex** always asks for confirmation, saves any unsaved cards to that browser if confirmed, then submits the full batch to the durable server-side queue. The server records a semantic exact-name delta (ignoring save timestamps), comparing the first server hand-back to the shipped review baseline and later ones to the prior hand-back; the receipt reports only the changed animation count for later Codex work. When Codex claims a batch, the online reviewer becomes read-only until the delivery is completed, while retaining playback and inspection; JSON backup/import is collapsed as an exceptional browser-recovery option.
-- `review-archive/`, `docs/REVIEW_ARCHIVE.md` and `scripts/archive_keeper_review_media.mjs` — content-addressed storage for review-only images and GIFs. All 579 review paths resolve through 38 manifests to 246 unique SHA-256 objects hosted outside Vercel deployments. Immutable page bytes and old URLs remain preserved; short-lived redirects keep the media host replaceable, and new animations preload every moving frame before playback. `public/` is 43.04 MiB instead of roughly 115 MiB.
+- `review-archive/`, `docs/REVIEW_ARCHIVE.md` and `scripts/archive_keeper_review_media.mjs` — content-addressed storage for review-only images and GIFs. All 748 review paths resolve through 54 set manifests to 327 unique SHA-256 objects hosted outside Vercel deployments. Immutable page bytes and old URLs remain preserved; short-lived redirects keep the media host replaceable, and new animations preload every moving frame before playback. `public/` is 43.62 MiB instead of roughly 115 MiB.
 - `data/keeper_side_on_beard_occlusion_audit.json`, `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/`, and `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` — completed draft-only v2 beard/hand audit and preserved rejected v1 history. The active reviewer shows v2 beside canonical and the separate Frank-selected darts draft; the verifier prevents implicit promotion.
 - `data/keeper_review_drafts.json` and `art/drafts/` — SHA-256-pinned, exact-name review comparisons: the draft-only darts candidate, seven active V11 artist-smock candidates, the accepted complete-route `keeper_snooker` candidate, the 41 exact-name 11 October amendment candidates and the separate party-hat frame-2 v2 variant, plus the ten selected canonical promotions and their reversible previous versions. Hash-addressed reviewer copies prevent same-name historical and current variants from overwriting one another. `scripts/verify_keeper_review_drafts.ts` checks every registered source, canonical/current comparison, sidecar, gutter, publication and reviewer attachment.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.
