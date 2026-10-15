@@ -62,11 +62,19 @@ opposite zigzag parity remain separate review gates. Nothing is in Final or
 production.
 Frank rejected V1's visual execution because its sprite faced opposite its
 leftward door-exit motion and its second leg barely moved. The immutable V1
-remains as historical evidence. The corrected unapproved V2 is at
+remains as historical evidence. The first correction attempt, V2, is at
 `/keeper-review/keeper-prime-stair-ascent-v2/`: its approach is an exact
 horizontal mirror of approved Walk V6, and the climb redraw follows Walk V6's
 first-leg F1–F4 / opposite-leg F5–F8 phase structure. Route geometry and the
 zero-pause join are unchanged; nothing is in Final or production.
+Frank rejected V2 after motion review because the labelled phases still did
+not read as a genuine leg transfer and the left boot struck below the stair
+surface. The active replacement is the reversible, unapproved
+`/keeper-review/keeper-prime-stair-ascent-v3/`. V3 uses eight individually
+registered poses: the near leg completes F1–F4 and the far leg completes
+F5–F8. Each lowest contact sole is fixed at cell y=316 and mapped to the actual
+tread top, while a toggle exposes that datum in the review page. V1 and V2
+remain immutable rejected evidence; nothing has entered Final or production.
 
 ## Run it
 ```

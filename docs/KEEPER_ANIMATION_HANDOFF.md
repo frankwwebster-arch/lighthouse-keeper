@@ -1337,11 +1337,23 @@ Nothing is approved, in Final or in production.
 Frank rejected Stair Ascent V1's visual execution on 15 Oct 2026 because the
 approach sprite faced backwards relative to its leftward root motion and the
 second climbing leg remained too static. V1 remains immutable rejected
-provenance. `/keeper-review/keeper-prime-stair-ascent-v2/` is the corrected
-unapproved candidate: its approach frames are exact horizontal mirrors of
+provenance. `/keeper-review/keeper-prime-stair-ascent-v2/` was the first
+unapproved correction attempt: its approach frames are exact horizontal mirrors of
 approved Walk V6, while its eight-pose climb is redrawn to follow Walk V6's
 first-leg F1–F4 and opposite-leg F5–F8 phase authority. The measured route,
 zero-pause join, Final and production remain unchanged.
+
+Frank rejected V2 after motion review because its declared phase change still
+did not produce a readable opposite-leg transfer and the left boot dropped
+below the stair surface. V2 remains immutable rejected provenance. The active
+unapproved replacement is
+`/keeper-review/keeper-prime-stair-ascent-v3/`. V3 redraws and registers each
+pose separately against a deterministic two-step contact rig: near leg F1–F4,
+far leg F5–F8. The prepared left/right cells are 256×320 with transparent
+gutters, exact mirrors and a fixed lowest-sole y=316 datum. Review placement
+maps that sole to the mathematical top of its active tread; the review UI can
+show the contact line and loop only one two-step cycle. V1/V2, approved walk
+pixels, route geometry, Final and production remain unchanged.
 
 ## Review-comments workflow for a later feedback round
 

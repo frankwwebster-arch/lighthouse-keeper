@@ -1,0 +1,29 @@
+{
+  "schema": "lighthouse-keeper/prime-stair-ascent@3",
+  "status": "draft-v3-contact-locked-opposite-leg-cycle-awaiting-review",
+  "rejectionOfV2": "V2 declared phase alternation but did not visually transfer the moving leg; a boot also passed below the stair surface.",
+  "corrections": {
+    "alternation": "F1-F4 near leg advances one riser; F5-F8 far leg advances the next riser.",
+    "contact": "Each lower support/contact sole is registered to y316 and placed exactly on its active tread top.",
+    "stairs": "CSS blocks use bottom=floor top and height=riser index × rise, so their visible top is the actual tread datum."
+  },
+  "geometry": {
+    "floorTopLp": 20,
+    "baseX": 94.5,
+    "treadRunLp": 5.25,
+    "riserRiseLp": 3.75,
+    "risers": 16,
+    "cellWidthLp": 32,
+    "soleOffsetLp": 0.5,
+    "cycleRunLp": 10.5,
+    "cycleRiseLp": 7.5
+  },
+  "unchanged": {
+    "v1": true,
+    "v2": true,
+    "approvedWalkSourcePixels": true,
+    "runtimeGeometry": true,
+    "finalLane": true,
+    "production": true
+  }
+}

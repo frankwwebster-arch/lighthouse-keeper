@@ -1,0 +1,414 @@
+{
+  "schema": "lighthouse-keeper/stair-contact-rig@1",
+  "direction": "right-facing authoring; exact horizontal mirror produces leftward gameplay flight",
+  "cell": [
+    256,
+    320
+  ],
+  "density": 8,
+  "treadRunLp": 5.25,
+  "riserHeightLp": 3.75,
+  "cycleRunLp": 10.5,
+  "cycleRiseLp": 7.5,
+  "colours": {
+    "nearLeg": "#ff5264",
+    "farLeg": "#45d3ff",
+    "exactSoleContact": "#75e6a7",
+    "forbiddenBelowTread": "#ff5a5a"
+  },
+  "rules": [
+    "F1-F4 advances near leg one riser while far leg supports.",
+    "F5-F8 advances far leg one riser while near leg supports.",
+    "A planted sole is exactly on y=316; a reaching sole is exactly one 30-source-pixel riser above at y=286.",
+    "No finished opaque boot pixel may enter the red forbidden-below-tread region at its world x-position."
+  ],
+  "frames": [
+    {
+      "frame": 1,
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v3/guides/stair-contact-guide-right-f1.png",
+      "rootOffsetLp": [
+        0,
+        0
+      ],
+      "supportLeg": "far",
+      "contacts": {
+        "far": "lower"
+      },
+      "nearLeg": {
+        "knee": [
+          108,
+          257
+        ],
+        "ankle": [
+          91,
+          280
+        ],
+        "heel": [
+          74,
+          299
+        ],
+        "toe": [
+          103,
+          299
+        ]
+      },
+      "farLeg": {
+        "knee": [
+          128,
+          266
+        ],
+        "ankle": [
+          128,
+          292
+        ],
+        "heel": [
+          110,
+          316
+        ],
+        "toe": [
+          138,
+          316
+        ]
+      }
+    },
+    {
+      "frame": 2,
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v3/guides/stair-contact-guide-right-f2.png",
+      "rootOffsetLp": [
+        1,
+        0
+      ],
+      "supportLeg": "far",
+      "contacts": {
+        "far": "lower"
+      },
+      "nearLeg": {
+        "knee": [
+          149,
+          247
+        ],
+        "ankle": [
+          166,
+          268
+        ],
+        "heel": [
+          148,
+          282
+        ],
+        "toe": [
+          179,
+          282
+        ]
+      },
+      "farLeg": {
+        "knee": [
+          122,
+          266
+        ],
+        "ankle": [
+          120,
+          292
+        ],
+        "heel": [
+          102,
+          316
+        ],
+        "toe": [
+          130,
+          316
+        ]
+      }
+    },
+    {
+      "frame": 3,
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v3/guides/stair-contact-guide-right-f3.png",
+      "rootOffsetLp": [
+        2,
+        0
+      ],
+      "supportLeg": "far",
+      "contacts": {
+        "far": "lower",
+        "near": "upper"
+      },
+      "nearLeg": {
+        "knee": [
+          150,
+          251
+        ],
+        "ankle": [
+          160,
+          270
+        ],
+        "heel": [
+          145,
+          286
+        ],
+        "toe": [
+          176,
+          286
+        ]
+      },
+      "farLeg": {
+        "knee": [
+          118,
+          266
+        ],
+        "ankle": [
+          112,
+          292
+        ],
+        "heel": [
+          94,
+          316
+        ],
+        "toe": [
+          122,
+          316
+        ]
+      }
+    },
+    {
+      "frame": 4,
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v3/guides/stair-contact-guide-right-f4.png",
+      "rootOffsetLp": [
+        5.25,
+        3.75
+      ],
+      "supportLeg": "near",
+      "contacts": {
+        "near": "lower"
+      },
+      "nearLeg": {
+        "knee": [
+          144,
+          266
+        ],
+        "ankle": [
+          144,
+          292
+        ],
+        "heel": [
+          126,
+          316
+        ],
+        "toe": [
+          156,
+          316
+        ]
+      },
+      "farLeg": {
+        "knee": [
+          108,
+          253
+        ],
+        "ankle": [
+          90,
+          275
+        ],
+        "heel": [
+          73,
+          290
+        ],
+        "toe": [
+          102,
+          290
+        ]
+      }
+    },
+    {
+      "frame": 5,
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v3/guides/stair-contact-guide-right-f5.png",
+      "rootOffsetLp": [
+        5.25,
+        3.75
+      ],
+      "supportLeg": "near",
+      "contacts": {
+        "near": "lower"
+      },
+      "nearLeg": {
+        "knee": [
+          142,
+          266
+        ],
+        "ankle": [
+          142,
+          292
+        ],
+        "heel": [
+          124,
+          316
+        ],
+        "toe": [
+          154,
+          316
+        ]
+      },
+      "farLeg": {
+        "knee": [
+          110,
+          257
+        ],
+        "ankle": [
+          93,
+          280
+        ],
+        "heel": [
+          76,
+          299
+        ],
+        "toe": [
+          105,
+          299
+        ]
+      }
+    },
+    {
+      "frame": 6,
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v3/guides/stair-contact-guide-right-f6.png",
+      "rootOffsetLp": [
+        6.25,
+        3.75
+      ],
+      "supportLeg": "near",
+      "contacts": {
+        "near": "lower"
+      },
+      "nearLeg": {
+        "knee": [
+          124,
+          266
+        ],
+        "ankle": [
+          120,
+          292
+        ],
+        "heel": [
+          102,
+          316
+        ],
+        "toe": [
+          132,
+          316
+        ]
+      },
+      "farLeg": {
+        "knee": [
+          151,
+          247
+        ],
+        "ankle": [
+          168,
+          268
+        ],
+        "heel": [
+          150,
+          282
+        ],
+        "toe": [
+          181,
+          282
+        ]
+      }
+    },
+    {
+      "frame": 7,
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v3/guides/stair-contact-guide-right-f7.png",
+      "rootOffsetLp": [
+        7.25,
+        3.75
+      ],
+      "supportLeg": "near",
+      "contacts": {
+        "near": "lower",
+        "far": "upper"
+      },
+      "nearLeg": {
+        "knee": [
+          118,
+          266
+        ],
+        "ankle": [
+          112,
+          292
+        ],
+        "heel": [
+          94,
+          316
+        ],
+        "toe": [
+          124,
+          316
+        ]
+      },
+      "farLeg": {
+        "knee": [
+          151,
+          251
+        ],
+        "ankle": [
+          161,
+          270
+        ],
+        "heel": [
+          146,
+          286
+        ],
+        "toe": [
+          177,
+          286
+        ]
+      }
+    },
+    {
+      "frame": 8,
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v3/guides/stair-contact-guide-right-f8.png",
+      "rootOffsetLp": [
+        10.5,
+        7.5
+      ],
+      "supportLeg": "far",
+      "contacts": {
+        "far": "lower"
+      },
+      "nearLeg": {
+        "knee": [
+          108,
+          253
+        ],
+        "ankle": [
+          90,
+          275
+        ],
+        "heel": [
+          73,
+          290
+        ],
+        "toe": [
+          102,
+          290
+        ]
+      },
+      "farLeg": {
+        "knee": [
+          144,
+          266
+        ],
+        "ankle": [
+          144,
+          292
+        ],
+        "heel": [
+          126,
+          316
+        ],
+        "toe": [
+          156,
+          316
+        ]
+      }
+    }
+  ],
+  "contactSheet": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v3/guides/stair-contact-guide-right-8pose.png"
+}

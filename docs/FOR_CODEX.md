@@ -71,11 +71,23 @@ runtime geometry, Final and production remain unchanged.
 Frank rejected the V1 visual execution on 15 Oct 2026: the Keeper walked out
 of the right-hand transfer door backwards relative to his leftward root motion,
 and the second leg did not take a convincing alternating stair step. Keep V1
-immutable as rejected provenance. The correction is the unapproved
+immutable as rejected provenance. The first correction attempt was the
 `/keeper-review/keeper-prime-stair-ascent-v2/`. V2 horizontally mirrors the
 exact approved Walk V6 frames for the approach and redraws the climb against
 Walk V6's explicit F1–F4 first-leg / F5–F8 opposite-leg phase authority. It
 does not change route geometry, timing, Final or production.
+
+Frank rejected V2 after seeing it move: the visual leg roles still did not
+alternate convincingly and the left boot passed below the stair surface. Keep
+V2 immutable. The active unapproved correction is
+`/keeper-review/keeper-prime-stair-ascent-v3/`. V3 is a fresh, versioned set of
+eight individually rendered and registered poses. Near advances in F1–F4; far
+advances in F5–F8. Every frame has an isolated 256×320 cell, transparent edge
+gutter and y=316 lowest-sole datum. Playback computes each lower support
+contact from its declared tread centre/top, and the page includes frame
+stepping, a two-step-only loop, an exact-logical-scale view and an optional
+contact-line overlay. No prior candidate, runtime geometry, Final or
+production file changed.
 
 ## Lift entry alignment correction (14 Oct 2026)
 
