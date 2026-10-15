@@ -67,8 +67,8 @@ Draw both now anyway.
 **Fixed and movable.** Only the door zone and the cupboard are fixed. Ralph
 and Eddie can move every other piece to any bay, so draw nothing that
 depends on its neighbour (no shared worktop running across two items, no
-splashback that only lines up in this order). The dumb waiter may become a
-fixed piece too; Frank is deciding.
+splashback that only lines up in this order). The dumb waiter is movable
+too (Frank, 16 October).
 
 **The cupboard is always last** (Frank, 16 October). Its door is in the end
 wall, at 90° to the view, so it belongs to the far-wall cap and moves with
@@ -156,7 +156,12 @@ own). Object-specific cues from the ledger:
 
 When the dining room exists (Frank's answer, 16 October), the table moves
 up there and its two bays become a **snack counter with a bar stool** (1
-bay) and a **dumb waiter** that sends meals up (1 bay). Fully upgraded,
+bay) and a **dumb waiter** that sends meals up (1 bay). Frank's design for
+the dumb waiter (a later batch): it looks like another kitchen unit, glass
+fronted, running all the way up to the ceiling; its working animation shows
+the food rising in the little lift and vanishing into a closed top
+section. It appears only once the dining room is built, and can stand in
+any bay. Fully upgraded,
 the kitchen needs 11 bays (2 + 1 + 1 + 2 + 1 + 2 + 1 + 1) and the widest
 room has 12, leaving one spare. The cupboard takes none.
 
