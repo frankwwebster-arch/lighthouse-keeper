@@ -160,7 +160,7 @@ of the Keeper's boots and lower legs, but it may not change the approved
 fourteen-riser contact geometry.
 
 The current reversible transition gate is
-`/keeper-review/keeper-prime-stair-transitions-v3/`. It composes exact approved
+`/keeper-review/keeper-prime-stair-transitions-v4/`. It composes exact approved
 authorities plus two clearly labelled candidate door-reach cells into two
 reviewable sequences: lower transfer door → two walk cycles → moving Stair V16
 F1, and final Stair V16 contacts → flat landing → clockwise
@@ -170,7 +170,8 @@ The lower door is one complete 21-lp visible walk cycle from the stair root;
 the upper landing is 126 lp/twelve step intervals from the matching door, with
 one additional 21-lp cycle behind it. The page preloads all 27 unique cells,
 offers frame stepping, root guides, door-occlusion toggling, a 960-pixel-wide
-inspection pane and exact 1-CSS-pixel-per-logical-pixel playback. Its
+inspection pane and the Studio's default four-screen-pixels-per-logical-pixel
+playback. Its
 candidate-42 acceleration/deceleration roots (3, 7, 13, 19 ku) and two-frame
 right-hand door reach are explicitly unapproved.
 Two generated landing studies—including a wrong-facing three-armed result—are
@@ -193,6 +194,13 @@ misleading 1× logical-pixel thumbnail with the Studio's real default 4× screen
 presentation (a standard 32 × 40 logical Keeper cell appears at 128 × 160
 screen pixels). The large and game views are stacked so neither is squeezed.
 
+V4 removes the remaining visible F16→F17 size contraction. The final compact
+walk pose measures 293 source pixels from cap top to the registered root; the
+approved stair family measures 285. Every stair and stair-mount frame now uses
+one uniform 293/285 (1.028×) display registration around the same root, so the
+fix cannot move to F17→F18 or the upper landing. Source PNGs, timing, route
+roots, Final, runtime and production remain unchanged.
+
 ## Run it
 ```
 npm install
@@ -206,6 +214,7 @@ npm run archive:keeper-review # deduplicate new review media before committing
 npm run verify:keeper-prime-stair-transitions-v1 # exact frames, gutters, roots, joins and review-page contract
 npm run verify:keeper-prime-stair-transitions-v2 # focused walk-to-stair seam and unchanged-source checks
 npm run verify:keeper-prime-stair-transitions-v3 # fixed reviewer layout and default Studio 4× presentation
+npm run verify:keeper-prime-stair-transitions-v4 # uniform root-anchored stair-family height registration
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
 

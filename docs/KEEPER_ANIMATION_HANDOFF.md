@@ -1511,6 +1511,17 @@ below the 6× inspection stage. V2 route JSON is exact apart from its versioned
 asset prefix; all 27 source hashes, timing and roots are unchanged. Run
 `npm run verify:keeper-prime-stair-transitions-v3`.
 
+V4 at `/keeper-review/keeper-prime-stair-transitions-v4/` corrects the
+remaining visible size contraction at lower-route F16→F17. The last walk pose
+has a measured 293-source-pixel cap-to-root span; every Stair V16 drawing has a
+285-pixel span. Rather than resizing only the join and creating a new F17→F18
+flash, V4 applies one uniform 293/285 (1.028×) display registration to every
+stair and stair-mount frame around the shared `[16,39.5]` logical-pixel root.
+The four approved stair PNGs, all other source hashes, route order, timing,
+world roots and tread geometry remain unchanged. V1–V3 remain immutable. Run
+`npm run verify:keeper-prime-stair-transitions-v4`; Final, runtime and
+production are unchanged pending Frank's visual decision.
+
 ## Review-comments workflow for a later feedback round
 
 1. Do not process another review export until the beard evidence gate is
