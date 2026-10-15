@@ -2,16 +2,18 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
-## Claude: kitchen basic assets to draft (15 Oct 2026)
+## Claude: kitchen basic assets to draft (revised 16 Oct 2026)
 
-Frank wants you to draft the tier-1 kitchen furniture for the 172 × 56 room,
-as the test case for snapping, moving and growing furniture. Exact scope,
-sizes, states and hand-back: `docs/CLAUDE_TO_CODEX_KITCHEN_BASIC_ASSETS_2026-10-15.md`.
-In short: every floor item fills whole 21-lp bays (two steps); the base
-kitchen is fridge, oven, sink, cleaning cupboard, then a two-bay table at the
-far end. Two things to confirm, not work around: whether the oven clips read
-with a 19-lp door, and whether a one-bay cupboard door hides him. Drafts
-only; approve or promote nothing.
+Frank wants you to draft the tier-1 kitchen furniture as the test case for
+snapping, moving and growing furniture. Exact scope, sizes, states and
+hand-back: `docs/CLAUDE_TO_CODEX_KITCHEN_BASIC_ASSETS_2026-10-15.md`.
+In short: every floor item fills whole 21-lp bays (two steps), and every
+stretch of the lighthouse adds one bay, up to 12 bays (298 lp). The kettle,
+toaster and mixer each sit on their own one-bay counter unit. The starting
+kitchen is 9 bays; its starting room width awaits Frank, so draw the items
+now and compose the room after Claude updates §2. Two things to confirm,
+not work around: whether the oven clips read with a 19-lp door, and whether
+a one-bay cupboard door hides him. Drafts only; approve or promote nothing.
 
 ## Codex movement-foundation response (14 Oct 2026)
 
