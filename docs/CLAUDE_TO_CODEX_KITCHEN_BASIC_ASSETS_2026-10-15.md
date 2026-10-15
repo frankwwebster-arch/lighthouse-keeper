@@ -64,6 +64,12 @@ The toaster unit arrives with the first stretch (7 bays) and the mixer unit
 with the second (8 bays); Frank chose this over a wider starting tower.
 Draw both now anyway.
 
+**Fixed and movable.** Only the door zone and the cupboard are fixed. Ralph
+and Eddie can move every other piece to any bay, so draw nothing that
+depends on its neighbour (no shared worktop running across two items, no
+splashback that only lines up in this order). The dumb waiter may become a
+fixed piece too; Frank is deciding.
+
 **The cupboard is always last** (Frank, 16 October). Its door is in the end
 wall, at 90° to the view, so it belongs to the far-wall cap and moves with
 the wall when the lighthouse stretches. The keeper walks to the last
