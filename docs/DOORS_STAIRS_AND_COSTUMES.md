@@ -72,6 +72,7 @@ What follows (Codex for art, Claude for code):
 
 - **Alongside the rooms (agreed); Codex picks the side.** The diving extension is currently on the right.
 - **One column, built from one section per floor.** When a floor is inserted at its random middle position, the stairway simply gains a section. The stripe pattern still comes from world height, so nothing else moves.
+- **Straight-flight architecture (agreed 15 Oct 2026).** Each visible flight has exactly two newel posts, one at its lower entrance and one at its upper landing, joined by a continuous handrail over a foreground balustrade with regularly spaced balusters. The foreground rail/balustrade sits above the keeper and may naturally hide parts of his boots and lower legs; treads and rear structure sit behind him. It conforms to the approved 14-riser, 7-lp-tread, 98 × 60-lp contact flight and never changes animation/root geometry.
 - **Climbing improves over time (agreed):** ladders, then a spiral staircase, then a lift. Codex designs how the lift arrives (the game currently opens the "Puffed Out" lift mission at 5 floors; Frank has 6 in mind) as part of the lighthouse growing magically in every direction.
 - **The slide goes on the outside of the tower (agreed).** He is out of sight inside its tube, so it is a hiding point.
 - **Lamp room.** The stairway ends at the lamp room. With ladders on day 1, a trapdoor and ladder fits naturally, and it hides him as he climbs through. Codex decides.

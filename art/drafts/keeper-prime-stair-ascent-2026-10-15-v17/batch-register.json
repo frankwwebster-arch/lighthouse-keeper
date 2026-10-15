@@ -1,0 +1,75 @@
+{
+  "schema": "lighthouse-keeper/review-approval@1",
+  "batchId": "keeper-prime-stair-ascent-2026-10-15-v17",
+  "status": "approved-stair-ascent-v16-artwork-and-full-flight-authority",
+  "approval": {
+    "approvedBy": "Frank",
+    "approvedOn": "2026-10-15",
+    "wording": "OK let's say that's done, had enough of refining it."
+  },
+  "approvedCandidate": {
+    "register": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/batch-register.json",
+    "registerSha256": "37af99fac3ae116d7cf3ff65b61c94402826606b340df754512abf51c49946d8",
+    "rig": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/stair-contact-rig-v16.json",
+    "rigSha256": "62892cbe1cf47e1feedd7cccdf427ae4547b203687d6d46289ba1f7eb041df56",
+    "reviewPage": "public/keeper-review/keeper-prime-stair-ascent-v16/index.html",
+    "reviewPageSha256": "267361c11d717803634cfe6741680b0ed2e3fd0232d99a6d339aae70753e68cb",
+    "frames": [
+      {
+        "role": "contact:left",
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/drafts/frames/keeper_prime_stair_left-contact-clean_side-left_f01.png",
+        "sha256": "1a7fe5fe0bcecaf1dfa014be1613614f85bfa4826e460361f0b3105bd28449a3"
+      },
+      {
+        "role": "contact:right",
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/drafts/frames/keeper_prime_stair_right-contact-complete-toecap_side-left_f01.png",
+        "sha256": "8af419d7747ec19920124235d1178bbb8eff53c87f9fa1844786161877cd554b"
+      },
+      {
+        "role": "passing:left",
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/drafts/frames/keeper_prime_stair_left-foot-passing-compact_side-left_f01.png",
+        "sha256": "4262b9d642d2e918414fabdc88e90d5522a93eca6b5ab83c165b9557b1dc7fa0"
+      },
+      {
+        "role": "passing:right",
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/drafts/frames/keeper_prime_stair_right-foot-passing-balanced_side-left_f01.png",
+        "sha256": "12a2f8f20df7937eaff165f9b7e437336fa5385d7234ee22b430fde0c59d3bd5"
+      }
+    ]
+  },
+  "staircaseVisualContract": {
+    "status": "agreed-for-later-staircase-build",
+    "newelPosts": 2,
+    "newelPostPositions": [
+      "lower-flight entrance",
+      "upper landing"
+    ],
+    "balustrade": "foreground open-side balustrade with regularly spaced balusters",
+    "handrail": "one continuous rail between the lower and upper newel posts",
+    "occlusionPurpose": "architecturally plausible masking of portions of the Keeper's boots and lower legs during ascent",
+    "layering": "foreground rail/balustrade above Keeper; treads and rear structure below/behind Keeper",
+    "geometryRule": "rail artwork must conform to the approved fourteen-riser, 7-lp-tread, 98-by-60-lp flight and must not alter contact or root geometry",
+    "reviewRule": "stair scenery is a separate future versioned review asset and must be judged at large and exact game scale before runtime wiring"
+  },
+  "approvalBoundary": {
+    "v16ArtworkApproved": true,
+    "twentySevenFrameFullFlightApproved": true,
+    "fourteenAlternatingContactsApproved": true,
+    "stairGeometryApprovedForThisAnimation": true,
+    "finalLaneEntryAllowed": true,
+    "productionPromotionPerformed": false,
+    "runtimeWiringPerformed": false,
+    "staircaseSceneryApproved": false
+  },
+  "validation": {
+    "v16RegisterUnchanged": true,
+    "v16RigUnchanged": true,
+    "v16PageUnchanged": true,
+    "allFourFrameHashesPinned": true,
+    "approvalPackDuplicatesNoArtwork": true,
+    "priorDraftsChanged": false,
+    "finalLaneChanged": false,
+    "runtimeSpritesChanged": false,
+    "productionChanged": false
+  }
+}

@@ -1434,14 +1434,25 @@ at the top; it never teleports back to the floor. V15 is an unapproved,
 reversible timeline candidate only and leaves Final/runtime/production
 unchanged.
 
-The active V16 correction review is
+The approved V16 stair-ascent authority is
 `/keeper-review/keeper-prime-stair-ascent-v16/`. It preserves every V15
 timeline/root/timing value and changes only three declared pixel masks. RIGHT
 compact passing now shares LEFT's y=270 moving-region lower boundary while
 keeping 1.59 lp of minimum stair clearance and zero penetration. LEFT contact's
 detached flesh remnant is restored to the exact V6 base pixels. RIGHT contact's
 forward boot gains a complete toecap while its y=282 sole/contact row remains
-byte-identical. V16 is reversible, unapproved and absent from Final/runtime.
+byte-identical. Frank accepted exact V16 on 15 October 2026 with “OK let's say
+that's done, had enough of refining it.” V17 is an approval-only pack: it pins
+the exact V16 register, rig, page and four frame hashes without duplicating art
+or changing Final/runtime/production.
+
+For the later staircase build, retain the approved fourteen-riser, 7-lp-tread,
+98 × 60-lp flight and add exactly two newel posts, at the lower entrance and
+upper landing. Join them with a continuous handrail over a foreground
+open-side balustrade of regularly spaced balusters. The balustrade is an
+architecturally honest occlusion layer above the Keeper, deliberately covering
+parts of the boots and lower legs; stair treads and rear structure remain
+behind him. Review this scenery separately at large and exact game scale.
 
 ## Review-comments workflow for a later feedback round
 

@@ -143,13 +143,21 @@ Playback reaches tread 14 and holds there rather than wrapping back to the
 floor. V15 is a review-only timeline candidate; neither it nor V14 is approved
 or promoted to Final/runtime.
 
-The active correction candidate is
+The approved stair-ascent authority is
 `/keeper-review/keeper-prime-stair-ascent-v16/`. It keeps V15's complete
 timeline, placements and timing exact while correcting only three masked art
 regions: RIGHT compact passing now matches LEFT's y=270 moving-region lower
 edge and retains 1.59-lp stair clearance; the detached flesh remnant is removed
 from LEFT contact; and RIGHT contact receives a complete forward-boot toecap
-without changing its sole/contact row. V16 remains unapproved and review-only.
+without changing its sole/contact row. Frank accepted exact V16 on 15 October
+2026; the no-art V17 approval pack pins its four images, 27-frame rig and page.
+Nothing is wired into runtime yet.
+
+The later staircase scenery must use two newel posts—one at the lower entrance
+and one at the upper landing—with a foreground balustrade and continuous
+handrail between them. That foreground architecture may naturally cover parts
+of the Keeper's boots and lower legs, but it may not change the approved
+fourteen-riser contact geometry.
 
 ## Run it
 ```

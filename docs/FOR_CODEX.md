@@ -157,14 +157,25 @@ the final RIGHT contact lands at the exact 80-lp upper-floor datum. The player
 stops and holds there; there is no automatic wrap to the bottom. V15 remains
 unapproved and changes no Final, runtime or production asset.
 
-The active three-defect correction is
+The approved stair-ascent authority is
 `/keeper-review/keeper-prime-stair-ascent-v16/`. V16 preserves V15's 27 frames,
 root coordinates, fourteen contacts, timing and endpoint exactly. Narrow masks
 balance RIGHT compact passing to the same y=270 moving-region lower edge as
 LEFT while retaining 1.59-lp clearance and zero penetration; restore the exact
 V6 pixels over LEFT contact's detached flesh remnant; and complete RIGHT
 contact's forward-boot toecap while leaving row y=282—the contact sole—exact.
-All pixels outside the three masks are unchanged. Nothing is approved or wired.
+All pixels outside the three masks are unchanged. Frank accepted exact V16 on
+15 October 2026 with “OK let's say that's done, had enough of refining it.”
+The no-art V17 approval pack pins all four frame hashes, the 27-frame rig and
+the review-page hash. Approval permits later Final preparation but performs no
+runtime or production promotion.
+
+The staircase scenery is a separate later review gate. It must have exactly two
+newel posts (lower entrance and upper landing), a foreground open-side
+balustrade with regularly spaced balusters and one continuous handrail. The
+foreground layer should plausibly obscure parts of the boots/lower legs while
+the tread/contact geometry remains the approved 14-riser, 7-lp-tread,
+98-by-60-lp flight.
 
 ## Lift entry alignment correction (14 Oct 2026)
 
