@@ -69,9 +69,11 @@ the widest 256 lp; with an inward door it is 214 lp (25-lp zone) or
 | 8–9 | Table for one and chair | back |
 | far wall | Cleaning cupboard, door in the end wall (broom inside) | far-wall cap |
 
-The pet bowl no longer goes under the table; Frank is choosing its home
-(recommended: the hall at the foot of the stairs, by the cat flap). Draw it
-on its own.
+The pet bowl sits by the table, **in front of it** (Frank): it belongs to
+the foreground layer, drawn over the table and over the keeper, so it never
+sits behind or under another piece. It is 3 lp tall, so he walks behind it
+and it never blocks his route to the cupboard. It takes no bay; it moves
+with the table.
 
 **Fixed and movable.** Only the door zone and the cupboard are fixed. Ralph
 and Eddie can move every other piece to any bay, so draw nothing that
@@ -111,7 +113,7 @@ contact datums that every tier keeps.
 | `obj_cupboard` | Cleaning cupboard in the far wall, broom inside | 0 (far-wall cap) | door ≥ 24 × 40 opening | door opens towards the room and hides him (see §5) |
 | `obj_table` | Table for one with its chair | 2 | 42 × 26 | table 19, 2 thick, knee clearance ≥ 15, place ≥ 28; chair seat 11, back top 26, clear seat 20 |
 | `obj_bin` | Pedal bin | 1 | 21 × 14 | stands on the floor, centred in its bay; later tiers (recycling station, Waste-Manager 3000) fill the bay |
-| `obj_petbowl` | Plain pet bowl | on its own (home pending) | 12 × 3 | rim ≤ 3, clear width ≥ 12, scoop target 6 |
+| `obj_petbowl` | Plain pet bowl | in front of the table (foreground) | 12 × 3 | rim ≤ 3, clear width ≥ 12, scoop target 6 |
 
 The three counter units share one cabinet design and one counter height, so
 they read as a run of matching kitchen units. Each unit is drawn together
