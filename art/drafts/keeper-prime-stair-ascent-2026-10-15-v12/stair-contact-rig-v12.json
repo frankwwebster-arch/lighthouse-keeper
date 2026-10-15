@@ -1,0 +1,144 @@
+{
+  "schema": "lighthouse-keeper/stair-contact-rig@12",
+  "status": "deeper-tread-contact-and-arm-gate-awaiting-review",
+  "direction": "leftward gameplay",
+  "cell": [
+    256,
+    320
+  ],
+  "density": 8,
+  "geometry": {
+    "floorTopLp": 20,
+    "stairBaseRightLp": 116,
+    "floorSupportCentreLp": 119.5,
+    "flightRunLp": 98,
+    "flightRiseLp": 60,
+    "risers": 14,
+    "treadRunLp": 7,
+    "riserRiseLp": 4.285714285714286,
+    "reservedCoreRunLp": 105,
+    "shownContacts": 4,
+    "contactDurationMs": 280
+  },
+  "contactOrder": [
+    "right",
+    "left",
+    "right",
+    "left"
+  ],
+  "timeline": [
+    {
+      "frame": 1,
+      "step": 1,
+      "leg": "right",
+      "label": "RIGHT leg forward · LEFT arm forward",
+      "src": "/keeper-review/keeper-prime-stair-ascent-v12/assets/right-contact-21966fc31dc05a58.png",
+      "xLp": 118.375,
+      "bottomLp": 19.5,
+      "supportTread": 0,
+      "targetTread": 1,
+      "supportXLp": 119.5,
+      "supportYLp": 20,
+      "targetXLp": 112.5,
+      "targetYLp": 24.285714285714285,
+      "movingXLp": 112.5625,
+      "movingYLp": 24.25,
+      "supportClearanceLp": 0,
+      "movingClearanceLp": -0.0357142857142847,
+      "durationMs": 280
+    },
+    {
+      "frame": 2,
+      "step": 2,
+      "leg": "left",
+      "label": "LEFT leg forward · RIGHT arm forward",
+      "src": "/keeper-review/keeper-prime-stair-ascent-v12/assets/left-contact-6638aa3eadcdfb59.png",
+      "xLp": 111.3125,
+      "bottomLp": 23.785714285714285,
+      "supportTread": 1,
+      "targetTread": 2,
+      "supportXLp": 112.5,
+      "supportYLp": 24.285714285714285,
+      "targetXLp": 105.5,
+      "targetYLp": 28.57142857142857,
+      "movingXLp": 105.5625,
+      "movingYLp": 28.535714285714285,
+      "supportClearanceLp": 0,
+      "movingClearanceLp": -0.0357142857142847,
+      "durationMs": 280
+    },
+    {
+      "frame": 3,
+      "step": 3,
+      "leg": "right",
+      "label": "RIGHT leg forward · LEFT arm forward",
+      "src": "/keeper-review/keeper-prime-stair-ascent-v12/assets/right-contact-21966fc31dc05a58.png",
+      "xLp": 104.375,
+      "bottomLp": 28.07142857142857,
+      "supportTread": 2,
+      "targetTread": 3,
+      "supportXLp": 105.5,
+      "supportYLp": 28.57142857142857,
+      "targetXLp": 98.5,
+      "targetYLp": 32.857142857142854,
+      "movingXLp": 98.5625,
+      "movingYLp": 32.82142857142857,
+      "supportClearanceLp": 0,
+      "movingClearanceLp": -0.0357142857142847,
+      "durationMs": 280
+    },
+    {
+      "frame": 4,
+      "step": 4,
+      "leg": "left",
+      "label": "LEFT leg forward · RIGHT arm forward",
+      "src": "/keeper-review/keeper-prime-stair-ascent-v12/assets/left-contact-6638aa3eadcdfb59.png",
+      "xLp": 97.3125,
+      "bottomLp": 32.35714285714286,
+      "supportTread": 3,
+      "targetTread": 4,
+      "supportXLp": 98.5,
+      "supportYLp": 32.85714285714286,
+      "targetXLp": 91.5,
+      "targetYLp": 37.142857142857146,
+      "movingXLp": 91.5625,
+      "movingYLp": 37.10714285714286,
+      "supportClearanceLp": 0,
+      "movingClearanceLp": -0.0357142857142847,
+      "durationMs": 280
+    }
+  ],
+  "handovers": [
+    {
+      "fromFrame": 1,
+      "toFrame": 2,
+      "previousMovingToNextSupportDeltaLp": {
+        "x": -0.0625,
+        "y": 0.0357142857142847
+      }
+    },
+    {
+      "fromFrame": 2,
+      "toFrame": 3,
+      "previousMovingToNextSupportDeltaLp": {
+        "x": -0.0625,
+        "y": 0.0357142857142847
+      }
+    },
+    {
+      "fromFrame": 3,
+      "toFrame": 4,
+      "previousMovingToNextSupportDeltaLp": {
+        "x": -0.0625,
+        "y": 0.035714285714291805
+      }
+    }
+  ],
+  "contract": [
+    "The finished-floor rise remains exactly 60 lp and still uses fourteen equal risers.",
+    "Tread depth increases from 6 to 7 lp, so the flight run becomes 98 lp inside the reserved 105-lp stair core.",
+    "Every displayed frame has a support sole on a real tread; floating is a hard failure, not merely non-penetration.",
+    "The opposite contact inherits the previous upper-foot position within 0.063 lp horizontally and 0.036 lp vertically.",
+    "Arms alternate as a visibly different foreground/background silhouette; no sub-logical-pixel arm motion is claimed."
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "schema": "lighthouse-keeper/stair-ascent-source-preparation@12",
+  "status": "contact-and-arm-reset-awaiting-visual-inspection",
+  "method": "V7 binding contacts retargeted to 7 x 60/14 lp; generated studies admitted only inside declared arm polygons",
+  "geometry": {
+    "flightRunLp": 98,
+    "flightRiseLp": 60,
+    "risers": 14,
+    "treadRunLp": 7,
+    "riserRiseLp": 4.285714285714286,
+    "reservedCoreRunLp": 105
+  },
+  "rejectedArmSources": [
+    {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v12/sources/generated/left-leg-contact-arm-study.png",
+      "sha256": "51509626710635585616cfa9e7d7c9e41f3e3f9226952e5d4eab8f99e415030b",
+      "reason": "duplicated the selected forward-arm phase instead of producing the required opposite silhouette"
+    }
+  ],
+  "frames": [
+    {
+      "leg": "right",
+      "phase": "adjacent-tread contact with visible contralateral arms",
+      "original": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v7/drafts/frames/keeper_prime_stair_right-contact_side-left_f01.png",
+        "sha256": "f2c630a34f23cc0e1afdd6e00f138b24adf9a1b97a1609650c79e1b87a273f5b"
+      },
+      "legSource": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-left_f04.png",
+        "sha256": "9ababc16c15a994ce80e7682bb1cf43e2937771e2437cd0fc0d82d292f6528c7"
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v12/sources/generated/right-leg-contact-arm-study.png",
+        "sha256": "bcd3e5ceba5eb406987798a2eae85455130f4862aba4059f6708ed4a5fd54b41"
+      },
+      "registeredArmSource": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v12/evidence/registered-arm-sources/right-leg-arm-study-registered.png",
+        "sha256": "f2498b2b33aa037ed166b4dd11d5212dcc9aa9e7156a57f4c03bfa4426a14305",
+        "sourceBoundsExclusive": [
+          244,
+          140,
+          861,
+          1370
+        ],
+        "targetBoundsExclusive": [
+          55,
+          31,
+          180,
+          317
+        ],
+        "scale": 0.23252032520325203,
+        "registeredLeft": 46,
+        "registeredTop": 31
+      },
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v12/drafts/frames/keeper_prime_stair_right-contact_side-left_f01.png",
+        "sha256": "21966fc31dc05a58e69c1d61963d27196d701808e018348ca69780bedfc04fa5"
+      },
+      "declaredArmMask": "two feathered polygons, y128..250 only",
+      "contactGeometry": {
+        "treadRunLp": 7,
+        "riserRiseLp": 4.285714285714286,
+        "movingLegCorrectionSourcePx": [
+          14,
+          5
+        ]
+      },
+      "supportSole": {
+        "y": 316,
+        "minX": 132,
+        "maxX": 142,
+        "centreX": 137.0
+      },
+      "movingSole": {
+        "y": 282,
+        "minX": 57,
+        "maxX": 106,
+        "centreX": 81.5
+      },
+      "localSeparation": {
+        "xPx": 55.5,
+        "xLp": 6.9375,
+        "yPx": 34,
+        "yLp": 4.25
+      },
+      "cell": [
+        256,
+        320
+      ],
+      "density": 8,
+      "edgeAlpha": 0
+    },
+    {
+      "leg": "left",
+      "phase": "adjacent-tread contact with visible contralateral arms",
+      "original": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v7/drafts/frames/keeper_prime_stair_left-contact_side-left_f01.png",
+        "sha256": "25493bd2d85ba7b7654515d1a47efad8c5bc275b056e00c7b7c2e278493e1565"
+      },
+      "legSource": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-left_f04.png",
+        "sha256": "58c1e08b19521696dc2acf72f882d71bd6d53ef43fd408a63eb57c31d31d543f"
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v12/sources/generated/left-leg-contact-arm-study-opposite.png",
+        "sha256": "af5b57812aa0141e3d0b1d1b27cd32aef558c963063edef0319e638f73e83cd4"
+      },
+      "registeredArmSource": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v12/evidence/registered-arm-sources/left-leg-arm-study-registered.png",
+        "sha256": "4b432da5817da04c193dfd4332e2cb7f3dbb4c2699a67109ccf29680c0769fa0",
+        "sourceBoundsExclusive": [
+          245,
+          140,
+          922,
+          1381
+        ],
+        "targetBoundsExclusive": [
+          57,
+          31,
+          181,
+          317
+        ],
+        "scale": 0.23045930701047543,
+        "registeredLeft": 46,
+        "registeredTop": 31
+      },
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v12/drafts/frames/keeper_prime_stair_left-contact_side-left_f01.png",
+        "sha256": "6638aa3eadcdfb59314b9155cc8613d0980e951deda952f02a57be89e31ead7e"
+      },
+      "declaredArmMask": "two feathered polygons, y128..250 only",
+      "contactGeometry": {
+        "treadRunLp": 7,
+        "riserRiseLp": 4.285714285714286,
+        "movingLegCorrectionSourcePx": [
+          12,
+          0
+        ]
+      },
+      "supportSole": {
+        "y": 316,
+        "minX": 129,
+        "maxX": 146,
+        "centreX": 137.5
+      },
+      "movingSole": {
+        "y": 282,
+        "minX": 76,
+        "maxX": 88,
+        "centreX": 82.0
+      },
+      "localSeparation": {
+        "xPx": 55.5,
+        "xLp": 6.9375,
+        "yPx": 34,
+        "yLp": 4.25
+      },
+      "cell": [
+        256,
+        320
+      ],
+      "density": 8,
+      "edgeAlpha": 0
+    }
+  ]
+}

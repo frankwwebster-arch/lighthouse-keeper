@@ -1,0 +1,76 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-stair-ascent-2026-10-15-v12",
+  "status": "draft-v12-deeper-tread-contact-and-arm-gate-awaiting-review",
+  "authorities": {
+    "rejectedV11": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v11/batch-register.json",
+      "sha256": "346ee5e967b39594e456e60cd630e4bf1cb5b997be6a0f397eaecfb4d3277829"
+    },
+    "sourcePreparation": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v12/source-preparation-v12.json",
+      "sha256": "5b04b6b4bc673d30bcc963f183a742ae6bdcaa2e76ebc1d5273201d64eb80eb0"
+    },
+    "contactRig": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v12/stair-contact-rig-v12.json",
+      "sha256": "7381e84865ff5789e55dc65e89f87b7d7037d15a14bbecc28c9a834d8a72ef43"
+    }
+  },
+  "generation": {
+    "mode": "generated-arm-studies-plus-deterministic-declared-region-compositing-and-contact-lock",
+    "frameUrls": [
+      "/keeper-review/keeper-prime-stair-ascent-v12/assets/right-contact-21966fc31dc05a58.png",
+      "/keeper-review/keeper-prime-stair-ascent-v12/assets/left-contact-6638aa3eadcdfb59.png"
+    ]
+  },
+  "originalAndDraft": [
+    {
+      "leg": "right",
+      "originalFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v7/drafts/frames/keeper_prime_stair_right-contact_side-left_f01.png",
+      "originalSha256": "f2c630a34f23cc0e1afdd6e00f138b24adf9a1b97a1609650c79e1b87a273f5b",
+      "draftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v12/drafts/frames/keeper_prime_stair_right-contact_side-left_f01.png",
+      "draftSha256": "21966fc31dc05a58e69c1d61963d27196d701808e018348ca69780bedfc04fa5"
+    },
+    {
+      "leg": "left",
+      "originalFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v7/drafts/frames/keeper_prime_stair_left-contact_side-left_f01.png",
+      "originalSha256": "25493bd2d85ba7b7654515d1a47efad8c5bc275b056e00c7b7c2e278493e1565",
+      "draftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v12/drafts/frames/keeper_prime_stair_left-contact_side-left_f01.png",
+      "draftSha256": "6638aa3eadcdfb59314b9155cc8613d0980e951deda952f02a57be89e31ead7e"
+    }
+  ],
+  "spec": {
+    "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v12/keeper-prime-stair-ascent-v12.json",
+    "sha256": "c9ed3bbbfb899991ec920b7873426d37418349d0ff0bf672dda0f128799b6150"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-stair-ascent-v12/index.html",
+    "sha256": "71fd642c7b5978e5b5e8326acf46656a8d071065281436002fc40de29d5c882a"
+  },
+  "frameUrls": [
+    "/keeper-review/keeper-prime-stair-ascent-v12/assets/right-contact-21966fc31dc05a58.png",
+    "/keeper-review/keeper-prime-stair-ascent-v12/assets/left-contact-6638aa3eadcdfb59.png"
+  ],
+  "validation": {
+    "uniqueDrawings": 2,
+    "shownContacts": 4,
+    "contactOrder": [
+      "right",
+      "left",
+      "right",
+      "left"
+    ],
+    "treadRunLp": 7,
+    "risers": 14,
+    "exactFlightRunLp": 98,
+    "exactFlightRiseLp": 60,
+    "everyFrameRequiresSupportContact": true,
+    "maximumHandoverXDeltaLp": 0.0625,
+    "maximumHandoverYDeltaLp": 0.035714285714291805,
+    "visiblyOppositeArmSilhouettes": true,
+    "edgeAlphaZero": true,
+    "v1ThroughV11Changed": false,
+    "finalChanged": false,
+    "productionChanged": false
+  }
+}

@@ -1377,17 +1377,25 @@ timing and stair dimensions remain exact V8 values. V9 is still a four-contact
 mechanical gate only, not the complete ascent, and nothing is approved, in
 Final or in production.
 
+V11 is rejected after live review. Its frame 7 support sole is exactly one
+60÷14-lp riser above the stair, and its largest arm displacement is only seven
+source pixels/0.875 logical pixels, so neither arm reads as moving. The V11
+verifier checked that lower-body pixels did not penetrate the stairs but failed
+to require a sole to make positive support contact. Preserve V11 unchanged as
+evidence of that rejected contract.
+
 The next active review gate is
-`/keeper-review/keeper-prime-stair-ascent-v11/`. V10 is preserved as rejected
-source-study provenance: independently generated half-cycles did not preserve
-one exact Prime silhouette or binding tread geometry. V11 therefore derives
-from the established V6/V7 stair family. It uses three collision-safe drawings
-per tread—lift, reach and plant—over four adjacent treads. RIGHT-leg steps pair
-with a maximum 3-source-pixel LEFT-arm counter-motion; LEFT-leg steps pair with
-a clearer maximum 7-source-pixel RIGHT-arm counter-motion. Pixels outside the
-bounded arm region are unchanged, lower legs are unchanged from y=247, all
-cells retain transparent gutters, and the review page waits for all six unique
-drawings to decode before playback. V11 remains unapproved and changes no
+`/keeper-review/keeper-prime-stair-ascent-v12/`. V12 returns to two binding
+contact drawings before intermediates are reintroduced. The flight keeps the
+exact 60-lp rise and fourteen equal risers but deepens each tread from 6 to 7
+lp, producing a 98-lp run inside the reserved 105-lp stair core. The V6/V7
+contact-lock process is retargeted to a measured 55.5-source-pixel/6.9375-lp
+foot separation. Every support sole touches its tread exactly; the upper sole
+is within 0.036 lp of the next tread; and the next frame inherits that upper
+foot within 0.063 lp horizontally and 0.036 lp vertically. Generated studies
+contribute only the declared arms, producing plainly opposite silhouettes;
+the Prime head and contact legs remain protected. V12 deliberately contains
+no weight-transfer intermediates yet. It remains unapproved and changes no
 Final art, runtime sprite or production geometry.
 
 ## Review-comments workflow for a later feedback round

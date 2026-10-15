@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "set": "keeper-prime-stair-ascent-v12",
+  "page": {
+    "path": "public/keeper-review/keeper-prime-stair-ascent-v12/index.html",
+    "sha256": "71fd642c7b5978e5b5e8326acf46656a8d071065281436002fc40de29d5c882a",
+    "bytes": 13142
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/keeper-prime-stair-ascent-v12/assets/left-contact-6638aa3eadcdfb59.png": {
+      "sha256": "6638aa3eadcdfb59314b9155cc8613d0980e951deda952f02a57be89e31ead7e",
+      "extension": ".png",
+      "bytes": 56245,
+      "object": "review-archive/objects/66/6638aa3eadcdfb59314b9155cc8613d0980e951deda952f02a57be89e31ead7e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/66/6638aa3eadcdfb59314b9155cc8613d0980e951deda952f02a57be89e31ead7e.png"
+    },
+    "/keeper-review/keeper-prime-stair-ascent-v12/assets/right-contact-21966fc31dc05a58.png": {
+      "sha256": "21966fc31dc05a58e69c1d61963d27196d701808e018348ca69780bedfc04fa5",
+      "extension": ".png",
+      "bytes": 56848,
+      "object": "review-archive/objects/21/21966fc31dc05a58e69c1d61963d27196d701808e018348ca69780bedfc04fa5.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/21/21966fc31dc05a58e69c1d61963d27196d701808e018348ca69780bedfc04fa5.png"
+    }
+  }
+}

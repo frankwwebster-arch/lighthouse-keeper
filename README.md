@@ -93,16 +93,22 @@ riser. The V8 images, vertical positions, support/target markers, timing and
 stair dimensions remain exact. This is still a four-contact proof, not a
 complete transition. Nothing has entered Final or production.
 
-The active unapproved intermediate-motion candidate is
-`/keeper-review/keeper-prime-stair-ascent-v11/`. V10's image-generation studies
-are retained as rejected provenance because they changed the Prime silhouette
-and contact geometry. V11 returns to the same V6/V7 Keeper family and shows
-four adjacent stairs as repeated three-frame lift → reach → plant phrases:
-RIGHT leg with a restrained LEFT-arm counter-motion, then LEFT leg with a
-clearer RIGHT-arm counter-motion. The collision-prone old pass pose is omitted;
-all shown lower-leg pixels retain their source geometry and clear the stair
-surface within the 0.2-lp anti-alias tolerance. V11 is review-only and changes
-no Final art, runtime sprite or production geometry.
+V11 is now rejected: live review found its frame 7 support sole floating one
+complete 60÷14-lp riser above the stair, while its claimed arm motion peaked at
+only 0.875 logical pixels and was visually static. Its verifier proved only
+non-penetration, not positive support contact; that incomplete contract is
+retained as rejected provenance.
+
+The active unapproved geometry gate is
+`/keeper-review/keeper-prime-stair-ascent-v12/`. It resets to four binding
+RIGHT/LEFT/RIGHT/LEFT contacts before any intermediates are attempted. The
+finished-floor rise remains exactly 60 lp over fourteen equal risers, but tread
+depth increases from 6 to 7 lp; the resulting 98-lp flight fits inside the
+reserved 105-lp stair core. Each support sole must touch a real tread, each
+upper sole must touch the next tread within 0.05 lp, and successive support
+handovers may drift by no more than 0.07 lp. Two opposite arm silhouettes are
+now plainly visible. V12 is review-only and changes no Final art, runtime
+sprite or production geometry.
 
 ## Run it
 ```

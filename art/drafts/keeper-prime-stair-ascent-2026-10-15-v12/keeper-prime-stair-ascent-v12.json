@@ -1,0 +1,32 @@
+{
+  "schema": "lighthouse-keeper/prime-stair-ascent@12",
+  "status": "draft-v12-deeper-tread-contact-and-arm-gate-awaiting-review",
+  "rejectionOfV11": "Frame 7 floated exactly one riser and the claimed arm motion remained below one logical pixel.",
+  "scope": "Four-contact geometry and alternating-arm gate only; weight-transfer intermediates intentionally deferred.",
+  "geometry": {
+    "floorTopLp": 20,
+    "stairBaseRightLp": 116,
+    "floorSupportCentreLp": 119.5,
+    "flightRunLp": 98,
+    "flightRiseLp": 60,
+    "risers": 14,
+    "treadRunLp": 7,
+    "riserRiseLp": 4.285714285714286,
+    "reservedCoreRunLp": 105,
+    "shownContacts": 4,
+    "contactDurationMs": 280
+  },
+  "contactOrder": [
+    "right",
+    "left",
+    "right",
+    "left"
+  ],
+  "promoted": false,
+  "unchanged": {
+    "v1ThroughV11": true,
+    "finalLane": true,
+    "runtimeSprites": true,
+    "production": true
+  }
+}

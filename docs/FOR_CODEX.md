@@ -110,16 +110,21 @@ are unchanged. V9 remains only a four-contact mechanical gate, not a complete
 transition and not approved. No approved walk, Final or production file
 changed.
 
+V11 is rejected after live review. Frame 7 floats exactly one 60÷14-lp riser
+above the stair, and its nominal arm shift never exceeds 0.875 logical pixels,
+so the arms read as static. Its verifier's non-penetration-only rule was
+insufficient and must not be copied.
+
 The active follow-on is the unapproved
-`/keeper-review/keeper-prime-stair-ascent-v11/`. V10's generated motion studies
-are retained but rejected because exact-size registration exposed inconsistent
-Prime silhouettes and contact geometry. V11 uses the same-family V6 lift/reach
-art and V7 contact-locked plant art. It shows four adjacent stairs with three
-frames per tread at 95 ms: RIGHT leg plus restrained LEFT arm, then LEFT leg
-plus clearer RIGHT arm, repeated. The collision-prone V6 pass pose is excluded;
-the deterministic verifier checks the bounded arm-only edit, unchanged lower
-legs, transparent gutters, exact 6-lp advance and no stair penetration beyond
-0.2 lp of anti-alias tolerance. Nothing is approved or promoted.
+`/keeper-review/keeper-prime-stair-ascent-v12/`. It is intentionally a contact
+and arm gate, not a finished climb. It retains fourteen equal risers over the
+exact 60-lp floor pitch, increases tread depth to 7 lp and therefore makes the
+flight 98 lp long inside the reserved 105-lp stair core. Four binding contacts
+alternate RIGHT/LEFT/RIGHT/LEFT; every support sole must touch a real tread,
+the upper sole must meet its next tread within 0.05 lp, and support handover
+drift is capped at 0.07 lp. The two arm silhouettes are visibly opposite.
+Weight-transfer intermediates come only after Frank accepts this gate. Nothing
+is approved or promoted.
 
 ## Lift entry alignment correction (14 Oct 2026)
 
