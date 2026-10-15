@@ -83,16 +83,17 @@ foreground stair stringer and bannister above the boots/lower shins. Its mask
 is on by default and can be toggled off for an exact V3 comparison. V4 reuses
 the 17 V3 media hashes without adding archive objects.
 
-The active unapproved V5 review is
-`/keeper-review/keeper-prime-stair-ascent-v5/`. Inspection identified the
-actual V3/V4 fault: each one-riser body rise occurred after its four-frame leg
-step instead of on the landing frame. V5 retains every V3 character-media byte
-and the same 92 ms frame duration, but gives the near leg F1–F4 and the far leg
-F5–F8; the root rises exactly one 3.75-lp riser on F4 and F8. The root moves
-monotonically across sixteen single steps and closes the unchanged flight at
-exactly 84 lp run × 60 lp rise. The bannister defaults to an adjustable 55%
-opacity so both leg mechanics remain visible. Nothing has entered Final or
-production.
+Frank rejected V5 because it still did not divide the stair work equally and
+the left boot again crossed the stair surface. The active unapproved V6 review
+is `/keeper-review/keeper-prime-stair-ascent-v6/`. V6 replaces the V3–V5 leg
+art with separately authored six-pose left- and right-leg steps. Fourteen
+contacts alternate strictly left/right, seven each; every contact advances one
+6-lp tread and rises 60/14 lp. Six 60-ms drawings make each step smoother while
+keeping its 360-ms cadence effectively equal to V5's 368 ms. All twelve cells
+share an exact upper body through y212, a feathered hip join, fixed y31/y316
+cap/sole datums, transparent edge gutters and exact mirrored leftward frames.
+The route still closes at exactly 84 lp run × 60 lp rise. Nothing has entered
+Final or production.
 
 ## Run it
 ```

@@ -1,0 +1,451 @@
+{
+  "schema": "lighthouse-keeper/stair-ascent-source-preparation@6",
+  "mode": "deterministic-contact-sheet-split-bilinear-registration-and-exact-mirror",
+  "target": {
+    "width": 256,
+    "height": 320,
+    "alphaTop": 31,
+    "alphaBottom": 316,
+    "alphaHeight": 286,
+    "density": 8,
+    "safetyGutter": 3
+  },
+  "sources": [
+    {
+      "leg": "left",
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/sources/generated/left-leg-six-pose-corrected.png",
+      "sha256": "cead47a6f8991a7aac4966e5a27256a689a2bd1603559dd3b0fd9ce04978ac3f"
+    },
+    {
+      "leg": "right",
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/sources/generated/right-leg-six-pose-corrected.png",
+      "sha256": "a6f71ff928d6c8a4a97cd2a3dee25425b442cd1f1289ae700c3e93eb2d31ffc5"
+    },
+    {
+      "pose": "left:4",
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/sources/generated/left-leg-pose04-contact-corrected.png",
+      "sha256": "ff18fde4152f306cdb467342aad02825d70ac4f68bb64de4f354189cb3a5fd3f",
+      "role": "binding single-pose contact correction"
+    }
+  ],
+  "order": "top-left to top-right, then bottom-left to bottom-right",
+  "upperBodyLock": {
+    "authority": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-right_f01.png",
+    "exactThroughY": 212,
+    "featherThroughY": 220
+  },
+  "contactCorrection": {
+    "leftPose4": "binding single-pose render plus deterministic 12 px lower-leg contact warp from y220 to y260; upper-body pixels unchanged"
+  },
+  "invariant": "Every registered pose has the same exact upper body through y212, feathered hip join through y220, y31 cap datum, y316 lowest-sole datum, 286 px alpha height, x128 upper-body anchor and transparent cell-edge gutter.",
+  "frames": [
+    {
+      "leg": "left",
+      "pose": 1,
+      "sourceCell": {
+        "col": 0,
+        "row": 0,
+        "bounds": {
+          "minX": 106,
+          "minY": 35,
+          "maxX": 293,
+          "maxY": 552,
+          "width": 188,
+          "height": 518,
+          "opaque": 71061
+        }
+      },
+      "scale": 0.5521235521235521,
+      "upperBodyAnchorX": 128,
+      "alphaBounds": {
+        "minX": 76,
+        "minY": 31,
+        "maxX": 179,
+        "maxY": 316,
+        "width": 104,
+        "height": 286,
+        "opaque": 21816
+      },
+      "soleDatumY": 316,
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-right_f01.png",
+      "rightSha256": "5df568489f4ad651fa86fe2c6d7f3c41c2694272b3f11e145114a8a63d2da421",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-left_f01.png",
+      "leftSha256": "76757ffe8b17c13572974f6e13c90de0cd8334239a39d7fb7590d1a8650e5ede",
+      "edgeAlpha": 0
+    },
+    {
+      "leg": "left",
+      "pose": 2,
+      "sourceCell": {
+        "col": 1,
+        "row": 0,
+        "bounds": {
+          "minX": 579,
+          "minY": 36,
+          "maxX": 856,
+          "maxY": 553,
+          "width": 278,
+          "height": 518,
+          "opaque": 80224
+        }
+      },
+      "scale": 0.5521235521235521,
+      "upperBodyAnchorX": 128,
+      "alphaBounds": {
+        "minX": 76,
+        "minY": 31,
+        "maxX": 228,
+        "maxY": 316,
+        "width": 153,
+        "height": 286,
+        "opaque": 24256
+      },
+      "soleDatumY": 316,
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-right_f02.png",
+      "rightSha256": "ab409367706eaceb11eec609b887501b2611286da549ee7440aba80e8bcc671c",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-left_f02.png",
+      "leftSha256": "919f30b26e08c57ab3640581ad48a8e1a803773b62dbfff28c22fbde32523d74",
+      "edgeAlpha": 0
+    },
+    {
+      "leg": "left",
+      "pose": 3,
+      "sourceCell": {
+        "col": 2,
+        "row": 0,
+        "bounds": {
+          "minX": 1052,
+          "minY": 36,
+          "maxX": 1344,
+          "maxY": 552,
+          "width": 293,
+          "height": 517,
+          "opaque": 78676
+        }
+      },
+      "scale": 0.5531914893617021,
+      "upperBodyAnchorX": 128,
+      "alphaBounds": {
+        "minX": 76,
+        "minY": 31,
+        "maxX": 232,
+        "maxY": 316,
+        "width": 157,
+        "height": 286,
+        "opaque": 24099
+      },
+      "soleDatumY": 316,
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-right_f03.png",
+      "rightSha256": "1be5feb2fa57292fbfd9eb45e1e46d31fed0d6513349a41ae4661ddb21a09d40",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-left_f03.png",
+      "leftSha256": "f8994a407446d6cc5f3bad354b4781bd8f4ed9667d0a32a023bcb328eea5e3fb",
+      "edgeAlpha": 0
+    },
+    {
+      "leg": "left",
+      "pose": 4,
+      "sourceCell": {
+        "overrideFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/sources/generated/left-leg-pose04-contact-corrected.png",
+        "overrideSha256": "ff18fde4152f306cdb467342aad02825d70ac4f68bb64de4f354189cb3a5fd3f",
+        "bounds": {
+          "minX": 335,
+          "minY": 93,
+          "maxX": 989,
+          "maxY": 1331,
+          "width": 655,
+          "height": 1239,
+          "opaque": 421045
+        }
+      },
+      "scale": 0.23083131557707828,
+      "upperBodyAnchorX": 128,
+      "alphaBounds": {
+        "minX": 75,
+        "minY": 31,
+        "maxX": 218,
+        "maxY": 316,
+        "width": 144,
+        "height": 286,
+        "opaque": 23445
+      },
+      "soleDatumY": 316,
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-right_f04.png",
+      "rightSha256": "5f4e1b51098296308ead3230892627d742603fb5a10d890e5bd2077343717d9b",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-left_f04.png",
+      "leftSha256": "58c1e08b19521696dc2acf72f882d71bd6d53ef43fd408a63eb57c31d31d543f",
+      "edgeAlpha": 0
+    },
+    {
+      "leg": "left",
+      "pose": 5,
+      "sourceCell": {
+        "col": 1,
+        "row": 1,
+        "bounds": {
+          "minX": 565,
+          "minY": 592,
+          "maxX": 846,
+          "maxY": 1108,
+          "width": 282,
+          "height": 517,
+          "opaque": 79708
+        }
+      },
+      "scale": 0.5531914893617021,
+      "upperBodyAnchorX": 128,
+      "alphaBounds": {
+        "minX": 64,
+        "minY": 31,
+        "maxX": 219,
+        "maxY": 316,
+        "width": 156,
+        "height": 286,
+        "opaque": 24180
+      },
+      "soleDatumY": 316,
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-right_f05.png",
+      "rightSha256": "eed5118b4153d1b574833aa481f25e79bbcf51574191e36a8c16e41b994e16a3",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-left_f05.png",
+      "leftSha256": "afa3696a1d30dcad5b21d8dd2c453e6757f0f9c99191672686f94d256d63dc89",
+      "edgeAlpha": 0
+    },
+    {
+      "leg": "left",
+      "pose": 6,
+      "sourceCell": {
+        "col": 2,
+        "row": 1,
+        "bounds": {
+          "minX": 1043,
+          "minY": 592,
+          "maxX": 1303,
+          "maxY": 1106,
+          "width": 261,
+          "height": 515,
+          "opaque": 79165
+        }
+      },
+      "scale": 0.5553398058252427,
+      "upperBodyAnchorX": 128,
+      "alphaBounds": {
+        "minX": 71,
+        "minY": 31,
+        "maxX": 215,
+        "maxY": 316,
+        "width": 145,
+        "height": 286,
+        "opaque": 24360
+      },
+      "soleDatumY": 316,
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-right_f06.png",
+      "rightSha256": "326d0609b85a8a50b0d5ddb051663d1c7a54912c505654bc96be22c2b23014ce",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-left_f06.png",
+      "leftSha256": "598a17d54b1411ca0cc4a3e5c9f28620bff8b73f7f55a084b8cf56bbf986c8a5",
+      "edgeAlpha": 0
+    },
+    {
+      "leg": "right",
+      "pose": 1,
+      "sourceCell": {
+        "col": 0,
+        "row": 0,
+        "bounds": {
+          "minX": 114,
+          "minY": 27,
+          "maxX": 377,
+          "maxY": 558,
+          "width": 264,
+          "height": 532,
+          "opaque": 83009
+        }
+      },
+      "scale": 0.5375939849624061,
+      "upperBodyAnchorX": 128,
+      "alphaBounds": {
+        "minX": 76,
+        "minY": 31,
+        "maxX": 211,
+        "maxY": 316,
+        "width": 136,
+        "height": 286,
+        "opaque": 23923
+      },
+      "soleDatumY": 316,
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-right_f01.png",
+      "rightSha256": "4e862899d7c7cb3b796ac44579c9b472175fc1f55e9cad7daed69a366322bab6",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-left_f01.png",
+      "leftSha256": "36fd70ed08996abff2e56a714b700bac3cd6b5a6eaa68365b4431b3a3e72d2b6",
+      "edgeAlpha": 0
+    },
+    {
+      "leg": "right",
+      "pose": 2,
+      "sourceCell": {
+        "col": 1,
+        "row": 0,
+        "bounds": {
+          "minX": 568,
+          "minY": 27,
+          "maxX": 865,
+          "maxY": 559,
+          "width": 298,
+          "height": 533,
+          "opaque": 85662
+        }
+      },
+      "scale": 0.5365853658536586,
+      "upperBodyAnchorX": 128,
+      "alphaBounds": {
+        "minX": 76,
+        "minY": 31,
+        "maxX": 235,
+        "maxY": 316,
+        "width": 160,
+        "height": 286,
+        "opaque": 24743
+      },
+      "soleDatumY": 316,
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-right_f02.png",
+      "rightSha256": "88ecb1662c847619783c4193031994e3091883ac28b92c4a4e56de97780470af",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-left_f02.png",
+      "leftSha256": "95e9e40a02ec1db8aa289688893ea217ce8364add916fc20b858df0457690486",
+      "edgeAlpha": 0
+    },
+    {
+      "leg": "right",
+      "pose": 3,
+      "sourceCell": {
+        "col": 2,
+        "row": 0,
+        "bounds": {
+          "minX": 1025,
+          "minY": 26,
+          "maxX": 1315,
+          "maxY": 559,
+          "width": 291,
+          "height": 534,
+          "opaque": 83751
+        }
+      },
+      "scale": 0.5355805243445693,
+      "upperBodyAnchorX": 128,
+      "alphaBounds": {
+        "minX": 76,
+        "minY": 31,
+        "maxX": 222,
+        "maxY": 316,
+        "width": 147,
+        "height": 286,
+        "opaque": 23916
+      },
+      "soleDatumY": 316,
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-right_f03.png",
+      "rightSha256": "c9adb07314f9201c07fe4c70be5dce4283b697e77eeee3e0ebf91aee6d50a485",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-left_f03.png",
+      "leftSha256": "45698bae98331d769da77e1235bf783ac382c7f3e69ab2169b59374994b07bcf",
+      "edgeAlpha": 0
+    },
+    {
+      "leg": "right",
+      "pose": 4,
+      "sourceCell": {
+        "col": 0,
+        "row": 1,
+        "bounds": {
+          "minX": 117,
+          "minY": 583,
+          "maxX": 408,
+          "maxY": 1111,
+          "width": 292,
+          "height": 529,
+          "opaque": 83712
+        }
+      },
+      "scale": 0.5406427221172023,
+      "upperBodyAnchorX": 128,
+      "alphaBounds": {
+        "minX": 76,
+        "minY": 31,
+        "maxX": 222,
+        "maxY": 316,
+        "width": 147,
+        "height": 286,
+        "opaque": 24157
+      },
+      "soleDatumY": 316,
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-right_f04.png",
+      "rightSha256": "c00fcbd0e4f1cf130996a23d28052a7163b747a90b91fd1c794ebcd9a8ff6733",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-left_f04.png",
+      "leftSha256": "9ababc16c15a994ce80e7682bb1cf43e2937771e2437cd0fc0d82d292f6528c7",
+      "edgeAlpha": 0
+    },
+    {
+      "leg": "right",
+      "pose": 5,
+      "sourceCell": {
+        "col": 1,
+        "row": 1,
+        "bounds": {
+          "minX": 563,
+          "minY": 584,
+          "maxX": 845,
+          "maxY": 1110,
+          "width": 283,
+          "height": 527,
+          "opaque": 85274
+        }
+      },
+      "scale": 0.5426944971537002,
+      "upperBodyAnchorX": 128,
+      "alphaBounds": {
+        "minX": 70,
+        "minY": 31,
+        "maxX": 223,
+        "maxY": 316,
+        "width": 154,
+        "height": 286,
+        "opaque": 25046
+      },
+      "soleDatumY": 316,
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-right_f05.png",
+      "rightSha256": "51f46cba07001b9d0ec052361c9f90e8a5dd07aec7fd412cc1e9bab1d7ef478a",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-left_f05.png",
+      "leftSha256": "657adc0480755b50b4947408bc2123400ac7dfb5ba1cff1b2be9a433ae2773b5",
+      "edgeAlpha": 0
+    },
+    {
+      "leg": "right",
+      "pose": 6,
+      "sourceCell": {
+        "col": 2,
+        "row": 1,
+        "bounds": {
+          "minX": 1007,
+          "minY": 584,
+          "maxX": 1257,
+          "maxY": 1108,
+          "width": 251,
+          "height": 525,
+          "opaque": 81495
+        }
+      },
+      "scale": 0.5447619047619048,
+      "upperBodyAnchorX": 128,
+      "alphaBounds": {
+        "minX": 66,
+        "minY": 31,
+        "maxX": 202,
+        "maxY": 316,
+        "width": 137,
+        "height": 286,
+        "opaque": 24096
+      },
+      "soleDatumY": 316,
+      "rightFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-right_f06.png",
+      "rightSha256": "976a80b839b50928178ece1d4f3a3f4cb43435913aba0b3ba9ddf1cdb5f5230f",
+      "leftFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-left_f06.png",
+      "leftSha256": "4dd3058258ff25d0b389df6a06de7cc9f9616b41755841d2950da6cc0b729f36",
+      "edgeAlpha": 0
+    }
+  ]
+}

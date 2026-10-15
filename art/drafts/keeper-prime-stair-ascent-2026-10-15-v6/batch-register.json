@@ -1,0 +1,95 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-stair-ascent-2026-10-15-v6",
+  "status": "draft-v6-equal-leg-fourteen-contact-ascent-awaiting-review",
+  "authorities": {
+    "rejectedV5": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v5/batch-register.json",
+      "sha256": "ef4f360e011c791804dd2ac20f07a6f298aaec364ed45697cf3f1678ce11e4a3"
+    },
+    "approvedSideMaster": {
+      "file": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+    },
+    "sourcePreparation": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/source-preparation-v6.json",
+      "sha256": "f007bb3d191e92a248a061ae125cd760eb7142aee186fb28a3d74b4dd696ad5c"
+    },
+    "contactRig": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/stair-contact-rig-v6.json",
+      "sha256": "808e5a6541e0dac35f015aa0e284c82b7dd1c1b849140d0d93ee31b3cbeb755f"
+    }
+  },
+  "generation": {
+    "mode": "separate-built-in-image-generation-left-and-right-passes-plus-deterministic-registration-upper-body-lock-and-exact-mirror",
+    "frameUrls": [
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f1-2c8b806099331b30.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f2-f5a26dc9bd398641.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f3-03ca95b46906ca72.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f4-cfc475297731d5aa.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f5-b88530f5950b8fd8.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f6-bbb2fa7817442ff0.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f7-2e0bc904c3dc9959.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f8-23bcfc5d3a570fff.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/left-leg-step-f01-76757ffe8b17c135.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/left-leg-step-f02-919f30b26e08c57a.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/left-leg-step-f03-f8994a407446d6cc.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/left-leg-step-f04-58c1e08b19521696.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/left-leg-step-f05-afa3696a1d30dcad.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/left-leg-step-f06-598a17d54b1411ca.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/right-leg-step-f01-36fd70ed08996abf.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/right-leg-step-f02-95e9e40a02ec1db8.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/right-leg-step-f03-45698bae98331d76.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/right-leg-step-f04-9ababc16c15a994c.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/right-leg-step-f05-657adc0480755b50.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/right-leg-step-f06-4dd3058258ff25d0.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/left-leg-contact-authority-852217c6481fe301.png",
+      "/keeper-review/keeper-prime-stair-ascent-v6/assets/right-leg-contact-authority-b3b116056bff6849.png"
+    ]
+  },
+  "spec": {
+    "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/keeper-prime-stair-ascent-v6.json",
+    "sha256": "acd15359d1c4be2bb7c3dfb14302aae74a6be928868891527d6aea3944b1480c"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-stair-ascent-v6/index.html",
+    "sha256": "e30aba6e8fa44d42963e4c0794c1eb20b9e6d24b3251cdf48721c20f350bf299"
+  },
+  "frameUrls": [
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f1-2c8b806099331b30.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f2-f5a26dc9bd398641.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f3-03ca95b46906ca72.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f4-cfc475297731d5aa.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f5-b88530f5950b8fd8.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f6-bbb2fa7817442ff0.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f7-2e0bc904c3dc9959.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/walk-left-f8-23bcfc5d3a570fff.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/left-leg-step-f01-76757ffe8b17c135.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/left-leg-step-f02-919f30b26e08c57a.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/left-leg-step-f03-f8994a407446d6cc.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/left-leg-step-f04-58c1e08b19521696.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/left-leg-step-f05-afa3696a1d30dcad.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/left-leg-step-f06-598a17d54b1411ca.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/right-leg-step-f01-36fd70ed08996abf.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/right-leg-step-f02-95e9e40a02ec1db8.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/right-leg-step-f03-45698bae98331d76.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/right-leg-step-f04-9ababc16c15a994c.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/right-leg-step-f05-657adc0480755b50.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/right-leg-step-f06-4dd3058258ff25d0.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/left-leg-contact-authority-852217c6481fe301.png",
+    "/keeper-review/keeper-prime-stair-ascent-v6/assets/right-leg-contact-authority-b3b116056bff6849.png"
+  ],
+  "validation": {
+    "leftContacts": 7,
+    "rightContacts": 7,
+    "adjacentTreadOnly": true,
+    "framesPerStep": 6,
+    "cadencePreserved": true,
+    "upperBodyStable": true,
+    "edgeAlphaZero": true,
+    "exactFlightClosure": true,
+    "v1ThroughV5Changed": false,
+    "finalChanged": false,
+    "productionChanged": false
+  }
+}

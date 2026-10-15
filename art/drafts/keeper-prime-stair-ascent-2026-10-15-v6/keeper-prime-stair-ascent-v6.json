@@ -1,0 +1,64 @@
+{
+  "schema": "lighthouse-keeper/prime-stair-ascent@6",
+  "status": "draft-v6-equal-leg-fourteen-contact-ascent-awaiting-review",
+  "rejectionOfV5": "V5 did not divide the work 50/50 and allowed the left boot below the stair surface.",
+  "correction": {
+    "floorTopLp": 20,
+    "baseX": 94.5,
+    "baseBottomLp": 19.5,
+    "flightRunLp": 84,
+    "flightRiseLp": 60,
+    "risers": 14,
+    "treadRunLp": 6,
+    "riserRiseLp": 4.285714285714286,
+    "leftContacts": 7,
+    "rightContacts": 7,
+    "posesPerStep": 6,
+    "climbFrameDurationMs": 60,
+    "contactOrder": [
+      "left",
+      "right",
+      "left",
+      "right",
+      "left",
+      "right",
+      "left",
+      "right",
+      "left",
+      "right",
+      "left",
+      "right",
+      "left",
+      "right"
+    ],
+    "rootRunLp": [
+      0,
+      0.9,
+      2,
+      3.1,
+      4.6,
+      6
+    ],
+    "rootRiseFactor": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "artwork": {
+    "separateLeftLegPass": true,
+    "separateRightLegPass": true,
+    "upperBodyLockedThroughY212": true,
+    "transparentCells": true,
+    "promoted": false
+  },
+  "unchanged": {
+    "v1ThroughV5": true,
+    "approvedWalkSourcePixels": true,
+    "finalLane": true,
+    "production": true
+  }
+}

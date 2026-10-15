@@ -99,17 +99,21 @@ it off to expose the exact V3 motion. V4's 17 versioned asset aliases resolve
 to the existing V3 archive objects, so no binary artwork is duplicated. Do
 not promote the mask or V3 motion without Frank's explicit approval.
 
-The active unapproved correction is
-`/keeper-review/keeper-prime-stair-ascent-v5/`. V5 records the deeper diagnosis:
-V3/V4 placed each one-riser body rise after the associated four-frame leg step,
-making the next leg begin with a whole-body jump. V5 reuses the exact V3 media
-and durations but applies the registered rig root directly. F1–F4 are one
-near-leg step landing +3.75 lp at F4; F5–F8 are one far-leg step landing +3.75
-lp at F8. The root never reverses, and eight cycles close sixteen individual
-steps at exactly 84 lp run × 60 lp rise. The bannister defaults to 55% opacity
-and has a live opacity control. The corrected exact-logical-scale pane is
-bottom-left aligned. No character art, staircase dimension, Final or
-production file changed.
+Frank rejected V5: the visible movement was still not an exact 50/50 division
+between the legs, and the left boot crossed the stair surface. Preserve V5 as
+rejected provenance. The active unapproved correction is
+`/keeper-review/keeper-prime-stair-ascent-v6/`. V6 replaces all V3–V5 climb
+art with a separately authored six-pose left step and six-pose right step.
+Fourteen contacts alternate strictly LEFT/RIGHT (seven each), with 6 lp run and
+60/14 lp rise per adjacent tread. Six 60-ms poses retain essentially the same
+per-step cadence as V5 (360 ms versus 368 ms) while adding real intermediate
+leg drawings. All twelve registered 256×320 cells have fixed y31/y316
+cap/lowest-sole datums, byte-identical upper bodies through y212, a feathered
+hip join, transparent edge gutters and exact mirrored leftward cells. The
+review offers frame stepping, a one-left-plus-one-right loop, contact lines,
+large and exact-game-scale panes and an adjustable translucent bannister. It
+closes the same 84 × 60 lp flight. No approved walk, Final or production file
+changed.
 
 ## Lift entry alignment correction (14 Oct 2026)
 

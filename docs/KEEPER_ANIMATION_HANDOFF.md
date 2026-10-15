@@ -1366,17 +1366,22 @@ default and toggleable for direct masked/unmasked comparison. V4 owns 17
 versioned archive aliases, all resolving to the same 17 immutable V3 objects;
 no binary art is duplicated and nothing has moved to Final or production.
 
-The active unapproved `/keeper-review/keeper-prime-stair-ascent-v5/` corrects
-the root phasing instead of relying on occlusion. Review of the contact rig
-showed that V3/V4 postponed each one-riser body rise until after its four-frame
-leg sequence. V5 applies the rig root directly: the near leg owns F1–F4 and
-lands one 3.75-lp riser higher at F4; the far leg owns F5–F8 and lands one
-riser higher at F8. Horizontal root motion is monotonic and eight cycles close
-sixteen independent steps over the unchanged 84-lp run and 60-lp total rise.
-All 17 character/guide media hashes and all frame durations remain exact V3.
-The V4 stair side remains as an adjustable 55%-opacity foreground depth layer,
-not a full concealment. V5 also corrects the exact-game-scale review-world
-alignment. Nothing is approved, in Final or in production.
+Frank rejected V5 after motion review because the legs still did not contribute
+50/50 and the left boot again crossed the stair surface. V5 remains immutable
+rejected provenance. The active unapproved
+`/keeper-review/keeper-prime-stair-ascent-v6/` replaces the V3–V5 climb art.
+It has two separately authored six-pose steps, one for each leg, repeated as
+seven exact LEFT/RIGHT pairs across fourteen adjacent treads. Each step advances
+6 lp and rises 60/14 lp; no step can own two treads. Six 60-ms frames give a
+360-ms step, effectively preserving V5's 368-ms cadence while adding real
+intermediate drawings. Deterministic preparation fixes every 256×320 cell to
+y31 cap and y316 lowest-sole datums, locks the complete upper body byte-for-byte
+through y212, feathers the hip join through y220, provides transparent edge
+gutters and derives the gameplay-left cells by exact mirroring. The route still
+closes at exactly 84 lp run × 60 lp rise. The review page preloads every image
+before playback and provides single-frame stepping, a one-left-plus-one-right
+loop, contact overlays, large and exact-game-scale views and a 32%-opacity
+adjustable bannister. Nothing is approved, in Final or in production.
 
 ## Review-comments workflow for a later feedback round
 

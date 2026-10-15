@@ -1,0 +1,52 @@
+{
+  "schema": "lighthouse-keeper/stair-contact-rig@6",
+  "direction": "leftward gameplay",
+  "cell": [
+    256,
+    320
+  ],
+  "density": 8,
+  "geometry": {
+    "floorTopLp": 20,
+    "baseX": 94.5,
+    "baseBottomLp": 19.5,
+    "flightRunLp": 84,
+    "flightRiseLp": 60,
+    "risers": 14,
+    "treadRunLp": 6,
+    "riserRiseLp": 4.285714285714286,
+    "leftContacts": 7,
+    "rightContacts": 7,
+    "posesPerStep": 6,
+    "climbFrameDurationMs": 60
+  },
+  "rootRunLp": [
+    0,
+    0.9,
+    2,
+    3.1,
+    4.6,
+    6
+  ],
+  "rootRiseFactor": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "cadence": {
+    "framesPerStep": 6,
+    "millisecondsPerFrame": 60,
+    "millisecondsPerStep": 360,
+    "priorV5MillisecondsPerStep": 368
+  },
+  "contract": [
+    "Odd numbered contacts are LEFT leg; even numbered contacts are RIGHT leg.",
+    "Each leg owns exactly seven of the fourteen adjacent-tread contacts.",
+    "Every step advances exactly 6 lp and rises exactly 60/14 lp; no pose can advance two treads.",
+    "F1-F5 remain registered to the lower support tread; F6 transfers the root to the new planted tread.",
+    "The source high pass is artwork, not extra root motion; the page never infers travel from the silhouette."
+  ]
+}
