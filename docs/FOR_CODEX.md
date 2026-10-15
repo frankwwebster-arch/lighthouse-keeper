@@ -193,7 +193,7 @@ the tread/contact geometry remains the approved 14-riser, 7-lp-tread,
 ## Stair entry and landing-exit transition gate (15 Oct 2026)
 
 The current review candidate is
-`/keeper-review/keeper-prime-stair-transitions-v2/`. Its approved authorities
+`/keeper-review/keeper-prime-stair-transitions-v3/`. Its approved authorities
 remain byte-identical: Walk V6, Stair Ascent V16, approved side/back Turn V9,
 the side/front turn source retained for the opposite flight, and the approved
 stop-to-walk bridge. Left travel is CSS-mirrored only. Two new masked
@@ -223,8 +223,11 @@ right-hand door-reach cells are present as unapproved candidate art.
   neutral; the verifier requires every out-of-mask pixel to remain identical.
 
 The page opens on a focused nine-frame seam loop and preloads and decodes all
-27 unique URLs before enabling playback. Run
-`npm run verify:keeper-prime-stair-transitions-v2` to check authority hashes,
+27 unique URLs before enabling playback. V3 keeps the V2 route exact, fixes the
+moving frame readout to a constant height and shows a stacked 4× game view,
+matching the Studio's default `zoom=4`; the former 1× thumbnail was logical
+scale, not the useful default on-screen game presentation. Run
+`npm run verify:keeper-prime-stair-transitions-v3` to check authority hashes,
 256×320 transparent cell gutters, rejected-source exclusion, exact geometry,
 moving joins, hallway closure, controls and approval boundaries. Nothing is in
 Final or runtime until Frank approves the candidate.

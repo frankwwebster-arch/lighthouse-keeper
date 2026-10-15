@@ -1501,6 +1501,16 @@ review sequence. No frame is held, redrawn or rescaled, and V1 remains
 immutable. Run `npm run verify:keeper-prime-stair-transitions-v2`; Final,
 runtime and production are still unchanged pending visual approval.
 
+V3 at `/keeper-review/keeper-prime-stair-transitions-v3/` changes only the
+reviewer after Frank reported whole-page movement and an unusably small game
+preview. The per-frame readout now occupies a fixed 3.1-em block, preventing
+long labels from shifting either stage. The unchanged second stage is rendered
+at four screen pixels per logical pixel—the Studio's actual default `zoom=4`,
+so a 32 × 40 Keeper cell appears at 128 × 160 screen pixels—and is stacked
+below the 6× inspection stage. V2 route JSON is exact apart from its versioned
+asset prefix; all 27 source hashes, timing and roots are unchanged. Run
+`npm run verify:keeper-prime-stair-transitions-v3`.
+
 ## Review-comments workflow for a later feedback round
 
 1. Do not process another review export until the beard evidence gate is

@@ -160,7 +160,7 @@ of the Keeper's boots and lower legs, but it may not change the approved
 fourteen-riser contact geometry.
 
 The current reversible transition gate is
-`/keeper-review/keeper-prime-stair-transitions-v2/`. It composes exact approved
+`/keeper-review/keeper-prime-stair-transitions-v3/`. It composes exact approved
 authorities plus two clearly labelled candidate door-reach cells into two
 reviewable sequences: lower transfer door → two walk cycles → moving Stair V16
 F1, and final Stair V16 contacts → flat landing → clockwise
@@ -187,6 +187,12 @@ passing drawing before first-tread contact. The page opens on a nine-frame
 focused seam loop. No Keeper source pixel is redrawn or rescaled; V1 remains
 immutable review history.
 
+V3 changes no route or Keeper pixel. It fixes the moving review text to a
+constant height so frame-label wrapping cannot move the page, and replaces the
+misleading 1× logical-pixel thumbnail with the Studio's real default 4× screen
+presentation (a standard 32 × 40 logical Keeper cell appears at 128 × 160
+screen pixels). The large and game views are stacked so neither is squeezed.
+
 ## Run it
 ```
 npm install
@@ -199,6 +205,7 @@ npm run keeper-contract # rebuild neutral stills, bridges and the endpoint audit
 npm run archive:keeper-review # deduplicate new review media before committing
 npm run verify:keeper-prime-stair-transitions-v1 # exact frames, gutters, roots, joins and review-page contract
 npm run verify:keeper-prime-stair-transitions-v2 # focused walk-to-stair seam and unchanged-source checks
+npm run verify:keeper-prime-stair-transitions-v3 # fixed reviewer layout and default Studio 4× presentation
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
 
