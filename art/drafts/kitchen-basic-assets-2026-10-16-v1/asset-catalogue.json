@@ -1,0 +1,319 @@
+{
+  "schema": "lighthouse-keeper/kitchen-basic-assets@1",
+  "status": "reversible-tier-1-draft-awaiting-frank-review",
+  "units": {
+    "logicalPixelToKu": 8,
+    "bayLp": 21,
+    "bayKu": 168
+  },
+  "room": {
+    "heightLp": 56,
+    "doorDirectionProposal": "outward-into-stairwell",
+    "doorClearLp": 4,
+    "doorClearKu": 32,
+    "startBays": 9,
+    "startWidthLp": 193,
+    "startWidthKu": 1544,
+    "maxBays": 12,
+    "maxWidthLp": 256,
+    "maxWidthKu": 2048,
+    "repeatSectionLp": [
+      21,
+      56
+    ],
+    "repeatSectionKu": [
+      168,
+      448
+    ]
+  },
+  "objects": {
+    "obj_fridge": {
+      "canvasLp": [
+        21,
+        21
+      ],
+      "measuredStandardBoundsLp": {
+        "x": 1,
+        "y": 2,
+        "width": 19,
+        "height": 19
+      },
+      "bays": 1,
+      "maxSize": "21 \u00d7 19 lp",
+      "origin": "bottom-centre of declared bays",
+      "interactionOffsetKu": 0,
+      "states": [
+        "standard",
+        "on",
+        "broken"
+      ],
+      "note": "worktop top 19 lp; on opens door"
+    },
+    "obj_kettle": {
+      "canvasLp": [
+        21,
+        31
+      ],
+      "measuredStandardBoundsLp": {
+        "x": 1,
+        "y": 1,
+        "width": 19,
+        "height": 30
+      },
+      "bays": 1,
+      "maxSize": "21 \u00d7 30 lp",
+      "origin": "bottom-centre of declared bays",
+      "interactionOffsetKu": 0,
+      "states": [
+        "standard",
+        "on",
+        "broken"
+      ],
+      "note": "counter top 19 lp; stove kettle on one gas ring"
+    },
+    "obj_toaster": {
+      "canvasLp": [
+        21,
+        31
+      ],
+      "measuredStandardBoundsLp": {
+        "x": 1,
+        "y": 2,
+        "width": 19,
+        "height": 29
+      },
+      "bays": 1,
+      "maxSize": "21 \u00d7 30 lp",
+      "origin": "bottom-centre of declared bays",
+      "interactionOffsetKu": 0,
+      "states": [
+        "standard",
+        "on",
+        "broken"
+      ],
+      "note": "counter top 19 lp; toast pop"
+    },
+    "obj_cooker": {
+      "canvasLp": [
+        21,
+        28
+      ],
+      "measuredStandardBoundsLp": {
+        "x": 1,
+        "y": 2,
+        "width": 19,
+        "height": 26
+      },
+      "bays": 1,
+      "maxSize": "21 \u00d7 26 lp",
+      "origin": "bottom-centre of declared bays",
+      "interactionOffsetKu": 0,
+      "states": [
+        "standard",
+        "on",
+        "broken"
+      ],
+      "note": "hob 19 lp; rack 10 lp; oven door exactly 19 lp"
+    },
+    "obj_mixer": {
+      "canvasLp": [
+        21,
+        31
+      ],
+      "measuredStandardBoundsLp": {
+        "x": 1,
+        "y": 1,
+        "width": 19,
+        "height": 30
+      },
+      "bays": 1,
+      "maxSize": "21 \u00d7 30 lp",
+      "origin": "bottom-centre of declared bays",
+      "interactionOffsetKu": 0,
+      "states": [
+        "standard",
+        "on",
+        "broken"
+      ],
+      "note": "counter top 19 lp; spoon stir"
+    },
+    "obj_sink": {
+      "canvasLp": [
+        21,
+        29
+      ],
+      "measuredStandardBoundsLp": {
+        "x": 1,
+        "y": 2,
+        "width": 19,
+        "height": 27
+      },
+      "bays": 1,
+      "maxSize": "21 \u00d7 27 lp",
+      "origin": "bottom-centre of declared bays",
+      "interactionOffsetKu": 0,
+      "states": [
+        "standard",
+        "on",
+        "broken"
+      ],
+      "note": "counter top 19 lp; tap peak 27 lp"
+    },
+    "obj_table": {
+      "canvasLp": [
+        42,
+        28
+      ],
+      "measuredStandardBoundsLp": {
+        "x": 3,
+        "y": 2,
+        "width": 38,
+        "height": 26
+      },
+      "bays": 2,
+      "maxSize": "42 \u00d7 26 lp",
+      "origin": "bottom-centre of declared bays",
+      "interactionOffsetKu": -84,
+      "states": [
+        "standard"
+      ],
+      "note": "chair interaction is 10.5 lp left of two-bay centre"
+    },
+    "obj_bin": {
+      "canvasLp": [
+        21,
+        16
+      ],
+      "measuredStandardBoundsLp": {
+        "x": 3,
+        "y": 2,
+        "width": 15,
+        "height": 14
+      },
+      "bays": 1,
+      "maxSize": "21 \u00d7 14 lp",
+      "origin": "bottom-centre of declared bays",
+      "interactionOffsetKu": 0,
+      "states": [
+        "standard",
+        "full",
+        "overflowing"
+      ],
+      "note": "own bay; no overlap"
+    },
+    "obj_petbowl": {
+      "canvasLp": [
+        16,
+        8
+      ],
+      "measuredStandardBoundsLp": {
+        "x": 2,
+        "y": 5,
+        "width": 12,
+        "height": 3
+      },
+      "bays": 0,
+      "maxSize": "12 \u00d7 3 lp",
+      "origin": "bottom-centre of declared bays",
+      "interactionOffsetKu": 0,
+      "states": [
+        "standard",
+        "full",
+        "broken"
+      ],
+      "note": "foreground child of the table; moves with it and takes no bay"
+    },
+    "obj_cupboard": {
+      "canvasLp": [
+        38,
+        56
+      ],
+      "measuredStandardBoundsLp": {
+        "x": 31,
+        "y": 0,
+        "width": 6,
+        "height": 56
+      },
+      "bays": 0,
+      "maxSize": "32 \u00d7 40 lp opening",
+      "origin": "bottom-centre of declared bays",
+      "interactionOffsetKu": -84,
+      "states": [
+        "standard",
+        "on",
+        "open"
+      ],
+      "note": "far-wall architecture; stance is final lattice line"
+    }
+  },
+  "layout9": {
+    "obj_bin": {
+      "bays": [
+        1
+      ],
+      "interactionXKu": 116
+    },
+    "obj_fridge": {
+      "bays": [
+        2
+      ],
+      "interactionXKu": 284
+    },
+    "obj_kettle": {
+      "bays": [
+        3
+      ],
+      "interactionXKu": 452
+    },
+    "obj_toaster": {
+      "bays": [
+        4
+      ],
+      "interactionXKu": 620
+    },
+    "obj_cooker": {
+      "bays": [
+        5
+      ],
+      "interactionXKu": 788
+    },
+    "obj_mixer": {
+      "bays": [
+        6
+      ],
+      "interactionXKu": 956
+    },
+    "obj_sink": {
+      "bays": [
+        7
+      ],
+      "interactionXKu": 1124
+    },
+    "obj_table": {
+      "bays": [
+        8,
+        9
+      ],
+      "interactionXKu": 1292,
+      "choice": "left bay centre / -84 ku from item origin"
+    },
+    "obj_cupboard": {
+      "bays": [],
+      "interactionXKu": 1460,
+      "choice": "last internal lattice line"
+    },
+    "obj_petbowl": {
+      "bays": [],
+      "interactionXKu": 1376,
+      "choice": "foreground at the table origin; moves with table and takes no bay"
+    }
+  },
+  "layout12": {
+    "obj_cupboardInteractionXKu": 1964
+  },
+  "reviewQuestions": {
+    "oven19LpDoor": "Review exposed; do not widen. Existing oven clips remain readable against the exact 19-lp door, though hands/plates extend beyond the door silhouette as expected.",
+    "cupboardOcclusion": "Review exposed at 9 and 12 bays. The 32-lp leaf hides the Keeper body, but the broom and basic-hoover composites can protrude if swapped before the root is fully behind the far wall; swap must occur only at the fully hidden root.",
+    "roomDoor": "Propose outward into stairwell with 4-lp/32-ku room-side clear area; leaf uses the committed stair-transition geometry and occupies the circulation side."
+  }
+}
