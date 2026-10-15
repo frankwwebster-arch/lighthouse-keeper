@@ -1,0 +1,43 @@
+{
+  "schema": "lighthouse-keeper/prime-stair-ascent@4",
+  "status": "draft-v4-foreground-banister-occlusion-awaiting-review",
+  "basis": "Exact immutable V3 motion and review timeline.",
+  "change": "Foreground-only closed stringer band, handrail and balusters obscure boots/lower shins while leaving knees and body visible.",
+  "mask": {
+    "stage": [
+      620,
+      480
+    ],
+    "stringerPolygonPercent": [
+      [
+        6.8,
+        22.2
+      ],
+      [
+        67,
+        77.7
+      ],
+      [
+        67,
+        97.7
+      ],
+      [
+        6.8,
+        42.7
+      ]
+    ],
+    "railAngleDeg": 35.54,
+    "zIndex": 7,
+    "defaultVisible": true
+  },
+  "unchanged": {
+    "v3Page": true,
+    "mediaBytes": true,
+    "artwork": true,
+    "timing": true,
+    "rootMotion": true,
+    "stairGeometry": true,
+    "finalLane": true,
+    "production": true
+  }
+}

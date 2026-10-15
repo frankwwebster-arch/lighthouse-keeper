@@ -79,8 +79,8 @@ does not change route geometry, timing, Final or production.
 
 Frank rejected V2 after seeing it move: the visual leg roles still did not
 alternate convincingly and the left boot passed below the stair surface. Keep
-V2 immutable. The active unapproved correction is
-`/keeper-review/keeper-prime-stair-ascent-v3/`. V3 is a fresh, versioned set of
+V2 immutable. `/keeper-review/keeper-prime-stair-ascent-v3/` is a fresh,
+versioned set of
 eight individually rendered and registered poses. Near advances in F1–F4; far
 advances in F5–F8. Every frame has an isolated 256×320 cell, transparent edge
 gutter and y=316 lowest-sole datum. Playback computes each lower support
@@ -88,6 +88,16 @@ contact from its declared tread centre/top, and the page includes frame
 stepping, a two-step-only loop, an exact-logical-scale view and an optional
 contact-line overlay. No prior candidate, runtime geometry, Final or
 production file changed.
+
+Frank then rejected the unmasked V3 presentation because its exposed boots
+read as jumping two treads at once. Keep V3 immutable. The active unapproved
+candidate is `/keeper-review/keeper-prime-stair-ascent-v4/`. V4 is deliberately
+presentation-only: its timeline, V3 media hashes, root motion, stair geometry
+and timing are unchanged, while a closed foreground stringer/bannister masks
+the boots and lower shins. The mask is enabled by default and the page can turn
+it off to expose the exact V3 motion. V4's 17 versioned asset aliases resolve
+to the existing V3 archive objects, so no binary artwork is duplicated. Do
+not promote the mask or V3 motion without Frank's explicit approval.
 
 ## Lift entry alignment correction (14 Oct 2026)
 

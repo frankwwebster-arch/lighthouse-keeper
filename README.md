@@ -69,12 +69,20 @@ first-leg F1–F4 / opposite-leg F5–F8 phase structure. Route geometry and the
 zero-pause join are unchanged; nothing is in Final or production.
 Frank rejected V2 after motion review because the labelled phases still did
 not read as a genuine leg transfer and the left boot struck below the stair
-surface. The active replacement is the reversible, unapproved
-`/keeper-review/keeper-prime-stair-ascent-v3/`. V3 uses eight individually
+surface. The reversible, unapproved
+`/keeper-review/keeper-prime-stair-ascent-v3/` uses eight individually
 registered poses: the near leg completes F1–F4 and the far leg completes
 F5–F8. Each lowest contact sole is fixed at cell y=316 and mapped to the actual
 tread top, while a toggle exposes that datum in the review page. V1 and V2
-remain immutable rejected evidence; nothing has entered Final or production.
+remain immutable rejected evidence. Frank rejected the unmasked V3
+presentation because the visible boot separation reads as climbing two stairs
+at once. The active V4 review at
+`/keeper-review/keeper-prime-stair-ascent-v4/` preserves every V3 character
+pixel, root position, timing value and stair dimension, but adds a closed
+foreground stair stringer and bannister above the boots/lower shins. Its mask
+is on by default and can be toggled off for an exact V3 comparison. V4 reuses
+the 17 V3 media hashes without adding archive objects; nothing has entered
+Final or production.
 
 ## Run it
 ```

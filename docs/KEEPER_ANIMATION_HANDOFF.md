@@ -1345,15 +1345,26 @@ zero-pause join, Final and production remain unchanged.
 
 Frank rejected V2 after motion review because its declared phase change still
 did not produce a readable opposite-leg transfer and the left boot dropped
-below the stair surface. V2 remains immutable rejected provenance. The active
-unapproved replacement is
-`/keeper-review/keeper-prime-stair-ascent-v3/`. V3 redraws and registers each
+below the stair surface. V2 remains immutable rejected provenance.
+`/keeper-review/keeper-prime-stair-ascent-v3/` redraws and registers each
 pose separately against a deterministic two-step contact rig: near leg F1–F4,
 far leg F5–F8. The prepared left/right cells are 256×320 with transparent
 gutters, exact mirrors and a fixed lowest-sole y=316 datum. Review placement
 maps that sole to the mathematical top of its active tread; the review UI can
 show the contact line and loop only one two-step cycle. V1/V2, approved walk
 pixels, route geometry, Final and production remain unchanged.
+
+Frank rejected the unmasked V3 presentation after motion review because the
+distance visible between its boots reads as jumping two treads at once. V3 is
+immutable rejected provenance as an unmasked presentation. The active
+unapproved `/keeper-review/keeper-prime-stair-ascent-v4/` is a deliberately
+cheap presentation test: it reuses the exact V3 artwork hashes, timeline,
+timing, root motion, stair geometry and contacts, and adds only a foreground
+closed stringer plus bannister at z-index 7. This layer hides the boots and
+lower shins while leaving the knees and body readable. It is enabled by
+default and toggleable for direct masked/unmasked comparison. V4 owns 17
+versioned archive aliases, all resolving to the same 17 immutable V3 objects;
+no binary art is duplicated and nothing has moved to Final or production.
 
 ## Review-comments workflow for a later feedback round
 

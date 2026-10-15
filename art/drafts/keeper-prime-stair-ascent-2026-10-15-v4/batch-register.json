@@ -1,0 +1,93 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-stair-ascent-2026-10-15-v4",
+  "status": "draft-v4-foreground-banister-occlusion-awaiting-review",
+  "authorities": {
+    "v3Batch": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v3/batch-register.json",
+      "sha256": "384d42411ff77e9960c612e6ee39845ce6e057ae5c4f7ef2806126b5d8e71744"
+    },
+    "v3Page": {
+      "file": "public/keeper-review/keeper-prime-stair-ascent-v3/index.html",
+      "sha256": "84a1df45bd924d738ac7a0c4e568b405ab4f6d883e7c6b33aa1ccf730a9ebb84"
+    }
+  },
+  "presentation": {
+    "kind": "foreground-css-occlusion",
+    "characterAssetsReusedByHash": true,
+    "sourceFrameUrls": [
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/walk-left-f1-2c8b806099331b30.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/walk-left-f2-f5a26dc9bd398641.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/walk-left-f3-03ca95b46906ca72.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/walk-left-f4-cfc475297731d5aa.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/walk-left-f5-b88530f5950b8fd8.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/walk-left-f6-bbb2fa7817442ff0.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/walk-left-f7-2e0bc904c3dc9959.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/walk-left-f8-23bcfc5d3a570fff.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/stair-left-f1-0117c73c52434af2.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/stair-left-f2-8ade7fe4e72adde5.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/stair-left-f3-b322acaee2df1f87.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/stair-left-f4-88a08d9a8f34bf05.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/stair-left-f5-8da1bfbbe7602716.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/stair-left-f6-7ca65af3f35c14a7.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/stair-left-f7-d9cc3dc4e7852c41.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/stair-left-f8-fea2a2458a7910c8.png",
+      "/keeper-review/keeper-prime-stair-ascent-v3/assets/contact-authority-8a13461db4875f1c.png"
+    ],
+    "frameUrls": [
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f1-2c8b806099331b30.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f2-f5a26dc9bd398641.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f3-03ca95b46906ca72.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f4-cfc475297731d5aa.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f5-b88530f5950b8fd8.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f6-bbb2fa7817442ff0.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f7-2e0bc904c3dc9959.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f8-23bcfc5d3a570fff.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f1-0117c73c52434af2.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f2-8ade7fe4e72adde5.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f3-b322acaee2df1f87.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f4-88a08d9a8f34bf05.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f5-8da1bfbbe7602716.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f6-7ca65af3f35c14a7.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f7-d9cc3dc4e7852c41.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f8-fea2a2458a7910c8.png",
+      "/keeper-review/keeper-prime-stair-ascent-v4/assets/contact-authority-8a13461db4875f1c.png"
+    ]
+  },
+  "spec": {
+    "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v4/keeper-prime-stair-ascent-v4.json",
+    "sha256": "c1577e3d87ae1cc73b98119a93407b4d3f648211a5ad78364576f2b21a80fb21"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-stair-ascent-v4/index.html",
+    "sha256": "d6d6a826fd98cfc02ad77b4fd6a7ed2169adfa23b8a1bb073b0527e56c4cd52a"
+  },
+  "frameUrls": [
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f1-2c8b806099331b30.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f2-f5a26dc9bd398641.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f3-03ca95b46906ca72.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f4-cfc475297731d5aa.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f5-b88530f5950b8fd8.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f6-bbb2fa7817442ff0.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f7-2e0bc904c3dc9959.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/walk-left-f8-23bcfc5d3a570fff.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f1-0117c73c52434af2.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f2-8ade7fe4e72adde5.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f3-b322acaee2df1f87.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f4-88a08d9a8f34bf05.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f5-8da1bfbbe7602716.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f6-7ca65af3f35c14a7.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f7-d9cc3dc4e7852c41.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/stair-left-f8-fea2a2458a7910c8.png",
+    "/keeper-review/keeper-prime-stair-ascent-v4/assets/contact-authority-8a13461db4875f1c.png"
+  ],
+  "validation": {
+    "v3PageChanged": false,
+    "characterPixelsChanged": false,
+    "timingChanged": false,
+    "rootMotionChanged": false,
+    "stairGeometryChanged": false,
+    "finalChanged": false,
+    "productionChanged": false
+  }
+}
