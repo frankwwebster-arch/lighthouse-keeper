@@ -1,0 +1,33 @@
+{
+  "schema": "lighthouse-keeper/prime-stair-ascent@16",
+  "status": "draft-v16-three-defect-correction-awaiting-review",
+  "scope": "Three tightly masked drawing corrections on the exact V15 complete-flight preview.",
+  "geometry": {
+    "floorTopLp": 20,
+    "stairBaseRightLp": 116,
+    "floorSupportCentreLp": 119.5,
+    "flightRunLp": 98,
+    "flightRiseLp": 60,
+    "risers": 14,
+    "treadRunLp": 7,
+    "riserRiseLp": 4.285714285714286,
+    "reservedCoreRunLp": 105,
+    "shownContacts": 14,
+    "contactDurationMs": 280,
+    "framesPerStep": 2,
+    "frameDurationMs": 110,
+    "shownPassingFrames": 13,
+    "totalTimelineFrames": 27,
+    "finalHoldMs": 900
+  },
+  "promoted": false,
+  "unchanged": {
+    "v15Timeline": true,
+    "rootPositions": true,
+    "stairGeometry": true,
+    "timing": true,
+    "finalLane": true,
+    "runtimeSprites": true,
+    "production": true
+  }
+}

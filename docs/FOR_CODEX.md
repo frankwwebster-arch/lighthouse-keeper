@@ -139,7 +139,7 @@ provenance only. Frank then found the arms too extreme and not quite
 synchronized with the legs, and identified F4's extended left boot entering
 the stair profile before F5 landed flat.
 
-The active unapproved correction is
+The V14 art correction is
 `/keeper-review/keeper-prime-stair-ascent-v14/`. V14 retains the same contact →
 passing → contact phase order, restricts the visible near-hand endpoints to
 ±14.55 source pixels from vertical and keeps the far/right arm almost fully
@@ -148,7 +148,7 @@ testing finds zero penetrating moving-leg pixels; F4 clears the stair by 1.59
 lp. Pixels outside the declared arm and moving-lower-leg masks remain exact.
 Nothing is promoted or wired.
 
-The active complete-flight review is
+The V15 complete-flight review is
 `/keeper-review/keeper-prime-stair-ascent-v15/`. V15 is timeline-only: it
 reuses the four V14 candidate images byte for byte, expanding the two-step
 mechanism to 27 frames over all fourteen risers. Contacts alternate
@@ -156,6 +156,15 @@ LEFT/RIGHT through treads 1–14, each passing frame remains support-locked, and
 the final RIGHT contact lands at the exact 80-lp upper-floor datum. The player
 stops and holds there; there is no automatic wrap to the bottom. V15 remains
 unapproved and changes no Final, runtime or production asset.
+
+The active three-defect correction is
+`/keeper-review/keeper-prime-stair-ascent-v16/`. V16 preserves V15's 27 frames,
+root coordinates, fourteen contacts, timing and endpoint exactly. Narrow masks
+balance RIGHT compact passing to the same y=270 moving-region lower edge as
+LEFT while retaining 1.59-lp clearance and zero penetration; restore the exact
+V6 pixels over LEFT contact's detached flesh remnant; and complete RIGHT
+contact's forward-boot toecap while leaving row y=282—the contact sole—exact.
+All pixels outside the three masks are unchanged. Nothing is approved or wired.
 
 ## Lift entry alignment correction (14 Oct 2026)
 

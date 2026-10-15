@@ -124,7 +124,7 @@ Final art, runtime sprite or production geometry. Live review found its arm
 endpoints insufficiently synchronized and too extreme, while F4 extended its
 left boot into the stair profile before the flat F5 contact.
 
-The active unapproved correction is
+The V14 art correction is
 `/keeper-review/keeper-prime-stair-ascent-v14/`. It keeps the same five-frame
 cadence but constrains each visible hand to about 14.55 source pixels either
 side of the vertical datum, leaving the far/right arm as a small torso-occluded
@@ -134,7 +134,7 @@ against every tread and riser reports zero penetrating pixels, and F4 retains
 lower-leg masks change; all out-of-mask pixels are exact. Nothing is approved,
 in Final or in runtime.
 
-The active full-flight review is
+The V15 full-flight review is
 `/keeper-review/keeper-prime-stair-ascent-v15/`. It creates no new drawings:
 the four exact V14 candidate PNGs repeat across the complete fourteen-riser
 flight. Its 27-frame timeline contains fourteen strictly alternating foot
@@ -142,6 +142,14 @@ contacts and thirteen passing poses, mathematically registered to every tread.
 Playback reaches tread 14 and holds there rather than wrapping back to the
 floor. V15 is a review-only timeline candidate; neither it nor V14 is approved
 or promoted to Final/runtime.
+
+The active correction candidate is
+`/keeper-review/keeper-prime-stair-ascent-v16/`. It keeps V15's complete
+timeline, placements and timing exact while correcting only three masked art
+regions: RIGHT compact passing now matches LEFT's y=270 moving-region lower
+edge and retains 1.59-lp stair clearance; the detached flesh remnant is removed
+from LEFT contact; and RIGHT contact receives a complete forward-boot toecap
+without changing its sole/contact row. V16 remains unapproved and review-only.
 
 ## Run it
 ```

@@ -1,0 +1,157 @@
+{
+  "schema": "lighthouse-keeper/stair-ascent-source-preparation@16",
+  "status": "three-defect-correction-awaiting-review",
+  "authorities": {
+    "v14Artwork": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/batch-register.json",
+      "sha256": "d9a4f37d746924ccad79b92dc256d577965e94684ec9409e31555a821e5a5a7b"
+    },
+    "v15Timeline": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v15/batch-register.json",
+      "sha256": "6de21af90ab9a2141e1d827592c0d68be14054e3d823cb843d9ac3676b804172"
+    }
+  },
+  "cell": [
+    256,
+    320
+  ],
+  "density": 8,
+  "corrections": {
+    "right_passing": {
+      "base": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/drafts/frames/keeper_prime_stair_right-foot-passing-compact_side-left_f01.png",
+        "sha256": "8b8f817794e0a74e6acf2f4bd9e571546cbdc814fb7b05592913fbd907d5fe02"
+      },
+      "generatedStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/sources/generated/right-passing-balanced-lift.png",
+        "sha256": "e57e42a13856875a2e77e0bfaf903c67d2acd28b1bd314e2dbd058c86bfc7dc1"
+      },
+      "registeredStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/evidence/registered-sources/right_passing-registered.png",
+        "sha256": "240f2974ac8cc97f9ef448aadbb3fe7483272004985f5e3c3ecbfd9bafbf6deb",
+        "sourceBoundsExclusive": [
+          298,
+          140,
+          782,
+          1378
+        ],
+        "targetBoundsExclusive": [
+          68,
+          31,
+          180,
+          317
+        ],
+        "scale": 0.2310177705977383,
+        "registeredLeft": 66,
+        "registeredTop": 31
+      },
+      "mask": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/evidence/masks/right_passing-mask.png",
+        "sha256": "f0b69e2d630397d7c98b8d71b4397d3fd95c16b20de05bfc4415ddcb8091ecec"
+      },
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/drafts/frames/keeper_prime_stair_right-foot-passing-balanced_side-left_f01.png",
+        "sha256": "12a2f8f20df7937eaff165f9b7e437336fa5385d7234ee22b430fde0c59d3bd5"
+      },
+      "supportSole": {
+        "y": 316,
+        "minX": 116,
+        "maxX": 161,
+        "centreX": 138.5
+      },
+      "movingBoundsExclusive": [
+        66,
+        202,
+        121,
+        270
+      ],
+      "stairClearance": {
+        "supportTread": 1,
+        "minimumLp": 1.5892857142857153,
+        "penetratingPixels": 0
+      },
+      "outsideMaskChangedPixels": 0
+    },
+    "left_passing": {
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/drafts/frames/keeper_prime_stair_left-foot-passing-compact_side-left_f01.png",
+        "sha256": "4262b9d642d2e918414fabdc88e90d5522a93eca6b5ab83c165b9557b1dc7fa0"
+      },
+      "v14Sha256": "4262b9d642d2e918414fabdc88e90d5522a93eca6b5ab83c165b9557b1dc7fa0",
+      "supportSole": {
+        "y": 316,
+        "minX": 126,
+        "maxX": 149,
+        "centreX": 137.5
+      },
+      "movingBoundsExclusive": [
+        61,
+        205,
+        128,
+        270
+      ],
+      "stairClearance": {
+        "supportTread": 2,
+        "minimumLp": 1.5892857142857082,
+        "penetratingPixels": 0
+      }
+    },
+    "left_contact": {
+      "base": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/drafts/frames/keeper_prime_stair_left-contact-restrained_side-left_f01.png",
+        "sha256": "b2e059fa19c0d62869f572d90f970ac76968139d7c0bab8b6976b9b11aa63907"
+      },
+      "restorationAuthority": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-left_f04.png",
+        "sha256": "58c1e08b19521696dc2acf72f882d71bd6d53ef43fd408a63eb57c31d31d543f"
+      },
+      "mask": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/evidence/masks/left_contact-mask.png",
+        "sha256": "fbc613e8d47fe0d720cf59e3dfdfc415b7f0eae05f2a131808085633011f813c"
+      },
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/drafts/frames/keeper_prime_stair_left-contact-clean_side-left_f01.png",
+        "sha256": "1a7fe5fe0bcecaf1dfa014be1613614f85bfa4826e460361f0b3105bd28449a3"
+      },
+      "outsideMaskChangedPixels": 0
+    },
+    "right_contact": {
+      "base": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/drafts/frames/keeper_prime_stair_right-contact-restrained_side-left_f01.png",
+        "sha256": "702d94d8f0ffd4d83659ebf256d66c6fd8c8220f35a5ae082bfb05f41c267c8f"
+      },
+      "generatedStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/sources/generated/right-contact-complete-toecap.png",
+        "sha256": "c4e0884286a49325e406d50d0cd423674262139adadc5eb575697896f9d0a035"
+      },
+      "registeredStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/evidence/registered-sources/right_contact-registered.png",
+        "sha256": "0ecad692a57eda542694c2303124b59e3dc99c154c4dd0843a92d2fdff336e0f",
+        "sourceBoundsExclusive": [
+          194,
+          137,
+          800,
+          1383
+        ],
+        "targetBoundsExclusive": [
+          47,
+          31,
+          183,
+          317
+        ],
+        "scale": 0.22953451043338685,
+        "registeredLeft": 44,
+        "registeredTop": 31
+      },
+      "mask": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/evidence/masks/right_contact-mask.png",
+        "sha256": "41b09dda4e21fe0efb1383978f7b07157d642b2cb5e0a698919e183d582a5da3"
+      },
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/drafts/frames/keeper_prime_stair_right-contact-complete-toecap_side-left_f01.png",
+        "sha256": "8af419d7747ec19920124235d1178bbb8eff53c87f9fa1844786161877cd554b"
+      },
+      "outsideMaskChangedPixels": 0
+    }
+  }
+}
