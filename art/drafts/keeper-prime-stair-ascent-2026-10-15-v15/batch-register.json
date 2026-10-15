@@ -1,0 +1,78 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-stair-ascent-2026-10-15-v15",
+  "status": "draft-v15-full-flight-repetition-awaiting-review",
+  "authorities": {
+    "v14Candidate": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/batch-register.json",
+      "sha256": "d9a4f37d746924ccad79b92dc256d577965e94684ec9409e31555a821e5a5a7b"
+    },
+    "v14Preparation": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/source-preparation-v14.json",
+      "sha256": "a313b8ee65bfc822e8f70c22680467e83234888ee17d0f7beb0b1bee75cb31e8"
+    },
+    "rig": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v15/stair-contact-rig-v15.json",
+      "sha256": "ba1bdf52fd4a405a33831844cf9c6cd566ba100c706fbafd038cfa794ac7b459"
+    }
+  },
+  "generation": {
+    "mode": "deterministic-timeline-only-exact-v14-pixel-repetition",
+    "frameUrls": [
+      "/keeper-review/keeper-prime-stair-ascent-v15/assets/right-contact-restrained-702d94d8f0ffd4d8.png",
+      "/keeper-review/keeper-prime-stair-ascent-v15/assets/left-contact-restrained-b2e059fa19c0d628.png",
+      "/keeper-review/keeper-prime-stair-ascent-v15/assets/right-passing-compact-8b8f817794e0a74e.png",
+      "/keeper-review/keeper-prime-stair-ascent-v15/assets/left-passing-compact-4262b9d642d2e918.png"
+    ]
+  },
+  "assets": [
+    {
+      "source": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/drafts/frames/keeper_prime_stair_right-contact-restrained_side-left_f01.png",
+      "sourceSha256": "702d94d8f0ffd4d83659ebf256d66c6fd8c8220f35a5ae082bfb05f41c267c8f",
+      "url": "/keeper-review/keeper-prime-stair-ascent-v15/assets/right-contact-restrained-702d94d8f0ffd4d8.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/drafts/frames/keeper_prime_stair_left-contact-restrained_side-left_f01.png",
+      "sourceSha256": "b2e059fa19c0d62869f572d90f970ac76968139d7c0bab8b6976b9b11aa63907",
+      "url": "/keeper-review/keeper-prime-stair-ascent-v15/assets/left-contact-restrained-b2e059fa19c0d628.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/drafts/frames/keeper_prime_stair_right-foot-passing-compact_side-left_f01.png",
+      "sourceSha256": "8b8f817794e0a74e6acf2f4bd9e571546cbdc814fb7b05592913fbd907d5fe02",
+      "url": "/keeper-review/keeper-prime-stair-ascent-v15/assets/right-passing-compact-8b8f817794e0a74e.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/drafts/frames/keeper_prime_stair_left-foot-passing-compact_side-left_f01.png",
+      "sourceSha256": "4262b9d642d2e918414fabdc88e90d5522a93eca6b5ab83c165b9557b1dc7fa0",
+      "url": "/keeper-review/keeper-prime-stair-ascent-v15/assets/left-passing-compact-4262b9d642d2e918.png"
+    }
+  ],
+  "spec": {
+    "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v15/keeper-prime-stair-ascent-v15.json",
+    "sha256": "fac7cce19611658cb3ab2cac0eb92079721dbf29ecfb395e2ef1cd47c7971009"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-stair-ascent-v15/index.html",
+    "sha256": "b25b59e8eb1422cad5a9c589e1acb80c6b4e720ce274e75f850a619350b2f8a4"
+  },
+  "frameUrls": [
+    "/keeper-review/keeper-prime-stair-ascent-v15/assets/right-contact-restrained-702d94d8f0ffd4d8.png",
+    "/keeper-review/keeper-prime-stair-ascent-v15/assets/left-contact-restrained-b2e059fa19c0d628.png",
+    "/keeper-review/keeper-prime-stair-ascent-v15/assets/right-passing-compact-8b8f817794e0a74e.png",
+    "/keeper-review/keeper-prime-stair-ascent-v15/assets/left-passing-compact-4262b9d642d2e918.png"
+  ],
+  "validation": {
+    "uniqueDrawings": 4,
+    "timelineFrames": 27,
+    "contactFrames": 14,
+    "passingFrames": 13,
+    "finalTargetTread": 14,
+    "finalTargetYLp": 80,
+    "expectedTopYLp": 80,
+    "wrapToBottom": false,
+    "v14ArtworkByteIdentical": true,
+    "finalChanged": false,
+    "runtimeSpritesChanged": false,
+    "productionChanged": false
+  }
+}

@@ -1424,6 +1424,16 @@ per-pixel comparison against the complete 14-riser stair reports zero
 penetration in both passing frames, including 1.59 lp minimum F4 clearance.
 Out-of-mask pixels, Final, runtime and production remain exact and unchanged.
 
+The active V15 full-flight review is
+`/keeper-review/keeper-prime-stair-ascent-v15/`. It introduces no new artwork
+and repeats the exact four V14 candidate bytes across the binding V12 stair
+geometry. One initial tread-1 contact is followed by thirteen passing/contact
+pairs, producing 27 frames, fourteen alternating landings and a final contact
+on tread 14 at the 80-lp upper-floor datum. The review player stops and holds
+at the top; it never teleports back to the floor. V15 is an unapproved,
+reversible timeline candidate only and leaves Final/runtime/production
+unchanged.
+
 ## Review-comments workflow for a later feedback round
 
 1. Do not process another review export until the beard evidence gate is

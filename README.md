@@ -134,6 +134,15 @@ against every tread and riser reports zero penetrating pixels, and F4 retains
 lower-leg masks change; all out-of-mask pixels are exact. Nothing is approved,
 in Final or in runtime.
 
+The active full-flight review is
+`/keeper-review/keeper-prime-stair-ascent-v15/`. It creates no new drawings:
+the four exact V14 candidate PNGs repeat across the complete fourteen-riser
+flight. Its 27-frame timeline contains fourteen strictly alternating foot
+contacts and thirteen passing poses, mathematically registered to every tread.
+Playback reaches tread 14 and holds there rather than wrapping back to the
+floor. V15 is a review-only timeline candidate; neither it nor V14 is approved
+or promoted to Final/runtime.
+
 ## Run it
 ```
 npm install

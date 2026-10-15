@@ -148,6 +148,15 @@ testing finds zero penetrating moving-leg pixels; F4 clears the stair by 1.59
 lp. Pixels outside the declared arm and moving-lower-leg masks remain exact.
 Nothing is promoted or wired.
 
+The active complete-flight review is
+`/keeper-review/keeper-prime-stair-ascent-v15/`. V15 is timeline-only: it
+reuses the four V14 candidate images byte for byte, expanding the two-step
+mechanism to 27 frames over all fourteen risers. Contacts alternate
+LEFT/RIGHT through treads 1–14, each passing frame remains support-locked, and
+the final RIGHT contact lands at the exact 80-lp upper-floor datum. The player
+stops and holds there; there is no automatic wrap to the bottom. V15 remains
+unapproved and changes no Final, runtime or production asset.
+
 ## Lift entry alignment correction (14 Oct 2026)
 
 The focused construction review
