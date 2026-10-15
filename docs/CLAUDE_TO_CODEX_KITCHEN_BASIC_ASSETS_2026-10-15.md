@@ -167,7 +167,7 @@ any bay. Fully upgraded,
 the kitchen needs 11 bays (2 + 1 + 1 + 2 + 1 + 2 + 1 + 1) and the widest
 room has 12, leaving one spare. The cupboard takes none.
 
-## 5. Two things to confirm on the review page, not to work around
+## 5. Three things to confirm on the review page, not to work around
 
 1. **Oven door width.** `keeper_object_dimensions.json` lists a 24-lp
    minimum oven door, and the oven-approach proxy is 30 × 30. One bay
@@ -179,6 +179,20 @@ room has 12, leaving one spare. The cupboard takes none.
    keeper walking in behind the opening door and coming out with the broom
    (and the basic hoover, for later), at 193 lp and at 298 lp. If the leaf
    cannot hide him, say so.
+
+3. **Room door direction and clear area.** Frank asked why the door zone
+   is 46 lp when the leaf is 24, and proposed that the room door open
+   **outward, into the stairwell**. Then the room keeps only a 4-lp frame
+   clear (lattice origin 32 ku instead of 368 ku), freeing two bays in
+   every room; the costume change happens behind the leaf on the stair
+   side. Please assess, without changing any approved transition: whether
+   an outward leaf fits beside the stairs and ladder in the 105-lp core,
+   and how the door-exit and stair-entry transitions would change. Also
+   measure the fallback: an inward door with a 25-lp clear area (the leaf
+   plus 1 lp), checking that every costume change and wide composite
+   (keeper plus mower, raised tools, party hat) stays hidden. Frank
+   decides between these on his page. Draw nothing differently for it;
+   only the room layouts would shift.
 
 ## 6. Out of scope
 
