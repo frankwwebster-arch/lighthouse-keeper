@@ -1489,6 +1489,18 @@ drift. No strip is emitted for this composition-only gate; source strips and
 sidecars remain unchanged and separately verified. Final, runtime and
 production remain unchanged pending Frank's explicit visual approval.
 
+V2 at `/keeper-review/keeper-prime-stair-transitions-v2/` supersedes only the
+lower walk-to-stair seam after Frank identified a brief size flash between V1
+frames 16 and 17. The cause was a broad mirrored Walk V6 F8 silhouette changing
+directly to compact Stair V16 F1. V2 preserves both complete eight-frame walk
+cycles, every root, every approved source byte and the full upper route. It
+rotates each cyclic walk order to F8,F1,F2,F3,F4,F5,F6,F7, then inserts the
+exact approved Stair V16 LEFT compact passing cell at the unchanged floor
+baseline before first-tread contact. The focused nine-frame seam is the default
+review sequence. No frame is held, redrawn or rescaled, and V1 remains
+immutable. Run `npm run verify:keeper-prime-stair-transitions-v2`; Final,
+runtime and production are still unchanged pending visual approval.
+
 ## Review-comments workflow for a later feedback round
 
 1. Do not process another review export until the beard evidence gate is

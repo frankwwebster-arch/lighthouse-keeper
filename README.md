@@ -159,8 +159,8 @@ handrail between them. That foreground architecture may naturally cover parts
 of the Keeper's boots and lower legs, but it may not change the approved
 fourteen-riser contact geometry.
 
-The next reversible transition gate is
-`/keeper-review/keeper-prime-stair-transitions-v1/`. It composes exact approved
+The current reversible transition gate is
+`/keeper-review/keeper-prime-stair-transitions-v2/`. It composes exact approved
 authorities plus two clearly labelled candidate door-reach cells into two
 reviewable sequences: lower transfer door → two walk cycles → moving Stair V16
 F1, and final Stair V16 contacts → flat landing → clockwise
@@ -179,6 +179,14 @@ selected reach sources have exactly two arms and are composited only inside a
 declared arm mask over the byte-identical approved side neutral. No Final,
 runtime or production asset has changed.
 
+V2 supersedes only V1's visible lower walk-to-stair seam. V1 jumped from the
+broad mirrored Walk F8 silhouette directly to compact Stair V16 F1. V2 keeps
+two complete approved walk cycles and the identical roots, rotates the cyclic
+phase to finish on compact Walk F7, then reuses the exact approved LEFT compact
+passing drawing before first-tread contact. The page opens on a nine-frame
+focused seam loop. No Keeper source pixel is redrawn or rescaled; V1 remains
+immutable review history.
+
 ## Run it
 ```
 npm install
@@ -190,6 +198,7 @@ npm run sprites  # snap Codex's PNGs in art/raw/ into public/sprites/ (docs/CODE
 npm run keeper-contract # rebuild neutral stills, bridges and the endpoint audit
 npm run archive:keeper-review # deduplicate new review media before committing
 npm run verify:keeper-prime-stair-transitions-v1 # exact frames, gutters, roots, joins and review-page contract
+npm run verify:keeper-prime-stair-transitions-v2 # focused walk-to-stair seam and unchanged-source checks
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
 

@@ -180,7 +180,7 @@ the tread/contact geometry remains the approved 14-riser, 7-lp-tread,
 ## Stair entry and landing-exit transition gate (15 Oct 2026)
 
 The current review candidate is
-`/keeper-review/keeper-prime-stair-transitions-v1/`. Its approved authorities
+`/keeper-review/keeper-prime-stair-transitions-v2/`. Its approved authorities
 remain byte-identical: Walk V6, Stair Ascent V16, approved side/back Turn V9,
 the side/front turn source retained for the opposite flight, and the approved
 stop-to-walk bridge. Left travel is CSS-mirrored only. Two new masked
@@ -189,7 +189,10 @@ right-hand door-reach cells are present as unapproved candidate art.
 - Lower door and upper door share x=140.5 lp; fully hidden root is x=161.5.
 - The lower stair root is x=119.5, exactly 21 lp/one full visible walk cycle
   from the door. Two walk cycles are shown so the first begins while occluded.
-  Mirrored Walk F8 advances directly into Stair V16 F1 with no held frame.
+  V1's direct mirrored Walk F8 → Stair V16 F1 join was visibly discontinuous.
+  V2 retains two complete cycles and identical roots but rotates the cyclic
+  order to end on compact Walk F7, then uses the exact approved LEFT compact
+  passing cell as a dedicated mount before Stair V16 F1. There is no held root.
 - The upper route establishes both feet on the x=14.5 landing root. Because
   travel was bottom-right → top-left, it turns clockwise side-left → back →
   side-right through approved Turn V9. The opposite flight must turn clockwise
@@ -206,8 +209,9 @@ right-hand door-reach cells are present as unapproved candidate art.
   declared arm-region pixels are composited over the exact approved side
   neutral; the verifier requires every out-of-mask pixel to remain identical.
 
-The page preloads and decodes all 27 unique URLs before enabling playback. Run
-`npm run verify:keeper-prime-stair-transitions-v1` to check authority hashes,
+The page opens on a focused nine-frame seam loop and preloads and decodes all
+27 unique URLs before enabling playback. Run
+`npm run verify:keeper-prime-stair-transitions-v2` to check authority hashes,
 256×320 transparent cell gutters, rejected-source exclusion, exact geometry,
 moving joins, hallway closure, controls and approval boundaries. Nothing is in
 Final or runtime until Frank approves the candidate.
