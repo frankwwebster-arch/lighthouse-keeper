@@ -90,14 +90,26 @@ contact-line overlay. No prior candidate, runtime geometry, Final or
 production file changed.
 
 Frank then rejected the unmasked V3 presentation because its exposed boots
-read as jumping two treads at once. Keep V3 immutable. The active unapproved
-candidate is `/keeper-review/keeper-prime-stair-ascent-v4/`. V4 is deliberately
+read as jumping two treads at once. Keep V3 immutable. The V4 masking test is
+`/keeper-review/keeper-prime-stair-ascent-v4/`. V4 is deliberately
 presentation-only: its timeline, V3 media hashes, root motion, stair geometry
 and timing are unchanged, while a closed foreground stringer/bannister masks
 the boots and lower shins. The mask is enabled by default and the page can turn
 it off to expose the exact V3 motion. V4's 17 versioned asset aliases resolve
 to the existing V3 archive objects, so no binary artwork is duplicated. Do
 not promote the mask or V3 motion without Frank's explicit approval.
+
+The active unapproved correction is
+`/keeper-review/keeper-prime-stair-ascent-v5/`. V5 records the deeper diagnosis:
+V3/V4 placed each one-riser body rise after the associated four-frame leg step,
+making the next leg begin with a whole-body jump. V5 reuses the exact V3 media
+and durations but applies the registered rig root directly. F1–F4 are one
+near-leg step landing +3.75 lp at F4; F5–F8 are one far-leg step landing +3.75
+lp at F8. The root never reverses, and eight cycles close sixteen individual
+steps at exactly 84 lp run × 60 lp rise. The bannister defaults to 55% opacity
+and has a live opacity control. The corrected exact-logical-scale pane is
+bottom-left aligned. No character art, staircase dimension, Final or
+production file changed.
 
 ## Lift entry alignment correction (14 Oct 2026)
 

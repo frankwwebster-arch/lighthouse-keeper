@@ -1356,8 +1356,8 @@ pixels, route geometry, Final and production remain unchanged.
 
 Frank rejected the unmasked V3 presentation after motion review because the
 distance visible between its boots reads as jumping two treads at once. V3 is
-immutable rejected provenance as an unmasked presentation. The active
-unapproved `/keeper-review/keeper-prime-stair-ascent-v4/` is a deliberately
+immutable rejected provenance as an unmasked presentation.
+`/keeper-review/keeper-prime-stair-ascent-v4/` is a deliberately
 cheap presentation test: it reuses the exact V3 artwork hashes, timeline,
 timing, root motion, stair geometry and contacts, and adds only a foreground
 closed stringer plus bannister at z-index 7. This layer hides the boots and
@@ -1365,6 +1365,18 @@ lower shins while leaving the knees and body readable. It is enabled by
 default and toggleable for direct masked/unmasked comparison. V4 owns 17
 versioned archive aliases, all resolving to the same 17 immutable V3 objects;
 no binary art is duplicated and nothing has moved to Final or production.
+
+The active unapproved `/keeper-review/keeper-prime-stair-ascent-v5/` corrects
+the root phasing instead of relying on occlusion. Review of the contact rig
+showed that V3/V4 postponed each one-riser body rise until after its four-frame
+leg sequence. V5 applies the rig root directly: the near leg owns F1–F4 and
+lands one 3.75-lp riser higher at F4; the far leg owns F5–F8 and lands one
+riser higher at F8. Horizontal root motion is monotonic and eight cycles close
+sixteen independent steps over the unchanged 84-lp run and 60-lp total rise.
+All 17 character/guide media hashes and all frame durations remain exact V3.
+The V4 stair side remains as an adjustable 55%-opacity foreground depth layer,
+not a full concealment. V5 also corrects the exact-game-scale review-world
+alignment. Nothing is approved, in Final or in production.
 
 ## Review-comments workflow for a later feedback round
 

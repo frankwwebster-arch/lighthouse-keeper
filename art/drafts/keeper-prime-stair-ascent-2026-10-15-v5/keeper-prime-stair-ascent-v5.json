@@ -1,0 +1,46 @@
+{
+  "schema": "lighthouse-keeper/prime-stair-ascent@5",
+  "status": "draft-v5-independent-leg-root-phasing-awaiting-review",
+  "diagnosis": "V3/V4 applied each one-riser body/root rise after the four-frame leg step instead of on its landing frame, so the alternate leg began with a whole-body jump.",
+  "correction": {
+    "nearLegFrames": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "farLegFrames": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "riseFrames": [
+      4,
+      8
+    ],
+    "risePerLandingLp": 3.75,
+    "runPerLandingLp": 5.25,
+    "cycles": 8,
+    "totalRiseLp": 60,
+    "totalRunLp": 84
+  },
+  "bannister": {
+    "defaultOpacity": 0.55,
+    "adjustable": true,
+    "purpose": "depth and mild masking only; leg mechanics remain visible"
+  },
+  "reviewScale": {
+    "logicalPixelsPerCssPixel": 1,
+    "worldScale": 0.25,
+    "bottomLeftAligned": true
+  },
+  "unchanged": {
+    "v3CharacterMediaBytes": true,
+    "frameDurations": true,
+    "staircaseGeometry": true,
+    "walkApproach": true,
+    "finalLane": true,
+    "production": true
+  }
+}

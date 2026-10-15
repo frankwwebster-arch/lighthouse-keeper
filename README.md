@@ -76,13 +76,23 @@ F5–F8. Each lowest contact sole is fixed at cell y=316 and mapped to the actua
 tread top, while a toggle exposes that datum in the review page. V1 and V2
 remain immutable rejected evidence. Frank rejected the unmasked V3
 presentation because the visible boot separation reads as climbing two stairs
-at once. The active V4 review at
+at once. The V4 masking experiment at
 `/keeper-review/keeper-prime-stair-ascent-v4/` preserves every V3 character
 pixel, root position, timing value and stair dimension, but adds a closed
 foreground stair stringer and bannister above the boots/lower shins. Its mask
 is on by default and can be toggled off for an exact V3 comparison. V4 reuses
-the 17 V3 media hashes without adding archive objects; nothing has entered
-Final or production.
+the 17 V3 media hashes without adding archive objects.
+
+The active unapproved V5 review is
+`/keeper-review/keeper-prime-stair-ascent-v5/`. Inspection identified the
+actual V3/V4 fault: each one-riser body rise occurred after its four-frame leg
+step instead of on the landing frame. V5 retains every V3 character-media byte
+and the same 92 ms frame duration, but gives the near leg F1–F4 and the far leg
+F5–F8; the root rises exactly one 3.75-lp riser on F4 and F8. The root moves
+monotonically across sixteen single steps and closes the unchanged flight at
+exactly 84 lp run × 60 lp rise. The bannister defaults to an adjustable 55%
+opacity so both leg mechanics remain visible. Nothing has entered Final or
+production.
 
 ## Run it
 ```
