@@ -1,0 +1,27 @@
+{
+  "schema": "lighthouse-keeper/prime-stair-ascent@14",
+  "status": "draft-v14-restrained-synchronised-arms-and-compact-passing-boots-awaiting-review",
+  "approvalBasis": "V12 geometry/contact construction accepted; V13 smoothing received arm-synchronisation and F4 boot-overlap corrections.",
+  "scope": "Five-frame two-step proof only.",
+  "geometry": {
+    "floorTopLp": 20,
+    "stairBaseRightLp": 116,
+    "floorSupportCentreLp": 119.5,
+    "flightRunLp": 98,
+    "flightRiseLp": 60,
+    "risers": 14,
+    "treadRunLp": 7,
+    "riserRiseLp": 4.285714285714286,
+    "reservedCoreRunLp": 105,
+    "shownContacts": 3,
+    "contactDurationMs": 280,
+    "framesPerStep": 2,
+    "frameDurationMs": 110
+  },
+  "promoted": false,
+  "unchanged": {
+    "finalLane": true,
+    "runtimeSprites": true,
+    "production": true
+  }
+}

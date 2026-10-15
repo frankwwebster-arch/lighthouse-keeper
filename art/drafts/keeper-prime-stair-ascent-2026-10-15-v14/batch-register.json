@@ -1,0 +1,80 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-stair-ascent-2026-10-15-v14",
+  "status": "draft-v14-restrained-synchronised-arms-and-compact-passing-boots-awaiting-review",
+  "authorities": {
+    "acceptedV12ContactGate": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v12/batch-register.json",
+      "sha256": "8582b7bc5a5f9bb50bf289c6e51b7f250bfdb8382b2a724b5131717b569d048a"
+    },
+    "v13Cadence": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v13/batch-register.json",
+      "sha256": "01bfdb0fd12c8e704bbb329dea9f57dda8386cd9c7409809a7f594f77ace0a59"
+    },
+    "sourcePreparation": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/source-preparation-v14.json",
+      "sha256": "a313b8ee65bfc822e8f70c22680467e83234888ee17d0f7beb0b1bee75cb31e8"
+    },
+    "rig": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/stair-contact-rig-v14.json",
+      "sha256": "242b96c9ae06827e9136b6af5018810e8a798914014e6358b89ac2da387f8656"
+    }
+  },
+  "generation": {
+    "mode": "tightly-masked-built-in-image-edits-plus-deterministic-right-boot-lift",
+    "frameUrls": [
+      "/keeper-review/keeper-prime-stair-ascent-v14/assets/right-contact-restrained-702d94d8f0ffd4d8.png",
+      "/keeper-review/keeper-prime-stair-ascent-v14/assets/left-contact-restrained-b2e059fa19c0d628.png",
+      "/keeper-review/keeper-prime-stair-ascent-v14/assets/right-passing-compact-8b8f817794e0a74e.png",
+      "/keeper-review/keeper-prime-stair-ascent-v14/assets/left-passing-compact-4262b9d642d2e918.png"
+    ]
+  },
+  "assets": [
+    {
+      "source": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/drafts/frames/keeper_prime_stair_right-contact-restrained_side-left_f01.png",
+      "sourceSha256": "702d94d8f0ffd4d83659ebf256d66c6fd8c8220f35a5ae082bfb05f41c267c8f",
+      "url": "/keeper-review/keeper-prime-stair-ascent-v14/assets/right-contact-restrained-702d94d8f0ffd4d8.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/drafts/frames/keeper_prime_stair_left-contact-restrained_side-left_f01.png",
+      "sourceSha256": "b2e059fa19c0d62869f572d90f970ac76968139d7c0bab8b6976b9b11aa63907",
+      "url": "/keeper-review/keeper-prime-stair-ascent-v14/assets/left-contact-restrained-b2e059fa19c0d628.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/drafts/frames/keeper_prime_stair_right-foot-passing-compact_side-left_f01.png",
+      "sourceSha256": "8b8f817794e0a74e6acf2f4bd9e571546cbdc814fb7b05592913fbd907d5fe02",
+      "url": "/keeper-review/keeper-prime-stair-ascent-v14/assets/right-passing-compact-8b8f817794e0a74e.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/drafts/frames/keeper_prime_stair_left-foot-passing-compact_side-left_f01.png",
+      "sourceSha256": "4262b9d642d2e918414fabdc88e90d5522a93eca6b5ab83c165b9557b1dc7fa0",
+      "url": "/keeper-review/keeper-prime-stair-ascent-v14/assets/left-passing-compact-4262b9d642d2e918.png"
+    }
+  ],
+  "spec": {
+    "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/keeper-prime-stair-ascent-v14.json",
+    "sha256": "af52360e4629c4ccbcb4ed383410d2c3e750b70753e60757507df98934c46cfd"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-stair-ascent-v14/index.html",
+    "sha256": "c81905d63740912dae60747d0ba346173ef56b7df40f10dd52bf92fbd9c600da"
+  },
+  "frameUrls": [
+    "/keeper-review/keeper-prime-stair-ascent-v14/assets/right-contact-restrained-702d94d8f0ffd4d8.png",
+    "/keeper-review/keeper-prime-stair-ascent-v14/assets/left-contact-restrained-b2e059fa19c0d628.png",
+    "/keeper-review/keeper-prime-stair-ascent-v14/assets/right-passing-compact-8b8f817794e0a74e.png",
+    "/keeper-review/keeper-prime-stair-ascent-v14/assets/left-passing-compact-4262b9d642d2e918.png"
+  ],
+  "validation": {
+    "uniqueDrawings": 4,
+    "shownFrames": 5,
+    "maximumNearHandOffsetPx": 14.548463356973997,
+    "passingPenetratingPixels": 0,
+    "f4MinimumClearanceLp": 1.5892857142857082,
+    "outsideMaskChanges": 0,
+    "edgeAlphaZero": true,
+    "finalChanged": false,
+    "runtimeSpritesChanged": false,
+    "productionChanged": false
+  }
+}

@@ -111,7 +111,7 @@ now plainly visible. Frank accepted that foundation on 15 October 2026 with
 “yes you've got it”; this is acceptance of its stair and contact construction,
 not a promotion to Final or runtime.
 
-The active unapproved smoothing candidate is
+The superseded V13 smoothing candidate is
 `/keeper-review/keeper-prime-stair-ascent-v13/`. Its five-frame proof reads
 LEFT contact → raised RIGHT-foot passing frame → RIGHT contact → raised
 LEFT-foot passing frame → LEFT contact. The contact endpoints are exact V12
@@ -120,7 +120,19 @@ Thus every step takes two frame intervals, the planted boot stays registered
 to its tread, and the arms pass from one opposing V12 extreme through neutral
 to the other. Two generated arm studies are retained as rejected provenance
 and contribute no candidate pixels. V13 remains review-only and changes no
-Final art, runtime sprite or production geometry.
+Final art, runtime sprite or production geometry. Live review found its arm
+endpoints insufficiently synchronized and too extreme, while F4 extended its
+left boot into the stair profile before the flat F5 contact.
+
+The active unapproved correction is
+`/keeper-review/keeper-prime-stair-ascent-v14/`. It keeps the same five-frame
+cadence but constrains each visible hand to about 14.55 source pixels either
+side of the vertical datum, leaving the far/right arm as a small torso-occluded
+sliver. Both passing boots now rise before extending: deterministic comparison
+against every tread and riser reports zero penetrating pixels, and F4 retains
+1.59 lp of clear air above the stair profile. Only declared arm and moving
+lower-leg masks change; all out-of-mask pixels are exact. Nothing is approved,
+in Final or in runtime.
 
 ## Run it
 ```

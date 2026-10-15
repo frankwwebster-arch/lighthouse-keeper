@@ -127,7 +127,7 @@ Frank accepted this construction on 15 Oct 2026 with “yes you've got it”. Th
 acceptance pins the geometry and contact drawings but does not promote an
 animation to Final or runtime.
 
-The active, unapproved follow-on is
+The superseded V13 follow-on is
 `/keeper-review/keeper-prime-stair-ascent-v13/`. It adds exactly one raised
 passing drawing per leg, giving contact → passing → opposite contact over two
 frame intervals. Both contacts remain byte-identical V12 frames, both
@@ -135,7 +135,18 @@ intermediates are byte-identical V6 pose-3 frames, each planted support stays
 on the same mathematical tread, and the arms pass through the neutral V6 pose
 between opposite V12 counter-positions. Generated midpoint-arm studies were
 rejected because they reached the next arm extreme too early; retain them as
-provenance only. Nothing is promoted or wired.
+provenance only. Frank then found the arms too extreme and not quite
+synchronized with the legs, and identified F4's extended left boot entering
+the stair profile before F5 landed flat.
+
+The active unapproved correction is
+`/keeper-review/keeper-prime-stair-ascent-v14/`. V14 retains the same contact →
+passing → contact phase order, restricts the visible near-hand endpoints to
+±14.55 source pixels from vertical and keeps the far/right arm almost fully
+occluded. Both passing boots are compact raised poses. Exact pixel-to-stair
+testing finds zero penetrating moving-leg pixels; F4 clears the stair by 1.59
+lp. Pixels outside the declared arm and moving-lower-leg masks remain exact.
+Nothing is promoted or wired.
 
 ## Lift entry alignment correction (14 Oct 2026)
 

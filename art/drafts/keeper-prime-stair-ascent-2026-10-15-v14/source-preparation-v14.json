@@ -1,0 +1,299 @@
+{
+  "schema": "lighthouse-keeper/stair-ascent-source-preparation@14",
+  "status": "restrained-synchronised-arms-and-compact-passing-boots-awaiting-review",
+  "authorities": {
+    "v12": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v12/batch-register.json",
+      "sha256": "8582b7bc5a5f9bb50bf289c6e51b7f250bfdb8382b2a724b5131717b569d048a"
+    },
+    "v13": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v13/batch-register.json",
+      "sha256": "01bfdb0fd12c8e704bbb329dea9f57dda8386cd9c7409809a7f594f77ace0a59"
+    }
+  },
+  "method": "V12 contact construction plus tightly masked restrained-arm studies; V13 cadence plus tightly masked compact raised passing boots",
+  "rejectedArmStudies": [
+    {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/sources/generated/right-contact-restrained-arms.png",
+      "sha256": "e81b3ee68881d61e8788c2a75a101c770d1a555854c638c1ccdb49719afd746a",
+      "reason": "measured arm angle remained about 25\u201330 degrees from vertical"
+    },
+    {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/sources/generated/left-contact-restrained-arms.png",
+      "sha256": "015783d15fa5c76991e67f26b80f9d650bfe3781852192a3bf5050c622028ea0",
+      "reason": "measured arm angle remained about 25\u201330 degrees from vertical"
+    }
+  ],
+  "geometry": {
+    "flightRunLp": 98,
+    "flightRiseLp": 60,
+    "risers": 14,
+    "treadRunLp": 7,
+    "riserRiseLp": 4.285714285714286,
+    "reservedCoreRunLp": 105
+  },
+  "contacts": [
+    {
+      "leg": "right",
+      "baseLegSource": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-left_f04.png",
+        "sha256": "9ababc16c15a994ce80e7682bb1cf43e2937771e2437cd0fc0d82d292f6528c7"
+      },
+      "generatedArmStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/sources/generated/right-contact-restrained-arms-v2.png",
+        "sha256": "d0205bde631bbe64a9eac2e0bddef30c5345dbecff03ef8c028584bb4a2702cb"
+      },
+      "registeredArmStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/evidence/registered-sources/right-contact-restrained-arms-registered.png",
+        "sha256": "3069ca92105effabd1d2b7ae107a9ecd023f6d15a4a947fd933951521b7707df",
+        "sourceBoundsExclusive": [
+          207,
+          137,
+          793,
+          1394
+        ],
+        "targetBoundsExclusive": [
+          47,
+          31,
+          180,
+          317
+        ],
+        "scale": 0.22752585521081942,
+        "registeredLeft": 50,
+        "registeredTop": 31
+      },
+      "mask": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/evidence/masks/right-contact-arm-mask.png",
+        "sha256": "fae8467d65dea780c1a128473380f52028ca7430671a34d48c6d7c99f64dacf1"
+      },
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/drafts/frames/keeper_prime_stair_right-contact-restrained_side-left_f01.png",
+        "sha256": "702d94d8f0ffd4d83659ebf256d66c6fd8c8220f35a5ae082bfb05f41c267c8f"
+      },
+      "contactGeometry": {
+        "movingLegCorrectionSourcePx": [
+          14,
+          5
+        ],
+        "treadRunLp": 7,
+        "riserRiseLp": 4.285714285714286
+      },
+      "supportSole": {
+        "y": 316,
+        "minX": 125,
+        "maxX": 148,
+        "centreX": 136.5
+      },
+      "movingSole": {
+        "y": 282,
+        "minX": 54,
+        "maxX": 110,
+        "centreX": 82.0
+      },
+      "nearHand": {
+        "x": 122.49752475247524,
+        "y": 207.1460396039604,
+        "offsetFromPlumbX137Px": -14.502475247524757,
+        "samples": 404
+      },
+      "farHandVisibleSkinSamples": 97,
+      "outsideMaskChangedPixels": 0,
+      "cell": [
+        256,
+        320
+      ],
+      "density": 8,
+      "edgeAlpha": 0
+    },
+    {
+      "leg": "left",
+      "baseLegSource": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-left_f04.png",
+        "sha256": "58c1e08b19521696dc2acf72f882d71bd6d53ef43fd408a63eb57c31d31d543f"
+      },
+      "generatedArmStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/sources/generated/left-contact-restrained-arms-v2.png",
+        "sha256": "7645bd5423a968f93c60a76ac9e30c8bcdfd3e16fa4a0959c834695655b47fe1"
+      },
+      "registeredArmStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/evidence/registered-sources/left-contact-restrained-arms-registered.png",
+        "sha256": "5098f85b56428ca5c7f8c2c8aad4600d91c7a75bb08bc66708ffea5cbacdf510",
+        "sourceBoundsExclusive": [
+          211,
+          137,
+          788,
+          1393
+        ],
+        "targetBoundsExclusive": [
+          49,
+          31,
+          181,
+          317
+        ],
+        "scale": 0.22770700636942676,
+        "registeredLeft": 53,
+        "registeredTop": 31
+      },
+      "mask": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/evidence/masks/left-contact-arm-mask.png",
+        "sha256": "db7fdb91dddb3cd042d51aed8619d69e34774e48b9b83f25b8e3173d072dcd7e"
+      },
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/drafts/frames/keeper_prime_stair_left-contact-restrained_side-left_f01.png",
+        "sha256": "b2e059fa19c0d62869f572d90f970ac76968139d7c0bab8b6976b9b11aa63907"
+      },
+      "contactGeometry": {
+        "movingLegCorrectionSourcePx": [
+          12,
+          0
+        ],
+        "treadRunLp": 7,
+        "riserRiseLp": 4.285714285714286
+      },
+      "supportSole": {
+        "y": 316,
+        "minX": 127,
+        "maxX": 148,
+        "centreX": 137.5
+      },
+      "movingSole": {
+        "y": 282,
+        "minX": 74,
+        "maxX": 99,
+        "centreX": 86.5
+      },
+      "nearHand": {
+        "x": 151.548463356974,
+        "y": 212.27186761229314,
+        "offsetFromPlumbX137Px": 14.548463356973997,
+        "samples": 423
+      },
+      "farHandVisibleSkinSamples": 76,
+      "outsideMaskChangedPixels": 0,
+      "cell": [
+        256,
+        320
+      ],
+      "density": 8,
+      "edgeAlpha": 0
+    }
+  ],
+  "passing": [
+    {
+      "movingLeg": "right",
+      "supportLeg": "left",
+      "base": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v13/drafts/frames/keeper_prime_stair_right-foot-mid-swing_side-left_f01.png",
+        "sha256": "45698bae98331d769da77e1235bf783ac382c7f3e69ab2169b59374994b07bcf"
+      },
+      "generatedBootStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/sources/generated/right-passing-compact-boot.png",
+        "sha256": "be2017934a39559c82cd9f20661f3e80e56a84f8fc5b6bee3851d9f1ed391392"
+      },
+      "registeredBootStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/evidence/registered-sources/right-passing-compact-boot-registered.png",
+        "sha256": "10f0948ac8f648dac93e9b28e5fdd04f55272809143955d6ed5873cb2e637f55",
+        "sourceBoundsExclusive": [
+          315,
+          137,
+          784,
+          1371
+        ],
+        "targetBoundsExclusive": [
+          33,
+          31,
+          180,
+          317
+        ],
+        "scale": 0.23176661264181522,
+        "registeredLeft": 68,
+        "registeredTop": 31
+      },
+      "mask": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/evidence/masks/right-passing-leg-mask.png",
+        "sha256": "9a0b3e9eeee49b72d8c30e53952247bb671c3cdc38ada5b4130e82f6116740d5"
+      },
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/drafts/frames/keeper_prime_stair_right-foot-passing-compact_side-left_f01.png",
+        "sha256": "8b8f817794e0a74e6acf2f4bd9e571546cbdc814fb7b05592913fbd907d5fe02"
+      },
+      "supportSole": {
+        "y": 316,
+        "minX": 116,
+        "maxX": 161,
+        "centreX": 138.5
+      },
+      "movingLegLiftPx": 16,
+      "stairClearance": {
+        "supportTread": 1,
+        "minimumLp": 0.2142857142857153,
+        "penetratingPixels": 0
+      },
+      "outsideMaskChangedPixels": 0,
+      "cell": [
+        256,
+        320
+      ],
+      "density": 8,
+      "edgeAlpha": 0
+    },
+    {
+      "movingLeg": "left",
+      "supportLeg": "right",
+      "base": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v13/drafts/frames/keeper_prime_stair_left-foot-mid-swing_side-left_f01.png",
+        "sha256": "f8994a407446d6cc5f3bad354b4781bd8f4ed9667d0a32a023bcb328eea5e3fb"
+      },
+      "generatedBootStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/sources/generated/left-passing-compact-boot.png",
+        "sha256": "9691880c91b49ebc15d6fbe735827c4510649df3ddaa5997dde4ad0ff8fc1ea2"
+      },
+      "registeredBootStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/evidence/registered-sources/left-passing-compact-boot-registered.png",
+        "sha256": "08c2a159388238ad55392635acb458c4d9fa64f2404f011068e1866147434349",
+        "sourceBoundsExclusive": [
+          267,
+          140,
+          787,
+          1382
+        ],
+        "targetBoundsExclusive": [
+          23,
+          31,
+          180,
+          317
+        ],
+        "scale": 0.23027375201288244,
+        "registeredLeft": 61,
+        "registeredTop": 31
+      },
+      "mask": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/evidence/masks/left-passing-leg-mask.png",
+        "sha256": "bd561f0a4bfab4ed110301248c8c1eeb99f045db147d3f902421b0a8782cdd3c"
+      },
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v14/drafts/frames/keeper_prime_stair_left-foot-passing-compact_side-left_f01.png",
+        "sha256": "4262b9d642d2e918414fabdc88e90d5522a93eca6b5ab83c165b9557b1dc7fa0"
+      },
+      "supportSole": {
+        "y": 316,
+        "minX": 126,
+        "maxX": 149,
+        "centreX": 137.5
+      },
+      "movingLegLiftPx": 0,
+      "stairClearance": {
+        "supportTread": 2,
+        "minimumLp": 1.5892857142857082,
+        "penetratingPixels": 0
+      },
+      "outsideMaskChangedPixels": 0,
+      "cell": [
+        256,
+        320
+      ],
+      "density": 8,
+      "edgeAlpha": 0
+    }
+  ]
+}

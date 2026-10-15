@@ -1399,7 +1399,7 @@ no weight-transfer intermediates yet. Frank accepted this construction on 15
 October 2026 with “yes you've got it”, pinning the geometry and contact basis
 without promoting a complete animation to Final or runtime.
 
-The next active review gate is
+The superseded V13 review gate is
 `/keeper-review/keeper-prime-stair-ascent-v13/`. It preserves those contact
 frames and all V12 geometry exactly, then inserts one raised V6 pose-3 passing
 drawing per leg: LEFT contact → RIGHT passing → RIGHT contact → LEFT passing →
@@ -1409,7 +1409,20 @@ arms travel from one V12 opposing extreme through the neutral passing pose to
 the other. Built-in image generation supplied two alternative midpoint-arm
 studies, but both reached an endpoint-like extreme too early; they are saved
 as rejected provenance and contribute no candidate pixels. V13 remains
-reversible, unapproved and absent from Final, runtime and production.
+reversible, unapproved and absent from Final, runtime and production. Live
+review found that its arms reached overly large endpoints without quite
+matching the leg phase, and that F4's extended left boot entered the stair
+profile before its flat F5 contact.
+
+The active V14 correction is
+`/keeper-review/keeper-prime-stair-ascent-v14/`. It preserves the V12 geometry
+and V13 five-frame cadence while replacing only masked arm and moving-lower-leg
+regions. Contact hands are ±14.55 source pixels from the x=137 vertical datum;
+the far/right arm has at most 100 sampled visible skin pixels and reads as
+torso-occluded. The compact passing boots rise before extending. Deterministic
+per-pixel comparison against the complete 14-riser stair reports zero
+penetration in both passing frames, including 1.59 lp minimum F4 clearance.
+Out-of-mask pixels, Final, runtime and production remain exact and unchanged.
 
 ## Review-comments workflow for a later feedback round
 
