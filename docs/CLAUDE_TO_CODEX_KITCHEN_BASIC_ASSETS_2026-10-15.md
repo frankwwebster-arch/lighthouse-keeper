@@ -8,8 +8,8 @@ Frank's review. Approve, promote or wire nothing._
 
 **16 October changes:** the kettle, toaster and mixer each come on their own
 one-bay counter unit that upgrades with the appliance. The lighthouse
-starts at 172 lp (6 bays) and stretches one bay at a time to 12 bays
-(298 lp). The cleaning cupboard is always the last thing in the room, set
+starts at 193 lp (7 bays), so the toaster unit is in the basic kitchen,
+and stretches one bay at a time to 12 bays (298 lp). The cleaning cupboard is always the last thing in the room, set
 into the far wall at 90° to the view, and takes no bay. §2 is final.
 
 Geometry follows `docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md` (agreed),
@@ -46,7 +46,7 @@ existing anchors stay on the lattice.
   about a metre of wall. A real oven or under-counter fridge is 60 cm
   (about 13 lp), so one bay is already generous.
 
-## 2. Base layout at 172 lp (6 bays)
+## 2. Base layout at 193 lp (7 bays)
 
 From the stair-side door zone to the far wall:
 
@@ -55,14 +55,16 @@ From the stair-side door zone to the far wall:
 | — | Door zone, 46 lp: no furniture | |
 | 1 | Under-counter fridge | back |
 | 2 | Kettle unit (stove kettle on its own gas ring) | back |
-| 3 | Basic oven | back |
-| 4 | Sink unit; pedal bin on the open shelf beneath | back |
-| 5–6 | Table for one and chair; pet bowl under the table | back |
+| 3 | Toaster unit | back |
+| 4 | Basic oven | back |
+| 5 | Sink unit; pedal bin on the open shelf beneath | back |
+| 6–7 | Table for one and chair; pet bowl under the table | back |
 | far wall | Cleaning cupboard, door in the end wall (broom inside) | far-wall cap |
 
-The toaster unit arrives with the first stretch (7 bays) and the mixer unit
-with the second (8 bays); Frank chose this over a wider starting tower.
-Draw both now anyway.
+The mixer unit arrives with the first stretch (8 bays). Draw it now anyway.
+(Frank first chose 6 bays, then added a bay so the toaster has its unit
+from the start. The agreed handoff's 172-lp geometry is unchanged; the
+starting width is simply its first expansion.)
 
 **Fixed and movable.** Only the door zone and the cupboard are fixed. Ralph
 and Eddie can move every other piece to any bay, so draw nothing that
@@ -113,7 +115,7 @@ so the cabinet may change style by tier but never width.
 without stretching: a stair-side cap covering the 46-lp door zone, a
 21 × 56 repeat section (one per bay; two or three variants are welcome),
 and a far-wall cap, which carries the cupboard door. Any whole number of
-sections from 6 to 12 must join cleanly. Use the room door from your stair-transition work; don't redraw
+sections from 7 to 12 must join cleanly. Use the room door from your stair-transition work; don't redraw
 it. The front door is not in the kitchen: Frank has put it at the foot of
 the stairs (next batch).
 
@@ -175,7 +177,7 @@ room has 12, leaving one spare. The cupboard takes none.
 2. **Cupboard door.** The cleaning-cupboard datum asks for a 32-lp
    opening, and the door is now in the end wall, seen at 90°. Show the
    keeper walking in behind the opening door and coming out with the broom
-   (and the basic hoover, for later), at 172 lp and at 298 lp. If the leaf
+   (and the basic hoover, for later), at 193 lp and at 298 lp. If the leaf
    cannot hide him, say so.
 
 ## 6. Out of scope
@@ -198,7 +200,7 @@ room has 12, leaving one spare. The cupboard takes none.
 - Sources and raw drafts in your usual `art/source/` and `art/raw/`
   review folders, versioned (V1).
 - One review page for Frank showing: each item large and at game scale with
-  its states; the composed 6-bay starting kitchen with bay lines, the
+  its states; the composed 7-bay starting kitchen with bay lines, the
   lattice and the keeper standing at each spot; the 8-bay kitchen with the
   toaster and mixer units in; and the 12-bay kitchen with the reserved
   tier-3 sizes as dashed outlines.
