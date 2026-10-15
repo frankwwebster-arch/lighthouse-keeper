@@ -83,17 +83,15 @@ foreground stair stringer and bannister above the boots/lower shins. Its mask
 is on by default and can be toggled off for an exact V3 comparison. V4 reuses
 the 17 V3 media hashes without adding archive objects.
 
-Frank rejected V5 because it still did not divide the stair work equally and
-the left boot again crossed the stair surface. The active unapproved V6 review
-is `/keeper-review/keeper-prime-stair-ascent-v6/`. V6 replaces the V3–V5 leg
-art with separately authored six-pose left- and right-leg steps. Fourteen
-contacts alternate strictly left/right, seven each; every contact advances one
-6-lp tread and rises 60/14 lp. Six 60-ms drawings make each step smoother while
-keeping its 360-ms cadence effectively equal to V5's 368 ms. All twelve cells
-share an exact upper body through y212, a feathered hip join, fixed y31/y316
-cap/sole datums, transparent edge gutters and exact mirrored leftward frames.
-The route still closes at exactly 84 lp run × 60 lp rise. Nothing has entered
-Final or production.
+Frank rejected V6 because its intermediate drawings still let boots pass
+through the treads. Preserve V6 as rejected provenance. The active unapproved
+V7 diagnostic is `/keeper-review/keeper-prime-stair-ascent-v7/`. It deliberately
+uses only two unique planted-contact drawings and shows four states:
+RIGHT-forward/up, LEFT-forward/up, then the same pair once more. There are no
+swing, high-pass or transfer frames. Each support sole is registered to its
+lower tread and the moving sole to the immediately adjacent upper tread (6 lp
+run, 60/14 lp rise). This is a basic leg/contact proof, not a complete stair
+transition. Nothing has entered Final or production.
 
 ## Run it
 ```

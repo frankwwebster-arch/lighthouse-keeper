@@ -99,21 +99,17 @@ it off to expose the exact V3 motion. V4's 17 versioned asset aliases resolve
 to the existing V3 archive objects, so no binary artwork is duplicated. Do
 not promote the mask or V3 motion without Frank's explicit approval.
 
-Frank rejected V5: the visible movement was still not an exact 50/50 division
-between the legs, and the left boot crossed the stair surface. Preserve V5 as
-rejected provenance. The active unapproved correction is
-`/keeper-review/keeper-prime-stair-ascent-v6/`. V6 replaces all V3–V5 climb
-art with a separately authored six-pose left step and six-pose right step.
-Fourteen contacts alternate strictly LEFT/RIGHT (seven each), with 6 lp run and
-60/14 lp rise per adjacent tread. Six 60-ms poses retain essentially the same
-per-step cadence as V5 (360 ms versus 368 ms) while adding real intermediate
-leg drawings. All twelve registered 256×320 cells have fixed y31/y316
-cap/lowest-sole datums, byte-identical upper bodies through y212, a feathered
-hip join, transparent edge gutters and exact mirrored leftward cells. The
-review offers frame stepping, a one-left-plus-one-right loop, contact lines,
-large and exact-game-scale panes and an adjustable translucent bannister. It
-closes the same 84 × 60 lp flight. No approved walk, Final or production file
-changed.
+Frank rejected V6 because the six intermediate phases still showed boots
+passing through tread surfaces. Preserve it unchanged as rejected provenance.
+The active unapproved V7 diagnostic is
+`/keeper-review/keeper-prime-stair-ascent-v7/`. It strips the test down to two
+unique planted-contact drawings and a four-frame RIGHT, LEFT, RIGHT, LEFT loop.
+There are no swing, high-pass or weight-transfer drawings. Each 256×320 cell
+keeps a transparent gutter and the original upper body through y219; the
+support sole is y316 and moving sole y282. Page placement binds the two soles
+to immediately adjacent treads of 6 lp run and 60/14 lp rise. V7 is only a
+mechanical leg/contact gate, not a complete stair transition and not approved.
+No approved walk, Final or production file changed.
 
 ## Lift entry alignment correction (14 Oct 2026)
 

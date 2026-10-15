@@ -1,0 +1,28 @@
+{
+  "schema": "lighthouse-keeper/prime-stair-ascent@7",
+  "status": "draft-v7-two-contact-leg-test-awaiting-review",
+  "rejectionOfV6": "V6 still let feet pass through treads; its six-phase interpolation is removed entirely.",
+  "scope": "Four-contact RIGHT/LEFT/RIGHT/LEFT diagnostic only; not a complete transition.",
+  "geometry": {
+    "floorTopLp": 20,
+    "baseX": 100.5,
+    "baseBottomLp": 19.5,
+    "treadRunLp": 6,
+    "riserRiseLp": 4.285714285714286,
+    "shownContacts": 4,
+    "contactDurationMs": 320
+  },
+  "contactOrder": [
+    "right",
+    "left",
+    "right",
+    "left"
+  ],
+  "promoted": false,
+  "unchanged": {
+    "v1ThroughV6": true,
+    "approvedWalkSourcePixels": true,
+    "finalLane": true,
+    "production": true
+  }
+}

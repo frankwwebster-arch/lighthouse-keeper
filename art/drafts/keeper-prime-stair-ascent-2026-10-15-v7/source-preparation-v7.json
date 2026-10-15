@@ -1,0 +1,81 @@
+{
+  "schema": "lighthouse-keeper/stair-ascent-source-preparation@7",
+  "mode": "two-contact-only-deterministic-lower-leg-registration",
+  "rejectedV6": "Six intermediate phases still allowed boots to pass through tread geometry.",
+  "correction": {
+    "rightMovingLegHorizontalPx": 22,
+    "leftMovingLegHorizontalPx": 20,
+    "rightMovingLegVerticalPx": 5,
+    "leftMovingLegVerticalPx": 0,
+    "unchangedUpperBodyThroughY": 219
+  },
+  "contract": "Every frame shows one support sole at y316 and the opposite moving sole at y282, separated horizontally by one 48-px/6-lp tread.",
+  "frames": [
+    {
+      "leg": "right",
+      "source": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-left_f04.png",
+        "sha256": "9ababc16c15a994ce80e7682bb1cf43e2937771e2437cd0fc0d82d292f6528c7"
+      },
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v7/drafts/frames/keeper_prime_stair_right-contact_side-left_f01.png",
+      "sha256": "f2c630a34f23cc0e1afdd6e00f138b24adf9a1b97a1609650c79e1b87a273f5b",
+      "cell": [
+        256,
+        320
+      ],
+      "density": 8,
+      "supportSole": {
+        "y": 316,
+        "minX": 132,
+        "maxX": 142,
+        "centreX": 137
+      },
+      "movingSole": {
+        "y": 282,
+        "minX": 65,
+        "maxX": 114,
+        "centreX": 89.5
+      },
+      "localSeparation": {
+        "xPx": 47.5,
+        "yPx": 34,
+        "xLp": 5.9375,
+        "yLp": 4.25
+      },
+      "edgeAlpha": 0
+    },
+    {
+      "leg": "left",
+      "source": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-left_f04.png",
+        "sha256": "58c1e08b19521696dc2acf72f882d71bd6d53ef43fd408a63eb57c31d31d543f"
+      },
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v7/drafts/frames/keeper_prime_stair_left-contact_side-left_f01.png",
+      "sha256": "25493bd2d85ba7b7654515d1a47efad8c5bc275b056e00c7b7c2e278493e1565",
+      "cell": [
+        256,
+        320
+      ],
+      "density": 8,
+      "supportSole": {
+        "y": 316,
+        "minX": 130,
+        "maxX": 146,
+        "centreX": 138
+      },
+      "movingSole": {
+        "y": 282,
+        "minX": 84,
+        "maxX": 96,
+        "centreX": 90
+      },
+      "localSeparation": {
+        "xPx": 48,
+        "yPx": 34,
+        "xLp": 6,
+        "yLp": 4.25
+      },
+      "edgeAlpha": 0
+    }
+  ]
+}

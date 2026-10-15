@@ -1,0 +1,58 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-stair-ascent-2026-10-15-v7",
+  "status": "draft-v7-two-contact-leg-test-awaiting-review",
+  "authorities": {
+    "rejectedV6": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/batch-register.json",
+      "sha256": "f03553eb2d25157217f4e2ad7fe61e5074d500ef5f8ce4131a7782662050731f"
+    },
+    "approvedSideMaster": {
+      "file": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+    },
+    "sourcePreparation": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v7/source-preparation-v7.json",
+      "sha256": "64a187352cd5b0b06a844c5d455fd42a4e1354cf190a90d740304397dcceecec"
+    },
+    "contactRig": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v7/stair-contact-rig-v7.json",
+      "sha256": "5ab235907a8157e220d2b45de6f0c7f85c16fd8fa2e02441368e5abbfb2dc144"
+    }
+  },
+  "generation": {
+    "mode": "deterministic-two-contact-lower-leg-registration-from-v6-contact-drawings",
+    "frameUrls": [
+      "/keeper-review/keeper-prime-stair-ascent-v7/assets/right-contact-f2c630a34f23cc0e.png",
+      "/keeper-review/keeper-prime-stair-ascent-v7/assets/left-contact-25493bd2d85ba7b7.png"
+    ]
+  },
+  "spec": {
+    "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v7/keeper-prime-stair-ascent-v7.json",
+    "sha256": "4d1d5ab80f32b4c03535380402f43debdab998eb1e452db9f648eac95f2db449"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-stair-ascent-v7/index.html",
+    "sha256": "9c42832d1da4498c39d5c0e183d68c8044d1e9ee247bede94ea3e926ee9b030e"
+  },
+  "frameUrls": [
+    "/keeper-review/keeper-prime-stair-ascent-v7/assets/right-contact-f2c630a34f23cc0e.png",
+    "/keeper-review/keeper-prime-stair-ascent-v7/assets/left-contact-25493bd2d85ba7b7.png"
+  ],
+  "validation": {
+    "uniqueDrawings": 2,
+    "shownContacts": 4,
+    "contactOrder": [
+      "right",
+      "left",
+      "right",
+      "left"
+    ],
+    "noIntermediates": true,
+    "adjacentTreadOnly": true,
+    "edgeAlphaZero": true,
+    "v1ThroughV6Changed": false,
+    "finalChanged": false,
+    "productionChanged": false
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "lighthouse-keeper/stair-contact-rig@7",
+  "status": "four-contact-mechanical-proof-only",
+  "direction": "leftward gameplay",
+  "cell": [
+    256,
+    320
+  ],
+  "density": 8,
+  "geometry": {
+    "floorTopLp": 20,
+    "baseX": 100.5,
+    "baseBottomLp": 19.5,
+    "treadRunLp": 6,
+    "riserRiseLp": 4.285714285714286,
+    "shownContacts": 4,
+    "contactDurationMs": 320
+  },
+  "contactOrder": [
+    "right",
+    "left",
+    "right",
+    "left"
+  ],
+  "contract": [
+    "Only two unique drawings exist: RIGHT forward/up and LEFT forward/up.",
+    "The review loop is RIGHT, LEFT, RIGHT, LEFT with no intervening drawings.",
+    "Each moving sole is one adjacent tread above and one tread ahead of its planted support sole.",
+    "This is a leg/contact diagnostic, not a complete stair transition or approval candidate."
+  ]
+}
