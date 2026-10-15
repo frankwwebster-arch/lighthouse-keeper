@@ -11,10 +11,11 @@ In short: every floor item fills whole 21-lp bays (two steps). The room
 starts at 193 lp (7 bays) and each stretch adds one bay, up to 12 (298 lp).
 The kettle, toaster and mixer each sit on their own one-bay counter unit.
 The cleaning cupboard is always last, its door in the far wall at 90° to
-the view, and takes no bay. The table must not block the walk to it. Two
-things to confirm, not work around: whether the oven clips read with a
-19-lp door, and whether the end-wall cupboard door hides him. Drafts only;
-approve or promote nothing.
+the view, and takes no bay. The table must not block the walk to it. To
+confirm, not work around: whether the oven clips read with a 19-lp door,
+and whether the end-wall cupboard door hides him. Yours to decide: Frank
+prefers the room door to open outward into the stairwell, freeing two bays
+per room (brief §5.3). Drafts only; approve or promote nothing.
 
 ## Codex movement-foundation response (14 Oct 2026)
 
