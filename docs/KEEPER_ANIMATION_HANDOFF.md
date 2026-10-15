@@ -1522,6 +1522,29 @@ world roots and tread geometry remain unchanged. V1–V3 remain immutable. Run
 `npm run verify:keeper-prime-stair-transitions-v4`; Final, runtime and
 production are unchanged pending Frank's visual decision.
 
+Live review showed that V4 still read smaller: matching only the cap-to-root
+span did not match the mass of the complete character. V5 at
+`/keeper-review/keeper-prime-stair-transitions-v5/` therefore uses the full
+opaque silhouette. Walk F7 contains 27,322 opaque source pixels and the Stair
+V16 LEFT compact passing authority 24,299; the common stair-family linear
+registration is `sqrt(27322/24299) = 1.060381…`. It applies around the same
+registered root to every stair and mount frame in every route. No source PNG,
+timing, root, tread, Final or runtime record changes. V4 remains immutable but
+is superseded for review. Run `npm run verify:keeper-prime-stair-transitions-v5`.
+
+Before V5 was published for review, Frank chose the stronger architectural
+solution: scale reconciliation may occur while the Keeper is completely hidden
+behind a room door, but never at a visible walk/stair join. V6 at
+`/keeper-review/keeper-prime-stair-transitions-v6/` leaves Stair V16 at native
+scale 1. Every walk, turn, acceleration/deceleration bridge and door-reach
+frame from lower-door emergence through upper-door disappearance uses one
+constant `sqrt(24299/27322) = 0.943057…` circulation scale. The departure
+handoff finishes before he becomes visible and the inverse handoff occurs only
+after full arrival-door occlusion. Thus the visible door-to-door route has zero
+scale changes. V5 is retained as rejected provenance; source PNGs, timing,
+roots, tread geometry, Final and runtime remain unchanged. Run
+`npm run verify:keeper-prime-stair-transitions-v6`.
+
 ## Review-comments workflow for a later feedback round
 
 1. Do not process another review export until the beard evidence gate is

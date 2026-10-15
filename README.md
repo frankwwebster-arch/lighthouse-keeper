@@ -160,7 +160,7 @@ of the Keeper's boots and lower legs, but it may not change the approved
 fourteen-riser contact geometry.
 
 The current reversible transition gate is
-`/keeper-review/keeper-prime-stair-transitions-v4/`. It composes exact approved
+`/keeper-review/keeper-prime-stair-transitions-v6/`. It composes exact approved
 authorities plus two clearly labelled candidate door-reach cells into two
 reviewable sequences: lower transfer door → two walk cycles → moving Stair V16
 F1, and final Stair V16 contacts → flat landing → clockwise
@@ -199,7 +199,23 @@ walk pose measures 293 source pixels from cap top to the registered root; the
 approved stair family measures 285. Every stair and stair-mount frame now uses
 one uniform 293/285 (1.028×) display registration around the same root, so the
 fix cannot move to F17→F18 or the upper landing. Source PNGs, timing, route
-roots, Final, runtime and production remain unchanged.
+roots, Final, runtime and production remain unchanged. Live review showed that
+matching height alone did not remove the perceived whole-body contraction.
+
+V5 therefore matches whole-silhouette mass instead. Walk F7 contains 27,322
+opaque source pixels and the stair mount authority 24,299; one uniform
+sqrt(27,322/24,299), or 1.060×, root-anchored registration is applied to every
+stair-family route frame. This preserves internal proportions and avoids a
+one-frame patch while making the transition visibly equal in overall scale.
+Frank rejected scaling the stair family as the visible solution: the size
+handoff can instead occur invisibly behind the room doors.
+
+V6 leaves Stair V16 at native scale. Every walk, turn, bridge and reach frame
+between the departure and arrival doors uses one constant 0.943× circulation
+scale, matching the walk pose's opaque mass to the native stair mount. Normal
+room scale changes only while the Keeper is fully hidden behind the departure
+door and resets only after he is fully hidden at the arrival door. There are no
+visible scale changes anywhere in the door-to-door route.
 
 ## Run it
 ```
@@ -215,6 +231,8 @@ npm run verify:keeper-prime-stair-transitions-v1 # exact frames, gutters, roots,
 npm run verify:keeper-prime-stair-transitions-v2 # focused walk-to-stair seam and unchanged-source checks
 npm run verify:keeper-prime-stair-transitions-v3 # fixed reviewer layout and default Studio 4× presentation
 npm run verify:keeper-prime-stair-transitions-v4 # uniform root-anchored stair-family height registration
+npm run verify:keeper-prime-stair-transitions-v5 # whole-silhouette stair-family scale registration
+npm run verify:keeper-prime-stair-transitions-v6 # door-hidden room/circulation scale handoff
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
 

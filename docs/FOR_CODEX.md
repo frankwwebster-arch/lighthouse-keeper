@@ -196,7 +196,7 @@ the tread/contact geometry remains the approved 14-riser, 7-lp-tread,
 ## Stair entry and landing-exit transition gate (15 Oct 2026)
 
 The current review candidate is
-`/keeper-review/keeper-prime-stair-transitions-v4/`. Its approved authorities
+`/keeper-review/keeper-prime-stair-transitions-v6/`. Its approved authorities
 remain byte-identical: Walk V6, Stair Ascent V16, approved side/back Turn V9,
 the side/front turn source retained for the opposite flight, and the approved
 stop-to-walk bridge. Left travel is CSS-mirrored only. Two new masked
@@ -238,7 +238,19 @@ route frame receives one uniform 293/285 root-anchored display registration.
 Run `npm run verify:keeper-prime-stair-transitions-v4` to check authority hashes,
 256×320 transparent cell gutters, rejected-source exclusion, exact geometry,
 moving joins, hallway closure, controls and approval boundaries. Nothing is in
-Final or runtime until Frank approves the candidate.
+Final or runtime until Frank approves the candidate. Frank found that V4 still
+read smaller because cap-to-root height did not measure whole-body mass. V5
+supersedes it with one constant sqrt(27,322/24,299), or 1.060×, registration
+for every stair-family route frame, equating the opaque silhouette area of the
+walk F7 and stair-mount authorities. Run
+`npm run verify:keeper-prime-stair-transitions-v5` for that historical gate.
+Frank then established the cleaner rule: reconcile scale only while the Keeper
+is fully obscured behind the departure/arrival doors. V6 leaves approved Stair
+V16 at native scale and applies one constant 0.943× circulation scale to every
+walk, turn, bridge and reach frame between those doors. The visible route has
+zero scale changes; the normal-room scale returns only after full arrival-door
+occlusion. V5 is rejected provenance. Run
+`npm run verify:keeper-prime-stair-transitions-v6` for the current gate.
 
 ## Lift entry alignment correction (14 Oct 2026)
 

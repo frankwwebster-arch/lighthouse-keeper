@@ -98,6 +98,13 @@ const walkAwayApproval = spawnSync('node', ['scripts/verify_keeper_prime_walk_st
 })
 if (walkAwayApproval.error) throw walkAwayApproval.error
 if (walkAwayApproval.status !== 0) process.exit(walkAwayApproval.status ?? 1)
+const stairTransitionsV6 = spawnSync('node', ['scripts/verify_keeper_prime_stair_transitions_v6.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (stairTransitionsV6.error) throw stairTransitionsV6.error
+if (stairTransitionsV6.status !== 0) process.exit(stairTransitionsV6.status ?? 1)
 const result = spawnSync('npm', ['run', 'test:core'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },
