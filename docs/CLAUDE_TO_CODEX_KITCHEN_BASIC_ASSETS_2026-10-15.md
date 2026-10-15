@@ -7,10 +7,13 @@ the grid, moving it, and upgrades that grow. Everything here is a draft for
 Frank's review. Approve, promote or wire nothing._
 
 **16 October changes:** the kettle, toaster and mixer each come on their own
-one-bay counter unit that upgrades with the appliance. The lighthouse
-starts at 193 lp (7 bays), so the toaster unit is in the basic kitchen,
-and stretches one bay at a time to 12 bays (298 lp). The cleaning cupboard is always the last thing in the room, set
-into the far wall at 90° to the view, and takes no bay. §2 is final.
+one-bay counter unit that upgrades with the appliance. **Nothing overlaps**
+(Frank): the bin has its own bay, left of the fridge, and nothing tucks
+under another piece. The starting kitchen is 9 bays, mixer included (it is
+his cooking counter), and the lighthouse stretches one bay at a time to
+12. The cleaning cupboard is always the last thing in the room, set into
+the far wall at 90° to the view, and takes no bay. §2 is final apart from
+the door clear area, which is your call (§5.3).
 
 Geometry follows `docs/KEEPER_ROOM_GRID_172_HANDOFF_2026-10-14.md` (agreed),
 extended as below. Contact heights follow `data/keeper_object_dimensions.json`.
@@ -27,13 +30,13 @@ ever split. To make that true, every floor-standing item occupies whole
 | | lp | ku |
 | --- | ---: | ---: |
 | One bay (two walking steps) | 21 | 168 |
-| Room width with *n* bays | 46 + 21*n* | 368 + 168*n* |
-| Bay *k* (1-based) spans | | `368 + 168(k−1)` to `368 + 168k` |
+| Door clear area *Z* | 4, 25 or 46 (§5.3) | 32, 200 or 368 |
+| Room width with *n* bays | *Z* + 21*n* | *Z*ku + 168*n* |
+| Bay *k* (1-based) spans | | `Zku + 168(k−1)` to `Zku + 168k` |
 
 Every stretch of the lighthouse adds exactly one bay (21 lp), as the agreed
-handoff already does for 193 and 214. Frank wants room for four more
-elements than 214 allows, so the widest room is **12 bays (298 lp)**. All
-existing anchors stay on the lattice.
+handoff already does. The widest room is **12 bays**: 256, 277 or 298 lp
+depending on *Z*. All existing anchors stay on the lattice.
 
 - Draw each item inside its bays. Art may be narrower than its bays (leave
   up to 2 lp each side); it must never be wider.
@@ -46,25 +49,29 @@ existing anchors stay on the lattice.
   about a metre of wall. A real oven or under-counter fridge is 60 cm
   (about 13 lp), so one bay is already generous.
 
-## 2. Base layout at 193 lp (7 bays)
+## 2. Base layout (9 bays)
 
-From the stair-side door zone to the far wall:
+The room's width depends on the door (§5.3, your call): with Frank's
+preferred outward door and a 4-lp frame, the starting room is 193 lp and
+the widest 256 lp; with an inward door it is 214 lp (25-lp zone) or
+235 lp (46-lp zone). From the stair-side door to the far wall:
 
 | Bay | Item | Lane |
 | ---: | --- | --- |
-| — | Door zone, 46 lp: no furniture | |
-| 1 | Under-counter fridge | back |
-| 2 | Kettle unit (stove kettle on its own gas ring) | back |
-| 3 | Toaster unit | back |
-| 4 | Basic oven | back |
-| 5 | Sink unit; pedal bin on the open shelf beneath | back |
-| 6–7 | Table for one and chair; pet bowl under the table | back |
+| — | Door clear area (width per §5.3): no furniture | |
+| 1 | Pedal bin | back |
+| 2 | Under-counter fridge | back |
+| 3 | Kettle unit (stove kettle on its own gas ring) | back |
+| 4 | Toaster unit | back |
+| 5 | Basic oven | back |
+| 6 | Mixer unit (bowl and wooden spoon): his cooking counter | back |
+| 7 | Sink unit (cupboard beneath) | back |
+| 8–9 | Table for one and chair | back |
 | far wall | Cleaning cupboard, door in the end wall (broom inside) | far-wall cap |
 
-The mixer unit arrives with the first stretch (8 bays). Draw it now anyway.
-(Frank first chose 6 bays, then added a bay so the toaster has its unit
-from the start. The agreed handoff's 172-lp geometry is unchanged; the
-starting width is simply its first expansion.)
+The pet bowl no longer goes under the table; Frank is choosing its home
+(recommended: the hall at the foot of the stairs, by the cat flap). Draw it
+on its own.
 
 **Fixed and movable.** Only the door zone and the cupboard are fixed. Ralph
 and Eddie can move every other piece to any bay, so draw nothing that
@@ -100,11 +107,11 @@ contact datums that every tier keeps.
 | `obj_toaster` | Counter unit with a simple toaster | 1 | 21 × 30 | counter 19 |
 | `obj_cooker` | Basic oven with a hob | 1 | 21 × 19 (+ splashback to 26) | hob 19; rack 10; oven door ≤ 19 wide (see §5) |
 | `obj_mixer` | Counter unit with a mixing bowl and wooden spoon | 1 | 21 × 30 | counter 19 |
-| `obj_sink` | Sink unit with a washing-up bowl and tap | 1 | 21 × 27 (tap) | counter 19; open shelf beneath for the bin |
+| `obj_sink` | Sink unit with a washing-up bowl and tap | 1 | 21 × 27 (tap) | counter 19; cupboard beneath |
 | `obj_cupboard` | Cleaning cupboard in the far wall, broom inside | 0 (far-wall cap) | door ≥ 24 × 40 opening | door opens towards the room and hides him (see §5) |
 | `obj_table` | Table for one with its chair | 2 | 42 × 26 | table 19, 2 thick, knee clearance ≥ 15, place ≥ 28; chair seat 11, back top 26, clear seat 20 |
-| `obj_bin` | Pedal bin | under the sink | 8 × 10 | stands on the floor inside the sink's bay |
-| `obj_petbowl` | Plain pet bowl | under the table | 12 × 3 | rim ≤ 3, clear width ≥ 12, scoop target 6 |
+| `obj_bin` | Pedal bin | 1 | 21 × 14 | stands on the floor, centred in its bay; later tiers (recycling station, Waste-Manager 3000) fill the bay |
+| `obj_petbowl` | Plain pet bowl | on its own (home pending) | 12 × 3 | rim ≤ 3, clear width ≥ 12, scoop target 6 |
 
 The three counter units share one cabinet design and one counter height, so
 they read as a run of matching kitchen units. Each unit is drawn together
@@ -115,7 +122,7 @@ so the cabinet may change style by tier but never width.
 without stretching: a stair-side cap covering the 46-lp door zone, a
 21 × 56 repeat section (one per bay; two or three variants are welcome),
 and a far-wall cap, which carries the cupboard door. Any whole number of
-sections from 7 to 12 must join cleanly. Use the room door from your stair-transition work; don't redraw
+sections from 9 to 12 must join cleanly. Use the room door from your stair-transition work; don't redraw
 it. The front door is not in the kitchen: Frank has put it at the foot of
 the stairs (next batch).
 
@@ -164,8 +171,9 @@ fronted, running all the way up to the ceiling; its working animation shows
 the food rising in the little lift and vanishing into a closed top
 section. It appears only once the dining room is built, and can stand in
 any bay. Fully upgraded,
-the kitchen needs 11 bays (2 + 1 + 1 + 2 + 1 + 2 + 1 + 1) and the widest
-room has 12, leaving one spare. The cupboard takes none.
+the kitchen needs exactly 12 bays (bin 1, fridge 2, kettle 1, toaster 1,
+range 2, mixer 1, sink and dishwasher 2, snack counter 1, dumb waiter 1),
+the widest room. The cupboard takes none.
 
 ## 5. Three things to confirm on the review page, not to work around
 
@@ -177,7 +185,7 @@ room has 12, leaving one spare. The cupboard takes none.
 2. **Cupboard door.** The cleaning-cupboard datum asks for a 32-lp
    opening, and the door is now in the end wall, seen at 90°. Show the
    keeper walking in behind the opening door and coming out with the broom
-   (and the basic hoover, for later), at 193 lp and at 298 lp. If the leaf
+   (and the basic hoover, for later), at the narrowest and widest rooms. If the leaf
    cannot hide him, say so.
 
 3. **Room door direction: your decision.** Frank prefers the room door
@@ -215,9 +223,8 @@ room has 12, leaving one spare. The cupboard takes none.
 - Sources and raw drafts in your usual `art/source/` and `art/raw/`
   review folders, versioned (V1).
 - One review page for Frank showing: each item large and at game scale with
-  its states; the composed 7-bay starting kitchen with bay lines, the
-  lattice and the keeper standing at each spot; the 8-bay kitchen with the
-  toaster and mixer units in; and the 12-bay kitchen with the reserved
+  its states; the composed 9-bay starting kitchen with bay lines, the
+  lattice and the keeper standing at each spot; and the 12-bay kitchen with the reserved
   tier-3 sizes as dashed outlines.
 - A short note back to Claude in `docs/` with each item's measured bounds,
   bays, interaction spots (in ku) and the two answers from §5. Claude will

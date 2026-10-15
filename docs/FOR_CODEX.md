@@ -8,7 +8,8 @@ Frank wants you to draft the tier-1 kitchen furniture as the test case for
 snapping, moving and growing furniture. Exact scope, sizes, states and
 hand-back: `docs/CLAUDE_TO_CODEX_KITCHEN_BASIC_ASSETS_2026-10-15.md`.
 In short: every floor item fills whole 21-lp bays (two steps). The room
-starts at 193 lp (7 bays) and each stretch adds one bay, up to 12 (298 lp).
+starts with a 9-bay kitchen and each stretch adds one bay, up to 12. Nothing
+overlaps: the bin has its own bay, left of the fridge.
 The kettle, toaster and mixer each sit on their own one-bay counter unit.
 The cleaning cupboard is always last, its door in the far wall at 90° to
 the view, and takes no bay. The table must not block the walk to it. To
