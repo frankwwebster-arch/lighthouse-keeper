@@ -1,0 +1,66 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-stair-ascent-2026-10-15-v9",
+  "status": "draft-v9-forward-toe-clearance-awaiting-review",
+  "authorities": {
+    "rejectedV8": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v8/batch-register.json",
+      "sha256": "6396c410920b26d710256aa49ab7e9967178b8a7d98edb982ed1dc195856e710"
+    },
+    "v7SourcePreparation": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v7/source-preparation-v7.json",
+      "sha256": "64a187352cd5b0b06a844c5d455fd42a4e1354cf190a90d740304397dcceecec"
+    },
+    "contactRig": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v9/stair-contact-rig-v9.json",
+      "sha256": "7f5c1f988bff7c4201fd78a3466ccc8a268ccbc1c692c2bea005fd76947db76d"
+    }
+  },
+  "generation": {
+    "mode": "geometry-only-plus-one-point-five-logical-pixels-keeper-back-shift",
+    "frameUrls": [
+      "/keeper-review/keeper-prime-stair-ascent-v9/assets/right-contact-f2c630a34f23cc0e.png",
+      "/keeper-review/keeper-prime-stair-ascent-v9/assets/left-contact-25493bd2d85ba7b7.png"
+    ]
+  },
+  "originalAndDraft": [
+    {
+      "leg": "right",
+      "sourceFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v7/drafts/frames/keeper_prime_stair_right-contact_side-left_f01.png",
+      "sourceSha256": "f2c630a34f23cc0e1afdd6e00f138b24adf9a1b97a1609650c79e1b87a273f5b",
+      "candidateSha256": "f2c630a34f23cc0e1afdd6e00f138b24adf9a1b97a1609650c79e1b87a273f5b"
+    },
+    {
+      "leg": "left",
+      "sourceFile": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v7/drafts/frames/keeper_prime_stair_left-contact_side-left_f01.png",
+      "sourceSha256": "25493bd2d85ba7b7654515d1a47efad8c5bc275b056e00c7b7c2e278493e1565",
+      "candidateSha256": "25493bd2d85ba7b7654515d1a47efad8c5bc275b056e00c7b7c2e278493e1565"
+    }
+  ],
+  "spec": {
+    "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v9/keeper-prime-stair-ascent-v9.json",
+    "sha256": "e33316485cfd520626effcfa3a13804ef12dc51de58cdc291f7846250c5fe9d0"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-stair-ascent-v9/index.html",
+    "sha256": "7e92574196916f29770e82dc77ca4e3f279911d99b2c7a955bac1dadfa2ae131"
+  },
+  "frameUrls": [
+    "/keeper-review/keeper-prime-stair-ascent-v9/assets/right-contact-f2c630a34f23cc0e.png",
+    "/keeper-review/keeper-prime-stair-ascent-v9/assets/left-contact-25493bd2d85ba7b7.png"
+  ],
+  "validation": {
+    "keeperBackShiftLp": 1.5,
+    "minimumToeClearanceLp": 0.25,
+    "uniqueDrawings": 2,
+    "shownContacts": 4,
+    "v8ArtworkChanged": false,
+    "v8VerticalPositionsChanged": false,
+    "v8ContactMarkersChanged": false,
+    "v8TimingChanged": false,
+    "stairGeometryChanged": false,
+    "v1ThroughV8Changed": false,
+    "finalChanged": false,
+    "productionChanged": false
+  }
+}

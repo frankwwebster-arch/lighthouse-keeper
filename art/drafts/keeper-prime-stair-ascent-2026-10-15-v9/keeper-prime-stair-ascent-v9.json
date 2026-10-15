@@ -1,0 +1,28 @@
+{
+  "schema": "lighthouse-keeper/prime-stair-ascent@9",
+  "status": "draft-v9-forward-toe-clearance-awaiting-review",
+  "rejectionOfV8": "V8 fixed the one-tread index error but the forward toe still overlapped the next vertical riser.",
+  "correction": "Move only the complete Keeper root +1.5 lp/right; retain tread markers, artwork, vertical geometry, timing and stairs.",
+  "geometry": {
+    "keeperBackShiftFromV8Lp": 1.5,
+    "keeperBackShiftSourcePx": 12,
+    "minimumOpaqueToeClearanceLp": 0.25,
+    "firstFloorSupportCentreLp": 103.5,
+    "firstTreadCentreLp": 97.5,
+    "treadRunLp": 6,
+    "riserRiseLp": 4.285714285714286,
+    "contactMarkersChanged": false,
+    "verticalGeometryChanged": false
+  },
+  "promoted": false,
+  "unchanged": {
+    "v1ThroughV8": true,
+    "v8Artwork": true,
+    "v8VerticalPositions": true,
+    "v8ContactMarkers": true,
+    "v8Timing": true,
+    "stairGeometry": true,
+    "finalLane": true,
+    "production": true
+  }
+}

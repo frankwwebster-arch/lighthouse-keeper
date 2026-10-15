@@ -1,0 +1,33 @@
+{
+  "schema": "lighthouse-keeper/stair-contact-rig@9",
+  "status": "four-contact-forward-toe-clearance-correction",
+  "direction": "leftward gameplay",
+  "cell": [
+    256,
+    320
+  ],
+  "density": 8,
+  "geometry": {
+    "keeperBackShiftFromV8Lp": 1.5,
+    "keeperBackShiftSourcePx": 12,
+    "minimumOpaqueToeClearanceLp": 0.25,
+    "firstFloorSupportCentreLp": 103.5,
+    "firstTreadCentreLp": 97.5,
+    "treadRunLp": 6,
+    "riserRiseLp": 4.285714285714286,
+    "contactMarkersChanged": false,
+    "verticalGeometryChanged": false
+  },
+  "contactOrder": [
+    "right",
+    "left",
+    "right",
+    "left"
+  ],
+  "contract": [
+    "The complete Keeper is shifted back/right 1.5 lp (12 source pixels) from V8.",
+    "The stair, support guides, target guides, vertical positions, images and timing are unchanged.",
+    "The foremost opaque moving-boot pixel retains at least 0.25 lp/2 source pixels clearance from the next riser.",
+    "Frame 1 still supports on the floor and lands vertically on tread 1."
+  ]
+}

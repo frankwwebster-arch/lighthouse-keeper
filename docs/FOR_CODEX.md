@@ -99,17 +99,16 @@ it off to expose the exact V3 motion. V4's 17 versioned asset aliases resolve
 to the existing V3 archive objects, so no binary artwork is duplicated. Do
 not promote the mask or V3 motion without Frank's explicit approval.
 
-Frank rejected V7 because its horizontal foot-contact index was one tread ahead
-of its vertical index. Frame 1 therefore stood over tread 1 at floor height and
-reached over tread 2 at tread-1 height. Preserve V7 unchanged as rejected
-provenance. The active unapproved V8 diagnostic is
-`/keeper-review/keeper-prime-stair-ascent-v8/`. It shifts the complete Keeper
-root plus support and target markers exactly +6 lp, while retaining the exact
-V7 image hashes, vertical coordinates, 320-ms timing and stair geometry. Frame
-1 now supports at floor centre x=103.5 and lands on tread-1 centre x=97.5;
-later RIGHT/LEFT contacts advance one adjacent tread each. V8 remains only a
-four-contact mechanical gate, not a complete transition and not approved. No
-approved walk, Final or production file changed.
+Frank accepted V8’s vertical registration but rejected its horizontal toe
+clearance because the forward toe overlapped the next riser. Preserve V8
+unchanged as rejected provenance. The active unapproved V9 diagnostic is
+`/keeper-review/keeper-prime-stair-ascent-v9/`. It shifts only the complete
+Keeper root +1.5 lp/right (12 source pixels). Measured forward-toe clearance is
+now at least 0.25 lp/2 source pixels. The exact V8 image hashes, vertical
+coordinates, support/target guide positions, 320-ms timing and stair geometry
+are unchanged. V9 remains only a four-contact mechanical gate, not a complete
+transition and not approved. No approved walk, Final or production file
+changed.
 
 ## Lift entry alignment correction (14 Oct 2026)
 

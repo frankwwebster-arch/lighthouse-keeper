@@ -1366,17 +1366,16 @@ default and toggleable for direct masked/unmasked comparison. V4 owns 17
 versioned archive aliases, all resolving to the same 17 immutable V3 objects;
 no binary art is duplicated and nothing has moved to Final or production.
 
-Frank rejected V7 because its horizontal contact index was one tread ahead of
-its vertical index: the first support foot was horizontally over tread 1 while
-still at floor height, and the raised foot was over tread 2 at tread-1 height.
-V7 remains immutable rejected provenance. The active unapproved
-`/keeper-review/keeper-prime-stair-ascent-v8/` preserves both V7 image hashes,
-all vertical coordinates, 320-ms timing and stair dimensions. It shifts the
-complete Keeper root and both contact guides +6 lp, exactly one tread right.
-Frame 1 now supports on the floor at x=103.5 and lands on tread 1 at x=97.5;
-the remaining LEFT/RIGHT contacts advance by one adjacent tread. V8 is still a
-four-contact mechanical gate only, not the complete ascent, and nothing is
-approved, in Final or in production.
+Frank accepted V8’s vertical registration but rejected the remaining
+horizontal overlap between the forward toe and each next riser. V8 remains
+immutable rejected provenance. The active unapproved
+`/keeper-review/keeper-prime-stair-ascent-v9/` shifts only the complete Keeper
+root 1.5 lp/12 source pixels back/right. Pixel measurement now leaves at least
+0.25 lp/2 source pixels of transparent clearance ahead of the toe. Both image
+hashes, all vertical coordinates, support/target guide positions, 320-ms
+timing and stair dimensions remain exact V8 values. V9 is still a four-contact
+mechanical gate only, not the complete ascent, and nothing is approved, in
+Final or in production.
 
 ## Review-comments workflow for a later feedback round
 
