@@ -99,7 +99,7 @@ only 0.875 logical pixels and was visually static. Its verifier proved only
 non-penetration, not positive support contact; that incomplete contract is
 retained as rejected provenance.
 
-The active unapproved geometry gate is
+The accepted geometry/contact foundation is
 `/keeper-review/keeper-prime-stair-ascent-v12/`. It resets to four binding
 RIGHT/LEFT/RIGHT/LEFT contacts before any intermediates are attempted. The
 finished-floor rise remains exactly 60 lp over fourteen equal risers, but tread
@@ -107,8 +107,20 @@ depth increases from 6 to 7 lp; the resulting 98-lp flight fits inside the
 reserved 105-lp stair core. Each support sole must touch a real tread, each
 upper sole must touch the next tread within 0.05 lp, and successive support
 handovers may drift by no more than 0.07 lp. Two opposite arm silhouettes are
-now plainly visible. V12 is review-only and changes no Final art, runtime
-sprite or production geometry.
+now plainly visible. Frank accepted that foundation on 15 October 2026 with
+“yes you've got it”; this is acceptance of its stair and contact construction,
+not a promotion to Final or runtime.
+
+The active unapproved smoothing candidate is
+`/keeper-review/keeper-prime-stair-ascent-v13/`. Its five-frame proof reads
+LEFT contact → raised RIGHT-foot passing frame → RIGHT contact → raised
+LEFT-foot passing frame → LEFT contact. The contact endpoints are exact V12
+bytes and each intermediate is an exact same-family V6 raised passing pose.
+Thus every step takes two frame intervals, the planted boot stays registered
+to its tread, and the arms pass from one opposing V12 extreme through neutral
+to the other. Two generated arm studies are retained as rejected provenance
+and contribute no candidate pixels. V13 remains review-only and changes no
+Final art, runtime sprite or production geometry.
 
 ## Run it
 ```

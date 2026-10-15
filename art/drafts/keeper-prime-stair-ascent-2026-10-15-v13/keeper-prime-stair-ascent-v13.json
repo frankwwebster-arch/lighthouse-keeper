@@ -1,0 +1,29 @@
+{
+  "schema": "lighthouse-keeper/prime-stair-ascent@13",
+  "status": "draft-v13-one-passing-frame-per-leg-awaiting-review",
+  "approvalBasis": "Frank accepted V12 geometry/contact foundation with “yes you’ve got it”.",
+  "scope": "Two-step smoothing proof with exactly one passing drawing per leg.",
+  "geometry": {
+    "floorTopLp": 20,
+    "stairBaseRightLp": 116,
+    "floorSupportCentreLp": 119.5,
+    "flightRunLp": 98,
+    "flightRiseLp": 60,
+    "risers": 14,
+    "treadRunLp": 7,
+    "riserRiseLp": 4.285714285714286,
+    "reservedCoreRunLp": 105,
+    "shownContacts": 3,
+    "contactDurationMs": 280,
+    "framesPerStep": 2,
+    "frameDurationMs": 110
+  },
+  "promoted": false,
+  "unchanged": {
+    "v12ContactsByteIdentical": true,
+    "v12GeometryExact": true,
+    "finalLane": true,
+    "runtimeSprites": true,
+    "production": true
+  }
+}

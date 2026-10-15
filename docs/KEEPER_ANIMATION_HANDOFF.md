@@ -1384,7 +1384,7 @@ verifier checked that lower-body pixels did not penetrate the stairs but failed
 to require a sole to make positive support contact. Preserve V11 unchanged as
 evidence of that rejected contract.
 
-The next active review gate is
+The accepted geometry/contact foundation is
 `/keeper-review/keeper-prime-stair-ascent-v12/`. V12 returns to two binding
 contact drawings before intermediates are reintroduced. The flight keeps the
 exact 60-lp rise and fourteen equal risers but deepens each tread from 6 to 7
@@ -1395,8 +1395,21 @@ is within 0.036 lp of the next tread; and the next frame inherits that upper
 foot within 0.063 lp horizontally and 0.036 lp vertically. Generated studies
 contribute only the declared arms, producing plainly opposite silhouettes;
 the Prime head and contact legs remain protected. V12 deliberately contains
-no weight-transfer intermediates yet. It remains unapproved and changes no
-Final art, runtime sprite or production geometry.
+no weight-transfer intermediates yet. Frank accepted this construction on 15
+October 2026 with “yes you've got it”, pinning the geometry and contact basis
+without promoting a complete animation to Final or runtime.
+
+The next active review gate is
+`/keeper-review/keeper-prime-stair-ascent-v13/`. It preserves those contact
+frames and all V12 geometry exactly, then inserts one raised V6 pose-3 passing
+drawing per leg: LEFT contact → RIGHT passing → RIGHT contact → LEFT passing →
+LEFT contact. This makes each step span two frame intervals. The support boot
+is mathematically locked to the same tread through each handover, while the
+arms travel from one V12 opposing extreme through the neutral passing pose to
+the other. Built-in image generation supplied two alternative midpoint-arm
+studies, but both reached an endpoint-like extreme too early; they are saved
+as rejected provenance and contribute no candidate pixels. V13 remains
+reversible, unapproved and absent from Final, runtime and production.
 
 ## Review-comments workflow for a later feedback round
 

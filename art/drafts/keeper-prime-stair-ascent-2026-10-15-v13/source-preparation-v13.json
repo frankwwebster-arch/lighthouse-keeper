@@ -1,0 +1,127 @@
+{
+  "schema": "lighthouse-keeper/stair-ascent-source-preparation@13",
+  "status": "one-mid-swing-per-leg-awaiting-review",
+  "approvedContactAuthority": {
+    "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v12/batch-register.json",
+    "sha256": "8582b7bc5a5f9bb50bf289c6e51b7f250bfdb8382b2a724b5131717b569d048a"
+  },
+  "method": "Exact V6 mid-swing/passing drawings between exact V12 contact endpoints; generated arm studies retained but rejected because they reached endpoint-like extremes too early",
+  "rejectedArmSources": [
+    {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v13/sources/generated/right-foot-mid-swing-arm-study.png",
+      "sha256": "ac8c6131e7514041ef8a9df7846aeefc3d2bb00722e15284267d737c3e9f4e29",
+      "reason": "endpoint-like arm extreme is wrong for the neutral passing midpoint"
+    },
+    {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v13/sources/generated/left-foot-mid-swing-arm-study-rejected.png",
+      "sha256": "95f3f02b03821d43bc4a99ac90e0889de17fb3a683f95cb33fa3c6c6c35cc583",
+      "reason": "endpoint-like arm extreme is wrong for the neutral passing midpoint"
+    }
+  ],
+  "frames": [
+    {
+      "movingLeg": "right",
+      "supportLeg": "left",
+      "phase": "right foot mid-swing with opposite arm forward",
+      "legSource": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_right-leg_side-left_f03.png",
+        "sha256": "45698bae98331d769da77e1235bf783ac382c7f3e69ab2169b59374994b07bcf"
+      },
+      "rejectedArmStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v13/sources/generated/right-foot-mid-swing-arm-study.png",
+        "sha256": "ac8c6131e7514041ef8a9df7846aeefc3d2bb00722e15284267d737c3e9f4e29"
+      },
+      "registeredRejectedArmStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v13/evidence/registered-arm-sources/right-foot-mid-swing-arm-source-registered.png",
+        "sha256": "b270ae50794672fba7a7192ad92042eaff305faf54b875edc5c091d3a3461a46",
+        "sourceBoundsExclusive": [
+          85,
+          140,
+          892,
+          1378
+        ],
+        "targetBoundsExclusive": [
+          33,
+          31,
+          180,
+          317
+        ],
+        "scale": 0.2310177705977383,
+        "registeredLeft": 6,
+        "registeredTop": 31
+      },
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v13/drafts/frames/keeper_prime_stair_right-foot-mid-swing_side-left_f01.png",
+        "sha256": "45698bae98331d769da77e1235bf783ac382c7f3e69ab2169b59374994b07bcf"
+      },
+      "supportSole": {
+        "y": 316,
+        "minX": 116,
+        "maxX": 161,
+        "centreX": 138.5
+      },
+      "cell": [
+        256,
+        320
+      ],
+      "density": 8,
+      "edgeAlpha": 0,
+      "byteIdenticalToLegSource": true,
+      "protected": {
+        "entireFrameExactV6PassingPose": true
+      }
+    },
+    {
+      "movingLeg": "left",
+      "supportLeg": "right",
+      "phase": "left foot mid-swing with opposite arm forward",
+      "legSource": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v6/drafts/frames/keeper_prime_stair_left-leg_side-left_f03.png",
+        "sha256": "f8994a407446d6cc5f3bad354b4781bd8f4ed9667d0a32a023bcb328eea5e3fb"
+      },
+      "rejectedArmStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v13/sources/generated/left-foot-mid-swing-arm-study-rejected.png",
+        "sha256": "95f3f02b03821d43bc4a99ac90e0889de17fb3a683f95cb33fa3c6c6c35cc583"
+      },
+      "registeredRejectedArmStudy": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v13/evidence/registered-arm-sources/left-foot-mid-swing-arm-source-registered.png",
+        "sha256": "28ae17a4c4bec3af22c00d97505ed8528419d64c17cf302fb3f349ef42d44e49",
+        "sourceBoundsExclusive": [
+          120,
+          136,
+          905,
+          1369
+        ],
+        "targetBoundsExclusive": [
+          23,
+          31,
+          180,
+          317
+        ],
+        "scale": 0.23195458231954583,
+        "registeredLeft": 22,
+        "registeredTop": 31
+      },
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v13/drafts/frames/keeper_prime_stair_left-foot-mid-swing_side-left_f01.png",
+        "sha256": "f8994a407446d6cc5f3bad354b4781bd8f4ed9667d0a32a023bcb328eea5e3fb"
+      },
+      "supportSole": {
+        "y": 316,
+        "minX": 126,
+        "maxX": 149,
+        "centreX": 137.5
+      },
+      "cell": [
+        256,
+        320
+      ],
+      "density": 8,
+      "edgeAlpha": 0,
+      "byteIdenticalToLegSource": true,
+      "protected": {
+        "entireFrameExactV6PassingPose": true
+      }
+    }
+  ]
+}

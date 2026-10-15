@@ -115,7 +115,7 @@ above the stair, and its nominal arm shift never exceeds 0.875 logical pixels,
 so the arms read as static. Its verifier's non-penetration-only rule was
 insufficient and must not be copied.
 
-The active follow-on is the unapproved
+The accepted geometry/contact foundation is
 `/keeper-review/keeper-prime-stair-ascent-v12/`. It is intentionally a contact
 and arm gate, not a finished climb. It retains fourteen equal risers over the
 exact 60-lp floor pitch, increases tread depth to 7 lp and therefore makes the
@@ -123,8 +123,19 @@ flight 98 lp long inside the reserved 105-lp stair core. Four binding contacts
 alternate RIGHT/LEFT/RIGHT/LEFT; every support sole must touch a real tread,
 the upper sole must meet its next tread within 0.05 lp, and support handover
 drift is capped at 0.07 lp. The two arm silhouettes are visibly opposite.
-Weight-transfer intermediates come only after Frank accepts this gate. Nothing
-is approved or promoted.
+Frank accepted this construction on 15 Oct 2026 with “yes you've got it”. That
+acceptance pins the geometry and contact drawings but does not promote an
+animation to Final or runtime.
+
+The active, unapproved follow-on is
+`/keeper-review/keeper-prime-stair-ascent-v13/`. It adds exactly one raised
+passing drawing per leg, giving contact → passing → opposite contact over two
+frame intervals. Both contacts remain byte-identical V12 frames, both
+intermediates are byte-identical V6 pose-3 frames, each planted support stays
+on the same mathematical tread, and the arms pass through the neutral V6 pose
+between opposite V12 counter-positions. Generated midpoint-arm studies were
+rejected because they reached the next arm extreme too early; retain them as
+provenance only. Nothing is promoted or wired.
 
 ## Lift entry alignment correction (14 Oct 2026)
 
