@@ -4,30 +4,35 @@ Working split: Codex owns art, design and layout; Claude owns game logic and wir
 
 ## Frank: flat-cutaway projection authority (16 Oct 2026)
 
-For the next kitchen-basic-assets version, read
+For the current kitchen-basic-assets review and every later version, read
 `docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md`. It supersedes the
 earlier calculated 4% room / 1% furnishing convergence proposal for kitchen
 and standard-room asset authoring. Keep the camera straight on, asset and
 Keeper scale constant, geometry parallel, the visible floor cue at 5 lp, and
-top surfaces shallow. Existing Kitchen V1–V4 and Oven Approach V7 remain
-historical review evidence; create a new version and promote nothing without
+top surfaces shallow. Kitchen V1–V4 and Oven Approach V7 remain historical
+review evidence; V5 is the current unapproved draft. Promote nothing without
 Frank's explicit approval.
 
-## Claude: kitchen basic assets to draft (final, 16 Oct 2026)
+## Kitchen basic assets V5 review (16 Oct 2026)
 
-Frank wants you to draft the tier-1 kitchen furniture as the test case for
-snapping, moving and growing furniture. Exact scope, sizes, states and
-hand-back: `docs/CLAUDE_TO_CODEX_KITCHEN_BASIC_ASSETS_2026-10-15.md`.
+Frank asked Codex to draft the tier-1 kitchen furniture as the test case for
+snapping, moving and growing furniture. Exact scope, sizes and states are in
+`docs/CLAUDE_TO_CODEX_KITCHEN_BASIC_ASSETS_2026-10-15.md`; the authoritative
+projection/layering contract is now
+`docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md`.
 In short: every floor item fills whole 21-lp bays (two steps). The room
 starts with a 9-bay kitchen and each stretch adds one bay, up to 12. Nothing
 overlaps: the bin has its own bay, left of the fridge.
 The kettle, toaster and mixer each sit on their own one-bay counter unit.
-The cleaning cupboard is always last, its door in the far wall at 90° to
-the view, and takes no bay. The table must not block the walk to it. To
-confirm, not work around: whether the oven clips read with a 19-lp door,
-and whether the end-wall cupboard door hides him. Yours to decide: Frank
-prefers the room door to open outward into the stairwell, freeing two bays
-per room (brief §5.3). Drafts only; approve or promote nothing.
+The cleaning cupboard is always last, takes no bay and is reached through the
+right side wall. Its closed leaf is edge-on; its right-hinged open leaf extends
+left as a rectangular foreground occluder. The table must not block the walk
+to it. V5 is the current review-only draft at
+`/keeper-review/kitchen-basic-assets-v5/`; its measured hand-back is
+`docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V5_2026-10-16.md`. It confirms that
+the existing oven clips read with the 19-lp body/door and that the 34×52-lp
+open cupboard leaf hides the Keeper and tool swaps. Nothing is approved,
+promoted or wired.
 
 ## Codex movement-foundation response (14 Oct 2026)
 
@@ -65,15 +70,15 @@ endpoint. A toggle shows the present approved root schedule finishing 1 lp
 short. This is still review-only: no oven art, root motion or production state
 has been approved or changed.
 
-Oven Approach V7 is retained at
-`/keeper-review/keeper-object-approach-oven-v7/` as historical
-placement/perspective evidence. It preserves every V1 Keeper frame and route
-value, but its raised 30-lp proxy, 42-lp notional room depth, 96% rear-wall
-scale and 99% furnishing rear-face scale are superseded for kitchen and
-standard-room authoring. Use
-`docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md`: constant
-Keeper/asset scale, parallel geometry, no vanishing point or runtime depth
-scaling, a 5-lp floor cue and the real object/contact dimensions.
+Oven Approach V7 remains historical placement/perspective evidence at
+`/keeper-review/keeper-object-approach-oven-v7/`. Its 96% rear-wall and 99%
+rear-face scaling proposal is explicitly superseded for kitchen and standard
+room authoring by `flat-cutaway-v1`. The current contract keeps the camera
+straight-on, all functional fronts rectangular, rear edges at 100%, the
+Keeper and every asset at constant scale, and uses a 5-lp horizontal floor
+band with no raised front lip. It uses the real 19-lp cooker/hob datum rather
+than lifting or scaling the historical 30-lp proxy. See
+`docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md`.
 
 Everything remains a reversible draft awaiting Frank's review. Do not change
 Claude's route tables, runtime geometry, Keeper art or approval records yet.

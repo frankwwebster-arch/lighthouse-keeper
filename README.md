@@ -26,14 +26,18 @@ approved walk/stop/turn-away pixels under the candidate 252-ku route. Its
 comparison toggle proves that the current root schedule stops 1 lp short from
 the same origin. The proxy is not oven artwork and nothing is promoted.
 `/keeper-review/keeper-object-approach-oven-v7/` and its calculated 4% room /
-1% furnishing convergence are retained as historical placement evidence, not
-the current kitchen projection authority. The active authoring contract is a
-flat doll's-house cutaway: straight-on camera, constant Keeper and asset scale,
-parallel geometry, no runtime depth scaling, a restrained 5-lp floor cue and
-only shallow orthographic top surfaces. This also resolves the oversized oven
-proxy by using the real 19-lp cooker/hob datum rather than lifting or scaling a
-30-lp proxy. See
-[`docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md`](docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md).
+1% furnishing convergence remain historical evidence, not the current kitchen
+projection authority. The active
+[`flat-cutaway-v1`](docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md)
+contract uses a straight-on camera, rectangular functional fronts, constant
+Keeper/object scale, no runtime depth scaling, an exact 5-lp horizontal floor
+band and the real 19-lp cooker/hob datum. The current unapproved kitchen draft
+is `/keeper-review/kitchen-basic-assets-v5/`. It shows the flat modular 6–12-bay
+shell, all tier-1 object states, the 193-lp starting kitchen, the 256-lp
+reservation outline, rear-facing table seating and the right-side-wall
+cupboard lifecycle. Its measured hand-back is
+[`docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V5_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V5_2026-10-16.md).
+No V5 asset is approved, promoted or wired into the live game.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:
