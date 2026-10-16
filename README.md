@@ -2,6 +2,17 @@
 
 A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by typing or tapping objects, then keep him happy through the day. The playable cutaway currently has a kitchen, living room, bedroom with en suite, and lamp room.
 
+The current Keeper-art review gate is the six-direction smooth seated
+foundation at `/keeper-review/keeper-prime-seated-six-view-v1/`: front, back,
+both profiles and both rear-three-quarter angles. Every endpoint shares the
+32 × 40 logical cell, 11-lp seat height and registered floor anchor. It is a
+reversible draft only; after visual approval it will become the exact target
+for the stand ↔ sit transition clips. Stair Descent V2 is approved with its
+slight overstride accepted; the future finished staircase must retain its
+locked geometry while adding two newel posts, a foreground balustrade and a
+continuous rail. The approval record is
+[`docs/review/keeper-prime-stair-descent-v2-approval-2026-10-16.json`](docs/review/keeper-prime-stair-descent-v2-approval-2026-10-16.json).
+
 The current runtime still uses the first-generation room plates. The agreed
 replacement standard-room geometry is **172 × 56 logical pixels**, with a
 46-pixel doorway exclusion and twelve 10.5-pixel furnishing/interaction
@@ -302,16 +313,16 @@ This means a complete upward room-to-room flow is now reviewable for both
 stairs (approved Stair Transition V6) and ladder (approved V5 Keeper motion;
 V6 door presentation awaiting review). Stair Descent V1 is retained as rejected
 provenance: reversing and mirroring the ascent made the visible left leg remain
-airborne while the right repeatedly took each step. Its replacement is the
-unapproved, reversible Stair Descent V2 candidate at
-`/keeper-review/keeper-prime-stair-descent-v2/`. V2 adds four descent-specific
-poses and repeats the explicit gait RIGHT contact → LEFT passing → LEFT contact
-→ RIGHT passing, giving exactly seven contacts per leg over the unchanged
-14-riser flight. The remaining core transition families are: approval or
-correction of V2; downward ladder travel and dismount/exit;
-complete Prime lift call/enter and lift-exit/walk routes;
-Prime stand↔sit joins for side/front/back chair approaches; and any asymmetric
-left/right door or interaction reach that cannot be certified as a safe mirror.
+airborne while the right repeatedly took each step. Frank approved its
+replacement Stair Descent V2 at
+`/keeper-review/keeper-prime-stair-descent-v2/`, accepting the slight visible
+overstride. V2 adds four descent-specific poses and repeats the explicit gait
+RIGHT contact → LEFT passing → LEFT contact → RIGHT passing, giving exactly
+seven contacts per leg over the unchanged 14-riser flight. The remaining core
+transition families are: the six-view seated endpoint gate and subsequent
+stand↔sit joins; downward ladder travel and dismount/exit; complete Prime lift
+call/enter and lift-exit/walk routes; and any asymmetric left/right door or
+interaction reach that cannot be certified as a safe mirror.
 The shared open-door room emergence/return handoff also needs a deterministic
 route, but reuses standard walking and occlusion rather than new costume art.
 

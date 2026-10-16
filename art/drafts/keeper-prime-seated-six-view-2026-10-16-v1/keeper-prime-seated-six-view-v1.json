@@ -1,0 +1,123 @@
+{
+  "schema": "lighthouse-keeper/seated-foundation@1",
+  "set": "keeper-prime-seated-six-view-v1",
+  "status": "draft-awaiting-frank",
+  "cell": {
+    "logical": [
+      32,
+      40
+    ],
+    "pixels": [
+      256,
+      320
+    ],
+    "density": 8,
+    "anchorLp": [
+      16,
+      40
+    ]
+  },
+  "sharedDatums": {
+    "seatPointLp": [
+      16,
+      29
+    ],
+    "seatHeightAboveFloorLp": 11,
+    "floorOpaqueMaximumY": 315,
+    "transparentSafetyGutterMinimumPx": 4
+  },
+  "directions": [
+    {
+      "id": "front",
+      "pose": "sitting-front",
+      "image": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-front_f01.png",
+      "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+      "registeredBounds": {
+        "minX": 57,
+        "minY": 52,
+        "maxX": 199,
+        "maxY": 315,
+        "width": 143,
+        "height": 264
+      },
+      "mirrorOf": null
+    },
+    {
+      "id": "rear-left",
+      "pose": "sitting-rear-left",
+      "image": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-rear-left_f01.png",
+      "sha256": "5bccfa3babbd0c09673aa0472d3fbda4476d73082443765f6220505920bca0d0",
+      "registeredBounds": {
+        "minX": 50,
+        "minY": 52,
+        "maxX": 205,
+        "maxY": 315,
+        "width": 156,
+        "height": 264
+      },
+      "mirrorOf": "rear-right"
+    },
+    {
+      "id": "side-left",
+      "pose": "sitting-side-left",
+      "image": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-side-left_f01.png",
+      "sha256": "d0c394162ff6e0712cec46a45a0f7931babfa3705fdb782f40c803e7f28f7775",
+      "registeredBounds": {
+        "minX": 51,
+        "minY": 52,
+        "maxX": 204,
+        "maxY": 315,
+        "width": 154,
+        "height": 264
+      },
+      "mirrorOf": "side-right"
+    },
+    {
+      "id": "back",
+      "pose": "sitting-back",
+      "image": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-back_f01.png",
+      "sha256": "28a879bcee43c6d06330d05fb3cd74b4098b2ccce38ce41d15117f5fb0be5167",
+      "registeredBounds": {
+        "minX": 53,
+        "minY": 52,
+        "maxX": 202,
+        "maxY": 315,
+        "width": 150,
+        "height": 264
+      },
+      "mirrorOf": null
+    },
+    {
+      "id": "side-right",
+      "pose": "sitting-side-right",
+      "image": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-side-right_f01.png",
+      "sha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b",
+      "registeredBounds": {
+        "minX": 51,
+        "minY": 52,
+        "maxX": 204,
+        "maxY": 315,
+        "width": 154,
+        "height": 264
+      },
+      "mirrorOf": null
+    },
+    {
+      "id": "rear-right",
+      "pose": "sitting-rear-right",
+      "image": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-rear-right_f01.png",
+      "sha256": "c2d3734254cadaf760893110d454f5913b0d4d69d16223682855590e4e15cd72",
+      "registeredBounds": {
+        "minX": 50,
+        "minY": 52,
+        "maxX": 205,
+        "maxY": 315,
+        "width": 156,
+        "height": 264
+      },
+      "mirrorOf": null
+    }
+  ],
+  "interpretation": "angled views are rear-left and rear-right three-quarter seats for screen/furniture-facing activities",
+  "futureMotionGate": "After endpoint approval, build standing-to-sitting and sitting-to-standing clips that land byte-exactly on these endpoints; action loops inherit the same first/last pose."
+}

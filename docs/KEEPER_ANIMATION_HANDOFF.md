@@ -1721,6 +1721,36 @@ without modifying pixels, roots or geometry. Run
 `npm run verify:keeper-prime-ladder-transitions-v4-approval`; approval itself
 changes no Final, runtime or production asset.
 
+## Stair Descent V2 approval and seated foundation (16 October 2026)
+
+Frank approved the exact Stair Descent V2 review route, accepting its slight
+visible overstride because the future foreground stair treatment will help
+mask the feet. Preserve the complete candidate and its hashes. The finished
+staircase remains a separate unapproved art task: it requires two newel posts,
+a foreground balustrade and a continuous handrail, but may not change the
+stored fourteen-riser, 7-lp-tread, 98-by-60-lp geometry. The decision is pinned
+at `docs/review/keeper-prime-stair-descent-v2-approval-2026-10-16.json`. No
+Final, runtime or production promotion was performed.
+
+The next gate is `/keeper-review/keeper-prime-seated-six-view-v1/`. It defines
+six new smooth Prime Keeper seated endpoints: direct front, direct back,
+side-left/right and rear-left/right. “At an angle either side” means the rear
+three-quarter pair used for TV, gaming and furniture-facing activity. All six
+use a 32 × 40 logical cell at density 8, `[16,40]` floor anchor, `[16,29]` seat
+point and 11-lp seat height. Their registered opaque bounds share y=52…315;
+the left profile and rear-left are exact completed-cell mirrors of the right
+views. The character is isolated from all furniture. Prime standing art is the
+identity/rendering authority and the old seated neutrals are pose mechanics
+only.
+
+Do not build all motion blindly from the historical strips. After Frank
+approves these endpoints, author the actual transition clips in three small
+gates: side right plus exact mirrored left; front and back; then the rear-angle
+pair. Each begins on the relevant approved standing authority, follows the
+approved planted-ankle sit/stand rig, and lands byte-exactly on this seated
+endpoint. Timing remains a review-tool parameter. No endpoint in this pack is
+yet approved or promoted.
+
 ## Review-comments workflow for a later feedback round
 
 1. Do not process another review export until the beard evidence gate is

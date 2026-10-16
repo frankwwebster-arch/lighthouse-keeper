@@ -1,0 +1,23 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-16",
+  "reviewedBy": "Frank",
+  "candidate": "keeper-prime-stair-descent-2026-10-16-v2",
+  "decision": "approved-with-accepted-visual-limitation",
+  "wording": "I'm fine with it, so long as we get to a more fully designed staircase in time, which will hide the motion of his feet (which is a bit of an overstride, but I can live with it as I think it's very challenging to get this right.",
+  "acceptedLimitation": "The stair gait has a slight visible overstride.",
+  "futureSceneryContract": {
+    "required": true,
+    "newelPosts": 2,
+    "balustrade": "foreground balustrade may partly obscure the feet",
+    "handrail": "continuous rail",
+    "geometryMustRemain": "the stored fourteen-riser, 7-lp-tread, 98-by-60-lp staircase profile"
+  },
+  "approvalBoundary": {
+    "v2ArtworkAndRouteApproved": true,
+    "acceptedOverstrideMayBeRedrawnWithoutNewInstruction": false,
+    "finalStaircaseSceneryApproved": false,
+    "runtimePromotionPerformed": false,
+    "productionPromotionPerformed": false
+  }
+}

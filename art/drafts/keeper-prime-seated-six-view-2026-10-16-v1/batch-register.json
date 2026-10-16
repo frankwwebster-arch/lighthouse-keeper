@@ -1,0 +1,297 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-seated-six-view-2026-10-16-v1",
+  "status": "draft-seated-foundation-awaiting-frank",
+  "purpose": "Establish six smooth Prime Keeper seated endpoint authorities before animating stand-to-sit and sit-to-stand transitions.",
+  "stairDescentApproval": {
+    "wording": "I'm fine with it",
+    "approvedCandidate": "keeper-prime-stair-descent-2026-10-16-v2",
+    "acceptedLimitation": "slight visible overstride",
+    "futureSceneryMitigation": "two newel posts, foreground balustrade and continuous handrail may partly mask feet without changing stored tread/riser geometry"
+  },
+  "authorities": {
+    "front": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "immutable": true
+    },
+    "sideRight": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f01.png",
+      "sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+      "immutable": true
+    },
+    "rearRight": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f05.png",
+      "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "immutable": true
+    },
+    "back": {
+      "file": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+      "sha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86",
+      "immutable": true
+    }
+  },
+  "historicalSeatedReferences": {
+    "front": {
+      "file": "art/raw/keeper-first-batch/keeper_neutral_sitting-front_f1.png",
+      "sha256": "e0b3332e5bafd81620c6de3fa65cde929d23f550f00b700ec02d363e6770b74c",
+      "role": "pose-and-seat-geometry-only",
+      "immutable": true
+    },
+    "sideRight": {
+      "file": "art/raw/keeper-first-batch/keeper_neutral_sitting-side-right_f1.png",
+      "sha256": "55032f2d7e08a1c3cab44018fda1a0c8b718bad810a139cef125cf3721e589f2",
+      "role": "pose-and-seat-geometry-only",
+      "immutable": true
+    },
+    "rearRight": {
+      "file": "art/raw/keeper-first-batch/keeper_neutral_sitting-rear-right_f1.png",
+      "sha256": "4d642766f5324c35bb0fbcfc295a2f2d5c0aeb0448aa4c7cdaf72cedf89f0c4a",
+      "role": "pose-and-seat-geometry-only",
+      "immutable": true
+    },
+    "back": {
+      "file": "art/raw/keeper-first-batch/keeper_neutral_sitting-back_f1.png",
+      "sha256": "f52d921daae897e343f5d3f0ed8dd22567e9076e8196546268e1bcd9e904b985",
+      "role": "pose-and-seat-geometry-only",
+      "immutable": true
+    }
+  },
+  "generatedSources": {
+    "front": {
+      "file": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/sources/generated/keeper-prime-seated-front-generated.png",
+      "sha256": "1dd31b37ad32c1554093508a727bc896e7246c074d6b7537ece698915d4690b8",
+      "role": "built-in-image-edit-output"
+    },
+    "sideRight": {
+      "file": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/sources/generated/keeper-prime-seated-side-right-generated.png",
+      "sha256": "5b9e2afe60f34ff1081385fb51a9b00b9c76ac70624573f5b7c7ca2b2a7d6b7c",
+      "role": "built-in-image-edit-output"
+    },
+    "rearRight": {
+      "file": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/sources/generated/keeper-prime-seated-rear-right-generated.png",
+      "sha256": "8fc291d7695b8a07b4ee11a6958660064ea81291c20383501a3c57bcb77afb1a",
+      "role": "built-in-image-edit-output"
+    },
+    "back": {
+      "file": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/sources/generated/keeper-prime-seated-back-generated.png",
+      "sha256": "43f70c11793f323bbf7a602e17db39c13ca63db81e2dcc693ee2fe65d8053c11",
+      "role": "built-in-image-edit-output"
+    }
+  },
+  "geometry": {
+    "file": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/keeper-prime-seated-six-view-v1.json",
+    "sha256": "6b186a653dd125ca8bca2ab908829811786a238c5a4ce14e43f85b0a447f869c"
+  },
+  "evidence": {
+    "contactSheet": {
+      "file": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/evidence/keeper-prime-seated-six-view-v1.png",
+      "sha256": "757cb882045bbfff0abd7bd1d7289fb8aecfdeba235a7dd6aeb7b7dcaddea4ab"
+    }
+  },
+  "frames": [
+    {
+      "id": "front",
+      "pose": "sitting-front",
+      "image": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-front_f01.png",
+      "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+      "registeredBounds": {
+        "minX": 57,
+        "minY": 52,
+        "maxX": 199,
+        "maxY": 315,
+        "width": 143,
+        "height": 264
+      },
+      "mirrorOf": null
+    },
+    {
+      "id": "rear-left",
+      "pose": "sitting-rear-left",
+      "image": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-rear-left_f01.png",
+      "sha256": "5bccfa3babbd0c09673aa0472d3fbda4476d73082443765f6220505920bca0d0",
+      "registeredBounds": {
+        "minX": 50,
+        "minY": 52,
+        "maxX": 205,
+        "maxY": 315,
+        "width": 156,
+        "height": 264
+      },
+      "mirrorOf": "rear-right"
+    },
+    {
+      "id": "side-left",
+      "pose": "sitting-side-left",
+      "image": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-side-left_f01.png",
+      "sha256": "d0c394162ff6e0712cec46a45a0f7931babfa3705fdb782f40c803e7f28f7775",
+      "registeredBounds": {
+        "minX": 51,
+        "minY": 52,
+        "maxX": 204,
+        "maxY": 315,
+        "width": 154,
+        "height": 264
+      },
+      "mirrorOf": "side-right"
+    },
+    {
+      "id": "back",
+      "pose": "sitting-back",
+      "image": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-back_f01.png",
+      "sha256": "28a879bcee43c6d06330d05fb3cd74b4098b2ccce38ce41d15117f5fb0be5167",
+      "registeredBounds": {
+        "minX": 53,
+        "minY": 52,
+        "maxX": 202,
+        "maxY": 315,
+        "width": 150,
+        "height": 264
+      },
+      "mirrorOf": null
+    },
+    {
+      "id": "side-right",
+      "pose": "sitting-side-right",
+      "image": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-side-right_f01.png",
+      "sha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b",
+      "registeredBounds": {
+        "minX": 51,
+        "minY": 52,
+        "maxX": 204,
+        "maxY": 315,
+        "width": 154,
+        "height": 264
+      },
+      "mirrorOf": null
+    },
+    {
+      "id": "rear-right",
+      "pose": "sitting-rear-right",
+      "image": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-rear-right_f01.png",
+      "sha256": "c2d3734254cadaf760893110d454f5913b0d4d69d16223682855590e4e15cd72",
+      "registeredBounds": {
+        "minX": 50,
+        "minY": 52,
+        "maxX": 205,
+        "maxY": 315,
+        "width": 156,
+        "height": 264
+      },
+      "mirrorOf": null
+    }
+  ],
+  "publishedAssets": [
+    {
+      "role": "seat-front",
+      "source": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-front_f01.png",
+      "sourceSha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+      "url": "/keeper-review/keeper-prime-seated-six-view-v1/assets/seat-front-501151a426f81251.png"
+    },
+    {
+      "role": "seat-rear-left",
+      "source": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-rear-left_f01.png",
+      "sourceSha256": "5bccfa3babbd0c09673aa0472d3fbda4476d73082443765f6220505920bca0d0",
+      "url": "/keeper-review/keeper-prime-seated-six-view-v1/assets/seat-rear-left-5bccfa3babbd0c09.png"
+    },
+    {
+      "role": "seat-side-left",
+      "source": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-side-left_f01.png",
+      "sourceSha256": "d0c394162ff6e0712cec46a45a0f7931babfa3705fdb782f40c803e7f28f7775",
+      "url": "/keeper-review/keeper-prime-seated-six-view-v1/assets/seat-side-left-d0c394162ff6e071.png"
+    },
+    {
+      "role": "seat-back",
+      "source": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-back_f01.png",
+      "sourceSha256": "28a879bcee43c6d06330d05fb3cd74b4098b2ccce38ce41d15117f5fb0be5167",
+      "url": "/keeper-review/keeper-prime-seated-six-view-v1/assets/seat-back-28a879bcee43c6d0.png"
+    },
+    {
+      "role": "seat-side-right",
+      "source": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-side-right_f01.png",
+      "sourceSha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b",
+      "url": "/keeper-review/keeper-prime-seated-six-view-v1/assets/seat-side-right-8226a15137fc6973.png"
+    },
+    {
+      "role": "seat-rear-right",
+      "source": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-rear-right_f01.png",
+      "sourceSha256": "c2d3734254cadaf760893110d454f5913b0d4d69d16223682855590e4e15cd72",
+      "url": "/keeper-review/keeper-prime-seated-six-view-v1/assets/seat-rear-right-c2d3734254cadaf7.png"
+    },
+    {
+      "role": "standing-front",
+      "source": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+      "sourceSha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "url": "/keeper-review/keeper-prime-seated-six-view-v1/assets/standing-front-a9a5c37fe7222199.png"
+    },
+    {
+      "role": "standing-sideRight",
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f01.png",
+      "sourceSha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+      "url": "/keeper-review/keeper-prime-seated-six-view-v1/assets/standing-sideRight-c097d78aac2d2c52.png"
+    },
+    {
+      "role": "standing-rearRight",
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f05.png",
+      "sourceSha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "url": "/keeper-review/keeper-prime-seated-six-view-v1/assets/standing-rearRight-f827ac61f45aaaa4.png"
+    },
+    {
+      "role": "standing-back",
+      "source": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+      "sourceSha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86",
+      "url": "/keeper-review/keeper-prime-seated-six-view-v1/assets/standing-back-d1d409f098a18883.png"
+    },
+    {
+      "role": "legacy-seat-front",
+      "source": "art/raw/keeper-first-batch/keeper_neutral_sitting-front_f1.png",
+      "sourceSha256": "e0b3332e5bafd81620c6de3fa65cde929d23f550f00b700ec02d363e6770b74c",
+      "url": "/keeper-review/keeper-prime-seated-six-view-v1/assets/legacy-seat-front-e0b3332e5bafd816.png"
+    },
+    {
+      "role": "legacy-seat-sideRight",
+      "source": "art/raw/keeper-first-batch/keeper_neutral_sitting-side-right_f1.png",
+      "sourceSha256": "55032f2d7e08a1c3cab44018fda1a0c8b718bad810a139cef125cf3721e589f2",
+      "url": "/keeper-review/keeper-prime-seated-six-view-v1/assets/legacy-seat-sideRight-55032f2d7e08a1c3.png"
+    },
+    {
+      "role": "legacy-seat-rearRight",
+      "source": "art/raw/keeper-first-batch/keeper_neutral_sitting-rear-right_f1.png",
+      "sourceSha256": "4d642766f5324c35bb0fbcfc295a2f2d5c0aeb0448aa4c7cdaf72cedf89f0c4a",
+      "url": "/keeper-review/keeper-prime-seated-six-view-v1/assets/legacy-seat-rearRight-4d642766f5324c35.png"
+    },
+    {
+      "role": "legacy-seat-back",
+      "source": "art/raw/keeper-first-batch/keeper_neutral_sitting-back_f1.png",
+      "sourceSha256": "f52d921daae897e343f5d3f0ed8dd22567e9076e8196546268e1bcd9e904b985",
+      "url": "/keeper-review/keeper-prime-seated-six-view-v1/assets/legacy-seat-back-f52d921daae897e3.png"
+    }
+  ],
+  "deterministicRegistration": {
+    "sourceAlphaThresholdRemovedAtOrBelow": 16,
+    "resampling": "LANCZOS",
+    "registeredCellPixels": [
+      256,
+      320
+    ],
+    "targetVisibleHeightPixels": 264,
+    "registeredBottomPixel": 315,
+    "leftViews": "exact horizontal mirrors after registration"
+  },
+  "boundaries": {
+    "canonicalRawChanged": false,
+    "approvedPrimeAuthoritiesChanged": false,
+    "historicalDraftsChanged": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false,
+    "endpointApprovalGranted": false,
+    "transitionAnimationApprovalGranted": false,
+    "promotionAllowed": false
+  },
+  "rollback": "Delete only art/drafts/keeper-prime-seated-six-view-2026-10-16-v1 and public/keeper-review/keeper-prime-seated-six-view-v1; all authorities and earlier drafts remain untouched.",
+  "publicPage": {
+    "file": "public/keeper-review/keeper-prime-seated-six-view-v1/index.html",
+    "sha256": "8dd951386854ae85c0896eb36385cc9e19a7aae6099ccc22ffd3af6283322d69"
+  }
+}

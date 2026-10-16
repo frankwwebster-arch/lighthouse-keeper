@@ -2,7 +2,26 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
-## Stair descent V2 review candidate (16 Oct 2026)
+## Seated Prime foundation V1 (16 Oct 2026)
+
+Frank approved Stair Descent V2 with its slight overstride accepted. Preserve
+the exact V2 art and route. The later finished staircase must add two newel
+posts, a foreground balustrade and a continuous rail that can partly mask the
+feet, but it must retain the stored fourteen-riser, 7-lp-tread, 98-by-60-lp
+geometry. The immutable decision is
+`docs/review/keeper-prime-stair-descent-v2-approval-2026-10-16.json`.
+
+The next review gate is the six-direction smooth seated foundation at
+`/keeper-review/keeper-prime-seated-six-view-v1/`. It contains direct front,
+direct back, side-left/right and rear-left/right endpoints. All are 256 × 320
+registered cells with one `[16,40]` anchor, one `[16,29]` seat point and an
+11-lp seat height. The left pair are exact mirrors after registration. The
+approved standing views supply identity and rendering; first-generation seats
+supply pose mechanics only. Do not build or promote the transition strips
+until Frank approves these endpoints. Full hashes and next-gate instructions
+are in `art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/`.
+
+## Stair descent V2 approval (16 Oct 2026)
 
 V1 is rejected provenance: reverse-order ascent pixels made the visible left
 leg remain airborne while the right took every descending step. Do not promote
@@ -13,8 +32,9 @@ LEFT passing → LEFT contact → RIGHT passing, producing exactly seven contact
 per leg. The approved route roots, turn, walk, door action and independently
 stored staircase geometry are unchanged. Raw and registered artwork hashes,
 prompts, normalization data and checks are in
-`art/drafts/keeper-prime-stair-descent-2026-10-16-v2/`. Await Frank's visual
-approval before any promotion or runtime wiring.
+`art/drafts/keeper-prime-stair-descent-2026-10-16-v2/`. Frank approved this
+exact candidate with its slight overstride accepted. This is an art/route
+approval only: no Final, runtime or production promotion has occurred.
 
 The staircase used by the ascent and descent reviews is no longer implicit in
 their page code. Its locked geometry and preserved test-profile SVG are in

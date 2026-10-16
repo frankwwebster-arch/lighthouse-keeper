@@ -1,0 +1,24 @@
+{
+  "schema": "lighthouse-keeper/sprite-sidecar@draft-1",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "fps": 0,
+  "density": 8,
+  "anchor": [
+    16,
+    40
+  ],
+  "seatPoint": [
+    16,
+    29
+  ],
+  "seatHeightLp": 11,
+  "floorBottomPixel": 315,
+  "startPose": "sitting-rear-left",
+  "endPose": "sitting-rear-left",
+  "pose": "sitting-rear-left",
+  "assetRole": "draft-neutral-endpoint",
+  "mirrorOf": "sitting-rear-right",
+  "productionPromotionAllowed": false
+}
