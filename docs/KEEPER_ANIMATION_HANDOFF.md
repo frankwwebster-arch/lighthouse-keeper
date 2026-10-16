@@ -6,6 +6,15 @@ Codex task should be able to continue from here without relying on the old chat.
 
 ## Current core-transition checkpoint — 16 October 2026
 
+The staircase itself is now preserved independently of any review-page CSS at
+`art/drafts/keeper-staircase-geometry-2026-10-16-v1/`. Its geometry-only
+authority records all fourteen tread rectangles, the exact 7-lp tread run,
+30/7-lp riser rise, 98 × 60-lp flight, 60-lp floor pitch, 105-lp reserved core,
+landing roots and Keeper contact centres. The included SVG stores the plain
+test staircase as construction evidence, not final scenery. Later staircase
+art must add two newels, foreground balusters and a continuous rail while the
+geometry verifier prevents any size, tread, riser, landing or contact drift.
+
 The first complete downward stair route is now a reversible review candidate at
 `/keeper-review/keeper-prime-stair-descent-v1/`. It starts walking while hidden
 behind the upper door, stops on the registered landing, turns

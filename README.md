@@ -312,6 +312,12 @@ left/right door or interaction reach that cannot be certified as a safe mirror.
 The shared open-door room emergence/return handoff also needs a deterministic
 route, but reuses standard walking and occlusion rather than new costume art.
 
+The staircase construction geometry is stored independently at
+`art/drafts/keeper-staircase-geometry-2026-10-16-v1/`. Its JSON is the source
+of truth for the 14-riser, 7-lp-tread, 98 × 60-lp flight and 105-lp reserved
+core; the accompanying SVG preserves the plain test staircase. Future rail,
+balustrade and newel artwork must conform to it rather than resizing the flight.
+
 ## Run it
 ```
 npm install

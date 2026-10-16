@@ -14,6 +14,13 @@ documented in
 `art/drafts/keeper-prime-stair-descent-2026-10-16-v1/HANDOFF.md`; await Frank's
 visual approval before any promotion or runtime wiring.
 
+The staircase used by the ascent and descent reviews is no longer implicit in
+their page code. Its locked geometry and preserved test-profile SVG are in
+`art/drafts/keeper-staircase-geometry-2026-10-16-v1/`. Reuse that JSON for all
+future stair scenery and collision/layout work. The grey profile is evidence,
+not final art; the future two-newel, balustrade and handrail treatment may add
+foreground occlusion but may not change any locked measurement or contact.
+
 ## Frank: rejected Kitchen V6 and replacement brief (16 Oct 2026)
 
 The first `flat-elevation-v2` Kitchen V6 was rejected and removed in full. It

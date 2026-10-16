@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="500" viewBox="0 0 160 125" role="img" aria-labelledby="title desc">
+  <title id="title">Keeper staircase test geometry V1</title>
+  <desc id="desc">The preserved fourteen-riser, seven-logical-pixel-tread staircase used to approve Keeper ascent and build the first descent candidate.</desc>
+  <rect width="160" height="125" fill="#122b37"/>
+  <g id="rear-stair-structure" fill="#536775" stroke="#d0dee6" stroke-width="0.5">
+    <rect x="116" y="105" width="44" height="20"/>
+    <rect x="0" y="45" width="18" height="80"/>
+    <rect x="109" y="100.71428571428572" width="7" height="24.285714285714285"/>
+    <rect x="102" y="96.42857142857143" width="7" height="28.57142857142857"/>
+    <rect x="95" y="92.14285714285714" width="7" height="32.85714285714286"/>
+    <rect x="88" y="87.85714285714286" width="7" height="37.14285714285714"/>
+    <rect x="81" y="83.57142857142857" width="7" height="41.42857142857143"/>
+    <rect x="74" y="79.28571428571428" width="7" height="45.714285714285715"/>
+    <rect x="67" y="75" width="7" height="50"/>
+    <rect x="60" y="70.71428571428572" width="7" height="54.285714285714285"/>
+    <rect x="53" y="66.42857142857143" width="7" height="58.57142857142857"/>
+    <rect x="46" y="62.142857142857146" width="7" height="62.857142857142854"/>
+    <rect x="39" y="57.85714285714286" width="7" height="67.14285714285714"/>
+    <rect x="32" y="53.57142857142857" width="7" height="71.42857142857143"/>
+    <rect x="25" y="49.28571428571428" width="7" height="75.71428571428572"/>
+    <rect x="18" y="45" width="7" height="80"/>
+  </g>
+  <g id="datums" fill="none" stroke-width="0.35" stroke-dasharray="1 1">
+    <path d="M0 105H160" stroke="#75e6a7"/>
+    <path d="M0 45H160" stroke="#75e6a7"/>
+    <path d="M11 118V40M116 118V40" stroke="#ffe06a"/>
+  </g>
+  <g id="future-foreground-scenery-envelope" fill="none" stroke="#ffbd72" stroke-width="0.6" stroke-dasharray="2 1" opacity="0.9">
+    <circle cx="113" cy="95" r="2.5"/>
+    <circle cx="18" cy="35" r="2.5"/>
+    <path d="M113 92.5L18 32.5"/>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="3" fill="#eef7fa">
+    <text x="2" y="5">Stored test geometry — not final staircase artwork</text>
+    <text x="2" y="9">14 risers · 7 lp tread · 30/7 lp rise · 98 × 60 lp flight · 105 lp reserved core</text>
+  </g>
+</svg>

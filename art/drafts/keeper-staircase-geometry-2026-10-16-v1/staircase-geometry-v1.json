@@ -1,0 +1,100 @@
+{
+  "schema": "lighthouse-keeper/staircase-geometry@1",
+  "id": "keeper-staircase-geometry-v1",
+  "status": "approved-geometry-only-scenery-art-pending",
+  "units": "logical-pixels",
+  "coordinateSystem": {
+    "origin": "lower-left of 160-by-125 circulation test stage",
+    "xPositive": "right",
+    "yPositive": "up",
+    "stageWidthLp": 160,
+    "stageHeightLp": 125
+  },
+  "floorPitch": {
+    "lowerFinishedFloorYLp": 20,
+    "upperFinishedFloorYLp": 80,
+    "finishedFloorPitchLp": 60
+  },
+  "flight": {
+    "directionShown": "bottom-right to top-left",
+    "stairBaseRightXLp": 116,
+    "lowerFloorSupportCentreXLp": 119.5,
+    "upperLandingRootXLp": 14.5,
+    "risers": 14,
+    "treadRunLp": 7,
+    "riserRise": {
+      "numeratorLp": 30,
+      "denominator": 7,
+      "decimalLp": 4.285714285714286
+    },
+    "flightRunLp": 98,
+    "flightRiseLp": 60,
+    "reservedCoreRunLp": 105,
+    "upperLandingClearanceLp": 7,
+    "slopeRiseOverRun": 0.6122448979591837
+  },
+  "landings": {
+    "lower": {
+      "leftXLp": 116,
+      "rightXLp": 160,
+      "finishedFloorYLp": 20
+    },
+    "upper": {
+      "leftXLp": 0,
+      "rightXLp": 18,
+      "finishedFloorYLp": 80
+    }
+  },
+  "treads": [
+    { "number": 1, "leftXLp": 109, "rightXLp": 116, "topYLp": 24.285714285714285, "contactCentreXLp": 112.5 },
+    { "number": 2, "leftXLp": 102, "rightXLp": 109, "topYLp": 28.57142857142857, "contactCentreXLp": 105.5 },
+    { "number": 3, "leftXLp": 95, "rightXLp": 102, "topYLp": 32.85714285714286, "contactCentreXLp": 98.5 },
+    { "number": 4, "leftXLp": 88, "rightXLp": 95, "topYLp": 37.14285714285714, "contactCentreXLp": 91.5 },
+    { "number": 5, "leftXLp": 81, "rightXLp": 88, "topYLp": 41.42857142857143, "contactCentreXLp": 84.5 },
+    { "number": 6, "leftXLp": 74, "rightXLp": 81, "topYLp": 45.714285714285715, "contactCentreXLp": 77.5 },
+    { "number": 7, "leftXLp": 67, "rightXLp": 74, "topYLp": 50, "contactCentreXLp": 70.5 },
+    { "number": 8, "leftXLp": 60, "rightXLp": 67, "topYLp": 54.285714285714285, "contactCentreXLp": 63.5 },
+    { "number": 9, "leftXLp": 53, "rightXLp": 60, "topYLp": 58.57142857142857, "contactCentreXLp": 56.5 },
+    { "number": 10, "leftXLp": 46, "rightXLp": 53, "topYLp": 62.857142857142854, "contactCentreXLp": 49.5 },
+    { "number": 11, "leftXLp": 39, "rightXLp": 46, "topYLp": 67.14285714285714, "contactCentreXLp": 42.5 },
+    { "number": 12, "leftXLp": 32, "rightXLp": 39, "topYLp": 71.42857142857143, "contactCentreXLp": 35.5 },
+    { "number": 13, "leftXLp": 25, "rightXLp": 32, "topYLp": 75.71428571428572, "contactCentreXLp": 28.5 },
+    { "number": 14, "leftXLp": 18, "rightXLp": 25, "topYLp": 80, "contactCentreXLp": 21.5 }
+  ],
+  "keeperContactContract": {
+    "ascentContacts": 14,
+    "contactOrder": "left-right alternating",
+    "timelineFrames": 27,
+    "passingFrames": 13,
+    "contactGeometryAuthority": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/stair-contact-rig-v16.json",
+    "approvalAuthority": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v17/batch-register.json"
+  },
+  "futureSceneryEnvelope": {
+    "geometryMayChange": false,
+    "requiredNewelPosts": 2,
+    "newelPositions": ["lower-flight entrance", "upper landing"],
+    "requiredBalustrade": "foreground open-side balustrade with regularly spaced balusters",
+    "requiredHandrail": "one continuous rail between the two newel posts",
+    "layerOrder": [
+      "rear stair structure and treads",
+      "Keeper",
+      "foreground balusters, newel posts and handrail"
+    ],
+    "permittedOcclusion": "architecturally plausible partial masking of boots and lower legs",
+    "forbiddenChanges": [
+      "riser count",
+      "individual tread run",
+      "individual riser rise",
+      "flight run or rise",
+      "finished-floor pitch",
+      "landing roots",
+      "Keeper contact coordinates"
+    ]
+  },
+  "runtimeBoundary": {
+    "isProductionScenery": false,
+    "isCollisionGeometry": false,
+    "isReviewGeometryAuthority": true,
+    "requiresSeparateSceneryReview": true
+  }
+}

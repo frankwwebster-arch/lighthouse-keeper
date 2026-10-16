@@ -1,0 +1,51 @@
+{
+  "schema": "lighthouse-keeper/geometry-authority@1",
+  "batchId": "keeper-staircase-geometry-2026-10-16-v1",
+  "status": "approved-geometry-only-scenery-art-pending",
+  "decision": {
+    "decidedBy": "Frank",
+    "decidedOn": "2026-10-16",
+    "wording": "ensure that the stairway we built for testing is stored - it needs to be better designed (eg with rail, balustrade etc) but its size/tread/riser etc need to be kept"
+  },
+  "geometry": {
+    "file": "art/drafts/keeper-staircase-geometry-2026-10-16-v1/staircase-geometry-v1.json",
+    "sha256": "37b1d7c1a347aa950484600724a4f3b9618a99074d1581d3b7a34dcd699886e5",
+    "immutable": true
+  },
+  "testProfileEvidence": {
+    "file": "art/drafts/keeper-staircase-geometry-2026-10-16-v1/evidence/staircase-test-profile-v1.svg",
+    "sha256": "eb4c05f9e4ce49c1158ceecc77416ccdd6c8ca4a4b5ec4579efe8aff6ce7bc6e",
+    "disposition": "preserved-construction-evidence-not-final-scenery"
+  },
+  "handoff": {
+    "file": "art/drafts/keeper-staircase-geometry-2026-10-16-v1/HANDOFF.md",
+    "sha256": "21f20bcd581f467481ddf6a668f3f90916416e91d54a4de54c3fa26ea78ee7d4"
+  },
+  "authorities": {
+    "approvedContactRig": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/stair-contact-rig-v16.json",
+      "sha256": "62892cbe1cf47e1feedd7cccdf427ae4547b203687d6d46289ba1f7eb041df56"
+    },
+    "approvalPack": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v17/batch-register.json",
+      "sha256": "f49bdd5172b3b08ba3adf24c42411ee02fb450709cc4229e71ab6fc9389b4292"
+    }
+  },
+  "lockedMeasurements": {
+    "risers": 14,
+    "treadRunLp": 7,
+    "riserRiseLp": 4.285714285714286,
+    "flightRunLp": 98,
+    "flightRiseLp": 60,
+    "finishedFloorPitchLp": 60,
+    "reservedCoreRunLp": 105
+  },
+  "visualBoundary": {
+    "testStaircaseStored": true,
+    "testRenderingApprovedAsFinalScenery": false,
+    "futureRailBalustradeAndNewelsRequired": true,
+    "futureSceneryMayChangeLockedMeasurements": false,
+    "runtimeChanged": false,
+    "productionChanged": false
+  }
+}

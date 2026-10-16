@@ -105,6 +105,13 @@ const stairTransitionsV6 = spawnSync('node', ['scripts/verify_keeper_prime_stair
 })
 if (stairTransitionsV6.error) throw stairTransitionsV6.error
 if (stairTransitionsV6.status !== 0) process.exit(stairTransitionsV6.status ?? 1)
+const staircaseGeometryV1 = spawnSync('node', ['scripts/verify_keeper_staircase_geometry_v1.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (staircaseGeometryV1.error) throw staircaseGeometryV1.error
+if (staircaseGeometryV1.status !== 0) process.exit(staircaseGeometryV1.status ?? 1)
 const stairDescentV1 = spawnSync('node', ['scripts/verify_keeper_prime_stair_descent_v1.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },
