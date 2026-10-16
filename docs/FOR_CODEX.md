@@ -289,14 +289,21 @@ a rectangular central-rung occluder, but Frank rejected that solution because
 it made rung segments disappear on every step. Preserve V2 as rejected
 presentation provenance.
 
-The active V3 review at
-`/keeper-review/keeper-prime-ladder-transitions-v3/` removes the V2 occluder.
-Every rail and rung is present in every frame. All 29 registered Keeper images
-are instead alpha-hardened after resizing: alpha ≥128 becomes 255, alpha <128
-becomes 0, and retained RGB remains exact. Roots, frame order, geometry and
-rung contacts remain V1 exact; timing remains V2 exact at 50 ms per turn frame
-and 150 ms per ladder mount/contact/passing/dismount frame. Run
-`npm run verify:keeper-prime-ladder-transitions-v3`. V3 awaits visual review
+V3 removed the V2 occluder and retained the complete ladder, but Frank rejected
+its presentation because flicker remained throughout the full flow. Preserve
+V3 as rejected provenance: its threshold-128 binary edges shimmered and its
+review runtime destroyed/recreated the architecture and Keeper image on every
+frame.
+
+The active V4 review at
+`/keeper-review/keeper-prime-ladder-transitions-v4/` derives its 29 images from
+the smooth pre-V3 sources. It raises source alpha ≥240 to 255 while preserving
+all lower antialiased alpha and every RGB byte. The page decodes and mounts all
+unique images before playback, constructs the ladder only once, and switches
+frames by visibility without DOM replacement. Roots, frame order, geometry
+and rung contacts remain V1 exact; timing remains V2 exact at 50 ms per turn
+frame and 150 ms per ladder frame. Run
+`npm run verify:keeper-prime-ladder-transitions-v4`. V4 awaits visual review
 and changes no Final, runtime or production asset.
 
 ## Lift entry alignment correction (14 Oct 2026)

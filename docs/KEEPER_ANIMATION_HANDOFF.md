@@ -1617,6 +1617,27 @@ dimensions remain exact. V2's requested timing remains: 50 ms per turn frame
 Run `npm run verify:keeper-prime-ladder-transitions-v3`; V3 is unapproved and
 Final, runtime and production remain unchanged.
 
+Frank then reported persistent flickering throughout the complete V3 route.
+V3 remains immutable rejected presentation provenance. Two causes were pinned:
+its binary threshold discarded the source antialiased fringe, and the review
+runtime removed/recreated the ladder and Keeper image on every playback frame.
+
+## Keeper Prime ladder transition V4 (16 Oct 2026)
+
+V4 at `/keeper-review/keeper-prime-ladder-transitions-v4/` restores the smooth
+pre-V3 source fringe while making the Keeper's solid paint genuinely opaque:
+source alpha ≥240 becomes 255, alpha 1–239 remains exact and every RGB byte is
+unchanged. The complete ladder remains present with no occlusion mask.
+
+All 29 unique images are decoded and mounted in both review stages before the
+controls unlock. The ladder, floors, doors, guides and image nodes persist for
+the life of the page; playback performs only an atomic visibility switch and
+position update. Deterministic verification rejects image/architecture DOM
+creation during `renderStage`, stale asset prefixes, broken alpha mapping,
+geometry/timing drift and promotion. Run
+`npm run verify:keeper-prime-ladder-transitions-v4`; V4 is unapproved and
+Final, runtime and production remain unchanged.
+
 ## Review-comments workflow for a later feedback round
 
 1. Do not process another review export until the beard evidence gate is

@@ -126,6 +126,13 @@ const ladderTransitionsV3 = spawnSync('node', ['scripts/verify_keeper_prime_ladd
 })
 if (ladderTransitionsV3.error) throw ladderTransitionsV3.error
 if (ladderTransitionsV3.status !== 0) process.exit(ladderTransitionsV3.status ?? 1)
+const ladderTransitionsV4 = spawnSync('node', ['scripts/verify_keeper_prime_ladder_transitions_v4.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (ladderTransitionsV4.error) throw ladderTransitionsV4.error
+if (ladderTransitionsV4.status !== 0) process.exit(ladderTransitionsV4.status ?? 1)
 const result = spawnSync('npm', ['run', 'test:core'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },

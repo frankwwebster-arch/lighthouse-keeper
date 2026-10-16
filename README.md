@@ -237,13 +237,16 @@ Live review found the V1 motion generally sound but exposed ladder colour
 showing through semi-transparent Keeper paint. Frank also requested a faster
 turn and substantially slower climb while accepting the small hand/foot-to-rung
 mismatch at game scale. V2's rectangular central-rung occluder is rejected: it
-made rung segments disappear at each step. The active V3 gate at
-`/keeper-review/keeper-prime-ladder-transitions-v3/` removes that layer and
-draws the complete ladder in every frame. It alpha-hardens only the 29
-registered Keeper images at threshold 128 while retaining every surviving RGB
-pixel exactly. V2's 50-ms turns and 150-ms climb phases are unchanged, as are
-all roots, geometry and rung contacts. V1/V2 remain immutable. V3 is unapproved
-and changes no Final, runtime or production asset.
+made rung segments disappear at each step. V3 restored the complete ladder but
+is also rejected presentation provenance because its binary alpha edges and
+per-frame DOM reconstruction flickered through the full route. The active V4
+gate at `/keeper-review/keeper-prime-ladder-transitions-v4/` keeps every ladder
+pixel, raises only solid Keeper paint (source alpha ≥240) to 255, preserves the
+original antialiased fringe and mounts all decoded frame images before
+playback. Frame changes are atomic visibility switches; the Keeper and scene
+DOM are never rebuilt during playback. V2's 50-ms turns and 150-ms climb phases
+remain exact, as do all roots, geometry and rung contacts. V1/V2/V3 remain
+immutable. V4 is unapproved and changes no Final, runtime or production asset.
 
 ## Run it
 ```
@@ -264,6 +267,7 @@ npm run verify:keeper-prime-stair-transitions-v6 # door-hidden room/circulation 
 npm run verify:keeper-prime-ladder-transitions-v1 # measured alternating ladder, approach, continuation and dismount
 npm run verify:keeper-prime-ladder-transitions-v2 # V1-exact art with corrected rung layering and tuned turn/climb cadence
 npm run verify:keeper-prime-ladder-transitions-v3 # complete ladder plus alpha-opaque Keeper frames
+npm run verify:keeper-prime-ladder-transitions-v4 # smooth opaque paint plus persistent no-rebuild playback
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
 
