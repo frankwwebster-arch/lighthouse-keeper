@@ -2,7 +2,7 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
-## Seated Prime foundation V1 (16 Oct 2026)
+## Seated Prime foundation V2 (17 Oct 2026)
 
 Frank approved Stair Descent V2 with its slight overstride accepted. Preserve
 the exact V2 art and route. The later finished staircase must add two newel
@@ -11,15 +11,19 @@ feet, but it must retain the stored fourteen-riser, 7-lp-tread, 98-by-60-lp
 geometry. The immutable decision is
 `docs/review/keeper-prime-stair-descent-v2-approval-2026-10-16.json`.
 
-The next review gate is the six-direction smooth seated foundation at
-`/keeper-review/keeper-prime-seated-six-view-v1/`. It contains direct front,
+The next review gate is the corrected six-direction smooth seated foundation
+at `/keeper-review/keeper-prime-seated-six-view-v2/`. It contains direct front,
 direct back, side-left/right and rear-left/right endpoints. All are 256 × 320
 registered cells with one `[16,40]` anchor, one `[16,29]` seat point and an
-11-lp seat height. The left pair are exact mirrors after registration. The
+11-lp seat height. V2 keeps the six V1 images byte-identical but replaces the
+brittle all-or-nothing page loader and proves opaque pelvis contact on the
+chair's exact y=29-lp top surface in every view. The left pair are exact
+mirrors after registration. The
 approved standing views supply identity and rendering; first-generation seats
 supply pose mechanics only. Do not build or promote the transition strips
 until Frank approves these endpoints. Full hashes and next-gate instructions
-are in `art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/`.
+are in `art/drafts/keeper-prime-seated-six-view-2026-10-17-v2/`; V1 remains
+immutable historical evidence.
 
 ## Stair descent V2 approval (16 Oct 2026)
 

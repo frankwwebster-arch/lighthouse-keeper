@@ -1,0 +1,194 @@
+{
+  "schema": "lighthouse-keeper/seated-contact-proof@1",
+  "set": "keeper-prime-seated-six-view-v2",
+  "status": "review-draft-no-promotion",
+  "sourceSet": "keeper-prime-seated-six-view-v1",
+  "cell": {
+    "logical": [
+      32,
+      40
+    ],
+    "pixels": [
+      256,
+      320
+    ],
+    "density": 8,
+    "anchorLp": [
+      16,
+      40
+    ]
+  },
+  "chair": {
+    "surfaceTopLp": 29,
+    "surfaceTopPixel": 232,
+    "heightAboveFloorLp": 11,
+    "renderLayer": "behind-keeper",
+    "rule": "The chair top edge is exactly y=29 lp. The opaque pelvis crosses that same pixel row in every view, so there is neither a visible gap nor a foreground surface cutting through the Keeper."
+  },
+  "loading": {
+    "firstViewRenderedBeforePreload": true,
+    "primaryViewsGateControls": true,
+    "auxiliaryComparisonsGateControls": false,
+    "failureReporting": "per URL via Promise.allSettled"
+  },
+  "views": [
+    {
+      "id": "front",
+      "src": "/keeper-review/keeper-prime-seated-six-view-v2/assets/seat-front-501151a426f81251.png",
+      "source": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-front_f01.png",
+      "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+      "contact": {
+        "pixel": [
+          128,
+          232
+        ],
+        "logical": [
+          16,
+          29
+        ],
+        "alpha": 254
+      },
+      "bounds": {
+        "minX": 57,
+        "minY": 52,
+        "maxX": 199,
+        "maxY": 315,
+        "width": 143,
+        "height": 264
+      }
+    },
+    {
+      "id": "rear-left",
+      "src": "/keeper-review/keeper-prime-seated-six-view-v2/assets/seat-rear-left-5bccfa3babbd0c09.png",
+      "source": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-rear-left_f01.png",
+      "sha256": "5bccfa3babbd0c09673aa0472d3fbda4476d73082443765f6220505920bca0d0",
+      "contact": {
+        "pixel": [
+          128,
+          232
+        ],
+        "logical": [
+          16,
+          29
+        ],
+        "alpha": 254
+      },
+      "bounds": {
+        "minX": 50,
+        "minY": 52,
+        "maxX": 205,
+        "maxY": 315,
+        "width": 156,
+        "height": 264
+      }
+    },
+    {
+      "id": "side-left",
+      "src": "/keeper-review/keeper-prime-seated-six-view-v2/assets/seat-side-left-d0c394162ff6e071.png",
+      "source": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-side-left_f01.png",
+      "sha256": "d0c394162ff6e0712cec46a45a0f7931babfa3705fdb782f40c803e7f28f7775",
+      "contact": {
+        "pixel": [
+          128,
+          232
+        ],
+        "logical": [
+          16,
+          29
+        ],
+        "alpha": 254
+      },
+      "bounds": {
+        "minX": 51,
+        "minY": 52,
+        "maxX": 204,
+        "maxY": 315,
+        "width": 154,
+        "height": 264
+      }
+    },
+    {
+      "id": "back",
+      "src": "/keeper-review/keeper-prime-seated-six-view-v2/assets/seat-back-28a879bcee43c6d0.png",
+      "source": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-back_f01.png",
+      "sha256": "28a879bcee43c6d06330d05fb3cd74b4098b2ccce38ce41d15117f5fb0be5167",
+      "contact": {
+        "pixel": [
+          128,
+          232
+        ],
+        "logical": [
+          16,
+          29
+        ],
+        "alpha": 254
+      },
+      "bounds": {
+        "minX": 53,
+        "minY": 52,
+        "maxX": 202,
+        "maxY": 315,
+        "width": 150,
+        "height": 264
+      }
+    },
+    {
+      "id": "side-right",
+      "src": "/keeper-review/keeper-prime-seated-six-view-v2/assets/seat-side-right-8226a15137fc6973.png",
+      "source": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-side-right_f01.png",
+      "sha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b",
+      "contact": {
+        "pixel": [
+          128,
+          232
+        ],
+        "logical": [
+          16,
+          29
+        ],
+        "alpha": 254
+      },
+      "bounds": {
+        "minX": 51,
+        "minY": 52,
+        "maxX": 204,
+        "maxY": 315,
+        "width": 154,
+        "height": 264
+      }
+    },
+    {
+      "id": "rear-right",
+      "src": "/keeper-review/keeper-prime-seated-six-view-v2/assets/seat-rear-right-c2d3734254cadaf7.png",
+      "source": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-rear-right_f01.png",
+      "sha256": "c2d3734254cadaf760893110d454f5913b0d4d69d16223682855590e4e15cd72",
+      "contact": {
+        "pixel": [
+          128,
+          232
+        ],
+        "logical": [
+          16,
+          29
+        ],
+        "alpha": 254
+      },
+      "bounds": {
+        "minX": 50,
+        "minY": 52,
+        "maxX": 205,
+        "maxY": 315,
+        "width": 156,
+        "height": 264
+      }
+    }
+  ],
+  "boundaries": {
+    "sourcePixelsChanged": false,
+    "v1Changed": false,
+    "runtimeChanged": false,
+    "finalChanged": false,
+    "productionChanged": false,
+    "promotionAllowed": false
+  }
+}

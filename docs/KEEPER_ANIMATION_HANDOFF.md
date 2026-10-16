@@ -6,6 +6,22 @@ Codex task should be able to continue from here without relying on the old chat.
 
 ## Current core-transition checkpoint — 16 October 2026
 
+### Seated Six-View V2 loading and contact correction — 17 October 2026
+
+V1 remains immutable historical evidence. Its all-or-nothing preload gate could
+leave the main inspection blank if any auxiliary comparison image failed. V2
+renders the first primary seated view immediately, uses `Promise.allSettled`
+for the six primary images only, reports failed views by name and never lets an
+auxiliary comparison block the endpoint review.
+
+V2 changes no Keeper pixels. It adds a deterministic physical-seat proof: the
+chair top is exactly y=29 logical pixels / y=232 source pixels, eleven logical
+pixels above the floor; it is rendered behind the Keeper. Every one of the six
+images has an opaque pelvis at `[16,29]` and a continuous opaque band across
+y=231–233, so the chair surface has neither a visible air gap nor a foreground
+edge cutting through the body. Review route:
+`/keeper-review/keeper-prime-seated-six-view-v2/`.
+
 The staircase itself is now preserved independently of any review-page CSS at
 `art/drafts/keeper-staircase-geometry-2026-10-16-v1/`. Its geometry-only
 authority records all fourteen tread rectangles, the exact 7-lp tread run,
@@ -1732,7 +1748,10 @@ stored fourteen-riser, 7-lp-tread, 98-by-60-lp geometry. The decision is pinned
 at `docs/review/keeper-prime-stair-descent-v2-approval-2026-10-16.json`. No
 Final, runtime or production promotion was performed.
 
-The next gate is `/keeper-review/keeper-prime-seated-six-view-v1/`. It defines
+The current corrected gate is
+`/keeper-review/keeper-prime-seated-six-view-v2/`. It reuses the six V1 images
+byte-for-byte, fixes the V1 loader and proves physical chair contact at y=29
+lp; V1 remains historical evidence. The endpoint set defines
 six new smooth Prime Keeper seated endpoints: direct front, direct back,
 side-left/right and rear-left/right. “At an angle either side” means the rear
 three-quarter pair used for TV, gaming and furniture-facing activity. All six

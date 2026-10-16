@@ -2,12 +2,15 @@
 
 A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by typing or tapping objects, then keep him happy through the day. The playable cutaway currently has a kitchen, living room, bedroom with en suite, and lamp room.
 
-The current Keeper-art review gate is the six-direction smooth seated
-foundation at `/keeper-review/keeper-prime-seated-six-view-v1/`: front, back,
-both profiles and both rear-three-quarter angles. Every endpoint shares the
-32 × 40 logical cell, 11-lp seat height and registered floor anchor. It is a
-reversible draft only; after visual approval it will become the exact target
-for the stand ↔ sit transition clips. Stair Descent V2 is approved with its
+The current Keeper-art review gate is the corrected six-direction smooth
+seated foundation at `/keeper-review/keeper-prime-seated-six-view-v2/`: front,
+back, both profiles and both rear-three-quarter angles. V2 fixes V1's brittle
+all-or-nothing loader and visibly proves that the chair surface and opaque
+pelvis meet at exactly y=29 logical pixels, eleven pixels above the floor.
+Every endpoint still shares the 32 × 40 logical cell and registered floor
+anchor; no Keeper pixels changed. It is a reversible draft only; after visual
+approval it will become the exact target for the stand ↔ sit transition clips.
+Stair Descent V2 is approved with its
 slight overstride accepted; the future finished staircase must retain its
 locked geometry while adding two newel posts, a foreground balustrade and a
 continuous rail. The approval record is

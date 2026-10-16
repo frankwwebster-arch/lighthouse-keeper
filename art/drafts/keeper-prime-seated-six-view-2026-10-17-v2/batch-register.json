@@ -1,0 +1,27 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-seated-six-view-2026-10-17-v2",
+  "status": "draft-contact-and-loading-correction-awaiting-frank",
+  "source": {
+    "set": "keeper-prime-seated-six-view-v1",
+    "geometry": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/keeper-prime-seated-six-view-v1.json",
+    "geometrySha256": "6b186a653dd125ca8bca2ab908829811786a238c5a4ce14e43f85b0a447f869c"
+  },
+  "contactProof": {
+    "file": "art/drafts/keeper-prime-seated-six-view-2026-10-17-v2/keeper-prime-seated-six-view-v2.json",
+    "sha256": "fafca7c2611e9fab17660bcd89c4aa3250c2cba62765ae853a1b383e3d572c9d"
+  },
+  "page": {
+    "file": "public/keeper-review/keeper-prime-seated-six-view-v2/index.html",
+    "sha256": "13bb294a823d0ba55c4b0373b274b3ad60f335d5ecc5fd68649f29436d24098f"
+  },
+  "boundaries": {
+    "sourcePixelsChanged": false,
+    "v1Changed": false,
+    "runtimeChanged": false,
+    "finalChanged": false,
+    "productionChanged": false,
+    "promotionAllowed": false
+  },
+  "rollback": "Delete only art/drafts/keeper-prime-seated-six-view-2026-10-17-v2 and public/keeper-review/keeper-prime-seated-six-view-v2; V1 and every source image remain unchanged."
+}
