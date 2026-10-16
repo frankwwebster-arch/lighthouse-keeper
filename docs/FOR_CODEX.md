@@ -2,6 +2,17 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Frank: flat-cutaway projection authority (16 Oct 2026)
+
+For the next kitchen-basic-assets version, read
+`docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md`. It supersedes the
+earlier calculated 4% room / 1% furnishing convergence proposal for kitchen
+and standard-room asset authoring. Keep the camera straight on, asset and
+Keeper scale constant, geometry parallel, the visible floor cue at 5 lp, and
+top surfaces shallow. Existing Kitchen V1–V4 and Oven Approach V7 remain
+historical review evidence; create a new version and promote nothing without
+Frank's explicit approval.
+
 ## Claude: kitchen basic assets to draft (final, 16 Oct 2026)
 
 Frank wants you to draft the tier-1 kitchen furniture as the test case for
@@ -54,20 +65,15 @@ endpoint. A toggle shows the present approved root schedule finishing 1 lp
 short. This is still review-only: no oven art, root motion or production state
 has been approved or changed.
 
-Oven Approach V7 is the active placement/perspective refinement at
-`/keeper-review/keeper-object-approach-oven-v7/`. It preserves every V1 Keeper
-frame and route value. The rear-wall oven base now sits at the wall/floor
-junction 7 lp above the stage bottom, leaving a 5-lp visible floor surface
-before the 2-lp front lip and the Keeper's unchanged near interaction line.
-V3's 0.5-lp shared foot datum and the unshown V4 2-lp correction are retained
-as historical placement evidence; V5 has exact V6 geometry but a stale datum
-label in its large pane; V6's 12-lp floor was visually too deep. The proposed shared authoring projection is
-a 42-lp room depth with one 10.5-lp standard asset-depth module: rear wall 96%
-against the open front, and asset rear face 99% against its interaction/front
-face. Keep the Keeper and object interaction plane at canonical 100% scale;
-retain the 84-ku world grid and collision footprints; do not add continuous
-runtime raster scaling. Full proposal:
-`docs/KEEPER_ROOM_PERSPECTIVE_PROPOSAL_2026-10-14.md`. Await Frank's approval.
+Oven Approach V7 is retained at
+`/keeper-review/keeper-object-approach-oven-v7/` as historical
+placement/perspective evidence. It preserves every V1 Keeper frame and route
+value, but its raised 30-lp proxy, 42-lp notional room depth, 96% rear-wall
+scale and 99% furnishing rear-face scale are superseded for kitchen and
+standard-room authoring. Use
+`docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md`: constant
+Keeper/asset scale, parallel geometry, no vanishing point or runtime depth
+scaling, a 5-lp floor cue and the real object/contact dimensions.
 
 Everything remains a reversible draft awaiting Frank's review. Do not change
 Claude's route tables, runtime geometry, Keeper art or approval records yet.

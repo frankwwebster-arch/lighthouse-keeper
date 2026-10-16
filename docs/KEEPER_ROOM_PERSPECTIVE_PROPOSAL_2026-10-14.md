@@ -1,7 +1,13 @@
 # Keeper room perspective proposal
 
 Date: 14 October 2026
-Status: **visual proposal awaiting Frank's approval**. Do not change runtime placement or existing artwork yet.
+Status: **superseded for kitchen and standard-room asset authoring on 16
+October 2026**. Retain this document and Oven Approach V7 as historical review
+evidence only. The current authority is
+`docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md`: a flat cutaway with
+constant Keeper/asset scale, no vanishing point or runtime depth scaling, and a
+restrained 5-lp floor cue. Do not change runtime placement or existing artwork
+from this historical proposal.
 
 Active review: `/keeper-review/keeper-object-approach-oven-v7/`
 
