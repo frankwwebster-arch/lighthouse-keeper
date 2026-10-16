@@ -31,13 +31,19 @@ projection authority. The active
 [`flat-cutaway-v1`](docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md)
 contract uses a straight-on camera, rectangular functional fronts, constant
 Keeper/object scale, no runtime depth scaling, an exact 5-lp horizontal floor
-band and the real 19-lp cooker/hob datum. The current unapproved kitchen draft
-is `/keeper-review/kitchen-basic-assets-v5/`. It shows the flat modular 6–12-bay
-shell, all tier-1 object states, the 193-lp starting kitchen, the 256-lp
-reservation outline, rear-facing table seating and the right-side-wall
-cupboard lifecycle. Its measured hand-back is
+band and the real 19-lp cooker/hob datum. Kitchen V5 remains the sole visual
+baseline at `/keeper-review/kitchen-basic-assets-v5/`. The replacement V6 has
+stopped at its required first gate:
+`/keeper-review/kitchen-countertop-calibration-v6/` shows the exact V5 kettle
+counter, cooker/hob and sink beside three common 1–2-lp countertop
+constructions, with logical-scale, ghost, edge and measured 21-lp-bay seam
+proofs. No full V6 family has been rebuilt while that selection is pending.
+The calibration hand-back is
+[`docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_CALIBRATION_V6_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_CALIBRATION_V6_2026-10-16.md);
+the complete V5 measurements remain in
 [`docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V5_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V5_2026-10-16.md).
-No V5 asset is approved, promoted or wired into the live game.
+Neither V5 nor the calibration candidates are approved, promoted or wired into
+the live game.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

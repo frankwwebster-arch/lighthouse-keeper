@@ -1,0 +1,267 @@
+{
+  "version": 6,
+  "status": "review-only-calibration-gate",
+  "soleVisualBaseline": "Kitchen Basic Assets V5",
+  "readsFormerV6": false,
+  "scope": [
+    "obj_kettle standard",
+    "obj_cooker standard",
+    "obj_sink standard",
+    "ordinary-unit seam proof"
+  ],
+  "fullFamilyRebuilt": false,
+  "runtimeChanged": false,
+  "finalChanged": false,
+  "keeperChanged": false,
+  "protectedSnapshots": {
+    "kitchenV5": "81ff9c2658741899030e468d40c1e651dcc5ac584a70cc5abf20588ba17be4ac",
+    "runtimeSpriteManifest": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
+    "animationWorkbenchFinalState": "6c349a70f591cba21016cf9a7a49424b971d8aed895504ba775ebd158017c658",
+    "approvedKeeperSourceFamily": "a33b0065654d040afe81d863331bc5e6dab0355dc4d6687c8436cf55bda91efb"
+  },
+  "records": [
+    {
+      "stem": "obj_kettle",
+      "option": "a",
+      "label": "Kettle counter",
+      "logical": [
+        21,
+        31
+      ],
+      "v5": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_v5.png",
+      "candidate": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_a_candidate.png",
+      "ghost": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_a_ghost.png",
+      "edges": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_a_edges.png",
+      "v5Sha256": "bc296bff87334d769aadccd75e749f4edd0221853f1d52eae90ab04270552b3c",
+      "candidateSha256": "c4e299f6f305305bc7aacc47ed992d0d4f0d0c328d2435b599c3962eee5596b6",
+      "declaredChangeMaskPx": [
+        0,
+        40,
+        84,
+        56
+      ],
+      "actualDifferenceBoundsPx": [
+        2,
+        40,
+        83,
+        56
+      ]
+    },
+    {
+      "stem": "obj_cooker",
+      "option": "a",
+      "label": "Cooker / hob",
+      "logical": [
+        21,
+        28
+      ],
+      "v5": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_v5.png",
+      "candidate": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_a_candidate.png",
+      "ghost": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_a_ghost.png",
+      "edges": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_a_edges.png",
+      "v5Sha256": "a6183f51f506957fb77c79ef5dfddc82c287dfa781838fe099944f76cf303034",
+      "candidateSha256": "af49aa5a41d9f13dab799a28b7b46fd305842946f118a630b4decd8951f02085",
+      "declaredChangeMaskPx": [
+        0,
+        20,
+        84,
+        36
+      ],
+      "actualDifferenceBoundsPx": [
+        2,
+        20,
+        83,
+        32
+      ]
+    },
+    {
+      "stem": "obj_sink",
+      "option": "a",
+      "label": "Sink counter",
+      "logical": [
+        21,
+        29
+      ],
+      "v5": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_v5.png",
+      "candidate": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_a_candidate.png",
+      "ghost": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_a_ghost.png",
+      "edges": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_a_edges.png",
+      "v5Sha256": "31ca919a515f05ac51c2850092df8501c9574c05013ea5a88ea5aca5e3d40f2a",
+      "candidateSha256": "d38d64473847e83a8fb978d20fe54abe3fd32de86e6e5a0eb46f09fe023cf8e6",
+      "declaredChangeMaskPx": [
+        0,
+        40,
+        84,
+        56
+      ],
+      "actualDifferenceBoundsPx": [
+        2,
+        40,
+        83,
+        56
+      ]
+    },
+    {
+      "stem": "obj_kettle",
+      "option": "b",
+      "label": "Kettle counter",
+      "logical": [
+        21,
+        31
+      ],
+      "v5": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_v5.png",
+      "candidate": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_b_candidate.png",
+      "ghost": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_b_ghost.png",
+      "edges": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_b_edges.png",
+      "v5Sha256": "bc296bff87334d769aadccd75e749f4edd0221853f1d52eae90ab04270552b3c",
+      "candidateSha256": "f73dc68f7c10179e4e850d4614cd1dac3ef5b602ada6615f54fc8415d698854e",
+      "declaredChangeMaskPx": [
+        0,
+        40,
+        84,
+        56
+      ],
+      "actualDifferenceBoundsPx": [
+        2,
+        40,
+        83,
+        56
+      ]
+    },
+    {
+      "stem": "obj_cooker",
+      "option": "b",
+      "label": "Cooker / hob",
+      "logical": [
+        21,
+        28
+      ],
+      "v5": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_v5.png",
+      "candidate": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_b_candidate.png",
+      "ghost": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_b_ghost.png",
+      "edges": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_b_edges.png",
+      "v5Sha256": "a6183f51f506957fb77c79ef5dfddc82c287dfa781838fe099944f76cf303034",
+      "candidateSha256": "e3ce5175e51ffdccc2459a31b79f01822110d0e67ed7be10e9634956dc163516",
+      "declaredChangeMaskPx": [
+        0,
+        20,
+        84,
+        36
+      ],
+      "actualDifferenceBoundsPx": [
+        2,
+        20,
+        83,
+        32
+      ]
+    },
+    {
+      "stem": "obj_sink",
+      "option": "b",
+      "label": "Sink counter",
+      "logical": [
+        21,
+        29
+      ],
+      "v5": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_v5.png",
+      "candidate": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_b_candidate.png",
+      "ghost": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_b_ghost.png",
+      "edges": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_b_edges.png",
+      "v5Sha256": "31ca919a515f05ac51c2850092df8501c9574c05013ea5a88ea5aca5e3d40f2a",
+      "candidateSha256": "475b5c5dd0ae2c455a433306d639c2942280ed15a1598293eabb61367dfcf4ed",
+      "declaredChangeMaskPx": [
+        0,
+        40,
+        84,
+        56
+      ],
+      "actualDifferenceBoundsPx": [
+        2,
+        40,
+        83,
+        56
+      ]
+    },
+    {
+      "stem": "obj_kettle",
+      "option": "c",
+      "label": "Kettle counter",
+      "logical": [
+        21,
+        31
+      ],
+      "v5": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_v5.png",
+      "candidate": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_c_candidate.png",
+      "ghost": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_c_ghost.png",
+      "edges": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_c_edges.png",
+      "v5Sha256": "bc296bff87334d769aadccd75e749f4edd0221853f1d52eae90ab04270552b3c",
+      "candidateSha256": "0ea1a6771964d9e854632b429d4052fcaabe4d60744eb9cf7d66499eddcd46bf",
+      "declaredChangeMaskPx": [
+        0,
+        40,
+        84,
+        56
+      ],
+      "actualDifferenceBoundsPx": [
+        2,
+        40,
+        83,
+        56
+      ]
+    },
+    {
+      "stem": "obj_cooker",
+      "option": "c",
+      "label": "Cooker / hob",
+      "logical": [
+        21,
+        28
+      ],
+      "v5": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_v5.png",
+      "candidate": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_c_candidate.png",
+      "ghost": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_c_ghost.png",
+      "edges": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_c_edges.png",
+      "v5Sha256": "a6183f51f506957fb77c79ef5dfddc82c287dfa781838fe099944f76cf303034",
+      "candidateSha256": "a1441cad8306dc776ec47783817c3a682d975fd8500b65435d65055f1a3693cc",
+      "declaredChangeMaskPx": [
+        0,
+        20,
+        84,
+        36
+      ],
+      "actualDifferenceBoundsPx": [
+        2,
+        20,
+        83,
+        32
+      ]
+    },
+    {
+      "stem": "obj_sink",
+      "option": "c",
+      "label": "Sink counter",
+      "logical": [
+        21,
+        29
+      ],
+      "v5": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_v5.png",
+      "candidate": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_c_candidate.png",
+      "ghost": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_c_ghost.png",
+      "edges": "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_c_edges.png",
+      "v5Sha256": "31ca919a515f05ac51c2850092df8501c9574c05013ea5a88ea5aca5e3d40f2a",
+      "candidateSha256": "df7b5b688d8b2b70bf8e24ae2d82e0ce7d3d147a285bb9f7f1d8b3bc43ecf981",
+      "declaredChangeMaskPx": [
+        0,
+        40,
+        84,
+        56
+      ],
+      "actualDifferenceBoundsPx": [
+        2,
+        40,
+        83,
+        56
+      ]
+    }
+  ]
+}

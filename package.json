@@ -18,6 +18,7 @@
     "verify:kitchen-basic-assets-v3": "node scripts/verify_kitchen_basic_assets_v3.mjs",
     "verify:kitchen-basic-assets-v4": "node scripts/verify_kitchen_basic_assets_v4.mjs",
     "verify:kitchen-basic-assets-v5": "node scripts/verify_kitchen_basic_assets_v5.mjs",
+    "verify:kitchen-countertop-calibration-v6": "node scripts/verify_kitchen_countertop_calibration_v6.mjs",
     "audit:side-on-beard-occlusion": "node scripts/audit_side_on_beard_occlusion_v2.ts",
     "verify:side-on-beard-occlusion": "node scripts/verify_side_on_beard_occlusion.ts",
     "verify:keeper-review-drafts": "node scripts/verify_keeper_review_drafts.ts",

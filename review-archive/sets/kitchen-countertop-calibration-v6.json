@@ -1,0 +1,243 @@
+{
+  "version": 1,
+  "set": "kitchen-countertop-calibration-v6",
+  "page": {
+    "path": "public/keeper-review/kitchen-countertop-calibration-v6/index.html",
+    "sha256": "e05d8f65caecdd5ebe67e1189258b6325305da52faa69ae8c9375d26fc212131",
+    "bytes": 16249
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_a_candidate.png": {
+      "sha256": "af49aa5a41d9f13dab799a28b7b46fd305842946f118a630b4decd8951f02085",
+      "extension": ".png",
+      "bytes": 12272,
+      "object": "review-archive/objects/af/af49aa5a41d9f13dab799a28b7b46fd305842946f118a630b4decd8951f02085.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/af/af49aa5a41d9f13dab799a28b7b46fd305842946f118a630b4decd8951f02085.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_a_edges.png": {
+      "sha256": "d256bae159bd4314698a421ddbd187e78932f196655da6d83b19ba2a280882d5",
+      "extension": ".png",
+      "bytes": 498,
+      "object": "review-archive/objects/d2/d256bae159bd4314698a421ddbd187e78932f196655da6d83b19ba2a280882d5.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d2/d256bae159bd4314698a421ddbd187e78932f196655da6d83b19ba2a280882d5.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_a_ghost.png": {
+      "sha256": "4fb82ff3ad35bb0e9601c332a831857f1e99564121821488a78d1959e42bb0b3",
+      "extension": ".png",
+      "bytes": 11318,
+      "object": "review-archive/objects/4f/4fb82ff3ad35bb0e9601c332a831857f1e99564121821488a78d1959e42bb0b3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4f/4fb82ff3ad35bb0e9601c332a831857f1e99564121821488a78d1959e42bb0b3.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_b_candidate.png": {
+      "sha256": "e3ce5175e51ffdccc2459a31b79f01822110d0e67ed7be10e9634956dc163516",
+      "extension": ".png",
+      "bytes": 12297,
+      "object": "review-archive/objects/e3/e3ce5175e51ffdccc2459a31b79f01822110d0e67ed7be10e9634956dc163516.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e3/e3ce5175e51ffdccc2459a31b79f01822110d0e67ed7be10e9634956dc163516.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_b_edges.png": {
+      "sha256": "b2e92c84874168ee4dbea4223f567c28849c251f7e4fb2687d597ba7eaf9e4e8",
+      "extension": ".png",
+      "bytes": 497,
+      "object": "review-archive/objects/b2/b2e92c84874168ee4dbea4223f567c28849c251f7e4fb2687d597ba7eaf9e4e8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b2/b2e92c84874168ee4dbea4223f567c28849c251f7e4fb2687d597ba7eaf9e4e8.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_b_ghost.png": {
+      "sha256": "8f986a6e78de60ac8e3c177be199e4c10130ead7a4b243202d3957e736854345",
+      "extension": ".png",
+      "bytes": 11355,
+      "object": "review-archive/objects/8f/8f986a6e78de60ac8e3c177be199e4c10130ead7a4b243202d3957e736854345.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8f/8f986a6e78de60ac8e3c177be199e4c10130ead7a4b243202d3957e736854345.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_c_candidate.png": {
+      "sha256": "a1441cad8306dc776ec47783817c3a682d975fd8500b65435d65055f1a3693cc",
+      "extension": ".png",
+      "bytes": 12339,
+      "object": "review-archive/objects/a1/a1441cad8306dc776ec47783817c3a682d975fd8500b65435d65055f1a3693cc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a1/a1441cad8306dc776ec47783817c3a682d975fd8500b65435d65055f1a3693cc.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_c_edges.png": {
+      "sha256": "325f54d78b634a9921eccac71fb7d60da6339089a5e98d35f87f26ea4baa36c3",
+      "extension": ".png",
+      "bytes": 493,
+      "object": "review-archive/objects/32/325f54d78b634a9921eccac71fb7d60da6339089a5e98d35f87f26ea4baa36c3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/32/325f54d78b634a9921eccac71fb7d60da6339089a5e98d35f87f26ea4baa36c3.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_option_c_ghost.png": {
+      "sha256": "de74d87e5274b854774b18874089ca1cec515bffc62ac75d6710c2038558cf61",
+      "extension": ".png",
+      "bytes": 11381,
+      "object": "review-archive/objects/de/de74d87e5274b854774b18874089ca1cec515bffc62ac75d6710c2038558cf61.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/de/de74d87e5274b854774b18874089ca1cec515bffc62ac75d6710c2038558cf61.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_cooker_v5.png": {
+      "sha256": "a6183f51f506957fb77c79ef5dfddc82c287dfa781838fe099944f76cf303034",
+      "extension": ".png",
+      "bytes": 14683,
+      "object": "review-archive/objects/a6/a6183f51f506957fb77c79ef5dfddc82c287dfa781838fe099944f76cf303034.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a6/a6183f51f506957fb77c79ef5dfddc82c287dfa781838fe099944f76cf303034.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_a_candidate.png": {
+      "sha256": "c4e299f6f305305bc7aacc47ed992d0d4f0d0c328d2435b599c3962eee5596b6",
+      "extension": ".png",
+      "bytes": 12609,
+      "object": "review-archive/objects/c4/c4e299f6f305305bc7aacc47ed992d0d4f0d0c328d2435b599c3962eee5596b6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c4/c4e299f6f305305bc7aacc47ed992d0d4f0d0c328d2435b599c3962eee5596b6.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_a_edges.png": {
+      "sha256": "e66b6e802db75b814ca0be678d07e1878bf5593e0041ae65f091d0f395c0b833",
+      "extension": ".png",
+      "bytes": 759,
+      "object": "review-archive/objects/e6/e66b6e802db75b814ca0be678d07e1878bf5593e0041ae65f091d0f395c0b833.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e6/e66b6e802db75b814ca0be678d07e1878bf5593e0041ae65f091d0f395c0b833.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_a_ghost.png": {
+      "sha256": "6494c0862e4c9cfdd04779475cab62076d80768d6ce4260c3229f0970ebf351a",
+      "extension": ".png",
+      "bytes": 11410,
+      "object": "review-archive/objects/64/6494c0862e4c9cfdd04779475cab62076d80768d6ce4260c3229f0970ebf351a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/64/6494c0862e4c9cfdd04779475cab62076d80768d6ce4260c3229f0970ebf351a.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_b_candidate.png": {
+      "sha256": "f73dc68f7c10179e4e850d4614cd1dac3ef5b602ada6615f54fc8415d698854e",
+      "extension": ".png",
+      "bytes": 12714,
+      "object": "review-archive/objects/f7/f73dc68f7c10179e4e850d4614cd1dac3ef5b602ada6615f54fc8415d698854e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f7/f73dc68f7c10179e4e850d4614cd1dac3ef5b602ada6615f54fc8415d698854e.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_b_edges.png": {
+      "sha256": "6e4d9a2bc46da769b773a4479ecb2324727a24663fd822ebbb083339c5ac7219",
+      "extension": ".png",
+      "bytes": 752,
+      "object": "review-archive/objects/6e/6e4d9a2bc46da769b773a4479ecb2324727a24663fd822ebbb083339c5ac7219.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6e/6e4d9a2bc46da769b773a4479ecb2324727a24663fd822ebbb083339c5ac7219.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_b_ghost.png": {
+      "sha256": "9f43153a239688bdcdbd5ae811dd5bc1b16a566a56049583380822d85326f532",
+      "extension": ".png",
+      "bytes": 11494,
+      "object": "review-archive/objects/9f/9f43153a239688bdcdbd5ae811dd5bc1b16a566a56049583380822d85326f532.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9f/9f43153a239688bdcdbd5ae811dd5bc1b16a566a56049583380822d85326f532.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_c_candidate.png": {
+      "sha256": "0ea1a6771964d9e854632b429d4052fcaabe4d60744eb9cf7d66499eddcd46bf",
+      "extension": ".png",
+      "bytes": 12795,
+      "object": "review-archive/objects/0e/0ea1a6771964d9e854632b429d4052fcaabe4d60744eb9cf7d66499eddcd46bf.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0ea1a6771964d9e854632b429d4052fcaabe4d60744eb9cf7d66499eddcd46bf.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_c_edges.png": {
+      "sha256": "c359661d986010baf7e7cbae86231cf49f661611c943ef56a7a45c9ef97923a7",
+      "extension": ".png",
+      "bytes": 730,
+      "object": "review-archive/objects/c3/c359661d986010baf7e7cbae86231cf49f661611c943ef56a7a45c9ef97923a7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c3/c359661d986010baf7e7cbae86231cf49f661611c943ef56a7a45c9ef97923a7.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_option_c_ghost.png": {
+      "sha256": "f8cc8965ea665411473010cbbe462d22cb710b5a061ef6435e253ec6aecb759f",
+      "extension": ".png",
+      "bytes": 11564,
+      "object": "review-archive/objects/f8/f8cc8965ea665411473010cbbe462d22cb710b5a061ef6435e253ec6aecb759f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f8/f8cc8965ea665411473010cbbe462d22cb710b5a061ef6435e253ec6aecb759f.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_kettle_v5.png": {
+      "sha256": "bc296bff87334d769aadccd75e749f4edd0221853f1d52eae90ab04270552b3c",
+      "extension": ".png",
+      "bytes": 13058,
+      "object": "review-archive/objects/bc/bc296bff87334d769aadccd75e749f4edd0221853f1d52eae90ab04270552b3c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bc/bc296bff87334d769aadccd75e749f4edd0221853f1d52eae90ab04270552b3c.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_a_candidate.png": {
+      "sha256": "d38d64473847e83a8fb978d20fe54abe3fd32de86e6e5a0eb46f09fe023cf8e6",
+      "extension": ".png",
+      "bytes": 10948,
+      "object": "review-archive/objects/d3/d38d64473847e83a8fb978d20fe54abe3fd32de86e6e5a0eb46f09fe023cf8e6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d3/d38d64473847e83a8fb978d20fe54abe3fd32de86e6e5a0eb46f09fe023cf8e6.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_a_edges.png": {
+      "sha256": "ac76b46b49f8391e59d243fef4ee15603f2179b00a3e8575a5382c989df00f30",
+      "extension": ".png",
+      "bytes": 666,
+      "object": "review-archive/objects/ac/ac76b46b49f8391e59d243fef4ee15603f2179b00a3e8575a5382c989df00f30.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ac/ac76b46b49f8391e59d243fef4ee15603f2179b00a3e8575a5382c989df00f30.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_a_ghost.png": {
+      "sha256": "9c862aed3e89c16183614cf0385f4db00999e0e0b136d719b6c5230f71fac302",
+      "extension": ".png",
+      "bytes": 10028,
+      "object": "review-archive/objects/9c/9c862aed3e89c16183614cf0385f4db00999e0e0b136d719b6c5230f71fac302.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9c/9c862aed3e89c16183614cf0385f4db00999e0e0b136d719b6c5230f71fac302.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_b_candidate.png": {
+      "sha256": "475b5c5dd0ae2c455a433306d639c2942280ed15a1598293eabb61367dfcf4ed",
+      "extension": ".png",
+      "bytes": 11049,
+      "object": "review-archive/objects/47/475b5c5dd0ae2c455a433306d639c2942280ed15a1598293eabb61367dfcf4ed.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/47/475b5c5dd0ae2c455a433306d639c2942280ed15a1598293eabb61367dfcf4ed.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_b_edges.png": {
+      "sha256": "5ac8292259ab4878373bbb393734875d4a42b3f8457d6c718be4734609da7045",
+      "extension": ".png",
+      "bytes": 660,
+      "object": "review-archive/objects/5a/5ac8292259ab4878373bbb393734875d4a42b3f8457d6c718be4734609da7045.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5a/5ac8292259ab4878373bbb393734875d4a42b3f8457d6c718be4734609da7045.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_b_ghost.png": {
+      "sha256": "902978bcffd465bd2f0bd50a56644d8769ac28ab4b7732baacfde8e9d28afb41",
+      "extension": ".png",
+      "bytes": 10113,
+      "object": "review-archive/objects/90/902978bcffd465bd2f0bd50a56644d8769ac28ab4b7732baacfde8e9d28afb41.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/90/902978bcffd465bd2f0bd50a56644d8769ac28ab4b7732baacfde8e9d28afb41.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_c_candidate.png": {
+      "sha256": "df7b5b688d8b2b70bf8e24ae2d82e0ce7d3d147a285bb9f7f1d8b3bc43ecf981",
+      "extension": ".png",
+      "bytes": 11137,
+      "object": "review-archive/objects/df/df7b5b688d8b2b70bf8e24ae2d82e0ce7d3d147a285bb9f7f1d8b3bc43ecf981.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/df/df7b5b688d8b2b70bf8e24ae2d82e0ce7d3d147a285bb9f7f1d8b3bc43ecf981.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_c_edges.png": {
+      "sha256": "11331a45af1bf94f6af0619d6a49ce40d8b3f9ce86e31eec6fb69c052ae76fbe",
+      "extension": ".png",
+      "bytes": 656,
+      "object": "review-archive/objects/11/11331a45af1bf94f6af0619d6a49ce40d8b3f9ce86e31eec6fb69c052ae76fbe.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/11/11331a45af1bf94f6af0619d6a49ce40d8b3f9ce86e31eec6fb69c052ae76fbe.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_option_c_ghost.png": {
+      "sha256": "23b79724611f452d4b6c974e0714a152dbd8c8933cf7fc4fb915dbdcf5be0667",
+      "extension": ".png",
+      "bytes": 10179,
+      "object": "review-archive/objects/23/23b79724611f452d4b6c974e0714a152dbd8c8933cf7fc4fb915dbdcf5be0667.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/23/23b79724611f452d4b6c974e0714a152dbd8c8933cf7fc4fb915dbdcf5be0667.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/obj_sink_v5.png": {
+      "sha256": "31ca919a515f05ac51c2850092df8501c9574c05013ea5a88ea5aca5e3d40f2a",
+      "extension": ".png",
+      "bytes": 11449,
+      "object": "review-archive/objects/31/31ca919a515f05ac51c2850092df8501c9574c05013ea5a88ea5aca5e3d40f2a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/31/31ca919a515f05ac51c2850092df8501c9574c05013ea5a88ea5aca5e3d40f2a.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/ordinary_counter_seam_option_a.png": {
+      "sha256": "70c7885df72600c3897f603d84774416a74ae8751622e1921037398795b823e0",
+      "extension": ".png",
+      "bytes": 13590,
+      "object": "review-archive/objects/70/70c7885df72600c3897f603d84774416a74ae8751622e1921037398795b823e0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/70/70c7885df72600c3897f603d84774416a74ae8751622e1921037398795b823e0.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/ordinary_counter_seam_option_b.png": {
+      "sha256": "5796689095088e3fcecc058fc07f1809f3c5f567f8553a7f05e913dce7fd7da9",
+      "extension": ".png",
+      "bytes": 13697,
+      "object": "review-archive/objects/57/5796689095088e3fcecc058fc07f1809f3c5f567f8553a7f05e913dce7fd7da9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/57/5796689095088e3fcecc058fc07f1809f3c5f567f8553a7f05e913dce7fd7da9.png"
+    },
+    "/keeper-review/kitchen-countertop-calibration-v6/assets/ordinary_counter_seam_option_c.png": {
+      "sha256": "b13951174c8725a0ff2c17f4cfe952704cf0c6a6c2ef5c4bf372deeda98c7486",
+      "extension": ".png",
+      "bytes": 13799,
+      "object": "review-archive/objects/b1/b13951174c8725a0ff2c17f4cfe952704cf0c6a6c2ef5c4bf372deeda98c7486.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b1/b13951174c8725a0ff2c17f4cfe952704cf0c6a6c2ef5c4bf372deeda98c7486.png"
+    }
+  }
+}
