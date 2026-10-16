@@ -17,3 +17,17 @@ Continue from:
 - `/keeper-review/kitchen-kettle-recipe-shelf-v11/`
 
 Do not promote or wire this shelf without Frank's explicit approval.
+
+## Verification record
+
+- Content commit: `8f83497`.
+- Production trigger: `0ec0a67` (`[deploy]`).
+- Shelf opaque bound: exactly `19 × 6.75 lp` inside its `21 × 56-lp` cell.
+- Movement proofs: bays 2, 5 and 8; each jump is exactly `63 lp` for both
+  kettle and shelf.
+- `npm test`: 18 test files and 179 tests passed, plus every deterministic
+  kitchen and Keeper pretest.
+- Live review and archived shelf PNG both returned HTTP 200; the live shelf is
+  exactly `84 × 224` raster pixels.
+- Documentation audit: README, decisions, recipe and hand-back agree that V11
+  is decorative, non-interactive, review-only and not wired into the game.
