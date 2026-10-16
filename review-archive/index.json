@@ -11,11 +11,11 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 72,
-    "referenceCount": 2127,
-    "uniqueObjectCount": 946,
-    "logicalBytes": 137611326,
-    "uniqueBytes": 68432450,
+    "setCount": 73,
+    "referenceCount": 2148,
+    "uniqueObjectCount": 967,
+    "logicalBytes": 137813928,
+    "uniqueBytes": 68635052,
     "deduplicatedBytes": 69178876
   },
   "legacyPaths": {
@@ -14907,6 +14907,153 @@
       "bytes": 13799,
       "object": "review-archive/objects/b1/b13951174c8725a0ff2c17f4cfe952704cf0c6a6c2ef5c4bf372deeda98c7486.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b1/b13951174c8725a0ff2c17f4cfe952704cf0c6a6c2ef5c4bf372deeda98c7486.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/obj_sink_porthole_standard_f1_frame1.png": {
+      "sha256": "261cba103c0e2ae45072d092c1450a97f285144ed81c4e2061629f83e09bcedc",
+      "extension": ".png",
+      "bytes": 1228,
+      "object": "review-archive/objects/26/261cba103c0e2ae45072d092c1450a97f285144ed81c4e2061629f83e09bcedc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/26/261cba103c0e2ae45072d092c1450a97f285144ed81c4e2061629f83e09bcedc.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/obj_sink_with_porthole_review_frame1.png": {
+      "sha256": "dff4411647987a574f89f7a148de38eb7fd281270d31a2da8961ad93cd903f58",
+      "extension": ".png",
+      "bytes": 12270,
+      "object": "review-archive/objects/df/dff4411647987a574f89f7a148de38eb7fd281270d31a2da8961ad93cd903f58.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/df/dff4411647987a574f89f7a148de38eb7fd281270d31a2da8961ad93cd903f58.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_12bay_outline_frame1.png": {
+      "sha256": "4999866eaa3fab5848f5b3c30ed4afb52b956db7c19e18dbff26ec9b93018c2c",
+      "extension": ".png",
+      "bytes": 5136,
+      "object": "review-archive/objects/49/4999866eaa3fab5848f5b3c30ed4afb52b956db7c19e18dbff26ec9b93018c2c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/49/4999866eaa3fab5848f5b3c30ed4afb52b956db7c19e18dbff26ec9b93018c2c.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_9bay_composite_frame1.png": {
+      "sha256": "90f1e7bf4d38ec5cf1847815a423fb2f1095d93ae7c3f4cfe9575c014ea7a5f1",
+      "extension": ".png",
+      "bytes": 91219,
+      "object": "review-archive/objects/90/90f1e7bf4d38ec5cf1847815a423fb2f1095d93ae7c3f4cfe9575c014ea7a5f1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/90/90f1e7bf4d38ec5cf1847815a423fb2f1095d93ae7c3f4cfe9575c014ea7a5f1.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_far_cap_closed_frame1.png": {
+      "sha256": "e9c2d8823aed83a8e980939f58ed4474dd4d0205a17937bceb118bceff2dfcd7",
+      "extension": ".png",
+      "bytes": 779,
+      "object": "review-archive/objects/e9/e9c2d8823aed83a8e980939f58ed4474dd4d0205a17937bceb118bceff2dfcd7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e9/e9c2d8823aed83a8e980939f58ed4474dd4d0205a17937bceb118bceff2dfcd7.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_far_cap_open_frame1.png": {
+      "sha256": "b2158de3460ae0c0eb19948ecb1731a62aa2e68898493f6ce081d7434c664a0f",
+      "extension": ".png",
+      "bytes": 820,
+      "object": "review-archive/objects/b2/b2158de3460ae0c0eb19948ecb1731a62aa2e68898493f6ce081d7434c664a0f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b2/b2158de3460ae0c0eb19948ecb1731a62aa2e68898493f6ce081d7434c664a0f.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_far_cap_open_with_v6_door_frame1.png": {
+      "sha256": "e3b5f8dece56ac50973ed567556df6c5bce0d824d0566ebe747075e5ff77410b",
+      "extension": ".png",
+      "bytes": 29219,
+      "object": "review-archive/objects/e3/e3b5f8dece56ac50973ed567556df6c5bce0d824d0566ebe747075e5ff77410b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e3/e3b5f8dece56ac50973ed567556df6c5bce0d824d0566ebe747075e5ff77410b.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_repeat_a_frame1.png": {
+      "sha256": "ea07f1c99ef47848bd662abeaa3ef9e39294f5571d6c753a68ad76a5b59a27bb",
+      "extension": ".png",
+      "bytes": 598,
+      "object": "review-archive/objects/ea/ea07f1c99ef47848bd662abeaa3ef9e39294f5571d6c753a68ad76a5b59a27bb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ea/ea07f1c99ef47848bd662abeaa3ef9e39294f5571d6c753a68ad76a5b59a27bb.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_repeat_b_frame1.png": {
+      "sha256": "35d3c015943e78df8d0b551aa7da499d74bca40cfad48ecf5cbdbfd5095848f4",
+      "extension": ".png",
+      "bytes": 599,
+      "object": "review-archive/objects/35/35d3c015943e78df8d0b551aa7da499d74bca40cfad48ecf5cbdbfd5095848f4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/35/35d3c015943e78df8d0b551aa7da499d74bca40cfad48ecf5cbdbfd5095848f4.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_repeat_c_frame1.png": {
+      "sha256": "c6dd2c5a29798fc906a78d7fb709ed0ffd69d6f8fbcb502613fe9890e72aec3d",
+      "extension": ".png",
+      "bytes": 602,
+      "object": "review-archive/objects/c6/c6dd2c5a29798fc906a78d7fb709ed0ffd69d6f8fbcb502613fe9890e72aec3d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c6/c6dd2c5a29798fc906a78d7fb709ed0ffd69d6f8fbcb502613fe9890e72aec3d.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_shell_10bay_frame1.png": {
+      "sha256": "c70d34d216a0b4ad7bea850621d2026b97ac7e680b475567d796659a98affa40",
+      "extension": ".png",
+      "bytes": 1805,
+      "object": "review-archive/objects/c7/c70d34d216a0b4ad7bea850621d2026b97ac7e680b475567d796659a98affa40.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c7/c70d34d216a0b4ad7bea850621d2026b97ac7e680b475567d796659a98affa40.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_shell_11bay_frame1.png": {
+      "sha256": "e60efe379f3a7981ea228c57180e6b6e1742c126456f1b9b52b0ed4a9d15bdc8",
+      "extension": ".png",
+      "bytes": 1880,
+      "object": "review-archive/objects/e6/e60efe379f3a7981ea228c57180e6b6e1742c126456f1b9b52b0ed4a9d15bdc8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e6/e60efe379f3a7981ea228c57180e6b6e1742c126456f1b9b52b0ed4a9d15bdc8.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_shell_12bay_frame1.png": {
+      "sha256": "28abf2b35cbcbfef7e6fefb0e210ae27d68126c7a3ecbe1f0a893427d1461729",
+      "extension": ".png",
+      "bytes": 2011,
+      "object": "review-archive/objects/28/28abf2b35cbcbfef7e6fefb0e210ae27d68126c7a3ecbe1f0a893427d1461729.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/28/28abf2b35cbcbfef7e6fefb0e210ae27d68126c7a3ecbe1f0a893427d1461729.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_shell_6bay_frame1.png": {
+      "sha256": "f60a4833fa132465dfb4e2ff0580f86a17d162e257bcf3ee09485b78786a1020",
+      "extension": ".png",
+      "bytes": 1376,
+      "object": "review-archive/objects/f6/f60a4833fa132465dfb4e2ff0580f86a17d162e257bcf3ee09485b78786a1020.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f6/f60a4833fa132465dfb4e2ff0580f86a17d162e257bcf3ee09485b78786a1020.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_shell_7bay_frame1.png": {
+      "sha256": "5f5128c31be748a3b1d482f683d4a8046fc95eb2c028daa93cb7f77e0b5a7c4e",
+      "extension": ".png",
+      "bytes": 1507,
+      "object": "review-archive/objects/5f/5f5128c31be748a3b1d482f683d4a8046fc95eb2c028daa93cb7f77e0b5a7c4e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5f/5f5128c31be748a3b1d482f683d4a8046fc95eb2c028daa93cb7f77e0b5a7c4e.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_shell_8bay_frame1.png": {
+      "sha256": "e5e66993b42758ef87cf0fd11c5ebe355da9964ba1c4d72ee18a22ac1475caa2",
+      "extension": ".png",
+      "bytes": 1592,
+      "object": "review-archive/objects/e5/e5e66993b42758ef87cf0fd11c5ebe355da9964ba1c4d72ee18a22ac1475caa2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e5/e5e66993b42758ef87cf0fd11c5ebe355da9964ba1c4d72ee18a22ac1475caa2.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_shell_9bay_frame1.png": {
+      "sha256": "6ab0784f0763ae189e5635796b8e68191f66ce79693d9f2bb2d38aef156ae0c2",
+      "extension": ".png",
+      "bytes": 1692,
+      "object": "review-archive/objects/6a/6ab0784f0763ae189e5635796b8e68191f66ce79693d9f2bb2d38aef156ae0c2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6a/6ab0784f0763ae189e5635796b8e68191f66ce79693d9f2bb2d38aef156ae0c2.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_stair_cap_frame1.png": {
+      "sha256": "06d1eb4a20e53bdd14dd9c1d575c04bf2e34610473e1888b8b76819a79ca8ade",
+      "extension": ".png",
+      "bytes": 980,
+      "object": "review-archive/objects/06/06d1eb4a20e53bdd14dd9c1d575c04bf2e34610473e1888b8b76819a79ca8ade.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/06/06d1eb4a20e53bdd14dd9c1d575c04bf2e34610473e1888b8b76819a79ca8ade.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/sink_porthole_move_bay_2_frame1.png": {
+      "sha256": "3943050afdd4e49181004876dae799fca043f915096c5c4d96ac86b1eb4e7236",
+      "extension": ".png",
+      "bytes": 15743,
+      "object": "review-archive/objects/39/3943050afdd4e49181004876dae799fca043f915096c5c4d96ac86b1eb4e7236.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/39/3943050afdd4e49181004876dae799fca043f915096c5c4d96ac86b1eb4e7236.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/sink_porthole_move_bay_5_frame1.png": {
+      "sha256": "c3cf1dfb09e621b5667c53f5ee2ada8b81191ac5c2024a36c03725b2163732a0",
+      "extension": ".png",
+      "bytes": 15760,
+      "object": "review-archive/objects/c3/c3cf1dfb09e621b5667c53f5ee2ada8b81191ac5c2024a36c03725b2163732a0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c3/c3cf1dfb09e621b5667c53f5ee2ada8b81191ac5c2024a36c03725b2163732a0.png"
+    },
+    "/keeper-review/kitchen-room-flat-cutaway-v7/assets/sink_porthole_move_bay_8_frame1.png": {
+      "sha256": "fa93b8a31d8552e7b72d247b49040d61d14c7254debbc74bccbeedb8e0b7ae4c",
+      "extension": ".png",
+      "bytes": 15786,
+      "object": "review-archive/objects/fa/fa93b8a31d8552e7b72d247b49040d61d14c7254debbc74bccbeedb8e0b7ae4c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fa/fa93b8a31d8552e7b72d247b49040d61d14c7254debbc74bccbeedb8e0b7ae4c.png"
     }
   }
 }

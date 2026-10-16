@@ -1,0 +1,554 @@
+{
+  "recipe": {
+    "id": "kitchen-room-flat-cutaway-v1",
+    "status": "review-draft-authority",
+    "date": "2026-10-16",
+    "density": 4,
+    "keeperUnitsPerLp": 8,
+    "projection": {
+      "id": "flat-cutaway-v1",
+      "camera": "straight-on",
+      "vanishingPoint": null,
+      "horizontalConvergenceLp": 0,
+      "verticalConvergenceLp": 0,
+      "runtimeDepthScaling": false,
+      "keeperScale": 1,
+      "assetScale": 1,
+      "depthCues": [
+        "layer-order",
+        "parallel-horizontal-bands",
+        "contact-shadow",
+        "shallow-option-b-tops"
+      ]
+    },
+    "canvas": {
+      "heightLp": 56,
+      "footLineFromTopLp": 56,
+      "doorDatumLp": 4,
+      "bayWidthLp": 21,
+      "supportedBayCounts": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "widthFormula": "4 + 21 * bayCount",
+      "nineBayWidthLp": 193,
+      "twelveBayWidthLp": 256
+    },
+    "horizontalZones": {
+      "ceilingBeam": {
+        "topLp": 0,
+        "heightLp": 5
+      },
+      "wallField": {
+        "topLp": 5,
+        "heightLp": 44.5
+      },
+      "skirting": {
+        "topLp": 49.5,
+        "heightLp": 1.5
+      },
+      "floorBand": {
+        "topLp": 51,
+        "heightLp": 5
+      }
+    },
+    "modularPieces": {
+      "stairCap": {
+        "cellLp": [
+          46,
+          56
+        ],
+        "assemblyContributionLp": 4,
+        "assemblyCropLp": [
+          42,
+          0,
+          46,
+          56
+        ],
+        "ladderBoxLp": [
+          8,
+          5,
+          24,
+          49
+        ],
+        "ladderRungCentresFromTopLp": [
+          8,
+          14,
+          20,
+          26,
+          32,
+          38,
+          44
+        ]
+      },
+      "repeat": {
+        "cellLp": [
+          21,
+          56
+        ],
+        "variants": 3,
+        "assemblyContributionLp": 21,
+        "sharedEdgeRule": "left-and-right-edge-columns-identical-for-all-y",
+        "textureSafeInsetLp": 2
+      },
+      "farCap": {
+        "cellLp": [
+          38,
+          56
+        ],
+        "assemblyContributionLp": 0,
+        "assemblyPlacement": "right-aligned-overlay",
+        "rightSideWallBoxLp": [
+          34,
+          0,
+          38,
+          56
+        ],
+        "cupboardHingeXLp": 37,
+        "closedDoorVisibility": "none",
+        "openDoorLeafSource": "Kitchen V6 obj_cupboard"
+      }
+    },
+    "floor": {
+      "bandHeightLp": 5,
+      "boardDirection": "horizontal",
+      "permittedJointAnglesDeg": [
+        0,
+        90
+      ],
+      "diagonalOrConvergingLines": false,
+      "frontLip": false,
+      "supportLineFromTopLp": 56
+    },
+    "sinkPorthole": {
+      "id": "obj_sink_porthole",
+      "parentAsset": "obj_sink",
+      "cellLp": [
+        21,
+        56
+      ],
+      "bayOccupancy": 1,
+      "layerRole": "sink-owned-back-wall-child",
+      "z": 25,
+      "parentLocalAnchorLp": [
+        10.5,
+        56
+      ],
+      "centreLpFromCellTop": [
+        10.5,
+        18.5
+      ],
+      "centreHeightAboveFloorLp": 37.5,
+      "outerDiameterLp": 15,
+      "glazingDiameterLp": 11,
+      "ringBandLp": 1.5,
+      "outlineLp": 0.5,
+      "boltCount": 8,
+      "boltCircleRadiusLp": 6,
+      "safetyGutterLpEachSide": 3,
+      "movesWithParent": true,
+      "translationRule": "childDeltaLp == parentDeltaLp",
+      "runtimeDepthScaling": false,
+      "states": [
+        "standard"
+      ]
+    },
+    "layerOrder": {
+      "roomShell": 10,
+      "sinkPorthole": 25,
+      "backWallFurniture": 40,
+      "keeper": 50,
+      "foregroundFurniture": 60,
+      "smallForegroundChild": 70,
+      "openCupboardLeaf": 80
+    },
+    "paletteRgba": {
+      "ink": [
+        7,
+        27,
+        50,
+        255
+      ],
+      "woodDark": [
+        93,
+        48,
+        29,
+        255
+      ],
+      "wood": [
+        154,
+        86,
+        48,
+        255
+      ],
+      "woodLight": [
+        211,
+        138,
+        70,
+        255
+      ],
+      "cream": [
+        247,
+        221,
+        165,
+        255
+      ],
+      "creamLight": [
+        255,
+        241,
+        201,
+        255
+      ],
+      "creamShadow": [
+        217,
+        183,
+        118,
+        255
+      ],
+      "brassDark": [
+        135,
+        80,
+        12,
+        255
+      ],
+      "brass": [
+        215,
+        150,
+        34,
+        255
+      ],
+      "brassLight": [
+        255,
+        205,
+        67,
+        255
+      ],
+      "glassDeep": [
+        20,
+        126,
+        181,
+        255
+      ],
+      "glass": [
+        47,
+        183,
+        224,
+        255
+      ],
+      "glassLight": [
+        153,
+        231,
+        247,
+        255
+      ]
+    },
+    "acceptanceRules": [
+      "Every shell is exactly (4 + 21n) by 56 logical pixels for n=6..12.",
+      "All room verticals are vertical and all structural horizontals are horizontal.",
+      "No floor, beam, skirting, wall or frame line converges, tapers or uses a diagonal depth cue.",
+      "The floor band is exactly 5 logical pixels and the support line is invariant.",
+      "Repeat modules join with pixel-identical edge columns and are never stretched.",
+      "The stair cap contributes only its declared rightmost 4 logical pixels to assembled width.",
+      "The far cap overlays the rightmost 38 logical pixels and never changes total width.",
+      "The porthole remains inside one 21-logical-pixel bay with 3-logical-pixel side gutters.",
+      "The porthole and sink always receive the same horizontal translation and no scale change.",
+      "Kitchen V6 furniture, Keeper art, runtime sprites, Final art and manifests remain byte-identical."
+    ]
+  },
+  "oldShell": "/keeper-review/kitchen-basic-assets-v6-option-b/assets/v6_room_kitchen_shell_9bay_frame1.png",
+  "shells": {
+    "6": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_shell_6bay_frame1.png",
+    "7": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_shell_7bay_frame1.png",
+    "8": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_shell_8bay_frame1.png",
+    "9": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_shell_9bay_frame1.png",
+    "10": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_shell_10bay_frame1.png",
+    "11": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_shell_11bay_frame1.png",
+    "12": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_shell_12bay_frame1.png"
+  },
+  "pieces": {
+    "stair": {
+      "png": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_stair_cap.png",
+      "json": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_stair_cap.json",
+      "sha256": "06d1eb4a20e53bdd14dd9c1d575c04bf2e34610473e1888b8b76819a79ca8ade",
+      "meta": {
+        "w": 46,
+        "h": 56,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          23.0,
+          56
+        ],
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "alphaBoundLp": {
+          "xLp": 0.0,
+          "yLp": 0.0,
+          "widthLp": 46.0,
+          "heightLp": 56.0
+        },
+        "z": 15,
+        "moduleContributionLp": 4,
+        "assemblyCropLp": [
+          42,
+          0,
+          46,
+          56
+        ]
+      },
+      "url": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_stair_cap_frame1.png"
+    },
+    "repeatA": {
+      "png": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_repeat_a.png",
+      "json": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_repeat_a.json",
+      "sha256": "ea07f1c99ef47848bd662abeaa3ef9e39294f5571d6c753a68ad76a5b59a27bb",
+      "meta": {
+        "w": 21,
+        "h": 56,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          10.5,
+          56
+        ],
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "alphaBoundLp": {
+          "xLp": 0.0,
+          "yLp": 0.0,
+          "widthLp": 21.0,
+          "heightLp": 56.0
+        },
+        "z": 10,
+        "moduleContributionLp": 21,
+        "variant": 1
+      },
+      "url": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_repeat_a_frame1.png"
+    },
+    "repeatB": {
+      "png": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_repeat_b.png",
+      "json": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_repeat_b.json",
+      "sha256": "35d3c015943e78df8d0b551aa7da499d74bca40cfad48ecf5cbdbfd5095848f4",
+      "meta": {
+        "w": 21,
+        "h": 56,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          10.5,
+          56
+        ],
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "alphaBoundLp": {
+          "xLp": 0.0,
+          "yLp": 0.0,
+          "widthLp": 21.0,
+          "heightLp": 56.0
+        },
+        "z": 10,
+        "moduleContributionLp": 21,
+        "variant": 2
+      },
+      "url": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_repeat_b_frame1.png"
+    },
+    "repeatC": {
+      "png": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_repeat_c.png",
+      "json": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_repeat_c.json",
+      "sha256": "c6dd2c5a29798fc906a78d7fb709ed0ffd69d6f8fbcb502613fe9890e72aec3d",
+      "meta": {
+        "w": 21,
+        "h": 56,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          10.5,
+          56
+        ],
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "alphaBoundLp": {
+          "xLp": 0.0,
+          "yLp": 0.0,
+          "widthLp": 21.0,
+          "heightLp": 56.0
+        },
+        "z": 10,
+        "moduleContributionLp": 21,
+        "variant": 3
+      },
+      "url": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_repeat_c_frame1.png"
+    },
+    "farClosed": {
+      "png": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_far_cap_closed.png",
+      "json": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_far_cap_closed.json",
+      "sha256": "e9c2d8823aed83a8e980939f58ed4474dd4d0205a17937bceb118bceff2dfcd7",
+      "meta": {
+        "w": 38,
+        "h": 56,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          19.0,
+          56
+        ],
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "alphaBoundLp": {
+          "xLp": 0.0,
+          "yLp": 0.0,
+          "widthLp": 38.0,
+          "heightLp": 56.0
+        },
+        "z": 20,
+        "moduleContributionLp": 0,
+        "doorView": "right-side-wall-closed-invisible"
+      },
+      "url": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_far_cap_closed_frame1.png"
+    },
+    "farOpen": {
+      "png": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_far_cap_open.png",
+      "json": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_far_cap_open.json",
+      "sha256": "b2158de3460ae0c0eb19948ecb1731a62aa2e68898493f6ce081d7434c664a0f",
+      "meta": {
+        "w": 38,
+        "h": 56,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          19.0,
+          56
+        ],
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "alphaBoundLp": {
+          "xLp": 0.0,
+          "yLp": 0.0,
+          "widthLp": 38.0,
+          "heightLp": 56.0
+        },
+        "z": 20,
+        "moduleContributionLp": 0,
+        "doorView": "right-side-wall-opening"
+      },
+      "url": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_far_cap_open_frame1.png"
+    },
+    "porthole": {
+      "png": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/obj_sink_porthole_standard_f1.png",
+      "json": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/obj_sink_porthole_standard_f1.json",
+      "sha256": "261cba103c0e2ae45072d092c1450a97f285144ed81c4e2061629f83e09bcedc",
+      "meta": {
+        "w": 21,
+        "h": 56,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          10.5,
+          56
+        ],
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "alphaBoundLp": {
+          "xLp": 3.0,
+          "yLp": 11.0,
+          "widthLp": 15.0,
+          "heightLp": 15.0
+        },
+        "id": "obj_sink_porthole",
+        "parentAsset": "obj_sink",
+        "cellLp": [
+          21,
+          56
+        ],
+        "bayOccupancy": 1,
+        "layerRole": "sink-owned-back-wall-child",
+        "z": 25,
+        "parentLocalAnchorLp": [
+          10.5,
+          56
+        ],
+        "centreLpFromCellTop": [
+          10.5,
+          18.5
+        ],
+        "centreHeightAboveFloorLp": 37.5,
+        "outerDiameterLp": 15,
+        "glazingDiameterLp": 11,
+        "ringBandLp": 1.5,
+        "outlineLp": 0.5,
+        "boltCount": 8,
+        "boltCircleRadiusLp": 6,
+        "safetyGutterLpEachSide": 3,
+        "movesWithParent": true,
+        "translationRule": "childDeltaLp == parentDeltaLp",
+        "runtimeDepthScaling": false,
+        "states": [
+          "standard"
+        ]
+      },
+      "url": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/obj_sink_porthole_standard_f1_frame1.png"
+    }
+  },
+  "sink": "/keeper-review/kitchen-basic-assets-v6-option-b/assets/obj_sink_standard_f1_frame1.png",
+  "attached": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/obj_sink_with_porthole_review_frame1.png",
+  "moves": {
+    "2": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/sink_porthole_move_bay_2_frame1.png",
+    "5": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/sink_porthole_move_bay_5_frame1.png",
+    "8": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/sink_porthole_move_bay_8_frame1.png"
+  },
+  "room9": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_9bay_composite_frame1.png",
+  "room12": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_12bay_outline_frame1.png",
+  "farDoor": "/keeper-review/kitchen-room-flat-cutaway-v7/assets/room_kitchen_far_cap_open_with_v6_door_frame1.png",
+  "rows": [
+    {
+      "name": "stair-side cap",
+      "cell": "46 \u00d7 56 lp",
+      "role": "4-lp assembly crop",
+      "sha256": "06d1eb4a20e53bdd14dd9c1d575c04bf2e34610473e1888b8b76819a79ca8ade"
+    },
+    {
+      "name": "repeat A",
+      "cell": "21 \u00d7 56 lp",
+      "role": "one whole bay",
+      "sha256": "ea07f1c99ef47848bd662abeaa3ef9e39294f5571d6c753a68ad76a5b59a27bb"
+    },
+    {
+      "name": "far cap closed",
+      "cell": "38 \u00d7 56 lp",
+      "role": "0-lp right overlay",
+      "sha256": "e9c2d8823aed83a8e980939f58ed4474dd4d0205a17937bceb118bceff2dfcd7"
+    },
+    {
+      "name": "sink porthole",
+      "cell": "21 \u00d7 56 lp",
+      "role": "sink-owned wall child",
+      "sha256": "261cba103c0e2ae45072d092c1450a97f285144ed81c4e2061629f83e09bcedc"
+    }
+  ]
+}

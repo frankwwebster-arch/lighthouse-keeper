@@ -1,0 +1,24 @@
+{
+  "w": 21,
+  "h": 56,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    10.5,
+    56
+  ],
+  "projection": {
+    "id": "flat-cutaway-v1",
+    "runtimeDepthScaling": false
+  },
+  "alphaBoundLp": {
+    "xLp": 0.5,
+    "yLp": 11.0,
+    "widthLp": 20.0,
+    "heightLp": 45.0
+  },
+  "reviewComposite": true,
+  "parent": "obj_sink",
+  "child": "obj_sink_porthole"
+}

@@ -47,7 +47,15 @@ and the full hand-back is
 [`docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V6_OPTION_B_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V6_OPTION_B_2026-10-16.md);
 the complete V5 measurements remain in
 [`docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V5_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V5_2026-10-16.md).
-Neither V5 nor V6 is approved, promoted or wired into the live game.
+The matching review-only room redraw is at
+`/keeper-review/kitchen-room-flat-cutaway-v7/`. It rebuilds the 56-lp shell as
+parallel ceiling, wall, skirting and exact 5-lp floor bands for every 6–12-bay
+width. Its 15-lp porthole is a separate wall child of the sink, so both move by
+the same bay translation. The exact reusable architecture recipe is
+[`docs/KITCHEN_ROOM_FLAT_CUTAWAY_RECIPE_2026-10-16.md`](docs/KITCHEN_ROOM_FLAT_CUTAWAY_RECIPE_2026-10-16.md)
+and the hand-back is
+[`docs/CODEX_TO_CLAUDE_KITCHEN_ROOM_FLAT_CUTAWAY_V7_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_ROOM_FLAT_CUTAWAY_V7_2026-10-16.md).
+V5, V6 and Room V7 remain unapproved, unpromoted and unwired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

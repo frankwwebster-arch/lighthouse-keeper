@@ -1,0 +1,24 @@
+{
+  "w": 193,
+  "h": 56,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    96.5,
+    56
+  ],
+  "projection": {
+    "id": "flat-cutaway-v1",
+    "runtimeDepthScaling": false
+  },
+  "alphaBoundLp": {
+    "xLp": 0.0,
+    "yLp": 0.0,
+    "widthLp": 193.0,
+    "heightLp": 56.0
+  },
+  "reviewComposite": true,
+  "sinkBay": 5,
+  "childBay": 5
+}

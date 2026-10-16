@@ -1,0 +1,202 @@
+{
+  "version": 7,
+  "status": "reversible-draft",
+  "scope": "kitchen-room-and-sink-porthole-only",
+  "visualBaseline": "Kitchen V6 Option B furniture plus approved flat room direction",
+  "recipe": {
+    "path": "data/kitchen_room_flat_cutaway_recipe.json",
+    "sha256": "0d4b033dbf474c4861a3ae515ae883e14d5b3ed4678dd27e1563ce8613b58bee"
+  },
+  "runtimeChanged": false,
+  "finalChanged": false,
+  "keeperChanged": false,
+  "v6FurnitureChanged": false,
+  "protectedSnapshots": {
+    "kitchenV6": "1c16688536b26f1b4f2485619017fe6735a79d63ef9ee9345d29d556d866a28d",
+    "runtimeSpriteManifest": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
+    "animationWorkbenchFinalState": "6c349a70f591cba21016cf9a7a49424b971d8aed895504ba775ebd158017c658",
+    "approvedKeeperSourceFamily": "a33b0065654d040afe81d863331bc5e6dab0355dc4d6687c8436cf55bda91efb"
+  },
+  "outputs": [
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/obj_sink_porthole_standard_f1.json",
+      "sha256": "46129eba28f51ea3e951928f1e74196f907efd0db1abaf4583747032acbc4025"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/obj_sink_porthole_standard_f1.png",
+      "sha256": "261cba103c0e2ae45072d092c1450a97f285144ed81c4e2061629f83e09bcedc"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/obj_sink_with_porthole_review.json",
+      "sha256": "b79b1212ec10a27ab385e02e2689025e509098c3c1a9866d00f9165204955d18"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/obj_sink_with_porthole_review.png",
+      "sha256": "dff4411647987a574f89f7a148de38eb7fd281270d31a2da8961ad93cd903f58"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_12bay_outline.json",
+      "sha256": "c0877b863448d8aafe3740176684f82fad9f03cc760f62fe52b11f72cfc0db41"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_12bay_outline.png",
+      "sha256": "4999866eaa3fab5848f5b3c30ed4afb52b956db7c19e18dbff26ec9b93018c2c"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_9bay_composite.json",
+      "sha256": "9472d42dd405b97fa58f7456e1f78f076ed8e469c871b965a644353bcaca643c"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_9bay_composite.png",
+      "sha256": "90f1e7bf4d38ec5cf1847815a423fb2f1095d93ae7c3f4cfe9575c014ea7a5f1"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_far_cap_closed.json",
+      "sha256": "170540a007a2db37fcbd288391a3d4faa9d578a61ef73213640435d80b425b46"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_far_cap_closed.png",
+      "sha256": "e9c2d8823aed83a8e980939f58ed4474dd4d0205a17937bceb118bceff2dfcd7"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_far_cap_open.json",
+      "sha256": "a27490fd5431b0671f6de220ef7854e367c9a1865cdabb7b78639f7250cb1d4e"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_far_cap_open.png",
+      "sha256": "b2158de3460ae0c0eb19948ecb1731a62aa2e68898493f6ce081d7434c664a0f"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_far_cap_open_with_v6_door.json",
+      "sha256": "4a8ffcdf67a5eeb395c0f8538cb44d9d6a85dd04a1c3f48b6c428dc876082e83"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_far_cap_open_with_v6_door.png",
+      "sha256": "e3b5f8dece56ac50973ed567556df6c5bce0d824d0566ebe747075e5ff77410b"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_repeat_a.json",
+      "sha256": "12106aa37dcd98320080b864e1e68666342f0365ea1123433385be74b50a3750"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_repeat_a.png",
+      "sha256": "ea07f1c99ef47848bd662abeaa3ef9e39294f5571d6c753a68ad76a5b59a27bb"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_repeat_b.json",
+      "sha256": "184dacb4cc04b06a6f89ddd3b077b39f960f17b5c40e48b4a5edefc503731770"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_repeat_b.png",
+      "sha256": "35d3c015943e78df8d0b551aa7da499d74bca40cfad48ecf5cbdbfd5095848f4"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_repeat_c.json",
+      "sha256": "a664aeb57f15cda29cb350171fdaabdbf1af825f5a5dbf7b4188c7bc443da03c"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_repeat_c.png",
+      "sha256": "c6dd2c5a29798fc906a78d7fb709ed0ffd69d6f8fbcb502613fe9890e72aec3d"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_shell_10bay.json",
+      "sha256": "29c8f117403705eeacc7c9d450359b254cd87dd9c9830cde885ef709ee9fdfd1"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_shell_10bay.png",
+      "sha256": "c70d34d216a0b4ad7bea850621d2026b97ac7e680b475567d796659a98affa40"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_shell_11bay.json",
+      "sha256": "3585a5eb26b0e91b9f15ce6aad670059862dbdad4c38b0f014dec94d7cabad1d"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_shell_11bay.png",
+      "sha256": "e60efe379f3a7981ea228c57180e6b6e1742c126456f1b9b52b0ed4a9d15bdc8"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_shell_12bay.json",
+      "sha256": "6272aeb64613a4ea106a1000f64ce6fa6234aa893f3bfe9f69df348d1e73f447"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_shell_12bay.png",
+      "sha256": "28abf2b35cbcbfef7e6fefb0e210ae27d68126c7a3ecbe1f0a893427d1461729"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_shell_6bay.json",
+      "sha256": "9631954c1e236ad3b4705df361fad6dc0934b0ae422d22c1c4e3b65f41a48e88"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_shell_6bay.png",
+      "sha256": "f60a4833fa132465dfb4e2ff0580f86a17d162e257bcf3ee09485b78786a1020"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_shell_7bay.json",
+      "sha256": "989a01e09522a012c16c7cfb1644aed1d33c21fe9c39aeb0bd0311cf51b925bc"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_shell_7bay.png",
+      "sha256": "5f5128c31be748a3b1d482f683d4a8046fc95eb2c028daa93cb7f77e0b5a7c4e"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_shell_8bay.json",
+      "sha256": "8dd05c1ce1a396dffd38872988fffe91e868888e527121efe992a570ee28b33a"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_shell_8bay.png",
+      "sha256": "e5e66993b42758ef87cf0fd11c5ebe355da9964ba1c4d72ee18a22ac1475caa2"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_shell_9bay.json",
+      "sha256": "353a23d6b653fa3dde41a4c39dcceddebbef055c3177f6e93173fc3022127b59"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_shell_9bay.png",
+      "sha256": "6ab0784f0763ae189e5635796b8e68191f66ce79693d9f2bb2d38aef156ae0c2"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_stair_cap.json",
+      "sha256": "ce9e71c0c1634b856efb21b5280ac4b00a97683f519644a8618efbce4645f78a"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/room_kitchen_stair_cap.png",
+      "sha256": "06d1eb4a20e53bdd14dd9c1d575c04bf2e34610473e1888b8b76819a79ca8ade"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/sink_porthole_move_bay_2.json",
+      "sha256": "364d4af172074a283197c62f30ed94efe7cde1c8b08563e0e6145e5999ec32d2"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/sink_porthole_move_bay_2.png",
+      "sha256": "3943050afdd4e49181004876dae799fca043f915096c5c4d96ac86b1eb4e7236"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/sink_porthole_move_bay_5.json",
+      "sha256": "9ecc116c103dec2e23814868dfa6ed15f4c2d1f4eeed8cd83c62412bfce1d4df"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/sink_porthole_move_bay_5.png",
+      "sha256": "c3cf1dfb09e621b5667c53f5ee2ada8b81191ac5c2024a36c03725b2163732a0"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/sink_porthole_move_bay_8.json",
+      "sha256": "c2a2d23d0dabdcbc7546df2ac2a12a740f3913ac5d1c90a0f3b21e5f752b3cd0"
+    },
+    {
+      "path": "art/raw/kitchen-room-flat-cutaway-2026-10-16-v7/sink_porthole_move_bay_8.png",
+      "sha256": "fa93b8a31d8552e7b72d247b49040d61d14c7254debbc74bccbeedb8e0b7ae4c"
+    },
+    {
+      "path": "art/drafts/kitchen-room-flat-cutaway-2026-10-16-v7/review-data.json",
+      "sha256": "2dad217642d0b82e329ac811fc18c39cda14fc9a858d868cef458002983b16e6"
+    },
+    {
+      "path": "art/drafts/kitchen-room-flat-cutaway-2026-10-16-v7/room-catalogue.json",
+      "sha256": "dce861d6041fe1c360ae1b377370779811cbf903a3e15df3656ea13923c0e3e9"
+    },
+    {
+      "path": "public/keeper-review/kitchen-room-flat-cutaway-v7/index.html",
+      "sha256": "8183c69d4ed5cc01a640ac23d74bd7841ecc7c128dd25b1ff81542286d4ae18b"
+    }
+  ]
+}

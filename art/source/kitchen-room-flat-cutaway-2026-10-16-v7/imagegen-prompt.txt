@@ -1,0 +1,7 @@
+Use case: stylized-concept
+Asset type: reference-only concept study for a 2D game room shell; no generated pixels will be used directly in production
+Primary request: redraw the Lighthouse Keeper kitchen room architecture to match the flat, straight-on dollhouse projection of Frank's approved room reference while preserving the warm polished pixel-illustration character and Kitchen V6 furniture scale. Add one brass porthole-style window on the back wall centered directly above the sink, visually clear that it is a wall-mounted child of the movable sink.
+Composition: wide front elevation; vertical verticals; parallel horizontals; dominant back wall; restrained 5-lp horizontal floor band; no foreground stage lip; established stair-side datum and right-side-wall cupboard edge.
+Geometry: zero vanishing point, zero convergence, no tapered members, constant 21-lp wall bays, parallel ceiling/skirting/floor bands. Porthole outer diameter 15 lp, glazing 11 lp, centre 37.5 lp above floor.
+Style: polished smooth anti-aliased pixel illustration at 4x density; warm cream plaster, dark outlined honey-brown timber, brass details.
+Constraints: no V-shaped gaps, trapezoids, diagonal floorboards, large exposed side planes, extra furniture, text or watermark. Porthole must remain separable and move horizontally with the sink.
