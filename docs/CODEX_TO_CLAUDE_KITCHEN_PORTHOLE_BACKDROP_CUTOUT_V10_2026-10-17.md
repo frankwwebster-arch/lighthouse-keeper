@@ -65,6 +65,14 @@ Keeper, Final, production sprites and live manifests remain unchanged.
 
 ## Verification record
 
-The deterministic digest, archive counts, test results, deployment commit and
-live-browser evidence are recorded after the final immutable set is archived
-and deployed.
+- Content commit: `4ab8315`.
+- Production trigger: `a362356` (`[deploy]`).
+- `npm test`: 18 test files and 179 tests passed, together with every kitchen
+  and Keeper deterministic pretest.
+- Review archive: V10 media is content-addressed; no public review binary is
+  committed under the route.
+- Live check: the production review route returned HTTP 200 and the archived
+  refrigerator resolved as `image/png`, exactly `84 × 84` raster pixels.
+- Documentation audit: README, decision history, background-window contract,
+  V8 historical note, V10 recipe and this hand-back all agree that V9 is
+  rejected, V10 is review-only, and nothing is approved, promoted or wired.
