@@ -1635,8 +1635,19 @@ the life of the page; playback performs only an atomic visibility switch and
 position update. Deterministic verification rejects image/architecture DOM
 creation during `renderStage`, stale asset prefixes, broken alpha mapping,
 geometry/timing drift and promotion. Run
-`npm run verify:keeper-prime-ladder-transitions-v4`; V4 is unapproved and
-Final, runtime and production remain unchanged.
+`npm run verify:keeper-prime-ladder-transitions-v4`; the V4 candidate leaves
+Final, runtime and production unchanged.
+
+Frank approved exact V4 on 16 October 2026 with: “Approved. Turn should be
+twice as fast but that can be fixed another time.” The immutable record is
+`docs/review/keeper-prime-ladder-transitions-v4-approval-2026-10-16.json`.
+This approves all 29 exact frame hashes, the smooth opaque-paint treatment,
+complete-ladder persistent compositor, roots, geometry, frame order and route
+choreography. It explicitly does not finalise turn cadence. A future
+timing-only version must change turn frames from 50 ms to 25 ms (20 to 40 fps)
+without modifying pixels, roots or geometry. Run
+`npm run verify:keeper-prime-ladder-transitions-v4-approval`; approval itself
+changes no Final, runtime or production asset.
 
 ## Review-comments workflow for a later feedback round
 

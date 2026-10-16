@@ -246,7 +246,15 @@ original antialiased fringe and mounts all decoded frame images before
 playback. Frame changes are atomic visibility switches; the Keeper and scene
 DOM are never rebuilt during playback. V2's 50-ms turns and 150-ms climb phases
 remain exact, as do all roots, geometry and rung contacts. V1/V2/V3 remain
-immutable. V4 is unapproved and changes no Final, runtime or production asset.
+immutable. The V4 candidate changed no Final, runtime or production asset.
+
+Frank approved exact V4 on 16 October 2026. The immutable approval record is
+`docs/review/keeper-prime-ladder-transitions-v4-approval-2026-10-16.json`.
+The 29 frame hashes, complete-ladder layering, persistent compositor, roots,
+geometry and route choreography are approved. The current 50-ms turn frames
+are not the final timing: a later timing-only pass must halve them to 25 ms
+(40 fps), without changing artwork or geometry. Approval itself changes no
+Final, runtime or production asset.
 
 ## Run it
 ```
@@ -268,6 +276,7 @@ npm run verify:keeper-prime-ladder-transitions-v1 # measured alternating ladder,
 npm run verify:keeper-prime-ladder-transitions-v2 # V1-exact art with corrected rung layering and tuned turn/climb cadence
 npm run verify:keeper-prime-ladder-transitions-v3 # complete ladder plus alpha-opaque Keeper frames
 npm run verify:keeper-prime-ladder-transitions-v4 # smooth opaque paint plus persistent no-rebuild playback
+npm run verify:keeper-prime-ladder-transitions-v4-approval # exact V4 approval plus deferred 2× turn timing
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
 

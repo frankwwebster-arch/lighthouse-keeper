@@ -1,0 +1,44 @@
+{
+  "schema": "lighthouse-keeper/review-approval@1",
+  "candidate": "keeper-prime-ladder-transitions-v4",
+  "approvedBy": "Frank",
+  "approvedOn": "2026-10-16",
+  "wording": "Approved. Turn should be twice as fast but that can be fixed another time.",
+  "scope": "The exact V4 Keeper artwork, alpha treatment, persistent no-rebuild compositor, complete-ladder layering, roots, geometry, frame order and route choreography are approved. Turn timing is explicitly deferred and is not final.",
+  "candidateRegister": {
+    "file": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v4/batch-register.json",
+    "sha256": "ad04e47fcb439a18d6fa4d0fe6ffbc0c907633752bc2997c0794995b392935aa"
+  },
+  "candidateSpec": {
+    "file": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v4/keeper-prime-ladder-transitions-v4.json",
+    "sha256": "01d2dc41f35cd380cc6c9faaaa29289e4b01807a4049e5d030280c810b19a25a"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-ladder-transitions-v4/index.html",
+    "sha256": "74cbac5a313e1dfcc316b9645500e5c45883c6479ee384d86d4d5f57d5d7a8cb",
+    "deployedAtCommit": "c54594f"
+  },
+  "approvedAssets": {
+    "uniqueFrames": 29,
+    "hashAuthority": "candidateRegister.publishedAssets[*].draftSha256"
+  },
+  "timing": {
+    "currentTurnFrameDurationMs": 50,
+    "currentTurnFps": 20,
+    "deferredRequestedTurnFrameDurationMs": 25,
+    "deferredRequestedTurnFps": 40,
+    "implementedByThisApproval": false
+  },
+  "approvalBoundary": {
+    "candidateApproved": true,
+    "visualAndTransitionAuthorityApproved": true,
+    "turnTimingFinal": false,
+    "finalLaneEntryAllowed": true,
+    "promotionPerformed": false
+  },
+  "promotion": {
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false
+  }
+}

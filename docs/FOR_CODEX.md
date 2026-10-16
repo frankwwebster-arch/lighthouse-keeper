@@ -303,8 +303,17 @@ unique images before playback, constructs the ladder only once, and switches
 frames by visibility without DOM replacement. Roots, frame order, geometry
 and rung contacts remain V1 exact; timing remains V2 exact at 50 ms per turn
 frame and 150 ms per ladder frame. Run
-`npm run verify:keeper-prime-ladder-transitions-v4`. V4 awaits visual review
-and changes no Final, runtime or production asset.
+`npm run verify:keeper-prime-ladder-transitions-v4`. The V4 candidate changes
+no Final, runtime or production asset.
+
+Frank approved exact V4 on 16 October 2026. Pin the decision through
+`docs/review/keeper-prime-ladder-transitions-v4-approval-2026-10-16.json` and
+`npm run verify:keeper-prime-ladder-transitions-v4-approval`. The artwork,
+alpha handling, persistent compositor, roots, geometry, frame order and route
+choreography are authority. Turn timing remains deliberately open: a later
+timing-only candidate should halve turn frames from 50 ms to 25 ms (20 to 40
+fps) without changing pixels or geometry. No Final/runtime/production
+promotion was performed by approval.
 
 ## Lift entry alignment correction (14 Oct 2026)
 
