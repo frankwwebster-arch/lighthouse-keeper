@@ -222,7 +222,7 @@ approval record is
 `docs/review/keeper-prime-stair-transitions-v6-approval-2026-10-16.json`;
 approval changes no Final, runtime or production pixels.
 
-The current reversible core-animation gate is
+The original reversible ladder gate is
 `/keeper-review/keeper-prime-ladder-transitions-v1/`. It derives seven smooth
 rear-view cells from the approved back master: first-rung mount, asymmetric
 contact and passing poses, their exact mirrors, a rightward top transfer and a
@@ -231,8 +231,18 @@ flat-footed landing completion. The route uses eight 7.5-lp rung intervals per
 door-to-ladder walk, uninterrupted continuation above the landing, and a
 matching dismount/turn/walk-to-door sequence. All visible circulation frames
 use the approved V6 0.943057 scale; room-scale reconciliation remains hidden
-behind doors. The legacy ladder strip is comparison provenance only. This V1
-candidate is unapproved and changes no Final, runtime or production asset.
+behind doors. The legacy ladder strip is comparison provenance only.
+
+Live review found the V1 motion generally sound but exposed central rung
+segments flashing through changing transparent gaps during the bottom turn.
+Frank also requested a faster turn and substantially slower climb while
+accepting the small hand/foot-to-rung mismatch at game scale. The active V2
+gate at `/keeper-review/keeper-prime-ladder-transitions-v2/` changes no artwork,
+root, ladder geometry or rung contact. It adds a 12-lp-wide central body
+occluder between the ladder and Keeper, leaving both side rails visible, changes
+turn frames from 62.5 to 50 ms, and changes ladder contact/passing/mount/
+dismount frames to 150 ms. V1 remains immutable. V2 is unapproved and changes
+no Final, runtime or production asset.
 
 ## Run it
 ```
@@ -251,6 +261,7 @@ npm run verify:keeper-prime-stair-transitions-v4 # uniform root-anchored stair-f
 npm run verify:keeper-prime-stair-transitions-v5 # whole-silhouette stair-family scale registration
 npm run verify:keeper-prime-stair-transitions-v6 # door-hidden room/circulation scale handoff
 npm run verify:keeper-prime-ladder-transitions-v1 # measured alternating ladder, approach, continuation and dismount
+npm run verify:keeper-prime-ladder-transitions-v2 # V1-exact art with corrected rung layering and tuned turn/climb cadence
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
 

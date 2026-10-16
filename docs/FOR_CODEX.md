@@ -260,7 +260,7 @@ promote or alter Final, runtime or production.
 
 ## Ladder transition gate (16 Oct 2026)
 
-The active reversible review candidate is
+The immutable first reversible review candidate is
 `/keeper-review/keeper-prime-ladder-transitions-v1/`. It replaces the legacy
 pixel ladder as a proposed animation source without using any of its pixels.
 Five smooth high-resolution studies are registered with one authority-derived
@@ -280,6 +280,18 @@ seven 256 × 320 cells with transparent gutters.
 
 Run `npm run verify:keeper-prime-ladder-transitions-v1`. The candidate is not
 approved; Final, runtime and production remain unchanged.
+
+Frank found the overall V1 animation sound but reported a ladder flash through
+the Keeper during the bottom turn. He requested a faster turn and significantly
+slower climb, while explicitly accepting the imperfect hand/foot-to-rung match
+at game scale. The active V2 review at
+`/keeper-review/keeper-prime-ladder-transitions-v2/` preserves every V1 image,
+root, frame order, rung and route dimension exactly. It places a narrow 12-lp
+central-rung occluder at z=3, between ladder z=2 and Keeper z=4, only while the
+Keeper overlaps the ladder; side rails remain visible. Turn frames change from
+62.5 to 50 ms and ladder mount/contact/passing/dismount frames use 150 ms.
+Run `npm run verify:keeper-prime-ladder-transitions-v2`. V2 is awaiting visual
+review and changes no Final, runtime or production asset.
 
 ## Lift entry alignment correction (14 Oct 2026)
 

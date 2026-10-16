@@ -1553,7 +1553,7 @@ promotion occurred.
 
 ## Keeper Prime ladder transition V1 (16 Oct 2026)
 
-The next reversible gate is
+The first reversible ladder gate was
 `/keeper-review/keeper-prime-ladder-transitions-v1/`. The legacy 8-frame ladder
 strip is retained only as rejected/comparison provenance; no legacy pixel is
 used. V1 derives its rear identity, palette and rear-facing boots from the
@@ -1576,6 +1576,25 @@ The page preloads and decodes all 29 unique image URLs before playback, keeps
 large and 4× panes stacked, and supplies route selection, pause/play, one-frame
 stepping, speed, looping and contact guides. Run
 `npm run verify:keeper-prime-ladder-transitions-v1`. The draft is unapproved;
+Final, runtime and production remain unchanged.
+
+## Keeper Prime ladder transition V2 (16 Oct 2026)
+
+Live V1 review found the animation generally sound, but central ladder rungs
+flashed through the changing transparent gaps of the Keeper during the bottom
+turn. Frank requested that the turn run faster and the climb significantly
+slower. He accepted the residual hand/foot-to-rung mismatch as tolerable,
+particularly at game scale, so V2 does not redraw or reposition any body part.
+
+V2 at `/keeper-review/keeper-prime-ladder-transitions-v2/` keeps all 29 V1
+image hashes, every route frame, root position, art scale, rung dimension and
+contact point unchanged. A 12 × 38-lp central-rung occluder is rendered at
+z=3—above ladder z=2 and below Keeper z=4—only while their bodies overlap. It
+uses the stage background and hides the central rung segments that caused the
+flash while leaving both side rails visible. Turn frames change from 62.5 ms
+to 50 ms (20 fps); ladder mount, contact, passing and dismount frames use 150
+ms (6.67 fps). V1 remains immutable. Run
+`npm run verify:keeper-prime-ladder-transitions-v2`; V2 is unapproved and
 Final, runtime and production remain unchanged.
 
 ## Review-comments workflow for a later feedback round
