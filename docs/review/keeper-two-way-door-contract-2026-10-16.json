@@ -1,0 +1,29 @@
+{
+  "schema": "lighthouse-keeper/door-contract@1",
+  "decisionBy": "Frank",
+  "decidedOn": "2026-10-16",
+  "wording": "Doors could be 2 way ie they always open away from him. And magically close once has fully walked through",
+  "contract": {
+    "twoWaySwing": true,
+    "opensAwayFromApproachingKeeper": true,
+    "screenHingeSide": "right",
+    "doorLeafProvidesCrossingOcclusion": true,
+    "roomBoundaryProvidesCrossingOcclusion": false,
+    "autoCloseOnlyAfterKeeperFullyClearsDoorway": true,
+    "autoCloseRequiresKeeperAnimation": false,
+    "doorRemainsOpenDuringRoomActivity": false,
+    "costumeSpecificDoorAnimationRequired": false,
+    "costumeChangeAllowedOnlyWhileFullyOccluded": true
+  },
+  "visual": {
+    "projection": "flat-orthographic-rectangle",
+    "perspectiveWideningAllowed": false,
+    "gradientDepthAllowed": false,
+    "onlyProtrudingComponent": "door handle"
+  },
+  "approvalBoundary": {
+    "keeperPrimeLadderTransitionsV5AnimationApproved": true,
+    "doorPresentationApproved": false,
+    "productionPromotionAllowed": false
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "lighthouse-keeper/review-approval@1",
+  "candidate": "keeper-prime-ladder-transitions-v5",
+  "approvedBy": "Frank",
+  "approvedOn": "2026-10-16",
+  "wording": "animations all approved, but door is still being shown with perspective. That's not correct. It should be a thin rectangular surface at a right angle from the hallway. The only real protrusion will be the door handle.",
+  "candidateRegister": {
+    "file": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v5/batch-register.json",
+    "sha256": "9bb2de5a905b5f06218695ac489daaf16ca64264ba14ac89216550cf1e6d9cfc"
+  },
+  "candidateSpec": {
+    "file": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v5/keeper-prime-ladder-transitions-v5.json",
+    "sha256": "0ba8a5b634f7b664bdfb85cdf0a8466c7c01981b1ec7866515fb774add8dc659"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-ladder-transitions-v5/index.html",
+    "sha256": "11234ad0f9b4c670ca1f3ae5a0c5253890da24ecadaa38e769c53e7e381a5723"
+  },
+  "approvalBoundary": {
+    "keeperAnimationApproved": true,
+    "all111RouteFramesApproved": true,
+    "keeperArtworkRootsTimingAndChoreographyApproved": true,
+    "v5DoorPresentationApproved": false,
+    "v5DoorPerspectiveRejected": true,
+    "v6DoorOnlyCorrectionAuthorized": true,
+    "finalLaneEntryAllowed": false,
+    "promotionPerformed": false
+  },
+  "requiredDoorCorrection": {
+    "orthographic": true,
+    "surface": "thin flat rectangle",
+    "orientation": "right angle from hallway",
+    "perspectiveWideningAllowed": false,
+    "gradientDepthAllowed": false,
+    "onlyProtrudingComponent": "door handle",
+    "keeperAnimationMayChange": false
+  },
+  "promotion": {
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false
+  }
+}

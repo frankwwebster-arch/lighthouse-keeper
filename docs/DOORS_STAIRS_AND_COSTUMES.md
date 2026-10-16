@@ -1,7 +1,7 @@
 # Doors, stairway, costumes and seamless animation
 
-Date: 9 October 2026
-Status: agreed design. Frank answered the open decisions on 9 October 2026 (section 9); the remaining layout choices are Codex's. The fixed-scale visual transition review described in section 7 is now built; the door/stair/costume-routing gameplay and automated pose contracts are not. Written for Frank, Codex and later Claude sessions. Decisions Frank has agreed are marked **Agreed**.
+Date: 9 October 2026; door lifecycle revised 16 October 2026
+Status: agreed design. Frank answered the original open decisions on 9 October 2026 (section 9) and replaced the former stay-open door lifecycle with the two-way rule on 16 October 2026. The remaining layout choices are Codex's. The fixed-scale visual transition review described in section 7 is now built; the door/stair/costume-routing gameplay and automated pose contracts are not. Written for Frank, Codex and later Claude sessions. Decisions Frank has agreed are marked **Agreed**.
 
 This builds on Codex's keeper work rather than replacing it:
 
@@ -24,8 +24,8 @@ The stairs are a single tall stairway, separate from the rooms and running from 
 6. **Agreed.** At bedtime he goes to brush his teeth and changes into pyjamas on the way into the bathroom. In the morning he wakes, goes to the bathroom, and is back in his normal clothes by the time he gets there.
 7. **Agreed.** If he is already in the right room but needs a different costume, he steps out of the door and back in (option "a"). Many rooms that need a costume will have their own changing place anyway.
 8. **Agreed.** The bed (under the covers) and the loo cubicle (door shut) also hide him, so they can be changing points too.
-9. **Agreed.** A door opens as he goes in, **stays open while the activity runs**, and shuts behind him when he leaves. Each room visit therefore has two hidden moments: in and out.
-10. **Agreed.** He changes at both doors. Leaving a room he goes back to standard clothes; entering the next he puts on its costume. He is always in standard clothes on the stairway, and he always opens and shuts stairway doors in standard clothes.
+9. **Agreed; revised 16 October.** Every room door swings both ways and always opens away from the approaching Keeper. Its opaque leaf hides him while he crosses. The scenery controller closes it automatically only after his complete bounds have cleared the doorway; it does not remain open for the activity.
+10. **Agreed.** He changes at both doors. Leaving a room he goes back to standard clothes; entering the next he puts on its costume. He is always in standard clothes on the stairway. Door-leaf opening/closing is a scenery operation, so automatic closing never requires costume-specific Keeper frames.
 11. **Agreed.** Every standard floor is **56 logical px** from floorboards to ceiling (section 3).
 12. **Agreed.** The stairway runs **alongside** the rooms, so every room keeps its full width. Codex chooses the side.
 13. **Agreed.** Climbing starts with **ladders**, then a **spiral staircase** (if it can be made to look right), then a **lift**. Codex owns how the lift arrives, as part of a magical lighthouse that can grow left, right, up and down. The helter-skelter slide goes on the **outside** of the tower.
@@ -83,8 +83,8 @@ Clips already delivered for climbing: `keeper_stairs_up` / `keeper_stairs_down` 
 
 ## 5. Doors
 
-- **Two layers of art.** The door leaf animates open and shut. The door frame and the wall beside it are drawn **in front of** the keeper. For a few frames he is entirely behind the frame, and that is when any costume swap happens. Per the clip rules, no uncovered in-between frame is ever shown.
-- **Open while he is in there (agreed).** A door opens as he enters, stays open while the activity runs, and shuts behind him when he leaves.
+- **Two layers of art.** The door leaf is scenery independent of the Keeper sprite. It is a flat opaque rectangle with no false depth gradient or perspective widening; only the handle protrudes. The open leaf is drawn **in front of** the Keeper and supplies the real crossing mask. Per the clip rules, no uncovered in-between costume frame is ever shown.
+- **Two-way, opens away, then auto-closes (agreed 16 October).** The same leaf swings in either direction so it always opens away from the approaching Keeper. It closes automatically only after his complete bounds clear the doorway. It does not remain open during the activity, and the closing action requires no costume-specific Keeper animation.
 - **Room doors never break (agreed).** A jammed door could trap him or cut him off from the loo. At most a door squeaks or sticks for a beat.
 - **The front door (agreed)** can break, which spoils greeting visitors until it is repaired, but it never stops him going in or out.
 - **The bathroom door already exists.** The delivered bedroom plate includes the en-suite partition and doorway. It becomes a real door that hides him. The en suite has no stairway door of its own. Its door is the one door he opens in pyjamas (the morning trip).
@@ -302,7 +302,7 @@ None of this is built. When it is:
 - The game state records what he is wearing.
 - The costume table lives in `data/costumes.csv`, copied into the game by a script, like the upgrade list (Frank had no preference; a CSV keeps it readable for him and Codex).
 - `FLOOR_STEP` and the room geometry follow the new 56 px floors once Codex fixes the band height.
-- Doors: open on entry, stay open, shut on leaving; the en-suite door opens with the pyjama clip in the morning; room doors are removed from breakdowns; a broken front door never blocks travel.
+- Doors: two-way swing, always open away from the approaching Keeper and auto-close only after full clearance; the en-suite door uses the same rule in the morning; room doors are removed from breakdowns; a broken front door never blocks travel.
 - "Have a nap" moves from the bed to an armchair. "Go to the loo" (wee) is no longer private; "Do a poo" shuts the cubicle door.
 - The lift mission's floor requirement follows Codex's lift design (Frank has 6 floors in mind).
 - Claude checks clip joins (named start and end poses, legal routes) as well as wiring.
@@ -321,7 +321,7 @@ None of this is built. When it is:
 | 4 | Climbing progression | ladders, then spiral staircase (if it looks right), then lift; slide on the outside of the tower | Codex |
 | 5 | Lift unlock | Codex designs it, with the lighthouse growing left, right, up and down | Codex |
 | 6 | Which door he changes at | both: standard clothes on the stairway | Claude |
-| 7 | Door behaviour | opens on entry, stays open during the activity, shuts when he leaves | Codex (art), Claude (logic) |
+| 7 | Door behaviour | two-way; always opens away; opaque leaf hides crossing; controller closes after full clearance | Codex (art), Claude (logic) |
 | 8 | Bedroom ↔ en suite | en suite only through the bedroom; pyjama door-open clip for the morning | Codex |
 | 9 | Changing in the bedroom | walk-in closet | Codex |
 | 10 | Pyjama time | from 19:00 | Claude |

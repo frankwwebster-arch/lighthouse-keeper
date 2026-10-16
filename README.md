@@ -256,25 +256,32 @@ are not the final timing: a later timing-only pass must halve them to 25 ms
 (40 fps), without changing artwork or geometry. Approval itself changes no
 Final, runtime or production asset.
 
-The new reversible V5 review candidate completes the missing upper-door tail:
-`/keeper-review/keeper-prime-ladder-transitions-v5/`. Its 111-frame default
+The V5 Keeper animation is approved. The immutable partial approval record is
+`docs/review/keeper-prime-ladder-transitions-v5-animation-approval-2026-10-16.json`:
+all 111 Keeper frames, roots, timing and choreography are accepted, while the
+V5 perspective door presentation is explicitly rejected. Its default
 route runs lower-room emergence → measured walk/stop → turn → full ladder
 climb → dismount → turn → upper-hall walk/stop → right-hand reach → door opens
-outward → restart → complete occlusion. Frames 1–88 and all 29 Keeper assets
+→ restart → complete occlusion. Frames 1–88 and all 29 Keeper assets
 from approved V4 remain exact; only two already accepted stair-route door-reach
 drawings are added, with V4's opacity rule. The doorway is explicitly 90° to
-the straight-on dollhouse camera. Its outward-opening leaf becomes a foreground
-occluder and covers the entire remaining visible Keeper cell at the last frame.
-It remains open after the handoff into the room. Any costume change occurs
-behind that open leaf; after the activity the Keeper returns through the same
-already-open door, changes back to standard while hidden, and only then—once
-he has fully left the room—does the scenery close automatically. Door opening
-therefore never needs costume-specific Keeper artwork.
-V5 is awaiting visual approval and changes no Final, runtime or production art.
+the straight-on dollhouse camera.
+
+The reversible door-only V6 candidate is at
+`/keeper-review/keeper-prime-ladder-transitions-v6/`. It reuses all 111
+approved V5 Keeper frames byte-for-byte and replaces only the rejected door.
+The new contract is a flat, constant-size 20 × 48-lp rectangular leaf with no
+perspective gradient or widening; only the handle protrudes. Doors swing both
+ways and always open away from the approaching Keeper. The opaque leaf itself
+provides the crossing mask. The scenery controller closes it automatically
+only after the Keeper has fully cleared the doorway, so closing requires no
+costume-specific Keeper frames. The rule is pinned in
+`docs/review/keeper-two-way-door-contract-2026-10-16.json`. V6 awaits door-only
+visual approval and changes no Final, runtime or production art.
 
 This means a complete upward room-to-room flow is now reviewable for both
-stairs (approved Stair Transition V6) and ladder (candidate Ladder Transition
-V5). The remaining core transition families are: downward stair travel and
+stairs (approved Stair Transition V6) and ladder (approved V5 Keeper motion;
+V6 door presentation awaiting review). The remaining core transition families are: downward stair travel and
 its lower-floor exit; the opposite zigzag stair parity; downward ladder travel
 and dismount/exit; complete Prime lift call/enter and lift-exit/walk routes;
 Prime stand↔sit joins for side/front/back chair approaches; and any asymmetric
@@ -303,6 +310,7 @@ npm run verify:keeper-prime-ladder-transitions-v2 # V1-exact art with corrected 
 npm run verify:keeper-prime-ladder-transitions-v3 # complete ladder plus alpha-opaque Keeper frames
 npm run verify:keeper-prime-ladder-transitions-v4 # smooth opaque paint plus persistent no-rebuild playback
 npm run verify:keeper-prime-ladder-transitions-v4-approval # exact V4 approval plus deferred 2× turn timing
+node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_ladder_transitions_v6.ts # approved V5 Keeper motion plus flat two-way door-only candidate
 npm run verify:keeper-prime-ladder-transitions-v5 # complete room-to-room ladder flow and side-on outward-door occlusion
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.

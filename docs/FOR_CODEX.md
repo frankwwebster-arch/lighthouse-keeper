@@ -315,26 +315,32 @@ timing-only candidate should halve turn frames from 50 ms to 25 ms (20 to 40
 fps) without changing pixels or geometry. No Final/runtime/production
 promotion was performed by approval.
 
-The active follow-on candidate is
-`/keeper-review/keeper-prime-ladder-transitions-v5/`. It preserves approved V4
+The V5 Keeper animation is approved and pinned by
+`docs/review/keeper-prime-ladder-transitions-v5-animation-approval-2026-10-16.json`.
+It preserves approved V4
 frames 1–88 and all 29 V4 Keeper images byte-for-byte, then adds a 23-frame
-upper-door tail: reverse bridge deceleration, right-hand reach, outward door
+upper-door tail: reverse bridge deceleration, right-hand reach, door
 opening, exact side neutral, restart and complete disappearance. The two reach
 cells are the already accepted stair-route sources normalized only with V4's
 alpha ≥240 →255 rule. The doorway is 90° to the straight-on dollhouse camera;
-the door opens out into the hallway and becomes a foreground occluder rather
-than sliding across the back wall. At full opening it covers the complete
-in-stage portion of the final Keeper cell. It stays open while the Keeper is in
-the room. A costume may change only under the leaf's full occlusion; he later
-returns through the already-open door, changes back to standard while hidden,
-and the scenery closes automatically only after he has fully left the room.
-No costume-specific door-opening/closing Keeper art is required. The default
-route is 111 frames.
-Run `npm run verify:keeper-prime-ladder-transitions-v5`. It is unapproved and
+the V5 perspective door presentation is rejected and is not part of that
+approval.
+
+Review the door-only successor at
+`/keeper-review/keeper-prime-ladder-transitions-v6/`. All 111 approved Keeper
+frames, roots and timings remain exact. V6 uses a flat 20 × 48-lp rectangular
+leaf, right-hinged as viewed, with no gradient or perspective widening and only
+the handle protruding. It is a two-way door which always opens away from the
+approaching Keeper. The opaque leaf—not an artificial room-boundary clip—hides
+him while he crosses. The scenery controller closes it only after his bounds
+fully clear the doorway and requires no costume-specific closing artwork. The
+contract is pinned at
+`docs/review/keeper-two-way-door-contract-2026-10-16.json`. Run the V6 verifier
+through the archive hook or the complete test suite. V6 is unapproved and
 changes no Final/runtime/production asset; V4's requested 25-ms turn pass is
 still deferred.
 
-### Core transition gap after V5
+### Core transition gap after the V5 animation / V6 door gate
 
 The approved stair route and candidate ladder route can each demonstrate one
 complete upward room-to-room journey. Still required before the transitional
@@ -474,15 +480,15 @@ The recipe format now exists: `docs/RECIPES.md`. Please follow it for the sideca
 
 Frank can now change any animation's fps while playing (Grown-ups → Animation speeds), using the same 1–20 fps, 0.5-step range as your review page. Frank is writing a proposed speed for every clip into its sheet's metadata, which stays the real record. The in-game setting is a global tweak on top, for when clips are wired and playing in place. Each tweak remembers the sheet speed it was made against: once the metadata changes, the sheet wins and the tweak stops applying. "Copy for the metadata" gives `{ "animationFps": { "<sprite name>": <fps>, … } }` to write back into the sidecars. Logic: `src/game/animFps.ts`; storage key `animFps` in the `settings` table.
 
-## Doors, stairway and costumes (9 Oct 2026)
+## Doors, stairway and costumes (9 Oct 2026; door rule revised 16 Oct)
 
 Frank has answered every open question; the full record is `docs/DOORS_STAIRS_AND_COSTUMES.md` (sections 2 and 9). What it asks of you:
 
 - **Floors are 56 px floorboards to ceiling.** Set the floor/ceiling thickness, then that band height is fixed for every standard floor. Redraw the three room plates and the shell at the new height.
 - **Stairway alongside the rooms; you pick the side.** Ladders first, then a spiral staircase (if it can look right), then the lift. How the lift arrives is yours, as part of the lighthouse growing left, right, up and down. The slide goes on the outside of the tower.
-- **Doors** open as he enters, stay open during the activity and shut as he leaves; the frame must fully hide him (with hats, 48 px tall). Room doors never break.
+- **Doors** swing both ways, always open away from the approaching Keeper and auto-close only after his complete bounds clear; the opaque leaf must fully hide him (with hats, 48 px tall). They do not remain open during the activity. Room doors never break.
 - **Bedroom floor:** en suite only through the bedroom, a walk-in closet off the bedroom, and the toilet in its own cubicle (door shut only for a poo). Other loos follow the same format.
-- **New clips:** a pyjama door-open for the en-suite door (morning), and a standing neutral frame for every outfit. Naps happen in an armchair, so the armchair is a new object.
+- **New clips:** a standing neutral frame for every outfit. The scenery-controlled two-way leaf removes the former requirement for a dedicated pyjama door-close clip. Naps happen in an armchair, so the armchair is a new object.
 - Yours to settle without Frank: lamp-room access (trapdoor and ladder suggested), the shared door design, splitting `privacy` from `outfit` in the manifest.
 
 ## Missions and new floors (updated 8 Oct 2026: any order)

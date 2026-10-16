@@ -7,6 +7,12 @@
 > This document remains valid for hidden door ingress, egress, costume changes
 > and inter-room transfers, but its door-centred restriction is not the general
 > movement solution.
+>
+> **Door lifecycle superseded 16 October 2026:** room doors no longer remain
+> open during the activity. They swing both ways, always open away from the
+> approaching Keeper, provide the real opaque crossing mask, and close
+> automatically only after his complete bounds clear the doorway. See
+> `docs/review/keeper-two-way-door-contract-2026-10-16.json`.
 
 Date: 14 October 2026
 
@@ -73,11 +79,11 @@ pairwise connected by this route family is sound. Door masking does not change
 that proof for a genuinely direct, visible furniture-to-furniture walk.
 
 The architectural question is whether ordinary gameplay actually requires
-that graph. Frank's previously stated route grammar says that walking begins
-while the Keeper is hidden behind the departure door and that his first
-visible state is already moving. Doors stay open during an activity and the
-Keeper walks until fully obscured when leaving. Under that grammar, the normal
-route is not fixed point A to fixed point B. It is:
+that graph. Frank's route grammar says that walking begins while the Keeper is
+hidden behind the departure door and that his first visible state is already
+moving. Under the revised two-way rule the door closes after full clearance,
+but the Keeper still walks until fully obscured when leaving. The normal route
+is therefore still not fixed point A to fixed point B. It is:
 
 ```text
 free hidden origin behind a door -> exact visible action point
@@ -148,10 +154,10 @@ phase reset, room-coordinate change or transfer to the stairway happens only
 while the complete actor—including clothing, hat, held prop and effects—is
 proved invisible.
 
-This matches the existing design rule: the door opens, remains open throughout
-the activity, and closes only after the Keeper has disappeared. A visible stop
-to close the door from inside the room would reintroduce a second fixed visible
-endpoint; it should not be inserted into this route implicitly.
+The later two-way-door decision preserves the important part of this rule: the
+Keeper continues until completely hidden and no visible stop is inserted merely
+to close the door. The scenery controller closes the door only after full
+clearance; closure is not another Keeper endpoint.
 
 ## Doorway width, clear area and occlusion are different measurements
 

@@ -12,19 +12,24 @@ walking join, full climb, landing, clockwise turn, upper-floor walk/stop,
 right-hand door reach, outward opening and fully hidden exit. Approved Stair
 Ascent V16 remains its climb authority.
 
-The approved ladder motion/layering authority is Ladder Transition V4. The
-new reversible `/keeper-review/keeper-prime-ladder-transitions-v5/` candidate
-extends V4 into the same complete upward room-to-room journey. Its first 88
+The approved ladder motion/layering authority is Ladder Transition V4. Frank
+also approved all Keeper motion in Ladder Transition V5, pinned by
+`docs/review/keeper-prime-ladder-transitions-v5-animation-approval-2026-10-16.json`.
+V5 extends V4 into the same complete upward room-to-room journey. Its first 88
 route frames and 29 V4 Keeper images are exact; its 23-frame tail adds only the
-upper stop/reach/open/restart/exit. The doorway is side-on—90° to the player's
-straight-on dollhouse view—and opens outward into the hallway. The opaque door
-leaf moves in front of the Keeper and deterministically covers the entire
-remaining visible sprite cell by the last frame. It remains open after room
-entry. Costume change, if any, occurs behind it; the Keeper later returns
-through the already-open door, changes back to standard while hidden, and the
-scenery closes automatically only after he has fully left the room. V5 is not
-approved or promoted. The separately requested two-times-faster V4 turn remains
-deferred.
+upper stop/reach/open/restart/exit. The V5 perspective door is rejected and is
+not part of the motion approval.
+
+The active reversible V6 page changes only that door presentation. It uses the
+same 111 Keeper frames, roots and timing byte-for-byte. The door is a flat,
+constant-size 20 × 48-lp opaque rectangle, right-hinged as viewed, with no
+perspective widening or gradient; only its handle protrudes. Every door is
+two-way and opens away from the approaching Keeper. Its leaf supplies the real
+crossing occlusion, and the scenery controller closes it automatically only
+after the Keeper fully clears the doorway. The rule is pinned in
+`docs/review/keeper-two-way-door-contract-2026-10-16.json`. V6 is awaiting
+door-only approval and is not promoted. The separately requested
+two-times-faster V4 turn remains deferred.
 
 The remaining core transition work is bounded:
 
@@ -416,13 +421,13 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 
 ### Costumes and privacy
 
-- Every costume change happens while the keeper is fully hidden behind a door.
-  All relevant doors hinge on the player's side and render in front of him.
-- A room door opens once, outward into the hallway and toward the approaching
-  Keeper. It stays open throughout his time in that room. After the activity he
-  returns through that already-open door; it closes automatically only after he
-  is fully back in the hallway. Never draw a separate opening/closing animation
-  for every costume.
+- Every costume change happens while the keeper is fully hidden behind the
+  opaque door leaf. Room-boundary clipping is not a substitute for the leaf.
+- Room doors swing both ways and always open away from the approaching Keeper.
+  The flat leaf renders in front of him during the crossing, then the scenery
+  controller closes it automatically only after his complete bounds clear the
+  doorway. It does not remain open throughout the activity. Never draw a
+  separate closing animation for every costume.
 - The keeper enters in the old outfit; the foreground door creates full-body
   occlusion; runtime swaps outfit while no part of him is visible; he emerges
   in the new outfit. There is no visible morph or dressing animation.
