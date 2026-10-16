@@ -66,7 +66,7 @@ the same bay translation. The exact reusable architecture recipe is
 [`docs/KITCHEN_ROOM_FLAT_CUTAWAY_RECIPE_2026-10-16.md`](docs/KITCHEN_ROOM_FLAT_CUTAWAY_RECIPE_2026-10-16.md)
 and the hand-back is
 [`docs/CODEX_TO_CLAUDE_KITCHEN_ROOM_FLAT_CUTAWAY_V7_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_ROOM_FLAT_CUTAWAY_V7_2026-10-16.md).
-The latest correction draft is
+The broad room-and-family correction draft is
 `/keeper-review/kitchen-wall-anchored-v8/`. It keeps the V7 shell but anchors
 the complete furniture composition to a common 52-lp rear-wall foot line,
 leaving 4 lp of foreground floor clear. It also repairs chipped countertop
@@ -78,7 +78,15 @@ The exact recipe is
 [`docs/KITCHEN_WALL_ANCHORED_V8_RECIPE_2026-10-16.md`](docs/KITCHEN_WALL_ANCHORED_V8_RECIPE_2026-10-16.md)
 and the hand-back is
 [`docs/CODEX_TO_CLAUDE_KITCHEN_WALL_ANCHORED_V8_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_WALL_ANCHORED_V8_2026-10-16.md).
-V5, V6, Room V7 and V8 remain unapproved, unpromoted and unwired.
+The latest focused fridge-only correction is
+`/keeper-review/kitchen-fridge-shelf-v9/`. It keeps the exact V8 room and object
+family, restores dimensional light/shadow detail to the bright-white
+counterless fridge, and adds a separate 19 × 17-lp plant-and-pots wall child
+which receives the fridge's exact bay translation. Its reusable recipe is
+[`docs/KITCHEN_FRIDGE_SHELF_V9_RECIPE_2026-10-17.md`](docs/KITCHEN_FRIDGE_SHELF_V9_RECIPE_2026-10-17.md)
+and its hand-back is
+[`docs/CODEX_TO_CLAUDE_KITCHEN_FRIDGE_SHELF_V9_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_FRIDGE_SHELF_V9_2026-10-17.md).
+V5, V6, Room V7, V8 and V9 remain unapproved, unpromoted and unwired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

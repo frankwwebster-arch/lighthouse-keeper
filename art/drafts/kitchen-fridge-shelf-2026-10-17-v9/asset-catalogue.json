@@ -1,0 +1,368 @@
+{
+  "version": 9,
+  "status": "reversible-draft",
+  "recipe": "kitchen-fridge-shelf-v9",
+  "projection": {
+    "id": "flat-cutaway-v1",
+    "camera": "straight-on",
+    "vanishingPoint": null,
+    "horizontalConvergenceLp": 0,
+    "verticalConvergenceLp": 0,
+    "runtimeDepthScaling": false
+  },
+  "fridge": {
+    "states": {
+      "standard": {
+        "png": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/obj_fridge_standard_f1.png",
+        "json": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/obj_fridge_standard_f1.json",
+        "sha256": "c19fc25ab6a3048baa71d0e9eaaabe446236302021b87e9823c47e0d0a80ec0a",
+        "meta": {
+          "w": 21,
+          "h": 21,
+          "frames": 1,
+          "fps": 0,
+          "density": 4,
+          "anchor": [
+            10.5,
+            21
+          ],
+          "z": 40,
+          "projection": {
+            "id": "flat-cutaway-v1",
+            "runtimeDepthScaling": false
+          },
+          "interactionSpotKu": 284,
+          "backWallFootLineLp": 52,
+          "correction": "new-v9-dimensional-enamel-draft"
+        },
+        "urls": [
+          "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_standard_f1_frame1.png"
+        ],
+        "bounds": [
+          {
+            "xLp": 0.75,
+            "yLp": 0.5,
+            "widthLp": 19.5,
+            "heightLp": 20.5
+          }
+        ]
+      },
+      "on": {
+        "png": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/obj_fridge_on_f4.png",
+        "json": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/obj_fridge_on_f4.json",
+        "sha256": "b3a06e4e1e1a6cc5a83160ad990f649d6c5675760c835546360d514603109033",
+        "meta": {
+          "w": 21,
+          "h": 21,
+          "frames": 4,
+          "fps": 8,
+          "density": 4,
+          "anchor": [
+            10.5,
+            21
+          ],
+          "z": 40,
+          "projection": {
+            "id": "flat-cutaway-v1",
+            "runtimeDepthScaling": false
+          },
+          "interactionSpotKu": 284,
+          "backWallFootLineLp": 52,
+          "correction": "new-v9-dimensional-enamel-draft"
+        },
+        "urls": [
+          "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_f4_frame1.png",
+          "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_f4_frame2.png",
+          "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_f4_frame3.png",
+          "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_f4_frame4.png"
+        ],
+        "bounds": [
+          {
+            "xLp": 0.75,
+            "yLp": 0.5,
+            "widthLp": 19.5,
+            "heightLp": 20.5
+          },
+          {
+            "xLp": 0.75,
+            "yLp": 0.5,
+            "widthLp": 19.5,
+            "heightLp": 20.5
+          },
+          {
+            "xLp": 0.75,
+            "yLp": 0.5,
+            "widthLp": 19.5,
+            "heightLp": 20.5
+          },
+          {
+            "xLp": 0.75,
+            "yLp": 0.5,
+            "widthLp": 19.5,
+            "heightLp": 20.5
+          }
+        ]
+      },
+      "broken": {
+        "png": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/obj_fridge_broken_f4.png",
+        "json": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/obj_fridge_broken_f4.json",
+        "sha256": "90e0a1de489051a9d63ce3c670f3a35931bd070d0ff31cb234fb8f1506583048",
+        "meta": {
+          "w": 21,
+          "h": 21,
+          "frames": 4,
+          "fps": 8,
+          "density": 4,
+          "anchor": [
+            10.5,
+            21
+          ],
+          "z": 40,
+          "projection": {
+            "id": "flat-cutaway-v1",
+            "runtimeDepthScaling": false
+          },
+          "interactionSpotKu": 284,
+          "backWallFootLineLp": 52,
+          "correction": "new-v9-dimensional-enamel-draft"
+        },
+        "urls": [
+          "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_f4_frame1.png",
+          "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_f4_frame2.png",
+          "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_f4_frame3.png",
+          "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_f4_frame4.png"
+        ],
+        "bounds": [
+          {
+            "xLp": 0.75,
+            "yLp": 0.0,
+            "widthLp": 19.5,
+            "heightLp": 21.0
+          },
+          {
+            "xLp": 0.75,
+            "yLp": 0.0,
+            "widthLp": 19.5,
+            "heightLp": 21.0
+          },
+          {
+            "xLp": 0.75,
+            "yLp": 0.0,
+            "widthLp": 19.5,
+            "heightLp": 21.0
+          },
+          {
+            "xLp": 0.75,
+            "yLp": 0.0,
+            "widthLp": 19.5,
+            "heightLp": 21.0
+          }
+        ]
+      }
+    },
+    "largestBound": {
+      "xLp": 0.75,
+      "yLp": 0.5,
+      "widthLp": 19.5,
+      "heightLp": 20.5
+    }
+  },
+  "fridgeShelf": {
+    "png": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/obj_fridge_wall_shelf_v9_f1.png",
+    "json": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/obj_fridge_wall_shelf_v9_f1.json",
+    "sha256": "346494dd43d79e902a3f9b9da37e7a1da3c3a62a4e86dc703440141309184bff",
+    "meta": {
+      "w": 21,
+      "h": 56,
+      "frames": 1,
+      "fps": 0,
+      "density": 4,
+      "anchor": [
+        10.5,
+        0
+      ],
+      "z": 26,
+      "projection": {
+        "id": "flat-cutaway-v1",
+        "runtimeDepthScaling": false
+      },
+      "parent": "obj_fridge",
+      "movesWithParent": true,
+      "translationRule": "shelfDeltaLp == fridgeDeltaLp",
+      "runtimeWiring": false
+    },
+    "urls": [
+      "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_wall_shelf_v9_f1_frame1.png"
+    ],
+    "bounds": [
+      {
+        "xLp": 1.0,
+        "yLp": 13.5,
+        "widthLp": 19.0,
+        "heightLp": 17.0
+      }
+    ],
+    "largestBound": {
+      "xLp": 1.0,
+      "yLp": 13.5,
+      "widthLp": 19.0,
+      "heightLp": 17.0
+    }
+  },
+  "movementPlacementsLp": {
+    "2": {
+      "fridgeXLp": 25,
+      "shelfXLp": 25
+    },
+    "5": {
+      "fridgeXLp": 88,
+      "shelfXLp": 88
+    },
+    "8": {
+      "fridgeXLp": 151,
+      "shelfXLp": 151
+    }
+  },
+  "rooms": {
+    "day": {
+      "png": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/room_kitchen_9bay_day.png",
+      "json": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/room_kitchen_9bay_day.json",
+      "sha256": "22ac2beb218917ae5e9777d0a1fb777bdb42dc1245669bedf86e711b56266a9d",
+      "meta": {
+        "w": 193,
+        "h": 56,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          96.5,
+          56
+        ],
+        "z": 40,
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "reviewComposite": true,
+        "condition": "day",
+        "backWallFootLineLp": 52
+      },
+      "urls": [
+        "/keeper-review/kitchen-fridge-shelf-v9/assets/room_kitchen_9bay_day_frame1.png"
+      ],
+      "bounds": [
+        {
+          "xLp": 0.0,
+          "yLp": 0.0,
+          "widthLp": 193.0,
+          "heightLp": 56.0
+        }
+      ]
+    },
+    "sunset": {
+      "png": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/room_kitchen_9bay_sunset.png",
+      "json": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/room_kitchen_9bay_sunset.json",
+      "sha256": "b195c3c132f2899d53c96f5bdc33fc788dd00b09a627f7282f318d5582a908e2",
+      "meta": {
+        "w": 193,
+        "h": 56,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          96.5,
+          56
+        ],
+        "z": 40,
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "reviewComposite": true,
+        "condition": "sunset",
+        "backWallFootLineLp": 52
+      },
+      "urls": [
+        "/keeper-review/kitchen-fridge-shelf-v9/assets/room_kitchen_9bay_sunset_frame1.png"
+      ],
+      "bounds": [
+        {
+          "xLp": 0.0,
+          "yLp": 0.0,
+          "widthLp": 193.0,
+          "heightLp": 56.0
+        }
+      ]
+    },
+    "night": {
+      "png": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/room_kitchen_9bay_night.png",
+      "json": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/room_kitchen_9bay_night.json",
+      "sha256": "28eb6347ebf8c96ef2f6e3c4a8eec1203fa49e9ecf1c1688cf8d70ecf5a927ab",
+      "meta": {
+        "w": 193,
+        "h": 56,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          96.5,
+          56
+        ],
+        "z": 40,
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "reviewComposite": true,
+        "condition": "night",
+        "backWallFootLineLp": 52
+      },
+      "urls": [
+        "/keeper-review/kitchen-fridge-shelf-v9/assets/room_kitchen_9bay_night_frame1.png"
+      ],
+      "bounds": [
+        {
+          "xLp": 0.0,
+          "yLp": 0.0,
+          "widthLp": 193.0,
+          "heightLp": 56.0
+        }
+      ]
+    },
+    "rain": {
+      "png": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/room_kitchen_9bay_rain.png",
+      "json": "art/raw/kitchen-fridge-shelf-2026-10-17-v9/room_kitchen_9bay_rain.json",
+      "sha256": "e83b30a7ec3eb408963ec670b096fd7d1bf74db83fa21efa6a15b3615adf7b2d",
+      "meta": {
+        "w": 193,
+        "h": 56,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          96.5,
+          56
+        ],
+        "z": 40,
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "reviewComposite": true,
+        "condition": "rain",
+        "backWallFootLineLp": 52
+      },
+      "urls": [
+        "/keeper-review/kitchen-fridge-shelf-v9/assets/room_kitchen_9bay_rain_frame1.png"
+      ],
+      "bounds": [
+        {
+          "xLp": 0.0,
+          "yLp": 0.0,
+          "widthLp": 193.0,
+          "heightLp": 56.0
+        }
+      ]
+    }
+  }
+}

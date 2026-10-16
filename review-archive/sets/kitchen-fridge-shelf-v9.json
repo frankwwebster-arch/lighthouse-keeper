@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "set": "kitchen-fridge-shelf-v9",
+  "page": {
+    "path": "public/keeper-review/kitchen-fridge-shelf-v9/index.html",
+    "sha256": "6bce2143c00ca16828a0f206ff85ed05523009a0fa63f61878f97579704ece36",
+    "bytes": 10856
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/fridge_shelf_move_bay_2_frame1.png": {
+      "sha256": "f5c05e954bf22a5e02113f33b250de23cc271681a712d6c6e4d5a55c23e18da0",
+      "extension": ".png",
+      "bytes": 3348,
+      "object": "review-archive/objects/f5/f5c05e954bf22a5e02113f33b250de23cc271681a712d6c6e4d5a55c23e18da0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f5/f5c05e954bf22a5e02113f33b250de23cc271681a712d6c6e4d5a55c23e18da0.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/fridge_shelf_move_bay_5_frame1.png": {
+      "sha256": "2325e6e1c56617a8b0534222879cf2410b0b93ec4f2bfbc097c4b00688cb0c3a",
+      "extension": ".png",
+      "bytes": 3357,
+      "object": "review-archive/objects/23/2325e6e1c56617a8b0534222879cf2410b0b93ec4f2bfbc097c4b00688cb0c3a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/23/2325e6e1c56617a8b0534222879cf2410b0b93ec4f2bfbc097c4b00688cb0c3a.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/fridge_shelf_move_bay_8_frame1.png": {
+      "sha256": "ce04c1f43cba8dfb71d3cbc89230ea445c7a5ce085ac49c1f621f30c51058e0f",
+      "extension": ".png",
+      "bytes": 3353,
+      "object": "review-archive/objects/ce/ce04c1f43cba8dfb71d3cbc89230ea445c7a5ce085ac49c1f621f30c51058e0f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ce/ce04c1f43cba8dfb71d3cbc89230ea445c7a5ce085ac49c1f621f30c51058e0f.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_f4_frame1.png": {
+      "sha256": "97bf72685c642a6dd0aebfd1f57caf69fa02350e1bba0da4495bce7eaa94f598",
+      "extension": ".png",
+      "bytes": 1335,
+      "object": "review-archive/objects/97/97bf72685c642a6dd0aebfd1f57caf69fa02350e1bba0da4495bce7eaa94f598.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/97/97bf72685c642a6dd0aebfd1f57caf69fa02350e1bba0da4495bce7eaa94f598.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_f4_frame2.png": {
+      "sha256": "478d97f0984dd0aac6e4bef8cd629d4d37d9eb5adf252da3c1e2c602691bea7e",
+      "extension": ".png",
+      "bytes": 1296,
+      "object": "review-archive/objects/47/478d97f0984dd0aac6e4bef8cd629d4d37d9eb5adf252da3c1e2c602691bea7e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/47/478d97f0984dd0aac6e4bef8cd629d4d37d9eb5adf252da3c1e2c602691bea7e.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_f4_frame3.png": {
+      "sha256": "c10218eed764ad4307e882f25b09400ee8fe302027df8f51235602dc9d110b1c",
+      "extension": ".png",
+      "bytes": 1325,
+      "object": "review-archive/objects/c1/c10218eed764ad4307e882f25b09400ee8fe302027df8f51235602dc9d110b1c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c1/c10218eed764ad4307e882f25b09400ee8fe302027df8f51235602dc9d110b1c.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_f4_frame4.png": {
+      "sha256": "974e64403435556091340dc79d768f11e7b3ed4a0183e7b0886bc8614dda6e12",
+      "extension": ".png",
+      "bytes": 1289,
+      "object": "review-archive/objects/97/974e64403435556091340dc79d768f11e7b3ed4a0183e7b0886bc8614dda6e12.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/97/974e64403435556091340dc79d768f11e7b3ed4a0183e7b0886bc8614dda6e12.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_v5_frame1.png": {
+      "sha256": "dff284c4c8cb7c8428286144f7ec696a4fe765abd1a94ceea94d7e1e1ceb2964",
+      "extension": ".png",
+      "bytes": 8539,
+      "object": "review-archive/objects/df/dff284c4c8cb7c8428286144f7ec696a4fe765abd1a94ceea94d7e1e1ceb2964.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/df/dff284c4c8cb7c8428286144f7ec696a4fe765abd1a94ceea94d7e1e1ceb2964.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_v5_frame2.png": {
+      "sha256": "f145240cf9ea66db76c841e7fd7bc913e8cef91a44a7a511be21deee316f7fae",
+      "extension": ".png",
+      "bytes": 8548,
+      "object": "review-archive/objects/f1/f145240cf9ea66db76c841e7fd7bc913e8cef91a44a7a511be21deee316f7fae.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f1/f145240cf9ea66db76c841e7fd7bc913e8cef91a44a7a511be21deee316f7fae.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_v5_frame3.png": {
+      "sha256": "c9dc45440dcf57d9f100687c09d1eded2e8e05eaa28103716eb6a0719d0dd6ce",
+      "extension": ".png",
+      "bytes": 8645,
+      "object": "review-archive/objects/c9/c9dc45440dcf57d9f100687c09d1eded2e8e05eaa28103716eb6a0719d0dd6ce.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c9/c9dc45440dcf57d9f100687c09d1eded2e8e05eaa28103716eb6a0719d0dd6ce.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_v5_frame4.png": {
+      "sha256": "8392d83c5d68ff455446f99b3a1756f6dff5983280cb2c5e8db50889f1fc1b37",
+      "extension": ".png",
+      "bytes": 8558,
+      "object": "review-archive/objects/83/8392d83c5d68ff455446f99b3a1756f6dff5983280cb2c5e8db50889f1fc1b37.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/83/8392d83c5d68ff455446f99b3a1756f6dff5983280cb2c5e8db50889f1fc1b37.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_v8_frame1.png": {
+      "sha256": "beac4f76268abad8f658cbc074293b698131f6b25d26e996af89273b5a953019",
+      "extension": ".png",
+      "bytes": 1045,
+      "object": "review-archive/objects/be/beac4f76268abad8f658cbc074293b698131f6b25d26e996af89273b5a953019.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/be/beac4f76268abad8f658cbc074293b698131f6b25d26e996af89273b5a953019.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_v8_frame2.png": {
+      "sha256": "2e72c9aece1e8dae477194c10468d11c4f51bcbedf007a8d3c1e7100d375eb9c",
+      "extension": ".png",
+      "bytes": 1051,
+      "object": "review-archive/objects/2e/2e72c9aece1e8dae477194c10468d11c4f51bcbedf007a8d3c1e7100d375eb9c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2e/2e72c9aece1e8dae477194c10468d11c4f51bcbedf007a8d3c1e7100d375eb9c.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_v8_frame3.png": {
+      "sha256": "02f37a8303ea19196cd1df6d28c3eb65414c795523dd4876313c4c7cc9e68192",
+      "extension": ".png",
+      "bytes": 1016,
+      "object": "review-archive/objects/02/02f37a8303ea19196cd1df6d28c3eb65414c795523dd4876313c4c7cc9e68192.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/02/02f37a8303ea19196cd1df6d28c3eb65414c795523dd4876313c4c7cc9e68192.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_broken_v8_frame4.png": {
+      "sha256": "c266163e16e0c41d60497a6cb3c5fba8ce980a98716e877f72a3cbacae0bf5c8",
+      "extension": ".png",
+      "bytes": 1018,
+      "object": "review-archive/objects/c2/c266163e16e0c41d60497a6cb3c5fba8ce980a98716e877f72a3cbacae0bf5c8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c2/c266163e16e0c41d60497a6cb3c5fba8ce980a98716e877f72a3cbacae0bf5c8.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_f4_frame1.png": {
+      "sha256": "8af7c88af7a97c6d5b65fd6ac5a459dc968c72571b3e2d5af39ce6f9bf5f6c61",
+      "extension": ".png",
+      "bytes": 928,
+      "object": "review-archive/objects/8a/8af7c88af7a97c6d5b65fd6ac5a459dc968c72571b3e2d5af39ce6f9bf5f6c61.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8a/8af7c88af7a97c6d5b65fd6ac5a459dc968c72571b3e2d5af39ce6f9bf5f6c61.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_f4_frame2.png": {
+      "sha256": "63fba8b5852a5f4d987b316c1e31461c72fdbf5111f8c626f97a1ef669001e96",
+      "extension": ".png",
+      "bytes": 932,
+      "object": "review-archive/objects/63/63fba8b5852a5f4d987b316c1e31461c72fdbf5111f8c626f97a1ef669001e96.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/63/63fba8b5852a5f4d987b316c1e31461c72fdbf5111f8c626f97a1ef669001e96.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_f4_frame3.png": {
+      "sha256": "7bde0a8494782dd36b9b79de1b083b289af6913842c2231c53e7b2e1e863d9d3",
+      "extension": ".png",
+      "bytes": 899,
+      "object": "review-archive/objects/7b/7bde0a8494782dd36b9b79de1b083b289af6913842c2231c53e7b2e1e863d9d3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7b/7bde0a8494782dd36b9b79de1b083b289af6913842c2231c53e7b2e1e863d9d3.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_f4_frame4.png": {
+      "sha256": "8cec956563998b8e49fd76cc7e1ce2c623c1fed6c3527289cc43fd591c352477",
+      "extension": ".png",
+      "bytes": 820,
+      "object": "review-archive/objects/8c/8cec956563998b8e49fd76cc7e1ce2c623c1fed6c3527289cc43fd591c352477.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8c/8cec956563998b8e49fd76cc7e1ce2c623c1fed6c3527289cc43fd591c352477.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_v5_frame1.png": {
+      "sha256": "fb3df25f29bd4a06b3db7064c4841670d039ed55c6d38749733532d5e071fb22",
+      "extension": ".png",
+      "bytes": 7679,
+      "object": "review-archive/objects/fb/fb3df25f29bd4a06b3db7064c4841670d039ed55c6d38749733532d5e071fb22.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fb/fb3df25f29bd4a06b3db7064c4841670d039ed55c6d38749733532d5e071fb22.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_v5_frame2.png": {
+      "sha256": "eded43d6227ebf86dd4b5e0b52516e860fecde7261e155bcd954428f7124ecbf",
+      "extension": ".png",
+      "bytes": 6833,
+      "object": "review-archive/objects/ed/eded43d6227ebf86dd4b5e0b52516e860fecde7261e155bcd954428f7124ecbf.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ed/eded43d6227ebf86dd4b5e0b52516e860fecde7261e155bcd954428f7124ecbf.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_v5_frame3.png": {
+      "sha256": "27ebe6b5cc85c836cc71ef7304faf4426117547f1219e093b36458f471cdabb3",
+      "extension": ".png",
+      "bytes": 5733,
+      "object": "review-archive/objects/27/27ebe6b5cc85c836cc71ef7304faf4426117547f1219e093b36458f471cdabb3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/27/27ebe6b5cc85c836cc71ef7304faf4426117547f1219e093b36458f471cdabb3.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_v5_frame4.png": {
+      "sha256": "1ebdd5ecbcea577ba4b2eb8f56cf6aa001517f811d7d82de29992c6f0880e7a0",
+      "extension": ".png",
+      "bytes": 4892,
+      "object": "review-archive/objects/1e/1ebdd5ecbcea577ba4b2eb8f56cf6aa001517f811d7d82de29992c6f0880e7a0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1e/1ebdd5ecbcea577ba4b2eb8f56cf6aa001517f811d7d82de29992c6f0880e7a0.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_v8_frame1.png": {
+      "sha256": "8db4019f83cc3c2cedf6749740bf4c2d987d03da2083ca4b694d8664e576af27",
+      "extension": ".png",
+      "bytes": 738,
+      "object": "review-archive/objects/8d/8db4019f83cc3c2cedf6749740bf4c2d987d03da2083ca4b694d8664e576af27.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8d/8db4019f83cc3c2cedf6749740bf4c2d987d03da2083ca4b694d8664e576af27.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_v8_frame2.png": {
+      "sha256": "d2e9a26ff7d2603208b6eb815b74db7131864f995dd0f42c87bcb38577af7ea0",
+      "extension": ".png",
+      "bytes": 733,
+      "object": "review-archive/objects/d2/d2e9a26ff7d2603208b6eb815b74db7131864f995dd0f42c87bcb38577af7ea0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d2/d2e9a26ff7d2603208b6eb815b74db7131864f995dd0f42c87bcb38577af7ea0.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_v8_frame3.png": {
+      "sha256": "92ca0f4bbd08bb54af40dfa9a3e63da03a17cfc74b6f2830f59d615e73e8ea57",
+      "extension": ".png",
+      "bytes": 722,
+      "object": "review-archive/objects/92/92ca0f4bbd08bb54af40dfa9a3e63da03a17cfc74b6f2830f59d615e73e8ea57.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/92/92ca0f4bbd08bb54af40dfa9a3e63da03a17cfc74b6f2830f59d615e73e8ea57.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_on_v8_frame4.png": {
+      "sha256": "b8ce589efd703a6e599b495283c92aa6367d5417fdf37abae6668f96cf54bf2d",
+      "extension": ".png",
+      "bytes": 672,
+      "object": "review-archive/objects/b8/b8ce589efd703a6e599b495283c92aa6367d5417fdf37abae6668f96cf54bf2d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b8/b8ce589efd703a6e599b495283c92aa6367d5417fdf37abae6668f96cf54bf2d.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_standard_f1_frame1.png": {
+      "sha256": "c19fc25ab6a3048baa71d0e9eaaabe446236302021b87e9823c47e0d0a80ec0a",
+      "extension": ".png",
+      "bytes": 911,
+      "object": "review-archive/objects/c1/c19fc25ab6a3048baa71d0e9eaaabe446236302021b87e9823c47e0d0a80ec0a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c1/c19fc25ab6a3048baa71d0e9eaaabe446236302021b87e9823c47e0d0a80ec0a.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_standard_v5_frame1.png": {
+      "sha256": "f2d8dfd196a0d73a3c2ef50fd4a33cdcc555ae93287cba45143b08c7ecb1167f",
+      "extension": ".png",
+      "bytes": 8780,
+      "object": "review-archive/objects/f2/f2d8dfd196a0d73a3c2ef50fd4a33cdcc555ae93287cba45143b08c7ecb1167f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f2/f2d8dfd196a0d73a3c2ef50fd4a33cdcc555ae93287cba45143b08c7ecb1167f.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_standard_v8_frame1.png": {
+      "sha256": "50c1187622554fb84c7b828e7eff722cab1630780b8e96ab004cb07a76106092",
+      "extension": ".png",
+      "bytes": 715,
+      "object": "review-archive/objects/50/50c1187622554fb84c7b828e7eff722cab1630780b8e96ab004cb07a76106092.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/50/50c1187622554fb84c7b828e7eff722cab1630780b8e96ab004cb07a76106092.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_wall_shelf_v9_f1_frame1.png": {
+      "sha256": "346494dd43d79e902a3f9b9da37e7a1da3c3a62a4e86dc703440141309184bff",
+      "extension": ".png",
+      "bytes": 1081,
+      "object": "review-archive/objects/34/346494dd43d79e902a3f9b9da37e7a1da3c3a62a4e86dc703440141309184bff.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/34/346494dd43d79e902a3f9b9da37e7a1da3c3a62a4e86dc703440141309184bff.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/obj_fridge_with_wall_shelf_review_frame1.png": {
+      "sha256": "51451d6a6985031c258877e279785029ab895c2ad64428e752deb7a7d2010cfc",
+      "extension": ".png",
+      "bytes": 1842,
+      "object": "review-archive/objects/51/51451d6a6985031c258877e279785029ab895c2ad64428e752deb7a7d2010cfc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/51/51451d6a6985031c258877e279785029ab895c2ad64428e752deb7a7d2010cfc.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/room_kitchen_9bay_day_frame1.png": {
+      "sha256": "22ac2beb218917ae5e9777d0a1fb777bdb42dc1245669bedf86e711b56266a9d",
+      "extension": ".png",
+      "bytes": 84266,
+      "object": "review-archive/objects/22/22ac2beb218917ae5e9777d0a1fb777bdb42dc1245669bedf86e711b56266a9d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/22/22ac2beb218917ae5e9777d0a1fb777bdb42dc1245669bedf86e711b56266a9d.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/room_kitchen_9bay_night_frame1.png": {
+      "sha256": "28eb6347ebf8c96ef2f6e3c4a8eec1203fa49e9ecf1c1688cf8d70ecf5a927ab",
+      "extension": ".png",
+      "bytes": 84244,
+      "object": "review-archive/objects/28/28eb6347ebf8c96ef2f6e3c4a8eec1203fa49e9ecf1c1688cf8d70ecf5a927ab.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/28/28eb6347ebf8c96ef2f6e3c4a8eec1203fa49e9ecf1c1688cf8d70ecf5a927ab.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/room_kitchen_9bay_rain_frame1.png": {
+      "sha256": "e83b30a7ec3eb408963ec670b096fd7d1bf74db83fa21efa6a15b3615adf7b2d",
+      "extension": ".png",
+      "bytes": 84399,
+      "object": "review-archive/objects/e8/e83b30a7ec3eb408963ec670b096fd7d1bf74db83fa21efa6a15b3615adf7b2d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e8/e83b30a7ec3eb408963ec670b096fd7d1bf74db83fa21efa6a15b3615adf7b2d.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/room_kitchen_9bay_sunset_frame1.png": {
+      "sha256": "b195c3c132f2899d53c96f5bdc33fc788dd00b09a627f7282f318d5582a908e2",
+      "extension": ".png",
+      "bytes": 84265,
+      "object": "review-archive/objects/b1/b195c3c132f2899d53c96f5bdc33fc788dd00b09a627f7282f318d5582a908e2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b1/b195c3c132f2899d53c96f5bdc33fc788dd00b09a627f7282f318d5582a908e2.png"
+    },
+    "/keeper-review/kitchen-fridge-shelf-v9/assets/room_kitchen_9bay_v8_day.png": {
+      "sha256": "c9fbc2d098b1920467d81ca5e7b99ecb8f866059dce7dd65837e475472bbc2ed",
+      "extension": ".png",
+      "bytes": 83191,
+      "object": "review-archive/objects/c9/c9fbc2d098b1920467d81ca5e7b99ecb8f866059dce7dd65837e475472bbc2ed.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c9/c9fbc2d098b1920467d81ca5e7b99ecb8f866059dce7dd65837e475472bbc2ed.png"
+    }
+  }
+}
