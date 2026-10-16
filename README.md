@@ -300,12 +300,15 @@ visual approval and changes no Final, runtime or production art.
 
 This means a complete upward room-to-room flow is now reviewable for both
 stairs (approved Stair Transition V6) and ladder (approved V5 Keeper motion;
-V6 door presentation awaiting review). The first complete downward stair route
-is the unapproved, reversible Stair Descent V1 candidate at
-`/keeper-review/keeper-prime-stair-descent-v1/`; it covers the opposite
-zig-zag turn, full descent, lower-floor landing and door exit using approved
-source pixels. The remaining core transition families are: approval or
-correction of that stair candidate; downward ladder travel and dismount/exit;
+V6 door presentation awaiting review). Stair Descent V1 is retained as rejected
+provenance: reversing and mirroring the ascent made the visible left leg remain
+airborne while the right repeatedly took each step. Its replacement is the
+unapproved, reversible Stair Descent V2 candidate at
+`/keeper-review/keeper-prime-stair-descent-v2/`. V2 adds four descent-specific
+poses and repeats the explicit gait RIGHT contact → LEFT passing → LEFT contact
+→ RIGHT passing, giving exactly seven contacts per leg over the unchanged
+14-riser flight. The remaining core transition families are: approval or
+correction of V2; downward ladder travel and dismount/exit;
 complete Prime lift call/enter and lift-exit/walk routes;
 Prime stand↔sit joins for side/front/back chair approaches; and any asymmetric
 left/right door or interaction reach that cannot be certified as a safe mirror.

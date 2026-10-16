@@ -1,0 +1,10 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "date": "2026-10-16",
+  "candidate": "keeper-prime-stair-descent-v1",
+  "decision": "rejected",
+  "userFeedback": "going down stairs the keeper's left leg stays in the air constantly whilst the right one goes down every step",
+  "cause": "Reversing and horizontally mirroring the approved ascent sequence preserved ascent-specific limb drawings; it did not create mechanically valid downhill leg transfer.",
+  "disposition": "Retain V1 as rejected provenance only. Do not promote or reactivate it. V2 must use descent-specific alternating contact and passing drawings.",
+  "unchangedAuthority": "art/drafts/keeper-staircase-geometry-2026-10-16-v1/staircase-geometry-v1.json"
+}

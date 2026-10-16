@@ -1,0 +1,368 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-stair-descent-2026-10-16-v2",
+  "status": "draft-stair-descent-v2-awaiting-frank",
+  "purpose": "Replace rejected reverse-only descent with an explicitly alternating downhill gait while preserving the stored staircase.",
+  "authorities": {
+    "rejectedV1": {
+      "file": "art/drafts/keeper-prime-stair-descent-2026-10-16-v1/batch-register.json",
+      "sha256": "bcff3f412779f1f3f45d9a99f68df2c5d3cfd0e4f262abc5d87eb7a0c4dce8c0",
+      "decision": {
+        "file": "docs/review/keeper-prime-stair-descent-v1-rejection-2026-10-16.json",
+        "sha256": "47e03bd882211d9f9829db4675d08b2ca035a74af2a03a73e00f4497e743145c"
+      },
+      "immutable": true,
+      "rejected": true
+    },
+    "upwardRoute": {
+      "file": "art/drafts/keeper-prime-stair-transitions-2026-10-16-v6/batch-register.json",
+      "sha256": "253ec6bbf4918f33e243a75144cbbe061b4fc686038b8b98a0baeda3a7425926",
+      "immutable": true
+    },
+    "ascentMechanics": {
+      "file": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/stair-contact-rig-v16.json",
+      "sha256": "62892cbe1cf47e1feedd7cccdf427ae4547b203687d6d46289ba1f7eb041df56"
+    },
+    "staircaseGeometry": {
+      "file": "art/drafts/keeper-staircase-geometry-2026-10-16-v1/staircase-geometry-v1.json",
+      "sha256": "37b1d7c1a347aa950484600724a4f3b9618a99074d1581d3b7a34dcd699886e5",
+      "immutable": true
+    },
+    "frontSideTurn": {
+      "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/batch-register.json",
+      "sha256": "9a4a9340ad1ba84101f0654d15b69f5770da52d4adfc016a7e10e4f3d5acb07f",
+      "immutable": true
+    }
+  },
+  "spec": {
+    "file": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/keeper-prime-stair-descent-v2.json",
+    "sha256": "646dfcc1420d80a10d03a5444fed56669960652c8493ba31f98ab363bac2fc8f"
+  },
+  "handoff": {
+    "file": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/HANDOFF.md",
+    "sha256": "a1ec7abff73cf1a7c0321e08631662a9cb2394b0cd85a3a544dbd9d8a2abf330"
+  },
+  "imagegenAndRegistration": {
+    "file": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/IMAGEGEN_AND_REGISTRATION.md",
+    "sha256": "d47436b6313ba02a3ddd59f2ed9dc63dd0e8dc7494c1a0246dabfdc0776847cf"
+  },
+  "normalization": {
+    "file": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/normalization-v2.json",
+    "sha256": "903d4cbd352f874ee7f9590387f693fd977c05ce6dc464b4153b34b558697483"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-stair-descent-v2/index.html",
+    "sha256": "4374ad4b7da6e10efbf374911a4ef746539faf831c9f5e24767fe8a24b7aa967",
+    "publicReview": "/keeper-review/keeper-prime-stair-descent-v2/",
+    "preloadsAllUniqueFrames": true
+  },
+  "publishedAssets": [
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+      "sourceSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-0e80ea65610452c9.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f2.png",
+      "sourceSha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-2b8e91de747b527d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f3.png",
+      "sourceSha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-b376254e9c29da38.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f4.png",
+      "sourceSha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-982646b0b0e6f3f9.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f5.png",
+      "sourceSha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-545e7338151e6e5a.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f6.png",
+      "sourceSha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-17d007eee75c2e86.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f7.png",
+      "sourceSha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-dbf5b3849624cec7.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f8.png",
+      "sourceSha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-cf8c53e7ffa703a5.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f01.png",
+      "sourceSha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-c097d78aac2d2c52.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f02.png",
+      "sourceSha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-e1dc020aabfe8f3b.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f03.png",
+      "sourceSha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-34028d8821a7272a.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f04.png",
+      "sourceSha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-0d278363a0e7e4f1.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f05.png",
+      "sourceSha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-f827ac61f45aaaa4.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f06.png",
+      "sourceSha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-fe06522abd0cd55c.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f07.png",
+      "sourceSha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-d55afae023051e29.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f08.png",
+      "sourceSha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-bb530610cf0e17bf.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f09.png",
+      "sourceSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-31dbac4efc00089f.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f1.png",
+      "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-a172a8a01a387a21.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f2.png",
+      "sourceSha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-e54546ba14b4e5f7.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f3.png",
+      "sourceSha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-0169b3642905389d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f4.png",
+      "sourceSha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-9f4192beb8fecbc8.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-transitions-2026-10-15-v1/drafts/frames/keeper_prime_door-reach-right_partial.png",
+      "sourceSha256": "8c519d8cb1243373874d5b5d084c83c406746fb6d9947ddfaaeaa85793909fa3",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-8c519d8cb1243373.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-transitions-2026-10-15-v1/drafts/frames/keeper_prime_door-reach-right_full.png",
+      "sourceSha256": "c9c54e28f72b212e902b04e6800261bf4b5d3f908e113911dc1830fba3fe571d",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-c9c54e28f72b212e.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/drafts/frames/keeper_prime_stair_left-contact-clean_side-left_f01.png",
+      "sourceSha256": "1a7fe5fe0bcecaf1dfa014be1613614f85bfa4826e460361f0b3105bd28449a3",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-1a7fe5fe0bcecaf1.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/drafts/frames/keeper_prime_stair_right-contact-complete-toecap_side-left_f01.png",
+      "sourceSha256": "8af419d7747ec19920124235d1178bbb8eff53c87f9fa1844786161877cd554b",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-8af419d7747ec199.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/drafts/frames/keeper_prime_stair_left-foot-passing-compact_side-left_f01.png",
+      "sourceSha256": "4262b9d642d2e918414fabdc88e90d5522a93eca6b5ab83c165b9557b1dc7fa0",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-4262b9d642d2e918.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-ascent-2026-10-15-v16/drafts/frames/keeper_prime_stair_right-foot-passing-balanced_side-left_f01.png",
+      "sourceSha256": "12a2f8f20df7937eaff165f9b7e437336fa5385d7234ee22b430fde0c59d3bd5",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-12a2f8f20df7937e.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f1.png",
+      "sourceSha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-a9a5c37fe7222199.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f2.png",
+      "sourceSha256": "af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-af20e9290fb79d16.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f3.png",
+      "sourceSha256": "5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-5b4f9406f68e15d2.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f4.png",
+      "sourceSha256": "081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-081272e51f799f6d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f5.png",
+      "sourceSha256": "2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-2e118ca8d10d126f.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f6.png",
+      "sourceSha256": "8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-8c20fc0436d4982d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f7.png",
+      "sourceSha256": "85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-85f897ef55e76813.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/drafts/frames/keeper_prime_stair_descent_right-contact_side-right_f01.png",
+      "sourceSha256": "781eec73ba082878195a484521f1ecaa17633f5767f3a64520d6d88f53e42f73",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-781eec73ba082878.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/drafts/frames/keeper_prime_stair_descent_left-passing_side-right_f01.png",
+      "sourceSha256": "d8793fdc7faef54fb489f0383dd5dfe00b455236ca2a845e01b178066d83d752",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-d8793fdc7faef54f.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/drafts/frames/keeper_prime_stair_descent_left-contact_side-right_f01.png",
+      "sourceSha256": "776d9b8ae456a12b75153bddf55d2cabe4b79a6fb52e1ce12a8f1eeed3abea49",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-776d9b8ae456a12b.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/drafts/frames/keeper_prime_stair_descent_right-passing_side-right_f01.png",
+      "sourceSha256": "0c9e11f2753bc7eea66f14c89562436950752173957c842cce9c0d1818035697",
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-0c9e11f2753bc7ee.png"
+    }
+  ],
+  "artwork": {
+    "rightContact": {
+      "raw": {
+        "file": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/sources/imagegen/right-contact-raw.png",
+        "sha256": "6d6b4a8f6e1d19621e7666e67185deb3ba2603a72503e39c3a9fa96f84d894c5",
+        "dimensions": [
+          1122,
+          1402
+        ]
+      },
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/drafts/frames/keeper_prime_stair_descent_right-contact_side-right_f01.png",
+        "sha256": "781eec73ba082878195a484521f1ecaa17633f5767f3a64520d6d88f53e42f73",
+        "dimensions": [
+          256,
+          320
+        ],
+        "alphaBounds16": [
+          55,
+          30,
+          200,
+          315
+        ]
+      }
+    },
+    "leftPassing": {
+      "raw": {
+        "file": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/sources/imagegen/left-passing-raw.png",
+        "sha256": "467d1d006cccba07d434a518dfca56c99c6670c8d71e4b1b163ddc58254829c4",
+        "dimensions": [
+          1122,
+          1402
+        ]
+      },
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/drafts/frames/keeper_prime_stair_descent_left-passing_side-right_f01.png",
+        "sha256": "d8793fdc7faef54fb489f0383dd5dfe00b455236ca2a845e01b178066d83d752",
+        "dimensions": [
+          256,
+          320
+        ],
+        "alphaBounds16": [
+          60,
+          30,
+          194,
+          315
+        ]
+      }
+    },
+    "leftContact": {
+      "raw": {
+        "file": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/sources/imagegen/left-contact-raw.png",
+        "sha256": "f3f8708e4a991276d612b42a73f197b4cadc00f1496b841645c344ce2f13c815",
+        "dimensions": [
+          1122,
+          1402
+        ]
+      },
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/drafts/frames/keeper_prime_stair_descent_left-contact_side-right_f01.png",
+        "sha256": "776d9b8ae456a12b75153bddf55d2cabe4b79a6fb52e1ce12a8f1eeed3abea49",
+        "dimensions": [
+          256,
+          320
+        ],
+        "alphaBounds16": [
+          49,
+          30,
+          206,
+          315
+        ]
+      }
+    },
+    "rightPassing": {
+      "raw": {
+        "file": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/sources/imagegen/right-passing-raw.png",
+        "sha256": "33411f38410b3b8bd9729f98297b036d0710b02e1c792f3459b02b6fab56a39a",
+        "dimensions": [
+          1122,
+          1402
+        ]
+      },
+      "draft": {
+        "file": "art/drafts/keeper-prime-stair-descent-2026-10-16-v2/drafts/frames/keeper_prime_stair_descent_right-passing_side-right_f01.png",
+        "sha256": "0c9e11f2753bc7eea66f14c89562436950752173957c842cce9c0d1818035697",
+        "dimensions": [
+          256,
+          320
+        ],
+        "alphaBounds16": [
+          51,
+          30,
+          203,
+          315
+        ]
+      }
+    }
+  },
+  "validation": {
+    "uniquePublishedFrames": 38,
+    "approvedSourceHashesPinned": true,
+    "stairFrameCount": 27,
+    "rightContacts": 7,
+    "leftContacts": 7,
+    "descentSpecificArtwork": true,
+    "staircaseGeometryChanged": false,
+    "transparentGuttersRequired": true,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false
+  },
+  "approvalBoundary": {
+    "reviewCandidateApproved": false,
+    "finalLaneEntryAllowed": false,
+    "productionPromotionAllowed": false
+  },
+  "rollback": "Delete only art/drafts/keeper-prime-stair-descent-2026-10-16-v2 and public/keeper-review/keeper-prime-stair-descent-v2; all ascent, prior review and approved source material remains unchanged."
+}

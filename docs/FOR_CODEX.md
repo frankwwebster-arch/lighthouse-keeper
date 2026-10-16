@@ -2,17 +2,19 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
-## Stair descent V1 review candidate (16 Oct 2026)
+## Stair descent V2 review candidate (16 Oct 2026)
 
-The first complete upper-door → stair descent → lower-door route is published
-for review at `/keeper-review/keeper-prime-stair-descent-v1/`. It reuses the
-approved Stair Ascent V16 drawings in exact reverse source order, mirrored for
-side-right travel, with direction-specific upper/lower joins assembled from
-approved walk, turn, bridge and door-reach poses. No source pixels, approval
-record, Final or runtime art changed. The route and deterministic checks are
-documented in
-`art/drafts/keeper-prime-stair-descent-2026-10-16-v1/HANDOFF.md`; await Frank's
-visual approval before any promotion or runtime wiring.
+V1 is rejected provenance: reverse-order ascent pixels made the visible left
+leg remain airborne while the right took every descending step. Do not promote
+or reactivate it. The replacement upper-door → stair descent → lower-door route
+is `/keeper-review/keeper-prime-stair-descent-v2/`. It uses four new,
+descent-specific side-right poses in the deterministic cycle RIGHT contact →
+LEFT passing → LEFT contact → RIGHT passing, producing exactly seven contacts
+per leg. The approved route roots, turn, walk, door action and independently
+stored staircase geometry are unchanged. Raw and registered artwork hashes,
+prompts, normalization data and checks are in
+`art/drafts/keeper-prime-stair-descent-2026-10-16-v2/`. Await Frank's visual
+approval before any promotion or runtime wiring.
 
 The staircase used by the ascent and descent reviews is no longer implicit in
 their page code. Its locked geometry and preserved test-profile SVG are in

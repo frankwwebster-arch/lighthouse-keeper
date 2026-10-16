@@ -1,0 +1,15 @@
+{
+  "schema": "lighthouse-keeper/image-registration@1",
+  "sourceCell": [1122, 1402],
+  "targetCell": [256, 320],
+  "alphaThreshold": 16,
+  "targetHeightPx": 286,
+  "targetYpx": 30,
+  "filter": "lanczos",
+  "poses": {
+    "rightContact": { "crop": [625, 1221, 283, 115], "targetWidthPx": 146 },
+    "leftPassing": { "crop": [578, 1222, 326, 114], "targetWidthPx": 135 },
+    "leftContact": { "crop": [651, 1178, 281, 129], "targetWidthPx": 158 },
+    "rightPassing": { "crop": [635, 1188, 272, 117], "targetWidthPx": 153 }
+  }
+}

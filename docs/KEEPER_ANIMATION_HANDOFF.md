@@ -15,16 +15,20 @@ test staircase as construction evidence, not final scenery. Later staircase
 art must add two newels, foreground balusters and a continuous rail while the
 geometry verifier prevents any size, tread, riser, landing or contact drift.
 
-The first complete downward stair route is now a reversible review candidate at
-`/keeper-review/keeper-prime-stair-descent-v1/`. It starts walking while hidden
-behind the upper door, stops on the registered landing, turns
-side-left → front → side-right for the opposite zig-zag parity, descends the
-same 14-riser flight, walks off the last tread, stops, reaches the lower door
-with the right hand, opens it and walks through until fully hidden. Stair
-Ascent V16's 27 source frames are used in exact reverse order and mirrored;
-four 0.25-lp reverse-time passing-frame regressions are root-clamped forward.
-No Keeper pixels, approved ascent material, Final or runtime art changed. V1
-awaits Frank's visual approval.
+Stair Descent V1 is rejected provenance. Its reverse-order/mirrored ascent
+drawings made the visible left leg remain airborne while the right leg took
+every descending step. Do not reactivate or promote it. The replacement is the
+reversible V2 review candidate at
+`/keeper-review/keeper-prime-stair-descent-v2/`. The complete door-to-door route
+is unchanged, but the stair section now uses four descent-specific side-right
+drawings in the exact repeating cycle RIGHT contact → LEFT passing → LEFT
+contact → RIGHT passing. Across fourteen risers this produces seven right-foot
+and seven left-foot contacts. The approved V16 root path, stored 98 × 60-lp
+staircase, turn, walk, bridge and door-reach assets remain unchanged. Raw and
+registered candidate hashes, image-editing prompts, registration parameters
+and deterministic tests are stored in
+`art/drafts/keeper-prime-stair-descent-2026-10-16-v2/`. V2 awaits Frank's
+visual approval; no Final, runtime or production art changed.
 
 Keeper Prime's upward stair route is complete and approved at
 `/keeper-review/keeper-prime-stair-transitions-v6/`: lower-room emergence,
