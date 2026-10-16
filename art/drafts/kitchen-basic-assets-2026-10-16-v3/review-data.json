@@ -1,0 +1,1317 @@
+{
+  "assets": {
+    "obj_bin": {
+      "label": "Full-bay pedal bin",
+      "cell": [
+        21,
+        16
+      ],
+      "bays": 1,
+      "interactionOffsetKu": 0,
+      "states": {
+        "standard": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_bin_standard_f1.png",
+          "meta": {
+            "w": 21,
+            "h": 16,
+            "frames": 1,
+            "fps": 0,
+            "density": 4,
+            "anchor": [
+              10.5,
+              16
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_bin_standard_f1_frame1.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 20.0,
+              "heightLp": 14.0
+            }
+          ]
+        },
+        "full": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_bin_full_f1.png",
+          "meta": {
+            "w": 21,
+            "h": 16,
+            "frames": 1,
+            "fps": 0,
+            "density": 4,
+            "anchor": [
+              10.5,
+              16
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_bin_full_f1_frame1.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 20.0,
+              "heightLp": 14.0
+            }
+          ]
+        },
+        "overflowing": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_bin_overflowing_f1.png",
+          "meta": {
+            "w": 21,
+            "h": 16,
+            "frames": 1,
+            "fps": 0,
+            "density": 4,
+            "anchor": [
+              10.5,
+              16
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_bin_overflowing_f1_frame1.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 20.0,
+              "heightLp": 14.0
+            }
+          ]
+        }
+      },
+      "largestBound": {
+        "widthLp": 20.0,
+        "heightLp": 14.0
+      }
+    },
+    "obj_fridge": {
+      "label": "Freestanding under-counter fridge",
+      "cell": [
+        21,
+        21
+      ],
+      "bays": 1,
+      "interactionOffsetKu": 0,
+      "states": {
+        "standard": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_fridge_standard_f1.png",
+          "meta": {
+            "w": 21,
+            "h": 21,
+            "frames": 1,
+            "fps": 0,
+            "density": 4,
+            "anchor": [
+              10.5,
+              21
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_fridge_standard_f1_frame1.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 20.0,
+              "heightLp": 19.0
+            }
+          ]
+        },
+        "on": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_fridge_on_f4.png",
+          "meta": {
+            "w": 21,
+            "h": 21,
+            "frames": 4,
+            "fps": 8,
+            "density": 4,
+            "anchor": [
+              10.5,
+              21
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_fridge_on_f4_frame1.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_fridge_on_f4_frame2.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_fridge_on_f4_frame3.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_fridge_on_f4_frame4.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 20.0,
+              "heightLp": 19.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 20.0,
+              "heightLp": 19.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 20.0,
+              "heightLp": 19.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 20.0,
+              "heightLp": 19.0
+            }
+          ]
+        },
+        "broken": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_fridge_broken_f4.png",
+          "meta": {
+            "w": 21,
+            "h": 21,
+            "frames": 4,
+            "fps": 8,
+            "density": 4,
+            "anchor": [
+              10.5,
+              21
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_fridge_broken_f4_frame1.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_fridge_broken_f4_frame2.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_fridge_broken_f4_frame3.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_fridge_broken_f4_frame4.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 19.5,
+              "heightLp": 19.0
+            },
+            {
+              "xLp": 1.0,
+              "yLp": 2.0,
+              "widthLp": 19.5,
+              "heightLp": 19.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 19.5,
+              "heightLp": 19.0
+            },
+            {
+              "xLp": 1.0,
+              "yLp": 2.0,
+              "widthLp": 19.5,
+              "heightLp": 19.0
+            }
+          ]
+        }
+      },
+      "largestBound": {
+        "widthLp": 20.0,
+        "heightLp": 19.0
+      }
+    },
+    "obj_kettle": {
+      "label": "Full-bay stove kettle unit",
+      "cell": [
+        21,
+        31
+      ],
+      "bays": 1,
+      "interactionOffsetKu": 0,
+      "states": {
+        "standard": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_kettle_standard_f1.png",
+          "meta": {
+            "w": 21,
+            "h": 31,
+            "frames": 1,
+            "fps": 0,
+            "density": 4,
+            "anchor": [
+              10.5,
+              31
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_kettle_standard_f1_frame1.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 1.5,
+              "widthLp": 20.0,
+              "heightLp": 29.5
+            }
+          ]
+        },
+        "on": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_kettle_on_f4.png",
+          "meta": {
+            "w": 21,
+            "h": 31,
+            "frames": 4,
+            "fps": 8,
+            "density": 4,
+            "anchor": [
+              10.5,
+              31
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_kettle_on_f4_frame1.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_kettle_on_f4_frame2.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_kettle_on_f4_frame3.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_kettle_on_f4_frame4.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 1.5,
+              "widthLp": 20.0,
+              "heightLp": 29.5
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 1.0,
+              "widthLp": 20.0,
+              "heightLp": 30.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 1.0,
+              "widthLp": 20.0,
+              "heightLp": 30.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 1.0,
+              "widthLp": 20.0,
+              "heightLp": 30.0
+            }
+          ]
+        },
+        "broken": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_kettle_broken_f4.png",
+          "meta": {
+            "w": 21,
+            "h": 31,
+            "frames": 4,
+            "fps": 8,
+            "density": 4,
+            "anchor": [
+              10.5,
+              31
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_kettle_broken_f4_frame1.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_kettle_broken_f4_frame2.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_kettle_broken_f4_frame3.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_kettle_broken_f4_frame4.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 1.0,
+              "widthLp": 19.5,
+              "heightLp": 30.0
+            },
+            {
+              "xLp": 1.0,
+              "yLp": 1.0,
+              "widthLp": 19.5,
+              "heightLp": 30.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 1.0,
+              "widthLp": 19.5,
+              "heightLp": 30.0
+            },
+            {
+              "xLp": 1.0,
+              "yLp": 1.0,
+              "widthLp": 19.5,
+              "heightLp": 30.0
+            }
+          ]
+        }
+      },
+      "largestBound": {
+        "widthLp": 20.0,
+        "heightLp": 30.0
+      }
+    },
+    "obj_toaster": {
+      "label": "Full-bay toaster unit",
+      "cell": [
+        21,
+        31
+      ],
+      "bays": 1,
+      "interactionOffsetKu": 0,
+      "states": {
+        "standard": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_toaster_standard_f1.png",
+          "meta": {
+            "w": 21,
+            "h": 31,
+            "frames": 1,
+            "fps": 0,
+            "density": 4,
+            "anchor": [
+              10.5,
+              31
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_toaster_standard_f1_frame1.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 6.0,
+              "widthLp": 20.0,
+              "heightLp": 25.0
+            }
+          ]
+        },
+        "on": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_toaster_on_f4.png",
+          "meta": {
+            "w": 21,
+            "h": 31,
+            "frames": 4,
+            "fps": 8,
+            "density": 4,
+            "anchor": [
+              10.5,
+              31
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_toaster_on_f4_frame1.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_toaster_on_f4_frame2.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_toaster_on_f4_frame3.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_toaster_on_f4_frame4.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 6.0,
+              "widthLp": 20.0,
+              "heightLp": 25.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 5.0,
+              "widthLp": 20.0,
+              "heightLp": 26.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 20.0,
+              "heightLp": 29.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 5.0,
+              "widthLp": 20.0,
+              "heightLp": 26.0
+            }
+          ]
+        },
+        "broken": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_toaster_broken_f4.png",
+          "meta": {
+            "w": 21,
+            "h": 31,
+            "frames": 4,
+            "fps": 8,
+            "density": 4,
+            "anchor": [
+              10.5,
+              31
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_toaster_broken_f4_frame1.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_toaster_broken_f4_frame2.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_toaster_broken_f4_frame3.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_toaster_broken_f4_frame4.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 1.0,
+              "widthLp": 19.5,
+              "heightLp": 30.0
+            },
+            {
+              "xLp": 1.0,
+              "yLp": 1.0,
+              "widthLp": 19.5,
+              "heightLp": 30.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 1.0,
+              "widthLp": 19.5,
+              "heightLp": 30.0
+            },
+            {
+              "xLp": 1.0,
+              "yLp": 1.0,
+              "widthLp": 19.5,
+              "heightLp": 30.0
+            }
+          ]
+        }
+      },
+      "largestBound": {
+        "widthLp": 20.0,
+        "heightLp": 30.0
+      }
+    },
+    "obj_cooker": {
+      "label": "Full-bay basic oven",
+      "cell": [
+        21,
+        28
+      ],
+      "bays": 1,
+      "interactionOffsetKu": 0,
+      "states": {
+        "standard": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_cooker_standard_f1.png",
+          "meta": {
+            "w": 21,
+            "h": 28,
+            "frames": 1,
+            "fps": 0,
+            "density": 4,
+            "anchor": [
+              10.5,
+              28
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_cooker_standard_f1_frame1.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 4.0,
+              "widthLp": 20.0,
+              "heightLp": 24.0
+            }
+          ]
+        },
+        "on": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_cooker_on_f4.png",
+          "meta": {
+            "w": 21,
+            "h": 28,
+            "frames": 4,
+            "fps": 8,
+            "density": 4,
+            "anchor": [
+              10.5,
+              28
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_cooker_on_f4_frame1.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_cooker_on_f4_frame2.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_cooker_on_f4_frame3.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_cooker_on_f4_frame4.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 4.0,
+              "widthLp": 20.0,
+              "heightLp": 24.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 4.0,
+              "widthLp": 20.0,
+              "heightLp": 24.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 4.0,
+              "widthLp": 20.0,
+              "heightLp": 24.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 4.0,
+              "widthLp": 20.0,
+              "heightLp": 24.0
+            }
+          ]
+        },
+        "broken": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_cooker_broken_f4.png",
+          "meta": {
+            "w": 21,
+            "h": 28,
+            "frames": 4,
+            "fps": 8,
+            "density": 4,
+            "anchor": [
+              10.5,
+              28
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_cooker_broken_f4_frame1.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_cooker_broken_f4_frame2.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_cooker_broken_f4_frame3.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_cooker_broken_f4_frame4.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 19.5,
+              "heightLp": 26.0
+            },
+            {
+              "xLp": 1.0,
+              "yLp": 2.0,
+              "widthLp": 19.5,
+              "heightLp": 26.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 19.5,
+              "heightLp": 26.0
+            },
+            {
+              "xLp": 1.0,
+              "yLp": 2.0,
+              "widthLp": 19.5,
+              "heightLp": 26.0
+            }
+          ]
+        }
+      },
+      "largestBound": {
+        "widthLp": 20.0,
+        "heightLp": 26.0
+      }
+    },
+    "obj_mixer": {
+      "label": "Full-bay mixer unit",
+      "cell": [
+        21,
+        31
+      ],
+      "bays": 1,
+      "interactionOffsetKu": 0,
+      "states": {
+        "standard": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_mixer_standard_f1.png",
+          "meta": {
+            "w": 21,
+            "h": 31,
+            "frames": 1,
+            "fps": 0,
+            "density": 4,
+            "anchor": [
+              10.5,
+              31
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_mixer_standard_f1_frame1.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 2.5,
+              "widthLp": 20.0,
+              "heightLp": 28.5
+            }
+          ]
+        },
+        "on": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_mixer_on_f4.png",
+          "meta": {
+            "w": 21,
+            "h": 31,
+            "frames": 4,
+            "fps": 8,
+            "density": 4,
+            "anchor": [
+              10.5,
+              31
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_mixer_on_f4_frame1.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_mixer_on_f4_frame2.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_mixer_on_f4_frame3.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_mixer_on_f4_frame4.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 2.5,
+              "widthLp": 20.0,
+              "heightLp": 28.5
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 2.5,
+              "widthLp": 20.0,
+              "heightLp": 28.5
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 2.5,
+              "widthLp": 20.0,
+              "heightLp": 28.5
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 2.5,
+              "widthLp": 20.0,
+              "heightLp": 28.5
+            }
+          ]
+        },
+        "broken": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_mixer_broken_f4.png",
+          "meta": {
+            "w": 21,
+            "h": 31,
+            "frames": 4,
+            "fps": 8,
+            "density": 4,
+            "anchor": [
+              10.5,
+              31
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_mixer_broken_f4_frame1.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_mixer_broken_f4_frame2.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_mixer_broken_f4_frame3.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_mixer_broken_f4_frame4.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 1.0,
+              "widthLp": 19.5,
+              "heightLp": 30.0
+            },
+            {
+              "xLp": 1.0,
+              "yLp": 1.0,
+              "widthLp": 19.5,
+              "heightLp": 30.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 1.0,
+              "widthLp": 19.5,
+              "heightLp": 30.0
+            },
+            {
+              "xLp": 1.0,
+              "yLp": 1.0,
+              "widthLp": 19.5,
+              "heightLp": 30.0
+            }
+          ]
+        }
+      },
+      "largestBound": {
+        "widthLp": 20.0,
+        "heightLp": 30.0
+      }
+    },
+    "obj_sink": {
+      "label": "Full-bay sink unit",
+      "cell": [
+        21,
+        29
+      ],
+      "bays": 1,
+      "interactionOffsetKu": 0,
+      "states": {
+        "standard": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_sink_standard_f1.png",
+          "meta": {
+            "w": 21,
+            "h": 29,
+            "frames": 1,
+            "fps": 0,
+            "density": 4,
+            "anchor": [
+              10.5,
+              29
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_sink_standard_f1_frame1.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 20.0,
+              "heightLp": 27.0
+            }
+          ]
+        },
+        "on": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_sink_on_f4.png",
+          "meta": {
+            "w": 21,
+            "h": 29,
+            "frames": 4,
+            "fps": 8,
+            "density": 4,
+            "anchor": [
+              10.5,
+              29
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_sink_on_f4_frame1.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_sink_on_f4_frame2.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_sink_on_f4_frame3.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_sink_on_f4_frame4.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 20.0,
+              "heightLp": 27.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 20.0,
+              "heightLp": 27.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 20.0,
+              "heightLp": 27.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 20.0,
+              "heightLp": 27.0
+            }
+          ]
+        },
+        "broken": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_sink_broken_f4.png",
+          "meta": {
+            "w": 21,
+            "h": 29,
+            "frames": 4,
+            "fps": 8,
+            "density": 4,
+            "anchor": [
+              10.5,
+              29
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_sink_broken_f4_frame1.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_sink_broken_f4_frame2.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_sink_broken_f4_frame3.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_sink_broken_f4_frame4.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 19.5,
+              "heightLp": 27.0
+            },
+            {
+              "xLp": 1.0,
+              "yLp": 2.0,
+              "widthLp": 19.5,
+              "heightLp": 27.0
+            },
+            {
+              "xLp": 0.5,
+              "yLp": 2.0,
+              "widthLp": 19.5,
+              "heightLp": 27.0
+            },
+            {
+              "xLp": 1.0,
+              "yLp": 2.0,
+              "widthLp": 19.5,
+              "heightLp": 27.0
+            }
+          ]
+        }
+      },
+      "largestBound": {
+        "widthLp": 20.0,
+        "heightLp": 27.0
+      }
+    },
+    "obj_table": {
+      "label": "Layered table for one + chair",
+      "cell": [
+        42,
+        28
+      ],
+      "bays": 2,
+      "interactionOffsetKu": 0,
+      "states": {
+        "standard": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_table_standard_f1.png",
+          "meta": {
+            "w": 42,
+            "h": 28,
+            "frames": 1,
+            "fps": 0,
+            "density": 4,
+            "anchor": [
+              21.0,
+              28
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_table_standard_f1_frame1.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 1.0,
+              "yLp": 2.0,
+              "widthLp": 40.0,
+              "heightLp": 26.0
+            }
+          ]
+        }
+      },
+      "largestBound": {
+        "widthLp": 40.0,
+        "heightLp": 26.0
+      }
+    },
+    "obj_petbowl": {
+      "label": "Pet bowl",
+      "cell": [
+        16,
+        8
+      ],
+      "bays": 0,
+      "interactionOffsetKu": 0,
+      "states": {
+        "standard": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_petbowl_standard_f1.png",
+          "meta": {
+            "w": 16,
+            "h": 8,
+            "frames": 1,
+            "fps": 0,
+            "density": 4,
+            "anchor": [
+              8.0,
+              8
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_petbowl_standard_f1_frame1.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 2.0,
+              "yLp": 5.0,
+              "widthLp": 12.0,
+              "heightLp": 3.0
+            }
+          ]
+        },
+        "full": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_petbowl_full_f1.png",
+          "meta": {
+            "w": 16,
+            "h": 8,
+            "frames": 1,
+            "fps": 0,
+            "density": 4,
+            "anchor": [
+              8.0,
+              8
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_petbowl_full_f1_frame1.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 2.0,
+              "yLp": 5.0,
+              "widthLp": 12.0,
+              "heightLp": 3.0
+            }
+          ]
+        },
+        "broken": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_petbowl_broken_f4.png",
+          "meta": {
+            "w": 16,
+            "h": 8,
+            "frames": 4,
+            "fps": 8,
+            "density": 4,
+            "anchor": [
+              8.0,
+              8
+            ],
+            "z": 40,
+            "interactionOffsetKu": 0
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_petbowl_broken_f4_frame1.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_petbowl_broken_f4_frame2.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_petbowl_broken_f4_frame3.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_petbowl_broken_f4_frame4.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 2.0,
+              "yLp": 5.0,
+              "widthLp": 12.0,
+              "heightLp": 3.0
+            },
+            {
+              "xLp": 2.0,
+              "yLp": 5.0,
+              "widthLp": 12.0,
+              "heightLp": 3.0
+            },
+            {
+              "xLp": 2.0,
+              "yLp": 5.0,
+              "widthLp": 12.0,
+              "heightLp": 3.0
+            },
+            {
+              "xLp": 2.0,
+              "yLp": 5.0,
+              "widthLp": 12.0,
+              "heightLp": 3.0
+            }
+          ]
+        }
+      },
+      "largestBound": {
+        "widthLp": 12.0,
+        "heightLp": 3.0
+      }
+    },
+    "obj_cupboard": {
+      "label": "Front-on walk-in cleaning cupboard",
+      "cell": [
+        38,
+        56
+      ],
+      "bays": 0,
+      "interactionOffsetKu": -84,
+      "states": {
+        "standard": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_cupboard_standard_f1.png",
+          "meta": {
+            "w": 38,
+            "h": 56,
+            "frames": 1,
+            "fps": 0,
+            "density": 4,
+            "anchor": [
+              19.0,
+              56
+            ],
+            "z": 40,
+            "interactionOffsetKu": -84
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_cupboard_standard_f1_frame1.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 1.0,
+              "yLp": 4.0,
+              "widthLp": 36.0,
+              "heightLp": 52.0
+            }
+          ]
+        },
+        "on": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_cupboard_on_f4.png",
+          "meta": {
+            "w": 38,
+            "h": 56,
+            "frames": 4,
+            "fps": 8,
+            "density": 4,
+            "anchor": [
+              19.0,
+              56
+            ],
+            "z": 40,
+            "interactionOffsetKu": -84
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_cupboard_on_f4_frame1.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_cupboard_on_f4_frame2.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_cupboard_on_f4_frame3.png",
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_cupboard_on_f4_frame4.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 1.0,
+              "yLp": 4.0,
+              "widthLp": 36.0,
+              "heightLp": 52.0
+            },
+            {
+              "xLp": 1.0,
+              "yLp": 4.0,
+              "widthLp": 36.0,
+              "heightLp": 52.0
+            },
+            {
+              "xLp": 1.0,
+              "yLp": 4.0,
+              "widthLp": 36.0,
+              "heightLp": 52.0
+            },
+            {
+              "xLp": 1.0,
+              "yLp": 4.0,
+              "widthLp": 36.0,
+              "heightLp": 52.0
+            }
+          ]
+        },
+        "open": {
+          "png": "art/raw/kitchen-basic-assets-2026-10-16-v3/obj_cupboard_open_f1.png",
+          "meta": {
+            "w": 38,
+            "h": 56,
+            "frames": 1,
+            "fps": 0,
+            "density": 4,
+            "anchor": [
+              19.0,
+              56
+            ],
+            "z": 40,
+            "interactionOffsetKu": -84
+          },
+          "urls": [
+            "/keeper-review/kitchen-basic-assets-v3/assets/obj_cupboard_open_f1_frame1.png"
+          ],
+          "bounds": [
+            {
+              "xLp": 1.0,
+              "yLp": 4.0,
+              "widthLp": 36.0,
+              "heightLp": 52.0
+            }
+          ]
+        }
+      },
+      "largestBound": {
+        "widthLp": 36.0,
+        "heightLp": 52.0
+      }
+    }
+  },
+  "keeper": {
+    "keeper_walk": [
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_frame1.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_frame2.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_frame3.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_frame4.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_frame5.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_frame6.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_frame7.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_frame8.png"
+    ],
+    "keeper_walk_into_lift": [
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_into_lift_frame1.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_into_lift_frame2.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_into_lift_frame3.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_into_lift_frame4.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_into_lift_frame5.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_into_lift_frame6.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_into_lift_frame7.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_walk_into_lift_frame8.png"
+    ],
+    "keeper_sweep_broom": [
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_sweep_broom_frame1.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_sweep_broom_frame2.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_sweep_broom_frame3.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_sweep_broom_frame4.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_sweep_broom_frame5.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_sweep_broom_frame6.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_sweep_broom_frame7.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_sweep_broom_frame8.png"
+    ],
+    "keeper_hoover_basic": [
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_hoover_basic_frame1.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_hoover_basic_frame2.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_hoover_basic_frame3.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_hoover_basic_frame4.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_hoover_basic_frame5.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_hoover_basic_frame6.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_hoover_basic_frame7.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_hoover_basic_frame8.png"
+    ],
+    "keeper_sit_back": [
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_sit_back_frame1.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_sit_back_frame2.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_sit_back_frame3.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_sit_back_frame4.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_sit_back_frame5.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_sit_back_frame6.png"
+    ],
+    "keeper_eat_seated": [
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_eat_seated_frame1.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_eat_seated_frame2.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_eat_seated_frame3.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_eat_seated_frame4.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_eat_seated_frame5.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_eat_seated_frame6.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_eat_seated_frame7.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_eat_seated_frame8.png"
+    ],
+    "keeper_cake_from_oven_back": [
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_cake_from_oven_back_frame1.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_cake_from_oven_back_frame2.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_cake_from_oven_back_frame3.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_cake_from_oven_back_frame4.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_cake_from_oven_back_frame5.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_cake_from_oven_back_frame6.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_cake_from_oven_back_frame7.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_cake_from_oven_back_frame8.png"
+    ],
+    "keeper_meal_from_oven_back": [
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_meal_from_oven_back_frame1.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_meal_from_oven_back_frame2.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_meal_from_oven_back_frame3.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_meal_from_oven_back_frame4.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_meal_from_oven_back_frame5.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_meal_from_oven_back_frame6.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_meal_from_oven_back_frame7.png",
+      "/keeper-review/kitchen-basic-assets-v3/assets/keeper_meal_from_oven_back_frame8.png"
+    ]
+  },
+  "v2": {
+    "obj_bin": "/keeper-review/kitchen-basic-assets-v3/assets/v2_obj_bin_standard_f1.png",
+    "obj_fridge": "/keeper-review/kitchen-basic-assets-v3/assets/v2_obj_fridge_standard_f1.png",
+    "obj_kettle": "/keeper-review/kitchen-basic-assets-v3/assets/v2_obj_kettle_standard_f1.png",
+    "obj_toaster": "/keeper-review/kitchen-basic-assets-v3/assets/v2_obj_toaster_standard_f1.png",
+    "obj_cooker": "/keeper-review/kitchen-basic-assets-v3/assets/v2_obj_cooker_standard_f1.png",
+    "obj_mixer": "/keeper-review/kitchen-basic-assets-v3/assets/v2_obj_mixer_standard_f1.png",
+    "obj_sink": "/keeper-review/kitchen-basic-assets-v3/assets/v2_obj_sink_standard_f1.png",
+    "obj_table": "/keeper-review/kitchen-basic-assets-v3/assets/v2_obj_table_standard_f1.png",
+    "obj_petbowl": "/keeper-review/kitchen-basic-assets-v3/assets/v2_obj_petbowl_standard_f1.png",
+    "obj_cupboard": "/keeper-review/kitchen-basic-assets-v3/assets/v2_obj_cupboard_standard_f1.png"
+  },
+  "shells": {
+    "6": "/keeper-review/kitchen-basic-assets-v3/assets/room_kitchen_shell_6bay_frame1.png",
+    "7": "/keeper-review/kitchen-basic-assets-v3/assets/room_kitchen_shell_7bay_frame1.png",
+    "8": "/keeper-review/kitchen-basic-assets-v3/assets/room_kitchen_shell_8bay_frame1.png",
+    "9": "/keeper-review/kitchen-basic-assets-v3/assets/room_kitchen_shell_9bay_frame1.png",
+    "10": "/keeper-review/kitchen-basic-assets-v3/assets/room_kitchen_shell_10bay_frame1.png",
+    "11": "/keeper-review/kitchen-basic-assets-v3/assets/room_kitchen_shell_11bay_frame1.png",
+    "12": "/keeper-review/kitchen-basic-assets-v3/assets/room_kitchen_shell_12bay_frame1.png"
+  },
+  "room9": "/keeper-review/kitchen-basic-assets-v3/assets/room_kitchen_9bay_composite.png",
+  "room12": "/keeper-review/kitchen-basic-assets-v3/assets/room_kitchen_12bay_outline.png",
+  "cupboardClosed": "/keeper-review/kitchen-basic-assets-v3/assets/obj_cupboard_standard_f1_frame1.png",
+  "cupboardOpen": "/keeper-review/kitchen-basic-assets-v3/assets/obj_cupboard_open_f1_frame1.png",
+  "cupboardRecess": "/keeper-review/kitchen-basic-assets-v3/assets/obj_cupboard_recess_f1_frame1.png",
+  "cupboardLeaf": "/keeper-review/kitchen-basic-assets-v3/assets/obj_cupboard_leaf_open_f1_frame1.png",
+  "chairLayer": "/keeper-review/kitchen-basic-assets-v3/assets/obj_table_chair_back_f1_frame1.png",
+  "tableLayer": "/keeper-review/kitchen-basic-assets-v3/assets/obj_table_foreground_f1_frame1.png",
+  "references": [
+    "/keeper-review/kitchen-basic-assets-v3/assets/kitchen-furniture-concept-v1.png",
+    "/keeper-review/kitchen-basic-assets-v3/assets/kitchen-shell-concept-v1.png"
+  ]
+}
