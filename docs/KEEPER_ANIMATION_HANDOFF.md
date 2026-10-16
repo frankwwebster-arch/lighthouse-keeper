@@ -6,6 +6,17 @@ Codex task should be able to continue from here without relying on the old chat.
 
 ## Current core-transition checkpoint — 16 October 2026
 
+The first complete downward stair route is now a reversible review candidate at
+`/keeper-review/keeper-prime-stair-descent-v1/`. It starts walking while hidden
+behind the upper door, stops on the registered landing, turns
+side-left → front → side-right for the opposite zig-zag parity, descends the
+same 14-riser flight, walks off the last tread, stops, reaches the lower door
+with the right hand, opens it and walks through until fully hidden. Stair
+Ascent V16's 27 source frames are used in exact reverse order and mirrored;
+four 0.25-lp reverse-time passing-frame regressions are root-clamped forward.
+No Keeper pixels, approved ascent material, Final or runtime art changed. V1
+awaits Frank's visual approval.
+
 Keeper Prime's upward stair route is complete and approved at
 `/keeper-review/keeper-prime-stair-transitions-v6/`: lower-room emergence,
 walking join, full climb, landing, clockwise turn, upper-floor walk/stop,
@@ -33,14 +44,15 @@ two-times-faster V4 turn remains deferred.
 
 The remaining core transition work is bounded:
 
-1. downward stairs with lower-floor landing/door exit;
-2. the opposite zigzag stair parity and its correct turn direction;
-3. downward ladder with lower dismount/door exit;
-4. complete Prime lift call/enter and lift-exit/walk flows;
-5. Prime stand↔sit joins for side, front and rear furniture approaches;
-6. explicit left/right or opposite-hand variants wherever mirroring would
+1. approve or correct Stair Descent V1, then certify the mirrored opposite
+   flight layout against the same contact/root rules;
+2. downward ladder with direction-specific top mount and lower dismount/door
+   exit (the central rung cycle may reverse, the route joins may not);
+3. complete Prime lift call/enter and lift-exit/walk flows;
+4. Prime stand↔sit joins for side, front and rear furniture approaches;
+5. explicit left/right or opposite-hand variants wherever mirroring would
    break a door, prop, furniture or hand relationship.
-7. one deterministic open-door room emergence/return handoff, reusing standard
+6. one deterministic open-door room emergence/return handoff, reusing standard
    walking and occlusion rather than creating costume-specific door art.
 
 Action-specific object handoffs follow these core routes. Do not restart room

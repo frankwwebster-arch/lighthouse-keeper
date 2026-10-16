@@ -2,6 +2,18 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Stair descent V1 review candidate (16 Oct 2026)
+
+The first complete upper-door → stair descent → lower-door route is published
+for review at `/keeper-review/keeper-prime-stair-descent-v1/`. It reuses the
+approved Stair Ascent V16 drawings in exact reverse source order, mirrored for
+side-right travel, with direction-specific upper/lower joins assembled from
+approved walk, turn, bridge and door-reach poses. No source pixels, approval
+record, Final or runtime art changed. The route and deterministic checks are
+documented in
+`art/drafts/keeper-prime-stair-descent-2026-10-16-v1/HANDOFF.md`; await Frank's
+visual approval before any promotion or runtime wiring.
+
 ## Frank: rejected Kitchen V6 and replacement brief (16 Oct 2026)
 
 The first `flat-elevation-v2` Kitchen V6 was rejected and removed in full. It
@@ -367,9 +379,11 @@ still deferred.
 ### Core transition gap after the V5 animation / V6 door gate
 
 The approved stair route and candidate ladder route can each demonstrate one
-complete upward room-to-room journey. Still required before the transitional
-library is complete: downward stairs and lower-floor exit; the opposite
-left/right zigzag stair parity; downward ladder and lower dismount/exit;
+complete upward room-to-room journey. Stair Descent V1 now supplies an
+unapproved complete downward candidate, including the opposite zig-zag turn,
+lower landing and door exit. Still required before the transitional library is
+complete: Frank's approval or corrections for Stair Descent V1; certification
+of its mirrored opposite-flight layout; downward ladder and lower dismount/exit;
 finished Prime lift call/enter and lift-exit/walk; Prime stand↔sit joins for
 side/front/back furniture approaches; and explicit opposite-hand/direction
 certification wherever CSS mirroring cannot preserve the door, prop or hand

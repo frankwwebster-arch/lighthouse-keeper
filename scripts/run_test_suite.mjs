@@ -105,6 +105,13 @@ const stairTransitionsV6 = spawnSync('node', ['scripts/verify_keeper_prime_stair
 })
 if (stairTransitionsV6.error) throw stairTransitionsV6.error
 if (stairTransitionsV6.status !== 0) process.exit(stairTransitionsV6.status ?? 1)
+const stairDescentV1 = spawnSync('node', ['scripts/verify_keeper_prime_stair_descent_v1.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (stairDescentV1.error) throw stairDescentV1.error
+if (stairDescentV1.status !== 0) process.exit(stairDescentV1.status ?? 1)
 const ladderTransitionsV1 = spawnSync('node', ['scripts/verify_keeper_prime_ladder_transitions_v1.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },

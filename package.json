@@ -92,6 +92,7 @@
     "verify:keeper-prime-stair-transitions-v4": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_stair_transitions_v4.ts",
     "verify:keeper-prime-stair-transitions-v5": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_stair_transitions_v5.ts",
     "verify:keeper-prime-stair-transitions-v6": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_stair_transitions_v6.ts",
+    "verify:keeper-prime-stair-descent-v1": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_stair_descent_v1.ts",
     "verify:keeper-prime-ladder-transitions-v1": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_ladder_transitions_v1.ts",
     "verify:keeper-prime-ladder-transitions-v2": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_ladder_transitions_v2.ts",
     "verify:keeper-prime-ladder-transitions-v3": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_ladder_transitions_v3.ts",
