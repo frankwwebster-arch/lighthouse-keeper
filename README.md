@@ -233,16 +233,17 @@ matching dismount/turn/walk-to-door sequence. All visible circulation frames
 use the approved V6 0.943057 scale; room-scale reconciliation remains hidden
 behind doors. The legacy ladder strip is comparison provenance only.
 
-Live review found the V1 motion generally sound but exposed central rung
-segments flashing through changing transparent gaps during the bottom turn.
-Frank also requested a faster turn and substantially slower climb while
-accepting the small hand/foot-to-rung mismatch at game scale. The active V2
-gate at `/keeper-review/keeper-prime-ladder-transitions-v2/` changes no artwork,
-root, ladder geometry or rung contact. It adds a 12-lp-wide central body
-occluder between the ladder and Keeper, leaving both side rails visible, changes
-turn frames from 62.5 to 50 ms, and changes ladder contact/passing/mount/
-dismount frames to 150 ms. V1 remains immutable. V2 is unapproved and changes
-no Final, runtime or production asset.
+Live review found the V1 motion generally sound but exposed ladder colour
+showing through semi-transparent Keeper paint. Frank also requested a faster
+turn and substantially slower climb while accepting the small hand/foot-to-rung
+mismatch at game scale. V2's rectangular central-rung occluder is rejected: it
+made rung segments disappear at each step. The active V3 gate at
+`/keeper-review/keeper-prime-ladder-transitions-v3/` removes that layer and
+draws the complete ladder in every frame. It alpha-hardens only the 29
+registered Keeper images at threshold 128 while retaining every surviving RGB
+pixel exactly. V2's 50-ms turns and 150-ms climb phases are unchanged, as are
+all roots, geometry and rung contacts. V1/V2 remain immutable. V3 is unapproved
+and changes no Final, runtime or production asset.
 
 ## Run it
 ```
@@ -262,6 +263,7 @@ npm run verify:keeper-prime-stair-transitions-v5 # whole-silhouette stair-family
 npm run verify:keeper-prime-stair-transitions-v6 # door-hidden room/circulation scale handoff
 npm run verify:keeper-prime-ladder-transitions-v1 # measured alternating ladder, approach, continuation and dismount
 npm run verify:keeper-prime-ladder-transitions-v2 # V1-exact art with corrected rung layering and tuned turn/climb cadence
+npm run verify:keeper-prime-ladder-transitions-v3 # complete ladder plus alpha-opaque Keeper frames
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
 

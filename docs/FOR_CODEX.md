@@ -281,17 +281,23 @@ seven 256 × 320 cells with transparent gutters.
 Run `npm run verify:keeper-prime-ladder-transitions-v1`. The candidate is not
 approved; Final, runtime and production remain unchanged.
 
-Frank found the overall V1 animation sound but reported a ladder flash through
-the Keeper during the bottom turn. He requested a faster turn and significantly
-slower climb, while explicitly accepting the imperfect hand/foot-to-rung match
-at game scale. The active V2 review at
-`/keeper-review/keeper-prime-ladder-transitions-v2/` preserves every V1 image,
-root, frame order, rung and route dimension exactly. It places a narrow 12-lp
-central-rung occluder at z=3, between ladder z=2 and Keeper z=4, only while the
-Keeper overlaps the ladder; side rails remain visible. Turn frames change from
-62.5 to 50 ms and ladder mount/contact/passing/dismount frames use 150 ms.
-Run `npm run verify:keeper-prime-ladder-transitions-v2`. V2 is awaiting visual
-review and changes no Final, runtime or production asset.
+Frank found the overall V1 animation sound but reported ladder colour showing
+through the semi-transparent Keeper during the bottom turn. He requested a
+faster turn and significantly slower climb, while explicitly accepting the
+imperfect hand/foot-to-rung match at game scale. V2 preserved V1 art and added
+a rectangular central-rung occluder, but Frank rejected that solution because
+it made rung segments disappear on every step. Preserve V2 as rejected
+presentation provenance.
+
+The active V3 review at
+`/keeper-review/keeper-prime-ladder-transitions-v3/` removes the V2 occluder.
+Every rail and rung is present in every frame. All 29 registered Keeper images
+are instead alpha-hardened after resizing: alpha ≥128 becomes 255, alpha <128
+becomes 0, and retained RGB remains exact. Roots, frame order, geometry and
+rung contacts remain V1 exact; timing remains V2 exact at 50 ms per turn frame
+and 150 ms per ladder mount/contact/passing/dismount frame. Run
+`npm run verify:keeper-prime-ladder-transitions-v3`. V3 awaits visual review
+and changes no Final, runtime or production asset.
 
 ## Lift entry alignment correction (14 Oct 2026)
 

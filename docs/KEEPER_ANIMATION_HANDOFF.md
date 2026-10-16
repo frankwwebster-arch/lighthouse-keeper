@@ -1597,6 +1597,26 @@ ms (6.67 fps). V1 remains immutable. Run
 `npm run verify:keeper-prime-ladder-transitions-v2`; V2 is unapproved and
 Final, runtime and production remain unchanged.
 
+Frank rejected the V2 presentation on 16 October 2026 because its rectangular
+occluder removed the middle of every rung as the Keeper climbed. His explicit
+correction was to make the Keeper opaque, not remove any part of the ladder.
+V2 remains immutable rejected presentation provenance.
+
+## Keeper Prime ladder transition V3 (16 Oct 2026)
+
+V3 at `/keeper-review/keeper-prime-ladder-transitions-v3/` removes the rung
+occluder completely, so both rails and every full rung are constructed in
+every frame. It creates new versioned derivatives of all 29 unique registered
+Keeper review images using the established post-resize alpha threshold: alpha
+values at or above 128 become 255; lower alpha becomes zero. Every retained
+RGB value is byte-identical to V1/V2, and no alpha reaches a cell edge.
+
+Frame order, roots, visible scale, ladder geometry, rung contacts and route
+dimensions remain exact. V2's requested timing remains: 50 ms per turn frame
+(20 fps) and 150 ms per ladder mount/contact/passing/dismount frame (6.67 fps).
+Run `npm run verify:keeper-prime-ladder-transitions-v3`; V3 is unapproved and
+Final, runtime and production remain unchanged.
+
 ## Review-comments workflow for a later feedback round
 
 1. Do not process another review export until the beard evidence gate is

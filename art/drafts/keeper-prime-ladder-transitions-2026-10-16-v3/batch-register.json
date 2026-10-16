@@ -1,0 +1,953 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-ladder-transitions-2026-10-16-v3",
+  "status": "draft-awaiting-visual-review",
+  "purpose": "Keep the ladder structurally complete and make only the registered Keeper art opaque.",
+  "authorities": {
+    "v2Spec": {
+      "file": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v2/keeper-prime-ladder-transitions-v2.json",
+      "sha256": "8f053a61a09f8e7847ac124d5a3c1521435f59eaa747eeaaa220111a06e7f5f2"
+    },
+    "v2Register": {
+      "file": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v2/batch-register.json",
+      "sha256": "dc64d139a5ceb4e69f4a92789dc4c824a33bda1f86d4c40d3c62bc23a9ec8a4c"
+    },
+    "v2Page": {
+      "file": "public/keeper-review/keeper-prime-ladder-transitions-v2/index.html",
+      "sha256": "c54e8e9e4896fe2fe4e9221446d6d8c57c30f7670239201434271f38bc6d3fa6"
+    }
+  },
+  "alphaNormalization": [
+    {
+      "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/drafts/frames/keeper_prime_ladder_contact-a_back_f01.png",
+      "sourceSha256": "a3eeacf0884eb500a805ee1e3fcbfdb31f0d3fcde92bfa37acd1c0732f1d02fb",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/contacta-a3eeacf0884eb500-opaque.png",
+      "draftSha256": "8de8b9d3af6ed340549d84bbf701bac3b560ddc969ac40471bd2a85d476e4247",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 50109,
+        "semiTransparent": 30962,
+        "opaque": 849
+      },
+      "after": {
+        "transparent": 51877,
+        "opaque": 30043
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/drafts/frames/keeper_prime_ladder_passing-a_back_f01.png",
+      "sourceSha256": "603389b4743a3e6005e2a27ade10fa6ee7c67b4a0a5e16587b528b50420d3268",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/passinga-603389b4743a3e60-opaque.png",
+      "draftSha256": "e91e97e61ad4970fd4aafbafc2caca5712981f9b0a3a6f2441ee4a7b39e475cd",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 51099,
+        "semiTransparent": 30006,
+        "opaque": 815
+      },
+      "after": {
+        "transparent": 52789,
+        "opaque": 29131
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/drafts/frames/keeper_prime_ladder_mount_back_f01.png",
+      "sourceSha256": "343a2b2285bcb13910a408266831f6bfd269068ed44462c0b8ea1703d904a270",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/mount-343a2b2285bcb139-opaque.png",
+      "draftSha256": "6a7bd1bd8001aff25ba72c6a7f276837f4e3815a8796acbf0bdf9cb951a0ee0d",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 51755,
+        "semiTransparent": 29358,
+        "opaque": 807
+      },
+      "after": {
+        "transparent": 53526,
+        "opaque": 28394
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/drafts/frames/keeper_prime_ladder_dismount-right_back_f01.png",
+      "sourceSha256": "06d0f7fda5892d86b422d08982c6af4a2eff24d88db3a1d1adda79238c875349",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/dismountright-06d0f7fda5892d86-opaque.png",
+      "draftSha256": "38bc9084552f6689d2cd5513b5b35d2dc6ea3f6e08687d7936eadfd803376890",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 52393,
+        "semiTransparent": 28720,
+        "opaque": 807
+      },
+      "after": {
+        "transparent": 54087,
+        "opaque": 27833
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/drafts/frames/keeper_prime_ladder_dismount-landed_back_f01.png",
+      "sourceSha256": "d313b5a3a1d73db2a5cd081d75bb8cfd1395dc0d5a2ac16bc23ba671dc26774b",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/dismountlanded-d313b5a3a1d73db2-opaque.png",
+      "draftSha256": "1666b12642bbb80183f9347d82764ec0e2d6e479449f422ec09793bb3f3a6855",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 52309,
+        "semiTransparent": 28798,
+        "opaque": 813
+      },
+      "after": {
+        "transparent": 54085,
+        "opaque": 27835
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/drafts/frames/keeper_prime_ladder_contact-b_back_f01.png",
+      "sourceSha256": "8b6d3cebb72179f090268a9a5bd811c86ce380e2caaa7dd54d14ff837ad23dbf",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/contactb-8b6d3cebb72179f0-opaque.png",
+      "draftSha256": "4700057b0ad5a8e3786e973a9ce935b8864eda1430950d36f351eb1a0c806040",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 50109,
+        "semiTransparent": 30962,
+        "opaque": 849
+      },
+      "after": {
+        "transparent": 51877,
+        "opaque": 30043
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/drafts/frames/keeper_prime_ladder_passing-b_back_f01.png",
+      "sourceSha256": "1fc1d9b750e8e9007f2c734154e04ce7ea1f330ed616d352da30300d16175370",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/passingb-1fc1d9b750e8e900-opaque.png",
+      "draftSha256": "b0fce504309524bbb84aa3168793b627286e615a24b1181f2a58269251b0027d",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 51099,
+        "semiTransparent": 30006,
+        "opaque": 815
+      },
+      "after": {
+        "transparent": 52789,
+        "opaque": 29131
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+      "sourceSha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/approved-back-d1d409f098a18883-opaque.png",
+      "draftSha256": "3a40c282ced17533e172a0295a8ac1d7a760d46056034f5d7ac89bd9156c18da",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 50640,
+        "semiTransparent": 30510,
+        "opaque": 770
+      },
+      "after": {
+        "transparent": 51254,
+        "opaque": 30666
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+      "sourceSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-1-0e80ea65610452c9-opaque.png",
+      "draftSha256": "3ba647c19453ecf6016f3656140148ae4cb4b4489d3f091aa384075d2de83b59",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 48969,
+        "semiTransparent": 32289,
+        "opaque": 662
+      },
+      "after": {
+        "transparent": 50964,
+        "opaque": 30956
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f2.png",
+      "sourceSha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-2-2b8e91de747b527d-opaque.png",
+      "draftSha256": "07e77662a013b776c7cc8b8011f2b872b5de47190fe1bf896bbec8c393980d10",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 54031,
+        "semiTransparent": 27268,
+        "opaque": 621
+      },
+      "after": {
+        "transparent": 55616,
+        "opaque": 26304
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f3.png",
+      "sourceSha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-3-b376254e9c29da38-opaque.png",
+      "draftSha256": "21203ba1692c1147119c3b8a5de524fc5785d87f683a55d48e83ec060a335a4d",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 56639,
+        "semiTransparent": 24740,
+        "opaque": 541
+      },
+      "after": {
+        "transparent": 58018,
+        "opaque": 23902
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f4.png",
+      "sourceSha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-4-982646b0b0e6f3f9-opaque.png",
+      "draftSha256": "10c0661ac3c90797599fab769b08edc48c230243726002a0d3270d55a68f83fd",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 51600,
+        "semiTransparent": 29606,
+        "opaque": 714
+      },
+      "after": {
+        "transparent": 53643,
+        "opaque": 28277
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f5.png",
+      "sourceSha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-5-545e7338151e6e5a-opaque.png",
+      "draftSha256": "bb1e23a60392583f1bc8ef16917b1eda7cbfde46e7d3bf073f1a508acaca0e55",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 51848,
+        "semiTransparent": 29448,
+        "opaque": 624
+      },
+      "after": {
+        "transparent": 53640,
+        "opaque": 28280
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f6.png",
+      "sourceSha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-6-17d007eee75c2e86-opaque.png",
+      "draftSha256": "2b7addb5a7315878a4f73ffc3086c15aa0d493de5fdd0f0fb0c9414a5869df7e",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 53582,
+        "semiTransparent": 27747,
+        "opaque": 591
+      },
+      "after": {
+        "transparent": 55182,
+        "opaque": 26738
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f7.png",
+      "sourceSha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-7-dbf5b3849624cec7-opaque.png",
+      "draftSha256": "77bf5731c427b160b5f0bd3596b37422e1e9c8dc4df6a7cdd90627dd4bff4065",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 54598,
+        "semiTransparent": 26775,
+        "opaque": 547
+      },
+      "after": {
+        "transparent": 56101,
+        "opaque": 25819
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f8.png",
+      "sourceSha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-8-cf8c53e7ffa703a5-opaque.png",
+      "draftSha256": "c95d78516065c063d9c654a8bb518e18ff969dff3051a35af6815f74ab27f30b",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 52835,
+        "semiTransparent": 28439,
+        "opaque": 646
+      },
+      "after": {
+        "transparent": 54664,
+        "opaque": 27256
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f1.png",
+      "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/bridge-1-a172a8a01a387a21-opaque.png",
+      "draftSha256": "ed6c4c48dc091faaf857f55c7cb844535d03cf9c40952cb09f81900a30152748",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 59023,
+        "semiTransparent": 22303,
+        "opaque": 594
+      },
+      "after": {
+        "transparent": 60218,
+        "opaque": 21702
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f2.png",
+      "sourceSha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/bridge-2-e54546ba14b4e5f7-opaque.png",
+      "draftSha256": "c748f2728a9c9515ba103912ac6ee7d3bcef5fd34fb8e826ef1088649e5a6225",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 54002,
+        "semiTransparent": 27214,
+        "opaque": 704
+      },
+      "after": {
+        "transparent": 55627,
+        "opaque": 26293
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f3.png",
+      "sourceSha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/bridge-3-0169b3642905389d-opaque.png",
+      "draftSha256": "74a65a49e7f993c94af063fa49cc85f48ca0a5fea7af1e252312a7c6140a75d0",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 51840,
+        "semiTransparent": 29309,
+        "opaque": 771
+      },
+      "after": {
+        "transparent": 53710,
+        "opaque": 28210
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f4.png",
+      "sourceSha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/bridge-4-9f4192beb8fecbc8-opaque.png",
+      "draftSha256": "85277db9cf723d35297ac2ce9721842434a78b241cfbcd5d846f57c03de08fdf",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 48879,
+        "semiTransparent": 32152,
+        "opaque": 889
+      },
+      "after": {
+        "transparent": 50920,
+        "opaque": 31000
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f01.png",
+      "sourceSha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-1-c097d78aac2d2c52-opaque.png",
+      "draftSha256": "2f5142e2cddb7ca39bb8c1090d42514c52607862064159ac83712aff7483a187",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 59023,
+        "semiTransparent": 22303,
+        "opaque": 594
+      },
+      "after": {
+        "transparent": 60218,
+        "opaque": 21702
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f02.png",
+      "sourceSha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-2-e1dc020aabfe8f3b-opaque.png",
+      "draftSha256": "f56dcd043569c1c65c04416da2eb59bfe05be01f1b389c99e6d81ba44abe7451",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 58809,
+        "semiTransparent": 22548,
+        "opaque": 563
+      },
+      "after": {
+        "transparent": 59996,
+        "opaque": 21924
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f03.png",
+      "sourceSha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-3-34028d8821a7272a-opaque.png",
+      "draftSha256": "a1fc15facc2b7f19c85986593ecb9314ab0e9cbb7f18d0565ec2b02e427a5b77",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 57522,
+        "semiTransparent": 23809,
+        "opaque": 589
+      },
+      "after": {
+        "transparent": 58767,
+        "opaque": 23153
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f04.png",
+      "sourceSha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-4-0d278363a0e7e4f1-opaque.png",
+      "draftSha256": "43cfd72dd6f08363d979f0d604c51d0a85406389d8764a3265bf3ce36eb21892",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 57004,
+        "semiTransparent": 24314,
+        "opaque": 602
+      },
+      "after": {
+        "transparent": 58226,
+        "opaque": 23694
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f05.png",
+      "sourceSha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-5-f827ac61f45aaaa4-opaque.png",
+      "draftSha256": "e9858d98d0d491c9494e3254042bc460b67b1deeed47b494c0d165a028b93f89",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 56463,
+        "semiTransparent": 24838,
+        "opaque": 619
+      },
+      "after": {
+        "transparent": 57727,
+        "opaque": 24193
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f06.png",
+      "sourceSha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-6-fe06522abd0cd55c-opaque.png",
+      "draftSha256": "07c29048b4c62f0fcfdc9359bf183180d14ca2667ab8a9e7c1d4fb79a044891b",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 55081,
+        "semiTransparent": 26163,
+        "opaque": 676
+      },
+      "after": {
+        "transparent": 56502,
+        "opaque": 25418
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f07.png",
+      "sourceSha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-7-d55afae023051e29-opaque.png",
+      "draftSha256": "daaa25d6686741a8e81ec7033ed9710aa8086e48ab97ecfede6731221c799aee",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 52890,
+        "semiTransparent": 28396,
+        "opaque": 634
+      },
+      "after": {
+        "transparent": 53628,
+        "opaque": 28292
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f08.png",
+      "sourceSha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-8-bb530610cf0e17bf-opaque.png",
+      "draftSha256": "03fc69cf884b1c4ef36a5a57262bb7f063ea90536979b906d91959ae6ff9d8c1",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 53450,
+        "semiTransparent": 27769,
+        "opaque": 701
+      },
+      "after": {
+        "transparent": 54033,
+        "opaque": 27887
+      },
+      "retainedRgbChangedPixels": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f09.png",
+      "sourceSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-9-31dbac4efc00089f-opaque.png",
+      "draftSha256": "7d6d24edc8d121b47d0df73c761d34b14a56543e060fcd83e6f08ece1389f2b9",
+      "pixels": [
+        256,
+        320
+      ],
+      "threshold": 128,
+      "before": {
+        "transparent": 50664,
+        "semiTransparent": 30544,
+        "opaque": 712
+      },
+      "after": {
+        "transparent": 51286,
+        "opaque": 30634
+      },
+      "retainedRgbChangedPixels": 0
+    }
+  ],
+  "spec": {
+    "file": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/keeper-prime-ladder-transitions-v3.json",
+    "sha256": "d9c0efb8c8f515940e48bb92a750b7aeebc70305f2413e7bfa6959b56827b98d"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-ladder-transitions-v3/index.html",
+    "sha256": "2672d6fb104a31c850c5ab86fbf36691ce471cce67ff91a1bbeb1f9559d89113",
+    "publicReview": "/keeper-review/keeper-prime-ladder-transitions-v3/",
+    "preloadsAllUniqueFrames": true
+  },
+  "publishedAssets": [
+    {
+      "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/drafts/frames/keeper_prime_ladder_contact-a_back_f01.png",
+      "sourceSha256": "a3eeacf0884eb500a805ee1e3fcbfdb31f0d3fcde92bfa37acd1c0732f1d02fb",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/contacta-a3eeacf0884eb500-opaque.png",
+      "draftSha256": "8de8b9d3af6ed340549d84bbf701bac3b560ddc969ac40471bd2a85d476e4247",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/contacta-a3eeacf0884eb500-opaque-8de8b9d3af6ed340.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/contacta-a3eeacf0884eb500-opaque-8de8b9d3af6ed340.png",
+      "bytes": 56483,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/drafts/frames/keeper_prime_ladder_passing-a_back_f01.png",
+      "sourceSha256": "603389b4743a3e6005e2a27ade10fa6ee7c67b4a0a5e16587b528b50420d3268",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/passinga-603389b4743a3e60-opaque.png",
+      "draftSha256": "e91e97e61ad4970fd4aafbafc2caca5712981f9b0a3a6f2441ee4a7b39e475cd",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/passinga-603389b4743a3e60-opaque-e91e97e61ad4970f.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/passinga-603389b4743a3e60-opaque-e91e97e61ad4970f.png",
+      "bytes": 54296,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/drafts/frames/keeper_prime_ladder_mount_back_f01.png",
+      "sourceSha256": "343a2b2285bcb13910a408266831f6bfd269068ed44462c0b8ea1703d904a270",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/mount-343a2b2285bcb139-opaque.png",
+      "draftSha256": "6a7bd1bd8001aff25ba72c6a7f276837f4e3815a8796acbf0bdf9cb951a0ee0d",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/mount-343a2b2285bcb139-opaque-6a7bd1bd8001aff2.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/mount-343a2b2285bcb139-opaque-6a7bd1bd8001aff2.png",
+      "bytes": 52718,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/drafts/frames/keeper_prime_ladder_dismount-right_back_f01.png",
+      "sourceSha256": "06d0f7fda5892d86b422d08982c6af4a2eff24d88db3a1d1adda79238c875349",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/dismountright-06d0f7fda5892d86-opaque.png",
+      "draftSha256": "38bc9084552f6689d2cd5513b5b35d2dc6ea3f6e08687d7936eadfd803376890",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/dismountright-06d0f7fda5892d86-opaque-38bc9084552f6689.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/dismountright-06d0f7fda5892d86-opaque-38bc9084552f6689.png",
+      "bytes": 53583,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/drafts/frames/keeper_prime_ladder_dismount-landed_back_f01.png",
+      "sourceSha256": "d313b5a3a1d73db2a5cd081d75bb8cfd1395dc0d5a2ac16bc23ba671dc26774b",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/dismountlanded-d313b5a3a1d73db2-opaque.png",
+      "draftSha256": "1666b12642bbb80183f9347d82764ec0e2d6e479449f422ec09793bb3f3a6855",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/dismountlanded-d313b5a3a1d73db2-opaque-1666b12642bbb801.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/dismountlanded-d313b5a3a1d73db2-opaque-1666b12642bbb801.png",
+      "bytes": 53091,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/drafts/frames/keeper_prime_ladder_contact-b_back_f01.png",
+      "sourceSha256": "8b6d3cebb72179f090268a9a5bd811c86ce380e2caaa7dd54d14ff837ad23dbf",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/contactb-8b6d3cebb72179f0-opaque.png",
+      "draftSha256": "4700057b0ad5a8e3786e973a9ce935b8864eda1430950d36f351eb1a0c806040",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/contactb-8b6d3cebb72179f0-opaque-4700057b0ad5a8e3.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/contactb-8b6d3cebb72179f0-opaque-4700057b0ad5a8e3.png",
+      "bytes": 56852,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/drafts/frames/keeper_prime_ladder_passing-b_back_f01.png",
+      "sourceSha256": "1fc1d9b750e8e9007f2c734154e04ce7ea1f330ed616d352da30300d16175370",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/passingb-1fc1d9b750e8e900-opaque.png",
+      "draftSha256": "b0fce504309524bbb84aa3168793b627286e615a24b1181f2a58269251b0027d",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/passingb-1fc1d9b750e8e900-opaque-b0fce504309524bb.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/passingb-1fc1d9b750e8e900-opaque-b0fce504309524bb.png",
+      "bytes": 54139,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+      "sourceSha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/approved-back-d1d409f098a18883-opaque.png",
+      "draftSha256": "3a40c282ced17533e172a0295a8ac1d7a760d46056034f5d7ac89bd9156c18da",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/approved-back-d1d409f098a18883-opaque-3a40c282ced17533.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/approved-back-d1d409f098a18883-opaque-3a40c282ced17533.png",
+      "bytes": 56184,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+      "sourceSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-1-0e80ea65610452c9-opaque.png",
+      "draftSha256": "3ba647c19453ecf6016f3656140148ae4cb4b4489d3f091aa384075d2de83b59",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-1-0e80ea65610452c9-opaque-3ba647c19453ecf6.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-1-0e80ea65610452c9-opaque-3ba647c19453ecf6.png",
+      "bytes": 63887,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f2.png",
+      "sourceSha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-2-2b8e91de747b527d-opaque.png",
+      "draftSha256": "07e77662a013b776c7cc8b8011f2b872b5de47190fe1bf896bbec8c393980d10",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-2-2b8e91de747b527d-opaque-07e77662a013b776.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-2-2b8e91de747b527d-opaque-07e77662a013b776.png",
+      "bytes": 53987,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f3.png",
+      "sourceSha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-3-b376254e9c29da38-opaque.png",
+      "draftSha256": "21203ba1692c1147119c3b8a5de524fc5785d87f683a55d48e83ec060a335a4d",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-3-b376254e9c29da38-opaque-21203ba1692c1147.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-3-b376254e9c29da38-opaque-21203ba1692c1147.png",
+      "bytes": 48579,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f4.png",
+      "sourceSha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-4-982646b0b0e6f3f9-opaque.png",
+      "draftSha256": "10c0661ac3c90797599fab769b08edc48c230243726002a0d3270d55a68f83fd",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-4-982646b0b0e6f3f9-opaque-10c0661ac3c90797.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-4-982646b0b0e6f3f9-opaque-10c0661ac3c90797.png",
+      "bytes": 59638,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f5.png",
+      "sourceSha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-5-545e7338151e6e5a-opaque.png",
+      "draftSha256": "bb1e23a60392583f1bc8ef16917b1eda7cbfde46e7d3bf073f1a508acaca0e55",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-5-545e7338151e6e5a-opaque-bb1e23a60392583f.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-5-545e7338151e6e5a-opaque-bb1e23a60392583f.png",
+      "bytes": 60034,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f6.png",
+      "sourceSha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-6-17d007eee75c2e86-opaque.png",
+      "draftSha256": "2b7addb5a7315878a4f73ffc3086c15aa0d493de5fdd0f0fb0c9414a5869df7e",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-6-17d007eee75c2e86-opaque-2b7addb5a7315878.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-6-17d007eee75c2e86-opaque-2b7addb5a7315878.png",
+      "bytes": 56798,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f7.png",
+      "sourceSha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-7-dbf5b3849624cec7-opaque.png",
+      "draftSha256": "77bf5731c427b160b5f0bd3596b37422e1e9c8dc4df6a7cdd90627dd4bff4065",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-7-dbf5b3849624cec7-opaque-77bf5731c427b160.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-7-dbf5b3849624cec7-opaque-77bf5731c427b160.png",
+      "bytes": 53943,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f8.png",
+      "sourceSha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/walk-8-cf8c53e7ffa703a5-opaque.png",
+      "draftSha256": "c95d78516065c063d9c654a8bb518e18ff969dff3051a35af6815f74ab27f30b",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-8-cf8c53e7ffa703a5-opaque-c95d78516065c063.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/walk-8-cf8c53e7ffa703a5-opaque-c95d78516065c063.png",
+      "bytes": 56054,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f1.png",
+      "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/bridge-1-a172a8a01a387a21-opaque.png",
+      "draftSha256": "ed6c4c48dc091faaf857f55c7cb844535d03cf9c40952cb09f81900a30152748",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/bridge-1-a172a8a01a387a21-opaque-ed6c4c48dc091faa.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/bridge-1-a172a8a01a387a21-opaque-ed6c4c48dc091faa.png",
+      "bytes": 43573,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f2.png",
+      "sourceSha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/bridge-2-e54546ba14b4e5f7-opaque.png",
+      "draftSha256": "c748f2728a9c9515ba103912ac6ee7d3bcef5fd34fb8e826ef1088649e5a6225",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/bridge-2-e54546ba14b4e5f7-opaque-c748f2728a9c9515.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/bridge-2-e54546ba14b4e5f7-opaque-c748f2728a9c9515.png",
+      "bytes": 53446,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f3.png",
+      "sourceSha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/bridge-3-0169b3642905389d-opaque.png",
+      "draftSha256": "74a65a49e7f993c94af063fa49cc85f48ca0a5fea7af1e252312a7c6140a75d0",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/bridge-3-0169b3642905389d-opaque-74a65a49e7f993c9.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/bridge-3-0169b3642905389d-opaque-74a65a49e7f993c9.png",
+      "bytes": 56327,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f4.png",
+      "sourceSha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/bridge-4-9f4192beb8fecbc8-opaque.png",
+      "draftSha256": "85277db9cf723d35297ac2ce9721842434a78b241cfbcd5d846f57c03de08fdf",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/bridge-4-9f4192beb8fecbc8-opaque-85277db9cf723d35.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/bridge-4-9f4192beb8fecbc8-opaque-85277db9cf723d35.png",
+      "bytes": 62961,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f01.png",
+      "sourceSha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-1-c097d78aac2d2c52-opaque.png",
+      "draftSha256": "2f5142e2cddb7ca39bb8c1090d42514c52607862064159ac83712aff7483a187",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-1-c097d78aac2d2c52-opaque-2f5142e2cddb7ca3.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-1-c097d78aac2d2c52-opaque-2f5142e2cddb7ca3.png",
+      "bytes": 43841,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f02.png",
+      "sourceSha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-2-e1dc020aabfe8f3b-opaque.png",
+      "draftSha256": "f56dcd043569c1c65c04416da2eb59bfe05be01f1b389c99e6d81ba44abe7451",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-2-e1dc020aabfe8f3b-opaque-f56dcd043569c1c6.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-2-e1dc020aabfe8f3b-opaque-f56dcd043569c1c6.png",
+      "bytes": 45423,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f03.png",
+      "sourceSha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-3-34028d8821a7272a-opaque.png",
+      "draftSha256": "a1fc15facc2b7f19c85986593ecb9314ab0e9cbb7f18d0565ec2b02e427a5b77",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-3-34028d8821a7272a-opaque-a1fc15facc2b7f19.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-3-34028d8821a7272a-opaque-a1fc15facc2b7f19.png",
+      "bytes": 47169,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f04.png",
+      "sourceSha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-4-0d278363a0e7e4f1-opaque.png",
+      "draftSha256": "43cfd72dd6f08363d979f0d604c51d0a85406389d8764a3265bf3ce36eb21892",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-4-0d278363a0e7e4f1-opaque-43cfd72dd6f08363.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-4-0d278363a0e7e4f1-opaque-43cfd72dd6f08363.png",
+      "bytes": 47252,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f05.png",
+      "sourceSha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-5-f827ac61f45aaaa4-opaque.png",
+      "draftSha256": "e9858d98d0d491c9494e3254042bc460b67b1deeed47b494c0d165a028b93f89",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-5-f827ac61f45aaaa4-opaque-e9858d98d0d491c9.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-5-f827ac61f45aaaa4-opaque-e9858d98d0d491c9.png",
+      "bytes": 46894,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f06.png",
+      "sourceSha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-6-fe06522abd0cd55c-opaque.png",
+      "draftSha256": "07c29048b4c62f0fcfdc9359bf183180d14ca2667ab8a9e7c1d4fb79a044891b",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-6-fe06522abd0cd55c-opaque-07c29048b4c62f0f.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-6-fe06522abd0cd55c-opaque-07c29048b4c62f0f.png",
+      "bytes": 48746,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f07.png",
+      "sourceSha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-7-d55afae023051e29-opaque.png",
+      "draftSha256": "daaa25d6686741a8e81ec7033ed9710aa8086e48ab97ecfede6731221c799aee",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-7-d55afae023051e29-opaque-daaa25d6686741a8.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-7-d55afae023051e29-opaque-daaa25d6686741a8.png",
+      "bytes": 53128,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f08.png",
+      "sourceSha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-8-bb530610cf0e17bf-opaque.png",
+      "draftSha256": "03fc69cf884b1c4ef36a5a57262bb7f063ea90536979b906d91959ae6ff9d8c1",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-8-bb530610cf0e17bf-opaque-03fc69cf884b1c4e.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-8-bb530610cf0e17bf-opaque-03fc69cf884b1c4e.png",
+      "bytes": 51417,
+      "changeScope": "alpha-only threshold after registration"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f09.png",
+      "sourceSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "draft": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3/drafts/frames/turn-9-31dbac4efc00089f-opaque.png",
+      "draftSha256": "7d6d24edc8d121b47d0df73c761d34b14a56543e060fcd83e6f08ece1389f2b9",
+      "published": "public/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-9-31dbac4efc00089f-opaque-7d6d24edc8d121b4.png",
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v3/assets/turn-9-31dbac4efc00089f-opaque-7d6d24edc8d121b4.png",
+      "bytes": 55702,
+      "changeScope": "alpha-only threshold after registration"
+    }
+  ],
+  "changes": {
+    "v2RungOccluderRemoved": true,
+    "ladderPixelsSuppressed": false,
+    "keeperRgbChanged": false,
+    "keeperAlphaThreshold": 128,
+    "rootOrGeometryChanged": false,
+    "timingChangedFromV2": false,
+    "rungContactChanged": false
+  },
+  "validation": {
+    "productionChanged": false,
+    "runtimeChanged": false,
+    "finalChanged": false
+  },
+  "approvalBoundary": {
+    "candidateApproved": false,
+    "finalLaneEntryAllowed": false,
+    "productionPromotionAllowed": false
+  },
+  "rollback": "Delete only art/drafts/keeper-prime-ladder-transitions-2026-10-16-v3 and public/keeper-review/keeper-prime-ladder-transitions-v3; V1/V2, approved sources, Final, runtime and production remain unchanged."
+}
