@@ -1,0 +1,18 @@
+{
+  "w": 256,
+  "h": 56,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    128.0,
+    56
+  ],
+  "z": 40,
+  "projection": {
+    "id": "flat-cutaway-v1",
+    "runtimeDepthScaling": false
+  },
+  "reviewComposite": true,
+  "backWallFootLineLp": 52
+}

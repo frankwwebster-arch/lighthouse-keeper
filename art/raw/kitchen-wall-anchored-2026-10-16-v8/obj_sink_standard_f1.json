@@ -1,0 +1,19 @@
+{
+  "w": 21,
+  "h": 29,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    10.5,
+    29
+  ],
+  "z": 40,
+  "projection": {
+    "id": "flat-cutaway-v1",
+    "runtimeDepthScaling": false
+  },
+  "interactionSpotKu": 1124,
+  "backWallFootLineLp": 52,
+  "correction": "new-v8-draft"
+}

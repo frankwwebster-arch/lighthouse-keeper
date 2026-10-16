@@ -1,0 +1,408 @@
+{
+  "version": 8,
+  "status": "reversible-draft",
+  "scope": "kitchen-surface-fridge-bin-wall-anchor-and-porthole-corrections",
+  "visualBaseline": "Kitchen V6 Option B plus Frank-approved 2026-10-16 wall-anchored reference study",
+  "recipe": {
+    "path": "data/kitchen_wall_anchored_v8_recipe.json",
+    "sha256": "dc8118db0e6af13c02dc2ce8bc1c98afb4133b6d4f65823ed0bf19cae9bbfd11"
+  },
+  "runtimeChanged": false,
+  "finalChanged": false,
+  "keeperChanged": false,
+  "v6Overwritten": false,
+  "v7Overwritten": false,
+  "protectedSnapshots": {
+    "kitchenV6": "1c16688536b26f1b4f2485619017fe6735a79d63ef9ee9345d29d556d866a28d",
+    "kitchenRoomV7": "255648617df96f3af2ae868101a56f9acdca0d61d053651f356a5d6eac9ebc00",
+    "runtimeSpriteManifest": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
+    "animationWorkbenchFinalState": "6c349a70f591cba21016cf9a7a49424b971d8aed895504ba775ebd158017c658",
+    "approvedKeeperSourceFamily": "a33b0065654d040afe81d863331bc5e6dab0355dc4d6687c8436cf55bda91efb"
+  },
+  "outputs": [
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_bin_full_f1.json",
+      "sha256": "97342d853d595562eefaa992760e643b3107e5c89385ede80a41c1325b69d2ea"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_bin_full_f1.png",
+      "sha256": "5a4b117f9f65c8a519b12e136c205e2cc4373dc57091305684d7c3ad84e36775"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_bin_overflowing_f1.json",
+      "sha256": "97342d853d595562eefaa992760e643b3107e5c89385ede80a41c1325b69d2ea"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_bin_overflowing_f1.png",
+      "sha256": "07d1109c0c72d0fdcee784c5b3b59a126bc74c1580453d071b076d490d8b7400"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_bin_standard_f1.json",
+      "sha256": "97342d853d595562eefaa992760e643b3107e5c89385ede80a41c1325b69d2ea"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_bin_standard_f1.png",
+      "sha256": "94f94a6e9fe3c72a8507ce7deb967b2d85fe89d5b8e1fb874a54a562de163872"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_cooker_broken_f4.json",
+      "sha256": "e341faffc766868ff88152d30e515b4777064a3257fec53a1e9e8a95ddc5f90e"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_cooker_broken_f4.png",
+      "sha256": "dfe90134550d20becdceb32c8bbdd460a42f4df634a83cc4efccb80ee54c23a7"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_cooker_on_f4.json",
+      "sha256": "e341faffc766868ff88152d30e515b4777064a3257fec53a1e9e8a95ddc5f90e"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_cooker_on_f4.png",
+      "sha256": "f6a40952356dd7c249343adc1289fbdf58f74bb465023fe9a46494c1793ab3a1"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_cooker_standard_f1.json",
+      "sha256": "1a0820157151c2b26be722bfb7c4a89230109524e93cc550a6aed127fda08656"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_cooker_standard_f1.png",
+      "sha256": "b64e7e959eb350e8b41cc3c35b1a10cf41e649153899f7d66a871d725f620d29"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_cupboard_on_f4.json",
+      "sha256": "774c5fa6e07e5508fddf397cd7c75776848786526ebf0654e1d391bcb59fc363"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_cupboard_on_f4.png",
+      "sha256": "0e75a1a78713140490c489f4da10e9b35c8d36509a39fe9b28b7d26ce61fba01"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_cupboard_open_f1.json",
+      "sha256": "9334cc8ce815f3b256d702f7efc96ccdc2210b29901291ea1a91d5a92bc15502"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_cupboard_open_f1.png",
+      "sha256": "fd543a6486b61b5406c60fec4085be842557f9256cfb7523ad2b1e897ab3b633"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_cupboard_standard_f1.json",
+      "sha256": "9334cc8ce815f3b256d702f7efc96ccdc2210b29901291ea1a91d5a92bc15502"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_cupboard_standard_f1.png",
+      "sha256": "4d95eab62491defb4660093a84c957ea448202fdca624c0e7bc4c756509ce0b7"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_fridge_broken_f4.json",
+      "sha256": "a8cdcade3dc0145e8a0cb92b5e1f281c40c51c1167af5856c9dcd31fd48b9245"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_fridge_broken_f4.png",
+      "sha256": "b362ea7a4b8dfb98007fa5a8232e5f92d7232b64d97053a3bb91c9ffbbaf6da0"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_fridge_on_f4.json",
+      "sha256": "a8cdcade3dc0145e8a0cb92b5e1f281c40c51c1167af5856c9dcd31fd48b9245"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_fridge_on_f4.png",
+      "sha256": "744e5059c22207c992e7089fbdfc561ac0e5573fdad30c8099bce052743f9ed4"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_fridge_standard_f1.json",
+      "sha256": "12b0c10c6ab8e198c44e41dad13d37fbb2d2821d7630cb577348a902b28f29fc"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_fridge_standard_f1.png",
+      "sha256": "50c1187622554fb84c7b828e7eff722cab1630780b8e96ab004cb07a76106092"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_kettle_broken_f4.json",
+      "sha256": "bc23182885324808874fd37c4468db1932e634c42d090ed388ba472294f21a62"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_kettle_broken_f4.png",
+      "sha256": "59ae23e3640ed819930f6b879df193529e03b09806ec995ef170bbc3c89274e9"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_kettle_on_f4.json",
+      "sha256": "bc23182885324808874fd37c4468db1932e634c42d090ed388ba472294f21a62"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_kettle_on_f4.png",
+      "sha256": "e4a726a24a507088671e18995e457317a0d1bc98211bcc82824509287a898e5d"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_kettle_standard_f1.json",
+      "sha256": "84c4c9929431e3610fa9bea4cf066570cb747cd0fef515a294d02b834206eba9"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_kettle_standard_f1.png",
+      "sha256": "1bb22ea5958f40a76d61ff7a6d0d4a9b89a3224e80720bd25b741c9d05e6aaed"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_mixer_broken_f4.json",
+      "sha256": "dd01cb530eaaa207802a1c9a6de55fce1f488577f2e5f56c13854cc726792ac5"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_mixer_broken_f4.png",
+      "sha256": "1998f7608f68d5ee7b929f64ea2f7193e71e9fb98eeceef05e1f9d045589fdad"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_mixer_on_f4.json",
+      "sha256": "dd01cb530eaaa207802a1c9a6de55fce1f488577f2e5f56c13854cc726792ac5"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_mixer_on_f4.png",
+      "sha256": "f5446f394c57cceff984de266f68ec918b59f4f0cb41d69aedd3f1d12ee0ae36"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_mixer_standard_f1.json",
+      "sha256": "3ecbd33023fd2efe0dbee30158a5f83c3caeec37f971208e18c330ae816f8776"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_mixer_standard_f1.png",
+      "sha256": "0bc504341345555edeb3fab581c6db8357ec77e92093ca8e7761dbfa06923142"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_petbowl_broken_f4.json",
+      "sha256": "b0538ee998702ef7af8f1c845107d5042c5bc276e241d473d7bed9118403b768"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_petbowl_broken_f4.png",
+      "sha256": "c808731777e13a6f85b462c06f97c8a0cf6db419e12c4d9b0a8689b6cafe190a"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_petbowl_full_f1.json",
+      "sha256": "9902c4de0efa6917bd40800891e1e60fdd60cb14e9a67c5dd0572013264eb73d"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_petbowl_full_f1.png",
+      "sha256": "a22c059afe67000e07cd5fb7cb70ad8992588fb4522b88f7f9e568518aeb1799"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_petbowl_standard_f1.json",
+      "sha256": "9902c4de0efa6917bd40800891e1e60fdd60cb14e9a67c5dd0572013264eb73d"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_petbowl_standard_f1.png",
+      "sha256": "6feafe7e0450eede855726eaacb3e227c013c5ac58e165e175c78683e56b5b2b"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_broken_f4.json",
+      "sha256": "126191ab7ca3c30eff881809ccd22a6daa0ff9e9360cbf213b9b262bbcbe35ed"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_broken_f4.png",
+      "sha256": "255e8773236544a9e035edb43b71735382b198c7f06b1cb137719d26ebb8028d"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_on_f4.json",
+      "sha256": "126191ab7ca3c30eff881809ccd22a6daa0ff9e9360cbf213b9b262bbcbe35ed"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_on_f4.png",
+      "sha256": "06233f90f78713ad063d9a04b1e6294b1344503ad52bc7f08bd4345000741421"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_composite_day.json",
+      "sha256": "2451e2360fb1845a9e17d690c32813ed8e7eaa7e1d41815712cd5793e07e749c"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_composite_day.png",
+      "sha256": "a9a99062a905a4ba8ee6fec2bc0de72b7a6cd83a2e95de4b184e4bd8d298ce1a"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_composite_night.json",
+      "sha256": "3a6d407050ba1768fa15e9546baaeac87c4be9bfa2d3d314b4aba1264f99beb4"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_composite_night.png",
+      "sha256": "ce795bd0bf3e3a6ec04e0569250adc0fd727009060757c2f01cf93a75fef7616"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_composite_rain.json",
+      "sha256": "cb8e9b9511a51d7764cb9e966a878564b1deac8323d77060126ccd8d299dc643"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_composite_rain.png",
+      "sha256": "5300d8cef32ef81cff2b81a0c4c0ac90e175e977bc67871a4743a0711726f7ac"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_composite_sunset.json",
+      "sha256": "cbec770519a0185d45858aa1bb9a03f60cbb7f60001fc2bff1e7723aa21f21e3"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_composite_sunset.png",
+      "sha256": "560b468b222e4f6190c6a94fe70bfdc057598d70245ca6c16a307f9496a9016d"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_condition_day_f1.json",
+      "sha256": "25a02dc6305fe38164a4b3c1db31ae0d4b9b5db21223845ad392e422d0021d66"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_condition_day_f1.png",
+      "sha256": "f7c2ed8ab1820fb9be7a74cd51d609dfdfddf3671eb41a622d5acb1765827865"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_condition_night_f1.json",
+      "sha256": "8da51b23e59950a32f46ddd2bea5bd9d726b313309ee9785c17586306b536786"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_condition_night_f1.png",
+      "sha256": "8a00c5821d3ab61056bcf490165df7c332745dbd65f15a9908e6717a86d36dfe"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_condition_rain_f1.json",
+      "sha256": "85fad7db02e22c307503791500dd47a4f7fe0958e631cf14080a66cda8b0f067"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_condition_rain_f1.png",
+      "sha256": "c6f22b24b28e2cf144d00096fba8185d85186ec542aff230939d0ea14e706920"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_condition_sunset_f1.json",
+      "sha256": "c5099fee5298285d9807363facc1d42cf8e7901d37d24628dec0447c6094825e"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_condition_sunset_f1.png",
+      "sha256": "bec27e1eddfe0fb1252f374c141bb0ad095244fdcd0eb7f57094dcc04a1f144b"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_frame_f1.json",
+      "sha256": "a43aa2b84c2e1a0f5f73ffa89da65dbe594598b3750c18a0b583a04c256a6a14"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_porthole_frame_f1.png",
+      "sha256": "fcdbc161e01f9c86587056f02eb3ebe30efdf17ae66e519a1d079b45f47b4589"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_standard_f1.json",
+      "sha256": "7060157ea75f9da2609571b4af843800862d174a7c5962279ee9c435ddd8f829"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_sink_standard_f1.png",
+      "sha256": "0cb159a7c05931c063f3fe00d3c294d998024ba4eac5c95366a7ba7551bd293f"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_table_standard_f1.json",
+      "sha256": "c4af9e8946a11ac01ba04c98ed4ac780a11a6985c48c8098cd385bcda458751d"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_table_standard_f1.png",
+      "sha256": "50bba85518c3232f879b16a42e62cb448a5ab0671217a54a0bba94f8655e7126"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_toaster_broken_f4.json",
+      "sha256": "d328d10516a1fa700a7c5dacb8dad7c5669d1652b37be8df18a45e2e8583ae28"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_toaster_broken_f4.png",
+      "sha256": "c5378ae81b248ea40b881fcbd4e1a90f8e367a53fd6dd866bc82c9c9fc8cd6a1"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_toaster_on_f4.json",
+      "sha256": "d328d10516a1fa700a7c5dacb8dad7c5669d1652b37be8df18a45e2e8583ae28"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_toaster_on_f4.png",
+      "sha256": "a6b4dde6fd7b19f0e36a67e8c595d601a351d6c2de6379cea63040977230cb9e"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_toaster_standard_f1.json",
+      "sha256": "8c4c3e408a07f0bc9e6ad7f9eee8d806a58a2447bf7f018c899136cc0a0e90b7"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/obj_toaster_standard_f1.png",
+      "sha256": "227d54551f8fecd7dfeca9e6d7ec506513d03250d6f8bbdc8011532fcfeb8017"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/room_kitchen_12bay_wall_anchored_outline.json",
+      "sha256": "e9ca4bd994de2bd496c5041660558f19b35838eebc16388d835dd58bbd10f9ae"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/room_kitchen_12bay_wall_anchored_outline.png",
+      "sha256": "78d8e5ebc2f482634e015a7ff5d0c21e0b02be8e865035c70b2a3e0cae1fa6ac"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/room_kitchen_9bay_day.json",
+      "sha256": "3d8303dd2b70359baad54d729e58da88045ea569a19f99661d0e451322d23f32"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/room_kitchen_9bay_day.png",
+      "sha256": "c9fbc2d098b1920467d81ca5e7b99ecb8f866059dce7dd65837e475472bbc2ed"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/room_kitchen_9bay_night.json",
+      "sha256": "4d219b8b97129d7f39ec667e0ff0cb1c04ad5240e65566d6b3a90216134590ed"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/room_kitchen_9bay_night.png",
+      "sha256": "5513b4b11bf3f4b7d10174644e9d02110c07b40ff4c3b52c63b2b2d2748eae41"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/room_kitchen_9bay_rain.json",
+      "sha256": "c1386f398bc81dad82f462e9ee9ec920ddf90c214a5371cb180d38f33ec5f883"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/room_kitchen_9bay_rain.png",
+      "sha256": "2e17a334dc3e8db66a979a34bdb511f6e486789189128289737967754bb126a0"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/room_kitchen_9bay_sunset.json",
+      "sha256": "28c83d9a09521c1856c295336855124e3a90137460a01b10765604ca273ef109"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/room_kitchen_9bay_sunset.png",
+      "sha256": "96d72c232b7b379317a0c9c212319476593ff5d9afed409bacb214ca6cc93c69"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/sink_porthole_move_bay_2.json",
+      "sha256": "9e0e044930d559414e7937ecf991922993737f9339d6c838d79e7100fa5d8e78"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/sink_porthole_move_bay_2.png",
+      "sha256": "9af3aeaff87bf5893e9e37ebf32d6a3624709259efe08b722bba6a73dc166860"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/sink_porthole_move_bay_5.json",
+      "sha256": "1fe5044b4144f53045a5bc3a1e1b7e5092e3a4b8398bd5806363f7ff9f16c46f"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/sink_porthole_move_bay_5.png",
+      "sha256": "db546979d569208ae9e4f5a111550474f5c37567181927b5f199aac6fcb706e2"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/sink_porthole_move_bay_8.json",
+      "sha256": "94188d358b9b6a0ffc2322ee8b482ffb4fbe0328e9f93c270a04adb2cd96c796"
+    },
+    {
+      "path": "art/raw/kitchen-wall-anchored-2026-10-16-v8/sink_porthole_move_bay_8.png",
+      "sha256": "fb7b7b8a8cdc5e4ce2503677a7a9cec3d6a5e448ae93ec61d3c2f07d477be269"
+    },
+    {
+      "path": "art/drafts/kitchen-wall-anchored-2026-10-16-v8/asset-catalogue.json",
+      "sha256": "5b4590e42ddbcf7d2a5984312980e2c60ab1db7cc26243b264f5a130fbdfd07a"
+    },
+    {
+      "path": "art/drafts/kitchen-wall-anchored-2026-10-16-v8/review-data.json",
+      "sha256": "56611aa66d669d3e10b705c43c233c4a5fc8599152eee60ac3ffd268cd12c550"
+    },
+    {
+      "path": "art/source/kitchen-wall-anchored-2026-10-16-v8/README.md",
+      "sha256": "76b04ccfefcecb9bd51ac0b9c0b1c203640156f9f36a84a0af626a49f2cb2920"
+    },
+    {
+      "path": "art/source/kitchen-wall-anchored-2026-10-16-v8/frank-approved-wall-anchored-reference.png",
+      "sha256": "296067bc6cbd3014f57afb14f35654858c3a5e73cded3baebce11bd2205f73e0"
+    },
+    {
+      "path": "art/source/kitchen-wall-anchored-2026-10-16-v8/imagegen-prompt.txt",
+      "sha256": "d2cefe5fbe25aaf9a3da45eb6aab0af270ceaf29f7f73114cfbd4644a4486a79"
+    },
+    {
+      "path": "public/keeper-review/kitchen-wall-anchored-v8/index.html",
+      "sha256": "8c3ba16370672d48fc000ac8445508405cf17f3b2ef87158ed680263a579f8c1"
+    }
+  ]
+}

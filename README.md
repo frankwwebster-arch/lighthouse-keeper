@@ -55,7 +55,19 @@ the same bay translation. The exact reusable architecture recipe is
 [`docs/KITCHEN_ROOM_FLAT_CUTAWAY_RECIPE_2026-10-16.md`](docs/KITCHEN_ROOM_FLAT_CUTAWAY_RECIPE_2026-10-16.md)
 and the hand-back is
 [`docs/CODEX_TO_CLAUDE_KITCHEN_ROOM_FLAT_CUTAWAY_V7_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_ROOM_FLAT_CUTAWAY_V7_2026-10-16.md).
-V5, V6 and Room V7 remain unapproved, unpromoted and unwired.
+The latest correction draft is
+`/keeper-review/kitchen-wall-anchored-v8/`. It keeps the V7 shell but anchors
+the complete furniture composition to a common 52-lp rear-wall foot line,
+leaving 4 lp of foreground floor clear. It also repairs chipped countertop
+wings, replaces the fridge's wood top with bright-white appliance enamel,
+reduces the bin to a 10 × 12-lp envelope, and enlarges the sink-owned porthole
+to 19 lp. The porthole frame now has an alpha-clear aperture; day, sunset,
+night and rain are separate swappable underlays rather than baked scenery.
+The exact recipe is
+[`docs/KITCHEN_WALL_ANCHORED_V8_RECIPE_2026-10-16.md`](docs/KITCHEN_WALL_ANCHORED_V8_RECIPE_2026-10-16.md)
+and the hand-back is
+[`docs/CODEX_TO_CLAUDE_KITCHEN_WALL_ANCHORED_V8_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_WALL_ANCHORED_V8_2026-10-16.md).
+V5, V6, Room V7 and V8 remain unapproved, unpromoted and unwired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:
