@@ -91,6 +91,7 @@
     "verify:keeper-prime-ladder-transitions-v3": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_ladder_transitions_v3.ts",
     "verify:keeper-prime-ladder-transitions-v4": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_ladder_transitions_v4.ts",
     "verify:keeper-prime-ladder-transitions-v4-approval": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_ladder_transitions_v4_approval.ts",
+    "verify:keeper-prime-ladder-transitions-v5": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_ladder_transitions_v5.ts",
     "verify:keeper-timing-lab-v1": "node scripts/verify_keeper_timing_lab_v1.ts",
     "verify:keeper-fast-transition-timing-v1": "node scripts/verify_keeper_fast_transition_timing_v1.ts",
     "verify:keeper-full-face-turn-endpoints": "node scripts/verify_keeper_full_face_turn_endpoints.ts",

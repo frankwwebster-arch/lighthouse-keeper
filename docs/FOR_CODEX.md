@@ -315,6 +315,39 @@ timing-only candidate should halve turn frames from 50 ms to 25 ms (20 to 40
 fps) without changing pixels or geometry. No Final/runtime/production
 promotion was performed by approval.
 
+The active follow-on candidate is
+`/keeper-review/keeper-prime-ladder-transitions-v5/`. It preserves approved V4
+frames 1–88 and all 29 V4 Keeper images byte-for-byte, then adds a 23-frame
+upper-door tail: reverse bridge deceleration, right-hand reach, outward door
+opening, exact side neutral, restart and complete disappearance. The two reach
+cells are the already accepted stair-route sources normalized only with V4's
+alpha ≥240 →255 rule. The doorway is 90° to the straight-on dollhouse camera;
+the door opens out into the hallway and becomes a foreground occluder rather
+than sliding across the back wall. At full opening it covers the complete
+in-stage portion of the final Keeper cell. It stays open while the Keeper is in
+the room. A costume may change only under the leaf's full occlusion; he later
+returns through the already-open door, changes back to standard while hidden,
+and the scenery closes automatically only after he has fully left the room.
+No costume-specific door-opening/closing Keeper art is required. The default
+route is 111 frames.
+Run `npm run verify:keeper-prime-ladder-transitions-v5`. It is unapproved and
+changes no Final/runtime/production asset; V4's requested 25-ms turn pass is
+still deferred.
+
+### Core transition gap after V5
+
+The approved stair route and candidate ladder route can each demonstrate one
+complete upward room-to-room journey. Still required before the transitional
+library is complete: downward stairs and lower-floor exit; the opposite
+left/right zigzag stair parity; downward ladder and lower dismount/exit;
+finished Prime lift call/enter and lift-exit/walk; Prime stand↔sit joins for
+side/front/back furniture approaches; and explicit opposite-hand/direction
+certification wherever CSS mirroring cannot preserve the door, prop or hand
+relationship. A shared deterministic open-door room emergence/return route is
+also required, but it must reuse standard locomotion and the persistent door
+occlusion rather than introduce costume-specific door animation. Action-
+specific object joins remain a later per-action layer.
+
 ## Lift entry alignment correction (14 Oct 2026)
 
 The focused construction review

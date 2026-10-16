@@ -1,8 +1,45 @@
 # Keeper animation handoff: review, scale and seamless transitions
 
-**Checkpoint:** 10 October 2026
+**Checkpoint:** 16 October 2026
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
+
+## Current core-transition checkpoint — 16 October 2026
+
+Keeper Prime's upward stair route is complete and approved at
+`/keeper-review/keeper-prime-stair-transitions-v6/`: lower-room emergence,
+walking join, full climb, landing, clockwise turn, upper-floor walk/stop,
+right-hand door reach, outward opening and fully hidden exit. Approved Stair
+Ascent V16 remains its climb authority.
+
+The approved ladder motion/layering authority is Ladder Transition V4. The
+new reversible `/keeper-review/keeper-prime-ladder-transitions-v5/` candidate
+extends V4 into the same complete upward room-to-room journey. Its first 88
+route frames and 29 V4 Keeper images are exact; its 23-frame tail adds only the
+upper stop/reach/open/restart/exit. The doorway is side-on—90° to the player's
+straight-on dollhouse view—and opens outward into the hallway. The opaque door
+leaf moves in front of the Keeper and deterministically covers the entire
+remaining visible sprite cell by the last frame. It remains open after room
+entry. Costume change, if any, occurs behind it; the Keeper later returns
+through the already-open door, changes back to standard while hidden, and the
+scenery closes automatically only after he has fully left the room. V5 is not
+approved or promoted. The separately requested two-times-faster V4 turn remains
+deferred.
+
+The remaining core transition work is bounded:
+
+1. downward stairs with lower-floor landing/door exit;
+2. the opposite zigzag stair parity and its correct turn direction;
+3. downward ladder with lower dismount/door exit;
+4. complete Prime lift call/enter and lift-exit/walk flows;
+5. Prime stand↔sit joins for side, front and rear furniture approaches;
+6. explicit left/right or opposite-hand variants wherever mirroring would
+   break a door, prop, furniture or hand relationship.
+7. one deterministic open-door room emergence/return handoff, reusing standard
+   walking and occlusion rather than creating costume-specific door art.
+
+Action-specific object handoffs follow these core routes. Do not restart room
+placement by redrawing any approved walking, stair or ladder source.
 
 ## Exact-name amendment checkpoint — 12 October 2026
 
@@ -381,6 +418,11 @@ The machine-readable runtime inventory is `public/sprites/manifest.json`.
 
 - Every costume change happens while the keeper is fully hidden behind a door.
   All relevant doors hinge on the player's side and render in front of him.
+- A room door opens once, outward into the hallway and toward the approaching
+  Keeper. It stays open throughout his time in that room. After the activity he
+  returns through that already-open door; it closes automatically only after he
+  is fully back in the hallway. Never draw a separate opening/closing animation
+  for every costume.
 - The keeper enters in the old outfit; the foreground door creates full-body
   occlusion; runtime swaps outfit while no part of him is visible; he emerges
   in the new outfit. There is no visible morph or dressing animation.

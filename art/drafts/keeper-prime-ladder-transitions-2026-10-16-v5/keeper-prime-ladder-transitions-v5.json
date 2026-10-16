@@ -1,0 +1,2591 @@
+{
+  "schema": "lighthouse-keeper/ladder-transitions@1",
+  "set": "keeper-prime-ladder-transitions-v5",
+  "status": "draft-awaiting-upper-door-flow-review",
+  "units": {
+    "kuPerLogicalPixel": 8
+  },
+  "geometry": {
+    "floorPitchLp": 60,
+    "floorPitchKu": 480,
+    "ladderWidthLp": 18,
+    "rungPitchLp": 7.5,
+    "rungPitchKu": 60,
+    "rungIntervalsPerFloor": 8,
+    "fullGaitCyclesPerFloor": 4,
+    "doorToLadderLp": 84,
+    "doorToLadderWalkingIntervals": 8,
+    "climbFrameRiseLp": 3.75,
+    "upperDoor": {
+      "orientationToCameraDeg": 90,
+      "opensOutwardIntoHallway": true,
+      "occludesKeeperWhenOpen": true,
+      "frameLeftLp": 150,
+      "frameWidthLp": 18,
+      "leafClosedLeftLp": 155.5,
+      "leafClosedWidthLp": 12.5,
+      "leafOpenLeftLp": 158.5,
+      "leafOpenWidthLp": 20,
+      "handleXLp": 162,
+      "stopRootXLp": 148.25,
+      "transferRootXLp": 158.75,
+      "hiddenRootXLp": 174.5
+    }
+  },
+  "registration": {
+    "method": "one authority-derived scale for all generated masters, root-anchored in 256x320 cells; opposite phases are exact mirrors",
+    "authorityScale": 0.23208722741433022,
+    "visibleCirculationArtScale": 0.9430570303418159,
+    "cellPixels": [
+      256,
+      320
+    ],
+    "rootInCellPixels": [
+      128,
+      316
+    ],
+    "filter": "Lanczos",
+    "registrations": {
+      "contactA": {
+        "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/sources/generated/ladder-contact-a.png",
+        "sourceSha256": "e1646f34c070840cc95653abdd72d7fce3d1ce435ef88cbcea43e38f4432277f",
+        "sourcePixels": [
+          1122,
+          1402
+        ],
+        "sourceSignificantAlphaBoundsExclusive": [
+          187,
+          72,
+          944,
+          1347
+        ],
+        "registrationScale": 0.23208722741433022,
+        "registeredSize": [
+          176,
+          296
+        ],
+        "registeredOffset": [
+          40,
+          20
+        ],
+        "rootInCellPixels": [
+          128,
+          316
+        ],
+        "filter": "Lanczos",
+        "creativePixelWarp": false
+      },
+      "passingA": {
+        "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/sources/generated/ladder-passing-a.png",
+        "sourceSha256": "b7f4952a8116a7246255f246757addeb91cc3ad3ad216ce2e14cc9063538438b",
+        "sourcePixels": [
+          1122,
+          1402
+        ],
+        "sourceSignificantAlphaBoundsExclusive": [
+          209,
+          92,
+          913,
+          1331
+        ],
+        "registrationScale": 0.23208722741433022,
+        "registeredSize": [
+          163,
+          288
+        ],
+        "registeredOffset": [
+          46,
+          28
+        ],
+        "rootInCellPixels": [
+          128,
+          316
+        ],
+        "filter": "Lanczos",
+        "creativePixelWarp": false
+      },
+      "mount": {
+        "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/sources/generated/ladder-mount.png",
+        "sourceSha256": "2baa748b5320148467e3fc22b492753a9070b75c603c4c029ec023cc8d02990b",
+        "sourcePixels": [
+          1122,
+          1402
+        ],
+        "sourceSignificantAlphaBoundsExclusive": [
+          194,
+          77,
+          927,
+          1349
+        ],
+        "registrationScale": 0.23208722741433022,
+        "registeredSize": [
+          170,
+          295
+        ],
+        "registeredOffset": [
+          43,
+          21
+        ],
+        "rootInCellPixels": [
+          128,
+          316
+        ],
+        "filter": "Lanczos",
+        "creativePixelWarp": false
+      },
+      "dismountRight": {
+        "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/sources/generated/ladder-dismount-right.png",
+        "sourceSha256": "5efa3df11f6aed650b3f8726d00fa6f750894bcca5436c44c843f15114eda741",
+        "sourcePixels": [
+          1122,
+          1402
+        ],
+        "sourceSignificantAlphaBoundsExclusive": [
+          185,
+          77,
+          958,
+          1306
+        ],
+        "registrationScale": 0.23208722741433022,
+        "registeredSize": [
+          179,
+          285
+        ],
+        "registeredOffset": [
+          38,
+          31
+        ],
+        "rootInCellPixels": [
+          128,
+          316
+        ],
+        "filter": "Lanczos",
+        "creativePixelWarp": false
+      },
+      "dismountLanded": {
+        "source": "art/drafts/keeper-prime-ladder-transitions-2026-10-16-v1/sources/generated/ladder-dismount-landed.png",
+        "sourceSha256": "8408bcd403bb6d0f7afd8e16a4ff165f222dec20f809e7ed13b0b76264ad04f1",
+        "sourcePixels": [
+          1122,
+          1402
+        ],
+        "sourceSignificantAlphaBoundsExclusive": [
+          184,
+          76,
+          939,
+          1310
+        ],
+        "registrationScale": 0.23208722741433022,
+        "registeredSize": [
+          175,
+          286
+        ],
+        "registeredOffset": [
+          40,
+          30
+        ],
+        "rootInCellPixels": [
+          128,
+          316
+        ],
+        "filter": "Lanczos",
+        "creativePixelWarp": false
+      }
+    }
+  },
+  "routes": {
+    "gait": {
+      "title": "1. Alternating ladder gait · camera follows",
+      "frames": [
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 96,
+          "durationMs": 150,
+          "phase": "camera-follow gait · contactA",
+          "artScale": 0.9430570303418159,
+          "ladderOffsetLp": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+          "sourceFrame": "passingA",
+          "xLp": 104,
+          "rootYLp": 96,
+          "durationMs": 150,
+          "phase": "camera-follow gait · passingA",
+          "artScale": 0.9430570303418159,
+          "ladderOffsetLp": 3.75
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+          "sourceFrame": "contactB",
+          "xLp": 104,
+          "rootYLp": 96,
+          "durationMs": 150,
+          "phase": "camera-follow gait · contactB",
+          "artScale": 0.9430570303418159,
+          "ladderOffsetLp": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+          "sourceFrame": "passingB",
+          "xLp": 104,
+          "rootYLp": 96,
+          "durationMs": 150,
+          "phase": "camera-follow gait · passingB",
+          "artScale": 0.9430570303418159,
+          "ladderOffsetLp": 3.75
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 96,
+          "durationMs": 150,
+          "phase": "camera-follow gait · contactA",
+          "artScale": 0.9430570303418159,
+          "ladderOffsetLp": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+          "sourceFrame": "passingA",
+          "xLp": 104,
+          "rootYLp": 96,
+          "durationMs": 150,
+          "phase": "camera-follow gait · passingA",
+          "artScale": 0.9430570303418159,
+          "ladderOffsetLp": 3.75
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+          "sourceFrame": "contactB",
+          "xLp": 104,
+          "rootYLp": 96,
+          "durationMs": 150,
+          "phase": "camera-follow gait · contactB",
+          "artScale": 0.9430570303418159,
+          "ladderOffsetLp": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+          "sourceFrame": "passingB",
+          "xLp": 104,
+          "rootYLp": 96,
+          "durationMs": 150,
+          "phase": "camera-follow gait · passingB",
+          "artScale": 0.9430570303418159,
+          "ladderOffsetLp": 3.75
+        }
+      ]
+    },
+    "approach": {
+      "title": "2. Door → walk → stop → turn → climb",
+      "frames": [
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f1-paint-opaque-28863dda03cd4408.png",
+          "sourceFrame": "walk1",
+          "xLp": 22.625,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f2-paint-opaque-ef9a7aea900b27f2.png",
+          "sourceFrame": "walk2",
+          "xLp": 25.25,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f3-paint-opaque-cebd3500cb103d28.png",
+          "sourceFrame": "walk3",
+          "xLp": 27.875,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f4-paint-opaque-be6890c42d9ddcb8.png",
+          "sourceFrame": "walk4",
+          "xLp": 30.5,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f5-paint-opaque-cea92b587d6fe5f6.png",
+          "sourceFrame": "walk5",
+          "xLp": 33.125,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f6-paint-opaque-c71f0f27e311abd9.png",
+          "sourceFrame": "walk6",
+          "xLp": 35.75,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f7-paint-opaque-eae447ccefe6dba7.png",
+          "sourceFrame": "walk7",
+          "xLp": 38.375,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f8-paint-opaque-484422703f77edea.png",
+          "sourceFrame": "walk8",
+          "xLp": 41,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f1-paint-opaque-28863dda03cd4408.png",
+          "sourceFrame": "walk1",
+          "xLp": 43.625,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f2-paint-opaque-ef9a7aea900b27f2.png",
+          "sourceFrame": "walk2",
+          "xLp": 46.25,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f3-paint-opaque-cebd3500cb103d28.png",
+          "sourceFrame": "walk3",
+          "xLp": 48.875,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f4-paint-opaque-be6890c42d9ddcb8.png",
+          "sourceFrame": "walk4",
+          "xLp": 51.5,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f5-paint-opaque-cea92b587d6fe5f6.png",
+          "sourceFrame": "walk5",
+          "xLp": 54.125,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f6-paint-opaque-c71f0f27e311abd9.png",
+          "sourceFrame": "walk6",
+          "xLp": 56.75,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f7-paint-opaque-eae447ccefe6dba7.png",
+          "sourceFrame": "walk7",
+          "xLp": 59.375,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f8-paint-opaque-484422703f77edea.png",
+          "sourceFrame": "walk8",
+          "xLp": 62,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f1-paint-opaque-28863dda03cd4408.png",
+          "sourceFrame": "walk1",
+          "xLp": 64.625,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f2-paint-opaque-ef9a7aea900b27f2.png",
+          "sourceFrame": "walk2",
+          "xLp": 67.25,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f3-paint-opaque-cebd3500cb103d28.png",
+          "sourceFrame": "walk3",
+          "xLp": 69.875,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f4-paint-opaque-be6890c42d9ddcb8.png",
+          "sourceFrame": "walk4",
+          "xLp": 72.5,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f5-paint-opaque-cea92b587d6fe5f6.png",
+          "sourceFrame": "walk5",
+          "xLp": 75.125,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f6-paint-opaque-c71f0f27e311abd9.png",
+          "sourceFrame": "walk6",
+          "xLp": 77.75,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f7-paint-opaque-eae447ccefe6dba7.png",
+          "sourceFrame": "walk7",
+          "xLp": 80.375,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f8-paint-opaque-484422703f77edea.png",
+          "sourceFrame": "walk8",
+          "xLp": 83,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f1-paint-opaque-28863dda03cd4408.png",
+          "sourceFrame": "walk1",
+          "xLp": 85.625,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f2-paint-opaque-ef9a7aea900b27f2.png",
+          "sourceFrame": "walk2",
+          "xLp": 88.25,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f3-paint-opaque-cebd3500cb103d28.png",
+          "sourceFrame": "walk3",
+          "xLp": 90.875,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f4-paint-opaque-be6890c42d9ddcb8.png",
+          "sourceFrame": "walk4",
+          "xLp": 93.5,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f5-paint-opaque-cea92b587d6fe5f6.png",
+          "sourceFrame": "walk5",
+          "xLp": 96.125,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f6-paint-opaque-c71f0f27e311abd9.png",
+          "sourceFrame": "walk6",
+          "xLp": 98.75,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f7-paint-opaque-eae447ccefe6dba7.png",
+          "sourceFrame": "walk7",
+          "xLp": 101.375,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f8-paint-opaque-484422703f77edea.png",
+          "sourceFrame": "walk8",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f1-paint-opaque-28863dda03cd4408.png",
+          "sourceFrame": "walk1",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 70,
+          "phase": "decelerate at ladder",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f4-paint-opaque-6fa1f471b5247434.png",
+          "sourceFrame": "bridge4",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 70,
+          "phase": "walk → stop",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f3-paint-opaque-a1b71e2fe16f8965.png",
+          "sourceFrame": "bridge3",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 80,
+          "phase": "walk → stop",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f2-paint-opaque-7e512b0550bf469c.png",
+          "sourceFrame": "bridge2",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 90,
+          "phase": "walk → stop",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f1-paint-opaque-dff74af6261c48e7.png",
+          "sourceFrame": "bridge1",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 100,
+          "phase": "walk → stop",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f01-paint-opaque-79d5e164a6264527.png",
+          "sourceFrame": "turn1",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f02-paint-opaque-9a3a4a3b4eef020a.png",
+          "sourceFrame": "turn2",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f03-paint-opaque-baff8d22e78f1533.png",
+          "sourceFrame": "turn3",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f04-paint-opaque-36c65818ef6b65dc.png",
+          "sourceFrame": "turn4",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f05-paint-opaque-ea1a46f36c8bb7c5.png",
+          "sourceFrame": "turn5",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f06-paint-opaque-d8d850ba7acb0737.png",
+          "sourceFrame": "turn6",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f07-paint-opaque-de0efd9069b1ca9b.png",
+          "sourceFrame": "turn7",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f08-paint-opaque-0902ee511c46b19d.png",
+          "sourceFrame": "turn8",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f09-paint-opaque-737ab3957462903f.png",
+          "sourceFrame": "turn9",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_master-neutral-standing-back_f1-paint-opaque-75dc1c894fa15811.png",
+          "sourceFrame": "back",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 80,
+          "phase": "rear neutral at ladder",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_mount_back_f01-paint-opaque-fa8e08897b5d0bec.png",
+          "sourceFrame": "mount",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 150,
+          "phase": "first rung mount",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 150,
+          "phase": "begin climb · contactA · rise 0 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+          "sourceFrame": "passingA",
+          "xLp": 104,
+          "rootYLp": 112.25,
+          "durationMs": 150,
+          "phase": "begin climb · passingA · rise 3.75 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+          "sourceFrame": "contactB",
+          "xLp": 104,
+          "rootYLp": 108.5,
+          "durationMs": 150,
+          "phase": "begin climb · contactB · rise 7.5 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+          "sourceFrame": "passingB",
+          "xLp": 104,
+          "rootYLp": 104.75,
+          "durationMs": 150,
+          "phase": "begin climb · passingB · rise 11.25 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 101,
+          "durationMs": 150,
+          "phase": "begin climb · contactA · rise 15 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+          "sourceFrame": "passingA",
+          "xLp": 104,
+          "rootYLp": 97.25,
+          "durationMs": 150,
+          "phase": "begin climb · passingA · rise 18.75 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+          "sourceFrame": "contactB",
+          "xLp": 104,
+          "rootYLp": 93.5,
+          "durationMs": 150,
+          "phase": "begin climb · contactB · rise 22.5 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+          "sourceFrame": "passingB",
+          "xLp": 104,
+          "rootYLp": 89.75,
+          "durationMs": 150,
+          "phase": "begin climb · passingB · rise 26.25 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 86,
+          "durationMs": 150,
+          "phase": "begin climb · contactA · rise 30 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        }
+      ]
+    },
+    "continue": {
+      "title": "3. Climb one floor and continue higher",
+      "frames": [
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 150,
+          "phase": "continuous climb · contactA · rise 0 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+          "sourceFrame": "passingA",
+          "xLp": 104,
+          "rootYLp": 112.25,
+          "durationMs": 150,
+          "phase": "continuous climb · passingA · rise 3.75 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+          "sourceFrame": "contactB",
+          "xLp": 104,
+          "rootYLp": 108.5,
+          "durationMs": 150,
+          "phase": "continuous climb · contactB · rise 7.5 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+          "sourceFrame": "passingB",
+          "xLp": 104,
+          "rootYLp": 104.75,
+          "durationMs": 150,
+          "phase": "continuous climb · passingB · rise 11.25 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 101,
+          "durationMs": 150,
+          "phase": "continuous climb · contactA · rise 15 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+          "sourceFrame": "passingA",
+          "xLp": 104,
+          "rootYLp": 97.25,
+          "durationMs": 150,
+          "phase": "continuous climb · passingA · rise 18.75 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+          "sourceFrame": "contactB",
+          "xLp": 104,
+          "rootYLp": 93.5,
+          "durationMs": 150,
+          "phase": "continuous climb · contactB · rise 22.5 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+          "sourceFrame": "passingB",
+          "xLp": 104,
+          "rootYLp": 89.75,
+          "durationMs": 150,
+          "phase": "continuous climb · passingB · rise 26.25 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 86,
+          "durationMs": 150,
+          "phase": "continuous climb · contactA · rise 30 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+          "sourceFrame": "passingA",
+          "xLp": 104,
+          "rootYLp": 82.25,
+          "durationMs": 150,
+          "phase": "continuous climb · passingA · rise 33.75 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+          "sourceFrame": "contactB",
+          "xLp": 104,
+          "rootYLp": 78.5,
+          "durationMs": 150,
+          "phase": "continuous climb · contactB · rise 37.5 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+          "sourceFrame": "passingB",
+          "xLp": 104,
+          "rootYLp": 74.75,
+          "durationMs": 150,
+          "phase": "continuous climb · passingB · rise 41.25 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 71,
+          "durationMs": 150,
+          "phase": "continuous climb · contactA · rise 45 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+          "sourceFrame": "passingA",
+          "xLp": 104,
+          "rootYLp": 67.25,
+          "durationMs": 150,
+          "phase": "continuous climb · passingA · rise 48.75 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+          "sourceFrame": "contactB",
+          "xLp": 104,
+          "rootYLp": 63.5,
+          "durationMs": 150,
+          "phase": "continuous climb · contactB · rise 52.5 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+          "sourceFrame": "passingB",
+          "xLp": 104,
+          "rootYLp": 59.75,
+          "durationMs": 150,
+          "phase": "continuous climb · passingB · rise 56.25 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 56,
+          "durationMs": 150,
+          "phase": "continuous climb · contactA · rise 60 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+          "sourceFrame": "passingA",
+          "xLp": 104,
+          "rootYLp": 52.25,
+          "durationMs": 150,
+          "phase": "continuous climb · passingA · rise 63.75 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+          "sourceFrame": "contactB",
+          "xLp": 104,
+          "rootYLp": 48.5,
+          "durationMs": 150,
+          "phase": "continuous climb · contactB · rise 67.5 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+          "sourceFrame": "passingB",
+          "xLp": 104,
+          "rootYLp": 44.75,
+          "durationMs": 150,
+          "phase": "continuous climb · passingB · rise 71.25 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 41,
+          "durationMs": 150,
+          "phase": "continuous climb · contactA · rise 75 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        }
+      ]
+    },
+    "exit": {
+      "title": "4. Climb → dismount → turn → walk to door",
+      "frames": [
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 86,
+          "durationMs": 150,
+          "phase": "last two climb cycles · contactA · rise 0 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+          "sourceFrame": "passingA",
+          "xLp": 104,
+          "rootYLp": 82.25,
+          "durationMs": 150,
+          "phase": "last two climb cycles · passingA · rise 3.75 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+          "sourceFrame": "contactB",
+          "xLp": 104,
+          "rootYLp": 78.5,
+          "durationMs": 150,
+          "phase": "last two climb cycles · contactB · rise 7.5 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+          "sourceFrame": "passingB",
+          "xLp": 104,
+          "rootYLp": 74.75,
+          "durationMs": 150,
+          "phase": "last two climb cycles · passingB · rise 11.25 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 71,
+          "durationMs": 150,
+          "phase": "last two climb cycles · contactA · rise 15 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+          "sourceFrame": "passingA",
+          "xLp": 104,
+          "rootYLp": 67.25,
+          "durationMs": 150,
+          "phase": "last two climb cycles · passingA · rise 18.75 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+          "sourceFrame": "contactB",
+          "xLp": 104,
+          "rootYLp": 63.5,
+          "durationMs": 150,
+          "phase": "last two climb cycles · contactB · rise 22.5 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+          "sourceFrame": "passingB",
+          "xLp": 104,
+          "rootYLp": 59.75,
+          "durationMs": 150,
+          "phase": "last two climb cycles · passingB · rise 26.25 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 56,
+          "durationMs": 150,
+          "phase": "last two climb cycles · contactA · rise 30 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_dismount-right_back_f01-paint-opaque-ba17213c17186285.png",
+          "sourceFrame": "dismountRight",
+          "xLp": 109,
+          "rootYLp": 56,
+          "durationMs": 150,
+          "phase": "right boot clears the ladder opening",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_dismount-landed_back_f01-paint-opaque-d890b19e5d1f6fc5.png",
+          "sourceFrame": "dismountLanded",
+          "xLp": 116,
+          "rootYLp": 56,
+          "durationMs": 150,
+          "phase": "both feet established on landing",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_master-neutral-standing-back_f1-paint-opaque-75dc1c894fa15811.png",
+          "sourceFrame": "back",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 100,
+          "phase": "rear neutral clear of opening",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f09-paint-opaque-737ab3957462903f.png",
+          "sourceFrame": "turn9",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f08-paint-opaque-0902ee511c46b19d.png",
+          "sourceFrame": "turn8",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f07-paint-opaque-de0efd9069b1ca9b.png",
+          "sourceFrame": "turn7",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f06-paint-opaque-d8d850ba7acb0737.png",
+          "sourceFrame": "turn6",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f05-paint-opaque-ea1a46f36c8bb7c5.png",
+          "sourceFrame": "turn5",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f04-paint-opaque-36c65818ef6b65dc.png",
+          "sourceFrame": "turn4",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f03-paint-opaque-baff8d22e78f1533.png",
+          "sourceFrame": "turn3",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f02-paint-opaque-9a3a4a3b4eef020a.png",
+          "sourceFrame": "turn2",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f01-paint-opaque-79d5e164a6264527.png",
+          "sourceFrame": "turn1",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f2-paint-opaque-7e512b0550bf469c.png",
+          "sourceFrame": "bridge2",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 70,
+          "phase": "stop → walk",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f3-paint-opaque-a1b71e2fe16f8965.png",
+          "sourceFrame": "bridge3",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 70,
+          "phase": "stop → walk",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f4-paint-opaque-6fa1f471b5247434.png",
+          "sourceFrame": "bridge4",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 70,
+          "phase": "stop → walk",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f1-paint-opaque-28863dda03cd4408.png",
+          "sourceFrame": "walk1",
+          "xLp": 124.625,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f2-paint-opaque-ef9a7aea900b27f2.png",
+          "sourceFrame": "walk2",
+          "xLp": 127.25,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f3-paint-opaque-cebd3500cb103d28.png",
+          "sourceFrame": "walk3",
+          "xLp": 129.875,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f4-paint-opaque-be6890c42d9ddcb8.png",
+          "sourceFrame": "walk4",
+          "xLp": 132.5,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f5-paint-opaque-cea92b587d6fe5f6.png",
+          "sourceFrame": "walk5",
+          "xLp": 135.125,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f6-paint-opaque-c71f0f27e311abd9.png",
+          "sourceFrame": "walk6",
+          "xLp": 137.75,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f7-paint-opaque-eae447ccefe6dba7.png",
+          "sourceFrame": "walk7",
+          "xLp": 140.375,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f8-paint-opaque-484422703f77edea.png",
+          "sourceFrame": "walk8",
+          "xLp": 143,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f1-paint-opaque-28863dda03cd4408.png",
+          "sourceFrame": "walk1",
+          "xLp": 145.625,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f2-paint-opaque-ef9a7aea900b27f2.png",
+          "sourceFrame": "walk2",
+          "xLp": 148.25,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f3-paint-opaque-cebd3500cb103d28.png",
+          "sourceFrame": "walk3",
+          "xLp": 150.875,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f4-paint-opaque-be6890c42d9ddcb8.png",
+          "sourceFrame": "walk4",
+          "xLp": 153.5,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f5-paint-opaque-cea92b587d6fe5f6.png",
+          "sourceFrame": "walk5",
+          "xLp": 156.125,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f6-paint-opaque-c71f0f27e311abd9.png",
+          "sourceFrame": "walk6",
+          "xLp": 158.75,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f7-paint-opaque-eae447ccefe6dba7.png",
+          "sourceFrame": "walk7",
+          "xLp": 161.375,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f8-paint-opaque-484422703f77edea.png",
+          "sourceFrame": "walk8",
+          "xLp": 164,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159
+        }
+      ]
+    },
+    "full": {
+      "title": "5. Complete room → ladder → next-floor door flow",
+      "frames": [
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f1-paint-opaque-28863dda03cd4408.png",
+          "sourceFrame": "walk1",
+          "xLp": 22.625,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f2-paint-opaque-ef9a7aea900b27f2.png",
+          "sourceFrame": "walk2",
+          "xLp": 25.25,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f3-paint-opaque-cebd3500cb103d28.png",
+          "sourceFrame": "walk3",
+          "xLp": 27.875,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f4-paint-opaque-be6890c42d9ddcb8.png",
+          "sourceFrame": "walk4",
+          "xLp": 30.5,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f5-paint-opaque-cea92b587d6fe5f6.png",
+          "sourceFrame": "walk5",
+          "xLp": 33.125,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f6-paint-opaque-c71f0f27e311abd9.png",
+          "sourceFrame": "walk6",
+          "xLp": 35.75,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f7-paint-opaque-eae447ccefe6dba7.png",
+          "sourceFrame": "walk7",
+          "xLp": 38.375,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f8-paint-opaque-484422703f77edea.png",
+          "sourceFrame": "walk8",
+          "xLp": 41,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 1/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f1-paint-opaque-28863dda03cd4408.png",
+          "sourceFrame": "walk1",
+          "xLp": 43.625,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f2-paint-opaque-ef9a7aea900b27f2.png",
+          "sourceFrame": "walk2",
+          "xLp": 46.25,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f3-paint-opaque-cebd3500cb103d28.png",
+          "sourceFrame": "walk3",
+          "xLp": 48.875,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f4-paint-opaque-be6890c42d9ddcb8.png",
+          "sourceFrame": "walk4",
+          "xLp": 51.5,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f5-paint-opaque-cea92b587d6fe5f6.png",
+          "sourceFrame": "walk5",
+          "xLp": 54.125,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f6-paint-opaque-c71f0f27e311abd9.png",
+          "sourceFrame": "walk6",
+          "xLp": 56.75,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f7-paint-opaque-eae447ccefe6dba7.png",
+          "sourceFrame": "walk7",
+          "xLp": 59.375,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f8-paint-opaque-484422703f77edea.png",
+          "sourceFrame": "walk8",
+          "xLp": 62,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 2/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f1-paint-opaque-28863dda03cd4408.png",
+          "sourceFrame": "walk1",
+          "xLp": 64.625,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f2-paint-opaque-ef9a7aea900b27f2.png",
+          "sourceFrame": "walk2",
+          "xLp": 67.25,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f3-paint-opaque-cebd3500cb103d28.png",
+          "sourceFrame": "walk3",
+          "xLp": 69.875,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f4-paint-opaque-be6890c42d9ddcb8.png",
+          "sourceFrame": "walk4",
+          "xLp": 72.5,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f5-paint-opaque-cea92b587d6fe5f6.png",
+          "sourceFrame": "walk5",
+          "xLp": 75.125,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f6-paint-opaque-c71f0f27e311abd9.png",
+          "sourceFrame": "walk6",
+          "xLp": 77.75,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f7-paint-opaque-eae447ccefe6dba7.png",
+          "sourceFrame": "walk7",
+          "xLp": 80.375,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f8-paint-opaque-484422703f77edea.png",
+          "sourceFrame": "walk8",
+          "xLp": 83,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 3/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f1-paint-opaque-28863dda03cd4408.png",
+          "sourceFrame": "walk1",
+          "xLp": 85.625,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f2-paint-opaque-ef9a7aea900b27f2.png",
+          "sourceFrame": "walk2",
+          "xLp": 88.25,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f3-paint-opaque-cebd3500cb103d28.png",
+          "sourceFrame": "walk3",
+          "xLp": 90.875,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f4-paint-opaque-be6890c42d9ddcb8.png",
+          "sourceFrame": "walk4",
+          "xLp": 93.5,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f5-paint-opaque-cea92b587d6fe5f6.png",
+          "sourceFrame": "walk5",
+          "xLp": 96.125,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f6-paint-opaque-c71f0f27e311abd9.png",
+          "sourceFrame": "walk6",
+          "xLp": 98.75,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f7-paint-opaque-eae447ccefe6dba7.png",
+          "sourceFrame": "walk7",
+          "xLp": 101.375,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f8-paint-opaque-484422703f77edea.png",
+          "sourceFrame": "walk8",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 62.5,
+          "phase": "walk to ladder · cycle 4/4",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f1-paint-opaque-28863dda03cd4408.png",
+          "sourceFrame": "walk1",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 70,
+          "phase": "decelerate at ladder",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f4-paint-opaque-6fa1f471b5247434.png",
+          "sourceFrame": "bridge4",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 70,
+          "phase": "walk → stop",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f3-paint-opaque-a1b71e2fe16f8965.png",
+          "sourceFrame": "bridge3",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 80,
+          "phase": "walk → stop",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f2-paint-opaque-7e512b0550bf469c.png",
+          "sourceFrame": "bridge2",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 90,
+          "phase": "walk → stop",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f1-paint-opaque-dff74af6261c48e7.png",
+          "sourceFrame": "bridge1",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 100,
+          "phase": "walk → stop",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f01-paint-opaque-79d5e164a6264527.png",
+          "sourceFrame": "turn1",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f02-paint-opaque-9a3a4a3b4eef020a.png",
+          "sourceFrame": "turn2",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f03-paint-opaque-baff8d22e78f1533.png",
+          "sourceFrame": "turn3",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f04-paint-opaque-36c65818ef6b65dc.png",
+          "sourceFrame": "turn4",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f05-paint-opaque-ea1a46f36c8bb7c5.png",
+          "sourceFrame": "turn5",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f06-paint-opaque-d8d850ba7acb0737.png",
+          "sourceFrame": "turn6",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f07-paint-opaque-de0efd9069b1ca9b.png",
+          "sourceFrame": "turn7",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f08-paint-opaque-0902ee511c46b19d.png",
+          "sourceFrame": "turn8",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f09-paint-opaque-737ab3957462903f.png",
+          "sourceFrame": "turn9",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 50,
+          "phase": "turn to face ladder",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_master-neutral-standing-back_f1-paint-opaque-75dc1c894fa15811.png",
+          "sourceFrame": "back",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 80,
+          "phase": "rear neutral at ladder",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_mount_back_f01-paint-opaque-fa8e08897b5d0bec.png",
+          "sourceFrame": "mount",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 150,
+          "phase": "first rung mount",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 116,
+          "durationMs": 150,
+          "phase": "climb one exact floor · contactA · rise 0 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+          "sourceFrame": "passingA",
+          "xLp": 104,
+          "rootYLp": 112.25,
+          "durationMs": 150,
+          "phase": "climb one exact floor · passingA · rise 3.75 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+          "sourceFrame": "contactB",
+          "xLp": 104,
+          "rootYLp": 108.5,
+          "durationMs": 150,
+          "phase": "climb one exact floor · contactB · rise 7.5 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+          "sourceFrame": "passingB",
+          "xLp": 104,
+          "rootYLp": 104.75,
+          "durationMs": 150,
+          "phase": "climb one exact floor · passingB · rise 11.25 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 101,
+          "durationMs": 150,
+          "phase": "climb one exact floor · contactA · rise 15 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+          "sourceFrame": "passingA",
+          "xLp": 104,
+          "rootYLp": 97.25,
+          "durationMs": 150,
+          "phase": "climb one exact floor · passingA · rise 18.75 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+          "sourceFrame": "contactB",
+          "xLp": 104,
+          "rootYLp": 93.5,
+          "durationMs": 150,
+          "phase": "climb one exact floor · contactB · rise 22.5 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+          "sourceFrame": "passingB",
+          "xLp": 104,
+          "rootYLp": 89.75,
+          "durationMs": 150,
+          "phase": "climb one exact floor · passingB · rise 26.25 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 86,
+          "durationMs": 150,
+          "phase": "climb one exact floor · contactA · rise 30 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+          "sourceFrame": "passingA",
+          "xLp": 104,
+          "rootYLp": 82.25,
+          "durationMs": 150,
+          "phase": "climb one exact floor · passingA · rise 33.75 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+          "sourceFrame": "contactB",
+          "xLp": 104,
+          "rootYLp": 78.5,
+          "durationMs": 150,
+          "phase": "climb one exact floor · contactB · rise 37.5 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+          "sourceFrame": "passingB",
+          "xLp": 104,
+          "rootYLp": 74.75,
+          "durationMs": 150,
+          "phase": "climb one exact floor · passingB · rise 41.25 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 71,
+          "durationMs": 150,
+          "phase": "climb one exact floor · contactA · rise 45 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+          "sourceFrame": "passingA",
+          "xLp": 104,
+          "rootYLp": 67.25,
+          "durationMs": 150,
+          "phase": "climb one exact floor · passingA · rise 48.75 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+          "sourceFrame": "contactB",
+          "xLp": 104,
+          "rootYLp": 63.5,
+          "durationMs": 150,
+          "phase": "climb one exact floor · contactB · rise 52.5 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+          "sourceFrame": "passingB",
+          "xLp": 104,
+          "rootYLp": 59.75,
+          "durationMs": 150,
+          "phase": "climb one exact floor · passingB · rise 56.25 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 1,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+          "sourceFrame": "contactA",
+          "xLp": 104,
+          "rootYLp": 56,
+          "durationMs": 150,
+          "phase": "climb one exact floor · contactA · rise 60 lp",
+          "artScale": 0.9430570303418159,
+          "rungPhase": 0,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_dismount-right_back_f01-paint-opaque-ba17213c17186285.png",
+          "sourceFrame": "dismountRight",
+          "xLp": 109,
+          "rootYLp": 56,
+          "durationMs": 150,
+          "phase": "right boot clears the ladder opening",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_dismount-landed_back_f01-paint-opaque-d890b19e5d1f6fc5.png",
+          "sourceFrame": "dismountLanded",
+          "xLp": 116,
+          "rootYLp": 56,
+          "durationMs": 150,
+          "phase": "both feet established on landing",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_master-neutral-standing-back_f1-paint-opaque-75dc1c894fa15811.png",
+          "sourceFrame": "back",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 100,
+          "phase": "rear neutral clear of opening",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f09-paint-opaque-737ab3957462903f.png",
+          "sourceFrame": "turn9",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f08-paint-opaque-0902ee511c46b19d.png",
+          "sourceFrame": "turn8",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f07-paint-opaque-de0efd9069b1ca9b.png",
+          "sourceFrame": "turn7",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f06-paint-opaque-d8d850ba7acb0737.png",
+          "sourceFrame": "turn6",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f05-paint-opaque-ea1a46f36c8bb7c5.png",
+          "sourceFrame": "turn5",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f04-paint-opaque-36c65818ef6b65dc.png",
+          "sourceFrame": "turn4",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f03-paint-opaque-baff8d22e78f1533.png",
+          "sourceFrame": "turn3",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f02-paint-opaque-9a3a4a3b4eef020a.png",
+          "sourceFrame": "turn2",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f01-paint-opaque-79d5e164a6264527.png",
+          "sourceFrame": "turn1",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 50,
+          "phase": "turn right toward room door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f2-paint-opaque-7e512b0550bf469c.png",
+          "sourceFrame": "bridge2",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 70,
+          "phase": "stop → walk",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f3-paint-opaque-a1b71e2fe16f8965.png",
+          "sourceFrame": "bridge3",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 70,
+          "phase": "stop → walk",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f4-paint-opaque-6fa1f471b5247434.png",
+          "sourceFrame": "bridge4",
+          "xLp": 122,
+          "rootYLp": 56,
+          "durationMs": 70,
+          "phase": "stop → walk",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f1-paint-opaque-28863dda03cd4408.png",
+          "sourceFrame": "walk1",
+          "xLp": 124.625,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f2-paint-opaque-ef9a7aea900b27f2.png",
+          "sourceFrame": "walk2",
+          "xLp": 127.25,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f3-paint-opaque-cebd3500cb103d28.png",
+          "sourceFrame": "walk3",
+          "xLp": 129.875,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f4-paint-opaque-be6890c42d9ddcb8.png",
+          "sourceFrame": "walk4",
+          "xLp": 132.5,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f5-paint-opaque-cea92b587d6fe5f6.png",
+          "sourceFrame": "walk5",
+          "xLp": 135.125,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f6-paint-opaque-c71f0f27e311abd9.png",
+          "sourceFrame": "walk6",
+          "xLp": 137.75,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f7-paint-opaque-eae447ccefe6dba7.png",
+          "sourceFrame": "walk7",
+          "xLp": 140.375,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f8-paint-opaque-484422703f77edea.png",
+          "sourceFrame": "walk8",
+          "xLp": 143,
+          "rootYLp": 56,
+          "durationMs": 62.5,
+          "phase": "walk to upper door",
+          "artScale": 0.9430570303418159,
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f4-paint-opaque-6fa1f471b5247434.png",
+          "xLp": 145.375,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 70,
+          "phase": "decelerate to upper-door handle",
+          "label": "approved bridge F4 · +2.375 lp",
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f3-paint-opaque-a1b71e2fe16f8965.png",
+          "xLp": 147,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 80,
+          "phase": "decelerate to upper-door handle",
+          "label": "approved bridge F3 · +1.625 lp",
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f2-paint-opaque-7e512b0550bf469c.png",
+          "xLp": 147.875,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 90,
+          "phase": "decelerate to upper-door handle",
+          "label": "approved bridge F2 · +0.875 lp",
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f1-paint-opaque-dff74af6261c48e7.png",
+          "xLp": 148.25,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 100,
+          "phase": "decelerate to upper-door handle",
+          "label": "approved side neutral · +0.375 lp",
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_door-reach-right_partial-paint-opaque-2803620e54ecd842.png",
+          "xLp": 148.25,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 100,
+          "phase": "right hand begins reaching for handle",
+          "label": "approved stair-route door reach · partial",
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_door-reach-right_full-paint-opaque-48d1970679cfe4de.png",
+          "xLp": 148.25,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 120,
+          "phase": "right hand meets handle",
+          "label": "approved stair-route door reach · full contact",
+          "upperDoorOpen": 0
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_door-reach-right_full-paint-opaque-48d1970679cfe4de.png",
+          "xLp": 148.25,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 90,
+          "phase": "right hand pulls; door starts opening",
+          "label": "door one-third open",
+          "upperDoorOpen": 0.3333333333333333
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_door-reach-right_full-paint-opaque-48d1970679cfe4de.png",
+          "xLp": 148.25,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 90,
+          "phase": "right hand pulls; door continues opening",
+          "label": "door two-thirds open",
+          "upperDoorOpen": 0.6666666666666666
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_door-reach-right_full-paint-opaque-48d1970679cfe4de.png",
+          "xLp": 148.25,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 140,
+          "phase": "door reaches fully open position",
+          "label": "door fully open",
+          "upperDoorOpen": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_door-reach-right_partial-paint-opaque-2803620e54ecd842.png",
+          "xLp": 148.25,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 100,
+          "phase": "right hand retracts from handle",
+          "label": "door reach retracts",
+          "upperDoorOpen": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_turn_side-right_to_back_f01-paint-opaque-79d5e164a6264527.png",
+          "xLp": 148.25,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 70,
+          "phase": "brief exact side neutral before stepping through",
+          "label": "approved side authority",
+          "upperDoorOpen": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f2-paint-opaque-7e512b0550bf469c.png",
+          "xLp": 148.625,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 70,
+          "phase": "accelerate through open doorway",
+          "label": "approved bridge F2 · +0.375 lp",
+          "upperDoorOpen": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f3-paint-opaque-a1b71e2fe16f8965.png",
+          "xLp": 149.5,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 70,
+          "phase": "accelerate through open doorway",
+          "label": "approved bridge F3 · +0.875 lp",
+          "upperDoorOpen": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_stop-to-walk-right_f4-paint-opaque-6fa1f471b5247434.png",
+          "xLp": 151.125,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 70,
+          "phase": "accelerate through open doorway",
+          "label": "approved bridge F4 · +1.625 lp",
+          "upperDoorOpen": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f1-paint-opaque-28863dda03cd4408.png",
+          "xLp": 153.5,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 62.5,
+          "phase": "accelerate through open doorway",
+          "label": "approved Walk V6 F1 · +2.375 lp",
+          "upperDoorOpen": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f2-paint-opaque-ef9a7aea900b27f2.png",
+          "xLp": 156.125,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 62.5,
+          "phase": "cross registered open doorway",
+          "label": "approved walk f2",
+          "upperDoorOpen": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f3-paint-opaque-cebd3500cb103d28.png",
+          "xLp": 158.75,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 62.5,
+          "phase": "continue behind opaque open door leaf",
+          "label": "approved walk f3",
+          "upperDoorOpen": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f4-paint-opaque-be6890c42d9ddcb8.png",
+          "xLp": 161.375,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 62.5,
+          "phase": "continue behind opaque open door leaf",
+          "label": "approved walk f4",
+          "upperDoorOpen": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f5-paint-opaque-cea92b587d6fe5f6.png",
+          "xLp": 164,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 62.5,
+          "phase": "continue behind opaque open door leaf",
+          "label": "approved walk f5",
+          "upperDoorOpen": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f6-paint-opaque-c71f0f27e311abd9.png",
+          "xLp": 166.625,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 62.5,
+          "phase": "continue behind opaque open door leaf",
+          "label": "approved walk f6",
+          "upperDoorOpen": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f7-paint-opaque-eae447ccefe6dba7.png",
+          "xLp": 169.25,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 62.5,
+          "phase": "continue behind opaque open door leaf",
+          "label": "approved walk f7",
+          "upperDoorOpen": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f8-paint-opaque-484422703f77edea.png",
+          "xLp": 171.875,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 62.5,
+          "phase": "continue behind opaque open door leaf",
+          "label": "approved walk f8",
+          "upperDoorOpen": 1
+        },
+        {
+          "src": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_walk-right_f1-paint-opaque-28863dda03cd4408.png",
+          "xLp": 174.5,
+          "rootYLp": 56,
+          "artScale": 0.9430570303418159,
+          "durationMs": 62.5,
+          "phase": "continue behind opaque open door leaf",
+          "label": "approved walk f1",
+          "upperDoorOpen": 1
+        }
+      ]
+    }
+  },
+  "timing": {
+    "turnFrameDurationMs": 50,
+    "turnFps": 20,
+    "climbFrameDurationMs": 150,
+    "climbFps": 6.666666666666667,
+    "decision": "faster mounting/landing turns and substantially slower rung-to-rung climbing",
+    "doorActionFrameMs": [
+      100,
+      120,
+      90,
+      90,
+      140,
+      100,
+      70
+    ],
+    "deferredTurnFrameMs": 25,
+    "deferredTurnTimingImplemented": false
+  },
+  "layering": {
+    "orderBackToFront": [
+      "ladder",
+      "keeper",
+      "floor",
+      "door",
+      "guides"
+    ],
+    "keeperAlphaMode": "solid-paint-floor-240-with-original-antialiased-fringe",
+    "ladderPixelsSuppressed": false,
+    "persistentCompositor": true,
+    "purpose": "keep every ladder pixel, make Keeper interior paint fully opaque, retain the smooth source fringe, and never replace DOM during playback"
+  },
+  "opacity": {
+    "solidPaintFloor": 240,
+    "operation": "source alpha >= 240 becomes 255; source alpha 1..239 and its RGB remain byte-identical",
+    "appliesTo": "all 29 unique Keeper review frames"
+  },
+  "delivery": {
+    "allUniqueFramesDecodedBeforePlayback": true,
+    "allUniqueFramesMountedBeforePlayback": true,
+    "frameSwitch": "atomic visibility switch between persistent decoded image nodes",
+    "architectureRebuiltDuringPlayback": false,
+    "defaultRoute": "full",
+    "completeUpperDoorInteraction": true,
+    "routeEndsWithUpperDoorOpen": true
+  },
+  "doorPolicy": {
+    "opensTowardKeeperIntoHallway": true,
+    "remainsOpenAfterRoomEntry": true,
+    "closesOnlyAfterKeeperLaterLeavesRoom": true,
+    "costumeChangeAllowedOnlyUnderFullDoorOcclusion": true,
+    "costumeSpecificDoorAnimationRequired": false
+  },
+  "routeNotes": {
+    "v4ApprovedPrefixFrames": 88,
+    "newTailFrames": 23,
+    "upperDoorStopRootLp": 148.25,
+    "upperDoorTransferRootLp": 158.75,
+    "upperDoorHiddenRootLp": 174.5,
+    "timingNote": "V4-approved 50-ms turn frames remain unchanged; Frank requested a later separate 25-ms timing-only pass."
+  }
+}

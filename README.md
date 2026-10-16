@@ -256,6 +256,32 @@ are not the final timing: a later timing-only pass must halve them to 25 ms
 (40 fps), without changing artwork or geometry. Approval itself changes no
 Final, runtime or production asset.
 
+The new reversible V5 review candidate completes the missing upper-door tail:
+`/keeper-review/keeper-prime-ladder-transitions-v5/`. Its 111-frame default
+route runs lower-room emergence → measured walk/stop → turn → full ladder
+climb → dismount → turn → upper-hall walk/stop → right-hand reach → door opens
+outward → restart → complete occlusion. Frames 1–88 and all 29 Keeper assets
+from approved V4 remain exact; only two already accepted stair-route door-reach
+drawings are added, with V4's opacity rule. The doorway is explicitly 90° to
+the straight-on dollhouse camera. Its outward-opening leaf becomes a foreground
+occluder and covers the entire remaining visible Keeper cell at the last frame.
+It remains open after the handoff into the room. Any costume change occurs
+behind that open leaf; after the activity the Keeper returns through the same
+already-open door, changes back to standard while hidden, and only then—once
+he has fully left the room—does the scenery close automatically. Door opening
+therefore never needs costume-specific Keeper artwork.
+V5 is awaiting visual approval and changes no Final, runtime or production art.
+
+This means a complete upward room-to-room flow is now reviewable for both
+stairs (approved Stair Transition V6) and ladder (candidate Ladder Transition
+V5). The remaining core transition families are: downward stair travel and
+its lower-floor exit; the opposite zigzag stair parity; downward ladder travel
+and dismount/exit; complete Prime lift call/enter and lift-exit/walk routes;
+Prime stand↔sit joins for side/front/back chair approaches; and any asymmetric
+left/right door or interaction reach that cannot be certified as a safe mirror.
+The shared open-door room emergence/return handoff also needs a deterministic
+route, but reuses standard walking and occlusion rather than new costume art.
+
 ## Run it
 ```
 npm install
@@ -277,6 +303,7 @@ npm run verify:keeper-prime-ladder-transitions-v2 # V1-exact art with corrected 
 npm run verify:keeper-prime-ladder-transitions-v3 # complete ladder plus alpha-opaque Keeper frames
 npm run verify:keeper-prime-ladder-transitions-v4 # smooth opaque paint plus persistent no-rebuild playback
 npm run verify:keeper-prime-ladder-transitions-v4-approval # exact V4 approval plus deferred 2× turn timing
+npm run verify:keeper-prime-ladder-transitions-v5 # complete room-to-room ladder flow and side-on outward-door occlusion
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
 
