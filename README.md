@@ -32,18 +32,22 @@ projection authority. The active
 contract uses a straight-on camera, rectangular functional fronts, constant
 Keeper/object scale, no runtime depth scaling, an exact 5-lp horizontal floor
 band and the real 19-lp cooker/hob datum. Kitchen V5 remains the sole visual
-baseline at `/keeper-review/kitchen-basic-assets-v5/`. The replacement V6 has
-stopped at its required first gate:
-`/keeper-review/kitchen-countertop-calibration-v6/` shows the exact V5 kettle
+baseline at `/keeper-review/kitchen-basic-assets-v5/`. Frank selected
+calibration Option B (1.5-lp visible top), and the replacement full-family V6
+draft is now at `/keeper-review/kitchen-basic-assets-v6-option-b/`. The earlier
+gate remains immutable at `/keeper-review/kitchen-countertop-calibration-v6/`;
+it shows the exact V5 kettle
 counter, cooker/hob and sink beside three common 1–2-lp countertop
 constructions, with logical-scale, ghost, edge and measured 21-lp-bay seam
-proofs. No full V6 family has been rebuilt while that selection is pending.
-The calibration hand-back is
-[`docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_CALIBRATION_V6_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_CALIBRATION_V6_2026-10-16.md);
+proofs. V6 applies B across every compatible unit, keeps exact 20-lp art inside
+each 21-lp bay, narrows the pedal bin to 15 lp, and locks every animation base
+outside declared masks. The reusable recipe is
+[`docs/KITCHEN_COUNTERTOP_OPTION_B_RECIPE_2026-10-16.md`](docs/KITCHEN_COUNTERTOP_OPTION_B_RECIPE_2026-10-16.md),
+and the full hand-back is
+[`docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V6_OPTION_B_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V6_OPTION_B_2026-10-16.md);
 the complete V5 measurements remain in
 [`docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V5_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V5_2026-10-16.md).
-Neither V5 nor the calibration candidates are approved, promoted or wired into
-the live game.
+Neither V5 nor V6 is approved, promoted or wired into the live game.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

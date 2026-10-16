@@ -1,0 +1,52 @@
+{
+  "id": "kitchen-countertop-option-b-v1",
+  "status": "selected-construction-authority",
+  "selectedBy": "Frank",
+  "selectedDate": "2026-10-16",
+  "visualBaseline": "kitchen-basic-assets-v5",
+  "density": 4,
+  "bayLp": 21,
+  "construction": {
+    "topRevealLp": 1.5,
+    "topRevealPx": 6,
+    "fasciaLp": 2,
+    "fasciaPx": 8,
+    "rearEdgeScale": 1,
+    "shearLp": 0,
+    "ordinaryEdgeLengthLp": 20,
+    "ordinaryCellWidthLp": 21,
+    "ordinarySafetyGutterLpEachSide": 0.5,
+    "frontAndRearEdges": "horizontal-equal-width",
+    "bodySides": "vertical-parallel",
+    "runtimeDepthScaling": false
+  },
+  "paletteRgba": {
+    "ink": [7, 27, 50, 255],
+    "woodDark": [93, 48, 29, 255],
+    "wood": [154, 86, 48, 255],
+    "woodLight": [211, 138, 70, 255],
+    "woodHighlight": [238, 174, 88, 255],
+    "hob": [55, 57, 70, 255],
+    "hobLight": [102, 105, 116, 255]
+  },
+  "compatibleUnits": {
+    "obj_fridge": {"frontYPx": 16, "maskPx": [0, 8, 84, 24], "preservePx": null, "material": "wood", "edgeLengthLp": 20},
+    "obj_kettle": {"frontYPx": 48, "maskPx": [0, 40, 84, 56], "preservePx": [14, 0, 68, 49], "material": "wood", "edgeLengthLp": 20},
+    "obj_toaster": {"frontYPx": 36, "maskPx": [0, 28, 84, 44], "preservePx": [12, 0, 72, 37], "material": "wood", "edgeLengthLp": 20},
+    "obj_cooker": {"frontYPx": 36, "maskPx": [0, 20, 84, 44], "preservePx": null, "material": "hob", "edgeLengthLp": 20},
+    "obj_mixer": {"frontYPx": 52, "maskPx": [0, 44, 84, 60], "preservePx": [12, 0, 72, 53], "material": "wood", "edgeLengthLp": 20},
+    "obj_sink": {"frontYPx": 48, "maskPx": [0, 40, 84, 56], "preservePx": [14, 0, 70, 61], "material": "wood", "edgeLengthLp": 20},
+    "obj_table": {"frontYPx": 48, "maskPx": [0, 36, 168, 56], "preservePx": null, "material": "wood", "edgeLengthLp": 40, "cellWidthLp": 42, "safetyGutterLpEachSide": 1}
+  },
+  "futureAssetRules": [
+    "Author at density 4 and reserve the full logical cell before drawing.",
+    "Keep every opaque pixel inside the declared safety gutter on every frame.",
+    "Draw one finished standard base first; never resample that base between states.",
+    "Use a 1.5-lp visible top, a 2-lp fascia, zero shear and equal-width horizontal rear/front edges.",
+    "Keep the structural front rectangular and both body sides vertical and parallel.",
+    "Use the shared palette and outline construction; appliance self-volume must not change countertop geometry.",
+    "Animated states may change only inside a declared moving-part or effect mask.",
+    "Verify identical pixels outside every declared state mask, exact anchors/datums and transparent shared edges.",
+    "Publish as a new reversible draft; never overwrite or promote without explicit approval."
+  ]
+}

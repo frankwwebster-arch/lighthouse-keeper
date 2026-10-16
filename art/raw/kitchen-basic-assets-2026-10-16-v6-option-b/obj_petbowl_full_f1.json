@@ -1,0 +1,24 @@
+{
+  "w": 16,
+  "h": 8,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    8.0,
+    8
+  ],
+  "z": 40,
+  "projection": {
+    "id": "flat-cutaway-v1",
+    "runtimeDepthScaling": false
+  },
+  "interactionSpotKu": 1440,
+  "contactDatumsLp": {
+    "foot": 0,
+    "worktopOrTable": null,
+    "seat": null
+  },
+  "declaredChangeMasksPx": [],
+  "stableBaseOutsideMasks": false
+}
