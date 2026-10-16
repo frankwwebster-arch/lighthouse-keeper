@@ -1,0 +1,230 @@
+{
+  "version": 11,
+  "status": "reversible-draft",
+  "recipe": {
+    "id": "kitchen-kettle-recipe-shelf-v11",
+    "status": "review-draft-authority",
+    "date": "2026-10-17",
+    "baseline": "kitchen-porthole-backdrop-cutout-v10",
+    "density": 4,
+    "bayWidthLp": 21,
+    "roomHeightLp": 56,
+    "kettleDefaultBay": 3,
+    "shelf": {
+      "cellLp": [
+        21,
+        56
+      ],
+      "maximumOpaqueWidthLp": 19,
+      "maximumOpaqueHeightLp": 14,
+      "bottomLpFromRoomTop": 19,
+      "parentAsset": "obj_kettle",
+      "movesWithParent": true,
+      "interactionSpot": null,
+      "contents": [
+        "left jar bookend",
+        "messy recipe books",
+        "right jar bookend"
+      ]
+    },
+    "movementProofBays": [
+      2,
+      5,
+      8
+    ],
+    "runtimeWiring": false
+  },
+  "shelf": {
+    "png": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/obj_kettle_recipe_shelf_v11_f1.png",
+    "json": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/obj_kettle_recipe_shelf_v11_f1.json",
+    "sha256": "5dd9f73e0bd491e22db5844a91007d5a91d6d05bd431695ec3f3982b48143b1d",
+    "meta": {
+      "w": 21,
+      "h": 56,
+      "frames": 1,
+      "fps": 0,
+      "density": 4,
+      "anchor": [
+        10.5,
+        56
+      ],
+      "projection": {
+        "id": "flat-cutaway-v1",
+        "runtimeDepthScaling": false
+      },
+      "parent": "obj_kettle",
+      "movesWithParent": true,
+      "interactionSpot": null
+    },
+    "bound": {
+      "xLp": 1.0,
+      "yLp": 12.25,
+      "widthLp": 19.0,
+      "heightLp": 6.75
+    },
+    "url": "/keeper-review/kitchen-kettle-recipe-shelf-v11/assets/obj_kettle_recipe_shelf_v11_f1.png"
+  },
+  "before": {
+    "png": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/room_kitchen_9bay_v10_reference.png",
+    "json": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/room_kitchen_9bay_v10_reference.json",
+    "sha256": "ba4cde7d194dd8acdb0ec4140e7e49e7349deae2c9eddacc4976b291f3b48aeb",
+    "meta": {
+      "w": 193,
+      "h": 56,
+      "frames": 1,
+      "fps": 0,
+      "density": 4,
+      "anchor": [
+        96.5,
+        56
+      ],
+      "projection": {
+        "id": "flat-cutaway-v1",
+        "runtimeDepthScaling": false
+      },
+      "reviewBaseline": true
+    },
+    "bound": {
+      "xLp": 0.0,
+      "yLp": 0.0,
+      "widthLp": 193.0,
+      "heightLp": 56.0
+    },
+    "url": "/keeper-review/kitchen-kettle-recipe-shelf-v11/assets/room_kitchen_9bay_v10_reference.png"
+  },
+  "after": {
+    "png": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/room_kitchen_9bay_v11_recipe_shelf.png",
+    "json": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/room_kitchen_9bay_v11_recipe_shelf.json",
+    "sha256": "feaa3c5fd61e4c089cb8f3503d1f5b4f3cf8079c1dc1b050a63b463dae8b199d",
+    "meta": {
+      "w": 193,
+      "h": 56,
+      "frames": 1,
+      "fps": 0,
+      "density": 4,
+      "anchor": [
+        96.5,
+        56
+      ],
+      "projection": {
+        "id": "flat-cutaway-v1",
+        "runtimeDepthScaling": false
+      },
+      "reviewComposite": true,
+      "kettleBay": 3
+    },
+    "bound": {
+      "xLp": 0.0,
+      "yLp": 0.0,
+      "widthLp": 193.0,
+      "heightLp": 56.0
+    },
+    "url": "/keeper-review/kitchen-kettle-recipe-shelf-v11/assets/room_kitchen_9bay_v11_recipe_shelf.png"
+  },
+  "moves": {
+    "2": {
+      "png": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/kettle_recipe_shelf_move_bay_2.png",
+      "json": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/kettle_recipe_shelf_move_bay_2.json",
+      "sha256": "fcce67aba7c952220983cc46aae8d99c40588e9827f1ea725dec1f463e0da642",
+      "meta": {
+        "w": 193,
+        "h": 56,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          96.5,
+          56
+        ],
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "reviewComposite": true,
+        "kettleBay": 2,
+        "shelfBay": 2
+      },
+      "bound": {
+        "xLp": 0.0,
+        "yLp": 0.0,
+        "widthLp": 193.0,
+        "heightLp": 56.0
+      },
+      "url": "/keeper-review/kitchen-kettle-recipe-shelf-v11/assets/kettle_recipe_shelf_move_bay_2.png"
+    },
+    "5": {
+      "png": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/kettle_recipe_shelf_move_bay_5.png",
+      "json": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/kettle_recipe_shelf_move_bay_5.json",
+      "sha256": "3612be699f8beae3c772553846c1cf005dea4d2cf4212b68a258e0fe591caea9",
+      "meta": {
+        "w": 193,
+        "h": 56,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          96.5,
+          56
+        ],
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "reviewComposite": true,
+        "kettleBay": 5,
+        "shelfBay": 5
+      },
+      "bound": {
+        "xLp": 0.0,
+        "yLp": 0.0,
+        "widthLp": 193.0,
+        "heightLp": 56.0
+      },
+      "url": "/keeper-review/kitchen-kettle-recipe-shelf-v11/assets/kettle_recipe_shelf_move_bay_5.png"
+    },
+    "8": {
+      "png": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/kettle_recipe_shelf_move_bay_8.png",
+      "json": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/kettle_recipe_shelf_move_bay_8.json",
+      "sha256": "c8e55b839b075ed88050774dea81df9f2c978b540a2f895249b655d1f0f95752",
+      "meta": {
+        "w": 193,
+        "h": 56,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          96.5,
+          56
+        ],
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "reviewComposite": true,
+        "kettleBay": 8,
+        "shelfBay": 8
+      },
+      "bound": {
+        "xLp": 0.0,
+        "yLp": 0.0,
+        "widthLp": 193.0,
+        "heightLp": 56.0
+      },
+      "url": "/keeper-review/kitchen-kettle-recipe-shelf-v11/assets/kettle_recipe_shelf_move_bay_8.png"
+    }
+  },
+  "movementPlacementsLp": {
+    "2": {
+      "kettleXLp": 25,
+      "shelfXLp": 25
+    },
+    "5": {
+      "kettleXLp": 88,
+      "shelfXLp": 88
+    },
+    "8": {
+      "kettleXLp": 151,
+      "shelfXLp": 151
+    }
+  }
+}

@@ -101,6 +101,11 @@ through the room. The exact recipe is
 and the hand-back is
 [`docs/CODEX_TO_CLAUDE_KITCHEN_PORTHOLE_BACKDROP_CUTOUT_V10_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_PORTHOLE_BACKDROP_CUTOUT_V10_2026-10-17.md).
 V10 is also unapproved, unpromoted and unwired.
+Kitchen V11 adds a review-only kettle-owned wall shelf of uneven recipe books
+held by jar bookends. It remains inside one exact 21-lp bay, has no interaction
+spot, and moves by the kettle's identical whole-bay delta. Review:
+`/keeper-review/kitchen-kettle-recipe-shelf-v11/`; recipe:
+[`docs/KITCHEN_KETTLE_RECIPE_SHELF_V11_RECIPE_2026-10-17.md`](docs/KITCHEN_KETTLE_RECIPE_SHELF_V11_RECIPE_2026-10-17.md).
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

@@ -1,0 +1,24 @@
+{
+  "shelf": "/keeper-review/kitchen-kettle-recipe-shelf-v11/assets/obj_kettle_recipe_shelf_v11_f1.png",
+  "before": "/keeper-review/kitchen-kettle-recipe-shelf-v11/assets/room_kitchen_9bay_v10_reference.png",
+  "after": "/keeper-review/kitchen-kettle-recipe-shelf-v11/assets/room_kitchen_9bay_v11_recipe_shelf.png",
+  "moves": {
+    "2": "/keeper-review/kitchen-kettle-recipe-shelf-v11/assets/kettle_recipe_shelf_move_bay_2.png",
+    "5": "/keeper-review/kitchen-kettle-recipe-shelf-v11/assets/kettle_recipe_shelf_move_bay_5.png",
+    "8": "/keeper-review/kitchen-kettle-recipe-shelf-v11/assets/kettle_recipe_shelf_move_bay_8.png"
+  },
+  "rows": [
+    {
+      "name": "recipe shelf",
+      "measure": "19.0 \u00d7 6.75 lp opaque bound",
+      "role": "kettle-owned decorative wall child",
+      "sha256": "5dd9f73e0bd491e22db5844a91007d5a91d6d05bd431695ec3f3982b48143b1d"
+    },
+    {
+      "name": "V11 room",
+      "measure": "193 \u00d7 56 lp",
+      "role": "V10 plus shelf at kettle bay 3",
+      "sha256": "feaa3c5fd61e4c089cb8f3503d1f5b4f3cf8079c1dc1b050a63b463dae8b199d"
+    }
+  ]
+}

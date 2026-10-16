@@ -1,0 +1,76 @@
+{
+  "version": 11,
+  "status": "reversible-draft",
+  "scope": "kettle-recipe-book-shelf-only",
+  "runtimeChanged": false,
+  "finalChanged": false,
+  "keeperChanged": false,
+  "v10Overwritten": false,
+  "protectedSnapshots": {
+    "kitchenV10": "cc9de0625640f574c3edc9e92dd7c3a8b1b1d8a729f07d423421ecda03130364",
+    "runtimeSpriteManifest": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
+    "animationWorkbenchFinalState": "6c349a70f591cba21016cf9a7a49424b971d8aed895504ba775ebd158017c658"
+  },
+  "outputs": [
+    {
+      "path": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/kettle_recipe_shelf_move_bay_2.json",
+      "sha256": "8fb6336bc875e64710b9b2eb975aa9504cdc0de71d28f323da3c0cb670b9e7d1"
+    },
+    {
+      "path": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/kettle_recipe_shelf_move_bay_2.png",
+      "sha256": "fcce67aba7c952220983cc46aae8d99c40588e9827f1ea725dec1f463e0da642"
+    },
+    {
+      "path": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/kettle_recipe_shelf_move_bay_5.json",
+      "sha256": "501b15c4519c13fd1751b840ecf531417acef90827b434f64f18f9a60dd6d3a2"
+    },
+    {
+      "path": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/kettle_recipe_shelf_move_bay_5.png",
+      "sha256": "3612be699f8beae3c772553846c1cf005dea4d2cf4212b68a258e0fe591caea9"
+    },
+    {
+      "path": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/kettle_recipe_shelf_move_bay_8.json",
+      "sha256": "bad56461e2f825c049d18bc3d74808929e6a66b115cd990583218c7f27ec985b"
+    },
+    {
+      "path": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/kettle_recipe_shelf_move_bay_8.png",
+      "sha256": "c8e55b839b075ed88050774dea81df9f2c978b540a2f895249b655d1f0f95752"
+    },
+    {
+      "path": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/obj_kettle_recipe_shelf_v11_f1.json",
+      "sha256": "8ca310f3f254f072114c515613b85fcc47bed73e6593240d1cdf2cbb6ae7b02b"
+    },
+    {
+      "path": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/obj_kettle_recipe_shelf_v11_f1.png",
+      "sha256": "5dd9f73e0bd491e22db5844a91007d5a91d6d05bd431695ec3f3982b48143b1d"
+    },
+    {
+      "path": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/room_kitchen_9bay_v10_reference.json",
+      "sha256": "6cf68b4fe27700dd34cf1a20be2e71846fc61aab7bb46b0c35615fdccd9f26a9"
+    },
+    {
+      "path": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/room_kitchen_9bay_v10_reference.png",
+      "sha256": "ba4cde7d194dd8acdb0ec4140e7e49e7349deae2c9eddacc4976b291f3b48aeb"
+    },
+    {
+      "path": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/room_kitchen_9bay_v11_recipe_shelf.json",
+      "sha256": "bf2219a3c13bdafb7c2e631db22cb0b7c9ff26bc30aad8ed7d2e657e6271968f"
+    },
+    {
+      "path": "art/raw/kitchen-kettle-recipe-shelf-2026-10-17-v11/room_kitchen_9bay_v11_recipe_shelf.png",
+      "sha256": "feaa3c5fd61e4c089cb8f3503d1f5b4f3cf8079c1dc1b050a63b463dae8b199d"
+    },
+    {
+      "path": "art/drafts/kitchen-kettle-recipe-shelf-2026-10-17-v11/asset-catalogue.json",
+      "sha256": "f212cad73c031a46abd622cbd121ad03e5090953dc90b528f9f150c25639418e"
+    },
+    {
+      "path": "art/drafts/kitchen-kettle-recipe-shelf-2026-10-17-v11/review-data.json",
+      "sha256": "456d7782eee2488f7b7dbb72304a7b9737e68c492f9e60fe4f91f8f53891ea78"
+    },
+    {
+      "path": "public/keeper-review/kitchen-kettle-recipe-shelf-v11/index.html",
+      "sha256": "200e1ddc4119e9b28ca03d4e9d361796ced80c5b7a28d57f1aa46f8b0054a183"
+    }
+  ]
+}
