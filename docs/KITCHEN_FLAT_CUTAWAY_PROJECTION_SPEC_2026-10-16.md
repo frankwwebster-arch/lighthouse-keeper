@@ -2,11 +2,9 @@
 
 **Date:** 16 October 2026
 
-**Status:** superseded historical authority. It explains the numeric contract
-used for Kitchen V5, but Frank's visual review found that its top-surface and
-5-lp floor allowances still produced too much perspective. New work must use
-`KITCHEN_FLAT_ELEVATION_PROJECTION_SPEC_V2_2026-10-16.md`. It does not approve
-or promote any existing kitchen art.
+**Status:** Frank-directed authoring specification for the next versioned
+kitchen-basic-assets draft. It does not approve or promote any existing kitchen
+art.
 
 **Applies to:** the kitchen room shell, tier-1 kitchen furniture, their review
 composites and the later reusable room/asset authoring system.

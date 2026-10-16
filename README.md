@@ -27,19 +27,17 @@ comparison toggle proves that the current root schedule stops 1 lp short from
 the same origin. The proxy is not oven artwork and nothing is promoted.
 `/keeper-review/keeper-object-approach-oven-v7/` and its calculated 4% room /
 1% furnishing convergence remain historical evidence, not the current kitchen
-projection authority. Live review showed that the first numeric
-`flat-cutaway-v1` limits still produced too much apparent perspective, so V5
-is retained as rejected visual provenance. The active
-[`flat-elevation-v2`](docs/KITCHEN_FLAT_ELEVATION_PROJECTION_SPEC_V2_2026-10-16.md)
-contract keeps the straight-on camera, rectangular functional fronts,
-constant Keeper/object scale and no runtime depth scaling, while removing
-ordinary furniture top planes and reducing the floor cue to 2 lp. Only the
-sink and cooker may retain a 0.5-lp functional micro-reveal. The current
-unapproved draft is `/keeper-review/kitchen-basic-assets-v6/`; it preserves
-V5's dimensions, contacts, interaction spots and cupboard lifecycle, and adds
-V5/V6 comparison plus exact logical game-scale evidence. Its hand-back is
-[`docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V6_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V6_2026-10-16.md).
-No V5 or V6 asset is approved, promoted or wired into the live game.
+projection authority. The active
+[`flat-cutaway-v1`](docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md)
+contract uses a straight-on camera, rectangular functional fronts, constant
+Keeper/object scale, no runtime depth scaling, an exact 5-lp horizontal floor
+band and the real 19-lp cooker/hob datum. The current unapproved kitchen draft
+is `/keeper-review/kitchen-basic-assets-v5/`. It shows the flat modular 6–12-bay
+shell, all tier-1 object states, the 193-lp starting kitchen, the 256-lp
+reservation outline, rear-facing table seating and the right-side-wall
+cupboard lifecycle. Its measured hand-back is
+[`docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V5_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V5_2026-10-16.md).
+No V5 asset is approved, promoted or wired into the live game.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:
