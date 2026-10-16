@@ -2,6 +2,19 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Frank: rejected Kitchen V6 and replacement brief (16 Oct 2026)
+
+The first `flat-elevation-v2` Kitchen V6 was rejected and removed in full. It
+flattened away too much of the countertop volume, lowered the illustration and
+animation quality, and made the counter treatments inconsistent. Do not
+recover or reuse it. Kitchen V5 is again the sole visual/geometric baseline and
+remains an unapproved draft. The next kitchen-art task must begin with the
+calibration gate and complete instructions in
+`docs/PROMPT_KITCHEN_V5_TO_NEW_V6_2026-10-16.md`: preserve V5's readable
+countertops and polish, correct vertical side geometry, select one common
+shallow countertop construction, and keep base-unit pixels unchanged beneath
+animation effects.
+
 ## Frank: flat-cutaway projection authority (16 Oct 2026)
 
 For the current kitchen-basic-assets review and every later version, read
