@@ -1,0 +1,467 @@
+{
+  "version": 6,
+  "status": "reversible-draft",
+  "supersedesForReviewOnly": "kitchen-basic-assets-v5",
+  "projection": {
+    "id": "flat-elevation-v2",
+    "runtimeDepthScaling": false,
+    "frontFace": "true-rectangle",
+    "floorBandLp": 2,
+    "rearEdgeScale": 1,
+    "rearWallTopRevealLp": 0,
+    "functionalMicroRevealMaxLp": 0.5,
+    "tableTopRevealLp": 0,
+    "frontFloorFascia": false
+  },
+  "geometryChanges": {
+    "oneBayArtWidthLp": 20,
+    "safetyGutterLpEachSide": 0.5,
+    "worktopHobTableLp": 19,
+    "chairSeatLp": 11,
+    "confirmedRearSeatContactLp": 10.67,
+    "tableLayering": "player-side chair behind Keeper; table/apron foreground",
+    "cupboardView": "right-side wall; closed leaf edge-on",
+    "cupboardLeafRealSizeLp": [
+      34,
+      52
+    ],
+    "cupboardProjectedWidthsLp": [
+      1,
+      8,
+      22,
+      34
+    ],
+    "cupboardHinge": "fixed right; opens left",
+    "doorRemainsOpenDuringActivity": true,
+    "doorClosesAfterStandardWalkExitClear": true,
+    "broomTurnClipRequired": false,
+    "genericSeatedBackArmClipAvailable": false,
+    "retainedFromV5": [
+      "dimensions",
+      "anchors",
+      "interaction spots",
+      "animation evidence",
+      "cupboard lifecycle"
+    ],
+    "changedFromV5": [
+      "planar top treatment",
+      "floor band"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "art/source/kitchen-basic-assets-2026-10-16-v5/generated/flat_cupboard_leaf_source.png",
+      "sha256": "c4a63659d3c6286d97d03c82026e1799c328a563790275c82d1f6afa3e95073a"
+    },
+    {
+      "path": "art/source/kitchen-basic-assets-2026-10-16-v5/generated/flat_kitchen_run_sheet.png",
+      "sha256": "2a1fe222213383412da2f31f744a05aa6bb34ac5c0133db401a1c5f2b57c07b8"
+    },
+    {
+      "path": "art/source/kitchen-basic-assets-2026-10-16-v5/generated/flat_mixer_unit_source.png",
+      "sha256": "d89bb701489ba58ea2dc3f87420ca49284c8c0154cced07aa2051ebf4ec1deb6"
+    },
+    {
+      "path": "art/source/kitchen-basic-assets-2026-10-16-v5/generated/flat_room_shell_source.png",
+      "sha256": "369543f566b96338ba164b707c6e6fd0419747afb002f602ff7fb6f830c94efc"
+    },
+    {
+      "path": "art/source/kitchen-basic-assets-2026-10-16-v5/generated/flat_table_chair_bin_bowl_sheet.png",
+      "sha256": "ff67391b76cc79d3e2113ae6572f9934fab4339c641c85a0de83e1b0630e6c80"
+    },
+    {
+      "path": "art/source/kitchen-basic-assets-2026-10-16-v5/reference/approved_flat_room_mockup.png",
+      "sha256": "d66b46c42c58f849d2ee28184230c9f53ac31a70cb1c2ed9df80ba8517f3bf2d"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_bin_full_f1.json",
+      "sha256": "9f4a2238c272ceedf0ad7ca117575540b52660fe2631b876fe702c13cf6484a7"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_bin_full_f1.png",
+      "sha256": "c2f78e979fc4afeb8bbcbd52de2c32782a52bd4421e8c42e34d93e85534e2d6b"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_bin_overflowing_f1.json",
+      "sha256": "9f4a2238c272ceedf0ad7ca117575540b52660fe2631b876fe702c13cf6484a7"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_bin_overflowing_f1.png",
+      "sha256": "ce1cdc374898352abaf2c5121bc1bf796509c17870cb3eb85ecde2bc6a591d29"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_bin_standard_f1.json",
+      "sha256": "9f4a2238c272ceedf0ad7ca117575540b52660fe2631b876fe702c13cf6484a7"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_bin_standard_f1.png",
+      "sha256": "fcfbc2f9044394e9ecc0a3e587db74f9e2969d44acecfd8c47e9e158efd132c3"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_cooker_broken_f4.json",
+      "sha256": "0b8be52f1eb44d06bc32a428bd3e3367d15038021b7cbc7e648e3ee31ffa9980"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_cooker_broken_f4.png",
+      "sha256": "a13113bb1e25df50ecb0e0117f711a4687bde027ae379f649456ade8d789ce6f"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_cooker_on_f4.json",
+      "sha256": "0b8be52f1eb44d06bc32a428bd3e3367d15038021b7cbc7e648e3ee31ffa9980"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_cooker_on_f4.png",
+      "sha256": "b01a06381f12ca5f9262352410c1d7123b49f3269cd26b579eb254fe88ca387b"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_cooker_standard_f1.json",
+      "sha256": "dd8f74c92090c3dfe5c713f10a41d3b7b4009d3d1f1725681bb1d90b26ed108a"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_cooker_standard_f1.png",
+      "sha256": "83b3a7877ae61a9fea14b741316aee01b5968245b453b9fc559b66fdb64f9bdc"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_cupboard_on_f4.json",
+      "sha256": "0520c83297a4d86f3ab81b1867b7efe6afc74d12d3244019374b3cbfaaa4c06c"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_cupboard_on_f4.png",
+      "sha256": "0e75a1a78713140490c489f4da10e9b35c8d36509a39fe9b28b7d26ce61fba01"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_cupboard_open_f1.json",
+      "sha256": "6549293780eba712524e10cb398988754e60369207446b304c066cdab5aab7e0"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_cupboard_open_f1.png",
+      "sha256": "fd543a6486b61b5406c60fec4085be842557f9256cfb7523ad2b1e897ab3b633"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_cupboard_standard_f1.json",
+      "sha256": "2df1937c78f50c82f61799c2293a032a7165a28c25812097c507276c5a273222"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_cupboard_standard_f1.png",
+      "sha256": "4d95eab62491defb4660093a84c957ea448202fdca624c0e7bc4c756509ce0b7"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_fridge_broken_f4.json",
+      "sha256": "d00196f7cc7c803821172d2297b0cca4a06e311423b45cfa6a22718d2c20d557"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_fridge_broken_f4.png",
+      "sha256": "c0936a10da87923c1a998a3b130241f3efdc9c375bbad1d9c624c6242115891b"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_fridge_on_f4.json",
+      "sha256": "d00196f7cc7c803821172d2297b0cca4a06e311423b45cfa6a22718d2c20d557"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_fridge_on_f4.png",
+      "sha256": "eb49ce2e202c6d6ecd7c0c49e9555761d794ebb7d29bd1ef447d03c23507e153"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_fridge_standard_f1.json",
+      "sha256": "7c749f4d987a98172b043d1618cf814a1d7a2b98b05401c4e10699aa736ba56e"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_fridge_standard_f1.png",
+      "sha256": "7f61d6a365d08005a6f0962a5b538a550d27525ed1ea87dd4f4abe525b6a212f"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_kettle_broken_f4.json",
+      "sha256": "8ad587ed314045a145d3250d830be883eaf6e84f293f77b21bcdfad5252e5d67"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_kettle_broken_f4.png",
+      "sha256": "431287d112217466375b974192720f7ac1e9e2021af2b1b1747bfec678952b21"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_kettle_on_f4.json",
+      "sha256": "8ad587ed314045a145d3250d830be883eaf6e84f293f77b21bcdfad5252e5d67"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_kettle_on_f4.png",
+      "sha256": "1a49a192e9b854ffc2a5dec0a21350a88c45bb0f2bcb73fcd3de6911c4805a9f"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_kettle_standard_f1.json",
+      "sha256": "4ba9311962ad49213e3cc26430c020922492e6a0f99e350eb962c77150494219"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_kettle_standard_f1.png",
+      "sha256": "a4a95f228cc3139751e375375a314834db2b4a6f803483eecb8c15368c25ee45"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_mixer_broken_f4.json",
+      "sha256": "70351237531c1f7a24461fb09ee569788447d218e5341b66d471a736ab6c3d1a"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_mixer_broken_f4.png",
+      "sha256": "51add45934fe2d0b75dd8449bec416ecc9a19b811c5affcb2b539984ff95cfcf"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_mixer_on_f4.json",
+      "sha256": "70351237531c1f7a24461fb09ee569788447d218e5341b66d471a736ab6c3d1a"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_mixer_on_f4.png",
+      "sha256": "cd0c71246a44a94d153dc4713aaa80e981a297a29e6127027c32c7503f76dfa1"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_mixer_standard_f1.json",
+      "sha256": "a9feac0235ee54dab7a38de2fba620189a7bf47d8a23b9e63f72f96f71bc4c61"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_mixer_standard_f1.png",
+      "sha256": "6d90541bab2ed57a101c8627ffac944db3e065e1a0276cc3eb7ccb6eaa7b05a4"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_petbowl_broken_f4.json",
+      "sha256": "7a8bde3232610f5047217cb46cf58a6c099ff38c7e5a5f472108862c9d28d996"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_petbowl_broken_f4.png",
+      "sha256": "c808731777e13a6f85b462c06f97c8a0cf6db419e12c4d9b0a8689b6cafe190a"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_petbowl_full_f1.json",
+      "sha256": "63e2b849110ed2661648dd0a76241c316e9878d8809cbc07e814a4a7ebbff85f"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_petbowl_full_f1.png",
+      "sha256": "a3040cf076dff88e8b7146bd02f497f585b0cb5c86fb1383b55eced45aec7943"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_petbowl_standard_f1.json",
+      "sha256": "63e2b849110ed2661648dd0a76241c316e9878d8809cbc07e814a4a7ebbff85f"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_petbowl_standard_f1.png",
+      "sha256": "6feafe7e0450eede855726eaacb3e227c013c5ac58e165e175c78683e56b5b2b"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_sink_broken_f4.json",
+      "sha256": "63f445197b4e09d5f8d4ed6d327e9844ad5952fa163cc138e727df5e2fec1ed5"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_sink_broken_f4.png",
+      "sha256": "79470d6618a45babb0f7e20e4ebe67a57e94397f0d6c1d830207c64488fdd9a5"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_sink_dishes1_f1.json",
+      "sha256": "e70d92d3b2e6623df80c53357441d16ffe96537cf965a19d08d874e0a34aa2d6"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_sink_dishes1_f1.png",
+      "sha256": "313a23145db099cd3b3f02c98fcec20791eec6be6790a2f7f7622d37dac363dd"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_sink_dishes2_f1.json",
+      "sha256": "e70d92d3b2e6623df80c53357441d16ffe96537cf965a19d08d874e0a34aa2d6"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_sink_dishes2_f1.png",
+      "sha256": "0aa4dd337a881acda94b3b1103e2b3914f13367eb0dd662e3cdccbfb4790dc89"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_sink_dishes3_f1.json",
+      "sha256": "e70d92d3b2e6623df80c53357441d16ffe96537cf965a19d08d874e0a34aa2d6"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_sink_dishes3_f1.png",
+      "sha256": "1b7b3798cb80f6342f66c47feabeb0066101c35df07345a9b4e3d0106103dd24"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_sink_on_f4.json",
+      "sha256": "63f445197b4e09d5f8d4ed6d327e9844ad5952fa163cc138e727df5e2fec1ed5"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_sink_on_f4.png",
+      "sha256": "2ba8504baf0f05c95cdb1a05d22c2decde6098dcdda1938b62466192cf8a701b"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_sink_standard_f1.json",
+      "sha256": "c1ce08a1fd61da733112f85933d770ab2ae57ddda2becb74b584c66bd5240a6c"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_sink_standard_f1.png",
+      "sha256": "3bd12e4e84420dc16ab79c7bb69b172aa27d13d9165c584e977f6e1e3c68cf18"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_table_chair_back_f1.json",
+      "sha256": "136bacfc293777247a6be18c7a6bcbe590d9b2728cb601ffbf30c129e0fd57bc"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_table_chair_back_f1.png",
+      "sha256": "d82f2b61ba16a814c737d999fb6c407cf32f7972efd1f9803b86f5ec9425c269"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_table_foreground_f1.json",
+      "sha256": "e4dc557fe65f694dc67fe93c9d1f8676a462cb16873da651f893c5a372a09ca8"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_table_foreground_f1.png",
+      "sha256": "e56d5da523b03bc7d75ee5cc14a47c907ec2ef16e970deb01409042935538f34"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_table_standard_f1.json",
+      "sha256": "63897f9d37752a8ea9cb978b165a28bfad452b131f6cba1881bd65c2efb44343"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_table_standard_f1.png",
+      "sha256": "808187a1fe2acc701ab0ee3d48d101963c827694b6fcfba8b7f54746df342edc"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_toaster_broken_f4.json",
+      "sha256": "b0d1b7cb62cad224fe3b398429173db0dbd2c27c233cec88436185f466fe1b34"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_toaster_broken_f4.png",
+      "sha256": "8f2bc5982605ed0876b4c99d7f42bd795dbcae37b24ebd85e778957ab48ee1f5"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_toaster_on_f4.json",
+      "sha256": "b0d1b7cb62cad224fe3b398429173db0dbd2c27c233cec88436185f466fe1b34"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_toaster_on_f4.png",
+      "sha256": "c93f1c098b9ad528dbb13eef0b94e9129bfb6ff1b9dc40444b9b32bab81b59b3"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_toaster_standard_f1.json",
+      "sha256": "74847a1843e8a7b42d90e679eabc4df4decab6ad19adcb0af7ba557ec473c126"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/obj_toaster_standard_f1.png",
+      "sha256": "27deceda52328f54cfca231f7805e70816435cf80ed0acea4c2c5049784cbf39"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_12bay_outline.png",
+      "sha256": "86068873b63b4c232309ad1b651193de4538fd24d60991c198749c210ae627ac"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_9bay_composite.png",
+      "sha256": "0cf36e7e0e509cda4a90a0d5964f9bd3cd7845aa294111f2630605f54bb6d0b3"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_far_cap_closed.json",
+      "sha256": "8ee53ec6d0e8928689da1df0b279ee12bf357faf643030b9f918922b1dee1a72"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_far_cap_closed.png",
+      "sha256": "d6aa0738994483675e6e2840ddbd006686d1072130330aa895e2a6abae108629"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_far_cap_open.json",
+      "sha256": "8ba10526a7a4136877aff567ca5afbb531edb2249d346789edef993a4922ff1e"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_far_cap_open.png",
+      "sha256": "9b5ff8d424a765e3bfd73ecb4ae60a8749ac8867de793312921af3a99cbc70fd"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_repeat_a.json",
+      "sha256": "b142821bf8fc83f24146550a7e9e52f51bfc4a714762cc9242826cec503fb425"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_repeat_a.png",
+      "sha256": "b4a3ad378aa180831ddd3dc82392bc9bce611881b7d81a108d52c7210622fe36"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_repeat_b.json",
+      "sha256": "b142821bf8fc83f24146550a7e9e52f51bfc4a714762cc9242826cec503fb425"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_repeat_b.png",
+      "sha256": "898cb5373d6d7aa5f4356a534afac0715af612071294a8b468c2aca0f821f43b"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_repeat_c.json",
+      "sha256": "b142821bf8fc83f24146550a7e9e52f51bfc4a714762cc9242826cec503fb425"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_repeat_c.png",
+      "sha256": "7b43e3bed4275c37b86524e6a768451c12bb5eaf8203618d924164018bfd9b85"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_shell_10bay.json",
+      "sha256": "00236a98b7fa2b8c0319cd723118d84a71b8fff84cb0884b11d54cd2b1d7fcac"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_shell_10bay.png",
+      "sha256": "735a204383c732cbfd3cb469d1fd03c7adb63e8bd2f1db3190fb1c824f7e40c5"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_shell_11bay.json",
+      "sha256": "2ad6db3d6cf2374108e848b8184c814292d466a7eaf1117383b640a54fd5d77e"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_shell_11bay.png",
+      "sha256": "4c32c4e93f5d60cb01bb5f0b248a390880a3a56c227dc9641501c111acd8851c"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_shell_12bay.json",
+      "sha256": "d6c28ee6a66b9081428a054cf2cf2d6c3e44e03d2c260835e688229f76cab514"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_shell_12bay.png",
+      "sha256": "312d64f7f6fe38eb95e861434afd5f8b4945e4f4f9bfae8e7281e43d8ab64600"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_shell_6bay.json",
+      "sha256": "f641d4d98c13d9c26115f80930e9c470ab99d6608bb40d21ce1ec305454f9bdb"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_shell_6bay.png",
+      "sha256": "cd98b6d3dedad3ab888987e119eb31dcbc35d0d483c6a1cf33d05071218a025c"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_shell_7bay.json",
+      "sha256": "77bdb623f2cbef02a3fca11f76056341be62a89525e0d31b3710a91c814053cf"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_shell_7bay.png",
+      "sha256": "a08f001687241aad94e4cddb732d9ea629711e260776c20a7c062b9bd421d39a"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_shell_8bay.json",
+      "sha256": "76077507fd0606109b64925de16fa277142d1ae1babd1b99a23dd02346a54f06"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_shell_8bay.png",
+      "sha256": "e88fde4f7cd3222aad1805b23baa93622d1d76ad90f7c53889e814bbfefbd63d"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_shell_9bay.json",
+      "sha256": "1d3b4d9da6c70f5f3d1c51397ed1ecd60fed9289220f61b1d0008e8b2d10fa21"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_shell_9bay.png",
+      "sha256": "6a8a4a93f513c8a572320f56a9484d2c1e346db2a8622874cdc904a4a2dd52f3"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_stair_cap.json",
+      "sha256": "00a58599120df485d3cf3328688950759052f2e4d70dc8dabc71e690187471ae"
+    },
+    {
+      "path": "art/raw/kitchen-basic-assets-2026-10-16-v6/room_kitchen_stair_cap.png",
+      "sha256": "ea21c2a70115643e32a8d026575cfe89c093f0d0f3d2610f93178133b4e621f4"
+    },
+    {
+      "path": "art/drafts/kitchen-basic-assets-2026-10-16-v6/asset-catalogue.json",
+      "sha256": "29b6e4254a77628d21345c1651262b5171ab3435b028af57a8ef901dcee9c760"
+    },
+    {
+      "path": "art/drafts/kitchen-basic-assets-2026-10-16-v6/review-data.json",
+      "sha256": "5d7818202c200b906348b8cb43d333fdf1a3773f0af37d3d198daf24360d291c"
+    },
+    {
+      "path": "public/keeper-review/kitchen-basic-assets-v6/index.html",
+      "sha256": "bcd40b6edfb864244b0a0e2f525178a63bbf71d2f92c709b6fa2de397e9d6c83"
+    }
+  ]
+}

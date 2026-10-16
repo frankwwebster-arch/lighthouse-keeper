@@ -2,18 +2,19 @@
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
-## Frank: flat-cutaway projection authority (16 Oct 2026)
+## Frank: flat-elevation projection authority (16 Oct 2026)
 
 For the current kitchen-basic-assets review and every later version, read
-`docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md`. It supersedes the
-earlier calculated 4% room / 1% furnishing convergence proposal for kitchen
-and standard-room asset authoring. Keep the camera straight on, asset and
-Keeper scale constant, geometry parallel, the visible floor cue at 5 lp, and
-top surfaces shallow. Kitchen V1–V4 and Oven Approach V7 remain historical
-review evidence; V5 is the current unapproved draft. Promote nothing without
-Frank's explicit approval.
+`docs/KITCHEN_FLAT_ELEVATION_PROJECTION_SPEC_V2_2026-10-16.md`. V5 proved that
+the earlier 0–2-lp allowance in `flat-cutaway-v1` still read as too much
+perspective once outline, bevel and highlight were combined. Use zero visible
+top plane on ordinary rear-wall units and the table, at most 0.5 lp on the
+sink/cooker, and one 2-lp floor band with no front fascia. Keep the camera
+straight on, asset and Keeper scale constant and geometry parallel. Kitchen
+V1–V5 and Oven Approach V7 remain historical review evidence; V6 is the
+current unapproved draft. Promote nothing without Frank's explicit approval.
 
-## Kitchen basic assets V5 review (16 Oct 2026)
+## Kitchen basic assets V6 review (16 Oct 2026)
 
 Frank asked Codex to draft the tier-1 kitchen furniture as the test case for
 snapping, moving and growing furniture. Exact scope, sizes and states are in
@@ -27,12 +28,13 @@ The kettle, toaster and mixer each sit on their own one-bay counter unit.
 The cleaning cupboard is always last, takes no bay and is reached through the
 right side wall. Its closed leaf is edge-on; its right-hinged open leaf extends
 left as a rectangular foreground occluder. The table must not block the walk
-to it. V5 is the current review-only draft at
-`/keeper-review/kitchen-basic-assets-v5/`; its measured hand-back is
-`docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V5_2026-10-16.md`. It confirms that
-the existing oven clips read with the 19-lp body/door and that the 34×52-lp
-open cupboard leaf hides the Keeper and tool swaps. Nothing is approved,
-promoted or wired.
+to it. V5 retained too much visible perspective and is rejected provenance.
+V6 is the current review-only correction at
+`/keeper-review/kitchen-basic-assets-v6/`; its measured hand-back is
+`docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V6_2026-10-16.md`. It retains V5's
+accepted measurements and functional evidence but removes ordinary furniture
+top planes, limits sink/cooker cues to 0.5 lp and reduces the floor to 2 lp.
+Nothing is approved, promoted or wired.
 
 ## Codex movement-foundation response (14 Oct 2026)
 
