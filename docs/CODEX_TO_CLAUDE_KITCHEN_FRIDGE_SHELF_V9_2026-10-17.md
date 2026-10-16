@@ -63,3 +63,13 @@ changed.
   hand-back agree on the unchanged 21-lp fridge cell, 52-lp foot line,
   counterless dimensional white-enamel construction, exact 19 × 17-lp shelf
   bound and fridge-child translation rule. No runtime or approval claim changed.
+- Review content commit: `32f89ca`.
+- Production deployment trigger: `2eb3790` (`[deploy]`), reported successful by
+  Vercel.
+- Live review:
+  `https://lighthouse-keeper-mu.vercel.app/keeper-review/kitchen-fridge-shelf-v9/`.
+- Live browser verification: all 34 unique image URLs (37 archived references
+  after content-addressed deduplication) loaded and decoded before controls
+  enabled; the broken-fridge control advanced from frame 1 to frame 2; changing
+  the fridge bay to 8 loaded the bay-8 parent/child movement proof; the complete
+  page was visually inspected at production size.
