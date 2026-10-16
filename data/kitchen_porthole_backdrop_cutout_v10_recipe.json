@@ -1,0 +1,59 @@
+{
+  "id": "kitchen-porthole-backdrop-cutout-v10",
+  "status": "review-draft-authority",
+  "date": "2026-10-17",
+  "visualBaseline": "Frank-approved attached kitchen family reference of 17 October 2026; Kitchen V9 is rejected provenance only",
+  "density": 4,
+  "bayWidthLp": 21,
+  "roomHeightLp": 56,
+  "projection": {
+    "id": "flat-cutaway-v1",
+    "camera": "straight-on",
+    "vanishingPoint": null,
+    "horizontalConvergenceLp": 0,
+    "verticalConvergenceLp": 0,
+    "runtimeDepthScaling": false
+  },
+  "porthole": {
+    "id": "obj_sink_porthole_v10",
+    "parentAsset": "obj_sink",
+    "cellLp": [21, 56],
+    "bayOccupancy": 1,
+    "centreLpFromCellTop": [10.5, 14.5],
+    "outerFrameDiameterLp": 19,
+    "roomWallKnockoutDiameterLp": 14,
+    "horizontalSafetyGutterLpEachSide": 1,
+    "frameLayerZ": 26,
+    "sinkLayerZ": 40,
+    "apertureAlpha": 0,
+    "glazingPixelsInsideAperture": false,
+    "illustratedConditionUnderlays": [],
+    "movesWithParent": true,
+    "translationRule": "wallKnockoutDeltaLp == frameDeltaLp == sinkDeltaLp",
+    "runtimeWiring": false
+  },
+  "requiredRuntimeStack": [
+    "global lighthouse backdrop: sky, sea, weather and time layers",
+    "room shell with the sink-owned circular alpha knockout applied",
+    "sink-owned brass porthole frame with an entirely alpha-clear aperture",
+    "sink unit"
+  ],
+  "movementProofBays": [2, 5, 8],
+  "preservationRules": [
+    "Kitchen V9 is not reused as visual authority; its fridge, shelf and wing-only countertop correction are rejected.",
+    "The approved attached reference governs the white fridge, compact bin, sink and complete family appearance.",
+    "Every compatible unit state receives one complete uninterrupted Option-B slab rather than retaining the old centre between repaired wings.",
+    "The V7 base room shell remains immutable; V10 writes new derived review shells with a movable knockout.",
+    "No sea, sky, weather, horizon, rain, sunset, night or lighthouse illustration is authored in the kitchen asset set.",
+    "The porthole never owns or duplicates backdrop condition state.",
+    "Keeper art, runtime sprites, Final art, registers and live manifests remain unchanged."
+  ],
+  "acceptanceRules": [
+    "Every pixel inside the declared 14-lp circular room-wall aperture has alpha zero.",
+    "Every pixel inside the frame aperture has alpha zero; no glazing highlight crosses the opening.",
+    "The room composite remains alpha zero through the aperture after the frame and sink are composed.",
+    "No V8 illustrated condition-underlay file is copied into V10 outputs or referenced by the V10 review page.",
+    "Moving the sink to bays 2, 5 or 8 moves the wall knockout and frame by the identical whole-bay delta.",
+    "The final four logical pixels of foreground floor remain identical to the V7 shell."
+  ]
+}

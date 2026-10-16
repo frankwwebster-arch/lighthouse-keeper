@@ -1,0 +1,320 @@
+{
+  "version": 1,
+  "set": "kitchen-porthole-backdrop-cutout-v10",
+  "page": {
+    "path": "public/keeper-review/kitchen-porthole-backdrop-cutout-v10/index.html",
+    "sha256": "a7fbd4f85f36583cda31d0ffe87b5a6dc8daf13700d1d9c9f729a2f5c87da160",
+    "bytes": 9127
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/kettle_broken_frame1.png": {
+      "sha256": "103e62f5e422e1619fe13e57cda8c3c2bdfa3098c0fd86b59fa3a32cf7f425ed",
+      "extension": ".png",
+      "bytes": 10687,
+      "object": "review-archive/objects/10/103e62f5e422e1619fe13e57cda8c3c2bdfa3098c0fd86b59fa3a32cf7f425ed.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/10/103e62f5e422e1619fe13e57cda8c3c2bdfa3098c0fd86b59fa3a32cf7f425ed.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/kettle_broken_frame2.png": {
+      "sha256": "29080ac71231407edf6f03e734dba59645672805e650a73ca9ce16801b8444db",
+      "extension": ".png",
+      "bytes": 10732,
+      "object": "review-archive/objects/29/29080ac71231407edf6f03e734dba59645672805e650a73ca9ce16801b8444db.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/29/29080ac71231407edf6f03e734dba59645672805e650a73ca9ce16801b8444db.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/kettle_broken_frame3.png": {
+      "sha256": "4b0af55ef7b17c1d0050c384f1f071f72a574a48f920701de5bb0e8b3c839bc3",
+      "extension": ".png",
+      "bytes": 10770,
+      "object": "review-archive/objects/4b/4b0af55ef7b17c1d0050c384f1f071f72a574a48f920701de5bb0e8b3c839bc3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4b/4b0af55ef7b17c1d0050c384f1f071f72a574a48f920701de5bb0e8b3c839bc3.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/kettle_broken_frame4.png": {
+      "sha256": "24aeec7321d4f5361c9b6cea7ab8bee53a86caf131446d8839244a618c3d1296",
+      "extension": ".png",
+      "bytes": 10608,
+      "object": "review-archive/objects/24/24aeec7321d4f5361c9b6cea7ab8bee53a86caf131446d8839244a618c3d1296.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/24/24aeec7321d4f5361c9b6cea7ab8bee53a86caf131446d8839244a618c3d1296.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/kettle_on_frame1.png": {
+      "sha256": "83b9c4c0ff156d10ce1ada8ee69d06ae698899a03f685364f6a82899828ae621",
+      "extension": ".png",
+      "bytes": 10997,
+      "object": "review-archive/objects/83/83b9c4c0ff156d10ce1ada8ee69d06ae698899a03f685364f6a82899828ae621.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/83/83b9c4c0ff156d10ce1ada8ee69d06ae698899a03f685364f6a82899828ae621.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/kettle_on_frame2.png": {
+      "sha256": "c67063842580eddd5d2e9b254a1cf386189b2dd24a4124bd0686d5182f0ab6d4",
+      "extension": ".png",
+      "bytes": 10980,
+      "object": "review-archive/objects/c6/c67063842580eddd5d2e9b254a1cf386189b2dd24a4124bd0686d5182f0ab6d4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c6/c67063842580eddd5d2e9b254a1cf386189b2dd24a4124bd0686d5182f0ab6d4.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/kettle_on_frame3.png": {
+      "sha256": "40e4b75e8a19f5b24177428fa79f4d77cc0438f21088912ee535cbf8b0de318d",
+      "extension": ".png",
+      "bytes": 11066,
+      "object": "review-archive/objects/40/40e4b75e8a19f5b24177428fa79f4d77cc0438f21088912ee535cbf8b0de318d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/40/40e4b75e8a19f5b24177428fa79f4d77cc0438f21088912ee535cbf8b0de318d.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/kettle_on_frame4.png": {
+      "sha256": "b246f14beb1e03b62612f38579be7e49038a6759ff9434cc006d10ca7d73dac1",
+      "extension": ".png",
+      "bytes": 11017,
+      "object": "review-archive/objects/b2/b246f14beb1e03b62612f38579be7e49038a6759ff9434cc006d10ca7d73dac1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b2/b246f14beb1e03b62612f38579be7e49038a6759ff9434cc006d10ca7d73dac1.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/kettle_standard_frame1.png": {
+      "sha256": "73a043d31d7127fe269a70c78d3ac33d904cc025d4ea3b6319319ec365b99880",
+      "extension": ".png",
+      "bytes": 11573,
+      "object": "review-archive/objects/73/73a043d31d7127fe269a70c78d3ac33d904cc025d4ea3b6319319ec365b99880.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/73/73a043d31d7127fe269a70c78d3ac33d904cc025d4ea3b6319319ec365b99880.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/mixer_broken_frame1.png": {
+      "sha256": "f5cf0741def73fda281426199e530423177a70d900954b2f8d247ead44ad962f",
+      "extension": ".png",
+      "bytes": 10122,
+      "object": "review-archive/objects/f5/f5cf0741def73fda281426199e530423177a70d900954b2f8d247ead44ad962f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f5/f5cf0741def73fda281426199e530423177a70d900954b2f8d247ead44ad962f.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/mixer_broken_frame2.png": {
+      "sha256": "00282667ef316444ae10fc15019d00ee139690cc18a4211cf3c2bc7e46471a5e",
+      "extension": ".png",
+      "bytes": 10067,
+      "object": "review-archive/objects/00/00282667ef316444ae10fc15019d00ee139690cc18a4211cf3c2bc7e46471a5e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/00/00282667ef316444ae10fc15019d00ee139690cc18a4211cf3c2bc7e46471a5e.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/mixer_broken_frame3.png": {
+      "sha256": "dfa0f107b8f80c20a6b5d2d28c79e21b6a81d0ae709815a9ef668cf2e38e8732",
+      "extension": ".png",
+      "bytes": 9908,
+      "object": "review-archive/objects/df/dfa0f107b8f80c20a6b5d2d28c79e21b6a81d0ae709815a9ef668cf2e38e8732.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/df/dfa0f107b8f80c20a6b5d2d28c79e21b6a81d0ae709815a9ef668cf2e38e8732.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/mixer_broken_frame4.png": {
+      "sha256": "04595230ac9b30e9eac46973732b14685c37fb89c1303e17ccf320d7629c3ade",
+      "extension": ".png",
+      "bytes": 9836,
+      "object": "review-archive/objects/04/04595230ac9b30e9eac46973732b14685c37fb89c1303e17ccf320d7629c3ade.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/04/04595230ac9b30e9eac46973732b14685c37fb89c1303e17ccf320d7629c3ade.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/mixer_on_frame1.png": {
+      "sha256": "3079020271e9752e8409dd5b47e7f05661fef272440e1073c4a76e1b90487639",
+      "extension": ".png",
+      "bytes": 10457,
+      "object": "review-archive/objects/30/3079020271e9752e8409dd5b47e7f05661fef272440e1073c4a76e1b90487639.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/30/3079020271e9752e8409dd5b47e7f05661fef272440e1073c4a76e1b90487639.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/mixer_on_frame2.png": {
+      "sha256": "a4ae4e6cf90a0b696d21b43cb2e127a829804d0c18847d29f6e97ea8bb62bd7f",
+      "extension": ".png",
+      "bytes": 10464,
+      "object": "review-archive/objects/a4/a4ae4e6cf90a0b696d21b43cb2e127a829804d0c18847d29f6e97ea8bb62bd7f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a4/a4ae4e6cf90a0b696d21b43cb2e127a829804d0c18847d29f6e97ea8bb62bd7f.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/mixer_on_frame3.png": {
+      "sha256": "3ca13076f66966318f8efe11794e571eb13045df552852049773d957ca9b7a46",
+      "extension": ".png",
+      "bytes": 10530,
+      "object": "review-archive/objects/3c/3ca13076f66966318f8efe11794e571eb13045df552852049773d957ca9b7a46.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3c/3ca13076f66966318f8efe11794e571eb13045df552852049773d957ca9b7a46.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/mixer_on_frame4.png": {
+      "sha256": "118554f55cb8d216015d00d7331c80351a93cef700a1a843acd02e61c415ff4e",
+      "extension": ".png",
+      "bytes": 10553,
+      "object": "review-archive/objects/11/118554f55cb8d216015d00d7331c80351a93cef700a1a843acd02e61c415ff4e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/11/118554f55cb8d216015d00d7331c80351a93cef700a1a843acd02e61c415ff4e.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/mixer_standard_frame1.png": {
+      "sha256": "d87939fca28e7ce853a8aab8e592ee054253804e222c8c465bb078275132882e",
+      "extension": ".png",
+      "bytes": 10716,
+      "object": "review-archive/objects/d8/d87939fca28e7ce853a8aab8e592ee054253804e222c8c465bb078275132882e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d8/d87939fca28e7ce853a8aab8e592ee054253804e222c8c465bb078275132882e.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/obj_fridge_standard_f1.png": {
+      "sha256": "35a89305b8232e8876845288fd3fbd015e9b2daf38399c0fd8d017a5670a5d2b",
+      "extension": ".png",
+      "bytes": 7672,
+      "object": "review-archive/objects/35/35a89305b8232e8876845288fd3fbd015e9b2daf38399c0fd8d017a5670a5d2b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/35/35a89305b8232e8876845288fd3fbd015e9b2daf38399c0fd8d017a5670a5d2b.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/obj_fridge_wall_shelf_v10_f1.png": {
+      "sha256": "22810796385f3e8ce03ebf1381c12c77ca42c604f7dcfe010a3f9d74bf117176",
+      "extension": ".png",
+      "bytes": 5867,
+      "object": "review-archive/objects/22/22810796385f3e8ce03ebf1381c12c77ca42c604f7dcfe010a3f9d74bf117176.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/22/22810796385f3e8ce03ebf1381c12c77ca42c604f7dcfe010a3f9d74bf117176.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/obj_sink_porthole_frame_f1.png": {
+      "sha256": "fbee9eb5f95f0f5aaf0e31ebeab938b7eaa845950bd3d1aa124e16c7b8b12cb0",
+      "extension": ".png",
+      "bytes": 1154,
+      "object": "review-archive/objects/fb/fbee9eb5f95f0f5aaf0e31ebeab938b7eaa845950bd3d1aa124e16c7b8b12cb0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fb/fbee9eb5f95f0f5aaf0e31ebeab938b7eaa845950bd3d1aa124e16c7b8b12cb0.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/room_kitchen_9bay_true_backdrop_opening.png": {
+      "sha256": "ba4cde7d194dd8acdb0ec4140e7e49e7349deae2c9eddacc4976b291f3b48aeb",
+      "extension": ".png",
+      "bytes": 92510,
+      "object": "review-archive/objects/ba/ba4cde7d194dd8acdb0ec4140e7e49e7349deae2c9eddacc4976b291f3b48aeb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ba/ba4cde7d194dd8acdb0ec4140e7e49e7349deae2c9eddacc4976b291f3b48aeb.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/room_kitchen_shell_9bay_porthole_cutout_bay_7.png": {
+      "sha256": "f60b39615725d4aa1bed832fce94b86765714e53b3e21f4c5821c78840e08761",
+      "extension": ".png",
+      "bytes": 1874,
+      "object": "review-archive/objects/f6/f60b39615725d4aa1bed832fce94b86765714e53b3e21f4c5821c78840e08761.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f6/f60b39615725d4aa1bed832fce94b86765714e53b3e21f4c5821c78840e08761.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/sink_broken_frame1.png": {
+      "sha256": "1deea9a87b6b4cd0c0df994836c5f1af2bbe1a38e453c6485ae3b04006508aab",
+      "extension": ".png",
+      "bytes": 10247,
+      "object": "review-archive/objects/1d/1deea9a87b6b4cd0c0df994836c5f1af2bbe1a38e453c6485ae3b04006508aab.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1d/1deea9a87b6b4cd0c0df994836c5f1af2bbe1a38e453c6485ae3b04006508aab.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/sink_broken_frame2.png": {
+      "sha256": "2c5024d2013cf089da823422f49bd8121bcecae8cbf06c4beba4dc311b279afb",
+      "extension": ".png",
+      "bytes": 10302,
+      "object": "review-archive/objects/2c/2c5024d2013cf089da823422f49bd8121bcecae8cbf06c4beba4dc311b279afb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2c/2c5024d2013cf089da823422f49bd8121bcecae8cbf06c4beba4dc311b279afb.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/sink_broken_frame3.png": {
+      "sha256": "79de5cf2e3d417ad51dcfc41c14988ecd9a20a66ad496e002b53f84598252e08",
+      "extension": ".png",
+      "bytes": 10295,
+      "object": "review-archive/objects/79/79de5cf2e3d417ad51dcfc41c14988ecd9a20a66ad496e002b53f84598252e08.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/79/79de5cf2e3d417ad51dcfc41c14988ecd9a20a66ad496e002b53f84598252e08.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/sink_broken_frame4.png": {
+      "sha256": "c121b8a7d25f18402dce3b5e0c1bc06f472bdc42c3a111de8de7ac1a555ee06c",
+      "extension": ".png",
+      "bytes": 10234,
+      "object": "review-archive/objects/c1/c121b8a7d25f18402dce3b5e0c1bc06f472bdc42c3a111de8de7ac1a555ee06c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c1/c121b8a7d25f18402dce3b5e0c1bc06f472bdc42c3a111de8de7ac1a555ee06c.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/sink_on_frame1.png": {
+      "sha256": "72f3f5fc6a8fc7d2166f81a5286baddd712c3c6e1b3a814877b1aa9e12be0fa6",
+      "extension": ".png",
+      "bytes": 10582,
+      "object": "review-archive/objects/72/72f3f5fc6a8fc7d2166f81a5286baddd712c3c6e1b3a814877b1aa9e12be0fa6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/72/72f3f5fc6a8fc7d2166f81a5286baddd712c3c6e1b3a814877b1aa9e12be0fa6.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/sink_on_frame2.png": {
+      "sha256": "ece931f2b1b662a20ef39137e4fad6b9aa8f8a8bf9eab561a85e7eab0cdc0253",
+      "extension": ".png",
+      "bytes": 10564,
+      "object": "review-archive/objects/ec/ece931f2b1b662a20ef39137e4fad6b9aa8f8a8bf9eab561a85e7eab0cdc0253.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ec/ece931f2b1b662a20ef39137e4fad6b9aa8f8a8bf9eab561a85e7eab0cdc0253.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/sink_on_frame3.png": {
+      "sha256": "148b8c1bafe0f593cba28715f4581ab9b6341d6cc4a84046e3fb7ceeb3d9a47d",
+      "extension": ".png",
+      "bytes": 10568,
+      "object": "review-archive/objects/14/148b8c1bafe0f593cba28715f4581ab9b6341d6cc4a84046e3fb7ceeb3d9a47d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/14/148b8c1bafe0f593cba28715f4581ab9b6341d6cc4a84046e3fb7ceeb3d9a47d.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/sink_on_frame4.png": {
+      "sha256": "a74bef283a1c2cb09acd295cacb38da33dee336d19efeff6d1e33178f68f6b9e",
+      "extension": ".png",
+      "bytes": 10588,
+      "object": "review-archive/objects/a7/a74bef283a1c2cb09acd295cacb38da33dee336d19efeff6d1e33178f68f6b9e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a7/a74bef283a1c2cb09acd295cacb38da33dee336d19efeff6d1e33178f68f6b9e.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/sink_porthole_cutout_move_bay_2.png": {
+      "sha256": "d8f42029586ad6bf61e6d0e4f9f38426dfa0e7825e9c23238dd73a19a069ae21",
+      "extension": ".png",
+      "bytes": 15317,
+      "object": "review-archive/objects/d8/d8f42029586ad6bf61e6d0e4f9f38426dfa0e7825e9c23238dd73a19a069ae21.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d8/d8f42029586ad6bf61e6d0e4f9f38426dfa0e7825e9c23238dd73a19a069ae21.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/sink_porthole_cutout_move_bay_5.png": {
+      "sha256": "822e9f721d45da80e13fca76d7c272778f707a1427188e6c63947f5824181b8a",
+      "extension": ".png",
+      "bytes": 15323,
+      "object": "review-archive/objects/82/822e9f721d45da80e13fca76d7c272778f707a1427188e6c63947f5824181b8a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/82/822e9f721d45da80e13fca76d7c272778f707a1427188e6c63947f5824181b8a.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/sink_porthole_cutout_move_bay_8.png": {
+      "sha256": "135ac754f8655ec2e1d24dfecf2f1da669aa03bdf121ea0c5f7daf96f0f77549",
+      "extension": ".png",
+      "bytes": 15331,
+      "object": "review-archive/objects/13/135ac754f8655ec2e1d24dfecf2f1da669aa03bdf121ea0c5f7daf96f0f77549.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/13/135ac754f8655ec2e1d24dfecf2f1da669aa03bdf121ea0c5f7daf96f0f77549.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/sink_standard_frame1.png": {
+      "sha256": "0cb159a7c05931c063f3fe00d3c294d998024ba4eac5c95366a7ba7551bd293f",
+      "extension": ".png",
+      "bytes": 10711,
+      "object": "review-archive/objects/0c/0cb159a7c05931c063f3fe00d3c294d998024ba4eac5c95366a7ba7551bd293f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0c/0cb159a7c05931c063f3fe00d3c294d998024ba4eac5c95366a7ba7551bd293f.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/toaster_broken_frame1.png": {
+      "sha256": "1413e93096ec79583f9e4b1ea0f86c5ed76537289bf2a14d15d6fa6614d44a4f",
+      "extension": ".png",
+      "bytes": 10391,
+      "object": "review-archive/objects/14/1413e93096ec79583f9e4b1ea0f86c5ed76537289bf2a14d15d6fa6614d44a4f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/14/1413e93096ec79583f9e4b1ea0f86c5ed76537289bf2a14d15d6fa6614d44a4f.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/toaster_broken_frame2.png": {
+      "sha256": "0a11c5dd23c07c0f5c95d5240091bb18e0c32a7a7a5466e40b5a5a9f7314332b",
+      "extension": ".png",
+      "bytes": 10579,
+      "object": "review-archive/objects/0a/0a11c5dd23c07c0f5c95d5240091bb18e0c32a7a7a5466e40b5a5a9f7314332b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0a/0a11c5dd23c07c0f5c95d5240091bb18e0c32a7a7a5466e40b5a5a9f7314332b.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/toaster_broken_frame3.png": {
+      "sha256": "5c286394288fec9bf95d5bcc8af141e7f6fe73467880f1dec6bb132d3697269a",
+      "extension": ".png",
+      "bytes": 10525,
+      "object": "review-archive/objects/5c/5c286394288fec9bf95d5bcc8af141e7f6fe73467880f1dec6bb132d3697269a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5c/5c286394288fec9bf95d5bcc8af141e7f6fe73467880f1dec6bb132d3697269a.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/toaster_broken_frame4.png": {
+      "sha256": "86ac2ba4f3587b2d2e379cc4af399819df509438e3ddb78ad38945c784599467",
+      "extension": ".png",
+      "bytes": 10591,
+      "object": "review-archive/objects/86/86ac2ba4f3587b2d2e379cc4af399819df509438e3ddb78ad38945c784599467.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/86/86ac2ba4f3587b2d2e379cc4af399819df509438e3ddb78ad38945c784599467.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/toaster_on_frame1.png": {
+      "sha256": "1cb2f957d0d1492144bad42d3f113e8ce0caf013c1a0bda30a53a07fd4aee507",
+      "extension": ".png",
+      "bytes": 11310,
+      "object": "review-archive/objects/1c/1cb2f957d0d1492144bad42d3f113e8ce0caf013c1a0bda30a53a07fd4aee507.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1c/1cb2f957d0d1492144bad42d3f113e8ce0caf013c1a0bda30a53a07fd4aee507.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/toaster_on_frame2.png": {
+      "sha256": "0a72d3701414f4c201d703e766770def10a3c9e69134b0b3cd838aadacb43981",
+      "extension": ".png",
+      "bytes": 11166,
+      "object": "review-archive/objects/0a/0a72d3701414f4c201d703e766770def10a3c9e69134b0b3cd838aadacb43981.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0a/0a72d3701414f4c201d703e766770def10a3c9e69134b0b3cd838aadacb43981.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/toaster_on_frame3.png": {
+      "sha256": "f0f9988aa96fa6a5135a045737165ab70913ff691e0069be751af8924d65d2af",
+      "extension": ".png",
+      "bytes": 10880,
+      "object": "review-archive/objects/f0/f0f9988aa96fa6a5135a045737165ab70913ff691e0069be751af8924d65d2af.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f0/f0f9988aa96fa6a5135a045737165ab70913ff691e0069be751af8924d65d2af.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/toaster_on_frame4.png": {
+      "sha256": "0a72d3701414f4c201d703e766770def10a3c9e69134b0b3cd838aadacb43981",
+      "extension": ".png",
+      "bytes": 11166,
+      "object": "review-archive/objects/0a/0a72d3701414f4c201d703e766770def10a3c9e69134b0b3cd838aadacb43981.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0a/0a72d3701414f4c201d703e766770def10a3c9e69134b0b3cd838aadacb43981.png"
+    },
+    "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/toaster_standard_frame1.png": {
+      "sha256": "4a40b797cde7e8ee5ef1f0e8e50c3bd58d685fea7b56abc152f33bf25110c123",
+      "extension": ".png",
+      "bytes": 11333,
+      "object": "review-archive/objects/4a/4a40b797cde7e8ee5ef1f0e8e50c3bd58d685fea7b56abc152f33bf25110c123.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4a/4a40b797cde7e8ee5ef1f0e8e50c3bd58d685fea7b56abc152f33bf25110c123.png"
+    }
+  }
+}

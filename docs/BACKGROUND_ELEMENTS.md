@@ -11,6 +11,11 @@ Read with:
 ## 1. Ground rules
 
 - **One logical pixel is four screen pixels**, nearest-neighbour only. Movement is in whole pixels; no blur, no smooth rotation, no fractional scrolling.
+- **Room windows reveal this one global backdrop.** Every window or porthole is
+  a true alpha knockout through its room-wall layer plus a separate opaque
+  frame. A room asset never contains a painted sky, sea, horizon, weather or
+  time-of-day proxy. If a window follows movable furniture, the wall knockout,
+  frame and parent object share one transform.
 - **The keeper is 38 px tall.** Near things are at his scale. Far things are smaller and simpler: houses on the far shore are a few pixels, and ships on the horizon have a readable silhouette at telescope size. Every element states its scale relative to him in its sidecar notes.
 - **The world grows, so nothing is one fixed picture.**
   - The tower gains floors upward (and downward with the lair), so the sky must keep going up without a seam.

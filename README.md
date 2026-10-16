@@ -87,6 +87,20 @@ which receives the fridge's exact bay translation. Its reusable recipe is
 and its hand-back is
 [`docs/CODEX_TO_CLAUDE_KITCHEN_FRIDGE_SHELF_V9_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_FRIDGE_SHELF_V9_2026-10-17.md).
 V5, V6, Room V7, V8 and V9 remain unapproved, unpromoted and unwired.
+V9 is rejected visual provenance: its flat fridge, poor shelf and wing-only
+countertop repair are not a baseline. The replacement family and porthole
+construction correction is `/keeper-review/kitchen-porthole-backdrop-cutout-v10/`.
+V10 uses Frank's attached approved family as its visual authority, restores the
+detailed white fridge and a fitted polished shelf, and draws every compatible
+countertop as one uninterrupted Option-B slab across every state. It rejects the former
+kitchen-owned day/sunset/night/rain illustrations: it cuts a genuine 14-lp
+alpha opening through the room wall and places only the separate 19-lp brass
+ring above it. The global lighthouse backdrop is therefore visible directly
+through the room. The exact recipe is
+[`docs/KITCHEN_PORTHOLE_BACKDROP_CUTOUT_V10_RECIPE_2026-10-17.md`](docs/KITCHEN_PORTHOLE_BACKDROP_CUTOUT_V10_RECIPE_2026-10-17.md)
+and the hand-back is
+[`docs/CODEX_TO_CLAUDE_KITCHEN_PORTHOLE_BACKDROP_CUTOUT_V10_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_PORTHOLE_BACKDROP_CUTOUT_V10_2026-10-17.md).
+V10 is also unapproved, unpromoted and unwired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

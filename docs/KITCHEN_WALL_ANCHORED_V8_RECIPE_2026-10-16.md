@@ -4,6 +4,11 @@ Date: 16 October 2026
 Status: review-draft construction authority; not approved or wired  
 Machine-readable authority: `data/kitchen_wall_anchored_v8_recipe.json`
 
+> Historical porthole note (17 October): V8's illustrated condition underlays
+> are rejected. Current construction authority is V10: a true room-wall alpha
+> knockout revealing the one global backdrop. See
+> `docs/KITCHEN_PORTHOLE_BACKDROP_CUTOUT_V10_RECIPE_2026-10-17.md`.
+
 ## Visual authority and scope
 
 Kitchen V8 uses Kitchen V6 Option B as its immutable asset baseline and Kitchen
@@ -164,4 +169,3 @@ them in the live game.
   separate files from the frame.
 - Sink, frame and underlay share identical bay translations in bays 2, 5 and 8.
 - V6, V7, Keeper, runtime and Final snapshots remain unchanged.
-
