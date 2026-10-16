@@ -1,0 +1,22 @@
+{
+  "schema": "lighthouse-keeper/review-approval@1",
+  "candidate": "keeper-prime-stair-transitions-v6",
+  "approvedBy": "Frank",
+  "approvedOn": "2026-10-16",
+  "wording": "Approved. Move on to ladder.",
+  "scope": "The exact V6 stair door-to-door review route and its rule that room/circulation scale reconciliation occurs only while the Keeper is fully door-occluded.",
+  "candidateRegister": {
+    "file": "art/drafts/keeper-prime-stair-transitions-2026-10-16-v6/batch-register.json",
+    "sha256": "253ec6bbf4918f33e243a75144cbbe061b4fc686038b8b98a0baeda3a7425926"
+  },
+  "reviewPage": {
+    "file": "public/keeper-review/keeper-prime-stair-transitions-v6/index.html",
+    "sha256": "6f34d1817e017d523de1bd997e6c23b58eaea8b88ea2b3dc7651f3c1409d46aa",
+    "deployedAtCommit": "3f1f9f6"
+  },
+  "promotion": {
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false
+  }
+}

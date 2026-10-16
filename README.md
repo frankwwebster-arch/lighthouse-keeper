@@ -159,7 +159,7 @@ handrail between them. That foreground architecture may naturally cover parts
 of the Keeper's boots and lower legs, but it may not change the approved
 fourteen-riser contact geometry.
 
-The current reversible transition gate is
+The approved reversible stair-transition authority is
 `/keeper-review/keeper-prime-stair-transitions-v6/`. It composes exact approved
 authorities plus two clearly labelled candidate door-reach cells into two
 reviewable sequences: lower transfer door → two walk cycles → moving Stair V16
@@ -217,6 +217,23 @@ room scale changes only while the Keeper is fully hidden behind the departure
 door and resets only after he is fully hidden at the arrival door. There are no
 visible scale changes anywhere in the door-to-door route.
 
+Frank approved exact Stair Transition V6 on 16 October 2026. The immutable
+approval record is
+`docs/review/keeper-prime-stair-transitions-v6-approval-2026-10-16.json`;
+approval changes no Final, runtime or production pixels.
+
+The current reversible core-animation gate is
+`/keeper-review/keeper-prime-ladder-transitions-v1/`. It derives seven smooth
+rear-view cells from the approved back master: first-rung mount, asymmetric
+contact and passing poses, their exact mirrors, a rightward top transfer and a
+flat-footed landing completion. The route uses eight 7.5-lp rung intervals per
+60-lp storey, four complete alternating gait cycles, an exact 84-lp/eight-step
+door-to-ladder walk, uninterrupted continuation above the landing, and a
+matching dismount/turn/walk-to-door sequence. All visible circulation frames
+use the approved V6 0.943057 scale; room-scale reconciliation remains hidden
+behind doors. The legacy ladder strip is comparison provenance only. This V1
+candidate is unapproved and changes no Final, runtime or production asset.
+
 ## Run it
 ```
 npm install
@@ -233,6 +250,7 @@ npm run verify:keeper-prime-stair-transitions-v3 # fixed reviewer layout and def
 npm run verify:keeper-prime-stair-transitions-v4 # uniform root-anchored stair-family height registration
 npm run verify:keeper-prime-stair-transitions-v5 # whole-silhouette stair-family scale registration
 npm run verify:keeper-prime-stair-transitions-v6 # door-hidden room/circulation scale handoff
+npm run verify:keeper-prime-ladder-transitions-v1 # measured alternating ladder, approach, continuation and dismount
 ```
 On an iPad: open the address in Safari, Share, Add to Home Screen for full screen.
 

@@ -1545,6 +1545,39 @@ scale changes. V5 is retained as rejected provenance; source PNGs, timing,
 roots, tread geometry, Final and runtime remain unchanged. Run
 `npm run verify:keeper-prime-stair-transitions-v6`.
 
+Frank approved exact Stair Transition V6 on 16 October 2026 with “Approved.
+Move on to ladder.” The immutable approval record is
+`docs/review/keeper-prime-stair-transitions-v6-approval-2026-10-16.json`.
+This is approval for later Final preparation only; no runtime or production
+promotion occurred.
+
+## Keeper Prime ladder transition V1 (16 Oct 2026)
+
+The next reversible gate is
+`/keeper-review/keeper-prime-ladder-transitions-v1/`. The legacy 8-frame ladder
+strip is retained only as rejected/comparison provenance; no legacy pixel is
+used. V1 derives its rear identity, palette and rear-facing boots from the
+approved smooth back master. Five generated high-resolution studies supply the
+first-rung mount, one asymmetric contact, one compact passing pose, a rightward
+top transfer and its flat-footed landing completion. Contact B and passing B
+are exact deterministic mirrors, guaranteeing equal left/right participation.
+
+The ladder is vertical and 18 lp wide. Eight 7.5-lp rung intervals close the
+approved 60-lp floor pitch, using four complete gait cycles with a 3.75-lp rise
+per displayed transition frame. The continuous route hits the next floor
+exactly on frame 17 and carries on without resetting phase. The lower-door
+approach spans exactly 84 lp/eight walking intervals before the approved stop
+and side-to-back turn. The upper route transfers right, establishes both boots
+on the landing, turns back-to-side and walks 42 lp/four intervals into the
+upper door. All visible art uses the approved 0.943057 circulation scale; any
+room-scale handoff stays under complete door occlusion.
+
+The page preloads and decodes all 29 unique image URLs before playback, keeps
+large and 4× panes stacked, and supplies route selection, pause/play, one-frame
+stepping, speed, looping and contact guides. Run
+`npm run verify:keeper-prime-ladder-transitions-v1`. The draft is unapproved;
+Final, runtime and production remain unchanged.
+
 ## Review-comments workflow for a later feedback round
 
 1. Do not process another review export until the beard evidence gate is

@@ -193,9 +193,9 @@ foreground layer should plausibly obscure parts of the boots/lower legs while
 the tread/contact geometry remains the approved 14-riser, 7-lp-tread,
 98-by-60-lp flight.
 
-## Stair entry and landing-exit transition gate (15 Oct 2026)
+## Stair entry and landing-exit transition authority (approved 16 Oct 2026)
 
-The current review candidate is
+The approved review candidate is
 `/keeper-review/keeper-prime-stair-transitions-v6/`. Its approved authorities
 remain byte-identical: Walk V6, Stair Ascent V16, approved side/back Turn V9,
 the side/front turn source retained for the opposite flight, and the approved
@@ -250,7 +250,36 @@ V16 at native scale and applies one constant 0.943× circulation scale to every
 walk, turn, bridge and reach frame between those doors. The visible route has
 zero scale changes; the normal-room scale returns only after full arrival-door
 occlusion. V5 is rejected provenance. Run
-`npm run verify:keeper-prime-stair-transitions-v6` for the current gate.
+`npm run verify:keeper-prime-stair-transitions-v6` for the approved stair gate.
+
+Frank approved exact V6 on 16 October 2026 with “Approved. Move on to ladder.”
+The immutable approval record is
+`docs/review/keeper-prime-stair-transitions-v6-approval-2026-10-16.json`.
+This authorizes the stair transition as a later Final source but does not itself
+promote or alter Final, runtime or production.
+
+## Ladder transition gate (16 Oct 2026)
+
+The active reversible review candidate is
+`/keeper-review/keeper-prime-ladder-transitions-v1/`. It replaces the legacy
+pixel ladder as a proposed animation source without using any of its pixels.
+Five smooth high-resolution studies are registered with one authority-derived
+scale; the two opposite climbing phases are exact horizontal mirrors, producing
+seven 256 × 320 cells with transparent gutters.
+
+- Floor pitch is 60 lp/480 ku: eight 7.5-lp/60-ku rung intervals.
+- One floor uses four complete left/right gait cycles with no phase remainder.
+- Each review-frame rise is 3.75 lp; the exact upper floor occurs on route
+  frame 17 and the continue route proceeds another 15 lp without resetting.
+- The lower door and ladder are 84 lp/eight walking intervals apart.
+- The approach is walk → decelerate/stop → approved side-to-back turn → mount
+  → climb; the exit is climb → rightward transfer → both feet on the landing →
+  approved reverse turn → walk to the upper door.
+- Every visible frame uses Stair Transition V6's constant 0.943057 circulation
+  scale. Any room/circulation scale handoff remains fully door-hidden.
+
+Run `npm run verify:keeper-prime-ladder-transitions-v1`. The candidate is not
+approved; Final, runtime and production remain unchanged.
 
 ## Lift entry alignment correction (14 Oct 2026)
 
