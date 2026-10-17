@@ -1,0 +1,3221 @@
+{
+  "schema": "lighthouse-keeper/darts-context@8",
+  "set": "keeper-prime-darts-context-v8",
+  "status": "harmonised-dart-and-board-awaiting-frank",
+  "stage": {
+    "logicalWidth": 172,
+    "logicalHeight": 56,
+    "floorBottomLp": 52,
+    "intendedGameScaleCssPxPerLp": 4,
+    "ocheRootXLp": 125,
+    "collectionRootXLp": 155.5,
+    "cupboardDoor": {
+      "state": "closed",
+      "presentation": "edge-on",
+      "rimXLp": [
+        170.25,
+        171.75
+      ]
+    },
+    "dartboard": {
+      "presentation": "edge-on outer rim only",
+      "planeXLp": 169.125,
+      "centreYLp": 30.5,
+      "heightLp": 9.5
+    }
+  },
+  "route": [
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0e80ea65610452c9.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F1",
+      "rootXLp": 80.875,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-2b8e91de747b527d.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F2",
+      "rootXLp": 83.5,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-b376254e9c29da38.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F3",
+      "rootXLp": 86.125,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-982646b0b0e6f3f9.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F4",
+      "rootXLp": 88.75,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-545e7338151e6e5a.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F5",
+      "rootXLp": 91.375,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-17d007eee75c2e86.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F6",
+      "rootXLp": 94,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-dbf5b3849624cec7.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F7",
+      "rootXLp": 96.625,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-cf8c53e7ffa703a5.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F8",
+      "rootXLp": 99.25,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0e80ea65610452c9.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F1",
+      "rootXLp": 101.875,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-2b8e91de747b527d.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F2",
+      "rootXLp": 104.5,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-b376254e9c29da38.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F3",
+      "rootXLp": 107.125,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-982646b0b0e6f3f9.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F4",
+      "rootXLp": 109.75,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-545e7338151e6e5a.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F5",
+      "rootXLp": 112.375,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-17d007eee75c2e86.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F6",
+      "rootXLp": 115,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-dbf5b3849624cec7.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F7",
+      "rootXLp": 117.625,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-cf8c53e7ffa703a5.png",
+      "phase": "walk to oche",
+      "label": "approved Walk V6 · F8",
+      "rootXLp": 120.25,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-9f4192beb8fecbc8.png",
+      "phase": "stop at oche",
+      "label": "approved deceleration · 18 ku",
+      "rootXLp": 122.5,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0169b3642905389d.png",
+      "phase": "stop at oche",
+      "label": "approved deceleration · 12 ku",
+      "rootXLp": 124,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-e54546ba14b4e5f7.png",
+      "phase": "stop at oche",
+      "label": "approved deceleration · 6 ku",
+      "rootXLp": 124.75,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-a172a8a01a387a21.png",
+      "phase": "stop at oche",
+      "label": "approved deceleration · 2 ku",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 1 · dart 1 anticipation",
+      "label": "Prime redraw throw core · dart 1 · F1",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 170,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 1,
+      "throwNumber": 1,
+      "coreFrame": 1,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-f8de0aa0d4669153.png",
+      "phase": "set 1 · dart 1 anticipation",
+      "label": "Prime redraw throw core · dart 1 · F2",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 220,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 1,
+      "throwNumber": 1,
+      "coreFrame": 2,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-934c40edc9ed19c0.png",
+      "phase": "set 1 · dart 1 anticipation",
+      "label": "Prime redraw throw core · dart 1 · F3",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 230,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 1,
+      "throwNumber": 1,
+      "coreFrame": 3,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-bd1f9e228b6c22a8.png",
+      "phase": "set 1 · dart 1 anticipation",
+      "label": "Prime redraw throw core · dart 1 · F4",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 210,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 1,
+      "throwNumber": 1,
+      "coreFrame": 4,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-067af07a727abfe1.png",
+      "phase": "set 1 · dart 1 anticipation",
+      "label": "Prime redraw throw core · dart 1 · F5",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 175,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 1,
+      "throwNumber": 1,
+      "coreFrame": 5,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-fae0deec1267ba58.png",
+      "phase": "set 1 · dart 1 flight",
+      "label": "Prime redraw throw core · dart 1 · F6",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 1,
+      "throwNumber": 1,
+      "coreFrame": 6,
+      "flyingDart": {
+        "number": 1,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 28.6,
+        "progress": 0.08
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0cdcbd13f83bffc5.png",
+      "phase": "set 1 · dart 1 flight",
+      "label": "Prime redraw throw core · dart 1 · F7",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 115,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 1,
+      "throwNumber": 1,
+      "coreFrame": 7,
+      "flyingDart": {
+        "number": 1,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 28.6,
+        "progress": 0.3
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-5cdffcf9007cca9e.png",
+      "phase": "set 1 · dart 1 flight",
+      "label": "Prime redraw throw core · dart 1 · F8",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 1,
+      "throwNumber": 1,
+      "coreFrame": 8,
+      "flyingDart": {
+        "number": 1,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 28.6,
+        "progress": 0.55
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-5cdffcf9007cca9e.png",
+      "phase": "set 1 · dart 1 flight",
+      "label": "Prime redraw throw core · dart 1 · F9",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 1,
+      "throwNumber": 1,
+      "coreFrame": 9,
+      "flyingDart": {
+        "number": 1,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 28.6,
+        "progress": 0.78
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-819b71aed60f6fba.png",
+      "phase": "set 1 · dart 1 flight",
+      "label": "Prime redraw throw core · dart 1 · F10",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 1,
+      "throwNumber": 1,
+      "coreFrame": 10,
+      "flyingDart": {
+        "number": 1,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 28.6,
+        "progress": 1
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 1 · dart 1 flight",
+      "label": "Prime redraw throw core · dart 1 · F11",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 115,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 1,
+      "throwNumber": 1,
+      "coreFrame": 11,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 1 · dart 1 recovery",
+      "label": "Prime redraw throw core · dart 1 · F12",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 150,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 1,
+      "throwNumber": 1,
+      "coreFrame": 12,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 1 · dart 1 recovery",
+      "label": "Prime redraw throw core · dart 1 · F13",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 175,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 1,
+      "throwNumber": 1,
+      "coreFrame": 13,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 1 · dart 1 recovery",
+      "label": "Prime redraw throw core · dart 1 · F14",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 150,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 1,
+      "throwNumber": 1,
+      "coreFrame": 14,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 1 · dart 2 anticipation",
+      "label": "Prime redraw throw core · dart 2 · F1",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 170,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 1,
+      "throwNumber": 2,
+      "coreFrame": 1,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-f8de0aa0d4669153.png",
+      "phase": "set 1 · dart 2 anticipation",
+      "label": "Prime redraw throw core · dart 2 · F2",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 220,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 1,
+      "throwNumber": 2,
+      "coreFrame": 2,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-934c40edc9ed19c0.png",
+      "phase": "set 1 · dart 2 anticipation",
+      "label": "Prime redraw throw core · dart 2 · F3",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 230,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 1,
+      "throwNumber": 2,
+      "coreFrame": 3,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-bd1f9e228b6c22a8.png",
+      "phase": "set 1 · dart 2 anticipation",
+      "label": "Prime redraw throw core · dart 2 · F4",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 210,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 1,
+      "throwNumber": 2,
+      "coreFrame": 4,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-067af07a727abfe1.png",
+      "phase": "set 1 · dart 2 anticipation",
+      "label": "Prime redraw throw core · dart 2 · F5",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 175,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 1,
+      "throwNumber": 2,
+      "coreFrame": 5,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-fae0deec1267ba58.png",
+      "phase": "set 1 · dart 2 flight",
+      "label": "Prime redraw throw core · dart 2 · F6",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 1,
+      "throwNumber": 2,
+      "coreFrame": 6,
+      "flyingDart": {
+        "number": 2,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 30.5,
+        "progress": 0.08
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0cdcbd13f83bffc5.png",
+      "phase": "set 1 · dart 2 flight",
+      "label": "Prime redraw throw core · dart 2 · F7",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 115,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 1,
+      "throwNumber": 2,
+      "coreFrame": 7,
+      "flyingDart": {
+        "number": 2,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 30.5,
+        "progress": 0.3
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-5cdffcf9007cca9e.png",
+      "phase": "set 1 · dart 2 flight",
+      "label": "Prime redraw throw core · dart 2 · F8",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 1,
+      "throwNumber": 2,
+      "coreFrame": 8,
+      "flyingDart": {
+        "number": 2,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 30.5,
+        "progress": 0.55
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-5cdffcf9007cca9e.png",
+      "phase": "set 1 · dart 2 flight",
+      "label": "Prime redraw throw core · dart 2 · F9",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 1,
+      "throwNumber": 2,
+      "coreFrame": 9,
+      "flyingDart": {
+        "number": 2,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 30.5,
+        "progress": 0.78
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-819b71aed60f6fba.png",
+      "phase": "set 1 · dart 2 flight",
+      "label": "Prime redraw throw core · dart 2 · F10",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 1,
+      "throwNumber": 2,
+      "coreFrame": 10,
+      "flyingDart": {
+        "number": 2,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 30.5,
+        "progress": 1
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 1 · dart 2 flight",
+      "label": "Prime redraw throw core · dart 2 · F11",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 115,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 1,
+      "throwNumber": 2,
+      "coreFrame": 11,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 1 · dart 2 recovery",
+      "label": "Prime redraw throw core · dart 2 · F12",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 150,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 1,
+      "throwNumber": 2,
+      "coreFrame": 12,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 1 · dart 2 recovery",
+      "label": "Prime redraw throw core · dart 2 · F13",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 175,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 1,
+      "throwNumber": 2,
+      "coreFrame": 13,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 1 · dart 2 recovery",
+      "label": "Prime redraw throw core · dart 2 · F14",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 150,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 1,
+      "throwNumber": 2,
+      "coreFrame": 14,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 1 · dart 3 anticipation",
+      "label": "Prime redraw throw core · dart 3 · F1",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 170,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 1,
+      "throwNumber": 3,
+      "coreFrame": 1,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-f8de0aa0d4669153.png",
+      "phase": "set 1 · dart 3 anticipation",
+      "label": "Prime redraw throw core · dart 3 · F2",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 220,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 1,
+      "throwNumber": 3,
+      "coreFrame": 2,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-934c40edc9ed19c0.png",
+      "phase": "set 1 · dart 3 anticipation",
+      "label": "Prime redraw throw core · dart 3 · F3",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 230,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 1,
+      "throwNumber": 3,
+      "coreFrame": 3,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-bd1f9e228b6c22a8.png",
+      "phase": "set 1 · dart 3 anticipation",
+      "label": "Prime redraw throw core · dart 3 · F4",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 210,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 1,
+      "throwNumber": 3,
+      "coreFrame": 4,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-067af07a727abfe1.png",
+      "phase": "set 1 · dart 3 anticipation",
+      "label": "Prime redraw throw core · dart 3 · F5",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 175,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 1,
+      "throwNumber": 3,
+      "coreFrame": 5,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-fae0deec1267ba58.png",
+      "phase": "set 1 · dart 3 flight",
+      "label": "Prime redraw throw core · dart 3 · F6",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 1,
+      "throwNumber": 3,
+      "coreFrame": 6,
+      "flyingDart": {
+        "number": 3,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 32.2,
+        "progress": 0.08
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0cdcbd13f83bffc5.png",
+      "phase": "set 1 · dart 3 flight",
+      "label": "Prime redraw throw core · dart 3 · F7",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 115,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 1,
+      "throwNumber": 3,
+      "coreFrame": 7,
+      "flyingDart": {
+        "number": 3,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 32.2,
+        "progress": 0.3
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-5cdffcf9007cca9e.png",
+      "phase": "set 1 · dart 3 flight",
+      "label": "Prime redraw throw core · dart 3 · F8",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 1,
+      "throwNumber": 3,
+      "coreFrame": 8,
+      "flyingDart": {
+        "number": 3,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 32.2,
+        "progress": 0.55
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-5cdffcf9007cca9e.png",
+      "phase": "set 1 · dart 3 flight",
+      "label": "Prime redraw throw core · dart 3 · F9",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 1,
+      "throwNumber": 3,
+      "coreFrame": 9,
+      "flyingDart": {
+        "number": 3,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 32.2,
+        "progress": 0.78
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-819b71aed60f6fba.png",
+      "phase": "set 1 · dart 3 flight",
+      "label": "Prime redraw throw core · dart 3 · F10",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 1,
+      "throwNumber": 3,
+      "coreFrame": 10,
+      "flyingDart": {
+        "number": 3,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 32.2,
+        "progress": 1
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 1 · dart 3 flight",
+      "label": "Prime redraw throw core · dart 3 · F11",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 115,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3,
+      "setNumber": 1,
+      "throwNumber": 3,
+      "coreFrame": 11,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 1 · dart 3 recovery",
+      "label": "Prime redraw throw core · dart 3 · F12",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 150,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3,
+      "setNumber": 1,
+      "throwNumber": 3,
+      "coreFrame": 12,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 1 · dart 3 recovery",
+      "label": "Prime redraw throw core · dart 3 · F13",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 175,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3,
+      "setNumber": 1,
+      "throwNumber": 3,
+      "coreFrame": 13,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 1 · dart 3 recovery",
+      "label": "Prime redraw throw core · dart 3 · F14",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 150,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3,
+      "setNumber": 1,
+      "throwNumber": 3,
+      "coreFrame": 14,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-e54546ba14b4e5f7.png",
+      "phase": "walk to collect",
+      "label": "approved acceleration · 2 ku",
+      "rootXLp": 125.25,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0169b3642905389d.png",
+      "phase": "walk to collect",
+      "label": "approved acceleration · 6 ku",
+      "rootXLp": 126,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-9f4192beb8fecbc8.png",
+      "phase": "walk to collect",
+      "label": "approved acceleration · 12 ku",
+      "rootXLp": 127.5,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0e80ea65610452c9.png",
+      "phase": "walk to collect",
+      "label": "approved acceleration · 18 ku",
+      "rootXLp": 129.75,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-2b8e91de747b527d.png",
+      "phase": "walk to collect",
+      "label": "approved Walk V6 · F2",
+      "rootXLp": 132.375,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-b376254e9c29da38.png",
+      "phase": "walk to collect",
+      "label": "approved Walk V6 · F3",
+      "rootXLp": 135,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-982646b0b0e6f3f9.png",
+      "phase": "walk to collect",
+      "label": "approved Walk V6 · F4",
+      "rootXLp": 137.625,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-545e7338151e6e5a.png",
+      "phase": "walk to collect",
+      "label": "approved Walk V6 · F5",
+      "rootXLp": 140.25,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-17d007eee75c2e86.png",
+      "phase": "walk to collect",
+      "label": "approved Walk V6 · F6",
+      "rootXLp": 142.875,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-dbf5b3849624cec7.png",
+      "phase": "walk to collect",
+      "label": "approved Walk V6 · F7",
+      "rootXLp": 145.5,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-cf8c53e7ffa703a5.png",
+      "phase": "walk to collect",
+      "label": "approved Walk V6 · F8",
+      "rootXLp": 148.125,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0e80ea65610452c9.png",
+      "phase": "walk to collect",
+      "label": "approved Walk V6 · F1",
+      "rootXLp": 150.75,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-9f4192beb8fecbc8.png",
+      "phase": "walk to collect",
+      "label": "approved deceleration · 18 ku",
+      "rootXLp": 153,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0169b3642905389d.png",
+      "phase": "walk to collect",
+      "label": "approved deceleration · 12 ku",
+      "rootXLp": 154.5,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-e54546ba14b4e5f7.png",
+      "phase": "walk to collect",
+      "label": "approved deceleration · 6 ku",
+      "rootXLp": 155.25,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-a172a8a01a387a21.png",
+      "phase": "walk to collect",
+      "label": "approved deceleration · 2 ku",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-8c519d8cb1243373.png",
+      "phase": "collect darts",
+      "label": "reach toward dart 1",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 110,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-c9c54e28f72b212e.png",
+      "phase": "collect darts",
+      "label": "hand meets dart 1",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 150,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-c9c54e28f72b212e.png",
+      "phase": "collect darts",
+      "label": "dart 1 removed",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-8c519d8cb1243373.png",
+      "phase": "collect darts",
+      "label": "retract with dart 1",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 110,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-8c519d8cb1243373.png",
+      "phase": "collect darts",
+      "label": "reach toward dart 2",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 110,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-c9c54e28f72b212e.png",
+      "phase": "collect darts",
+      "label": "hand meets dart 2",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 150,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-c9c54e28f72b212e.png",
+      "phase": "collect darts",
+      "label": "dart 2 removed",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-8c519d8cb1243373.png",
+      "phase": "collect darts",
+      "label": "retract with dart 2",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 110,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-8c519d8cb1243373.png",
+      "phase": "collect darts",
+      "label": "reach toward dart 3",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 110,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-c9c54e28f72b212e.png",
+      "phase": "collect darts",
+      "label": "hand meets dart 3",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 150,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-c9c54e28f72b212e.png",
+      "phase": "collect darts",
+      "label": "dart 3 removed",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-8c519d8cb1243373.png",
+      "phase": "collect darts",
+      "label": "retract with dart 3",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 110,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-a172a8a01a387a21.png",
+      "phase": "collection complete",
+      "label": "byte-exact Prime side neutral",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-e1dc020aabfe8f3b.png",
+      "phase": "turn at board",
+      "label": "approved side-right → back · F2",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-34028d8821a7272a.png",
+      "phase": "turn at board",
+      "label": "approved side-right → back · F3",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0d278363a0e7e4f1.png",
+      "phase": "turn at board",
+      "label": "approved side-right → back · F4",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-f827ac61f45aaaa4.png",
+      "phase": "turn at board",
+      "label": "approved side-right → back · F5",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-fe06522abd0cd55c.png",
+      "phase": "turn at board",
+      "label": "approved side-right → back · F6",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-d55afae023051e29.png",
+      "phase": "turn at board",
+      "label": "approved side-right → back · F7",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-bb530610cf0e17bf.png",
+      "phase": "turn at board",
+      "label": "approved side-right → back · F8",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-31dbac4efc00089f.png",
+      "phase": "turn at board",
+      "label": "approved side-right → back · F9",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-bb530610cf0e17bf.png",
+      "phase": "turn at board",
+      "label": "approved back → side-left · F8",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-d55afae023051e29.png",
+      "phase": "turn at board",
+      "label": "approved back → side-left · F7",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-fe06522abd0cd55c.png",
+      "phase": "turn at board",
+      "label": "approved back → side-left · F6",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-f827ac61f45aaaa4.png",
+      "phase": "turn at board",
+      "label": "approved back → side-left · F5",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0d278363a0e7e4f1.png",
+      "phase": "turn at board",
+      "label": "approved back → side-left · F4",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-34028d8821a7272a.png",
+      "phase": "turn at board",
+      "label": "approved back → side-left · F3",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-e1dc020aabfe8f3b.png",
+      "phase": "turn at board",
+      "label": "approved back → side-left · F2",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-c097d78aac2d2c52.png",
+      "phase": "turn at board",
+      "label": "approved back → side-left · F1",
+      "rootXLp": 155.5,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-e54546ba14b4e5f7.png",
+      "phase": "walk back to oche",
+      "label": "approved acceleration · 2 ku",
+      "rootXLp": 155.25,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0169b3642905389d.png",
+      "phase": "walk back to oche",
+      "label": "approved acceleration · 6 ku",
+      "rootXLp": 154.5,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-9f4192beb8fecbc8.png",
+      "phase": "walk back to oche",
+      "label": "approved acceleration · 12 ku",
+      "rootXLp": 153,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0e80ea65610452c9.png",
+      "phase": "walk back to oche",
+      "label": "approved acceleration · 18 ku",
+      "rootXLp": 150.75,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-2b8e91de747b527d.png",
+      "phase": "walk back to oche",
+      "label": "approved Walk V6 · F2",
+      "rootXLp": 148.125,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-b376254e9c29da38.png",
+      "phase": "walk back to oche",
+      "label": "approved Walk V6 · F3",
+      "rootXLp": 145.5,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-982646b0b0e6f3f9.png",
+      "phase": "walk back to oche",
+      "label": "approved Walk V6 · F4",
+      "rootXLp": 142.875,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-545e7338151e6e5a.png",
+      "phase": "walk back to oche",
+      "label": "approved Walk V6 · F5",
+      "rootXLp": 140.25,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-17d007eee75c2e86.png",
+      "phase": "walk back to oche",
+      "label": "approved Walk V6 · F6",
+      "rootXLp": 137.625,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-dbf5b3849624cec7.png",
+      "phase": "walk back to oche",
+      "label": "approved Walk V6 · F7",
+      "rootXLp": 135,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-cf8c53e7ffa703a5.png",
+      "phase": "walk back to oche",
+      "label": "approved Walk V6 · F8",
+      "rootXLp": 132.375,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0e80ea65610452c9.png",
+      "phase": "walk back to oche",
+      "label": "approved Walk V6 · F1",
+      "rootXLp": 129.75,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-9f4192beb8fecbc8.png",
+      "phase": "walk back to oche",
+      "label": "approved deceleration · 18 ku",
+      "rootXLp": 127.5,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0169b3642905389d.png",
+      "phase": "walk back to oche",
+      "label": "approved deceleration · 12 ku",
+      "rootXLp": 126,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-e54546ba14b4e5f7.png",
+      "phase": "walk back to oche",
+      "label": "approved deceleration · 6 ku",
+      "rootXLp": 125.25,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-a172a8a01a387a21.png",
+      "phase": "walk back to oche",
+      "label": "approved deceleration · 2 ku",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 83.33333333333333,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-e1dc020aabfe8f3b.png",
+      "phase": "turn at oche",
+      "label": "approved side-left → back · F2",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-34028d8821a7272a.png",
+      "phase": "turn at oche",
+      "label": "approved side-left → back · F3",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0d278363a0e7e4f1.png",
+      "phase": "turn at oche",
+      "label": "approved side-left → back · F4",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-f827ac61f45aaaa4.png",
+      "phase": "turn at oche",
+      "label": "approved side-left → back · F5",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-fe06522abd0cd55c.png",
+      "phase": "turn at oche",
+      "label": "approved side-left → back · F6",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-d55afae023051e29.png",
+      "phase": "turn at oche",
+      "label": "approved side-left → back · F7",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-bb530610cf0e17bf.png",
+      "phase": "turn at oche",
+      "label": "approved side-left → back · F8",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-31dbac4efc00089f.png",
+      "phase": "turn at oche",
+      "label": "approved side-left → back · F9",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": true,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-bb530610cf0e17bf.png",
+      "phase": "turn at oche",
+      "label": "approved back → side-right · F8",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-d55afae023051e29.png",
+      "phase": "turn at oche",
+      "label": "approved back → side-right · F7",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-fe06522abd0cd55c.png",
+      "phase": "turn at oche",
+      "label": "approved back → side-right · F6",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-f827ac61f45aaaa4.png",
+      "phase": "turn at oche",
+      "label": "approved back → side-right · F5",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0d278363a0e7e4f1.png",
+      "phase": "turn at oche",
+      "label": "approved back → side-right · F4",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-34028d8821a7272a.png",
+      "phase": "turn at oche",
+      "label": "approved back → side-right · F3",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-e1dc020aabfe8f3b.png",
+      "phase": "turn at oche",
+      "label": "approved back → side-right · F2",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-c097d78aac2d2c52.png",
+      "phase": "turn at oche",
+      "label": "approved back → side-right · F1",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 62.5,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 2 · dart 1 anticipation",
+      "label": "Prime redraw throw core · dart 1 · F1",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 170,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 2,
+      "throwNumber": 1,
+      "coreFrame": 1,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-f8de0aa0d4669153.png",
+      "phase": "set 2 · dart 1 anticipation",
+      "label": "Prime redraw throw core · dart 1 · F2",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 220,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 2,
+      "throwNumber": 1,
+      "coreFrame": 2,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-934c40edc9ed19c0.png",
+      "phase": "set 2 · dart 1 anticipation",
+      "label": "Prime redraw throw core · dart 1 · F3",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 230,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 2,
+      "throwNumber": 1,
+      "coreFrame": 3,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-bd1f9e228b6c22a8.png",
+      "phase": "set 2 · dart 1 anticipation",
+      "label": "Prime redraw throw core · dart 1 · F4",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 210,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 2,
+      "throwNumber": 1,
+      "coreFrame": 4,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-067af07a727abfe1.png",
+      "phase": "set 2 · dart 1 anticipation",
+      "label": "Prime redraw throw core · dart 1 · F5",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 175,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 2,
+      "throwNumber": 1,
+      "coreFrame": 5,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-fae0deec1267ba58.png",
+      "phase": "set 2 · dart 1 flight",
+      "label": "Prime redraw throw core · dart 1 · F6",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 2,
+      "throwNumber": 1,
+      "coreFrame": 6,
+      "flyingDart": {
+        "number": 1,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 28.6,
+        "progress": 0.08
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0cdcbd13f83bffc5.png",
+      "phase": "set 2 · dart 1 flight",
+      "label": "Prime redraw throw core · dart 1 · F7",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 115,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 2,
+      "throwNumber": 1,
+      "coreFrame": 7,
+      "flyingDart": {
+        "number": 1,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 28.6,
+        "progress": 0.3
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-5cdffcf9007cca9e.png",
+      "phase": "set 2 · dart 1 flight",
+      "label": "Prime redraw throw core · dart 1 · F8",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 2,
+      "throwNumber": 1,
+      "coreFrame": 8,
+      "flyingDart": {
+        "number": 1,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 28.6,
+        "progress": 0.55
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-5cdffcf9007cca9e.png",
+      "phase": "set 2 · dart 1 flight",
+      "label": "Prime redraw throw core · dart 1 · F9",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 2,
+      "throwNumber": 1,
+      "coreFrame": 9,
+      "flyingDart": {
+        "number": 1,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 28.6,
+        "progress": 0.78
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-819b71aed60f6fba.png",
+      "phase": "set 2 · dart 1 flight",
+      "label": "Prime redraw throw core · dart 1 · F10",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 0,
+      "setNumber": 2,
+      "throwNumber": 1,
+      "coreFrame": 10,
+      "flyingDart": {
+        "number": 1,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 28.6,
+        "progress": 1
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 2 · dart 1 flight",
+      "label": "Prime redraw throw core · dart 1 · F11",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 115,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 2,
+      "throwNumber": 1,
+      "coreFrame": 11,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 2 · dart 1 recovery",
+      "label": "Prime redraw throw core · dart 1 · F12",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 150,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 2,
+      "throwNumber": 1,
+      "coreFrame": 12,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 2 · dart 1 recovery",
+      "label": "Prime redraw throw core · dart 1 · F13",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 175,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 2,
+      "throwNumber": 1,
+      "coreFrame": 13,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 2 · dart 1 recovery",
+      "label": "Prime redraw throw core · dart 1 · F14",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 150,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 2,
+      "throwNumber": 1,
+      "coreFrame": 14,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 2 · dart 2 anticipation",
+      "label": "Prime redraw throw core · dart 2 · F1",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 170,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 2,
+      "throwNumber": 2,
+      "coreFrame": 1,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-f8de0aa0d4669153.png",
+      "phase": "set 2 · dart 2 anticipation",
+      "label": "Prime redraw throw core · dart 2 · F2",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 220,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 2,
+      "throwNumber": 2,
+      "coreFrame": 2,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-934c40edc9ed19c0.png",
+      "phase": "set 2 · dart 2 anticipation",
+      "label": "Prime redraw throw core · dart 2 · F3",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 230,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 2,
+      "throwNumber": 2,
+      "coreFrame": 3,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-bd1f9e228b6c22a8.png",
+      "phase": "set 2 · dart 2 anticipation",
+      "label": "Prime redraw throw core · dart 2 · F4",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 210,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 2,
+      "throwNumber": 2,
+      "coreFrame": 4,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-067af07a727abfe1.png",
+      "phase": "set 2 · dart 2 anticipation",
+      "label": "Prime redraw throw core · dart 2 · F5",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 175,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 2,
+      "throwNumber": 2,
+      "coreFrame": 5,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-fae0deec1267ba58.png",
+      "phase": "set 2 · dart 2 flight",
+      "label": "Prime redraw throw core · dart 2 · F6",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 2,
+      "throwNumber": 2,
+      "coreFrame": 6,
+      "flyingDart": {
+        "number": 2,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 30.5,
+        "progress": 0.08
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0cdcbd13f83bffc5.png",
+      "phase": "set 2 · dart 2 flight",
+      "label": "Prime redraw throw core · dart 2 · F7",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 115,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 2,
+      "throwNumber": 2,
+      "coreFrame": 7,
+      "flyingDart": {
+        "number": 2,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 30.5,
+        "progress": 0.3
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-5cdffcf9007cca9e.png",
+      "phase": "set 2 · dart 2 flight",
+      "label": "Prime redraw throw core · dart 2 · F8",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 2,
+      "throwNumber": 2,
+      "coreFrame": 8,
+      "flyingDart": {
+        "number": 2,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 30.5,
+        "progress": 0.55
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-5cdffcf9007cca9e.png",
+      "phase": "set 2 · dart 2 flight",
+      "label": "Prime redraw throw core · dart 2 · F9",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 2,
+      "throwNumber": 2,
+      "coreFrame": 9,
+      "flyingDart": {
+        "number": 2,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 30.5,
+        "progress": 0.78
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-819b71aed60f6fba.png",
+      "phase": "set 2 · dart 2 flight",
+      "label": "Prime redraw throw core · dart 2 · F10",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 1,
+      "setNumber": 2,
+      "throwNumber": 2,
+      "coreFrame": 10,
+      "flyingDart": {
+        "number": 2,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 30.5,
+        "progress": 1
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 2 · dart 2 flight",
+      "label": "Prime redraw throw core · dart 2 · F11",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 115,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 2,
+      "throwNumber": 2,
+      "coreFrame": 11,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 2 · dart 2 recovery",
+      "label": "Prime redraw throw core · dart 2 · F12",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 150,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 2,
+      "throwNumber": 2,
+      "coreFrame": 12,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 2 · dart 2 recovery",
+      "label": "Prime redraw throw core · dart 2 · F13",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 175,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 2,
+      "throwNumber": 2,
+      "coreFrame": 13,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 2 · dart 2 recovery",
+      "label": "Prime redraw throw core · dart 2 · F14",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 150,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 2,
+      "throwNumber": 2,
+      "coreFrame": 14,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 2 · dart 3 anticipation",
+      "label": "Prime redraw throw core · dart 3 · F1",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 170,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 2,
+      "throwNumber": 3,
+      "coreFrame": 1,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-f8de0aa0d4669153.png",
+      "phase": "set 2 · dart 3 anticipation",
+      "label": "Prime redraw throw core · dart 3 · F2",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 220,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 2,
+      "throwNumber": 3,
+      "coreFrame": 2,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-934c40edc9ed19c0.png",
+      "phase": "set 2 · dart 3 anticipation",
+      "label": "Prime redraw throw core · dart 3 · F3",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 230,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 2,
+      "throwNumber": 3,
+      "coreFrame": 3,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-bd1f9e228b6c22a8.png",
+      "phase": "set 2 · dart 3 anticipation",
+      "label": "Prime redraw throw core · dart 3 · F4",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 210,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 2,
+      "throwNumber": 3,
+      "coreFrame": 4,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-067af07a727abfe1.png",
+      "phase": "set 2 · dart 3 anticipation",
+      "label": "Prime redraw throw core · dart 3 · F5",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 175,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 2,
+      "throwNumber": 3,
+      "coreFrame": 5,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-fae0deec1267ba58.png",
+      "phase": "set 2 · dart 3 flight",
+      "label": "Prime redraw throw core · dart 3 · F6",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 2,
+      "throwNumber": 3,
+      "coreFrame": 6,
+      "flyingDart": {
+        "number": 3,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 32.2,
+        "progress": 0.08
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0cdcbd13f83bffc5.png",
+      "phase": "set 2 · dart 3 flight",
+      "label": "Prime redraw throw core · dart 3 · F7",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 115,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 2,
+      "throwNumber": 3,
+      "coreFrame": 7,
+      "flyingDart": {
+        "number": 3,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 32.2,
+        "progress": 0.3
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-5cdffcf9007cca9e.png",
+      "phase": "set 2 · dart 3 flight",
+      "label": "Prime redraw throw core · dart 3 · F8",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 2,
+      "throwNumber": 3,
+      "coreFrame": 8,
+      "flyingDart": {
+        "number": 3,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 32.2,
+        "progress": 0.55
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-5cdffcf9007cca9e.png",
+      "phase": "set 2 · dart 3 flight",
+      "label": "Prime redraw throw core · dart 3 · F9",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 2,
+      "throwNumber": 3,
+      "coreFrame": 9,
+      "flyingDart": {
+        "number": 3,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 32.2,
+        "progress": 0.78
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-819b71aed60f6fba.png",
+      "phase": "set 2 · dart 3 flight",
+      "label": "Prime redraw throw core · dart 3 · F10",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 95,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 2,
+      "setNumber": 2,
+      "throwNumber": 3,
+      "coreFrame": 10,
+      "flyingDart": {
+        "number": 3,
+        "startXLp": 133.75,
+        "targetXLp": 160.75,
+        "startYLp": 25.1,
+        "targetYLp": 32.2,
+        "progress": 1
+      }
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 2 · dart 3 flight",
+      "label": "Prime redraw throw core · dart 3 · F11",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 115,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3,
+      "setNumber": 2,
+      "throwNumber": 3,
+      "coreFrame": 11,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 2 · dart 3 recovery",
+      "label": "Prime redraw throw core · dart 3 · F12",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 150,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3,
+      "setNumber": 2,
+      "throwNumber": 3,
+      "coreFrame": 12,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 2 · dart 3 recovery",
+      "label": "Prime redraw throw core · dart 3 · F13",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 175,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3,
+      "setNumber": 2,
+      "throwNumber": 3,
+      "coreFrame": 13,
+      "flyingDart": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "phase": "set 2 · dart 3 recovery",
+      "label": "Prime redraw throw core · dart 3 · F14",
+      "rootXLp": 125,
+      "bottomLp": 52,
+      "durationMs": 150,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "flipX": false,
+      "boardDarts": 3,
+      "setNumber": 2,
+      "throwNumber": 3,
+      "coreFrame": 14,
+      "flyingDart": null
+    }
+  ],
+  "ranges": {
+    "complete": [
+      0,
+      180
+    ],
+    "firstThrowSet": [
+      0,
+      61
+    ],
+    "repeatableActivity": [
+      61,
+      180
+    ],
+    "secondThrowSet": [
+      139,
+      180
+    ]
+  },
+  "reviewEditing": {
+    "nonDestructive": true,
+    "skipOccurrence": true,
+    "skipMatchingAssetEverywhere": true,
+    "inspectSkipped": true,
+    "restoreAll": true,
+    "exportJson": true,
+    "persistence": "browser-local only"
+  },
+  "dartDesign": {
+    "oneVisualComponentForAirborneAndStuck": true,
+    "redFlights": true,
+    "darkRibbedBarrel": true,
+    "steelShaftAndTip": true,
+    "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v8/sources/rendered/keeper_dart_prime_v1.png",
+    "sourceSha256": "7f49cea617fb6c556e0d03983bea0c42b8eeed262fddb5c391ee3a5414378d01",
+    "vectorSource": "art/drafts/keeper-prime-darts-context-2026-10-17-v8/sources/vector/keeper_dart_prime_v1.svg",
+    "vectorSha256": "ca422e43a65e189ea72e7248baee33ee4021d7272f787508ff6c92bb00c8c843",
+    "sameAssetAirborneAndStuck": true,
+    "matchesHandDart": "red flights, dark ribbed barrel, long silver shaft and point"
+  },
+  "correction": {
+    "removedRedundantTurnToCameraFrames": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213
+    ],
+    "coreAnchorLp": [
+      16,
+      40
+    ],
+    "reason": "The 448px action cells keep the Prime foot axis at source x=128 (16 lp), not the cell midpoint x=224 (28 lp)."
+  },
+  "boardDesign": {
+    "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v8/sources/rendered/keeper_dartboard_edge_on_v1.png",
+    "sourceSha256": "a7362b443f1b2eb505b46fe31e27c4a371df3d639d13f9f707bd56a32a02f205",
+    "vectorSource": "art/drafts/keeper-prime-darts-context-2026-10-17-v8/sources/vector/keeper_dartboard_edge_on_v1.svg",
+    "vectorSha256": "19ac2fba75777938aa874bcbb99a4feb59f8ab431238155ef6e45df60cb78d7e",
+    "projection": "acute edge-on ellipse",
+    "recognisableFeatures": [
+      "alternating black/cream sectors",
+      "red/green double ring",
+      "red/green treble ring",
+      "outer bull",
+      "red bullseye",
+      "wood casing"
+    ]
+  },
+  "propGeometry": {
+    "dartLengthLp": 7.25,
+    "dartHeightLp": 1.6,
+    "releaseTailXLp": 133.75,
+    "embeddedTailXLp": 160.75,
+    "boardFaceXLp": 168,
+    "boardLeftLp": 167.35,
+    "boardTopLp": 25.25,
+    "boardWidthLp": 3.15,
+    "boardHeightLp": 10.5,
+    "releaseCentreYLp": 25.1,
+    "impactCentresYLp": [
+      28.6,
+      30.5,
+      32.2
+    ]
+  }
+}

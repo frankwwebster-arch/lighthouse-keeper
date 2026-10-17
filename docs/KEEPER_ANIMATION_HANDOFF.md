@@ -71,9 +71,10 @@ All 84 throw-core anchors are corrected to `[16,40]`. Old F20 now joins directly
 to old F29/new F21 at the same root; their rendered 8× stages are byte-identical
 with zero changed pixels. The resulting route has 181 frames. Throw timing,
 dart flight/impact, collection, necessary board/oche turns and every retained
-out-of-scope frame remain exact. The active selector is
+out-of-scope frame remain exact. Its selector was
 `/keeper-review/keeper-prime-context-workbench-v8/`. V2/V7/V8 remain candidates;
-nothing entered Final, runtime or production.
+nothing entered Final, runtime or production. Workbench V9 and Darts Context
+V8, described below, are the active review pages.
 
 Production delivery was verified from deploy commit
 `baf1f4b8c33bd01c04a09a4ca150d2afc351ab0b`. Darts V7 decoded all 32 unique
@@ -81,6 +82,20 @@ sprite images, exposed the expected
 181-frame route and rendered live F20 and F21 with no changed stage pixels.
 Workbench V8 loaded all ten choices with the corrected Darts V7 route selected
 as its playable candidate. This is delivery verification only, not approval.
+
+Frank then found that V7's CSS flight darts were blockier and shorter than the
+dart visible in the Prime release pose, crossed the board plane before snapping
+back, and landed in a placeholder oval rather than a convincing dartboard.
+`/keeper-review/keeper-prime-darts-context-v8/` is the reversible correction.
+It preserves all 181 V7 Keeper frames, roots, timing, state and controls. A
+single transparent, gutter-safe 7.25-lp dart drawing supplies all 30 airborne
+frames and every embedded state. The final airborne and following embedded
+renderings have identical image bytes, dimensions and coordinates; the tip is
+clamped at the x=168-lp board face. A separate high-resolution acute-angle
+board has visible alternating sectors, double/treble rings and bull while
+remaining only 3.15 lp deep in the room view. Workbench V9 selects this route
+and reuses V8's unchanged inventory. V8/V9 are unapproved review candidates;
+nothing entered Final, runtime or production.
 
 The superseded V6 delivery was verified on 17 October 2026 from deploy commit
 `2e2f39d798bbf65e11e5aa78da7fd5f1d931cc91`. Darts Context V6 loaded and
@@ -154,7 +169,7 @@ separate palette correction and remains unapproved.
 Darts V1 is preserved rejected provenance only: its action frames drifted
 toward three-quarter view and snapped against the exact side endpoint. Darts
 V2 is immutable superseded provenance. Darts V3 remains the immutable
-pre-isolation contextual candidate. Darts V4 is the current reversible playable
+pre-isolation contextual candidate. Darts V4 is an earlier reversible playable
 candidate at `/keeper-review/keeper-prime-darts-context-v4/`. It substitutes
 the fourteen isolated core cells into V3's route but keeps all 213 frame slots,
 timings, roots, ranges and approved transition assets unchanged.

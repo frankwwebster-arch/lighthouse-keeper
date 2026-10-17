@@ -15,7 +15,7 @@ hash, outfit, facing, endpoint, dependency, current family, treatment and
 required contextual route.
 
 The active selectable contextual review is
-`/keeper-review/keeper-prime-context-workbench-v8/`. It deliberately contains
+`/keeper-review/keeper-prime-context-workbench-v9/`. It deliberately contains
 only ten routes or inspection views whose current status can be stated
 confidently, and labels approved authorities separately from unapproved
 candidates. The corrected
@@ -34,7 +34,7 @@ the unsafe 7×2 rectangular extraction of the fourteen generated throw poses
 with whole-component ownership, removes 256 measured neighbouring-actor pixels
 and keeps four detached projectiles out of the character cells. All endpoints
 and approved posture bridges are unchanged; palette work remains separate.
-Workbench V8 makes the corrected Prime-redrawn Darts V7 route the main Darts
+Workbench V9 makes the corrected Prime-redrawn Darts V8 route the main Darts
 choice while
 retaining the immutable V2 inspector and isolation comparison. V5 keeps all
 213 V4 route slots, timings, roots and sprite sources, but adds non-destructive
@@ -49,7 +49,11 @@ posture detours and used a false 28-lp action-cell midpoint, causing a 12-lp
 backward jump. Context V7 removes those 32 redundant frames, uses the true
 16-lp Prime foot axis and proves a zero-pixel F20→F21 neutral seam. Its 181
 retained frames preserve all required action mechanics; V2/V7 remain
-unapproved and unpromoted.
+unapproved and unpromoted. Context V8 preserves all 181 V7 Keeper frames and
+route data while using one detailed 7.25-lp dart drawing for release-to-impact
+continuity. Each flight stops exactly on the board plane and the next embedded
+state is identical; the board is a proper segmented edge-on target rather than
+a generic oval. V8 and Workbench V9 are review drafts, not Final/runtime art.
 Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before
 creating or assessing another action.

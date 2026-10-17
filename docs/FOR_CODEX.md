@@ -15,7 +15,7 @@ The deterministic inventory is
 `data/keeper-prime-animation-bank-audit-v1.json` (308 rows; 159 legacy endpoint
 risks; 28 explicitly rejected/excluded; zero strip/sidecar geometry mismatches).
 The active selectable contextual reviewer is
-`/keeper-review/keeper-prime-context-workbench-v8/`; it includes only ten
+`/keeper-review/keeper-prime-context-workbench-v9/`; it includes only ten
 status-labelled routes whose present state can be defended and links the full
 inventory. V3 retains V2's fix for V1's deployed relative-URL/trailing-slash
 loader failure and localised native-route images, and adds the inspection-only
@@ -53,8 +53,13 @@ posture bridges and placed the 448-pixel action cells on a false 28-lp midpoint
 instead of their actual 16-lp Prime foot axis. Darts Context V7 removes old
 frames 21–28, 71–78, 156–163 and 206–213, corrects all 84 core anchors, and
 deterministically proves that its F20→F21 stop-to-action seam has zero changed
-rendered pixels. Workbench V8 links V7 and the unchanged core inspector. None
-of V2/V7/V8 is approved or promoted.
+rendered pixels. Workbench V9 links Darts Context V8 and the unchanged core
+inspector. Context V8 changes no Keeper pose, root, timing or state from V7:
+it adds one gutter-safe hand-matched dart asset used for all 30 flight frames
+and all embedded states, clamps every dart tip to x=168 lp, and replaces the
+placeholder rim with a segmented acute-angle board. The final airborne and
+first embedded renderings are byte-identical. None of V2/V7/V8/Workbench V9
+is approved or promoted.
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 

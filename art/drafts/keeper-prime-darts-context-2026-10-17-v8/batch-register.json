@@ -1,0 +1,248 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-darts-context-2026-10-17-v8",
+  "status": "harmonised-dart-and-board-awaiting-frank",
+  "purpose": "Match the airborne/embedded dart to the release-pose design, prevent board overshoot, and replace the rim placeholder with a recognisable acute-angle dartboard.",
+  "predecessor": {
+    "register": "art/drafts/keeper-prime-darts-context-2026-10-17-v7/batch-register.json",
+    "sha256": "24ba28bb115894f03d72cb430d7ae7c8a5180c55f2d0e22cc480e7a146300002",
+    "route": "art/drafts/keeper-prime-darts-context-2026-10-17-v7/keeper-prime-darts-context-v7.json",
+    "routeSha256": "c7aa002fcf6408ee6c353d4ef5d3dabd2d6ced60d4fdb89de8b97187224ccc11"
+  },
+  "candidate": {
+    "routeData": "art/drafts/keeper-prime-darts-context-2026-10-17-v8/keeper-prime-darts-context-v8.json",
+    "routeDataSha256": "c9ae9f4eb70f36f83a722a6f0d28baa6926d2657bad0eaaf76b5fe570ca62240",
+    "page": "public/keeper-review/keeper-prime-darts-context-v8/index.html",
+    "pageSha256": "b1dfd0691a8b717756891e8401de862527ad97ba27b03794f61a158d3cfa593a",
+    "app": "public/keeper-review/keeper-prime-darts-context-v8/app.js",
+    "appSha256": "eb842f71def5395108d3c8c20c1e16956e5a1adf9955d30567b1673b351375cf"
+  },
+  "propArt": {
+    "dart": {
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v8/sources/rendered/keeper_dart_prime_v1.png",
+      "sourceSha256": "7f49cea617fb6c556e0d03983bea0c42b8eeed262fddb5c391ee3a5414378d01",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/dart-7f49cea617fb6c55.png"
+    },
+    "dartVector": {
+      "file": "art/drafts/keeper-prime-darts-context-2026-10-17-v8/sources/vector/keeper_dart_prime_v1.svg",
+      "sha256": "ca422e43a65e189ea72e7248baee33ee4021d7272f787508ff6c92bb00c8c843"
+    },
+    "board": {
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v8/sources/rendered/keeper_dartboard_edge_on_v1.png",
+      "sourceSha256": "a7362b443f1b2eb505b46fe31e27c4a371df3d639d13f9f707bd56a32a02f205",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/dartboard-a7362b443f1b2eb5.png"
+    },
+    "boardVector": {
+      "file": "art/drafts/keeper-prime-darts-context-2026-10-17-v8/sources/vector/keeper_dartboard_edge_on_v1.svg",
+      "sha256": "19ac2fba75777938aa874bcbb99a4feb59f8ab431238155ef6e45df60cb78d7e"
+    }
+  },
+  "geometry": {
+    "dartLengthLp": 7.25,
+    "dartHeightLp": 1.6,
+    "releaseTailXLp": 133.75,
+    "embeddedTailXLp": 160.75,
+    "boardFaceXLp": 168,
+    "boardLeftLp": 167.35,
+    "boardTopLp": 25.25,
+    "boardWidthLp": 3.15,
+    "boardHeightLp": 10.5,
+    "releaseCentreYLp": 25.1,
+    "impactCentresYLp": [
+      28.6,
+      30.5,
+      32.2
+    ]
+  },
+  "checks": {
+    "routeFrameCountUnchanged": true,
+    "keeperPixelsRootsTimingBoardStateExact": true,
+    "oneDartAssetAirborneAndStuck": true,
+    "finalAirborneAndEmbeddedTailExact": true,
+    "dartTipNeverBeyondBoardFace": true,
+    "dartAndBoardTransparentGuttersRequired": true,
+    "allUniqueImagesPreloadedAndDecoded": true
+  },
+  "publishedAssets": [
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+      "sourceSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0e80ea65610452c9.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f2.png",
+      "sourceSha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-2b8e91de747b527d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f3.png",
+      "sourceSha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-b376254e9c29da38.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f4.png",
+      "sourceSha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-982646b0b0e6f3f9.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f5.png",
+      "sourceSha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-545e7338151e6e5a.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f6.png",
+      "sourceSha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-17d007eee75c2e86.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f7.png",
+      "sourceSha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-dbf5b3849624cec7.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f8.png",
+      "sourceSha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-cf8c53e7ffa703a5.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f4.png",
+      "sourceSha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-9f4192beb8fecbc8.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f3.png",
+      "sourceSha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0169b3642905389d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f2.png",
+      "sourceSha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-e54546ba14b4e5f7.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f1.png",
+      "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-a172a8a01a387a21.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v2/drafts/core/keeper_prime_darts-core-right_f01.png",
+      "sourceSha256": "47846a685e4831e739a7f470659a6fb94523cc334304cb8f8855cdfa54722f1a",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v2/drafts/core/keeper_prime_darts-core-right_f02.png",
+      "sourceSha256": "f8de0aa0d4669153a919492ec0ecf60d96b47e8373ad9591196260275cd6e686",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-f8de0aa0d4669153.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v2/drafts/core/keeper_prime_darts-core-right_f03.png",
+      "sourceSha256": "934c40edc9ed19c0e892b290ba01f372d43006ead04e47492f5a87c562c3bcd5",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-934c40edc9ed19c0.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v2/drafts/core/keeper_prime_darts-core-right_f04.png",
+      "sourceSha256": "bd1f9e228b6c22a8aecd8b4d14e1bd27ca021f83a1ce2eb0a8bcca526d9a3825",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-bd1f9e228b6c22a8.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v2/drafts/core/keeper_prime_darts-core-right_f05.png",
+      "sourceSha256": "067af07a727abfe142c16026ba8f70ec558d66af327fbc27c29e81237ab545e3",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-067af07a727abfe1.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v2/drafts/core/keeper_prime_darts-core-right_f06.png",
+      "sourceSha256": "fae0deec1267ba583219098393f3eb6943996650456b1ab8f6a572bd22f12bf2",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-fae0deec1267ba58.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v2/drafts/core/keeper_prime_darts-core-right_f07.png",
+      "sourceSha256": "0cdcbd13f83bffc51bd07b0d5efb8b56e8ce242d9ffff5980750653b9d291481",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0cdcbd13f83bffc5.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v2/drafts/core/keeper_prime_darts-core-right_f08.png",
+      "sourceSha256": "5cdffcf9007cca9e3f62f1c8ee219da55e6e59d27f8ba373b81b3e95e1dd4884",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-5cdffcf9007cca9e.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v2/drafts/core/keeper_prime_darts-core-right_f10.png",
+      "sourceSha256": "819b71aed60f6fba3d67ea0ba840dd97a7cab6781c2d396bf1ab8ddf13d1be6c",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-819b71aed60f6fba.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-transitions-2026-10-15-v1/drafts/frames/keeper_prime_door-reach-right_partial.png",
+      "sourceSha256": "8c519d8cb1243373874d5b5d084c83c406746fb6d9947ddfaaeaa85793909fa3",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-8c519d8cb1243373.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stair-transitions-2026-10-15-v1/drafts/frames/keeper_prime_door-reach-right_full.png",
+      "sourceSha256": "c9c54e28f72b212e902b04e6800261bf4b5d3f908e113911dc1830fba3fe571d",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-c9c54e28f72b212e.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f02.png",
+      "sourceSha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-e1dc020aabfe8f3b.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f03.png",
+      "sourceSha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-34028d8821a7272a.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f04.png",
+      "sourceSha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0d278363a0e7e4f1.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f05.png",
+      "sourceSha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-f827ac61f45aaaa4.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f06.png",
+      "sourceSha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-fe06522abd0cd55c.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f07.png",
+      "sourceSha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-d55afae023051e29.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f08.png",
+      "sourceSha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-bb530610cf0e17bf.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f09.png",
+      "sourceSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-31dbac4efc00089f.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f01.png",
+      "sourceSha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-c097d78aac2d2c52.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v8/sources/rendered/keeper_dart_prime_v1.png",
+      "sourceSha256": "7f49cea617fb6c556e0d03983bea0c42b8eeed262fddb5c391ee3a5414378d01",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/dart-7f49cea617fb6c55.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v8/sources/rendered/keeper_dartboard_edge_on_v1.png",
+      "sourceSha256": "a7362b443f1b2eb505b46fe31e27c4a371df3d639d13f9f707bd56a32a02f205",
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/dartboard-a7362b443f1b2eb5.png"
+    }
+  ],
+  "approvalBoundary": {
+    "v1DrawingFamilyApproved": true,
+    "v2CoreApproved": false,
+    "contextualV8Approved": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false,
+    "promotionAllowed": false
+  },
+  "rollback": "Delete only art/drafts/keeper-prime-darts-context-2026-10-17-v8 and public/keeper-review/keeper-prime-darts-context-v8; Darts Context V1–V7 and every authority remain unchanged."
+}
