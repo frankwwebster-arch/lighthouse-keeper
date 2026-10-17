@@ -55,3 +55,24 @@ content-addressed review archive plus preload/decode gating.
 
 No Keeper animation, production sprite, manifest, register, Final asset or live
 game path was changed.
+
+## Production review-page verification
+
+The review-only page was deployed by commit `fab2d85` (`Deploy: Kitchen V15
+clean Option-B review [deploy]`). On 17 October 2026 the production route
+returned HTTP 200:
+
+`https://lighthouse-keeper-mu.vercel.app/keeper-review/kitchen-option-b-clean-surface-v15/`
+
+The production media resolver returned HTTP 307 for the 9-bay room image,
+declared archive hash
+`f5b70d0d22f7a82b98812e584c3175669a63236d04e79a346cefd0ef5ab518dc`,
+and the followed immutable object returned HTTP 200. Its downloaded SHA-256
+matched the raw V15 room byte-for-byte.
+
+The final documentation audit compared the recipe, builder, catalogue,
+verifier, archive manifest, production response and unchanged runtime hashes.
+`README.md` and `docs/DECISIONS.md` both identify V14 as rejected, V5 as the
+visual authority, Option B as the required geometry and V15 as review-only.
+Setup, deployment, archive and rollback instructions in `docs/DEPLOYMENT.md`
+remain accurate and required no change.
