@@ -1,0 +1,14 @@
+{
+  "version": 27,
+  "preserves": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "rejectedSourceRetained": "table-broken-snapped-rejected-source.png",
+  "rollback": "Delete only the V27 source/raw/draft/review files, archive set, builder, verifier and V27 documentation."
+}

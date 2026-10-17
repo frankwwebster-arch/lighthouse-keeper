@@ -1,0 +1,392 @@
+{
+  "version": 27,
+  "status": "broken-state-loop-draft-awaiting-visual-confirmation",
+  "densityPxPerLp": 4,
+  "frames": 8,
+  "fps": 8,
+  "base": {
+    "version": 25,
+    "roomSha256": "175d77c063297c435eab468f297c369f79e5491b89bbdd2b03400d31cd334f4a",
+    "changed": false
+  },
+  "chairCorrection": {
+    "primeSourceSha256": "28a879bcee43c6d06330d05fb3cd74b4098b2ccce38ce41d15117f5fb0be5167",
+    "chairBackForegroundRestored": true,
+    "tableRemainsBehind": true
+  },
+  "sources": {
+    "bin-broken-source.png": "a58715e64f3b4e10281903a9a629a4087f783a42dd7dbd8fd1470956c3d15dba",
+    "bowl-broken-source.png": "003f1869605f8275aea60dc760e0e06f512ccc1028fc0a52c680c614b496e9b3",
+    "fridge-broken-source.png": "02deff857cfecbcaf000fb25b770cbfcd04ac3298fafe7709d7d480cc3a44d98",
+    "kettle-broken-source.png": "feea1aa7cdd53fc8bb16059ff20c09ba045fa6dd1e94f4f340b76c41222db8ed",
+    "oven-broken-source.png": "f87457505baa5677911e646fbad6c70dc39f0bf13eaf0531f66e7ac2e48f6de8",
+    "sink-broken-source.png": "72fc9150ebbeade9ec223197656917782be9c6f0c1161f194e7e91e46ff58ef8",
+    "table-broken-snapped-rejected-source.png": "e6a20054098446b59e9abb434f4b9f01d47e7d7b49724b5e2e8a68827a71bb55",
+    "table-broken-source.png": "04e543aedbfa2d0fdc0df926f0d2da3f86ddbc07759117a30d0cf0dabbf523e1",
+    "toaster-broken-source.png": "0e68fb298b05e6dea76176239c69b01365ec646b24cd77a9d9270b79e0c84e1a"
+  },
+  "reusedEffectSources": {
+    "smoke": {
+      "file": "art/raw/floor-asset-catalogue/fx_broken_smoke_f8.png",
+      "sha256": "ff892d9fd096467f7c5428c64e0b3ab3e09017e4eb08d4a0ecaab5d905be9e94"
+    },
+    "sparks": {
+      "file": "art/raw/floor-asset-catalogue/fx_broken_sparks_f6.png",
+      "sha256": "8f7373c57c96a490fa99928c1d11234f0f3d361cae49efa954f123a946e838fd"
+    }
+  },
+  "clips": {
+    "bin": {
+      "file": "bin-broken-cycle-f8.png",
+      "sha256": "9b57091a9564647bcc54279dc77a8e7fe20b4489123a2f102fe65d861e54cee1",
+      "w": 20,
+      "h": 30,
+      "frames": 8,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        10,
+        28
+      ],
+      "loop": true,
+      "sfxCues": [
+        {
+          "frame": 0,
+          "cue": "kitchen_bin_flies_loop"
+        }
+      ]
+    },
+    "fridge": {
+      "file": "fridge-broken-cycle-f8.png",
+      "sha256": "a43ed729ef8d6ef980510f71ee8f70a8093ca17158986e2604f2e27e8609f191",
+      "w": 32,
+      "h": 40,
+      "frames": 8,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        16,
+        38
+      ],
+      "loop": true,
+      "sfxCues": [
+        {
+          "frame": 0,
+          "cue": "kitchen_fridge_electrical_buzz_loop"
+        },
+        {
+          "frame": 2,
+          "cue": "kitchen_fridge_crackle"
+        },
+        {
+          "frame": 6,
+          "cue": "kitchen_fridge_drip"
+        }
+      ]
+    },
+    "kettle": {
+      "file": "kettle-broken-cycle-f8.png",
+      "sha256": "1c336678bcc540b66f204ddbcef173bb77069fb72f94b3b61bc37fa78fb3869f",
+      "w": 28,
+      "h": 40,
+      "frames": 8,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        14,
+        38
+      ],
+      "loop": true,
+      "sfxCues": [
+        {
+          "frame": 0,
+          "cue": "kitchen_kettle_whistle_loop"
+        },
+        {
+          "frame": 2,
+          "cue": "kitchen_kettle_rattle"
+        },
+        {
+          "frame": 6,
+          "cue": "kitchen_kettle_rattle"
+        }
+      ]
+    },
+    "toaster": {
+      "file": "toaster-broken-cycle-f8.png",
+      "sha256": "0cf1a607426476277a17c55db001dfd333c1ed75bc330af61b389c9b58dbd024",
+      "w": 28,
+      "h": 40,
+      "frames": 8,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        14,
+        38
+      ],
+      "loop": true,
+      "sfxCues": [
+        {
+          "frame": 0,
+          "cue": "kitchen_toaster_fire_loop"
+        },
+        {
+          "frame": 4,
+          "cue": "kitchen_toaster_crackle"
+        }
+      ]
+    },
+    "oven": {
+      "file": "oven-broken-cycle-f8.png",
+      "sha256": "cde0b2288ef21c48e750083a13e508ddeaf1f2fa3438bd5fdd9f47abf6ba4b8e",
+      "w": 36,
+      "h": 40,
+      "frames": 8,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        18,
+        38
+      ],
+      "loop": true,
+      "sfxCues": [
+        {
+          "frame": 0,
+          "cue": "kitchen_oven_smoulder_loop"
+        },
+        {
+          "frame": 3,
+          "cue": "kitchen_oven_hob_flare"
+        },
+        {
+          "frame": 7,
+          "cue": "kitchen_oven_hob_flare"
+        }
+      ]
+    },
+    "bowl": {
+      "file": "bowl-broken-cycle-f8.png",
+      "sha256": "8dbe08d371d9e92fdc3c9cafe55e07f22f26a0f62e5825b7971a63ebd06f0ce5",
+      "w": 28,
+      "h": 40,
+      "frames": 8,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        14,
+        38
+      ],
+      "loop": true,
+      "sfxCues": [
+        {
+          "frame": 4,
+          "cue": "kitchen_bowl_ceramic_tinkle"
+        }
+      ]
+    },
+    "sink": {
+      "file": "sink-broken-cycle-f8.png",
+      "sha256": "4c06a86a81f84e35bedae0392419dfef9cce6a812bb11e18ae527ef810b9b20f",
+      "w": 28,
+      "h": 40,
+      "frames": 8,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        14,
+        38
+      ],
+      "loop": true,
+      "sfxCues": [
+        {
+          "frame": 0,
+          "cue": "kitchen_sink_water_jet_loop"
+        },
+        {
+          "frame": 4,
+          "cue": "kitchen_sink_pipe_rattle"
+        }
+      ]
+    },
+    "table": {
+      "file": "table-broken-cycle-f8.png",
+      "sha256": "6127589d56141a7d28420e2f03a5281f3770c222b88a65308a23240980732738",
+      "w": 32,
+      "h": 28,
+      "frames": 8,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        16,
+        26
+      ],
+      "loop": true,
+      "sfxCues": [
+        {
+          "frame": 0,
+          "cue": "kitchen_table_creak"
+        },
+        {
+          "frame": 4,
+          "cue": "kitchen_table_creak"
+        }
+      ]
+    }
+  },
+  "effects": {
+    "smell": {
+      "file": "fx-smell-cycle-f8.png",
+      "sha256": "f6c98c7653ae65629ccc7597ca2e1079ca7fec31214ba7a44ebd32ff210078b2",
+      "w": 16,
+      "h": 20,
+      "frames": 8,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        8,
+        19
+      ],
+      "loop": true,
+      "reusable": true
+    },
+    "smoke_black": {
+      "file": "fx-smoke-black-cycle-f8.png",
+      "sha256": "012dd21b20599656dccc5e931459f755d53113c89f726881b6907af25e166f1b",
+      "w": 12,
+      "h": 16,
+      "frames": 8,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        6,
+        15
+      ],
+      "loop": true,
+      "reusable": true
+    },
+    "smoke_light": {
+      "file": "fx-smoke-light-cycle-f8.png",
+      "sha256": "012dd21b20599656dccc5e931459f755d53113c89f726881b6907af25e166f1b",
+      "w": 12,
+      "h": 16,
+      "frames": 8,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        6,
+        15
+      ],
+      "loop": true,
+      "reusable": true
+    },
+    "steam": {
+      "file": "fx-steam-cycle-f8.png",
+      "sha256": "bf3c3351be14b1c60d32ea23dd24fe0a8f95cfee619a35c14f66afcab885a58e",
+      "w": 12,
+      "h": 16,
+      "frames": 8,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        6,
+        15
+      ],
+      "loop": true,
+      "reusable": true
+    },
+    "flame": {
+      "file": "fx-flame-cycle-f8.png",
+      "sha256": "04f2217b79a272d96846183981a93e976c25fea31bfe7121c7944c4e427bb44c",
+      "w": 12,
+      "h": 16,
+      "frames": 8,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        6,
+        15
+      ],
+      "loop": true,
+      "reusable": true
+    },
+    "water": {
+      "file": "fx-water-cycle-f8.png",
+      "sha256": "6b52e1f2693db12479ade9c65fa5da26e134c5fa9b653a8906d68d4f33fdf864",
+      "w": 12,
+      "h": 24,
+      "frames": 8,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        6,
+        23
+      ],
+      "loop": true,
+      "reusable": true
+    },
+    "sparks": {
+      "file": "fx-sparks-cycle-f8.png",
+      "sha256": "24145ca86b288b4181bb55c3efb322807e21eee875d264cd94c9cd110b23d838",
+      "w": 12,
+      "h": 12,
+      "frames": 8,
+      "fps": 8,
+      "density": 4,
+      "anchor": [
+        6,
+        11
+      ],
+      "loop": true,
+      "reusable": true
+    }
+  },
+  "effectPlacements": {
+    "bin": [
+      "smell"
+    ],
+    "fridge": [
+      "smoke_light",
+      "sparks",
+      "water_leak"
+    ],
+    "kettle": [
+      "steam",
+      "vibration"
+    ],
+    "toaster": [
+      "flame"
+    ],
+    "oven": [
+      "smoke_black",
+      "flame:left_hob",
+      "flame:right_hob"
+    ],
+    "bowl": [
+      "ceramic_glint"
+    ],
+    "sink": [
+      "water",
+      "water_leak"
+    ],
+    "table": [
+      "wobble"
+    ]
+  },
+  "roomLoop": {
+    "file": "kitchen-broken-full-room-cycle-f8.png",
+    "sha256": "2b454236225d8de2c5a2885b2c5c6bbb2c6924bc3bfa318df0d8c8561f1f9165",
+    "w": 193,
+    "h": 56,
+    "frames": 8,
+    "fps": 8,
+    "density": 4,
+    "loop": true
+  },
+  "boundaries": {
+    "approved": false,
+    "promoted": false,
+    "runtimeChanged": false,
+    "canonicalChanged": false,
+    "v20ThroughV26Changed": false
+  }
+}

@@ -218,6 +218,11 @@ export default {
         destination: '/keeper-review/kitchen-game-scale-prime-v26/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-broken-loops-v27',
+        destination: '/keeper-review/kitchen-broken-loops-v27/index.html',
+        permanent: false,
+      },
     ]
   },
 }
