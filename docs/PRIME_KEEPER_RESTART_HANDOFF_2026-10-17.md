@@ -205,6 +205,11 @@ the exact frame-32 seated ghost is enabled by default to expose any future
 drift. This remains a review candidate only: V1–V3 stay rejected and V4 has not
 been approved or promoted.
 
+V4 is committed at `fd81f83` and its exact production review deployment is
+`e1ea5d0`. The live page was verified on 18 October 2026 at frame 28 through
+frame 32 with all 28 unique images decoded and the frame-32 seated ghost
+enabled. Publishing this reviewer is not artwork approval or promotion.
+
 For every subsequent versioned review candidate, publishing and verifying the
 review page is part of preparing it for Frank. Open the live frame reviewer and
 send its production link before requesting comments or an approval decision;
