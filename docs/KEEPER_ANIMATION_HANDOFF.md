@@ -97,6 +97,15 @@ remaining only 3.15 lp deep in the room view. Workbench V9 selects this route
 and reuses V8's unchanged inventory. V8/V9 are unapproved review candidates;
 nothing entered Final, runtime or production.
 
+Production delivery was verified from deploy commit
+`eec56b0c0be5fc27fb30cf17c177fe33c8fd6068`. Darts Context V8 loaded and
+decoded all 32 unique sprite images and exposed all 181 route frames. Live
+frame 30's last airborne dart and frame 31's embedded dart rendered to the same
+SHA-256 (`2a69a58447597517248951f540da619a45a888531dabe94f42b66f382bd258ae`)
+at identical coordinates. Workbench V9 loaded all ten choices and decoded its
+22 unique native-route images before enabling playback. This records delivery
+only; it is not Frank's approval of V8 or V9.
+
 The superseded V6 delivery was verified on 17 October 2026 from deploy commit
 `2e2f39d798bbf65e11e5aa78da7fd5f1d931cc91`. Darts Context V6 loaded and
 decoded all 40 unique sprite images; occurrence skip and restore changed the
