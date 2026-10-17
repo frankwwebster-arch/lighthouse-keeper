@@ -72,7 +72,28 @@ remains fixed in the far cap, takes no bay and is always last.
 
 ## Verification and delivery
 
-The focused verifier and complete test suite must pass after review media are
-archived. Production deployment details are recorded here after release.
+Delivered content commit: `b8d5708`
+
+Kitchen deployment marker: `fc2fbe6`
+
+Production review:
+`https://lighthouse-keeper-mu.vercel.app/keeper-review/kitchen-v5-exact-rollback-v17/`
+
+Verified after archive and before release:
+
+- focused exact-copy verifier: passed;
+- raw V5/V17 trees: 94 files, identical relative paths and SHA-256 values;
+- archived review media: 153 images, identical byte counts, SHA-256 values and
+  content-addressed objects to V5;
+- asset families: 10;
+- room pieces: stair cap, repeat, far closed and far open;
+- room compositions: nine bay and twelve bay;
+- full repository suite: 18 test files and 179 tests passed;
+- runtime, Keeper, Final and production sprite manifests: unchanged;
+- production page: HTTP 200;
+- production nine-bay room image: resolver HTTP 307 to the immutable archive,
+  then HTTP 200 with SHA-256
+  `97692918da57cbebd37daf1e129a0544e4edf97bf2e9c2bf796242d24751a6fd`,
+  exactly matching the V5 source object.
 
 Nothing in this hand-back approves, promotes or wires the art.
