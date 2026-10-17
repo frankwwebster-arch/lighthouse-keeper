@@ -11,7 +11,7 @@
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
 
-## Whole-bank audit and Context Workbench V4 — 17 October 2026
+## Whole-bank audit and Context Workbench V5 — 17 October 2026
 
 The production bank now has a deterministic 308-row audit in
 `data/keeper-prime-animation-bank-audit-v1.json`, with a human summary in
@@ -24,9 +24,9 @@ and 31 transitions. There are 159 legacy endpoint risks, 28 explicitly
 rejected/excluded entries and no measured strip/sidecar geometry mismatches.
 
 The active review selector is
-`/keeper-review/keeper-prime-context-workbench-v4/`. V4 exposes nine choices:
+`/keeper-review/keeper-prime-context-workbench-v5/`. V5 exposes nine choices:
 approved stop/walk/stop; an approved-component walk/stop/180° turn/walk
-composition; the corrected Darts V3 candidate; the complete approved stair
+composition; the corrected Darts V4 candidate; the complete approved stair
 ascent;
 the approved stair descent; the approved ladder motion route; and the
 unapproved six-view seated foundation; a dedicated 30-frame inspector for
@@ -40,7 +40,9 @@ V3 retains V2's full-width 8× pane, localised native-route images and
 deployment-safe root-absolute URLs. V2 fixed V1's deployed trailing-slash bug,
 which returned HTML to its relative
 `catalog.json` request and locked the controls. V1 and V2 remain immutable
-provenance. V3 remains immutable and V4 adds no approval or promotion.
+provenance. V3 and V4 remain immutable. V5 replaces the playable Darts V3 link
+with Darts V4 while retaining both diagnostic pages; it adds no approval or
+promotion.
 
 The strip inspector is
 `/keeper-review/keeper-prime-darts-strip-inspector-v1/`. It changes no art.
@@ -71,9 +73,11 @@ separate palette correction and remains unapproved.
 
 Darts V1 is preserved rejected provenance only: its action frames drifted
 toward three-quarter view and snapped against the exact side endpoint. Darts
-V2 is immutable superseded provenance. Darts V3 is the current reversible
-candidate at `/keeper-review/keeper-prime-darts-context-v3/`. It reuses every
-V2 character-action pixel byte-for-byte but corrects the room and route logic.
+V2 is immutable superseded provenance. Darts V3 remains the immutable
+pre-isolation contextual candidate. Darts V4 is the current reversible playable
+candidate at `/keeper-review/keeper-prime-darts-context-v4/`. It substitutes
+the fourteen isolated core cells into V3's route but keeps all 213 frame slots,
+timings, roots, ranges and approved transition assets unchanged.
 The cupboard door is closed and seen edge-on, so only the thin door rim and
 dartboard edge are visible. The board centre is y=30.5 lp and the collection
 root x=155.5 lp, aligning its plane with the approved full-reach hand. The
@@ -82,7 +86,10 @@ flights visibly reach and stick in the board, walks one complete 30.5-lp
 stop-to-stop route to collect them, turns once at the board, walks the same
 full stride back, turns once at the oche and throws three again. The 213-frame
 route contains exactly two turn events. Its repeatable range starts and ends
-on identical Prime pixels, x=125 root and three-darts-on-board state. This
+on identical Prime pixels, x=125 root and three-darts-on-board state. V4 uses
+the corrected core 84 times across its six throws and retains full-route,
+activity-loop, first-set and once-through playback plus frame stepping and
+speed controls. This
 remains unapproved and changes no Final, runtime, production or approval
 record.
 

@@ -15,7 +15,7 @@ The deterministic inventory is
 `data/keeper-prime-animation-bank-audit-v1.json` (308 rows; 159 legacy endpoint
 risks; 28 explicitly rejected/excluded; zero strip/sidecar geometry mismatches).
 The active selectable contextual reviewer is
-`/keeper-review/keeper-prime-context-workbench-v4/`; it includes only nine
+`/keeper-review/keeper-prime-context-workbench-v5/`; it includes only nine
 status-labelled routes whose present state can be defended and links the full
 inventory. V3 retains V2's fix for V1's deployed relative-URL/trailing-slash
 loader failure and localised native-route images, and adds the inspection-only
@@ -32,14 +32,16 @@ across core F08–F12/registered F16–F20. The candidate assigns every whole ac
 once, excludes detached projectiles from character cells because Darts V3
 already renders them as independent effects, and preserves registered F01–F08
 and F23–F30 byte-for-byte. It does not yet correct the measured palette drift
-and remains unapproved. The active
-interaction candidate is
-`/keeper-review/keeper-prime-darts-context-v3/`: V2 character pixels reused
-byte-for-byte, a closed cupboard door and edge-on board, six visible flights
+and remains unapproved. The active playable interaction candidate is
+`/keeper-review/keeper-prime-darts-context-v4/`: its complete 213-frame route
+uses the isolated core 84 times across six throws while retaining V3's exact
+timing, roots, frame order, controls, closed cupboard door and edge-on board,
+six visible flights
 and impacts, practical full-reach collection, one turn at the board, one turn
 at the oche, and a 30.5-lp return before the second three-dart set. Its
 repeatable activity seam is exact. Darts V1 is rejected and V2 is superseded
-provenance. Neither Darts V3 nor the seated foundation is approved or promoted.
+provenance; V3 remains immutable pre-isolation context. Neither Darts V4 nor
+the seated foundation is approved or promoted.
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 

@@ -4,7 +4,7 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 
 The active Keeper-art gate is the reversible Prime Keeper whole-bank
 normalisation programme. Its new selector is
-`/keeper-review/keeper-prime-context-workbench-v4/`: every selectable item is
+`/keeper-review/keeper-prime-context-workbench-v5/`: every selectable item is
 shown at 8×, proposed 4× game presentation and literal 1×, with frame stepping,
 speed, looping, exact-Prime and adjacent-frame ghosts, and switches to include
 or omit its preceding and finishing transitions. The active version contains
@@ -15,7 +15,7 @@ relative-catalogue URL fault and uses a full-width large-inspection pane; V3
 retains those fixes and adds the inspection-only
 `/keeper-review/keeper-prime-darts-strip-inspector-v1/`. All 30 inherited V2
 cells can be stepped at exact/enlarged source resolution with Prime/adjacent
-overlays and deterministic blue/navy/cream comparisons. V4 additionally links
+overlays and deterministic blue/navy/cream comparisons. V4 additionally linked
 the reversible `/keeper-review/keeper-prime-darts-isolation-v1/` correction.
 That audit proved the tightly packed generated source was not genuinely cell
 safe: source-core F07, F11 and F12 (registered F15, F19 and F20) inherited 256
@@ -24,11 +24,14 @@ source F08–F12 (registered F16–F20). The new candidate rebuilds only the
 fourteen throw-core cells from whole connected actor components, keeps flying
 darts as separate effects, and preserves all sixteen Prime/approved bridge
 cells byte-for-byte. Palette correction remains a separate future gate. Darts
-V3 is `/keeper-review/keeper-prime-darts-context-v3/`: its closed cupboard door
-and board are edge-on, every dart visibly flies and sticks, the Keeper collects
+V4 is `/keeper-review/keeper-prime-darts-context-v4/`: it restores the complete
+playable route using those isolated cells while retaining V3's timing, root
+motion, frame order and controls. Its closed cupboard door and board are edge-on,
+every dart visibly flies and sticks, the Keeper collects
 the first three at the approved reach height, turns only at the board and
 oche, returns one exact 30.5-lp stop-to-stop stride and throws three again.
-Nothing was promoted or wired into runtime.
+Nothing was promoted or wired into runtime. Workbench V5 makes Darts V4 the
+playable choice while retaining both diagnostic pages.
 
 All 308 production animations and technical neutrals—not merely those eight—
 are measured in
