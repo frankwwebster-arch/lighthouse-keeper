@@ -1,0 +1,194 @@
+{
+  "version": 15,
+  "status": "reversible-draft",
+  "scope": "clean-option-b-countertops",
+  "recipe": {
+    "path": "data/kitchen_option_b_clean_surface_v15_recipe.json",
+    "sha256": "66e5be21c83681440ddc2f961d83a5f0bea245c065707f83c0377c973865efeb"
+  },
+  "optionBRecipe": {
+    "path": "data/kitchen_countertop_option_b_recipe.json",
+    "sha256": "fabc2a41400ce6bf423db685fb561e84ff44c9e4ca6e21262ff54607ac53e615"
+  },
+  "v5TreeSha256": "81ff9c2658741899030e468d40c1e651dcc5ac584a70cc5abf20588ba17be4ac",
+  "v6TreeSha256": "1c16688536b26f1b4f2485619017fe6735a79d63ef9ee9345d29d556d866a28d",
+  "runtimeSpriteManifestSha256": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
+  "animationWorkbenchFinalStateSha256": "6c349a70f591cba21016cf9a7a49424b971d8aed895504ba775ebd158017c658",
+  "runtimeChanged": false,
+  "finalChanged": false,
+  "keeperChanged": false,
+  "outputs": [
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/kettle_option_b_surface_template.json",
+      "sha256": "ff8e4157fdfcd3ce59082cef17ed3add61fae0b3c3e704c0dc2f4cd3ca4f1792"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/kettle_option_b_surface_template.png",
+      "sha256": "3e8332a12f6d625c6ae6d3270df0a234d72f909deddba2e916e52002b9c6d563"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/mixer_option_b_surface_template.json",
+      "sha256": "ff8e4157fdfcd3ce59082cef17ed3add61fae0b3c3e704c0dc2f4cd3ca4f1792"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/mixer_option_b_surface_template.png",
+      "sha256": "e152a157d7a40a27451a7daa6acf2d638505d7d9a0639c04d862d6921a288088"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_kettle_broken_f4.json",
+      "sha256": "dd46e157a6fbc6f92f640b257487f5d18c5d4a08d20b44fd7cf52e6e6a0b5fb9"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_kettle_broken_f4.png",
+      "sha256": "ee826a6bea9e2214baf04986b0579d49d696e0c30d1c71a273cf8d307be88a80"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_kettle_on_f4.json",
+      "sha256": "dd46e157a6fbc6f92f640b257487f5d18c5d4a08d20b44fd7cf52e6e6a0b5fb9"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_kettle_on_f4.png",
+      "sha256": "5a5c436b64be677774fee633ce58fd7c8cfbbc168da550a0d2eecfc16ef28897"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_kettle_standard_f1.json",
+      "sha256": "c20fff3aebb2448e59261b235c63499765f7bc6b9f5005122f125464e9483da6"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_kettle_standard_f1.png",
+      "sha256": "4fac6f943a6a448bc5650dd251e8aee0c0f6ce75710193bee1dabf20b0969771"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_mixer_broken_f4.json",
+      "sha256": "3816ea798e0d10ced1f9c327427c70cc532147b4d858a63079240a423e052b38"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_mixer_broken_f4.png",
+      "sha256": "ecc8b72db1a2a299ef8da27568b14bf57a58b3d3bc9a0c1fd639a71ae92f4549"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_mixer_on_f4.json",
+      "sha256": "3816ea798e0d10ced1f9c327427c70cc532147b4d858a63079240a423e052b38"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_mixer_on_f4.png",
+      "sha256": "6cdedbe1c054cabfc3c0d5ccee8a64c62f808da76461f411029cc49965ecdbcc"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_mixer_standard_f1.json",
+      "sha256": "4c2ae3de032562fa6239435b839c56444aab088ddecf7b142c457de23c55d2a8"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_mixer_standard_f1.png",
+      "sha256": "2bef88e9c3533e3d76092f4d30a6fcd64da98fc9f30b0fc3ba7edc86f547f55e"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_sink_broken_f4.json",
+      "sha256": "726e051070d5b5cdb161e8dd5fe1dc6f459193749d6597203ded46460a5a10dd"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_sink_broken_f4.png",
+      "sha256": "1454182ec99da52949e91cf02303aa70950437c61ad0a4dfc97073c7ec29ff7c"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_sink_dishes1_f1.json",
+      "sha256": "7ac383723b9864417f75baa21230fae337d370793e39bd951cf9b62ae3ad2c7e"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_sink_dishes1_f1.png",
+      "sha256": "313a23145db099cd3b3f02c98fcec20791eec6be6790a2f7f7622d37dac363dd"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_sink_dishes2_f1.json",
+      "sha256": "7ac383723b9864417f75baa21230fae337d370793e39bd951cf9b62ae3ad2c7e"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_sink_dishes2_f1.png",
+      "sha256": "0aa4dd337a881acda94b3b1103e2b3914f13367eb0dd662e3cdccbfb4790dc89"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_sink_dishes3_f1.json",
+      "sha256": "7ac383723b9864417f75baa21230fae337d370793e39bd951cf9b62ae3ad2c7e"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_sink_dishes3_f1.png",
+      "sha256": "1b7b3798cb80f6342f66c47feabeb0066101c35df07345a9b4e3d0106103dd24"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_sink_on_f4.json",
+      "sha256": "726e051070d5b5cdb161e8dd5fe1dc6f459193749d6597203ded46460a5a10dd"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_sink_on_f4.png",
+      "sha256": "19f676dd57ae3b27ef228bb304b16c5f54b77c08d353dd695fbe693ca76d4a6d"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_sink_standard_f1.json",
+      "sha256": "882e0173c545111d2f09e5a884e01f686de82ade2914493c3b8a8572b373b880"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_sink_standard_f1.png",
+      "sha256": "8d308022e078ae03df93e321a6be306e217df00b995ab185f6af121314506bc2"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_toaster_broken_f4.json",
+      "sha256": "e89a8b48680dd4cb7f872bd91f57d99ebc7c94306c290fce00e3dbc9627ffb3e"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_toaster_broken_f4.png",
+      "sha256": "243ad6bec8574c6bb91514ac479060343a65ba72788a04bf36aa1f4bb4c42368"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_toaster_on_f4.json",
+      "sha256": "e89a8b48680dd4cb7f872bd91f57d99ebc7c94306c290fce00e3dbc9627ffb3e"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_toaster_on_f4.png",
+      "sha256": "175989a05201f2f47048974f3f81cc08463a92e54a18bdb3bb31c1662e11fc75"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_toaster_standard_f1.json",
+      "sha256": "8d65aa851603b1f8c5c786119cc6b42d1522d7427ceaa1b8ea1a093a81d79012"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/obj_toaster_standard_f1.png",
+      "sha256": "e8594ab035862d73a5f3701b225ab1a4736190c64a296e0c3ec215e11da2e782"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/room_kitchen_9bay_v15_clean_option_b.json",
+      "sha256": "94a2029b27853960adef5035df4a29e85751df9fa2790e2aecb20c99a52aa5ea"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/room_kitchen_9bay_v15_clean_option_b.png",
+      "sha256": "f5b70d0d22f7a82b98812e584c3175669a63236d04e79a346cefd0ef5ab518dc"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/sink_option_b_surface_template.json",
+      "sha256": "05eb1ff7c8385ee9104806dcb51bbb9035295ebc90875c96cb7002bfd57c9e6b"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/sink_option_b_surface_template.png",
+      "sha256": "56b66411b840d99fe50cd57e93dc03a1589e1781078c233fd05008d2c96e929b"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/toaster_option_b_surface_template.json",
+      "sha256": "ff8e4157fdfcd3ce59082cef17ed3add61fae0b3c3e704c0dc2f4cd3ca4f1792"
+    },
+    {
+      "path": "art/raw/kitchen-option-b-clean-surface-2026-10-17-v15/toaster_option_b_surface_template.png",
+      "sha256": "cc52bd30ad158cbe98228ff8fd5d540fde0179d6fc204c5faae0052322080d41"
+    },
+    {
+      "path": "art/drafts/kitchen-option-b-clean-surface-2026-10-17-v15/asset-catalogue.json",
+      "sha256": "b92bb7132aba2fbdf672371a4ff901844bb3799ff38085cee68ccc6342ebf140"
+    },
+    {
+      "path": "art/drafts/kitchen-option-b-clean-surface-2026-10-17-v15/review-data.json",
+      "sha256": "320cf471debfb3077e470bbc86aa122a07877274d8750876f613091f8be9e2db"
+    },
+    {
+      "path": "public/keeper-review/kitchen-option-b-clean-surface-v15/index.html",
+      "sha256": "459d8b0a312ef337dbaed8ccbf77c5dc4b26714d1b138268d5f6facfc53f8d71"
+    }
+  ]
+}

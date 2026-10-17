@@ -182,6 +182,13 @@ structural pixel above the fascia outside the appliance silhouette and requires
 V13 to fail as the negative control. Review:
 `/keeper-review/kitchen-countertop-no-splashback-v14/`; recipe:
 [`docs/KITCHEN_COUNTERTOP_NO_SPLASHBACK_V14_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_NO_SPLASHBACK_V14_RECIPE_2026-10-17.md).
+V14 is rejected. Frank identified the actual regression boundary as V5→V6:
+V5 is the visual-quality authority, but the selected Option-B perspective must
+remain. V15 rebuilds one clean 1.5-lp top and 2-lp fascia, preserves exact V5
+pixels outside that band and restores only the V5 appliance silhouette over the
+new plane. Its exact-RGBA wing test covers every state/frame and requires V6 to
+fail. Review: `/keeper-review/kitchen-option-b-clean-surface-v15/`; recipe:
+[`docs/KITCHEN_OPTION_B_CLEAN_SURFACE_V15_RECIPE_2026-10-17.md`](docs/KITCHEN_OPTION_B_CLEAN_SURFACE_V15_RECIPE_2026-10-17.md).
 All kitchen versions remain review drafts: none is approved, promoted or wired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door

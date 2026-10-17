@@ -1,0 +1,42 @@
+{
+  "id": "kitchen-option-b-clean-surface-v15",
+  "status": "reversible-review-draft",
+  "visualAuthority": "kitchen-basic-assets-v5",
+  "geometryAuthority": "kitchen-countertop-option-b-v1",
+  "regressionBoundary": "v5-to-v6",
+  "density": 4,
+  "units": {
+    "obj_kettle": {"states": ["standard", "on", "broken"], "applianceXPxInclusive": [14, 68]},
+    "obj_toaster": {"states": ["standard", "on", "broken"], "applianceXPxInclusive": [12, 72]},
+    "obj_mixer": {"states": ["standard", "on", "broken"], "applianceXPxInclusive": [12, 72]},
+    "obj_sink": {"states": ["standard", "on", "broken"], "overlays": ["dishes1", "dishes2", "dishes3"], "applianceXPxInclusive": [14, 70]}
+  },
+  "surfaceGate": {
+    "topRevealLp": 1.5,
+    "topRevealPx": 6,
+    "fasciaLp": 2,
+    "fasciaPx": 8,
+    "ordinaryWidthLp": 20,
+    "ordinaryWidthPx": 80,
+    "sideGutterPx": 2,
+    "frontAndRearEdges": "horizontal-equal-width",
+    "bodySides": "vertical-parallel",
+    "test": "Every RGBA pixel in both exposed wings of the complete 80 x 14-px Option-B slab must equal one canonical template in every state and frame."
+  },
+  "rules": [
+    "Preserve every V5 pixel outside the declared 14-px countertop reconstruction band.",
+    "Rebuild the full 1.5-lp top and 2-lp fascia as one coherent Option-B plane before restoring only the appliance silhouette.",
+    "Never composite the old V5 countertop or the rejected V6 preserve rectangle over the new plane.",
+    "V6 is a required failing control for the clean-surface gate, not visual source art."
+  ],
+  "room": {
+    "logicalSizeLp": [193, 56],
+    "footLineLp": 52,
+    "fridgeAndPlantShelf": "v10",
+    "recipeBookShelf": "v12",
+    "portholeCutoutAndFrame": "v10",
+    "otherFurniture": "v8"
+  },
+  "runtimeWiring": false,
+  "promotion": false
+}
