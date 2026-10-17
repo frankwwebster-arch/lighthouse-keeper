@@ -1,0 +1,26 @@
+{
+  "id": "kitchen-countertop-no-splashback-v14",
+  "status": "review-draft-authority",
+  "date": "2026-10-17",
+  "baseline": "kitchen-countertop-continuity-v13",
+  "density": 4,
+  "bayWidthLp": 21,
+  "roomHeightLp": 56,
+  "units": {
+    "obj_kettle": {"frontYPx": 48, "applianceXPxInclusive": [14, 68], "fasciaOcclusionXPxInclusive": null},
+    "obj_toaster": {"frontYPx": 36, "applianceXPxInclusive": [18, 66], "fasciaOcclusionXPxInclusive": null},
+    "obj_mixer": {"frontYPx": 52, "applianceXPxInclusive": [14, 69], "fasciaOcclusionXPxInclusive": null},
+    "obj_sink": {"frontYPx": 48, "applianceXPxInclusive": [14, 70], "fasciaOcclusionXPxInclusive": [23, 61]}
+  },
+  "rearZone": {"topOffsetPx": -6, "bottomOffsetPx": -1, "woodPixelsAllowed": 0},
+  "fascia": {"xPxInclusive": [2, 81], "topOffsetPx": 0, "bottomOffsetPx": 7, "heightPx": 8},
+  "testContract": [
+    "No countertop wood or continuous structural ridge may appear above the front fascia in any frame.",
+    "Any legitimate appliance pixel in the former rear zone must stay inside that unit's declared appliance interval.",
+    "The full-width eight-pixel front fascia remains opaque and byte-equal to the Option-B fascia template.",
+    "Only the sink basin may occlude the fascia, and only inside x 23 through 61 inclusive.",
+    "V13 is a required failing control for the no-rear-ridge test.",
+    "The test runs from npm test across standard, on and broken states frame by frame."
+  ],
+  "runtimeWiring": false
+}

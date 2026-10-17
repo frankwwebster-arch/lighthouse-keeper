@@ -1,0 +1,197 @@
+{
+  "version": 14,
+  "status": "reversible-draft",
+  "scope": "remove-rear-countertop-ridge",
+  "recipe": {
+    "path": "data/kitchen_countertop_no_splashback_v14_recipe.json",
+    "sha256": "214b043efd17a6a25cbc0ec09dd42619173d0ae3c6466cf577d6fd3f6573a3ee"
+  },
+  "v13TreeSha256": "51331bb05335a68084ef60532d1cf3d18bb62cc2efc9c2a321efc6f5e5ec8af8",
+  "runtimeSpriteManifestSha256": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
+  "animationWorkbenchFinalStateSha256": "6c349a70f591cba21016cf9a7a49424b971d8aed895504ba775ebd158017c658",
+  "runtimeChanged": false,
+  "finalChanged": false,
+  "keeperChanged": false,
+  "outputs": [
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/kettle_broken.json",
+      "sha256": "9ed4076e2e60d80ee902d7177ca585c58418921e53f0c1f91e3fbeb867397a74"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/kettle_broken.png",
+      "sha256": "99980db4d93feb1de61448aa012d695d1fed6835115bdde289cc2a9ee25d72f4"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/kettle_front_fascia_template.json",
+      "sha256": "5549e7d396f4b8bc2162786534f9eb9296d3f1cd18547a0b06c87fc5a4805f24"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/kettle_front_fascia_template.png",
+      "sha256": "aa28871f9395b748f7762504a6625e1107c79097605e26a67600ad52612f7396"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/kettle_on.json",
+      "sha256": "9ed4076e2e60d80ee902d7177ca585c58418921e53f0c1f91e3fbeb867397a74"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/kettle_on.png",
+      "sha256": "8d3ff5fd9ca00a302f88e07099e673fe7d7d1a0a29b312c17e99f06a269cfb2f"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/kettle_standard.json",
+      "sha256": "86a7ce06b735b76ca37f8c423b08ab22413d780d33d3fc4ca961188e652c3792"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/kettle_standard.png",
+      "sha256": "7c1e6012a717f231bf75305282dcbf85465d4e6bc3cd0896b4dafc4f25e1684f"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/kettle_v13_ridge_control.json",
+      "sha256": "590932fd1348e71ad2b0399b0a0f766e48bec49dfca79e5f412512f84b2265c0"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/kettle_v13_ridge_control.png",
+      "sha256": "f68835481fb77090c24df9dbfe1e0533963e674e45cfc60b4a0411078d4bfacd"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/mixer_broken.json",
+      "sha256": "9ed4076e2e60d80ee902d7177ca585c58418921e53f0c1f91e3fbeb867397a74"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/mixer_broken.png",
+      "sha256": "8601baed39bbcf8f738016f5fbea9b692e50daec7ba42c1bc2677719437206d2"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/mixer_front_fascia_template.json",
+      "sha256": "5549e7d396f4b8bc2162786534f9eb9296d3f1cd18547a0b06c87fc5a4805f24"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/mixer_front_fascia_template.png",
+      "sha256": "037f32912c7ada69a8ee105e12117871c388f1f28bf7c97bb5eba2a241b3dfd3"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/mixer_on.json",
+      "sha256": "9ed4076e2e60d80ee902d7177ca585c58418921e53f0c1f91e3fbeb867397a74"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/mixer_on.png",
+      "sha256": "ea5ada49d02ccba9ed4145b9a51026de6fd725991e885896d8d65fa9529ca6f7"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/mixer_standard.json",
+      "sha256": "86a7ce06b735b76ca37f8c423b08ab22413d780d33d3fc4ca961188e652c3792"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/mixer_standard.png",
+      "sha256": "52aca8e0d68a5df62b0077b77c48048f56bd6b331331a87e3ef2bdb526077446"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/mixer_v13_ridge_control.json",
+      "sha256": "590932fd1348e71ad2b0399b0a0f766e48bec49dfca79e5f412512f84b2265c0"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/mixer_v13_ridge_control.png",
+      "sha256": "bd2bf516112110302cd432062047fabfe0ef88947721ad24221b51dbddb3dae3"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/room_kitchen_9bay_v14_no_splashbacks.json",
+      "sha256": "577d55724acbdbd6605c4cf1bc0e585e34fba4d62b793eff5b71602c3a3ca356"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/room_kitchen_9bay_v14_no_splashbacks.png",
+      "sha256": "bafeec7ef6df64e1d8fe84b9bdbbd89825f4521c38561b3fb3ac10f65bc71fc0"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/sink_broken.json",
+      "sha256": "da500b4f0ff8b2990bb4e42ca7273cba62506569d6073b5a85487b9bc73a6381"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/sink_broken.png",
+      "sha256": "a210fc6472c9859dca75a2bd8ff57426df3b273ab3d373d6ba04afcaf9ab6046"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/sink_front_fascia_template.json",
+      "sha256": "5549e7d396f4b8bc2162786534f9eb9296d3f1cd18547a0b06c87fc5a4805f24"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/sink_front_fascia_template.png",
+      "sha256": "c808bf742bd3af90acaef8040fc6f5335de7e53f5b84e17edda0ed57d4e741e9"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/sink_on.json",
+      "sha256": "da500b4f0ff8b2990bb4e42ca7273cba62506569d6073b5a85487b9bc73a6381"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/sink_on.png",
+      "sha256": "5c55b3afbfe8beb32298c07347dfda72bed2e7ce6054f80e6a390436dbbcca6d"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/sink_standard.json",
+      "sha256": "5b804c519c1970da2e34df694d733cc9b59ce14e772884688529dba43976f78d"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/sink_standard.png",
+      "sha256": "01cfc672f2e8183d1d0180a26e1eb41374a67ce1982f160cd0b70fa72d79b005"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/sink_v13_ridge_control.json",
+      "sha256": "590932fd1348e71ad2b0399b0a0f766e48bec49dfca79e5f412512f84b2265c0"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/sink_v13_ridge_control.png",
+      "sha256": "57210e2a0a022f844765ab786ed435bb8a600354b8ac8e216d6aa884c7705338"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/toaster_broken.json",
+      "sha256": "9ed4076e2e60d80ee902d7177ca585c58418921e53f0c1f91e3fbeb867397a74"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/toaster_broken.png",
+      "sha256": "50c7c4a3bb107e9612ce9e7edaa892379ffa95d85ab5a4f8fe814a9b69c7a461"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/toaster_front_fascia_template.json",
+      "sha256": "5549e7d396f4b8bc2162786534f9eb9296d3f1cd18547a0b06c87fc5a4805f24"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/toaster_front_fascia_template.png",
+      "sha256": "494282f4c274662ac216532a5620b541e34666dcfe90339d4585648bc3f1c953"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/toaster_on.json",
+      "sha256": "9ed4076e2e60d80ee902d7177ca585c58418921e53f0c1f91e3fbeb867397a74"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/toaster_on.png",
+      "sha256": "be0b1b65661edb1bb237f26b87a1ae539f28db5c74a6b6a8227be21af3b4d3a3"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/toaster_standard.json",
+      "sha256": "86a7ce06b735b76ca37f8c423b08ab22413d780d33d3fc4ca961188e652c3792"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/toaster_standard.png",
+      "sha256": "43897b7be40875c105bea11cdeaacc3c38f7a1c362ab285cd5b995ccb91c845e"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/toaster_v13_ridge_control.json",
+      "sha256": "590932fd1348e71ad2b0399b0a0f766e48bec49dfca79e5f412512f84b2265c0"
+    },
+    {
+      "path": "art/raw/kitchen-countertop-no-splashback-2026-10-17-v14/toaster_v13_ridge_control.png",
+      "sha256": "4613a0ae86133e35d6e67adfd0905579912963cc2fe3688aa9ecbe7b2c81ee4c"
+    },
+    {
+      "path": "art/drafts/kitchen-countertop-no-splashback-2026-10-17-v14/asset-catalogue.json",
+      "sha256": "74404d6f2baef7a1024190bff54ace8a39713998db5565aa799e43d99c6fee51"
+    },
+    {
+      "path": "art/drafts/kitchen-countertop-no-splashback-2026-10-17-v14/review-data.json",
+      "sha256": "87c97063034341b847383b2b63c7b19f73f3c754af5cd2d66aaa81618b5e32cd"
+    },
+    {
+      "path": "public/keeper-review/kitchen-countertop-no-splashback-v14/index.html",
+      "sha256": "9d5ab148e99e5d25ac0d9c7b5c8c383a622f4a4df3c9d334468b96ba24642c49"
+    }
+  ]
+}

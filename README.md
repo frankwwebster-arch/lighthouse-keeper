@@ -170,6 +170,13 @@ It compares the full 80 × 14-pixel Option-B slab's exact RGBA structure in ever
 standard, on and broken frame, retaining V10 as a required failing control.
 Review: `/keeper-review/kitchen-countertop-continuity-v13/`; recipe:
 [`docs/KITCHEN_COUNTERTOP_CONTINUITY_V13_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_CONTINUITY_V13_RECIPE_2026-10-17.md).
+V13 is rejected because its rear top reveal still reads as a broken splashback
+where appliances interrupt it. V14 removes that rear ridge entirely and retains
+only one exact, full-width front fascia. Its permanent test rejects any wood or
+structural pixel above the fascia outside the appliance silhouette and requires
+V13 to fail as the negative control. Review:
+`/keeper-review/kitchen-countertop-no-splashback-v14/`; recipe:
+[`docs/KITCHEN_COUNTERTOP_NO_SPLASHBACK_V14_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_NO_SPLASHBACK_V14_RECIPE_2026-10-17.md).
 All kitchen versions remain review drafts: none is approved, promoted or wired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
