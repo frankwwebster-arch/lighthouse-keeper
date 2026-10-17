@@ -195,6 +195,12 @@ pixels outside that band and restores only the V5 appliance silhouette over the
 new plane. Its exact-RGBA wing test covers every state/frame and requires V6 to
 fail. Review: `/keeper-review/kitchen-option-b-clean-surface-v15/`; recipe:
 [`docs/KITCHEN_OPTION_B_CLEAN_SURFACE_V15_RECIPE_2026-10-17.md`](docs/KITCHEN_OPTION_B_CLEAN_SURFACE_V15_RECIPE_2026-10-17.md).
+V15 is rejected: its nominal-band reconstruction left two to four rows of the
+old tapered V5 surface above the replacement. V16 clears from each unit's
+measured first inherited-surface row, restores only a binary wood-rejecting
+appliance silhouette and requires V15 itself to fail the expanded exact-pixel
+gate. Review: `/keeper-review/kitchen-option-b-silhouette-clean-v16/`; recipe:
+[`docs/KITCHEN_OPTION_B_SILHOUETTE_CLEAN_V16_RECIPE_2026-10-17.md`](docs/KITCHEN_OPTION_B_SILHOUETTE_CLEAN_V16_RECIPE_2026-10-17.md).
 All kitchen versions remain review drafts: none is approved, promoted or wired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
