@@ -1,0 +1,54 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-17",
+  "reviewedBy": "Frank",
+  "candidate": "keeper-prime-sit-stand-side-2026-10-17-v6",
+  "decision": "approved-as-side-right-prime-sit-stand-and-seat-geometry-authority",
+  "wording": "approved",
+  "approvedHashes": {
+    "batchRegister": "ddba4891eda13047b6ad2ef59b3c235b2e145e97614d90e57a3eb1e185210cd1",
+    "reviewRoute": "bdbe20485f28675156fe97a1efeba590ffc741f817ce50b1f2c7dd51ac49693e",
+    "workbenchRoute": "59797e2d9637c40bbb7024e0bd68d0d862c3ef9bfda8cd1d0893e83ac67ee909",
+    "seatGeometry": "95170e1850a4dea1ac055ae9bd1f153fa340def2fc5de1fa1b2bd5e020d3334d",
+    "routeData": "3fa0bf73e88fd8ee52805c66d681147ba543b04bca3394797ce7ab2ed2934d84",
+    "keeperFrames": [
+      "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "c0a87d5460ce0af134d6e9dc64dab22625f5a1eda1f631e021052701d91077c1",
+      "109c211066926cb2b3f140755bfe51a4636106c03d75c052e826d6610791d8a1",
+      "7f23f761b211ee53f80c15bf3a0cccdfd90f9e9ab490c260ede66c46174995f0",
+      "6ffe5f0af90c0aa312f4dad276f22642b74360ca396fae743a3c13f640b58c21",
+      "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b"
+    ]
+  },
+  "approvedContract": {
+    "view": "side-right-90",
+    "actionFrames": 6,
+    "contextFrames": 45,
+    "standEndpointExactPrime": true,
+    "seatedEndpointExactRegisteredPrime": true,
+    "sitToStandIsExactReverse": true,
+    "seatHeightAboveFloorLp": 7.75,
+    "seatTopWorldYLp": 44.25,
+    "backrestFrontWorldXLp": 76.625,
+    "seatFrontRimWorldXLp": 83.75,
+    "shinRearWorldXLp": 84.25,
+    "shinClearanceLp": 0.5,
+    "keeperFramesRootsTimingAndEndpointsUnchangedFromV2": true
+  },
+  "delivery": {
+    "candidateDeployCommit": "3a63747aee56a49f9791dbcb57afc01a730bf071",
+    "workbenchDeployCommit": "33eb83b1b935549adcb87a63f16d1e85e8482d86",
+    "reviewUrl": "https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-side-v6/",
+    "workbenchUrl": "https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-context-workbench-v15/"
+  },
+  "approvalBoundary": {
+    "sideRightSitStandApproved": true,
+    "measuredSideRightSeatGeometryApproved": true,
+    "otherSittingDirectionsApproved": false,
+    "workbenchV15RemainsReviewInfrastructure": true,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false,
+    "promotionPerformed": false
+  }
+}

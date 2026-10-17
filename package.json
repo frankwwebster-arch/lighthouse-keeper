@@ -98,6 +98,7 @@
     "verify:keeper-prime-sit-stand-side-v4": "node scripts/verify_keeper_prime_sit_stand_side_v4_delivery.mjs",
     "verify:keeper-prime-sit-stand-side-v5": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_sit_stand_side_v5.mjs",
     "verify:keeper-prime-sit-stand-side-v6": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_sit_stand_side_v6.mjs",
+    "verify:keeper-prime-sit-stand-side-v6-approval": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_sit_stand_side_v6_approval.mjs",
     "verify:keeper-prime-darts-context-v2": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_darts_context_v2.ts",
     "verify:keeper-prime-darts-context-v3": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_darts_context_v3.ts",
     "verify:keeper-prime-darts-context-v4": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_darts_context_v4.ts",

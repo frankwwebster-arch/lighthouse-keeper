@@ -65,8 +65,12 @@ the front face of the backrest equals the visible back/spine contact, and the
 front seat rim ends 0.5 lp behind the rear shin plane. Live review then proved
 that V5's nominal 11-lp surface crossed the pelvis. The measured rear-pelvis
 silhouette ends at source y=257, so V6 begins the support surface at y=258:
-7.75 lp above the fixed floor. V1–V5 remain immutable provenance; V6 remains
-unapproved review art.
+7.75 lp above the fixed floor. Frank approved exact V6 on 17 October 2026;
+its six action cells, 45-frame route, review application and seat geometry are
+hash-pinned in
+`docs/review/keeper-prime-sit-stand-side-v6-approval-2026-10-17.json`.
+V1–V5 remain immutable provenance. This approval does not promote V6 into
+Final, runtime or production.
 Frank approved exact Darts Context V8 on 17 October 2026. Its immutable decision
 is `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
 Workbench V15 remains review infrastructure; nothing entered Final, runtime or
@@ -85,6 +89,8 @@ and explained in
 [`docs/KEEPER_PRIME_ANIMATION_BANK_AUDIT_2026-10-17.md`](docs/KEEPER_PRIME_ANIMATION_BANK_AUDIT_2026-10-17.md).
 The binding redraw and contextual-review rules are
 [`docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md`](docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md).
+The concise restart checkpoint for a fresh Codex task is
+[`docs/PRIME_KEEPER_RESTART_HANDOFF_2026-10-17.md`](docs/PRIME_KEEPER_RESTART_HANDOFF_2026-10-17.md).
 Historical art is motion/contact evidence only; it is never visible-character
 authority. The old swimming, gym and scuba families remain rejected, and the
 deleted `keeper_count_money` amendment remains excluded.

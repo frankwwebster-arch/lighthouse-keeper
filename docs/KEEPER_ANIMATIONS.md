@@ -73,8 +73,11 @@ keeps all animation bytes unchanged and re-registers only the chair: backrest fr
 equals the visible back/spine contact; seat front
 x=83.75 ends 0.5 lp behind the rear shin plane at x=84.25; the measured chair
 top begins at source y=258, 7.75 lp above the floor. The old `keeper_sit_side`
-contributes choreography only. V1–V5 remain immutable history. V6 awaits Frank's review and changes no Final,
-runtime or production sprite.
+contributes choreography only. Frank approved exact V6 on 17 October 2026;
+`docs/review/keeper-prime-sit-stand-side-v6-approval-2026-10-17.json` pins the
+six cells, 45-frame route, review code and measured chair geometry. V1–V5
+remain immutable history. The other sitting directions are not approved, and
+no Final, runtime or production sprite changed.
 Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before
 creating or assessing another action.

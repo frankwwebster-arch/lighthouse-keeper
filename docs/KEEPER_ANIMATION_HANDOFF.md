@@ -15,7 +15,7 @@
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
 
-## Active side-right sit/stand candidate V6 — 17 October 2026
+## Approved side-right sit/stand authority V6 — 17 October 2026
 
 `/keeper-review/keeper-prime-sit-stand-side-v6/` is the current redrafted
 sitting transition. Its complete 45-frame review route is approved Walk V6 →
@@ -53,10 +53,12 @@ measurement contract is `data/keeper_prime_seat_geometry_v3.json`.
 
 The animation art remains in
 `art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/`. V6 and Workbench V15
-are new application-route review candidates that reuse those immutable animation
-and archive bytes. V1–V5 and Workbench V1–V14 remain immutable history. V6 is
-awaiting Frank. Nothing is Final, runtime or production, and the other sitting
-directions must not be inferred from it.
+are application-route review candidates that reuse those immutable animation
+and archive bytes. V1–V5 and Workbench V1–V14 remain immutable history. Frank
+approved exact V6 on 17 October 2026; preserve
+`docs/review/keeper-prime-sit-stand-side-v6-approval-2026-10-17.json`. Nothing
+is Final, runtime or production, and the other sitting directions must not be
+inferred from this approval.
 
 ## Darts Prime complete redraw and contextual route — 17 October 2026
 

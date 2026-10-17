@@ -58,8 +58,12 @@ first embedded renderings are byte-identical. Frank approved exact Context V8
 on 17 October 2026; preserve the hash-pinned decision at
 `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
 Workbench V15 retains every Workbench V11 choice and replaces only the active sitting
-link with the vertically corrected Prime side-right sit/stand V6 context. No Final/runtime/production
-promotion has occurred.
+link with the vertically corrected Prime side-right sit/stand V6 context. Frank
+approved exact V6 on 17 October 2026. Its immutable decision is
+`docs/review/keeper-prime-sit-stand-side-v6-approval-2026-10-17.json`; the other
+five sitting directions remain unapproved. No Final/runtime/production
+promotion has occurred. A fresh task should begin with
+`docs/PRIME_KEEPER_RESTART_HANDOFF_2026-10-17.md`.
 
 Future pub/games-room layout rule: mount the approved dartboard on the
 right-hand cupboard-door leaf. It is edge-on while that door is closed and is
@@ -69,9 +73,9 @@ or cupboard from this note alone; Frank explicitly deferred that work.
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
-## Prime side-right sit/stand V6 (17 Oct 2026)
+## Approved Prime side-right sit/stand V6 (17 Oct 2026)
 
-The active sitting-motion gate is
+The approved side-right sitting-motion authority is
 `/keeper-review/keeper-prime-sit-stand-side-v6/`. It shows the exact V2 45-frame route:
 approved Walk V6 → approved deceleration → new Prime stand-to-sit → a 600 ms
 seated beat → the exact byte-reversed stand → approved acceleration → approved
@@ -95,8 +99,10 @@ x=84.25, leaving 0.5 lp visible clearance. Frank then identified that the
 retains V5's horizontal measurements, and moves only the chair top to the
 first fully transparent row beneath the measured rear pelvis: source y=258,
 world y=44.25, 7.75 lp above the floor. V1–V5 remain immutable history.
-The candidate and Workbench V15 are review infrastructure only; they are not
-Final, runtime or production art.
+Frank approved the exact V6 motion, contextual route and measured side-right
+chair relationship on 17 October 2026. The candidate and Workbench V15 remain
+review infrastructure only; approval did not promote them into Final, runtime
+or production art, and it does not approve the other five sitting directions.
 
 ## Seated Prime foundation V2 (17 Oct 2026)
 

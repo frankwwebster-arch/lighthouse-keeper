@@ -11,8 +11,8 @@ The main furniture datums are:
 
 | Object | Authoritative datum |
 | --- | ---: |
-| Chair / sofa / toilet seat | Legacy runtime datum: 11 px above floor; do not treat it as approved Prime support geometry while V6 is under review |
-| Basic armchair / rocking chair / Lazyboy-style recliner | Review candidate: measured side-right Prime support surface 7.75 px above floor; other orientations must be measured from their approved seated underside rather than inheriting the rejected 11-px row |
+| Chair / sofa / toilet seat | Legacy runtime datum: 11 px above floor; superseded for approved Prime side-right authoring, but unchanged in runtime until separately promoted |
+| Basic armchair / rocking chair / Lazyboy-style recliner | Approved side-right Prime authoring datum: measured support surface 7.75 px above floor; other orientations must be measured from their approved seated underside rather than inheriting the rejected 11-px row |
 | Bed mattress | 9 px above floor |
 | Dining, writing and kitchen surface | 19 px above floor |
 | Workbench | 17 px above floor |
@@ -37,9 +37,12 @@ backrest front is world x=76.625 and exactly meets the visible back/spine
 contact plane; the front rim is x=83.75; and the measured rear shin plane is
 x=84.25, leaving 0.5 px clearance. The review proxy therefore has an 8.625-px
 total side depth and 7.125 px usable depth ahead of the backrest front. These
-values remain review-only until Frank approves V6; they do not rewrite the
-immutable runtime contract. V1–V5 remain rejected/superseded measurement
-provenance rather than a furniture-authoring authority.
+values were approved with exact V6 on 17 October 2026 and are the side-right
+Prime furniture-authoring authority. They do not rewrite the immutable runtime
+contract until a separate promotion is instructed. V1–V5 remain
+rejected/superseded measurement provenance rather than a furniture-authoring
+authority. The approval record is
+`docs/review/keeper-prime-sit-stand-side-v6-approval-2026-10-17.json`.
 
 These are baseline contact dimensions, not object-fitting suggestions. Object
 silhouettes and tiers may change, but their keeper-facing contact points follow
