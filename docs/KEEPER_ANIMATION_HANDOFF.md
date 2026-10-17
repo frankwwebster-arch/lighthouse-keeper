@@ -53,12 +53,29 @@ byte-identical. Historical Darts contributed choreography only.
 
 `/keeper-review/keeper-prime-darts-context-v6/` applies V2 to all 84 core uses
 across six throws. All 213 V5 route positions, roots, durations, board state,
-projectile timing, collection and turns remain exact. The active selector is
-`/keeper-review/keeper-prime-context-workbench-v7/`, which retains ten choices
-and links both the complete route and registered core. V2/V6/V7 are candidates;
+projectile timing, collection and turns remain exact. Its associated selector
+was `/keeper-review/keeper-prime-context-workbench-v7/`, which retained ten
+choices and linked both the complete route and registered core. Nothing entered
+Final, runtime or production.
+
+Frank's moving review then exposed two linked V6 faults at old frames 20–29.
+Old frames 21–28 were an inherited camera-facing posture turn with no action
+purpose, and the old F28→F29 join jumped backward because the 448-pixel action
+cells were positioned on a false 28-lp midpoint. Their actual Prime foot axis
+is source x=128, or 16 lp. V6 is therefore immutable superseded evidence.
+
+`/keeper-review/keeper-prime-darts-context-v7/` is the corrective candidate.
+It removes all four instances of that redundant bridge—old frames 21–28,
+71–78, 156–163 and 206–213—rather than fixing only the first visible symptom.
+All 84 throw-core anchors are corrected to `[16,40]`. Old F20 now joins directly
+to old F29/new F21 at the same root; their rendered 8× stages are byte-identical
+with zero changed pixels. The resulting route has 181 frames. Throw timing,
+dart flight/impact, collection, necessary board/oche turns and every retained
+out-of-scope frame remain exact. The active selector is
+`/keeper-review/keeper-prime-context-workbench-v8/`. V2/V7/V8 remain candidates;
 nothing entered Final, runtime or production.
 
-Production delivery was verified on 17 October 2026 from deploy commit
+The superseded V6 delivery was verified on 17 October 2026 from deploy commit
 `2e2f39d798bbf65e11e5aa78da7fd5f1d931cc91`. Darts Context V6 loaded and
 decoded all 40 unique sprite images; occurrence skip and restore changed the
 live route from 0/213 to 1/213 and back to 0/213; the V2 inspector exposed

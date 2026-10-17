@@ -15,7 +15,7 @@ hash, outfit, facing, endpoint, dependency, current family, treatment and
 required contextual route.
 
 The active selectable contextual review is
-`/keeper-review/keeper-prime-context-workbench-v7/`. It deliberately contains
+`/keeper-review/keeper-prime-context-workbench-v8/`. It deliberately contains
 only ten routes or inspection views whose current status can be stated
 confidently, and labels approved authorities separately from unapproved
 candidates. The corrected
@@ -34,7 +34,7 @@ the unsafe 7×2 rectangular extraction of the fourteen generated throw poses
 with whole-component ownership, removes 256 measured neighbouring-actor pixels
 and keeps four detached projectiles out of the character cells. All endpoints
 and approved posture bridges are unchanged; palette work remains separate.
-Workbench V7 makes the complete Prime-redrawn Darts V6 route the main Darts
+Workbench V8 makes the corrected Prime-redrawn Darts V7 route the main Darts
 choice while
 retaining the immutable V2 inspector and isolation comparison. V5 keeps all
 213 V4 route slots, timings, roots and sprite sources, but adds non-destructive
@@ -43,8 +43,13 @@ component for both flight and board impact. The tenth choice is the registered
 Prime Darts redraw V2 core inspector. Its three wind-up/release/recovery
 authorities come byte-for-byte from the separately approved V1 calibration
 family. V2 adds five Prime-derived bridges and exact neutral holds to form the
-fourteen-slot candidate used by all 84 throw occurrences in Context V6. Route
-mechanics remain exact; V2/V6 remain unapproved and unpromoted.
+fourteen-slot candidate used by all 84 throw occurrences. Context V6 is
+superseded evidence: it retained four eight-frame inherited camera-facing
+posture detours and used a false 28-lp action-cell midpoint, causing a 12-lp
+backward jump. Context V7 removes those 32 redundant frames, uses the true
+16-lp Prime foot axis and proves a zero-pixel F20→F21 neutral seam. Its 181
+retained frames preserve all required action mechanics; V2/V7 remain
+unapproved and unpromoted.
 Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before
 creating or assessing another action.

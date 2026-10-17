@@ -168,6 +168,16 @@ export default {
         destination: '/keeper-review/keeper-prime-context-workbench-v7/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/keeper-prime-darts-context-v7',
+        destination: '/keeper-review/keeper-prime-darts-context-v7/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/keeper-prime-context-workbench-v8',
+        destination: '/keeper-review/keeper-prime-context-workbench-v8/index.html',
+        permanent: false,
+      },
     ]
   },
 }
