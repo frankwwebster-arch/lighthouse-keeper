@@ -46,6 +46,18 @@
       "keeperClips": ["keeper_eat_seated", "keeper_place_cake", "keeper_meal_place_side", "keeper_lean_table_back"],
       "status": "authoritative-datums"
     },
+    "kitchenTableForOneV21": {
+      "surfaceHeight": 14.5,
+      "topThickness": 1.5,
+      "width": 20,
+      "chairCount": 1,
+      "chairSeatTopHeight": 7.75,
+      "chairDepth": 8.625,
+      "chairShinClearance": 0.5,
+      "authority": "data/keeper_prime_seat_geometry_v3.json and the approved Side-right Sit/Stand V6 final seated hand line",
+      "scope": "Kitchen V21 side-right one-person table only; does not replace the general dining-table or runtime datums.",
+      "status": "final-candidate-authoring-datums-awaiting-visual-acceptance"
+    },
     "writingTable": {
       "surfaceHeight": 19,
       "topThickness": 2,

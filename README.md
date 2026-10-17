@@ -273,13 +273,30 @@ and the hand-back is
 V20 is a reversible appearance/construction gate, not an approval or runtime
 promotion; exact V5 remains the only retained old-family reference until Frank
 accepts the fitted replacement.
+Frank's V20 review is implemented in the complete V21 candidate at
+`/keeper-review/kitchen-final-assets-v21/`. The basic oven is now one visibly
+narrower 15-lp single-door appliance inside the unchanged 21-lp fitted bay;
+the V20 double oven is retained as Upgrade 1. V21 also adds the requested
+standalone `10 × 13-lp` pedal bin and a table for one with exactly one chair.
+The chair uses Side-right Sit/Stand V6's measured `7.75-lp` support,
+`8.625-lp` depth and `0.5-lp` shin clearance; its one-person tabletop is
+`14.5 lp` above the floor at the seated Prime hand line. A `193 × 56-lp` room
+shows all basic assets in situ and can swap only the oven bay to Upgrade 1.
+The measured recipe is
+[`docs/KITCHEN_FINAL_ASSETS_V21_RECIPE_2026-10-17.md`](docs/KITCHEN_FINAL_ASSETS_V21_RECIPE_2026-10-17.md)
+and the hand-back is
+[`docs/CODEX_TO_CLAUDE_KITCHEN_FINAL_ASSETS_V21_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_FINAL_ASSETS_V21_2026-10-17.md).
+V21 is a complete final review candidate, but it remains unpromoted and
+unwired pending visual acceptance.
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
 and
 [`docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md).
-Only Kitchen V5 and V20 assets remain. Both are review drafts: neither is
-approved, promoted or wired.
+Only exact Kitchen V5, V20 and V21 remain in active kitchen review tooling.
+V5 is the retained old-family reference, V20 is immutable fitted-galley
+provenance, and V21 is the complete current candidate. None is promoted or
+wired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

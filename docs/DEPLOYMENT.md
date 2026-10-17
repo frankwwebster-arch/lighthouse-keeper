@@ -1,6 +1,6 @@
 # Deployment: workflow, retention and rollback
 
-_Last updated 16 October 2026._
+_Last updated 17 October 2026._
 
 ## Why this exists
 
@@ -144,10 +144,10 @@ explicit release.
 Keeper review media is now stored once outside `public/`, without deleting any
 evidence or changing immutable review-page bytes.
 
-**Measured result (16 October 2026, including Kitchen Basic Assets V5):** 1,831
-review-media paths collapse to 786 unique objects. The paths represent 127.33
-MiB; the unique store is 63.54 MiB. The real `public/` deployment payload is
-44.77 MiB rather than roughly 115 MiB. The archive itself stays in Git but is
+**Measured result (17 October 2026, including Kitchen Final Assets V21):** 1,949
+review-media paths collapse to 1,391 unique objects. The paths represent 161.99
+MiB; the unique store is 84.52 MiB. The real `public/` deployment payload is
+49.61 MiB rather than roughly 115 MiB. The archive itself stays in Git but is
 outside `public/`, so Vercel does not copy those objects into every deployment.
 
 ### How it works

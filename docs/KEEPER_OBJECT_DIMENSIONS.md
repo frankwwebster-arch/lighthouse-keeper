@@ -14,7 +14,8 @@ The main furniture datums are:
 | Chair / sofa / toilet seat | Legacy runtime datum: 11 px above floor; superseded for approved Prime side-right authoring, but unchanged in runtime until separately promoted |
 | Basic armchair / rocking chair / Lazyboy-style recliner | Approved side-right Prime authoring datum: measured support surface 7.75 px above floor; other orientations must be measured from their approved seated underside rather than inheriting the rejected 11-px row |
 | Bed mattress | 9 px above floor |
-| Dining, writing and kitchen surface | 19 px above floor |
+| General dining, writing and standing kitchen surface | 19 px above floor |
+| Kitchen V21 side-right table for one | 14.5 px above floor; 1.5 px thick; 20 px wide; exactly one V6-sized chair |
 | Workbench | 17 px above floor |
 | Low coffee table | 12 px above floor |
 | Door handle | 20 px above floor |
@@ -50,6 +51,15 @@ the reviewed pose. The keeper is never automatically resized to make an object
 work; Frank's saved visual resize is applied first. In particular, the
 cake and plated-meal placement strips now use the 19 px standard table datum;
 the 12 px datum is reserved for genuinely low coffee tables.
+
+Kitchen V21 adds one deliberately narrower scope rather than silently changing
+the general table contract. Its side-right table for one follows the approved
+V6 seated pose: a 7.75-px chair support, 8.625-px chair depth and 0.5-px shin
+clearance, with the tabletop at the visible seated hand line, 14.5 px above
+the floor. The 20-px table has a 1.5-px top and exactly one chair. These values
+are recorded as `kitchenTableForOneV21` in
+`data/keeper_object_dimensions.json`; they do not alter the 19-px general
+dining/writing/standing-worktop datum or any runtime contract.
 
 Widths and depths marked `provisional-envelope` may still be refined when final
 object artwork is made. Heights and contact points marked

@@ -188,6 +188,11 @@ export default {
         destination: '/keeper-review/keeper-prime-context-workbench-v9/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-final-assets-v21',
+        destination: '/keeper-review/kitchen-final-assets-v21/index.html',
+        permanent: false,
+      },
     ]
   },
 }

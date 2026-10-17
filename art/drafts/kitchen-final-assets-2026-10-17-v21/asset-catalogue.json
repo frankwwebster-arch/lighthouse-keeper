@@ -1,0 +1,118 @@
+{
+  "version": 21,
+  "status": "complete-final-candidate-awaiting-visual-acceptance",
+  "base": "kitchen-fitted-galley-v20",
+  "room": {
+    "lp": [
+      193,
+      56
+    ],
+    "pixels": [
+      772,
+      224
+    ],
+    "footLineLp": 52,
+    "foregroundLp": 4
+  },
+  "ovenTiers": {
+    "basic": {
+      "cabinetBayLp": 21,
+      "applianceInsetLp": 15,
+      "doors": 1
+    },
+    "upgrade1": {
+      "source": "V20 oven/grill appearance",
+      "doors": 2
+    }
+  },
+  "pedalBin": {
+    "standalone": true,
+    "widthLp": 10,
+    "heightLp": 13
+  },
+  "tableForOne": {
+    "chairs": 1,
+    "chairSeatSupportLp": 7.75,
+    "chairDepthLp": 8.625,
+    "shinClearanceLp": 0.5,
+    "tabletopLp": 14.5,
+    "tabletopThicknessLp": 1.5,
+    "tableWidthLp": 20,
+    "authority": "/keeper-review/keeper-prime-sit-stand-side-v6"
+  },
+  "assets": [
+    {
+      "label": "Pedal bin",
+      "file": "pedal-bin.png",
+      "note": "Standalone 10 \u00d7 13-lp bin; closed lid and copper foot pedal.",
+      "sha256": "90652f844bd9d6a7ef84b63ee257f6bdc0d8e5817bde3449de192c8ab138f802"
+    },
+    {
+      "label": "Undercounter fridge",
+      "file": "fridge.png",
+      "note": "Exact V20 appearance, one 21-lp fitted bay.",
+      "sha256": "e59142a1ed4d7181daa2b4968061642416e3d3352c1cbd3fd7e053676c25da6c"
+    },
+    {
+      "label": "Kettle counter",
+      "file": "kettle.png",
+      "note": "Exact V20 appearance; kettle remains about 7 lp.",
+      "sha256": "a3b7d1ea445b66a5c72d6c52d290fd9d2e1859342867cbf0f5392db460daad37"
+    },
+    {
+      "label": "Toaster counter",
+      "file": "toaster.png",
+      "note": "Exact V20 appearance; toaster remains about 10 lp.",
+      "sha256": "2bf3b2b2c14c9a87ef2165b45c6cedd3dd109d7ecdeb9b1af79b1a8acf5f97fe"
+    },
+    {
+      "label": "Basic oven",
+      "file": "basic-oven.png",
+      "note": "New compact single-door 15-lp appliance inset in one 21-lp bay.",
+      "sha256": "45658c2649d10efc896d646821b16e12d3a19fc401d04168e00ace3a6f016ba8"
+    },
+    {
+      "label": "Mixing counter",
+      "file": "mixer.png",
+      "note": "Exact V20 appearance.",
+      "sha256": "de45048124ad67398f84ac86c7cf3d359c21334c39422d2fbe1b4bac5238f47f"
+    },
+    {
+      "label": "Sink",
+      "file": "sink.png",
+      "note": "Exact V20 short-faucet appearance.",
+      "sha256": "9bad73df84998eb6187e5ee78a0a9784535c5fc529786060704547f7985f5bb9"
+    },
+    {
+      "label": "Table for one + one chair",
+      "file": "table-chair.png",
+      "note": "V6 chair support/depth with a 14.5-lp one-person tabletop.",
+      "sha256": "bef1250d1d4aeb590dbd297a7ab46c1a184266b5b3e882b101de654e0385d1df"
+    },
+    {
+      "label": "Oven Upgrade 1",
+      "file": "upgrade-oven.png",
+      "note": "Former V20 oven retained as the first upgrade tier.",
+      "sha256": "57b0fdb6c0b2193ab6f481a4b9f45eb4bd19450d7c420eaf2136a7e27eafce2c"
+    }
+  ],
+  "review": {
+    "fullRoom": "full-kitchen.png",
+    "upgradeRoom": "full-kitchen-upgrade1.png",
+    "fitProof": "table-chair-fit.png"
+  },
+  "sources": {
+    "basic-oven-source.png": {
+      "sha256": "0adbd9dd89aea4594dfdc6e601c1855414c5db1b744e186f0f427abd97915423",
+      "generator": "OpenAI built-in image generation"
+    },
+    "pedal-bin-source.png": {
+      "sha256": "c75bca8c78f3e5f46cb8e810004aff5a7bb7fc03d2ef6b162edaed4948cd33b1",
+      "generator": "OpenAI built-in image generation"
+    },
+    "table-chair-source.png": {
+      "sha256": "45a662ca150897caa37443b439b2e99fe1c988ad4493e8020c7d1d3ad0086708",
+      "generator": "OpenAI built-in image generation"
+    }
+  }
+}
