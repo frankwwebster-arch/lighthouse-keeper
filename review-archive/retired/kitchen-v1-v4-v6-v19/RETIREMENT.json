@@ -1,0 +1,34 @@
+{
+  "retiredOn": "2026-10-17",
+  "reason": "Frank retained exact V5 and replaced the disconnected furniture approach with V20; obsolete review routes must not remain published.",
+  "retainedOldFamily": "kitchen-basic-assets-v5",
+  "activeReplacement": "kitchen-fitted-galley-v20",
+  "retiredSets": [
+    "kitchen-basic-assets-v1",
+    "kitchen-basic-assets-v2",
+    "kitchen-basic-assets-v3",
+    "kitchen-basic-assets-v4",
+    "kitchen-basic-assets-v6-option-b",
+    "kitchen-countertop-calibration-v6",
+    "kitchen-room-flat-cutaway-v7",
+    "kitchen-wall-anchored-v8",
+    "kitchen-fridge-shelf-v9",
+    "kitchen-porthole-backdrop-cutout-v10",
+    "kitchen-kettle-recipe-shelf-v11",
+    "kitchen-kettle-recipe-shelf-v12",
+    "kitchen-countertop-continuity-v13",
+    "kitchen-countertop-no-splashback-v14",
+    "kitchen-option-b-clean-surface-v15",
+    "kitchen-option-b-silhouette-clean-v16",
+    "kitchen-v5-exact-rollback-v17",
+    "kitchen-countertop-gate-v18",
+    "kitchen-v5-v18-in-situ-comparison-v19"
+  ],
+  "evidence": {
+    "artTreesRemainInPlace": true,
+    "reviewPages": "review-pages/",
+    "setManifests": "set-manifests/",
+    "mediaObjects": "../../objects/",
+    "publiclyRouted": false
+  }
+}

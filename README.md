@@ -130,9 +130,12 @@ projection authority. The active
 [`flat-cutaway-v1`](docs/KITCHEN_FLAT_CUTAWAY_PROJECTION_SPEC_2026-10-16.md)
 contract uses a straight-on camera, rectangular functional fronts, constant
 Keeper/object scale, no runtime depth scaling, an exact 5-lp horizontal floor
-band and the real 19-lp cooker/hob datum. Kitchen V5 remains the sole visual
-baseline and is restored byte-for-byte by the current V17 review at
-`/keeper-review/kitchen-v5-exact-rollback-v17/`. Frank previously selected
+band and the real 19-lp cooker/hob datum. Exact Kitchen V5 is the sole retained
+cream/brown furniture reference. At Frank's direction, obsolete Kitchen V1–V4
+and V6–V19 routes were removed from public review tooling on 17 October 2026;
+their art, page bytes, manifests and media remain offline under `art/` and
+`review-archive/retired/`. Route names below are historical design provenance
+and are no longer deployed. Frank previously selected
 calibration Option B (1.5-lp visible top), but its V6–V16 implementations are
 now rejected historical evidence. V6 remains preserved at
 `/keeper-review/kitchen-basic-assets-v6-option-b/`. The earlier
@@ -227,8 +230,8 @@ appliance silhouette and requires V15 itself to fail the expanded exact-pixel
 gate. Review: `/keeper-review/kitchen-option-b-silhouette-clean-v16/`; recipe:
 [`docs/KITCHEN_OPTION_B_SILHOUETTE_CLEAN_V16_RECIPE_2026-10-17.md`](docs/KITCHEN_OPTION_B_SILHOUETTE_CLEAN_V16_RECIPE_2026-10-17.md).
 V16 is rejected because the result reads as a double-layered worktop. The
-current review authority is now the complete byte-exact V5 rollback at
-`/keeper-review/kitchen-v5-exact-rollback-v17/`. V17 changes only the review
+historical complete byte-exact V5 rollback was V17; its duplicate assets and
+route are now retained offline rather than published. V17 changed only the review
 URL prefix: all ten families, all states, all room pieces and both room
 compositions match V5 exactly, and the verifier requires the same archived
 image objects and SHA-256 values. Its rollback contract and hand-back are
@@ -244,19 +247,33 @@ It corrects the historical calibration's preserve-box fault, derives the true
 B candidates fail an exact exposed-surface test. The same three candidates are
 shown adjacent on the 52-lp rear-wall foot line with 4 lp of clear foreground
 floor in a neutral, non-timber calibration room. Frank rejected those V18
-units in favour of V5. The current focused comparison is
-`/keeper-review/kitchen-v5-v18-in-situ-comparison-v19/`: it shows the exact,
+units in favour of V5. The final removed focused comparison was V19: it showed the exact,
 unaltered V5 kettle, cooker and sink in precisely the same V18 room function,
 native scale and measured positions, first clean and then with measured guides.
 Rejected V18 remains in the raw comparison record rather than displacing the
 requested V5 view. The pixel verifier pins all six source files and both deterministic composites,
 the identical shared room background and the clear 4-lp foreground channel.
+The new fitted-galley direction is isolated at
+`/keeper-review/kitchen-fitted-galley-v20/`. It replaces the visual premise of
+separate complete cupboards with storm-blue kitchen architecture: exact 21-lp
+bays share one run-wide sea-glass worktop, highlight, fascia and recessed
+plinth, while only the complete run receives outer end caps. The review contains
+the six required appearances and a measured 63 × 56-lp kettle–oven–sink proof.
+Physical scale is now explicit: 60 cm = 21 lp, an 18-cm kettle is about 7 lp,
+and a 28-cm toaster is about 10 lp. The construction recipe is
+[`docs/KITCHEN_FITTED_GALLEY_V20_RECIPE_2026-10-17.md`](docs/KITCHEN_FITTED_GALLEY_V20_RECIPE_2026-10-17.md)
+and the hand-back is
+[`docs/CODEX_TO_CLAUDE_KITCHEN_FITTED_GALLEY_V20_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_FITTED_GALLEY_V20_2026-10-17.md).
+V20 is a reversible appearance/construction gate, not an approval or runtime
+promotion; exact V5 remains the only retained old-family reference until Frank
+accepts the fitted replacement.
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
 and
 [`docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md).
-All kitchen versions remain review drafts: none is approved, promoted or wired.
+Only Kitchen V5 and V20 assets remain. Both are review drafts: neither is
+approved, promoted or wired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

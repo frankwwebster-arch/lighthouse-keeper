@@ -155,10 +155,14 @@ outside `public/`, so Vercel does not copy those objects into every deployment.
 1. **One store, keyed by hash.** Every review asset is stored as
    `review-archive/objects/<sha256[0:2]>/<sha256>.<ext>`. The store stays in git,
    so all evidence remains versioned and reversible.
-2. **One manifest per review set.** The 70 files under
+2. **One manifest per review set.** The files under
    `review-archive/sets/` map every legacy review path to its full object hash,
    byte length, repository object and external URL. `review-archive/index.json`
    is the deterministic route index and records aggregate savings.
+   Retired evidence may remain in `review-archive/objects` without an active
+   legacy path. `review-archive/retired` preserves its pages and old manifests;
+   the archive index counts those retained object bytes but the resolver cannot
+   publish them.
 3. **Immutable HTML stays immutable.** Historical review HTML and approval
    registers keep their original `/keeper-review/...` addresses and original
    SHA-256. Two narrow server routes resolve those addresses and return

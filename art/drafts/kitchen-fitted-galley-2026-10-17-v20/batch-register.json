@@ -1,0 +1,17 @@
+{
+  "version": 20,
+  "status": "review-only-fitted-galley-gate",
+  "approved": false,
+  "promoted": false,
+  "runtimeChanged": false,
+  "finalChanged": false,
+  "keeperChanged": false,
+  "fullStateFamilyBuilt": false,
+  "rollback": "Delete only the V20 source/raw/draft/review directories and V20 scripts/docs.",
+  "protectedSnapshots": {
+    "kitchenV5": "81ff9c2658741899030e468d40c1e651dcc5ac584a70cc5abf20588ba17be4ac",
+    "runtimeSpriteManifest": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
+    "animationWorkbenchFinalState": "6c349a70f591cba21016cf9a7a49424b971d8aed895504ba775ebd158017c658",
+    "approvedKeeperSourceFamily": "a33b0065654d040afe81d863331bc5e6dab0355dc4d6687c8436cf55bda91efb"
+  }
+}

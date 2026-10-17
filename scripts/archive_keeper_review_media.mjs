@@ -111,13 +111,15 @@ for (const [setName, entries] of [...sets.entries()].sort(([a], [b]) => a.locale
   })
 }
 
-const uniqueObjects = new Map()
 let logicalBytes = 0
 for (const entry of Object.values(orderedPaths)) {
   logicalBytes += entry.bytes
-  uniqueObjects.set(entry.object, entry.bytes)
 }
-const uniqueBytes = [...uniqueObjects.values()].reduce((sum, bytes) => sum + bytes, 0)
+// The object store can also contain deliberately retired, unpublished review
+// evidence. Count every retained object so a normal archive refresh never
+// makes the index disagree with the verifier or encourages evidence deletion.
+const retainedObjectFiles = walk(OBJECT_ROOT)
+const uniqueBytes = retainedObjectFiles.reduce((sum, file) => sum + fs.statSync(file).size, 0)
 writeJson(INDEX, {
   version: 1,
   generatedOn: new Date().toISOString().slice(0, 10),
@@ -126,7 +128,7 @@ writeJson(INDEX, {
   stats: {
     setCount: sets.size,
     referenceCount: Object.keys(orderedPaths).length,
-    uniqueObjectCount: uniqueObjects.size,
+    uniqueObjectCount: retainedObjectFiles.length,
     logicalBytes,
     uniqueBytes,
     deduplicatedBytes: logicalBytes - uniqueBytes,
@@ -150,7 +152,7 @@ function walkDirectories(directory) {
 
 console.log(JSON.stringify({
   archivedReferences: Object.keys(orderedPaths).length,
-  uniqueObjects: uniqueObjects.size,
+  uniqueObjects: retainedObjectFiles.length,
   logicalMiB: Number((logicalBytes / 1024 / 1024).toFixed(2)),
   uniqueMiB: Number((uniqueBytes / 1024 / 1024).toFixed(2)),
   savedPerDeploymentMiB: Number((logicalBytes / 1024 / 1024).toFixed(2)),

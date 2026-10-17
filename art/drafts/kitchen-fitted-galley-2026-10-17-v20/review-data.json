@@ -1,0 +1,142 @@
+{
+  "version": 20,
+  "status": "review-only-fitted-galley-gate",
+  "images": {
+    "appearanceSheet": "/keeper-review/kitchen-fitted-galley-v20/assets/isolated-six-appearance-grid.png",
+    "roomProof": "/keeper-review/kitchen-fitted-galley-v20/assets/three-bay-fitted-room.png"
+  },
+  "grid": {
+    "pixelsPerLp": 4,
+    "bayLp": 21,
+    "bayPx": 84,
+    "roomLp": [
+      63,
+      56
+    ],
+    "roomPx": [
+      252,
+      224
+    ],
+    "footLineLp": 52,
+    "foregroundLp": 4
+  },
+  "physicalScale": {
+    "cabinetCm": 60,
+    "cabinetLp": 21,
+    "cmPerLp": 2.857142857142857,
+    "kettle": {
+      "cm": 18,
+      "calculatedLp": 6.3,
+      "targetLp": 7
+    },
+    "toaster": {
+      "cm": 28,
+      "calculatedLp": 9.799999999999999,
+      "targetLp": 10
+    }
+  },
+  "appearances": {
+    "fridge": {
+      "label": "Undercounter fridge",
+      "cellPixels": [
+        108,
+        120
+      ],
+      "appearanceWidthPx": 84,
+      "appearanceWidthLp": 21,
+      "appearanceHeightPx": 74,
+      "status": "appearance-reference-not-runtime-module"
+    },
+    "oven": {
+      "label": "Oven and grill",
+      "cellPixels": [
+        108,
+        120
+      ],
+      "appearanceWidthPx": 84,
+      "appearanceWidthLp": 21,
+      "appearanceHeightPx": 77,
+      "status": "appearance-reference-not-runtime-module"
+    },
+    "kettle": {
+      "label": "Kettle counter",
+      "cellPixels": [
+        108,
+        120
+      ],
+      "appearanceWidthPx": 84,
+      "appearanceWidthLp": 21,
+      "appearanceHeightPx": 99,
+      "status": "appearance-reference-not-runtime-module"
+    },
+    "toaster": {
+      "label": "Toaster counter",
+      "cellPixels": [
+        108,
+        120
+      ],
+      "appearanceWidthPx": 84,
+      "appearanceWidthLp": 21,
+      "appearanceHeightPx": 90,
+      "status": "appearance-reference-not-runtime-module"
+    },
+    "mixer": {
+      "label": "Mixing bowl and spoon",
+      "cellPixels": [
+        108,
+        120
+      ],
+      "appearanceWidthPx": 84,
+      "appearanceWidthLp": 21,
+      "appearanceHeightPx": 88,
+      "status": "appearance-reference-not-runtime-module"
+    },
+    "sink": {
+      "label": "Sink and faucet",
+      "cellPixels": [
+        108,
+        120
+      ],
+      "appearanceWidthPx": 84,
+      "appearanceWidthLp": 21,
+      "appearanceHeightPx": 92,
+      "status": "appearance-reference-not-runtime-module"
+    }
+  },
+  "construction": {
+    "carcassProjection": "orthographic-front-elevation",
+    "illustrativeDepthPercent": 10,
+    "worktopTopPlaneSourcePx": [
+      3,
+      5
+    ],
+    "worktopFasciaSourcePx": [
+      2,
+      3
+    ],
+    "underWorktopShadowSourcePx": [
+      1,
+      2
+    ],
+    "recessedPlinthSourcePx": [
+      2,
+      3
+    ],
+    "internalSeamSourcePx": [
+      1,
+      2
+    ],
+    "sharedAcrossWholeRun": [
+      "worktop",
+      "highlight",
+      "fascia",
+      "plinth"
+    ],
+    "outerCapsOnly": true
+  },
+  "source": {
+    "isolatedSha256": "971cb7d0047c380fbdf1561a06e8d64dcef1e6b20327ec0c0263ebaa49c9db81",
+    "roomSha256": "b1af0ccf926adb6b24b0596eeeac056ff1b32ab14e7ab87560ee7ba44fad3b9a",
+    "generator": "OpenAI image generation, then deterministic Pillow normalization"
+  }
+}
