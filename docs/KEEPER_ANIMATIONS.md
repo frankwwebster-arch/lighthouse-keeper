@@ -14,6 +14,15 @@ zero have a strip/sidecar geometry mismatch. See
 hash, outfit, facing, endpoint, dependency, current family, treatment and
 required contextual route.
 
+Sitting-direction status moved on 18 October: exact front-facing V4 is approved
+and hash-pinned without promotion. Back-facing V1 is the active review
+candidate at `/keeper-review/keeper-prime-sit-stand-back-v1/`. Its complete
+61-frame context passes the Keeper behind a separately rendered foreground
+chair rear. The action keeps F2–F6 at 150 px elbow width and registers every
+visible F2–F6 RGB value to approved rear Prime V5, with independent jumper,
+trouser and boot checks. Back V1 and the rear-angle transitions remain
+unapproved.
+
 The active selectable contextual review is
 `/keeper-review/keeper-prime-context-workbench-v15/`. It deliberately contains
 only eleven routes or inspection views whose current status can be stated

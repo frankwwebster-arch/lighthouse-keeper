@@ -66,19 +66,21 @@ then approved exact side-left V1; preserve its separate decision at
 No Final/runtime/production promotion has occurred. A fresh task should begin with
 `docs/PRIME_KEEPER_RESTART_HANDOFF_2026-10-17.md`.
 
+Frank approved exact front-facing V4 on 18 October 2026. Preserve its
+hash-pinned decision at
+`docs/review/keeper-prime-sit-stand-front-v4-approval-2026-10-18.json` and all
+three earlier rejection records. Approval did not promote it.
+
 The active next-direction proposal is
-`/keeper-review/keeper-prime-sit-stand-front-v4/`. Frank rejected V1 for the
-wide reverse F5/F4 poses, V2 for its complete-context F3→F4 snap, and V3
-because frames 28–32 still narrowed elbow-to-elbow
-157→156→153→149→143 px. V4 preserves the exact F1/F6 endpoints and replaces
-F2–F5 with complete Prime-derived redraws whose 143 px elbow span matches exact
-frame 32/F6. Their decreasing heights supply articulated lowering rather than
-whole-character scaling. The exact 59-frame context, reverse, ghosts,
-action-only playback, source/candidate proof and 8×/4×/1× inspection remain;
-the frame-32 seated ghost is on by default. Preserve all three hash-pinned
-rejection records. Historical `keeper_sit_front` remains choreography-only
-evidence. V4 awaits Frank; do not infer approval, promote it or begin
-back-facing work.
+`/keeper-review/keeper-prime-sit-stand-back-v1/`. It uses the exact approved
+Turn V9 rear endpoint, exact seated-back alpha geometry, four complete new
+Prime-derived intermediates, a foreground rear chair and the full 61-frame
+walk/stop/turn/sit/stand/turn/return route. All visible RGB in F2–F6 comes from
+approved rear Prime V5; jumper, trouser and boot medians are checked separately
+because the generated and seated sources carried visibly darker clothing.
+F2–F6 hold the 150 px seated elbow width. Historical `keeper_sit_back` is
+choreography-only evidence. Back V1 awaits Frank; do not infer approval or
+promote it. If amended, create V2 rather than rewriting V1.
 
 Future pub/games-room layout rule: mount the approved dartboard on the
 right-hand cupboard-door leaf. It is edge-on while that door is closed and is

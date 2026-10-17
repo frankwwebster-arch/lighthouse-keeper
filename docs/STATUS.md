@@ -118,13 +118,20 @@ remaining 167→158 px F3→F4 width snap; preserve
 Frank rejected V3 because complete-context frames 28–32 still narrowed
 elbow-to-elbow 157→156→153→149→143 px. Preserve its exact decision and hashes
 at `docs/review/keeper-prime-sit-stand-front-v3-rejection-2026-10-18.json`.
-Front-facing V4 at `/keeper-review/keeper-prime-sit-stand-front-v4/` preserves
-the exact F1/F6 endpoints and redraws complete F2–F5 figures from the Prime
-authorities. Frames 28–32 now all match exact frame 32/F6 at a 143 px elbow
-span while lowering monotonically in height. The complete 59-frame route,
-reverse, ghosts and three scales remain; the frame-32 seated ghost is on by
-default. V4 awaits Frank's visual decision; back/rear angles are unapproved and
-Final/runtime/production remain unchanged.
+Frank approved exact front-facing V4 on 18 October 2026; preserve
+`docs/review/keeper-prime-sit-stand-front-v4-approval-2026-10-18.json`. Its
+exact F1/F6 endpoints, 143 px lowering width and complete 59-frame route remain
+unpromoted.
+
+Back-facing V1 at `/keeper-review/keeper-prime-sit-stand-back-v1/` is the
+active candidate. Its 61-frame route turns through exact approved Turn V9,
+places the Keeper behind a separately rendered foreground chair back, sits,
+stands, turns and walks away. F1 is the exact rear turn endpoint; F6 preserves
+exact seated-back alpha geometry. F2–F6 are registered only to exact RGB
+samples from approved rear Prime V5, with separate jumper, trouser and boot
+checks, eliminating the darker generated/seated-source palette. F2–F6 retain
+the 150 px seated elbow width. Back V1 and both rear-angle sit transitions are
+unapproved; Final/runtime/production remain unchanged.
 
 1. The evidence-based beard/hand audit classifies every manifest frame and pins `keeper_clear_snow` as the canonical fuller stepped beard. A landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It remains fail-closed for unavailable evidence: 163 side-on standing/sitting sheets are inventoried, eight zero-difference reference self-comparisons match, and 994 different-pose frames—including `keeper_darts` 3–6—are non-comparable because no approved beard masks, facial landmarks or hand-depth/component evidence exists. Frank reviewed Darts 3–6 visually on 11 October and accepted the beards with no amendment required; no beard draft is active or promotable. Next, use GPT-5.6 Sol to establish comparison inputs for any future claim, then run the later frame-isolation and released-prop audits.
 2. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. Frank's immutable second visual review recorded 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed; the current reviewer has 97 Happy and 67 Awaiting after Frank selected the Darts draft as his preferred candidate. Frank's saved per-animation width and height remain final production art direction.

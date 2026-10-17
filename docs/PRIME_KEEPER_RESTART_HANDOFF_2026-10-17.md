@@ -97,17 +97,24 @@ Frank rejected V3 because complete-context frames 28–32 still narrowed
 elbow-to-elbow 157→156→153→149→143 px. Preserve its exact decision and hashes
 at `docs/review/keeper-prime-sit-stand-front-v3-rejection-2026-10-18.json`.
 
-Front-facing V4 is now the single active next-direction candidate at
-`/keeper-review/keeper-prime-sit-stand-front-v4/`. It preserves exact F1/F6 and
-redraws complete F2–F5 figures from the Prime authorities. Frames 28–32 all
-match exact frame 32/F6's 143 px elbow span while their heights lower
-monotonically 286→276→270→266→264 px. The approved turn/walk context,
-59-frame route, exact reverse, three scales and ghosts remain; the exact
-frame-32 seated ghost is on by default. Historical `keeper_sit_front`
-contributes choreography only and zero visible pixels. Nothing about publishing
-V4 approves it. Back and the two rear angles remain unapproved. After front and
-back are decided, audit whether the approved turn network already covers the
-rear angles.
+Frank approved exact front-facing V4 on 18 October 2026. Preserve the
+hash-pinned decision at
+`docs/review/keeper-prime-sit-stand-front-v4-approval-2026-10-18.json`, its
+exact F1/F6 endpoints, 143 px width lock and 59-frame context. Approval did not
+promote it.
+
+Back-facing V1 is now the single active next-direction candidate at
+`/keeper-review/keeper-prime-sit-stand-back-v1/`. It uses the exact approved
+Turn V9 rear endpoint, exact seated-back alpha geometry and four complete new
+Prime-derived intermediates. F2–F6 hold the seated 150 px elbow span and lower
+monotonically 286→276→270→266→264 px. Generated and seated-source clothing was
+visibly darker than Prime, so every visible F2–F6 RGB value is deterministically
+registered to an exact sample from approved rear Prime V5; jumper, trouser and
+boot medians are checked separately. The complete 61-frame route uses approved
+walk/stop/turn context, exact reverse and ghosts. A separate foreground chair
+rear makes the Keeper visibly pass behind it. Historical `keeper_sit_back`
+contributes choreography only and zero visible pixels. Back V1 and both rear
+angles remain unapproved; nothing is promoted.
 
 ## Binding method for every inherited animation
 
@@ -221,10 +228,9 @@ checkpoint no Prime animation has been promoted into Final/runtime/production.
 
 ## Exact next-task boundary
 
-Stop for Frank's visual decision on the live front-facing V4 reviewer. If he
+Stop for Frank's visual decision on the live back-facing V1 reviewer. If he
 approves it, record a separate hash-pinned decision without promoting it; if he
-requests changes, create front-facing V5 rather than rewriting V4. Only then
-begin the requested
-back-facing direction. After that decision, audit whether the approved turn
-network makes separate rear-angle sit/stand transitions unnecessary. One
-accepted direction at a time remains the safe cadence.
+requests changes, create back-facing V2 rather than rewriting V1. After that
+decision, audit whether the approved turn network makes separate rear-angle
+sit/stand transitions unnecessary. One accepted direction at a time remains
+the safe cadence.

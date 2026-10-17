@@ -1,0 +1,84 @@
+{
+  "schema": "lighthouse-keeper/sprite-sidecar@draft-1",
+  "name": "keeper_prime_stand-to-sit-back_f06",
+  "w": 32,
+  "h": 40,
+  "density": 8,
+  "frames": 1,
+  "fps": 0,
+  "anchor": [
+    16,
+    40
+  ],
+  "floorOpaqueMaximumY": 315,
+  "view": "back",
+  "outfit": "standard-single-band",
+  "poseIndex": 6,
+  "derivation": "exact-seated-back-geometry-with-approved-rear-Prime-V5-palette-registration",
+  "source": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-back_f01.png",
+  "sourceSha256": "28a879bcee43c6d06330d05fb3cd74b4098b2ccce38ce41d15117f5fb0be5167",
+  "sha256": "434dcca19058d07021af7b945aefaac1e4a550741eb4d554d9316bb3c27ebf35",
+  "alphaSha256": "e5b471599eb190d6809f25e7a03981a7387388498d71b39cdca05cafe17391a8",
+  "registration": {
+    "geometry": "exact seated-back alpha plane and canvas",
+    "sourceAlphaSha256": "e5b471599eb190d6809f25e7a03981a7387388498d71b39cdca05cafe17391a8"
+  },
+  "paletteRegistration": {
+    "method": "component-wise luminance-quantile registration to exact RGB samples from approved rear Prime V5; alpha and geometry unchanged",
+    "authority": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+    "authoritySha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86",
+    "allVisibleRgbFromAuthority": true,
+    "offPalettePixels": 0,
+    "components": {
+      "outline": {
+        "pixels": 3559,
+        "sourceMedianLuma": 2,
+        "authorityMedianLuma": 2,
+        "outputMedianLuma": 2,
+        "outputMedianMatchesAuthority": true
+      },
+      "uniformBlue": {
+        "pixels": 10907,
+        "sourceMedianLuma": 77,
+        "authorityMedianLuma": 73,
+        "outputMedianLuma": 73,
+        "outputMedianMatchesAuthority": true
+      },
+      "creamOrSkin": {
+        "pixels": 4624,
+        "sourceMedianLuma": 233,
+        "authorityMedianLuma": 229,
+        "outputMedianLuma": 229,
+        "outputMedianMatchesAuthority": true
+      },
+      "trousers": {
+        "pixels": 3810,
+        "sourceMedianLuma": 50,
+        "authorityMedianLuma": 52,
+        "outputMedianLuma": 52,
+        "outputMedianMatchesAuthority": true
+      },
+      "boots": {
+        "pixels": 2642,
+        "sourceMedianLuma": 49,
+        "authorityMedianLuma": 47,
+        "outputMedianLuma": 47,
+        "outputMedianMatchesAuthority": true
+      },
+      "other": {
+        "pixels": 1664,
+        "sourceMedianLuma": 49,
+        "authorityMedianLuma": 41,
+        "outputMedianLuma": 41,
+        "outputMedianMatchesAuthority": true
+      }
+    }
+  },
+  "ownership": {
+    "actorAndClothing": "all non-transparent pixels in this isolated cell",
+    "propPixels": 0,
+    "effectPixels": 0
+  },
+  "endpointAuthority": "seated-back geometry authority plus approved rear Prime V5 palette authority",
+  "productionPromotionAllowed": false
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "lighthouse-keeper/sprite-sidecar@draft-1",
+  "name": "keeper_prime_stand-to-sit-back_f01",
+  "w": 32,
+  "h": 40,
+  "density": 8,
+  "frames": 1,
+  "fps": 0,
+  "anchor": [
+    16,
+    40
+  ],
+  "floorOpaqueMaximumY": 315,
+  "view": "back",
+  "outfit": "standard-single-band",
+  "poseIndex": 1,
+  "derivation": "exact-approved-Turn-V9-standing-back-endpoint",
+  "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f09.png",
+  "sourceSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+  "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+  "alphaSha256": "e874e8f307b748581d3528b8c3eec564142fec65325f7bfc9da449f8a686135a",
+  "registration": null,
+  "paletteRegistration": null,
+  "ownership": {
+    "actorAndClothing": "all non-transparent pixels in this isolated cell",
+    "propPixels": 0,
+    "effectPixels": 0
+  },
+  "endpointAuthority": "approved Turn V9 standing-back endpoint",
+  "productionPromotionAllowed": false
+}

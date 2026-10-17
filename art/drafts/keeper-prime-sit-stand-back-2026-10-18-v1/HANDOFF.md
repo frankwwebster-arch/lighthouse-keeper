@@ -1,0 +1,3 @@
+# Prime Keeper back sit/stand V1
+
+This reversible candidate uses the exact approved Turn V9 standing-back endpoint, the exact seated-back geometry, four new complete Prime-derived rear intermediates, the exact approved side↔back turn and approved walk/stop context. Action F2–F6 are deterministically registered to component-specific RGB samples from approved rear Prime V5, including the jumper, trousers and boots; generated-source colour is explicitly non-authoritative. The chair rear is a separate foreground layer, so the Keeper visibly passes behind it. Historical keeper_sit_back contributes choreography only and zero candidate pixels. The complete 61-frame route awaits Frank; nothing is promoted.

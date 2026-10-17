@@ -1,0 +1,103 @@
+{
+  "schema": "lighthouse-keeper/sprite-sidecar@draft-1",
+  "name": "keeper_prime_stand-to-sit-back_f05",
+  "w": 32,
+  "h": 40,
+  "density": 8,
+  "frames": 1,
+  "fps": 0,
+  "anchor": [
+    16,
+    40
+  ],
+  "floorOpaqueMaximumY": 315,
+  "view": "back",
+  "outfit": "standard-single-band",
+  "poseIndex": 5,
+  "derivation": "new-complete-Prime-derived-back-sit-intermediate-with-approved-rear-Prime-V5-palette-registration",
+  "source": "art/drafts/keeper-prime-sit-stand-back-2026-10-18-v1/sources/generated/back-f5-generated.png",
+  "sourceSha256": "85530730198e5733c61f6a757c566570ee1e9ae42671324de44110fbbbea1e96",
+  "sha256": "f6cc73f425160f22865185dc3e7da60b5f53a376ecab0b1125587a2d3608e16f",
+  "alphaSha256": "268dec43e98fb8943e41a0713a333f7132335728d5bafa17828dc0fa9bbfae13",
+  "registration": {
+    "sourceCanvas": [
+      1122,
+      1402
+    ],
+    "sourceAlphaBounds": {
+      "minX": 249,
+      "minY": 325,
+      "maxX": 870,
+      "maxY": 1322,
+      "width": 622,
+      "height": 998,
+      "opaquePixels": 419816
+    },
+    "registeredSize": [
+      150,
+      266
+    ],
+    "targetAxisX": 128,
+    "targetFloorY": 315,
+    "filter": "Lanczos",
+    "creativePixelWarp": false
+  },
+  "paletteRegistration": {
+    "method": "component-wise luminance-quantile registration to exact RGB samples from approved rear Prime V5; alpha and geometry unchanged",
+    "authority": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+    "authoritySha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86",
+    "allVisibleRgbFromAuthority": true,
+    "offPalettePixels": 0,
+    "components": {
+      "outline": {
+        "pixels": 3732,
+        "sourceMedianLuma": 0,
+        "authorityMedianLuma": 2,
+        "outputMedianLuma": 2,
+        "outputMedianMatchesAuthority": true
+      },
+      "uniformBlue": {
+        "pixels": 11249,
+        "sourceMedianLuma": 79,
+        "authorityMedianLuma": 73,
+        "outputMedianLuma": 73,
+        "outputMedianMatchesAuthority": true
+      },
+      "creamOrSkin": {
+        "pixels": 4824,
+        "sourceMedianLuma": 234,
+        "authorityMedianLuma": 229,
+        "outputMedianLuma": 229,
+        "outputMedianMatchesAuthority": true
+      },
+      "trousers": {
+        "pixels": 3517,
+        "sourceMedianLuma": 50,
+        "authorityMedianLuma": 52,
+        "outputMedianLuma": 52,
+        "outputMedianMatchesAuthority": true
+      },
+      "boots": {
+        "pixels": 2713,
+        "sourceMedianLuma": 52,
+        "authorityMedianLuma": 47,
+        "outputMedianLuma": 47,
+        "outputMedianMatchesAuthority": true
+      },
+      "other": {
+        "pixels": 2016,
+        "sourceMedianLuma": 44,
+        "authorityMedianLuma": 41,
+        "outputMedianLuma": 41,
+        "outputMedianMatchesAuthority": true
+      }
+    }
+  },
+  "ownership": {
+    "actorAndClothing": "all non-transparent pixels in this isolated cell",
+    "propPixels": 0,
+    "effectPixels": 0
+  },
+  "endpointAuthority": null,
+  "productionPromotionAllowed": false
+}
