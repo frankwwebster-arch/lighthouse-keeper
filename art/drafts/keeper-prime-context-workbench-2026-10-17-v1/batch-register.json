@@ -1,0 +1,78 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-context-workbench-2026-10-17-v1",
+  "status": "review-tool-awaiting-frank",
+  "purpose": "View every published Prime animation in the wider transition context appropriate to it, with optional preceding and finishing transitions.",
+  "catalog": {
+    "file": "public/keeper-review/keeper-prime-context-workbench-v1/catalog.json",
+    "sha256": "36929ea0113c218aef0f24be546a76925fbc02857b462e03928ab2b2ef339132"
+  },
+  "page": {
+    "file": "public/keeper-review/keeper-prime-context-workbench-v1/index.html",
+    "sha256": "312fc27e112e7eced9dec7cf76f26f5b2cb82f32e58d6e51b9b23089aa373422"
+  },
+  "coverage": [
+    {
+      "id": "approved-stop-walk-stop",
+      "title": "Approved · stop → walk → stop",
+      "status": "approved core authority",
+      "kind": "native"
+    },
+    {
+      "id": "approved-turn-round",
+      "title": "Approved components · walk → stop → 180° turn → walk",
+      "status": "approved component composition",
+      "kind": "native"
+    },
+    {
+      "id": "darts-v2",
+      "title": "Candidate · three darts → collect → leave",
+      "status": "new candidate awaiting Frank",
+      "kind": "native"
+    },
+    {
+      "id": "stair-ascent",
+      "title": "Approved · room → stair ascent → upper door",
+      "status": "approved route",
+      "kind": "external"
+    },
+    {
+      "id": "stair-descent",
+      "title": "Approved · upper door → stair descent → lower door",
+      "status": "approved with accepted slight overstride",
+      "kind": "external"
+    },
+    {
+      "id": "ladder-ascent",
+      "title": "Approved motion · room → ladder → upper door",
+      "status": "approved motion; turn speed deferred",
+      "kind": "external"
+    },
+    {
+      "id": "seated-foundation",
+      "title": "Candidate · six seated endpoints V2",
+      "status": "foundation awaiting Frank",
+      "kind": "external"
+    }
+  ],
+  "features": [
+    "animation selector",
+    "preceding transition toggle",
+    "finishing transition toggle",
+    "whole/core looping",
+    "frame stepping",
+    "speed multiplier",
+    "8x/4x/1x simultaneous views",
+    "exact Prime ghost",
+    "previous-frame onion skin",
+    "full-route embedding",
+    "complete 308-row inventory"
+  ],
+  "boundaries": {
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false,
+    "approvalsChanged": false
+  },
+  "rollback": "Delete only public/keeper-review/keeper-prime-context-workbench-v1 and art/drafts/keeper-prime-context-workbench-2026-10-17-v1."
+}

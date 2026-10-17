@@ -168,6 +168,27 @@ const ladderTransitionsV6 = spawnSync('node', ['scripts/verify_keeper_prime_ladd
 })
 if (ladderTransitionsV6.error) throw ladderTransitionsV6.error
 if (ladderTransitionsV6.status !== 0) process.exit(ladderTransitionsV6.status ?? 1)
+const dartsContextV2 = spawnSync('node', ['scripts/verify_keeper_prime_darts_context_v2.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (dartsContextV2.error) throw dartsContextV2.error
+if (dartsContextV2.status !== 0) process.exit(dartsContextV2.status ?? 1)
+const contextWorkbenchV1 = spawnSync('node', ['scripts/verify_keeper_prime_context_workbench_v1.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (contextWorkbenchV1.error) throw contextWorkbenchV1.error
+if (contextWorkbenchV1.status !== 0) process.exit(contextWorkbenchV1.status ?? 1)
+const animationBankAuditV1 = spawnSync('node', ['scripts/verify_keeper_prime_animation_bank_audit_v1.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (animationBankAuditV1.error) throw animationBankAuditV1.error
+if (animationBankAuditV1.status !== 0) process.exit(animationBankAuditV1.status ?? 1)
 const result = spawnSync('npm', ['run', 'test:core'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },

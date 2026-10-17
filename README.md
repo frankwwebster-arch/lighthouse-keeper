@@ -2,15 +2,33 @@
 
 A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by typing or tapping objects, then keep him happy through the day. The playable cutaway currently has a kitchen, living room, bedroom with en suite, and lamp room.
 
-The current Keeper-art review gate is the corrected six-direction smooth
-seated foundation at `/keeper-review/keeper-prime-seated-six-view-v2/`: front,
-back, both profiles and both rear-three-quarter angles. V2 fixes V1's brittle
+The active Keeper-art gate is the reversible Prime Keeper whole-bank
+normalisation programme. Its new selector is
+`/keeper-review/keeper-prime-context-workbench-v1/`: every selectable item is
+shown at 8×, proposed 4× game presentation and literal 1×, with frame stepping,
+speed, looping, exact-Prime and adjacent-frame ghosts, and switches to include
+or omit its preceding and finishing transitions. The first version contains
+seven deliberately status-labelled routes: approved core locomotion and
+vertical-circulation authorities, the unapproved six-view seated foundation,
+and a new unapproved three-dart/collection candidate. Nothing was promoted or
+wired into runtime.
+
+All 308 production animations and technical neutrals—not merely those seven—
+are measured in
+[`data/keeper-prime-animation-bank-audit-v1.json`](data/keeper-prime-animation-bank-audit-v1.json)
+and explained in
+[`docs/KEEPER_PRIME_ANIMATION_BANK_AUDIT_2026-10-17.md`](docs/KEEPER_PRIME_ANIMATION_BANK_AUDIT_2026-10-17.md).
+The binding redraw and contextual-review rules are
+[`docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md`](docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md).
+Historical art is motion/contact evidence only; it is never visible-character
+authority. The old swimming, gym and scuba families remain rejected, and the
+deleted `keeper_count_money` amendment remains excluded.
+
+The current seated endpoint candidate is the corrected six-direction V2 at
+`/keeper-review/keeper-prime-seated-six-view-v2/`. It fixes V1's brittle
 all-or-nothing loader and visibly proves that the chair surface and opaque
-pelvis meet at exactly y=29 logical pixels, eleven pixels above the floor.
-Every endpoint still shares the 32 × 40 logical cell and registered floor
-anchor; no Keeper pixels changed. It is a reversible draft only; after visual
-approval it will become the exact target for the stand ↔ sit transition clips.
-Stair Descent V2 is approved with its
+pelvis meet at y=29 logical pixels, eleven pixels above the floor. The Keeper
+pixels remain byte-identical to V1. Stair Descent V2 is approved with its
 slight overstride accepted; the future finished staircase must retain its
 locked geometry while adding two newel posts, a foreground balustrade and a
 continuous rail. The approval record is

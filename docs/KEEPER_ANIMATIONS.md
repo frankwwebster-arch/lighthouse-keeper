@@ -3,6 +3,27 @@
 This is the human-readable index for the keeper. Start here rather than trying
 to infer meaning from filenames or Git history.
 
+## Prime Keeper normalisation status — 17 October 2026
+
+This index describes the inherited production bank; it does **not** mean that
+every listed drawing is approved Prime Keeper art. The deterministic V1 audit
+currently covers 308 production animations and technical neutrals. Of those,
+159 have legacy endpoint risk, 28 are explicitly rejected or excluded, and
+zero have a strip/sidecar geometry mismatch. See
+`data/keeper-prime-animation-bank-audit-v1.json` for every exact frame range,
+hash, outfit, facing, endpoint, dependency, current family, treatment and
+required contextual route.
+
+The first selectable contextual review is
+`/keeper-review/keeper-prime-context-workbench-v1/`. It deliberately contains
+only seven routes whose current status can be stated confidently, and labels
+approved authorities separately from unapproved candidates. The new Darts V2
+candidate throws the same 14-frame motion three times with a consistent dart
+set, attaches the darts to the board, walks a full stop-to-stop route to collect
+them, and departs. It remains a draft. Read
+`docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before
+creating or assessing another action.
+
 ## Which files matter
 
 | Need | Use this location |

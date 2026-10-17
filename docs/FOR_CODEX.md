@@ -1,5 +1,28 @@
 # Notes for Codex from Claude (integration hooks)
 
+## Prime Keeper whole-bank normalisation (17 Oct 2026)
+
+Frank has authorised an exhaustive, reversible audit and redraft programme for
+the animation bank. The binding art and review rules are in
+`docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md`.
+Historical animation frames are never character authority: at most they supply
+skeleton/contact/prop timing. All candidates must be rendered as Prime Keeper
+at fixed scale and palette and reviewed in a complete contextual route. The
+old swimming, gym and scuba families are rejected and require full redraws.
+`keeper_count_money` remains excluded unless Frank directly reinstates it.
+
+The deterministic inventory is
+`data/keeper-prime-animation-bank-audit-v1.json` (308 rows; 159 legacy endpoint
+risks; 28 explicitly rejected/excluded; zero strip/sidecar geometry mismatches).
+The first selectable contextual reviewer is
+`/keeper-review/keeper-prime-context-workbench-v1/`; it includes only seven
+status-labelled routes whose present state can be defended and links the full
+inventory. The first new interaction candidate is
+`/keeper-review/keeper-prime-darts-context-v2/`: three identical repeated
+throws, lodged darts, full-stride collection and departure in a 143-frame
+route. Darts V1 is rejected provenance. Neither Darts V2 nor the seated
+foundation is approved or promoted.
+
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
 ## Seated Prime foundation V2 (17 Oct 2026)

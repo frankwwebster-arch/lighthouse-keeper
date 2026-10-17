@@ -1,0 +1,23 @@
+{
+  "schema": "lighthouse-keeper/sprite-sidecar@draft-1",
+  "w": 56,
+  "h": 40,
+  "frames": 22,
+  "density": 8,
+  "anchor": [
+    28,
+    40
+  ],
+  "fps": 6,
+  "loop": false,
+  "facing": "right",
+  "interaction": "play-darts",
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "repeatableCoreFrameRange": [
+    5,
+    18
+  ],
+  "exactEndpointSha256": "f88ceee322f0e7d9334ed908116b2fc95c3121c8fdc2d549644a32aed213b126",
+  "productionPromotionAllowed": false
+}

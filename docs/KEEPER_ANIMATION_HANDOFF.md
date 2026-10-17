@@ -1,8 +1,56 @@
 # Keeper animation handoff: review, scale and seamless transitions
 
-**Checkpoint:** 16 October 2026
+> **17 October 2026 normalisation authority:** before creating or assessing
+> another action draft, read
+> `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md`.
+> Earlier animation art supplies motion data only. Every visible character
+> frame must be Prime Keeper, and every action must be reviewed inside its
+> complete walk/stop/turn/action/return/walk route.
+
+**Checkpoint:** 17 October 2026
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
+
+## Whole-bank audit and Context Workbench V1 — 17 October 2026
+
+The production bank now has a deterministic 308-row audit in
+`data/keeper-prime-animation-bank-audit-v1.json`, with a human summary in
+`docs/KEEPER_PRIME_ANIMATION_BANK_AUDIT_2026-10-17.md`. It records every exact
+frame range, fps, cell, anchor, runtime SHA-256, category, outfit, facing,
+endpoint, prop/seat/movement dependency, inherited face/body family,
+recommended treatment and contextual route. Counts are 9 expressions, 82
+interactions, 101 locomotion clips, 12 seated actions, 73 technical neutrals
+and 31 transitions. There are 159 legacy endpoint risks, 28 explicitly
+rejected/excluded entries and no measured strip/sidecar geometry mismatches.
+
+The new review selector is
+`/keeper-review/keeper-prime-context-workbench-v1/`. V1 exposes seven routes:
+approved stop/walk/stop; an approved-component walk/stop/180° turn/walk
+composition; the new Darts V2 candidate; the complete approved stair ascent;
+the approved stair descent; the approved ladder motion route; and the
+unapproved six-view seated foundation. Native routes provide optional preceding
+and finishing transitions, whole/core looping, speed adjustment, frame
+stepping, exact-Prime ghost, adjacent-frame onion skin, and simultaneous 8×,
+4× and literal 1× views. The 308-row inventory is linked from the page. Status
+labels are binding: inclusion does not convert a candidate into an approval.
+
+Darts V1 is preserved rejected provenance only: its action frames drifted
+toward three-quarter view and snapped against the exact side endpoint. Darts
+V2 is the current reversible candidate at
+`/keeper-review/keeper-prime-darts-context-v2/`. Its stationary action enters
+from exact Prime side through approved Prime posture frames, repeats one
+14-frame throw exactly three times, accumulates three consistently styled
+darts on a board fixed to the visible face of an open right-wall cupboard
+door, returns through the same posture bridge, walks one full 30.5-lp
+stop-to-stop route to collect the darts, returns to exact neutral, turns and
+walks away. The full route has 143 frames. This remains unapproved and changes
+no Final, runtime, production or approval record.
+
+Next visual gate: Frank reviews Darts V2 and the Context Workbench itself.
+After that, build exact Prime stand↔sit transition strips against the seated
+foundation if its endpoints are approved, then process interaction families in
+small contextual batches. Swimming, gym and scuba require complete redesign;
+`keeper_count_money` remains excluded without a new direct instruction.
 
 ## Current core-transition checkpoint — 16 October 2026
 
@@ -43,8 +91,10 @@ and seven left-foot contacts. The approved V16 root path, stored 98 × 60-lp
 staircase, turn, walk, bridge and door-reach assets remain unchanged. Raw and
 registered candidate hashes, image-editing prompts, registration parameters
 and deterministic tests are stored in
-`art/drafts/keeper-prime-stair-descent-2026-10-16-v2/`. V2 awaits Frank's
-visual approval; no Final, runtime or production art changed.
+`art/drafts/keeper-prime-stair-descent-2026-10-16-v2/`. Frank approved V2 with
+its slight overstride accepted; the decision is pinned in
+`docs/review/keeper-prime-stair-descent-v2-approval-2026-10-16.json`. No Final,
+runtime or production art changed.
 
 Keeper Prime's upward stair route is complete and approved at
 `/keeper-review/keeper-prime-stair-transitions-v6/`: lower-room emergence,
@@ -67,14 +117,14 @@ perspective widening or gradient; only its handle protrudes. Every door is
 two-way and opens away from the approaching Keeper. Its leaf supplies the real
 crossing occlusion, and the scenery controller closes it automatically only
 after the Keeper fully clears the doorway. The rule is pinned in
-`docs/review/keeper-two-way-door-contract-2026-10-16.json`. V6 is awaiting
-door-only approval and is not promoted. The separately requested
+`docs/review/keeper-two-way-door-contract-2026-10-16.json`. Frank approved the
+complete animation flow; V6 remains unpromoted. The separately requested
 two-times-faster V4 turn remains deferred.
 
 The remaining core transition work is bounded:
 
-1. approve or correct Stair Descent V1, then certify the mirrored opposite
-   flight layout against the same contact/root rules;
+1. certify the mirrored opposite stair-flight layout against the approved V2
+   contact/root rules;
 2. downward ladder with direction-specific top mount and lower dismount/door
    exit (the central rung cycle may reverse, the route joins may not);
 3. complete Prime lift call/enter and lift-exit/walk flows;
