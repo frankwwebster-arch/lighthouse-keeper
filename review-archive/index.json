@@ -11,11 +11,11 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 102,
-    "referenceCount": 2054,
-    "uniqueObjectCount": 1422,
-    "logicalBytes": 183188576,
-    "uniqueBytes": 97421996,
+    "setCount": 103,
+    "referenceCount": 2057,
+    "uniqueObjectCount": 1425,
+    "logicalBytes": 184672887,
+    "uniqueBytes": 98906307,
     "deduplicatedBytes": 85766580
   },
   "legacyPaths": {
@@ -14340,6 +14340,27 @@
       "bytes": 53555,
       "object": "review-archive/objects/57/5730e51c07c3c0baa38fbc537fc542179ea427bf0870eff0576e6fad5d8a7a57.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/57/5730e51c07c3c0baa38fbc537fc542179ea427bf0870eff0576e6fad5d8a7a57.png"
+    },
+    "/keeper-review/kitchen-narrower-bin-v25/assets/bin-after.png": {
+      "sha256": "5aa5f2a7e841cde20ba11a71a293b8cab89c64d63dd04d0a00c8a9ea9dec1519",
+      "extension": ".png",
+      "bytes": 61641,
+      "object": "review-archive/objects/5a/5aa5f2a7e841cde20ba11a71a293b8cab89c64d63dd04d0a00c8a9ea9dec1519.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5a/5aa5f2a7e841cde20ba11a71a293b8cab89c64d63dd04d0a00c8a9ea9dec1519.png"
+    },
+    "/keeper-review/kitchen-narrower-bin-v25/assets/bin-before.png": {
+      "sha256": "dff5af498fcafce5445f2db7778e47acbebd69c8951db2d1ac1b18b6da01c4ca",
+      "extension": ".png",
+      "bytes": 62286,
+      "object": "review-archive/objects/df/dff5af498fcafce5445f2db7778e47acbebd69c8951db2d1ac1b18b6da01c4ca.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/df/dff5af498fcafce5445f2db7778e47acbebd69c8951db2d1ac1b18b6da01c4ca.png"
+    },
+    "/keeper-review/kitchen-narrower-bin-v25/assets/full-kitchen-narrower-bin.png": {
+      "sha256": "175d77c063297c435eab468f297c369f79e5491b89bbdd2b03400d31cd334f4a",
+      "extension": ".png",
+      "bytes": 1360384,
+      "object": "review-archive/objects/17/175d77c063297c435eab468f297c369f79e5491b89bbdd2b03400d31cd334f4a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/175d77c063297c435eab468f297c369f79e5491b89bbdd2b03400d31cd334f4a.png"
     },
     "/keeper-review/kitchen-rear-facing-chair-v24/assets/full-kitchen-rear-facing-chair.png": {
       "sha256": "85e50fc43d43538e226e41e9d781cd8eee805b6025fe15302639a8f178ce71b2",

@@ -208,6 +208,11 @@ export default {
         destination: '/keeper-review/kitchen-rear-facing-chair-v24/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-narrower-bin-v25',
+        destination: '/keeper-review/kitchen-narrower-bin-v25/index.html',
+        permanent: false,
+      },
     ]
   },
 }

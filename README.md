@@ -345,17 +345,22 @@ rear wall with his back to the player. V23 remains immutable as the approved
 kitchen base; V24 is the one-change room successor awaiting visual
 confirmation. The record is
 [`docs/KITCHEN_REAR_FACING_CHAIR_V24_2026-10-17.md`](docs/KITCHEN_REAR_FACING_CHAIR_V24_2026-10-17.md).
+The next one-change successor is Kitchen V25 at
+`/keeper-review/kitchen-narrower-bin-v25/`: the standalone turquoise pedal bin
+is 20% less wide while retaining its centreline, height and floor contact.
+V24 remains immutable; V25 awaits visual confirmation. Its record is
+[`docs/KITCHEN_NARROWER_BIN_V25_2026-10-17.md`](docs/KITCHEN_NARROWER_BIN_V25_2026-10-17.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
 and
 [`docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md).
-Only exact Kitchen V5 and Kitchen V20–V24 remain in active kitchen review tooling.
+Only exact Kitchen V5 and Kitchen V20–V25 remain in active kitchen review tooling.
 V5 is the retained old-family reference, V20 is immutable fitted-galley
 provenance, V21 is immutable complete-asset provenance, V22 is immutable
-rejected assembly provenance, V23 is the approved full-room base, and V24 is
-the rear-facing-chair successor awaiting confirmation. None is promoted or
-wired.
+rejected assembly provenance, V23 is the approved full-room base, V24 is the
+rear-facing-chair successor and V25 is the narrower-bin successor awaiting
+confirmation. None is promoted or wired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

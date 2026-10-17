@@ -85,6 +85,10 @@ successor is `/keeper-review/kitchen-rear-facing-chair-v24/`: its sole chair is
 centred on the player-facing side of the table and shown from behind, so seated
 Prime faces the rear wall with his back to the player. V24 awaits visual
 confirmation and remains unpromoted/unwired.
+The active follow-up is `/keeper-review/kitchen-narrower-bin-v25/`, which makes
+only the standalone turquoise pedal bin 20% less wide while retaining its
+centreline, height and floor contact. V24 remains immutable; V25 awaits visual
+confirmation and is also unpromoted/unwired.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
