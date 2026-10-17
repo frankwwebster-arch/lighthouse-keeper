@@ -11,11 +11,11 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 97,
-    "referenceCount": 1971,
-    "uniqueObjectCount": 1404,
-    "logicalBytes": 171175392,
-    "uniqueBytes": 89364865,
+    "setCount": 98,
+    "referenceCount": 1972,
+    "uniqueObjectCount": 1405,
+    "logicalBytes": 172362106,
+    "uniqueBytes": 90551579,
     "deduplicatedBytes": 81810527
   },
   "legacyPaths": {
@@ -13668,6 +13668,13 @@
       "bytes": 38278,
       "object": "review-archive/objects/77/77b36805753e7a66773ca0ee11c97dc1181f92a59d4a0b44fde054b5eafbb684.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/77/77b36805753e7a66773ca0ee11c97dc1181f92a59d4a0b44fde054b5eafbb684.png"
+    },
+    "/keeper-review/kitchen-continuous-run-approved-v23/assets/full-kitchen-approved.png": {
+      "sha256": "5d5451acbaa81a48918268d25482a1d3f657a77c441c9d5b4f87ed547d4f9707",
+      "extension": ".png",
+      "bytes": 1186714,
+      "object": "review-archive/objects/5d/5d5451acbaa81a48918268d25482a1d3f657a77c441c9d5b4f87ed547d4f9707.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5d/5d5451acbaa81a48918268d25482a1d3f657a77c441c9d5b4f87ed547d4f9707.png"
     },
     "/keeper-review/kitchen-final-assets-v21/assets/basic-oven.png": {
       "sha256": "45658c2649d10efc896d646821b16e12d3a19fc401d04168e00ace3a6f016ba8",

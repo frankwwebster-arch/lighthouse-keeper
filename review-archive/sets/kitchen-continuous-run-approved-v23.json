@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "set": "kitchen-continuous-run-approved-v23",
+  "page": {
+    "path": "public/keeper-review/kitchen-continuous-run-approved-v23/index.html",
+    "sha256": "cdb99760b048ab03dca7988c10ba97c7349ff9c9d6d8940868912bb0faa40396",
+    "bytes": 4202
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-continuous-run-approved-v23/assets/full-kitchen-approved.png": {
+      "sha256": "5d5451acbaa81a48918268d25482a1d3f657a77c441c9d5b4f87ed547d4f9707",
+      "extension": ".png",
+      "bytes": 1186714,
+      "object": "review-archive/objects/5d/5d5451acbaa81a48918268d25482a1d3f657a77c441c9d5b4f87ed547d4f9707.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5d/5d5451acbaa81a48918268d25482a1d3f657a77c441c9d5b4f87ed547d4f9707.png"
+    }
+  }
+}

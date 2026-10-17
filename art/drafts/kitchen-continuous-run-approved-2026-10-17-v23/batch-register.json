@@ -1,0 +1,6 @@
+{
+  "version": 23,
+  "approvedImageSha256": "5d5451acbaa81a48918268d25482a1d3f657a77c441c9d5b4f87ed547d4f9707",
+  "v22Preserved": true,
+  "rollback": "Delete only V23 source/raw/draft/review files, its archive set, builder, verifier and V23 docs; V20\u2013V22 remain immutable."
+}

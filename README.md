@@ -311,17 +311,28 @@ V21/V22 crop comparison, and a measured registration overlay. The recipe is
 [`docs/KITCHEN_REAR_WALL_FLOW_V22_RECIPE_2026-10-17.md`](docs/KITCHEN_REAR_WALL_FLOW_V22_RECIPE_2026-10-17.md)
 and the hand-back is
 [`docs/CODEX_TO_CLAUDE_KITCHEN_REAR_WALL_FLOW_V22_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_REAR_WALL_FLOW_V22_2026-10-17.md).
-V22 is the current complete review candidate but remains unpromoted and
-unwired pending visual acceptance.
+V22 remains immutable rejection provenance: it incorrectly interpreted the
+kettle's earlier lower edge as a shallower cabinet-body datum. Frank instead
+approved the exact generated Image 1 with “this is correct” at
+`(37.3%, 56.9%)`. That byte-identical `2170 × 725` master is pinned as Kitchen
+V23 at `/keeper-review/kitchen-continuous-run-approved-v23/`; there is no crop,
+resize, recolour or post-approval redraw. V23 is now the binding full-room
+appearance authority, while V21 remains the isolated-asset inventory. Its
+approval record is
+[`docs/KITCHEN_CONTINUOUS_RUN_APPROVED_V23_2026-10-17.md`](docs/KITCHEN_CONTINUOUS_RUN_APPROVED_V23_2026-10-17.md)
+and its hand-back is
+[`docs/CODEX_TO_CLAUDE_KITCHEN_CONTINUOUS_RUN_APPROVED_V23_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_CONTINUOUS_RUN_APPROVED_V23_2026-10-17.md).
+V23 remains unpromoted and unwired.
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
 and
 [`docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md).
-Only exact Kitchen V5, V20, V21 and V22 remain in active kitchen review tooling.
+Only exact Kitchen V5 and Kitchen V20–V23 remain in active kitchen review tooling.
 V5 is the retained old-family reference, V20 is immutable fitted-galley
-provenance, V21 is immutable complete-asset provenance, and V22 is the current
-rear-wall-corrected room candidate. None is promoted or wired.
+provenance, V21 is immutable complete-asset provenance, V22 is immutable
+rejected assembly provenance, and V23 is the approved full-room visual
+authority. None is promoted or wired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

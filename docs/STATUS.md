@@ -70,17 +70,17 @@ choreography remain independently paced so enjoyable actions can be savoured.
 No Prime artwork has entered Workbench Final or production, and the runtime
 sprite manifest remains unchanged.
 
-The current kitchen-art candidate is
-`/keeper-review/kitchen-rear-wall-flow-v22/`. V21 still supplies the complete
-asset family: compact single-door basic oven, V20 double oven as Upgrade 1,
-standalone pedal bin, and a one-person table with exactly one V6-sized chair.
-V22 corrects only the room assembly after Frank identified five bays projecting
-forward of the kettle. It uses the kettle as the rear-wall depth authority and
-places all six 21-lp centre treatments in one shared 126-lp carcass with one
-worktop, one recessed toe-kick and no interior end caps. Both oven tiers are
-shown in the same `193 × 56-lp` room. V20 and V21 remain immutable; V22 is
-documented in `docs/KITCHEN_REAR_WALL_FLOW_V22_RECIPE_2026-10-17.md` and is not
-yet promoted or wired into the live game.
+The approved kitchen full-room authority is
+`/keeper-review/kitchen-continuous-run-approved-v23/`. Frank marked exact Image
+1 with “this is correct” at `(37.3%, 56.9%)`; its `2170 × 725` PNG is preserved
+byte-for-byte with SHA-256 `5d5451…f9707`. V23 keeps the full-height cabinets on
+one plane with one uninterrupted sea-glass worktop and common dark base. V21
+still supplies the isolated asset inventory: compact single-door basic oven,
+V20 double oven as Upgrade 1, standalone pedal bin, and one-person table/chair.
+V22 is immutable rejected assembly provenance because its deterministic rebuild
+misread the kettle edge as a shallower cabinet body. V23 is approved visually
+but is not promoted or wired into the live game; details are in
+`docs/KITCHEN_CONTINUOUS_RUN_APPROVED_V23_2026-10-17.md`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

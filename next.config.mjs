@@ -198,6 +198,11 @@ export default {
         destination: '/keeper-review/kitchen-rear-wall-flow-v22/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-continuous-run-approved-v23',
+        destination: '/keeper-review/kitchen-continuous-run-approved-v23/index.html',
+        permanent: false,
+      },
     ]
   },
 }
