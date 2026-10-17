@@ -80,11 +80,17 @@ art has entered Workbench Final, runtime or production. No promotion is allowed
 without a separate explicit instruction from Frank.
 
 The six-view seated V2 pack supplies registered endpoints only. Side-right V6
-does not approve the other five sit/stand transitions. The next animation gate
-should therefore be one further sitting direction in full context, reviewed
-one at a time. Side-left may begin as a deterministic mirror study, but it must
-still be published and accepted; front, back and the two rear angles need
-purpose-built Prime transitions rather than inferred approval.
+does not approve the other five sit/stand transitions. Side-left V1 is now the
+single active next-direction candidate at
+`/keeper-review/keeper-prime-sit-stand-side-left-v1/`. It is an exact
+horizontal reflection of the pinned smooth side-right action, Walk V6,
+stop/walk bridge, roots, timing and measured chair relationship. Its final
+seated cell is byte-identical to the registered side-left endpoint; historical
+`keeper_sit_side` contributes no visible pixel. The complete 45-frame route,
+ghosts, three scales and six source/candidate pairs await Frank's review.
+Nothing about publishing this candidate approves it. Front, back and the two
+rear angles still need purpose-built Prime transitions rather than inferred
+approval.
 
 ## Binding method for every inherited animation
 
@@ -167,14 +173,15 @@ Current live inspection:
 
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-context-workbench-v15/`
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-side-v6/`
+- `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-side-left-v1/`
 
 Workbench V15 is review infrastructure, not a Final-art ledger. At this
 checkpoint no Prime animation has been promoted into Final/runtime/production.
 
 ## Exact next-task boundary
 
-Start a fresh Codex task for the next sitting direction. Read the files at the
-top of this checkpoint, preserve every pinned approval, build only one new
-versioned/reversible contextual candidate, and return for visual review before
-moving to the following direction. Do not start a broad autonomous conversion
-of the entire bank: one accepted family at a time is the proven safe cadence.
+Stop for Frank's visual decision on side-left V1. If he approves it, record a
+separate hash-pinned decision without promoting it; if he requests changes,
+create side-left V2 rather than rewriting V1. Do not begin front, back or a
+rear-angle transition until this gate is resolved. One accepted direction at
+a time remains the safe cadence.

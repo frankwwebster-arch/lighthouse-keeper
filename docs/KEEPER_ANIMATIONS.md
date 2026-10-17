@@ -78,6 +78,16 @@ contributes choreography only. Frank approved exact V6 on 17 October 2026;
 six cells, 45-frame route, review code and measured chair geometry. V1–V5
 remain immutable history. The other sitting directions are not approved, and
 no Final, runtime or production sprite changed.
+
+The next review gate is
+`/keeper-review/keeper-prime-sit-stand-side-left-v1/`. It is a deterministic,
+pixel-exact reflection of the pinned side-right six-pose action and its full
+45-frame walk/stop/action/return route. Reflected Walk V6 and stop/walk cells
+remain isolated with transparent gutters; the seated endpoint exactly matches
+the registered side-left pose. The page supplies source/candidate proof,
+ghosts, independent action playback and 8×/4×/1× views. It awaits review and
+authorises no promotion or following direction.
+
 Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before
 creating or assessing another action.

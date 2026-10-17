@@ -1,0 +1,28 @@
+{
+  "schema": "lighthouse-keeper/sprite-sidecar@draft-1",
+  "name": "keeper_prime_stand-to-sit-side-left_f01",
+  "w": 32,
+  "h": 40,
+  "density": 8,
+  "frames": 1,
+  "fps": 0,
+  "anchor": [
+    16,
+    40
+  ],
+  "floorOpaqueMaximumY": 315,
+  "view": "side-left-90",
+  "outfit": "standard-single-band",
+  "poseIndex": 1,
+  "derivation": "exact-horizontal-reflection-of-approved-side-right-v6-frame",
+  "source": "art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/drafts/frames/keeper_prime_stand-to-sit-side-right_f01.png",
+  "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+  "sha256": "16db6b4e05c4500ebc789fe8e348b76ca20182682d18006d09cc38b33993e3bc",
+  "ownership": {
+    "actorAndClothing": "all non-transparent pixels in this isolated cell",
+    "propPixels": 0,
+    "effectPixels": 0
+  },
+  "endpointAuthority": "candidate exact reflection of approved smooth side-right standing authority",
+  "productionPromotionAllowed": false
+}

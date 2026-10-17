@@ -71,6 +71,17 @@ hash-pinned in
 `docs/review/keeper-prime-sit-stand-side-v6-approval-2026-10-17.json`.
 V1–V5 remain immutable provenance. This approval does not promote V6 into
 Final, runtime or production.
+
+The next one-direction gate is the reversible side-left reflection study at
+`/keeper-review/keeper-prime-sit-stand-side-left-v1/`. Its six action cells,
+approved Walk V6 and stop/walk context, roots and measured 7.75-lp chair
+relationship are exact horizontal reflections of the pinned side-right
+authorities. The full route contains 45 right-to-left frames and the page
+preloads the moving and side-by-side proof images before enabling controls.
+Historical `keeper_sit_side` contributes choreography provenance only and zero
+visible pixels. Side-left V1 awaits Frank's visual decision; it is not approved
+and changes no Final, runtime or production asset.
+
 Frank approved exact Darts Context V8 on 17 October 2026. Its immutable decision
 is `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
 Workbench V15 remains review infrastructure; nothing entered Final, runtime or

@@ -65,6 +65,15 @@ five sitting directions remain unapproved. No Final/runtime/production
 promotion has occurred. A fresh task should begin with
 `docs/PRIME_KEEPER_RESTART_HANDOFF_2026-10-17.md`.
 
+The active next-direction proposal is
+`/keeper-review/keeper-prime-sit-stand-side-left-v1/`. It mirrors the approved
+smooth side-right six-pose action and complete 45-frame context exactly around
+the fixed world root, including Walk V6, stop/walk bridge timing and the
+measured 7.75-lp chair support. Its F6 is byte-identical to the registered
+side-left seated endpoint. The page includes source/candidate pairs, ghosts,
+action-only playback and 8×/4×/1× inspection. It awaits Frank; do not infer
+approval, promote it or start another direction.
+
 Future pub/games-room layout rule: mount the approved dartboard on the
 right-hand cupboard-door leaf. It is edge-on while that door is closed and is
 fully revealed face-to-camera when the door opens. The board follows the door

@@ -92,6 +92,14 @@ V6 on 17 October 2026, pinned by
 are immutable history. The approval does not extend to the other five sitting
 directions and performs no runtime, Final or production promotion.
 
+The next one-direction candidate is side-left V1 at
+`/keeper-review/keeper-prime-sit-stand-side-left-v1/`. It exact-reflects the
+pinned six action poses and complete 45-frame locomotion context, including
+roots, timing and measured chair geometry. The registered side-left seated
+endpoint matches exactly, and no historical Keeper pixel survives. It is
+awaiting Frank's visual decision; the remaining four directions are not
+started, and Final/runtime/production remain unchanged.
+
 1. The evidence-based beard/hand audit classifies every manifest frame and pins `keeper_clear_snow` as the canonical fuller stepped beard. A landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It remains fail-closed for unavailable evidence: 163 side-on standing/sitting sheets are inventoried, eight zero-difference reference self-comparisons match, and 994 different-pose frames—including `keeper_darts` 3–6—are non-comparable because no approved beard masks, facial landmarks or hand-depth/component evidence exists. Frank reviewed Darts 3–6 visually on 11 October and accepted the beards with no amendment required; no beard draft is active or promotable. Next, use GPT-5.6 Sol to establish comparison inputs for any future claim, then run the later frame-isolation and released-prop audits.
 2. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. Frank's immutable second visual review recorded 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed; the current reviewer has 97 Happy and 67 Awaiting after Frank selected the Darts draft as his preferred candidate. Frank's saved per-animation width and height remain final production art direction.
    The complete internally consistent V11 artist-smock family is now preserved

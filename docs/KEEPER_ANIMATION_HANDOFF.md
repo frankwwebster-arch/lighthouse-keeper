@@ -60,6 +60,23 @@ approved exact V6 on 17 October 2026; preserve
 is Final, runtime or production, and the other sitting directions must not be
 inferred from this approval.
 
+## Side-left sit/stand V1 candidate — 17 October 2026
+
+`/keeper-review/keeper-prime-sit-stand-side-left-v1/` is the only active next
+sitting-direction gate. It deterministically reflects the six approved
+side-right V6 action cells, approved Walk V6 and stop/walk context around the
+unchanged world-x=86 root. Its 45-frame route therefore travels right-to-left
+with the exact reflected roots, phases and timings. The chair uses the same
+world-y=44.25 / 7.75-lp support and reflected horizontal relationship; the
+seated F6 hash is the registered side-left endpoint hash.
+
+The page preloads every unique moving and comparison image, exposes complete
+context and isolated action playback, provides standing/adjacent ghosts and
+8×/4×/1× inspection, and shows all six source-right/candidate-left pairs.
+`keeper_sit_side` remains choreography provenance only with zero surviving
+visible pixels. The candidate is unapproved and reversible. Wait for Frank's
+decision before creating another direction; never rewrite V1 in place.
+
 ## Darts Prime complete redraw and contextual route — 17 October 2026
 
 Frank found the jump from Prime Keeper into the inherited Darts throw core

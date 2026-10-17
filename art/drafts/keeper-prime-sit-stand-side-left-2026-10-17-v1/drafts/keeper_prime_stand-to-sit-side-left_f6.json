@@ -1,0 +1,26 @@
+{
+  "schema": "lighthouse-keeper/sprite-sidecar@draft-1",
+  "name": "keeper_prime_stand-to-sit-side-left",
+  "w": 32,
+  "h": 40,
+  "density": 8,
+  "frames": 6,
+  "fps": 8,
+  "loop": false,
+  "anchor": [
+    16,
+    40
+  ],
+  "startPose": "neutral-standing-side-left",
+  "endPose": "neutral-sitting-side-left",
+  "sha256": "1098e47f4c70f2d50d42e24b0c7b0b1fa96b67e34052ba4eff26333e492a6b94",
+  "frameSha256": [
+    "16db6b4e05c4500ebc789fe8e348b76ca20182682d18006d09cc38b33993e3bc",
+    "3f4727b7bb891a82010d792177accbc0383b179a6778ea0667de5d9859ea6776",
+    "e56adac3ee14e226239a690eda74be8ecb292d4ceb5d61475fe8236dab83733f",
+    "5c37c880789d27530dcf2cae857488ed2e3ae26084d0d7244b572e8135f779c9",
+    "00d2f83e9b00e45d22e25a899220fd54a1793d5d8cfead1ba68951ae5cff26c9",
+    "d0c394162ff6e0712cec46a45a0f7931babfa3705fdb782f40c803e7f28f7775"
+  ],
+  "status": "review-draft-not-production"
+}
