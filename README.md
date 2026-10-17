@@ -228,6 +228,19 @@ image objects and SHA-256 values. Its rollback contract and hand-back are
 and
 [`docs/CODEX_TO_CLAUDE_KITCHEN_V5_EXACT_ROLLBACK_V17_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_V5_EXACT_ROLLBACK_V17_2026-10-17.md).
 V6–V16 remain rejected immutable provenance; Option B is not active in V17.
+The new first-gate-only perspective study is
+`/keeper-review/kitchen-countertop-gate-v18/`. It starts again from exact V5
+and retains only Option B's abstract `1.5 lp` reveal / `2 lp` fascia values.
+It corrects the historical calibration's preserve-box fault, derives the true
+19-lp contact separately for kettle, cooker and sink, and makes the historical
+B candidates fail an exact exposed-surface test. The same three candidates are
+shown adjacent on the 52-lp rear-wall foot line with 4 lp of clear foreground
+floor in a neutral, non-timber calibration room. V18 is awaiting Frank's gate
+decision before any other kitchen family or room asset is rebuilt. Recipe and
+hand-back:
+[`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
+and
+[`docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md).
 All kitchen versions remain review drafts: none is approved, promoted or wired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
