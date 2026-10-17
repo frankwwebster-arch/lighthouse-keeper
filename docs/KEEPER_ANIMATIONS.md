@@ -14,13 +14,16 @@ zero have a strip/sidecar geometry mismatch. See
 hash, outfit, facing, endpoint, dependency, current family, treatment and
 required contextual route.
 
-The first selectable contextual review is
-`/keeper-review/keeper-prime-context-workbench-v1/`. It deliberately contains
+The active selectable contextual review is
+`/keeper-review/keeper-prime-context-workbench-v2/`. It deliberately contains
 only seven routes whose current status can be stated confidently, and labels
-approved authorities separately from unapproved candidates. The new Darts V2
-candidate throws the same 14-frame motion three times with a consistent dart
-set, attaches the darts to the board, walks a full stop-to-stop route to collect
-them, and departs. It remains a draft. Read
+approved authorities separately from unapproved candidates. The corrected
+Darts V3 candidate reuses the V2 Keeper pixels, shows six visible flights and
+impacts against an edge-on board on the closed cupboard door, collects the
+first set, returns one exact 30.5-lp stop-to-stop route to the oche and throws
+again. It contains only the necessary turn at the board and turn at the oche,
+and remains a draft. V1 remains failed delivery provenance; V2 fixes its
+relative-URL catalogue fault. Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before
 creating or assessing another action.
 

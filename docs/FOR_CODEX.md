@@ -14,14 +14,17 @@ old swimming, gym and scuba families are rejected and require full redraws.
 The deterministic inventory is
 `data/keeper-prime-animation-bank-audit-v1.json` (308 rows; 159 legacy endpoint
 risks; 28 explicitly rejected/excluded; zero strip/sidecar geometry mismatches).
-The first selectable contextual reviewer is
-`/keeper-review/keeper-prime-context-workbench-v1/`; it includes only seven
+The active selectable contextual reviewer is
+`/keeper-review/keeper-prime-context-workbench-v2/`; it includes only seven
 status-labelled routes whose present state can be defended and links the full
-inventory. The first new interaction candidate is
-`/keeper-review/keeper-prime-darts-context-v2/`: three identical repeated
-throws, lodged darts, full-stride collection and departure in a 143-frame
-route. Darts V1 is rejected provenance. Neither Darts V2 nor the seated
-foundation is approved or promoted.
+inventory. V2 fixes V1's deployed relative-URL/trailing-slash loader failure
+and localises its native-route images. The active interaction candidate is
+`/keeper-review/keeper-prime-darts-context-v3/`: V2 character pixels reused
+byte-for-byte, a closed cupboard door and edge-on board, six visible flights
+and impacts, practical full-reach collection, one turn at the board, one turn
+at the oche, and a 30.5-lp return before the second three-dart set. Its
+repeatable activity seam is exact. Darts V1 is rejected and V2 is superseded
+provenance. Neither Darts V3 nor the seated foundation is approved or promoted.
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 

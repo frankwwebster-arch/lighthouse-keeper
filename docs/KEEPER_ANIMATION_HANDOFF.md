@@ -11,7 +11,7 @@
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
 
-## Whole-bank audit and Context Workbench V1 — 17 October 2026
+## Whole-bank audit and Context Workbench V2 — 17 October 2026
 
 The production bank now has a deterministic 308-row audit in
 `data/keeper-prime-animation-bank-audit-v1.json`, with a human summary in
@@ -23,30 +23,40 @@ interactions, 101 locomotion clips, 12 seated actions, 73 technical neutrals
 and 31 transitions. There are 159 legacy endpoint risks, 28 explicitly
 rejected/excluded entries and no measured strip/sidecar geometry mismatches.
 
-The new review selector is
-`/keeper-review/keeper-prime-context-workbench-v1/`. V1 exposes seven routes:
+The active review selector is
+`/keeper-review/keeper-prime-context-workbench-v2/`. V2 exposes seven routes:
 approved stop/walk/stop; an approved-component walk/stop/180° turn/walk
-composition; the new Darts V2 candidate; the complete approved stair ascent;
+composition; the corrected Darts V3 candidate; the complete approved stair ascent;
 the approved stair descent; the approved ladder motion route; and the
 unapproved six-view seated foundation. Native routes provide optional preceding
 and finishing transitions, whole/core looping, speed adjustment, frame
 stepping, exact-Prime ghost, adjacent-frame onion skin, and simultaneous 8×,
 4× and literal 1× views. The 308-row inventory is linked from the page. Status
 labels are binding: inclusion does not convert a candidate into an approval.
+V2 also gives the 8× inspection pane the full browser width and localises its
+native-route images. Root-absolute catalogue, script and inventory URLs fix
+V1's deployed trailing-slash bug, which returned HTML to its relative
+`catalog.json` request and locked the controls. V1 remains immutable failed
+delivery provenance.
 
 Darts V1 is preserved rejected provenance only: its action frames drifted
 toward three-quarter view and snapped against the exact side endpoint. Darts
-V2 is the current reversible candidate at
-`/keeper-review/keeper-prime-darts-context-v2/`. Its stationary action enters
-from exact Prime side through approved Prime posture frames, repeats one
-14-frame throw exactly three times, accumulates three consistently styled
-darts on a board fixed to the visible face of an open right-wall cupboard
-door, returns through the same posture bridge, walks one full 30.5-lp
-stop-to-stop route to collect the darts, returns to exact neutral, turns and
-walks away. The full route has 143 frames. This remains unapproved and changes
-no Final, runtime, production or approval record.
+V2 is immutable superseded provenance. Darts V3 is the current reversible
+candidate at `/keeper-review/keeper-prime-darts-context-v3/`. It reuses every
+V2 character-action pixel byte-for-byte but corrects the room and route logic.
+The cupboard door is closed and seen edge-on, so only the thin door rim and
+dartboard edge are visible. The board centre is y=30.5 lp and the collection
+root x=155.5 lp, aligning its plane with the approved full-reach hand. The
+Keeper approaches the x=125-lp oche, throws three darts whose five-position
+flights visibly reach and stick in the board, walks one complete 30.5-lp
+stop-to-stop route to collect them, turns once at the board, walks the same
+full stride back, turns once at the oche and throws three again. The 213-frame
+route contains exactly two turn events. Its repeatable range starts and ends
+on identical Prime pixels, x=125 root and three-darts-on-board state. This
+remains unapproved and changes no Final, runtime, production or approval
+record.
 
-Next visual gate: Frank reviews Darts V2 and the Context Workbench itself.
+Next visual gate: Frank reviews Darts V3 and Context Workbench V2.
 After that, build exact Prime stand↔sit transition strips against the seated
 foundation if its endpoints are approved, then process interaction families in
 small contextual batches. Swimming, gym and scuba require complete redesign;
