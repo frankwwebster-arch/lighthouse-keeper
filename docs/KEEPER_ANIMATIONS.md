@@ -84,15 +84,17 @@ decision at
 `docs/review/keeper-prime-sit-stand-side-left-v1-approval-2026-10-17.json`.
 This approves only that reversible draft authority and authorises no promotion.
 
-The next review gate is
-`/keeper-review/keeper-prime-sit-stand-front-v1/`. F1 is the exact approved
-standing-front authority, F6 the exact registered seated-front endpoint, and
-F2–F5 are new Prime-derived poses. The complete 59-frame route includes the
-approved walk/stop and front↔side turn context on both sides of the sit, hold
-and exact reverse stand. Historical `keeper_sit_front` contributes choreography
-only. The page supplies ghosts, source/candidate proof, isolated action playback
-and 8×/4×/1× views. It awaits review and authorises neither promotion nor work
-on the back-facing direction.
+Front V1 is rejected: sit→stand review frames 2 and 3 widened beyond Prime
+canon. Preserve its decision at
+`docs/review/keeper-prime-sit-stand-front-v1-rejection-2026-10-17.json`.
+
+The replacement review gate is
+`/keeper-review/keeper-prime-sit-stand-front-v2/`. It preserves exact V1
+F1–F3/F6 and replaces only F4/F5 with new narrower complete Prime redraws. The
+exact endpoints and complete 59-frame walk/stop/turn/action/return route remain.
+Historical `keeper_sit_front` contributes choreography only. Ghosts, proof,
+isolated playback and 8×/4×/1× views remain. V2 authorises neither promotion
+nor work on the back-facing direction.
 
 Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before

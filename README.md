@@ -78,15 +78,19 @@ decision is
 the approved reflection, 45-frame route and registered seated endpoint remain
 unchanged and no Final, runtime or production asset was promoted.
 
-The next one-direction gate is front-facing V1 at
-`/keeper-review/keeper-prime-sit-stand-front-v1/`. It uses the byte-identical
-approved standing-front and registered seated-front endpoints around four new
-Prime-derived poses. Its 59-frame route shows approved walk and stopping,
-approved side-to-front turn, sit, hold, exact reverse stand, front-to-side turn
-and return to walking. Historical `keeper_sit_front` contributes choreography
-only and zero visible pixels. The page preloads all moving/proof images and
-provides standing and adjacent-frame ghosts at 8×, 4× and 1×. Front V1 awaits
-Frank's decision and changes no Final, runtime or production asset.
+Frank rejected front-facing V1 because sit→stand review frames 2 and 3 became
+significantly wider than Prime canon. The exact rejection and V1 hashes are
+pinned in
+`docs/review/keeper-prime-sit-stand-front-v1-rejection-2026-10-17.json`.
+
+The replacement one-direction gate is front-facing V2 at
+`/keeper-review/keeper-prime-sit-stand-front-v2/`. It preserves exact V1 F1–F3
+and F6, redraws only action F4/F5 as complete narrower Prime figures, and
+reduces their registered widths from 172/160 px to 158/150 px. Exact endpoints,
+the 59-frame route, approved walk/turn context, reverse order, ghosts and all
+three scales remain. Historical `keeper_sit_front` contributes choreography
+only and zero visible pixels. V2 awaits Frank and changes no Final, runtime or
+production asset.
 
 Frank approved exact Darts Context V8 on 17 October 2026. Its immutable decision
 is `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.

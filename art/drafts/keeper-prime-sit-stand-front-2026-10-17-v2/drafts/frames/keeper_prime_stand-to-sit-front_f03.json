@@ -1,0 +1,22 @@
+{
+  "schema": "lighthouse-keeper/sprite-sidecar@draft-1",
+  "name": "keeper_prime_stand-to-sit-front-v2_f03",
+  "w": 32,
+  "h": 40,
+  "density": 8,
+  "frames": 1,
+  "fps": 0,
+  "anchor": [
+    16,
+    40
+  ],
+  "floorOpaqueMaximumY": 315,
+  "view": "front",
+  "poseIndex": 3,
+  "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v1/drafts/frames/keeper_prime_stand-to-sit-front_f03.png",
+  "sourceSha256": "defc055627c5efac7d6b677acd9f425a8cb815339e2ad46359bd335b67435ec1",
+  "sha256": "defc055627c5efac7d6b677acd9f425a8cb815339e2ad46359bd335b67435ec1",
+  "registration": null,
+  "derivation": "exact-V1-frame-preserved",
+  "productionPromotionAllowed": false
+}

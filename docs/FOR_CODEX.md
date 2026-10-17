@@ -67,14 +67,13 @@ No Final/runtime/production promotion has occurred. A fresh task should begin wi
 `docs/PRIME_KEEPER_RESTART_HANDOFF_2026-10-17.md`.
 
 The active next-direction proposal is
-`/keeper-review/keeper-prime-sit-stand-front-v1/`. It joins the exact approved
-standing-front endpoint to the exact registered seated-front endpoint with four
-new Prime-derived intermediates. The complete 59-frame context walks and stops,
-uses the approved side-to-front turn, sits, holds, stands by exact reversal,
-turns back to side and resumes walking. Historical `keeper_sit_front` is
-choreography evidence only. The page includes ghosts, action-only playback,
-source/candidate proof and 8×/4×/1× inspection. It awaits Frank; do not infer
-approval, promote it or begin back-facing work before this gate resolves.
+`/keeper-review/keeper-prime-sit-stand-front-v2/`. Frank rejected V1 because
+sit→stand review frames 2 and 3—action F5/F4—became significantly wider than
+Prime canon. V2 keeps F1–F3/F6 byte-identical, replaces only F4/F5 with narrower
+complete Prime redraws, and keeps the exact 59-frame context. The page includes
+ghosts, action-only playback, source/candidate proof and 8×/4×/1× inspection.
+Historical `keeper_sit_front` remains choreography-only evidence. It awaits
+Frank; do not infer approval, promote it or begin back-facing work.
 
 Future pub/games-room layout rule: mount the approved dartboard on the
 right-hand cupboard-door leaf. It is edge-on while that door is closed and is

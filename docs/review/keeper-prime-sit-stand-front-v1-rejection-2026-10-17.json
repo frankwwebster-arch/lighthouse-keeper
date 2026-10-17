@@ -1,0 +1,42 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-17",
+  "reviewedBy": "Frank",
+  "candidate": "keeper-prime-sit-stand-front-2026-10-17-v1",
+  "decision": "rejected-width-drift-in-reverse-frames-2-and-3",
+  "wording": "sit-> stand only: frames 2 and 3 the keeper gets significantly wider. This does not match the prime cannon and looks ridiculous",
+  "rejectedHashes": {
+    "batchRegister": "a13c500cb69a26459fe1a97de5fb4119d73604c3df8ad1a045c3f0deb7f6396a",
+    "routeData": "6a6bcab1fd0b32a6b8b917ef66efab119244ca77cd7462932dbff7fb5df6e156",
+    "reviewRoute": "6004a0c04dea06e0b5f82a4954cb93a1e7d80295d03e9f3c87576d3003671612",
+    "keeperFrames": [
+      "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "3692f5cea2a3f4b4e67907ecaf65c6288aa941c3f468cf0099dbccebd8323c63",
+      "defc055627c5efac7d6b677acd9f425a8cb815339e2ad46359bd335b67435ec1",
+      "6ae23b190f021c2c242024bde1b97e474db71230615eb3ec18b3bdcafe6becbc",
+      "73fee06bffc0f222bb2a9371b05e57a2c11904712519eaa72ebd88ac92530d61",
+      "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce"
+    ]
+  },
+  "delivery": {
+    "candidateCommit": "4a8c9c7",
+    "deployCommit": "2833f7c",
+    "reviewUrl": "https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v1/"
+  },
+  "requiredCorrection": {
+    "sitToStandReviewFrames": [2, 3],
+    "underlyingActionFrames": [5, 4],
+    "fault": "Keeper silhouette becomes significantly wider than the approved Prime front authority",
+    "remedy": "Create a new versioned candidate with newly redrawn narrow Prime F4 and F5; preserve V1 unchanged"
+  },
+  "approvalBoundary": {
+    "frontV1Approved": false,
+    "frontV1Rejected": true,
+    "frontV2Approved": false,
+    "backSitStandApproved": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false,
+    "promotionPerformed": false
+  }
+}

@@ -79,14 +79,19 @@ hash-pinned decision at
 never rewrite V1 in place. This is draft authority only; Final, runtime and
 production remain unchanged.
 
-## Front-facing sit/stand V1 candidate — 17 October 2026
+## Front-facing sit/stand V2 candidate — 17 October 2026
 
-`/keeper-review/keeper-prime-sit-stand-front-v1/` is the only active sitting
-direction gate. F1 is byte-identical to the approved Prime standing-front
-authority and F6 is byte-identical to the registered Prime seated-front
-endpoint. F2–F5 are newly generated complete Prime poses, uniformly registered
-to one centre axis and floor. Historical `keeper_sit_front` supplies
-choreography only and contributes no visible pixel.
+Frank rejected V1 because sit→stand-only frames 2 and 3—the reverse uses action
+F5 then F4—became significantly wider than Prime canon. Preserve V1 unchanged
+and its hash-pinned decision at
+`docs/review/keeper-prime-sit-stand-front-v1-rejection-2026-10-17.json`.
+
+`/keeper-review/keeper-prime-sit-stand-front-v2/` is the only active sitting
+direction gate. F1–F3 and F6 are byte-identical to V1; F1/F6 remain the exact
+approved standing and registered seated endpoints. F4/F5 are newly redrawn as
+complete narrow Prime figures, with registered widths reduced from 172/160 px
+to 158/150 px. Historical `keeper_sit_front` supplies choreography only and
+contributes no visible pixel.
 
 The complete 59-frame route is approved side-right walking and stopping → the
 approved side-to-front turn → sit → 600 ms seated hold → exact reverse stand →
@@ -95,8 +100,8 @@ behind-Keeper review proxy with the already measured 7.75-lp support height.
 The page preloads every unique moving and comparison image, exposes route and
 action playback, and provides standing/adjacent-frame ghosts plus 8×/4×/1×
 inspection. It is reversible and unapproved. Wait for Frank's verdict before
-authoring the back-facing direction; if amended, create V2 rather than rewriting
-V1.
+authoring the back-facing direction; if amended, create V3 rather than rewriting
+V2.
 
 ## Darts Prime complete redraw and contextual route — 17 October 2026
 

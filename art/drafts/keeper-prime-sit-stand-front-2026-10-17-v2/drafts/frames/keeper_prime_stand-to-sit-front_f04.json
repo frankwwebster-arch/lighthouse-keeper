@@ -1,0 +1,44 @@
+{
+  "schema": "lighthouse-keeper/sprite-sidecar@draft-1",
+  "name": "keeper_prime_stand-to-sit-front-v2_f04",
+  "w": 32,
+  "h": 40,
+  "density": 8,
+  "frames": 1,
+  "fps": 0,
+  "anchor": [
+    16,
+    40
+  ],
+  "floorOpaqueMaximumY": 315,
+  "view": "front",
+  "poseIndex": 4,
+  "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v2/sources/generated/front-f4-generated.png",
+  "sourceSha256": "eb8920b83eebb9527d8e638ef45780dc3d7e9ddb28e4fc48cc9292db2481f2ab",
+  "sha256": "218428cae398af33b054206b313a1ce838184e095535055d6fd5584b9d7e0cd5",
+  "registration": {
+    "sourceCanvas": [
+      1122,
+      1402
+    ],
+    "sourceAlphaBounds": {
+      "minX": 278,
+      "minY": 234,
+      "maxX": 844,
+      "maxY": 1273,
+      "width": 567,
+      "height": 1040,
+      "opaquePixels": 415336
+    },
+    "registeredSize": [
+      158,
+      268
+    ],
+    "targetAxisX": 128,
+    "targetFloorY": 315,
+    "filter": "Lanczos",
+    "creativePixelWarp": false
+  },
+  "derivation": "new-narrow-Prime-derived-correction",
+  "productionPromotionAllowed": false
+}
