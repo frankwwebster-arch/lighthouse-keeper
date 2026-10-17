@@ -1,0 +1,52 @@
+{
+  "version": 19,
+  "status": "review-only-comparison",
+  "order": [
+    "obj_kettle",
+    "obj_cooker",
+    "obj_sink"
+  ],
+  "roomGeometry": {
+    "logical": [
+      63,
+      56
+    ],
+    "pixels": [
+      252,
+      224
+    ],
+    "bayPx": 84,
+    "wallFloorLp": 51,
+    "footLineLp": 52,
+    "foregroundLp": 4
+  },
+  "rooms": {
+    "v5Clean": "/keeper-review/kitchen-v5-v18-in-situ-comparison-v19/assets/v5_room.png",
+    "v5Guides": "/keeper-review/kitchen-v5-v18-in-situ-comparison-v19/assets/v5_room_guides.png",
+    "v18Clean": "/keeper-review/kitchen-v5-v18-in-situ-comparison-v19/assets/v18_room.png",
+    "v18Guides": "/keeper-review/kitchen-v5-v18-in-situ-comparison-v19/assets/v18_room_guides.png"
+  },
+  "sources": {
+    "obj_kettle": {
+      "label": "Kettle counter",
+      "v5File": "obj_kettle_standard_f1.png",
+      "v18File": "obj_kettle_candidate.png",
+      "v5Sha256": "bc296bff87334d769aadccd75e749f4edd0221853f1d52eae90ab04270552b3c",
+      "v18Sha256": "add806a1f9f84e0865a473082972d05421c6a04e6c4482a0da46f58065a67e3c"
+    },
+    "obj_cooker": {
+      "label": "Cooker / hob",
+      "v5File": "obj_cooker_standard_f1.png",
+      "v18File": "obj_cooker_candidate.png",
+      "v5Sha256": "a6183f51f506957fb77c79ef5dfddc82c287dfa781838fe099944f76cf303034",
+      "v18Sha256": "67942103f64aa4ed8fb42c4fc3db2223ee0af0986d653305aeb5ddbe48bff437"
+    },
+    "obj_sink": {
+      "label": "Sink counter",
+      "v5File": "obj_sink_standard_f1.png",
+      "v18File": "obj_sink_candidate.png",
+      "v5Sha256": "31ca919a515f05ac51c2850092df8501c9574c05013ea5a88ea5aca5e3d40f2a",
+      "v18Sha256": "8f1c1f6fd9d8fb6ecd566c873affc7c34853eaabbdc78261c57b4763cc48522a"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "set": "kitchen-v5-v18-in-situ-comparison-v19",
+  "page": {
+    "path": "public/keeper-review/kitchen-v5-v18-in-situ-comparison-v19/index.html",
+    "sha256": "01e8e5f858f88603a4fdb7bed35a63bf0f4598b89142200cdeff094779707477",
+    "bytes": 632
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-v5-v18-in-situ-comparison-v19/assets/v18_room_guides.png": {
+      "sha256": "d2379caa34e7d277c2e3b976ce0c64ff9bd239666dc48b656f4efe08964de343",
+      "extension": ".png",
+      "bytes": 36292,
+      "object": "review-archive/objects/d2/d2379caa34e7d277c2e3b976ce0c64ff9bd239666dc48b656f4efe08964de343.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d2/d2379caa34e7d277c2e3b976ce0c64ff9bd239666dc48b656f4efe08964de343.png"
+    },
+    "/keeper-review/kitchen-v5-v18-in-situ-comparison-v19/assets/v18_room.png": {
+      "sha256": "ca412b57db919c19b8ff2dc319f6beeba938668e1bd07beb97bb146f0ba7d39d",
+      "extension": ".png",
+      "bytes": 36337,
+      "object": "review-archive/objects/ca/ca412b57db919c19b8ff2dc319f6beeba938668e1bd07beb97bb146f0ba7d39d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ca/ca412b57db919c19b8ff2dc319f6beeba938668e1bd07beb97bb146f0ba7d39d.png"
+    },
+    "/keeper-review/kitchen-v5-v18-in-situ-comparison-v19/assets/v5_room_guides.png": {
+      "sha256": "9a8bf1be4a50396fba8c68136e02510b538fa1aa2e7e7d4ea62e6d1dd40dc12b",
+      "extension": ".png",
+      "bytes": 39455,
+      "object": "review-archive/objects/9a/9a8bf1be4a50396fba8c68136e02510b538fa1aa2e7e7d4ea62e6d1dd40dc12b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9a/9a8bf1be4a50396fba8c68136e02510b538fa1aa2e7e7d4ea62e6d1dd40dc12b.png"
+    },
+    "/keeper-review/kitchen-v5-v18-in-situ-comparison-v19/assets/v5_room.png": {
+      "sha256": "eec532fbab3324e49ef5548b02bdfe396f6478b766a31a20380e5a467f92ecab",
+      "extension": ".png",
+      "bytes": 39706,
+      "object": "review-archive/objects/ee/eec532fbab3324e49ef5548b02bdfe396f6478b766a31a20380e5a467f92ecab.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ee/eec532fbab3324e49ef5548b02bdfe396f6478b766a31a20380e5a467f92ecab.png"
+    }
+  }
+}

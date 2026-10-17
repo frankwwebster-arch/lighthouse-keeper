@@ -230,15 +230,22 @@ image objects and SHA-256 values. Its rollback contract and hand-back are
 and
 [`docs/CODEX_TO_CLAUDE_KITCHEN_V5_EXACT_ROLLBACK_V17_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_V5_EXACT_ROLLBACK_V17_2026-10-17.md).
 V6–V16 remain rejected immutable provenance; Option B is not active in V17.
-The new first-gate-only perspective study is
-`/keeper-review/kitchen-countertop-gate-v18/`. It starts again from exact V5
+The rejected first-gate-only perspective study is preserved at
+`/keeper-review/kitchen-countertop-gate-v18/`. It started again from exact V5
 and retains only Option B's abstract `1.5 lp` reveal / `2 lp` fascia values.
 It corrects the historical calibration's preserve-box fault, derives the true
 19-lp contact separately for kettle, cooker and sink, and makes the historical
 B candidates fail an exact exposed-surface test. The same three candidates are
 shown adjacent on the 52-lp rear-wall foot line with 4 lp of clear foreground
-floor in a neutral, non-timber calibration room. V18 is awaiting Frank's gate
-decision before any other kitchen family or room asset is rebuilt. Recipe and
+floor in a neutral, non-timber calibration room. Frank rejected those V18
+units in favour of V5. The current focused comparison is
+`/keeper-review/kitchen-v5-v18-in-situ-comparison-v19/`: it shows the exact,
+unaltered V5 kettle, cooker and sink in precisely the same V18 room function,
+native scale and measured positions, first clean and then with measured guides.
+Rejected V18 remains in the raw comparison record rather than displacing the
+requested V5 view. The pixel verifier pins all six source files and both deterministic composites,
+the identical shared room background and the clear 4-lp foreground channel.
+The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
 and
