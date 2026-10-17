@@ -57,5 +57,30 @@ visual decision.
 
 ## Delivery verification
 
-Deployment and production-response details are recorded here after the
-review-only release marker is verified.
+The content commit is `b9bf756` (`Fix Kitchen V16 countertop silhouettes`).
+The review-only production marker is `3fff169` (`Deploy: Kitchen V16
+silhouette-clean countertop review [deploy]`). On 17 October 2026 the deployed
+route returned HTTP 200:
+
+`https://lighthouse-keeper-mu.vercel.app/keeper-review/kitchen-option-b-silhouette-clean-v16/`
+
+The production media resolver returned HTTP 307 for the nine-bay room image,
+declared archive hash
+`62ce789d30a98866273bd23737577a3a3275d166f23e478b842f1a902210976f`,
+and the followed immutable object returned the same SHA-256 as the raw V16 room
+PNG.
+
+Verification passed after rebasing onto the concurrent Darts V7 delivery:
+
+- `npm run verify:kitchen-option-b-silhouette-clean-v16`;
+- `npm run verify:review-archive` (`104` sets, `3,125` references, `1,348`
+  immutable objects); and
+- full `npm test` (`18` test files and `179` tests).
+
+The final documentation audit compared the current recipe, builder, binary
+masks, catalogue, archive manifest, production response and unchanged runtime
+hashes. `README.md` and `docs/DECISIONS.md` now identify V15 as rejected, V16
+as review-only and the expanded removal-zone test as binding. Setup,
+deployment, recovery and rollback instructions in `docs/DEPLOYMENT.md` remain
+accurate; no changes were needed because V16 adds only immutable review
+evidence and a verifier.
