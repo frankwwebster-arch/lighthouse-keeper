@@ -87,14 +87,21 @@ Frank then rejected V2 because complete-context frames 29 and 30 exposed the
 remaining F3→F4 width snap. That decision and V2's exact hashes are pinned in
 `docs/review/keeper-prime-sit-stand-front-v2-rejection-2026-10-17.json`.
 
-The active one-direction gate is front-facing V3 at
-`/keeper-review/keeper-prime-sit-stand-front-v3/`. It preserves V2 F1, F2 and
-F4–F6 byte-identically and redraws only action F3, reducing the frame-29 width
-from 167 px to 158 px so frames 28–30 measure 157→158→158 px. Exact endpoints,
-the 59-frame route, approved walk/turn context, reverse order, ghosts and all
-three scales remain. Historical `keeper_sit_front` contributes choreography
-only and zero visible pixels. V3 awaits Frank and changes no Final, runtime or
-production asset.
+Frank then rejected V3 because complete-context frames 28–32 still changed
+elbow-to-elbow width while the Keeper lowered: 157→156→153→149→143 px. The
+exact decision and V3 hashes are pinned in
+`docs/review/keeper-prime-sit-stand-front-v3-rejection-2026-10-18.json`.
+
+The active one-direction gate is front-facing V4 at
+`/keeper-review/keeper-prime-sit-stand-front-v4/`. It preserves the exact F1
+standing and F6 seated endpoints and redraws complete F2–F5 figures from the
+Prime authorities. Complete-context frames 28–32 now all use the exact
+frame-32/F6 143 px elbow span while their heights lower monotonically
+286→276→270→266→264 px. The 59-frame route, approved walk/turn context, exact
+reverse, three inspection scales and ghosts remain; the exact frame-32 seated
+ghost is enabled by default. Historical `keeper_sit_front` contributes
+choreography only and zero visible pixels. V4 awaits Frank and changes no
+Final, runtime or production asset.
 
 Frank approved exact Darts Context V8 on 17 October 2026. Its immutable decision
 is `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.

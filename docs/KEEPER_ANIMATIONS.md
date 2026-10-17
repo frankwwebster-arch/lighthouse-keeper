@@ -92,14 +92,20 @@ V2 is also rejected because complete-context frames 29 and 30 exposed action
 F3 snapping from 167 px to 158 px F4. Preserve its decision at
 `docs/review/keeper-prime-sit-stand-front-v2-rejection-2026-10-17.json`.
 
+Frank rejected V3 because frames 28–32 still narrowed elbow-to-elbow
+157→156→153→149→143 px. Preserve V3 unchanged and its decision at
+`docs/review/keeper-prime-sit-stand-front-v3-rejection-2026-10-18.json`.
+
 The replacement review gate is
-`/keeper-review/keeper-prime-sit-stand-front-v3/`. It preserves V2 F1, F2 and
-F4–F6 byte-identically and replaces only F3 with a 158 px complete Prime
-redraw, so frames 28–30 measure 157→158→158 px. The exact endpoints and complete
-59-frame walk/stop/turn/action/return route remain. Historical
-`keeper_sit_front` contributes choreography only. Ghosts, proof, isolated
-playback and 8×/4×/1× views remain. V3 authorises neither promotion nor work on
-the back-facing direction.
+`/keeper-review/keeper-prime-sit-stand-front-v4/`. It preserves the exact F1
+standing and F6 seated endpoints and replaces F2–F5 with complete Prime-derived
+redraws. Frames 28–32 all match exact frame 32/F6 at a 143 px elbow span while
+lowering monotonically in height. The complete 59-frame
+walk/stop/turn/action/return route and exact reverse remain. Historical
+`keeper_sit_front` contributes choreography only. Ghosts—including the
+default-on exact frame-32 seated ghost—proof, isolated playback and 8×/4×/1×
+views remain. V4 authorises neither promotion nor work on the back-facing
+direction.
 
 Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before

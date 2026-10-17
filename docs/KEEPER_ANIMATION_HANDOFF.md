@@ -79,7 +79,7 @@ hash-pinned decision at
 never rewrite V1 in place. This is draft authority only; Final, runtime and
 production remain unchanged.
 
-## Front-facing sit/stand V3 candidate — 17 October 2026
+## Front-facing sit/stand V4 candidate — 18 October 2026
 
 Frank rejected V1 because sit→stand-only frames 2 and 3—the reverse uses action
 F5 then F4—became significantly wider than Prime canon. Preserve V1 unchanged
@@ -90,22 +90,27 @@ Frank rejected V2 because complete-context frames 29 and 30 exposed the
 remaining action F3→F4 width snap. Preserve V2 unchanged and its decision at
 `docs/review/keeper-prime-sit-stand-front-v2-rejection-2026-10-17.json`.
 
-`/keeper-review/keeper-prime-sit-stand-front-v3/` is the only active sitting
-direction gate. V2 F1, F2 and F4–F6 are byte-identical; F1/F6 remain the exact
-approved standing and registered seated endpoints. F3 is newly redrawn as a
-complete narrow Prime figure and reduced from 167 px to 158 px, matching F4.
-Historical `keeper_sit_front` supplies choreography only and contributes no
-visible pixel.
+Frank rejected V3 because complete-context frames 28–32 still narrowed
+elbow-to-elbow 157→156→153→149→143 px. Preserve V3 unchanged and its exact
+decision at
+`docs/review/keeper-prime-sit-stand-front-v3-rejection-2026-10-18.json`.
+
+`/keeper-review/keeper-prime-sit-stand-front-v4/` is the only active sitting
+direction gate. F1/F6 remain the exact approved standing and registered seated
+endpoints. F2–F5 are newly redrawn as complete Prime figures and all use exact
+F6's 143 px elbow span; their decreasing heights provide articulated lowering
+without widening the Keeper. Historical `keeper_sit_front` supplies
+choreography only and contributes no visible pixel.
 
 The complete 59-frame route is approved side-right walking and stopping → the
 approved side-to-front turn → sit → 600 ms seated hold → exact reverse stand →
 approved front-to-side turn → acceleration and walking. The chair is a separate
 behind-Keeper review proxy with the already measured 7.75-lp support height.
 The page preloads every unique moving and comparison image, exposes route and
-action playback, and provides standing/adjacent-frame ghosts plus 8×/4×/1×
-inspection. It is reversible and unapproved. Wait for Frank's verdict before
-authoring the back-facing direction; if amended, create V4 rather than rewriting
-V3.
+action playback, and provides standing, adjacent-frame and default-on exact
+frame-32 seated ghosts plus 8×/4×/1× inspection. It is reversible and
+unapproved. Wait for Frank's verdict before authoring the back-facing
+direction; if amended, create V5 rather than rewriting V4.
 
 ## Darts Prime complete redraw and contextual route — 17 October 2026
 

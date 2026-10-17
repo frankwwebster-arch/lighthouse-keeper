@@ -1,0 +1,592 @@
+{
+  "schema": "lighthouse-keeper/reversible-review-batch@1",
+  "set": "keeper-prime-sit-stand-front-v4",
+  "status": "front-frame32-elbow-width-locked-v4-awaiting-frank",
+  "supersedes": {
+    "candidate": "keeper-prime-sit-stand-front-v3",
+    "reason": "The lowering intermediates narrow progressively toward the correct seated endpoint instead of preserving its elbow-to-elbow span",
+    "rejection": {
+      "file": "docs/review/keeper-prime-sit-stand-front-v3-rejection-2026-10-18.json",
+      "sha256": "b034b75ec666d5d1b07c293bcabf1d735e22367c5fe78ed9533b37db0921de35",
+      "decision": "rejected-lowering-elbow-width-drift-frames-28-through-32"
+    },
+    "immutableV3": {
+      "register": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v3/batch-register.json",
+      "sha256": "ce03ff0d8240846eacd9d3a484e9cbb84342501c02055f475bacff4b2bd9e287",
+      "routeData": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v3/keeper-prime-sit-stand-front-v3.json",
+      "routeDataSha256": "6f6ce0f2e6a708c33e3bf99a1f03a4c8df7be4b5f56714a3f9e7439e63304c47"
+    }
+  },
+  "authorities": {
+    "standingFront": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "candidateFrame": 1,
+      "byteIdentical": true
+    },
+    "seatedFront": {
+      "file": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-front_f01.png",
+      "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+      "candidateFrame": 6,
+      "byteIdentical": true
+    },
+    "approvedFrontSideTurn": {
+      "file": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/batch-register.json",
+      "sha256": "9a4a9340ad1ba84101f0654d15b69f5770da52d4adfc016a7e10e4f3d5acb07f",
+      "frameHashes": [
+        "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+        "af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e",
+        "5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41",
+        "081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a",
+        "2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5",
+        "8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb",
+        "85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9",
+        "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+      ]
+    },
+    "walkStopReturn": {
+      "register": "art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/batch-register.json",
+      "sha256": "3d6ce9f708905850850d57de61e6c3f9c6d8d6abe45f9e1c8be0111490139e3c",
+      "route": "art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/keeper-prime-sit-stand-side-v2.json",
+      "routeSha256": "3fa0bf73e88fd8ee52805c66d681147ba543b04bca3394797ce7ab2ed2934d84"
+    },
+    "pinnedSideLeftApproval": {
+      "file": "docs/review/keeper-prime-sit-stand-side-left-v1-approval-2026-10-17.json",
+      "sha256": "8ed8021b5b385ab40a86f1f29e5253b8e05b840c94ea04d97760753d6f7a1163",
+      "decision": "approved-as-side-left-prime-sit-stand-authority"
+    }
+  },
+  "historicalChoreographyOnly": {
+    "file": "art/raw/keeper-first-batch/keeper_sit_front_f6.png",
+    "sha256": "70885b36d108ffb891244bf896eacea804e38970ab82a917706eb371866db3e2",
+    "pixelsReusedInCandidate": false
+  },
+  "generation": {
+    "tool": "built-in image generation",
+    "generatedSources": [
+      {
+        "pose": 2,
+        "file": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/sources/generated/front-f2-generated-v2.png",
+        "sha256": "5ae4a85c507af6221881b241b8b9778ed1d81a67356e5aa25232ff7aaa324a00"
+      },
+      {
+        "pose": 3,
+        "file": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/sources/generated/front-f3-generated-v2.png",
+        "sha256": "aa1dc538764138c6acc3a92e5af898a9c1dbff49859abf2e686793b6cbda3ce1"
+      },
+      {
+        "pose": 4,
+        "file": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/sources/generated/front-f4-generated-v2.png",
+        "sha256": "56c0f1acd7a8fa75cb155a4a90529d3128201c9ec57059ff81c760856aa31b3d"
+      },
+      {
+        "pose": 5,
+        "file": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/sources/generated/front-f5-generated-v2.png",
+        "sha256": "bc407c8ec7c2f768ee71aab21ff34e6a8ded795ecf4bffbb13629b7170746408"
+      }
+    ],
+    "promptLog": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/PROMPT_LOG.md",
+    "endpointPixelsGenerated": false
+  },
+  "candidate": {
+    "frames": [
+      {
+        "frame": 1,
+        "file": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/drafts/frames/keeper_prime_stand-to-sit-front_f01.png",
+        "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+        "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v3/drafts/frames/keeper_prime_stand-to-sit-front_f01.png",
+        "sourceSha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+        "inheritedV3ByteExact": true,
+        "registration": null,
+        "cellPixels": [
+          256,
+          320
+        ],
+        "bounds": {
+          "minX": 52,
+          "minY": 18,
+          "maxX": 203,
+          "maxY": 315,
+          "width": 152,
+          "height": 298,
+          "opaquePixels": 31280
+        },
+        "elbowBandFraction": [
+          0.45,
+          0.68
+        ],
+        "elbowSpanPx": 152,
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 4
+      },
+      {
+        "frame": 2,
+        "file": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/drafts/frames/keeper_prime_stand-to-sit-front_f02.png",
+        "sha256": "4efd077ac6046b67e286f22b8b38546492042d0ed8e0f43da0e34840a32d23ab",
+        "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/sources/generated/front-f2-generated-v2.png",
+        "sourceSha256": "5ae4a85c507af6221881b241b8b9778ed1d81a67356e5aa25232ff7aaa324a00",
+        "inheritedV3ByteExact": false,
+        "registration": {
+          "sourceCanvas": [
+            1122,
+            1402
+          ],
+          "sourceAlphaBounds": {
+            "minX": 262,
+            "minY": 113,
+            "maxX": 859,
+            "maxY": 1308,
+            "width": 598,
+            "height": 1196,
+            "opaquePixels": 499854
+          },
+          "registeredSize": [
+            143,
+            286
+          ],
+          "targetAxisX": 128,
+          "targetFloorY": 315,
+          "filter": "Lanczos",
+          "creativePixelWarp": false
+        },
+        "cellPixels": [
+          256,
+          320
+        ],
+        "bounds": {
+          "minX": 56,
+          "minY": 30,
+          "maxX": 198,
+          "maxY": 315,
+          "width": 143,
+          "height": 286,
+          "opaquePixels": 29767
+        },
+        "elbowBandFraction": [
+          0.45,
+          0.68
+        ],
+        "elbowSpanPx": 143,
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 4
+      },
+      {
+        "frame": 3,
+        "file": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/drafts/frames/keeper_prime_stand-to-sit-front_f03.png",
+        "sha256": "36482028337fe7b00b09eaab1d11a5ed275fe7edf36acacf08e7341f4f5e54d5",
+        "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/sources/generated/front-f3-generated-v2.png",
+        "sourceSha256": "aa1dc538764138c6acc3a92e5af898a9c1dbff49859abf2e686793b6cbda3ce1",
+        "inheritedV3ByteExact": false,
+        "registration": {
+          "sourceCanvas": [
+            1122,
+            1402
+          ],
+          "sourceAlphaBounds": {
+            "minX": 258,
+            "minY": 144,
+            "maxX": 864,
+            "maxY": 1288,
+            "width": 607,
+            "height": 1145,
+            "opaquePixels": 491268
+          },
+          "registeredSize": [
+            143,
+            276
+          ],
+          "targetAxisX": 128,
+          "targetFloorY": 315,
+          "filter": "Lanczos",
+          "creativePixelWarp": false
+        },
+        "cellPixels": [
+          256,
+          320
+        ],
+        "bounds": {
+          "minX": 56,
+          "minY": 40,
+          "maxX": 198,
+          "maxY": 315,
+          "width": 143,
+          "height": 276,
+          "opaquePixels": 29046
+        },
+        "elbowBandFraction": [
+          0.45,
+          0.68
+        ],
+        "elbowSpanPx": 143,
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 4
+      },
+      {
+        "frame": 4,
+        "file": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/drafts/frames/keeper_prime_stand-to-sit-front_f04.png",
+        "sha256": "80e4eaa09c8adaad583242e585f883e5fca244ed465b76d9e2ab0e25c0b1b89f",
+        "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/sources/generated/front-f4-generated-v2.png",
+        "sourceSha256": "56c0f1acd7a8fa75cb155a4a90529d3128201c9ec57059ff81c760856aa31b3d",
+        "inheritedV3ByteExact": false,
+        "registration": {
+          "sourceCanvas": [
+            1122,
+            1402
+          ],
+          "sourceAlphaBounds": {
+            "minX": 256,
+            "minY": 188,
+            "maxX": 865,
+            "maxY": 1308,
+            "width": 610,
+            "height": 1121,
+            "opaquePixels": 469814
+          },
+          "registeredSize": [
+            143,
+            270
+          ],
+          "targetAxisX": 128,
+          "targetFloorY": 315,
+          "filter": "Lanczos",
+          "creativePixelWarp": false
+        },
+        "cellPixels": [
+          256,
+          320
+        ],
+        "bounds": {
+          "minX": 56,
+          "minY": 46,
+          "maxX": 198,
+          "maxY": 315,
+          "width": 143,
+          "height": 270,
+          "opaquePixels": 27663
+        },
+        "elbowBandFraction": [
+          0.45,
+          0.68
+        ],
+        "elbowSpanPx": 143,
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 4
+      },
+      {
+        "frame": 5,
+        "file": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/drafts/frames/keeper_prime_stand-to-sit-front_f05.png",
+        "sha256": "f60db0bc99420b3412efa4cb7623f8b264718606b3af69e079f9f2962e695f4c",
+        "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/sources/generated/front-f5-generated-v2.png",
+        "sourceSha256": "bc407c8ec7c2f768ee71aab21ff34e6a8ded795ecf4bffbb13629b7170746408",
+        "inheritedV3ByteExact": false,
+        "registration": {
+          "sourceCanvas": [
+            1122,
+            1402
+          ],
+          "sourceAlphaBounds": {
+            "minX": 253,
+            "minY": 160,
+            "maxX": 867,
+            "maxY": 1298,
+            "width": 615,
+            "height": 1139,
+            "opaquePixels": 487939
+          },
+          "registeredSize": [
+            143,
+            266
+          ],
+          "targetAxisX": 128,
+          "targetFloorY": 315,
+          "filter": "Lanczos",
+          "creativePixelWarp": false
+        },
+        "cellPixels": [
+          256,
+          320
+        ],
+        "bounds": {
+          "minX": 56,
+          "minY": 50,
+          "maxX": 198,
+          "maxY": 315,
+          "width": 143,
+          "height": 266,
+          "opaquePixels": 27595
+        },
+        "elbowBandFraction": [
+          0.45,
+          0.68
+        ],
+        "elbowSpanPx": 143,
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 4
+      },
+      {
+        "frame": 6,
+        "file": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/drafts/frames/keeper_prime_stand-to-sit-front_f06.png",
+        "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+        "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v3/drafts/frames/keeper_prime_stand-to-sit-front_f06.png",
+        "sourceSha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+        "inheritedV3ByteExact": true,
+        "registration": null,
+        "cellPixels": [
+          256,
+          320
+        ],
+        "bounds": {
+          "minX": 57,
+          "minY": 52,
+          "maxX": 199,
+          "maxY": 315,
+          "width": 143,
+          "height": 264,
+          "opaquePixels": 27028
+        },
+        "elbowBandFraction": [
+          0.45,
+          0.68
+        ],
+        "elbowSpanPx": 143,
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 4
+      }
+    ],
+    "forwardStrip": {
+      "file": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/drafts/keeper_prime_stand-to-sit-front-v4_f6.png",
+      "sha256": "0bdb93eb2a9fb4f76f5e99b701729ce5727c3562158153fbd02e7a4dde59f3b4",
+      "pixels": [
+        1536,
+        320
+      ]
+    },
+    "reverseStrip": {
+      "file": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/drafts/keeper_prime_sit-to-stand-front-v4_f6.png",
+      "sha256": "bf8b3e9ec5cb549d3e223f7fe3d3ca862dcc3007692c670c62f18933664f53cd",
+      "pixels": [
+        1536,
+        320
+      ]
+    },
+    "contactSheet": {
+      "file": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/evidence/keeper-prime-stand-to-sit-front-v4-contact-sheet.png",
+      "sha256": "0bdb93eb2a9fb4f76f5e99b701729ce5727c3562158153fbd02e7a4dde59f3b4"
+    },
+    "route": {
+      "file": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/keeper-prime-sit-stand-front-v4.json",
+      "sha256": "8bca3cc27af7c341cb86f8770513fd2128e416e46c5c7698c4e0985fb5dd6c8c",
+      "frames": 59
+    },
+    "reviewRoute": {
+      "file": "src/app/keeper-review/keeper-prime-sit-stand-front-v4/route.ts",
+      "sha256": "f615266e78c8f2170ba820fee38bc6d4a256ff7215706e3c23eb685f3adaa0d0",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/"
+    }
+  },
+  "widthCorrection": {
+    "rejectedCompleteContextFrames": [
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "correctedActionFrames": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "correctAuthorityActionFrame": 6,
+    "v3ElbowSpansPx": [
+      157,
+      156,
+      153,
+      149,
+      143
+    ],
+    "v4ElbowSpansPx": [
+      143,
+      143,
+      143,
+      143,
+      143
+    ],
+    "exactUnchangedActionFrames": [
+      1,
+      6
+    ]
+  },
+  "checks": {
+    "v3ImmutableAndHashPinned": true,
+    "exactEndpointsPreserved": true,
+    "framesOneAndSixExactV3": true,
+    "rejectedF2ThroughF5PixelsReplaced": true,
+    "loweringFramesMatchFrame32ElbowSpan": true,
+    "loweringHeightsMonotonic": true,
+    "sitToStandExactByteReverse": true,
+    "sixIsolatedActionCells": true,
+    "complete59FrameContextPreserved": true,
+    "ghostOverlaysProvided": true,
+    "allImagesPreloadedBeforePlayback": true,
+    "finalUnchanged": true,
+    "runtimeUnchanged": true,
+    "productionUnchanged": true
+  },
+  "publishedAssets": [
+    {
+      "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/drafts/frames/keeper_prime_stand-to-sit-front_f01.png",
+      "sourceSha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f1-a9a5c37fe7222199.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/drafts/frames/keeper_prime_stand-to-sit-front_f02.png",
+      "sourceSha256": "4efd077ac6046b67e286f22b8b38546492042d0ed8e0f43da0e34840a32d23ab",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f2-4efd077ac6046b67.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/drafts/frames/keeper_prime_stand-to-sit-front_f03.png",
+      "sourceSha256": "36482028337fe7b00b09eaab1d11a5ed275fe7edf36acacf08e7341f4f5e54d5",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f3-36482028337fe7b0.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/drafts/frames/keeper_prime_stand-to-sit-front_f04.png",
+      "sourceSha256": "80e4eaa09c8adaad583242e585f883e5fca244ed465b76d9e2ab0e25c0b1b89f",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f4-80e4eaa09c8adaad.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/drafts/frames/keeper_prime_stand-to-sit-front_f05.png",
+      "sourceSha256": "f60db0bc99420b3412efa4cb7623f8b264718606b3af69e079f9f2962e695f4c",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f5-f60db0bc99420b34.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/drafts/frames/keeper_prime_stand-to-sit-front_f06.png",
+      "sourceSha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f6-501151a426f81251.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/sources/generated/front-f2-generated-v2.png",
+      "sourceSha256": "5ae4a85c507af6221881b241b8b9778ed1d81a67356e5aa25232ff7aaa324a00",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/v4-source-f2-5ae4a85c507af622.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/sources/generated/front-f3-generated-v2.png",
+      "sourceSha256": "aa1dc538764138c6acc3a92e5af898a9c1dbff49859abf2e686793b6cbda3ce1",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/v4-source-f3-aa1dc538764138c6.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/sources/generated/front-f4-generated-v2.png",
+      "sourceSha256": "56c0f1acd7a8fa75cb155a4a90529d3128201c9ec57059ff81c760856aa31b3d",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/v4-source-f4-56c0f1acd7a8fa75.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4/sources/generated/front-f5-generated-v2.png",
+      "sourceSha256": "bc407c8ec7c2f768ee71aab21ff34e6a8ded795ecf4bffbb13629b7170746408",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/v4-source-f5-bc407c8ec7c2f768.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f2.png",
+      "sourceSha256": "af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-turn-af20e9290fb79d16.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f3.png",
+      "sourceSha256": "5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-turn-5b4f9406f68e15d2.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f4.png",
+      "sourceSha256": "081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-turn-081272e51f799f6d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f5.png",
+      "sourceSha256": "2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-turn-2e118ca8d10d126f.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f6.png",
+      "sourceSha256": "8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-turn-8c20fc0436d4982d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f7.png",
+      "sourceSha256": "85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-turn-85f897ef55e76813.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-front-side-2026-10-13-v1/drafts/frames/keeper_prime_turn_front_to_side-right_f8.png",
+      "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-turn-a172a8a01a387a21.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+      "sourceSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-context-0e80ea65610452c9.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f2.png",
+      "sourceSha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-context-2b8e91de747b527d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f3.png",
+      "sourceSha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-context-b376254e9c29da38.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f4.png",
+      "sourceSha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-context-982646b0b0e6f3f9.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f5.png",
+      "sourceSha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-context-545e7338151e6e5a.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f6.png",
+      "sourceSha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-context-17d007eee75c2e86.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f7.png",
+      "sourceSha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-context-dbf5b3849624cec7.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f8.png",
+      "sourceSha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-context-cf8c53e7ffa703a5.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f4.png",
+      "sourceSha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-context-9f4192beb8fecbc8.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f3.png",
+      "sourceSha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-context-0169b3642905389d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-stop-walk-stop-2026-10-14-v1/drafts/frames/keeper_prime_stop-to-walk-right_f2.png",
+      "sourceSha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/approved-context-e54546ba14b4e5f7.png"
+    }
+  ],
+  "approvalBoundary": {
+    "frontV1Rejected": true,
+    "frontV2Rejected": true,
+    "frontV3Rejected": true,
+    "frontV4Approved": false,
+    "backSitStandApproved": false,
+    "rearAngleSitStandApproved": false,
+    "promotionAllowed": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false
+  },
+  "rollback": "Delete only art/drafts/keeper-prime-sit-stand-front-2026-10-17-v4, public/keeper-review/keeper-prime-sit-stand-front-v4, src/app/keeper-review/keeper-prime-sit-stand-front-v4/route.ts, scripts/build_keeper_prime_sit_stand_front_v4.mjs and scripts/verify_keeper_prime_sit_stand_front_v4.mjs; V1–V3 and every approved authority remain unchanged."
+}

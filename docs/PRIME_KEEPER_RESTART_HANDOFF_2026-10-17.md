@@ -93,13 +93,19 @@ exposed action F3 snapping from 167 px to 158 px F4. Preserve V2 and its exact
 decision at
 `docs/review/keeper-prime-sit-stand-front-v2-rejection-2026-10-17.json`.
 
-Front-facing V3 is now the single active next-direction candidate at
-`/keeper-review/keeper-prime-sit-stand-front-v3/`. It retains V2 F1, F2 and
-F4–F6 byte-identically, redraws only F3 as a complete Prime-derived figure at
-158 px width, and preserves the exact endpoints, approved turn/walk context,
-59-frame route, ghosts and three scales. Historical `keeper_sit_front`
+Frank rejected V3 because complete-context frames 28–32 still narrowed
+elbow-to-elbow 157→156→153→149→143 px. Preserve its exact decision and hashes
+at `docs/review/keeper-prime-sit-stand-front-v3-rejection-2026-10-18.json`.
+
+Front-facing V4 is now the single active next-direction candidate at
+`/keeper-review/keeper-prime-sit-stand-front-v4/`. It preserves exact F1/F6 and
+redraws complete F2–F5 figures from the Prime authorities. Frames 28–32 all
+match exact frame 32/F6's 143 px elbow span while their heights lower
+monotonically 286→276→270→266→264 px. The approved turn/walk context,
+59-frame route, exact reverse, three scales and ghosts remain; the exact
+frame-32 seated ghost is on by default. Historical `keeper_sit_front`
 contributes choreography only and zero visible pixels. Nothing about publishing
-V3 approves it. Back and the two rear angles remain unapproved. After front and
+V4 approves it. Back and the two rear angles remain unapproved. After front and
 back are decided, audit whether the approved turn network already covers the
 rear angles.
 
@@ -187,14 +193,16 @@ Current live inspection:
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-side-left-v1/`
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v1/` (rejected immutable provenance)
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v2/` (rejected immutable provenance)
-- `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v3/` (current complete-context width-smoothed review candidate)
+- `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v3/` (rejected immutable provenance)
+- `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v4/` (current frame-32 elbow-width-locked review candidate)
 
 Front-facing V2 was deployed from exact commit `8fb6614`, reviewed in the full
-context and rejected. V3 was deployed from exact commit `07be590` and verified
-live on 17 October 2026. Its 59-frame `Complete context` view loads all 25
-unique images before enabling controls; the standing-Prime and previous-frame
-ghosts expose the corrected 157→158→158 px progression across frames 28–30.
-This remains a review candidate only: V1 and V2 stay rejected and V3 has not
+context and rejected. V3 was deployed from exact commit `07be590`, verified
+live, then rejected because frames 28–32 still narrowed elbow-to-elbow. V4's
+59-frame `Complete context` view loads all 28 unique images before enabling
+controls. Its frames 28–32 all use exact frame 32/F6's 143 px elbow span, and
+the exact frame-32 seated ghost is enabled by default to expose any future
+drift. This remains a review candidate only: V1–V3 stay rejected and V4 has not
 been approved or promoted.
 
 For every subsequent versioned review candidate, publishing and verifying the
@@ -208,9 +216,9 @@ checkpoint no Prime animation has been promoted into Final/runtime/production.
 
 ## Exact next-task boundary
 
-Stop for Frank's visual decision on the live front-facing V3 reviewer. If he
+Stop for Frank's visual decision on the live front-facing V4 reviewer. If he
 approves it, record a separate hash-pinned decision without promoting it; if he
-requests changes, create front-facing V4 rather than rewriting V3. Only then
+requests changes, create front-facing V5 rather than rewriting V4. Only then
 begin the requested
 back-facing direction. After that decision, audit whether the approved turn
 network makes separate rear-angle sit/stand transitions unnecessary. One

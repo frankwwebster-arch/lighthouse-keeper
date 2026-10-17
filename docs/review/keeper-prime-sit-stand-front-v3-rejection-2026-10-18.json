@@ -1,0 +1,48 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-18",
+  "reviewedBy": "Frank",
+  "candidate": "keeper-prime-sit-stand-front-2026-10-17-v3",
+  "decision": "rejected-lowering-elbow-width-drift-frames-28-through-32",
+  "wording": "still not correct. As he moves toward to sit, his width changes, first wider (frame 28), and then less wide (frame 32). Frame 32 is the correct width. if you compare those two frames, and measure the width of the keeper, elbow to elbow, you will see the error. Fix it",
+  "rejectedHashes": {
+    "batchRegister": "ce03ff0d8240846eacd9d3a484e9cbb84342501c02055f475bacff4b2bd9e287",
+    "routeData": "6f6ce0f2e6a708c33e3bf99a1f03a4c8df7be4b5f56714a3f9e7439e63304c47",
+    "reviewRoute": "f75161ab133525eecc0e976262e6005896e3bee115a7ad78e1205d2f299c30f6",
+    "keeperFrames": [
+      "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "3692f5cea2a3f4b4e67907ecaf65c6288aa941c3f468cf0099dbccebd8323c63",
+      "f690b45aa2039d80800868a9b20b5b0173ae45cc9a7350ccdd04dde01afe37aa",
+      "218428cae398af33b054206b313a1ce838184e095535055d6fd5584b9d7e0cd5",
+      "06f812cc04ce7876026eda4513a3fffa6673cdd3d20b131f1b5fee8ceda52d23",
+      "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce"
+    ]
+  },
+  "delivery": {
+    "candidateCommit": "e7dfe2e",
+    "deployCommit": "07be590",
+    "reviewUrl": "https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v3/"
+  },
+  "requiredCorrection": {
+    "completeContextFrames": [28, 29, 30, 31, 32],
+    "underlyingActionFrames": [2, 3, 4, 5, 6],
+    "correctAuthorityFrame": 32,
+    "fault": "The lowering intermediates narrow progressively toward the correct seated endpoint instead of preserving its elbow-to-elbow span",
+    "measuredV3ElbowSpansPx": [157, 156, 153, 149, 143],
+    "remedy": "Create a new versioned candidate with complete Prime-derived F2-F5 redraws whose elbow-to-elbow span equals exact frame 32 F6; express lowering through articulation, never whole-character scaling"
+  },
+  "approvalBoundary": {
+    "frontV1Approved": false,
+    "frontV1Rejected": true,
+    "frontV2Approved": false,
+    "frontV2Rejected": true,
+    "frontV3Approved": false,
+    "frontV3Rejected": true,
+    "frontV4Approved": false,
+    "backSitStandApproved": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false,
+    "promotionPerformed": false
+  }
+}

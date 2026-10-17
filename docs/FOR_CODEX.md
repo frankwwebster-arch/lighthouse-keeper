@@ -67,15 +67,18 @@ No Final/runtime/production promotion has occurred. A fresh task should begin wi
 `docs/PRIME_KEEPER_RESTART_HANDOFF_2026-10-17.md`.
 
 The active next-direction proposal is
-`/keeper-review/keeper-prime-sit-stand-front-v3/`. Frank rejected V1 for the
-wide reverse F5/F4 poses, then rejected V2 because complete-context frames 29
-and 30 still exposed action F3 snapping from 167 px to 158 px F4. V3 preserves
-V2 F1, F2 and F4–F6 byte-identically and replaces only F3 with a complete
-Prime-derived 158 px redraw. The exact 59-frame context, ghosts, action-only
-playback, source/candidate proof and 8×/4×/1× inspection remain. Preserve both
-hash-pinned rejection records. Historical `keeper_sit_front` remains
-choreography-only evidence. V3 awaits Frank; do not infer approval, promote it
-or begin back-facing work.
+`/keeper-review/keeper-prime-sit-stand-front-v4/`. Frank rejected V1 for the
+wide reverse F5/F4 poses, V2 for its complete-context F3→F4 snap, and V3
+because frames 28–32 still narrowed elbow-to-elbow
+157→156→153→149→143 px. V4 preserves the exact F1/F6 endpoints and replaces
+F2–F5 with complete Prime-derived redraws whose 143 px elbow span matches exact
+frame 32/F6. Their decreasing heights supply articulated lowering rather than
+whole-character scaling. The exact 59-frame context, reverse, ghosts,
+action-only playback, source/candidate proof and 8×/4×/1× inspection remain;
+the frame-32 seated ghost is on by default. Preserve all three hash-pinned
+rejection records. Historical `keeper_sit_front` remains choreography-only
+evidence. V4 awaits Frank; do not infer approval, promote it or begin
+back-facing work.
 
 Future pub/games-room layout rule: mount the approved dartboard on the
 right-hand cupboard-door leaf. It is edge-on while that door is closed and is
