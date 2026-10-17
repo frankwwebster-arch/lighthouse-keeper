@@ -63,6 +63,8 @@ for (const token of ['seatTop:44.25', 'seatHeight:7.75', 'supportSourceY:258', '
 assert.ok(app.includes('/keeper-review/keeper-prime-sit-stand-side-v2/route.json'))
 assert.ok(workbench.includes('/keeper-review/keeper-prime-sit-stand-side-v6/'))
 assert.ok(workbench.includes('V15'))
+assert.ok(workbench.includes('7.75 lp above floor'))
+assert.ok(workbench.includes('measured seated underside'))
 assert.equal(wbRegister.candidate.sittingCandidate, '/keeper-review/keeper-prime-sit-stand-side-v6/')
 assert.ok(Object.values(wbRegister.checks).every(Boolean))
 
