@@ -147,6 +147,10 @@ held by jar bookends. It remains inside one exact 21-lp bay, has no interaction
 spot, and moves by the kettle's identical whole-bay delta. Review:
 `/keeper-review/kitchen-kettle-recipe-shelf-v11/`; recipe:
 [`docs/KITCHEN_KETTLE_RECIPE_SHELF_V11_RECIPE_2026-10-17.md`](docs/KITCHEN_KETTLE_RECIPE_SHELF_V11_RECIPE_2026-10-17.md).
+V11 is rejected for its smaller/thinner shelf. V12 keeps the V10 plant shelf's
+plank and brackets byte-identical and replaces only its contents with books and
+jar bookends. Review: `/keeper-review/kitchen-kettle-recipe-shelf-v12/`; recipe:
+[`docs/KITCHEN_KETTLE_RECIPE_SHELF_V12_RECIPE_2026-10-17.md`](docs/KITCHEN_KETTLE_RECIPE_SHELF_V12_RECIPE_2026-10-17.md).
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

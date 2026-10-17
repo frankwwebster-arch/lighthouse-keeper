@@ -1,0 +1,25 @@
+{
+  "standard": "/keeper-review/kitchen-kettle-recipe-shelf-v12/assets/v10_plant_shelf_structure_standard.png",
+  "shelf": "/keeper-review/kitchen-kettle-recipe-shelf-v12/assets/obj_kettle_recipe_shelf_v12_f1.png",
+  "before": "/keeper-review/kitchen-kettle-recipe-shelf-v12/assets/room_kitchen_9bay_v11_rejected.png",
+  "after": "/keeper-review/kitchen-kettle-recipe-shelf-v12/assets/room_kitchen_9bay_v12_recipe_shelf.png",
+  "moves": {
+    "2": "/keeper-review/kitchen-kettle-recipe-shelf-v12/assets/kettle_recipe_shelf_v12_move_bay_2.png",
+    "5": "/keeper-review/kitchen-kettle-recipe-shelf-v12/assets/kettle_recipe_shelf_v12_move_bay_5.png",
+    "8": "/keeper-review/kitchen-kettle-recipe-shelf-v12/assets/kettle_recipe_shelf_v12_move_bay_8.png"
+  },
+  "rows": [
+    {
+      "name": "opaque bound",
+      "value": "19.0 \u00d7 9.75 lp"
+    },
+    {
+      "name": "shelf bottom",
+      "value": "25 lp from room top, matching V10"
+    },
+    {
+      "name": "structure",
+      "value": "rows 83\u201399 byte-identical to V10 plant shelf"
+    }
+  ]
+}

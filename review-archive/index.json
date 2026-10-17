@@ -11,12 +11,12 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 91,
-    "referenceCount": 2734,
-    "uniqueObjectCount": 1168,
-    "logicalBytes": 177405292,
-    "uniqueBytes": 83943457,
-    "deduplicatedBytes": 93461835
+    "setCount": 92,
+    "referenceCount": 2741,
+    "uniqueObjectCount": 1173,
+    "logicalBytes": 177668929,
+    "uniqueBytes": 84105185,
+    "deduplicatedBytes": 93563744
   },
   "legacyPaths": {
     "/keeper-review/drafts/00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271.png": {
@@ -18085,6 +18085,55 @@
       "bytes": 96042,
       "object": "review-archive/objects/fe/feaa3c5fd61e4c089cb8f3503d1f5b4f3cf8079c1dc1b050a63b463dae8b199d.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fe/feaa3c5fd61e4c089cb8f3503d1f5b4f3cf8079c1dc1b050a63b463dae8b199d.png"
+    },
+    "/keeper-review/kitchen-kettle-recipe-shelf-v12/assets/kettle_recipe_shelf_v12_move_bay_2.png": {
+      "sha256": "fb6625c496e7423d5ece4efdb65ad4b2d1f94304cad7b16a8392a54732f674e2",
+      "extension": ".png",
+      "bytes": 20194,
+      "object": "review-archive/objects/fb/fb6625c496e7423d5ece4efdb65ad4b2d1f94304cad7b16a8392a54732f674e2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fb/fb6625c496e7423d5ece4efdb65ad4b2d1f94304cad7b16a8392a54732f674e2.png"
+    },
+    "/keeper-review/kitchen-kettle-recipe-shelf-v12/assets/kettle_recipe_shelf_v12_move_bay_5.png": {
+      "sha256": "844cd1d20826de4c49eb610952c7ae22af93e09f2496b2c38d74e5550019ca29",
+      "extension": ".png",
+      "bytes": 20192,
+      "object": "review-archive/objects/84/844cd1d20826de4c49eb610952c7ae22af93e09f2496b2c38d74e5550019ca29.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/844cd1d20826de4c49eb610952c7ae22af93e09f2496b2c38d74e5550019ca29.png"
+    },
+    "/keeper-review/kitchen-kettle-recipe-shelf-v12/assets/kettle_recipe_shelf_v12_move_bay_8.png": {
+      "sha256": "509637b09ee982f3b1e9e2869b56597e58f3e4f6fd5960337a70b99f046055f7",
+      "extension": ".png",
+      "bytes": 20203,
+      "object": "review-archive/objects/50/509637b09ee982f3b1e9e2869b56597e58f3e4f6fd5960337a70b99f046055f7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/50/509637b09ee982f3b1e9e2869b56597e58f3e4f6fd5960337a70b99f046055f7.png"
+    },
+    "/keeper-review/kitchen-kettle-recipe-shelf-v12/assets/obj_kettle_recipe_shelf_v12_f1.png": {
+      "sha256": "924a7a6948b7543361b460eacfda98e0f13e04e5af855f61d908a7409e88324f",
+      "extension": ".png",
+      "bytes": 5269,
+      "object": "review-archive/objects/92/924a7a6948b7543361b460eacfda98e0f13e04e5af855f61d908a7409e88324f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/92/924a7a6948b7543361b460eacfda98e0f13e04e5af855f61d908a7409e88324f.png"
+    },
+    "/keeper-review/kitchen-kettle-recipe-shelf-v12/assets/room_kitchen_9bay_v11_rejected.png": {
+      "sha256": "feaa3c5fd61e4c089cb8f3503d1f5b4f3cf8079c1dc1b050a63b463dae8b199d",
+      "extension": ".png",
+      "bytes": 96042,
+      "object": "review-archive/objects/fe/feaa3c5fd61e4c089cb8f3503d1f5b4f3cf8079c1dc1b050a63b463dae8b199d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fe/feaa3c5fd61e4c089cb8f3503d1f5b4f3cf8079c1dc1b050a63b463dae8b199d.png"
+    },
+    "/keeper-review/kitchen-kettle-recipe-shelf-v12/assets/room_kitchen_9bay_v12_recipe_shelf.png": {
+      "sha256": "7c0063260ca81a729ed186f051a31840c3fe1110a94ce8f7afa61cc3cd49975b",
+      "extension": ".png",
+      "bytes": 95870,
+      "object": "review-archive/objects/7c/7c0063260ca81a729ed186f051a31840c3fe1110a94ce8f7afa61cc3cd49975b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7c/7c0063260ca81a729ed186f051a31840c3fe1110a94ce8f7afa61cc3cd49975b.png"
+    },
+    "/keeper-review/kitchen-kettle-recipe-shelf-v12/assets/v10_plant_shelf_structure_standard.png": {
+      "sha256": "22810796385f3e8ce03ebf1381c12c77ca42c604f7dcfe010a3f9d74bf117176",
+      "extension": ".png",
+      "bytes": 5867,
+      "object": "review-archive/objects/22/22810796385f3e8ce03ebf1381c12c77ca42c604f7dcfe010a3f9d74bf117176.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/22/22810796385f3e8ce03ebf1381c12c77ca42c604f7dcfe010a3f9d74bf117176.png"
     },
     "/keeper-review/kitchen-porthole-backdrop-cutout-v10/assets/kettle_broken_frame1.png": {
       "sha256": "103e62f5e422e1619fe13e57cda8c3c2bdfa3098c0fd86b59fa3a32cf7f425ed",

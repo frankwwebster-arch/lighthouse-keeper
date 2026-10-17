@@ -1,0 +1,23 @@
+{
+  "id": "kitchen-kettle-recipe-shelf-v12",
+  "status": "review-draft-authority",
+  "date": "2026-10-17",
+  "baseline": "kitchen-porthole-backdrop-cutout-v10",
+  "rejectedPredecessor": "kitchen-kettle-recipe-shelf-v11",
+  "density": 4,
+  "bayWidthLp": 21,
+  "roomHeightLp": 56,
+  "kettleDefaultBay": 3,
+  "shelf": {
+    "cellLp": [21, 56],
+    "opaqueWidthLp": 19,
+    "bottomLpFromRoomTop": 25,
+    "structuralRowsPx": [83, 100],
+    "structuralPixelAuthority": "V10 obj_fridge_wall_shelf_v10_f1 rows 83..99",
+    "parentAsset": "obj_kettle",
+    "movesWithParent": true,
+    "interactionSpot": null
+  },
+  "movementProofBays": [2, 5, 8],
+  "runtimeWiring": false
+}
