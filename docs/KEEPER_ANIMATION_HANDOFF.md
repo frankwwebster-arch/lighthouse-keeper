@@ -15,7 +15,7 @@
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
 
-## Darts Prime redraw calibration and tunable route — 17 October 2026
+## Darts Prime complete redraw and contextual route — 17 October 2026
 
 Frank found the jump from Prime Keeper into the inherited Darts throw core
 visibly irritating: the old action family has a narrower cream band, slimmer
@@ -23,15 +23,16 @@ torso, finer outline and different shading. Palette correction alone is
 therefore rejected as insufficient. The historical Darts cells remain
 choreography-only evidence.
 
-`/keeper-review/keeper-prime-darts-redraw-v1/` is the first visual-family gate.
+`/keeper-review/keeper-prime-darts-redraw-v1/` was the first visual-family gate.
 It contains three new high-resolution identity-preserve renders—wind-up,
 release and recovery—made with the approved smooth side-right Prime as the sole
 identity, anatomy, outfit, palette, outline, shading and rendering authority.
 Each complete figure is uniformly registered into a 448 × 320 action cell with
 the foot axis at x=128, cap top y=18, floor y=315 and zero edge alpha. The
-expanded width preserves Prime scale around the extended throwing arm. This is
-not yet the fourteen-frame core and none of the three poses is inserted into a
-route.
+expanded width preserves Prime scale around the extended throwing arm. Frank
+approved that exact three-pose drawing family on 17 October 2026. The
+hash-pinned decision is
+`docs/review/keeper-prime-darts-redraw-v1-approval-2026-10-17.json`.
 
 `/keeper-review/keeper-prime-darts-context-v5/` preserves all 213 Darts V4
 route slots, roots, timings, sprite sources and state byte-for-byte except for
@@ -44,13 +45,18 @@ ribbed barrel, steel shaft and point—used identically while airborne and stuck
 in the board. The inherited hand-held darts remain part of the superseded core
 until the full Prime redraw is approved.
 
-The active selector is now
-`/keeper-review/keeper-prime-context-workbench-v6/`. It retains every V5 choice,
-uses tunable Darts V5 as the complete route, and adds the three-pose redraw gate
-as a tenth choice. No candidate is approved, in Final, runtime or production.
-The next art gate is Frank's visual decision on the three-pose family; only
-after that decision should the remaining in-betweens be generated and a new
-contextual route substitute the complete Prime throw core.
+`/keeper-review/keeper-prime-darts-redraw-v2/` is the resulting complete
+fourteen-slot core candidate. It contains nine unique visible drawings: exact
+Prime neutral, the three approved V1 poses and five new Prime-derived bridges.
+Every cell is 448 × 320 with clear edges; V1 wind-up, release and recovery are
+byte-identical. Historical Darts contributed choreography only.
+
+`/keeper-review/keeper-prime-darts-context-v6/` applies V2 to all 84 core uses
+across six throws. All 213 V5 route positions, roots, durations, board state,
+projectile timing, collection and turns remain exact. The active selector is
+`/keeper-review/keeper-prime-context-workbench-v7/`, which retains ten choices
+and links both the complete route and registered core. V2/V6/V7 are candidates;
+nothing entered Final, runtime or production.
 
 ## Whole-bank audit and prior Context Workbench V5 checkpoint — 17 October 2026
 

@@ -15,7 +15,7 @@ The deterministic inventory is
 `data/keeper-prime-animation-bank-audit-v1.json` (308 rows; 159 legacy endpoint
 risks; 28 explicitly rejected/excluded; zero strip/sidecar geometry mismatches).
 The active selectable contextual reviewer is
-`/keeper-review/keeper-prime-context-workbench-v6/`; it includes only ten
+`/keeper-review/keeper-prime-context-workbench-v7/`; it includes only ten
 status-labelled routes whose present state can be defended and links the full
 inventory. V3 retains V2's fix for V1's deployed relative-URL/trailing-slash
 loader failure and localised native-route images, and adds the inspection-only
@@ -44,9 +44,12 @@ provenance; V3 remains immutable pre-isolation context. Darts V5 preserves the
 complete V4 route and adds only reversible browser-local occurrence/pose
 skipping, JSON export and one consistent airborne/stuck dart rendering. The
 separate Darts redraw V1 gate contains three newly generated Prime-derived key
-poses, registered to exact cap/floor datums in 448 × 320 action cells. Those
-poses are not yet inserted into the route. Neither Darts V4/V5, the redraw
-calibration nor the seated foundation is approved or promoted.
+poses, registered to exact cap/floor datums in 448 × 320 action cells. Frank
+approved those exact pose hashes as the Darts drawing-family authority. Redraw
+V2 adds five Prime-derived bridges and exact neutral holds to form a fourteen-
+slot candidate. Darts Context V6 substitutes that core into all 84 throw uses
+without changing any of the 213 route mechanics. Workbench V7 links the route
+and core inspector. None of V2/V6/V7 is approved or promoted.
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 

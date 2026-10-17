@@ -4,13 +4,14 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 
 The active Keeper-art gate is the reversible Prime Keeper whole-bank
 normalisation programme. Its new selector is
-`/keeper-review/keeper-prime-context-workbench-v6/`: every selectable item is
+`/keeper-review/keeper-prime-context-workbench-v7/`: every selectable item is
 shown at 8×, proposed 4× game presentation and literal 1×, with frame stepping,
 speed, looping, exact-Prime and adjacent-frame ghosts, and switches to include
 or omit its preceding and finishing transitions. The active version contains
 ten deliberately status-labelled routes or inspection views: approved core locomotion and
 vertical-circulation authorities, the unapproved six-view seated foundation,
-the tunable unapproved Darts V5 route and its separate Prime redraw gate. V2 fixes V1's deployed
+the unapproved complete Prime-redrawn Darts V6 route and its separate registered
+core inspector. V2 fixes V1's deployed
 relative-catalogue URL fault and uses a full-width large-inspection pane; V3
 retains those fixes and adds the inspection-only
 `/keeper-review/keeper-prime-darts-strip-inspector-v1/`. All 30 inherited V2
@@ -35,10 +36,14 @@ Nothing was promoted or wired into runtime. Darts V5 at
 route but adds reversible browser-local “skip this occurrence” and “skip this
 pose everywhere” editing, restore/export controls, and one shared detailed dart
 component for airborne and stuck states. It does not alter source frames.
-The separate `/keeper-review/keeper-prime-darts-redraw-v1/` gate presents three
-new Prime-derived key poses—wind-up, release and recovery—before the complete
-throw core is redrawn. Workbench V6 makes Darts V5 the playable choice, adds
-that redraw gate, and retains both diagnostic pages.
+Frank approved the three-pose drawing family in
+`/keeper-review/keeper-prime-darts-redraw-v1/`; the immutable decision is
+`docs/review/keeper-prime-darts-redraw-v1-approval-2026-10-17.json`. The new
+`/keeper-review/keeper-prime-darts-redraw-v2/` core keeps those three drawings
+byte-identical, adds five Prime-derived bridge poses and registers fourteen
+slots with exact Prime neutral endpoints. Darts Context V6 applies those slots
+to all 84 throw-core occurrences while preserving all 213 V5 route mechanics.
+Workbench V7 exposes both candidates and retains both earlier diagnostics.
 
 The redraw method is now binding across the complete first-draft animation
 bank: historical frames may supply choreography, joint paths, contacts, prop

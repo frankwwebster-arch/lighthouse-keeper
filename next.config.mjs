@@ -153,6 +153,21 @@ export default {
         destination: '/keeper-review/keeper-prime-context-workbench-v6/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/keeper-prime-darts-context-v6',
+        destination: '/keeper-review/keeper-prime-darts-context-v6/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/keeper-prime-darts-redraw-v2',
+        destination: '/keeper-review/keeper-prime-darts-redraw-v2/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/keeper-prime-context-workbench-v7',
+        destination: '/keeper-review/keeper-prime-context-workbench-v7/index.html',
+        permanent: false,
+      },
     ]
   },
 }

@@ -1,0 +1,23 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-17",
+  "reviewedBy": "Frank",
+  "candidate": "keeper-prime-darts-redraw-2026-10-17-v1",
+  "decision": "approved-as-drawing-family-authority",
+  "wording": "approved",
+  "approvedPoseHashes": {
+    "windup": "bd1f9e228b6c22a8aecd8b4d14e1bd27ca021f83a1ce2eb0a8bcca526d9a3825",
+    "release": "fae0deec1267ba583219098393f3eb6943996650456b1ab8f6a572bd22f12bf2",
+    "recovery": "5cdffcf9007cca9e3f62f1c8ee219da55e6e59d27f8ba373b81b3e95e1dd4884"
+  },
+  "approvalBoundary": {
+    "threeRegisteredKeyPosesApproved": true,
+    "identityAndRenderingFamilyApproved": true,
+    "remainingInbetweensAuthorised": true,
+    "fourteenFrameThrowCoreApproved": false,
+    "contextualRouteApproved": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false
+  }
+}

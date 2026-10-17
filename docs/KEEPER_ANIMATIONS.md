@@ -15,7 +15,7 @@ hash, outfit, facing, endpoint, dependency, current family, treatment and
 required contextual route.
 
 The active selectable contextual review is
-`/keeper-review/keeper-prime-context-workbench-v6/`. It deliberately contains
+`/keeper-review/keeper-prime-context-workbench-v7/`. It deliberately contains
 only ten routes or inspection views whose current status can be stated
 confidently, and labels approved authorities separately from unapproved
 candidates. The corrected
@@ -34,14 +34,18 @@ the unsafe 7×2 rectangular extraction of the fourteen generated throw poses
 with whole-component ownership, removes 256 measured neighbouring-actor pixels
 and keeps four detached projectiles out of the character cells. All endpoints
 and approved posture bridges are unchanged; palette work remains separate.
-Workbench V6 makes the tunable Darts V5 route the main Darts choice while
+Workbench V7 makes the complete Prime-redrawn Darts V6 route the main Darts
+choice while
 retaining the immutable V2 inspector and isolation comparison. V5 keeps all
 213 V4 route slots, timings, roots and sprite sources, but adds non-destructive
 occurrence/pose skipping, restore/export controls and one shared detailed dart
 component for both flight and board impact. The tenth choice is the separate
 Prime Darts redraw V1 calibration: three new wind-up/release/recovery drawings
-using Prime as the only visible-character authority. They are not yet a full
-throw core and are not inserted into the contextual route.
+using Prime as the only visible-character authority. Frank approved those
+exact hashes. Redraw V2 keeps them byte-identical, adds five Prime-derived
+bridges and exact neutral holds, and forms the fourteen-slot candidate used by
+all 84 throw occurrences in Context V6. Route mechanics remain exact; V2/V6
+remain unapproved and unpromoted.
 Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before
 creating or assessing another action.
