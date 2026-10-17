@@ -116,6 +116,13 @@ rear makes the Keeper visibly pass behind it. Historical `keeper_sit_back`
 contributes choreography only and zero visible pixels. Back V1 and both rear
 angles remain unapproved; nothing is promoted.
 
+The live reviewer was verified on 18 October 2026 at
+`/keeper-review/keeper-prime-sit-stand-back-v1/`. Candidate commit `f8c8a71`
+was merged with concurrent Kitchen V27 work in `9584eb4`; exact production
+deploy commit `d93c89c` reached Vercel READY. The live route contains 61 frames
+and all 31 unique review images returned valid PNG data. This is delivery
+evidence only, not artwork approval.
+
 ## Binding method for every inherited animation
 
 Every first-draft animation must be redrafted. Historical frames may supply
