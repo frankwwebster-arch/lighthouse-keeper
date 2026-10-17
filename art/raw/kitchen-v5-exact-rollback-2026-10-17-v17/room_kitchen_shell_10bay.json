@@ -1,0 +1,18 @@
+{
+  "w": 214,
+  "h": 56,
+  "frames": 1,
+  "fps": 0,
+  "density": 4,
+  "anchor": [
+    107.0,
+    56
+  ],
+  "z": 10,
+  "projection": {
+    "id": "flat-cutaway-v1",
+    "runtimeDepthScaling": false
+  },
+  "floorBandLp": 5,
+  "repeatCount": 10
+}

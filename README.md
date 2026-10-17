@@ -108,9 +108,11 @@ projection authority. The active
 contract uses a straight-on camera, rectangular functional fronts, constant
 Keeper/object scale, no runtime depth scaling, an exact 5-lp horizontal floor
 band and the real 19-lp cooker/hob datum. Kitchen V5 remains the sole visual
-baseline at `/keeper-review/kitchen-basic-assets-v5/`. Frank selected
-calibration Option B (1.5-lp visible top), and the replacement full-family V6
-draft is now at `/keeper-review/kitchen-basic-assets-v6-option-b/`. The earlier
+baseline and is restored byte-for-byte by the current V17 review at
+`/keeper-review/kitchen-v5-exact-rollback-v17/`. Frank previously selected
+calibration Option B (1.5-lp visible top), but its V6–V16 implementations are
+now rejected historical evidence. V6 remains preserved at
+`/keeper-review/kitchen-basic-assets-v6-option-b/`. The earlier
 gate remains immutable at `/keeper-review/kitchen-countertop-calibration-v6/`;
 it shows the exact V5 kettle
 counter, cooker/hob and sink beside three common 1–2-lp countertop
@@ -143,7 +145,7 @@ The exact recipe is
 [`docs/KITCHEN_WALL_ANCHORED_V8_RECIPE_2026-10-16.md`](docs/KITCHEN_WALL_ANCHORED_V8_RECIPE_2026-10-16.md)
 and the hand-back is
 [`docs/CODEX_TO_CLAUDE_KITCHEN_WALL_ANCHORED_V8_2026-10-16.md`](docs/CODEX_TO_CLAUDE_KITCHEN_WALL_ANCHORED_V8_2026-10-16.md).
-The latest focused fridge-only correction is
+The historical focused fridge-only correction is
 `/keeper-review/kitchen-fridge-shelf-v9/`. It keeps the exact V8 room and object
 family, restores dimensional light/shadow detail to the bright-white
 counterless fridge, and adds a separate 19 × 17-lp plant-and-pots wall child
@@ -201,6 +203,16 @@ measured first inherited-surface row, restores only a binary wood-rejecting
 appliance silhouette and requires V15 itself to fail the expanded exact-pixel
 gate. Review: `/keeper-review/kitchen-option-b-silhouette-clean-v16/`; recipe:
 [`docs/KITCHEN_OPTION_B_SILHOUETTE_CLEAN_V16_RECIPE_2026-10-17.md`](docs/KITCHEN_OPTION_B_SILHOUETTE_CLEAN_V16_RECIPE_2026-10-17.md).
+V16 is rejected because the result reads as a double-layered worktop. The
+current review authority is now the complete byte-exact V5 rollback at
+`/keeper-review/kitchen-v5-exact-rollback-v17/`. V17 changes only the review
+URL prefix: all ten families, all states, all room pieces and both room
+compositions match V5 exactly, and the verifier requires the same archived
+image objects and SHA-256 values. Its rollback contract and hand-back are
+[`docs/KITCHEN_V5_EXACT_ROLLBACK_V17_2026-10-17.md`](docs/KITCHEN_V5_EXACT_ROLLBACK_V17_2026-10-17.md)
+and
+[`docs/CODEX_TO_CLAUDE_KITCHEN_V5_EXACT_ROLLBACK_V17_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_V5_EXACT_ROLLBACK_V17_2026-10-17.md).
+V6–V16 remain rejected immutable provenance; Option B is not active in V17.
 All kitchen versions remain review drafts: none is approved, promoted or wired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door

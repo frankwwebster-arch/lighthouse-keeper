@@ -103,14 +103,15 @@ future stair scenery and collision/layout work. The grey profile is evidence,
 not final art; the future two-newel, balustrade and handrail treatment may add
 foreground occlusion but may not change any locked measurement or contact.
 
-## Frank: rejected Kitchen V6 and replacement brief (16 Oct 2026)
+## Historical Kitchen V6 replacement brief (superseded 17 Oct 2026)
 
 The first `flat-elevation-v2` Kitchen V6 was rejected and removed in full. It
 flattened away too much of the countertop volume, lowered the illustration and
 animation quality, and made the counter treatments inconsistent. Do not
 recover or reuse it. Kitchen V5 is again the sole visual/geometric baseline and
-remains an unapproved draft. The next kitchen-art task must begin with the
-calibration gate and complete instructions in
+remains an unapproved draft. This instruction produced the later rejected
+V6–V16 studies and is retained only as provenance; it is superseded by the V17
+exact-V5 rollback below. The historical calibration instructions are in
 `docs/PROMPT_KITCHEN_V5_TO_NEW_V6_2026-10-16.md`: preserve V5's readable
 countertops and polish, correct vertical side geometry, select one common
 shallow countertop construction, and keep base-unit pixels unchanged beneath
@@ -124,8 +125,9 @@ earlier calculated 4% room / 1% furnishing convergence proposal for kitchen
 and standard-room asset authoring. Keep the camera straight on, asset and
 Keeper scale constant, geometry parallel, the visible floor cue at 5 lp, and
 top surfaces shallow. Kitchen V1–V4 and Oven Approach V7 remain historical
-review evidence; V5 is the current unapproved draft. Promote nothing without
-Frank's explicit approval.
+review evidence. V17 is the current unapproved review draft and is exactly V5
+art; the projection specification does not authorise altering those bytes.
+Promote nothing without Frank's explicit approval.
 
 ## Kitchen basic assets V5 review (16 Oct 2026)
 
@@ -141,12 +143,26 @@ The kettle, toaster and mixer each sit on their own one-bay counter unit.
 The cleaning cupboard is always last, takes no bay and is reached through the
 right side wall. Its closed leaf is edge-on; its right-hinged open leaf extends
 left as a rectangular foreground occluder. The table must not block the walk
-to it. V5 is the current review-only draft at
-`/keeper-review/kitchen-basic-assets-v5/`; its measured hand-back is
+to it. V5 remains immutable at `/keeper-review/kitchen-basic-assets-v5/`; its
+exact V17 restoration is the current review authority at
+`/keeper-review/kitchen-v5-exact-rollback-v17/`. Its measured hand-back is
 `docs/CODEX_TO_CLAUDE_KITCHEN_BASIC_ASSETS_V5_2026-10-16.md`. It confirms that
 the existing oven clips read with the 19-lp body/door and that the 34×52-lp
 open cupboard leaf hides the Keeper and tool swaps. Nothing is approved,
 promoted or wired.
+
+## Kitchen V17 exact V5 rollback (17 Oct 2026)
+
+Frank rejected V16 because its worktop read as double-layered. The active
+review authority is now `/keeper-review/kitchen-v5-exact-rollback-v17/`, a
+complete byte-for-byte copy of V5 with only a new immutable review URL prefix.
+Treat all Kitchen V6–V16 revisions, including Option B, as rejected historical
+evidence. Do not blend their perspective, furniture, shelf, porthole or
+countertop changes into V17. The binding contract and measured hand-back are
+`docs/KITCHEN_V5_EXACT_ROLLBACK_V17_2026-10-17.md` and
+`docs/CODEX_TO_CLAUDE_KITCHEN_V5_EXACT_ROLLBACK_V17_2026-10-17.md`. Nothing is
+approved, promoted or wired. Any later perspective proposal must be a separate
+review gate.
 
 ## Codex movement-foundation response (14 Oct 2026)
 

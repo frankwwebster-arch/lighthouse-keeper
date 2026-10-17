@@ -1,0 +1,19 @@
+{
+  "version": 17,
+  "status": "reversible-review-draft",
+  "scope": "complete-byte-exact-v5-rollback",
+  "recipe": {
+    "path": "data/kitchen_v5_exact_rollback_v17_recipe.json",
+    "sha256": "65f6362233f7b75c9b8098b273b758ddb722554612b45dc93b8b57bd542bd5af"
+  },
+  "v5RawTreeSha256": "81ff9c2658741899030e468d40c1e651dcc5ac584a70cc5abf20588ba17be4ac",
+  "rollbackRawTreeSha256": "81ff9c2658741899030e468d40c1e651dcc5ac584a70cc5abf20588ba17be4ac",
+  "v5ReviewDataSha256": "fb96cde0ea3c46050a7b6fb909ada30ee5dc0de704d4cb721e908f00c0bc101a",
+  "v5ReviewSetSha256": "e5e3cfb22e644ba407b8ef5f208ec47dfe64d1a521972fa4350def2104a56828",
+  "copiedReviewImages": 153,
+  "runtimeSpriteManifestSha256": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174",
+  "animationWorkbenchFinalStateSha256": "6c349a70f591cba21016cf9a7a49424b971d8aed895504ba775ebd158017c658",
+  "runtimeChanged": false,
+  "finalChanged": false,
+  "keeperChanged": false
+}
