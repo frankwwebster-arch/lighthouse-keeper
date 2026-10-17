@@ -85,14 +85,20 @@ successor is `/keeper-review/kitchen-rear-facing-chair-v24/`: its sole chair is
 centred on the player-facing side of the table and shown from behind, so seated
 Prime faces the rear wall with his back to the player. V24 awaits visual
 confirmation and remains unpromoted/unwired.
-The active follow-up is `/keeper-review/kitchen-narrower-bin-v25/`, which makes
+The preceding follow-up is `/keeper-review/kitchen-narrower-bin-v25/`, which makes
 only the standalone turquoise pedal bin 20% less wide while retaining its
 centreline, height and floor contact. V24 remains immutable; V25 awaits visual
 confirmation and is also unpromoted/unwired.
-The scale review is `/keeper-review/kitchen-game-scale-prime-v26/`. It shows
+The subsequent scale review is `/keeper-review/kitchen-game-scale-prime-v26/`. It shows
 V25 at the exact `193 × 56-lp` room contract and `4 px/lp` presentation, both
 alone and with the `32 × 40-lp` Prime standing and seated rear-facing at the
 table. V26 is derived evidence only; V25 and all Keeper sources are unchanged.
+The current kitchen art review is `/keeper-review/kitchen-broken-loops-v27/`.
+It corrects the chair-back foreground in the rear-facing seated proof and shows
+all eight requested repair loops in situ and individually at density 4. The
+loops are eight frames at 8 fps, use seven reusable effect strips, and carry
+named placeholder SFX cues. V27 is review-only and does not change runtime,
+Final art or canonical V20–V26 sources.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

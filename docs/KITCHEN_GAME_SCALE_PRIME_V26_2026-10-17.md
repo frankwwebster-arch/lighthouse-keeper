@@ -18,3 +18,7 @@ the floor and is centred on the V25 chair/table axis.
 The seated composite is a scale/placement proof. Final separation of the chair
 foreground from the character remains runtime-layer work; V26 does not promote
 or wire any room, furniture or Keeper asset.
+
+Superseding review note (18 October 2026): V27 now provides the corrected
+chair-foreground composite while retaining this V26 image as immutable evidence.
+See `docs/KITCHEN_BROKEN_LOOPS_V27_2026-10-18.md`.

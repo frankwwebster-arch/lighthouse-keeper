@@ -371,17 +371,26 @@ presentation (`772 × 224 px`). Exact Prime sources appear standing at the
 fitted run and seated rear-facing at the table in their `32 × 40-lp` cells.
 The record is
 [`docs/KITCHEN_GAME_SCALE_PRIME_V26_2026-10-17.md`](docs/KITCHEN_GAME_SCALE_PRIME_V26_2026-10-17.md).
+Kitchen V27 at `/keeper-review/kitchen-broken-loops-v27/` corrects the seated
+chair foreground and adds eight isolated 8-frame/8-fps repair loops for the
+bin, fridge, kettle, toaster, oven, bowl, basin and table. Seven reusable FX
+strips carry smell/flies, smoke, steam, flame, water and sparks; the oven uses
+two animated hob flames plus black smoke. Every clip includes named SFX cues
+with review-page placeholders. V27 remains an unpromoted, unwired draft; its
+record is
+[`docs/KITCHEN_BROKEN_LOOPS_V27_2026-10-18.md`](docs/KITCHEN_BROKEN_LOOPS_V27_2026-10-18.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
 and
 [`docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md).
-Only exact Kitchen V5 and Kitchen V20–V26 remain in active kitchen review tooling.
+Only exact Kitchen V5 and Kitchen V20–V27 remain in active kitchen review tooling.
 V5 is the retained old-family reference, V20 is immutable fitted-galley
 provenance, V21 is immutable complete-asset provenance, V22 is immutable
 rejected assembly provenance, V23 is the approved full-room base, V24 is the
 rear-facing-chair successor, V25 is the narrower-bin successor awaiting
-confirmation, and V26 is its derived game-scale Prime context. None is
+confirmation, V26 is its derived game-scale Prime context, and V27 is the
+reversible broken-loop and corrected chair-occlusion successor. None is
 promoted or wired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
