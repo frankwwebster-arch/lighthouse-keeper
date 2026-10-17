@@ -70,13 +70,13 @@ choreography remain independently paced so enjoyable actions can be savoured.
 No Prime artwork has entered Workbench Final or production, and the runtime
 sprite manifest remains unchanged.
 
-The active contextual reviewer is now Prime Context Workbench V12. It retains
+The active contextual reviewer is now Prime Context Workbench V13. It retains
 all eleven V10 choices and replaces only the active side-right sitting link
-with V3. The animation remains the exact V1/V2 six-pose motion inside its complete
+with V4. The animation remains the exact V1/V2 six-pose motion inside its complete
 approved walk/stop/action/return context. V2 corrects the example chair so its
 top surface is 11 px above the floor and its 11-px depth ends at the measured
 back-of-knee line rather than extending beneath the knee. It remains
-review-only; V3 only corrects Vercel delivery with absolute paths. No runtime,
+review-only; V4 only corrects Vercel delivery with an absolute app route. No runtime,
 Final or production art changed.
 
 1. The evidence-based beard/hand audit classifies every manifest frame and pins `keeper_clear_snow` as the canonical fuller stepped beard. A landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It remains fail-closed for unavailable evidence: 163 side-on standing/sitting sheets are inventoried, eight zero-difference reference self-comparisons match, and 994 different-pose frames—including `keeper_darts` 3–6—are non-comparable because no approved beard masks, facial landmarks or hand-depth/component evidence exists. Frank reviewed Darts 3–6 visually on 11 October and accepted the beards with no amendment required; no beard draft is active or promotable. Next, use GPT-5.6 Sol to establish comparison inputs for any future claim, then run the later frame-isolation and released-prop audits.

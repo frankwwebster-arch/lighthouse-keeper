@@ -56,11 +56,11 @@ state is identical; the board is a proper segmented edge-on target rather than
 a generic oval. Frank approved exact Context V8 on 17 October 2026; its route,
 props and review hashes are pinned in
 `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
-Workbench V12 remains review infrastructure, and no Final/runtime promotion has
+Workbench V13 remains review infrastructure, and no Final/runtime promotion has
 occurred.
 
-Workbench V12 retains the eleven V10 choices while replacing only the active
-sitting link with `/keeper-review/keeper-prime-sit-stand-side-v3/`. Its 45-frame context
+Workbench V13 retains the eleven V10 choices while replacing only the active
+sitting link with `/keeper-review/keeper-prime-sit-stand-side-v4/`. Its 45-frame context
 uses approved walk/stop authorities around a six-pose side-right sit, a 600 ms
 seated hold and the exact byte-reversed stand. Action F1 is the exact approved
 Prime side-right standing authority and F6 is the exact registered Prime
@@ -69,7 +69,7 @@ one floor, one root and measured silhouette progression. V2 keeps every V1
 Keeper frame, timing and root unchanged but corrects the example chair: its top
 surface is exactly 11 lp above the floor and its 11-lp depth runs only from the
 spine/back contact `[7,29]` to the back-of-knee line `[18,29]`. The old
-`keeper_sit_side` contributes choreography only. V3 is a delivery-only wrapper
+`keeper_sit_side` contributes choreography only. V4 is a delivery-only app route
 around V2 with absolute Vercel-safe loading. It awaits Frank's review and
 changes no Final, runtime or production sprite.
 Read

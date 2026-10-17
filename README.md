@@ -54,19 +54,19 @@ flights, ribbed dark barrel and long silver point—is used identically in the
 air and embedded. Every final flight frame terminates at the board face at the
 same coordinates as the following embedded state. The acute board is now a
 recognisable segmented traditional board with double/treble rings and bull.
-Workbench V12 exposes V8, retains the core inspector and earlier diagnostics,
-and links `/keeper-review/keeper-prime-sit-stand-side-v3/`: a complete approved
+Workbench V13 exposes V8, retains the core inspector and earlier diagnostics,
+and links `/keeper-review/keeper-prime-sit-stand-side-v4/`: a complete approved
 walk/stop context around the first new Prime six-pose side-right sit, 600 ms
 seated beat and exact reverse stand. Its action endpoints are byte-identical to
 the standing and seated Prime authorities; four smooth intermediates are
 registered to one floor and one root. V2 preserves every V1 Keeper frame,
 timing and root, but corrects the example chair: its top surface is 11 lp above
 the floor and its 11-lp seat depth ends exactly at the measured back-of-knee
-line. V3 is a delivery-only absolute-path wrapper around those exact V2 bytes;
+line. V4 is a delivery-only absolute app-route wrapper around those exact V2 bytes;
 it remains unapproved review art.
 Frank approved exact Darts Context V8 on 17 October 2026. Its immutable decision
 is `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
-Workbench V12 remains review infrastructure; nothing entered Final, runtime or
+Workbench V13 remains review infrastructure; nothing entered Final, runtime or
 production.
 
 The redraw method is now binding across the complete first-draft animation

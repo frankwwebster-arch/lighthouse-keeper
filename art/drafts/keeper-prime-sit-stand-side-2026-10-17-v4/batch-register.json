@@ -1,0 +1,28 @@
+{
+  "schema": "lighthouse-keeper/reversible-review-batch@1",
+  "set": "keeper-prime-sit-stand-side-v4",
+  "status": "review-candidate-delivery-correction",
+  "predecessor": {
+    "set": "keeper-prime-sit-stand-side-v2",
+    "register": "art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/batch-register.json",
+    "sha256": "3d6ce9f708905850850d57de61e6c3f9c6d8d6abe45f9e1c8be0111490139e3c"
+  },
+  "candidate": {
+    "route": "src/app/keeper-review/keeper-prime-sit-stand-side-v4/route.ts",
+    "sha256": "c9e7a302808badde18bb0c430979d72b44dbf98a348b744a96a7919d2ba5ac21",
+    "review": "/keeper-review/keeper-prime-sit-stand-side-v4/",
+    "workbench": "/keeper-review/keeper-prime-context-workbench-v13/"
+  },
+  "immutableContent": {
+    "keeperFrames": "byte-identical to V2/V1",
+    "routeMotion": "byte-identical to V2/V1",
+    "chairGeometry": "top 11 lp above floor; depth 11 lp spine-to-knee"
+  },
+  "checks": {
+    "absoluteRedirect": true,
+    "publicPayloadGrowthBytes": 0,
+    "finalUnchanged": true,
+    "runtimeUnchanged": true,
+    "productionSpritesUnchanged": true
+  }
+}

@@ -61,8 +61,8 @@ placeholder rim with a segmented acute-angle board. The final airborne and
 first embedded renderings are byte-identical. Frank approved exact Context V8
 on 17 October 2026; preserve the hash-pinned decision at
 `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
-Workbench V12 retains every V10 choice and replaces only the active sitting
-link with the chair-corrected Prime side-right sit/stand V3 delivery context. No Final/runtime/production
+Workbench V13 retains every V10 choice and replaces only the active sitting
+link with the chair-corrected Prime side-right sit/stand V4 delivery context. No Final/runtime/production
 promotion has occurred.
 
 Future pub/games-room layout rule: mount the approved dartboard on the
@@ -73,10 +73,10 @@ or cupboard from this note alone; Frank explicitly deferred that work.
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
-## Prime side-right sit/stand V3 (17 Oct 2026)
+## Prime side-right sit/stand V4 (17 Oct 2026)
 
 The active sitting-motion gate is
-`/keeper-review/keeper-prime-sit-stand-side-v3/`. It shows the exact V2 45-frame route:
+`/keeper-review/keeper-prime-sit-stand-side-v4/`. It shows the exact V2 45-frame route:
 approved Walk V6 → approved deceleration → new Prime stand-to-sit → a 600 ms
 seated beat → the exact byte-reversed stand → approved acceleration → approved
 walk away. The six action cells use the exact approved side-right standing
@@ -92,9 +92,9 @@ replacing only the behind-Keeper proxy. The chair's top surface is y=29 / 11 lp
 above floor; in side-right cell coordinates its usable depth is exactly 11 lp,
 from the spine/back contact `[7,29]` to the back-of-knee line `[18,29]` (source
 pixels `[56,232]` to `[144,232]`). It cannot project farther forward. The
-V3 changes no visual or motion data: it is the absolute-path delivery wrapper
-created after Vercel exposed V2's relative-loader fault. The candidate and
-Workbench V12 are review infrastructure only; they are not Final,
+V4 changes no visual or motion data: it is the absolute app-route delivery
+created after Vercel exposed the relative-path faults in V2 and V3. The candidate and
+Workbench V13 are review infrastructure only; they are not Final,
 runtime or production art.
 
 ## Seated Prime foundation V2 (17 Oct 2026)
