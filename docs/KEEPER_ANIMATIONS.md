@@ -53,7 +53,11 @@ unapproved and unpromoted. Context V8 preserves all 181 V7 Keeper frames and
 route data while using one detailed 7.25-lp dart drawing for release-to-impact
 continuity. Each flight stops exactly on the board plane and the next embedded
 state is identical; the board is a proper segmented edge-on target rather than
-a generic oval. V8 and Workbench V9 are review drafts, not Final/runtime art.
+a generic oval. Frank approved exact Context V8 on 17 October 2026; its route,
+props and review hashes are pinned in
+`docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
+Workbench V9 remains review infrastructure, and no Final/runtime promotion has
+occurred.
 Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before
 creating or assessing another action.

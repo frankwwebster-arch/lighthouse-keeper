@@ -114,6 +114,7 @@
     "verify:keeper-prime-darts-context-v6": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_darts_context_v6.ts",
     "verify:keeper-prime-darts-context-v7": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_darts_context_v7.ts",
     "verify:keeper-prime-darts-context-v8": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_darts_context_v8.ts",
+    "verify:keeper-prime-darts-context-v8-approval": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_darts_context_v8_approval.ts",
     "verify:keeper-prime-darts-redraw-v1": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_darts_redraw_v1.ts",
     "verify:keeper-prime-darts-redraw-v2": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_darts_redraw_v2.ts",
     "verify:keeper-prime-darts-strip-inspector-v1": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_darts_strip_inspector_v1.ts",

@@ -1,0 +1,41 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-17",
+  "reviewedBy": "Frank",
+  "candidate": "keeper-prime-darts-context-2026-10-17-v8",
+  "decision": "approved-as-contextual-darts-animation-authority",
+  "wording": "approved",
+  "approvedHashes": {
+    "batchRegister": "bd97411758ddf3695fcedaa827da59724688b073e0953e69fe38f261554a867c",
+    "routeData": "c9ae9f4eb70f36f83a722a6f0d28baa6926d2657bad0eaaf76b5fe570ca62240",
+    "reviewPage": "b1dfd0691a8b717756891e8401de862527ad97ba27b03794f61a158d3cfa593a",
+    "reviewApp": "eb842f71def5395108d3c8c20c1e16956e5a1adf9955d30567b1673b351375cf",
+    "dart": "7f49cea617fb6c556e0d03983bea0c42b8eeed262fddb5c391ee3a5414378d01",
+    "dartboard": "a7362b443f1b2eb505b46fe31e27c4a371df3d639d13f9f707bd56a32a02f205"
+  },
+  "approvedContract": {
+    "routeFrames": 181,
+    "airborneFrames": 30,
+    "throws": 6,
+    "dartLengthLp": 7.25,
+    "boardFaceXLp": 168,
+    "oneDartAssetForAirborneAndEmbedded": true,
+    "finalAirborneAndEmbeddedGeometryExact": true,
+    "segmentedAcuteAngleBoardApproved": true,
+    "keeperFramesRootsTimingAndStateUnchangedFromV7": true
+  },
+  "delivery": {
+    "deployCommit": "eec56b0c0be5fc27fb30cf17c177fe33c8fd6068",
+    "reviewUrl": "https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-darts-context-v8/index.html?v=eec56b0"
+  },
+  "approvalBoundary": {
+    "contextualDartsRouteApproved": true,
+    "harmonisedDartApproved": true,
+    "segmentedDartboardApproved": true,
+    "workbenchV9RemainsReviewInfrastructure": true,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false,
+    "promotionPerformed": false
+  }
+}

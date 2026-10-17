@@ -287,6 +287,13 @@ const dartsContextV8 = spawnSync('node', ['scripts/verify_keeper_prime_darts_con
 })
 if (dartsContextV8.error) throw dartsContextV8.error
 if (dartsContextV8.status !== 0) process.exit(dartsContextV8.status ?? 1)
+const dartsContextV8Approval = spawnSync('node', ['scripts/verify_keeper_prime_darts_context_v8_approval.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (dartsContextV8Approval.error) throw dartsContextV8Approval.error
+if (dartsContextV8Approval.status !== 0) process.exit(dartsContextV8Approval.status ?? 1)
 const contextWorkbenchV7 = spawnSync('node', ['scripts/verify_keeper_prime_context_workbench_v7.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },

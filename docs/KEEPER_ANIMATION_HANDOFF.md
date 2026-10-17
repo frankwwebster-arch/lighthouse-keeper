@@ -94,8 +94,9 @@ renderings have identical image bytes, dimensions and coordinates; the tip is
 clamped at the x=168-lp board face. A separate high-resolution acute-angle
 board has visible alternating sectors, double/treble rings and bull while
 remaining only 3.15 lp deep in the room view. Workbench V9 selects this route
-and reuses V8's unchanged inventory. V8/V9 are unapproved review candidates;
-nothing entered Final, runtime or production.
+and reuses V8's unchanged inventory. At delivery V8 was an unapproved review
+candidate and V9 was review infrastructure; nothing entered Final, runtime or
+production.
 
 Production delivery was verified from deploy commit
 `eec56b0c0be5fc27fb30cf17c177fe33c8fd6068`. Darts Context V8 loaded and
@@ -105,6 +106,15 @@ SHA-256 (`2a69a58447597517248951f540da619a45a888531dabe94f42b66f382bd258ae`)
 at identical coordinates. Workbench V9 loaded all ten choices and decoded its
 22 unique native-route images before enabling playback. This records delivery
 only; it is not Frank's approval of V8 or V9.
+
+Frank subsequently replied “approved” on 17 October 2026. Exact Darts Context
+V8 is therefore the approved contextual darts animation authority: all 181
+route frames, the harmonised dart, the segmented acute-angle board, the exact
+impact seam and the unchanged V7 Keeper/timing/state data are binding. The
+immutable decision is
+`docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
+Workbench V9 remains review infrastructure rather than animation art. Approval
+did not copy or alter artwork and did not change Final, runtime or production.
 
 The superseded V6 delivery was verified on 17 October 2026 from deploy commit
 `2e2f39d798bbf65e11e5aa78da7fd5f1d931cc91`. Darts Context V6 loaded and

@@ -58,8 +58,11 @@ inspector. Context V8 changes no Keeper pose, root, timing or state from V7:
 it adds one gutter-safe hand-matched dart asset used for all 30 flight frames
 and all embedded states, clamps every dart tip to x=168 lp, and replaces the
 placeholder rim with a segmented acute-angle board. The final airborne and
-first embedded renderings are byte-identical. None of V2/V7/V8/Workbench V9
-is approved or promoted.
+first embedded renderings are byte-identical. Frank approved exact Context V8
+on 17 October 2026; preserve the hash-pinned decision at
+`docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
+Workbench V9 remains review infrastructure. No Final/runtime/production
+promotion has occurred.
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 

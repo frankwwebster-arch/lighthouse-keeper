@@ -10,7 +10,7 @@ speed, looping, exact-Prime and adjacent-frame ghosts, and switches to include
 or omit its preceding and finishing transitions. The active version contains
 ten deliberately status-labelled routes or inspection views: approved core locomotion and
 vertical-circulation authorities, the unapproved six-view seated foundation,
-the unapproved corrected Prime-redrawn Darts V8 route and its separate registered
+the approved corrected Prime-redrawn Darts V8 route and its separate registered
 core inspector. V2 fixes V1's deployed
 relative-catalogue URL fault and uses a full-width large-inspection pane; V3
 retains those fixes and adds the inspection-only
@@ -55,8 +55,10 @@ air and embedded. Every final flight frame terminates at the board face at the
 same coordinates as the following embedded state. The acute board is now a
 recognisable segmented traditional board with double/treble rings and bull.
 Workbench V9 exposes V8 and retains the core inspector and earlier diagnostics.
-V6/V7/V8 remain immutable history or candidates as labelled; nothing is
-promoted.
+Frank approved exact Darts Context V8 on 17 October 2026. Its immutable decision
+is `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
+Workbench V9 remains review infrastructure; nothing entered Final, runtime or
+production.
 
 The redraw method is now binding across the complete first-draft animation
 bank: historical frames may supply choreography, joint paths, contacts, prop
