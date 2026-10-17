@@ -75,6 +75,13 @@ out-of-scope frame remain exact. The active selector is
 `/keeper-review/keeper-prime-context-workbench-v8/`. V2/V7/V8 remain candidates;
 nothing entered Final, runtime or production.
 
+Production delivery was verified from deploy commit
+`baf1f4b8c33bd01c04a09a4ca150d2afc351ab0b`. Darts V7 decoded all 32 unique
+sprite images, exposed the expected
+181-frame route and rendered live F20 and F21 with no changed stage pixels.
+Workbench V8 loaded all ten choices with the corrected Darts V7 route selected
+as its playable candidate. This is delivery verification only, not approval.
+
 The superseded V6 delivery was verified on 17 October 2026 from deploy commit
 `2e2f39d798bbf65e11e5aa78da7fd5f1d931cc91`. Darts Context V6 loaded and
 decoded all 40 unique sprite images; occurrence skip and restore changed the
