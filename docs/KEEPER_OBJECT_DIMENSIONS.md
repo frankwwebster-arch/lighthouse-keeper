@@ -24,14 +24,19 @@ The main furniture datums are:
 | Machete plant-cut contact | 12 px above floor; 18 px right of keeper anchor |
 | Guitar rack grip | 31 px above floor; keeper hand `(45,25)` on the 64 × 56 pickup canvas; prop transfers on frame 6 |
 
-The current V2 side-sitting review candidate records a stricter Prime-derived
-chair envelope in `data/keeper_prime_seat_geometry_v1.json`: **11 px is the top
-surface of the seat**, not its centre or underside. The measured side-right
-envelope is also 11 px deep, from the spine/back contact at cell `[7,29]` to
-the back-of-knee line at `[18,29]` (source pixels `[56,232]` to `[144,232]` at
-density 8). A chair may be shallower, but it must not project beneath or beyond
-that knee line. This new depth rule remains review-only until Frank approves
-V2; it does not rewrite the immutable runtime contract.
+The current V5 side-sitting review candidate records the corrected Prime-derived
+chair registration in `data/keeper_prime_seat_geometry_v2.json`: **11 px is the
+top surface of the seat**, not its centre or underside. Live review disproved
+V1's 11-pixel placement: the `[7,29]` back/spine contact had been used as the
+rear edge of the backrest rather than its front face, and `[18,29]` did not keep
+the seat rim behind the visible shins. At the fixed V5 action root, the
+backrest front is world x=76.625 and exactly meets the visible back/spine
+contact plane; the front rim is x=83.75; and the measured rear shin plane is
+x=84.25, leaving 0.5 px clearance. The review proxy therefore has an 8.625-px
+total side depth and 7.125 px usable depth ahead of the backrest front. These
+horizontal values remain review-only until Frank approves V5; they do not
+rewrite the immutable runtime contract. V1 remains rejected measurement
+provenance rather than a furniture-authoring authority.
 
 These are baseline contact dimensions, not object-fitting suggestions. Object
 silhouettes and tiers may change, but their keeper-facing contact points follow

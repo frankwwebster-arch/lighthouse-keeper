@@ -4,7 +4,7 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 
 The active Keeper-art gate is the reversible Prime Keeper whole-bank
 normalisation programme. Its new selector is
-`/keeper-review/keeper-prime-context-workbench-v11/`: every selectable item is
+`/keeper-review/keeper-prime-context-workbench-v14/`: every selectable item is
 shown at 8×, proposed 4× game presentation and literal 1×, with frame stepping,
 speed, looping, exact-Prime and adjacent-frame ghosts, and switches to include
 or omit its preceding and finishing transitions. The active version contains
@@ -54,19 +54,20 @@ flights, ribbed dark barrel and long silver point—is used identically in the
 air and embedded. Every final flight frame terminates at the board face at the
 same coordinates as the following embedded state. The acute board is now a
 recognisable segmented traditional board with double/treble rings and bull.
-Workbench V13 exposes V8, retains the core inspector and earlier diagnostics,
-and links `/keeper-review/keeper-prime-sit-stand-side-v4/`: a complete approved
+Workbench V14 exposes V8, retains the core inspector and earlier diagnostics,
+and links `/keeper-review/keeper-prime-sit-stand-side-v5/`: a complete approved
 walk/stop context around the first new Prime six-pose side-right sit, 600 ms
 seated beat and exact reverse stand. Its action endpoints are byte-identical to
 the standing and seated Prime authorities; four smooth intermediates are
-registered to one floor and one root. V2 preserves every V1 Keeper frame,
-timing and root, but corrects the example chair: its top surface is 11 lp above
-the floor and its 11-lp seat depth ends exactly at the measured back-of-knee
-line. V4 is a delivery-only absolute app-route wrapper around those exact V2 bytes;
-it remains unapproved review art.
+registered to one floor and one root. V5 preserves every V2/V1 Keeper frame,
+timing and root, but corrects the chair registration exposed by live review:
+the front face of the backrest equals the visible back/spine contact, and the
+front seat rim ends 0.5 lp behind the rear shin plane. The seat top remains exactly
+11 lp above the floor. V1–V4 remain immutable provenance; V5 remains
+unapproved review art.
 Frank approved exact Darts Context V8 on 17 October 2026. Its immutable decision
 is `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
-Workbench V13 remains review infrastructure; nothing entered Final, runtime or
+Workbench V14 remains review infrastructure; nothing entered Final, runtime or
 production.
 
 The redraw method is now binding across the complete first-draft animation

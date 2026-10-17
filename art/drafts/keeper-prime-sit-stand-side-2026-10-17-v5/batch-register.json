@@ -1,0 +1,73 @@
+{
+  "schema": "lighthouse-keeper/reversible-review-batch@1",
+  "set": "keeper-prime-sit-stand-side-v5",
+  "status": "review-candidate-chair-registration-correction",
+  "predecessor": {
+    "visualSet": "keeper-prime-sit-stand-side-v4",
+    "register": "art/drafts/keeper-prime-sit-stand-side-2026-10-17-v4/batch-register.json",
+    "sha256": "416c7e06521996cc803de7b9d5aa2c457f72b61abbc440c7f6c1badf4245e009",
+    "visualContent": {
+      "set": "keeper-prime-sit-stand-side-v2",
+      "register": "art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/batch-register.json",
+      "sha256": "3d6ce9f708905850850d57de61e6c3f9c6d8d6abe45f9e1c8be0111490139e3c"
+    }
+  },
+  "candidate": {
+    "route": "src/app/keeper-review/keeper-prime-sit-stand-side-v5/route.ts",
+    "sha256": "8e8b9d6ab9ab42193de13a79d110348cad783a1358e53a45a619c9d46b285684",
+    "review": "/keeper-review/keeper-prime-sit-stand-side-v5/",
+    "workbench": "/keeper-review/keeper-prime-context-workbench-v14/"
+  },
+  "geometry": {
+    "file": "data/keeper_prime_seat_geometry_v2.json",
+    "sha256": "940f05b78fb42a640317f30434d015fcee8b4df3da0d397dec4ba452916b2624",
+    "backrestRearWorldXLp": 75.125,
+    "backrestFrontWorldXLp": 76.625,
+    "backrestThicknessLp": 1.5,
+    "seatFrontRimWorldXLp": 83.75,
+    "totalSeatDepthLp": 8.625,
+    "usableDepthFromBackrestFrontLp": 7.125,
+    "shinClearanceLp": 0.5,
+    "layer": "behind-keeper",
+    "spineBackContactWorldXLp": 76.625,
+    "shinRearWorldXLp": 84.25,
+    "seatTopWorldYLp": 41,
+    "seatHeightAboveFloorLp": 11
+  },
+  "immutableContent": {
+    "keeperFrameHashes": [
+      "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "c0a87d5460ce0af134d6e9dc64dab22625f5a1eda1f631e021052701d91077c1",
+      "109c211066926cb2b3f140755bfe51a4636106c03d75c052e826d6610791d8a1",
+      "7f23f761b211ee53f80c15bf3a0cccdfd90f9e9ab490c260ede66c46174995f0",
+      "6ffe5f0af90c0aa312f4dad276f22642b74360ca396fae743a3c13f640b58c21",
+      "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b"
+    ],
+    "route": {
+      "file": "art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/keeper-prime-sit-stand-side-v2.json",
+      "sha256": "3fa0bf73e88fd8ee52805c66d681147ba543b04bca3394797ce7ab2ed2934d84",
+      "frames": 45
+    },
+    "timingRootAndEndpoints": "byte-identical to V2/V1"
+  },
+  "checks": {
+    "backrestFrontEqualsSpineBackContact": true,
+    "seatFrontBehindShins": true,
+    "exactShinClearance": true,
+    "chairDepthCloses": true,
+    "backrestThicknessCloses": true,
+    "seatTopStillElevenLp": true,
+    "movingImagesPreloadedBeforePlayback": true,
+    "publicPayloadDidNotGrow": true,
+    "finalUnchanged": true,
+    "runtimeUnchanged": true,
+    "productionSpritesUnchanged": true
+  },
+  "approvalBoundary": {
+    "sideRightSitStandApproved": false,
+    "chairGeometryApproved": false,
+    "otherSittingDirectionsApproved": false,
+    "promotionAllowed": false
+  },
+  "rollback": "Delete only art/drafts/keeper-prime-sit-stand-side-2026-10-17-v5, art/drafts/keeper-prime-context-workbench-2026-10-17-v14, data/keeper_prime_seat_geometry_v2.json, src/app/keeper-review/keeper-prime-sit-stand-side-v5/route.ts, src/app/keeper-review/keeper-prime-context-workbench-v14/route.ts and the matching verifier/builder; V1-V4, Workbench V1-V13 and all character art remain unchanged."
+}

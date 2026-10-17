@@ -1,0 +1,24 @@
+{
+  "schema": "lighthouse-keeper/context-workbench-register@14",
+  "set": "keeper-prime-context-workbench-v14",
+  "status": "review-tool-successor-to-v13",
+  "predecessor": {
+    "set": "keeper-prime-context-workbench-v13",
+    "register": "art/drafts/keeper-prime-context-workbench-2026-10-17-v13/batch-register.json",
+    "sha256": "829d682418802a699f8199ce9980663c5ad768411cdd804fc5f10484d2853794"
+  },
+  "candidate": {
+    "route": "src/app/keeper-review/keeper-prime-context-workbench-v14/route.ts",
+    "sha256": "1d925df16fb6dcddb7fc9fa08540ba009fcd7d7e7bc0b758b4fc9c6e644402dd",
+    "review": "/keeper-review/keeper-prime-context-workbench-v14/",
+    "sittingCandidate": "/keeper-review/keeper-prime-sit-stand-side-v5/"
+  },
+  "checks": {
+    "elevenV11ChoicesRetained": true,
+    "onlySittingCandidateLinkChanged": true,
+    "publicPayloadDidNotGrow": true,
+    "finalUnchanged": true,
+    "runtimeUnchanged": true,
+    "productionSpritesUnchanged": true
+  }
+}

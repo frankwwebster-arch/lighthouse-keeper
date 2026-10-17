@@ -1,0 +1,72 @@
+{
+  "schema": "lighthouse-keeper/prime-seat-geometry@2",
+  "status": "review-candidate-not-runtime",
+  "supersedes": {
+    "file": "data/keeper_prime_seat_geometry_v1.json",
+    "reason": "V1/V2 treated the back/spine contact as the rear edge of the backrest instead of its front face, and allowed the seat rim beneath the lower-leg silhouette."
+  },
+  "authority": "art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/drafts/frames/keeper_prime_stand-to-sit-side-right_f06.png",
+  "authoritySha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b",
+  "view": "side-right-90",
+  "cellPixels": [
+    256,
+    320
+  ],
+  "logicalCell": [
+    32,
+    40
+  ],
+  "density": 8,
+  "routeRegistration": {
+    "rootWorldXLp": 86,
+    "anchorLp": [
+      16,
+      40
+    ],
+    "actorCellLeftWorldXLp": 70,
+    "floorWorldYLp": 52
+  },
+  "vertical": {
+    "seatTopWorldYLp": 41,
+    "seatHeightAboveFloorLp": 11,
+    "seatedSupportRowLp": 29,
+    "seatedSupportRowSourceY": 232
+  },
+  "anatomy": {
+    "spineBackContactLp": [
+      6.625,
+      29
+    ],
+    "spineBackContactSourcePx": [
+      53,
+      232
+    ],
+    "spineBackContactWorldXLp": 76.625,
+    "shinRearPlaneLp": 14.25,
+    "shinEvidenceSource": {
+      "x": 114,
+      "yRange": [
+        260,
+        284
+      ],
+      "rule": "minimum non-transparent lower-leg silhouette across the declared shin evidence band"
+    },
+    "shinRearWorldXLp": 84.25
+  },
+  "chair": {
+    "backrestRearWorldXLp": 75.125,
+    "backrestFrontWorldXLp": 76.625,
+    "backrestThicknessLp": 1.5,
+    "seatFrontRimWorldXLp": 83.75,
+    "totalSeatDepthLp": 8.625,
+    "usableDepthFromBackrestFrontLp": 7.125,
+    "shinClearanceLp": 0.5,
+    "layer": "behind-keeper"
+  },
+  "rules": [
+    "The front face of the backrest must equal the seated visible back/spine contact plane; the body may not penetrate behind that face.",
+    "The front rim of the seat must remain behind the rear shin plane with at least 0.5 logical pixels of visible clearance.",
+    "The seat top remains exactly 11 logical pixels above the floor."
+  ],
+  "scope": "Review and furniture-authoring evidence only. Keeper frames, route timing, root motion, Final, runtime and production art are unchanged."
+}

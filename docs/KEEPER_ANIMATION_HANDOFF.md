@@ -15,9 +15,9 @@
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
 
-## Active side-right sit/stand candidate V4 — 17 October 2026
+## Active side-right sit/stand candidate V5 — 17 October 2026
 
-`/keeper-review/keeper-prime-sit-stand-side-v4/` is the current redrafted
+`/keeper-review/keeper-prime-sit-stand-side-v5/` is the current redrafted
 sitting transition. Its complete 45-frame review route is approved Walk V6 →
 approved walk-to-stop → six-pose stand-to-sit → 600 ms seated beat → exact
 byte-reversed sit-to-stand → approved stop-to-walk → approved Walk V6. The
@@ -35,19 +35,23 @@ transparent gutter. The generated frames use a deterministic visible
 height/width progression so the model does not widen suddenly after F1.
 
 Frank judged the V1 motion good but rejected its over-deep example chair. V2
-keeps all six Keeper cells, both action orders, timings, roots and the complete
-route byte-for-byte/motion-for-motion. Only the chair proxy and furniture
-contract change: the seat top is world y=41, exactly 11 lp above the y=52
-floor, and its 11-lp usable depth runs from world x=77 at the spine/back
-contact to world x=88 at the back-of-knee line. In the seated 32 × 40 cell
-those landmarks are `[7,29]` and `[18,29]` (source `[56,232]` and
-`[144,232]`). The seat cannot extend farther forward.
+kept all six Keeper cells, both action orders, timings, roots and the complete
+route byte-for-byte/motion-for-motion, but its chair correction used the
+back/spine contact as the rear edge of the backrest rather than its front face,
+and allowed the front rim beneath the shins. Frank rejected that location during
+live review. V5 again keeps every
+animation byte unchanged and corrects only the chair registration. The seat top
+is still world y=41, exactly 11 lp above the y=52 floor. The backrest front is
+world x=76.625 and equals the visible back/spine contact plane; the front seat
+rim is world x=83.75; and the rear shin plane is world x=84.25, leaving 0.5 lp
+visible clearance. The proxy's total side depth is therefore 8.625 lp, with
+7.125 lp usable depth ahead of the backrest front. The measurement contract is
+`data/keeper_prime_seat_geometry_v2.json`.
 
-The visual pack remains
-`art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/`. The delivery-only V4
-pack and Workbench V13 use absolute application routes after V2/V3 failed under
-Vercel's path canonicalisation; all visual, route and chair bytes are unchanged.
-V1–V3 and V11–V12 remain immutable history. V4 is
+The animation art remains in
+`art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/`. V5 and Workbench V14
+are new application-route review candidates that reuse those immutable animation
+and archive bytes. V1–V4 and Workbench V1–V13 remain immutable history. V5 is
 awaiting Frank. Nothing is Final, runtime or production, and the other sitting
 directions must not be inferred from it.
 

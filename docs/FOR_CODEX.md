@@ -15,15 +15,15 @@ The deterministic inventory is
 `data/keeper-prime-animation-bank-audit-v1.json` (308 rows; 159 legacy endpoint
 risks; 28 explicitly rejected/excluded; zero strip/sidecar geometry mismatches).
 The active selectable contextual reviewer is
-`/keeper-review/keeper-prime-context-workbench-v11/`; it includes only eleven
+`/keeper-review/keeper-prime-context-workbench-v14/`; it includes only eleven
 status-labelled routes whose present state can be defended and links the full
 inventory. V3 retains V2's fix for V1's deployed relative-URL/trailing-slash
 loader failure and localised native-route images, and adds the inspection-only
 `/keeper-review/keeper-prime-darts-strip-inspector-v1/`. That page exposes all
 30 inherited V2 cells at exact/enlarged source resolution with Prime and
 adjacent overlays plus deterministic blue/navy/cream measurements. It confirms
-likely blue drift in the generated core but changes no pixels. The active
-corrective art candidate is
+likely blue drift in the generated core but changes no pixels. The historical
+corrective isolation candidate is
 `/keeper-review/keeper-prime-darts-isolation-v1/`. Whole-sheet connected-
 component analysis proved that nominal 7×2 rectangular source cropping put 51
 foreign actor pixels in core F07/registered F15, 42 in core F11/registered F19
@@ -32,17 +32,13 @@ across core F08–F12/registered F16–F20. The candidate assigns every whole ac
 once, excludes detached projectiles from character cells because Darts V3
 already renders them as independent effects, and preserves registered F01–F08
 and F23–F30 byte-for-byte. It does not yet correct the measured palette drift
-and remains unapproved. The active playable interaction candidate is
-`/keeper-review/keeper-prime-darts-context-v4/`: its complete 213-frame route
-uses the isolated core 84 times across six throws while retaining V3's exact
-timing, roots, frame order, controls, closed cupboard door and edge-on board,
-six visible flights
-and impacts, practical full-reach collection, one turn at the board, one turn
-at the oche, and a 30.5-lp return before the second three-dart set. Its
-repeatable activity seam is exact. Darts V1 is rejected and V2 is superseded
-provenance; V3 remains immutable pre-isolation context. Darts V5 preserves the
-complete V4 route and adds only reversible browser-local occurrence/pose
-skipping, JSON export and one consistent airborne/stuck dart rendering. The
+and remains unapproved. The active playable interaction authority is approved
+`/keeper-review/keeper-prime-darts-context-v8/`: its 181-frame route uses the
+Prime-redrawn core across six throws, retains the practical full-reach
+collection, one turn at the board, one turn at the oche and exact 30.5-lp
+return, and uses one harmonised detailed dart for flight and impact against the
+segmented acute-angle board. Darts V1–V7 and isolation V1 remain immutable
+history. The
 separate Darts redraw V1 gate contains three newly generated Prime-derived key
 poses, registered to exact cap/floor datums in 448 × 320 action cells. Frank
 approved those exact pose hashes as the Darts drawing-family authority. Redraw
@@ -61,8 +57,8 @@ placeholder rim with a segmented acute-angle board. The final airborne and
 first embedded renderings are byte-identical. Frank approved exact Context V8
 on 17 October 2026; preserve the hash-pinned decision at
 `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
-Workbench V13 retains every V10 choice and replaces only the active sitting
-link with the chair-corrected Prime side-right sit/stand V4 delivery context. No Final/runtime/production
+Workbench V14 retains every Workbench V11 choice and replaces only the active sitting
+link with the chair-corrected Prime side-right sit/stand V5 context. No Final/runtime/production
 promotion has occurred.
 
 Future pub/games-room layout rule: mount the approved dartboard on the
@@ -73,10 +69,10 @@ or cupboard from this note alone; Frank explicitly deferred that work.
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
-## Prime side-right sit/stand V4 (17 Oct 2026)
+## Prime side-right sit/stand V5 (17 Oct 2026)
 
 The active sitting-motion gate is
-`/keeper-review/keeper-prime-sit-stand-side-v4/`. It shows the exact V2 45-frame route:
+`/keeper-review/keeper-prime-sit-stand-side-v5/`. It shows the exact V2 45-frame route:
 approved Walk V6 → approved deceleration → new Prime stand-to-sit → a 600 ms
 seated beat → the exact byte-reversed stand → approved acceleration → approved
 walk away. The six action cells use the exact approved side-right standing
@@ -86,16 +82,17 @@ are choreography-only evidence. All cells are 256 × 320 at density 8 with a
 common `[16,40]` anchor, y=315 opaque floor limit, `[16,29]` seat point, 11-lp
 seat height and transparent gutters. Generated silhouettes are registered to
 measured height/width progressions to prevent an abrupt Prime-to-action width
-jump. Frank judged the V1 animation good but rejected its example chair depth.
-V2 therefore preserves every V1 Keeper frame, route root and duration while
-replacing only the behind-Keeper proxy. The chair's top surface is y=29 / 11 lp
-above floor; in side-right cell coordinates its usable depth is exactly 11 lp,
-from the spine/back contact `[7,29]` to the back-of-knee line `[18,29]` (source
-pixels `[56,232]` to `[144,232]`). It cannot project farther forward. The
-V4 changes no visual or motion data: it is the absolute app-route delivery
-created after Vercel exposed the relative-path faults in V2 and V3. The candidate and
-Workbench V13 are review infrastructure only; they are not Final,
-runtime or production art.
+jump. Frank judged the V1 animation good but rejected its example chair. V2's
+first correction also failed live inspection because it placed the rear edge
+of the backrest at the back/spine contact and allowed the seat front beneath
+the shins. V5
+preserves every V1/V2 Keeper frame, route root and duration while replacing
+only the behind-Keeper proxy. The chair top remains y=29 / 11 lp above floor.
+At the fixed action root, the backrest front is world x=76.625 and equals the
+visible back/spine contact; the seat front is x=83.75; and the rear shin plane is
+x=84.25, leaving 0.5 lp visible clearance. V1–V4 remain immutable history.
+The candidate and Workbench V14 are review infrastructure only; they are not
+Final, runtime or production art.
 
 ## Seated Prime foundation V2 (17 Oct 2026)
 
