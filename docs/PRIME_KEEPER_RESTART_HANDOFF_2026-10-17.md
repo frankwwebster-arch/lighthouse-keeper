@@ -180,7 +180,9 @@ Current live inspection:
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-side-v6/`
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-side-left-v1/`
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v1/` (rejected immutable provenance)
-- `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v2/`
+
+Front-facing V2 is verified and committed on `main`, but is not live until
+Frank explicitly authorises its production review deploy.
 
 Workbench V15 is review infrastructure, not a Final-art ledger. At this
 checkpoint no Prime animation has been promoted into Final/runtime/production.
