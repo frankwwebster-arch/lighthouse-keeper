@@ -64,6 +64,12 @@ on 17 October 2026; preserve the hash-pinned decision at
 Workbench V9 remains review infrastructure. No Final/runtime/production
 promotion has occurred.
 
+Future pub/games-room layout rule: mount the approved dartboard on the
+right-hand cupboard-door leaf. It is edge-on while that door is closed and is
+fully revealed face-to-camera when the door opens. The board follows the door
+transform and keeps its approved practical reach height. Do not build the room
+or cupboard from this note alone; Frank explicitly deferred that work.
+
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
 ## Seated Prime foundation V2 (17 Oct 2026)
