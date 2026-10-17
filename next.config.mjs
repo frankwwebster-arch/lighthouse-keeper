@@ -138,6 +138,21 @@ export default {
         destination: '/keeper-review/keeper-prime-turn-front-side-v1/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/keeper-prime-darts-context-v5',
+        destination: '/keeper-review/keeper-prime-darts-context-v5/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/keeper-prime-darts-redraw-v1',
+        destination: '/keeper-review/keeper-prime-darts-redraw-v1/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/keeper-prime-context-workbench-v6',
+        destination: '/keeper-review/keeper-prime-context-workbench-v6/index.html',
+        permanent: false,
+      },
     ]
   },
 }

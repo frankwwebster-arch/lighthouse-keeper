@@ -6,12 +6,53 @@
 > Earlier animation art supplies motion data only. Every visible character
 > frame must be Prime Keeper, and every action must be reviewed inside its
 > complete walk/stop/turn/action/return/walk route.
+>
+> Frank reaffirmed on 17 October 2026 that this applies to **all** first-draft
+> animations. Old art is choreography evidence, never reusable visible actor
+> art; palette fixes and partial identity patches are not sufficient.
 
 **Checkpoint:** 17 October 2026
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
 
-## Whole-bank audit and Context Workbench V5 — 17 October 2026
+## Darts Prime redraw calibration and tunable route — 17 October 2026
+
+Frank found the jump from Prime Keeper into the inherited Darts throw core
+visibly irritating: the old action family has a narrower cream band, slimmer
+torso, finer outline and different shading. Palette correction alone is
+therefore rejected as insufficient. The historical Darts cells remain
+choreography-only evidence.
+
+`/keeper-review/keeper-prime-darts-redraw-v1/` is the first visual-family gate.
+It contains three new high-resolution identity-preserve renders—wind-up,
+release and recovery—made with the approved smooth side-right Prime as the sole
+identity, anatomy, outfit, palette, outline, shading and rendering authority.
+Each complete figure is uniformly registered into a 448 × 320 action cell with
+the foot axis at x=128, cap top y=18, floor y=315 and zero edge alpha. The
+expanded width preserves Prime scale around the extended throwing arm. This is
+not yet the fourteen-frame core and none of the three poses is inserted into a
+route.
+
+`/keeper-review/keeper-prime-darts-context-v5/` preserves all 213 Darts V4
+route slots, roots, timings, sprite sources and state byte-for-byte except for
+new content-addressed URLs. It adds browser-local, reversible controls to skip
+one occurrence or every recurrence of the same pose, step through hidden
+frames for inspection, restore all frames and export the skip recipe as JSON.
+Skipping never deletes or reorders source art. V5 also replaces the crude CSS
+flight/impact marks with one shared detailed dart component—red flights, dark
+ribbed barrel, steel shaft and point—used identically while airborne and stuck
+in the board. The inherited hand-held darts remain part of the superseded core
+until the full Prime redraw is approved.
+
+The active selector is now
+`/keeper-review/keeper-prime-context-workbench-v6/`. It retains every V5 choice,
+uses tunable Darts V5 as the complete route, and adds the three-pose redraw gate
+as a tenth choice. No candidate is approved, in Final, runtime or production.
+The next art gate is Frank's visual decision on the three-pose family; only
+after that decision should the remaining in-betweens be generated and a new
+contextual route substitute the complete Prime throw core.
+
+## Whole-bank audit and prior Context Workbench V5 checkpoint — 17 October 2026
 
 The production bank now has a deterministic 308-row audit in
 `data/keeper-prime-animation-bank-audit-v1.json`, with a human summary in
@@ -23,7 +64,7 @@ interactions, 101 locomotion clips, 12 seated actions, 73 technical neutrals
 and 31 transitions. There are 159 legacy endpoint risks, 28 explicitly
 rejected/excluded entries and no measured strip/sidecar geometry mismatches.
 
-The active review selector is
+The prior V5 review selector is
 `/keeper-review/keeper-prime-context-workbench-v5/`. V5 exposes nine choices:
 approved stop/walk/stop; an approved-component walk/stop/180° turn/walk
 composition; the corrected Darts V4 candidate; the complete approved stair

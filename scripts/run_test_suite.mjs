@@ -189,6 +189,20 @@ const dartsContextV4 = spawnSync('node', ['scripts/verify_keeper_prime_darts_con
 })
 if (dartsContextV4.error) throw dartsContextV4.error
 if (dartsContextV4.status !== 0) process.exit(dartsContextV4.status ?? 1)
+const dartsContextV5 = spawnSync('node', ['scripts/verify_keeper_prime_darts_context_v5.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (dartsContextV5.error) throw dartsContextV5.error
+if (dartsContextV5.status !== 0) process.exit(dartsContextV5.status ?? 1)
+const dartsRedrawV1 = spawnSync('node', ['scripts/verify_keeper_prime_darts_redraw_v1.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (dartsRedrawV1.error) throw dartsRedrawV1.error
+if (dartsRedrawV1.status !== 0) process.exit(dartsRedrawV1.status ?? 1)
 const dartsStripInspectorV1 = spawnSync('node', ['scripts/verify_keeper_prime_darts_strip_inspector_v1.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },
@@ -238,6 +252,13 @@ const contextWorkbenchV5 = spawnSync('node', ['scripts/verify_keeper_prime_conte
 })
 if (contextWorkbenchV5.error) throw contextWorkbenchV5.error
 if (contextWorkbenchV5.status !== 0) process.exit(contextWorkbenchV5.status ?? 1)
+const contextWorkbenchV6 = spawnSync('node', ['scripts/verify_keeper_prime_context_workbench_v6.ts'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (contextWorkbenchV6.error) throw contextWorkbenchV6.error
+if (contextWorkbenchV6.status !== 0) process.exit(contextWorkbenchV6.status ?? 1)
 const animationBankAuditV1 = spawnSync('node', ['scripts/verify_keeper_prime_animation_bank_audit_v1.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },

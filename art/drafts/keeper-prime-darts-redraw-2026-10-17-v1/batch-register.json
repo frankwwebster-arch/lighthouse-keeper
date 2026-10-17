@@ -1,0 +1,202 @@
+{
+  "schema": "lighthouse-keeper/darts-redraw-calibration@1",
+  "batchId": "keeper-prime-darts-redraw-2026-10-17-v1",
+  "status": "three-pose-calibration-awaiting-frank",
+  "purpose": "Prove a Prime-derived rendering family before authoring the complete Darts throw core.",
+  "authorities": {
+    "primeSource": {
+      "file": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/sources/keeper-prime-side-right-rigged-clean-master.png",
+      "sha256": "64b23827057c99fe8e9c00cf7a9e52847a50db00d4b402834fd0d0694b687714"
+    },
+    "primeRegistered": {
+      "file": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+    },
+    "historicalDartsRole": "choreography-only"
+  },
+  "candidate": {
+    "poses": [
+      {
+        "id": "windup",
+        "label": "Wind-up \u00b7 dart beside cheek",
+        "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v1/sources/generated/keeper_prime_darts-windup-generated.png",
+        "sourceSha256": "f9eb614423e46c15312f0b30a8bf5f2ca603e4022f79d74fa9c3b24962b34f72",
+        "draft": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v1/drafts/keeper_prime_darts-windup-right_f1.png",
+        "draftSha256": "bd1f9e228b6c22a8aecd8b4d14e1bd27ca021f83a1ce2eb0a8bcca526d9a3825",
+        "geometry": {
+          "sourceCanvas": [
+            1122,
+            1402
+          ],
+          "sourceBoundsExclusive": [
+            341,
+            60,
+            829,
+            1334
+          ],
+          "sourceFootAxisX": 617.5,
+          "uniformScale": 0.23390894819466249,
+          "registeredSize": [
+            114,
+            298
+          ],
+          "registeredOffset": [
+            63,
+            18
+          ],
+          "registeredBoundsExclusive": [
+            63,
+            18,
+            177,
+            316
+          ],
+          "registeredFootAxisX": 128,
+          "capTopY": 18,
+          "floorY": 315,
+          "edgeAlphaPixels": 0,
+          "filter": "LANCZOS",
+          "creativePixelWarp": false
+        }
+      },
+      {
+        "id": "release",
+        "label": "Release \u00b7 arm extended",
+        "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v1/sources/generated/keeper_prime_darts-release-generated.png",
+        "sourceSha256": "4c7cee92773cda8afffd5c823f28c3a309d945ff1a6e31d7c47341ea45500cc7",
+        "draft": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v1/drafts/keeper_prime_darts-release-right_f1.png",
+        "draftSha256": "fae0deec1267ba583219098393f3eb6943996650456b1ab8f6a572bd22f12bf2",
+        "geometry": {
+          "sourceCanvas": [
+            1122,
+            1402
+          ],
+          "sourceBoundsExclusive": [
+            194,
+            47,
+            1022,
+            1342
+          ],
+          "sourceFootAxisX": 463.5,
+          "uniformScale": 0.23011583011583012,
+          "registeredSize": [
+            191,
+            298
+          ],
+          "registeredOffset": [
+            66,
+            18
+          ],
+          "registeredBoundsExclusive": [
+            66,
+            18,
+            257,
+            316
+          ],
+          "registeredFootAxisX": 128,
+          "capTopY": 18,
+          "floorY": 315,
+          "edgeAlphaPixels": 0,
+          "filter": "LANCZOS",
+          "creativePixelWarp": false
+        }
+      },
+      {
+        "id": "recovery",
+        "label": "Recovery \u00b7 arm lowering",
+        "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v1/sources/generated/keeper_prime_darts-recovery-generated.png",
+        "sourceSha256": "8d0ab58a89eced54c16f937d201d82f3ffc87dcc8461d03d84e29daa2bf762e9",
+        "draft": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v1/drafts/keeper_prime_darts-recovery-right_f1.png",
+        "draftSha256": "5cdffcf9007cca9e3f62f1c8ee219da55e6e59d27f8ba373b81b3e95e1dd4884",
+        "geometry": {
+          "sourceCanvas": [
+            1122,
+            1402
+          ],
+          "sourceBoundsExclusive": [
+            258,
+            49,
+            948,
+            1331
+          ],
+          "sourceFootAxisX": 501.0,
+          "uniformScale": 0.23244929797191888,
+          "registeredSize": [
+            160,
+            298
+          ],
+          "registeredOffset": [
+            72,
+            18
+          ],
+          "registeredBoundsExclusive": [
+            72,
+            18,
+            232,
+            316
+          ],
+          "registeredFootAxisX": 128,
+          "capTopY": 18,
+          "floorY": 315,
+          "edgeAlphaPixels": 0,
+          "filter": "LANCZOS",
+          "creativePixelWarp": false
+        }
+      }
+    ],
+    "contactSheet": {
+      "file": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v1/evidence/keeper-prime-darts-redraw-v1-contact-sheet.png",
+      "sha256": "d8756bf83ea2f4f94b6d699cd29a524f4ee1cc6ec2d018df4365e08b1bf8af63"
+    }
+  },
+  "checks": {
+    "poseCount": 3,
+    "allSourceCanvases1122x1402": true,
+    "allRegisteredCanvases448x320": true,
+    "allCapTopsExact": true,
+    "allFloorRowsExact": true,
+    "allEdgeAlphaZero": true,
+    "uniformWholeCharacterScalingOnly": true,
+    "publishedPreloadRequired": true
+  },
+  "publishedAssets": [
+    {
+      "label": "prime",
+      "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v1/evidence/keeper-prime-side-right-padded-56x40.png",
+      "sha256": "47846a685e4831e739a7f470659a6fb94523cc334304cb8f8855cdfa54722f1a",
+      "url": "/keeper-review/keeper-prime-darts-redraw-v1/assets/prime-47846a685e4831e7.png"
+    },
+    {
+      "label": "windup",
+      "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v1/drafts/keeper_prime_darts-windup-right_f1.png",
+      "sha256": "bd1f9e228b6c22a8aecd8b4d14e1bd27ca021f83a1ce2eb0a8bcca526d9a3825",
+      "url": "/keeper-review/keeper-prime-darts-redraw-v1/assets/windup-bd1f9e228b6c22a8.png"
+    },
+    {
+      "label": "release",
+      "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v1/drafts/keeper_prime_darts-release-right_f1.png",
+      "sha256": "fae0deec1267ba583219098393f3eb6943996650456b1ab8f6a572bd22f12bf2",
+      "url": "/keeper-review/keeper-prime-darts-redraw-v1/assets/release-fae0deec1267ba58.png"
+    },
+    {
+      "label": "recovery",
+      "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v1/drafts/keeper_prime_darts-recovery-right_f1.png",
+      "sha256": "5cdffcf9007cca9e3f62f1c8ee219da55e6e59d27f8ba373b81b3e95e1dd4884",
+      "url": "/keeper-review/keeper-prime-darts-redraw-v1/assets/recovery-5cdffcf9007cca9e.png"
+    },
+    {
+      "label": "contact",
+      "source": "art/drafts/keeper-prime-darts-redraw-2026-10-17-v1/evidence/keeper-prime-darts-redraw-v1-contact-sheet.png",
+      "sha256": "d8756bf83ea2f4f94b6d699cd29a524f4ee1cc6ec2d018df4365e08b1bf8af63",
+      "url": "/keeper-review/keeper-prime-darts-redraw-v1/assets/contact-d8756bf83ea2f4f9.png"
+    }
+  ],
+  "approvalBoundary": {
+    "candidateApproved": false,
+    "completeThrowCoreBuilt": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false,
+    "promotionAllowed": false
+  },
+  "rollback": "Delete only this versioned draft directory and its review page; Prime, Darts V1-V4 and production remain unchanged."
+}

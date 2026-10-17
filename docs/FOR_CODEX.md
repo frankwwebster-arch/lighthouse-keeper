@@ -15,7 +15,7 @@ The deterministic inventory is
 `data/keeper-prime-animation-bank-audit-v1.json` (308 rows; 159 legacy endpoint
 risks; 28 explicitly rejected/excluded; zero strip/sidecar geometry mismatches).
 The active selectable contextual reviewer is
-`/keeper-review/keeper-prime-context-workbench-v5/`; it includes only nine
+`/keeper-review/keeper-prime-context-workbench-v6/`; it includes only ten
 status-labelled routes whose present state can be defended and links the full
 inventory. V3 retains V2's fix for V1's deployed relative-URL/trailing-slash
 loader failure and localised native-route images, and adds the inspection-only
@@ -40,8 +40,13 @@ six visible flights
 and impacts, practical full-reach collection, one turn at the board, one turn
 at the oche, and a 30.5-lp return before the second three-dart set. Its
 repeatable activity seam is exact. Darts V1 is rejected and V2 is superseded
-provenance; V3 remains immutable pre-isolation context. Neither Darts V4 nor
-the seated foundation is approved or promoted.
+provenance; V3 remains immutable pre-isolation context. Darts V5 preserves the
+complete V4 route and adds only reversible browser-local occurrence/pose
+skipping, JSON export and one consistent airborne/stuck dart rendering. The
+separate Darts redraw V1 gate contains three newly generated Prime-derived key
+poses, registered to exact cap/floor datums in 448 × 320 action cells. Those
+poses are not yet inserted into the route. Neither Darts V4/V5, the redraw
+calibration nor the seated foundation is approved or promoted.
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 

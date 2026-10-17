@@ -46,13 +46,27 @@ function pageForSet(setName) {
 }
 
 const previous = fs.existsSync(INDEX) ? JSON.parse(fs.readFileSync(INDEX, 'utf8')) : null
-const legacyPaths = Object.fromEntries(Object.entries(previous?.legacyPaths ?? {}).map(([legacyPath, entry]) => [
-  legacyPath,
-  {
+const legacyPaths = {}
+function retainArchivedEntry(legacyPath, entry, source) {
+  const normalized = {
     ...entry,
     url: `${BASE_URL}/${entry.sha256.slice(0, 2)}/${entry.sha256}${entry.extension}`,
-  },
-]))
+  }
+  const existing = legacyPaths[legacyPath]
+  if (existing && existing.sha256 !== normalized.sha256) {
+    throw new Error(`archive manifest conflict for ${legacyPath}: ${existing.sha256} versus ${normalized.sha256} from ${source}`)
+  }
+  legacyPaths[legacyPath] = normalized
+}
+for (const [legacyPath, entry] of Object.entries(previous?.legacyPaths ?? {})) {
+  retainArchivedEntry(legacyPath, entry, 'previous index')
+}
+for (const manifestFile of walk(SET_ROOT).filter((file) => path.extname(file) === '.json')) {
+  const manifest = JSON.parse(fs.readFileSync(manifestFile, 'utf8'))
+  for (const [legacyPath, entry] of Object.entries(manifest.entries ?? {})) {
+    retainArchivedEntry(legacyPath, entry, posix(path.relative(ROOT, manifestFile)))
+  }
+}
 const physicalMedia = walk(PUBLIC_ROOT).filter((file) => MEDIA_EXTENSIONS.has(path.extname(file).toLowerCase()))
 
 for (const file of physicalMedia) {

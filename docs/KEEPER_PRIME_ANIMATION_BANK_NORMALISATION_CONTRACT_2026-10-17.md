@@ -13,6 +13,15 @@ paths, weight shifts, contact order, prop timing and useful occlusion ideas.
 It is never an authority for rendered anatomy, scale, colour, line weight,
 face, beard, hair, cap, clothes or endpoints.
 
+Frank reaffirmed this as a whole-bank decision on 17 October 2026: **every
+first-draft animation is full visible-redraw scope.** The historical actor may
+be studied as choreography, but no inherited Keeper pixel may survive into a
+new candidate merely because its pose or timing works. Recolouring, rescaling,
+retouching the face or patching selected body regions is not normalisation.
+The complete visible Keeper must be newly derived from Prime Keeper. This rule
+does not discard proven joint paths, contacts, weight transfer, prop timing or
+staging; those remain reusable motion evidence under the treatments below.
+
 The following must remain stable unless an action makes a measured deviation
 unavoidable:
 
@@ -64,7 +73,7 @@ Each historical animation receives one of four treatments:
 - **motion-skeleton candidate:** joint/contact paths may be measured and
   retained, but every Keeper pixel is redrawn as Prime Keeper;
 - **partial motion salvage:** only a sound subset of timing, prop or limb
-  mechanics survives;
+  mechanics survives; all visible Keeper pixels are still redrawn;
 - **full redraw:** no visible or motion authority is accepted;
 - **held for dependency:** object, costume or environment geometry must be
   fixed before a meaningful action draft can be built.
