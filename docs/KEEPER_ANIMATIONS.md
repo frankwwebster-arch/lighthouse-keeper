@@ -39,13 +39,12 @@ choice while
 retaining the immutable V2 inspector and isolation comparison. V5 keeps all
 213 V4 route slots, timings, roots and sprite sources, but adds non-destructive
 occurrence/pose skipping, restore/export controls and one shared detailed dart
-component for both flight and board impact. The tenth choice is the separate
-Prime Darts redraw V1 calibration: three new wind-up/release/recovery drawings
-using Prime as the only visible-character authority. Frank approved those
-exact hashes. Redraw V2 keeps them byte-identical, adds five Prime-derived
-bridges and exact neutral holds, and forms the fourteen-slot candidate used by
-all 84 throw occurrences in Context V6. Route mechanics remain exact; V2/V6
-remain unapproved and unpromoted.
+component for both flight and board impact. The tenth choice is the registered
+Prime Darts redraw V2 core inspector. Its three wind-up/release/recovery
+authorities come byte-for-byte from the separately approved V1 calibration
+family. V2 adds five Prime-derived bridges and exact neutral holds to form the
+fourteen-slot candidate used by all 84 throw occurrences in Context V6. Route
+mechanics remain exact; V2/V6 remain unapproved and unpromoted.
 Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before
 creating or assessing another action.

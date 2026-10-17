@@ -58,6 +58,15 @@ projectile timing, collection and turns remain exact. The active selector is
 and links both the complete route and registered core. V2/V6/V7 are candidates;
 nothing entered Final, runtime or production.
 
+Production delivery was verified on 17 October 2026 from deploy commit
+`2e2f39d798bbf65e11e5aa78da7fd5f1d931cc91`. Darts Context V6 loaded and
+decoded all 40 unique sprite images; occurrence skip and restore changed the
+live route from 0/213 to 1/213 and back to 0/213; the V2 inspector exposed
+enabled frame/play controls with decoded 448-pixel poses and its 1,392-pixel
+lineup; and Workbench V7 loaded all ten choices and opened the embedded
+213-frame Darts V6 route. This is delivery verification only, not approval of
+V2/V6/V7.
+
 ## Whole-bank audit and prior Context Workbench V5 checkpoint — 17 October 2026
 
 The production bank now has a deterministic 308-row audit in
