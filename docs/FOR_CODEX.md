@@ -60,19 +60,21 @@ on 17 October 2026; preserve the hash-pinned decision at
 Workbench V15 retains every Workbench V11 choice and replaces only the active sitting
 link with the vertically corrected Prime side-right sit/stand V6 context. Frank
 approved exact V6 on 17 October 2026. Its immutable decision is
-`docs/review/keeper-prime-sit-stand-side-v6-approval-2026-10-17.json`; the other
-five sitting directions remain unapproved. No Final/runtime/production
-promotion has occurred. A fresh task should begin with
+`docs/review/keeper-prime-sit-stand-side-v6-approval-2026-10-17.json`. Frank
+then approved exact side-left V1; preserve its separate decision at
+`docs/review/keeper-prime-sit-stand-side-left-v1-approval-2026-10-17.json`.
+No Final/runtime/production promotion has occurred. A fresh task should begin with
 `docs/PRIME_KEEPER_RESTART_HANDOFF_2026-10-17.md`.
 
 The active next-direction proposal is
-`/keeper-review/keeper-prime-sit-stand-side-left-v1/`. It mirrors the approved
-smooth side-right six-pose action and complete 45-frame context exactly around
-the fixed world root, including Walk V6, stop/walk bridge timing and the
-measured 7.75-lp chair support. Its F6 is byte-identical to the registered
-side-left seated endpoint. The page includes source/candidate pairs, ghosts,
-action-only playback and 8×/4×/1× inspection. It awaits Frank; do not infer
-approval, promote it or start another direction.
+`/keeper-review/keeper-prime-sit-stand-front-v1/`. It joins the exact approved
+standing-front endpoint to the exact registered seated-front endpoint with four
+new Prime-derived intermediates. The complete 59-frame context walks and stops,
+uses the approved side-to-front turn, sits, holds, stands by exact reversal,
+turns back to side and resumes walking. Historical `keeper_sit_front` is
+choreography evidence only. The page includes ghosts, action-only playback,
+source/candidate proof and 8×/4×/1× inspection. It awaits Frank; do not infer
+approval, promote it or begin back-facing work before this gate resolves.
 
 Future pub/games-room layout rule: mount the approved dartboard on the
 right-hand cupboard-door leaf. It is edge-on while that door is closed and is
@@ -111,7 +113,8 @@ world y=44.25, 7.75 lp above the floor. V1–V5 remain immutable history.
 Frank approved the exact V6 motion, contextual route and measured side-right
 chair relationship on 17 October 2026. The candidate and Workbench V15 remain
 review infrastructure only; approval did not promote them into Final, runtime
-or production art, and it does not approve the other five sitting directions.
+or production art, and it did not itself approve another direction. Side-left
+has the separate approval recorded above.
 
 ## Seated Prime foundation V2 (17 Oct 2026)
 
@@ -132,9 +135,9 @@ opacity at y=29 did not establish the underside of the pelvis. Side-right V6
 is the current measured support evidence. The left pair are exact
 mirrors after registration. The
 approved standing views supply identity and rendering; first-generation seats
-supply pose mechanics only. The side-right endpoint is now the exact F6 of the
-separate V1 sit/stand candidate above. The other five directions remain
-endpoint foundations only. Full hashes are in
+supply pose mechanics only. The side-right and side-left endpoints are now the
+exact F6 cells of their separately approved sit/stand authorities. The other
+four directions remain endpoint foundations only. Full hashes are in
 `art/drafts/keeper-prime-seated-six-view-2026-10-17-v2/`; V1 remains immutable
 historical evidence.
 

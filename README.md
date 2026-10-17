@@ -72,15 +72,21 @@ hash-pinned in
 V1–V5 remain immutable provenance. This approval does not promote V6 into
 Final, runtime or production.
 
-The next one-direction gate is the reversible side-left reflection study at
-`/keeper-review/keeper-prime-sit-stand-side-left-v1/`. Its six action cells,
-approved Walk V6 and stop/walk context, roots and measured 7.75-lp chair
-relationship are exact horizontal reflections of the pinned side-right
-authorities. The full route contains 45 right-to-left frames and the page
-preloads the moving and side-by-side proof images before enabling controls.
-Historical `keeper_sit_side` contributes choreography provenance only and zero
-visible pixels. Side-left V1 awaits Frank's visual decision; it is not approved
-and changes no Final, runtime or production asset.
+Frank approved exact side-left V1 on 17 October 2026. Its separate immutable
+decision is
+`docs/review/keeper-prime-sit-stand-side-left-v1-approval-2026-10-17.json`;
+the approved reflection, 45-frame route and registered seated endpoint remain
+unchanged and no Final, runtime or production asset was promoted.
+
+The next one-direction gate is front-facing V1 at
+`/keeper-review/keeper-prime-sit-stand-front-v1/`. It uses the byte-identical
+approved standing-front and registered seated-front endpoints around four new
+Prime-derived poses. Its 59-frame route shows approved walk and stopping,
+approved side-to-front turn, sit, hold, exact reverse stand, front-to-side turn
+and return to walking. Historical `keeper_sit_front` contributes choreography
+only and zero visible pixels. The page preloads all moving/proof images and
+provides standing and adjacent-frame ghosts at 8×, 4× and 1×. Front V1 awaits
+Frank's decision and changes no Final, runtime or production asset.
 
 Frank approved exact Darts Context V8 on 17 October 2026. Its immutable decision
 is `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.

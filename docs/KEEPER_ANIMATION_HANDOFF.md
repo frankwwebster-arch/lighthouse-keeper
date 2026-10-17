@@ -60,10 +60,9 @@ approved exact V6 on 17 October 2026; preserve
 is Final, runtime or production, and the other sitting directions must not be
 inferred from this approval.
 
-## Side-left sit/stand V1 candidate — 17 October 2026
+## Approved side-left sit/stand V1 — 17 October 2026
 
-`/keeper-review/keeper-prime-sit-stand-side-left-v1/` is the only active next
-sitting-direction gate. It deterministically reflects the six approved
+`/keeper-review/keeper-prime-sit-stand-side-left-v1/` deterministically reflects the six approved
 side-right V6 action cells, approved Walk V6 and stop/walk context around the
 unchanged world-x=86 root. Its 45-frame route therefore travels right-to-left
 with the exact reflected roots, phases and timings. The chair uses the same
@@ -74,8 +73,30 @@ The page preloads every unique moving and comparison image, exposes complete
 context and isolated action playback, provides standing/adjacent ghosts and
 8×/4×/1× inspection, and shows all six source-right/candidate-left pairs.
 `keeper_sit_side` remains choreography provenance only with zero surviving
-visible pixels. The candidate is unapproved and reversible. Wait for Frank's
-decision before creating another direction; never rewrite V1 in place.
+visible pixels. Frank approved exact V1 on 17 October 2026. Preserve the
+hash-pinned decision at
+`docs/review/keeper-prime-sit-stand-side-left-v1-approval-2026-10-17.json` and
+never rewrite V1 in place. This is draft authority only; Final, runtime and
+production remain unchanged.
+
+## Front-facing sit/stand V1 candidate — 17 October 2026
+
+`/keeper-review/keeper-prime-sit-stand-front-v1/` is the only active sitting
+direction gate. F1 is byte-identical to the approved Prime standing-front
+authority and F6 is byte-identical to the registered Prime seated-front
+endpoint. F2–F5 are newly generated complete Prime poses, uniformly registered
+to one centre axis and floor. Historical `keeper_sit_front` supplies
+choreography only and contributes no visible pixel.
+
+The complete 59-frame route is approved side-right walking and stopping → the
+approved side-to-front turn → sit → 600 ms seated hold → exact reverse stand →
+approved front-to-side turn → acceleration and walking. The chair is a separate
+behind-Keeper review proxy with the already measured 7.75-lp support height.
+The page preloads every unique moving and comparison image, exposes route and
+action playback, and provides standing/adjacent-frame ghosts plus 8×/4×/1×
+inspection. It is reversible and unapproved. Wait for Frank's verdict before
+authoring the back-facing direction; if amended, create V2 rather than rewriting
+V1.
 
 ## Darts Prime complete redraw and contextual route — 17 October 2026
 

@@ -76,17 +76,23 @@ top begins at source y=258, 7.75 lp above the floor. The old `keeper_sit_side`
 contributes choreography only. Frank approved exact V6 on 17 October 2026;
 `docs/review/keeper-prime-sit-stand-side-v6-approval-2026-10-17.json` pins the
 six cells, 45-frame route, review code and measured chair geometry. V1–V5
-remain immutable history. The other sitting directions are not approved, and
-no Final, runtime or production sprite changed.
+remain immutable history. That decision approved only side-right, and no Final,
+runtime or production sprite changed.
+
+Frank approved exact side-left V1 on 17 October 2026. Preserve its hash-pinned
+decision at
+`docs/review/keeper-prime-sit-stand-side-left-v1-approval-2026-10-17.json`.
+This approves only that reversible draft authority and authorises no promotion.
 
 The next review gate is
-`/keeper-review/keeper-prime-sit-stand-side-left-v1/`. It is a deterministic,
-pixel-exact reflection of the pinned side-right six-pose action and its full
-45-frame walk/stop/action/return route. Reflected Walk V6 and stop/walk cells
-remain isolated with transparent gutters; the seated endpoint exactly matches
-the registered side-left pose. The page supplies source/candidate proof,
-ghosts, independent action playback and 8×/4×/1× views. It awaits review and
-authorises no promotion or following direction.
+`/keeper-review/keeper-prime-sit-stand-front-v1/`. F1 is the exact approved
+standing-front authority, F6 the exact registered seated-front endpoint, and
+F2–F5 are new Prime-derived poses. The complete 59-frame route includes the
+approved walk/stop and front↔side turn context on both sides of the sit, hold
+and exact reverse stand. Historical `keeper_sit_front` contributes choreography
+only. The page supplies ghosts, source/candidate proof, isolated action playback
+and 8×/4×/1× views. It awaits review and authorises neither promotion nor work
+on the back-facing direction.
 
 Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before

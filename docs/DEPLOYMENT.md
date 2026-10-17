@@ -144,10 +144,11 @@ explicit release.
 Keeper review media is now stored once outside `public/`, without deleting any
 evidence or changing immutable review-page bytes.
 
-**Measured result (17 October 2026, including approved Kitchen V23 and Prime
-side-left sitting V1):** 1,972 review-media paths collapse to 1,405 unique
-objects. The paths represent 164.38 MiB; the unique store is 86.36 MiB. The
-verified `public/` deployment payload is 49.65 MiB rather than roughly 115
+**Measured result (17 October 2026, including approved Kitchen V23, approved
+Prime side-left sitting V1 and front-facing sitting V1 review):** 2,000
+review-media paths collapse to 1,413 unique objects. The paths represent
+168.35 MiB; the unique store is 89.18 MiB. The verified `public/` deployment
+payload is 49.69 MiB rather than roughly 115
 MiB. The archive itself stays in Git but is
 outside `public/`, so Vercel does not copy those objects into every deployment.
 

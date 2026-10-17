@@ -1,0 +1,51 @@
+{
+  "schema": "lighthouse-keeper/sprite-sidecar@draft-1",
+  "name": "keeper_prime_stand-to-sit-front_f05",
+  "w": 32,
+  "h": 40,
+  "density": 8,
+  "frames": 1,
+  "fps": 0,
+  "anchor": [
+    16,
+    40
+  ],
+  "floorOpaqueMaximumY": 315,
+  "view": "front",
+  "outfit": "standard-single-band",
+  "poseIndex": 5,
+  "derivation": "new-Prime-derived-front-sit-intermediate",
+  "source": "art/drafts/keeper-prime-sit-stand-front-2026-10-17-v1/sources/generated/front-f5-generated.png",
+  "sourceSha256": "f19d3a88abdb3f01e5cbab7e71c01103b12cb669795674ebd038d008dba1cc18",
+  "sha256": "73fee06bffc0f222bb2a9371b05e57a2c11904712519eaa72ebd88ac92530d61",
+  "registration": {
+    "sourceCanvas": [
+      1122,
+      1402
+    ],
+    "sourceAlphaBounds": {
+      "minX": 266,
+      "minY": 228,
+      "maxX": 856,
+      "maxY": 1287,
+      "width": 591,
+      "height": 1060,
+      "opaquePixels": 427744
+    },
+    "registeredSize": [
+      160,
+      264
+    ],
+    "targetAxisX": 128,
+    "targetFloorY": 315,
+    "filter": "Lanczos",
+    "creativePixelWarp": false
+  },
+  "ownership": {
+    "actorAndClothing": "all non-transparent pixels in this isolated cell",
+    "propPixels": 0,
+    "effectPixels": 0
+  },
+  "endpointAuthority": null,
+  "productionPromotionAllowed": false
+}

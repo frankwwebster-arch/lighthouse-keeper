@@ -80,17 +80,20 @@ art has entered Workbench Final, runtime or production. No promotion is allowed
 without a separate explicit instruction from Frank.
 
 The six-view seated V2 pack supplies registered endpoints only. Side-right V6
-does not approve the other five sit/stand transitions. Side-left V1 is now the
-single active next-direction candidate at
-`/keeper-review/keeper-prime-sit-stand-side-left-v1/`. It is an exact
-horizontal reflection of the pinned smooth side-right action, Walk V6,
-stop/walk bridge, roots, timing and measured chair relationship. Its final
-seated cell is byte-identical to the registered side-left endpoint; historical
-`keeper_sit_side` contributes no visible pixel. The complete 45-frame route,
-ghosts, three scales and six source/candidate pairs await Frank's review.
-Nothing about publishing this candidate approves it. Front, back and the two
-rear angles still need purpose-built Prime transitions rather than inferred
-approval.
+does not approve another direction. Frank separately approved exact side-left
+V1 on 17 October 2026; preserve
+`docs/review/keeper-prime-sit-stand-side-left-v1-approval-2026-10-17.json`.
+
+Front-facing V1 is now the single active next-direction candidate at
+`/keeper-review/keeper-prime-sit-stand-front-v1/`. It uses exact standing-front
+and seated-front endpoints, four new complete Prime-derived intermediates, the
+approved front↔side turn and approved walking/stopping context. Historical
+`keeper_sit_front` contributes choreography only and zero visible pixels. The
+complete 59-frame route, ghosts, three scales and source/candidate proof await
+Frank's review. Nothing about publishing this candidate approves it. Back and
+the two rear angles remain unapproved. After front and back are decided, audit
+whether the already approved seated/standing turn network fully covers the two
+rear angles before authoring extra direct sit/stand motions.
 
 ## Binding method for every inherited animation
 
@@ -174,14 +177,16 @@ Current live inspection:
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-context-workbench-v15/`
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-side-v6/`
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-side-left-v1/`
+- `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v1/`
 
 Workbench V15 is review infrastructure, not a Final-art ledger. At this
 checkpoint no Prime animation has been promoted into Final/runtime/production.
 
 ## Exact next-task boundary
 
-Stop for Frank's visual decision on side-left V1. If he approves it, record a
-separate hash-pinned decision without promoting it; if he requests changes,
-create side-left V2 rather than rewriting V1. Do not begin front, back or a
-rear-angle transition until this gate is resolved. One accepted direction at
-a time remains the safe cadence.
+Stop for Frank's visual decision on front-facing V1. If he approves it, record
+a separate hash-pinned decision without promoting it; if he requests changes,
+create front-facing V2 rather than rewriting V1. Only then begin the requested
+back-facing direction. After that decision, audit whether the approved turn
+network makes separate rear-angle sit/stand transitions unnecessary. One
+accepted direction at a time remains the safe cadence.
