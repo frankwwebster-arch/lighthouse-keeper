@@ -1,0 +1,52 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-18",
+  "reviewedBy": "Frank",
+  "candidate": "keeper-prime-sit-stand-front-2026-10-17-v4",
+  "decision": "approved-as-front-prime-sit-stand-authority",
+  "wording": "Approved.",
+  "approvedHashes": {
+    "batchRegister": "cddeabde7f1f93cd14c464e755f84924362916ff28407804c970c4e5cc6d0fc1",
+    "reviewRoute": "f615266e78c8f2170ba820fee38bc6d4a256ff7215706e3c23eb685f3adaa0d0",
+    "routeData": "8bca3cc27af7c341cb86f8770513fd2128e416e46c5c7698c4e0985fb5dd6c8c",
+    "keeperFrames": [
+      "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "4efd077ac6046b67e286f22b8b38546492042d0ed8e0f43da0e34840a32d23ab",
+      "36482028337fe7b00b09eaab1d11a5ed275fe7edf36acacf08e7341f4f5e54d5",
+      "80e4eaa09c8adaad583242e585f883e5fca244ed465b76d9e2ab0e25c0b1b89f",
+      "f60db0bc99420b3412efa4cb7623f8b264718606b3af69e079f9f2962e695f4c",
+      "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce"
+    ]
+  },
+  "approvedContract": {
+    "view": "front-0",
+    "actionFrames": 6,
+    "contextFrames": 59,
+    "standEndpointExactPrime": true,
+    "seatedEndpointExactRegisteredPrime": true,
+    "sitToStandIsExactReverse": true,
+    "allVisibleKeeperPixelsDerivedFromPrimeAuthorities": true,
+    "historicalKeeperPixelsVisible": 0,
+    "loweringFramesMatchSeatedElbowSpanPx": 143,
+    "seatHeightAboveFloorLp": 7.75,
+    "completeWalkStopTurnActionReturnContext": true,
+    "frontV1ThroughV3RejectionsRemainImmutable": true,
+    "sideRightV6AndSideLeftV1ApprovalsRemainUnchanged": true
+  },
+  "delivery": {
+    "candidateCommit": "fd81f836c15a1f2afd1cb3959f71d71fd8261fe5",
+    "deployCommit": "e1ea5d07b561571ce61976e0f88734352ccb869e",
+    "reviewUrl": "https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v4/"
+  },
+  "approvalBoundary": {
+    "sideRightSitStandApproved": true,
+    "sideLeftSitStandApproved": true,
+    "frontSitStandApproved": true,
+    "backSitStandApproved": false,
+    "rearAngleSitStandApproved": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false,
+    "promotionPerformed": false
+  }
+}
