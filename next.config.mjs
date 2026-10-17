@@ -193,6 +193,11 @@ export default {
         destination: '/keeper-review/kitchen-final-assets-v21/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-rear-wall-flow-v22',
+        destination: '/keeper-review/kitchen-rear-wall-flow-v22/index.html',
+        permanent: false,
+      },
     ]
   },
 }

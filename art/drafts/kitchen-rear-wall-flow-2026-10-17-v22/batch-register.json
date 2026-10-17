@@ -1,0 +1,11 @@
+{
+  "version": 22,
+  "status": "rear-wall-flow-correction-awaiting-visual-acceptance",
+  "approved": false,
+  "promoted": false,
+  "runtimeChanged": false,
+  "finalChanged": false,
+  "keeperChanged": false,
+  "v21Preserved": true,
+  "rollback": "Delete only V22 source/raw/draft/review files, its builder/verifier/docs and archive set; V20 and V21 remain byte-identical."
+}

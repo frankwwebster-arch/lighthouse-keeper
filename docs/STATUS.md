@@ -71,13 +71,16 @@ No Prime artwork has entered Workbench Final or production, and the runtime
 sprite manifest remains unchanged.
 
 The current kitchen-art candidate is
-`/keeper-review/kitchen-final-assets-v21/`, based on V20's accepted storm-blue
-fitted-galley direction. It completes the basic set with a compact single-door
-oven, standalone pedal bin, and one-person table with exactly one V6-sized
-chair; the former V20 double oven is Upgrade 1. The review shows all assets in
-one `193 × 56-lp` room and can swap only the oven tier. V21 is complete review
-art, documented in `docs/KITCHEN_FINAL_ASSETS_V21_RECIPE_2026-10-17.md`, but is
-not yet promoted or wired into the live game.
+`/keeper-review/kitchen-rear-wall-flow-v22/`. V21 still supplies the complete
+asset family: compact single-door basic oven, V20 double oven as Upgrade 1,
+standalone pedal bin, and a one-person table with exactly one V6-sized chair.
+V22 corrects only the room assembly after Frank identified five bays projecting
+forward of the kettle. It uses the kettle as the rear-wall depth authority and
+places all six 21-lp centre treatments in one shared 126-lp carcass with one
+worktop, one recessed toe-kick and no interior end caps. Both oven tiers are
+shown in the same `193 × 56-lp` room. V20 and V21 remain immutable; V22 is
+documented in `docs/KITCHEN_REAR_WALL_FLOW_V22_RECIPE_2026-10-17.md` and is not
+yet promoted or wired into the live game.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

@@ -11,11 +11,11 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 96,
-    "referenceCount": 1966,
-    "uniqueObjectCount": 1399,
-    "logicalBytes": 170885872,
-    "uniqueBytes": 89075345,
+    "setCount": 97,
+    "referenceCount": 1971,
+    "uniqueObjectCount": 1404,
+    "logicalBytes": 171175392,
+    "uniqueBytes": 89364865,
     "deduplicatedBytes": 81810527
   },
   "legacyPaths": {
@@ -13780,6 +13780,41 @@
       "bytes": 53555,
       "object": "review-archive/objects/57/5730e51c07c3c0baa38fbc537fc542179ea427bf0870eff0576e6fad5d8a7a57.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/57/5730e51c07c3c0baa38fbc537fc542179ea427bf0870eff0576e6fad5d8a7a57.png"
+    },
+    "/keeper-review/kitchen-rear-wall-flow-v22/assets/alignment-guide.png": {
+      "sha256": "4ef7a64b035363bf07a161d30be73279be6064d87b0d14576c2b9f5e3f7698c9",
+      "extension": ".png",
+      "bytes": 61324,
+      "object": "review-archive/objects/4e/4ef7a64b035363bf07a161d30be73279be6064d87b0d14576c2b9f5e3f7698c9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4e/4ef7a64b035363bf07a161d30be73279be6064d87b0d14576c2b9f5e3f7698c9.png"
+    },
+    "/keeper-review/kitchen-rear-wall-flow-v22/assets/full-kitchen-upgrade1.png": {
+      "sha256": "3de553ac384eb63d4e960c84073481c48d56b6d25afc008566ec50575c10cf8c",
+      "extension": ".png",
+      "bytes": 62424,
+      "object": "review-archive/objects/3d/3de553ac384eb63d4e960c84073481c48d56b6d25afc008566ec50575c10cf8c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3d/3de553ac384eb63d4e960c84073481c48d56b6d25afc008566ec50575c10cf8c.png"
+    },
+    "/keeper-review/kitchen-rear-wall-flow-v22/assets/full-kitchen.png": {
+      "sha256": "8dbba02b4f664db40085975510372ab30abd545df869a2ef46609ffc188c69e4",
+      "extension": ".png",
+      "bytes": 61021,
+      "object": "review-archive/objects/8d/8dbba02b4f664db40085975510372ab30abd545df869a2ef46609ffc188c69e4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8d/8dbba02b4f664db40085975510372ab30abd545df869a2ef46609ffc188c69e4.png"
+    },
+    "/keeper-review/kitchen-rear-wall-flow-v22/assets/v21-before.png": {
+      "sha256": "d3b6aedd1f6d0fefff7b2543f66cfe05737c55f419f8dab92de73423730d9925",
+      "extension": ".png",
+      "bytes": 58776,
+      "object": "review-archive/objects/d3/d3b6aedd1f6d0fefff7b2543f66cfe05737c55f419f8dab92de73423730d9925.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d3/d3b6aedd1f6d0fefff7b2543f66cfe05737c55f419f8dab92de73423730d9925.png"
+    },
+    "/keeper-review/kitchen-rear-wall-flow-v22/assets/v22-after.png": {
+      "sha256": "805fbbe37833bcc30b9e464af31c2f51d693c59f081b72d82a53eeaa6f6f883c",
+      "extension": ".png",
+      "bytes": 45975,
+      "object": "review-archive/objects/80/805fbbe37833bcc30b9e464af31c2f51d693c59f081b72d82a53eeaa6f6f883c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/80/805fbbe37833bcc30b9e464af31c2f51d693c59f081b72d82a53eeaa6f6f883c.png"
     }
   }
 }

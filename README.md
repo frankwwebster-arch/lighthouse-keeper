@@ -298,16 +298,30 @@ The measured recipe is
 and the hand-back is
 [`docs/CODEX_TO_CLAUDE_KITCHEN_FINAL_ASSETS_V21_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_FINAL_ASSETS_V21_2026-10-17.md).
 V21 is a complete final review candidate, but it remains unpromoted and
+unwired. Frank's subsequent room review found that its complete cabinet
+drawings retained mismatched forward depth: the kettle read correctly against
+the rear wall, while the other five bays projected toward the foreground.
+Kitchen V22 corrects that assembly at
+`/keeper-review/kitchen-rear-wall-flow-v22/`. It preserves the complete V21
+asset set and order, but inserts only each bay's centre treatment into one
+shared 126-lp carcass. All six 21-lp bays therefore share the kettle-authority
+body line, one uninterrupted worktop, one recessed toe-kick and outer end caps
+only. The review includes the complete basic and Upgrade 1 rooms, a direct
+V21/V22 crop comparison, and a measured registration overlay. The recipe is
+[`docs/KITCHEN_REAR_WALL_FLOW_V22_RECIPE_2026-10-17.md`](docs/KITCHEN_REAR_WALL_FLOW_V22_RECIPE_2026-10-17.md)
+and the hand-back is
+[`docs/CODEX_TO_CLAUDE_KITCHEN_REAR_WALL_FLOW_V22_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_REAR_WALL_FLOW_V22_2026-10-17.md).
+V22 is the current complete review candidate but remains unpromoted and
 unwired pending visual acceptance.
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
 and
 [`docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md).
-Only exact Kitchen V5, V20 and V21 remain in active kitchen review tooling.
+Only exact Kitchen V5, V20, V21 and V22 remain in active kitchen review tooling.
 V5 is the retained old-family reference, V20 is immutable fitted-galley
-provenance, and V21 is the complete current candidate. None is promoted or
-wired.
+provenance, V21 is immutable complete-asset provenance, and V22 is the current
+rear-wall-corrected room candidate. None is promoted or wired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:
