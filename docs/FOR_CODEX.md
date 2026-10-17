@@ -15,7 +15,7 @@ The deterministic inventory is
 `data/keeper-prime-animation-bank-audit-v1.json` (308 rows; 159 legacy endpoint
 risks; 28 explicitly rejected/excluded; zero strip/sidecar geometry mismatches).
 The active selectable contextual reviewer is
-`/keeper-review/keeper-prime-context-workbench-v9/`; it includes only ten
+`/keeper-review/keeper-prime-context-workbench-v10/`; it includes only eleven
 status-labelled routes whose present state can be defended and links the full
 inventory. V3 retains V2's fix for V1's deployed relative-URL/trailing-slash
 loader failure and localised native-route images, and adds the inspection-only
@@ -61,7 +61,8 @@ placeholder rim with a segmented acute-angle board. The final airborne and
 first embedded renderings are byte-identical. Frank approved exact Context V8
 on 17 October 2026; preserve the hash-pinned decision at
 `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
-Workbench V9 remains review infrastructure. No Final/runtime/production
+Workbench V10 retains every V9 choice and adds the dedicated Prime side-right
+sit/stand V1 context. No Final/runtime/production
 promotion has occurred.
 
 Future pub/games-room layout rule: mount the approved dartboard on the
@@ -72,6 +73,22 @@ or cupboard from this note alone; Frank explicitly deferred that work.
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
+## Prime side-right sit/stand V1 (17 Oct 2026)
+
+The active sitting-motion gate is
+`/keeper-review/keeper-prime-sit-stand-side-v1/`. It shows one 45-frame route:
+approved Walk V6 → approved deceleration → new Prime stand-to-sit → a 600 ms
+seated beat → the exact byte-reversed stand → approved acceleration → approved
+walk away. The six action cells use the exact approved side-right standing
+authority as F1 and the exact registered side-right seated endpoint as F6.
+F2–F5 are new smooth Prime redraws; first-generation `keeper_sit_side` pixels
+are choreography-only evidence. All cells are 256 × 320 at density 8 with a
+common `[16,40]` anchor, y=315 opaque floor limit, `[16,29]` seat point, 11-lp
+seat height and transparent gutters. Generated silhouettes are registered to
+measured height/width progressions to prevent an abrupt Prime-to-action width
+jump. The candidate and Workbench V10 are review infrastructure only; they are
+not approved, Final, runtime or production art.
+
 ## Seated Prime foundation V2 (17 Oct 2026)
 
 Frank approved Stair Descent V2 with its slight overstride accepted. Preserve
@@ -81,7 +98,7 @@ feet, but it must retain the stored fourteen-riser, 7-lp-tread, 98-by-60-lp
 geometry. The immutable decision is
 `docs/review/keeper-prime-stair-descent-v2-approval-2026-10-16.json`.
 
-The next review gate is the corrected six-direction smooth seated foundation
+The corrected six-direction smooth seated foundation is available
 at `/keeper-review/keeper-prime-seated-six-view-v2/`. It contains direct front,
 direct back, side-left/right and rear-left/right endpoints. All are 256 × 320
 registered cells with one `[16,40]` anchor, one `[16,29]` seat point and an
@@ -90,10 +107,11 @@ brittle all-or-nothing page loader and proves opaque pelvis contact on the
 chair's exact y=29-lp top surface in every view. The left pair are exact
 mirrors after registration. The
 approved standing views supply identity and rendering; first-generation seats
-supply pose mechanics only. Do not build or promote the transition strips
-until Frank approves these endpoints. Full hashes and next-gate instructions
-are in `art/drafts/keeper-prime-seated-six-view-2026-10-17-v2/`; V1 remains
-immutable historical evidence.
+supply pose mechanics only. The side-right endpoint is now the exact F6 of the
+separate V1 sit/stand candidate above. The other five directions remain
+endpoint foundations only. Full hashes are in
+`art/drafts/keeper-prime-seated-six-view-2026-10-17-v2/`; V1 remains immutable
+historical evidence.
 
 ## Stair descent V2 approval (16 Oct 2026)
 

@@ -15,6 +15,31 @@
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
 
+## Active side-right sit/stand candidate — 17 October 2026
+
+`/keeper-review/keeper-prime-sit-stand-side-v1/` is the first redrafted
+sitting transition. Its complete 45-frame review route is approved Walk V6 →
+approved walk-to-stop → six-pose stand-to-sit → 600 ms seated beat → exact
+byte-reversed sit-to-stand → approved stop-to-walk → approved Walk V6. The
+review page also isolates both action directions and supplies one-frame
+stepping, speed controls, Prime/adjacent ghosts, 8× inspection, proposed 4×
+presentation and literal 1× scale.
+
+F1 is byte-identical to the approved smooth Prime side-right standing
+authority. F6 is byte-identical to the registered Prime side-right seated
+endpoint. F2–F5 are newly generated smooth Prime poses; the old six-frame
+`keeper_sit_side` supplied joint path only and contributes no visible pixel.
+Every action cell is 256 × 320, anchored `[16,40]`, floor-limited at opaque
+y=315, seat-registered at `[16,29]` / 11 lp, and checked for a minimum
+transparent gutter. The generated frames use a deterministic visible
+height/width progression so the model does not widen suddenly after F1.
+
+The versioned pack is
+`art/drafts/keeper-prime-sit-stand-side-2026-10-17-v1/`; Workbench V10 adds it
+without changing any V9 review set. It is awaiting Frank. Nothing is approved,
+Final, runtime or production, and the next directions must not be inferred
+until this side-right motion is reviewed.
+
 ## Darts Prime complete redraw and contextual route — 17 October 2026
 
 Frank found the jump from Prime Keeper into the inherited Darts throw core

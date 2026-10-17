@@ -1,4 +1,4 @@
-# Lighthouse Keeper: status write-up (14 Oct 2026)
+# Lighthouse Keeper: status write-up (17 Oct 2026)
 
 ## What it is
 A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthouse; kids type commands (typo-tolerant, curated, no live AI) or click objects (Sims-style menus, auto-zoom camera). Needs and mood, credits, phone, bedtime, multi-day play, a day report, quiz pop-ins, time-aware chat, cheeky humour.
@@ -69,6 +69,14 @@ stopping bridges and turns. Action entry, loops, exits, reactions and prop
 choreography remain independently paced so enjoyable actions can be savoured.
 No Prime artwork has entered Workbench Final or production, and the runtime
 sprite manifest remains unchanged.
+
+The active contextual reviewer is now Prime Context Workbench V10. It retains
+all ten V9 authorities/candidates and adds the unapproved side-right sit/stand
+V1 route. That candidate uses exact approved standing and registered seated
+Prime endpoints, four new smooth transition poses, the fixed 11 px chair
+contact and the exact reverse for standing up. It is shown inside the complete
+approved walk/stop/action/return context and remains review-only; no runtime,
+Final or production art changed.
 
 1. The evidence-based beard/hand audit classifies every manifest frame and pins `keeper_clear_snow` as the canonical fuller stepped beard. A landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It remains fail-closed for unavailable evidence: 163 side-on standing/sitting sheets are inventoried, eight zero-difference reference self-comparisons match, and 994 different-pose frames—including `keeper_darts` 3–6—are non-comparable because no approved beard masks, facial landmarks or hand-depth/component evidence exists. Frank reviewed Darts 3–6 visually on 11 October and accepted the beards with no amendment required; no beard draft is active or promotable. Next, use GPT-5.6 Sol to establish comparison inputs for any future claim, then run the later frame-isolation and released-prop audits.
 2. Continue the neutral-endpoint repair queue in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`: standard outfit first, then one outfit at a time in `docs/KEEPER_COSTUME_ROUTE_AUDIT.md` order. The five studio samples are the early visual gate; the specialised hot-drink prop-state bridges are their remaining seam work. Frank's immutable second visual review recorded 96 of 173 animations Happy, 68 Awaiting new draft review, 3 Review later and 6 Unreviewed; the current reviewer has 97 Happy and 67 Awaiting after Frank selected the Darts draft as his preferred candidate. Frank's saved per-animation width and height remain final production art direction.

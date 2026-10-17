@@ -15,8 +15,8 @@ hash, outfit, facing, endpoint, dependency, current family, treatment and
 required contextual route.
 
 The active selectable contextual review is
-`/keeper-review/keeper-prime-context-workbench-v9/`. It deliberately contains
-only ten routes or inspection views whose current status can be stated
+`/keeper-review/keeper-prime-context-workbench-v10/`. It deliberately contains
+only eleven routes or inspection views whose current status can be stated
 confidently, and labels approved authorities separately from unapproved
 candidates. The corrected
 Darts V4 candidate uses the isolated fourteen-frame core, shows six visible flights and
@@ -56,8 +56,18 @@ state is identical; the board is a proper segmented edge-on target rather than
 a generic oval. Frank approved exact Context V8 on 17 October 2026; its route,
 props and review hashes are pinned in
 `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
-Workbench V9 remains review infrastructure, and no Final/runtime promotion has
+Workbench V10 remains review infrastructure, and no Final/runtime promotion has
 occurred.
+
+Workbench V10 retains those ten V9 choices and adds the first new sitting
+motion: `/keeper-review/keeper-prime-sit-stand-side-v1/`. Its 45-frame context
+uses approved walk/stop authorities around a six-pose side-right sit, a 600 ms
+seated hold and the exact byte-reversed stand. Action F1 is the exact approved
+Prime side-right standing authority and F6 is the exact registered Prime
+side-right seated endpoint. F2–F5 are new smooth Prime redraws, registered to
+one floor, one root, measured silhouette progression and the fixed 11-lp chair
+seat. The old `keeper_sit_side` contributes choreography only. V1 awaits
+Frank's review and changes no Final, runtime or production sprite.
 Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before
 creating or assessing another action.

@@ -315,6 +315,13 @@ const contextWorkbenchV9 = spawnSync('node', ['scripts/verify_keeper_prime_conte
 })
 if (contextWorkbenchV9.error) throw contextWorkbenchV9.error
 if (contextWorkbenchV9.status !== 0) process.exit(contextWorkbenchV9.status ?? 1)
+const sitStandSideV1 = spawnSync('node', ['scripts/verify_keeper_prime_sit_stand_side_v1.mjs'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (sitStandSideV1.error) throw sitStandSideV1.error
+if (sitStandSideV1.status !== 0) process.exit(sitStandSideV1.status ?? 1)
 const animationBankAuditV1 = spawnSync('node', ['scripts/verify_keeper_prime_animation_bank_audit_v1.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },

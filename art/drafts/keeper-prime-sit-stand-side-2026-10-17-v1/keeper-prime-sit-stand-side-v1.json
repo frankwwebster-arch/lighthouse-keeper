@@ -1,0 +1,702 @@
+{
+  "schema": "lighthouse-keeper/sit-stand-context@1",
+  "set": "keeper-prime-sit-stand-side-v1",
+  "status": "draft-awaiting-frank",
+  "room": {
+    "widthLp": 172,
+    "heightLp": 56,
+    "floorLp": 52,
+    "chair": {
+      "rootXLp": 86,
+      "seatTopLp": 41,
+      "seatHeightAboveFloorLp": 11,
+      "layer": "behind-keeper"
+    }
+  },
+  "action": {
+    "direction": "side-right",
+    "frames": [
+      {
+        "index": 1,
+        "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-a172a8a01a387a21.png",
+        "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+        "bounds": {
+          "minX": 77,
+          "minY": 18,
+          "maxX": 178,
+          "maxY": 315,
+          "width": 102,
+          "height": 298,
+          "opaquePixels": 22897
+        }
+      },
+      {
+        "index": 2,
+        "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-c0a87d5460ce0af1.png",
+        "sha256": "c0a87d5460ce0af134d6e9dc64dab22625f5a1eda1f631e021052701d91077c1",
+        "bounds": {
+          "minX": 72,
+          "minY": 30,
+          "maxX": 183,
+          "maxY": 315,
+          "width": 112,
+          "height": 286,
+          "opaquePixels": 21951
+        }
+      },
+      {
+        "index": 3,
+        "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-109c211066926cb2.png",
+        "sha256": "109c211066926cb2b3f140755bfe51a4636106c03d75c052e826d6610791d8a1",
+        "bounds": {
+          "minX": 66,
+          "minY": 40,
+          "maxX": 189,
+          "maxY": 315,
+          "width": 124,
+          "height": 276,
+          "opaquePixels": 23815
+        }
+      },
+      {
+        "index": 4,
+        "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-7f23f761b211ee53.png",
+        "sha256": "7f23f761b211ee53f80c15bf3a0cccdfd90f9e9ab490c260ede66c46174995f0",
+        "bounds": {
+          "minX": 60,
+          "minY": 48,
+          "maxX": 196,
+          "maxY": 315,
+          "width": 137,
+          "height": 268,
+          "opaquePixels": 22292
+        }
+      },
+      {
+        "index": 5,
+        "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-6ffe5f0af90c0aa3.png",
+        "sha256": "6ffe5f0af90c0aa312f4dad276f22642b74360ca396fae743a3c13f640b58c21",
+        "bounds": {
+          "minX": 53,
+          "minY": 52,
+          "maxX": 202,
+          "maxY": 315,
+          "width": 150,
+          "height": 264,
+          "opaquePixels": 23474
+        }
+      },
+      {
+        "index": 6,
+        "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-8226a15137fc6973.png",
+        "sha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b",
+        "bounds": {
+          "minX": 51,
+          "minY": 52,
+          "maxX": 204,
+          "maxY": 315,
+          "width": 154,
+          "height": 264,
+          "opaquePixels": 24441
+        }
+      }
+    ],
+    "standToSitRange": [
+      1,
+      6
+    ],
+    "sitToStand": "exact-byte-reverse",
+    "endpointHoldMs": 600
+  },
+  "route": [
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-0e80ea65610452c9.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F1",
+      "rootXLp": 41.875,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-2b8e91de747b527d.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F2",
+      "rootXLp": 44.5,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-b376254e9c29da38.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F3",
+      "rootXLp": 47.125,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-982646b0b0e6f3f9.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F4",
+      "rootXLp": 49.75,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-545e7338151e6e5a.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F5",
+      "rootXLp": 52.375,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-17d007eee75c2e86.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F6",
+      "rootXLp": 55,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-dbf5b3849624cec7.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F7",
+      "rootXLp": 57.625,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-cf8c53e7ffa703a5.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F8",
+      "rootXLp": 60.25,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-0e80ea65610452c9.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F1",
+      "rootXLp": 62.875,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-2b8e91de747b527d.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F2",
+      "rootXLp": 65.5,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-b376254e9c29da38.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F3",
+      "rootXLp": 68.125,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-982646b0b0e6f3f9.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F4",
+      "rootXLp": 70.75,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-545e7338151e6e5a.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F5",
+      "rootXLp": 73.375,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-17d007eee75c2e86.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F6",
+      "rootXLp": 76,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-dbf5b3849624cec7.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F7",
+      "rootXLp": 78.625,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-cf8c53e7ffa703a5.png",
+      "phase": "approach walk",
+      "label": "approved Walk V6 F8",
+      "rootXLp": 81.25,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/bridge-frame-9f4192beb8fecbc8.png",
+      "phase": "walk → stop",
+      "label": "approved deceleration bridge 3",
+      "rootXLp": 83.5,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 83,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/bridge-frame-0169b3642905389d.png",
+      "phase": "walk → stop",
+      "label": "approved deceleration bridge 2",
+      "rootXLp": 85,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 83,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/bridge-frame-e54546ba14b4e5f7.png",
+      "phase": "walk → stop",
+      "label": "approved deceleration bridge 1",
+      "rootXLp": 85.75,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 83,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-a172a8a01a387a21.png",
+      "phase": "walk → stop",
+      "label": "exact side-right stop",
+      "rootXLp": 86,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 83,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-c0a87d5460ce0af1.png",
+      "phase": "stand → sit",
+      "label": "new registered sit F2",
+      "rootXLp": 86,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 125,
+      "actionFrame": 2
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-109c211066926cb2.png",
+      "phase": "stand → sit",
+      "label": "new registered sit F3",
+      "rootXLp": 86,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 125,
+      "actionFrame": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-7f23f761b211ee53.png",
+      "phase": "stand → sit",
+      "label": "new registered sit F4",
+      "rootXLp": 86,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 125,
+      "actionFrame": 4
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-6ffe5f0af90c0aa3.png",
+      "phase": "stand → sit",
+      "label": "new registered sit F5",
+      "rootXLp": 86,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 125,
+      "actionFrame": 5
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-8226a15137fc6973.png",
+      "phase": "stand → sit",
+      "label": "new registered sit F6",
+      "rootXLp": 86,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 125,
+      "actionFrame": 6
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-8226a15137fc6973.png",
+      "phase": "seated hold",
+      "label": "exact Prime seated endpoint",
+      "rootXLp": 86,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 150,
+      "actionFrame": 6
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-8226a15137fc6973.png",
+      "phase": "seated hold",
+      "label": "exact Prime seated endpoint",
+      "rootXLp": 86,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 150,
+      "actionFrame": 6
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-8226a15137fc6973.png",
+      "phase": "seated hold",
+      "label": "exact Prime seated endpoint",
+      "rootXLp": 86,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 150,
+      "actionFrame": 6
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-8226a15137fc6973.png",
+      "phase": "seated hold",
+      "label": "exact Prime seated endpoint",
+      "rootXLp": 86,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 150,
+      "actionFrame": 6
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-6ffe5f0af90c0aa3.png",
+      "phase": "sit → stand",
+      "label": "exact reverse F5",
+      "rootXLp": 86,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 115,
+      "actionFrame": 5
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-7f23f761b211ee53.png",
+      "phase": "sit → stand",
+      "label": "exact reverse F4",
+      "rootXLp": 86,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 115,
+      "actionFrame": 4
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-109c211066926cb2.png",
+      "phase": "sit → stand",
+      "label": "exact reverse F3",
+      "rootXLp": 86,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 115,
+      "actionFrame": 3
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-c0a87d5460ce0af1.png",
+      "phase": "sit → stand",
+      "label": "exact reverse F2",
+      "rootXLp": 86,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 115,
+      "actionFrame": 2
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/sit-frame-a172a8a01a387a21.png",
+      "phase": "sit → stand",
+      "label": "exact Prime side-right stop",
+      "rootXLp": 86,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 115,
+      "actionFrame": 1
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/bridge-frame-e54546ba14b4e5f7.png",
+      "phase": "stop → walk",
+      "label": "approved acceleration bridge 1",
+      "rootXLp": 86.25,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 83,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/bridge-frame-0169b3642905389d.png",
+      "phase": "stop → walk",
+      "label": "approved acceleration bridge 2",
+      "rootXLp": 87,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 83,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/bridge-frame-9f4192beb8fecbc8.png",
+      "phase": "stop → walk",
+      "label": "approved acceleration bridge 3",
+      "rootXLp": 88.5,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 83,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-0e80ea65610452c9.png",
+      "phase": "stop → walk",
+      "label": "approved Walk V6 F1",
+      "rootXLp": 90.75,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 83,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-2b8e91de747b527d.png",
+      "phase": "departure walk",
+      "label": "approved Walk V6 F2",
+      "rootXLp": 93.375,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-b376254e9c29da38.png",
+      "phase": "departure walk",
+      "label": "approved Walk V6 F3",
+      "rootXLp": 96,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-982646b0b0e6f3f9.png",
+      "phase": "departure walk",
+      "label": "approved Walk V6 F4",
+      "rootXLp": 98.625,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-545e7338151e6e5a.png",
+      "phase": "departure walk",
+      "label": "approved Walk V6 F5",
+      "rootXLp": 101.25,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-17d007eee75c2e86.png",
+      "phase": "departure walk",
+      "label": "approved Walk V6 F6",
+      "rootXLp": 103.875,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-dbf5b3849624cec7.png",
+      "phase": "departure walk",
+      "label": "approved Walk V6 F7",
+      "rootXLp": 106.5,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    },
+    {
+      "src": "/keeper-review/keeper-prime-sit-stand-side-v1/assets/walk-frame-cf8c53e7ffa703a5.png",
+      "phase": "departure walk",
+      "label": "approved Walk V6 F8",
+      "rootXLp": 109.125,
+      "bottomLp": 52,
+      "anchorLp": [
+        16,
+        40
+      ],
+      "durationMs": 100,
+      "actionFrame": null
+    }
+  ],
+  "coreRange": [
+    20,
+    33
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-context-workbench-2026-10-17-v10",
+  "status": "review-tool-awaiting-frank",
+  "purpose": "Retain every V9 review choice and add the complete contextual Prime side-right sit/stand V1 reviewer.",
+  "predecessor": {
+    "register": "art/drafts/keeper-prime-context-workbench-2026-10-17-v9/batch-register.json",
+    "sha256": "aca41a132c21efea7e0125255897047032547d3d2d79a9512477dcd03b18ab49",
+    "role": "immutable Workbench V9"
+  },
+  "addedCandidate": {
+    "register": "art/drafts/keeper-prime-sit-stand-side-2026-10-17-v1/batch-register.json",
+    "note": "hash recorded in the animation pack after both registers are written",
+    "url": "/keeper-review/keeper-prime-sit-stand-side-v1/"
+  },
+  "catalog": {
+    "file": "public/keeper-review/keeper-prime-context-workbench-v10/catalog.json",
+    "sha256": "32f561c42e5e9fe3f0418bc06fd95b22eac1317de7f3eebf2d1e7494db131a0d",
+    "choices": 11
+  },
+  "page": {
+    "file": "public/keeper-review/keeper-prime-context-workbench-v10/index.html",
+    "sha256": "64f6e427e7309c7949e0f920ae3d6b906b63e8242f834c0f5f10e5c4f483a126"
+  },
+  "app": {
+    "file": "public/keeper-review/keeper-prime-context-workbench-v10/app.js",
+    "sha256": "0dba69ca7235b19ce9aa15c78904a79469821c4e2ee37d1b423b62bd4dd9dda2"
+  },
+  "checks": {
+    "everyV9ChoiceRetained": true,
+    "sideSitStandAddedOnce": true,
+    "inventoryDuplicated": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false
+  },
+  "approvalBoundary": {
+    "reviewToolApproved": false,
+    "addedAnimationApproved": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false,
+    "promotionAllowed": false
+  },
+  "rollback": "Delete only art/drafts/keeper-prime-context-workbench-2026-10-17-v10 and public/keeper-review/keeper-prime-context-workbench-v10; Workbench V9 and every animation review remain unchanged."
+}
