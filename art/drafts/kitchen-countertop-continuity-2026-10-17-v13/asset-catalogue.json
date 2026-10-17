@@ -1,0 +1,485 @@
+{
+  "version": 13,
+  "status": "reversible-draft",
+  "recipe": {
+    "id": "kitchen-countertop-continuity-v13",
+    "status": "review-draft-authority",
+    "date": "2026-10-17",
+    "baseline": "kitchen-porthole-backdrop-cutout-v10",
+    "density": 4,
+    "bayWidthLp": 21,
+    "roomHeightLp": 56,
+    "units": {
+      "obj_kettle": {
+        "frontYPx": 48,
+        "intentionalOcclusionXPxInclusive": null
+      },
+      "obj_toaster": {
+        "frontYPx": 36,
+        "intentionalOcclusionXPxInclusive": null
+      },
+      "obj_mixer": {
+        "frontYPx": 52,
+        "intentionalOcclusionXPxInclusive": null
+      },
+      "obj_sink": {
+        "frontYPx": 48,
+        "intentionalOcclusionXPxInclusive": [
+          23,
+          61
+        ]
+      }
+    },
+    "slab": {
+      "xPxInclusive": [
+        2,
+        81
+      ],
+      "topOffsetPx": -6,
+      "bottomOffsetPx": 7,
+      "heightPx": 14,
+      "constructionAuthority": "kitchen-countertop-option-b-v1"
+    },
+    "testContract": [
+      "Every pixel in the entire 80 by 14-pixel slab band is opaque in every frame.",
+      "Every structural pixel outside the sink basin's declared central occlusion equals the canonical Option-B RGBA pixel exactly.",
+      "Kettle, toaster and mixer have no allowed countertop occlusion: their complete slab bands equal the canonical template exactly.",
+      "Kitchen V10 is a required failing control, proving the verifier detects colour and outline overwrites that an alpha-only test misses.",
+      "The test runs from npm test and covers standard, on and broken states frame by frame."
+    ],
+    "runtimeWiring": false
+  },
+  "states": {
+    "obj_kettle": {
+      "standard": {
+        "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/kettle_standard.png",
+        "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/kettle_standard.json",
+        "sha256": "f68835481fb77090c24df9dbfe1e0533963e674e45cfc60b4a0411078d4bfacd",
+        "meta": {
+          "w": 21,
+          "h": 31,
+          "frames": 1,
+          "fps": 0,
+          "density": 4,
+          "anchor": [
+            10.5,
+            31
+          ],
+          "projection": {
+            "id": "flat-cutaway-v1",
+            "runtimeDepthScaling": false
+          }
+        },
+        "urls": [
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_standard_frame1.png"
+        ]
+      },
+      "on": {
+        "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/kettle_on.png",
+        "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/kettle_on.json",
+        "sha256": "ec4deecf733c16bff7097fba08401c2f1c29b96ab40fe726d16f16716b0ad76a",
+        "meta": {
+          "w": 21,
+          "h": 31,
+          "frames": 4,
+          "fps": 8,
+          "density": 4,
+          "anchor": [
+            10.5,
+            31
+          ],
+          "projection": {
+            "id": "flat-cutaway-v1",
+            "runtimeDepthScaling": false
+          }
+        },
+        "urls": [
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_on_frame1.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_on_frame2.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_on_frame3.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_on_frame4.png"
+        ]
+      },
+      "broken": {
+        "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/kettle_broken.png",
+        "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/kettle_broken.json",
+        "sha256": "f3817f0edade3004e7c6a2d409c4ed256eff13f887c9d1fd45b1a70013c73f9e",
+        "meta": {
+          "w": 21,
+          "h": 31,
+          "frames": 4,
+          "fps": 8,
+          "density": 4,
+          "anchor": [
+            10.5,
+            31
+          ],
+          "projection": {
+            "id": "flat-cutaway-v1",
+            "runtimeDepthScaling": false
+          }
+        },
+        "urls": [
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_broken_frame1.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_broken_frame2.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_broken_frame3.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_broken_frame4.png"
+        ]
+      }
+    },
+    "obj_toaster": {
+      "standard": {
+        "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/toaster_standard.png",
+        "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/toaster_standard.json",
+        "sha256": "4613a0ae86133e35d6e67adfd0905579912963cc2fe3688aa9ecbe7b2c81ee4c",
+        "meta": {
+          "w": 21,
+          "h": 31,
+          "frames": 1,
+          "fps": 0,
+          "density": 4,
+          "anchor": [
+            10.5,
+            31
+          ],
+          "projection": {
+            "id": "flat-cutaway-v1",
+            "runtimeDepthScaling": false
+          }
+        },
+        "urls": [
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_standard_frame1.png"
+        ]
+      },
+      "on": {
+        "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/toaster_on.png",
+        "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/toaster_on.json",
+        "sha256": "66d2b7e8d631fbd422017a889aa7751a1a9bdb662c0a443c1646671fad32e706",
+        "meta": {
+          "w": 21,
+          "h": 31,
+          "frames": 4,
+          "fps": 8,
+          "density": 4,
+          "anchor": [
+            10.5,
+            31
+          ],
+          "projection": {
+            "id": "flat-cutaway-v1",
+            "runtimeDepthScaling": false
+          }
+        },
+        "urls": [
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_on_frame1.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_on_frame2.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_on_frame3.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_on_frame4.png"
+        ]
+      },
+      "broken": {
+        "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/toaster_broken.png",
+        "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/toaster_broken.json",
+        "sha256": "abbf2de7b53091d476b4bb7aebccafbec135e4be520bd390ce5dd219761a763d",
+        "meta": {
+          "w": 21,
+          "h": 31,
+          "frames": 4,
+          "fps": 8,
+          "density": 4,
+          "anchor": [
+            10.5,
+            31
+          ],
+          "projection": {
+            "id": "flat-cutaway-v1",
+            "runtimeDepthScaling": false
+          }
+        },
+        "urls": [
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_broken_frame1.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_broken_frame2.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_broken_frame3.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_broken_frame4.png"
+        ]
+      }
+    },
+    "obj_mixer": {
+      "standard": {
+        "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/mixer_standard.png",
+        "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/mixer_standard.json",
+        "sha256": "bd2bf516112110302cd432062047fabfe0ef88947721ad24221b51dbddb3dae3",
+        "meta": {
+          "w": 21,
+          "h": 31,
+          "frames": 1,
+          "fps": 0,
+          "density": 4,
+          "anchor": [
+            10.5,
+            31
+          ],
+          "projection": {
+            "id": "flat-cutaway-v1",
+            "runtimeDepthScaling": false
+          }
+        },
+        "urls": [
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_standard_frame1.png"
+        ]
+      },
+      "on": {
+        "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/mixer_on.png",
+        "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/mixer_on.json",
+        "sha256": "2778249b38df341388cdaf315babb7449d47003ccd8a31331fb030e4a876dfe5",
+        "meta": {
+          "w": 21,
+          "h": 31,
+          "frames": 4,
+          "fps": 8,
+          "density": 4,
+          "anchor": [
+            10.5,
+            31
+          ],
+          "projection": {
+            "id": "flat-cutaway-v1",
+            "runtimeDepthScaling": false
+          }
+        },
+        "urls": [
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_on_frame1.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_on_frame2.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_on_frame3.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_on_frame4.png"
+        ]
+      },
+      "broken": {
+        "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/mixer_broken.png",
+        "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/mixer_broken.json",
+        "sha256": "32c978f845156435668bae952481a7bfa183fef2728a8b7e9c9b4c975534ebf5",
+        "meta": {
+          "w": 21,
+          "h": 31,
+          "frames": 4,
+          "fps": 8,
+          "density": 4,
+          "anchor": [
+            10.5,
+            31
+          ],
+          "projection": {
+            "id": "flat-cutaway-v1",
+            "runtimeDepthScaling": false
+          }
+        },
+        "urls": [
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_broken_frame1.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_broken_frame2.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_broken_frame3.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_broken_frame4.png"
+        ]
+      }
+    },
+    "obj_sink": {
+      "standard": {
+        "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/sink_standard.png",
+        "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/sink_standard.json",
+        "sha256": "57210e2a0a022f844765ab786ed435bb8a600354b8ac8e216d6aa884c7705338",
+        "meta": {
+          "w": 21,
+          "h": 29,
+          "frames": 1,
+          "fps": 0,
+          "density": 4,
+          "anchor": [
+            10.5,
+            29
+          ],
+          "projection": {
+            "id": "flat-cutaway-v1",
+            "runtimeDepthScaling": false
+          }
+        },
+        "urls": [
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_standard_frame1.png"
+        ]
+      },
+      "on": {
+        "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/sink_on.png",
+        "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/sink_on.json",
+        "sha256": "55a0d4d57c81a9b463054822d97d27b69b696081a3e3eda349b8d00ce917adaa",
+        "meta": {
+          "w": 21,
+          "h": 29,
+          "frames": 4,
+          "fps": 8,
+          "density": 4,
+          "anchor": [
+            10.5,
+            29
+          ],
+          "projection": {
+            "id": "flat-cutaway-v1",
+            "runtimeDepthScaling": false
+          }
+        },
+        "urls": [
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_on_frame1.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_on_frame2.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_on_frame3.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_on_frame4.png"
+        ]
+      },
+      "broken": {
+        "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/sink_broken.png",
+        "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/sink_broken.json",
+        "sha256": "f9b83cb63963d00f5f75c58d8a09268de06c3b2bfd440cc36d1f1a6bbefc8ffc",
+        "meta": {
+          "w": 21,
+          "h": 29,
+          "frames": 4,
+          "fps": 8,
+          "density": 4,
+          "anchor": [
+            10.5,
+            29
+          ],
+          "projection": {
+            "id": "flat-cutaway-v1",
+            "runtimeDepthScaling": false
+          }
+        },
+        "urls": [
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_broken_frame1.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_broken_frame2.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_broken_frame3.png",
+          "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_broken_frame4.png"
+        ]
+      }
+    }
+  },
+  "templates": {
+    "obj_kettle": {
+      "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/kettle_option_b_structure.png",
+      "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/kettle_option_b_structure.json",
+      "sha256": "1d68d162917ffc438e8569fa2cb454c9c5a16c376432f345e19e8323c6127943",
+      "meta": {
+        "w": 21,
+        "h": 31,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          10.5,
+          31
+        ],
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "role": "canonical-test-template"
+      },
+      "url": "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_option_b_structure.png"
+    },
+    "obj_toaster": {
+      "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/toaster_option_b_structure.png",
+      "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/toaster_option_b_structure.json",
+      "sha256": "c934f1cadb134f16fe56b82c07892d4287b529801aab1e237f8b7a2bd99144e9",
+      "meta": {
+        "w": 21,
+        "h": 31,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          10.5,
+          31
+        ],
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "role": "canonical-test-template"
+      },
+      "url": "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_option_b_structure.png"
+    },
+    "obj_mixer": {
+      "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/mixer_option_b_structure.png",
+      "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/mixer_option_b_structure.json",
+      "sha256": "beb670c6be3af399f553cc73526a3ee7e01a8fc7107dbb1d7520ce0ad101867a",
+      "meta": {
+        "w": 21,
+        "h": 31,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          10.5,
+          31
+        ],
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "role": "canonical-test-template"
+      },
+      "url": "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_option_b_structure.png"
+    },
+    "obj_sink": {
+      "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/sink_option_b_structure.png",
+      "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/sink_option_b_structure.json",
+      "sha256": "fc8ea255a6d8e6ac9ce9f79ec62de4046fb3bcae3a8db4ecb6ff25b75a57e63f",
+      "meta": {
+        "w": 21,
+        "h": 31,
+        "frames": 1,
+        "fps": 0,
+        "density": 4,
+        "anchor": [
+          10.5,
+          31
+        ],
+        "projection": {
+          "id": "flat-cutaway-v1",
+          "runtimeDepthScaling": false
+        },
+        "role": "canonical-test-template"
+      },
+      "url": "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_option_b_structure.png"
+    }
+  },
+  "room": {
+    "png": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/room_kitchen_9bay_v13_continuous_countertops.png",
+    "json": "art/raw/kitchen-countertop-continuity-2026-10-17-v13/room_kitchen_9bay_v13_continuous_countertops.json",
+    "sha256": "2a098cace1727b9443b9d1d3cb52b52471f48a51948eb686923fc0fdbf6fb800",
+    "meta": {
+      "w": 193,
+      "h": 56,
+      "frames": 1,
+      "fps": 0,
+      "density": 4,
+      "anchor": [
+        96.5,
+        56
+      ],
+      "projection": {
+        "id": "flat-cutaway-v1",
+        "runtimeDepthScaling": false
+      },
+      "reviewComposite": true,
+      "countertopGate": "kitchen-countertop-continuity-v13",
+      "latestShelves": [
+        "fridge-plant-v10",
+        "kettle-books-v12"
+      ]
+    },
+    "url": "/keeper-review/kitchen-countertop-continuity-v13/assets/room_kitchen_9bay_v13_continuous_countertops.png"
+  },
+  "v10NegativeControlStandardMismatchCounts": {
+    "obj_kettle": 148,
+    "obj_toaster": 111,
+    "obj_mixer": 167,
+    "obj_sink": 248
+  }
+}

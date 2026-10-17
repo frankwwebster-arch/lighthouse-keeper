@@ -1,0 +1,79 @@
+{
+  "units": {
+    "kettle": {
+      "standard": [
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_standard_frame1.png"
+      ],
+      "on": [
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_on_frame1.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_on_frame2.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_on_frame3.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_on_frame4.png"
+      ],
+      "broken": [
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_broken_frame1.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_broken_frame2.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_broken_frame3.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/kettle_broken_frame4.png"
+      ]
+    },
+    "toaster": {
+      "standard": [
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_standard_frame1.png"
+      ],
+      "on": [
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_on_frame1.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_on_frame2.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_on_frame3.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_on_frame4.png"
+      ],
+      "broken": [
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_broken_frame1.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_broken_frame2.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_broken_frame3.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/toaster_broken_frame4.png"
+      ]
+    },
+    "mixer": {
+      "standard": [
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_standard_frame1.png"
+      ],
+      "on": [
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_on_frame1.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_on_frame2.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_on_frame3.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_on_frame4.png"
+      ],
+      "broken": [
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_broken_frame1.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_broken_frame2.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_broken_frame3.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/mixer_broken_frame4.png"
+      ]
+    },
+    "sink": {
+      "standard": [
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_standard_frame1.png"
+      ],
+      "on": [
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_on_frame1.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_on_frame2.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_on_frame3.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_on_frame4.png"
+      ],
+      "broken": [
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_broken_frame1.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_broken_frame2.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_broken_frame3.png",
+        "/keeper-review/kitchen-countertop-continuity-v13/assets/sink_broken_frame4.png"
+      ]
+    }
+  },
+  "v10Failures": {
+    "kettle": 148,
+    "toaster": 111,
+    "mixer": 167,
+    "sink": 248
+  },
+  "room": "/keeper-review/kitchen-countertop-continuity-v13/assets/room_kitchen_9bay_v13_continuous_countertops.png"
+}

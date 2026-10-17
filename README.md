@@ -145,8 +145,9 @@ V9 is rejected visual provenance: its flat fridge, poor shelf and wing-only
 countertop repair are not a baseline. The replacement family and porthole
 construction correction is `/keeper-review/kitchen-porthole-backdrop-cutout-v10/`.
 V10 uses Frank's attached approved family as its visual authority, restores the
-detailed white fridge and a fitted polished shelf, and draws every compatible
-countertop as one uninterrupted Option-B slab across every state. It rejects the former
+detailed white fridge and a fitted polished shelf, but its intended complete-slab
+repair is now rejected: the alpha-only assertion missed visible colour and outline
+overwrites in every compatible countertop. It rejects the former
 kitchen-owned day/sunset/night/rain illustrations: it cuts a genuine 14-lp
 alpha opening through the room wall and places only the separate 19-lp brass
 ring above it. The global lighthouse backdrop is therefore visible directly
@@ -164,6 +165,12 @@ V11 is rejected for its smaller/thinner shelf. V12 keeps the V10 plant shelf's
 plank and brackets byte-identical and replaces only its contents with books and
 jar bookends. Review: `/keeper-review/kitchen-kettle-recipe-shelf-v12/`; recipe:
 [`docs/KITCHEN_KETTLE_RECIPE_SHELF_V12_RECIPE_2026-10-17.md`](docs/KITCHEN_KETTLE_RECIPE_SHELF_V12_RECIPE_2026-10-17.md).
+Kitchen V13 corrects the V10 countertop break-up and makes the check binding.
+It compares the full 80 × 14-pixel Option-B slab's exact RGBA structure in every
+standard, on and broken frame, retaining V10 as a required failing control.
+Review: `/keeper-review/kitchen-countertop-continuity-v13/`; recipe:
+[`docs/KITCHEN_COUNTERTOP_CONTINUITY_V13_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_CONTINUITY_V13_RECIPE_2026-10-17.md).
+All kitchen versions remain review drafts: none is approved, promoted or wired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

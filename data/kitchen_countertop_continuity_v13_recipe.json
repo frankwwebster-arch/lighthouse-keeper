@@ -1,0 +1,30 @@
+{
+  "id": "kitchen-countertop-continuity-v13",
+  "status": "review-draft-authority",
+  "date": "2026-10-17",
+  "baseline": "kitchen-porthole-backdrop-cutout-v10",
+  "density": 4,
+  "bayWidthLp": 21,
+  "roomHeightLp": 56,
+  "units": {
+    "obj_kettle": {"frontYPx": 48, "intentionalOcclusionXPxInclusive": null},
+    "obj_toaster": {"frontYPx": 36, "intentionalOcclusionXPxInclusive": null},
+    "obj_mixer": {"frontYPx": 52, "intentionalOcclusionXPxInclusive": null},
+    "obj_sink": {"frontYPx": 48, "intentionalOcclusionXPxInclusive": [23, 61]}
+  },
+  "slab": {
+    "xPxInclusive": [2, 81],
+    "topOffsetPx": -6,
+    "bottomOffsetPx": 7,
+    "heightPx": 14,
+    "constructionAuthority": "kitchen-countertop-option-b-v1"
+  },
+  "testContract": [
+    "Every pixel in the entire 80 by 14-pixel slab band is opaque in every frame.",
+    "Every structural pixel outside the sink basin's declared central occlusion equals the canonical Option-B RGBA pixel exactly.",
+    "Kettle, toaster and mixer have no allowed countertop occlusion: their complete slab bands equal the canonical template exactly.",
+    "Kitchen V10 is a required failing control, proving the verifier detects colour and outline overwrites that an alpha-only test misses.",
+    "The test runs from npm test and covers standard, on and broken states frame by frame."
+  ],
+  "runtimeWiring": false
+}
