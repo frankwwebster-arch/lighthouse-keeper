@@ -1,0 +1,21 @@
+{
+  "schema": "lighthouse-keeper/prime-seat-geometry@1",
+  "status": "review-candidate-not-runtime",
+  "authority": "art/drafts/keeper-prime-seated-six-view-2026-10-16-v1/drafts/frames/keeper_prime_neutral_sitting-side-right_f01.png",
+  "view": "side-right-90",
+  "cellPixels": [256, 320],
+  "logicalCell": [32, 40],
+  "density": 8,
+  "floorLp": 40,
+  "seatTopLp": 29,
+  "seatHeightAboveFloorLp": 11,
+  "spineBackContactLp": [7, 29],
+  "backOfKneeLp": [18, 29],
+  "sourcePixelCoordinates": {
+    "spineBackContact": [56, 232],
+    "backOfKnee": [144, 232]
+  },
+  "maximumUsableSeatDepthLp": 11,
+  "rule": "Seat height means the top support surface. In side-right view the usable seat begins at the spine/back contact and must end at or before the back-of-knee line; it may not project beneath or beyond the knee.",
+  "scope": "Review and furniture-authoring evidence only. This does not alter the immutable keeper_asset_contract.json, runtime placement or production art before approval."
+}

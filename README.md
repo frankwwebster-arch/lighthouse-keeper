@@ -4,7 +4,7 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 
 The active Keeper-art gate is the reversible Prime Keeper whole-bank
 normalisation programme. Its new selector is
-`/keeper-review/keeper-prime-context-workbench-v10/`: every selectable item is
+`/keeper-review/keeper-prime-context-workbench-v11/`: every selectable item is
 shown at 8×, proposed 4× game presentation and literal 1×, with frame stepping,
 speed, looping, exact-Prime and adjacent-frame ghosts, and switches to include
 or omit its preceding and finishing transitions. The active version contains
@@ -54,16 +54,18 @@ flights, ribbed dark barrel and long silver point—is used identically in the
 air and embedded. Every final flight frame terminates at the board face at the
 same coordinates as the following embedded state. The acute board is now a
 recognisable segmented traditional board with double/treble rings and bull.
-Workbench V10 exposes V8, retains the core inspector and earlier diagnostics,
-and adds `/keeper-review/keeper-prime-sit-stand-side-v1/`: a complete approved
+Workbench V11 exposes V8, retains the core inspector and earlier diagnostics,
+and links `/keeper-review/keeper-prime-sit-stand-side-v2/`: a complete approved
 walk/stop context around the first new Prime six-pose side-right sit, 600 ms
 seated beat and exact reverse stand. Its action endpoints are byte-identical to
-the standing and seated Prime authorities; four new smooth intermediates are
-registered to one floor, one root and the 11-lp chair datum. It remains
-unapproved review art.
+the standing and seated Prime authorities; four smooth intermediates are
+registered to one floor and one root. V2 preserves every V1 Keeper frame,
+timing and root, but corrects the example chair: its top surface is 11 lp above
+the floor and its 11-lp seat depth ends exactly at the measured back-of-knee
+line. It remains unapproved review art.
 Frank approved exact Darts Context V8 on 17 October 2026. Its immutable decision
 is `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
-Workbench V10 remains review infrastructure; nothing entered Final, runtime or
+Workbench V11 remains review infrastructure; nothing entered Final, runtime or
 production.
 
 The redraw method is now binding across the complete first-draft animation
@@ -714,7 +716,7 @@ must remain paused to avoid duplicate alerts.
 - `data/keeper_pose_registry.json`, `data/keeper_endpoint_audit.json` and `data/keeper_endpoint_exceptions.json` — shared pose vocabulary, current real-pixel endpoint evidence, and the frozen legacy migration boundary.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
 - `public/keeper-review/index.html` — canonical online-only reviewer deployed at `/keeper-review/`; `docs/keeper-scale-audit/review.html` is the generated audit artifact and must be byte-identical, but when opened outside `/keeper-review` it sends the viewer to the live platform instead of presenting a second workspace. Its gallery is a compact visual scan (name, review state, last local save/redraft, playback and frame stepping); `Open close review` opens any chosen card immediately. `Find animation` searches names and overrides all other filters; otherwise independently filter by review state, pose and active/reserve use list. Close review lets Frank override the inferred pose tag, relegate a likely duplicate to the reversible reserve list, expand/compress retained draft comparisons, and select canonical or every exact-name draft as an exportable preferred-promotion candidate—without mutating production. **Hand back to Codex** always asks for confirmation, saves any unsaved cards to that browser if confirmed, then submits the full batch to the durable server-side queue. The server records a semantic exact-name delta (ignoring save timestamps), comparing the first server hand-back to the shipped review baseline and later ones to the prior hand-back; the receipt reports only the changed animation count for later Codex work. When Codex claims a batch, the online reviewer becomes read-only until the delivery is completed, while retaining playback and inspection; JSON backup/import is collapsed as an exceptional browser-recovery option.
-- `review-archive/`, `docs/REVIEW_ARCHIVE.md` and `scripts/archive_keeper_review_media.mjs` — content-addressed storage for review-only images and GIFs. The current verified archive has 3,352 review references across 108 set manifests resolving to 1,355 unique SHA-256 objects hosted outside Vercel deployments. Immutable page bytes and old URLs remain preserved; short-lived redirects keep the media host replaceable, and new animations preload every moving frame before playback. The current `public/` payload is 49.98 MiB instead of roughly 115 MiB. Workbench V10 reuses V9's unchanged 308-row inventory rather than shipping another half-megabyte copy.
+- `review-archive/`, `docs/REVIEW_ARCHIVE.md` and `scripts/archive_keeper_review_media.mjs` — content-addressed storage for review-only images and GIFs. The current verified archive has 3,391 review references across 110 set manifests resolving to 1,373 unique SHA-256 objects hosted outside Vercel deployments. Immutable page bytes and old URLs remain preserved; short-lived redirects keep the media host replaceable, and new animations preload every moving frame before playback. The current `public/` payload remains just under 50 MiB instead of roughly 115 MiB. Workbench V11 reuses V10's immutable shell, app, catalogue and 308-row inventory through a small one-entry browser delta instead of duplicating them.
 - `data/keeper_side_on_beard_occlusion_audit.json`, `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/`, and `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` — completed draft-only v2 beard/hand audit and preserved rejected v1 history. The active reviewer shows v2 beside canonical and the separate Frank-selected darts draft; the verifier prevents implicit promotion.
 - `data/keeper_review_drafts.json` and `art/drafts/` — SHA-256-pinned, exact-name review comparisons: the draft-only darts candidate, seven active V11 artist-smock candidates, the accepted complete-route `keeper_snooker` candidate, the 41 exact-name 11 October amendment candidates and the separate party-hat frame-2 v2 variant, plus the ten selected canonical promotions and their reversible previous versions. Hash-addressed reviewer copies prevent same-name historical and current variants from overwriting one another. `scripts/verify_keeper_review_drafts.ts` checks every registered source, canonical/current comparison, sidecar, gutter, publication and reviewer attachment.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.

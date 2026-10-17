@@ -15,7 +15,7 @@ The deterministic inventory is
 `data/keeper-prime-animation-bank-audit-v1.json` (308 rows; 159 legacy endpoint
 risks; 28 explicitly rejected/excluded; zero strip/sidecar geometry mismatches).
 The active selectable contextual reviewer is
-`/keeper-review/keeper-prime-context-workbench-v10/`; it includes only eleven
+`/keeper-review/keeper-prime-context-workbench-v11/`; it includes only eleven
 status-labelled routes whose present state can be defended and links the full
 inventory. V3 retains V2's fix for V1's deployed relative-URL/trailing-slash
 loader failure and localised native-route images, and adds the inspection-only
@@ -61,8 +61,8 @@ placeholder rim with a segmented acute-angle board. The final airborne and
 first embedded renderings are byte-identical. Frank approved exact Context V8
 on 17 October 2026; preserve the hash-pinned decision at
 `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
-Workbench V10 retains every V9 choice and adds the dedicated Prime side-right
-sit/stand V1 context. No Final/runtime/production
+Workbench V11 retains every V10 choice and replaces only the active sitting
+link with the chair-corrected Prime side-right sit/stand V2 context. No Final/runtime/production
 promotion has occurred.
 
 Future pub/games-room layout rule: mount the approved dartboard on the
@@ -73,10 +73,10 @@ or cupboard from this note alone; Frank explicitly deferred that work.
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
-## Prime side-right sit/stand V1 (17 Oct 2026)
+## Prime side-right sit/stand V2 (17 Oct 2026)
 
 The active sitting-motion gate is
-`/keeper-review/keeper-prime-sit-stand-side-v1/`. It shows one 45-frame route:
+`/keeper-review/keeper-prime-sit-stand-side-v2/`. It shows one 45-frame route:
 approved Walk V6 → approved deceleration → new Prime stand-to-sit → a 600 ms
 seated beat → the exact byte-reversed stand → approved acceleration → approved
 walk away. The six action cells use the exact approved side-right standing
@@ -86,8 +86,14 @@ are choreography-only evidence. All cells are 256 × 320 at density 8 with a
 common `[16,40]` anchor, y=315 opaque floor limit, `[16,29]` seat point, 11-lp
 seat height and transparent gutters. Generated silhouettes are registered to
 measured height/width progressions to prevent an abrupt Prime-to-action width
-jump. The candidate and Workbench V10 are review infrastructure only; they are
-not approved, Final, runtime or production art.
+jump. Frank judged the V1 animation good but rejected its example chair depth.
+V2 therefore preserves every V1 Keeper frame, route root and duration while
+replacing only the behind-Keeper proxy. The chair's top surface is y=29 / 11 lp
+above floor; in side-right cell coordinates its usable depth is exactly 11 lp,
+from the spine/back contact `[7,29]` to the back-of-knee line `[18,29]` (source
+pixels `[56,232]` to `[144,232]`). It cannot project farther forward. The
+candidate and Workbench V11 are review infrastructure only; they are not Final,
+runtime or production art.
 
 ## Seated Prime foundation V2 (17 Oct 2026)
 

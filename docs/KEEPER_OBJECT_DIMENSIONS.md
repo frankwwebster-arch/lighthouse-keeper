@@ -24,6 +24,15 @@ The main furniture datums are:
 | Machete plant-cut contact | 12 px above floor; 18 px right of keeper anchor |
 | Guitar rack grip | 31 px above floor; keeper hand `(45,25)` on the 64 × 56 pickup canvas; prop transfers on frame 6 |
 
+The current V2 side-sitting review candidate records a stricter Prime-derived
+chair envelope in `data/keeper_prime_seat_geometry_v1.json`: **11 px is the top
+surface of the seat**, not its centre or underside. The measured side-right
+envelope is also 11 px deep, from the spine/back contact at cell `[7,29]` to
+the back-of-knee line at `[18,29]` (source pixels `[56,232]` to `[144,232]` at
+density 8). A chair may be shallower, but it must not project beneath or beyond
+that knee line. This new depth rule remains review-only until Frank approves
+V2; it does not rewrite the immutable runtime contract.
+
 These are baseline contact dimensions, not object-fitting suggestions. Object
 silhouettes and tiers may change, but their keeper-facing contact points follow
 the reviewed pose. The keeper is never automatically resized to make an object

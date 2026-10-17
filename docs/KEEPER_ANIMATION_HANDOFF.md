@@ -15,9 +15,9 @@
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
 
-## Active side-right sit/stand candidate — 17 October 2026
+## Active side-right sit/stand candidate V2 — 17 October 2026
 
-`/keeper-review/keeper-prime-sit-stand-side-v1/` is the first redrafted
+`/keeper-review/keeper-prime-sit-stand-side-v2/` is the current redrafted
 sitting transition. Its complete 45-frame review route is approved Walk V6 →
 approved walk-to-stop → six-pose stand-to-sit → 600 ms seated beat → exact
 byte-reversed sit-to-stand → approved stop-to-walk → approved Walk V6. The
@@ -34,11 +34,20 @@ y=315, seat-registered at `[16,29]` / 11 lp, and checked for a minimum
 transparent gutter. The generated frames use a deterministic visible
 height/width progression so the model does not widen suddenly after F1.
 
+Frank judged the V1 motion good but rejected its over-deep example chair. V2
+keeps all six Keeper cells, both action orders, timings, roots and the complete
+route byte-for-byte/motion-for-motion. Only the chair proxy and furniture
+contract change: the seat top is world y=41, exactly 11 lp above the y=52
+floor, and its 11-lp usable depth runs from world x=77 at the spine/back
+contact to world x=88 at the back-of-knee line. In the seated 32 × 40 cell
+those landmarks are `[7,29]` and `[18,29]` (source `[56,232]` and
+`[144,232]`). The seat cannot extend farther forward.
+
 The versioned pack is
-`art/drafts/keeper-prime-sit-stand-side-2026-10-17-v1/`; Workbench V10 adds it
-without changing any V9 review set. It is awaiting Frank. Nothing is approved,
-Final, runtime or production, and the next directions must not be inferred
-until this side-right motion is reviewed.
+`art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/`; Workbench V11 replaces
+only V10's active sitting link and preserves V1 as immutable history. V2 is
+awaiting Frank. Nothing is Final, runtime or production, and the other sitting
+directions must not be inferred from it.
 
 ## Darts Prime complete redraw and contextual route — 17 October 2026
 

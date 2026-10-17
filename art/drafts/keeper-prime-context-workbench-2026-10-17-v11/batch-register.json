@@ -1,0 +1,56 @@
+{
+  "schema": "lighthouse-keeper/review-batch@1",
+  "batchId": "keeper-prime-context-workbench-2026-10-17-v11",
+  "status": "review-tool-awaiting-frank",
+  "purpose": "Retain every V10 choice while replacing its active sitting candidate link with chair-corrected V2.",
+  "predecessor": {
+    "register": "art/drafts/keeper-prime-context-workbench-2026-10-17-v10/batch-register.json",
+    "sha256": "eff4c89616d238fa66f17c57b31ffb8cd38b94a7dbff893a1bf4244e7506942b",
+    "role": "immutable Workbench V10"
+  },
+  "replacementCandidate": {
+    "register": "art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/batch-register.json",
+    "note": "hash recorded in the animation pack after both registers are written",
+    "url": "/keeper-review/keeper-prime-sit-stand-side-v2/"
+  },
+  "catalog": {
+    "file": "art/drafts/keeper-prime-context-workbench-2026-10-17-v11/catalog.json",
+    "sha256": "54e357b162b61be9de640fda9da49a886ec3696f04ded958ed06215c68468e93",
+    "choices": 11,
+    "runtimeSource": "/keeper-review/keeper-prime-context-workbench-v10/catalog.json",
+    "transform": "browser-local replacement of only prime-side-sit-stand-v1 with V2"
+  },
+  "page": {
+    "file": "public/keeper-review/keeper-prime-context-workbench-v11/index.html",
+    "sha256": "184995f31e41937a2efd1d7fc5961cbe4c6dc13a8cb9d3034e7cb5b86d35c0d8"
+  },
+  "loader": {
+    "file": "public/keeper-review/keeper-prime-context-workbench-v11/loader.js",
+    "sha256": "a4583e0cce441c9af34dbd69676b1fca6c564d20da3ff86d6384185ed16d32e6",
+    "role": "loads immutable V10 shell then installs the one-entry V2 catalogue delta"
+  },
+  "app": {
+    "file": "public/keeper-review/keeper-prime-context-workbench-v10/app.js",
+    "sha256": "0dba69ca7235b19ce9aa15c78904a79469821c4e2ee37d1b423b62bd4dd9dda2",
+    "role": "immutable V10 app reused without public duplication"
+  },
+  "checks": {
+    "everyV10NonSitChoiceRetained": true,
+    "sideSitStandV2AddedOnce": true,
+    "v1RemovedFromActiveSelector": true,
+    "choiceCountUnchanged": true,
+    "inventoryDuplicated": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false
+  },
+  "approvalBoundary": {
+    "reviewToolApproved": false,
+    "addedAnimationApproved": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false,
+    "promotionAllowed": false
+  },
+  "rollback": "Delete only art/drafts/keeper-prime-context-workbench-2026-10-17-v11 and public/keeper-review/keeper-prime-context-workbench-v11; Workbench V10 and both immutable sitting reviews remain unchanged."
+}

@@ -1,0 +1,100 @@
+#!/usr/bin/env node
+
+import assert from 'node:assert/strict'
+import crypto from 'node:crypto'
+import fs from 'node:fs'
+import path from 'node:path'
+import { PNG } from 'pngjs'
+
+const root = path.resolve(import.meta.dirname, '..')
+const pack = path.join(root, 'art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2')
+const v1Pack = path.join(root, 'art/drafts/keeper-prime-sit-stand-side-2026-10-17-v1')
+const register = JSON.parse(fs.readFileSync(path.join(pack, 'batch-register.json'), 'utf8'))
+const route = JSON.parse(fs.readFileSync(path.join(pack, 'keeper-prime-sit-stand-side-v2.json'), 'utf8'))
+const v1Register = JSON.parse(fs.readFileSync(path.join(v1Pack, 'batch-register.json'), 'utf8'))
+const v1Route = JSON.parse(fs.readFileSync(path.join(v1Pack, 'keeper-prime-sit-stand-side-v1.json'), 'utf8'))
+const page = fs.readFileSync(path.join(root, 'public/keeper-review/keeper-prime-sit-stand-side-v2/index.html'), 'utf8')
+const reviewLoader = fs.readFileSync(path.join(root, 'public/keeper-review/keeper-prime-sit-stand-side-v2/loader.js'), 'utf8')
+const publicRoute = JSON.parse(fs.readFileSync(path.join(root, 'public/keeper-review/keeper-prime-sit-stand-side-v2/route.json'), 'utf8'))
+const workbench = JSON.parse(fs.readFileSync(path.join(root, 'art/drafts/keeper-prime-context-workbench-2026-10-17-v11/catalog.json'), 'utf8'))
+const workbenchRegister = JSON.parse(fs.readFileSync(path.join(root, 'art/drafts/keeper-prime-context-workbench-2026-10-17-v11/batch-register.json'), 'utf8'))
+const workbenchPage = fs.readFileSync(path.join(root, 'public/keeper-review/keeper-prime-context-workbench-v11/index.html'), 'utf8')
+const workbenchLoader = fs.readFileSync(path.join(root, 'public/keeper-review/keeper-prime-context-workbench-v11/loader.js'), 'utf8')
+const seatGeometry = JSON.parse(fs.readFileSync(path.join(root, 'data/keeper_prime_seat_geometry_v1.json'), 'utf8'))
+const sha = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')
+const motionSignature = (routeData) => routeData.route.map(({ src: _src, ...frame }) => frame)
+
+assert.equal(register.status, 'draft-awaiting-frank')
+assert.equal(register.approvalBoundary.promotionAllowed, false)
+assert.equal(register.candidate.frames.length, 6)
+assert.equal(route.route.length, 45)
+assert.equal(route.room.chair.seatHeightAboveFloorLp, 11)
+assert.equal(route.room.chair.seatTopLp, route.room.floorLp - 11)
+assert.deepEqual(route.room.chair.seatedFrameLandmarks.spineBackContactLp, [7, 29])
+assert.deepEqual(route.room.chair.seatedFrameLandmarks.backOfKneeLp, [18, 29])
+assert.deepEqual(route.room.chair.seatedFrameLandmarks.sourcePixelCoordinates.spineBackContact, [56, 232])
+assert.deepEqual(route.room.chair.seatedFrameLandmarks.sourcePixelCoordinates.backOfKnee, [144, 232])
+assert.equal(route.room.chair.seatDepthLp, 11)
+assert.equal(route.room.chair.backOfKneeWorldXLp - route.room.chair.spineWorldXLp, 11)
+assert.equal(route.room.chair.spineWorldXLp + route.room.chair.seatDepthLp, route.room.chair.backOfKneeWorldXLp)
+assert.equal(seatGeometry.status, 'review-candidate-not-runtime')
+assert.equal(seatGeometry.seatHeightAboveFloorLp, route.room.chair.seatHeightAboveFloorLp)
+assert.equal(seatGeometry.maximumUsableSeatDepthLp, route.room.chair.seatDepthLp)
+assert.deepEqual(seatGeometry.spineBackContactLp, route.room.chair.seatedFrameLandmarks.spineBackContactLp)
+assert.deepEqual(seatGeometry.backOfKneeLp, route.room.chair.seatedFrameLandmarks.backOfKneeLp)
+assert.deepEqual(motionSignature(route), motionSignature(v1Route))
+assert.equal(publicRoute.schema, 'lighthouse-keeper/sit-stand-context-compact@2')
+assert.ok(publicRoute.routeAssets.every((src) => src.startsWith('/keeper-review/keeper-prime-sit-stand-side-v2/assets/')))
+const expandedPublicRoute = publicRoute.route.map(([asset, phase, label, rootXLp, bottomLp, durationMs, actionFrame]) => ({ src: publicRoute.routeAssets[asset], phase, label, rootXLp, bottomLp, anchorLp: [16, 40], durationMs, actionFrame }))
+assert.deepEqual(expandedPublicRoute, route.route)
+assert.ok(page.includes('loader.js'))
+assert.ok(reviewLoader.includes('/keeper-review/keeper-prime-sit-stand-side-v1/'))
+assert.ok(reviewLoader.includes('/keeper-review/keeper-prime-sit-stand-side-v2/'))
+assert.ok(reviewLoader.includes('if(d.routeAssets)d.route=d.route.map'))
+assert.ok(reviewLoader.includes('11-lp depth runs from the spine contact to the back-of-knee line'))
+assert.ok(reviewLoader.includes("c.style.left=data.room.chair.spineWorldXLp*z+'px'"))
+assert.ok(reviewLoader.includes("width:'+(data.room.chair.seatDepthLp*z)+'px;height:'+(2*z)+'px;border-radius:"))
+assert.ok(workbench.sequences.some((entry) => entry.id === 'prime-side-sit-stand-v2' && entry.url === '/keeper-review/keeper-prime-sit-stand-side-v2/'))
+assert.ok(!workbench.sequences.some((entry) => entry.id === 'prime-side-sit-stand-v1'))
+assert.equal(workbenchRegister.catalog.choices, 11)
+assert.equal(workbenchRegister.checks.everyV10NonSitChoiceRetained, true)
+assert.equal(workbenchRegister.checks.sideSitStandV2AddedOnce, true)
+assert.equal(workbenchRegister.checks.v1RemovedFromActiveSelector, true)
+assert.equal(workbenchRegister.checks.choiceCountUnchanged, true)
+assert.equal(workbenchRegister.checks.inventoryDuplicated, false)
+assert.ok(workbenchPage.includes('loader.js'))
+assert.ok(workbenchLoader.includes('/keeper-review/keeper-prime-context-workbench-v10/app.js'))
+assert.ok(workbenchLoader.includes('prime-side-sit-stand-v1'))
+assert.ok(workbenchLoader.includes('keeper-prime-sit-stand-side-v2'))
+assert.ok(workbenchLoader.includes('/keeper-review/keeper-prime-context-workbench-v7/inventory.json'))
+assert.equal(fs.existsSync(path.join(root, 'public/keeper-review/keeper-prime-context-workbench-v11/catalog.json')), false)
+assert.equal(fs.existsSync(path.join(root, 'public/keeper-review/keeper-prime-context-workbench-v11/app.js')), false)
+
+for (const [index, frame] of register.candidate.frames.entries()) {
+  const file = path.join(root, frame.file)
+  assert.equal(sha(file), frame.sha256)
+  assert.equal(frame.sha256, v1Register.candidate.frames[index].sha256, `frame ${index + 1} differs from V1`)
+  const png = PNG.sync.read(fs.readFileSync(file))
+  assert.deepEqual([png.width, png.height], [256, 320])
+  let edgeAlpha = 0
+  for (let x = 0; x < png.width; x++) {
+    edgeAlpha += Number(png.data[x * 4 + 3] !== 0)
+    edgeAlpha += Number(png.data[((png.height - 1) * png.width + x) * 4 + 3] !== 0)
+  }
+  for (let y = 1; y < png.height - 1; y++) {
+    edgeAlpha += Number(png.data[(y * png.width) * 4 + 3] !== 0)
+    edgeAlpha += Number(png.data[(y * png.width + png.width - 1) * 4 + 3] !== 0)
+  }
+  assert.equal(edgeAlpha, 0, `frame ${frame.frame} touches a cell edge`)
+  assert.ok(frame.transparentGutterPx >= 4)
+}
+
+assert.equal(register.candidate.frames[0].sha256, register.authorities.standing.sha256)
+assert.equal(register.candidate.frames[5].sha256, register.authorities.seated.sha256)
+const forwardHashes = register.candidate.frames.map((frame) => frame.sha256)
+const reverseSidecar = JSON.parse(fs.readFileSync(path.join(root, register.candidate.reverseStrip.file.replace(/\.png$/, '.json')), 'utf8'))
+assert.deepEqual(reverseSidecar.frameSha256, [...forwardHashes].reverse())
+assert.ok(route.route.filter((frame) => frame.phase.includes('sit') || frame.phase === 'seated hold').every((frame) => frame.rootXLp === route.room.chair.rootXLp))
+assert.ok(Object.values(register.checks).every(Boolean))
+
+console.log('Keeper Prime sit/stand side V2 verified: V1 motion unchanged; seat top 11 lp above floor and 11-lp seat depth ends exactly at the back-of-knee line.')
