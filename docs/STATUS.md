@@ -70,14 +70,15 @@ choreography remain independently paced so enjoyable actions can be savoured.
 No Prime artwork has entered Workbench Final or production, and the runtime
 sprite manifest remains unchanged.
 
-The active contextual reviewer is now Prime Context Workbench V14. It retains
+The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
-link with V5. The animation remains the exact V1/V2 six-pose motion inside its
-complete approved walk/stop/action/return context. V5 corrects only the example
-chair registration after live review disproved V2's edge semantics: the
-backrest front meets the visible back/spine contact, the front rim ends 0.5 px behind
-the rear shin plane, and the seat top remains 11 px above the floor. V1–V4 are
-immutable history. V5 remains review-only. No runtime, Final or production art
+link with V6. The animation remains the exact V1/V2 six-pose motion inside its
+complete approved walk/stop/action/return context. V6 retains V5's corrected
+horizontal chair registration: the backrest front meets the visible back/spine
+contact and the front rim ends 0.5 px behind the rear shin plane. It replaces
+the rejected 11-px plane—which crossed the pelvis—with a measured support top
+at source y=258 / world y=44.25, 7.75 px above the floor. V1–V5 are immutable
+history. V6 remains review-only. No runtime, Final or production art
 changed.
 
 1. The evidence-based beard/hand audit classifies every manifest frame and pins `keeper_clear_snow` as the canonical fuller stepped beard. A landmark-aligned beard-mask comparison passes with a symmetric silhouette difference of at most one logical pixel. It remains fail-closed for unavailable evidence: 163 side-on standing/sitting sheets are inventoried, eight zero-difference reference self-comparisons match, and 994 different-pose frames—including `keeper_darts` 3–6—are non-comparable because no approved beard masks, facial landmarks or hand-depth/component evidence exists. Frank reviewed Darts 3–6 visually on 11 October and accepted the beards with no amendment required; no beard draft is active or promotable. Next, use GPT-5.6 Sol to establish comparison inputs for any future claim, then run the later frame-isolation and released-prop audits.

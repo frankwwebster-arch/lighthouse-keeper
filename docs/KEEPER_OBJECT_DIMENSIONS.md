@@ -11,8 +11,8 @@ The main furniture datums are:
 
 | Object | Authoritative datum |
 | --- | ---: |
-| Chair / sofa / toilet seat | 11 px above floor |
-| Basic armchair / rocking chair / Lazyboy-style recliner | 11 px above floor for every tier; rocking/recline occurs on the furniture layer |
+| Chair / sofa / toilet seat | Legacy runtime datum: 11 px above floor; do not treat it as approved Prime support geometry while V6 is under review |
+| Basic armchair / rocking chair / Lazyboy-style recliner | Review candidate: measured side-right Prime support surface 7.75 px above floor; other orientations must be measured from their approved seated underside rather than inheriting the rejected 11-px row |
 | Bed mattress | 9 px above floor |
 | Dining, writing and kitchen surface | 19 px above floor |
 | Workbench | 17 px above floor |
@@ -24,18 +24,21 @@ The main furniture datums are:
 | Machete plant-cut contact | 12 px above floor; 18 px right of keeper anchor |
 | Guitar rack grip | 31 px above floor; keeper hand `(45,25)` on the 64 × 56 pickup canvas; prop transfers on frame 6 |
 
-The current V5 side-sitting review candidate records the corrected Prime-derived
-chair registration in `data/keeper_prime_seat_geometry_v2.json`: **11 px is the
-top surface of the seat**, not its centre or underside. Live review disproved
-V1's 11-pixel placement: the `[7,29]` back/spine contact had been used as the
-rear edge of the backrest rather than its front face, and `[18,29]` did not keep
-the seat rim behind the visible shins. At the fixed V5 action root, the
+The current V6 side-sitting review candidate records the corrected Prime-derived
+chair registration in `data/keeper_prime_seat_geometry_v3.json`. Live review
+proved that the former 11-pixel row passed through the pelvis and therefore was
+not the top support surface. The final side-right silhouette ends at source
+y=257, so the chair top begins on the first transparent row y=258: world
+y=44.25, or **7.75 px above the floor**. The earlier review also proved that
+the `[7,29]` back/spine contact had been used as the rear edge of the backrest
+rather than its front face, and `[18,29]` did not keep the seat rim behind the
+visible shins. At the fixed V6 action root, the
 backrest front is world x=76.625 and exactly meets the visible back/spine
 contact plane; the front rim is x=83.75; and the measured rear shin plane is
 x=84.25, leaving 0.5 px clearance. The review proxy therefore has an 8.625-px
 total side depth and 7.125 px usable depth ahead of the backrest front. These
-horizontal values remain review-only until Frank approves V5; they do not
-rewrite the immutable runtime contract. V1 remains rejected measurement
+values remain review-only until Frank approves V6; they do not rewrite the
+immutable runtime contract. V1–V5 remain rejected/superseded measurement
 provenance rather than a furniture-authoring authority.
 
 These are baseline contact dimensions, not object-fitting suggestions. Object

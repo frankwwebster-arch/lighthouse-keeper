@@ -7,6 +7,13 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const hook = pathToFileURL(path.join(root, 'scripts/review_archive_fs_hook.mjs')).href
 const nodeOptions = [process.env.NODE_OPTIONS, `--import=${hook}`].filter(Boolean).join(' ')
+const sitStandV6 = spawnSync('node', ['scripts/verify_keeper_prime_sit_stand_side_v6.mjs'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (sitStandV6.error) throw sitStandV6.error
+if (sitStandV6.status !== 0) process.exit(sitStandV6.status ?? 1)
 const foundation = spawnSync('node', ['scripts/verify_keeper_movement_foundation_v1.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },

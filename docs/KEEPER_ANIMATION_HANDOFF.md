@@ -15,9 +15,9 @@
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
 
-## Active side-right sit/stand candidate V5 — 17 October 2026
+## Active side-right sit/stand candidate V6 — 17 October 2026
 
-`/keeper-review/keeper-prime-sit-stand-side-v5/` is the current redrafted
+`/keeper-review/keeper-prime-sit-stand-side-v6/` is the current redrafted
 sitting transition. Its complete 45-frame review route is approved Walk V6 →
 approved walk-to-stop → six-pose stand-to-sit → 600 ms seated beat → exact
 byte-reversed sit-to-stand → approved stop-to-walk → approved Walk V6. The
@@ -30,7 +30,7 @@ authority. F6 is byte-identical to the registered Prime side-right seated
 endpoint. F2–F5 are newly generated smooth Prime poses; the old six-frame
 `keeper_sit_side` supplied joint path only and contributes no visible pixel.
 Every action cell is 256 × 320, anchored `[16,40]`, floor-limited at opaque
-y=315, seat-registered at `[16,29]` / 11 lp, and checked for a minimum
+y=315, and checked for a minimum
 transparent gutter. The generated frames use a deterministic visible
 height/width progression so the model does not widen suddenly after F1.
 
@@ -39,19 +39,22 @@ kept all six Keeper cells, both action orders, timings, roots and the complete
 route byte-for-byte/motion-for-motion, but its chair correction used the
 back/spine contact as the rear edge of the backrest rather than its front face,
 and allowed the front rim beneath the shins. Frank rejected that location during
-live review. V5 again keeps every
-animation byte unchanged and corrects only the chair registration. The seat top
-is still world y=41, exactly 11 lp above the y=52 floor. The backrest front is
+live review. V5 kept every
+animation byte unchanged and corrected the horizontal chair registration. The backrest front is
 world x=76.625 and equals the visible back/spine contact plane; the front seat
 rim is world x=83.75; and the rear shin plane is world x=84.25, leaving 0.5 lp
 visible clearance. The proxy's total side depth is therefore 8.625 lp, with
-7.125 lp usable depth ahead of the backrest front. The measurement contract is
-`data/keeper_prime_seat_geometry_v2.json`.
+7.125 lp usable depth ahead of the backrest front. Frank then identified that
+V5's nominal world-y=41 / 11-lp top crossed the Keeper's bottom. V6 keeps the
+same Keeper, route and horizontal geometry, measures the last rear-pelvis alpha
+at source y=257, and begins the support plane on the immediately following
+transparent row y=258: world y=44.25, 7.75 lp above the y=52 floor. The
+measurement contract is `data/keeper_prime_seat_geometry_v3.json`.
 
 The animation art remains in
-`art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/`. V5 and Workbench V14
+`art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/`. V6 and Workbench V15
 are new application-route review candidates that reuse those immutable animation
-and archive bytes. V1–V4 and Workbench V1–V13 remain immutable history. V5 is
+and archive bytes. V1–V5 and Workbench V1–V14 remain immutable history. V6 is
 awaiting Frank. Nothing is Final, runtime or production, and the other sitting
 directions must not be inferred from it.
 
@@ -962,8 +965,10 @@ The common named poses should be explicit rather than inferred from filenames:
   the tool rack → action → replace/release tool → withdraw → stand. This covers
   welding, sawing, hammering, machete, fishing, painting and cleaning tools.
 - **Table/chair activities:** approach an object-owned marker → stop/turn → sit
-  → loop → reverse sit/stand → leave. Seat height is always 11 px above floor;
-  dining/writing/kitchen surfaces are 19 px.
+  → loop → reverse sit/stand → leave. The chair top must meet the measured
+  underside of the approved pose; never infer it from an opaque internal row.
+  Side-right V6 currently measures 7.75 px above floor. Dining/writing/kitchen
+  surfaces remain 19 px.
 - **Doors:** approach → phase-aware stop → reach/open or automatic open → pass
   under foreground leaf/mask → optional hidden costume swap → emerge/close.
   Side left/right and direct rear object layouts must match the hand/handle.
@@ -2002,15 +2007,17 @@ stored fourteen-riser, 7-lp-tread, 98-by-60-lp geometry. The decision is pinned
 at `docs/review/keeper-prime-stair-descent-v2-approval-2026-10-16.json`. No
 Final, runtime or production promotion was performed.
 
-The current corrected gate is
+The six-view endpoint inspection is
 `/keeper-review/keeper-prime-seated-six-view-v2/`. It reuses the six V1 images
-byte-for-byte, fixes the V1 loader and proves physical chair contact at y=29
-lp; V1 remains historical evidence. The endpoint set defines
+byte-for-byte and fixes the V1 loader. Its former claim of physical chair
+contact at y=29 is rejected: opacity on an internal row does not locate the
+underside of the pelvis. Side-right V6 supplies the current measured support
+evidence; V1 remains historical evidence. The endpoint set defines
 six new smooth Prime Keeper seated endpoints: direct front, direct back,
 side-left/right and rear-left/right. “At an angle either side” means the rear
 three-quarter pair used for TV, gaming and furniture-facing activity. All six
-use a 32 × 40 logical cell at density 8, `[16,40]` floor anchor, `[16,29]` seat
-point and 11-lp seat height. Their registered opaque bounds share y=52…315;
+use a 32 × 40 logical cell at density 8 and `[16,40]` floor anchor. The old
+`[16,29]` marker is a historical landmark, not a chair-height authority. Their registered opaque bounds share y=52…315;
 the left profile and rear-left are exact completed-cell mirrors of the right
 views. The character is isolated from all furniture. Prime standing art is the
 identity/rendering authority and the old seated neutrals are pose mechanics

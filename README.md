@@ -4,7 +4,7 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 
 The active Keeper-art gate is the reversible Prime Keeper whole-bank
 normalisation programme. Its new selector is
-`/keeper-review/keeper-prime-context-workbench-v14/`: every selectable item is
+`/keeper-review/keeper-prime-context-workbench-v15/`: every selectable item is
 shown at 8×, proposed 4× game presentation and literal 1×, with frame stepping,
 speed, looping, exact-Prime and adjacent-frame ghosts, and switches to include
 or omit its preceding and finishing transitions. The active version contains
@@ -54,20 +54,22 @@ flights, ribbed dark barrel and long silver point—is used identically in the
 air and embedded. Every final flight frame terminates at the board face at the
 same coordinates as the following embedded state. The acute board is now a
 recognisable segmented traditional board with double/treble rings and bull.
-Workbench V14 exposes V8, retains the core inspector and earlier diagnostics,
-and links `/keeper-review/keeper-prime-sit-stand-side-v5/`: a complete approved
+Workbench V15 exposes V8, retains the core inspector and earlier diagnostics,
+and links `/keeper-review/keeper-prime-sit-stand-side-v6/`: a complete approved
 walk/stop context around the first new Prime six-pose side-right sit, 600 ms
 seated beat and exact reverse stand. Its action endpoints are byte-identical to
 the standing and seated Prime authorities; four smooth intermediates are
-registered to one floor and one root. V5 preserves every V2/V1 Keeper frame,
-timing and root, but corrects the chair registration exposed by live review:
+registered to one floor and one root. V6 preserves every V2/V1 Keeper frame,
+timing and root, and retains V5's corrected horizontal chair registration:
 the front face of the backrest equals the visible back/spine contact, and the
-front seat rim ends 0.5 lp behind the rear shin plane. The seat top remains exactly
-11 lp above the floor. V1–V4 remain immutable provenance; V5 remains
+front seat rim ends 0.5 lp behind the rear shin plane. Live review then proved
+that V5's nominal 11-lp surface crossed the pelvis. The measured rear-pelvis
+silhouette ends at source y=257, so V6 begins the support surface at y=258:
+7.75 lp above the fixed floor. V1–V5 remain immutable provenance; V6 remains
 unapproved review art.
 Frank approved exact Darts Context V8 on 17 October 2026. Its immutable decision
 is `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
-Workbench V14 remains review infrastructure; nothing entered Final, runtime or
+Workbench V15 remains review infrastructure; nothing entered Final, runtime or
 production.
 
 The redraw method is now binding across the complete first-draft animation
@@ -87,11 +89,13 @@ Historical art is motion/contact evidence only; it is never visible-character
 authority. The old swimming, gym and scuba families remain rejected, and the
 deleted `keeper_count_money` amendment remains excluded.
 
-The current seated endpoint candidate is the corrected six-direction V2 at
+The six-direction V2 endpoint inspection remains available at
 `/keeper-review/keeper-prime-seated-six-view-v2/`. It fixes V1's brittle
-all-or-nothing loader and visibly proves that the chair surface and opaque
-pelvis meet at y=29 logical pixels, eleven pixels above the floor. The Keeper
-pixels remain byte-identical to V1. Stair Descent V2 is approved with its
+all-or-nothing loader, but its old y=29 / 11-lp contact test proved only that
+the row was opaque; it did not prove that the pelvis ended there. It is not a
+chair-height authority. Side-right V6 now measures the actual first transparent
+support row beneath the pelvis at y=32.25, or 7.75 lp above the floor. The
+Keeper pixels remain byte-identical to V1. Stair Descent V2 is approved with its
 slight overstride accepted; the future finished staircase must retain its
 locked geometry while adding two newel posts, a foreground balustrade and a
 continuous rail. The approval record is

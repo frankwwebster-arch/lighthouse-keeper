@@ -1,0 +1,88 @@
+{
+  "schema": "lighthouse-keeper/prime-seat-geometry@3",
+  "status": "review-candidate-not-runtime",
+  "supersedes": {
+    "file": "data/keeper_prime_seat_geometry_v2.json",
+    "reason": "V2 correctly fixed horizontal chair registration but retained an unmeasured nominal 11-lp seat plane that visibly passed through the final seated pelvis."
+  },
+  "authority": "art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/drafts/frames/keeper_prime_stand-to-sit-side-right_f06.png",
+  "authoritySha256": "8226a15137fc6973103131a355b215e6df7cfb94e0349f1962013ffb1593fc2b",
+  "view": "side-right-90",
+  "cellPixels": [
+    256,
+    320
+  ],
+  "logicalCell": [
+    32,
+    40
+  ],
+  "density": 8,
+  "routeRegistration": {
+    "rootWorldXLp": 86,
+    "anchorLp": [
+      16,
+      40
+    ],
+    "actorCellLeftWorldXLp": 70,
+    "actorCellTopWorldYLp": 12,
+    "floorWorldYLp": 52
+  },
+  "vertical": {
+    "rejectedNominalSeatTopWorldYLp": 41,
+    "rejectedNominalSeatHeightAboveFloorLp": 11,
+    "pelvisEvidence": {
+      "xRange": [
+        40,
+        110
+      ],
+      "yRange": [
+        200,
+        259
+      ],
+      "alphaThreshold": 16
+    },
+    "pelvisLastOpaqueSourceY": 257,
+    "supportPlaneSourceY": 258,
+    "supportPlaneLocalYLp": 32.25,
+    "seatTopWorldYLp": 44.25,
+    "seatHeightAboveFloorLp": 7.75,
+    "rule": "The chair top begins on the first fully transparent source row immediately below the rear pelvis silhouette in the declared evidence region."
+  },
+  "anatomy": {
+    "spineBackContactLp": [
+      6.625,
+      29
+    ],
+    "spineBackContactSourcePx": [
+      53,
+      232
+    ],
+    "spineBackContactWorldXLp": 76.625,
+    "shinRearPlaneLp": 14.25,
+    "shinEvidenceSource": {
+      "x": 114,
+      "yRange": [
+        260,
+        284
+      ],
+      "rule": "minimum non-transparent lower-leg silhouette across the declared shin evidence band"
+    },
+    "shinRearWorldXLp": 84.25
+  },
+  "chair": {
+    "backrestRearWorldXLp": 75.125,
+    "backrestFrontWorldXLp": 76.625,
+    "backrestThicknessLp": 1.5,
+    "seatFrontRimWorldXLp": 83.75,
+    "totalSeatDepthLp": 8.625,
+    "usableDepthFromBackrestFrontLp": 7.125,
+    "shinClearanceLp": 0.5,
+    "layer": "behind-keeper"
+  },
+  "rules": [
+    "The support plane must begin immediately below, and never intersect, the final seated rear-pelvis silhouette.",
+    "The front face of the backrest must equal the seated visible back/spine contact plane.",
+    "The front rim of the seat must remain behind the rear shin plane with at least 0.5 logical pixels of visible clearance."
+  ],
+  "scope": "Review and furniture-authoring evidence only. Keeper frames, route timing, root motion, Final, runtime and production art are unchanged."
+}

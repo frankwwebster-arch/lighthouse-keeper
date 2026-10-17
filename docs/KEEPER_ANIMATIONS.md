@@ -15,7 +15,7 @@ hash, outfit, facing, endpoint, dependency, current family, treatment and
 required contextual route.
 
 The active selectable contextual review is
-`/keeper-review/keeper-prime-context-workbench-v14/`. It deliberately contains
+`/keeper-review/keeper-prime-context-workbench-v15/`. It deliberately contains
 only eleven routes or inspection views whose current status can be stated
 confidently, and labels approved authorities separately from unapproved
 candidates. The corrected
@@ -56,23 +56,24 @@ state is identical; the board is a proper segmented edge-on target rather than
 a generic oval. Frank approved exact Context V8 on 17 October 2026; its route,
 props and review hashes are pinned in
 `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
-Workbench V14 remains review infrastructure, and no Final/runtime promotion has
+Workbench V15 remains review infrastructure, and no Final/runtime promotion has
 occurred.
 
-Workbench V14 retains the eleven Workbench V11 choices while replacing only the active
-sitting link with `/keeper-review/keeper-prime-sit-stand-side-v5/`. Its 45-frame context
+Workbench V15 retains the eleven Workbench V11 choices while replacing only the active
+sitting link with `/keeper-review/keeper-prime-sit-stand-side-v6/`. Its 45-frame context
 uses approved walk/stop authorities around a six-pose side-right sit, a 600 ms
 seated hold and the exact byte-reversed stand. Action F1 is the exact approved
 Prime side-right standing authority and F6 is the exact registered Prime
 side-right seated endpoint. F2–F5 are new smooth Prime redraws, registered to
 one floor, one root and measured silhouette progression. Live review showed
 that V2 treated its `[7,29]` back/spine contact as the rear edge of the
-backrest and allowed the seat beneath the lower leg. V5 keeps all animation
-bytes unchanged and re-registers only the chair: backrest front x=76.625
+backrest and allowed the seat beneath the lower leg. V5 fixed those horizontal
+relationships, but its nominal 11-lp seat top visibly crossed the pelvis. V6
+keeps all animation bytes unchanged and re-registers only the chair: backrest front x=76.625
 equals the visible back/spine contact; seat front
-x=83.75 ends 0.5 lp behind the rear shin plane at x=84.25; seat top remains
-11 lp above floor. The old `keeper_sit_side` contributes choreography only.
-V1–V4 remain immutable history. V5 awaits Frank's review and changes no Final,
+x=83.75 ends 0.5 lp behind the rear shin plane at x=84.25; the measured chair
+top begins at source y=258, 7.75 lp above the floor. The old `keeper_sit_side`
+contributes choreography only. V1–V5 remain immutable history. V6 awaits Frank's review and changes no Final,
 runtime or production sprite.
 Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before

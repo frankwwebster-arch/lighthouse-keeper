@@ -15,7 +15,7 @@ The deterministic inventory is
 `data/keeper-prime-animation-bank-audit-v1.json` (308 rows; 159 legacy endpoint
 risks; 28 explicitly rejected/excluded; zero strip/sidecar geometry mismatches).
 The active selectable contextual reviewer is
-`/keeper-review/keeper-prime-context-workbench-v14/`; it includes only eleven
+`/keeper-review/keeper-prime-context-workbench-v15/`; it includes only eleven
 status-labelled routes whose present state can be defended and links the full
 inventory. V3 retains V2's fix for V1's deployed relative-URL/trailing-slash
 loader failure and localised native-route images, and adds the inspection-only
@@ -57,8 +57,8 @@ placeholder rim with a segmented acute-angle board. The final airborne and
 first embedded renderings are byte-identical. Frank approved exact Context V8
 on 17 October 2026; preserve the hash-pinned decision at
 `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
-Workbench V14 retains every Workbench V11 choice and replaces only the active sitting
-link with the chair-corrected Prime side-right sit/stand V5 context. No Final/runtime/production
+Workbench V15 retains every Workbench V11 choice and replaces only the active sitting
+link with the vertically corrected Prime side-right sit/stand V6 context. No Final/runtime/production
 promotion has occurred.
 
 Future pub/games-room layout rule: mount the approved dartboard on the
@@ -69,18 +69,18 @@ or cupboard from this note alone; Frank explicitly deferred that work.
 
 Working split: Codex owns art, design and layout; Claude owns game logic and wiring. Ask for a code hook here or in HANDOFF_TO_CLAUDE.md.
 
-## Prime side-right sit/stand V5 (17 Oct 2026)
+## Prime side-right sit/stand V6 (17 Oct 2026)
 
 The active sitting-motion gate is
-`/keeper-review/keeper-prime-sit-stand-side-v5/`. It shows the exact V2 45-frame route:
+`/keeper-review/keeper-prime-sit-stand-side-v6/`. It shows the exact V2 45-frame route:
 approved Walk V6 → approved deceleration → new Prime stand-to-sit → a 600 ms
 seated beat → the exact byte-reversed stand → approved acceleration → approved
 walk away. The six action cells use the exact approved side-right standing
 authority as F1 and the exact registered side-right seated endpoint as F6.
 F2–F5 are new smooth Prime redraws; first-generation `keeper_sit_side` pixels
 are choreography-only evidence. All cells are 256 × 320 at density 8 with a
-common `[16,40]` anchor, y=315 opaque floor limit, `[16,29]` seat point, 11-lp
-seat height and transparent gutters. Generated silhouettes are registered to
+common `[16,40]` anchor, y=315 opaque floor limit and transparent gutters.
+Generated silhouettes are registered to
 measured height/width progressions to prevent an abrupt Prime-to-action width
 jump. Frank judged the V1 animation good but rejected its example chair. V2's
 first correction also failed live inspection because it placed the rear edge
@@ -90,8 +90,12 @@ preserves every V1/V2 Keeper frame, route root and duration while replacing
 only the behind-Keeper proxy. The chair top remains y=29 / 11 lp above floor.
 At the fixed action root, the backrest front is world x=76.625 and equals the
 visible back/spine contact; the seat front is x=83.75; and the rear shin plane is
-x=84.25, leaving 0.5 lp visible clearance. V1–V4 remain immutable history.
-The candidate and Workbench V14 are review infrastructure only; they are not
+x=84.25, leaving 0.5 lp visible clearance. Frank then identified that the
+11-lp plane crossed the Keeper's bottom. V6 keeps all Keeper and route bytes,
+retains V5's horizontal measurements, and moves only the chair top to the
+first fully transparent row beneath the measured rear pelvis: source y=258,
+world y=44.25, 7.75 lp above the floor. V1–V5 remain immutable history.
+The candidate and Workbench V15 are review infrastructure only; they are not
 Final, runtime or production art.
 
 ## Seated Prime foundation V2 (17 Oct 2026)
@@ -106,10 +110,11 @@ geometry. The immutable decision is
 The corrected six-direction smooth seated foundation is available
 at `/keeper-review/keeper-prime-seated-six-view-v2/`. It contains direct front,
 direct back, side-left/right and rear-left/right endpoints. All are 256 × 320
-registered cells with one `[16,40]` anchor, one `[16,29]` seat point and an
-11-lp seat height. V2 keeps the six V1 images byte-identical but replaces the
-brittle all-or-nothing page loader and proves opaque pelvis contact on the
-chair's exact y=29-lp top surface in every view. The left pair are exact
+registered cells with one `[16,40]` anchor and one historical `[16,29]` seat
+landmark. V2 keeps the six V1 images byte-identical but replaces the brittle
+all-or-nothing page loader. Its old opaque-row test is not chair-height proof:
+opacity at y=29 did not establish the underside of the pelvis. Side-right V6
+is the current measured support evidence. The left pair are exact
 mirrors after registration. The
 approved standing views supply identity and rendering; first-generation seats
 supply pose mechanics only. The side-right endpoint is now the exact F6 of the
