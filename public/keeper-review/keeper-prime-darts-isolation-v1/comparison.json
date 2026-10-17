@@ -1,0 +1,261 @@
+{
+  "set": "keeper-prime-darts-isolation-v1",
+  "frames": [
+    {
+      "frame": 1,
+      "registeredFrame": 9,
+      "old": "/keeper-review/keeper-prime-darts-isolation-v1/assets/old-d8c56771a209dbd2.png",
+      "corrected": "/keeper-review/keeper-prime-darts-isolation-v1/assets/isolated-70bc8a2a204edd13.png",
+      "ownership": {
+        "frame": 1,
+        "nominalCell": [
+          1,
+          1
+        ],
+        "ownedActorPixels": 44024,
+        "foreignActorPixels": 0,
+        "detachedOrNoisePixels": 78
+      },
+      "oldSha256": "d8c56771a209dbd26c067ba6cffb5ab01d2cebdd2fb5e12c2164ce0ccc0e15fc",
+      "correctedSha256": "70bc8a2a204edd13eb92199bdcd86919236f4ad135e7dce9882c351a7ca216ca"
+    },
+    {
+      "frame": 2,
+      "registeredFrame": 10,
+      "old": "/keeper-review/keeper-prime-darts-isolation-v1/assets/old-b195b6081193bf03.png",
+      "corrected": "/keeper-review/keeper-prime-darts-isolation-v1/assets/isolated-385c42f629965f3f.png",
+      "ownership": {
+        "frame": 2,
+        "nominalCell": [
+          2,
+          1
+        ],
+        "ownedActorPixels": 44678,
+        "foreignActorPixels": 0,
+        "detachedOrNoisePixels": 68
+      },
+      "oldSha256": "b195b6081193bf03ca810d9ed4702fd797a8879191f41480f49048af6688c661",
+      "correctedSha256": "385c42f629965f3ff8b2ed1f463ef59c64a68f1ae3fc19bdedb4636518734374"
+    },
+    {
+      "frame": 3,
+      "registeredFrame": 11,
+      "old": "/keeper-review/keeper-prime-darts-isolation-v1/assets/old-87e7f3eb47ba7fb9.png",
+      "corrected": "/keeper-review/keeper-prime-darts-isolation-v1/assets/isolated-310bdeb31ab4a978.png",
+      "ownership": {
+        "frame": 3,
+        "nominalCell": [
+          3,
+          1
+        ],
+        "ownedActorPixels": 43777,
+        "foreignActorPixels": 0,
+        "detachedOrNoisePixels": 80
+      },
+      "oldSha256": "87e7f3eb47ba7fb9226045d2903084ca2618895e1434e382e89dd895b1c6ae8e",
+      "correctedSha256": "310bdeb31ab4a97861cc2470df721501ab311a38f1246af234e662d27aab2f32"
+    },
+    {
+      "frame": 4,
+      "registeredFrame": 12,
+      "old": "/keeper-review/keeper-prime-darts-isolation-v1/assets/old-e2385473508bad00.png",
+      "corrected": "/keeper-review/keeper-prime-darts-isolation-v1/assets/isolated-6b3af8f771ae28af.png",
+      "ownership": {
+        "frame": 4,
+        "nominalCell": [
+          4,
+          1
+        ],
+        "ownedActorPixels": 43992,
+        "foreignActorPixels": 0,
+        "detachedOrNoisePixels": 66
+      },
+      "oldSha256": "e2385473508bad0054a87ef623e40ef6bf2afc5119780a4feedb19fa595f24e4",
+      "correctedSha256": "6b3af8f771ae28af2a5d9cdb8d7e663feef857b6787dacdff2cb7b9b3de51de4"
+    },
+    {
+      "frame": 5,
+      "registeredFrame": 13,
+      "old": "/keeper-review/keeper-prime-darts-isolation-v1/assets/old-80376b355c0c4e7e.png",
+      "corrected": "/keeper-review/keeper-prime-darts-isolation-v1/assets/isolated-4e0533b0e5ef759d.png",
+      "ownership": {
+        "frame": 5,
+        "nominalCell": [
+          5,
+          1
+        ],
+        "ownedActorPixels": 44691,
+        "foreignActorPixels": 0,
+        "detachedOrNoisePixels": 90
+      },
+      "oldSha256": "80376b355c0c4e7eeba5c21089acf4a53e63434b48874f18292004d4bf058699",
+      "correctedSha256": "4e0533b0e5ef759d20c8e80a05b96384bf9d66713c53a28e0464e9a6638e2a70"
+    },
+    {
+      "frame": 6,
+      "registeredFrame": 14,
+      "old": "/keeper-review/keeper-prime-darts-isolation-v1/assets/old-b9bc9d8257150b9c.png",
+      "corrected": "/keeper-review/keeper-prime-darts-isolation-v1/assets/isolated-6466e079e805cca4.png",
+      "ownership": {
+        "frame": 6,
+        "nominalCell": [
+          6,
+          1
+        ],
+        "ownedActorPixels": 45007,
+        "foreignActorPixels": 0,
+        "detachedOrNoisePixels": 82
+      },
+      "oldSha256": "b9bc9d8257150b9cf60d1766143533d693a01b6ed28c9f9d529949ba9320d451",
+      "correctedSha256": "6466e079e805cca4c8949145a09a9bb8f15e1b99fb150216c287d3d8e84d0e2a"
+    },
+    {
+      "frame": 7,
+      "registeredFrame": 15,
+      "old": "/keeper-review/keeper-prime-darts-isolation-v1/assets/old-d7257bf1c3abc1c1.png",
+      "corrected": "/keeper-review/keeper-prime-darts-isolation-v1/assets/isolated-02267a026fb3b611.png",
+      "ownership": {
+        "frame": 7,
+        "nominalCell": [
+          7,
+          1
+        ],
+        "ownedActorPixels": 44746,
+        "foreignActorPixels": 51,
+        "detachedOrNoisePixels": 104
+      },
+      "oldSha256": "d7257bf1c3abc1c141c67b41ba22503460c3abea48193b9fa35d01a0c3d62f85",
+      "correctedSha256": "02267a026fb3b61175e759abc598b2b1cd28fe8af919692af7375b36305a7f9b"
+    },
+    {
+      "frame": 8,
+      "registeredFrame": 16,
+      "old": "/keeper-review/keeper-prime-darts-isolation-v1/assets/old-1b09ee638128e027.png",
+      "corrected": "/keeper-review/keeper-prime-darts-isolation-v1/assets/isolated-b15027b5dceaf6a5.png",
+      "ownership": {
+        "frame": 8,
+        "nominalCell": [
+          1,
+          2
+        ],
+        "ownedActorPixels": 43257,
+        "foreignActorPixels": 0,
+        "detachedOrNoisePixels": 769
+      },
+      "oldSha256": "1b09ee638128e027fc41011b8c2f8075cceada5127c6074718c6bb97c5c4f290",
+      "correctedSha256": "b15027b5dceaf6a5b6bd770f9586de221d225b63bdd82287e60c60b53ff58e11"
+    },
+    {
+      "frame": 9,
+      "registeredFrame": 17,
+      "old": "/keeper-review/keeper-prime-darts-isolation-v1/assets/old-8b6f05c88e0d05bf.png",
+      "corrected": "/keeper-review/keeper-prime-darts-isolation-v1/assets/isolated-a7a457a151a4abc0.png",
+      "ownership": {
+        "frame": 9,
+        "nominalCell": [
+          2,
+          2
+        ],
+        "ownedActorPixels": 43883,
+        "foreignActorPixels": 0,
+        "detachedOrNoisePixels": 1230
+      },
+      "oldSha256": "8b6f05c88e0d05bf27e14ba30b5b5fce3f948225c7a59623389803b51f8e4ec0",
+      "correctedSha256": "a7a457a151a4abc0356f2b0c9c19d22bd72febed7f667b64f3c3dd2454d1b1d7"
+    },
+    {
+      "frame": 10,
+      "registeredFrame": 18,
+      "old": "/keeper-review/keeper-prime-darts-isolation-v1/assets/old-0de07a5cf8e8df5e.png",
+      "corrected": "/keeper-review/keeper-prime-darts-isolation-v1/assets/isolated-a20b73bfbc0d9d55.png",
+      "ownership": {
+        "frame": 10,
+        "nominalCell": [
+          3,
+          2
+        ],
+        "ownedActorPixels": 44824,
+        "foreignActorPixels": 0,
+        "detachedOrNoisePixels": 1111
+      },
+      "oldSha256": "0de07a5cf8e8df5e6ffa780ea1d6cd725d8b0eb4160b3b3b3e6a413bbaaeb271",
+      "correctedSha256": "a20b73bfbc0d9d55d8a84095515b4e738e9feced1ee7fbebcbd89413764d841a"
+    },
+    {
+      "frame": 11,
+      "registeredFrame": 19,
+      "old": "/keeper-review/keeper-prime-darts-isolation-v1/assets/old-068a4f85efdde656.png",
+      "corrected": "/keeper-review/keeper-prime-darts-isolation-v1/assets/isolated-578a15b8a82d4cd4.png",
+      "ownership": {
+        "frame": 11,
+        "nominalCell": [
+          4,
+          2
+        ],
+        "ownedActorPixels": 45131,
+        "foreignActorPixels": 42,
+        "detachedOrNoisePixels": 1281
+      },
+      "oldSha256": "068a4f85efdde656b0b731687c9984bc794cfed36076304e9e0a9d07d79465a3",
+      "correctedSha256": "578a15b8a82d4cd4a477e439065a306c153fc0d159ee30963f103494c11f381b"
+    },
+    {
+      "frame": 12,
+      "registeredFrame": 20,
+      "old": "/keeper-review/keeper-prime-darts-isolation-v1/assets/old-d4c27e293c97c31a.png",
+      "corrected": "/keeper-review/keeper-prime-darts-isolation-v1/assets/isolated-29f51e580187c9b2.png",
+      "ownership": {
+        "frame": 12,
+        "nominalCell": [
+          5,
+          2
+        ],
+        "ownedActorPixels": 45369,
+        "foreignActorPixels": 163,
+        "detachedOrNoisePixels": 404
+      },
+      "oldSha256": "d4c27e293c97c31aaed08b00b3f770c5cc9ba64a31ba049d1f396ac94b7d358a",
+      "correctedSha256": "29f51e580187c9b2391e40c46a89deabb3bfbb6330955062c62d920eef18069f"
+    },
+    {
+      "frame": 13,
+      "registeredFrame": 21,
+      "old": "/keeper-review/keeper-prime-darts-isolation-v1/assets/old-3fe3ae25b81943e5.png",
+      "corrected": "/keeper-review/keeper-prime-darts-isolation-v1/assets/isolated-518dd8aaa97d676e.png",
+      "ownership": {
+        "frame": 13,
+        "nominalCell": [
+          6,
+          2
+        ],
+        "ownedActorPixels": 44400,
+        "foreignActorPixels": 0,
+        "detachedOrNoisePixels": 122
+      },
+      "oldSha256": "3fe3ae25b81943e51b76f33cc5262286a57fa8e614b3f768907339500615676b",
+      "correctedSha256": "518dd8aaa97d676e18cfbef30ed8c159a08cb3bbe4cb3292fb594ad34bffe68a"
+    },
+    {
+      "frame": 14,
+      "registeredFrame": 22,
+      "old": "/keeper-review/keeper-prime-darts-isolation-v1/assets/old-8a9340608100e757.png",
+      "corrected": "/keeper-review/keeper-prime-darts-isolation-v1/assets/isolated-6e44ea82706bd5c9.png",
+      "ownership": {
+        "frame": 14,
+        "nominalCell": [
+          7,
+          2
+        ],
+        "ownedActorPixels": 44652,
+        "foreignActorPixels": 0,
+        "detachedOrNoisePixels": 129
+      },
+      "oldSha256": "8a9340608100e75788738d036ff05373663c69f431f23b2c0d71af07af698d63",
+      "correctedSha256": "6e44ea82706bd5c95f043ead9186c854816e51316e55d5968dc57c633eaad107"
+    }
+  ],
+  "strips": {
+    "old": "/keeper-review/keeper-prime-darts-isolation-v1/assets/v2-strip-dbed7542a87edc45.png",
+    "corrected": "/keeper-review/keeper-prime-darts-isolation-v1/assets/isolated-strip-a38b643e895edd5a.png"
+  }
+}

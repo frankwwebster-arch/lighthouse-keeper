@@ -11,7 +11,7 @@
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
 
-## Whole-bank audit and Context Workbench V3 — 17 October 2026
+## Whole-bank audit and Context Workbench V4 — 17 October 2026
 
 The production bank now has a deterministic 308-row audit in
 `data/keeper-prime-animation-bank-audit-v1.json`, with a human summary in
@@ -24,13 +24,14 @@ and 31 transitions. There are 159 legacy endpoint risks, 28 explicitly
 rejected/excluded entries and no measured strip/sidecar geometry mismatches.
 
 The active review selector is
-`/keeper-review/keeper-prime-context-workbench-v3/`. V3 exposes eight choices:
+`/keeper-review/keeper-prime-context-workbench-v4/`. V4 exposes nine choices:
 approved stop/walk/stop; an approved-component walk/stop/180° turn/walk
 composition; the corrected Darts V3 candidate; the complete approved stair
 ascent;
 the approved stair descent; the approved ladder motion route; and the
-unapproved six-view seated foundation; plus a dedicated 30-frame inspector for
-the inherited Darts V2 registered strip. Native routes provide optional preceding
+unapproved six-view seated foundation; a dedicated 30-frame inspector for
+the inherited Darts V2 registered strip; and the reversible Darts cell-isolation
+corrective draft. Native routes provide optional preceding
 and finishing transitions, whole/core looping, speed adjustment, frame
 stepping, exact-Prime ghost, adjacent-frame onion skin, and simultaneous 8×,
 4× and literal 1× views. The 308-row inventory is linked from the page. Status
@@ -39,7 +40,7 @@ V3 retains V2's full-width 8× pane, localised native-route images and
 deployment-safe root-absolute URLs. V2 fixed V1's deployed trailing-slash bug,
 which returned HTML to its relative
 `catalog.json` request and locked the controls. V1 and V2 remain immutable
-provenance.
+provenance. V3 remains immutable and V4 adds no approval or promotion.
 
 The strip inspector is
 `/keeper-review/keeper-prime-darts-strip-inspector-v1/`. It changes no art.
@@ -51,6 +52,22 @@ uniform blue, dark blue/navy and warm cream. Those values are diagnostic, not
 automatic approval thresholds. The initial audit confirms visible blue drift:
 Prime F01 is median RGB (0,86,202), while multiple generated core frames are
 around (1,62–68,171–195).
+
+The new corrective review is
+`/keeper-review/keeper-prime-darts-isolation-v1/`. The generated 1774 × 887
+pose source was laid out visually as 7×2 but was not cell-safe. Deterministic
+whole-sheet segmentation found 14 actor components and four detached projectile
+components. Rectangular cropping assigned 51 foreign actor pixels to core F07
+(registered F15), 42 to core F11 (registered F19) and 163 to core F12
+(registered F20); it also split the detached darts across core F08–F12
+(registered F16–F20). The
+candidate reconstructs each of the fourteen throw-core cells from exactly one
+whole actor component, excludes all four detached projectiles because the V3
+route already draws flights as independent effects, and enforces a two-source-
+pixel transparent gutter. Registered F01–F08 and F23–F30 remain byte-identical
+to V2. The page provides immutable-V2/candidate/overlay comparisons and both
+complete strips. This fixes ownership only: it deliberately does not apply the
+separate palette correction and remains unapproved.
 
 Darts V1 is preserved rejected provenance only: its action frames drifted
 toward three-quarter view and snapped against the exact side endpoint. Darts
@@ -69,9 +86,10 @@ on identical Prime pixels, x=125 root and three-darts-on-board state. This
 remains unapproved and changes no Final, runtime, production or approval
 record.
 
-Next visual gate: Frank identifies any Darts V2 cells requiring palette
-correction in the strip inspector, then reviews Darts V3 in Context Workbench
-V3. Any correction must be a new masked candidate; do not alter V2 or V3.
+Next visual gate: Frank reviews the cell-isolation candidate and identifies any
+Darts V2 cells requiring palette correction in the strip inspector. After
+isolation approval, palette correction must be a new masked candidate layered
+on the isolated cells; do not alter V2, V3 or isolation V1.
 After that, build exact Prime stand↔sit transition strips against the seated
 foundation if its endpoints are approved, then process interaction families in
 small contextual batches. Swimming, gym and scuba require complete redesign;

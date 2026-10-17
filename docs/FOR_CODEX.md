@@ -15,7 +15,7 @@ The deterministic inventory is
 `data/keeper-prime-animation-bank-audit-v1.json` (308 rows; 159 legacy endpoint
 risks; 28 explicitly rejected/excluded; zero strip/sidecar geometry mismatches).
 The active selectable contextual reviewer is
-`/keeper-review/keeper-prime-context-workbench-v3/`; it includes only eight
+`/keeper-review/keeper-prime-context-workbench-v4/`; it includes only nine
 status-labelled routes whose present state can be defended and links the full
 inventory. V3 retains V2's fix for V1's deployed relative-URL/trailing-slash
 loader failure and localised native-route images, and adds the inspection-only
@@ -23,6 +23,16 @@ loader failure and localised native-route images, and adds the inspection-only
 30 inherited V2 cells at exact/enlarged source resolution with Prime and
 adjacent overlays plus deterministic blue/navy/cream measurements. It confirms
 likely blue drift in the generated core but changes no pixels. The active
+corrective art candidate is
+`/keeper-review/keeper-prime-darts-isolation-v1/`. Whole-sheet connected-
+component analysis proved that nominal 7×2 rectangular source cropping put 51
+foreign actor pixels in core F07/registered F15, 42 in core F11/registered F19
+and 163 in core F12/registered F20, and split four detached dart components
+across core F08–F12/registered F16–F20. The candidate assigns every whole actor exactly
+once, excludes detached projectiles from character cells because Darts V3
+already renders them as independent effects, and preserves registered F01–F08
+and F23–F30 byte-for-byte. It does not yet correct the measured palette drift
+and remains unapproved. The active
 interaction candidate is
 `/keeper-review/keeper-prime-darts-context-v3/`: V2 character pixels reused
 byte-for-byte, a closed cupboard door and edge-on board, six visible flights

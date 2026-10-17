@@ -15,8 +15,8 @@ hash, outfit, facing, endpoint, dependency, current family, treatment and
 required contextual route.
 
 The active selectable contextual review is
-`/keeper-review/keeper-prime-context-workbench-v3/`. It deliberately contains
-only eight routes or inspection views whose current status can be stated
+`/keeper-review/keeper-prime-context-workbench-v4/`. It deliberately contains
+only nine routes or inspection views whose current status can be stated
 confidently, and labels approved authorities separately from unapproved
 candidates. The corrected
 Darts V3 candidate reuses the V2 Keeper pixels, shows six visible flights and
@@ -28,6 +28,12 @@ and remains a draft. The eighth choice opens
 can be stepped, enlarged and compared with Prime/adjacent overlays and
 deterministic palette measurements. No art changed. V1 remains failed delivery
 provenance; V2 fixed its relative-URL catalogue fault and V3 retains that fix.
+The ninth choice opens the unapproved
+`/keeper-review/keeper-prime-darts-isolation-v1/` corrective draft. It replaces
+the unsafe 7×2 rectangular extraction of the fourteen generated throw poses
+with whole-component ownership, removes 256 measured neighbouring-actor pixels
+and keeps four detached projectiles out of the character cells. All endpoints
+and approved posture bridges are unchanged; palette work remains separate.
 Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before
 creating or assessing another action.
