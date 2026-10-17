@@ -213,6 +213,11 @@ export default {
         destination: '/keeper-review/kitchen-narrower-bin-v25/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-game-scale-prime-v26',
+        destination: '/keeper-review/kitchen-game-scale-prime-v26/index.html',
+        permanent: false,
+      },
     ]
   },
 }

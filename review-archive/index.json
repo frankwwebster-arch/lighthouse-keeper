@@ -11,11 +11,11 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 103,
-    "referenceCount": 2057,
-    "uniqueObjectCount": 1425,
-    "logicalBytes": 184672887,
-    "uniqueBytes": 98906307,
+    "setCount": 104,
+    "referenceCount": 2060,
+    "uniqueObjectCount": 1428,
+    "logicalBytes": 185257920,
+    "uniqueBytes": 99491340,
     "deduplicatedBytes": 85766580
   },
   "legacyPaths": {
@@ -14340,6 +14340,27 @@
       "bytes": 53555,
       "object": "review-archive/objects/57/5730e51c07c3c0baa38fbc537fc542179ea427bf0870eff0576e6fad5d8a7a57.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/57/5730e51c07c3c0baa38fbc537fc542179ea427bf0870eff0576e6fad5d8a7a57.png"
+    },
+    "/keeper-review/kitchen-game-scale-prime-v26/assets/kitchen-game-scale-prime-seated-back.png": {
+      "sha256": "5493d8ae135a5f45b36373bb475621d06b6bf0bdd0ecce596f79e7be33697dd3",
+      "extension": ".png",
+      "bytes": 195405,
+      "object": "review-archive/objects/54/5493d8ae135a5f45b36373bb475621d06b6bf0bdd0ecce596f79e7be33697dd3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/54/5493d8ae135a5f45b36373bb475621d06b6bf0bdd0ecce596f79e7be33697dd3.png"
+    },
+    "/keeper-review/kitchen-game-scale-prime-v26/assets/kitchen-game-scale-prime-standing.png": {
+      "sha256": "28537cc20fcb5e597933e0929585ff13febb7ba320df020f174a2e51f4e74790",
+      "extension": ".png",
+      "bytes": 199433,
+      "object": "review-archive/objects/28/28537cc20fcb5e597933e0929585ff13febb7ba320df020f174a2e51f4e74790.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/28/28537cc20fcb5e597933e0929585ff13febb7ba320df020f174a2e51f4e74790.png"
+    },
+    "/keeper-review/kitchen-game-scale-prime-v26/assets/kitchen-game-scale-room.png": {
+      "sha256": "69df58a0db864cdb02064d4b236dcb7f31e56269dde61162d5f4cb388453558b",
+      "extension": ".png",
+      "bytes": 190195,
+      "object": "review-archive/objects/69/69df58a0db864cdb02064d4b236dcb7f31e56269dde61162d5f4cb388453558b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/69/69df58a0db864cdb02064d4b236dcb7f31e56269dde61162d5f4cb388453558b.png"
     },
     "/keeper-review/kitchen-narrower-bin-v25/assets/bin-after.png": {
       "sha256": "5aa5f2a7e841cde20ba11a71a293b8cab89c64d63dd04d0a00c8a9ea9dec1519",

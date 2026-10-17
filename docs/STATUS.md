@@ -89,6 +89,10 @@ The active follow-up is `/keeper-review/kitchen-narrower-bin-v25/`, which makes
 only the standalone turquoise pedal bin 20% less wide while retaining its
 centreline, height and floor contact. V24 remains immutable; V25 awaits visual
 confirmation and is also unpromoted/unwired.
+The scale review is `/keeper-review/kitchen-game-scale-prime-v26/`. It shows
+V25 at the exact `193 × 56-lp` room contract and `4 px/lp` presentation, both
+alone and with the `32 × 40-lp` Prime standing and seated rear-facing at the
+table. V26 is derived evidence only; V25 and all Keeper sources are unchanged.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
