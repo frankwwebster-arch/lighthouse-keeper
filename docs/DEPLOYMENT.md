@@ -57,9 +57,14 @@ version at the URL above.
 ### Rules for agents (Claude and Codex)
 
 - Never end an ordinary commit subject with `[deploy]`.
-- Batch review work. Deploy once per review round, not once per tweak.
-- To show Frank a review page, deploy, then send the production link.
-  Branch previews no longer exist.
+- Batch review work sensibly, but do not ask Frank to authorise a review-page
+  deployment. When a new versioned candidate is ready for inspection, deploy
+  its reviewer, verify it, open it in the frame reviewer, and send Frank the
+  production link before requesting any visual decision. Branch previews no
+  longer exist.
+- A review-page deployment is not artwork approval or promotion. Final,
+  runtime and production-art promotion still require Frank's explicit
+  approval.
 - `npm run deploy` refuses to run with uncommitted changes or off `main`.
   It pulls first, because both agents push to `main`.
 
