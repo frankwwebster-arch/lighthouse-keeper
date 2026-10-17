@@ -15,15 +15,20 @@ hash, outfit, facing, endpoint, dependency, current family, treatment and
 required contextual route.
 
 The active selectable contextual review is
-`/keeper-review/keeper-prime-context-workbench-v2/`. It deliberately contains
-only seven routes whose current status can be stated confidently, and labels
-approved authorities separately from unapproved candidates. The corrected
+`/keeper-review/keeper-prime-context-workbench-v3/`. It deliberately contains
+only eight routes or inspection views whose current status can be stated
+confidently, and labels approved authorities separately from unapproved
+candidates. The corrected
 Darts V3 candidate reuses the V2 Keeper pixels, shows six visible flights and
 impacts against an edge-on board on the closed cupboard door, collects the
 first set, returns one exact 30.5-lp stop-to-stop route to the oche and throws
 again. It contains only the necessary turn at the board and turn at the oche,
-and remains a draft. V1 remains failed delivery provenance; V2 fixes its
-relative-URL catalogue fault. Read
+and remains a draft. The eighth choice opens
+`/keeper-review/keeper-prime-darts-strip-inspector-v1/`, where all 30 V2 cells
+can be stepped, enlarged and compared with Prime/adjacent overlays and
+deterministic palette measurements. No art changed. V1 remains failed delivery
+provenance; V2 fixed its relative-URL catalogue fault and V3 retains that fix.
+Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before
 creating or assessing another action.
 

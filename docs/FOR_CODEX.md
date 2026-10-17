@@ -15,10 +15,15 @@ The deterministic inventory is
 `data/keeper-prime-animation-bank-audit-v1.json` (308 rows; 159 legacy endpoint
 risks; 28 explicitly rejected/excluded; zero strip/sidecar geometry mismatches).
 The active selectable contextual reviewer is
-`/keeper-review/keeper-prime-context-workbench-v2/`; it includes only seven
+`/keeper-review/keeper-prime-context-workbench-v3/`; it includes only eight
 status-labelled routes whose present state can be defended and links the full
-inventory. V2 fixes V1's deployed relative-URL/trailing-slash loader failure
-and localises its native-route images. The active interaction candidate is
+inventory. V3 retains V2's fix for V1's deployed relative-URL/trailing-slash
+loader failure and localised native-route images, and adds the inspection-only
+`/keeper-review/keeper-prime-darts-strip-inspector-v1/`. That page exposes all
+30 inherited V2 cells at exact/enlarged source resolution with Prime and
+adjacent overlays plus deterministic blue/navy/cream measurements. It confirms
+likely blue drift in the generated core but changes no pixels. The active
+interaction candidate is
 `/keeper-review/keeper-prime-darts-context-v3/`: V2 character pixels reused
 byte-for-byte, a closed cupboard door and edge-on board, six visible flights
 and impacts, practical full-reach collection, one turn at the board, one turn

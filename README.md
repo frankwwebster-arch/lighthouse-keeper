@@ -4,21 +4,25 @@ A Sims-style lighthouse game for Ralph and Eddie: tell the keeper what to do by 
 
 The active Keeper-art gate is the reversible Prime Keeper whole-bank
 normalisation programme. Its new selector is
-`/keeper-review/keeper-prime-context-workbench-v2/`: every selectable item is
+`/keeper-review/keeper-prime-context-workbench-v3/`: every selectable item is
 shown at 8×, proposed 4× game presentation and literal 1×, with frame stepping,
 speed, looping, exact-Prime and adjacent-frame ghosts, and switches to include
-or omit its preceding and finishing transitions. The first version contains
-seven deliberately status-labelled routes: approved core locomotion and
+or omit its preceding and finishing transitions. The active version contains
+eight deliberately status-labelled routes or inspection views: approved core locomotion and
 vertical-circulation authorities, the unapproved six-view seated foundation,
 and the corrected unapproved Darts V3 candidate. V2 fixes V1's deployed
-relative-catalogue URL fault and uses a full-width large-inspection pane. Darts
+relative-catalogue URL fault and uses a full-width large-inspection pane; V3
+retains those fixes and adds the inspection-only
+`/keeper-review/keeper-prime-darts-strip-inspector-v1/`. All 30 inherited V2
+cells can be stepped at exact/enlarged source resolution with Prime/adjacent
+overlays and deterministic blue/navy/cream comparisons. Darts
 V3 is `/keeper-review/keeper-prime-darts-context-v3/`: its closed cupboard door
 and board are edge-on, every dart visibly flies and sticks, the Keeper collects
 the first three at the approved reach height, turns only at the board and
 oche, returns one exact 30.5-lp stop-to-stop stride and throws three again.
 Nothing was promoted or wired into runtime.
 
-All 308 production animations and technical neutrals—not merely those seven—
+All 308 production animations and technical neutrals—not merely those eight—
 are measured in
 [`data/keeper-prime-animation-bank-audit-v1.json`](data/keeper-prime-animation-bank-audit-v1.json)
 and explained in

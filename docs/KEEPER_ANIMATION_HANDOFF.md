@@ -11,7 +11,7 @@
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
 
-## Whole-bank audit and Context Workbench V2 — 17 October 2026
+## Whole-bank audit and Context Workbench V3 — 17 October 2026
 
 The production bank now has a deterministic 308-row audit in
 `data/keeper-prime-animation-bank-audit-v1.json`, with a human summary in
@@ -24,20 +24,33 @@ and 31 transitions. There are 159 legacy endpoint risks, 28 explicitly
 rejected/excluded entries and no measured strip/sidecar geometry mismatches.
 
 The active review selector is
-`/keeper-review/keeper-prime-context-workbench-v2/`. V2 exposes seven routes:
+`/keeper-review/keeper-prime-context-workbench-v3/`. V3 exposes eight choices:
 approved stop/walk/stop; an approved-component walk/stop/180° turn/walk
-composition; the corrected Darts V3 candidate; the complete approved stair ascent;
+composition; the corrected Darts V3 candidate; the complete approved stair
+ascent;
 the approved stair descent; the approved ladder motion route; and the
-unapproved six-view seated foundation. Native routes provide optional preceding
+unapproved six-view seated foundation; plus a dedicated 30-frame inspector for
+the inherited Darts V2 registered strip. Native routes provide optional preceding
 and finishing transitions, whole/core looping, speed adjustment, frame
 stepping, exact-Prime ghost, adjacent-frame onion skin, and simultaneous 8×,
 4× and literal 1× views. The 308-row inventory is linked from the page. Status
 labels are binding: inclusion does not convert a candidate into an approval.
-V2 also gives the 8× inspection pane the full browser width and localises its
-native-route images. Root-absolute catalogue, script and inventory URLs fix
-V1's deployed trailing-slash bug, which returned HTML to its relative
-`catalog.json` request and locked the controls. V1 remains immutable failed
-delivery provenance.
+V3 retains V2's full-width 8× pane, localised native-route images and
+deployment-safe root-absolute URLs. V2 fixed V1's deployed trailing-slash bug,
+which returned HTML to its relative
+`catalog.json` request and locked the controls. V1 and V2 remain immutable
+provenance.
+
+The strip inspector is
+`/keeper-review/keeper-prime-darts-strip-inspector-v1/`. It changes no art.
+Every V2 cell is selectable at exact 448 × 320 source pixels and 1.5×/2×/3×
+enlargements, with previous/next buttons, keyboard arrows, exact-Prime and
+adjacent-frame overlays, difference blending, thumbnails, and the complete
+strip. It also reports deterministic median RGB measurements for saturated
+uniform blue, dark blue/navy and warm cream. Those values are diagnostic, not
+automatic approval thresholds. The initial audit confirms visible blue drift:
+Prime F01 is median RGB (0,86,202), while multiple generated core frames are
+around (1,62–68,171–195).
 
 Darts V1 is preserved rejected provenance only: its action frames drifted
 toward three-quarter view and snapped against the exact side endpoint. Darts
@@ -56,7 +69,9 @@ on identical Prime pixels, x=125 root and three-darts-on-board state. This
 remains unapproved and changes no Final, runtime, production or approval
 record.
 
-Next visual gate: Frank reviews Darts V3 and Context Workbench V2.
+Next visual gate: Frank identifies any Darts V2 cells requiring palette
+correction in the strip inspector, then reviews Darts V3 in Context Workbench
+V3. Any correction must be a new masked candidate; do not alter V2 or V3.
 After that, build exact Prime stand↔sit transition strips against the seated
 foundation if its endpoints are approved, then process interaction families in
 small contextual batches. Swimming, gym and scuba require complete redesign;

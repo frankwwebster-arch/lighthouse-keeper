@@ -1,0 +1,1216 @@
+{
+  "schema": "lighthouse-keeper/darts-strip-inspector@1",
+  "set": "keeper-prime-darts-strip-inspector-v1",
+  "status": "inspection-only-no-art-change",
+  "sourceStrip": {
+    "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/keeper_prime_darts-right_f30.png",
+    "sourceSha256": "dbed7542a87edc458f2ed6cbaf60ebd5149ab2508933d3192f19cd1d828a40e7",
+    "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/registered-strip-dbed7542a87edc45.png",
+    "logicalFrameSize": [
+      56,
+      40
+    ],
+    "density": 8,
+    "frameCount": 30
+  },
+  "exactPrimeFrame": 1,
+  "primePalette": {
+    "blue": {
+      "medianRgb": [
+        0,
+        86,
+        202
+      ],
+      "classifiedPixels": 7399
+    },
+    "navy": {
+      "medianRgb": [
+        50,
+        57,
+        93
+      ],
+      "classifiedPixels": 5505
+    },
+    "cream": {
+      "medianRgb": [
+        251,
+        235,
+        211
+      ],
+      "classifiedPixels": 3855
+    }
+  },
+  "frames": [
+    {
+      "frame": 1,
+      "role": "exact Prime side-right endpoint",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_endpoint.png",
+      "sourceSha256": "f88ceee322f0e7d9334ed908116b2fc95c3121c8fdc2d549644a32aed213b126",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-f88ceee322f0e7d9.png",
+      "exactEndpoint": true,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            0,
+            86,
+            202
+          ],
+          "classifiedPixels": 7399
+        },
+        "navy": {
+          "medianRgb": [
+            50,
+            57,
+            93
+          ],
+          "classifiedPixels": 5505
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            235,
+            211
+          ],
+          "classifiedPixels": 3855
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 0,
+        "navy": 0,
+        "cream": 0
+      }
+    },
+    {
+      "frame": 2,
+      "role": "approved Prime posture bridge",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_posture-entry-7.png",
+      "sourceSha256": "1ed6685827b448acc85a0af524e48e566f7e7019647a7d1f0ac6207ac80369b1",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-1ed6685827b448ac.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            0,
+            85,
+            207
+          ],
+          "classifiedPixels": 7386
+        },
+        "navy": {
+          "medianRgb": [
+            53,
+            60,
+            97
+          ],
+          "classifiedPixels": 5799
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            233,
+            210
+          ],
+          "classifiedPixels": 3976
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 5.1,
+        "navy": 5.83,
+        "cream": 2.24
+      }
+    },
+    {
+      "frame": 3,
+      "role": "approved Prime posture bridge",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_posture-entry-6.png",
+      "sourceSha256": "e0e4a6c65639edc54ed6a6bfc7db22517b105395cc7ad3835783ab98dfd63f44",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-e0e4a6c65639edc5.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            76,
+            184
+          ],
+          "classifiedPixels": 10641
+        },
+        "navy": {
+          "medianRgb": [
+            50,
+            60,
+            98
+          ],
+          "classifiedPixels": 4139
+        },
+        "cream": {
+          "medianRgb": [
+            250,
+            232,
+            209
+          ],
+          "classifiedPixels": 4360
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 20.62,
+        "navy": 5.83,
+        "cream": 3.74
+      }
+    },
+    {
+      "frame": 4,
+      "role": "approved Prime posture bridge",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_posture-entry-5.png",
+      "sourceSha256": "e405ca455d787f9c609d7a69330af2288fd07ad39feb1b5d0086103ea806b9b3",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-e405ca455d787f9c.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            4,
+            66,
+            152
+          ],
+          "classifiedPixels": 13696
+        },
+        "navy": {
+          "medianRgb": [
+            24,
+            32,
+            64
+          ],
+          "classifiedPixels": 2098
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            231,
+            208
+          ],
+          "classifiedPixels": 4867
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 54,
+        "navy": 46.28,
+        "cream": 5
+      }
+    },
+    {
+      "frame": 5,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_posture-entry-4.png",
+      "sourceSha256": "aa8117d5cc0dcc9f0c4aea77db64fdd4f44ebcbd3c63fb395ce31030cd9034c2",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-aa8117d5cc0dcc9f.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            0,
+            81,
+            188
+          ],
+          "classifiedPixels": 11821
+        },
+        "navy": {
+          "medianRgb": [
+            53,
+            63,
+            103
+          ],
+          "classifiedPixels": 4249
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            237,
+            213
+          ],
+          "classifiedPixels": 4827
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 14.87,
+        "navy": 12.04,
+        "cream": 2.83
+      }
+    },
+    {
+      "frame": 6,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_posture-entry-3.png",
+      "sourceSha256": "686e398db898f077851d05168a98a08f6e3e431ca366a7bc46aae844c8e33f14",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-686e398db898f077.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            86,
+            196
+          ],
+          "classifiedPixels": 9487
+        },
+        "navy": {
+          "medianRgb": [
+            52,
+            62,
+            98
+          ],
+          "classifiedPixels": 7399
+        },
+        "cream": {
+          "medianRgb": [
+            250,
+            233,
+            213
+          ],
+          "classifiedPixels": 5486
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 6.08,
+        "navy": 7.35,
+        "cream": 3
+      }
+    },
+    {
+      "frame": 7,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_posture-entry-2.png",
+      "sourceSha256": "5097af98b6d3b50e7efa8d53aec317751d769a6201799cf6fff958325ecdc9da",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-5097af98b6d3b50e.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            69,
+            163
+          ],
+          "classifiedPixels": 14963
+        },
+        "navy": {
+          "medianRgb": [
+            28,
+            38,
+            68
+          ],
+          "classifiedPixels": 2181
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            231,
+            211
+          ],
+          "classifiedPixels": 6131
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 42.56,
+        "navy": 38.34,
+        "cream": 4
+      }
+    },
+    {
+      "frame": 8,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_posture-entry-1.png",
+      "sourceSha256": "4f190d3e0a31199e1eee1f1f38832919a10ac12c2a3ff49998cdbc63e373c498",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-4f190d3e0a31199e.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            14,
+            66,
+            146
+          ],
+          "classifiedPixels": 15123
+        },
+        "navy": {
+          "medianRgb": [
+            18,
+            31,
+            62
+          ],
+          "classifiedPixels": 2807
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            231,
+            205
+          ],
+          "classifiedPixels": 6037
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 61.09,
+        "navy": 51.58,
+        "cream": 7.21
+      }
+    },
+    {
+      "frame": 9,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-core-right_f01.png",
+      "sourceSha256": "d8c56771a209dbd26c067ba6cffb5ab01d2cebdd2fb5e12c2164ce0ccc0e15fc",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-d8c56771a209dbd2.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            66,
+            188
+          ],
+          "classifiedPixels": 13600
+        },
+        "navy": {
+          "medianRgb": [
+            42,
+            49,
+            82
+          ],
+          "classifiedPixels": 1999
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            236,
+            215
+          ],
+          "classifiedPixels": 4890
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 24.43,
+        "navy": 15.78,
+        "cream": 4.12
+      }
+    },
+    {
+      "frame": 10,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-core-right_f02.png",
+      "sourceSha256": "b195b6081193bf03ca810d9ed4702fd797a8879191f41480f49048af6688c661",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-b195b6081193bf03.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            62,
+            173
+          ],
+          "classifiedPixels": 14046
+        },
+        "navy": {
+          "medianRgb": [
+            43,
+            49,
+            84
+          ],
+          "classifiedPixels": 2138
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            236,
+            215
+          ],
+          "classifiedPixels": 4166
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 37.66,
+        "navy": 13.93,
+        "cream": 4.12
+      }
+    },
+    {
+      "frame": 11,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-core-right_f03.png",
+      "sourceSha256": "87e7f3eb47ba7fb9226045d2903084ca2618895e1434e382e89dd895b1c6ae8e",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-87e7f3eb47ba7fb9.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            0,
+            68,
+            195
+          ],
+          "classifiedPixels": 12172
+        },
+        "navy": {
+          "medianRgb": [
+            48,
+            56,
+            95
+          ],
+          "classifiedPixels": 3428
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            236,
+            214
+          ],
+          "classifiedPixels": 4750
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 19.31,
+        "navy": 3,
+        "cream": 3.16
+      }
+    },
+    {
+      "frame": 12,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-core-right_f04.png",
+      "sourceSha256": "e2385473508bad0054a87ef623e40ef6bf2afc5119780a4feedb19fa595f24e4",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-e2385473508bad00.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            63,
+            180
+          ],
+          "classifiedPixels": 13626
+        },
+        "navy": {
+          "medianRgb": [
+            45,
+            52,
+            88
+          ],
+          "classifiedPixels": 2413
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            236,
+            214
+          ],
+          "classifiedPixels": 4497
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 31.84,
+        "navy": 8.66,
+        "cream": 3.16
+      }
+    },
+    {
+      "frame": 13,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-core-right_f05.png",
+      "sourceSha256": "80376b355c0c4e7eeba5c21089acf4a53e63434b48874f18292004d4bf058699",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-80376b355c0c4e7e.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            64,
+            183
+          ],
+          "classifiedPixels": 13761
+        },
+        "navy": {
+          "medianRgb": [
+            46,
+            53,
+            90
+          ],
+          "classifiedPixels": 2670
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            236,
+            215
+          ],
+          "classifiedPixels": 3987
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 29.09,
+        "navy": 6.4,
+        "cream": 4.12
+      }
+    },
+    {
+      "frame": 14,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-core-right_f06.png",
+      "sourceSha256": "b9bc9d8257150b9cf60d1766143533d693a01b6ed28c9f9d529949ba9320d451",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-b9bc9d8257150b9c.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            64,
+            181
+          ],
+          "classifiedPixels": 14774
+        },
+        "navy": {
+          "medianRgb": [
+            45,
+            52,
+            88
+          ],
+          "classifiedPixels": 2419
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            236,
+            215
+          ],
+          "classifiedPixels": 3946
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 30.43,
+        "navy": 8.66,
+        "cream": 4.12
+      }
+    },
+    {
+      "frame": 15,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-core-right_f07.png",
+      "sourceSha256": "d7257bf1c3abc1c141c67b41ba22503460c3abea48193b9fa35d01a0c3d62f85",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-d7257bf1c3abc1c1.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            64,
+            182
+          ],
+          "classifiedPixels": 14385
+        },
+        "navy": {
+          "medianRgb": [
+            44,
+            51,
+            86
+          ],
+          "classifiedPixels": 2189
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            236,
+            215
+          ],
+          "classifiedPixels": 3893
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 29.75,
+        "navy": 11,
+        "cream": 4.12
+      }
+    },
+    {
+      "frame": 16,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-core-right_f08.png",
+      "sourceSha256": "1b09ee638128e027fc41011b8c2f8075cceada5127c6074718c6bb97c5c4f290",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-1b09ee638128e027.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            63,
+            171
+          ],
+          "classifiedPixels": 15016
+        },
+        "navy": {
+          "medianRgb": [
+            33,
+            39,
+            69
+          ],
+          "classifiedPixels": 1603
+        },
+        "cream": {
+          "medianRgb": [
+            250,
+            236,
+            215
+          ],
+          "classifiedPixels": 3780
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 38.61,
+        "navy": 34.48,
+        "cream": 4.24
+      }
+    },
+    {
+      "frame": 17,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-core-right_f09.png",
+      "sourceSha256": "8b6f05c88e0d05bf27e14ba30b5b5fce3f948225c7a59623389803b51f8e4ec0",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-8b6f05c88e0d05bf.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            63,
+            174
+          ],
+          "classifiedPixels": 14971
+        },
+        "navy": {
+          "medianRgb": [
+            38,
+            43,
+            74
+          ],
+          "classifiedPixels": 1803
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            236,
+            216
+          ],
+          "classifiedPixels": 3866
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 36.25,
+        "navy": 26.48,
+        "cream": 5.1
+      }
+    },
+    {
+      "frame": 18,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-core-right_f10.png",
+      "sourceSha256": "0de07a5cf8e8df5e6ffa780ea1d6cd725d8b0eb4160b3b3b3e6a413bbaaeb271",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-0de07a5cf8e8df5e.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            63,
+            175
+          ],
+          "classifiedPixels": 15345
+        },
+        "navy": {
+          "medianRgb": [
+            40,
+            46,
+            77
+          ],
+          "classifiedPixels": 1825
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            236,
+            215
+          ],
+          "classifiedPixels": 4025
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 35.48,
+        "navy": 21.84,
+        "cream": 4.12
+      }
+    },
+    {
+      "frame": 19,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-core-right_f11.png",
+      "sourceSha256": "068a4f85efdde656b0b731687c9984bc794cfed36076304e9e0a9d07d79465a3",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-068a4f85efdde656.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            62,
+            171
+          ],
+          "classifiedPixels": 15250
+        },
+        "navy": {
+          "medianRgb": [
+            40,
+            46,
+            77
+          ],
+          "classifiedPixels": 1963
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            236,
+            215
+          ],
+          "classifiedPixels": 4128
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 39.22,
+        "navy": 21.84,
+        "cream": 4.12
+      }
+    },
+    {
+      "frame": 20,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-core-right_f12.png",
+      "sourceSha256": "d4c27e293c97c31aaed08b00b3f770c5cc9ba64a31ba049d1f396ac94b7d358a",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-d4c27e293c97c31a.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            62,
+            173
+          ],
+          "classifiedPixels": 15056
+        },
+        "navy": {
+          "medianRgb": [
+            36,
+            42,
+            71
+          ],
+          "classifiedPixels": 1926
+        },
+        "cream": {
+          "medianRgb": [
+            250,
+            235,
+            214
+          ],
+          "classifiedPixels": 4570
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 37.66,
+        "navy": 30.08,
+        "cream": 3.16
+      }
+    },
+    {
+      "frame": 21,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-core-right_f13.png",
+      "sourceSha256": "3fe3ae25b81943e51b76f33cc5262286a57fa8e614b3f768907339500615676b",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-3fe3ae25b81943e5.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            64,
+            182
+          ],
+          "classifiedPixels": 13624
+        },
+        "navy": {
+          "medianRgb": [
+            44,
+            50,
+            85
+          ],
+          "classifiedPixels": 2247
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            236,
+            215
+          ],
+          "classifiedPixels": 4720
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 29.75,
+        "navy": 12.21,
+        "cream": 4.12
+      }
+    },
+    {
+      "frame": 22,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-core-right_f14.png",
+      "sourceSha256": "8a9340608100e75788738d036ff05373663c69f431f23b2c0d71af07af698d63",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-8a9340608100e757.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            64,
+            180
+          ],
+          "classifiedPixels": 13929
+        },
+        "navy": {
+          "medianRgb": [
+            40,
+            46,
+            79
+          ],
+          "classifiedPixels": 2134
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            236,
+            215
+          ],
+          "classifiedPixels": 4810
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 31.13,
+        "navy": 20.42,
+        "cream": 4.12
+      }
+    },
+    {
+      "frame": 23,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_posture-entry-1.png",
+      "sourceSha256": "4f190d3e0a31199e1eee1f1f38832919a10ac12c2a3ff49998cdbc63e373c498",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-4f190d3e0a31199e.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            14,
+            66,
+            146
+          ],
+          "classifiedPixels": 15123
+        },
+        "navy": {
+          "medianRgb": [
+            18,
+            31,
+            62
+          ],
+          "classifiedPixels": 2807
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            231,
+            205
+          ],
+          "classifiedPixels": 6037
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 61.09,
+        "navy": 51.58,
+        "cream": 7.21
+      }
+    },
+    {
+      "frame": 24,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_posture-entry-2.png",
+      "sourceSha256": "5097af98b6d3b50e7efa8d53aec317751d769a6201799cf6fff958325ecdc9da",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-5097af98b6d3b50e.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            69,
+            163
+          ],
+          "classifiedPixels": 14963
+        },
+        "navy": {
+          "medianRgb": [
+            28,
+            38,
+            68
+          ],
+          "classifiedPixels": 2181
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            231,
+            211
+          ],
+          "classifiedPixels": 6131
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 42.56,
+        "navy": 38.34,
+        "cream": 4
+      }
+    },
+    {
+      "frame": 25,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_posture-entry-3.png",
+      "sourceSha256": "686e398db898f077851d05168a98a08f6e3e431ca366a7bc46aae844c8e33f14",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-686e398db898f077.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            86,
+            196
+          ],
+          "classifiedPixels": 9487
+        },
+        "navy": {
+          "medianRgb": [
+            52,
+            62,
+            98
+          ],
+          "classifiedPixels": 7399
+        },
+        "cream": {
+          "medianRgb": [
+            250,
+            233,
+            213
+          ],
+          "classifiedPixels": 5486
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 6.08,
+        "navy": 7.35,
+        "cream": 3
+      }
+    },
+    {
+      "frame": 26,
+      "role": "new registered darts core",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_posture-entry-4.png",
+      "sourceSha256": "aa8117d5cc0dcc9f0c4aea77db64fdd4f44ebcbd3c63fb395ce31030cd9034c2",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-aa8117d5cc0dcc9f.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            0,
+            81,
+            188
+          ],
+          "classifiedPixels": 11821
+        },
+        "navy": {
+          "medianRgb": [
+            53,
+            63,
+            103
+          ],
+          "classifiedPixels": 4249
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            237,
+            213
+          ],
+          "classifiedPixels": 4827
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 14.87,
+        "navy": 12.04,
+        "cream": 2.83
+      }
+    },
+    {
+      "frame": 27,
+      "role": "approved Prime posture bridge",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_posture-entry-5.png",
+      "sourceSha256": "e405ca455d787f9c609d7a69330af2288fd07ad39feb1b5d0086103ea806b9b3",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-e405ca455d787f9c.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            4,
+            66,
+            152
+          ],
+          "classifiedPixels": 13696
+        },
+        "navy": {
+          "medianRgb": [
+            24,
+            32,
+            64
+          ],
+          "classifiedPixels": 2098
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            231,
+            208
+          ],
+          "classifiedPixels": 4867
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 54,
+        "navy": 46.28,
+        "cream": 5
+      }
+    },
+    {
+      "frame": 28,
+      "role": "approved Prime posture bridge",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_posture-entry-6.png",
+      "sourceSha256": "e0e4a6c65639edc54ed6a6bfc7db22517b105395cc7ad3835783ab98dfd63f44",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-e0e4a6c65639edc5.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            1,
+            76,
+            184
+          ],
+          "classifiedPixels": 10641
+        },
+        "navy": {
+          "medianRgb": [
+            50,
+            60,
+            98
+          ],
+          "classifiedPixels": 4139
+        },
+        "cream": {
+          "medianRgb": [
+            250,
+            232,
+            209
+          ],
+          "classifiedPixels": 4360
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 20.62,
+        "navy": 5.83,
+        "cream": 3.74
+      }
+    },
+    {
+      "frame": 29,
+      "role": "approved Prime posture bridge",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_posture-entry-7.png",
+      "sourceSha256": "1ed6685827b448acc85a0af524e48e566f7e7019647a7d1f0ac6207ac80369b1",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-1ed6685827b448ac.png",
+      "exactEndpoint": false,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            0,
+            85,
+            207
+          ],
+          "classifiedPixels": 7386
+        },
+        "navy": {
+          "medianRgb": [
+            53,
+            60,
+            97
+          ],
+          "classifiedPixels": 5799
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            233,
+            210
+          ],
+          "classifiedPixels": 3976
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 5.1,
+        "navy": 5.83,
+        "cream": 2.24
+      }
+    },
+    {
+      "frame": 30,
+      "role": "exact Prime side-right endpoint",
+      "source": "art/drafts/keeper-prime-darts-context-2026-10-17-v2/drafts/frames/keeper_prime_darts-right_endpoint.png",
+      "sourceSha256": "f88ceee322f0e7d9334ed908116b2fc95c3121c8fdc2d549644a32aed213b126",
+      "url": "/keeper-review/keeper-prime-darts-strip-inspector-v1/assets/frame-f88ceee322f0e7d9.png",
+      "exactEndpoint": true,
+      "palette": {
+        "blue": {
+          "medianRgb": [
+            0,
+            86,
+            202
+          ],
+          "classifiedPixels": 7399
+        },
+        "navy": {
+          "medianRgb": [
+            50,
+            57,
+            93
+          ],
+          "classifiedPixels": 5505
+        },
+        "cream": {
+          "medianRgb": [
+            251,
+            235,
+            211
+          ],
+          "classifiedPixels": 3855
+        }
+      },
+      "paletteDistanceFromPrime": {
+        "blue": 0,
+        "navy": 0,
+        "cream": 0
+      }
+    }
+  ],
+  "colourMethod": "Median RGB among deterministic opaque-pixel classes: saturated uniform blue, dark blue/navy and warm cream. Values diagnose drift but do not define an approval threshold."
+}
