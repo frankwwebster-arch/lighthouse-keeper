@@ -1,0 +1,34 @@
+{
+  "schema": "lighthouse-keeper/reversible-review-batch@1",
+  "set": "keeper-prime-sit-stand-side-v3",
+  "status": "review-candidate-delivery-correction",
+  "predecessor": {
+    "set": "keeper-prime-sit-stand-side-v2",
+    "register": "art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/batch-register.json",
+    "sha256": "3d6ce9f708905850850d57de61e6c3f9c6d8d6abe45f9e1c8be0111490139e3c"
+  },
+  "immutableContent": {
+    "keeperFrames": "byte-identical to V2/V1",
+    "route": {
+      "file": "public/keeper-review/keeper-prime-sit-stand-side-v2/route.json",
+      "sha256": "9b14214b7ac91727451d6daa97099a4e292e27ca9fc0274988938f5fe4a0de53"
+    },
+    "chairGeometry": "identical to V2: top 11 lp above floor; depth 11 lp spine-to-knee"
+  },
+  "candidate": {
+    "page": {
+      "file": "public/keeper-review/keeper-prime-sit-stand-side-v3/index.html",
+      "sha256": "6189bc1b0e2a39b39f4342b0380f8f1155481dfad3f6715807149bbea669c6b1"
+    },
+    "review": "/keeper-review/keeper-prime-sit-stand-side-v3/",
+    "workbench": "/keeper-review/keeper-prime-context-workbench-v12/"
+  },
+  "checks": {
+    "absoluteLoaderPaths": true,
+    "V2ArtworkUnchanged": true,
+    "V2MotionUnchanged": true,
+    "finalUnchanged": true,
+    "runtimeUnchanged": true,
+    "productionUnchanged": true
+  }
+}

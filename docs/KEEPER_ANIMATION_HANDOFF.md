@@ -15,9 +15,9 @@
 **Purpose:** this is the restart document for the keeper-animation work. A new
 Codex task should be able to continue from here without relying on the old chat.
 
-## Active side-right sit/stand candidate V2 — 17 October 2026
+## Active side-right sit/stand candidate V3 — 17 October 2026
 
-`/keeper-review/keeper-prime-sit-stand-side-v2/` is the current redrafted
+`/keeper-review/keeper-prime-sit-stand-side-v3/` is the current redrafted
 sitting transition. Its complete 45-frame review route is approved Walk V6 →
 approved walk-to-stop → six-pose stand-to-sit → 600 ms seated beat → exact
 byte-reversed sit-to-stand → approved stop-to-walk → approved Walk V6. The
@@ -43,9 +43,11 @@ contact to world x=88 at the back-of-knee line. In the seated 32 × 40 cell
 those landmarks are `[7,29]` and `[18,29]` (source `[56,232]` and
 `[144,232]`). The seat cannot extend farther forward.
 
-The versioned pack is
-`art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/`; Workbench V11 replaces
-only V10's active sitting link and preserves V1 as immutable history. V2 is
+The visual pack remains
+`art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/`. The delivery-only V3
+pack and Workbench V12 add absolute loader paths after V2/V11 failed under
+Vercel's slash canonicalisation; all visual, route and chair bytes are unchanged.
+V1, V2 and V11 remain immutable history. V3 is
 awaiting Frank. Nothing is Final, runtime or production, and the other sitting
 directions must not be inferred from it.
 

@@ -329,6 +329,13 @@ const sitStandSideV2 = spawnSync('node', ['scripts/verify_keeper_prime_sit_stand
 })
 if (sitStandSideV2.error) throw sitStandSideV2.error
 if (sitStandSideV2.status !== 0) process.exit(sitStandSideV2.status ?? 1)
+const sitStandSideV3 = spawnSync('node', ['scripts/verify_keeper_prime_sit_stand_side_v3_delivery.mjs'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (sitStandSideV3.error) throw sitStandSideV3.error
+if (sitStandSideV3.status !== 0) process.exit(sitStandSideV3.status ?? 1)
 const animationBankAuditV1 = spawnSync('node', ['scripts/verify_keeper_prime_animation_bank_audit_v1.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },

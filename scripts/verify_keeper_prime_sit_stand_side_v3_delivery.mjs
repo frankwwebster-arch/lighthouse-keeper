@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict'
+import fs from 'node:fs'
+import crypto from 'node:crypto'
+
+const read = (file) => fs.readFileSync(file, 'utf8')
+const json = (file) => JSON.parse(read(file))
+const hash = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')
+assert.ok(read('public/keeper-review/keeper-prime-sit-stand-side-v3/index.html').includes("location='../keeper-prime-sit-stand-side-v2/index.html'"))
+const workbenchPage = read('public/keeper-review/keeper-prime-context-workbench-v12/index.html')
+assert.ok(workbenchPage.includes('/keeper-review/keeper-prime-context-workbench-v11/loader.js'))
+assert.ok(workbenchPage.includes("replace('/keeper-review/keeper-prime-sit-stand-side-v2/','/keeper-review/keeper-prime-sit-stand-side-v3')"))
+assert.equal(fs.existsSync('public/keeper-review/keeper-prime-sit-stand-side-v3/loader.js'), false)
+assert.equal(fs.existsSync('public/keeper-review/keeper-prime-context-workbench-v12/loader.js'), false)
+const v2Register = json('art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/batch-register.json')
+const v3Register = json('art/drafts/keeper-prime-sit-stand-side-2026-10-17-v3/batch-register.json')
+assert.equal(v3Register.predecessor.sha256, hash('art/drafts/keeper-prime-sit-stand-side-2026-10-17-v2/batch-register.json'))
+assert.equal(v3Register.immutableContent.route.sha256, hash('public/keeper-review/keeper-prime-sit-stand-side-v2/route.json'))
+assert.equal(v2Register.checks.everyKeeperFrameByteIdenticalToV1, true)
+const catalogue = json('art/drafts/keeper-prime-context-workbench-2026-10-17-v12/catalog.json')
+assert.equal(catalogue.sequences.length, 11)
+assert.ok(catalogue.sequences.some((entry) => entry.id === 'prime-side-sit-stand-v3' && entry.url === '/keeper-review/keeper-prime-sit-stand-side-v3/'))
+const manifest = json('review-archive/sets/keeper-prime-sit-stand-side-v3.json')
+assert.equal(manifest.set, 'keeper-prime-sit-stand-side-v3')
+assert.equal(Object.keys(manifest.entries).length, 18)
+console.log('Keeper Prime sit/stand V3 delivery verified: V2 geometry, frames and route exact; absolute Vercel-safe loaders; Workbench V12 selects V3.')

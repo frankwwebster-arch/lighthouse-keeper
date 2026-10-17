@@ -1,0 +1,19 @@
+{
+  "schema": "lighthouse-keeper/context-workbench-register@12",
+  "set": "keeper-prime-context-workbench-v12",
+  "status": "delivery-only-successor-to-v11",
+  "catalogue": {
+    "file": "art/drafts/keeper-prime-context-workbench-2026-10-17-v12/catalog.json",
+    "sha256": "dbc680755264d44d932332cb36cd96a6a1fbde4abb8d1a8c3195e31a8c1259d3",
+    "choices": 11
+  },
+  "review": "/keeper-review/keeper-prime-context-workbench-v12/",
+  "checks": {
+    "absoluteLoaderPath": true,
+    "V11ChoicesRetained": true,
+    "sittingCandidate": "keeper-prime-sit-stand-side-v3",
+    "finalUnchanged": true,
+    "runtimeUnchanged": true,
+    "productionUnchanged": true
+  }
+}
