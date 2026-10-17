@@ -1,0 +1,41 @@
+{
+  "version": 24,
+  "status": "requested-chair-correction-awaiting-visual-confirmation",
+  "base": {
+    "version": 23,
+    "sha256": "5d5451acbaa81a48918268d25482a1d3f657a77c441c9d5b4f87ed547d4f9707"
+  },
+  "change": {
+    "object": "single chair at table for one",
+    "old": "side-on, between sink and table",
+    "new": "rear view, centred on player-facing side, seat faces table/rear wall",
+    "keeperOrientation": "back to player when seated",
+    "chairCount": 1
+  },
+  "source": {
+    "generator": "OpenAI built-in image editing",
+    "sha256": "85e50fc43d43538e226e41e9d781cd8eee805b6025fe15302639a8f178ce71b2",
+    "size": [
+      2169,
+      725
+    ]
+  },
+  "outputs": {
+    "full-kitchen-rear-facing-chair.png": {
+      "sha256": "85e50fc43d43538e226e41e9d781cd8eee805b6025fe15302639a8f178ce71b2"
+    },
+    "table-before.png": {
+      "sha256": "8cabc974068b139e8472f27b7fecfce97a17aa44d91104de57a2b0d1ab974ac0"
+    },
+    "table-after.png": {
+      "sha256": "e645345d8a288fb6b969a34215f024d6d3f512e40e2da741d892e115ea3441df"
+    }
+  },
+  "boundaries": {
+    "approved": false,
+    "promoted": false,
+    "runtimeChanged": false,
+    "finalChanged": false,
+    "keeperChanged": false
+  }
+}

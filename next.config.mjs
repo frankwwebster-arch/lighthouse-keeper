@@ -203,6 +203,11 @@ export default {
         destination: '/keeper-review/kitchen-continuous-run-approved-v23/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-rear-facing-chair-v24',
+        destination: '/keeper-review/kitchen-rear-facing-chair-v24/index.html',
+        permanent: false,
+      },
     ]
   },
 }

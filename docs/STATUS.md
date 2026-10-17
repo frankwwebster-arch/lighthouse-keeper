@@ -80,7 +80,11 @@ V20 double oven as Upgrade 1, standalone pedal bin, and one-person table/chair.
 V22 is immutable rejected assembly provenance because its deterministic rebuild
 misread the kettle edge as a shallower cabinet body. V23 is approved visually
 but is not promoted or wired into the live game; details are in
-`docs/KITCHEN_CONTINUOUS_RUN_APPROVED_V23_2026-10-17.md`.
+`docs/KITCHEN_CONTINUOUS_RUN_APPROVED_V23_2026-10-17.md`. The active one-change
+successor is `/keeper-review/kitchen-rear-facing-chair-v24/`: its sole chair is
+centred on the player-facing side of the table and shown from behind, so seated
+Prime faces the rear wall with his back to the player. V24 awaits visual
+confirmation and remains unpromoted/unwired.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

@@ -329,16 +329,25 @@ approval record is
 and its hand-back is
 [`docs/CODEX_TO_CLAUDE_KITCHEN_CONTINUOUS_RUN_APPROVED_V23_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_CONTINUOUS_RUN_APPROVED_V23_2026-10-17.md).
 V23 remains unpromoted and unwired.
+Frank's only follow-up is implemented in Kitchen V24 at
+`/keeper-review/kitchen-rear-facing-chair-v24/`: the single chair moves from
+the side gap to the player-facing side of the table, is drawn directly from
+behind, and is centred on the tabletop. A seated Prime therefore faces the
+rear wall with his back to the player. V23 remains immutable as the approved
+kitchen base; V24 is the one-change room successor awaiting visual
+confirmation. The record is
+[`docs/KITCHEN_REAR_FACING_CHAIR_V24_2026-10-17.md`](docs/KITCHEN_REAR_FACING_CHAIR_V24_2026-10-17.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
 and
 [`docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md).
-Only exact Kitchen V5 and Kitchen V20–V23 remain in active kitchen review tooling.
+Only exact Kitchen V5 and Kitchen V20–V24 remain in active kitchen review tooling.
 V5 is the retained old-family reference, V20 is immutable fitted-galley
 provenance, V21 is immutable complete-asset provenance, V22 is immutable
-rejected assembly provenance, and V23 is the approved full-room visual
-authority. None is promoted or wired.
+rejected assembly provenance, V23 is the approved full-room base, and V24 is
+the rear-facing-chair successor awaiting confirmation. None is promoted or
+wired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:
