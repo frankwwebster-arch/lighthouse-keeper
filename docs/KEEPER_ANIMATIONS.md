@@ -88,13 +88,18 @@ Front V1 is rejected: sit→stand review frames 2 and 3 widened beyond Prime
 canon. Preserve its decision at
 `docs/review/keeper-prime-sit-stand-front-v1-rejection-2026-10-17.json`.
 
+V2 is also rejected because complete-context frames 29 and 30 exposed action
+F3 snapping from 167 px to 158 px F4. Preserve its decision at
+`docs/review/keeper-prime-sit-stand-front-v2-rejection-2026-10-17.json`.
+
 The replacement review gate is
-`/keeper-review/keeper-prime-sit-stand-front-v2/`. It preserves exact V1
-F1–F3/F6 and replaces only F4/F5 with new narrower complete Prime redraws. The
-exact endpoints and complete 59-frame walk/stop/turn/action/return route remain.
-Historical `keeper_sit_front` contributes choreography only. Ghosts, proof,
-isolated playback and 8×/4×/1× views remain. V2 authorises neither promotion
-nor work on the back-facing direction.
+`/keeper-review/keeper-prime-sit-stand-front-v3/`. It preserves V2 F1, F2 and
+F4–F6 byte-identically and replaces only F3 with a 158 px complete Prime
+redraw, so frames 28–30 measure 157→158→158 px. The exact endpoints and complete
+59-frame walk/stop/turn/action/return route remain. Historical
+`keeper_sit_front` contributes choreography only. Ghosts, proof, isolated
+playback and 8×/4×/1× views remain. V3 authorises neither promotion nor work on
+the back-facing direction.
 
 Read
 `docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md` before

@@ -1,0 +1,44 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-17",
+  "reviewedBy": "Frank",
+  "candidate": "keeper-prime-sit-stand-front-2026-10-17-v2",
+  "decision": "rejected-complete-context-width-snap-frames-29-and-30",
+  "wording": "it's still frames 29 and 30 of the Complete Context animation where his width changes",
+  "rejectedHashes": {
+    "batchRegister": "8c82b66e522d90a9aa591ea78169b4bb9d6a5b9c6b51dc13982e56f1114f642f",
+    "routeData": "210fbb9f84e27ef31130431c8ea88cbe52c66052b45a1fcab5c1fc4517cee6ae",
+    "reviewRoute": "4b7a3a3fb6a79a1b7909b9d0cde190d4960551aaaad1994020d4170fa178ebe8",
+    "keeperFrames": [
+      "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "3692f5cea2a3f4b4e67907ecaf65c6288aa941c3f468cf0099dbccebd8323c63",
+      "defc055627c5efac7d6b677acd9f425a8cb815339e2ad46359bd335b67435ec1",
+      "218428cae398af33b054206b313a1ce838184e095535055d6fd5584b9d7e0cd5",
+      "06f812cc04ce7876026eda4513a3fffa6673cdd3d20b131f1b5fee8ceda52d23",
+      "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce"
+    ]
+  },
+  "delivery": {
+    "candidateCommit": "248bfc6",
+    "deployCommit": "8fb6614",
+    "reviewUrl": "https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v2/"
+  },
+  "requiredCorrection": {
+    "completeContextFrames": [29, 30],
+    "underlyingActionFrames": [3, 4],
+    "fault": "Action F3 spikes to 167 px between 157 px F2 and 158 px F4, so complete-context frames 29 and 30 expose a conspicuous width snap",
+    "remedy": "Create a new versioned candidate with a newly redrawn narrow Prime F3; preserve V2 F1, F2 and F4-F6 byte-identically"
+  },
+  "approvalBoundary": {
+    "frontV1Approved": false,
+    "frontV1Rejected": true,
+    "frontV2Approved": false,
+    "frontV2Rejected": true,
+    "frontV3Approved": false,
+    "backSitStandApproved": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false,
+    "promotionPerformed": false
+  }
+}

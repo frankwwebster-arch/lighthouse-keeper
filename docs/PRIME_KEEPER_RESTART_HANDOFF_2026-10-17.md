@@ -88,14 +88,20 @@ Frank rejected front-facing V1 because sit→stand-only frames 2 and 3 widened
 significantly beyond Prime canon. Preserve V1 and its exact decision at
 `docs/review/keeper-prime-sit-stand-front-v1-rejection-2026-10-17.json`.
 
-Front-facing V2 is now the single active next-direction candidate at
-`/keeper-review/keeper-prime-sit-stand-front-v2/`. It retains exact V1 F1–F3
-and F6, redraws only F4/F5 as narrower complete Prime figures, and preserves
-the exact endpoints, approved turn/walk context, 59-frame route, ghosts and
-three scales. Historical `keeper_sit_front` contributes choreography only and
-zero visible pixels. Nothing about publishing V2 approves it. Back and the two
-rear angles remain unapproved. After front and back are decided, audit whether
-the approved turn network already covers the rear angles.
+Frank rejected front-facing V2 because complete-context frames 29 and 30 still
+exposed action F3 snapping from 167 px to 158 px F4. Preserve V2 and its exact
+decision at
+`docs/review/keeper-prime-sit-stand-front-v2-rejection-2026-10-17.json`.
+
+Front-facing V3 is now the single active next-direction candidate at
+`/keeper-review/keeper-prime-sit-stand-front-v3/`. It retains V2 F1, F2 and
+F4–F6 byte-identically, redraws only F3 as a complete Prime-derived figure at
+158 px width, and preserves the exact endpoints, approved turn/walk context,
+59-frame route, ghosts and three scales. Historical `keeper_sit_front`
+contributes choreography only and zero visible pixels. Nothing about publishing
+V3 approves it. Back and the two rear angles remain unapproved. After front and
+back are decided, audit whether the approved turn network already covers the
+rear angles.
 
 ## Binding method for every inherited animation
 
@@ -180,13 +186,15 @@ Current live inspection:
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-side-v6/`
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-side-left-v1/`
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v1/` (rejected immutable provenance)
-- `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v2/` (current width-corrected review candidate)
+- `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v2/` (rejected immutable provenance)
 
-Front-facing V2 was deployed from exact commit `8fb6614` and verified live on
-17 October 2026. Its six-frame `Sit → stand only` view loads all 26 unique
-images before enabling controls; the standing-Prime and previous-frame ghosts
-are available for width comparison. This is a review deployment only: V1 stays
-rejected and V2 has not been approved or promoted.
+Front-facing V2 was deployed from exact commit `8fb6614`, reviewed in the full
+context and rejected. V3 is verified locally and ready for its automatic review
+deployment. Its 59-frame `Complete context` view loads all 25 unique images
+before enabling controls; the standing-Prime and previous-frame ghosts expose
+the corrected 157→158→158 px progression across frames 28–30. This remains a
+review candidate only: V1 and V2 stay rejected and V3 has not been approved or
+promoted.
 
 For every subsequent versioned review candidate, publishing and verifying the
 review page is part of preparing it for Frank. Open the live frame reviewer and
@@ -199,9 +207,10 @@ checkpoint no Prime animation has been promoted into Final/runtime/production.
 
 ## Exact next-task boundary
 
-Stop for Frank's visual decision on front-facing V2. If he approves it, record
-a separate hash-pinned decision without promoting it; if he requests changes,
-create front-facing V3 rather than rewriting V2. Only then begin the requested
+Deploy and send Frank the live front-facing V3 reviewer, then stop for his
+visual decision. If he approves it, record a separate hash-pinned decision
+without promoting it; if he requests changes, create front-facing V4 rather
+than rewriting V3. Only then begin the requested
 back-facing direction. After that decision, audit whether the approved turn
 network makes separate rear-angle sit/stand transitions unnecessary. One
 accepted direction at a time remains the safe cadence.

@@ -67,13 +67,15 @@ No Final/runtime/production promotion has occurred. A fresh task should begin wi
 `docs/PRIME_KEEPER_RESTART_HANDOFF_2026-10-17.md`.
 
 The active next-direction proposal is
-`/keeper-review/keeper-prime-sit-stand-front-v2/`. Frank rejected V1 because
-sit→stand review frames 2 and 3—action F5/F4—became significantly wider than
-Prime canon. V2 keeps F1–F3/F6 byte-identical, replaces only F4/F5 with narrower
-complete Prime redraws, and keeps the exact 59-frame context. The page includes
-ghosts, action-only playback, source/candidate proof and 8×/4×/1× inspection.
-Historical `keeper_sit_front` remains choreography-only evidence. It awaits
-Frank; do not infer approval, promote it or begin back-facing work.
+`/keeper-review/keeper-prime-sit-stand-front-v3/`. Frank rejected V1 for the
+wide reverse F5/F4 poses, then rejected V2 because complete-context frames 29
+and 30 still exposed action F3 snapping from 167 px to 158 px F4. V3 preserves
+V2 F1, F2 and F4–F6 byte-identically and replaces only F3 with a complete
+Prime-derived 158 px redraw. The exact 59-frame context, ghosts, action-only
+playback, source/candidate proof and 8×/4×/1× inspection remain. Preserve both
+hash-pinned rejection records. Historical `keeper_sit_front` remains
+choreography-only evidence. V3 awaits Frank; do not infer approval, promote it
+or begin back-facing work.
 
 Future pub/games-room layout rule: mount the approved dartboard on the
 right-hand cupboard-door leaf. It is edge-on while that door is closed and is

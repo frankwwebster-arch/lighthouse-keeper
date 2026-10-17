@@ -83,13 +83,17 @@ significantly wider than Prime canon. The exact rejection and V1 hashes are
 pinned in
 `docs/review/keeper-prime-sit-stand-front-v1-rejection-2026-10-17.json`.
 
-The replacement one-direction gate is front-facing V2 at
-`/keeper-review/keeper-prime-sit-stand-front-v2/`. It preserves exact V1 F1–F3
-and F6, redraws only action F4/F5 as complete narrower Prime figures, and
-reduces their registered widths from 172/160 px to 158/150 px. Exact endpoints,
+Frank then rejected V2 because complete-context frames 29 and 30 exposed the
+remaining F3→F4 width snap. That decision and V2's exact hashes are pinned in
+`docs/review/keeper-prime-sit-stand-front-v2-rejection-2026-10-17.json`.
+
+The active one-direction gate is front-facing V3 at
+`/keeper-review/keeper-prime-sit-stand-front-v3/`. It preserves V2 F1, F2 and
+F4–F6 byte-identically and redraws only action F3, reducing the frame-29 width
+from 167 px to 158 px so frames 28–30 measure 157→158→158 px. Exact endpoints,
 the 59-frame route, approved walk/turn context, reverse order, ghosts and all
 three scales remain. Historical `keeper_sit_front` contributes choreography
-only and zero visible pixels. V2 awaits Frank and changes no Final, runtime or
+only and zero visible pixels. V3 awaits Frank and changes no Final, runtime or
 production asset.
 
 Frank approved exact Darts Context V8 on 17 October 2026. Its immutable decision
