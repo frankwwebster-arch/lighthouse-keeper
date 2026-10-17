@@ -1,6 +1,6 @@
 # Keeper Prime animation-bank audit
 
-**Measured:** 17 October 2026  
+**Measured:** 17 October 2026
 **Status:** read-only inventory and redraft queue; nothing in this audit is promoted.
 
 This inventory covers **308** production Keeper animations and technical neutrals. Rig fragments and the static reference sheet are intentionally excluded. Every row retains its exact frame range, geometry, outfit, endpoints, dependencies, current rendering family and transition risks in `data/keeper-prime-animation-bank-audit-v1.json`.
@@ -414,4 +414,3 @@ Swimming, gym and scuba are full-redraw families. `keeper_count_money` must not 
 6. Redraw swimming, gym and scuba from first principles after their environments and props are fixed.
 
 No action may be approved from an isolated loop.
-

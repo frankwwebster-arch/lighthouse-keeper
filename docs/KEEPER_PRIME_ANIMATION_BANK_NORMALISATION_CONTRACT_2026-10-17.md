@@ -1,6 +1,6 @@
 # Keeper Prime animation-bank normalisation contract
 
-**Authority date:** 17 October 2026  
+**Authority date:** 17 October 2026
 **Status:** mandatory for every new action-animation draft; no promotion is
 authorised by this document.
 
@@ -110,4 +110,3 @@ Review media must use the content-addressed archive. A batch is deployed only
 after its complete review pages, deterministic checks, documentation audit and
 ordinary commit are ready; the release then uses the repository's explicit
 `[deploy]` workflow once for that review batch.
-

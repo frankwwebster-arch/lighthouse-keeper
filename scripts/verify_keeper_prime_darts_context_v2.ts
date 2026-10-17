@@ -55,4 +55,3 @@ for (const required of ["Exact Prime ghost", "Previous-frame ghost", "Loop actio
 for (const entry of register.publishedAssets) assert.equal(entry.sourceSha256, sha(path.join(root, entry.source)), `published source hash drift: ${entry.source}`);
 
 console.log(`Keeper Prime Darts Context V2 verified: ${data.route.length} route frames, three identical 14-frame throws, full-stride collection, exact endpoints and ghost controls.`);
-
