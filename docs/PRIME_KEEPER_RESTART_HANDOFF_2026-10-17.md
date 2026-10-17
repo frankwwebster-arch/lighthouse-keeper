@@ -187,14 +187,15 @@ Current live inspection:
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-side-left-v1/`
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v1/` (rejected immutable provenance)
 - `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v2/` (rejected immutable provenance)
+- `https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-front-v3/` (current complete-context width-smoothed review candidate)
 
 Front-facing V2 was deployed from exact commit `8fb6614`, reviewed in the full
-context and rejected. V3 is verified locally and ready for its automatic review
-deployment. Its 59-frame `Complete context` view loads all 25 unique images
-before enabling controls; the standing-Prime and previous-frame ghosts expose
-the corrected 157→158→158 px progression across frames 28–30. This remains a
-review candidate only: V1 and V2 stay rejected and V3 has not been approved or
-promoted.
+context and rejected. V3 was deployed from exact commit `07be590` and verified
+live on 17 October 2026. Its 59-frame `Complete context` view loads all 25
+unique images before enabling controls; the standing-Prime and previous-frame
+ghosts expose the corrected 157→158→158 px progression across frames 28–30.
+This remains a review candidate only: V1 and V2 stay rejected and V3 has not
+been approved or promoted.
 
 For every subsequent versioned review candidate, publishing and verifying the
 review page is part of preparing it for Frank. Open the live frame reviewer and
@@ -207,10 +208,10 @@ checkpoint no Prime animation has been promoted into Final/runtime/production.
 
 ## Exact next-task boundary
 
-Deploy and send Frank the live front-facing V3 reviewer, then stop for his
-visual decision. If he approves it, record a separate hash-pinned decision
-without promoting it; if he requests changes, create front-facing V4 rather
-than rewriting V3. Only then begin the requested
+Stop for Frank's visual decision on the live front-facing V3 reviewer. If he
+approves it, record a separate hash-pinned decision without promoting it; if he
+requests changes, create front-facing V4 rather than rewriting V3. Only then
+begin the requested
 back-facing direction. After that decision, audit whether the approved turn
 network makes separate rear-angle sit/stand transitions unnecessary. One
 accepted direction at a time remains the safe cadence.
