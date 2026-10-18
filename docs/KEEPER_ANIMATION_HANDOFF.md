@@ -2182,7 +2182,9 @@ decoded before controls enabled, the frame-9 fully-hidden cupboard swap and
 moving-leg outward sweep playback were checked live without console errors.
 The tiny deployed shell fetches the fuller reviewer from immutable candidate
 commit `55c5615`, rather than mutable `main`. V2 awaits Frank and must not be
-promoted. Any amendment is a new V3.
+promoted. Its fixed broom dimensions and the reusable (but prop-agnostic)
+grounded-tool handoff are now recorded in
+`docs/KEEPER_GROUNDED_TOOL_PROP_CONTRACT.md`. Any amendment is a new V3.
 
 ## Ready-to-paste opening prompt for the next review iteration
 

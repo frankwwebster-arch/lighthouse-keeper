@@ -8,3 +8,9 @@ On 18 October 2026 it decoded all 98 unique images before enabling controls;
 the frame-9 fully-hidden cupboard handoff and moving-leg outward sweep playback
 were checked with no browser-console errors. The tiny public shell fetches this
 candidate's full reviewer from immutable commit `55c5615`, not mutable `main`.
+
+The exact reusable broom dimensions, ownership requirements and the
+prop-agnostic cupboard-handoff state machine are recorded in
+`docs/KEEPER_GROUNDED_TOOL_PROP_CONTRACT.md`. A Hoover or lawnmower may reuse
+the handoff and root-motion idea only with a separately owned, dimensionally
+specified tool prop and its own contact verification.

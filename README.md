@@ -128,6 +128,9 @@ back, then the mirrored standard-walk exit. V2 is an immutable review candidate
 only and is neither approved nor promoted. It is live from review-only deploy
 commit `08c9cc6`; the reviewer decoded all 98 unique images before controls
 enabled and its full immutable source is pinned to candidate commit `55c5615`.
+The exact traditional-broom dimensions and the reusable, prop-agnostic cupboard
+handoff for compatible future grounded tools are in
+[`docs/KEEPER_GROUNDED_TOOL_PROP_CONTRACT.md`](docs/KEEPER_GROUNDED_TOOL_PROP_CONTRACT.md).
 
 Back V2 is live for review from exact deploy commit `f165576`. The production
 route contains 61 frames and all 36 unique route/comparison image URLs were
