@@ -1,0 +1,8 @@
+{
+  "set": "kitchen-rebuild-states-2026-10-18-v6",
+  "status": "awaiting-switchable-effect-visual-review",
+  "parent": "kitchen-rebuild-states-2026-10-18-v5",
+  "promotion": "none",
+  "runtimeWiring": "unchanged",
+  "rollback": "Delete V6 only; V5 remains immutable."
+}

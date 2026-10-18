@@ -469,19 +469,23 @@ x=84–588, common y=134 worktop/y=151 fascia/y=208 foot line, and complete
 one-person table/rear-facing chair. Frank called it excellent subject to making
 the fridge door white.
 
-The active gate is Rebuild V5 at
-`/keeper-review/kitchen-rebuild-states-v5/`. It retains V4 state-object art
+The active gate is Rebuild V6 at
+`/keeper-review/kitchen-rebuild-states-v6/`. It retains V5 state-object art
 separately from eleven reusable effect families, each with three animated
 40-frame/4-fps ten-second models. The native-scale placement workbench supports
 drag, independent width/height resize, four-sided crop, pixel nudges,
-independent saved 0.1×–4× playback speed, browser-local persistence and JSON
-export. Every source remains a canonical ten-second loop. V3 restored broken
+independent saved enable/disable state and 0.1×–4× playback speed,
+browser-local persistence and JSON export. Every source remains a canonical
+ten-second loop. V3 restored broken
 toaster/tap headroom, locked broken-oven flickers to the On-state anchors and
 normalized the table/chair to the canonical furniture datums. The approved
-V31 bin smell and fly loops are reusable without changing their pixels. V5
-corrects only V4's stale review-boundary label; every image and animation is
-byte-identical. Its record is
-[`docs/KITCHEN_REBUILD_STATES_V5_2026-10-18.md`](docs/KITCHEN_REBUILD_STATES_V5_2026-10-18.md).
+V31 bin smell and fly loops are reusable without changing their pixels. V6
+adds effect-family switches and starts the rejected fridge drip disabled. Its
+broken oven layers smoke, a locked fascia warning flicker and a separately
+locked On-derived cavity-light flicker; its Broken object permanently contains
+a burnt blackened roasting item. All unrelated V5 media remain byte-identical.
+Its record is
+[`docs/KITCHEN_REBUILD_STATES_V6_2026-10-18.md`](docs/KITCHEN_REBUILD_STATES_V6_2026-10-18.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
@@ -500,8 +504,8 @@ or wired. V32–V41 are rejected immutable provenance; V39's earlier approval is
 historical rather than the current construction authority. Rebuild V1 is the
 immutable coherent foundation; Rebuild V2 is immutable state-family
 provenance; Rebuild V3 is immutable placement-workbench provenance; Rebuild V4
-is immutable variable-speed provenance; Rebuild V5
-is the sole active state/effect-placement gate and
+is immutable variable-speed provenance; Rebuild V5 is immutable corrected-copy
+provenance; Rebuild V6 is the sole active state/effect-placement gate and
 awaits review.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
