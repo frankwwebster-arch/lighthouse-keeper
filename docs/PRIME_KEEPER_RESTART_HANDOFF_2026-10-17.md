@@ -315,3 +315,12 @@ Final/runtime artwork or game logic and may not be promoted without a later,
 separate explicit instruction. The immutable V6 candidate is commit
 `59990fcc`; shell-pin commit `a69b5bc4` fetches that exact candidate rather
 than mutable `main`.
+
+Review-only deployment commit `1c1ac67a` was verified live on 18 October 2026
+at `/keeper-review/keeper-prime-sweep-broom-v6/`: the production shell served
+the exact `59990fcc` pin, the pinned reviewer loaded, and every unique
+actor/prop/contact/comparison URL returned successfully. The dedicated V6
+verifier, TypeScript check and production build pass. The repository-wide
+`npm test` currently stops at the independent public-payload ceiling (50.06
+MiB versus 50 MiB) introduced by the already-present kitchen V4 review shell;
+all earlier pretest verifiers, including V6, pass before that archive gate.
