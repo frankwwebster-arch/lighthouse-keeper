@@ -1,0 +1,7 @@
+{
+  "set": "kitchen-rebuild-states-2026-10-18-v3",
+  "status": "awaiting-visual-review-and-exported-effect-placement",
+  "promotion": "none",
+  "runtimeWiring": "unchanged",
+  "rollback": "Delete V3 only; V1 and V2 remain exact."
+}

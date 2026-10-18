@@ -141,16 +141,15 @@ y=151 fascia and y=208 foot line. Frank called it excellent subject to changing
 the fridge door to white.
 
 The active kitchen gate is
-`/keeper-review/kitchen-rebuild-states-v2/`. V2 preserves V1 and applies only
-localized state amendments: white fridge; On kettle steam, toaster toast/heat,
-lit oven/dish/solid indicator and basin flow; Broken lower-hinged fridge
-door/contents/floor puddle, lid-off steaming kettle, black-toast smoking
-toaster, open smoking/flickering oven, two-half bowl and upward-spraying basin.
-Nine new environmental effects are isolated reusable `40`-frame/`4-fps`
-ten-second strips; approved V31 bin stench/flies remain byte-identical. The
-review provides all-On, all-Broken and interactive mixed-state exact-size
-canvases. V2 is reversible, unpromoted and unwired; Final/runtime are unchanged
-and older cream/brown sets remain offline in `review-archive/retired/`.
+`/keeper-review/kitchen-rebuild-states-v3/`. V3 retains the coherent V2 object
+states, restores broken toaster/basin headroom, pins the oven's broken
+red/cavity flicker to the exact On-state coordinates, and normalizes the
+table/chair to y=150 tabletop, y=177 seat and y=208 foot-line datums. Ten
+environmental-effect families each offer three animated 40-frame/4-fps
+ten-second models. The approved V31 bin smell is reusable without changing its
+pixels. A native-scale workbench supports drag, resize, four-sided crop,
+one-pixel nudge, browser-local persistence and JSON export. V3 is reversible,
+unpromoted and unwired; Final/runtime are unchanged and V2 remains immutable.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
