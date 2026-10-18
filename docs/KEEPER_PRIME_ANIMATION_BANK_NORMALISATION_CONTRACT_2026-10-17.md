@@ -1,6 +1,7 @@
 # Keeper Prime animation-bank normalisation contract
 
 **Authority date:** 17 October 2026
+**Colour-gate amendment:** 18 October 2026
 **Status:** mandatory for every new action-animation draft; no promotion is
 authorised by this document.
 
@@ -106,6 +107,43 @@ Every candidate must have deterministic evidence for:
 
 Visual acceptance remains essential: passing geometry does not prove natural
 weight, organic motion, readable intent or good comic timing.
+
+## Mandatory per-frame colour gate
+
+Colour verification applies to **every visible Keeper frame in every
+animation**, not only endpoints, representative frames or newly generated
+intermediates. Every visible material must name a hash-pinned authority chosen
+by outfit, facing and component. The exact same-facing approved route endpoint
+outranks an older generic palette image when they disagree visibly.
+
+Palette membership is provenance evidence, not visual-match evidence. It is
+not enough that every candidate RGB value occurs somewhere in an approved
+Prime image. A whole-character or whole-garment median is also insufficient:
+pose changes alter the proportions of outline, fold, shadow, anti-alias and
+occluded pixels and can conceal a large visible shift.
+
+For every visible component in every frame, the verifier must:
+
+- use a deterministic, disjoint semantic ownership mask;
+- isolate a pose-relative invariant interior region that excludes outlines,
+  anti-alias fringe, adjacent materials, occlusion boundaries and unmatched
+  shadows;
+- compare luminance distribution, hue/perceptual colour and dominant swatches
+  against the named exact authority;
+- compare the same material with adjacent frames to detect colour flashes;
+- record the authority hash, mask hash, pixel count, measurements and
+  pass/fail/blocked reason;
+- fail closed if the authority, ownership mask or minimum clean sample is
+  missing.
+
+Provenance and visible matching are separate hard gates; both must pass. The
+known regression is mandatory: rejected back sit/stand V1 must fail for its
+dark action block, while corrected V2 must pass. If a verifier cannot
+distinguish those immutable candidates, it is not valid.
+
+The complete implementation brief, default tolerances, outputs, regression
+fixtures and ready-to-paste opening prompt are in
+`docs/prompts/KEEPER_PRIME_ALL_FRAME_COLOUR_VERIFICATION.md`.
 
 ## Reversibility and release
 

@@ -156,9 +156,13 @@ For each family:
 8. Verify deterministically: source/draft/registered SHA-256; cell dimensions,
    density, frame count and sidecar agreement; transparent gutters on every
    cell edge; unambiguous actor/clothing/prop/effect ownership; floor/root and
-   landmark deltas; invariant palette regions; unchanged out-of-scope pixels;
-   endpoint hashes; adjacent-clip continuity; and preload/decode of every
-   unique moving image before controls or playback start.
+   landmark deltas; pose-relative invariant colour regions for every visible
+   material in every frame; adjacent-frame colour continuity; unchanged
+   out-of-scope pixels; endpoint hashes; adjacent-clip continuity; and
+   preload/decode of every unique moving image before controls or playback
+   start. Palette membership and whole-garment medians are not colour-match
+   evidence. Follow
+   `docs/prompts/KEEPER_PRIME_ALL_FRAME_COLOUR_VERIFICATION.md`.
 9. Put every proposal in a new versioned `art/drafts/` directory. Never rewrite
    raw, runtime, Final, an existing draft, an immutable export or an old review
    page. Publish the new candidate beside canonical and historical evidence.

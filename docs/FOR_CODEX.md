@@ -83,6 +83,14 @@ rear endpoint, with central jumper medians 94–95 versus Prime 95 and trousers
 Back V2 awaits Frank; do not infer approval or promote it. Any further change
 must be V3 rather than rewriting V1 or V2.
 
+Frank has made every-frame colour matching a required verification layer for
+the whole animation bank. The implementation prompt is
+`docs/prompts/KEEPER_PRIME_ALL_FRAME_COLOUR_VERIFICATION.md`. It requires exact
+authority selection by outfit/facing/component, disjoint masks, pose-relative
+invariant material regions, adjacent-frame checks and fail-closed results. It
+must reproduce rejected Back V1 failing and corrected Back V2 passing. The
+specification is complete; the verifier is not yet implemented.
+
 Future pub/games-room layout rule: mount the approved dartboard on the
 right-hand cupboard-door leaf. It is edge-on while that door is closed and is
 fully revealed face-to-camera when the door opens. The board follows the door
