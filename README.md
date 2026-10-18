@@ -115,16 +115,17 @@ contributes choreography only and zero visible pixels. Back V2's approval did
 not approve either rear-angle transition and changed no Final, runtime or
 production asset.
 
-The active Prime gate is now `keeper_sweep_broom` V1 at
-`/keeper-review/keeper-prime-sweep-broom-v1/`. The historical strip contributes
-motion evidence only. Six unique density-8 composites use the exact approved
-side-right neutral plus five newly drawn Prime poses, with the broom owned as a
-separate layer and measured behind both hands. All 11 material groups pass
-per-frame exact-authority colour checks; every actor and broom meets the shared
-floor and transparent-gutter contract. The 47-frame reviewer shows approved
-walk-in, phase-correct stop, action entry, two complete sweep loops, exact
-neutral exit and approved walk-away at large, gameplay and literal 1× scales.
-It is an immutable review candidate only and is neither approved nor promoted.
+Prime `keeper_sweep_broom` V1 remains immutable review history after Frank
+identified repeated lower-jumper artefacts in its action block and requested a
+richer traditional broom. The active candidate is V2 at
+`/keeper-review/keeper-prime-sweep-broom-v2/`. It rebuilds the affected
+pose-relative lower hem in every action pose from an exact Prime jumper swatch,
+replaces the mop-like head with a separately owned timber-stock broom with
+ferrule, bindings and individual straw bundles, and retains all per-frame
+Prime material, floor, contact and gutter gates. Its new cupboard-handoff mode
+shows standard walk right, a fully hidden swap, moving sweep legs outward and
+back, then the mirrored standard-walk exit. V2 is an immutable review candidate
+only and is neither approved nor promoted.
 
 Back V2 is live for review from exact deploy commit `f165576`. The production
 route contains 61 frames and all 36 unique route/comparison image URLs were

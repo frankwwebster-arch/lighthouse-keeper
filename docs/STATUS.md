@@ -151,12 +151,15 @@ jumper 94–95 versus Prime 95 and trousers 77–78 versus Prime 77. F2–F6 ret
 the 150 px seated elbow width. Back V2's approval does not cover either
 rear-angle transition; Final/runtime/production remain unchanged.
 
-Prime `keeper_sweep_broom` V1 is the active artwork gate at
-`/keeper-review/keeper-prime-sweep-broom-v1/`. It reuses zero visible historical
-Keeper pixels, keeps the broom separately owned, verifies every visible
-material against the exact side-right Prime authority in every frame, and
-provides a complete 47-frame walk/stop/action/exit/walk route at large,
-gameplay and literal 1× scales. It awaits Frank and is not promoted.
+Prime `keeper_sweep_broom` V1 remains immutable, unapproved review history:
+Frank found lower-jumper artefacts across its action reuse and asked for a more
+clearly traditional broom. V2 is the active gate at
+`/keeper-review/keeper-prime-sweep-broom-v2/`. It rebuilds the named lower hem
+against an exact Prime swatch in every action pose, retains the separately
+owned prop and per-frame material evidence, and adds the kitchen cupboard
+handoff: standard walk right → fully obscured swap → moving sweep-walk left →
+turnaround proxy → moving sweep-walk right → fully obscured swap → standard
+walk left. It awaits Frank and is not promoted.
 
 Back V1's exact deploy commit `d93c89c` remains delivery provenance only. Back
 V2 is live from exact deploy commit `f165576`; its 61-frame route and all 36

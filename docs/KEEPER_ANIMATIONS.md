@@ -26,13 +26,15 @@ jumper to luminance 94–95 versus Prime 95 and trousers to 77–78 versus Prime
 77. Approval did not promote Back V2 and does not approve either rear-angle
 transition.
 
-The active visual gate is Prime `keeper_sweep_broom` V1 at
-`/keeper-review/keeper-prime-sweep-broom-v1/`. Its historical strip contributes
-only choreography; the visible Keeper is wholly Prime-derived and the broom is
-separately owned with re-measured two-hand contact. The reviewer supplies the
-complete 47-frame walk/stop/action/exit/walk route, six unique action frames,
-all-material per-frame colour evidence, ghosts and large/gameplay/literal 1×
-playback. V1 is unapproved and unpromoted.
+Prime `keeper_sweep_broom` V1 remains immutable, unapproved provenance after
+its repeated lower-jumper action artefacts and mop-like broom read were raised
+in review. The active V2 candidate is
+`/keeper-review/keeper-prime-sweep-broom-v2/`: every affected lower hem is
+rebuilt from the exact Prime jumper-blue authority; the separately owned broom
+now has a wooden stock, ferrule, bindings and readable straw bundles; and a
+cupboard-proxy mode shows standard walk, fully hidden state swaps and
+root-moving sweep legs in both directions. It remains unapproved and
+unpromoted.
 
 The active selectable contextual review is
 `/keeper-review/keeper-prime-context-workbench-v15/`. It deliberately contains
