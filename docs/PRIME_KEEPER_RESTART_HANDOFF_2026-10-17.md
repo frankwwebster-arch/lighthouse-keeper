@@ -272,21 +272,27 @@ the Keeper slid rather than walked while sweeping, the cupboard leaf did not
 demonstrate full physical occlusion, the reversal did not visibly use the core
 turn, and the broom read as a mop. Do not revise or promote those sets.
 
-V4 is the fresh unapproved candidate at
-`/keeper-review/keeper-prime-sweep-broom-v4/`. Its 51-frame review route uses
+V4 is rejected immutable provenance: its left-facing turn endpoint incorrectly
+left the broom trailing behind the Keeper, and its closed cupboard leaf did not
+make the claimed occlusion visually unambiguous.
+
+V5 is the fresh unapproved candidate at
+`/keeper-review/keeper-prime-sweep-broom-v5/`. Its 51-frame review route uses
 approved Walk V6 for standard travel, a measured foreground cupboard leaf for
 both fully obscured state swaps, three distinct moving-leg sweep poses in each
 direction, and a nine-frame held-broom reversal derived from the approved V9
-side/back turn. The replacement prop is a traditional rigid-stock broom: one
+side/back turn. The left-facing endpoint now carries the broom in front/left of
+the Keeper, and the closed foreground leaf spans 80 lp across the 192-lp stage,
+covering the complete 48-lp unit. The replacement prop is a traditional rigid-stock broom: one
 timber shaft, metal ferrule, rigid horizontal timber crossbar, multiple
 separately bound straw bundles and a broad straight working edge. The exact
 384×320 registered prop bounds for every held/action/turn frame are stored in
-`art/drafts/keeper-prime-sweep-broom-2026-10-18-v4/batch-register.json` under
+`art/drafts/keeper-prime-sweep-broom-2026-10-18-v5/batch-register.json` under
 `broomReplicationContract`; hoovering, lawn-mowing or other tool variants may
 reuse the route/gait grammar only after replacing the prop and remeasuring hand
 contact, floor contact, bounds and cupboard coverage.
 
-V4 remains review-only: no Final/runtime artwork or game logic changed. Its
+V5 remains review-only: no Final/runtime artwork or game logic changed. Its
 reviewer must be commit-pinned, deployed and verified live before asking Frank
 for a visual decision. No sweep-broom artwork may be promoted without a later,
 separate explicit instruction.
