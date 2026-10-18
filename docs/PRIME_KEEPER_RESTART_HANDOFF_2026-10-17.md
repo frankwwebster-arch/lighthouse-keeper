@@ -312,4 +312,6 @@ whole-garment average. Prop dimensions and per-frame bounds remain recorded in
 `art/drafts/keeper-prime-sweep-broom-2026-10-18-v6/batch-register.json` for
 future hoovering, lawn-mowing or other tool variants. V6 changes no
 Final/runtime artwork or game logic and may not be promoted without a later,
-separate explicit instruction.
+separate explicit instruction. The immutable V6 candidate is commit
+`59990fcc`; the public shell must remain pinned to that exact candidate rather
+than mutable `main`.
