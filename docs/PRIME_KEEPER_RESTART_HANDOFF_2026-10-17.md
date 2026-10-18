@@ -121,8 +121,10 @@ visible pixels. Back V2 and both rear angles remain unapproved; nothing is
 promoted.
 
 Back V1's exact production deploy `d93c89c` and its 31-image live verification
-remain delivery provenance only. Deploy and live-verify V2 before asking Frank
-to review it. Live delivery is never artwork approval.
+remain delivery provenance only. Back V2 is live from exact deploy commit
+`f165576`; the 61-frame production route and all 36 unique route/comparison
+images returned valid PNG data on 18 October 2026. Live delivery is never
+artwork approval.
 
 ## Binding method for every inherited animation
 

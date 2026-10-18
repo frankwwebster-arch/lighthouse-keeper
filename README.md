@@ -113,6 +113,11 @@ foreground layer and the Keeper passes behind it. Historical `keeper_sit_back`
 contributes choreography only and zero visible pixels. Back V2 awaits Frank
 and changes no Final, runtime or production asset.
 
+Back V2 is live for review from exact deploy commit `f165576`. The production
+route contains 61 frames and all 36 unique route/comparison image URLs were
+verified as valid PNGs on 18 October 2026. Delivery is not approval or
+promotion.
+
 Frank approved exact Darts Context V8 on 17 October 2026. Its immutable decision
 is `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.
 Workbench V15 remains review infrastructure; nothing entered Final, runtime or
