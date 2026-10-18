@@ -71,8 +71,9 @@ hash-pinned decision at
 `docs/review/keeper-prime-sit-stand-front-v4-approval-2026-10-18.json` and all
 three earlier rejection records. Approval did not promote it.
 
-The active next-direction proposal is
-`/keeper-review/keeper-prime-sit-stand-back-v2/`. Frank rejected immutable V1
+Frank approved exact back-facing V2 on 18 October 2026. Preserve
+`docs/review/keeper-prime-sit-stand-back-v2-approval-2026-10-18.json`. Frank
+rejected immutable V1
 for visible jumper/trouser darkening across complete-context frames 29–41; keep
 its exact decision at
 `docs/review/keeper-prime-sit-stand-back-v1-rejection-2026-10-18.json`.
@@ -80,8 +81,16 @@ V2 keeps every V1 alpha plane, dimension, foreground-chair depth cue and all 61
 route frames. F2–F6 now use exact RGB samples from the exact approved Turn V9
 rear endpoint, with central jumper medians 94–95 versus Prime 95 and trousers
 77–78 versus Prime 77. Historical `keeper_sit_back` remains choreography-only.
-Back V2 awaits Frank; do not infer approval or promote it. Any further change
-must be V3 rather than rewriting V1 or V2.
+Back V2 is approved as the exact back-facing authority but is not promoted and
+does not approve either rear angle. Any further change must be V3 rather than
+rewriting V1 or V2.
+
+The active review proposal is Prime `keeper_sweep_broom` V1 at
+`/keeper-review/keeper-prime-sweep-broom-v1/`. Preserve its versioned draft,
+five actor-only generation sources, deterministic separate broom layers,
+11-component masks and complete 47-frame route. The historical sweep strip is
+choreography-only and contributes zero visible Keeper pixels. V1 is neither
+approved nor promoted; any correction must be a new V2.
 
 Frank has made every-frame colour matching a required verification layer for
 the whole animation bank. The implementation prompt is

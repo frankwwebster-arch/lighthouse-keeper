@@ -2149,6 +2149,33 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 - first/last/loop seams and complete routes are checked in frozen onion-skin;
 - props and costumes change only at declared handovers or full occlusion.
 
+## Prime back sit/stand V2 approval and sweep-broom V1 (18 Oct 2026)
+
+Frank explicitly approved exact Prime back sit/stand V2. The durable,
+hash-pinned decision is
+`docs/review/keeper-prime-sit-stand-back-v2-approval-2026-10-18.json`. It
+approves the six action frames and complete 61-frame context as the back-facing
+authority, including the corrected exact-Prime material colours and separate
+foreground chair rear. It does not approve either rear angle and does not
+promote the art into Workbench Final, runtime or production.
+
+The next immutable candidate is Prime `keeper_sweep_broom` V1 at
+`/keeper-review/keeper-prime-sweep-broom-v1/`. The old sweep strip contributes
+only choreography. All visible Keeper art comes from the approved Prime
+authorities; the exact side-right neutral is byte-identical at entry and exit.
+Five new actor-only source poses are registered at one uniform scale, then
+recoloured and checked by 11 disjoint semantic material groups against the
+exact same-facing Prime authority. A traditional broom is rendered and owned
+separately behind both measured grip regions. Every actor and broom meets floor
+row 315 and every 384 × 320 cell has at least a four-pixel transparent gutter.
+
+The 47-frame route is two Walk V6 cycles → approved deceleration → exact
+neutral → acquisition → two full six-phase sweeps → controlled exit → exact
+neutral → approved acceleration → Walk V6 away. The reviewer includes complete
+route, isolated action and repeatable loop modes, large/gameplay/literal 1×
+scales, previous-frame and Prime ghosts, component masks and per-frame colour
+evidence. V1 awaits Frank and must not be promoted. Any amendment is a new V2.
+
 ## Ready-to-paste opening prompt for the next review iteration
 
 > Continue the Lighthouse Keeper amendment review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, `docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md`, `docs/review/keeper-animation-codex-responses-2026-10-12.json`, `art/drafts/keeper-review-amendments-2026-10-11-v1/README.md`, `art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/README.md`, `art/drafts/keeper-party-hat-put-on-back-front-arm-plane-2026-10-12-v3/README.md`, `art/drafts/keeper-carry-shopping-right-bag-2026-10-12-v2/README.md`, `art/drafts/keeper-play-drums-back-hands-2026-10-12-v2/README.md`, `art/drafts/keeper-put-record-removal-2026-10-12-v2/README.md` and `art/drafts/keeper-put-record-horizontal-frame5-2026-10-12-v3/README.md`. Treat handoff `d9081e53-2808-4b1f-8422-2df09cf38c3c` and its 81 exact names as the only scope. Review the 41 exact-name amendment candidates plus retained v2/v3 comparisons for `keeper_party_hat_put_on_back` and `keeper_put_record`, the `keeper_carry_shopping` frames-1/7 correction and the `keeper_play_drums_back` frame-6 correction. The party-hat v3 keeps frame-2 arms clear of the head; the put-record v3 keeps a level record in frame 5 and removes it in frames 6–8. Preserve canonical art, all historical variants and the 12 retained `withdrawn-by-user` face-to-camera candidates. The deleted `keeper_count_money` amendment must not be regenerated without a new explicit instruction. Do not reactivate, regenerate or promote any other face-to-camera amendment without an explicit new instruction. Iterate with Frank on `keeper_fish_seated`, `keeper_shower_exit` and `keeper_shower_wash`; leave `keeper_slide_side` deferred until helter-skelter geometry exists. Promote nothing without explicit approval.

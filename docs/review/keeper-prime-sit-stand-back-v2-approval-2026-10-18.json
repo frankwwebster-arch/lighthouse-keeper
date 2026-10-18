@@ -1,0 +1,56 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-18",
+  "reviewedBy": "Frank",
+  "candidate": "keeper-prime-sit-stand-back-2026-10-18-v2",
+  "decision": "approved-as-back-prime-sit-stand-authority",
+  "wording": "Frank's explicit approval of Prime back sit/stand V2, supplied for durable reconciliation on 18 October 2026.",
+  "approvedHashes": {
+    "batchRegister": "a5cce0ee2a10a8123e0b10e49939080da96363d0d392643e6e82780bcdfa55a4",
+    "reviewRoute": "127f01cf880a2be020cc60c15d99a1e6b46a4363b9434bbf689c17e674765aef",
+    "routeData": "b117b53cf7f849783b3a8348e8bd2b01296ca4068607153746e527ca5bad3e96",
+    "keeperFrames": [
+      "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "6e2556684150ce43a26a5c5d084afeba0fc722a87be3878587a2ae3385ccce47",
+      "c2acf591a17577fdfdf3eba958b47ddfd4c8044dce8abe2fcf85d25d0ffab767",
+      "922deb4bf0d9d0b74d1950e2157709bae82e1823913bb332754ad7733b165264",
+      "7c8075cfb3c3237d852e7dc4ed5e646f1f397cdb7ddc678ba0535aa27e8f7e5a",
+      "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa"
+    ]
+  },
+  "approvedContract": {
+    "view": "back-180",
+    "actionFrames": 6,
+    "contextFrames": 61,
+    "standEndpointExactApprovedTurnV9Rear": true,
+    "seatedEndpointAlphaExactRegisteredPrime": true,
+    "sitToStandIsExactReverse": true,
+    "allVisibleKeeperPixelsDerivedFromPrimeAuthorities": true,
+    "historicalKeeperPixelsVisible": 0,
+    "correctedFramesUseExactApprovedRearPrimeRgbSamples": true,
+    "jumperRegionalMedianMatchesExactPrimeEndpoint": true,
+    "trouserRegionalMedianMatchesExactPrimeEndpoint": true,
+    "chairIsSeparateForegroundDepthLayer": true,
+    "completeWalkStopTurnActionReturnContext": true,
+    "backV1RejectionRemainsImmutable": true,
+    "sideRightV6SideLeftV1AndFrontV4ApprovalsRemainUnchanged": true
+  },
+  "delivery": {
+    "candidateCommit": "7090a1e",
+    "deployCommit": "f165576c2c2070dffbc90f64cda740f01de0a1ca",
+    "liveVerificationCommit": "486c009a9a18c82a4d463fc9577821df87119fbd",
+    "reviewUrl": "https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sit-stand-back-v2/"
+  },
+  "approvalBoundary": {
+    "sideRightSitStandApproved": true,
+    "sideLeftSitStandApproved": true,
+    "frontSitStandApproved": true,
+    "backSitStandApproved": true,
+    "rearAngleSitStandApproved": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false,
+    "promotionPerformed": false,
+    "promotionAllowedWithoutSeparateInstruction": false
+  }
+}

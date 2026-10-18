@@ -110,21 +110,38 @@ rewrite V1. The prior whole-garment medians were a misleading acceptance test:
 direct stable-region readings were jumper 73–74 versus approved Prime 95 and
 trousers 52–53 versus Prime 77.
 
-Back-facing V2 is now the single active next-direction candidate at
-`/keeper-review/keeper-prime-sit-stand-back-v2/`. It preserves every V1 alpha
-plane, dimension, 150 px lowering width, 61-frame route, exact reverse, ghost
-overlay and foreground chair depth cue. F2–F6 use hue-constrained exact RGB
-samples from the exact approved Turn V9 rear endpoint; direct central-region
-checks now read jumper 94–95 versus Prime 95 and trousers 77–78 versus Prime
-77. Historical `keeper_sit_back` still contributes choreography only and zero
-visible pixels. Back V2 and both rear angles remain unapproved; nothing is
-promoted.
+Frank explicitly approved exact Back V2 on 18 October 2026. Its immutable
+decision is `docs/review/keeper-prime-sit-stand-back-v2-approval-2026-10-18.json`.
+It pins every V1 alpha plane, dimension, the 150 px lowering width, all 61 route
+frames, exact reverse, ghost overlay and foreground chair depth cue. F2–F6 use
+hue-constrained exact RGB samples from the exact approved Turn V9 rear
+endpoint; direct central-region checks read jumper 94–95 versus Prime 95 and
+trousers 77–78 versus Prime 77. Historical `keeper_sit_back` contributes
+choreography only and zero visible pixels. The approval does not approve either
+rear-angle transition and did not promote anything into Final, runtime or
+production.
 
 Back V1's exact production deploy `d93c89c` and its 31-image live verification
 remain delivery provenance only. Back V2 is live from exact deploy commit
 `f165576`; the 61-frame production route and all 36 unique route/comparison
 images returned valid PNG data on 18 October 2026. Live delivery is never
 artwork approval.
+
+Prime `keeper_sweep_broom` V1 is now the active review candidate at
+`/keeper-review/keeper-prime-sweep-broom-v1/`. Its historical eight-frame
+strip supplies only joint paths, weight transfer, broom travel, hand contact
+and timing; zero visible historical Keeper pixels are reused. The candidate
+uses the byte-exact approved side-right neutral, five new Prime-derived action
+poses and a separately owned deterministic broom whose shaft is measured
+behind both hands in every held frame. All actors and bristles share floor row
+315 in 384 × 320 density-8 cells with at least four transparent pixels at every
+cell edge. Eleven disjoint material groups pass exact same-facing Prime colour
+evidence in all six unique frames and adjacent-frame luminance checks. The
+47-frame context is two approved walk cycles → approved deceleration → exact
+neutral → acquisition → two complete six-phase loops → controlled exit → exact
+neutral → approved acceleration → Walk V6 away. Large, 4 px/lp gameplay and
+literal 1 px/lp playback, previous/Prime ghosts, material masks and
+frame-by-frame comparisons are included. V1 is unapproved and unpromoted.
 
 ## Binding method for every inherited animation
 
@@ -242,9 +259,11 @@ checkpoint no Prime animation has been promoted into Final/runtime/production.
 
 ## Exact next-task boundary
 
-Stop for Frank's visual decision on the live back-facing V1 reviewer. If he
-approves it, record a separate hash-pinned decision without promoting it; if he
-requests changes, create back-facing V2 rather than rewriting V1. After that
-decision, audit whether the approved turn network makes separate rear-angle
-sit/stand transitions unnecessary. One accepted direction at a time remains
-the safe cadence.
+Stop for Frank's visual decision on the live Prime `keeper_sweep_broom` V1
+reviewer. If he approves it, write a separate hash-pinned decision and still
+promote nothing without another explicit instruction. If he requests changes,
+create V2 and preserve this V1 byte-for-byte. After that decision, decide
+whether to continue the standard standing-interaction queue or first audit
+whether the approved turn network makes separate rear-angle sit/stand
+transitions unnecessary. One accepted family at a time remains the safe
+cadence.

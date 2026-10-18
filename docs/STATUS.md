@@ -1,4 +1,4 @@
-# Lighthouse Keeper: status write-up (17 Oct 2026)
+# Lighthouse Keeper: status write-up (18 Oct 2026)
 
 ## What it is
 A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthouse; kids type commands (typo-tolerant, curated, no live AI) or click objects (Sims-style menus, auto-zoom camera). Needs and mood, credits, phone, bedtime, multi-day play, a day report, quiz pop-ins, time-aware chat, cheeky humour.
@@ -133,14 +133,22 @@ Back-facing V1 remains immutable but is rejected: complete-context frames
 29–41 visibly darken the jumper and trousers. The exact feedback and V1 hashes
 are pinned in
 `docs/review/keeper-prime-sit-stand-back-v1-rejection-2026-10-18.json`.
-Back-facing V2 at `/keeper-review/keeper-prime-sit-stand-back-v2/` is the active
-candidate. It retains every V1 alpha plane, dimension and all 61 route frames,
+Frank approved exact back-facing V2 on 18 October 2026. Its hash-pinned record
+is `docs/review/keeper-prime-sit-stand-back-v2-approval-2026-10-18.json`. It
+retains every V1 alpha plane, dimension and all 61 route frames,
 including exact approved Turn V9, the separate foreground chair back, sitting,
 standing, turning and walking away. F2–F6 now take jumper/trouser RGB samples
 from the exact approved rear endpoint. Direct central-region checks read
 jumper 94–95 versus Prime 95 and trousers 77–78 versus Prime 77. F2–F6 retain
-the 150 px seated elbow width. Back V2 and both rear-angle sit transitions are
-unapproved; Final/runtime/production remain unchanged.
+the 150 px seated elbow width. Back V2's approval does not cover either
+rear-angle transition; Final/runtime/production remain unchanged.
+
+Prime `keeper_sweep_broom` V1 is the active artwork gate at
+`/keeper-review/keeper-prime-sweep-broom-v1/`. It reuses zero visible historical
+Keeper pixels, keeps the broom separately owned, verifies every visible
+material against the exact side-right Prime authority in every frame, and
+provides a complete 47-frame walk/stop/action/exit/walk route at large,
+gameplay and literal 1× scales. It awaits Frank and is not promoted.
 
 Back V1's exact deploy commit `d93c89c` remains delivery provenance only. Back
 V2 is live from exact deploy commit `f165576`; its 61-frame route and all 36

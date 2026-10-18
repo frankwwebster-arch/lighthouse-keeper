@@ -3,7 +3,7 @@
 This is the human-readable index for the keeper. Start here rather than trying
 to infer meaning from filenames or Git history.
 
-## Prime Keeper normalisation status — 17 October 2026
+## Prime Keeper normalisation status — 18 October 2026
 
 This index describes the inherited production bank; it does **not** mean that
 every listed drawing is approved Prime Keeper art. The deterministic V1 audit
@@ -16,13 +16,23 @@ required contextual route.
 
 Sitting-direction status moved on 18 October: exact front-facing V4 is approved
 and hash-pinned without promotion. Back-facing V1 is immutable and rejected
-because frames 29–41 visibly darken the jumper and trousers. Back-facing V2 is
-the active review candidate at `/keeper-review/keeper-prime-sit-stand-back-v2/`.
+because frames 29–41 visibly darken the jumper and trousers. Frank approved
+exact Back-facing V2 on 18 October; its decision is hash-pinned at
+`docs/review/keeper-prime-sit-stand-back-v2-approval-2026-10-18.json`.
 Its complete 61-frame context passes the Keeper behind a separately rendered
 foreground chair rear. It preserves V1 geometry and holds F2–F6 at 150 px elbow
 width, while exact approved Turn V9 rear-endpoint swatches bring the central
 jumper to luminance 94–95 versus Prime 95 and trousers to 77–78 versus Prime
-77. Back V2 and the rear-angle transitions remain unapproved.
+77. Approval did not promote Back V2 and does not approve either rear-angle
+transition.
+
+The active visual gate is Prime `keeper_sweep_broom` V1 at
+`/keeper-review/keeper-prime-sweep-broom-v1/`. Its historical strip contributes
+only choreography; the visible Keeper is wholly Prime-derived and the broom is
+separately owned with re-measured two-hand contact. The reviewer supplies the
+complete 47-frame walk/stop/action/exit/walk route, six unique action frames,
+all-material per-frame colour evidence, ghosts and large/gameplay/literal 1×
+playback. V1 is unapproved and unpromoted.
 
 The active selectable contextual review is
 `/keeper-review/keeper-prime-context-workbench-v15/`. It deliberately contains

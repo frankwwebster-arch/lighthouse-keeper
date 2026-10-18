@@ -98,8 +98,9 @@ decision is
 143 px elbow-width lock, complete 59-frame context and exact endpoints remain
 unchanged. This approval did not promote V4 into Final, runtime or production.
 
-The active one-direction gate is now back-facing V2 at
-`/keeper-review/keeper-prime-sit-stand-back-v2/`. Frank rejected immutable V1
+Frank approved exact back-facing V2 on 18 October 2026. Its immutable decision
+is `docs/review/keeper-prime-sit-stand-back-v2-approval-2026-10-18.json`.
+Frank rejected immutable V1
 because complete-context frames 29–41 made the jumper and trousers visibly
 darker than Prime; the exact decision and V1 hashes are recorded in
 `docs/review/keeper-prime-sit-stand-back-v1-rejection-2026-10-18.json`.
@@ -110,8 +111,20 @@ region checks now hold jumper median luminance at 94–95 against Prime 95 and
 trousers at 77–78 against Prime 77. F2–F6 remain at 150 px elbow width while
 heights lower 286→276→270→266→264 px. The chair rear remains a separate
 foreground layer and the Keeper passes behind it. Historical `keeper_sit_back`
-contributes choreography only and zero visible pixels. Back V2 awaits Frank
-and changes no Final, runtime or production asset.
+contributes choreography only and zero visible pixels. Back V2's approval did
+not approve either rear-angle transition and changed no Final, runtime or
+production asset.
+
+The active Prime gate is now `keeper_sweep_broom` V1 at
+`/keeper-review/keeper-prime-sweep-broom-v1/`. The historical strip contributes
+motion evidence only. Six unique density-8 composites use the exact approved
+side-right neutral plus five newly drawn Prime poses, with the broom owned as a
+separate layer and measured behind both hands. All 11 material groups pass
+per-frame exact-authority colour checks; every actor and broom meets the shared
+floor and transparent-gutter contract. The 47-frame reviewer shows approved
+walk-in, phase-correct stop, action entry, two complete sweep loops, exact
+neutral exit and approved walk-away at large, gameplay and literal 1× scales.
+It is an immutable review candidate only and is neither approved nor promoted.
 
 Back V2 is live for review from exact deploy commit `f165576`. The production
 route contains 61 frames and all 36 unique route/comparison image URLs were

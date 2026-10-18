@@ -414,3 +414,13 @@ Swimming, gym and scuba are full-redraw families. `keeper_count_money` must not 
 6. Redraw swimming, gym and scuba from first principles after their environments and props are fixed.
 
 No action may be approved from an isolated loop.
+
+### Progress after the frozen audit
+
+On 18 October 2026, `keeper_sweep_broom` became the first complete standard
+action candidate under this order. Immutable Prime V1 is at
+`/keeper-review/keeper-prime-sweep-broom-v1/`: historical frames remain
+choreography-only, the broom is separately owned, and the reviewer covers the
+full approved walk → stop → action → exact neutral → walk route. It remains
+unapproved and unpromoted, so the audit row and original classification stay
+unchanged as baseline evidence.
