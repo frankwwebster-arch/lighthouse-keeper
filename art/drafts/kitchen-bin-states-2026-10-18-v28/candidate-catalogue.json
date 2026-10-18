@@ -1,0 +1,139 @@
+{
+  "version": 28,
+  "status": "static-bin-state-family-awaiting-visual-confirmation",
+  "states": [
+    "standard",
+    "broken_overflowing"
+  ],
+  "cellPixels": [
+    72,
+    72
+  ],
+  "baselineYExclusive": 68,
+  "roomPixels": [
+    772,
+    224
+  ],
+  "roomCellTopLeft": [
+    8,
+    149
+  ],
+  "source": {
+    "initialSha256": "d917330d83d2e9527e02dc7d8dbdaae0a9e27aa024879775839645a89f99d5ba",
+    "spillRevisionSha256": "f07c82b186dab52aff66fbde0ccabe23ef0f3428f64656dbe4f9716b6c74d1ec",
+    "standardCropExclusive": [
+      293,
+      182,
+      682,
+      831
+    ],
+    "brokenCropExclusive": [
+      1014,
+      53,
+      1691,
+      831
+    ]
+  },
+  "outputs": {
+    "bin-standard.png": {
+      "sha256": "86b05224a7da5fc5c05918f2875018920ed54cf46fc00cb08952ffd29789f9c0",
+      "size": [
+        72,
+        72
+      ]
+    },
+    "bin-broken-overflowing.png": {
+      "sha256": "77ad87fabfd3e5c10a4a14f294af343a5d93a2a2015e6d77f18a4140b1f5fb4f",
+      "size": [
+        72,
+        72
+      ]
+    },
+    "kitchen-bin-standard-in-situ.png": {
+      "sha256": "027e5b1d722b65ed55eecc2f96640fb07f5e0b33283ce8fdce0e5d892450e674",
+      "size": [
+        772,
+        224
+      ]
+    },
+    "kitchen-bin-broken-in-situ.png": {
+      "sha256": "bf1c741f9ff7e985ddc44584c9c13c76c60e0df8104d34a2a11848f1be58a1c3",
+      "size": [
+        772,
+        224
+      ]
+    },
+    "fx-stench-miasma-f24.png": {
+      "sha256": "2e095aa1d9d00ba23368c75879949df1a44100970f9e6894182a52558ef9d0ba",
+      "size": [
+        1920,
+        80
+      ]
+    },
+    "fx-slow-flies-f24.png": {
+      "sha256": "6de62b87eedf47b6ac057516034589a5f0ac86ee2ceaac871d20e5de4181bfee",
+      "size": [
+        1920,
+        80
+      ]
+    }
+  },
+  "opaqueBounds": {
+    "standard": [
+      20,
+      15,
+      52,
+      68
+    ],
+    "broken_overflowing": [
+      8,
+      4,
+      64,
+      68
+    ]
+  },
+  "effects": {
+    "stench_miasma": {
+      "file": "fx-stench-miasma-f24.png",
+      "reusable": true,
+      "frames": 24,
+      "fps": 4,
+      "durationSeconds": 6.0,
+      "cellPixels": [
+        80,
+        80
+      ],
+      "roomTopLeft": [
+        4,
+        104
+      ],
+      "objectPixelsChanged": false
+    },
+    "slow_flies": {
+      "file": "fx-slow-flies-f24.png",
+      "reusable": true,
+      "frames": 24,
+      "fps": 4,
+      "durationSeconds": 6.0,
+      "cellPixels": [
+        80,
+        80
+      ],
+      "roomTopLeft": [
+        4,
+        104
+      ],
+      "objectPixelsChanged": false,
+      "sfxCue": "kitchen_bin_flies_slow_loop"
+    }
+  },
+  "boundaries": {
+    "approved": false,
+    "promoted": false,
+    "objectAnimated": false,
+    "environmentalFxAnimated": true,
+    "runtimeChanged": false,
+    "canonicalChanged": false,
+    "v20ThroughV27Changed": false
+  }
+}

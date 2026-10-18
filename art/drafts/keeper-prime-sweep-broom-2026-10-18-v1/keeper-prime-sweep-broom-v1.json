@@ -54,12 +54,7 @@
           "authority": {
             "medianLuma": 76.807
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": null
-          }
+          "medianOklabDelta": 0.0
         },
         "capBandBrim": {
           "status": "pass",
@@ -70,12 +65,7 @@
           "authority": {
             "medianLuma": 55.111
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": null
-          }
+          "medianOklabDelta": 0.0
         },
         "badge": {
           "status": "pass",
@@ -86,12 +76,7 @@
           "authority": {
             "medianLuma": 162.812
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": null
-          }
+          "medianOklabDelta": 0.0
         },
         "jumperBlue": {
           "status": "pass",
@@ -102,12 +87,7 @@
           "authority": {
             "medianLuma": 76.807
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": null
-          }
+          "medianOklabDelta": 0.0
         },
         "creamBand": {
           "status": "pass",
@@ -118,12 +98,7 @@
           "authority": {
             "medianLuma": 237.242
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": null
-          }
+          "medianOklabDelta": 0.0
         },
         "trousers": {
           "status": "pass",
@@ -134,12 +109,7 @@
           "authority": {
             "medianLuma": 58.183
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": null
-          }
+          "medianOklabDelta": 0.0
         },
         "boots": {
           "status": "pass",
@@ -150,12 +120,7 @@
           "authority": {
             "medianLuma": 63.544
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": null
-          }
+          "medianOklabDelta": 0.0
         },
         "skin": {
           "status": "pass",
@@ -166,12 +131,7 @@
           "authority": {
             "medianLuma": 196.841
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": null
-          }
+          "medianOklabDelta": 0.0
         },
         "hair": {
           "status": "pass",
@@ -182,12 +142,7 @@
           "authority": {
             "medianLuma": 235.384
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": null
-          }
+          "medianOklabDelta": 0.0
         },
         "beard": {
           "status": "pass",
@@ -198,12 +153,7 @@
           "authority": {
             "medianLuma": 236.881
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": null
-          }
+          "medianOklabDelta": 0.0
         },
         "outline": {
           "status": "pass",
@@ -214,12 +164,7 @@
           "authority": {
             "medianLuma": 2.864
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": null
-          }
+          "medianOklabDelta": 0.0
         }
       },
       "contact": {
@@ -266,12 +211,7 @@
           "authority": {
             "medianLuma": 76.807
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "capBandBrim": {
           "status": "pass",
@@ -282,12 +222,7 @@
           "authority": {
             "medianLuma": 55.111
           },
-          "medianOklabDelta": 0.00013,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.00013
         },
         "badge": {
           "status": "pass",
@@ -298,12 +233,7 @@
           "authority": {
             "medianLuma": 162.812
           },
-          "medianOklabDelta": 0.000528,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.000528
         },
         "jumperBlue": {
           "status": "pass",
@@ -314,12 +244,7 @@
           "authority": {
             "medianLuma": 76.807
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "creamBand": {
           "status": "pass",
@@ -330,12 +255,7 @@
           "authority": {
             "medianLuma": 237.242
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "trousers": {
           "status": "pass",
@@ -346,12 +266,7 @@
           "authority": {
             "medianLuma": 58.183
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "boots": {
           "status": "pass",
@@ -362,12 +277,7 @@
           "authority": {
             "medianLuma": 63.544
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "skin": {
           "status": "pass",
@@ -378,12 +288,7 @@
           "authority": {
             "medianLuma": 196.841
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "hair": {
           "status": "pass",
@@ -394,12 +299,7 @@
           "authority": {
             "medianLuma": 235.384
           },
-          "medianOklabDelta": 1.5e-05,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 1.5e-05
         },
         "beard": {
           "status": "pass",
@@ -410,12 +310,7 @@
           "authority": {
             "medianLuma": 236.881
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "outline": {
           "status": "pass",
@@ -426,12 +321,7 @@
           "authority": {
             "medianLuma": 2.864
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         }
       },
       "contact": {
@@ -509,12 +399,7 @@
           "authority": {
             "medianLuma": 76.807
           },
-          "medianOklabDelta": 7e-06,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 7e-06
         },
         "capBandBrim": {
           "status": "pass",
@@ -525,12 +410,7 @@
           "authority": {
             "medianLuma": 55.111
           },
-          "medianOklabDelta": 0.000242,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.000242
         },
         "badge": {
           "status": "pass",
@@ -541,12 +421,7 @@
           "authority": {
             "medianLuma": 162.812
           },
-          "medianOklabDelta": 0.000445,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.361,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.000445
         },
         "jumperBlue": {
           "status": "pass",
@@ -557,12 +432,7 @@
           "authority": {
             "medianLuma": 76.807
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "creamBand": {
           "status": "pass",
@@ -573,12 +443,7 @@
           "authority": {
             "medianLuma": 237.242
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "trousers": {
           "status": "pass",
@@ -589,12 +454,7 @@
           "authority": {
             "medianLuma": 58.183
           },
-          "medianOklabDelta": 1.1e-05,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 1.1e-05
         },
         "boots": {
           "status": "pass",
@@ -605,12 +465,7 @@
           "authority": {
             "medianLuma": 63.544
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "skin": {
           "status": "pass",
@@ -621,12 +476,7 @@
           "authority": {
             "medianLuma": 196.841
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "hair": {
           "status": "pass",
@@ -637,12 +487,7 @@
           "authority": {
             "medianLuma": 235.384
           },
-          "medianOklabDelta": 0.000311,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.000311
         },
         "beard": {
           "status": "pass",
@@ -653,12 +498,7 @@
           "authority": {
             "medianLuma": 236.881
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "outline": {
           "status": "pass",
@@ -669,12 +509,7 @@
           "authority": {
             "medianLuma": 2.864
           },
-          "medianOklabDelta": 0.000261,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.000261
         }
       },
       "contact": {
@@ -752,12 +587,7 @@
           "authority": {
             "medianLuma": 76.807
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "capBandBrim": {
           "status": "pass",
@@ -768,12 +598,7 @@
           "authority": {
             "medianLuma": 55.111
           },
-          "medianOklabDelta": 0.000323,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.000323
         },
         "badge": {
           "status": "pass",
@@ -784,12 +609,7 @@
           "authority": {
             "medianLuma": 162.812
           },
-          "medianOklabDelta": 0.000158,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.361
-          }
+          "medianOklabDelta": 0.000158
         },
         "jumperBlue": {
           "status": "pass",
@@ -800,12 +620,7 @@
           "authority": {
             "medianLuma": 76.807
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "creamBand": {
           "status": "pass",
@@ -816,12 +631,7 @@
           "authority": {
             "medianLuma": 237.242
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.07,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "trousers": {
           "status": "pass",
@@ -832,12 +642,7 @@
           "authority": {
             "medianLuma": 58.183
           },
-          "medianOklabDelta": 4e-06,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 4e-06
         },
         "boots": {
           "status": "pass",
@@ -848,12 +653,7 @@
           "authority": {
             "medianLuma": 63.544
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "skin": {
           "status": "pass",
@@ -864,12 +664,7 @@
           "authority": {
             "medianLuma": 196.841
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "hair": {
           "status": "pass",
@@ -880,12 +675,7 @@
           "authority": {
             "medianLuma": 235.384
           },
-          "medianOklabDelta": 0.000304,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.000304
         },
         "beard": {
           "status": "pass",
@@ -896,12 +686,7 @@
           "authority": {
             "medianLuma": 236.881
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "outline": {
           "status": "pass",
@@ -912,12 +697,7 @@
           "authority": {
             "medianLuma": 2.864
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         }
       },
       "contact": {
@@ -995,12 +775,7 @@
           "authority": {
             "medianLuma": 76.807
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "capBandBrim": {
           "status": "pass",
@@ -1011,12 +786,7 @@
           "authority": {
             "medianLuma": 55.111
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "badge": {
           "status": "pass",
@@ -1027,12 +797,7 @@
           "authority": {
             "medianLuma": 162.812
           },
-          "medianOklabDelta": 0.000962,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.361,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.000962
         },
         "jumperBlue": {
           "status": "pass",
@@ -1043,12 +808,7 @@
           "authority": {
             "medianLuma": 76.807
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "creamBand": {
           "status": "pass",
@@ -1059,12 +819,7 @@
           "authority": {
             "medianLuma": 237.242
           },
-          "medianOklabDelta": 2.6e-05,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.07,
-            "next": 0.07
-          }
+          "medianOklabDelta": 2.6e-05
         },
         "trousers": {
           "status": "pass",
@@ -1075,12 +830,7 @@
           "authority": {
             "medianLuma": 58.183
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "boots": {
           "status": "pass",
@@ -1091,12 +841,7 @@
           "authority": {
             "medianLuma": 63.544
           },
-          "medianOklabDelta": 0.000173,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.000173
         },
         "skin": {
           "status": "pass",
@@ -1107,12 +852,7 @@
           "authority": {
             "medianLuma": 196.841
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "hair": {
           "status": "pass",
@@ -1123,12 +863,7 @@
           "authority": {
             "medianLuma": 235.384
           },
-          "medianOklabDelta": 0.000303,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.000303
         },
         "beard": {
           "status": "pass",
@@ -1139,12 +874,7 @@
           "authority": {
             "medianLuma": 236.881
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "outline": {
           "status": "pass",
@@ -1155,12 +885,7 @@
           "authority": {
             "medianLuma": 2.864
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         }
       },
       "contact": {
@@ -1238,12 +963,7 @@
           "authority": {
             "medianLuma": 76.807
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "capBandBrim": {
           "status": "pass",
@@ -1254,12 +974,7 @@
           "authority": {
             "medianLuma": 55.111
           },
-          "medianOklabDelta": 0.00024,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.00024
         },
         "badge": {
           "status": "pass",
@@ -1270,12 +985,7 @@
           "authority": {
             "medianLuma": 162.812
           },
-          "medianOklabDelta": 0.000285,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.361,
-            "next": 0.361
-          }
+          "medianOklabDelta": 0.000285
         },
         "jumperBlue": {
           "status": "pass",
@@ -1286,12 +996,7 @@
           "authority": {
             "medianLuma": 76.807
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "creamBand": {
           "status": "pass",
@@ -1302,12 +1007,7 @@
           "authority": {
             "medianLuma": 237.242
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.07,
-            "next": 0.07
-          }
+          "medianOklabDelta": 0.0
         },
         "trousers": {
           "status": "pass",
@@ -1318,12 +1018,7 @@
           "authority": {
             "medianLuma": 58.183
           },
-          "medianOklabDelta": 8e-06,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 8e-06
         },
         "boots": {
           "status": "pass",
@@ -1334,12 +1029,7 @@
           "authority": {
             "medianLuma": 63.544
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "skin": {
           "status": "pass",
@@ -1350,12 +1040,7 @@
           "authority": {
             "medianLuma": 196.841
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "hair": {
           "status": "pass",
@@ -1366,12 +1051,7 @@
           "authority": {
             "medianLuma": 235.384
           },
-          "medianOklabDelta": 0.00038,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.00038
         },
         "beard": {
           "status": "pass",
@@ -1382,12 +1062,7 @@
           "authority": {
             "medianLuma": 236.881
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         },
         "outline": {
           "status": "pass",
@@ -1398,12 +1073,7 @@
           "authority": {
             "medianLuma": 2.864
           },
-          "medianOklabDelta": 0.0,
-          "p95NearestAuthoritySwatchDelta": 0.0,
-          "adjacentMedianLumaDelta": {
-            "previous": 0.0,
-            "next": 0.0
-          }
+          "medianOklabDelta": 0.0
         }
       },
       "contact": {

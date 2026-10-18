@@ -1,0 +1,17 @@
+{
+  "version": 30,
+  "preserves": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "v29Disposition": "retained as immutable subtle-effect provenance; palette, flies and timing preserved",
+  "rollback": "Delete only V30 raw/draft/review/archive/builder/verifier/docs files; V20-V29 remain immutable."
+}

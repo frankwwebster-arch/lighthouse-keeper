@@ -1,8 +1,14 @@
 # Kitchen V27 broken-state animation draft
 
 Date: 18 October 2026
-Status: complete review draft; awaiting visual confirmation; unpromoted/unwired
+Status: rejected visual/timing provenance; unpromoted/unwired
 Review: `/keeper-review/kitchen-broken-loops-v27/`
+
+Rejection recorded 18 October 2026: the loops are too short and fast, and the
+independently constructed broken art does not match the approved kitchen asset
+family closely enough. V27 remains immutable evidence only. Replacement work
+starts one object at a time with the coordinated static state-family method in
+V28; no V27 art or timing is authoritative for that work.
 
 V27 preserves Kitchen V20–V26 and supplies eight looping, density-4 repair
 states at eight frames and 8 fps: overflowing bin, hinge-failed fridge,
@@ -45,5 +51,6 @@ art or canonical Kitchen/Prime source is changed.
   archived production URLs point to the remote `main` object store.
 - Documentation audit completed on 18 October 2026 against the builder,
   catalogue, archive route, current review status, runtime boundary and manual
-  `[deploy]` workflow. README, STATUS, DECISIONS and the superseded V26 note
-  now agree that V27 is review-only and V20–V26 remain immutable.
+  `[deploy]` workflow. README, STATUS and DECISIONS now agree that V27 is
+  rejected provenance, V28 is its one-item-at-a-time successor, and V20–V26
+  remain immutable.

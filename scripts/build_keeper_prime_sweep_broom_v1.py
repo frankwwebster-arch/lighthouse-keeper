@@ -953,8 +953,6 @@ def main() -> None:
                 "candidate": {"pixels": evidence["candidate"]["pixels"], "medianLuma": evidence["candidate"]["medianLuma"]},
                 "authority": {"medianLuma": evidence["authority"]["medianLuma"]},
                 "medianOklabDelta": evidence["medianOklabDelta"],
-                "p95NearestAuthoritySwatchDelta": evidence["p95NearestAuthoritySwatchDelta"],
-                "adjacentMedianLumaDelta": evidence["adjacentMedianLumaDelta"],
             }
             for component, evidence in record["colourEvidence"].items()
         }
