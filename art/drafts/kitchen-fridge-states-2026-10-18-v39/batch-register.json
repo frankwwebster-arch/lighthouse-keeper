@@ -1,0 +1,26 @@
+{
+  "version": 39,
+  "status": "awaiting-fridge-visual-review",
+  "supersedesRejectedDraft": 32,
+  "rejectedBatch": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "originalHashes": {
+    "v31Room": "027e5b1d722b65ed55eecc2f96640fb07f5e0b33283ce8fdce0e5d892450e674"
+  },
+  "draftHashes": {
+    "fridge-standard.png": "03c528a64d76b62bf48c39609bc30da0914799892b8d046f69ff99992439bc11",
+    "fridge-broken-hinge-failed.png": "5e421156def0af32827327df856ea502077b45c949292dc7367b5fc0751412b7",
+    "kitchen-fridge-cleared-bay.png": "dd87f65299745f6ec306ba9cb96d0bf185346feb3e45db58ad0cd4bc754751f7",
+    "kitchen-fridge-standard-in-situ.png": "2778c5712deb7a11ddf4fbefdb6ae23cb825772af0db6d2db192a57ee59c7e85",
+    "kitchen-fridge-broken-in-situ.png": "e08dbeb7b48a9983d6466366a284b8e222f1bc20a381daf6832adb2ddeba8242",
+    "fx-fridge-drip-ripple-f40.png": "02e70817b92a27028eccee7809c17c8a6710ccb5ec7d0c43fbb1531c637f94a7"
+  },
+  "nextAssetBlockedUntilApproval": "kettle",
+  "rollback": "Delete only V39 source/raw/draft/review/archive/builder/verifier/docs files; V31 and rejected V32-V38 provenance remain immutable."
+}

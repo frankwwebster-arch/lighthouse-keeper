@@ -1,8 +1,14 @@
 # Kitchen V32 coordinated fridge state family
 
 Date: 18 October 2026
-Status: visually approved by Frank; unpromoted/unwired
+Status: rejected on detailed deployed-page review; unpromoted/unwired
 Review: `/keeper-review/kitchen-fridge-states-v32/`
+
+> Historical note: Frank initially approved V32 from the first visual proof,
+> then withdrew that approval after inspecting the deployed page. The old
+> fridge/grille remained beneath the replacement and the pool did not meet the
+> room's actual floor surface. The later rejection record supersedes the
+> approval record; V32 remains immutable provenance and V39 is its replacement.
 
 V32 continues the approved V31 one-asset-at-a-time method with the fridge only.
 It draws `standard` and `broken_hinge_failed` together from one coordinated
@@ -41,12 +47,13 @@ rollback instructions live under
 gate are `scripts/build_kitchen_fridge_states_v32.py` and
 `scripts/verify_kitchen_fridge_states_v32.mjs`.
 
-## Approval and sequence boundary
+## Superseded approval and sequence boundary
 
 V32 changes no Kitchen V20–V31 source, runtime sprite, Final art or gameplay
-wiring. Frank visually approved the fridge on 18 October 2026, explicitly
-calling it excellent and authorising work to continue through the remaining
-kitchen assets. This visual approval does not promote V32 into Final/runtime.
+wiring. Frank initially called the fridge excellent on 18 October 2026, but
+later deployed-page inspection exposed the compositing and floor-placement
+faults above. `docs/review/kitchen-v32-v38-rejection-2026-10-18.json`
+supersedes that approval without deleting its historical record.
 
 ## Verification and documentation audit
 

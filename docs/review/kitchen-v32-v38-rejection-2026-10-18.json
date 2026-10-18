@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-18",
+  "verdict": "rejected",
+  "supersedes": {
+    "fridgeVisualApproval": "docs/review/kitchen-fridge-states-v32-approval-2026-10-18.json",
+    "remainingFamilyDrafts": [33, 34, 35, 36, 37, 38]
+  },
+  "scope": "visual-review drafts only; no Final or runtime asset had been promoted",
+  "feedback": {
+    "fridgeV32": [
+      "pool reads above the floor surface",
+      "replacement was composited over the earlier fridge and duplicate grilles remain",
+      "drip/ripple motion itself is worth retaining"
+    ],
+    "kettleV33": [
+      "on state does not visibly differ from standard",
+      "broken state needs billowing rising steam"
+    ],
+    "toasterV34": [
+      "new asset was placed without removing the original toaster",
+      "broken smoke is not visible enough"
+    ],
+    "ovenV35": [
+      "all states were superimposed over the original oven",
+      "state drawings are promising but placement, hob flame anchors and smoke strength are wrong"
+    ],
+    "mixingBowlV36": [
+      "new asset was placed without removing the original bowl"
+    ],
+    "basinV37": [
+      "redraw and placement are incorrect",
+      "water effect is too subtle"
+    ],
+    "tableV38": [
+      "closest attempt, but both states incorrectly hide the lower half of the chair"
+    ]
+  },
+  "replacementMethod": "redraw one complete coordinated asset family from scratch; clear the old asset before compositing; verify exact room placement and effects before moving to the next asset",
+  "activeReplacement": "kitchen-fridge-states-v39",
+  "nextAssetBlockedUntilApproval": "kettle"
+}

@@ -1,13 +1,14 @@
 # Kitchen coordinated asset families V33–V38
 
 Date: 18 October 2026
-Status: complete reversible review drafts; awaiting visual review; unpromoted/unwired
+Status: rejected visual-review drafts; unpromoted/unwired
 Reviews: `/keeper-review/kitchen-kettle-states-v33/` through `/keeper-review/kitchen-table-states-v38/`
 
-Frank approved the V32 fridge as excellent and authorised the remaining kitchen
-sequence. Each successor was drawn as its own coordinated source family, then
-normalised into crisp game-scale pixels against the same approved V23/V31
-continuous fitted galley. No Final or runtime file changes.
+Frank initially approved the V32 fridge and authorised the remaining kitchen
+sequence. Detailed review of the deployed V32–V38 pages later rejected the
+entire batch. The attempts remain immutable provenance; no Final or runtime
+file changed. The rejection reasons and replacement method are recorded in
+`docs/review/kitchen-v32-v38-rejection-2026-10-18.json`.
 
 - V33 kettle: standard, on and broken. On uses a small separate spout-steam
   loop. The broken handle has one failed mounting but remains attached; its
@@ -30,7 +31,9 @@ continuous fitted galley. No Final or runtime file changes.
   than damage placed over the intact sprite. Its front-left leg remains partly
   attached, the damaged foot meets the floor and no animation is required.
 
-Every moving environmental layer is 40 frames at 4 fps for a ten-second loop.
+The intended construction was as follows; the delivered visual results are not
+accepted. Every moving environmental layer is 40 frames at 4 fps for a
+ten-second loop.
 Every frame has transparent gutters; review playback remains locked until all
 unique media URLs decode. Each page shows the V21/V23 authority beside the new
 standard, every state at 4× inspection scale, and every state in the complete
@@ -60,9 +63,10 @@ discarding only that version's source/raw/draft/review/archive files.
 
 ## Verification and documentation audit result
 
-The focused V32 and V33–V38 gates, the 122-set/2,552-reference review archive,
+At delivery time, the focused V32 and V33–V38 gates, the 122-set/2,552-reference review archive,
 the complete 179-test repository suite, TypeScript and the production Next.js
-build all pass. The active reviewer retains exact V5 and V20–V38 only. Its
+build all passed. At that delivery point the reviewer retained exact V5 and
+V20–V38 only. Its
 canonical Keeper shell now factors 109 byte-identical `keeper_walk` lead-in
 records through an explicit `leadInRef` fallback; the audit mirror remains
 byte-identical, reviewer behaviour is unchanged, and the verified public
@@ -72,5 +76,7 @@ The final documentation audit reconciled README, STATUS, DECISIONS, the V32
 approval record, review routes, source/draft/raw paths, archive retention,
 named SFX, test commands and the no-promotion boundary. The only unavailable
 local check was binding a preview port inside the restricted sandbox; the
-production build itself completed successfully and the deployed routes are
-verified after delivery.
+production build itself completed successfully and the deployed routes were
+verified after delivery. Those mechanical checks did not catch the visible
+compositing defects, which is why V39 adds a cleared-bay construction proof and
+pixel-level removal assertions.

@@ -278,6 +278,11 @@ export default {
         destination: '/keeper-review/kitchen-table-states-v38/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-fridge-states-v39',
+        destination: '/keeper-review/kitchen-fridge-states-v39/index.html',
+        permanent: false,
+      },
     ]
   },
 }

@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "set": "kitchen-fridge-states-v39",
+  "page": {
+    "path": "public/keeper-review/kitchen-fridge-states-v39/index.html",
+    "sha256": "7b7e6291e49c848e82eac68fbb491de14201522754894d86174c6d4a40ccb78e",
+    "bytes": 8156
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-fridge-states-v39/assets/fridge-broken-hinge-failed.png": {
+      "sha256": "5e421156def0af32827327df856ea502077b45c949292dc7367b5fc0751412b7",
+      "extension": ".png",
+      "bytes": 8782,
+      "object": "review-archive/objects/5e/5e421156def0af32827327df856ea502077b45c949292dc7367b5fc0751412b7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5e/5e421156def0af32827327df856ea502077b45c949292dc7367b5fc0751412b7.png"
+    },
+    "/keeper-review/kitchen-fridge-states-v39/assets/fridge-standard.png": {
+      "sha256": "03c528a64d76b62bf48c39609bc30da0914799892b8d046f69ff99992439bc11",
+      "extension": ".png",
+      "bytes": 5394,
+      "object": "review-archive/objects/03/03c528a64d76b62bf48c39609bc30da0914799892b8d046f69ff99992439bc11.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/03/03c528a64d76b62bf48c39609bc30da0914799892b8d046f69ff99992439bc11.png"
+    },
+    "/keeper-review/kitchen-fridge-states-v39/assets/fx-fridge-drip-ripple-f40.png": {
+      "sha256": "02e70817b92a27028eccee7809c17c8a6710ccb5ec7d0c43fbb1531c637f94a7",
+      "extension": ".png",
+      "bytes": 2916,
+      "object": "review-archive/objects/02/02e70817b92a27028eccee7809c17c8a6710ccb5ec7d0c43fbb1531c637f94a7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/02/02e70817b92a27028eccee7809c17c8a6710ccb5ec7d0c43fbb1531c637f94a7.png"
+    },
+    "/keeper-review/kitchen-fridge-states-v39/assets/kitchen-fridge-broken-in-situ.png": {
+      "sha256": "e08dbeb7b48a9983d6466366a284b8e222f1bc20a381daf6832adb2ddeba8242",
+      "extension": ".png",
+      "bytes": 186739,
+      "object": "review-archive/objects/e0/e08dbeb7b48a9983d6466366a284b8e222f1bc20a381daf6832adb2ddeba8242.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e0/e08dbeb7b48a9983d6466366a284b8e222f1bc20a381daf6832adb2ddeba8242.png"
+    },
+    "/keeper-review/kitchen-fridge-states-v39/assets/kitchen-fridge-cleared-bay.png": {
+      "sha256": "dd87f65299745f6ec306ba9cb96d0bf185346feb3e45db58ad0cd4bc754751f7",
+      "extension": ".png",
+      "bytes": 180077,
+      "object": "review-archive/objects/dd/dd87f65299745f6ec306ba9cb96d0bf185346feb3e45db58ad0cd4bc754751f7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/dd/dd87f65299745f6ec306ba9cb96d0bf185346feb3e45db58ad0cd4bc754751f7.png"
+    },
+    "/keeper-review/kitchen-fridge-states-v39/assets/kitchen-fridge-standard-in-situ.png": {
+      "sha256": "2778c5712deb7a11ddf4fbefdb6ae23cb825772af0db6d2db192a57ee59c7e85",
+      "extension": ".png",
+      "bytes": 184070,
+      "object": "review-archive/objects/27/2778c5712deb7a11ddf4fbefdb6ae23cb825772af0db6d2db192a57ee59c7e85.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/27/2778c5712deb7a11ddf4fbefdb6ae23cb825772af0db6d2db192a57ee59c7e85.png"
+    }
+  }
+}
