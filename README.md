@@ -469,23 +469,21 @@ x=84–588, common y=134 worktop/y=151 fascia/y=208 foot line, and complete
 one-person table/rear-facing chair. Frank called it excellent subject to making
 the fridge door white.
 
-The active gate is Rebuild V7 at
-`/keeper-review/kitchen-rebuild-states-v7/`. It retains V6 media byte-for-byte
-but replaces the global effect-first controls with an asset-first Broken-state
-builder. Choose an appliance, then drag any number of compatible animation
-families onto its exact native-game-size kitchen view. Each applied layer is
+The active gate is Rebuild V8 at
+`/keeper-review/kitchen-rebuild-states-v8/`. It retains V7's asset-first Broken-
+state builder and all unrelated media, but corrects the Broken oven directly
+from the exact On oven. Its bottom-hinged door opens a few degrees straight
+toward the camera: the exact door is foreshortened vertically on its unchanged
+centreline, with no sideways skew, while its transparent window still shows
+the cavity and burnt roasting item. Internal-light flicker swaps the complete,
+identically registered dark and lit Broken ovens instead of superimposing a
+separate cavity graphic. The independently removable warning flicker remains
+above that full-state swap, with smoke above both. Every applied layer remains
 independently selectable and removable, with its own model, 0.1×–4× speed,
-position, width/height and four-sided crop. Configuration persists in browser
-local storage and exports as JSON. Every source remains a canonical
-40-frame/4-fps ten-second loop. V3 restored broken
-toaster/tap headroom, locked broken-oven flickers to the On-state anchors and
-normalized the table/chair to the canonical furniture datums. The approved
-V31 bin smell and fly loops are reusable without changing their pixels. The
-fridge starts with no drip layer. Oven smoke is movable; fascia-warning and
-On-derived cavity-light flickers are separate removable layers registered to
-the exact oven position, and the Broken object permanently contains a burnt
-blackened roasting item. Its record is
-[`docs/KITCHEN_REBUILD_STATES_V7_2026-10-18.md`](docs/KITCHEN_REBUILD_STATES_V7_2026-10-18.md).
+position, width/height and four-sided crop; configuration persists locally and
+exports as JSON. Every source remains a canonical 40-frame/4-fps ten-second
+loop. Its record is
+[`docs/KITCHEN_REBUILD_STATES_V8_2026-10-18.md`](docs/KITCHEN_REBUILD_STATES_V8_2026-10-18.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

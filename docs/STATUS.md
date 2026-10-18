@@ -141,18 +141,16 @@ y=151 fascia and y=208 foot line. Frank called it excellent subject to changing
 the fridge door to white.
 
 The active kitchen gate is
-`/keeper-review/kitchen-rebuild-states-v7/`. V7 preserves all V6 object/effect
-media byte-for-byte and replaces its global effect-first controls with an
-asset-first Broken-state builder. Select an appliance, then drag any number of
-compatible animation families onto its native-size complete-kitchen view.
-Every applied layer is independently selectable/removable and has its own
-model, 0.1×–4× speed, position, width/height and four-sided crop; stacks persist
-locally and export as JSON. The fridge defaults to no drip. Approved smell and
-flies are reusable on any asset. Oven smoke is movable; fascia-warning and
-On-derived cavity-light flickers are separate removable but oven-registered
-layers. All 36 models remain isolated 40-frame/4-fps canonical ten-second
-strips. V7 is reversible, unpromoted and unwired; Final/runtime are unchanged
-and V3–V6 remain immutable.
+`/keeper-review/kitchen-rebuild-states-v8/`. V8 retains V7's asset-first layer
+builder and all unrelated media. It replaces only the Broken oven and its
+internal-light strips: the exact On oven supplies the body, hob, fascia and
+door; that door is vertically foreshortened on its unchanged centreline so its
+bottom hinge projects straight toward the camera without sideways skew. Its
+window still exposes the cavity and burnt roast. Cavity flicker swaps the
+complete, identically registered dark/lit Broken oven, while the warning light
+and smoke remain separately removable layers above it. All controls and all 36
+isolated 40-frame/4-fps ten-second models remain available. V8 is reversible,
+unpromoted and unwired; Final/runtime and V3–V7 remain unchanged.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

@@ -1,0 +1,2203 @@
+{
+  "set": "kitchen-rebuild-states-2026-10-18-v8",
+  "version": 8,
+  "status": "coherent-broken-oven-state-swap-awaiting-review",
+  "foundation": {
+    "set": "kitchen-rebuild-foundation-2026-10-18-v1",
+    "immutable": true,
+    "roomPixels": [
+      772,
+      224
+    ],
+    "bayWidthPixels": 84,
+    "bayCount": 6
+  },
+  "method": {
+    "objectArtSeparateFromEffects": true,
+    "userTransformableEffects": true,
+    "transformControls": [
+      "drag",
+      "resize",
+      "crop",
+      "nudge",
+      "local-save",
+      "json-export"
+    ],
+    "environmentalEffectsSeparate": true,
+    "perEffectPlaybackSpeed": true,
+    "canonicalLoopSeconds": 10,
+    "perEffectFamilyEnabled": true,
+    "assetFirstLayerWorkbench": true,
+    "multiInstanceEffects": true,
+    "dragDropPlacement": true,
+    "perLayerRemoval": true,
+    "fullStateFlickerSwap": true,
+    "brokenOvenDerivedFromOn": true
+  },
+  "states": {
+    "fridge": [
+      "standard",
+      "broken"
+    ],
+    "kettle": [
+      "standard",
+      "on",
+      "broken"
+    ],
+    "toaster": [
+      "standard",
+      "on",
+      "broken"
+    ],
+    "oven": [
+      "standard",
+      "on",
+      "broken"
+    ],
+    "bowl": [
+      "standard",
+      "broken"
+    ],
+    "basin": [
+      "standard",
+      "on",
+      "broken"
+    ]
+  },
+  "objectOrigins": {
+    "fridge-standard": [
+      84,
+      98
+    ],
+    "kettle-standard": [
+      168,
+      98
+    ],
+    "toaster-standard": [
+      252,
+      98
+    ],
+    "oven-standard": [
+      336,
+      98
+    ],
+    "bowl-standard": [
+      420,
+      98
+    ],
+    "basin-standard": [
+      504,
+      98
+    ],
+    "fridge-on": [
+      84,
+      98
+    ],
+    "kettle-on": [
+      168,
+      98
+    ],
+    "toaster-on": [
+      252,
+      98
+    ],
+    "oven-on": [
+      336,
+      98
+    ],
+    "bowl-on": [
+      420,
+      98
+    ],
+    "basin-on": [
+      504,
+      98
+    ],
+    "fridge-broken": [
+      44,
+      105
+    ],
+    "kettle-broken": [
+      168,
+      98
+    ],
+    "toaster-broken": [
+      252,
+      85
+    ],
+    "oven-broken": [
+      336,
+      98
+    ],
+    "bowl-broken": [
+      420,
+      98
+    ],
+    "basin-broken": [
+      504,
+      85
+    ]
+  },
+  "table": {
+    "origin": [
+      680,
+      129
+    ],
+    "widthPixels": 80,
+    "footLineY": 208,
+    "tableTopY": 150,
+    "chairSeatY": 177
+  },
+  "effects": {
+    "kettle-on-steam--classic": {
+      "asset": "kettle",
+      "state": "on",
+      "origin": [
+        130,
+        -4
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_kettle_boiling_steam_loop",
+      "family": "kettle-on-steam",
+      "model": "classic",
+      "file": "fx-kettle-on-steam--classic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "kettle-on-steam--compact": {
+      "asset": "kettle",
+      "state": "on",
+      "origin": [
+        130,
+        -4
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_kettle_boiling_steam_loop",
+      "family": "kettle-on-steam",
+      "model": "compact",
+      "file": "fx-kettle-on-steam--compact-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "kettle-on-steam--emphatic": {
+      "asset": "kettle",
+      "state": "on",
+      "origin": [
+        130,
+        -4
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_kettle_boiling_steam_loop",
+      "family": "kettle-on-steam",
+      "model": "emphatic",
+      "file": "fx-kettle-on-steam--emphatic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "toaster-on-heat--classic": {
+      "asset": "toaster",
+      "state": "on",
+      "origin": [
+        234,
+        -8
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_toaster_heat_hum_loop",
+      "family": "toaster-on-heat",
+      "model": "classic",
+      "file": "fx-toaster-on-heat--classic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "toaster-on-heat--compact": {
+      "asset": "toaster",
+      "state": "on",
+      "origin": [
+        234,
+        -8
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_toaster_heat_hum_loop",
+      "family": "toaster-on-heat",
+      "model": "compact",
+      "file": "fx-toaster-on-heat--compact-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "toaster-on-heat--emphatic": {
+      "asset": "toaster",
+      "state": "on",
+      "origin": [
+        234,
+        -8
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_toaster_heat_hum_loop",
+      "family": "toaster-on-heat",
+      "model": "emphatic",
+      "file": "fx-toaster-on-heat--emphatic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "basin-on-flow--classic": {
+      "asset": "basin",
+      "state": "on",
+      "origin": [
+        499,
+        48
+      ],
+      "size": [
+        84,
+        100
+      ],
+      "sfx": "kitchen_basin_gentle_flow_loop",
+      "family": "basin-on-flow",
+      "model": "classic",
+      "file": "fx-basin-on-flow--classic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "basin-on-flow--compact": {
+      "asset": "basin",
+      "state": "on",
+      "origin": [
+        499,
+        48
+      ],
+      "size": [
+        84,
+        100
+      ],
+      "sfx": "kitchen_basin_gentle_flow_loop",
+      "family": "basin-on-flow",
+      "model": "compact",
+      "file": "fx-basin-on-flow--compact-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "basin-on-flow--emphatic": {
+      "asset": "basin",
+      "state": "on",
+      "origin": [
+        499,
+        48
+      ],
+      "size": [
+        84,
+        100
+      ],
+      "sfx": "kitchen_basin_gentle_flow_loop",
+      "family": "basin-on-flow",
+      "model": "emphatic",
+      "file": "fx-basin-on-flow--emphatic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "fridge-broken-drip--classic": {
+      "asset": "fridge",
+      "state": "broken",
+      "origin": [
+        44,
+        80
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_fridge_slow_drip_loop",
+      "family": "fridge-broken-drip",
+      "model": "classic",
+      "file": "fx-fridge-broken-drip--classic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "fridge-broken-drip--compact": {
+      "asset": "fridge",
+      "state": "broken",
+      "origin": [
+        44,
+        80
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_fridge_slow_drip_loop",
+      "family": "fridge-broken-drip",
+      "model": "compact",
+      "file": "fx-fridge-broken-drip--compact-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "fridge-broken-drip--emphatic": {
+      "asset": "fridge",
+      "state": "broken",
+      "origin": [
+        44,
+        80
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_fridge_slow_drip_loop",
+      "family": "fridge-broken-drip",
+      "model": "emphatic",
+      "file": "fx-fridge-broken-drip--emphatic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "kettle-broken-steam--classic": {
+      "asset": "kettle",
+      "state": "broken",
+      "origin": [
+        145,
+        -38
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_kettle_broken_pressure_hiss_loop",
+      "family": "kettle-broken-steam",
+      "model": "classic",
+      "file": "fx-kettle-broken-steam--classic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "kettle-broken-steam--compact": {
+      "asset": "kettle",
+      "state": "broken",
+      "origin": [
+        145,
+        -38
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_kettle_broken_pressure_hiss_loop",
+      "family": "kettle-broken-steam",
+      "model": "compact",
+      "file": "fx-kettle-broken-steam--compact-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "kettle-broken-steam--emphatic": {
+      "asset": "kettle",
+      "state": "broken",
+      "origin": [
+        145,
+        -38
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_kettle_broken_pressure_hiss_loop",
+      "family": "kettle-broken-steam",
+      "model": "emphatic",
+      "file": "fx-kettle-broken-steam--emphatic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "toaster-broken-smoke--classic": {
+      "asset": "toaster",
+      "state": "broken",
+      "origin": [
+        234,
+        -24
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_toaster_burnt_smoke_crackle_loop",
+      "family": "toaster-broken-smoke",
+      "model": "classic",
+      "file": "fx-toaster-broken-smoke--classic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "toaster-broken-smoke--compact": {
+      "asset": "toaster",
+      "state": "broken",
+      "origin": [
+        234,
+        -24
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_toaster_burnt_smoke_crackle_loop",
+      "family": "toaster-broken-smoke",
+      "model": "compact",
+      "file": "fx-toaster-broken-smoke--compact-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "toaster-broken-smoke--emphatic": {
+      "asset": "toaster",
+      "state": "broken",
+      "origin": [
+        234,
+        -24
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_toaster_burnt_smoke_crackle_loop",
+      "family": "toaster-broken-smoke",
+      "model": "emphatic",
+      "file": "fx-toaster-broken-smoke--emphatic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "oven-broken-smoke--classic": {
+      "asset": "oven",
+      "state": "broken",
+      "origin": [
+        311,
+        28
+      ],
+      "size": [
+        132,
+        158
+      ],
+      "sfx": "kitchen_oven_broken_smoke_hiss_loop",
+      "family": "oven-broken-smoke",
+      "model": "classic",
+      "file": "fx-oven-broken-smoke--classic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "oven-broken-smoke--compact": {
+      "asset": "oven",
+      "state": "broken",
+      "origin": [
+        311,
+        28
+      ],
+      "size": [
+        132,
+        158
+      ],
+      "sfx": "kitchen_oven_broken_smoke_hiss_loop",
+      "family": "oven-broken-smoke",
+      "model": "compact",
+      "file": "fx-oven-broken-smoke--compact-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "oven-broken-smoke--emphatic": {
+      "asset": "oven",
+      "state": "broken",
+      "origin": [
+        311,
+        28
+      ],
+      "size": [
+        132,
+        158
+      ],
+      "sfx": "kitchen_oven_broken_smoke_hiss_loop",
+      "family": "oven-broken-smoke",
+      "model": "emphatic",
+      "file": "fx-oven-broken-smoke--emphatic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "basin-broken-spray--classic": {
+      "asset": "basin",
+      "state": "broken",
+      "origin": [
+        482,
+        -12
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_basin_broken_upward_spray_loop",
+      "family": "basin-broken-spray",
+      "model": "classic",
+      "file": "fx-basin-broken-spray--classic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "basin-broken-spray--compact": {
+      "asset": "basin",
+      "state": "broken",
+      "origin": [
+        482,
+        -12
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_basin_broken_upward_spray_loop",
+      "family": "basin-broken-spray",
+      "model": "compact",
+      "file": "fx-basin-broken-spray--compact-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "basin-broken-spray--emphatic": {
+      "asset": "basin",
+      "state": "broken",
+      "origin": [
+        482,
+        -12
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_basin_broken_upward_spray_loop",
+      "family": "basin-broken-spray",
+      "model": "emphatic",
+      "file": "fx-basin-broken-spray--emphatic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "bin-broken-smell--classic": {
+      "asset": "bin",
+      "state": "broken",
+      "origin": [
+        -16,
+        44
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_bin_stench_miasma_loop",
+      "family": "bin-broken-smell",
+      "model": "classic",
+      "file": "fx-bin-broken-smell--classic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "bin-broken-smell--compact": {
+      "asset": "bin",
+      "state": "broken",
+      "origin": [
+        -16,
+        44
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_bin_stench_miasma_loop",
+      "family": "bin-broken-smell",
+      "model": "compact",
+      "file": "fx-bin-broken-smell--compact-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "bin-broken-smell--emphatic": {
+      "asset": "bin",
+      "state": "broken",
+      "origin": [
+        -16,
+        44
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_bin_stench_miasma_loop",
+      "family": "bin-broken-smell",
+      "model": "emphatic",
+      "file": "fx-bin-broken-smell--emphatic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "editableSpeed": true
+    },
+    "bin-broken-flies--classic": {
+      "asset": "bin",
+      "state": "broken",
+      "origin": [
+        -16,
+        44
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_bin_flies_slow_loop",
+      "family": "bin-broken-flies",
+      "model": "classic",
+      "file": "fx-bin-broken-flies--classic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "editableSpeed": true,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "bin-broken-flies--compact": {
+      "asset": "bin",
+      "state": "broken",
+      "origin": [
+        -16,
+        44
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_bin_flies_slow_loop",
+      "family": "bin-broken-flies",
+      "model": "compact",
+      "file": "fx-bin-broken-flies--compact-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "editableSpeed": true,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "bin-broken-flies--emphatic": {
+      "asset": "bin",
+      "state": "broken",
+      "origin": [
+        -16,
+        44
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_bin_flies_slow_loop",
+      "family": "bin-broken-flies",
+      "model": "emphatic",
+      "file": "fx-bin-broken-flies--emphatic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "reusable": true,
+      "effectOnly": true,
+      "editableTransform": true,
+      "editableSpeed": true,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "oven-broken-warning-flicker--classic": {
+      "asset": "oven",
+      "state": "broken",
+      "origin": [
+        318,
+        74
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_oven_broken_warning_flicker_loop",
+      "family": "oven-broken-warning-flicker",
+      "model": "classic",
+      "file": "fx-oven-broken-warning-flicker--classic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "reusable": false,
+      "effectOnly": true,
+      "editableTransform": false,
+      "lockedToObject": true,
+      "editableSpeed": true,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "oven-broken-warning-flicker--rapid": {
+      "asset": "oven",
+      "state": "broken",
+      "origin": [
+        318,
+        74
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_oven_broken_warning_flicker_loop",
+      "family": "oven-broken-warning-flicker",
+      "model": "rapid",
+      "file": "fx-oven-broken-warning-flicker--rapid-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "reusable": false,
+      "effectOnly": true,
+      "editableTransform": false,
+      "lockedToObject": true,
+      "editableSpeed": true,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "oven-broken-warning-flicker--angry": {
+      "asset": "oven",
+      "state": "broken",
+      "origin": [
+        318,
+        74
+      ],
+      "size": [
+        120,
+        144
+      ],
+      "sfx": "kitchen_oven_broken_warning_flicker_loop",
+      "family": "oven-broken-warning-flicker",
+      "model": "angry",
+      "file": "fx-oven-broken-warning-flicker--angry-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "reusable": false,
+      "effectOnly": true,
+      "editableTransform": false,
+      "lockedToObject": true,
+      "editableSpeed": true,
+      "cellPixels": [
+        120,
+        144
+      ],
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "oven-broken-cavity-flicker--classic": {
+      "asset": "oven",
+      "state": "broken",
+      "origin": [
+        334,
+        96
+      ],
+      "size": [
+        88,
+        124
+      ],
+      "sfx": "kitchen_oven_broken_internal_light_flicker_loop",
+      "family": "oven-broken-cavity-flicker",
+      "model": "classic",
+      "file": "fx-oven-broken-cavity-flicker--classic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "reusable": false,
+      "effectOnly": true,
+      "editableTransform": false,
+      "lockedToObject": true,
+      "editableSpeed": true,
+      "cellPixels": [
+        88,
+        124
+      ],
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "fullStateSwap": true
+    },
+    "oven-broken-cavity-flicker--slow": {
+      "asset": "oven",
+      "state": "broken",
+      "origin": [
+        334,
+        96
+      ],
+      "size": [
+        88,
+        124
+      ],
+      "sfx": "kitchen_oven_broken_internal_light_flicker_loop",
+      "family": "oven-broken-cavity-flicker",
+      "model": "slow",
+      "file": "fx-oven-broken-cavity-flicker--slow-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "reusable": false,
+      "effectOnly": true,
+      "editableTransform": false,
+      "lockedToObject": true,
+      "editableSpeed": true,
+      "cellPixels": [
+        88,
+        124
+      ],
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "fullStateSwap": true
+    },
+    "oven-broken-cavity-flicker--erratic": {
+      "asset": "oven",
+      "state": "broken",
+      "origin": [
+        334,
+        96
+      ],
+      "size": [
+        88,
+        124
+      ],
+      "sfx": "kitchen_oven_broken_internal_light_flicker_loop",
+      "family": "oven-broken-cavity-flicker",
+      "model": "erratic",
+      "file": "fx-oven-broken-cavity-flicker--erratic-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "canonicalDurationSeconds": 10,
+      "speedRange": [
+        0.1,
+        4
+      ],
+      "reusable": false,
+      "effectOnly": true,
+      "editableTransform": false,
+      "lockedToObject": true,
+      "editableSpeed": true,
+      "cellPixels": [
+        88,
+        124
+      ],
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "fullStateSwap": true
+    }
+  },
+  "effectFamilies": {
+    "kettle-on-steam": {
+      "models": [
+        "kettle-on-steam--classic",
+        "kettle-on-steam--compact",
+        "kettle-on-steam--emphatic"
+      ],
+      "default": "kettle-on-steam--classic"
+    },
+    "toaster-on-heat": {
+      "models": [
+        "toaster-on-heat--classic",
+        "toaster-on-heat--compact",
+        "toaster-on-heat--emphatic"
+      ],
+      "default": "toaster-on-heat--classic"
+    },
+    "basin-on-flow": {
+      "models": [
+        "basin-on-flow--classic",
+        "basin-on-flow--compact",
+        "basin-on-flow--emphatic"
+      ],
+      "default": "basin-on-flow--classic"
+    },
+    "fridge-broken-drip": {
+      "models": [
+        "fridge-broken-drip--classic",
+        "fridge-broken-drip--compact",
+        "fridge-broken-drip--emphatic"
+      ],
+      "default": "fridge-broken-drip--classic"
+    },
+    "kettle-broken-steam": {
+      "models": [
+        "kettle-broken-steam--classic",
+        "kettle-broken-steam--compact",
+        "kettle-broken-steam--emphatic"
+      ],
+      "default": "kettle-broken-steam--classic"
+    },
+    "toaster-broken-smoke": {
+      "models": [
+        "toaster-broken-smoke--classic",
+        "toaster-broken-smoke--compact",
+        "toaster-broken-smoke--emphatic"
+      ],
+      "default": "toaster-broken-smoke--classic"
+    },
+    "oven-broken-smoke": {
+      "models": [
+        "oven-broken-smoke--classic",
+        "oven-broken-smoke--compact",
+        "oven-broken-smoke--emphatic"
+      ],
+      "default": "oven-broken-smoke--classic"
+    },
+    "basin-broken-spray": {
+      "models": [
+        "basin-broken-spray--classic",
+        "basin-broken-spray--compact",
+        "basin-broken-spray--emphatic"
+      ],
+      "default": "basin-broken-spray--classic"
+    },
+    "bin-broken-smell": {
+      "models": [
+        "bin-broken-smell--classic",
+        "bin-broken-smell--compact",
+        "bin-broken-smell--emphatic"
+      ],
+      "default": "bin-broken-smell--classic"
+    },
+    "bin-broken-flies": {
+      "models": [
+        "bin-broken-flies--classic",
+        "bin-broken-flies--compact",
+        "bin-broken-flies--emphatic"
+      ],
+      "default": "bin-broken-flies--classic"
+    },
+    "oven-broken-warning-flicker": {
+      "models": [
+        "oven-broken-warning-flicker--classic",
+        "oven-broken-warning-flicker--rapid",
+        "oven-broken-warning-flicker--angry"
+      ],
+      "default": "oven-broken-warning-flicker--classic"
+    },
+    "oven-broken-cavity-flicker": {
+      "models": [
+        "oven-broken-cavity-flicker--classic",
+        "oven-broken-cavity-flicker--slow",
+        "oven-broken-cavity-flicker--erratic"
+      ],
+      "default": "oven-broken-cavity-flicker--classic"
+    }
+  },
+  "allOn": {
+    "fridge": "standard",
+    "kettle": "on",
+    "toaster": "on",
+    "oven": "on",
+    "bowl": "standard",
+    "basin": "on",
+    "bin": "standard"
+  },
+  "allBroken": {
+    "fridge": "broken",
+    "kettle": "broken",
+    "toaster": "broken",
+    "oven": "broken",
+    "bowl": "broken",
+    "basin": "broken",
+    "bin": "broken"
+  },
+  "mixedPreset": {
+    "fridge": "broken",
+    "kettle": "on",
+    "toaster": "broken",
+    "oven": "on",
+    "bowl": "broken",
+    "basin": "on",
+    "bin": "broken"
+  },
+  "sourceProvenance": {
+    "userApprovedBrokenEffects": {
+      "file": "art/source/kitchen-rebuild-states-2026-10-18-v3/generated/user-approved-broken-effects.png",
+      "sha256": "75899da25b94494545263afbd49b17663c93442725d6043e9bb9782f1f1c41ee"
+    },
+    "generatedTableChair": {
+      "file": "art/source/kitchen-rebuild-states-2026-10-18-v3/generated/canon-height-table-chair-source.png",
+      "sha256": "6e60ddfe6ba9c205618dbdb4404f6f4b31d2a612ae5b884482ae07ff7b6086a1",
+      "mode": "built-in image generation",
+      "geometry": "deterministically normalized to canon datums"
+    },
+    "immutableV3Parent": {
+      "set": "kitchen-rebuild-states-2026-10-18-v3",
+      "catalogueSha256": "708ac03e26a2144b15f46ab44fd6a4b1a93da05fdd9e655b4c458b4896f2030d"
+    },
+    "immutableV4Parent": {
+      "set": "kitchen-rebuild-states-2026-10-18-v4",
+      "catalogueSha256": "5efaa741984048ea7daf1a548afd69d3a08c9f44e3bf8ba6655fadc55a5a54db"
+    },
+    "immutableV5Parent": {
+      "set": "kitchen-rebuild-states-2026-10-18-v5",
+      "catalogueSha256": "7e09c76d9cd1a5934721d03080ff20a2e9eb14ff52e475c6b5a1bf50c0958a7c"
+    },
+    "immutableV6Parent": {
+      "set": "kitchen-rebuild-states-2026-10-18-v6",
+      "catalogueSha256": "c66dfa9d9a3aa6770134d2c49eb29f419b738325e2a127f61ee43f5a59234667"
+    },
+    "immutableV7Parent": {
+      "set": "kitchen-rebuild-states-2026-10-18-v7",
+      "catalogueSha256": "a385380b2e9f4a8709da66ed9a1aeed5f282cbe1f6204c5636e9d97504435a3d"
+    }
+  },
+  "outputs": {
+    "fridge-standard.png": {
+      "sha256": "6111ff77f585b55257d282726727158e926cdcb6af3d5dbb417d01448515d439",
+      "pixels": [
+        84,
+        120
+      ]
+    },
+    "fridge-broken.png": {
+      "sha256": "ca054aa58e94518a4eb72bde2c4318412ca6ca3aafa71a966dd9160ad8b5636f",
+      "pixels": [
+        124,
+        119
+      ]
+    },
+    "kettle-standard.png": {
+      "sha256": "012a813d20675086f60f189594988593e95c7a863b08b7a211ab74a6a7b6d098",
+      "pixels": [
+        84,
+        120
+      ]
+    },
+    "kettle-on.png": {
+      "sha256": "012a813d20675086f60f189594988593e95c7a863b08b7a211ab74a6a7b6d098",
+      "pixels": [
+        84,
+        120
+      ]
+    },
+    "kettle-broken.png": {
+      "sha256": "a8888f49e7f53d2f61ea8fff20a4847be519d21860e019c70bafa7e9a225e7b1",
+      "pixels": [
+        84,
+        120
+      ]
+    },
+    "toaster-standard.png": {
+      "sha256": "07170d1ad2c9bc6a67b5188932d3de57c9a97ea42768821bca3ddf704005aec8",
+      "pixels": [
+        84,
+        120
+      ]
+    },
+    "toaster-on.png": {
+      "sha256": "fbfb7ab637634f40b6151c28887d638498eb34da046416be5197807b310ee3fa",
+      "pixels": [
+        84,
+        120
+      ]
+    },
+    "toaster-broken.png": {
+      "sha256": "5e883bcae5b7ddaf85c16bcdd3d049fed02aff6e2c8414ef11d0fe9ae0474d54",
+      "pixels": [
+        84,
+        133
+      ]
+    },
+    "oven-standard.png": {
+      "sha256": "8daddc23d6f967591ab992979d517c95c6f8dff09f590d2551ef1f525461520c",
+      "pixels": [
+        84,
+        120
+      ]
+    },
+    "oven-on.png": {
+      "sha256": "d20678722c4327a4c179fb9094dc01371933a4b6d3fdb0a7468d0e5c35a983a6",
+      "pixels": [
+        84,
+        120
+      ]
+    },
+    "oven-broken.png": {
+      "sha256": "90de44f24448b614d8487cbb1206f0b6b27fb0a6023dc99303072976ec2f33f5",
+      "pixels": [
+        84,
+        120
+      ]
+    },
+    "bowl-standard.png": {
+      "sha256": "efd0adee641fb335ee7423ffe4ab4b71bb201d0f5d339c670462dff1f19b0d88",
+      "pixels": [
+        84,
+        120
+      ]
+    },
+    "bowl-broken.png": {
+      "sha256": "3fc4ae59bba0f01d2d7023ff8b285c46f92a510e31663d6e8a5826a28e09e58b",
+      "pixels": [
+        84,
+        120
+      ]
+    },
+    "basin-standard.png": {
+      "sha256": "b13cccef67429d94149bb32dc6ecb3b2454c2cf8cd7c739b7fcb4fba21578531",
+      "pixels": [
+        84,
+        120
+      ]
+    },
+    "basin-on.png": {
+      "sha256": "b13cccef67429d94149bb32dc6ecb3b2454c2cf8cd7c739b7fcb4fba21578531",
+      "pixels": [
+        84,
+        120
+      ]
+    },
+    "basin-broken.png": {
+      "sha256": "34140b82554bb1bf3dfc95c246f404cf7b7c8db3260fa263492d07b7522db907",
+      "pixels": [
+        84,
+        133
+      ]
+    },
+    "kitchen-background.png": {
+      "sha256": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "table-chair.png": {
+      "sha256": "69fda5771770e28653326f995b3354f4a303b982175e7996797e626ae1c5d4a6",
+      "pixels": [
+        84,
+        79
+      ]
+    },
+    "bin-standard.png": {
+      "sha256": "86b05224a7da5fc5c05918f2875018920ed54cf46fc00cb08952ffd29789f9c0",
+      "pixels": [
+        72,
+        72
+      ]
+    },
+    "bin-broken.png": {
+      "sha256": "77ad87fabfd3e5c10a4a14f294af343a5d93a2a2015e6d77f18a4140b1f5fb4f",
+      "pixels": [
+        72,
+        72
+      ]
+    },
+    "fx-bin-stench-f40.png": {
+      "sha256": "4b8e257ea91812b21addad303950cef15e253b5aaf3756943dd499ebc38401fc",
+      "pixels": [
+        3200,
+        80
+      ]
+    },
+    "fx-bin-flies-f40.png": {
+      "sha256": "ffcddd73880c75b252764b59b4311c556eb49c58949701250e5c422a036cc34c",
+      "pixels": [
+        3200,
+        80
+      ]
+    },
+    "fx-kettle-on-steam--classic-f40.png": {
+      "sha256": "8fc80530b4ba2f3d9c7f02fff63585205f8997f30b0fc9709f90af2d47a98fff",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-kettle-on-steam--compact-f40.png": {
+      "sha256": "cddb5b1f5286f2b215c34aaf61912a0ae401b3e5c21fcacb050f2bfdf4492bab",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-kettle-on-steam--emphatic-f40.png": {
+      "sha256": "3fa479f7a5cb03fc3283740c1f00ac64f5bfd09f6c892b6412286a88e90aa85e",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-toaster-on-heat--classic-f40.png": {
+      "sha256": "614e24af0bea69a8e01c23a55a7a45ea34c3cd5ddf0d99e6adab6fe8e381dc95",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-toaster-on-heat--compact-f40.png": {
+      "sha256": "de8b648039cd5398c1445e1aeac9c81987c2dacdf6e44c097816c8da7a6fd792",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-toaster-on-heat--emphatic-f40.png": {
+      "sha256": "9895d9ae313c14641551d77c997d60db3c17a6ee3b0bbedaf7ac6ae0c36c7f7f",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-basin-on-flow--classic-f40.png": {
+      "sha256": "e3b7e5b53322f28ca1755a36c862ac0a826e79bb75215de036b57d4bbc6e910e",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-basin-on-flow--compact-f40.png": {
+      "sha256": "cd67fc1a496802f712bdc896a2be8a3dfe762dafbd7e2431edee81defb703701",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-basin-on-flow--emphatic-f40.png": {
+      "sha256": "0c67b83557bb0a2129d04601cde1ad631edce601fd5003a1e95db74ed14a148d",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-fridge-broken-drip--classic-f40.png": {
+      "sha256": "bad785c8555d4d210d2501658e6e34eccedcbf78dc07bc8bba8f16b4eea74255",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-fridge-broken-drip--compact-f40.png": {
+      "sha256": "c03b9394bc9e7d1cad9f2662bc4ef9d44f2546e46b9683532ab2a6c655c80a34",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-fridge-broken-drip--emphatic-f40.png": {
+      "sha256": "f548c4fea5f080e0b6440fd5f4c589b0852dc97efde08ef15cfc660d61cbf270",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-kettle-broken-steam--classic-f40.png": {
+      "sha256": "85c0735da8f3f3b633feff543a41d058c9766d470f82e14685c75d56567b9653",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-kettle-broken-steam--compact-f40.png": {
+      "sha256": "7888053ff2217d098cc9cd45bca19b36535fa0c603715947b1293cf7c0ed9b03",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-kettle-broken-steam--emphatic-f40.png": {
+      "sha256": "75df6528420a387d290f0dddba8ad1adaec8b9a2844a33571f5e8bb16420724c",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-toaster-broken-smoke--classic-f40.png": {
+      "sha256": "f566e8485264a091c70f31cf1ded57c94bda85a04e52382b9ad7a5eb9f3e76c2",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-toaster-broken-smoke--compact-f40.png": {
+      "sha256": "c044af137f7a7f0dc391941a2fb8c585b6cfb16bbec77aad07237b6cae4f4c3a",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-toaster-broken-smoke--emphatic-f40.png": {
+      "sha256": "d7a69c5bf3dea6bb66aa9f81f6c5609f281a51eafd5af4b0d01b4a2b83c6cc6c",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-oven-broken-smoke--classic-f40.png": {
+      "sha256": "0611f2bb8ae8c0f3fd140365b99b359aa2d19b07cda10ce11be218d6a16bcb1a",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-oven-broken-smoke--compact-f40.png": {
+      "sha256": "d717128ea66c9194b933d8097686475acd7d98b79240f29078a910f3171276f8",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-oven-broken-smoke--emphatic-f40.png": {
+      "sha256": "9ba9639c81e480a8b4cc92aba05d035b3d3f9a9b885377daf1d9dd2a18205435",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-basin-broken-spray--classic-f40.png": {
+      "sha256": "f92bfa5a9e4d1eee0b700fd22424770b936f7175a1573def03cf6e67d1e6cb14",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-basin-broken-spray--compact-f40.png": {
+      "sha256": "f5ac63e43d908e50a477268924d8aafd1a11f89332e64d42fb2f7e4a4bbf2427",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-basin-broken-spray--emphatic-f40.png": {
+      "sha256": "4c5255e2c64818d0a13ad84f73217e72671046aa9609c52c92bf0d9d27842d66",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-bin-broken-smell--classic-f40.png": {
+      "sha256": "12fd1d93709866cf55b523a7b34318e417926ab05ff6b60964ec392fa7474817",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-bin-broken-smell--compact-f40.png": {
+      "sha256": "53071d20c8e762bb1ba78dfe9fc8d5f7c77ae614e42a482104401f1c6ddb92f5",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-bin-broken-smell--emphatic-f40.png": {
+      "sha256": "edb6eba49c7fefb83c91c44c9043b6bced746574566567336ef3f1c13a52f111",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "kitchen-standard-v3.png": {
+      "sha256": "c85a56a5a0cf1fa8965913ee83ae1ec978706c7f665819d768c105d9c8b639e2",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "kitchen-all-on-static.png": {
+      "sha256": "970ef5a6ab8eb59f46919c91a38d576fdde53433856e14a711483daacc6f3022",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "kitchen-all-broken-static.png": {
+      "sha256": "7851fba66f2ad43f2e36302be8dc6bb8b8a5ecc433fdc35259f36ed8f2b3f658",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "kitchen-mixed-static.png": {
+      "sha256": "6f5dc6902eca7e95dce0d3086248689ee20e18574d2d585e6da5e1f6156d06fd",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "fx-bin-broken-flies--classic-f40.png": {
+      "sha256": "3e0b4da441ff6949a2780c6c218c7f44816da5c59379f65200f803691bbf6edd",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-bin-broken-flies--compact-f40.png": {
+      "sha256": "423be05e73dc7383bd5935ec143af7b2c0f781ac696f6861fb47e5ae9eac08c8",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-bin-broken-flies--emphatic-f40.png": {
+      "sha256": "65c735e9cf1bbb3b5c8b73ab726e945d102859b83e685b097b0e423e004bf933",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-oven-broken-warning-flicker--classic-f40.png": {
+      "sha256": "4e4ba47ada7db2320e3bf19c310b2fb0e624e0edd7a66cf7349861ccc97fc518",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-oven-broken-warning-flicker--rapid-f40.png": {
+      "sha256": "f1069c9ec7e35cd10b57e5753293182ec370e10491101cf9b8901fcc6ce97871",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-oven-broken-warning-flicker--angry-f40.png": {
+      "sha256": "f2c9a0c5d7b193f100efafd5b6d4cc98722ad6581c1c5ad47d86f25d86458037",
+      "pixels": [
+        4800,
+        144
+      ]
+    },
+    "fx-oven-broken-cavity-flicker--classic-f40.png": {
+      "sha256": "3b2cbe2039af65d94907d533b7d0a401627c25a426738f5da5a49b8a69475036",
+      "pixels": [
+        3520,
+        124
+      ]
+    },
+    "fx-oven-broken-cavity-flicker--slow-f40.png": {
+      "sha256": "d26b687951414a6e5d894576ce676364fc0a0600859690d6b198c9512e9903ef",
+      "pixels": [
+        3520,
+        124
+      ]
+    },
+    "fx-oven-broken-cavity-flicker--erratic-f40.png": {
+      "sha256": "948bef24641476c32673d76386e3c39b8988bf10597657db5aac1178596710d2",
+      "pixels": [
+        3520,
+        124
+      ]
+    }
+  },
+  "media": [
+    "fridge-standard.png",
+    "fridge-broken.png",
+    "kettle-standard.png",
+    "kettle-on.png",
+    "kettle-broken.png",
+    "toaster-standard.png",
+    "toaster-on.png",
+    "toaster-broken.png",
+    "oven-standard.png",
+    "oven-on.png",
+    "oven-broken.png",
+    "bowl-standard.png",
+    "bowl-broken.png",
+    "basin-standard.png",
+    "basin-on.png",
+    "basin-broken.png",
+    "kitchen-background.png",
+    "table-chair.png",
+    "bin-standard.png",
+    "bin-broken.png",
+    "fx-bin-stench-f40.png",
+    "fx-bin-flies-f40.png",
+    "fx-kettle-on-steam--classic-f40.png",
+    "fx-kettle-on-steam--compact-f40.png",
+    "fx-kettle-on-steam--emphatic-f40.png",
+    "fx-toaster-on-heat--classic-f40.png",
+    "fx-toaster-on-heat--compact-f40.png",
+    "fx-toaster-on-heat--emphatic-f40.png",
+    "fx-basin-on-flow--classic-f40.png",
+    "fx-basin-on-flow--compact-f40.png",
+    "fx-basin-on-flow--emphatic-f40.png",
+    "fx-fridge-broken-drip--classic-f40.png",
+    "fx-fridge-broken-drip--compact-f40.png",
+    "fx-fridge-broken-drip--emphatic-f40.png",
+    "fx-kettle-broken-steam--classic-f40.png",
+    "fx-kettle-broken-steam--compact-f40.png",
+    "fx-kettle-broken-steam--emphatic-f40.png",
+    "fx-toaster-broken-smoke--classic-f40.png",
+    "fx-toaster-broken-smoke--compact-f40.png",
+    "fx-toaster-broken-smoke--emphatic-f40.png",
+    "fx-oven-broken-smoke--classic-f40.png",
+    "fx-oven-broken-smoke--compact-f40.png",
+    "fx-oven-broken-smoke--emphatic-f40.png",
+    "fx-basin-broken-spray--classic-f40.png",
+    "fx-basin-broken-spray--compact-f40.png",
+    "fx-basin-broken-spray--emphatic-f40.png",
+    "fx-bin-broken-smell--classic-f40.png",
+    "fx-bin-broken-smell--compact-f40.png",
+    "fx-bin-broken-smell--emphatic-f40.png",
+    "kitchen-standard-v3.png",
+    "kitchen-all-on-static.png",
+    "kitchen-all-broken-static.png",
+    "kitchen-mixed-static.png",
+    "fx-bin-broken-flies--classic-f40.png",
+    "fx-bin-broken-flies--compact-f40.png",
+    "fx-bin-broken-flies--emphatic-f40.png",
+    "fx-oven-broken-warning-flicker--classic-f40.png",
+    "fx-oven-broken-warning-flicker--rapid-f40.png",
+    "fx-oven-broken-warning-flicker--angry-f40.png",
+    "fx-oven-broken-cavity-flicker--classic-f40.png",
+    "fx-oven-broken-cavity-flicker--slow-f40.png",
+    "fx-oven-broken-cavity-flicker--erratic-f40.png"
+  ],
+  "promotion": "none",
+  "runtimeWiring": "unchanged",
+  "effectEnabledDefaults": {
+    "kettle-on-steam": true,
+    "toaster-on-heat": true,
+    "basin-on-flow": true,
+    "fridge-broken-drip": false,
+    "kettle-broken-steam": true,
+    "toaster-broken-smoke": true,
+    "oven-broken-smoke": true,
+    "basin-broken-spray": true,
+    "bin-broken-smell": true,
+    "bin-broken-flies": true,
+    "oven-broken-warning-flicker": true,
+    "oven-broken-cavity-flicker": true
+  }
+}
