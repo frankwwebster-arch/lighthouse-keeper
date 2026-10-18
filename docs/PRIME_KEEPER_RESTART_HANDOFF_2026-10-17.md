@@ -144,7 +144,12 @@ unchanged. Alongside the original 47-frame contract route, V2 adds a
 cupboard-proxy context: approved standard walk right → a 100%-hidden state
 swap → root-moving, leg-cycling sweep left → directional turnaround proxy →
 root-moving, leg-cycling sweep right → a second 100%-hidden swap → mirrored
-approved standard walk left. V2 is unapproved and unpromoted.
+approved standard walk left. V2 is live from review-only deploy commit
+`08c9cc6`; live review on 18 October decoded all 98 unique images before
+controls enabled, reached the explicit frame-9 fully-hidden handoff, and
+played the moving-leg outward sweep with no browser-console errors. The shell
+fetches the full reviewer from immutable candidate commit `55c5615`, not from
+mutable `main`. V2 remains unapproved and unpromoted.
 
 ## Binding method for every inherited animation
 
@@ -262,7 +267,9 @@ checkpoint no Prime animation has been promoted into Final/runtime/production.
 
 ## Exact next-task boundary
 
-Deploy and stop for Frank's visual decision on Prime `keeper_sweep_broom` V2.
+Stop for Frank's visual decision on the already-live Prime `keeper_sweep_broom`
+V2 reviewer. The direct production link is
+`https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sweep-broom-v2/`.
 If he approves it, write a separate hash-pinned decision and still promote
 nothing without another explicit instruction. If he requests changes, create
 V3 and preserve V1 and V2 byte-for-byte. After that decision, decide whether

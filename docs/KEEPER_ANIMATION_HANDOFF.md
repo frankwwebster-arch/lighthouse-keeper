@@ -2177,7 +2177,12 @@ leg-cycling outward sweep → directional turnaround proxy → root-moving,
 leg-cycling return sweep → fully obscured swap to standard walk-left. The
 reviewer retains action/loop modes, large/gameplay/literal 1× scales,
 previous-frame and Prime ghosts, component masks and per-frame colour evidence.
-V2 awaits Frank and must not be promoted. Any amendment is a new V3.
+V2 is live from review-only deploy commit `08c9cc6`; its 98 unique images were
+decoded before controls enabled, the frame-9 fully-hidden cupboard swap and
+moving-leg outward sweep playback were checked live without console errors.
+The tiny deployed shell fetches the fuller reviewer from immutable candidate
+commit `55c5615`, rather than mutable `main`. V2 awaits Frank and must not be
+promoted. Any amendment is a new V3.
 
 ## Ready-to-paste opening prompt for the next review iteration
 

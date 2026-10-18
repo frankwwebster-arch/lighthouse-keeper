@@ -159,7 +159,11 @@ against an exact Prime swatch in every action pose, retains the separately
 owned prop and per-frame material evidence, and adds the kitchen cupboard
 handoff: standard walk right → fully obscured swap → moving sweep-walk left →
 turnaround proxy → moving sweep-walk right → fully obscured swap → standard
-walk left. It awaits Frank and is not promoted.
+walk left. It awaits Frank and is not promoted. Review-only deploy `08c9cc6`
+was live-checked on 18 October: all 98 unique images decoded before controls,
+the fully obscured handoff and moving-leg sweep playback worked, and no browser
+console errors appeared. The full reviewer is hash-pinned to candidate
+`55c5615`.
 
 Back V1's exact deploy commit `d93c89c` remains delivery provenance only. Back
 V2 is live from exact deploy commit `f165576`; its 61-frame route and all 36
