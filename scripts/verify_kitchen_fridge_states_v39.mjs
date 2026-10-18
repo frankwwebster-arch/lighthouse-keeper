@@ -10,6 +10,7 @@ const rawDir = path.join(root, 'art/raw/kitchen-fridge-states-2026-10-18-v39')
 const draftDir = path.join(root, 'art/drafts/kitchen-fridge-states-2026-10-18-v39')
 const pageFile = path.join(root, 'public/keeper-review/kitchen-fridge-states-v39/index.html')
 const archiveFile = path.join(root, 'review-archive/sets/kitchen-fridge-states-v39.json')
+const approvalFile = path.join(root, 'docs/review/kitchen-fridge-states-v39-approval-2026-10-18.json')
 const baseRoomFile = path.join(root, 'art/raw/kitchen-bin-effects-2026-10-18-v31/kitchen-bin-standard-in-situ.png')
 const sha = file => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')
 const png = file => PNG.sync.read(fs.readFileSync(file))
@@ -24,6 +25,7 @@ for (const [name, expected] of Object.entries(sourceHashes)) assert.equal(sha(pa
 
 const catalogue = JSON.parse(fs.readFileSync(path.join(draftDir, 'candidate-catalogue.json'), 'utf8'))
 const register = JSON.parse(fs.readFileSync(path.join(draftDir, 'batch-register.json'), 'utf8'))
+const approval = JSON.parse(fs.readFileSync(approvalFile, 'utf8'))
 assert.equal(catalogue.version, 39)
 assert.equal(catalogue.status, 'from-scratch-fridge-correction-awaiting-review')
 assert.deepEqual(catalogue.states, ['standard', 'broken_hinge_failed'])
@@ -37,12 +39,20 @@ assert.equal(register.status, 'awaiting-fridge-visual-review')
 assert.equal(register.supersedesRejectedDraft, 32)
 assert.deepEqual(register.rejectedBatch, [33, 34, 35, 36, 37, 38])
 assert.equal(register.nextAssetBlockedUntilApproval, 'kettle')
+assert.equal(approval.decision, 'approved-as-kitchen-fridge-review-authority')
+assert.equal(approval.approvedHashes.selectedSource, sourceHashes['fridge-two-state-compact-hinge-source-v2.png'])
+assert.equal(approval.approvedHashes.candidateCatalogue, sha(path.join(draftDir, 'candidate-catalogue.json')))
+assert.equal(approval.approvedHashes.batchRegister, sha(path.join(draftDir, 'batch-register.json')))
+assert.equal(approval.approvedHashes.reviewPage, sha(pageFile))
+assert.equal(approval.approvedHashes.archiveManifest, sha(archiveFile))
+assert.equal(approval.approvalBoundary.sequenceReleased, 'oven')
 
 for (const name of ['fridge-standard.png', 'fridge-broken-hinge-failed.png']) {
   const file = path.join(rawDir, name)
   const image = png(file)
   assert.deepEqual([image.width, image.height], [136, 104], `${name} cell geometry changed`)
   assert.equal(sha(file), catalogue.outputs[name].sha256, `${name} output hash drifted`)
+  assert.equal(sha(file), approval.approvedHashes.outputs[name], `${name} no longer matches the approved V39 hash`)
   for (let x = 0; x < image.width; x++) {
     assert.equal(alpha(image, x, 0), 0, `${name} touches top edge`)
     assert.equal(alpha(image, x, image.height - 1), 0, `${name} touches bottom edge`)
@@ -61,6 +71,7 @@ assert.deepEqual([58 + 26, 136 + 4, 58 + 110, 136 + 82], [84, 140, 168, 218], 's
 const base = png(baseRoomFile)
 const cleared = png(path.join(rawDir, 'kitchen-fridge-cleared-bay.png'))
 assert.deepEqual([cleared.width, cleared.height], [772, 224])
+assert.equal(sha(path.join(rawDir, 'kitchen-fridge-cleared-bay.png')), approval.approvedHashes.outputs['kitchen-fridge-cleared-bay.png'])
 for (let y = 0; y < 224; y++) for (let x = 0; x < 772; x++) {
   const inside = x >= 84 && x < 168 && y >= 151 && y < 218
   const expected = inside ? pixel(base, x + 84, y) : pixel(base, x, y)
@@ -79,6 +90,7 @@ for (const name of ['kitchen-fridge-standard-in-situ.png', 'kitchen-fridge-broke
   const image = png(file)
   assert.deepEqual([image.width, image.height], [772, 224], `${name} is not exact game size`)
   assert.equal(sha(file), catalogue.outputs[name].sha256, `${name} output hash drifted`)
+  assert.equal(sha(file), approval.approvedHashes.outputs[name], `${name} no longer matches the approved V39 hash`)
 }
 
 const broken = png(path.join(rawDir, 'fridge-broken-hinge-failed.png'))
@@ -111,6 +123,7 @@ assert.deepEqual(effect.cellPixels, [136, 104])
 const strip = png(path.join(rawDir, effect.file))
 assert.deepEqual([strip.width, strip.height], [5440, 104])
 assert.equal(sha(path.join(rawDir, effect.file)), catalogue.outputs[effect.file].sha256)
+assert.equal(sha(path.join(rawDir, effect.file)), approval.approvedHashes.outputs[effect.file])
 const frameHashes = new Set()
 for (let frame = 0; frame < 40; frame++) {
   const x0 = frame * 136

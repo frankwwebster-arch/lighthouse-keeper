@@ -123,8 +123,22 @@ x=84–168/y=140–218; the broken door and pool reach the actual y=218 floor; a
 compact surviving lower hinge is visibly connected; and one grille appears per
 state. Generic contents remain visible. The separate 40-frame/4-fps ten-second
 drip/ripple strip contains no fridge pixels and is shown both alone and over
-the broken state. V39 is reversible, unpromoted and awaiting Frank's review.
-No kettle or later asset is active until this gate is accepted. Older
+the broken state. Frank approved exact V39 on 18 October 2026; its source,
+sprites, room proofs, effect strip, catalogue, register, page and archive
+manifest are hash-pinned in
+`docs/review/kitchen-fridge-states-v39-approval-2026-10-18.json`. Approval is
+review authority only; V39 remains unpromoted and unwired.
+
+The active oven successor is `/keeper-review/kitchen-oven-states-v40/`. V40
+clears the whole previous oven/hob bay, then inserts exactly one state from a
+new coordinated Off/On/Broken family at x=336–420/y=123–218. Off is dark. On
+has turned dials, a red indicator, amber cavity and roasting tin. Broken keeps
+its door attached and askew, with its failed right rotary dial hanging below
+the fascia by two wires. Strong billowing cavity smoke, two burner-anchored
+hob flames and irregular angry warning-light bursts with rare amber cavity
+flickers are separate reusable 40-frame/4-fps ten-second strips. V40 is
+reversible, unpromoted and awaiting Frank's review; no later kitchen asset is
+active. Older
 cream/brown sets remain offline in `review-archive/retired/`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains

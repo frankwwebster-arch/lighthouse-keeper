@@ -283,6 +283,11 @@ export default {
         destination: '/keeper-review/kitchen-fridge-states-v39/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-oven-states-v40',
+        destination: '/keeper-review/kitchen-oven-states-v40/index.html',
+        permanent: false,
+      },
     ]
   },
 }

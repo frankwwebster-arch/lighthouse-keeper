@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "set": "kitchen-oven-states-v40",
+  "page": {
+    "path": "public/keeper-review/kitchen-oven-states-v40/index.html",
+    "sha256": "afdb77b9f58c924dd4efb2f5d50bbf4398a32fdbd88e485c8526e7328e5c1ac1",
+    "bytes": 10346
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-oven-states-v40/assets/fx-oven-billowing-smoke-f40.png": {
+      "sha256": "add0df1154a03f0dc74eb93556bea9a50bcab6e3435be656ed83291e781c11f2",
+      "extension": ".png",
+      "bytes": 33760,
+      "object": "review-archive/objects/ad/add0df1154a03f0dc74eb93556bea9a50bcab6e3435be656ed83291e781c11f2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ad/add0df1154a03f0dc74eb93556bea9a50bcab6e3435be656ed83291e781c11f2.png"
+    },
+    "/keeper-review/kitchen-oven-states-v40/assets/fx-oven-hob-flames-f40.png": {
+      "sha256": "6be637ca891fbc7b9efdb147db7826232fe7b0d568c66892b959efc56a8fe5f6",
+      "extension": ".png",
+      "bytes": 4535,
+      "object": "review-archive/objects/6b/6be637ca891fbc7b9efdb147db7826232fe7b0d568c66892b959efc56a8fe5f6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6b/6be637ca891fbc7b9efdb147db7826232fe7b0d568c66892b959efc56a8fe5f6.png"
+    },
+    "/keeper-review/kitchen-oven-states-v40/assets/fx-oven-warning-light-flicker-f40.png": {
+      "sha256": "2be0fd74267e693fd2b0ec98f37555826989230e5650701bfeae1468bbbda12d",
+      "extension": ".png",
+      "bytes": 3471,
+      "object": "review-archive/objects/2b/2be0fd74267e693fd2b0ec98f37555826989230e5650701bfeae1468bbbda12d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2be0fd74267e693fd2b0ec98f37555826989230e5650701bfeae1468bbbda12d.png"
+    },
+    "/keeper-review/kitchen-oven-states-v40/assets/kitchen-oven-broken-in-situ.png": {
+      "sha256": "7fc95d396d4a8dbaf68b34c4aa647e7108dadc46fc7021856e56ce207ea3aa0b",
+      "extension": ".png",
+      "bytes": 182177,
+      "object": "review-archive/objects/7f/7fc95d396d4a8dbaf68b34c4aa647e7108dadc46fc7021856e56ce207ea3aa0b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7f/7fc95d396d4a8dbaf68b34c4aa647e7108dadc46fc7021856e56ce207ea3aa0b.png"
+    },
+    "/keeper-review/kitchen-oven-states-v40/assets/kitchen-oven-cleared-bay.png": {
+      "sha256": "c1f0c6e463680a8013091d931b0f7153538ba2138eeb27642526b9d69a05987d",
+      "extension": ".png",
+      "bytes": 171499,
+      "object": "review-archive/objects/c1/c1f0c6e463680a8013091d931b0f7153538ba2138eeb27642526b9d69a05987d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c1/c1f0c6e463680a8013091d931b0f7153538ba2138eeb27642526b9d69a05987d.png"
+    },
+    "/keeper-review/kitchen-oven-states-v40/assets/kitchen-oven-off-in-situ.png": {
+      "sha256": "6075efb988ca0b2b804fd8954b603d18bbc59ab7fa333e787885fcb2710ab7d6",
+      "extension": ".png",
+      "bytes": 178899,
+      "object": "review-archive/objects/60/6075efb988ca0b2b804fd8954b603d18bbc59ab7fa333e787885fcb2710ab7d6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/60/6075efb988ca0b2b804fd8954b603d18bbc59ab7fa333e787885fcb2710ab7d6.png"
+    },
+    "/keeper-review/kitchen-oven-states-v40/assets/kitchen-oven-on-in-situ.png": {
+      "sha256": "e29ac9985f181c0f36eb5c31fd50c5a5fd142300087979875f8204ce1e41d5af",
+      "extension": ".png",
+      "bytes": 179297,
+      "object": "review-archive/objects/e2/e29ac9985f181c0f36eb5c31fd50c5a5fd142300087979875f8204ce1e41d5af.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e2/e29ac9985f181c0f36eb5c31fd50c5a5fd142300087979875f8204ce1e41d5af.png"
+    },
+    "/keeper-review/kitchen-oven-states-v40/assets/oven-broken.png": {
+      "sha256": "121a0624861d709b3fc58ac545844de356c71ae111c0eb446190f18fdfbb55e5",
+      "extension": ".png",
+      "bytes": 10006,
+      "object": "review-archive/objects/12/121a0624861d709b3fc58ac545844de356c71ae111c0eb446190f18fdfbb55e5.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/12/121a0624861d709b3fc58ac545844de356c71ae111c0eb446190f18fdfbb55e5.png"
+    },
+    "/keeper-review/kitchen-oven-states-v40/assets/oven-off.png": {
+      "sha256": "94a658cf40d3c12bbdc0914ac0e902d1903f912d2a1f33dd528f94561ddf1771",
+      "extension": ".png",
+      "bytes": 7416,
+      "object": "review-archive/objects/94/94a658cf40d3c12bbdc0914ac0e902d1903f912d2a1f33dd528f94561ddf1771.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/94/94a658cf40d3c12bbdc0914ac0e902d1903f912d2a1f33dd528f94561ddf1771.png"
+    },
+    "/keeper-review/kitchen-oven-states-v40/assets/oven-on.png": {
+      "sha256": "d182eba5bd8f8db4991a4689123fdd6b5aeb6314adea204c2cb1c59b4ce7dbf3",
+      "extension": ".png",
+      "bytes": 7861,
+      "object": "review-archive/objects/d1/d182eba5bd8f8db4991a4689123fdd6b5aeb6314adea204c2cb1c59b4ce7dbf3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d1/d182eba5bd8f8db4991a4689123fdd6b5aeb6314adea204c2cb1c59b4ce7dbf3.png"
+    }
+  }
+}
