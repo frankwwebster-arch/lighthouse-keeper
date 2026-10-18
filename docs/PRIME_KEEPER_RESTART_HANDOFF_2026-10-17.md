@@ -276,28 +276,40 @@ V4 is rejected immutable provenance: its left-facing turn endpoint incorrectly
 left the broom trailing behind the Keeper, and its closed cupboard leaf did not
 make the claimed occlusion visually unambiguous.
 
-V5 is the fresh unapproved candidate at
-`/keeper-review/keeper-prime-sweep-broom-v5/`. Its 51-frame review route uses
-approved Walk V6 for standard travel, a measured foreground cupboard leaf for
-both fully obscured state swaps, three distinct moving-leg sweep poses in each
-direction, and a nine-frame held-broom reversal derived from the approved V9
-side/back turn. The left-facing endpoint now carries the broom in front/left of
-the Keeper on one continuous straight shaft through both hands; the rejected
-kinked-handle correction is not used. The closed foreground leaf spans 80 lp
-across the 192-lp stage, covering the complete 48-lp unit. The replacement prop
-is a traditional rigid-stock broom: one
-timber shaft, metal ferrule, rigid horizontal timber crossbar, multiple
-separately bound straw bundles and a broad straight working edge. The exact
-384×320 registered prop bounds for every held/action/turn frame are stored in
-`art/drafts/keeper-prime-sweep-broom-2026-10-18-v5/batch-register.json` under
-`broomReplicationContract`; hoovering, lawn-mowing or other tool variants may
-reuse the route/gait grammar only after replacing the prop and remeasuring hand
-contact, floor contact, bounds and cupboard coverage.
+V5 is rejected immutable provenance at
+`/keeper-review/keeper-prime-sweep-broom-v5/`. Frank found that its repeated
+three-pose action still skimmed rather than walked, its nine-frame reversal was
+too sparse, and the complete route ran implausibly fast. Frank additionally
+rejected parking the broom beside the body during the pivot: the broom must
+remain in the Keeper's working space in front of his torso or it will visibly
+skip back to the front on the final frame. Preserve V5, candidate commit
+`3548d09`, shell pin `e643fd3` and deployment `772b9e9` as evidence only.
 
-V5 remains review-only: no Final/runtime artwork or game logic changed. Its
-immutable candidate is commit `3548d09`, and the public shell is pinned by
-commit `e643fd3`. Review-only deployment commit `772b9e9` was verified live on
-18 October 2026: the reviewer decoded all 29 unique images, frame 9 showed the
-full cupboard-cover state swap, and frame 30 reached the corrected held-broom
-turn endpoint. No sweep-broom artwork may be promoted without a later,
+V6 is the fresh unapproved corrective candidate at
+`/keeper-review/keeper-prime-sweep-broom-v6/`. Its 67-frame route is approved
+Walk V6 right → fully covered cupboard swap → two complete eight-cell
+walking-sweep cycles left → a planted 17-frame reversal → two complete
+walking-sweep cycles right → fully covered cupboard swap → approved Walk V6
+left. The eight action cells are keyed frame-by-frame to approved Walk V6 gait
+phases and show visible boot travel without lower-jumper splice artefacts. The
+reversal follows the nine approved V9 angles out and the eight intermediates
+back. The rigid-stock broom stays in front of the Keeper throughout, becomes
+progressively occluded as his back faces the viewer, is centred between the
+boots at the direct rear frame, and reappears on the new leading side without
+a position jump. The straight shaft, metal ferrule, rigid timber crossbar,
+separately bound straw bundles and broad working edge remain separately owned
+prop evidence. Directly visible grip contact is measured in frames turn1–7;
+turn8–9 record `occluded-carried` because the body hides the hands and handle.
+
+V6 authored timing is deliberately slower: 150 ms per standard-walk frame,
+220 ms per sweeping step, 180 ms per intermediate turn angle, 270 ms at each
+planted turn endpoint and 300 ms for each fully hidden state swap. Its reviewer
+includes large, gameplay-scale and literal 1× playback, previous-frame ghosts,
+the complete cupboard route, and frame-by-frame sweep/approved-Walk
+comparisons. Every classified visible Prime material pixel is checked against
+an envelope derived from exact approved Walk V6 authority pixels; this is not a
+whole-garment average. Prop dimensions and per-frame bounds remain recorded in
+`art/drafts/keeper-prime-sweep-broom-2026-10-18-v6/batch-register.json` for
+future hoovering, lawn-mowing or other tool variants. V6 changes no
+Final/runtime artwork or game logic and may not be promoted without a later,
 separate explicit instruction.

@@ -1,0 +1,3 @@
+# Prime Keeper sweep broom V6
+
+Corrective review-only successor to rejected V5. Every sweeping pass uses a clean eight-cell redraw keyed frame-by-frame to the complete approved Walk V6 gait, so the boots visibly contact, recoil, pass and lift. The held-broom reversal expands from nine route frames to seventeen approved-V9-angle frames. The broom remains in the Keeper's working space in front of his torso throughout the pivot, becomes naturally occluded at the rear view, and is centred between the boots rather than parked at his side; this prevents a final-frame position jump. Authored timing is 150 ms for standard walk, 220 ms for sweeping steps, 180 ms for turn intermediates and 270 ms for planted turn endpoints. Nothing is approved or promoted.
