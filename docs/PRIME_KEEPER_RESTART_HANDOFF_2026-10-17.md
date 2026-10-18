@@ -296,6 +296,8 @@ contact, floor contact, bounds and cupboard coverage.
 
 V5 remains review-only: no Final/runtime artwork or game logic changed. Its
 immutable candidate is commit `3548d09`, and the public shell is pinned by
-commit `e643fd3`. It must still be deployed and verified live before asking
-Frank for a visual decision. No sweep-broom artwork may be promoted without a
-later, separate explicit instruction.
+commit `e643fd3`. Review-only deployment commit `772b9e9` was verified live on
+18 October 2026: the reviewer decoded all 29 unique images, frame 9 showed the
+full cupboard-cover state swap, and frame 30 reached the corrected held-broom
+turn endpoint. No sweep-broom artwork may be promoted without a later,
+separate explicit instruction.
