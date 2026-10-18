@@ -1,13 +1,15 @@
 # Kitchen V39 from-scratch fridge correction
 
 Date: 18 October 2026
-Status: awaiting Frank's visual review; unpromoted/unwired
+Status: historically approved, then superseded by clean-slate Rebuild V1; unpromoted/unwired
 Review: `/keeper-review/kitchen-fridge-states-v39/`
 
-V39 replaces rejected V32 as the active fridge review candidate. It does not
-repair or reuse V32 fridge pixels. Standard and broken were redrawn together
-from scratch using the approved room only as a style, projection, palette and
-measurement reference.
+V39 historically replaced rejected V32 as the active fridge review candidate.
+It does not repair or reuse V32 fridge pixels. Frank approved it before later
+rejecting the broader asset-by-asset kitchen method; it remains immutable
+historical evidence rather than the current construction authority. Standard
+and broken were redrawn together from scratch using the approved room only as
+a style, projection, palette and measurement reference.
 
 The standard state fills the exact 21-lp bay: x=84–168 and y=140–218 in the
 772 × 224 room. The broken state uses the same construction. Its top hinge has

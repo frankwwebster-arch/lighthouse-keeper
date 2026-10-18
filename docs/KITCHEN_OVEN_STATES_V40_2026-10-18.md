@@ -11,8 +11,9 @@ does not repair, composite over or reuse V35 oven pixels.
 > Rejection update, 18 October 2026: Frank rejected V40 because the oven was
 > too high and insufficiently wide in proportion, while its smoke rose as
 > bubbles. The successor must use the initially approved oven's exact measured
-> size and colours and must retain the hob. V41 is the active correction. V40
-> remains unchanged as provenance; see
+> size and colours and must retain the hob. V41 attempted that correction but
+> was subsequently rejected with the asset-by-asset method; clean-slate Kitchen
+> Rebuild V1 is now active. V40 remains unchanged as provenance; see
 > `docs/review/kitchen-oven-states-v40-rejection-2026-10-18.json`.
 
 Off, On and Broken were drawn together from the same new construction in the
@@ -43,9 +44,8 @@ exact `772 × 224` game scale. Named sound placeholders are:
 ## Boundaries
 
 V40 is rejected provenance only. It changes no Final art, runtime wiring,
-approved V39 fridge pixels or rejected V35 provenance. V41 is the active oven
-gate; kettle, toaster, bowl, basin and table work remains blocked until V41 has
-been visually reviewed.
+approved V39 fridge pixels or rejected V35 provenance. V41 is now rejected
+provenance; the complete standard-room Rebuild V1 gate supersedes it.
 
 ## Verification
 

@@ -1,0 +1,18 @@
+{
+  "version": 41,
+  "asset": "oven-and-asset-by-asset-kitchen-method",
+  "date": "2026-10-18",
+  "decision": "rejected-as-kitchen-review-authority",
+  "reasons": [
+    "The corrected oven still did not produce an acceptable fitted-kitchen result.",
+    "Measuring and replacing appliances one at a time had repeatedly created incompatible construction, placement, colour and compositing results.",
+    "All kitchen furniture except the already accepted bin must restart from one coherent full-room construction.",
+    "The replacement foundation must establish the exact complete standard kitchen before any On, Broken or animated state is attempted."
+  ],
+  "preservation": {
+    "v41Immutable": true,
+    "promoted": false,
+    "runtimeChanged": false,
+    "successor": "kitchen-rebuild-foundation-v1"
+  }
+}

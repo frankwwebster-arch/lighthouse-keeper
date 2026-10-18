@@ -1,0 +1,10 @@
+{
+  "set": "kitchen-rebuild-foundation-2026-10-18-v1",
+  "status": "awaiting-standard-foundation-visual-review",
+  "replaces": "all non-bin kitchen standard assets and rejected V32-V41 drafts",
+  "preserves": "approved V28/V31 standard and broken bin cells byte-for-byte",
+  "promotion": "none",
+  "runtimeWiring": "unchanged",
+  "nextGate": "user review of standard room only",
+  "rollback": "Delete only Rebuild V1 source/raw/draft/review/archive/builder/verifier/docs files."
+}

@@ -458,17 +458,20 @@ Frank approved this exact hash-pinned review family on 18 October 2026. The
 approval remains review authority only and performs no Final/runtime promotion.
 
 Kitchen V40 is rejected for incorrect proportions/height and bubble-like
-smoke. Kitchen V41 at `/keeper-review/kitchen-oven-states-v41/` is the next and
-only active asset gate. It redraws Off, On and Broken together around the exact
-initially approved V21 measurement: `108 × 120` cell, `84 × 77` opaque
-footprint and native room bounds x=336–420/y=131–208. The approved hob and
-sea-glass surround are copied byte-for-byte into every state, while the new
-lower fascia is colour-restricted to a V21-derived palette. Broken retains the
-askew attached door and two-wire hanging dial. Connected curling smoke,
-burner-anchored flames and intermittent warning/cavity flicker remain separate
-40-frame/4-fps ten-second effect-only strips. Its record is
-[`docs/KITCHEN_OVEN_STATES_V41_2026-10-18.md`](docs/KITCHEN_OVEN_STATES_V41_2026-10-18.md).
-No later kitchen asset proceeds until V41 is visually reviewed.
+smoke. V41's exact-size local correction is also rejected, together with the
+asset-by-asset replacement method that produced it. Both remain immutable,
+unpromoted evidence.
+
+The active gate is the clean-slate Kitchen Rebuild V1 at
+`/keeper-review/kitchen-rebuild-foundation-v1/`. Every non-bin standard
+component was drawn together in one coherent master and then registered to the
+exact `772 × 224` room: six equal 84-pixel bays at x=84–588, common y=134
+worktop and y=151 fascia, historical y=208 foot line, and a complete one-person
+table/rear-facing chair. Its isolated modules are literal crops from that same
+master. The V28/V31 standard and broken bin cells remain byte-identical. This
+gate contains no alternate states or animation; those remain blocked pending
+visual approval of the complete standard foundation. Its record is
+[`docs/KITCHEN_REBUILD_FOUNDATION_V1_2026-10-18.md`](docs/KITCHEN_REBUILD_FOUNDATION_V1_2026-10-18.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
@@ -483,8 +486,9 @@ confirmation, V26 is its derived game-scale Prime context, V27 is rejected
 provenance, V28 supplies the approved static bin pixels, V29 supplies the
 effect colour/timing basis, V30 is rejected as too object-shaped for a young
 player, and V31 is the approved comic-readability authority. None is promoted
-or wired. V32–V38 and V40 are rejected immutable provenance; V39 is the
-approved fridge authority; V41 is the sole active oven gate and awaits review.
+or wired. V32–V41 are rejected immutable provenance; V39's earlier approval is
+historical rather than the current construction authority. Rebuild V1 is the
+sole active standard-kitchen gate and awaits review.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

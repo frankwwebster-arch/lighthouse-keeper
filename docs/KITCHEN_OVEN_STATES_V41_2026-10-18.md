@@ -1,13 +1,19 @@
 # Kitchen V41 exact-size oven states
 
-Date: 18 October 2026  
-Status: awaiting Frank's visual review; unpromoted/unwired  
+> Rejected by Frank on 18 October 2026 together with the asset-by-asset kitchen
+> replacement method. Retained only as immutable unpromoted provenance. The
+> active successor is the clean-slate standard-room foundation documented in
+> `docs/KITCHEN_REBUILD_FOUNDATION_V1_2026-10-18.md`.
+
+Date: 18 October 2026
+Status: rejected by Frank; immutable unpromoted/unwired provenance
 Review: `/keeper-review/kitchen-oven-states-v41/`
 
-V41 supersedes rejected V40 as the only active oven gate. V40 was too tall,
+V41 historically superseded rejected V40 as an oven gate. V40 was too tall,
 not broad enough in proportion, and its smoke rose as discrete bubbles. V41
-keeps V40 immutable and re-establishes the initially approved V21 oven as the
-binding measurement and colour authority.
+kept V40 immutable and re-established the initially approved V21 oven as its
+binding measurement and colour authority, but the resulting local correction
+and asset-by-asset method were subsequently rejected.
 
 ## Exact measurement and colour contract
 
