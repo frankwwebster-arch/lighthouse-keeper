@@ -1,0 +1,107 @@
+{
+  "version": 31,
+  "status": "comic-readable-stench-awaiting-visual-confirmation",
+  "states": [
+    "standard",
+    "broken_overflowing"
+  ],
+  "objectSourceVersion": 28,
+  "effectSourceVersions": [
+    29,
+    30
+  ],
+  "objectPixelsChanged": false,
+  "outputs": {
+    "bin-standard.png": {
+      "sha256": "86b05224a7da5fc5c05918f2875018920ed54cf46fc00cb08952ffd29789f9c0",
+      "size": [
+        72,
+        72
+      ]
+    },
+    "bin-broken-overflowing.png": {
+      "sha256": "77ad87fabfd3e5c10a4a14f294af343a5d93a2a2015e6d77f18a4140b1f5fb4f",
+      "size": [
+        72,
+        72
+      ]
+    },
+    "kitchen-bin-standard-in-situ.png": {
+      "sha256": "027e5b1d722b65ed55eecc2f96640fb07f5e0b33283ce8fdce0e5d892450e674",
+      "size": [
+        772,
+        224
+      ]
+    },
+    "kitchen-bin-broken-in-situ.png": {
+      "sha256": "bf1c741f9ff7e985ddc44584c9c13c76c60e0df8104d34a2a11848f1be58a1c3",
+      "size": [
+        772,
+        224
+      ]
+    },
+    "fx-stench-miasma-f40.png": {
+      "sha256": "4b8e257ea91812b21addad303950cef15e253b5aaf3756943dd499ebc38401fc",
+      "size": [
+        3200,
+        80
+      ]
+    },
+    "fx-slow-flies-f40.png": {
+      "sha256": "ffcddd73880c75b252764b59b4311c556eb49c58949701250e5c422a036cc34c",
+      "size": [
+        3200,
+        80
+      ]
+    }
+  },
+  "effects": {
+    "stench_miasma": {
+      "file": "fx-stench-miasma-f40.png",
+      "reusable": true,
+      "style": "three-curling-comic-smell-trails-with-loose-translucent-haze",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10.0,
+      "cellPixels": [
+        80,
+        80
+      ],
+      "roomTopLeft": [
+        4,
+        104
+      ],
+      "objectPixelsChanged": false,
+      "previousSha256": "99ba9d9c316d20a628ffafa8cc12693d5b63df77efb468854d29827a3edd2181"
+    },
+    "slow_flies": {
+      "file": "fx-slow-flies-f40.png",
+      "reusable": true,
+      "style": "three-legible-slow-uneven-orbits",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10.0,
+      "cellPixels": [
+        80,
+        80
+      ],
+      "roomTopLeft": [
+        4,
+        104
+      ],
+      "objectPixelsChanged": false,
+      "previousSha256": "28f3b35fdfe91d655ebe47914d17c948203f2def6bfa6b8fd5e2bf0a2b86cc5c",
+      "sfxCue": "kitchen_bin_flies_slow_loop"
+    }
+  },
+  "boundaries": {
+    "approved": false,
+    "promoted": false,
+    "v28ObjectPixelsPreserved": true,
+    "objectAnimated": false,
+    "environmentalFxAnimated": true,
+    "runtimeChanged": false,
+    "canonicalChanged": false,
+    "v20ThroughV30Changed": false
+  }
+}

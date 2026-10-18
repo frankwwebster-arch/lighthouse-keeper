@@ -238,6 +238,11 @@ export default {
         destination: '/keeper-review/kitchen-bin-effects-v30/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-bin-effects-v31',
+        destination: '/keeper-review/kitchen-bin-effects-v31/index.html',
+        permanent: false,
+      },
     ]
   },
 }

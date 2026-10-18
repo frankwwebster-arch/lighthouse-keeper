@@ -424,20 +424,26 @@ only the stench silhouette: one continuous overlapping cloud rises higher and
 uses roughly four times V29's opaque area, while retaining broken translucent
 edges and an emission throat connected to the bin. Its record is
 [`docs/KITCHEN_BIN_EFFECTS_V30_2026-10-18.md`](docs/KITCHEN_BIN_EFFECTS_V30_2026-10-18.md).
+Kitchen V31 at `/keeper-review/kitchen-bin-effects-v31/` replaces V30's
+object-shaped plume with child-readable wordless comic grammar: three curling
+green smell trails, loose broken haze and three clearer slow flies. The exact
+bin pixels and 40-frame/4-fps ten-second cadence remain unchanged. Its record
+is [`docs/KITCHEN_BIN_EFFECTS_V31_2026-10-18.md`](docs/KITCHEN_BIN_EFFECTS_V31_2026-10-18.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
 and
 [`docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md).
-Only exact Kitchen V5 and Kitchen V20–V30 remain in active kitchen review tooling.
+Only exact Kitchen V5 and Kitchen V20–V31 remain in active kitchen review tooling.
 V5 is the retained old-family reference, V20 is immutable fitted-galley
 provenance, V21 is immutable complete-asset provenance, V22 is immutable
 rejected assembly provenance, V23 is the approved full-room base, V24 is the
 rear-facing-chair successor, V25 is the narrower-bin successor awaiting
 confirmation, V26 is its derived game-scale Prime context, V27 is rejected
 provenance, V28 supplies the approved static bin pixels, V29 supplies the
-approved effect colour/timing basis, and V30 is the reversible taller-miasma
-gate. None is promoted or wired.
+effect colour/timing basis, V30 is rejected as too object-shaped for a young
+player, and V31 is the reversible comic-readability gate. None is promoted or
+wired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:
