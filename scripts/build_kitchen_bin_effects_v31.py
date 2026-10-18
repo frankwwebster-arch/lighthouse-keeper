@@ -209,7 +209,7 @@ def main() -> None:
 
     catalogue = {
         "version": 31,
-        "status": "comic-readable-stench-awaiting-visual-confirmation",
+        "status": "approved-comic-readable-stench-review-authority",
         "states": ["standard", "broken_overflowing"],
         "objectSourceVersion": 28,
         "effectSourceVersions": [29, 30],
@@ -243,7 +243,7 @@ def main() -> None:
             },
         },
         "boundaries": {
-            "approved": False,
+            "approved": True,
             "promoted": False,
             "v28ObjectPixelsPreserved": True,
             "objectAnimated": False,
@@ -256,6 +256,8 @@ def main() -> None:
     (DRAFT_DIR / "candidate-catalogue.json").write_text(json.dumps(catalogue, indent=2) + "\n")
     (DRAFT_DIR / "batch-register.json").write_text(json.dumps({
         "version": 31,
+        "status": "approved-review-authority",
+        "approvedOn": "2026-10-18",
         "preserves": list(range(20, 31)),
         "v30Disposition": "retained as immutable high-cloud provenance; replaced by clearer wordless comic stink grammar",
         "rollback": "Delete only V31 raw/draft/review/archive/builder/verifier/docs files; V20-V30 remain immutable.",

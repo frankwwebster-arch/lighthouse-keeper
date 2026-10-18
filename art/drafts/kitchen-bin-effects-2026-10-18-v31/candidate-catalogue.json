@@ -1,6 +1,6 @@
 {
   "version": 31,
-  "status": "comic-readable-stench-awaiting-visual-confirmation",
+  "status": "approved-comic-readable-stench-review-authority",
   "states": [
     "standard",
     "broken_overflowing"
@@ -95,7 +95,7 @@
     }
   },
   "boundaries": {
-    "approved": false,
+    "approved": true,
     "promoted": false,
     "v28ObjectPixelsPreserved": true,
     "objectAnimated": false,

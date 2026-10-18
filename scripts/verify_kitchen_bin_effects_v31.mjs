@@ -93,7 +93,7 @@ for (let frame = 0; frame < 40; frame++) {
 }
 
 assert.deepEqual(catalogue.boundaries, {
-  approved: false,
+  approved: true,
   promoted: false,
   v28ObjectPixelsPreserved: true,
   objectAnimated: false,

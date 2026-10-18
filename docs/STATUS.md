@@ -106,7 +106,8 @@ object-shaped plume rather than an immediately recognisable bad smell. V31
 preserves the exact bin and ten-second cadence while replacing both overlays
 with young-reader comic grammar: three curling green smell trails, loose broken
 haze and three clearer slow flies. V31 is review-only and does not change
-runtime, Final art or canonical V20–V30 sources.
+runtime, Final art or canonical V20–V30 sources. Frank approved the exact V31
+family on 18 October 2026; its hashes are now the kitchen-bin fault authority.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

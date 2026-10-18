@@ -1,0 +1,50 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-18",
+  "reviewedBy": "Frank",
+  "candidate": "kitchen-bin-effects-2026-10-18-v31",
+  "decision": "approved-as-kitchen-bin-fault-review-authority",
+  "wording": "excellent, approved",
+  "approvedHashes": {
+    "candidateCatalogue": "ee6b4b7dd1f23ee3805af07e769e0485de2f9762e3a3b887949e020403efc699",
+    "batchRegister": "0bea02a5aa1612b5fe6053142157410614d9460101ad24cb1b98cb13327d72c0",
+    "reviewPage": "62c49e3b5d07cba3b577f26eddcb095f1de9b317138f5a0c8216d46c8ba58553",
+    "archiveManifest": "ed4328b90868ad01191c1fdbc0d1bd8daa34149f5c5fae0e8aa8a2ce13338b98",
+    "outputs": {
+      "bin-standard.png": "86b05224a7da5fc5c05918f2875018920ed54cf46fc00cb08952ffd29789f9c0",
+      "bin-broken-overflowing.png": "77ad87fabfd3e5c10a4a14f294af343a5d93a2a2015e6d77f18a4140b1f5fb4f",
+      "kitchen-bin-standard-in-situ.png": "027e5b1d722b65ed55eecc2f96640fb07f5e0b33283ce8fdce0e5d892450e674",
+      "kitchen-bin-broken-in-situ.png": "bf1c741f9ff7e985ddc44584c9c13c76c60e0df8104d34a2a11848f1be58a1c3",
+      "fx-stench-miasma-f40.png": "4b8e257ea91812b21addad303950cef15e253b5aaf3756943dd499ebc38401fc",
+      "fx-slow-flies-f40.png": "ffcddd73880c75b252764b59b4311c556eb49c58949701250e5c422a036cc34c"
+    }
+  },
+  "approvedContract": {
+    "objectSourceVersion": 28,
+    "standardAndOverflowingObjectFamilyApproved": true,
+    "objectPixelsUnchangedFromV28": true,
+    "objectAnimated": false,
+    "environmentalFxAreSeparateReusableLayers": true,
+    "stenchUsesThreeCurlingGreenTrailsAndLooseHaze": true,
+    "flyCount": 3,
+    "framesPerEffect": 40,
+    "fps": 4,
+    "durationSeconds": 10,
+    "transparentFrameGutters": true,
+    "placeholderSfxCuePresent": true
+  },
+  "delivery": {
+    "contentCommit": "1f4d79ab230885bfc7922472f543771dea9a2f35",
+    "deployCommit": "9d89bd36de57dfbb8ab632603901b5451e2957cf",
+    "reviewUrl": "https://lighthouse-keeper-mu.vercel.app/keeper-review/kitchen-bin-effects-v31/"
+  },
+  "approvalBoundary": {
+    "kitchenBinFaultReviewAuthorityApproved": true,
+    "v20ThroughV30RemainImmutable": true,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionAssetsChanged": false,
+    "promotionPerformed": false,
+    "promotionAllowedWithoutSeparateInstruction": false
+  }
+}
