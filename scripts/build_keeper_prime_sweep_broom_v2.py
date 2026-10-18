@@ -1143,7 +1143,10 @@ cupboardButton.onclick=()=>{stop();mode='cupboard';index=0;for(const key of ['co
     reviewer_file = PACK / "reviewer.html"
     reviewer_html = html.replace('"/keeper-review/', '"https://lighthouse-keeper-mu.vercel.app/keeper-review/')
     reviewer_file.write_text(reviewer_html)
-    reviewer_url = "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/" + rel(reviewer_file)
+    # The public shell stays below the review-media payload cap, while its full
+    # reviewer is fetched from the immutable candidate commit rather than the
+    # mutable main branch.
+    reviewer_url = "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/55c5615/" + rel(reviewer_file)
     shell = f'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prime Keeper sweep broom V2</title><style>html,body,iframe{{margin:0;width:100%;height:100%;border:0;background:#07131b;color:#edf8fb;font:14px system-ui}}#loading{{padding:24px}}iframe{{display:none}}</style><p id="loading">Loading immutable Prime Keeper sweep-broom V2 reviewer…</p><iframe id="review" title="Prime Keeper sweep broom V2 reviewer"></iframe><script>fetch({json.dumps(reviewer_url)}).then(r=>{{if(!r.ok)throw Error('reviewer '+r.status);return r.text()}}).then(t=>{{document.querySelector('#review').srcdoc=t;document.querySelector('#review').style.display='block';document.querySelector('#loading').remove()}}).catch(e=>document.querySelector('#loading').textContent='Reviewer failed to load: '+e.message)</script></html>'''
     (PUBLIC / "index.html").write_text(shell)
     print(json.dumps({"candidate": f"/keeper-review/{SET}/", "uniqueFrames": len(frame_records), "routeFrames": len(route), "publishedAssets": len(published), "sharedScale": scale}, indent=2))
