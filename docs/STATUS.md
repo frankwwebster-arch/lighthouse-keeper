@@ -141,15 +141,16 @@ y=151 fascia and y=208 foot line. Frank called it excellent subject to changing
 the fridge door to white.
 
 The active kitchen gate is
-`/keeper-review/kitchen-rebuild-states-v3/`. V3 retains the coherent V2 object
+`/keeper-review/kitchen-rebuild-states-v4/`. V4 retains the coherent V3 object
 states, restores broken toaster/basin headroom, pins the oven's broken
 red/cavity flicker to the exact On-state coordinates, and normalizes the
-table/chair to y=150 tabletop, y=177 seat and y=208 foot-line datums. Ten
-environmental-effect families each offer three animated 40-frame/4-fps
-ten-second models. The approved V31 bin smell is reusable without changing its
-pixels. A native-scale workbench supports drag, resize, four-sided crop,
-one-pixel nudge, browser-local persistence and JSON export. V3 is reversible,
-unpromoted and unwired; Final/runtime are unchanged and V2 remains immutable.
+table/chair to y=150 tabletop, y=177 seat and y=208 foot-line datums. Eleven
+environmental-effect families offer three animated 40-frame/4-fps ten-second
+models; approved bin smell and flies are both reusable, making eleven families
+and 33 models. A native-scale workbench supports drag, resize, four-sided crop,
+one-pixel nudge, independent saved 0.1×–4× playback speed, browser-local
+persistence and JSON export. V4 is reversible, unpromoted and unwired;
+Final/runtime are unchanged and V3 remains immutable.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

@@ -1,0 +1,16 @@
+{
+  "userApprovedBrokenEffects": {
+    "file": "art/source/kitchen-rebuild-states-2026-10-18-v3/generated/user-approved-broken-effects.png",
+    "sha256": "75899da25b94494545263afbd49b17663c93442725d6043e9bb9782f1f1c41ee"
+  },
+  "generatedTableChair": {
+    "file": "art/source/kitchen-rebuild-states-2026-10-18-v3/generated/canon-height-table-chair-source.png",
+    "sha256": "6e60ddfe6ba9c205618dbdb4404f6f4b31d2a612ae5b884482ae07ff7b6086a1",
+    "mode": "built-in image generation",
+    "geometry": "deterministically normalized to canon datums"
+  },
+  "immutableV3Parent": {
+    "set": "kitchen-rebuild-states-2026-10-18-v3",
+    "catalogueSha256": "708ac03e26a2144b15f46ab44fd6a4b1a93da05fdd9e655b4c458b4896f2030d"
+  }
+}
