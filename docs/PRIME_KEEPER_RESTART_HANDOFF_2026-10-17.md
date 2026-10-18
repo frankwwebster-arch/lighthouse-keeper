@@ -132,24 +132,15 @@ Prime `keeper_sweep_broom` V1 remains immutable, unapproved review history at
 artefacts across its repeated action range and a mop-like broom read. The V1
 live-delivery record at deploy commit `84c8f6b` remains evidence only.
 
-Prime `keeper_sweep_broom` V2 is the active review candidate at
-`/keeper-review/keeper-prime-sweep-broom-v2/`. It preserves V1 byte-for-byte
-and changes only the named action defects: every generated action pose receives
-pose-relative lower-hem cleanup from an exact Prime jumper-blue swatch, while a
-separately owned traditional broom replaces the simplified prop (wood handle,
-iron ferrule, timber stock, bindings and individual straw bundles). The exact
-side-right neutral, common 315 floor, four-pixel gutters, two-hand contact,
-eleven disjoint material gates and all historical-art restrictions remain
-unchanged. Alongside the original 47-frame contract route, V2 adds a
-cupboard-proxy context: approved standard walk right → a 100%-hidden state
-swap → root-moving, leg-cycling sweep left → directional turnaround proxy →
-root-moving, leg-cycling sweep right → a second 100%-hidden swap → mirrored
-approved standard walk left. V2 is live from review-only deploy commit
-`08c9cc6`; live review on 18 October decoded all 98 unique images before
-controls enabled, reached the explicit frame-9 fully-hidden handoff, and
-played the moving-leg outward sweep with no browser-console errors. The shell
-fetches the full reviewer from immutable candidate commit `55c5615`, not from
-mutable `main`. V2 remains unapproved and unpromoted.
+Prime `keeper_sweep_broom` V1–V6 are rejected immutable provenance. The active
+movement-only review candidate is V7 at
+`/keeper-review/keeper-prime-sweep-broom-v7/`. Both travel directions play
+approved Walk V6 F1→F8 at 125 ms per frame; direction changes by mirror and
+root motion only. Each cell retains its matching Walk V6 authority outside the
+recorded Sweep-3 arm/hand corridor. The reversal uses approved V9 body order
+1→9→1, and exact side-right neutral state changes occur entirely behind the
+closed cupboard. The separately owned broom remains visibly provisional and
+is not part of this movement gate. V7 is unapproved and unpromoted.
 
 ## Binding method for every inherited animation
 
@@ -324,3 +315,28 @@ verifier, TypeScript check and production build pass. The repository-wide
 `npm test` currently stops at the independent public-payload ceiling (50.06
 MiB versus 50 MiB) introduced by the already-present kitchen V4 review shell;
 all earlier pretest verifiers, including V6, pass before that archive gate.
+
+Frank subsequently rejected V6. Its advertised gait interlacing was not what
+the delivered route played: the mirrored walk-away ran F8→F1, the carried
+locomotion was redrawn rather than being the approved walk with only different
+arms, and the result was jerky and physically impossible. The broom also
+changed shape and tone. Preserve V6 only as rejected provenance.
+
+V7 is the new immutable movement-first review candidate at
+`/keeper-review/keeper-prime-sweep-broom-v7/`. Its only current decision gate
+is movement. Both left- and right-travelling loops play approved Walk V6
+F1→F8 at exactly 125 ms per frame, so left-foot contact/down/passing/up is
+followed by right-foot contact/down/passing/up without time reversal. Each
+walking cell starts from its matching approved Walk V6 authority and differs
+only inside a recorded arm/hand corridor carrying the Sweep-3 two-hand grip.
+The 17-frame planted reversal follows exact approved V9 body order 1→9→1 at
+the authority's one-second side-to-back cadence. Exact side-right neutral is
+shown under the fully closed cupboard before and after the hidden state swap.
+
+The V7 broom remains a separately owned provisional layer. Its current shape
+and tone variation is acknowledged and must be corrected only after Frank is
+satisfied with the gait and turn. V7 does not approve the broom, any Keeper
+artwork, Final/runtime integration or production promotion. Its verifier pins
+the walk order in both directions, exact authority hashes, neutral frames,
+turn order and timing, arm-corridor ownership, per-frame material envelopes,
+prop separation, hand contact, transparent gutters and reviewer preloading.

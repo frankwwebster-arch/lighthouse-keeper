@@ -1,0 +1,530 @@
+{
+  "version": 1,
+  "set": "keeper-prime-sweep-broom-v7",
+  "page": {
+    "path": "public/keeper-review/keeper-prime-sweep-broom-v7/index.html",
+    "sha256": "358c7890c32ab5a900caf3cb2b18f5c8fd5b6a4d697d09d0f168a98ed5d41e7e",
+    "bytes": 999
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/approved-walk-v6-f1-0e80ea65610452c9.png": {
+      "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "extension": ".png",
+      "bytes": 71119,
+      "object": "review-archive/objects/0e/0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/approved-walk-v6-f2-2b8e91de747b527d.png": {
+      "sha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "extension": ".png",
+      "bytes": 59701,
+      "object": "review-archive/objects/2b/2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/approved-walk-v6-f3-b376254e9c29da38.png": {
+      "sha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "extension": ".png",
+      "bytes": 53964,
+      "object": "review-archive/objects/b3/b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/approved-walk-v6-f4-982646b0b0e6f3f9.png": {
+      "sha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "extension": ".png",
+      "bytes": 67058,
+      "object": "review-archive/objects/98/982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/approved-walk-v6-f5-545e7338151e6e5a.png": {
+      "sha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "extension": ".png",
+      "bytes": 66608,
+      "object": "review-archive/objects/54/545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/54/545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/approved-walk-v6-f6-17d007eee75c2e86.png": {
+      "sha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "extension": ".png",
+      "bytes": 62308,
+      "object": "review-archive/objects/17/17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/approved-walk-v6-f7-dbf5b3849624cec7.png": {
+      "sha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "extension": ".png",
+      "bytes": 59624,
+      "object": "review-archive/objects/db/dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/approved-walk-v6-f8-cf8c53e7ffa703a5.png": {
+      "sha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "extension": ".png",
+      "bytes": 62773,
+      "object": "review-archive/objects/cf/cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/blank-prop-f9878b0c741705ce.png": {
+      "sha256": "f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6",
+      "extension": ".png",
+      "bytes": 557,
+      "object": "review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/exact-side-right-neutral-a172a8a01a387a21.png": {
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "extension": ".png",
+      "bytes": 47873,
+      "object": "review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/frame-by-frame-authority-comparison-c3eb73f6e25a0bb5.png": {
+      "sha256": "c3eb73f6e25a0bb58115a86f7caf1d3bf17f5b00e1a836a3a8c372c17991d9b7",
+      "extension": ".png",
+      "bytes": 813024,
+      "object": "review-archive/objects/c3/c3eb73f6e25a0bb58115a86f7caf1d3bf17f5b00e1a836a3a8c372c17991d9b7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c3/c3eb73f6e25a0bb58115a86f7caf1d3bf17f5b00e1a836a3a8c372c17991d9b7.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep1-actor-8ef1aec421da6c31.png": {
+      "sha256": "8ef1aec421da6c31d5021c9a96a62f6dabf33f060dc476785c46627081c8faa3",
+      "extension": ".png",
+      "bytes": 73297,
+      "object": "review-archive/objects/8e/8ef1aec421da6c31d5021c9a96a62f6dabf33f060dc476785c46627081c8faa3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8e/8ef1aec421da6c31d5021c9a96a62f6dabf33f060dc476785c46627081c8faa3.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep1-approved-base-841b5a0863843951.png": {
+      "sha256": "841b5a08638439511424a27f6e08bf4b4e1f3a5ba4965bc98e6fc5e00c06805d",
+      "extension": ".png",
+      "bytes": 75801,
+      "object": "review-archive/objects/84/841b5a08638439511424a27f6e08bf4b4e1f3a5ba4965bc98e6fc5e00c06805d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/841b5a08638439511424a27f6e08bf4b4e1f3a5ba4965bc98e6fc5e00c06805d.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep1-composite-669786c093cb6a39.png": {
+      "sha256": "669786c093cb6a39cc1f373f0924739c4493354db5adc95f1e4c21f74d0ea794",
+      "extension": ".png",
+      "bytes": 89234,
+      "object": "review-archive/objects/66/669786c093cb6a39cc1f373f0924739c4493354db5adc95f1e4c21f74d0ea794.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/66/669786c093cb6a39cc1f373f0924739c4493354db5adc95f1e4c21f74d0ea794.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep1-prop-2f21de5b56fb606d.png": {
+      "sha256": "2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03",
+      "extension": ".png",
+      "bytes": 20558,
+      "object": "review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep2-actor-0f6019de5c905e4d.png": {
+      "sha256": "0f6019de5c905e4d698aa88475ac220f3d6b0dbfeaeae064a0dc230067f3071e",
+      "extension": ".png",
+      "bytes": 65560,
+      "object": "review-archive/objects/0f/0f6019de5c905e4d698aa88475ac220f3d6b0dbfeaeae064a0dc230067f3071e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0f/0f6019de5c905e4d698aa88475ac220f3d6b0dbfeaeae064a0dc230067f3071e.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep2-approved-base-7e65ee85d9e66bf1.png": {
+      "sha256": "7e65ee85d9e66bf11ad92bbb99c789a537027d5681e51baa036dd2bb48234607",
+      "extension": ".png",
+      "bytes": 64129,
+      "object": "review-archive/objects/7e/7e65ee85d9e66bf11ad92bbb99c789a537027d5681e51baa036dd2bb48234607.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7e/7e65ee85d9e66bf11ad92bbb99c789a537027d5681e51baa036dd2bb48234607.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep2-composite-caa80412d16fcd33.png": {
+      "sha256": "caa80412d16fcd33845b5f14300eb524d9549001c510033b5088e1e4a21de2ce",
+      "extension": ".png",
+      "bytes": 82358,
+      "object": "review-archive/objects/ca/caa80412d16fcd33845b5f14300eb524d9549001c510033b5088e1e4a21de2ce.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ca/caa80412d16fcd33845b5f14300eb524d9549001c510033b5088e1e4a21de2ce.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep3-actor-b336848625072ee7.png": {
+      "sha256": "b336848625072ee760056113b1d44739ddc0f123e6884e9b2c6c60bccfce3a50",
+      "extension": ".png",
+      "bytes": 61876,
+      "object": "review-archive/objects/b3/b336848625072ee760056113b1d44739ddc0f123e6884e9b2c6c60bccfce3a50.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b336848625072ee760056113b1d44739ddc0f123e6884e9b2c6c60bccfce3a50.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep3-approved-base-cc6a29c3f9e699f8.png": {
+      "sha256": "cc6a29c3f9e699f85665521ae92134d404d8c13a25d000b82350c2858b263a3a",
+      "extension": ".png",
+      "bytes": 57969,
+      "object": "review-archive/objects/cc/cc6a29c3f9e699f85665521ae92134d404d8c13a25d000b82350c2858b263a3a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cc/cc6a29c3f9e699f85665521ae92134d404d8c13a25d000b82350c2858b263a3a.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep3-composite-e8d95e110287c3b0.png": {
+      "sha256": "e8d95e110287c3b0b1fb8e3886e7a617efc705cbc4f251af974ab8cad6e59dc1",
+      "extension": ".png",
+      "bytes": 78753,
+      "object": "review-archive/objects/e8/e8d95e110287c3b0b1fb8e3886e7a617efc705cbc4f251af974ab8cad6e59dc1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e8/e8d95e110287c3b0b1fb8e3886e7a617efc705cbc4f251af974ab8cad6e59dc1.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep4-actor-35612def8f43bcc1.png": {
+      "sha256": "35612def8f43bcc179c8bccce9c2dd2c6e0dfcab36e2b7e5915fca14c74f1e0e",
+      "extension": ".png",
+      "bytes": 70459,
+      "object": "review-archive/objects/35/35612def8f43bcc179c8bccce9c2dd2c6e0dfcab36e2b7e5915fca14c74f1e0e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/35/35612def8f43bcc179c8bccce9c2dd2c6e0dfcab36e2b7e5915fca14c74f1e0e.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep4-approved-base-27323782eb220f63.png": {
+      "sha256": "27323782eb220f63d41f7344f29d58df8fbe407e71b89e633a1c46cba1c3a102",
+      "extension": ".png",
+      "bytes": 71577,
+      "object": "review-archive/objects/27/27323782eb220f63d41f7344f29d58df8fbe407e71b89e633a1c46cba1c3a102.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/27/27323782eb220f63d41f7344f29d58df8fbe407e71b89e633a1c46cba1c3a102.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep4-composite-5d71d8b0c792be33.png": {
+      "sha256": "5d71d8b0c792be33c52e74f55a1ccd87adc349d01c6f8ae840a5417438e8b980",
+      "extension": ".png",
+      "bytes": 85472,
+      "object": "review-archive/objects/5d/5d71d8b0c792be33c52e74f55a1ccd87adc349d01c6f8ae840a5417438e8b980.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5d/5d71d8b0c792be33c52e74f55a1ccd87adc349d01c6f8ae840a5417438e8b980.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep5-actor-a2f8358cbaa0878d.png": {
+      "sha256": "a2f8358cbaa0878d550bd79364eea9edb3ea5e81a8dba5b20109b00c94716bda",
+      "extension": ".png",
+      "bytes": 73065,
+      "object": "review-archive/objects/a2/a2f8358cbaa0878d550bd79364eea9edb3ea5e81a8dba5b20109b00c94716bda.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a2/a2f8358cbaa0878d550bd79364eea9edb3ea5e81a8dba5b20109b00c94716bda.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep5-approved-base-c7562f46676444f4.png": {
+      "sha256": "c7562f46676444f4f39a3f34dfc9b33ecc2f99c20d4ac2d737633bc393995b5d",
+      "extension": ".png",
+      "bytes": 70907,
+      "object": "review-archive/objects/c7/c7562f46676444f4f39a3f34dfc9b33ecc2f99c20d4ac2d737633bc393995b5d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c7/c7562f46676444f4f39a3f34dfc9b33ecc2f99c20d4ac2d737633bc393995b5d.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep5-composite-03d2cb29d70a73ca.png": {
+      "sha256": "03d2cb29d70a73ca7b2e37ae1f39930edba5be6a7de281acffa2288490c6f986",
+      "extension": ".png",
+      "bytes": 87879,
+      "object": "review-archive/objects/03/03d2cb29d70a73ca7b2e37ae1f39930edba5be6a7de281acffa2288490c6f986.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/03/03d2cb29d70a73ca7b2e37ae1f39930edba5be6a7de281acffa2288490c6f986.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep6-actor-857389b0cfe9c0d0.png": {
+      "sha256": "857389b0cfe9c0d0d8b2dde36bb975046397ff5d533db47ba6ced8b6183d2079",
+      "extension": ".png",
+      "bytes": 67357,
+      "object": "review-archive/objects/85/857389b0cfe9c0d0d8b2dde36bb975046397ff5d533db47ba6ced8b6183d2079.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/85/857389b0cfe9c0d0d8b2dde36bb975046397ff5d533db47ba6ced8b6183d2079.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep6-approved-base-a4df8b83ede2f03a.png": {
+      "sha256": "a4df8b83ede2f03aff222fc8c951d6cc6ab012dfc6da5e055bed8e45c8b91d71",
+      "extension": ".png",
+      "bytes": 66637,
+      "object": "review-archive/objects/a4/a4df8b83ede2f03aff222fc8c951d6cc6ab012dfc6da5e055bed8e45c8b91d71.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a4/a4df8b83ede2f03aff222fc8c951d6cc6ab012dfc6da5e055bed8e45c8b91d71.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep6-composite-956595845e518ed9.png": {
+      "sha256": "956595845e518ed947b28d0e03f1ef77a583995c46d989a6a7dd905f248f9d11",
+      "extension": ".png",
+      "bytes": 84185,
+      "object": "review-archive/objects/95/956595845e518ed947b28d0e03f1ef77a583995c46d989a6a7dd905f248f9d11.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/95/956595845e518ed947b28d0e03f1ef77a583995c46d989a6a7dd905f248f9d11.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep7-actor-30cb8e19164d7cc5.png": {
+      "sha256": "30cb8e19164d7cc572d9b20657ab7ce868bef06ae8c8e8e0f4aa2044aa65faf8",
+      "extension": ".png",
+      "bytes": 67870,
+      "object": "review-archive/objects/30/30cb8e19164d7cc572d9b20657ab7ce868bef06ae8c8e8e0f4aa2044aa65faf8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/30/30cb8e19164d7cc572d9b20657ab7ce868bef06ae8c8e8e0f4aa2044aa65faf8.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep7-approved-base-97703d2fdeb14fc9.png": {
+      "sha256": "97703d2fdeb14fc91817eb3a14b40cf1373ad7780341c6850e94e30c7f6cce10",
+      "extension": ".png",
+      "bytes": 63811,
+      "object": "review-archive/objects/97/97703d2fdeb14fc91817eb3a14b40cf1373ad7780341c6850e94e30c7f6cce10.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/97/97703d2fdeb14fc91817eb3a14b40cf1373ad7780341c6850e94e30c7f6cce10.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep7-composite-72ce127f1484a60b.png": {
+      "sha256": "72ce127f1484a60bf58fa0a7001cad6e081a7ecb94f246fc6ff2c23e71dad76e",
+      "extension": ".png",
+      "bytes": 84805,
+      "object": "review-archive/objects/72/72ce127f1484a60bf58fa0a7001cad6e081a7ecb94f246fc6ff2c23e71dad76e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/72/72ce127f1484a60bf58fa0a7001cad6e081a7ecb94f246fc6ff2c23e71dad76e.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep8-actor-43fda6ad080a2dee.png": {
+      "sha256": "43fda6ad080a2dee7522c49681d1b5b02d35bce580005ea9a1f3c04cb4dc2aeb",
+      "extension": ".png",
+      "bytes": 69254,
+      "object": "review-archive/objects/43/43fda6ad080a2dee7522c49681d1b5b02d35bce580005ea9a1f3c04cb4dc2aeb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/43/43fda6ad080a2dee7522c49681d1b5b02d35bce580005ea9a1f3c04cb4dc2aeb.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep8-approved-base-d83f120bcdb86fcf.png": {
+      "sha256": "d83f120bcdb86fcfa3fc09ed15604c872339886a4e0383fb02742e0ef908079c",
+      "extension": ".png",
+      "bytes": 67215,
+      "object": "review-archive/objects/d8/d83f120bcdb86fcfa3fc09ed15604c872339886a4e0383fb02742e0ef908079c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d8/d83f120bcdb86fcfa3fc09ed15604c872339886a4e0383fb02742e0ef908079c.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/sweep8-composite-63046745ab99fb04.png": {
+      "sha256": "63046745ab99fb044e9dca68ad1deea004e5e4aa4f672bd4beebf1bbcaf501fa",
+      "extension": ".png",
+      "bytes": 84565,
+      "object": "review-archive/objects/63/63046745ab99fb044e9dca68ad1deea004e5e4aa4f672bd4beebf1bbcaf501fa.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/63/63046745ab99fb044e9dca68ad1deea004e5e4aa4f672bd4beebf1bbcaf501fa.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn-movement-contact-sheet-1c698482de813f37.png": {
+      "sha256": "1c698482de813f37627c375adba2f1d45842c992fc9128cc98edc366f2383a9d",
+      "extension": ".png",
+      "bytes": 649574,
+      "object": "review-archive/objects/1c/1c698482de813f37627c375adba2f1d45842c992fc9128cc98edc366f2383a9d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1c/1c698482de813f37627c375adba2f1d45842c992fc9128cc98edc366f2383a9d.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn1-actor-590c1bfd8b544989.png": {
+      "sha256": "590c1bfd8b544989ed1b181dcb9cb839708e4577dc5d72da348f4ceb7e1ab024",
+      "extension": ".png",
+      "bytes": 56370,
+      "object": "review-archive/objects/59/590c1bfd8b544989ed1b181dcb9cb839708e4577dc5d72da348f4ceb7e1ab024.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/59/590c1bfd8b544989ed1b181dcb9cb839708e4577dc5d72da348f4ceb7e1ab024.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn1-approved-base-1f2bb7c6e5bee258.png": {
+      "sha256": "1f2bb7c6e5bee25841d78f5108894ef433f61b115fbff62d2950607ba1bccf0f",
+      "extension": ".png",
+      "bytes": 52241,
+      "object": "review-archive/objects/1f/1f2bb7c6e5bee25841d78f5108894ef433f61b115fbff62d2950607ba1bccf0f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1f/1f2bb7c6e5bee25841d78f5108894ef433f61b115fbff62d2950607ba1bccf0f.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn1-composite-5d5252753fc59b66.png": {
+      "sha256": "5d5252753fc59b66a71fb48f78df91882ba465d9aef99f1e2684061ddcf30492",
+      "extension": ".png",
+      "bytes": 79037,
+      "object": "review-archive/objects/5d/5d5252753fc59b66a71fb48f78df91882ba465d9aef99f1e2684061ddcf30492.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5d/5d5252753fc59b66a71fb48f78df91882ba465d9aef99f1e2684061ddcf30492.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn1-prop-2f3dc2d9d5244c0b.png": {
+      "sha256": "2f3dc2d9d5244c0b3b0aab025c8aaf68a05911ed7514de5ff77063f3e3f1197d",
+      "extension": ".png",
+      "bytes": 27324,
+      "object": "review-archive/objects/2f/2f3dc2d9d5244c0b3b0aab025c8aaf68a05911ed7514de5ff77063f3e3f1197d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f3dc2d9d5244c0b3b0aab025c8aaf68a05911ed7514de5ff77063f3e3f1197d.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn2-actor-b687d9f41ce42e3e.png": {
+      "sha256": "b687d9f41ce42e3e8e4ac7e06d5ef8bbaf5a055bbbe625b9c289d30d196d3e38",
+      "extension": ".png",
+      "bytes": 57140,
+      "object": "review-archive/objects/b6/b687d9f41ce42e3e8e4ac7e06d5ef8bbaf5a055bbbe625b9c289d30d196d3e38.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b6/b687d9f41ce42e3e8e4ac7e06d5ef8bbaf5a055bbbe625b9c289d30d196d3e38.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn2-approved-base-67efe8d8c24f17b3.png": {
+      "sha256": "67efe8d8c24f17b377d47002985a1108a20c08e2cc7fa2de351c2d6aca42981c",
+      "extension": ".png",
+      "bytes": 53438,
+      "object": "review-archive/objects/67/67efe8d8c24f17b377d47002985a1108a20c08e2cc7fa2de351c2d6aca42981c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/67/67efe8d8c24f17b377d47002985a1108a20c08e2cc7fa2de351c2d6aca42981c.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn2-composite-9e7b0d3584de8cdc.png": {
+      "sha256": "9e7b0d3584de8cdcbc877416b20dbd4ccaee776c6784d6a3bd7d5c9f15b5f880",
+      "extension": ".png",
+      "bytes": 79772,
+      "object": "review-archive/objects/9e/9e7b0d3584de8cdcbc877416b20dbd4ccaee776c6784d6a3bd7d5c9f15b5f880.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9e/9e7b0d3584de8cdcbc877416b20dbd4ccaee776c6784d6a3bd7d5c9f15b5f880.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn2-prop-0dcdf72fb590e128.png": {
+      "sha256": "0dcdf72fb590e128d550f5fa7993a4ac66b8c4d938ef908d6c9e6daa53f94b0a",
+      "extension": ".png",
+      "bytes": 26295,
+      "object": "review-archive/objects/0d/0dcdf72fb590e128d550f5fa7993a4ac66b8c4d938ef908d6c9e6daa53f94b0a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0d/0dcdf72fb590e128d550f5fa7993a4ac66b8c4d938ef908d6c9e6daa53f94b0a.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn3-actor-10e9b465aba47c62.png": {
+      "sha256": "10e9b465aba47c62e33acba15fda7877df43c11df1158330bb7848ab957bf4a5",
+      "extension": ".png",
+      "bytes": 57651,
+      "object": "review-archive/objects/10/10e9b465aba47c62e33acba15fda7877df43c11df1158330bb7848ab957bf4a5.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/10/10e9b465aba47c62e33acba15fda7877df43c11df1158330bb7848ab957bf4a5.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn3-approved-base-5157ed1995bd28ca.png": {
+      "sha256": "5157ed1995bd28cacfb610c802051491377c865b626f19b2a5a6c7dab50312b0",
+      "extension": ".png",
+      "bytes": 55583,
+      "object": "review-archive/objects/51/5157ed1995bd28cacfb610c802051491377c865b626f19b2a5a6c7dab50312b0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/51/5157ed1995bd28cacfb610c802051491377c865b626f19b2a5a6c7dab50312b0.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn3-composite-9f6e12a6a1786e1a.png": {
+      "sha256": "9f6e12a6a1786e1a8a38049e6677ebb34e4fe02a7530b262ce0ac3c596be9e95",
+      "extension": ".png",
+      "bytes": 80096,
+      "object": "review-archive/objects/9f/9f6e12a6a1786e1a8a38049e6677ebb34e4fe02a7530b262ce0ac3c596be9e95.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9f/9f6e12a6a1786e1a8a38049e6677ebb34e4fe02a7530b262ce0ac3c596be9e95.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn3-prop-73817f477e5d2f35.png": {
+      "sha256": "73817f477e5d2f35d366589768add9c50d28213cc7fab4b916fa248d12d79adc",
+      "extension": ".png",
+      "bytes": 26376,
+      "object": "review-archive/objects/73/73817f477e5d2f35d366589768add9c50d28213cc7fab4b916fa248d12d79adc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/73/73817f477e5d2f35d366589768add9c50d28213cc7fab4b916fa248d12d79adc.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn4-actor-448c5a600b6663cf.png": {
+      "sha256": "448c5a600b6663cf27c99fee76c674e16134ac94329c474f8bdaa4ad48d6afa4",
+      "extension": ".png",
+      "bytes": 58486,
+      "object": "review-archive/objects/44/448c5a600b6663cf27c99fee76c674e16134ac94329c474f8bdaa4ad48d6afa4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/44/448c5a600b6663cf27c99fee76c674e16134ac94329c474f8bdaa4ad48d6afa4.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn4-approved-base-412e30decd528375.png": {
+      "sha256": "412e30decd528375269defe04a6f953ca5ad014ca0d000b16b81d1f205cc1c45",
+      "extension": ".png",
+      "bytes": 55514,
+      "object": "review-archive/objects/41/412e30decd528375269defe04a6f953ca5ad014ca0d000b16b81d1f205cc1c45.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/41/412e30decd528375269defe04a6f953ca5ad014ca0d000b16b81d1f205cc1c45.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn4-composite-0389a15664026238.png": {
+      "sha256": "0389a1566402623862f4efa8764349fb9ffccc5679e083e5b92a535c139eac15",
+      "extension": ".png",
+      "bytes": 79804,
+      "object": "review-archive/objects/03/0389a1566402623862f4efa8764349fb9ffccc5679e083e5b92a535c139eac15.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/03/0389a1566402623862f4efa8764349fb9ffccc5679e083e5b92a535c139eac15.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn4-prop-b0d994abdddcb60d.png": {
+      "sha256": "b0d994abdddcb60d05187c34ee842248b0298bbd87bd564c733be4fce2f88a1b",
+      "extension": ".png",
+      "bytes": 25456,
+      "object": "review-archive/objects/b0/b0d994abdddcb60d05187c34ee842248b0298bbd87bd564c733be4fce2f88a1b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b0/b0d994abdddcb60d05187c34ee842248b0298bbd87bd564c733be4fce2f88a1b.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn5-actor-26731cbe8f5d2f49.png": {
+      "sha256": "26731cbe8f5d2f49265b024df53e0d395e3716264962cb468c469ab41ea7b1a0",
+      "extension": ".png",
+      "bytes": 58135,
+      "object": "review-archive/objects/26/26731cbe8f5d2f49265b024df53e0d395e3716264962cb468c469ab41ea7b1a0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/26/26731cbe8f5d2f49265b024df53e0d395e3716264962cb468c469ab41ea7b1a0.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn5-approved-base-ba3a4d8e33c08115.png": {
+      "sha256": "ba3a4d8e33c0811524160cb01c21d8939c1c8bad9fe7bc57c91731f6ca585df0",
+      "extension": ".png",
+      "bytes": 55154,
+      "object": "review-archive/objects/ba/ba3a4d8e33c0811524160cb01c21d8939c1c8bad9fe7bc57c91731f6ca585df0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ba/ba3a4d8e33c0811524160cb01c21d8939c1c8bad9fe7bc57c91731f6ca585df0.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn5-composite-948765176d705e48.png": {
+      "sha256": "948765176d705e486ee838f34b9202e4b999176a0a6428c3fc09412588ccf903",
+      "extension": ".png",
+      "bytes": 79724,
+      "object": "review-archive/objects/94/948765176d705e486ee838f34b9202e4b999176a0a6428c3fc09412588ccf903.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/94/948765176d705e486ee838f34b9202e4b999176a0a6428c3fc09412588ccf903.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn5-prop-bdb231d2fd01c4b3.png": {
+      "sha256": "bdb231d2fd01c4b3de049e8ee98154d7ac3807aed8c962a9eabe6f5d5a4126ce",
+      "extension": ".png",
+      "bytes": 25289,
+      "object": "review-archive/objects/bd/bdb231d2fd01c4b3de049e8ee98154d7ac3807aed8c962a9eabe6f5d5a4126ce.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bd/bdb231d2fd01c4b3de049e8ee98154d7ac3807aed8c962a9eabe6f5d5a4126ce.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn6-actor-657167500409fcd7.png": {
+      "sha256": "657167500409fcd77adc76a9a5e728c3d4b3fb7fc0464185622251f5c6e65a67",
+      "extension": ".png",
+      "bytes": 59165,
+      "object": "review-archive/objects/65/657167500409fcd77adc76a9a5e728c3d4b3fb7fc0464185622251f5c6e65a67.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/65/657167500409fcd77adc76a9a5e728c3d4b3fb7fc0464185622251f5c6e65a67.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn6-approved-base-14ddbea93905f665.png": {
+      "sha256": "14ddbea93905f66599cee1684a54e26df04603dc3ae8c147e4a3c55a9379f280",
+      "extension": ".png",
+      "bytes": 57742,
+      "object": "review-archive/objects/14/14ddbea93905f66599cee1684a54e26df04603dc3ae8c147e4a3c55a9379f280.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/14/14ddbea93905f66599cee1684a54e26df04603dc3ae8c147e4a3c55a9379f280.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn6-composite-8af4f0418bf91c42.png": {
+      "sha256": "8af4f0418bf91c425a6a9ba69a07b05d00e6319bbd0556d721be24df531420dd",
+      "extension": ".png",
+      "bytes": 78764,
+      "object": "review-archive/objects/8a/8af4f0418bf91c425a6a9ba69a07b05d00e6319bbd0556d721be24df531420dd.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8a/8af4f0418bf91c425a6a9ba69a07b05d00e6319bbd0556d721be24df531420dd.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn6-prop-43fd12550503e9f7.png": {
+      "sha256": "43fd12550503e9f7883c8942988c3229f4fddf131e45ba9f20bf22051d4d9a28",
+      "extension": ".png",
+      "bytes": 22768,
+      "object": "review-archive/objects/43/43fd12550503e9f7883c8942988c3229f4fddf131e45ba9f20bf22051d4d9a28.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/43/43fd12550503e9f7883c8942988c3229f4fddf131e45ba9f20bf22051d4d9a28.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn7-actor-5b15729a47ca9ee1.png": {
+      "sha256": "5b15729a47ca9ee10e5db36a127d82bf659c4eb11ed4359e86699b1003e5333b",
+      "extension": ".png",
+      "bytes": 60381,
+      "object": "review-archive/objects/5b/5b15729a47ca9ee10e5db36a127d82bf659c4eb11ed4359e86699b1003e5333b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5b/5b15729a47ca9ee10e5db36a127d82bf659c4eb11ed4359e86699b1003e5333b.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn7-approved-base-9d3dee9cb8cdd973.png": {
+      "sha256": "9d3dee9cb8cdd9739d0af83ffcbff4fcb78f2c92571e582285de7cba80bb5ea0",
+      "extension": ".png",
+      "bytes": 63018,
+      "object": "review-archive/objects/9d/9d3dee9cb8cdd9739d0af83ffcbff4fcb78f2c92571e582285de7cba80bb5ea0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9d/9d3dee9cb8cdd9739d0af83ffcbff4fcb78f2c92571e582285de7cba80bb5ea0.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn7-composite-0f3e9bcc8e001e6b.png": {
+      "sha256": "0f3e9bcc8e001e6b925c5f7b1e9f04fb3ba92f1423121d7c74f0b8096023f20d",
+      "extension": ".png",
+      "bytes": 75585,
+      "object": "review-archive/objects/0f/0f3e9bcc8e001e6b925c5f7b1e9f04fb3ba92f1423121d7c74f0b8096023f20d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0f/0f3e9bcc8e001e6b925c5f7b1e9f04fb3ba92f1423121d7c74f0b8096023f20d.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn7-prop-e93ed9cbce5e77cd.png": {
+      "sha256": "e93ed9cbce5e77cda8651ecd230a56fb6f9aef5db5ccd9866af7371abb1db230",
+      "extension": ".png",
+      "bytes": 18279,
+      "object": "review-archive/objects/e9/e93ed9cbce5e77cda8651ecd230a56fb6f9aef5db5ccd9866af7371abb1db230.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e9/e93ed9cbce5e77cda8651ecd230a56fb6f9aef5db5ccd9866af7371abb1db230.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn8-actor-2a5be24144a1f542.png": {
+      "sha256": "2a5be24144a1f542f931dc8763893101c6d02cf86b4e174da510c27b547a1944",
+      "extension": ".png",
+      "bytes": 58663,
+      "object": "review-archive/objects/2a/2a5be24144a1f542f931dc8763893101c6d02cf86b4e174da510c27b547a1944.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2a/2a5be24144a1f542f931dc8763893101c6d02cf86b4e174da510c27b547a1944.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn8-approved-base-861646d8c973dbc2.png": {
+      "sha256": "861646d8c973dbc255daa9800242013edbba45c35158d2753a56eb733020af21",
+      "extension": ".png",
+      "bytes": 59747,
+      "object": "review-archive/objects/86/861646d8c973dbc255daa9800242013edbba45c35158d2753a56eb733020af21.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/86/861646d8c973dbc255daa9800242013edbba45c35158d2753a56eb733020af21.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn8-composite-36acfef7a2fd8929.png": {
+      "sha256": "36acfef7a2fd892901b4d612cdc940da8df37987d6314f52d1ff2fc21cbe6c55",
+      "extension": ".png",
+      "bytes": 60586,
+      "object": "review-archive/objects/36/36acfef7a2fd892901b4d612cdc940da8df37987d6314f52d1ff2fc21cbe6c55.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/36/36acfef7a2fd892901b4d612cdc940da8df37987d6314f52d1ff2fc21cbe6c55.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn8-prop-48d3e6c00541a370.png": {
+      "sha256": "48d3e6c00541a37014bc154a828320660c9d6303c24341475d4bdd11dc70f480",
+      "extension": ".png",
+      "bytes": 6086,
+      "object": "review-archive/objects/48/48d3e6c00541a37014bc154a828320660c9d6303c24341475d4bdd11dc70f480.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/48/48d3e6c00541a37014bc154a828320660c9d6303c24341475d4bdd11dc70f480.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn9-actor-f188b64e58fea7f3.png": {
+      "sha256": "f188b64e58fea7f3453637a726bcddd9e1f4f02c57bbf1e4a2c001e81fbb97d4",
+      "extension": ".png",
+      "bytes": 60932,
+      "object": "review-archive/objects/f1/f188b64e58fea7f3453637a726bcddd9e1f4f02c57bbf1e4a2c001e81fbb97d4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f1/f188b64e58fea7f3453637a726bcddd9e1f4f02c57bbf1e4a2c001e81fbb97d4.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn9-approved-base-bae8d3f2866f3058.png": {
+      "sha256": "bae8d3f2866f30581400c86b458a3b4c1221d4349db65359a355f19d71985977",
+      "extension": ".png",
+      "bytes": 65368,
+      "object": "review-archive/objects/ba/bae8d3f2866f30581400c86b458a3b4c1221d4349db65359a355f19d71985977.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ba/bae8d3f2866f30581400c86b458a3b4c1221d4349db65359a355f19d71985977.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn9-composite-5ff8d448290746de.png": {
+      "sha256": "5ff8d448290746de0b61814ae6bb642e539bb2f2e9b2a93d69e8c5f55f42f50c",
+      "extension": ".png",
+      "bytes": 63200,
+      "object": "review-archive/objects/5f/5ff8d448290746de0b61814ae6bb642e539bb2f2e9b2a93d69e8c5f55f42f50c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5f/5ff8d448290746de0b61814ae6bb642e539bb2f2e9b2a93d69e8c5f55f42f50c.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/turn9-prop-6fdb12c12ccb121d.png": {
+      "sha256": "6fdb12c12ccb121d5e4c49320d43678d86e4b57d6bdf23c271cc1c1d01aa4485",
+      "extension": ".png",
+      "bytes": 4952,
+      "object": "review-archive/objects/6f/6fdb12c12ccb121d5e4c49320d43678d86e4b57d6bdf23c271cc1c1d01aa4485.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6f/6fdb12c12ccb121d5e4c49320d43678d86e4b57d6bdf23c271cc1c1d01aa4485.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v7/assets/walk-movement-contact-sheet-8100547d5879a984.png": {
+      "sha256": "8100547d5879a98478715945e5768241d64decd9b4c3b84178681a95f6eb6de3",
+      "extension": ".png",
+      "bytes": 538613,
+      "object": "review-archive/objects/81/8100547d5879a98478715945e5768241d64decd9b4c3b84178681a95f6eb6de3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/81/8100547d5879a98478715945e5768241d64decd9b4c3b84178681a95f6eb6de3.png"
+    }
+  }
+}

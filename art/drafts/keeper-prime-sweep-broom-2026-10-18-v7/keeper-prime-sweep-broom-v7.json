@@ -1,0 +1,3054 @@
+{
+  "schema": "lighthouse-keeper/prime-action-review@3",
+  "set": "keeper-prime-sweep-broom-v7",
+  "status": "versioned-reversible-movement-candidate-not-approved",
+  "room": {
+    "widthLp": 192,
+    "heightLp": 56,
+    "floorLp": 52
+  },
+  "frames": {
+    "sweep1": {
+      "id": "sweep1",
+      "kind": "approved-walk-with-sweep3-grip",
+      "gaitFrame": 1,
+      "gaitPhase": "left-foot contact",
+      "durationMs": 125,
+      "authority": {
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+        "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+        "translationOnlyOffsetPx": [
+          7,
+          -4
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-1.png",
+        "sha256": "a9634a0d6057f4a36a78db93aa69fc81267c78252357d71b310b3f801993b23f",
+        "requestedPose": "Sweep 3",
+        "scope": "authority-edited gait cell"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep1-actor.png",
+        "sha256": "8ef1aec421da6c31d5021c9a96a62f6dabf33f060dc476785c46627081c8faa3",
+        "bounds": {
+          "minX": 58,
+          "minY": 14,
+          "maxX": 239,
+          "maxY": 311,
+          "width": 182,
+          "height": 298,
+          "opaquePixels": 30232
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep1-prop.png",
+        "sha256": "2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03",
+        "bounds": {
+          "minX": 167,
+          "minY": 137,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 155,
+          "height": 175,
+          "opaquePixels": 5822
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/sweep1.png",
+        "sha256": "669786c093cb6a39cc1f373f0924739c4493354db5adc95f1e4c21f74d0ea794",
+        "bounds": {
+          "minX": 58,
+          "minY": 14,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 264,
+          "height": 298,
+          "opaquePixels": 35224
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 8
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/sweep1-arm-corridor.png",
+        "sha256": "fe99820dbff46481d28cf9420e1e6d6ee17e2414a8848064e268a6bb0344d5c6",
+        "audit": {
+          "changedPixels": 15776,
+          "changedInsideArmCorridor": 15776,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/sweep1-approved-base.png",
+        "sha256": "841b5a08638439511424a27f6e08bf4b4e1f3a5ba4965bc98e6fc5e00c06805d"
+      },
+      "broomHandContactPixels": 776,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8e/8ef1aec421da6c31d5021c9a96a62f6dabf33f060dc476785c46627081c8faa3.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/66/669786c093cb6a39cc1f373f0924739c4493354db5adc95f1e4c21f74d0ea794.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/841b5a08638439511424a27f6e08bf4b4e1f3a5ba4965bc98e6fc5e00c06805d.png"
+    },
+    "sweep2": {
+      "id": "sweep2",
+      "kind": "approved-walk-with-sweep3-grip",
+      "gaitFrame": 2,
+      "gaitPhase": "left-foot down",
+      "durationMs": 125,
+      "authority": {
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f2.png",
+        "sha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+        "translationOnlyOffsetPx": [
+          17,
+          -4
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-2.png",
+        "sha256": "e1d40659ab19568cc0da214dd1751ef615bfb5ec87197b2f0fa2938cc2d1ff34",
+        "requestedPose": "Sweep 3",
+        "scope": "authority-edited gait cell"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep2-actor.png",
+        "sha256": "0f6019de5c905e4d698aa88475ac220f3d6b0dbfeaeae064a0dc230067f3071e",
+        "bounds": {
+          "minX": 91,
+          "minY": 12,
+          "maxX": 220,
+          "maxY": 311,
+          "width": 130,
+          "height": 300,
+          "opaquePixels": 26744
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep2-prop.png",
+        "sha256": "2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03",
+        "bounds": {
+          "minX": 167,
+          "minY": 137,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 155,
+          "height": 175,
+          "opaquePixels": 5822
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/sweep2.png",
+        "sha256": "caa80412d16fcd33845b5f14300eb524d9549001c510033b5088e1e4a21de2ce",
+        "bounds": {
+          "minX": 91,
+          "minY": 12,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 231,
+          "height": 300,
+          "opaquePixels": 31990
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 8
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/sweep2-arm-corridor.png",
+        "sha256": "493d9e54ae8dd213715ea5983694f272905f048b957e86d4322fd2e930c4df6a",
+        "audit": {
+          "changedPixels": 13053,
+          "changedInsideArmCorridor": 13053,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/sweep2-approved-base.png",
+        "sha256": "7e65ee85d9e66bf11ad92bbb99c789a537027d5681e51baa036dd2bb48234607"
+      },
+      "broomHandContactPixels": 813,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0f/0f6019de5c905e4d698aa88475ac220f3d6b0dbfeaeae064a0dc230067f3071e.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ca/caa80412d16fcd33845b5f14300eb524d9549001c510033b5088e1e4a21de2ce.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7e/7e65ee85d9e66bf11ad92bbb99c789a537027d5681e51baa036dd2bb48234607.png"
+    },
+    "sweep3": {
+      "id": "sweep3",
+      "kind": "approved-walk-with-sweep3-grip",
+      "gaitFrame": 3,
+      "gaitPhase": "left-foot passing",
+      "durationMs": 125,
+      "authority": {
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f3.png",
+        "sha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+        "translationOnlyOffsetPx": [
+          23,
+          -4
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-3.png",
+        "sha256": "317e073c469b430d7f2a99dad383ef0a8a8ceda8aef90f43fcd262dcbb95063d",
+        "requestedPose": "Sweep 3",
+        "scope": "authority-edited gait cell"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep3-actor.png",
+        "sha256": "b336848625072ee760056113b1d44739ddc0f123e6884e9b2c6c60bccfce3a50",
+        "bounds": {
+          "minX": 105,
+          "minY": 13,
+          "maxX": 232,
+          "maxY": 311,
+          "width": 128,
+          "height": 299,
+          "opaquePixels": 25797
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep3-prop.png",
+        "sha256": "2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03",
+        "bounds": {
+          "minX": 167,
+          "minY": 137,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 155,
+          "height": 175,
+          "opaquePixels": 5822
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/sweep3.png",
+        "sha256": "e8d95e110287c3b0b1fb8e3886e7a617efc705cbc4f251af974ab8cad6e59dc1",
+        "bounds": {
+          "minX": 105,
+          "minY": 13,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 217,
+          "height": 299,
+          "opaquePixels": 31030
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 8
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/sweep3-arm-corridor.png",
+        "sha256": "fd59834830a7a936cc78923b2c2ee75b9e957ebf86a899eaa328028ae4d592d4",
+        "audit": {
+          "changedPixels": 11883,
+          "changedInsideArmCorridor": 11883,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/sweep3-approved-base.png",
+        "sha256": "cc6a29c3f9e699f85665521ae92134d404d8c13a25d000b82350c2858b263a3a"
+      },
+      "broomHandContactPixels": 682,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b336848625072ee760056113b1d44739ddc0f123e6884e9b2c6c60bccfce3a50.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e8/e8d95e110287c3b0b1fb8e3886e7a617efc705cbc4f251af974ab8cad6e59dc1.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cc/cc6a29c3f9e699f85665521ae92134d404d8c13a25d000b82350c2858b263a3a.png"
+    },
+    "sweep4": {
+      "id": "sweep4",
+      "kind": "approved-walk-with-sweep3-grip",
+      "gaitFrame": 4,
+      "gaitPhase": "left-foot up",
+      "durationMs": 125,
+      "authority": {
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f4.png",
+        "sha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+        "translationOnlyOffsetPx": [
+          21,
+          -4
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-4.png",
+        "sha256": "abbc7c9bee5582e6a2992d01c2c4ecddceae86bce075074afa59f175d3ebc595",
+        "requestedPose": "Sweep 3",
+        "scope": "authority-edited gait cell"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep4-actor.png",
+        "sha256": "35612def8f43bcc179c8bccce9c2dd2c6e0dfcab36e2b7e5915fca14c74f1e0e",
+        "bounds": {
+          "minX": 83,
+          "minY": 13,
+          "maxX": 252,
+          "maxY": 311,
+          "width": 170,
+          "height": 299,
+          "opaquePixels": 28402
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep4-prop.png",
+        "sha256": "2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03",
+        "bounds": {
+          "minX": 167,
+          "minY": 137,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 155,
+          "height": 175,
+          "opaquePixels": 5822
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/sweep4.png",
+        "sha256": "5d71d8b0c792be33c52e74f55a1ccd87adc349d01c6f8ae840a5417438e8b980",
+        "bounds": {
+          "minX": 83,
+          "minY": 13,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 239,
+          "height": 299,
+          "opaquePixels": 33033
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 8
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/sweep4-arm-corridor.png",
+        "sha256": "3e62b8c394fe4fee1c9ab7b63a758d16cfbf2b7a833542e95a717a13694a179f",
+        "audit": {
+          "changedPixels": 14836,
+          "changedInsideArmCorridor": 14836,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/sweep4-approved-base.png",
+        "sha256": "27323782eb220f63d41f7344f29d58df8fbe407e71b89e633a1c46cba1c3a102"
+      },
+      "broomHandContactPixels": 556,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/35/35612def8f43bcc179c8bccce9c2dd2c6e0dfcab36e2b7e5915fca14c74f1e0e.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5d/5d71d8b0c792be33c52e74f55a1ccd87adc349d01c6f8ae840a5417438e8b980.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/27/27323782eb220f63d41f7344f29d58df8fbe407e71b89e633a1c46cba1c3a102.png"
+    },
+    "sweep5": {
+      "id": "sweep5",
+      "kind": "approved-walk-with-sweep3-grip",
+      "gaitFrame": 5,
+      "gaitPhase": "right-foot contact",
+      "durationMs": 125,
+      "authority": {
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f5.png",
+        "sha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+        "translationOnlyOffsetPx": [
+          17,
+          -4
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-5.png",
+        "sha256": "7f4e08c2ea584880724e950188824a450c1b005f5c11bb40320e951501512af6",
+        "requestedPose": "Sweep 3",
+        "scope": "authority-edited gait cell"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep5-actor.png",
+        "sha256": "a2f8358cbaa0878d550bd79364eea9edb3ea5e81a8dba5b20109b00c94716bda",
+        "bounds": {
+          "minX": 64,
+          "minY": 19,
+          "maxX": 250,
+          "maxY": 311,
+          "width": 187,
+          "height": 293,
+          "opaquePixels": 30208
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep5-prop.png",
+        "sha256": "2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03",
+        "bounds": {
+          "minX": 167,
+          "minY": 137,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 155,
+          "height": 175,
+          "opaquePixels": 5822
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/sweep5.png",
+        "sha256": "03d2cb29d70a73ca7b2e37ae1f39930edba5be6a7de281acffa2288490c6f986",
+        "bounds": {
+          "minX": 64,
+          "minY": 19,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 258,
+          "height": 293,
+          "opaquePixels": 34800
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 8
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/sweep5-arm-corridor.png",
+        "sha256": "770150fd540dffdb14139b31dded1b32a6560c4936a449c1d822e098c91d7a9a",
+        "audit": {
+          "changedPixels": 13769,
+          "changedInsideArmCorridor": 13769,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/sweep5-approved-base.png",
+        "sha256": "c7562f46676444f4f39a3f34dfc9b33ecc2f99c20d4ac2d737633bc393995b5d"
+      },
+      "broomHandContactPixels": 706,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a2/a2f8358cbaa0878d550bd79364eea9edb3ea5e81a8dba5b20109b00c94716bda.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/03/03d2cb29d70a73ca7b2e37ae1f39930edba5be6a7de281acffa2288490c6f986.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c7/c7562f46676444f4f39a3f34dfc9b33ecc2f99c20d4ac2d737633bc393995b5d.png"
+    },
+    "sweep6": {
+      "id": "sweep6",
+      "kind": "approved-walk-with-sweep3-grip",
+      "gaitFrame": 6,
+      "gaitPhase": "right-foot down",
+      "durationMs": 125,
+      "authority": {
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f6.png",
+        "sha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+        "translationOnlyOffsetPx": [
+          19,
+          -4
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-6.png",
+        "sha256": "3ba05a6d942d90382148ca63893efa24829e276ba3504b500f894d73c95d48d2",
+        "requestedPose": "Sweep 3",
+        "scope": "authority-edited gait cell"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep6-actor.png",
+        "sha256": "857389b0cfe9c0d0d8b2dde36bb975046397ff5d533db47ba6ced8b6183d2079",
+        "bounds": {
+          "minX": 80,
+          "minY": 18,
+          "maxX": 221,
+          "maxY": 311,
+          "width": 142,
+          "height": 294,
+          "opaquePixels": 27627
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep6-prop.png",
+        "sha256": "2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03",
+        "bounds": {
+          "minX": 167,
+          "minY": 137,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 155,
+          "height": 175,
+          "opaquePixels": 5822
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/sweep6.png",
+        "sha256": "956595845e518ed947b28d0e03f1ef77a583995c46d989a6a7dd905f248f9d11",
+        "bounds": {
+          "minX": 80,
+          "minY": 18,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 242,
+          "height": 294,
+          "opaquePixels": 32869
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 8
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/sweep6-arm-corridor.png",
+        "sha256": "ea83086a67369529ec8572fa03353ada3006b9d3c2ae0cc9fca12c6c43664140",
+        "audit": {
+          "changedPixels": 13419,
+          "changedInsideArmCorridor": 13419,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/sweep6-approved-base.png",
+        "sha256": "a4df8b83ede2f03aff222fc8c951d6cc6ab012dfc6da5e055bed8e45c8b91d71"
+      },
+      "broomHandContactPixels": 686,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/85/857389b0cfe9c0d0d8b2dde36bb975046397ff5d533db47ba6ced8b6183d2079.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/95/956595845e518ed947b28d0e03f1ef77a583995c46d989a6a7dd905f248f9d11.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a4/a4df8b83ede2f03aff222fc8c951d6cc6ab012dfc6da5e055bed8e45c8b91d71.png"
+    },
+    "sweep7": {
+      "id": "sweep7",
+      "kind": "approved-walk-with-sweep3-grip",
+      "gaitFrame": 7,
+      "gaitPhase": "right-foot passing",
+      "durationMs": 125,
+      "authority": {
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f7.png",
+        "sha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+        "translationOnlyOffsetPx": [
+          17,
+          -4
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-7.png",
+        "sha256": "ecae76dd2b171dc2efd5b606845fb6a67e56883be6e34dca13f427b7b6579003",
+        "requestedPose": "Sweep 3",
+        "scope": "authority-edited gait cell"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep7-actor.png",
+        "sha256": "30cb8e19164d7cc572d9b20657ab7ce868bef06ae8c8e8e0f4aa2044aa65faf8",
+        "bounds": {
+          "minX": 92,
+          "minY": 19,
+          "maxX": 226,
+          "maxY": 311,
+          "width": 135,
+          "height": 293,
+          "opaquePixels": 27980
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep7-prop.png",
+        "sha256": "2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03",
+        "bounds": {
+          "minX": 167,
+          "minY": 137,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 155,
+          "height": 175,
+          "opaquePixels": 5822
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/sweep7.png",
+        "sha256": "72ce127f1484a60bf58fa0a7001cad6e081a7ecb94f246fc6ff2c23e71dad76e",
+        "bounds": {
+          "minX": 92,
+          "minY": 19,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 230,
+          "height": 293,
+          "opaquePixels": 33216
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 8
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/sweep7-arm-corridor.png",
+        "sha256": "c851c5e7515c1eb7d3600f067981a3116199ac8ce2ee96651fb9dc7808e16c80",
+        "audit": {
+          "changedPixels": 12498,
+          "changedInsideArmCorridor": 12498,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/sweep7-approved-base.png",
+        "sha256": "97703d2fdeb14fc91817eb3a14b40cf1373ad7780341c6850e94e30c7f6cce10"
+      },
+      "broomHandContactPixels": 731,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/30/30cb8e19164d7cc572d9b20657ab7ce868bef06ae8c8e8e0f4aa2044aa65faf8.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/72/72ce127f1484a60bf58fa0a7001cad6e081a7ecb94f246fc6ff2c23e71dad76e.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/97/97703d2fdeb14fc91817eb3a14b40cf1373ad7780341c6850e94e30c7f6cce10.png"
+    },
+    "sweep8": {
+      "id": "sweep8",
+      "kind": "approved-walk-with-sweep3-grip",
+      "gaitFrame": 8,
+      "gaitPhase": "right-foot up",
+      "durationMs": 125,
+      "authority": {
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f8.png",
+        "sha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+        "translationOnlyOffsetPx": [
+          21,
+          -4
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-8.png",
+        "sha256": "28f16e345e82e8bb1807d9004e98351a753d46b357de3132a07112ee3f412ed4",
+        "requestedPose": "Sweep 3",
+        "scope": "authority-edited gait cell"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep8-actor.png",
+        "sha256": "43fda6ad080a2dee7522c49681d1b5b02d35bce580005ea9a1f3c04cb4dc2aeb",
+        "bounds": {
+          "minX": 92,
+          "minY": 19,
+          "maxX": 249,
+          "maxY": 311,
+          "width": 158,
+          "height": 293,
+          "opaquePixels": 28420
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/sweep8-prop.png",
+        "sha256": "2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03",
+        "bounds": {
+          "minX": 167,
+          "minY": 137,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 155,
+          "height": 175,
+          "opaquePixels": 5822
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/sweep8.png",
+        "sha256": "63046745ab99fb044e9dca68ad1deea004e5e4aa4f672bd4beebf1bbcaf501fa",
+        "bounds": {
+          "minX": 92,
+          "minY": 19,
+          "maxX": 321,
+          "maxY": 311,
+          "width": 230,
+          "height": 293,
+          "opaquePixels": 33172
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 8
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/sweep8-arm-corridor.png",
+        "sha256": "480a933c3addfde9b006ee1bb0c55583ebdbbbc1af9caec22ab16b14129e9648",
+        "audit": {
+          "changedPixels": 13596,
+          "changedInsideArmCorridor": 13596,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/sweep8-approved-base.png",
+        "sha256": "d83f120bcdb86fcfa3fc09ed15604c872339886a4e0383fb02742e0ef908079c"
+      },
+      "broomHandContactPixels": 710,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/43/43fda6ad080a2dee7522c49681d1b5b02d35bce580005ea9a1f3c04cb4dc2aeb.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/63/63046745ab99fb044e9dca68ad1deea004e5e4aa4f672bd4beebf1bbcaf501fa.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d8/d83f120bcdb86fcfa3fc09ed15604c872339886a4e0383fb02742e0ef908079c.png"
+    },
+    "turn1": {
+      "id": "turn1",
+      "kind": "approved-turn-v9-with-carrying-arms",
+      "turnFrame": 1,
+      "angleDegrees": 90,
+      "durationMs": 111.111111,
+      "authority": {
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f01.png",
+        "sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v6/drafts/frames/turn1.png",
+        "sha256": "341b53bd4cf67a3854aad637facb9ce692eebaede5fc6a5a98c1305ad28c12f8",
+        "role": "arm/hand corridor only"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn1-actor.png",
+        "sha256": "590c1bfd8b544989ed1b181dcb9cb839708e4577dc5d72da348f4ceb7e1ab024",
+        "bounds": {
+          "minX": 99,
+          "minY": 13,
+          "maxX": 244,
+          "maxY": 310,
+          "width": 146,
+          "height": 298,
+          "opaquePixels": 24900
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn1-prop.png",
+        "sha256": "2f3dc2d9d5244c0b3b0aab025c8aaf68a05911ed7514de5ff77063f3e3f1197d",
+        "bounds": {
+          "minX": 176,
+          "minY": 116,
+          "maxX": 304,
+          "maxY": 311,
+          "width": 129,
+          "height": 196,
+          "opaquePixels": 9543
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/turn1.png",
+        "sha256": "5d5252753fc59b66a71fb48f78df91882ba465d9aef99f1e2684061ddcf30492",
+        "bounds": {
+          "minX": 99,
+          "minY": 13,
+          "maxX": 304,
+          "maxY": 311,
+          "width": 206,
+          "height": 299,
+          "opaquePixels": 34263
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 8
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/turn1-arm-corridor.png",
+        "sha256": "e903d5954a6118be65060c6d447759b2daab570299ebc2b5d5d9865f774cae99",
+        "audit": {
+          "changedPixels": 12424,
+          "changedInsideArmCorridor": 12424,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/turn1-approved-base.png",
+        "sha256": "1f2bb7c6e5bee25841d78f5108894ef433f61b115fbff62d2950607ba1bccf0f"
+      },
+      "broomHandContactPixels": 399,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/59/590c1bfd8b544989ed1b181dcb9cb839708e4577dc5d72da348f4ceb7e1ab024.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f3dc2d9d5244c0b3b0aab025c8aaf68a05911ed7514de5ff77063f3e3f1197d.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5d/5d5252753fc59b66a71fb48f78df91882ba465d9aef99f1e2684061ddcf30492.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1f/1f2bb7c6e5bee25841d78f5108894ef433f61b115fbff62d2950607ba1bccf0f.png"
+    },
+    "turn2": {
+      "id": "turn2",
+      "kind": "approved-turn-v9-with-carrying-arms",
+      "turnFrame": 2,
+      "angleDegrees": 98,
+      "durationMs": 111.111111,
+      "authority": {
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f02.png",
+        "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v6/drafts/frames/turn2.png",
+        "sha256": "022d009a880da86ff43d900001a487c128d242c6f61b887bafd0ac331beb06b1",
+        "role": "arm/hand corridor only"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn2-actor.png",
+        "sha256": "b687d9f41ce42e3e8e4ac7e06d5ef8bbaf5a055bbbe625b9c289d30d196d3e38",
+        "bounds": {
+          "minX": 101,
+          "minY": 13,
+          "maxX": 249,
+          "maxY": 310,
+          "width": 149,
+          "height": 298,
+          "opaquePixels": 25216
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn2-prop.png",
+        "sha256": "0dcdf72fb590e128d550f5fa7993a4ac66b8c4d938ef908d6c9e6daa53f94b0a",
+        "bounds": {
+          "minX": 187,
+          "minY": 116,
+          "maxX": 316,
+          "maxY": 311,
+          "width": 130,
+          "height": 196,
+          "opaquePixels": 9142
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/turn2.png",
+        "sha256": "9e7b0d3584de8cdcbc877416b20dbd4ccaee776c6784d6a3bd7d5c9f15b5f880",
+        "bounds": {
+          "minX": 101,
+          "minY": 13,
+          "maxX": 316,
+          "maxY": 311,
+          "width": 216,
+          "height": 299,
+          "opaquePixels": 34289
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 8
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/turn2-arm-corridor.png",
+        "sha256": "e903d5954a6118be65060c6d447759b2daab570299ebc2b5d5d9865f774cae99",
+        "audit": {
+          "changedPixels": 12440,
+          "changedInsideArmCorridor": 12440,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/turn2-approved-base.png",
+        "sha256": "67efe8d8c24f17b377d47002985a1108a20c08e2cc7fa2de351c2d6aca42981c"
+      },
+      "broomHandContactPixels": 424,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b6/b687d9f41ce42e3e8e4ac7e06d5ef8bbaf5a055bbbe625b9c289d30d196d3e38.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0d/0dcdf72fb590e128d550f5fa7993a4ac66b8c4d938ef908d6c9e6daa53f94b0a.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9e/9e7b0d3584de8cdcbc877416b20dbd4ccaee776c6784d6a3bd7d5c9f15b5f880.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/67/67efe8d8c24f17b377d47002985a1108a20c08e2cc7fa2de351c2d6aca42981c.png"
+    },
+    "turn3": {
+      "id": "turn3",
+      "kind": "approved-turn-v9-with-carrying-arms",
+      "turnFrame": 3,
+      "angleDegrees": 105,
+      "durationMs": 111.111111,
+      "authority": {
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f03.png",
+        "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v6/drafts/frames/turn3.png",
+        "sha256": "e07c876f4be42363f44851db7708dc2c61e732139e6e36568272ab8794b7c006",
+        "role": "arm/hand corridor only"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn3-actor.png",
+        "sha256": "10e9b465aba47c62e33acba15fda7877df43c11df1158330bb7848ab957bf4a5",
+        "bounds": {
+          "minX": 100,
+          "minY": 13,
+          "maxX": 252,
+          "maxY": 310,
+          "width": 153,
+          "height": 298,
+          "opaquePixels": 26074
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn3-prop.png",
+        "sha256": "73817f477e5d2f35d366589768add9c50d28213cc7fab4b916fa248d12d79adc",
+        "bounds": {
+          "minX": 190,
+          "minY": 116,
+          "maxX": 318,
+          "maxY": 311,
+          "width": 129,
+          "height": 196,
+          "opaquePixels": 8985
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/turn3.png",
+        "sha256": "9f6e12a6a1786e1a8a38049e6677ebb34e4fe02a7530b262ce0ac3c596be9e95",
+        "bounds": {
+          "minX": 100,
+          "minY": 13,
+          "maxX": 318,
+          "maxY": 311,
+          "width": 219,
+          "height": 299,
+          "opaquePixels": 34902
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 8
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/turn3-arm-corridor.png",
+        "sha256": "e903d5954a6118be65060c6d447759b2daab570299ebc2b5d5d9865f774cae99",
+        "audit": {
+          "changedPixels": 12715,
+          "changedInsideArmCorridor": 12715,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/turn3-approved-base.png",
+        "sha256": "5157ed1995bd28cacfb610c802051491377c865b626f19b2a5a6c7dab50312b0"
+      },
+      "broomHandContactPixels": 393,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/10/10e9b465aba47c62e33acba15fda7877df43c11df1158330bb7848ab957bf4a5.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/73/73817f477e5d2f35d366589768add9c50d28213cc7fab4b916fa248d12d79adc.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9f/9f6e12a6a1786e1a8a38049e6677ebb34e4fe02a7530b262ce0ac3c596be9e95.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/51/5157ed1995bd28cacfb610c802051491377c865b626f19b2a5a6c7dab50312b0.png"
+    },
+    "turn4": {
+      "id": "turn4",
+      "kind": "approved-turn-v9-with-carrying-arms",
+      "turnFrame": 4,
+      "angleDegrees": 120,
+      "durationMs": 111.111111,
+      "authority": {
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f04.png",
+        "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v6/drafts/frames/turn4.png",
+        "sha256": "c67cd3944875ead96532ac57b8046ac240d2347eafdfcc8faff53af2287b8463",
+        "role": "arm/hand corridor only"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn4-actor.png",
+        "sha256": "448c5a600b6663cf27c99fee76c674e16134ac94329c474f8bdaa4ad48d6afa4",
+        "bounds": {
+          "minX": 100,
+          "minY": 13,
+          "maxX": 278,
+          "maxY": 310,
+          "width": 179,
+          "height": 298,
+          "opaquePixels": 26577
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn4-prop.png",
+        "sha256": "b0d994abdddcb60d05187c34ee842248b0298bbd87bd564c733be4fce2f88a1b",
+        "bounds": {
+          "minX": 188,
+          "minY": 116,
+          "maxX": 315,
+          "maxY": 309,
+          "width": 128,
+          "height": 194,
+          "opaquePixels": 8731
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/turn4.png",
+        "sha256": "0389a1566402623862f4efa8764349fb9ffccc5679e083e5b92a535c139eac15",
+        "bounds": {
+          "minX": 100,
+          "minY": 13,
+          "maxX": 315,
+          "maxY": 310,
+          "width": 216,
+          "height": 298,
+          "opaquePixels": 35072
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 9
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/turn4-arm-corridor.png",
+        "sha256": "e903d5954a6118be65060c6d447759b2daab570299ebc2b5d5d9865f774cae99",
+        "audit": {
+          "changedPixels": 13054,
+          "changedInsideArmCorridor": 13054,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/turn4-approved-base.png",
+        "sha256": "412e30decd528375269defe04a6f953ca5ad014ca0d000b16b81d1f205cc1c45"
+      },
+      "broomHandContactPixels": 416,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/44/448c5a600b6663cf27c99fee76c674e16134ac94329c474f8bdaa4ad48d6afa4.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b0/b0d994abdddcb60d05187c34ee842248b0298bbd87bd564c733be4fce2f88a1b.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/03/0389a1566402623862f4efa8764349fb9ffccc5679e083e5b92a535c139eac15.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/41/412e30decd528375269defe04a6f953ca5ad014ca0d000b16b81d1f205cc1c45.png"
+    },
+    "turn5": {
+      "id": "turn5",
+      "kind": "approved-turn-v9-with-carrying-arms",
+      "turnFrame": 5,
+      "angleDegrees": 135,
+      "durationMs": 111.111111,
+      "authority": {
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f05.png",
+        "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v6/drafts/frames/turn5.png",
+        "sha256": "262bf8fe2ffa4d15f528e177ff8e1bc7f6ae1ece74b80fae747f7adfaae63bce",
+        "role": "arm/hand corridor only"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn5-actor.png",
+        "sha256": "26731cbe8f5d2f49265b024df53e0d395e3716264962cb468c469ab41ea7b1a0",
+        "bounds": {
+          "minX": 99,
+          "minY": 13,
+          "maxX": 252,
+          "maxY": 310,
+          "width": 154,
+          "height": 298,
+          "opaquePixels": 27208
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn5-prop.png",
+        "sha256": "bdb231d2fd01c4b3de049e8ee98154d7ac3807aed8c962a9eabe6f5d5a4126ce",
+        "bounds": {
+          "minX": 190,
+          "minY": 116,
+          "maxX": 316,
+          "maxY": 309,
+          "width": 127,
+          "height": 194,
+          "opaquePixels": 8580
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/turn5.png",
+        "sha256": "948765176d705e486ee838f34b9202e4b999176a0a6428c3fc09412588ccf903",
+        "bounds": {
+          "minX": 99,
+          "minY": 13,
+          "maxX": 316,
+          "maxY": 310,
+          "width": 218,
+          "height": 298,
+          "opaquePixels": 35629
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 9
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/turn5-arm-corridor.png",
+        "sha256": "e903d5954a6118be65060c6d447759b2daab570299ebc2b5d5d9865f774cae99",
+        "audit": {
+          "changedPixels": 13500,
+          "changedInsideArmCorridor": 13500,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/turn5-approved-base.png",
+        "sha256": "ba3a4d8e33c0811524160cb01c21d8939c1c8bad9fe7bc57c91731f6ca585df0"
+      },
+      "broomHandContactPixels": 421,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/26/26731cbe8f5d2f49265b024df53e0d395e3716264962cb468c469ab41ea7b1a0.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bd/bdb231d2fd01c4b3de049e8ee98154d7ac3807aed8c962a9eabe6f5d5a4126ce.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/94/948765176d705e486ee838f34b9202e4b999176a0a6428c3fc09412588ccf903.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ba/ba3a4d8e33c0811524160cb01c21d8939c1c8bad9fe7bc57c91731f6ca585df0.png"
+    },
+    "turn6": {
+      "id": "turn6",
+      "kind": "approved-turn-v9-with-carrying-arms",
+      "turnFrame": 6,
+      "angleDegrees": 150,
+      "durationMs": 111.111111,
+      "authority": {
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f06.png",
+        "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v6/drafts/frames/turn6.png",
+        "sha256": "1c8bd28275f396cae3264f4c7dbc80073924823e5b028babc34c13eb9efe7720",
+        "role": "arm/hand corridor only"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn6-actor.png",
+        "sha256": "657167500409fcd77adc76a9a5e728c3d4b3fb7fc0464185622251f5c6e65a67",
+        "bounds": {
+          "minX": 88,
+          "minY": 13,
+          "maxX": 247,
+          "maxY": 310,
+          "width": 160,
+          "height": 298,
+          "opaquePixels": 28220
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn6-prop.png",
+        "sha256": "43fd12550503e9f7883c8942988c3229f4fddf131e45ba9f20bf22051d4d9a28",
+        "bounds": {
+          "minX": 199,
+          "minY": 116,
+          "maxX": 308,
+          "maxY": 305,
+          "width": 110,
+          "height": 190,
+          "opaquePixels": 7537
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/turn6.png",
+        "sha256": "8af4f0418bf91c425a6a9ba69a07b05d00e6319bbd0556d721be24df531420dd",
+        "bounds": {
+          "minX": 88,
+          "minY": 13,
+          "maxX": 308,
+          "maxY": 310,
+          "width": 221,
+          "height": 298,
+          "opaquePixels": 35752
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 9
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/turn6-arm-corridor.png",
+        "sha256": "e903d5954a6118be65060c6d447759b2daab570299ebc2b5d5d9865f774cae99",
+        "audit": {
+          "changedPixels": 14602,
+          "changedInsideArmCorridor": 14602,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/turn6-approved-base.png",
+        "sha256": "14ddbea93905f66599cee1684a54e26df04603dc3ae8c147e4a3c55a9379f280"
+      },
+      "broomHandContactPixels": 358,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/65/657167500409fcd77adc76a9a5e728c3d4b3fb7fc0464185622251f5c6e65a67.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/43/43fd12550503e9f7883c8942988c3229f4fddf131e45ba9f20bf22051d4d9a28.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8a/8af4f0418bf91c425a6a9ba69a07b05d00e6319bbd0556d721be24df531420dd.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/14/14ddbea93905f66599cee1684a54e26df04603dc3ae8c147e4a3c55a9379f280.png"
+    },
+    "turn7": {
+      "id": "turn7",
+      "kind": "approved-turn-v9-with-carrying-arms",
+      "turnFrame": 7,
+      "angleDegrees": 165,
+      "durationMs": 111.111111,
+      "authority": {
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f07.png",
+        "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v6/drafts/frames/turn7.png",
+        "sha256": "704ed460328321fb1c9d24b0f78ef02197d3bf7a7ef8c5afd69c4103935a918c",
+        "role": "arm/hand corridor only"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn7-actor.png",
+        "sha256": "5b15729a47ca9ee10e5db36a127d82bf659c4eb11ed4359e86699b1003e5333b",
+        "bounds": {
+          "minX": 83,
+          "minY": 15,
+          "maxX": 241,
+          "maxY": 310,
+          "width": 159,
+          "height": 296,
+          "opaquePixels": 28704
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn7-prop.png",
+        "sha256": "e93ed9cbce5e77cda8651ecd230a56fb6f9aef5db5ccd9866af7371abb1db230",
+        "bounds": {
+          "minX": 190,
+          "minY": 116,
+          "maxX": 283,
+          "maxY": 303,
+          "width": 94,
+          "height": 188,
+          "opaquePixels": 5957
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/turn7.png",
+        "sha256": "0f3e9bcc8e001e6b925c5f7b1e9f04fb3ba92f1423121d7c74f0b8096023f20d",
+        "bounds": {
+          "minX": 83,
+          "minY": 15,
+          "maxX": 283,
+          "maxY": 310,
+          "width": 201,
+          "height": 296,
+          "opaquePixels": 34628
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 9
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/turn7-arm-corridor.png",
+        "sha256": "e903d5954a6118be65060c6d447759b2daab570299ebc2b5d5d9865f774cae99",
+        "audit": {
+          "changedPixels": 14769,
+          "changedInsideArmCorridor": 14769,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/turn7-approved-base.png",
+        "sha256": "9d3dee9cb8cdd9739d0af83ffcbff4fcb78f2c92571e582285de7cba80bb5ea0"
+      },
+      "broomHandContactPixels": 142,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5b/5b15729a47ca9ee10e5db36a127d82bf659c4eb11ed4359e86699b1003e5333b.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e9/e93ed9cbce5e77cda8651ecd230a56fb6f9aef5db5ccd9866af7371abb1db230.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0f/0f3e9bcc8e001e6b925c5f7b1e9f04fb3ba92f1423121d7c74f0b8096023f20d.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9d/9d3dee9cb8cdd9739d0af83ffcbff4fcb78f2c92571e582285de7cba80bb5ea0.png"
+    },
+    "turn8": {
+      "id": "turn8",
+      "kind": "approved-turn-v9-with-carrying-arms",
+      "turnFrame": 8,
+      "angleDegrees": 172.5,
+      "durationMs": 111.111111,
+      "authority": {
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f08.png",
+        "sha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v6/drafts/frames/turn8.png",
+        "sha256": "a21017f0cdd6bcc1190021ff8870e3e874664eb9a8e5a83a780bf339f7e9f83f",
+        "role": "arm/hand corridor only"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn8-actor.png",
+        "sha256": "2a5be24144a1f542f931dc8763893101c6d02cf86b4e174da510c27b547a1944",
+        "bounds": {
+          "minX": 63,
+          "minY": 14,
+          "maxX": 220,
+          "maxY": 310,
+          "width": 158,
+          "height": 297,
+          "opaquePixels": 29343
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn8-prop.png",
+        "sha256": "48d3e6c00541a37014bc154a828320660c9d6303c24341475d4bdd11dc70f480",
+        "bounds": {
+          "minX": 125,
+          "minY": 121,
+          "maxX": 214,
+          "maxY": 307,
+          "width": 90,
+          "height": 187,
+          "opaquePixels": 1674
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/turn8.png",
+        "sha256": "36acfef7a2fd892901b4d612cdc940da8df37987d6314f52d1ff2fc21cbe6c55",
+        "bounds": {
+          "minX": 63,
+          "minY": 14,
+          "maxX": 220,
+          "maxY": 310,
+          "width": 158,
+          "height": 297,
+          "opaquePixels": 30123
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 9
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/turn8-arm-corridor.png",
+        "sha256": "e903d5954a6118be65060c6d447759b2daab570299ebc2b5d5d9865f774cae99",
+        "audit": {
+          "changedPixels": 15610,
+          "changedInsideArmCorridor": 15610,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/turn8-approved-base.png",
+        "sha256": "861646d8c973dbc255daa9800242013edbba45c35158d2753a56eb733020af21"
+      },
+      "broomHandContactPixels": 0,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2a/2a5be24144a1f542f931dc8763893101c6d02cf86b4e174da510c27b547a1944.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/48/48d3e6c00541a37014bc154a828320660c9d6303c24341475d4bdd11dc70f480.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/36/36acfef7a2fd892901b4d612cdc940da8df37987d6314f52d1ff2fc21cbe6c55.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/86/861646d8c973dbc255daa9800242013edbba45c35158d2753a56eb733020af21.png"
+    },
+    "turn9": {
+      "id": "turn9",
+      "kind": "approved-turn-v9-with-carrying-arms",
+      "turnFrame": 9,
+      "angleDegrees": 180,
+      "durationMs": 111.111111,
+      "authority": {
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f09.png",
+        "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ]
+      },
+      "armSource": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v6/drafts/frames/turn9.png",
+        "sha256": "14cb7377cb610a3952631c96cef9ac51696efab90f86519784b534a3dfb3f9bc",
+        "role": "arm/hand corridor only"
+      },
+      "actor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn9-actor.png",
+        "sha256": "f188b64e58fea7f3453637a726bcddd9e1f4f02c57bbf1e4a2c001e81fbb97d4",
+        "bounds": {
+          "minX": 65,
+          "minY": 13,
+          "maxX": 222,
+          "maxY": 310,
+          "width": 158,
+          "height": 298,
+          "opaquePixels": 30624
+        }
+      },
+      "prop": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/layers/turn9-prop.png",
+        "sha256": "6fdb12c12ccb121d5e4c49320d43678d86e4b57d6bdf23c271cc1c1d01aa4485",
+        "bounds": {
+          "minX": 129,
+          "minY": 221,
+          "maxX": 214,
+          "maxY": 304,
+          "width": 86,
+          "height": 84,
+          "opaquePixels": 1192
+        },
+        "status": "provisional-art-movement-review"
+      },
+      "composite": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/frames/turn9.png",
+        "sha256": "5ff8d448290746de0b61814ae6bb642e539bb2f2e9b2a93d69e8c5f55f42f50c",
+        "bounds": {
+          "minX": 65,
+          "minY": 13,
+          "maxX": 222,
+          "maxY": 310,
+          "width": 158,
+          "height": 298,
+          "opaquePixels": 31445
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 9
+      },
+      "armCorridor": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/drafts/masks/turn9-arm-corridor.png",
+        "sha256": "e903d5954a6118be65060c6d447759b2daab570299ebc2b5d5d9865f774cae99",
+        "audit": {
+          "changedPixels": 16224,
+          "changedInsideArmCorridor": 16224,
+          "changedOutsideArmCorridor": 0
+        }
+      },
+      "approvedBase": {
+        "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/evidence/turn9-approved-base.png",
+        "sha256": "bae8d3f2866f30581400c86b458a3b4c1221d4349db65359a355f19d71985977"
+      },
+      "broomHandContactPixels": 0,
+      "ownership": {
+        "separateLayers": true,
+        "renderOrder": [
+          "prop",
+          "actor"
+        ],
+        "recompositionExact": true
+      },
+      "urls": {
+        "actor": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f1/f188b64e58fea7f3453637a726bcddd9e1f4f02c57bbf1e4a2c001e81fbb97d4.png",
+        "prop": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6f/6fdb12c12ccb121d5e4c49320d43678d86e4b57d6bdf23c271cc1c1d01aa4485.png",
+        "composite": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5f/5ff8d448290746de0b61814ae6bb642e539bb2f2e9b2a93d69e8c5f55f42f50c.png"
+      },
+      "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ba/bae8d3f2866f30581400c86b458a3b4c1221d4349db65359a355f19d71985977.png"
+    }
+  },
+  "route": [
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656.png",
+      "recordId": null,
+      "gaitFrame": 1,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F1 \u00b7 left-foot contact",
+      "actorRootXLp": 22.0,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf.png",
+      "recordId": null,
+      "gaitFrame": 2,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F2 \u00b7 left-foot down",
+      "actorRootXLp": 29.4,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4.png",
+      "recordId": null,
+      "gaitFrame": 3,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F3 \u00b7 left-foot passing",
+      "actorRootXLp": 36.8,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b.png",
+      "recordId": null,
+      "gaitFrame": 4,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F4 \u00b7 left-foot up",
+      "actorRootXLp": 44.2,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/54/545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/54/545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549.png",
+      "recordId": null,
+      "gaitFrame": 5,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F5 \u00b7 right-foot contact",
+      "actorRootXLp": 51.6,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52.png",
+      "recordId": null,
+      "gaitFrame": 6,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F6 \u00b7 right-foot down",
+      "actorRootXLp": 59.0,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df.png",
+      "recordId": null,
+      "gaitFrame": 7,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F7 \u00b7 right-foot passing",
+      "actorRootXLp": 66.4,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61.png",
+      "recordId": null,
+      "gaitFrame": 8,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F8 \u00b7 right-foot up",
+      "actorRootXLp": 73.8,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656.png",
+      "recordId": null,
+      "gaitFrame": 1,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F1 \u00b7 left-foot contact",
+      "actorRootXLp": 81.2,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf.png",
+      "recordId": null,
+      "gaitFrame": 2,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F2 \u00b7 left-foot down",
+      "actorRootXLp": 88.6,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4.png",
+      "recordId": null,
+      "gaitFrame": 3,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F3 \u00b7 left-foot passing",
+      "actorRootXLp": 96.0,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b.png",
+      "recordId": null,
+      "gaitFrame": 4,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F4 \u00b7 left-foot up",
+      "actorRootXLp": 103.4,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/54/545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/54/545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549.png",
+      "recordId": null,
+      "gaitFrame": 5,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F5 \u00b7 right-foot contact",
+      "actorRootXLp": 110.8,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52.png",
+      "recordId": null,
+      "gaitFrame": 6,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F6 \u00b7 right-foot down",
+      "actorRootXLp": 118.2,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df.png",
+      "recordId": null,
+      "gaitFrame": 7,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F7 \u00b7 right-foot passing",
+      "actorRootXLp": 125.6,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61.png",
+      "recordId": null,
+      "gaitFrame": 8,
+      "phase": "approved standard walk into cupboard",
+      "label": "approved Walk V6 F8 \u00b7 right-foot up",
+      "actorRootXLp": 133.0,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png",
+      "recordId": null,
+      "gaitFrame": null,
+      "turnFrame": null,
+      "phase": "phase-correct stop at exact side-right neutral",
+      "label": "exact approved side-right neutral",
+      "actorRootXLp": 154,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "closed",
+      "durationMs": 250
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8e/8ef1aec421da6c31d5021c9a96a62f6dabf33f060dc476785c46627081c8faa3.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/841b5a08638439511424a27f6e08bf4b4e1f3a5ba4965bc98e6fc5e00c06805d.png",
+      "recordId": "sweep1",
+      "gaitFrame": 1,
+      "turnFrame": null,
+      "phase": "fully obscured standard-to-sweep swap",
+      "label": "sweep1 \u00b7 left-foot contact",
+      "actorRootXLp": 154,
+      "propRootXLp": 154,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "closed",
+      "durationMs": 375
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8e/8ef1aec421da6c31d5021c9a96a62f6dabf33f060dc476785c46627081c8faa3.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/841b5a08638439511424a27f6e08bf4b4e1f3a5ba4965bc98e6fc5e00c06805d.png",
+      "recordId": "sweep1",
+      "gaitFrame": 1,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep1 \u00b7 left-foot contact",
+      "actorRootXLp": 151.0,
+      "propRootXLp": 151.0,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0f/0f6019de5c905e4d698aa88475ac220f3d6b0dbfeaeae064a0dc230067f3071e.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7e/7e65ee85d9e66bf11ad92bbb99c789a537027d5681e51baa036dd2bb48234607.png",
+      "recordId": "sweep2",
+      "gaitFrame": 2,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep2 \u00b7 left-foot down",
+      "actorRootXLp": 144.6,
+      "propRootXLp": 144.6,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b336848625072ee760056113b1d44739ddc0f123e6884e9b2c6c60bccfce3a50.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cc/cc6a29c3f9e699f85665521ae92134d404d8c13a25d000b82350c2858b263a3a.png",
+      "recordId": "sweep3",
+      "gaitFrame": 3,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep3 \u00b7 left-foot passing",
+      "actorRootXLp": 138.2,
+      "propRootXLp": 138.2,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/35/35612def8f43bcc179c8bccce9c2dd2c6e0dfcab36e2b7e5915fca14c74f1e0e.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/27/27323782eb220f63d41f7344f29d58df8fbe407e71b89e633a1c46cba1c3a102.png",
+      "recordId": "sweep4",
+      "gaitFrame": 4,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep4 \u00b7 left-foot up",
+      "actorRootXLp": 131.8,
+      "propRootXLp": 131.8,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a2/a2f8358cbaa0878d550bd79364eea9edb3ea5e81a8dba5b20109b00c94716bda.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c7/c7562f46676444f4f39a3f34dfc9b33ecc2f99c20d4ac2d737633bc393995b5d.png",
+      "recordId": "sweep5",
+      "gaitFrame": 5,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep5 \u00b7 right-foot contact",
+      "actorRootXLp": 125.4,
+      "propRootXLp": 125.4,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/85/857389b0cfe9c0d0d8b2dde36bb975046397ff5d533db47ba6ced8b6183d2079.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a4/a4df8b83ede2f03aff222fc8c951d6cc6ab012dfc6da5e055bed8e45c8b91d71.png",
+      "recordId": "sweep6",
+      "gaitFrame": 6,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep6 \u00b7 right-foot down",
+      "actorRootXLp": 119.0,
+      "propRootXLp": 119.0,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/30/30cb8e19164d7cc572d9b20657ab7ce868bef06ae8c8e8e0f4aa2044aa65faf8.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/97/97703d2fdeb14fc91817eb3a14b40cf1373ad7780341c6850e94e30c7f6cce10.png",
+      "recordId": "sweep7",
+      "gaitFrame": 7,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep7 \u00b7 right-foot passing",
+      "actorRootXLp": 112.6,
+      "propRootXLp": 112.6,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/43/43fda6ad080a2dee7522c49681d1b5b02d35bce580005ea9a1f3c04cb4dc2aeb.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d8/d83f120bcdb86fcfa3fc09ed15604c872339886a4e0383fb02742e0ef908079c.png",
+      "recordId": "sweep8",
+      "gaitFrame": 8,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep8 \u00b7 right-foot up",
+      "actorRootXLp": 106.2,
+      "propRootXLp": 106.2,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8e/8ef1aec421da6c31d5021c9a96a62f6dabf33f060dc476785c46627081c8faa3.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/841b5a08638439511424a27f6e08bf4b4e1f3a5ba4965bc98e6fc5e00c06805d.png",
+      "recordId": "sweep1",
+      "gaitFrame": 1,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep1 \u00b7 left-foot contact",
+      "actorRootXLp": 99.8,
+      "propRootXLp": 99.8,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0f/0f6019de5c905e4d698aa88475ac220f3d6b0dbfeaeae064a0dc230067f3071e.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7e/7e65ee85d9e66bf11ad92bbb99c789a537027d5681e51baa036dd2bb48234607.png",
+      "recordId": "sweep2",
+      "gaitFrame": 2,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep2 \u00b7 left-foot down",
+      "actorRootXLp": 93.4,
+      "propRootXLp": 93.4,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b336848625072ee760056113b1d44739ddc0f123e6884e9b2c6c60bccfce3a50.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cc/cc6a29c3f9e699f85665521ae92134d404d8c13a25d000b82350c2858b263a3a.png",
+      "recordId": "sweep3",
+      "gaitFrame": 3,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep3 \u00b7 left-foot passing",
+      "actorRootXLp": 87.0,
+      "propRootXLp": 87.0,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/35/35612def8f43bcc179c8bccce9c2dd2c6e0dfcab36e2b7e5915fca14c74f1e0e.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/27/27323782eb220f63d41f7344f29d58df8fbe407e71b89e633a1c46cba1c3a102.png",
+      "recordId": "sweep4",
+      "gaitFrame": 4,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep4 \u00b7 left-foot up",
+      "actorRootXLp": 80.6,
+      "propRootXLp": 80.6,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a2/a2f8358cbaa0878d550bd79364eea9edb3ea5e81a8dba5b20109b00c94716bda.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c7/c7562f46676444f4f39a3f34dfc9b33ecc2f99c20d4ac2d737633bc393995b5d.png",
+      "recordId": "sweep5",
+      "gaitFrame": 5,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep5 \u00b7 right-foot contact",
+      "actorRootXLp": 74.2,
+      "propRootXLp": 74.2,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/85/857389b0cfe9c0d0d8b2dde36bb975046397ff5d533db47ba6ced8b6183d2079.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a4/a4df8b83ede2f03aff222fc8c951d6cc6ab012dfc6da5e055bed8e45c8b91d71.png",
+      "recordId": "sweep6",
+      "gaitFrame": 6,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep6 \u00b7 right-foot down",
+      "actorRootXLp": 67.8,
+      "propRootXLp": 67.8,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/30/30cb8e19164d7cc572d9b20657ab7ce868bef06ae8c8e8e0f4aa2044aa65faf8.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/97/97703d2fdeb14fc91817eb3a14b40cf1373ad7780341c6850e94e30c7f6cce10.png",
+      "recordId": "sweep7",
+      "gaitFrame": 7,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep7 \u00b7 right-foot passing",
+      "actorRootXLp": 61.4,
+      "propRootXLp": 61.4,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/43/43fda6ad080a2dee7522c49681d1b5b02d35bce580005ea9a1f3c04cb4dc2aeb.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d8/d83f120bcdb86fcfa3fc09ed15604c872339886a4e0383fb02742e0ef908079c.png",
+      "recordId": "sweep8",
+      "gaitFrame": 8,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping left",
+      "label": "sweep8 \u00b7 right-foot up",
+      "actorRootXLp": 55.0,
+      "propRootXLp": 55.0,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/59/590c1bfd8b544989ed1b181dcb9cb839708e4577dc5d72da348f4ceb7e1ab024.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f3dc2d9d5244c0b3b0aab025c8aaf68a05911ed7514de5ff77063f3e3f1197d.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1f/1f2bb7c6e5bee25841d78f5108894ef433f61b115fbff62d2950607ba1bccf0f.png",
+      "recordId": "turn1",
+      "gaitFrame": null,
+      "turnFrame": 1,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn1 \u00b7 90\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b6/b687d9f41ce42e3e8e4ac7e06d5ef8bbaf5a055bbbe625b9c289d30d196d3e38.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0d/0dcdf72fb590e128d550f5fa7993a4ac66b8c4d938ef908d6c9e6daa53f94b0a.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/67/67efe8d8c24f17b377d47002985a1108a20c08e2cc7fa2de351c2d6aca42981c.png",
+      "recordId": "turn2",
+      "gaitFrame": null,
+      "turnFrame": 2,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn2 \u00b7 98\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/10/10e9b465aba47c62e33acba15fda7877df43c11df1158330bb7848ab957bf4a5.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/73/73817f477e5d2f35d366589768add9c50d28213cc7fab4b916fa248d12d79adc.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/51/5157ed1995bd28cacfb610c802051491377c865b626f19b2a5a6c7dab50312b0.png",
+      "recordId": "turn3",
+      "gaitFrame": null,
+      "turnFrame": 3,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn3 \u00b7 105\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/44/448c5a600b6663cf27c99fee76c674e16134ac94329c474f8bdaa4ad48d6afa4.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b0/b0d994abdddcb60d05187c34ee842248b0298bbd87bd564c733be4fce2f88a1b.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/41/412e30decd528375269defe04a6f953ca5ad014ca0d000b16b81d1f205cc1c45.png",
+      "recordId": "turn4",
+      "gaitFrame": null,
+      "turnFrame": 4,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn4 \u00b7 120\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/26/26731cbe8f5d2f49265b024df53e0d395e3716264962cb468c469ab41ea7b1a0.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bd/bdb231d2fd01c4b3de049e8ee98154d7ac3807aed8c962a9eabe6f5d5a4126ce.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ba/ba3a4d8e33c0811524160cb01c21d8939c1c8bad9fe7bc57c91731f6ca585df0.png",
+      "recordId": "turn5",
+      "gaitFrame": null,
+      "turnFrame": 5,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn5 \u00b7 135\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/65/657167500409fcd77adc76a9a5e728c3d4b3fb7fc0464185622251f5c6e65a67.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/43/43fd12550503e9f7883c8942988c3229f4fddf131e45ba9f20bf22051d4d9a28.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/14/14ddbea93905f66599cee1684a54e26df04603dc3ae8c147e4a3c55a9379f280.png",
+      "recordId": "turn6",
+      "gaitFrame": null,
+      "turnFrame": 6,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn6 \u00b7 150\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5b/5b15729a47ca9ee10e5db36a127d82bf659c4eb11ed4359e86699b1003e5333b.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e9/e93ed9cbce5e77cda8651ecd230a56fb6f9aef5db5ccd9866af7371abb1db230.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9d/9d3dee9cb8cdd9739d0af83ffcbff4fcb78f2c92571e582285de7cba80bb5ea0.png",
+      "recordId": "turn7",
+      "gaitFrame": null,
+      "turnFrame": 7,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn7 \u00b7 165\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2a/2a5be24144a1f542f931dc8763893101c6d02cf86b4e174da510c27b547a1944.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/48/48d3e6c00541a37014bc154a828320660c9d6303c24341475d4bdd11dc70f480.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/86/861646d8c973dbc255daa9800242013edbba45c35158d2753a56eb733020af21.png",
+      "recordId": "turn8",
+      "gaitFrame": null,
+      "turnFrame": 8,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn8 \u00b7 172.5\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f1/f188b64e58fea7f3453637a726bcddd9e1f4f02c57bbf1e4a2c001e81fbb97d4.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6f/6fdb12c12ccb121d5e4c49320d43678d86e4b57d6bdf23c271cc1c1d01aa4485.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ba/bae8d3f2866f30581400c86b458a3b4c1221d4349db65359a355f19d71985977.png",
+      "recordId": "turn9",
+      "gaitFrame": null,
+      "turnFrame": 9,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn9 \u00b7 180\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2a/2a5be24144a1f542f931dc8763893101c6d02cf86b4e174da510c27b547a1944.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/48/48d3e6c00541a37014bc154a828320660c9d6303c24341475d4bdd11dc70f480.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/86/861646d8c973dbc255daa9800242013edbba45c35158d2753a56eb733020af21.png",
+      "recordId": "turn8",
+      "gaitFrame": null,
+      "turnFrame": 8,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn8 \u00b7 172.5\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5b/5b15729a47ca9ee10e5db36a127d82bf659c4eb11ed4359e86699b1003e5333b.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e9/e93ed9cbce5e77cda8651ecd230a56fb6f9aef5db5ccd9866af7371abb1db230.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9d/9d3dee9cb8cdd9739d0af83ffcbff4fcb78f2c92571e582285de7cba80bb5ea0.png",
+      "recordId": "turn7",
+      "gaitFrame": null,
+      "turnFrame": 7,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn7 \u00b7 165\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/65/657167500409fcd77adc76a9a5e728c3d4b3fb7fc0464185622251f5c6e65a67.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/43/43fd12550503e9f7883c8942988c3229f4fddf131e45ba9f20bf22051d4d9a28.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/14/14ddbea93905f66599cee1684a54e26df04603dc3ae8c147e4a3c55a9379f280.png",
+      "recordId": "turn6",
+      "gaitFrame": null,
+      "turnFrame": 6,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn6 \u00b7 150\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/26/26731cbe8f5d2f49265b024df53e0d395e3716264962cb468c469ab41ea7b1a0.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bd/bdb231d2fd01c4b3de049e8ee98154d7ac3807aed8c962a9eabe6f5d5a4126ce.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ba/ba3a4d8e33c0811524160cb01c21d8939c1c8bad9fe7bc57c91731f6ca585df0.png",
+      "recordId": "turn5",
+      "gaitFrame": null,
+      "turnFrame": 5,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn5 \u00b7 135\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/44/448c5a600b6663cf27c99fee76c674e16134ac94329c474f8bdaa4ad48d6afa4.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b0/b0d994abdddcb60d05187c34ee842248b0298bbd87bd564c733be4fce2f88a1b.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/41/412e30decd528375269defe04a6f953ca5ad014ca0d000b16b81d1f205cc1c45.png",
+      "recordId": "turn4",
+      "gaitFrame": null,
+      "turnFrame": 4,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn4 \u00b7 120\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/10/10e9b465aba47c62e33acba15fda7877df43c11df1158330bb7848ab957bf4a5.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/73/73817f477e5d2f35d366589768add9c50d28213cc7fab4b916fa248d12d79adc.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/51/5157ed1995bd28cacfb610c802051491377c865b626f19b2a5a6c7dab50312b0.png",
+      "recordId": "turn3",
+      "gaitFrame": null,
+      "turnFrame": 3,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn3 \u00b7 105\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b6/b687d9f41ce42e3e8e4ac7e06d5ef8bbaf5a055bbbe625b9c289d30d196d3e38.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0d/0dcdf72fb590e128d550f5fa7993a4ac66b8c4d938ef908d6c9e6daa53f94b0a.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/67/67efe8d8c24f17b377d47002985a1108a20c08e2cc7fa2de351c2d6aca42981c.png",
+      "recordId": "turn2",
+      "gaitFrame": null,
+      "turnFrame": 2,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn2 \u00b7 98\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/59/590c1bfd8b544989ed1b181dcb9cb839708e4577dc5d72da348f4ceb7e1ab024.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f3dc2d9d5244c0b3b0aab025c8aaf68a05911ed7514de5ff77063f3e3f1197d.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1f/1f2bb7c6e5bee25841d78f5108894ef433f61b115fbff62d2950607ba1bccf0f.png",
+      "recordId": "turn1",
+      "gaitFrame": null,
+      "turnFrame": 1,
+      "phase": "exact approved V9 reversal while carrying broom",
+      "label": "turn1 \u00b7 90\u00b0",
+      "actorRootXLp": 54,
+      "propRootXLp": 54,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 111.111111
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8e/8ef1aec421da6c31d5021c9a96a62f6dabf33f060dc476785c46627081c8faa3.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/841b5a08638439511424a27f6e08bf4b4e1f3a5ba4965bc98e6fc5e00c06805d.png",
+      "recordId": "sweep1",
+      "gaitFrame": 1,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep1 \u00b7 left-foot contact",
+      "actorRootXLp": 55.0,
+      "propRootXLp": 55.0,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0f/0f6019de5c905e4d698aa88475ac220f3d6b0dbfeaeae064a0dc230067f3071e.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7e/7e65ee85d9e66bf11ad92bbb99c789a537027d5681e51baa036dd2bb48234607.png",
+      "recordId": "sweep2",
+      "gaitFrame": 2,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep2 \u00b7 left-foot down",
+      "actorRootXLp": 61.4,
+      "propRootXLp": 61.4,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b336848625072ee760056113b1d44739ddc0f123e6884e9b2c6c60bccfce3a50.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cc/cc6a29c3f9e699f85665521ae92134d404d8c13a25d000b82350c2858b263a3a.png",
+      "recordId": "sweep3",
+      "gaitFrame": 3,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep3 \u00b7 left-foot passing",
+      "actorRootXLp": 67.8,
+      "propRootXLp": 67.8,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/35/35612def8f43bcc179c8bccce9c2dd2c6e0dfcab36e2b7e5915fca14c74f1e0e.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/27/27323782eb220f63d41f7344f29d58df8fbe407e71b89e633a1c46cba1c3a102.png",
+      "recordId": "sweep4",
+      "gaitFrame": 4,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep4 \u00b7 left-foot up",
+      "actorRootXLp": 74.2,
+      "propRootXLp": 74.2,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a2/a2f8358cbaa0878d550bd79364eea9edb3ea5e81a8dba5b20109b00c94716bda.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c7/c7562f46676444f4f39a3f34dfc9b33ecc2f99c20d4ac2d737633bc393995b5d.png",
+      "recordId": "sweep5",
+      "gaitFrame": 5,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep5 \u00b7 right-foot contact",
+      "actorRootXLp": 80.6,
+      "propRootXLp": 80.6,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/85/857389b0cfe9c0d0d8b2dde36bb975046397ff5d533db47ba6ced8b6183d2079.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a4/a4df8b83ede2f03aff222fc8c951d6cc6ab012dfc6da5e055bed8e45c8b91d71.png",
+      "recordId": "sweep6",
+      "gaitFrame": 6,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep6 \u00b7 right-foot down",
+      "actorRootXLp": 87.0,
+      "propRootXLp": 87.0,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/30/30cb8e19164d7cc572d9b20657ab7ce868bef06ae8c8e8e0f4aa2044aa65faf8.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/97/97703d2fdeb14fc91817eb3a14b40cf1373ad7780341c6850e94e30c7f6cce10.png",
+      "recordId": "sweep7",
+      "gaitFrame": 7,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep7 \u00b7 right-foot passing",
+      "actorRootXLp": 93.4,
+      "propRootXLp": 93.4,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/43/43fda6ad080a2dee7522c49681d1b5b02d35bce580005ea9a1f3c04cb4dc2aeb.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d8/d83f120bcdb86fcfa3fc09ed15604c872339886a4e0383fb02742e0ef908079c.png",
+      "recordId": "sweep8",
+      "gaitFrame": 8,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep8 \u00b7 right-foot up",
+      "actorRootXLp": 99.8,
+      "propRootXLp": 99.8,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8e/8ef1aec421da6c31d5021c9a96a62f6dabf33f060dc476785c46627081c8faa3.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/841b5a08638439511424a27f6e08bf4b4e1f3a5ba4965bc98e6fc5e00c06805d.png",
+      "recordId": "sweep1",
+      "gaitFrame": 1,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep1 \u00b7 left-foot contact",
+      "actorRootXLp": 106.2,
+      "propRootXLp": 106.2,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0f/0f6019de5c905e4d698aa88475ac220f3d6b0dbfeaeae064a0dc230067f3071e.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7e/7e65ee85d9e66bf11ad92bbb99c789a537027d5681e51baa036dd2bb48234607.png",
+      "recordId": "sweep2",
+      "gaitFrame": 2,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep2 \u00b7 left-foot down",
+      "actorRootXLp": 112.6,
+      "propRootXLp": 112.6,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b336848625072ee760056113b1d44739ddc0f123e6884e9b2c6c60bccfce3a50.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cc/cc6a29c3f9e699f85665521ae92134d404d8c13a25d000b82350c2858b263a3a.png",
+      "recordId": "sweep3",
+      "gaitFrame": 3,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep3 \u00b7 left-foot passing",
+      "actorRootXLp": 119.0,
+      "propRootXLp": 119.0,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/35/35612def8f43bcc179c8bccce9c2dd2c6e0dfcab36e2b7e5915fca14c74f1e0e.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/27/27323782eb220f63d41f7344f29d58df8fbe407e71b89e633a1c46cba1c3a102.png",
+      "recordId": "sweep4",
+      "gaitFrame": 4,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep4 \u00b7 left-foot up",
+      "actorRootXLp": 125.4,
+      "propRootXLp": 125.4,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a2/a2f8358cbaa0878d550bd79364eea9edb3ea5e81a8dba5b20109b00c94716bda.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c7/c7562f46676444f4f39a3f34dfc9b33ecc2f99c20d4ac2d737633bc393995b5d.png",
+      "recordId": "sweep5",
+      "gaitFrame": 5,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep5 \u00b7 right-foot contact",
+      "actorRootXLp": 131.8,
+      "propRootXLp": 131.8,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/85/857389b0cfe9c0d0d8b2dde36bb975046397ff5d533db47ba6ced8b6183d2079.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a4/a4df8b83ede2f03aff222fc8c951d6cc6ab012dfc6da5e055bed8e45c8b91d71.png",
+      "recordId": "sweep6",
+      "gaitFrame": 6,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep6 \u00b7 right-foot down",
+      "actorRootXLp": 138.2,
+      "propRootXLp": 138.2,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/30/30cb8e19164d7cc572d9b20657ab7ce868bef06ae8c8e8e0f4aa2044aa65faf8.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/97/97703d2fdeb14fc91817eb3a14b40cf1373ad7780341c6850e94e30c7f6cce10.png",
+      "recordId": "sweep7",
+      "gaitFrame": 7,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep7 \u00b7 right-foot passing",
+      "actorRootXLp": 144.6,
+      "propRootXLp": 144.6,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/43/43fda6ad080a2dee7522c49681d1b5b02d35bce580005ea9a1f3c04cb4dc2aeb.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d8/d83f120bcdb86fcfa3fc09ed15604c872339886a4e0383fb02742e0ef908079c.png",
+      "recordId": "sweep8",
+      "gaitFrame": 8,
+      "turnFrame": null,
+      "phase": "approved walking gait while sweeping right",
+      "label": "sweep8 \u00b7 right-foot up",
+      "actorRootXLp": 151.0,
+      "propRootXLp": 151.0,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8e/8ef1aec421da6c31d5021c9a96a62f6dabf33f060dc476785c46627081c8faa3.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2f21de5b56fb606de2b49e0cf7bcf0f50c4c31f4ff51aebc96120866b01f0f03.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/841b5a08638439511424a27f6e08bf4b4e1f3a5ba4965bc98e6fc5e00c06805d.png",
+      "recordId": "sweep1",
+      "gaitFrame": 1,
+      "turnFrame": null,
+      "phase": "fully obscured sweep-to-standard swap",
+      "label": "sweep1 \u00b7 left-foot contact",
+      "actorRootXLp": 154,
+      "propRootXLp": 154,
+      "cellWidthLp": 48,
+      "anchorXLp": 18.75,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "closed",
+      "durationMs": 375
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png",
+      "recordId": null,
+      "gaitFrame": null,
+      "turnFrame": null,
+      "phase": "exact side-right neutral after action exit",
+      "label": "exact approved side-right neutral",
+      "actorRootXLp": 154,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": false,
+      "cupboard": "closed",
+      "durationMs": 250
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656.png",
+      "recordId": null,
+      "gaitFrame": 1,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F1 \u00b7 left-foot contact",
+      "actorRootXLp": 151.0,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf.png",
+      "recordId": null,
+      "gaitFrame": 2,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F2 \u00b7 left-foot down",
+      "actorRootXLp": 143.6,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4.png",
+      "recordId": null,
+      "gaitFrame": 3,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F3 \u00b7 left-foot passing",
+      "actorRootXLp": 136.2,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b.png",
+      "recordId": null,
+      "gaitFrame": 4,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F4 \u00b7 left-foot up",
+      "actorRootXLp": 128.8,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/54/545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/54/545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549.png",
+      "recordId": null,
+      "gaitFrame": 5,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F5 \u00b7 right-foot contact",
+      "actorRootXLp": 121.4,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52.png",
+      "recordId": null,
+      "gaitFrame": 6,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F6 \u00b7 right-foot down",
+      "actorRootXLp": 114.0,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df.png",
+      "recordId": null,
+      "gaitFrame": 7,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F7 \u00b7 right-foot passing",
+      "actorRootXLp": 106.6,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61.png",
+      "recordId": null,
+      "gaitFrame": 8,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F8 \u00b7 right-foot up",
+      "actorRootXLp": 99.2,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656.png",
+      "recordId": null,
+      "gaitFrame": 1,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F1 \u00b7 left-foot contact",
+      "actorRootXLp": 91.8,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf.png",
+      "recordId": null,
+      "gaitFrame": 2,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F2 \u00b7 left-foot down",
+      "actorRootXLp": 84.4,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4.png",
+      "recordId": null,
+      "gaitFrame": 3,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F3 \u00b7 left-foot passing",
+      "actorRootXLp": 77.0,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b.png",
+      "recordId": null,
+      "gaitFrame": 4,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F4 \u00b7 left-foot up",
+      "actorRootXLp": 69.6,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/54/545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/54/545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549.png",
+      "recordId": null,
+      "gaitFrame": 5,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F5 \u00b7 right-foot contact",
+      "actorRootXLp": 62.2,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52.png",
+      "recordId": null,
+      "gaitFrame": 6,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F6 \u00b7 right-foot down",
+      "actorRootXLp": 54.8,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df.png",
+      "recordId": null,
+      "gaitFrame": 7,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F7 \u00b7 right-foot passing",
+      "actorRootXLp": 47.4,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    },
+    {
+      "actorSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61.png",
+      "propSrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "authoritySrc": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61.png",
+      "recordId": null,
+      "gaitFrame": 8,
+      "phase": "approved standard walk away from cupboard",
+      "label": "approved Walk V6 F8 \u00b7 right-foot up",
+      "actorRootXLp": 40.0,
+      "propRootXLp": 0,
+      "cellWidthLp": 32,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "mirror": true,
+      "cupboard": "open",
+      "durationMs": 125
+    }
+  ],
+  "walkSheet": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/81/8100547d5879a98478715945e5768241d64decd9b4c3b84178681a95f6eb6de3.png",
+  "turnSheet": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1c/1c698482de813f37627c375adba2f1d45842c992fc9128cc98edc366f2383a9d.png",
+  "comparisonSheet": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c3/c3eb73f6e25a0bb58115a86f7caf1d3bf17f5b00e1a836a3a8c372c17991d9b7.png",
+  "reviewInstruction": "Assess locomotion and turn only. Broom rendering is explicitly provisional and separately owned."
+}

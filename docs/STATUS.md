@@ -195,19 +195,14 @@ jumper 94–95 versus Prime 95 and trousers 77–78 versus Prime 77. F2–F6 ret
 the 150 px seated elbow width. Back V2's approval does not cover either
 rear-angle transition; Final/runtime/production remain unchanged.
 
-Prime `keeper_sweep_broom` V1 remains immutable, unapproved review history:
-Frank found lower-jumper artefacts across its action reuse and asked for a more
-clearly traditional broom. V2 is the active gate at
-`/keeper-review/keeper-prime-sweep-broom-v2/`. It rebuilds the named lower hem
-against an exact Prime swatch in every action pose, retains the separately
-owned prop and per-frame material evidence, and adds the kitchen cupboard
-handoff: standard walk right → fully obscured swap → moving sweep-walk left →
-turnaround proxy → moving sweep-walk right → fully obscured swap → standard
-walk left. It awaits Frank and is not promoted. Review-only deploy `08c9cc6`
-was live-checked on 18 October: all 98 unique images decoded before controls,
-the fully obscured handoff and moving-leg sweep playback worked, and no browser
-console errors appeared. The full reviewer is hash-pinned to candidate
-`55c5615`.
+Prime `keeper_sweep_broom` V1–V6 are rejected immutable provenance. V7 is the
+active movement-only gate at `/keeper-review/keeper-prime-sweep-broom-v7/`.
+Both travel directions play approved Walk V6 F1→F8 at exact 8 fps; each cell
+retains its matching approved body outside the Sweep-3 arm/hand corridor. The
+reversal uses approved V9 body order 1→9→1. Both exact side-right neutral state
+changes are fully hidden by the closed cupboard. The separately owned broom is
+provisional and its shape/tone inconsistency is deferred until movement is
+accepted. V7 awaits Frank and is not approved, promoted or wired.
 
 Back V1's exact deploy commit `d93c89c` remains delivery provenance only. Back
 V2 is live from exact deploy commit `f165576`; its 61-frame route and all 36
