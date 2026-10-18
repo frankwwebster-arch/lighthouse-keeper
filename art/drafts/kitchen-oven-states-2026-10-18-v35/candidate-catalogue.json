@@ -1,0 +1,148 @@
+{
+  "version": 35,
+  "asset": "oven",
+  "status": "awaiting-visual-review",
+  "construction": {
+    "coordinatedFamily": true,
+    "sameSourceSheet": true,
+    "objectAnimation": false
+  },
+  "requirements": {
+    "standardInteriorLight": false,
+    "onInteriorLight": true,
+    "onDialsTurned": true,
+    "onRedIndicator": true,
+    "onRoastingTin": true,
+    "brokenDoorAskew": true,
+    "smokeSeparate": true,
+    "hobFlamesSeparate": true
+  },
+  "states": [
+    "standard",
+    "on",
+    "broken"
+  ],
+  "cellPixels": [
+    92,
+    96
+  ],
+  "roomPixels": [
+    772,
+    224
+  ],
+  "roomCellTopLeft": [
+    332,
+    112
+  ],
+  "source": {
+    "path": "art/source/kitchen-oven-states-2026-10-18-v35/generated/oven-three-state-source-v1.png",
+    "sha256": "6468b44c8a3e3aa5e8a87c2c97020bc2cded221de40bf9bb00bf65a75ee2bfaf"
+  },
+  "canonicalReference": {
+    "path": "art/raw/kitchen-final-assets-2026-10-17-v21/basic-oven.png",
+    "sha256": "45658c2649d10efc896d646821b16e12d3a19fc401d04168e00ace3a6f016ba8"
+  },
+  "effects": {
+    "billowing_smoke": {
+      "file": "fx-oven-billowing_smoke-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "reusable": true,
+      "cellPixels": [
+        92,
+        96
+      ],
+      "objectPixelsChanged": false
+    },
+    "hob_flames": {
+      "file": "fx-oven-hob_flames-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "reusable": true,
+      "cellPixels": [
+        92,
+        96
+      ],
+      "objectPixelsChanged": false
+    }
+  },
+  "sfxCues": [
+    "kitchen_oven_on_fan_loop",
+    "kitchen_oven_broken_smoke_hiss_loop",
+    "kitchen_oven_hob_flame_loop"
+  ],
+  "outputs": {
+    "fx-oven-billowing_smoke-f40.png": {
+      "sha256": "d4364bfdc06f2b2f3baed2aaf87b40541e29dfb0524d7e5be958b48a0a50f95c",
+      "pixels": [
+        3680,
+        96
+      ]
+    },
+    "fx-oven-hob_flames-f40.png": {
+      "sha256": "4c0a0894e57d2871213d57472d573672eb45fa918772605d4742061ad8d9dfa0",
+      "pixels": [
+        3680,
+        96
+      ]
+    },
+    "kitchen-oven-broken-in-situ.png": {
+      "sha256": "5c1a0497da8a3171c228a04e9b3ccab2a712e0b8f6a7a5985699804681e01ad4",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "kitchen-oven-on-in-situ.png": {
+      "sha256": "0b73f4007b7a201c98c31a7f802ffc61f1dfa8a3f8bbe034d13b29b403818048",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "kitchen-oven-standard-in-situ.png": {
+      "sha256": "baee7d3c6c204eef90ebebd774e8ab9a36a6faedf4c8544f2ddd333243fd7f40",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "oven-broken.png": {
+      "sha256": "9f190eebe4c1b97fcfbf5a59a1cad137f1c4adff12e222fb959ece704b29ac42",
+      "pixels": [
+        92,
+        96
+      ]
+    },
+    "oven-on.png": {
+      "sha256": "96c365ec25b853d9e41ec75c94a12eb4d403c290fe17ba306cf5dbe385b8c705",
+      "pixels": [
+        92,
+        96
+      ]
+    },
+    "oven-standard.png": {
+      "sha256": "8432219a3d4b7b30c3ae4251a88613daf2664f771faecdcbcd2b8d97634de4ff",
+      "pixels": [
+        92,
+        96
+      ]
+    },
+    "oven-v21-current.png": {
+      "sha256": "45658c2649d10efc896d646821b16e12d3a19fc401d04168e00ace3a6f016ba8",
+      "pixels": [
+        108,
+        120
+      ]
+    }
+  },
+  "boundaries": {
+    "approved": false,
+    "promoted": false,
+    "runtimeChanged": false,
+    "finalChanged": false,
+    "v5AndV20OnwardChanged": false
+  }
+}

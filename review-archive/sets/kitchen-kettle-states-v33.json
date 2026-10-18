@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "set": "kitchen-kettle-states-v33",
+  "page": {
+    "path": "public/keeper-review/kitchen-kettle-states-v33/index.html",
+    "sha256": "c0d81850719df4a284372ab18eed243ff4052b4f12258f6dac15d8341e61dfb4",
+    "bytes": 4652
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-kettle-states-v33/assets/fx-kettle-small_steam-f40.png": {
+      "sha256": "0203dc88399718de1d057bc67d50804ac2cad6ad3ba4b9fe741568f7a5696c32",
+      "extension": ".png",
+      "bytes": 1373,
+      "object": "review-archive/objects/02/0203dc88399718de1d057bc67d50804ac2cad6ad3ba4b9fe741568f7a5696c32.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/02/0203dc88399718de1d057bc67d50804ac2cad6ad3ba4b9fe741568f7a5696c32.png"
+    },
+    "/keeper-review/kitchen-kettle-states-v33/assets/kettle-broken.png": {
+      "sha256": "0589730353fe5701d17be8862f38d3370ca44c1a4c69814401843cbf9ee7b2fd",
+      "extension": ".png",
+      "bytes": 1789,
+      "object": "review-archive/objects/05/0589730353fe5701d17be8862f38d3370ca44c1a4c69814401843cbf9ee7b2fd.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/05/0589730353fe5701d17be8862f38d3370ca44c1a4c69814401843cbf9ee7b2fd.png"
+    },
+    "/keeper-review/kitchen-kettle-states-v33/assets/kettle-on.png": {
+      "sha256": "545ebcdf6badb9c7f55b2f858f7c60bc66c1378ebb18950b1609e19073e11b5c",
+      "extension": ".png",
+      "bytes": 1759,
+      "object": "review-archive/objects/54/545ebcdf6badb9c7f55b2f858f7c60bc66c1378ebb18950b1609e19073e11b5c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/54/545ebcdf6badb9c7f55b2f858f7c60bc66c1378ebb18950b1609e19073e11b5c.png"
+    },
+    "/keeper-review/kitchen-kettle-states-v33/assets/kettle-standard.png": {
+      "sha256": "6a563d7b7e9a49ccdae220605286ae87bddf62da7f820398f93f5db8e628d29a",
+      "extension": ".png",
+      "bytes": 1640,
+      "object": "review-archive/objects/6a/6a563d7b7e9a49ccdae220605286ae87bddf62da7f820398f93f5db8e628d29a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6a/6a563d7b7e9a49ccdae220605286ae87bddf62da7f820398f93f5db8e628d29a.png"
+    },
+    "/keeper-review/kitchen-kettle-states-v33/assets/kettle-v21-current.png": {
+      "sha256": "a3b7d1ea445b66a5c72d6c52d290fd9d2e1859342867cbf0f5392db460daad37",
+      "extension": ".png",
+      "bytes": 10679,
+      "object": "review-archive/objects/a3/a3b7d1ea445b66a5c72d6c52d290fd9d2e1859342867cbf0f5392db460daad37.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a3/a3b7d1ea445b66a5c72d6c52d290fd9d2e1859342867cbf0f5392db460daad37.png"
+    },
+    "/keeper-review/kitchen-kettle-states-v33/assets/kitchen-kettle-broken-in-situ.png": {
+      "sha256": "1d030f7ef92cbfdad996de88de9505ca90ee388a663b3639af15d6e99728264b",
+      "extension": ".png",
+      "bytes": 186088,
+      "object": "review-archive/objects/1d/1d030f7ef92cbfdad996de88de9505ca90ee388a663b3639af15d6e99728264b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1d/1d030f7ef92cbfdad996de88de9505ca90ee388a663b3639af15d6e99728264b.png"
+    },
+    "/keeper-review/kitchen-kettle-states-v33/assets/kitchen-kettle-on-in-situ.png": {
+      "sha256": "445e3794cb225a7bfb3309719c1c2949db17772dafd4896b9eb9ae2a797c166a",
+      "extension": ".png",
+      "bytes": 186162,
+      "object": "review-archive/objects/44/445e3794cb225a7bfb3309719c1c2949db17772dafd4896b9eb9ae2a797c166a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/44/445e3794cb225a7bfb3309719c1c2949db17772dafd4896b9eb9ae2a797c166a.png"
+    },
+    "/keeper-review/kitchen-kettle-states-v33/assets/kitchen-kettle-standard-in-situ.png": {
+      "sha256": "84793f12892b310718d487c437a091a4465f30e8a0c774fa8f70c59e16b121c8",
+      "extension": ".png",
+      "bytes": 186010,
+      "object": "review-archive/objects/84/84793f12892b310718d487c437a091a4465f30e8a0c774fa8f70c59e16b121c8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/84793f12892b310718d487c437a091a4465f30e8a0c774fa8f70c59e16b121c8.png"
+    }
+  }
+}

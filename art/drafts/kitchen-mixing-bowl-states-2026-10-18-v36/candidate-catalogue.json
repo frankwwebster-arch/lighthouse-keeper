@@ -1,0 +1,87 @@
+{
+  "version": 36,
+  "asset": "mixing-bowl",
+  "status": "awaiting-visual-review",
+  "construction": {
+    "coordinatedFamily": true,
+    "sameSourceSheet": true,
+    "objectAnimation": false
+  },
+  "requirements": {
+    "animationRequired": false,
+    "brokenLargeCeramicPieces": true,
+    "intactTableauBeneathBroken": false
+  },
+  "states": [
+    "standard",
+    "broken"
+  ],
+  "cellPixels": [
+    84,
+    68
+  ],
+  "roomPixels": [
+    772,
+    224
+  ],
+  "roomCellTopLeft": [
+    420,
+    76
+  ],
+  "source": {
+    "path": "art/source/kitchen-mixing-bowl-states-2026-10-18-v36/generated/mixing-bowl-two-state-source-v1.png",
+    "sha256": "700f66771ef1ce63c5ef293066e9512d32db338f5932a2a0966be1129514e6e6"
+  },
+  "canonicalReference": {
+    "path": "art/raw/kitchen-final-assets-2026-10-17-v21/mixer.png",
+    "sha256": "de45048124ad67398f84ac86c7cf3d359c21334c39422d2fbe1b4bac5238f47f"
+  },
+  "effects": {},
+  "sfxCues": [
+    "kitchen_mixing_bowl_ceramic_break"
+  ],
+  "outputs": {
+    "kitchen-mixing-bowl-broken-in-situ.png": {
+      "sha256": "5949db84febb1897b234376bfa5a8e78a0efe0c1c8b3a5b45a9244dbea758ec4",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "kitchen-mixing-bowl-standard-in-situ.png": {
+      "sha256": "2df19535eeddd6c42429f82b9816c9b42bac761b33038d5401babf77fc74ddb4",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "mixing-bowl-broken.png": {
+      "sha256": "23c0397e3769f22c0aaa5c3b998a83a7c16c482e6e1a1a3ae7b1003525d15dda",
+      "pixels": [
+        84,
+        68
+      ]
+    },
+    "mixing-bowl-standard.png": {
+      "sha256": "5897005cd41167d992f892f65f582e686ff9063d1708f1a46bd0eaaa49954b1d",
+      "pixels": [
+        84,
+        68
+      ]
+    },
+    "mixing-bowl-v21-current.png": {
+      "sha256": "de45048124ad67398f84ac86c7cf3d359c21334c39422d2fbe1b4bac5238f47f",
+      "pixels": [
+        84,
+        120
+      ]
+    }
+  },
+  "boundaries": {
+    "approved": false,
+    "promoted": false,
+    "runtimeChanged": false,
+    "finalChanged": false,
+    "v5AndV20OnwardChanged": false
+  }
+}

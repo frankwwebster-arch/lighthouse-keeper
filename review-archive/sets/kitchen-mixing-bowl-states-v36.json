@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "set": "kitchen-mixing-bowl-states-v36",
+  "page": {
+    "path": "public/keeper-review/kitchen-mixing-bowl-states-v36/index.html",
+    "sha256": "7b7ff0a2f415cc65d3d286c0d609c1053440b8004b77a16aacd8a9f11921f8bc",
+    "bytes": 4045
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-mixing-bowl-states-v36/assets/kitchen-mixing-bowl-broken-in-situ.png": {
+      "sha256": "5949db84febb1897b234376bfa5a8e78a0efe0c1c8b3a5b45a9244dbea758ec4",
+      "extension": ".png",
+      "bytes": 188596,
+      "object": "review-archive/objects/59/5949db84febb1897b234376bfa5a8e78a0efe0c1c8b3a5b45a9244dbea758ec4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/59/5949db84febb1897b234376bfa5a8e78a0efe0c1c8b3a5b45a9244dbea758ec4.png"
+    },
+    "/keeper-review/kitchen-mixing-bowl-states-v36/assets/kitchen-mixing-bowl-standard-in-situ.png": {
+      "sha256": "2df19535eeddd6c42429f82b9816c9b42bac761b33038d5401babf77fc74ddb4",
+      "extension": ".png",
+      "bytes": 188490,
+      "object": "review-archive/objects/2d/2df19535eeddd6c42429f82b9816c9b42bac761b33038d5401babf77fc74ddb4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2d/2df19535eeddd6c42429f82b9816c9b42bac761b33038d5401babf77fc74ddb4.png"
+    },
+    "/keeper-review/kitchen-mixing-bowl-states-v36/assets/mixing-bowl-broken.png": {
+      "sha256": "23c0397e3769f22c0aaa5c3b998a83a7c16c482e6e1a1a3ae7b1003525d15dda",
+      "extension": ".png",
+      "bytes": 2052,
+      "object": "review-archive/objects/23/23c0397e3769f22c0aaa5c3b998a83a7c16c482e6e1a1a3ae7b1003525d15dda.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/23/23c0397e3769f22c0aaa5c3b998a83a7c16c482e6e1a1a3ae7b1003525d15dda.png"
+    },
+    "/keeper-review/kitchen-mixing-bowl-states-v36/assets/mixing-bowl-standard.png": {
+      "sha256": "5897005cd41167d992f892f65f582e686ff9063d1708f1a46bd0eaaa49954b1d",
+      "extension": ".png",
+      "bytes": 2138,
+      "object": "review-archive/objects/58/5897005cd41167d992f892f65f582e686ff9063d1708f1a46bd0eaaa49954b1d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/58/5897005cd41167d992f892f65f582e686ff9063d1708f1a46bd0eaaa49954b1d.png"
+    },
+    "/keeper-review/kitchen-mixing-bowl-states-v36/assets/mixing-bowl-v21-current.png": {
+      "sha256": "de45048124ad67398f84ac86c7cf3d359c21334c39422d2fbe1b4bac5238f47f",
+      "extension": ".png",
+      "bytes": 10147,
+      "object": "review-archive/objects/de/de45048124ad67398f84ac86c7cf3d359c21334c39422d2fbe1b4bac5238f47f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/de/de45048124ad67398f84ac86c7cf3d359c21334c39422d2fbe1b4bac5238f47f.png"
+    }
+  }
+}

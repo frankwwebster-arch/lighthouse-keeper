@@ -108,6 +108,27 @@ with young-reader comic grammar: three curling green smell trails, loose broken
 haze and three clearer slow flies. V31 is review-only and does not change
 runtime, Final art or canonical V20–V30 sources. Frank approved the exact V31
 family on 18 October 2026; its hashes are now the kitchen-bin fault authority.
+The fridge successor is
+`/keeper-review/kitchen-fridge-states-v32/`. V32 draws standard and
+hinge-failed states together from one construction, keeps the lower-right hinge
+attached, rests the fallen door's lower-left corner on the floor, shows sparse
+generic contents, and keeps its shallow pool static. A separate 40-frame,
+4-fps, ten-second drip/ripple strip supplies the only motion; the named low
+electrical buzz has no visible electrical effect. Frank called the fridge
+excellent on 18 October 2026, visually approved it and released the remaining
+sequence. It remains unpromoted and unwired.
+
+Kitchen V33–V38 now complete the remaining coordinated review families:
+kettle, toaster, oven, mixing bowl, basin and table. Each page shows the
+current authority beside the new standard, all required states at 4×, and all
+states in the exact 772 × 224-pixel kitchen. Steam, heat, smoke, hob flame,
+gentle flow and upward spray are separate reusable 40-frame/4-fps ten-second
+strips; the bowl and table remain static. The table's failed leg stays partly
+attached and no intact table is drawn beneath it. All six versions are
+reversible, unpromoted and awaiting visual review. The active kitchen review
+lineage is exact V5 plus every storm-blue version from V20 through V38; older
+cream/brown sets remain offline in `review-archive/retired/`. Full record:
+`docs/KITCHEN_ASSET_FAMILIES_V33_V38_2026-10-18.md`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

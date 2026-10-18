@@ -443,15 +443,22 @@ the lower-right hinge remains attached, the fallen door's lower-left corner
 rests on the floor, generic unlabelled contents remain visible, and a static
 pool sits in front. A separate reusable 40-frame/4-fps ten-second strip carries
 only a slow drip and restrained ripple. The named low electrical buzz has no
-visible smoke, sparks or flash. V32 awaits visual confirmation; the kettle is
-blocked until then. Its record is
+visible smoke, sparks or flash. Its record is
 [`docs/KITCHEN_FRIDGE_STATES_V32_2026-10-18.md`](docs/KITCHEN_FRIDGE_STATES_V32_2026-10-18.md).
+Frank subsequently called V32 excellent and visually approved it without
+promoting it into Final/runtime. Kitchen V33–V38 then complete the kettle,
+toaster, oven, mixing-bowl, basin and table families at
+`/keeper-review/kitchen-kettle-states-v33/` through
+`/keeper-review/kitchen-table-states-v38/`. Every required state is isolated
+and placed in the exact game-size room; steam, heat, smoke, hob flames and
+water remain independent 40-frame/4-fps ten-second strips. The full record is
+[`docs/KITCHEN_ASSET_FAMILIES_V33_V38_2026-10-18.md`](docs/KITCHEN_ASSET_FAMILIES_V33_V38_2026-10-18.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
 and
 [`docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md).
-Only exact Kitchen V5 and Kitchen V20–V32 remain in active kitchen review tooling.
+Only exact Kitchen V5 and Kitchen V20–V38 remain in active kitchen review tooling.
 V5 is the retained old-family reference, V20 is immutable fitted-galley
 provenance, V21 is immutable complete-asset provenance, V22 is immutable
 rejected assembly provenance, V23 is the approved full-room base, V24 is the
@@ -460,7 +467,8 @@ confirmation, V26 is its derived game-scale Prime context, V27 is rejected
 provenance, V28 supplies the approved static bin pixels, V29 supplies the
 effect colour/timing basis, V30 is rejected as too object-shaped for a young
 player, and V31 is the approved comic-readability authority. None is promoted
-or wired. V32 is the active fridge-only visual gate and is not approved.
+or wired. V32 is visually approved but remains unpromoted; V33–V38 are the
+active remaining-family visual gates and await review.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

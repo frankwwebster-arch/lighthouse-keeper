@@ -1,0 +1,125 @@
+{
+  "version": 33,
+  "asset": "kettle",
+  "status": "awaiting-visual-review",
+  "construction": {
+    "coordinatedFamily": true,
+    "sameSourceSheet": true,
+    "objectAnimation": false
+  },
+  "requirements": {
+    "smallSteamFromSpout": true,
+    "steamSeparate": true,
+    "brokenHandleMountFailed": true,
+    "brokenHandleAttached": true,
+    "visibleElectricalEffects": false
+  },
+  "states": [
+    "standard",
+    "on",
+    "broken"
+  ],
+  "cellPixels": [
+    84,
+    68
+  ],
+  "roomPixels": [
+    772,
+    224
+  ],
+  "roomCellTopLeft": [
+    168,
+    76
+  ],
+  "source": {
+    "path": "art/source/kitchen-kettle-states-2026-10-18-v33/generated/kettle-three-state-source-v1.png",
+    "sha256": "f935e112d0d5fc43536762fb528fbff0fd3121733434aea2936d5b4e428b4b54"
+  },
+  "canonicalReference": {
+    "path": "art/raw/kitchen-final-assets-2026-10-17-v21/kettle.png",
+    "sha256": "a3b7d1ea445b66a5c72d6c52d290fd9d2e1859342867cbf0f5392db460daad37"
+  },
+  "effects": {
+    "small_steam": {
+      "file": "fx-kettle-small_steam-f40.png",
+      "frames": 40,
+      "fps": 4,
+      "durationSeconds": 10,
+      "reusable": true,
+      "cellPixels": [
+        84,
+        68
+      ],
+      "objectPixelsChanged": false
+    }
+  },
+  "sfxCues": [
+    "kitchen_kettle_heating_hiss_loop",
+    "kitchen_kettle_broken_handle_rattle"
+  ],
+  "outputs": {
+    "fx-kettle-small_steam-f40.png": {
+      "sha256": "0203dc88399718de1d057bc67d50804ac2cad6ad3ba4b9fe741568f7a5696c32",
+      "pixels": [
+        3360,
+        68
+      ]
+    },
+    "kettle-broken.png": {
+      "sha256": "0589730353fe5701d17be8862f38d3370ca44c1a4c69814401843cbf9ee7b2fd",
+      "pixels": [
+        84,
+        68
+      ]
+    },
+    "kettle-on.png": {
+      "sha256": "545ebcdf6badb9c7f55b2f858f7c60bc66c1378ebb18950b1609e19073e11b5c",
+      "pixels": [
+        84,
+        68
+      ]
+    },
+    "kettle-standard.png": {
+      "sha256": "6a563d7b7e9a49ccdae220605286ae87bddf62da7f820398f93f5db8e628d29a",
+      "pixels": [
+        84,
+        68
+      ]
+    },
+    "kettle-v21-current.png": {
+      "sha256": "a3b7d1ea445b66a5c72d6c52d290fd9d2e1859342867cbf0f5392db460daad37",
+      "pixels": [
+        84,
+        120
+      ]
+    },
+    "kitchen-kettle-broken-in-situ.png": {
+      "sha256": "1d030f7ef92cbfdad996de88de9505ca90ee388a663b3639af15d6e99728264b",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "kitchen-kettle-on-in-situ.png": {
+      "sha256": "445e3794cb225a7bfb3309719c1c2949db17772dafd4896b9eb9ae2a797c166a",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "kitchen-kettle-standard-in-situ.png": {
+      "sha256": "84793f12892b310718d487c437a091a4465f30e8a0c774fa8f70c59e16b121c8",
+      "pixels": [
+        772,
+        224
+      ]
+    }
+  },
+  "boundaries": {
+    "approved": false,
+    "promoted": false,
+    "runtimeChanged": false,
+    "finalChanged": false,
+    "v5AndV20OnwardChanged": false
+  }
+}

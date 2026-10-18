@@ -1,0 +1,7 @@
+{
+  "version": 33,
+  "asset": "kettle",
+  "status": "awaiting-visual-review",
+  "previousApprovedReview": 32,
+  "rollback": "Delete only the V33 source/raw/draft/review/archive/builder outputs."
+}

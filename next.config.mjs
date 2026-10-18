@@ -243,6 +243,41 @@ export default {
         destination: '/keeper-review/kitchen-bin-effects-v31/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-fridge-states-v32',
+        destination: '/keeper-review/kitchen-fridge-states-v32/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/kitchen-kettle-states-v33',
+        destination: '/keeper-review/kitchen-kettle-states-v33/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/kitchen-toaster-states-v34',
+        destination: '/keeper-review/kitchen-toaster-states-v34/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/kitchen-oven-states-v35',
+        destination: '/keeper-review/kitchen-oven-states-v35/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/kitchen-mixing-bowl-states-v36',
+        destination: '/keeper-review/kitchen-mixing-bowl-states-v36/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/kitchen-basin-states-v37',
+        destination: '/keeper-review/kitchen-basin-states-v37/index.html',
+        permanent: false,
+      },
+      {
+        source: '/keeper-review/kitchen-table-states-v38',
+        destination: '/keeper-review/kitchen-table-states-v38/index.html',
+        permanent: false,
+      },
     ]
   },
 }

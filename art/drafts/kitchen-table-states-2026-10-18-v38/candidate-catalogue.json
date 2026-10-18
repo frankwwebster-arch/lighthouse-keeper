@@ -1,0 +1,88 @@
+{
+  "version": 38,
+  "asset": "table",
+  "status": "awaiting-visual-review",
+  "construction": {
+    "coordinatedFamily": true,
+    "sameSourceSheet": true,
+    "objectAnimation": false
+  },
+  "requirements": {
+    "animationRequired": false,
+    "brokenLegPartlyAttached": true,
+    "brokenFootFloorContact": true,
+    "intactTableBeneathBroken": false
+  },
+  "states": [
+    "standard",
+    "broken"
+  ],
+  "cellPixels": [
+    104,
+    96
+  ],
+  "roomPixels": [
+    772,
+    224
+  ],
+  "roomCellTopLeft": [
+    666,
+    120
+  ],
+  "source": {
+    "path": "art/source/kitchen-table-states-2026-10-18-v38/generated/table-two-state-source-v1.png",
+    "sha256": "d5d34dd002c9f14f6d0585026ff9f2c61baecb639a6c9325cf8b543e7ec8872f"
+  },
+  "canonicalReference": {
+    "path": "art/raw/kitchen-final-assets-2026-10-17-v21/table.png",
+    "sha256": "582fbf39719bbda940d2dadf3821852f3415b984c93787f3d7ce6d1a118b74ad"
+  },
+  "effects": {},
+  "sfxCues": [
+    "kitchen_table_broken_creak"
+  ],
+  "outputs": {
+    "kitchen-table-broken-in-situ.png": {
+      "sha256": "cf7fc1cc013eb1e51aac134fefe8cb26ffde6142a0816306eea76cdf021c93ec",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "kitchen-table-standard-in-situ.png": {
+      "sha256": "7cec5d17c7108e7eeadf8dd193b4cc9c4966f2d0ab27772a839525cac55b8b41",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "table-broken.png": {
+      "sha256": "73466437c0b55a28843e5ec92526d9109332b5af461210317e2f218c63810057",
+      "pixels": [
+        104,
+        96
+      ]
+    },
+    "table-standard.png": {
+      "sha256": "f26856c8b3f520f5243af0214b1c304ec17d217e694d9c595103996cf19b1f44",
+      "pixels": [
+        104,
+        96
+      ]
+    },
+    "table-v21-current.png": {
+      "sha256": "582fbf39719bbda940d2dadf3821852f3415b984c93787f3d7ce6d1a118b74ad",
+      "pixels": [
+        80,
+        58
+      ]
+    }
+  },
+  "boundaries": {
+    "approved": false,
+    "promoted": false,
+    "runtimeChanged": false,
+    "finalChanged": false,
+    "v5AndV20OnwardChanged": false
+  }
+}

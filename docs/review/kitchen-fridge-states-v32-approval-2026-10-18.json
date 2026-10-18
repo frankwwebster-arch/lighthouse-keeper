@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "assetFamily": "kitchen-fridge-states-v32",
+  "approvedOn": "2026-10-18",
+  "approvedBy": "Frank",
+  "verdict": "excellent",
+  "scope": "visual-review authority only; no Final or runtime promotion",
+  "selectedSource": {
+    "path": "art/source/kitchen-fridge-states-2026-10-18-v32/generated/fridge-two-state-floor-contact-source-v3.png",
+    "sha256": "0a69aa583eb9964ad17886b88f486e1c7d7d938938725df856cf5118b50e549d"
+  },
+  "approvedOutputs": {
+    "fridge-standard.png": "0ce759354e885f78fba06760fc019d1c7d31f4abbaf2bb2d6957b0940fcac2a9",
+    "fridge-broken-hinge-failed.png": "819a5649b0c79ff0d62c3e4b1ad66cdab9d940f31be545b6a30a1427f6093cf1",
+    "kitchen-fridge-standard-in-situ.png": "c2e0e24d5baec6671d1eb99e71c100bc00190c3843b574277517e3894142cacb",
+    "kitchen-fridge-broken-in-situ.png": "19176188cedf80c9aee3818f7d1e345fdddc8695d285cf2eb0e821f6fd0ebbda",
+    "fx-fridge-drip-ripple-f40.png": "0ba01eb03674e632d9c0d661c95163034c8a4f6b4a71789b3f4f097919e82911"
+  },
+  "approvedFacts": {
+    "genericContentsVisible": true,
+    "topHingeFailed": true,
+    "lowerRightHingeAttached": true,
+    "doorLowerLeftRestsOnFloor": true,
+    "staticPool": true,
+    "separateDripRipple": true,
+    "effectFrames": 40,
+    "effectFps": 4,
+    "effectDurationSeconds": 10,
+    "visibleElectricalEffects": false
+  },
+  "sequenceReleased": [
+    "kettle",
+    "toaster",
+    "oven",
+    "mixing-bowl",
+    "basin",
+    "table"
+  ]
+}
