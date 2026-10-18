@@ -129,16 +129,18 @@ manifest are hash-pinned in
 `docs/review/kitchen-fridge-states-v39-approval-2026-10-18.json`. Approval is
 review authority only; V39 remains unpromoted and unwired.
 
-The active oven successor is `/keeper-review/kitchen-oven-states-v40/`. V40
-clears the whole previous oven/hob bay, then inserts exactly one state from a
-new coordinated Off/On/Broken family at x=336–420/y=123–218. Off is dark. On
-has turned dials, a red indicator, amber cavity and roasting tin. Broken keeps
-its door attached and askew, with its failed right rotary dial hanging below
-the fascia by two wires. Strong billowing cavity smoke, two burner-anchored
-hob flames and irregular angry warning-light bursts with rare amber cavity
-flickers are separate reusable 40-frame/4-fps ten-second strips. V40 is
-reversible, unpromoted and awaiting Frank's review; no later kitchen asset is
-active. Older
+V40 is rejected because its oven was too tall/insufficiently wide and its
+smoke rose as bubbles. The active successor is
+`/keeper-review/kitchen-oven-states-v41/`. V41 measures every state against the
+initially approved V21 asset: exact `108 × 120` cell, `[12,31,96,108]` opaque
+bounds and `84 × 77` footprint, placed at room x=336–420/y=131–208. Its
+approved hob and sea-glass surround are byte-identical in Off, On and Broken;
+the lower fascia is restricted to the approved V21-derived palette. Off is
+dark; On has turned dials, a red indicator, amber cavity and roasting tin;
+Broken retains the askew attached door and two-wire hanging dial. Connected
+curling smoke, exact-hob flames and irregular warning/cavity flickers remain
+separate reusable 40-frame/4-fps ten-second strips. V41 is reversible,
+unpromoted and awaiting Frank's review; no later kitchen asset is active. Older
 cream/brown sets remain offline in `review-archive/retired/`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains

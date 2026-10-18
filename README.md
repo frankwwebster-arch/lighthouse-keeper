@@ -457,17 +457,18 @@ slow drip and floor ripple. Its record is
 Frank approved this exact hash-pinned review family on 18 October 2026. The
 approval remains review authority only and performs no Final/runtime promotion.
 
-Kitchen V40 at `/keeper-review/kitchen-oven-states-v40/` is the next and only
-active asset gate. It redraws Off, On and Broken together, clears the complete
-old oven and hob before compositing, and fills exact room bounds
-x=336–420/y=123–218. Off is dark; On has turned dials, a red indicator, amber
-interior and roasting tin; Broken retains an askew attached door and has one
-rotary dial hanging from its empty fascia socket by two wires. Billowing cavity
-smoke, two burner-anchored hob flames, and irregular angry red warning bursts
-with rare internal-light flickers are separate 40-frame/4-fps ten-second
-effect-only strips. Its record is
-[`docs/KITCHEN_OVEN_STATES_V40_2026-10-18.md`](docs/KITCHEN_OVEN_STATES_V40_2026-10-18.md).
-No later kitchen asset proceeds until V40 is visually reviewed.
+Kitchen V40 is rejected for incorrect proportions/height and bubble-like
+smoke. Kitchen V41 at `/keeper-review/kitchen-oven-states-v41/` is the next and
+only active asset gate. It redraws Off, On and Broken together around the exact
+initially approved V21 measurement: `108 × 120` cell, `84 × 77` opaque
+footprint and native room bounds x=336–420/y=131–208. The approved hob and
+sea-glass surround are copied byte-for-byte into every state, while the new
+lower fascia is colour-restricted to a V21-derived palette. Broken retains the
+askew attached door and two-wire hanging dial. Connected curling smoke,
+burner-anchored flames and intermittent warning/cavity flicker remain separate
+40-frame/4-fps ten-second effect-only strips. Its record is
+[`docs/KITCHEN_OVEN_STATES_V41_2026-10-18.md`](docs/KITCHEN_OVEN_STATES_V41_2026-10-18.md).
+No later kitchen asset proceeds until V41 is visually reviewed.
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
@@ -482,8 +483,8 @@ confirmation, V26 is its derived game-scale Prime context, V27 is rejected
 provenance, V28 supplies the approved static bin pixels, V29 supplies the
 effect colour/timing basis, V30 is rejected as too object-shaped for a young
 player, and V31 is the approved comic-readability authority. None is promoted
-or wired. V32–V38 are rejected immutable provenance; V39 is the approved
-fridge authority; V40 is the sole active oven gate and awaits review.
+or wired. V32–V38 and V40 are rejected immutable provenance; V39 is the
+approved fridge authority; V41 is the sole active oven gate and awaits review.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

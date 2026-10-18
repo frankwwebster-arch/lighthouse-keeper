@@ -288,6 +288,11 @@ export default {
         destination: '/keeper-review/kitchen-oven-states-v40/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-oven-states-v41',
+        destination: '/keeper-review/kitchen-oven-states-v41/index.html',
+        permanent: false,
+      },
     ]
   },
 }

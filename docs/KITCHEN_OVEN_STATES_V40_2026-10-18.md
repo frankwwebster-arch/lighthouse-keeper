@@ -1,12 +1,19 @@
 # Kitchen V40 from-scratch oven states
 
 Date: 18 October 2026
-Status: awaiting Frank's visual review; unpromoted/unwired
+Status: rejected by Frank; immutable unpromoted/unwired provenance
 Review: `/keeper-review/kitchen-oven-states-v40/`
 
 Frank approved exact Fridge V39 and released the oven as the next single-asset
-gate. V40 replaces rejected V35 as the only active oven candidate. It does not
-repair, composite over or reuse V35 oven pixels.
+gate. V40 historically replaced rejected V35, but is now itself rejected. It
+does not repair, composite over or reuse V35 oven pixels.
+
+> Rejection update, 18 October 2026: Frank rejected V40 because the oven was
+> too high and insufficiently wide in proportion, while its smoke rose as
+> bubbles. The successor must use the initially approved oven's exact measured
+> size and colours and must retain the hob. V41 is the active correction. V40
+> remains unchanged as provenance; see
+> `docs/review/kitchen-oven-states-v40-rejection-2026-10-18.json`.
 
 Off, On and Broken were drawn together from the same new construction in the
 approved storm-blue, sea-glass and copper kitchen language. Each state fills
@@ -35,9 +42,10 @@ exact `772 × 224` game scale. Named sound placeholders are:
 
 ## Boundaries
 
-V40 is a reversible review draft only. It changes no Final art, runtime wiring,
-approved V39 fridge pixels or rejected V35 provenance. Kettle, toaster, bowl,
-basin and table work remains blocked until the oven has been visually reviewed.
+V40 is rejected provenance only. It changes no Final art, runtime wiring,
+approved V39 fridge pixels or rejected V35 provenance. V41 is the active oven
+gate; kettle, toaster, bowl, basin and table work remains blocked until V41 has
+been visually reviewed.
 
 ## Verification
 

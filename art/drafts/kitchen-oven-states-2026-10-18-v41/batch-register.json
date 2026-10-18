@@ -1,0 +1,26 @@
+{
+  "version": 41,
+  "status": "awaiting-oven-visual-review",
+  "supersedesRejectedDraft": 40,
+  "preservesApprovedFridge": 39,
+  "measurementAuthoritySha256": "45658c2649d10efc896d646821b16e12d3a19fc401d04168e00ace3a6f016ba8",
+  "originalHashes": {
+    "v39Room": "2778c5712deb7a11ddf4fbefdb6ae23cb825772af0db6d2db192a57ee59c7e85",
+    "v21Oven": "45658c2649d10efc896d646821b16e12d3a19fc401d04168e00ace3a6f016ba8"
+  },
+  "draftHashes": {
+    "oven-v21-approved-reference.png": "45658c2649d10efc896d646821b16e12d3a19fc401d04168e00ace3a6f016ba8",
+    "oven-off.png": "30875e370129bdc7bfb4942c6ff6d9393a6942288673a92f46c9417f9ae060b9",
+    "oven-on.png": "6fa568a4bed6ab3830fec307b9b9ce841008a296e8de63e42aacd32c7630ec54",
+    "oven-broken.png": "a2762b5cdcde1695b9f275da8d2ea202b87ddc9c444f7ae49beb72ed7d5d65b5",
+    "kitchen-oven-cleared-bay.png": "c1f0c6e463680a8013091d931b0f7153538ba2138eeb27642526b9d69a05987d",
+    "kitchen-oven-off-in-situ.png": "b872a3d82d0998bc923ccf6c1a62fda304ecc4d35e5fe71e3098f486feadad75",
+    "kitchen-oven-on-in-situ.png": "e3a03b0d3f91046df109900c8ce6aaa5603c4c284a932f2108199f754a7e903f",
+    "kitchen-oven-broken-in-situ.png": "be158d596b8d681ce3fdec43b7163d5d8111fe0e2b6cc6bb2c008f05d2909a2d",
+    "fx-oven-flowing-smoke-f40.png": "b8d045c5787461214aca52981c62a91b73a3d1bfcc058a0ab76cb723c256350b",
+    "fx-oven-hob-flames-f40.png": "d738171400167479de55676b2e0973dad0cabe9a16fc8c41baeb924188a7afb9",
+    "fx-oven-warning-light-flicker-f40.png": "de82a89a254839cc3a345be81ea7f01813c3e3c7ae2a742127da08f259e8c077"
+  },
+  "nextAssetBlockedUntilApproval": "kettle-or-user-selected-next-asset",
+  "rollback": "Delete only V41 source/raw/draft/review/archive/builder/verifier/docs files; approved V39 and rejected V40 remain immutable."
+}
