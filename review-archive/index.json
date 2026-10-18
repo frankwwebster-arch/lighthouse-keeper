@@ -11,12 +11,12 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 114,
-    "referenceCount": 2394,
-    "uniqueObjectCount": 1584,
-    "logicalBytes": 205064172,
-    "uniqueBytes": 109821201,
-    "deduplicatedBytes": 95242971
+    "setCount": 115,
+    "referenceCount": 2502,
+    "uniqueObjectCount": 874,
+    "logicalBytes": 207733778,
+    "uniqueBytes": 98852436,
+    "deduplicatedBytes": 108881342
   },
   "legacyPaths": {
     "/keeper-review/drafts/00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271.png": {
@@ -16776,6 +16776,762 @@
       "bytes": 45975,
       "object": "review-archive/objects/80/805fbbe37833bcc30b9e464af31c2f51d693c59f081b72d82a53eeaa6f6f883c.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/80/805fbbe37833bcc30b9e464af31c2f51d693c59f081b72d82a53eeaa6f6f883c.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/acquire-actor-0719d2c52c1b4899.png": {
+      "sha256": "0719d2c52c1b4899d00f62b1b3363646e793eb0855ea196e6bdfa53ed6b4158c",
+      "extension": ".png",
+      "bytes": 61278,
+      "object": "review-archive/objects/07/0719d2c52c1b4899d00f62b1b3363646e793eb0855ea196e6bdfa53ed6b4158c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/07/0719d2c52c1b4899d00f62b1b3363646e793eb0855ea196e6bdfa53ed6b4158c.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/acquire-badge-mask-a03f10184bbff8c7.png": {
+      "sha256": "a03f10184bbff8c763f1009b0538691a3e846006f235a57d675a7bb599fdca42",
+      "extension": ".png",
+      "bytes": 1719,
+      "object": "review-archive/objects/a0/a03f10184bbff8c763f1009b0538691a3e846006f235a57d675a7bb599fdca42.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a0/a03f10184bbff8c763f1009b0538691a3e846006f235a57d675a7bb599fdca42.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/acquire-beard-mask-323a7cc029ada3ef.png": {
+      "sha256": "323a7cc029ada3efb99bc7e7ab5b43a6d12b20d5ca897d55b08334a229de0dc7",
+      "extension": ".png",
+      "bytes": 1758,
+      "object": "review-archive/objects/32/323a7cc029ada3efb99bc7e7ab5b43a6d12b20d5ca897d55b08334a229de0dc7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/32/323a7cc029ada3efb99bc7e7ab5b43a6d12b20d5ca897d55b08334a229de0dc7.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/acquire-boots-mask-a513954d713af613.png": {
+      "sha256": "a513954d713af613535976aaabdd8aa0f062cb1ef4fb0fee3146a7b4de046941",
+      "extension": ".png",
+      "bytes": 2174,
+      "object": "review-archive/objects/a5/a513954d713af613535976aaabdd8aa0f062cb1ef4fb0fee3146a7b4de046941.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a5/a513954d713af613535976aaabdd8aa0f062cb1ef4fb0fee3146a7b4de046941.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/acquire-capBandBrim-mask-9b51cf3907a3244c.png": {
+      "sha256": "9b51cf3907a3244ceccc09d5fb345254ceaa5dbcee1a7f740f70999d165186b7",
+      "extension": ".png",
+      "bytes": 2080,
+      "object": "review-archive/objects/9b/9b51cf3907a3244ceccc09d5fb345254ceaa5dbcee1a7f740f70999d165186b7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9b/9b51cf3907a3244ceccc09d5fb345254ceaa5dbcee1a7f740f70999d165186b7.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/acquire-capCrown-mask-a135e4d302ba5985.png": {
+      "sha256": "a135e4d302ba5985f72f1a601bfbdb7c971898138a1cebc0947b4bbf915f00a4",
+      "extension": ".png",
+      "bytes": 1573,
+      "object": "review-archive/objects/a1/a135e4d302ba5985f72f1a601bfbdb7c971898138a1cebc0947b4bbf915f00a4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a1/a135e4d302ba5985f72f1a601bfbdb7c971898138a1cebc0947b4bbf915f00a4.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/acquire-composite-74c180cd8b57fe7b.png": {
+      "sha256": "74c180cd8b57fe7bedfafa86fe8d5f7dc6a9bc113ecf1c17384ae64856275dad",
+      "extension": ".png",
+      "bytes": 63270,
+      "object": "review-archive/objects/74/74c180cd8b57fe7bedfafa86fe8d5f7dc6a9bc113ecf1c17384ae64856275dad.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/74/74c180cd8b57fe7bedfafa86fe8d5f7dc6a9bc113ecf1c17384ae64856275dad.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/acquire-creamBand-mask-f74823a106149752.png": {
+      "sha256": "f74823a10614975237b2a5fa30fddd220a8c441069025c64fe4a5bc51226c6e9",
+      "extension": ".png",
+      "bytes": 1810,
+      "object": "review-archive/objects/f7/f74823a10614975237b2a5fa30fddd220a8c441069025c64fe4a5bc51226c6e9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f7/f74823a10614975237b2a5fa30fddd220a8c441069025c64fe4a5bc51226c6e9.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/acquire-hair-mask-8fd3f3c53e7722dc.png": {
+      "sha256": "8fd3f3c53e7722dcf4bbca91f6c783847b27406d78cbfdbe257626db6daccf9b",
+      "extension": ".png",
+      "bytes": 1732,
+      "object": "review-archive/objects/8f/8fd3f3c53e7722dcf4bbca91f6c783847b27406d78cbfdbe257626db6daccf9b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8f/8fd3f3c53e7722dcf4bbca91f6c783847b27406d78cbfdbe257626db6daccf9b.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/acquire-jumperBlue-mask-9094630004e2db41.png": {
+      "sha256": "9094630004e2db4132203925566bbbdb790e942a044a2403bcc2a1cf87977ed5",
+      "extension": ".png",
+      "bytes": 2041,
+      "object": "review-archive/objects/90/9094630004e2db4132203925566bbbdb790e942a044a2403bcc2a1cf87977ed5.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/90/9094630004e2db4132203925566bbbdb790e942a044a2403bcc2a1cf87977ed5.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/acquire-outline-mask-d020c227bddb75e7.png": {
+      "sha256": "d020c227bddb75e7195e9702fbac73ea16055eb274ff0dae08c58e07f65362f8",
+      "extension": ".png",
+      "bytes": 5674,
+      "object": "review-archive/objects/d0/d020c227bddb75e7195e9702fbac73ea16055eb274ff0dae08c58e07f65362f8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d0/d020c227bddb75e7195e9702fbac73ea16055eb274ff0dae08c58e07f65362f8.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/acquire-prop-c0d1a099304719f5.png": {
+      "sha256": "c0d1a099304719f50ce64238c66db95db7f5ccc6a85bd6f7e821c8508d2b0b86",
+      "extension": ".png",
+      "bytes": 3082,
+      "object": "review-archive/objects/c0/c0d1a099304719f50ce64238c66db95db7f5ccc6a85bd6f7e821c8508d2b0b86.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c0/c0d1a099304719f50ce64238c66db95db7f5ccc6a85bd6f7e821c8508d2b0b86.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/acquire-skin-mask-075ed147e19635ee.png": {
+      "sha256": "075ed147e19635ee8b6ed0a35d27ef41f44192b148b9299d39cd46b284a478b2",
+      "extension": ".png",
+      "bytes": 2425,
+      "object": "review-archive/objects/07/075ed147e19635ee8b6ed0a35d27ef41f44192b148b9299d39cd46b284a478b2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/07/075ed147e19635ee8b6ed0a35d27ef41f44192b148b9299d39cd46b284a478b2.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/acquire-trousers-mask-68f436eeb4cb157b.png": {
+      "sha256": "68f436eeb4cb157be6aa9ec9098008b74f0c7b506a6307b2bfcf6ea42bab19c7",
+      "extension": ".png",
+      "bytes": 2304,
+      "object": "review-archive/objects/68/68f436eeb4cb157be6aa9ec9098008b74f0c7b506a6307b2bfcf6ea42bab19c7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/68/68f436eeb4cb157be6aa9ec9098008b74f0c7b506a6307b2bfcf6ea42bab19c7.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-bridge-f2-e54546ba14b4e5f7.png": {
+      "sha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "extension": ".png",
+      "bytes": 58782,
+      "object": "review-archive/objects/e5/e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e5/e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-bridge-f3-0169b3642905389d.png": {
+      "sha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "extension": ".png",
+      "bytes": 62325,
+      "object": "review-archive/objects/01/0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/01/0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-bridge-f4-9f4192beb8fecbc8.png": {
+      "sha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "extension": ".png",
+      "bytes": 69094,
+      "object": "review-archive/objects/9f/9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9f/9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-core-turn-v9-f01-c097d78aac2d2c52.png": {
+      "sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+      "extension": ".png",
+      "bytes": 48224,
+      "object": "review-archive/objects/c0/c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c0/c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-core-turn-v9-f02-e1dc020aabfe8f3b.png": {
+      "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "extension": ".png",
+      "bytes": 49734,
+      "object": "review-archive/objects/e1/e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e1/e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-core-turn-v9-f03-34028d8821a7272a.png": {
+      "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "extension": ".png",
+      "bytes": 51798,
+      "object": "review-archive/objects/34/34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/34/34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-core-turn-v9-f04-0d278363a0e7e4f1.png": {
+      "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "extension": ".png",
+      "bytes": 51552,
+      "object": "review-archive/objects/0d/0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0d/0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-core-turn-v9-f05-f827ac61f45aaaa4.png": {
+      "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "extension": ".png",
+      "bytes": 51282,
+      "object": "review-archive/objects/f8/f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f8/f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-core-turn-v9-f06-fe06522abd0cd55c.png": {
+      "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "extension": ".png",
+      "bytes": 53724,
+      "object": "review-archive/objects/fe/fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fe/fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-core-turn-v9-f07-d55afae023051e29.png": {
+      "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+      "extension": ".png",
+      "bytes": 58256,
+      "object": "review-archive/objects/d5/d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d5/d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-core-turn-v9-f08-bb530610cf0e17bf.png": {
+      "sha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+      "extension": ".png",
+      "bytes": 55252,
+      "object": "review-archive/objects/bb/bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bb/bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-core-turn-v9-f09-31dbac4efc00089f.png": {
+      "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "extension": ".png",
+      "bytes": 60289,
+      "object": "review-archive/objects/31/31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/31/31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-walk-f1-0e80ea65610452c9.png": {
+      "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "extension": ".png",
+      "bytes": 71119,
+      "object": "review-archive/objects/0e/0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-walk-f2-2b8e91de747b527d.png": {
+      "sha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "extension": ".png",
+      "bytes": 59701,
+      "object": "review-archive/objects/2b/2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-walk-f3-b376254e9c29da38.png": {
+      "sha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "extension": ".png",
+      "bytes": 53964,
+      "object": "review-archive/objects/b3/b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-walk-f4-982646b0b0e6f3f9.png": {
+      "sha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "extension": ".png",
+      "bytes": 67058,
+      "object": "review-archive/objects/98/982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-walk-f5-545e7338151e6e5a.png": {
+      "sha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "extension": ".png",
+      "bytes": 66608,
+      "object": "review-archive/objects/54/545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/54/545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-walk-f6-17d007eee75c2e86.png": {
+      "sha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "extension": ".png",
+      "bytes": 62308,
+      "object": "review-archive/objects/17/17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-walk-f7-dbf5b3849624cec7.png": {
+      "sha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "extension": ".png",
+      "bytes": 59624,
+      "object": "review-archive/objects/db/dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/approved-walk-f8-cf8c53e7ffa703a5.png": {
+      "sha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "extension": ".png",
+      "bytes": 62773,
+      "object": "review-archive/objects/cf/cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/contact-sheet-60c2f31bb7db4fa1.png": {
+      "sha256": "60c2f31bb7db4fa1c7dc500cd8120b1cc353155ea62479250720c820ab9bdc7d",
+      "extension": ".png",
+      "bytes": 372439,
+      "object": "review-archive/objects/60/60c2f31bb7db4fa1c7dc500cd8120b1cc353155ea62479250720c820ab9bdc7d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/60/60c2f31bb7db4fa1c7dc500cd8120b1cc353155ea62479250720c820ab9bdc7d.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/empty-prop-f9878b0c741705ce.png": {
+      "sha256": "f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6",
+      "extension": ".png",
+      "bytes": 557,
+      "object": "review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/exact-prime-side-right-a172a8a01a387a21.png": {
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "extension": ".png",
+      "bytes": 47873,
+      "object": "review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/historical-choreography-only-eb3783d5783c7e5a.png": {
+      "sha256": "eb3783d5783c7e5ab8afc0701ecfa4b8c4e483dbdc0edd571b6c4fdd457d35b1",
+      "extension": ".png",
+      "bytes": 175343,
+      "object": "review-archive/objects/eb/eb3783d5783c7e5ab8afc0701ecfa4b8c4e483dbdc0edd571b6c4fdd457d35b1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/eb/eb3783d5783c7e5ab8afc0701ecfa4b8c4e483dbdc0edd571b6c4fdd457d35b1.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/neutral-actor-3df7882782cac298.png": {
+      "sha256": "3df7882782cac298023d41cdf2b70ba503fe6a7d63a33a17234bfc890fa49e65",
+      "extension": ".png",
+      "bytes": 51983,
+      "object": "review-archive/objects/3d/3df7882782cac298023d41cdf2b70ba503fe6a7d63a33a17234bfc890fa49e65.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3d/3df7882782cac298023d41cdf2b70ba503fe6a7d63a33a17234bfc890fa49e65.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/neutral-badge-mask-0a2d08be84235c43.png": {
+      "sha256": "0a2d08be84235c431791cba29658108c5295c5884bdbd0df96029eafc177043e",
+      "extension": ".png",
+      "bytes": 1705,
+      "object": "review-archive/objects/0a/0a2d08be84235c431791cba29658108c5295c5884bdbd0df96029eafc177043e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0a/0a2d08be84235c431791cba29658108c5295c5884bdbd0df96029eafc177043e.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/neutral-beard-mask-caf35a865443eb4c.png": {
+      "sha256": "caf35a865443eb4c512aecaf246b6c82ad52540f4d6cb87001982befe449f2a7",
+      "extension": ".png",
+      "bytes": 1762,
+      "object": "review-archive/objects/ca/caf35a865443eb4c512aecaf246b6c82ad52540f4d6cb87001982befe449f2a7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ca/caf35a865443eb4c512aecaf246b6c82ad52540f4d6cb87001982befe449f2a7.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/neutral-boots-mask-a74b7b3bbd35cbd6.png": {
+      "sha256": "a74b7b3bbd35cbd6baad6b5bb8b97ae1aed0e9ac364e340f4a227cc9227a6ae1",
+      "extension": ".png",
+      "bytes": 1558,
+      "object": "review-archive/objects/a7/a74b7b3bbd35cbd6baad6b5bb8b97ae1aed0e9ac364e340f4a227cc9227a6ae1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a7/a74b7b3bbd35cbd6baad6b5bb8b97ae1aed0e9ac364e340f4a227cc9227a6ae1.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/neutral-capBandBrim-mask-e2f02d3d17a11f15.png": {
+      "sha256": "e2f02d3d17a11f15a89cd7941399ce3d5ac1403b54a29edcbb8e5b044d0f6165",
+      "extension": ".png",
+      "bytes": 2151,
+      "object": "review-archive/objects/e2/e2f02d3d17a11f15a89cd7941399ce3d5ac1403b54a29edcbb8e5b044d0f6165.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e2/e2f02d3d17a11f15a89cd7941399ce3d5ac1403b54a29edcbb8e5b044d0f6165.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/neutral-capCrown-mask-80bbfec3b9006089.png": {
+      "sha256": "80bbfec3b9006089a5ae8ef0c79f8f4e6a1cfc2185be1762aeb8801aba05cf93",
+      "extension": ".png",
+      "bytes": 1568,
+      "object": "review-archive/objects/80/80bbfec3b9006089a5ae8ef0c79f8f4e6a1cfc2185be1762aeb8801aba05cf93.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/80/80bbfec3b9006089a5ae8ef0c79f8f4e6a1cfc2185be1762aeb8801aba05cf93.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/neutral-composite-365949f320390bf2.png": {
+      "sha256": "365949f320390bf25a789eca23f2276f4004e26d32a2daec701cfa2978b20694",
+      "extension": ".png",
+      "bytes": 61306,
+      "object": "review-archive/objects/36/365949f320390bf25a789eca23f2276f4004e26d32a2daec701cfa2978b20694.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/36/365949f320390bf25a789eca23f2276f4004e26d32a2daec701cfa2978b20694.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/neutral-creamBand-mask-89d80546f0e34ec8.png": {
+      "sha256": "89d80546f0e34ec8071c8f47ee7b2ee048b24c5d36f5221279921638b38c998b",
+      "extension": ".png",
+      "bytes": 1658,
+      "object": "review-archive/objects/89/89d80546f0e34ec8071c8f47ee7b2ee048b24c5d36f5221279921638b38c998b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/89/89d80546f0e34ec8071c8f47ee7b2ee048b24c5d36f5221279921638b38c998b.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/neutral-hair-mask-7612c46c6c651ff9.png": {
+      "sha256": "7612c46c6c651ff94046f08a338c48b2243b00abe00abe202497dd9efc2ae2d1",
+      "extension": ".png",
+      "bytes": 1548,
+      "object": "review-archive/objects/76/7612c46c6c651ff94046f08a338c48b2243b00abe00abe202497dd9efc2ae2d1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/76/7612c46c6c651ff94046f08a338c48b2243b00abe00abe202497dd9efc2ae2d1.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/neutral-jumperBlue-mask-a14cff4724c86045.png": {
+      "sha256": "a14cff4724c86045d3c7d1e5a055906de814aa54f9f1a2083048a1b6bcbc4ed6",
+      "extension": ".png",
+      "bytes": 2082,
+      "object": "review-archive/objects/a1/a14cff4724c86045d3c7d1e5a055906de814aa54f9f1a2083048a1b6bcbc4ed6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a1/a14cff4724c86045d3c7d1e5a055906de814aa54f9f1a2083048a1b6bcbc4ed6.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/neutral-outline-mask-00834eb30a45f3e8.png": {
+      "sha256": "00834eb30a45f3e83600dc57eadbc1cf4c700ba0f7391af7422115fe9d1ea74f",
+      "extension": ".png",
+      "bytes": 4373,
+      "object": "review-archive/objects/00/00834eb30a45f3e83600dc57eadbc1cf4c700ba0f7391af7422115fe9d1ea74f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/00/00834eb30a45f3e83600dc57eadbc1cf4c700ba0f7391af7422115fe9d1ea74f.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/neutral-prop-d6cd51b3d18c65ad.png": {
+      "sha256": "d6cd51b3d18c65adb70bdf1e6349be7db62ebe6de370c94db10d78f923604e6c",
+      "extension": ".png",
+      "bytes": 10701,
+      "object": "review-archive/objects/d6/d6cd51b3d18c65adb70bdf1e6349be7db62ebe6de370c94db10d78f923604e6c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d6/d6cd51b3d18c65adb70bdf1e6349be7db62ebe6de370c94db10d78f923604e6c.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/neutral-skin-mask-2af52c0041a0430e.png": {
+      "sha256": "2af52c0041a0430ea95dd7f253d75dbd7504be57c8add564807d32aa205d7574",
+      "extension": ".png",
+      "bytes": 2131,
+      "object": "review-archive/objects/2a/2af52c0041a0430ea95dd7f253d75dbd7504be57c8add564807d32aa205d7574.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2a/2af52c0041a0430ea95dd7f253d75dbd7504be57c8add564807d32aa205d7574.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/neutral-trousers-mask-2ca806b2b37e24b6.png": {
+      "sha256": "2ca806b2b37e24b61ab6879b1691dfe81ff07d1d834bfafec7d115e4e54bbf47",
+      "extension": ".png",
+      "bytes": 1768,
+      "object": "review-archive/objects/2c/2ca806b2b37e24b61ab6879b1691dfe81ff07d1d834bfafec7d115e4e54bbf47.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2c/2ca806b2b37e24b61ab6879b1691dfe81ff07d1d834bfafec7d115e4e54bbf47.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase1-actor-3dbc2adfa0130e0a.png": {
+      "sha256": "3dbc2adfa0130e0a7fcdff3092ac899ce66a981f6809e4559c7add9f70681ab8",
+      "extension": ".png",
+      "bytes": 54414,
+      "object": "review-archive/objects/3d/3dbc2adfa0130e0a7fcdff3092ac899ce66a981f6809e4559c7add9f70681ab8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3d/3dbc2adfa0130e0a7fcdff3092ac899ce66a981f6809e4559c7add9f70681ab8.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase1-badge-mask-e935a961ed588eb8.png": {
+      "sha256": "e935a961ed588eb874449d3e9c9a2dce1e483bca2669e2b53fc772403b0c70d7",
+      "extension": ".png",
+      "bytes": 1702,
+      "object": "review-archive/objects/e9/e935a961ed588eb874449d3e9c9a2dce1e483bca2669e2b53fc772403b0c70d7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e9/e935a961ed588eb874449d3e9c9a2dce1e483bca2669e2b53fc772403b0c70d7.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase1-beard-mask-4a80fbb60f230d91.png": {
+      "sha256": "4a80fbb60f230d9178f49d7199ee082753968533b6c688cbf449c7296f4b0440",
+      "extension": ".png",
+      "bytes": 1998,
+      "object": "review-archive/objects/4a/4a80fbb60f230d9178f49d7199ee082753968533b6c688cbf449c7296f4b0440.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4a/4a80fbb60f230d9178f49d7199ee082753968533b6c688cbf449c7296f4b0440.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase1-boots-mask-ae71227668d7c12e.png": {
+      "sha256": "ae71227668d7c12e05bc018552a5458479908ebadb88722b8187d42d36b686fd",
+      "extension": ".png",
+      "bytes": 1856,
+      "object": "review-archive/objects/ae/ae71227668d7c12e05bc018552a5458479908ebadb88722b8187d42d36b686fd.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ae/ae71227668d7c12e05bc018552a5458479908ebadb88722b8187d42d36b686fd.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase1-capBandBrim-mask-890ea1970b39674b.png": {
+      "sha256": "890ea1970b39674b4c20dc2e35f02b1943209c45ff16a341ded1b2c36871dcee",
+      "extension": ".png",
+      "bytes": 2192,
+      "object": "review-archive/objects/89/890ea1970b39674b4c20dc2e35f02b1943209c45ff16a341ded1b2c36871dcee.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/89/890ea1970b39674b4c20dc2e35f02b1943209c45ff16a341ded1b2c36871dcee.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase1-capCrown-mask-92bc21961333e724.png": {
+      "sha256": "92bc21961333e7249c41bd8ce8e5739a8c672f604d882ffadaeeebaf1aa17d4c",
+      "extension": ".png",
+      "bytes": 1662,
+      "object": "review-archive/objects/92/92bc21961333e7249c41bd8ce8e5739a8c672f604d882ffadaeeebaf1aa17d4c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/92/92bc21961333e7249c41bd8ce8e5739a8c672f604d882ffadaeeebaf1aa17d4c.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase1-composite-d555024d8c29e506.png": {
+      "sha256": "d555024d8c29e506e6c9277feef524f156ab267f73d0d9d668f86da20e2de703",
+      "extension": ".png",
+      "bytes": 63949,
+      "object": "review-archive/objects/d5/d555024d8c29e506e6c9277feef524f156ab267f73d0d9d668f86da20e2de703.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d5/d555024d8c29e506e6c9277feef524f156ab267f73d0d9d668f86da20e2de703.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase1-creamBand-mask-b6fe113bdc25cc45.png": {
+      "sha256": "b6fe113bdc25cc45844323069a11bdcb214be513403b1bba3a44fd4bc3b96e65",
+      "extension": ".png",
+      "bytes": 1873,
+      "object": "review-archive/objects/b6/b6fe113bdc25cc45844323069a11bdcb214be513403b1bba3a44fd4bc3b96e65.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b6/b6fe113bdc25cc45844323069a11bdcb214be513403b1bba3a44fd4bc3b96e65.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase1-hair-mask-aebef1a0fb77e719.png": {
+      "sha256": "aebef1a0fb77e719a082d02c2af68255c4d92ed69236772e785724b97dd4862c",
+      "extension": ".png",
+      "bytes": 1442,
+      "object": "review-archive/objects/ae/aebef1a0fb77e719a082d02c2af68255c4d92ed69236772e785724b97dd4862c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ae/aebef1a0fb77e719a082d02c2af68255c4d92ed69236772e785724b97dd4862c.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase1-jumperBlue-mask-65154dc4da235a84.png": {
+      "sha256": "65154dc4da235a84b8e960bf462d565b3adf0c0b88b7ec5f5efb14dc314963f0",
+      "extension": ".png",
+      "bytes": 1989,
+      "object": "review-archive/objects/65/65154dc4da235a84b8e960bf462d565b3adf0c0b88b7ec5f5efb14dc314963f0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/65/65154dc4da235a84b8e960bf462d565b3adf0c0b88b7ec5f5efb14dc314963f0.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase1-outline-mask-4ac68c99ad43034e.png": {
+      "sha256": "4ac68c99ad43034e05aee7b3d583de9cfd6d501eded9635c357c3dbccf5da9a3",
+      "extension": ".png",
+      "bytes": 4700,
+      "object": "review-archive/objects/4a/4ac68c99ad43034e05aee7b3d583de9cfd6d501eded9635c357c3dbccf5da9a3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4a/4ac68c99ad43034e05aee7b3d583de9cfd6d501eded9635c357c3dbccf5da9a3.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase1-prop-e295ef2f4aace2ac.png": {
+      "sha256": "e295ef2f4aace2ac4fe27537cffdc61fba5e4c39ecab4fdf7c990e9dab74a6d3",
+      "extension": ".png",
+      "bytes": 11083,
+      "object": "review-archive/objects/e2/e295ef2f4aace2ac4fe27537cffdc61fba5e4c39ecab4fdf7c990e9dab74a6d3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e2/e295ef2f4aace2ac4fe27537cffdc61fba5e4c39ecab4fdf7c990e9dab74a6d3.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase1-skin-mask-697a036f70187896.png": {
+      "sha256": "697a036f7018789685973029a53e6c26ba6fb1f1a46f1ed6def8f9a2bdbbb548",
+      "extension": ".png",
+      "bytes": 2422,
+      "object": "review-archive/objects/69/697a036f7018789685973029a53e6c26ba6fb1f1a46f1ed6def8f9a2bdbbb548.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/69/697a036f7018789685973029a53e6c26ba6fb1f1a46f1ed6def8f9a2bdbbb548.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase1-trousers-mask-596d8b9acadbe1ad.png": {
+      "sha256": "596d8b9acadbe1ade11a4da8839fc74b004e56d3ecce8d1ea27e3e49199d2df3",
+      "extension": ".png",
+      "bytes": 2029,
+      "object": "review-archive/objects/59/596d8b9acadbe1ade11a4da8839fc74b004e56d3ecce8d1ea27e3e49199d2df3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/59/596d8b9acadbe1ade11a4da8839fc74b004e56d3ecce8d1ea27e3e49199d2df3.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase2-actor-5f669bfa3495eb9c.png": {
+      "sha256": "5f669bfa3495eb9cfe77b91ffe09053da10d4103d499467ebdca69c4765dbdd0",
+      "extension": ".png",
+      "bytes": 53384,
+      "object": "review-archive/objects/5f/5f669bfa3495eb9cfe77b91ffe09053da10d4103d499467ebdca69c4765dbdd0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5f/5f669bfa3495eb9cfe77b91ffe09053da10d4103d499467ebdca69c4765dbdd0.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase2-badge-mask-148cdbd21d7dc07e.png": {
+      "sha256": "148cdbd21d7dc07e88f03017689a816655f847930f3fe2c7f9a52b37192ee280",
+      "extension": ".png",
+      "bytes": 1663,
+      "object": "review-archive/objects/14/148cdbd21d7dc07e88f03017689a816655f847930f3fe2c7f9a52b37192ee280.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/14/148cdbd21d7dc07e88f03017689a816655f847930f3fe2c7f9a52b37192ee280.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase2-beard-mask-17b4615b40728810.png": {
+      "sha256": "17b4615b407288103b4b49ea95fcedd83be273a626ac8cd7fa5834ea173000d9",
+      "extension": ".png",
+      "bytes": 1884,
+      "object": "review-archive/objects/17/17b4615b407288103b4b49ea95fcedd83be273a626ac8cd7fa5834ea173000d9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/17b4615b407288103b4b49ea95fcedd83be273a626ac8cd7fa5834ea173000d9.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase2-boots-mask-44142b6f8312409f.png": {
+      "sha256": "44142b6f8312409f8a7bfcbc95fc7820482b36918c44996bd353fb8072cef411",
+      "extension": ".png",
+      "bytes": 2006,
+      "object": "review-archive/objects/44/44142b6f8312409f8a7bfcbc95fc7820482b36918c44996bd353fb8072cef411.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/44/44142b6f8312409f8a7bfcbc95fc7820482b36918c44996bd353fb8072cef411.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase2-capBandBrim-mask-02060f1b54c28fb8.png": {
+      "sha256": "02060f1b54c28fb8247f6ff59af8fa04ec3c6dc8e4e14c08e55f3d33943d91c2",
+      "extension": ".png",
+      "bytes": 2012,
+      "object": "review-archive/objects/02/02060f1b54c28fb8247f6ff59af8fa04ec3c6dc8e4e14c08e55f3d33943d91c2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/02/02060f1b54c28fb8247f6ff59af8fa04ec3c6dc8e4e14c08e55f3d33943d91c2.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase2-capCrown-mask-2c0b3973e8ebb500.png": {
+      "sha256": "2c0b3973e8ebb5000c89696cd1156d782846810c32c31ec2f72605c1d9f137a7",
+      "extension": ".png",
+      "bytes": 1634,
+      "object": "review-archive/objects/2c/2c0b3973e8ebb5000c89696cd1156d782846810c32c31ec2f72605c1d9f137a7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2c/2c0b3973e8ebb5000c89696cd1156d782846810c32c31ec2f72605c1d9f137a7.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase2-composite-1cfe76da85caf15f.png": {
+      "sha256": "1cfe76da85caf15f44ccf832e779c9515c57ef067013a98a62edb779e01d8d82",
+      "extension": ".png",
+      "bytes": 62428,
+      "object": "review-archive/objects/1c/1cfe76da85caf15f44ccf832e779c9515c57ef067013a98a62edb779e01d8d82.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1c/1cfe76da85caf15f44ccf832e779c9515c57ef067013a98a62edb779e01d8d82.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase2-creamBand-mask-0fc87ee6dde28177.png": {
+      "sha256": "0fc87ee6dde28177c781aee4067adc27b117ee799fcdecade75414bdc470aaab",
+      "extension": ".png",
+      "bytes": 1623,
+      "object": "review-archive/objects/0f/0fc87ee6dde28177c781aee4067adc27b117ee799fcdecade75414bdc470aaab.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0f/0fc87ee6dde28177c781aee4067adc27b117ee799fcdecade75414bdc470aaab.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase2-hair-mask-70c378b710bfeaaa.png": {
+      "sha256": "70c378b710bfeaaafbdf30e8b303f35e4cfb360fd54b9b06c432963e09222f4a",
+      "extension": ".png",
+      "bytes": 1280,
+      "object": "review-archive/objects/70/70c378b710bfeaaafbdf30e8b303f35e4cfb360fd54b9b06c432963e09222f4a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/70/70c378b710bfeaaafbdf30e8b303f35e4cfb360fd54b9b06c432963e09222f4a.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase2-jumperBlue-mask-69ccfd33e6d1a115.png": {
+      "sha256": "69ccfd33e6d1a1157fc7962c2b639ddadf874a0b8f5bda664a25177f2caa710f",
+      "extension": ".png",
+      "bytes": 1944,
+      "object": "review-archive/objects/69/69ccfd33e6d1a1157fc7962c2b639ddadf874a0b8f5bda664a25177f2caa710f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/69/69ccfd33e6d1a1157fc7962c2b639ddadf874a0b8f5bda664a25177f2caa710f.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase2-outline-mask-5feb2c3bcefa26e8.png": {
+      "sha256": "5feb2c3bcefa26e815e67f29bc8e97c175db4fb4fa1cc050788a332f622d6edb",
+      "extension": ".png",
+      "bytes": 4949,
+      "object": "review-archive/objects/5f/5feb2c3bcefa26e815e67f29bc8e97c175db4fb4fa1cc050788a332f622d6edb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5f/5feb2c3bcefa26e815e67f29bc8e97c175db4fb4fa1cc050788a332f622d6edb.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase2-prop-f7536834d7674d72.png": {
+      "sha256": "f7536834d7674d725bf521aded09a4824f3f68093ddb230236619d166dde8f06",
+      "extension": ".png",
+      "bytes": 10811,
+      "object": "review-archive/objects/f7/f7536834d7674d725bf521aded09a4824f3f68093ddb230236619d166dde8f06.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f7/f7536834d7674d725bf521aded09a4824f3f68093ddb230236619d166dde8f06.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase2-skin-mask-25217cfdfaf62807.png": {
+      "sha256": "25217cfdfaf628077eee21d1dd10b08c2344b930a2188d12a62da50ad0d92f9f",
+      "extension": ".png",
+      "bytes": 1966,
+      "object": "review-archive/objects/25/25217cfdfaf628077eee21d1dd10b08c2344b930a2188d12a62da50ad0d92f9f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/25/25217cfdfaf628077eee21d1dd10b08c2344b930a2188d12a62da50ad0d92f9f.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase2-trousers-mask-f7191941824df878.png": {
+      "sha256": "f7191941824df8784e892f993f457111267fae617bd638211595a064e966683a",
+      "extension": ".png",
+      "bytes": 2083,
+      "object": "review-archive/objects/f7/f7191941824df8784e892f993f457111267fae617bd638211595a064e966683a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f7/f7191941824df8784e892f993f457111267fae617bd638211595a064e966683a.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase3-actor-443e1f7ebf7f5117.png": {
+      "sha256": "443e1f7ebf7f5117766f0bc80dcff9dfa29b3728334637d1a8b8aca30bbc8731",
+      "extension": ".png",
+      "bytes": 54609,
+      "object": "review-archive/objects/44/443e1f7ebf7f5117766f0bc80dcff9dfa29b3728334637d1a8b8aca30bbc8731.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/44/443e1f7ebf7f5117766f0bc80dcff9dfa29b3728334637d1a8b8aca30bbc8731.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase3-badge-mask-230800feda0552e9.png": {
+      "sha256": "230800feda0552e91dc948356e4d803d6014405dd374fdc61e378fb0db640fbe",
+      "extension": ".png",
+      "bytes": 1678,
+      "object": "review-archive/objects/23/230800feda0552e91dc948356e4d803d6014405dd374fdc61e378fb0db640fbe.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/23/230800feda0552e91dc948356e4d803d6014405dd374fdc61e378fb0db640fbe.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase3-beard-mask-7a14e5db5e35b29b.png": {
+      "sha256": "7a14e5db5e35b29b0a1b658d40d51291a13e2177a877462ba7e9b7df3dc6de90",
+      "extension": ".png",
+      "bytes": 1944,
+      "object": "review-archive/objects/7a/7a14e5db5e35b29b0a1b658d40d51291a13e2177a877462ba7e9b7df3dc6de90.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7a/7a14e5db5e35b29b0a1b658d40d51291a13e2177a877462ba7e9b7df3dc6de90.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase3-boots-mask-9eb6c377e8b76efd.png": {
+      "sha256": "9eb6c377e8b76efd68d17df9142e4d7b2e0066ffd2ab0d7905d53978f49abb0c",
+      "extension": ".png",
+      "bytes": 1877,
+      "object": "review-archive/objects/9e/9eb6c377e8b76efd68d17df9142e4d7b2e0066ffd2ab0d7905d53978f49abb0c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9e/9eb6c377e8b76efd68d17df9142e4d7b2e0066ffd2ab0d7905d53978f49abb0c.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase3-capBandBrim-mask-f0f658c3391ece97.png": {
+      "sha256": "f0f658c3391ece9764491ef51e1e50837ab6dd01b2744f4a8620ad21eba2e0ac",
+      "extension": ".png",
+      "bytes": 1997,
+      "object": "review-archive/objects/f0/f0f658c3391ece9764491ef51e1e50837ab6dd01b2744f4a8620ad21eba2e0ac.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f0/f0f658c3391ece9764491ef51e1e50837ab6dd01b2744f4a8620ad21eba2e0ac.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase3-capCrown-mask-3de846dee500cf8b.png": {
+      "sha256": "3de846dee500cf8bc12915becb66998529436b50f15cab91a61c14edb256ea63",
+      "extension": ".png",
+      "bytes": 1615,
+      "object": "review-archive/objects/3d/3de846dee500cf8bc12915becb66998529436b50f15cab91a61c14edb256ea63.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3d/3de846dee500cf8bc12915becb66998529436b50f15cab91a61c14edb256ea63.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase3-composite-2640e8dd0c5ef271.png": {
+      "sha256": "2640e8dd0c5ef271d8b4d49d211937345e0ebeeb1276c8d51da1f946995021b2",
+      "extension": ".png",
+      "bytes": 62365,
+      "object": "review-archive/objects/26/2640e8dd0c5ef271d8b4d49d211937345e0ebeeb1276c8d51da1f946995021b2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/26/2640e8dd0c5ef271d8b4d49d211937345e0ebeeb1276c8d51da1f946995021b2.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase3-creamBand-mask-ea8b14253b27482b.png": {
+      "sha256": "ea8b14253b27482be2cb977d0c7424e29b992e2713ff65f846064eaa22274374",
+      "extension": ".png",
+      "bytes": 1788,
+      "object": "review-archive/objects/ea/ea8b14253b27482be2cb977d0c7424e29b992e2713ff65f846064eaa22274374.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ea/ea8b14253b27482be2cb977d0c7424e29b992e2713ff65f846064eaa22274374.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase3-hair-mask-ae7af8d66a60c861.png": {
+      "sha256": "ae7af8d66a60c861d72fe6c980de5af66c6219af694278908b178d51cd608ab7",
+      "extension": ".png",
+      "bytes": 1306,
+      "object": "review-archive/objects/ae/ae7af8d66a60c861d72fe6c980de5af66c6219af694278908b178d51cd608ab7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ae/ae7af8d66a60c861d72fe6c980de5af66c6219af694278908b178d51cd608ab7.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase3-jumperBlue-mask-f3f2b0bdb79f5c8e.png": {
+      "sha256": "f3f2b0bdb79f5c8e42a46d9cd8dce8fedd0a7e4fa0cde365b003ddcbf2d9b473",
+      "extension": ".png",
+      "bytes": 2023,
+      "object": "review-archive/objects/f3/f3f2b0bdb79f5c8e42a46d9cd8dce8fedd0a7e4fa0cde365b003ddcbf2d9b473.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f3/f3f2b0bdb79f5c8e42a46d9cd8dce8fedd0a7e4fa0cde365b003ddcbf2d9b473.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase3-outline-mask-ff3efb82e581d7be.png": {
+      "sha256": "ff3efb82e581d7be8309e9a9ed27476bc0ebf59651d42ed98bee375af59f85a7",
+      "extension": ".png",
+      "bytes": 4774,
+      "object": "review-archive/objects/ff/ff3efb82e581d7be8309e9a9ed27476bc0ebf59651d42ed98bee375af59f85a7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ff/ff3efb82e581d7be8309e9a9ed27476bc0ebf59651d42ed98bee375af59f85a7.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase3-prop-57a0c42d1536c8e8.png": {
+      "sha256": "57a0c42d1536c8e88ccf6383887dc98e13b736472c9b72180a3d6e91d5548d14",
+      "extension": ".png",
+      "bytes": 9227,
+      "object": "review-archive/objects/57/57a0c42d1536c8e88ccf6383887dc98e13b736472c9b72180a3d6e91d5548d14.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/57/57a0c42d1536c8e88ccf6383887dc98e13b736472c9b72180a3d6e91d5548d14.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase3-skin-mask-afa892ed3addc450.png": {
+      "sha256": "afa892ed3addc450004ea106a7223cea39e08da3051f27afe1c22b955d0c2406",
+      "extension": ".png",
+      "bytes": 2140,
+      "object": "review-archive/objects/af/afa892ed3addc450004ea106a7223cea39e08da3051f27afe1c22b955d0c2406.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/af/afa892ed3addc450004ea106a7223cea39e08da3051f27afe1c22b955d0c2406.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase3-trousers-mask-32c4466e303a51d1.png": {
+      "sha256": "32c4466e303a51d13154c810f45154992ec5ec27c75a3ac98192d0b206a77381",
+      "extension": ".png",
+      "bytes": 2065,
+      "object": "review-archive/objects/32/32c4466e303a51d13154c810f45154992ec5ec27c75a3ac98192d0b206a77381.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/32/32c4466e303a51d13154c810f45154992ec5ec27c75a3ac98192d0b206a77381.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase4-actor-ee809f95dd59daac.png": {
+      "sha256": "ee809f95dd59daac577712335a9f830d34a252ab21ed7b64a4dd811879a79b0e",
+      "extension": ".png",
+      "bytes": 52732,
+      "object": "review-archive/objects/ee/ee809f95dd59daac577712335a9f830d34a252ab21ed7b64a4dd811879a79b0e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ee/ee809f95dd59daac577712335a9f830d34a252ab21ed7b64a4dd811879a79b0e.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase4-badge-mask-01487869e7fd4b40.png": {
+      "sha256": "01487869e7fd4b40ee0a58d412fe0e2c14c6dae505f68b0356e091646f90dacb",
+      "extension": ".png",
+      "bytes": 1626,
+      "object": "review-archive/objects/01/01487869e7fd4b40ee0a58d412fe0e2c14c6dae505f68b0356e091646f90dacb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/01/01487869e7fd4b40ee0a58d412fe0e2c14c6dae505f68b0356e091646f90dacb.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase4-beard-mask-e35ee1dcc55d2cc8.png": {
+      "sha256": "e35ee1dcc55d2cc8324d04d451881df0861f502bf38f740efb20323a42b3801a",
+      "extension": ".png",
+      "bytes": 1977,
+      "object": "review-archive/objects/e3/e35ee1dcc55d2cc8324d04d451881df0861f502bf38f740efb20323a42b3801a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e3/e35ee1dcc55d2cc8324d04d451881df0861f502bf38f740efb20323a42b3801a.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase4-boots-mask-108732b5819c2833.png": {
+      "sha256": "108732b5819c2833b75d80337ac155da2559a3851bbeab3a694cff1e53b05ddb",
+      "extension": ".png",
+      "bytes": 1776,
+      "object": "review-archive/objects/10/108732b5819c2833b75d80337ac155da2559a3851bbeab3a694cff1e53b05ddb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/10/108732b5819c2833b75d80337ac155da2559a3851bbeab3a694cff1e53b05ddb.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase4-capBandBrim-mask-40427a0edaa71696.png": {
+      "sha256": "40427a0edaa716968797cc88223e689de2aecba3874ea7d873f8dbeb11142844",
+      "extension": ".png",
+      "bytes": 1852,
+      "object": "review-archive/objects/40/40427a0edaa716968797cc88223e689de2aecba3874ea7d873f8dbeb11142844.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/40/40427a0edaa716968797cc88223e689de2aecba3874ea7d873f8dbeb11142844.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase4-capCrown-mask-a0dda91cf094d25a.png": {
+      "sha256": "a0dda91cf094d25ab8b0bf1e2ac2b92101d0c97faaf19304929c799df10e3b9d",
+      "extension": ".png",
+      "bytes": 1520,
+      "object": "review-archive/objects/a0/a0dda91cf094d25ab8b0bf1e2ac2b92101d0c97faaf19304929c799df10e3b9d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a0/a0dda91cf094d25ab8b0bf1e2ac2b92101d0c97faaf19304929c799df10e3b9d.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase4-composite-41e618dcd805bed1.png": {
+      "sha256": "41e618dcd805bed1cc7dc4f6a3ad377d74cfe669f2fd247d4136f6712d32f760",
+      "extension": ".png",
+      "bytes": 61871,
+      "object": "review-archive/objects/41/41e618dcd805bed1cc7dc4f6a3ad377d74cfe669f2fd247d4136f6712d32f760.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/41/41e618dcd805bed1cc7dc4f6a3ad377d74cfe669f2fd247d4136f6712d32f760.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase4-creamBand-mask-35e154628c7211f9.png": {
+      "sha256": "35e154628c7211f96a3836b6c1f76118a11a59893856d260aa8c4c081942da11",
+      "extension": ".png",
+      "bytes": 1904,
+      "object": "review-archive/objects/35/35e154628c7211f96a3836b6c1f76118a11a59893856d260aa8c4c081942da11.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/35/35e154628c7211f96a3836b6c1f76118a11a59893856d260aa8c4c081942da11.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase4-hair-mask-e154ac9e0ed9c9d0.png": {
+      "sha256": "e154ac9e0ed9c9d0357227d78ff5d5bed9be72a41f28f962c63c4057e00e07fb",
+      "extension": ".png",
+      "bytes": 1294,
+      "object": "review-archive/objects/e1/e154ac9e0ed9c9d0357227d78ff5d5bed9be72a41f28f962c63c4057e00e07fb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e1/e154ac9e0ed9c9d0357227d78ff5d5bed9be72a41f28f962c63c4057e00e07fb.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase4-jumperBlue-mask-c435a9622b2d18df.png": {
+      "sha256": "c435a9622b2d18dfbe8586efa3e5873498adbddeb31a406d724e8a024593f17f",
+      "extension": ".png",
+      "bytes": 1997,
+      "object": "review-archive/objects/c4/c435a9622b2d18dfbe8586efa3e5873498adbddeb31a406d724e8a024593f17f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c4/c435a9622b2d18dfbe8586efa3e5873498adbddeb31a406d724e8a024593f17f.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase4-outline-mask-173a0fe8b7632e17.png": {
+      "sha256": "173a0fe8b7632e176b85177ce52078accbd1deca268ec2f6bb635314634cfe6b",
+      "extension": ".png",
+      "bytes": 4624,
+      "object": "review-archive/objects/17/173a0fe8b7632e176b85177ce52078accbd1deca268ec2f6bb635314634cfe6b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/173a0fe8b7632e176b85177ce52078accbd1deca268ec2f6bb635314634cfe6b.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase4-prop-4910f0e83e14b58d.png": {
+      "sha256": "4910f0e83e14b58db7b7f219e39d2be6c659c68ff2a805543b3ea0580ad281af",
+      "extension": ".png",
+      "bytes": 10736,
+      "object": "review-archive/objects/49/4910f0e83e14b58db7b7f219e39d2be6c659c68ff2a805543b3ea0580ad281af.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/49/4910f0e83e14b58db7b7f219e39d2be6c659c68ff2a805543b3ea0580ad281af.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase4-skin-mask-12f40e543afbbdee.png": {
+      "sha256": "12f40e543afbbdeef30cabb9a60da64fb8203c3c4ad9167c8fa0fcfe11182914",
+      "extension": ".png",
+      "bytes": 2375,
+      "object": "review-archive/objects/12/12f40e543afbbdeef30cabb9a60da64fb8203c3c4ad9167c8fa0fcfe11182914.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/12/12f40e543afbbdeef30cabb9a60da64fb8203c3c4ad9167c8fa0fcfe11182914.png"
+    },
+    "/keeper-review/keeper-prime-sweep-broom-v3/assets/phase4-trousers-mask-c123f5c9bb6e015c.png": {
+      "sha256": "c123f5c9bb6e015cc31722c9bcc7e8b9a4e596f2922809606f9bb47273e322a6",
+      "extension": ".png",
+      "bytes": 2043,
+      "object": "review-archive/objects/c1/c123f5c9bb6e015cc31722c9bcc7e8b9a4e596f2922809606f9bb47273e322a6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c1/c123f5c9bb6e015cc31722c9bcc7e8b9a4e596f2922809606f9bb47273e322a6.png"
     }
   }
 }

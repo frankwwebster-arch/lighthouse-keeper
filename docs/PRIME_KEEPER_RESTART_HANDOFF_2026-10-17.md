@@ -267,12 +267,13 @@ checkpoint no Prime animation has been promoted into Final/runtime/production.
 
 ## Exact next-task boundary
 
-Stop for Frank's visual decision on the already-live Prime `keeper_sweep_broom`
-V2 reviewer. The direct production link is
-`https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sweep-broom-v2/`.
-If he approves it, write a separate hash-pinned decision and still promote
-nothing without another explicit instruction. If he requests changes, create
-V3 and preserve V1 and V2 byte-for-byte. After that decision, decide whether
-to continue the standard standing-interaction queue or first audit whether the
-approved turn network makes separate rear-angle sit/stand transitions
-unnecessary. One accepted family at a time remains the safe cadence.
+V2 is rejected immutable provenance after Frank's visual report: its hem
+cleanup left visible debris, its sweep travel read as sliding, its cupboard
+door did not cover the Keeper, and its reversal was a proxy. V1 and V2 remain
+unchanged. V3 is the new unapproved candidate at
+`/keeper-review/keeper-prime-sweep-broom-v3/`: it rebuilds the damaged hem,
+uses distinct approved Walk V6 lower-body phases during each sweeping pass,
+uses the approved V9 side-right↔back core turn for the reversal, and makes the
+foreground door cover the full actor-plus-broom placement during both swaps.
+Its reviewer must be deployed and verified before asking Frank for a new
+visual decision. No artwork may be promoted from any sweep-broom candidate.
