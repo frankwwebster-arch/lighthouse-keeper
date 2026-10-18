@@ -100,12 +100,13 @@ Kitchen V28 at `/keeper-review/kitchen-bin-states-v28/` redraws the pedal bin
 from scratch as a coordinated static standard/broken family, adds a restrained
 floor spill, and shows both states in the exact 772 × 224 px game-scale room.
 Frank approved the bin itself. The current effect-only successor is
-`/keeper-review/kitchen-bin-effects-v29/`: it preserves all four V28 bin/room
-PNGs byte-for-byte and replaces only the reusable environmental layers with a
-less cartoonish translucent greenish miasma and subdued flies. Both run for 40
-frames at 4 fps, lasting ten seconds before repetition, and the miasma remains
-anchored to the opening. V29 is review-only and does not change runtime, Final
-art or canonical V20–V28 sources.
+`/keeper-review/kitchen-bin-effects-v30/`. V29 established the accepted colour
+and ten-second cadence but its narrow miasma was too subtle. V30 preserves all
+four V28 bin/room PNGs, the V29 flies, timing and miasma palette exactly, and
+changes only the miasma silhouette into a taller, fuller, continuous cloud.
+It rises to y=3 rather than V29's y=18–22, carries roughly four times the
+opaque pixel area, and remains anchored to the opening. V30 is review-only and
+does not change runtime, Final art or canonical V20–V29 sources.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

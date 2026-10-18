@@ -11,12 +11,12 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 110,
-    "referenceCount": 2185,
-    "uniqueObjectCount": 1476,
-    "logicalBytes": 199890051,
-    "uniqueBytes": 107263164,
-    "deduplicatedBytes": 92626887
+    "setCount": 111,
+    "referenceCount": 2191,
+    "uniqueObjectCount": 1477,
+    "logicalBytes": 200281350,
+    "uniqueBytes": 107270468,
+    "deduplicatedBytes": 93010882
   },
   "legacyPaths": {
     "/keeper-review/drafts/00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271.png": {
@@ -14923,6 +14923,48 @@
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bf/bf1c741f9ff7e985ddc44584c9c13c76c60e0df8104d34a2a11848f1be58a1c3.png"
     },
     "/keeper-review/kitchen-bin-effects-v29/assets/kitchen-bin-standard-in-situ.png": {
+      "sha256": "027e5b1d722b65ed55eecc2f96640fb07f5e0b33283ce8fdce0e5d892450e674",
+      "extension": ".png",
+      "bytes": 187635,
+      "object": "review-archive/objects/02/027e5b1d722b65ed55eecc2f96640fb07f5e0b33283ce8fdce0e5d892450e674.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/02/027e5b1d722b65ed55eecc2f96640fb07f5e0b33283ce8fdce0e5d892450e674.png"
+    },
+    "/keeper-review/kitchen-bin-effects-v30/assets/bin-broken-overflowing.png": {
+      "sha256": "77ad87fabfd3e5c10a4a14f294af343a5d93a2a2015e6d77f18a4140b1f5fb4f",
+      "extension": ".png",
+      "bytes": 3472,
+      "object": "review-archive/objects/77/77ad87fabfd3e5c10a4a14f294af343a5d93a2a2015e6d77f18a4140b1f5fb4f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/77/77ad87fabfd3e5c10a4a14f294af343a5d93a2a2015e6d77f18a4140b1f5fb4f.png"
+    },
+    "/keeper-review/kitchen-bin-effects-v30/assets/bin-standard.png": {
+      "sha256": "86b05224a7da5fc5c05918f2875018920ed54cf46fc00cb08952ffd29789f9c0",
+      "extension": ".png",
+      "bytes": 1977,
+      "object": "review-archive/objects/86/86b05224a7da5fc5c05918f2875018920ed54cf46fc00cb08952ffd29789f9c0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/86/86b05224a7da5fc5c05918f2875018920ed54cf46fc00cb08952ffd29789f9c0.png"
+    },
+    "/keeper-review/kitchen-bin-effects-v30/assets/fx-slow-flies-f40.png": {
+      "sha256": "28f3b35fdfe91d655ebe47914d17c948203f2def6bfa6b8fd5e2bf0a2b86cc5c",
+      "extension": ".png",
+      "bytes": 1502,
+      "object": "review-archive/objects/28/28f3b35fdfe91d655ebe47914d17c948203f2def6bfa6b8fd5e2bf0a2b86cc5c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/28/28f3b35fdfe91d655ebe47914d17c948203f2def6bfa6b8fd5e2bf0a2b86cc5c.png"
+    },
+    "/keeper-review/kitchen-bin-effects-v30/assets/fx-stench-miasma-f40.png": {
+      "sha256": "99ba9d9c316d20a628ffafa8cc12693d5b63df77efb468854d29827a3edd2181",
+      "extension": ".png",
+      "bytes": 7304,
+      "object": "review-archive/objects/99/99ba9d9c316d20a628ffafa8cc12693d5b63df77efb468854d29827a3edd2181.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/99/99ba9d9c316d20a628ffafa8cc12693d5b63df77efb468854d29827a3edd2181.png"
+    },
+    "/keeper-review/kitchen-bin-effects-v30/assets/kitchen-bin-broken-in-situ.png": {
+      "sha256": "bf1c741f9ff7e985ddc44584c9c13c76c60e0df8104d34a2a11848f1be58a1c3",
+      "extension": ".png",
+      "bytes": 189409,
+      "object": "review-archive/objects/bf/bf1c741f9ff7e985ddc44584c9c13c76c60e0df8104d34a2a11848f1be58a1c3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bf/bf1c741f9ff7e985ddc44584c9c13c76c60e0df8104d34a2a11848f1be58a1c3.png"
+    },
+    "/keeper-review/kitchen-bin-effects-v30/assets/kitchen-bin-standard-in-situ.png": {
       "sha256": "027e5b1d722b65ed55eecc2f96640fb07f5e0b33283ce8fdce0e5d892450e674",
       "extension": ".png",
       "bytes": 187635,
