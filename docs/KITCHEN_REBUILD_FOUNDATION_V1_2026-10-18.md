@@ -4,7 +4,7 @@ Date: 18 October 2026
 
 ## Outcome
 
-Rebuild V1 is a reversible clean-slate standard-kitchen review gate. The
+Rebuild V1 is the accepted reversible clean-slate standard-kitchen foundation. The
 fridge, kettle, toaster, oven/hob, mixing-bowl bay, basin bay and one-person
 table/chair were drawn together as one coherent master. No old non-bin kitchen
 asset is composited beneath or into this drawing.
@@ -58,9 +58,10 @@ checks the 772 × 224 room, exact six-bay measurements, deterministic
 compositing, literal isolated crops, review-media preloading and the
 content-addressed review archive.
 
-## Next gate
+## Successor
 
-Frank must first review this complete standard foundation. Only after approval
-may coordinated Off/On/Broken families be developed from this construction.
-Rejection is reversible by deleting only the Rebuild V1 source/raw/draft/page,
-archive manifest, builder, verifier and documentation files.
+Frank accepted the coherent foundation subject to changing the fridge door to
+white. Rebuild V2 preserves this room/cabinet/table construction and supplies
+the localized white-fridge, On and Broken amendments at
+`/keeper-review/kitchen-rebuild-states-v2/`. Rebuild V1 remains immutable and
+reversible; neither version is promoted to Final/runtime.

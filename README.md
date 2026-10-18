@@ -462,16 +462,21 @@ smoke. V41's exact-size local correction is also rejected, together with the
 asset-by-asset replacement method that produced it. Both remain immutable,
 unpromoted evidence.
 
-The active gate is the clean-slate Kitchen Rebuild V1 at
-`/keeper-review/kitchen-rebuild-foundation-v1/`. Every non-bin standard
-component was drawn together in one coherent master and then registered to the
-exact `772 × 224` room: six equal 84-pixel bays at x=84–588, common y=134
-worktop and y=151 fascia, historical y=208 foot line, and a complete one-person
-table/rear-facing chair. Its isolated modules are literal crops from that same
-master. The V28/V31 standard and broken bin cells remain byte-identical. This
-gate contains no alternate states or animation; those remain blocked pending
-visual approval of the complete standard foundation. Its record is
-[`docs/KITCHEN_REBUILD_FOUNDATION_V1_2026-10-18.md`](docs/KITCHEN_REBUILD_FOUNDATION_V1_2026-10-18.md).
+Clean-slate Kitchen Rebuild V1 at
+`/keeper-review/kitchen-rebuild-foundation-v1/` established the accepted
+coherent construction: exact `772 × 224` room, six equal 84-pixel bays at
+x=84–588, common y=134 worktop/y=151 fascia/y=208 foot line, and complete
+one-person table/rear-facing chair. Frank called it excellent subject to making
+the fridge door white.
+
+The active gate is Rebuild V2 at
+`/keeper-review/kitchen-rebuild-states-v2/`. It treats V1 as immutable and
+applies localized white-fridge, On and Broken amendments inside the existing
+bays. Steam, heat, smoke, flow, spray, drip/ripple and warning/cavity flicker
+remain separate reusable 40-frame/4-fps ten-second strips. The page shows all
+On, all Broken and a per-asset intermingled-state mixer at exact game size. The
+approved V28/V31 bin object/effects remain byte-identical. Its record is
+[`docs/KITCHEN_REBUILD_STATES_V2_2026-10-18.md`](docs/KITCHEN_REBUILD_STATES_V2_2026-10-18.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
@@ -488,7 +493,8 @@ effect colour/timing basis, V30 is rejected as too object-shaped for a young
 player, and V31 is the approved comic-readability authority. None is promoted
 or wired. V32–V41 are rejected immutable provenance; V39's earlier approval is
 historical rather than the current construction authority. Rebuild V1 is the
-sole active standard-kitchen gate and awaits review.
+immutable coherent foundation; Rebuild V2 is the sole active state-family gate
+and awaits review.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

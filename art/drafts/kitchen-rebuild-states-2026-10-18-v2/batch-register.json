@@ -1,0 +1,11 @@
+{
+  "set": "kitchen-rebuild-states-2026-10-18-v2",
+  "status": "awaiting-complete-state-family-visual-review",
+  "preserves": [
+    "Rebuild V1",
+    "approved V28/V31 bin"
+  ],
+  "promotion": "none",
+  "runtimeWiring": "unchanged",
+  "rollback": "Delete only V2 source/raw/draft/review/archive/builder/verifier/docs files; V1 remains exact."
+}

@@ -135,18 +135,22 @@ asset-by-asset replacement method are also rejected. V32–V41 remain immutable,
 unpromoted evidence; V39's earlier fridge approval is historical rather than
 the current construction authority.
 
+Rebuild V1 established the accepted coherent room/cabinet/table construction:
+exact `772 × 224` room, six equal `84-px` bays at x=84–588, y=134 worktop,
+y=151 fascia and y=208 foot line. Frank called it excellent subject to changing
+the fridge door to white.
+
 The active kitchen gate is
-`/keeper-review/kitchen-rebuild-foundation-v1/`. Rebuild V1 redraws every
-non-bin standard component together as one coherent master: closed fridge, off
-kettle, off toaster, off oven with integrated hob, intact mixing bowl, dry
-basin, and one complete rear-facing chair/table. It is registered to the exact
-`772 × 224` room, six equal `84-px` bays at x=84–588, y=134 worktop, y=151
-fascia and y=208 rear-wall foot line. Isolated standard modules are literal
-master crops, not separately composited art. The V28/V31 standard and broken
-bin cells are byte-identical and retain their original placement. This gate has
-no On/Broken replacements, effects or animation. It is reversible, unpromoted
-and awaiting Frank's complete-standard-room review. Final/runtime are
-unchanged; older cream/brown sets remain offline in `review-archive/retired/`.
+`/keeper-review/kitchen-rebuild-states-v2/`. V2 preserves V1 and applies only
+localized state amendments: white fridge; On kettle steam, toaster toast/heat,
+lit oven/dish/solid indicator and basin flow; Broken lower-hinged fridge
+door/contents/floor puddle, lid-off steaming kettle, black-toast smoking
+toaster, open smoking/flickering oven, two-half bowl and upward-spraying basin.
+Nine new environmental effects are isolated reusable `40`-frame/`4-fps`
+ten-second strips; approved V31 bin stench/flies remain byte-identical. The
+review provides all-On, all-Broken and interactive mixed-state exact-size
+canvases. V2 is reversible, unpromoted and unwired; Final/runtime are unchanged
+and older cream/brown sets remain offline in `review-archive/retired/`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
