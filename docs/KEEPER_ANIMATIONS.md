@@ -15,13 +15,14 @@ hash, outfit, facing, endpoint, dependency, current family, treatment and
 required contextual route.
 
 Sitting-direction status moved on 18 October: exact front-facing V4 is approved
-and hash-pinned without promotion. Back-facing V1 is the active review
-candidate at `/keeper-review/keeper-prime-sit-stand-back-v1/`. Its complete
-61-frame context passes the Keeper behind a separately rendered foreground
-chair rear. The action keeps F2–F6 at 150 px elbow width and registers every
-visible F2–F6 RGB value to approved rear Prime V5, with independent jumper,
-trouser and boot checks. Back V1 and the rear-angle transitions remain
-unapproved.
+and hash-pinned without promotion. Back-facing V1 is immutable and rejected
+because frames 29–41 visibly darken the jumper and trousers. Back-facing V2 is
+the active review candidate at `/keeper-review/keeper-prime-sit-stand-back-v2/`.
+Its complete 61-frame context passes the Keeper behind a separately rendered
+foreground chair rear. It preserves V1 geometry and holds F2–F6 at 150 px elbow
+width, while exact approved Turn V9 rear-endpoint swatches bring the central
+jumper to luminance 94–95 versus Prime 95 and trousers to 77–78 versus Prime
+77. Back V2 and the rear-angle transitions remain unapproved.
 
 The active selectable contextual review is
 `/keeper-review/keeper-prime-context-workbench-v15/`. It deliberately contains

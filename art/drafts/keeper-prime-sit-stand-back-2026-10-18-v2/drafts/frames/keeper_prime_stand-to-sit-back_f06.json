@@ -1,0 +1,72 @@
+{
+  "schema": "lighthouse-keeper/sprite-sidecar@draft-1",
+  "name": "keeper_prime_stand-to-sit-back-v2_f06",
+  "w": 32,
+  "h": 40,
+  "density": 8,
+  "frames": 1,
+  "fps": 0,
+  "anchor": [
+    16,
+    40
+  ],
+  "view": "back",
+  "outfit": "standard-single-band",
+  "poseIndex": 6,
+  "derivation": "V1-alpha-and-geometry-with-regional-clothing-palette-corrected-to-exact-approved-rear-endpoint",
+  "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa",
+  "alphaSha256": "e5b471599eb190d6809f25e7a03981a7387388498d71b39cdca05cafe17391a8",
+  "paletteRegistration": {
+    "method": "regional rear-endpoint palette correction; hue-constrained nearest exact RGB sample; alpha and geometry unchanged",
+    "correctedPixels": 14717,
+    "offAuthorityPixels": 0,
+    "allVisibleRgbFromApprovedPrimeAuthorities": true,
+    "prior": {
+      "jumperCore": {
+        "pixels": 4186,
+        "medianLuma": 74,
+        "p25Luma": 71,
+        "p75Luma": 75
+      },
+      "trouserCore": {
+        "pixels": 2978,
+        "medianLuma": 52,
+        "p25Luma": 42,
+        "p75Luma": 55
+      }
+    },
+    "corrected": {
+      "jumperCore": {
+        "pixels": 4186,
+        "medianLuma": 95,
+        "p25Luma": 92,
+        "p75Luma": 96
+      },
+      "trouserCore": {
+        "pixels": 2978,
+        "medianLuma": 77,
+        "p25Luma": 67,
+        "p75Luma": 80
+      }
+    },
+    "authority": {
+      "jumperCore": {
+        "pixels": 5131,
+        "medianLuma": 95,
+        "p25Luma": 92,
+        "p75Luma": 97
+      },
+      "trouserCore": {
+        "pixels": 3433,
+        "medianLuma": 77,
+        "p25Luma": 73,
+        "p75Luma": 78
+      }
+    },
+    "endpointPaletteAuthority": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f09.png",
+    "endpointPaletteAuthoritySha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+    "inheritedPrimePaletteAuthority": "art/drafts/keeper-prime-orthographic-views-2026-10-13-v5/drafts/keeper_prime_master-neutral-standing-back_f1.png",
+    "inheritedPrimePaletteAuthoritySha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86"
+  },
+  "productionPromotionAllowed": false
+}

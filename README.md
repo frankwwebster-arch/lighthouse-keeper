@@ -98,17 +98,20 @@ decision is
 143 px elbow-width lock, complete 59-frame context and exact endpoints remain
 unchanged. This approval did not promote V4 into Final, runtime or production.
 
-The active one-direction gate is now back-facing V1 at
-`/keeper-review/keeper-prime-sit-stand-back-v1/`. It uses the exact approved
-Turn V9 rear endpoint, exact seated-back alpha geometry, four new complete
-Prime-derived lowering poses and a 61-frame walk/stop/turn/action/return route.
-Action F2–F6 use only exact RGB samples from approved rear Prime V5; jumper,
-trouser and boot medians are checked separately to prevent the visibly darker
-generated/seated-source palette from entering the candidate. F2–F6 remain at
-150 px elbow width while heights lower 286→276→270→266→264 px. The chair rear
-is a separate foreground layer and the Keeper passes behind it. Historical
-`keeper_sit_back` contributes choreography only and zero visible pixels. Back
-V1 awaits Frank and changes no Final, runtime or production asset.
+The active one-direction gate is now back-facing V2 at
+`/keeper-review/keeper-prime-sit-stand-back-v2/`. Frank rejected immutable V1
+because complete-context frames 29–41 made the jumper and trousers visibly
+darker than Prime; the exact decision and V1 hashes are recorded in
+`docs/review/keeper-prime-sit-stand-back-v1-rejection-2026-10-18.json`.
+V2 preserves every V1 alpha plane, dimension, choreography frame and the full
+61-frame walk/stop/turn/action/return route. F2–F6 instead use exact clothing
+RGB samples from the exact approved Turn V9 rear endpoint. Direct central
+region checks now hold jumper median luminance at 94–95 against Prime 95 and
+trousers at 77–78 against Prime 77. F2–F6 remain at 150 px elbow width while
+heights lower 286→276→270→266→264 px. The chair rear remains a separate
+foreground layer and the Keeper passes behind it. Historical `keeper_sit_back`
+contributes choreography only and zero visible pixels. Back V2 awaits Frank
+and changes no Final, runtime or production asset.
 
 Frank approved exact Darts Context V8 on 17 October 2026. Its immutable decision
 is `docs/review/keeper-prime-darts-context-v8-approval-2026-10-17.json`.

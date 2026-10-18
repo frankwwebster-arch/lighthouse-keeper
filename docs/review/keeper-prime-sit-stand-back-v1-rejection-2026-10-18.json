@@ -1,0 +1,32 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "subject": "keeper-prime-sit-stand-back-v1",
+  "decision": "rejected-as-back-prime-sit-stand-colour-match",
+  "date": "2026-10-18",
+  "reviewer": "Frank",
+  "feedback": "despite what you say, his jumper and trousers are very clearly darker in frames 29-41 compared to the prime keeper",
+  "reason": "The complete-context action and reverse block visibly darkens the jumper and trousers. Direct regional measurement confirms jumper median luminance 73-74 versus approved Prime 95 and trouser median 52-53 versus approved Prime 77.",
+  "immutableCandidate": {
+    "register": "art/drafts/keeper-prime-sit-stand-back-2026-10-18-v1/batch-register.json",
+    "registerSha256": "3d76c2681dc56e159e9537553afd7e3018904a29e5d92df9bf2a4be7a6548bc6",
+    "route": "art/drafts/keeper-prime-sit-stand-back-2026-10-18-v1/keeper-prime-sit-stand-back-v1.json",
+    "routeSha256": "5742c08d84629184d35f7d2c4fc1fb946fbf61ae7b606c4d70b9e8f30ae2453a",
+    "frameSha256": [
+      "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "9b4574ad3683a94e72a1f020707852dbf6ab37c3b10d3afa8999d44aa5f1e3e4",
+      "ea8db06c280a667f8456ed6b7f81a15328dce5d749a25cbc65aafeff45a8c2a8",
+      "ca7a669b4b90c015d23026cd6891c49f04be30a3a32be90b97b3af5534950e10",
+      "f6cc73f425160f22865185dc3e7da60b5f53a376ecab0b1125587a2d3608e16f",
+      "434dcca19058d07021af7b945aefaac1e4a550741eb4d554d9316bb3c27ebf35"
+    ]
+  },
+  "successor": "keeper-prime-sit-stand-back-v2",
+  "approvalBoundary": {
+    "backV1Approved": false,
+    "backV2Approved": false,
+    "promotionAllowed": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false
+  }
+}

@@ -21,6 +21,13 @@ const sitStandV6Approval = spawnSync('node', ['scripts/verify_keeper_prime_sit_s
 })
 if (sitStandV6Approval.error) throw sitStandV6Approval.error
 if (sitStandV6Approval.status !== 0) process.exit(sitStandV6Approval.status ?? 1)
+const sitStandBackV2 = spawnSync('node', ['scripts/verify_keeper_prime_sit_stand_back_v2.mjs'], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions },
+  stdio: 'inherit',
+})
+if (sitStandBackV2.error) throw sitStandBackV2.error
+if (sitStandBackV2.status !== 0) process.exit(sitStandBackV2.status ?? 1)
 const foundation = spawnSync('node', ['scripts/verify_keeper_movement_foundation_v1.ts'], {
   cwd: root,
   env: { ...process.env, NODE_OPTIONS: nodeOptions },

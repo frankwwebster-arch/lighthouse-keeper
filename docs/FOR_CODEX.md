@@ -72,15 +72,16 @@ hash-pinned decision at
 three earlier rejection records. Approval did not promote it.
 
 The active next-direction proposal is
-`/keeper-review/keeper-prime-sit-stand-back-v1/`. It uses the exact approved
-Turn V9 rear endpoint, exact seated-back alpha geometry, four complete new
-Prime-derived intermediates, a foreground rear chair and the full 61-frame
-walk/stop/turn/sit/stand/turn/return route. All visible RGB in F2–F6 comes from
-approved rear Prime V5; jumper, trouser and boot medians are checked separately
-because the generated and seated sources carried visibly darker clothing.
-F2–F6 hold the 150 px seated elbow width. Historical `keeper_sit_back` is
-choreography-only evidence. Back V1 awaits Frank; do not infer approval or
-promote it. If amended, create V2 rather than rewriting V1.
+`/keeper-review/keeper-prime-sit-stand-back-v2/`. Frank rejected immutable V1
+for visible jumper/trouser darkening across complete-context frames 29–41; keep
+its exact decision at
+`docs/review/keeper-prime-sit-stand-back-v1-rejection-2026-10-18.json`.
+V2 keeps every V1 alpha plane, dimension, foreground-chair depth cue and all 61
+route frames. F2–F6 now use exact RGB samples from the exact approved Turn V9
+rear endpoint, with central jumper medians 94–95 versus Prime 95 and trousers
+77–78 versus Prime 77. Historical `keeper_sit_back` remains choreography-only.
+Back V2 awaits Frank; do not infer approval or promote it. Any further change
+must be V3 rather than rewriting V1 or V2.
 
 Future pub/games-room layout rule: mount the approved dartboard on the
 right-hand cupboard-door leaf. It is edge-on while that door is closed and is

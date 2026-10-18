@@ -103,25 +103,26 @@ hash-pinned decision at
 exact F1/F6 endpoints, 143 px width lock and 59-frame context. Approval did not
 promote it.
 
-Back-facing V1 is now the single active next-direction candidate at
-`/keeper-review/keeper-prime-sit-stand-back-v1/`. It uses the exact approved
-Turn V9 rear endpoint, exact seated-back alpha geometry and four complete new
-Prime-derived intermediates. F2–F6 hold the seated 150 px elbow span and lower
-monotonically 286→276→270→266→264 px. Generated and seated-source clothing was
-visibly darker than Prime, so every visible F2–F6 RGB value is deterministically
-registered to an exact sample from approved rear Prime V5; jumper, trouser and
-boot medians are checked separately. The complete 61-frame route uses approved
-walk/stop/turn context, exact reverse and ghosts. A separate foreground chair
-rear makes the Keeper visibly pass behind it. Historical `keeper_sit_back`
-contributes choreography only and zero visible pixels. Back V1 and both rear
-angles remain unapproved; nothing is promoted.
+Back-facing V1 is immutable and rejected because complete-context frames 29–41
+visibly darken the jumper and trousers. Preserve the exact record at
+`docs/review/keeper-prime-sit-stand-back-v1-rejection-2026-10-18.json`; do not
+rewrite V1. The prior whole-garment medians were a misleading acceptance test:
+direct stable-region readings were jumper 73–74 versus approved Prime 95 and
+trousers 52–53 versus Prime 77.
 
-The live reviewer was verified on 18 October 2026 at
-`/keeper-review/keeper-prime-sit-stand-back-v1/`. Candidate commit `f8c8a71`
-was merged with concurrent Kitchen V27 work in `9584eb4`; exact production
-deploy commit `d93c89c` reached Vercel READY. The live route contains 61 frames
-and all 31 unique review images returned valid PNG data. This is delivery
-evidence only, not artwork approval.
+Back-facing V2 is now the single active next-direction candidate at
+`/keeper-review/keeper-prime-sit-stand-back-v2/`. It preserves every V1 alpha
+plane, dimension, 150 px lowering width, 61-frame route, exact reverse, ghost
+overlay and foreground chair depth cue. F2–F6 use hue-constrained exact RGB
+samples from the exact approved Turn V9 rear endpoint; direct central-region
+checks now read jumper 94–95 versus Prime 95 and trousers 77–78 versus Prime
+77. Historical `keeper_sit_back` still contributes choreography only and zero
+visible pixels. Back V2 and both rear angles remain unapproved; nothing is
+promoted.
+
+Back V1's exact production deploy `d93c89c` and its 31-image live verification
+remain delivery provenance only. Deploy and live-verify V2 before asking Frank
+to review it. Live delivery is never artwork approval.
 
 ## Binding method for every inherited animation
 
