@@ -282,8 +282,10 @@ approved Walk V6 for standard travel, a measured foreground cupboard leaf for
 both fully obscured state swaps, three distinct moving-leg sweep poses in each
 direction, and a nine-frame held-broom reversal derived from the approved V9
 side/back turn. The left-facing endpoint now carries the broom in front/left of
-the Keeper, and the closed foreground leaf spans 80 lp across the 192-lp stage,
-covering the complete 48-lp unit. The replacement prop is a traditional rigid-stock broom: one
+the Keeper on one continuous straight shaft through both hands; the rejected
+kinked-handle correction is not used. The closed foreground leaf spans 80 lp
+across the 192-lp stage, covering the complete 48-lp unit. The replacement prop
+is a traditional rigid-stock broom: one
 timber shaft, metal ferrule, rigid horizontal timber crossbar, multiple
 separately bound straw bundles and a broad straight working edge. The exact
 384×320 registered prop bounds for every held/action/turn frame are stored in
@@ -293,6 +295,7 @@ reuse the route/gait grammar only after replacing the prop and remeasuring hand
 contact, floor contact, bounds and cupboard coverage.
 
 V5 remains review-only: no Final/runtime artwork or game logic changed. Its
-reviewer must be commit-pinned, deployed and verified live before asking Frank
-for a visual decision. No sweep-broom artwork may be promoted without a later,
-separate explicit instruction.
+immutable candidate is commit `3548d09`, and the public shell is pinned by
+commit `e643fd3`. It must still be deployed and verified live before asking
+Frank for a visual decision. No sweep-broom artwork may be promoted without a
+later, separate explicit instruction.
