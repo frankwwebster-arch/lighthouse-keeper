@@ -1,3 +1,5 @@
 # Prime Keeper sweep broom V1
 
 This immutable review candidate redraws every visible Keeper pixel from the approved Prime side-right authorities. The historical eight-frame strip contributes choreography only. The broom is separately owned in every frame, hand/floor contact is re-measured, all eleven visible material groups pass exact-authority and adjacent-frame colour gates, and the complete approved walk/stop/action/exit/walk route is available at large, gameplay and literal 1× scales. Nothing is approved or promoted.
+
+The production reviewer was delivered from deploy commit `84c8f6b` on 18 October 2026 at <https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sweep-broom-v1/>. The live page returned HTTP 200, decoded all 98 unique images before enabling its controls, advanced through the six-frame repeatable loop, toggled the previous-frame ghost, reported 724 pixels of broom/hand overlap on the sampled phase-2 frame, displayed all 11 material rows as passing, and emitted no browser console errors. This is delivery evidence only, not artwork approval or promotion.

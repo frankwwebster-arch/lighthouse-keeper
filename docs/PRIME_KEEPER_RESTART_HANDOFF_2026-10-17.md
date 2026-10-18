@@ -143,6 +143,15 @@ neutral → approved acceleration → Walk V6 away. Large, 4 px/lp gameplay and
 literal 1 px/lp playback, previous/Prime ghosts, material masks and
 frame-by-frame comparisons are included. V1 is unapproved and unpromoted.
 
+The reviewer was delivered from exact deploy commit `84c8f6b` on 18 October
+2026. The live route returned HTTP 200 and all 98 unique embedded image URLs
+returned valid image data. In-browser verification confirmed that the page
+decoded all 98 images before enabling controls, the repeatable six-frame loop
+advanced under playback, previous-frame ghosting toggled correctly, the sampled
+phase-2 frame reported 724 pixels of broom/hand overlap, all 11 material rows
+passed, and the browser console contained no errors. This records delivery
+only; V1 still awaits Frank's visual decision.
+
 ## Binding method for every inherited animation
 
 Every first-draft animation must be redrafted. Historical frames may supply

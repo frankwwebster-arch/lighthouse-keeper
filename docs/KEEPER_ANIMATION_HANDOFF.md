@@ -2176,6 +2176,15 @@ route, isolated action and repeatable loop modes, large/gameplay/literal 1×
 scales, previous-frame and Prime ghosts, component masks and per-frame colour
 evidence. V1 awaits Frank and must not be promoted. Any amendment is a new V2.
 
+Production review delivery is pinned to deploy commit `84c8f6b`. On 18 October
+2026 the live page returned HTTP 200, all 98 unique image URLs returned valid
+image data, and the in-browser reviewer decoded all 98 before enabling its
+controls. The six-frame loop advanced during playback, previous-frame ghosting
+toggled correctly, the sampled phase-2 frame showed 724 pixels of broom/hand
+overlap, all 11 material checks passed, and the console reported no errors.
+This is delivery provenance only; the candidate remains unapproved and
+unpromoted.
+
 ## Ready-to-paste opening prompt for the next review iteration
 
 > Continue the Lighthouse Keeper amendment review in `/Users/frank/Documents/ChatGPT/Lighthouse Keeper` on `main`. Read `docs/KEEPER_ANIMATION_HANDOFF.md`, `docs/KEEPER_ARTWORK_AUTHORING_AND_REVIEW_PLAYBOOK.md`, `docs/review/keeper-animation-codex-responses-2026-10-12.json`, `art/drafts/keeper-review-amendments-2026-10-11-v1/README.md`, `art/drafts/keeper-party-hat-put-on-back-hands-2026-10-12-v2/README.md`, `art/drafts/keeper-party-hat-put-on-back-front-arm-plane-2026-10-12-v3/README.md`, `art/drafts/keeper-carry-shopping-right-bag-2026-10-12-v2/README.md`, `art/drafts/keeper-play-drums-back-hands-2026-10-12-v2/README.md`, `art/drafts/keeper-put-record-removal-2026-10-12-v2/README.md` and `art/drafts/keeper-put-record-horizontal-frame5-2026-10-12-v3/README.md`. Treat handoff `d9081e53-2808-4b1f-8422-2df09cf38c3c` and its 81 exact names as the only scope. Review the 41 exact-name amendment candidates plus retained v2/v3 comparisons for `keeper_party_hat_put_on_back` and `keeper_put_record`, the `keeper_carry_shopping` frames-1/7 correction and the `keeper_play_drums_back` frame-6 correction. The party-hat v3 keeps frame-2 arms clear of the head; the put-record v3 keeps a level record in frame 5 and removes it in frames 6–8. Preserve canonical art, all historical variants and the 12 retained `withdrawn-by-user` face-to-camera candidates. The deleted `keeper_count_money` amendment must not be regenerated without a new explicit instruction. Do not reactivate, regenerate or promote any other face-to-camera amendment without an explicit new instruction. Iterate with Frank on `keeper_fish_seated`, `keeper_shower_exit` and `keeper_shower_wash`; leave `keeper_slide_side` deferred until helter-skelter geometry exists. Promote nothing without explicit approval.
