@@ -399,19 +399,26 @@ isolated and in the 772 × 224 px game-scale room. The object stays static; a
 separate reusable 24-frame/4-fps green-miasma strip and slow-fly strip supply
 its six-second environmental fault loop. Its record is
 [`docs/KITCHEN_BIN_STATES_V28_2026-10-18.md`](docs/KITCHEN_BIN_STATES_V28_2026-10-18.md).
+Kitchen V29 at `/keeper-review/kitchen-bin-effects-v29/` preserves the four
+approved V28 bin and room images byte-for-byte and revises only those reusable
+environmental layers. The less cartoonish greenish miasma uses translucent,
+irregular vapour ribbons; the flies are more subdued. Both are 40-frame/4-fps
+loops lasting ten seconds before repetition. Its record is
+[`docs/KITCHEN_BIN_EFFECTS_V29_2026-10-18.md`](docs/KITCHEN_BIN_EFFECTS_V29_2026-10-18.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
 and
 [`docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md`](docs/CODEX_TO_CLAUDE_KITCHEN_COUNTERTOP_GATE_V18_2026-10-17.md).
-Only exact Kitchen V5 and Kitchen V20–V28 remain in active kitchen review tooling.
+Only exact Kitchen V5 and Kitchen V20–V29 remain in active kitchen review tooling.
 V5 is the retained old-family reference, V20 is immutable fitted-galley
 provenance, V21 is immutable complete-asset provenance, V22 is immutable
 rejected assembly provenance, V23 is the approved full-room base, V24 is the
 rear-facing-chair successor, V25 is the narrower-bin successor awaiting
 confirmation, V26 is its derived game-scale Prime context, V27 is rejected
-provenance, and V28 is the reversible static-bin/reusable-environmental-FX
-gate. None is promoted or wired.
+provenance, V28 supplies the approved static bin pixels, and V29 is the
+reversible ten-second reusable-environmental-FX gate. None is promoted or
+wired.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

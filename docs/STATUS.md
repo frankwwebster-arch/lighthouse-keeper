@@ -96,13 +96,16 @@ table. V26 is derived evidence only; V25 and all Keeper sources are unchanged.
 Kitchen V27 at `/keeper-review/kitchen-broken-loops-v27/` is retained as
 rejected provenance. Its short, fast loops and independently constructed fault
 art are not reused as the visual or timing authority for replacement work.
-The current kitchen art review is `/keeper-review/kitchen-bin-states-v28/`.
-It redraws the pedal bin from scratch as a coordinated static standard/broken
-family, adds a restrained floor spill to the overflowing state, and shows both
-states in the exact 772 × 224 px game-scale room. The object itself does not
-animate. Two reusable 24-frame/4-fps environmental layers provide a six-second
-green miasma and slow-fly loop anchored to the opening. V28 is review-only and
-does not change runtime, Final art or canonical V20–V27 sources.
+Kitchen V28 at `/keeper-review/kitchen-bin-states-v28/` redraws the pedal bin
+from scratch as a coordinated static standard/broken family, adds a restrained
+floor spill, and shows both states in the exact 772 × 224 px game-scale room.
+Frank approved the bin itself. The current effect-only successor is
+`/keeper-review/kitchen-bin-effects-v29/`: it preserves all four V28 bin/room
+PNGs byte-for-byte and replaces only the reusable environmental layers with a
+less cartoonish translucent greenish miasma and subdued flies. Both run for 40
+frames at 4 fps, lasting ten seconds before repetition, and the miasma remains
+anchored to the opening. V29 is review-only and does not change runtime, Final
+art or canonical V20–V28 sources.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

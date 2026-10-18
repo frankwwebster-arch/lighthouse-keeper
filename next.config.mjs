@@ -228,6 +228,11 @@ export default {
         destination: '/keeper-review/kitchen-bin-states-v28/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-bin-effects-v29',
+        destination: '/keeper-review/kitchen-bin-effects-v29/index.html',
+        permanent: false,
+      },
     ]
   },
 }
