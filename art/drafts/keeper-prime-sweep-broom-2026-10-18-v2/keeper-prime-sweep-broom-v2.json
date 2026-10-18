@@ -1,0 +1,2582 @@
+{
+  "schema": "lighthouse-keeper/prime-action-review@1",
+  "set": "keeper-prime-sweep-broom-v2",
+  "status": "versioned-reversible-review-candidate-not-approved",
+  "room": {
+    "widthLp": 172,
+    "heightLp": 56,
+    "floorLp": 52
+  },
+  "components": [
+    "capCrown",
+    "capBandBrim",
+    "badge",
+    "jumperBlue",
+    "creamBand",
+    "trousers",
+    "boots",
+    "skin",
+    "hair",
+    "beard",
+    "outline"
+  ],
+  "primeSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/exact-prime-side-right-a172a8a01a387a21.png",
+  "historicalSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/historical-choreography-only-eb3783d5783c7e5a.png",
+  "contactSheetSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/contact-sheet-28680f622a107ded.png",
+  "frames": {
+    "neutral": {
+      "id": "neutral",
+      "urls": {
+        "actor": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-actor-3df7882782cac298.png",
+        "prop": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+        "composite": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-composite-365949f320390bf2.png",
+        "masks": {
+          "capCrown": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-capCrown-mask-80bbfec3b9006089.png",
+          "capBandBrim": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-capBandBrim-mask-e2f02d3d17a11f15.png",
+          "badge": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-badge-mask-0a2d08be84235c43.png",
+          "jumperBlue": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-jumperBlue-mask-a14cff4724c86045.png",
+          "creamBand": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-creamBand-mask-89d80546f0e34ec8.png",
+          "trousers": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-trousers-mask-2ca806b2b37e24b6.png",
+          "boots": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-boots-mask-a74b7b3bbd35cbd6.png",
+          "skin": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-skin-mask-2af52c0041a0430e.png",
+          "hair": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-hair-mask-7612c46c6c651ff9.png",
+          "beard": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-beard-mask-caf35a865443eb4c.png",
+          "outline": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-outline-mask-00834eb30a45f3e8.png"
+        }
+      },
+      "colourEvidence": {
+        "capCrown": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 1450,
+            "medianLuma": 76.807
+          },
+          "authority": {
+            "medianLuma": 76.807
+          },
+          "medianOklabDelta": 0.0
+        },
+        "capBandBrim": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 913,
+            "medianLuma": 55.111
+          },
+          "authority": {
+            "medianLuma": 55.111
+          },
+          "medianOklabDelta": 0.0
+        },
+        "badge": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 405,
+            "medianLuma": 162.812
+          },
+          "authority": {
+            "medianLuma": 162.812
+          },
+          "medianOklabDelta": 0.0
+        },
+        "jumperBlue": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 2913,
+            "medianLuma": 76.807
+          },
+          "authority": {
+            "medianLuma": 76.807
+          },
+          "medianOklabDelta": 0.0
+        },
+        "creamBand": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 920,
+            "medianLuma": 237.242
+          },
+          "authority": {
+            "medianLuma": 237.242
+          },
+          "medianOklabDelta": 0.0
+        },
+        "trousers": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 2023,
+            "medianLuma": 58.183
+          },
+          "authority": {
+            "medianLuma": 58.183
+          },
+          "medianOklabDelta": 0.0
+        },
+        "boots": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 2315,
+            "medianLuma": 63.544
+          },
+          "authority": {
+            "medianLuma": 63.544
+          },
+          "medianOklabDelta": 0.0
+        },
+        "skin": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 609,
+            "medianLuma": 196.841
+          },
+          "authority": {
+            "medianLuma": 196.841
+          },
+          "medianOklabDelta": 0.0
+        },
+        "hair": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 617,
+            "medianLuma": 235.384
+          },
+          "authority": {
+            "medianLuma": 235.384
+          },
+          "medianOklabDelta": 0.0
+        },
+        "beard": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 601,
+            "medianLuma": 236.881
+          },
+          "authority": {
+            "medianLuma": 236.881
+          },
+          "medianOklabDelta": 0.0
+        },
+        "outline": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 3258,
+            "medianLuma": 2.864
+          },
+          "authority": {
+            "medianLuma": 2.864
+          },
+          "medianOklabDelta": 0.0
+        }
+      },
+      "contact": {
+        "status": "staged-room-prop-no-contact",
+        "contactPixels": 0
+      },
+      "bounds": {
+        "minX": 77,
+        "minY": 18,
+        "maxX": 265,
+        "maxY": 315,
+        "width": 189,
+        "height": 298,
+        "opaquePixels": 26623
+      }
+    },
+    "acquire": {
+      "id": "acquire",
+      "urls": {
+        "actor": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-actor-363df5b71551d9e0.png",
+        "prop": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-prop-1cb747b9b9b9360b.png",
+        "composite": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-composite-f0a861592bc6e596.png",
+        "masks": {
+          "capCrown": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-capCrown-mask-a135e4d302ba5985.png",
+          "capBandBrim": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-capBandBrim-mask-9b51cf3907a3244c.png",
+          "badge": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-badge-mask-a03f10184bbff8c7.png",
+          "jumperBlue": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-jumperBlue-mask-ceb68479e7909089.png",
+          "creamBand": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-creamBand-mask-f74823a106149752.png",
+          "trousers": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-trousers-mask-ea06f8a164463619.png",
+          "boots": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-boots-mask-f3b337a1b462f59e.png",
+          "skin": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-skin-mask-075ed147e19635ee.png",
+          "hair": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-hair-mask-8fd3f3c53e7722dc.png",
+          "beard": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-beard-mask-323a7cc029ada3ef.png",
+          "outline": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-outline-mask-6bd2ebd96eb79bfa.png"
+        }
+      },
+      "colourEvidence": {
+        "capCrown": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 1420,
+            "medianLuma": 76.807
+          },
+          "authority": {
+            "medianLuma": 76.807
+          },
+          "medianOklabDelta": 0.0
+        },
+        "capBandBrim": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 860,
+            "medianLuma": 55.111
+          },
+          "authority": {
+            "medianLuma": 55.111
+          },
+          "medianOklabDelta": 0.00013
+        },
+        "badge": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 422,
+            "medianLuma": 162.812
+          },
+          "authority": {
+            "medianLuma": 162.812
+          },
+          "medianOklabDelta": 0.000528
+        },
+        "jumperBlue": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 2533,
+            "medianLuma": 76.236
+          },
+          "authority": {
+            "medianLuma": 76.807
+          },
+          "medianOklabDelta": 0.002669
+        },
+        "creamBand": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 558,
+            "medianLuma": 237.242
+          },
+          "authority": {
+            "medianLuma": 237.242
+          },
+          "medianOklabDelta": 0.0
+        },
+        "trousers": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 2758,
+            "medianLuma": 58.183
+          },
+          "authority": {
+            "medianLuma": 58.183
+          },
+          "medianOklabDelta": 0.0
+        },
+        "boots": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 2298,
+            "medianLuma": 63.544
+          },
+          "authority": {
+            "medianLuma": 63.544
+          },
+          "medianOklabDelta": 0.0
+        },
+        "skin": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 706,
+            "medianLuma": 196.841
+          },
+          "authority": {
+            "medianLuma": 196.841
+          },
+          "medianOklabDelta": 0.0
+        },
+        "hair": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 899,
+            "medianLuma": 235.384
+          },
+          "authority": {
+            "medianLuma": 235.384
+          },
+          "medianOklabDelta": 1.5e-05
+        },
+        "beard": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 403,
+            "medianLuma": 236.881
+          },
+          "authority": {
+            "medianLuma": 236.881
+          },
+          "medianOklabDelta": 0.0
+        },
+        "outline": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 4194,
+            "medianLuma": 2.864
+          },
+          "authority": {
+            "medianLuma": 2.864
+          },
+          "medianOklabDelta": 0.0
+        }
+      },
+      "contact": {
+        "status": "pass",
+        "contactPixels": 806,
+        "occludedHandlePixelsBehindEachHand": [
+          399,
+          407
+        ],
+        "visiblePropEdgeContact": {
+          "contactPixels": 0,
+          "contactBounds": null,
+          "status": "no-contact"
+        },
+        "propGeometry": {
+          "handCentresPx": [
+            [
+              188.123,
+              160.766
+            ],
+            [
+              185.567,
+              190.893
+            ]
+          ],
+          "handleTopPx": [
+            189.306,
+            146.816
+          ],
+          "collarPx": [
+            190,
+            254
+          ],
+          "bristleFloorY": 315,
+          "render": "4x supersampled detailed traditional broom: timber stock, ferrule, bound straw bundles and individual bristle strands",
+          "visualReference": {
+            "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/sources/generated/traditional-broom-detail-reference-generated.png",
+            "sha256": "cfb638200c1eff8d078798561fab4ee06896e8f23d567bd6047734a02c296214"
+          }
+        }
+      },
+      "bounds": {
+        "minX": 82,
+        "minY": 17,
+        "maxX": 241,
+        "maxY": 315,
+        "width": 160,
+        "height": 299,
+        "opaquePixels": 25508
+      }
+    },
+    "phase1": {
+      "id": "phase1",
+      "urls": {
+        "actor": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-actor-829733bd68a59f9a.png",
+        "prop": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-prop-7659cb8f54743b84.png",
+        "composite": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-composite-c96a8ae11d32215c.png",
+        "masks": {
+          "capCrown": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-capCrown-mask-92bc21961333e724.png",
+          "capBandBrim": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-capBandBrim-mask-890ea1970b39674b.png",
+          "badge": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-badge-mask-e935a961ed588eb8.png",
+          "jumperBlue": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-jumperBlue-mask-c7b8cdc764a186bc.png",
+          "creamBand": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-creamBand-mask-b6fe113bdc25cc45.png",
+          "trousers": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-trousers-mask-b0d59c16773a4cd4.png",
+          "boots": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-boots-mask-d046ac7da728700d.png",
+          "skin": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-skin-mask-697a036f70187896.png",
+          "hair": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-hair-mask-aebef1a0fb77e719.png",
+          "beard": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-beard-mask-4a80fbb60f230d91.png",
+          "outline": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-outline-mask-57755f8110f1fd31.png"
+        }
+      },
+      "colourEvidence": {
+        "capCrown": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 1532,
+            "medianLuma": 76.807
+          },
+          "authority": {
+            "medianLuma": 76.807
+          },
+          "medianOklabDelta": 7e-06
+        },
+        "capBandBrim": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 875,
+            "medianLuma": 55.111
+          },
+          "authority": {
+            "medianLuma": 55.111
+          },
+          "medianOklabDelta": 0.000242
+        },
+        "badge": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 557,
+            "medianLuma": 162.812
+          },
+          "authority": {
+            "medianLuma": 162.812
+          },
+          "medianOklabDelta": 0.000445
+        },
+        "jumperBlue": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 2405,
+            "medianLuma": 76.236
+          },
+          "authority": {
+            "medianLuma": 76.807
+          },
+          "medianOklabDelta": 0.002669
+        },
+        "creamBand": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 510,
+            "medianLuma": 237.242
+          },
+          "authority": {
+            "medianLuma": 237.242
+          },
+          "medianOklabDelta": 0.0
+        },
+        "trousers": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 3680,
+            "medianLuma": 58.183
+          },
+          "authority": {
+            "medianLuma": 58.183
+          },
+          "medianOklabDelta": 1.1e-05
+        },
+        "boots": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 3805,
+            "medianLuma": 63.544
+          },
+          "authority": {
+            "medianLuma": 63.544
+          },
+          "medianOklabDelta": 0.0
+        },
+        "skin": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 673,
+            "medianLuma": 196.841
+          },
+          "authority": {
+            "medianLuma": 196.841
+          },
+          "medianOklabDelta": 0.0
+        },
+        "hair": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 445,
+            "medianLuma": 235.384
+          },
+          "authority": {
+            "medianLuma": 235.384
+          },
+          "medianOklabDelta": 0.000311
+        },
+        "beard": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 486,
+            "medianLuma": 236.881
+          },
+          "authority": {
+            "medianLuma": 236.881
+          },
+          "medianOklabDelta": 0.0
+        },
+        "outline": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 4712,
+            "medianLuma": 2.864
+          },
+          "authority": {
+            "medianLuma": 2.864
+          },
+          "medianOklabDelta": 0.000261
+        }
+      },
+      "contact": {
+        "status": "pass",
+        "contactPixels": 796,
+        "occludedHandlePixelsBehindEachHand": [
+          396,
+          400
+        ],
+        "visiblePropEdgeContact": {
+          "contactPixels": 0,
+          "contactBounds": null,
+          "status": "no-contact"
+        },
+        "propGeometry": {
+          "handCentresPx": [
+            [
+              166.773,
+              173.912
+            ],
+            [
+              184.768,
+              204.872
+            ]
+          ],
+          "handleTopPx": [
+            159.738,
+            161.808
+          ],
+          "collarPx": [
+            213.323,
+            254
+          ],
+          "bristleFloorY": 315,
+          "render": "4x supersampled detailed traditional broom: timber stock, ferrule, bound straw bundles and individual bristle strands",
+          "visualReference": {
+            "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/sources/generated/traditional-broom-detail-reference-generated.png",
+            "sha256": "cfb638200c1eff8d078798561fab4ee06896e8f23d567bd6047734a02c296214"
+          }
+        }
+      },
+      "bounds": {
+        "minX": 50,
+        "minY": 30,
+        "maxX": 278,
+        "maxY": 315,
+        "width": 229,
+        "height": 286,
+        "opaquePixels": 28533
+      }
+    },
+    "phase2": {
+      "id": "phase2",
+      "urls": {
+        "actor": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-actor-1765d4b4a8af899b.png",
+        "prop": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-prop-b746c96b81c2f211.png",
+        "composite": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-composite-f818e2174fc7c51d.png",
+        "masks": {
+          "capCrown": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-capCrown-mask-2c0b3973e8ebb500.png",
+          "capBandBrim": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-capBandBrim-mask-02060f1b54c28fb8.png",
+          "badge": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-badge-mask-148cdbd21d7dc07e.png",
+          "jumperBlue": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-jumperBlue-mask-adf81aedb979726c.png",
+          "creamBand": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-creamBand-mask-0fc87ee6dde28177.png",
+          "trousers": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-trousers-mask-6e66283089e52d95.png",
+          "boots": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-boots-mask-49e2ee7b694bbfb1.png",
+          "skin": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-skin-mask-25217cfdfaf62807.png",
+          "hair": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-hair-mask-70c378b710bfeaaa.png",
+          "beard": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-beard-mask-17b4615b40728810.png",
+          "outline": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-outline-mask-a0c1ec9dd6c010f1.png"
+        }
+      },
+      "colourEvidence": {
+        "capCrown": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 1349,
+            "medianLuma": 76.807
+          },
+          "authority": {
+            "medianLuma": 76.807
+          },
+          "medianOklabDelta": 0.0
+        },
+        "capBandBrim": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 699,
+            "medianLuma": 55.111
+          },
+          "authority": {
+            "medianLuma": 55.111
+          },
+          "medianOklabDelta": 0.000323
+        },
+        "badge": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 292,
+            "medianLuma": 163.173
+          },
+          "authority": {
+            "medianLuma": 162.812
+          },
+          "medianOklabDelta": 0.000158
+        },
+        "jumperBlue": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 1971,
+            "medianLuma": 76.236
+          },
+          "authority": {
+            "medianLuma": 76.807
+          },
+          "medianOklabDelta": 0.002669
+        },
+        "creamBand": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 984,
+            "medianLuma": 237.242
+          },
+          "authority": {
+            "medianLuma": 237.242
+          },
+          "medianOklabDelta": 0.0
+        },
+        "trousers": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 3702,
+            "medianLuma": 58.183
+          },
+          "authority": {
+            "medianLuma": 58.183
+          },
+          "medianOklabDelta": 4e-06
+        },
+        "boots": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 3401,
+            "medianLuma": 63.544
+          },
+          "authority": {
+            "medianLuma": 63.544
+          },
+          "medianOklabDelta": 0.0
+        },
+        "skin": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 648,
+            "medianLuma": 196.841
+          },
+          "authority": {
+            "medianLuma": 196.841
+          },
+          "medianOklabDelta": 0.0
+        },
+        "hair": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 169,
+            "medianLuma": 235.384
+          },
+          "authority": {
+            "medianLuma": 235.384
+          },
+          "medianOklabDelta": 0.000304
+        },
+        "beard": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 612,
+            "medianLuma": 236.881
+          },
+          "authority": {
+            "medianLuma": 236.881
+          },
+          "medianOklabDelta": 0.0
+        },
+        "outline": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 4493,
+            "medianLuma": 2.864
+          },
+          "authority": {
+            "medianLuma": 2.864
+          },
+          "medianOklabDelta": 0.0
+        }
+      },
+      "contact": {
+        "status": "pass",
+        "contactPixels": 770,
+        "occludedHandlePixelsBehindEachHand": [
+          365,
+          405
+        ],
+        "visiblePropEdgeContact": {
+          "contactPixels": 0,
+          "contactBounds": null,
+          "status": "no-contact"
+        },
+        "propGeometry": {
+          "handCentresPx": [
+            [
+              171.107,
+              195.406
+            ],
+            [
+              192.007,
+              221.45
+            ]
+          ],
+          "handleTopPx": [
+            162.345,
+            184.487
+          ],
+          "collarPx": [
+            218.127,
+            254
+          ],
+          "bristleFloorY": 315,
+          "render": "4x supersampled detailed traditional broom: timber stock, ferrule, bound straw bundles and individual bristle strands",
+          "visualReference": {
+            "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/sources/generated/traditional-broom-detail-reference-generated.png",
+            "sha256": "cfb638200c1eff8d078798561fab4ee06896e8f23d567bd6047734a02c296214"
+          }
+        }
+      },
+      "bounds": {
+        "minX": 46,
+        "minY": 48,
+        "maxX": 296,
+        "maxY": 315,
+        "width": 251,
+        "height": 268,
+        "opaquePixels": 26742
+      }
+    },
+    "phase3": {
+      "id": "phase3",
+      "urls": {
+        "actor": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-actor-95047b434dcfae00.png",
+        "prop": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-prop-d45b1eaecf75f289.png",
+        "composite": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-composite-3fa9add5b0354a09.png",
+        "masks": {
+          "capCrown": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-capCrown-mask-3de846dee500cf8b.png",
+          "capBandBrim": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-capBandBrim-mask-f0f658c3391ece97.png",
+          "badge": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-badge-mask-230800feda0552e9.png",
+          "jumperBlue": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-jumperBlue-mask-e86f0f56e5dbfbc6.png",
+          "creamBand": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-creamBand-mask-ea8b14253b27482b.png",
+          "trousers": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-trousers-mask-1b87096c973dbc7b.png",
+          "boots": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-boots-mask-37987bbce7a71244.png",
+          "skin": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-skin-mask-afa892ed3addc450.png",
+          "hair": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-hair-mask-ae7af8d66a60c861.png",
+          "beard": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-beard-mask-7a14e5db5e35b29b.png",
+          "outline": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-outline-mask-a2fbc74070ac5a78.png"
+        }
+      },
+      "colourEvidence": {
+        "capCrown": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 1467,
+            "medianLuma": 76.807
+          },
+          "authority": {
+            "medianLuma": 76.807
+          },
+          "medianOklabDelta": 0.0
+        },
+        "capBandBrim": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 839,
+            "medianLuma": 55.111
+          },
+          "authority": {
+            "medianLuma": 55.111
+          },
+          "medianOklabDelta": 0.0
+        },
+        "badge": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 358,
+            "medianLuma": 163.173
+          },
+          "authority": {
+            "medianLuma": 162.812
+          },
+          "medianOklabDelta": 0.000962
+        },
+        "jumperBlue": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 2460,
+            "medianLuma": 76.236
+          },
+          "authority": {
+            "medianLuma": 76.807
+          },
+          "medianOklabDelta": 0.002669
+        },
+        "creamBand": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 1089,
+            "medianLuma": 237.312
+          },
+          "authority": {
+            "medianLuma": 237.242
+          },
+          "medianOklabDelta": 2.6e-05
+        },
+        "trousers": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 3895,
+            "medianLuma": 58.183
+          },
+          "authority": {
+            "medianLuma": 58.183
+          },
+          "medianOklabDelta": 0.0
+        },
+        "boots": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 3113,
+            "medianLuma": 63.544
+          },
+          "authority": {
+            "medianLuma": 63.544
+          },
+          "medianOklabDelta": 0.000173
+        },
+        "skin": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 898,
+            "medianLuma": 196.841
+          },
+          "authority": {
+            "medianLuma": 196.841
+          },
+          "medianOklabDelta": 0.0
+        },
+        "hair": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 161,
+            "medianLuma": 235.384
+          },
+          "authority": {
+            "medianLuma": 235.384
+          },
+          "medianOklabDelta": 0.000303
+        },
+        "beard": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 561,
+            "medianLuma": 236.881
+          },
+          "authority": {
+            "medianLuma": 236.881
+          },
+          "medianOklabDelta": 0.0
+        },
+        "outline": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 4693,
+            "medianLuma": 2.864
+          },
+          "authority": {
+            "medianLuma": 2.864
+          },
+          "medianOklabDelta": 0.0
+        }
+      },
+      "contact": {
+        "status": "pass",
+        "contactPixels": 601,
+        "occludedHandlePixelsBehindEachHand": [
+          347,
+          254
+        ],
+        "visiblePropEdgeContact": {
+          "contactPixels": 0,
+          "contactBounds": null,
+          "status": "no-contact"
+        },
+        "propGeometry": {
+          "handCentresPx": [
+            [
+              167.819,
+              199.217
+            ],
+            [
+              195.835,
+              228.067
+            ]
+          ],
+          "handleTopPx": [
+            165.299,
+            185.441
+          ],
+          "collarPx": [
+            200.579,
+            254
+          ],
+          "bristleFloorY": 315,
+          "render": "4x supersampled detailed traditional broom: timber stock, ferrule, bound straw bundles and individual bristle strands",
+          "visualReference": {
+            "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/sources/generated/traditional-broom-detail-reference-generated.png",
+            "sha256": "cfb638200c1eff8d078798561fab4ee06896e8f23d567bd6047734a02c296214"
+          }
+        }
+      },
+      "bounds": {
+        "minX": 50,
+        "minY": 49,
+        "maxX": 241,
+        "maxY": 315,
+        "width": 192,
+        "height": 267,
+        "opaquePixels": 27909
+      }
+    },
+    "phase4": {
+      "id": "phase4",
+      "urls": {
+        "actor": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-actor-1ec6986d12b166a8.png",
+        "prop": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-prop-1410d09cb5e0712a.png",
+        "composite": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-composite-52697586d00e7ab9.png",
+        "masks": {
+          "capCrown": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-capCrown-mask-a0dda91cf094d25a.png",
+          "capBandBrim": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-capBandBrim-mask-40427a0edaa71696.png",
+          "badge": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-badge-mask-01487869e7fd4b40.png",
+          "jumperBlue": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-jumperBlue-mask-666327d049b49eff.png",
+          "creamBand": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-creamBand-mask-35e154628c7211f9.png",
+          "trousers": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-trousers-mask-a29c453570494c4a.png",
+          "boots": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-boots-mask-1621a385b56e4840.png",
+          "skin": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-skin-mask-12f40e543afbbdee.png",
+          "hair": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-hair-mask-e154ac9e0ed9c9d0.png",
+          "beard": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-beard-mask-e35ee1dcc55d2cc8.png",
+          "outline": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-outline-mask-1943bb96800db053.png"
+        }
+      },
+      "colourEvidence": {
+        "capCrown": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 1607,
+            "medianLuma": 76.807
+          },
+          "authority": {
+            "medianLuma": 76.807
+          },
+          "medianOklabDelta": 0.0
+        },
+        "capBandBrim": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 817,
+            "medianLuma": 55.111
+          },
+          "authority": {
+            "medianLuma": 55.111
+          },
+          "medianOklabDelta": 0.00024
+        },
+        "badge": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 385,
+            "medianLuma": 162.812
+          },
+          "authority": {
+            "medianLuma": 162.812
+          },
+          "medianOklabDelta": 0.000285
+        },
+        "jumperBlue": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 2095,
+            "medianLuma": 76.236
+          },
+          "authority": {
+            "medianLuma": 76.807
+          },
+          "medianOklabDelta": 0.002669
+        },
+        "creamBand": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 1010,
+            "medianLuma": 237.242
+          },
+          "authority": {
+            "medianLuma": 237.242
+          },
+          "medianOklabDelta": 0.0
+        },
+        "trousers": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 3678,
+            "medianLuma": 58.183
+          },
+          "authority": {
+            "medianLuma": 58.183
+          },
+          "medianOklabDelta": 8e-06
+        },
+        "boots": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 2515,
+            "medianLuma": 63.544
+          },
+          "authority": {
+            "medianLuma": 63.544
+          },
+          "medianOklabDelta": 0.0
+        },
+        "skin": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 529,
+            "medianLuma": 196.841
+          },
+          "authority": {
+            "medianLuma": 196.841
+          },
+          "medianOklabDelta": 0.0
+        },
+        "hair": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 59,
+            "medianLuma": 235.384
+          },
+          "authority": {
+            "medianLuma": 235.384
+          },
+          "medianOklabDelta": 0.00038
+        },
+        "beard": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 344,
+            "medianLuma": 236.881
+          },
+          "authority": {
+            "medianLuma": 236.881
+          },
+          "medianOklabDelta": 0.0
+        },
+        "outline": {
+          "status": "pass",
+          "candidate": {
+            "pixels": 4599,
+            "medianLuma": 2.864
+          },
+          "authority": {
+            "medianLuma": 2.864
+          },
+          "medianOklabDelta": 0.0
+        }
+      },
+      "contact": {
+        "status": "pass",
+        "contactPixels": 715,
+        "occludedHandlePixelsBehindEachHand": [
+          348,
+          367
+        ],
+        "visiblePropEdgeContact": {
+          "contactPixels": 0,
+          "contactBounds": null,
+          "status": "no-contact"
+        },
+        "propGeometry": {
+          "handCentresPx": [
+            [
+              189.684,
+              214.749
+            ],
+            [
+              211.218,
+              240.166
+            ]
+          ],
+          "handleTopPx": [
+            180.635,
+            204.067
+          ],
+          "collarPx": [
+            222.938,
+            254
+          ],
+          "bristleFloorY": 315,
+          "render": "4x supersampled detailed traditional broom: timber stock, ferrule, bound straw bundles and individual bristle strands",
+          "visualReference": {
+            "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v2/sources/generated/traditional-broom-detail-reference-generated.png",
+            "sha256": "cfb638200c1eff8d078798561fab4ee06896e8f23d567bd6047734a02c296214"
+          }
+        }
+      },
+      "bounds": {
+        "minX": 46,
+        "minY": 67,
+        "maxX": 303,
+        "maxY": 315,
+        "width": 258,
+        "height": 249,
+        "opaquePixels": 26353
+      }
+    }
+  },
+  "actionPath": [
+    "neutral",
+    "acquire",
+    "phase1",
+    "phase2",
+    "phase3",
+    "phase4",
+    "phase3",
+    "phase2",
+    "phase1",
+    "acquire",
+    "neutral"
+  ],
+  "actionLoop": [
+    "phase1",
+    "phase2",
+    "phase3",
+    "phase4",
+    "phase3",
+    "phase2"
+  ],
+  "route": [
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f1-0e80ea65610452c9.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F1",
+      "actorRootXLp": 41.875,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f2-2b8e91de747b527d.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F2",
+      "actorRootXLp": 44.5,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f3-b376254e9c29da38.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F3",
+      "actorRootXLp": 47.125,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f4-982646b0b0e6f3f9.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F4",
+      "actorRootXLp": 49.75,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f5-545e7338151e6e5a.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F5",
+      "actorRootXLp": 52.375,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f6-17d007eee75c2e86.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F6",
+      "actorRootXLp": 55.0,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f7-dbf5b3849624cec7.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F7",
+      "actorRootXLp": 57.625,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f8-cf8c53e7ffa703a5.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F8",
+      "actorRootXLp": 60.25,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f1-0e80ea65610452c9.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F1",
+      "actorRootXLp": 62.875,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f2-2b8e91de747b527d.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F2",
+      "actorRootXLp": 65.5,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f3-b376254e9c29da38.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F3",
+      "actorRootXLp": 68.125,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f4-982646b0b0e6f3f9.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F4",
+      "actorRootXLp": 70.75,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f5-545e7338151e6e5a.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F5",
+      "actorRootXLp": 73.375,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f6-17d007eee75c2e86.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F6",
+      "actorRootXLp": 76.0,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f7-dbf5b3849624cec7.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F7",
+      "actorRootXLp": 78.625,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f8-cf8c53e7ffa703a5.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk",
+      "label": "approved Walk V6 F8",
+      "actorRootXLp": 81.25,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-bridge-f4-9f4192beb8fecbc8.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "phase-correct stop",
+      "label": "approved deceleration bridge 3",
+      "actorRootXLp": 83.875,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 83,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-bridge-f3-0169b3642905389d.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "phase-correct stop",
+      "label": "approved deceleration bridge 2",
+      "actorRootXLp": 86.125,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 83,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-bridge-f2-e54546ba14b4e5f7.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "phase-correct stop",
+      "label": "approved deceleration bridge 1",
+      "actorRootXLp": 87.625,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 83,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/exact-prime-side-right-a172a8a01a387a21.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "exact neutral",
+      "label": "exact approved side-right neutral \u00b7 broom staged separately",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 125,
+      "actionId": "neutral"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-actor-363df5b71551d9e0.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-prop-1cb747b9b9b9360b.png",
+      "phase": "action entry",
+      "label": "measured two-hand broom acquisition",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 140,
+      "actionId": "acquire"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-actor-829733bd68a59f9a.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-prop-7659cb8f54743b84.png",
+      "phase": "sweeping loop",
+      "label": "full sweep loop 1 \u00b7 phase1",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase1"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-actor-1765d4b4a8af899b.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-prop-b746c96b81c2f211.png",
+      "phase": "sweeping loop",
+      "label": "full sweep loop 1 \u00b7 phase2",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase2"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-actor-95047b434dcfae00.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-prop-d45b1eaecf75f289.png",
+      "phase": "sweeping loop",
+      "label": "full sweep loop 1 \u00b7 phase3",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase3"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-actor-1ec6986d12b166a8.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-prop-1410d09cb5e0712a.png",
+      "phase": "sweeping loop",
+      "label": "full sweep loop 1 \u00b7 phase4",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase4"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-actor-95047b434dcfae00.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-prop-d45b1eaecf75f289.png",
+      "phase": "sweeping loop",
+      "label": "full sweep loop 1 \u00b7 phase3",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase3"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-actor-1765d4b4a8af899b.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-prop-b746c96b81c2f211.png",
+      "phase": "sweeping loop",
+      "label": "full sweep loop 1 \u00b7 phase2",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase2"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-actor-829733bd68a59f9a.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-prop-7659cb8f54743b84.png",
+      "phase": "sweeping loop",
+      "label": "full sweep loop 2 \u00b7 phase1",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase1"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-actor-1765d4b4a8af899b.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-prop-b746c96b81c2f211.png",
+      "phase": "sweeping loop",
+      "label": "full sweep loop 2 \u00b7 phase2",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase2"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-actor-95047b434dcfae00.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-prop-d45b1eaecf75f289.png",
+      "phase": "sweeping loop",
+      "label": "full sweep loop 2 \u00b7 phase3",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase3"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-actor-1ec6986d12b166a8.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-prop-1410d09cb5e0712a.png",
+      "phase": "sweeping loop",
+      "label": "full sweep loop 2 \u00b7 phase4",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase4"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-actor-95047b434dcfae00.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-prop-d45b1eaecf75f289.png",
+      "phase": "sweeping loop",
+      "label": "full sweep loop 2 \u00b7 phase3",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase3"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-actor-1765d4b4a8af899b.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-prop-b746c96b81c2f211.png",
+      "phase": "sweeping loop",
+      "label": "full sweep loop 2 \u00b7 phase2",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase2"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-actor-829733bd68a59f9a.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-prop-7659cb8f54743b84.png",
+      "phase": "action exit",
+      "label": "controlled sweep recovery",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 140,
+      "actionId": "phase1"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-actor-363df5b71551d9e0.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/acquire-prop-1cb747b9b9b9360b.png",
+      "phase": "action exit",
+      "label": "return broom upright",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 140,
+      "actionId": "acquire"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-actor-3df7882782cac298.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "action exit",
+      "label": "exact approved side-right neutral",
+      "actorRootXLp": 86,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 140,
+      "actionId": "neutral"
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-bridge-f2-e54546ba14b4e5f7.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "phase-correct walk start",
+      "label": "approved acceleration bridge 1",
+      "actorRootXLp": 86.25,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 83,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-bridge-f3-0169b3642905389d.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "phase-correct walk start",
+      "label": "approved acceleration bridge 2",
+      "actorRootXLp": 87.0,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 83,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-bridge-f4-9f4192beb8fecbc8.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "phase-correct walk start",
+      "label": "approved acceleration bridge 3",
+      "actorRootXLp": 88.5,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 83,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f1-0e80ea65610452c9.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "phase-correct walk start",
+      "label": "approved Walk V6 F1",
+      "actorRootXLp": 90.75,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 83,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f2-2b8e91de747b527d.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk away",
+      "label": "approved Walk V6 F2",
+      "actorRootXLp": 93.375,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f3-b376254e9c29da38.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk away",
+      "label": "approved Walk V6 F3",
+      "actorRootXLp": 96.0,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f4-982646b0b0e6f3f9.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk away",
+      "label": "approved Walk V6 F4",
+      "actorRootXLp": 98.625,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f5-545e7338151e6e5a.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk away",
+      "label": "approved Walk V6 F5",
+      "actorRootXLp": 101.25,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f6-17d007eee75c2e86.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk away",
+      "label": "approved Walk V6 F6",
+      "actorRootXLp": 103.875,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f7-dbf5b3849624cec7.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk away",
+      "label": "approved Walk V6 F7",
+      "actorRootXLp": 106.5,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f8-cf8c53e7ffa703a5.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/neutral-prop-d6cd51b3d18c65ad.png",
+      "phase": "approved walk away",
+      "label": "approved Walk V6 F8",
+      "actorRootXLp": 109.125,
+      "propRootXLp": 86,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null
+    }
+  ],
+  "cupboardRoute": [
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f1-0e80ea65610452c9.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk toward cupboard",
+      "label": "approved Walk V6 F1 \u2192 cupboard",
+      "actorRootXLp": 22.0,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f2-2b8e91de747b527d.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk toward cupboard",
+      "label": "approved Walk V6 F2 \u2192 cupboard",
+      "actorRootXLp": 37.5,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f3-b376254e9c29da38.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk toward cupboard",
+      "label": "approved Walk V6 F3 \u2192 cupboard",
+      "actorRootXLp": 53.0,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f4-982646b0b0e6f3f9.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk toward cupboard",
+      "label": "approved Walk V6 F4 \u2192 cupboard",
+      "actorRootXLp": 68.5,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f5-545e7338151e6e5a.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk toward cupboard",
+      "label": "approved Walk V6 F5 \u2192 cupboard",
+      "actorRootXLp": 84.0,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f6-17d007eee75c2e86.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk toward cupboard",
+      "label": "approved Walk V6 F6 \u2192 cupboard",
+      "actorRootXLp": 99.5,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f7-dbf5b3849624cec7.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk toward cupboard",
+      "label": "approved Walk V6 F7 \u2192 cupboard",
+      "actorRootXLp": 115.0,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f8-cf8c53e7ffa703a5.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk toward cupboard",
+      "label": "approved Walk V6 F8 \u2192 cupboard",
+      "actorRootXLp": 130.5,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f1-0e80ea65610452c9.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "fully obscured state handoff",
+      "label": "100% hidden by cupboard door \u00b7 standard walk \u2192 sweep-left",
+      "actorRootXLp": 145,
+      "propRootXLp": 145,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 125,
+      "actionId": null,
+      "cupboard": "closed",
+      "mirror": false,
+      "hidden": true
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-actor-829733bd68a59f9a.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-prop-7659cb8f54743b84.png",
+      "phase": "sweep-walk outward",
+      "label": "sweeping left \u00b7 moving leg phase phase1",
+      "actorRootXLp": 142.0,
+      "propRootXLp": 142.0,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase1",
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-actor-1765d4b4a8af899b.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-prop-b746c96b81c2f211.png",
+      "phase": "sweep-walk outward",
+      "label": "sweeping left \u00b7 moving leg phase phase2",
+      "actorRootXLp": 137.6,
+      "propRootXLp": 137.6,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase2",
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-actor-95047b434dcfae00.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-prop-d45b1eaecf75f289.png",
+      "phase": "sweep-walk outward",
+      "label": "sweeping left \u00b7 moving leg phase phase3",
+      "actorRootXLp": 133.2,
+      "propRootXLp": 133.2,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase3",
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-actor-1ec6986d12b166a8.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-prop-1410d09cb5e0712a.png",
+      "phase": "sweep-walk outward",
+      "label": "sweeping left \u00b7 moving leg phase phase4",
+      "actorRootXLp": 128.8,
+      "propRootXLp": 128.8,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase4",
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-actor-95047b434dcfae00.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-prop-d45b1eaecf75f289.png",
+      "phase": "sweep-walk outward",
+      "label": "sweeping left \u00b7 moving leg phase phase3",
+      "actorRootXLp": 124.4,
+      "propRootXLp": 124.4,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase3",
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-actor-1765d4b4a8af899b.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-prop-b746c96b81c2f211.png",
+      "phase": "sweep-walk outward",
+      "label": "sweeping left \u00b7 moving leg phase phase2",
+      "actorRootXLp": 120.0,
+      "propRootXLp": 120.0,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase2",
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-actor-829733bd68a59f9a.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-prop-7659cb8f54743b84.png",
+      "phase": "sweep-walk outward",
+      "label": "sweeping left \u00b7 moving leg phase phase1",
+      "actorRootXLp": 115.6,
+      "propRootXLp": 115.6,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase1",
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-actor-1765d4b4a8af899b.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-prop-b746c96b81c2f211.png",
+      "phase": "sweep-walk outward",
+      "label": "sweeping left \u00b7 moving leg phase phase2",
+      "actorRootXLp": 111.19999999999999,
+      "propRootXLp": 111.19999999999999,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase2",
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-actor-95047b434dcfae00.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-prop-d45b1eaecf75f289.png",
+      "phase": "sweep-walk outward",
+      "label": "sweeping left \u00b7 moving leg phase phase3",
+      "actorRootXLp": 106.8,
+      "propRootXLp": 106.8,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase3",
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-actor-1ec6986d12b166a8.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-prop-1410d09cb5e0712a.png",
+      "phase": "sweep-walk outward",
+      "label": "sweeping left \u00b7 moving leg phase phase4",
+      "actorRootXLp": 102.4,
+      "propRootXLp": 102.4,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase4",
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-actor-95047b434dcfae00.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-prop-d45b1eaecf75f289.png",
+      "phase": "sweep-walk outward",
+      "label": "sweeping left \u00b7 moving leg phase phase3",
+      "actorRootXLp": 98.0,
+      "propRootXLp": 98.0,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase3",
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-actor-1765d4b4a8af899b.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-prop-b746c96b81c2f211.png",
+      "phase": "sweep-walk outward",
+      "label": "sweeping left \u00b7 moving leg phase phase2",
+      "actorRootXLp": 93.6,
+      "propRootXLp": 93.6,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase2",
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-actor-1765d4b4a8af899b.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-prop-b746c96b81c2f211.png",
+      "phase": "sweep turnaround proxy",
+      "label": "directional turnaround \u00b7 phase2",
+      "actorRootXLp": 90,
+      "propRootXLp": 90,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 160,
+      "actionId": "phase2",
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-actor-829733bd68a59f9a.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-prop-7659cb8f54743b84.png",
+      "phase": "sweep turnaround proxy",
+      "label": "directional turnaround \u00b7 phase1",
+      "actorRootXLp": 90,
+      "propRootXLp": 90,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 160,
+      "actionId": "phase1",
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-actor-829733bd68a59f9a.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-prop-7659cb8f54743b84.png",
+      "phase": "sweep-walk return",
+      "label": "sweeping right \u00b7 moving leg phase phase1",
+      "actorRootXLp": 94.0,
+      "propRootXLp": 94.0,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase1",
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-actor-1765d4b4a8af899b.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-prop-b746c96b81c2f211.png",
+      "phase": "sweep-walk return",
+      "label": "sweeping right \u00b7 moving leg phase phase2",
+      "actorRootXLp": 98.15,
+      "propRootXLp": 98.15,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase2",
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-actor-95047b434dcfae00.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-prop-d45b1eaecf75f289.png",
+      "phase": "sweep-walk return",
+      "label": "sweeping right \u00b7 moving leg phase phase3",
+      "actorRootXLp": 102.3,
+      "propRootXLp": 102.3,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase3",
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-actor-1ec6986d12b166a8.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-prop-1410d09cb5e0712a.png",
+      "phase": "sweep-walk return",
+      "label": "sweeping right \u00b7 moving leg phase phase4",
+      "actorRootXLp": 106.45,
+      "propRootXLp": 106.45,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase4",
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-actor-95047b434dcfae00.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-prop-d45b1eaecf75f289.png",
+      "phase": "sweep-walk return",
+      "label": "sweeping right \u00b7 moving leg phase phase3",
+      "actorRootXLp": 110.6,
+      "propRootXLp": 110.6,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase3",
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-actor-1765d4b4a8af899b.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-prop-b746c96b81c2f211.png",
+      "phase": "sweep-walk return",
+      "label": "sweeping right \u00b7 moving leg phase phase2",
+      "actorRootXLp": 114.75,
+      "propRootXLp": 114.75,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase2",
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-actor-829733bd68a59f9a.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase1-prop-7659cb8f54743b84.png",
+      "phase": "sweep-walk return",
+      "label": "sweeping right \u00b7 moving leg phase phase1",
+      "actorRootXLp": 118.9,
+      "propRootXLp": 118.9,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase1",
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-actor-1765d4b4a8af899b.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-prop-b746c96b81c2f211.png",
+      "phase": "sweep-walk return",
+      "label": "sweeping right \u00b7 moving leg phase phase2",
+      "actorRootXLp": 123.05000000000001,
+      "propRootXLp": 123.05000000000001,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase2",
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-actor-95047b434dcfae00.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-prop-d45b1eaecf75f289.png",
+      "phase": "sweep-walk return",
+      "label": "sweeping right \u00b7 moving leg phase phase3",
+      "actorRootXLp": 127.2,
+      "propRootXLp": 127.2,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase3",
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-actor-1ec6986d12b166a8.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase4-prop-1410d09cb5e0712a.png",
+      "phase": "sweep-walk return",
+      "label": "sweeping right \u00b7 moving leg phase phase4",
+      "actorRootXLp": 131.35,
+      "propRootXLp": 131.35,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase4",
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-actor-95047b434dcfae00.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase3-prop-d45b1eaecf75f289.png",
+      "phase": "sweep-walk return",
+      "label": "sweeping right \u00b7 moving leg phase phase3",
+      "actorRootXLp": 135.5,
+      "propRootXLp": 135.5,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase3",
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-actor-1765d4b4a8af899b.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/phase2-prop-b746c96b81c2f211.png",
+      "phase": "sweep-walk return",
+      "label": "sweeping right \u00b7 moving leg phase phase2",
+      "actorRootXLp": 139.65,
+      "propRootXLp": 139.65,
+      "actorCellWidthLp": 48,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 145,
+      "actionId": "phase2",
+      "cupboard": "open",
+      "mirror": false,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f1-0e80ea65610452c9.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "fully obscured state handoff",
+      "label": "100% hidden by cupboard door \u00b7 sweep-right \u2192 standard walk-left",
+      "actorRootXLp": 145,
+      "propRootXLp": 145,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 125,
+      "actionId": null,
+      "cupboard": "closed",
+      "mirror": false,
+      "hidden": true
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f8-cf8c53e7ffa703a5.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk from cupboard",
+      "label": "approved mirrored Walk V6 F8 \u2190 cupboard",
+      "actorRootXLp": 137.0,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f7-dbf5b3849624cec7.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk from cupboard",
+      "label": "approved mirrored Walk V6 F7 \u2190 cupboard",
+      "actorRootXLp": 121.5,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f6-17d007eee75c2e86.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk from cupboard",
+      "label": "approved mirrored Walk V6 F6 \u2190 cupboard",
+      "actorRootXLp": 106.0,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f5-545e7338151e6e5a.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk from cupboard",
+      "label": "approved mirrored Walk V6 F5 \u2190 cupboard",
+      "actorRootXLp": 90.5,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f4-982646b0b0e6f3f9.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk from cupboard",
+      "label": "approved mirrored Walk V6 F4 \u2190 cupboard",
+      "actorRootXLp": 75.0,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f3-b376254e9c29da38.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk from cupboard",
+      "label": "approved mirrored Walk V6 F3 \u2190 cupboard",
+      "actorRootXLp": 59.5,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f2-2b8e91de747b527d.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk from cupboard",
+      "label": "approved mirrored Walk V6 F2 \u2190 cupboard",
+      "actorRootXLp": 44.0,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    },
+    {
+      "actorSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/approved-walk-f1-0e80ea65610452c9.png",
+      "propSrc": "/keeper-review/keeper-prime-sweep-broom-v2/assets/empty-prop-f9878b0c741705ce.png",
+      "phase": "standard walk from cupboard",
+      "label": "approved mirrored Walk V6 F1 \u2190 cupboard",
+      "actorRootXLp": 28.5,
+      "propRootXLp": 0,
+      "actorCellWidthLp": 32,
+      "propCellWidthLp": 48,
+      "anchorXLp": 16,
+      "bottomLp": 52,
+      "durationMs": 100,
+      "actionId": null,
+      "cupboard": "open",
+      "mirror": true,
+      "hidden": false
+    }
+  ],
+  "timing": {
+    "walkFps": 10,
+    "decelerationFps": 12,
+    "actionFrameMs": 145,
+    "actionLoopIndependent": true
+  }
+}

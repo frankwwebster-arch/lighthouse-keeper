@@ -2149,7 +2149,7 @@ Also inspect `docs/keeper-scale-audit/review.html` visually:
 - first/last/loop seams and complete routes are checked in frozen onion-skin;
 - props and costumes change only at declared handovers or full occlusion.
 
-## Prime back sit/stand V2 approval and sweep-broom V1 (18 Oct 2026)
+## Prime back sit/stand V2 approval and sweep-broom V2 (18 Oct 2026)
 
 Frank explicitly approved exact Prime back sit/stand V2. The durable,
 hash-pinned decision is
@@ -2159,31 +2159,25 @@ authority, including the corrected exact-Prime material colours and separate
 foreground chair rear. It does not approve either rear angle and does not
 promote the art into Workbench Final, runtime or production.
 
-The next immutable candidate is Prime `keeper_sweep_broom` V1 at
-`/keeper-review/keeper-prime-sweep-broom-v1/`. The old sweep strip contributes
-only choreography. All visible Keeper art comes from the approved Prime
-authorities; the exact side-right neutral is byte-identical at entry and exit.
-Five new actor-only source poses are registered at one uniform scale, then
-recoloured and checked by 11 disjoint semantic material groups against the
-exact same-facing Prime authority. A traditional broom is rendered and owned
-separately behind both measured grip regions. Every actor and broom meets floor
-row 315 and every 384 × 320 cell has at least a four-pixel transparent gutter.
+Prime `keeper_sweep_broom` V1 remains immutable, unapproved review provenance.
+Frank identified lower-jumper artefacts throughout V1's repeated action frames
+and judged its prop too mop-like; V1's deploy `84c8f6b` remains delivery
+evidence only. V2 is the next immutable candidate at
+`/keeper-review/keeper-prime-sweep-broom-v2/`. It rebuilds the named lower-hem
+region in each action actor from an exact Prime jumper-blue swatch, preserving
+the rest of every Prime-derived actor and all 11 per-material gates. Its
+separately owned traditional broom is rebuilt with a timber stock, ferrule,
+bindings and individual straw bundles; the handle remains measured behind both
+hands and every actor/prop reaches floor row 315 with a four-pixel gutter.
 
-The 47-frame route is two Walk V6 cycles → approved deceleration → exact
-neutral → acquisition → two full six-phase sweeps → controlled exit → exact
-neutral → approved acceleration → Walk V6 away. The reviewer includes complete
-route, isolated action and repeatable loop modes, large/gameplay/literal 1×
-scales, previous-frame and Prime ghosts, component masks and per-frame colour
-evidence. V1 awaits Frank and must not be promoted. Any amendment is a new V2.
-
-Production review delivery is pinned to deploy commit `84c8f6b`. On 18 October
-2026 the live page returned HTTP 200, all 98 unique image URLs returned valid
-image data, and the in-browser reviewer decoded all 98 before enabling its
-controls. The six-frame loop advanced during playback, previous-frame ghosting
-toggled correctly, the sampled phase-2 frame showed 724 pixels of broom/hand
-overlap, all 11 material checks passed, and the console reported no errors.
-This is delivery provenance only; the candidate remains unapproved and
-unpromoted.
+V2 retains the 47-frame walk/stop/action/exit/walk contract route and adds a
+separate cupboard-proxy mode that demonstrates the intended runtime handoff:
+standard walk right → fully obscured swap to sweep-left → root-moving,
+leg-cycling outward sweep → directional turnaround proxy → root-moving,
+leg-cycling return sweep → fully obscured swap to standard walk-left. The
+reviewer retains action/loop modes, large/gameplay/literal 1× scales,
+previous-frame and Prime ghosts, component masks and per-frame colour evidence.
+V2 awaits Frank and must not be promoted. Any amendment is a new V3.
 
 ## Ready-to-paste opening prompt for the next review iteration
 

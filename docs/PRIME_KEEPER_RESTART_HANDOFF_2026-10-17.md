@@ -127,30 +127,24 @@ remain delivery provenance only. Back V2 is live from exact deploy commit
 images returned valid PNG data on 18 October 2026. Live delivery is never
 artwork approval.
 
-Prime `keeper_sweep_broom` V1 is now the active review candidate at
-`/keeper-review/keeper-prime-sweep-broom-v1/`. Its historical eight-frame
-strip supplies only joint paths, weight transfer, broom travel, hand contact
-and timing; zero visible historical Keeper pixels are reused. The candidate
-uses the byte-exact approved side-right neutral, five new Prime-derived action
-poses and a separately owned deterministic broom whose shaft is measured
-behind both hands in every held frame. All actors and bristles share floor row
-315 in 384 × 320 density-8 cells with at least four transparent pixels at every
-cell edge. Eleven disjoint material groups pass exact same-facing Prime colour
-evidence in all six unique frames and adjacent-frame luminance checks. The
-47-frame context is two approved walk cycles → approved deceleration → exact
-neutral → acquisition → two complete six-phase loops → controlled exit → exact
-neutral → approved acceleration → Walk V6 away. Large, 4 px/lp gameplay and
-literal 1 px/lp playback, previous/Prime ghosts, material masks and
-frame-by-frame comparisons are included. V1 is unapproved and unpromoted.
+Prime `keeper_sweep_broom` V1 remains immutable, unapproved review history at
+`/keeper-review/keeper-prime-sweep-broom-v1/`. Frank found lower-jumper
+artefacts across its repeated action range and a mop-like broom read. The V1
+live-delivery record at deploy commit `84c8f6b` remains evidence only.
 
-The reviewer was delivered from exact deploy commit `84c8f6b` on 18 October
-2026. The live route returned HTTP 200 and all 98 unique embedded image URLs
-returned valid image data. In-browser verification confirmed that the page
-decoded all 98 images before enabling controls, the repeatable six-frame loop
-advanced under playback, previous-frame ghosting toggled correctly, the sampled
-phase-2 frame reported 724 pixels of broom/hand overlap, all 11 material rows
-passed, and the browser console contained no errors. This records delivery
-only; V1 still awaits Frank's visual decision.
+Prime `keeper_sweep_broom` V2 is the active review candidate at
+`/keeper-review/keeper-prime-sweep-broom-v2/`. It preserves V1 byte-for-byte
+and changes only the named action defects: every generated action pose receives
+pose-relative lower-hem cleanup from an exact Prime jumper-blue swatch, while a
+separately owned traditional broom replaces the simplified prop (wood handle,
+iron ferrule, timber stock, bindings and individual straw bundles). The exact
+side-right neutral, common 315 floor, four-pixel gutters, two-hand contact,
+eleven disjoint material gates and all historical-art restrictions remain
+unchanged. Alongside the original 47-frame contract route, V2 adds a
+cupboard-proxy context: approved standard walk right → a 100%-hidden state
+swap → root-moving, leg-cycling sweep left → directional turnaround proxy →
+root-moving, leg-cycling sweep right → a second 100%-hidden swap → mirrored
+approved standard walk left. V2 is unapproved and unpromoted.
 
 ## Binding method for every inherited animation
 
@@ -268,11 +262,10 @@ checkpoint no Prime animation has been promoted into Final/runtime/production.
 
 ## Exact next-task boundary
 
-Stop for Frank's visual decision on the live Prime `keeper_sweep_broom` V1
-reviewer. If he approves it, write a separate hash-pinned decision and still
-promote nothing without another explicit instruction. If he requests changes,
-create V2 and preserve this V1 byte-for-byte. After that decision, decide
-whether to continue the standard standing-interaction queue or first audit
-whether the approved turn network makes separate rear-angle sit/stand
-transitions unnecessary. One accepted family at a time remains the safe
-cadence.
+Deploy and stop for Frank's visual decision on Prime `keeper_sweep_broom` V2.
+If he approves it, write a separate hash-pinned decision and still promote
+nothing without another explicit instruction. If he requests changes, create
+V3 and preserve V1 and V2 byte-for-byte. After that decision, decide whether
+to continue the standard standing-interaction queue or first audit whether the
+approved turn network makes separate rear-angle sit/stand transitions
+unnecessary. One accepted family at a time remains the safe cadence.
