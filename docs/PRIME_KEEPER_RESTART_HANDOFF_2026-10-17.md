@@ -313,5 +313,5 @@ whole-garment average. Prop dimensions and per-frame bounds remain recorded in
 future hoovering, lawn-mowing or other tool variants. V6 changes no
 Final/runtime artwork or game logic and may not be promoted without a later,
 separate explicit instruction. The immutable V6 candidate is commit
-`59990fcc`; the public shell must remain pinned to that exact candidate rather
+`59990fcc`; shell-pin commit `a69b5bc4` fetches that exact candidate rather
 than mutable `main`.
