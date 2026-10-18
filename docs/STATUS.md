@@ -93,12 +93,16 @@ The subsequent scale review is `/keeper-review/kitchen-game-scale-prime-v26/`. I
 V25 at the exact `193 × 56-lp` room contract and `4 px/lp` presentation, both
 alone and with the `32 × 40-lp` Prime standing and seated rear-facing at the
 table. V26 is derived evidence only; V25 and all Keeper sources are unchanged.
-The current kitchen art review is `/keeper-review/kitchen-broken-loops-v27/`.
-It corrects the chair-back foreground in the rear-facing seated proof and shows
-all eight requested repair loops in situ and individually at density 4. The
-loops are eight frames at 8 fps, use seven reusable effect strips, and carry
-named placeholder SFX cues. V27 is review-only and does not change runtime,
-Final art or canonical V20–V26 sources.
+Kitchen V27 at `/keeper-review/kitchen-broken-loops-v27/` is retained as
+rejected provenance. Its short, fast loops and independently constructed fault
+art are not reused as the visual or timing authority for replacement work.
+The current kitchen art review is `/keeper-review/kitchen-bin-states-v28/`.
+It redraws the pedal bin from scratch as a coordinated static standard/broken
+family, adds a restrained floor spill to the overflowing state, and shows both
+states in the exact 772 × 224 px game-scale room. The object itself does not
+animate. Two reusable 24-frame/4-fps environmental layers provide a six-second
+green miasma and slow-fly loop anchored to the opening. V28 is review-only and
+does not change runtime, Final art or canonical V20–V27 sources.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
