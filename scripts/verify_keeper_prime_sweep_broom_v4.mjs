@@ -78,5 +78,6 @@ for (const handoff of route.route.filter(frame => frame.phase === 'fully obscure
 for (const asset of register.publishedAssets) assert.equal(sha(asset.source), asset.sourceSha256)
 for (const token of ['Large inspection · 6 px/lp', 'Gameplay scale · 4 px/lp', 'Literal 1× · 1 px/lp', 'Previous-frame ghost', 'Loading and decoding every unique frame', 'img.decode', 'door fully covers Keeper and broom']) assert.ok(reviewer.includes(token), token)
 assert.doesNotMatch(reviewer, /keeper-prime-sweep-broom-v3\/assets/)
-assert.match(page, /__V4_COMMIT__/)
+assert.match(page, /f1ec511/)
+assert.doesNotMatch(page, /__V4_COMMIT__/)
 console.log('Prime sweep-broom V4 verified: stock broom, isolated cells, moving-leg sweep, held-broom reversal, physical cupboard occlusion, exact actor/prop recomposition, no promotion.')
