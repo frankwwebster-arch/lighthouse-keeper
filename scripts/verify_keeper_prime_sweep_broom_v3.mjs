@@ -72,5 +72,6 @@ for (const handoff of route.cupboardRoute.filter(x => x.phase === 'fully obscure
 for (const asset of register.publishedAssets) assert.equal(sha(asset.source), asset.sourceSha256)
 for (const token of ['Cupboard handoff','approved core reversal turn','approved Walk V6 gait','width:80px','Loading and decoding every unique frame','img.decode','Previous-frame ghost','Frame-by-frame Prime comparison']) assert.ok(reviewer.includes(token), token)
 assert.equal(reviewer.includes("frame.hidden?'hidden'"), false)
-assert.match(page, /__V3_COMMIT__/, 'pin the shell only after the immutable candidate commit exists')
+assert.match(page, /c12a779/, 'shell must pin the initial immutable candidate commit')
+assert.doesNotMatch(page, /__V3_COMMIT__/)
 console.log('Prime sweep-broom V3 verified: rebuilt hem, approved Walk V6 gait, approved V9 reversal, full physical door occlusion, all-frame material gates, no promotion.')
