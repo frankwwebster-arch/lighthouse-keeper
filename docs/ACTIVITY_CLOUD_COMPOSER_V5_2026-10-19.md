@@ -2,7 +2,7 @@
 
 Date: 19 October 2026
 
-Status: immutable, reversible review candidate; not approved, promoted or deployed
+Status: immutable, reversible review candidate; not approved or promoted; review page publicly reachable after an unrelated concurrent deployment
 
 ## Outcome
 
@@ -54,4 +54,6 @@ The generation method, exact accepted prompts and source mapping are in `art/dra
 
 ## Approval boundary
 
-V5 asks only whether this broader component vocabulary and composer workflow are useful. It does not approve a suggested recipe, dedicated body pose, runtime wiring, Kitchen amendment, sound effect or deployment.
+V5 asks only whether this broader component vocabulary and composer workflow are useful. It does not approve a suggested recipe, dedicated body pose, runtime wiring, Kitchen amendment or sound effect.
+
+No deployment was initiated for V5. After V5 commit `a4c179c7` reached `main`, the concurrent Kitchen V27 work created deployment commit `19cc2a7f`, which included V5 as an ancestor and therefore made the review page publicly reachable. This incidental publication did not promote V5, change Final/runtime assets or authorise any V5 content for the game.
