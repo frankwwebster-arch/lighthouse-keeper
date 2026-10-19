@@ -160,6 +160,7 @@
     "verify:keeper-prime-sweep-broom-v2": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_sweep_broom_v2.mjs",
     "verify:keeper-prime-back-work-activity-callout-v1": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_back_work_activity_callout_v1.mjs",
     "verify:keeper-prime-back-work-activity-callout-v2": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_back_work_activity_callout_v2.mjs",
+    "verify:keeper-prime-back-work-activity-callout-v3": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_back_work_activity_callout_v3.mjs",
     "verify:keeper-prime-sweep-broom-v7": "node scripts/verify_keeper_prime_sweep_broom_v7.mjs",
     "verify:keeper-prime-sweep-broom-v8": "node scripts/verify_keeper_prime_sweep_broom_v8.mjs",
     "verify:keeper-prime-upper-body-override-poc-v1": "node scripts/verify_keeper_prime_upper_body_override_poc_v1.mjs",

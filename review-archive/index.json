@@ -11,12 +11,12 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 159,
-    "referenceCount": 3915,
-    "uniqueObjectCount": 2385,
-    "logicalBytes": 315192254,
-    "uniqueBytes": 166783876,
-    "deduplicatedBytes": 148408378
+    "setCount": 160,
+    "referenceCount": 3985,
+    "uniqueObjectCount": 2439,
+    "logicalBytes": 323662657,
+    "uniqueBytes": 174563975,
+    "deduplicatedBytes": 149098682
   },
   "legacyPaths": {
     "/keeper-review/drafts/00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271.png": {
@@ -1329,6 +1329,496 @@
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/01/01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f.png"
     },
     "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-sponge-aed0b35f1bf279fe.png": {
+      "sha256": "aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533",
+      "extension": ".png",
+      "bytes": 49751,
+      "object": "review-archive/objects/ae/aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ae/aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/activity-object-library-atlas-1d5da6b8ca2f52f8.png": {
+      "sha256": "1d5da6b8ca2f52f8edc446c4b17912af0a2eb48e8ea93019d3f8bb44aaa61799",
+      "extension": ".png",
+      "bytes": 3068880,
+      "object": "review-archive/objects/1d/1d5da6b8ca2f52f8edc446c4b17912af0a2eb48e8ea93019d3f8bb44aaa61799.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1d/1d5da6b8ca2f52f8edc446c4b17912af0a2eb48e8ea93019d3f8bb44aaa61799.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/aquarium-aerator-3f60700291a2270d.png": {
+      "sha256": "3f60700291a2270d642edc511e553cfba3e4f38b6a86da260b440469be6c259a",
+      "extension": ".png",
+      "bytes": 54634,
+      "object": "review-archive/objects/3f/3f60700291a2270d642edc511e553cfba3e4f38b6a86da260b440469be6c259a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3f/3f60700291a2270d642edc511e553cfba3e4f38b6a86da260b440469be6c259a.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/aquarium-castle-57b44940b665d3c9.png": {
+      "sha256": "57b44940b665d3c9591849ffcb7e3e6639983b8105af38b703c88133850ce941",
+      "extension": ".png",
+      "bytes": 72274,
+      "object": "review-archive/objects/57/57b44940b665d3c9591849ffcb7e3e6639983b8105af38b703c88133850ce941.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/57/57b44940b665d3c9591849ffcb7e3e6639983b8105af38b703c88133850ce941.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/aquarium-cleaning-b0b54e713f1d1067.png": {
+      "sha256": "b0b54e713f1d106718e9439008481452a540d474c023a0d24740a56577afed51",
+      "extension": ".png",
+      "bytes": 53945,
+      "object": "review-archive/objects/b0/b0b54e713f1d106718e9439008481452a540d474c023a0d24740a56577afed51.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b0/b0b54e713f1d106718e9439008481452a540d474c023a0d24740a56577afed51.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/aquarium-fish-587ed6353a6df9ff.png": {
+      "sha256": "587ed6353a6df9ff64ee50b8fabf1fee58db479a45278163a0b21057ebfa04cd",
+      "extension": ".png",
+      "bytes": 45132,
+      "object": "review-archive/objects/58/587ed6353a6df9ff64ee50b8fabf1fee58db479a45278163a0b21057ebfa04cd.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/58/587ed6353a6df9ff64ee50b8fabf1fee58db479a45278163a0b21057ebfa04cd.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/aquarium-food-64889328d5b86306.png": {
+      "sha256": "64889328d5b8630657a08db6cb47426927c84fd0b4614e1ccf82671e22ade4ba",
+      "extension": ".png",
+      "bytes": 57768,
+      "object": "review-archive/objects/64/64889328d5b8630657a08db6cb47426927c84fd0b4614e1ccf82671e22ade4ba.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/64/64889328d5b8630657a08db6cb47426927c84fd0b4614e1ccf82671e22ade4ba.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/aquarium-plants-f2979bcf0d26e9eb.png": {
+      "sha256": "f2979bcf0d26e9ebb06f5d542628101ca85d2446d5976d03b32e654300857bc9",
+      "extension": ".png",
+      "bytes": 71265,
+      "object": "review-archive/objects/f2/f2979bcf0d26e9ebb06f5d542628101ca85d2446d5976d03b32e654300857bc9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f2/f2979bcf0d26e9ebb06f5d542628101ca85d2446d5976d03b32e654300857bc9.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/aquarium-treasure-95a62825c4607aac.png": {
+      "sha256": "95a62825c4607aac8c5b9ec37a43b61656487e338b58c3d9779aa21f2fc110e4",
+      "extension": ".png",
+      "bytes": 80885,
+      "object": "review-archive/objects/95/95a62825c4607aac8c5b9ec37a43b61656487e338b58c3d9779aa21f2fc110e4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/95/95a62825c4607aac8c5b9ec37a43b61656487e338b58c3d9779aa21f2fc110e4.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/baking-flour-80a4ec6ed2e1a4e9.png": {
+      "sha256": "80a4ec6ed2e1a4e9fb898c937f1c9d80ddd2239d27261358e4bc18e6433ce830",
+      "extension": ".png",
+      "bytes": 60367,
+      "object": "review-archive/objects/80/80a4ec6ed2e1a4e9fb898c937f1c9d80ddd2239d27261358e4bc18e6433ce830.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/80/80a4ec6ed2e1a4e9fb898c937f1c9d80ddd2239d27261358e4bc18e6433ce830.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/bbq-grill-8984470c007ff8a3.png": {
+      "sha256": "8984470c007ff8a35af6fc8428afa9a38318c89bb5c4e7e1f2f34d7b858a5ee0",
+      "extension": ".png",
+      "bytes": 62202,
+      "object": "review-archive/objects/89/8984470c007ff8a35af6fc8428afa9a38318c89bb5c4e7e1f2f34d7b858a5ee0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/89/8984470c007ff8a35af6fc8428afa9a38318c89bb5c4e7e1f2f34d7b858a5ee0.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/bbq-lamb-chops-d0b507c045397faa.png": {
+      "sha256": "d0b507c045397faada719d5b9c4317689280a287a65a172ceed1cef08db69fff",
+      "extension": ".png",
+      "bytes": 62917,
+      "object": "review-archive/objects/d0/d0b507c045397faada719d5b9c4317689280a287a65a172ceed1cef08db69fff.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d0/d0b507c045397faada719d5b9c4317689280a287a65a172ceed1cef08db69fff.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/bbq-leg-lamb-19c65af65d6ba61d.png": {
+      "sha256": "19c65af65d6ba61db422ee922e786f5d876323777dff4265a3ddba39b251f354",
+      "extension": ".png",
+      "bytes": 55282,
+      "object": "review-archive/objects/19/19c65af65d6ba61db422ee922e786f5d876323777dff4265a3ddba39b251f354.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/19/19c65af65d6ba61db422ee922e786f5d876323777dff4265a3ddba39b251f354.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/bbq-steak-b6c81c2fbc03d1da.png": {
+      "sha256": "b6c81c2fbc03d1daaabeae70b1e8856216c49fdd0fbc49b2788509febceb5cad",
+      "extension": ".png",
+      "bytes": 54988,
+      "object": "review-archive/objects/b6/b6c81c2fbc03d1daaabeae70b1e8856216c49fdd0fbc49b2788509febceb5cad.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b6/b6c81c2fbc03d1daaabeae70b1e8856216c49fdd0fbc49b2788509febceb5cad.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/cooking-bacon-2bc0d1bcb08b1298.png": {
+      "sha256": "2bc0d1bcb08b12985fc82841d3e02cabceceb13ecdb633d8bd28319527f1c323",
+      "extension": ".png",
+      "bytes": 48141,
+      "object": "review-archive/objects/2b/2bc0d1bcb08b12985fc82841d3e02cabceceb13ecdb633d8bd28319527f1c323.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2bc0d1bcb08b12985fc82841d3e02cabceceb13ecdb633d8bd28319527f1c323.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/cooking-cow-596bc5a5cbb4eec1.png": {
+      "sha256": "596bc5a5cbb4eec1e48a34ca796b852aa303a027403f3aea5a29ae304af99dac",
+      "extension": ".png",
+      "bytes": 54460,
+      "object": "review-archive/objects/59/596bc5a5cbb4eec1e48a34ca796b852aa303a027403f3aea5a29ae304af99dac.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/59/596bc5a5cbb4eec1e48a34ca796b852aa303a027403f3aea5a29ae304af99dac.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/cooking-gravy-e31e4153eab4a977.png": {
+      "sha256": "e31e4153eab4a977e62d0b3b7bcd0d03f779da5e80d0ad3d94a26dfd09de9b0f",
+      "extension": ".png",
+      "bytes": 44983,
+      "object": "review-archive/objects/e3/e31e4153eab4a977e62d0b3b7bcd0d03f779da5e80d0ad3d94a26dfd09de9b0f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e3/e31e4153eab4a977e62d0b3b7bcd0d03f779da5e80d0ad3d94a26dfd09de9b0f.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/cooking-knife-8c1e77edeeb466f7.png": {
+      "sha256": "8c1e77edeeb466f7b445a3f916738525ed4ddaae6606ca1590889a6d5f416d1a",
+      "extension": ".png",
+      "bytes": 23497,
+      "object": "review-archive/objects/8c/8c1e77edeeb466f7b445a3f916738525ed4ddaae6606ca1590889a6d5f416d1a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8c/8c1e77edeeb466f7b445a3f916738525ed4ddaae6606ca1590889a6d5f416d1a.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/cooking-pan-0ec54ca7575b962e.png": {
+      "sha256": "0ec54ca7575b962e5fae9f321cf4883208c6da9a4f7da6c33a84289c49254642",
+      "extension": ".png",
+      "bytes": 37545,
+      "object": "review-archive/objects/0e/0ec54ca7575b962e5fae9f321cf4883208c6da9a4f7da6c33a84289c49254642.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0ec54ca7575b962e5fae9f321cf4883208c6da9a4f7da6c33a84289c49254642.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/cooking-pig-45e8deec49338efd.png": {
+      "sha256": "45e8deec49338efda30efeeb0f9eb4e26687c147487cfb9ec393132b1228ca9b",
+      "extension": ".png",
+      "bytes": 53406,
+      "object": "review-archive/objects/45/45e8deec49338efda30efeeb0f9eb4e26687c147487cfb9ec393132b1228ca9b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/45/45e8deec49338efda30efeeb0f9eb4e26687c147487cfb9ec393132b1228ca9b.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/cooking-sandwich-b88b28b259ebbf7b.png": {
+      "sha256": "b88b28b259ebbf7b4729f54116605009cf120bc9abe9c37dce0a19e4dfe847e4",
+      "extension": ".png",
+      "bytes": 61188,
+      "object": "review-archive/objects/b8/b88b28b259ebbf7b4729f54116605009cf120bc9abe9c37dce0a19e4dfe847e4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b8/b88b28b259ebbf7b4729f54116605009cf120bc9abe9c37dce0a19e4dfe847e4.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/cooking-seasoning-208e02a5b2e7ae15.png": {
+      "sha256": "208e02a5b2e7ae1508327c8ad2dcdc7ed2b78947d0a40de37b62e9e365092438",
+      "extension": ".png",
+      "bytes": 24488,
+      "object": "review-archive/objects/20/208e02a5b2e7ae1508327c8ad2dcdc7ed2b78947d0a40de37b62e9e365092438.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/20/208e02a5b2e7ae1508327c8ad2dcdc7ed2b78947d0a40de37b62e9e365092438.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/cooking-sheep-cc66915a7b0cd541.png": {
+      "sha256": "cc66915a7b0cd541332664b6c2233797b884c55c3ad46fe24af66794d659725e",
+      "extension": ".png",
+      "bytes": 59642,
+      "object": "review-archive/objects/cc/cc66915a7b0cd541332664b6c2233797b884c55c3ad46fe24af66794d659725e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cc/cc66915a7b0cd541332664b6c2233797b884c55c3ad46fe24af66794d659725e.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/cooking-spoon-0793c1ea85d3a38d.png": {
+      "sha256": "0793c1ea85d3a38d024de9c788ac3368dafc7c7270a65f65feb03beb10c005f8",
+      "extension": ".png",
+      "bytes": 37470,
+      "object": "review-archive/objects/07/0793c1ea85d3a38d024de9c788ac3368dafc7c7270a65f65feb03beb10c005f8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/07/0793c1ea85d3a38d024de9c788ac3368dafc7c7270a65f65feb03beb10c005f8.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/cooking-steam-440c359bcda03d83.png": {
+      "sha256": "440c359bcda03d83e026705cbb727c6e79b3d0e9bdf8812488ed0a72aac1b395",
+      "extension": ".png",
+      "bytes": 40699,
+      "object": "review-archive/objects/44/440c359bcda03d83e026705cbb727c6e79b3d0e9bdf8812488ed0a72aac1b395.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/44/440c359bcda03d83e026705cbb727c6e79b3d0e9bdf8812488ed0a72aac1b395.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/cooking-vegetables-92f3c0c1e740bd4e.png": {
+      "sha256": "92f3c0c1e740bd4e3602d9c1def9a4d558fd8840f31bceea2ca62846145a4384",
+      "extension": ".png",
+      "bytes": 56696,
+      "object": "review-archive/objects/92/92f3c0c1e740bd4e3602d9c1def9a4d558fd8840f31bceea2ca62846145a4384.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/92/92f3c0c1e740bd4e3602d9c1def9a4d558fd8840f31bceea2ca62846145a4384.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/dental-teeth-d423600e02124ea8.png": {
+      "sha256": "d423600e02124ea82d67b8cc4014f2a5ead02a3b7372fc9ef3acbf18a979140d",
+      "extension": ".png",
+      "bytes": 44917,
+      "object": "review-archive/objects/d4/d423600e02124ea82d67b8cc4014f2a5ead02a3b7372fc9ef3acbf18a979140d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d4/d423600e02124ea82d67b8cc4014f2a5ead02a3b7372fc9ef3acbf18a979140d.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/dental-toothbrush-4eb25c0c3dd73b4c.png": {
+      "sha256": "4eb25c0c3dd73b4c3156e91898195f556e6322a679a7a9f2b85d58e85debcef6",
+      "extension": ".png",
+      "bytes": 25380,
+      "object": "review-archive/objects/4e/4eb25c0c3dd73b4c3156e91898195f556e6322a679a7a9f2b85d58e85debcef6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4e/4eb25c0c3dd73b4c3156e91898195f556e6322a679a7a9f2b85d58e85debcef6.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/dental-toothpaste-da076961167f5912.png": {
+      "sha256": "da076961167f5912b4befd10a56fbb7d801bca5d6638e73ab3530a026aec250d",
+      "extension": ".png",
+      "bytes": 36251,
+      "object": "review-archive/objects/da/da076961167f5912b4befd10a56fbb7d801bca5d6638e73ab3530a026aec250d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/da/da076961167f5912b4befd10a56fbb7d801bca5d6638e73ab3530a026aec250d.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/dental-water-879361693b064083.png": {
+      "sha256": "879361693b0640838ba3d210d6563f4c04817831d5246ab07d8f7137f5358699",
+      "extension": ".png",
+      "bytes": 73860,
+      "object": "review-archive/objects/87/879361693b0640838ba3d210d6563f4c04817831d5246ab07d8f7137f5358699.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/87/879361693b0640838ba3d210d6563f4c04817831d5246ab07d8f7137f5358699.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/garden-seedling-6f0d9046bbf3ccf0.png": {
+      "sha256": "6f0d9046bbf3ccf0bbb002493e63e9da0ed04695c836174be62475d88a9fe22c",
+      "extension": ".png",
+      "bytes": 63544,
+      "object": "review-archive/objects/6f/6f0d9046bbf3ccf0bbb002493e63e9da0ed04695c836174be62475d88a9fe22c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6f/6f0d9046bbf3ccf0bbb002493e63e9da0ed04695c836174be62475d88a9fe22c.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/garden-seeds-ef4b5fc549084593.png": {
+      "sha256": "ef4b5fc5490845930aac84a0e94c205f75ad3d8a94b8925e5233fcea010a70da",
+      "extension": ".png",
+      "bytes": 51250,
+      "object": "review-archive/objects/ef/ef4b5fc5490845930aac84a0e94c205f75ad3d8a94b8925e5233fcea010a70da.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ef/ef4b5fc5490845930aac84a0e94c205f75ad3d8a94b8925e5233fcea010a70da.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/garden-watering-9323241977fb6216.png": {
+      "sha256": "9323241977fb621697665e9dd790722132f42ba14f0ac96ebcb9843126e69b78",
+      "extension": ".png",
+      "bytes": 46264,
+      "object": "review-archive/objects/93/9323241977fb621697665e9dd790722132f42ba14f0ac96ebcb9843126e69b78.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/93/9323241977fb621697665e9dd790722132f42ba14f0ac96ebcb9843126e69b78.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/harvest-fruit-79c02c7b0bc7b1c4.png": {
+      "sha256": "79c02c7b0bc7b1c43a51811287d1e74e25d15cad2d54d34bfc9186ea6179a7ed",
+      "extension": ".png",
+      "bytes": 60914,
+      "object": "review-archive/objects/79/79c02c7b0bc7b1c43a51811287d1e74e25d15cad2d54d34bfc9186ea6179a7ed.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/79/79c02c7b0bc7b1c43a51811287d1e74e25d15cad2d54d34bfc9186ea6179a7ed.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/harvest-vegetables-6d1e25e5766c7f43.png": {
+      "sha256": "6d1e25e5766c7f43de452c4076f723e5ff769af3eaf3db8b191c030fca27a115",
+      "extension": ".png",
+      "bytes": 70168,
+      "object": "review-archive/objects/6d/6d1e25e5766c7f43de452c4076f723e5ff769af3eaf3db8b191c030fca27a115.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6d/6d1e25e5766c7f43de452c4076f723e5ff769af3eaf3db8b191c030fca27a115.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/hygiene-shower-88d25de9c939ee45.png": {
+      "sha256": "88d25de9c939ee4541e95c51ccb6ee66ad8a51cb725fb90ef640c8da6c528ab9",
+      "extension": ".png",
+      "bytes": 55758,
+      "object": "review-archive/objects/88/88d25de9c939ee4541e95c51ccb6ee66ad8a51cb725fb90ef640c8da6c528ab9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/88/88d25de9c939ee4541e95c51ccb6ee66ad8a51cb725fb90ef640c8da6c528ab9.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/leisure-vinyl-f4dcb833796bc006.png": {
+      "sha256": "f4dcb833796bc00624aff52ef0de59a1c9d6200604f460bb9e170d03cf6f7f65",
+      "extension": ".png",
+      "bytes": 52066,
+      "object": "review-archive/objects/f4/f4dcb833796bc00624aff52ef0de59a1c9d6200604f460bb9e170d03cf6f7f65.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f4/f4dcb833796bc00624aff52ef0de59a1c9d6200604f460bb9e170d03cf6f7f65.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/maintenance-lamp-polish-565d7d881c0ed2f8.png": {
+      "sha256": "565d7d881c0ed2f8f2be71c5dbf1241ef0899f9c49754617aadf30b5de3d6ca7",
+      "extension": ".png",
+      "bytes": 81650,
+      "object": "review-archive/objects/56/565d7d881c0ed2f8f2be71c5dbf1241ef0899f9c49754617aadf30b5de3d6ca7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/56/565d7d881c0ed2f8f2be71c5dbf1241ef0899f9c49754617aadf30b5de3d6ca7.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/maintenance-welding-fa15494e250867ad.png": {
+      "sha256": "fa15494e250867ad374e26ca224cfe352b25b05f79b626221e97e47427889694",
+      "extension": ".png",
+      "bytes": 48797,
+      "object": "review-archive/objects/fa/fa15494e250867ad374e26ca224cfe352b25b05f79b626221e97e47427889694.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fa/fa15494e250867ad374e26ca224cfe352b25b05f79b626221e97e47427889694.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/meal-breakfast-ec4665ac718fc889.png": {
+      "sha256": "ec4665ac718fc8892fcfff9701c0f29c17e1667ae77ce68d3eb8446897f5a17c",
+      "extension": ".png",
+      "bytes": 62965,
+      "object": "review-archive/objects/ec/ec4665ac718fc8892fcfff9701c0f29c17e1667ae77ce68d3eb8446897f5a17c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ec/ec4665ac718fc8892fcfff9701c0f29c17e1667ae77ce68d3eb8446897f5a17c.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/meal-dinner-b156ae100f31c4ee.png": {
+      "sha256": "b156ae100f31c4ee20ee1c7ae53df0d0bf16f25ec767ff0ddda898e0ad7f0237",
+      "extension": ".png",
+      "bytes": 57675,
+      "object": "review-archive/objects/b1/b156ae100f31c4ee20ee1c7ae53df0d0bf16f25ec767ff0ddda898e0ad7f0237.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b1/b156ae100f31c4ee20ee1c7ae53df0d0bf16f25ec767ff0ddda898e0ad7f0237.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/meal-lunch-72d65ca5186260c3.png": {
+      "sha256": "72d65ca5186260c3cb99b802c0be79ed0cfc7d4cb1573a70ed210e5f5d10519c",
+      "extension": ".png",
+      "bytes": 53385,
+      "object": "review-archive/objects/72/72d65ca5186260c3cb99b802c0be79ed0cfc7d4cb1573a70ed210e5f5d10519c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/72/72d65ca5186260c3cb99b802c0be79ed0cfc7d4cb1573a70ed210e5f5d10519c.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/mixing-bowl-2cae4495779bdd4d.png": {
+      "sha256": "2cae4495779bdd4da3c9a1d0875b870a47cda30419f43555544616bc3052ef9a",
+      "extension": ".png",
+      "bytes": 48729,
+      "object": "review-archive/objects/2c/2cae4495779bdd4da3c9a1d0875b870a47cda30419f43555544616bc3052ef9a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2c/2cae4495779bdd4da3c9a1d0875b870a47cda30419f43555544616bc3052ef9a.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/mixing-egg-97d7b75641c4c580.png": {
+      "sha256": "97d7b75641c4c580e672a7621f4d3114ef3c300d71de5439084f52522810b1df",
+      "extension": ".png",
+      "bytes": 39987,
+      "object": "review-archive/objects/97/97d7b75641c4c580e672a7621f4d3114ef3c300d71de5439084f52522810b1df.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/97/97d7b75641c4c580e672a7621f4d3114ef3c300d71de5439084f52522810b1df.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/mixing-flour-5734cdf3a8b777e1.png": {
+      "sha256": "5734cdf3a8b777e10bb9a1ecb85d97029a28f2f4aff8d40e1385fcfbb6ee6d09",
+      "extension": ".png",
+      "bytes": 35762,
+      "object": "review-archive/objects/57/5734cdf3a8b777e10bb9a1ecb85d97029a28f2f4aff8d40e1385fcfbb6ee6d09.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/57/5734cdf3a8b777e10bb9a1ecb85d97029a28f2f4aff8d40e1385fcfbb6ee6d09.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/mixing-whisk-8246369441e5bfe9.png": {
+      "sha256": "8246369441e5bfe99eea3c60f746e6204b9282ddca0a106aa5cfe22a38eb2c8c",
+      "extension": ".png",
+      "bytes": 44899,
+      "object": "review-archive/objects/82/8246369441e5bfe99eea3c60f746e6204b9282ddca0a106aa5cfe22a38eb2c8c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/82/8246369441e5bfe99eea3c60f746e6204b9282ddca0a106aa5cfe22a38eb2c8c.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/music-composer-7e992d30cbbffacd.png": {
+      "sha256": "7e992d30cbbffacda7e4185d49efb45734c8072e52e0e7c2b81fae7dab050b22",
+      "extension": ".png",
+      "bytes": 81655,
+      "object": "review-archive/objects/7e/7e992d30cbbffacda7e4185d49efb45734c8072e52e0e7c2b81fae7dab050b22.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7e/7e992d30cbbffacda7e4185d49efb45734c8072e52e0e7c2b81fae7dab050b22.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/music-drummer-fcb354a2f8e3169b.png": {
+      "sha256": "fcb354a2f8e3169bc52736b129740ae2791c5fe7a01a597e4ad908960e0db369",
+      "extension": ".png",
+      "bytes": 80164,
+      "object": "review-archive/objects/fc/fcb354a2f8e3169bc52736b129740ae2791c5fe7a01a597e4ad908960e0db369.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fc/fcb354a2f8e3169bc52736b129740ae2791c5fe7a01a597e4ad908960e0db369.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/music-drums-2bece39461285cfa.png": {
+      "sha256": "2bece39461285cfacf1b6635c663d6682be67a9e2404407c1edc4aec2be3a649",
+      "extension": ".png",
+      "bytes": 65566,
+      "object": "review-archive/objects/2b/2bece39461285cfacf1b6635c663d6682be67a9e2404407c1edc4aec2be3a649.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2bece39461285cfacf1b6635c663d6682be67a9e2404407c1edc4aec2be3a649.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/music-guitar-6b546dd8614fde33.png": {
+      "sha256": "6b546dd8614fde3334cb5d7560ef7b6c99f0035cd326483090ed0ccea9ac1661",
+      "extension": ".png",
+      "bytes": 47630,
+      "object": "review-archive/objects/6b/6b546dd8614fde3334cb5d7560ef7b6c99f0035cd326483090ed0ccea9ac1661.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6b/6b546dd8614fde3334cb5d7560ef7b6c99f0035cd326483090ed0ccea9ac1661.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/music-guitarist-3ece70aa5a4dcf26.png": {
+      "sha256": "3ece70aa5a4dcf2645efb819ead204d54ca0c9cce82bfb27e0b67eede62afd81",
+      "extension": ".png",
+      "bytes": 75787,
+      "object": "review-archive/objects/3e/3ece70aa5a4dcf2645efb819ead204d54ca0c9cce82bfb27e0b67eede62afd81.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3e/3ece70aa5a4dcf2645efb819ead204d54ca0c9cce82bfb27e0b67eede62afd81.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/music-piano-37c12cee3dad3b5c.png": {
+      "sha256": "37c12cee3dad3b5cfbbbd8f5cfcf4ba39160c007881308b4141891a5b7b4b2e6",
+      "extension": ".png",
+      "bytes": 68656,
+      "object": "review-archive/objects/37/37c12cee3dad3b5cfbbbd8f5cfcf4ba39160c007881308b4141891a5b7b4b2e6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/37/37c12cee3dad3b5cfbbbd8f5cfcf4ba39160c007881308b4141891a5b7b4b2e6.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/rear-work-recipes-raised-no-counter-c6811c246c047923.png": {
+      "sha256": "c6811c246c0479232480d8716d8142035da260eb3f8fe6e912689de27529d949",
+      "extension": ".png",
+      "bytes": 1699084,
+      "object": "review-archive/objects/c6/c6811c246c0479232480d8716d8142035da260eb3f8fe6e912689de27529d949.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c6/c6811c246c0479232480d8716d8142035da260eb3f8fe6e912689de27529d949.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/repair-fastener-17ac443584294846.png": {
+      "sha256": "17ac443584294846c4276b122b3c9082aec4c9605f58983b72a348084ab5de02",
+      "extension": ".png",
+      "bytes": 47776,
+      "object": "review-archive/objects/17/17ac443584294846c4276b122b3c9082aec4c9605f58983b72a348084ab5de02.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/17ac443584294846c4276b122b3c9082aec4c9605f58983b72a348084ab5de02.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/repair-oilcan-bc98850fc332d28d.png": {
+      "sha256": "bc98850fc332d28d9f00907aaf9a51599aae09bad5fc89d882fd7b2fd30c8b23",
+      "extension": ".png",
+      "bytes": 34449,
+      "object": "review-archive/objects/bc/bc98850fc332d28d9f00907aaf9a51599aae09bad5fc89d882fd7b2fd30c8b23.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bc/bc98850fc332d28d9f00907aaf9a51599aae09bad5fc89d882fd7b2fd30c8b23.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/repair-sparks-da07ccd69c9065d9.png": {
+      "sha256": "da07ccd69c9065d999038be53c7121a46f2350c0a05586ae1bfd74f2fec58e60",
+      "extension": ".png",
+      "bytes": 36842,
+      "object": "review-archive/objects/da/da07ccd69c9065d999038be53c7121a46f2350c0a05586ae1bfd74f2fec58e60.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/da/da07ccd69c9065d999038be53c7121a46f2350c0a05586ae1bfd74f2fec58e60.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/repair-tools-c0166e7d0e22b98f.png": {
+      "sha256": "c0166e7d0e22b98fb555c6818edec883aa162d67fb5b14c414a3378981b69a72",
+      "extension": ".png",
+      "bytes": 51260,
+      "object": "review-archive/objects/c0/c0166e7d0e22b98fb555c6818edec883aa162d67fb5b14c414a3378981b69a72.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c0/c0166e7d0e22b98fb555c6818edec883aa162d67fb5b14c414a3378981b69a72.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/rest-counting-sheep-18669a3cc09b2640.png": {
+      "sha256": "18669a3cc09b2640960d33d950aad2321339f05a7ef473814c4a856f15d1a9ea",
+      "extension": ".png",
+      "bytes": 79021,
+      "object": "review-archive/objects/18/18669a3cc09b2640960d33d950aad2321339f05a7ef473814c4a856f15d1a9ea.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/18/18669a3cc09b2640960d33d950aad2321339f05a7ef473814c4a856f15d1a9ea.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/rest-sleep-d7b4f799cffd4247.png": {
+      "sha256": "d7b4f799cffd4247747a1f7b37a5847f77326b25fa1d79bde36660051d12abdb",
+      "extension": ".png",
+      "bytes": 56061,
+      "object": "review-archive/objects/d7/d7b4f799cffd4247747a1f7b37a5847f77326b25fa1d79bde36660051d12abdb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d7/d7b4f799cffd4247747a1f7b37a5847f77326b25fa1d79bde36660051d12abdb.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/sandwich-bread-11313cc6d0839d31.png": {
+      "sha256": "11313cc6d0839d313ecb96ef4136e372904fe848de862034a2234637ecabb8c8",
+      "extension": ".png",
+      "bytes": 52690,
+      "object": "review-archive/objects/11/11313cc6d0839d313ecb96ef4136e372904fe848de862034a2234637ecabb8c8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/11/11313cc6d0839d313ecb96ef4136e372904fe848de862034a2234637ecabb8c8.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/sandwich-ham-d3cdba07f6b695e7.png": {
+      "sha256": "d3cdba07f6b695e7e9918fde92822aeb3f1d543aafde0b59bd204069641c4fb7",
+      "extension": ".png",
+      "bytes": 45561,
+      "object": "review-archive/objects/d3/d3cdba07f6b695e7e9918fde92822aeb3f1d543aafde0b59bd204069641c4fb7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d3/d3cdba07f6b695e7e9918fde92822aeb3f1d543aafde0b59bd204069641c4fb7.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/sandwich-lettuce-3addb510966c088b.png": {
+      "sha256": "3addb510966c088b52b2d50a5a5e6088231a4e083798a95f8d98573e35b37ef5",
+      "extension": ".png",
+      "bytes": 60017,
+      "object": "review-archive/objects/3a/3addb510966c088b52b2d50a5a5e6088231a4e083798a95f8d98573e35b37ef5.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3a/3addb510966c088b52b2d50a5a5e6088231a4e083798a95f8d98573e35b37ef5.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/sandwich-tomato-10f760734f45b9cf.png": {
+      "sha256": "10f760734f45b9cf6e2ee7ca815f7c89137cd64854bd71de98b07beaa871e2be",
+      "extension": ".png",
+      "bytes": 55030,
+      "object": "review-archive/objects/10/10f760734f45b9cf6e2ee7ca815f7c89137cd64854bd71de98b07beaa871e2be.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/10/10f760734f45b9cf6e2ee7ca815f7c89137cd64854bd71de98b07beaa871e2be.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/tea-kettle-7014b90c1465cbf0.png": {
+      "sha256": "7014b90c1465cbf0b1b9559f57be78a4a36c354ba13033c9639aa048253dd7cf",
+      "extension": ".png",
+      "bytes": 62186,
+      "object": "review-archive/objects/70/7014b90c1465cbf0b1b9559f57be78a4a36c354ba13033c9639aa048253dd7cf.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/70/7014b90c1465cbf0b1b9559f57be78a4a36c354ba13033c9639aa048253dd7cf.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/tea-milk-01eb45bb370455c7.png": {
+      "sha256": "01eb45bb370455c770702cc7cb25334fccc3d2a6d3cc0cf376733da2f9dfeadc",
+      "extension": ".png",
+      "bytes": 55498,
+      "object": "review-archive/objects/01/01eb45bb370455c770702cc7cb25334fccc3d2a6d3cc0cf376733da2f9dfeadc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/01/01eb45bb370455c770702cc7cb25334fccc3d2a6d3cc0cf376733da2f9dfeadc.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/tea-mug-af8fb40591e8165c.png": {
+      "sha256": "af8fb40591e8165cfb4ec8f9f30be0df24abd733cc412d086c3920a37242bff3",
+      "extension": ".png",
+      "bytes": 52519,
+      "object": "review-archive/objects/af/af8fb40591e8165cfb4ec8f9f30be0df24abd733cc412d086c3920a37242bff3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/af/af8fb40591e8165cfb4ec8f9f30be0df24abd733cc412d086c3920a37242bff3.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/washing-cutlery-76d1a71e4d9e2cb2.png": {
+      "sha256": "76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca",
+      "extension": ".png",
+      "bytes": 62577,
+      "object": "review-archive/objects/76/76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/76/76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/washing-droplets-14fa3c4503f2362d.png": {
+      "sha256": "14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da",
+      "extension": ".png",
+      "bytes": 43137,
+      "object": "review-archive/objects/14/14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/14/14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/washing-liquid-f311431e2c6e4800.png": {
+      "sha256": "f311431e2c6e480033982790d416bbd6df16f414338c6a030ff28d2780efd2c1",
+      "extension": ".png",
+      "bytes": 55578,
+      "object": "review-archive/objects/f3/f311431e2c6e480033982790d416bbd6df16f414338c6a030ff28d2780efd2c1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f3/f311431e2c6e480033982790d416bbd6df16f414338c6a030ff28d2780efd2c1.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/washing-plate-01b82c03b73ae824.png": {
+      "sha256": "01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f",
+      "extension": ".png",
+      "bytes": 54933,
+      "object": "review-archive/objects/01/01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/01/01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f.png"
+    },
+    "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/washing-sponge-aed0b35f1bf279fe.png": {
       "sha256": "aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533",
       "extension": ".png",
       "bytes": 49751,
