@@ -1,4 +1,4 @@
-# Lighthouse Keeper: status write-up (18 Oct 2026)
+# Lighthouse Keeper: status write-up (19 Oct 2026)
 
 ## What it is
 A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthouse; kids type commands (typo-tolerant, curated, no live AI) or click objects (Sims-style menus, auto-zoom camera). Needs and mood, credits, phone, bedtime, multi-day play, a day report, quiz pop-ins, time-aware chat, cheeky humour.
@@ -141,15 +141,19 @@ y=151 fascia and y=208 foot line. Frank called it excellent subject to changing
 the fridge door to white.
 
 The active kitchen gate is
-`/keeper-review/kitchen-rebuild-states-v9/`. Frank approved V8's Broken-oven
-geometry. V9 preserves that complete oven and every unrelated output byte-for-
-byte, changing only its three internal-light full-state strips. Random,
-Sputtering and Near Blow timings combine uneven dark holds, isolated flashes,
-short electrical stutters and irregular terminal flutter without any short
-repeating cadence. The smoke and warning light remain separate removable
-layers. All controls and all 36 isolated 40-frame/4-fps ten-second models
-remain available. V9 is reversible, unpromoted and unwired; Final/runtime and
-V3–V8 remain unchanged.
+`/keeper-review/kitchen-rebuild-modular-v10/`. Review of V9 proved that its
+state files still contained complete cabinet/counter bay patches: mixing those
+patches deterministically broke the counter line and exposed mismatched edges.
+V10 retains the accepted blue cabinetry as two structural runs—two cabinets,
+then after the standalone oven another two cabinets including the sink—and
+makes the fridge, kettle, one-slot toaster, oven/hob, bowl and basin eighteen
+alpha-isolated Off/On/Broken sprites. The room order remains fridge / two
+cabinets / oven / two cabinets / table. All six exact 84-pixel bay centres are
+now explicit Prime stop/turn anchors on y=218 and cannot move between states.
+The asset-first effect workbench and 36 editable 40-frame/4-fps ten-second
+models remain available; oven-locked light cells were rebuilt from the isolated
+cooker. V10 is reversible, unapproved, unpromoted and unwired. V9 remains
+immutable failing-bulb timing and interaction provenance.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
@@ -243,6 +247,12 @@ implemented and no artwork change is authorised by it.
 - Add Ralph and Eddie on the Who is playing screen (none exist yet).
 
 ## Verification and delivery
+
+The production Next.js build and the focused Modular V10 verifier pass. The
+full repository suite currently stops only at the pre-existing review-payload
+budget check: `public/` is 50.37 MiB against its 50 MiB target. Review media is
+correctly content-addressed outside `public/`; a later housekeeping pass must
+recover the remaining 0.37 MiB without deleting active review evidence.
 
 ### Separate Draft/Final animation workbench
 

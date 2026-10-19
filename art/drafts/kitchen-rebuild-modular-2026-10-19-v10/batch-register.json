@@ -1,0 +1,13 @@
+{
+  "set": "kitchen-rebuild-modular-2026-10-19-v10",
+  "status": "awaiting-modular-family-visual-review",
+  "parent": "kitchen-rebuild-states-2026-10-19-v9",
+  "preserves": [
+    "Rebuild V1 room/cabinet palette and lower faces",
+    "approved V28/V31 bin",
+    "V9 reusable effect families and controls"
+  ],
+  "promotion": "none",
+  "runtimeWiring": "unchanged",
+  "rollback": "Delete V10 source/raw/draft/review/archive/builder/verifier/docs files only; V1\u2013V9 remain immutable."
+}
