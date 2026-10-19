@@ -149,9 +149,9 @@ explicit release.
 Keeper review media is now stored once outside `public/`, without deleting any
 evidence or changing immutable review-page bytes.
 
-**Measured result (19 October 2026, including Kitchen Countertop Join Cap V22
-and immutable prior review evidence):** 3,828 review-media paths across 154 sets
-collapse to 2,334 unique objects. The paths represent 297.10 MiB; the unique
+**Measured result (19 October 2026, including Kitchen Snap Grid Join V23 and
+immutable prior review evidence):** 3,833 review-media paths across 155 sets
+collapse to 2,334 unique objects. The paths represent 297.14 MiB; the unique
 store is 156.83 MiB. The verified `public/` deployment payload is about 50.46 MiB and remains slightly
 above the hard 50 MiB repository guard, rather than roughly 115 MiB. The archive
 itself stays in Git but is

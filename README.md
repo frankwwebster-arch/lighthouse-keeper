@@ -567,6 +567,14 @@ the hash-pinned decision is
 Future fitted modular cabinet/countertop joins should preserve the standalone
 sprites and resolve their shared body and surface through separate dynamic
 join layers rather than superimposing both assets' independent end contours.
+The V23 interaction proof at
+`/keeper-review/kitchen-snap-grid-join-v23/` combines that approved join with
+the canonical 84-pixel kitchen bay grid. Dragging is a non-persistent preview;
+release resolves to the nearest unoccupied legal bay, derives the Prime
+stop/turn target from the snapped body midpoint, and enables the join only for
+exact zero-gap adjacency. The default sink therefore commits to x=336 with
+midpoint x=378. See
+[`docs/KITCHEN_SNAP_GRID_JOIN_V23_2026-10-19.md`](docs/KITCHEN_SNAP_GRID_JOIN_V23_2026-10-19.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

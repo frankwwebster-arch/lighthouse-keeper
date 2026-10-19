@@ -210,6 +210,16 @@ seamless treatment and this layered method for future fitted modular kitchen
 joins. The approval remains a review authority only and changes no Final or
 runtime asset.
 
+The active placement proof is Kitchen Snap Grid Join V23 at
+`/keeper-review/kitchen-snap-grid-join-v23/`. It retains the approved V22 join
+and all five source images byte-for-byte. During drag the sink may follow an
+imprecise pointer, but release discards that coordinate and commits to the
+nearest legal 84-pixel bay origin after occupancy checks. The Prime stop/turn
+target is derived from the snapped logical body midpoint: the default sink
+commits at x=336 and targets x=378/y=218. The seamless join activates only for
+exactly adjacent committed bounds, so its logical gap is guaranteed to be zero.
+V23 changes no Final or runtime asset.
+
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
 link with V6. The animation remains the exact V1/V2 six-pose motion inside its
