@@ -1,0 +1,265 @@
+{
+  "schema": "lighthouse-keeper/activity-callout-authoring-standard@1",
+  "status": "binding-authoring-standard",
+  "revision": "1.0",
+  "revisedOn": "2026-10-20",
+  "document": "docs/ACTIVITY_CALLOUT_AUTHORING_STANDARD.md",
+  "purpose": "Animated pictorial narration of an activity; never dialogue, thought, want, inventory or gameplay logic.",
+  "authority": {
+    "precedence": [
+      "product-separation-brief",
+      "validated-v2-v3-visual-direction",
+      "retained-v5-v6-token-sources",
+      "latest-immutable-composer-contract",
+      "general-world-art-style",
+      "directional-user-and-claude-references"
+    ],
+    "pinnedReferences": [
+      {
+        "role": "product-separation-brief",
+        "path": "docs/KEEPER_BACK_WORK_ACTIVITY_CALLOUT_BRIEF_2026-10-19.md",
+        "sha256": "f4c8f30497169145cb7f3559b854872b513401284479111108102320f3f4b4a5"
+      },
+      {
+        "role": "rejected-flat-v1-provenance",
+        "path": "docs/KEEPER_PRIME_BACK_WORK_ACTIVITY_CALLOUT_V1_2026-10-19.md",
+        "sha256": "640a2ee6982a0385a84b51632f082d0137a7029b6bc78d0a4e1c5fefb10d039c"
+      },
+      {
+        "role": "validated-visual-direction-v2",
+        "path": "docs/KEEPER_PRIME_BACK_WORK_ACTIVITY_CALLOUT_V2_2026-10-19.md",
+        "sha256": "2082aa09d225268a0c2421dd7c1a0b8cf2116944958792dfa557a867dbdf1d03"
+      },
+      {
+        "role": "expanded-vocabulary-and-presentation-v3",
+        "path": "docs/KEEPER_PRIME_BACK_WORK_ACTIVITY_CALLOUT_V3_2026-10-19.md",
+        "sha256": "7543fe5e7b9ef03f31859051c261166767a7b89413f6918b547bb5d888e77b30"
+      },
+      {
+        "role": "ownership-safe-six-token-prompt-evidence",
+        "path": "art/drafts/activity-cloud-composer-2026-10-19-v5/PROMPT_LOG.md",
+        "sha256": "5b28cb5ec470e8957b3c03613f8071322248cc95f1c76312e31ecc00eea78114"
+      },
+      {
+        "role": "single-token-and-halo-rejection-evidence",
+        "path": "art/drafts/activity-cloud-composer-2026-10-20-v6/PROMPT_LOG.md",
+        "sha256": "d45ea3fe4e54c1dc7001631163391c7a7ae8c2a80267cb3386b593079766f306"
+      },
+      {
+        "role": "current-composer-data-authority",
+        "path": "public/keeper-review/activity-cloud-composer-v6/catalogue.json",
+        "sha256": "eb5060a665694137ce63a45dcb8f914d1086570393399b1537d37ade660fe2aa"
+      }
+    ]
+  },
+  "visual": {
+    "stylePhrase": "Polished hand-painted 2D game iconography for a cosy maritime Lighthouse Keeper game; smooth dark-navy outer contours, warm cream highlights, aged brass and copper, sea-glass teal, storm blue and restrained coral; tactile materials, compact silhouettes and clear reading at game scale.",
+    "paletteAnchors": {
+      "deepInk": "#14243a",
+      "charcoal": "#23262b",
+      "warmCream": "#f3e7cc",
+      "brassLight": "#e6b955",
+      "seaTeal": "#267da0",
+      "seaGlass": "#68a7c5",
+      "restrainedCoral": "#c8463c"
+    },
+    "requiredTraits": [
+      "strong-readable-silhouette",
+      "substantial-dark-navy-outer-contour",
+      "purposeful-material-values",
+      "restrained-form-describing-highlights",
+      "subtle-tactile-painterly-texture",
+      "compact-centred-mass",
+      "readable-at-thumbnail-size",
+      "genuine-transparent-background"
+    ],
+    "forbiddenTraits": [
+      "flat-generic-symbol",
+      "stock-icon-or-emoji-language",
+      "photorealism",
+      "glossy-mobile-app-icon",
+      "hard-extruded-3d",
+      "neon-rendering",
+      "background-panel-tile-floor-or-room",
+      "vignette-aura-haze-or-margin-glow",
+      "margin-cast-shadow",
+      "text-letter-number-logo-brand-or-watermark",
+      "keeper-or-unrequested-person",
+      "unrelated-second-object",
+      "stray-or-duplicate-fragment",
+      "context-baked-into-keeper-or-household-asset"
+    ],
+    "tokenScope": "one-semantic-object-or-one-story-cue",
+    "combinedTokenRule": "Allowed only when parts form one ordinary inseparable semantic unit.",
+    "identitySafety": "Use fictional archetypes and motif-only homages; never exact real-person likenesses or copied album artwork, titles, logos, typography or photographs.",
+    "familySafety": "Bathroom, sleeping and washing cues must be discreet, family-safe and non-anatomical."
+  },
+  "generation": {
+    "preferredMode": "one-isolated-token-per-generation",
+    "allowedBatchMode": "1536x1024-rgba-3x2-six-token-sheet",
+    "promptLogRequired": true,
+    "promptLogFields": [
+      "generation-date",
+      "generator",
+      "exact-prompt",
+      "reference-role",
+      "accepted-source-filename",
+      "accepted-source-sha256",
+      "rejected-attempt-count-and-reason",
+      "edit-provenance",
+      "normalisation-rule"
+    ],
+    "singleTokenPromptRequiredPhrases": [
+      "exactly one",
+      "genuinely transparent background",
+      "polished hand-painted 2D game illustration",
+      "dark-navy outer line",
+      "readable at thumbnail size",
+      "generous transparent margin",
+      "no text",
+      "no logo",
+      "no watermark",
+      "no glow"
+    ],
+    "sheet": {
+      "pixels": [1536, 1024],
+      "grid": [3, 2],
+      "cellPixels": [512, 512],
+      "centralSubjectPixels": [352, 352],
+      "promptedCellMarginPixels": 80,
+      "transparentBoundaryLines": {
+        "x": [512, 1024],
+        "y": [512]
+      },
+      "ownerOrder": "row-major-reading-order"
+    },
+    "badSourcePolicy": "Rerender the affected token or sheet; never hide overlap, haze or an extra owner with a tighter crop."
+  },
+  "raster": {
+    "componentCellPixels": [256, 256],
+    "visibleAlphaThreshold": 8,
+    "minimumTransparentGutterPixels": 16,
+    "preferredTransparentGutterPixels": 20,
+    "sourceOuterEdgeVisiblePixels": 0,
+    "ownersPerComponent": 1,
+    "ambiguousPixels": 0,
+    "unownedVisiblePixels": 0,
+    "outputEdgeAlphaPixels": 0,
+    "scaling": "uniform-lossless-normalisation-into-fresh-transparent-cell",
+    "placement": "deterministic-integer-centering",
+    "requiredRegisterFields": [
+      "componentId",
+      "family",
+      "owner",
+      "sourceFile",
+      "sourceBounds",
+      "normalisedSize",
+      "offset",
+      "cellPixels",
+      "minimumGutterPixels",
+      "sourceSha256",
+      "outputSha256",
+      "ambiguousPixels",
+      "unownedVisiblePixels",
+      "edgeAlphaPixels"
+    ]
+  },
+  "component": {
+    "idPattern": "^[a-z0-9]+(?:-[a-z0-9]+)+$",
+    "idForm": "<family>-<specific-object-or-cue>",
+    "requiredCatalogueFields": ["src", "sha256", "family", "cellPixels", "sourceSet"],
+    "renamePolicy": "Never rename an existing id; add a new immutable component when meaning changes."
+  },
+  "recipe": {
+    "minimumElements": 4,
+    "maximumElements": 5,
+    "heroElementIndex": 0,
+    "requiredFields": [
+      "label",
+      "targetAssetLabel",
+      "targetAssetId",
+      "bodyCompatibility",
+      "elements",
+      "sfx"
+    ],
+    "bodyCompatibilityValues": ["rear-work-with-context", "dedicated-pose-required"],
+    "dedicatedPoseBodyVisible": false,
+    "storyPatterns": [
+      "source-process-result",
+      "ingredients-assembly-result",
+      "place-or-tool-action-outcome",
+      "instrument-performer-notation"
+    ],
+    "timeOfDayRule": "Variants belong in recipe metadata and selection logic, never component pixels.",
+    "sfxOwnership": "Contextual recipe owns SFX; Keeper body and component cells are silent."
+  },
+  "presentation": {
+    "requiredTreatments": ["orbit", "bustle"],
+    "treatmentMeanings": {
+      "orbit": "open-radial-no-enclosing-bubble",
+      "bustle": "compact-activity-bubble-or-puff"
+    },
+    "calloutFrames": 42,
+    "calloutFps": 8,
+    "quietTailFrames": 5,
+    "bodyFrames": 24,
+    "bodyFps": 4,
+    "bodyNeutralFrames": [1, 23, 24],
+    "placement": "raised-above-cap-with-verified-clear-gap-inside-room-safe-zone",
+    "foregroundReviewCounterAllowed": false,
+    "preloadAndDecodeBeforePlayback": true,
+    "reducedMotion": "one-primary-and-one-secondary-object-with-minimal-marks"
+  },
+  "notation": {
+    "triggerFamily": "music",
+    "independentlyControllable": true,
+    "seedAlgorithm": "fnv1a32-v1",
+    "sequenceLengthFrames": 6,
+    "visibleNotes": 3,
+    "bakedIntoComponents": false
+  },
+  "separation": {
+    "independentLayers": [
+      "keeper-body",
+      "treatment-or-cloud-marks",
+      "primary-or-resolved-object",
+      "supporting-or-story-objects",
+      "music-notation",
+      "contextual-household-asset",
+      "asset-effects",
+      "sfx-declarations"
+    ],
+    "immutableAuthorities": [
+      "approved-walk",
+      "approved-stop",
+      "approved-turn",
+      "approved-rear-neutral",
+      "complete-approved-route"
+    ]
+  },
+  "versioning": {
+    "immutableVersionRequired": true,
+    "overwritePreviousVersion": false,
+    "contentAddressedReviewMedia": true,
+    "discardBoundary": [
+      "new-draft-directory",
+      "new-public-review-page",
+      "new-archive-set",
+      "new-content-addressed-objects"
+    ],
+    "runtimePromotionRequiresExplicitApproval": true,
+    "deploymentRequiresExplicitApproval": true,
+    "kitchenChangesAllowed": false
+  },
+  "knownRejectedPatterns": [
+    "v1-flat-generic-symbols",
+    "alpha-crossing-source-ownership-line",
+    "opaque-or-glowing-halo",
+    "tight-crop-used-to-hide-overlap",
+    "foreground-review-counter",
+    "callout-too-low-against-cap",
+    "contextual-prop-baked-into-keeper",
+    "vocabulary-used-as-body-compatibility-proof",
+    "non-deterministic-unreplayable-placement"
+  ]
+}
