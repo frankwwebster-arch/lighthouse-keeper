@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "set": "activity-cloud-composer-v2",
+  "page": {
+    "path": "public/keeper-review/activity-cloud-composer-v2/index.html",
+    "sha256": "aa63c2b983fcf91648dc8d6060c7ffe4b74ec36e867003cbb3cd9735740dc25f",
+    "bytes": 19117
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/activity-cloud-composer-v2/assets/hygiene-shampoo-adf847c274eafac2.png": {
+      "sha256": "adf847c274eafac293e844e4e66c2464c53cdd0103b7dcc83c1045d6d7985904",
+      "extension": ".png",
+      "bytes": 53106,
+      "object": "review-archive/objects/ad/adf847c274eafac293e844e4e66c2464c53cdd0103b7dcc83c1045d6d7985904.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ad/adf847c274eafac293e844e4e66c2464c53cdd0103b7dcc83c1045d6d7985904.png"
+    }
+  }
+}

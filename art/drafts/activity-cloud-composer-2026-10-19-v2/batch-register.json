@@ -1,0 +1,105 @@
+{
+  "schema": "lighthouse-keeper/activity-cloud-composer-register@2",
+  "set": "activity-cloud-composer-v2",
+  "status": "immutable-reversible-review-tool-not-approved",
+  "sourceVocabulary": {
+    "set": "activity-cloud-composer-v1",
+    "catalogue": "public/keeper-review/activity-cloud-composer-v1/catalogue.json",
+    "catalogueSha256": "cdb877e9a55478fc55040f01b210d71307d535f9d3bff2bda27fc2742e850aff",
+    "register": "art/drafts/activity-cloud-composer-2026-10-19-v1/batch-register.json",
+    "registerSha256": "f844c41e5ac43a0bdf6d3d2904dca41e01c1e362aac03be5cc9420b20881710b",
+    "inheritedComponents": 73
+  },
+  "generatedSource": {
+    "file": "art/drafts/activity-cloud-composer-2026-10-19-v2/source/hygiene-shampoo-generated-v1.png",
+    "sha256": "789dd9fc7688f5ca5fdff95b83936977c2c37e082e752ca5ac15a28d3697acb6",
+    "pixels": [
+      1312,
+      1199
+    ],
+    "edgeAlphaPixels": 0,
+    "visibleBounds": {
+      "minX": 382,
+      "minY": 84,
+      "maxX": 1030,
+      "maxY": 1112,
+      "opaquePixels": 511288
+    }
+  },
+  "newComponents": {
+    "hygiene-shampoo": {
+      "sourceCrop": [
+        0,
+        0,
+        1312,
+        1199
+      ],
+      "sourceVisiblePixels": 511288,
+      "registeredBounds": {
+        "minX": 60,
+        "minY": 20,
+        "maxX": 195,
+        "maxY": 235,
+        "opaquePixels": 22775
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v2/drafts/components/hygiene-shampoo.png",
+      "sha256": "adf847c274eafac293e844e4e66c2464c53cdd0103b7dcc83c1045d6d7985904",
+      "family": "hygiene",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v2",
+      "src": "/keeper-review/activity-cloud-composer-v2/assets/hygiene-shampoo-adf847c274eafac2.png"
+    }
+  },
+  "catalogue": {
+    "file": "public/keeper-review/activity-cloud-composer-v2/catalogue.json",
+    "sha256": "c3f077597959c589b9fa6889db84cfe65cd93052d0931e278be5318fb6a6625f",
+    "components": 74,
+    "newComponents": 1
+  },
+  "page": {
+    "file": "public/keeper-review/activity-cloud-composer-v2/index.html",
+    "sha256": "aa63c2b983fcf91648dc8d6060c7ffe4b74ec36e867003cbb3cd9735740dc25f"
+  },
+  "candidate": {
+    "publicShell": {
+      "file": "public/keeper-review/activity-cloud-composer-v2/index.html",
+      "sha256": "aa63c2b983fcf91648dc8d6060c7ffe4b74ec36e867003cbb3cd9735740dc25f"
+    }
+  },
+  "publishedAssets": [
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v2/drafts/components/hygiene-shampoo.png",
+      "sourceSha256": "adf847c274eafac293e844e4e66c2464c53cdd0103b7dcc83c1045d6d7985904",
+      "public": "public/keeper-review/activity-cloud-composer-v2/assets/hygiene-shampoo-adf847c274eafac2.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v2/assets/hygiene-shampoo-adf847c274eafac2.png",
+      "publicSha256": "adf847c274eafac293e844e4e66c2464c53cdd0103b7dcc83c1045d6d7985904",
+      "url": "/keeper-review/activity-cloud-composer-v2/assets/hygiene-shampoo-adf847c274eafac2.png"
+    }
+  ],
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGutterClear": true,
+    "componentOwnershipUnambiguous": true,
+    "v1ComposerUnchanged": true,
+    "primeBodyUnchanged": true,
+    "runtimeChanged": false,
+    "kitchenChanged": false,
+    "deployed": false
+  },
+  "approvalBoundary": {
+    "vocabularyApproved": false,
+    "composerApproved": false,
+    "recipeApproved": false,
+    "runtimePromoted": false
+  }
+}
