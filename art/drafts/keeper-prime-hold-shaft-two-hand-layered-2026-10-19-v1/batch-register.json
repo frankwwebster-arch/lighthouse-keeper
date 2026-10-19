@@ -245,6 +245,7 @@
     "finalChanged": false
   },
   "candidate": {
+    "candidateCommit": "6fbf0720d76dee835349fe5e8969f1cd3c35d83a",
     "routeData": {
       "file": "art/drafts/keeper-prime-hold-shaft-two-hand-layered-2026-10-19-v1/keeper-prime-hold-shaft-two-hand-layered-v1.json",
       "sha256": "3c6b6dc5b9acf932ff15be26971234ca2eb053a2fb7e4763351c58ef7095cdf4"
@@ -255,7 +256,7 @@
     },
     "publicShell": {
       "file": "public/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/index.html",
-      "sha256": "27f73fd9d279fbed380d4ab372d478f9f31b2d4bb9eb51d93a637d2f69bed831"
+      "sha256": "fc20481c6616611d6ce9d3a14e2c31d7f219714aa71d3ecb60a0ddb4895169f0"
     },
     "frames": [
       {
