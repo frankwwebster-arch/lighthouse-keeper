@@ -229,15 +229,20 @@ The active gate is now the broomless
 motion-feasibility proof for reusable `hold_shaft_two_hand`: eight alternating
 gait phases, nine approved turn angles, no more than two visible hands and zero
 prop pixels. It is explicitly a phase-matched full-character proxy rather than
-pixel-identical production art. A promotable successor requires separable Prime
-torso/arm layers. Nothing is approved, promoted or wired.
+pixel-identical production art. Frank approved its held-implement motion
+feasibility on 19 October 2026. The hash-pinned decision is
+`docs/review/keeper-prime-upper-body-override-poc-v3-approval-2026-10-19.json`.
+A promotable successor still requires newly authored separable Prime torso/arm
+layers. The proxy artwork, broom and other implements, runtime, Final and
+production remain unapproved, unchanged and unwired.
 
 Held-implement POC V1 remains immutable. Frank described its motion as a very
 valuable POC and identified a lateral leap at frames 17→18. V2 preserves every
 V1 frame, route root and duration byte-for-byte while correcting only the
 reviewer's horizontal-mirror anchor: the 18.75-lp source root becomes 29.25 lp
 inside the mirrored 48-lp cell, removing the artificial 10.5-lp displacement.
-This positive feedback is not recorded as formal approval.
+That V1 feedback remains provenance; Frank's later formal approval applies to
+the corrected V3 motion-feasibility POC only.
 
 Held-implement POC V2 delivery is live: candidate `aa833925`, shell pin
 `1c06451c`, review-only deploy `04edb860`. The production URL returned HTTP
@@ -263,7 +268,8 @@ Held-implement POC V3 delivery is live: candidate `dedf5af5`, shell pin
 200 pinned to the exact candidate; the live reviewer contains one-shot playback
 and the frame-18 registration, and all 87 unique PNG URLs passed signature
 checks on 19 October 2026. Dedicated V1/V2/V3 verification, TypeScript and the
-production build pass. The complete repository suite reaches the independent
+production build pass. The later approval verifier also hash-checks the exact
+17 frames, 33-frame route and boundary. The complete repository suite reaches the independent
 public-payload ceiling at 50.41 MiB versus 50 MiB after concurrent kitchen
 review additions. V3 adds no image media and only its 1,016-byte public shell.
 

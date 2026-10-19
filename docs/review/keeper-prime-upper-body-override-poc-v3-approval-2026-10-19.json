@@ -1,0 +1,70 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-19",
+  "reviewedBy": "Frank",
+  "candidate": "keeper-prime-upper-body-override-poc-v3",
+  "decision": "approved-as-held-implement-motion-feasibility-poc",
+  "wording": "Frank explicitly approved Prime held-implement motion POC V3 with ‘approved’ on 19 October 2026.",
+  "approvedHashes": {
+    "batchRegister": "a1bad582acfdedffc190eb3bcaeba83269d763bbb1b95e64b39b924404f861f2",
+    "routeData": "54c4ef1ca2677505e586622bc30ca74cecc6a33b2d6c0599c7ac225ecd66ded2",
+    "reviewer": "3e275e075569aa78809052f041fb39d69ca9621e66551491b786c2eebf573f28",
+    "publicShell": "b635b24624386eb496233d2fa102bb20a58ef77aa3a8b3674d94825483494e18",
+    "keeperFrames": [
+      "aa0d8788c17567291a7a2de931c2081b3b2b425c82d81acce4dbf2df565bc56d",
+      "d21537acd20d3f0bd363ac2904814d9d6eaca19c242e9ffbc63f4cae338a7012",
+      "467ccca42a609f3346ef728513892ce147e0606454c053eb175292e05fc33542",
+      "fefd5cba181bbb53b052c6ea8b902889890849418201ccbc1bad9ea6914cf054",
+      "b2bb9aea06b2265b0dd778b745e176cb580e1100fb0114df07bea9edbf1a489c",
+      "88f2dbfcad4af4080c527b4ce9759035f5f3a85e870e8bd9fa87151326584f98",
+      "f7bf6bcd10d98e6dbb78167c5b353498d3d0d175a1d590da58470942d328ea75",
+      "e0ce6b6fbe1c5ccce095d15636ba29e42266d9eeefbc1455504875741ce195f4",
+      "c6c586f56ebb2534ac3a99186ec96b8a4214ce4ae2ed2b087a5d0ad0d7eae6e2",
+      "680d182b89dd9a0b32c719bc61cffbe8f9759e8109b647f918a11b6e006aaa05",
+      "704de98e0837950389cdba5aefe1deaec88c3f0393aa6f6629845e796dd7e82d",
+      "7257a801ff5b6778e582a779e232d2790efa611abda09582a9be166d7d568aa6",
+      "20a9d83d632c8ffcd26d8b2362f5eb766d1412ee32827395184edd1ed4746da4",
+      "89433a1a961e3e196b96e8ba15f50422d5159038dab11b83bce60e61f343d277",
+      "5eb71b3a18cb59d74858d4f09da1b6b7ec853dcc431987143cf59f45037ab082",
+      "096e6b9c9f0741a1ff21110a41c6a9b4a2cd66b189574fda22918763defa2abd",
+      "0b9de793df621d592f4d09f0e24980e84718db5a48837b9cde0b771ebcc14469"
+    ]
+  },
+  "approvedContract": {
+    "gripProfile": "hold_shaft_two_hand",
+    "motionFeasibilityApproved": true,
+    "walkPhases": 8,
+    "turnAngles": 9,
+    "combinedPlaybackFrames": 33,
+    "maximumVisibleHands": 2,
+    "propPixels": 0,
+    "standardWalkAdvanceLogicalPixelsPerFrame": 2.625,
+    "standardWalkCycleAdvanceLogicalPixels": 21,
+    "oneShotReviewPlayback": true,
+    "rearSeamPlaybackFrame": 18,
+    "rearSeamPresentationOffsetLogicalPixels": -1,
+    "v1ArtworkReusedByteForByte": true,
+    "v1AndV2RemainImmutable": true,
+    "productionSuccessorRequiresSeparablePrimeTorsoArmLayers": true
+  },
+  "delivery": {
+    "candidateCommit": "dedf5af5",
+    "shellPinCommit": "6e4b8d4c",
+    "deployCommit": "ebc362c9",
+    "handoffCommit": "69b49828",
+    "reviewUrl": "https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-upper-body-override-poc-v3/"
+  },
+  "approvalBoundary": {
+    "heldImplementMotionFeasibilityApproved": true,
+    "holdShaftTwoHandConceptApproved": true,
+    "proxyArtworkApprovedForProduction": false,
+    "separablePrimeLayerArtworkApproved": false,
+    "broomApproved": false,
+    "otherImplementVariantsApproved": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false,
+    "promotionPerformed": false,
+    "promotionAllowedWithoutSeparateInstruction": false
+  }
+}

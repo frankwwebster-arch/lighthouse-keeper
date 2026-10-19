@@ -148,10 +148,13 @@ phase-matched full-character proxies and is explicitly not pixel-identical
 production art. V3 reuses every immutable V1 frame and duration. It retains
 V2's mirror-aware anchor, adds a one-lp presentation registration at the
 remaining rear seam, and uses one-shot playback so the standard advancing walk
-does not wrap immediately to its start. Frank called V1 a valuable POC, but has
-not formally approved it.
-If he accepts the motion idea, the next gate is a newly authored layered Prime
-torso/arm construction. Nothing is approved or promoted.
+does not wrap immediately to its start. Frank approved this held-implement
+motion-feasibility foundation on 19 October 2026. Preserve its exact hashes and
+approval boundary at
+`docs/review/keeper-prime-upper-body-override-poc-v3-approval-2026-10-19.json`.
+The next gate is a newly authored layered Prime torso/arm construction. The
+proxy artwork, that future layered artwork, every implement, runtime, Final and
+production promotion remain unapproved and unchanged.
 
 ## Binding method for every inherited animation
 
@@ -392,10 +395,11 @@ runtime or production artwork.
 
 Documentation audit updated on 19 October 2026: README, STATUS, this restart
 handoff and the artwork/review playbook agree that Sweep Broom V1–V8 are
-rejected, held-implement POC V1/V2 remain immutable, V3 is the presentation-only
-active successor, production requires separable Prime torso/arm layers, nothing
-is promoted, and Back Sit/Stand V2 remains separately approved and hash-pinned
-without any production-art promotion.
+rejected, held-implement POC V1/V2 remain immutable, and V3 is approved only as
+the held-implement motion-feasibility foundation. Production still requires
+newly authored separable Prime torso/arm layers; no proxy art, implement,
+runtime or production asset is approved or promoted. Back Sit/Stand V2 remains
+separately approved and hash-pinned without any production-art promotion.
 
 Held-implement POC V1 delivery is immutable: candidate commit `98892f9c`,
 shell-pin commit `d8529ece`, reconciled archive-manifest commit `7fbced02` and
@@ -433,6 +437,7 @@ Candidate commit `dedf5af5`, shell-pin commit `6e4b8d4c` and review-only deploy
 commit `ebc362c9` are on `main`. The live V3 shell returned HTTP 200, pinned the
 exact reviewer, contained the one-shot and rear-seam corrections, and all 87
 unique PNG URLs returned valid signatures on 19 October 2026. Dedicated
-V1/V2/V3 verification, TypeScript and production build pass. The complete suite
+V1/V2/V3 verification, the approval verifier, TypeScript and production build
+pass. The complete suite
 reaches the independent 50 MiB public-payload ceiling at 50.41 MiB after
 concurrent kitchen review additions; V3 owns no new image media.
