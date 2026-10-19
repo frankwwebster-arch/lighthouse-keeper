@@ -184,6 +184,16 @@ On strip and approved Broken strip remain byte-for-byte water-only 40-frame/
 remains hash-pinned historical evidence; V19 is reversible, unapproved,
 unpromoted and unwired.
 
+The active effect-only successor is Sink Water Workbench V20 at
+`/keeper-review/kitchen-sink-water-workbench-v20/`. It leaves the complete V19
+sink and room byte-identical, narrows the ON flow to the exact four-pixel tap
+outlet and begins it immediately below that outlet, and raises the BROKEN jets
+well above the tap for comic emphasis. Both candidates remain separate
+40-frame/4-fps ten-second layers. The new asset-first workbench lets Frank add
+or remove the relevant animation, drag it, resize it, crop it, nudge it, vary
+speed from 0.1× to 4×, persist settings locally and export placement JSON. V20
+awaits visual review and changes no Final or runtime asset.
+
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
 link with V6. The animation remains the exact V1/V2 six-pose motion inside its

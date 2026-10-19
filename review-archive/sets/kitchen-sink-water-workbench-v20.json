@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "set": "kitchen-sink-water-workbench-v20",
+  "page": {
+    "path": "public/keeper-review/kitchen-sink-water-workbench-v20/index.html",
+    "sha256": "101540a3516667640d8950ff11e75851846e1aedb86da363ac57abf236b84525",
+    "bytes": 15843
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-sink-water-workbench-v20/assets/fx-sink-broken-tall-comic-jets-f40.png": {
+      "sha256": "d3f4ea8109bcf898c1da894aa54192def5b8ee8eeefa30844293af5a66e2901f",
+      "extension": ".png",
+      "bytes": 185002,
+      "object": "review-archive/objects/d3/d3f4ea8109bcf898c1da894aa54192def5b8ee8eeefa30844293af5a66e2901f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d3/d3f4ea8109bcf898c1da894aa54192def5b8ee8eeefa30844293af5a66e2901f.png"
+    },
+    "/keeper-review/kitchen-sink-water-workbench-v20/assets/fx-sink-on-thin-outlet-flow-f40.png": {
+      "sha256": "db7a186349655b5f12bb2ba8c8696b3a145bef1ab85f767b94a03eaa2cd2d55a",
+      "extension": ".png",
+      "bytes": 27064,
+      "object": "review-archive/objects/db/db7a186349655b5f12bb2ba8c8696b3a145bef1ab85f767b94a03eaa2cd2d55a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/db7a186349655b5f12bb2ba8c8696b3a145bef1ab85f767b94a03eaa2cd2d55a.png"
+    },
+    "/keeper-review/kitchen-sink-water-workbench-v20/assets/room-broken-v20-frame-00.png": {
+      "sha256": "416755b15d24d34a71ff8bd54b8a0b3c140f9ae1b4d713deabc25203d09200cc",
+      "extension": ".png",
+      "bytes": 30967,
+      "object": "review-archive/objects/41/416755b15d24d34a71ff8bd54b8a0b3c140f9ae1b4d713deabc25203d09200cc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/41/416755b15d24d34a71ff8bd54b8a0b3c140f9ae1b4d713deabc25203d09200cc.png"
+    },
+    "/keeper-review/kitchen-sink-water-workbench-v20/assets/room-on-v20-frame-00.png": {
+      "sha256": "774179b726b5f6af1cd16926e4f0a530b5260e0d35890e51172723704b3ac51b",
+      "extension": ".png",
+      "bytes": 28523,
+      "object": "review-archive/objects/77/774179b726b5f6af1cd16926e4f0a530b5260e0d35890e51172723704b3ac51b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/77/774179b726b5f6af1cd16926e4f0a530b5260e0d35890e51172723704b3ac51b.png"
+    },
+    "/keeper-review/kitchen-sink-water-workbench-v20/assets/room-v19.png": {
+      "sha256": "04d17942659a9730bf227929c1f80c14dc9421e993ffa835da1c843beb90834e",
+      "extension": ".png",
+      "bytes": 28353,
+      "object": "review-archive/objects/04/04d17942659a9730bf227929c1f80c14dc9421e993ffa835da1c843beb90834e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/04/04d17942659a9730bf227929c1f80c14dc9421e993ffa835da1c843beb90834e.png"
+    },
+    "/keeper-review/kitchen-sink-water-workbench-v20/assets/sink-broken-v20-frame-00.png": {
+      "sha256": "becc4e67d26cc51d2a2f51a7487c45627725bc3c29b3befbdd3882dddc595a97",
+      "extension": ".png",
+      "bytes": 13891,
+      "object": "review-archive/objects/be/becc4e67d26cc51d2a2f51a7487c45627725bc3c29b3befbdd3882dddc595a97.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/be/becc4e67d26cc51d2a2f51a7487c45627725bc3c29b3befbdd3882dddc595a97.png"
+    },
+    "/keeper-review/kitchen-sink-water-workbench-v20/assets/sink-cabinet-v19.png": {
+      "sha256": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+      "extension": ".png",
+      "bytes": 11179,
+      "object": "review-archive/objects/1b/1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1b/1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec.png"
+    },
+    "/keeper-review/kitchen-sink-water-workbench-v20/assets/sink-on-v20-frame-00.png": {
+      "sha256": "b352d0c98b1363d0ef854d009e5a19047e8fffbbfe4888a50eb657bc7c0ea29e",
+      "extension": ".png",
+      "bytes": 11589,
+      "object": "review-archive/objects/b3/b352d0c98b1363d0ef854d009e5a19047e8fffbbfe4888a50eb657bc7c0ea29e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b352d0c98b1363d0ef854d009e5a19047e8fffbbfe4888a50eb657bc7c0ea29e.png"
+    },
+    "/keeper-review/kitchen-sink-water-workbench-v20/assets/v19-fx-sink-broken-water-f40.png": {
+      "sha256": "ca8073d053b9a5b8f4c2f81227d3bb2ddbcd24c1cca4c64269cf60e99683d9ab",
+      "extension": ".png",
+      "bytes": 180043,
+      "object": "review-archive/objects/ca/ca8073d053b9a5b8f4c2f81227d3bb2ddbcd24c1cca4c64269cf60e99683d9ab.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ca/ca8073d053b9a5b8f4c2f81227d3bb2ddbcd24c1cca4c64269cf60e99683d9ab.png"
+    },
+    "/keeper-review/kitchen-sink-water-workbench-v20/assets/v19-fx-sink-on-water-f40.png": {
+      "sha256": "4e26f5c789cde68e436ddac8697bc6ff2e518b4318ba716e2e90618b019a21ad",
+      "extension": ".png",
+      "bytes": 35373,
+      "object": "review-archive/objects/4e/4e26f5c789cde68e436ddac8697bc6ff2e518b4318ba716e2e90618b019a21ad.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4e/4e26f5c789cde68e436ddac8697bc6ff2e518b4318ba716e2e90618b019a21ad.png"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "set": "kitchen-sink-water-workbench-2026-10-19-v20",
+  "status": "reversible-unapproved-unpromoted",
+  "parent": "kitchen-sink-smooth-join-2026-10-19-v19",
+  "files": {
+    "art/raw/kitchen-sink-smooth-join-2026-10-19-v19/sink-cabinet-standard.png": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+    "art/raw/kitchen-sink-smooth-join-2026-10-19-v19/cabinet-run-plus-sink-native-room.png": "04d17942659a9730bf227929c1f80c14dc9421e993ffa835da1c843beb90834e",
+    "art/raw/kitchen-sink-smooth-join-2026-10-19-v19/fx-sink-on-water-f40.png": "4e26f5c789cde68e436ddac8697bc6ff2e518b4318ba716e2e90618b019a21ad",
+    "art/raw/kitchen-sink-smooth-join-2026-10-19-v19/fx-sink-broken-basin-spouts-f40.png": "ca8073d053b9a5b8f4c2f81227d3bb2ddbcd24c1cca4c64269cf60e99683d9ab",
+    "art/drafts/kitchen-sink-water-workbench-2026-10-19-v20/candidate-catalogue.json": "a1b9682ca7ef98d8729b996a236e304caaa306dc97ea5865f865f6f7a6fc1876",
+    "art/raw/kitchen-sink-water-workbench-2026-10-19-v20/sink-cabinet-v19.png": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+    "art/raw/kitchen-sink-water-workbench-2026-10-19-v20/room-v19.png": "04d17942659a9730bf227929c1f80c14dc9421e993ffa835da1c843beb90834e",
+    "art/raw/kitchen-sink-water-workbench-2026-10-19-v20/v19-fx-sink-on-water-f40.png": "4e26f5c789cde68e436ddac8697bc6ff2e518b4318ba716e2e90618b019a21ad",
+    "art/raw/kitchen-sink-water-workbench-2026-10-19-v20/v19-fx-sink-broken-water-f40.png": "ca8073d053b9a5b8f4c2f81227d3bb2ddbcd24c1cca4c64269cf60e99683d9ab",
+    "art/raw/kitchen-sink-water-workbench-2026-10-19-v20/fx-sink-on-thin-outlet-flow-f40.png": "db7a186349655b5f12bb2ba8c8696b3a145bef1ab85f767b94a03eaa2cd2d55a",
+    "art/raw/kitchen-sink-water-workbench-2026-10-19-v20/fx-sink-broken-tall-comic-jets-f40.png": "d3f4ea8109bcf898c1da894aa54192def5b8ee8eeefa30844293af5a66e2901f",
+    "art/raw/kitchen-sink-water-workbench-2026-10-19-v20/sink-on-v20-frame-00.png": "b352d0c98b1363d0ef854d009e5a19047e8fffbbfe4888a50eb657bc7c0ea29e",
+    "art/raw/kitchen-sink-water-workbench-2026-10-19-v20/sink-broken-v20-frame-00.png": "becc4e67d26cc51d2a2f51a7487c45627725bc3c29b3befbdd3882dddc595a97",
+    "art/raw/kitchen-sink-water-workbench-2026-10-19-v20/room-on-v20-frame-00.png": "774179b726b5f6af1cd16926e4f0a530b5260e0d35890e51172723704b3ac51b",
+    "art/raw/kitchen-sink-water-workbench-2026-10-19-v20/room-broken-v20-frame-00.png": "416755b15d24d34a71ff8bd54b8a0b3c140f9ae1b4d713deabc25203d09200cc"
+  }
+}
