@@ -1,0 +1,1174 @@
+{
+  "schema": "lighthouse-keeper/reversible-review-batch@1",
+  "set": "keeper-prime-back-work-activity-callout-v2",
+  "status": "prime-back-work-callout-v2-awaiting-frank",
+  "purpose": "Replace only the rejected V1 callout evidence with game-language cooking, mixing, washing and repair components while retaining the immutable Prime rear-work body and approved route byte-for-byte.",
+  "bodyInheritance": {
+    "set": "keeper-prime-back-work-activity-callout-v1",
+    "catalogueFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v1/catalogue.json",
+    "catalogueSha256": "34a186e64657d455261c15c7edc20ee1611b6235fabf026cff75cb3a9c9809b8",
+    "registerFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v1/batch-register.json",
+    "registerSha256": "578c941cca8cb81bde9047c77a7c31d47f5862dc9fbd4371606da8cf3fac5fef",
+    "bodyAndRouteChanged": false
+  },
+  "protectedState": {
+    "runtimeManifest": {
+      "file": "public/sprites/manifest.json",
+      "sha256": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174"
+    },
+    "workbench": {
+      "file": "data/keeper_animation_workbench.json",
+      "sha256": "6c349a70f591cba21016cf9a7a49424b971d8aed895504ba775ebd158017c658"
+    }
+  },
+  "authorities": {
+    "exactRear": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f09.png",
+      "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+    },
+    "legacyCookBack": {
+      "file": "art/raw/keeper-first-batch/keeper_cook_back_f8.png",
+      "sha256": "dcfdcb4968440680dc8e1425b40f423fcc472b5da0b783cfa88fc914fc484812"
+    },
+    "legacyCookBackSidecar": {
+      "file": "art/raw/keeper-first-batch/keeper_cook_back_f8.json",
+      "sha256": "bcacd13bcd87cd82f9b06a4e587a2c5c15ef51def5215c8e017328b462b682cf"
+    },
+    "approvedApproach": {
+      "file": "art/drafts/keeper-prime-walk-stop-turn-back-2026-10-14-v3/batch-register.json",
+      "sha256": "a90dd98aeb8d20ff0bb7e32aea419d833ecaf55866f55673785d205f3a50316c"
+    },
+    "approvedTurn": {
+      "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v10/batch-register.json",
+      "sha256": "1670b6d59b43302a6a1501a94f5e9f4b184e23ea9c3969535b48247861e2fffc"
+    },
+    "runtimeManifest": {
+      "file": "public/sprites/manifest.json",
+      "sha256": "a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174"
+    },
+    "workbench": {
+      "file": "data/keeper_animation_workbench.json",
+      "sha256": "6c349a70f591cba21016cf9a7a49424b971d8aed895504ba775ebd158017c658"
+    },
+    "brief": {
+      "file": "docs/KEEPER_BACK_WORK_ACTIVITY_CALLOUT_BRIEF_2026-10-19.md",
+      "sha256": "f4c8f30497169145cb7f3559b854872b513401284479111108102320f3f4b4a5"
+    },
+    "normalisationContract": {
+      "file": "docs/KEEPER_PRIME_ANIMATION_BANK_NORMALISATION_CONTRACT_2026-10-17.md",
+      "sha256": "e576a8670ecc4eb458a5bc1c040e87efdef132fe85e3b267041651515f4553fb"
+    }
+  },
+  "directionalReferences": {
+    "claudeNote": {
+      "file": "docs/CLAUDE_TO_CODEX_ACTIVITY_CALLOUT_SKETCH_2026-10-19.md",
+      "sha256": "8656255b159149d6ef22d07d9ba02100d91f6df474637250e6ac3a449a423f60",
+      "authority": false,
+      "contribution": "composition and phrase-timing prompts only; superseded where Frank clarified both treatments are equal candidates"
+    },
+    "claudeSketch": {
+      "file": "docs/sketches/KEEPER_ACTIVITY_CALLOUT_SKETCH_2026-10-19.html",
+      "sha256": "c5990edce3ecf479297014b9c61ee10b724f755a99920e28e29ac441a001f621",
+      "authority": false,
+      "contribution": "interaction reference only; no art, pixels, vector paths or definitive choices reused"
+    },
+    "frankRadialInspiration": {
+      "sha256": "a7e7541ef113bb3c42978a4f67d386f907d12a55c59544643dd59a36fc8cd879",
+      "retained": false,
+      "authority": false,
+      "contribution": "radial energy, varied scale and scattered marks only; no character, symbols, pixels or exact linework copied"
+    },
+    "primeMaster": {
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "authority": false,
+      "contribution": "game palette and rendering language reference for generated callout artwork"
+    },
+    "kitchenLanguage": {
+      "file": "art/raw/kitchen-rebuild-modular-2026-10-19-v10/kitchen-mixed-static.png",
+      "sha256": "c167e921dcdad059d89bce85907aa6a3d84ecc8c8bfba7e096e27d8bbb4686bf",
+      "authority": false,
+      "contribution": "object finish, outline weight and material-language reference only"
+    }
+  },
+  "generation": {
+    "tool": "built-in image generation",
+    "selectedSources": [
+      {
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/source/cooking-callout-language-generated-v2.png",
+        "sha256": "3c46019a260671766ec2ccf189bd3120f1a7ef8af75be3d2eb9329892b44c90e",
+        "pixels": [
+          1536,
+          1024
+        ],
+        "splitX": 850,
+        "splitY": 560,
+        "cells": [
+          {
+            "asset": "cooking-pan",
+            "crop": [
+              0,
+              0,
+              850,
+              560
+            ],
+            "visiblePixels": 116030
+          },
+          {
+            "asset": "cooking-spoon",
+            "crop": [
+              850,
+              0,
+              1536,
+              560
+            ],
+            "visiblePixels": 54703
+          },
+          {
+            "asset": "cooking-steam",
+            "crop": [
+              0,
+              560,
+              850,
+              1024
+            ],
+            "visiblePixels": 76541
+          },
+          {
+            "asset": "cooking-seasoning",
+            "crop": [
+              850,
+              560,
+              1536,
+              1024
+            ],
+            "visiblePixels": 30799
+          }
+        ]
+      },
+      {
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/source/mixing-callout-language-generated-v2.png",
+        "sha256": "4c8b240e1a28d027691f8fe54dfa92beb29c02135a0749b613302b8db075b0cc",
+        "pixels": [
+          1536,
+          1024
+        ],
+        "splitX": 850,
+        "splitY": 580,
+        "cells": [
+          {
+            "asset": "mixing-bowl",
+            "crop": [
+              0,
+              0,
+              850,
+              580
+            ],
+            "visiblePixels": 195252
+          },
+          {
+            "asset": "mixing-whisk",
+            "crop": [
+              850,
+              0,
+              1536,
+              580
+            ],
+            "visiblePixels": 78641
+          },
+          {
+            "asset": "mixing-egg",
+            "crop": [
+              0,
+              580,
+              850,
+              1024
+            ],
+            "visiblePixels": 113484
+          },
+          {
+            "asset": "mixing-flour",
+            "crop": [
+              850,
+              580,
+              1536,
+              1024
+            ],
+            "visiblePixels": 68729
+          }
+        ]
+      },
+      {
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/source/washing-callout-language-generated-v2.png",
+        "sha256": "ce1ec50e4f1b7d8a39b222ffe58046470081ab4f308265c7cbeb17dc131d7cf1",
+        "pixels": [
+          1536,
+          1024
+        ],
+        "splitX": 850,
+        "splitY": 530,
+        "cells": [
+          {
+            "asset": "washing-plate",
+            "crop": [
+              0,
+              0,
+              850,
+              530
+            ],
+            "visiblePixels": 192061
+          },
+          {
+            "asset": "washing-sponge",
+            "crop": [
+              850,
+              0,
+              1536,
+              530
+            ],
+            "visiblePixels": 141696
+          },
+          {
+            "asset": "washing-droplets",
+            "crop": [
+              0,
+              530,
+              850,
+              1024
+            ],
+            "visiblePixels": 78257
+          },
+          {
+            "asset": "washing-cutlery",
+            "crop": [
+              850,
+              530,
+              1536,
+              1024
+            ],
+            "visiblePixels": 111368
+          }
+        ]
+      },
+      {
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/source/repair-callout-language-generated-v2.png",
+        "sha256": "934808c3e85ac59ab2a4d8cc2a5b193aab0850c08116d908d309a091a7ce4c3e",
+        "pixels": [
+          1536,
+          1024
+        ],
+        "splitX": 850,
+        "splitY": 560,
+        "cells": [
+          {
+            "asset": "repair-tools",
+            "crop": [
+              0,
+              0,
+              850,
+              560
+            ],
+            "visiblePixels": 107770
+          },
+          {
+            "asset": "repair-fastener",
+            "crop": [
+              850,
+              0,
+              1536,
+              560
+            ],
+            "visiblePixels": 84938
+          },
+          {
+            "asset": "repair-oilcan",
+            "crop": [
+              0,
+              560,
+              850,
+              1024
+            ],
+            "visiblePixels": 78965
+          },
+          {
+            "asset": "repair-sparks",
+            "crop": [
+              850,
+              560,
+              1536,
+              1024
+            ],
+            "visiblePixels": 40997
+          }
+        ]
+      }
+    ],
+    "sourceContribution": "new callout object artwork only; no Keeper body, route, contextual prop or runtime art generated",
+    "backgroundIsolation": "native source alpha <= 8 discarded; four disjoint source ownership cells; every output registered to 256 px with a deterministic 20 px target gutter"
+  },
+  "candidate": {
+    "calloutComponents": {
+      "cooking-pan": {
+        "sourceCrop": [
+          0,
+          0,
+          850,
+          560
+        ],
+        "sourceVisiblePixels": 116030,
+        "registeredBounds": {
+          "minX": 20,
+          "minY": 58,
+          "maxX": 235,
+          "maxY": 197,
+          "width": 216,
+          "height": 140,
+          "opaquePixels": 14278
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-pan.png",
+        "sha256": "0ec54ca7575b962e5fae9f321cf4883208c6da9a4f7da6c33a84289c49254642",
+        "activity": "cooking",
+        "slot": "pan",
+        "cellPixels": [
+          256,
+          256
+        ]
+      },
+      "cooking-spoon": {
+        "sourceCrop": [
+          850,
+          0,
+          1536,
+          560
+        ],
+        "sourceVisiblePixels": 54703,
+        "registeredBounds": {
+          "minX": 24,
+          "minY": 20,
+          "maxX": 230,
+          "maxY": 235,
+          "width": 207,
+          "height": 216,
+          "opaquePixels": 15269
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-spoon.png",
+        "sha256": "0793c1ea85d3a38d024de9c788ac3368dafc7c7270a65f65feb03beb10c005f8",
+        "activity": "cooking",
+        "slot": "spoon",
+        "cellPixels": [
+          256,
+          256
+        ]
+      },
+      "cooking-steam": {
+        "sourceCrop": [
+          0,
+          560,
+          850,
+          1024
+        ],
+        "sourceVisiblePixels": 76541,
+        "registeredBounds": {
+          "minX": 20,
+          "minY": 47,
+          "maxX": 235,
+          "maxY": 208,
+          "width": 216,
+          "height": 162,
+          "opaquePixels": 15061
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-steam.png",
+        "sha256": "440c359bcda03d83e026705cbb727c6e79b3d0e9bdf8812488ed0a72aac1b395",
+        "activity": "cooking",
+        "slot": "steam",
+        "cellPixels": [
+          256,
+          256
+        ]
+      },
+      "cooking-seasoning": {
+        "sourceCrop": [
+          850,
+          560,
+          1536,
+          1024
+        ],
+        "sourceVisiblePixels": 30799,
+        "registeredBounds": {
+          "minX": 20,
+          "minY": 62,
+          "maxX": 235,
+          "maxY": 193,
+          "width": 216,
+          "height": 132,
+          "opaquePixels": 7597
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-seasoning.png",
+        "sha256": "208e02a5b2e7ae1508327c8ad2dcdc7ed2b78947d0a40de37b62e9e365092438",
+        "activity": "cooking",
+        "slot": "seasoning",
+        "cellPixels": [
+          256,
+          256
+        ]
+      },
+      "mixing-bowl": {
+        "sourceCrop": [
+          0,
+          0,
+          850,
+          580
+        ],
+        "sourceVisiblePixels": 195252,
+        "registeredBounds": {
+          "minX": 20,
+          "minY": 55,
+          "maxX": 235,
+          "maxY": 200,
+          "width": 216,
+          "height": 146,
+          "opaquePixels": 22557
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-bowl.png",
+        "sha256": "2cae4495779bdd4da3c9a1d0875b870a47cda30419f43555544616bc3052ef9a",
+        "activity": "mixing",
+        "slot": "bowl",
+        "cellPixels": [
+          256,
+          256
+        ]
+      },
+      "mixing-whisk": {
+        "sourceCrop": [
+          850,
+          0,
+          1536,
+          580
+        ],
+        "sourceVisiblePixels": 78641,
+        "registeredBounds": {
+          "minX": 20,
+          "minY": 31,
+          "maxX": 235,
+          "maxY": 223,
+          "width": 216,
+          "height": 193,
+          "opaquePixels": 14181
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-whisk.png",
+        "sha256": "8246369441e5bfe99eea3c60f746e6204b9282ddca0a106aa5cfe22a38eb2c8c",
+        "activity": "mixing",
+        "slot": "whisk",
+        "cellPixels": [
+          256,
+          256
+        ]
+      },
+      "mixing-egg": {
+        "sourceCrop": [
+          0,
+          580,
+          850,
+          1024
+        ],
+        "sourceVisiblePixels": 113484,
+        "registeredBounds": {
+          "minX": 20,
+          "minY": 69,
+          "maxX": 235,
+          "maxY": 185,
+          "width": 216,
+          "height": 117,
+          "opaquePixels": 17824
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-egg.png",
+        "sha256": "97d7b75641c4c580e672a7621f4d3114ef3c300d71de5439084f52522810b1df",
+        "activity": "mixing",
+        "slot": "egg",
+        "cellPixels": [
+          256,
+          256
+        ]
+      },
+      "mixing-flour": {
+        "sourceCrop": [
+          850,
+          580,
+          1536,
+          1024
+        ],
+        "sourceVisiblePixels": 68729,
+        "registeredBounds": {
+          "minX": 20,
+          "minY": 51,
+          "maxX": 235,
+          "maxY": 203,
+          "width": 216,
+          "height": 153,
+          "opaquePixels": 16375
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-flour.png",
+        "sha256": "5734cdf3a8b777e10bb9a1ecb85d97029a28f2f4aff8d40e1385fcfbb6ee6d09",
+        "activity": "mixing",
+        "slot": "flour",
+        "cellPixels": [
+          256,
+          256
+        ]
+      },
+      "washing-plate": {
+        "sourceCrop": [
+          0,
+          0,
+          850,
+          530
+        ],
+        "sourceVisiblePixels": 192061,
+        "registeredBounds": {
+          "minX": 20,
+          "minY": 47,
+          "maxX": 235,
+          "maxY": 207,
+          "width": 216,
+          "height": 161,
+          "opaquePixels": 27984
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/washing-plate.png",
+        "sha256": "01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f",
+        "activity": "washing",
+        "slot": "plate",
+        "cellPixels": [
+          256,
+          256
+        ]
+      },
+      "washing-sponge": {
+        "sourceCrop": [
+          850,
+          0,
+          1536,
+          530
+        ],
+        "sourceVisiblePixels": 141696,
+        "registeredBounds": {
+          "minX": 20,
+          "minY": 53,
+          "maxX": 235,
+          "maxY": 202,
+          "width": 216,
+          "height": 150,
+          "opaquePixels": 20443
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/washing-sponge.png",
+        "sha256": "aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533",
+        "activity": "washing",
+        "slot": "sponge",
+        "cellPixels": [
+          256,
+          256
+        ]
+      },
+      "washing-droplets": {
+        "sourceCrop": [
+          0,
+          530,
+          850,
+          1024
+        ],
+        "sourceVisiblePixels": 78257,
+        "registeredBounds": {
+          "minX": 20,
+          "minY": 48,
+          "maxX": 235,
+          "maxY": 207,
+          "width": 216,
+          "height": 160,
+          "opaquePixels": 17899
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/washing-droplets.png",
+        "sha256": "14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da",
+        "activity": "washing",
+        "slot": "droplets",
+        "cellPixels": [
+          256,
+          256
+        ]
+      },
+      "washing-cutlery": {
+        "sourceCrop": [
+          850,
+          530,
+          1536,
+          1024
+        ],
+        "sourceVisiblePixels": 111368,
+        "registeredBounds": {
+          "minX": 20,
+          "minY": 41,
+          "maxX": 235,
+          "maxY": 213,
+          "width": 216,
+          "height": 173,
+          "opaquePixels": 21732
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/washing-cutlery.png",
+        "sha256": "76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca",
+        "activity": "washing",
+        "slot": "cutlery",
+        "cellPixels": [
+          256,
+          256
+        ]
+      },
+      "repair-tools": {
+        "sourceCrop": [
+          0,
+          0,
+          850,
+          560
+        ],
+        "sourceVisiblePixels": 107770,
+        "registeredBounds": {
+          "minX": 20,
+          "minY": 41,
+          "maxX": 235,
+          "maxY": 214,
+          "width": 216,
+          "height": 174,
+          "opaquePixels": 21243
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-tools.png",
+        "sha256": "c0166e7d0e22b98fb555c6818edec883aa162d67fb5b14c414a3378981b69a72",
+        "activity": "repair",
+        "slot": "tools",
+        "cellPixels": [
+          256,
+          256
+        ]
+      },
+      "repair-fastener": {
+        "sourceCrop": [
+          850,
+          0,
+          1536,
+          560
+        ],
+        "sourceVisiblePixels": 84938,
+        "registeredBounds": {
+          "minX": 20,
+          "minY": 45,
+          "maxX": 235,
+          "maxY": 209,
+          "width": 216,
+          "height": 165,
+          "opaquePixels": 20629
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-fastener.png",
+        "sha256": "17ac443584294846c4276b122b3c9082aec4c9605f58983b72a348084ab5de02",
+        "activity": "repair",
+        "slot": "fastener",
+        "cellPixels": [
+          256,
+          256
+        ]
+      },
+      "repair-oilcan": {
+        "sourceCrop": [
+          0,
+          560,
+          850,
+          1024
+        ],
+        "sourceVisiblePixels": 78965,
+        "registeredBounds": {
+          "minX": 20,
+          "minY": 65,
+          "maxX": 235,
+          "maxY": 190,
+          "width": 216,
+          "height": 126,
+          "opaquePixels": 13951
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-oilcan.png",
+        "sha256": "bc98850fc332d28d9f00907aaf9a51599aae09bad5fc89d882fd7b2fd30c8b23",
+        "activity": "repair",
+        "slot": "oilcan",
+        "cellPixels": [
+          256,
+          256
+        ]
+      },
+      "repair-sparks": {
+        "sourceCrop": [
+          850,
+          560,
+          1536,
+          1024
+        ],
+        "sourceVisiblePixels": 40997,
+        "registeredBounds": {
+          "minX": 20,
+          "minY": 45,
+          "maxX": 235,
+          "maxY": 210,
+          "width": 216,
+          "height": 166,
+          "opaquePixels": 12610
+        },
+        "edgeAlphaPixels": 0,
+        "transparentGutterPx": 20,
+        "ownership": {
+          "ownerCount": 1,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-sparks.png",
+        "sha256": "da07ccd69c9065d999038be53c7121a46f2350c0a05586ae1bfd74f2fec58e60",
+        "activity": "repair",
+        "slot": "sparks",
+        "cellPixels": [
+          256,
+          256
+        ]
+      }
+    },
+    "calloutContactSheets": {
+      "orbit": {
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/evidence/callout-orbit-in-context-contact-sheet.png",
+        "sha256": "a543de6b77235be474223e7f0800820bf3e4c40af53afa5bdd5218659439f6df",
+        "sampleFrames": [
+          1,
+          4,
+          8,
+          15,
+          22,
+          29,
+          33,
+          38
+        ],
+        "includesPrimeBodyAtGameScale": true
+      },
+      "bustle": {
+        "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/evidence/callout-bustle-in-context-contact-sheet.png",
+        "sha256": "52ce612e10bace59447cfb4bcda7c80b758edd59c122d39cb0d97285029bfc4d",
+        "sampleFrames": [
+          1,
+          4,
+          8,
+          15,
+          22,
+          29,
+          33,
+          38
+        ],
+        "includesPrimeBodyAtGameScale": true
+      }
+    },
+    "catalogue": {
+      "file": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/catalogue.json",
+      "sha256": "a585117f6b0dfe65df5a5bb4f31cc37e32f513615daed19d3c247fe335688ab1"
+    },
+    "publicCatalogue": {
+      "file": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/catalogue.json",
+      "sha256": "8aa60afe91253b5a5980d5603065a851274210ba2b3dbe9860cff65cc9c55866",
+      "projection": "playback-fields-only"
+    },
+    "publicShell": {
+      "file": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/index.html",
+      "sha256": "087a341dca4aaee5447d1b815b8a9610f34965af64c1f561ffd508b9d6536495"
+    },
+    "publishedAssets": [
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-pan.png",
+        "sourceSha256": "0ec54ca7575b962e5fae9f321cf4883208c6da9a4f7da6c33a84289c49254642",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-pan-0ec54ca7575b962e.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-pan-0ec54ca7575b962e.png",
+        "publicSha256": "0ec54ca7575b962e5fae9f321cf4883208c6da9a4f7da6c33a84289c49254642",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-pan-0ec54ca7575b962e.png"
+      },
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-spoon.png",
+        "sourceSha256": "0793c1ea85d3a38d024de9c788ac3368dafc7c7270a65f65feb03beb10c005f8",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-spoon-0793c1ea85d3a38d.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-spoon-0793c1ea85d3a38d.png",
+        "publicSha256": "0793c1ea85d3a38d024de9c788ac3368dafc7c7270a65f65feb03beb10c005f8",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-spoon-0793c1ea85d3a38d.png"
+      },
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-steam.png",
+        "sourceSha256": "440c359bcda03d83e026705cbb727c6e79b3d0e9bdf8812488ed0a72aac1b395",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-steam-440c359bcda03d83.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-steam-440c359bcda03d83.png",
+        "publicSha256": "440c359bcda03d83e026705cbb727c6e79b3d0e9bdf8812488ed0a72aac1b395",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-steam-440c359bcda03d83.png"
+      },
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-seasoning.png",
+        "sourceSha256": "208e02a5b2e7ae1508327c8ad2dcdc7ed2b78947d0a40de37b62e9e365092438",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-seasoning-208e02a5b2e7ae15.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-seasoning-208e02a5b2e7ae15.png",
+        "publicSha256": "208e02a5b2e7ae1508327c8ad2dcdc7ed2b78947d0a40de37b62e9e365092438",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-seasoning-208e02a5b2e7ae15.png"
+      },
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-bowl.png",
+        "sourceSha256": "2cae4495779bdd4da3c9a1d0875b870a47cda30419f43555544616bc3052ef9a",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-bowl-2cae4495779bdd4d.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-bowl-2cae4495779bdd4d.png",
+        "publicSha256": "2cae4495779bdd4da3c9a1d0875b870a47cda30419f43555544616bc3052ef9a",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-bowl-2cae4495779bdd4d.png"
+      },
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-whisk.png",
+        "sourceSha256": "8246369441e5bfe99eea3c60f746e6204b9282ddca0a106aa5cfe22a38eb2c8c",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-whisk-8246369441e5bfe9.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-whisk-8246369441e5bfe9.png",
+        "publicSha256": "8246369441e5bfe99eea3c60f746e6204b9282ddca0a106aa5cfe22a38eb2c8c",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-whisk-8246369441e5bfe9.png"
+      },
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-egg.png",
+        "sourceSha256": "97d7b75641c4c580e672a7621f4d3114ef3c300d71de5439084f52522810b1df",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-egg-97d7b75641c4c580.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-egg-97d7b75641c4c580.png",
+        "publicSha256": "97d7b75641c4c580e672a7621f4d3114ef3c300d71de5439084f52522810b1df",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-egg-97d7b75641c4c580.png"
+      },
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-flour.png",
+        "sourceSha256": "5734cdf3a8b777e10bb9a1ecb85d97029a28f2f4aff8d40e1385fcfbb6ee6d09",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-flour-5734cdf3a8b777e1.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-flour-5734cdf3a8b777e1.png",
+        "publicSha256": "5734cdf3a8b777e10bb9a1ecb85d97029a28f2f4aff8d40e1385fcfbb6ee6d09",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-flour-5734cdf3a8b777e1.png"
+      },
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/washing-plate.png",
+        "sourceSha256": "01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-plate-01b82c03b73ae824.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-plate-01b82c03b73ae824.png",
+        "publicSha256": "01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-plate-01b82c03b73ae824.png"
+      },
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/washing-sponge.png",
+        "sourceSha256": "aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-sponge-aed0b35f1bf279fe.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-sponge-aed0b35f1bf279fe.png",
+        "publicSha256": "aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-sponge-aed0b35f1bf279fe.png"
+      },
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/washing-droplets.png",
+        "sourceSha256": "14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-droplets-14fa3c4503f2362d.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-droplets-14fa3c4503f2362d.png",
+        "publicSha256": "14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-droplets-14fa3c4503f2362d.png"
+      },
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/washing-cutlery.png",
+        "sourceSha256": "76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-cutlery-76d1a71e4d9e2cb2.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-cutlery-76d1a71e4d9e2cb2.png",
+        "publicSha256": "76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-cutlery-76d1a71e4d9e2cb2.png"
+      },
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-tools.png",
+        "sourceSha256": "c0166e7d0e22b98fb555c6818edec883aa162d67fb5b14c414a3378981b69a72",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-tools-c0166e7d0e22b98f.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-tools-c0166e7d0e22b98f.png",
+        "publicSha256": "c0166e7d0e22b98fb555c6818edec883aa162d67fb5b14c414a3378981b69a72",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-tools-c0166e7d0e22b98f.png"
+      },
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-fastener.png",
+        "sourceSha256": "17ac443584294846c4276b122b3c9082aec4c9605f58983b72a348084ab5de02",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-fastener-17ac443584294846.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-fastener-17ac443584294846.png",
+        "publicSha256": "17ac443584294846c4276b122b3c9082aec4c9605f58983b72a348084ab5de02",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-fastener-17ac443584294846.png"
+      },
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-oilcan.png",
+        "sourceSha256": "bc98850fc332d28d9f00907aaf9a51599aae09bad5fc89d882fd7b2fd30c8b23",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-oilcan-bc98850fc332d28d.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-oilcan-bc98850fc332d28d.png",
+        "publicSha256": "bc98850fc332d28d9f00907aaf9a51599aae09bad5fc89d882fd7b2fd30c8b23",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-oilcan-bc98850fc332d28d.png"
+      },
+      {
+        "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-sparks.png",
+        "sourceSha256": "da07ccd69c9065d999038be53c7121a46f2350c0a05586ae1bfd74f2fec58e60",
+        "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-sparks-da07ccd69c9065d9.png",
+        "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-sparks-da07ccd69c9065d9.png",
+        "publicSha256": "da07ccd69c9065d999038be53c7121a46f2350c0a05586ae1bfd74f2fec58e60",
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-sparks-da07ccd69c9065d9.png"
+      }
+    ]
+  },
+  "publishedAssets": [
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-pan.png",
+      "sourceSha256": "0ec54ca7575b962e5fae9f321cf4883208c6da9a4f7da6c33a84289c49254642",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-pan-0ec54ca7575b962e.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-pan-0ec54ca7575b962e.png",
+      "publicSha256": "0ec54ca7575b962e5fae9f321cf4883208c6da9a4f7da6c33a84289c49254642",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-pan-0ec54ca7575b962e.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-spoon.png",
+      "sourceSha256": "0793c1ea85d3a38d024de9c788ac3368dafc7c7270a65f65feb03beb10c005f8",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-spoon-0793c1ea85d3a38d.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-spoon-0793c1ea85d3a38d.png",
+      "publicSha256": "0793c1ea85d3a38d024de9c788ac3368dafc7c7270a65f65feb03beb10c005f8",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-spoon-0793c1ea85d3a38d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-steam.png",
+      "sourceSha256": "440c359bcda03d83e026705cbb727c6e79b3d0e9bdf8812488ed0a72aac1b395",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-steam-440c359bcda03d83.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-steam-440c359bcda03d83.png",
+      "publicSha256": "440c359bcda03d83e026705cbb727c6e79b3d0e9bdf8812488ed0a72aac1b395",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-steam-440c359bcda03d83.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-seasoning.png",
+      "sourceSha256": "208e02a5b2e7ae1508327c8ad2dcdc7ed2b78947d0a40de37b62e9e365092438",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-seasoning-208e02a5b2e7ae15.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-seasoning-208e02a5b2e7ae15.png",
+      "publicSha256": "208e02a5b2e7ae1508327c8ad2dcdc7ed2b78947d0a40de37b62e9e365092438",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/cooking-seasoning-208e02a5b2e7ae15.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-bowl.png",
+      "sourceSha256": "2cae4495779bdd4da3c9a1d0875b870a47cda30419f43555544616bc3052ef9a",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-bowl-2cae4495779bdd4d.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-bowl-2cae4495779bdd4d.png",
+      "publicSha256": "2cae4495779bdd4da3c9a1d0875b870a47cda30419f43555544616bc3052ef9a",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-bowl-2cae4495779bdd4d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-whisk.png",
+      "sourceSha256": "8246369441e5bfe99eea3c60f746e6204b9282ddca0a106aa5cfe22a38eb2c8c",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-whisk-8246369441e5bfe9.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-whisk-8246369441e5bfe9.png",
+      "publicSha256": "8246369441e5bfe99eea3c60f746e6204b9282ddca0a106aa5cfe22a38eb2c8c",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-whisk-8246369441e5bfe9.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-egg.png",
+      "sourceSha256": "97d7b75641c4c580e672a7621f4d3114ef3c300d71de5439084f52522810b1df",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-egg-97d7b75641c4c580.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-egg-97d7b75641c4c580.png",
+      "publicSha256": "97d7b75641c4c580e672a7621f4d3114ef3c300d71de5439084f52522810b1df",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-egg-97d7b75641c4c580.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-flour.png",
+      "sourceSha256": "5734cdf3a8b777e10bb9a1ecb85d97029a28f2f4aff8d40e1385fcfbb6ee6d09",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-flour-5734cdf3a8b777e1.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-flour-5734cdf3a8b777e1.png",
+      "publicSha256": "5734cdf3a8b777e10bb9a1ecb85d97029a28f2f4aff8d40e1385fcfbb6ee6d09",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/mixing-flour-5734cdf3a8b777e1.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/washing-plate.png",
+      "sourceSha256": "01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-plate-01b82c03b73ae824.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-plate-01b82c03b73ae824.png",
+      "publicSha256": "01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-plate-01b82c03b73ae824.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/washing-sponge.png",
+      "sourceSha256": "aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-sponge-aed0b35f1bf279fe.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-sponge-aed0b35f1bf279fe.png",
+      "publicSha256": "aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-sponge-aed0b35f1bf279fe.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/washing-droplets.png",
+      "sourceSha256": "14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-droplets-14fa3c4503f2362d.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-droplets-14fa3c4503f2362d.png",
+      "publicSha256": "14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-droplets-14fa3c4503f2362d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/washing-cutlery.png",
+      "sourceSha256": "76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-cutlery-76d1a71e4d9e2cb2.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-cutlery-76d1a71e4d9e2cb2.png",
+      "publicSha256": "76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/washing-cutlery-76d1a71e4d9e2cb2.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-tools.png",
+      "sourceSha256": "c0166e7d0e22b98fb555c6818edec883aa162d67fb5b14c414a3378981b69a72",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-tools-c0166e7d0e22b98f.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-tools-c0166e7d0e22b98f.png",
+      "publicSha256": "c0166e7d0e22b98fb555c6818edec883aa162d67fb5b14c414a3378981b69a72",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-tools-c0166e7d0e22b98f.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-fastener.png",
+      "sourceSha256": "17ac443584294846c4276b122b3c9082aec4c9605f58983b72a348084ab5de02",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-fastener-17ac443584294846.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-fastener-17ac443584294846.png",
+      "publicSha256": "17ac443584294846c4276b122b3c9082aec4c9605f58983b72a348084ab5de02",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-fastener-17ac443584294846.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-oilcan.png",
+      "sourceSha256": "bc98850fc332d28d9f00907aaf9a51599aae09bad5fc89d882fd7b2fd30c8b23",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-oilcan-bc98850fc332d28d.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-oilcan-bc98850fc332d28d.png",
+      "publicSha256": "bc98850fc332d28d9f00907aaf9a51599aae09bad5fc89d882fd7b2fd30c8b23",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-oilcan-bc98850fc332d28d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-sparks.png",
+      "sourceSha256": "da07ccd69c9065d999038be53c7121a46f2350c0a05586ae1bfd74f2fec58e60",
+      "public": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-sparks-da07ccd69c9065d9.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-sparks-da07ccd69c9065d9.png",
+      "publicSha256": "da07ccd69c9065d999038be53c7121a46f2350c0a05586ae1bfd74f2fec58e60",
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v2/assets/repair-sparks-da07ccd69c9065d9.png"
+    }
+  ],
+  "checks": {
+    "v1BodyAndRouteInheritedByteForByte": true,
+    "everyCalloutCellHasSafeEdge": true,
+    "everyCalloutPixelHasOneOwner": true,
+    "bothTreatmentsBuilt": true,
+    "allEvidenceIncludesPrimeAtGameScale": true,
+    "calloutsSeparateFromBody": true,
+    "bodySilent": true,
+    "sfxSeparate": true,
+    "noContextualPropBakedIntoKeeper": true,
+    "runtimeManifestUnchanged": true,
+    "workbenchUnchanged": true,
+    "productionUnchanged": true,
+    "kitchenWorkChanged": false,
+    "preloadRequired": true
+  },
+  "approvalBoundary": {
+    "candidateApproved": false,
+    "bodyApproved": false,
+    "calloutGrammarApproved": false,
+    "sfxApproved": false,
+    "promotionAllowed": false,
+    "runtimeChanged": false,
+    "finalChanged": false,
+    "productionChanged": false,
+    "deployed": false
+  },
+  "rollback": "Discard art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2, public/keeper-review/keeper-prime-back-work-activity-callout-v2, review-archive/sets/keeper-prime-back-work-activity-callout-v2.json and this set's content-addressed objects; V1, every approved authority, runtime assets and Kitchen work remain unchanged."
+}

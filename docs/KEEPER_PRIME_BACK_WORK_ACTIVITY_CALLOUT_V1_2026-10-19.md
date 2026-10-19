@@ -1,6 +1,6 @@
 # Prime Keeper rear-work and activity-callout V1
 
-**Status:** immutable, reversible review candidate built 19 October 2026; awaiting Frank's visual review. Not approved, promoted, deployed or connected to runtime recipes.
+**Status:** immutable, reversible provenance built 19 October 2026. Frank rejected both V1 callout evidence treatments as too generic for the game's design language; the body/route foundation remains unchanged and separately reviewable. Nothing is approved, promoted, deployed or connected to runtime recipes. Callout-only successor: V2.
 
 ## Result
 
@@ -52,4 +52,4 @@ does not unnecessarily enlarge the deployment payload.
 
 ## Decision still needed
 
-Frank must judge the body motion at normal game scale before any later context recipe or runtime proposal. Approval of this V1 would approve neither the callout vocabulary nor SFX automatically; those remain separate gates. A later, separately scoped animation-bank programme is still required to redraw every other historical draft animation as Prime Keeper.
+Frank must still judge the inherited body motion at normal game scale before any later context recipe or runtime proposal. The V1 callout vocabulary is rejected and retained only as immutable provenance; V2 replaces it without changing the body or route. SFX remains a separate gate. A later, separately scoped animation-bank programme is still required to redraw every other historical draft animation as Prime Keeper.
