@@ -340,3 +340,21 @@ artwork, Final/runtime integration or production promotion. Its verifier pins
 the walk order in both directions, exact authority hashes, neutral frames,
 turn order and timing, arm-corridor ownership, per-frame material envelopes,
 prop separation, hand contact, transparent gutters and reviewer preloading.
+
+The immutable V7 candidate is commit `bdceae4d`; shell-pin commit `c22ded68`
+fetches that exact candidate rather than mutable `main`. Review-only deployment
+commit `e5a9cd03` was verified live on 19 October 2026 at
+`/keeper-review/keeper-prime-sweep-broom-v7/`: the production shell returned
+the exact `bdceae4d` pin, the pinned reviewer returned HTTP 200 with the
+movement-first gate, and all 74 unique content-addressed image URLs returned
+valid PNG data. The dedicated V7 verifier, TypeScript check and production
+build pass. The repository-wide suite reaches the independent archive payload
+gate after all preceding checks and stops because the existing public payload
+is 50.26 MiB against the 50 MiB ceiling; V7 itself leaves no review media in
+`public/` beyond its 995-byte shell.
+
+Documentation audit completed on 19 October 2026: README, STATUS, this restart
+handoff and the artwork/review playbook now agree that V1–V6 are rejected,
+V7 is movement-only, broom rendering remains deferred, nothing is promoted,
+and Back Sit/Stand V2 remains separately approved and hash-pinned without any
+production-art promotion.
