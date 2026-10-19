@@ -1,0 +1,125 @@
+{
+  "set": "kitchen-exposed-end-healing-v24",
+  "version": 24,
+  "status": "snap-grid-exposed-end-healing-awaiting-review",
+  "authorities": {
+    "v22Approval": {
+      "file": "docs/review/kitchen-countertop-join-cap-v22-approval-2026-10-19.json",
+      "sha256": "e52767e73acf79c54c7c6805facf7b0646ac1e00f7654ae6ba8464699db98c30"
+    },
+    "v23Catalogue": {
+      "file": "art/drafts/kitchen-snap-grid-join-2026-10-19-v23/candidate-catalogue.json",
+      "sha256": "5d9fb5e7b4fee2ef630ea7a8d61169b4d594fa00ee5dd3cb04c39d07b8ca899b"
+    },
+    "assets": {
+      "room-background-exact.png": {
+        "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/room-background-exact.png",
+        "sha256": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6",
+        "byteIdentical": true
+      },
+      "cabinet-run-v11-exact.png": {
+        "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/cabinet-run-v11-exact.png",
+        "sha256": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
+        "byteIdentical": true
+      },
+      "sink-cabinet-v19-exact.png": {
+        "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/sink-cabinet-v19-exact.png",
+        "sha256": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+        "byteIdentical": true
+      },
+      "join-body-backfill-template.png": {
+        "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/join-body-backfill-template.png",
+        "sha256": "e8bd0080ca426e6d2d750b0c5cbb0b912fe659ec1a49867e740b9216c6b68040",
+        "byteIdentical": true
+      },
+      "countertop-join-cap-template.png": {
+        "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/countertop-join-cap-template.png",
+        "sha256": "99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c",
+        "byteIdentical": true
+      }
+    }
+  },
+  "grid": {
+    "originX": 84,
+    "bayWidthPixels": 84,
+    "slotOriginsX": [
+      84,
+      168,
+      252,
+      336,
+      420,
+      504
+    ],
+    "slotCentresX": [
+      126,
+      210,
+      294,
+      378,
+      462,
+      546
+    ],
+    "primeStopTurnY": 218,
+    "occupiedByTwoBayRun": [
+      168,
+      252
+    ],
+    "legalSinkOriginsX": [
+      84,
+      336,
+      420,
+      504
+    ],
+    "defaultSinkOriginX": 420,
+    "sinkBodyWidthPixels": 84,
+    "defaultSinkMidpointX": 462
+  },
+  "snapContract": {
+    "v23BehaviourPreserved": true,
+    "freePointerPreviewAllowed": true,
+    "nearestLegalSlotShownDuringDrag": true,
+    "commitOccursOnPointerRelease": true,
+    "committedOriginAlwaysExactGridValue": true,
+    "occupiedSlotsRejected": true,
+    "interactionAnchorDerivedFromSnappedBodyMidpoint": true,
+    "imprecisePointerCoordinateNeverPersisted": true
+  },
+  "surfaceContract": {
+    "joinedEdgeUsesApprovedV22Repair": true,
+    "exposedLeftEdgeUsesApprovedV11LeftEndPixels": true,
+    "exposedEndActivatesOnlyWithoutExactNeighbour": true,
+    "exposedEndDeactivatesWhenNeighbourSnapsAdjacent": true,
+    "sourceSprite": "cabinet-run-v11-exact.png",
+    "sourceCrop": {
+      "x": 0,
+      "y": 0,
+      "width": 12,
+      "height": 82
+    },
+    "destinationOffsetFromBodyOrigin": {
+      "x": -4,
+      "y": -4
+    },
+    "drawOrder": [
+      "room-background",
+      "body-backfill",
+      "cabinet-assets",
+      "exposed-end-overlay",
+      "countertop-join-cap"
+    ],
+    "sourceAssetPixelsChanged": false
+  },
+  "publishedAssets": {
+    "room-background-exact.png": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6",
+    "cabinet-run-v11-exact.png": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
+    "sink-cabinet-v19-exact.png": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+    "join-body-backfill-template.png": "e8bd0080ca426e6d2d750b0c5cbb0b912fe659ec1a49867e740b9216c6b68040",
+    "countertop-join-cap-template.png": "99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c"
+  },
+  "boundaries": {
+    "v22Changed": false,
+    "v23Changed": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "promotionPerformed": false
+  }
+}

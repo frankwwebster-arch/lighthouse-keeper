@@ -575,6 +575,14 @@ stop/turn target from the snapped body midpoint, and enables the join only for
 exact zero-gap adjacency. The default sink therefore commits to x=336 with
 midpoint x=378. See
 [`docs/KITCHEN_SNAP_GRID_JOIN_V23_2026-10-19.md`](docs/KITCHEN_SNAP_GRID_JOIN_V23_2026-10-19.md).
+The V24 surface-state proof at
+`/keeper-review/kitchen-exposed-end-healing-v24/` retains that exact snap and
+join behaviour, then finishes any exposed sink left edge with a dynamic crop
+of the approved V11 rounded cabinet end. The end overlay is automatic: it is
+present only when no exact neighbour occupies the adjacent bay and disappears
+when the V22 seamless join becomes applicable. A review-only control exposes
+the untreated edge for comparison. See
+[`docs/KITCHEN_EXPOSED_END_HEALING_V24_2026-10-19.md`](docs/KITCHEN_EXPOSED_END_HEALING_V24_2026-10-19.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

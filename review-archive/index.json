@@ -11,12 +11,12 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 156,
-    "referenceCount": 3889,
+    "setCount": 157,
+    "referenceCount": 3894,
     "uniqueObjectCount": 2369,
-    "logicalBytes": 314432694,
+    "logicalBytes": 314467322,
     "uniqueBytes": 166093572,
-    "deduplicatedBytes": 148339122
+    "deduplicatedBytes": 148373750
   },
   "legacyPaths": {
     "/keeper-review/drafts/00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271.png": {
@@ -22117,6 +22117,41 @@
       "bytes": 28591,
       "object": "review-archive/objects/fb/fb45e71283f760a1e252b01d5a2be3dd7d7d29de05dbdff0592225f3928ffdd0.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fb/fb45e71283f760a1e252b01d5a2be3dd7d7d29de05dbdff0592225f3928ffdd0.png"
+    },
+    "/keeper-review/kitchen-exposed-end-healing-v24/assets/cabinet-run-v11-exact.png": {
+      "sha256": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
+      "extension": ".png",
+      "bytes": 18326,
+      "object": "review-archive/objects/11/112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/11/112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81.png"
+    },
+    "/keeper-review/kitchen-exposed-end-healing-v24/assets/countertop-join-cap-template.png": {
+      "sha256": "99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c",
+      "extension": ".png",
+      "bytes": 141,
+      "object": "review-archive/objects/99/99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/99/99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c.png"
+    },
+    "/keeper-review/kitchen-exposed-end-healing-v24/assets/join-body-backfill-template.png": {
+      "sha256": "e8bd0080ca426e6d2d750b0c5cbb0b912fe659ec1a49867e740b9216c6b68040",
+      "extension": ".png",
+      "bytes": 276,
+      "object": "review-archive/objects/e8/e8bd0080ca426e6d2d750b0c5cbb0b912fe659ec1a49867e740b9216c6b68040.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e8/e8bd0080ca426e6d2d750b0c5cbb0b912fe659ec1a49867e740b9216c6b68040.png"
+    },
+    "/keeper-review/kitchen-exposed-end-healing-v24/assets/room-background-exact.png": {
+      "sha256": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6",
+      "extension": ".png",
+      "bytes": 4706,
+      "object": "review-archive/objects/cb/cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cb/cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6.png"
+    },
+    "/keeper-review/kitchen-exposed-end-healing-v24/assets/sink-cabinet-v19-exact.png": {
+      "sha256": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+      "extension": ".png",
+      "bytes": 11179,
+      "object": "review-archive/objects/1b/1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1b/1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec.png"
     },
     "/keeper-review/kitchen-final-assets-v21/assets/basic-oven.png": {
       "sha256": "45658c2649d10efc896d646821b16e12d3a19fc401d04168e00ace3a6f016ba8",
