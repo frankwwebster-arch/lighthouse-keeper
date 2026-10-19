@@ -374,6 +374,16 @@ the pre-existing public payload at 55.63 MiB against its 50 MiB ceiling. V8
 leaves only its small HTML shell in `public/`; all 94 V8 media references are
 content-addressed under `review-archive/objects`.
 
+Review-only deployment commit `319a10a9` was verified live on 19 October 2026
+at `/keeper-review/keeper-prime-sweep-broom-v8`: production returned the exact
+995-byte shell (SHA-256
+`aeca73e78ba37a8db723876666ee2e42630fcece36462af51f84fdd229649487`),
+the shell pinned corrected reviewer commit `0de604da`, that reviewer returned
+HTTP 200 with the exact movement contract, and all 94 unique content-addressed
+image URLs returned valid PNG signatures. This deployment exposes only the
+review page; it does not approve or promote the candidate or change Final,
+runtime or production artwork.
+
 Documentation audit updated on 19 October 2026: README, STATUS, this restart
 handoff and the artwork/review playbook agree that V1–V7 are rejected, V8 is
 the unapproved movement-only gate, broom rendering remains deferred, nothing
