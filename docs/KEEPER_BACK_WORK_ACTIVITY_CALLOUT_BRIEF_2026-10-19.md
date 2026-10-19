@@ -1,7 +1,15 @@
 # Prime Keeper back-work and activity-callout brief
 
-**Status:** product direction captured 19 October 2026; not built, approved,
-promoted or deployed.
+**Status:** product direction captured and V1 review candidate built 19 October
+2026; not approved, promoted or deployed. The implementation record is
+`docs/KEEPER_PRIME_BACK_WORK_ACTIVITY_CALLOUT_V1_2026-10-19.md`.
+
+**Review clarification, 19 October:** Claude's directional sketch is reference,
+not an art or implementation authority. V1 therefore presents both a
+bubble-free fan and a cloud/puff treatment as equal, separately switchable
+review candidates. Neither is preferred or approved. The context proof places
+its separate furniture layer behind the Keeper; no foreground occluder is
+needed to conceal his hands.
 
 ## Why this is needed
 
@@ -47,17 +55,21 @@ bubble system in `docs/EXPANSION_DESIGN.md`.
   and review files remain untouched, and rejection must require deleting only
   the new draft directory.
 
-The legacy eight-frame, 3 fps `keeper_work_back` may be shown only as labelled
-motion reference. It is not a pixel, anatomy, palette, endpoint or timing
-authority.
+The legacy eight-frame, 4 fps `keeper_cook_back` is the choreography reference
+for V1. `keeper_work_back` has identical historical pixels but is not the
+semantic authority for this task. Neither clip is a pixel, anatomy, palette,
+endpoint or timing authority.
 
 ### 2. A separate activity-callout layer
 
-Use a compact cartoon cloud/puff above and slightly to one side of the Keeper's
-head. Within it, small task icons appear fleetingly and move with excited,
-legible energy: popping in, hopping, tilting, crossing, orbiting briefly and
-vanishing. The result should suggest a flurry of real activity hidden by the
-back-facing pose, rather than a static inventory display.
+Review two original treatments above and slightly to one side of the Keeper's
+head: a compact cartoon cloud/puff, and a bubble-free fan with a main icon,
+outward helpers, swirls and flick marks. In both, small task icons appear
+fleetingly and move with excited, legible energy: popping in, hopping, tilting,
+crossing, orbiting briefly and vanishing. The result should suggest a flurry of
+real activity hidden by the back-facing pose, rather than a static inventory
+display. The directional Claude sketch is not a quality bar and contributes no
+production art.
 
 The visual grammar is:
 
@@ -139,11 +151,12 @@ The recipe resolves the work surface's `usePoint` and an unclipped callout
 anchor. Existing catalogue `bubbleOrigin` values may inform placement, but they
 are not automatically authoritative for this larger animated cloud.
 
-Typical layer order is room/asset rear, Keeper, asset foreground occluder, local
-asset effects, then activity callout. The counter lip, sink front or appliance
-door can therefore hide the Keeper's hands without hiding the explanatory
-icons. The callout must remain inside the room viewport and must move to the
-clearer side if a wall edge, ceiling or nearby UI would clip it.
+The V1 context proof uses room, rear-wall furniture, Keeper, local asset effects,
+then activity callout. The Keeper's own back hides the hand-contact zone. No
+review-only object is placed in front of him. The callout must remain inside the
+room viewport and must move to the clearer side if a wall edge, ceiling or
+nearby UI would clip it. Later asset-specific recipes may declare different
+layering only when their real geometry requires it.
 
 It starts only once the Keeper has reached the work pose, ends before he turns
 away, and never follows him during the walk or turn. The environmental action
