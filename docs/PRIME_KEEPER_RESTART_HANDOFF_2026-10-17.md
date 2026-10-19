@@ -411,3 +411,10 @@ lateral leap between V1 frames 17 and 18: the reviewer mirrored each 48-lp cell
 but still subtracted the unmirrored 18.75-lp root anchor. V2 subtracts the
 mirrored 29.25-lp anchor for mirrored frames, keeping the declared root fixed.
 It reuses every V1 frame and duration byte-for-byte and carries no new art.
+Candidate commit `aa833925`, shell-pin commit `1c06451c` and review-only deploy
+commit `04edb860` are on `main`. The live V2 shell returned HTTP 200, pinned the
+exact candidate, exposed the corrected anchor formula, and all 87 unique PNG
+URLs passed signature checks on 19 October 2026. Dedicated V1/V2 verification,
+TypeScript and production build pass. The complete repository suite stops at
+the independent public-payload ceiling (50.40 MiB versus 50 MiB); V2 itself
+contains no new image media and adds only a 1,016-byte public shell.

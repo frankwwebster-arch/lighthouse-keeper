@@ -237,6 +237,15 @@ reviewer's horizontal-mirror anchor: the 18.75-lp source root becomes 29.25 lp
 inside the mirrored 48-lp cell, removing the artificial 10.5-lp displacement.
 This positive feedback is not recorded as formal approval.
 
+Held-implement POC V2 delivery is live: candidate `aa833925`, shell pin
+`1c06451c`, review-only deploy `04edb860`. The production URL returned HTTP
+200 with the shell pinned to `aa833925`; the live reviewer contained the
+mirror-aware anchor formula and all 87 unique frame/comparison URLs returned
+valid PNG signatures on 19 October 2026. Both POC verifiers, TypeScript and the
+production build pass. The complete repository suite reaches the independent
+50 MiB public-payload gate at 50.40 MiB after unrelated kitchen review work;
+V2 adds only its 1,016-byte shell and no public image media.
+
 Back V1's exact deploy commit `d93c89c` remains delivery provenance only. Back
 V2 is live from exact deploy commit `f165576`; its 61-frame route and all 36
 unique route/comparison images returned valid PNG data on 18 October 2026.
