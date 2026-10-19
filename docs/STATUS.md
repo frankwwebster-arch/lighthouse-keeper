@@ -156,20 +156,23 @@ unpromoted and unwired.
 
 Layout V12's room registration and white-goods envelopes were approved, but
 its proposed sink overlay was immediately superseded. The sink must not sit on
-an existing cabinet. The active static fit gate is now
-`/keeper-review/kitchen-sink-cabinet-v13/`: one complete independent 84 × 74 px
-sink cabinet with its own worktop, basin and intact tap, shown directly beside
-the exact approved V11 two-cabinet run. Their body bounds touch at x=336 but do
-not overlap. Standard, On base and Broken base are byte-identical because the
-broken state will be communicated only by a later separate leak animation; the
-rejected snapped-tap first pass remains provenance only. V13 is unapproved,
-unpromoted and unwired. The animated successor is
-`/keeper-review/kitchen-sink-water-effects-v14/`: On keeps the selected gentle
-water motion but removes the duplicated copper tap and moves the water beneath
-the actual outlet; Broken adds several upward jets originating inside the
-basin. Both are water-only 40-frame/4-fps ten-second strips over the unchanged
-V13 sink, with variable review speed. V14 awaits visual approval and remains
-unpromoted and unwired.
+an existing cabinet. V13 established one complete independent 84 × 74 px sink
+cabinet with its own worktop, basin and intact tap, but its perspective is
+rejected because it does not match approved V11. V14's On stream is also
+rejected in registration because it begins a few pixels below the outlet. Its
+Broken upward-basin-spout animation is approved and retained. Both older routes
+remain immutable.
+
+The active sink gate is
+`/keeper-review/kitchen-sink-perspective-correction-v15/`. V15 redraws the
+complete standalone cabinet from scratch against exact V11's parallel
+projection and front-plane proportions while preserving the 84 × 74 px body
+and 92 × 108 px isolated cell. Standard, On base and Broken base are
+byte-identical. Every V14 On frame is translated upward exactly two pixels so
+the stream meets the outlet; the V14 Broken strip is carried forward
+byte-for-byte. Both remain water-only 40-frame/4-fps ten-second loops with
+0.1×–4× review speed. V15 awaits visual approval and remains unpromoted and
+unwired.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

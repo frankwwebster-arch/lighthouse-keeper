@@ -486,17 +486,17 @@ and its construction record is
 [`docs/KITCHEN_CABINET_RUN_V11_2026-10-19.md`](docs/KITCHEN_CABINET_RUN_V11_2026-10-19.md).
 
 Layout V12 preserves the approved room registration and white-goods envelopes,
-but its sink-overlay proposal is superseded. The active static fit gate is
-`/keeper-review/kitchen-sink-cabinet-v13/`: one complete standalone 84 × 74 px
-sink cabinet with its own worktop, basin and intact tap, placed beside rather
-than over the approved V11 run. Standard, On base and Broken base are
-byte-identical; later independent water effects alone distinguish On and
-Broken. The V14 successor keeps the selected gentle On-water motion but moves
-its water-only pixels beneath the real outlet, while Broken uses separate
-upward basin jets; both are 40-frame/4-fps ten-second loops. See
-[`docs/KITCHEN_SINK_CABINET_V13_2026-10-19.md`](docs/KITCHEN_SINK_CABINET_V13_2026-10-19.md).
-Effect construction is recorded in
-[`docs/KITCHEN_SINK_WATER_EFFECTS_V14_2026-10-19.md`](docs/KITCHEN_SINK_WATER_EFFECTS_V14_2026-10-19.md).
+but its sink-overlay proposal is superseded. V13 established a complete
+standalone 84 × 74 px sink cabinet, and V14 supplied independent On and Broken
+water loops. Their active review is now superseded: the V13 cabinet perspective
+did not match approved V11 and V14's On stream began below the outlet. V14's
+Broken upward-basin-spout animation is approved. The active V15 gate at
+`/keeper-review/kitchen-sink-perspective-correction-v15/` redraws the complete
+standalone cabinet from scratch against exact V11, moves every On-water frame
+up exactly two pixels to meet the tap outlet, and retains Broken byte-for-byte.
+All static bases remain byte-identical and both loops remain 40-frame/4-fps/
+ten-second assets. See
+[`docs/KITCHEN_SINK_PERSPECTIVE_CORRECTION_V15_2026-10-19.md`](docs/KITCHEN_SINK_PERSPECTIVE_CORRECTION_V15_2026-10-19.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

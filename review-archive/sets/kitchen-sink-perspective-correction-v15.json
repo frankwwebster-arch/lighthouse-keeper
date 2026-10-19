@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "set": "kitchen-sink-perspective-correction-v15",
+  "page": {
+    "path": "public/keeper-review/kitchen-sink-perspective-correction-v15/index.html",
+    "sha256": "d31ac11d4bed40774178bac20111e4eb93ad6c72b54d39b58966d73f3a2e82a1",
+    "bytes": 6557
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-sink-perspective-correction-v15/assets/cabinet-run-plus-sink-native-room.png": {
+      "sha256": "00d85569fa5c843496b1832ab4962d34fc767b2408a79e3775c43a2df1262f96",
+      "extension": ".png",
+      "bytes": 35435,
+      "object": "review-archive/objects/00/00d85569fa5c843496b1832ab4962d34fc767b2408a79e3775c43a2df1262f96.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/00/00d85569fa5c843496b1832ab4962d34fc767b2408a79e3775c43a2df1262f96.png"
+    },
+    "/keeper-review/kitchen-sink-perspective-correction-v15/assets/fx-sink-broken-basin-spouts-f40.png": {
+      "sha256": "ca8073d053b9a5b8f4c2f81227d3bb2ddbcd24c1cca4c64269cf60e99683d9ab",
+      "extension": ".png",
+      "bytes": 180043,
+      "object": "review-archive/objects/ca/ca8073d053b9a5b8f4c2f81227d3bb2ddbcd24c1cca4c64269cf60e99683d9ab.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ca/ca8073d053b9a5b8f4c2f81227d3bb2ddbcd24c1cca4c64269cf60e99683d9ab.png"
+    },
+    "/keeper-review/kitchen-sink-perspective-correction-v15/assets/fx-sink-on-water-f40.png": {
+      "sha256": "4e26f5c789cde68e436ddac8697bc6ff2e518b4318ba716e2e90618b019a21ad",
+      "extension": ".png",
+      "bytes": 35373,
+      "object": "review-archive/objects/4e/4e26f5c789cde68e436ddac8697bc6ff2e518b4318ba716e2e90618b019a21ad.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4e/4e26f5c789cde68e436ddac8697bc6ff2e518b4318ba716e2e90618b019a21ad.png"
+    },
+    "/keeper-review/kitchen-sink-perspective-correction-v15/assets/room-sink-broken-frame-00.png": {
+      "sha256": "1dd7d85e6d8f672d40f3914e83e3732395f1b57cb5c72d1e7562fb2c921da87b",
+      "extension": ".png",
+      "bytes": 36822,
+      "object": "review-archive/objects/1d/1dd7d85e6d8f672d40f3914e83e3732395f1b57cb5c72d1e7562fb2c921da87b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1d/1dd7d85e6d8f672d40f3914e83e3732395f1b57cb5c72d1e7562fb2c921da87b.png"
+    },
+    "/keeper-review/kitchen-sink-perspective-correction-v15/assets/room-sink-on-frame-00.png": {
+      "sha256": "bbe508ab90c85967ee9c252dcfacc3baba2128da198c76be795a8d1bc8abed0b",
+      "extension": ".png",
+      "bytes": 35574,
+      "object": "review-archive/objects/bb/bbe508ab90c85967ee9c252dcfacc3baba2128da198c76be795a8d1bc8abed0b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bb/bbe508ab90c85967ee9c252dcfacc3baba2128da198c76be795a8d1bc8abed0b.png"
+    },
+    "/keeper-review/kitchen-sink-perspective-correction-v15/assets/sink-broken-frame-00.png": {
+      "sha256": "93b0acc1a9dbc67823ddaa30d831267f3325daab63090c5d2cfe43792e1d7120",
+      "extension": ".png",
+      "bytes": 13069,
+      "object": "review-archive/objects/93/93b0acc1a9dbc67823ddaa30d831267f3325daab63090c5d2cfe43792e1d7120.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/93/93b0acc1a9dbc67823ddaa30d831267f3325daab63090c5d2cfe43792e1d7120.png"
+    },
+    "/keeper-review/kitchen-sink-perspective-correction-v15/assets/sink-cabinet-broken-base.png": {
+      "sha256": "5360ce169907eb8ec1ae3db4e04dfa5cda007907b8c1b4fc940204dca43f19fd",
+      "extension": ".png",
+      "bytes": 11400,
+      "object": "review-archive/objects/53/5360ce169907eb8ec1ae3db4e04dfa5cda007907b8c1b4fc940204dca43f19fd.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/53/5360ce169907eb8ec1ae3db4e04dfa5cda007907b8c1b4fc940204dca43f19fd.png"
+    },
+    "/keeper-review/kitchen-sink-perspective-correction-v15/assets/sink-cabinet-on-base.png": {
+      "sha256": "5360ce169907eb8ec1ae3db4e04dfa5cda007907b8c1b4fc940204dca43f19fd",
+      "extension": ".png",
+      "bytes": 11400,
+      "object": "review-archive/objects/53/5360ce169907eb8ec1ae3db4e04dfa5cda007907b8c1b4fc940204dca43f19fd.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/53/5360ce169907eb8ec1ae3db4e04dfa5cda007907b8c1b4fc940204dca43f19fd.png"
+    },
+    "/keeper-review/kitchen-sink-perspective-correction-v15/assets/sink-cabinet-perspective-redraw.png": {
+      "sha256": "0a442dd7efdd3aeaf3706faab49db877e9185c950bc6da8b269d97671a75ea93",
+      "extension": ".png",
+      "bytes": 904142,
+      "object": "review-archive/objects/0a/0a442dd7efdd3aeaf3706faab49db877e9185c950bc6da8b269d97671a75ea93.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0a/0a442dd7efdd3aeaf3706faab49db877e9185c950bc6da8b269d97671a75ea93.png"
+    },
+    "/keeper-review/kitchen-sink-perspective-correction-v15/assets/sink-cabinet-standard.png": {
+      "sha256": "5360ce169907eb8ec1ae3db4e04dfa5cda007907b8c1b4fc940204dca43f19fd",
+      "extension": ".png",
+      "bytes": 11400,
+      "object": "review-archive/objects/53/5360ce169907eb8ec1ae3db4e04dfa5cda007907b8c1b4fc940204dca43f19fd.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/53/5360ce169907eb8ec1ae3db4e04dfa5cda007907b8c1b4fc940204dca43f19fd.png"
+    },
+    "/keeper-review/kitchen-sink-perspective-correction-v15/assets/sink-on-frame-00.png": {
+      "sha256": "5605d044a23996acef22f84d9c25c8a52be6cad21f5d0701dc974db78bf71619",
+      "extension": ".png",
+      "bytes": 11643,
+      "object": "review-archive/objects/56/5605d044a23996acef22f84d9c25c8a52be6cad21f5d0701dc974db78bf71619.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/56/5605d044a23996acef22f84d9c25c8a52be6cad21f5d0701dc974db78bf71619.png"
+    }
+  }
+}
