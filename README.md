@@ -504,7 +504,7 @@ but its redrawn cabinet geometry still differed from V11. V16 corrected the
 front by keeping the sink as one independently removable sprite derived from a
 literal approved V11 bay. V17's uniform left return was rejected because it
 extended the whole side rather than describing the worktop plane. The active
-V18 gate at `/keeper-review/kitchen-sink-angled-join-v18/` preserves the exact
+V18 authority at `/keeper-review/kitchen-sink-angled-join-v18/` preserves the exact
 V11 front elevation and replaces only the shallow worktop strip with one small
 down-right diagonal join. The basin uses the opposite perspective cue: its
 side edges widen slightly from the narrower rear rim to the wider front lip.
@@ -512,6 +512,8 @@ V15's corrected On and approved Broken strips remain byte-for-byte. All static
 bases remain byte-identical and both loops remain 40-frame/4-fps/ten-second
 assets. See
 [`docs/KITCHEN_SINK_ANGLED_JOIN_V18_2026-10-19.md`](docs/KITCHEN_SINK_ANGLED_JOIN_V18_2026-10-19.md).
+Frank approved exact V18 on 19 October 2026; the hash-pinned decision record is
+[`docs/review/kitchen-sink-angled-join-v18-approval-2026-10-19.json`](docs/review/kitchen-sink-angled-join-v18-approval-2026-10-19.json).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

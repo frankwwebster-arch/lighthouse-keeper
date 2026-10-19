@@ -66,7 +66,7 @@ def page() -> str:
     html = v17.page()
     html = html.replace("/keeper-review/kitchen-sink-basin-depth-v17/", "/keeper-review/kitchen-sink-angled-join-v18/")
     html = html.replace("Kitchen Sink V17 · worktop return and basin depth", "Kitchen Sink V18 · angled worktop join")
-    html = html.replace("V17 reversible draft", "V18 reversible draft")
+    html = html.replace("V17 reversible draft", "V18 approved review authority")
     html = html.replace(
         '<h1>Matching worktop return and inset basin</h1><p class="lede">The front elevation remains one literal approved V11 bay. A two-pixel stepped left worktop return now continues the neighbouring slab line across the join. The basin follows that shallow plane with a narrower rear rim, angled stepped sides, shaded recessed bowl and wider front lip.</p>',
         '<h1>Angled worktop join and shallow inset basin</h1><p class="lede">The cabinet front remains the exact approved V11 hero geometry. Only the shallow worktop strip changes: its left boundary now follows one small down-right diagonal into the untouched front instead of extending vertically. The basin uses the opposite perspective cue, widening slightly from its narrower rear rim to its wider front lip.</p>',
@@ -122,7 +122,7 @@ def main() -> None:
 
     catalogue = {
         "set": SET,
-        "status": "angled-join-awaiting-visual-review",
+        "status": "approved-kitchen-sink-review-authority",
         "construction": {
             "standaloneAsset": True,
             "structuralSource": str(v17.v16.V11.relative_to(ROOT)),
@@ -149,12 +149,12 @@ def main() -> None:
             "brokenWater": {"source": str(V17_BROKEN.relative_to(ROOT)), "byteIdenticalToV17": True, "frames": v17.v16.FRAME_COUNT, "fps": v17.v16.FPS, "durationSeconds": v17.v16.DURATION, "sfxCue": "kitchen_sink_pipe_burst_loop"},
         },
         "outputs": {name: sha(RAW / name) for name in all_names},
-        "boundaries": {"v11Changed": False, "v17Changed": False, "cabinetFrontChanged": False, "finalChanged": False, "runtimeChanged": False, "promotionPerformed": False},
+        "boundaries": {"approvedReviewAuthority": True, "v11Changed": False, "v17Changed": False, "cabinetFrontChanged": False, "finalChanged": False, "runtimeChanged": False, "promotionPerformed": False},
     }
     catalogue_path = DRAFT / "candidate-catalogue.json"
     catalogue_path.write_text(json.dumps(catalogue, indent=2) + "\n")
     registered = [v17.v16.V11, V17_FIXTURE, V17_ON, V17_BROKEN, v17.v16.BACKGROUND, catalogue_path, *[RAW / name for name in all_names]]
-    register = {"set": SET, "status": "reversible-unapproved-unpromoted", "files": {str(path.relative_to(ROOT)): sha(path) for path in registered}}
+    register = {"set": SET, "status": "approved-review-authority-unpromoted", "approvedOn": "2026-10-19", "files": {str(path.relative_to(ROOT)): sha(path) for path in registered}}
     (DRAFT / "batch-register.json").write_text(json.dumps(register, indent=2) + "\n")
     (PUBLIC / "index.html").write_text(page())
     print("Built Kitchen Sink V18: angled worktop join, exact V11 front and V17 splayed basin")

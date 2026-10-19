@@ -1,6 +1,6 @@
 {
   "set": "kitchen-sink-angled-join-2026-10-19-v18",
-  "status": "angled-join-awaiting-visual-review",
+  "status": "approved-kitchen-sink-review-authority",
   "construction": {
     "standaloneAsset": true,
     "structuralSource": "art/raw/kitchen-cabinet-run-2026-10-19-v11/cabinet-run-native-cell.png",
@@ -92,6 +92,7 @@
     "fx-sink-broken-basin-spouts-f40.png": "ca8073d053b9a5b8f4c2f81227d3bb2ddbcd24c1cca4c64269cf60e99683d9ab"
   },
   "boundaries": {
+    "approvedReviewAuthority": true,
     "v11Changed": false,
     "v17Changed": false,
     "cabinetFrontChanged": false,

@@ -2,7 +2,7 @@
 
 Date: 19 October 2026
 
-Status: reversible visual-review draft; unapproved and unpromoted
+Status: approved kitchen-sink review authority; unpromoted
 
 Review route: `/keeper-review/kitchen-sink-angled-join-v18/`
 
@@ -34,3 +34,9 @@ pixels, every row of the down-right join, the opposing basin spans, all four
 transparent cell gutters, identical static bases, unchanged animation hashes
 and the content-addressed review archive. V11, V17, Final and runtime remain
 unchanged.
+
+Frank approved exact V18 on 19 October 2026 with “approved”. The immutable
+decision record is
+`docs/review/kitchen-sink-angled-join-v18-approval-2026-10-19.json`. Approval
+establishes this exact standalone sink family and its two water loops as the
+kitchen-sink review authority; it does not promote them into Final or runtime.

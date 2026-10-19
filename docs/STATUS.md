@@ -169,15 +169,17 @@ the front elevation with a literal crop of the approved V11 right-hand bay,
 but its countertop ended flush at the join and its basin read too straight.
 V17's uniform left worktop return is rejected because it reads as an extension
 of the whole left side rather than an angled join across the worktop plane. The
-active sink gate is now `/keeper-review/kitchen-sink-angled-join-v18/`. V18
+approved sink authority is now `/keeper-review/kitchen-sink-angled-join-v18/`. V18
 remains one complete, independently removable 92 × 108 px sprite. Its worktop
 edge steps down-right from a three-pixel rear projection into the untouched
 exact V11 front at cell y=42. The basin side edges splay in the opposite
 direction, widening slightly from x=20–70 at the rear rim to x=18–73 at the
 front lip. Standard, On base and Broken base are byte-identical. V15's corrected
 On strip and approved Broken strip remain byte-for-byte water-only 40-frame/
-4-fps ten-second loops with 0.1×–4× review speed. V18 awaits visual approval
-and remains unpromoted and unwired.
+4-fps ten-second loops with 0.1×–4× review speed. Frank approved exact V18 on
+19 October 2026. Its immutable decision record pins the complete static family,
+both water loops, construction metadata and review page. It remains unpromoted
+and unwired.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
