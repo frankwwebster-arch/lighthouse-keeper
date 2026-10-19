@@ -223,19 +223,19 @@ formally rejected at
 four arms after the held pose was added, broke up through the turn, introduced
 pixelation and did not remain visually identical to approved Prime walk art.
 The active gate is now the broomless
-`/keeper-review/keeper-prime-upper-body-override-poc-v1/`. It is the smallest
+`/keeper-review/keeper-prime-upper-body-override-poc-v2/`. It is the smallest
 motion-feasibility proof for reusable `hold_shaft_two_hand`: eight alternating
 gait phases, nine approved turn angles, no more than two visible hands and zero
 prop pixels. It is explicitly a phase-matched full-character proxy rather than
 pixel-identical production art. A promotable successor requires separable Prime
 torso/arm layers. Nothing is approved, promoted or wired.
 
-Held-implement POC V1 is deployed for review from `65506b56` at
-`/keeper-review/keeper-prime-upper-body-override-poc-v1/index.html`. Its shell
-pins candidate `98892f9c`; all 87 unique archived images were live-verified.
-Dedicated verification, typecheck and production build pass. The unrelated
-repository-wide public-payload gate remains at 50.39 MiB versus 50 MiB; this
-POC contributes only a 1,016-byte public shell.
+Held-implement POC V1 remains immutable. Frank described its motion as a very
+valuable POC and identified a lateral leap at frames 17→18. V2 preserves every
+V1 frame, route root and duration byte-for-byte while correcting only the
+reviewer's horizontal-mirror anchor: the 18.75-lp source root becomes 29.25 lp
+inside the mirrored 48-lp cell, removing the artificial 10.5-lp displacement.
+This positive feedback is not recorded as formal approval.
 
 Back V1's exact deploy commit `d93c89c` remains delivery provenance only. Back
 V2 is live from exact deploy commit `f165576`; its 61-frame route and all 36

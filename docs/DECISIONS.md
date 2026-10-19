@@ -1,5 +1,7 @@
 # Decisions made while building
 
+- Held-implement POC mirror correction (Frank, 19 Oct 2026): Frank described V1 as “very good” and “a very valuable POC”, while identifying a significant lateral leap from frame 17 to 18. This is positive review feedback, not formal approval. V2 preserves all V1 art, route roots and timing; it corrects only reviewer placement. A 48-lp cell mirrored around its centre maps the 18.75-lp source root to 29.25 lp, so mirrored frames must subtract 29.25 rather than 18.75. Pin this invariant in verification for every future mirrored review route.
+
 - Prime held-implement reset (Frank, 19 Oct 2026): reject `keeper-prime-sweep-broom-v8` because its held pose retained the complete walk limbs (four arms), broke up during the turn, introduced pixelation and no longer read as the approved Prime walk. Remove the broom from the next gate. First prove a prop-free `hold_shaft_two_hand` state across the eight approved gait phases and nine approved turn angles with no more than two visible hands. Because the approved raster frames have no separable torso/arm layers, the smallest feasibility POC may use clearly labelled phase-matched full-character proxies, but those proxies are not production art and may never be promoted. A successful motion gate leads to newly authored separable Prime torso/arm layers; broom, mower, hoover, shovel and carrying variants follow only after that body-state method is accepted.
 
 - Standalone Vite + React + TypeScript app; engine is pure and seeded, so every behaviour is testable.

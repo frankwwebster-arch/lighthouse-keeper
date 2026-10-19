@@ -140,13 +140,16 @@ decision at
 `docs/review/keeper-prime-sweep-broom-v8-rejection-2026-10-19.json`.
 
 The active gate is the prop-free `hold_shaft_two_hand` motion-feasibility POC
-at `/keeper-review/keeper-prime-upper-body-override-poc-v1/`. It contains eight
+at `/keeper-review/keeper-prime-upper-body-override-poc-v2/`. It contains eight
 alternating gait phases, nine approved turn angles, never more than two visible
 hands and no broom or other prop pixels. Because the approved PNG authorities
 do not contain separable torso/arm layers, this smallest proof uses clean
 phase-matched full-character proxies and is explicitly not pixel-identical
-production art. If Frank accepts the motion idea, the next gate is a newly
-authored layered Prime torso/arm construction. Nothing is approved or promoted.
+production art. V2 is frame-, route- and timing-identical to immutable V1. It
+only corrects mirror-aware presentation, eliminating the false 10.5-lp leap at
+frames 17→18. Frank called V1 a valuable POC, but has not formally approved it.
+If he accepts the motion idea, the next gate is a newly authored layered Prime
+torso/arm construction. Nothing is approved or promoted.
 
 ## Binding method for every inherited animation
 
@@ -386,11 +389,11 @@ review page; it does not approve or promote the candidate or change Final,
 runtime or production artwork.
 
 Documentation audit updated on 19 October 2026: README, STATUS, this restart
-handoff and the artwork/review playbook agree that V1–V8 are rejected, the
-broomless held-implement POC is the only active feasibility gate, production
-requires separable Prime torso/arm layers, nothing is promoted, and Back
-Sit/Stand V2 remains separately approved and hash-pinned without any
-production-art promotion.
+handoff and the artwork/review playbook agree that Sweep Broom V1–V8 are
+rejected, held-implement POC V1 remains immutable, V2 corrects only its mirror
+anchor, production requires separable Prime torso/arm layers, nothing is
+promoted, and Back Sit/Stand V2 remains separately approved and hash-pinned
+without any production-art promotion.
 
 Held-implement POC V1 delivery is immutable: candidate commit `98892f9c`,
 shell-pin commit `d8529ece`, reconciled archive-manifest commit `7fbced02` and
@@ -402,3 +405,9 @@ verifier, sequential TypeScript check and production build pass. The complete
 repository run passes the POC and all checks before the independent archive
 payload ceiling; the existing tracked public payload is 50.39 MiB against its
 50 MiB limit. The POC itself leaves only its 1,016-byte HTML shell in public.
+
+Held-implement POC V2 is the sole active review successor. Frank identified a
+lateral leap between V1 frames 17 and 18: the reviewer mirrored each 48-lp cell
+but still subtracted the unmirrored 18.75-lp root anchor. V2 subtracts the
+mirrored 29.25-lp anchor for mirrored frames, keeping the declared root fixed.
+It reuses every V1 frame and duration byte-for-byte and carries no new art.

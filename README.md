@@ -123,13 +123,15 @@ pinned in
 [`docs/review/keeper-prime-sweep-broom-v8-rejection-2026-10-19.json`](docs/review/keeper-prime-sweep-broom-v8-rejection-2026-10-19.json).
 The replacement gate removes the broom entirely: the versioned
 `hold_shaft_two_hand` motion-feasibility POC at
-`/keeper-review/keeper-prime-upper-body-override-poc-v1/` runs one clean
+`/keeper-review/keeper-prime-upper-body-override-poc-v2/` runs one clean
 two-hand pose through all eight approved gait phases and all nine approved turn
 angles. It deliberately uses phase-matched full-character proxies because the
 approved raster authorities have no separable torso/arm layers; it is not
 pixel-identical production art and cannot be promoted. Its purpose is only to
 decide whether the reusable held-implement state is worth taking into a proper
-layered Prime build. No prop, Final, runtime or production artwork changes.
+layered Prime build. V2 changes no artwork, route or timing from immutable V1;
+it corrects the reviewer mirror anchor that caused a false 10.5-lp lateral leap
+between frames 17 and 18. No prop, Final, runtime or production artwork changes.
 The exact traditional-broom dimensions and the reusable, prop-agnostic cupboard
 handoff for compatible future grounded tools are in
 [`docs/KEEPER_GROUNDED_TOOL_PROP_CONTRACT.md`](docs/KEEPER_GROUNDED_TOOL_PROP_CONTRACT.md).
