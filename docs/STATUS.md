@@ -164,15 +164,17 @@ Broken upward-basin-spout animation is approved and retained. Both older routes
 remain immutable.
 
 V15 is rejected because its newly drawn worktop shoulders, drawer/door faces,
-rails and plinth remain geometrically different from approved V11. The active
-sink gate is now `/keeper-review/kitchen-sink-cabinet-extension-v16/`. V16 is
-still one complete, independently removable 92 × 108 px sprite, but its entire
-84 × 74 px structural shell is a literal crop of the approved V11 right-hand
-bay. Only the central inset basin and intact tap amend those pixels; no cabinet
-is placed beneath it at runtime. Standard, On base and Broken base are
-byte-identical. V15's corrected On strip and approved Broken strip are retained
-byte-for-byte as water-only 40-frame/4-fps ten-second loops with 0.1×–4× review
-speed. V16 awaits visual approval and remains unpromoted and unwired.
+rails and plinth remain geometrically different from approved V11. V16 fixed
+the front elevation with a literal crop of the approved V11 right-hand bay,
+but its countertop ended flush at the join and its basin read too straight.
+The active sink gate is now `/keeper-review/kitchen-sink-basin-depth-v17/`.
+V17 remains one complete, independently removable 92 × 108 px sprite. It keeps
+the exact V11 front elevation, adds a two-pixel stepped left worktop return
+above it, and restores a shallow recessed basin with a narrower rear rim and
+wider front lip. Standard, On base and Broken base are byte-identical. V15's
+corrected On strip and approved Broken strip remain byte-for-byte water-only
+40-frame/4-fps ten-second loops with 0.1×–4× review speed. V17 awaits visual
+approval and remains unpromoted and unwired.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
@@ -243,7 +245,7 @@ Held-implement POC V2 delivery is live: candidate `aa833925`, shell pin
 mirror-aware anchor formula and all 87 unique frame/comparison URLs returned
 valid PNG signatures on 19 October 2026. Both POC verifiers, TypeScript and the
 production build pass. The complete repository suite reaches the independent
-50 MiB public-payload gate at 50.40 MiB after unrelated kitchen review work;
+50 MiB public-payload gate at 50.41 MiB after unrelated kitchen review work;
 V2 adds only its 1,016-byte shell and no public image media.
 
 Back V1's exact deploy commit `d93c89c` remains delivery provenance only. Back
@@ -287,9 +289,9 @@ implemented and no artwork change is authorised by it.
 
 The production Next.js build and the focused Modular V10 verifier pass. The
 full repository suite currently stops only at the pre-existing review-payload
-budget check: `public/` is 50.37 MiB against its 50 MiB target. Review media is
+budget check: `public/` is 50.41 MiB against its 50 MiB target. Review media is
 correctly content-addressed outside `public/`; a later housekeeping pass must
-recover the remaining 0.37 MiB without deleting active review evidence.
+recover the remaining 0.41 MiB without deleting active review evidence.
 
 ### Separate Draft/Final animation workbench
 
