@@ -11,12 +11,12 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 148,
-    "referenceCount": 3605,
-    "uniqueObjectCount": 2247,
-    "logicalBytes": 299969747,
-    "uniqueBytes": 162373459,
-    "deduplicatedBytes": 137596288
+    "setCount": 149,
+    "referenceCount": 3618,
+    "uniqueObjectCount": 2254,
+    "logicalBytes": 300342011,
+    "uniqueBytes": 162496215,
+    "deduplicatedBytes": 137845796
   },
   "legacyPaths": {
     "/keeper-review/drafts/00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271.png": {
@@ -24819,6 +24819,97 @@
       "bytes": 12073,
       "object": "review-archive/objects/07/07170d1ad2c9bc6a67b5188932d3de57c9a97ea42768821bca3ddf704005aec8.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/07/07170d1ad2c9bc6a67b5188932d3de57c9a97ea42768821bca3ddf704005aec8.png"
+    },
+    "/keeper-review/kitchen-sink-angled-join-v18/assets/cabinet-run-plus-sink-native-room.png": {
+      "sha256": "ea08c47b3b830f790502a03e619d0ad70cfe34c86993ca15132db2a69aa6b5f6",
+      "extension": ".png",
+      "bytes": 28344,
+      "object": "review-archive/objects/ea/ea08c47b3b830f790502a03e619d0ad70cfe34c86993ca15132db2a69aa6b5f6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ea/ea08c47b3b830f790502a03e619d0ad70cfe34c86993ca15132db2a69aa6b5f6.png"
+    },
+    "/keeper-review/kitchen-sink-angled-join-v18/assets/fx-sink-broken-basin-spouts-f40.png": {
+      "sha256": "ca8073d053b9a5b8f4c2f81227d3bb2ddbcd24c1cca4c64269cf60e99683d9ab",
+      "extension": ".png",
+      "bytes": 180043,
+      "object": "review-archive/objects/ca/ca8073d053b9a5b8f4c2f81227d3bb2ddbcd24c1cca4c64269cf60e99683d9ab.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ca/ca8073d053b9a5b8f4c2f81227d3bb2ddbcd24c1cca4c64269cf60e99683d9ab.png"
+    },
+    "/keeper-review/kitchen-sink-angled-join-v18/assets/fx-sink-on-water-f40.png": {
+      "sha256": "4e26f5c789cde68e436ddac8697bc6ff2e518b4318ba716e2e90618b019a21ad",
+      "extension": ".png",
+      "bytes": 35373,
+      "object": "review-archive/objects/4e/4e26f5c789cde68e436ddac8697bc6ff2e518b4318ba716e2e90618b019a21ad.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4e/4e26f5c789cde68e436ddac8697bc6ff2e518b4318ba716e2e90618b019a21ad.png"
+    },
+    "/keeper-review/kitchen-sink-angled-join-v18/assets/room-sink-broken-frame-00.png": {
+      "sha256": "ea028d79ec19ed98a562c621847d0f50f7d673b41413e79b97fb4f6af44f1025",
+      "extension": ".png",
+      "bytes": 29884,
+      "object": "review-archive/objects/ea/ea028d79ec19ed98a562c621847d0f50f7d673b41413e79b97fb4f6af44f1025.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ea/ea028d79ec19ed98a562c621847d0f50f7d673b41413e79b97fb4f6af44f1025.png"
+    },
+    "/keeper-review/kitchen-sink-angled-join-v18/assets/room-sink-on-frame-00.png": {
+      "sha256": "a51d5cda9b09ef5b2d0aeb601ac74a040b5a40692cb393686ef1d6c9cfa6ac7c",
+      "extension": ".png",
+      "bytes": 28544,
+      "object": "review-archive/objects/a5/a51d5cda9b09ef5b2d0aeb601ac74a040b5a40692cb393686ef1d6c9cfa6ac7c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a5/a51d5cda9b09ef5b2d0aeb601ac74a040b5a40692cb393686ef1d6c9cfa6ac7c.png"
+    },
+    "/keeper-review/kitchen-sink-angled-join-v18/assets/sink-broken-frame-00.png": {
+      "sha256": "d99af9fb27c127b5578d9eb9a1d3e086495c0d382620421cc909352c5d48c68e",
+      "extension": ".png",
+      "bytes": 12948,
+      "object": "review-archive/objects/d9/d99af9fb27c127b5578d9eb9a1d3e086495c0d382620421cc909352c5d48c68e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d9/d99af9fb27c127b5578d9eb9a1d3e086495c0d382620421cc909352c5d48c68e.png"
+    },
+    "/keeper-review/kitchen-sink-angled-join-v18/assets/sink-cabinet-broken-base.png": {
+      "sha256": "294a98f2d5f11466fd53d35906387932ac48d35d61c618a115a7a1a8eff7d3e9",
+      "extension": ".png",
+      "bytes": 11167,
+      "object": "review-archive/objects/29/294a98f2d5f11466fd53d35906387932ac48d35d61c618a115a7a1a8eff7d3e9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/29/294a98f2d5f11466fd53d35906387932ac48d35d61c618a115a7a1a8eff7d3e9.png"
+    },
+    "/keeper-review/kitchen-sink-angled-join-v18/assets/sink-cabinet-on-base.png": {
+      "sha256": "294a98f2d5f11466fd53d35906387932ac48d35d61c618a115a7a1a8eff7d3e9",
+      "extension": ".png",
+      "bytes": 11167,
+      "object": "review-archive/objects/29/294a98f2d5f11466fd53d35906387932ac48d35d61c618a115a7a1a8eff7d3e9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/29/294a98f2d5f11466fd53d35906387932ac48d35d61c618a115a7a1a8eff7d3e9.png"
+    },
+    "/keeper-review/kitchen-sink-angled-join-v18/assets/sink-cabinet-standard.png": {
+      "sha256": "294a98f2d5f11466fd53d35906387932ac48d35d61c618a115a7a1a8eff7d3e9",
+      "extension": ".png",
+      "bytes": 11167,
+      "object": "review-archive/objects/29/294a98f2d5f11466fd53d35906387932ac48d35d61c618a115a7a1a8eff7d3e9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/29/294a98f2d5f11466fd53d35906387932ac48d35d61c618a115a7a1a8eff7d3e9.png"
+    },
+    "/keeper-review/kitchen-sink-angled-join-v18/assets/sink-fixture-only.png": {
+      "sha256": "2bc190b149f77f9a63be9dcfa2981281fa338da2fb05dca4ed77462dc8165702",
+      "extension": ".png",
+      "bytes": 2895,
+      "object": "review-archive/objects/2b/2bc190b149f77f9a63be9dcfa2981281fa338da2fb05dca4ed77462dc8165702.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2bc190b149f77f9a63be9dcfa2981281fa338da2fb05dca4ed77462dc8165702.png"
+    },
+    "/keeper-review/kitchen-sink-angled-join-v18/assets/sink-on-frame-00.png": {
+      "sha256": "d378c693b35b255bbdd72ef36ce98ba11570bef6f16d6e21e9c619d08051d803",
+      "extension": ".png",
+      "bytes": 11438,
+      "object": "review-archive/objects/d3/d378c693b35b255bbdd72ef36ce98ba11570bef6f16d6e21e9c619d08051d803.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d3/d378c693b35b255bbdd72ef36ce98ba11570bef6f16d6e21e9c619d08051d803.png"
+    },
+    "/keeper-review/kitchen-sink-angled-join-v18/assets/structural-bay-exact-v11.png": {
+      "sha256": "585f351d9ac0e9c98baa0ac646d95d891cd79e0bbe8214e453b7db373cb4e05e",
+      "extension": ".png",
+      "bytes": 8863,
+      "object": "review-archive/objects/58/585f351d9ac0e9c98baa0ac646d95d891cd79e0bbe8214e453b7db373cb4e05e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/58/585f351d9ac0e9c98baa0ac646d95d891cd79e0bbe8214e453b7db373cb4e05e.png"
+    },
+    "/keeper-review/kitchen-sink-angled-join-v18/assets/worktop-angled-join-only.png": {
+      "sha256": "e3ba1dc50a4ebc4325825a0364d78c0f78502c2f43c5ab14b4e95936b0335f53",
+      "extension": ".png",
+      "bytes": 431,
+      "object": "review-archive/objects/e3/e3ba1dc50a4ebc4325825a0364d78c0f78502c2f43c5ab14b4e95936b0335f53.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e3/e3ba1dc50a4ebc4325825a0364d78c0f78502c2f43c5ab14b4e95936b0335f53.png"
     },
     "/keeper-review/kitchen-sink-basin-depth-v17/assets/cabinet-run-plus-sink-native-room.png": {
       "sha256": "f2366962fd4e6313d4f6827c8ea34f0d3dec1a39fe2b7d37774286689872dae4",
