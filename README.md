@@ -469,7 +469,7 @@ x=84–588, common y=134 worktop/y=151 fascia/y=208 foot line, and complete
 one-person table/rear-facing chair. Frank called it excellent subject to making
 the fridge door white.
 
-The active gate is the cabinet-only V11 reset at
+Frank approved the cabinet-only V11 reset at
 `/keeper-review/kitchen-cabinet-run-v11/`. Frank rejected V10's cabinet and
 appliance art for ignoring the required polished style and flat-cutaway
 projection and for unacceptable blockiness. V10 is immutable rejection
@@ -478,8 +478,20 @@ resolution, using only the established storm-blue, sea-glass, navy and
 aged-copper visual direction. Its exact native body is 168 × 74 pixels—two
 84-pixel bays—with a four-pixel transparent cell gutter. The same asset is
 duplicated for both runs; the sink joins fridge, oven and dishwasher as a later
-standalone element. No appliance work resumes before cabinet approval. Its
-record is [`docs/KITCHEN_CABINET_RUN_V11_2026-10-19.md`](docs/KITCHEN_CABINET_RUN_V11_2026-10-19.md).
+standalone element. Exact approval is pinned in
+[`docs/review/kitchen-cabinet-run-v11-approval-2026-10-19.json`](docs/review/kitchen-cabinet-run-v11-approval-2026-10-19.json),
+and its construction record is
+[`docs/KITCHEN_CABINET_RUN_V11_2026-10-19.md`](docs/KITCHEN_CABINET_RUN_V11_2026-10-19.md).
+
+The active geometry-only successor is
+`/keeper-review/kitchen-layout-plan-v12/`. It places the approved cabinet cell
+twice in the exact room and shows the independent fridge, oven/hob, sink-overlay
+and table envelopes without proposing any new artwork. The fridge top remains
+six pixels below the y=134 cabinet top and the oven/hob top three pixels above
+it; those small offsets are permitted because standalone appliance sprites do
+not own or continue cabinet pixels. The original six stop/turn anchors remain
+fixed. See
+[`docs/KITCHEN_LAYOUT_PLAN_V12_2026-10-19.md`](docs/KITCHEN_LAYOUT_PLAN_V12_2026-10-19.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

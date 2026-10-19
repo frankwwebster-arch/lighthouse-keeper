@@ -11,11 +11,11 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 141,
-    "referenceCount": 3466,
-    "uniqueObjectCount": 2150,
-    "logicalBytes": 291107195,
-    "uniqueBytes": 155881467,
+    "setCount": 142,
+    "referenceCount": 3469,
+    "uniqueObjectCount": 2153,
+    "logicalBytes": 291202907,
+    "uniqueBytes": 155977179,
     "deduplicatedBytes": 135225728
   },
   "legacyPaths": {
@@ -20087,6 +20087,27 @@
       "bytes": 186010,
       "object": "review-archive/objects/84/84793f12892b310718d487c437a091a4465f30e8a0c774fa8f70c59e16b121c8.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/84793f12892b310718d487c437a091a4465f30e8a0c774fa8f70c59e16b121c8.png"
+    },
+    "/keeper-review/kitchen-layout-plan-v12/assets/kitchen-layout-anchor-proof.png": {
+      "sha256": "b2df20cbaac6bb5e8595ca9d61c9818d5ae35f360416473415f503054b5cd484",
+      "extension": ".png",
+      "bytes": 30459,
+      "object": "review-archive/objects/b2/b2df20cbaac6bb5e8595ca9d61c9818d5ae35f360416473415f503054b5cd484.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b2/b2df20cbaac6bb5e8595ca9d61c9818d5ae35f360416473415f503054b5cd484.png"
+    },
+    "/keeper-review/kitchen-layout-plan-v12/assets/kitchen-layout-clean.png": {
+      "sha256": "474f17151d85b6da899c7c1f95cc67b47eff2749ef11850c538fd84615ce0fe7",
+      "extension": ".png",
+      "bytes": 26283,
+      "object": "review-archive/objects/47/474f17151d85b6da899c7c1f95cc67b47eff2749ef11850c538fd84615ce0fe7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/47/474f17151d85b6da899c7c1f95cc67b47eff2749ef11850c538fd84615ce0fe7.png"
+    },
+    "/keeper-review/kitchen-layout-plan-v12/assets/kitchen-layout-envelope-proof.png": {
+      "sha256": "4ac415fcb41776c74462f79d9bd4bc17ca82a16b3d48145f93d97cdbd1cca8cb",
+      "extension": ".png",
+      "bytes": 38970,
+      "object": "review-archive/objects/4a/4ac415fcb41776c74462f79d9bd4bc17ca82a16b3d48145f93d97cdbd1cca8cb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4a/4ac415fcb41776c74462f79d9bd4bc17ca82a16b3d48145f93d97cdbd1cca8cb.png"
     },
     "/keeper-review/kitchen-mixing-bowl-states-v36/assets/kitchen-mixing-bowl-broken-in-situ.png": {
       "sha256": "5949db84febb1897b234376bfa5a8e78a0efe0c1c8b3a5b45a9244dbea758ec4",

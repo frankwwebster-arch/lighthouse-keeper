@@ -1,11 +1,12 @@
 {
   "set": "kitchen-cabinet-run-2026-10-19-v11",
-  "status": "reversible-unapproved-unpromoted",
+  "status": "approved-review-authority-unpromoted",
+  "approvedOn": "2026-10-19",
   "files": {
     "art/source/kitchen-cabinet-run-2026-10-19-v11/cabinet-run-generated-source.png": "535d6352bd4591f9b344d96e000bf110f9cd26a35c38f0dad1de32e4e8cfc9ff",
     "art/raw/kitchen-cabinet-run-2026-10-19-v11/cabinet-run-master.png": "534d0467acd5a518ed96f673085c7ca25ccbcfd6f22af53335f1d210d7519ae8",
     "art/raw/kitchen-cabinet-run-2026-10-19-v11/cabinet-run-native-cell.png": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
     "art/raw/kitchen-cabinet-run-2026-10-19-v11/cabinet-run-duplicated-native-room.png": "15ebc98b3764d42f953eabee16042b6cb8e555b93189a2406ca260d21237c915",
-    "art/drafts/kitchen-cabinet-run-2026-10-19-v11/candidate-catalogue.json": "e53331f4605ab9af3a5a93192689f217168b5cfa92cc8b1e23067912b9a5d796"
+    "art/drafts/kitchen-cabinet-run-2026-10-19-v11/candidate-catalogue.json": "280e60d228d937d1d05db0c08fb109d23d56ead6de58b9ef896ab36a38f0d0f4"
   }
 }

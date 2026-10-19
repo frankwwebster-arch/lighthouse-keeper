@@ -36,7 +36,7 @@ const over = (under, top) => {
 const catalogue = JSON.parse(fs.readFileSync(path.join(draftDir, 'candidate-catalogue.json'), 'utf8'))
 const register = JSON.parse(fs.readFileSync(path.join(draftDir, 'batch-register.json'), 'utf8'))
 assert.equal(catalogue.set, set)
-assert.equal(catalogue.status, 'cabinet-only-awaiting-visual-review')
+assert.equal(catalogue.status, 'approved-cabinet-review-authority')
 assert.equal(catalogue.source.generatedFromScratch, true)
 assert.equal(catalogue.source.historicalCabinetPixelsUsed, false)
 assert.equal(catalogue.source.sha256, sha(path.join(sourceDir, 'cabinet-run-generated-source.png')))
@@ -51,7 +51,8 @@ assert.equal(catalogue.asset.containsAppliances, false)
 assert.deepEqual(catalogue.nativeRoom.pixels, [772, 224])
 assert.deepEqual(catalogue.nativeRoom.bodyPlacements, [[168, 134], [420, 134]])
 assert.deepEqual(catalogue.nativeRoom.standaloneOvenGapPixels, [336, 134, 84, 74])
-assert.equal(register.status, 'reversible-unapproved-unpromoted')
+assert.equal(register.status, 'approved-review-authority-unpromoted')
+assert.equal(register.approvedOn, '2026-10-19')
 
 for (const [relative, expected] of Object.entries(register.files)) {
   const file = path.join(root, relative)
@@ -92,7 +93,7 @@ for (let y = 134; y < 208; y++) for (let x = 336; x < 420; x++) {
 
 const html = fs.readFileSync(path.join(reviewDir, 'index.html'), 'utf8')
 for (const pattern of [
-  /Cabinet-only V11 reversible draft/,
+  /Cabinet-only V11 approved authority/,
   /One two-cabinet run/,
   /No sink or appliances/,
   /Installed body:<\/strong> 168 × 74 px/,

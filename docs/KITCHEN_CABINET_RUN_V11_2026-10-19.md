@@ -2,7 +2,7 @@
 
 Date: 19 October 2026
 
-Status: reversible visual-review draft; unapproved, unpromoted and unwired
+Status: approved cabinet review authority; unpromoted and unwired
 
 Review route: `/keeper-review/kitchen-cabinet-run-v11/`
 
@@ -77,6 +77,13 @@ The verifier pins the source and derived hashes, native dimensions, alpha
 gutter, projection metadata, empty oven slot, unchanged room pixels outside the
 two cells, literal reuse of one native sprite for both room appearances,
 review-media preload contract and archive coverage.
+
+Frank approved this exact construction on 19 October 2026. The source,
+catalogue, register, review page, archive manifest and all three derived PNGs
+are pinned by
+`docs/review/kitchen-cabinet-run-v11-approval-2026-10-19.json`. Approval releases
+the geometry-layout proof only; it does not approve any appliance, sink, table,
+Final asset or runtime wiring.
 
 Nothing in Final or runtime changes. Rejection remains reversible by deleting
 only the V11 source/raw/draft/review/archive, builder, verifier and this record.

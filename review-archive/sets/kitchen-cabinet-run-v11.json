@@ -3,8 +3,8 @@
   "set": "kitchen-cabinet-run-v11",
   "page": {
     "path": "public/keeper-review/kitchen-cabinet-run-v11/index.html",
-    "sha256": "2b62c48bf0c8a4097a4692f474eb1249010b4d3fa54c74c162222d167cd2f2ea",
-    "bytes": 4905
+    "sha256": "8147aef27e0c83900e9109565f6f793da011761a92cf6b7e3ee895548e079cdb",
+    "bytes": 4991
   },
   "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
   "entries": {

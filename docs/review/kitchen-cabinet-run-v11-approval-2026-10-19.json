@@ -1,0 +1,43 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-19",
+  "reviewedBy": "Frank",
+  "candidate": "kitchen-cabinet-run-2026-10-19-v11",
+  "decision": "approved-as-kitchen-cabinet-review-authority",
+  "wording": "Good this is approved.",
+  "approvedHashes": {
+    "source": "535d6352bd4591f9b344d96e000bf110f9cd26a35c38f0dad1de32e4e8cfc9ff",
+    "catalogue": "280e60d228d937d1d05db0c08fb109d23d56ead6de58b9ef896ab36a38f0d0f4",
+    "register": "9b2792824e9177160b189754a3f79a8b5e8b6e7dde0752c22a937cab79b1b47c",
+    "page": "8147aef27e0c83900e9109565f6f793da011761a92cf6b7e3ee895548e079cdb",
+    "archive": "85a78aabc49f06ef4fd00bdd3bdeb34afaf3858e19580bc13202bd8c81257aca",
+    "outputs": {
+      "cabinet-run-master.png": "534d0467acd5a518ed96f673085c7ca25ccbcfd6f22af53335f1d210d7519ae8",
+      "cabinet-run-native-cell.png": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
+      "cabinet-run-duplicated-native-room.png": "15ebc98b3764d42f953eabee16042b6cb8e555b93189a2406ca260d21237c915"
+    }
+  },
+  "approvedContract": {
+    "cabinetRunApproved": true,
+    "duplicateUseApproved": true,
+    "sinkRemainsStandalone": true,
+    "appliancesRemainStandalone": true,
+    "logicalBodyPixels": [168, 74],
+    "bayPixels": [84, 74],
+    "transparentGutterPixels": [4, 4],
+    "projection": "straight-on-flat-cutaway-parallel"
+  },
+  "delivery": {
+    "contentCommit": "80bd7a18",
+    "deployCommit": "e73e9a53",
+    "reviewUrl": "https://lighthouse-keeper-mu.vercel.app/keeper-review/kitchen-cabinet-run-v11/"
+  },
+  "approvalBoundary": {
+    "cabinetReviewAuthorityApproved": true,
+    "v10RemainsImmutableRejectedProvenance": true,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "promotionPerformed": false,
+    "promotionAllowedWithoutSeparateInstruction": false
+  }
+}

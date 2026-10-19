@@ -1,0 +1,108 @@
+{
+  "set": "kitchen-layout-plan-2026-10-19-v12",
+  "status": "geometry-only-awaiting-visual-review",
+  "roomPixels": [
+    772,
+    224
+  ],
+  "authority": {
+    "approvedCabinetCell": "art/raw/kitchen-cabinet-run-2026-10-19-v11/cabinet-run-native-cell.png",
+    "approvedCabinetCellSha256": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
+    "background": "art/raw/kitchen-rebuild-foundation-2026-10-18-v1/kitchen-standard-background.png",
+    "backgroundSha256": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6"
+  },
+  "geometry": {
+    "cabinetBodyPlacements": [
+      [
+        168,
+        134
+      ],
+      [
+        420,
+        134
+      ]
+    ],
+    "fridgeBoundsExclusive": [
+      84,
+      140,
+      168,
+      218
+    ],
+    "ovenHobBoundsExclusive": [
+      336,
+      131,
+      420,
+      208
+    ],
+    "sinkOverlayRegistration": [
+      504,
+      118,
+      588,
+      151
+    ],
+    "tableChairBoundsExclusive": [
+      680,
+      148,
+      764,
+      222
+    ],
+    "interactionAnchors": [
+      [
+        126,
+        218
+      ],
+      [
+        210,
+        218
+      ],
+      [
+        294,
+        218
+      ],
+      [
+        378,
+        218
+      ],
+      [
+        462,
+        218
+      ],
+      [
+        546,
+        218
+      ]
+    ],
+    "worktopTopY": 134,
+    "walkingDatumY": 218
+  },
+  "boundaries": {
+    "newApplianceArt": false,
+    "sinkConsumesExtraBay": false,
+    "standaloneMeansIndependentSprite": true,
+    "finalChanged": false,
+    "runtimeChanged": false
+  },
+  "outputs": {
+    "kitchen-layout-clean.png": {
+      "sha256": "474f17151d85b6da899c7c1f95cc67b47eff2749ef11850c538fd84615ce0fe7",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "kitchen-layout-envelope-proof.png": {
+      "sha256": "4ac415fcb41776c74462f79d9bd4bc17ca82a16b3d48145f93d97cdbd1cca8cb",
+      "pixels": [
+        772,
+        224
+      ]
+    },
+    "kitchen-layout-anchor-proof.png": {
+      "sha256": "b2df20cbaac6bb5e8595ca9d61c9818d5ae35f360416473415f503054b5cd484",
+      "pixels": [
+        772,
+        224
+      ]
+    }
+  }
+}

@@ -140,7 +140,7 @@ exact `772 × 224` room, six equal `84-px` bays at x=84–588, y=134 worktop,
 y=151 fascia and y=208 foot line. Frank called it excellent subject to changing
 the fridge door to white.
 
-The active kitchen gate is now the cabinet-only
+Frank approved the cabinet-only
 `/keeper-review/kitchen-cabinet-run-v11/`. Frank rejected V10's cabinet and
 appliance art because it ignored the required polished style and flat-cutaway
 projection and was unacceptably blocky. V10 remains immutable rejection
@@ -149,9 +149,20 @@ the storm-blue, sea-glass, navy and aged-copper palette, then derives an exact
 168 × 74-pixel installed body with four-pixel transparent cell gutters. The
 same native sprite is duplicated at x=168 and x=420 in the exact 772 × 224 room
 proof, leaving the 84-pixel standalone-oven gap untouched. The sink is now a
-later standalone element like the fridge, oven and dishwasher. No appliance,
-state family or animation may begin until Frank approves this cabinetry. V11
-is reversible, unapproved, unpromoted and unwired.
+later standalone element like the fridge, oven and dishwasher. Exact V11 is
+hash-pinned by
+`docs/review/kitchen-cabinet-run-v11-approval-2026-10-19.json`; it remains
+unpromoted and unwired.
+
+The active kitchen gate is the geometry-only
+`/keeper-review/kitchen-layout-plan-v12/`. It places the exact approved run
+twice in the room and exposes measurements without drawing any new appliance:
+fridge x=84–168/y=140–218, oven/hob x=336–420/y=131–208, sink as an independent
+overlay registered to the final cabinet bay, and table/chair x=680–764/y=148–222.
+The fridge may finish six pixels below the y=134 worktop and the oven/hob three
+pixels above it; independent appliance art does not need to continue cabinet
+pixels. All six existing Keeper stop/turn anchors remain unchanged. V12 awaits
+visual review and changes neither Final nor runtime.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
