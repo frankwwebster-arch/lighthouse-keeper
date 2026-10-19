@@ -141,16 +141,15 @@ y=151 fascia and y=208 foot line. Frank called it excellent subject to changing
 the fridge door to white.
 
 The active kitchen gate is
-`/keeper-review/kitchen-rebuild-states-v8/`. V8 retains V7's asset-first layer
-builder and all unrelated media. It replaces only the Broken oven and its
-internal-light strips: the exact On oven supplies the body, hob, fascia and
-door; that door is vertically foreshortened on its unchanged centreline so its
-bottom hinge projects straight toward the camera without sideways skew. Its
-window still exposes the cavity and burnt roast. Cavity flicker swaps the
-complete, identically registered dark/lit Broken oven, while the warning light
-and smoke remain separately removable layers above it. All controls and all 36
-isolated 40-frame/4-fps ten-second models remain available. V8 is reversible,
-unpromoted and unwired; Final/runtime and V3–V7 remain unchanged.
+`/keeper-review/kitchen-rebuild-states-v9/`. Frank approved V8's Broken-oven
+geometry. V9 preserves that complete oven and every unrelated output byte-for-
+byte, changing only its three internal-light full-state strips. Random,
+Sputtering and Near Blow timings combine uneven dark holds, isolated flashes,
+short electrical stutters and irregular terminal flutter without any short
+repeating cadence. The smoke and warning light remain separate removable
+layers. All controls and all 36 isolated 40-frame/4-fps ten-second models
+remain available. V9 is reversible, unpromoted and unwired; Final/runtime and
+V3–V8 remain unchanged.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

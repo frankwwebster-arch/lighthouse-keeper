@@ -465,21 +465,19 @@ x=84–588, common y=134 worktop/y=151 fascia/y=208 foot line, and complete
 one-person table/rear-facing chair. Frank called it excellent subject to making
 the fridge door white.
 
-The active gate is Rebuild V8 at
-`/keeper-review/kitchen-rebuild-states-v8/`. It retains V7's asset-first Broken-
-state builder and all unrelated media, but corrects the Broken oven directly
-from the exact On oven. Its bottom-hinged door opens a few degrees straight
-toward the camera: the exact door is foreshortened vertically on its unchanged
-centreline, with no sideways skew, while its transparent window still shows
-the cavity and burnt roasting item. Internal-light flicker swaps the complete,
-identically registered dark and lit Broken ovens instead of superimposing a
-separate cavity graphic. The independently removable warning flicker remains
-above that full-state swap, with smoke above both. Every applied layer remains
-independently selectable and removable, with its own model, 0.1×–4× speed,
-position, width/height and four-sided crop; configuration persists locally and
-exports as JSON. Every source remains a canonical 40-frame/4-fps ten-second
-loop. Its record is
-[`docs/KITCHEN_REBUILD_STATES_V8_2026-10-18.md`](docs/KITCHEN_REBUILD_STATES_V8_2026-10-18.md).
+The active gate is Rebuild V9 at
+`/keeper-review/kitchen-rebuild-states-v9/`. Frank approved V8's corrected
+Broken-oven geometry: exact On-derived body and hob, straight-toward-camera
+bottom-hinged door, transparent window and burnt roast. V9 preserves that oven
+and every unrelated V8 asset byte-for-byte and changes only the three internal-
+light strips. Their full-state dark/lit swaps now use uneven dark holds,
+isolated flashes, short sputters and irregular terminal flutters instead of a
+regular pulse. The choices are Random, Sputtering and Near Blow. Smoke and the
+red warning flicker remain independent removable layers above the full-state
+swap. Every layer retains model, 0.1×–4× speed, transform, crop, local
+persistence and JSON export controls; every source remains a canonical
+40-frame/4-fps ten-second loop. Its record is
+[`docs/KITCHEN_REBUILD_STATES_V9_2026-10-19.md`](docs/KITCHEN_REBUILD_STATES_V9_2026-10-19.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
@@ -500,7 +498,8 @@ immutable coherent foundation; Rebuild V2 is immutable state-family
 provenance; Rebuild V3 is immutable placement-workbench provenance; Rebuild V4
 is immutable variable-speed provenance; Rebuild V5 is immutable corrected-copy
 provenance; Rebuild V6 is immutable switchable-layer provenance; Rebuild V7 is
-the sole active asset-first animation-placement gate and awaits review.
+immutable asset-first interaction provenance; Rebuild V8 is the accepted oven-
+geometry authority; and Rebuild V9 is the active failing-bulb timing gate.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:
