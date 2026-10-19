@@ -313,10 +313,10 @@ Review-only deployment commit `1c1ac67a` was verified live on 18 October 2026
 at `/keeper-review/keeper-prime-sweep-broom-v6/`: the production shell served
 the exact `59990fcc` pin, the pinned reviewer loaded, and every unique
 actor/prop/contact/comparison URL returned successfully. The dedicated V6
-verifier, TypeScript check and production build pass. The repository-wide
-`npm test` currently stops at the independent public-payload ceiling (50.06
-MiB versus 50 MiB) introduced by the already-present kitchen V4 review shell;
-all earlier pretest verifiers, including V6, pass before that archive gate.
+verifier, TypeScript check and production build pass. At that delivery the
+repository-wide `npm test` stopped at the independent public-payload ceiling
+(50.06 MiB versus 50 MiB) introduced by the already-present kitchen V4 review
+shell; all earlier pretest verifiers, including V6, passed before that gate.
 
 Frank subsequently rejected V6. Its advertised gait interlacing was not what
 the delivered route played: the mirrored walk-away ran F8→F1, the carried
@@ -357,10 +357,22 @@ commit `e5a9cd03` was verified live on 19 October 2026 at
 the exact `bdceae4d` pin, the pinned reviewer returned HTTP 200 with the
 movement-first gate, and all 74 unique content-addressed image URLs returned
 valid PNG data. The dedicated V7 verifier, TypeScript check and production
-build pass. The repository-wide suite reaches the independent archive payload
-gate after all preceding checks and stops because the existing public payload
-is 50.26 MiB against the 50 MiB ceiling; V7 itself leaves no review media in
-`public/` beyond its 995-byte shell.
+build pass. At V7 delivery the repository-wide suite reached the independent
+archive payload gate after all preceding checks and stopped because the then
+existing public payload was 50.26 MiB against the 50 MiB ceiling; V7 itself
+left no review media in `public/` beyond its 995-byte shell.
+
+V8 candidate commit `fc082d1c` was corrected before delivery by `0de604da`,
+which removes a duplicated 21-high-resolution-pixel displacement before the
+walk-to-stop bridge. Shell-pin commit `c5ec0054` fetches the exact corrected
+reviewer from `0de604da`. The dedicated V8 verifier, TypeScript check and
+production build pass. The full repository run passes its pretest and all
+checks before the independent archive gate; the current unrelated kitchen V10
+public archive state then fails because archived kitchen media is still
+physically present, and the standalone archive verifier additionally reports
+the pre-existing public payload at 55.63 MiB against its 50 MiB ceiling. V8
+leaves only its small HTML shell in `public/`; all 94 V8 media references are
+content-addressed under `review-archive/objects`.
 
 Documentation audit updated on 19 October 2026: README, STATUS, this restart
 handoff and the artwork/review playbook agree that V1–V7 are rejected, V8 is
