@@ -262,6 +262,14 @@ authority colours. The candidate awaits Frank's visual decision. The proxy
 artwork, layered V1 artwork, broom and other implements, runtime, Final and
 production remain unapproved, unchanged and unwired.
 
+Layered V1 delivery is committed and pushed to remote `main`: candidate
+`6fbf0720`, immutable shell pin `68e9b0d0`. No `[deploy]` commit was created,
+because this task explicitly prohibited production promotion. The versioned
+review route therefore remains repository-ready but is not yet live on the
+production site. Its dedicated verifier, typecheck and production build pass;
+the complete clean-tree suite reaches only the already-documented public-payload
+guard (50.44 MiB against 50 MiB), unrelated to the 1.04 KiB pinned shell.
+
 Held-implement POC V1 remains immutable. Frank described its motion as a very
 valuable POC and identified a lateral leap at frames 17→18. V2 preserves every
 V1 frame, route root and duration byte-for-byte while correcting only the

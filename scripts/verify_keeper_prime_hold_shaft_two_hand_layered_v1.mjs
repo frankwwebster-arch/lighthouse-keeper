@@ -49,6 +49,10 @@ for (const boundary of ['layeredArtworkApproved', 'implementIncluded', 'broomInc
   assert.equal(register.approvalBoundary[boundary], false, `approval boundary ${boundary}`)
 }
 assert.equal(register.approvalBoundary.motionFoundationApproved, true)
+assert.equal(register.delivery.candidateCommit, '6fbf0720d76dee835349fe5e8969f1cd3c35d83a')
+assert.equal(register.delivery.remoteMainPushed, true)
+assert.equal(register.delivery.reviewDeploymentPerformed, false)
+assert.ok(shell.includes(register.delivery.candidateCommit))
 assert.equal(sha(register.authorities.approvedPocV3.file), register.authorities.approvedPocV3.sha256)
 assert.equal(sha(register.authorities.approvedPocV3Decision.file), register.authorities.approvedPocV3Decision.sha256)
 for (const source of Object.values(register.sources)) assert.equal(sha(source.file), source.sha256)

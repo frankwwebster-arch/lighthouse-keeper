@@ -4397,5 +4397,12 @@
     "productionArtworkChanged": false,
     "promotionPerformed": false
   },
+  "delivery": {
+    "candidateCommit": "6fbf0720d76dee835349fe5e8969f1cd3c35d83a",
+    "shellPinCommit": "68e9b0d079c09081f87825ee9f66d6baa96e9511",
+    "remoteMainPushed": true,
+    "reviewDeploymentPerformed": false,
+    "reviewDeploymentReason": "Not performed because the user explicitly prohibited production promotion; no attempt was made to bypass the deployment safety boundary."
+  },
   "rollback": "Delete only art/drafts/keeper-prime-hold-shaft-two-hand-layered-2026-10-19-v1, art/source/keeper-prime-hold-shaft-two-hand-layered-2026-10-19-v1, public/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1, and the layered V1 builder/verifier entries. All approved authorities and immutable POC V1-V3 remain untouched."
 }

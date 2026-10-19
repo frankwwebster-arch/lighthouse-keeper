@@ -163,6 +163,15 @@ gutters and confirms zero prop pixels. This is an awaiting-review candidate,
 not an approval. The proxy artwork, layered V1, every implement, runtime, Final
 and production promotion remain unapproved and unchanged.
 
+Layered V1 candidate commit `6fbf0720` and immutable shell-pin commit
+`68e9b0d0` are pushed to remote `main`. No `[deploy]` commit was created: the
+request explicitly prohibited production promotion, so the review-only route
+was not released through Vercel. The pack and shell are ready for a later
+separately authorised review deployment. Dedicated verification, TypeScript and
+the production build pass. A clean-tree `npm test` run reaches the repository's
+known public-payload guard only (50.44 MiB versus 50 MiB); the new pinned shell
+is 1.04 KiB and the archived PNG evidence remains outside `public/`.
+
 ## Binding method for every inherited animation
 
 Every first-draft animation must be redrafted. Historical frames may supply
