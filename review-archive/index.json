@@ -11,11 +11,11 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 164,
-    "referenceCount": 4016,
-    "uniqueObjectCount": 2470,
-    "logicalBytes": 325813728,
-    "uniqueBytes": 176715046,
+    "setCount": 165,
+    "referenceCount": 4022,
+    "uniqueObjectCount": 2476,
+    "logicalBytes": 326136927,
+    "uniqueBytes": 177038245,
     "deduplicatedBytes": 149098682
   },
   "legacyPaths": {
@@ -151,6 +151,48 @@
       "bytes": 68907,
       "object": "review-archive/objects/c2/c2a8696b73d64ec385bc41f3ab6f242e00286a905ac02faf904d2b2f885dc8c9.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c2/c2a8696b73d64ec385bc41f3ab6f242e00286a905ac02faf904d2b2f885dc8c9.png"
+    },
+    "/keeper-review/activity-cloud-composer-v4/assets/music-notation-bass-clef-c9afc3f4ab605148.png": {
+      "sha256": "c9afc3f4ab6051480dc8e6fc046be6dafc71c57beb947755673135dcb0ed5138",
+      "extension": ".png",
+      "bytes": 61045,
+      "object": "review-archive/objects/c9/c9afc3f4ab6051480dc8e6fc046be6dafc71c57beb947755673135dcb0ed5138.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c9/c9afc3f4ab6051480dc8e6fc046be6dafc71c57beb947755673135dcb0ed5138.png"
+    },
+    "/keeper-review/activity-cloud-composer-v4/assets/music-notation-beamed-quavers-0c2d2803ad76bf5a.png": {
+      "sha256": "0c2d2803ad76bf5ae43f5069fc0f714f22e8e0e61de22c8a462e99e22a85947e",
+      "extension": ".png",
+      "bytes": 56096,
+      "object": "review-archive/objects/0c/0c2d2803ad76bf5ae43f5069fc0f714f22e8e0e61de22c8a462e99e22a85947e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0c/0c2d2803ad76bf5ae43f5069fc0f714f22e8e0e61de22c8a462e99e22a85947e.png"
+    },
+    "/keeper-review/activity-cloud-composer-v4/assets/music-notation-quaver-4ad1cd608c4a4b93.png": {
+      "sha256": "4ad1cd608c4a4b936ed89e841f161ad29f759a72abb515d81df89d82f4c93a5a",
+      "extension": ".png",
+      "bytes": 36918,
+      "object": "review-archive/objects/4a/4ad1cd608c4a4b936ed89e841f161ad29f759a72abb515d81df89d82f4c93a5a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4a/4ad1cd608c4a4b936ed89e841f161ad29f759a72abb515d81df89d82f4c93a5a.png"
+    },
+    "/keeper-review/activity-cloud-composer-v4/assets/music-notation-rising-stave-65a18a0475388297.png": {
+      "sha256": "65a18a0475388297627c879f6052a4b0c59768f2ccaaf616ab47506d7e94b407",
+      "extension": ".png",
+      "bytes": 62320,
+      "object": "review-archive/objects/65/65a18a0475388297627c879f6052a4b0c59768f2ccaaf616ab47506d7e94b407.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/65/65a18a0475388297627c879f6052a4b0c59768f2ccaaf616ab47506d7e94b407.png"
+    },
+    "/keeper-review/activity-cloud-composer-v4/assets/music-notation-sharp-note-f1e081992cfb02c5.png": {
+      "sha256": "f1e081992cfb02c58822e8e09c4f595b93cceb31820ccc0f1c123e644033cb98",
+      "extension": ".png",
+      "bytes": 65448,
+      "object": "review-archive/objects/f1/f1e081992cfb02c58822e8e09c4f595b93cceb31820ccc0f1c123e644033cb98.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f1/f1e081992cfb02c58822e8e09c4f595b93cceb31820ccc0f1c123e644033cb98.png"
+    },
+    "/keeper-review/activity-cloud-composer-v4/assets/music-notation-treble-clef-38a7bd6d8518f533.png": {
+      "sha256": "38a7bd6d8518f533556d04895ccb4bd9071023e8fdf9495cb9126c98ec85f9e7",
+      "extension": ".png",
+      "bytes": 41372,
+      "object": "review-archive/objects/38/38a7bd6d8518f533556d04895ccb4bd9071023e8fdf9495cb9126c98ec85f9e7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/38/38a7bd6d8518f533556d04895ccb4bd9071023e8fdf9495cb9126c98ec85f9e7.png"
     },
     "/keeper-review/drafts/00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271.png": {
       "sha256": "00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271",

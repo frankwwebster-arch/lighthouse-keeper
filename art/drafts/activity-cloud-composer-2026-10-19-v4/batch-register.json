@@ -1,0 +1,373 @@
+{
+  "schema": "lighthouse-keeper/activity-cloud-composer-register@4",
+  "set": "activity-cloud-composer-v4",
+  "status": "immutable-reversible-review-tool-not-approved",
+  "sourceVocabulary": {
+    "set": "activity-cloud-composer-v3",
+    "catalogue": "public/keeper-review/activity-cloud-composer-v3/catalogue.json",
+    "catalogueSha256": "efc5a57b1f9627e3358ee10ff7b2527aac309b823925a7526d9a5b76dd505334",
+    "register": "art/drafts/activity-cloud-composer-2026-10-19-v3/batch-register.json",
+    "registerSha256": "08a5a9c101ad5b5b0607d6ded1bf2772ee6f5ae53fd98c783754065c34e97ee2",
+    "inheritedComponents": 86
+  },
+  "generatedSource": {
+    "file": "art/drafts/activity-cloud-composer-2026-10-19-v4/source/music-notation-source-sheet.png",
+    "sha256": "0c64307f192789e8dccaf1cac2bce58a5e4afeab81c6cd22e50e6bc8dbd8d219",
+    "pixels": [
+      1536,
+      1024
+    ],
+    "edgeAlphaPixels": 0,
+    "cellBoundaryAlphaPixels": {
+      "verticalBoundaryX512AlphaPixels": 0,
+      "verticalBoundaryX1024AlphaPixels": 0,
+      "horizontalBoundaryY512AlphaPixels": 0
+    }
+  },
+  "newAccentComponents": {
+    "music-notation-quaver": {
+      "sourceCrop": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceVisiblePixels": 42546,
+      "registeredBounds": {
+        "minX": 49,
+        "minY": 20,
+        "maxX": 205,
+        "maxY": 234,
+        "opaquePixels": 13731
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-quaver.png",
+      "sha256": "4ad1cd608c4a4b936ed89e841f161ad29f759a72abb515d81df89d82f4c93a5a",
+      "family": "music-notation",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v4",
+      "src": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-quaver-4ad1cd608c4a4b93.png"
+    },
+    "music-notation-beamed-quavers": {
+      "sourceCrop": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "sourceVisiblePixels": 58286,
+      "registeredBounds": {
+        "minX": 33,
+        "minY": 20,
+        "maxX": 221,
+        "maxY": 235,
+        "opaquePixels": 21901
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-beamed-quavers.png",
+      "sha256": "0c2d2803ad76bf5ae43f5069fc0f714f22e8e0e61de22c8a462e99e22a85947e",
+      "family": "music-notation",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v4",
+      "src": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-beamed-quavers-0c2d2803ad76bf5a.png"
+    },
+    "music-notation-treble-clef": {
+      "sourceCrop": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "sourceVisiblePixels": 57804,
+      "registeredBounds": {
+        "minX": 72,
+        "minY": 20,
+        "maxX": 182,
+        "maxY": 235,
+        "opaquePixels": 13716
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-treble-clef.png",
+      "sha256": "38a7bd6d8518f533556d04895ccb4bd9071023e8fdf9495cb9126c98ec85f9e7",
+      "family": "music-notation",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v4",
+      "src": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-treble-clef-38a7bd6d8518f533.png"
+    },
+    "music-notation-bass-clef": {
+      "sourceCrop": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "sourceVisiblePixels": 58424,
+      "registeredBounds": {
+        "minX": 27,
+        "minY": 21,
+        "maxX": 227,
+        "maxY": 235,
+        "opaquePixels": 22286
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-bass-clef.png",
+      "sha256": "c9afc3f4ab6051480dc8e6fc046be6dafc71c57beb947755673135dcb0ed5138",
+      "family": "music-notation",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v4",
+      "src": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-bass-clef-c9afc3f4ab605148.png"
+    },
+    "music-notation-sharp-note": {
+      "sourceCrop": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "sourceVisiblePixels": 65009,
+      "registeredBounds": {
+        "minX": 20,
+        "minY": 25,
+        "maxX": 235,
+        "maxY": 230,
+        "opaquePixels": 24703
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-sharp-note.png",
+      "sha256": "f1e081992cfb02c58822e8e09c4f595b93cceb31820ccc0f1c123e644033cb98",
+      "family": "music-notation",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v4",
+      "src": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-sharp-note-f1e081992cfb02c5.png"
+    },
+    "music-notation-rising-stave": {
+      "sourceCrop": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "sourceVisiblePixels": 68350,
+      "registeredBounds": {
+        "minX": 20,
+        "minY": 29,
+        "maxX": 234,
+        "maxY": 226,
+        "opaquePixels": 21114
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-rising-stave.png",
+      "sha256": "65a18a0475388297627c879f6052a4b0c59768f2ccaaf616ab47506d7e94b407",
+      "family": "music-notation",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v4",
+      "src": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-rising-stave-65a18a0475388297.png"
+    }
+  },
+  "notationAccents": {
+    "triggerFamily": "music",
+    "defaultEnabled": true,
+    "seedAlgorithm": "fnv1a32-v1",
+    "sequenceLengthFrames": 6,
+    "visibleNotes": 3,
+    "components": {
+      "music-notation-quaver": {
+        "sha256": "4ad1cd608c4a4b936ed89e841f161ad29f759a72abb515d81df89d82f4c93a5a",
+        "family": "music-notation",
+        "cellPixels": [
+          256,
+          256
+        ],
+        "sourceSet": "activity-cloud-composer-v4",
+        "src": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-quaver-4ad1cd608c4a4b93.png"
+      },
+      "music-notation-beamed-quavers": {
+        "sha256": "0c2d2803ad76bf5ae43f5069fc0f714f22e8e0e61de22c8a462e99e22a85947e",
+        "family": "music-notation",
+        "cellPixels": [
+          256,
+          256
+        ],
+        "sourceSet": "activity-cloud-composer-v4",
+        "src": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-beamed-quavers-0c2d2803ad76bf5a.png"
+      },
+      "music-notation-treble-clef": {
+        "sha256": "38a7bd6d8518f533556d04895ccb4bd9071023e8fdf9495cb9126c98ec85f9e7",
+        "family": "music-notation",
+        "cellPixels": [
+          256,
+          256
+        ],
+        "sourceSet": "activity-cloud-composer-v4",
+        "src": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-treble-clef-38a7bd6d8518f533.png"
+      },
+      "music-notation-bass-clef": {
+        "sha256": "c9afc3f4ab6051480dc8e6fc046be6dafc71c57beb947755673135dcb0ed5138",
+        "family": "music-notation",
+        "cellPixels": [
+          256,
+          256
+        ],
+        "sourceSet": "activity-cloud-composer-v4",
+        "src": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-bass-clef-c9afc3f4ab605148.png"
+      },
+      "music-notation-sharp-note": {
+        "sha256": "f1e081992cfb02c58822e8e09c4f595b93cceb31820ccc0f1c123e644033cb98",
+        "family": "music-notation",
+        "cellPixels": [
+          256,
+          256
+        ],
+        "sourceSet": "activity-cloud-composer-v4",
+        "src": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-sharp-note-f1e081992cfb02c5.png"
+      },
+      "music-notation-rising-stave": {
+        "sha256": "65a18a0475388297627c879f6052a4b0c59768f2ccaaf616ab47506d7e94b407",
+        "family": "music-notation",
+        "cellPixels": [
+          256,
+          256
+        ],
+        "sourceSet": "activity-cloud-composer-v4",
+        "src": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-rising-stave-65a18a0475388297.png"
+      }
+    }
+  },
+  "catalogue": {
+    "file": "public/keeper-review/activity-cloud-composer-v4/catalogue.json",
+    "sha256": "da7fee4d55bd61303c211ee2a44df46194ed3b7d1e52324bdfde741b7033db8c",
+    "components": 86,
+    "newAccentComponents": 6
+  },
+  "page": {
+    "file": "public/keeper-review/activity-cloud-composer-v4/index.html",
+    "sha256": "50a0bb70ced5449adbb16b0f1288ac864e8d7ec82604b5e4a102def6e9295b04"
+  },
+  "candidate": {
+    "publicShell": {
+      "file": "public/keeper-review/activity-cloud-composer-v4/index.html",
+      "sha256": "50a0bb70ced5449adbb16b0f1288ac864e8d7ec82604b5e4a102def6e9295b04"
+    }
+  },
+  "publishedAssets": [
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-quaver.png",
+      "sourceSha256": "4ad1cd608c4a4b936ed89e841f161ad29f759a72abb515d81df89d82f4c93a5a",
+      "public": "public/keeper-review/activity-cloud-composer-v4/assets/music-notation-quaver-4ad1cd608c4a4b93.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v4/assets/music-notation-quaver-4ad1cd608c4a4b93.png",
+      "publicSha256": "4ad1cd608c4a4b936ed89e841f161ad29f759a72abb515d81df89d82f4c93a5a",
+      "url": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-quaver-4ad1cd608c4a4b93.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-beamed-quavers.png",
+      "sourceSha256": "0c2d2803ad76bf5ae43f5069fc0f714f22e8e0e61de22c8a462e99e22a85947e",
+      "public": "public/keeper-review/activity-cloud-composer-v4/assets/music-notation-beamed-quavers-0c2d2803ad76bf5a.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v4/assets/music-notation-beamed-quavers-0c2d2803ad76bf5a.png",
+      "publicSha256": "0c2d2803ad76bf5ae43f5069fc0f714f22e8e0e61de22c8a462e99e22a85947e",
+      "url": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-beamed-quavers-0c2d2803ad76bf5a.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-treble-clef.png",
+      "sourceSha256": "38a7bd6d8518f533556d04895ccb4bd9071023e8fdf9495cb9126c98ec85f9e7",
+      "public": "public/keeper-review/activity-cloud-composer-v4/assets/music-notation-treble-clef-38a7bd6d8518f533.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v4/assets/music-notation-treble-clef-38a7bd6d8518f533.png",
+      "publicSha256": "38a7bd6d8518f533556d04895ccb4bd9071023e8fdf9495cb9126c98ec85f9e7",
+      "url": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-treble-clef-38a7bd6d8518f533.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-bass-clef.png",
+      "sourceSha256": "c9afc3f4ab6051480dc8e6fc046be6dafc71c57beb947755673135dcb0ed5138",
+      "public": "public/keeper-review/activity-cloud-composer-v4/assets/music-notation-bass-clef-c9afc3f4ab605148.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v4/assets/music-notation-bass-clef-c9afc3f4ab605148.png",
+      "publicSha256": "c9afc3f4ab6051480dc8e6fc046be6dafc71c57beb947755673135dcb0ed5138",
+      "url": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-bass-clef-c9afc3f4ab605148.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-sharp-note.png",
+      "sourceSha256": "f1e081992cfb02c58822e8e09c4f595b93cceb31820ccc0f1c123e644033cb98",
+      "public": "public/keeper-review/activity-cloud-composer-v4/assets/music-notation-sharp-note-f1e081992cfb02c5.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v4/assets/music-notation-sharp-note-f1e081992cfb02c5.png",
+      "publicSha256": "f1e081992cfb02c58822e8e09c4f595b93cceb31820ccc0f1c123e644033cb98",
+      "url": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-sharp-note-f1e081992cfb02c5.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-rising-stave.png",
+      "sourceSha256": "65a18a0475388297627c879f6052a4b0c59768f2ccaaf616ab47506d7e94b407",
+      "public": "public/keeper-review/activity-cloud-composer-v4/assets/music-notation-rising-stave-65a18a0475388297.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v4/assets/music-notation-rising-stave-65a18a0475388297.png",
+      "publicSha256": "65a18a0475388297627c879f6052a4b0c59768f2ccaaf616ab47506d7e94b407",
+      "url": "/keeper-review/activity-cloud-composer-v4/assets/music-notation-rising-stave-65a18a0475388297.png"
+    }
+  ],
+  "checks": {
+    "sourceEdgesClear": true,
+    "sourceCellBoundariesClear": true,
+    "componentGuttersClear": true,
+    "componentOwnershipUnambiguous": true,
+    "v3ComposerUnchanged": true,
+    "primeBodyUnchanged": true,
+    "runtimeChanged": false,
+    "kitchenChanged": false,
+    "deployed": false
+  },
+  "approvalBoundary": {
+    "notationVocabularyApproved": false,
+    "composerApproved": false,
+    "recipeApproved": false,
+    "runtimePromoted": false
+  }
+}

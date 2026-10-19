@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "set": "activity-cloud-composer-v4",
+  "page": {
+    "path": "public/keeper-review/activity-cloud-composer-v4/index.html",
+    "sha256": "50a0bb70ced5449adbb16b0f1288ac864e8d7ec82604b5e4a102def6e9295b04",
+    "bytes": 21474
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/activity-cloud-composer-v4/assets/music-notation-bass-clef-c9afc3f4ab605148.png": {
+      "sha256": "c9afc3f4ab6051480dc8e6fc046be6dafc71c57beb947755673135dcb0ed5138",
+      "extension": ".png",
+      "bytes": 61045,
+      "object": "review-archive/objects/c9/c9afc3f4ab6051480dc8e6fc046be6dafc71c57beb947755673135dcb0ed5138.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c9/c9afc3f4ab6051480dc8e6fc046be6dafc71c57beb947755673135dcb0ed5138.png"
+    },
+    "/keeper-review/activity-cloud-composer-v4/assets/music-notation-beamed-quavers-0c2d2803ad76bf5a.png": {
+      "sha256": "0c2d2803ad76bf5ae43f5069fc0f714f22e8e0e61de22c8a462e99e22a85947e",
+      "extension": ".png",
+      "bytes": 56096,
+      "object": "review-archive/objects/0c/0c2d2803ad76bf5ae43f5069fc0f714f22e8e0e61de22c8a462e99e22a85947e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0c/0c2d2803ad76bf5ae43f5069fc0f714f22e8e0e61de22c8a462e99e22a85947e.png"
+    },
+    "/keeper-review/activity-cloud-composer-v4/assets/music-notation-quaver-4ad1cd608c4a4b93.png": {
+      "sha256": "4ad1cd608c4a4b936ed89e841f161ad29f759a72abb515d81df89d82f4c93a5a",
+      "extension": ".png",
+      "bytes": 36918,
+      "object": "review-archive/objects/4a/4ad1cd608c4a4b936ed89e841f161ad29f759a72abb515d81df89d82f4c93a5a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4a/4ad1cd608c4a4b936ed89e841f161ad29f759a72abb515d81df89d82f4c93a5a.png"
+    },
+    "/keeper-review/activity-cloud-composer-v4/assets/music-notation-rising-stave-65a18a0475388297.png": {
+      "sha256": "65a18a0475388297627c879f6052a4b0c59768f2ccaaf616ab47506d7e94b407",
+      "extension": ".png",
+      "bytes": 62320,
+      "object": "review-archive/objects/65/65a18a0475388297627c879f6052a4b0c59768f2ccaaf616ab47506d7e94b407.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/65/65a18a0475388297627c879f6052a4b0c59768f2ccaaf616ab47506d7e94b407.png"
+    },
+    "/keeper-review/activity-cloud-composer-v4/assets/music-notation-sharp-note-f1e081992cfb02c5.png": {
+      "sha256": "f1e081992cfb02c58822e8e09c4f595b93cceb31820ccc0f1c123e644033cb98",
+      "extension": ".png",
+      "bytes": 65448,
+      "object": "review-archive/objects/f1/f1e081992cfb02c58822e8e09c4f595b93cceb31820ccc0f1c123e644033cb98.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f1/f1e081992cfb02c58822e8e09c4f595b93cceb31820ccc0f1c123e644033cb98.png"
+    },
+    "/keeper-review/activity-cloud-composer-v4/assets/music-notation-treble-clef-38a7bd6d8518f533.png": {
+      "sha256": "38a7bd6d8518f533556d04895ccb4bd9071023e8fdf9495cb9126c98ec85f9e7",
+      "extension": ".png",
+      "bytes": 41372,
+      "object": "review-archive/objects/38/38a7bd6d8518f533556d04895ccb4bd9071023e8fdf9495cb9126c98ec85f9e7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/38/38a7bd6d8518f533556d04895ccb4bd9071023e8fdf9495cb9126c98ec85f9e7.png"
+    }
+  }
+}
