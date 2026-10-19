@@ -293,6 +293,11 @@ export default {
         destination: '/keeper-review/kitchen-oven-states-v41/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-oven-standalone-v26',
+        destination: '/keeper-review/kitchen-oven-standalone-v26/index.html',
+        permanent: false,
+      },
     ]
   },
 }

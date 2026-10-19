@@ -231,7 +231,7 @@ and joined-edge repair are mutually exclusive and recalculated after every
 move. The review defaults to exposed bay 5 and includes a review-only raw/healed
 comparison. V24 changes no source sprite, Final or runtime asset.
 
-The active correction is Kitchen Exposed End Cutout V25 at
+The accepted sink-edge correction is Kitchen Exposed End Cutout V25 at
 `/keeper-review/kitchen-exposed-end-cutout-v25/`. V24's V11 crop was the right
 end treatment, but its transparent rounded contour allowed the obsolete V19
 sink join triangle to remain visible underneath. V25 draws the movable sink on
@@ -239,8 +239,22 @@ an isolated layer, clears the exact 12 × 82 V11 replacement window only when
 the left side is exposed, then draws the V11 end before compositing that layer.
 Joined placement skips the clear and retains the complete sink for V22. The
 page defaults to exposed bay 5 with guides hidden and adds an 8× focus plus a
-review-only untreated/corrected comparison. Source sprites, Final and runtime
-remain unchanged.
+review-only untreated/corrected comparison. Frank accepted the corrected result
+before moving on to the oven. Source sprites, Final and runtime remain unchanged.
+
+The next focused review gate is Kitchen Standalone Oven V26 at
+`/keeper-review/kitchen-oven-standalone-v26/`. It draws a new coordinated Off,
+On and Broken cream/ivory oven family with an integrated navy hob and copper
+controls. Every state occupies the exact 84 × 77 px centre envelope at
+x=336–420/y=131–208 between two exact approved V11 cabinet runs, while Prime's
+interaction anchor stays at x=378/y=218. On supplies a solid red indicator,
+warm cavity and roasting dish. Broken opens from the bottom hinge straight
+toward the camera, retains a transparent window and burnt roast, and hangs one
+dial on exactly two wires. Its registered cavity and warning-light variants
+share identical alpha geometry and use independent 40-frame/4-fps/ten-second
+fault schedules. Smoke is not baked into the oven and remains a later reusable
+effect. V26 is reversible, awaiting visual review, unpromoted and unwired; no
+later kitchen asset has begun.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

@@ -11,11 +11,11 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 161,
-    "referenceCount": 3991,
-    "uniqueObjectCount": 2445,
-    "logicalBytes": 324307036,
-    "uniqueBytes": 175208354,
+    "setCount": 162,
+    "referenceCount": 4003,
+    "uniqueObjectCount": 2457,
+    "logicalBytes": 324591446,
+    "uniqueBytes": 175492764,
     "deduplicatedBytes": 149098682
   },
   "legacyPaths": {
@@ -23181,6 +23181,90 @@
       "bytes": 1360384,
       "object": "review-archive/objects/17/175d77c063297c435eab468f297c369f79e5491b89bbdd2b03400d31cd334f4a.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/175d77c063297c435eab468f297c369f79e5491b89bbdd2b03400d31cd334f4a.png"
+    },
+    "/keeper-review/kitchen-oven-standalone-v26/assets/oven-broken-both-lit.png": {
+      "sha256": "2d599aa0f804e0af7e6c8a577ee81471a8bb0309988339679e3abd1a92201b00",
+      "extension": ".png",
+      "bytes": 13766,
+      "object": "review-archive/objects/2d/2d599aa0f804e0af7e6c8a577ee81471a8bb0309988339679e3abd1a92201b00.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2d/2d599aa0f804e0af7e6c8a577ee81471a8bb0309988339679e3abd1a92201b00.png"
+    },
+    "/keeper-review/kitchen-oven-standalone-v26/assets/oven-broken-cavity-flicker-f40.png": {
+      "sha256": "20c7a59bf4b4aee5bc26c90dd54f3b397b77a248611193f5513fb1d77a72ec59",
+      "extension": ".png",
+      "bytes": 28127,
+      "object": "review-archive/objects/20/20c7a59bf4b4aee5bc26c90dd54f3b397b77a248611193f5513fb1d77a72ec59.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/20/20c7a59bf4b4aee5bc26c90dd54f3b397b77a248611193f5513fb1d77a72ec59.png"
+    },
+    "/keeper-review/kitchen-oven-standalone-v26/assets/oven-broken-cavity-lit.png": {
+      "sha256": "8e1aa5ed3ba1093d53ebdb905a9433f7560a9eabfde0042bde9ae11df8f5067c",
+      "extension": ".png",
+      "bytes": 13690,
+      "object": "review-archive/objects/8e/8e1aa5ed3ba1093d53ebdb905a9433f7560a9eabfde0042bde9ae11df8f5067c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8e/8e1aa5ed3ba1093d53ebdb905a9433f7560a9eabfde0042bde9ae11df8f5067c.png"
+    },
+    "/keeper-review/kitchen-oven-standalone-v26/assets/oven-broken-native-room.png": {
+      "sha256": "dbb2cd3af8e702f1aac5b5923ce7526f5f68a1acdf8fddfe3bba6bb0200a5ffd",
+      "extension": ".png",
+      "bytes": 40600,
+      "object": "review-archive/objects/db/dbb2cd3af8e702f1aac5b5923ce7526f5f68a1acdf8fddfe3bba6bb0200a5ffd.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/dbb2cd3af8e702f1aac5b5923ce7526f5f68a1acdf8fddfe3bba6bb0200a5ffd.png"
+    },
+    "/keeper-review/kitchen-oven-standalone-v26/assets/oven-broken-warning-flicker-f40.png": {
+      "sha256": "4cf323b1be4d0e9898dd84c31712deed84f7cc492c37a61df23fb929b334a122",
+      "extension": ".png",
+      "bytes": 22835,
+      "object": "review-archive/objects/4c/4cf323b1be4d0e9898dd84c31712deed84f7cc492c37a61df23fb929b334a122.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4c/4cf323b1be4d0e9898dd84c31712deed84f7cc492c37a61df23fb929b334a122.png"
+    },
+    "/keeper-review/kitchen-oven-standalone-v26/assets/oven-broken-warning-lit.png": {
+      "sha256": "72a0243bce4ec28c75fa6f6dd23b1216de10bc8551186abc6890b1a2c83ae49d",
+      "extension": ".png",
+      "bytes": 11068,
+      "object": "review-archive/objects/72/72a0243bce4ec28c75fa6f6dd23b1216de10bc8551186abc6890b1a2c83ae49d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/72/72a0243bce4ec28c75fa6f6dd23b1216de10bc8551186abc6890b1a2c83ae49d.png"
+    },
+    "/keeper-review/kitchen-oven-standalone-v26/assets/oven-broken.png": {
+      "sha256": "06ffd5046b5612fd049b4cc944db34f66123e34c6cb25dfddc9608c17e3f5546",
+      "extension": ".png",
+      "bytes": 10981,
+      "object": "review-archive/objects/06/06ffd5046b5612fd049b4cc944db34f66123e34c6cb25dfddc9608c17e3f5546.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/06/06ffd5046b5612fd049b4cc944db34f66123e34c6cb25dfddc9608c17e3f5546.png"
+    },
+    "/keeper-review/kitchen-oven-standalone-v26/assets/oven-off-native-room.png": {
+      "sha256": "e26bd0c0d67077529239f5c8664ffedfe2f627ba935434727182ed96bc2c273c",
+      "extension": ".png",
+      "bytes": 41155,
+      "object": "review-archive/objects/e2/e26bd0c0d67077529239f5c8664ffedfe2f627ba935434727182ed96bc2c273c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e2/e26bd0c0d67077529239f5c8664ffedfe2f627ba935434727182ed96bc2c273c.png"
+    },
+    "/keeper-review/kitchen-oven-standalone-v26/assets/oven-off.png": {
+      "sha256": "f269ec0d6f3c5b5558457908ff2b999b67cdfa927df20c90a4dbfeb02c9914ed",
+      "extension": ".png",
+      "bytes": 11572,
+      "object": "review-archive/objects/f2/f269ec0d6f3c5b5558457908ff2b999b67cdfa927df20c90a4dbfeb02c9914ed.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f2/f269ec0d6f3c5b5558457908ff2b999b67cdfa927df20c90a4dbfeb02c9914ed.png"
+    },
+    "/keeper-review/kitchen-oven-standalone-v26/assets/oven-on-native-room.png": {
+      "sha256": "5446b99e718661b34b78595070aa6498b2f4b87fe63db0c11403dba0f0948519",
+      "extension": ".png",
+      "bytes": 42655,
+      "object": "review-archive/objects/54/5446b99e718661b34b78595070aa6498b2f4b87fe63db0c11403dba0f0948519.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/54/5446b99e718661b34b78595070aa6498b2f4b87fe63db0c11403dba0f0948519.png"
+    },
+    "/keeper-review/kitchen-oven-standalone-v26/assets/oven-on.png": {
+      "sha256": "eb973005c31057326e369942ff04dee44a4ce161b9477eaf2ab30e9b9519113b",
+      "extension": ".png",
+      "bytes": 13106,
+      "object": "review-archive/objects/eb/eb973005c31057326e369942ff04dee44a4ce161b9477eaf2ab30e9b9519113b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/eb/eb973005c31057326e369942ff04dee44a4ce161b9477eaf2ab30e9b9519113b.png"
+    },
+    "/keeper-review/kitchen-oven-standalone-v26/assets/oven-state-family-strip.png": {
+      "sha256": "45440cdf54bdb86487b906be60b6d6636838e2ea98c69fec8469de6114ef9e24",
+      "extension": ".png",
+      "bytes": 34855,
+      "object": "review-archive/objects/45/45440cdf54bdb86487b906be60b6d6636838e2ea98c69fec8469de6114ef9e24.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/45/45440cdf54bdb86487b906be60b6d6636838e2ea98c69fec8469de6114ef9e24.png"
     },
     "/keeper-review/kitchen-oven-states-v35/assets/fx-oven-billowing_smoke-f40.png": {
       "sha256": "d4364bfdc06f2b2f3baed2aaf87b40541e29dfb0524d7e5be958b48a0a50f95c",

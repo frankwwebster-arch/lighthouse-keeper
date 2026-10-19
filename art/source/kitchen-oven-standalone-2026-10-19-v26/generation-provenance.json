@@ -1,0 +1,19 @@
+{
+  "schema": "lighthouse-keeper/generated-raster-provenance@1",
+  "generatedOn": "2026-10-19",
+  "mode": "built-in-imagegen",
+  "outputs": {
+    "oven-three-state-generated-source.png": "a36eeb4cc3b0388716935a11b0b70929a8324a9fdb70ac9680f6f8703331283d",
+    "oven-three-state-broken-lit-generated-source.png": "6a65a9acbac5578ead8b1be9d740c221e01b322f0c50c1e597501212cd2d6fe8"
+  },
+  "references": [
+    "art/raw/kitchen-cabinet-run-2026-10-19-v11/cabinet-run-master.png",
+    "art/raw/kitchen-rebuild-states-2026-10-18-v8/oven-on.png",
+    "art/raw/kitchen-rebuild-states-2026-10-18-v8/oven-broken.png"
+  ],
+  "prompts": [
+    "Create one horizontal transparent three-cell sheet for a coordinated standalone oven family: Off, On and Broken. Treat approved Kitchen Cabinet Run V11 as the sole style, palette, outline, projection and finish authority; use the older oven images only as state-composition evidence. All three cells show the same exact cream/ivory single-door oven with integrated navy two-ring hob, copper controls, straight-on flat-cutaway parallel projection and polished crisp game art. Off has a dark cavity and no active lights. On has turned controls, a solid red indicator, warm internal light and a roasting dish. Broken keeps the same appliance: the door remains attached at its bottom hinge and opens symmetrically straight toward the camera, its window remains transparent, the roast is burnt black, and one rotary dial hangs from exactly two wires. Do not include smoke, sparks, flames, floor, room, cabinets, text, cast shadows or background.",
+    "Precise object edit of the same three-cell sheet: keep every object, outline, proportion and placement unchanged. In the third Broken cell only, illuminate the oven cavity with the same warm amber treatment as the On state while retaining the blackened roast, and illuminate the red warning dot. Add no smoke, sparks or flames."
+  ],
+  "useBoundary": "The generated rasters are reversible source art. V26 derives native review assets without changing approved cabinetry, Final art or runtime assets."
+}

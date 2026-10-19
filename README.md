@@ -589,6 +589,16 @@ exact V11 replacement window from the sink layer before drawing the rounded
 end, so obsolete join pixels cannot show through the end crop's transparent
 contour. Joined placement retains the complete sink and V22 repair. See
 [`docs/KITCHEN_EXPOSED_END_CUTOUT_V25_2026-10-19.md`](docs/KITCHEN_EXPOSED_END_CUTOUT_V25_2026-10-19.md).
+The subsequent `/keeper-review/kitchen-oven-standalone-v26/` page is the first
+new appliance gate built on that modular foundation. It supplies complete Off,
+On and Broken standalone oven/hob sprites in the exact 84 × 77 px centre slot,
+shown both isolated and between two byte-identical approved V11 runs at native
+game size. The Broken door remains bottom-hinged and opens straight toward the
+camera; its transparent window, burnt roast and two-wire hanging dial belong to
+the single coherent sprite. Identically registered dark/cavity-lit/warning-lit
+variants provide independently removable ten-second electrical-fault previews;
+smoke remains separate and is not baked into the oven. See
+[`docs/KITCHEN_OVEN_STANDALONE_V26_2026-10-19.md`](docs/KITCHEN_OVEN_STANDALONE_V26_2026-10-19.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
@@ -611,8 +621,9 @@ is immutable variable-speed provenance; Rebuild V5 is immutable corrected-copy
 provenance; Rebuild V6 is immutable switchable-layer provenance; Rebuild V7 is
 immutable asset-first interaction provenance; Rebuild V8 is the accepted oven-
 geometry authority; Rebuild V9 is immutable failing-bulb/workbench provenance;
-Rebuild Modular V10 is rejected structural-separation provenance; and Cabinet
-Run V11 is the active cabinet-only visual gate.
+Rebuild Modular V10 is rejected structural-separation provenance. Cabinet Run
+V11 remains the approved cabinet visual authority, and standalone Oven V26 is
+the active appliance review gate.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:
