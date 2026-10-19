@@ -55,7 +55,7 @@ for (const frame of frames) {
   assert.deepEqual([actor.width, actor.height], [base.width, base.height])
   for (let p = 0; p < actor.width * actor.height; p++) {
     const offset = p * 4
-    const owned = mask.data[offset + 3] || mask.data[offset]
+    const owned = mask.data[offset]
     if (!owned) {
       for (let c = 0; c < 4; c++) assert.equal(actor.data[offset + c], base.data[offset + c], `${frame.id} outside-mask byte`)
     }

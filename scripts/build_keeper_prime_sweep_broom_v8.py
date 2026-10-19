@@ -287,7 +287,6 @@ def main() -> None:
         add_authority(walk_urls[gait-1], "approved Walk V6 approach", f"Walk V6 F{gait} · {GAIT[gait-1]}", root, False, gait=gait)
         root += WALK_DELTA_LP
     add_authority(walk_urls[0], "approved Walk V6 approach", "Walk V6 F1 · phase-correct contact", root, False, gait=1)
-    root += WALK_DELTA_LP
     for bridge_index, delta in zip((4, 3, 2, 1), (18/8, 12/8, 6/8, 2/8)):
         root += delta
         add_authority(bridge_urls[bridge_index-1], "approved walk-to-stop bridge",
