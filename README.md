@@ -490,13 +490,15 @@ but its sink-overlay proposal is superseded. V13 established a complete
 standalone 84 × 74 px sink cabinet, and V14 supplied independent On and Broken
 water loops. Their active review is now superseded: the V13 cabinet perspective
 did not match approved V11 and V14's On stream began below the outlet. V14's
-Broken upward-basin-spout animation is approved. The active V15 gate at
-`/keeper-review/kitchen-sink-perspective-correction-v15/` redraws the complete
-standalone cabinet from scratch against exact V11, moves every On-water frame
-up exactly two pixels to meet the tap outlet, and retains Broken byte-for-byte.
-All static bases remain byte-identical and both loops remain 40-frame/4-fps/
+Broken upward-basin-spout animation is approved. V15 corrected the On stream
+but its redrawn cabinet geometry still differed from V11. The active V16 gate
+at `/keeper-review/kitchen-sink-cabinet-extension-v16/` keeps the sink as one
+independently removable sprite while deriving its complete structural shell
+from a literal approved V11 bay; only the inset basin and intact tap amend it.
+V15's corrected On and approved Broken strips are retained byte-for-byte. All
+static bases remain byte-identical and both loops remain 40-frame/4-fps/
 ten-second assets. See
-[`docs/KITCHEN_SINK_PERSPECTIVE_CORRECTION_V15_2026-10-19.md`](docs/KITCHEN_SINK_PERSPECTIVE_CORRECTION_V15_2026-10-19.md).
+[`docs/KITCHEN_SINK_CABINET_EXTENSION_V16_2026-10-19.md`](docs/KITCHEN_SINK_CABINET_EXTENSION_V16_2026-10-19.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

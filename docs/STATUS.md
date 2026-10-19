@@ -163,16 +163,16 @@ rejected in registration because it begins a few pixels below the outlet. Its
 Broken upward-basin-spout animation is approved and retained. Both older routes
 remain immutable.
 
-The active sink gate is
-`/keeper-review/kitchen-sink-perspective-correction-v15/`. V15 redraws the
-complete standalone cabinet from scratch against exact V11's parallel
-projection and front-plane proportions while preserving the 84 × 74 px body
-and 92 × 108 px isolated cell. Standard, On base and Broken base are
-byte-identical. Every V14 On frame is translated upward exactly two pixels so
-the stream meets the outlet; the V14 Broken strip is carried forward
-byte-for-byte. Both remain water-only 40-frame/4-fps ten-second loops with
-0.1×–4× review speed. V15 awaits visual approval and remains unpromoted and
-unwired.
+V15 is rejected because its newly drawn worktop shoulders, drawer/door faces,
+rails and plinth remain geometrically different from approved V11. The active
+sink gate is now `/keeper-review/kitchen-sink-cabinet-extension-v16/`. V16 is
+still one complete, independently removable 92 × 108 px sprite, but its entire
+84 × 74 px structural shell is a literal crop of the approved V11 right-hand
+bay. Only the central inset basin and intact tap amend those pixels; no cabinet
+is placed beneath it at runtime. Standard, On base and Broken base are
+byte-identical. V15's corrected On strip and approved Broken strip are retained
+byte-for-byte as water-only 40-frame/4-fps ten-second loops with 0.1×–4× review
+speed. V16 awaits visual approval and remains unpromoted and unwired.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
