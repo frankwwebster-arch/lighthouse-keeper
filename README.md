@@ -469,19 +469,17 @@ x=84–588, common y=134 worktop/y=151 fascia/y=208 foot line, and complete
 one-person table/rear-facing chair. Frank called it excellent subject to making
 the fridge door white.
 
-The active gate is Rebuild Modular V10 at
-`/keeper-review/kitchen-rebuild-modular-v10/`. V9's complete bay patches could
-not safely be intermingled: each state could redraw countertop/cabinet pixels
-and create deterministic seams. V10 keeps the accepted blue cabinetry but
-separates it into two structural runs around standalone fridge and cooker/hob
-slots: fridge / two cabinets / oven / two cabinets including sink / table.
-Fridge, traditional steam kettle, one-slot toaster, oven/hob, bowl and basin
-now have eighteen alpha-isolated Off/On/Broken sprites. Their exact 84-pixel
-bay-centre Prime stop/turn anchors remain fixed on the y=218 walking plane in
-every state. V9's asset-first animation controls and reusable ten-second
-effects remain, while the two oven-locked light families are regenerated from
-the isolated cooker. Its record is
-[`docs/KITCHEN_REBUILD_MODULAR_V10_2026-10-19.md`](docs/KITCHEN_REBUILD_MODULAR_V10_2026-10-19.md).
+The active gate is the cabinet-only V11 reset at
+`/keeper-review/kitchen-cabinet-run-v11/`. Frank rejected V10's cabinet and
+appliance art for ignoring the required polished style and flat-cutaway
+projection and for unacceptable blockiness. V10 is immutable rejection
+provenance. V11 draws one empty two-cabinet run completely from scratch at high
+resolution, using only the established storm-blue, sea-glass, navy and
+aged-copper visual direction. Its exact native body is 168 × 74 pixels—two
+84-pixel bays—with a four-pixel transparent cell gutter. The same asset is
+duplicated for both runs; the sink joins fridge, oven and dishwasher as a later
+standalone element. No appliance work resumes before cabinet approval. Its
+record is [`docs/KITCHEN_CABINET_RUN_V11_2026-10-19.md`](docs/KITCHEN_CABINET_RUN_V11_2026-10-19.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
@@ -504,7 +502,8 @@ is immutable variable-speed provenance; Rebuild V5 is immutable corrected-copy
 provenance; Rebuild V6 is immutable switchable-layer provenance; Rebuild V7 is
 immutable asset-first interaction provenance; Rebuild V8 is the accepted oven-
 geometry authority; Rebuild V9 is immutable failing-bulb/workbench provenance;
-and Rebuild Modular V10 is the active structurally isolated kitchen gate.
+Rebuild Modular V10 is rejected structural-separation provenance; and Cabinet
+Run V11 is the active cabinet-only visual gate.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:
@@ -978,7 +977,7 @@ must remain paused to avoid duplicate alerts.
 - `data/keeper_pose_registry.json`, `data/keeper_endpoint_audit.json` and `data/keeper_endpoint_exceptions.json` — shared pose vocabulary, current real-pixel endpoint evidence, and the frozen legacy migration boundary.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
 - `public/keeper-review/index.html` — canonical online-only reviewer deployed at `/keeper-review/`; `docs/keeper-scale-audit/review.html` is the generated audit artifact and must be byte-identical, but when opened outside `/keeper-review` it sends the viewer to the live platform instead of presenting a second workspace. Its gallery is a compact visual scan (name, review state, last local save/redraft, playback and frame stepping); `Open close review` opens any chosen card immediately. `Find animation` searches names and overrides all other filters; otherwise independently filter by review state, pose and active/reserve use list. Close review lets Frank override the inferred pose tag, relegate a likely duplicate to the reversible reserve list, expand/compress retained draft comparisons, and select canonical or every exact-name draft as an exportable preferred-promotion candidate—without mutating production. **Hand back to Codex** always asks for confirmation, saves any unsaved cards to that browser if confirmed, then submits the full batch to the durable server-side queue. The server records a semantic exact-name delta (ignoring save timestamps), comparing the first server hand-back to the shipped review baseline and later ones to the prior hand-back; the receipt reports only the changed animation count for later Codex work. When Codex claims a batch, the online reviewer becomes read-only until the delivery is completed, while retaining playback and inspection; JSON backup/import is collapsed as an exceptional browser-recovery option.
-- `review-archive/`, `docs/REVIEW_ARCHIVE.md` and `scripts/archive_keeper_review_media.mjs` — content-addressed storage for review-only images and GIFs. The current archive has 3,463 review references across 140 set manifests resolving to 2,147 unique SHA-256 objects hosted outside Vercel deployments. Immutable page bytes and old URLs remain preserved; short-lived redirects keep the media host replaceable, and new animations preload every moving frame before playback. The current `public/` payload is 50.37 MiB instead of roughly 115 MiB; the existing 50 MiB repository guard therefore remains 0.37 MiB over its target even though the production build succeeds. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
+- `review-archive/`, `docs/REVIEW_ARCHIVE.md` and `scripts/archive_keeper_review_media.mjs` — content-addressed storage for review-only images and GIFs. The current archive has 3,466 review references across 141 set manifests resolving to 2,150 unique SHA-256 objects hosted outside Vercel deployments. Immutable page bytes and old URLs remain preserved; short-lived redirects keep the media host replaceable, and new animations preload every moving frame before playback. The current `public/` payload is 50.37 MiB instead of roughly 115 MiB; the existing 50 MiB repository guard therefore remains 0.37 MiB over its target even though the production build succeeds. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
 - `data/keeper_side_on_beard_occlusion_audit.json`, `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/`, and `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` — completed draft-only v2 beard/hand audit and preserved rejected v1 history. The active reviewer shows v2 beside canonical and the separate Frank-selected darts draft; the verifier prevents implicit promotion.
 - `data/keeper_review_drafts.json` and `art/drafts/` — SHA-256-pinned, exact-name review comparisons: the draft-only darts candidate, seven active V11 artist-smock candidates, the accepted complete-route `keeper_snooker` candidate, the 41 exact-name 11 October amendment candidates and the separate party-hat frame-2 v2 variant, plus the ten selected canonical promotions and their reversible previous versions. Hash-addressed reviewer copies prevent same-name historical and current variants from overwriting one another. `scripts/verify_keeper_review_drafts.ts` checks every registered source, canonical/current comparison, sidecar, gutter, publication and reviewer attachment.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.

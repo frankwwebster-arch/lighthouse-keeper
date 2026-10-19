@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "set": "kitchen-cabinet-run-v11",
+  "page": {
+    "path": "public/keeper-review/kitchen-cabinet-run-v11/index.html",
+    "sha256": "2b62c48bf0c8a4097a4692f474eb1249010b4d3fa54c74c162222d167cd2f2ea",
+    "bytes": 4905
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-cabinet-run-v11/assets/cabinet-run-duplicated-native-room.png": {
+      "sha256": "15ebc98b3764d42f953eabee16042b6cb8e555b93189a2406ca260d21237c915",
+      "extension": ".png",
+      "bytes": 29949,
+      "object": "review-archive/objects/15/15ebc98b3764d42f953eabee16042b6cb8e555b93189a2406ca260d21237c915.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/15/15ebc98b3764d42f953eabee16042b6cb8e555b93189a2406ca260d21237c915.png"
+    },
+    "/keeper-review/kitchen-cabinet-run-v11/assets/cabinet-run-master.png": {
+      "sha256": "534d0467acd5a518ed96f673085c7ca25ccbcfd6f22af53335f1d210d7519ae8",
+      "extension": ".png",
+      "bytes": 501489,
+      "object": "review-archive/objects/53/534d0467acd5a518ed96f673085c7ca25ccbcfd6f22af53335f1d210d7519ae8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/53/534d0467acd5a518ed96f673085c7ca25ccbcfd6f22af53335f1d210d7519ae8.png"
+    },
+    "/keeper-review/kitchen-cabinet-run-v11/assets/cabinet-run-native-cell.png": {
+      "sha256": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
+      "extension": ".png",
+      "bytes": 18326,
+      "object": "review-archive/objects/11/112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/11/112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81.png"
+    }
+  }
+}

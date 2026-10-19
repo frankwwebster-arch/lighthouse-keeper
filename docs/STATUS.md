@@ -140,20 +140,18 @@ exact `772 × 224` room, six equal `84-px` bays at x=84–588, y=134 worktop,
 y=151 fascia and y=208 foot line. Frank called it excellent subject to changing
 the fridge door to white.
 
-The active kitchen gate is
-`/keeper-review/kitchen-rebuild-modular-v10/`. Review of V9 proved that its
-state files still contained complete cabinet/counter bay patches: mixing those
-patches deterministically broke the counter line and exposed mismatched edges.
-V10 retains the accepted blue cabinetry as two structural runs—two cabinets,
-then after the standalone oven another two cabinets including the sink—and
-makes the fridge, kettle, one-slot toaster, oven/hob, bowl and basin eighteen
-alpha-isolated Off/On/Broken sprites. The room order remains fridge / two
-cabinets / oven / two cabinets / table. All six exact 84-pixel bay centres are
-now explicit Prime stop/turn anchors on y=218 and cannot move between states.
-The asset-first effect workbench and 36 editable 40-frame/4-fps ten-second
-models remain available; oven-locked light cells were rebuilt from the isolated
-cooker. V10 is reversible, unapproved, unpromoted and unwired. V9 remains
-immutable failing-bulb timing and interaction provenance.
+The active kitchen gate is now the cabinet-only
+`/keeper-review/kitchen-cabinet-run-v11/`. Frank rejected V10's cabinet and
+appliance art because it ignored the required polished style and flat-cutaway
+projection and was unacceptably blocky. V10 remains immutable rejection
+provenance. V11 draws one new high-resolution two-cabinet run from scratch in
+the storm-blue, sea-glass, navy and aged-copper palette, then derives an exact
+168 × 74-pixel installed body with four-pixel transparent cell gutters. The
+same native sprite is duplicated at x=168 and x=420 in the exact 772 × 224 room
+proof, leaving the 84-pixel standalone-oven gap untouched. The sink is now a
+later standalone element like the fridge, oven and dishwasher. No appliance,
+state family or animation may begin until Frank approves this cabinetry. V11
+is reversible, unapproved, unpromoted and unwired.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

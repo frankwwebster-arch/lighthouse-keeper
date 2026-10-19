@@ -11,11 +11,11 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 140,
-    "referenceCount": 3463,
-    "uniqueObjectCount": 2147,
-    "logicalBytes": 290557431,
-    "uniqueBytes": 155331703,
+    "setCount": 141,
+    "referenceCount": 3466,
+    "uniqueObjectCount": 2150,
+    "logicalBytes": 291107195,
+    "uniqueBytes": 155881467,
     "deduplicatedBytes": 135225728
   },
   "legacyPaths": {
@@ -19786,6 +19786,27 @@
       "bytes": 14811,
       "object": "review-archive/objects/0c/0cf1a607426476277a17c55db001dfd333c1ed75bc330af61b389c9b58dbd024.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0c/0cf1a607426476277a17c55db001dfd333c1ed75bc330af61b389c9b58dbd024.png"
+    },
+    "/keeper-review/kitchen-cabinet-run-v11/assets/cabinet-run-duplicated-native-room.png": {
+      "sha256": "15ebc98b3764d42f953eabee16042b6cb8e555b93189a2406ca260d21237c915",
+      "extension": ".png",
+      "bytes": 29949,
+      "object": "review-archive/objects/15/15ebc98b3764d42f953eabee16042b6cb8e555b93189a2406ca260d21237c915.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/15/15ebc98b3764d42f953eabee16042b6cb8e555b93189a2406ca260d21237c915.png"
+    },
+    "/keeper-review/kitchen-cabinet-run-v11/assets/cabinet-run-master.png": {
+      "sha256": "534d0467acd5a518ed96f673085c7ca25ccbcfd6f22af53335f1d210d7519ae8",
+      "extension": ".png",
+      "bytes": 501489,
+      "object": "review-archive/objects/53/534d0467acd5a518ed96f673085c7ca25ccbcfd6f22af53335f1d210d7519ae8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/53/534d0467acd5a518ed96f673085c7ca25ccbcfd6f22af53335f1d210d7519ae8.png"
+    },
+    "/keeper-review/kitchen-cabinet-run-v11/assets/cabinet-run-native-cell.png": {
+      "sha256": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
+      "extension": ".png",
+      "bytes": 18326,
+      "object": "review-archive/objects/11/112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/11/112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81.png"
     },
     "/keeper-review/kitchen-continuous-run-approved-v23/assets/full-kitchen-approved.png": {
       "sha256": "5d5451acbaa81a48918268d25482a1d3f657a77c441c9d5b4f87ed547d4f9707",
