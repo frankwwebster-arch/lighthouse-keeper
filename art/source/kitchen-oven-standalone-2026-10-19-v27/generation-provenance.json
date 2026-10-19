@@ -1,0 +1,29 @@
+{
+  "schema": "lighthouse-keeper/generated-raster-provenance@1",
+  "generatedOn": "2026-10-19",
+  "mode": "built-in-imagegen",
+  "output": {
+    "file": "oven-three-state-registered-source.png",
+    "sha256": "5c9443b6ffb7a45f62b85366e23ee097898e9dd50b1b7fffbe68e346c960bd08"
+  },
+  "references": [
+    {
+      "role": "edit target and V26 visual authority",
+      "file": "art/source/kitchen-oven-standalone-2026-10-19-v26/oven-three-state-broken-lit-generated-source.png",
+      "sha256": "6a65a9acbac5578ead8b1be9d740c221e01b322f0c50c1e597501212cd2d6fe8"
+    },
+    {
+      "role": "approved cabinet geometry, palette and projection authority",
+      "file": "art/raw/kitchen-cabinet-run-2026-10-19-v11/cabinet-run-master.png",
+      "sha256": "534d0467acd5a518ed96f673085c7ca25ccbcfd6f22af53335f1d210d7519ae8"
+    },
+    {
+      "role": "reported broken-state junction and black-block defect reference",
+      "file": "user-supplied Screenshot 2026-10-19 at 23.31.27.png",
+      "sha256": "0d2beec11ac969f68bacedd20d45d54ffb9216fd8fac0bd21546e3e96385c147"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: coordinated high-resolution pixel-art game appliance state sheet. Preserve the V26 three oven designs and polished cream/ivory, navy-blue and aged-copper rendering, but register Off, On and Broken to one identical outer chassis envelope. Match the approved cabinet worktop/front datum. Keep the Broken bottom-hinged door opening straight toward the camera, transparent door window, blackened roast and one dial hanging on two wires. Remove unrelated solid black rectangular patches. Keep the red warning lamp at the On-state fascia location. Three equal transparent cells, Off then On then Broken. No smoke, flames, sparks, text or watermark.",
+  "deterministicPostProcess": "The builder uses equal source-space crop windows, copies the Off exterior envelope into On, and derives Broken dark/lit states with shape-and-colour masks. It never independently normalises a state to its own alpha bounds and never darkens a rectangular fascia region.",
+  "useBoundary": "Reversible V27 source only. V26, approved Cabinet V11, Final art and runtime assets remain unchanged."
+}

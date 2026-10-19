@@ -589,16 +589,18 @@ exact V11 replacement window from the sink layer before drawing the rounded
 end, so obsolete join pixels cannot show through the end crop's transparent
 contour. Joined placement retains the complete sink and V22 repair. See
 [`docs/KITCHEN_EXPOSED_END_CUTOUT_V25_2026-10-19.md`](docs/KITCHEN_EXPOSED_END_CUTOUT_V25_2026-10-19.md).
-The subsequent `/keeper-review/kitchen-oven-standalone-v26/` page is the first
-new appliance gate built on that modular foundation. It supplies complete Off,
-On and Broken standalone oven/hob sprites in the exact 84 × 77 px centre slot,
-shown both isolated and between two byte-identical approved V11 runs at native
-game size. The Broken door remains bottom-hinged and opens straight toward the
-camera; its transparent window, burnt roast and two-wire hanging dial belong to
-the single coherent sprite. Identically registered dark/cavity-lit/warning-lit
-variants provide independently removable ten-second electrical-fault previews;
-smoke remains separate and is not baked into the oven. See
-[`docs/KITCHEN_OVEN_STANDALONE_V26_2026-10-19.md`](docs/KITCHEN_OVEN_STANDALONE_V26_2026-10-19.md).
+The active `/keeper-review/kitchen-oven-standalone-v27/` page corrects the first
+V26 appliance gate while retaining its complete Off, On and Broken cream/navy/
+copper oven design in the exact 84 × 77 px centre slot. Equal source windows
+and one shared exterior envelope prevent the right side, hob, fascia or plinth
+from changing size between Off and On. Broken retains its straight-toward-camera
+bottom-hinged door, transparent window, burnt roast and two-wire hanging dial.
+Its internal and red warning lights use compact shape-following masks, start
+their independent ten-second fault schedules automatically, and swap complete
+native-room images so browser compositing never clears neighbouring cabinet
+pixels. Smoke remains separate and is not baked into the oven. V26 remains
+immutable superseded provenance. See
+[`docs/KITCHEN_OVEN_STANDALONE_V27_2026-10-19.md`](docs/KITCHEN_OVEN_STANDALONE_V27_2026-10-19.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
@@ -1105,7 +1107,7 @@ must remain paused to avoid duplicate alerts.
 - `data/keeper_pose_registry.json`, `data/keeper_endpoint_audit.json` and `data/keeper_endpoint_exceptions.json` — shared pose vocabulary, current real-pixel endpoint evidence, and the frozen legacy migration boundary.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
 - `public/keeper-review/index.html` — canonical online-only reviewer deployed at `/keeper-review/`; `docs/keeper-scale-audit/review.html` is the generated audit artifact and must be byte-identical, but when opened outside `/keeper-review` it sends the viewer to the live platform instead of presenting a second workspace. Its gallery is a compact visual scan (name, review state, last local save/redraft, playback and frame stepping); `Open close review` opens any chosen card immediately. `Find animation` searches names and overrides all other filters; otherwise independently filter by review state, pose and active/reserve use list. Close review lets Frank override the inferred pose tag, relegate a likely duplicate to the reversible reserve list, expand/compress retained draft comparisons, and select canonical or every exact-name draft as an exportable preferred-promotion candidate—without mutating production. **Hand back to Codex** always asks for confirmation, saves any unsaved cards to that browser if confirmed, then submits the full batch to the durable server-side queue. The server records a semantic exact-name delta (ignoring save timestamps), comparing the first server hand-back to the shipped review baseline and later ones to the prior hand-back; the receipt reports only the changed animation count for later Codex work. When Codex claims a batch, the online reviewer becomes read-only until the delivery is completed, while retaining playback and inspection; JSON backup/import is collapsed as an exceptional browser-recovery option.
-- `review-archive/`, `docs/REVIEW_ARCHIVE.md`, `scripts/archive_keeper_review_media.mjs` and `scripts/replace_keeper_review_set.mjs` — content-addressed storage for review-only images and GIFs. Including Activity Cloud Composer V5, Prime rear-work activity vocabulary V3 and Kitchen Oven V26, the index has 4,082 review references across 166 set manifests resolving to 2,536 committed-tree SHA-256 objects hosted outside Vercel deployments; the single-set replacement path keeps unrelated untracked review work out of a delivery. Immutable page bytes and old URLs remain preserved; short-lived redirects keep the media host replaceable, and new animations preload every moving frame before playback. The clean committed `public/` payload is 51.72 MiB instead of roughly 115 MiB; the existing 50 MiB repository guard therefore remains over its target even though the production build succeeds. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
+- `review-archive/`, `docs/REVIEW_ARCHIVE.md`, `scripts/archive_keeper_review_media.mjs` and `scripts/replace_keeper_review_set.mjs` — content-addressed storage for review-only images and GIFs. Including Activity Cloud Composer V5, Prime rear-work activity vocabulary V3 and Kitchen Oven V27, the index has 4,097 review references across 167 set manifests resolving to 2,551 committed-tree SHA-256 objects hosted outside Vercel deployments; the single-set replacement path keeps unrelated untracked review work out of a delivery. Immutable page bytes and old URLs remain preserved; short-lived redirects keep the media host replaceable, and new animations preload every moving frame before playback. The clean committed `public/` payload remains above the historical 50 MiB repository guard even though the production build succeeds. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
 - `data/keeper_side_on_beard_occlusion_audit.json`, `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/`, and `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` — completed draft-only v2 beard/hand audit and preserved rejected v1 history. The active reviewer shows v2 beside canonical and the separate Frank-selected darts draft; the verifier prevents implicit promotion.
 - `data/keeper_review_drafts.json` and `art/drafts/` — SHA-256-pinned, exact-name review comparisons: the draft-only darts candidate, seven active V11 artist-smock candidates, the accepted complete-route `keeper_snooker` candidate, the 41 exact-name 11 October amendment candidates and the separate party-hat frame-2 v2 variant, plus the ten selected canonical promotions and their reversible previous versions. Hash-addressed reviewer copies prevent same-name historical and current variants from overwriting one another. `scripts/verify_keeper_review_drafts.ts` checks every registered source, canonical/current comparison, sidecar, gutter, publication and reviewer attachment.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.

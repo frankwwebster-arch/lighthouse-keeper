@@ -242,19 +242,26 @@ page defaults to exposed bay 5 with guides hidden and adds an 8× focus plus a
 review-only untreated/corrected comparison. Frank accepted the corrected result
 before moving on to the oven. Source sprites, Final and runtime remain unchanged.
 
-The next focused review gate is Kitchen Standalone Oven V26 at
-`/keeper-review/kitchen-oven-standalone-v26/`. It draws a new coordinated Off,
-On and Broken cream/ivory oven family with an integrated navy hob and copper
-controls. Every state occupies the exact 84 × 77 px centre envelope at
-x=336–420/y=131–208 between two exact approved V11 cabinet runs, while Prime's
-interaction anchor stays at x=378/y=218. On supplies a solid red indicator,
-warm cavity and roasting dish. Broken opens from the bottom hinge straight
-toward the camera, retains a transparent window and burnt roast, and hangs one
-dial on exactly two wires. Its registered cavity and warning-light variants
-share identical alpha geometry and use independent 40-frame/4-fps/ten-second
-fault schedules. Smoke is not baked into the oven and remains a later reusable
-effect. V26 is reversible, awaiting visual review, unpromoted and unwired; no
-later kitchen asset has begun.
+Kitchen Standalone Oven V26 is superseded after review exposed three assembly
+defects: independently normalised state crops changed the right-hand chassis
+width, the warning-light darkening mask produced a black fascia rectangle, and
+the browser cleared a guttered oven cell that overlaps neighbouring cabinet
+pixels before drawing Broken lighting variants.
+
+The active focused review gate is Kitchen Standalone Oven V27 at
+`/keeper-review/kitchen-oven-standalone-v27/`. It retains the coordinated
+cream/ivory, navy and copper Off/On/Broken design and exact 84 × 77 px body at
+x=336–420/y=131–208, with Prime's interaction anchor fixed at x=378/y=218. Off
+and On now use equal source windows and share byte-identical exterior alpha;
+only recorded control/cavity regions change. Broken's dormant and lit red lamp
+are selected by a compact shape-derived mask, and its internal-light mask
+follows amber cavity pixels rather than a rectangle. Every Broken lighting
+combination is a complete precomposed 772 × 224 room, so no cabinet or wall
+pixel is cleared in the browser. The irregular independent 40-frame/4-fps/
+ten-second cavity and lamp schedules start automatically and remain removable
+and variable-speed. V27 is reversible, awaiting visual review, unpromoted and
+unwired; smoke remains a later reusable effect and no later kitchen asset has
+begun.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

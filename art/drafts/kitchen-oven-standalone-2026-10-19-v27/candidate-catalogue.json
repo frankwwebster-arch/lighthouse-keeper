@@ -1,0 +1,326 @@
+{
+  "schema": "lighthouse-keeper/kitchen-standalone-state-family@1",
+  "set": "kitchen-oven-standalone-v27",
+  "version": 27,
+  "status": "reversible-unapproved-unpromoted",
+  "authorities": {
+    "approvedCabinet": {
+      "file": "art/raw/kitchen-cabinet-run-2026-10-19-v11/cabinet-run-native-cell.png",
+      "sha256": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81"
+    },
+    "cabinetApproval": {
+      "file": "docs/review/kitchen-cabinet-run-v11-approval-2026-10-19.json",
+      "sha256": "365063fb40c321eeb9ea13267bdf888af00cb4d12a007c1dace52b03e3ab1bd7"
+    },
+    "roomBackground": {
+      "file": "art/raw/kitchen-rebuild-foundation-2026-10-18-v1/kitchen-standard-background.png",
+      "sha256": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6"
+    }
+  },
+  "sources": {
+    "v26LitFamilyReference": {
+      "file": "art/source/kitchen-oven-standalone-2026-10-19-v26/oven-three-state-broken-lit-generated-source.png",
+      "sha256": "6a65a9acbac5578ead8b1be9d740c221e01b322f0c50c1e597501212cd2d6fe8"
+    },
+    "registeredFamily": {
+      "file": "art/source/kitchen-oven-standalone-2026-10-19-v27/oven-three-state-registered-source.png",
+      "sha256": "5c9443b6ffb7a45f62b85366e23ee097898e9dd50b1b7fffbe68e346c960bd08"
+    },
+    "generationProvenance": {
+      "file": "art/source/kitchen-oven-standalone-2026-10-19-v27/generation-provenance.json",
+      "sha256": "86138b8612f1dd4ed2fb6e4586c68df7258cb71a61fea48b71decf56949a16c6"
+    },
+    "generationMode": "built-in-imagegen",
+    "sourceCellPixels": [
+      724,
+      724
+    ],
+    "fixedSourceWindows": [
+      [
+        116,
+        48,
+        710,
+        667
+      ],
+      [
+        65,
+        48,
+        659,
+        667
+      ],
+      [
+        13,
+        48,
+        607,
+        667
+      ]
+    ],
+    "visibleBBoxes": {
+      "off": [
+        116,
+        48,
+        710,
+        667
+      ],
+      "on": [
+        66,
+        48,
+        658,
+        667
+      ],
+      "broken": [
+        13,
+        48,
+        608,
+        667
+      ]
+    }
+  },
+  "geometry": {
+    "logicalBodyPixels": [
+      84,
+      77
+    ],
+    "cellPixels": [
+      92,
+      85
+    ],
+    "transparentGutterPixels": [
+      4,
+      4
+    ],
+    "ovenBodyBoundsInRoom": [
+      336,
+      131,
+      84,
+      77
+    ],
+    "ovenCellOriginInRoom": [
+      332,
+      127
+    ],
+    "cabinetBodyBounds": [
+      [
+        168,
+        134,
+        168,
+        74
+      ],
+      [
+        420,
+        134,
+        168,
+        74
+      ]
+    ],
+    "primeInteractionAnchor": [
+      378,
+      218
+    ],
+    "projection": "straight-on-flat-cutaway-parallel",
+    "offOnExteriorEnvelopeByteIdentical": true,
+    "onSemanticRegionsInBody": [
+      [
+        11,
+        15,
+        74,
+        29
+      ],
+      [
+        11,
+        30,
+        74,
+        68
+      ]
+    ],
+    "roomVariantCompositing": "complete-precomposed-room-images-no-canvas-clearRect"
+  },
+  "states": {
+    "off": {
+      "file": "oven-off.png",
+      "hobIntegrated": true,
+      "cavityLight": false,
+      "warningLight": false
+    },
+    "on": {
+      "file": "oven-on.png",
+      "hobIntegrated": true,
+      "cavityLight": true,
+      "warningLight": "solid",
+      "roastingDish": "visible"
+    },
+    "broken": {
+      "file": "oven-broken.png",
+      "hobIntegrated": true,
+      "door": "attached-bottom-hinge-opening-straight-toward-camera",
+      "doorWindowTransparent": true,
+      "roastingDish": "burnt-blackened",
+      "failedDial": "hanging-from-fascia-on-exactly-two-wires",
+      "smokeBakedIntoBase": false,
+      "visibleElectricalEffectsBakedIntoBase": false
+    }
+  },
+  "lighting": {
+    "baseFps": 4,
+    "frameCount": 40,
+    "durationSeconds": 10.0,
+    "speedRange": [
+      0.1,
+      4.0
+    ],
+    "cavityPattern": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "warningPattern": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "sameBrokenGeometryForEveryLightingVariant": true,
+    "maskMethod": "shape-and-colour-derived-no-rectangular-fascia-darkening",
+    "maskOpaquePixels": {
+      "cavity": 1955,
+      "warning": 34
+    },
+    "regionsInNativeBody": {
+      "cavitySearch": [
+        [
+          13,
+          31,
+          72,
+          48
+        ],
+        [
+          17,
+          47,
+          68,
+          66
+        ]
+      ],
+      "warningSearch": [
+        62,
+        13,
+        80,
+        29
+      ]
+    },
+    "cavityStrip": "oven-broken-cavity-flicker-f40.png",
+    "warningStrip": "oven-broken-warning-flicker-f40.png",
+    "completeRoomVariants": [
+      "oven-off-native-room.png",
+      "oven-on-native-room.png",
+      "oven-broken-native-room.png",
+      "oven-broken-cavity-lit-native-room.png",
+      "oven-broken-warning-lit-native-room.png",
+      "oven-broken-both-lit-native-room.png"
+    ]
+  },
+  "sfxPlaceholders": [
+    "kitchen_oven_on_fan_low_loop",
+    "kitchen_oven_broken_low_electrical_buzz_loop",
+    "kitchen_oven_broken_warning_light_angry_blink_loop",
+    "kitchen_oven_broken_cavity_failing_bulb_loop",
+    "kitchen_oven_broken_smoke_hiss_loop"
+  ],
+  "publishedAssets": {
+    "oven-off.png": "5d12ddc99f4f66b63b7283a4d2928a247393b585f475a0b644aabcca1fb6c24e",
+    "oven-on.png": "3aebe85e724e37994ae2eff0f07d0e18dc0136ed9950fc75c0137152f3d03bc5",
+    "oven-broken.png": "ab51b6fdd91544ade5da143e7504674fcf0c76e6498d6cebb250f823e6cb794d",
+    "oven-broken-cavity-lit.png": "5087e44185b8a3b53c5331969101d078c13bbefd5841a973cea82a0589a17fe1",
+    "oven-broken-warning-lit.png": "8588a3d36e977b3262f0e729ab5e5f072df2f38608575b52f0fdf6443a2a74b5",
+    "oven-broken-both-lit.png": "73a169caac210fdb763b9fcf42ab3c8e44e6b24e555cc82d9cdc6fb674fd42fc",
+    "oven-state-family-strip.png": "dd8c6fd1d63775c80a20b07f9475d226b600c69b028a61a794563c8d0566bc7e",
+    "oven-broken-cavity-flicker-f40.png": "773969ce448eec891be4eee1c27787e31e8a9a68994308ce53f62f0c0cfed7ff",
+    "oven-broken-warning-flicker-f40.png": "83afea497a9e376e312795122ba125b97def6aa205c91f9d99ea0cc1195e52d0",
+    "oven-off-native-room.png": "a4755a4d632b65aeddfeaf68ce966378f2cf45bad35800bd6abf46c50cdfb781",
+    "oven-on-native-room.png": "fbb8fbca744b868f3c75522ace0728967fede6f42c779e8599d5247433bc1749",
+    "oven-broken-native-room.png": "1b2dc0f1a0cdf31a3350bca0e027604e95aa1c9d967a89e68635000e159a6b72",
+    "oven-broken-cavity-lit-native-room.png": "a1f548f432d916d9bbef0c9693362d6aa7646164c846be2d1c761f5e2121fe0b",
+    "oven-broken-warning-lit-native-room.png": "faf9ed2268264fc431dee3bb87523a36e750376af028f8f2d2ad96057d714b0a",
+    "oven-broken-both-lit-native-room.png": "ac5a9d3adb4491ca5cfec47fbfd760476fc373af797a10af6f2b78ba2b9a5459"
+  },
+  "boundaries": {
+    "approvedCabinetChanged": false,
+    "roomBackgroundChanged": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "promotionPerformed": false,
+    "nextAssetStarted": false
+  }
+}
