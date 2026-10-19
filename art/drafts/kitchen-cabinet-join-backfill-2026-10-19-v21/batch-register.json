@@ -1,0 +1,23 @@
+{
+  "set": "kitchen-cabinet-join-backfill-2026-10-19-v21",
+  "status": "reversible-unapproved-unpromoted",
+  "files": {
+    "art/raw/kitchen-rebuild-foundation-2026-10-18-v1/kitchen-standard-background.png": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6",
+    "art/raw/kitchen-cabinet-run-2026-10-19-v11/cabinet-run-native-cell.png": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
+    "art/raw/kitchen-sink-smooth-join-2026-10-19-v19/sink-cabinet-standard.png": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+    "art/drafts/kitchen-cabinet-join-backfill-2026-10-19-v21/candidate-catalogue.json": "5b60a014372ec42481219dde5cf9e50693fa0c14353dd0fd9cec6263f0f679d0",
+    "art/raw/kitchen-cabinet-join-backfill-2026-10-19-v21/room-background-exact.png": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6",
+    "art/raw/kitchen-cabinet-join-backfill-2026-10-19-v21/cabinet-run-v11-exact.png": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
+    "art/raw/kitchen-cabinet-join-backfill-2026-10-19-v21/sink-cabinet-v19-exact.png": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+    "art/raw/kitchen-cabinet-join-backfill-2026-10-19-v21/join-backfill-matched-template.png": "e8bd0080ca426e6d2d750b0c5cbb0b912fe659ec1a49867e740b9216c6b68040",
+    "art/raw/kitchen-cabinet-join-backfill-2026-10-19-v21/join-backfill-shadow-template.png": "f89ed3deb41fe845d3386449c527d9b39bc90f7842f9281095590aded9f3ab63",
+    "art/raw/kitchen-cabinet-join-backfill-2026-10-19-v21/room-default-without-backfill.png": "04d17942659a9730bf227929c1f80c14dc9421e993ffa835da1c843beb90834e",
+    "art/raw/kitchen-cabinet-join-backfill-2026-10-19-v21/room-default-matched-backfill.png": "fb45e71283f760a1e252b01d5a2be3dd7d7d29de05dbdff0592225f3928ffdd0",
+    "art/raw/kitchen-cabinet-join-backfill-2026-10-19-v21/room-default-shadow-backfill.png": "a1126193890b70a954a3621200fe0b0fdde9d7eda9ed139612b72603672fe907",
+    "art/raw/kitchen-cabinet-join-backfill-2026-10-19-v21/focus-without-backfill.png": "ee5c4fc77b7d41035d7aad0bad32a18490a5001e9472735f7e8bdf0459386fbc",
+    "art/raw/kitchen-cabinet-join-backfill-2026-10-19-v21/focus-matched-backfill.png": "146f9d9300ba96db698605eca34c2a130b61a6775ac886fa41c69bb10ba650d9",
+    "art/raw/kitchen-cabinet-join-backfill-2026-10-19-v21/focus-shadow-backfill.png": "b1de5d23594f435ff95349b700c76ae751d8bf568d21d49a0780777244182e53",
+    "art/raw/kitchen-cabinet-join-backfill-2026-10-19-v21/room-six-pixel-gap-backfilled.png": "568a623add51332b86b61c300636af5fe19c199693a3d103e41425f81c8322db",
+    "art/raw/kitchen-cabinet-join-backfill-2026-10-19-v21/room-nine-pixel-gap-auto-disabled.png": "58b775f0e2b030df6f4bfc4a83f5a1ebdacd4965ad6599f51dd23167cf5d3f85"
+  }
+}

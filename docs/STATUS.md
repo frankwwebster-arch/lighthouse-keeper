@@ -194,6 +194,16 @@ or remove the relevant animation, drag it, resize it, crop it, nudge it, vary
 speed from 0.1× to 4×, persist settings locally and export placement JSON. V20
 awaits visual review and changes no Final or runtime asset.
 
+The active structural-layer experiment is Cabinet Join Backfill V21 at
+`/keeper-review/kitchen-cabinet-join-backfill-v21/`. It leaves the exact V11
+run, complete V19 sink and room background byte-identical. A separate
+storm-blue layer is drawn behind the cabinet sprites, starts immediately below
+the worktop, underlaps each neighbour by three pixels and follows the live
+small gap. It automatically disappears beyond an eight-pixel separation or a
+six-pixel overlap. The review page compares no mask, exact-row colour matching
+and a darker shadow seam, then lets Frank drag the sink and vary the threshold.
+V21 awaits visual review and changes no Final or runtime asset.
+
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
 link with V6. The animation remains the exact V1/V2 six-pose motion inside its
