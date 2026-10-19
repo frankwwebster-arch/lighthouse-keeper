@@ -1,0 +1,71 @@
+{
+  "schema": "lighthouse-keeper/keeper-prime-rear-action-sequence-register@1",
+  "set": "keeper-prime-rear-action-sequence-v1",
+  "status": "immutable-reversible-review-candidate-not-approved",
+  "purpose": "Show one synchronized approved walk-stop-turn-to-rear sequence flowing into the complete Prime rear-work action while a separately controlled activity set animates above the cap.",
+  "sourceCatalogue": {
+    "file": "public/keeper-review/activity-cloud-composer-v6/catalogue.json",
+    "url": "/keeper-review/activity-cloud-composer-v6/catalogue.json",
+    "sha256": "eb5060a665694137ce63a45dcb8f914d1086570393399b1537d37ade660fe2aa",
+    "set": "activity-cloud-composer-v6"
+  },
+  "protectedState": {
+    "walkStopTurnRoute": "inherited byte-for-byte from Activity Cloud Composer V6",
+    "rearWorkBody": "all 24 frames inherited byte-for-byte",
+    "rearNeutralFrames": [
+      1,
+      23,
+      24
+    ],
+    "contextPropOrCounter": false
+  },
+  "candidate": {
+    "sequenceFrames": 52,
+    "actionStartIndex": 28,
+    "sequenceDurationMs": 8433.333333333334,
+    "phaseCounts": {
+      "approved walk": 16,
+      "approved deceleration": 4,
+      "approved turn away": 8,
+      "Prime rear-work action": 24
+    },
+    "recipes": [
+      "garden-bbq",
+      "make-sandwich",
+      "washing-up",
+      "make-tea",
+      "general-mending"
+    ],
+    "treatments": [
+      "orbit",
+      "bustle"
+    ],
+    "calloutFrames": 42,
+    "calloutFps": 8
+  },
+  "files": {
+    "catalogue": {
+      "file": "public/keeper-review/keeper-prime-rear-action-sequence-v1/catalogue.json",
+      "sha256": "78394188085650d935418a9eddc8f84662ab621328c1dbeb6bad88b77d27eabb"
+    },
+    "page": {
+      "file": "public/keeper-review/keeper-prime-rear-action-sequence-v1/index.html",
+      "sha256": "4dff6ac206e9f480d970dd95241aa3d8099f62663ac57af6e6eadb5c41e4efb0"
+    },
+    "template": {
+      "file": "art/drafts/keeper-prime-rear-action-sequence-2026-10-20-v1/page-template.html",
+      "sha256": "4dff6ac206e9f480d970dd95241aa3d8099f62663ac57af6e6eadb5c41e4efb0"
+    }
+  },
+  "checks": {
+    "preloadAndDecodeBeforePlayback": true,
+    "singleSynchronizedClock": true,
+    "calloutHiddenBeforeAction": true,
+    "bodyCalloutSfxIndependent": true,
+    "noNewMedia": true,
+    "runtimeChanged": false,
+    "kitchenChanged": false,
+    "deployed": false
+  },
+  "rollback": "Discard this draft directory, public review directory, builder, verifier and documentation entry. All inherited assets remain untouched."
+}
