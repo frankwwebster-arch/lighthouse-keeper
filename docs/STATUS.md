@@ -258,6 +258,15 @@ playback, so the exact standard 2.625-lp-per-frame walk stops after advancing
 21 lp instead of snapping back to its starting coordinate. No pixels, gait or
 turn order, durations, Final, runtime or production assets change.
 
+Held-implement POC V3 delivery is live: candidate `dedf5af5`, shell pin
+`6e4b8d4c`, review-only deploy `ebc362c9`. The production shell returned HTTP
+200 pinned to the exact candidate; the live reviewer contains one-shot playback
+and the frame-18 registration, and all 87 unique PNG URLs passed signature
+checks on 19 October 2026. Dedicated V1/V2/V3 verification, TypeScript and the
+production build pass. The complete repository suite reaches the independent
+public-payload ceiling at 50.41 MiB versus 50 MiB after concurrent kitchen
+review additions. V3 adds no image media and only its 1,016-byte public shell.
+
 Back V1's exact deploy commit `d93c89c` remains delivery provenance only. Back
 V2 is live from exact deploy commit `f165576`; its 61-frame route and all 36
 unique route/comparison images returned valid PNG data on 18 October 2026.

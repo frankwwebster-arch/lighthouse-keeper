@@ -408,7 +408,7 @@ repository run passes the POC and all checks before the independent archive
 payload ceiling; the existing tracked public payload is 50.39 MiB against its
 50 MiB limit. The POC itself leaves only its 1,016-byte HTML shell in public.
 
-Held-implement POC V2 is the sole active review successor. Frank identified a
+Held-implement POC V2 is immutable superseded review history. Frank identified a
 lateral leap between V1 frames 17 and 18: the reviewer mirrored each 48-lp cell
 but still subtracted the unmirrored 18.75-lp root anchor. V2 subtracts the
 mirrored 29.25-lp anchor for mirrored frames, keeping the declared root fixed.
@@ -429,3 +429,10 @@ V3 changes no image, order, duration or standard root-motion speed. Frame 18
 receives a one-lp presentation offset, reducing adjacent seam deltas to
 +0.333/-0.408 lp, and playback stops at the translated endpoint. V1 and V2
 remain immutable.
+Candidate commit `dedf5af5`, shell-pin commit `6e4b8d4c` and review-only deploy
+commit `ebc362c9` are on `main`. The live V3 shell returned HTTP 200, pinned the
+exact reviewer, contained the one-shot and rear-seam corrections, and all 87
+unique PNG URLs returned valid signatures on 19 October 2026. Dedicated
+V1/V2/V3 verification, TypeScript and production build pass. The complete suite
+reaches the independent 50 MiB public-payload ceiling at 50.41 MiB after
+concurrent kitchen review additions; V3 owns no new image media.
