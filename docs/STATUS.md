@@ -227,6 +227,13 @@ prop pixels. It is explicitly a phase-matched full-character proxy rather than
 pixel-identical production art. A promotable successor requires separable Prime
 torso/arm layers. Nothing is approved, promoted or wired.
 
+Held-implement POC V1 is deployed for review from `65506b56` at
+`/keeper-review/keeper-prime-upper-body-override-poc-v1/index.html`. Its shell
+pins candidate `98892f9c`; all 87 unique archived images were live-verified.
+Dedicated verification, typecheck and production build pass. The unrelated
+repository-wide public-payload gate remains at 50.39 MiB versus 50 MiB; this
+POC contributes only a 1,016-byte public shell.
+
 Back V1's exact deploy commit `d93c89c` remains delivery provenance only. Back
 V2 is live from exact deploy commit `f165576`; its 61-frame route and all 36
 unique route/comparison images returned valid PNG data on 18 October 2026.

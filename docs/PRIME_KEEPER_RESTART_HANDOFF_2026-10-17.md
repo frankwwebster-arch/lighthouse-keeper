@@ -391,3 +391,14 @@ broomless held-implement POC is the only active feasibility gate, production
 requires separable Prime torso/arm layers, nothing is promoted, and Back
 Sit/Stand V2 remains separately approved and hash-pinned without any
 production-art promotion.
+
+Held-implement POC V1 delivery is immutable: candidate commit `98892f9c`,
+shell-pin commit `d8529ece`, reconciled archive-manifest commit `7fbced02` and
+review-only deploy commit `65506b56`. The live static shell at
+`/keeper-review/keeper-prime-upper-body-override-poc-v1/index.html` returned
+HTTP 200, pinned exact reviewer commit `98892f9c`, and all 87 unique archived
+PNG URLs returned valid PNG signatures on 19 October 2026. The dedicated POC
+verifier, sequential TypeScript check and production build pass. The complete
+repository run passes the POC and all checks before the independent archive
+payload ceiling; the existing tracked public payload is 50.39 MiB against its
+50 MiB limit. The POC itself leaves only its 1,016-byte HTML shell in public.
