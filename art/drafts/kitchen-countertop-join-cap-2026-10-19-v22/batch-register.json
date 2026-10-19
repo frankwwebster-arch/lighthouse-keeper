@@ -1,0 +1,102 @@
+{
+  "schema": "lighthouse-keeper/reversible-review-batch@1",
+  "set": "kitchen-countertop-join-cap-v22",
+  "status": "reversible-unapproved-unpromoted",
+  "candidate": {
+    "catalogue": {
+      "file": "art/drafts/kitchen-countertop-join-cap-2026-10-19-v22/candidate-catalogue.json",
+      "sha256": "5d5113bfe9151feba27cbe148eb6a506dc0f031812460dfcd254022347473c7e"
+    },
+    "publicShell": {
+      "file": "public/keeper-review/kitchen-countertop-join-cap-v22/index.html",
+      "sha256": "b08a24449c35719bf1722aac56cba3d45fd6dc4e6f06436c90235ca7e51dad95"
+    }
+  },
+  "publishedAssets": [
+    {
+      "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/room-background-exact.png",
+      "sourceSha256": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6",
+      "publicAssemblyPath": "public/keeper-review/kitchen-countertop-join-cap-v22/assets/room-background-exact.png"
+    },
+    {
+      "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/cabinet-run-v11-exact.png",
+      "sourceSha256": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
+      "publicAssemblyPath": "public/keeper-review/kitchen-countertop-join-cap-v22/assets/cabinet-run-v11-exact.png"
+    },
+    {
+      "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/sink-cabinet-v19-exact.png",
+      "sourceSha256": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+      "publicAssemblyPath": "public/keeper-review/kitchen-countertop-join-cap-v22/assets/sink-cabinet-v19-exact.png"
+    },
+    {
+      "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/v21-jagged-reference-exact.png",
+      "sourceSha256": "fb45e71283f760a1e252b01d5a2be3dd7d7d29de05dbdff0592225f3928ffdd0",
+      "publicAssemblyPath": "public/keeper-review/kitchen-countertop-join-cap-v22/assets/v21-jagged-reference-exact.png"
+    },
+    {
+      "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/join-body-backfill-template.png",
+      "sourceSha256": "e8bd0080ca426e6d2d750b0c5cbb0b912fe659ec1a49867e740b9216c6b68040",
+      "publicAssemblyPath": "public/keeper-review/kitchen-countertop-join-cap-v22/assets/join-body-backfill-template.png"
+    },
+    {
+      "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/countertop-join-cap-template.png",
+      "sourceSha256": "99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c",
+      "publicAssemblyPath": "public/keeper-review/kitchen-countertop-join-cap-v22/assets/countertop-join-cap-template.png"
+    },
+    {
+      "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/room-default-seamless-cap.png",
+      "sourceSha256": "38b28540672611e4e4f4eefdc9f7ea65ec2202ea1ac952feb3a39f43fc5e7707",
+      "publicAssemblyPath": "public/keeper-review/kitchen-countertop-join-cap-v22/assets/room-default-seamless-cap.png"
+    },
+    {
+      "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/room-default-soft-seam-cap.png",
+      "sourceSha256": "d31137c424531402bdc67f6504579a4e852ceb3b7516f874186367dbc2286ea8",
+      "publicAssemblyPath": "public/keeper-review/kitchen-countertop-join-cap-v22/assets/room-default-soft-seam-cap.png"
+    },
+    {
+      "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/focus-v21-jagged-reference.png",
+      "sourceSha256": "146f9d9300ba96db698605eca34c2a130b61a6775ac886fa41c69bb10ba650d9",
+      "publicAssemblyPath": "public/keeper-review/kitchen-countertop-join-cap-v22/assets/focus-v21-jagged-reference.png"
+    },
+    {
+      "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/focus-v22-seamless-cap.png",
+      "sourceSha256": "eba5f72717155e83f10b9286a3ac1a69888e249d87b0ca297591f073dd8a2009",
+      "publicAssemblyPath": "public/keeper-review/kitchen-countertop-join-cap-v22/assets/focus-v22-seamless-cap.png"
+    },
+    {
+      "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/focus-v22-soft-seam-cap.png",
+      "sourceSha256": "ffa4aa071337601298ff152bb89ff879e8a3d676b62a673bf18873a84185ea9a",
+      "publicAssemblyPath": "public/keeper-review/kitchen-countertop-join-cap-v22/assets/focus-v22-soft-seam-cap.png"
+    },
+    {
+      "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/room-six-pixel-gap-capped.png",
+      "sourceSha256": "a8bfb6d442f4193611815d209e5c722890efc87102c1d328b0eeb052086d5541",
+      "publicAssemblyPath": "public/keeper-review/kitchen-countertop-join-cap-v22/assets/room-six-pixel-gap-capped.png"
+    },
+    {
+      "source": "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/room-nine-pixel-gap-auto-disabled.png",
+      "sourceSha256": "58b775f0e2b030df6f4bfc4a83f5a1ebdacd4965ad6599f51dd23167cf5d3f85",
+      "publicAssemblyPath": "public/keeper-review/kitchen-countertop-join-cap-v22/assets/room-nine-pixel-gap-auto-disabled.png"
+    }
+  ],
+  "files": {
+    "art/raw/kitchen-rebuild-foundation-2026-10-18-v1/kitchen-standard-background.png": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6",
+    "art/raw/kitchen-cabinet-run-2026-10-19-v11/cabinet-run-native-cell.png": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
+    "art/raw/kitchen-sink-smooth-join-2026-10-19-v19/sink-cabinet-standard.png": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+    "art/raw/kitchen-cabinet-join-backfill-2026-10-19-v21/room-default-matched-backfill.png": "fb45e71283f760a1e252b01d5a2be3dd7d7d29de05dbdff0592225f3928ffdd0",
+    "art/drafts/kitchen-countertop-join-cap-2026-10-19-v22/candidate-catalogue.json": "5d5113bfe9151feba27cbe148eb6a506dc0f031812460dfcd254022347473c7e",
+    "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/room-background-exact.png": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6",
+    "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/cabinet-run-v11-exact.png": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
+    "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/sink-cabinet-v19-exact.png": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+    "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/v21-jagged-reference-exact.png": "fb45e71283f760a1e252b01d5a2be3dd7d7d29de05dbdff0592225f3928ffdd0",
+    "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/join-body-backfill-template.png": "e8bd0080ca426e6d2d750b0c5cbb0b912fe659ec1a49867e740b9216c6b68040",
+    "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/countertop-join-cap-template.png": "99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c",
+    "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/room-default-seamless-cap.png": "38b28540672611e4e4f4eefdc9f7ea65ec2202ea1ac952feb3a39f43fc5e7707",
+    "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/room-default-soft-seam-cap.png": "d31137c424531402bdc67f6504579a4e852ceb3b7516f874186367dbc2286ea8",
+    "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/focus-v21-jagged-reference.png": "146f9d9300ba96db698605eca34c2a130b61a6775ac886fa41c69bb10ba650d9",
+    "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/focus-v22-seamless-cap.png": "eba5f72717155e83f10b9286a3ac1a69888e249d87b0ca297591f073dd8a2009",
+    "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/focus-v22-soft-seam-cap.png": "ffa4aa071337601298ff152bb89ff879e8a3d676b62a673bf18873a84185ea9a",
+    "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/room-six-pixel-gap-capped.png": "a8bfb6d442f4193611815d209e5c722890efc87102c1d328b0eeb052086d5541",
+    "art/raw/kitchen-countertop-join-cap-2026-10-19-v22/room-nine-pixel-gap-auto-disabled.png": "58b775f0e2b030df6f4bfc4a83f5a1ebdacd4965ad6599f51dd23167cf5d3f85"
+  }
+}
