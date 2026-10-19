@@ -1,0 +1,723 @@
+{
+  "schema": "lighthouse-keeper/activity-cloud-composer-register@3",
+  "set": "activity-cloud-composer-v3",
+  "status": "immutable-reversible-review-tool-not-approved",
+  "sourceVocabulary": {
+    "set": "activity-cloud-composer-v2",
+    "catalogue": "public/keeper-review/activity-cloud-composer-v2/catalogue.json",
+    "catalogueSha256": "c3f077597959c589b9fa6889db84cfe65cd93052d0931e278be5318fb6a6625f",
+    "register": "art/drafts/activity-cloud-composer-2026-10-19-v2/batch-register.json",
+    "registerSha256": "c04d5776834f996093c7f68e03968a64d37dfa51f15d05b79c4150ed8cb2bf4c",
+    "inheritedComponents": 74
+  },
+  "generatedSources": {
+    "music-album-sgt-pepper-homage": {
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/source/music-album-sgt-pepper-homage.png",
+      "sha256": "5681e4cf992966b8e334b456d2e8101ab2c59c0e8319a0ef4c602b034c37e94c",
+      "pixels": [
+        1254,
+        1254
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": {
+        "minX": 101,
+        "minY": 88,
+        "maxX": 1147,
+        "maxY": 1166,
+        "opaquePixels": 1059284
+      }
+    },
+    "music-album-morning-glory-homage": {
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/source/music-album-morning-glory-homage.png",
+      "sha256": "36573eedab51b9b1321b2a47b8fc1a330c7ec2e36cced2e47876bc5677cf2738",
+      "pixels": [
+        1312,
+        1199
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": {
+        "minX": 180,
+        "minY": 140,
+        "maxX": 1124,
+        "maxY": 1081,
+        "opaquePixels": 827513
+      }
+    },
+    "music-album-screamadelica-homage": {
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/source/music-album-screamadelica-homage.png",
+      "sha256": "89e2a55436846338a7d92baf9627a8da8d4a683a34256e7843d73cdbb3a4f0e5",
+      "pixels": [
+        1323,
+        1189
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": {
+        "minX": 145,
+        "minY": 68,
+        "maxX": 1209,
+        "maxY": 1136,
+        "opaquePixels": 1025447
+      }
+    },
+    "music-album-velvet-banana-homage": {
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/source/music-album-velvet-banana-homage.png",
+      "sha256": "ea4e2fe476bb5aabc6992d60e2657cce9a22995077c5e54999d463822690076a",
+      "pixels": [
+        1345,
+        1169
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": {
+        "minX": 154,
+        "minY": 96,
+        "maxX": 1208,
+        "maxY": 1091,
+        "opaquePixels": 1016788
+      }
+    },
+    "music-album-london-calling-homage": {
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/source/music-album-london-calling-homage.png",
+      "sha256": "232b97f4909147809e74f79788baf33c75295e06ebec7729818cb95c2ae42b21",
+      "pixels": [
+        1312,
+        1199
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": {
+        "minX": 112,
+        "minY": 82,
+        "maxX": 1201,
+        "maxY": 1115,
+        "opaquePixels": 1118375
+      }
+    },
+    "music-album-dark-side-homage": {
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/source/music-album-dark-side-homage.png",
+      "sha256": "7ada2f88c5b457fd01ed5fbcee3260760914935915461b28007d7eb2af480e9f",
+      "pixels": [
+        1299,
+        1211
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": {
+        "minX": 111,
+        "minY": 81,
+        "maxX": 1195,
+        "maxY": 1110,
+        "opaquePixels": 1053409
+      }
+    },
+    "music-album-abbey-road-homage": {
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/source/music-album-abbey-road-homage.png",
+      "sha256": "3836ac6f104bf3e28b425178ac90e464083adc2662f1d5db86048def519c57a9",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": {
+        "minX": 304,
+        "minY": 33,
+        "maxX": 1234,
+        "maxY": 987,
+        "opaquePixels": 843425
+      }
+    },
+    "music-album-tapestry-homage": {
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/source/music-album-tapestry-homage.png",
+      "sha256": "0c2fa0c70506b23928aeb220b2c777f8740f452ba3607ea0b907d983a65807ac",
+      "pixels": [
+        1290,
+        1219
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": {
+        "minX": 188,
+        "minY": 143,
+        "maxX": 1130,
+        "maxY": 1095,
+        "opaquePixels": 847095
+      }
+    },
+    "music-album-sticky-fingers-homage": {
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/source/music-album-sticky-fingers-homage.png",
+      "sha256": "6a032d29dc0a51ba7b3c3cbcf832bc147149a246223a2b972e07e8c51f8faa85",
+      "pixels": [
+        1330,
+        1182
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": {
+        "minX": 159,
+        "minY": 110,
+        "maxX": 1193,
+        "maxY": 1108,
+        "opaquePixels": 960330
+      }
+    },
+    "music-album-never-mind-bollocks-homage": {
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/source/music-album-never-mind-bollocks-homage.png",
+      "sha256": "d6816c6bb61aa56685ff49d5be97e1b67e13fa5f3e4724730cab90ec099062d2",
+      "pixels": [
+        1261,
+        1247
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": {
+        "minX": 121,
+        "minY": 124,
+        "maxX": 1159,
+        "maxY": 1126,
+        "opaquePixels": 986973
+      }
+    },
+    "music-album-born-usa-homage": {
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/source/music-album-born-usa-homage.png",
+      "sha256": "49ce1060de571dd0adfe0cccc66c2342816ae02b57983bfc29a144501353cd7b",
+      "pixels": [
+        1254,
+        1254
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": {
+        "minX": 130,
+        "minY": 115,
+        "maxX": 1127,
+        "maxY": 1154,
+        "opaquePixels": 986330
+      }
+    },
+    "music-album-nevermind-homage": {
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/source/music-album-nevermind-homage.png",
+      "sha256": "92d403a0ec004796cafc27dbfb909bde9d751dac77c4930a98fc974babc54bdf",
+      "pixels": [
+        1312,
+        1199
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": {
+        "minX": 138,
+        "minY": 90,
+        "maxX": 1185,
+        "maxY": 1118,
+        "opaquePixels": 1029863
+      }
+    }
+  },
+  "newComponents": {
+    "music-album-sgt-pepper-homage": {
+      "sourceCrop": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "sourceVisiblePixels": 1059284,
+      "registeredBounds": {
+        "minX": 23,
+        "minY": 20,
+        "maxX": 232,
+        "maxY": 235,
+        "opaquePixels": 42814
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-sgt-pepper-homage.png",
+      "sha256": "5ef08e203f47a1f9b94f6f2322336630b5108792262731c38e2334ab20f2068b",
+      "family": "music",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v3",
+      "src": "/keeper-review/activity-cloud-composer-v3/assets/music-album-sgt-pepper-homage-5ef08e203f47a1f9.png"
+    },
+    "music-album-morning-glory-homage": {
+      "sourceCrop": [
+        0,
+        0,
+        1312,
+        1199
+      ],
+      "sourceVisiblePixels": 827513,
+      "registeredBounds": {
+        "minX": 20,
+        "minY": 20,
+        "maxX": 235,
+        "maxY": 234,
+        "opaquePixels": 43466
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-morning-glory-homage.png",
+      "sha256": "3dff313642516114a466c745fabede7c0e7ee31f0f9c5dbc13925d3d109a331c",
+      "family": "music",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v3",
+      "src": "/keeper-review/activity-cloud-composer-v3/assets/music-album-morning-glory-homage-3dff313642516114.png"
+    },
+    "music-album-screamadelica-homage": {
+      "sourceCrop": [
+        0,
+        0,
+        1323,
+        1189
+      ],
+      "sourceVisiblePixels": 1025447,
+      "registeredBounds": {
+        "minX": 20,
+        "minY": 20,
+        "maxX": 234,
+        "maxY": 235,
+        "opaquePixels": 42151
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-screamadelica-homage.png",
+      "sha256": "9e603667489eab0e01f234cabdd37154902fe34c8f2d317eb8e711e53659baaa",
+      "family": "music",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v3",
+      "src": "/keeper-review/activity-cloud-composer-v3/assets/music-album-screamadelica-homage-9e603667489eab0e.png"
+    },
+    "music-album-velvet-banana-homage": {
+      "sourceCrop": [
+        0,
+        0,
+        1345,
+        1169
+      ],
+      "sourceVisiblePixels": 1016788,
+      "registeredBounds": {
+        "minX": 20,
+        "minY": 26,
+        "maxX": 235,
+        "maxY": 229,
+        "opaquePixels": 42960
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-velvet-banana-homage.png",
+      "sha256": "c2a8696b73d64ec385bc41f3ab6f242e00286a905ac02faf904d2b2f885dc8c9",
+      "family": "music",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v3",
+      "src": "/keeper-review/activity-cloud-composer-v3/assets/music-album-velvet-banana-homage-c2a8696b73d64ec3.png"
+    },
+    "music-album-london-calling-homage": {
+      "sourceCrop": [
+        0,
+        0,
+        1312,
+        1199
+      ],
+      "sourceVisiblePixels": 1118375,
+      "registeredBounds": {
+        "minX": 20,
+        "minY": 25,
+        "maxX": 235,
+        "maxY": 229,
+        "opaquePixels": 44177
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-london-calling-homage.png",
+      "sha256": "e0eae0b58dd637a43e2dda0d51939f4c31779516b58837106341db490b933dda",
+      "family": "music",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v3",
+      "src": "/keeper-review/activity-cloud-composer-v3/assets/music-album-london-calling-homage-e0eae0b58dd637a4.png"
+    },
+    "music-album-dark-side-homage": {
+      "sourceCrop": [
+        0,
+        0,
+        1299,
+        1211
+      ],
+      "sourceVisiblePixels": 1053409,
+      "registeredBounds": {
+        "minX": 20,
+        "minY": 25,
+        "maxX": 235,
+        "maxY": 229,
+        "opaquePixels": 42031
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-dark-side-homage.png",
+      "sha256": "0dda7d9e5ed9924b8de3c3e788276b2361acfd02f9dee39a46aaa7aeefc1526e",
+      "family": "music",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v3",
+      "src": "/keeper-review/activity-cloud-composer-v3/assets/music-album-dark-side-homage-0dda7d9e5ed9924b.png"
+    },
+    "music-album-abbey-road-homage": {
+      "sourceCrop": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "sourceVisiblePixels": 843425,
+      "registeredBounds": {
+        "minX": 22,
+        "minY": 20,
+        "maxX": 232,
+        "maxY": 235,
+        "opaquePixels": 43483
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-abbey-road-homage.png",
+      "sha256": "ba8062ab6ea0a19548ddb578d30b0801c7c67ddcd97339976c59cdc1e2cb5366",
+      "family": "music",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v3",
+      "src": "/keeper-review/activity-cloud-composer-v3/assets/music-album-abbey-road-homage-ba8062ab6ea0a195.png"
+    },
+    "music-album-tapestry-homage": {
+      "sourceCrop": [
+        0,
+        0,
+        1290,
+        1219
+      ],
+      "sourceVisiblePixels": 847095,
+      "registeredBounds": {
+        "minX": 21,
+        "minY": 20,
+        "maxX": 234,
+        "maxY": 235,
+        "opaquePixels": 43883
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-tapestry-homage.png",
+      "sha256": "51f45e2290468c7ab1f688a63ef14edcf3966e390ce5c9a5b7e537f254b13503",
+      "family": "music",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v3",
+      "src": "/keeper-review/activity-cloud-composer-v3/assets/music-album-tapestry-homage-51f45e2290468c7a.png"
+    },
+    "music-album-sticky-fingers-homage": {
+      "sourceCrop": [
+        0,
+        0,
+        1330,
+        1182
+      ],
+      "sourceVisiblePixels": 960330,
+      "registeredBounds": {
+        "minX": 20,
+        "minY": 24,
+        "maxX": 235,
+        "maxY": 231,
+        "opaquePixels": 41965
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-sticky-fingers-homage.png",
+      "sha256": "657b75aa7f8a71315f55bbf409abccc1e4513bfd267133ec4a1a21d9af292f26",
+      "family": "music",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v3",
+      "src": "/keeper-review/activity-cloud-composer-v3/assets/music-album-sticky-fingers-homage-657b75aa7f8a7131.png"
+    },
+    "music-album-never-mind-bollocks-homage": {
+      "sourceCrop": [
+        0,
+        0,
+        1261,
+        1247
+      ],
+      "sourceVisiblePixels": 986973,
+      "registeredBounds": {
+        "minX": 20,
+        "minY": 23,
+        "maxX": 235,
+        "maxY": 231,
+        "opaquePixels": 43035
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-never-mind-bollocks-homage.png",
+      "sha256": "6e87dbf7c81c7ee66625ce188fbbfa843b0527412b361f36744aefeed55bffed",
+      "family": "music",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v3",
+      "src": "/keeper-review/activity-cloud-composer-v3/assets/music-album-never-mind-bollocks-homage-6e87dbf7c81c7ee6.png"
+    },
+    "music-album-born-usa-homage": {
+      "sourceCrop": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "sourceVisiblePixels": 986330,
+      "registeredBounds": {
+        "minX": 24,
+        "minY": 20,
+        "maxX": 230,
+        "maxY": 235,
+        "opaquePixels": 42724
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-born-usa-homage.png",
+      "sha256": "69f4f578ff5596ee096fe4b050589ece69865c330e291441cb63c2b46fac3d61",
+      "family": "music",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v3",
+      "src": "/keeper-review/activity-cloud-composer-v3/assets/music-album-born-usa-homage-69f4f578ff5596ee.png"
+    },
+    "music-album-nevermind-homage": {
+      "sourceCrop": [
+        0,
+        0,
+        1312,
+        1199
+      ],
+      "sourceVisiblePixels": 1029863,
+      "registeredBounds": {
+        "minX": 20,
+        "minY": 22,
+        "maxX": 235,
+        "maxY": 233,
+        "opaquePixels": 44041
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-nevermind-homage.png",
+      "sha256": "a3290c5db3ef99ff6ad0faa82b8c1f009f7fc6f4afc66f2c06136c47ca3d459f",
+      "family": "music",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v3",
+      "src": "/keeper-review/activity-cloud-composer-v3/assets/music-album-nevermind-homage-a3290c5db3ef99ff.png"
+    }
+  },
+  "catalogue": {
+    "file": "public/keeper-review/activity-cloud-composer-v3/catalogue.json",
+    "sha256": "efc5a57b1f9627e3358ee10ff7b2527aac309b823925a7526d9a5b76dd505334",
+    "components": 86,
+    "newComponents": 12
+  },
+  "page": {
+    "file": "public/keeper-review/activity-cloud-composer-v3/index.html",
+    "sha256": "7a7ee7574627aed1c64d64f6bab184168b1246ac9d979c72734e73db8b288fa8"
+  },
+  "candidate": {
+    "publicShell": {
+      "file": "public/keeper-review/activity-cloud-composer-v3/index.html",
+      "sha256": "7a7ee7574627aed1c64d64f6bab184168b1246ac9d979c72734e73db8b288fa8"
+    }
+  },
+  "publishedAssets": [
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-sgt-pepper-homage.png",
+      "sourceSha256": "5ef08e203f47a1f9b94f6f2322336630b5108792262731c38e2334ab20f2068b",
+      "public": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-sgt-pepper-homage-5ef08e203f47a1f9.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-sgt-pepper-homage-5ef08e203f47a1f9.png",
+      "publicSha256": "5ef08e203f47a1f9b94f6f2322336630b5108792262731c38e2334ab20f2068b",
+      "url": "/keeper-review/activity-cloud-composer-v3/assets/music-album-sgt-pepper-homage-5ef08e203f47a1f9.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-morning-glory-homage.png",
+      "sourceSha256": "3dff313642516114a466c745fabede7c0e7ee31f0f9c5dbc13925d3d109a331c",
+      "public": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-morning-glory-homage-3dff313642516114.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-morning-glory-homage-3dff313642516114.png",
+      "publicSha256": "3dff313642516114a466c745fabede7c0e7ee31f0f9c5dbc13925d3d109a331c",
+      "url": "/keeper-review/activity-cloud-composer-v3/assets/music-album-morning-glory-homage-3dff313642516114.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-screamadelica-homage.png",
+      "sourceSha256": "9e603667489eab0e01f234cabdd37154902fe34c8f2d317eb8e711e53659baaa",
+      "public": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-screamadelica-homage-9e603667489eab0e.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-screamadelica-homage-9e603667489eab0e.png",
+      "publicSha256": "9e603667489eab0e01f234cabdd37154902fe34c8f2d317eb8e711e53659baaa",
+      "url": "/keeper-review/activity-cloud-composer-v3/assets/music-album-screamadelica-homage-9e603667489eab0e.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-velvet-banana-homage.png",
+      "sourceSha256": "c2a8696b73d64ec385bc41f3ab6f242e00286a905ac02faf904d2b2f885dc8c9",
+      "public": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-velvet-banana-homage-c2a8696b73d64ec3.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-velvet-banana-homage-c2a8696b73d64ec3.png",
+      "publicSha256": "c2a8696b73d64ec385bc41f3ab6f242e00286a905ac02faf904d2b2f885dc8c9",
+      "url": "/keeper-review/activity-cloud-composer-v3/assets/music-album-velvet-banana-homage-c2a8696b73d64ec3.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-london-calling-homage.png",
+      "sourceSha256": "e0eae0b58dd637a43e2dda0d51939f4c31779516b58837106341db490b933dda",
+      "public": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-london-calling-homage-e0eae0b58dd637a4.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-london-calling-homage-e0eae0b58dd637a4.png",
+      "publicSha256": "e0eae0b58dd637a43e2dda0d51939f4c31779516b58837106341db490b933dda",
+      "url": "/keeper-review/activity-cloud-composer-v3/assets/music-album-london-calling-homage-e0eae0b58dd637a4.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-dark-side-homage.png",
+      "sourceSha256": "0dda7d9e5ed9924b8de3c3e788276b2361acfd02f9dee39a46aaa7aeefc1526e",
+      "public": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-dark-side-homage-0dda7d9e5ed9924b.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-dark-side-homage-0dda7d9e5ed9924b.png",
+      "publicSha256": "0dda7d9e5ed9924b8de3c3e788276b2361acfd02f9dee39a46aaa7aeefc1526e",
+      "url": "/keeper-review/activity-cloud-composer-v3/assets/music-album-dark-side-homage-0dda7d9e5ed9924b.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-abbey-road-homage.png",
+      "sourceSha256": "ba8062ab6ea0a19548ddb578d30b0801c7c67ddcd97339976c59cdc1e2cb5366",
+      "public": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-abbey-road-homage-ba8062ab6ea0a195.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-abbey-road-homage-ba8062ab6ea0a195.png",
+      "publicSha256": "ba8062ab6ea0a19548ddb578d30b0801c7c67ddcd97339976c59cdc1e2cb5366",
+      "url": "/keeper-review/activity-cloud-composer-v3/assets/music-album-abbey-road-homage-ba8062ab6ea0a195.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-tapestry-homage.png",
+      "sourceSha256": "51f45e2290468c7ab1f688a63ef14edcf3966e390ce5c9a5b7e537f254b13503",
+      "public": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-tapestry-homage-51f45e2290468c7a.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-tapestry-homage-51f45e2290468c7a.png",
+      "publicSha256": "51f45e2290468c7ab1f688a63ef14edcf3966e390ce5c9a5b7e537f254b13503",
+      "url": "/keeper-review/activity-cloud-composer-v3/assets/music-album-tapestry-homage-51f45e2290468c7a.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-sticky-fingers-homage.png",
+      "sourceSha256": "657b75aa7f8a71315f55bbf409abccc1e4513bfd267133ec4a1a21d9af292f26",
+      "public": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-sticky-fingers-homage-657b75aa7f8a7131.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-sticky-fingers-homage-657b75aa7f8a7131.png",
+      "publicSha256": "657b75aa7f8a71315f55bbf409abccc1e4513bfd267133ec4a1a21d9af292f26",
+      "url": "/keeper-review/activity-cloud-composer-v3/assets/music-album-sticky-fingers-homage-657b75aa7f8a7131.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-never-mind-bollocks-homage.png",
+      "sourceSha256": "6e87dbf7c81c7ee66625ce188fbbfa843b0527412b361f36744aefeed55bffed",
+      "public": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-never-mind-bollocks-homage-6e87dbf7c81c7ee6.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-never-mind-bollocks-homage-6e87dbf7c81c7ee6.png",
+      "publicSha256": "6e87dbf7c81c7ee66625ce188fbbfa843b0527412b361f36744aefeed55bffed",
+      "url": "/keeper-review/activity-cloud-composer-v3/assets/music-album-never-mind-bollocks-homage-6e87dbf7c81c7ee6.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-born-usa-homage.png",
+      "sourceSha256": "69f4f578ff5596ee096fe4b050589ece69865c330e291441cb63c2b46fac3d61",
+      "public": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-born-usa-homage-69f4f578ff5596ee.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-born-usa-homage-69f4f578ff5596ee.png",
+      "publicSha256": "69f4f578ff5596ee096fe4b050589ece69865c330e291441cb63c2b46fac3d61",
+      "url": "/keeper-review/activity-cloud-composer-v3/assets/music-album-born-usa-homage-69f4f578ff5596ee.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-nevermind-homage.png",
+      "sourceSha256": "a3290c5db3ef99ff6ad0faa82b8c1f009f7fc6f4afc66f2c06136c47ca3d459f",
+      "public": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-nevermind-homage-a3290c5db3ef99ff.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v3/assets/music-album-nevermind-homage-a3290c5db3ef99ff.png",
+      "publicSha256": "a3290c5db3ef99ff6ad0faa82b8c1f009f7fc6f4afc66f2c06136c47ca3d459f",
+      "url": "/keeper-review/activity-cloud-composer-v3/assets/music-album-nevermind-homage-a3290c5db3ef99ff.png"
+    }
+  ],
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersClear": true,
+    "componentOwnershipUnambiguous": true,
+    "v2ComposerUnchanged": true,
+    "primeBodyUnchanged": true,
+    "runtimeChanged": false,
+    "kitchenChanged": false,
+    "deployed": false
+  },
+  "approvalBoundary": {
+    "vocabularyApproved": false,
+    "composerApproved": false,
+    "recipeApproved": false,
+    "runtimePromoted": false
+  }
+}

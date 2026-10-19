@@ -11,11 +11,11 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 163,
-    "referenceCount": 4004,
-    "uniqueObjectCount": 2458,
-    "logicalBytes": 324644552,
-    "uniqueBytes": 175545870,
+    "setCount": 164,
+    "referenceCount": 4016,
+    "uniqueObjectCount": 2470,
+    "logicalBytes": 325813728,
+    "uniqueBytes": 176715046,
     "deduplicatedBytes": 149098682
   },
   "legacyPaths": {
@@ -67,6 +67,90 @@
       "bytes": 53106,
       "object": "review-archive/objects/ad/adf847c274eafac293e844e4e66c2464c53cdd0103b7dcc83c1045d6d7985904.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ad/adf847c274eafac293e844e4e66c2464c53cdd0103b7dcc83c1045d6d7985904.png"
+    },
+    "/keeper-review/activity-cloud-composer-v3/assets/music-album-abbey-road-homage-ba8062ab6ea0a195.png": {
+      "sha256": "ba8062ab6ea0a19548ddb578d30b0801c7c67ddcd97339976c59cdc1e2cb5366",
+      "extension": ".png",
+      "bytes": 106509,
+      "object": "review-archive/objects/ba/ba8062ab6ea0a19548ddb578d30b0801c7c67ddcd97339976c59cdc1e2cb5366.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ba/ba8062ab6ea0a19548ddb578d30b0801c7c67ddcd97339976c59cdc1e2cb5366.png"
+    },
+    "/keeper-review/activity-cloud-composer-v3/assets/music-album-born-usa-homage-69f4f578ff5596ee.png": {
+      "sha256": "69f4f578ff5596ee096fe4b050589ece69865c330e291441cb63c2b46fac3d61",
+      "extension": ".png",
+      "bytes": 93832,
+      "object": "review-archive/objects/69/69f4f578ff5596ee096fe4b050589ece69865c330e291441cb63c2b46fac3d61.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/69/69f4f578ff5596ee096fe4b050589ece69865c330e291441cb63c2b46fac3d61.png"
+    },
+    "/keeper-review/activity-cloud-composer-v3/assets/music-album-dark-side-homage-0dda7d9e5ed9924b.png": {
+      "sha256": "0dda7d9e5ed9924b8de3c3e788276b2361acfd02f9dee39a46aaa7aeefc1526e",
+      "extension": ".png",
+      "bytes": 68032,
+      "object": "review-archive/objects/0d/0dda7d9e5ed9924b8de3c3e788276b2361acfd02f9dee39a46aaa7aeefc1526e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0d/0dda7d9e5ed9924b8de3c3e788276b2361acfd02f9dee39a46aaa7aeefc1526e.png"
+    },
+    "/keeper-review/activity-cloud-composer-v3/assets/music-album-london-calling-homage-e0eae0b58dd637a4.png": {
+      "sha256": "e0eae0b58dd637a43e2dda0d51939f4c31779516b58837106341db490b933dda",
+      "extension": ".png",
+      "bytes": 90744,
+      "object": "review-archive/objects/e0/e0eae0b58dd637a43e2dda0d51939f4c31779516b58837106341db490b933dda.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e0/e0eae0b58dd637a43e2dda0d51939f4c31779516b58837106341db490b933dda.png"
+    },
+    "/keeper-review/activity-cloud-composer-v3/assets/music-album-morning-glory-homage-3dff313642516114.png": {
+      "sha256": "3dff313642516114a466c745fabede7c0e7ee31f0f9c5dbc13925d3d109a331c",
+      "extension": ".png",
+      "bytes": 98880,
+      "object": "review-archive/objects/3d/3dff313642516114a466c745fabede7c0e7ee31f0f9c5dbc13925d3d109a331c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3d/3dff313642516114a466c745fabede7c0e7ee31f0f9c5dbc13925d3d109a331c.png"
+    },
+    "/keeper-review/activity-cloud-composer-v3/assets/music-album-never-mind-bollocks-homage-6e87dbf7c81c7ee6.png": {
+      "sha256": "6e87dbf7c81c7ee66625ce188fbbfa843b0527412b361f36744aefeed55bffed",
+      "extension": ".png",
+      "bytes": 93798,
+      "object": "review-archive/objects/6e/6e87dbf7c81c7ee66625ce188fbbfa843b0527412b361f36744aefeed55bffed.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6e/6e87dbf7c81c7ee66625ce188fbbfa843b0527412b361f36744aefeed55bffed.png"
+    },
+    "/keeper-review/activity-cloud-composer-v3/assets/music-album-nevermind-homage-a3290c5db3ef99ff.png": {
+      "sha256": "a3290c5db3ef99ff6ad0faa82b8c1f009f7fc6f4afc66f2c06136c47ca3d459f",
+      "extension": ".png",
+      "bytes": 103954,
+      "object": "review-archive/objects/a3/a3290c5db3ef99ff6ad0faa82b8c1f009f7fc6f4afc66f2c06136c47ca3d459f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a3/a3290c5db3ef99ff6ad0faa82b8c1f009f7fc6f4afc66f2c06136c47ca3d459f.png"
+    },
+    "/keeper-review/activity-cloud-composer-v3/assets/music-album-screamadelica-homage-9e603667489eab0e.png": {
+      "sha256": "9e603667489eab0e01f234cabdd37154902fe34c8f2d317eb8e711e53659baaa",
+      "extension": ".png",
+      "bytes": 93357,
+      "object": "review-archive/objects/9e/9e603667489eab0e01f234cabdd37154902fe34c8f2d317eb8e711e53659baaa.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9e/9e603667489eab0e01f234cabdd37154902fe34c8f2d317eb8e711e53659baaa.png"
+    },
+    "/keeper-review/activity-cloud-composer-v3/assets/music-album-sgt-pepper-homage-5ef08e203f47a1f9.png": {
+      "sha256": "5ef08e203f47a1f9b94f6f2322336630b5108792262731c38e2334ab20f2068b",
+      "extension": ".png",
+      "bytes": 129080,
+      "object": "review-archive/objects/5e/5ef08e203f47a1f9b94f6f2322336630b5108792262731c38e2334ab20f2068b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5e/5ef08e203f47a1f9b94f6f2322336630b5108792262731c38e2334ab20f2068b.png"
+    },
+    "/keeper-review/activity-cloud-composer-v3/assets/music-album-sticky-fingers-homage-657b75aa7f8a7131.png": {
+      "sha256": "657b75aa7f8a71315f55bbf409abccc1e4513bfd267133ec4a1a21d9af292f26",
+      "extension": ".png",
+      "bytes": 104395,
+      "object": "review-archive/objects/65/657b75aa7f8a71315f55bbf409abccc1e4513bfd267133ec4a1a21d9af292f26.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/65/657b75aa7f8a71315f55bbf409abccc1e4513bfd267133ec4a1a21d9af292f26.png"
+    },
+    "/keeper-review/activity-cloud-composer-v3/assets/music-album-tapestry-homage-51f45e2290468c7a.png": {
+      "sha256": "51f45e2290468c7ab1f688a63ef14edcf3966e390ce5c9a5b7e537f254b13503",
+      "extension": ".png",
+      "bytes": 117688,
+      "object": "review-archive/objects/51/51f45e2290468c7ab1f688a63ef14edcf3966e390ce5c9a5b7e537f254b13503.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/51/51f45e2290468c7ab1f688a63ef14edcf3966e390ce5c9a5b7e537f254b13503.png"
+    },
+    "/keeper-review/activity-cloud-composer-v3/assets/music-album-velvet-banana-homage-c2a8696b73d64ec3.png": {
+      "sha256": "c2a8696b73d64ec385bc41f3ab6f242e00286a905ac02faf904d2b2f885dc8c9",
+      "extension": ".png",
+      "bytes": 68907,
+      "object": "review-archive/objects/c2/c2a8696b73d64ec385bc41f3ab6f242e00286a905ac02faf904d2b2f885dc8c9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c2/c2a8696b73d64ec385bc41f3ab6f242e00286a905ac02faf904d2b2f885dc8c9.png"
     },
     "/keeper-review/drafts/00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271.png": {
       "sha256": "00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271",
