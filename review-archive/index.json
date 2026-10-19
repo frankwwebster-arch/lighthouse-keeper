@@ -11,12 +11,12 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 151,
-    "referenceCount": 3642,
-    "uniqueObjectCount": 2267,
-    "logicalBytes": 301277649,
-    "uniqueBytes": 162916206,
-    "deduplicatedBytes": 138361443
+    "setCount": 152,
+    "referenceCount": 3802,
+    "uniqueObjectCount": 2319,
+    "logicalBytes": 311148056,
+    "uniqueBytes": 164224462,
+    "deduplicatedBytes": 146923594
   },
   "legacyPaths": {
     "/keeper-review/drafts/00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271.png": {
@@ -4841,6 +4841,1126 @@
       "bytes": 1817463,
       "object": "review-archive/objects/db/dbed7542a87edc458f2ed6cbaf60ebd5149ab2508933d3192f19cd1d828a40e7.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/dbed7542a87edc458f2ed6cbaf60ebd5149ab2508933d3192f19cd1d828a40e7.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/authority-comparison-b8071b3888b611f8.png": {
+      "sha256": "b8071b3888b611f8c463c947e96065ddd7be752ed7fc67891974a5be8d26f0dc",
+      "extension": ".png",
+      "bytes": 1686133,
+      "object": "review-archive/objects/b8/b8071b3888b611f8c463c947e96065ddd7be752ed7fc67891974a5be8d26f0dc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b8/b8071b3888b611f8c463c947e96065ddd7be752ed7fc67891974a5be8d26f0dc.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/layer-isolation-480eb1ce542b026b.png": {
+      "sha256": "480eb1ce542b026b5a25536b472476bf999d145c1d19d00bfa31cea6d0332ba3",
+      "extension": ".png",
+      "bytes": 1758679,
+      "object": "review-archive/objects/48/480eb1ce542b026b5a25536b472476bf999d145c1d19d00bfa31cea6d0332ba3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/48/480eb1ce542b026b5a25536b472476bf999d145c1d19d00bfa31cea6d0332ba3.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn-contact-sheet-a98cb44c8a9fc896.png": {
+      "sha256": "a98cb44c8a9fc8967c6d3895e0a6c2783124d9e3fc31b2b236eafe329f34c19e",
+      "extension": ".png",
+      "bytes": 453930,
+      "object": "review-archive/objects/a9/a98cb44c8a9fc8967c6d3895e0a6c2783124d9e3fc31b2b236eafe329f34c19e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a9/a98cb44c8a9fc8967c6d3895e0a6c2783124d9e3fc31b2b236eafe329f34c19e.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn1-89b44ba37ac58b26.png": {
+      "sha256": "89b44ba37ac58b26fff65f3fbbf16952ab860e275a7396303092e4a80979eeeb",
+      "extension": ".png",
+      "bytes": 56135,
+      "object": "review-archive/objects/89/89b44ba37ac58b26fff65f3fbbf16952ab860e275a7396303092e4a80979eeeb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/89/89b44ba37ac58b26fff65f3fbbf16952ab860e275a7396303092e4a80979eeeb.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn1-arm-mask-635696ab9c30d0ca.png": {
+      "sha256": "635696ab9c30d0caf9ebcc34ff1ab6ae7777efbde1f2cc18f83121499c8b0047",
+      "extension": ".png",
+      "bytes": 777,
+      "object": "review-archive/objects/63/635696ab9c30d0caf9ebcc34ff1ab6ae7777efbde1f2cc18f83121499c8b0047.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/63/635696ab9c30d0caf9ebcc34ff1ab6ae7777efbde1f2cc18f83121499c8b0047.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn1-arms-4f9174d5ca21192d.png": {
+      "sha256": "4f9174d5ca21192d1db1e90ed70ea2c958cd46450666b8f0f3400faadef3ab36",
+      "extension": ".png",
+      "bytes": 42727,
+      "object": "review-archive/objects/4f/4f9174d5ca21192d1db1e90ed70ea2c958cd46450666b8f0f3400faadef3ab36.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4f/4f9174d5ca21192d1db1e90ed70ea2c958cd46450666b8f0f3400faadef3ab36.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn1-authority-8b1821efebbac2f2.png": {
+      "sha256": "8b1821efebbac2f23bba72444b97f1431d98de5dda4c91cd699d715042d134cf",
+      "extension": ".png",
+      "bytes": 49422,
+      "object": "review-archive/objects/8b/8b1821efebbac2f23bba72444b97f1431d98de5dda4c91cd699d715042d134cf.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8b/8b1821efebbac2f23bba72444b97f1431d98de5dda4c91cd699d715042d134cf.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn1-guide-44ddbd11d82d16b2.png": {
+      "sha256": "44ddbd11d82d16b2e2ad2f50ffbfda0684ced9aa1dc3e0805c00d5fa92f8818d",
+      "extension": ".png",
+      "bytes": 750,
+      "object": "review-archive/objects/44/44ddbd11d82d16b2e2ad2f50ffbfda0684ced9aa1dc3e0805c00d5fa92f8818d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/44/44ddbd11d82d16b2e2ad2f50ffbfda0684ced9aa1dc3e0805c00d5fa92f8818d.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn1-lower-f85105e9b625d181.png": {
+      "sha256": "f85105e9b625d181c1d0e333b3c35c115f0a7dc7452efc4c7ee63ceb2d097ae3",
+      "extension": ".png",
+      "bytes": 47204,
+      "object": "review-archive/objects/f8/f85105e9b625d181c1d0e333b3c35c115f0a7dc7452efc4c7ee63ceb2d097ae3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f8/f85105e9b625d181c1d0e333b3c35c115f0a7dc7452efc4c7ee63ceb2d097ae3.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn1-lower-mask-5164b1d502dcecf1.png": {
+      "sha256": "5164b1d502dcecf12db2297b3b8875c860055513df3d5dee57276e470c78435f",
+      "extension": ".png",
+      "bytes": 701,
+      "object": "review-archive/objects/51/5164b1d502dcecf12db2297b3b8875c860055513df3d5dee57276e470c78435f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/51/5164b1d502dcecf12db2297b3b8875c860055513df3d5dee57276e470c78435f.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn1-poc-v3-a2a105ea52333188.png": {
+      "sha256": "a2a105ea5233318845a0eaf11b20c886b79970fcac58cf24e0de70b4f7a1b3c8",
+      "extension": ".png",
+      "bytes": 55967,
+      "object": "review-archive/objects/a2/a2a105ea5233318845a0eaf11b20c886b79970fcac58cf24e0de70b4f7a1b3c8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a2/a2a105ea5233318845a0eaf11b20c886b79970fcac58cf24e0de70b4f7a1b3c8.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn1-torso-63b04894b9633590.png": {
+      "sha256": "63b04894b9633590d7f6657bfefcb59cb3b47974d61970407b8cb8e25d05ad5d",
+      "extension": ".png",
+      "bytes": 44092,
+      "object": "review-archive/objects/63/63b04894b9633590d7f6657bfefcb59cb3b47974d61970407b8cb8e25d05ad5d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/63/63b04894b9633590d7f6657bfefcb59cb3b47974d61970407b8cb8e25d05ad5d.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn2-1ada570f722304ac.png": {
+      "sha256": "1ada570f722304ace167ca8a08da9311b887d9b607c54375d0d0c5bd38d7c64b",
+      "extension": ".png",
+      "bytes": 56095,
+      "object": "review-archive/objects/1a/1ada570f722304ace167ca8a08da9311b887d9b607c54375d0d0c5bd38d7c64b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1a/1ada570f722304ace167ca8a08da9311b887d9b607c54375d0d0c5bd38d7c64b.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn2-arm-mask-b3ef043534f7bca1.png": {
+      "sha256": "b3ef043534f7bca1a85bbec0b1823547a53d660ee6a0b836814daa9bc84947c2",
+      "extension": ".png",
+      "bytes": 819,
+      "object": "review-archive/objects/b3/b3ef043534f7bca1a85bbec0b1823547a53d660ee6a0b836814daa9bc84947c2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b3ef043534f7bca1a85bbec0b1823547a53d660ee6a0b836814daa9bc84947c2.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn2-arms-6969b5003a3fceb2.png": {
+      "sha256": "6969b5003a3fceb2a299f696beebbd64779f861de533f8cb859e946d869f05ca",
+      "extension": ".png",
+      "bytes": 43115,
+      "object": "review-archive/objects/69/6969b5003a3fceb2a299f696beebbd64779f861de533f8cb859e946d869f05ca.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/69/6969b5003a3fceb2a299f696beebbd64779f861de533f8cb859e946d869f05ca.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn2-authority-424d778d61433e78.png": {
+      "sha256": "424d778d61433e78f7aeef1fd30b26528a009d30134dafee909487469ad7ee88",
+      "extension": ".png",
+      "bytes": 50887,
+      "object": "review-archive/objects/42/424d778d61433e78f7aeef1fd30b26528a009d30134dafee909487469ad7ee88.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/42/424d778d61433e78f7aeef1fd30b26528a009d30134dafee909487469ad7ee88.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn2-guide-3dc94ae3ddd1805c.png": {
+      "sha256": "3dc94ae3ddd1805c3f02af4dca596c47fdabec3e22d1c5233e3d1b73443853ec",
+      "extension": ".png",
+      "bytes": 832,
+      "object": "review-archive/objects/3d/3dc94ae3ddd1805c3f02af4dca596c47fdabec3e22d1c5233e3d1b73443853ec.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3d/3dc94ae3ddd1805c3f02af4dca596c47fdabec3e22d1c5233e3d1b73443853ec.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn2-lower-ac272f1d13690a61.png": {
+      "sha256": "ac272f1d13690a619b30e776f67d1566c6dfa63cd3231238153062fe3c1bc392",
+      "extension": ".png",
+      "bytes": 48627,
+      "object": "review-archive/objects/ac/ac272f1d13690a619b30e776f67d1566c6dfa63cd3231238153062fe3c1bc392.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ac/ac272f1d13690a619b30e776f67d1566c6dfa63cd3231238153062fe3c1bc392.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn2-lower-mask-c3c0df6d3de3c7ff.png": {
+      "sha256": "c3c0df6d3de3c7ffea068d94ffc38a2b9b0cf460d9af88987a494f8474ffd454",
+      "extension": ".png",
+      "bytes": 722,
+      "object": "review-archive/objects/c3/c3c0df6d3de3c7ffea068d94ffc38a2b9b0cf460d9af88987a494f8474ffd454.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c3/c3c0df6d3de3c7ffea068d94ffc38a2b9b0cf460d9af88987a494f8474ffd454.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn2-poc-v3-36d568f4c136e6f0.png": {
+      "sha256": "36d568f4c136e6f047cf44406f3be6c457d2b665a936f039926cbb1c9a76f226",
+      "extension": ".png",
+      "bytes": 53435,
+      "object": "review-archive/objects/36/36d568f4c136e6f047cf44406f3be6c457d2b665a936f039926cbb1c9a76f226.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/36/36d568f4c136e6f047cf44406f3be6c457d2b665a936f039926cbb1c9a76f226.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn2-torso-e5db49b7e85d2b82.png": {
+      "sha256": "e5db49b7e85d2b82536b7d53761bf1b98da5ec8f15bdc04147f55bedf21dc043",
+      "extension": ".png",
+      "bytes": 44477,
+      "object": "review-archive/objects/e5/e5db49b7e85d2b82536b7d53761bf1b98da5ec8f15bdc04147f55bedf21dc043.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e5/e5db49b7e85d2b82536b7d53761bf1b98da5ec8f15bdc04147f55bedf21dc043.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn3-arm-mask-f46f446e271d259e.png": {
+      "sha256": "f46f446e271d259e17edb383242f224ccc3500e6d8aa5d62caf73567dec8ad7b",
+      "extension": ".png",
+      "bytes": 823,
+      "object": "review-archive/objects/f4/f46f446e271d259e17edb383242f224ccc3500e6d8aa5d62caf73567dec8ad7b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f4/f46f446e271d259e17edb383242f224ccc3500e6d8aa5d62caf73567dec8ad7b.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn3-arms-38bee680590ecf63.png": {
+      "sha256": "38bee680590ecf6361a85c2e5dfff84366c2fef317021d0f7e9d5e76cad15d2d",
+      "extension": ".png",
+      "bytes": 47412,
+      "object": "review-archive/objects/38/38bee680590ecf6361a85c2e5dfff84366c2fef317021d0f7e9d5e76cad15d2d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/38/38bee680590ecf6361a85c2e5dfff84366c2fef317021d0f7e9d5e76cad15d2d.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn3-authority-42b9440fc090d9f7.png": {
+      "sha256": "42b9440fc090d9f7ec6bce6dbc3e73f8efff0ab9cee331d19fc79530bb1f8dfc",
+      "extension": ".png",
+      "bytes": 53017,
+      "object": "review-archive/objects/42/42b9440fc090d9f7ec6bce6dbc3e73f8efff0ab9cee331d19fc79530bb1f8dfc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/42/42b9440fc090d9f7ec6bce6dbc3e73f8efff0ab9cee331d19fc79530bb1f8dfc.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn3-c577c032982e410a.png": {
+      "sha256": "c577c032982e410ad9e1728da139ac13f688a9d4cccfa77d08ac36b0a9747adb",
+      "extension": ".png",
+      "bytes": 62349,
+      "object": "review-archive/objects/c5/c577c032982e410ad9e1728da139ac13f688a9d4cccfa77d08ac36b0a9747adb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c5/c577c032982e410ad9e1728da139ac13f688a9d4cccfa77d08ac36b0a9747adb.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn3-guide-6c71b10a4942b535.png": {
+      "sha256": "6c71b10a4942b53551b1773b28f5a08f5d130deb316b06b99a41d0d7927cbaca",
+      "extension": ".png",
+      "bytes": 823,
+      "object": "review-archive/objects/6c/6c71b10a4942b53551b1773b28f5a08f5d130deb316b06b99a41d0d7927cbaca.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6c/6c71b10a4942b53551b1773b28f5a08f5d130deb316b06b99a41d0d7927cbaca.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn3-lower-c6c3e78839098468.png": {
+      "sha256": "c6c3e78839098468c9b430c8b4d5f2c784b8b7781d262f81b12c7d15d6844516",
+      "extension": ".png",
+      "bytes": 50462,
+      "object": "review-archive/objects/c6/c6c3e78839098468c9b430c8b4d5f2c784b8b7781d262f81b12c7d15d6844516.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c6/c6c3e78839098468c9b430c8b4d5f2c784b8b7781d262f81b12c7d15d6844516.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn3-lower-mask-388008156d9b6121.png": {
+      "sha256": "388008156d9b61212b9373a0bbf2c1b1e7f9e32110b26cfbb2baed513b7839ea",
+      "extension": ".png",
+      "bytes": 657,
+      "object": "review-archive/objects/38/388008156d9b61212b9373a0bbf2c1b1e7f9e32110b26cfbb2baed513b7839ea.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/38/388008156d9b61212b9373a0bbf2c1b1e7f9e32110b26cfbb2baed513b7839ea.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn3-poc-v3-84a5c715447c74cc.png": {
+      "sha256": "84a5c715447c74cc745c22c59fffac6b3a11f8cb840a3fe8fb7594aca87c4923",
+      "extension": ".png",
+      "bytes": 51238,
+      "object": "review-archive/objects/84/84a5c715447c74cc745c22c59fffac6b3a11f8cb840a3fe8fb7594aca87c4923.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/84a5c715447c74cc745c22c59fffac6b3a11f8cb840a3fe8fb7594aca87c4923.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn3-torso-bf770a8937d5200b.png": {
+      "sha256": "bf770a8937d5200bda9bf879063114a05ed12d9dfc105753a64076b84326adff",
+      "extension": ".png",
+      "bytes": 48828,
+      "object": "review-archive/objects/bf/bf770a8937d5200bda9bf879063114a05ed12d9dfc105753a64076b84326adff.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bf/bf770a8937d5200bda9bf879063114a05ed12d9dfc105753a64076b84326adff.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn4-arm-mask-d56612a19aac7991.png": {
+      "sha256": "d56612a19aac799173f66e2b0e542a593aaa337fbe9f370b0004c6f20eb3ecb4",
+      "extension": ".png",
+      "bytes": 821,
+      "object": "review-archive/objects/d5/d56612a19aac799173f66e2b0e542a593aaa337fbe9f370b0004c6f20eb3ecb4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d5/d56612a19aac799173f66e2b0e542a593aaa337fbe9f370b0004c6f20eb3ecb4.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn4-arms-bbd61ffbbd943734.png": {
+      "sha256": "bbd61ffbbd9437342b0a35f27a9a797ccf415b99ba8c6d56cb7e9943076ee084",
+      "extension": ".png",
+      "bytes": 44845,
+      "object": "review-archive/objects/bb/bbd61ffbbd9437342b0a35f27a9a797ccf415b99ba8c6d56cb7e9943076ee084.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bb/bbd61ffbbd9437342b0a35f27a9a797ccf415b99ba8c6d56cb7e9943076ee084.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn4-authority-5d76fbdbdabaa4e1.png": {
+      "sha256": "5d76fbdbdabaa4e1d990b69f9de3f079b4ad06554b6433ea5d82fb3e76e6e05a",
+      "extension": ".png",
+      "bytes": 52843,
+      "object": "review-archive/objects/5d/5d76fbdbdabaa4e1d990b69f9de3f079b4ad06554b6433ea5d82fb3e76e6e05a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5d/5d76fbdbdabaa4e1d990b69f9de3f079b4ad06554b6433ea5d82fb3e76e6e05a.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn4-d6404d211270f2b2.png": {
+      "sha256": "d6404d211270f2b29d0c4fd071ed4e7cf2202c2b809a9b961c90fe773d93105b",
+      "extension": ".png",
+      "bytes": 59262,
+      "object": "review-archive/objects/d6/d6404d211270f2b29d0c4fd071ed4e7cf2202c2b809a9b961c90fe773d93105b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d6/d6404d211270f2b29d0c4fd071ed4e7cf2202c2b809a9b961c90fe773d93105b.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn4-guide-035994a1b8652b1b.png": {
+      "sha256": "035994a1b8652b1b6c93b3d9d4d04731b014b2d27bccf9f73c8c3606d2686bd0",
+      "extension": ".png",
+      "bytes": 772,
+      "object": "review-archive/objects/03/035994a1b8652b1b6c93b3d9d4d04731b014b2d27bccf9f73c8c3606d2686bd0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/03/035994a1b8652b1b6c93b3d9d4d04731b014b2d27bccf9f73c8c3606d2686bd0.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn4-lower-28a72936db8e1c62.png": {
+      "sha256": "28a72936db8e1c620c9819dd89ae86554296a22148aa7bf76d220aec5120cb80",
+      "extension": ".png",
+      "bytes": 50298,
+      "object": "review-archive/objects/28/28a72936db8e1c620c9819dd89ae86554296a22148aa7bf76d220aec5120cb80.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/28/28a72936db8e1c620c9819dd89ae86554296a22148aa7bf76d220aec5120cb80.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn4-lower-mask-6ad3683a04446041.png": {
+      "sha256": "6ad3683a04446041eb7695c78a5c1d85601edaf8f466b3b4050d42f64f7e87ae",
+      "extension": ".png",
+      "bytes": 679,
+      "object": "review-archive/objects/6a/6ad3683a04446041eb7695c78a5c1d85601edaf8f466b3b4050d42f64f7e87ae.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6a/6ad3683a04446041eb7695c78a5c1d85601edaf8f466b3b4050d42f64f7e87ae.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn4-poc-v3-0d345e5e63990e01.png": {
+      "sha256": "0d345e5e63990e013bde57bfd3809e2f06d0de52e933b2568411e2c9c135b25e",
+      "extension": ".png",
+      "bytes": 51285,
+      "object": "review-archive/objects/0d/0d345e5e63990e013bde57bfd3809e2f06d0de52e933b2568411e2c9c135b25e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0d/0d345e5e63990e013bde57bfd3809e2f06d0de52e933b2568411e2c9c135b25e.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn4-torso-a0591e4d445f1d4a.png": {
+      "sha256": "a0591e4d445f1d4ac46a61b926a723f5722a50cf62f0ae647fd4e864b8d7e68e",
+      "extension": ".png",
+      "bytes": 46127,
+      "object": "review-archive/objects/a0/a0591e4d445f1d4ac46a61b926a723f5722a50cf62f0ae647fd4e864b8d7e68e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a0/a0591e4d445f1d4ac46a61b926a723f5722a50cf62f0ae647fd4e864b8d7e68e.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn5-arm-mask-4bc136f036ba0b6e.png": {
+      "sha256": "4bc136f036ba0b6ebae2886061d12a8cb0ac0a7bfc6b66bce42d3ae7b9ed1c9b",
+      "extension": ".png",
+      "bytes": 875,
+      "object": "review-archive/objects/4b/4bc136f036ba0b6ebae2886061d12a8cb0ac0a7bfc6b66bce42d3ae7b9ed1c9b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4b/4bc136f036ba0b6ebae2886061d12a8cb0ac0a7bfc6b66bce42d3ae7b9ed1c9b.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn5-arms-656d11a1c835c4eb.png": {
+      "sha256": "656d11a1c835c4eb85b978371e05fe2ca26b11497599674b6ee6fd40f92ee021",
+      "extension": ".png",
+      "bytes": 43311,
+      "object": "review-archive/objects/65/656d11a1c835c4eb85b978371e05fe2ca26b11497599674b6ee6fd40f92ee021.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/65/656d11a1c835c4eb85b978371e05fe2ca26b11497599674b6ee6fd40f92ee021.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn5-authority-79b623ffe497e170.png": {
+      "sha256": "79b623ffe497e170843982eb1d01020317d225cc6847278d197cf05b7ac6b3a4",
+      "extension": ".png",
+      "bytes": 52552,
+      "object": "review-archive/objects/79/79b623ffe497e170843982eb1d01020317d225cc6847278d197cf05b7ac6b3a4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/79/79b623ffe497e170843982eb1d01020317d225cc6847278d197cf05b7ac6b3a4.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn5-c40062004bf56c11.png": {
+      "sha256": "c40062004bf56c1139112eebe1371975f34fb5f6d419b8b1b2705128ce6aae71",
+      "extension": ".png",
+      "bytes": 58397,
+      "object": "review-archive/objects/c4/c40062004bf56c1139112eebe1371975f34fb5f6d419b8b1b2705128ce6aae71.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c4/c40062004bf56c1139112eebe1371975f34fb5f6d419b8b1b2705128ce6aae71.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn5-guide-645c12ae1acdda82.png": {
+      "sha256": "645c12ae1acdda822f2289b8f67565697c009fff4b28a40c294e7aa6623667ea",
+      "extension": ".png",
+      "bytes": 785,
+      "object": "review-archive/objects/64/645c12ae1acdda822f2289b8f67565697c009fff4b28a40c294e7aa6623667ea.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/64/645c12ae1acdda822f2289b8f67565697c009fff4b28a40c294e7aa6623667ea.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn5-lower-3351b3e3b86e6dd3.png": {
+      "sha256": "3351b3e3b86e6dd39dddfefcdfeb481de983700797696e8b63bb3e35ffb2f9a4",
+      "extension": ".png",
+      "bytes": 50170,
+      "object": "review-archive/objects/33/3351b3e3b86e6dd39dddfefcdfeb481de983700797696e8b63bb3e35ffb2f9a4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/33/3351b3e3b86e6dd39dddfefcdfeb481de983700797696e8b63bb3e35ffb2f9a4.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn5-lower-mask-7712c06c97287568.png": {
+      "sha256": "7712c06c97287568266aabfcfdce602f5d07aec396b40fca5b013851a433c743",
+      "extension": ".png",
+      "bytes": 671,
+      "object": "review-archive/objects/77/7712c06c97287568266aabfcfdce602f5d07aec396b40fca5b013851a433c743.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/77/7712c06c97287568266aabfcfdce602f5d07aec396b40fca5b013851a433c743.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn5-poc-v3-bf3c753d1a1ff927.png": {
+      "sha256": "bf3c753d1a1ff9270f5f0898ecc1259c1af63a01e17b8c8828f0014610b49576",
+      "extension": ".png",
+      "bytes": 50420,
+      "object": "review-archive/objects/bf/bf3c753d1a1ff9270f5f0898ecc1259c1af63a01e17b8c8828f0014610b49576.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bf/bf3c753d1a1ff9270f5f0898ecc1259c1af63a01e17b8c8828f0014610b49576.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn5-torso-a5ef835659c6819f.png": {
+      "sha256": "a5ef835659c6819f5e51d37957112e286e09ad56459f1dcbb3075c1b9ccfaa89",
+      "extension": ".png",
+      "bytes": 44943,
+      "object": "review-archive/objects/a5/a5ef835659c6819f5e51d37957112e286e09ad56459f1dcbb3075c1b9ccfaa89.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a5/a5ef835659c6819f5e51d37957112e286e09ad56459f1dcbb3075c1b9ccfaa89.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn6-51f494279a3e68aa.png": {
+      "sha256": "51f494279a3e68aa721ae5a48ec58f4140ee1dc7a7ab9694abc28bd4f918ec00",
+      "extension": ".png",
+      "bytes": 61112,
+      "object": "review-archive/objects/51/51f494279a3e68aa721ae5a48ec58f4140ee1dc7a7ab9694abc28bd4f918ec00.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/51/51f494279a3e68aa721ae5a48ec58f4140ee1dc7a7ab9694abc28bd4f918ec00.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn6-arm-mask-804720589a0bd89d.png": {
+      "sha256": "804720589a0bd89d69d4b16245b2860e5f055ef2f10dd75ed44434e361a1ab37",
+      "extension": ".png",
+      "bytes": 842,
+      "object": "review-archive/objects/80/804720589a0bd89d69d4b16245b2860e5f055ef2f10dd75ed44434e361a1ab37.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/80/804720589a0bd89d69d4b16245b2860e5f055ef2f10dd75ed44434e361a1ab37.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn6-arms-b3a7ee9daacadc3c.png": {
+      "sha256": "b3a7ee9daacadc3c56ee59af719962a672b3cb143784d98c78985b874ffbe041",
+      "extension": ".png",
+      "bytes": 45257,
+      "object": "review-archive/objects/b3/b3a7ee9daacadc3c56ee59af719962a672b3cb143784d98c78985b874ffbe041.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b3a7ee9daacadc3c56ee59af719962a672b3cb143784d98c78985b874ffbe041.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn6-authority-b41dda7b3f6f8282.png": {
+      "sha256": "b41dda7b3f6f8282a4a73b56cf3fb653de651c099837c5ae01a840c75a5e4254",
+      "extension": ".png",
+      "bytes": 55062,
+      "object": "review-archive/objects/b4/b41dda7b3f6f8282a4a73b56cf3fb653de651c099837c5ae01a840c75a5e4254.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b4/b41dda7b3f6f8282a4a73b56cf3fb653de651c099837c5ae01a840c75a5e4254.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn6-guide-a513671dcd618a73.png": {
+      "sha256": "a513671dcd618a73397534624938f151112dbb04ec741f5681d861f208e7ce34",
+      "extension": ".png",
+      "bytes": 875,
+      "object": "review-archive/objects/a5/a513671dcd618a73397534624938f151112dbb04ec741f5681d861f208e7ce34.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a5/a513671dcd618a73397534624938f151112dbb04ec741f5681d861f208e7ce34.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn6-lower-57fbccb1a6fb73fb.png": {
+      "sha256": "57fbccb1a6fb73fb3e8cbf6411dfde83a08f0cb7e6eb3bcb464225c16c642f2b",
+      "extension": ".png",
+      "bytes": 52756,
+      "object": "review-archive/objects/57/57fbccb1a6fb73fb3e8cbf6411dfde83a08f0cb7e6eb3bcb464225c16c642f2b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/57/57fbccb1a6fb73fb3e8cbf6411dfde83a08f0cb7e6eb3bcb464225c16c642f2b.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn6-lower-mask-b96e53f16c158950.png": {
+      "sha256": "b96e53f16c158950fa438eae705728a99add78d1c269135ea0a3f9a137ba3a07",
+      "extension": ".png",
+      "bytes": 813,
+      "object": "review-archive/objects/b9/b96e53f16c158950fa438eae705728a99add78d1c269135ea0a3f9a137ba3a07.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b9/b96e53f16c158950fa438eae705728a99add78d1c269135ea0a3f9a137ba3a07.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn6-poc-v3-79bc7b0dafd8914c.png": {
+      "sha256": "79bc7b0dafd8914caa1f2a1badb209c1b122d2c4b1c9c98b08eecbbd2d7dfd8a",
+      "extension": ".png",
+      "bytes": 52135,
+      "object": "review-archive/objects/79/79bc7b0dafd8914caa1f2a1badb209c1b122d2c4b1c9c98b08eecbbd2d7dfd8a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/79/79bc7b0dafd8914caa1f2a1badb209c1b122d2c4b1c9c98b08eecbbd2d7dfd8a.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn6-torso-eca5f8f2546b9a6b.png": {
+      "sha256": "eca5f8f2546b9a6bafdb0613e27d579c492ac28494f3d7c118a58b41fac68fc1",
+      "extension": ".png",
+      "bytes": 46875,
+      "object": "review-archive/objects/ec/eca5f8f2546b9a6bafdb0613e27d579c492ac28494f3d7c118a58b41fac68fc1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ec/eca5f8f2546b9a6bafdb0613e27d579c492ac28494f3d7c118a58b41fac68fc1.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn7-0a098b6eb0d83a1a.png": {
+      "sha256": "0a098b6eb0d83a1a14383c1869d0e780f775895b2aeff33ff5bd2462a24e01cd",
+      "extension": ".png",
+      "bytes": 56563,
+      "object": "review-archive/objects/0a/0a098b6eb0d83a1a14383c1869d0e780f775895b2aeff33ff5bd2462a24e01cd.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0a/0a098b6eb0d83a1a14383c1869d0e780f775895b2aeff33ff5bd2462a24e01cd.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn7-arm-mask-878acf39b8319d08.png": {
+      "sha256": "878acf39b8319d080604a04192310c78f8daaf5837ff7f1d128a834cebd54652",
+      "extension": ".png",
+      "bytes": 1004,
+      "object": "review-archive/objects/87/878acf39b8319d080604a04192310c78f8daaf5837ff7f1d128a834cebd54652.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/87/878acf39b8319d080604a04192310c78f8daaf5837ff7f1d128a834cebd54652.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn7-arms-370621e1b194e421.png": {
+      "sha256": "370621e1b194e42138ec43511b5ae117967de94ecaa4743b5e5436d66c37dca1",
+      "extension": ".png",
+      "bytes": 38675,
+      "object": "review-archive/objects/37/370621e1b194e42138ec43511b5ae117967de94ecaa4743b5e5436d66c37dca1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/37/370621e1b194e42138ec43511b5ae117967de94ecaa4743b5e5436d66c37dca1.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn7-authority-32632ff1bd7bf8fe.png": {
+      "sha256": "32632ff1bd7bf8fe8ef8e0935e6ff1b1e96943eabe200b0f6717ed9739227af9",
+      "extension": ".png",
+      "bytes": 59691,
+      "object": "review-archive/objects/32/32632ff1bd7bf8fe8ef8e0935e6ff1b1e96943eabe200b0f6717ed9739227af9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/32/32632ff1bd7bf8fe8ef8e0935e6ff1b1e96943eabe200b0f6717ed9739227af9.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn7-guide-2bb0b69b24da1186.png": {
+      "sha256": "2bb0b69b24da1186adf6eeab0d22c8037ed81cb259f599beeb52574f27bf958e",
+      "extension": ".png",
+      "bytes": 834,
+      "object": "review-archive/objects/2b/2bb0b69b24da1186adf6eeab0d22c8037ed81cb259f599beeb52574f27bf958e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2bb0b69b24da1186adf6eeab0d22c8037ed81cb259f599beeb52574f27bf958e.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn7-lower-187196dba0835a11.png": {
+      "sha256": "187196dba0835a1176a1eb1d28564cc6481d9711e4bcefae21d031c110ad4646",
+      "extension": ".png",
+      "bytes": 57768,
+      "object": "review-archive/objects/18/187196dba0835a1176a1eb1d28564cc6481d9711e4bcefae21d031c110ad4646.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/18/187196dba0835a1176a1eb1d28564cc6481d9711e4bcefae21d031c110ad4646.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn7-lower-mask-773af1dd0a8f1c76.png": {
+      "sha256": "773af1dd0a8f1c76e34f51f9f842d15a92f3d9948e275c393bb057174c89844d",
+      "extension": ".png",
+      "bytes": 582,
+      "object": "review-archive/objects/77/773af1dd0a8f1c76e34f51f9f842d15a92f3d9948e275c393bb057174c89844d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/77/773af1dd0a8f1c76e34f51f9f842d15a92f3d9948e275c393bb057174c89844d.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn7-poc-v3-f8a6f10c5aa54860.png": {
+      "sha256": "f8a6f10c5aa54860d200290a92c8400653ef7e46fc2d8183d560f6ff82d14ae9",
+      "extension": ".png",
+      "bytes": 50322,
+      "object": "review-archive/objects/f8/f8a6f10c5aa54860d200290a92c8400653ef7e46fc2d8183d560f6ff82d14ae9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f8/f8a6f10c5aa54860d200290a92c8400653ef7e46fc2d8183d560f6ff82d14ae9.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn7-torso-40b29ad2cdc8d321.png": {
+      "sha256": "40b29ad2cdc8d3218d59a017ff469c1635d5e37ba378e612f6bc96e0eff203cc",
+      "extension": ".png",
+      "bytes": 38919,
+      "object": "review-archive/objects/40/40b29ad2cdc8d3218d59a017ff469c1635d5e37ba378e612f6bc96e0eff203cc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/40/40b29ad2cdc8d3218d59a017ff469c1635d5e37ba378e612f6bc96e0eff203cc.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn8-arm-mask-c7ed53ffbc4a410b.png": {
+      "sha256": "c7ed53ffbc4a410ba65048ae92a133ea6146d5a1f5dda9c32f4a4b324a5f2e74",
+      "extension": ".png",
+      "bytes": 1043,
+      "object": "review-archive/objects/c7/c7ed53ffbc4a410ba65048ae92a133ea6146d5a1f5dda9c32f4a4b324a5f2e74.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c7/c7ed53ffbc4a410ba65048ae92a133ea6146d5a1f5dda9c32f4a4b324a5f2e74.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn8-arms-dafbe0d9c42fc2a8.png": {
+      "sha256": "dafbe0d9c42fc2a8c8657c65f97c65d76d945aace0e99a85735623ea793c4d00",
+      "extension": ".png",
+      "bytes": 35385,
+      "object": "review-archive/objects/da/dafbe0d9c42fc2a8c8657c65f97c65d76d945aace0e99a85735623ea793c4d00.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/da/dafbe0d9c42fc2a8c8657c65f97c65d76d945aace0e99a85735623ea793c4d00.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn8-authority-09140003f4ddbfab.png": {
+      "sha256": "09140003f4ddbfab6127dbddc51904037ef5fd2a0727bae98645601c8ed98b5e",
+      "extension": ".png",
+      "bytes": 56618,
+      "object": "review-archive/objects/09/09140003f4ddbfab6127dbddc51904037ef5fd2a0727bae98645601c8ed98b5e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/09/09140003f4ddbfab6127dbddc51904037ef5fd2a0727bae98645601c8ed98b5e.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn8-e8944a9f3d27dc30.png": {
+      "sha256": "e8944a9f3d27dc3070461e85b04b205b26a8016d334451057c1dc60a5a66efe6",
+      "extension": ".png",
+      "bytes": 51251,
+      "object": "review-archive/objects/e8/e8944a9f3d27dc3070461e85b04b205b26a8016d334451057c1dc60a5a66efe6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e8/e8944a9f3d27dc3070461e85b04b205b26a8016d334451057c1dc60a5a66efe6.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn8-guide-58f7e144c6e9b40a.png": {
+      "sha256": "58f7e144c6e9b40a83534346a35523dd97ea15d74810165db5b2836e2c91321d",
+      "extension": ".png",
+      "bytes": 716,
+      "object": "review-archive/objects/58/58f7e144c6e9b40a83534346a35523dd97ea15d74810165db5b2836e2c91321d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/58/58f7e144c6e9b40a83534346a35523dd97ea15d74810165db5b2836e2c91321d.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn8-lower-d888289a3c523105.png": {
+      "sha256": "d888289a3c5231053ba3969ba2f256c3157fcfb650a3a685caf6e56586bf44ad",
+      "extension": ".png",
+      "bytes": 54725,
+      "object": "review-archive/objects/d8/d888289a3c5231053ba3969ba2f256c3157fcfb650a3a685caf6e56586bf44ad.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d8/d888289a3c5231053ba3969ba2f256c3157fcfb650a3a685caf6e56586bf44ad.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn8-lower-mask-b98ed6845bb2f22f.png": {
+      "sha256": "b98ed6845bb2f22fad5fcd3c5192ffd7cf2c98acf648b100714b3ffd3dd9c209",
+      "extension": ".png",
+      "bytes": 557,
+      "object": "review-archive/objects/b9/b98ed6845bb2f22fad5fcd3c5192ffd7cf2c98acf648b100714b3ffd3dd9c209.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b9/b98ed6845bb2f22fad5fcd3c5192ffd7cf2c98acf648b100714b3ffd3dd9c209.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn8-poc-v3-ab5b5190166092c9.png": {
+      "sha256": "ab5b5190166092c9da1c336ccc6d052a09763bec3024c668e80826201e8587d1",
+      "extension": ".png",
+      "bytes": 48475,
+      "object": "review-archive/objects/ab/ab5b5190166092c9da1c336ccc6d052a09763bec3024c668e80826201e8587d1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ab/ab5b5190166092c9da1c336ccc6d052a09763bec3024c668e80826201e8587d1.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn8-torso-8c5a48af2267d4b5.png": {
+      "sha256": "8c5a48af2267d4b5714b650096f9f9db1618db84f9c7787e13da0225e8044d04",
+      "extension": ".png",
+      "bytes": 35591,
+      "object": "review-archive/objects/8c/8c5a48af2267d4b5714b650096f9f9db1618db84f9c7787e13da0225e8044d04.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8c/8c5a48af2267d4b5714b650096f9f9db1618db84f9c7787e13da0225e8044d04.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn9-arm-mask-3f3bac8ef4b44e72.png": {
+      "sha256": "3f3bac8ef4b44e728de84ddbb9d2fd782bb4f8daf0e86b900bda162e41b1deba",
+      "extension": ".png",
+      "bytes": 1099,
+      "object": "review-archive/objects/3f/3f3bac8ef4b44e728de84ddbb9d2fd782bb4f8daf0e86b900bda162e41b1deba.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3f/3f3bac8ef4b44e728de84ddbb9d2fd782bb4f8daf0e86b900bda162e41b1deba.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn9-arms-1f28bca38d8e83cf.png": {
+      "sha256": "1f28bca38d8e83cfe412dc93d2ab9d79e90199ab87524652422fe52ab8226c9f",
+      "extension": ".png",
+      "bytes": 35897,
+      "object": "review-archive/objects/1f/1f28bca38d8e83cfe412dc93d2ab9d79e90199ab87524652422fe52ab8226c9f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1f/1f28bca38d8e83cfe412dc93d2ab9d79e90199ab87524652422fe52ab8226c9f.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn9-authority-1e3136e54b443bbd.png": {
+      "sha256": "1e3136e54b443bbdc2c56a526afe26e365948b8a4d739c3780e58a37dca68c5f",
+      "extension": ".png",
+      "bytes": 61775,
+      "object": "review-archive/objects/1e/1e3136e54b443bbdc2c56a526afe26e365948b8a4d739c3780e58a37dca68c5f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1e/1e3136e54b443bbdc2c56a526afe26e365948b8a4d739c3780e58a37dca68c5f.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn9-e570caf2796d9317.png": {
+      "sha256": "e570caf2796d93170a0b592565078f9bc457ee4ffe8fb70bf317cbaa51a76d0b",
+      "extension": ".png",
+      "bytes": 51766,
+      "object": "review-archive/objects/e5/e570caf2796d93170a0b592565078f9bc457ee4ffe8fb70bf317cbaa51a76d0b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e5/e570caf2796d93170a0b592565078f9bc457ee4ffe8fb70bf317cbaa51a76d0b.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn9-guide-630ab87f554d3392.png": {
+      "sha256": "630ab87f554d3392392f20285a67cf6887f82225c53236741b8c07f23cfbccbc",
+      "extension": ".png",
+      "bytes": 750,
+      "object": "review-archive/objects/63/630ab87f554d3392392f20285a67cf6887f82225c53236741b8c07f23cfbccbc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/63/630ab87f554d3392392f20285a67cf6887f82225c53236741b8c07f23cfbccbc.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn9-lower-cfe5d2a95963d4cb.png": {
+      "sha256": "cfe5d2a95963d4cbce25c4317faecd2920591fc503b55959b6fbc5128fe29c29",
+      "extension": ".png",
+      "bytes": 59804,
+      "object": "review-archive/objects/cf/cfe5d2a95963d4cbce25c4317faecd2920591fc503b55959b6fbc5128fe29c29.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cfe5d2a95963d4cbce25c4317faecd2920591fc503b55959b6fbc5128fe29c29.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn9-lower-mask-bb696aa9e7148061.png": {
+      "sha256": "bb696aa9e714806141a513bd99839dcfa75acb7d22ebd35cfae22c5c32e8c2d8",
+      "extension": ".png",
+      "bytes": 519,
+      "object": "review-archive/objects/bb/bb696aa9e714806141a513bd99839dcfa75acb7d22ebd35cfae22c5c32e8c2d8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bb/bb696aa9e714806141a513bd99839dcfa75acb7d22ebd35cfae22c5c32e8c2d8.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn9-poc-v3-fc6cfa4e48298138.png": {
+      "sha256": "fc6cfa4e48298138bf8229678e1684277110a25575e036bae1de4e052eb9cc36",
+      "extension": ".png",
+      "bytes": 48927,
+      "object": "review-archive/objects/fc/fc6cfa4e48298138bf8229678e1684277110a25575e036bae1de4e052eb9cc36.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fc/fc6cfa4e48298138bf8229678e1684277110a25575e036bae1de4e052eb9cc36.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/turn9-torso-fcaf3a2e914adcca.png": {
+      "sha256": "fcaf3a2e914adccaef784de9fa27eb68eb3656bc3c7c17c26d52c9ccea254e5a",
+      "extension": ".png",
+      "bytes": 36207,
+      "object": "review-archive/objects/fc/fcaf3a2e914adccaef784de9fa27eb68eb3656bc3c7c17c26d52c9ccea254e5a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fc/fcaf3a2e914adccaef784de9fa27eb68eb3656bc3c7c17c26d52c9ccea254e5a.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk-contact-sheet-943b4a3320ef5c9d.png": {
+      "sha256": "943b4a3320ef5c9d113844a9c2d61f0fe821b59c638d79629fa912685c7f3adf",
+      "extension": ".png",
+      "bytes": 458218,
+      "object": "review-archive/objects/94/943b4a3320ef5c9d113844a9c2d61f0fe821b59c638d79629fa912685c7f3adf.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/94/943b4a3320ef5c9d113844a9c2d61f0fe821b59c638d79629fa912685c7f3adf.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk1-arm-mask-63d341e22cd66170.png": {
+      "sha256": "63d341e22cd66170d16617e885806f0529b69cef62c87ce10558e38bda3c302f",
+      "extension": ".png",
+      "bytes": 810,
+      "object": "review-archive/objects/63/63d341e22cd66170d16617e885806f0529b69cef62c87ce10558e38bda3c302f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/63/63d341e22cd66170d16617e885806f0529b69cef62c87ce10558e38bda3c302f.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk1-arms-f017acbd608b03f0.png": {
+      "sha256": "f017acbd608b03f069911a7f1a3d24a63c50b2ed482ccd5eb377e42bfb968df9",
+      "extension": ".png",
+      "bytes": 47153,
+      "object": "review-archive/objects/f0/f017acbd608b03f069911a7f1a3d24a63c50b2ed482ccd5eb377e42bfb968df9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f0/f017acbd608b03f069911a7f1a3d24a63c50b2ed482ccd5eb377e42bfb968df9.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk1-authority-6c5ed55b484ff556.png": {
+      "sha256": "6c5ed55b484ff55697285918096f0c9c52559f9f3b4736c25047b625a16fee34",
+      "extension": ".png",
+      "bytes": 72523,
+      "object": "review-archive/objects/6c/6c5ed55b484ff55697285918096f0c9c52559f9f3b4736c25047b625a16fee34.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6c/6c5ed55b484ff55697285918096f0c9c52559f9f3b4736c25047b625a16fee34.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk1-cde30baa972b829d.png": {
+      "sha256": "cde30baa972b829dfce686c3f52ef9dc368bdfeedd896ae3f77f168f5ffe1d78",
+      "extension": ".png",
+      "bytes": 75047,
+      "object": "review-archive/objects/cd/cde30baa972b829dfce686c3f52ef9dc368bdfeedd896ae3f77f168f5ffe1d78.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cd/cde30baa972b829dfce686c3f52ef9dc368bdfeedd896ae3f77f168f5ffe1d78.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk1-fill-4dc08c0df9a6f28d.png": {
+      "sha256": "4dc08c0df9a6f28d184a3ad7f296556847abf2e3d0e1df0f9d0a6a20d788d2ca",
+      "extension": ".png",
+      "bytes": 556,
+      "object": "review-archive/objects/4d/4dc08c0df9a6f28d184a3ad7f296556847abf2e3d0e1df0f9d0a6a20d788d2ca.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4d/4dc08c0df9a6f28d184a3ad7f296556847abf2e3d0e1df0f9d0a6a20d788d2ca.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk1-guide-0362b5e2f0266204.png": {
+      "sha256": "0362b5e2f0266204016952ee263ceafd366462e758c288f99b8623373c5e4f5a",
+      "extension": ".png",
+      "bytes": 728,
+      "object": "review-archive/objects/03/0362b5e2f0266204016952ee263ceafd366462e758c288f99b8623373c5e4f5a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/03/0362b5e2f0266204016952ee263ceafd366462e758c288f99b8623373c5e4f5a.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk1-lower-16c18a94adde843a.png": {
+      "sha256": "16c18a94adde843aacaee1b23510dce0bf0018669948916ad2818cad02679b7a",
+      "extension": ".png",
+      "bytes": 69774,
+      "object": "review-archive/objects/16/16c18a94adde843aacaee1b23510dce0bf0018669948916ad2818cad02679b7a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/16/16c18a94adde843aacaee1b23510dce0bf0018669948916ad2818cad02679b7a.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk1-lower-mask-8ebbd983eddc75c4.png": {
+      "sha256": "8ebbd983eddc75c4c24d3205853c45b54274cfb6df778291f2d54a233ce87ae4",
+      "extension": ".png",
+      "bytes": 1070,
+      "object": "review-archive/objects/8e/8ebbd983eddc75c4c24d3205853c45b54274cfb6df778291f2d54a233ce87ae4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8e/8ebbd983eddc75c4c24d3205853c45b54274cfb6df778291f2d54a233ce87ae4.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk1-poc-v3-b8a50552915ad229.png": {
+      "sha256": "b8a50552915ad229bc5a32884a126715d5b1df350e58b941f751d4bbd813a26f",
+      "extension": ".png",
+      "bytes": 70706,
+      "object": "review-archive/objects/b8/b8a50552915ad229bc5a32884a126715d5b1df350e58b941f751d4bbd813a26f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b8/b8a50552915ad229bc5a32884a126715d5b1df350e58b941f751d4bbd813a26f.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk1-torso-53f493986ebe9ae7.png": {
+      "sha256": "53f493986ebe9ae7c2dc08992c5bb116b1280a319c6082fc0591a5a87ca88b7d",
+      "extension": ".png",
+      "bytes": 48442,
+      "object": "review-archive/objects/53/53f493986ebe9ae7c2dc08992c5bb116b1280a319c6082fc0591a5a87ca88b7d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/53/53f493986ebe9ae7c2dc08992c5bb116b1280a319c6082fc0591a5a87ca88b7d.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk2-3a008423e7ead8c4.png": {
+      "sha256": "3a008423e7ead8c4ed4e488133166bc7314b07a86b4b337f1bdd2f1c38007f11",
+      "extension": ".png",
+      "bytes": 64828,
+      "object": "review-archive/objects/3a/3a008423e7ead8c4ed4e488133166bc7314b07a86b4b337f1bdd2f1c38007f11.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3a/3a008423e7ead8c4ed4e488133166bc7314b07a86b4b337f1bdd2f1c38007f11.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk2-arm-mask-2886b2685848aa33.png": {
+      "sha256": "2886b2685848aa33deba598c260b3492b4111d9b39205931298da74f1f80e6a5",
+      "extension": ".png",
+      "bytes": 804,
+      "object": "review-archive/objects/28/2886b2685848aa33deba598c260b3492b4111d9b39205931298da74f1f80e6a5.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/28/2886b2685848aa33deba598c260b3492b4111d9b39205931298da74f1f80e6a5.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk2-arms-46df53952a391dde.png": {
+      "sha256": "46df53952a391dde40446d8bb65268299c9bc01e0cb74b14cd1d7c7fb70e4145",
+      "extension": ".png",
+      "bytes": 47061,
+      "object": "review-archive/objects/46/46df53952a391dde40446d8bb65268299c9bc01e0cb74b14cd1d7c7fb70e4145.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/46/46df53952a391dde40446d8bb65268299c9bc01e0cb74b14cd1d7c7fb70e4145.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk2-authority-635a0e713ed910fc.png": {
+      "sha256": "635a0e713ed910fc1b2214ff0b0e253163a3aa5ceb961b157dc3ea23f5a01122",
+      "extension": ".png",
+      "bytes": 61013,
+      "object": "review-archive/objects/63/635a0e713ed910fc1b2214ff0b0e253163a3aa5ceb961b157dc3ea23f5a01122.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/63/635a0e713ed910fc1b2214ff0b0e253163a3aa5ceb961b157dc3ea23f5a01122.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk2-guide-eaec14fb4e1f5355.png": {
+      "sha256": "eaec14fb4e1f53552f349b952f846c09b92ab2c8c90ecb0eded74ba05a2a1c85",
+      "extension": ".png",
+      "bytes": 836,
+      "object": "review-archive/objects/ea/eaec14fb4e1f53552f349b952f846c09b92ab2c8c90ecb0eded74ba05a2a1c85.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ea/eaec14fb4e1f53552f349b952f846c09b92ab2c8c90ecb0eded74ba05a2a1c85.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk2-lower-76476e227f5c3288.png": {
+      "sha256": "76476e227f5c32887654646a3997bcf8f2a4f9bb4c8d5c8a7d66b679d9fcc325",
+      "extension": ".png",
+      "bytes": 58308,
+      "object": "review-archive/objects/76/76476e227f5c32887654646a3997bcf8f2a4f9bb4c8d5c8a7d66b679d9fcc325.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/76/76476e227f5c32887654646a3997bcf8f2a4f9bb4c8d5c8a7d66b679d9fcc325.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk2-lower-mask-90869c737b8adb03.png": {
+      "sha256": "90869c737b8adb03cbae0575c593aeb418c1062304f06340ac2f0fb61c2759bc",
+      "extension": ".png",
+      "bytes": 783,
+      "object": "review-archive/objects/90/90869c737b8adb03cbae0575c593aeb418c1062304f06340ac2f0fb61c2759bc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/90/90869c737b8adb03cbae0575c593aeb418c1062304f06340ac2f0fb61c2759bc.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk2-poc-v3-191c5ab6ba786fff.png": {
+      "sha256": "191c5ab6ba786fffc51cc42c21e59ad19ea2bd1a59083b7076067674920de86c",
+      "extension": ".png",
+      "bytes": 62487,
+      "object": "review-archive/objects/19/191c5ab6ba786fffc51cc42c21e59ad19ea2bd1a59083b7076067674920de86c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/19/191c5ab6ba786fffc51cc42c21e59ad19ea2bd1a59083b7076067674920de86c.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk2-torso-e59fb732015ffcc6.png": {
+      "sha256": "e59fb732015ffcc6dd54b69ebaa894b6d79116ec5fcda2dd737950dc8076be62",
+      "extension": ".png",
+      "bytes": 48484,
+      "object": "review-archive/objects/e5/e59fb732015ffcc6dd54b69ebaa894b6d79116ec5fcda2dd737950dc8076be62.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e5/e59fb732015ffcc6dd54b69ebaa894b6d79116ec5fcda2dd737950dc8076be62.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk3-984cb2c48031952a.png": {
+      "sha256": "984cb2c48031952a4d1313340418ed6a12d65a9f49e82781c59ca8f04031e02d",
+      "extension": ".png",
+      "bytes": 52857,
+      "object": "review-archive/objects/98/984cb2c48031952a4d1313340418ed6a12d65a9f49e82781c59ca8f04031e02d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/984cb2c48031952a4d1313340418ed6a12d65a9f49e82781c59ca8f04031e02d.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk3-arm-mask-ad04c6753af91eed.png": {
+      "sha256": "ad04c6753af91eed5d0f56aeac8b391d97b90714e9823d17ef53afae49aeb179",
+      "extension": ".png",
+      "bytes": 716,
+      "object": "review-archive/objects/ad/ad04c6753af91eed5d0f56aeac8b391d97b90714e9823d17ef53afae49aeb179.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ad/ad04c6753af91eed5d0f56aeac8b391d97b90714e9823d17ef53afae49aeb179.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk3-arms-6c052fee72453a80.png": {
+      "sha256": "6c052fee72453a80782b6dfc541e4c1695ece9b4bcd9877fa5a85ebc4675aaa1",
+      "extension": ".png",
+      "bytes": 34209,
+      "object": "review-archive/objects/6c/6c052fee72453a80782b6dfc541e4c1695ece9b4bcd9877fa5a85ebc4675aaa1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6c/6c052fee72453a80782b6dfc541e4c1695ece9b4bcd9877fa5a85ebc4675aaa1.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk3-authority-af54715283901a90.png": {
+      "sha256": "af54715283901a905f9aaa34098d37563c5fdcbcd58e8ca800dff052889ab343",
+      "extension": ".png",
+      "bytes": 55120,
+      "object": "review-archive/objects/af/af54715283901a905f9aaa34098d37563c5fdcbcd58e8ca800dff052889ab343.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/af/af54715283901a905f9aaa34098d37563c5fdcbcd58e8ca800dff052889ab343.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk3-fill-952f7c7baf994167.png": {
+      "sha256": "952f7c7baf994167384db198ce1cdd755eaa87eed3fd5ab7cfb700b2d567d14f",
+      "extension": ".png",
+      "bytes": 800,
+      "object": "review-archive/objects/95/952f7c7baf994167384db198ce1cdd755eaa87eed3fd5ab7cfb700b2d567d14f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/95/952f7c7baf994167384db198ce1cdd755eaa87eed3fd5ab7cfb700b2d567d14f.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk3-guide-8f0373646d1a494f.png": {
+      "sha256": "8f0373646d1a494f710fbb14ff1f4f1cea3fe61d5bcba2ff74d6b5a36162f7cd",
+      "extension": ".png",
+      "bytes": 813,
+      "object": "review-archive/objects/8f/8f0373646d1a494f710fbb14ff1f4f1cea3fe61d5bcba2ff74d6b5a36162f7cd.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8f/8f0373646d1a494f710fbb14ff1f4f1cea3fe61d5bcba2ff74d6b5a36162f7cd.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk3-lower-75365f64a458a25c.png": {
+      "sha256": "75365f64a458a25cde63422cdc721669d26177c82879f0cfdda791f49a8ce1fe",
+      "extension": ".png",
+      "bytes": 52707,
+      "object": "review-archive/objects/75/75365f64a458a25cde63422cdc721669d26177c82879f0cfdda791f49a8ce1fe.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/75/75365f64a458a25cde63422cdc721669d26177c82879f0cfdda791f49a8ce1fe.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk3-lower-mask-5f52d0b4d988ffbf.png": {
+      "sha256": "5f52d0b4d988ffbf04390808258bc385686abb86462e1cf2404cef590435687b",
+      "extension": ".png",
+      "bytes": 751,
+      "object": "review-archive/objects/5f/5f52d0b4d988ffbf04390808258bc385686abb86462e1cf2404cef590435687b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5f/5f52d0b4d988ffbf04390808258bc385686abb86462e1cf2404cef590435687b.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk3-poc-v3-01a9ad17a0b4036b.png": {
+      "sha256": "01a9ad17a0b4036b5c21eb1eff6e1882008b7b7ec06e914f9a1f5a51956c85b5",
+      "extension": ".png",
+      "bytes": 59224,
+      "object": "review-archive/objects/01/01a9ad17a0b4036b5c21eb1eff6e1882008b7b7ec06e914f9a1f5a51956c85b5.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/01/01a9ad17a0b4036b5c21eb1eff6e1882008b7b7ec06e914f9a1f5a51956c85b5.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk3-torso-0a22ba34a2df549e.png": {
+      "sha256": "0a22ba34a2df549eb91c755f1647ebb51c9c3f04175cbe4728d948cebf6030bf",
+      "extension": ".png",
+      "bytes": 35070,
+      "object": "review-archive/objects/0a/0a22ba34a2df549eb91c755f1647ebb51c9c3f04175cbe4728d948cebf6030bf.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0a/0a22ba34a2df549eb91c755f1647ebb51c9c3f04175cbe4728d948cebf6030bf.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk4-8e388a6ccdbec5c8.png": {
+      "sha256": "8e388a6ccdbec5c8de6d5b2c6a113291c5693b083aeec1f0ea39f1e36700bcb4",
+      "extension": ".png",
+      "bytes": 72857,
+      "object": "review-archive/objects/8e/8e388a6ccdbec5c8de6d5b2c6a113291c5693b083aeec1f0ea39f1e36700bcb4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8e/8e388a6ccdbec5c8de6d5b2c6a113291c5693b083aeec1f0ea39f1e36700bcb4.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk4-arm-mask-f96bece66f41c1b2.png": {
+      "sha256": "f96bece66f41c1b2f1c11aa8f08eb7911499f892971878d87b3d7a932d784c89",
+      "extension": ".png",
+      "bytes": 811,
+      "object": "review-archive/objects/f9/f96bece66f41c1b2f1c11aa8f08eb7911499f892971878d87b3d7a932d784c89.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f96bece66f41c1b2f1c11aa8f08eb7911499f892971878d87b3d7a932d784c89.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk4-arms-6c61cb1a14ad3776.png": {
+      "sha256": "6c61cb1a14ad3776db61772854647c5975d0d809803e4e9f0924b0e1fbc52ebb",
+      "extension": ".png",
+      "bytes": 46154,
+      "object": "review-archive/objects/6c/6c61cb1a14ad3776db61772854647c5975d0d809803e4e9f0924b0e1fbc52ebb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6c/6c61cb1a14ad3776db61772854647c5975d0d809803e4e9f0924b0e1fbc52ebb.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk4-authority-ca525607a991cb47.png": {
+      "sha256": "ca525607a991cb4771b29ed34d848bb6c64cb6c83ffb3ec6964bfb8d54870d2a",
+      "extension": ".png",
+      "bytes": 68411,
+      "object": "review-archive/objects/ca/ca525607a991cb4771b29ed34d848bb6c64cb6c83ffb3ec6964bfb8d54870d2a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ca/ca525607a991cb4771b29ed34d848bb6c64cb6c83ffb3ec6964bfb8d54870d2a.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk4-guide-17eadc47397af207.png": {
+      "sha256": "17eadc47397af207dd1d97dba37eaa96e75880c8512fd19b14caae44ae8ba803",
+      "extension": ".png",
+      "bytes": 838,
+      "object": "review-archive/objects/17/17eadc47397af207dd1d97dba37eaa96e75880c8512fd19b14caae44ae8ba803.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/17eadc47397af207dd1d97dba37eaa96e75880c8512fd19b14caae44ae8ba803.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk4-lower-14875b1515e87d15.png": {
+      "sha256": "14875b1515e87d15e90daa9a912453edc22ac7a6bee7aadc0cb0c4c5d11f9b4a",
+      "extension": ".png",
+      "bytes": 65487,
+      "object": "review-archive/objects/14/14875b1515e87d15e90daa9a912453edc22ac7a6bee7aadc0cb0c4c5d11f9b4a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/14/14875b1515e87d15e90daa9a912453edc22ac7a6bee7aadc0cb0c4c5d11f9b4a.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk4-lower-mask-d678ebd56a7935e0.png": {
+      "sha256": "d678ebd56a7935e0b8d0c0007e8592a8e5b4270490df751ff4fe2628578d7853",
+      "extension": ".png",
+      "bytes": 1131,
+      "object": "review-archive/objects/d6/d678ebd56a7935e0b8d0c0007e8592a8e5b4270490df751ff4fe2628578d7853.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d6/d678ebd56a7935e0b8d0c0007e8592a8e5b4270490df751ff4fe2628578d7853.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk4-poc-v3-c2f2625db71a3e59.png": {
+      "sha256": "c2f2625db71a3e591b1783aa3b15c7e84db839fa40df7d1420c1f148f3a61179",
+      "extension": ".png",
+      "bytes": 67662,
+      "object": "review-archive/objects/c2/c2f2625db71a3e591b1783aa3b15c7e84db839fa40df7d1420c1f148f3a61179.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c2/c2f2625db71a3e591b1783aa3b15c7e84db839fa40df7d1420c1f148f3a61179.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk4-torso-a2c5ede97143130d.png": {
+      "sha256": "a2c5ede97143130db9a28d1ca1524f8af01ee8d3f9d3c69afb7df7bcb63e1b8f",
+      "extension": ".png",
+      "bytes": 47539,
+      "object": "review-archive/objects/a2/a2c5ede97143130db9a28d1ca1524f8af01ee8d3f9d3c69afb7df7bcb63e1b8f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a2/a2c5ede97143130db9a28d1ca1524f8af01ee8d3f9d3c69afb7df7bcb63e1b8f.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk5-49ba9bc7292c19e7.png": {
+      "sha256": "49ba9bc7292c19e720808ea2e6c7c4f50dbd9c79c3c7417d014e9abb23cd3aa6",
+      "extension": ".png",
+      "bytes": 66226,
+      "object": "review-archive/objects/49/49ba9bc7292c19e720808ea2e6c7c4f50dbd9c79c3c7417d014e9abb23cd3aa6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/49/49ba9bc7292c19e720808ea2e6c7c4f50dbd9c79c3c7417d014e9abb23cd3aa6.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk5-arm-mask-c21e188adf92ffd4.png": {
+      "sha256": "c21e188adf92ffd41d7ca7f54745a11ad564678d772c36bac1bac41fb5ea39a7",
+      "extension": ".png",
+      "bytes": 780,
+      "object": "review-archive/objects/c2/c21e188adf92ffd41d7ca7f54745a11ad564678d772c36bac1bac41fb5ea39a7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c2/c21e188adf92ffd41d7ca7f54745a11ad564678d772c36bac1bac41fb5ea39a7.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk5-arms-f5ca4c8c117c100c.png": {
+      "sha256": "f5ca4c8c117c100cf03a807e8038bd32999cfa4c7dae765a7baff362bb290f55",
+      "extension": ".png",
+      "bytes": 42306,
+      "object": "review-archive/objects/f5/f5ca4c8c117c100cf03a807e8038bd32999cfa4c7dae765a7baff362bb290f55.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f5/f5ca4c8c117c100cf03a807e8038bd32999cfa4c7dae765a7baff362bb290f55.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk5-authority-7aed4990036bfd6b.png": {
+      "sha256": "7aed4990036bfd6bdc34b21ddbc084ba9d42e1cecb7abafef3f5975f585241c8",
+      "extension": ".png",
+      "bytes": 67931,
+      "object": "review-archive/objects/7a/7aed4990036bfd6bdc34b21ddbc084ba9d42e1cecb7abafef3f5975f585241c8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7a/7aed4990036bfd6bdc34b21ddbc084ba9d42e1cecb7abafef3f5975f585241c8.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk5-guide-4f3eda3d84d4ecb1.png": {
+      "sha256": "4f3eda3d84d4ecb1fb9cfcd76c7a2f395274eb4c09548726bc27c3d17e940ef0",
+      "extension": ".png",
+      "bytes": 796,
+      "object": "review-archive/objects/4f/4f3eda3d84d4ecb1fb9cfcd76c7a2f395274eb4c09548726bc27c3d17e940ef0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4f/4f3eda3d84d4ecb1fb9cfcd76c7a2f395274eb4c09548726bc27c3d17e940ef0.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk5-lower-c11ba2ed6b17905f.png": {
+      "sha256": "c11ba2ed6b17905f5a09be94b600ed71196b04417c2012d4d1b56e6d3c7ddddb",
+      "extension": ".png",
+      "bytes": 65543,
+      "object": "review-archive/objects/c1/c11ba2ed6b17905f5a09be94b600ed71196b04417c2012d4d1b56e6d3c7ddddb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c1/c11ba2ed6b17905f5a09be94b600ed71196b04417c2012d4d1b56e6d3c7ddddb.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk5-lower-mask-b6bad873c958c4a8.png": {
+      "sha256": "b6bad873c958c4a8db9354b545e7962794b89f5367a9226d30dd266edd947e0a",
+      "extension": ".png",
+      "bytes": 1086,
+      "object": "review-archive/objects/b6/b6bad873c958c4a8db9354b545e7962794b89f5367a9226d30dd266edd947e0a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b6/b6bad873c958c4a8db9354b545e7962794b89f5367a9226d30dd266edd947e0a.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk5-poc-v3-84f3cb74c50ed113.png": {
+      "sha256": "84f3cb74c50ed1132d43c47361a98edf43e5557a01644157b1dcddd5ac96d63b",
+      "extension": ".png",
+      "bytes": 70524,
+      "object": "review-archive/objects/84/84f3cb74c50ed1132d43c47361a98edf43e5557a01644157b1dcddd5ac96d63b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/84f3cb74c50ed1132d43c47361a98edf43e5557a01644157b1dcddd5ac96d63b.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk5-torso-8d06b01a2952f116.png": {
+      "sha256": "8d06b01a2952f11689f50f8d4c5700742be284f31d0d4baeb6d27d524c22c456",
+      "extension": ".png",
+      "bytes": 43531,
+      "object": "review-archive/objects/8d/8d06b01a2952f11689f50f8d4c5700742be284f31d0d4baeb6d27d524c22c456.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8d/8d06b01a2952f11689f50f8d4c5700742be284f31d0d4baeb6d27d524c22c456.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk6-a816246e87826600.png": {
+      "sha256": "a816246e87826600924c537713baf16ad4a2e5ebc803237cb431dc68ab06559b",
+      "extension": ".png",
+      "bytes": 64699,
+      "object": "review-archive/objects/a8/a816246e87826600924c537713baf16ad4a2e5ebc803237cb431dc68ab06559b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a8/a816246e87826600924c537713baf16ad4a2e5ebc803237cb431dc68ab06559b.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk6-arm-mask-5f9091b77adcc781.png": {
+      "sha256": "5f9091b77adcc781ecd26b25ef30c5b4ee441acb55e00c067eed27875fc9d438",
+      "extension": ".png",
+      "bytes": 786,
+      "object": "review-archive/objects/5f/5f9091b77adcc781ecd26b25ef30c5b4ee441acb55e00c067eed27875fc9d438.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5f/5f9091b77adcc781ecd26b25ef30c5b4ee441acb55e00c067eed27875fc9d438.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk6-arms-09255b4e097f06cf.png": {
+      "sha256": "09255b4e097f06cf75fd82926c3424e711457a961c3f9d59de474adee3824a03",
+      "extension": ".png",
+      "bytes": 44312,
+      "object": "review-archive/objects/09/09255b4e097f06cf75fd82926c3424e711457a961c3f9d59de474adee3824a03.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/09/09255b4e097f06cf75fd82926c3424e711457a961c3f9d59de474adee3824a03.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk6-authority-1ffa089330d3d790.png": {
+      "sha256": "1ffa089330d3d790d2f52eea27eb6788d16b6f7b1c8d0a68c8f7f28851adb9d7",
+      "extension": ".png",
+      "bytes": 63661,
+      "object": "review-archive/objects/1f/1ffa089330d3d790d2f52eea27eb6788d16b6f7b1c8d0a68c8f7f28851adb9d7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1f/1ffa089330d3d790d2f52eea27eb6788d16b6f7b1c8d0a68c8f7f28851adb9d7.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk6-fill-6f53e0363d4830c4.png": {
+      "sha256": "6f53e0363d4830c4503774341af7d3f185ac7d7d811daa6c9050759a6db6b54f",
+      "extension": ".png",
+      "bytes": 567,
+      "object": "review-archive/objects/6f/6f53e0363d4830c4503774341af7d3f185ac7d7d811daa6c9050759a6db6b54f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6f/6f53e0363d4830c4503774341af7d3f185ac7d7d811daa6c9050759a6db6b54f.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk6-guide-972d2a301bef46f3.png": {
+      "sha256": "972d2a301bef46f36e81369a65dac0ecd779e3af21682e7a4c0e0c4fea8b8dfe",
+      "extension": ".png",
+      "bytes": 847,
+      "object": "review-archive/objects/97/972d2a301bef46f36e81369a65dac0ecd779e3af21682e7a4c0e0c4fea8b8dfe.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/97/972d2a301bef46f36e81369a65dac0ecd779e3af21682e7a4c0e0c4fea8b8dfe.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk6-lower-1f59233139b121a5.png": {
+      "sha256": "1f59233139b121a537c60e66e34e8bd11dc012e46397c8a0a3299025fab57a97",
+      "extension": ".png",
+      "bytes": 61000,
+      "object": "review-archive/objects/1f/1f59233139b121a537c60e66e34e8bd11dc012e46397c8a0a3299025fab57a97.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1f/1f59233139b121a537c60e66e34e8bd11dc012e46397c8a0a3299025fab57a97.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk6-lower-mask-99710b0a48071643.png": {
+      "sha256": "99710b0a480716434d3f903bbf7a417b38fe2dfaae4ace6efbd4c98b482a76c4",
+      "extension": ".png",
+      "bytes": 864,
+      "object": "review-archive/objects/99/99710b0a480716434d3f903bbf7a417b38fe2dfaae4ace6efbd4c98b482a76c4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/99/99710b0a480716434d3f903bbf7a417b38fe2dfaae4ace6efbd4c98b482a76c4.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk6-poc-v3-77c8a35244ca46b8.png": {
+      "sha256": "77c8a35244ca46b8ab1fd911729e4d1e24c5e14489829df1e5cec8149f315487",
+      "extension": ".png",
+      "bytes": 65215,
+      "object": "review-archive/objects/77/77c8a35244ca46b8ab1fd911729e4d1e24c5e14489829df1e5cec8149f315487.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/77/77c8a35244ca46b8ab1fd911729e4d1e24c5e14489829df1e5cec8149f315487.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk6-torso-b5077eeccd86288d.png": {
+      "sha256": "b5077eeccd86288dc3fe534e90bddfaefb0e40340268e155b29866f4da8b09d2",
+      "extension": ".png",
+      "bytes": 45538,
+      "object": "review-archive/objects/b5/b5077eeccd86288dc3fe534e90bddfaefb0e40340268e155b29866f4da8b09d2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b5/b5077eeccd86288dc3fe534e90bddfaefb0e40340268e155b29866f4da8b09d2.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk7-2b28ad3dd77aef76.png": {
+      "sha256": "2b28ad3dd77aef7688b1e4af8d96262c9ee246b236929a3d404536f001253ce0",
+      "extension": ".png",
+      "bytes": 61322,
+      "object": "review-archive/objects/2b/2b28ad3dd77aef7688b1e4af8d96262c9ee246b236929a3d404536f001253ce0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2b28ad3dd77aef7688b1e4af8d96262c9ee246b236929a3d404536f001253ce0.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk7-arm-mask-b63d713ca30c7761.png": {
+      "sha256": "b63d713ca30c77611eb31e61359b98efc15506670c72bbc80773790cabe23c5a",
+      "extension": ".png",
+      "bytes": 791,
+      "object": "review-archive/objects/b6/b63d713ca30c77611eb31e61359b98efc15506670c72bbc80773790cabe23c5a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b6/b63d713ca30c77611eb31e61359b98efc15506670c72bbc80773790cabe23c5a.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk7-arms-919e983f30dcfa7e.png": {
+      "sha256": "919e983f30dcfa7e651b34a43c009a6ba435325c2ac308398624b31d8158e4b6",
+      "extension": ".png",
+      "bytes": 43175,
+      "object": "review-archive/objects/91/919e983f30dcfa7e651b34a43c009a6ba435325c2ac308398624b31d8158e4b6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/91/919e983f30dcfa7e651b34a43c009a6ba435325c2ac308398624b31d8158e4b6.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk7-authority-e310c04d377362f5.png": {
+      "sha256": "e310c04d377362f5b671029528f8f52b3a6df9954ae665a5e726ea1ecd405be8",
+      "extension": ".png",
+      "bytes": 60913,
+      "object": "review-archive/objects/e3/e310c04d377362f5b671029528f8f52b3a6df9954ae665a5e726ea1ecd405be8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e3/e310c04d377362f5b671029528f8f52b3a6df9954ae665a5e726ea1ecd405be8.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk7-guide-ef731493b03dc6c4.png": {
+      "sha256": "ef731493b03dc6c4480f70edca2b03138df701535c21a2f090342d011a1d983c",
+      "extension": ".png",
+      "bytes": 838,
+      "object": "review-archive/objects/ef/ef731493b03dc6c4480f70edca2b03138df701535c21a2f090342d011a1d983c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ef/ef731493b03dc6c4480f70edca2b03138df701535c21a2f090342d011a1d983c.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk7-lower-0048b039e8d31b89.png": {
+      "sha256": "0048b039e8d31b89bd966e0272ab891f78bac0033ea2ece4c451bb932af01ebe",
+      "extension": ".png",
+      "bytes": 58767,
+      "object": "review-archive/objects/00/0048b039e8d31b89bd966e0272ab891f78bac0033ea2ece4c451bb932af01ebe.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/00/0048b039e8d31b89bd966e0272ab891f78bac0033ea2ece4c451bb932af01ebe.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk7-lower-mask-a2ab2b7ca3cc40f4.png": {
+      "sha256": "a2ab2b7ca3cc40f4a9c4b4e6340c85dd549b1561d68ce2663aa1069ecbb3d7c9",
+      "extension": ".png",
+      "bytes": 865,
+      "object": "review-archive/objects/a2/a2ab2b7ca3cc40f4a9c4b4e6340c85dd549b1561d68ce2663aa1069ecbb3d7c9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a2/a2ab2b7ca3cc40f4a9c4b4e6340c85dd549b1561d68ce2663aa1069ecbb3d7c9.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk7-poc-v3-5b040f6cb633439e.png": {
+      "sha256": "5b040f6cb633439edc39af7decf9715c41df9f8475db951aa2c415259c4235af",
+      "extension": ".png",
+      "bytes": 65196,
+      "object": "review-archive/objects/5b/5b040f6cb633439edc39af7decf9715c41df9f8475db951aa2c415259c4235af.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5b/5b040f6cb633439edc39af7decf9715c41df9f8475db951aa2c415259c4235af.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk7-torso-25a26d299ed9beba.png": {
+      "sha256": "25a26d299ed9beba8c61f61464d90c28598347b06650965a38191758d8d286aa",
+      "extension": ".png",
+      "bytes": 44308,
+      "object": "review-archive/objects/25/25a26d299ed9beba8c61f61464d90c28598347b06650965a38191758d8d286aa.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/25/25a26d299ed9beba8c61f61464d90c28598347b06650965a38191758d8d286aa.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk8-7871efbcb1ea4002.png": {
+      "sha256": "7871efbcb1ea4002ce30c96665612729704b71ee68908186c53dae1d841771c4",
+      "extension": ".png",
+      "bytes": 66424,
+      "object": "review-archive/objects/78/7871efbcb1ea4002ce30c96665612729704b71ee68908186c53dae1d841771c4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/78/7871efbcb1ea4002ce30c96665612729704b71ee68908186c53dae1d841771c4.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk8-arm-mask-5056d2fe3d477eec.png": {
+      "sha256": "5056d2fe3d477eec6368a981542788e313616f16cc4942b317641aad00742754",
+      "extension": ".png",
+      "bytes": 812,
+      "object": "review-archive/objects/50/5056d2fe3d477eec6368a981542788e313616f16cc4942b317641aad00742754.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/50/5056d2fe3d477eec6368a981542788e313616f16cc4942b317641aad00742754.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk8-arms-e501d49a0f03b7a6.png": {
+      "sha256": "e501d49a0f03b7a6de8dc8f0a6513bb0acb8d3ad13c1b7a07d2e8a4171e2b0d1",
+      "extension": ".png",
+      "bytes": 45779,
+      "object": "review-archive/objects/e5/e501d49a0f03b7a6de8dc8f0a6513bb0acb8d3ad13c1b7a07d2e8a4171e2b0d1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e5/e501d49a0f03b7a6de8dc8f0a6513bb0acb8d3ad13c1b7a07d2e8a4171e2b0d1.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk8-authority-51d360cb1e822818.png": {
+      "sha256": "51d360cb1e8228182e2d1abf08c44f74d7857d51c968860d36b3e55bc23efd78",
+      "extension": ".png",
+      "bytes": 64122,
+      "object": "review-archive/objects/51/51d360cb1e8228182e2d1abf08c44f74d7857d51c968860d36b3e55bc23efd78.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/51/51d360cb1e8228182e2d1abf08c44f74d7857d51c968860d36b3e55bc23efd78.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk8-guide-6b76be92ad2116df.png": {
+      "sha256": "6b76be92ad2116df917c51b944fc067dda27363c01d93c10f86f10c89b5c10c8",
+      "extension": ".png",
+      "bytes": 785,
+      "object": "review-archive/objects/6b/6b76be92ad2116df917c51b944fc067dda27363c01d93c10f86f10c89b5c10c8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6b/6b76be92ad2116df917c51b944fc067dda27363c01d93c10f86f10c89b5c10c8.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk8-lower-ac8637fe7ab504da.png": {
+      "sha256": "ac8637fe7ab504da55cd1b93fc977d6d57335d8ac4e773b351355f3bbea71d8c",
+      "extension": ".png",
+      "bytes": 61423,
+      "object": "review-archive/objects/ac/ac8637fe7ab504da55cd1b93fc977d6d57335d8ac4e773b351355f3bbea71d8c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ac/ac8637fe7ab504da55cd1b93fc977d6d57335d8ac4e773b351355f3bbea71d8c.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk8-lower-mask-5a65d1e475ddcf32.png": {
+      "sha256": "5a65d1e475ddcf324215ee1a4666340829f890c575996f40a12ac298e5c2a012",
+      "extension": ".png",
+      "bytes": 986,
+      "object": "review-archive/objects/5a/5a65d1e475ddcf324215ee1a4666340829f890c575996f40a12ac298e5c2a012.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5a/5a65d1e475ddcf324215ee1a4666340829f890c575996f40a12ac298e5c2a012.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk8-poc-v3-1a2a517249e8815e.png": {
+      "sha256": "1a2a517249e8815eb8efcb4496b832ae4668dcaec22ba8b8ba510b908eb259ec",
+      "extension": ".png",
+      "bytes": 66262,
+      "object": "review-archive/objects/1a/1a2a517249e8815eb8efcb4496b832ae4668dcaec22ba8b8ba510b908eb259ec.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1a/1a2a517249e8815eb8efcb4496b832ae4668dcaec22ba8b8ba510b908eb259ec.png"
+    },
+    "/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/assets/walk8-torso-0344315a77693d96.png": {
+      "sha256": "0344315a77693d966f7db62a90a8ea5b82ccf0410a41505b44f88333bd6392fc",
+      "extension": ".png",
+      "bytes": 47258,
+      "object": "review-archive/objects/03/0344315a77693d966f7db62a90a8ea5b82ccf0410a41505b44f88333bd6392fc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/03/0344315a77693d966f7db62a90a8ea5b82ccf0410a41505b44f88333bd6392fc.png"
     },
     "/keeper-review/keeper-prime-ladder-transitions-v1/assets/approved-back-d1d409f098a18883.png": {
       "sha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86",

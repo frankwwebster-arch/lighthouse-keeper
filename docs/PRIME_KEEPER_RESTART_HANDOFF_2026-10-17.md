@@ -139,7 +139,7 @@ remain visually identical to the approved walk. Preserve the exact hashes and
 decision at
 `docs/review/keeper-prime-sweep-broom-v8-rejection-2026-10-19.json`.
 
-The active gate is the prop-free `hold_shaft_two_hand` motion-feasibility POC
+The prop-free `hold_shaft_two_hand` motion-feasibility foundation is immutable
 at `/keeper-review/keeper-prime-upper-body-override-poc-v3/`. It contains eight
 alternating gait phases, nine approved turn angles, never more than two visible
 hands and no broom or other prop pixels. Because the approved PNG authorities
@@ -152,9 +152,16 @@ does not wrap immediately to its start. Frank approved this held-implement
 motion-feasibility foundation on 19 October 2026. Preserve its exact hashes and
 approval boundary at
 `docs/review/keeper-prime-upper-body-override-poc-v3-approval-2026-10-19.json`.
-The next gate is a newly authored layered Prime torso/arm construction. The
-proxy artwork, that future layered artwork, every implement, runtime, Final and
-production promotion remain unapproved and unchanged.
+The active artwork gate is the first newly authored layered construction at
+`/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/`. It reuses the
+approved V3 route verbatim and stores four separable planes per orientation:
+byte-identical declared visible Walk V6/Turn V9 lower-body authority, a
+separate non-authority fill for trouser pixels that the historical swinging
+hand concealed, torso/head, and held arms. Torso and arm ownership is disjoint;
+the deterministic verifier recomposes all 17 review frames, checks transparent
+gutters and confirms zero prop pixels. This is an awaiting-review candidate,
+not an approval. The proxy artwork, layered V1, every implement, runtime, Final
+and production promotion remain unapproved and unchanged.
 
 ## Binding method for every inherited animation
 
@@ -355,9 +362,12 @@ decision is
 Do not repair V8 in place. The successor removes the prop and asks one smaller
 question: can a single two-hand held pose survive the approved gait phases and
 turn angles? The POC answers that with a clean phase-matched proxy while making
-its non-production status explicit. Any eventual production solution must
-start from newly separable Prime torso/arm artwork rather than another raster
-mask over complete Walk/Turn frames.
+its non-production status explicit. Layered V1 is the first separable-art
+review attempt: it retains exact declared visible lower-body authority on its
+own plane, isolates the unavoidable non-authority trouser reconstruction, and
+keeps torso/head and held arms independently removable. It must pass Frank's
+visual review before any later implement study and may not be promoted as part
+of this gate.
 
 The immutable V7 candidate is commit `bdceae4d`; shell-pin commit `c22ded68`
 fetches that exact candidate rather than mutable `main`. Review-only deployment
@@ -395,9 +405,9 @@ runtime or production artwork.
 
 Documentation audit updated on 19 October 2026: README, STATUS, this restart
 handoff and the artwork/review playbook agree that Sweep Broom V1–V8 are
-rejected, held-implement POC V1/V2 remain immutable, and V3 is approved only as
-the held-implement motion-feasibility foundation. Production still requires
-newly authored separable Prime torso/arm layers; no proxy art, implement,
+rejected, held-implement POC V1/V2 remain immutable, V3 is approved only as the
+held-implement motion-feasibility foundation, and separable layered V1 is the
+current unapproved visual gate. No proxy art, layered candidate, implement,
 runtime or production asset is approved or promoted. Back Sit/Stand V2 remains
 separately approved and hash-pinned without any production-art promotion.
 

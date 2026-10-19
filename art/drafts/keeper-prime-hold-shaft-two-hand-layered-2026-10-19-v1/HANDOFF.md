@@ -1,0 +1,3 @@
+# Prime Keeper layered hold_shaft_two_hand V1
+
+This is the first prop-free separable implementation after approval of motion-feasibility POC V3. Every frame has four independently hash-pinned layers: exact Walk V6 or Turn V9 lower-body authority pixels, a separately declared lower-body occlusion fill where the removed historical hand exposed unavailable trouser pixels, a new torso/head layer, and a new held-arm layer. The V3 route, gait order, turn order, timing, mirrored anchor correction, rear-seam presentation offset and one-shot playback are unchanged. No broom or other implement exists in the pack. Nothing is approved or promoted.

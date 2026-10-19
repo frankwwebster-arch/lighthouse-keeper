@@ -242,16 +242,24 @@ formally rejected at
 `docs/review/keeper-prime-sweep-broom-v8-rejection-2026-10-19.json`: it showed
 four arms after the held pose was added, broke up through the turn, introduced
 pixelation and did not remain visually identical to approved Prime walk art.
-The active gate is now the broomless
-`/keeper-review/keeper-prime-upper-body-override-poc-v3/`. It is the smallest
-motion-feasibility proof for reusable `hold_shaft_two_hand`: eight alternating
-gait phases, nine approved turn angles, no more than two visible hands and zero
-prop pixels. It is explicitly a phase-matched full-character proxy rather than
-pixel-identical production art. Frank approved its held-implement motion
-feasibility on 19 October 2026. The hash-pinned decision is
+The broomless `/keeper-review/keeper-prime-upper-body-override-poc-v3/` is the
+approved motion-feasibility foundation for reusable `hold_shaft_two_hand`:
+eight alternating gait phases, nine approved turn angles, no more than two
+visible hands and zero prop pixels. It is explicitly a phase-matched
+full-character proxy rather than pixel-identical production art. Frank approved
+its held-implement motion feasibility on 19 October 2026. The hash-pinned decision is
 `docs/review/keeper-prime-upper-body-override-poc-v3-approval-2026-10-19.json`.
-A promotable successor still requires newly authored separable Prime torso/arm
-layers. The proxy artwork, broom and other implements, runtime, Final and
+
+The active artwork gate is now
+`/keeper-review/keeper-prime-hold-shaft-two-hand-layered-v1/`, the first
+immutable separable Prime build. Its 17 orientation records and 33-frame route
+preserve POC V3 exactly. Declared visible Walk V6/Turn V9 lower-body authority
+pixels are byte-identical and live on their own planes; unavailable trouser
+pixels formerly hidden by the swinging hand are isolated in a reversible,
+explicitly non-authority occlusion-fill plane. Torso/head and held arms are
+separate, non-overlapping hash-pinned planes and use only matching Prime
+authority colours. The candidate awaits Frank's visual decision. The proxy
+artwork, layered V1 artwork, broom and other implements, runtime, Final and
 production remain unapproved, unchanged and unwired.
 
 Held-implement POC V1 remains immutable. Frank described its motion as a very

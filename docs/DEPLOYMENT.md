@@ -149,10 +149,10 @@ explicit release.
 Keeper review media is now stored once outside `public/`, without deleting any
 evidence or changing immutable review-page bytes.
 
-**Measured result (19 October 2026, including Kitchen Sink Water Workbench V20
-and immutable prior review evidence):** 3,642 review-media paths across 151
-sets collapse to 2,267 unique objects. The paths represent 287.32 MiB; the
-unique store is 155.37 MiB. The verified `public/` deployment payload is 50.42 MiB, 0.42 MiB
+**Measured result (19 October 2026, including Prime layered held-body V1 and
+immutable prior review evidence):** 3,802 review-media paths across 152 sets
+collapse to 2,319 unique objects. The paths represent 296.73 MiB; the unique
+store is 156.62 MiB. The verified `public/` deployment payload is about 50.42 MiB and remains slightly
 above the hard 50 MiB repository guard, rather than roughly 115 MiB. The archive
 itself stays in Git but is
 outside `public/`, so Vercel does not copy those objects into every deployment.
@@ -205,6 +205,18 @@ npm test
 npm run typecheck
 npm run build
 ```
+
+When other untracked review work is present, replace only the intended set from
+its reversible batch register instead of letting the global sweep absorb those
+unrelated files:
+
+```sh
+npm run archive:keeper-review:set -- path/to/batch-register.json HEAD
+```
+
+That command starts from the named Git base, replaces just the register's set,
+and computes committed-tree object statistics from the base plus that set. It
+does not delete or stage unrelated archive objects or set manifests.
 
 The archive command copies only new hashes, updates the set/global manifests,
 then removes public media copies. It never removes an old archive object, even
