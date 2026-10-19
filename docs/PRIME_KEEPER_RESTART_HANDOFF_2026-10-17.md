@@ -132,15 +132,17 @@ Prime `keeper_sweep_broom` V1 remains immutable, unapproved review history at
 artefacts across its repeated action range and a mop-like broom read. The V1
 live-delivery record at deploy commit `84c8f6b` remains evidence only.
 
-Prime `keeper_sweep_broom` V1–V6 are rejected immutable provenance. The active
-movement-only review candidate is V7 at
-`/keeper-review/keeper-prime-sweep-broom-v7/`. Both travel directions play
-approved Walk V6 F1→F8 at 125 ms per frame; direction changes by mirror and
-root motion only. Each cell retains its matching Walk V6 authority outside the
-recorded Sweep-3 arm/hand corridor. The reversal uses approved V9 body order
-1→9→1, and exact side-right neutral state changes occur entirely behind the
-closed cupboard. The separately owned broom remains visibly provisional and
-is not part of this movement gate. V7 is unapproved and unpromoted.
+Prime `keeper_sweep_broom` V1–V7 are rejected immutable provenance. V7 used an
+incorrectly fast root schedule and allowed its turn edit mask to damage the
+lower body. The active movement-only review candidate is V8 at
+`/keeper-review/keeper-prime-sweep-broom-v8/`. Its visible approach/departure
+are exact Walk V6 at 125 ms/frame and 21 high-resolution px/frame; the exact
+approved walk↔stop bridges retain their recorded root deltas. Both working
+directions play F1→F8 and the reversal uses approved Turn V9 1→9→1. Only a hard
+held-arm/hand ownership mask may differ, and every lower-body pixel remains
+byte-identical to its matching authority. Exact side-right neutral state
+changes occur behind the closed cupboard. The separate broom remains
+provisional. V8 is unapproved and unpromoted.
 
 ## Binding method for every inherited animation
 
@@ -322,24 +324,31 @@ locomotion was redrawn rather than being the approved walk with only different
 arms, and the result was jerky and physically impossible. The broom also
 changed shape and tone. Preserve V6 only as rejected provenance.
 
-V7 is the new immutable movement-first review candidate at
-`/keeper-review/keeper-prime-sweep-broom-v7/`. Its only current decision gate
-is movement. Both left- and right-travelling loops play approved Walk V6
-F1→F8 at exactly 125 ms per frame, so left-foot contact/down/passing/up is
-followed by right-foot contact/down/passing/up without time reversal. Each
-walking cell starts from its matching approved Walk V6 authority and differs
-only inside a recorded arm/hand corridor carrying the Sweep-3 two-hand grip.
-The 17-frame planted reversal follows exact approved V9 body order 1→9→1 at
-the authority's one-second side-to-back cadence. Exact side-right neutral is
-shown under the fully closed cupboard before and after the hidden state swap.
+V7 is now rejected immutable provenance. Frank found that its Keeper broke up
+during the reversal and that its opening walk did not read as the approved
+Prime walk. Inspection confirmed two deterministic causes: V7 advanced 7.4
+logical pixels every 125 ms (59.2 lp/s) instead of approved Walk V6's 2.625
+logical pixels every 125 ms (21 lp/s), and its turn edit mask extended into the
+trousers and boots where transparent source pixels could erase authority.
 
-The V7 broom remains a separately owned provisional layer. Its current shape
+V8 is the new movement-first review candidate at
+`/keeper-review/keeper-prime-sweep-broom-v8/`. Its visible standard approach
+and departure use the exact Walk V6 files without resampling, at exact 8 fps
+and exact 21-high-resolution-pixel root deltas. The exact approved
+walk-to-stop and stop-to-walk frames use the pinned 18→12→6→2 and
+2→6→12→18 displacement schedules. Working travel runs F1→F8 in both
+directions. The 17-frame reversal runs approved Turn V9 order 1→9→1 at the
+authority timing. Only the hard held-arm/hand mask may differ; it cannot own
+the lower body, all pixels outside it are byte-identical to authority, and
+transparent source pixels cannot erase the approved Keeper.
+
+The V8 broom remains a separately owned provisional layer. Its current shape
 and tone variation is acknowledged and must be corrected only after Frank is
-satisfied with the gait and turn. V7 does not approve the broom, any Keeper
-artwork, Final/runtime integration or production promotion. Its verifier pins
-the walk order in both directions, exact authority hashes, neutral frames,
-turn order and timing, arm-corridor ownership, per-frame material envelopes,
-prop separation, hand contact, transparent gutters and reviewer preloading.
+satisfied with movement. V8 does not approve the broom, any Keeper artwork,
+Final/runtime integration or production promotion. Its verifier pins exact
+authority hashes, route speed, gait order, bridge deltas, turn order/timing,
+outside-mask byte equality, lower-body identity, prop separation, transparent
+gutters and reviewer preloading.
 
 The immutable V7 candidate is commit `bdceae4d`; shell-pin commit `c22ded68`
 fetches that exact candidate rather than mutable `main`. Review-only deployment
@@ -353,8 +362,8 @@ gate after all preceding checks and stops because the existing public payload
 is 50.26 MiB against the 50 MiB ceiling; V7 itself leaves no review media in
 `public/` beyond its 995-byte shell.
 
-Documentation audit completed on 19 October 2026: README, STATUS, this restart
-handoff and the artwork/review playbook now agree that V1–V6 are rejected,
-V7 is movement-only, broom rendering remains deferred, nothing is promoted,
-and Back Sit/Stand V2 remains separately approved and hash-pinned without any
-production-art promotion.
+Documentation audit updated on 19 October 2026: README, STATUS, this restart
+handoff and the artwork/review playbook agree that V1–V7 are rejected, V8 is
+the unapproved movement-only gate, broom rendering remains deferred, nothing
+is promoted, and Back Sit/Stand V2 remains separately approved and hash-pinned
+without any production-art promotion.
