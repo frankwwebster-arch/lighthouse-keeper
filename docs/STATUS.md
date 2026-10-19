@@ -168,18 +168,21 @@ rails and plinth remain geometrically different from approved V11. V16 fixed
 the front elevation with a literal crop of the approved V11 right-hand bay,
 but its countertop ended flush at the join and its basin read too straight.
 V17's uniform left worktop return is rejected because it reads as an extension
-of the whole left side rather than an angled join across the worktop plane. The
-approved sink authority is now `/keeper-review/kitchen-sink-angled-join-v18/`. V18
-remains one complete, independently removable 92 × 108 px sprite. Its worktop
-edge steps down-right from a three-pixel rear projection into the untouched
-exact V11 front at cell y=42. The basin side edges splay in the opposite
+of the whole left side rather than an angled join across the worktop plane.
+V18 remains immutable approved predecessor evidence at
+`/keeper-review/kitchen-sink-angled-join-v18/`, but later close inspection
+reopened its left worktop finish. The active V19 visual-review draft is
+`/keeper-review/kitchen-sink-smooth-join-v19/`. It remains one complete,
+independently removable 92 × 108 px sprite and replaces only V18's coarse
+three-row staircase with a partial-alpha down-right contour whose final row
+curls into a rounded front lip matching the right edge. The exact V11 front
+begins unchanged at cell y=43. The basin side edges still splay in the opposite
 direction, widening slightly from x=20–70 at the rear rim to x=18–73 at the
 front lip. Standard, On base and Broken base are byte-identical. V15's corrected
 On strip and approved Broken strip remain byte-for-byte water-only 40-frame/
-4-fps ten-second loops with 0.1×–4× review speed. Frank approved exact V18 on
-19 October 2026. Its immutable decision record pins the complete static family,
-both water loops, construction metadata and review page. It remains unpromoted
-and unwired.
+4-fps ten-second loops with 0.1×–4× review speed. Frank's V18 approval record
+remains hash-pinned historical evidence; V19 is reversible, unapproved,
+unpromoted and unwired.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

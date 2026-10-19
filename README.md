@@ -503,17 +503,25 @@ Broken upward-basin-spout animation is approved. V15 corrected the On stream
 but its redrawn cabinet geometry still differed from V11. V16 corrected the
 front by keeping the sink as one independently removable sprite derived from a
 literal approved V11 bay. V17's uniform left return was rejected because it
-extended the whole side rather than describing the worktop plane. The active
-V18 authority at `/keeper-review/kitchen-sink-angled-join-v18/` preserves the exact
+extended the whole side rather than describing the worktop plane. V18 at
+`/keeper-review/kitchen-sink-angled-join-v18/` remains immutable approved
+predecessor evidence and preserves the exact
 V11 front elevation and replaces only the shallow worktop strip with one small
 down-right diagonal join. The basin uses the opposite perspective cue: its
 side edges widen slightly from the narrower rear rim to the wider front lip.
+Close inspection later identified V18's coarse three-row staircase and square
+front-lip finish. The active reversible V19 review at
+`/keeper-review/kitchen-sink-smooth-join-v19/` smooths only that boundary with
+partial-alpha row progression and a rounded lip matched to the right edge; the
+V11 face, V18 basin/tap and all state/effect art remain exact.
 V15's corrected On and approved Broken strips remain byte-for-byte. All static
 bases remain byte-identical and both loops remain 40-frame/4-fps/ten-second
 assets. See
 [`docs/KITCHEN_SINK_ANGLED_JOIN_V18_2026-10-19.md`](docs/KITCHEN_SINK_ANGLED_JOIN_V18_2026-10-19.md).
 Frank approved exact V18 on 19 October 2026; the hash-pinned decision record is
 [`docs/review/kitchen-sink-angled-join-v18-approval-2026-10-19.json`](docs/review/kitchen-sink-angled-join-v18-approval-2026-10-19.json).
+V19's unapproved construction record is
+[`docs/KITCHEN_SINK_SMOOTH_JOIN_V19_2026-10-19.md`](docs/KITCHEN_SINK_SMOOTH_JOIN_V19_2026-10-19.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
@@ -1011,7 +1019,7 @@ must remain paused to avoid duplicate alerts.
 - `data/keeper_pose_registry.json`, `data/keeper_endpoint_audit.json` and `data/keeper_endpoint_exceptions.json` — shared pose vocabulary, current real-pixel endpoint evidence, and the frozen legacy migration boundary.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
 - `public/keeper-review/index.html` — canonical online-only reviewer deployed at `/keeper-review/`; `docs/keeper-scale-audit/review.html` is the generated audit artifact and must be byte-identical, but when opened outside `/keeper-review` it sends the viewer to the live platform instead of presenting a second workspace. Its gallery is a compact visual scan (name, review state, last local save/redraft, playback and frame stepping); `Open close review` opens any chosen card immediately. `Find animation` searches names and overrides all other filters; otherwise independently filter by review state, pose and active/reserve use list. Close review lets Frank override the inferred pose tag, relegate a likely duplicate to the reversible reserve list, expand/compress retained draft comparisons, and select canonical or every exact-name draft as an exportable preferred-promotion candidate—without mutating production. **Hand back to Codex** always asks for confirmation, saves any unsaved cards to that browser if confirmed, then submits the full batch to the durable server-side queue. The server records a semantic exact-name delta (ignoring save timestamps), comparing the first server hand-back to the shipped review baseline and later ones to the prior hand-back; the receipt reports only the changed animation count for later Codex work. When Codex claims a batch, the online reviewer becomes read-only until the delivery is completed, while retaining playback and inspection; JSON backup/import is collapsed as an exceptional browser-recovery option.
-- `review-archive/`, `docs/REVIEW_ARCHIVE.md` and `scripts/archive_keeper_review_media.mjs` — content-addressed storage for review-only images and GIFs. The current archive has 3,618 review references across 149 set manifests resolving to 2,254 unique SHA-256 objects hosted outside Vercel deployments. Immutable page bytes and old URLs remain preserved; short-lived redirects keep the media host replaceable, and new animations preload every moving frame before playback. The current `public/` payload is 50.42 MiB instead of roughly 115 MiB; the existing 50 MiB repository guard therefore remains 0.42 MiB over its target even though the production build succeeds. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
+- `review-archive/`, `docs/REVIEW_ARCHIVE.md` and `scripts/archive_keeper_review_media.mjs` — content-addressed storage for review-only images and GIFs. The current archive has 3,632 review references across 150 set manifests resolving to 2,261 unique SHA-256 objects hosted outside Vercel deployments. Immutable page bytes and old URLs remain preserved; short-lived redirects keep the media host replaceable, and new animations preload every moving frame before playback. The current `public/` payload is 50.42 MiB instead of roughly 115 MiB; the existing 50 MiB repository guard therefore remains 0.42 MiB over its target even though the production build succeeds. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
 - `data/keeper_side_on_beard_occlusion_audit.json`, `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/`, and `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` — completed draft-only v2 beard/hand audit and preserved rejected v1 history. The active reviewer shows v2 beside canonical and the separate Frank-selected darts draft; the verifier prevents implicit promotion.
 - `data/keeper_review_drafts.json` and `art/drafts/` — SHA-256-pinned, exact-name review comparisons: the draft-only darts candidate, seven active V11 artist-smock candidates, the accepted complete-route `keeper_snooker` candidate, the 41 exact-name 11 October amendment candidates and the separate party-hat frame-2 v2 variant, plus the ten selected canonical promotions and their reversible previous versions. Hash-addressed reviewer copies prevent same-name historical and current variants from overwriting one another. `scripts/verify_keeper_review_drafts.ts` checks every registered source, canonical/current comparison, sidecar, gutter, publication and reviewer attachment.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.
