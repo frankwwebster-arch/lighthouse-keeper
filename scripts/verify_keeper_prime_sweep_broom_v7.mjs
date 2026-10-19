@@ -139,6 +139,7 @@ for (const token of ['Movement proof', 'Judge movement first', 'F1→F8', 'Large
   'Loading and decoding every unique frame', 'img.decode', 'data-layer=prop', 'data-layer=actor']) {
   assert.ok(reviewer.includes(token), `reviewer omits ${token}`)
 }
-assert.match(shell, /__V7_COMMIT__/)
+assert.match(shell, /lighthouse-keeper\/[0-9a-f]{8}\/art\/drafts\/keeper-prime-sweep-broom-2026-10-18-v7\/reviewer\.html/)
+assert.doesNotMatch(shell, /__V7_COMMIT__|\/main\/art\/drafts/)
 assert.doesNotMatch(reviewer, /keeper-prime-sweep-broom-v6\/assets/)
 console.log('Prime sweep-broom V7 verified: F1→F8 in both directions, exact 8 fps gait timing, exact V9 turn order/timing, stable separate walk prop, Sweep-3 grip, review-only delivery.')
