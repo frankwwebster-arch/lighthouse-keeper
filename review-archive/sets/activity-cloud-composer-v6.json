@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "set": "activity-cloud-composer-v6",
+  "page": {
+    "path": "public/keeper-review/activity-cloud-composer-v6/index.html",
+    "sha256": "a88ef66c626cedc17264c2d9b334e5f893dfbbef11b2a0a2998bb4e8c4d78aa2",
+    "bytes": 22259
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/activity-cloud-composer-v6/assets/bathroom-bad-smell-2aa660f306e33bd5.png": {
+      "sha256": "2aa660f306e33bd5352b5740c3fd4482d28bbc5bb7b92c0201678ccfc6e6d66a",
+      "extension": ".png",
+      "bytes": 51639,
+      "object": "review-archive/objects/2a/2aa660f306e33bd5352b5740c3fd4482d28bbc5bb7b92c0201678ccfc6e6d66a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2a/2aa660f306e33bd5352b5740c3fd4482d28bbc5bb7b92c0201678ccfc6e6d66a.png"
+    },
+    "/keeper-review/activity-cloud-composer-v6/assets/bathroom-flush-handle-d755117e469236c6.png": {
+      "sha256": "d755117e469236c645c3482ce45945148522ac1db27e429e0331e82fea57a51b",
+      "extension": ".png",
+      "bytes": 37909,
+      "object": "review-archive/objects/d7/d755117e469236c645c3482ce45945148522ac1db27e429e0331e82fea57a51b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d7/d755117e469236c645c3482ce45945148522ac1db27e429e0331e82fea57a51b.png"
+    },
+    "/keeper-review/activity-cloud-composer-v6/assets/bathroom-loo-brush-c48ae0af4db9d028.png": {
+      "sha256": "c48ae0af4db9d028916d75f4a3005e085a7861d1abcd9339dd2be67fdd418d92",
+      "extension": ".png",
+      "bytes": 31521,
+      "object": "review-archive/objects/c4/c48ae0af4db9d028916d75f4a3005e085a7861d1abcd9339dd2be67fdd418d92.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c4/c48ae0af4db9d028916d75f4a3005e085a7861d1abcd9339dd2be67fdd418d92.png"
+    }
+  }
+}

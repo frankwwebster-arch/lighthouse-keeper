@@ -11,11 +11,11 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 167,
-    "referenceCount": 4097,
-    "uniqueObjectCount": 2551,
-    "logicalBytes": 330530144,
-    "uniqueBytes": 181431462,
+    "setCount": 168,
+    "referenceCount": 4100,
+    "uniqueObjectCount": 2554,
+    "logicalBytes": 330651213,
+    "uniqueBytes": 181552531,
     "deduplicatedBytes": 149098682
   },
   "legacyPaths": {
@@ -613,6 +613,27 @@
       "bytes": 34385,
       "object": "review-archive/objects/e6/e63ea759227a2b7d22a5c3c28b28c41ef92592dfaa2af0cf8f789d85256dd21a.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e6/e63ea759227a2b7d22a5c3c28b28c41ef92592dfaa2af0cf8f789d85256dd21a.png"
+    },
+    "/keeper-review/activity-cloud-composer-v6/assets/bathroom-bad-smell-2aa660f306e33bd5.png": {
+      "sha256": "2aa660f306e33bd5352b5740c3fd4482d28bbc5bb7b92c0201678ccfc6e6d66a",
+      "extension": ".png",
+      "bytes": 51639,
+      "object": "review-archive/objects/2a/2aa660f306e33bd5352b5740c3fd4482d28bbc5bb7b92c0201678ccfc6e6d66a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2a/2aa660f306e33bd5352b5740c3fd4482d28bbc5bb7b92c0201678ccfc6e6d66a.png"
+    },
+    "/keeper-review/activity-cloud-composer-v6/assets/bathroom-flush-handle-d755117e469236c6.png": {
+      "sha256": "d755117e469236c645c3482ce45945148522ac1db27e429e0331e82fea57a51b",
+      "extension": ".png",
+      "bytes": 37909,
+      "object": "review-archive/objects/d7/d755117e469236c645c3482ce45945148522ac1db27e429e0331e82fea57a51b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d7/d755117e469236c645c3482ce45945148522ac1db27e429e0331e82fea57a51b.png"
+    },
+    "/keeper-review/activity-cloud-composer-v6/assets/bathroom-loo-brush-c48ae0af4db9d028.png": {
+      "sha256": "c48ae0af4db9d028916d75f4a3005e085a7861d1abcd9339dd2be67fdd418d92",
+      "extension": ".png",
+      "bytes": 31521,
+      "object": "review-archive/objects/c4/c48ae0af4db9d028916d75f4a3005e085a7861d1abcd9339dd2be67fdd418d92.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c4/c48ae0af4db9d028916d75f4a3005e085a7861d1abcd9339dd2be67fdd418d92.png"
     },
     "/keeper-review/drafts/00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271.png": {
       "sha256": "00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271",

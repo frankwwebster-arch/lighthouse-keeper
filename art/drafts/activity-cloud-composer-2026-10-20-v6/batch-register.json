@@ -1,0 +1,424 @@
+{
+  "schema": "lighthouse-keeper/activity-cloud-composer-register@6",
+  "set": "activity-cloud-composer-v6",
+  "status": "immutable-reversible-review-tool-not-approved",
+  "sourceVocabulary": {
+    "set": "activity-cloud-composer-v5",
+    "catalogue": "public/keeper-review/activity-cloud-composer-v5/catalogue.json",
+    "catalogueSha256": "e7efef12f610900a277c2a1643109badf010a52c97341e51cccea14adbc1b2d8",
+    "register": "art/drafts/activity-cloud-composer-2026-10-19-v5/batch-register.json",
+    "registerSha256": "91e60c4e38806fa354fb0b2d50b60f8231d12bbf05919e0c5306c83c7d0e9821",
+    "inheritedComponents": 146
+  },
+  "generatedSources": [
+    {
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v6/source/bathroom-flush-handle-source.png",
+      "sha256": "e567612b7dcc27d7b9f260b28ec8fbec7285cbf2d9077ad8dfce85e5c69ae02f",
+      "pixels": [
+        1374,
+        1145
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": [
+        129,
+        269,
+        1310,
+        826
+      ],
+      "owner": "bathroom-flush-handle"
+    },
+    {
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v6/source/bathroom-loo-brush-source.png",
+      "sha256": "16361b0098d99312e173137e395c19b8c294dda70bccd0699178060e0683c43b",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": [
+        570,
+        20,
+        1046,
+        975
+      ],
+      "owner": "bathroom-loo-brush"
+    },
+    {
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v6/source/bathroom-bad-smell-source.png",
+      "sha256": "eb4b75939e000388ab7ee9338c7d4252b263e9b4f11a71da44f8709b6ba3f540",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": [
+        407,
+        43,
+        1136,
+        976
+      ],
+      "owner": "bathroom-bad-smell"
+    }
+  ],
+  "newComponents": {
+    "bathroom-flush-handle": {
+      "sourceVisibleBounds": [
+        129,
+        269,
+        1310,
+        826
+      ],
+      "normalisedVisibleSize": [
+        216,
+        102
+      ],
+      "normalisedOffset": [
+        20,
+        77
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v6/drafts/components/bathroom-flush-handle.png",
+      "sha256": "d755117e469236c645c3482ce45945148522ac1db27e429e0331e82fea57a51b",
+      "family": "bathroom",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v6",
+      "src": "/keeper-review/activity-cloud-composer-v6/assets/bathroom-flush-handle-d755117e469236c6.png"
+    },
+    "bathroom-loo-brush": {
+      "sourceVisibleBounds": [
+        570,
+        20,
+        1046,
+        975
+      ],
+      "normalisedVisibleSize": [
+        108,
+        216
+      ],
+      "normalisedOffset": [
+        74,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v6/drafts/components/bathroom-loo-brush.png",
+      "sha256": "c48ae0af4db9d028916d75f4a3005e085a7861d1abcd9339dd2be67fdd418d92",
+      "family": "bathroom",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v6",
+      "src": "/keeper-review/activity-cloud-composer-v6/assets/bathroom-loo-brush-c48ae0af4db9d028.png"
+    },
+    "bathroom-bad-smell": {
+      "sourceVisibleBounds": [
+        407,
+        43,
+        1136,
+        976
+      ],
+      "normalisedVisibleSize": [
+        169,
+        216
+      ],
+      "normalisedOffset": [
+        43,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v6/drafts/components/bathroom-bad-smell.png",
+      "sha256": "2aa660f306e33bd5352b5740c3fd4482d28bbc5bb7b92c0201678ccfc6e6d66a",
+      "family": "bathroom",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v6",
+      "src": "/keeper-review/activity-cloud-composer-v6/assets/bathroom-bad-smell-2aa660f306e33bd5.png"
+    }
+  },
+  "suggestedRecipes": {
+    "collecting-eggs": {
+      "label": "Collecting eggs",
+      "targetAssetLabel": "Chicken coop",
+      "targetAssetId": "outdoor.chicken-coop",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "eggs-hen-coop",
+        "eggs-nest",
+        "eggs-basket",
+        "mixing-egg"
+      ],
+      "sfx": "coop-cluck"
+    },
+    "making-toast": {
+      "label": "Making toast",
+      "targetAssetLabel": "Toaster",
+      "targetAssetId": "kitchen.toaster",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "toast-toaster",
+        "toast-slices",
+        "toast-butter-jam",
+        "sandwich-bread"
+      ],
+      "sfx": "toaster-pop"
+    },
+    "using-loo": {
+      "label": "Using the loo",
+      "targetAssetLabel": "Toilet",
+      "targetAssetId": "bathroom.toilet",
+      "bodyCompatibility": "dedicated-pose-required",
+      "elements": [
+        "bathroom-toilet",
+        "bathroom-toilet-roll",
+        "bathroom-flush-handle",
+        "bathroom-loo-brush",
+        "bathroom-bad-smell"
+      ],
+      "sfx": "bathroom-door-close"
+    },
+    "soaking-in-bath": {
+      "label": "Soaking in the bath",
+      "targetAssetLabel": "Bath",
+      "targetAssetId": "bathroom.bath",
+      "bodyCompatibility": "dedicated-pose-required",
+      "elements": [
+        "bathroom-bathtub",
+        "bathroom-bubbles",
+        "bathroom-rubber-duck",
+        "hygiene-shampoo"
+      ],
+      "sfx": "bath-water"
+    },
+    "napping-armchair": {
+      "label": "Napping in armchair",
+      "targetAssetLabel": "Armchair",
+      "targetAssetId": "lounge.armchair",
+      "bodyCompatibility": "dedicated-pose-required",
+      "elements": [
+        "rest-armchair",
+        "rest-sleep-marks",
+        "rest-blanket-pillow",
+        "tea-mug"
+      ],
+      "sfx": "sleep-breath"
+    },
+    "reading-adventure": {
+      "label": "Reading an adventure",
+      "targetAssetLabel": "Reading chair",
+      "targetAssetId": "lounge.reading-chair",
+      "bodyCompatibility": "dedicated-pose-required",
+      "elements": [
+        "reading-open-book",
+        "reading-pirate-ship",
+        "reading-dragon",
+        "reading-treasure-chest",
+        "reading-castle"
+      ],
+      "sfx": "page-turn"
+    },
+    "throwing-pottery": {
+      "label": "Throwing pottery",
+      "targetAssetLabel": "Pottery wheel",
+      "targetAssetId": "workshop.pottery-wheel",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "pottery-wheel",
+        "pottery-hands-moulding",
+        "pottery-wet-clay",
+        "pottery-vase"
+      ],
+      "sfx": "pottery-wheel"
+    },
+    "writing": {
+      "label": "Writing",
+      "targetAssetLabel": "Writing desk",
+      "targetAssetId": "study.writing-desk",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "writing-fountain-pen",
+        "writing-pencil",
+        "writing-notebook",
+        "writing-ink-bottle",
+        "writing-eraser"
+      ],
+      "sfx": "pen-scratch"
+    },
+    "feeding-pet": {
+      "label": "Feeding pet",
+      "targetAssetLabel": "Pet feeding spot",
+      "targetAssetId": "home.pet-feeding",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "pet-food-bag",
+        "pet-bone",
+        "pet-fish",
+        "pet-heart",
+        "pet-food-bowl"
+      ],
+      "sfx": "pet-bowl"
+    },
+    "fishing": {
+      "label": "Fishing",
+      "targetAssetLabel": "Fishing spot",
+      "targetAssetId": "outdoor.fishing-spot",
+      "bodyCompatibility": "dedicated-pose-required",
+      "elements": [
+        "fishing-rod",
+        "fishing-caught-fish",
+        "fishing-bait",
+        "fishing-float",
+        "fishing-tackle-box"
+      ],
+      "sfx": "fishing-cast"
+    },
+    "exercising": {
+      "label": "Exercising",
+      "targetAssetLabel": "Exercise mat",
+      "targetAssetId": "home.exercise-mat",
+      "bodyCompatibility": "dedicated-pose-required",
+      "elements": [
+        "exercise-sweat-drop",
+        "exercise-flexed-arm",
+        "exercise-dumbbell",
+        "exercise-trainers",
+        "exercise-skipping-rope"
+      ],
+      "sfx": "exercise-effort"
+    },
+    "playing-games": {
+      "label": "Playing cards or board game",
+      "targetAssetLabel": "Games table",
+      "targetAssetId": "lounge.games-table",
+      "bodyCompatibility": "dedicated-pose-required",
+      "elements": [
+        "games-playing-cards",
+        "games-dice",
+        "games-board-and-pawns",
+        "games-chess-knight"
+      ],
+      "sfx": "game-piece"
+    },
+    "fixing-boat": {
+      "label": "Fixing the boat",
+      "targetAssetLabel": "Boat",
+      "targetAssetId": "harbour.boat",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "repair-boat-hull-patch",
+        "repair-outboard-motor",
+        "repair-wrench-cog",
+        "repair-rope-knot",
+        "repair-toolbox"
+      ],
+      "sfx": "boat-repair"
+    },
+    "filling-petrol": {
+      "label": "Filling petrol",
+      "targetAssetLabel": "Fuel point",
+      "targetAssetId": "yard.fuel-point",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "repair-petrol-fill",
+        "repair-outboard-motor",
+        "repair-wrench-cog",
+        "repair-battery-leads"
+      ],
+      "sfx": "fuel-fill"
+    },
+    "general-mending": {
+      "label": "General mending",
+      "targetAssetLabel": "Repair bench",
+      "targetAssetId": "workshop.repair-bench",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "repair-toolbox",
+        "repair-hammer-nails",
+        "repair-boat-varnish",
+        "repair-battery-leads",
+        "repair-tyre-pump"
+      ],
+      "sfx": "repair-tools"
+    }
+  },
+  "catalogue": {
+    "file": "public/keeper-review/activity-cloud-composer-v6/catalogue.json",
+    "sha256": "eb5060a665694137ce63a45dcb8f914d1086570393399b1537d37ade660fe2aa",
+    "components": 149,
+    "newComponents": 3
+  },
+  "page": {
+    "file": "public/keeper-review/activity-cloud-composer-v6/index.html",
+    "sha256": "a88ef66c626cedc17264c2d9b334e5f893dfbbef11b2a0a2998bb4e8c4d78aa2"
+  },
+  "candidate": {
+    "publicShell": {
+      "file": "public/keeper-review/activity-cloud-composer-v6/index.html",
+      "sha256": "a88ef66c626cedc17264c2d9b334e5f893dfbbef11b2a0a2998bb4e8c4d78aa2"
+    }
+  },
+  "publishedAssets": [
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-20-v6/drafts/components/bathroom-flush-handle.png",
+      "sourceSha256": "d755117e469236c645c3482ce45945148522ac1db27e429e0331e82fea57a51b",
+      "public": "public/keeper-review/activity-cloud-composer-v6/assets/bathroom-flush-handle-d755117e469236c6.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v6/assets/bathroom-flush-handle-d755117e469236c6.png",
+      "publicSha256": "d755117e469236c645c3482ce45945148522ac1db27e429e0331e82fea57a51b",
+      "url": "/keeper-review/activity-cloud-composer-v6/assets/bathroom-flush-handle-d755117e469236c6.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-20-v6/drafts/components/bathroom-loo-brush.png",
+      "sourceSha256": "c48ae0af4db9d028916d75f4a3005e085a7861d1abcd9339dd2be67fdd418d92",
+      "public": "public/keeper-review/activity-cloud-composer-v6/assets/bathroom-loo-brush-c48ae0af4db9d028.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v6/assets/bathroom-loo-brush-c48ae0af4db9d028.png",
+      "publicSha256": "c48ae0af4db9d028916d75f4a3005e085a7861d1abcd9339dd2be67fdd418d92",
+      "url": "/keeper-review/activity-cloud-composer-v6/assets/bathroom-loo-brush-c48ae0af4db9d028.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-20-v6/drafts/components/bathroom-bad-smell.png",
+      "sourceSha256": "2aa660f306e33bd5352b5740c3fd4482d28bbc5bb7b92c0201678ccfc6e6d66a",
+      "public": "public/keeper-review/activity-cloud-composer-v6/assets/bathroom-bad-smell-2aa660f306e33bd5.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v6/assets/bathroom-bad-smell-2aa660f306e33bd5.png",
+      "publicSha256": "2aa660f306e33bd5352b5740c3fd4482d28bbc5bb7b92c0201678ccfc6e6d66a",
+      "url": "/keeper-review/activity-cloud-composer-v6/assets/bathroom-bad-smell-2aa660f306e33bd5.png"
+    }
+  ],
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersClear": true,
+    "componentOwnershipUnambiguous": true,
+    "v5ComposerUnchanged": true,
+    "primeBodyUnchanged": true,
+    "runtimeChanged": false,
+    "kitchenChanged": false,
+    "deployed": false
+  },
+  "approvalBoundary": {
+    "vocabularyApproved": false,
+    "composerApproved": false,
+    "recipesApproved": false,
+    "runtimePromoted": false
+  }
+}
