@@ -225,7 +225,7 @@ formally rejected at
 four arms after the held pose was added, broke up through the turn, introduced
 pixelation and did not remain visually identical to approved Prime walk art.
 The active gate is now the broomless
-`/keeper-review/keeper-prime-upper-body-override-poc-v2/`. It is the smallest
+`/keeper-review/keeper-prime-upper-body-override-poc-v3/`. It is the smallest
 motion-feasibility proof for reusable `hold_shaft_two_hand`: eight alternating
 gait phases, nine approved turn angles, no more than two visible hands and zero
 prop pixels. It is explicitly a phase-matched full-character proxy rather than
@@ -247,6 +247,16 @@ valid PNG signatures on 19 October 2026. Both POC verifiers, TypeScript and the
 production build pass. The complete repository suite reaches the independent
 50 MiB public-payload gate at 50.41 MiB after unrelated kitchen review work;
 V2 adds only its 1,016-byte shell and no public image media.
+
+Frank then reported that V2 still jumped at frames 17→18 and that the walk read
+as walking on the spot. The remaining seam was not root drift: the planted
+root was stable, but the generated proxy's full-silhouette centroid moved
+1.333 lp at the rear crossing. V3 gives only playback frame 18 a reversible
+one-lp presentation registration, reducing the adjacent centroid changes to
++0.333/-0.408 lp. It also replaces the reviewer's modulo loop with one-shot
+playback, so the exact standard 2.625-lp-per-frame walk stops after advancing
+21 lp instead of snapping back to its starting coordinate. No pixels, gait or
+turn order, durations, Final, runtime or production assets change.
 
 Back V1's exact deploy commit `d93c89c` remains delivery provenance only. Back
 V2 is live from exact deploy commit `f165576`; its 61-frame route and all 36

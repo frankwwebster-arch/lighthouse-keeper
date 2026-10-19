@@ -140,14 +140,16 @@ decision at
 `docs/review/keeper-prime-sweep-broom-v8-rejection-2026-10-19.json`.
 
 The active gate is the prop-free `hold_shaft_two_hand` motion-feasibility POC
-at `/keeper-review/keeper-prime-upper-body-override-poc-v2/`. It contains eight
+at `/keeper-review/keeper-prime-upper-body-override-poc-v3/`. It contains eight
 alternating gait phases, nine approved turn angles, never more than two visible
 hands and no broom or other prop pixels. Because the approved PNG authorities
 do not contain separable torso/arm layers, this smallest proof uses clean
 phase-matched full-character proxies and is explicitly not pixel-identical
-production art. V2 is frame-, route- and timing-identical to immutable V1. It
-only corrects mirror-aware presentation, eliminating the false 10.5-lp leap at
-frames 17→18. Frank called V1 a valuable POC, but has not formally approved it.
+production art. V3 reuses every immutable V1 frame and duration. It retains
+V2's mirror-aware anchor, adds a one-lp presentation registration at the
+remaining rear seam, and uses one-shot playback so the standard advancing walk
+does not wrap immediately to its start. Frank called V1 a valuable POC, but has
+not formally approved it.
 If he accepts the motion idea, the next gate is a newly authored layered Prime
 torso/arm construction. Nothing is approved or promoted.
 
@@ -390,9 +392,9 @@ runtime or production artwork.
 
 Documentation audit updated on 19 October 2026: README, STATUS, this restart
 handoff and the artwork/review playbook agree that Sweep Broom V1–V8 are
-rejected, held-implement POC V1 remains immutable, V2 corrects only its mirror
-anchor, production requires separable Prime torso/arm layers, nothing is
-promoted, and Back Sit/Stand V2 remains separately approved and hash-pinned
+rejected, held-implement POC V1/V2 remain immutable, V3 is the presentation-only
+active successor, production requires separable Prime torso/arm layers, nothing
+is promoted, and Back Sit/Stand V2 remains separately approved and hash-pinned
 without any production-art promotion.
 
 Held-implement POC V1 delivery is immutable: candidate commit `98892f9c`,
@@ -418,3 +420,12 @@ URLs passed signature checks on 19 October 2026. Dedicated V1/V2 verification,
 TypeScript and production build pass. The complete repository suite stops at
 the independent public-payload ceiling (50.40 MiB versus 50 MiB); V2 itself
 contains no new image media and adds only a 1,016-byte public shell.
+
+Frank then reported that V2 still jumped at frames 17→18 and appeared to walk
+on the spot. Diagnostics separated the causes: the mathematical/planted root
+was continuous, but full-silhouette centroid moved 1.333 lp at the generated
+rear seam; and modulo playback reset the advancing walk directly to frame 1.
+V3 changes no image, order, duration or standard root-motion speed. Frame 18
+receives a one-lp presentation offset, reducing adjacent seam deltas to
++0.333/-0.408 lp, and playback stops at the translated endpoint. V1 and V2
+remain immutable.
