@@ -220,7 +220,7 @@ commits at x=336 and targets x=378/y=218. The seamless join activates only for
 exactly adjacent committed bounds, so its logical gap is guaranteed to be zero.
 V23 changes no Final or runtime asset.
 
-The active surface-state proof is Kitchen Exposed End Healing V24 at
+The superseded surface-state proof is Kitchen Exposed End Healing V24 at
 `/keeper-review/kitchen-exposed-end-healing-v24/`. It preserves V23 snapping,
 legal footprints and Prime midpoint anchors. An exact neighbour still selects
 the approved V22 body and countertop join repair. When the sink's left edge is
@@ -230,6 +230,17 @@ the established rounded teal lip and blue cabinet end. The exposed-end overlay
 and joined-edge repair are mutually exclusive and recalculated after every
 move. The review defaults to exposed bay 5 and includes a review-only raw/healed
 comparison. V24 changes no source sprite, Final or runtime asset.
+
+The active correction is Kitchen Exposed End Cutout V25 at
+`/keeper-review/kitchen-exposed-end-cutout-v25/`. V24's V11 crop was the right
+end treatment, but its transparent rounded contour allowed the obsolete V19
+sink join triangle to remain visible underneath. V25 draws the movable sink on
+an isolated layer, clears the exact 12 × 82 V11 replacement window only when
+the left side is exposed, then draws the V11 end before compositing that layer.
+Joined placement skips the clear and retains the complete sink for V22. The
+page defaults to exposed bay 5 with guides hidden and adds an 8× focus plus a
+review-only untreated/corrected comparison. Source sprites, Final and runtime
+remain unchanged.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

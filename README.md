@@ -583,6 +583,12 @@ present only when no exact neighbour occupies the adjacent bay and disappears
 when the V22 seamless join becomes applicable. A review-only control exposes
 the untreated edge for comparison. See
 [`docs/KITCHEN_EXPOSED_END_HEALING_V24_2026-10-19.md`](docs/KITCHEN_EXPOSED_END_HEALING_V24_2026-10-19.md).
+The V25 correction at `/keeper-review/kitchen-exposed-end-cutout-v25/`
+replaces V24's simple overlay with an isolated-layer cutout: it clears the
+exact V11 replacement window from the sink layer before drawing the rounded
+end, so obsolete join pixels cannot show through the end crop's transparent
+contour. Joined placement retains the complete sink and V22 repair. See
+[`docs/KITCHEN_EXPOSED_END_CUTOUT_V25_2026-10-19.md`](docs/KITCHEN_EXPOSED_END_CUTOUT_V25_2026-10-19.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
