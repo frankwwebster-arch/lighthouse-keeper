@@ -1,0 +1,2979 @@
+{
+  "schema": "lighthouse-keeper/reversible-review-batch@1",
+  "set": "keeper-prime-upper-body-override-poc-v1",
+  "status": "prime-upper-body-override-poc-awaiting-frank",
+  "purpose": "Smallest motion-feasibility proof: a reusable two-hand shaft-grip pose across the approved locomotion phases and turn angles.",
+  "supersedes": {
+    "set": "keeper-prime-sweep-broom-v8",
+    "status": "rejected-provenance",
+    "reason": "V8 overlaid held limbs without removing the approved swinging limbs, producing four arms/hands and visible pixel breakup."
+  },
+  "scope": {
+    "implementIncluded": false,
+    "cupboardIncluded": false,
+    "activityLoopIncluded": false,
+    "walkFrames": 8,
+    "turnFrames": 9,
+    "combinedPlaybackFrames": 33,
+    "gripProfile": "hold_shaft_two_hand"
+  },
+  "authorities": {
+    "approvedWalkV6": [
+      {
+        "frame": 1,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+        "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656"
+      },
+      {
+        "frame": 2,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f2.png",
+        "sha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf"
+      },
+      {
+        "frame": 3,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f3.png",
+        "sha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4"
+      },
+      {
+        "frame": 4,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f4.png",
+        "sha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b"
+      },
+      {
+        "frame": 5,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f5.png",
+        "sha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549"
+      },
+      {
+        "frame": 6,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f6.png",
+        "sha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52"
+      },
+      {
+        "frame": 7,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f7.png",
+        "sha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df"
+      },
+      {
+        "frame": 8,
+        "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f8.png",
+        "sha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61"
+      }
+    ],
+    "approvedTurnV9": [
+      {
+        "frame": 1,
+        "angleDegrees": 90,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f01.png",
+        "sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8"
+      },
+      {
+        "frame": 2,
+        "angleDegrees": 98,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f02.png",
+        "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5"
+      },
+      {
+        "frame": 3,
+        "angleDegrees": 105,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f03.png",
+        "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859"
+      },
+      {
+        "frame": 4,
+        "angleDegrees": 120,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f04.png",
+        "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655"
+      },
+      {
+        "frame": 5,
+        "angleDegrees": 135,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f05.png",
+        "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc"
+      },
+      {
+        "frame": 6,
+        "angleDegrees": 150,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f06.png",
+        "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c"
+      },
+      {
+        "frame": 7,
+        "angleDegrees": 165,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f07.png",
+        "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e"
+      },
+      {
+        "frame": 8,
+        "angleDegrees": 172.5,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f08.png",
+        "sha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132"
+      },
+      {
+        "frame": 9,
+        "angleDegrees": 180,
+        "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f09.png",
+        "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+      }
+    ],
+    "primeRig": {
+      "file": "art/drafts/keeper-prime-construction-rig-2026-10-13-v1/rig/keeper-prime-rig-v1.json",
+      "sha256": "5786df6eb654471f81dda161fc909a5768abb2d96aade24fb84448beb7cdf765"
+    },
+    "requestedGripReference": {
+      "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v6/drafts/frames/sweep3.png",
+      "sha256": "0dbf8b8343d66d9514dfc3776823d192bc829c6c03730cd4bb4dc4bbc02a1a78",
+      "role": "joint relationship only; no prop pixels survive"
+    },
+    "generatedTurnSource": {
+      "file": "art/source/keeper-prime-upper-body-override-poc-2026-10-19-v1/turn-shaft-grip-grid-generated.png",
+      "sha256": "73dbf31864b297f686d85d81732d71a390b38bc6cb4ee70ac919388b54d660cc",
+      "role": "broomless nine-cell upper-body pose source"
+    }
+  },
+  "construction": {
+    "method": "phase-matched full-character proxy; never overlay held limbs on the complete authority",
+    "headLockedToExactAuthority": false,
+    "lowerBodyLockedToExactAuthority": false,
+    "outsideOverrideByteIdentical": false,
+    "candidateColoursMappedToMatchingFrameAuthority": true,
+    "productionMethodStillRequired": "author separable Prime torso/arm layers before any production promotion",
+    "propPixels": 0,
+    "maximumVisibleHandComponents": 2,
+    "walkOrderBothDirections": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "turnOrder": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1
+    ],
+    "walkDurationMs": 125,
+    "turnDurationMs": 111.111111,
+    "walkRootDeltaHighResolutionPixels": 21,
+    "walkRootDeltaLogicalPixels": 2.625
+  },
+  "candidate": {
+    "frames": [
+      {
+        "id": "walk1",
+        "kind": "approved-walk-v6-upper-body-override",
+        "gaitFrame": 1,
+        "gaitPhase": "left-foot contact",
+        "durationMs": 125,
+        "translationOnlyOffsetPx": [
+          7,
+          -4
+        ],
+        "sourceArt": {
+          "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-1.png",
+          "sha256": "a9634a0d6057f4a36a78db93aa69fc81267c78252357d71b310b3f801993b23f",
+          "role": "two-hand shaft-grip pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+          "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk1.png",
+          "sha256": "aa0d8788c17567291a7a2de931c2081b3b2b425c82d81acce4dbf2df565bc56d",
+          "bounds": [
+            60,
+            12,
+            243,
+            315
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 5
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk1-registered-source.png",
+          "sha256": "aa0d8788c17567291a7a2de931c2081b3b2b425c82d81acce4dbf2df565bc56d"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk1-upper-body-override.png",
+          "sha256": "d1e400f332691e2a4a3d91c9fe5599d85f2f7a959bd2229f8ffa19c9c0524309",
+          "audit": {
+            "changedPixels": 34404,
+            "changedInsideOverride": 34404,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk1-exact-head-lock.png",
+          "sha256": "3a8e7b2e5b6d5c7756ab877778f722a4b0e540aa765fb1cbe4624c4cdf462a34"
+        },
+        "hands": {
+          "visibleComponents": [
+            {
+              "pixels": 647,
+              "boundsExclusive": [
+                174,
+                152,
+                203,
+                181
+              ],
+              "centroid": [
+                188.454,
+                165.992
+              ]
+            },
+            {
+              "pixels": 734,
+              "boundsExclusive": [
+                181,
+                188,
+                215,
+                218
+              ],
+              "centroid": [
+                198.327,
+                202.525
+              ]
+            }
+          ],
+          "visibleComponentCount": 2,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk1-grip-axis.png",
+          "sha256": "380c44b6b635a48ca7eebb4ebcf7504905bb4a61dd5581b59497b9a02d0685b8",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 30013,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 52,
+              "authorityPixels": 0,
+              "candidateMedian": 78.539,
+              "authorityMedian": null,
+              "candidateQ25": 42.221,
+              "candidateQ75": 90.889,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "cream": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "skin": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/aa/aa0d8788c17567291a7a2de931c2081b3b2b425c82d81acce4dbf2df565bc56d.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/841b5a08638439511424a27f6e08bf4b4e1f3a5ba4965bc98e6fc5e00c06805d.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d1/d1e400f332691e2a4a3d91c9fe5599d85f2f7a959bd2229f8ffa19c9c0524309.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/38/380c44b6b635a48ca7eebb4ebcf7504905bb4a61dd5581b59497b9a02d0685b8.png"
+      },
+      {
+        "id": "walk2",
+        "kind": "approved-walk-v6-upper-body-override",
+        "gaitFrame": 2,
+        "gaitPhase": "left-foot down",
+        "durationMs": 125,
+        "translationOnlyOffsetPx": [
+          17,
+          -4
+        ],
+        "sourceArt": {
+          "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-2.png",
+          "sha256": "e1d40659ab19568cc0da214dd1751ef615bfb5ec87197b2f0fa2938cc2d1ff34",
+          "role": "two-hand shaft-grip pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f2.png",
+          "sha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk2.png",
+          "sha256": "d21537acd20d3f0bd363ac2904814d9d6eaca19c242e9ffbc63f4cae338a7012",
+          "bounds": [
+            92,
+            10,
+            221,
+            314
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 6
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk2-registered-source.png",
+          "sha256": "d21537acd20d3f0bd363ac2904814d9d6eaca19c242e9ffbc63f4cae338a7012"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk2-upper-body-override.png",
+          "sha256": "4363b6d0fa938364463382333c1b93db54a3745898ea45581097470fe2615844",
+          "audit": {
+            "changedPixels": 28983,
+            "changedInsideOverride": 28983,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk2-exact-head-lock.png",
+          "sha256": "6e5784436e4d2da838b62cd181b00d25b871fbe1159ca8b5b5a7d24f2ef7f51a"
+        },
+        "hands": {
+          "visibleComponents": [
+            {
+              "pixels": 616,
+              "boundsExclusive": [
+                177,
+                151,
+                205,
+                180
+              ],
+              "centroid": [
+                191.091,
+                165.242
+              ]
+            },
+            {
+              "pixels": 727,
+              "boundsExclusive": [
+                183,
+                188,
+                217,
+                217
+              ],
+              "centroid": [
+                200.607,
+                201.703
+              ]
+            }
+          ],
+          "visibleComponentCount": 2,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk2-grip-axis.png",
+          "sha256": "46eb95541343308c979cf39d71d67ddc61c1cbf28b9fc027985482927b85eb8e",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 26468,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 66,
+              "authorityPixels": 0,
+              "candidateMedian": 69.521,
+              "authorityMedian": null,
+              "candidateQ25": 53.392,
+              "candidateQ75": 88.354,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "cream": {
+              "candidatePixels": 1,
+              "authorityPixels": 0,
+              "candidateMedian": 144.264,
+              "authorityMedian": null,
+              "candidateQ25": 144.264,
+              "candidateQ75": 144.264,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "skin": {
+              "candidatePixels": 4,
+              "authorityPixels": 0,
+              "candidateMedian": 167.067,
+              "authorityMedian": null,
+              "candidateQ25": 159.514,
+              "candidateQ75": 169.767,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d2/d21537acd20d3f0bd363ac2904814d9d6eaca19c242e9ffbc63f4cae338a7012.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7e/7e65ee85d9e66bf11ad92bbb99c789a537027d5681e51baa036dd2bb48234607.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/43/4363b6d0fa938364463382333c1b93db54a3745898ea45581097470fe2615844.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/46/46eb95541343308c979cf39d71d67ddc61c1cbf28b9fc027985482927b85eb8e.png"
+      },
+      {
+        "id": "walk3",
+        "kind": "approved-walk-v6-upper-body-override",
+        "gaitFrame": 3,
+        "gaitPhase": "left-foot passing",
+        "durationMs": 125,
+        "translationOnlyOffsetPx": [
+          23,
+          -4
+        ],
+        "sourceArt": {
+          "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-3.png",
+          "sha256": "317e073c469b430d7f2a99dad383ef0a8a8ceda8aef90f43fcd262dcbb95063d",
+          "role": "two-hand shaft-grip pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f3.png",
+          "sha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk3.png",
+          "sha256": "467ccca42a609f3346ef728513892ce147e0606454c053eb175292e05fc33542",
+          "bounds": [
+            108,
+            10,
+            233,
+            314
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 6
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk3-registered-source.png",
+          "sha256": "467ccca42a609f3346ef728513892ce147e0606454c053eb175292e05fc33542"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk3-upper-body-override.png",
+          "sha256": "fe17db876770d7ef768f375c9f5da70bc8240110fe73c5d1373d97576266060f",
+          "audit": {
+            "changedPixels": 26394,
+            "changedInsideOverride": 26394,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk3-exact-head-lock.png",
+          "sha256": "9a3cb7db245eb956c78338afdea602d06f1f8781732f74e33d1c38d7c9ca2fe4"
+        },
+        "hands": {
+          "visibleComponents": [
+            {
+              "pixels": 614,
+              "boundsExclusive": [
+                190,
+                152,
+                218,
+                182
+              ],
+              "centroid": [
+                203.853,
+                166.51
+              ]
+            },
+            {
+              "pixels": 680,
+              "boundsExclusive": [
+                195,
+                189,
+                228,
+                218
+              ],
+              "centroid": [
+                211.293,
+                203.15
+              ]
+            }
+          ],
+          "visibleComponentCount": 2,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk3-grip-axis.png",
+          "sha256": "462367694a2f43d43d48134ac363e029658c009779ec6380639262180be7db38",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 25622,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 36,
+              "authorityPixels": 0,
+              "candidateMedian": 81.478,
+              "authorityMedian": null,
+              "candidateQ25": 39.914,
+              "candidateQ75": 89.268,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "cream": {
+              "candidatePixels": 1,
+              "authorityPixels": 0,
+              "candidateMedian": 182.762,
+              "authorityMedian": null,
+              "candidateQ25": 182.762,
+              "candidateQ75": 182.762,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "skin": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/46/467ccca42a609f3346ef728513892ce147e0606454c053eb175292e05fc33542.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cc/cc6a29c3f9e699f85665521ae92134d404d8c13a25d000b82350c2858b263a3a.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fe/fe17db876770d7ef768f375c9f5da70bc8240110fe73c5d1373d97576266060f.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/46/462367694a2f43d43d48134ac363e029658c009779ec6380639262180be7db38.png"
+      },
+      {
+        "id": "walk4",
+        "kind": "approved-walk-v6-upper-body-override",
+        "gaitFrame": 4,
+        "gaitPhase": "left-foot up",
+        "durationMs": 125,
+        "translationOnlyOffsetPx": [
+          21,
+          -4
+        ],
+        "sourceArt": {
+          "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-4.png",
+          "sha256": "abbc7c9bee5582e6a2992d01c2c4ecddceae86bce075074afa59f175d3ebc595",
+          "role": "two-hand shaft-grip pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f4.png",
+          "sha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk4.png",
+          "sha256": "fefd5cba181bbb53b052c6ea8b902889890849418201ccbc1bad9ea6914cf054",
+          "bounds": [
+            86,
+            11,
+            256,
+            314
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 6
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk4-registered-source.png",
+          "sha256": "fefd5cba181bbb53b052c6ea8b902889890849418201ccbc1bad9ea6914cf054"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk4-upper-body-override.png",
+          "sha256": "0bccb37782aebea39aebc0c23b8bc346fd989a867061532329aae7016e606726",
+          "audit": {
+            "changedPixels": 31881,
+            "changedInsideOverride": 31881,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk4-exact-head-lock.png",
+          "sha256": "1db6caae9cee6dd4622a54f0135c5c1f832fb78045ed96f07c98810083bd4591"
+        },
+        "hands": {
+          "visibleComponents": [
+            {
+              "pixels": 574,
+              "boundsExclusive": [
+                191,
+                146,
+                219,
+                176
+              ],
+              "centroid": [
+                204.707,
+                160.145
+              ]
+            },
+            {
+              "pixels": 661,
+              "boundsExclusive": [
+                198,
+                182,
+                230,
+                211
+              ],
+              "centroid": [
+                214.113,
+                195.608
+              ]
+            }
+          ],
+          "visibleComponentCount": 2,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk4-grip-axis.png",
+          "sha256": "c78cbcf9af22e516a85b3599ab5e89f5a47d8ecf202af96853ee61b6b854cc2b",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 28075,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 54,
+              "authorityPixels": 0,
+              "candidateMedian": 83.155,
+              "authorityMedian": null,
+              "candidateQ25": 60.619,
+              "candidateQ75": 86.478,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "cream": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "skin": {
+              "candidatePixels": 1,
+              "authorityPixels": 0,
+              "candidateMedian": 136.927,
+              "authorityMedian": null,
+              "candidateQ25": 136.927,
+              "candidateQ75": 136.927,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fe/fefd5cba181bbb53b052c6ea8b902889890849418201ccbc1bad9ea6914cf054.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/27/27323782eb220f63d41f7344f29d58df8fbe407e71b89e633a1c46cba1c3a102.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0b/0bccb37782aebea39aebc0c23b8bc346fd989a867061532329aae7016e606726.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c7/c78cbcf9af22e516a85b3599ab5e89f5a47d8ecf202af96853ee61b6b854cc2b.png"
+      },
+      {
+        "id": "walk5",
+        "kind": "approved-walk-v6-upper-body-override",
+        "gaitFrame": 5,
+        "gaitPhase": "right-foot contact",
+        "durationMs": 125,
+        "translationOnlyOffsetPx": [
+          17,
+          -4
+        ],
+        "sourceArt": {
+          "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-5.png",
+          "sha256": "7f4e08c2ea584880724e950188824a450c1b005f5c11bb40320e951501512af6",
+          "role": "two-hand shaft-grip pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f5.png",
+          "sha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk5.png",
+          "sha256": "b2bb9aea06b2265b0dd778b745e176cb580e1100fb0114df07bea9edbf1a489c",
+          "bounds": [
+            64,
+            17,
+            252,
+            315
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 5
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk5-registered-source.png",
+          "sha256": "b2bb9aea06b2265b0dd778b745e176cb580e1100fb0114df07bea9edbf1a489c"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk5-upper-body-override.png",
+          "sha256": "f331735203c0995960c7dd22a25e39433b22bfd5b919f6289fb509c711c5e8ee",
+          "audit": {
+            "changedPixels": 31353,
+            "changedInsideOverride": 31353,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk5-exact-head-lock.png",
+          "sha256": "a62c81981a1a9d5eae847fab4965b13e14ce42429460a02a726aa51e8bd534f7"
+        },
+        "hands": {
+          "visibleComponents": [
+            {
+              "pixels": 589,
+              "boundsExclusive": [
+                186,
+                157,
+                214,
+                185
+              ],
+              "centroid": [
+                199.964,
+                170.835
+              ]
+            },
+            {
+              "pixels": 698,
+              "boundsExclusive": [
+                191,
+                193,
+                225,
+                222
+              ],
+              "centroid": [
+                207.98,
+                206.893
+              ]
+            }
+          ],
+          "visibleComponentCount": 2,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk5-grip-axis.png",
+          "sha256": "5e994624ceab52a08165b209431af3501b5b2edb846c797d832d5107e5f1fc9d",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 29885,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 48,
+              "authorityPixels": 0,
+              "candidateMedian": 89.156,
+              "authorityMedian": null,
+              "candidateQ25": 53.599,
+              "candidateQ75": 96.271,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "cream": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "skin": {
+              "candidatePixels": 5,
+              "authorityPixels": 0,
+              "candidateMedian": 213.981,
+              "authorityMedian": null,
+              "candidateQ25": 189.554,
+              "candidateQ75": 213.981,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b2/b2bb9aea06b2265b0dd778b745e176cb580e1100fb0114df07bea9edbf1a489c.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/54/545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c7/c7562f46676444f4f39a3f34dfc9b33ecc2f99c20d4ac2d737633bc393995b5d.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f3/f331735203c0995960c7dd22a25e39433b22bfd5b919f6289fb509c711c5e8ee.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5e/5e994624ceab52a08165b209431af3501b5b2edb846c797d832d5107e5f1fc9d.png"
+      },
+      {
+        "id": "walk6",
+        "kind": "approved-walk-v6-upper-body-override",
+        "gaitFrame": 6,
+        "gaitPhase": "right-foot down",
+        "durationMs": 125,
+        "translationOnlyOffsetPx": [
+          19,
+          -4
+        ],
+        "sourceArt": {
+          "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-6.png",
+          "sha256": "3ba05a6d942d90382148ca63893efa24829e276ba3504b500f894d73c95d48d2",
+          "role": "two-hand shaft-grip pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f6.png",
+          "sha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk6.png",
+          "sha256": "88f2dbfcad4af4080c527b4ce9759035f5f3a85e870e8bd9fa87151326584f98",
+          "bounds": [
+            80,
+            16,
+            222,
+            315
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 5
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk6-registered-source.png",
+          "sha256": "88f2dbfcad4af4080c527b4ce9759035f5f3a85e870e8bd9fa87151326584f98"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk6-upper-body-override.png",
+          "sha256": "2cb233ac8029d633f561e7a184b605c9b68449c9995afdbc39a09b73f51e3582",
+          "audit": {
+            "changedPixels": 29705,
+            "changedInsideOverride": 29705,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk6-exact-head-lock.png",
+          "sha256": "0a58d6d30c9f02173785f45776091039d6b3e9956ebfd4b143c190b0154ac566"
+        },
+        "hands": {
+          "visibleComponents": [
+            {
+              "pixels": 615,
+              "boundsExclusive": [
+                181,
+                158,
+                210,
+                186
+              ],
+              "centroid": [
+                195.449,
+                171.124
+              ]
+            },
+            {
+              "pixels": 705,
+              "boundsExclusive": [
+                185,
+                193,
+                219,
+                222
+              ],
+              "centroid": [
+                202.04,
+                207.413
+              ]
+            }
+          ],
+          "visibleComponentCount": 2,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk6-grip-axis.png",
+          "sha256": "6d419497cbb0dd9ca6b5a698bbe20ecf4d7a29fdd75ad95057c4d8ddfd81bf66",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 27548,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 26,
+              "authorityPixels": 0,
+              "candidateMedian": 93.268,
+              "authorityMedian": null,
+              "candidateQ25": 81.279,
+              "candidateQ75": 95.34,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "cream": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "skin": {
+              "candidatePixels": 2,
+              "authorityPixels": 0,
+              "candidateMedian": 129.171,
+              "authorityMedian": null,
+              "candidateQ25": 126.583,
+              "candidateQ75": 131.759,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/88/88f2dbfcad4af4080c527b4ce9759035f5f3a85e870e8bd9fa87151326584f98.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a4/a4df8b83ede2f03aff222fc8c951d6cc6ab012dfc6da5e055bed8e45c8b91d71.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2c/2cb233ac8029d633f561e7a184b605c9b68449c9995afdbc39a09b73f51e3582.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6d/6d419497cbb0dd9ca6b5a698bbe20ecf4d7a29fdd75ad95057c4d8ddfd81bf66.png"
+      },
+      {
+        "id": "walk7",
+        "kind": "approved-walk-v6-upper-body-override",
+        "gaitFrame": 7,
+        "gaitPhase": "right-foot passing",
+        "durationMs": 125,
+        "translationOnlyOffsetPx": [
+          17,
+          -4
+        ],
+        "sourceArt": {
+          "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-7.png",
+          "sha256": "ecae76dd2b171dc2efd5b606845fb6a67e56883be6e34dca13f427b7b6579003",
+          "role": "two-hand shaft-grip pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f7.png",
+          "sha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk7.png",
+          "sha256": "f7bf6bcd10d98e6dbb78167c5b353498d3d0d175a1d590da58470942d328ea75",
+          "bounds": [
+            92,
+            17,
+            227,
+            314
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 6
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk7-registered-source.png",
+          "sha256": "f7bf6bcd10d98e6dbb78167c5b353498d3d0d175a1d590da58470942d328ea75"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk7-upper-body-override.png",
+          "sha256": "504fb7d7d9bd3cdd8e912d2ebb9f103d0ff6c9540dfa1b4ccf8968156fa2f4c2",
+          "audit": {
+            "changedPixels": 28401,
+            "changedInsideOverride": 28401,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk7-exact-head-lock.png",
+          "sha256": "972951bd81de94c4e18262a4658a797c5eb06463426348a1ef878b8a07c54e42"
+        },
+        "hands": {
+          "visibleComponents": [
+            {
+              "pixels": 604,
+              "boundsExclusive": [
+                184,
+                156,
+                212,
+                184
+              ],
+              "centroid": [
+                197.869,
+                169.679
+              ]
+            },
+            {
+              "pixels": 693,
+              "boundsExclusive": [
+                189,
+                192,
+                223,
+                221
+              ],
+              "centroid": [
+                206.203,
+                205.677
+              ]
+            }
+          ],
+          "visibleComponentCount": 2,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk7-grip-axis.png",
+          "sha256": "e124d5105064e00f38c00ceef3895b105e162c1d53f01bc488a4e423ee403ee0",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 27924,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 47,
+              "authorityPixels": 0,
+              "candidateMedian": 82.622,
+              "authorityMedian": null,
+              "candidateQ25": 62.071,
+              "candidateQ75": 92.907,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "cream": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "skin": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f7/f7bf6bcd10d98e6dbb78167c5b353498d3d0d175a1d590da58470942d328ea75.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/97/97703d2fdeb14fc91817eb3a14b40cf1373ad7780341c6850e94e30c7f6cce10.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/50/504fb7d7d9bd3cdd8e912d2ebb9f103d0ff6c9540dfa1b4ccf8968156fa2f4c2.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e1/e124d5105064e00f38c00ceef3895b105e162c1d53f01bc488a4e423ee403ee0.png"
+      },
+      {
+        "id": "walk8",
+        "kind": "approved-walk-v6-upper-body-override",
+        "gaitFrame": 8,
+        "gaitPhase": "right-foot up",
+        "durationMs": 125,
+        "translationOnlyOffsetPx": [
+          21,
+          -4
+        ],
+        "sourceArt": {
+          "file": "art/drafts/keeper-prime-sweep-broom-2026-10-18-v7/sources/walk-grip-cutouts/grip-8.png",
+          "sha256": "28f16e345e82e8bb1807d9004e98351a753d46b357de3132a07112ee3f412ed4",
+          "role": "two-hand shaft-grip pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f8.png",
+          "sha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk8.png",
+          "sha256": "e0ce6b6fbe1c5ccce095d15636ba29e42266d9eeefbc1455504875741ce195f4",
+          "bounds": [
+            94,
+            16,
+            252,
+            313
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 7
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk8-registered-source.png",
+          "sha256": "e0ce6b6fbe1c5ccce095d15636ba29e42266d9eeefbc1455504875741ce195f4"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk8-upper-body-override.png",
+          "sha256": "8cfe0cfb1b530beadee10565d4100ad1c6b3a09ddefbec85f4955b53c9f4b4cf",
+          "audit": {
+            "changedPixels": 30333,
+            "changedInsideOverride": 30333,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk8-exact-head-lock.png",
+          "sha256": "be57862a371fa8f18b9fc111bc7daec0cd13585964688c6e1129ac30092ec90f"
+        },
+        "hands": {
+          "visibleComponents": [
+            {
+              "pixels": 569,
+              "boundsExclusive": [
+                188,
+                154,
+                215,
+                182
+              ],
+              "centroid": [
+                201.905,
+                168.065
+              ]
+            },
+            {
+              "pixels": 694,
+              "boundsExclusive": [
+                193,
+                190,
+                227,
+                219
+              ],
+              "centroid": [
+                210.249,
+                203.552
+              ]
+            }
+          ],
+          "visibleComponentCount": 2,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk8-grip-axis.png",
+          "sha256": "1c9a22289b77ae3601535c106d03a05b75e47b8827d170396e6f24089d5efbf0",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 27957,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 73,
+              "authorityPixels": 0,
+              "candidateMedian": 66.105,
+              "authorityMedian": null,
+              "candidateQ25": 50.969,
+              "candidateQ75": 87.405,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "cream": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "skin": {
+              "candidatePixels": 1,
+              "authorityPixels": 0,
+              "candidateMedian": 215.524,
+              "authorityMedian": null,
+              "candidateQ25": 215.524,
+              "candidateQ75": 215.524,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e0/e0ce6b6fbe1c5ccce095d15636ba29e42266d9eeefbc1455504875741ce195f4.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d8/d83f120bcdb86fcfa3fc09ed15604c872339886a4e0383fb02742e0ef908079c.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8c/8cfe0cfb1b530beadee10565d4100ad1c6b3a09ddefbec85f4955b53c9f4b4cf.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1c/1c9a22289b77ae3601535c106d03a05b75e47b8827d170396e6f24089d5efbf0.png"
+      },
+      {
+        "id": "turn1",
+        "kind": "approved-turn-v9-upper-body-override",
+        "turnFrame": 1,
+        "angleDegrees": 90,
+        "durationMs": 111.111111,
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ],
+        "sourceArt": {
+          "file": "art/source/keeper-prime-upper-body-override-poc-2026-10-19-v1/turn-shaft-grip-grid-generated.png",
+          "sha256": "73dbf31864b297f686d85d81732d71a390b38bc6cb4ee70ac919388b54d660cc",
+          "sourceCell": 1,
+          "role": "new broomless two-hand shaft-grip turn pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f01.png",
+          "sha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn1.png",
+          "sha256": "c6c586f56ebb2534ac3a99186ec96b8a4214ce4ae2ed2b087a5d0ad0d7eae6e2",
+          "bounds": [
+            102,
+            13,
+            248,
+            311
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 9
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn1-registered-source.png",
+          "sha256": "c6c586f56ebb2534ac3a99186ec96b8a4214ce4ae2ed2b087a5d0ad0d7eae6e2"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn1-upper-body-override.png",
+          "sha256": "6988b3f6505f4320620c870d1a95aa8fce8b974c5bd521ca9bf48f1ee379f09f",
+          "audit": {
+            "changedPixels": 30999,
+            "changedInsideOverride": 30999,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn1-exact-head-lock.png",
+          "sha256": "0ce27016e3ae7cb6c0f33be535c0fde9bdfd872e5d29a70e52c15c584573d8df"
+        },
+        "hands": {
+          "visibleComponents": [
+            {
+              "pixels": 489,
+              "boundsExclusive": [
+                215,
+                146,
+                241,
+                167
+              ],
+              "centroid": [
+                227.658,
+                155.661
+              ]
+            },
+            {
+              "pixels": 660,
+              "boundsExclusive": [
+                214,
+                170,
+                244,
+                198
+              ],
+              "centroid": [
+                229.036,
+                183.612
+              ]
+            }
+          ],
+          "visibleComponentCount": 2,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn1-grip-axis.png",
+          "sha256": "dab1b0a37ff41ba4f509c58c45229b3b4804d5cd04b9276f5ac0793726475aef",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 29781,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "cream": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "skin": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c6/c6c586f56ebb2534ac3a99186ec96b8a4214ce4ae2ed2b087a5d0ad0d7eae6e2.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c0/c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1f/1f2bb7c6e5bee25841d78f5108894ef433f61b115fbff62d2950607ba1bccf0f.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/69/6988b3f6505f4320620c870d1a95aa8fce8b974c5bd521ca9bf48f1ee379f09f.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/da/dab1b0a37ff41ba4f509c58c45229b3b4804d5cd04b9276f5ac0793726475aef.png"
+      },
+      {
+        "id": "turn2",
+        "kind": "approved-turn-v9-upper-body-override",
+        "turnFrame": 2,
+        "angleDegrees": 98,
+        "durationMs": 111.111111,
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ],
+        "sourceArt": {
+          "file": "art/source/keeper-prime-upper-body-override-poc-2026-10-19-v1/turn-shaft-grip-grid-generated.png",
+          "sha256": "73dbf31864b297f686d85d81732d71a390b38bc6cb4ee70ac919388b54d660cc",
+          "sourceCell": 2,
+          "role": "new broomless two-hand shaft-grip turn pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f02.png",
+          "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn2.png",
+          "sha256": "680d182b89dd9a0b32c719bc61cffbe8f9759e8109b647f918a11b6e006aaa05",
+          "bounds": [
+            99,
+            13,
+            246,
+            311
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 9
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn2-registered-source.png",
+          "sha256": "680d182b89dd9a0b32c719bc61cffbe8f9759e8109b647f918a11b6e006aaa05"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn2-upper-body-override.png",
+          "sha256": "66326f0f8a7461dd2badec2593c01423cc7ab648828d3e0999f86232462cec62",
+          "audit": {
+            "changedPixels": 30845,
+            "changedInsideOverride": 30845,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn2-exact-head-lock.png",
+          "sha256": "26d3d6426803071a3a5d8a2f25b4839caabcc2cc8f991e9411a80f6a42837280"
+        },
+        "hands": {
+          "visibleComponents": [
+            {
+              "pixels": 433,
+              "boundsExclusive": [
+                213,
+                146,
+                240,
+                166
+              ],
+              "centroid": [
+                226.339,
+                154.499
+              ]
+            },
+            {
+              "pixels": 619,
+              "boundsExclusive": [
+                215,
+                168,
+                242,
+                196
+              ],
+              "centroid": [
+                228.396,
+                181.162
+              ]
+            }
+          ],
+          "visibleComponentCount": 2,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn2-grip-axis.png",
+          "sha256": "91d4f28e88f684bf9f2a7c23d3aa3b4566e39d453eb908634dccc15ad79e86a0",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 29802,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "cream": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "skin": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/68/680d182b89dd9a0b32c719bc61cffbe8f9759e8109b647f918a11b6e006aaa05.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e1/e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/67/67efe8d8c24f17b377d47002985a1108a20c08e2cc7fa2de351c2d6aca42981c.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/66/66326f0f8a7461dd2badec2593c01423cc7ab648828d3e0999f86232462cec62.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/91/91d4f28e88f684bf9f2a7c23d3aa3b4566e39d453eb908634dccc15ad79e86a0.png"
+      },
+      {
+        "id": "turn3",
+        "kind": "approved-turn-v9-upper-body-override",
+        "turnFrame": 3,
+        "angleDegrees": 105,
+        "durationMs": 111.111111,
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ],
+        "sourceArt": {
+          "file": "art/source/keeper-prime-upper-body-override-poc-2026-10-19-v1/turn-shaft-grip-grid-generated.png",
+          "sha256": "73dbf31864b297f686d85d81732d71a390b38bc6cb4ee70ac919388b54d660cc",
+          "sourceCell": 3,
+          "role": "new broomless two-hand shaft-grip turn pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f03.png",
+          "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn3.png",
+          "sha256": "704de98e0837950389cdba5aefe1deaec88c3f0393aa6f6629845e796dd7e82d",
+          "bounds": [
+            104,
+            13,
+            257,
+            311
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 9
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn3-registered-source.png",
+          "sha256": "704de98e0837950389cdba5aefe1deaec88c3f0393aa6f6629845e796dd7e82d"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn3-upper-body-override.png",
+          "sha256": "83aef3551d2544bccb8095edfffbe3ff88ce1df3d32876c323b24e381b6052cf",
+          "audit": {
+            "changedPixels": 32615,
+            "changedInsideOverride": 32615,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn3-exact-head-lock.png",
+          "sha256": "6cff3115ad121e98f0a63c34035f0de3ef53e1dfb26de1c26ec54a325aa5194d"
+        },
+        "hands": {
+          "visibleComponents": [
+            {
+              "pixels": 413,
+              "boundsExclusive": [
+                222,
+                146,
+                249,
+                164
+              ],
+              "centroid": [
+                235.576,
+                153.736
+              ]
+            },
+            {
+              "pixels": 617,
+              "boundsExclusive": [
+                226,
+                167,
+                253,
+                195
+              ],
+              "centroid": [
+                239.269,
+                180.507
+              ]
+            }
+          ],
+          "visibleComponentCount": 2,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn3-grip-axis.png",
+          "sha256": "ff196ab0f4c401d99591a8db145e12ee5d7bdd5c656898b384cb44ca0fcd0b16",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 30674,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 0,
+              "authorityPixels": 1,
+              "candidateMedian": null,
+              "authorityMedian": 24.574,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": 24.574,
+              "authorityQ75": 24.574
+            },
+            "cream": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "skin": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/70/704de98e0837950389cdba5aefe1deaec88c3f0393aa6f6629845e796dd7e82d.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/34/34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/51/5157ed1995bd28cacfb610c802051491377c865b626f19b2a5a6c7dab50312b0.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/83/83aef3551d2544bccb8095edfffbe3ff88ce1df3d32876c323b24e381b6052cf.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ff/ff196ab0f4c401d99591a8db145e12ee5d7bdd5c656898b384cb44ca0fcd0b16.png"
+      },
+      {
+        "id": "turn4",
+        "kind": "approved-turn-v9-upper-body-override",
+        "turnFrame": 4,
+        "angleDegrees": 120,
+        "durationMs": 111.111111,
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ],
+        "sourceArt": {
+          "file": "art/source/keeper-prime-upper-body-override-poc-2026-10-19-v1/turn-shaft-grip-grid-generated.png",
+          "sha256": "73dbf31864b297f686d85d81732d71a390b38bc6cb4ee70ac919388b54d660cc",
+          "sourceCell": 4,
+          "role": "new broomless two-hand shaft-grip turn pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f04.png",
+          "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn4.png",
+          "sha256": "7257a801ff5b6778e582a779e232d2790efa611abda09582a9be166d7d568aa6",
+          "bounds": [
+            104,
+            13,
+            258,
+            311
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 9
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn4-registered-source.png",
+          "sha256": "7257a801ff5b6778e582a779e232d2790efa611abda09582a9be166d7d568aa6"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn4-upper-body-override.png",
+          "sha256": "947891fd6ceaef1198074bc1a42691bca254f46003e26f804610a0385e31219f",
+          "audit": {
+            "changedPixels": 32988,
+            "changedInsideOverride": 32988,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn4-exact-head-lock.png",
+          "sha256": "45852650369951b866a38a7c847de04d0f625789c7166402dce8e401dfaf6140"
+        },
+        "hands": {
+          "visibleComponents": [
+            {
+              "pixels": 389,
+              "boundsExclusive": [
+                221,
+                146,
+                249,
+                163
+              ],
+              "centroid": [
+                235.257,
+                152.967
+              ]
+            },
+            {
+              "pixels": 644,
+              "boundsExclusive": [
+                228,
+                164,
+                254,
+                193
+              ],
+              "centroid": [
+                240.444,
+                177.95
+              ]
+            }
+          ],
+          "visibleComponentCount": 2,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn4-grip-axis.png",
+          "sha256": "b8adca9e67c091c45f6d8883b2932d936d3872475f9acb4f015f3f36fadd9803",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 31022,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 0,
+              "authorityPixels": 1,
+              "candidateMedian": null,
+              "authorityMedian": 32.95,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": 32.95,
+              "authorityQ75": 32.95
+            },
+            "cream": {
+              "candidatePixels": 0,
+              "authorityPixels": 3,
+              "candidateMedian": null,
+              "authorityMedian": 176.522,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": 164.024,
+              "authorityQ75": 181.344
+            },
+            "skin": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/72/7257a801ff5b6778e582a779e232d2790efa611abda09582a9be166d7d568aa6.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0d/0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/41/412e30decd528375269defe04a6f953ca5ad014ca0d000b16b81d1f205cc1c45.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/94/947891fd6ceaef1198074bc1a42691bca254f46003e26f804610a0385e31219f.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b8/b8adca9e67c091c45f6d8883b2932d936d3872475f9acb4f015f3f36fadd9803.png"
+      },
+      {
+        "id": "turn5",
+        "kind": "approved-turn-v9-upper-body-override",
+        "turnFrame": 5,
+        "angleDegrees": 135,
+        "durationMs": 111.111111,
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ],
+        "sourceArt": {
+          "file": "art/source/keeper-prime-upper-body-override-poc-2026-10-19-v1/turn-shaft-grip-grid-generated.png",
+          "sha256": "73dbf31864b297f686d85d81732d71a390b38bc6cb4ee70ac919388b54d660cc",
+          "sourceCell": 5,
+          "role": "new broomless two-hand shaft-grip turn pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f05.png",
+          "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn5.png",
+          "sha256": "20a9d83d632c8ffcd26d8b2362f5eb766d1412ee32827395184edd1ed4746da4",
+          "bounds": [
+            99,
+            13,
+            259,
+            311
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 9
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn5-registered-source.png",
+          "sha256": "20a9d83d632c8ffcd26d8b2362f5eb766d1412ee32827395184edd1ed4746da4"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn5-upper-body-override.png",
+          "sha256": "f0518fdb639bc0ca3990c8692448c93cc43ed453a458a5bda2e36127c924363f",
+          "audit": {
+            "changedPixels": 33459,
+            "changedInsideOverride": 33459,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn5-exact-head-lock.png",
+          "sha256": "4f58b632a21388005467e1bb359b1acee236150714ac936045a9c4335bb9dac5"
+        },
+        "hands": {
+          "visibleComponents": [
+            {
+              "pixels": 351,
+              "boundsExclusive": [
+                220,
+                146,
+                249,
+                162
+              ],
+              "centroid": [
+                235.325,
+                152.359
+              ]
+            },
+            {
+              "pixels": 610,
+              "boundsExclusive": [
+                230,
+                163,
+                255,
+                193
+              ],
+              "centroid": [
+                241.564,
+                176.923
+              ]
+            }
+          ],
+          "visibleComponentCount": 2,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn5-grip-axis.png",
+          "sha256": "4aa28eb5b14b8bff2135d399ff3a3f2ea1220463b530831294177aa27dd828c3",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 32157,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "cream": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "skin": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/20/20a9d83d632c8ffcd26d8b2362f5eb766d1412ee32827395184edd1ed4746da4.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f8/f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ba/ba3a4d8e33c0811524160cb01c21d8939c1c8bad9fe7bc57c91731f6ca585df0.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f0/f0518fdb639bc0ca3990c8692448c93cc43ed453a458a5bda2e36127c924363f.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4a/4aa28eb5b14b8bff2135d399ff3a3f2ea1220463b530831294177aa27dd828c3.png"
+      },
+      {
+        "id": "turn6",
+        "kind": "approved-turn-v9-upper-body-override",
+        "turnFrame": 6,
+        "angleDegrees": 150,
+        "durationMs": 111.111111,
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ],
+        "sourceArt": {
+          "file": "art/source/keeper-prime-upper-body-override-poc-2026-10-19-v1/turn-shaft-grip-grid-generated.png",
+          "sha256": "73dbf31864b297f686d85d81732d71a390b38bc6cb4ee70ac919388b54d660cc",
+          "sourceCell": 6,
+          "role": "new broomless two-hand shaft-grip turn pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f06.png",
+          "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn6.png",
+          "sha256": "89433a1a961e3e196b96e8ba15f50422d5159038dab11b83bce60e61f343d277",
+          "bounds": [
+            91,
+            13,
+            252,
+            311
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 9
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn6-registered-source.png",
+          "sha256": "89433a1a961e3e196b96e8ba15f50422d5159038dab11b83bce60e61f343d277"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn6-upper-body-override.png",
+          "sha256": "35ec9c495f45f72500a121e51101f4974187b1d3ae2795a7c8c3d1a435ed9280",
+          "audit": {
+            "changedPixels": 34843,
+            "changedInsideOverride": 34843,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn6-exact-head-lock.png",
+          "sha256": "a4ac5086c5cb6d81a508d690c3089abe54f5fc23c0e6f62c7c35f918a2ac502c"
+        },
+        "hands": {
+          "visibleComponents": [
+            {
+              "pixels": 217,
+              "boundsExclusive": [
+                215,
+                146,
+                241,
+                157
+              ],
+              "centroid": [
+                228.949,
+                150.065
+              ]
+            },
+            {
+              "pixels": 468,
+              "boundsExclusive": [
+                228,
+                159,
+                248,
+                189
+              ],
+              "centroid": [
+                237.628,
+                172.838
+              ]
+            }
+          ],
+          "visibleComponentCount": 2,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn6-grip-axis.png",
+          "sha256": "4a5aaf74f24af51b2d4c8564b591a58a0e03308f542c3c479abc66bc0a5a94ba",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 33920,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "cream": {
+              "candidatePixels": 3,
+              "authorityPixels": 0,
+              "candidateMedian": 161.911,
+              "authorityMedian": null,
+              "candidateQ25": 159.515,
+              "candidateQ75": 188.062,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "skin": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/89/89433a1a961e3e196b96e8ba15f50422d5159038dab11b83bce60e61f343d277.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fe/fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/14/14ddbea93905f66599cee1684a54e26df04603dc3ae8c147e4a3c55a9379f280.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/35/35ec9c495f45f72500a121e51101f4974187b1d3ae2795a7c8c3d1a435ed9280.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4a/4a5aaf74f24af51b2d4c8564b591a58a0e03308f542c3c479abc66bc0a5a94ba.png"
+      },
+      {
+        "id": "turn7",
+        "kind": "approved-turn-v9-upper-body-override",
+        "turnFrame": 7,
+        "angleDegrees": 165,
+        "durationMs": 111.111111,
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ],
+        "sourceArt": {
+          "file": "art/source/keeper-prime-upper-body-override-poc-2026-10-19-v1/turn-shaft-grip-grid-generated.png",
+          "sha256": "73dbf31864b297f686d85d81732d71a390b38bc6cb4ee70ac919388b54d660cc",
+          "sourceCell": 7,
+          "role": "new broomless two-hand shaft-grip turn pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f07.png",
+          "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn7.png",
+          "sha256": "5eb71b3a18cb59d74858d4f09da1b6b7ec853dcc431987143cf59f45037ab082",
+          "bounds": [
+            86,
+            15,
+            240,
+            311
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 9
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn7-registered-source.png",
+          "sha256": "5eb71b3a18cb59d74858d4f09da1b6b7ec853dcc431987143cf59f45037ab082"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn7-upper-body-override.png",
+          "sha256": "e0bdb2e92ef79f347ceb6eb26de3f2618f9b4a1234fc729e0b6a969677ef3509",
+          "audit": {
+            "changedPixels": 35604,
+            "changedInsideOverride": 35604,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn7-exact-head-lock.png",
+          "sha256": "b27cfc65a1cde19055ea200ce9d5bd5e62b0674a170c84ff75eeff8b039dcb58"
+        },
+        "hands": {
+          "visibleComponents": [
+            {
+              "pixels": 32,
+              "boundsExclusive": [
+                220,
+                146,
+                228,
+                152
+              ],
+              "centroid": [
+                223.656,
+                147.875
+              ]
+            },
+            {
+              "pixels": 62,
+              "boundsExclusive": [
+                227,
+                156,
+                236,
+                176
+              ],
+              "centroid": [
+                232.387,
+                164.677
+              ]
+            }
+          ],
+          "visibleComponentCount": 2,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn7-grip-axis.png",
+          "sha256": "7e63b488b5273b3c80afa9471a844acc2e1441b7a7ddd17d0229019f678f3b42",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 34006,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 0,
+              "authorityPixels": 15,
+              "candidateMedian": null,
+              "authorityMedian": 35.17,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": 29.404,
+              "authorityQ75": 43.221
+            },
+            "cream": {
+              "candidatePixels": 0,
+              "authorityPixels": 1,
+              "candidateMedian": null,
+              "authorityMedian": 249.402,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": 249.402,
+              "authorityQ75": 249.402
+            },
+            "skin": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5e/5eb71b3a18cb59d74858d4f09da1b6b7ec853dcc431987143cf59f45037ab082.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d5/d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9d/9d3dee9cb8cdd9739d0af83ffcbff4fcb78f2c92571e582285de7cba80bb5ea0.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e0/e0bdb2e92ef79f347ceb6eb26de3f2618f9b4a1234fc729e0b6a969677ef3509.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7e/7e63b488b5273b3c80afa9471a844acc2e1441b7a7ddd17d0229019f678f3b42.png"
+      },
+      {
+        "id": "turn8",
+        "kind": "approved-turn-v9-upper-body-override",
+        "turnFrame": 8,
+        "angleDegrees": 172.5,
+        "durationMs": 111.111111,
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ],
+        "sourceArt": {
+          "file": "art/source/keeper-prime-upper-body-override-poc-2026-10-19-v1/turn-shaft-grip-grid-generated.png",
+          "sha256": "73dbf31864b297f686d85d81732d71a390b38bc6cb4ee70ac919388b54d660cc",
+          "sourceCell": 8,
+          "role": "new broomless two-hand shaft-grip turn pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f08.png",
+          "sha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn8.png",
+          "sha256": "096e6b9c9f0741a1ff21110a41c6a9b4a2cd66b189574fda22918763defa2abd",
+          "bounds": [
+            67,
+            14,
+            228,
+            311
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 9
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn8-registered-source.png",
+          "sha256": "096e6b9c9f0741a1ff21110a41c6a9b4a2cd66b189574fda22918763defa2abd"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn8-upper-body-override.png",
+          "sha256": "a0118e59b314aa81280ba3a448d27c272986fc57c69f0284fab9009cd43378ad",
+          "audit": {
+            "changedPixels": 35885,
+            "changedInsideOverride": 35885,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn8-exact-head-lock.png",
+          "sha256": "3134eab9bcbe9f2f9721f9be1d9920a6cbbcef2e41dc1aeac54a8a1a675fdfd0"
+        },
+        "hands": {
+          "visibleComponents": [],
+          "visibleComponentCount": 0,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn8-grip-axis.png",
+          "sha256": "f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 35214,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 0,
+              "authorityPixels": 3,
+              "candidateMedian": null,
+              "authorityMedian": 28.652,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": 28.083,
+              "authorityQ75": 30.878
+            },
+            "cream": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "skin": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/09/096e6b9c9f0741a1ff21110a41c6a9b4a2cd66b189574fda22918763defa2abd.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bb/bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/86/861646d8c973dbc255daa9800242013edbba45c35158d2753a56eb733020af21.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a0/a0118e59b314aa81280ba3a448d27c272986fc57c69f0284fab9009cd43378ad.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png"
+      },
+      {
+        "id": "turn9",
+        "kind": "approved-turn-v9-upper-body-override",
+        "turnFrame": 9,
+        "angleDegrees": 180,
+        "durationMs": 111.111111,
+        "translationOnlyOffsetPx": [
+          22,
+          -5
+        ],
+        "sourceArt": {
+          "file": "art/source/keeper-prime-upper-body-override-poc-2026-10-19-v1/turn-shaft-grip-grid-generated.png",
+          "sha256": "73dbf31864b297f686d85d81732d71a390b38bc6cb4ee70ac919388b54d660cc",
+          "sourceCell": 9,
+          "role": "new broomless two-hand shaft-grip turn pose source"
+        },
+        "authority": {
+          "file": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f09.png",
+          "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+        },
+        "candidate": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn9.png",
+          "sha256": "0b9de793df621d592f4d09f0e24980e84718db5a48837b9cde0b771ebcc14469",
+          "bounds": [
+            61,
+            13,
+            223,
+            311
+          ],
+          "edgeAlphaPixels": 0,
+          "transparentGutterPx": 9
+        },
+        "registeredSource": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn9-registered-source.png",
+          "sha256": "0b9de793df621d592f4d09f0e24980e84718db5a48837b9cde0b771ebcc14469"
+        },
+        "upperBodyOverride": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn9-upper-body-override.png",
+          "sha256": "2fb189feb6969947a725a132f3cd2bdc2e5eae70620c629107881ef7ab074ea4",
+          "audit": {
+            "changedPixels": 37266,
+            "changedInsideOverride": 37266,
+            "changedOutsideOverride": 0
+          },
+          "verticalExtentInclusive": [
+            0,
+            319
+          ],
+          "headLockedToAuthority": false,
+          "lowerBodyLockedToAuthority": false,
+          "pocConstraint": "phase-matched full-character proxy; not pixel-identical authority"
+        },
+        "headLock": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn9-exact-head-lock.png",
+          "sha256": "fabab7c229a6eb2403995c02bbb1669f2f5179a4be40bf034efe4dc25ecbc37f"
+        },
+        "hands": {
+          "visibleComponents": [],
+          "visibleComponentCount": 0,
+          "maximumAllowed": 2,
+          "occludedAllowedDuringTurn": true
+        },
+        "gripGuide": {
+          "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn9-grip-axis.png",
+          "sha256": "f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6",
+          "status": "review-overlay-only-not-art"
+        },
+        "colourEvidence": {
+          "visibleEditPixels": 34977,
+          "nonAuthorityRgbPixels": 0,
+          "materials": {
+            "blue": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "cream": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            },
+            "skin": {
+              "candidatePixels": 0,
+              "authorityPixels": 0,
+              "candidateMedian": null,
+              "authorityMedian": null,
+              "candidateQ25": null,
+              "candidateQ75": null,
+              "authorityQ25": null,
+              "authorityQ75": null
+            }
+          }
+        },
+        "ownership": {
+          "keeperOnly": true,
+          "propPixels": 0,
+          "separatePropExpectedLater": true
+        },
+        "candidateUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0b/0b9de793df621d592f4d09f0e24980e84718db5a48837b9cde0b771ebcc14469.png",
+        "authorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/31/31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35.png",
+        "registeredAuthorityUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ba/bae8d3f2866f30581400c86b458a3b4c1221d4349db65359a355f19d71985977.png",
+        "maskUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2fb189feb6969947a725a132f3cd2bdc2e5eae70620c629107881ef7ab074ea4.png",
+        "guideUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png"
+      }
+    ],
+    "route": {
+      "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/keeper-prime-upper-body-override-poc-v1.json",
+      "sha256": "8f9a56ecd08819dd79d5334a3af61b594a3f46e6d2ef356814aec16e3718675e"
+    },
+    "walkContactSheet": {
+      "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk-v6-upper-body-override-contact-sheet.png",
+      "sha256": "ec9ad84fb0f4053c77b69410e83739f450393261e0c3c0ee24d9e9f9df958cf2"
+    },
+    "turnContactSheet": {
+      "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn-v9-upper-body-override-contact-sheet.png",
+      "sha256": "cc0166d36e439b327e612e2684510a12114fc47084dc2a4e7b7eb0b7a0eccfd0"
+    },
+    "comparisonSheet": {
+      "file": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/authority-candidate-frame-comparison.png",
+      "sha256": "f113cdc8dce768a9f709e0691c6ab8c40dba854a878b7b5efd94482607c54b65"
+    },
+    "reviewUrl": "/keeper-review/keeper-prime-upper-body-override-poc-v1/"
+  },
+  "publishedAssets": [
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk1.png",
+      "sourceSha256": "aa0d8788c17567291a7a2de931c2081b3b2b425c82d81acce4dbf2df565bc56d",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/aa/aa0d8788c17567291a7a2de931c2081b3b2b425c82d81acce4dbf2df565bc56d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+      "sourceSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk1-authority.png",
+      "sourceSha256": "841b5a08638439511424a27f6e08bf4b4e1f3a5ba4965bc98e6fc5e00c06805d",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/84/841b5a08638439511424a27f6e08bf4b4e1f3a5ba4965bc98e6fc5e00c06805d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk1-upper-body-override.png",
+      "sourceSha256": "d1e400f332691e2a4a3d91c9fe5599d85f2f7a959bd2229f8ffa19c9c0524309",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d1/d1e400f332691e2a4a3d91c9fe5599d85f2f7a959bd2229f8ffa19c9c0524309.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk1-grip-axis.png",
+      "sourceSha256": "380c44b6b635a48ca7eebb4ebcf7504905bb4a61dd5581b59497b9a02d0685b8",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/38/380c44b6b635a48ca7eebb4ebcf7504905bb4a61dd5581b59497b9a02d0685b8.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk2.png",
+      "sourceSha256": "d21537acd20d3f0bd363ac2904814d9d6eaca19c242e9ffbc63f4cae338a7012",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d2/d21537acd20d3f0bd363ac2904814d9d6eaca19c242e9ffbc63f4cae338a7012.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f2.png",
+      "sourceSha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk2-authority.png",
+      "sourceSha256": "7e65ee85d9e66bf11ad92bbb99c789a537027d5681e51baa036dd2bb48234607",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7e/7e65ee85d9e66bf11ad92bbb99c789a537027d5681e51baa036dd2bb48234607.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk2-upper-body-override.png",
+      "sourceSha256": "4363b6d0fa938364463382333c1b93db54a3745898ea45581097470fe2615844",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/43/4363b6d0fa938364463382333c1b93db54a3745898ea45581097470fe2615844.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk2-grip-axis.png",
+      "sourceSha256": "46eb95541343308c979cf39d71d67ddc61c1cbf28b9fc027985482927b85eb8e",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/46/46eb95541343308c979cf39d71d67ddc61c1cbf28b9fc027985482927b85eb8e.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk3.png",
+      "sourceSha256": "467ccca42a609f3346ef728513892ce147e0606454c053eb175292e05fc33542",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/46/467ccca42a609f3346ef728513892ce147e0606454c053eb175292e05fc33542.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f3.png",
+      "sourceSha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b3/b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk3-authority.png",
+      "sourceSha256": "cc6a29c3f9e699f85665521ae92134d404d8c13a25d000b82350c2858b263a3a",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cc/cc6a29c3f9e699f85665521ae92134d404d8c13a25d000b82350c2858b263a3a.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk3-upper-body-override.png",
+      "sourceSha256": "fe17db876770d7ef768f375c9f5da70bc8240110fe73c5d1373d97576266060f",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fe/fe17db876770d7ef768f375c9f5da70bc8240110fe73c5d1373d97576266060f.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk3-grip-axis.png",
+      "sourceSha256": "462367694a2f43d43d48134ac363e029658c009779ec6380639262180be7db38",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/46/462367694a2f43d43d48134ac363e029658c009779ec6380639262180be7db38.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk4.png",
+      "sourceSha256": "fefd5cba181bbb53b052c6ea8b902889890849418201ccbc1bad9ea6914cf054",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fe/fefd5cba181bbb53b052c6ea8b902889890849418201ccbc1bad9ea6914cf054.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f4.png",
+      "sourceSha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk4-authority.png",
+      "sourceSha256": "27323782eb220f63d41f7344f29d58df8fbe407e71b89e633a1c46cba1c3a102",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/27/27323782eb220f63d41f7344f29d58df8fbe407e71b89e633a1c46cba1c3a102.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk4-upper-body-override.png",
+      "sourceSha256": "0bccb37782aebea39aebc0c23b8bc346fd989a867061532329aae7016e606726",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0b/0bccb37782aebea39aebc0c23b8bc346fd989a867061532329aae7016e606726.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk4-grip-axis.png",
+      "sourceSha256": "c78cbcf9af22e516a85b3599ab5e89f5a47d8ecf202af96853ee61b6b854cc2b",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c7/c78cbcf9af22e516a85b3599ab5e89f5a47d8ecf202af96853ee61b6b854cc2b.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk5.png",
+      "sourceSha256": "b2bb9aea06b2265b0dd778b745e176cb580e1100fb0114df07bea9edbf1a489c",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b2/b2bb9aea06b2265b0dd778b745e176cb580e1100fb0114df07bea9edbf1a489c.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f5.png",
+      "sourceSha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/54/545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk5-authority.png",
+      "sourceSha256": "c7562f46676444f4f39a3f34dfc9b33ecc2f99c20d4ac2d737633bc393995b5d",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c7/c7562f46676444f4f39a3f34dfc9b33ecc2f99c20d4ac2d737633bc393995b5d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk5-upper-body-override.png",
+      "sourceSha256": "f331735203c0995960c7dd22a25e39433b22bfd5b919f6289fb509c711c5e8ee",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f3/f331735203c0995960c7dd22a25e39433b22bfd5b919f6289fb509c711c5e8ee.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk5-grip-axis.png",
+      "sourceSha256": "5e994624ceab52a08165b209431af3501b5b2edb846c797d832d5107e5f1fc9d",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5e/5e994624ceab52a08165b209431af3501b5b2edb846c797d832d5107e5f1fc9d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk6.png",
+      "sourceSha256": "88f2dbfcad4af4080c527b4ce9759035f5f3a85e870e8bd9fa87151326584f98",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/88/88f2dbfcad4af4080c527b4ce9759035f5f3a85e870e8bd9fa87151326584f98.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f6.png",
+      "sourceSha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk6-authority.png",
+      "sourceSha256": "a4df8b83ede2f03aff222fc8c951d6cc6ab012dfc6da5e055bed8e45c8b91d71",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a4/a4df8b83ede2f03aff222fc8c951d6cc6ab012dfc6da5e055bed8e45c8b91d71.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk6-upper-body-override.png",
+      "sourceSha256": "2cb233ac8029d633f561e7a184b605c9b68449c9995afdbc39a09b73f51e3582",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2c/2cb233ac8029d633f561e7a184b605c9b68449c9995afdbc39a09b73f51e3582.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk6-grip-axis.png",
+      "sourceSha256": "6d419497cbb0dd9ca6b5a698bbe20ecf4d7a29fdd75ad95057c4d8ddfd81bf66",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6d/6d419497cbb0dd9ca6b5a698bbe20ecf4d7a29fdd75ad95057c4d8ddfd81bf66.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk7.png",
+      "sourceSha256": "f7bf6bcd10d98e6dbb78167c5b353498d3d0d175a1d590da58470942d328ea75",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f7/f7bf6bcd10d98e6dbb78167c5b353498d3d0d175a1d590da58470942d328ea75.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f7.png",
+      "sourceSha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk7-authority.png",
+      "sourceSha256": "97703d2fdeb14fc91817eb3a14b40cf1373ad7780341c6850e94e30c7f6cce10",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/97/97703d2fdeb14fc91817eb3a14b40cf1373ad7780341c6850e94e30c7f6cce10.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk7-upper-body-override.png",
+      "sourceSha256": "504fb7d7d9bd3cdd8e912d2ebb9f103d0ff6c9540dfa1b4ccf8968156fa2f4c2",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/50/504fb7d7d9bd3cdd8e912d2ebb9f103d0ff6c9540dfa1b4ccf8968156fa2f4c2.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk7-grip-axis.png",
+      "sourceSha256": "e124d5105064e00f38c00ceef3895b105e162c1d53f01bc488a4e423ee403ee0",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e1/e124d5105064e00f38c00ceef3895b105e162c1d53f01bc488a4e423ee403ee0.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/walk8.png",
+      "sourceSha256": "e0ce6b6fbe1c5ccce095d15636ba29e42266d9eeefbc1455504875741ce195f4",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e0/e0ce6b6fbe1c5ccce095d15636ba29e42266d9eeefbc1455504875741ce195f4.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f8.png",
+      "sourceSha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk8-authority.png",
+      "sourceSha256": "d83f120bcdb86fcfa3fc09ed15604c872339886a4e0383fb02742e0ef908079c",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d8/d83f120bcdb86fcfa3fc09ed15604c872339886a4e0383fb02742e0ef908079c.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/walk8-upper-body-override.png",
+      "sourceSha256": "8cfe0cfb1b530beadee10565d4100ad1c6b3a09ddefbec85f4955b53c9f4b4cf",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8c/8cfe0cfb1b530beadee10565d4100ad1c6b3a09ddefbec85f4955b53c9f4b4cf.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/walk8-grip-axis.png",
+      "sourceSha256": "1c9a22289b77ae3601535c106d03a05b75e47b8827d170396e6f24089d5efbf0",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1c/1c9a22289b77ae3601535c106d03a05b75e47b8827d170396e6f24089d5efbf0.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn1.png",
+      "sourceSha256": "c6c586f56ebb2534ac3a99186ec96b8a4214ce4ae2ed2b087a5d0ad0d7eae6e2",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c6/c6c586f56ebb2534ac3a99186ec96b8a4214ce4ae2ed2b087a5d0ad0d7eae6e2.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f01.png",
+      "sourceSha256": "c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c0/c097d78aac2d2c524ae8014b28f53b6e258581735cd5ddb387cfdb623b0449d8.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn1-authority.png",
+      "sourceSha256": "1f2bb7c6e5bee25841d78f5108894ef433f61b115fbff62d2950607ba1bccf0f",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1f/1f2bb7c6e5bee25841d78f5108894ef433f61b115fbff62d2950607ba1bccf0f.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn1-upper-body-override.png",
+      "sourceSha256": "6988b3f6505f4320620c870d1a95aa8fce8b974c5bd521ca9bf48f1ee379f09f",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/69/6988b3f6505f4320620c870d1a95aa8fce8b974c5bd521ca9bf48f1ee379f09f.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn1-grip-axis.png",
+      "sourceSha256": "dab1b0a37ff41ba4f509c58c45229b3b4804d5cd04b9276f5ac0793726475aef",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/da/dab1b0a37ff41ba4f509c58c45229b3b4804d5cd04b9276f5ac0793726475aef.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn2.png",
+      "sourceSha256": "680d182b89dd9a0b32c719bc61cffbe8f9759e8109b647f918a11b6e006aaa05",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/68/680d182b89dd9a0b32c719bc61cffbe8f9759e8109b647f918a11b6e006aaa05.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f02.png",
+      "sourceSha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e1/e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn2-authority.png",
+      "sourceSha256": "67efe8d8c24f17b377d47002985a1108a20c08e2cc7fa2de351c2d6aca42981c",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/67/67efe8d8c24f17b377d47002985a1108a20c08e2cc7fa2de351c2d6aca42981c.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn2-upper-body-override.png",
+      "sourceSha256": "66326f0f8a7461dd2badec2593c01423cc7ab648828d3e0999f86232462cec62",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/66/66326f0f8a7461dd2badec2593c01423cc7ab648828d3e0999f86232462cec62.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn2-grip-axis.png",
+      "sourceSha256": "91d4f28e88f684bf9f2a7c23d3aa3b4566e39d453eb908634dccc15ad79e86a0",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/91/91d4f28e88f684bf9f2a7c23d3aa3b4566e39d453eb908634dccc15ad79e86a0.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn3.png",
+      "sourceSha256": "704de98e0837950389cdba5aefe1deaec88c3f0393aa6f6629845e796dd7e82d",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/70/704de98e0837950389cdba5aefe1deaec88c3f0393aa6f6629845e796dd7e82d.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f03.png",
+      "sourceSha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/34/34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn3-authority.png",
+      "sourceSha256": "5157ed1995bd28cacfb610c802051491377c865b626f19b2a5a6c7dab50312b0",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/51/5157ed1995bd28cacfb610c802051491377c865b626f19b2a5a6c7dab50312b0.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn3-upper-body-override.png",
+      "sourceSha256": "83aef3551d2544bccb8095edfffbe3ff88ce1df3d32876c323b24e381b6052cf",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/83/83aef3551d2544bccb8095edfffbe3ff88ce1df3d32876c323b24e381b6052cf.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn3-grip-axis.png",
+      "sourceSha256": "ff196ab0f4c401d99591a8db145e12ee5d7bdd5c656898b384cb44ca0fcd0b16",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ff/ff196ab0f4c401d99591a8db145e12ee5d7bdd5c656898b384cb44ca0fcd0b16.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn4.png",
+      "sourceSha256": "7257a801ff5b6778e582a779e232d2790efa611abda09582a9be166d7d568aa6",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/72/7257a801ff5b6778e582a779e232d2790efa611abda09582a9be166d7d568aa6.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f04.png",
+      "sourceSha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0d/0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn4-authority.png",
+      "sourceSha256": "412e30decd528375269defe04a6f953ca5ad014ca0d000b16b81d1f205cc1c45",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/41/412e30decd528375269defe04a6f953ca5ad014ca0d000b16b81d1f205cc1c45.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn4-upper-body-override.png",
+      "sourceSha256": "947891fd6ceaef1198074bc1a42691bca254f46003e26f804610a0385e31219f",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/94/947891fd6ceaef1198074bc1a42691bca254f46003e26f804610a0385e31219f.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn4-grip-axis.png",
+      "sourceSha256": "b8adca9e67c091c45f6d8883b2932d936d3872475f9acb4f015f3f36fadd9803",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b8/b8adca9e67c091c45f6d8883b2932d936d3872475f9acb4f015f3f36fadd9803.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn5.png",
+      "sourceSha256": "20a9d83d632c8ffcd26d8b2362f5eb766d1412ee32827395184edd1ed4746da4",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/20/20a9d83d632c8ffcd26d8b2362f5eb766d1412ee32827395184edd1ed4746da4.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f05.png",
+      "sourceSha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f8/f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn5-authority.png",
+      "sourceSha256": "ba3a4d8e33c0811524160cb01c21d8939c1c8bad9fe7bc57c91731f6ca585df0",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ba/ba3a4d8e33c0811524160cb01c21d8939c1c8bad9fe7bc57c91731f6ca585df0.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn5-upper-body-override.png",
+      "sourceSha256": "f0518fdb639bc0ca3990c8692448c93cc43ed453a458a5bda2e36127c924363f",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f0/f0518fdb639bc0ca3990c8692448c93cc43ed453a458a5bda2e36127c924363f.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn5-grip-axis.png",
+      "sourceSha256": "4aa28eb5b14b8bff2135d399ff3a3f2ea1220463b530831294177aa27dd828c3",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4a/4aa28eb5b14b8bff2135d399ff3a3f2ea1220463b530831294177aa27dd828c3.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn6.png",
+      "sourceSha256": "89433a1a961e3e196b96e8ba15f50422d5159038dab11b83bce60e61f343d277",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/89/89433a1a961e3e196b96e8ba15f50422d5159038dab11b83bce60e61f343d277.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f06.png",
+      "sourceSha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fe/fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn6-authority.png",
+      "sourceSha256": "14ddbea93905f66599cee1684a54e26df04603dc3ae8c147e4a3c55a9379f280",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/14/14ddbea93905f66599cee1684a54e26df04603dc3ae8c147e4a3c55a9379f280.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn6-upper-body-override.png",
+      "sourceSha256": "35ec9c495f45f72500a121e51101f4974187b1d3ae2795a7c8c3d1a435ed9280",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/35/35ec9c495f45f72500a121e51101f4974187b1d3ae2795a7c8c3d1a435ed9280.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn6-grip-axis.png",
+      "sourceSha256": "4a5aaf74f24af51b2d4c8564b591a58a0e03308f542c3c479abc66bc0a5a94ba",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4a/4a5aaf74f24af51b2d4c8564b591a58a0e03308f542c3c479abc66bc0a5a94ba.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn7.png",
+      "sourceSha256": "5eb71b3a18cb59d74858d4f09da1b6b7ec853dcc431987143cf59f45037ab082",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5e/5eb71b3a18cb59d74858d4f09da1b6b7ec853dcc431987143cf59f45037ab082.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f07.png",
+      "sourceSha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d5/d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn7-authority.png",
+      "sourceSha256": "9d3dee9cb8cdd9739d0af83ffcbff4fcb78f2c92571e582285de7cba80bb5ea0",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9d/9d3dee9cb8cdd9739d0af83ffcbff4fcb78f2c92571e582285de7cba80bb5ea0.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn7-upper-body-override.png",
+      "sourceSha256": "e0bdb2e92ef79f347ceb6eb26de3f2618f9b4a1234fc729e0b6a969677ef3509",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e0/e0bdb2e92ef79f347ceb6eb26de3f2618f9b4a1234fc729e0b6a969677ef3509.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn7-grip-axis.png",
+      "sourceSha256": "7e63b488b5273b3c80afa9471a844acc2e1441b7a7ddd17d0229019f678f3b42",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7e/7e63b488b5273b3c80afa9471a844acc2e1441b7a7ddd17d0229019f678f3b42.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn8.png",
+      "sourceSha256": "096e6b9c9f0741a1ff21110a41c6a9b4a2cd66b189574fda22918763defa2abd",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/09/096e6b9c9f0741a1ff21110a41c6a9b4a2cd66b189574fda22918763defa2abd.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f08.png",
+      "sourceSha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bb/bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn8-authority.png",
+      "sourceSha256": "861646d8c973dbc255daa9800242013edbba45c35158d2753a56eb733020af21",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/86/861646d8c973dbc255daa9800242013edbba45c35158d2753a56eb733020af21.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn8-upper-body-override.png",
+      "sourceSha256": "a0118e59b314aa81280ba3a448d27c272986fc57c69f0284fab9009cd43378ad",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a0/a0118e59b314aa81280ba3a448d27c272986fc57c69f0284fab9009cd43378ad.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/guides/turn8-grip-axis.png",
+      "sourceSha256": "f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f9/f9878b0c741705ce055aaecfff99b67edea2d2da136c41bf25b0520e34c577a6.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/frames/turn9.png",
+      "sourceSha256": "0b9de793df621d592f4d09f0e24980e84718db5a48837b9cde0b771ebcc14469",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0b/0b9de793df621d592f4d09f0e24980e84718db5a48837b9cde0b771ebcc14469.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-turn-side-back-2026-10-13-v9/drafts/frames/keeper_prime_turn_side-right_to_back_f09.png",
+      "sourceSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/31/31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn9-authority.png",
+      "sourceSha256": "bae8d3f2866f30581400c86b458a3b4c1221d4349db65359a355f19d71985977",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ba/bae8d3f2866f30581400c86b458a3b4c1221d4349db65359a355f19d71985977.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/drafts/masks/turn9-upper-body-override.png",
+      "sourceSha256": "2fb189feb6969947a725a132f3cd2bdc2e5eae70620c629107881ef7ab074ea4",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2f/2fb189feb6969947a725a132f3cd2bdc2e5eae70620c629107881ef7ab074ea4.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/walk-v6-upper-body-override-contact-sheet.png",
+      "sourceSha256": "ec9ad84fb0f4053c77b69410e83739f450393261e0c3c0ee24d9e9f9df958cf2",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ec/ec9ad84fb0f4053c77b69410e83739f450393261e0c3c0ee24d9e9f9df958cf2.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/turn-v9-upper-body-override-contact-sheet.png",
+      "sourceSha256": "cc0166d36e439b327e612e2684510a12114fc47084dc2a4e7b7eb0b7a0eccfd0",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cc/cc0166d36e439b327e612e2684510a12114fc47084dc2a4e7b7eb0b7a0eccfd0.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1/evidence/authority-candidate-frame-comparison.png",
+      "sourceSha256": "f113cdc8dce768a9f709e0691c6ab8c40dba854a878b7b5efd94482607c54b65",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f1/f113cdc8dce768a9f709e0691c6ab8c40dba854a878b7b5efd94482607c54b65.png"
+    }
+  ],
+  "approvalBoundary": {
+    "pocApproved": false,
+    "gripProfileApproved": false,
+    "implementApproved": false,
+    "productionPromotionAllowed": false,
+    "productionChanged": false,
+    "runtimeChanged": false
+  },
+  "rollback": "Delete only art/drafts/keeper-prime-upper-body-override-poc-2026-10-19-v1, public/keeper-review/keeper-prime-upper-body-override-poc-v1, scripts/build_keeper_prime_upper_body_override_poc_v1.py and scripts/verify_keeper_prime_upper_body_override_poc_v1.mjs."
+}

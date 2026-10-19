@@ -214,16 +214,18 @@ jumper 94–95 versus Prime 95 and trousers 77–78 versus Prime 77. F2–F6 ret
 the 150 px seated elbow width. Back V2's approval does not cover either
 rear-angle transition; Final/runtime/production remain unchanged.
 
-Prime `keeper_sweep_broom` V1–V7 are rejected immutable provenance. V7 is
-rejected because it ran the approach at the wrong root speed and its broad turn
-mask erased lower-body pixels. V8 is the active movement-only gate at
-`/keeper-review/keeper-prime-sweep-broom-v8/`. The visible standard walk uses
-exact Walk V6 frame bytes, 125 ms cadence and 21 high-resolution px/frame;
-entry/exit use the exact approved stop bridges. Both working directions play
-F1→F8, and the reversal plays Turn V9 1→9→1. Candidate differences are limited
-to a hard held-arm/hand mask above the lower body. Both exact side-right neutral
-state changes are hidden by the closed cupboard. The separately owned broom is
-provisional. V8 awaits Frank and is not approved, promoted or wired.
+Prime `keeper_sweep_broom` V1–V8 are rejected immutable provenance. V8 is
+formally rejected at
+`docs/review/keeper-prime-sweep-broom-v8-rejection-2026-10-19.json`: it showed
+four arms after the held pose was added, broke up through the turn, introduced
+pixelation and did not remain visually identical to approved Prime walk art.
+The active gate is now the broomless
+`/keeper-review/keeper-prime-upper-body-override-poc-v1/`. It is the smallest
+motion-feasibility proof for reusable `hold_shaft_two_hand`: eight alternating
+gait phases, nine approved turn angles, no more than two visible hands and zero
+prop pixels. It is explicitly a phase-matched full-character proxy rather than
+pixel-identical production art. A promotable successor requires separable Prime
+torso/arm layers. Nothing is approved, promoted or wired.
 
 Back V1's exact deploy commit `d93c89c` remains delivery provenance only. Back
 V2 is live from exact deploy commit `f165576`; its 61-frame route and all 36

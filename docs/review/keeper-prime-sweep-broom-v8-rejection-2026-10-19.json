@@ -1,0 +1,41 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-19",
+  "reviewedBy": "Frank",
+  "candidate": "keeper-prime-sweep-broom-2026-10-19-v8",
+  "decision": "rejected",
+  "wording": "Once the broom was introduced the Keeper visibly had four arms; the Keeper broke up during the turn; the opening walk did not remain the approved Prime walk; and the held sequence introduced visible pixelation. The broom is removed from the next proof of concept.",
+  "rejectedHashes": {
+    "batchRegister": "c553fc3244778b32bbd410e0543feee1e4c3dc03b231241ed69131d9897140bc",
+    "routeData": "e1f26ae4f9792d7815afe5eb287eecb882defb6d8a7cc543348bf8ec3f949189",
+    "reviewer": "07bc2fc34fdda862444a2610b7a1c183c845009b0e16d24e67cb970ce22825e1",
+    "publicShell": "aeca73e78ba37a8db723876666ee2e42630fcece36462af51f84fdd229649487"
+  },
+  "cause": {
+    "duplicateLimbs": "held arms/hands were combined with complete locomotion frames that still contained their original swinging arms",
+    "rasterBreakup": "the attempted held-limb mask was not backed by separable torso and arm artwork",
+    "scopeError": "the movement gate attempted a broom activity before proving a prop-free held-implement body state"
+  },
+  "requiredSuccessor": {
+    "firstGate": "prop-free hold_shaft_two_hand motion-feasibility proof",
+    "movement": "eight left/right alternating gait phases plus the nine approved turn angles",
+    "visibleHandsMaximum": 2,
+    "propPixels": 0,
+    "productionRequirement": "author separable Prime torso/arm layers before any promotion"
+  },
+  "deliveryProvenance": {
+    "candidateCommit": "0de604da",
+    "shellPinCommit": "c5ec0054",
+    "deployCommit": "319a10a9",
+    "reviewUrl": "https://lighthouse-keeper-mu.vercel.app/keeper-review/keeper-prime-sweep-broom-v8/"
+  },
+  "approvalBoundary": {
+    "v8Approved": false,
+    "broomApproved": false,
+    "heldImplementStateApproved": false,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "productionChanged": false,
+    "promotionAllowed": false
+  }
+}

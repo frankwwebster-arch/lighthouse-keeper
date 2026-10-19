@@ -1,0 +1,7 @@
+# Source-art record
+
+Mode: built-in image editing (`image_gen`), identity-preserving precise-object edit. The selected generated turn grid is retained unchanged at `art/source/keeper-prime-upper-body-override-poc-2026-10-19-v1/turn-shaft-grip-grid-generated.png` (SHA-256 `73dbf31864b297f686d85d81732d71a390b38bc6cb4ee70ac919388b54d660cc`). The eight existing V7 walk studies remain upper-body pose sources only. V1 is a motion-feasibility proxy: it replaces the complete character, removes the original arms, follows the approved gait phases and turn angles, includes no prop layer and maps every visible RGB value to the matching approved authority frame. A later production candidate must be rebuilt from separable Prime torso/arm layers and restore pixel-identical authority outside those layers.
+
+## Selected turn-source prompt
+
+Use case: precise-object-edit. Asset type: transparent 3-by-3 game-animation contact sheet. Remove only the broom and every broom-derived brown, gold, straw, ferrule and handle pixel from all nine cells. Reconstruct the small portions of jumper and trousers that the broom covers. Keep both hands naturally closed around the same invisible straight shaft position, with empty transparent space between them. Preserve the exact nine characters, poses, turn progression, cell order, scale, floor registration, Prime identity, uniform, colours and antialiasing. Exactly two anatomically connected arms and no more than two hands per cell. Genuine transparent background.

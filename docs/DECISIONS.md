@@ -1,5 +1,7 @@
 # Decisions made while building
 
+- Prime held-implement reset (Frank, 19 Oct 2026): reject `keeper-prime-sweep-broom-v8` because its held pose retained the complete walk limbs (four arms), broke up during the turn, introduced pixelation and no longer read as the approved Prime walk. Remove the broom from the next gate. First prove a prop-free `hold_shaft_two_hand` state across the eight approved gait phases and nine approved turn angles with no more than two visible hands. Because the approved raster frames have no separable torso/arm layers, the smallest feasibility POC may use clearly labelled phase-matched full-character proxies, but those proxies are not production art and may never be promoted. A successful motion gate leads to newly authored separable Prime torso/arm layers; broom, mower, hoover, shovel and carrying variants follow only after that body-state method is accepted.
+
 - Standalone Vite + React + TypeScript app; engine is pure and seeded, so every behaviour is testable.
 - No AI at runtime: typed commands go through a typo-tolerant matcher over a fixed command book. Close misses ask "did you mean?", nonsense gets a shrug.
 - Quiz gating: only treats wait for an answered question; loo, food, wash and bed never do, so he cannot get stuck. Three wrong tries reveal the answer, which is typed in for no points.

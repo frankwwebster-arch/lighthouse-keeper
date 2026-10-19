@@ -132,17 +132,21 @@ Prime `keeper_sweep_broom` V1 remains immutable, unapproved review history at
 artefacts across its repeated action range and a mop-like broom read. The V1
 live-delivery record at deploy commit `84c8f6b` remains evidence only.
 
-Prime `keeper_sweep_broom` V1–V7 are rejected immutable provenance. V7 used an
-incorrectly fast root schedule and allowed its turn edit mask to damage the
-lower body. The active movement-only review candidate is V8 at
-`/keeper-review/keeper-prime-sweep-broom-v8/`. Its visible approach/departure
-are exact Walk V6 at 125 ms/frame and 21 high-resolution px/frame; the exact
-approved walk↔stop bridges retain their recorded root deltas. Both working
-directions play F1→F8 and the reversal uses approved Turn V9 1→9→1. Only a hard
-held-arm/hand ownership mask may differ, and every lower-body pixel remains
-byte-identical to its matching authority. Exact side-right neutral state
-changes occur behind the closed cupboard. The separate broom remains
-provisional. V8 is unapproved and unpromoted.
+Prime `keeper_sweep_broom` V1–V8 are rejected immutable provenance. Frank
+rejected V8 because the held state visibly retained the standard swinging
+limbs (four arms), broke up during the turn, introduced pixelation and did not
+remain visually identical to the approved walk. Preserve the exact hashes and
+decision at
+`docs/review/keeper-prime-sweep-broom-v8-rejection-2026-10-19.json`.
+
+The active gate is the prop-free `hold_shaft_two_hand` motion-feasibility POC
+at `/keeper-review/keeper-prime-upper-body-override-poc-v1/`. It contains eight
+alternating gait phases, nine approved turn angles, never more than two visible
+hands and no broom or other prop pixels. Because the approved PNG authorities
+do not contain separable torso/arm layers, this smallest proof uses clean
+phase-matched full-character proxies and is explicitly not pixel-identical
+production art. If Frank accepts the motion idea, the next gate is a newly
+authored layered Prime torso/arm construction. Nothing is approved or promoted.
 
 ## Binding method for every inherited animation
 
@@ -331,24 +335,21 @@ logical pixels every 125 ms (59.2 lp/s) instead of approved Walk V6's 2.625
 logical pixels every 125 ms (21 lp/s), and its turn edit mask extended into the
 trousers and boots where transparent source pixels could erase authority.
 
-V8 is the new movement-first review candidate at
-`/keeper-review/keeper-prime-sweep-broom-v8/`. Its visible standard approach
-and departure use the exact Walk V6 files without resampling, at exact 8 fps
-and exact 21-high-resolution-pixel root deltas. The exact approved
-walk-to-stop and stop-to-walk frames use the pinned 18→12→6→2 and
-2→6→12→18 displacement schedules. Working travel runs F1→F8 in both
-directions. The 17-frame reversal runs approved Turn V9 order 1→9→1 at the
-authority timing. Only the hard held-arm/hand mask may differ; it cannot own
-the lower body, all pixels outside it are byte-identical to authority, and
-transparent source pixels cannot erase the approved Keeper.
+V8 was the movement-first review candidate at
+`/keeper-review/keeper-prime-sweep-broom-v8/`. Its construction claims and
+delivery hashes remain immutable evidence, but Frank's complete visual review
+rejected the result: adding the held pose left four arms, the Keeper broke up
+during the turn, the held sequence pixelated and the walk ceased to read as
+the approved Prime walk. The provisional broom is also unapproved. The exact
+decision is
+`docs/review/keeper-prime-sweep-broom-v8-rejection-2026-10-19.json`.
 
-The V8 broom remains a separately owned provisional layer. Its current shape
-and tone variation is acknowledged and must be corrected only after Frank is
-satisfied with movement. V8 does not approve the broom, any Keeper artwork,
-Final/runtime integration or production promotion. Its verifier pins exact
-authority hashes, route speed, gait order, bridge deltas, turn order/timing,
-outside-mask byte equality, lower-body identity, prop separation, transparent
-gutters and reviewer preloading.
+Do not repair V8 in place. The successor removes the prop and asks one smaller
+question: can a single two-hand held pose survive the approved gait phases and
+turn angles? The POC answers that with a clean phase-matched proxy while making
+its non-production status explicit. Any eventual production solution must
+start from newly separable Prime torso/arm artwork rather than another raster
+mask over complete Walk/Turn frames.
 
 The immutable V7 candidate is commit `bdceae4d`; shell-pin commit `c22ded68`
 fetches that exact candidate rather than mutable `main`. Review-only deployment
@@ -385,7 +386,8 @@ review page; it does not approve or promote the candidate or change Final,
 runtime or production artwork.
 
 Documentation audit updated on 19 October 2026: README, STATUS, this restart
-handoff and the artwork/review playbook agree that V1–V7 are rejected, V8 is
-the unapproved movement-only gate, broom rendering remains deferred, nothing
-is promoted, and Back Sit/Stand V2 remains separately approved and hash-pinned
-without any production-art promotion.
+handoff and the artwork/review playbook agree that V1–V8 are rejected, the
+broomless held-implement POC is the only active feasibility gate, production
+requires separable Prime torso/arm layers, nothing is promoted, and Back
+Sit/Stand V2 remains separately approved and hash-pinned without any
+production-art promotion.
