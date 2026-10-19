@@ -489,8 +489,12 @@ but its sink-overlay proposal is superseded. The active static fit gate is
 sink cabinet with its own worktop, basin and intact tap, placed beside rather
 than over the approved V11 run. Standard, On base and Broken base are
 byte-identical; later independent water effects alone distinguish On and
-Broken. See
+Broken. The V14 successor keeps the selected gentle On-water motion but moves
+its water-only pixels beneath the real outlet, while Broken uses separate
+upward basin jets; both are 40-frame/4-fps ten-second loops. See
 [`docs/KITCHEN_SINK_CABINET_V13_2026-10-19.md`](docs/KITCHEN_SINK_CABINET_V13_2026-10-19.md).
+Effect construction is recorded in
+[`docs/KITCHEN_SINK_WATER_EFFECTS_V14_2026-10-19.md`](docs/KITCHEN_SINK_WATER_EFFECTS_V14_2026-10-19.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

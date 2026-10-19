@@ -163,6 +163,12 @@ the exact approved V11 two-cabinet run. Their body bounds touch at x=336 but do
 not overlap. Standard, On base and Broken base are byte-identical because the
 broken state will be communicated only by a later separate leak animation; the
 rejected snapped-tap first pass remains provenance only. V13 is unapproved,
+unpromoted and unwired. The animated successor is
+`/keeper-review/kitchen-sink-water-effects-v14/`: On keeps the selected gentle
+water motion but removes the duplicated copper tap and moves the water beneath
+the actual outlet; Broken adds several upward jets originating inside the
+basin. Both are water-only 40-frame/4-fps ten-second strips over the unchanged
+V13 sink, with variable review speed. V14 awaits visual approval and remains
 unpromoted and unwired.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
