@@ -11,14 +11,56 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 160,
-    "referenceCount": 3985,
-    "uniqueObjectCount": 2439,
-    "logicalBytes": 323662657,
-    "uniqueBytes": 174563975,
+    "setCount": 161,
+    "referenceCount": 3991,
+    "uniqueObjectCount": 2445,
+    "logicalBytes": 324307036,
+    "uniqueBytes": 175208354,
     "deduplicatedBytes": 149098682
   },
   "legacyPaths": {
+    "/keeper-review/activity-cloud-composer-v1/assets/bbq-burgers-5244d4289bbaf95f.png": {
+      "sha256": "5244d4289bbaf95f4c2ddd36a72f24fe9b5bf12e2a349365d9fe574fdfa64354",
+      "extension": ".png",
+      "bytes": 73697,
+      "object": "review-archive/objects/52/5244d4289bbaf95f4c2ddd36a72f24fe9b5bf12e2a349365d9fe574fdfa64354.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/52/5244d4289bbaf95f4c2ddd36a72f24fe9b5bf12e2a349365d9fe574fdfa64354.png"
+    },
+    "/keeper-review/activity-cloud-composer-v1/assets/bbq-charcoal-4b728ffaefec6c4e.png": {
+      "sha256": "4b728ffaefec6c4ef792c3ef5261cc5815060077ac3d0a08b44be0abbfd6dfa2",
+      "extension": ".png",
+      "bytes": 69879,
+      "object": "review-archive/objects/4b/4b728ffaefec6c4ef792c3ef5261cc5815060077ac3d0a08b44be0abbfd6dfa2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4b/4b728ffaefec6c4ef792c3ef5261cc5815060077ac3d0a08b44be0abbfd6dfa2.png"
+    },
+    "/keeper-review/activity-cloud-composer-v1/assets/bbq-expansion-atlas-a4984105cdbe92ad.png": {
+      "sha256": "a4984105cdbe92adbdc3df6409f4ddc87957970c991ebc45852f10810620ad97",
+      "extension": ".png",
+      "bytes": 324760,
+      "object": "review-archive/objects/a4/a4984105cdbe92adbdc3df6409f4ddc87957970c991ebc45852f10810620ad97.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a4/a4984105cdbe92adbdc3df6409f4ddc87957970c991ebc45852f10810620ad97.png"
+    },
+    "/keeper-review/activity-cloud-composer-v1/assets/bbq-hotdogs-63d205ed77f06ea3.png": {
+      "sha256": "63d205ed77f06ea3121f4ef2bba1a3dde9d90c064bedaa2c5ceb761553f46f6c",
+      "extension": ".png",
+      "bytes": 70109,
+      "object": "review-archive/objects/63/63d205ed77f06ea3121f4ef2bba1a3dde9d90c064bedaa2c5ceb761553f46f6c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/63/63d205ed77f06ea3121f4ef2bba1a3dde9d90c064bedaa2c5ceb761553f46f6c.png"
+    },
+    "/keeper-review/activity-cloud-composer-v1/assets/bbq-ketchup-fb8b53e649009672.png": {
+      "sha256": "fb8b53e64900967299aa1b9f161640d3862413d8a579128de02cd35129c4a27a",
+      "extension": ".png",
+      "bytes": 38540,
+      "object": "review-archive/objects/fb/fb8b53e64900967299aa1b9f161640d3862413d8a579128de02cd35129c4a27a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fb/fb8b53e64900967299aa1b9f161640d3862413d8a579128de02cd35129c4a27a.png"
+    },
+    "/keeper-review/activity-cloud-composer-v1/assets/bbq-sausages-2ea34430496ee43b.png": {
+      "sha256": "2ea34430496ee43bd09a7640a12eaa5606562f2ab7c42dd6f655ba7a9fe97727",
+      "extension": ".png",
+      "bytes": 67394,
+      "object": "review-archive/objects/2e/2ea34430496ee43bd09a7640a12eaa5606562f2ab7c42dd6f655ba7a9fe97727.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2e/2ea34430496ee43bd09a7640a12eaa5606562f2ab7c42dd6f655ba7a9fe97727.png"
+    },
     "/keeper-review/drafts/00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271.png": {
       "sha256": "00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271",
       "extension": ".png",

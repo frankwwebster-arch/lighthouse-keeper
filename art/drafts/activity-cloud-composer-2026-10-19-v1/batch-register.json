@@ -1,0 +1,345 @@
+{
+  "schema": "lighthouse-keeper/activity-cloud-composer-register@1",
+  "set": "activity-cloud-composer-v1",
+  "status": "immutable-reversible-review-tool-not-approved",
+  "sourceVocabulary": {
+    "set": "keeper-prime-back-work-activity-callout-v3",
+    "catalogue": "public/keeper-review/keeper-prime-back-work-activity-callout-v3/catalogue.json",
+    "catalogueSha256": "24984454925aae58cf640cb05f4c7c91f945ef2c850fcf0c99e05c37e9aa7471",
+    "register": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/batch-register.json",
+    "registerSha256": "85dcb435d063e2184dfba25ac133c3ac6962cb7d5b364fd925ba352ede55adac",
+    "inheritedComponents": 68
+  },
+  "generatedSource": {
+    "file": "art/drafts/activity-cloud-composer-2026-10-19-v1/source/bbq-expansion-generated-v1.png",
+    "sha256": "92cc42a0cba2d8703afc2af61d981061d87fd2138fcb9568f7c2cd8f5b0f3bef",
+    "pixels": [
+      1536,
+      1024
+    ],
+    "selectedSplitX": [
+      520,
+      1028
+    ],
+    "selectedSplitY": 512,
+    "verticalBoundaryX520AlphaPixels": 0,
+    "verticalBoundaryX1028AlphaPixels": 0,
+    "horizontalBoundaryY512AlphaPixels": 0,
+    "emptySixthCellAlphaPixels": 0,
+    "cells": [
+      {
+        "asset": "bbq-sausages",
+        "family": "bbq",
+        "crop": [
+          0,
+          0,
+          520,
+          512
+        ]
+      },
+      {
+        "asset": "bbq-hotdogs",
+        "family": "bbq",
+        "crop": [
+          520,
+          0,
+          1028,
+          512
+        ]
+      },
+      {
+        "asset": "bbq-burgers",
+        "family": "bbq",
+        "crop": [
+          1028,
+          0,
+          1536,
+          512
+        ]
+      },
+      {
+        "asset": "bbq-ketchup",
+        "family": "bbq",
+        "crop": [
+          0,
+          512,
+          520,
+          1024
+        ]
+      },
+      {
+        "asset": "bbq-charcoal",
+        "family": "bbq",
+        "crop": [
+          520,
+          512,
+          1028,
+          1024
+        ]
+      }
+    ]
+  },
+  "newComponents": {
+    "bbq-sausages": {
+      "sourceCrop": [
+        0,
+        0,
+        520,
+        512
+      ],
+      "sourceVisiblePixels": 117173,
+      "registeredBounds": {
+        "minX": 20,
+        "minY": 53,
+        "maxX": 235,
+        "maxY": 202,
+        "opaquePixels": 22226
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v1/drafts/components/bbq-sausages.png",
+      "sha256": "2ea34430496ee43bd09a7640a12eaa5606562f2ab7c42dd6f655ba7a9fe97727",
+      "family": "bbq",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v1",
+      "src": "/keeper-review/activity-cloud-composer-v1/assets/bbq-sausages-2ea34430496ee43b.png"
+    },
+    "bbq-hotdogs": {
+      "sourceCrop": [
+        520,
+        0,
+        1028,
+        512
+      ],
+      "sourceVisiblePixels": 119492,
+      "registeredBounds": {
+        "minX": 20,
+        "minY": 59,
+        "maxX": 228,
+        "maxY": 230,
+        "opaquePixels": 24432
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v1/drafts/components/bbq-hotdogs.png",
+      "sha256": "63d205ed77f06ea3121f4ef2bba1a3dde9d90c064bedaa2c5ceb761553f46f6c",
+      "family": "bbq",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v1",
+      "src": "/keeper-review/activity-cloud-composer-v1/assets/bbq-hotdogs-63d205ed77f06ea3.png"
+    },
+    "bbq-burgers": {
+      "sourceCrop": [
+        1028,
+        0,
+        1536,
+        512
+      ],
+      "sourceVisiblePixels": 132851,
+      "registeredBounds": {
+        "minX": 20,
+        "minY": 44,
+        "maxX": 235,
+        "maxY": 211,
+        "opaquePixels": 26405
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v1/drafts/components/bbq-burgers.png",
+      "sha256": "5244d4289bbaf95f4c2ddd36a72f24fe9b5bf12e2a349365d9fe574fdfa64354",
+      "family": "bbq",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v1",
+      "src": "/keeper-review/activity-cloud-composer-v1/assets/bbq-burgers-5244d4289bbaf95f.png"
+    },
+    "bbq-ketchup": {
+      "sourceCrop": [
+        0,
+        512,
+        520,
+        1024
+      ],
+      "sourceVisiblePixels": 88095,
+      "registeredBounds": {
+        "minX": 36,
+        "minY": 20,
+        "maxX": 195,
+        "maxY": 205,
+        "opaquePixels": 17698
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v1/drafts/components/bbq-ketchup.png",
+      "sha256": "fb8b53e64900967299aa1b9f161640d3862413d8a579128de02cd35129c4a27a",
+      "family": "bbq",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v1",
+      "src": "/keeper-review/activity-cloud-composer-v1/assets/bbq-ketchup-fb8b53e649009672.png"
+    },
+    "bbq-charcoal": {
+      "sourceCrop": [
+        520,
+        512,
+        1028,
+        1024
+      ],
+      "sourceVisiblePixels": 136081,
+      "registeredBounds": {
+        "minX": 20,
+        "minY": 33,
+        "maxX": 235,
+        "maxY": 222,
+        "opaquePixels": 27790
+      },
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "file": "art/drafts/activity-cloud-composer-2026-10-19-v1/drafts/components/bbq-charcoal.png",
+      "sha256": "4b728ffaefec6c4ef792c3ef5261cc5815060077ac3d0a08b44be0abbfd6dfa2",
+      "family": "bbq",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v1",
+      "src": "/keeper-review/activity-cloud-composer-v1/assets/bbq-charcoal-4b728ffaefec6c4e.png"
+    }
+  },
+  "catalogue": {
+    "file": "public/keeper-review/activity-cloud-composer-v1/catalogue.json",
+    "sha256": "cdb877e9a55478fc55040f01b210d71307d535f9d3bff2bda27fc2742e850aff",
+    "components": 73,
+    "newComponents": 5
+  },
+  "page": {
+    "file": "public/keeper-review/activity-cloud-composer-v1/index.html",
+    "sha256": "76a1cbe70d549a7e82bad732a8f76995acdc9f0300abb0ed71ca7eee630cf28d"
+  },
+  "candidate": {
+    "publicShell": {
+      "file": "public/keeper-review/activity-cloud-composer-v1/index.html",
+      "sha256": "76a1cbe70d549a7e82bad732a8f76995acdc9f0300abb0ed71ca7eee630cf28d"
+    }
+  },
+  "atlas": {
+    "file": "art/drafts/activity-cloud-composer-2026-10-19-v1/evidence/bbq-expansion-atlas.png",
+    "sha256": "a4984105cdbe92adbdc3df6409f4ddc87957970c991ebc45852f10810620ad97",
+    "cellPixels": [
+      256,
+      256
+    ],
+    "columns": 5,
+    "rows": 1,
+    "componentOrder": [
+      "bbq-sausages",
+      "bbq-hotdogs",
+      "bbq-burgers",
+      "bbq-ketchup",
+      "bbq-charcoal"
+    ],
+    "publishedUrl": "/keeper-review/activity-cloud-composer-v1/assets/bbq-expansion-atlas-a4984105cdbe92ad.png"
+  },
+  "publishedAssets": [
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v1/drafts/components/bbq-sausages.png",
+      "sourceSha256": "2ea34430496ee43bd09a7640a12eaa5606562f2ab7c42dd6f655ba7a9fe97727",
+      "public": "public/keeper-review/activity-cloud-composer-v1/assets/bbq-sausages-2ea34430496ee43b.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v1/assets/bbq-sausages-2ea34430496ee43b.png",
+      "publicSha256": "2ea34430496ee43bd09a7640a12eaa5606562f2ab7c42dd6f655ba7a9fe97727",
+      "url": "/keeper-review/activity-cloud-composer-v1/assets/bbq-sausages-2ea34430496ee43b.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v1/drafts/components/bbq-hotdogs.png",
+      "sourceSha256": "63d205ed77f06ea3121f4ef2bba1a3dde9d90c064bedaa2c5ceb761553f46f6c",
+      "public": "public/keeper-review/activity-cloud-composer-v1/assets/bbq-hotdogs-63d205ed77f06ea3.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v1/assets/bbq-hotdogs-63d205ed77f06ea3.png",
+      "publicSha256": "63d205ed77f06ea3121f4ef2bba1a3dde9d90c064bedaa2c5ceb761553f46f6c",
+      "url": "/keeper-review/activity-cloud-composer-v1/assets/bbq-hotdogs-63d205ed77f06ea3.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v1/drafts/components/bbq-burgers.png",
+      "sourceSha256": "5244d4289bbaf95f4c2ddd36a72f24fe9b5bf12e2a349365d9fe574fdfa64354",
+      "public": "public/keeper-review/activity-cloud-composer-v1/assets/bbq-burgers-5244d4289bbaf95f.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v1/assets/bbq-burgers-5244d4289bbaf95f.png",
+      "publicSha256": "5244d4289bbaf95f4c2ddd36a72f24fe9b5bf12e2a349365d9fe574fdfa64354",
+      "url": "/keeper-review/activity-cloud-composer-v1/assets/bbq-burgers-5244d4289bbaf95f.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v1/drafts/components/bbq-ketchup.png",
+      "sourceSha256": "fb8b53e64900967299aa1b9f161640d3862413d8a579128de02cd35129c4a27a",
+      "public": "public/keeper-review/activity-cloud-composer-v1/assets/bbq-ketchup-fb8b53e649009672.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v1/assets/bbq-ketchup-fb8b53e649009672.png",
+      "publicSha256": "fb8b53e64900967299aa1b9f161640d3862413d8a579128de02cd35129c4a27a",
+      "url": "/keeper-review/activity-cloud-composer-v1/assets/bbq-ketchup-fb8b53e649009672.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v1/drafts/components/bbq-charcoal.png",
+      "sourceSha256": "4b728ffaefec6c4ef792c3ef5261cc5815060077ac3d0a08b44be0abbfd6dfa2",
+      "public": "public/keeper-review/activity-cloud-composer-v1/assets/bbq-charcoal-4b728ffaefec6c4e.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v1/assets/bbq-charcoal-4b728ffaefec6c4e.png",
+      "publicSha256": "4b728ffaefec6c4ef792c3ef5261cc5815060077ac3d0a08b44be0abbfd6dfa2",
+      "url": "/keeper-review/activity-cloud-composer-v1/assets/bbq-charcoal-4b728ffaefec6c4e.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-19-v1/evidence/bbq-expansion-atlas.png",
+      "sourceSha256": "a4984105cdbe92adbdc3df6409f4ddc87957970c991ebc45852f10810620ad97",
+      "public": "public/keeper-review/activity-cloud-composer-v1/assets/bbq-expansion-atlas-a4984105cdbe92ad.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v1/assets/bbq-expansion-atlas-a4984105cdbe92ad.png",
+      "publicSha256": "a4984105cdbe92adbdc3df6409f4ddc87957970c991ebc45852f10810620ad97",
+      "url": "/keeper-review/activity-cloud-composer-v1/assets/bbq-expansion-atlas-a4984105cdbe92ad.png"
+    }
+  ],
+  "checks": {
+    "sourceBoundariesClear": true,
+    "emptySixthCellClear": true,
+    "componentGuttersClear": true,
+    "componentOwnershipUnambiguous": true,
+    "v3VocabularyUnchanged": true,
+    "primeBodyUnchanged": true,
+    "runtimeChanged": false,
+    "kitchenChanged": false,
+    "deployed": false
+  },
+  "approvalBoundary": {
+    "vocabularyApproved": false,
+    "composerApproved": false,
+    "recipeApproved": false,
+    "runtimePromoted": false
+  }
+}
