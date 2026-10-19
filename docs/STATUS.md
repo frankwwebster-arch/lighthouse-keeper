@@ -198,15 +198,17 @@ Cabinet Join Backfill V21 remains immutable predecessor evidence: its blue
 body mask concealed the cream wall slit, but the two sprites' overlapping
 softened worktop end contours still made a jagged double-width seam.
 
-The active structural-layer correction is Countertop Join Cap V22 at
+The approved structural-layer correction is Countertop Join Cap V22 at
 `/keeper-review/kitchen-countertop-join-cap-v22/`. It leaves the exact V11 run,
 complete V19 sink, V21 and room background byte-identical. V22 retains the
 dynamic body mask, then draws a separate twelve-row cap over only the shared
 worktop after both sprites. Its default treatment restores uninterrupted
 horizontal worktop bands; an optional single soft angled seam replaces the two
 overlapping staircases. Both layers follow the live small gap and turn off
-beyond an eight-pixel separation or six-pixel overlap. V22 awaits visual review
-and changes no Final or runtime asset.
+beyond an eight-pixel separation or six-pixel overlap. Frank approved the exact
+seamless treatment and this layered method for future fitted modular kitchen
+joins. The approval remains a review authority only and changes no Final or
+runtime asset.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

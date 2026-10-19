@@ -552,7 +552,7 @@ the worktop, underlaps both sides by three pixels and follows gaps up to eight
 pixels before switching off automatically. Its sandbox lets Frank drag the
 sink and compare exact-row colour matching with a darker shadow seam. See
 [`docs/KITCHEN_CABINET_JOIN_BACKFILL_V21_2026-10-19.md`](docs/KITCHEN_CABINET_JOIN_BACKFILL_V21_2026-10-19.md).
-The active V22 successor at
+The approved V22 successor at
 `/keeper-review/kitchen-countertop-join-cap-v22/` retains that body backfill
 but removes the remaining double-staircase worktop artefact. A separate
 twelve-row foreground cap rebuilds the continuous horizontal countertop bands
@@ -561,6 +561,12 @@ optional single low-contrast angled seam is available for comparison. The cap
 follows the same draggable small-gap rule and switches off beyond eight pixels.
 See
 [`docs/KITCHEN_COUNTERTOP_JOIN_CAP_V22_2026-10-19.md`](docs/KITCHEN_COUNTERTOP_JOIN_CAP_V22_2026-10-19.md).
+Frank approved the exact seamless treatment and the layered join methodology;
+the hash-pinned decision is
+[`docs/review/kitchen-countertop-join-cap-v22-approval-2026-10-19.json`](docs/review/kitchen-countertop-join-cap-v22-approval-2026-10-19.json).
+Future fitted modular cabinet/countertop joins should preserve the standalone
+sprites and resolve their shared body and surface through separate dynamic
+join layers rather than superimposing both assets' independent end contours.
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

@@ -48,6 +48,14 @@ switch treatment, vary the maximum small-gap threshold and show logical bounds.
 
 ## Boundaries
 
-V22 is reversible, unapproved and unpromoted. V11, V19, V20, V21, the room
-background, Final art and runtime remain unchanged. Rejection requires deleting
-only the V22 raw/draft/review directories and archive manifest.
+V22 is the approved review authority but remains reversible and unpromoted.
+V11, V19, V20, V21, the room background, Final art and runtime remain
+unchanged. The approval does not authorise runtime or Final promotion.
+
+## Approval
+
+Frank approved the exact seamless V22 treatment and the layered join method on
+19 October 2026. The immutable decision record is
+`docs/review/kitchen-countertop-join-cap-v22-approval-2026-10-19.json`.
+Approval establishes the review authority and future modular-join method; it
+does not promote artwork into Final or wire the treatment into runtime.
