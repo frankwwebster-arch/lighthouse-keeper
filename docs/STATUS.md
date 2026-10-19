@@ -154,15 +154,16 @@ hash-pinned by
 `docs/review/kitchen-cabinet-run-v11-approval-2026-10-19.json`; it remains
 unpromoted and unwired.
 
-The active kitchen gate is the geometry-only
-`/keeper-review/kitchen-layout-plan-v12/`. It places the exact approved run
-twice in the room and exposes measurements without drawing any new appliance:
-fridge x=84–168/y=140–218, oven/hob x=336–420/y=131–208, sink as an independent
-overlay registered to the final cabinet bay, and table/chair x=680–764/y=148–222.
-The fridge may finish six pixels below the y=134 worktop and the oven/hob three
-pixels above it; independent appliance art does not need to continue cabinet
-pixels. All six existing Keeper stop/turn anchors remain unchanged. V12 awaits
-visual review and changes neither Final nor runtime.
+Layout V12's room registration and white-goods envelopes were approved, but
+its proposed sink overlay was immediately superseded. The sink must not sit on
+an existing cabinet. The active static fit gate is now
+`/keeper-review/kitchen-sink-cabinet-v13/`: one complete independent 84 × 74 px
+sink cabinet with its own worktop, basin and intact tap, shown directly beside
+the exact approved V11 two-cabinet run. Their body bounds touch at x=336 but do
+not overlap. Standard, On base and Broken base are byte-identical because the
+broken state will be communicated only by a later separate leak animation; the
+rejected snapped-tap first pass remains provenance only. V13 is unapproved,
+unpromoted and unwired.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

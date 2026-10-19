@@ -483,15 +483,14 @@ standalone element. Exact approval is pinned in
 and its construction record is
 [`docs/KITCHEN_CABINET_RUN_V11_2026-10-19.md`](docs/KITCHEN_CABINET_RUN_V11_2026-10-19.md).
 
-The active geometry-only successor is
-`/keeper-review/kitchen-layout-plan-v12/`. It places the approved cabinet cell
-twice in the exact room and shows the independent fridge, oven/hob, sink-overlay
-and table envelopes without proposing any new artwork. The fridge top remains
-six pixels below the y=134 cabinet top and the oven/hob top three pixels above
-it; those small offsets are permitted because standalone appliance sprites do
-not own or continue cabinet pixels. The original six stop/turn anchors remain
-fixed. See
-[`docs/KITCHEN_LAYOUT_PLAN_V12_2026-10-19.md`](docs/KITCHEN_LAYOUT_PLAN_V12_2026-10-19.md).
+Layout V12 preserves the approved room registration and white-goods envelopes,
+but its sink-overlay proposal is superseded. The active static fit gate is
+`/keeper-review/kitchen-sink-cabinet-v13/`: one complete standalone 84 × 74 px
+sink cabinet with its own worktop, basin and intact tap, placed beside rather
+than over the approved V11 run. Standard, On base and Broken base are
+byte-identical; later independent water effects alone distinguish On and
+Broken. See
+[`docs/KITCHEN_SINK_CABINET_V13_2026-10-19.md`](docs/KITCHEN_SINK_CABINET_V13_2026-10-19.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

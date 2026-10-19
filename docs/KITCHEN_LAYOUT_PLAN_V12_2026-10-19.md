@@ -2,7 +2,7 @@
 
 Date: 19 October 2026
 
-Status: reversible geometry-only review draft; unpromoted and unwired
+Status: room geometry approved; sink-overlay clause superseded by V13; unpromoted and unwired
 
 Review route: `/keeper-review/kitchen-layout-plan-v12/`
 
@@ -31,3 +31,7 @@ without moving these route anchors.
 
 The page contains no proposed appliance, sink or table art. Its outlined forms
 are measurements only. Nothing changes Final or runtime.
+
+Frank approved the room placement but then rejected the proposed sink-overlay
+contract. V13 replaces it with a complete standalone one-bay sink cabinet; no
+existing cabinet sits underneath. The V12 page remains immutable provenance.

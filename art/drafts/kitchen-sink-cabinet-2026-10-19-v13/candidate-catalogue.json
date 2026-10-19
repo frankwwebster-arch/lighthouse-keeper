@@ -1,0 +1,60 @@
+{
+  "set": "kitchen-sink-cabinet-2026-10-19-v13",
+  "status": "standalone-sink-fit-awaiting-visual-review",
+  "construction": {
+    "completeStandaloneOneBayUnit": true,
+    "overlaysApprovedCabinet": false,
+    "containsOwnCabinetWorktopBasinTap": true,
+    "bodyPixels": [
+      84,
+      74
+    ],
+    "cellPixels": [
+      92,
+      108
+    ],
+    "bodyOriginInCell": [
+      4,
+      30
+    ],
+    "tapAndBasinChangeWhenBroken": false
+  },
+  "states": {
+    "standard": "sink-cabinet-standard.png",
+    "onBase": "sink-cabinet-on-base.png",
+    "brokenBase": "sink-cabinet-broken-base.png",
+    "allStaticBasesByteIdentical": true,
+    "waterEffectsIncluded": false
+  },
+  "fitProof": {
+    "approvedTwoBayRunBodyBoundsExclusive": [
+      168,
+      134,
+      336,
+      208
+    ],
+    "standaloneSinkBodyBoundsExclusive": [
+      336,
+      134,
+      420,
+      208
+    ],
+    "sharedPixels": false,
+    "nativeRoomPixels": [
+      772,
+      224
+    ]
+  },
+  "outputs": {
+    "sink-cabinet-selected-source.png": "5cddf8bcbd22ea97e563cc7c3d7b442257066045fed27512eadbf2959bc28606",
+    "sink-cabinet-standard.png": "ed7d8eef0a206d7f2f1dc67e4d4a4e5776a4981f72bd2be4fdfa21bfd73e1cb6",
+    "sink-cabinet-on-base.png": "ed7d8eef0a206d7f2f1dc67e4d4a4e5776a4981f72bd2be4fdfa21bfd73e1cb6",
+    "sink-cabinet-broken-base.png": "ed7d8eef0a206d7f2f1dc67e4d4a4e5776a4981f72bd2be4fdfa21bfd73e1cb6",
+    "cabinet-run-plus-sink-native-room.png": "4930cfcce73f942471866340b9bae3451dd20623e13391b1d68574849cfc94c9"
+  },
+  "boundaries": {
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "promotionPerformed": false
+  }
+}

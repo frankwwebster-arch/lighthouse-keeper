@@ -11,12 +11,12 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 142,
-    "referenceCount": 3469,
-    "uniqueObjectCount": 2153,
-    "logicalBytes": 291202907,
-    "uniqueBytes": 155977179,
-    "deduplicatedBytes": 135225728
+    "setCount": 143,
+    "referenceCount": 3474,
+    "uniqueObjectCount": 2156,
+    "logicalBytes": 291602092,
+    "uniqueBytes": 156353018,
+    "deduplicatedBytes": 135249074
   },
   "legacyPaths": {
     "/keeper-review/drafts/00a0a7bfad3c71b2662b0a8b8a39ac49ad9e6773c76495f618b5360d0c73a271.png": {
@@ -24210,6 +24210,41 @@
       "bytes": 12073,
       "object": "review-archive/objects/07/07170d1ad2c9bc6a67b5188932d3de57c9a97ea42768821bca3ddf704005aec8.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/07/07170d1ad2c9bc6a67b5188932d3de57c9a97ea42768821bca3ddf704005aec8.png"
+    },
+    "/keeper-review/kitchen-sink-cabinet-v13/assets/cabinet-run-plus-sink-native-room.png": {
+      "sha256": "4930cfcce73f942471866340b9bae3451dd20623e13391b1d68574849cfc94c9",
+      "extension": ".png",
+      "bytes": 35824,
+      "object": "review-archive/objects/49/4930cfcce73f942471866340b9bae3451dd20623e13391b1d68574849cfc94c9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/49/4930cfcce73f942471866340b9bae3451dd20623e13391b1d68574849cfc94c9.png"
+    },
+    "/keeper-review/kitchen-sink-cabinet-v13/assets/sink-cabinet-broken-base.png": {
+      "sha256": "ed7d8eef0a206d7f2f1dc67e4d4a4e5776a4981f72bd2be4fdfa21bfd73e1cb6",
+      "extension": ".png",
+      "bytes": 11673,
+      "object": "review-archive/objects/ed/ed7d8eef0a206d7f2f1dc67e4d4a4e5776a4981f72bd2be4fdfa21bfd73e1cb6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ed/ed7d8eef0a206d7f2f1dc67e4d4a4e5776a4981f72bd2be4fdfa21bfd73e1cb6.png"
+    },
+    "/keeper-review/kitchen-sink-cabinet-v13/assets/sink-cabinet-on-base.png": {
+      "sha256": "ed7d8eef0a206d7f2f1dc67e4d4a4e5776a4981f72bd2be4fdfa21bfd73e1cb6",
+      "extension": ".png",
+      "bytes": 11673,
+      "object": "review-archive/objects/ed/ed7d8eef0a206d7f2f1dc67e4d4a4e5776a4981f72bd2be4fdfa21bfd73e1cb6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ed/ed7d8eef0a206d7f2f1dc67e4d4a4e5776a4981f72bd2be4fdfa21bfd73e1cb6.png"
+    },
+    "/keeper-review/kitchen-sink-cabinet-v13/assets/sink-cabinet-selected-source.png": {
+      "sha256": "5cddf8bcbd22ea97e563cc7c3d7b442257066045fed27512eadbf2959bc28606",
+      "extension": ".png",
+      "bytes": 328342,
+      "object": "review-archive/objects/5c/5cddf8bcbd22ea97e563cc7c3d7b442257066045fed27512eadbf2959bc28606.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5c/5cddf8bcbd22ea97e563cc7c3d7b442257066045fed27512eadbf2959bc28606.png"
+    },
+    "/keeper-review/kitchen-sink-cabinet-v13/assets/sink-cabinet-standard.png": {
+      "sha256": "ed7d8eef0a206d7f2f1dc67e4d4a4e5776a4981f72bd2be4fdfa21bfd73e1cb6",
+      "extension": ".png",
+      "bytes": 11673,
+      "object": "review-archive/objects/ed/ed7d8eef0a206d7f2f1dc67e4d4a4e5776a4981f72bd2be4fdfa21bfd73e1cb6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ed/ed7d8eef0a206d7f2f1dc67e4d4a4e5776a4981f72bd2be4fdfa21bfd73e1cb6.png"
     },
     "/keeper-review/kitchen-table-states-v38/assets/kitchen-table-broken-in-situ.png": {
       "sha256": "cf7fc1cc013eb1e51aac134fefe8cb26ffde6142a0816306eea76cdf021c93ec",
