@@ -1,0 +1,283 @@
+<meta charset="utf-8">
+<title>Bubble Choreography C1</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Pixelify+Sans:wght@500;700&display=swap">
+<style>
+/* Layout: the project page's log-book column, widened so the two stages can sit side by side; the paired stage is the one raised object. */
+:root{
+  --bg:#edf2f6; --card:#ffffff; --ink:#14243a; --muted:#56667b; --rule:#c9d4df;
+  --red:#b8402f; --red-soft:#f6e3df; --sea:#2b6a96; --sea-soft:#dde9f3; --lamp:#c48a0a; --lamp-soft:#fbf0d2;
+  --display:"Pixelify Sans","Courier New",monospace; --body:"Atkinson Hyperlegible",system-ui,-apple-system,sans-serif; --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e1828; --card:#142236; --ink:#e6edf6; --muted:#9fb0c4; --rule:#2c3e57;
+  --red:#ee7d6c; --red-soft:#3b211f; --sea:#7fb6e0; --sea-soft:#17304a; --lamp:#f0c24f; --lamp-soft:#3a2f12; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1828; --card:#142236; --ink:#e6edf6; --muted:#9fb0c4; --rule:#2c3e57;
+  --red:#ee7d6c; --red-soft:#3b211f; --sea:#7fb6e0; --sea-soft:#17304a; --lamp:#f0c24f; --lamp-soft:#3a2f12; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55}
+#app{max-width:1240px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px;display:flex;flex-direction:column;gap:32px}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:2.1rem}h2{font-size:1.35rem}h3{font-size:1.05rem}
+p{margin:0}
+code{font-family:var(--mono);font-size:.85em;background:var(--sea-soft);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
+.eyebrow{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:700}
+header{display:flex;flex-direction:column;gap:10px;max-width:72ch}
+.lede,.why{color:var(--muted)}
+.why{font-size:.93rem;max-width:72ch}
+section{display:flex;flex-direction:column;gap:14px;border-top:2px solid var(--ink);padding-top:14px}
+.stagecard{background:var(--card);border:2px solid var(--ink);box-shadow:5px 5px 0 var(--red);padding:16px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:900px){.pair{grid-template-columns:1fr}}
+.col{display:flex;flex-direction:column;gap:6px;min-width:0}
+.colhead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.colhead b{font-family:var(--display);font-size:1.1rem}
+.readout{font-family:var(--mono);font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums;min-height:1.3em}
+.viewport{position:relative;overflow:hidden;border:2px solid var(--ink);max-width:100%}
+/* The scene is game art at its own fixed colours, the same in both themes. */
+.scene{position:absolute;left:0;top:0;width:820px;height:580px;transform-origin:0 0;background:linear-gradient(#24414c 0 73%,#1b333b 73% 75%,#172a31 75%);isolation:isolate}
+.scene:after{content:"";position:absolute;left:0;right:0;bottom:28px;border-top:2px solid #49646d;opacity:.75}
+.actor{position:absolute;top:250px;width:256px;height:320px;z-index:3}
+.cloud{position:absolute;top:4px;width:360px;height:230px;z-index:5;pointer-events:none}
+.layer{position:absolute;inset:0}
+.piece{position:absolute;left:50%;top:50%;width:140px;height:140px;object-fit:contain;transform-origin:center;filter:drop-shadow(0 5px 4px rgba(2,10,15,.24))}
+.piece.symbol{width:92px;height:92px;filter:drop-shadow(0 3px 2px rgba(2,10,15,.18))}
+.treat{position:absolute;inset:0;overflow:visible}
+.c1bubble{position:absolute;left:0;top:0;width:360px;height:270px;overflow:visible;transform-origin:182px 214px}
+.v2bubble:before{content:"";position:absolute;inset:25px 31px 20px;background:rgba(246,239,211,.22);border:3px solid rgba(239,246,245,.84);border-radius:49% 51% 44% 56%;box-shadow:0 5px 0 rgba(9,25,34,.24),inset 0 0 34px rgba(244,231,204,.13)}
+.v2bubble:after{content:"";position:absolute;width:27px;height:22px;border:3px solid rgba(239,246,245,.72);border-radius:50%;left:168px;bottom:1px;background:rgba(246,239,211,.16)}
+.paths{position:absolute;left:0;top:0;width:360px;height:230px;overflow:visible;z-index:30}
+.paths polyline{fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;opacity:.75}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{all:unset;box-sizing:border-box;cursor:pointer;font-family:var(--display);font-weight:700;font-size:.95rem;padding:8px 14px;background:var(--card);color:var(--ink);border:2px solid var(--ink);box-shadow:2px 2px 0 var(--ink)}
+.btn.primary{background:var(--red);color:#fff}
+.btn:active{transform:translate(2px,2px);box-shadow:none}
+.btn:focus-visible,.chip:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible,.opt:focus-visible{outline:3px solid var(--lamp);outline-offset:2px}
+.btn[disabled]{opacity:.45;cursor:default}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{all:unset;box-sizing:border-box;cursor:pointer;font-size:.88rem;font-weight:700;padding:5px 11px;border:1.5px solid var(--rule);border-radius:3px;background:var(--card);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+label.tog{display:inline-flex;gap:6px;align-items:center;font-size:.9rem}
+select{font:inherit;font-size:.9rem;color:var(--ink);background:var(--card);border:1.5px solid var(--rule);border-radius:3px;padding:5px 8px}
+input[type=range]{flex:1 1 220px;min-width:0;accent-color:var(--red)}
+.ctl-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--muted)}
+.ctlgroup{display:flex;flex-direction:column;gap:6px}
+.beats{font-size:.9rem;color:var(--muted)}
+ul.diff{margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:8px;max-width:76ch}
+ul.diff b{font-weight:700}
+.tablewrap{overflow-x:auto;border:1.5px solid var(--rule);border-radius:4px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:.9rem;font-variant-numeric:tabular-nums;min-width:640px}
+th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+td.num{text-align:right;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.good{color:var(--sea);font-weight:700}.warn{color:var(--red);font-weight:700}
+.q{display:flex;flex-direction:column;gap:10px}
+.opts{display:grid;gap:8px}
+.opt{all:unset;box-sizing:border-box;cursor:pointer;display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1.5px solid var(--rule);border-radius:4px;background:var(--card);color:var(--ink);font-size:.95rem}
+.opt:hover{border-color:var(--sea)}
+.opt .box{flex:none;width:14px;height:14px;border:2px solid var(--muted);margin-top:4px}
+.opt[aria-pressed="true"]{border-color:var(--sea);background:var(--sea-soft)}
+.opt[aria-pressed="true"] .box{background:var(--sea);border-color:var(--sea)}
+.opt b{display:block}.opt .d{color:var(--muted);font-size:.88rem}
+.rec{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--sea);margin-left:6px}
+label.note{font-size:.85rem;color:var(--muted);font-weight:700}
+textarea{width:100%;box-sizing:border-box;min-height:70px;font:inherit;font-size:.95rem;padding:8px 10px;border:1.5px solid var(--rule);border-radius:4px;background:var(--bg);color:var(--ink);resize:vertical}
+.savebar{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.status{font-size:.9rem;color:var(--muted)}
+.handback{display:grid;grid-template-columns:9rem 1fr;gap:6px 14px;margin:0}
+.handback dt{font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);padding-top:3px}
+.handback dd{margin:0;min-width:0}
+@media (max-width:520px){.handback{grid-template-columns:1fr}.handback dd{margin-bottom:6px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<div id="app"><p class="why" style="padding:28px 16px">Loading the two bubbles…</p></div>
+<script>
+(function(){
+var $=function(id){return document.getElementById(id)};
+var C1,V2,answers={choice:'',note:'',change:'',savedAt:null};
+var times=[],total=0,actionStart=0,turnStart=0,elapsed=0,running=false,startedAt=0,raf=0;
+var st={story:'garden-bbq',reduced:false,skipWalk:true,loop:true,paths:false,speed:1,body:true,hero:true,support:true,symbols:true,treatment:true};
+try{if(matchMedia('(prefers-reduced-motion: reduce)').matches)st.reduced=true}catch(e){}
+var CAM={full:{x:0,w:820},action:{x:396,w:424}};
+var COLORS={hero:'#edb853',resolved:'#edb853',support:'#73d2c5',symbol:'#dc776d'};
+
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+
+/* Claude's bubble outline: a scalloped thought cloud drawn round the same ellipse V2 uses. */
+function scallopPath(){
+  var cx=180,cy=117,a=138,b=82,n=15,pts=[];
+  for(var i=0;i<n;i++){var t=-Math.PI/2+i*2*Math.PI/n+0.12;pts.push([cx+a*Math.cos(t),cy+b*Math.sin(t)])}
+  var d='M'+pts[0][0].toFixed(1)+' '+pts[0][1].toFixed(1);
+  for(i=1;i<=n;i++){var p=pts[i%n],q=pts[i-1],r=Math.hypot(p[0]-q[0],p[1]-q[1])*0.6;d+=' A'+r.toFixed(1)+' '+r.toFixed(1)+' 0 0 1 '+p[0].toFixed(1)+' '+p[1].toFixed(1)}
+  return d+'Z';
+}
+var TRAIL=[[183,257,4],[180,242,6],[177,224,8.5]];
+
+function stageHtml(which){
+  var treat=which==='c1'
+    ?'<svg class="c1bubble" id="c1-bubble" viewBox="0 0 360 270" aria-hidden="true"><path d="'+scallopPath()+'" fill="rgba(250,244,222,.3)" stroke="rgba(239,246,245,.9)" stroke-width="3" stroke-linejoin="round"/></svg>'
+      +'<svg class="c1bubble" viewBox="0 0 360 270" aria-hidden="true" style="transform:none">'+TRAIL.map(function(t,k){return '<circle id="c1-dot'+k+'" cx="'+t[0]+'" cy="'+t[1]+'" r="'+t[2]+'" fill="rgba(250,244,222,.35)" stroke="rgba(239,246,245,.9)" stroke-width="2.4" style="transform-origin:'+t[0]+'px '+t[1]+'px"/>'}).join('')+'</svg>'
+    :'<div class="treat v2bubble"></div>';
+  return '<div class="viewport" id="'+which+'-view"><div class="scene" id="'+which+'-scene">'
+    +'<img class="actor" id="'+which+'-actor" alt="The Prime Keeper, approved sequence">'
+    +'<div class="cloud" id="'+which+'-cloud"><div class="treat" id="'+which+'-treat">'+treat+'</div>'
+    +'<div class="layer" id="'+which+'-objects"></div><div class="layer" id="'+which+'-symbols"></div>'
+    +'<svg class="paths" id="'+which+'-paths" viewBox="0 0 360 230" hidden></svg></div></div></div>';
+}
+
+function render(){
+  var stories=Object.keys(C1.stories);
+  var h='';
+  h+='<header><span class="eyebrow">Lighthouse Keeper · bubble model test · 20 Oct 2026</span><h1>Bubble Choreography C1</h1>';
+  h+='<p class="lede">Claude’s own take on Codex’s V2 thought bubble, built only from Codex’s test pack. The same walk, turn and back-work play on both stages at once, so you can watch them side by side.</p>';
+  h+='<dl class="handback"><dt>Status</dt><dd>Draft for comparison only. Nothing approved, promoted or deployed; Codex’s pack, V1, V2, Final art and the kitchen are untouched.</dd><dt>Keeper art</dt><dd>All 41 Prime body drawings are Codex’s, checked byte for byte against the pack.</dd></dl></header>';
+
+  h+='<div class="stagecard">';
+  h+='<div class="ctlgroup"><span class="ctl-label">Story</span><div class="chips" role="group" aria-label="Story">'+stories.map(function(k){return '<button type="button" class="chip" data-story="'+k+'" aria-pressed="'+(k===st.story)+'">'+esc(C1.stories[k].label)+'</button>'}).join('')+'</div></div>';
+  h+='<div class="pair"><div class="col"><div class="colhead"><b>Claude C1</b><span class="readout" id="c1-read"></span></div>'+stageHtml('c1')+'</div>';
+  h+='<div class="col"><div class="colhead"><b>Codex V2</b><span class="readout" id="v2-read"></span></div>'+stageHtml('v2')+'</div></div>';
+  h+='<p class="beats" id="beats"></p>';
+  h+='<div class="controls"><button type="button" class="btn primary" id="play">Pause</button><button type="button" class="btn" id="replay">Replay</button><button type="button" class="btn" id="prev" aria-label="Previous bubble frame">◀ Frame</button><button type="button" class="btn" id="next" aria-label="Next bubble frame">Frame ▶</button><input type="range" id="scrub" min="0" value="0" step="1" aria-label="Timeline"><span class="readout" id="clock"></span></div>';
+  h+='<div class="controls"><label class="tog"><input type="checkbox" id="reduced"'+(st.reduced?' checked':'')+'> Reduced motion</label><label class="tog"><input type="checkbox" id="skipWalk"'+(st.skipWalk?' checked':'')+'> Start at the turn</label><label class="tog"><input type="checkbox" id="loop" checked> Loop</label><label class="tog"><input type="checkbox" id="paths"> Paths</label><label class="tog">Speed <select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label></div>';
+  h+='<div class="controls"><span class="ctl-label">Layers</span><label class="tog"><input type="checkbox" id="body" checked> Body</label><label class="tog"><input type="checkbox" id="hero" checked> Hero / result</label><label class="tog"><input type="checkbox" id="support" checked> Supporting objects</label><label class="tog"><input type="checkbox" id="symbols" checked> Ticks and stars</label><label class="tog"><input type="checkbox" id="treatment" checked> Bubble marks</label></div>';
+  h+='</div>';
+
+  h+='<section><h2>What C1 does differently</h2><ul class="diff">';
+  h+='<li><b>Born at his head.</b> Three little circles pop up from his cap, the bubble inflates from them, and every picture rises out of that same mouth before flying to its place.</li>';
+  h+='<li><b>One thing at a time.</b> The three supporting pictures each get a fixed lane (upper left, upper right, lower right) and take turns visiting the main picture, so only one is ever in the middle.</li>';
+  h+='<li><b>Moves that mean something.</b> Sausages and hot dogs flip onto the grill, charcoal tips in, the hammer strikes three times, the wrench spins, the sponge scrubs back and forth, the sandwich stacks and presses.</li>';
+  h+='<li><b>More, smaller marks.</b> Speed ticks follow every moving picture, plus a star or spark at each touch, rising heat or soap, and glints on the result: about twenty separate marks per story where V2 has eight or nine.</li>';
+  h+='<li><b>A clear before and after.</b> The supports fold into the main picture, the result bursts out of it, and both settle side by side for the five quiet frames.</li>';
+  h+='<li><b>Reduced motion with the same ending.</b> Nothing travels or spins: pictures fade in where they live and swap places while invisible. It ends on exactly the same quiet picture as full motion.</li>';
+  h+='</ul></section>';
+
+  h+='<section><h2>Measured on both</h2><p class="why">Counted the same way for both, from the frame data, in full motion. “Covering” means two pictures overlap by more than a quarter of the smaller one. C1’s touches are on purpose (a sausage on the grill), so C1 also lists covering that happens anywhere else.</p>';
+  h+='<div class="tablewrap"><table><thead><tr><th>Story</th><th>Frames with covering</th><th>C1 covering outside a touch</th><th>Separate ticks and stars</th><th>Pictures leaving the bubble</th><th>Quiet tail still and silent</th></tr></thead><tbody>';
+  stories.forEach(function(k){
+    var a=C1.metrics[k].full,b=V2.metrics[k].full;
+    var tail=function(m){return m.tailStatic&&m.tailSymbolsSilent?'<span class="good">yes</span>':'<span class="warn">no</span>'};
+    h+='<tr><td><b>'+esc(C1.stories[k].label)+'</b></td><td class="num">C1 '+a.framesWithHeavyOverlap+' · V2 '+b.framesWithHeavyOverlap+'</td><td class="num">'+Math.round(a.maxUndeclaredOverlap*100)+'% at most</td><td class="num">C1 '+a.symbolInstancesUsed+' · V2 '+b.symbolInstancesUsed+'</td><td class="num">C1 '+a.objectFramesOutsideBubble+' · V2 '+b.objectFramesOutsideBubble+'</td><td>C1 '+tail(a)+' · V2 '+tail(b)+'</td></tr>';
+  });
+  h+='</tbody></table></div></section>';
+
+  h+='<section id="verdict"><h2>Your verdict</h2>';
+  h+='<div class="q"><h3>Which bubble should Codex carry forward?</h3><div class="opts" role="group" aria-label="Which bubble">';
+  [['c1','Claude C1','Codex rebuilds its next bubble from C1’s staging.'],['v2','Codex V2','C1 was a useful test; keep going with V2.'],['mix','A mix','Say which parts of each in the box below.']].forEach(function(o){
+    h+='<button type="button" class="opt" data-choice="'+o[0]+'" aria-pressed="'+(answers.choice===o[0])+'"><span class="box"></span><span><b>'+esc(o[1])+'</b><span class="d">'+esc(o[2])+'</span></span></button>';
+  });
+  h+='</div><label class="note" for="note">Why, or which parts (optional)</label><textarea id="note" placeholder="For example: C1’s head trail and lanes, V2’s calmer bubble">'+esc(answers.note)+'</textarea></div>';
+  h+='<div class="q"><label class="note" for="change">Anything you’d change in C1? Name the story and the moment.</label><textarea id="change" placeholder="Optional">'+esc(answers.change)+'</textarea></div>';
+  h+='<div class="savebar"><button type="button" class="btn primary" id="save">Save my verdict</button><span class="status" id="status">'+(answers.savedAt?'Last saved '+esc(new Date(answers.savedAt).toLocaleString())+'.':'Not saved yet. Save, then say “handed back” in the chat.')+'</span></div></section>';
+
+  h+='<section><h2>Where it lives</h2><p class="why">In the repo at <code>art/drafts/keeper-prime-rear-action-choreography-2026-10-20-claude-c1/</code>: <code>build.mjs</code> makes the frame data, <code>verify.mjs</code> runs the checks, and <code>HANDOFF.md</code> is the note for Codex. Every layer above can be switched off without touching the others; the same switches exist in the data.</p></section>';
+  $('app').innerHTML=h;
+  bind();
+}
+
+function buildTimes(){
+  var c=0;times=C1.sequence.map(function(f){var r={start:c};c+=f.durationMs;return r});total=c;
+  actionStart=times[C1.actionStartIndex].start;
+  var turn=C1.sequence.findIndex(function(f){return f.phase.indexOf('turn')>=0});turnStart=times[Math.max(0,turn)].start;
+  $('scrub').max=Math.round(total);
+}
+function startAt(){return st.skipWalk?turnStart:0}
+function frameAt(ms){for(var i=times.length-1;i>=0;i--)if(ms>=times[i].start)return i;return 0}
+function cloudFrame(){return Math.max(0,Math.min(41,Math.floor((elapsed-actionStart)/125)))}
+
+/* One <img> per instance, reused frame to frame, so nothing re-decodes mid-play. */
+var pool={};
+function addPiece(host,item,src,isSymbol){
+  var key=host.id+'/'+item.instance,img=pool[key];
+  if(!img){img=pool[key]=document.createElement('img');img.className='piece'+(isSymbol?' symbol':'');img.alt='';host.appendChild(img)}
+  if(img.getAttribute('src')!==src)img.src=src;
+  img.hidden=false;img.dataset.seen='1';img.style.opacity=item.opacity;img.style.zIndex=item.z;
+  img.style.transform='translate(calc(-50% + '+item.x+'px),calc(-50% + '+item.y+'px)) rotate('+item.rotation+'deg) scale('+item.scale+')';
+}
+function drawPaths(svg,timeline,frame){
+  svg.innerHTML='';svg.hidden=!st.paths;if(!st.paths)return;
+  [['objects',frame.objects],['symbols',frame.symbols]].forEach(function(pair){pair[1].forEach(function(item){
+    var pts=timeline.map(function(row){return row[pair[0]].find(function(c){return c.instance===item.instance})}).filter(function(s){return s&&s.opacity>0.05});
+    if(pts.length<2)return;
+    var pl=document.createElementNS('http://www.w3.org/2000/svg','polyline');
+    pl.setAttribute('points',pts.map(function(s){return (180+s.x)+','+(115+s.y)}).join(' '));
+    pl.setAttribute('stroke',pair[0]==='symbols'?COLORS.symbol:COLORS[item.role]||COLORS.support);svg.appendChild(pl);
+  })});
+}
+function drawStage(which,data,active){
+  var story=data.stories[st.story],mode=st.reduced?'reduced':'full',timeline=story.timelines.bubble[mode],cf=cloudFrame(),frame=timeline[cf];
+  var seq=C1.sequence[frameAt(elapsed)],left=Math.round(42+Math.min(seq.x,374)/374*438);
+  var actor=$(which+'-actor');if(actor.getAttribute('src')!==seq.src)actor.src=seq.src;actor.style.left=left+'px';actor.hidden=!st.body;
+  var cloud=$(which+'-cloud');cloud.style.left=(left-52)+'px';cloud.hidden=!active;
+  var objs=$(which+'-objects'),syms=$(which+'-symbols');[objs,syms].forEach(function(h){for(var i=0;i<h.children.length;i++)h.children[i].dataset.seen=''});
+  var comp=which==='c1'?C1.components:V2.components;
+  frame.objects.forEach(function(o){var show=o.role==='support'?st.support:st.hero;if(show&&o.opacity>0)addPiece(objs,o,comp[o.component].src,false)});
+  if(st.symbols)frame.symbols.forEach(function(s){if(s.opacity>0)addPiece(syms,s,comp[s.component].src,true)});
+  [objs,syms].forEach(function(h){for(var i=0;i<h.children.length;i++)if(!h.children[i].dataset.seen)h.children[i].hidden=true});
+  $(which+'-treat').hidden=!st.treatment;
+  if(which==='c1'&&frame.treatment){
+    var t=frame.treatment,b=$('c1-bubble');b.style.opacity=t.bubbleOpacity;b.style.transform='scale('+t.bubbleScale+')';
+    t.trail.forEach(function(o,k){var d=$('c1-dot'+k);d.style.opacity=o;d.style.transform='scale('+t.trailScale[k]+')'});
+  }
+  drawPaths($(which+'-paths'),timeline,frame);
+  var cue=story.sfx.filter(function(c){return c.frame===cf})[0];
+  $(which+'-read').textContent=active?('frame '+(cf+1)+'/42 · '+frame.storyPhase.replace('-',' ')+(cue?' · ♪ '+cue.cue:'')):'walking';
+}
+function fit(){
+  var cam=st.skipWalk?CAM.action:CAM.full;
+  ['c1','v2'].forEach(function(w){
+    var view=$(w+'-view');if(!view)return;var avail=view.parentNode.clientWidth,k=Math.min(1,avail/cam.w);
+    view.style.width=Math.floor(cam.w*k)+'px';view.style.height=Math.floor(580*k)+'px';
+    $(w+'-scene').style.transform='scale('+k+') translateX('+(-cam.x)+'px)';
+  });
+}
+function draw(){
+  var active=elapsed>=actionStart;drawStage('c1',C1,active);drawStage('v2',V2,active);
+  $('scrub').value=Math.round(elapsed);$('clock').textContent=(elapsed/1000).toFixed(2)+' s';
+  $('beats').textContent=C1.stories[st.story].label+' · C1: '+C1.stories[st.story].storyBeats.join(' → ');
+}
+function tick(now){
+  if(!running)return;elapsed=Math.min(total,startAt()+(now-startedAt)*st.speed);draw();
+  if(elapsed>=total){if(st.loop){startedAt=now+600;raf=requestAnimationFrame(tick)}else{running=false;$('play').textContent='Play'}}
+  else raf=requestAnimationFrame(tick);
+}
+function play(fromStart){if(fromStart||elapsed>=total||elapsed<startAt())elapsed=startAt();running=true;startedAt=performance.now()-(elapsed-startAt())/st.speed;$('play').textContent='Pause';cancelAnimationFrame(raf);raf=requestAnimationFrame(tick)}
+function pause(){running=false;cancelAnimationFrame(raf);$('play').textContent='Play';draw()}
+function step(d){pause();elapsed=Math.min(total,actionStart+Math.max(0,Math.min(41,cloudFrame()+(elapsed<actionStart&&d>0?0:d)))*125+1);draw()}
+
+function bind(){
+  document.querySelectorAll('[data-story]').forEach(function(b){b.onclick=function(){st.story=b.dataset.story;document.querySelectorAll('[data-story]').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});if(running)play(true);else draw()}});
+  $('play').onclick=function(){running?pause():play(false)};$('replay').onclick=function(){play(true)};
+  $('prev').onclick=function(){step(-1)};$('next').onclick=function(){step(1)};
+  $('scrub').oninput=function(){pause();elapsed=Number($('scrub').value);draw()};
+  ['reduced','loop','paths','body','hero','support','symbols','treatment'].forEach(function(id){$(id).onchange=function(){st[id]=$(id).checked;draw()}});
+  $('skipWalk').onchange=function(){st.skipWalk=$('skipWalk').checked;fit();if(running)play(true);else draw()};
+  $('speed').onchange=function(){var keep=elapsed;st.speed=Number($('speed').value);if(running){startedAt=performance.now()-(keep-startAt())/st.speed}};
+  document.querySelectorAll('[data-choice]').forEach(function(b){b.onclick=function(){answers.choice=answers.choice===b.dataset.choice?'':b.dataset.choice;document.querySelectorAll('[data-choice]').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.choice===answers.choice))});dirty()}});
+  ['note','change'].forEach(function(id){$(id).oninput=function(){answers[id]=$(id).value;dirty()}});
+  $('save').onclick=save;
+  window.addEventListener('resize',fit);
+}
+function dirty(){$('status').textContent='Not saved yet.';try{sessionStorage.setItem('c1-verdict',JSON.stringify(answers))}catch(e){}}
+async function save(){
+  var btn=$('save'),s=$('status');btn.disabled=true;s.textContent='Saving…';
+  var art=null;try{art=window.claude&&window.claude.use?await window.claude.use('artifact'):null}catch(e){}
+  if(!art){s.textContent='Saving isn’t available in this view. Open the page on claude.ai to save.';btn.disabled=false;return}
+  answers.savedAt=new Date().toISOString();
+  try{await art.publish({'answers.json':JSON.stringify(answers,null,1)});s.textContent='Saved. Say “handed back” in the chat when you’re ready.';try{sessionStorage.removeItem('c1-verdict')}catch(e){}}
+  catch(e){var c=e&&e.code;s.textContent=c==='conflict'?'A newer copy was saved elsewhere; the page is reloading with it.':(c==='not_writer'||c==='not_granted')?'You can view this page but not save to it.':c==='capability_disabled'?'Saving is switched off in this view. Open the page on claude.ai to save.':'That didn’t save. Try again in a moment.'}
+  btn.disabled=false;
+}
+function load(url){return fetch(url,{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error(url+' '+r.status);return r.json()})}
+function preload(){
+  var urls={};C1.sequence.forEach(function(f){urls[f.src]=1});Object.keys(C1.components).forEach(function(k){urls[C1.components[k].src]=1});
+  return Promise.all(Object.keys(urls).map(function(u){return new Promise(function(res){var i=new Image();i.onload=function(){(i.decode?i.decode():Promise.resolve()).then(res,res)};i.onerror=res;i.src=u})}));
+}
+Promise.all([load('catalogue.json'),load('compare-v2.json'),load('answers.json').catch(function(){return null})]).then(function(r){
+  C1=r[0];V2=r[1];if(r[2])answers=Object.assign(answers,r[2]);
+  try{var d=JSON.parse(sessionStorage.getItem('c1-verdict')||'null');if(d&&d.savedAt===answers.savedAt)answers=d}catch(e){}
+  render();buildTimes();fit();elapsed=actionStart+20*125;draw();
+  return preload().then(function(){if(st.reduced)pause();else play(true)});
+}).catch(function(e){$('app').innerHTML='<p class="why" style="padding:28px 0">The frame data didn’t load ('+esc(e.message)+'). Reload the page to try again.</p>'});
+})();
+</script>
