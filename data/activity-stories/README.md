@@ -2,6 +2,13 @@
 
 **Status:** draft formats, version 1 (20 October 2026). Review-only: nothing here is in the game yet.
 
+**Pace:** the game takes its time. Activities never rush, however mundane;
+the game world's clock and life management are central (Frank, 20 Oct). A
+story has no upper length, only a five-second floor. Every activity takes
+20–30 seconds of real time before it finishes, and its story plays at least
+twice in that time, so a telling (story plus clearing) should be 15 seconds
+or less. The studio shows how many times each story plays.
+
 A bubble story is the little animated picture story above the keeper's head
 while he works with his back to us: the grill arrives, the charcoal drops in,
 the sausages flip on, the burgers appear, a quiet moment, then it starts
@@ -135,7 +142,8 @@ rules, which came out of the 20 October review of the V2 examples:
 5. The quiet moment is completely still, with no marks.
 6. Reduced motion has the same steps, timing and ending, with at most two
    pictures and one mark, and nothing travels.
-7. A story lasts 5–10 seconds; the studio warns outside that.
+7. A story never rushes: the studio warns below five seconds, and when it
+   would play fewer than twice in a 20-second activity.
 
 ## Workflows
 

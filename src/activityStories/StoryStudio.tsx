@@ -196,7 +196,7 @@ export default function StoryStudio() {
       <main className="st-main">
         <div className="st-title">
           <h2>{story.label}</h2>
-          <span className="st-dim">{story.appliesTo.label || 'No object yet'} · {compiled.seconds.toFixed(1)} s · {compiled.storyFrames} frames at {FPS} fps</span>
+          <span className="st-dim">{story.appliesTo.label || 'No object yet'} · {compiled.seconds.toFixed(1)} s · {compiled.storyFrames} frames at {FPS} fps · plays {compiled.tellings[0] === compiled.tellings[1] ? compiled.tellings[0] : `${compiled.tellings[0]}–${compiled.tellings[1]}`} times in a 20–30 s activity</span>
           <span className="st-grow" />
           {editable && DRAFT_BY_ID[story.id] && (saved[story.id] || dirty.has(story.id)) && <button type="button" onClick={() => void backToDraft()}>Back to Claude’s draft</button>}
           <button type="button" onClick={copyJson} title="For Claude or Codex">Copy story</button>
@@ -228,7 +228,7 @@ export default function StoryStudio() {
             {compiled.issues.map((i, k) => <li key={k} className={i.level === 'error' ? 'ss-err' : ''}>{i.level === 'error' ? '⛔' : '⚠️'} {i.text}</li>)}
           </ul>
         ) : (
-          <p className="st-ok">No problems: every step can play, every touch mark lands where two pictures meet, and the story lasts between 5 and 10 seconds.</p>
+          <p className="st-ok">No problems: every step can play, every touch mark lands where two pictures meet, the story takes its time (at least 5 seconds), and it plays at least twice in a 20–30 second activity.</p>
         )}
 
         <h2>How it ends</h2>

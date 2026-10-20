@@ -18,10 +18,13 @@ describe('bubble story drafts', () => {
     describe(story.label, () => {
       const c = compileStory(story, LIBRARY)
 
-      it('compiles with no errors and lasts 5–10 seconds', () => {
+      it('compiles with no errors and never rushes (at least 5 seconds)', () => {
         expect(c.issues.filter((i) => i.level === 'error')).toEqual([])
         expect(c.seconds).toBeGreaterThanOrEqual(5)
-        expect(c.seconds).toBeLessThanOrEqual(10)
+      })
+
+      it('plays at least twice in the shortest (20-second) activity', () => {
+        expect(c.tellings[0]).toBeGreaterThanOrEqual(2)
       })
 
       it('shows every cast member at some point', () => {

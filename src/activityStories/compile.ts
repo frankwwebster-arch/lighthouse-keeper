@@ -26,6 +26,9 @@ export const FPS = 8
 export const BOX = { object: 140, mark: 92 }
 export const QUIET_MIN = 5
 const CLEAR_FRAMES = 3
+/** Frank, 20 Oct: an activity takes 20–30 s of real time, and its story plays at least twice in it. */
+export const ACTIVITY_SECONDS: [number, number] = [20, 30]
+export const MIN_TELLINGS = 2
 
 export interface FrameItem {
   id: string
@@ -68,6 +71,10 @@ export interface Compiled {
   reduced: Frame[]
   /** Frames that tell the story, before any clearing frames. */
   storyFrames: number
+  /** Seconds from one telling to the next (the story plus its clearing frames). */
+  loopSeconds: number
+  /** How many times it plays in the shortest and longest activity (ACTIVITY_SECONDS). */
+  tellings: [number, number]
   quiet: [number, number]
   afterStory: AfterStory
   windows: { step: number; start: number; end: number }[]
@@ -569,10 +576,13 @@ export function compileStory(input: Story, lib: Library): Compiled {
   })
 
   const seconds = storyFrames / FPS
-  if (seconds < 5) issues.push({ level: 'warn', text: `The story lasts ${seconds.toFixed(1)} s; aim for 5–10 s` })
-  if (seconds > 10) issues.push({ level: 'warn', text: `The story lasts ${seconds.toFixed(1)} s; aim for 5–10 s` })
+  // The game takes its time (Frank, 20 Oct): no upper limit, only a floor so a story is never a blur.
+  if (seconds < 5) issues.push({ level: 'warn', text: `The story lasts only ${seconds.toFixed(1)} s; give it at least 5 s so it doesn’t rush` })
+  const loopSeconds = totalFrames / FPS
+  const tellings: [number, number] = [Math.floor(ACTIVITY_SECONDS[0] / loopSeconds), Math.floor(ACTIVITY_SECONDS[1] / loopSeconds)]
+  if (tellings[0] < MIN_TELLINGS) issues.push({ level: 'warn', text: `At ${loopSeconds.toFixed(1)} s a telling, it plays ${tellings[0]} time${tellings[0] === 1 ? '' : 's'} in a ${ACTIVITY_SECONDS[0]}-second activity; every activity should show its story at least twice` })
   const crowd = Math.max(...full.map((fr) => fr.items.filter((i) => i.kind === 'object').length))
   if (crowd > 5) issues.push({ level: 'warn', text: `${crowd} pictures are on show at once; five is plenty` })
 
-  return { fps: FPS, full, reduced, storyFrames, quiet, afterStory: story.afterStory, windows, contacts, sfx, seconds, issues }
+  return { fps: FPS, full, reduced, storyFrames, loopSeconds, tellings, quiet, afterStory: story.afterStory, windows, contacts, sfx, seconds, issues }
 }

@@ -5,7 +5,7 @@
 ## What Frank decided
 
 After Claude's review of the Prime Rear Action Choreography V2 pack, Frank
-decided that the bubble tells a quick story in order (about 5–10 seconds) and
+decided that the bubble tells a story in order and
 that **Claude assembles the story patterns while Codex supplies the pictures**.
 Frank adjusts stories himself in the recipe studio. His five choices:
 
