@@ -321,7 +321,7 @@ and removable. All 24 layouts are verified. V37 awaits visual review and
 changes no Final or runtime asset.
 
 Kitchen Split Cabinet Workbench V38 at
-`/keeper-review/kitchen-split-cabinet-workbench-v38/` tests Cabinet V11 as two
+`/keeper-review/kitchen-split-cabinet-workbench-v38/` establishes Cabinet V11 as two
 independently movable 84-pixel units; there is no pair-movement mode. Cabinet A
 and B preserve their distinct original bay centres. Each side is selected
 dynamically from exact V11 pixels: exposed sides receive the rounded outer end,
@@ -329,8 +329,28 @@ while joined sides receive the internal edge before the existing V22/V32 repair
 layer is applied. Cabinet A, Cabinet B, fridge, sink and oven occupy five of six
 canonical bays, leaving one exact snap destination. All 720 non-overlapping
 arrangements and every pixel of all eight edge variants are deterministically
-verified. V38 is reversible, unapproved and unpromoted. V11, V37, Final and
-runtime are unchanged; kettle, toaster and mixing bowl remain unstarted.
+verified. Frank approved the result with “Fantastic” on 20 October 2026; exact
+hashes are pinned in
+`docs/review/kitchen-split-cabinet-workbench-v38-approval-2026-10-20.json`.
+The reusable rule for later appliances and upgrades is now
+`docs/KITCHEN_MODULAR_ASSET_AND_JOIN_STANDARD_2026-10-20.md`. V38 remains
+unpromoted; V11, V37, Final and runtime are unchanged.
+
+Kitchen Dishwasher Workbench V39 at
+`/keeper-review/kitchen-dishwasher-workbench-v39/` is the active reversible
+visual gate. It adds a standalone one-bay silver dishwasher with coordinated
+Off, On and Broken states. Off/On share one exact silhouette; On adds only aqua
+LCD glyphs and a solid green lamp. Broken keeps the same carcass and door but
+loses the lower-right hinge, leaving the bottom-hinged door strongly twisted
+toward the camera with a bent handle, cracked fascia and red error lamp. Three
+separate reusable suds models—compact, regular and emphatic—are forty-frame,
+4-fps, ten-second strips with drag, resize, crop, speed, multiple-layer and
+removal controls. The default Regular placement makes a large soapy floor
+puddle rather than a restrained spill. Six objects fill six bays, so moving one swaps it with the
+occupant while retaining exact origins, Prime midpoints and V22/V32 healing.
+All 720 arrangements are verified. V39 is unapproved, unpromoted and unwired;
+V38 and inherited assets are unchanged. Kettle, toaster and bowl follow only
+after this review.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

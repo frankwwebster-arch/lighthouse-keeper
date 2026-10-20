@@ -358,6 +358,11 @@ export default {
         destination: '/keeper-review/kitchen-split-cabinet-workbench-v38/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-dishwasher-workbench-v39',
+        destination: '/keeper-review/kitchen-dishwasher-workbench-v39/index.html',
+        permanent: false,
+      },
     ]
   },
 }

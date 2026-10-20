@@ -1,8 +1,10 @@
 # Kitchen Split Cabinet Workbench V38
 
-V38 is a reversible test of separating approved Cabinet V11 into two
-independently movable one-bay units. It does not add pair movement and does not
-alter the approved source run, V37 appliances, Final or runtime.
+V38 is the approved method for separating Cabinet V11 into two independently
+movable one-bay units. Frank approved the result with “Fantastic” on 20 October
+2026. The exact review remains unpromoted and does not alter the approved source
+run, V37 appliances, Final or runtime. Its hashes are pinned in
+`docs/review/kitchen-split-cabinet-workbench-v38-approval-2026-10-20.json`.
 
 ## Construction
 
@@ -37,3 +39,6 @@ The verifier checks every pixel in all eight cabinet variants against its
 declared V11 source region, all 720 non-overlapping five-object arrangements,
 both exposed-side directions, every join class, archive hashes and preload
 behaviour. Kettle, toaster and mixing bowl remain explicitly unstarted.
+
+The reusable authoring and upgrade rules derived from this approval are in
+`docs/KITCHEN_MODULAR_ASSET_AND_JOIN_STANDARD_2026-10-20.md`.
