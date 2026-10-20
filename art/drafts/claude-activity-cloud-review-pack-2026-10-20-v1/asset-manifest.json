@@ -1,0 +1,603 @@
+{
+  "schema": "lighthouse-keeper/claude-activity-cloud-review-pack@1",
+  "pack": "claude-activity-cloud-review-pack-2026-10-20-v1",
+  "status": "immutable-input-only-review-pack",
+  "purpose": "One self-contained Claude Code review input for Prime Rear Action Choreography V2 plus Composer V7 generic symbols.",
+  "counts": {
+    "files": 95,
+    "pngImages": 78,
+    "finalUsableVisualAssets": 74,
+    "approvedPrimeBodyImages": 41,
+    "activityObjectImages": 20,
+    "originalSymbolImages": 6,
+    "genericV7SymbolImages": 7,
+    "acceptedSourceImages": 3,
+    "rejectedEvidenceImages": 1
+  },
+  "authorities": {
+    "choreographyV2Register": {
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/batch-register.json",
+      "sha256": "ebf4bb80c34f66f1f941b3b6fe9312d551b50586682eef16a419f326a9446c1e"
+    },
+    "composerV7Register": {
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v7/batch-register.json",
+      "sha256": "8210bc2b963867e22192eba45ee30a2db96b5f4dd8571c9449e931eddd272ad8"
+    },
+    "authoringStandard": {
+      "file": "guidance/ACTIVITY_CALLOUT_AUTHORING_STANDARD.md",
+      "sha256": "29f02e4e642d8f949da5ad8e9af86a651fe27c161d72b6b53a34dab9840cd043"
+    }
+  },
+  "files": [
+    {
+      "path": "CLAUDE_REVIEW_PROMPT.md",
+      "role": "handoff-instruction",
+      "bytes": 2400,
+      "sha256": "1e5e83ca31354ae0e6edc2edfa1389084aadd09dec493955459c9e800c72c036"
+    },
+    {
+      "path": "README.md",
+      "role": "handoff-instruction",
+      "bytes": 1496,
+      "sha256": "169eee4baf96929bb46830824700c8b636e24b679ee2befd57c3794091721bf5"
+    },
+    {
+      "path": "assets/activity/bbq-burgers-5244d4289bba.png",
+      "role": "activity-object",
+      "bytes": 73697,
+      "sha256": "5244d4289bbaf95f4c2ddd36a72f24fe9b5bf12e2a349365d9fe574fdfa64354"
+    },
+    {
+      "path": "assets/activity/bbq-charcoal-4b728ffaefec.png",
+      "role": "activity-object",
+      "bytes": 69879,
+      "sha256": "4b728ffaefec6c4ef792c3ef5261cc5815060077ac3d0a08b44be0abbfd6dfa2"
+    },
+    {
+      "path": "assets/activity/bbq-grill-8984470c007f.png",
+      "role": "activity-object",
+      "bytes": 62202,
+      "sha256": "8984470c007ff8a35af6fc8428afa9a38318c89bb5c4e7e1f2f34d7b858a5ee0"
+    },
+    {
+      "path": "assets/activity/bbq-hotdogs-63d205ed77f0.png",
+      "role": "activity-object",
+      "bytes": 70109,
+      "sha256": "63d205ed77f06ea3121f4ef2bba1a3dde9d90c064bedaa2c5ceb761553f46f6c"
+    },
+    {
+      "path": "assets/activity/bbq-sausages-2ea34430496e.png",
+      "role": "activity-object",
+      "bytes": 67394,
+      "sha256": "2ea34430496ee43bd09a7640a12eaa5606562f2ab7c42dd6f655ba7a9fe97727"
+    },
+    {
+      "path": "assets/activity/cooking-sandwich-b88b28b259eb.png",
+      "role": "activity-object",
+      "bytes": 61188,
+      "sha256": "b88b28b259ebbf7b4729f54116605009cf120bc9abe9c37dce0a19e4dfe847e4"
+    },
+    {
+      "path": "assets/activity/repair-boat-hull-patch-cef61bcec554.png",
+      "role": "activity-object",
+      "bytes": 88351,
+      "sha256": "cef61bcec5542ac32a74bcae933b972deab398bec5edfabd8ded71441b23c28e"
+    },
+    {
+      "path": "assets/activity/repair-hammer-nails-0c71ed9d475b.png",
+      "role": "activity-object",
+      "bytes": 58638,
+      "sha256": "0c71ed9d475b334ad85c2f6c7a190ae61a90bcf44c18974559f8a8e7e06632e9"
+    },
+    {
+      "path": "assets/activity/repair-rope-knot-03f0806f550a.png",
+      "role": "activity-object",
+      "bytes": 41594,
+      "sha256": "03f0806f550a4953ac72c0dc6e17745e00ef71d4d231177343de29e75e4436d5"
+    },
+    {
+      "path": "assets/activity/repair-toolbox-bddc65528cb6.png",
+      "role": "activity-object",
+      "bytes": 78093,
+      "sha256": "bddc65528cb63fed1403fcbd0de210af4b357585dac5660102512b706f459c10"
+    },
+    {
+      "path": "assets/activity/repair-wrench-cog-588a382fd46f.png",
+      "role": "activity-object",
+      "bytes": 82602,
+      "sha256": "588a382fd46f0fbb2186db0e40613a6e02c8476d4b99bd53dd6d3b2f27861ea4"
+    },
+    {
+      "path": "assets/activity/sandwich-bread-11313cc6d083.png",
+      "role": "activity-object",
+      "bytes": 52690,
+      "sha256": "11313cc6d0839d313ecb96ef4136e372904fe848de862034a2234637ecabb8c8"
+    },
+    {
+      "path": "assets/activity/sandwich-ham-d3cdba07f6b6.png",
+      "role": "activity-object",
+      "bytes": 45561,
+      "sha256": "d3cdba07f6b695e7e9918fde92822aeb3f1d543aafde0b59bd204069641c4fb7"
+    },
+    {
+      "path": "assets/activity/sandwich-lettuce-3addb510966c.png",
+      "role": "activity-object",
+      "bytes": 60017,
+      "sha256": "3addb510966c088b52b2d50a5a5e6088231a4e083798a95f8d98573e35b37ef5"
+    },
+    {
+      "path": "assets/activity/sandwich-tomato-10f760734f45.png",
+      "role": "activity-object",
+      "bytes": 55030,
+      "sha256": "10f760734f45b9cf6e2ee7ca815f7c89137cd64854bd71de98b07beaa871e2be"
+    },
+    {
+      "path": "assets/activity/washing-cutlery-76d1a71e4d9e.png",
+      "role": "activity-object",
+      "bytes": 62577,
+      "sha256": "76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca"
+    },
+    {
+      "path": "assets/activity/washing-droplets-14fa3c4503f2.png",
+      "role": "activity-object",
+      "bytes": 43137,
+      "sha256": "14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da"
+    },
+    {
+      "path": "assets/activity/washing-liquid-f311431e2c6e.png",
+      "role": "activity-object",
+      "bytes": 55578,
+      "sha256": "f311431e2c6e480033982790d416bbd6df16f414338c6a030ff28d2780efd2c1"
+    },
+    {
+      "path": "assets/activity/washing-plate-01b82c03b73a.png",
+      "role": "activity-object",
+      "bytes": 54933,
+      "sha256": "01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f"
+    },
+    {
+      "path": "assets/activity/washing-sponge-aed0b35f1bf2.png",
+      "role": "activity-object",
+      "bytes": 49751,
+      "sha256": "aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533"
+    },
+    {
+      "path": "assets/body/01-walk-f2-2b8e91de747b.png",
+      "role": "approved-prime-body",
+      "bytes": 59701,
+      "sha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf"
+    },
+    {
+      "path": "assets/body/02-walk-f3-b376254e9c29.png",
+      "role": "approved-prime-body",
+      "bytes": 53964,
+      "sha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4"
+    },
+    {
+      "path": "assets/body/03-walk-f4-982646b0b0e6.png",
+      "role": "approved-prime-body",
+      "bytes": 67058,
+      "sha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b"
+    },
+    {
+      "path": "assets/body/04-walk-f5-545e7338151e.png",
+      "role": "approved-prime-body",
+      "bytes": 66608,
+      "sha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549"
+    },
+    {
+      "path": "assets/body/05-walk-f6-17d007eee75c.png",
+      "role": "approved-prime-body",
+      "bytes": 62308,
+      "sha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52"
+    },
+    {
+      "path": "assets/body/06-walk-f7-dbf5b3849624.png",
+      "role": "approved-prime-body",
+      "bytes": 59624,
+      "sha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df"
+    },
+    {
+      "path": "assets/body/07-walk-f8-cf8c53e7ffa7.png",
+      "role": "approved-prime-body",
+      "bytes": 62773,
+      "sha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61"
+    },
+    {
+      "path": "assets/body/08-walk-f1-0e80ea656104.png",
+      "role": "approved-prime-body",
+      "bytes": 71119,
+      "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656"
+    },
+    {
+      "path": "assets/body/09-75-9f4192beb8fe.png",
+      "role": "approved-prime-body",
+      "bytes": 69094,
+      "sha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29"
+    },
+    {
+      "path": "assets/body/10-50-0169b3642905.png",
+      "role": "approved-prime-body",
+      "bytes": 62325,
+      "sha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c"
+    },
+    {
+      "path": "assets/body/11-15-e54546ba14b4.png",
+      "role": "approved-prime-body",
+      "bytes": 58782,
+      "sha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930"
+    },
+    {
+      "path": "assets/body/12-exact-side-right-stop-a172a8a01a38.png",
+      "role": "approved-prime-body",
+      "bytes": 47873,
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+    },
+    {
+      "path": "assets/body/13-98-e1dc020aabfe.png",
+      "role": "approved-prime-body",
+      "bytes": 49734,
+      "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5"
+    },
+    {
+      "path": "assets/body/14-105-34028d8821a7.png",
+      "role": "approved-prime-body",
+      "bytes": 51798,
+      "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859"
+    },
+    {
+      "path": "assets/body/15-120-0d278363a0e7.png",
+      "role": "approved-prime-body",
+      "bytes": 51552,
+      "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655"
+    },
+    {
+      "path": "assets/body/16-135-f827ac61f45a.png",
+      "role": "approved-prime-body",
+      "bytes": 51282,
+      "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc"
+    },
+    {
+      "path": "assets/body/17-150-fe06522abd0c.png",
+      "role": "approved-prime-body",
+      "bytes": 53724,
+      "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c"
+    },
+    {
+      "path": "assets/body/18-165-d55afae02305.png",
+      "role": "approved-prime-body",
+      "bytes": 58256,
+      "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e"
+    },
+    {
+      "path": "assets/body/19-172-5-bb530610cf0e.png",
+      "role": "approved-prime-body",
+      "bytes": 55252,
+      "sha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132"
+    },
+    {
+      "path": "assets/body/20-180-31dbac4efc00.png",
+      "role": "approved-prime-body",
+      "bytes": 60289,
+      "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35"
+    },
+    {
+      "path": "assets/body/21-work-f2-a829593415b8.png",
+      "role": "approved-prime-body",
+      "bytes": 67508,
+      "sha256": "a829593415b8262502cda85267aea01c2763eb6b36e003039542267a8b12c529"
+    },
+    {
+      "path": "assets/body/22-work-f3-278573c9601a.png",
+      "role": "approved-prime-body",
+      "bytes": 67357,
+      "sha256": "278573c9601a1ba3b7f3d90629a551585ac908a44bdd472b375ebe4b0724bcf2"
+    },
+    {
+      "path": "assets/body/23-work-f4-e54f4d6f669d.png",
+      "role": "approved-prime-body",
+      "bytes": 67847,
+      "sha256": "e54f4d6f669d2c9e0fd4e36cc57bb7502f0b25b5ac6cc3edea6b7682d52dd00a"
+    },
+    {
+      "path": "assets/body/24-work-f5-b42cb772f708.png",
+      "role": "approved-prime-body",
+      "bytes": 68380,
+      "sha256": "b42cb772f708ad857b76253450dbcf72f93af96edbc92b2c5bd272caeef8026b"
+    },
+    {
+      "path": "assets/body/25-work-f6-acf9f752ad12.png",
+      "role": "approved-prime-body",
+      "bytes": 68374,
+      "sha256": "acf9f752ad1292937312c4dab5f3abeb82e2b459ed0656ded2cc857165ae6bfc"
+    },
+    {
+      "path": "assets/body/26-work-f7-21cc593701ed.png",
+      "role": "approved-prime-body",
+      "bytes": 68276,
+      "sha256": "21cc593701ed485ede395ce978478714ef7f9205d4a5b46bec605bd251bc75ac"
+    },
+    {
+      "path": "assets/body/27-work-f8-4b285d73a4d9.png",
+      "role": "approved-prime-body",
+      "bytes": 68182,
+      "sha256": "4b285d73a4d9a180d2c679aa52007d25f98504fe515528fed35dba3a0bf162d4"
+    },
+    {
+      "path": "assets/body/28-work-f9-8ada2fa0b22e.png",
+      "role": "approved-prime-body",
+      "bytes": 68153,
+      "sha256": "8ada2fa0b22eabb1631e04e34e963ffca2a1b67fb5c8aaef1c0aa241f353ab68"
+    },
+    {
+      "path": "assets/body/29-work-f10-36d72ad88078.png",
+      "role": "approved-prime-body",
+      "bytes": 66726,
+      "sha256": "36d72ad8807819354e6a8844c236460b5648c228c9756e74d46ebd0aa9a7df83"
+    },
+    {
+      "path": "assets/body/30-work-f11-3663dc10ab58.png",
+      "role": "approved-prime-body",
+      "bytes": 67239,
+      "sha256": "3663dc10ab588428977532bfe86a6d2946eca61def161d500d15a910cfcd5788"
+    },
+    {
+      "path": "assets/body/31-work-f12-01e33037f456.png",
+      "role": "approved-prime-body",
+      "bytes": 66863,
+      "sha256": "01e33037f4564abbbeedaf4bef260503f6ef572bfe1220d3fdb381c963e4a9e5"
+    },
+    {
+      "path": "assets/body/32-work-f13-3a624f695960.png",
+      "role": "approved-prime-body",
+      "bytes": 67821,
+      "sha256": "3a624f695960be2a74f2bc10869a98b7ccc731de1e927dcc4dd258f980499b03"
+    },
+    {
+      "path": "assets/body/33-work-f14-60bf939c0d9a.png",
+      "role": "approved-prime-body",
+      "bytes": 68056,
+      "sha256": "60bf939c0d9a0c8eb5be5680248170136406e62a1cea981427a8ffb03fdda38b"
+    },
+    {
+      "path": "assets/body/34-work-f15-b1c199001d4e.png",
+      "role": "approved-prime-body",
+      "bytes": 67124,
+      "sha256": "b1c199001d4eb6c00c104f963cbefdc07b5efc08f0532666e3c36f9327b2f268"
+    },
+    {
+      "path": "assets/body/35-work-f16-3b0a4be452b3.png",
+      "role": "approved-prime-body",
+      "bytes": 67965,
+      "sha256": "3b0a4be452b355b6489e4d778945f0d79f315c3aaf3d9dbe96d7b6474c77536d"
+    },
+    {
+      "path": "assets/body/36-work-f17-528da5df6d00.png",
+      "role": "approved-prime-body",
+      "bytes": 67979,
+      "sha256": "528da5df6d009fcb76c8a8340ffe0e1152cae9bf615ab43ad1c860b63330d66c"
+    },
+    {
+      "path": "assets/body/37-work-f18-4d1bbf5f883a.png",
+      "role": "approved-prime-body",
+      "bytes": 68772,
+      "sha256": "4d1bbf5f883a74bb9d581f05e71b9cf9e862d510b9d360d9345d031ca7eebefe"
+    },
+    {
+      "path": "assets/body/38-work-f19-3cb8650e3cfd.png",
+      "role": "approved-prime-body",
+      "bytes": 68536,
+      "sha256": "3cb8650e3cfdd7fdef4a96ad4a99903a2fb58585cc02feb25bd67014a2eaf946"
+    },
+    {
+      "path": "assets/body/39-work-f20-47665f1a5663.png",
+      "role": "approved-prime-body",
+      "bytes": 66962,
+      "sha256": "47665f1a5663e293cfee4c24ef8c6f0d0af22aeb6c9db066c67303c637b14d28"
+    },
+    {
+      "path": "assets/body/40-work-f21-e8a97566e58c.png",
+      "role": "approved-prime-body",
+      "bytes": 66522,
+      "sha256": "e8a97566e58cd055fbf66da844dc89496c04c84a9f6a1bc4b991f32c22c08760"
+    },
+    {
+      "path": "assets/body/41-work-f22-efd7ca6da147.png",
+      "role": "approved-prime-body",
+      "bytes": 66936,
+      "sha256": "efd7ca6da147fc8613c08443d1adb4d282c322d44f5b2f58a4610cfa447e2e2d"
+    },
+    {
+      "path": "assets/source/generic-action-symbols-sheet-source.png",
+      "role": "accepted-source-art",
+      "bytes": 1403206,
+      "sha256": "e4afb957aeb8d1015a43fe2664135ef8830270b6ef70ab1941947aca552e390b"
+    },
+    {
+      "path": "assets/source/generic-question-mark-source.png",
+      "role": "accepted-source-art",
+      "bytes": 623906,
+      "sha256": "327f29ac9c67fdf237892ac5f4abe52e4508e7107140b7fb1b265cb6b7a71ebb"
+    },
+    {
+      "path": "assets/source/original-six-symbol-source-sheet.png",
+      "role": "accepted-source-art",
+      "bytes": 1439779,
+      "sha256": "517309ab1ef8ba71849217d6da71fe1cd1c8b2b3a2ef94f86db7ee28fcc43b80"
+    },
+    {
+      "path": "assets/symbol/generic-v7/symbol-electrical-arc-dc12888c17f6.png",
+      "role": "generic-action-symbol-v7",
+      "bytes": 54111,
+      "sha256": "dc12888c17f6ff30a1519653ec9b8534e6f1510e2478ce42586739e291491fa9"
+    },
+    {
+      "path": "assets/symbol/generic-v7/symbol-exclamation-mark-b16054b0c4fe.png",
+      "role": "generic-action-symbol-v7",
+      "bytes": 32564,
+      "sha256": "b16054b0c4fe4c26f6dcdbb2ca6e5ce52bd2b90a21e8037d57925498167c425f"
+    },
+    {
+      "path": "assets/symbol/generic-v7/symbol-foul-odour-6ad163119859.png",
+      "role": "generic-action-symbol-v7",
+      "bytes": 55942,
+      "sha256": "6ad163119859fa51df31b05dc3460ac5a87cf0d7765657bc78abbb4b2508e7cb"
+    },
+    {
+      "path": "assets/symbol/generic-v7/symbol-heat-shimmer-e85c89733bf1.png",
+      "role": "generic-action-symbol-v7",
+      "bytes": 54000,
+      "sha256": "e85c89733bf1eb6d0ca2187f4669ad267c19ea914b6e0dea04cb0a0d720530a6"
+    },
+    {
+      "path": "assets/symbol/generic-v7/symbol-pleasant-aroma-ed972850c208.png",
+      "role": "generic-action-symbol-v7",
+      "bytes": 58045,
+      "sha256": "ed972850c2086664b5bed7958b88e38a1b93a4fbd7265381b2ec6eff7354adf4"
+    },
+    {
+      "path": "assets/symbol/generic-v7/symbol-question-mark-a4ef40dab1f0.png",
+      "role": "generic-action-symbol-v7",
+      "bytes": 42738,
+      "sha256": "a4ef40dab1f00c00b0a11bb0d21c44e1acc38cbf90a6c0e12d5528854d307734"
+    },
+    {
+      "path": "assets/symbol/generic-v7/symbol-welding-sparks-6d69f48e4e15.png",
+      "role": "generic-action-symbol-v7",
+      "bytes": 69823,
+      "sha256": "6d69f48e4e153dd3b4a694563c9282a6b603ce7578294e336f04e1584b1dca1a"
+    },
+    {
+      "path": "assets/symbol/original/symbol-heat-curls-053ec2205751.png",
+      "role": "original-comic-symbol",
+      "bytes": 42397,
+      "sha256": "053ec220575142bbfd5d7d822254bf661c0881c481d33224d2c94f5006611f48"
+    },
+    {
+      "path": "assets/symbol/original/symbol-impact-star-24bd4e859827.png",
+      "role": "original-comic-symbol",
+      "bytes": 55426,
+      "sha256": "24bd4e85982758910682eee6e7963a3c197b4de8b20f5e4f07caf2ec1ef3635f"
+    },
+    {
+      "path": "assets/symbol/original/symbol-motion-ticks-a91599e13c96.png",
+      "role": "original-comic-symbol",
+      "bytes": 49733,
+      "sha256": "a91599e13c96e96cff6a247815bb30840d1376493f5c123ab73c3b20a7d4630d"
+    },
+    {
+      "path": "assets/symbol/original/symbol-sizzle-spark-7fd4e839c350.png",
+      "role": "original-comic-symbol",
+      "bytes": 45674,
+      "sha256": "7fd4e839c3505e0be040ac56301be8bd7fc1ce99f77e720a1aca581d0dad76db"
+    },
+    {
+      "path": "assets/symbol/original/symbol-soap-bubbles-a1946758a072.png",
+      "role": "original-comic-symbol",
+      "bytes": 71641,
+      "sha256": "a1946758a07299ee5625b99499c5b4f4ed2bbcb9453737be23f091b42685bef7"
+    },
+    {
+      "path": "assets/symbol/original/symbol-water-droplets-2bff1e869ae7.png",
+      "role": "original-comic-symbol",
+      "bytes": 58453,
+      "sha256": "2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc"
+    },
+    {
+      "path": "evidence/rejected/generic-action-symbols-sheet-attempt-1-insufficient-gutter.png",
+      "role": "rejected-source-evidence-not-a-candidate",
+      "bytes": 1695787,
+      "sha256": "69dd1a140f881e497c965ed7d6f3000478ad832304f978ef07b7e42519982530"
+    },
+    {
+      "path": "guidance/ACTIVITY_CALLOUT_AUTHORING_STANDARD.md",
+      "role": "governing-guidance",
+      "bytes": 19346,
+      "sha256": "29f02e4e642d8f949da5ad8e9af86a651fe27c161d72b6b53a34dab9840cd043"
+    },
+    {
+      "path": "guidance/ACTIVITY_CALLOUT_DYNAMIC_CHOREOGRAPHY_NEXT.md",
+      "role": "governing-guidance",
+      "bytes": 6721,
+      "sha256": "241c07a402cb5c538f6b6395601ff62a000984e46a67fa6cc7c31d6c98768563"
+    },
+    {
+      "path": "guidance/ACTIVITY_CLOUD_COMPOSER_V7_2026-10-20.md",
+      "role": "governing-guidance",
+      "bytes": 3613,
+      "sha256": "588ec324271112b2816b4da6ef591375c448703bbf69f00e4229537bc72b0291"
+    },
+    {
+      "path": "guidance/KEEPER_PRIME_REAR_ACTION_CHOREOGRAPHY_V2_2026-10-20.md",
+      "role": "governing-guidance",
+      "bytes": 4688,
+      "sha256": "bf78785e079dc668b7ad2b5ef89a5a3f45e993a4510e469a82480d12bb4079a6"
+    },
+    {
+      "path": "guidance/activity_callout_style_contract.json",
+      "role": "governing-guidance",
+      "bytes": 9405,
+      "sha256": "0249cb62133cba488e6c73daa52aeb6566e4278f3c07b1960a51bdc68cfdd60c"
+    },
+    {
+      "path": "metadata/approved-prime-sequence.json",
+      "role": "machine-readable-metadata",
+      "bytes": 17596,
+      "sha256": "78394188085650d935418a9eddc8f84662ab621328c1dbeb6bad88b77d27eabb"
+    },
+    {
+      "path": "metadata/choreography-v1-catalogue.json",
+      "role": "machine-readable-metadata",
+      "bytes": 825556,
+      "sha256": "f32bc41c876c63577fc6cd42929722c64459c07628abd650f734d52901d92562"
+    },
+    {
+      "path": "metadata/choreography-v2-catalogue.json",
+      "role": "machine-readable-metadata",
+      "bytes": 1286374,
+      "sha256": "404293015c46c2da0fd64a1c0952e10d4c5f88a3c91b3c48f93d9933288aebf4"
+    },
+    {
+      "path": "metadata/choreography-v2-original-asset-manifest.json",
+      "role": "machine-readable-metadata",
+      "bytes": 47147,
+      "sha256": "e766015d705a4f975db037bea6d05b2cdbbfa712c1ccbe712f5420b2c4f5bfd7"
+    },
+    {
+      "path": "metadata/choreography-v2-register.json",
+      "role": "machine-readable-metadata",
+      "bytes": 3881,
+      "sha256": "ebf4bb80c34f66f1f941b3b6fe9312d551b50586682eef16a419f326a9446c1e"
+    },
+    {
+      "path": "metadata/composer-v6-activity-vocabulary.json",
+      "role": "machine-readable-metadata",
+      "bytes": 74639,
+      "sha256": "eb5060a665694137ce63a45dcb8f914d1086570393399b1537d37ade660fe2aa"
+    },
+    {
+      "path": "metadata/composer-v7-catalogue.json",
+      "role": "machine-readable-metadata",
+      "bytes": 76622,
+      "sha256": "8657470a3103bd8c65771b8ea4f21c75d1b95cd057e8c2a8736f8c4c8b1132a0"
+    },
+    {
+      "path": "metadata/composer-v7-register.json",
+      "role": "machine-readable-metadata",
+      "bytes": 23980,
+      "sha256": "8210bc2b963867e22192eba45ee30a2db96b5f4dd8571c9449e931eddd272ad8"
+    },
+    {
+      "path": "review-shells/activity-cloud-composer-v7.html",
+      "role": "review-shell-code",
+      "bytes": 22261,
+      "sha256": "99adcd2fea00e6658ef7ad1294bbc36cc1139f4472fa3f62bfa1b4267deaa541"
+    },
+    {
+      "path": "review-shells/keeper-prime-rear-action-choreography-v2.html",
+      "role": "review-shell-code",
+      "bytes": 21066,
+      "sha256": "cc4dd1b23918bbbc2b92ea29c0e9216b015a0601eb5a56a113447e3fcf668005"
+    }
+  ]
+}

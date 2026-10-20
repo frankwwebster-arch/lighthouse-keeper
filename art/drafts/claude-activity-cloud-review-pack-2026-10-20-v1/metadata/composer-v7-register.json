@@ -1,0 +1,764 @@
+{
+  "schema": "lighthouse-keeper/activity-cloud-composer-register@7",
+  "set": "activity-cloud-composer-v7",
+  "status": "immutable-reversible-review-tool-not-approved",
+  "sourceVocabulary": {
+    "set": "activity-cloud-composer-v6",
+    "catalogue": "public/keeper-review/activity-cloud-composer-v6/catalogue.json",
+    "catalogueSha256": "eb5060a665694137ce63a45dcb8f914d1086570393399b1537d37ade660fe2aa",
+    "register": "art/drafts/activity-cloud-composer-2026-10-20-v6/batch-register.json",
+    "registerSha256": "bb577f4a2775cf1855e8ad1f959e76c124e28fb9b84fdb49683a7bb5fb2b7e74",
+    "inheritedComponents": 149
+  },
+  "generatedSources": [
+    {
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v7/source/generic-action-symbols-sheet-source.png",
+      "sha256": "e4afb957aeb8d1015a43fe2664135ef8830270b6ef70ab1941947aca552e390b",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "layout": [
+        3,
+        2
+      ],
+      "cellPixels": [
+        512,
+        512
+      ],
+      "boundaryAlphaPixels": 0,
+      "cells": [
+        {
+          "owner": "symbol-heat-shimmer",
+          "cell": [
+            0,
+            0
+          ],
+          "bounds": [
+            154,
+            138,
+            375,
+            413
+          ],
+          "gutterPx": 99,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        {
+          "owner": "symbol-pleasant-aroma",
+          "cell": [
+            1,
+            0
+          ],
+          "bounds": [
+            146,
+            145,
+            372,
+            415
+          ],
+          "gutterPx": 97,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        {
+          "owner": "symbol-foul-odour",
+          "cell": [
+            2,
+            0
+          ],
+          "bounds": [
+            149,
+            137,
+            363,
+            419
+          ],
+          "gutterPx": 93,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        {
+          "owner": "symbol-electrical-arc",
+          "cell": [
+            0,
+            1
+          ],
+          "bounds": [
+            155,
+            111,
+            380,
+            380
+          ],
+          "gutterPx": 111,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        {
+          "owner": "symbol-welding-sparks",
+          "cell": [
+            1,
+            1
+          ],
+          "bounds": [
+            122,
+            115,
+            391,
+            373
+          ],
+          "gutterPx": 115,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        },
+        {
+          "owner": "symbol-exclamation-mark",
+          "cell": [
+            2,
+            1
+          ],
+          "bounds": [
+            204,
+            111,
+            307,
+            380
+          ],
+          "gutterPx": 111,
+          "ambiguousPixels": 0,
+          "unownedVisiblePixels": 0
+        }
+      ]
+    },
+    {
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v7/source/generic-question-mark-source.png",
+      "sha256": "327f29ac9c67fdf237892ac5f4abe52e4508e7107140b7fb1b265cb6b7a71ebb",
+      "pixels": [
+        1254,
+        1254
+      ],
+      "edgeAlphaPixels": 0,
+      "visibleBounds": [
+        306,
+        115,
+        953,
+        1160
+      ],
+      "owner": "symbol-question-mark"
+    }
+  ],
+  "newComponents": {
+    "symbol-heat-shimmer": {
+      "sourceVisibleBounds": [
+        154,
+        138,
+        375,
+        413
+      ],
+      "normalisedVisibleSize": [
+        174,
+        216
+      ],
+      "normalisedOffset": [
+        41,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "sourceCell": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        154,
+        138,
+        375,
+        413
+      ],
+      "sourceGutterPx": 99,
+      "sourceOwner": "symbol-heat-shimmer",
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v7/drafts/components/symbol-heat-shimmer.png",
+      "sha256": "e85c89733bf1eb6d0ca2187f4669ad267c19ea914b6e0dea04cb0a0d720530a6",
+      "family": "heat",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v7",
+      "sourceFile": "art/drafts/activity-cloud-composer-2026-10-20-v7/source/generic-action-symbols-sheet-source.png",
+      "sourceSha256": "e4afb957aeb8d1015a43fe2664135ef8830270b6ef70ab1941947aca552e390b",
+      "src": "/keeper-review/activity-cloud-composer-v7/assets/symbol-heat-shimmer-e85c89733bf1eb6d.png"
+    },
+    "symbol-pleasant-aroma": {
+      "sourceVisibleBounds": [
+        146,
+        145,
+        372,
+        415
+      ],
+      "normalisedVisibleSize": [
+        181,
+        216
+      ],
+      "normalisedOffset": [
+        37,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "sourceCell": [
+        1,
+        0
+      ],
+      "sourceBounds": [
+        146,
+        145,
+        372,
+        415
+      ],
+      "sourceGutterPx": 97,
+      "sourceOwner": "symbol-pleasant-aroma",
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v7/drafts/components/symbol-pleasant-aroma.png",
+      "sha256": "ed972850c2086664b5bed7958b88e38a1b93a4fbd7265381b2ec6eff7354adf4",
+      "family": "scent",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v7",
+      "sourceFile": "art/drafts/activity-cloud-composer-2026-10-20-v7/source/generic-action-symbols-sheet-source.png",
+      "sourceSha256": "e4afb957aeb8d1015a43fe2664135ef8830270b6ef70ab1941947aca552e390b",
+      "src": "/keeper-review/activity-cloud-composer-v7/assets/symbol-pleasant-aroma-ed972850c2086664.png"
+    },
+    "symbol-foul-odour": {
+      "sourceVisibleBounds": [
+        149,
+        137,
+        363,
+        419
+      ],
+      "normalisedVisibleSize": [
+        164,
+        216
+      ],
+      "normalisedOffset": [
+        46,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "sourceCell": [
+        2,
+        0
+      ],
+      "sourceBounds": [
+        149,
+        137,
+        363,
+        419
+      ],
+      "sourceGutterPx": 93,
+      "sourceOwner": "symbol-foul-odour",
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v7/drafts/components/symbol-foul-odour.png",
+      "sha256": "6ad163119859fa51df31b05dc3460ac5a87cf0d7765657bc78abbb4b2508e7cb",
+      "family": "scent",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v7",
+      "sourceFile": "art/drafts/activity-cloud-composer-2026-10-20-v7/source/generic-action-symbols-sheet-source.png",
+      "sourceSha256": "e4afb957aeb8d1015a43fe2664135ef8830270b6ef70ab1941947aca552e390b",
+      "src": "/keeper-review/activity-cloud-composer-v7/assets/symbol-foul-odour-6ad163119859fa51.png"
+    },
+    "symbol-electrical-arc": {
+      "sourceVisibleBounds": [
+        155,
+        111,
+        380,
+        380
+      ],
+      "normalisedVisibleSize": [
+        181,
+        216
+      ],
+      "normalisedOffset": [
+        37,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "sourceCell": [
+        0,
+        1
+      ],
+      "sourceBounds": [
+        155,
+        111,
+        380,
+        380
+      ],
+      "sourceGutterPx": 111,
+      "sourceOwner": "symbol-electrical-arc",
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v7/drafts/components/symbol-electrical-arc.png",
+      "sha256": "dc12888c17f6ff30a1519653ec9b8534e6f1510e2478ce42586739e291491fa9",
+      "family": "electrical",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v7",
+      "sourceFile": "art/drafts/activity-cloud-composer-2026-10-20-v7/source/generic-action-symbols-sheet-source.png",
+      "sourceSha256": "e4afb957aeb8d1015a43fe2664135ef8830270b6ef70ab1941947aca552e390b",
+      "src": "/keeper-review/activity-cloud-composer-v7/assets/symbol-electrical-arc-dc12888c17f6ff30.png"
+    },
+    "symbol-welding-sparks": {
+      "sourceVisibleBounds": [
+        122,
+        115,
+        391,
+        373
+      ],
+      "normalisedVisibleSize": [
+        216,
+        207
+      ],
+      "normalisedOffset": [
+        20,
+        24
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "sourceCell": [
+        1,
+        1
+      ],
+      "sourceBounds": [
+        122,
+        115,
+        391,
+        373
+      ],
+      "sourceGutterPx": 115,
+      "sourceOwner": "symbol-welding-sparks",
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v7/drafts/components/symbol-welding-sparks.png",
+      "sha256": "6d69f48e4e153dd3b4a694563c9282a6b603ce7578294e336f04e1584b1dca1a",
+      "family": "welding",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v7",
+      "sourceFile": "art/drafts/activity-cloud-composer-2026-10-20-v7/source/generic-action-symbols-sheet-source.png",
+      "sourceSha256": "e4afb957aeb8d1015a43fe2664135ef8830270b6ef70ab1941947aca552e390b",
+      "src": "/keeper-review/activity-cloud-composer-v7/assets/symbol-welding-sparks-6d69f48e4e153dd3.png"
+    },
+    "symbol-exclamation-mark": {
+      "sourceVisibleBounds": [
+        204,
+        111,
+        307,
+        380
+      ],
+      "normalisedVisibleSize": [
+        83,
+        216
+      ],
+      "normalisedOffset": [
+        86,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "sourceCell": [
+        2,
+        1
+      ],
+      "sourceBounds": [
+        204,
+        111,
+        307,
+        380
+      ],
+      "sourceGutterPx": 111,
+      "sourceOwner": "symbol-exclamation-mark",
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v7/drafts/components/symbol-exclamation-mark.png",
+      "sha256": "b16054b0c4fe4c26f6dcdbb2ca6e5ce52bd2b90a21e8037d57925498167c425f",
+      "family": "notation",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v7",
+      "sourceFile": "art/drafts/activity-cloud-composer-2026-10-20-v7/source/generic-action-symbols-sheet-source.png",
+      "sourceSha256": "e4afb957aeb8d1015a43fe2664135ef8830270b6ef70ab1941947aca552e390b",
+      "src": "/keeper-review/activity-cloud-composer-v7/assets/symbol-exclamation-mark-b16054b0c4fe4c26.png"
+    },
+    "symbol-question-mark": {
+      "sourceVisibleBounds": [
+        306,
+        115,
+        953,
+        1160
+      ],
+      "normalisedVisibleSize": [
+        134,
+        216
+      ],
+      "normalisedOffset": [
+        61,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      "sourceCell": null,
+      "sourceBounds": [
+        306,
+        115,
+        953,
+        1160
+      ],
+      "sourceGutterPx": 94,
+      "sourceOwner": "symbol-question-mark",
+      "file": "art/drafts/activity-cloud-composer-2026-10-20-v7/drafts/components/symbol-question-mark.png",
+      "sha256": "a4ef40dab1f00c00b0a11bb0d21c44e1acc38cbf90a6c0e12d5528854d307734",
+      "family": "notation",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "activity-cloud-composer-v7",
+      "sourceFile": "art/drafts/activity-cloud-composer-2026-10-20-v7/source/generic-question-mark-source.png",
+      "sourceSha256": "327f29ac9c67fdf237892ac5f4abe52e4508e7107140b7fb1b265cb6b7a71ebb",
+      "src": "/keeper-review/activity-cloud-composer-v7/assets/symbol-question-mark-a4ef40dab1f00c00.png"
+    }
+  },
+  "suggestedRecipes": {
+    "collecting-eggs": {
+      "label": "Collecting eggs",
+      "targetAssetLabel": "Chicken coop",
+      "targetAssetId": "outdoor.chicken-coop",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "eggs-hen-coop",
+        "eggs-nest",
+        "eggs-basket",
+        "mixing-egg"
+      ],
+      "sfx": "coop-cluck"
+    },
+    "making-toast": {
+      "label": "Making toast",
+      "targetAssetLabel": "Toaster",
+      "targetAssetId": "kitchen.toaster",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "toast-toaster",
+        "toast-slices",
+        "toast-butter-jam",
+        "sandwich-bread"
+      ],
+      "sfx": "toaster-pop"
+    },
+    "using-loo": {
+      "label": "Using the loo",
+      "targetAssetLabel": "Toilet",
+      "targetAssetId": "bathroom.toilet",
+      "bodyCompatibility": "dedicated-pose-required",
+      "elements": [
+        "bathroom-toilet",
+        "bathroom-toilet-roll",
+        "bathroom-flush-handle",
+        "bathroom-loo-brush",
+        "bathroom-bad-smell"
+      ],
+      "sfx": "bathroom-door-close"
+    },
+    "soaking-in-bath": {
+      "label": "Soaking in the bath",
+      "targetAssetLabel": "Bath",
+      "targetAssetId": "bathroom.bath",
+      "bodyCompatibility": "dedicated-pose-required",
+      "elements": [
+        "bathroom-bathtub",
+        "bathroom-bubbles",
+        "bathroom-rubber-duck",
+        "hygiene-shampoo"
+      ],
+      "sfx": "bath-water"
+    },
+    "napping-armchair": {
+      "label": "Napping in armchair",
+      "targetAssetLabel": "Armchair",
+      "targetAssetId": "lounge.armchair",
+      "bodyCompatibility": "dedicated-pose-required",
+      "elements": [
+        "rest-armchair",
+        "rest-sleep-marks",
+        "rest-blanket-pillow",
+        "tea-mug"
+      ],
+      "sfx": "sleep-breath"
+    },
+    "reading-adventure": {
+      "label": "Reading an adventure",
+      "targetAssetLabel": "Reading chair",
+      "targetAssetId": "lounge.reading-chair",
+      "bodyCompatibility": "dedicated-pose-required",
+      "elements": [
+        "reading-open-book",
+        "reading-pirate-ship",
+        "reading-dragon",
+        "reading-treasure-chest",
+        "reading-castle"
+      ],
+      "sfx": "page-turn"
+    },
+    "throwing-pottery": {
+      "label": "Throwing pottery",
+      "targetAssetLabel": "Pottery wheel",
+      "targetAssetId": "workshop.pottery-wheel",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "pottery-wheel",
+        "pottery-hands-moulding",
+        "pottery-wet-clay",
+        "pottery-vase"
+      ],
+      "sfx": "pottery-wheel"
+    },
+    "writing": {
+      "label": "Writing",
+      "targetAssetLabel": "Writing desk",
+      "targetAssetId": "study.writing-desk",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "writing-fountain-pen",
+        "writing-pencil",
+        "writing-notebook",
+        "writing-ink-bottle",
+        "writing-eraser"
+      ],
+      "sfx": "pen-scratch"
+    },
+    "feeding-pet": {
+      "label": "Feeding pet",
+      "targetAssetLabel": "Pet feeding spot",
+      "targetAssetId": "home.pet-feeding",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "pet-food-bag",
+        "pet-bone",
+        "pet-fish",
+        "pet-heart",
+        "pet-food-bowl"
+      ],
+      "sfx": "pet-bowl"
+    },
+    "fishing": {
+      "label": "Fishing",
+      "targetAssetLabel": "Fishing spot",
+      "targetAssetId": "outdoor.fishing-spot",
+      "bodyCompatibility": "dedicated-pose-required",
+      "elements": [
+        "fishing-rod",
+        "fishing-caught-fish",
+        "fishing-bait",
+        "fishing-float",
+        "fishing-tackle-box"
+      ],
+      "sfx": "fishing-cast"
+    },
+    "exercising": {
+      "label": "Exercising",
+      "targetAssetLabel": "Exercise mat",
+      "targetAssetId": "home.exercise-mat",
+      "bodyCompatibility": "dedicated-pose-required",
+      "elements": [
+        "exercise-sweat-drop",
+        "exercise-flexed-arm",
+        "exercise-dumbbell",
+        "exercise-trainers",
+        "exercise-skipping-rope"
+      ],
+      "sfx": "exercise-effort"
+    },
+    "playing-games": {
+      "label": "Playing cards or board game",
+      "targetAssetLabel": "Games table",
+      "targetAssetId": "lounge.games-table",
+      "bodyCompatibility": "dedicated-pose-required",
+      "elements": [
+        "games-playing-cards",
+        "games-dice",
+        "games-board-and-pawns",
+        "games-chess-knight"
+      ],
+      "sfx": "game-piece"
+    },
+    "fixing-boat": {
+      "label": "Fixing the boat",
+      "targetAssetLabel": "Boat",
+      "targetAssetId": "harbour.boat",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "repair-boat-hull-patch",
+        "repair-outboard-motor",
+        "repair-wrench-cog",
+        "repair-rope-knot",
+        "repair-toolbox"
+      ],
+      "sfx": "boat-repair"
+    },
+    "filling-petrol": {
+      "label": "Filling petrol",
+      "targetAssetLabel": "Fuel point",
+      "targetAssetId": "yard.fuel-point",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "repair-petrol-fill",
+        "repair-outboard-motor",
+        "repair-wrench-cog",
+        "repair-battery-leads"
+      ],
+      "sfx": "fuel-fill"
+    },
+    "general-mending": {
+      "label": "General mending",
+      "targetAssetLabel": "Repair bench",
+      "targetAssetId": "workshop.repair-bench",
+      "bodyCompatibility": "rear-work-with-context",
+      "elements": [
+        "repair-toolbox",
+        "repair-hammer-nails",
+        "repair-boat-varnish",
+        "repair-battery-leads",
+        "repair-tyre-pump"
+      ],
+      "sfx": "repair-tools"
+    }
+  },
+  "catalogue": {
+    "file": "public/keeper-review/activity-cloud-composer-v7/catalogue.json",
+    "sha256": "8657470a3103bd8c65771b8ea4f21c75d1b95cd057e8c2a8736f8c4c8b1132a0",
+    "components": 156,
+    "newComponents": 7
+  },
+  "page": {
+    "file": "public/keeper-review/activity-cloud-composer-v7/index.html",
+    "sha256": "99adcd2fea00e6658ef7ad1294bbc36cc1139f4472fa3f62bfa1b4267deaa541"
+  },
+  "candidate": {
+    "publicShell": {
+      "file": "public/keeper-review/activity-cloud-composer-v7/index.html",
+      "sha256": "99adcd2fea00e6658ef7ad1294bbc36cc1139f4472fa3f62bfa1b4267deaa541"
+    }
+  },
+  "publishedAssets": [
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-20-v7/drafts/components/symbol-heat-shimmer.png",
+      "sourceSha256": "e85c89733bf1eb6d0ca2187f4669ad267c19ea914b6e0dea04cb0a0d720530a6",
+      "public": "public/keeper-review/activity-cloud-composer-v7/assets/symbol-heat-shimmer-e85c89733bf1eb6d.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v7/assets/symbol-heat-shimmer-e85c89733bf1eb6d.png",
+      "publicSha256": "e85c89733bf1eb6d0ca2187f4669ad267c19ea914b6e0dea04cb0a0d720530a6",
+      "url": "/keeper-review/activity-cloud-composer-v7/assets/symbol-heat-shimmer-e85c89733bf1eb6d.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-20-v7/drafts/components/symbol-pleasant-aroma.png",
+      "sourceSha256": "ed972850c2086664b5bed7958b88e38a1b93a4fbd7265381b2ec6eff7354adf4",
+      "public": "public/keeper-review/activity-cloud-composer-v7/assets/symbol-pleasant-aroma-ed972850c2086664.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v7/assets/symbol-pleasant-aroma-ed972850c2086664.png",
+      "publicSha256": "ed972850c2086664b5bed7958b88e38a1b93a4fbd7265381b2ec6eff7354adf4",
+      "url": "/keeper-review/activity-cloud-composer-v7/assets/symbol-pleasant-aroma-ed972850c2086664.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-20-v7/drafts/components/symbol-foul-odour.png",
+      "sourceSha256": "6ad163119859fa51df31b05dc3460ac5a87cf0d7765657bc78abbb4b2508e7cb",
+      "public": "public/keeper-review/activity-cloud-composer-v7/assets/symbol-foul-odour-6ad163119859fa51.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v7/assets/symbol-foul-odour-6ad163119859fa51.png",
+      "publicSha256": "6ad163119859fa51df31b05dc3460ac5a87cf0d7765657bc78abbb4b2508e7cb",
+      "url": "/keeper-review/activity-cloud-composer-v7/assets/symbol-foul-odour-6ad163119859fa51.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-20-v7/drafts/components/symbol-electrical-arc.png",
+      "sourceSha256": "dc12888c17f6ff30a1519653ec9b8534e6f1510e2478ce42586739e291491fa9",
+      "public": "public/keeper-review/activity-cloud-composer-v7/assets/symbol-electrical-arc-dc12888c17f6ff30.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v7/assets/symbol-electrical-arc-dc12888c17f6ff30.png",
+      "publicSha256": "dc12888c17f6ff30a1519653ec9b8534e6f1510e2478ce42586739e291491fa9",
+      "url": "/keeper-review/activity-cloud-composer-v7/assets/symbol-electrical-arc-dc12888c17f6ff30.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-20-v7/drafts/components/symbol-welding-sparks.png",
+      "sourceSha256": "6d69f48e4e153dd3b4a694563c9282a6b603ce7578294e336f04e1584b1dca1a",
+      "public": "public/keeper-review/activity-cloud-composer-v7/assets/symbol-welding-sparks-6d69f48e4e153dd3.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v7/assets/symbol-welding-sparks-6d69f48e4e153dd3.png",
+      "publicSha256": "6d69f48e4e153dd3b4a694563c9282a6b603ce7578294e336f04e1584b1dca1a",
+      "url": "/keeper-review/activity-cloud-composer-v7/assets/symbol-welding-sparks-6d69f48e4e153dd3.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-20-v7/drafts/components/symbol-exclamation-mark.png",
+      "sourceSha256": "b16054b0c4fe4c26f6dcdbb2ca6e5ce52bd2b90a21e8037d57925498167c425f",
+      "public": "public/keeper-review/activity-cloud-composer-v7/assets/symbol-exclamation-mark-b16054b0c4fe4c26.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v7/assets/symbol-exclamation-mark-b16054b0c4fe4c26.png",
+      "publicSha256": "b16054b0c4fe4c26f6dcdbb2ca6e5ce52bd2b90a21e8037d57925498167c425f",
+      "url": "/keeper-review/activity-cloud-composer-v7/assets/symbol-exclamation-mark-b16054b0c4fe4c26.png"
+    },
+    {
+      "source": "art/drafts/activity-cloud-composer-2026-10-20-v7/drafts/components/symbol-question-mark.png",
+      "sourceSha256": "a4ef40dab1f00c00b0a11bb0d21c44e1acc38cbf90a6c0e12d5528854d307734",
+      "public": "public/keeper-review/activity-cloud-composer-v7/assets/symbol-question-mark-a4ef40dab1f00c00.png",
+      "publicAssemblyPath": "public/keeper-review/activity-cloud-composer-v7/assets/symbol-question-mark-a4ef40dab1f00c00.png",
+      "publicSha256": "a4ef40dab1f00c00b0a11bb0d21c44e1acc38cbf90a6c0e12d5528854d307734",
+      "url": "/keeper-review/activity-cloud-composer-v7/assets/symbol-question-mark-a4ef40dab1f00c00.png"
+    }
+  ],
+  "checks": {
+    "sourceEdgesClear": true,
+    "sourceCellGuttersAtLeast80": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "v6ComposerUnchanged": true,
+    "primeBodyUnchanged": true,
+    "runtimeChanged": false,
+    "kitchenChanged": false,
+    "deployed": false
+  },
+  "approvalBoundary": {
+    "vocabularyApproved": false,
+    "composerApproved": false,
+    "recipesApproved": false,
+    "runtimePromoted": false
+  },
+  "rollback": "Delete only Composer V7 draft/page/archive set and V7-only objects; V6 remains immutable."
+}

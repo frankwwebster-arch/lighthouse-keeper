@@ -1,0 +1,29 @@
+{
+  "schema": "lighthouse-keeper/claude-activity-cloud-review-pack-register@1",
+  "pack": "claude-activity-cloud-review-pack-2026-10-20-v1",
+  "status": "immutable-input-only-review-pack",
+  "manifest": {
+    "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/asset-manifest.json",
+    "sha256": "01316c61ba39e56339a1a5f8c356e9a9bacbc42e3498b6dd03e2b9a6c0a804b1"
+  },
+  "hashList": {
+    "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/HASHES.sha256",
+    "sha256": "218e766198c20772ece59cfb2931cbdf25e13a458ed421e88705d16651339f22"
+  },
+  "counts": {
+    "files": 95,
+    "pngImages": 78,
+    "finalUsableVisualAssets": 74,
+    "approvedPrimeBodyImages": 41,
+    "activityObjectImages": 20,
+    "originalSymbolImages": 6,
+    "genericV7SymbolImages": 7,
+    "acceptedSourceImages": 3,
+    "rejectedEvidenceImages": 1
+  },
+  "sourcePacksUnchanged": true,
+  "runtimeChanged": false,
+  "kitchenChanged": false,
+  "deployed": false,
+  "rollback": "Delete only art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1 and its builder/verifier/documentation references."
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "lighthouse-keeper/keeper-prime-rear-action-choreography-register@2",
+  "set": "keeper-prime-rear-action-choreography-v2",
+  "status": "immutable-reversible-bubble-refinement-candidate-not-approved",
+  "purpose": "Frank-directed V2 bubble refinement: lighter fill, head-aligned connector, more mobile separated objects, object-trailing momentum ticks and interaction-owned impact stars.",
+  "predecessor": {
+    "set": "keeper-prime-rear-action-choreography-v1",
+    "catalogueFile": "public/keeper-review/keeper-prime-rear-action-choreography-v1/catalogue.json",
+    "catalogueSha256": "f32bc41c876c63577fc6cd42929722c64459c07628abd650f734d52901d92562",
+    "pageFile": "public/keeper-review/keeper-prime-rear-action-choreography-v1/index.html",
+    "pageSha256": "20e98169f80f78318da740f378e8aa9878664ce8b1c25133eea837f0a5d8d5be",
+    "manifestFile": "review-archive/sets/keeper-prime-rear-action-choreography-v1.json",
+    "manifestSha256": "153073d763e2eab445d6b06a8ed76d9c95c82b6843b06ab2d5741021d34bf62f"
+  },
+  "publishedAssets": [],
+  "candidate": {
+    "publicShell": {
+      "file": "public/keeper-review/keeper-prime-rear-action-choreography-v2/index.html",
+      "sha256": "cc4dd1b23918bbbc2b92ea29c0e9216b015a0601eb5a56a113447e3fcf668005"
+    },
+    "catalogue": {
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/catalogue.json",
+      "sha256": "404293015c46c2da0fd64a1c0952e10d4c5f88a3c91b3c48f93d9933288aebf4"
+    },
+    "publicCatalogueGzip": {
+      "file": "public/keeper-review/keeper-prime-rear-action-choreography-v2/catalogue.json.gz",
+      "sha256": "812f85c4d46bd7b9f22de5b17ede54d6ec8d1dbf8d79e9cc253ff8d2c45bd8a6"
+    },
+    "stories": [
+      "garden-bbq",
+      "make-sandwich",
+      "washing-up",
+      "general-repair"
+    ],
+    "storyCount": 4,
+    "treatmentsPerStory": 2,
+    "motionModesPerTreatment": 2,
+    "timelineFrames": 42,
+    "timelineFps": 8,
+    "quietTailFrames": 5,
+    "sequenceFrames": 52
+  },
+  "modelTestPack": {
+    "directory": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack",
+    "manifest": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/asset-manifest.json",
+    "manifestSha256": "e766015d705a4f975db037bea6d05b2cdbbfa712c1ccbe712f5420b2c4f5bfd7",
+    "assetCount": 68,
+    "prompt": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/CLAUDE_CODE_MODEL_TEST_PROMPT.md"
+  },
+  "files": {
+    "draftCatalogue": {
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/catalogue.json",
+      "sha256": "404293015c46c2da0fd64a1c0952e10d4c5f88a3c91b3c48f93d9933288aebf4"
+    },
+    "template": {
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/page-template.html",
+      "sha256": "cc4dd1b23918bbbc2b92ea29c0e9216b015a0601eb5a56a113447e3fcf668005"
+    },
+    "builder": {
+      "file": "scripts/build_keeper_prime_rear_action_choreography_v2.py",
+      "sha256": "3bee4723862a12462633fa784678e3e3642f240404d0a21418279fa801d91a59"
+    },
+    "verifier": {
+      "file": "scripts/verify_keeper_prime_rear_action_choreography_v2.mjs",
+      "sha256": "37b64c57229830fb7a20e48391397c9fc7a47e4c222c0bd6e91b647c979c8488"
+    }
+  },
+  "checks": {
+    "v1BytesUnchanged": true,
+    "approvedPrimeSequenceByteExact": true,
+    "openTreatmentByteExactToV1": true,
+    "bubbleOnlyRefinement": true,
+    "layersIndependent": true,
+    "modelTestPackSelfContained": true,
+    "runtimeChanged": false,
+    "kitchenChanged": false,
+    "deployed": false
+  },
+  "rollback": "Delete only this V2 draft directory, V2 public review directory, V2 archive set manifest, builder, verifier, package command and V2 documentation references. V1, approved Prime authorities, runtime, Final and Kitchen remain untouched."
+}
