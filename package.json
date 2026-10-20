@@ -15,6 +15,8 @@
     "archive:keeper-review:set": "node scripts/replace_keeper_review_set.mjs",
     "minify:keeper-review-shell": "node scripts/minify_keeper_review_shell.mjs",
     "verify:review-archive": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_review_archive.mjs",
+    "verify:activity-stories": "node scripts/verify_activity_stories.mjs",
+    "activity-stories:add-picture": "node scripts/add_activity_story_picture.mjs",
     "verify:kitchen-basic-assets-v5": "node scripts/verify_kitchen_basic_assets_v5.mjs",
     "verify:kitchen-fitted-galley-v20": "node scripts/verify_kitchen_fitted_galley_v20.mjs",
     "verify:kitchen-final-assets-v21": "node scripts/verify_kitchen_final_assets_v21.mjs",

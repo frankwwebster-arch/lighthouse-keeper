@@ -167,3 +167,8 @@ These match Codex's plan for the keeper sheets.
 - A pyjama brushing clip (the bedtime version of brushing teeth).
 - Reading object types straight from Codex's sidecars (`docs/BACKGROUND_ELEMENTS.md` §5) instead of `data/studio/categories/`.
 - Thought bubbles and the keeper's feelings panel (proposed in `docs/EXPANSION_DESIGN.md`). Recipes would carry the icon he shows when he wants to do the activity.
+
+## Bubble stories
+
+The studio's **Bubble stories** page (`/studio/stories`) edits the picture stories that play in the bubble above the keeper while he works with his back to us. They are a separate format from recipes, with their own drafts in `data/activity-stories/` and their own picture library that Codex maintains. Frank's edits are saved as `story-<id>` in `studio_docs`. Formats and workflows: `data/activity-stories/README.md`.
+

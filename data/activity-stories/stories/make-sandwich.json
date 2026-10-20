@@ -1,0 +1,31 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "id": "make-sandwich",
+  "label": "Sandwich assembly",
+  "appliesTo": { "assetId": "kitchen.prep", "label": "Kitchen work surface" },
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "cast": {
+    "bread": { "picture": "sandwich-bread", "role": "hero" },
+    "ham": { "picture": "sandwich-ham", "role": "support" },
+    "lettuce": { "picture": "sandwich-lettuce", "role": "support" },
+    "tomato": { "picture": "sandwich-tomato", "role": "support" },
+    "sandwich": { "picture": "cooking-sandwich", "role": "result" }
+  },
+  "steps": [
+    { "do": "arrive", "who": "bread" },
+    { "do": "land-on", "who": "ham", "onto": "bread" },
+    { "do": "land-on", "who": "lettuce", "onto": "bread" },
+    { "do": "land-on", "who": "tomato", "onto": "bread" },
+    { "do": "reveal", "who": "sandwich", "onto": "bread", "replace": true },
+    { "do": "settle" }
+  ],
+  "ambient": [],
+  "sfx": [
+    { "step": 1, "at": "end", "cue": "bread-set-down", "owner": "make-sandwich", "kind": "asset-state" },
+    { "step": 3, "at": "contact", "cue": "ingredients-stack", "owner": "make-sandwich", "kind": "activity-beat" },
+    { "step": 5, "at": "contact", "cue": "sandwich-finished", "owner": "make-sandwich", "kind": "completion" }
+  ],
+  "notes": "Draft by Claude, 20 Oct 2026. Each filling lands on the bread and stays, so the stack visibly builds, then the finished sandwich replaces it."
+}

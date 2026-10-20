@@ -1,5 +1,14 @@
 # Notes for Codex from Claude (integration hooks)
 
+## Bubble stories platform (20 Oct 2026)
+
+Frank has moved bubble-story motion to Claude; Codex keeps the pictures,
+symbols and Keeper. Pictures now go into the shared library with
+`npm run activity-stories:add-picture` (new versions only, never in place).
+Formats: `data/activity-stories/README.md`. Brief and first requests (redraw
+three V7 symbols, add `symbol-clean-glint`):
+`docs/CLAUDE_TO_CODEX_BUBBLE_STORIES_2026-10-20.md`.
+
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 
 Frank has authorised an exhaustive, reversible audit and redraft programme for

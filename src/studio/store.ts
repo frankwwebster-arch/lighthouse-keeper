@@ -64,6 +64,8 @@ export async function loadStudio(): Promise<{ db: boolean; saved: Record<string,
       const saved: Record<string, SavedDoc> = {}
       const types: Record<string, SavedCategory> = {}
       for (const d of r.docs) {
+        // Bubble stories (`story-<id>`) belong to the stories page, not the recipe list.
+        if (d.id.startsWith('story-')) continue
         const hash = (d.doc as SavedDoc).draftHash
         if (d.id.startsWith('cat-')) {
           const c = cleanCategory(d.doc)

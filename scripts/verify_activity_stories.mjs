@@ -1,0 +1,64 @@
+#!/usr/bin/env node
+/**
+ * Checks the bubble-story library and drafts (data/activity-stories/):
+ * every picture version exists, matches its SHA-256 and measured bounds,
+ * is a clean 256 × 256 cell, and every story names only known pictures.
+ * Motion rules are checked by src/activityStories/compile.test.ts.
+ *
+ *   npm run verify:activity-stories
+ */
+
+import fs from 'node:fs'
+import path from 'node:path'
+import { CELL, ID, MIN_GUTTER, STORIES_DIR, fileFor, measure, readLibrary, sha256 } from './activity_story_pictures.mjs'
+
+const problems = []
+const lib = readLibrary()
+if (lib.schema !== 'lighthouse-keeper/activity-picture-library@1') problems.push('pictures.json: wrong schema')
+
+for (const f of lib.keeper.rearWork) {
+  const file = fileFor(f.url)
+  if (!file || !fs.existsSync(file)) problems.push(`keeper frame missing: ${f.url}`)
+  else if (sha256(fs.readFileSync(file)) !== f.sha256) problems.push(`keeper frame changed: ${f.url}`)
+}
+if (lib.keeper.rearWork.length !== 24) problems.push(`the keeper's rear-work loop should be 24 frames, not ${lib.keeper.rearWork.length}`)
+
+let versions = 0
+for (const [id, p] of Object.entries(lib.pictures)) {
+  if (!ID.test(id)) problems.push(`${id}: ids are lower-case-kebab`)
+  if (p.kind !== 'object' && p.kind !== 'mark') problems.push(`${id}: kind must be object or mark`)
+  if (!p.versions?.some((v) => v.v === p.current)) problems.push(`${id}: current version ${p.current} isn't listed`)
+  const seen = new Set()
+  for (const v of p.versions ?? []) {
+    versions++
+    if (seen.has(v.v)) problems.push(`${id}: version ${v.v} is listed twice`)
+    seen.add(v.v)
+    const file = fileFor(v.url)
+    if (!file || !fs.existsSync(file)) {
+      problems.push(`${id} v${v.v}: no file for ${v.url}`)
+      continue
+    }
+    const buf = fs.readFileSync(file)
+    if (sha256(buf) !== v.sha256) problems.push(`${id} v${v.v}: the file doesn't match its SHA-256 (files are never edited in place; add a new version)`)
+    const m = measure(buf)
+    if (m.cell[0] !== CELL || m.cell[1] !== CELL) problems.push(`${id} v${v.v}: cell is ${m.cell.join(' × ')}, not ${CELL} × ${CELL}`)
+    if (!m.bounds || m.bounds.join() !== v.bounds.join()) problems.push(`${id} v${v.v}: bounds are ${m.bounds?.join(', ')}, the library says ${v.bounds.join(', ')}`)
+    if (m.gutter < MIN_GUTTER) problems.push(`${id} v${v.v}: only ${m.gutter} px of clear gutter`)
+  }
+}
+
+const stories = fs.readdirSync(STORIES_DIR).filter((f) => f.endsWith('.json'))
+for (const f of stories) {
+  const s = JSON.parse(fs.readFileSync(path.join(STORIES_DIR, f), 'utf8'))
+  if (s.schema !== 'lighthouse-keeper/activity-story@1') problems.push(`${f}: wrong schema`)
+  if (`${s.id}.json` !== f) problems.push(`${f}: id ${s.id} should match the file name`)
+  for (const [as, m] of Object.entries(s.cast ?? {})) if (!lib.pictures[m.picture]) problems.push(`${f}: ${as} uses ${m.picture}, which isn't in the library`)
+  for (const st of s.steps ?? []) if (st.mark && lib.pictures[st.mark]?.kind !== 'mark') problems.push(`${f}: mark ${st.mark} isn't a mark in the library`)
+  for (const a of s.ambient ?? []) if (lib.pictures[a.picture]?.kind !== 'mark') problems.push(`${f}: extra mark ${a.picture} isn't a mark in the library`)
+}
+
+if (problems.length) {
+  console.error(`✗ bubble stories: ${problems.length} problem(s)\n  ${problems.join('\n  ')}`)
+  process.exit(1)
+}
+console.log(`✓ bubble stories: ${Object.keys(lib.pictures).length} pictures (${versions} versions), 24 keeper frames and ${stories.length} stories check out`)

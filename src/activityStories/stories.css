@@ -1,0 +1,31 @@
+/* Bubble stories: reuses the recipe studio's layout; the stage copies Codex's V2 bubble (360 × 230 cloud above the rear-work keeper). */
+.ss .st-side { width: auto; }
+.ss.studio { grid-template-columns: 250px minmax(0, 1fr) 430px; }
+.ss-stagewrap { background: #1b333b; border-radius: 8px; padding: 10px; overflow: auto; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.ss-stage { position: relative; width: 380px; height: 330px; overflow: hidden; border-radius: 6px; background: linear-gradient(#24414c 0 73%, #1b333b 73%); transform: scale(1.4); transform-origin: top center; margin-bottom: 132px; }
+.ss-actor { position: absolute; left: 62px; top: 250px; width: 256px; height: 320px; object-fit: contain; }
+.ss-cloud { position: absolute; left: 10px; top: 4px; width: 360px; height: 230px; }
+.ss-bubble { position: absolute; inset: 25px 31px 20px; background: rgba(246, 239, 211, .22); border: 3px solid rgba(239, 246, 245, .84); border-radius: 50%; box-shadow: 0 5px 0 rgba(9, 25, 34, .24); transform-origin: 50% 100%; }
+.ss-ring { position: absolute; border: 3px solid rgba(239, 246, 245, .72); border-radius: 50%; background: rgba(246, 239, 211, .16); }
+.ss-ring1 { width: 22px; height: 18px; left: 169px; top: 214px; } .ss-ring2 { width: 12px; height: 10px; left: 174px; top: 236px; }
+.ss-piece { position: absolute; left: 50%; top: 50%; width: 140px; height: 140px; object-fit: contain; filter: drop-shadow(0 5px 4px rgba(2, 10, 15, .24)); pointer-events: none; }
+.ss-mark { width: 92px; height: 92px; filter: drop-shadow(0 3px 2px rgba(2, 10, 15, .18)); }
+.ss-beat { color: #e6edf6; font-size: 13px; }
+.ss-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.ss-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.ss-steps li { display: grid; grid-template-columns: 28px 1fr auto; gap: 6px; align-items: start; padding: 5px; border: 1px solid var(--st-line); border-radius: 6px; background: #fff; }
+.ss-steps li.on { border-color: var(--st-sea); background: #eef5fb; }
+.ss-steps li[draggable=true] { cursor: grab; }
+.ss-num { padding: 2px 0 !important; font-weight: 700; }
+.ss-fields { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.ss-tools { display: flex; gap: 2px; }
+.ss-cast { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.ss-cast li { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.ss-cast img, .ss-lib img { width: 32px; height: 32px; object-fit: contain; background: #e9eef3; border-radius: 4px; }
+.ss-cast input[type=number] { width: 44px; }
+.ss-lib { list-style: none; margin: 0; padding: 0; display: grid; gap: 3px; }
+.ss-lib li { display: flex; gap: 6px; align-items: center; font-size: 12px; } .ss-lib small { color: var(--st-dim); }
+.ss-new { display: flex; gap: 4px; margin-top: 6px; } .ss-new input { flex: 1; min-width: 0; }
+.ss-err { color: var(--st-accent); }
+.ss .st-list li > button { width: 100%; text-align: left; border-color: transparent; background: none; display: flex; gap: 6px; align-items: center; }
+.ss .st-list li > button.on { background: #e3edf7; border-color: var(--st-sea); }

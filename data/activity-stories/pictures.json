@@ -1,0 +1,1001 @@
+{
+  "schema": "lighthouse-keeper/activity-picture-library@1",
+  "about": "Shared picture library for bubble stories. Stories name pictures by id; each picture keeps every version, and `current` says which one stories use. See data/activity-stories/README.md.",
+  "keeper": {
+    "note": "Approved Prime rear-work loop (24 frames). Immutable: never edited here.",
+    "rearWork": [
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f1-31dbac4efc00089f.png",
+        "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f2-a829593415b82625.png",
+        "sha256": "a829593415b8262502cda85267aea01c2763eb6b36e003039542267a8b12c529",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f3-278573c9601a1ba3.png",
+        "sha256": "278573c9601a1ba3b7f3d90629a551585ac908a44bdd472b375ebe4b0724bcf2",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f4-e54f4d6f669d2c9e.png",
+        "sha256": "e54f4d6f669d2c9e0fd4e36cc57bb7502f0b25b5ac6cc3edea6b7682d52dd00a",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f5-b42cb772f708ad85.png",
+        "sha256": "b42cb772f708ad857b76253450dbcf72f93af96edbc92b2c5bd272caeef8026b",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f6-acf9f752ad129293.png",
+        "sha256": "acf9f752ad1292937312c4dab5f3abeb82e2b459ed0656ded2cc857165ae6bfc",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f7-21cc593701ed485e.png",
+        "sha256": "21cc593701ed485ede395ce978478714ef7f9205d4a5b46bec605bd251bc75ac",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f8-4b285d73a4d9a180.png",
+        "sha256": "4b285d73a4d9a180d2c679aa52007d25f98504fe515528fed35dba3a0bf162d4",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f9-8ada2fa0b22eabb1.png",
+        "sha256": "8ada2fa0b22eabb1631e04e34e963ffca2a1b67fb5c8aaef1c0aa241f353ab68",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f10-36d72ad880781935.png",
+        "sha256": "36d72ad8807819354e6a8844c236460b5648c228c9756e74d46ebd0aa9a7df83",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f11-3663dc10ab588428.png",
+        "sha256": "3663dc10ab588428977532bfe86a6d2946eca61def161d500d15a910cfcd5788",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f12-01e33037f4564abb.png",
+        "sha256": "01e33037f4564abbbeedaf4bef260503f6ef572bfe1220d3fdb381c963e4a9e5",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f13-3a624f695960be2a.png",
+        "sha256": "3a624f695960be2a74f2bc10869a98b7ccc731de1e927dcc4dd258f980499b03",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f14-60bf939c0d9a0c8e.png",
+        "sha256": "60bf939c0d9a0c8eb5be5680248170136406e62a1cea981427a8ffb03fdda38b",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f15-b1c199001d4eb6c0.png",
+        "sha256": "b1c199001d4eb6c00c104f963cbefdc07b5efc08f0532666e3c36f9327b2f268",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f16-3b0a4be452b355b6.png",
+        "sha256": "3b0a4be452b355b6489e4d778945f0d79f315c3aaf3d9dbe96d7b6474c77536d",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f17-528da5df6d009fcb.png",
+        "sha256": "528da5df6d009fcb76c8a8340ffe0e1152cae9bf615ab43ad1c860b63330d66c",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f18-4d1bbf5f883a74bb.png",
+        "sha256": "4d1bbf5f883a74bb9d581f05e71b9cf9e862d510b9d360d9345d031ca7eebefe",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f19-3cb8650e3cfdd7fd.png",
+        "sha256": "3cb8650e3cfdd7fdef4a96ad4a99903a2fb58585cc02feb25bd67014a2eaf946",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f20-47665f1a5663e293.png",
+        "sha256": "47665f1a5663e293cfee4c24ef8c6f0d0af22aeb6c9db066c67303c637b14d28",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f21-e8a97566e58cd055.png",
+        "sha256": "e8a97566e58cd055fbf66da844dc89496c04c84a9f6a1bc4b991f32c22c08760",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f22-efd7ca6da147fc86.png",
+        "sha256": "efd7ca6da147fc8613c08443d1adb4d282c322d44f5b2f58a4610cfa447e2e2d",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f1-31dbac4efc00089f.png",
+        "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+        "ms": 250
+      },
+      {
+        "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f1-31dbac4efc00089f.png",
+        "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+        "ms": 250
+      }
+    ]
+  },
+  "pictures": {
+    "bbq-burgers": {
+      "kind": "object",
+      "family": "bbq",
+      "label": "Burgers",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v1/assets/bbq-burgers-5244d4289bbaf95f.png",
+          "sha256": "5244d4289bbaf95f4c2ddd36a72f24fe9b5bf12e2a349365d9fe574fdfa64354",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            44,
+            236,
+            212
+          ],
+          "added": "2026-10-19",
+          "source": "activity-cloud-composer-v1",
+          "by": "codex"
+        }
+      ]
+    },
+    "bbq-charcoal": {
+      "kind": "object",
+      "family": "bbq",
+      "label": "Charcoal",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v1/assets/bbq-charcoal-4b728ffaefec6c4e.png",
+          "sha256": "4b728ffaefec6c4ef792c3ef5261cc5815060077ac3d0a08b44be0abbfd6dfa2",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            33,
+            236,
+            223
+          ],
+          "added": "2026-10-19",
+          "source": "activity-cloud-composer-v1",
+          "by": "codex"
+        }
+      ]
+    },
+    "bbq-grill": {
+      "kind": "object",
+      "family": "bbq",
+      "label": "Barbecue grill",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/bbq-grill-8984470c007ff8a3.png",
+          "sha256": "8984470c007ff8a35af6fc8428afa9a38318c89bb5c4e7e1f2f34d7b858a5ee0",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            43,
+            236,
+            213
+          ],
+          "added": "2026-10-19",
+          "source": "keeper-prime-back-work-activity-callout-v3",
+          "by": "codex"
+        }
+      ]
+    },
+    "bbq-hotdogs": {
+      "kind": "object",
+      "family": "bbq",
+      "label": "Hot dogs",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v1/assets/bbq-hotdogs-63d205ed77f06ea3.png",
+          "sha256": "63d205ed77f06ea3121f4ef2bba1a3dde9d90c064bedaa2c5ceb761553f46f6c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            59,
+            229,
+            231
+          ],
+          "added": "2026-10-19",
+          "source": "activity-cloud-composer-v1",
+          "by": "codex"
+        }
+      ]
+    },
+    "bbq-sausages": {
+      "kind": "object",
+      "family": "bbq",
+      "label": "Sausages",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v1/assets/bbq-sausages-2ea34430496ee43b.png",
+          "sha256": "2ea34430496ee43bd09a7640a12eaa5606562f2ab7c42dd6f655ba7a9fe97727",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            53,
+            236,
+            203
+          ],
+          "added": "2026-10-19",
+          "source": "activity-cloud-composer-v1",
+          "by": "codex"
+        }
+      ]
+    },
+    "cooking-sandwich": {
+      "kind": "object",
+      "family": "cooking",
+      "label": "Finished sandwich",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/cooking-sandwich-b88b28b259ebbf7b.png",
+          "sha256": "b88b28b259ebbf7b4729f54116605009cf120bc9abe9c37dce0a19e4dfe847e4",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            53,
+            236,
+            203
+          ],
+          "added": "2026-10-19",
+          "source": "keeper-prime-back-work-activity-callout-v3",
+          "by": "codex"
+        }
+      ]
+    },
+    "repair-boat-hull-patch": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Hull patch",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v5/assets/repair-boat-hull-patch-cef61bcec5542ac3.png",
+          "sha256": "cef61bcec5542ac32a74bcae933b972deab398bec5edfabd8ded71441b23c28e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            24,
+            236,
+            232
+          ],
+          "added": "2026-10-19",
+          "source": "activity-cloud-composer-v5",
+          "by": "codex"
+        }
+      ]
+    },
+    "repair-hammer-nails": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Hammer and nails",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v5/assets/repair-hammer-nails-0c71ed9d475b334a.png",
+          "sha256": "0c71ed9d475b334ad85c2f6c7a190ae61a90bcf44c18974559f8a8e7e06632e9",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            27,
+            236,
+            228
+          ],
+          "added": "2026-10-19",
+          "source": "activity-cloud-composer-v5",
+          "by": "codex"
+        }
+      ]
+    },
+    "repair-rope-knot": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Rope knot",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v5/assets/repair-rope-knot-03f0806f550a4953.png",
+          "sha256": "03f0806f550a4953ac72c0dc6e17745e00ef71d4d231177343de29e75e4436d5",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            81,
+            236,
+            175
+          ],
+          "added": "2026-10-19",
+          "source": "activity-cloud-composer-v5",
+          "by": "codex"
+        }
+      ]
+    },
+    "repair-toolbox": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Toolbox",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v5/assets/repair-toolbox-bddc65528cb63fed.png",
+          "sha256": "bddc65528cb63fed1403fcbd0de210af4b357585dac5660102512b706f459c10",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            33,
+            236,
+            223
+          ],
+          "added": "2026-10-19",
+          "source": "activity-cloud-composer-v5",
+          "by": "codex"
+        }
+      ]
+    },
+    "repair-wrench-cog": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Wrench and cog",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v5/assets/repair-wrench-cog-588a382fd46f0fbb.png",
+          "sha256": "588a382fd46f0fbb2186db0e40613a6e02c8476d4b99bd53dd6d3b2f27861ea4",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            23,
+            236,
+            232
+          ],
+          "added": "2026-10-19",
+          "source": "activity-cloud-composer-v5",
+          "by": "codex"
+        }
+      ]
+    },
+    "sandwich-bread": {
+      "kind": "object",
+      "family": "sandwich",
+      "label": "Bread",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/sandwich-bread-11313cc6d0839d31.png",
+          "sha256": "11313cc6d0839d313ecb96ef4136e372904fe848de862034a2234637ecabb8c8",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            56,
+            236,
+            200
+          ],
+          "added": "2026-10-19",
+          "source": "keeper-prime-back-work-activity-callout-v3",
+          "by": "codex"
+        }
+      ]
+    },
+    "sandwich-ham": {
+      "kind": "object",
+      "family": "sandwich",
+      "label": "Ham",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/sandwich-ham-d3cdba07f6b695e7.png",
+          "sha256": "d3cdba07f6b695e7e9918fde92822aeb3f1d543aafde0b59bd204069641c4fb7",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            62,
+            236,
+            194
+          ],
+          "added": "2026-10-19",
+          "source": "keeper-prime-back-work-activity-callout-v3",
+          "by": "codex"
+        }
+      ]
+    },
+    "sandwich-lettuce": {
+      "kind": "object",
+      "family": "sandwich",
+      "label": "Lettuce",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/sandwich-lettuce-3addb510966c088b.png",
+          "sha256": "3addb510966c088b52b2d50a5a5e6088231a4e083798a95f8d98573e35b37ef5",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            54,
+            236,
+            201
+          ],
+          "added": "2026-10-19",
+          "source": "keeper-prime-back-work-activity-callout-v3",
+          "by": "codex"
+        }
+      ]
+    },
+    "sandwich-tomato": {
+      "kind": "object",
+      "family": "sandwich",
+      "label": "Tomato",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/sandwich-tomato-10f760734f45b9cf.png",
+          "sha256": "10f760734f45b9cf6e2ee7ca815f7c89137cd64854bd71de98b07beaa871e2be",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            51,
+            236,
+            205
+          ],
+          "added": "2026-10-19",
+          "source": "keeper-prime-back-work-activity-callout-v3",
+          "by": "codex"
+        }
+      ]
+    },
+    "symbol-electrical-arc": {
+      "kind": "mark",
+      "family": "electrical",
+      "label": "Electrical arc",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v7/assets/symbol-electrical-arc-dc12888c17f6ff30.png",
+          "sha256": "dc12888c17f6ff30a1519653ec9b8534e6f1510e2478ce42586739e291491fa9",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            37,
+            20,
+            218,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "activity-cloud-composer-v7",
+          "by": "codex"
+        }
+      ]
+    },
+    "symbol-exclamation-mark": {
+      "kind": "mark",
+      "family": "notation",
+      "label": "Exclamation mark",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v7/assets/symbol-exclamation-mark-b16054b0c4fe4c26.png",
+          "sha256": "b16054b0c4fe4c26f6dcdbb2ca6e5ce52bd2b90a21e8037d57925498167c425f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            86,
+            20,
+            169,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "activity-cloud-composer-v7",
+          "by": "codex"
+        }
+      ]
+    },
+    "symbol-foul-odour": {
+      "kind": "mark",
+      "family": "scent",
+      "label": "Foul odour",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v7/assets/symbol-foul-odour-6ad163119859fa51.png",
+          "sha256": "6ad163119859fa51df31b05dc3460ac5a87cf0d7765657bc78abbb4b2508e7cb",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            46,
+            20,
+            210,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "activity-cloud-composer-v7",
+          "by": "codex"
+        }
+      ]
+    },
+    "symbol-heat-curls": {
+      "kind": "mark",
+      "family": "heat",
+      "label": "Heat curls",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-heat-curls-053ec220575142bb.png",
+          "sha256": "053ec220575142bbfd5d7d822254bf661c0881c481d33224d2c94f5006611f48",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            55,
+            20,
+            200,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "keeper-prime-rear-action-choreography-v1",
+          "by": "codex"
+        }
+      ]
+    },
+    "symbol-heat-shimmer": {
+      "kind": "mark",
+      "family": "heat",
+      "label": "Heat shimmer",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v7/assets/symbol-heat-shimmer-e85c89733bf1eb6d.png",
+          "sha256": "e85c89733bf1eb6d0ca2187f4669ad267c19ea914b6e0dea04cb0a0d720530a6",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            41,
+            20,
+            215,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "activity-cloud-composer-v7",
+          "by": "codex"
+        }
+      ],
+      "review": {
+        "status": "rework-requested",
+        "note": "Reads as small flames and twins heat curls; redraw as horizontal ripples."
+      }
+    },
+    "symbol-impact-star": {
+      "kind": "mark",
+      "family": "impact",
+      "label": "Impact star",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-impact-star-24bd4e8598275891.png",
+          "sha256": "24bd4e85982758910682eee6e7963a3c197b4de8b20f5e4f07caf2ec1ef3635f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            23,
+            20,
+            232,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "keeper-prime-rear-action-choreography-v1",
+          "by": "codex"
+        }
+      ]
+    },
+    "symbol-motion-ticks": {
+      "kind": "mark",
+      "family": "motion",
+      "label": "Motion ticks",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-motion-ticks-a91599e13c96e96c.png",
+          "sha256": "a91599e13c96e96cff6a247815bb30840d1376493f5c123ab73c3b20a7d4630d",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            34,
+            20,
+            222,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "keeper-prime-rear-action-choreography-v1",
+          "by": "codex"
+        }
+      ]
+    },
+    "symbol-pleasant-aroma": {
+      "kind": "mark",
+      "family": "scent",
+      "label": "Pleasant aroma",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v7/assets/symbol-pleasant-aroma-ed972850c2086664.png",
+          "sha256": "ed972850c2086664b5bed7958b88e38a1b93a4fbd7265381b2ec6eff7354adf4",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            37,
+            20,
+            218,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "activity-cloud-composer-v7",
+          "by": "codex"
+        }
+      ],
+      "review": {
+        "status": "rework-requested",
+        "note": "Reads as two question marks at game size; redraw as open S-wisps in cream and brass."
+      }
+    },
+    "symbol-question-mark": {
+      "kind": "mark",
+      "family": "notation",
+      "label": "Question mark",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v7/assets/symbol-question-mark-a4ef40dab1f00c00.png",
+          "sha256": "a4ef40dab1f00c00b0a11bb0d21c44e1acc38cbf90a6c0e12d5528854d307734",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            61,
+            20,
+            195,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "activity-cloud-composer-v7",
+          "by": "codex"
+        }
+      ]
+    },
+    "symbol-sizzle-spark": {
+      "kind": "mark",
+      "family": "impact",
+      "label": "Sizzle spark",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-sizzle-spark-7fd4e839c3505e0b.png",
+          "sha256": "7fd4e839c3505e0be040ac56301be8bd7fc1ce99f77e720a1aca581d0dad76db",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            25,
+            20,
+            231,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "keeper-prime-rear-action-choreography-v1",
+          "by": "codex"
+        }
+      ]
+    },
+    "symbol-soap-bubbles": {
+      "kind": "mark",
+      "family": "water",
+      "label": "Soap bubbles",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-soap-bubbles-a1946758a07299ee.png",
+          "sha256": "a1946758a07299ee5625b99499c5b4f4ed2bbcb9453737be23f091b42685bef7",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            28,
+            236,
+            228
+          ],
+          "added": "2026-10-20",
+          "source": "keeper-prime-rear-action-choreography-v1",
+          "by": "codex"
+        }
+      ]
+    },
+    "symbol-water-droplets": {
+      "kind": "mark",
+      "family": "water",
+      "label": "Water droplets",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-water-droplets-2bff1e869ae70d31.png",
+          "sha256": "2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            32,
+            20,
+            224,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "keeper-prime-rear-action-choreography-v1",
+          "by": "codex"
+        }
+      ]
+    },
+    "symbol-welding-sparks": {
+      "kind": "mark",
+      "family": "welding",
+      "label": "Welding sparks",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/activity-cloud-composer-v7/assets/symbol-welding-sparks-6d69f48e4e153dd3.png",
+          "sha256": "6d69f48e4e153dd3b4a694563c9282a6b603ce7578294e336f04e1584b1dca1a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            24,
+            236,
+            231
+          ],
+          "added": "2026-10-20",
+          "source": "activity-cloud-composer-v7",
+          "by": "codex"
+        }
+      ],
+      "review": {
+        "status": "rework-requested",
+        "note": "Blurs into the sizzle spark; needs a hot-white core and a one-sided spray."
+      }
+    },
+    "washing-cutlery": {
+      "kind": "object",
+      "family": "washing",
+      "label": "Clean cutlery",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/washing-cutlery-76d1a71e4d9e2cb2.png",
+          "sha256": "76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            41,
+            236,
+            214
+          ],
+          "added": "2026-10-19",
+          "source": "keeper-prime-back-work-activity-callout-v2",
+          "by": "codex"
+        }
+      ]
+    },
+    "washing-droplets": {
+      "kind": "object",
+      "family": "washing",
+      "label": "Rinse water",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/washing-droplets-14fa3c4503f2362d.png",
+          "sha256": "14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            48,
+            236,
+            208
+          ],
+          "added": "2026-10-19",
+          "source": "keeper-prime-back-work-activity-callout-v2",
+          "by": "codex"
+        }
+      ]
+    },
+    "washing-liquid": {
+      "kind": "object",
+      "family": "washing",
+      "label": "Washing-up liquid",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/washing-liquid-f311431e2c6e4800.png",
+          "sha256": "f311431e2c6e480033982790d416bbd6df16f414338c6a030ff28d2780efd2c1",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            49,
+            20,
+            207,
+            236
+          ],
+          "added": "2026-10-19",
+          "source": "keeper-prime-back-work-activity-callout-v3",
+          "by": "codex"
+        }
+      ]
+    },
+    "washing-plate": {
+      "kind": "object",
+      "family": "washing",
+      "label": "Plate",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/washing-plate-01b82c03b73ae824.png",
+          "sha256": "01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            47,
+            236,
+            208
+          ],
+          "added": "2026-10-19",
+          "source": "keeper-prime-back-work-activity-callout-v2",
+          "by": "codex"
+        }
+      ]
+    },
+    "washing-sponge": {
+      "kind": "object",
+      "family": "washing",
+      "label": "Sponge",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/washing-sponge-aed0b35f1bf279fe.png",
+          "sha256": "aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            53,
+            236,
+            203
+          ],
+          "added": "2026-10-19",
+          "source": "keeper-prime-back-work-activity-callout-v2",
+          "by": "codex"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "id": "general-repair",
+  "label": "General repair",
+  "appliesTo": { "assetId": "workshop.repair-bench", "label": "Repair bench" },
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "cast": {
+    "toolbox": { "picture": "repair-toolbox", "role": "hero" },
+    "patch": { "picture": "repair-boat-hull-patch", "role": "support" },
+    "hammer": { "picture": "repair-hammer-nails", "role": "support" },
+    "wrench": { "picture": "repair-wrench-cog", "role": "support" },
+    "knot": { "picture": "repair-rope-knot", "role": "result" }
+  },
+  "steps": [
+    { "do": "arrive", "who": "toolbox", "speed": "quick" },
+    { "do": "present", "who": "patch" },
+    { "do": "strike", "who": "hammer", "onto": "patch" },
+    { "do": "tighten", "who": "wrench", "onto": "patch", "speed": "quick" },
+    { "do": "reveal", "who": "knot", "onto": "patch" },
+    { "do": "settle" }
+  ],
+  "ambient": [
+    { "picture": "symbol-question-mark", "on": "patch", "fromStep": 2, "toStep": 2 },
+    { "picture": "symbol-exclamation-mark", "on": "knot", "fromStep": 5, "toStep": 5 }
+  ],
+  "sfx": [
+    { "step": 1, "at": "end", "cue": "toolbox-open", "owner": "workshop.repair-bench", "kind": "asset-state" },
+    { "step": 3, "at": "contact", "cue": "hammer-tap-wrench-click", "owner": "general-repair", "kind": "activity-beat" },
+    { "step": 5, "at": "contact", "cue": "repair-secured", "owner": "general-repair", "kind": "completion" }
+  ],
+  "notes": "Draft by Claude, 20 Oct 2026. The toolbox opens, the patch (the job) takes the middle with a question mark, the hammer strikes the patch, not the toolbox, the wrench tightens it, and the knot secures it with an exclamation mark."
+}

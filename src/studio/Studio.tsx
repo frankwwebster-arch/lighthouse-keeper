@@ -364,6 +364,7 @@ function Studio() {
       <header className="st-head">
         <a href="/">← Game</a>
         <h1>Recipe studio</h1>
+        <a href="/studio/stories">Bubble stories →</a>
         <span className="st-dim">{loaded ? (db ? 'Saved for everyone' : 'Local copy: recipes stay in this browser, sounds until you close it') : 'Loading…'}</span>
         <span className="st-grow" />
         {editable ? (
