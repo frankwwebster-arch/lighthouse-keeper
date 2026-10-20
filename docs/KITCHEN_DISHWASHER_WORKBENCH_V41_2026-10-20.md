@@ -5,6 +5,10 @@ art pixels. It applies the canonical rule that every movable kitchen asset is
 position-locked while Broken and that environmental effects are stored as
 asset-owned local layers.
 
+Status: approved by Frank on 20 October 2026; exact review/specification bytes
+pinned by `docs/review/kitchen-dishwasher-workbench-v41-approval-2026-10-20.json`;
+unpromoted and not runtime-wired.
+
 Review: `/keeper-review/kitchen-dishwasher-workbench-v41/`
 
 ## Broken-state rule

@@ -373,6 +373,11 @@ export default {
         destination: '/keeper-review/kitchen-dishwasher-workbench-v41/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-kettle-standalone-v42',
+        destination: '/keeper-review/kitchen-kettle-standalone-v42/index.html',
+        permanent: false,
+      },
     ]
   },
 }

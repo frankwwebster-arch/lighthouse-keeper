@@ -1,0 +1,15 @@
+{
+  "schema": "lighthouse-keeper/built-in-image-generation-provenance@1",
+  "set": "kitchen-kettle-standalone-v42",
+  "date": "2026-10-20",
+  "mode": "built-in image generation",
+  "stateFamilyPrompt": "Create three isolated views of one standalone old-fashioned whistling kettle: Off, On and Broken. Off and On must have identical casing and contain no effect pixels. Broken remains the same kettle with one failed but attached handle mounting, a sprung but attached lid, one dent and a small enamel chip. Use the approved kitchen's cream, navy, turquoise and warm-copper palette; match the crisp hand-painted dishwasher style; use a transparent background, equal scale and generous gutters; include no counter, room, steam, smoke, sparks, flames, text or detached parts.",
+  "steamPrompt": "Create five isolated ordered key poses of delicate pale kettle steam for interpolation into a forty-frame loop: tiny wisp, curling rise, soft S-curve, thinning drift and nearly faded return. Use pale cream-white with a faint aqua edge, transparent background and generous unambiguous gutters. Include no kettle, counter, room, smoke, fire, sparks, droplets, bubbles, text or arrows.",
+  "referenceRoles": {
+    "dishwasherStateFamily": "style quality and outline-weight reference",
+    "rejectedKettleV33": "old-fashioned silhouette reference only",
+    "dishwasherV41NativeRoom": "approved kitchen palette and scale context",
+    "dishwasherSudsKeyframes": "isolated five-keyframe layout reference"
+  },
+  "normalization": "The generated high-resolution sheets are source evidence only. scripts/build_kitchen_kettle_standalone_v42.mjs deterministically normalises them to native cells and effect strips."
+}

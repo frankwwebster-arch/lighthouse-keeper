@@ -354,21 +354,21 @@ approved cabinets. Its immutable hashes are pinned in
 `docs/review/kitchen-dishwasher-workbench-v39-rejection-2026-10-20.json`.
 
 Kitchen Dishwasher Workbench V40 at
-`/keeper-review/kitchen-dishwasher-workbench-v40/` is the active reversible
-visual gate. It retains every non-worktop V39 state pixel and replaces only
+`/keeper-review/kitchen-dishwasher-workbench-v40/` is the immutable visual
+authority inherited by V41. It retains every non-worktop V39 state pixel and replaces only
 cell rows `4–15` with exact Cabinet V11 worktop pixels. Twelve state/edge
 sprites cover Off/On/Broken across every exposed/joined left/right condition;
 the movable review selects the correct one after every swap, then applies the
 existing V22/V32 repair. The corrected dishwasher therefore has the approved
 restrained outline and exact twelve-row height wherever it is placed. The full
 six-object movable tool and reusable suds controls remain available. All 720
-arrangements are verified. V40 is unapproved, unpromoted and unwired; V39,
-approved cabinetry, Final and runtime remain unchanged. Kettle, toaster and
-bowl follow only after this review.
+arrangements are verified. V40 itself remains unapproved, unpromoted and
+unwired; its exact art is accepted through the approved V41 successor. V39,
+approved cabinetry, Final and runtime remain unchanged.
 
 Kitchen Dishwasher Workbench V41 at
-`/keeper-review/kitchen-dishwasher-workbench-v41/` is the active reversible
-behaviour gate and inherits all 49 V40 image files byte-for-byte. A dishwasher
+`/keeper-review/kitchen-dishwasher-workbench-v41/` is approved and inherits
+all 49 V40 image files byte-for-byte. A dishwasher
 in Broken state is fixed at its exact snapped bay: direct movement, a swap that
 would displace it, and whole-run rotation are rejected. Repairing it to Off or
 On unlocks movement. Every suds layer now declares the dishwasher as its owner
@@ -376,8 +376,22 @@ and stores its placement in appliance-local coordinates. This is the binding
 rule for every later broken movable kitchen asset and its separate smoke,
 water, suds or similar effects. There is not yet a gameplay kitchen-furniture
 controller, so V41 is tested review/specification behaviour rather than a
-runtime integration. V41 remains unapproved and unpromoted; V40 art, approved
-cabinetry and Final assets are unchanged.
+runtime integration. The exact approval is pinned in
+`docs/review/kitchen-dishwasher-workbench-v41-approval-2026-10-20.json`; V41
+remains unpromoted, and V40 art, approved cabinetry and Final assets are
+unchanged.
+
+Kitchen Kettle Standalone V42 at
+`/keeper-review/kitchen-kettle-standalone-v42/` is the active reversible gate.
+It supplies an alpha-isolated old-fashioned cream enamel kettle in Off, On and
+Broken states. The round body respects the documented 18 cm counter target;
+the complete handle/spout envelope is at most 32 native pixels and contacts the
+approved worktop exactly at room y=134. Off and On are byte-identical; their
+steam is separate. Broken retains its failed handle and sprung lid, locks to
+its exact counter origin until repaired, and owns every steam layer through
+`anchorAssetId: kettle` plus an asset-local transform. V42 is unapproved,
+unpromoted and unwired. Dishwasher V41, cabinetry, Final and runtime remain
+unchanged. Toaster and mixing-bowl work has not started.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

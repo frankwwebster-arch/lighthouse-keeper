@@ -1,0 +1,26 @@
+{
+  "schema": "lighthouse-keeper/kitchen-review-approval@1",
+  "set": "kitchen-dishwasher-workbench-v41",
+  "approvedOn": "2026-10-20",
+  "approvedBy": "Frank",
+  "approvalWords": "Dishwasher V41 is approved.",
+  "commit": "d997c11b12032b4a48b8350ec08d32ed1746722a",
+  "scope": [
+    "The exact V40 dishwasher art and Cabinet V11 cap correction carried into V41 are approved.",
+    "A movable kitchen asset is position-locked while Broken and unlocks only after repair to a non-broken state.",
+    "A swap or whole-layout action cannot displace a Broken asset.",
+    "Environmental layers remain separate and store anchorAssetId plus asset-local transforms.",
+    "The approval pins the review/specification contract; it does not promote Final art or claim a runtime kitchen controller."
+  ],
+  "hashes": {
+    "candidateCatalogue": "79d5a2780390ef2eea411f358ba3ed8746fb424fe432db7492c93c4e69c4ac13",
+    "reviewShell": "828d6c4e669634c60ac40d4401cbb282ba9a8b48e6314ff7a721137a6f18dcea",
+    "archiveManifest": "8e51d541db58534a8a74124fcfef440feb9d2755296ae3d38a02fdd20b656d93",
+    "dishwasherOff": "d006ccfa83bf5c754a7f1249d3969ffe464d3853a15131f64cf0c48d8239b31d",
+    "dishwasherOn": "f7a8976bc9cfaf83feb443a65c8b20bf075bff821a4053be5ace71fecb124953",
+    "dishwasherBroken": "061aad8aa14ee97a8cf8b239820a3a8cba8ba5766975ac4a1fa1142762511616"
+  },
+  "promotion": "none",
+  "runtimeChanged": false,
+  "finalChanged": false
+}
