@@ -368,6 +368,11 @@ export default {
         destination: '/keeper-review/kitchen-dishwasher-workbench-v40/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-dishwasher-workbench-v41',
+        destination: '/keeper-review/kitchen-dishwasher-workbench-v41/index.html',
+        permanent: false,
+      },
     ]
   },
 }

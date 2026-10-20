@@ -90,6 +90,33 @@ The compositor recalculates every left and right neighbour after each commit.
 Prime's anchor is then derived from the snapped logical body, never from the
 transparent sprite cell or visible overflow.
 
+## Broken-state movement lock and effect ownership
+
+A movable kitchen asset becomes position-locked when its state becomes
+`broken`. This is a general gameplay rule for appliances, cabinets and later
+upgrades, not a dishwasher-specific exception.
+
+- The asset retains its exact snapped grid origin and Prime interaction
+  midpoint until repaired.
+- Direct drag, bay-button movement and any group/layout operation which would
+  move the broken asset are rejected.
+- A different asset cannot swap into the occupied bay if that swap would
+  displace the broken asset.
+- A repair transition to Off, On or another non-broken state unlocks movement.
+- Upgrading or replacing a broken asset therefore requires repair first.
+
+Environmental effects remain separate sprite strips but are owned by their
+appliance instance. Each placed layer stores `anchorAssetId`, applicable state,
+asset-local `dx`/`dy`, size, crop, speed and model. Save/load must persist the
+asset state, exact origin and owned layer transforms together. This makes suds,
+smoke, leaking water and similar effects permanently follow their source while
+the source is movable, and guarantees they cannot become detached once the
+Broken lock engages. Removing an effect layer remains independently allowed.
+
+The renderer resolves joins from the locked position exactly as it does for an
+unlocked snapped position. The lock changes interaction state only; it never
+bakes effects, neighbours or healing pixels into the appliance sprite.
+
 ## Join resolver and draw order
 
 Exact adjacency means `left.x + left.width === right.x`. Only then may a repair

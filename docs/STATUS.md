@@ -366,6 +366,19 @@ arrangements are verified. V40 is unapproved, unpromoted and unwired; V39,
 approved cabinetry, Final and runtime remain unchanged. Kettle, toaster and
 bowl follow only after this review.
 
+Kitchen Dishwasher Workbench V41 at
+`/keeper-review/kitchen-dishwasher-workbench-v41/` is the active reversible
+behaviour gate and inherits all 49 V40 image files byte-for-byte. A dishwasher
+in Broken state is fixed at its exact snapped bay: direct movement, a swap that
+would displace it, and whole-run rotation are rejected. Repairing it to Off or
+On unlocks movement. Every suds layer now declares the dishwasher as its owner
+and stores its placement in appliance-local coordinates. This is the binding
+rule for every later broken movable kitchen asset and its separate smoke,
+water, suds or similar effects. There is not yet a gameplay kitchen-furniture
+controller, so V41 is tested review/specification behaviour rather than a
+runtime integration. V41 remains unapproved and unpromoted; V40 art, approved
+cabinetry and Final assets are unchanged.
+
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
 link with V6. The animation remains the exact V1/V2 six-pose motion inside its

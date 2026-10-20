@@ -45,6 +45,11 @@ only the deterministic Cabinet V11 worktop substitution ships to review.
 V39 remains immutable. V40 does not change approved cabinetry, Final or
 runtime assets and performs no promotion.
 
+V41 inherits every V40 image byte and supersedes only the review behaviour by
+locking movable assets while Broken and storing effect layers explicitly in
+asset-local coordinates. V40 remains the immutable visual authority for that
+successor.
+
 ## Verification
 
 Run:
