@@ -2,7 +2,7 @@
 
 Date: 20 October 2026
 
-Status: reversible visual-review draft; awaiting visual review, unpromoted and
+Status: approved placement/join review authority; hash-pinned, unpromoted and
 unwired.
 
 Review page: `/keeper-review/kitchen-modular-join-workbench-v33/`
@@ -16,6 +16,12 @@ bays, including immediately beside one another in either order.
 
 No appliance or cabinet sprite is redrawn or amended. All repairs are separate
 dynamic compositor layers.
+
+Frank approved exact V33 on 20 October 2026 with “excellent. Approved.” The
+catalogue, register, review shell and archive manifest are pinned by
+`docs/review/kitchen-modular-join-workbench-v33-approval-2026-10-20.json`.
+This releases the fridge as the next standalone appliance but does not promote
+V33 into Final or runtime.
 
 ## Exact placement contract
 

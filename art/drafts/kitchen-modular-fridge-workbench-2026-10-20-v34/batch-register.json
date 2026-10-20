@@ -1,0 +1,141 @@
+{
+  "schema": "lighthouse-keeper/reversible-review-batch@1",
+  "set": "kitchen-modular-fridge-workbench-v34",
+  "status": "reversible-unapproved-unpromoted",
+  "candidate": {
+    "catalogue": {
+      "file": "art/drafts/kitchen-modular-fridge-workbench-2026-10-20-v34/candidate-catalogue.json",
+      "sha256": "7580ec7e6397dfdef5dbe24b5b410121f31a42e11f923fa63f5956744e5f5ffd"
+    },
+    "publicShell": {
+      "file": "public/keeper-review/kitchen-modular-fridge-workbench-v34/index.html",
+      "sha256": "6711f0d3c79924069d053518a82b6cea914f07136e5d724747dbcc6e09b6ca2f"
+    }
+  },
+  "sources": [
+    {
+      "file": "docs/review/kitchen-modular-join-workbench-v33-approval-2026-10-20.json",
+      "sha256": "3d5f8fbb077e3827670e2cdcbb8a57013e9e501997f4a237ddb643d741dac9a8"
+    },
+    {
+      "file": "art/drafts/kitchen-modular-join-workbench-2026-10-20-v33/candidate-catalogue.json",
+      "sha256": "4b9777f2cf23c6f971b76077097d9c98c9205dbc2309183947f737bd713e9d14"
+    },
+    {
+      "file": "docs/review/kitchen-fridge-states-v39-approval-2026-10-18.json",
+      "sha256": "f4293f2bcf584fe6ed03a2fc71664d221d65afd85555d255ddff833118456788"
+    }
+  ],
+  "publishedAssets": [
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/room-background-exact.png",
+      "sourceSha256": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/room-background-exact.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/cabinet-run-v11-exact.png",
+      "sourceSha256": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/cabinet-run-v11-exact.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/sink-cabinet-v19-exact.png",
+      "sourceSha256": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/sink-cabinet-v19-exact.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/join-body-backfill-template.png",
+      "sourceSha256": "e8bd0080ca426e6d2d750b0c5cbb0b912fe659ec1a49867e740b9216c6b68040",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/join-body-backfill-template.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/countertop-join-cap-template.png",
+      "sourceSha256": "99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/countertop-join-cap-template.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/countertop-triangle-underlay-template.png",
+      "sourceSha256": "99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/countertop-triangle-underlay-template.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/neighbour-seam-cleanup-left.png",
+      "sourceSha256": "cb8f761a8458ca59b99e5c7ade6c6d9b32de4b5dd796c9d07559783b5a9eaec1",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/neighbour-seam-cleanup-left.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/neighbour-seam-cleanup-right.png",
+      "sourceSha256": "f06898c1750bc735db7ce37723d1d2487294d04e9233f812c18c9970e041e267",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/neighbour-seam-cleanup-right.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/oven-off.png",
+      "sourceSha256": "c2f5687b598b42f15b42a2323e2d441d1b0b892ea2f75cbea590f4190e6c0b8e",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/oven-off.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/oven-on.png",
+      "sourceSha256": "72c05de613f386ed51f9e049a3a986f34279bf04614a05b7b193d0b243be7622",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/oven-on.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/oven-broken.png",
+      "sourceSha256": "25631317589299c852e6383732cd2b376a0b5575f1720514ab5f250318765243",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/oven-broken.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/oven-broken-cavity-lit.png",
+      "sourceSha256": "8a42f379a156fd485a8efb735adb75e1dbba7c044b78b89f0982fa0d2198d4df",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/oven-broken-cavity-lit.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/oven-broken-warning-lit.png",
+      "sourceSha256": "734b0b19b4e2df77cb91fd7327e46ac6d2421351853c6505e8ae9a1bef6bd27e",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/oven-broken-warning-lit.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/oven-broken-both-lit.png",
+      "sourceSha256": "3f57c7a407ed7a4e4238307e0a839bfa37b6e8655116d65acb2a353883b5e3ce",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/oven-broken-both-lit.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/oven-broken-cavity-flicker-f40.png",
+      "sourceSha256": "94a6beec5979e81b4614b9596fe379a8193db0c1c179a7453f799c0bff2ade04",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/oven-broken-cavity-flicker-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/oven-broken-warning-flicker-f40.png",
+      "sourceSha256": "e5cc0bbbabfb9632efd23d78b30ba8d322e735b19bfcc3c8e2145f65b43c48d1",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/oven-broken-warning-flicker-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/fridge-standard.png",
+      "sourceSha256": "03c528a64d76b62bf48c39609bc30da0914799892b8d046f69ff99992439bc11",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/fridge-standard.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/fridge-broken-hinge-failed.png",
+      "sourceSha256": "5e421156def0af32827327df856ea502077b45c949292dc7367b5fc0751412b7",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/fridge-broken-hinge-failed.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/fx-fridge-drip-ripple-f40.png",
+      "sourceSha256": "02e70817b92a27028eccee7809c17c8a6710ccb5ec7d0c43fbb1531c637f94a7",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/fx-fridge-drip-ripple-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/fridge-standard-native-room.png",
+      "sourceSha256": "8e0e9b5a224fe43ddcaf9fb6fa07647a8f9c017bedc184a8cb2b0944b6d737a1",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/fridge-standard-native-room.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/fridge-broken-native-room.png",
+      "sourceSha256": "dd050c903f9f0ea272ac951ffed3ff01c80dc62d2301812aa737081b4b548bb5",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/fridge-broken-native-room.png"
+    },
+    {
+      "source": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/cabinet-oven-sink-fridge-native-room.png",
+      "sourceSha256": "eac307727a5f5d6d9f0709f1e1da1fd6be467bc6e255c852874ca757133c7e12",
+      "publicAssemblyPath": "public/keeper-review/kitchen-modular-fridge-workbench-v34/assets/cabinet-oven-sink-fridge-native-room.png"
+    }
+  ]
+}

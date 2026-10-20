@@ -1,4 +1,4 @@
-# Lighthouse Keeper: status write-up (19 Oct 2026)
+# Lighthouse Keeper: status write-up (20 Oct 2026)
 
 ## What it is
 A Sims-style web game for Ralph (7) and Eddie (11). A keeper lives in a lighthouse; kids type commands (typo-tolerant, curated, no live AI) or click objects (Sims-style menus, auto-zoom camera). Needs and mood, credits, phone, bedtime, multi-day play, a day report, quiz pop-ins, time-aware chat, cheeky humour.
@@ -288,8 +288,8 @@ gate is approved. V32 is reversible, unapproved and unpromoted; V30/V31,
 Cabinet V11, V22, Final/runtime and later kitchen assets remain unchanged.
 
 Kitchen Modular Join Workbench V33 at
-`/keeper-review/kitchen-modular-join-workbench-v33/` is the active combined
-sink/oven placement and join gate. One exact V11 two-bay cabinet run remains
+`/keeper-review/kitchen-modular-join-workbench-v33/` is the approved combined
+sink/oven placement and join authority. One exact V11 two-bay cabinet run remains
 fixed in bays 2–3; the exact V25 sink and V32 oven can each be selected, dragged
 loosely and committed to any two distinct free 84-pixel bays. The other movable
 asset and fixed run are excluded from legal destinations. Prime interaction
@@ -299,9 +299,24 @@ every pair containing the oven uses V32's triangular underlay, blue body fill
 and narrow non-oven seam cleanup; and an unjoined sink left side uses V25's
 isolated cutout plus rounded V11 end. Sink and oven can therefore sit together
 in either order without baking cabinet pixels into either appliance. All 12
-legal non-overlapping arrangements are deterministically verified. V33 is
-reversible, unapproved and unpromoted; V22/V25/V32, Final/runtime and later
-kitchen assets remain unchanged.
+legal non-overlapping arrangements are deterministically verified. Frank
+approved exact V33 on 20 October 2026; its catalogue, register, shell and
+archive manifest are hash-pinned in
+`docs/review/kitchen-modular-join-workbench-v33-approval-2026-10-20.json`.
+V33 remains unpromoted and unwired.
+
+The active fridge successor is Kitchen Modular Fridge Workbench V34 at
+`/keeper-review/kitchen-modular-fridge-workbench-v34/`. It reuses the exact
+approved V39 white-door Standard, failed-hinge Broken and separate drip/ripple
+sprites byte-for-byte, and adds the fridge to V33's live workbench beside the
+sink and oven. All three assets snap collision-free to distinct free origins;
+their Prime anchors remain exact body midpoints on y=218. Any oven pair keeps
+the V32 triangular repair, cabinet↔sink keeps V22, a non-oven fridge pair gets
+only the blue body backfill, and exposed sink/oven/fridge rules remain
+deterministic. The static Broken art owns the door, contents and floor puddle;
+the 40-frame/4-fps ten-second drip/ripple remains removable and variable-speed.
+All 24 legal placements are verified. V34 awaits visual review and changes no
+Final or runtime asset.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

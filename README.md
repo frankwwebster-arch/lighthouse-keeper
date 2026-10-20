@@ -620,7 +620,7 @@ asset-first tool demonstrates its three models and drag/resize/crop/speed/
 removal controls, but final smoke placement waits for a successor workbench
 using the standalone oven. V32 is a reversible, unapproved review gate; see
 [`docs/KITCHEN_OVEN_STANDALONE_V32_2026-10-20.md`](docs/KITCHEN_OVEN_STANDALONE_V32_2026-10-20.md).
-The active combined placement gate is now
+The approved combined placement authority is
 `/keeper-review/kitchen-modular-join-workbench-v33/`. It keeps the fixed V11
 two-bay cabinet run in bays 2–3 and lets the exact V25 sink and V32 oven move
 independently among any two distinct free 84-pixel bays. Loose dragging is only
@@ -632,6 +632,18 @@ either order), and the V25 cutout/rounded end whenever the sink has no exact
 left neighbour. Repairs remain separate compositor layers; no source sprite is
 amended. See
 [`docs/KITCHEN_MODULAR_JOIN_WORKBENCH_V33_2026-10-20.md`](docs/KITCHEN_MODULAR_JOIN_WORKBENCH_V33_2026-10-20.md).
+Frank approved and hash-pinned exact V33 on 20 October 2026. The active
+successor is `/keeper-review/kitchen-modular-fridge-workbench-v34/`: it reuses
+the exact approved V39 white-door Standard/Broken fridge family and separate
+drip/ripple strip, then adds the fridge as a third movable one-bay appliance
+without changing any V33 or V39 pixel. Fridge, sink and oven snap to three
+distinct free origins, keep exact Prime midpoint anchors and may sit directly
+beside one another. Oven and sink joins retain V33's rules; non-oven fridge
+pairs use only the blue body backfill so the fridge's complete standalone top
+is not flattened. The Broken door, contents and puddle stay static; drip/ripple
+remains removable and variable-speed. V34 awaits visual review and is not
+promoted or wired. See
+[`docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V34_2026-10-20.md`](docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V34_2026-10-20.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
@@ -646,8 +658,9 @@ confirmation, V26 is its derived game-scale Prime context, V27 is rejected
 provenance, V28 supplies the approved static bin pixels, V29 supplies the
 effect colour/timing basis, V30 is rejected as too object-shaped for a young
 player, and V31 is the approved comic-readability authority. None is promoted
-or wired. V32–V41 are rejected immutable provenance; V39's earlier approval is
-historical rather than the current construction authority. Rebuild V1 is the
+or wired. V32–V41 are rejected immutable provenance, except that V39's exact
+approved fridge pixels are intentionally reused by the current modular V34
+review without reviving its obsolete full-room assembly method. Rebuild V1 is the
 immutable coherent foundation; Rebuild V2 is immutable state-family
 provenance; Rebuild V3 is immutable placement-workbench provenance; Rebuild V4
 is immutable variable-speed provenance; Rebuild V5 is immutable corrected-copy

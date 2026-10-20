@@ -333,6 +333,11 @@ export default {
         destination: '/keeper-review/kitchen-modular-join-workbench-v33/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-modular-fridge-workbench-v34',
+        destination: '/keeper-review/kitchen-modular-fridge-workbench-v34/index.html',
+        permanent: false,
+      },
     ]
   },
 }
