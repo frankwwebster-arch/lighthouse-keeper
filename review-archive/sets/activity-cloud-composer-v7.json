@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "set": "activity-cloud-composer-v7",
+  "page": {
+    "path": "public/keeper-review/activity-cloud-composer-v7/index.html",
+    "sha256": "99adcd2fea00e6658ef7ad1294bbc36cc1139f4472fa3f62bfa1b4267deaa541",
+    "bytes": 22261
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/activity-cloud-composer-v7/assets/symbol-electrical-arc-dc12888c17f6ff30.png": {
+      "sha256": "dc12888c17f6ff30a1519653ec9b8534e6f1510e2478ce42586739e291491fa9",
+      "extension": ".png",
+      "bytes": 54111,
+      "object": "review-archive/objects/dc/dc12888c17f6ff30a1519653ec9b8534e6f1510e2478ce42586739e291491fa9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/dc/dc12888c17f6ff30a1519653ec9b8534e6f1510e2478ce42586739e291491fa9.png"
+    },
+    "/keeper-review/activity-cloud-composer-v7/assets/symbol-exclamation-mark-b16054b0c4fe4c26.png": {
+      "sha256": "b16054b0c4fe4c26f6dcdbb2ca6e5ce52bd2b90a21e8037d57925498167c425f",
+      "extension": ".png",
+      "bytes": 32564,
+      "object": "review-archive/objects/b1/b16054b0c4fe4c26f6dcdbb2ca6e5ce52bd2b90a21e8037d57925498167c425f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b1/b16054b0c4fe4c26f6dcdbb2ca6e5ce52bd2b90a21e8037d57925498167c425f.png"
+    },
+    "/keeper-review/activity-cloud-composer-v7/assets/symbol-foul-odour-6ad163119859fa51.png": {
+      "sha256": "6ad163119859fa51df31b05dc3460ac5a87cf0d7765657bc78abbb4b2508e7cb",
+      "extension": ".png",
+      "bytes": 55942,
+      "object": "review-archive/objects/6a/6ad163119859fa51df31b05dc3460ac5a87cf0d7765657bc78abbb4b2508e7cb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6a/6ad163119859fa51df31b05dc3460ac5a87cf0d7765657bc78abbb4b2508e7cb.png"
+    },
+    "/keeper-review/activity-cloud-composer-v7/assets/symbol-heat-shimmer-e85c89733bf1eb6d.png": {
+      "sha256": "e85c89733bf1eb6d0ca2187f4669ad267c19ea914b6e0dea04cb0a0d720530a6",
+      "extension": ".png",
+      "bytes": 54000,
+      "object": "review-archive/objects/e8/e85c89733bf1eb6d0ca2187f4669ad267c19ea914b6e0dea04cb0a0d720530a6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e8/e85c89733bf1eb6d0ca2187f4669ad267c19ea914b6e0dea04cb0a0d720530a6.png"
+    },
+    "/keeper-review/activity-cloud-composer-v7/assets/symbol-pleasant-aroma-ed972850c2086664.png": {
+      "sha256": "ed972850c2086664b5bed7958b88e38a1b93a4fbd7265381b2ec6eff7354adf4",
+      "extension": ".png",
+      "bytes": 58045,
+      "object": "review-archive/objects/ed/ed972850c2086664b5bed7958b88e38a1b93a4fbd7265381b2ec6eff7354adf4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ed/ed972850c2086664b5bed7958b88e38a1b93a4fbd7265381b2ec6eff7354adf4.png"
+    },
+    "/keeper-review/activity-cloud-composer-v7/assets/symbol-question-mark-a4ef40dab1f00c00.png": {
+      "sha256": "a4ef40dab1f00c00b0a11bb0d21c44e1acc38cbf90a6c0e12d5528854d307734",
+      "extension": ".png",
+      "bytes": 42738,
+      "object": "review-archive/objects/a4/a4ef40dab1f00c00b0a11bb0d21c44e1acc38cbf90a6c0e12d5528854d307734.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a4/a4ef40dab1f00c00b0a11bb0d21c44e1acc38cbf90a6c0e12d5528854d307734.png"
+    },
+    "/keeper-review/activity-cloud-composer-v7/assets/symbol-welding-sparks-6d69f48e4e153dd3.png": {
+      "sha256": "6d69f48e4e153dd3b4a694563c9282a6b603ce7578294e336f04e1584b1dca1a",
+      "extension": ".png",
+      "bytes": 69823,
+      "object": "review-archive/objects/6d/6d69f48e4e153dd3b4a694563c9282a6b603ce7578294e336f04e1584b1dca1a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6d/6d69f48e4e153dd3b4a694563c9282a6b603ce7578294e336f04e1584b1dca1a.png"
+    }
+  }
+}
