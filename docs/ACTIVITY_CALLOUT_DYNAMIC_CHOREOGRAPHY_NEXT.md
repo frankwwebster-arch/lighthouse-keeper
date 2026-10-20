@@ -115,3 +115,20 @@ path overlay and exact frame-state table.
 The candidate inherits Prime Rear Action Sequence V1 and Composer V6
 byte-for-byte. It is review-only, unapproved, unpromoted and undeployed. See
 `docs/KEEPER_PRIME_REAR_ACTION_CHOREOGRAPHY_V1_2026-10-20.md`.
+
+## Bubble refinement candidate
+
+Frank preferred the bubble approach and requested a focused V2 refinement.
+`/keeper-review/keeper-prime-rear-action-choreography-v2/index.html` preserves
+the complete V1 open treatment and every inherited image hash, lightens the
+bubble, aligns its connector with the Keeper's head, widens object lanes and
+makes comic marks functional motion grammar. Each supporting object owns a
+velocity-aligned tick trail and an interaction-timed contact star; these marks
+remain independent from objects and treatment geometry. The verifier measures
+58.0% more bubble-object travel and 38.9% greater working-phrase spacing than
+V1 while retaining the five-frame quiet tail and reduced-motion limits.
+
+V2 also supplies a self-contained 68-asset Claude Code model-test pack under
+`art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/`. It remains
+review-only, unapproved, unpromoted and undeployed. See
+`docs/KEEPER_PRIME_REAR_ACTION_CHOREOGRAPHY_V2_2026-10-20.md`.

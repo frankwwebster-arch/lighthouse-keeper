@@ -1,0 +1,791 @@
+{
+  "schema": "lighthouse-keeper/activity-cloud-model-test-pack@1",
+  "set": "keeper-prime-rear-action-choreography-v2",
+  "purpose": "Self-contained Claude Code model-test input; every visual file used by V2 plus the isolated symbol source sheet.",
+  "assetCount": 68,
+  "bodyAssetCount": 41,
+  "activityAssetCount": 20,
+  "symbolAssetCount": 6,
+  "sourceAssetCount": 1,
+  "assets": [
+    {
+      "id": "body-01",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-walk-right_f2-2b8e91de747b527d.png",
+      "sourceFile": "review-archive/objects/2b/2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf.png",
+      "sourceSha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/01-walk-f2-2b8e91de747b.png",
+      "sha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "usedBySequenceFrames": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "body-02",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-walk-right_f3-b376254e9c29da38.png",
+      "sourceFile": "review-archive/objects/b3/b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4.png",
+      "sourceSha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/02-walk-f3-b376254e9c29.png",
+      "sha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "usedBySequenceFrames": [
+        1,
+        9
+      ]
+    },
+    {
+      "id": "body-03",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-walk-right_f4-982646b0b0e6f3f9.png",
+      "sourceFile": "review-archive/objects/98/982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b.png",
+      "sourceSha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/03-walk-f4-982646b0b0e6.png",
+      "sha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "usedBySequenceFrames": [
+        2,
+        10
+      ]
+    },
+    {
+      "id": "body-04",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-walk-right_f5-545e7338151e6e5a.png",
+      "sourceFile": "review-archive/objects/54/545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549.png",
+      "sourceSha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/04-walk-f5-545e7338151e.png",
+      "sha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "usedBySequenceFrames": [
+        3,
+        11
+      ]
+    },
+    {
+      "id": "body-05",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-walk-right_f6-17d007eee75c2e86.png",
+      "sourceFile": "review-archive/objects/17/17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52.png",
+      "sourceSha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/05-walk-f6-17d007eee75c.png",
+      "sha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "usedBySequenceFrames": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": "body-06",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-walk-right_f7-dbf5b3849624cec7.png",
+      "sourceFile": "review-archive/objects/db/dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df.png",
+      "sourceSha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/06-walk-f7-dbf5b3849624.png",
+      "sha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "usedBySequenceFrames": [
+        5,
+        13
+      ]
+    },
+    {
+      "id": "body-07",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-walk-right_f8-cf8c53e7ffa703a5.png",
+      "sourceFile": "review-archive/objects/cf/cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61.png",
+      "sourceSha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/07-walk-f8-cf8c53e7ffa7.png",
+      "sha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "usedBySequenceFrames": [
+        6,
+        14
+      ]
+    },
+    {
+      "id": "body-08",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-walk-right_f1-0e80ea65610452c9.png",
+      "sourceFile": "review-archive/objects/0e/0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656.png",
+      "sourceSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/08-walk-f1-0e80ea656104.png",
+      "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "usedBySequenceFrames": [
+        7,
+        15
+      ]
+    },
+    {
+      "id": "body-09",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-stop-to-walk-right_f4-9f4192beb8fecbc8.png",
+      "sourceFile": "review-archive/objects/9f/9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29.png",
+      "sourceSha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/09-75-9f4192beb8fe.png",
+      "sha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "usedBySequenceFrames": [
+        16
+      ]
+    },
+    {
+      "id": "body-10",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-stop-to-walk-right_f3-0169b3642905389d.png",
+      "sourceFile": "review-archive/objects/01/0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c.png",
+      "sourceSha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/10-50-0169b3642905.png",
+      "sha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "usedBySequenceFrames": [
+        17
+      ]
+    },
+    {
+      "id": "body-11",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-stop-to-walk-right_f2-e54546ba14b4e5f7.png",
+      "sourceFile": "review-archive/objects/e5/e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930.png",
+      "sourceSha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/11-15-e54546ba14b4.png",
+      "sha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "usedBySequenceFrames": [
+        18
+      ]
+    },
+    {
+      "id": "body-12",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-stop-to-walk-right_f1-a172a8a01a387a21.png",
+      "sourceFile": "review-archive/objects/a1/a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3.png",
+      "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/12-exact-side-right-stop-a172a8a01a38.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "usedBySequenceFrames": [
+        19
+      ]
+    },
+    {
+      "id": "body-13",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-turn_side-right_to_back_f02-e1dc020aabfe8f3b.png",
+      "sourceFile": "review-archive/objects/e1/e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5.png",
+      "sourceSha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/13-98-e1dc020aabfe.png",
+      "sha256": "e1dc020aabfe8f3ba519630c85885bf8f4db31e439232d017ec7e38c8a3ad4d5",
+      "usedBySequenceFrames": [
+        20
+      ]
+    },
+    {
+      "id": "body-14",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-turn_side-right_to_back_f03-34028d8821a7272a.png",
+      "sourceFile": "review-archive/objects/34/34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859.png",
+      "sourceSha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/14-105-34028d8821a7.png",
+      "sha256": "34028d8821a7272a37d35724d687c17d75f5cd1d7acf1ed216a1bd7c239e3859",
+      "usedBySequenceFrames": [
+        21
+      ]
+    },
+    {
+      "id": "body-15",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-turn_side-right_to_back_f04-0d278363a0e7e4f1.png",
+      "sourceFile": "review-archive/objects/0d/0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655.png",
+      "sourceSha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/15-120-0d278363a0e7.png",
+      "sha256": "0d278363a0e7e4f1e6bf92ca44199df822451aa012fd1b086b6e3fdc5bb0e655",
+      "usedBySequenceFrames": [
+        22
+      ]
+    },
+    {
+      "id": "body-16",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-turn_side-right_to_back_f05-f827ac61f45aaaa4.png",
+      "sourceFile": "review-archive/objects/f8/f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc.png",
+      "sourceSha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/16-135-f827ac61f45a.png",
+      "sha256": "f827ac61f45aaaa495546777f470cbb62818530dceea5e2251649d47ca0bd7dc",
+      "usedBySequenceFrames": [
+        23
+      ]
+    },
+    {
+      "id": "body-17",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-turn_side-right_to_back_f06-fe06522abd0cd55c.png",
+      "sourceFile": "review-archive/objects/fe/fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c.png",
+      "sourceSha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/17-150-fe06522abd0c.png",
+      "sha256": "fe06522abd0cd55cf70f40378c7c52bdb08c9911022b3dd6daa7fbf1bbca291c",
+      "usedBySequenceFrames": [
+        24
+      ]
+    },
+    {
+      "id": "body-18",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-turn_side-right_to_back_f07-d55afae023051e29.png",
+      "sourceFile": "review-archive/objects/d5/d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e.png",
+      "sourceSha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/18-165-d55afae02305.png",
+      "sha256": "d55afae023051e29e7b4b0d0b93a11aafeaeb49514f4ff749463cdcaa25edc7e",
+      "usedBySequenceFrames": [
+        25
+      ]
+    },
+    {
+      "id": "body-19",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/authority-turn_side-right_to_back_f08-bb530610cf0e17bf.png",
+      "sourceFile": "review-archive/objects/bb/bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132.png",
+      "sourceSha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/19-172-5-bb530610cf0e.png",
+      "sha256": "bb530610cf0e17bf8ff376b7375a3d36a6ddb0145e7d788cec924d6aca972132",
+      "usedBySequenceFrames": [
+        26
+      ]
+    },
+    {
+      "id": "body-20",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f1-31dbac4efc00089f.png",
+      "sourceFile": "review-archive/objects/31/31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35.png",
+      "sourceSha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/20-180-31dbac4efc00.png",
+      "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "usedBySequenceFrames": [
+        27,
+        28,
+        50,
+        51
+      ]
+    },
+    {
+      "id": "body-21",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f2-a829593415b82625.png",
+      "sourceFile": "review-archive/objects/a8/a829593415b8262502cda85267aea01c2763eb6b36e003039542267a8b12c529.png",
+      "sourceSha256": "a829593415b8262502cda85267aea01c2763eb6b36e003039542267a8b12c529",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/21-work-f2-a829593415b8.png",
+      "sha256": "a829593415b8262502cda85267aea01c2763eb6b36e003039542267a8b12c529",
+      "usedBySequenceFrames": [
+        29
+      ]
+    },
+    {
+      "id": "body-22",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f3-278573c9601a1ba3.png",
+      "sourceFile": "review-archive/objects/27/278573c9601a1ba3b7f3d90629a551585ac908a44bdd472b375ebe4b0724bcf2.png",
+      "sourceSha256": "278573c9601a1ba3b7f3d90629a551585ac908a44bdd472b375ebe4b0724bcf2",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/22-work-f3-278573c9601a.png",
+      "sha256": "278573c9601a1ba3b7f3d90629a551585ac908a44bdd472b375ebe4b0724bcf2",
+      "usedBySequenceFrames": [
+        30
+      ]
+    },
+    {
+      "id": "body-23",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f4-e54f4d6f669d2c9e.png",
+      "sourceFile": "review-archive/objects/e5/e54f4d6f669d2c9e0fd4e36cc57bb7502f0b25b5ac6cc3edea6b7682d52dd00a.png",
+      "sourceSha256": "e54f4d6f669d2c9e0fd4e36cc57bb7502f0b25b5ac6cc3edea6b7682d52dd00a",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/23-work-f4-e54f4d6f669d.png",
+      "sha256": "e54f4d6f669d2c9e0fd4e36cc57bb7502f0b25b5ac6cc3edea6b7682d52dd00a",
+      "usedBySequenceFrames": [
+        31
+      ]
+    },
+    {
+      "id": "body-24",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f5-b42cb772f708ad85.png",
+      "sourceFile": "review-archive/objects/b4/b42cb772f708ad857b76253450dbcf72f93af96edbc92b2c5bd272caeef8026b.png",
+      "sourceSha256": "b42cb772f708ad857b76253450dbcf72f93af96edbc92b2c5bd272caeef8026b",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/24-work-f5-b42cb772f708.png",
+      "sha256": "b42cb772f708ad857b76253450dbcf72f93af96edbc92b2c5bd272caeef8026b",
+      "usedBySequenceFrames": [
+        32
+      ]
+    },
+    {
+      "id": "body-25",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f6-acf9f752ad129293.png",
+      "sourceFile": "review-archive/objects/ac/acf9f752ad1292937312c4dab5f3abeb82e2b459ed0656ded2cc857165ae6bfc.png",
+      "sourceSha256": "acf9f752ad1292937312c4dab5f3abeb82e2b459ed0656ded2cc857165ae6bfc",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/25-work-f6-acf9f752ad12.png",
+      "sha256": "acf9f752ad1292937312c4dab5f3abeb82e2b459ed0656ded2cc857165ae6bfc",
+      "usedBySequenceFrames": [
+        33
+      ]
+    },
+    {
+      "id": "body-26",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f7-21cc593701ed485e.png",
+      "sourceFile": "review-archive/objects/21/21cc593701ed485ede395ce978478714ef7f9205d4a5b46bec605bd251bc75ac.png",
+      "sourceSha256": "21cc593701ed485ede395ce978478714ef7f9205d4a5b46bec605bd251bc75ac",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/26-work-f7-21cc593701ed.png",
+      "sha256": "21cc593701ed485ede395ce978478714ef7f9205d4a5b46bec605bd251bc75ac",
+      "usedBySequenceFrames": [
+        34
+      ]
+    },
+    {
+      "id": "body-27",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f8-4b285d73a4d9a180.png",
+      "sourceFile": "review-archive/objects/4b/4b285d73a4d9a180d2c679aa52007d25f98504fe515528fed35dba3a0bf162d4.png",
+      "sourceSha256": "4b285d73a4d9a180d2c679aa52007d25f98504fe515528fed35dba3a0bf162d4",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/27-work-f8-4b285d73a4d9.png",
+      "sha256": "4b285d73a4d9a180d2c679aa52007d25f98504fe515528fed35dba3a0bf162d4",
+      "usedBySequenceFrames": [
+        35
+      ]
+    },
+    {
+      "id": "body-28",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f9-8ada2fa0b22eabb1.png",
+      "sourceFile": "review-archive/objects/8a/8ada2fa0b22eabb1631e04e34e963ffca2a1b67fb5c8aaef1c0aa241f353ab68.png",
+      "sourceSha256": "8ada2fa0b22eabb1631e04e34e963ffca2a1b67fb5c8aaef1c0aa241f353ab68",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/28-work-f9-8ada2fa0b22e.png",
+      "sha256": "8ada2fa0b22eabb1631e04e34e963ffca2a1b67fb5c8aaef1c0aa241f353ab68",
+      "usedBySequenceFrames": [
+        36
+      ]
+    },
+    {
+      "id": "body-29",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f10-36d72ad880781935.png",
+      "sourceFile": "review-archive/objects/36/36d72ad8807819354e6a8844c236460b5648c228c9756e74d46ebd0aa9a7df83.png",
+      "sourceSha256": "36d72ad8807819354e6a8844c236460b5648c228c9756e74d46ebd0aa9a7df83",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/29-work-f10-36d72ad88078.png",
+      "sha256": "36d72ad8807819354e6a8844c236460b5648c228c9756e74d46ebd0aa9a7df83",
+      "usedBySequenceFrames": [
+        37
+      ]
+    },
+    {
+      "id": "body-30",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f11-3663dc10ab588428.png",
+      "sourceFile": "review-archive/objects/36/3663dc10ab588428977532bfe86a6d2946eca61def161d500d15a910cfcd5788.png",
+      "sourceSha256": "3663dc10ab588428977532bfe86a6d2946eca61def161d500d15a910cfcd5788",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/30-work-f11-3663dc10ab58.png",
+      "sha256": "3663dc10ab588428977532bfe86a6d2946eca61def161d500d15a910cfcd5788",
+      "usedBySequenceFrames": [
+        38
+      ]
+    },
+    {
+      "id": "body-31",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f12-01e33037f4564abb.png",
+      "sourceFile": "review-archive/objects/01/01e33037f4564abbbeedaf4bef260503f6ef572bfe1220d3fdb381c963e4a9e5.png",
+      "sourceSha256": "01e33037f4564abbbeedaf4bef260503f6ef572bfe1220d3fdb381c963e4a9e5",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/31-work-f12-01e33037f456.png",
+      "sha256": "01e33037f4564abbbeedaf4bef260503f6ef572bfe1220d3fdb381c963e4a9e5",
+      "usedBySequenceFrames": [
+        39
+      ]
+    },
+    {
+      "id": "body-32",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f13-3a624f695960be2a.png",
+      "sourceFile": "review-archive/objects/3a/3a624f695960be2a74f2bc10869a98b7ccc731de1e927dcc4dd258f980499b03.png",
+      "sourceSha256": "3a624f695960be2a74f2bc10869a98b7ccc731de1e927dcc4dd258f980499b03",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/32-work-f13-3a624f695960.png",
+      "sha256": "3a624f695960be2a74f2bc10869a98b7ccc731de1e927dcc4dd258f980499b03",
+      "usedBySequenceFrames": [
+        40
+      ]
+    },
+    {
+      "id": "body-33",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f14-60bf939c0d9a0c8e.png",
+      "sourceFile": "review-archive/objects/60/60bf939c0d9a0c8eb5be5680248170136406e62a1cea981427a8ffb03fdda38b.png",
+      "sourceSha256": "60bf939c0d9a0c8eb5be5680248170136406e62a1cea981427a8ffb03fdda38b",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/33-work-f14-60bf939c0d9a.png",
+      "sha256": "60bf939c0d9a0c8eb5be5680248170136406e62a1cea981427a8ffb03fdda38b",
+      "usedBySequenceFrames": [
+        41
+      ]
+    },
+    {
+      "id": "body-34",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f15-b1c199001d4eb6c0.png",
+      "sourceFile": "review-archive/objects/b1/b1c199001d4eb6c00c104f963cbefdc07b5efc08f0532666e3c36f9327b2f268.png",
+      "sourceSha256": "b1c199001d4eb6c00c104f963cbefdc07b5efc08f0532666e3c36f9327b2f268",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/34-work-f15-b1c199001d4e.png",
+      "sha256": "b1c199001d4eb6c00c104f963cbefdc07b5efc08f0532666e3c36f9327b2f268",
+      "usedBySequenceFrames": [
+        42
+      ]
+    },
+    {
+      "id": "body-35",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f16-3b0a4be452b355b6.png",
+      "sourceFile": "review-archive/objects/3b/3b0a4be452b355b6489e4d778945f0d79f315c3aaf3d9dbe96d7b6474c77536d.png",
+      "sourceSha256": "3b0a4be452b355b6489e4d778945f0d79f315c3aaf3d9dbe96d7b6474c77536d",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/35-work-f16-3b0a4be452b3.png",
+      "sha256": "3b0a4be452b355b6489e4d778945f0d79f315c3aaf3d9dbe96d7b6474c77536d",
+      "usedBySequenceFrames": [
+        43
+      ]
+    },
+    {
+      "id": "body-36",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f17-528da5df6d009fcb.png",
+      "sourceFile": "review-archive/objects/52/528da5df6d009fcb76c8a8340ffe0e1152cae9bf615ab43ad1c860b63330d66c.png",
+      "sourceSha256": "528da5df6d009fcb76c8a8340ffe0e1152cae9bf615ab43ad1c860b63330d66c",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/36-work-f17-528da5df6d00.png",
+      "sha256": "528da5df6d009fcb76c8a8340ffe0e1152cae9bf615ab43ad1c860b63330d66c",
+      "usedBySequenceFrames": [
+        44
+      ]
+    },
+    {
+      "id": "body-37",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f18-4d1bbf5f883a74bb.png",
+      "sourceFile": "review-archive/objects/4d/4d1bbf5f883a74bb9d581f05e71b9cf9e862d510b9d360d9345d031ca7eebefe.png",
+      "sourceSha256": "4d1bbf5f883a74bb9d581f05e71b9cf9e862d510b9d360d9345d031ca7eebefe",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/37-work-f18-4d1bbf5f883a.png",
+      "sha256": "4d1bbf5f883a74bb9d581f05e71b9cf9e862d510b9d360d9345d031ca7eebefe",
+      "usedBySequenceFrames": [
+        45
+      ]
+    },
+    {
+      "id": "body-38",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f19-3cb8650e3cfdd7fd.png",
+      "sourceFile": "review-archive/objects/3c/3cb8650e3cfdd7fdef4a96ad4a99903a2fb58585cc02feb25bd67014a2eaf946.png",
+      "sourceSha256": "3cb8650e3cfdd7fdef4a96ad4a99903a2fb58585cc02feb25bd67014a2eaf946",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/38-work-f19-3cb8650e3cfd.png",
+      "sha256": "3cb8650e3cfdd7fdef4a96ad4a99903a2fb58585cc02feb25bd67014a2eaf946",
+      "usedBySequenceFrames": [
+        46
+      ]
+    },
+    {
+      "id": "body-39",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f20-47665f1a5663e293.png",
+      "sourceFile": "review-archive/objects/47/47665f1a5663e293cfee4c24ef8c6f0d0af22aeb6c9db066c67303c637b14d28.png",
+      "sourceSha256": "47665f1a5663e293cfee4c24ef8c6f0d0af22aeb6c9db066c67303c637b14d28",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/39-work-f20-47665f1a5663.png",
+      "sha256": "47665f1a5663e293cfee4c24ef8c6f0d0af22aeb6c9db066c67303c637b14d28",
+      "usedBySequenceFrames": [
+        47
+      ]
+    },
+    {
+      "id": "body-40",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f21-e8a97566e58cd055.png",
+      "sourceFile": "review-archive/objects/e8/e8a97566e58cd055fbf66da844dc89496c04c84a9f6a1bc4b991f32c22c08760.png",
+      "sourceSha256": "e8a97566e58cd055fbf66da844dc89496c04c84a9f6a1bc4b991f32c22c08760",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/40-work-f21-e8a97566e58c.png",
+      "sha256": "e8a97566e58cd055fbf66da844dc89496c04c84a9f6a1bc4b991f32c22c08760",
+      "usedBySequenceFrames": [
+        48
+      ]
+    },
+    {
+      "id": "body-41",
+      "kind": "approved-prime-body",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f22-efd7ca6da147fc86.png",
+      "sourceFile": "review-archive/objects/ef/efd7ca6da147fc8613c08443d1adb4d282c322d44f5b2f58a4610cfa447e2e2d.png",
+      "sourceSha256": "efd7ca6da147fc8613c08443d1adb4d282c322d44f5b2f58a4610cfa447e2e2d",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/body/41-work-f22-efd7ca6da147.png",
+      "sha256": "efd7ca6da147fc8613c08443d1adb4d282c322d44f5b2f58a4610cfa447e2e2d",
+      "usedBySequenceFrames": [
+        49
+      ]
+    },
+    {
+      "id": "bbq-grill",
+      "kind": "activity-object",
+      "family": "bbq",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/bbq-grill-8984470c007ff8a3.png",
+      "sourceFile": "review-archive/objects/89/8984470c007ff8a35af6fc8428afa9a38318c89bb5c4e7e1f2f34d7b858a5ee0.png",
+      "sourceSha256": "8984470c007ff8a35af6fc8428afa9a38318c89bb5c4e7e1f2f34d7b858a5ee0",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/bbq-grill-8984470c007f.png",
+      "sha256": "8984470c007ff8a35af6fc8428afa9a38318c89bb5c4e7e1f2f34d7b858a5ee0"
+    },
+    {
+      "id": "bbq-charcoal",
+      "kind": "activity-object",
+      "family": "bbq",
+      "sourceUrl": "/keeper-review/activity-cloud-composer-v1/assets/bbq-charcoal-4b728ffaefec6c4e.png",
+      "sourceFile": "review-archive/objects/4b/4b728ffaefec6c4ef792c3ef5261cc5815060077ac3d0a08b44be0abbfd6dfa2.png",
+      "sourceSha256": "4b728ffaefec6c4ef792c3ef5261cc5815060077ac3d0a08b44be0abbfd6dfa2",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/bbq-charcoal-4b728ffaefec.png",
+      "sha256": "4b728ffaefec6c4ef792c3ef5261cc5815060077ac3d0a08b44be0abbfd6dfa2"
+    },
+    {
+      "id": "bbq-sausages",
+      "kind": "activity-object",
+      "family": "bbq",
+      "sourceUrl": "/keeper-review/activity-cloud-composer-v1/assets/bbq-sausages-2ea34430496ee43b.png",
+      "sourceFile": "review-archive/objects/2e/2ea34430496ee43bd09a7640a12eaa5606562f2ab7c42dd6f655ba7a9fe97727.png",
+      "sourceSha256": "2ea34430496ee43bd09a7640a12eaa5606562f2ab7c42dd6f655ba7a9fe97727",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/bbq-sausages-2ea34430496e.png",
+      "sha256": "2ea34430496ee43bd09a7640a12eaa5606562f2ab7c42dd6f655ba7a9fe97727"
+    },
+    {
+      "id": "bbq-hotdogs",
+      "kind": "activity-object",
+      "family": "bbq",
+      "sourceUrl": "/keeper-review/activity-cloud-composer-v1/assets/bbq-hotdogs-63d205ed77f06ea3.png",
+      "sourceFile": "review-archive/objects/63/63d205ed77f06ea3121f4ef2bba1a3dde9d90c064bedaa2c5ceb761553f46f6c.png",
+      "sourceSha256": "63d205ed77f06ea3121f4ef2bba1a3dde9d90c064bedaa2c5ceb761553f46f6c",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/bbq-hotdogs-63d205ed77f0.png",
+      "sha256": "63d205ed77f06ea3121f4ef2bba1a3dde9d90c064bedaa2c5ceb761553f46f6c"
+    },
+    {
+      "id": "bbq-burgers",
+      "kind": "activity-object",
+      "family": "bbq",
+      "sourceUrl": "/keeper-review/activity-cloud-composer-v1/assets/bbq-burgers-5244d4289bbaf95f.png",
+      "sourceFile": "review-archive/objects/52/5244d4289bbaf95f4c2ddd36a72f24fe9b5bf12e2a349365d9fe574fdfa64354.png",
+      "sourceSha256": "5244d4289bbaf95f4c2ddd36a72f24fe9b5bf12e2a349365d9fe574fdfa64354",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/bbq-burgers-5244d4289bba.png",
+      "sha256": "5244d4289bbaf95f4c2ddd36a72f24fe9b5bf12e2a349365d9fe574fdfa64354"
+    },
+    {
+      "id": "sandwich-bread",
+      "kind": "activity-object",
+      "family": "sandwich",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/sandwich-bread-11313cc6d0839d31.png",
+      "sourceFile": "review-archive/objects/11/11313cc6d0839d313ecb96ef4136e372904fe848de862034a2234637ecabb8c8.png",
+      "sourceSha256": "11313cc6d0839d313ecb96ef4136e372904fe848de862034a2234637ecabb8c8",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/sandwich-bread-11313cc6d083.png",
+      "sha256": "11313cc6d0839d313ecb96ef4136e372904fe848de862034a2234637ecabb8c8"
+    },
+    {
+      "id": "sandwich-ham",
+      "kind": "activity-object",
+      "family": "sandwich",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/sandwich-ham-d3cdba07f6b695e7.png",
+      "sourceFile": "review-archive/objects/d3/d3cdba07f6b695e7e9918fde92822aeb3f1d543aafde0b59bd204069641c4fb7.png",
+      "sourceSha256": "d3cdba07f6b695e7e9918fde92822aeb3f1d543aafde0b59bd204069641c4fb7",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/sandwich-ham-d3cdba07f6b6.png",
+      "sha256": "d3cdba07f6b695e7e9918fde92822aeb3f1d543aafde0b59bd204069641c4fb7"
+    },
+    {
+      "id": "sandwich-lettuce",
+      "kind": "activity-object",
+      "family": "sandwich",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/sandwich-lettuce-3addb510966c088b.png",
+      "sourceFile": "review-archive/objects/3a/3addb510966c088b52b2d50a5a5e6088231a4e083798a95f8d98573e35b37ef5.png",
+      "sourceSha256": "3addb510966c088b52b2d50a5a5e6088231a4e083798a95f8d98573e35b37ef5",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/sandwich-lettuce-3addb510966c.png",
+      "sha256": "3addb510966c088b52b2d50a5a5e6088231a4e083798a95f8d98573e35b37ef5"
+    },
+    {
+      "id": "sandwich-tomato",
+      "kind": "activity-object",
+      "family": "sandwich",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/sandwich-tomato-10f760734f45b9cf.png",
+      "sourceFile": "review-archive/objects/10/10f760734f45b9cf6e2ee7ca815f7c89137cd64854bd71de98b07beaa871e2be.png",
+      "sourceSha256": "10f760734f45b9cf6e2ee7ca815f7c89137cd64854bd71de98b07beaa871e2be",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/sandwich-tomato-10f760734f45.png",
+      "sha256": "10f760734f45b9cf6e2ee7ca815f7c89137cd64854bd71de98b07beaa871e2be"
+    },
+    {
+      "id": "cooking-sandwich",
+      "kind": "activity-object",
+      "family": "cooking",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/cooking-sandwich-b88b28b259ebbf7b.png",
+      "sourceFile": "review-archive/objects/b8/b88b28b259ebbf7b4729f54116605009cf120bc9abe9c37dce0a19e4dfe847e4.png",
+      "sourceSha256": "b88b28b259ebbf7b4729f54116605009cf120bc9abe9c37dce0a19e4dfe847e4",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/cooking-sandwich-b88b28b259eb.png",
+      "sha256": "b88b28b259ebbf7b4729f54116605009cf120bc9abe9c37dce0a19e4dfe847e4"
+    },
+    {
+      "id": "washing-plate",
+      "kind": "activity-object",
+      "family": null,
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/washing-plate-01b82c03b73ae824.png",
+      "sourceFile": "review-archive/objects/01/01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f.png",
+      "sourceSha256": "01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/washing-plate-01b82c03b73a.png",
+      "sha256": "01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f"
+    },
+    {
+      "id": "washing-liquid",
+      "kind": "activity-object",
+      "family": "washing",
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/washing-liquid-f311431e2c6e4800.png",
+      "sourceFile": "review-archive/objects/f3/f311431e2c6e480033982790d416bbd6df16f414338c6a030ff28d2780efd2c1.png",
+      "sourceSha256": "f311431e2c6e480033982790d416bbd6df16f414338c6a030ff28d2780efd2c1",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/washing-liquid-f311431e2c6e.png",
+      "sha256": "f311431e2c6e480033982790d416bbd6df16f414338c6a030ff28d2780efd2c1"
+    },
+    {
+      "id": "washing-sponge",
+      "kind": "activity-object",
+      "family": null,
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/washing-sponge-aed0b35f1bf279fe.png",
+      "sourceFile": "review-archive/objects/ae/aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533.png",
+      "sourceSha256": "aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/washing-sponge-aed0b35f1bf2.png",
+      "sha256": "aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533"
+    },
+    {
+      "id": "washing-droplets",
+      "kind": "activity-object",
+      "family": null,
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/washing-droplets-14fa3c4503f2362d.png",
+      "sourceFile": "review-archive/objects/14/14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da.png",
+      "sourceSha256": "14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/washing-droplets-14fa3c4503f2.png",
+      "sha256": "14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da"
+    },
+    {
+      "id": "washing-cutlery",
+      "kind": "activity-object",
+      "family": null,
+      "sourceUrl": "/keeper-review/keeper-prime-back-work-activity-callout-v3/assets/washing-cutlery-76d1a71e4d9e2cb2.png",
+      "sourceFile": "review-archive/objects/76/76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca.png",
+      "sourceSha256": "76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/washing-cutlery-76d1a71e4d9e.png",
+      "sha256": "76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca"
+    },
+    {
+      "id": "repair-toolbox",
+      "kind": "activity-object",
+      "family": "repair",
+      "sourceUrl": "/keeper-review/activity-cloud-composer-v5/assets/repair-toolbox-bddc65528cb63fed.png",
+      "sourceFile": "review-archive/objects/bd/bddc65528cb63fed1403fcbd0de210af4b357585dac5660102512b706f459c10.png",
+      "sourceSha256": "bddc65528cb63fed1403fcbd0de210af4b357585dac5660102512b706f459c10",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/repair-toolbox-bddc65528cb6.png",
+      "sha256": "bddc65528cb63fed1403fcbd0de210af4b357585dac5660102512b706f459c10"
+    },
+    {
+      "id": "repair-boat-hull-patch",
+      "kind": "activity-object",
+      "family": "repair",
+      "sourceUrl": "/keeper-review/activity-cloud-composer-v5/assets/repair-boat-hull-patch-cef61bcec5542ac3.png",
+      "sourceFile": "review-archive/objects/ce/cef61bcec5542ac32a74bcae933b972deab398bec5edfabd8ded71441b23c28e.png",
+      "sourceSha256": "cef61bcec5542ac32a74bcae933b972deab398bec5edfabd8ded71441b23c28e",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/repair-boat-hull-patch-cef61bcec554.png",
+      "sha256": "cef61bcec5542ac32a74bcae933b972deab398bec5edfabd8ded71441b23c28e"
+    },
+    {
+      "id": "repair-hammer-nails",
+      "kind": "activity-object",
+      "family": "repair",
+      "sourceUrl": "/keeper-review/activity-cloud-composer-v5/assets/repair-hammer-nails-0c71ed9d475b334a.png",
+      "sourceFile": "review-archive/objects/0c/0c71ed9d475b334ad85c2f6c7a190ae61a90bcf44c18974559f8a8e7e06632e9.png",
+      "sourceSha256": "0c71ed9d475b334ad85c2f6c7a190ae61a90bcf44c18974559f8a8e7e06632e9",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/repair-hammer-nails-0c71ed9d475b.png",
+      "sha256": "0c71ed9d475b334ad85c2f6c7a190ae61a90bcf44c18974559f8a8e7e06632e9"
+    },
+    {
+      "id": "repair-wrench-cog",
+      "kind": "activity-object",
+      "family": "repair",
+      "sourceUrl": "/keeper-review/activity-cloud-composer-v5/assets/repair-wrench-cog-588a382fd46f0fbb.png",
+      "sourceFile": "review-archive/objects/58/588a382fd46f0fbb2186db0e40613a6e02c8476d4b99bd53dd6d3b2f27861ea4.png",
+      "sourceSha256": "588a382fd46f0fbb2186db0e40613a6e02c8476d4b99bd53dd6d3b2f27861ea4",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/repair-wrench-cog-588a382fd46f.png",
+      "sha256": "588a382fd46f0fbb2186db0e40613a6e02c8476d4b99bd53dd6d3b2f27861ea4"
+    },
+    {
+      "id": "repair-rope-knot",
+      "kind": "activity-object",
+      "family": "repair",
+      "sourceUrl": "/keeper-review/activity-cloud-composer-v5/assets/repair-rope-knot-03f0806f550a4953.png",
+      "sourceFile": "review-archive/objects/03/03f0806f550a4953ac72c0dc6e17745e00ef71d4d231177343de29e75e4436d5.png",
+      "sourceSha256": "03f0806f550a4953ac72c0dc6e17745e00ef71d4d231177343de29e75e4436d5",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/activity/repair-rope-knot-03f0806f550a.png",
+      "sha256": "03f0806f550a4953ac72c0dc6e17745e00ef71d4d231177343de29e75e4436d5"
+    },
+    {
+      "id": "symbol-heat-curls",
+      "kind": "comic-symbol",
+      "family": "heat",
+      "sourceUrl": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-heat-curls-053ec220575142bb.png",
+      "sourceFile": "review-archive/objects/05/053ec220575142bbfd5d7d822254bf661c0881c481d33224d2c94f5006611f48.png",
+      "sourceSha256": "053ec220575142bbfd5d7d822254bf661c0881c481d33224d2c94f5006611f48",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/symbol/symbol-heat-curls-053ec2205751.png",
+      "sha256": "053ec220575142bbfd5d7d822254bf661c0881c481d33224d2c94f5006611f48"
+    },
+    {
+      "id": "symbol-sizzle-spark",
+      "kind": "comic-symbol",
+      "family": "impact",
+      "sourceUrl": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-sizzle-spark-7fd4e839c3505e0b.png",
+      "sourceFile": "review-archive/objects/7f/7fd4e839c3505e0be040ac56301be8bd7fc1ce99f77e720a1aca581d0dad76db.png",
+      "sourceSha256": "7fd4e839c3505e0be040ac56301be8bd7fc1ce99f77e720a1aca581d0dad76db",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/symbol/symbol-sizzle-spark-7fd4e839c350.png",
+      "sha256": "7fd4e839c3505e0be040ac56301be8bd7fc1ce99f77e720a1aca581d0dad76db"
+    },
+    {
+      "id": "symbol-motion-ticks",
+      "kind": "comic-symbol",
+      "family": "motion",
+      "sourceUrl": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-motion-ticks-a91599e13c96e96c.png",
+      "sourceFile": "review-archive/objects/a9/a91599e13c96e96cff6a247815bb30840d1376493f5c123ab73c3b20a7d4630d.png",
+      "sourceSha256": "a91599e13c96e96cff6a247815bb30840d1376493f5c123ab73c3b20a7d4630d",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/symbol/symbol-motion-ticks-a91599e13c96.png",
+      "sha256": "a91599e13c96e96cff6a247815bb30840d1376493f5c123ab73c3b20a7d4630d"
+    },
+    {
+      "id": "symbol-water-droplets",
+      "kind": "comic-symbol",
+      "family": "water",
+      "sourceUrl": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-water-droplets-2bff1e869ae70d31.png",
+      "sourceFile": "review-archive/objects/2b/2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc.png",
+      "sourceSha256": "2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/symbol/symbol-water-droplets-2bff1e869ae7.png",
+      "sha256": "2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc"
+    },
+    {
+      "id": "symbol-soap-bubbles",
+      "kind": "comic-symbol",
+      "family": "water",
+      "sourceUrl": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-soap-bubbles-a1946758a07299ee.png",
+      "sourceFile": "review-archive/objects/a1/a1946758a07299ee5625b99499c5b4f4ed2bbcb9453737be23f091b42685bef7.png",
+      "sourceSha256": "a1946758a07299ee5625b99499c5b4f4ed2bbcb9453737be23f091b42685bef7",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/symbol/symbol-soap-bubbles-a1946758a072.png",
+      "sha256": "a1946758a07299ee5625b99499c5b4f4ed2bbcb9453737be23f091b42685bef7"
+    },
+    {
+      "id": "symbol-impact-star",
+      "kind": "comic-symbol",
+      "family": "impact",
+      "sourceUrl": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-impact-star-24bd4e8598275891.png",
+      "sourceFile": "review-archive/objects/24/24bd4e85982758910682eee6e7963a3c197b4de8b20f5e4f07caf2ec1ef3635f.png",
+      "sourceSha256": "24bd4e85982758910682eee6e7963a3c197b4de8b20f5e4f07caf2ec1ef3635f",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/symbol/symbol-impact-star-24bd4e859827.png",
+      "sha256": "24bd4e85982758910682eee6e7963a3c197b4de8b20f5e4f07caf2ec1ef3635f"
+    },
+    {
+      "id": "activity-comic-symbols-source-sheet",
+      "kind": "isolated-symbol-source-sheet",
+      "sourceFile": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/source/activity-comic-symbols-source-sheet.png",
+      "sourceSha256": "517309ab1ef8ba71849217d6da71fe1cd1c8b2b3a2ef94f86db7ee28fcc43b80",
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v2/claude-code-model-test-pack/assets/source/activity-comic-symbols-source-sheet.png",
+      "sha256": "517309ab1ef8ba71849217d6da71fe1cd1c8b2b3a2ef94f86db7ee28fcc43b80"
+    }
+  ],
+  "constraints": {
+    "inputOnly": true,
+    "doNotOverwriteCanonicalOrThisPack": true,
+    "approvedPrimeBytesMustRemainExact": true,
+    "newOutputMustUseANewVersionedDirectory": true,
+    "runtimePromotionAllowed": false,
+    "kitchenChangesAllowed": false
+  }
+}

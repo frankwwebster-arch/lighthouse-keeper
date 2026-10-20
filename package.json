@@ -174,6 +174,7 @@
     "verify:keeper-prime-rear-action-sequence-v1": "node scripts/verify_keeper_prime_rear_action_sequence_v1.mjs",
     "verify:keeper-prime-rear-action-sequence-v1-approval": "node scripts/verify_keeper_prime_rear_action_sequence_v1_approval.mjs",
     "verify:keeper-prime-rear-action-choreography-v1": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_rear_action_choreography_v1.mjs",
+    "verify:keeper-prime-rear-action-choreography-v2": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_keeper_prime_rear_action_choreography_v2.mjs",
     "verify:keeper-prime-sweep-broom-v7": "node scripts/verify_keeper_prime_sweep_broom_v7.mjs",
     "verify:keeper-prime-sweep-broom-v8": "node scripts/verify_keeper_prime_sweep_broom_v8.mjs",
     "verify:keeper-prime-upper-body-override-poc-v1": "node scripts/verify_keeper_prime_upper_body_override_poc_v1.mjs",
