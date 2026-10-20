@@ -2,7 +2,7 @@
 
 **Date:** 20 October 2026
 
-**Status:** exact sequence continuity approved and hash-pinned; callout motion follow-up required; not promoted or deployed
+**Status:** exact sequence continuity approved and hash-pinned; separate richer choreography candidate built and awaiting review; not promoted or deployed
 
 ## What this review proves
 
@@ -53,10 +53,13 @@ Frank approved the synchronized walk → stop → turn → complete rear-action
 result on 20 October 2026 after reviewing the generated preview. That approval
 pins the exact sequence and its separable above-cap activity layer. It does not
 make the current simple orbit/bustle choreography the final callout-motion
-authority: richer mobile assets, associated comic symbols and more authored
-object interactions are the next separate gate. See
-`docs/ACTIVITY_CALLOUT_DYNAMIC_CHOREOGRAPHY_NEXT.md` and the hash-pinned decision
-at `docs/review/keeper-prime-rear-action-sequence-v1-approval-2026-10-20.json`.
+authority. The separate, unapproved Prime Rear Action Choreography V1
+candidate now provides richer mobile assets, comic symbols and authored object
+interactions without editing this sequence. See
+`docs/ACTIVITY_CALLOUT_DYNAMIC_CHOREOGRAPHY_NEXT.md`,
+`docs/KEEPER_PRIME_REAR_ACTION_CHOREOGRAPHY_V1_2026-10-20.md` and the
+hash-pinned decision at
+`docs/review/keeper-prime-rear-action-sequence-v1-approval-2026-10-20.json`.
 
 Review locally or after an explicitly authorised deployment at:
 

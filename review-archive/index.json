@@ -11,11 +11,11 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 169,
-    "referenceCount": 4117,
-    "uniqueObjectCount": 2571,
-    "logicalBytes": 331113965,
-    "uniqueBytes": 182015283,
+    "setCount": 170,
+    "referenceCount": 4123,
+    "uniqueObjectCount": 2577,
+    "logicalBytes": 331437289,
+    "uniqueBytes": 182338607,
     "deduplicatedBytes": 149098682
   },
   "legacyPaths": {
@@ -9209,6 +9209,48 @@
       "bytes": 59318,
       "object": "review-archive/objects/72/7228c4027401b70369a9fb4fd0856f8da3baf40c5978dd3336ea56a1748608a2.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/72/7228c4027401b70369a9fb4fd0856f8da3baf40c5978dd3336ea56a1748608a2.png"
+    },
+    "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-heat-curls-053ec220575142bb.png": {
+      "sha256": "053ec220575142bbfd5d7d822254bf661c0881c481d33224d2c94f5006611f48",
+      "extension": ".png",
+      "bytes": 42397,
+      "object": "review-archive/objects/05/053ec220575142bbfd5d7d822254bf661c0881c481d33224d2c94f5006611f48.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/05/053ec220575142bbfd5d7d822254bf661c0881c481d33224d2c94f5006611f48.png"
+    },
+    "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-impact-star-24bd4e8598275891.png": {
+      "sha256": "24bd4e85982758910682eee6e7963a3c197b4de8b20f5e4f07caf2ec1ef3635f",
+      "extension": ".png",
+      "bytes": 55426,
+      "object": "review-archive/objects/24/24bd4e85982758910682eee6e7963a3c197b4de8b20f5e4f07caf2ec1ef3635f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/24/24bd4e85982758910682eee6e7963a3c197b4de8b20f5e4f07caf2ec1ef3635f.png"
+    },
+    "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-motion-ticks-a91599e13c96e96c.png": {
+      "sha256": "a91599e13c96e96cff6a247815bb30840d1376493f5c123ab73c3b20a7d4630d",
+      "extension": ".png",
+      "bytes": 49733,
+      "object": "review-archive/objects/a9/a91599e13c96e96cff6a247815bb30840d1376493f5c123ab73c3b20a7d4630d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a9/a91599e13c96e96cff6a247815bb30840d1376493f5c123ab73c3b20a7d4630d.png"
+    },
+    "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-sizzle-spark-7fd4e839c3505e0b.png": {
+      "sha256": "7fd4e839c3505e0be040ac56301be8bd7fc1ce99f77e720a1aca581d0dad76db",
+      "extension": ".png",
+      "bytes": 45674,
+      "object": "review-archive/objects/7f/7fd4e839c3505e0be040ac56301be8bd7fc1ce99f77e720a1aca581d0dad76db.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7f/7fd4e839c3505e0be040ac56301be8bd7fc1ce99f77e720a1aca581d0dad76db.png"
+    },
+    "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-soap-bubbles-a1946758a07299ee.png": {
+      "sha256": "a1946758a07299ee5625b99499c5b4f4ed2bbcb9453737be23f091b42685bef7",
+      "extension": ".png",
+      "bytes": 71641,
+      "object": "review-archive/objects/a1/a1946758a07299ee5625b99499c5b4f4ed2bbcb9453737be23f091b42685bef7.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a1/a1946758a07299ee5625b99499c5b4f4ed2bbcb9453737be23f091b42685bef7.png"
+    },
+    "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-water-droplets-2bff1e869ae70d31.png": {
+      "sha256": "2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc",
+      "extension": ".png",
+      "bytes": 58453,
+      "object": "review-archive/objects/2b/2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc.png"
     },
     "/keeper-review/keeper-prime-rig-v1/assets/back-d1d409f098a18883.png": {
       "sha256": "d1d409f098a18883f419633def910b4f2fef108337b6b9aff49ac356704ebf86",

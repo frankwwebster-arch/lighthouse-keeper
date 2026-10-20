@@ -1,0 +1,482 @@
+{
+  "schema": "lighthouse-keeper/keeper-prime-rear-action-choreography-register@1",
+  "set": "keeper-prime-rear-action-choreography-v1",
+  "status": "immutable-reversible-choreography-review-candidate-not-approved",
+  "purpose": "Four richer deterministic activity-cloud stories over the byte-exact approved Prime rear-action sequence, each with separately authored open and bubble treatments plus reduced motion.",
+  "sourceSequence": {
+    "set": "keeper-prime-rear-action-sequence-v1",
+    "file": "public/keeper-review/keeper-prime-rear-action-sequence-v1/catalogue.json",
+    "url": "/keeper-review/keeper-prime-rear-action-sequence-v1/catalogue.json",
+    "sha256": "78394188085650d935418a9eddc8f84662ab621328c1dbeb6bad88b77d27eabb",
+    "approvalRecord": "docs/review/keeper-prime-rear-action-sequence-v1-approval-2026-10-20.json",
+    "approvalSha256": "035d1f008039ac2bb2fcbfc38d6da9ce6aad3f6ad049c5c3587ed2ff63594570"
+  },
+  "sourceVocabulary": {
+    "set": "activity-cloud-composer-v6",
+    "file": "public/keeper-review/activity-cloud-composer-v6/catalogue.json",
+    "url": "/keeper-review/activity-cloud-composer-v6/catalogue.json",
+    "sha256": "eb5060a665694137ce63a45dcb8f914d1086570393399b1537d37ade660fe2aa"
+  },
+  "generatedSource": {
+    "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/source/activity-comic-symbols-source-sheet.png",
+    "sha256": "517309ab1ef8ba71849217d6da71fe1cd1c8b2b3a2ef94f86db7ee28fcc43b80",
+    "pixels": [
+      1536,
+      1024
+    ],
+    "layout": [
+      3,
+      2
+    ],
+    "cellPixels": [
+      512,
+      512
+    ],
+    "visibleAlphaThreshold": 8,
+    "outerAndSharedEdgeAlphaPixels": 0,
+    "cells": [
+      {
+        "owner": "symbol-heat-curls",
+        "cell": [
+          0,
+          0
+        ],
+        "bounds": [
+          156,
+          103,
+          367,
+          418
+        ],
+        "gutterPx": 94,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      {
+        "owner": "symbol-sizzle-spark",
+        "cell": [
+          1,
+          0
+        ],
+        "bounds": [
+          130,
+          126,
+          384,
+          392
+        ],
+        "gutterPx": 120,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      {
+        "owner": "symbol-motion-ticks",
+        "cell": [
+          2,
+          0
+        ],
+        "bounds": [
+          125,
+          124,
+          372,
+          408
+        ],
+        "gutterPx": 104,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      {
+        "owner": "symbol-water-droplets",
+        "cell": [
+          0,
+          1
+        ],
+        "bounds": [
+          150,
+          100,
+          402,
+          383
+        ],
+        "gutterPx": 100,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      {
+        "owner": "symbol-soap-bubbles",
+        "cell": [
+          1,
+          1
+        ],
+        "bounds": [
+          110,
+          107,
+          403,
+          378
+        ],
+        "gutterPx": 107,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      },
+      {
+        "owner": "symbol-impact-star",
+        "cell": [
+          2,
+          1
+        ],
+        "bounds": [
+          103,
+          85,
+          400,
+          392
+        ],
+        "gutterPx": 85,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    ]
+  },
+  "newSymbols": {
+    "symbol-heat-curls": {
+      "id": "symbol-heat-curls",
+      "family": "heat",
+      "owner": "symbol-heat-curls",
+      "sourceSet": "keeper-prime-rear-action-choreography-v1",
+      "sourceFile": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/source/activity-comic-symbols-source-sheet.png",
+      "sourceSha256": "517309ab1ef8ba71849217d6da71fe1cd1c8b2b3a2ef94f86db7ee28fcc43b80",
+      "sourceCell": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        156,
+        103,
+        367,
+        418
+      ],
+      "sourceGutterPx": 94,
+      "normalisedVisibleSize": [
+        145,
+        216
+      ],
+      "normalisedOffset": [
+        55,
+        20
+      ],
+      "cellPixels": [
+        256,
+        256
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ambiguousPixels": 0,
+      "unownedVisiblePixels": 0,
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/drafts/symbols/symbol-heat-curls.png",
+      "sha256": "053ec220575142bbfd5d7d822254bf661c0881c481d33224d2c94f5006611f48",
+      "src": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-heat-curls-053ec220575142bb.png"
+    },
+    "symbol-sizzle-spark": {
+      "id": "symbol-sizzle-spark",
+      "family": "impact",
+      "owner": "symbol-sizzle-spark",
+      "sourceSet": "keeper-prime-rear-action-choreography-v1",
+      "sourceFile": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/source/activity-comic-symbols-source-sheet.png",
+      "sourceSha256": "517309ab1ef8ba71849217d6da71fe1cd1c8b2b3a2ef94f86db7ee28fcc43b80",
+      "sourceCell": [
+        1,
+        0
+      ],
+      "sourceBounds": [
+        130,
+        126,
+        384,
+        392
+      ],
+      "sourceGutterPx": 120,
+      "normalisedVisibleSize": [
+        206,
+        216
+      ],
+      "normalisedOffset": [
+        25,
+        20
+      ],
+      "cellPixels": [
+        256,
+        256
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ambiguousPixels": 0,
+      "unownedVisiblePixels": 0,
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/drafts/symbols/symbol-sizzle-spark.png",
+      "sha256": "7fd4e839c3505e0be040ac56301be8bd7fc1ce99f77e720a1aca581d0dad76db",
+      "src": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-sizzle-spark-7fd4e839c3505e0b.png"
+    },
+    "symbol-motion-ticks": {
+      "id": "symbol-motion-ticks",
+      "family": "motion",
+      "owner": "symbol-motion-ticks",
+      "sourceSet": "keeper-prime-rear-action-choreography-v1",
+      "sourceFile": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/source/activity-comic-symbols-source-sheet.png",
+      "sourceSha256": "517309ab1ef8ba71849217d6da71fe1cd1c8b2b3a2ef94f86db7ee28fcc43b80",
+      "sourceCell": [
+        2,
+        0
+      ],
+      "sourceBounds": [
+        125,
+        124,
+        372,
+        408
+      ],
+      "sourceGutterPx": 104,
+      "normalisedVisibleSize": [
+        188,
+        216
+      ],
+      "normalisedOffset": [
+        34,
+        20
+      ],
+      "cellPixels": [
+        256,
+        256
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ambiguousPixels": 0,
+      "unownedVisiblePixels": 0,
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/drafts/symbols/symbol-motion-ticks.png",
+      "sha256": "a91599e13c96e96cff6a247815bb30840d1376493f5c123ab73c3b20a7d4630d",
+      "src": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-motion-ticks-a91599e13c96e96c.png"
+    },
+    "symbol-water-droplets": {
+      "id": "symbol-water-droplets",
+      "family": "water",
+      "owner": "symbol-water-droplets",
+      "sourceSet": "keeper-prime-rear-action-choreography-v1",
+      "sourceFile": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/source/activity-comic-symbols-source-sheet.png",
+      "sourceSha256": "517309ab1ef8ba71849217d6da71fe1cd1c8b2b3a2ef94f86db7ee28fcc43b80",
+      "sourceCell": [
+        0,
+        1
+      ],
+      "sourceBounds": [
+        150,
+        100,
+        402,
+        383
+      ],
+      "sourceGutterPx": 100,
+      "normalisedVisibleSize": [
+        192,
+        216
+      ],
+      "normalisedOffset": [
+        32,
+        20
+      ],
+      "cellPixels": [
+        256,
+        256
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ambiguousPixels": 0,
+      "unownedVisiblePixels": 0,
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/drafts/symbols/symbol-water-droplets.png",
+      "sha256": "2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc",
+      "src": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-water-droplets-2bff1e869ae70d31.png"
+    },
+    "symbol-soap-bubbles": {
+      "id": "symbol-soap-bubbles",
+      "family": "water",
+      "owner": "symbol-soap-bubbles",
+      "sourceSet": "keeper-prime-rear-action-choreography-v1",
+      "sourceFile": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/source/activity-comic-symbols-source-sheet.png",
+      "sourceSha256": "517309ab1ef8ba71849217d6da71fe1cd1c8b2b3a2ef94f86db7ee28fcc43b80",
+      "sourceCell": [
+        1,
+        1
+      ],
+      "sourceBounds": [
+        110,
+        107,
+        403,
+        378
+      ],
+      "sourceGutterPx": 107,
+      "normalisedVisibleSize": [
+        216,
+        200
+      ],
+      "normalisedOffset": [
+        20,
+        28
+      ],
+      "cellPixels": [
+        256,
+        256
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ambiguousPixels": 0,
+      "unownedVisiblePixels": 0,
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/drafts/symbols/symbol-soap-bubbles.png",
+      "sha256": "a1946758a07299ee5625b99499c5b4f4ed2bbcb9453737be23f091b42685bef7",
+      "src": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-soap-bubbles-a1946758a07299ee.png"
+    },
+    "symbol-impact-star": {
+      "id": "symbol-impact-star",
+      "family": "impact",
+      "owner": "symbol-impact-star",
+      "sourceSet": "keeper-prime-rear-action-choreography-v1",
+      "sourceFile": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/source/activity-comic-symbols-source-sheet.png",
+      "sourceSha256": "517309ab1ef8ba71849217d6da71fe1cd1c8b2b3a2ef94f86db7ee28fcc43b80",
+      "sourceCell": [
+        2,
+        1
+      ],
+      "sourceBounds": [
+        103,
+        85,
+        400,
+        392
+      ],
+      "sourceGutterPx": 85,
+      "normalisedVisibleSize": [
+        209,
+        216
+      ],
+      "normalisedOffset": [
+        23,
+        20
+      ],
+      "cellPixels": [
+        256,
+        256
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ambiguousPixels": 0,
+      "unownedVisiblePixels": 0,
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/drafts/symbols/symbol-impact-star.png",
+      "sha256": "24bd4e85982758910682eee6e7963a3c197b4de8b20f5e4f07caf2ec1ef3635f",
+      "src": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-impact-star-24bd4e8598275891.png"
+    }
+  },
+  "publishedAssets": [
+    {
+      "source": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/drafts/symbols/symbol-heat-curls.png",
+      "sourceSha256": "053ec220575142bbfd5d7d822254bf661c0881c481d33224d2c94f5006611f48",
+      "public": "public/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-heat-curls-053ec220575142bb.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-heat-curls-053ec220575142bb.png",
+      "publicSha256": "053ec220575142bbfd5d7d822254bf661c0881c481d33224d2c94f5006611f48",
+      "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-heat-curls-053ec220575142bb.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/drafts/symbols/symbol-sizzle-spark.png",
+      "sourceSha256": "7fd4e839c3505e0be040ac56301be8bd7fc1ce99f77e720a1aca581d0dad76db",
+      "public": "public/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-sizzle-spark-7fd4e839c3505e0b.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-sizzle-spark-7fd4e839c3505e0b.png",
+      "publicSha256": "7fd4e839c3505e0be040ac56301be8bd7fc1ce99f77e720a1aca581d0dad76db",
+      "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-sizzle-spark-7fd4e839c3505e0b.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/drafts/symbols/symbol-motion-ticks.png",
+      "sourceSha256": "a91599e13c96e96cff6a247815bb30840d1376493f5c123ab73c3b20a7d4630d",
+      "public": "public/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-motion-ticks-a91599e13c96e96c.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-motion-ticks-a91599e13c96e96c.png",
+      "publicSha256": "a91599e13c96e96cff6a247815bb30840d1376493f5c123ab73c3b20a7d4630d",
+      "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-motion-ticks-a91599e13c96e96c.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/drafts/symbols/symbol-water-droplets.png",
+      "sourceSha256": "2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc",
+      "public": "public/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-water-droplets-2bff1e869ae70d31.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-water-droplets-2bff1e869ae70d31.png",
+      "publicSha256": "2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc",
+      "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-water-droplets-2bff1e869ae70d31.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/drafts/symbols/symbol-soap-bubbles.png",
+      "sourceSha256": "a1946758a07299ee5625b99499c5b4f4ed2bbcb9453737be23f091b42685bef7",
+      "public": "public/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-soap-bubbles-a1946758a07299ee.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-soap-bubbles-a1946758a07299ee.png",
+      "publicSha256": "a1946758a07299ee5625b99499c5b4f4ed2bbcb9453737be23f091b42685bef7",
+      "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-soap-bubbles-a1946758a07299ee.png"
+    },
+    {
+      "source": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/drafts/symbols/symbol-impact-star.png",
+      "sourceSha256": "24bd4e85982758910682eee6e7963a3c197b4de8b20f5e4f07caf2ec1ef3635f",
+      "public": "public/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-impact-star-24bd4e8598275891.png",
+      "publicAssemblyPath": "public/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-impact-star-24bd4e8598275891.png",
+      "publicSha256": "24bd4e85982758910682eee6e7963a3c197b4de8b20f5e4f07caf2ec1ef3635f",
+      "url": "/keeper-review/keeper-prime-rear-action-choreography-v1/assets/symbol-impact-star-24bd4e8598275891.png"
+    }
+  ],
+  "candidate": {
+    "publicShell": {
+      "file": "public/keeper-review/keeper-prime-rear-action-choreography-v1/index.html",
+      "sha256": "20e98169f80f78318da740f378e8aa9878664ce8b1c25133eea837f0a5d8d5be"
+    },
+    "stories": [
+      "garden-bbq",
+      "make-sandwich",
+      "washing-up",
+      "general-repair"
+    ],
+    "storyCount": 4,
+    "treatmentsPerStory": 2,
+    "motionModesPerTreatment": 2,
+    "timelineFrames": 42,
+    "timelineFps": 8,
+    "quietTailFrames": 5,
+    "sequenceFrames": 52
+  },
+  "files": {
+    "catalogue": {
+      "file": "public/keeper-review/keeper-prime-rear-action-choreography-v1/catalogue.json",
+      "sha256": "f32bc41c876c63577fc6cd42929722c64459c07628abd650f734d52901d92562"
+    },
+    "draftCatalogue": {
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/catalogue.json",
+      "sha256": "f32bc41c876c63577fc6cd42929722c64459c07628abd650f734d52901d92562"
+    },
+    "page": {
+      "file": "public/keeper-review/keeper-prime-rear-action-choreography-v1/index.html",
+      "sha256": "20e98169f80f78318da740f378e8aa9878664ce8b1c25133eea837f0a5d8d5be"
+    },
+    "template": {
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/page-template.html",
+      "sha256": "20e98169f80f78318da740f378e8aa9878664ce8b1c25133eea837f0a5d8d5be"
+    },
+    "builder": {
+      "file": "scripts/build_keeper_prime_rear_action_choreography_v1.py",
+      "sha256": "99b57a33f945c196506d63f91c4dc2692212812645ef1e11a5e3fc538539ecaa"
+    },
+    "verifier": {
+      "file": "scripts/verify_keeper_prime_rear_action_choreography_v1.mjs",
+      "sha256": "c5465a9cd943711564e879bdcb31bd9ed35b188525c2352eb491a9e28d46a667"
+    },
+    "promptLog": {
+      "file": "art/drafts/keeper-prime-rear-action-choreography-2026-10-20-v1/PROMPT_LOG.md",
+      "sha256": "dacb0c04ac26b286d9b77bae75e11c7e41e4c4c2404d2e944d8e3814aad496f4"
+    }
+  },
+  "checks": {
+    "sourceSheetOwnershipIsolated": true,
+    "sourceSheetGuttersAtLeast80": true,
+    "componentGuttersAtLeast20": true,
+    "preloadAndDecodeBeforePlayback": true,
+    "singleSynchronizedClock": true,
+    "allTimelinesDeclaredAsData": true,
+    "fullAndReducedMotion": true,
+    "pathOverlayDiagnostic": true,
+    "layersIndependent": true,
+    "primeSequenceByteExact": true,
+    "v6VocabularyByteExact": true,
+    "runtimeChanged": false,
+    "kitchenChanged": false,
+    "deployed": false
+  },
+  "rollback": "Delete only this versioned draft directory, its public review directory, archive set/object entries, builder, verifier, package command and documentation references. Prime Rear Action Sequence V1, Composer V6, runtime, Final and Kitchen remain untouched."
+}

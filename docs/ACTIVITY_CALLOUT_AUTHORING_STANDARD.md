@@ -362,6 +362,10 @@ depend on reconstructing an older version.
 - Composer V6 is the current catalogue and recipe-interface evidence: 149
   independently selectable components, four/five-element packages, dedicated
   pose withholding and separate SFX/notation controls.
+- Prime Rear Action Choreography V1 is the first richer-motion worked example:
+  four explicit stories, independently authored open/bubble treatments,
+  mobile object interactions, separate owned comic symbols, full/reduced
+  42-frame data, path diagnostics and the required settled five-frame tail.
 
 Run the stable contract check before extending the family:
 

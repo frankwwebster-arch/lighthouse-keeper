@@ -1,7 +1,7 @@
 # Activity callout dynamic choreography — next review gate
 
 **Recorded:** 20 October 2026
-**Status:** approved follow-up direction; no candidate has been built or approved
+**Status:** V1 candidate built on 20 October 2026 and awaiting visual review; no choreography candidate is approved
 
 ## Starting authority
 
@@ -93,3 +93,25 @@ whose asset resolution does not depend on the app server; do not rewrite V1.
 Do not promote runtime or Final assets, change Kitchen work, alter the approved
 sequence, or treat any new choreography as approved before explicit visual
 review.
+
+## Current candidate
+
+`/keeper-review/keeper-prime-rear-action-choreography-v1/index.html` now implements this
+gate as four immutable examples: Garden BBQ, sandwich assembly, washing up and
+general repair. Each has separately authored open and bubble staging rather
+than a shared path inside two containers. The 42-frame full-motion and
+reduced-motion timelines are explicit catalogue data, including every object
+and symbol's position, scale, rotation, opacity and z-order. Frames 38–42 are a
+settled quiet tail.
+
+Six new first-class symbols—heat curls, sizzle spark, motion ticks, water
+droplets, soap bubbles and an impact star—come from one ownership-safe 3 × 2
+source sheet. Each is separately hash-pinned and normalised to a 256 × 256
+cell with at least 20 pixels of transparent gutter. The review can hide the
+body, hero/result, supporting objects, symbols, treatment marks and SFX
+declaration independently, switch speed/loop/reduced motion, and expose both a
+path overlay and exact frame-state table.
+
+The candidate inherits Prime Rear Action Sequence V1 and Composer V6
+byte-for-byte. It is review-only, unapproved, unpromoted and undeployed. See
+`docs/KEEPER_PRIME_REAR_ACTION_CHOREOGRAPHY_V1_2026-10-20.md`.
