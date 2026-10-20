@@ -182,7 +182,7 @@
     "bbq-grill": {
       "kind": "object",
       "family": "bbq",
-      "label": "Barbecue grill",
+      "label": "Barbecue grill (lit)",
       "current": 1,
       "versions": [
         {
@@ -202,6 +202,33 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v3",
           "by": "codex"
+        }
+      ]
+    },
+    "bbq-grill-unlit": {
+      "kind": "object",
+      "family": "bbq",
+      "label": "Unlit barbecue",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-grill.png",
+          "sha256": "e6c7d5e51308d4fc974d6c3f090548cfba4d725d43564c9f7a6943bb55b407b7",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            43,
+            236,
+            212
+          ],
+          "added": "2026-10-20",
+          "source": "bbq-grill.png",
+          "by": "codex",
+          "note": "Cold, unlit grill (Codex BBQ food pack V1)"
         }
       ]
     },
@@ -231,11 +258,65 @@
         }
       ]
     },
+    "bbq-raw-burger-patties": {
+      "kind": "object",
+      "family": "bbq",
+      "label": "Raw burger patties",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-raw-burger-patties.png",
+          "sha256": "8d8107dbe7705c7cecbe90ad2ead6e83b82525ab4ca9b52b25e13d624c4e9521",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            54,
+            236,
+            202
+          ],
+          "added": "2026-10-20",
+          "source": "bbq-raw-burger-patties.png",
+          "by": "codex",
+          "note": "Codex BBQ food pack V1"
+        }
+      ]
+    },
+    "bbq-raw-steak": {
+      "kind": "object",
+      "family": "bbq",
+      "label": "Raw steak",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-raw-steak.png",
+          "sha256": "14870ae013f48d8ff84ccb1894c41cb8baec661273f0da2f15cf1032033aa670",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            57,
+            236,
+            199
+          ],
+          "added": "2026-10-20",
+          "source": "bbq-raw-steak.png",
+          "by": "codex",
+          "note": "Codex BBQ food pack V1"
+        }
+      ]
+    },
     "bbq-sausages": {
       "kind": "object",
       "family": "bbq",
-      "label": "Sausages",
-      "current": 1,
+      "label": "Sausages (raw)",
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -254,6 +335,106 @@
           "added": "2026-10-19",
           "source": "activity-cloud-composer-v1",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-sausages.png",
+          "sha256": "dfc97e3a148a3a77487a0e64b66e4dcb0b6a1406f69ac6f957a45ee93dc94fee",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            40,
+            236,
+            216
+          ],
+          "added": "2026-10-20",
+          "source": "bbq-sausages.png",
+          "by": "codex",
+          "note": "Raw linked sausages, no plate (Codex BBQ food pack V1; loose ingredients are unplated)"
+        }
+      ]
+    },
+    "condiment-ketchup-bottle": {
+      "kind": "object",
+      "family": "condiment",
+      "label": "Ketchup",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/condiment-ketchup-bottle.png",
+          "sha256": "153cdd6ac24624c2ffad96e7c990ece2c1a53972adb3f4e67b0f51b340ffcb49",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            82,
+            20,
+            174,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "condiment-ketchup-bottle.png",
+          "by": "codex",
+          "note": "Codex BBQ food pack V1"
+        }
+      ]
+    },
+    "condiment-mustard-bottle": {
+      "kind": "object",
+      "family": "condiment",
+      "label": "Mustard",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/condiment-mustard-bottle.png",
+          "sha256": "65c2f38eec206e0f07160f8d8e1ae6dd4ce2b415154a73ca845508f2fdbd44ee",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            82,
+            20,
+            173,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "condiment-mustard-bottle.png",
+          "by": "codex",
+          "note": "Codex BBQ food pack V1"
+        }
+      ]
+    },
+    "cooking-cheese-slicing": {
+      "kind": "object",
+      "family": "cooking",
+      "label": "Cheese being sliced",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/cooking-cheese-slicing.png",
+          "sha256": "ca7d2733d7f22b350602566aef641065c5321acd298b9e6611bf8c1e8fd5cb35",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            58,
+            236,
+            197
+          ],
+          "added": "2026-10-20",
+          "source": "cooking-cheese-slicing.png",
+          "by": "codex",
+          "note": "Codex BBQ food pack V1"
         }
       ]
     },
@@ -280,6 +461,33 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v3",
           "by": "codex"
+        }
+      ]
+    },
+    "meal-steak-fries": {
+      "kind": "object",
+      "family": "meal",
+      "label": "Steak and fries",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/meal-steak-fries.png",
+          "sha256": "8aebdcafac1a8c2749f9876fc51d2fc1c7bbe78005120b0bb8b5ca5b657c99ae",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            37,
+            236,
+            219
+          ],
+          "added": "2026-10-20",
+          "source": "meal-steak-fries.png",
+          "by": "codex",
+          "note": "Finished meal, plated (Codex BBQ food pack V1)"
         }
       ]
     },

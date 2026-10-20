@@ -10,13 +10,17 @@
   "afterStory": "loop",
   "pace": 1,
   "cast": {
-    "grill": {
-      "picture": "bbq-grill",
+    "cold": {
+      "picture": "bbq-grill-unlit",
       "role": "hero"
     },
     "charcoal": {
       "picture": "bbq-charcoal",
       "role": "support"
+    },
+    "grill": {
+      "picture": "bbq-grill",
+      "role": "hero"
     },
     "sausages": {
       "picture": "bbq-sausages",
@@ -24,18 +28,53 @@
     },
     "hotdogs": {
       "picture": "bbq-hotdogs",
+      "role": "result"
+    },
+    "patties": {
+      "picture": "bbq-raw-burger-patties",
       "role": "support"
+    },
+    "tomato": {
+      "picture": "sandwich-tomato",
+      "role": "support"
+    },
+    "lettuce": {
+      "picture": "sandwich-lettuce",
+      "role": "support"
+    },
+    "cheese": {
+      "picture": "cooking-cheese-slicing",
+      "role": "support"
+    },
+    "burgers": {
+      "picture": "bbq-burgers",
+      "role": "result"
+    },
+    "steak": {
+      "picture": "bbq-raw-steak",
+      "role": "support"
+    },
+    "meal": {
+      "picture": "meal-steak-fries",
+      "role": "result"
     }
   },
   "steps": [
     {
       "do": "arrive",
-      "who": "grill"
+      "who": "cold"
     },
     {
       "do": "drop-in",
       "who": "charcoal",
-      "onto": "grill"
+      "onto": "cold"
+    },
+    {
+      "do": "reveal",
+      "who": "grill",
+      "onto": "cold",
+      "replace": true,
+      "mark": "symbol-heat-curls"
     },
     {
       "do": "flip",
@@ -47,7 +86,51 @@
       "do": "flip",
       "who": "hotdogs",
       "onto": "grill",
-      "mark": "symbol-sizzle-spark",
+      "replace": true,
+      "mark": "symbol-sizzle-spark"
+    },
+    {
+      "do": "flip",
+      "who": "patties",
+      "onto": "grill",
+      "replace": true,
+      "mark": "symbol-sizzle-spark"
+    },
+    {
+      "do": "land-on",
+      "who": "tomato",
+      "onto": "patties",
+      "speed": "quick"
+    },
+    {
+      "do": "land-on",
+      "who": "lettuce",
+      "onto": "patties",
+      "speed": "quick"
+    },
+    {
+      "do": "land-on",
+      "who": "cheese",
+      "onto": "patties",
+      "speed": "quick"
+    },
+    {
+      "do": "reveal",
+      "who": "burgers",
+      "onto": "patties",
+      "replace": true
+    },
+    {
+      "do": "flip",
+      "who": "steak",
+      "onto": "grill",
+      "replace": true,
+      "mark": "symbol-sizzle-spark"
+    },
+    {
+      "do": "reveal",
+      "who": "meal",
+      "onto": "grill",
       "replace": true
     },
     {
@@ -58,8 +141,8 @@
     {
       "picture": "symbol-heat-curls",
       "on": "grill",
-      "fromStep": 2,
-      "toStep": 4
+      "fromStep": 4,
+      "toStep": 11
     }
   ],
   "sfx": [
@@ -71,19 +154,33 @@
       "kind": "asset-state"
     },
     {
-      "step": 3,
+      "step": 4,
       "at": "contact",
       "cue": "bbq-sizzle",
       "owner": "garden-bbq",
       "kind": "activity-beat"
     },
     {
-      "step": 4,
+      "step": 5,
       "at": "contact",
       "cue": "food-ready",
+      "owner": "garden-bbq",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 10,
+      "at": "contact",
+      "cue": "food-ready",
+      "owner": "garden-bbq",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 12,
+      "at": "contact",
+      "cue": "meal-served",
       "owner": "garden-bbq",
       "kind": "completion"
     }
   ],
-  "notes": "Draft by Claude, 20 Oct 2026, revised from Frank's notes the same evening. The charcoal flies into the grill, the sausages flip on, then the finished hot dogs fly in and the sausages sink into the grill as they land. No burgers here: they need an uncooked-burger picture first and become their own follow-on story."
+  "notes": "Draft by Claude, 20 Oct 2026, from Frank's running order: unlit BBQ, charcoal, lit BBQ, raw sausages, hot dogs, raw burgers, tomato, lettuce, cheese, finished burgers, raw steak, then the steak meal with fries. Raw food sinks into the grill when the next thing lands; finished dishes (hot dogs, burgers) are served off upward; the plated meal takes the grill's place at the end. New food pictures: Codex's BBQ food pack V1."
 }

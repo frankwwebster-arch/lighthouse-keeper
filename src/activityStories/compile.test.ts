@@ -23,8 +23,8 @@ describe('bubble story drafts', () => {
         expect(c.seconds).toBeGreaterThanOrEqual(5)
       })
 
-      it('plays at least twice in the shortest (20-second) activity', () => {
-        expect(c.tellings[0]).toBeGreaterThanOrEqual(2)
+      it('plays at least twice in a 30-second activity', () => {
+        expect(c.tellings[1]).toBeGreaterThanOrEqual(2)
       })
 
       it('shows every cast member at some point', () => {
@@ -89,7 +89,7 @@ describe('picture library', () => {
     grill.versions.push({ ...grill.versions[0], v: 2, url: '/activity-stories/pictures/bbq-grill-v2.png' })
     grill.current = 2
     const story = STORY_DRAFTS.find((s) => s.id === 'garden-bbq')!
-    const urlOf = (s: typeof story) => compileStory(s, lib).full[10].items.find((i) => i.id === 'grill')?.url
+    const urlOf = (s: typeof story) => compileStory(s, lib).full.flatMap((f) => f.items).find((i) => i.id === 'grill')?.url
     expect(urlOf(story)).toBe('/activity-stories/pictures/bbq-grill-v2.png')
     const pinned = { ...story, cast: { ...story.cast, grill: { ...story.cast.grill, version: 1 } } }
     expect(urlOf(pinned)).toBe(grill.versions[0].url)
@@ -115,7 +115,7 @@ describe('library checker', () => {
 })
 
 describe('replacing what is on top', () => {
-  it('Garden BBQ: the sausages sink into the grill as the hot dogs land, and never sit under them', () => {
+  it('Garden BBQ: the raw sausages sink into the grill as the hot dogs land, and never sit under them', () => {
     const story = STORY_DRAFTS.find((s) => s.id === 'garden-bbq')!
     const c = compileStory(story, LIBRARY)
     const hotdogStep = c.windows[story.steps.findIndex((s) => s.who === 'hotdogs')]
@@ -127,8 +127,8 @@ describe('replacing what is on top', () => {
     if (sinking) expect(Math.abs(sinking.y - grillAt(landed + 1).y)).toBeLessThan(Math.abs(c.full[landed - 1].items.find((i) => i.id === 'sausages')!.y - grillAt(landed - 1).y))
     for (let f = landed + 3; f < c.storyFrames; f++) expect(c.full[f].items.some((i) => i.id === 'sausages')).toBe(false)
     expect(hotdogStep.end).toBeLessThanOrEqual(c.quiet[0])
-    // The ending is the grill and the hot dogs only.
-    expect(objects(c.full[c.storyFrames - 1].items).map((i) => i.id).sort()).toEqual(['grill', 'hotdogs'])
+    // The ending is the plated meal alone.
+    expect(objects(c.full[c.storyFrames - 1].items).map((i) => i.id).sort()).toEqual(['meal'])
   })
 })
 

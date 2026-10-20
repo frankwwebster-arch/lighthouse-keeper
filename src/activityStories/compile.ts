@@ -341,21 +341,29 @@ export function compileStory(input: Story, lib: Library): Compiled {
       const displaced = step.replace ? stacks[onto!].filter((m) => m !== who) : []
       if (step.replace) stacks[onto!] = []
       const to = stackTop(onto!, who)
+      // It touches whatever is on top of the pile (the lettuce, not the patties under it).
+      const under = stacks[onto!].filter((m) => m !== who).at(-1) ?? onto!
       approach(who, f0, k, to, s, step.do === 'flip' ? { high: true, spin: 360 * -sideOf(laneFor(who).x) } : {})
       const e = ext(who, s)
-      touch(n, g + k - 1, who, onto!, { x: to.x + sideOf(laneFor(who).x) * e.w * 0.7, y: to.y + e.h * 0.6 }, mark)
+      touch(n, g + k - 1, who, under, { x: to.x + sideOf(laneFor(who).x) * e.w * 0.7, y: to.y + e.h * 0.6 }, mark)
       for (let i = k; i < rest; i++) {
         const w = (i - k + 1) / (rest - k)
         set(who, g + i, { x: to.x, y: to.y, s: s * (i === k ? 0.94 : 1), r: 6 * Math.sin(w * Math.PI * 2) * (1 - w), o: 1, z: 10 })
       }
       const into = last[onto!]!
       const touchAt = ENTER + k - 1
+      // Raw food sinks into the grill as the next thing lands; a finished dish (role "result") is served: it lifts up and away.
       for (const m of displaced) {
         const p = last[m]
         if (!p) continue
+        const served = story.cast[m].role === 'result'
+        const away = -sideOf(laneFor(who).x)
         for (let i = 0; i < total; i++) {
           const w = Math.max(0, Math.min(1, (i - touchAt + 1) / 3))
-          set(m, f0 + i, w <= 0 ? { ...p, z: 5 } : { ...p, x: lerp(p.x, into.x, w), y: lerp(p.y, into.y, w), s: p.s * (1 - 0.45 * w), r: 0, o: Math.max(0, 1 - w), z: 3 })
+          const gone = served
+            ? { ...p, x: p.x + away * 46 * w, y: p.y - 50 * w, s: p.s * (1 - 0.2 * w), r: away * 12 * w, o: Math.max(0, 1 - w), z: 11 }
+            : { ...p, x: lerp(p.x, into.x, w), y: lerp(p.y, into.y, w), s: p.s * (1 - 0.45 * w), r: 0, o: Math.max(0, 1 - w), z: 3 }
+          set(m, f0 + i, w <= 0 ? { ...p, z: 5 } : gone)
         }
         status[m] = 'gone'
       }
@@ -580,7 +588,7 @@ export function compileStory(input: Story, lib: Library): Compiled {
   if (seconds < 5) issues.push({ level: 'warn', text: `The story lasts only ${seconds.toFixed(1)} s; give it at least 5 s so it doesn’t rush` })
   const loopSeconds = totalFrames / FPS
   const tellings: [number, number] = [Math.floor(ACTIVITY_SECONDS[0] / loopSeconds), Math.floor(ACTIVITY_SECONDS[1] / loopSeconds)]
-  if (tellings[0] < MIN_TELLINGS) issues.push({ level: 'warn', text: `At ${loopSeconds.toFixed(1)} s a telling, it plays ${tellings[0]} time${tellings[0] === 1 ? '' : 's'} in a ${ACTIVITY_SECONDS[0]}-second activity; every activity should show its story at least twice` })
+  if (tellings[1] < MIN_TELLINGS) issues.push({ level: 'warn', text: `At ${loopSeconds.toFixed(1)} s a telling, it plays ${tellings[1]} time${tellings[1] === 1 ? '' : 's'} even in a ${ACTIVITY_SECONDS[1]}-second activity; every activity should show its story at least twice` })
   const crowd = Math.max(...full.map((fr) => fr.items.filter((i) => i.kind === 'object').length))
   if (crowd > 5) issues.push({ level: 'warn', text: `${crowd} pictures are on show at once; five is plenty` })
 

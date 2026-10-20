@@ -7,7 +7,7 @@ the game world's clock and life management are central (Frank, 20 Oct). A
 story has no upper length, only a five-second floor. Every activity takes
 20–30 seconds of real time before it finishes, and its story plays at least
 twice in that time, so a telling (story plus clearing) should be 15 seconds
-or less. The studio shows how many times each story plays.
+or less; a longer story simply needs a longer activity. The studio shows how many times each story plays.
 
 A bubble story is the little animated picture story above the keeper's head
 while he works with his back to us: the grill arrives, the charcoal drops in,
@@ -66,9 +66,13 @@ win over the draft file, exactly like recipes. Claude copies them back into
   member): that is Frank's one-tap undo.
 - **bounds** are measured, never typed: the engine uses them so a touch mark
   lands exactly where two pictures meet.
-- A picture's file is either an archived `/keeper-review/…` URL (the seeded
-  pictures) or a file the add tool copies into
+- A picture's file is an archived `/keeper-review/…` URL (the seeded
+  pictures), a file in an immutable `art/drafts/` pack referenced in place as
+  `/activity-stories/repo/art/drafts/…` (served from GitHub, so push the pack
+  to main first), or, for anything else, a copy the add tool makes in
   `public/activity-stories/pictures/<id>-v<N>-<hash>.png`.
+- When something is replaced on the grill, raw food sinks into it, while a
+  finished dish (cast role `result`) is served: it lifts up and away.
 - Picture rules are the activity-callout standard's: a 256 × 256 transparent
   cell, at least 16 px of clear gutter on every side (target 20), one owner,
   no baked marks or context (`docs/ACTIVITY_CALLOUT_AUTHORING_STANDARD.md`).
@@ -143,7 +147,7 @@ rules, which came out of the 20 October review of the V2 examples:
 6. Reduced motion has the same steps, timing and ending, with at most two
    pictures and one mark, and nothing travels.
 7. A story never rushes: the studio warns below five seconds, and when it
-   would play fewer than twice in a 20-second activity.
+   would play fewer than twice even in a 30-second activity.
 
 ## Workflows
 

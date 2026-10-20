@@ -15,8 +15,10 @@ export const ID = /^[a-z0-9][a-z0-9-]{0,59}$/
 
 const archive = () => JSON.parse(fs.readFileSync(path.join(ROOT, 'review-archive/index.json'), 'utf8')).legacyPaths
 
-/** The file on disk behind a library URL: an archived /keeper-review/ path or a /activity-stories/ file in public/. */
+/** The file on disk behind a library URL: a pack file under art/drafts/, an archived /keeper-review/ path or a /activity-stories/ file in public/. */
+export const REPO_PREFIX = '/activity-stories/repo/'
 export function fileFor(url) {
+  if (url.startsWith(REPO_PREFIX)) return path.join(ROOT, url.slice(REPO_PREFIX.length))
   if (url.startsWith('/activity-stories/')) return path.join(ROOT, 'public', url)
   const entry = archive()[url]
   return entry ? path.join(ROOT, entry.object) : null

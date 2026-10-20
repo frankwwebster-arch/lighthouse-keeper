@@ -94,12 +94,18 @@ remain yours as before.
    | Lit BBQ | `bbq-grill` | new version of the existing grill |
    | Raw sausages (no plate) | `bbq-sausages` | new version |
    | Hot dogs | `bbq-hotdogs` | existing (new version if redrawn) |
-   | Raw burgers | `bbq-burgers-raw` | new |
+   | Raw burgers | `bbq-raw-burger-patties` | new |
    | Tomato, lettuce | `sandwich-tomato`, `sandwich-lettuce` | existing (new versions if redrawn) |
-   | Cheese | `food-cheese` | new, `--family food` |
+   | Cheese | `cooking-cheese-slicing` | new |
    | Completed burgers | `bbq-burgers` | existing (new version if redrawn) |
-   | Raw steak | `bbq-steak-raw` | new |
-   | Finished steak meal with fries | `bbq-steak-meal` | new |
+   | Raw steak | `bbq-raw-steak` | new |
+   | Finished steak meal with fries | `meal-steak-fries` | new |
+
+   **Done 20 Oct:** Claude added all eight pictures from
+   `art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1` (plus ketchup and
+   mustard, not yet in a story) using the pack's own names, and built the
+   full story. Pictures in an `art/drafts/` pack are now referenced where
+   they are rather than copied into `public/`.
 
 All of these follow `docs/ACTIVITY_CALLOUT_AUTHORING_STANDARD.md`. Once added, Frank
 can put them into stories himself.

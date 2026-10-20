@@ -9,14 +9,16 @@
  *   node scripts/add_activity_story_picture.mjs <id> --current <version>   (roll the library back)
  *
  * The PNG must be a 256 × 256 transparent cell with at least 16 px of clear
- * gutter on every side (docs/ACTIVITY_CALLOUT_AUTHORING_STANDARD.md). It is
- * copied, never moved, to public/activity-stories/pictures/ under a name
- * that includes its hash, so a version can never be overwritten.
+ * gutter on every side (docs/ACTIVITY_CALLOUT_AUTHORING_STANDARD.md). A file
+ * inside an immutable art/drafts/ pack is referenced where it is (push the
+ * pack to main so the live site can fetch it). Any other file is copied to
+ * public/activity-stories/pictures/ under a name that includes its hash, so a
+ * version can never be overwritten.
  */
 
 import fs from 'node:fs'
 import path from 'node:path'
-import { CELL, ID, MIN_GUTTER, PUBLIC_DIR, measure, readLibrary, sha256, writeLibrary } from './activity_story_pictures.mjs'
+import { CELL, ID, MIN_GUTTER, PUBLIC_DIR, REPO_PREFIX, ROOT, measure, readLibrary, sha256, writeLibrary } from './activity_story_pictures.mjs'
 
 const args = process.argv.slice(2)
 const flag = (name) => {
@@ -54,11 +56,17 @@ if (!note) fail('say what changed with --note "…"')
 const hash = sha256(buf)
 if (existing?.versions.some((v) => v.sha256 === hash)) fail(`${id} already has this exact picture`)
 const v = existing ? Math.max(...existing.versions.map((x) => x.v)) + 1 : 1
-const name = `${id}-v${v}-${hash.slice(0, 12)}.png`
-fs.mkdirSync(PUBLIC_DIR, { recursive: true })
-fs.copyFileSync(file, path.join(PUBLIC_DIR, name))
+const inRepo = path.relative(ROOT, path.resolve(file))
+let url
+if (/^art\/drafts\//.test(inRepo) && !inRepo.includes('..')) url = REPO_PREFIX + inRepo
+else {
+  const name = `${id}-v${v}-${hash.slice(0, 12)}.png`
+  fs.mkdirSync(PUBLIC_DIR, { recursive: true })
+  fs.copyFileSync(file, path.join(PUBLIC_DIR, name))
+  url = `/activity-stories/pictures/${name}`
+}
 
-const version = { v, url: `/activity-stories/pictures/${name}`, sha256: hash, cell, bounds, added: new Date().toISOString().slice(0, 10), source: path.basename(file), by: flag('by') ?? 'codex', note }
+const version = { v, url, sha256: hash, cell, bounds, added: new Date().toISOString().slice(0, 10), source: path.basename(file), by: flag('by') ?? 'codex', note }
 if (existing) {
   existing.versions.push(version)
   existing.current = v
