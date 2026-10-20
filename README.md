@@ -644,6 +644,15 @@ rotated at scale `1:1`, four-pixel overflow ceiling, distinct snap origins,
 exact Prime anchors and dynamic joins. V37 awaits visual review and is not
 promoted or wired. See
 [`docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V37_2026-10-20.md`](docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V37_2026-10-20.md).
+The next reversible gate is
+`/keeper-review/kitchen-split-cabinet-workbench-v38/`. It separates the exact
+approved V11 two-bay run into Cabinet A and Cabinet B, each independently
+movable among all six 84-pixel origins. There is no group movement. Every
+cabinet side resolves from exact V11 pixels: rounded when exposed and internal
+when joined, followed by the existing pair-aware repair. Five movable objects
+leave one free bay; all 720 legal arrangements are verified. V38 changes no
+approved or runtime asset, and kettle/toaster/bowl work has not begun. See
+[`docs/KITCHEN_SPLIT_CABINET_WORKBENCH_V38_2026-10-20.md`](docs/KITCHEN_SPLIT_CABINET_WORKBENCH_V38_2026-10-20.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

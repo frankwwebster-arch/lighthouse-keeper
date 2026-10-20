@@ -320,6 +320,18 @@ midpoints and pair-aware healing. The ten-second drip/ripple remains separate
 and removable. All 24 layouts are verified. V37 awaits visual review and
 changes no Final or runtime asset.
 
+Kitchen Split Cabinet Workbench V38 at
+`/keeper-review/kitchen-split-cabinet-workbench-v38/` tests Cabinet V11 as two
+independently movable 84-pixel units; there is no pair-movement mode. Cabinet A
+and B preserve their distinct original bay centres. Each side is selected
+dynamically from exact V11 pixels: exposed sides receive the rounded outer end,
+while joined sides receive the internal edge before the existing V22/V32 repair
+layer is applied. Cabinet A, Cabinet B, fridge, sink and oven occupy five of six
+canonical bays, leaving one exact snap destination. All 720 non-overlapping
+arrangements and every pixel of all eight edge variants are deterministically
+verified. V38 is reversible, unapproved and unpromoted. V11, V37, Final and
+runtime are unchanged; kettle, toaster and mixing bowl remain unstarted.
+
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
 link with V6. The animation remains the exact V1/V2 six-pose motion inside its
