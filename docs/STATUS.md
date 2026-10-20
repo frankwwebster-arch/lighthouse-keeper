@@ -261,14 +261,25 @@ follows amber cavity pixels rather than a rectangle. Every Broken lighting
 combination is a complete precomposed 772 × 224 room, so no cabinet or wall
 pixel is cleared in the browser. The irregular independent 40-frame/4-fps/
 ten-second cavity and lamp schedules start automatically and remain removable
-and variable-speed. Its installed room perspective remains the active oven
-gate: the hob top is substantially deeper and more steeply converged than
+and variable-speed. Its installed room perspective was withheld: the hob top
+is substantially deeper and more steeply converged than
 Cabinet V11's shallow cutaway worktop, making the oven read from a higher
-viewpoint than its neighbours. The next version must preserve exact V27 state
-art and change only that upper silhouette/hob/side-return projection. V27 is
+viewpoint than its neighbours. V28 now supersedes that installed perspective
+while retaining V27 as the state-family authority. V27 is
 unpromoted and unwired; smoke remains a later reusable effect and no later
 kitchen asset has begun. The exact approval boundary is recorded in
 `docs/review/kitchen-oven-standalone-v27-state-family-approval-2026-10-20.json`.
+
+Kitchen Standalone Oven V28 at
+`/keeper-review/kitchen-oven-standalone-v28/` is the active installed oven
+review gate. It retains the V27 design, dimensions, room bounds, Prime anchor,
+complete-room compositing and irregular fault-light schedules. Its upper
+sixteen body rows now use the shallow Cabinet V11 flat-cutaway projection. In
+Broken, the blackened roast and dish have moved off the foreground door and
+onto the fixed interior shelf at the On-state height; dark and lit cavity
+variants retain exact registration. A deterministic verifier permits changes
+only in that declared Broken patch and the hob band. V28 is reversible,
+unapproved and unpromoted; no Final/runtime or later kitchen asset changed.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

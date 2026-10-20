@@ -1,0 +1,128 @@
+{
+  "schema": "lighthouse-keeper/reversible-review-batch@1",
+  "set": "kitchen-oven-standalone-v28",
+  "status": "reversible-unapproved-unpromoted",
+  "candidate": {
+    "catalogue": {
+      "file": "art/drafts/kitchen-oven-standalone-2026-10-20-v28/candidate-catalogue.json",
+      "sha256": "4ecece077653735aa9cf5c66566508ff78a2a6b7278a3e790c7f4ab88f6f876c"
+    },
+    "publicShell": {
+      "file": "public/keeper-review/kitchen-oven-standalone-v28/index.html",
+      "sha256": "a7df8448ceb68dee67fce2fed949584b957c5e44b2d7787e863073c092314ff4"
+    }
+  },
+  "sources": [
+    {
+      "file": "art/source/kitchen-oven-standalone-2026-10-20-v28/oven-three-state-shallow-hob-generated-source.png",
+      "sha256": "3ccbddf7ca6476ad3e2deff9cac2959dac8c007d2a47732e2ab77b91a00eee2f"
+    },
+    {
+      "file": "art/source/kitchen-oven-standalone-2026-10-20-v28/oven-three-state-shallow-hob-final-source.png",
+      "sha256": "34879c51df4e2399750dc8a1f5fd3c66e4359fb5d9f8c92b68345b4537de2c43"
+    },
+    {
+      "file": "art/source/kitchen-oven-standalone-2026-10-20-v28/oven-broken-fixed-shelf-generated-source.png",
+      "sha256": "aca3accd6947ad245cd543e8a814eb209826566284a617927595066c183449cd"
+    },
+    {
+      "file": "art/source/kitchen-oven-standalone-2026-10-20-v28/generation-provenance.json",
+      "sha256": "c987729cbc013d36f58d25d7634cd7a685f352f2814b628455ac78c8c6fadb28"
+    },
+    {
+      "file": "art/drafts/kitchen-oven-standalone-2026-10-19-v27/candidate-catalogue.json",
+      "sha256": "326300a614d9dccfa9ecd6d2d88032d7dd6919b73ec0672fb4b51e0aa82f7bf3"
+    },
+    {
+      "file": "docs/review/kitchen-oven-standalone-v27-state-family-approval-2026-10-20.json",
+      "sha256": "4d1f8ab5327006384291469dbedd02c41cb75924fda96367701eb8ae8b0ae1ad"
+    }
+  ],
+  "publishedAssets": [
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-off.png",
+      "sourceSha256": "c2f5687b598b42f15b42a2323e2d441d1b0b892ea2f75cbea590f4190e6c0b8e",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-off.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-on.png",
+      "sourceSha256": "72c05de613f386ed51f9e049a3a986f34279bf04614a05b7b193d0b243be7622",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-on.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-broken.png",
+      "sourceSha256": "e3a7dc5f4ecb73b5b532962bd1687d3a115484250c5bc01e7cdb717c5ddcc491",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-broken.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-broken-cavity-lit.png",
+      "sourceSha256": "dd23ca93f5cf0ccd0bdc994a7ebafab255f08d2f893381219b714025ca021aad",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-broken-cavity-lit.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-broken-warning-lit.png",
+      "sourceSha256": "97794fa5dd36fd965c26bd0491619e61b5b40c9247141d671179a86531f02bf7",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-broken-warning-lit.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-broken-both-lit.png",
+      "sourceSha256": "89601448fa762a26b0f4b564c848890ac0c72130c846f976fdb0bbed70b0027a",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-broken-both-lit.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-state-family-strip.png",
+      "sourceSha256": "8ecedfef6589147ff076c7efd3821f2a034df7af7e211c4b549d7af7b70020cd",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-state-family-strip.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-broken-cavity-flicker-f40.png",
+      "sourceSha256": "d02814918c87ade233c6815b5fbf0764850ef6b57d03362511d5d1f921b96fca",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-broken-cavity-flicker-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-broken-warning-flicker-f40.png",
+      "sourceSha256": "04dfff812678c610ea57f6b859f8b1b626af6f99f13859e0009decc5ac647fc7",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-broken-warning-flicker-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-off-native-room.png",
+      "sourceSha256": "b1f1e2dba88fbc126364bfc6006092ea9a460d382ab63c2907559a976b377bc7",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-off-native-room.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-on-native-room.png",
+      "sourceSha256": "793c4f41ee15f9ea3e8518896f654cb063da318eb9564c94fff3550daa09d99c",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-on-native-room.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-broken-native-room.png",
+      "sourceSha256": "b529dc73544653386c4f4c2cd19405e0f2350aa476dc1424a991802ab668e402",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-broken-native-room.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-broken-cavity-lit-native-room.png",
+      "sourceSha256": "9615cc1f3aab4ea1d5ffbadff4d23386f3a65d41af39a810bf1fa8738f4f34ca",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-broken-cavity-lit-native-room.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-broken-warning-lit-native-room.png",
+      "sourceSha256": "b40ca5fc3e3b4ce42b9bdd00ddb43959547abe9c3e4e3961bf32d8bdfeee9ef0",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-broken-warning-lit-native-room.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-broken-both-lit-native-room.png",
+      "sourceSha256": "e37b91ad1d6a40f9988b8549fca2c0ddc7d1ead57f5050b88f540acbb93d5db4",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-broken-both-lit-native-room.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-v27-perspective-focus.png",
+      "sourceSha256": "6a48e5ac3ee55cd64856292deb38249201d5861315aa2abc4358759de73a6164",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-v27-perspective-focus.png"
+    },
+    {
+      "source": "art/raw/kitchen-oven-standalone-2026-10-20-v28/oven-v28-perspective-focus.png",
+      "sourceSha256": "5213519ef59d51f31f9f10a36dfcdb9bd1f738d3ba55a96034681f92d43b8b31",
+      "publicAssemblyPath": "public/keeper-review/kitchen-oven-standalone-v28/assets/oven-v28-perspective-focus.png"
+    }
+  ]
+}
