@@ -632,21 +632,20 @@ either order), and the V25 cutout/rounded end whenever the sink has no exact
 left neighbour. Repairs remain separate compositor layers; no source sprite is
 amended. See
 [`docs/KITCHEN_MODULAR_JOIN_WORKBENCH_V33_2026-10-20.md`](docs/KITCHEN_MODULAR_JOIN_WORKBENCH_V33_2026-10-20.md).
-Frank approved and hash-pinned exact V33 on 20 October 2026. V34 is now
-rejected immutable provenance because its inherited fridge did not match the
-current rear-wall registration, outline language or universal join behaviour.
-The active successor is
-`/keeper-review/kitchen-modular-fridge-workbench-v35/`: it supplies a fresh
-coordinated white-door Standard/Broken family with an exact `84 × 74 px` body
-at y=134–208. Fridge, sink and oven snap to three distinct free origins, keep
-exact Prime midpoint anchors and may sit directly beside one another. Oven
-pairs retain V32's triangular resolver; every other fridge adjacency receives
-the exact V22 body backfill and countertop cap, so the slab remains continuous
-regardless of location. The lower-hinged Broken door stays within a four-pixel
-overflow allowance. Its contents and puddle are static; drip/ripple remains a
-separate removable variable-speed loop. V35 awaits visual review and is not
+Frank approved and hash-pinned exact V33 on 20 October 2026. V34 and V35 are
+rejected immutable fridge provenance: V34 used obsolete registration, a heavy
+outline and incomplete joins; V35 corrected those mechanics but reversed the
+Broken hinge side and changed the apparent door size. The active successor is
+`/keeper-review/kitchen-modular-fridge-workbench-v36/`. Its coordinated
+thin-navy-outline Standard/Broken family keeps the exact `84 × 74 px` body at
+y=134–208. Both states are left-hinged. Broken rigidly rotates the literal
+`68 × 52 px` Standard door at scale `1:1` around the surviving lower-left
+hinge, with no redrawing or resizing. Fridge, sink and oven retain distinct
+snap origins, exact Prime midpoint anchors and universal dynamic joins. The
+door/puddle remain within the four-pixel overflow allowance; drip/ripple stays
+separate, removable and variable-speed. V36 awaits visual review and is not
 promoted or wired. See
-[`docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V35_2026-10-20.md`](docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V35_2026-10-20.md).
+[`docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V36_2026-10-20.md`](docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V36_2026-10-20.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

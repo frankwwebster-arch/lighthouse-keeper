@@ -1,0 +1,53 @@
+{
+  "schema": "lighthouse-keeper/generated-raster-provenance@1",
+  "set": "kitchen-modular-fridge-workbench-v36",
+  "source": {
+    "file": "art/source/kitchen-modular-fridge-workbench-2026-10-20-v36/fridge-family-left-hinge-open-source.png",
+    "sha256": "5b8dd8903e527dceaa3e6c523a9a294d2bbc163221341ec0014a330dd56bfbed",
+    "mode": "coordinated imagegen thin-navy-outline family plus rigid unscaled exact Standard door rotation"
+  },
+  "doorContract": {
+    "sourceFile": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v36/fridge-standard.png",
+    "sourceCrop": [
+      38,
+      18,
+      106,
+      70
+    ],
+    "scale": [
+      1,
+      1
+    ],
+    "rotationDegrees": 12.4,
+    "survivingPivot": "lower-left",
+    "targetPivot": [
+      35,
+      63
+    ]
+  },
+  "nativeRegistration": {
+    "cellPixels": [
+      144,
+      90
+    ],
+    "bodyPixels": [
+      84,
+      74
+    ],
+    "bodyAt": [
+      30,
+      4
+    ],
+    "roomBodyBounds": [
+      0,
+      134,
+      84,
+      208
+    ]
+  },
+  "outputs": {
+    "fridge-standard.png": "7f0f4f60bb7ffeda20d7c756a9f6becf64ec634fdc601ea9423a4533a084697b",
+    "fridge-broken-hinge-failed.png": "65b4553ea967cba3622ce8fd4ac9dddc8a10045414cf0290c3379bf5ee578463",
+    "fx-fridge-drip-ripple-f40.png": "86cfaa33eb1e3f3351b481bf3057974af565963e35faca994274d486f60a8b19"
+  }
+}
