@@ -1,0 +1,53 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-20",
+  "reviewedBy": "Frank",
+  "candidate": "kitchen-oven-standalone-2026-10-19-v27",
+  "decision": "approved-state-family-with-installation-perspective-withheld",
+  "wording": "it looks excellent in all states, so ensure this is saved. however, I don't like the way it doesn't quite fit into the perspective model of the cabinets.",
+  "approvedHashes": {
+    "source": "5c9443b6ffb7a45f62b85366e23ee097898e9dd50b1b7fffbe68e346c960bd08",
+    "catalogue": "326300a614d9dccfa9ecd6d2d88032d7dd6919b73ec0672fb4b51e0aa82f7bf3",
+    "register": "4b0eaa20260f92fe3be5c980e144b50a63d7e8661c40aaf94fc3bdf499282660",
+    "page": "8adb6ba9c1ac18d2beb906ff111c385de8c4c4c5c82252e984831309dfbba1aa",
+    "archive": "181336af2403ceb1c3de8b2f0506b830e535f0a68b31b8a2cb090c1b42300066",
+    "outputs": {
+      "oven-off.png": "5d12ddc99f4f66b63b7283a4d2928a247393b585f475a0b644aabcca1fb6c24e",
+      "oven-on.png": "3aebe85e724e37994ae2eff0f07d0e18dc0136ed9950fc75c0137152f3d03bc5",
+      "oven-broken.png": "ab51b6fdd91544ade5da143e7504674fcf0c76e6498d6cebb250f823e6cb794d",
+      "oven-broken-cavity-flicker-f40.png": "773969ce448eec891be4eee1c27787e31e8a9a68994308ce53f62f0c0cfed7ff",
+      "oven-broken-warning-flicker-f40.png": "83afea497a9e376e312795122ba125b97def6aa205c91f9d99ea0cc1195e52d0"
+    }
+  },
+  "approvedContract": {
+    "offStateApproved": true,
+    "onStateApproved": true,
+    "brokenStateApproved": true,
+    "brokenLightingApproved": true,
+    "fixedExteriorRegistrationApproved": true,
+    "stateArtworkMustBePreserved": true,
+    "logicalBodyPixels": [84, 77],
+    "primeInteractionAnchor": [378, 218]
+  },
+  "withheldContract": {
+    "installedPerspectiveApproved": false,
+    "reason": "The oven hob plane has substantially deeper and steeper top-surface convergence than approved Cabinet V11, so the appliance reads from a higher viewing angle than its neighbours.",
+    "nextCorrection": "Preserve the approved V27 state family and correct only the installed upper silhouette, hob plane and side-return projection to the shallow Cabinet V11 cutaway language in a new reversible version."
+  },
+  "delivery": {
+    "contentCommit": "8abaf91f",
+    "objectCommit": "a523aef0",
+    "deployCommit": "19cc2a7f",
+    "reviewUrl": "https://lighthouse-keeper-mu.vercel.app/keeper-review/kitchen-oven-standalone-v27/"
+  },
+  "approvalBoundary": {
+    "stateFamilyReviewAuthorityApproved": true,
+    "installedRoomCompositeApproved": false,
+    "v27RemainsImmutable": true,
+    "finalChanged": false,
+    "runtimeChanged": false,
+    "promotionPerformed": false,
+    "promotionAllowedWithoutSeparateInstruction": false,
+    "laterKitchenAssetsMayBegin": false
+  }
+}

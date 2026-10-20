@@ -589,7 +589,7 @@ exact V11 replacement window from the sink layer before drawing the rounded
 end, so obsolete join pixels cannot show through the end crop's transparent
 contour. Joined placement retains the complete sink and V22 repair. See
 [`docs/KITCHEN_EXPOSED_END_CUTOUT_V25_2026-10-19.md`](docs/KITCHEN_EXPOSED_END_CUTOUT_V25_2026-10-19.md).
-The active `/keeper-review/kitchen-oven-standalone-v27/` page corrects the first
+The `/keeper-review/kitchen-oven-standalone-v27/` page corrects the first
 V26 appliance gate while retaining its complete Off, On and Broken cream/navy/
 copper oven design in the exact 84 × 77 px centre slot. Equal source windows
 and one shared exterior envelope prevent the right side, hob, fascia or plinth
@@ -599,7 +599,11 @@ Its internal and red warning lights use compact shape-following masks, start
 their independent ten-second fault schedules automatically, and swap complete
 native-room images so browser compositing never clears neighbouring cabinet
 pixels. Smoke remains separate and is not baked into the oven. V26 remains
-immutable superseded provenance. See
+immutable superseded provenance. Frank approved and hash-pinned all three V27
+states on 20 October 2026, but withheld approval of the installed perspective:
+the deep, steep hob plane reads from a higher viewpoint than the shallow
+Cabinet V11 worktop. The next oven draft must preserve the approved V27 state
+family and amend only that upper projection. See
 [`docs/KITCHEN_OVEN_STANDALONE_V27_2026-10-19.md`](docs/KITCHEN_OVEN_STANDALONE_V27_2026-10-19.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:

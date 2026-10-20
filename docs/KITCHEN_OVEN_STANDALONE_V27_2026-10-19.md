@@ -1,10 +1,14 @@
 # Kitchen Oven Standalone V27 — fixed registration and intact joins
 
 Date: 19 October 2026
-Status: reversible visual-review correction; unapproved, unpromoted and unwired
+Status: state family approved; installed perspective withheld; unpromoted and unwired
 Review route: `/keeper-review/kitchen-oven-standalone-v27/`
 
 V27 corrects three implementation defects reported in V26 without changing the approved Cabinet V11 asset, room background, Final art or runtime.
+
+## Review decision — 20 October 2026
+
+Frank approved the Off, On and Broken state artwork and instructed that it be saved. Exact V27 is therefore immutable oven state-family authority. Its installed perspective is not approved: the hob top has a much deeper and steeper trapezoidal projection than Cabinet V11's shallow cutaway worktop, so the appliance appears to be viewed from higher above than its neighbours. A successor must retain the approved state artwork, dimensions, registration, animation schedules and Prime anchor, and amend only the upper silhouette, hob plane and side-return projection in a new reversible version. The hash-pinned boundary is recorded in `docs/review/kitchen-oven-standalone-v27-state-family-approval-2026-10-20.json`.
 
 ## Corrections
 

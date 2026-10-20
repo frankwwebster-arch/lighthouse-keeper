@@ -248,8 +248,10 @@ width, the warning-light darkening mask produced a black fascia rectangle, and
 the browser cleared a guttered oven cell that overlaps neighbouring cabinet
 pixels before drawing Broken lighting variants.
 
-The active focused review gate is Kitchen Standalone Oven V27 at
-`/keeper-review/kitchen-oven-standalone-v27/`. It retains the coordinated
+Kitchen Standalone Oven V27 at
+`/keeper-review/kitchen-oven-standalone-v27/` is now the hash-pinned oven
+state-family authority. Frank approved all three states on 20 October 2026
+and instructed that they be saved. It retains the coordinated
 cream/ivory, navy and copper Off/On/Broken design and exact 84 × 77 px body at
 x=336–420/y=131–208, with Prime's interaction anchor fixed at x=378/y=218. Off
 and On now use equal source windows and share byte-identical exterior alpha;
@@ -259,9 +261,14 @@ follows amber cavity pixels rather than a rectangle. Every Broken lighting
 combination is a complete precomposed 772 × 224 room, so no cabinet or wall
 pixel is cleared in the browser. The irregular independent 40-frame/4-fps/
 ten-second cavity and lamp schedules start automatically and remain removable
-and variable-speed. V27 is reversible, awaiting visual review, unpromoted and
-unwired; smoke remains a later reusable effect and no later kitchen asset has
-begun.
+and variable-speed. Its installed room perspective remains the active oven
+gate: the hob top is substantially deeper and more steeply converged than
+Cabinet V11's shallow cutaway worktop, making the oven read from a higher
+viewpoint than its neighbours. The next version must preserve exact V27 state
+art and change only that upper silhouette/hob/side-return projection. V27 is
+unpromoted and unwired; smoke remains a later reusable effect and no later
+kitchen asset has begun. The exact approval boundary is recorded in
+`docs/review/kitchen-oven-standalone-v27-state-family-approval-2026-10-20.json`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
