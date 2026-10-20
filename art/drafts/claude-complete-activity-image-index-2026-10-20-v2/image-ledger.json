@@ -1,0 +1,774 @@
+{
+  "schema": "lighthouse-keeper/claude-complete-activity-image-index@2",
+  "created": "2026-10-20",
+  "status": "review-only-complete-chat-image-ledger",
+  "supersedes": "art/drafts/claude-complete-activity-image-index-2026-10-20-v1",
+  "precedence": "This ledger extends V1 with the BBQ tools and ephemera generation batch. It changes coverage metadata only and does not modify any immutable source pack.",
+  "counts": {
+    "generatedOutputsInThisChat": 23,
+    "generatedOutputsRepresentedInRepository": 23,
+    "previouslyMissingGeneratedOutputsRecovered": 2,
+    "reviewReadyIndependentAssets": 90,
+    "immutablePacks": 3,
+    "activityCloudPackFinalUsableAssets": 74,
+    "foodPackFinalUsableAssets": 8,
+    "toolsEphemeraPackFinalUsableAssets": 8
+  },
+  "packInventories": [
+    {
+      "root": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "manifest": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/asset-manifest.json",
+      "manifestSha256": "01316c61ba39e56339a1a5f8c356e9a9bacbc42e3498b6dd03e2b9a6c0a804b1",
+      "imageFiles": 78,
+      "finalUsableAssets": 74
+    },
+    {
+      "root": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1",
+      "manifest": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/asset-manifest.json",
+      "manifestSha256": "dac28636f43ee461c5d2923084509458fbf61aff9a048bce813452cddaa65adc",
+      "imageFiles": 18,
+      "finalUsableAssets": 8
+    },
+    {
+      "root": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1",
+      "manifest": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/asset-manifest.json",
+      "manifestSha256": "e58ce27b53205a6168bc02f43fad193e74073f7c7c0a85349f1beb2d7a0ee504",
+      "imageFiles": 17,
+      "finalUsableAssets": 8
+    }
+  ],
+  "generatedOutputs": [
+    {
+      "cacheFile": "exec-24c94cce-57c3-4512-855a-083202f173ce.png",
+      "originalSha256": "dfa370a9c49480100fa4058a77aedcdbc0b588321f97b0e05f22549b44655d8b",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "generic-symbol-sheet-early-attempt-a",
+      "status": "unselected-intermediate-retained-for-completeness",
+      "representations": [
+        {
+          "file": "art/drafts/claude-complete-activity-image-index-2026-10-20-v1/recovered-unselected-generations/generic-symbol-sheet-early-attempt-a.webp",
+          "kind": "recovered-unselected-generation",
+          "pixels": [
+            768,
+            512
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "4458270854f996ca1bafe305769016acdb9877f58e39ced68cc16e526732ce9e",
+          "bytes": 129726
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-ddd731e5-da08-4ec3-a975-9c7f935dcddf.png",
+      "originalSha256": "cc31f34ff3eeaf393d93e8d5ab78b35f1718f9c528e8d2739139c003739ce28c",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "generic-symbol-sheet-early-attempt-b",
+      "status": "unselected-intermediate-retained-for-completeness",
+      "representations": [
+        {
+          "file": "art/drafts/claude-complete-activity-image-index-2026-10-20-v1/recovered-unselected-generations/generic-symbol-sheet-early-attempt-b.webp",
+          "kind": "recovered-unselected-generation",
+          "pixels": [
+            768,
+            512
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "e5de4fdd3d17f878760aa10d99f87c9b8b37c274d8b173f9f50198819bacced2",
+          "bytes": 162036
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-bddbb842-9d97-4556-9b1a-ca9166d433f9.png",
+      "originalSha256": "517309ab1ef8ba71849217d6da71fe1cd1c8b2b3a2ef94f86db7ee28fcc43b80",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "original-six-comic-symbol-source-sheet",
+      "status": "accepted-source",
+      "representations": [
+        {
+          "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/source/original-six-symbol-source-sheet.png",
+          "kind": "accepted-source",
+          "pixels": [
+            1536,
+            1024
+          ],
+          "preservation": "exact-original-generated-bytes",
+          "sha256": "517309ab1ef8ba71849217d6da71fe1cd1c8b2b3a2ef94f86db7ee28fcc43b80",
+          "bytes": 1439779
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-2e8f1679-d09f-45e2-a7fc-d998a92d829e.png",
+      "originalSha256": "69dd1a140f881e497c965ed7d6f3000478ad832304f978ef07b7e42519982530",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "generic-action-symbol-sheet-insufficient-gutter",
+      "status": "rejected-retained",
+      "representations": [
+        {
+          "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/evidence/rejected/generic-action-symbols-sheet-attempt-1-insufficient-gutter.png",
+          "kind": "rejected-evidence",
+          "pixels": [
+            1536,
+            1024
+          ],
+          "preservation": "exact-original-generated-bytes",
+          "sha256": "69dd1a140f881e497c965ed7d6f3000478ad832304f978ef07b7e42519982530",
+          "bytes": 1695787
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-0f5f6982-dbd8-48ea-b3e5-83675a3e89b7.png",
+      "originalSha256": "327f29ac9c67fdf237892ac5f4abe52e4508e7107140b7fb1b265cb6b7a71ebb",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "generic-question-mark-source",
+      "status": "accepted-source",
+      "representations": [
+        {
+          "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/source/generic-question-mark-source.png",
+          "kind": "accepted-source",
+          "pixels": [
+            1254,
+            1254
+          ],
+          "preservation": "exact-original-generated-bytes",
+          "sha256": "327f29ac9c67fdf237892ac5f4abe52e4508e7107140b7fb1b265cb6b7a71ebb",
+          "bytes": 623906
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-13724c58-644a-418c-80af-69f4756508b9.png",
+      "originalSha256": "e4afb957aeb8d1015a43fe2664135ef8830270b6ef70ab1941947aca552e390b",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "generic-action-symbol-sheet-scale-corrected",
+      "status": "accepted-source",
+      "representations": [
+        {
+          "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/source/generic-action-symbols-sheet-source.png",
+          "kind": "accepted-source",
+          "pixels": [
+            1536,
+            1024
+          ],
+          "preservation": "exact-original-generated-bytes",
+          "sha256": "e4afb957aeb8d1015a43fe2664135ef8830270b6ef70ab1941947aca552e390b",
+          "bytes": 1403206
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-2fd5c1b7-9726-4c9c-8f25-0d21c8b5e47d.png",
+      "originalSha256": "4ac3e4269955c51d31fee0d18b47a1512116995ea041eba0563c413c817214ed",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "raw-beef-burger-patties",
+      "status": "accepted-final",
+      "componentId": "bbq-raw-burger-patties",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/bbq-raw-burger-patties-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "3fde56e80476a659387055d1d7e4ebd8111f61821945bd4ab318a39dc08123fd",
+          "bytes": 115562
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-raw-burger-patties.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "8d8107dbe7705c7cecbe90ad2ead6e83b82525ab4ca9b52b25e13d624c4e9521",
+          "bytes": 67963
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-3ea7dc96-dd7e-4164-93f3-8c62c033a63c.png",
+      "originalSha256": "47e002e96d2d50d91058431af26cd2c5295c53569040f2add601c2c9693ab024",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "plateless-cooked-sausages",
+      "status": "rejected-user-correction",
+      "componentId": "rejected-plateless-cooked-sausages",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/rejected/plateless-cooked-sausages-attempt-1.webp",
+          "kind": "rejected-evidence",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "889afb8a99a86d0497362061d5407a1932abd5095c61e46723cea3a2dbdd126f",
+          "bytes": 108992
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-ca44a99e-3465-46d2-af59-2adc35818f28.png",
+      "originalSha256": "8cca15c23f1391dee66db124cc35acff16783564d0b1ee45bf298ac4ce3e6a66",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "raw-linked-sausages",
+      "status": "accepted-final",
+      "componentId": "bbq-sausages",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/bbq-raw-linked-sausages-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "73290cb764392dee986c0db9c10eb286b2a3c35a1e3e42c902fb4355e43ccb32",
+          "bytes": 52714
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-sausages.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "dfc97e3a148a3a77487a0e64b66e4dcb0b6a1406f69ac6f957a45ee93dc94fee",
+          "bytes": 37612
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-351a84f3-cd0d-45c2-98ab-5c62ad031bb2.png",
+      "originalSha256": "b717c2ac1166905aec8f7c919bfbfb418a2b3832bafa608aa71c6249aaea1ed6",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "cold-unlit-bbq",
+      "status": "accepted-final",
+      "componentId": "bbq-grill",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/bbq-unlit-grill-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "f349f83ad2fcf78e6a12a7ba031c415cdba58065e8d97448b2d7ee786ed27a80",
+          "bytes": 73154
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-grill.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "e6c7d5e51308d4fc974d6c3f090548cfba4d725d43564c9f7a6943bb55b407b7",
+          "bytes": 61768
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-9cb5c27c-e940-481c-9e0b-b7419e2ee4d1.png",
+      "originalSha256": "bda822b834cd56993087ce787354c48ff6b0b055d79c56f8cdee23d6221150f4",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "cheese-being-sliced",
+      "status": "accepted-final",
+      "componentId": "cooking-cheese-slicing",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/cooking-cheese-slicing-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "9247f1977c4df3b36820e88c25ff2b12ab67d60ed9882ade6bf04c10bcf34da1",
+          "bytes": 58766
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/cooking-cheese-slicing.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "ca7d2733d7f22b350602566aef641065c5321acd298b9e6611bf8c1e8fd5cb35",
+          "bytes": 43708
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-de5a3a61-0649-4f48-9449-032c9ccb764a.png",
+      "originalSha256": "b183c397e9cc6ccf80abdcabf8b79b1e6df19f2ab8e72616d1ec249bae3d1cfb",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "raw-steak",
+      "status": "accepted-final",
+      "componentId": "bbq-raw-steak",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/bbq-raw-steak-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "e90754635a6528a83d263125dfb3d3904a94ac0c260cb71e7ee6b5281ce86236",
+          "bytes": 77550
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-raw-steak.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "14870ae013f48d8ff84ccb1894c41cb8baec661273f0da2f15cf1032033aa670",
+          "bytes": 58729
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-8a8dc0a0-29ca-4bc4-9461-23ff1b9e7428.png",
+      "originalSha256": "7c1604bf1be6fc9540a096c00e8053181b278ef245c8ebc83e7abf51ef912005",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "plated-steak-and-fries",
+      "status": "accepted-final",
+      "componentId": "meal-steak-fries",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/meal-steak-fries-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "45ec17acc1d2a8e6303b555d2654d888e6631a4ce7e469f2cd557c16df0dc1ae",
+          "bytes": 154264
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/meal-steak-fries.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "8aebdcafac1a8c2749f9876fc51d2fc1c7bbe78005120b0bb8b5ca5b657c99ae",
+          "bytes": 88656
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-c0ec7f68-b9d1-4c76-bcdc-c1ed8ac42831.png",
+      "originalSha256": "9bd83b220ab6b226b9c049e40b621d7ca849e9d810472e9789e809e692ba9877",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "ketchup-bottle",
+      "status": "accepted-final",
+      "componentId": "condiment-ketchup-bottle",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/condiment-ketchup-bottle-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "a850a8cdabfcc910c3f5ecbb23507494fd9b3891cf344144b32e4ff1b2d06603",
+          "bytes": 32328
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/condiment-ketchup-bottle.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "153cdd6ac24624c2ffad96e7c990ece2c1a53972adb3f4e67b0f51b340ffcb49",
+          "bytes": 28702
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-cacf44ac-3f8d-445a-a446-204264f2b166.png",
+      "originalSha256": "65333b6307e926acf0fb1cd24fe57155ac9621ba351c597e29482aebc40c6bf9",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "mustard-bottle",
+      "status": "accepted-final",
+      "componentId": "condiment-mustard-bottle",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/condiment-mustard-bottle-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "49a21b9f24e5c38c3ff0e617327fac24fcb1c0b9f0f28f52f79d97afbd1d6497",
+          "bytes": 33304
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/condiment-mustard-bottle.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "65c2f38eec206e0f07160f8d8e1ae6dd4ce2b415154a73ca845508f2fdbd44ee",
+          "bytes": 29835
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-faf43851-9ea6-49a7-a07e-f23aa6741be3.png",
+      "originalSha256": "35f85ebf1bda8174e4a55cc381bf12241c15e48293d39e7611f015c45c48cf8f",
+      "originalPixels": [
+        1661,
+        947
+      ],
+      "role": "bbq-tongs",
+      "status": "accepted-final",
+      "componentId": "bbq-tongs",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-tongs-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "c588a677b4815dd22d3b155b9056c96e9d68c813c3fb90edfa81ab7c6833cace",
+          "bytes": 37486
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-tongs.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "885d696d6636f25d51c93c9d3f35fb5a9a09533b5e9604b12339740e1b45c8c2",
+          "bytes": 25037
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-a71245cb-cfba-4e78-8a26-6f6a74665465.png",
+      "originalSha256": "d7b7fa11a4ff784b94b54beea36055c3d08d7953e41579628fa281adfde41f9f",
+      "originalPixels": [
+        1661,
+        947
+      ],
+      "role": "bbq-slotted-turner",
+      "status": "accepted-final",
+      "componentId": "bbq-slotted-turner",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-slotted-turner-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "7d43fa1bdc4541774fc4438c8194686b7e2ceb4979c4647b0d7d5fa0824e47c9",
+          "bytes": 40550
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-slotted-turner.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "9115fb7c3602151d786db177f2ea6aa5baaac1529a24cd71a05ed95f83985065",
+          "bytes": 26199
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-163e5f8f-0ff5-4bb1-b3f3-af56f2a2d2da.png",
+      "originalSha256": "9f67c615536249ee76a2dd54591a351bbd3cf06a4d648d087127ed394511dedc",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "bbq-basting-brush",
+      "status": "accepted-final",
+      "componentId": "bbq-basting-brush",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-basting-brush-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "1d149754770a80e655cc0b510a2269953ec713e4948fcfe29a5dcfccee0162fa",
+          "bytes": 46468
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-basting-brush.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "a6bcd75aa5b4c50216622c04a5018c23998b18097eb20a77eddd4e79c613a16d",
+          "bytes": 27600
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-94522f15-d52b-474a-8e05-4084d2cff7c0.png",
+      "originalSha256": "f8f852169c4644abfa054e0f700a4e714cc47c3c17b87981f96ccbfcdd557398",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "bbq-grill-fork",
+      "status": "accepted-final",
+      "componentId": "bbq-grill-fork",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-grill-fork-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "b85a4e023519049fa49eaa5771d131ca3590f43b1e900e87799da61d27c4651d",
+          "bytes": 29084
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-grill-fork.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "6a2451de5e126ef784cae7a0d6c001b6640fb6fc582938b90de6cbb7424cb36d",
+          "bytes": 19704
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-8b92ed47-66c4-4273-afb3-80ac31869d11.png",
+      "originalSha256": "b9aab84a9767a638d17d14798112a9623db4f41cba1fd3208422659067943136",
+      "originalPixels": [
+        1405,
+        1119
+      ],
+      "role": "bbq-heatproof-mitt",
+      "status": "accepted-final",
+      "componentId": "bbq-heatproof-mitt",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-heatproof-mitt-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "e1f2d57a353da698e3e0cfc508ba5f6062c0090b3a048c90c11a919590979c51",
+          "bytes": 125554
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-heatproof-mitt.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "85b7b5c527287ecb238b57184bdbd3327649cf338b7a40504d0113381d9f4367",
+          "bytes": 76839
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-7122d417-2e00-4186-94ff-df9b8c826d7a.png",
+      "originalSha256": "dca0e3498599c29f703fefe77e0a75a15b20e8f7a293a33ea7c02297b4feca55",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "bbq-charcoal-chimney",
+      "status": "accepted-final",
+      "componentId": "bbq-charcoal-chimney",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-charcoal-chimney-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "1a277bb2922b10158d0608a8c05fe4e223697fa866535f7c4c1ff79d8836bacb",
+          "bytes": 129548
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-charcoal-chimney.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "9f172c34fd0cfeeaeebcc924522ae7ee552c053229e61ffae08ae2c0e91e46c7",
+          "bytes": 83115
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-d72c1e32-3ba8-44bc-8aeb-a26469036b1d.png",
+      "originalSha256": "3d30686cb06793da2cdb8c6e0773b2a4c9d799e35d9a1e80f11eef9320ebbac4",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "bbq-skewer-bundle",
+      "status": "accepted-final",
+      "componentId": "bbq-skewer-bundle",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-skewer-bundle-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "68b08c56bcdfb9b4c63f330a8faf8a5aa1090b3e935b67bfc313f871a9e851c6",
+          "bytes": 38578
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-skewer-bundle.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "b07b6828cc76a3b54b8aa8a8671f48adb91ec751b48a52068c69bdc710f0cc26",
+          "bytes": 25502
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-14e6b927-a7a1-4fd1-83b4-349073196ed7.png",
+      "originalSha256": "43447a18939438f904a4da0c894733c1f424c549a3eda0a0dd465b6fe3782ca5",
+      "originalPixels": [
+        1292,
+        1218
+      ],
+      "role": "bbq-charcoal-bag",
+      "status": "accepted-final",
+      "componentId": "bbq-charcoal-bag",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-charcoal-bag-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "9ea3ae0778ab77d64e9514e5ca39652865f30016f8146650ea25b26b5d5ede13",
+          "bytes": 94506
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-charcoal-bag.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "f45c271e7d9d14cbab2a3dde2f4d15784a875a659515c163ef9fe3f72fdee254",
+          "bytes": 61766
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "allGeneratedOutputsRepresented": true,
+    "immutablePacksUnchanged": true,
+    "recoveredAttemptsAreNotCandidates": true,
+    "allAssetsIndependent": true,
+    "runtimeChanged": false,
+    "kitchenChanged": false,
+    "primeChanged": false,
+    "deployed": false
+  }
+}

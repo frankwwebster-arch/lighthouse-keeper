@@ -1,0 +1,339 @@
+{
+  "schema": "lighthouse-keeper/claude-bbq-tools-ephemera-pack@1",
+  "set": "claude-bbq-tools-ephemera-pack-v1",
+  "status": "review-only",
+  "created": "2026-10-20",
+  "styleReference": {
+    "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/asset-manifest.json",
+    "sha256": "dac28636f43ee461c5d2923084509458fbf61aff9a048bce813452cddaa65adc",
+    "role": "style-only; no prior asset bytes changed"
+  },
+  "sourceProcessing": {
+    "reviewSourceGeometry": [
+      384,
+      384
+    ],
+    "method": "visible-alpha isolation, proportional fit within 352 px, centered on a 384 px transparent canvas, lossless WebP; original generated PNG SHA-256 and geometry retained per component"
+  },
+  "components": {
+    "bbq-tongs": {
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-tongs.png",
+      "sha256": "885d696d6636f25d51c93c9d3f35fb5a9a09533b5e9604b12339740e1b45c8c2",
+      "family": "tool",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-tools-ephemera-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-tongs-source.webp",
+      "sourceSha256": "c588a677b4815dd22d3b155b9056c96e9d68c813c3fb90edfa81ab7c6833cace",
+      "originalGeneratedPngSha256": "35f85ebf1bda8174e4a55cc381bf12241c15e48293d39e7611f015c45c48cf8f",
+      "originalGeneratedGeometry": [
+        1661,
+        947
+      ],
+      "sourceVisibleBounds": [
+        16,
+        112,
+        368,
+        272
+      ],
+      "normalisedVisibleSize": [
+        216,
+        98
+      ],
+      "normalisedOffset": [
+        20,
+        79
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-slotted-turner": {
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-slotted-turner.png",
+      "sha256": "9115fb7c3602151d786db177f2ea6aa5baaac1529a24cd71a05ed95f83985065",
+      "family": "tool",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-tools-ephemera-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-slotted-turner-source.webp",
+      "sourceSha256": "7d43fa1bdc4541774fc4438c8194686b7e2ceb4979c4647b0d7d5fa0824e47c9",
+      "originalGeneratedPngSha256": "d7b7fa11a4ff784b94b54beea36055c3d08d7953e41579628fa281adfde41f9f",
+      "originalGeneratedGeometry": [
+        1661,
+        947
+      ],
+      "sourceVisibleBounds": [
+        16,
+        101,
+        368,
+        282
+      ],
+      "normalisedVisibleSize": [
+        216,
+        111
+      ],
+      "normalisedOffset": [
+        20,
+        72
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-basting-brush": {
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-basting-brush.png",
+      "sha256": "a6bcd75aa5b4c50216622c04a5018c23998b18097eb20a77eddd4e79c613a16d",
+      "family": "tool",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-tools-ephemera-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-basting-brush-source.webp",
+      "sourceSha256": "1d149754770a80e655cc0b510a2269953ec713e4948fcfe29a5dcfccee0162fa",
+      "originalGeneratedPngSha256": "9f67c615536249ee76a2dd54591a351bbd3cf06a4d648d087127ed394511dedc",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        97,
+        368,
+        286
+      ],
+      "normalisedVisibleSize": [
+        216,
+        116
+      ],
+      "normalisedOffset": [
+        20,
+        70
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-grill-fork": {
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-grill-fork.png",
+      "sha256": "6a2451de5e126ef784cae7a0d6c001b6640fb6fc582938b90de6cbb7424cb36d",
+      "family": "tool",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-tools-ephemera-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-grill-fork-source.webp",
+      "sourceSha256": "b85a4e023519049fa49eaa5771d131ca3590f43b1e900e87799da61d27c4651d",
+      "originalGeneratedPngSha256": "f8f852169c4644abfa054e0f700a4e714cc47c3c17b87981f96ccbfcdd557398",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        79,
+        368,
+        304
+      ],
+      "normalisedVisibleSize": [
+        216,
+        138
+      ],
+      "normalisedOffset": [
+        20,
+        59
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-heatproof-mitt": {
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-heatproof-mitt.png",
+      "sha256": "85b7b5c527287ecb238b57184bdbd3327649cf338b7a40504d0113381d9f4367",
+      "family": "ephemera",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-tools-ephemera-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-heatproof-mitt-source.webp",
+      "sourceSha256": "e1f2d57a353da698e3e0cfc508ba5f6062c0090b3a048c90c11a919590979c51",
+      "originalGeneratedPngSha256": "b9aab84a9767a638d17d14798112a9623db4f41cba1fd3208422659067943136",
+      "originalGeneratedGeometry": [
+        1405,
+        1119
+      ],
+      "sourceVisibleBounds": [
+        39,
+        16,
+        344,
+        368
+      ],
+      "normalisedVisibleSize": [
+        187,
+        216
+      ],
+      "normalisedOffset": [
+        34,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-charcoal-chimney": {
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-charcoal-chimney.png",
+      "sha256": "9f172c34fd0cfeeaeebcc924522ae7ee552c053229e61ffae08ae2c0e91e46c7",
+      "family": "ephemera",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-tools-ephemera-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-charcoal-chimney-source.webp",
+      "sourceSha256": "1a277bb2922b10158d0608a8c05fe4e223697fa866535f7c4c1ff79d8836bacb",
+      "originalGeneratedPngSha256": "dca0e3498599c29f703fefe77e0a75a15b20e8f7a293a33ea7c02297b4feca55",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        19,
+        16,
+        365,
+        368
+      ],
+      "normalisedVisibleSize": [
+        212,
+        216
+      ],
+      "normalisedOffset": [
+        22,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-skewer-bundle": {
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-skewer-bundle.png",
+      "sha256": "b07b6828cc76a3b54b8aa8a8671f48adb91ec751b48a52068c69bdc710f0cc26",
+      "family": "ephemera",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-tools-ephemera-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-skewer-bundle-source.webp",
+      "sourceSha256": "68b08c56bcdfb9b4c63f330a8faf8a5aa1090b3e935b67bfc313f871a9e851c6",
+      "originalGeneratedPngSha256": "3d30686cb06793da2cdb8c6e0773b2a4c9d799e35d9a1e80f11eef9320ebbac4",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        85,
+        368,
+        299
+      ],
+      "normalisedVisibleSize": [
+        216,
+        131
+      ],
+      "normalisedOffset": [
+        20,
+        62
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-charcoal-bag": {
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-charcoal-bag.png",
+      "sha256": "f45c271e7d9d14cbab2a3dde2f4d15784a875a659515c163ef9fe3f72fdee254",
+      "family": "ephemera",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-tools-ephemera-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-charcoal-bag-source.webp",
+      "sourceSha256": "9ea3ae0778ab77d64e9514e5ca39652865f30016f8146650ea25b26b5d5ede13",
+      "originalGeneratedPngSha256": "43447a18939438f904a4da0c894733c1f424c549a3eda0a0dd465b6fe3782ca5",
+      "originalGeneratedGeometry": [
+        1292,
+        1218
+      ],
+      "sourceVisibleBounds": [
+        70,
+        16,
+        313,
+        368
+      ],
+      "normalisedVisibleSize": [
+        149,
+        216
+      ],
+      "normalisedOffset": [
+        53,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "evidence": {
+    "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/evidence/final-assets-contact-sheet.webp",
+    "sha256": "2410d991bb1d968d0e2226ffa7d8ae579a394a67785079eba290a000ca89bc6c"
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersClear": true,
+    "componentOwnershipUnambiguous": true,
+    "styleReferenceUnchanged": true,
+    "allAssetsIndependent": true,
+    "runtimeChanged": false,
+    "kitchenChanged": false,
+    "primeChanged": false,
+    "deployed": false
+  }
+}
