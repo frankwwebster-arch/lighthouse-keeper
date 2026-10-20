@@ -1,0 +1,58 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "reviewedOn": "2026-10-20",
+  "reviewedBy": "Frank",
+  "candidate": "keeper-prime-rear-action-sequence-v1",
+  "decision": "approved-as-prime-rear-action-sequence-continuity-authority",
+  "wording": "Frank approved the synchronized walk, stop, turn-to-rear and 24-frame action result after reviewing the generated preview. He separately requested a richer future activity-cloud choreography; the current simple cloud motion is evidence, not the final callout-motion authority.",
+  "approvedHashes": {
+    "batchRegister": "c78de88f8a471ecd0c6e52879301e097429632d3d5904ce373f0bc4eca1155fa",
+    "draftCatalogue": "78394188085650d935418a9eddc8f84662ab621328c1dbeb6bad88b77d27eabb",
+    "reviewCatalogue": "78394188085650d935418a9eddc8f84662ab621328c1dbeb6bad88b77d27eabb",
+    "pageTemplate": "4dff6ac206e9f480d970dd95241aa3d8099f62663ac57af6e6eadb5c41e4efb0",
+    "reviewPage": "4dff6ac206e9f480d970dd95241aa3d8099f62663ac57af6e6eadb5c41e4efb0",
+    "builder": "ef78518051aad5e7a18c52e9e2d1e99764ec1bfc621aa6131eb52c12d0b3156e",
+    "candidateVerifier": "ef827e41fae71b29bba43c5cc947e59b02ec44e93fb2ca97e931775d433d3295"
+  },
+  "approvedContract": {
+    "sequenceFrames": 52,
+    "actionFrames": 24,
+    "walkFrames": 16,
+    "decelerationFrames": 4,
+    "turnAwayFrames": 8,
+    "actionStartsAtIndex": 28,
+    "walkStopTurnRearActionContinuityApproved": true,
+    "rearNeutralSeamExact": true,
+    "allKeeperAndRouteBytesInherited": true,
+    "activityLayerBeginsOnlyWithAction": true,
+    "activityLayerRemainsAboveCap": true,
+    "bodyCalloutTreatmentAndSfxIndependent": true,
+    "contextPropOrCounterBakedIntoKeeper": false
+  },
+  "followUpDirection": {
+    "currentSimpleCloudChoreographyIsFinal": false,
+    "richerAuthoredChoreographyRequired": true,
+    "mobileAssetsRequired": true,
+    "associatedComicSymbolsRequired": true,
+    "bubbleAndNonBubbleExamplesRequired": true,
+    "brief": "docs/ACTIVITY_CALLOUT_DYNAMIC_CHOREOGRAPHY_NEXT.md"
+  },
+  "delivery": {
+    "candidateCommit": "448a335a",
+    "reviewPath": "/keeper-review/keeper-prime-rear-action-sequence-v1/",
+    "deployed": false,
+    "externalBrowserAvailabilityExpected": false
+  },
+  "approvalBoundary": {
+    "sequenceContinuityApproved": true,
+    "currentSimpleCloudMotionApprovedAsFinal": false,
+    "newDynamicCalloutArtApproved": false,
+    "runtimeChanged": false,
+    "finalChanged": false,
+    "kitchenChanged": false,
+    "promotionPerformed": false,
+    "deploymentPerformed": false,
+    "promotionAllowedWithoutSeparateInstruction": false,
+    "deploymentAllowedWithoutSeparateInstruction": false
+  }
+}
