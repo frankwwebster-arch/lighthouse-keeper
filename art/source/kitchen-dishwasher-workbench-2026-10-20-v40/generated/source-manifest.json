@@ -1,0 +1,10 @@
+{
+  "set": "kitchen-dishwasher-workbench-v40",
+  "status": "source-only-unapproved",
+  "generationMode": "built-in image edit reference plus deterministic exact-pixel normalization",
+  "files": {
+    "dishwasher-state-family-source.png": "f9481315df3be0f9950aaf80b9bb07f291f871a62c67d6ec31ce4d3f12bac851",
+    "dishwasher-suds-keyframes-source.png": "11ed88e1768f3ee45be2b3cb7cebad092717ffee9ed785f60059b5da6fdce4a3"
+  },
+  "normalization": "Final state bodies inherit exact V39 pixels. The V40 builder replaces only cell rows 4–15 with exact approved Cabinet V11 worktop pixels selected for live left/right adjacency. Generated sources never ship directly."
+}

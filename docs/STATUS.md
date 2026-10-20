@@ -337,8 +337,8 @@ The reusable rule for later appliances and upgrades is now
 unpromoted; V11, V37, Final and runtime are unchanged.
 
 Kitchen Dishwasher Workbench V39 at
-`/keeper-review/kitchen-dishwasher-workbench-v39/` is the active reversible
-visual gate. It adds a standalone one-bay silver dishwasher with coordinated
+`/keeper-review/kitchen-dishwasher-workbench-v39/` established the standalone
+one-bay silver dishwasher with coordinated
 Off, On and Broken states. Off/On share one exact silhouette; On adds only aqua
 LCD glyphs and a solid green lamp. Broken keeps the same carcass and door but
 loses the lower-right hinge, leaving the bottom-hinged door strongly twisted
@@ -348,9 +348,23 @@ separate reusable suds models—compact, regular and emphatic—are forty-frame,
 removal controls. The default Regular placement makes a large soapy floor
 puddle rather than a restrained spill. Six objects fill six bays, so moving one swaps it with the
 occupant while retaining exact origins, Prime midpoints and V22/V32 healing.
-All 720 arrangements are verified. V39 is unapproved, unpromoted and unwired;
-V38 and inherited assets are unchanged. Kettle, toaster and bowl follow only
-after this review.
+All 720 arrangements are verified. V39 was rejected because its generated
+worktop outline was too heavy and appeared one native row too high beside the
+approved cabinets. Its immutable hashes are pinned in
+`docs/review/kitchen-dishwasher-workbench-v39-rejection-2026-10-20.json`.
+
+Kitchen Dishwasher Workbench V40 at
+`/keeper-review/kitchen-dishwasher-workbench-v40/` is the active reversible
+visual gate. It retains every non-worktop V39 state pixel and replaces only
+cell rows `4–15` with exact Cabinet V11 worktop pixels. Twelve state/edge
+sprites cover Off/On/Broken across every exposed/joined left/right condition;
+the movable review selects the correct one after every swap, then applies the
+existing V22/V32 repair. The corrected dishwasher therefore has the approved
+restrained outline and exact twelve-row height wherever it is placed. The full
+six-object movable tool and reusable suds controls remain available. All 720
+arrangements are verified. V40 is unapproved, unpromoted and unwired; V39,
+approved cabinetry, Final and runtime remain unchanged. Kettle, toaster and
+bowl follow only after this review.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

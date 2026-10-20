@@ -1,0 +1,276 @@
+{
+  "schema": "lighthouse-keeper/reversible-review-batch@1",
+  "set": "kitchen-dishwasher-workbench-v40",
+  "status": "reversible-unapproved-unpromoted",
+  "candidate": {
+    "catalogue": {
+      "file": "art/drafts/kitchen-dishwasher-workbench-2026-10-20-v40/candidate-catalogue.json",
+      "sha256": "f358f6f790e603fd88883d24eb81ea90aa040d2363b1295769c8f4029f980d18"
+    },
+    "publicShell": {
+      "file": "public/keeper-review/kitchen-dishwasher-workbench-v40/index.html",
+      "sha256": "ba958e1cceb25c12ff73f21091eca6e7a3e1bc8f0e77ba735e8e9a49974b02e7"
+    }
+  },
+  "sources": [
+    {
+      "file": "art/drafts/kitchen-dishwasher-workbench-2026-10-20-v39/candidate-catalogue.json",
+      "sha256": "a04c74c088e24f3d66bd4ddccffbe3a7a47c8e212d8df7d007ac4c0f4f6efb74"
+    },
+    {
+      "file": "art/source/kitchen-dishwasher-workbench-2026-10-20-v40/generated/dishwasher-state-family-source.png",
+      "sha256": "f9481315df3be0f9950aaf80b9bb07f291f871a62c67d6ec31ce4d3f12bac851"
+    },
+    {
+      "file": "art/source/kitchen-dishwasher-workbench-2026-10-20-v40/generated/dishwasher-suds-keyframes-source.png",
+      "sha256": "11ed88e1768f3ee45be2b3cb7cebad092717ffee9ed785f60059b5da6fdce4a3"
+    }
+  ],
+  "publishedAssets": [
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/room-background-exact.png",
+      "sourceSha256": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/room-background-exact.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/cabinet-run-v11-exact.png",
+      "sourceSha256": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/cabinet-run-v11-exact.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/sink-cabinet-v19-exact.png",
+      "sourceSha256": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/sink-cabinet-v19-exact.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/join-body-backfill-template.png",
+      "sourceSha256": "e8bd0080ca426e6d2d750b0c5cbb0b912fe659ec1a49867e740b9216c6b68040",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/join-body-backfill-template.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/countertop-join-cap-template.png",
+      "sourceSha256": "99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/countertop-join-cap-template.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/countertop-triangle-underlay-template.png",
+      "sourceSha256": "99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/countertop-triangle-underlay-template.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/neighbour-seam-cleanup-left.png",
+      "sourceSha256": "cb8f761a8458ca59b99e5c7ade6c6d9b32de4b5dd796c9d07559783b5a9eaec1",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/neighbour-seam-cleanup-left.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/neighbour-seam-cleanup-right.png",
+      "sourceSha256": "f06898c1750bc735db7ce37723d1d2487294d04e9233f812c18c9970e041e267",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/neighbour-seam-cleanup-right.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/oven-off.png",
+      "sourceSha256": "c2f5687b598b42f15b42a2323e2d441d1b0b892ea2f75cbea590f4190e6c0b8e",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/oven-off.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/oven-on.png",
+      "sourceSha256": "72c05de613f386ed51f9e049a3a986f34279bf04614a05b7b193d0b243be7622",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/oven-on.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/oven-broken.png",
+      "sourceSha256": "25631317589299c852e6383732cd2b376a0b5575f1720514ab5f250318765243",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/oven-broken.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/oven-broken-cavity-lit.png",
+      "sourceSha256": "8a42f379a156fd485a8efb735adb75e1dbba7c044b78b89f0982fa0d2198d4df",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/oven-broken-cavity-lit.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/oven-broken-warning-lit.png",
+      "sourceSha256": "734b0b19b4e2df77cb91fd7327e46ac6d2421351853c6505e8ae9a1bef6bd27e",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/oven-broken-warning-lit.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/oven-broken-both-lit.png",
+      "sourceSha256": "3f57c7a407ed7a4e4238307e0a839bfa37b6e8655116d65acb2a353883b5e3ce",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/oven-broken-both-lit.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/oven-broken-cavity-flicker-f40.png",
+      "sourceSha256": "94a6beec5979e81b4614b9596fe379a8193db0c1c179a7453f799c0bff2ade04",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/oven-broken-cavity-flicker-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/oven-broken-warning-flicker-f40.png",
+      "sourceSha256": "e5cc0bbbabfb9632efd23d78b30ba8d322e735b19bfcc3c8e2145f65b43c48d1",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/oven-broken-warning-flicker-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/fridge-standard.png",
+      "sourceSha256": "a93f05df2013dfd406291311ee14621eb9a4f9c5029f6f2a8c0807d7dd692cee",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/fridge-standard.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/fridge-broken-hinge-failed.png",
+      "sourceSha256": "e150fc6f02c85a78f5a4330095dd507d38eec837566275df029017dc18a4c1b2",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/fridge-broken-hinge-failed.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/fx-fridge-drip-ripple-f40.png",
+      "sourceSha256": "86cfaa33eb1e3f3351b481bf3057974af565963e35faca994274d486f60a8b19",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/fx-fridge-drip-ripple-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/cabinet-a-le-re.png",
+      "sourceSha256": "016968bcf538ffe7d29b95bfdc84d1952199e40ad565b11bdb1e2e081a45e47e",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/cabinet-a-le-re.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/cabinet-a-le-rj.png",
+      "sourceSha256": "781ec54ab4bb47c7432fc95b9d14b67a3b941e2a9c9e072a15fbf5adc3c0a535",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/cabinet-a-le-rj.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/cabinet-a-lj-re.png",
+      "sourceSha256": "6ab884ed46a9314fb8ad3d65f799b59564044f770bc027fc7828f9953aacc560",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/cabinet-a-lj-re.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/cabinet-a-lj-rj.png",
+      "sourceSha256": "85f936c55c206b376ba71862c763a893725efcfb1540dc9762b415d426b63422",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/cabinet-a-lj-rj.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/cabinet-b-le-re.png",
+      "sourceSha256": "d0f2210cb4efd5ca9056e7d6386360b629570c419bb6d35911b7eee09acb6161",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/cabinet-b-le-re.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/cabinet-b-le-rj.png",
+      "sourceSha256": "0a10e2811e684578396d8646861b63613bfb0c512cbb0455356ad3631ac01856",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/cabinet-b-le-rj.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/cabinet-b-lj-re.png",
+      "sourceSha256": "e6d272a90a943930735c7b07bbd4a24107726529ea67a486d806d1acf6fe0363",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/cabinet-b-lj-re.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/cabinet-b-lj-rj.png",
+      "sourceSha256": "6e8fd99dd81b24727829febbaa76db36d9a570b8083dc736fc43f7a723615401",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/cabinet-b-lj-rj.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-off-le-re.png",
+      "sourceSha256": "d006ccfa83bf5c754a7f1249d3969ffe464d3853a15131f64cf0c48d8239b31d",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-off-le-re.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-off-le-rj.png",
+      "sourceSha256": "b26d295f09e74a589feeb548cd3a90906ad832288ed2b68083f7129256664241",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-off-le-rj.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-off-lj-re.png",
+      "sourceSha256": "69fb2c3f0c165a5d5653508a901983126ef05084997d60afc75aabcf53b5da53",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-off-lj-re.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-off-lj-rj.png",
+      "sourceSha256": "5cc2ecfa87fe1fe54e97ced54ee3bc8a1124d47076da151301b75c3ca5fd1bc3",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-off-lj-rj.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-off.png",
+      "sourceSha256": "d006ccfa83bf5c754a7f1249d3969ffe464d3853a15131f64cf0c48d8239b31d",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-off.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-on-le-re.png",
+      "sourceSha256": "f7a8976bc9cfaf83feb443a65c8b20bf075bff821a4053be5ace71fecb124953",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-on-le-re.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-on-le-rj.png",
+      "sourceSha256": "256b9c5b960c1edd262f9461bd71e252ed473b4125a082a9ce748a97b9e6beee",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-on-le-rj.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-on-lj-re.png",
+      "sourceSha256": "72861c9f53167c831e72800deefd67e5fe0d1c86fcf9d98e1ea65d1b779334e1",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-on-lj-re.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-on-lj-rj.png",
+      "sourceSha256": "53310feca0aff82aca07d6d6ba401b24fc9912e70b5614e3648401f2dd7e6296",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-on-lj-rj.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-on.png",
+      "sourceSha256": "f7a8976bc9cfaf83feb443a65c8b20bf075bff821a4053be5ace71fecb124953",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-on.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-broken-le-re.png",
+      "sourceSha256": "061aad8aa14ee97a8cf8b239820a3a8cba8ba5766975ac4a1fa1142762511616",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-broken-le-re.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-broken-le-rj.png",
+      "sourceSha256": "9e0cbf5e8bfb7ddaef0fb9c43c1e73fec6cc2f633ad3232eb44bfe23ddff08c6",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-broken-le-rj.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-broken-lj-re.png",
+      "sourceSha256": "65859526d5ee0c93bb929e0532e3402b922ef8b84347f265cfa273112170a271",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-broken-lj-re.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-broken-lj-rj.png",
+      "sourceSha256": "8c3fe277f4d269beee18879104c2a478d6ef1f5c1e9db138bce30ddde4d268e1",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-broken-lj-rj.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-broken.png",
+      "sourceSha256": "061aad8aa14ee97a8cf8b239820a3a8cba8ba5766975ac4a1fa1142762511616",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-broken.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/fx-dishwasher-suds--compact-f40.png",
+      "sourceSha256": "14667dd8d8aa608e22f920c50184cd206cebab7cb4403148309cbbb66cefbae3",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/fx-dishwasher-suds--compact-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/fx-dishwasher-suds--regular-f40.png",
+      "sourceSha256": "666b2d08b5534fb599870cefd1accf622d6cfdca685a51d62d78c5d2062a79c2",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/fx-dishwasher-suds--regular-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/fx-dishwasher-suds--emphatic-f40.png",
+      "sourceSha256": "07fa9627e1b78496678974ca607a0f60a795d6016b47af231a4790fdb987c976",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/fx-dishwasher-suds--emphatic-f40.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-off-native-room.png",
+      "sourceSha256": "b5f53fa0578135a0c239e556e4229836321c7accdd12e0cf3d788292084e181e",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-off-native-room.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-on-native-room.png",
+      "sourceSha256": "e6b1378e75106d72589d0e76022e07394067436b974d0b6d5c648db884a73fcc",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-on-native-room.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-broken-native-room.png",
+      "sourceSha256": "c126f0af1986ed4de121b63291230232c0ddd262d974bccd8b13d78855b092c7",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-broken-native-room.png"
+    },
+    {
+      "source": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v40/dishwasher-joined-native-room.png",
+      "sourceSha256": "6215d72498a3517f993a07999c8b2139540e0172de3953a5fcbf64f10976704a",
+      "publicAssemblyPath": "public/keeper-review/kitchen-dishwasher-workbench-v40/assets/dishwasher-joined-native-room.png"
+    }
+  ]
+}

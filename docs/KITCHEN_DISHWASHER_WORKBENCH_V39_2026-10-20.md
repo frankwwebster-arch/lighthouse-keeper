@@ -2,9 +2,15 @@
 
 Date: 20 October 2026
 
-Status: reversible visual-review draft; unapproved, unpromoted and unwired.
+Status: rejected and superseded by V40; immutable, unpromoted and unwired.
 
 Review: `/keeper-review/kitchen-dishwasher-workbench-v39/`
+
+Frank rejected V39 because its generated countertop outline was too heavy and
+appeared one native row too high beside Cabinet V11. The exact rejection is
+pinned in
+`docs/review/kitchen-dishwasher-workbench-v39-rejection-2026-10-20.json`.
+V40 corrects only the worktop and preserves V39 as historical evidence.
 
 ## Appliance family
 
