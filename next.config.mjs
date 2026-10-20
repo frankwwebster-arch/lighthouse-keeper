@@ -323,6 +323,11 @@ export default {
         destination: '/keeper-review/kitchen-oven-standalone-v31/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-oven-standalone-v32',
+        destination: '/keeper-review/kitchen-oven-standalone-v32/index.html',
+        permanent: false,
+      },
     ]
   },
 }

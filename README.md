@@ -605,19 +605,21 @@ the deep, steep hob plane reads from a higher viewpoint than the shallow
 Cabinet V11 worktop. V28 therefore preserves the approved V27 design while
 correcting that upper projection. See
 [`docs/KITCHEN_OVEN_STANDALONE_V27_2026-10-19.md`](docs/KITCHEN_OVEN_STANDALONE_V27_2026-10-19.md).
-The active `/keeper-review/kitchen-oven-standalone-v31/` gate retains V30's
-foreground-protected hanging dial and every oven sprite byte-for-byte. It
-corrects V30's incomplete join layering by applying the full approved V22 sink
-method independently at each exactly snapped oven edge: a cabinet-blue body
-backfill is drawn behind the assets, then a row-matched countertop cap is drawn
-in front to remove the dark line through the turquoise V-shaped repair. Neither
-layer is embedded in the oven or cabinet. All four Broken light combinations
-keep exact registration and the unchanged V27 irregular ten-second schedules.
-Smoke is still a separate reusable layer: the older V9 asset-first tool
-demonstrates its three models and drag/resize/crop/speed/removal controls, but
-final smoke placement waits for a successor workbench using the standalone
-oven. V31 is a reversible, unapproved review gate; see
-[`docs/KITCHEN_OVEN_STANDALONE_V31_2026-10-20.md`](docs/KITCHEN_OVEN_STANDALONE_V31_2026-10-20.md).
+The active `/keeper-review/kitchen-oven-standalone-v32/` gate retains V30's
+foreground-protected hanging dial, triangular countertop repairs and every
+oven sprite byte-for-byte. V31 is rejected because its broad foreground cap
+flattened the oven/counter transition. V32 instead keeps each V30 triangular
+underlay behind the assets and covers only the six-pixel cabinet-facing end
+contour with approved row-matched turquoise pixels; the oven-facing diagonal
+therefore remains intact while the cabinet worktop reads as one continuous
+slab. The approved cabinet-blue body backfill remains behind both assets.
+Neither repair is embedded in the oven or cabinet. All four Broken light
+combinations keep exact registration and the unchanged V27 irregular
+ten-second schedules. Smoke is still a separate reusable layer: the older V9
+asset-first tool demonstrates its three models and drag/resize/crop/speed/
+removal controls, but final smoke placement waits for a successor workbench
+using the standalone oven. V32 is a reversible, unapproved review gate; see
+[`docs/KITCHEN_OVEN_STANDALONE_V32_2026-10-20.md`](docs/KITCHEN_OVEN_STANDALONE_V32_2026-10-20.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
