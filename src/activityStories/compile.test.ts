@@ -128,3 +128,40 @@ describe('replacing what is on top', () => {
     expect(objects(c.full[c.storyFrames - 1].items).map((i) => i.id).sort()).toEqual(['grill', 'hotdogs'])
   })
 })
+
+describe('a result that takes a stacked picture’s place', () => {
+  it('stays on the grill: fillings go onto raw burgers, the finished burgers replace them on the grill, then a steak replaces the burgers', () => {
+    // Stand-in pictures until Codex's uncooked burgers, cheese and steak arrive.
+    const story = cleanStory({
+      id: 'bbq-long-test',
+      cast: {
+        grill: { picture: 'bbq-grill', role: 'hero' },
+        raw: { picture: 'bbq-sausages', role: 'support' },
+        tomato: { picture: 'sandwich-tomato', role: 'support' },
+        lettuce: { picture: 'sandwich-lettuce', role: 'support' },
+        burgers: { picture: 'bbq-burgers', role: 'result' },
+        steak: { picture: 'repair-boat-hull-patch', role: 'support' },
+      },
+      steps: [
+        { do: 'arrive', who: 'grill' },
+        { do: 'flip', who: 'raw', onto: 'grill', speed: 'quick' },
+        { do: 'land-on', who: 'tomato', onto: 'raw', speed: 'quick' },
+        { do: 'land-on', who: 'lettuce', onto: 'raw', speed: 'quick' },
+        { do: 'reveal', who: 'burgers', onto: 'raw', replace: true, speed: 'quick' },
+        { do: 'flip', who: 'steak', onto: 'grill', replace: true, speed: 'quick' },
+        { do: 'settle' },
+      ],
+    })!
+    const c = compileStory(story, LIBRARY)
+    expect(c.issues.filter((i) => i.level === 'error')).toEqual([])
+    const burgerStep = c.windows[4]
+    const at = (f: number, id: string) => c.full[f].items.find((i) => i.id === id)
+    const rawPos = at(burgerStep.start - 1, 'raw')!
+    const burgers = at(burgerStep.end - 1, 'burgers')!
+    // The finished burgers sit where the raw ones were (on the grill), not in the middle of the bubble.
+    expect(Math.abs(burgers.y - rawPos.y)).toBeLessThan(25)
+    expect(at(burgerStep.end - 1, 'tomato')).toBeUndefined()
+    // The steak then replaces the burgers on the grill, and the ending is just the grill and the steak.
+    expect(objects(c.full[c.storyFrames - 1].items).map((i) => i.id).sort()).toEqual(['grill', 'steak'])
+  })
+})

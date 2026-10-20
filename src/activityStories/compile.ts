@@ -172,9 +172,17 @@ export function checkStory(story: Story, lib: Library): Issue[] {
       status[s.who] = 'focus'
     } else if (s.do === 'drop-in' || TOOLS.has(s.do)) status[s.who] = 'gone'
     else if (s.do === 'reveal') {
-      status[s.who] = s.replace ? 'focus' : 'stacked'
-      if (s.replace && s.onto) status[s.onto] = 'gone'
-      for (const k of Object.keys(status)) if (k !== s.who && status[k] === 'stacked') status[k] = 'gone'
+      // Whatever sat on the target is used up; with `replace` the result takes the target's own place.
+      for (const k of Object.keys(sitsOn)) if (sitsOn[k] === s.onto && k !== s.who) { status[k] = 'gone'; delete sitsOn[k] }
+      if (s.replace && s.onto) {
+        status[s.onto] = 'gone'
+        status[s.who] = sitsOn[s.onto] ? 'stacked' : 'focus'
+        if (sitsOn[s.onto]) sitsOn[s.who] = sitsOn[s.onto]
+        delete sitsOn[s.onto]
+      } else {
+        status[s.who] = 'stacked'
+        if (s.onto) sitsOn[s.who] = s.onto
+      }
     } else {
       // A filling that replaces sends whatever was on its target down into it.
       if (s.replace && s.onto) for (const k of Object.keys(sitsOn)) if (sitsOn[k] === s.onto && k !== s.who) { status[k] = 'gone'; delete sitsOn[k] }
@@ -419,7 +427,10 @@ export function compileStory(input: Story, lib: Library): Compiled {
       const replace = !!step.replace
       const s = baseScale(who)
       stacks[onto!] = []
-      const to = replace ? { x: HOME.x, y: HOME.y } : stackTop(onto!, who)
+      // With `replace`, the result takes the target's place: the middle if the target was the focus, or its spot on whatever it sat on.
+      const owner = members.find((m) => m !== onto && stacks[m].includes(onto!))
+      if (replace && owner) stacks[owner] = stacks[owner].filter((m) => m !== onto)
+      const to = replace ? (owner ? stackTop(owner, who) : { x: HOME.x, y: HOME.y }) : stackTop(onto!, who)
       for (let i = 0; i < total; i++) {
         const w = Math.min(1, (i + 1) / 3)
         for (const m of used) {
@@ -428,10 +439,14 @@ export function compileStory(input: Story, lib: Library): Compiled {
         }
         if (replace) set(onto!, f0 + i, { ...t, s: t.s * (1 - 0.3 * w), o: Math.max(0, 1 - w) })
         const pop = i === 0 ? 0 : i === 1 ? 0.45 : i === 2 ? 1.15 : 1
-        set(who, f0 + i, { x: to.x, y: to.y, s: s * pop, r: 0, o: i === 0 ? 0 : 1, z: replace ? 4 : 6 })
+        set(who, f0 + i, { x: to.x, y: to.y, s: s * pop, r: 0, o: i === 0 ? 0 : 1, z: replace && !owner ? 4 : 6 })
       }
       for (const m of used) status[m] = 'gone'
-      if (replace) {
+      if (replace && owner) {
+        status[onto!] = 'gone'
+        stacks[owner].push(who)
+        status[who] = 'stacked'
+      } else if (replace) {
         status[onto!] = 'gone'
         status[who] = 'focus'
       } else {

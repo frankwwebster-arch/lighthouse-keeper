@@ -82,6 +82,25 @@ remain yours as before.
      --label "Uncooked burgers"`, id `bbq-burgers-raw`. Claude then drafts
      the burger story (raw patties go on, the cooked burgers replace them).
 
+4. **The full BBQ story (Frank, 20 Oct evening).** Frank is drawing new
+   pictures. The story will run: unlit BBQ → charcoal → lit BBQ → raw
+   sausages → hot dogs → raw burgers → tomato, lettuce, cheese → completed
+   burgers → raw steak → finished steak meal with fries. Add each with
+   these ids so Claude's draft picks them up:
+
+   | Picture | Id | How |
+   | --- | --- | --- |
+   | Unlit BBQ | `bbq-grill-unlit` | new, `--kind object --family bbq` |
+   | Lit BBQ | `bbq-grill` | new version of the existing grill |
+   | Raw sausages (no plate) | `bbq-sausages` | new version |
+   | Hot dogs | `bbq-hotdogs` | existing (new version if redrawn) |
+   | Raw burgers | `bbq-burgers-raw` | new |
+   | Tomato, lettuce | `sandwich-tomato`, `sandwich-lettuce` | existing (new versions if redrawn) |
+   | Cheese | `food-cheese` | new, `--family food` |
+   | Completed burgers | `bbq-burgers` | existing (new version if redrawn) |
+   | Raw steak | `bbq-steak-raw` | new |
+   | Finished steak meal with fries | `bbq-steak-meal` | new |
+
 All of these follow `docs/ACTIVITY_CALLOUT_AUTHORING_STANDARD.md`. Once added, Frank
 can put them into stories himself.
 
