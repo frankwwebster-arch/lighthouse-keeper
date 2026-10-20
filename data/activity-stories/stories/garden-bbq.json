@@ -77,23 +77,29 @@
       "mark": "symbol-heat-curls"
     },
     {
-      "do": "flip",
+      "do": "land-on",
       "who": "sausages",
       "onto": "grill",
       "mark": "symbol-sizzle-spark"
     },
     {
-      "do": "flip",
+      "do": "reveal",
       "who": "hotdogs",
-      "onto": "grill",
+      "onto": "sausages",
       "replace": true,
       "mark": "symbol-sizzle-spark"
     },
     {
-      "do": "flip",
+      "do": "serve",
+      "who": "hotdogs"
+    },
+    {
+      "do": "pause"
+    },
+    {
+      "do": "land-on",
       "who": "patties",
       "onto": "grill",
-      "replace": true,
       "mark": "symbol-sizzle-spark"
     },
     {
@@ -118,20 +124,32 @@
       "do": "reveal",
       "who": "burgers",
       "onto": "patties",
-      "replace": true
+      "replace": true,
+      "mark": "symbol-sizzle-spark"
     },
     {
-      "do": "flip",
+      "do": "serve",
+      "who": "burgers"
+    },
+    {
+      "do": "pause"
+    },
+    {
+      "do": "land-on",
       "who": "steak",
       "onto": "grill",
-      "replace": true,
       "mark": "symbol-sizzle-spark"
     },
     {
       "do": "reveal",
       "who": "meal",
-      "onto": "grill",
-      "replace": true
+      "onto": "steak",
+      "replace": true,
+      "mark": "symbol-sizzle-spark"
+    },
+    {
+      "do": "serve",
+      "who": "meal"
     },
     {
       "do": "settle"
@@ -142,7 +160,7 @@
       "picture": "symbol-heat-curls",
       "on": "grill",
       "fromStep": 4,
-      "toStep": 11
+      "toStep": 17
     }
   ],
   "sfx": [
@@ -168,19 +186,59 @@
       "kind": "activity-beat"
     },
     {
-      "step": 10,
+      "step": 12,
       "at": "contact",
       "cue": "food-ready",
       "owner": "garden-bbq",
       "kind": "activity-beat"
     },
     {
-      "step": 12,
+      "step": 16,
       "at": "contact",
       "cue": "meal-served",
       "owner": "garden-bbq",
       "kind": "completion"
     }
   ],
-  "notes": "Draft by Claude, 20 Oct 2026, from Frank's running order: unlit BBQ, charcoal, lit BBQ, raw sausages, hot dogs, raw burgers, tomato, lettuce, cheese, finished burgers, raw steak, then the steak meal with fries. Raw food sinks into the grill when the next thing lands; finished dishes (hot dogs, burgers) are served off upward; the plated meal takes the grill's place at the end. New food pictures: Codex's BBQ food pack V1."
+  "notes": "Draft by Claude from Frank's notes (20 Oct 2026): reads left to right. The cold BBQ appears, the charcoal comes in from the left and drops in, and the BBQ is lit. Each dish's ingredients come in from the left and cook on the grill with a sizzle; the finished dish appears and is served off to the right; the hot BBQ rests alone for a beat. Hot dogs, then burgers (patties, tomato, lettuce, cheese), then steak and fries. Small BBQ tools and sauces (tongs, ketchup, turner, mustard, basting brush, grill fork) circle the bubble while he cooks, clear of the main action. Retellings start again from the hot BBQ (step 4).",
+  "flow": "left-to-right",
+  "loopFrom": 4,
+  "props": [
+    {
+      "picture": "bbq-tongs",
+      "at": "orbit",
+      "fromStep": 4,
+      "toStep": 17
+    },
+    {
+      "picture": "condiment-ketchup-bottle",
+      "at": "orbit",
+      "fromStep": 4,
+      "toStep": 17
+    },
+    {
+      "picture": "bbq-slotted-turner",
+      "at": "orbit",
+      "fromStep": 4,
+      "toStep": 17
+    },
+    {
+      "picture": "condiment-mustard-bottle",
+      "at": "orbit",
+      "fromStep": 4,
+      "toStep": 17
+    },
+    {
+      "picture": "bbq-basting-brush",
+      "at": "orbit",
+      "fromStep": 4,
+      "toStep": 17
+    },
+    {
+      "picture": "bbq-grill-fork",
+      "at": "orbit",
+      "fromStep": 4,
+      "toStep": 17
+    }
+  ]
 }

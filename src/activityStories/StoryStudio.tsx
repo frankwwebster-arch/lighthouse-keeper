@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { verifyPin } from '../game/remote'
 import { compileStory, FPS, type Frame } from './compile'
 import { LIBRARY, STORY_DRAFTS } from './drafts'
-import { STORY_SCHEMA, VERBS, cleanStory, versionFor, type Ambient, type CastRole, type Speed, type Step, type Story, type Verb } from './format'
+import { STORY_SCHEMA, VERBS, cleanStory, versionFor, type Ambient, type CastRole, type Flow, type Prop, type PropSlot, type Speed, type Step, type Story, type Verb } from './format'
 import { loadStories, resetStory, saveStory, storyHash, type SavedStory } from './store'
 
 const DRAFT_BY_ID = Object.fromEntries(STORY_DRAFTS.map((s) => [s.id, s]))
@@ -11,6 +11,8 @@ const MARKS = Object.entries(LIBRARY.pictures).filter(([, p]) => p.kind === 'mar
 const AFTER: Record<Story['afterStory'], string> = { loop: 'Keep retelling it', hold: 'Tell once, then hold the result', hide: 'Tell once, then the bubble goes' }
 const PACES: [number, string][] = [[0.75, 'Slower'], [1, 'Normal'], [1.25, 'Quicker'], [1.5, 'Quickest']]
 const SPEEDS: Speed[] = ['quick', 'normal', 'slow']
+const FLOWS: Record<Flow, string> = { around: 'From both sides', 'left-to-right': 'Left to right' }
+const SLOTS: Record<PropSlot, string> = { orbit: 'circling the bubble', 'top-left': 'top left', 'top-right': 'top right', 'bottom-left': 'bottom left', 'bottom-right': 'bottom right' }
 const picLabel = (id: string) => LIBRARY.pictures[id]?.label ?? id
 const slug = (v: string) => v.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60)
 
@@ -50,23 +52,26 @@ export default function StoryStudio() {
   const [showBubble, setShowBubble] = useState(true)
   const [f, setF] = useState(0)
   const clock = useRef({ start: 0, from: 0 })
-  const frames = reduced ? compiled.reduced : compiled.full
+  // The opening plays once, then the story; retellings jump back to the retelling step, so the bubble stays up.
+  const intro = reduced ? compiled.introReduced : compiled.intro
+  const frames = useMemo(() => [...intro, ...(reduced ? compiled.reduced : compiled.full)], [intro, reduced, compiled])
   useEffect(() => {
     if (!playing) return
     clock.current = { start: performance.now(), from: f }
     let raf = 0
     const tick = (now: number) => {
       const step = Math.floor(((now - clock.current.start) / 1000) * FPS) + clock.current.from
-      // “Hold” shows the result for two seconds in the preview, then replays.
+      // “Hold” shows the result for two seconds in the preview, then replays; a story with a retelling step jumps back there.
+      const back = compiled.afterStory === 'loop' ? intro.length + compiled.loopStart : 0
       const span = compiled.afterStory === 'hold' ? frames.length + 2 * FPS : frames.length
-      setF(Math.min(step % span, frames.length - 1))
+      setF(step < span ? Math.min(step, frames.length - 1) : Math.min(back + ((step - span) % (span - back)), frames.length - 1))
       raf = requestAnimationFrame(tick)
     }
     raf = requestAnimationFrame(tick)
     return () => cancelAnimationFrame(raf)
     // Restart the clock when the story or mode changes; `f` is only read at the start.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [playing, frames, compiled.afterStory])
+  }, [playing, frames, compiled.afterStory, compiled.loopStart, intro.length])
   const frame = frames[Math.min(f, frames.length - 1)]
   const bodyFrame = LIBRARY.keeper.rearWork[Math.floor((f / FPS) * 4) % LIBRARY.keeper.rearWork.length]
 
@@ -138,7 +143,7 @@ export default function StoryStudio() {
   const draftMoved = !!saved[story.id]?.draftHash && DRAFT_BY_ID[story.id] && saved[story.id].draftHash !== storyHash(DRAFT_BY_ID[story.id])
   const castNames = Object.keys(story.cast)
   const windowOf = (i: number) => compiled.windows[i]
-  const currentStep = frame?.step ?? 1
+  const currentStep = frame?.step ?? 1 // 0 while the bubble opens
 
   return (
     <div className="studio ss">
@@ -206,7 +211,7 @@ export default function StoryStudio() {
         <div className="ss-stagewrap">
           <BubbleStage frame={frame} body={bodyFrame?.url} showMarks={showMarks} showBubble={showBubble} />
           <div className="ss-beat">
-            Step {currentStep}: {stepText(story, story.steps[currentStep - 1])}
+            {currentStep === 0 ? 'The bubble opens' : <>Step {currentStep}: {stepText(story, story.steps[currentStep - 1])}</>}
             {frame?.phase === 'quiet' ? ' · quiet' : frame?.phase === 'clear' ? ' · clearing for the next telling' : ''}
           </div>
         </div>
@@ -228,13 +233,17 @@ export default function StoryStudio() {
             {compiled.issues.map((i, k) => <li key={k} className={i.level === 'error' ? 'ss-err' : ''}>{i.level === 'error' ? '⛔' : '⚠️'} {i.text}</li>)}
           </ul>
         ) : (
-          <p className="st-ok">No problems: every step can play, every touch mark lands where two pictures meet, the story takes its time (at least 5 seconds), and it plays at least twice in a 30-second activity.</p>
+          <p className="st-ok">No problems: every step can play, every touch mark lands where two pictures meet, and the story takes its time (at least 5 seconds).</p>
         )}
 
         <h2>How it ends</h2>
         <div className="ss-row">
           <label>When he keeps working <select disabled={!editable} value={story.afterStory} onChange={(e) => edit({ ...story, afterStory: e.target.value as Story['afterStory'] })}>{Object.entries(AFTER).map(([k, v]) => <option key={k} value={k}>{v}</option>)}</select></label>
           <label>Pace <select disabled={!editable} value={story.pace} onChange={(e) => edit({ ...story, pace: Number(e.target.value) })}>{PACES.map(([v, t]) => <option key={v} value={v}>{t}</option>)}</select></label>
+          <label>Pictures move <select disabled={!editable} value={story.flow} onChange={(e) => edit({ ...story, flow: e.target.value as Flow })}>{Object.entries(FLOWS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}</select></label>
+          {story.afterStory === 'loop' && (
+            <label>Each retelling starts at <select disabled={!editable} value={story.loopFrom ?? 1} onChange={(e) => { const n = Number(e.target.value); const { loopFrom: _drop, ...rest } = story; edit(n > 1 ? { ...rest, loopFrom: n } : rest) }}>{story.steps.map((s, i) => <option key={i} value={i + 1}>step {i + 1}{i === 0 ? ' (the beginning)' : `: ${stepText(story, s)}`}</option>)}</select></label>
+          )}
         </div>
       </main>
 
@@ -253,7 +262,7 @@ export default function StoryStudio() {
                 onDragOver={(e) => e.preventDefault()}
                 onDrop={() => { if (dragFrom.current !== null) moveStep(dragFrom.current, i); dragFrom.current = null }}
               >
-                <button type="button" className="ss-num" onClick={() => { setPlaying(false); setF(windowOf(i)?.start ?? 0) }} title="Watch this step">{i + 1}</button>
+                <button type="button" className="ss-num" onClick={() => { setPlaying(false); setF(intro.length + (windowOf(i)?.start ?? 0)) }} title="Watch this step">{i + 1}</button>
                 <div className="ss-fields">
                   {needs.includes('who') && <select disabled={!editable} value={s.who ?? ''} onChange={(e) => setStep(i, { ...s, who: e.target.value })}><option value="">who?</option>{castNames.map((c) => <option key={c} value={c}>{c}</option>)}</select>}
                   <select disabled={!editable} value={s.do} onChange={(e) => setStep(i, { ...s, do: e.target.value as Verb })} title={VERBS[s.do].hint}>{Object.entries(VERBS).map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}</select>
@@ -314,6 +323,23 @@ export default function StoryStudio() {
           })}
         </ul>
         {editable && <button type="button" className="st-add" onClick={() => edit({ ...story, ambient: [...story.ambient, { picture: MARKS[0][0], on: castNames[0], fromStep: 1, toStep: 1 }] })}>Add an extra mark</button>}
+        <h2>Props</h2>
+        <p className="st-dim">Small scene-setting pictures, like the BBQ tools and sauces, that circle the bubble or sit in a corner, away from the main action.</p>
+        <ul className="ss-cast">
+          {story.props.map((pr, i) => {
+            const set = (next: Prop) => edit({ ...story, props: story.props.map((x, j) => (j === i ? next : x)) })
+            return (
+              <li key={i}>
+                <img src={versionFor(LIBRARY, pr.picture)?.url} alt="" />
+                <select disabled={!editable} value={pr.picture} onChange={(e) => set({ ...pr, picture: e.target.value })}>{OBJECTS.map(([id, o]) => <option key={id} value={id}>{o.label}</option>)}</select>
+                <select disabled={!editable} value={pr.at} onChange={(e) => set({ ...pr, at: e.target.value as PropSlot })}>{Object.entries(SLOTS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}</select>
+                steps <input type="number" disabled={!editable} min={1} max={story.steps.length} value={pr.fromStep} onChange={(e) => set({ ...pr, fromStep: Number(e.target.value) })} />–<input type="number" disabled={!editable} min={1} max={story.steps.length} value={pr.toStep} onChange={(e) => set({ ...pr, toStep: Number(e.target.value) })} />
+                {editable && <button type="button" className="st-mini" onClick={() => edit({ ...story, props: story.props.filter((_, j) => j !== i) })}>✕</button>}
+              </li>
+            )
+          })}
+        </ul>
+        {editable && <button type="button" className="st-add" onClick={() => edit({ ...story, props: [...story.props, { picture: OBJECTS[0][0], at: 'orbit', fromStep: 1, toStep: Math.max(1, story.steps.length - 1) }] })}>Add a prop</button>}
         {story.notes && <><h2>Notes</h2><p className="st-dim">{story.notes}</p></>}
       </aside>
     </div>
@@ -349,8 +375,8 @@ export function BubbleStage({ frame, body, showMarks, showBubble }: { frame: Fra
         {showBubble && (
           <>
             <div className="ss-bubble" style={{ opacity: frame?.bubble.opacity ?? 1, transform: `scale(${frame?.bubble.scale ?? 1})` }} />
-            <div className="ss-ring ss-ring1" style={{ opacity: frame?.bubble.opacity ?? 1 }} />
-            <div className="ss-ring ss-ring2" style={{ opacity: frame?.bubble.opacity ?? 1 }} />
+            <div className="ss-ring ss-ring1" style={{ opacity: frame?.bubble.rings?.[0] ?? frame?.bubble.opacity ?? 1 }} />
+            <div className="ss-ring ss-ring2" style={{ opacity: frame?.bubble.rings?.[1] ?? frame?.bubble.opacity ?? 1 }} />
           </>
         )}
         {frame?.items.filter((i) => showMarks || i.kind === 'object').map((i) => (

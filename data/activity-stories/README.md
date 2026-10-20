@@ -4,10 +4,9 @@
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A
-story has no upper length, only a five-second floor. Every activity takes
-20–30 seconds of real time before it finishes, and its story plays at least
-twice in that time, so a telling (story plus clearing) should be 15 seconds
-or less; a longer story simply needs a longer activity. The studio shows how many times each story plays.
+story has no upper length, only a five-second floor. Frank sets each
+activity's length himself; the studio just shows how many times a story
+would play in a 20–30 second activity.
 
 A bubble story is the little animated picture story above the keeper's head
 while he works with his back to us: the grill arrives, the charcoal drops in,
@@ -112,7 +111,18 @@ win over the draft file, exactly like recipes. Claude copies them back into
   the bubble goes.
 - **pace** speeds the whole story up or down (0.75–1.5).
 - **ambient** marks ride on one picture for a range of steps.
+- **flow**: `left-to-right` brings every picture in from the left and serves
+  finished things off to the right (Frank's BBQ); `around` uses both sides.
+- **loopFrom** (optional): retellings start again from this step, so
+  setting-up steps (the cold BBQ, the charcoal) play only the first time.
+- **props**: small scene-setting pictures (tools, sauces) for a range of
+  steps, either `orbit` (circling just outside the bubble, one lap per
+  retelling, fading near his head) or fixed in a corner.
 - **sfx** names a sound and its owner; the story never contains audio.
+
+Before the first telling the bubble opens: its two rings pop up from his cap
+and the bubble swells out of them. Retellings skip the opening, so the bubble
+never disappears between them.
 
 ### The verbs
 
@@ -128,6 +138,8 @@ win over the draft file, exactly like recipes. Claude copies them back into
 | `pour` | pours onto | Tips over it so drops fall, then leaves. |
 | `tighten` | tightens | Turns in place on its edge, then leaves. |
 | `reveal` | appears from | Bursts out; anything stacked on it is used up. `replace: true` takes its place. |
+| `serve` | is served | Leaves the bubble: off to the right in a left-to-right story, otherwise upwards. |
+| `pause` | pause | A beat where nothing new happens; heat, marks and props carry on. |
 | `settle` | quiet moment | Nothing moves (at least five frames). Always last. |
 
 ## What the engine guarantees
@@ -146,8 +158,7 @@ rules, which came out of the 20 October review of the V2 examples:
 5. The quiet moment is completely still, with no marks.
 6. Reduced motion has the same steps, timing and ending, with at most two
    pictures and one mark, and nothing travels.
-7. A story never rushes: the studio warns below five seconds, and when it
-   would play fewer than twice even in a 30-second activity.
+7. A story never rushes: the studio warns below five seconds.
 
 ## Workflows
 

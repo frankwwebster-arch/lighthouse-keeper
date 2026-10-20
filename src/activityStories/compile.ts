@@ -8,6 +8,10 @@
  * pages use the same 360 × 230 box). Objects draw in a 140 px box and marks
  * in a 92 px box, each times its scale, as in V2.
  *
+ * Frank's left-to-right flow (20 Oct): with `flow: "left-to-right"` every
+ * picture enters from the left, finished food is served off to the right,
+ * props stay at the rim, and `loopFrom` lets a retelling skip the set-up.
+ *
  * Rules that came out of the 20 Oct Activity Cloud Review:
  * - contact marks fire on the frame two silhouettes actually touch, at the
  *   touching edge, and last four frames;
@@ -26,9 +30,8 @@ export const FPS = 8
 export const BOX = { object: 140, mark: 92 }
 export const QUIET_MIN = 5
 const CLEAR_FRAMES = 3
-/** Frank, 20 Oct: an activity takes 20–30 s of real time, and its story plays at least twice in it. */
+/** For the studio's readout only: how often a story plays in a typical 20–30 s activity. Frank sets activity lengths himself. */
 export const ACTIVITY_SECONDS: [number, number] = [20, 30]
-export const MIN_TELLINGS = 2
 
 export interface FrameItem {
   id: string
@@ -46,7 +49,8 @@ export interface FrameItem {
 export interface Frame {
   step: number
   phase: 'story' | 'quiet' | 'clear'
-  bubble: { opacity: number; scale: number }
+  /** The bubble and its two connector rings (the small one nearest his cap first). */
+  bubble: { opacity: number; scale: number; rings?: [number, number] }
   items: FrameItem[]
 }
 
@@ -71,8 +75,13 @@ export interface Compiled {
   reduced: Frame[]
   /** Frames that tell the story, before any clearing frames. */
   storyFrames: number
-  /** Seconds from one telling to the next (the story plus its clearing frames). */
+  /** Seconds from one telling to the next (the story plus its clearing frames, or from loopFrom to the end). */
   loopSeconds: number
+  /** Frame a retelling starts from (0, or the start of loopFrom). */
+  loopStart: number
+  /** The opening, played once before the first telling: the rings pop up from his cap, then the bubble swells out of them. Retellings skip it, so the bubble never goes away between them. */
+  intro: Frame[]
+  introReduced: Frame[]
   /** How many times it plays in the shortest and longest activity (ACTIVITY_SECONDS). */
   tellings: [number, number]
   quiet: [number, number]
@@ -105,7 +114,18 @@ const LANES = [
   { x: 100, y: 36 },
   { x: 0, y: -58 },
 ]
-const SCALE = { hero: 0.78, support: 0.5, result: 0.7, aside: 0.44, mark: 0.42, contact: 0.48, trail: 0.36 }
+/** Left-to-right stories: everything enters from the left, at three heights. */
+const LANES_LTR = [
+  { x: -108, y: -22 },
+  { x: -104, y: 36 },
+  { x: -96, y: -56 },
+]
+/** Where props sit, inside the bubble's rim. */
+const PROP_AT = { 'top-left': { x: -66, y: -60 }, 'top-right': { x: 66, y: -60 }, 'bottom-left': { x: -108, y: 52 }, 'bottom-right': { x: 108, y: 52 } }
+const EXIT_X = 172
+/** Orbiting props circle just outside the bubble's rim (149 × 92) and fade out near his head. */
+const ORBIT = { rx: 166, ry: 104, cy: 2, hideBelow: 0.62 }
+const SCALE = { hero: 0.78, support: 0.5, result: 0.7, aside: 0.44, mark: 0.42, contact: 0.48, trail: 0.36, prop: 0.34, orbit: 0.26 }
 const APPROACH: Record<Speed, number> = { quick: 3, normal: 4, slow: 6 }
 const WORK: Record<Speed, number> = { quick: 4, normal: 6, slow: 9 }
 const LAND: Record<Speed, number> = { quick: 3, normal: 4, slow: 6 }
@@ -142,6 +162,10 @@ export function stepFrames(step: Step, pace = 1): number {
       return paced(SOLO[sp], pace)
     case 'reveal':
       return Math.max(4, paced(SOLO[sp] + 1, pace))
+    case 'serve':
+      return paced(SOLO[sp], pace)
+    case 'pause':
+      return paced({ quick: 4, normal: 8, slow: 12 }[sp], pace)
     case 'settle':
       return Math.max(QUIET_MIN, paced(SOLO[sp], pace))
     default:
@@ -174,9 +198,13 @@ export function checkStory(story: Story, lib: Library): Issue[] {
     if (s.mark && lib.pictures[s.mark]?.kind !== 'mark') issues.push({ level: 'error', step: n, text: `Step ${n}: ${s.mark} isn’t a mark` })
     // Track who is on show, the same way compile does.
     if (!s.who || !status[s.who]) return
+    if (s.do === 'serve' && (status[s.who] === 'hidden' || status[s.who] === 'gone')) issues.push({ level: 'error', step: n, text: `Step ${n}: ${s.who} isn’t on show, so it can’t be served` })
     if (s.do === 'arrive' || s.do === 'present') {
       for (const k of Object.keys(status)) if (status[k] === 'focus') status[k] = 'aside'
       status[s.who] = 'focus'
+    } else if (s.do === 'serve') {
+      status[s.who] = 'gone'
+      delete sitsOn[s.who]
     } else if (s.do === 'drop-in' || TOOLS.has(s.do)) status[s.who] = 'gone'
     else if (s.do === 'reveal') {
       // Whatever sat on the target is used up; with `replace` the result takes the target's own place.
@@ -198,6 +226,10 @@ export function checkStory(story: Story, lib: Library): Issue[] {
     }
   })
   if (story.steps[0]?.do !== 'arrive') issues.push({ level: 'warn', step: 1, text: 'The first step is usually something arriving' })
+  for (const p of story.props) {
+    if (lib.pictures[p.picture]?.kind !== 'object') issues.push({ level: 'error', text: `Prop ${p.picture} isn’t a picture in the library` })
+    if (p.fromStep < 1 || p.toStep > story.steps.length + 1 || p.toStep < p.fromStep) issues.push({ level: 'warn', text: `Prop ${p.picture}: steps ${p.fromStep}–${p.toStep} don’t fit the story` })
+  }
   for (const a of story.ambient) {
     if (!story.cast[a.on]) issues.push({ level: 'error', text: `Extra mark ${a.picture} sits on ${a.on}, which isn’t in the cast` })
     if (lib.pictures[a.picture]?.kind !== 'mark') issues.push({ level: 'error', text: `Extra mark ${a.picture} isn’t a mark` })
@@ -240,7 +272,9 @@ export function compileStory(input: Story, lib: Library): Compiled {
   let frame = 0
   let laneNext = 0
 
-  const laneFor = (as: string) => (lanes[as] ??= LANES[laneNext++ % LANES.length])
+  const ltr = story.flow === 'left-to-right'
+  const laneSet = ltr ? LANES_LTR : LANES
+  const laneFor = (as: string) => (lanes[as] ??= laneSet[laneNext++ % laneSet.length])
   const baseScale = (as: string) => (story.cast[as].role === 'hero' ? SCALE.hero : story.cast[as].role === 'result' ? SCALE.result : SCALE.support)
   const set = (as: string, f: number, p: Pose | null) => {
     poses[as][f] = p
@@ -357,7 +391,7 @@ export function compileStory(input: Story, lib: Library): Compiled {
         const p = last[m]
         if (!p) continue
         const served = story.cast[m].role === 'result'
-        const away = -sideOf(laneFor(who).x)
+        const away = ltr ? 1 : -sideOf(laneFor(who).x)
         for (let i = 0; i < total; i++) {
           const w = Math.max(0, Math.min(1, (i - touchAt + 1) / 3))
           const gone = served
@@ -436,6 +470,18 @@ export function compileStory(input: Story, lib: Library): Compiled {
       }
       const tail = g + k + work
       leave(who, tail)
+    } else if (step.do === 'serve') {
+      // Finished food leaves: a small lift, then off to the right (left-to-right) or up and out.
+      const p = last[who]!
+      const owner = members.find((m) => m !== who && stacks[m].includes(who))
+      if (owner) stacks[owner] = stacks[owner].filter((m) => m !== who)
+      for (let i = 0; i < total; i++) {
+        const t = ease((i + 1) / total)
+        const lift = i === 0 ? -4 : 0
+        const to = ltr ? { x: EXIT_X, y: p.y - 18 } : { x: p.x, y: -130 }
+        set(who, f0 + i, { ...p, x: lerp(p.x, to.x, i === 0 ? 0 : t), y: lerp(p.y, to.y, i === 0 ? 0 : t) + lift, r: ltr ? 6 * t : 0, o: i === total - 1 ? 0 : i === total - 2 ? 0.5 : 1, z: 11 })
+      }
+      status[who] = 'gone'
     } else if (step.do === 'reveal') {
       const t = last[onto!]!
       const used = stacks[onto!].filter((m) => m !== who)
@@ -489,9 +535,17 @@ export function compileStory(input: Story, lib: Library): Compiled {
   }
   const quietStep = story.steps.length
   const quiet: [number, number] = [windows[quietStep - 1].start, storyFrames - 1]
-  const clear = story.afterStory === 'hold' ? 0 : CLEAR_FRAMES
+  const loopStart = story.loopFrom && windows[story.loopFrom - 1] ? windows[story.loopFrom - 1].start : 0
+  // A story that retells from a later step flows straight on, so it needs no clearing frames.
+  const clear = story.afterStory === 'hold' || loopStart > 0 ? 0 : CLEAR_FRAMES
   const totalFrames = storyFrames + clear
 
+  const url2 = (pic: string) => versionFor(lib, pic)?.url ?? ''
+  const props = story.props.flatMap((p) => {
+    const from = windows[p.fromStep - 1]?.start
+    const to = windows[Math.min(p.toStep, windows.length) - 1]?.end
+    return from === undefined || to === undefined ? [] : [{ ...p, from, to }]
+  })
   // Extra marks that ride on a cast member (heat curls over the grill).
   const ambient = story.ambient.flatMap((a, i) => {
     const from = windows[a.fromStep - 1]?.start
@@ -523,6 +577,24 @@ export function compileStory(input: Story, lib: Library): Compiled {
         const fadeIn = Math.min(1, (f - a.from + 1) / 2), fadeOut = Math.min(1, (a.to - f) / 2)
         items.push({ id: a.id, picture: a.picture, url: markUrl(a.picture), kind: 'mark', x: r2(p.x + 4 * Math.sin(f * 0.8)), y: r2(p.y - h - 14 - (f % 8) * 1.2), scale: SCALE.mark, rotation: r2(6 * Math.sin(f * 0.6)), opacity: r2(Math.min(fadeIn, fadeOut)), z: 15 })
       }
+      // Props: scene-setting pictures beneath everything. Corner props bob in place; orbiting ones circle the bubble,
+      // one lap per retelling so the loop is seamless, evenly spaced, and fade out as they pass his head.
+      const orbiters = props.filter((p) => p.at === 'orbit')
+      for (const [k, pr] of props.entries()) {
+        if (f < pr.from || f >= pr.to) continue
+        const fade = Math.min(1, (f - pr.from + 1) / 2, (pr.to - f) / 2)
+        if (pr.at === 'orbit') {
+          const slot = orbiters.indexOf(pr)
+          const theta = -Math.PI / 2 + (2 * Math.PI * slot) / orbiters.length + (2 * Math.PI * (f - loopStart)) / Math.max(1, storyFrames - loopStart)
+          const sin = Math.sin(theta)
+          const head = sin > ORBIT.hideBelow ? Math.max(0, 1 - (sin - ORBIT.hideBelow) / 0.18) : 1
+          if (fade * head <= 0.02) continue
+          items.push({ id: `prop-${k}`, picture: pr.picture, url: url2(pr.picture), kind: 'object', x: r2(ORBIT.rx * Math.cos(theta)), y: r2(ORBIT.cy + ORBIT.ry * sin), scale: SCALE.orbit, rotation: r2((theta * 180) / Math.PI / 6 + 10 * Math.sin(f * 0.4 + slot)), opacity: r2(fade * head), z: 1 })
+          continue
+        }
+        const at = PROP_AT[pr.at]
+        items.push({ id: `prop-${k}`, picture: pr.picture, url: url2(pr.picture), kind: 'object', x: at.x, y: r2(at.y + 2 * Math.sin((f + k * 3) * 0.5)), scale: SCALE.prop, rotation: r2(4 * Math.sin((f + k * 5) * 0.35)), opacity: r2(fade), z: 1 })
+      }
       // Motion trails: only while something moves fast, always beneath the objects.
       for (const m of members) {
         const a = poses[m][f], b = f > 0 ? poses[m][f - 1] : null
@@ -534,9 +606,8 @@ export function compileStory(input: Story, lib: Library): Compiled {
       }
     }
     const step = windows.find((w) => f >= w.start && f < w.end)?.step ?? quietStep
-    const inflate = f === 0 ? 0.7 : f === 1 ? 1.05 : 1
     const bubbleOut = story.afterStory === 'hide' && f >= storyFrames ? 1 - (f - storyFrames + 1) / CLEAR_FRAMES : 1
-    full.push({ step, phase: f >= storyFrames ? 'clear' : f >= quiet[0] ? 'quiet' : 'story', bubble: { opacity: r2((f === 0 ? 0.5 : 1) * bubbleOut), scale: inflate }, items: items.sort((x, y) => x.z - y.z) })
+    full.push({ step, phase: f >= storyFrames ? 'clear' : f >= quiet[0] ? 'quiet' : 'story', bubble: { opacity: r2(bubbleOut), scale: 1 }, items: items.sort((x, y) => x.z - y.z) })
   }
 
   // Reduced motion: the same steps and ending, two objects at most, one mark, nothing travels.
@@ -545,9 +616,11 @@ export function compileStory(input: Story, lib: Library): Compiled {
   for (const w of windows) {
     const s = story.steps[w.step - 1]
     const atTouch = TOOLS.has(s.do) || s.do === 'drop-in'
-    const key = s.do === 'settle' ? w.start - 1 : atTouch ? (firstContact[w.step] ?? w.end - 1) : w.end - 1
+    const still = s.do === 'settle' || s.do === 'pause'
+    const key = still ? w.start - 1 : s.do === 'serve' ? w.start : atTouch ? (firstContact[w.step] ?? w.end - 1) : w.end - 1
     const keyFrame = Math.max(0, key)
-    const next = s.do === 'settle' ? pair : s.do === 'arrive' || s.do === 'present' || (s.do === 'reveal' && s.replace) ? [s.who] : [s.onto, s.who]
+    const focusAt = (f: number) => members.find((m) => { const p = poses[m][f]; return !!p && p.z === 4 && p.o > 0.5 })
+    const next = still ? pair : s.do === 'serve' ? [focusAt(Math.max(0, key)), s.who] : s.do === 'arrive' || s.do === 'present' || (s.do === 'reveal' && s.replace) ? [s.who] : [s.onto, s.who]
     const shown = next.filter((m, i, l): m is string => !!m && !!story.cast[m] && l.indexOf(m) === i && (poses[m][keyFrame]?.o ?? 0) > 0.5).slice(-2)
     const c = contacts.find((x) => x.step === w.step)
     const cm = c ? marks.find((mk) => mk.frames[c.frame] && mk.id.startsWith(`contact-${w.step}-`)) : undefined
@@ -586,11 +659,26 @@ export function compileStory(input: Story, lib: Library): Compiled {
   const seconds = storyFrames / FPS
   // The game takes its time (Frank, 20 Oct): no upper limit, only a floor so a story is never a blur.
   if (seconds < 5) issues.push({ level: 'warn', text: `The story lasts only ${seconds.toFixed(1)} s; give it at least 5 s so it doesn’t rush` })
-  const loopSeconds = totalFrames / FPS
-  const tellings: [number, number] = [Math.floor(ACTIVITY_SECONDS[0] / loopSeconds), Math.floor(ACTIVITY_SECONDS[1] / loopSeconds)]
-  if (tellings[1] < MIN_TELLINGS) issues.push({ level: 'warn', text: `At ${loopSeconds.toFixed(1)} s a telling, it plays ${tellings[1]} time${tellings[1] === 1 ? '' : 's'} even in a ${ACTIVITY_SECONDS[1]}-second activity; every activity should show its story at least twice` })
-  const crowd = Math.max(...full.map((fr) => fr.items.filter((i) => i.kind === 'object').length))
+  const loopSeconds = (totalFrames - loopStart) / FPS
+  const firstSeconds = totalFrames / FPS
+  const tellingsIn = (t: number) => (t < firstSeconds ? 0 : 1 + Math.floor((t - firstSeconds) / loopSeconds))
+  const tellings: [number, number] = [tellingsIn(ACTIVITY_SECONDS[0]), tellingsIn(ACTIVITY_SECONDS[1])]
+  const crowd = Math.max(...full.map((fr) => fr.items.filter((i) => i.kind === 'object' && !i.id.startsWith('prop-')).length))
   if (crowd > 5) issues.push({ level: 'warn', text: `${crowd} pictures are on show at once; five is plenty` })
 
-  return { fps: FPS, full, reduced, storyFrames, loopSeconds, tellings, quiet, afterStory: story.afterStory, windows, contacts, sfx, seconds, issues }
+  // Rings first (small one nearest his cap), then the bubble swells from the top ring and overshoots slightly.
+  const opening: [number, number, number, number][] = [
+    [0, 0.5, 0, 0.2],
+    [0, 1, 0, 0.2],
+    [0.6, 1, 0, 0.2],
+    [1, 1, 0.5, 0.3],
+    [1, 1, 0.85, 0.6],
+    [1, 1, 1, 0.92],
+    [1, 1, 1, 1.07],
+    [1, 1, 1, 1],
+  ]
+  const intro: Frame[] = opening.map(([r1, r2b, o, s]) => ({ step: 0, phase: 'story', bubble: { opacity: o, scale: s, rings: [r1, r2b] }, items: [] }))
+  const introReduced: Frame[] = [0.35, 0.7].map((o) => ({ step: 0, phase: 'story', bubble: { opacity: o, scale: 1, rings: [o, o] }, items: [] }))
+
+  return { fps: FPS, full, reduced, storyFrames, loopSeconds, loopStart, intro, introReduced, tellings, quiet, afterStory: story.afterStory, windows, contacts, sfx, seconds, issues }
 }

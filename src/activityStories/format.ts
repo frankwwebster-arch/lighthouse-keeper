@@ -15,7 +15,11 @@ export type AfterStory = 'loop' | 'hold' | 'hide'
 export type CastRole = 'hero' | 'support' | 'result'
 
 /** What a step does. Each verb has one fixed motion; see VERBS. */
-export type Verb = 'arrive' | 'present' | 'land-on' | 'flip' | 'drop-in' | 'strike' | 'scrub' | 'pour' | 'tighten' | 'reveal' | 'settle'
+export type Verb = 'arrive' | 'present' | 'land-on' | 'flip' | 'drop-in' | 'strike' | 'scrub' | 'pour' | 'tighten' | 'reveal' | 'serve' | 'pause' | 'settle'
+/** `around`: supports come in from both sides. `left-to-right`: everything enters from the left and finished things leave to the right. */
+export type Flow = 'around' | 'left-to-right'
+/** A corner of the bubble, or `orbit`: small and circling slowly just outside the bubble, clear of the action. */
+export type PropSlot = 'orbit' | 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'
 
 export interface CastMember {
   picture: string
@@ -48,6 +52,14 @@ export interface Ambient {
   toStep: number
 }
 
+/** Scene-setting pictures (tongs, ketchup) that stay at the bubble's edge for a range of steps, bobbing gently. */
+export interface Prop {
+  picture: string
+  at: PropSlot
+  fromStep: number
+  toStep: number
+}
+
 export interface StorySfx {
   step: number
   at: 'start' | 'contact' | 'end'
@@ -65,9 +77,13 @@ export interface Story {
   afterStory: AfterStory
   /** Overall speed: 1 is normal, 1.25 is a quarter faster. */
   pace: number
+  flow: Flow
+  /** When it retells, start again from this step (1-based), so setting-up steps play only the first time. */
+  loopFrom?: number
   cast: Record<string, CastMember>
   steps: Step[]
   ambient: Ambient[]
+  props: Prop[]
   sfx: StorySfx[]
   notes?: string
 }
@@ -112,6 +128,8 @@ export const VERBS: Record<Verb, { label: string; needs: ('who' | 'onto')[]; hin
   pour: { label: 'pours onto', needs: ['who', 'onto'], hint: 'Tips over it so drops fall, then leaves.' },
   tighten: { label: 'tightens', needs: ['who', 'onto'], hint: 'Turns in place on its edge, then leaves.' },
   reveal: { label: 'appears from', needs: ['who', 'onto'], hint: 'Bursts out; anything stacked on it is used up.' },
+  serve: { label: 'is served', needs: ['who'], hint: 'Leaves the bubble to the right (in a left-to-right story) or upwards.' },
+  pause: { label: 'pause', needs: [], hint: 'A beat where nothing new happens; the heat and props carry on.' },
   settle: { label: 'quiet moment', needs: [], hint: 'Nothing moves for a moment before the story starts again.' },
 }
 
@@ -144,6 +162,12 @@ export function cleanStory(raw: unknown): Story | null {
       ? [{ picture: a.picture, on: a.on, fromStep: a.fromStep as number, toStep: a.toStep as number }]
       : [],
   )
+  const SLOTS: PropSlot[] = ['orbit', 'top-left', 'top-right', 'bottom-left', 'bottom-right']
+  const props: Prop[] = (Array.isArray(raw.props) ? raw.props : []).flatMap((a): Prop[] =>
+    isObj(a) && typeof a.picture === 'string' && SLOTS.includes(a.at as PropSlot) && Number.isInteger(a.fromStep) && Number.isInteger(a.toStep)
+      ? [{ picture: a.picture, at: a.at as PropSlot, fromStep: a.fromStep as number, toStep: a.toStep as number }]
+      : [],
+  )
   const sfx: StorySfx[] = (Array.isArray(raw.sfx) ? raw.sfx : []).flatMap((c): StorySfx[] =>
     isObj(c) && Number.isInteger(c.step) && typeof c.cue === 'string'
       ? [{ step: c.step as number, at: c.at === 'start' || c.at === 'end' ? c.at : 'contact', cue: c.cue, owner: str(c.owner, String(raw.id)), kind: c.kind === 'asset-state' || c.kind === 'completion' ? c.kind : 'activity-beat' }]
@@ -159,9 +183,12 @@ export function cleanStory(raw: unknown): Story | null {
     bodyCompatibility: raw.bodyCompatibility === 'dedicated-pose-required' ? 'dedicated-pose-required' : 'rear-work-with-context',
     afterStory: raw.afterStory === 'hold' || raw.afterStory === 'hide' ? raw.afterStory : 'loop',
     pace,
+    flow: raw.flow === 'left-to-right' ? 'left-to-right' : 'around',
+    ...(Number.isInteger(raw.loopFrom) && (raw.loopFrom as number) > 1 && (raw.loopFrom as number) <= steps.length ? { loopFrom: raw.loopFrom as number } : {}),
     cast,
     steps,
     ambient,
+    props,
     sfx,
     ...(typeof raw.notes === 'string' && raw.notes ? { notes: raw.notes } : {}),
   }

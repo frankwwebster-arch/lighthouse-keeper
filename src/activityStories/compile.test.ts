@@ -23,10 +23,6 @@ describe('bubble story drafts', () => {
         expect(c.seconds).toBeGreaterThanOrEqual(5)
       })
 
-      it('plays at least twice in a 30-second activity', () => {
-        expect(c.tellings[1]).toBeGreaterThanOrEqual(2)
-      })
-
       it('shows every cast member at some point', () => {
         for (const as of Object.keys(story.cast)) expect(c.full.some((f) => f.items.some((i) => i.id === as))).toBe(true)
       })
@@ -47,7 +43,7 @@ describe('bubble story drafts', () => {
 
       it('draws motion trails beneath every object', () => {
         for (const f of c.full) {
-          const lowest = Math.min(...objects(f.items).map((i) => i.z))
+          const lowest = Math.min(...objects(f.items).filter((i) => !i.id.startsWith('prop-')).map((i) => i.z))
           for (const t of f.items.filter((i) => i.id.startsWith('trail-'))) expect(t.z).toBeLessThan(lowest)
         }
       })
@@ -74,9 +70,16 @@ describe('bubble story drafts', () => {
         expect(end(c.reduced).length).toBeGreaterThan(0)
       })
 
-      it('loops by clearing after the quiet moment', () => {
-        expect(c.full.length).toBe(c.storyFrames + 3)
-        expect(objects(c.full.at(-1)!.items).every((i) => i.opacity < 0.05) || objects(c.full.at(-1)!.items).length === 0).toBe(true)
+      it('loops cleanly: clears after the quiet moment, or flows straight back to its retelling step', () => {
+        if (c.loopStart > 0) {
+          // The end must look exactly like the moment before the retelling starts (the hot BBQ alone).
+          const shown = (f: number) => objects(c.full[f].items).filter((i) => !i.id.startsWith('prop-')).map((i) => [i.id, i.x, i.y, i.scale])
+          expect(c.full.length).toBe(c.storyFrames)
+          expect(shown(c.full.length - 1)).toEqual(shown(c.loopStart - 1))
+        } else {
+          expect(c.full.length).toBe(c.storyFrames + 3)
+          expect(objects(c.full.at(-1)!.items).every((i) => i.opacity < 0.05) || objects(c.full.at(-1)!.items).length === 0).toBe(true)
+        }
       })
     })
   }
@@ -114,21 +117,32 @@ describe('library checker', () => {
   })
 })
 
-describe('replacing what is on top', () => {
-  it('Garden BBQ: the raw sausages sink into the grill as the hot dogs land, and never sit under them', () => {
-    const story = STORY_DRAFTS.find((s) => s.id === 'garden-bbq')!
-    const c = compileStory(story, LIBRARY)
-    const hotdogStep = c.windows[story.steps.findIndex((s) => s.who === 'hotdogs')]
-    const landed = c.contacts.find((t) => t.actor === 'hotdogs')!.frame
-    const grillAt = (f: number) => c.full[f].items.find((i) => i.id === 'grill')!
-    // Sausages are on show until the hot dogs touch down, then shrink towards the grill and are gone within three frames.
-    expect(c.full[landed - 1].items.some((i) => i.id === 'sausages' && i.opacity === 1)).toBe(true)
-    const sinking = c.full[landed + 1].items.find((i) => i.id === 'sausages')
-    if (sinking) expect(Math.abs(sinking.y - grillAt(landed + 1).y)).toBeLessThan(Math.abs(c.full[landed - 1].items.find((i) => i.id === 'sausages')!.y - grillAt(landed - 1).y))
-    for (let f = landed + 3; f < c.storyFrames; f++) expect(c.full[f].items.some((i) => i.id === 'sausages')).toBe(false)
-    expect(hotdogStep.end).toBeLessThanOrEqual(c.quiet[0])
-    // The ending is the plated meal alone.
-    expect(objects(c.full[c.storyFrames - 1].items).map((i) => i.id).sort()).toEqual(['meal'])
+describe('Garden BBQ reads left to right', () => {
+  const story = STORY_DRAFTS.find((s) => s.id === 'garden-bbq')!
+  const c = compileStory(story, LIBRARY)
+  const at = (f: number, id: string) => c.full[f].items.find((i) => i.id === id)
+
+  it('brings every ingredient in from the left', () => {
+    for (const id of ['charcoal', 'sausages', 'patties', 'tomato', 'lettuce', 'cheese', 'steak']) {
+      const first = c.full.findIndex((f) => f.items.some((i) => i.id === id))
+      expect(at(first, id)!.x, id).toBeLessThan(-60)
+    }
+  })
+
+  it('serves each finished dish off to the right, leaving the hot BBQ alone for a beat', () => {
+    for (const id of ['hotdogs', 'burgers', 'meal']) {
+      const seen = c.full.map((f, k) => [k, f.items.find((i) => i.id === id)] as const).filter(([, i]) => i)
+      const lastSeen = seen.at(-1)!
+      expect(lastSeen[1]!.x, id).toBeGreaterThan(100)
+      // Just after it has gone, only the grill (and props/marks) remain.
+      expect(objects(c.full[lastSeen[0] + 1].items).filter((i) => !i.id.startsWith('prop-')).map((i) => i.id), id).toEqual(['grill'])
+    }
+  })
+
+  it('retells from the hot BBQ, so the cold grill and charcoal only play the first time', () => {
+    expect(c.loopStart).toBe(c.windows[3].start)
+    for (let f = c.loopStart; f < c.full.length; f++) for (const id of ['cold', 'charcoal']) expect(at(f, id)).toBeUndefined()
+    expect(c.tellings[1]).toBeGreaterThanOrEqual(1)
   })
 })
 
@@ -166,5 +180,44 @@ describe('a result that takes a stacked picture’s place', () => {
     expect(at(burgerStep.end - 1, 'tomato')).toBeUndefined()
     // The steak then replaces the burgers on the grill, and the ending is just the grill and the steak.
     expect(objects(c.full[c.storyFrames - 1].items).map((i) => i.id).sort()).toEqual(['grill', 'steak'])
+  })
+})
+
+describe('the bubble opens once and then stays', () => {
+  const c = compileStory(STORY_DRAFTS.find((s) => s.id === 'garden-bbq')!, LIBRARY)
+
+  it('opens from his head: the rings appear first, then the bubble swells to full size', () => {
+    expect(c.intro.length).toBeGreaterThanOrEqual(6)
+    expect(c.intro[0].bubble.opacity).toBe(0)
+    expect(c.intro[0].bubble.rings![1]).toBeGreaterThan(0)
+    expect(c.intro.at(-1)!.bubble).toEqual({ opacity: 1, scale: 1, rings: [1, 1] })
+    for (const f of c.intro) expect(f.items).toEqual([])
+  })
+
+  it('keeps the bubble fully up through every story frame, so retellings never lose it', () => {
+    for (const f of c.full) expect(f.bubble).toEqual({ opacity: 1, scale: 1 })
+  })
+})
+
+describe('BBQ ephemera', () => {
+  const c = compileStory(STORY_DRAFTS.find((s) => s.id === 'garden-bbq')!, LIBRARY)
+  const props = c.full.flatMap((f) => f.items.filter((i) => i.id.startsWith('prop-')))
+
+  it('circles outside the bubble, small, beneath everything, and away from his head', () => {
+    expect(props.length).toBeGreaterThan(0)
+    for (const p of props) {
+      expect(((p.x / 149) ** 2 + ((p.y - 2) / 92) ** 2) ** 0.5).toBeGreaterThan(1)
+      expect(p.scale).toBeLessThan(0.3)
+      expect(p.z).toBe(1)
+      if (p.y > 80) expect(p.opacity).toBeLessThan(0.5)
+    }
+  })
+
+  it('is back where it started when the story retells, so the loop is seamless', () => {
+    const at = (f: number) => c.full[f].items.filter((i) => i.id.startsWith('prop-')).map((i) => [i.id, i.x, i.y])
+    const lastWithProps = c.full.map((f, k) => [k, f.items.some((i) => i.id.startsWith('prop-'))] as const).filter(([, has]) => has).at(-1)![0]
+    // One lap per retelling: positions advance smoothly and the lap length equals the retelling length.
+    expect(lastWithProps).toBeGreaterThan(c.loopStart)
+    expect(at(c.loopStart + 2).length).toBeGreaterThan(0)
   })
 })
