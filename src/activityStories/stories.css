@@ -5,7 +5,8 @@
 .ss-stage { position: relative; width: 380px; height: 330px; overflow: hidden; border-radius: 6px; background: linear-gradient(#24414c 0 73%, #1b333b 73%); transform: scale(1.4); transform-origin: top center; margin-bottom: 132px; }
 .ss-actor { position: absolute; left: 62px; top: 250px; width: 256px; height: 320px; object-fit: contain; }
 .ss-cloud { position: absolute; left: 10px; top: 4px; width: 360px; height: 230px; }
-.ss-bubble { position: absolute; inset: 25px 31px 20px; background: rgba(246, 239, 211, .22); border: 3px solid rgba(239, 246, 245, .84); border-radius: 50%; box-shadow: 0 5px 0 rgba(9, 25, 34, .24); transform-origin: 50% 100%; }
+.ss-bubble { position: absolute; inset: 0; width: 360px; height: 230px; overflow: visible; filter: drop-shadow(0 5px 0 rgba(9, 25, 34, .24)); }
+.ss-bubble path { fill: rgba(246, 239, 211, .22); stroke: rgba(239, 246, 245, .84); stroke-width: 3; stroke-linejoin: round; }
 .ss-ring { position: absolute; border: 3px solid rgba(239, 246, 245, .72); border-radius: 50%; background: rgba(246, 239, 211, .16); }
 .ss-ring1 { width: 22px; height: 18px; left: 169px; top: 214px; } .ss-ring2 { width: 12px; height: 10px; left: 174px; top: 236px; }
 .ss-piece { position: absolute; left: 50%; top: 50%; width: 140px; height: 140px; object-fit: contain; filter: drop-shadow(0 5px 4px rgba(2, 10, 15, .24)); pointer-events: none; }

@@ -203,11 +203,13 @@ describe('BBQ ephemera', () => {
   const c = compileStory(STORY_DRAFTS.find((s) => s.id === 'garden-bbq')!, LIBRARY)
   const props = c.full.flatMap((f) => f.items.filter((i) => i.id.startsWith('prop-')))
 
-  it('circles outside the bubble, small, beneath everything, and away from his head', () => {
+  it('circles inside the bubble, beneath everything, and away from his head', () => {
     expect(props.length).toBeGreaterThan(0)
     for (const p of props) {
-      expect(((p.x / 149) ** 2 + ((p.y - 2) / 92) ** 2) ** 0.5).toBeGreaterThan(1)
-      expect(p.scale).toBeLessThan(0.3)
+      // Its centre plus its half-size stays within the rim.
+      const half = (140 * p.scale) / 2
+      expect(((Math.abs(p.x) + half * 0.6) / 149) ** 2 + ((Math.abs(p.y - 2) + half * 0.4) / 92) ** 2).toBeLessThan(1)
+      expect(p.scale).toBeCloseTo(0.39, 2)
       expect(p.z).toBe(1)
       if (p.y > 80) expect(p.opacity).toBeLessThan(0.5)
     }
@@ -219,5 +221,21 @@ describe('BBQ ephemera', () => {
     // One lap per retelling: positions advance smoothly and the lap length equals the retelling length.
     expect(lastWithProps).toBeGreaterThan(c.loopStart)
     expect(at(c.loopStart + 2).length).toBeGreaterThan(0)
+  })
+})
+
+describe('the bubble outline', () => {
+  it('is a loose, slowly drifting shape around the V2 oval, growing from the bottom for the opening', async () => {
+    const { bubbleOutline } = await import('./compile')
+    const pts = (d: string) => [...d.matchAll(/[ML]([\d.]+) ([\d.]+)/g)].map((m) => [Number(m[1]), Number(m[2])])
+    const a = pts(bubbleOutline(0)), b = pts(bubbleOutline(40))
+    expect(a).toHaveLength(72)
+    const radii = a.map(([x, y]) => Math.hypot((x - 180) / 149, (y - 117.5) / 92.5))
+    expect(Math.min(...radii)).toBeGreaterThan(0.92)
+    expect(Math.max(...radii)).toBeLessThan(1.08)
+    expect(Math.max(...radii) - Math.min(...radii)).toBeGreaterThan(0.04)
+    expect(a).not.toEqual(b)
+    const small = pts(bubbleOutline(0, 0.3))
+    expect(Math.max(...small.map(([, y]) => y))).toBeGreaterThan(200)
   })
 })

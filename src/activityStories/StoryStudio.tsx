@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { verifyPin } from '../game/remote'
-import { compileStory, FPS, type Frame } from './compile'
+import { bubbleOutline, compileStory, FPS, type Frame } from './compile'
 import { LIBRARY, STORY_DRAFTS } from './drafts'
 import { STORY_SCHEMA, VERBS, cleanStory, versionFor, type Ambient, type CastRole, type Flow, type Prop, type PropSlot, type Speed, type Step, type Story, type Verb } from './format'
 import { loadStories, resetStory, saveStory, storyHash, type SavedStory } from './store'
@@ -209,7 +209,7 @@ export default function StoryStudio() {
         {draftMoved && <p className="st-warn">Claude has updated the draft since you edited this. Your version is showing; “Back to Claude’s draft” shows the new one.</p>}
 
         <div className="ss-stagewrap">
-          <BubbleStage frame={frame} body={bodyFrame?.url} showMarks={showMarks} showBubble={showBubble} />
+          <BubbleStage frame={frame} t={f} body={bodyFrame?.url} showMarks={showMarks} showBubble={showBubble} />
           <div className="ss-beat">
             {currentStep === 0 ? 'The bubble opens' : <>Step {currentStep}: {stepText(story, story.steps[currentStep - 1])}</>}
             {frame?.phase === 'quiet' ? ' · quiet' : frame?.phase === 'clear' ? ' · clearing for the next telling' : ''}
@@ -367,14 +367,16 @@ function AddCast({ onAdd, taken }: { onAdd: (as: string, picture: string) => voi
 }
 
 /** The bubble over the approved rear-work keeper, drawn the same way as Codex's V2 review pages. */
-export function BubbleStage({ frame, body, showMarks, showBubble }: { frame: Frame | undefined; body?: string; showMarks: boolean; showBubble: boolean }) {
+export function BubbleStage({ frame, t, body, showMarks, showBubble }: { frame: Frame | undefined; t: number; body?: string; showMarks: boolean; showBubble: boolean }) {
   return (
     <div className="ss-stage">
       {body && <img className="ss-actor" src={body} alt="The keeper at work, seen from behind" />}
       <div className="ss-cloud">
         {showBubble && (
           <>
-            <div className="ss-bubble" style={{ opacity: frame?.bubble.opacity ?? 1, transform: `scale(${frame?.bubble.scale ?? 1})` }} />
+            <svg className="ss-bubble" viewBox="0 0 360 230" aria-hidden="true" style={{ opacity: frame?.bubble.opacity ?? 1 }}>
+              <path d={bubbleOutline(t, frame?.bubble.scale ?? 1)} />
+            </svg>
             <div className="ss-ring ss-ring1" style={{ opacity: frame?.bubble.rings?.[0] ?? frame?.bubble.opacity ?? 1 }} />
             <div className="ss-ring ss-ring2" style={{ opacity: frame?.bubble.rings?.[1] ?? frame?.bubble.opacity ?? 1 }} />
           </>

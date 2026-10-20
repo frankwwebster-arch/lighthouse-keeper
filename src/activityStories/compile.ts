@@ -123,9 +123,9 @@ const LANES_LTR = [
 /** Where props sit, inside the bubble's rim. */
 const PROP_AT = { 'top-left': { x: -66, y: -60 }, 'top-right': { x: 66, y: -60 }, 'bottom-left': { x: -108, y: 52 }, 'bottom-right': { x: 108, y: 52 } }
 const EXIT_X = 172
-/** Orbiting props circle just outside the bubble's rim (149 × 92) and fade out near his head. */
-const ORBIT = { rx: 166, ry: 104, cy: 2, hideBelow: 0.62 }
-const SCALE = { hero: 0.78, support: 0.5, result: 0.7, aside: 0.44, mark: 0.42, contact: 0.48, trail: 0.36, prop: 0.34, orbit: 0.26 }
+/** Orbiting props circle inside the bubble, just within its rim (149 × 92), beneath the main action, and fade out at the bottom near his head. */
+const ORBIT = { rx: 118, ry: 64, cy: 4, hideBelow: 0.72 }
+const SCALE = { hero: 0.78, support: 0.5, result: 0.7, aside: 0.44, mark: 0.42, contact: 0.48, trail: 0.36, prop: 0.34, orbit: 0.39 }
 const APPROACH: Record<Speed, number> = { quick: 3, normal: 4, slow: 6 }
 const WORK: Record<Speed, number> = { quick: 4, normal: 6, slow: 9 }
 const LAND: Record<Speed, number> = { quick: 3, normal: 4, slow: 6 }
@@ -154,6 +154,25 @@ const sideOf = (x: number) => (x < 0 ? -1 : 1)
 const paced = (k: number, pace: number) => Math.max(1, Math.round(k / pace))
 
 /** Frames a step takes at the story's pace. The quiet moment never drops below five frames. */
+/**
+ * The bubble's loose, hand-drawn outline as an SVG path in the 360 × 230 cloud box: the V2 oval
+ * (centre 180, 117.5; radii 149 × 92.5) with a few gentle lobes that drift slowly over time `t`
+ * (frames), so the edge never reads as a perfect machine ellipse. `scale` grows it from the
+ * bottom centre, for the opening.
+ */
+export function bubbleOutline(t: number, scale = 1, points = 72): string {
+  const cx = 180, cy = 117.5, rx = 149, ry = 92.5, ox = 180, oy = 210
+  const d: string[] = []
+  for (let i = 0; i < points; i++) {
+    const a = (i / points) * Math.PI * 2
+    const wobble = 1 + 0.035 * Math.sin(3 * a + 0.9 + t * 0.045) + 0.022 * Math.sin(5 * a + 2.1 - t * 0.03) + 0.012 * Math.sin(8 * a + t * 0.02)
+    const x = ox + (cx + rx * wobble * Math.cos(a) - ox) * scale
+    const y = oy + (cy + ry * wobble * Math.sin(a) - oy) * scale
+    d.push(`${i ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`)
+  }
+  return d.join(' ') + ' Z'
+}
+
 export function stepFrames(step: Step, pace = 1): number {
   const sp = step.speed ?? 'normal'
   switch (step.do) {
