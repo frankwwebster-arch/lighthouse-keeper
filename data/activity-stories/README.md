@@ -116,14 +116,15 @@ win over the draft file, exactly like recipes. Claude copies them back into
 - **loopFrom** (optional): retellings start again from this step, so
   setting-up steps (the cold BBQ, the charcoal) play only the first time.
 - **props**: small scene-setting pictures (tools, sauces) for a range of
-  steps, either `orbit` (circling inside the bubble just within its rim,
-  beneath the main action, one lap per retelling, fading at the bottom near
-  his head) or fixed in a corner.
+  steps, either `orbit` (circling inside the bubble all the way round,
+  beneath the main action, one lap per retelling, each turning gently on the
+  spot) or fixed in a corner.
 - **sfx** names a sound and its owner; the story never contains audio.
 
 The bubble's edge is loose and hand-drawn: `bubbleOutline()` in
-`src/activityStories/compile.ts` gives the shape (the V2 oval with gentle,
-slowly drifting lobes), so the studio and the game draw the same bubble.
+`src/activityStories/compile.ts` gives the shape (the `BUBBLE` oval, grown
+from V2's so the orbit fits all the way round, with gentle, slowly drifting
+lobes), so the studio and the game draw the same bubble.
 
 Before the first telling the bubble opens: its two rings pop up from his cap
 and the bubble swells out of them. Retellings skip the opening, so the bubble

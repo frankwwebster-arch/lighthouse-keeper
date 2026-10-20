@@ -203,16 +203,24 @@ describe('BBQ ephemera', () => {
   const c = compileStory(STORY_DRAFTS.find((s) => s.id === 'garden-bbq')!, LIBRARY)
   const props = c.full.flatMap((f) => f.items.filter((i) => i.id.startsWith('prop-')))
 
-  it('circles inside the bubble, beneath everything, and away from his head', () => {
+  it('circles inside the bubble all the way round, beneath everything, turning gently, never fading at the bottom', () => {
     expect(props.length).toBeGreaterThan(0)
     for (const p of props) {
-      // Its centre plus its half-size stays within the rim.
+      // Its centre plus its half-size stays within the (grown) rim: centre y −5, radii 162 × 100 in bubble-local terms.
       const half = (140 * p.scale) / 2
-      expect(((Math.abs(p.x) + half * 0.6) / 149) ** 2 + ((Math.abs(p.y - 2) + half * 0.4) / 92) ** 2).toBeLessThan(1)
+      expect(((Math.abs(p.x) + half * 0.6) / 162) ** 2 + ((Math.abs(p.y + 5) + half * 0.5) / 100) ** 2).toBeLessThan(1)
       expect(p.scale).toBeCloseTo(0.39, 2)
       expect(p.z).toBe(1)
-      if (p.y > 80) expect(p.opacity).toBeLessThan(0.5)
     }
+    // Fully visible at the bottom of the orbit too (only the start and end of the run fade).
+    const bottom = props.filter((p) => p.y > 55)
+    expect(bottom.length).toBeGreaterThan(0)
+    expect(Math.max(...bottom.map((p) => p.opacity))).toBe(1)
+    // They turn: the same prop changes angle from frame to frame, slowly.
+    const one = c.full.map((f) => f.items.find((i) => i.id === 'prop-0')).filter(Boolean)
+    const step = Math.abs(one[10]!.rotation - one[9]!.rotation)
+    expect(step).toBeGreaterThan(0.5)
+    expect(step).toBeLessThan(10)
   })
 
   it('is back where it started when the story retells, so the loop is seamless', () => {
@@ -225,12 +233,14 @@ describe('BBQ ephemera', () => {
 })
 
 describe('the bubble outline', () => {
-  it('is a loose, slowly drifting shape around the V2 oval, growing from the bottom for the opening', async () => {
+  it('is a loose, slowly drifting shape around the bubble oval, growing from the bottom for the opening', async () => {
     const { bubbleOutline } = await import('./compile')
-    const pts = (d: string) => [...d.matchAll(/[ML]([\d.]+) ([\d.]+)/g)].map((m) => [Number(m[1]), Number(m[2])])
+    const pts = (d: string) => [...d.matchAll(/[ML](-?[\d.]+) (-?[\d.]+)/g)].map((m) => [Number(m[1]), Number(m[2])])
     const a = pts(bubbleOutline(0)), b = pts(bubbleOutline(40))
     expect(a).toHaveLength(72)
-    const radii = a.map(([x, y]) => Math.hypot((x - 180) / 149, (y - 117.5) / 92.5))
+    const radii = a.map(([x, y]) => Math.hypot((x - 180) / 162, (y - 110) / 100))
+    // The loose edge stays inside the 360 × 230 drawing box, so nothing is clipped.
+    for (const [x, y] of a) expect(x >= 0 && x <= 360 && y >= 0 && y <= 230).toBe(true)
     expect(Math.min(...radii)).toBeGreaterThan(0.92)
     expect(Math.max(...radii)).toBeLessThan(1.08)
     expect(Math.max(...radii) - Math.min(...radii)).toBeGreaterThan(0.04)

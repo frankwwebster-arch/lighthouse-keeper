@@ -123,8 +123,14 @@ const LANES_LTR = [
 /** Where props sit, inside the bubble's rim. */
 const PROP_AT = { 'top-left': { x: -66, y: -60 }, 'top-right': { x: 66, y: -60 }, 'bottom-left': { x: -108, y: 52 }, 'bottom-right': { x: 108, y: 52 } }
 const EXIT_X = 172
-/** Orbiting props circle inside the bubble, just within its rim (149 × 92), beneath the main action, and fade out at the bottom near his head. */
-const ORBIT = { rx: 118, ry: 64, cy: 4, hideBelow: 0.72 }
+/**
+ * The bubble (cloud-box pixels): bottom fixed just above the connector rings, grown upwards and outwards so the
+ * orbiting props fit all the way round, while its loose edge stays inside the 360 × 230 box. Centre (180, 110),
+ * radii 162 × 100; in bubble-local terms its centre is y = −5.
+ */
+export const BUBBLE = { cx: 180, cy: 110, rx: 162, ry: 100, bottom: 210 }
+/** Orbiting props circle inside the bubble, within its rim and beneath the main action, all the way round. */
+const ORBIT = { rx: 128, ry: 74, cy: BUBBLE.cy - 115 }
 const SCALE = { hero: 0.78, support: 0.5, result: 0.7, aside: 0.44, mark: 0.42, contact: 0.48, trail: 0.36, prop: 0.34, orbit: 0.39 }
 const APPROACH: Record<Speed, number> = { quick: 3, normal: 4, slow: 6 }
 const WORK: Record<Speed, number> = { quick: 4, normal: 6, slow: 9 }
@@ -155,13 +161,14 @@ const paced = (k: number, pace: number) => Math.max(1, Math.round(k / pace))
 
 /** Frames a step takes at the story's pace. The quiet moment never drops below five frames. */
 /**
- * The bubble's loose, hand-drawn outline as an SVG path in the 360 × 230 cloud box: the V2 oval
- * (centre 180, 117.5; radii 149 × 92.5) with a few gentle lobes that drift slowly over time `t`
+ * The bubble's loose, hand-drawn outline as an SVG path in the 360 × 230 cloud box: the BUBBLE oval
+ * with a few gentle lobes that drift slowly over time `t`
  * (frames), so the edge never reads as a perfect machine ellipse. `scale` grows it from the
  * bottom centre, for the opening.
  */
 export function bubbleOutline(t: number, scale = 1, points = 72): string {
-  const cx = 180, cy = 117.5, rx = 149, ry = 92.5, ox = 180, oy = 210
+  const { cx, cy, rx, ry, bottom: oy } = BUBBLE
+  const ox = cx
   const d: string[] = []
   for (let i = 0; i < points; i++) {
     const a = (i / points) * Math.PI * 2
@@ -605,10 +612,10 @@ export function compileStory(input: Story, lib: Library): Compiled {
         if (pr.at === 'orbit') {
           const slot = orbiters.indexOf(pr)
           const theta = -Math.PI / 2 + (2 * Math.PI * slot) / orbiters.length + (2 * Math.PI * (f - loopStart)) / Math.max(1, storyFrames - loopStart)
-          const sin = Math.sin(theta)
-          const head = sin > ORBIT.hideBelow ? Math.max(0, 1 - (sin - ORBIT.hideBelow) / 0.18) : 1
-          if (fade * head <= 0.02) continue
-          items.push({ id: `prop-${k}`, picture: pr.picture, url: url2(pr.picture), kind: 'object', x: r2(ORBIT.rx * Math.cos(theta)), y: r2(ORBIT.cy + ORBIT.ry * sin), scale: SCALE.orbit, rotation: r2((theta * 180) / Math.PI / 6 + 10 * Math.sin(f * 0.4 + slot)), opacity: r2(fade * head), z: 1 })
+          // Each also turns gently on the spot: one full turn per lap, alternate ones the other way, so the loop stays seamless.
+          const lap = (f - loopStart) / Math.max(1, storyFrames - loopStart)
+          const spin = (slot % 2 ? -1 : 1) * 360 * lap + (360 * slot) / orbiters.length
+          items.push({ id: `prop-${k}`, picture: pr.picture, url: url2(pr.picture), kind: 'object', x: r2(ORBIT.rx * Math.cos(theta)), y: r2(ORBIT.cy + ORBIT.ry * Math.sin(theta)), scale: SCALE.orbit, rotation: r2(spin), opacity: r2(fade), z: 1 })
           continue
         }
         const at = PROP_AT[pr.at]
