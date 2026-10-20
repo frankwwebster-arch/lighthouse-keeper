@@ -305,21 +305,20 @@ archive manifest are hash-pinned in
 `docs/review/kitchen-modular-join-workbench-v33-approval-2026-10-20.json`.
 V33 remains unpromoted and unwired.
 
-Kitchen Modular Fridge Workbenches V34 and V35 are rejected immutable
-provenance. V34 used obsolete registration, a heavy dark contour and incomplete
-join handling. V35 corrected placement and joins but reversed the Broken hinge
-side and changed the apparent door dimensions. The active successor is V36 at
-`/keeper-review/kitchen-modular-fridge-workbench-v36/`. It uses a coordinated
-thin-navy-outline family: both states are left-hinged, and Broken rigidly rotates
-the literal `68 × 52 px` Standard door at scale `1:1` around the surviving
-lower-left hinge. The opposite lower corner reaches the floor and total
-horizontal overflow stays within four pixels. The body remains exactly
-`84 × 74 px` at y=134–208. All three movable assets still snap collision-free
-to distinct free origins and preserve exact Prime midpoint anchors on y=218.
-Oven pairs retain V32 triangular healing; every other fridge adjacency receives
-the V22 blue backfill and exact countertop cap. The 40-frame/4-fps ten-second
-drip/ripple remains separate, removable and variable-speed. All 24 layouts are
-verified. V36 awaits visual review and changes no Final or runtime asset.
+Kitchen Modular Fridge Workbenches V34–V36 are rejected immutable provenance.
+V34 used obsolete registration and incomplete joins; V35 reversed the Broken
+hinge side and changed the door dimensions; V36 corrected those mechanics but
+its body blue and countertop depth did not match Cabinet V11. The active
+successor is V37 at `/keeper-review/kitchen-modular-fridge-workbench-v37/`.
+Its complete `84 × 14 px` worktop is constructed from exact Cabinet V11 pixels,
+and its blue frame uses Cabinet V11's exact body palette. V36's successful
+mechanics remain: both states are left-hinged, Broken rotates the literal
+`68 × 52 px` Standard door at scale `1:1` around the surviving lower-left
+hinge, the body is `84 × 74 px` at y=134–208 and overflow is at most four
+pixels. Three movable assets retain collision-free snapping, exact Prime
+midpoints and pair-aware healing. The ten-second drip/ripple remains separate
+and removable. All 24 layouts are verified. V37 awaits visual review and
+changes no Final or runtime asset.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

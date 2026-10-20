@@ -632,20 +632,18 @@ either order), and the V25 cutout/rounded end whenever the sink has no exact
 left neighbour. Repairs remain separate compositor layers; no source sprite is
 amended. See
 [`docs/KITCHEN_MODULAR_JOIN_WORKBENCH_V33_2026-10-20.md`](docs/KITCHEN_MODULAR_JOIN_WORKBENCH_V33_2026-10-20.md).
-Frank approved and hash-pinned exact V33 on 20 October 2026. V34 and V35 are
-rejected immutable fridge provenance: V34 used obsolete registration, a heavy
-outline and incomplete joins; V35 corrected those mechanics but reversed the
-Broken hinge side and changed the apparent door size. The active successor is
-`/keeper-review/kitchen-modular-fridge-workbench-v36/`. Its coordinated
-thin-navy-outline Standard/Broken family keeps the exact `84 × 74 px` body at
-y=134–208. Both states are left-hinged. Broken rigidly rotates the literal
-`68 × 52 px` Standard door at scale `1:1` around the surviving lower-left
-hinge, with no redrawing or resizing. Fridge, sink and oven retain distinct
-snap origins, exact Prime midpoint anchors and universal dynamic joins. The
-door/puddle remain within the four-pixel overflow allowance; drip/ripple stays
-separate, removable and variable-speed. V36 awaits visual review and is not
+Frank approved and hash-pinned exact V33 on 20 October 2026. V34–V36 are
+rejected immutable fridge provenance. V36 fixed the hinge, exact-door and
+outline defects but retained a brighter body blue and deeper top than Cabinet
+V11. The active successor is
+`/keeper-review/kitchen-modular-fridge-workbench-v37/`. Its `84 × 14 px`
+worktop is assembled from exact Cabinet V11 pixels and its blue frame uses the
+exact Cabinet V11 body palette. V36 mechanics are preserved: `84 × 74 px` body
+at y=134–208, consistent left hinges, literal `68 × 52 px` Standard door
+rotated at scale `1:1`, four-pixel overflow ceiling, distinct snap origins,
+exact Prime anchors and dynamic joins. V37 awaits visual review and is not
 promoted or wired. See
-[`docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V36_2026-10-20.md`](docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V36_2026-10-20.md).
+[`docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V37_2026-10-20.md`](docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V37_2026-10-20.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

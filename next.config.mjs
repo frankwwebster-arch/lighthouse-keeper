@@ -348,6 +348,11 @@ export default {
         destination: '/keeper-review/kitchen-modular-fridge-workbench-v36/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-modular-fridge-workbench-v37',
+        destination: '/keeper-review/kitchen-modular-fridge-workbench-v37/index.html',
+        permanent: false,
+      },
     ]
   },
 }

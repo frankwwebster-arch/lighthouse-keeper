@@ -1,0 +1,15 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "set": "kitchen-modular-fridge-workbench-v36",
+  "decision": "rejected",
+  "date": "2026-10-20",
+  "reviewer": "Frank",
+  "verbatimFeedback": "the healing mechanic works, but the body of the cabinet is the wrong shade of blue, and the worktop is too deep, so that it doesn't match the cabinet next to it",
+  "pinnedEvidence": {
+    "catalogue": {"file": "art/drafts/kitchen-modular-fridge-workbench-2026-10-20-v36/candidate-catalogue.json", "sha256": "be9009238c0d58ac17654044f73eb8a77f1c58fdb3a1f85f6ba2f48102a9174d"},
+    "publicShell": {"file": "public/keeper-review/kitchen-modular-fridge-workbench-v36/index.html", "sha256": "3ac8af62fcc0c25969537e48bef035afc300931e366c7a9b36d5bebe6368f210"},
+    "standard": {"file": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v36/fridge-standard.png", "sha256": "7f0f4f60bb7ffeda20d7c756a9f6becf64ec634fdc601ea9423a4533a084697b"},
+    "broken": {"file": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v36/fridge-broken-hinge-failed.png", "sha256": "65b4553ea967cba3622ce8fd4ac9dddc8a10045414cf0290c3379bf5ee578463"}
+  },
+  "supersession": "V37 retains V36 hinge and door mechanics but derives its fourteen-pixel countertop and blue body palette directly from approved Cabinet V11."
+}
