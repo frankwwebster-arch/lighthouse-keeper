@@ -71,7 +71,18 @@ remain yours as before.
    are now clean or finished (the cutlery at the end of washing up). None of
    the 13 marks says “clean”.
 
-Both follow `docs/ACTIVITY_CALLOUT_AUTHORING_STANDARD.md`. Once added, Frank
+3. **Garden BBQ redraws (Frank, 20 Oct evening).** Frank revised the story:
+   the charcoal flies in, the sausages go on, then the finished hot dogs fly
+   in and the sausages sink into the grill. Burgers no longer appear on top
+   of the hot dogs; they need uncooked burgers first and will be their own
+   follow-on story.
+   - Add the redrawn sausages (no plate underneath) as a **new version of
+     `bbq-sausages`**, not a new id, so the story picks them up at once.
+   - Add uncooked burgers as a new picture: `--kind object --family bbq
+     --label "Uncooked burgers"`, id `bbq-burgers-raw`. Claude then drafts
+     the burger story (raw patties go on, the cooked burgers replace them).
+
+All of these follow `docs/ACTIVITY_CALLOUT_AUTHORING_STANDARD.md`. Once added, Frank
 can put them into stories himself.
 
 ## Prompt Frank can paste into Codex
@@ -87,7 +98,9 @@ data/activity-stories/README.md on main.
    authoring standard, and add each as a new version with
    npm run activity-stories:add-picture.
 2. Draw and add a new mark, symbol-clean-glint (kind mark, family clean).
-3. Run npm run verify:activity-stories and npm test.
+3. Add Frank's plate-free sausages as a new version of bbq-sausages, and
+   uncooked burgers as a new picture, bbq-burgers-raw.
+4. Run npm run verify:activity-stories and npm test.
 
 Do not edit data/activity-stories/stories/, src/activityStories/ or any
 approved authority. Do not overwrite existing versions. Commit and push

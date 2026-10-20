@@ -260,7 +260,7 @@ export default function StoryStudio() {
                   {needs.includes('onto') && <select disabled={!editable} value={s.onto ?? ''} onChange={(e) => setStep(i, { ...s, onto: e.target.value })}><option value="">what?</option>{castNames.map((c) => <option key={c} value={c}>{c}</option>)}</select>}
                   {s.do !== 'settle' && <select disabled={!editable} value={s.speed ?? 'normal'} onChange={(e) => setStep(i, { ...s, speed: e.target.value as Speed })}>{SPEEDS.map((v) => <option key={v} value={v}>{v}</option>)}</select>}
                   {needs.includes('onto') && <select disabled={!editable} value={s.mark ?? ''} onChange={(e) => setStep(i, { ...s, mark: e.target.value || undefined })} title="The mark at each touch"><option value="">usual mark</option>{MARKS.map(([id, p]) => <option key={id} value={id}>{p.label}</option>)}</select>}
-                  {s.do === 'reveal' && <label className="st-dim"><input type="checkbox" disabled={!editable} checked={!!s.replace} onChange={(e) => setStep(i, { ...s, replace: e.target.checked || undefined })} /> takes its place</label>}
+                  {(s.do === 'reveal' || s.do === 'land-on' || s.do === 'flip') && <label className="st-dim" title={s.do === 'reveal' ? 'The result takes the place of what it came from' : 'What was already on it sinks in and vanishes'}><input type="checkbox" disabled={!editable} checked={!!s.replace} onChange={(e) => setStep(i, { ...s, replace: e.target.checked || undefined })} /> {s.do === 'reveal' ? 'takes its place' : 'replaces what’s on it'}</label>}
                 </div>
                 {editable && (
                   <span className="ss-tools">

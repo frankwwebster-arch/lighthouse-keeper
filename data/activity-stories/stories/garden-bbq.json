@@ -2,30 +2,88 @@
   "schema": "lighthouse-keeper/activity-story@1",
   "id": "garden-bbq",
   "label": "Garden BBQ",
-  "appliesTo": { "assetId": "outdoor.bbq", "label": "Garden barbecue" },
+  "appliesTo": {
+    "assetId": "outdoor.bbq",
+    "label": "Garden barbecue"
+  },
   "bodyCompatibility": "rear-work-with-context",
   "afterStory": "loop",
   "pace": 1,
   "cast": {
-    "grill": { "picture": "bbq-grill", "role": "hero" },
-    "charcoal": { "picture": "bbq-charcoal", "role": "support" },
-    "sausages": { "picture": "bbq-sausages", "role": "support" },
-    "hotdogs": { "picture": "bbq-hotdogs", "role": "support" },
-    "burgers": { "picture": "bbq-burgers", "role": "result" }
+    "grill": {
+      "picture": "bbq-grill",
+      "role": "hero"
+    },
+    "charcoal": {
+      "picture": "bbq-charcoal",
+      "role": "support"
+    },
+    "sausages": {
+      "picture": "bbq-sausages",
+      "role": "support"
+    },
+    "hotdogs": {
+      "picture": "bbq-hotdogs",
+      "role": "support"
+    }
   },
   "steps": [
-    { "do": "arrive", "who": "grill" },
-    { "do": "drop-in", "who": "charcoal", "onto": "grill" },
-    { "do": "flip", "who": "sausages", "onto": "grill", "mark": "symbol-sizzle-spark" },
-    { "do": "flip", "who": "hotdogs", "onto": "grill", "mark": "symbol-sizzle-spark" },
-    { "do": "reveal", "who": "burgers", "onto": "grill" },
-    { "do": "settle" }
+    {
+      "do": "arrive",
+      "who": "grill"
+    },
+    {
+      "do": "drop-in",
+      "who": "charcoal",
+      "onto": "grill"
+    },
+    {
+      "do": "flip",
+      "who": "sausages",
+      "onto": "grill",
+      "mark": "symbol-sizzle-spark"
+    },
+    {
+      "do": "flip",
+      "who": "hotdogs",
+      "onto": "grill",
+      "mark": "symbol-sizzle-spark",
+      "replace": true
+    },
+    {
+      "do": "settle"
+    }
   ],
-  "ambient": [{ "picture": "symbol-heat-curls", "on": "grill", "fromStep": 2, "toStep": 5 }],
+  "ambient": [
+    {
+      "picture": "symbol-heat-curls",
+      "on": "grill",
+      "fromStep": 2,
+      "toStep": 4
+    }
+  ],
   "sfx": [
-    { "step": 2, "at": "contact", "cue": "charcoal-rattle", "owner": "outdoor.bbq", "kind": "asset-state" },
-    { "step": 3, "at": "contact", "cue": "bbq-sizzle", "owner": "garden-bbq", "kind": "activity-beat" },
-    { "step": 5, "at": "contact", "cue": "food-ready", "owner": "garden-bbq", "kind": "completion" }
+    {
+      "step": 2,
+      "at": "contact",
+      "cue": "charcoal-rattle",
+      "owner": "outdoor.bbq",
+      "kind": "asset-state"
+    },
+    {
+      "step": 3,
+      "at": "contact",
+      "cue": "bbq-sizzle",
+      "owner": "garden-bbq",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 4,
+      "at": "contact",
+      "cue": "food-ready",
+      "owner": "garden-bbq",
+      "kind": "completion"
+    }
   ],
-  "notes": "Draft by Claude, 20 Oct 2026, from Codex's V2 Garden BBQ. Charcoal feeds the grill, the food flips on and stays, the burgers are the cooked result."
+  "notes": "Draft by Claude, 20 Oct 2026, revised from Frank's notes the same evening. The charcoal flies into the grill, the sausages flip on, then the finished hot dogs fly in and the sausages sink into the grill as they land. No burgers here: they need an uncooked-burger picture first and become their own follow-on story."
 }

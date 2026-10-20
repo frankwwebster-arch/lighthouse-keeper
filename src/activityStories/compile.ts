@@ -152,6 +152,7 @@ export function checkStory(story: Story, lib: Library): Issue[] {
     else if (m.version && !p.versions.some((v) => v.v === m.version)) issues.push({ level: 'warn', text: `${as}: version ${m.version} of ${m.picture} doesn't exist, so the current one is used` })
   }
   const status: Record<string, Status> = Object.fromEntries(Object.keys(story.cast).map((k) => [k, 'hidden']))
+  const sitsOn: Record<string, string> = {}
   story.steps.forEach((s, i) => {
     const n = i + 1
     const needs = VERBS[s.do].needs
@@ -174,7 +175,12 @@ export function checkStory(story: Story, lib: Library): Issue[] {
       status[s.who] = s.replace ? 'focus' : 'stacked'
       if (s.replace && s.onto) status[s.onto] = 'gone'
       for (const k of Object.keys(status)) if (k !== s.who && status[k] === 'stacked') status[k] = 'gone'
-    } else status[s.who] = 'stacked'
+    } else {
+      // A filling that replaces sends whatever was on its target down into it.
+      if (s.replace && s.onto) for (const k of Object.keys(sitsOn)) if (sitsOn[k] === s.onto && k !== s.who) { status[k] = 'gone'; delete sitsOn[k] }
+      status[s.who] = 'stacked'
+      if (s.onto) sitsOn[s.who] = s.onto
+    }
   })
   if (story.steps[0]?.do !== 'arrive') issues.push({ level: 'warn', step: 1, text: 'The first step is usually something arriving' })
   for (const a of story.ambient) {
@@ -316,6 +322,9 @@ export function compileStory(input: Story, lib: Library): Compiled {
     } else if (step.do === 'land-on' || step.do === 'flip') {
       const k = scaleK(APPROACH[sp])
       const s = baseScale(who)
+      // `replace`: whatever is on the target sinks into it as this one lands, and this one takes its place.
+      const displaced = step.replace ? stacks[onto!].filter((m) => m !== who) : []
+      if (step.replace) stacks[onto!] = []
       const to = stackTop(onto!, who)
       approach(who, f0, k, to, s, step.do === 'flip' ? { high: true, spin: 360 * -sideOf(laneFor(who).x) } : {})
       const e = ext(who, s)
@@ -323,6 +332,17 @@ export function compileStory(input: Story, lib: Library): Compiled {
       for (let i = k; i < rest; i++) {
         const w = (i - k + 1) / (rest - k)
         set(who, g + i, { x: to.x, y: to.y, s: s * (i === k ? 0.94 : 1), r: 6 * Math.sin(w * Math.PI * 2) * (1 - w), o: 1, z: 10 })
+      }
+      const into = last[onto!]!
+      const touchAt = ENTER + k - 1
+      for (const m of displaced) {
+        const p = last[m]
+        if (!p) continue
+        for (let i = 0; i < total; i++) {
+          const w = Math.max(0, Math.min(1, (i - touchAt + 1) / 3))
+          set(m, f0 + i, w <= 0 ? { ...p, z: 5 } : { ...p, x: lerp(p.x, into.x, w), y: lerp(p.y, into.y, w), s: p.s * (1 - 0.45 * w), r: 0, o: Math.max(0, 1 - w), z: 3 })
+        }
+        status[m] = 'gone'
       }
       stacks[onto!].push(who)
       status[who] = 'stacked'

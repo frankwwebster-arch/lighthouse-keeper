@@ -110,3 +110,21 @@ describe('library checker', () => {
     expect(execFileSync('node', [path.resolve(__dirname, '../../scripts/verify_activity_stories.mjs')], { encoding: 'utf8' })).toContain('check out')
   })
 })
+
+describe('replacing what is on top', () => {
+  it('Garden BBQ: the sausages sink into the grill as the hot dogs land, and never sit under them', () => {
+    const story = STORY_DRAFTS.find((s) => s.id === 'garden-bbq')!
+    const c = compileStory(story, LIBRARY)
+    const hotdogStep = c.windows[story.steps.findIndex((s) => s.who === 'hotdogs')]
+    const landed = c.contacts.find((t) => t.actor === 'hotdogs')!.frame
+    const grillAt = (f: number) => c.full[f].items.find((i) => i.id === 'grill')!
+    // Sausages are on show until the hot dogs touch down, then shrink towards the grill and are gone within three frames.
+    expect(c.full[landed - 1].items.some((i) => i.id === 'sausages' && i.opacity === 1)).toBe(true)
+    const sinking = c.full[landed + 1].items.find((i) => i.id === 'sausages')
+    if (sinking) expect(Math.abs(sinking.y - grillAt(landed + 1).y)).toBeLessThan(Math.abs(c.full[landed - 1].items.find((i) => i.id === 'sausages')!.y - grillAt(landed - 1).y))
+    for (let f = landed + 3; f < c.storyFrames; f++) expect(c.full[f].items.some((i) => i.id === 'sausages')).toBe(false)
+    expect(hotdogStep.end).toBeLessThanOrEqual(c.quiet[0])
+    // The ending is the grill and the hot dogs only.
+    expect(objects(c.full[c.storyFrames - 1].items).map((i) => i.id).sort()).toEqual(['grill', 'hotdogs'])
+  })
+})

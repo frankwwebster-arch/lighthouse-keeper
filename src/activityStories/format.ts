@@ -33,7 +33,10 @@ export interface Step {
   speed?: Speed
   /** A mark picture shown at each touch, instead of the verb's default. */
   mark?: string
-  /** reveal only: the result takes the target's place instead of sitting on it. */
+  /**
+   * reveal: the result takes the target's place instead of sitting on it.
+   * land-on / flip: whatever is already on the target sinks into it as this one lands.
+   */
   replace?: boolean
 }
 
@@ -101,8 +104,8 @@ export interface Library {
 export const VERBS: Record<Verb, { label: string; needs: ('who' | 'onto')[]; hint: string }> = {
   arrive: { label: 'arrives', needs: ['who'], hint: 'Pops out of his head and takes the middle.' },
   present: { label: 'takes the middle', needs: ['who'], hint: 'Moves to the middle; whatever was there steps aside.' },
-  'land-on': { label: 'lands on', needs: ['who', 'onto'], hint: 'Swings in and stays stacked on top.' },
-  flip: { label: 'flips onto', needs: ['who', 'onto'], hint: 'Somersaults in and stays on top.' },
+  'land-on': { label: 'lands on', needs: ['who', 'onto'], hint: 'Swings in and stays stacked on top (or, with “replaces”, sends what was there down into it).' },
+  flip: { label: 'flips onto', needs: ['who', 'onto'], hint: 'Somersaults in and stays on top (or, with “replaces”, sends what was there down into it).' },
   'drop-in': { label: 'drops into', needs: ['who', 'onto'], hint: 'Falls in and disappears inside.' },
   strike: { label: 'strikes', needs: ['who', 'onto'], hint: 'Hits it two or three times, then leaves.' },
   scrub: { label: 'scrubs', needs: ['who', 'onto'], hint: 'Rubs back and forth across it, then leaves.' },
