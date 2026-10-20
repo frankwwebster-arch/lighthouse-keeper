@@ -11,12 +11,12 @@
     ".webp"
   ],
   "stats": {
-    "setCount": 176,
-    "referenceCount": 4251,
-    "uniqueObjectCount": 2627,
-    "logicalBytes": 336077082,
-    "uniqueBytes": 185954111,
-    "deduplicatedBytes": 150122971
+    "setCount": 177,
+    "referenceCount": 4273,
+    "uniqueObjectCount": 2633,
+    "logicalBytes": 336785241,
+    "uniqueBytes": 186490417,
+    "deduplicatedBytes": 150294824
   },
   "legacyPaths": {
     "/keeper-review/activity-cloud-composer-v1/assets/bbq-burgers-5244d4289bbaf95f.png": {
@@ -23925,6 +23925,160 @@
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cb/cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6.png"
     },
     "/keeper-review/kitchen-modular-fridge-workbench-v34/assets/sink-cabinet-v19-exact.png": {
+      "sha256": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
+      "extension": ".png",
+      "bytes": 11179,
+      "object": "review-archive/objects/1b/1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/1b/1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/cabinet-oven-sink-fridge-native-room.png": {
+      "sha256": "d5baaaca5f4173346e6f9522b40490458aacd088153c2c520b2777e46d42abe6",
+      "extension": ".png",
+      "bytes": 168287,
+      "object": "review-archive/objects/d5/d5baaaca5f4173346e6f9522b40490458aacd088153c2c520b2777e46d42abe6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d5/d5baaaca5f4173346e6f9522b40490458aacd088153c2c520b2777e46d42abe6.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/cabinet-run-v11-exact.png": {
+      "sha256": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",
+      "extension": ".png",
+      "bytes": 18326,
+      "object": "review-archive/objects/11/112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/11/112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/countertop-join-cap-template.png": {
+      "sha256": "99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c",
+      "extension": ".png",
+      "bytes": 141,
+      "object": "review-archive/objects/99/99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/99/99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/countertop-triangle-underlay-template.png": {
+      "sha256": "99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c",
+      "extension": ".png",
+      "bytes": 141,
+      "object": "review-archive/objects/99/99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/99/99e73149ede83cef6b0399917335fabbd53788c0ab62c5f6a6826d46dd85778c.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/fridge-broken-hinge-failed.png": {
+      "sha256": "b8108cf413c9aae64885e4d4420a2861952faf9678a102c8bc880ce221f85d1c",
+      "extension": ".png",
+      "bytes": 13857,
+      "object": "review-archive/objects/b8/b8108cf413c9aae64885e4d4420a2861952faf9678a102c8bc880ce221f85d1c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b8/b8108cf413c9aae64885e4d4420a2861952faf9678a102c8bc880ce221f85d1c.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/fridge-broken-native-room.png": {
+      "sha256": "bf77c104c838b0e84c9e3dfe982f9122a16fc33ad29767ea5191a71f62ad7fcd",
+      "extension": ".png",
+      "bytes": 173762,
+      "object": "review-archive/objects/bf/bf77c104c838b0e84c9e3dfe982f9122a16fc33ad29767ea5191a71f62ad7fcd.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bf/bf77c104c838b0e84c9e3dfe982f9122a16fc33ad29767ea5191a71f62ad7fcd.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/fridge-standard-native-room.png": {
+      "sha256": "1838fadc4a1417a9f718ca5dd089f42e717893485f94678b91295a3f5dc48732",
+      "extension": ".png",
+      "bytes": 168347,
+      "object": "review-archive/objects/18/1838fadc4a1417a9f718ca5dd089f42e717893485f94678b91295a3f5dc48732.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/18/1838fadc4a1417a9f718ca5dd089f42e717893485f94678b91295a3f5dc48732.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/fridge-standard.png": {
+      "sha256": "750c2dfba659f4e2a2df6a439fa76c0dec83e8f06b81a3cc8d6dc7c521e75bae",
+      "extension": ".png",
+      "bytes": 9328,
+      "object": "review-archive/objects/75/750c2dfba659f4e2a2df6a439fa76c0dec83e8f06b81a3cc8d6dc7c521e75bae.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/75/750c2dfba659f4e2a2df6a439fa76c0dec83e8f06b81a3cc8d6dc7c521e75bae.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/fx-fridge-drip-ripple-f40.png": {
+      "sha256": "86cfaa33eb1e3f3351b481bf3057974af565963e35faca994274d486f60a8b19",
+      "extension": ".png",
+      "bytes": 2725,
+      "object": "review-archive/objects/86/86cfaa33eb1e3f3351b481bf3057974af565963e35faca994274d486f60a8b19.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/86/86cfaa33eb1e3f3351b481bf3057974af565963e35faca994274d486f60a8b19.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/join-body-backfill-template.png": {
+      "sha256": "e8bd0080ca426e6d2d750b0c5cbb0b912fe659ec1a49867e740b9216c6b68040",
+      "extension": ".png",
+      "bytes": 276,
+      "object": "review-archive/objects/e8/e8bd0080ca426e6d2d750b0c5cbb0b912fe659ec1a49867e740b9216c6b68040.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e8/e8bd0080ca426e6d2d750b0c5cbb0b912fe659ec1a49867e740b9216c6b68040.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/neighbour-seam-cleanup-left.png": {
+      "sha256": "cb8f761a8458ca59b99e5c7ade6c6d9b32de4b5dd796c9d07559783b5a9eaec1",
+      "extension": ".png",
+      "bytes": 150,
+      "object": "review-archive/objects/cb/cb8f761a8458ca59b99e5c7ade6c6d9b32de4b5dd796c9d07559783b5a9eaec1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cb/cb8f761a8458ca59b99e5c7ade6c6d9b32de4b5dd796c9d07559783b5a9eaec1.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/neighbour-seam-cleanup-right.png": {
+      "sha256": "f06898c1750bc735db7ce37723d1d2487294d04e9233f812c18c9970e041e267",
+      "extension": ".png",
+      "bytes": 154,
+      "object": "review-archive/objects/f0/f06898c1750bc735db7ce37723d1d2487294d04e9233f812c18c9970e041e267.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f0/f06898c1750bc735db7ce37723d1d2487294d04e9233f812c18c9970e041e267.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/oven-broken-both-lit.png": {
+      "sha256": "3f57c7a407ed7a4e4238307e0a839bfa37b6e8655116d65acb2a353883b5e3ce",
+      "extension": ".png",
+      "bytes": 14330,
+      "object": "review-archive/objects/3f/3f57c7a407ed7a4e4238307e0a839bfa37b6e8655116d65acb2a353883b5e3ce.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3f/3f57c7a407ed7a4e4238307e0a839bfa37b6e8655116d65acb2a353883b5e3ce.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/oven-broken-cavity-flicker-f40.png": {
+      "sha256": "94a6beec5979e81b4614b9596fe379a8193db0c1c179a7453f799c0bff2ade04",
+      "extension": ".png",
+      "bytes": 30275,
+      "object": "review-archive/objects/94/94a6beec5979e81b4614b9596fe379a8193db0c1c179a7453f799c0bff2ade04.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/94/94a6beec5979e81b4614b9596fe379a8193db0c1c179a7453f799c0bff2ade04.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/oven-broken-cavity-lit.png": {
+      "sha256": "8a42f379a156fd485a8efb735adb75e1dbba7c044b78b89f0982fa0d2198d4df",
+      "extension": ".png",
+      "bytes": 14326,
+      "object": "review-archive/objects/8a/8a42f379a156fd485a8efb735adb75e1dbba7c044b78b89f0982fa0d2198d4df.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/8a/8a42f379a156fd485a8efb735adb75e1dbba7c044b78b89f0982fa0d2198d4df.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/oven-broken-warning-flicker-f40.png": {
+      "sha256": "e5cc0bbbabfb9632efd23d78b30ba8d322e735b19bfcc3c8e2145f65b43c48d1",
+      "extension": ".png",
+      "bytes": 25122,
+      "object": "review-archive/objects/e5/e5cc0bbbabfb9632efd23d78b30ba8d322e735b19bfcc3c8e2145f65b43c48d1.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e5/e5cc0bbbabfb9632efd23d78b30ba8d322e735b19bfcc3c8e2145f65b43c48d1.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/oven-broken-warning-lit.png": {
+      "sha256": "734b0b19b4e2df77cb91fd7327e46ac6d2421351853c6505e8ae9a1bef6bd27e",
+      "extension": ".png",
+      "bytes": 13872,
+      "object": "review-archive/objects/73/734b0b19b4e2df77cb91fd7327e46ac6d2421351853c6505e8ae9a1bef6bd27e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/73/734b0b19b4e2df77cb91fd7327e46ac6d2421351853c6505e8ae9a1bef6bd27e.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/oven-broken.png": {
+      "sha256": "25631317589299c852e6383732cd2b376a0b5575f1720514ab5f250318765243",
+      "extension": ".png",
+      "bytes": 13868,
+      "object": "review-archive/objects/25/25631317589299c852e6383732cd2b376a0b5575f1720514ab5f250318765243.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/25/25631317589299c852e6383732cd2b376a0b5575f1720514ab5f250318765243.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/oven-off.png": {
+      "sha256": "c2f5687b598b42f15b42a2323e2d441d1b0b892ea2f75cbea590f4190e6c0b8e",
+      "extension": ".png",
+      "bytes": 11797,
+      "object": "review-archive/objects/c2/c2f5687b598b42f15b42a2323e2d441d1b0b892ea2f75cbea590f4190e6c0b8e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c2/c2f5687b598b42f15b42a2323e2d441d1b0b892ea2f75cbea590f4190e6c0b8e.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/oven-on.png": {
+      "sha256": "72c05de613f386ed51f9e049a3a986f34279bf04614a05b7b193d0b243be7622",
+      "extension": ".png",
+      "bytes": 13190,
+      "object": "review-archive/objects/72/72c05de613f386ed51f9e049a3a986f34279bf04614a05b7b193d0b243be7622.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/72/72c05de613f386ed51f9e049a3a986f34279bf04614a05b7b193d0b243be7622.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/room-background-exact.png": {
+      "sha256": "cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6",
+      "extension": ".png",
+      "bytes": 4706,
+      "object": "review-archive/objects/cb/cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cb/cb31744d36f37bbd4b8c1bce966f5f6a8e2439cb780d0ad2aa3b02324abaaaa6.png"
+    },
+    "/keeper-review/kitchen-modular-fridge-workbench-v35/assets/sink-cabinet-v19-exact.png": {
       "sha256": "1bd4b1d44c8fa3e236382f688d70cc2c99d71be9bec6b77300b8b82fb53239ec",
       "extension": ".png",
       "bytes": 11179,

@@ -632,18 +632,21 @@ either order), and the V25 cutout/rounded end whenever the sink has no exact
 left neighbour. Repairs remain separate compositor layers; no source sprite is
 amended. See
 [`docs/KITCHEN_MODULAR_JOIN_WORKBENCH_V33_2026-10-20.md`](docs/KITCHEN_MODULAR_JOIN_WORKBENCH_V33_2026-10-20.md).
-Frank approved and hash-pinned exact V33 on 20 October 2026. The active
-successor is `/keeper-review/kitchen-modular-fridge-workbench-v34/`: it reuses
-the exact approved V39 white-door Standard/Broken fridge family and separate
-drip/ripple strip, then adds the fridge as a third movable one-bay appliance
-without changing any V33 or V39 pixel. Fridge, sink and oven snap to three
-distinct free origins, keep exact Prime midpoint anchors and may sit directly
-beside one another. Oven and sink joins retain V33's rules; non-oven fridge
-pairs use only the blue body backfill so the fridge's complete standalone top
-is not flattened. The Broken door, contents and puddle stay static; drip/ripple
-remains removable and variable-speed. V34 awaits visual review and is not
+Frank approved and hash-pinned exact V33 on 20 October 2026. V34 is now
+rejected immutable provenance because its inherited fridge did not match the
+current rear-wall registration, outline language or universal join behaviour.
+The active successor is
+`/keeper-review/kitchen-modular-fridge-workbench-v35/`: it supplies a fresh
+coordinated white-door Standard/Broken family with an exact `84 × 74 px` body
+at y=134–208. Fridge, sink and oven snap to three distinct free origins, keep
+exact Prime midpoint anchors and may sit directly beside one another. Oven
+pairs retain V32's triangular resolver; every other fridge adjacency receives
+the exact V22 body backfill and countertop cap, so the slab remains continuous
+regardless of location. The lower-hinged Broken door stays within a four-pixel
+overflow allowance. Its contents and puddle are static; drip/ripple remains a
+separate removable variable-speed loop. V35 awaits visual review and is not
 promoted or wired. See
-[`docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V34_2026-10-20.md`](docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V34_2026-10-20.md).
+[`docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V35_2026-10-20.md`](docs/KITCHEN_MODULAR_FRIDGE_WORKBENCH_V35_2026-10-20.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

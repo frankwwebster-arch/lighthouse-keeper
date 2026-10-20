@@ -1,0 +1,30 @@
+{
+  "schema": "lighthouse-keeper/review-decision@1",
+  "set": "kitchen-modular-fridge-workbench-v34",
+  "decision": "rejected",
+  "date": "2026-10-20",
+  "reviewer": "Frank",
+  "verbatimFeedback": [
+    "no that does't match - dark black outline is incorrect, and it's not located against the back wall, in line with the other kitchen assets.",
+    "As with all others, it needs to blend its countertop with the others, regardless of its location in the kitchen"
+  ],
+  "pinnedEvidence": {
+    "catalogue": {
+      "file": "art/drafts/kitchen-modular-fridge-workbench-2026-10-20-v34/candidate-catalogue.json",
+      "sha256": "7580ec7e6397dfdef5dbe24b5b410121f31a42e11f923fa63f5956744e5f5ffd"
+    },
+    "publicShell": {
+      "file": "public/keeper-review/kitchen-modular-fridge-workbench-v34/index.html",
+      "sha256": "6711f0d3c79924069d053518a82b6cea914f07136e5d724747dbcc6e09b6ca2f"
+    },
+    "standard": {
+      "file": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/fridge-standard.png",
+      "sha256": "03c528a64d76b62bf48c39609bc30da0914799892b8d046f69ff99992439bc11"
+    },
+    "broken": {
+      "file": "art/raw/kitchen-modular-fridge-workbench-2026-10-20-v34/fridge-broken-hinge-failed.png",
+      "sha256": "5e421156def0af32827327df856ea502077b45c949292dc7367b5fc0751412b7"
+    }
+  },
+  "supersession": "Preserve V34 as immutable provenance. Rebuild the coordinated fridge family against V11/V33 geometry at rear-wall body y=134..208, use the current navy line language, and resolve every non-oven countertop adjacency with the exact V22 cap."
+}

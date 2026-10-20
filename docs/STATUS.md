@@ -305,18 +305,22 @@ archive manifest are hash-pinned in
 `docs/review/kitchen-modular-join-workbench-v33-approval-2026-10-20.json`.
 V33 remains unpromoted and unwired.
 
-The active fridge successor is Kitchen Modular Fridge Workbench V34 at
-`/keeper-review/kitchen-modular-fridge-workbench-v34/`. It reuses the exact
-approved V39 white-door Standard, failed-hinge Broken and separate drip/ripple
-sprites byte-for-byte, and adds the fridge to V33's live workbench beside the
-sink and oven. All three assets snap collision-free to distinct free origins;
-their Prime anchors remain exact body midpoints on y=218. Any oven pair keeps
-the V32 triangular repair, cabinet↔sink keeps V22, a non-oven fridge pair gets
-only the blue body backfill, and exposed sink/oven/fridge rules remain
-deterministic. The static Broken art owns the door, contents and floor puddle;
-the 40-frame/4-fps ten-second drip/ripple remains removable and variable-speed.
-All 24 legal placements are verified. V34 awaits visual review and changes no
-Final or runtime asset.
+Kitchen Modular Fridge Workbench V34 is rejected and preserved as immutable
+provenance: its inherited V39 fridge carried the older y=140–218 registration,
+heavy dark contour and no universal countertop cap. The active successor is
+V35 at `/keeper-review/kitchen-modular-fridge-workbench-v35/`. Standard and
+Broken are one fresh coordinated family in the V11 palette with an exact
+`84 × 74 px` body at the current rear-wall datum y=134–208. The white door makes
+the appliance immediately readable. Broken is retained visibly at its
+bottom-right hinge, rests its lower-left corner on the floor and limits all
+door/puddle overflow to four pixels, avoiding neighbour occlusion. All three
+assets still snap collision-free to distinct free origins and preserve exact
+Prime midpoint anchors on y=218. Oven pairs retain V32's triangular repair;
+every other exact adjacency involving the fridge now receives both the blue
+V22 body backfill and exact sixteen-pixel V22 countertop cap, so it knits to a
+cabinet or sink in any legal location. The effect-only 40-frame/4-fps ten-second
+drip/ripple remains removable and variable-speed. All 24 layouts are verified.
+V35 awaits visual review and changes no Final or runtime asset.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
