@@ -270,20 +270,21 @@ unpromoted and unwired; smoke remains a later reusable effect and no later
 kitchen asset has begun. The exact approval boundary is recorded in
 `docs/review/kitchen-oven-standalone-v27-state-family-approval-2026-10-20.json`.
 
-Kitchen Standalone Oven V29 at
-`/keeper-review/kitchen-oven-standalone-v29/` is the active installed oven
-review gate. V28's Broken contents were too high. V29 retains V28 Off and On
-byte-for-byte, including its shallow Cabinet V11 projection, exact dimensions,
-room bounds, Prime anchor and complete-room compositing. It lowers only the
-blackened roast/dish within a declared Broken cavity patch; the fixed shelf is
-behind the unchanged open door, which now occludes the lower tray naturally.
-Dark and lit variants use the same registered content patch, while the V27
-irregular cavity and lamp schedules remain unchanged. Smoke is still a
-separate reusable effect. The V9 asset-first workbench retains three animated
-smoke models and drag/resize/crop/speed/removal controls, but its appliance is
-the older pre-modular oven; final placement follows in a successor workbench
-after this static V29 state is approved. V29 is reversible, unapproved and
-unpromoted; V27/V28, Final/runtime and later kitchen assets remain unchanged.
+Kitchen Standalone Oven V30 at
+`/keeper-review/kitchen-oven-standalone-v30/` is the active installed oven
+review gate. V29 correctly lowered the Broken roast/dish onto its fixed shelf,
+but its internal light also recoloured the foreground hanging dial and its
+standalone top left two small wall-coloured V gaps against the cabinet runs.
+V30 preserves V29 Off, On, Broken-dark and Broken-warning-lit byte-for-byte.
+Only the cavity-lit and both-lit states restore the exact unlit dial silhouette
+after cavity lighting. The two cabinet joins reuse the approved V22 countertop
+cap as independent background underlays, activated only by exact left/right
+snapped adjacency and drawn before the unchanged cabinets and oven. Dimensions,
+projection, room bounds, Prime anchor, fault schedules and smoke separation are
+unchanged. The V9 workbench still demonstrates smoke interaction against the
+obsolete pre-modular oven; its successor follows after this static gate is
+approved. V30 is reversible, unapproved and unpromoted; V29, Cabinet V11, V22,
+Final/runtime and later kitchen assets remain unchanged.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
