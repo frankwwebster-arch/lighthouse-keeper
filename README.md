@@ -605,15 +605,17 @@ the deep, steep hob plane reads from a higher viewpoint than the shallow
 Cabinet V11 worktop. V28 therefore preserves the approved V27 design while
 correcting that upper projection. See
 [`docs/KITCHEN_OVEN_STANDALONE_V27_2026-10-19.md`](docs/KITCHEN_OVEN_STANDALONE_V27_2026-10-19.md).
-The active `/keeper-review/kitchen-oven-standalone-v28/` gate retains that V27
-design in the same `84 × 77 px` envelope and corrects only two declared areas:
-the upper sixteen rows now use Cabinet V11's shallow, near-parallel worktop
-projection, and Broken's blackened roast/dish now remain on the fixed interior
-shelf at the On-state height while the transparent door opens independently in
-front. All four Broken light combinations keep identical registration and use
-the unchanged V27 irregular ten-second schedules. V28 remains a reversible,
-unapproved review gate; see
-[`docs/KITCHEN_OVEN_STANDALONE_V28_2026-10-20.md`](docs/KITCHEN_OVEN_STANDALONE_V28_2026-10-20.md).
+The active `/keeper-review/kitchen-oven-standalone-v29/` gate retains V28 Off
+and On byte-for-byte and corrects only the Broken cavity contents, which V28
+placed too high. The blackened roast/dish now sits lower on its fixed interior
+shelf behind the unchanged transparent open door, whose foreground edge
+naturally hides the lower tray. All four Broken light combinations keep exact
+registration and the unchanged V27 irregular ten-second schedules. Smoke is
+still a separate reusable layer: the older V9 asset-first tool demonstrates
+its three models and drag/resize/crop/speed/removal controls, but final smoke
+placement waits for a successor workbench using the standalone oven. V29 is a
+reversible, unapproved review gate; see
+[`docs/KITCHEN_OVEN_STANDALONE_V29_2026-10-20.md`](docs/KITCHEN_OVEN_STANDALONE_V29_2026-10-20.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
@@ -637,8 +639,9 @@ provenance; Rebuild V6 is immutable switchable-layer provenance; Rebuild V7 is
 immutable asset-first interaction provenance; Rebuild V8 is the accepted oven-
 geometry authority; Rebuild V9 is immutable failing-bulb/workbench provenance;
 Rebuild Modular V10 is rejected structural-separation provenance. Cabinet Run
-V11 remains the approved cabinet visual authority, and standalone Oven V26 is
-the active appliance review gate.
+V11 remains the approved cabinet visual authority; standalone Oven V27 is the
+approved state-family authority, V28 is immutable perspective provenance, and
+V29 is the active appliance review gate.
 The focused `/keeper-review/keeper-lift-entry-alignment-v1/` construction page
 corrects the earlier lift choreography without rewriting it. The room-door
 centre at x=126 lp and lift threshold at x=42 lp are exactly 84 lp apart:

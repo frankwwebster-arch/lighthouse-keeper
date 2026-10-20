@@ -1,0 +1,18 @@
+{
+  "schema": "lighthouse-keeper/imagegen-edit-provenance@1",
+  "set": "kitchen-oven-standalone-v29",
+  "created": "2026-10-20",
+  "mode": "built-in-imagegen",
+  "useCase": "precise-object-edit",
+  "editTarget": {
+    "file": "art/source/kitchen-oven-standalone-2026-10-20-v28/oven-broken-fixed-shelf-generated-source.png",
+    "sha256": "aca3accd6947ad245cd543e8a814eb209826566284a617927595066c183449cd"
+  },
+  "generatedOutput": {
+    "file": "art/source/kitchen-oven-standalone-2026-10-20-v29/oven-broken-lowered-fixed-shelf-generated-source.png",
+    "sha256": "bd09be917ac6bc54fdc46b337f3cfa12794c92089174717503b483280a224d39",
+    "pixels": [2172, 724]
+  },
+  "prompt": "Using the exact enlarged native On state as the vertical authority, lower only the right-hand Broken oven's burnt roast, roasting dish and fixed shelf until the roast top aligns with the actual On roast. Keep the open door unchanged in front and let it conceal the tray rim and most of the Broken roast, leaving roughly the upper third visible. Preserve every other feature, dimension, projection, palette, outline, door and transparent window, and do not add smoke or effects.",
+  "assemblyBoundary": "Only the declared Broken cavity-content patch [14,35,70,51] is sampled from this generated source. V28 supplies every other pixel, including the hanging dial, cavity frame and complete open door. The dark cavity variants apply a fixed RGB scale to this same registered patch rather than reintroducing V28's former high contents through a per-pixel lighting delta."
+}

@@ -270,16 +270,20 @@ unpromoted and unwired; smoke remains a later reusable effect and no later
 kitchen asset has begun. The exact approval boundary is recorded in
 `docs/review/kitchen-oven-standalone-v27-state-family-approval-2026-10-20.json`.
 
-Kitchen Standalone Oven V28 at
-`/keeper-review/kitchen-oven-standalone-v28/` is the active installed oven
-review gate. It retains the V27 design, dimensions, room bounds, Prime anchor,
-complete-room compositing and irregular fault-light schedules. Its upper
-sixteen body rows now use the shallow Cabinet V11 flat-cutaway projection. In
-Broken, the blackened roast and dish have moved off the foreground door and
-onto the fixed interior shelf at the On-state height; dark and lit cavity
-variants retain exact registration. A deterministic verifier permits changes
-only in that declared Broken patch and the hob band. V28 is reversible,
-unapproved and unpromoted; no Final/runtime or later kitchen asset changed.
+Kitchen Standalone Oven V29 at
+`/keeper-review/kitchen-oven-standalone-v29/` is the active installed oven
+review gate. V28's Broken contents were too high. V29 retains V28 Off and On
+byte-for-byte, including its shallow Cabinet V11 projection, exact dimensions,
+room bounds, Prime anchor and complete-room compositing. It lowers only the
+blackened roast/dish within a declared Broken cavity patch; the fixed shelf is
+behind the unchanged open door, which now occludes the lower tray naturally.
+Dark and lit variants use the same registered content patch, while the V27
+irregular cavity and lamp schedules remain unchanged. Smoke is still a
+separate reusable effect. The V9 asset-first workbench retains three animated
+smoke models and drag/resize/crop/speed/removal controls, but its appliance is
+the older pre-modular oven; final placement follows in a successor workbench
+after this static V29 state is approved. V29 is reversible, unapproved and
+unpromoted; V27/V28, Final/runtime and later kitchen assets remain unchanged.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
