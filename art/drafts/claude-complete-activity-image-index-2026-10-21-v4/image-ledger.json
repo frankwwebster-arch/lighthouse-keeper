@@ -1,0 +1,2441 @@
+{
+  "schema": "lighthouse-keeper/claude-complete-activity-image-index@4",
+  "created": "2026-10-21",
+  "status": "review-only-complete-chat-image-ledger",
+  "supersedes": "art/drafts/claude-complete-activity-image-index-2026-10-20-v3",
+  "precedence": "This ledger extends V3 with every accepted and rejected household cleaning-cupboard generation. It changes coverage metadata only and does not modify any inherited immutable pack.",
+  "counts": {
+    "generatedOutputsInThisChat": 73,
+    "generatedOutputsRepresentedInRepository": 73,
+    "previouslyMissingGeneratedOutputsRecovered": 2,
+    "reviewReadyIndependentAssets": 130,
+    "activityBubbleReadyAssets": 89,
+    "immutablePacks": 5,
+    "activityCloudPackFinalUsableAssets": 74,
+    "foodPackFinalUsableAssets": 8,
+    "toolsEphemeraPackFinalUsableAssets": 8,
+    "kitchenCondimentsPrepPackFinalUsableAssets": 14,
+    "householdCleaningCupboardPackFinalUsableAssets": 26,
+    "householdCleaningRejectedGenerationsRetained": 10
+  },
+  "packInventories": [
+    {
+      "root": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "manifest": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/asset-manifest.json",
+      "manifestSha256": "01316c61ba39e56339a1a5f8c356e9a9bacbc42e3498b6dd03e2b9a6c0a804b1",
+      "imageFiles": 78,
+      "finalUsableAssets": 74
+    },
+    {
+      "root": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1",
+      "manifest": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/asset-manifest.json",
+      "manifestSha256": "dac28636f43ee461c5d2923084509458fbf61aff9a048bce813452cddaa65adc",
+      "imageFiles": 18,
+      "finalUsableAssets": 8
+    },
+    {
+      "root": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1",
+      "manifest": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/asset-manifest.json",
+      "manifestSha256": "e58ce27b53205a6168bc02f43fad193e74073f7c7c0a85349f1beb2d7a0ee504",
+      "imageFiles": 17,
+      "finalUsableAssets": 8
+    },
+    {
+      "root": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1",
+      "manifest": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/asset-manifest.json",
+      "manifestSha256": "5084184bd87b06d5083b6a44b9cc6fa7116e80ca12cbfeaa7b2480ed2932af91",
+      "imageFiles": 29,
+      "finalUsableAssets": 14
+    },
+    {
+      "root": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "manifest": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/asset-manifest.json",
+      "manifestSha256": "d07a64b78b0535784a6e6d09922eb11df50786f11fa9656b9687837e69f5554c",
+      "imageFiles": 63,
+      "finalUsableAssets": 26,
+      "rejectedGenerationsRetained": 10
+    }
+  ],
+  "bubbleAssetCatalogue": {
+    "file": "art/drafts/claude-complete-activity-image-index-2026-10-21-v4/bubble-assets.json",
+    "sha256": "97f2a2a904972515e03a2f7a14716b4591f055c16b346a335a4caf5248867a13",
+    "assets": 89,
+    "excludesPrimeBodyFrames": true,
+    "excludesRejectedEvidence": true
+  },
+  "generatedOutputs": [
+    {
+      "cacheFile": "exec-24c94cce-57c3-4512-855a-083202f173ce.png",
+      "originalSha256": "dfa370a9c49480100fa4058a77aedcdbc0b588321f97b0e05f22549b44655d8b",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "generic-symbol-sheet-early-attempt-a",
+      "status": "unselected-intermediate-retained-for-completeness",
+      "representations": [
+        {
+          "file": "art/drafts/claude-complete-activity-image-index-2026-10-20-v1/recovered-unselected-generations/generic-symbol-sheet-early-attempt-a.webp",
+          "kind": "recovered-unselected-generation",
+          "pixels": [
+            768,
+            512
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "4458270854f996ca1bafe305769016acdb9877f58e39ced68cc16e526732ce9e",
+          "bytes": 129726
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-ddd731e5-da08-4ec3-a975-9c7f935dcddf.png",
+      "originalSha256": "cc31f34ff3eeaf393d93e8d5ab78b35f1718f9c528e8d2739139c003739ce28c",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "generic-symbol-sheet-early-attempt-b",
+      "status": "unselected-intermediate-retained-for-completeness",
+      "representations": [
+        {
+          "file": "art/drafts/claude-complete-activity-image-index-2026-10-20-v1/recovered-unselected-generations/generic-symbol-sheet-early-attempt-b.webp",
+          "kind": "recovered-unselected-generation",
+          "pixels": [
+            768,
+            512
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "e5de4fdd3d17f878760aa10d99f87c9b8b37c274d8b173f9f50198819bacced2",
+          "bytes": 162036
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-bddbb842-9d97-4556-9b1a-ca9166d433f9.png",
+      "originalSha256": "517309ab1ef8ba71849217d6da71fe1cd1c8b2b3a2ef94f86db7ee28fcc43b80",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "original-six-comic-symbol-source-sheet",
+      "status": "accepted-source",
+      "representations": [
+        {
+          "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/source/original-six-symbol-source-sheet.png",
+          "kind": "accepted-source",
+          "pixels": [
+            1536,
+            1024
+          ],
+          "preservation": "exact-original-generated-bytes",
+          "sha256": "517309ab1ef8ba71849217d6da71fe1cd1c8b2b3a2ef94f86db7ee28fcc43b80",
+          "bytes": 1439779
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-2e8f1679-d09f-45e2-a7fc-d998a92d829e.png",
+      "originalSha256": "69dd1a140f881e497c965ed7d6f3000478ad832304f978ef07b7e42519982530",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "generic-action-symbol-sheet-insufficient-gutter",
+      "status": "rejected-retained",
+      "representations": [
+        {
+          "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/evidence/rejected/generic-action-symbols-sheet-attempt-1-insufficient-gutter.png",
+          "kind": "rejected-evidence",
+          "pixels": [
+            1536,
+            1024
+          ],
+          "preservation": "exact-original-generated-bytes",
+          "sha256": "69dd1a140f881e497c965ed7d6f3000478ad832304f978ef07b7e42519982530",
+          "bytes": 1695787
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-0f5f6982-dbd8-48ea-b3e5-83675a3e89b7.png",
+      "originalSha256": "327f29ac9c67fdf237892ac5f4abe52e4508e7107140b7fb1b265cb6b7a71ebb",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "generic-question-mark-source",
+      "status": "accepted-source",
+      "representations": [
+        {
+          "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/source/generic-question-mark-source.png",
+          "kind": "accepted-source",
+          "pixels": [
+            1254,
+            1254
+          ],
+          "preservation": "exact-original-generated-bytes",
+          "sha256": "327f29ac9c67fdf237892ac5f4abe52e4508e7107140b7fb1b265cb6b7a71ebb",
+          "bytes": 623906
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-13724c58-644a-418c-80af-69f4756508b9.png",
+      "originalSha256": "e4afb957aeb8d1015a43fe2664135ef8830270b6ef70ab1941947aca552e390b",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "generic-action-symbol-sheet-scale-corrected",
+      "status": "accepted-source",
+      "representations": [
+        {
+          "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/source/generic-action-symbols-sheet-source.png",
+          "kind": "accepted-source",
+          "pixels": [
+            1536,
+            1024
+          ],
+          "preservation": "exact-original-generated-bytes",
+          "sha256": "e4afb957aeb8d1015a43fe2664135ef8830270b6ef70ab1941947aca552e390b",
+          "bytes": 1403206
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-2fd5c1b7-9726-4c9c-8f25-0d21c8b5e47d.png",
+      "originalSha256": "4ac3e4269955c51d31fee0d18b47a1512116995ea041eba0563c413c817214ed",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "raw-beef-burger-patties",
+      "status": "accepted-final",
+      "componentId": "bbq-raw-burger-patties",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/bbq-raw-burger-patties-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "3fde56e80476a659387055d1d7e4ebd8111f61821945bd4ab318a39dc08123fd",
+          "bytes": 115562
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-raw-burger-patties.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "8d8107dbe7705c7cecbe90ad2ead6e83b82525ab4ca9b52b25e13d624c4e9521",
+          "bytes": 67963
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-3ea7dc96-dd7e-4164-93f3-8c62c033a63c.png",
+      "originalSha256": "47e002e96d2d50d91058431af26cd2c5295c53569040f2add601c2c9693ab024",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "plateless-cooked-sausages",
+      "status": "rejected-user-correction",
+      "componentId": "rejected-plateless-cooked-sausages",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/rejected/plateless-cooked-sausages-attempt-1.webp",
+          "kind": "rejected-evidence",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "889afb8a99a86d0497362061d5407a1932abd5095c61e46723cea3a2dbdd126f",
+          "bytes": 108992
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-ca44a99e-3465-46d2-af59-2adc35818f28.png",
+      "originalSha256": "8cca15c23f1391dee66db124cc35acff16783564d0b1ee45bf298ac4ce3e6a66",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "raw-linked-sausages",
+      "status": "accepted-final",
+      "componentId": "bbq-sausages",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/bbq-raw-linked-sausages-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "73290cb764392dee986c0db9c10eb286b2a3c35a1e3e42c902fb4355e43ccb32",
+          "bytes": 52714
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-sausages.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "dfc97e3a148a3a77487a0e64b66e4dcb0b6a1406f69ac6f957a45ee93dc94fee",
+          "bytes": 37612
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-351a84f3-cd0d-45c2-98ab-5c62ad031bb2.png",
+      "originalSha256": "b717c2ac1166905aec8f7c919bfbfb418a2b3832bafa608aa71c6249aaea1ed6",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "cold-unlit-bbq",
+      "status": "accepted-final",
+      "componentId": "bbq-grill",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/bbq-unlit-grill-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "f349f83ad2fcf78e6a12a7ba031c415cdba58065e8d97448b2d7ee786ed27a80",
+          "bytes": 73154
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-grill.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "e6c7d5e51308d4fc974d6c3f090548cfba4d725d43564c9f7a6943bb55b407b7",
+          "bytes": 61768
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-9cb5c27c-e940-481c-9e0b-b7419e2ee4d1.png",
+      "originalSha256": "bda822b834cd56993087ce787354c48ff6b0b055d79c56f8cdee23d6221150f4",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "cheese-being-sliced",
+      "status": "accepted-final",
+      "componentId": "cooking-cheese-slicing",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/cooking-cheese-slicing-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "9247f1977c4df3b36820e88c25ff2b12ab67d60ed9882ade6bf04c10bcf34da1",
+          "bytes": 58766
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/cooking-cheese-slicing.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "ca7d2733d7f22b350602566aef641065c5321acd298b9e6611bf8c1e8fd5cb35",
+          "bytes": 43708
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-de5a3a61-0649-4f48-9449-032c9ccb764a.png",
+      "originalSha256": "b183c397e9cc6ccf80abdcabf8b79b1e6df19f2ab8e72616d1ec249bae3d1cfb",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "raw-steak",
+      "status": "accepted-final",
+      "componentId": "bbq-raw-steak",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/bbq-raw-steak-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "e90754635a6528a83d263125dfb3d3904a94ac0c260cb71e7ee6b5281ce86236",
+          "bytes": 77550
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-raw-steak.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "14870ae013f48d8ff84ccb1894c41cb8baec661273f0da2f15cf1032033aa670",
+          "bytes": 58729
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-8a8dc0a0-29ca-4bc4-9461-23ff1b9e7428.png",
+      "originalSha256": "7c1604bf1be6fc9540a096c00e8053181b278ef245c8ebc83e7abf51ef912005",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "plated-steak-and-fries",
+      "status": "accepted-final",
+      "componentId": "meal-steak-fries",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/meal-steak-fries-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "45ec17acc1d2a8e6303b555d2654d888e6631a4ce7e469f2cd557c16df0dc1ae",
+          "bytes": 154264
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/meal-steak-fries.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "8aebdcafac1a8c2749f9876fc51d2fc1c7bbe78005120b0bb8b5ca5b657c99ae",
+          "bytes": 88656
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-c0ec7f68-b9d1-4c76-bcdc-c1ed8ac42831.png",
+      "originalSha256": "9bd83b220ab6b226b9c049e40b621d7ca849e9d810472e9789e809e692ba9877",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "ketchup-bottle",
+      "status": "accepted-final",
+      "componentId": "condiment-ketchup-bottle",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/condiment-ketchup-bottle-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "a850a8cdabfcc910c3f5ecbb23507494fd9b3891cf344144b32e4ff1b2d06603",
+          "bytes": 32328
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/condiment-ketchup-bottle.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "153cdd6ac24624c2ffad96e7c990ece2c1a53972adb3f4e67b0f51b340ffcb49",
+          "bytes": 28702
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-cacf44ac-3f8d-445a-a446-204264f2b166.png",
+      "originalSha256": "65333b6307e926acf0fb1cd24fe57155ac9621ba351c597e29482aebc40c6bf9",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "mustard-bottle",
+      "status": "accepted-final",
+      "componentId": "condiment-mustard-bottle",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/condiment-mustard-bottle-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "49a21b9f24e5c38c3ff0e617327fac24fcb1c0b9f0f28f52f79d97afbd1d6497",
+          "bytes": 33304
+        },
+        {
+          "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/condiment-mustard-bottle.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "65c2f38eec206e0f07160f8d8e1ae6dd4ce2b415154a73ca845508f2fdbd44ee",
+          "bytes": 29835
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-faf43851-9ea6-49a7-a07e-f23aa6741be3.png",
+      "originalSha256": "35f85ebf1bda8174e4a55cc381bf12241c15e48293d39e7611f015c45c48cf8f",
+      "originalPixels": [
+        1661,
+        947
+      ],
+      "role": "bbq-tongs",
+      "status": "accepted-final",
+      "componentId": "bbq-tongs",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-tongs-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "c588a677b4815dd22d3b155b9056c96e9d68c813c3fb90edfa81ab7c6833cace",
+          "bytes": 37486
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-tongs.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "885d696d6636f25d51c93c9d3f35fb5a9a09533b5e9604b12339740e1b45c8c2",
+          "bytes": 25037
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-a71245cb-cfba-4e78-8a26-6f6a74665465.png",
+      "originalSha256": "d7b7fa11a4ff784b94b54beea36055c3d08d7953e41579628fa281adfde41f9f",
+      "originalPixels": [
+        1661,
+        947
+      ],
+      "role": "bbq-slotted-turner",
+      "status": "accepted-final",
+      "componentId": "bbq-slotted-turner",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-slotted-turner-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "7d43fa1bdc4541774fc4438c8194686b7e2ceb4979c4647b0d7d5fa0824e47c9",
+          "bytes": 40550
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-slotted-turner.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "9115fb7c3602151d786db177f2ea6aa5baaac1529a24cd71a05ed95f83985065",
+          "bytes": 26199
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-163e5f8f-0ff5-4bb1-b3f3-af56f2a2d2da.png",
+      "originalSha256": "9f67c615536249ee76a2dd54591a351bbd3cf06a4d648d087127ed394511dedc",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "bbq-basting-brush",
+      "status": "accepted-final",
+      "componentId": "bbq-basting-brush",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-basting-brush-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "1d149754770a80e655cc0b510a2269953ec713e4948fcfe29a5dcfccee0162fa",
+          "bytes": 46468
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-basting-brush.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "a6bcd75aa5b4c50216622c04a5018c23998b18097eb20a77eddd4e79c613a16d",
+          "bytes": 27600
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-94522f15-d52b-474a-8e05-4084d2cff7c0.png",
+      "originalSha256": "f8f852169c4644abfa054e0f700a4e714cc47c3c17b87981f96ccbfcdd557398",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "bbq-grill-fork",
+      "status": "accepted-final",
+      "componentId": "bbq-grill-fork",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-grill-fork-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "b85a4e023519049fa49eaa5771d131ca3590f43b1e900e87799da61d27c4651d",
+          "bytes": 29084
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-grill-fork.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "6a2451de5e126ef784cae7a0d6c001b6640fb6fc582938b90de6cbb7424cb36d",
+          "bytes": 19704
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-8b92ed47-66c4-4273-afb3-80ac31869d11.png",
+      "originalSha256": "b9aab84a9767a638d17d14798112a9623db4f41cba1fd3208422659067943136",
+      "originalPixels": [
+        1405,
+        1119
+      ],
+      "role": "bbq-heatproof-mitt",
+      "status": "accepted-final",
+      "componentId": "bbq-heatproof-mitt",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-heatproof-mitt-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "e1f2d57a353da698e3e0cfc508ba5f6062c0090b3a048c90c11a919590979c51",
+          "bytes": 125554
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-heatproof-mitt.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "85b7b5c527287ecb238b57184bdbd3327649cf338b7a40504d0113381d9f4367",
+          "bytes": 76839
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-7122d417-2e00-4186-94ff-df9b8c826d7a.png",
+      "originalSha256": "dca0e3498599c29f703fefe77e0a75a15b20e8f7a293a33ea7c02297b4feca55",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "bbq-charcoal-chimney",
+      "status": "accepted-final",
+      "componentId": "bbq-charcoal-chimney",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-charcoal-chimney-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "1a277bb2922b10158d0608a8c05fe4e223697fa866535f7c4c1ff79d8836bacb",
+          "bytes": 129548
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-charcoal-chimney.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "9f172c34fd0cfeeaeebcc924522ae7ee552c053229e61ffae08ae2c0e91e46c7",
+          "bytes": 83115
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-d72c1e32-3ba8-44bc-8aeb-a26469036b1d.png",
+      "originalSha256": "3d30686cb06793da2cdb8c6e0773b2a4c9d799e35d9a1e80f11eef9320ebbac4",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "bbq-skewer-bundle",
+      "status": "accepted-final",
+      "componentId": "bbq-skewer-bundle",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-skewer-bundle-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "68b08c56bcdfb9b4c63f330a8faf8a5aa1090b3e935b67bfc313f871a9e851c6",
+          "bytes": 38578
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-skewer-bundle.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "b07b6828cc76a3b54b8aa8a8671f48adb91ec751b48a52068c69bdc710f0cc26",
+          "bytes": 25502
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-14e6b927-a7a1-4fd1-83b4-349073196ed7.png",
+      "originalSha256": "43447a18939438f904a4da0c894733c1f424c549a3eda0a0dd465b6fe3782ca5",
+      "originalPixels": [
+        1292,
+        1218
+      ],
+      "role": "bbq-charcoal-bag",
+      "status": "accepted-final",
+      "componentId": "bbq-charcoal-bag",
+      "representations": [
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/source/bbq-charcoal-bag-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "9ea3ae0778ab77d64e9514e5ca39652865f30016f8146650ea25b26b5d5ede13",
+          "bytes": 94506
+        },
+        {
+          "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-charcoal-bag.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "f45c271e7d9d14cbab2a3dde2f4d15784a875a659515c163ef9fe3f72fdee254",
+          "bytes": 61766
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-68c40945-7e3d-4a83-a95f-3ca54643a516.png",
+      "originalSha256": "ae55a63e1efdd030f19d29d2eda353c980e870cde24956fb614ebdf239dc844c",
+      "originalPixels": [
+        1312,
+        1199
+      ],
+      "role": "condiment-wholegrain-mustard-jar",
+      "status": "accepted-final",
+      "componentId": "condiment-wholegrain-mustard-jar",
+      "representations": [
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/source/condiment-wholegrain-mustard-jar-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "547c5d02030cec6609470b905fccc52e78b37a7bfd9bb1b9a672ddbd667f6032",
+          "bytes": 173786
+        },
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-wholegrain-mustard-jar.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "5f0739bd891dd0475e5f3827a3392fbfac6df9c584ca73937591db7c9cf4b74c",
+          "bytes": 98705
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-7bc7b504-6698-4af9-a4e9-18980d841d8c.png",
+      "originalSha256": "dfa0e2c70b38f6b11c02773099d6f25b71033d1e5b2da8f57b240bc9855d54ee",
+      "originalPixels": [
+        1312,
+        1199
+      ],
+      "role": "condiment-pickle-jar",
+      "status": "accepted-final",
+      "componentId": "condiment-pickle-jar",
+      "representations": [
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/source/condiment-pickle-jar-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "84622b4aa65fb3173b02f5cd2c415fbf066e3ea07fe12747b4f7a3fd52943639",
+          "bytes": 127340
+        },
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-pickle-jar.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "a48fc115e5ef7cc8a8200f3a26d53667e740e97473ee5c5bb9c8c70e9b81d9e4",
+          "bytes": 76972
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-87f662e6-0a4e-4153-894e-95181e149a8a.png",
+      "originalSha256": "bbfb3a1a78183e736f06da3d5d30f7e1a3adcfcb66ed7594e2171c13bb4b7529",
+      "originalPixels": [
+        1312,
+        1199
+      ],
+      "role": "condiment-mayonnaise-jar",
+      "status": "accepted-final",
+      "componentId": "condiment-mayonnaise-jar",
+      "representations": [
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/source/condiment-mayonnaise-jar-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "9c58a9d2727b1fa9b55d9a93d5c4e20d15e50d69176bd795812b20eb7fd3ab14",
+          "bytes": 90334
+        },
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-mayonnaise-jar.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "7d503285bc4ccf5cb098741c569b01a4887e4806e3c6147f97b480311be95d25",
+          "bytes": 58879
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-e9347043-5893-455d-991c-9a37dd4b04b1.png",
+      "originalSha256": "8fa94267dd6ad97fb9c20b55daee0661bd98dac246cd1145848b317b20f4866f",
+      "originalPixels": [
+        1024,
+        1536
+      ],
+      "role": "condiment-salt-mill",
+      "status": "accepted-final",
+      "componentId": "condiment-salt-mill",
+      "representations": [
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/source/condiment-salt-mill-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "384d419daa78b993bf53c04c62963755513501ac4f677980f08e109de2344f0b",
+          "bytes": 57146
+        },
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-salt-mill.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "a0eadd6a9f3b760191d69cafca84e83dca5e6b9e1d76aed6f09886ace93b3259",
+          "bytes": 39033
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-b5bc58cc-4de1-423f-ba8c-b479f854fb63.png",
+      "originalSha256": "60812cc0efc43cabb34145df81159bda3a9cc78ce5a2b0d8537f7a4aebb31c8a",
+      "originalPixels": [
+        1024,
+        1536
+      ],
+      "role": "condiment-pepper-mill",
+      "status": "accepted-final",
+      "componentId": "condiment-pepper-mill",
+      "representations": [
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/source/condiment-pepper-mill-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "4000d9edcfc95d22ab797b1095daaabf8c88d9949416179455c8405b60506adb",
+          "bytes": 61992
+        },
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-pepper-mill.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "762f50f6954bb69afbbdef0b41d43eef13c7d4dee0dfcb3910acf42fff1fad38",
+          "bytes": 41605
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-23be16a4-c7b4-4549-9cf2-4c20efa41f37.png",
+      "originalSha256": "5417f90054bbc14d849f1b1edd961d3f1c9e185d0d1a77cedee5b5f75870d105",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "prep-bread-slicing",
+      "status": "accepted-final",
+      "componentId": "prep-bread-slicing",
+      "representations": [
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/source/prep-bread-slicing-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "62e02303f4fe3ae8311d064e04240a1197aa0f75fca53c30995077c4f50ded8a",
+          "bytes": 94264
+        },
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/prep-bread-slicing.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "d665a9df3462d9543137b9134610181d84081cff0311d2b17293985a0a5234fb",
+          "bytes": 53774
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-ee8b11c2-7cbb-4f1c-87ba-e4d4278fd360.png",
+      "originalSha256": "9b8127a11211789943bc6d781c7cf902dadb902e813ee793f497b9088e7357f4",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "knife-chef",
+      "status": "accepted-final",
+      "componentId": "knife-chef",
+      "representations": [
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/source/knife-chef-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "96beba5135b7203dac952d9a5ebf7c2817d77e39e22cfae0b366666a5a9b6c1c",
+          "bytes": 35588
+        },
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/knife-chef.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "292543ab725d9cadd473539847e25c08ba9c867720af7b71888690293a6ccb20",
+          "bytes": 23700
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-8275b728-6332-4011-bcc2-a0cab63b8042.png",
+      "originalSha256": "25375c30b67b6b6a7dc443bae66d49da33a52077f9b6f609ade933100246cb6e",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "knife-bread",
+      "status": "accepted-final",
+      "componentId": "knife-bread",
+      "representations": [
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/source/knife-bread-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "5c8275e81af09fbea7f4153b3a4af10b73d9b89ed679dc0cbdef67242987c8ad",
+          "bytes": 26664
+        },
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/knife-bread.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "ea7fe35cd1487d4c1ee22539dc1ceb2e7f65143298b89e84eb9c9625228bc4d6",
+          "bytes": 17794
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-1e81e04c-1193-46eb-89e2-7676ad0ceee7.png",
+      "originalSha256": "b2ebeec14e5ca8833dab7f4714db84cf01f8252e473dd6990ed574465a7f0f6a",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "knife-paring",
+      "status": "accepted-final",
+      "componentId": "knife-paring",
+      "representations": [
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/source/knife-paring-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "27c90db1c30341516bf8480bdd12719bf679d3061962531d9a90b38f56a0c96f",
+          "bytes": 38280
+        },
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/knife-paring.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "7d69426fd494b75186b23b33e21b69e89fd83b0747af006af227d241bdb01fb1",
+          "bytes": 25113
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-d0b5a87f-c5ab-4947-a9a7-f0c0c6f8fb19.png",
+      "originalSha256": "39082ad382c531108253a2da260ca6d86e9b24ac9b4c061128f406f397e77f63",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "ingredient-butter-block",
+      "status": "accepted-final",
+      "componentId": "ingredient-butter-block",
+      "representations": [
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/source/ingredient-butter-block-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "a81a6aec49ef85a80431bb5b6d980e8fd4e48f314afb74719bb93e235854136f",
+          "bytes": 83030
+        },
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/ingredient-butter-block.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "0dcf64e538831b23f10de0de4f2a773b84271470417c1908642b11fc0c847e59",
+          "bytes": 54598
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-68d6e67c-9d13-4205-a8f6-50c80634a00b.png",
+      "originalSha256": "db10be19bddc1dfa2afc2791bd11ff684d08c59b1a768a4eaebe85e197156dc1",
+      "originalPixels": [
+        1024,
+        1536
+      ],
+      "role": "condiment-olive-oil",
+      "status": "accepted-final",
+      "componentId": "condiment-olive-oil",
+      "representations": [
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/source/condiment-olive-oil-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "ca27c1359f9d3e44e8d5e9aa167864f4efefa271415ec95bf028111e9de66f49",
+          "bytes": 68654
+        },
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-olive-oil.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "102d543540a2675c5b82575f5fc332585e6b3749bfdced4c1f162e087c49d124",
+          "bytes": 43072
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-7287d9ba-be6e-4251-b160-7d04bfcb37dd.png",
+      "originalSha256": "06b91b0c8e7363c90785e6b28c3c1b95c833b853ecaebbdebdaa799b04066948",
+      "originalPixels": [
+        1312,
+        1199
+      ],
+      "role": "condiment-raspberry-jam",
+      "status": "accepted-final",
+      "componentId": "condiment-raspberry-jam",
+      "representations": [
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/source/condiment-raspberry-jam-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "37a2a25ecea737e8c162e46df92225264a438adee53e25960a075f31d69836a6",
+          "bytes": 155030
+        },
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-raspberry-jam.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "dfc5ce3f9d6ccd334bd8e6eed5ba71d203c80b7542b85e64fcf9c6d90ef2b23b",
+          "bytes": 91122
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-f4bef225-24a7-4c32-a285-b9d09af3c3e9.png",
+      "originalSha256": "4266a8305b83ec408d0d344884ac145467090a8afc23e5b06dd5465eefcdec14",
+      "originalPixels": [
+        1312,
+        1199
+      ],
+      "role": "condiment-honey-pot",
+      "status": "accepted-final",
+      "componentId": "condiment-honey-pot",
+      "representations": [
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/source/condiment-honey-pot-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "7aff1b32b20fd2cdc35e5ba2d450b0b39d523878d6c73f3c1c0a27ed9b9e0493",
+          "bytes": 138046
+        },
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-honey-pot.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "e8a1d55341f198f0eb7e2018ea4ca8e37d7f9452cc81e6e601c9be3418c4b5b4",
+          "bytes": 81305
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-5cf247d4-c18d-45a7-9b93-fbfef84dafe9.png",
+      "originalSha256": "f100ad8def086c40a3add78a1f7a8d642e998e95143654417b37466e3b54ce6f",
+      "originalPixels": [
+        1330,
+        1182
+      ],
+      "role": "condiment-malt-vinegar",
+      "status": "accepted-final",
+      "componentId": "condiment-malt-vinegar",
+      "representations": [
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/source/condiment-malt-vinegar-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "45873240c276a07bf5b2435d4ffc3e8cd1841351ea48219576ba36ce12e65bd7",
+          "bytes": 91922
+        },
+        {
+          "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-malt-vinegar.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "99e49748fc316803a5b7743a8c4ac063a879498c25258c8a65ca5572397fd672",
+          "bytes": 57052
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-dbb004ff-483f-43c7-8153-566dadc1893e.png",
+      "originalSha256": "016774f6e082a09d4f26e4eb71155ee265b3a9bcb8b37c0180f520469baaee04",
+      "originalPixels": [
+        1272,
+        1236
+      ],
+      "role": "cleaner-bleach-bottle",
+      "status": "accepted-final",
+      "componentId": "cleaner-bleach-bottle",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/cleaner-bleach-bottle-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "f0bfba9cc512ddd1680123ea772e65d7f86f62667261889c013dca08191f5b46",
+          "bytes": 78514
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-bleach-bottle.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "e0661a1edac8ed1b6d4a985b71ade903ba748aee94b828467c6086c4e164700d",
+          "bytes": 52119
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-0ae07467-c00d-4102-ba03-af2982d96d35.png",
+      "originalSha256": "9d1d59847062e6675409b6d236256170070d175483ccd078ccd8b5f58b6909eb",
+      "originalPixels": [
+        1308,
+        1202
+      ],
+      "role": "cleaner-disinfectant-bottle",
+      "status": "accepted-final",
+      "componentId": "cleaner-disinfectant-bottle",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/cleaner-disinfectant-bottle-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "6e3480f0b2e319389d2d10d7a71484c97be89469f4fcd7dbc201009e9addc465",
+          "bytes": 90608
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-disinfectant-bottle.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "2203bd93f62ee35f6e8d5215ecde39baa3e6ced69b6d76e5cfc1302103b0bd39",
+          "bytes": 58762
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-810f113d-2c57-4466-b28a-1e8d5ee91172.png",
+      "originalSha256": "223b6e00efe5e29ec28681c227a1de9f6b12afa80304d755272bc9e8e100b000",
+      "originalPixels": [
+        1174,
+        1339
+      ],
+      "role": "cleaner-multisurface-spray",
+      "status": "accepted-final",
+      "componentId": "cleaner-multisurface-spray",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/cleaner-multisurface-spray-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "d48e3fb7c23f36cb631b1605dd2c1aacf586bb7ab0682fc64f1a43ea1ddeedc1",
+          "bytes": 75418
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-multisurface-spray.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "7be22a7a3307e96a42bc0e9c102837f9193d8f9ca6ae79c0a3ff75a7f53db466",
+          "bytes": 46196
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-da6f944e-97fa-40b0-ac45-94f2f869bc1f.png",
+      "originalSha256": "20d54ed88d00861a2c225b166b0f2a7a0488ebb50fe4e2d024975ddaafeda0e5",
+      "originalPixels": [
+        1174,
+        1339
+      ],
+      "role": "cleaner-glass-spray",
+      "status": "accepted-final",
+      "componentId": "cleaner-glass-spray",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/cleaner-glass-spray-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "8b12de1ebe74f001afed9bf5b6a857f2a6761c8727ef9a0a127e069ea4ebfde7",
+          "bytes": 76424
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-glass-spray.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "844482a466b07b091253a96eaa639e5b8ada6ba7b448248b14f9e95606f29068",
+          "bytes": 46528
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-fa7eb86d-ef27-453c-a7a1-01d90d7a333d.png",
+      "originalSha256": "63bdc732347a78b136c1687423adcc405f79e73d183f6656a9cfefc395415782",
+      "originalPixels": [
+        1174,
+        1339
+      ],
+      "role": "cleaner-furniture-polish",
+      "status": "accepted-final",
+      "componentId": "cleaner-furniture-polish",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/cleaner-furniture-polish-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "c328b46331afa45b74a5773f81085b603e211c628705d2a8c1e0a086a3786cfb",
+          "bytes": 67312
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-furniture-polish.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "a1c092cb617619c7b248c63a76e505e1f5a166468cf70e3b7d3dfcadeb62ed7f",
+          "bytes": 42847
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-ed850921-41e5-4c2c-879c-648cd92cc475.png",
+      "originalSha256": "ca1324e590b659cfae3f3a983010bd6efe12c3a80c4220321e7c88a7ce77ea5b",
+      "originalPixels": [
+        1174,
+        1339
+      ],
+      "role": "cleaner-washing-up-liquid",
+      "status": "accepted-final",
+      "componentId": "cleaner-washing-up-liquid",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/cleaner-washing-up-liquid-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "7102703886b46f6f2c2b541bc91d719e4bf8dd4019d6676acad683416bbd92e5",
+          "bytes": 92712
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-washing-up-liquid.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "5badd8f058268a24bba76e7d61138eeae568cc6d2c8da55d1e40bf12089ca254",
+          "bytes": 54431
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-1d3eac73-3530-40f2-9b4f-1a03329f8169.png",
+      "originalSha256": "e6229d37ee2713798bf46ece2e765bf23e5f5e33ba44c9dac25f1ce5785aa350",
+      "originalPixels": [
+        1312,
+        1199
+      ],
+      "role": "laundry-washing-powder-box",
+      "status": "accepted-final",
+      "componentId": "laundry-washing-powder-box",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/laundry-washing-powder-box-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "ce11730e3e2ca7a91fbdba5821d168bc7876df2148f8a54d64ae6c887eb6be18",
+          "bytes": 129250
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-washing-powder-box.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "9003d57c4801186b1eff92439bffb56b5261ab34783035be721fb1cf389ae725",
+          "bytes": 80703
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-3ee2cdae-1c1b-4398-96d7-e3112d6fafb3.png",
+      "originalSha256": "f4914c3220db67b974d1bbdccfa9b30c3168833f30fb7b459a00d496c4180210",
+      "originalPixels": [
+        1174,
+        1339
+      ],
+      "role": "laundry-liquid-detergent",
+      "status": "accepted-final",
+      "componentId": "laundry-liquid-detergent",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/laundry-liquid-detergent-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "2eee6016cfddc4b411bc163f06a11f2625c7b8c98ba57f7d0d2ae7395bd8bfe0",
+          "bytes": 96752
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-liquid-detergent.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "36bf7d4bc12087b372ceb6d72532db3755b7403fd0e622a76b7cb9826684396a",
+          "bytes": 62978
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-70554556-6e98-4473-8e88-78f5938593da.png",
+      "originalSha256": "1b3804672ec167b311be5e58e3652d3a1c3532cd9b263a83dce7a7a00d8a1878",
+      "originalPixels": [
+        1174,
+        1339
+      ],
+      "role": "laundry-fabric-conditioner",
+      "status": "accepted-final",
+      "componentId": "laundry-fabric-conditioner",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/laundry-fabric-conditioner-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "4156ff917aabfc56f7b4eb757d9ec62758597f127f324d181cb5c7dd2c60fd2b",
+          "bytes": 89938
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-fabric-conditioner.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "9598738550338eea0893a674eaa23d7a377181a39e5e31dcb5da1ee92f176029",
+          "bytes": 59355
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-c9e5a753-b321-45ac-9e8b-14eb5b65fe09.png",
+      "originalSha256": "07d3f79c7c83b7dbee6285b01b113ded8232a2ab2eda52d07128ae3e3daa58ca",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "laundry-stain-remover-tub",
+      "status": "accepted-final",
+      "componentId": "laundry-stain-remover-tub",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/laundry-stain-remover-tub-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "e1daa8efcd28585ad58cdd83ab00c3f719124158a1ea165057eaba432a9b7a1f",
+          "bytes": 141646
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-stain-remover-tub.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "25f30e5f377fdde0f1120ed29f948eeb0acd41bf5488ee8f8df66ad07c97bf9e",
+          "bytes": 86013
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-5a7323b5-828c-4947-8846-5bfca7e7eeda.png",
+      "originalSha256": "dfbe101416e61f2b50bcb6d510c9e36423e96331d47e827beabb168930d01989",
+      "originalPixels": [
+        1300,
+        1209
+      ],
+      "role": "dishwasher-tablets-tub",
+      "status": "accepted-final",
+      "componentId": "dishwasher-tablets-tub",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/dishwasher-tablets-tub-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "c58855ff663beb7b855486009132da8a9640038dad695280a3243d89a2036085",
+          "bytes": 149578
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/dishwasher-tablets-tub.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "2db3025d4b7adb6585c05f495033a6eb1bc977bdb6d0137d92cc39f733f3f0c6",
+          "bytes": 88969
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-528dcc83-2f9c-4976-9bc9-acb11c0e6b62.png",
+      "originalSha256": "1e50d9846be8136199b3d16fd6216c8b68a87a014539616aacb66ca0feae8b1d",
+      "originalPixels": [
+        1174,
+        1339
+      ],
+      "role": "dishwasher-salt-carton",
+      "status": "accepted-final",
+      "componentId": "dishwasher-salt-carton",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/dishwasher-salt-carton-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "fa87a61fb45a70a17fa804890b496fcb99a794d88899e67a1d0feffe33389431",
+          "bytes": 97222
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/dishwasher-salt-carton.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "965041349f5d1137b68dcf77c697b15988769e83d1263e35bb526db0daf164d6",
+          "bytes": 61824
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-7ece2f90-1783-424e-8642-99aff657eb93.png",
+      "originalSha256": "d7587a438172a1fc4b0c0667352a73e5778950fdae70dcf76e8c59693b27a28c",
+      "originalPixels": [
+        1174,
+        1339
+      ],
+      "role": "dishwasher-rinse-aid",
+      "status": "accepted-final",
+      "componentId": "dishwasher-rinse-aid",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/dishwasher-rinse-aid-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "779abcb3aa8ed27b2d738831dfd3d5a8a303fe59af9af99d3649b67576c49484",
+          "bytes": 71208
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/dishwasher-rinse-aid.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "ae014cf67a09878d0b7d297e5157893ae04cea057b4e4776b739b79b20dba268",
+          "bytes": 43260
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-d0783e5f-d83e-4e97-a0a3-0592ce1a064b.png",
+      "originalSha256": "c3e5597a7171bab2c4703714362188340232342b78043c9f557c5ceede4496ab",
+      "originalPixels": [
+        1174,
+        1339
+      ],
+      "role": "cleaner-toilet-bottle",
+      "status": "accepted-final",
+      "componentId": "cleaner-toilet-bottle",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/cleaner-toilet-bottle-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "6ea088c76206f5092658a2cb0eb4cb09acebef9b35350d32225bc75f0dc6b4ee",
+          "bytes": 67442
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-toilet-bottle.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "4af28f1fac7a6df71abf07919ec068cd9a8071533c0d2284b3963b397b20dfce",
+          "bytes": 44742
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-71c3849d-6789-4e7d-a8ad-46d9c20108fb.png",
+      "originalSha256": "eba64f11d7679cdf8b613e529e67da0f1c70d88d3ddb65697fb6f72cf0a17cb5",
+      "originalPixels": [
+        1322,
+        1190
+      ],
+      "role": "tool-dustpan",
+      "status": "accepted-final",
+      "componentId": "tool-dustpan",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/tool-dustpan-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "4b0f960c96670bedb4d49e8c14f1801c4af0947a9b120369bbcf685c842ffc65",
+          "bytes": 71870
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-dustpan.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "1947a46ee592db81559e421e94124b81244062cd7d0a90c21cdf7b4adb8e3e27",
+          "bytes": 48278
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-f8be51ac-6bd2-4c91-8cfc-4db47c2a1336.png",
+      "originalSha256": "2fdc69894183ef0e79b67ec7001a2b10f3df114e841f4678dc5107d9169ab215",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "tool-hand-brush",
+      "status": "accepted-final",
+      "componentId": "tool-hand-brush",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/tool-hand-brush-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "5d9bce8f115d43b8c59a01a4643c044551c540c116208584472d94ab339da83f",
+          "bytes": 56948
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-hand-brush.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "72d9a2c00bd261e5804d1a4a5d2d9e4ac54f7eed269f61f6256a15019eedd7e1",
+          "bytes": 35161
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-68638a2a-2eee-4add-b23f-552ca569a288.png",
+      "originalSha256": "b68567fec7ff332858a09649ad99ba6e9e29fb99ba65be677ef113fd6db00ae5",
+      "originalPixels": [
+        1312,
+        1199
+      ],
+      "role": "tool-broom",
+      "status": "accepted-final",
+      "componentId": "tool-broom",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/tool-broom-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "687a646d08e4245c7dcfa3667982d41471bcb024efe3de605af38e335ee3df6a",
+          "bytes": 55696
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-broom.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "eaa3cf610a6c8320f961092443003c46514c8d6482551e19cc84cbfab7b3fee0",
+          "bytes": 36860
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-ff1e4612-c951-4940-a4ef-ee1ccffc70ca.png",
+      "originalSha256": "1fb7c036c326b6d608465ae734649d73d8e33a4fa1857e461044c6a1c35f4702",
+      "originalPixels": [
+        1230,
+        1278
+      ],
+      "role": "tool-string-mop",
+      "status": "accepted-final",
+      "componentId": "tool-string-mop",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/tool-string-mop-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "f87313bd9a0e2fff6c71461d22b47d9ccbdaaf95116154352eb5262f3bd4c392",
+          "bytes": 57234
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-string-mop.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "5b8ec0b01fdc365136d90c47102845a41ee22298c23708aec6ee25bb7809cdbb",
+          "bytes": 36866
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-aecc962d-1c00-4e2d-8221-f21ac6518732.png",
+      "originalSha256": "fc2d859313c9d4152baca5ac24894fa43d9e0d2a971672429cebd376e6543a80",
+      "originalPixels": [
+        1254,
+        1254
+      ],
+      "role": "tool-cleaning-bucket",
+      "status": "accepted-final",
+      "componentId": "tool-cleaning-bucket",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/tool-cleaning-bucket-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "74297be536843efcb31c134e89212db314ba22fb11b805fa6ecb8138af90cfcc",
+          "bytes": 123758
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-cleaning-bucket.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "993be679f5cec7736e624c2cc8ac36f110a1e9e8fc8f8b913af9ba351a3e5e7d",
+          "bytes": 80127
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-014411cb-88f7-4582-b3d7-6deb8722cca6.png",
+      "originalSha256": "0ef387085ebff7385104b2e14fe9c0748b2226ddb99bc28b31afa2fdee338937",
+      "originalPixels": [
+        1402,
+        1122
+      ],
+      "role": "wear-rubber-gloves-pair",
+      "status": "accepted-final",
+      "componentId": "wear-rubber-gloves-pair",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/wear-rubber-gloves-pair-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "b3f31e6ff30d397de3ef4c96ce49b0a5f41361709aecb6d42388fb42ea54faf3",
+          "bytes": 90868
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/wear-rubber-gloves-pair.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "408b76cc4ac404d8fac3553fa97d71a04e8428943dc49a55ec648eb1f7a90afb",
+          "bytes": 57762
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-d6907e8f-d9c0-4658-8ce2-674ba528f384.png",
+      "originalSha256": "8d8f56678ca2bbf1c4365c40109ea7a06781dca2aa2fae545599122461e4c903",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "consumable-cellulose-sponge",
+      "status": "accepted-final",
+      "componentId": "consumable-cellulose-sponge",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/consumable-cellulose-sponge-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "5602b79d1a595ffcc71259db408136d0256953a39e732d40a57c0f9cee49e4dc",
+          "bytes": 90866
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-cellulose-sponge.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "9a925092377e7497a66f3cb79fc88e0a4bda006890a7d06f756ad6eb88623e7c",
+          "bytes": 52703
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-0ac36ddc-c43b-4757-928b-d1563cde40a7.png",
+      "originalSha256": "50e69ebb4d1a51758d7adbe3d6186f34ae70d91468f56f6eb6920be97f76a7e3",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "consumable-scouring-pad",
+      "status": "accepted-final",
+      "componentId": "consumable-scouring-pad",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/consumable-scouring-pad-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "221f41e05cc7bd07adbbcd6fded7bcaecdb994a78940a05d3dc8b8a28afb9a0a",
+          "bytes": 104052
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-scouring-pad.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "4fb91401fa9ad9b9ff342cc1018e8e7166f8712aaeed630bc1e045ad4732e0b4",
+          "bytes": 56997
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-5455588f-cc9e-4010-9216-dc95b880ff98.png",
+      "originalSha256": "50cb49a3cc44681e128571d298dd5ae75cc05fae3f3512fbdc7c7dfe368506e9",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "consumable-microfiber-cloth",
+      "status": "accepted-final",
+      "componentId": "consumable-microfiber-cloth",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/consumable-microfiber-cloth-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "bb05127b8607d508a4340ddd5276be0f4cf519b0b64c9abbd559a9529f5452b3",
+          "bytes": 97176
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-microfiber-cloth.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "1ab65f3b637f2b43d51d83477f43fc4ff1c68177f65f9f51c57ca8a9323a1218",
+          "bytes": 55096
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-350f5c77-d112-46f2-a18c-0e6279f11702.png",
+      "originalSha256": "8a868260a905d5d743388340416d0f66ff3e5f8e35d7d5f921c5b06f3b4d1c27",
+      "originalPixels": [
+        1312,
+        1199
+      ],
+      "role": "tool-feather-duster",
+      "status": "accepted-final",
+      "componentId": "tool-feather-duster",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/tool-feather-duster-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "c4c23775dbe345fbd52daf0d3a17fc7c1d6a4f53fac61691ef3dc86c3556979f",
+          "bytes": 88058
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-feather-duster.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "0f068ee8787f945d414bc98373a1f8796fb59730e7a0f113b8931d9f8e000e86",
+          "bytes": 52726
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-a07f0f88-b331-4399-a415-3536dec687b6.png",
+      "originalSha256": "03da8374a4d987c9e6a4450f9801615275d227d356615ddd82ae0f0f2130899c",
+      "originalPixels": [
+        1448,
+        1086
+      ],
+      "role": "tool-scrub-brush",
+      "status": "accepted-final",
+      "componentId": "tool-scrub-brush",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/tool-scrub-brush-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "2a70f2e1238297df842b8a3c1f06ea6d387037099097b6057382c4f313f0d285",
+          "bytes": 89398
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-scrub-brush.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "aa2c3fe64cd926ef6756041d07a47c4eb3069c91455cedd8ebc9c5ceebb4972f",
+          "bytes": 54435
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-081343ff-9c7b-4f9a-9a62-e0c9a3e918de.png",
+      "originalSha256": "d54d692d6059c56824bc239a6b3efb302ef0dbd9ff9125e59d53068c470a3114",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "consumable-bin-bag-roll",
+      "status": "accepted-final",
+      "componentId": "consumable-bin-bag-roll",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/consumable-bin-bag-roll-source.webp",
+          "kind": "compact-review-source",
+          "pixels": [
+            384,
+            384
+          ],
+          "preservation": "visible-alpha-isolated-lossless-webp",
+          "sha256": "7f55031bb7071aa7ef745241a9d1d86c29aa37c59795edc331aaf6cb1df2c290",
+          "bytes": 73494
+        },
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-bin-bag-roll.png",
+          "kind": "final-independent-asset",
+          "pixels": [
+            256,
+            256
+          ],
+          "preservation": "deterministically-normalised-png",
+          "sha256": "34cc28d40e7c23a8070ae20de6cf3b7059a0982e8748f190f65af6d6ca763ec7",
+          "bytes": 50122
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-5312cd77-d7a2-4780-be2c-bc421fd64d63.png",
+      "originalSha256": "7cbd269156e66a7bf62bf9ce52b169c75e74503bd25f615b8bfc9995cdab796e",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "hand-brush-glow-attempt-1",
+      "status": "rejected-retained",
+      "rejectionReason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/hand-brush-glow-attempt-1.webp",
+          "kind": "rejected-evidence",
+          "pixels": [
+            384,
+            256
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "ebf1768e4343e06125713f908c70fa68913832e41d99f6199007f13da521a225",
+          "bytes": 51322
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-1aafbcdc-7ad1-480c-903b-cf27c8e948db.png",
+      "originalSha256": "a8d427e1f87f2f9b629166f633bb55e550578be33ff5556e1fc001c6bab07fb1",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "cellulose-sponge-glow-attempt-1",
+      "status": "rejected-retained",
+      "rejectionReason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/cellulose-sponge-glow-attempt-1.webp",
+          "kind": "rejected-evidence",
+          "pixels": [
+            384,
+            256
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "a77886842680b8c9108eb559ad22449e63a208a0d0b060d721ce33a6c6ec96f7",
+          "bytes": 71718
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-387a0577-ead4-4730-9dc2-df0dca4515af.png",
+      "originalSha256": "eae06431dbc2c5c4b83c2f42cc7de828c52f46128fa26a548d342459602c04cd",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "scouring-pad-glow-attempt-1",
+      "status": "rejected-retained",
+      "rejectionReason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/scouring-pad-glow-attempt-1.webp",
+          "kind": "rejected-evidence",
+          "pixels": [
+            384,
+            256
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "5b33c66f7fc39e95059c479ba77ae9d1b4eb6f3216bc2e6f49288d82ca69f5cf",
+          "bytes": 72264
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-a4704e09-c925-4693-bd94-f2f54f6adae9.png",
+      "originalSha256": "0a1a67f9438a510dcf1fe54c66aad90f5fafb218d254b61add3eecf4215006b1",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "microfiber-cloth-glow-attempt-1",
+      "status": "rejected-retained",
+      "rejectionReason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/microfiber-cloth-glow-attempt-1.webp",
+          "kind": "rejected-evidence",
+          "pixels": [
+            384,
+            256
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "4a793ac4e47919723d3abcd23840537604fd3d9cc88f761d77ab8eb149469ec7",
+          "bytes": 91318
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-505e93a1-555b-4b51-896b-050c82552ff7.png",
+      "originalSha256": "c0d7935dc4eca04b5107bb8c5cf9f7c7bb30eb80045089d39199057b0ce4ce03",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "hand-brush-glow-attempt-2",
+      "status": "rejected-retained",
+      "rejectionReason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/hand-brush-glow-attempt-2.webp",
+          "kind": "rejected-evidence",
+          "pixels": [
+            384,
+            256
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "801050a4c6b2a8d1ade5c69ae2ab6bf247fb79b757b70be0e51587de2ed7a828",
+          "bytes": 57802
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-a765f73f-2952-45f6-9625-c9462a741f04.png",
+      "originalSha256": "8294a98e844a013f43a88e2bf33227c35c004aca054a44c9edd3b723da6c0ed9",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "cellulose-sponge-glow-attempt-2",
+      "status": "rejected-retained",
+      "rejectionReason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/cellulose-sponge-glow-attempt-2.webp",
+          "kind": "rejected-evidence",
+          "pixels": [
+            384,
+            256
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "5999d939fb7bf0742a0bb1add6c35bd4832c8e7fadc8270626b75abeb201187d",
+          "bytes": 69914
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-667e7215-da67-463c-8177-d28c7017c537.png",
+      "originalSha256": "ec58c66857b87b2cfe557182e351a8411bf0b0a9abbc8d4031237293aee7a1f6",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "hand-brush-clean-edit-rejected",
+      "status": "rejected-retained",
+      "rejectionReason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/hand-brush-clean-edit-rejected.webp",
+          "kind": "rejected-evidence",
+          "pixels": [
+            384,
+            256
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "cb743dcb9406464a133890a1efc4cd7550216d50b393f950693832cc43baa58f",
+          "bytes": 63262
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-78346e31-0dd2-4859-af8d-adfe1279d042.png",
+      "originalSha256": "077433127cc156ce72b03af91db5e85c113672360e97ee48f4e22786aeecf713",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "cellulose-sponge-clean-edit-rejected",
+      "status": "rejected-retained",
+      "rejectionReason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/cellulose-sponge-clean-edit-rejected.webp",
+          "kind": "rejected-evidence",
+          "pixels": [
+            384,
+            256
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "78aba5fe798f5f576097d82ae018a736d940fb1ce2190710893c6b965a57a8fb",
+          "bytes": 89368
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-d8c62ab2-afda-4092-abd7-b9585dc5e833.png",
+      "originalSha256": "63b8216544ccb8277fcd214a3c6e579a902c519acca5b5c715021ae1af2d7197",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "scouring-pad-clean-edit-rejected",
+      "status": "rejected-retained",
+      "rejectionReason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/scouring-pad-clean-edit-rejected.webp",
+          "kind": "rejected-evidence",
+          "pixels": [
+            384,
+            256
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "a996bdf56290cfceecd5dd6afcb5e47ba55be7166bdae95f55d82e537152c904",
+          "bytes": 91518
+        }
+      ]
+    },
+    {
+      "cacheFile": "exec-1e0f5104-f8ba-4013-a202-90bf6549be40.png",
+      "originalSha256": "aaddbe2c7de17866e413a3c5a00c9c7b488eadb7b334806bd560869758b88473",
+      "originalPixels": [
+        1536,
+        1024
+      ],
+      "role": "microfiber-cloth-clean-edit-rejected",
+      "status": "rejected-retained",
+      "rejectionReason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "representations": [
+        {
+          "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/microfiber-cloth-clean-edit-rejected.webp",
+          "kind": "rejected-evidence",
+          "pixels": [
+            384,
+            256
+          ],
+          "preservation": "deterministically-downsampled-lossless-webp",
+          "sha256": "024920a500dd43cc1615b7011b573b932d2086af1015c5d1957fd24d08e9f6f2",
+          "bytes": 112876
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "allGeneratedOutputsRepresented": true,
+    "inheritedPacksUnchanged": true,
+    "recoveredAttemptsAreNotCandidates": true,
+    "cleaningRejectedAttemptsAreNotCandidates": true,
+    "allAcceptedAssetsIndependent": true,
+    "runtimeChanged": false,
+    "kitchenAuthorityChanged": false,
+    "primeChanged": false,
+    "deployed": false
+  }
+}

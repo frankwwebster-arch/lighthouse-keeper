@@ -1,0 +1,1239 @@
+{
+  "schema": "lighthouse-keeper/claude-household-cleaning-cupboard-pack@1",
+  "set": "claude-household-cleaning-cupboard-pack-v1",
+  "status": "review-only",
+  "created": "2026-10-21",
+  "styleReferences": [
+    {
+      "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/evidence/final-assets-contact-sheet.webp",
+      "sha256": "7752f503e4b88d8f05d4f49a73dd1f156875c41921d2673223d2b5646f4402e0",
+      "role": "compact prop styling only"
+    },
+    {
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/evidence/final-assets-contact-sheet.webp",
+      "sha256": "2410d991bb1d968d0e2226ffa7d8ae579a394a67785079eba290a000ca89bc6c",
+      "role": "tool silhouette and palette styling only"
+    }
+  ],
+  "sourceProcessing": {
+    "reviewSourceGeometry": [
+      384,
+      384
+    ],
+    "method": "alpha <= 8 removed, visible-alpha isolation, proportional fit within 352 px, centered on a 384 px transparent canvas, lossless WebP; original generated PNG SHA-256, cache filename and geometry retained per component"
+  },
+  "components": {
+    "cleaner-bleach-bottle": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-bleach-bottle.png",
+      "sha256": "e0661a1edac8ed1b6d4a985b71ade903ba748aee94b828467c6086c4e164700d",
+      "family": "cleaning-chemical",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/cleaner-bleach-bottle-source.webp",
+      "sourceSha256": "f0bfba9cc512ddd1680123ea772e65d7f86f62667261889c013dca08191f5b46",
+      "originalCacheFile": "exec-dbb004ff-483f-43c7-8153-566dadc1893e.png",
+      "originalGeneratedPngSha256": "016774f6e082a09d4f26e4eb71155ee265b3a9bcb8b37c0180f520469baaee04",
+      "originalGeneratedGeometry": [
+        1272,
+        1236
+      ],
+      "sourceVisibleBounds": [
+        82,
+        16,
+        301,
+        368
+      ],
+      "normalisedVisibleSize": [
+        134,
+        216
+      ],
+      "normalisedOffset": [
+        61,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cleaner-disinfectant-bottle": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-disinfectant-bottle.png",
+      "sha256": "2203bd93f62ee35f6e8d5215ecde39baa3e6ced69b6d76e5cfc1302103b0bd39",
+      "family": "cleaning-chemical",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/cleaner-disinfectant-bottle-source.webp",
+      "sourceSha256": "6e3480f0b2e319389d2d10d7a71484c97be89469f4fcd7dbc201009e9addc465",
+      "originalCacheFile": "exec-0ae07467-c00d-4102-ba03-af2982d96d35.png",
+      "originalGeneratedPngSha256": "9d1d59847062e6675409b6d236256170070d175483ccd078ccd8b5f58b6909eb",
+      "originalGeneratedGeometry": [
+        1308,
+        1202
+      ],
+      "sourceVisibleBounds": [
+        73,
+        16,
+        311,
+        368
+      ],
+      "normalisedVisibleSize": [
+        146,
+        216
+      ],
+      "normalisedOffset": [
+        55,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cleaner-multisurface-spray": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-multisurface-spray.png",
+      "sha256": "7be22a7a3307e96a42bc0e9c102837f9193d8f9ca6ae79c0a3ff75a7f53db466",
+      "family": "cleaning-chemical",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/cleaner-multisurface-spray-source.webp",
+      "sourceSha256": "d48e3fb7c23f36cb631b1605dd2c1aacf586bb7ab0682fc64f1a43ea1ddeedc1",
+      "originalCacheFile": "exec-810f113d-2c57-4466-b28a-1e8d5ee91172.png",
+      "originalGeneratedPngSha256": "223b6e00efe5e29ec28681c227a1de9f6b12afa80304d755272bc9e8e100b000",
+      "originalGeneratedGeometry": [
+        1174,
+        1339
+      ],
+      "sourceVisibleBounds": [
+        103,
+        16,
+        281,
+        368
+      ],
+      "normalisedVisibleSize": [
+        109,
+        216
+      ],
+      "normalisedOffset": [
+        73,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cleaner-glass-spray": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-glass-spray.png",
+      "sha256": "844482a466b07b091253a96eaa639e5b8ada6ba7b448248b14f9e95606f29068",
+      "family": "cleaning-chemical",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/cleaner-glass-spray-source.webp",
+      "sourceSha256": "8b12de1ebe74f001afed9bf5b6a857f2a6761c8727ef9a0a127e069ea4ebfde7",
+      "originalCacheFile": "exec-da6f944e-97fa-40b0-ac45-94f2f869bc1f.png",
+      "originalGeneratedPngSha256": "20d54ed88d00861a2c225b166b0f2a7a0488ebb50fe4e2d024975ddaafeda0e5",
+      "originalGeneratedGeometry": [
+        1174,
+        1339
+      ],
+      "sourceVisibleBounds": [
+        105,
+        16,
+        278,
+        368
+      ],
+      "normalisedVisibleSize": [
+        106,
+        216
+      ],
+      "normalisedOffset": [
+        75,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cleaner-furniture-polish": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-furniture-polish.png",
+      "sha256": "a1c092cb617619c7b248c63a76e505e1f5a166468cf70e3b7d3dfcadeb62ed7f",
+      "family": "cleaning-chemical",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/cleaner-furniture-polish-source.webp",
+      "sourceSha256": "c328b46331afa45b74a5773f81085b603e211c628705d2a8c1e0a086a3786cfb",
+      "originalCacheFile": "exec-fa7eb86d-ef27-453c-a7a1-01d90d7a333d.png",
+      "originalGeneratedPngSha256": "63bdc732347a78b136c1687423adcc405f79e73d183f6656a9cfefc395415782",
+      "originalGeneratedGeometry": [
+        1174,
+        1339
+      ],
+      "sourceVisibleBounds": [
+        118,
+        16,
+        265,
+        368
+      ],
+      "normalisedVisibleSize": [
+        90,
+        216
+      ],
+      "normalisedOffset": [
+        83,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cleaner-washing-up-liquid": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-washing-up-liquid.png",
+      "sha256": "5badd8f058268a24bba76e7d61138eeae568cc6d2c8da55d1e40bf12089ca254",
+      "family": "cleaning-chemical",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/cleaner-washing-up-liquid-source.webp",
+      "sourceSha256": "7102703886b46f6f2c2b541bc91d719e4bf8dd4019d6676acad683416bbd92e5",
+      "originalCacheFile": "exec-ed850921-41e5-4c2c-879c-648cd92cc475.png",
+      "originalGeneratedPngSha256": "ca1324e590b659cfae3f3a983010bd6efe12c3a80c4220321e7c88a7ce77ea5b",
+      "originalGeneratedGeometry": [
+        1174,
+        1339
+      ],
+      "sourceVisibleBounds": [
+        100,
+        16,
+        284,
+        368
+      ],
+      "normalisedVisibleSize": [
+        113,
+        216
+      ],
+      "normalisedOffset": [
+        71,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "laundry-washing-powder-box": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-washing-powder-box.png",
+      "sha256": "9003d57c4801186b1eff92439bffb56b5261ab34783035be721fb1cf389ae725",
+      "family": "laundry",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/laundry-washing-powder-box-source.webp",
+      "sourceSha256": "ce11730e3e2ca7a91fbdba5821d168bc7876df2148f8a54d64ae6c887eb6be18",
+      "originalCacheFile": "exec-1d3eac73-3530-40f2-9b4f-1a03329f8169.png",
+      "originalGeneratedPngSha256": "e6229d37ee2713798bf46ece2e765bf23e5f5e33ba44c9dac25f1ce5785aa350",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "sourceVisibleBounds": [
+        28,
+        16,
+        356,
+        368
+      ],
+      "normalisedVisibleSize": [
+        201,
+        216
+      ],
+      "normalisedOffset": [
+        27,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "laundry-liquid-detergent": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-liquid-detergent.png",
+      "sha256": "36bf7d4bc12087b372ceb6d72532db3755b7403fd0e622a76b7cb9826684396a",
+      "family": "laundry",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/laundry-liquid-detergent-source.webp",
+      "sourceSha256": "2eee6016cfddc4b411bc163f06a11f2625c7b8c98ba57f7d0d2ae7395bd8bfe0",
+      "originalCacheFile": "exec-3ee2cdae-1c1b-4398-96d7-e3112d6fafb3.png",
+      "originalGeneratedPngSha256": "f4914c3220db67b974d1bbdccfa9b30c3168833f30fb7b459a00d496c4180210",
+      "originalGeneratedGeometry": [
+        1174,
+        1339
+      ],
+      "sourceVisibleBounds": [
+        64,
+        16,
+        319,
+        368
+      ],
+      "normalisedVisibleSize": [
+        156,
+        216
+      ],
+      "normalisedOffset": [
+        50,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "laundry-fabric-conditioner": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-fabric-conditioner.png",
+      "sha256": "9598738550338eea0893a674eaa23d7a377181a39e5e31dcb5da1ee92f176029",
+      "family": "laundry",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/laundry-fabric-conditioner-source.webp",
+      "sourceSha256": "4156ff917aabfc56f7b4eb757d9ec62758597f127f324d181cb5c7dd2c60fd2b",
+      "originalCacheFile": "exec-70554556-6e98-4473-8e88-78f5938593da.png",
+      "originalGeneratedPngSha256": "1b3804672ec167b311be5e58e3652d3a1c3532cd9b263a83dce7a7a00d8a1878",
+      "originalGeneratedGeometry": [
+        1174,
+        1339
+      ],
+      "sourceVisibleBounds": [
+        75,
+        16,
+        308,
+        368
+      ],
+      "normalisedVisibleSize": [
+        143,
+        216
+      ],
+      "normalisedOffset": [
+        56,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "laundry-stain-remover-tub": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-stain-remover-tub.png",
+      "sha256": "25f30e5f377fdde0f1120ed29f948eeb0acd41bf5488ee8f8df66ad07c97bf9e",
+      "family": "laundry",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/laundry-stain-remover-tub-source.webp",
+      "sourceSha256": "e1daa8efcd28585ad58cdd83ab00c3f719124158a1ea165057eaba432a9b7a1f",
+      "originalCacheFile": "exec-c9e5a753-b321-45ac-9e8b-14eb5b65fe09.png",
+      "originalGeneratedPngSha256": "07d3f79c7c83b7dbee6285b01b113ded8232a2ab2eda52d07128ae3e3daa58ca",
+      "originalGeneratedGeometry": [
+        1254,
+        1254
+      ],
+      "sourceVisibleBounds": [
+        26,
+        16,
+        358,
+        368
+      ],
+      "normalisedVisibleSize": [
+        204,
+        216
+      ],
+      "normalisedOffset": [
+        26,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "dishwasher-tablets-tub": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/dishwasher-tablets-tub.png",
+      "sha256": "2db3025d4b7adb6585c05f495033a6eb1bc977bdb6d0137d92cc39f733f3f0c6",
+      "family": "dishwasher",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/dishwasher-tablets-tub-source.webp",
+      "sourceSha256": "c58855ff663beb7b855486009132da8a9640038dad695280a3243d89a2036085",
+      "originalCacheFile": "exec-5a7323b5-828c-4947-8846-5bfca7e7eeda.png",
+      "originalGeneratedPngSha256": "dfbe101416e61f2b50bcb6d510c9e36423e96331d47e827beabb168930d01989",
+      "originalGeneratedGeometry": [
+        1300,
+        1209
+      ],
+      "sourceVisibleBounds": [
+        16,
+        19,
+        368,
+        365
+      ],
+      "normalisedVisibleSize": [
+        216,
+        212
+      ],
+      "normalisedOffset": [
+        20,
+        22
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "dishwasher-salt-carton": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/dishwasher-salt-carton.png",
+      "sha256": "965041349f5d1137b68dcf77c697b15988769e83d1263e35bb526db0daf164d6",
+      "family": "dishwasher",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/dishwasher-salt-carton-source.webp",
+      "sourceSha256": "fa87a61fb45a70a17fa804890b496fcb99a794d88899e67a1d0feffe33389431",
+      "originalCacheFile": "exec-528dcc83-2f9c-4976-9bc9-acb11c0e6b62.png",
+      "originalGeneratedPngSha256": "1e50d9846be8136199b3d16fd6216c8b68a87a014539616aacb66ca0feae8b1d",
+      "originalGeneratedGeometry": [
+        1174,
+        1339
+      ],
+      "sourceVisibleBounds": [
+        74,
+        16,
+        309,
+        368
+      ],
+      "normalisedVisibleSize": [
+        144,
+        216
+      ],
+      "normalisedOffset": [
+        56,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "dishwasher-rinse-aid": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/dishwasher-rinse-aid.png",
+      "sha256": "ae014cf67a09878d0b7d297e5157893ae04cea057b4e4776b739b79b20dba268",
+      "family": "dishwasher",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/dishwasher-rinse-aid-source.webp",
+      "sourceSha256": "779abcb3aa8ed27b2d738831dfd3d5a8a303fe59af9af99d3649b67576c49484",
+      "originalCacheFile": "exec-7ece2f90-1783-424e-8642-99aff657eb93.png",
+      "originalGeneratedPngSha256": "d7587a438172a1fc4b0c0667352a73e5778950fdae70dcf76e8c59693b27a28c",
+      "originalGeneratedGeometry": [
+        1174,
+        1339
+      ],
+      "sourceVisibleBounds": [
+        116,
+        16,
+        268,
+        368
+      ],
+      "normalisedVisibleSize": [
+        93,
+        216
+      ],
+      "normalisedOffset": [
+        81,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cleaner-toilet-bottle": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-toilet-bottle.png",
+      "sha256": "4af28f1fac7a6df71abf07919ec068cd9a8071533c0d2284b3963b397b20dfce",
+      "family": "cleaning-chemical",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/cleaner-toilet-bottle-source.webp",
+      "sourceSha256": "6ea088c76206f5092658a2cb0eb4cb09acebef9b35350d32225bc75f0dc6b4ee",
+      "originalCacheFile": "exec-d0783e5f-d83e-4e97-a0a3-0592ce1a064b.png",
+      "originalGeneratedPngSha256": "c3e5597a7171bab2c4703714362188340232342b78043c9f557c5ceede4496ab",
+      "originalGeneratedGeometry": [
+        1174,
+        1339
+      ],
+      "sourceVisibleBounds": [
+        112,
+        16,
+        271,
+        368
+      ],
+      "normalisedVisibleSize": [
+        98,
+        216
+      ],
+      "normalisedOffset": [
+        79,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "tool-dustpan": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-dustpan.png",
+      "sha256": "1947a46ee592db81559e421e94124b81244062cd7d0a90c21cdf7b4adb8e3e27",
+      "family": "tool",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/tool-dustpan-source.webp",
+      "sourceSha256": "4b0f960c96670bedb4d49e8c14f1801c4af0947a9b120369bbcf685c842ffc65",
+      "originalCacheFile": "exec-71c3849d-6789-4e7d-a8ad-46d9c20108fb.png",
+      "originalGeneratedPngSha256": "eba64f11d7679cdf8b613e529e67da0f1c70d88d3ddb65697fb6f72cf0a17cb5",
+      "originalGeneratedGeometry": [
+        1322,
+        1190
+      ],
+      "sourceVisibleBounds": [
+        16,
+        36,
+        368,
+        348
+      ],
+      "normalisedVisibleSize": [
+        216,
+        191
+      ],
+      "normalisedOffset": [
+        20,
+        32
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "tool-hand-brush": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-hand-brush.png",
+      "sha256": "72d9a2c00bd261e5804d1a4a5d2d9e4ac54f7eed269f61f6256a15019eedd7e1",
+      "family": "tool",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/tool-hand-brush-source.webp",
+      "sourceSha256": "5d9bce8f115d43b8c59a01a4643c044551c540c116208584472d94ab339da83f",
+      "originalCacheFile": "exec-f8be51ac-6bd2-4c91-8cfc-4db47c2a1336.png",
+      "originalGeneratedPngSha256": "2fdc69894183ef0e79b67ec7001a2b10f3df114e841f4678dc5107d9169ab215",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        90,
+        368,
+        293
+      ],
+      "normalisedVisibleSize": [
+        216,
+        125
+      ],
+      "normalisedOffset": [
+        20,
+        65
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "tool-broom": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-broom.png",
+      "sha256": "eaa3cf610a6c8320f961092443003c46514c8d6482551e19cc84cbfab7b3fee0",
+      "family": "tool",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/tool-broom-source.webp",
+      "sourceSha256": "687a646d08e4245c7dcfa3667982d41471bcb024efe3de605af38e335ee3df6a",
+      "originalCacheFile": "exec-68638a2a-2eee-4add-b23f-552ca569a288.png",
+      "originalGeneratedPngSha256": "b68567fec7ff332858a09649ad99ba6e9e29fb99ba65be677ef113fd6db00ae5",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "sourceVisibleBounds": [
+        16,
+        22,
+        368,
+        361
+      ],
+      "normalisedVisibleSize": [
+        216,
+        208
+      ],
+      "normalisedOffset": [
+        20,
+        24
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "tool-string-mop": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-string-mop.png",
+      "sha256": "5b8ec0b01fdc365136d90c47102845a41ee22298c23708aec6ee25bb7809cdbb",
+      "family": "tool",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/tool-string-mop-source.webp",
+      "sourceSha256": "f87313bd9a0e2fff6c71461d22b47d9ccbdaaf95116154352eb5262f3bd4c392",
+      "originalCacheFile": "exec-ff1e4612-c951-4940-a4ef-ee1ccffc70ca.png",
+      "originalGeneratedPngSha256": "1fb7c036c326b6d608465ae734649d73d8e33a4fa1857e461044c6a1c35f4702",
+      "originalGeneratedGeometry": [
+        1230,
+        1278
+      ],
+      "sourceVisibleBounds": [
+        27,
+        16,
+        357,
+        368
+      ],
+      "normalisedVisibleSize": [
+        202,
+        216
+      ],
+      "normalisedOffset": [
+        27,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "tool-cleaning-bucket": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-cleaning-bucket.png",
+      "sha256": "993be679f5cec7736e624c2cc8ac36f110a1e9e8fc8f8b913af9ba351a3e5e7d",
+      "family": "tool",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/tool-cleaning-bucket-source.webp",
+      "sourceSha256": "74297be536843efcb31c134e89212db314ba22fb11b805fa6ecb8138af90cfcc",
+      "originalCacheFile": "exec-aecc962d-1c00-4e2d-8221-f21ac6518732.png",
+      "originalGeneratedPngSha256": "fc2d859313c9d4152baca5ac24894fa43d9e0d2a971672429cebd376e6543a80",
+      "originalGeneratedGeometry": [
+        1254,
+        1254
+      ],
+      "sourceVisibleBounds": [
+        16,
+        19,
+        368,
+        365
+      ],
+      "normalisedVisibleSize": [
+        216,
+        212
+      ],
+      "normalisedOffset": [
+        20,
+        22
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "wear-rubber-gloves-pair": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/wear-rubber-gloves-pair.png",
+      "sha256": "408b76cc4ac404d8fac3553fa97d71a04e8428943dc49a55ec648eb1f7a90afb",
+      "family": "wearable",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/wear-rubber-gloves-pair-source.webp",
+      "sourceSha256": "b3f31e6ff30d397de3ef4c96ce49b0a5f41361709aecb6d42388fb42ea54faf3",
+      "originalCacheFile": "exec-014411cb-88f7-4582-b3d7-6deb8722cca6.png",
+      "originalGeneratedPngSha256": "0ef387085ebff7385104b2e14fe9c0748b2226ddb99bc28b31afa2fdee338937",
+      "originalGeneratedGeometry": [
+        1402,
+        1122
+      ],
+      "sourceVisibleBounds": [
+        16,
+        52,
+        368,
+        332
+      ],
+      "normalisedVisibleSize": [
+        216,
+        172
+      ],
+      "normalisedOffset": [
+        20,
+        42
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "consumable-cellulose-sponge": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-cellulose-sponge.png",
+      "sha256": "9a925092377e7497a66f3cb79fc88e0a4bda006890a7d06f756ad6eb88623e7c",
+      "family": "consumable",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/consumable-cellulose-sponge-source.webp",
+      "sourceSha256": "5602b79d1a595ffcc71259db408136d0256953a39e732d40a57c0f9cee49e4dc",
+      "originalCacheFile": "exec-d6907e8f-d9c0-4658-8ce2-674ba528f384.png",
+      "originalGeneratedPngSha256": "8d8f56678ca2bbf1c4365c40109ea7a06781dca2aa2fae545599122461e4c903",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        74,
+        368,
+        309
+      ],
+      "normalisedVisibleSize": [
+        216,
+        144
+      ],
+      "normalisedOffset": [
+        20,
+        56
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "consumable-scouring-pad": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-scouring-pad.png",
+      "sha256": "4fb91401fa9ad9b9ff342cc1018e8e7166f8712aaeed630bc1e045ad4732e0b4",
+      "family": "consumable",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/consumable-scouring-pad-source.webp",
+      "sourceSha256": "221f41e05cc7bd07adbbcd6fded7bcaecdb994a78940a05d3dc8b8a28afb9a0a",
+      "originalCacheFile": "exec-0ac36ddc-c43b-4757-928b-d1563cde40a7.png",
+      "originalGeneratedPngSha256": "50e69ebb4d1a51758d7adbe3d6186f34ae70d91468f56f6eb6920be97f76a7e3",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        84,
+        368,
+        299
+      ],
+      "normalisedVisibleSize": [
+        216,
+        132
+      ],
+      "normalisedOffset": [
+        20,
+        62
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "consumable-microfiber-cloth": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-microfiber-cloth.png",
+      "sha256": "1ab65f3b637f2b43d51d83477f43fc4ff1c68177f65f9f51c57ca8a9323a1218",
+      "family": "consumable",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/consumable-microfiber-cloth-source.webp",
+      "sourceSha256": "bb05127b8607d508a4340ddd5276be0f4cf519b0b64c9abbd559a9529f5452b3",
+      "originalCacheFile": "exec-5455588f-cc9e-4010-9216-dc95b880ff98.png",
+      "originalGeneratedPngSha256": "50cb49a3cc44681e128571d298dd5ae75cc05fae3f3512fbdc7c7dfe368506e9",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        80,
+        368,
+        303
+      ],
+      "normalisedVisibleSize": [
+        216,
+        137
+      ],
+      "normalisedOffset": [
+        20,
+        59
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "tool-feather-duster": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-feather-duster.png",
+      "sha256": "0f068ee8787f945d414bc98373a1f8796fb59730e7a0f113b8931d9f8e000e86",
+      "family": "tool",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/tool-feather-duster-source.webp",
+      "sourceSha256": "c4c23775dbe345fbd52daf0d3a17fc7c1d6a4f53fac61691ef3dc86c3556979f",
+      "originalCacheFile": "exec-350f5c77-d112-46f2-a18c-0e6279f11702.png",
+      "originalGeneratedPngSha256": "8a868260a905d5d743388340416d0f66ff3e5f8e35d7d5f921c5b06f3b4d1c27",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "sourceVisibleBounds": [
+        16,
+        34,
+        368,
+        349
+      ],
+      "normalisedVisibleSize": [
+        216,
+        193
+      ],
+      "normalisedOffset": [
+        20,
+        31
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "tool-scrub-brush": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-scrub-brush.png",
+      "sha256": "aa2c3fe64cd926ef6756041d07a47c4eb3069c91455cedd8ebc9c5ceebb4972f",
+      "family": "tool",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/tool-scrub-brush-source.webp",
+      "sourceSha256": "2a70f2e1238297df842b8a3c1f06ea6d387037099097b6057382c4f313f0d285",
+      "originalCacheFile": "exec-a07f0f88-b331-4399-a415-3536dec687b6.png",
+      "originalGeneratedPngSha256": "03da8374a4d987c9e6a4450f9801615275d227d356615ddd82ae0f0f2130899c",
+      "originalGeneratedGeometry": [
+        1448,
+        1086
+      ],
+      "sourceVisibleBounds": [
+        16,
+        73,
+        368,
+        310
+      ],
+      "normalisedVisibleSize": [
+        216,
+        145
+      ],
+      "normalisedOffset": [
+        20,
+        55
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "consumable-bin-bag-roll": {
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-bin-bag-roll.png",
+      "sha256": "34cc28d40e7c23a8070ae20de6cf3b7059a0982e8748f190f65af6d6ca763ec7",
+      "family": "consumable",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-household-cleaning-cupboard-pack-v1",
+      "sourceFile": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/source/consumable-bin-bag-roll-source.webp",
+      "sourceSha256": "7f55031bb7071aa7ef745241a9d1d86c29aa37c59795edc331aaf6cb1df2c290",
+      "originalCacheFile": "exec-081343ff-9c7b-4f9a-9a62-e0c9a3e918de.png",
+      "originalGeneratedPngSha256": "d54d692d6059c56824bc239a6b3efb302ef0dbd9ff9125e59d53068c470a3114",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        85,
+        368,
+        299
+      ],
+      "normalisedVisibleSize": [
+        216,
+        131
+      ],
+      "normalisedOffset": [
+        20,
+        62
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejectedGenerations": [
+    {
+      "role": "hand-brush-glow-attempt-1",
+      "status": "rejected-retained-for-completeness",
+      "reason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "cacheFile": "exec-5312cd77-d7a2-4780-be2c-bc421fd64d63.png",
+      "originalGeneratedPngSha256": "7cbd269156e66a7bf62bf9ce52b169c75e74503bd25f615b8bfc9995cdab796e",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/hand-brush-glow-attempt-1.webp",
+      "sha256": "ebf1768e4343e06125713f908c70fa68913832e41d99f6199007f13da521a225",
+      "pixels": [
+        384,
+        256
+      ],
+      "preservation": "deterministically-downsampled-lossless-webp"
+    },
+    {
+      "role": "cellulose-sponge-glow-attempt-1",
+      "status": "rejected-retained-for-completeness",
+      "reason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "cacheFile": "exec-1aafbcdc-7ad1-480c-903b-cf27c8e948db.png",
+      "originalGeneratedPngSha256": "a8d427e1f87f2f9b629166f633bb55e550578be33ff5556e1fc001c6bab07fb1",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/cellulose-sponge-glow-attempt-1.webp",
+      "sha256": "a77886842680b8c9108eb559ad22449e63a208a0d0b060d721ce33a6c6ec96f7",
+      "pixels": [
+        384,
+        256
+      ],
+      "preservation": "deterministically-downsampled-lossless-webp"
+    },
+    {
+      "role": "scouring-pad-glow-attempt-1",
+      "status": "rejected-retained-for-completeness",
+      "reason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "cacheFile": "exec-387a0577-ead4-4730-9dc2-df0dca4515af.png",
+      "originalGeneratedPngSha256": "eae06431dbc2c5c4b83c2f42cc7de828c52f46128fa26a548d342459602c04cd",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/scouring-pad-glow-attempt-1.webp",
+      "sha256": "5b33c66f7fc39e95059c479ba77ae9d1b4eb6f3216bc2e6f49288d82ca69f5cf",
+      "pixels": [
+        384,
+        256
+      ],
+      "preservation": "deterministically-downsampled-lossless-webp"
+    },
+    {
+      "role": "microfiber-cloth-glow-attempt-1",
+      "status": "rejected-retained-for-completeness",
+      "reason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "cacheFile": "exec-a4704e09-c925-4693-bd94-f2f54f6adae9.png",
+      "originalGeneratedPngSha256": "0a1a67f9438a510dcf1fe54c66aad90f5fafb218d254b61add3eecf4215006b1",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/microfiber-cloth-glow-attempt-1.webp",
+      "sha256": "4a793ac4e47919723d3abcd23840537604fd3d9cc88f761d77ab8eb149469ec7",
+      "pixels": [
+        384,
+        256
+      ],
+      "preservation": "deterministically-downsampled-lossless-webp"
+    },
+    {
+      "role": "hand-brush-glow-attempt-2",
+      "status": "rejected-retained-for-completeness",
+      "reason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "cacheFile": "exec-505e93a1-555b-4b51-896b-050c82552ff7.png",
+      "originalGeneratedPngSha256": "c0d7935dc4eca04b5107bb8c5cf9f7c7bb30eb80045089d39199057b0ce4ce03",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/hand-brush-glow-attempt-2.webp",
+      "sha256": "801050a4c6b2a8d1ade5c69ae2ab6bf247fb79b757b70be0e51587de2ed7a828",
+      "pixels": [
+        384,
+        256
+      ],
+      "preservation": "deterministically-downsampled-lossless-webp"
+    },
+    {
+      "role": "cellulose-sponge-glow-attempt-2",
+      "status": "rejected-retained-for-completeness",
+      "reason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "cacheFile": "exec-a765f73f-2952-45f6-9625-c9462a741f04.png",
+      "originalGeneratedPngSha256": "8294a98e844a013f43a88e2bf33227c35c004aca054a44c9edd3b723da6c0ed9",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/cellulose-sponge-glow-attempt-2.webp",
+      "sha256": "5999d939fb7bf0742a0bb1add6c35bd4832c8e7fadc8270626b75abeb201187d",
+      "pixels": [
+        384,
+        256
+      ],
+      "preservation": "deterministically-downsampled-lossless-webp"
+    },
+    {
+      "role": "hand-brush-clean-edit-rejected",
+      "status": "rejected-retained-for-completeness",
+      "reason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "cacheFile": "exec-667e7215-da67-463c-8177-d28c7017c537.png",
+      "originalGeneratedPngSha256": "ec58c66857b87b2cfe557182e351a8411bf0b0a9abbc8d4031237293aee7a1f6",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/hand-brush-clean-edit-rejected.webp",
+      "sha256": "cb743dcb9406464a133890a1efc4cd7550216d50b393f950693832cc43baa58f",
+      "pixels": [
+        384,
+        256
+      ],
+      "preservation": "deterministically-downsampled-lossless-webp"
+    },
+    {
+      "role": "cellulose-sponge-clean-edit-rejected",
+      "status": "rejected-retained-for-completeness",
+      "reason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "cacheFile": "exec-78346e31-0dd2-4859-af8d-adfe1279d042.png",
+      "originalGeneratedPngSha256": "077433127cc156ce72b03af91db5e85c113672360e97ee48f4e22786aeecf713",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/cellulose-sponge-clean-edit-rejected.webp",
+      "sha256": "78aba5fe798f5f576097d82ae018a736d940fb1ce2190710893c6b965a57a8fb",
+      "pixels": [
+        384,
+        256
+      ],
+      "preservation": "deterministically-downsampled-lossless-webp"
+    },
+    {
+      "role": "scouring-pad-clean-edit-rejected",
+      "status": "rejected-retained-for-completeness",
+      "reason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "cacheFile": "exec-d8c62ab2-afda-4092-abd7-b9585dc5e833.png",
+      "originalGeneratedPngSha256": "63b8216544ccb8277fcd214a3c6e579a902c519acca5b5c715021ae1af2d7197",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/scouring-pad-clean-edit-rejected.webp",
+      "sha256": "a996bdf56290cfceecd5dd6afcb5e47ba55be7166bdae95f55d82e537152c904",
+      "pixels": [
+        384,
+        256
+      ],
+      "preservation": "deterministically-downsampled-lossless-webp"
+    },
+    {
+      "role": "microfiber-cloth-clean-edit-rejected",
+      "status": "rejected-retained-for-completeness",
+      "reason": "exterior ambient glow or field made the generation unsuitable as an independently composited prop",
+      "cacheFile": "exec-1e0f5104-f8ba-4013-a202-90bf6549be40.png",
+      "originalGeneratedPngSha256": "aaddbe2c7de17866e413a3c5a00c9c7b488eadb7b334806bd560869758b88473",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/rejected/microfiber-cloth-clean-edit-rejected.webp",
+      "sha256": "024920a500dd43cc1615b7011b573b932d2086af1015c5d1957fd24d08e9f6f2",
+      "pixels": [
+        384,
+        256
+      ],
+      "preservation": "deterministically-downsampled-lossless-webp"
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/evidence/final-assets-contact-sheet.webp",
+    "sha256": "21ff1da1f47fc4f313b7484282223a5e376272d682649c29d3fd8eac1de6be24"
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersClear": true,
+    "componentOwnershipUnambiguous": true,
+    "styleReferencesUnchanged": true,
+    "allAcceptedAssetsIndependent": true,
+    "allTaskGenerationsRepresented": true,
+    "runtimeChanged": false,
+    "kitchenAuthorityChanged": false,
+    "primeChanged": false,
+    "deployed": false
+  }
+}

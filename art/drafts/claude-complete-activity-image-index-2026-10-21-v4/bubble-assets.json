@@ -1,0 +1,633 @@
+{
+  "schema": "lighthouse-keeper/claude-activity-bubble-assets@1",
+  "created": "2026-10-21",
+  "status": "review-only",
+  "canonicalReferencePage": "public/keeper-review/activity-cloud-composer-v5/index.html",
+  "note": "Accepted image assets suitable for bubble composition. Prime body frames, source-only art and rejected evidence are intentionally excluded.",
+  "count": 89,
+  "assets": [
+    {
+      "id": "bbq-burgers-5244d4289bba",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/bbq-burgers-5244d4289bba.png",
+      "sha256": "5244d4289bbaf95f4c2ddd36a72f24fe9b5bf12e2a349365d9fe574fdfa64354"
+    },
+    {
+      "id": "bbq-charcoal-4b728ffaefec",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/bbq-charcoal-4b728ffaefec.png",
+      "sha256": "4b728ffaefec6c4ef792c3ef5261cc5815060077ac3d0a08b44be0abbfd6dfa2"
+    },
+    {
+      "id": "bbq-grill-8984470c007f",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/bbq-grill-8984470c007f.png",
+      "sha256": "8984470c007ff8a35af6fc8428afa9a38318c89bb5c4e7e1f2f34d7b858a5ee0"
+    },
+    {
+      "id": "bbq-hotdogs-63d205ed77f0",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/bbq-hotdogs-63d205ed77f0.png",
+      "sha256": "63d205ed77f06ea3121f4ef2bba1a3dde9d90c064bedaa2c5ceb761553f46f6c"
+    },
+    {
+      "id": "bbq-sausages-2ea34430496e",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/bbq-sausages-2ea34430496e.png",
+      "sha256": "2ea34430496ee43bd09a7640a12eaa5606562f2ab7c42dd6f655ba7a9fe97727"
+    },
+    {
+      "id": "cooking-sandwich-b88b28b259eb",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/cooking-sandwich-b88b28b259eb.png",
+      "sha256": "b88b28b259ebbf7b4729f54116605009cf120bc9abe9c37dce0a19e4dfe847e4"
+    },
+    {
+      "id": "repair-boat-hull-patch-cef61bcec554",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/repair-boat-hull-patch-cef61bcec554.png",
+      "sha256": "cef61bcec5542ac32a74bcae933b972deab398bec5edfabd8ded71441b23c28e"
+    },
+    {
+      "id": "repair-hammer-nails-0c71ed9d475b",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/repair-hammer-nails-0c71ed9d475b.png",
+      "sha256": "0c71ed9d475b334ad85c2f6c7a190ae61a90bcf44c18974559f8a8e7e06632e9"
+    },
+    {
+      "id": "repair-rope-knot-03f0806f550a",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/repair-rope-knot-03f0806f550a.png",
+      "sha256": "03f0806f550a4953ac72c0dc6e17745e00ef71d4d231177343de29e75e4436d5"
+    },
+    {
+      "id": "repair-toolbox-bddc65528cb6",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/repair-toolbox-bddc65528cb6.png",
+      "sha256": "bddc65528cb63fed1403fcbd0de210af4b357585dac5660102512b706f459c10"
+    },
+    {
+      "id": "repair-wrench-cog-588a382fd46f",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/repair-wrench-cog-588a382fd46f.png",
+      "sha256": "588a382fd46f0fbb2186db0e40613a6e02c8476d4b99bd53dd6d3b2f27861ea4"
+    },
+    {
+      "id": "sandwich-bread-11313cc6d083",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/sandwich-bread-11313cc6d083.png",
+      "sha256": "11313cc6d0839d313ecb96ef4136e372904fe848de862034a2234637ecabb8c8"
+    },
+    {
+      "id": "sandwich-ham-d3cdba07f6b6",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/sandwich-ham-d3cdba07f6b6.png",
+      "sha256": "d3cdba07f6b695e7e9918fde92822aeb3f1d543aafde0b59bd204069641c4fb7"
+    },
+    {
+      "id": "sandwich-lettuce-3addb510966c",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/sandwich-lettuce-3addb510966c.png",
+      "sha256": "3addb510966c088b52b2d50a5a5e6088231a4e083798a95f8d98573e35b37ef5"
+    },
+    {
+      "id": "sandwich-tomato-10f760734f45",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/sandwich-tomato-10f760734f45.png",
+      "sha256": "10f760734f45b9cf6e2ee7ca815f7c89137cd64854bd71de98b07beaa871e2be"
+    },
+    {
+      "id": "washing-cutlery-76d1a71e4d9e",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/washing-cutlery-76d1a71e4d9e.png",
+      "sha256": "76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca"
+    },
+    {
+      "id": "washing-droplets-14fa3c4503f2",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/washing-droplets-14fa3c4503f2.png",
+      "sha256": "14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da"
+    },
+    {
+      "id": "washing-liquid-f311431e2c6e",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/washing-liquid-f311431e2c6e.png",
+      "sha256": "f311431e2c6e480033982790d416bbd6df16f414338c6a030ff28d2780efd2c1"
+    },
+    {
+      "id": "washing-plate-01b82c03b73a",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/washing-plate-01b82c03b73a.png",
+      "sha256": "01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f"
+    },
+    {
+      "id": "washing-sponge-aed0b35f1bf2",
+      "family": "activity-object",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/activity/washing-sponge-aed0b35f1bf2.png",
+      "sha256": "aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533"
+    },
+    {
+      "id": "symbol-electrical-arc-dc12888c17f6",
+      "family": "generic-action-symbol-v7",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/symbol/generic-v7/symbol-electrical-arc-dc12888c17f6.png",
+      "sha256": "dc12888c17f6ff30a1519653ec9b8534e6f1510e2478ce42586739e291491fa9"
+    },
+    {
+      "id": "symbol-exclamation-mark-b16054b0c4fe",
+      "family": "generic-action-symbol-v7",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/symbol/generic-v7/symbol-exclamation-mark-b16054b0c4fe.png",
+      "sha256": "b16054b0c4fe4c26f6dcdbb2ca6e5ce52bd2b90a21e8037d57925498167c425f"
+    },
+    {
+      "id": "symbol-foul-odour-6ad163119859",
+      "family": "generic-action-symbol-v7",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/symbol/generic-v7/symbol-foul-odour-6ad163119859.png",
+      "sha256": "6ad163119859fa51df31b05dc3460ac5a87cf0d7765657bc78abbb4b2508e7cb"
+    },
+    {
+      "id": "symbol-heat-shimmer-e85c89733bf1",
+      "family": "generic-action-symbol-v7",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/symbol/generic-v7/symbol-heat-shimmer-e85c89733bf1.png",
+      "sha256": "e85c89733bf1eb6d0ca2187f4669ad267c19ea914b6e0dea04cb0a0d720530a6"
+    },
+    {
+      "id": "symbol-pleasant-aroma-ed972850c208",
+      "family": "generic-action-symbol-v7",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/symbol/generic-v7/symbol-pleasant-aroma-ed972850c208.png",
+      "sha256": "ed972850c2086664b5bed7958b88e38a1b93a4fbd7265381b2ec6eff7354adf4"
+    },
+    {
+      "id": "symbol-question-mark-a4ef40dab1f0",
+      "family": "generic-action-symbol-v7",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/symbol/generic-v7/symbol-question-mark-a4ef40dab1f0.png",
+      "sha256": "a4ef40dab1f00c00b0a11bb0d21c44e1acc38cbf90a6c0e12d5528854d307734"
+    },
+    {
+      "id": "symbol-welding-sparks-6d69f48e4e15",
+      "family": "generic-action-symbol-v7",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/symbol/generic-v7/symbol-welding-sparks-6d69f48e4e15.png",
+      "sha256": "6d69f48e4e153dd3b4a694563c9282a6b603ce7578294e336f04e1584b1dca1a"
+    },
+    {
+      "id": "symbol-heat-curls-053ec2205751",
+      "family": "original-comic-symbol",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/symbol/original/symbol-heat-curls-053ec2205751.png",
+      "sha256": "053ec220575142bbfd5d7d822254bf661c0881c481d33224d2c94f5006611f48"
+    },
+    {
+      "id": "symbol-impact-star-24bd4e859827",
+      "family": "original-comic-symbol",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/symbol/original/symbol-impact-star-24bd4e859827.png",
+      "sha256": "24bd4e85982758910682eee6e7963a3c197b4de8b20f5e4f07caf2ec1ef3635f"
+    },
+    {
+      "id": "symbol-motion-ticks-a91599e13c96",
+      "family": "original-comic-symbol",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/symbol/original/symbol-motion-ticks-a91599e13c96.png",
+      "sha256": "a91599e13c96e96cff6a247815bb30840d1376493f5c123ab73c3b20a7d4630d"
+    },
+    {
+      "id": "symbol-sizzle-spark-7fd4e839c350",
+      "family": "original-comic-symbol",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/symbol/original/symbol-sizzle-spark-7fd4e839c350.png",
+      "sha256": "7fd4e839c3505e0be040ac56301be8bd7fc1ce99f77e720a1aca581d0dad76db"
+    },
+    {
+      "id": "symbol-soap-bubbles-a1946758a072",
+      "family": "original-comic-symbol",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/symbol/original/symbol-soap-bubbles-a1946758a072.png",
+      "sha256": "a1946758a07299ee5625b99499c5b4f4ed2bbcb9453737be23f091b42685bef7"
+    },
+    {
+      "id": "symbol-water-droplets-2bff1e869ae7",
+      "family": "original-comic-symbol",
+      "pack": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-activity-cloud-review-pack-2026-10-20-v1/assets/symbol/original/symbol-water-droplets-2bff1e869ae7.png",
+      "sha256": "2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc"
+    },
+    {
+      "id": "bbq-raw-burger-patties",
+      "family": "bbq",
+      "pack": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-raw-burger-patties.png",
+      "sha256": "8d8107dbe7705c7cecbe90ad2ead6e83b82525ab4ca9b52b25e13d624c4e9521"
+    },
+    {
+      "id": "bbq-sausages",
+      "family": "bbq",
+      "pack": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-sausages.png",
+      "sha256": "dfc97e3a148a3a77487a0e64b66e4dcb0b6a1406f69ac6f957a45ee93dc94fee"
+    },
+    {
+      "id": "bbq-grill",
+      "family": "bbq",
+      "pack": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-grill.png",
+      "sha256": "e6c7d5e51308d4fc974d6c3f090548cfba4d725d43564c9f7a6943bb55b407b7"
+    },
+    {
+      "id": "cooking-cheese-slicing",
+      "family": "cooking",
+      "pack": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/cooking-cheese-slicing.png",
+      "sha256": "ca7d2733d7f22b350602566aef641065c5321acd298b9e6611bf8c1e8fd5cb35"
+    },
+    {
+      "id": "bbq-raw-steak",
+      "family": "bbq",
+      "pack": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-raw-steak.png",
+      "sha256": "14870ae013f48d8ff84ccb1894c41cb8baec661273f0da2f15cf1032033aa670"
+    },
+    {
+      "id": "meal-steak-fries",
+      "family": "meal",
+      "pack": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/meal-steak-fries.png",
+      "sha256": "8aebdcafac1a8c2749f9876fc51d2fc1c7bbe78005120b0bb8b5ca5b657c99ae"
+    },
+    {
+      "id": "condiment-ketchup-bottle",
+      "family": "condiment",
+      "pack": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/condiment-ketchup-bottle.png",
+      "sha256": "153cdd6ac24624c2ffad96e7c990ece2c1a53972adb3f4e67b0f51b340ffcb49"
+    },
+    {
+      "id": "condiment-mustard-bottle",
+      "family": "condiment",
+      "pack": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/condiment-mustard-bottle.png",
+      "sha256": "65c2f38eec206e0f07160f8d8e1ae6dd4ce2b415154a73ca845508f2fdbd44ee"
+    },
+    {
+      "id": "bbq-tongs",
+      "family": "tool",
+      "pack": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-tongs.png",
+      "sha256": "885d696d6636f25d51c93c9d3f35fb5a9a09533b5e9604b12339740e1b45c8c2"
+    },
+    {
+      "id": "bbq-slotted-turner",
+      "family": "tool",
+      "pack": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-slotted-turner.png",
+      "sha256": "9115fb7c3602151d786db177f2ea6aa5baaac1529a24cd71a05ed95f83985065"
+    },
+    {
+      "id": "bbq-basting-brush",
+      "family": "tool",
+      "pack": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-basting-brush.png",
+      "sha256": "a6bcd75aa5b4c50216622c04a5018c23998b18097eb20a77eddd4e79c613a16d"
+    },
+    {
+      "id": "bbq-grill-fork",
+      "family": "tool",
+      "pack": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-grill-fork.png",
+      "sha256": "6a2451de5e126ef784cae7a0d6c001b6640fb6fc582938b90de6cbb7424cb36d"
+    },
+    {
+      "id": "bbq-heatproof-mitt",
+      "family": "ephemera",
+      "pack": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-heatproof-mitt.png",
+      "sha256": "85b7b5c527287ecb238b57184bdbd3327649cf338b7a40504d0113381d9f4367"
+    },
+    {
+      "id": "bbq-charcoal-chimney",
+      "family": "ephemera",
+      "pack": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-charcoal-chimney.png",
+      "sha256": "9f172c34fd0cfeeaeebcc924522ae7ee552c053229e61ffae08ae2c0e91e46c7"
+    },
+    {
+      "id": "bbq-skewer-bundle",
+      "family": "ephemera",
+      "pack": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-skewer-bundle.png",
+      "sha256": "b07b6828cc76a3b54b8aa8a8671f48adb91ec751b48a52068c69bdc710f0cc26"
+    },
+    {
+      "id": "bbq-charcoal-bag",
+      "family": "ephemera",
+      "pack": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-charcoal-bag.png",
+      "sha256": "f45c271e7d9d14cbab2a3dde2f4d15784a875a659515c163ef9fe3f72fdee254"
+    },
+    {
+      "id": "condiment-wholegrain-mustard-jar",
+      "family": "condiment",
+      "pack": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-wholegrain-mustard-jar.png",
+      "sha256": "5f0739bd891dd0475e5f3827a3392fbfac6df9c584ca73937591db7c9cf4b74c"
+    },
+    {
+      "id": "condiment-pickle-jar",
+      "family": "condiment",
+      "pack": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-pickle-jar.png",
+      "sha256": "a48fc115e5ef7cc8a8200f3a26d53667e740e97473ee5c5bb9c8c70e9b81d9e4"
+    },
+    {
+      "id": "condiment-mayonnaise-jar",
+      "family": "condiment",
+      "pack": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-mayonnaise-jar.png",
+      "sha256": "7d503285bc4ccf5cb098741c569b01a4887e4806e3c6147f97b480311be95d25"
+    },
+    {
+      "id": "condiment-salt-mill",
+      "family": "seasoning",
+      "pack": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-salt-mill.png",
+      "sha256": "a0eadd6a9f3b760191d69cafca84e83dca5e6b9e1d76aed6f09886ace93b3259"
+    },
+    {
+      "id": "condiment-pepper-mill",
+      "family": "seasoning",
+      "pack": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-pepper-mill.png",
+      "sha256": "762f50f6954bb69afbbdef0b41d43eef13c7d4dee0dfcb3910acf42fff1fad38"
+    },
+    {
+      "id": "prep-bread-slicing",
+      "family": "preparation-action",
+      "pack": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/prep-bread-slicing.png",
+      "sha256": "d665a9df3462d9543137b9134610181d84081cff0311d2b17293985a0a5234fb"
+    },
+    {
+      "id": "knife-chef",
+      "family": "tool",
+      "pack": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/knife-chef.png",
+      "sha256": "292543ab725d9cadd473539847e25c08ba9c867720af7b71888690293a6ccb20"
+    },
+    {
+      "id": "knife-bread",
+      "family": "tool",
+      "pack": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/knife-bread.png",
+      "sha256": "ea7fe35cd1487d4c1ee22539dc1ceb2e7f65143298b89e84eb9c9625228bc4d6"
+    },
+    {
+      "id": "knife-paring",
+      "family": "tool",
+      "pack": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/knife-paring.png",
+      "sha256": "7d69426fd494b75186b23b33e21b69e89fd83b0747af006af227d241bdb01fb1"
+    },
+    {
+      "id": "ingredient-butter-block",
+      "family": "ingredient",
+      "pack": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/ingredient-butter-block.png",
+      "sha256": "0dcf64e538831b23f10de0de4f2a773b84271470417c1908642b11fc0c847e59"
+    },
+    {
+      "id": "condiment-olive-oil",
+      "family": "condiment",
+      "pack": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-olive-oil.png",
+      "sha256": "102d543540a2675c5b82575f5fc332585e6b3749bfdced4c1f162e087c49d124"
+    },
+    {
+      "id": "condiment-raspberry-jam",
+      "family": "condiment",
+      "pack": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-raspberry-jam.png",
+      "sha256": "dfc5ce3f9d6ccd334bd8e6eed5ba71d203c80b7542b85e64fcf9c6d90ef2b23b"
+    },
+    {
+      "id": "condiment-honey-pot",
+      "family": "condiment",
+      "pack": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-honey-pot.png",
+      "sha256": "e8a1d55341f198f0eb7e2018ea4ca8e37d7f9452cc81e6e601c9be3418c4b5b4"
+    },
+    {
+      "id": "condiment-malt-vinegar",
+      "family": "condiment",
+      "pack": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1",
+      "file": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-malt-vinegar.png",
+      "sha256": "99e49748fc316803a5b7743a8c4ac063a879498c25258c8a65ca5572397fd672"
+    },
+    {
+      "id": "cleaner-bleach-bottle",
+      "family": "cleaning-chemical",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-bleach-bottle.png",
+      "sha256": "e0661a1edac8ed1b6d4a985b71ade903ba748aee94b828467c6086c4e164700d"
+    },
+    {
+      "id": "cleaner-disinfectant-bottle",
+      "family": "cleaning-chemical",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-disinfectant-bottle.png",
+      "sha256": "2203bd93f62ee35f6e8d5215ecde39baa3e6ced69b6d76e5cfc1302103b0bd39"
+    },
+    {
+      "id": "cleaner-multisurface-spray",
+      "family": "cleaning-chemical",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-multisurface-spray.png",
+      "sha256": "7be22a7a3307e96a42bc0e9c102837f9193d8f9ca6ae79c0a3ff75a7f53db466"
+    },
+    {
+      "id": "cleaner-glass-spray",
+      "family": "cleaning-chemical",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-glass-spray.png",
+      "sha256": "844482a466b07b091253a96eaa639e5b8ada6ba7b448248b14f9e95606f29068"
+    },
+    {
+      "id": "cleaner-furniture-polish",
+      "family": "cleaning-chemical",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-furniture-polish.png",
+      "sha256": "a1c092cb617619c7b248c63a76e505e1f5a166468cf70e3b7d3dfcadeb62ed7f"
+    },
+    {
+      "id": "cleaner-washing-up-liquid",
+      "family": "cleaning-chemical",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-washing-up-liquid.png",
+      "sha256": "5badd8f058268a24bba76e7d61138eeae568cc6d2c8da55d1e40bf12089ca254"
+    },
+    {
+      "id": "laundry-washing-powder-box",
+      "family": "laundry",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-washing-powder-box.png",
+      "sha256": "9003d57c4801186b1eff92439bffb56b5261ab34783035be721fb1cf389ae725"
+    },
+    {
+      "id": "laundry-liquid-detergent",
+      "family": "laundry",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-liquid-detergent.png",
+      "sha256": "36bf7d4bc12087b372ceb6d72532db3755b7403fd0e622a76b7cb9826684396a"
+    },
+    {
+      "id": "laundry-fabric-conditioner",
+      "family": "laundry",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-fabric-conditioner.png",
+      "sha256": "9598738550338eea0893a674eaa23d7a377181a39e5e31dcb5da1ee92f176029"
+    },
+    {
+      "id": "laundry-stain-remover-tub",
+      "family": "laundry",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-stain-remover-tub.png",
+      "sha256": "25f30e5f377fdde0f1120ed29f948eeb0acd41bf5488ee8f8df66ad07c97bf9e"
+    },
+    {
+      "id": "dishwasher-tablets-tub",
+      "family": "dishwasher",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/dishwasher-tablets-tub.png",
+      "sha256": "2db3025d4b7adb6585c05f495033a6eb1bc977bdb6d0137d92cc39f733f3f0c6"
+    },
+    {
+      "id": "dishwasher-salt-carton",
+      "family": "dishwasher",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/dishwasher-salt-carton.png",
+      "sha256": "965041349f5d1137b68dcf77c697b15988769e83d1263e35bb526db0daf164d6"
+    },
+    {
+      "id": "dishwasher-rinse-aid",
+      "family": "dishwasher",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/dishwasher-rinse-aid.png",
+      "sha256": "ae014cf67a09878d0b7d297e5157893ae04cea057b4e4776b739b79b20dba268"
+    },
+    {
+      "id": "cleaner-toilet-bottle",
+      "family": "cleaning-chemical",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-toilet-bottle.png",
+      "sha256": "4af28f1fac7a6df71abf07919ec068cd9a8071533c0d2284b3963b397b20dfce"
+    },
+    {
+      "id": "tool-dustpan",
+      "family": "tool",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-dustpan.png",
+      "sha256": "1947a46ee592db81559e421e94124b81244062cd7d0a90c21cdf7b4adb8e3e27"
+    },
+    {
+      "id": "tool-hand-brush",
+      "family": "tool",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-hand-brush.png",
+      "sha256": "72d9a2c00bd261e5804d1a4a5d2d9e4ac54f7eed269f61f6256a15019eedd7e1"
+    },
+    {
+      "id": "tool-broom",
+      "family": "tool",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-broom.png",
+      "sha256": "eaa3cf610a6c8320f961092443003c46514c8d6482551e19cc84cbfab7b3fee0"
+    },
+    {
+      "id": "tool-string-mop",
+      "family": "tool",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-string-mop.png",
+      "sha256": "5b8ec0b01fdc365136d90c47102845a41ee22298c23708aec6ee25bb7809cdbb"
+    },
+    {
+      "id": "tool-cleaning-bucket",
+      "family": "tool",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-cleaning-bucket.png",
+      "sha256": "993be679f5cec7736e624c2cc8ac36f110a1e9e8fc8f8b913af9ba351a3e5e7d"
+    },
+    {
+      "id": "wear-rubber-gloves-pair",
+      "family": "wearable",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/wear-rubber-gloves-pair.png",
+      "sha256": "408b76cc4ac404d8fac3553fa97d71a04e8428943dc49a55ec648eb1f7a90afb"
+    },
+    {
+      "id": "consumable-cellulose-sponge",
+      "family": "consumable",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-cellulose-sponge.png",
+      "sha256": "9a925092377e7497a66f3cb79fc88e0a4bda006890a7d06f756ad6eb88623e7c"
+    },
+    {
+      "id": "consumable-scouring-pad",
+      "family": "consumable",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-scouring-pad.png",
+      "sha256": "4fb91401fa9ad9b9ff342cc1018e8e7166f8712aaeed630bc1e045ad4732e0b4"
+    },
+    {
+      "id": "consumable-microfiber-cloth",
+      "family": "consumable",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-microfiber-cloth.png",
+      "sha256": "1ab65f3b637f2b43d51d83477f43fc4ff1c68177f65f9f51c57ca8a9323a1218"
+    },
+    {
+      "id": "tool-feather-duster",
+      "family": "tool",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-feather-duster.png",
+      "sha256": "0f068ee8787f945d414bc98373a1f8796fb59730e7a0f113b8931d9f8e000e86"
+    },
+    {
+      "id": "tool-scrub-brush",
+      "family": "tool",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-scrub-brush.png",
+      "sha256": "aa2c3fe64cd926ef6756041d07a47c4eb3069c91455cedd8ebc9c5ceebb4972f"
+    },
+    {
+      "id": "consumable-bin-bag-roll",
+      "family": "consumable",
+      "pack": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1",
+      "file": "art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-bin-bag-roll.png",
+      "sha256": "34cc28d40e7c23a8070ae20de6cf3b7059a0982e8748f190f65af6d6ca763ec7"
+    }
+  ]
+}
