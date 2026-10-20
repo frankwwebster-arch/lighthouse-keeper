@@ -328,6 +328,11 @@ export default {
         destination: '/keeper-review/kitchen-oven-standalone-v32/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-modular-join-workbench-v33',
+        destination: '/keeper-review/kitchen-modular-join-workbench-v33/index.html',
+        permanent: false,
+      },
     ]
   },
 }

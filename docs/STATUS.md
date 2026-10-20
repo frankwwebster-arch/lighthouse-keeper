@@ -287,6 +287,22 @@ against the obsolete pre-modular oven; its successor follows after this static
 gate is approved. V32 is reversible, unapproved and unpromoted; V30/V31,
 Cabinet V11, V22, Final/runtime and later kitchen assets remain unchanged.
 
+Kitchen Modular Join Workbench V33 at
+`/keeper-review/kitchen-modular-join-workbench-v33/` is the active combined
+sink/oven placement and join gate. One exact V11 two-bay cabinet run remains
+fixed in bays 2–3; the exact V25 sink and V32 oven can each be selected, dragged
+loosely and committed to any two distinct free 84-pixel bays. The other movable
+asset and fixed run are excluded from legal destinations. Prime interaction
+anchors always equal the committed 84-pixel body midpoint at y=218. Exact
+adjacency is classified by pair: cabinet↔sink uses the approved V22 flat cap;
+every pair containing the oven uses V32's triangular underlay, blue body fill
+and narrow non-oven seam cleanup; and an unjoined sink left side uses V25's
+isolated cutout plus rounded V11 end. Sink and oven can therefore sit together
+in either order without baking cabinet pixels into either appliance. All 12
+legal non-overlapping arrangements are deterministically verified. V33 is
+reversible, unapproved and unpromoted; V22/V25/V32, Final/runtime and later
+kitchen assets remain unchanged.
+
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
 link with V6. The animation remains the exact V1/V2 six-pose motion inside its

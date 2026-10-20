@@ -620,6 +620,18 @@ asset-first tool demonstrates its three models and drag/resize/crop/speed/
 removal controls, but final smoke placement waits for a successor workbench
 using the standalone oven. V32 is a reversible, unapproved review gate; see
 [`docs/KITCHEN_OVEN_STANDALONE_V32_2026-10-20.md`](docs/KITCHEN_OVEN_STANDALONE_V32_2026-10-20.md).
+The active combined placement gate is now
+`/keeper-review/kitchen-modular-join-workbench-v33/`. It keeps the fixed V11
+two-bay cabinet run in bays 2–3 and lets the exact V25 sink and V32 oven move
+independently among any two distinct free 84-pixel bays. Loose dragging is only
+a preview: release commits the selected appliance to the nearest legal
+unoccupied origin and derives its Prime stop/turn anchor from the exact body
+midpoint. A pair-aware resolver applies the V22 flat join to cabinet↔sink, the
+V32 triangular join to every pair containing the oven (including sink↔oven in
+either order), and the V25 cutout/rounded end whenever the sink has no exact
+left neighbour. Repairs remain separate compositor layers; no source sprite is
+amended. See
+[`docs/KITCHEN_MODULAR_JOIN_WORKBENCH_V33_2026-10-20.md`](docs/KITCHEN_MODULAR_JOIN_WORKBENCH_V33_2026-10-20.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
