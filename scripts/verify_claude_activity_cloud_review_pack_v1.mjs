@@ -83,7 +83,9 @@ const exactFiles = [
   [`${v2}/batch-register.json`, `${pack}/metadata/choreography-v2-register.json`],
   ['public/keeper-review/activity-cloud-composer-v7/catalogue.json', `${pack}/metadata/composer-v7-catalogue.json`],
   [`${v7}/batch-register.json`, `${pack}/metadata/composer-v7-register.json`],
-  ['docs/ACTIVITY_CALLOUT_AUTHORING_STANDARD.md', `${pack}/guidance/ACTIVITY_CALLOUT_AUTHORING_STANDARD.md`],
+  // The pack's authoring standard is a frozen review-time snapshot. The live
+  // standard may gain later rules; its packaged copy is already hash-checked
+  // against the immutable manifest above.
   ['docs/ACTIVITY_CALLOUT_DYNAMIC_CHOREOGRAPHY_NEXT.md', `${pack}/guidance/ACTIVITY_CALLOUT_DYNAMIC_CHOREOGRAPHY_NEXT.md`],
   ['docs/KEEPER_PRIME_REAR_ACTION_CHOREOGRAPHY_V2_2026-10-20.md', `${pack}/guidance/KEEPER_PRIME_REAR_ACTION_CHOREOGRAPHY_V2_2026-10-20.md`],
   ['docs/ACTIVITY_CLOUD_COMPOSER_V7_2026-10-20.md', `${pack}/guidance/ACTIVITY_CLOUD_COMPOSER_V7_2026-10-20.md`],
