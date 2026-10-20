@@ -681,10 +681,16 @@ have a kitchen furniture controller; this is a tested review/specification
 contract, not runtime wiring. V41 is reversible, approved and unpromoted.
 Frank approved the exact deployed V41 result on 20 October 2026; the approval
 is pinned without changing its reviewed bytes or promoting runtime/Final art.
-The active next gate is the native-scale old-fashioned Kettle V42 at
-`/keeper-review/kitchen-kettle-standalone-v42/`: separate Off/On/Broken
-kettle cells sit on the exact approved y=134 worktop, and separate steam stays
-owned by the kettle. Toaster and bowl work has not begun. See
+Kettle V42 is preserved but rejected because its 32-pixel treatment read as
+too pixelated and its base ended at the worktop's y134 rear edge, visibly
+floating above the turquoise top plane. The active correction is the
+old-fashioned Kettle V43 at `/keeper-review/kitchen-kettle-standalone-v43/`:
+separate Off/On/Broken kettle cells use a restrained 44-pixel maximum envelope
+and end at visible support row y140. The fridge worktop is an accepted dynamic
+surface at x84; every placement derives a real Keeper tea-making stop from its
+support bay. Broken adds a base-pinned eight-frame rattle, locks both itself and
+its supporting asset, and keeps separate steam owned by the kettle. Toaster
+and bowl work has not begun. See
 [`docs/KITCHEN_DISHWASHER_WORKBENCH_V39_2026-10-20.md`](docs/KITCHEN_DISHWASHER_WORKBENCH_V39_2026-10-20.md).
 See also
 [`docs/KITCHEN_DISHWASHER_WORKBENCH_V40_2026-10-20.md`](docs/KITCHEN_DISHWASHER_WORKBENCH_V40_2026-10-20.md).
@@ -692,6 +698,8 @@ See also
 [`docs/KITCHEN_DISHWASHER_WORKBENCH_V41_2026-10-20.md`](docs/KITCHEN_DISHWASHER_WORKBENCH_V41_2026-10-20.md).
 See also
 [`docs/KITCHEN_KETTLE_STANDALONE_V42_2026-10-20.md`](docs/KITCHEN_KETTLE_STANDALONE_V42_2026-10-20.md).
+See also
+[`docs/KITCHEN_KETTLE_STANDALONE_V43_2026-10-20.md`](docs/KITCHEN_KETTLE_STANDALONE_V43_2026-10-20.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
@@ -1207,7 +1215,7 @@ must remain paused to avoid duplicate alerts.
 - `data/keeper_pose_registry.json`, `data/keeper_endpoint_audit.json` and `data/keeper_endpoint_exceptions.json` — shared pose vocabulary, current real-pixel endpoint evidence, and the frozen legacy migration boundary.
 - `data/keeper_object_dimensions.json` and `docs/KEEPER_OBJECT_DIMENSIONS.md` — keeper-derived furniture, fixture and station dimensions.
 - `public/keeper-review/index.html` — canonical online-only reviewer deployed at `/keeper-review/`; `docs/keeper-scale-audit/review.html` is the generated audit artifact and must be byte-identical, but when opened outside `/keeper-review` it sends the viewer to the live platform instead of presenting a second workspace. Its gallery is a compact visual scan (name, review state, last local save/redraft, playback and frame stepping); `Open close review` opens any chosen card immediately. `Find animation` searches names and overrides all other filters; otherwise independently filter by review state, pose and active/reserve use list. Close review lets Frank override the inferred pose tag, relegate a likely duplicate to the reversible reserve list, expand/compress retained draft comparisons, and select canonical or every exact-name draft as an exportable preferred-promotion candidate—without mutating production. **Hand back to Codex** always asks for confirmation, saves any unsaved cards to that browser if confirmed, then submits the full batch to the durable server-side queue. The server records a semantic exact-name delta (ignoring save timestamps), comparing the first server hand-back to the shipped review baseline and later ones to the prior hand-back; the receipt reports only the changed animation count for later Codex work. When Codex claims a batch, the online reviewer becomes read-only until the delivery is completed, while retaining playback and inspection; JSON backup/import is collapsed as an exceptional browser-recovery option.
-- `review-archive/`, `docs/REVIEW_ARCHIVE.md`, `scripts/archive_keeper_review_media.mjs` and `scripts/replace_keeper_review_set.mjs` — content-addressed storage for review-only images and GIFs. Including Kitchen Kettle V42, the index has 4,502 review references across 185 set manifests resolving to 2,697 committed-tree SHA-256 objects hosted outside Vercel deployments; V41 added no new image object because all 49 assets are byte-identical to V40, while V42 adds fourteen logical references backed by eleven new objects. The single-set replacement path keeps unrelated untracked review work out of a delivery. Immutable page bytes and old URLs remain preserved; short-lived redirects keep the media host replaceable, and new animations preload every moving frame before playback. The clean committed `public/` payload remains above the historical 50 MiB repository guard even though the production build succeeds. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
+- `review-archive/`, `docs/REVIEW_ARCHIVE.md`, `scripts/archive_keeper_review_media.mjs` and `scripts/replace_keeper_review_set.mjs` — content-addressed storage for review-only images and GIFs. Including Kitchen Kettle V43, the index has 4,518 review references across 186 set manifests resolving to 2,704 committed-tree SHA-256 objects hosted outside Vercel deployments; V41 added no new image object because all 49 assets are byte-identical to V40, V42 added fourteen logical references backed by eleven new objects, and V43 adds sixteen logical references backed by seven new objects. The single-set replacement path keeps unrelated untracked review work out of a delivery. Immutable page bytes and old URLs remain preserved; short-lived redirects keep the media host replaceable, and new animations preload every moving frame before playback. The clean committed `public/` payload remains above the historical 50 MiB repository guard even though the production build succeeds. Workbench V12 reuses the immutable V11/V10 delivery and catalogue through a tiny Vercel-safe wrapper instead of duplicating them.
 - `data/keeper_side_on_beard_occlusion_audit.json`, `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v2/`, and `art/drafts/keeper-side-on-beard-occlusion-2026-10-10-v1/` — completed draft-only v2 beard/hand audit and preserved rejected v1 history. The active reviewer shows v2 beside canonical and the separate Frank-selected darts draft; the verifier prevents implicit promotion.
 - `data/keeper_review_drafts.json` and `art/drafts/` — SHA-256-pinned, exact-name review comparisons: the draft-only darts candidate, seven active V11 artist-smock candidates, the accepted complete-route `keeper_snooker` candidate, the 41 exact-name 11 October amendment candidates and the separate party-hat frame-2 v2 variant, plus the ten selected canonical promotions and their reversible previous versions. Hash-addressed reviewer copies prevent same-name historical and current variants from overwriting one another. `scripts/verify_keeper_review_drafts.ts` checks every registered source, canonical/current comparison, sidecar, gutter, publication and reviewer attachment.
 - `docs/keeper-scale-audit/` — all-sheet/all-frame metrics, CSV register and nine printable contact sheets; rebuild every output, including the viewer, with the bundled Python runtime and `scripts/audit_keeper_scale.py`.

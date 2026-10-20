@@ -381,17 +381,24 @@ runtime integration. The exact approval is pinned in
 remains unpromoted, and V40 art, approved cabinetry and Final assets are
 unchanged.
 
-Kitchen Kettle Standalone V42 at
-`/keeper-review/kitchen-kettle-standalone-v42/` is the active reversible gate.
-It supplies an alpha-isolated old-fashioned cream enamel kettle in Off, On and
-Broken states. The round body respects the documented 18 cm counter target;
-the complete handle/spout envelope is at most 32 native pixels and contacts the
-approved worktop exactly at room y=134. Off and On are byte-identical; their
-steam is separate. Broken retains its failed handle and sprung lid, locks to
-its exact counter origin until repaired, and owns every steam layer through
-`anchorAssetId: kettle` plus an asset-local transform. V42 is unapproved,
-unpromoted and unwired. Dishwasher V41, cabinetry, Final and runtime remain
-unchanged. Toaster and mixing-bowl work has not started.
+Kitchen Kettle Standalone V42 is preserved but rejected: its 32-pixel output
+read as too pixelated and ended on the y134 rear edge rather than the visible
+worktop surface. Kitchen Kettle Standalone V43 at
+`/keeper-review/kitchen-kettle-standalone-v43/` is the active reversible gate.
+It supplies a smoother alpha-isolated old-fashioned cream enamel kettle in
+Off, On and Broken states. The round body is approximately 20–22 cm against
+the 60 cm bay; the complete handle/spout envelope is at most 44 native pixels.
+Its base ends on visible countertop row y140, above the fascia and seven rows
+below V42's floating contact. The fridge worktop at x84 is a compatible
+dynamic surface alongside both cabinets and the dishwasher: placement stores
+the supporting asset/surface and derives Prime's `make-cup-of-tea` stop from
+that bay midpoint. Off and On are byte-identical; their steam is separate.
+Broken has a far stronger attached-parts silhouette plus a base-pinned
+eight-frame rattle, locks both its placement and movement of its current
+support until repaired, and owns every steam layer through `anchorAssetId:
+kettle` plus an asset-local transform. V43 is unapproved,
+unpromoted and unwired. Dishwasher V41, cabinetry, V42, Final and runtime
+remain unchanged. Toaster and mixing-bowl work has not started.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

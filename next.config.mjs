@@ -378,6 +378,11 @@ export default {
         destination: '/keeper-review/kitchen-kettle-standalone-v42/index.html',
         permanent: false,
       },
+      {
+        source: '/keeper-review/kitchen-kettle-standalone-v43',
+        destination: '/keeper-review/kitchen-kettle-standalone-v43/index.html',
+        permanent: false,
+      },
     ]
   },
 }
