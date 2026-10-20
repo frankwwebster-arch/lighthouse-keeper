@@ -1,0 +1,337 @@
+{
+  "schema": "lighthouse-keeper/claude-bbq-food-asset-pack@1",
+  "set": "claude-bbq-food-asset-pack-v1",
+  "status": "review-only",
+  "created": "2026-10-20",
+  "foodPresentationRule": "Loose ingredients and cookable food items are unplated; plates are reserved for finished meals.",
+  "sourceProcessing": {
+    "originalGeometry": [
+      1254,
+      1254
+    ],
+    "reviewSourceGeometry": [
+      384,
+      384
+    ],
+    "method": "cwebp 384 x 384 resize followed by lossless WebP encoding; original generated PNG SHA-256 retained per component"
+  },
+  "components": {
+    "bbq-raw-burger-patties": {
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-raw-burger-patties.png",
+      "sha256": "8d8107dbe7705c7cecbe90ad2ead6e83b82525ab4ca9b52b25e13d624c4e9521",
+      "family": "bbq",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-food-asset-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/bbq-raw-burger-patties-source.webp",
+      "sourceSha256": "3fde56e80476a659387055d1d7e4ebd8111f61821945bd4ab318a39dc08123fd",
+      "originalGeneratedPngSha256": "4ac3e4269955c51d31fee0d18b47a1512116995ea041eba0563c413c817214ed",
+      "sourceVisibleBounds": [
+        17,
+        71,
+        371,
+        313
+      ],
+      "normalisedVisibleSize": [
+        216,
+        148
+      ],
+      "normalisedOffset": [
+        20,
+        54
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-sausages": {
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-sausages.png",
+      "sha256": "dfc97e3a148a3a77487a0e64b66e4dcb0b6a1406f69ac6f957a45ee93dc94fee",
+      "family": "bbq",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-food-asset-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/bbq-raw-linked-sausages-source.webp",
+      "sourceSha256": "73290cb764392dee986c0db9c10eb286b2a3c35a1e3e42c902fb4355e43ccb32",
+      "originalGeneratedPngSha256": "8cca15c23f1391dee66db124cc35acff16783564d0b1ee45bf298ac4ce3e6a66",
+      "sourceVisibleBounds": [
+        35,
+        67,
+        367,
+        337
+      ],
+      "normalisedVisibleSize": [
+        216,
+        176
+      ],
+      "normalisedOffset": [
+        20,
+        40
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-grill": {
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-grill.png",
+      "sha256": "e6c7d5e51308d4fc974d6c3f090548cfba4d725d43564c9f7a6943bb55b407b7",
+      "family": "bbq",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-food-asset-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/bbq-unlit-grill-source.webp",
+      "sourceSha256": "f349f83ad2fcf78e6a12a7ba031c415cdba58065e8d97448b2d7ee786ed27a80",
+      "originalGeneratedPngSha256": "b717c2ac1166905aec8f7c919bfbfb418a2b3832bafa608aa71c6249aaea1ed6",
+      "sourceVisibleBounds": [
+        29,
+        77,
+        353,
+        330
+      ],
+      "normalisedVisibleSize": [
+        216,
+        169
+      ],
+      "normalisedOffset": [
+        20,
+        43
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cooking-cheese-slicing": {
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/cooking-cheese-slicing.png",
+      "sha256": "ca7d2733d7f22b350602566aef641065c5321acd298b9e6611bf8c1e8fd5cb35",
+      "family": "cooking",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-food-asset-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/cooking-cheese-slicing-source.webp",
+      "sourceSha256": "9247f1977c4df3b36820e88c25ff2b12ab67d60ed9882ade6bf04c10bcf34da1",
+      "originalGeneratedPngSha256": "bda822b834cd56993087ce787354c48ff6b0b055d79c56f8cdee23d6221150f4",
+      "sourceVisibleBounds": [
+        31,
+        89,
+        366,
+        305
+      ],
+      "normalisedVisibleSize": [
+        216,
+        139
+      ],
+      "normalisedOffset": [
+        20,
+        58
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-raw-steak": {
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-raw-steak.png",
+      "sha256": "14870ae013f48d8ff84ccb1894c41cb8baec661273f0da2f15cf1032033aa670",
+      "family": "bbq",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-food-asset-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/bbq-raw-steak-source.webp",
+      "sourceSha256": "e90754635a6528a83d263125dfb3d3904a94ac0c260cb71e7ee6b5281ce86236",
+      "originalGeneratedPngSha256": "b183c397e9cc6ccf80abdcabf8b79b1e6df19f2ab8e72616d1ec249bae3d1cfb",
+      "sourceVisibleBounds": [
+        27,
+        88,
+        359,
+        307
+      ],
+      "normalisedVisibleSize": [
+        216,
+        142
+      ],
+      "normalisedOffset": [
+        20,
+        57
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "meal-steak-fries": {
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/meal-steak-fries.png",
+      "sha256": "8aebdcafac1a8c2749f9876fc51d2fc1c7bbe78005120b0bb8b5ca5b657c99ae",
+      "family": "meal",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-food-asset-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/meal-steak-fries-source.webp",
+      "sourceSha256": "45ec17acc1d2a8e6303b555d2654d888e6631a4ce7e469f2cd557c16df0dc1ae",
+      "originalGeneratedPngSha256": "7c1604bf1be6fc9540a096c00e8053181b278ef245c8ebc83e7abf51ef912005",
+      "sourceVisibleBounds": [
+        15,
+        48,
+        369,
+        347
+      ],
+      "normalisedVisibleSize": [
+        216,
+        182
+      ],
+      "normalisedOffset": [
+        20,
+        37
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "condiment-ketchup-bottle": {
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/condiment-ketchup-bottle.png",
+      "sha256": "153cdd6ac24624c2ffad96e7c990ece2c1a53972adb3f4e67b0f51b340ffcb49",
+      "family": "condiment",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-food-asset-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/condiment-ketchup-bottle-source.webp",
+      "sourceSha256": "a850a8cdabfcc910c3f5ecbb23507494fd9b3891cf344144b32e4ff1b2d06603",
+      "originalGeneratedPngSha256": "9bd83b220ab6b226b9c049e40b621d7ca849e9d810472e9789e809e692ba9877",
+      "sourceVisibleBounds": [
+        127,
+        40,
+        257,
+        346
+      ],
+      "normalisedVisibleSize": [
+        92,
+        216
+      ],
+      "normalisedOffset": [
+        82,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "condiment-mustard-bottle": {
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/condiment-mustard-bottle.png",
+      "sha256": "65c2f38eec206e0f07160f8d8e1ae6dd4ce2b415154a73ca845508f2fdbd44ee",
+      "family": "condiment",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "claude-bbq-food-asset-pack-v1",
+      "sourceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/source/condiment-mustard-bottle-source.webp",
+      "sourceSha256": "49a21b9f24e5c38c3ff0e617327fac24fcb1c0b9f0f28f52f79d97afbd1d6497",
+      "originalGeneratedPngSha256": "65333b6307e926acf0fb1cd24fe57155ac9621ba351c597e29482aebc40c6bf9",
+      "sourceVisibleBounds": [
+        127,
+        39,
+        257,
+        346
+      ],
+      "normalisedVisibleSize": [
+        91,
+        216
+      ],
+      "normalisedOffset": [
+        82,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejectedAttempts": [
+    {
+      "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/rejected/plateless-cooked-sausages-attempt-1.webp",
+      "sha256": "889afb8a99a86d0497362061d5407a1932abd5095c61e46723cea3a2dbdd126f",
+      "originalGeneratedPngSha256": "47e002e96d2d50d91058431af26cd2c5295c53569040f2add601c2c9693ab024",
+      "visibleBounds": [
+        41,
+        72,
+        364,
+        312
+      ],
+      "reason": "Rendered as browned cooked sausages rather than a raw linked sausage string."
+    }
+  ],
+  "supersessionProposals": {
+    "bbq-sausages": {
+      "oldFile": "art/drafts/activity-cloud-composer-2026-10-19-v1/drafts/components/bbq-sausages.png",
+      "oldSha256": "2ea34430496ee43bd09a7640a12eaa5606562f2ab7c42dd6f655ba7a9fe97727",
+      "proposedFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-sausages.png",
+      "proposedSha256": "dfc97e3a148a3a77487a0e64b66e4dcb0b6a1406f69ac6f957a45ee93dc94fee",
+      "oldBytesUnchanged": true
+    },
+    "bbq-grill": {
+      "oldFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/bbq-grill.png",
+      "oldSha256": "8984470c007ff8a35af6fc8428afa9a38318c89bb5c4e7e1f2f34d7b858a5ee0",
+      "proposedFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-grill.png",
+      "proposedSha256": "e6c7d5e51308d4fc974d6c3f090548cfba4d725d43564c9f7a6943bb55b407b7",
+      "oldBytesUnchanged": true
+    }
+  },
+  "evidence": {
+    "file": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/evidence/final-assets-contact-sheet.webp",
+    "sha256": "defd3937e65ac8d0e014a25e4cf79b3cbfa55b1d9ab45c4fc01247e5a0032e40"
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersClear": true,
+    "componentOwnershipUnambiguous": true,
+    "priorAssetsUnchanged": true,
+    "rejectedAttemptRetained": true,
+    "allAssetsIndependent": true,
+    "runtimeChanged": false,
+    "kitchenChanged": false,
+    "deployed": false
+  }
+}

@@ -2,7 +2,7 @@
 
 **Status:** binding authoring standard for future Lighthouse Keeper activity-callout work
 
-**Revision:** 1.0 — 20 October 2026
+**Revision:** 1.1 — 20 October 2026
 
 **Machine-readable contract:** `data/activity_callout_style_contract.json`
 
@@ -81,6 +81,13 @@ archetypes and era cues rather than an exact living or historical person's
 likeness. Album art uses recognisable motif-only homages: no copied cover,
 title, logo, typography, photograph or identifiable performer. Bathroom,
 sleeping and washing cues stay discreet, family-safe and non-anatomical.
+
+Food presentation must communicate state rather than decorate every token.
+Loose ingredients and food awaiting cooking stand alone without a plate, tray
+or garnish. Reserve plates and serving vessels for finished meals or for foods
+whose vessel is part of their ordinary semantic read. When an inherited token
+breaks this rule, preserve it as pinned history and propose the correction in a
+new immutable draft; never overwrite the earlier component.
 
 ### Never introduce
 
