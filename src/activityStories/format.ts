@@ -204,13 +204,18 @@ export const PICTURE_GROUPS: { label: string; families: string[] }[] = [
   { label: 'BBQ tools', families: ['bbq-tools'] },
   { label: 'Food and meals', families: ['meal', 'sandwich', 'cooking', 'ingredient'] },
   { label: 'Condiments and seasoning', families: ['condiment', 'seasoning'] },
-  { label: 'Knives and prep', families: ['kitchen-tools'] },
+  { label: 'Knives and prep', families: ['kitchen-tools', 'preparation-action'] },
   { label: 'Washing up and dishwasher', families: ['washing', 'dishwasher'] },
-  { label: 'Cleaning products', families: ['cleaning-products'] },
+  { label: 'Cleaning products', families: ['cleaning-products', 'cleaning-chemical'] },
   { label: 'Cleaning tools', families: ['cleaning-tools'] },
-  { label: 'Sponges, cloths and bags', families: ['cleaning-cloths'] },
+  { label: 'Sponges, cloths and bags', families: ['cleaning-cloths', 'consumable'] },
   { label: 'Laundry', families: ['laundry'] },
   { label: 'Repair', families: ['repair'] },
+  { label: 'Bedtime', families: ['sleep'] },
+  { label: 'Clothes', families: ['wearable'] },
+  { label: 'Pockets and accessories', families: ['personal-accessory'] },
+  { label: 'Grooming', families: ['grooming'] },
+  { label: 'Books and music', families: ['leisure'] },
 ]
 export const MARKS_GROUP = 'Marks'
 export const OTHER_GROUP = 'Other'

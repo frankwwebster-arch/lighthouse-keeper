@@ -1301,6 +1301,141 @@
         }
       ]
     },
+    "grooming-cologne-bottle": {
+      "kind": "object",
+      "family": "grooming",
+      "label": "Cologne",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/grooming-cologne-bottle.png",
+          "sha256": "7686581054b517ebdc992b6d34902376f4e4a85f0610e7e00b13100b975de1dc",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            39,
+            20,
+            216,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "grooming-cologne-bottle.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "grooming-comb": {
+      "kind": "object",
+      "family": "grooming",
+      "label": "Comb",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/grooming-comb.png",
+          "sha256": "beb3ca3bb441b20c558f552818a6351e17707ddd61fd266a9db7d0b2f44383f9",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            60,
+            236,
+            195
+          ],
+          "added": "2026-10-21",
+          "source": "grooming-comb.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "grooming-deodorant-stick": {
+      "kind": "object",
+      "family": "grooming",
+      "label": "Deodorant",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/grooming-deodorant-stick.png",
+          "sha256": "9ec82841da4fb7288308199c30bffbad37b163c30a1f1fb082d9f324c33ad087",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            59,
+            20,
+            196,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "grooming-deodorant-stick.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "grooming-electric-shaver": {
+      "kind": "object",
+      "family": "grooming",
+      "label": "Electric shaver",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/grooming-electric-shaver.png",
+          "sha256": "0d49fe4e28fc9e356af79d7e07c40f0dfe0bc38863aa8314dcd9fa5ea242ada3",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            62,
+            20,
+            194,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "grooming-electric-shaver.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "grooming-hairbrush": {
+      "kind": "object",
+      "family": "grooming",
+      "label": "Hairbrush",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/grooming-hairbrush.png",
+          "sha256": "e9e0059da1fa059451d9606f0b55ce6f6a34cf93f2719fca17147f7feaf46bf9",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            60,
+            236,
+            196
+          ],
+          "added": "2026-10-21",
+          "source": "grooming-hairbrush.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
     "ingredient-butter-block": {
       "kind": "object",
       "family": "ingredient",
@@ -1517,6 +1652,87 @@
         }
       ]
     },
+    "leisure-hardcover-book": {
+      "kind": "object",
+      "family": "leisure",
+      "label": "Book",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/leisure-hardcover-book.png",
+          "sha256": "12173f6b8f8eac2347fa51b9203dfc470d2717436f9fd24ef62e67296ffe2c7c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            40,
+            236,
+            216
+          ],
+          "added": "2026-10-21",
+          "source": "leisure-hardcover-book.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "leisure-over-ear-headphones": {
+      "kind": "object",
+      "family": "leisure",
+      "label": "Headphones",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/leisure-over-ear-headphones.png",
+          "sha256": "1895fccc7c9609500bc46af7ecd658959393aa87a2b6bc4d7e61a7a81b1d758c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            27,
+            236,
+            228
+          ],
+          "added": "2026-10-21",
+          "source": "leisure-over-ear-headphones.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "leisure-portable-radio": {
+      "kind": "object",
+      "family": "leisure",
+      "label": "Radio",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/leisure-portable-radio.png",
+          "sha256": "e6c9eba1d59623198be55d93a4738bba0c321fb6668890ae54d30284ed5a9812",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            41,
+            236,
+            215
+          ],
+          "added": "2026-10-21",
+          "source": "leisure-portable-radio.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
     "meal-steak-fries": {
       "kind": "object",
       "family": "meal",
@@ -1541,6 +1757,168 @@
           "source": "meal-steak-fries.png",
           "by": "codex",
           "note": "Finished meal, plated (Codex BBQ food pack V1)"
+        }
+      ]
+    },
+    "personal-fountain-pen": {
+      "kind": "object",
+      "family": "personal-accessory",
+      "label": "Fountain pen",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/personal-fountain-pen.png",
+          "sha256": "3ca804b756f49ef91db342e630ae0137f3367871f7c91e82aed4a7591a690776",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            26,
+            236,
+            229
+          ],
+          "added": "2026-10-21",
+          "source": "personal-fountain-pen.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "personal-house-keys": {
+      "kind": "object",
+      "family": "personal-accessory",
+      "label": "House keys",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/personal-house-keys.png",
+          "sha256": "e61e7cf1db71b8c636d5c7362d0a2fd20bd5a5bb64a130ba57973d6be787d2e9",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            38,
+            236,
+            217
+          ],
+          "added": "2026-10-21",
+          "source": "personal-house-keys.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "personal-pocket-notebook": {
+      "kind": "object",
+      "family": "personal-accessory",
+      "label": "Notebook",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/personal-pocket-notebook.png",
+          "sha256": "bda3b59c43080bf891f38bb993f281cc5de5fb2a5e865a0c92476ceb4fc14993",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            36,
+            236,
+            219
+          ],
+          "added": "2026-10-21",
+          "source": "personal-pocket-notebook.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "personal-reading-glasses": {
+      "kind": "object",
+      "family": "personal-accessory",
+      "label": "Reading glasses",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/personal-reading-glasses.png",
+          "sha256": "ebc2b734c4ead67ba8248cb50139e2e41ea1b54a5a7d3d37794989c4d95c1c17",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            77,
+            236,
+            179
+          ],
+          "added": "2026-10-21",
+          "source": "personal-reading-glasses.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "personal-wallet": {
+      "kind": "object",
+      "family": "personal-accessory",
+      "label": "Wallet",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/personal-wallet.png",
+          "sha256": "163d0a6284736d3da990822d19712db79fcbf2a76b1b66bf52d0511597cfbbf3",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            41,
+            236,
+            214
+          ],
+          "added": "2026-10-21",
+          "source": "personal-wallet.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "personal-wristwatch": {
+      "kind": "object",
+      "family": "personal-accessory",
+      "label": "Wristwatch",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/personal-wristwatch.png",
+          "sha256": "7c03f618aa28e16adf2b541c663a46cb6e10ce38f35588add23ab46029addb2a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            27,
+            20,
+            228,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "personal-wristwatch.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
         }
       ]
     },
@@ -1802,6 +2180,114 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v3",
           "by": "codex"
+        }
+      ]
+    },
+    "sleep-alarm-clock": {
+      "kind": "object",
+      "family": "sleep",
+      "label": "Alarm clock",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/sleep-alarm-clock.png",
+          "sha256": "61b16ae6c749f775bc6af9b5f600a500c539f83fcd2e35cdc8512ecd1f7fe291",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            43,
+            20,
+            212,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "sleep-alarm-clock.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "sleep-bedside-lamp": {
+      "kind": "object",
+      "family": "sleep",
+      "label": "Bedside lamp",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/sleep-bedside-lamp.png",
+          "sha256": "33adf176d7f521e0d7fbe5e32cc40375d5671f2595c7f5f15461d7af8899cf0b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            51,
+            20,
+            204,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "sleep-bedside-lamp.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "sleep-eye-mask": {
+      "kind": "object",
+      "family": "sleep",
+      "label": "Eye mask",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/sleep-eye-mask.png",
+          "sha256": "e5029bf0980d3196aca61132010ed885851a561b595c9af9274f044ba3cb0a0a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            72,
+            236,
+            184
+          ],
+          "added": "2026-10-21",
+          "source": "sleep-eye-mask.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "sleep-hot-water-bottle": {
+      "kind": "object",
+      "family": "sleep",
+      "label": "Hot-water bottle",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/sleep-hot-water-bottle.png",
+          "sha256": "87110557bb699557dbd28e810235251fafd58f9ad66698e8bcd70bb359f4b2a6",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            55,
+            20,
+            200,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "sleep-hot-water-bottle.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
         }
       ]
     },
@@ -2558,6 +3044,195 @@
         }
       ]
     },
+    "wear-bedroom-slippers-pair": {
+      "kind": "object",
+      "family": "wearable",
+      "label": "Slippers",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/wear-bedroom-slippers-pair.png",
+          "sha256": "ffebf37ba4f29b917c08ad2f879612c348ce0ff35d44a03953f6481a363ac70f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            67,
+            236,
+            189
+          ],
+          "added": "2026-10-21",
+          "source": "wear-bedroom-slippers-pair.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "wear-flat-cap": {
+      "kind": "object",
+      "family": "wearable",
+      "label": "Flat cap",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/wear-flat-cap.png",
+          "sha256": "00a0b7015e677cbc3b2de9a5436e508f397d1a6b123513ab9c8e51b1ee60494a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            67,
+            236,
+            189
+          ],
+          "added": "2026-10-21",
+          "source": "wear-flat-cap.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "wear-folded-pyjamas": {
+      "kind": "object",
+      "family": "wearable",
+      "label": "Pyjamas",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/wear-folded-pyjamas.png",
+          "sha256": "c256967b0ef2035d2c1a64752f7b0b1a81cec1478e238e9f887b915cff401a37",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            35,
+            236,
+            221
+          ],
+          "added": "2026-10-21",
+          "source": "wear-folded-pyjamas.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "wear-folded-shirt": {
+      "kind": "object",
+      "family": "wearable",
+      "label": "Shirt",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/wear-folded-shirt.png",
+          "sha256": "f52cf33691c53e430d043c7fe285e63c255b4e4e3fe8116eaaa99960ae3125ba",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            37,
+            236,
+            219
+          ],
+          "added": "2026-10-21",
+          "source": "wear-folded-shirt.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "wear-leather-belt": {
+      "kind": "object",
+      "family": "wearable",
+      "label": "Belt",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/wear-leather-belt.png",
+          "sha256": "03ff892fde23c2dc7968fc96ccc6edca6f9551ebe4dc2b1a532a3244a1f93c66",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            55,
+            236,
+            201
+          ],
+          "added": "2026-10-21",
+          "source": "wear-leather-belt.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "wear-leather-shoes-pair": {
+      "kind": "object",
+      "family": "wearable",
+      "label": "Shoes",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/wear-leather-shoes-pair.png",
+          "sha256": "c85444b2c969dad96476d6c52bc970230f8bde7fd7d8223c55176e8635bc45e9",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            63,
+            236,
+            192
+          ],
+          "added": "2026-10-21",
+          "source": "wear-leather-shoes-pair.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "wear-necktie": {
+      "kind": "object",
+      "family": "wearable",
+      "label": "Tie",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/wear-necktie.png",
+          "sha256": "05d6cb87b7f5315f81e05b860b2b1ec43d8c7c7608048902902768b3b22686d6",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            26,
+            236,
+            230
+          ],
+          "added": "2026-10-21",
+          "source": "wear-necktie.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
     "wear-rubber-gloves-pair": {
       "kind": "object",
       "family": "cleaning-tools",
@@ -2582,6 +3257,33 @@
           "source": "wear-rubber-gloves-pair.png",
           "by": "codex",
           "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "wear-socks-pair": {
+      "kind": "object",
+      "family": "wearable",
+      "label": "Socks",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-bedroom-asset-pack-2026-10-21-v1/assets/wear-socks-pair.png",
+          "sha256": "df0aa98076b6a4df54afb32365614144ceaae8fd7e4be4f77ab4732cb706057e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            55,
+            236,
+            200
+          ],
+          "added": "2026-10-21",
+          "source": "wear-socks-pair.png",
+          "by": "codex",
+          "note": "Codex bedroom pack V1"
         }
       ]
     }

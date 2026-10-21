@@ -207,13 +207,18 @@ fails if any picture would land in “Other”.
 | BBQ tools | `bbq-tools` |
 | Food and meals | `meal`, `sandwich`, `cooking`, `ingredient` |
 | Condiments and seasoning | `condiment`, `seasoning` |
-| Knives and prep | `kitchen-tools` |
+| Knives and prep | `kitchen-tools`, `preparation-action` |
 | Washing up and dishwasher | `washing`, `dishwasher` |
-| Cleaning products | `cleaning-products` |
+| Cleaning products | `cleaning-products`, `cleaning-chemical` |
 | Cleaning tools | `cleaning-tools` |
-| Sponges, cloths and bags | `cleaning-cloths` |
+| Sponges, cloths and bags | `cleaning-cloths`, `consumable` |
 | Laundry | `laundry` |
 | Repair | `repair` |
+| Bedtime | `sleep` |
+| Clothes | `wearable` |
+| Pockets and accessories | `personal-accessory` |
+| Grooming | `grooming` |
+| Books and music | `leisure` |
 | Marks | every `--kind mark`, whatever its family |
 
 ## The command-line tool (Claude and Codex)
