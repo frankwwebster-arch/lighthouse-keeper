@@ -16,7 +16,7 @@ new current V1 `clean` mark. The immutable authoring pack is
 list exposes all four while retaining the earlier versions for undo.
 
 The picture-library completeness correction is also finished (21 October
-2026). `pictures.json` now has 305 selectable pictures and 348 immutable
+2026). `pictures.json` now has 305 selectable pictures and 355 immutable
 versions and includes all 298
 review-ready isolated source components from Activity Cloud Composer V1–V7,
 the rear-work V2/V3 callout vocabulary and every component-bearing Claude or
@@ -77,14 +77,18 @@ construction/detail/object presence. Audit ambiguous counts and topology
 enlarged before prompting; preserve exact construction, overlaps and parts
 rather than accepting a generic category match.
 
-The next immutable gate is the eight-piece repair hand-tools pack at
+The eight-piece repair hand-tools pack at
 `art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/`.
 It covers adjustable spanner, C-clamp, combination pliers, both screwdriver
 types, hand saw, spirit level and tape measure. Its hard boundary is “ligne
 claire, not cartoon”: retain credible adult-tool proportions and mechanisms;
 reject cute, toy-like, inflated, caricature, mascot and sticker treatment.
-The candidates are unregistered pending Frank's review, so their V1 versions
-remain current and the library remains at 305 pictures / 348 versions. Do not
+Frank approved seven with “others all approve”; their immutable V2s are now
+current while every V1 remains selectable. The spirit-level candidate was
+rejected as “too cartoonish” and remains unregistered with V1 current. Its
+separate less-cartoonish correction pack is
+`art/drafts/activity-story-ligne-claire-repair-spirit-level-correction-2026-10-21-v1/`
+and awaits review. The library now has 305 pictures / 355 versions. Do not
 change Claude's story or `src/activityStories/` implementation for this gate.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)

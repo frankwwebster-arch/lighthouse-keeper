@@ -1,0 +1,120 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
+  "set": "activity-story-ligne-claire-repair-spirit-level-correction-2026-10-21-v1",
+  "status": "review-gate-awaiting-approval",
+  "created": "2026-10-21",
+  "tool": "built-in image generation plus deterministic fixed-palette normalisation",
+  "family": "repair",
+  "semanticSet": "less-cartoonish correction of the rejected repair spirit level",
+  "styleChampions": {
+    "washing-plate": "living hand-drawn shape and controlled minor imperfection",
+    "sandwich-tomato": "flat colour economy and selective readable detail",
+    "repair-toolbox": "construction, detail hierarchy and confident object presence"
+  },
+  "evolvingRecipe": "Observational ligne claire, not cartoon: thin straight adult-tool extrusion, restrained functional bezels and fittings, fine mostly-even contour, subdued flat colour and no game-icon finish.",
+  "components": {
+    "repair-spirit-level": {
+      "family": "repair",
+      "label": "Spirit level",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one low horizontal teal level with exactly three vial stations: vertical left, horizontal centre and diagonal right",
+      "currentReferenceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-spirit-level.png",
+      "currentReferenceSha256": "97594e40eeef16d383f5f39ac35e55e8b4a40a2fd2e2e735de9ad99b3f5f9998",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-repair-spirit-level-correction-2026-10-21-v1/source/repair-spirit-level-source.png",
+      "sourceSha256": "18ffeaa2626b4dc26fe1f1a00b255ec49a9fa1c34ce0fb882714b6a73d4fa7cd",
+      "sourcePixels": [
+        1983,
+        793
+      ],
+      "originalCacheFile": "exec-4d4c951c-c1dc-4797-93de-fff2461cbe51.png",
+      "flatPalette": [
+        "#051824",
+        "#0d5362",
+        "#1c8491",
+        "#d39c3c",
+        "#e0d17c",
+        "#f6e5b7"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-repair-spirit-level-correction-2026-10-21-v1/drafts/components/repair-spirit-level.png",
+      "sha256": "7de88eb9ee844a84ffa6725cb8264e80c1b6142a83cee4064c6bdc6045599ad5",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        151,
+        278,
+        1833,
+        508
+      ],
+      "normalisedVisibleSize": [
+        216,
+        30
+      ],
+      "normalisedOffset": [
+        20,
+        113
+      ],
+      "bounds": [
+        20,
+        113,
+        236,
+        143
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejected": [
+    {
+      "file": "rejected/repair-spirit-level-cartoonish-v1.png",
+      "cache": "exec-3f9fa9f9-bd1b-47d7-a7ec-cdb76e92db03.png",
+      "reason": "Frank rejected it as too cartoonish: inflated casing, oversized porthole-like vial rings, neon/gloss and decorative distressing.",
+      "sha256": "2f05dd07ec26a784305baef3f2674add554f78a8348a1144f3934a58ea033885"
+    },
+    {
+      "file": "rejected/repair-spirit-level-overbuilt-correction-v1.png",
+      "cache": "exec-92f3522c-4484-48ce-bdb8-77c3cea6388a.png",
+      "reason": "The first correction removed distressing but retained a polished game-icon finish, heavy vial housings and excessive visual bulk.",
+      "sha256": "fed10a02beb244715ffd1ea6ff652fc80607900d2c67288ad2135e4c54ec83f0"
+    },
+    {
+      "file": "rejected/repair-spirit-level-too-thin-correction-v1.png",
+      "cache": "exec-cbc8f2c3-5a3a-438b-b30e-8140e46db58a.png",
+      "reason": "The second correction achieved restrained linework but its excessively thin body made the three vial stations illegible at 64 px.",
+      "sha256": "418f6b06cb008d2880d8e6ed3b9775e3b299e9caa54c984d09c2867d1e6178c2"
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-repair-spirit-level-correction-2026-10-21-v1/evidence/current-vs-correction-contact-sheet.png",
+    "sha256": "a0bd88ff6414a971afe692b710b06f507d1e6fd30c830ac5bd3674679a6adf4b",
+    "columns": 5,
+    "rows": 1,
+    "coveredIds": [
+      "repair-spirit-level"
+    ]
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGutterAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "currentReferenceHashPinned": true,
+    "exactPaletteRecorded": true,
+    "contactSheetCoverage": true,
+    "libraryVersionAdded": false,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "deployed": false
+  },
+  "approval": null,
+  "nextStep": "Frank reviews this exact correction. On approval, register it as immutable V2 without overwriting V1.",
+  "rollback": "Before approval, discard this pack alone. After approval, set the current selector back to V1; V1 remains immutable."
+}

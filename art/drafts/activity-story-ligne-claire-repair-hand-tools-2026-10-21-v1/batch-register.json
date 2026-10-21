@@ -1,7 +1,7 @@
 {
   "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
   "set": "activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1",
-  "status": "review-gate-awaiting-approval",
+  "status": "partial-approval-spirit-level-rejected",
   "created": "2026-10-21",
   "tool": "built-in image generation plus deterministic fixed-palette normalisation",
   "family": "repair",
@@ -18,7 +18,7 @@
     "repair-adjustable-spanner": {
       "family": "repair",
       "label": "Adjustable spanner",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one adult adjustable spanner with fixed and moving jaws, brass worm screw, teal two-pin grip and brass-edged hanging hole",
@@ -78,7 +78,7 @@
     "repair-c-clamp": {
       "family": "repair",
       "label": "C-clamp",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one side-on C-clamp with blue frame, brass threaded screw, pressure pad and vertical teal-ended T handle",
@@ -137,7 +137,7 @@
     "repair-combination-pliers": {
       "family": "repair",
       "label": "Combination pliers",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one pair of combination pliers with serrated steel jaws, cutting notch, round pivot and two separated teal grips",
@@ -197,7 +197,7 @@
     "repair-flat-head-screwdriver": {
       "family": "repair",
       "label": "Flat-head screwdriver",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one flat-head screwdriver with slotted steel tip, long shaft, brass ferrule and dark-teal fluted handle",
@@ -257,7 +257,7 @@
     "repair-phillips-screwdriver": {
       "family": "repair",
       "label": "Phillips screwdriver",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one Phillips screwdriver with cross-head steel tip, long shaft, plain brass ferrule and coral fluted handle",
@@ -317,7 +317,7 @@
     "repair-hand-saw": {
       "family": "repair",
       "label": "Hand saw",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one adult hand saw with tapering steel blade, one fine tooth row, tip hole and blue closed handle with two brass fasteners",
@@ -377,7 +377,7 @@
     "repair-spirit-level": {
       "family": "repair",
       "label": "Spirit level",
-      "intent": "candidate-new-version-v2",
+      "intent": "rejected-unregistered-candidate-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one horizontal spirit level with brass end caps and exactly three vial stations: vertical left, horizontal centre and diagonal right",
@@ -437,7 +437,7 @@
     "repair-tape-measure": {
       "family": "repair",
       "label": "Tape measure",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one tape measure with blue case, brass side plate and belt clip, teal controls and one cream tape extending to a hooked end",
@@ -526,12 +526,28 @@
     "currentReferenceHashesPinned": true,
     "exactPalettesRecorded": true,
     "contactSheetCoversEveryCandidate": true,
-    "libraryVersionsAdded": false,
+    "libraryVersionsAdded": true,
     "activityStoriesRuntimeChanged": false,
     "approvedAuthorityChanged": false,
     "deployed": false
   },
-  "approval": null,
-  "nextStep": "Frank reviews the exact eight-picture contact sheet. On approval, add each candidate as immutable V2 with the official add-picture command; never overwrite V1.",
-  "rollback": "Before approval, discard this pack alone. After approval, set any picture's current selector back to V1; all version bytes remain immutable."
+  "approval": {
+    "date": "2026-10-21",
+    "verdict": "seven-approved-spirit-level-rejected",
+    "words": "this is too cartoonish. others all approve",
+    "approvedIds": [
+      "repair-adjustable-spanner",
+      "repair-c-clamp",
+      "repair-combination-pliers",
+      "repair-flat-head-screwdriver",
+      "repair-hand-saw",
+      "repair-phillips-screwdriver",
+      "repair-tape-measure"
+    ],
+    "rejectedIds": [
+      "repair-spirit-level"
+    ]
+  },
+  "nextStep": "Review the separate immutable spirit-level correction pack. Keep this pack's rejected spirit-level candidate unregistered.",
+  "rollback": "Set any approved picture's current selector back to V1; all V1 and V2 bytes remain immutable. The rejected spirit-level candidate is not registered."
 }

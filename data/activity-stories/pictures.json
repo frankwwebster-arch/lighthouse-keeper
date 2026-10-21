@@ -6475,7 +6475,7 @@
       "kind": "object",
       "family": "repair",
       "label": "Adjustable spanner",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -6495,6 +6495,25 @@
           "source": "repair-adjustable-spanner.png",
           "by": "codex",
           "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/drafts/components/repair-adjustable-spanner.png",
+          "sha256": "100235d42adac2250cc4823e83c113d54c6604c875147545b141c7e2cbda6dab",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            47,
+            236,
+            209
+          ],
+          "added": "2026-10-21",
+          "source": "repair-adjustable-spanner.png",
+          "by": "codex",
+          "note": "Approved ligne-claire repair hand-tools V2"
         }
       ]
     },
@@ -6601,7 +6620,7 @@
       "kind": "object",
       "family": "repair",
       "label": "C-clamp",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -6621,6 +6640,25 @@
           "source": "repair-c-clamp.png",
           "by": "codex",
           "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/drafts/components/repair-c-clamp.png",
+          "sha256": "6611f8354d93f3518a379040feb6e67537c72154d5314c9d087223ca64510c50",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            60,
+            236,
+            196
+          ],
+          "added": "2026-10-21",
+          "source": "repair-c-clamp.png",
+          "by": "codex",
+          "note": "Approved ligne-claire repair hand-tools V2"
         }
       ]
     },
@@ -6628,7 +6666,7 @@
       "kind": "object",
       "family": "repair",
       "label": "Combination pliers",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -6648,6 +6686,25 @@
           "source": "repair-combination-pliers.png",
           "by": "codex",
           "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/drafts/components/repair-combination-pliers.png",
+          "sha256": "4da156ab842f9594bbc4986b4463894873e5b49de8e4d9d59c7afeecef6dab92",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            47,
+            236,
+            209
+          ],
+          "added": "2026-10-21",
+          "source": "repair-combination-pliers.png",
+          "by": "codex",
+          "note": "Approved ligne-claire repair hand-tools V2"
         }
       ]
     },
@@ -6736,7 +6793,7 @@
       "kind": "object",
       "family": "repair",
       "label": "Flat-head screwdriver",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -6756,6 +6813,25 @@
           "source": "repair-flat-head-screwdriver.png",
           "by": "codex",
           "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/drafts/components/repair-flat-head-screwdriver.png",
+          "sha256": "8c28c840df29c40f34780bdf50ceef17a0f69514d39ab83f594802aa0f959d92",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            41,
+            236,
+            215
+          ],
+          "added": "2026-10-21",
+          "source": "repair-flat-head-screwdriver.png",
+          "by": "codex",
+          "note": "Approved ligne-claire repair hand-tools V2"
         }
       ]
     },
@@ -6808,7 +6884,7 @@
       "kind": "object",
       "family": "repair",
       "label": "Hand saw",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -6828,6 +6904,25 @@
           "source": "repair-hand-saw.png",
           "by": "codex",
           "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/drafts/components/repair-hand-saw.png",
+          "sha256": "1fca685fd5fb62ecbde6552c193d5421cd15fca80021d56914b5b678ad2f0760",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            68,
+            236,
+            187
+          ],
+          "added": "2026-10-21",
+          "source": "repair-hand-saw.png",
+          "by": "codex",
+          "note": "Approved ligne-claire repair hand-tools V2"
         }
       ]
     },
@@ -6916,7 +7011,7 @@
       "kind": "object",
       "family": "repair",
       "label": "Phillips screwdriver",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -6936,6 +7031,25 @@
           "source": "repair-phillips-screwdriver.png",
           "by": "codex",
           "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/drafts/components/repair-phillips-screwdriver.png",
+          "sha256": "56152094cfd6b6e2800125954c0e21fbf6afda27801cdcdd2603065a67954ed5",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            39,
+            236,
+            217
+          ],
+          "added": "2026-10-21",
+          "source": "repair-phillips-screwdriver.png",
+          "by": "codex",
+          "note": "Approved ligne-claire repair hand-tools V2"
         }
       ]
     },
@@ -7069,7 +7183,7 @@
       "kind": "object",
       "family": "repair",
       "label": "Tape measure",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -7089,6 +7203,25 @@
           "source": "repair-tape-measure.png",
           "by": "codex",
           "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/drafts/components/repair-tape-measure.png",
+          "sha256": "e35310128f586994872fd13eedb6d75062e247ad9f2400a0d07487058e293619",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            51,
+            236,
+            204
+          ],
+          "added": "2026-10-21",
+          "source": "repair-tape-measure.png",
+          "by": "codex",
+          "note": "Approved ligne-claire repair hand-tools V2"
         }
       ]
     },

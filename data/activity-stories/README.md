@@ -11,7 +11,7 @@ versions remain selectable and byte-identical for undo.
 **Complete-catalogue update (21 October 2026):** the library now exposes all
 298 review-ready isolated source components from Activity Cloud Composer
 V1–V7, Prime rear-work activity-callout V2/V3 and every component-bearing
-Claude or Codex picture pack. The Studio therefore has 305 pictures and 348
+Claude or Codex picture pack. The Studio therefore has 305 pictures and 355
 immutable versions, including
 every V5 album homage, the complete aquarium and bedroom sets, and 54 new
 fishing, gardening, pet-play, fixing, pub, art and inventing pictures. Run
@@ -75,7 +75,7 @@ five are registered as current V2 versions, taking the library to 305 pictures
 and 348 immutable versions. Every V1 remains selectable; the story/runtime
 implementation is untouched.
 
-**Repair hand-tools review gate (21 October 2026):** the immutable pack at
+**Repair hand-tools partial approval (21 October 2026):** the immutable pack at
 `art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/`
 proposes eight closely related tool translations: adjustable spanner, C-clamp,
 combination pliers, flat-head screwdriver, Phillips screwdriver, hand saw,
@@ -85,9 +85,15 @@ plate for living hand-drawn shape, tomato for flat-colour economy and tool
 chest for construction/detail/object presence. The explicit boundary is
 “ligne claire, not cartoon”: credible adult-tool proportions and mechanisms,
 with no cute, toy-like, inflated, caricature, mascot or sticker treatment. The
-eight candidates remain unregistered pending Frank's review, so the catalogue
-still has 305 pictures / 348 immutable versions and every V1 remains current.
-No story definition or `src/activityStories/` file changed.
+Frank approved seven with “others all approve”; adjustable spanner, C-clamp,
+combination pliers, both screwdrivers, hand saw and tape measure are now
+immutable current V2s while every V1 remains selectable. He rejected the
+spirit level with “this is too cartoonish”, so that candidate remains
+unregistered and its V1 remains current. The catalogue now has 305 pictures /
+355 immutable versions. A less-cartoonish replacement is isolated at
+`art/drafts/activity-story-ligne-claire-repair-spirit-level-correction-2026-10-21-v1/`
+and remains unregistered pending review. No story definition or
+`src/activityStories/` file changed.
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A

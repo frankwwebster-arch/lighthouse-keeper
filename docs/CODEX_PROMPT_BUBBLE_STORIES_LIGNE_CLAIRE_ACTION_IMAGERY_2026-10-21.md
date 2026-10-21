@@ -3,7 +3,8 @@
 **Decision date:** 21 October 2026
 
 **Status:** active; BBQ, sandwich, washing and General repair packs approved;
-repair hand-tools V1 awaiting review; action-imagery programme only
+seven repair hand tools approved, spirit-level correction awaiting review;
+action-imagery programme only
 
 Frank approved the six-picture BBQ pilot with “agreed, these are superb”. This
 prompt turns that approval into a controlled conversion programme for Bubble
@@ -56,11 +57,17 @@ are isolated at
 `repair-adjustable-spanner`, `repair-c-clamp`, `repair-combination-pliers`,
 `repair-flat-head-screwdriver`, `repair-phillips-screwdriver`,
 `repair-hand-saw`, `repair-spirit-level` and `repair-tape-measure`. The pack is
-immutable and awaiting Frank's review. Its candidates are not registered, so
-their current V1 versions remain current and the library remains at 305
-pictures / 348 versions. The pack makes “ligne claire, not cartoon” an explicit
-acceptance boundary: credible adult-tool proportions and working construction,
-without cute, toy-like, inflated, caricature, mascot or sticker treatment.
+immutable. Frank approved seven with “others all approve”; their V2s are
+registered as current while every V1 remains selectable. He rejected the
+spirit level with “this is too cartoonish”, so its candidate remains
+unregistered and its V1 remains current. The library now has 305 pictures / 355
+versions. A separate immutable correction at
+`art/drafts/activity-story-ligne-claire-repair-spirit-level-correction-2026-10-21-v1/`
+uses a thinner straight adult-tool body, restrained fittings and subdued flat
+colour; it is awaiting review. The gate makes “ligne claire, not cartoon” an
+explicit acceptance boundary: credible adult-tool proportions and working
+construction without cute, toy-like, inflated, caricature, mascot, sticker or
+glossy game-icon treatment.
 
 ## Ready-to-paste prompt
 
@@ -85,8 +92,9 @@ Objective
   ligne-claire-inspired language approved in the six-picture BBQ pilot.
 - Work in small, immutable, reviewable family batches. The BBQ, BBQ-tools,
   sandwich, washing and General repair families are complete. The eight-piece
-  repair hand-tools family is the current unregistered review gate; do not
-  rebuild or register it before Frank's verdict.
+  repair hand-tools family has seven approved current V2s; its rejected spirit
+  level remains V1. The separate spirit-level correction is the current
+  unregistered review gate; do not register it before Frank's verdict.
 - The programme covers action objects, ingredients, tools, pictorial states,
   activity marks, emotions and independent comic reaction punctuation used by
   Bubble stories.

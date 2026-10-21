@@ -8,6 +8,11 @@
 target inside a 256 x 256 transparent RGBA cell, nearest fixed per-picture
 flat palette, integer-centred placement, lossless PNG.
 
+**Review verdict:** Frank approved seven tools with “others all approve” and
+rejected the spirit level with “this is too cartoonish”. The rejected spirit
+level remains unregistered in this pack; its new source and prompts belong to
+the separate immutable correction pack.
+
 ## Reference roles and acceptance boundary
 
 - Each exact current V1 tool is the sole authority for identity, working

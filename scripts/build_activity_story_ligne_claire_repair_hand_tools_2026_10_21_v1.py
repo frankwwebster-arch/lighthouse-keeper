@@ -120,6 +120,16 @@ REJECTED: tuple[dict[str, str], ...] = (
     },
 )
 
+APPROVED_IDS = {
+    "repair-adjustable-spanner",
+    "repair-c-clamp",
+    "repair-combination-pliers",
+    "repair-flat-head-screwdriver",
+    "repair-phillips-screwdriver",
+    "repair-hand-saw",
+    "repair-tape-measure",
+}
+
 
 def rel(path: Path) -> str:
     return path.relative_to(ROOT).as_posix()
@@ -154,7 +164,7 @@ def build() -> None:
         entries[str(spec["id"])] = {
             "family": "repair",
             "label": spec["label"],
-            "intent": "candidate-new-version-v2",
+            "intent": "approved-current-v2" if spec["id"] in APPROVED_IDS else "rejected-unregistered-candidate-v2",
             "priorCurrentLibraryVersion": 1,
             "proposedLibraryVersion": 2,
             "preserves": spec["preserves"],
@@ -178,7 +188,7 @@ def build() -> None:
     register = {
         "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
         "set": SET,
-        "status": "review-gate-awaiting-approval",
+        "status": "partial-approval-spirit-level-rejected",
         "created": "2026-10-21",
         "tool": "built-in image generation plus deterministic fixed-palette normalisation",
         "family": "repair",
@@ -207,14 +217,20 @@ def build() -> None:
             "currentReferenceHashesPinned": True,
             "exactPalettesRecorded": True,
             "contactSheetCoversEveryCandidate": True,
-            "libraryVersionsAdded": False,
+            "libraryVersionsAdded": True,
             "activityStoriesRuntimeChanged": False,
             "approvedAuthorityChanged": False,
             "deployed": False,
         },
-        "approval": None,
-        "nextStep": "Frank reviews the exact eight-picture contact sheet. On approval, add each candidate as immutable V2 with the official add-picture command; never overwrite V1.",
-        "rollback": "Before approval, discard this pack alone. After approval, set any picture's current selector back to V1; all version bytes remain immutable.",
+        "approval": {
+            "date": "2026-10-21",
+            "verdict": "seven-approved-spirit-level-rejected",
+            "words": "this is too cartoonish. others all approve",
+            "approvedIds": sorted(APPROVED_IDS),
+            "rejectedIds": ["repair-spirit-level"],
+        },
+        "nextStep": "Review the separate immutable spirit-level correction pack. Keep this pack's rejected spirit-level candidate unregistered.",
+        "rollback": "Set any approved picture's current selector back to V1; all V1 and V2 bytes remain immutable. The rejected spirit-level candidate is not registered.",
     }
     (PACK / "batch-register.json").write_text(json.dumps(register, indent=2) + "\n")
     write_hashes(PACK)
@@ -224,9 +240,9 @@ def build() -> None:
 
 def verify() -> None:
     register = json.loads((PACK / "batch-register.json").read_text())
-    if register["set"] != SET or register["status"] != "review-gate-awaiting-approval":
+    if register["set"] != SET or register["status"] != "partial-approval-spirit-level-rejected":
         raise RuntimeError("register identity/status mismatch")
-    if register["family"] != "repair" or register["approval"] is not None:
+    if register["family"] != "repair" or register["approval"]["approvedIds"] != sorted(APPROVED_IDS):
         raise RuntimeError("register family/approval mismatch")
     expected_ids = [str(spec["id"]) for spec in SPECS]
     if list(register["components"]) != expected_ids:
@@ -246,10 +262,15 @@ def verify() -> None:
         if sha256(current_path) != entry["currentReferenceSha256"]:
             raise RuntimeError(f"prior-current hash mismatch: {picture_id}")
         picture = library[picture_id]
-        if picture["current"] != 1 or len(picture["versions"]) != 1:
-            raise RuntimeError(f"review gate unexpectedly registered a candidate: {picture_id}")
         if picture["versions"][0]["sha256"] != entry["currentReferenceSha256"]:
             raise RuntimeError(f"library V1 hash drift: {picture_id}")
+        if picture_id in APPROVED_IDS:
+            if picture["current"] != 2 or len(picture["versions"]) != 2:
+                raise RuntimeError(f"approved V2 is not current: {picture_id}")
+            if picture["versions"][1]["sha256"] != entry["sha256"]:
+                raise RuntimeError(f"approved V2 hash drift: {picture_id}")
+        elif picture["current"] != 1 or len(picture["versions"]) != 1:
+            raise RuntimeError(f"rejected spirit-level candidate was registered: {picture_id}")
         source = Image.open(source_path)
         output = Image.open(output_path)
         if source.mode != "RGBA" or output.mode != "RGBA" or output.size != (CELL, CELL):
@@ -281,8 +302,8 @@ def verify() -> None:
         raise RuntimeError("contact sheet geometry mismatch")
     if evidence["coveredIds"] != expected_ids or evidence["rows"] != len(expected_ids) or evidence["columns"] != 5:
         raise RuntimeError("contact sheet coverage metadata mismatch")
-    if register["checks"]["libraryVersionsAdded"]:
-        raise RuntimeError("review pack incorrectly records registered versions")
+    if not register["checks"]["libraryVersionsAdded"]:
+        raise RuntimeError("partial approval does not record registered versions")
     expected_hash_lines = [
         f"{sha256(path)}  {path.relative_to(PACK).as_posix()}"
         for path in sorted(path for path in PACK.rglob("*") if path.is_file() and path.name != "HASHES.sha256")
