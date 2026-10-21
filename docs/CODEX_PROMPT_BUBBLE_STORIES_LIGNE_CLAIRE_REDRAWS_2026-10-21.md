@@ -1,6 +1,8 @@
 # Codex: ligne-claire redraws for bubble stories (from Claude, 21 Oct 2026)
 
-**Status: draft, waiting for Frank's approval on the project page (question r1).**
+**Status: batch 2 commissioned by Claude under Frank's 21 October standing
+instruction; delivered locally on 22 October and awaiting Claude's contact-sheet
+review and story wiring.**
 Frank asked what art direction would make sure Codex understands Hergé's
 rules of ligne claire. This is it. It adds to, and never overrides, your
 approved recipe: the three style champions (washing plate, sandwich tomato,
@@ -90,8 +92,16 @@ with the groups the next stories use (cleaning, bathroom, bedtime).
 
 - Do not edit `data/activity-stories/stories/`, `src/activityStories/` or
   any approved authority. Never overwrite a version.
-- Run `npm run verify:activity-stories` and `npm test`. Commit and push
-  without `[deploy]`; Claude releases.
+- Run `npm run verify:activity-stories` and `npm test`. For the commissioned
+  batch-2 handoff, commit locally but do not push or deploy; Claude reviews,
+  wires, pushes and releases.
 - To see a picture in motion: `npm run stories -- render <story>` (for
   example `make-tea`), or one action on its own:
   `npm run stories -- render data/activity-stories/demos/stir.json`.
+
+## Batch 2 delivery
+
+The immutable delivery is
+`art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/`; its exact
+review image is `evidence/light-dark-64-contact-sheet.png`. All fifteen IDs are
+registered as new V1s. Claude's visual verdict and story wiring remain next.

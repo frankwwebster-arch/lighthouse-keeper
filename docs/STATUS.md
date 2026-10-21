@@ -126,6 +126,16 @@ nine are current immutable V2s. The catalogue now contains 305 pictures / 390
 versions; 77 current pictures are approved ligne-claire conversions and 228
 remain. Every V1 remains selectable and nothing was deployed.
 
+Claude's first direct picture commission under Frank's 21 October standing
+instruction is complete at
+`art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/`. Nine new
+objects and six new action marks are registered as V1 IDs, taking the catalogue
+to 320 pictures / 405 versions. The exact light/dark/64 px sheet awaits Claude's
+review before Claude wires the stories, pushes or releases. All 15 pass the
+flat-palette, line, 64 px, gutter, ownership and hash checks; nine rejected
+attempts remain pinned. No story, activity-story runtime or approved authority
+changed.
+
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 
 ## Not built yet (agreed design)

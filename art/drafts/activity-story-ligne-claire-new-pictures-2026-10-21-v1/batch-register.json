@@ -1,0 +1,1052 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ligne-claire-new-picture-pack@1",
+  "set": "activity-story-ligne-claire-new-pictures-2026-10-21-v1",
+  "status": "commissioned-and-registered-awaiting-claude-review",
+  "created": "2026-10-21",
+  "completed": "2026-10-22",
+  "commissionedBy": "Claude on Frank's behalf under Frank's standing instruction of 2026-10-21",
+  "reviewOwner": "Claude",
+  "tool": "built-in image generation/editing plus deterministic fixed-palette normalisation",
+  "styleChampions": {
+    "washing-plate": "living hand-drawn shape and controlled imperfection",
+    "sandwich-tomato": "flat-colour economy and selective detail",
+    "repair-toolbox": "credible construction, hierarchy and object presence"
+  },
+  "bindingTaxonomy": "one even black outline, flat colour, no shine; ligne claire, not cartoon",
+  "visibleAlphaThreshold": 8,
+  "components": {
+    "tea-bag": {
+      "kind": "object",
+      "family": "tea",
+      "label": "Tea bag",
+      "intent": "commissioned-new-picture-v1-awaiting-claude-contact-sheet-review",
+      "preserves": "one dry rectangular tea sachet with sealed edge, attached string and one blank tag; no mug, liquid, steam or packaging",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/source/tea-bag-source.png",
+      "sourceSha256": "6d6cd53f882013004493e7372b19d282078cca960596a25b1d3da250d43a101d",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-8c680144-1e43-4a7a-9bd8-6ccafc46d9e0.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#905231"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/tea-bag.png",
+      "sha256": "18815c42944e195022c6b5a6ec8d9a5f2e8a3795a0d3ec1b095aa66de1011871",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        182,
+        125,
+        1193,
+        1167
+      ],
+      "normalisedVisibleSize": [
+        210,
+        216
+      ],
+      "normalisedOffset": [
+        23,
+        20
+      ],
+      "bounds": [
+        23,
+        20,
+        233,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "baking-cake": {
+      "kind": "object",
+      "family": "baking",
+      "label": "Finished cake",
+      "intent": "commissioned-new-picture-v1-awaiting-claude-contact-sheet-review",
+      "preserves": "one finished whole round sponge cake with a modest flat cream icing layer; no slice, plate, stand, candles or decoration",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/source/baking-cake-source.png",
+      "sourceSha256": "f3d0f37ba005b1314f61366198431dcf73be618bc9b069fc9fd94abacc98b14f",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-8d9641d5-0f1e-4e13-9b7d-264a12df1559.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#e7a638",
+        "#e88b2d",
+        "#905231"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/baking-cake.png",
+      "sha256": "bd7293090464bdfc27d3020ef0fa3719f6446347a6cca332f06bd3b5c4b52b16",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        141,
+        293,
+        1113,
+        955
+      ],
+      "normalisedVisibleSize": [
+        216,
+        147
+      ],
+      "normalisedOffset": [
+        20,
+        54
+      ],
+      "bounds": [
+        20,
+        54,
+        236,
+        201
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-plank": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Wooden plank",
+      "intent": "commissioned-new-picture-v1-awaiting-claude-contact-sheet-review",
+      "preserves": "one plain square-ended sawn construction plank in shallow three-quarter view with no grain, knots, nails, holes or tools",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/source/repair-plank-source.png",
+      "sourceSha256": "afaa773b29491d18c5b82c5e28ebd610877b9c716c3288b0b3b8495656604357",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-a3272586-e245-415f-9abf-4b7b0fddf0c5.png",
+      "flatPalette": [
+        "#051824",
+        "#e7a638",
+        "#e88b2d",
+        "#905231"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/repair-plank.png",
+      "sha256": "1eec67017b293c7d8b27d2ff798f630bd4a9aa9b5ec1da3f27eb2987df2829eb",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        70,
+        381,
+        1182,
+        903
+      ],
+      "normalisedVisibleSize": [
+        216,
+        101
+      ],
+      "normalisedOffset": [
+        20,
+        77
+      ],
+      "bounds": [
+        20,
+        77,
+        236,
+        178
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "meal-ploughmans": {
+      "kind": "object",
+      "family": "meal",
+      "label": "Ploughman's lunch",
+      "intent": "commissioned-new-picture-v1-awaiting-claude-contact-sheet-review",
+      "preserves": "one plated ploughman's lunch with cheese wedge, once-cut bread roll, pickle, halved apple and restrained salad leaves",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/source/meal-ploughmans-source.png",
+      "sourceSha256": "28ffa8b0cd16b9683ac814917d8301c306b4af3754562c9d71be2cf35682183c",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-9e589d26-dc0a-45cb-8a42-413fc3b2e82b.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#e7a638",
+        "#e88b2d",
+        "#905231",
+        "#5c3a2d",
+        "#399437",
+        "#256830",
+        "#e84833",
+        "#c32b37",
+        "#1870a6",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/meal-ploughmans.png",
+      "sha256": "080b8e4e41cbe24541b145843a10b74450125b512e9cd5e9d08ce0a71d3177d1",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        56,
+        229,
+        1202,
+        982
+      ],
+      "normalisedVisibleSize": [
+        216,
+        142
+      ],
+      "normalisedOffset": [
+        20,
+        57
+      ],
+      "bounds": [
+        20,
+        57,
+        236,
+        199
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "kitchen-plate": {
+      "kind": "object",
+      "family": "washing",
+      "label": "Clean plate",
+      "intent": "commissioned-new-picture-v1-awaiting-claude-contact-sheet-review",
+      "preserves": "one clean plain dry dinner plate with a blue rim and no food, water, suds, bubbles or decoration",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/source/kitchen-plate-source.png",
+      "sourceSha256": "d1859663fabe1c843e3dab9aee7efd9d2206d9e8807b19648925076b5227b25e",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-c261cffe-7874-4588-949a-39d8feb10a24.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#1870a6",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/kitchen-plate.png",
+      "sha256": "f6bfc008b1919f49750c108cac19a80e2247dc4cb661c899944ec8e188906d5e",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        107,
+        250,
+        1166,
+        1017
+      ],
+      "normalisedVisibleSize": [
+        216,
+        156
+      ],
+      "normalisedOffset": [
+        20,
+        50
+      ],
+      "bounds": [
+        20,
+        50,
+        236,
+        206
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "eggs-basket-empty": {
+      "kind": "object",
+      "family": "eggs",
+      "label": "Empty egg basket",
+      "intent": "commissioned-new-picture-v1-awaiting-claude-contact-sheet-review",
+      "preserves": "the eggs-basket wicker construction, braided handle, cloth liner and blue stripes, with every egg removed and the empty interior visible",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/source/eggs-basket-empty-source.png",
+      "sourceSha256": "fd410c237e0e4e48b4198e61d3f805b2f28023a84e0569b31a319c17b0022219",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-25252a3d-0e06-46f1-b58e-16b8e842ee49.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#e7a638",
+        "#e88b2d",
+        "#905231",
+        "#5c3a2d",
+        "#1870a6",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/eggs-basket-empty.png",
+      "sha256": "da645f7bbd9bd020e012fbd29f8db929c4a218c2a23abadff8c6d6fab81a9c62",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        102,
+        94,
+        1178,
+        1175
+      ],
+      "normalisedVisibleSize": [
+        215,
+        216
+      ],
+      "normalisedOffset": [
+        20,
+        20
+      ],
+      "bounds": [
+        20,
+        20,
+        235,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "art-paintbrush": {
+      "kind": "object",
+      "family": "art",
+      "label": "Paintbrush",
+      "intent": "commissioned-new-picture-v1-awaiting-claude-contact-sheet-review",
+      "preserves": "one medium flat-bristle artist's brush with wooden handle, two-rivet ferrule and a restrained blue paint load at the tips",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/source/art-paintbrush-source.png",
+      "sourceSha256": "9114af87952eadcf00831916906d379e296b15a95ecbb68e03c94f7179a01dd3",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-2a77057e-b2aa-49a0-aa10-ecb7c6d884af.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#e7a638",
+        "#e88b2d",
+        "#905231",
+        "#d9ded3",
+        "#5c6c6f",
+        "#1870a6",
+        "#53b1b5"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/art-paintbrush.png",
+      "sha256": "0c8ba0138b279548fd692efe36d466c5acda30cc5fe061ab669591e2f807c8ce",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        239,
+        210,
+        1123,
+        1072
+      ],
+      "normalisedVisibleSize": [
+        216,
+        211
+      ],
+      "normalisedOffset": [
+        20,
+        22
+      ],
+      "bounds": [
+        20,
+        22,
+        236,
+        233
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "laundry-iron": {
+      "kind": "object",
+      "family": "laundry",
+      "label": "Clothes iron",
+      "intent": "commissioned-new-picture-v1-awaiting-claude-contact-sheet-review",
+      "preserves": "one domestic steam clothes iron upright on its heel with credible soleplate, handle, water body and controls; no cord or steam",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/source/laundry-iron-source.png",
+      "sourceSha256": "2387bbff8bab1ad09b38bf3d37e955e728d1130f03294fa1f2882d1804d52916",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-2e079a01-f4fb-4d6f-b085-b29daa09ac87.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#d9ded3",
+        "#aebbb9",
+        "#5c6c6f",
+        "#1870a6",
+        "#0d4e75",
+        "#53b1b5"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/laundry-iron.png",
+      "sha256": "af4c44cf9856f4b0cd34dd90d55443fdc21892b4038f9c343c3deccc79cca5b5",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        275,
+        82,
+        1002,
+        1125
+      ],
+      "normalisedVisibleSize": [
+        151,
+        216
+      ],
+      "normalisedOffset": [
+        52,
+        20
+      ],
+      "bounds": [
+        52,
+        20,
+        203,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cleaning-dust-pile": {
+      "kind": "object",
+      "family": "cleaning-tools",
+      "label": "Dust pile",
+      "intent": "commissioned-new-picture-v1-awaiting-claude-contact-sheet-review",
+      "preserves": "one low swept household dust-and-lint pile with four overlapping clumps and two attached lint fibres; no airborne puff or tool",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/source/cleaning-dust-pile-source.png",
+      "sourceSha256": "af7421d89e1160aea64445c3184a9bc4471ccb3cf1a1a142e6c2735b8a2c0cb8",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-c032243c-e36c-414c-8e46-7045b2d0135e.png",
+      "flatPalette": [
+        "#051824",
+        "#a79784",
+        "#675e56"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/cleaning-dust-pile.png",
+      "sha256": "fa0f63f8da8be291650b59a07cd9d036c3ee53498e9ed2370e5a9e846082fff0",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        172,
+        377,
+        1082,
+        910
+      ],
+      "normalisedVisibleSize": [
+        216,
+        127
+      ],
+      "normalisedOffset": [
+        20,
+        64
+      ],
+      "bounds": [
+        20,
+        64,
+        236,
+        191
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-sawdust": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Sawdust",
+      "intent": "commissioned-new-picture-v1-awaiting-claude-contact-sheet-review",
+      "preserves": "one downward-scattering cue of eight separate flat sawdust chips: five angular splinters and three curved slivers",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/source/symbol-sawdust-source.png",
+      "sourceSha256": "6f79d83aea9a993b0fb5e55de0f8b7a8a2aa1f4766443c784c4f64316e108e1a",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-444794ad-dbd5-45a4-a1f3-9216a1622901.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#e7a638"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-sawdust.png",
+      "sha256": "b71ffd513a80e98b2764669dfb706497846d50d5a803041607ebe0587a86f43e",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        298,
+        279,
+        991,
+        1007
+      ],
+      "normalisedVisibleSize": [
+        206,
+        216
+      ],
+      "normalisedOffset": [
+        25,
+        20
+      ],
+      "bounds": [
+        25,
+        20,
+        231,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-seasoning-flecks": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Seasoning flecks",
+      "intent": "commissioned-new-picture-v1-awaiting-claude-contact-sheet-review",
+      "preserves": "one narrow falling scatter of separate near-black pepper and muted-olive herb flecks with no shaker, food or powder cloud",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/source/symbol-seasoning-flecks-source.png",
+      "sourceSha256": "79056785709cf4a116a4fc0b6e0ff72905fafcc8ae8e3075a4afed631a374c0f",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-058ae641-d7b6-421e-aff3-d04f14d5f567.png",
+      "flatPalette": [
+        "#051824",
+        "#737d4c"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-seasoning-flecks.png",
+      "sha256": "227c321eff94416aaf465d3580117931f1ebec982157d953ed4b6dd687446db5",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        464,
+        298,
+        801,
+        951
+      ],
+      "normalisedVisibleSize": [
+        111,
+        216
+      ],
+      "normalisedOffset": [
+        72,
+        20
+      ],
+      "bounds": [
+        72,
+        20,
+        183,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-spray-mist": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Spray mist",
+      "intent": "commissioned-new-picture-v1-awaiting-claude-contact-sheet-review",
+      "preserves": "one left-to-right spray cue made from eight separate crisp droplets and no bottle, nozzle, haze or highlight mark",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/source/symbol-spray-mist-source.png",
+      "sourceSha256": "c26492a808d382cc88e075f5bb519d1f41bb1842bd30727d67edb218adda542a",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-0b9c922b-4c25-434c-85b8-d11b4e7d5cbf.png",
+      "flatPalette": [
+        "#051824",
+        "#53b1b5"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-spray-mist.png",
+      "sha256": "9fede4cb0e4d7d55e9e05d8f28ad28e7e1b6e57c5f7bf05b4f9db18d3d974c11",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        97,
+        380,
+        1158,
+        912
+      ],
+      "normalisedVisibleSize": [
+        216,
+        108
+      ],
+      "normalisedOffset": [
+        20,
+        74
+      ],
+      "bounds": [
+        20,
+        74,
+        236,
+        182
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-dust-puff": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Dust puff",
+      "intent": "commissioned-new-picture-v1-awaiting-claude-contact-sheet-review",
+      "preserves": "one brief airborne sweeping puff with three joined lobes and two nearby small puffs; no pile, floor, tool or debris",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/source/symbol-dust-puff-source.png",
+      "sourceSha256": "6ac35dcdb121f70ae82a94c7899a44dcc6ab19facbd6e37c80bfb6e3f9fe0972",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-20c67351-f458-4ebe-bc93-55fbf8cf3f0b.png",
+      "flatPalette": [
+        "#051824",
+        "#c7bca9",
+        "#a69986"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-dust-puff.png",
+      "sha256": "349be125a3bf51067f54178e9ac563f37a63ded45ae31edb91b6bf1487283ea1",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        316,
+        387,
+        986,
+        857
+      ],
+      "normalisedVisibleSize": [
+        216,
+        152
+      ],
+      "normalisedOffset": [
+        20,
+        52
+      ],
+      "bounds": [
+        20,
+        52,
+        236,
+        204
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-earth-clods": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Earth clods",
+      "intent": "commissioned-new-picture-v1-awaiting-claude-contact-sheet-review",
+      "preserves": "one digging scatter of five separate flat earth clods with only three short construction edges; no shovel, ground or cloud",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/source/symbol-earth-clods-source.png",
+      "sourceSha256": "3349ae1dc1045e2839e5b41c5a10ffc1cc1454fc32ce302fb990d81584a75230",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-8b1b0453-0801-42df-8373-775931e24326.png",
+      "flatPalette": [
+        "#051824",
+        "#905231",
+        "#5c3a2d"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-earth-clods.png",
+      "sha256": "f0722457179c58e9028686e0abf928a97f566745abd9c46212a63a657b0c29ec",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        227,
+        313,
+        1039,
+        944
+      ],
+      "normalisedVisibleSize": [
+        216,
+        168
+      ],
+      "normalisedOffset": [
+        20,
+        44
+      ],
+      "bounds": [
+        20,
+        44,
+        236,
+        212
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-steam-puff": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Steam puff",
+      "intent": "commissioned-new-picture-v1-awaiting-claude-contact-sheet-review",
+      "preserves": "one compact rising ironing-steam cue with three joined vapour lobes and one tapered curl; no iron, drops or smoke",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/source/symbol-steam-puff-source.png",
+      "sourceSha256": "60348f3b7f84d642ad10e3960f998f9f528a652c4e2fb566082d36d53377ed4e",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-2d7beafd-2a8d-4fde-9ba6-715b4325d937.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-steam-puff.png",
+      "sha256": "45c3f871eb3f51676fcc3cdcde8e1b3cc0c4aee60f64ebf3683c0951b711e9b2",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "selfTest": {
+        "flatColourOnly": true,
+        "oneEvenRealEdgeLine": true,
+        "readsAt64Px": true,
+        "realObjectNotCartoon": true,
+        "checkedBy": "codex",
+        "checkedOn": "2026-10-22"
+      },
+      "sourceVisibleBounds": [
+        264,
+        221,
+        991,
+        1038
+      ],
+      "normalisedVisibleSize": [
+        192,
+        216
+      ],
+      "normalisedOffset": [
+        32,
+        20
+      ],
+      "bounds": [
+        32,
+        20,
+        224,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejected": [
+    {
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/rejected/tea-bag-textured-v1.png",
+      "sha256": "441c6148b09458b3acd4ca226754967705b242e13cfa6027601a662d8cffe463",
+      "reason": "Individual leaf flecks and tonal modelling failed the flat-colour and no-texture tests."
+    },
+    {
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/rejected/baking-cake-textured-v1.png",
+      "sha256": "b26615977068bf54b1835197870223aab436f80cc29f75afca9f546453c9106f",
+      "reason": "Crumb stipple, tonal modelling and highlight bands failed the flat-colour test."
+    },
+    {
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/rejected/repair-plank-end-grain-v1.png",
+      "sha256": "c5d0291a889da8c14a85da76a9a37a60b48e8ea9f268283c50dfe405c1abd5f8",
+      "reason": "Repeated end-grain arcs and tonal modelling exceeded the one-purposeful-cue detail budget."
+    },
+    {
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/rejected/repair-plank-glow-v2.png",
+      "sha256": "b4ffc07b54d9a4746dbf6d997e07710e8801af4c65a1f0e8878df9742069110a",
+      "reason": "A dark external glow entered the transparent margin."
+    },
+    {
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/rejected/cleaning-dust-pile-textured-v1.png",
+      "sha256": "fd7bf3d123592657a48e5d13dffd36c310cbffa4df4fde66fc14157952bd40ee",
+      "reason": "Too many internal curls described texture rather than real clump overlaps."
+    },
+    {
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/rejected/symbol-sawdust-oversized-v1.png",
+      "sha256": "a5c97ce673a7e0d73fde3bd0008571687e9664a7051073a09695f5f69fae3c45",
+      "reason": "Large crescent forms read as decorative chips rather than fine hand-saw sawdust."
+    },
+    {
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/rejected/symbol-sawdust-interior-lines-v2.png",
+      "sha256": "19be5c34c5fc730da88f50fb1a68c7ad56534bbd405eaf0b60b8f6e29da5de19",
+      "reason": "The better chip silhouettes retained decorative interior stripes and one count mismatch."
+    },
+    {
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/rejected/symbol-seasoning-cookie-like-v1.png",
+      "sha256": "b57a10a9542bb1bef84ca6357be6ad1f33af228a932769a265da51590bf354a6",
+      "reason": "Large flecks with internal spots read as cookies or pebbles rather than seasoning."
+    },
+    {
+      "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/rejected/symbol-spray-mist-shine-lines-v1.png",
+      "sha256": "18ba1ceee139fe3dd4c22b1e5b607ad30829ca26f303681e0beb1b7050325180",
+      "reason": "Interior curved highlights described shine and did not mark real edges."
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/evidence/light-dark-64-contact-sheet.png",
+    "sha256": "dd137ee431bea1d8a6c14bee5f441768e12a140d4347332c5cbee2bce4be9268",
+    "columns": 3,
+    "rows": 15,
+    "coveredIds": [
+      "tea-bag",
+      "baking-cake",
+      "repair-plank",
+      "meal-ploughmans",
+      "kitchen-plate",
+      "eggs-basket-empty",
+      "art-paintbrush",
+      "laundry-iron",
+      "cleaning-dust-pile",
+      "symbol-sawdust",
+      "symbol-seasoning-flecks",
+      "symbol-spray-mist",
+      "symbol-dust-puff",
+      "symbol-earth-clods",
+      "symbol-steam-puff"
+    ]
+  },
+  "checks": {
+    "selfTestPassedForEveryPicture": true,
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "exactPalettesRecorded": true,
+    "contactSheetCoversEveryCandidate": true,
+    "libraryPicturesAdded": true,
+    "existingPictureVersionChanged": false,
+    "storiesChanged": false,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "pushed": false,
+    "deployed": false
+  },
+  "rollback": "Remove only these fifteen new V1 library entries and discard this draft directory; no prior picture version or approved authority was changed."
+}

@@ -8,13 +8,14 @@ and welding-sparks marks now also have colour-semantic V3 drawings;
 `symbol-clean-glint` remains available as a `clean` mark. The earlier V1/V2
 versions remain selectable and byte-identical for undo.
 
-**Complete-catalogue update (21 October 2026):** the library now exposes all
+**Complete-catalogue update (22 October 2026):** the library now exposes all
 298 review-ready isolated source components from Activity Cloud Composer
 V1–V7, Prime rear-work activity-callout V2/V3 and every component-bearing
-Claude or Codex picture pack. The Studio therefore has 305 pictures and 381
+Claude or Codex picture pack. The Studio therefore has 320 pictures and 405
 immutable versions, including
 every V5 album homage, the complete aquarium and bedroom sets, and 54 new
-fishing, gardening, pet-play, fixing, pub, art and inventing pictures. Run
+fishing, gardening, pet-play, fixing, pub, art and inventing pictures. It also
+contains the 15 commissioned batch-2 Bubble-story pictures described below. Run
 `node scripts/import_activity_story_picture_catalogue.mjs` to reconcile those
 immutable source packs; `npm run verify:activity-stories` fails if any source
 component is absent or has lost its pinned version.
@@ -168,6 +169,19 @@ sheet with “yes much better” and established the binding taxonomy: **one eve
 black outline, flat colour, no shine**. All nine are current immutable V2s,
 taking the catalogue to 305 pictures / 390 versions. Every V1 remains selectable;
 77 current pictures are approved ligne-claire conversions and 228 remain.
+
+**Claude-commissioned new-picture batch (22 October 2026):** Frank's standing
+instruction lets Claude commission needed Bubble-story pictures and review the
+contact sheet on his behalf. The immutable pack at
+`art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/` adds nine
+objects and six action marks as new V1 IDs. All 15 pass the flat-colour,
+one-even-line, 64 px, gutter, ownership and hash checks; nine rejected attempts
+remain pinned. They are registered for Claude to review and wire, not recorded
+as Claude-approved yet. The library now has 320 pictures / 405 immutable
+versions: 77 approved ligne-claire conversions, 15 commissioned new pictures
+awaiting Claude's sheet review and 228 earlier pictures still to convert. No
+story or `src/activityStories/` file changed, and nothing was pushed or
+deployed.
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A

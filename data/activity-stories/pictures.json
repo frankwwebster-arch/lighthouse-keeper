@@ -478,6 +478,33 @@
         }
       ]
     },
+    "art-paintbrush": {
+      "kind": "object",
+      "family": "art",
+      "label": "Paintbrush",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/art-paintbrush.png",
+          "sha256": "0c8ba0138b279548fd692efe36d466c5acda30cc5fe061ab669591e2f807c8ce",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            22,
+            236,
+            233
+          ],
+          "added": "2026-10-21",
+          "source": "art-paintbrush.png",
+          "by": "codex",
+          "note": "Commissioned Bubble stories batch 2 ligne-claire picture; Claude review sheet pending"
+        }
+      ]
+    },
     "art-sketchbook-and-pencil": {
       "kind": "object",
       "family": "art",
@@ -529,6 +556,33 @@
           "source": "art-watercolour-set.png",
           "by": "codex",
           "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "baking-cake": {
+      "kind": "object",
+      "family": "baking",
+      "label": "Finished cake",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/baking-cake.png",
+          "sha256": "bd7293090464bdfc27d3020ef0fa3719f6446347a6cca332f06bd3b5c4b52b16",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            54,
+            236,
+            201
+          ],
+          "added": "2026-10-21",
+          "source": "baking-cake.png",
+          "by": "codex",
+          "note": "Commissioned Bubble stories batch 2 ligne-claire picture; Claude review sheet pending"
         }
       ]
     },
@@ -1963,6 +2017,33 @@
         }
       ]
     },
+    "cleaning-dust-pile": {
+      "kind": "object",
+      "family": "cleaning-tools",
+      "label": "Dust pile",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/cleaning-dust-pile.png",
+          "sha256": "fa0f63f8da8be291650b59a07cd9d036c3ee53498e9ed2370e5a9e846082fff0",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            64,
+            236,
+            191
+          ],
+          "added": "2026-10-21",
+          "source": "cleaning-dust-pile.png",
+          "by": "codex",
+          "note": "Commissioned Bubble stories batch 2 ligne-claire picture; Claude review sheet pending"
+        }
+      ]
+    },
     "condiment-honey-pot": {
       "kind": "object",
       "family": "condiment",
@@ -3368,6 +3449,33 @@
           "source": "eggs-basket.png",
           "by": "codex",
           "note": "Approved ligne-claire baking, eggs and mixing V2"
+        }
+      ]
+    },
+    "eggs-basket-empty": {
+      "kind": "object",
+      "family": "eggs",
+      "label": "Empty egg basket",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/eggs-basket-empty.png",
+          "sha256": "da645f7bbd9bd020e012fbd29f8db929c4a218c2a23abadff8c6d6fab81a9c62",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            20,
+            235,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "eggs-basket-empty.png",
+          "by": "codex",
+          "note": "Commissioned Bubble stories batch 2 ligne-claire picture; Claude review sheet pending"
         }
       ]
     },
@@ -4778,6 +4886,33 @@
         }
       ]
     },
+    "kitchen-plate": {
+      "kind": "object",
+      "family": "washing",
+      "label": "Clean plate",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/kitchen-plate.png",
+          "sha256": "f6bfc008b1919f49750c108cac19a80e2247dc4cb661c899944ec8e188906d5e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            50,
+            236,
+            206
+          ],
+          "added": "2026-10-21",
+          "source": "kitchen-plate.png",
+          "by": "codex",
+          "note": "Commissioned Bubble stories batch 2 ligne-claire picture; Claude review sheet pending"
+        }
+      ]
+    },
     "knife-bread": {
       "kind": "object",
       "family": "kitchen-tools",
@@ -4883,6 +5018,33 @@
           "source": "laundry-fabric-conditioner.png",
           "by": "codex",
           "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "laundry-iron": {
+      "kind": "object",
+      "family": "laundry",
+      "label": "Clothes iron",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/laundry-iron.png",
+          "sha256": "af4c44cf9856f4b0cd34dd90d55443fdc21892b4038f9c343c3deccc79cca5b5",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            52,
+            20,
+            203,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "laundry-iron.png",
+          "by": "codex",
+          "note": "Commissioned Bubble stories batch 2 ligne-claire picture; Claude review sheet pending"
         }
       ]
     },
@@ -5264,6 +5426,33 @@
           "source": "meal-lunch.png",
           "by": "codex",
           "note": "Approved ligne-claire farm animals and meals V2"
+        }
+      ]
+    },
+    "meal-ploughmans": {
+      "kind": "object",
+      "family": "meal",
+      "label": "Ploughman's lunch",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/meal-ploughmans.png",
+          "sha256": "080b8e4e41cbe24541b145843a10b74450125b512e9cd5e9d08ce0a71d3177d1",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            57,
+            236,
+            199
+          ],
+          "added": "2026-10-21",
+          "source": "meal-ploughmans.png",
+          "by": "codex",
+          "note": "Commissioned Bubble stories batch 2 ligne-claire picture; Claude review sheet pending"
         }
       ]
     },
@@ -7699,6 +7888,33 @@
         }
       ]
     },
+    "repair-plank": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Wooden plank",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/repair-plank.png",
+          "sha256": "1eec67017b293c7d8b27d2ff798f630bd4a9aa9b5ec1da3f27eb2987df2829eb",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            77,
+            236,
+            178
+          ],
+          "added": "2026-10-21",
+          "source": "repair-plank.png",
+          "by": "codex",
+          "note": "Commissioned Bubble stories batch 2 ligne-claire picture; Claude review sheet pending"
+        }
+      ]
+    },
     "repair-rope-knot": {
       "kind": "object",
       "family": "repair",
@@ -8538,6 +8754,60 @@
         }
       ]
     },
+    "symbol-dust-puff": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Dust puff",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-dust-puff.png",
+          "sha256": "349be125a3bf51067f54178e9ac563f37a63ded45ae31edb91b6bf1487283ea1",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            52,
+            236,
+            204
+          ],
+          "added": "2026-10-21",
+          "source": "symbol-dust-puff.png",
+          "by": "codex",
+          "note": "Commissioned Bubble stories batch 2 ligne-claire action mark; Claude review sheet pending"
+        }
+      ]
+    },
+    "symbol-earth-clods": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Earth clods",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-earth-clods.png",
+          "sha256": "f0722457179c58e9028686e0abf928a97f566745abd9c46212a63a657b0c29ec",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            44,
+            236,
+            212
+          ],
+          "added": "2026-10-21",
+          "source": "symbol-earth-clods.png",
+          "by": "codex",
+          "note": "Commissioned Bubble stories batch 2 ligne-claire action mark; Claude review sheet pending"
+        }
+      ]
+    },
     "symbol-electrical-arc": {
       "kind": "mark",
       "family": "electrical",
@@ -8856,6 +9126,60 @@
         }
       ]
     },
+    "symbol-sawdust": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Sawdust",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-sawdust.png",
+          "sha256": "b71ffd513a80e98b2764669dfb706497846d50d5a803041607ebe0587a86f43e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            25,
+            20,
+            231,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "symbol-sawdust.png",
+          "by": "codex",
+          "note": "Commissioned Bubble stories batch 2 ligne-claire action mark; Claude review sheet pending"
+        }
+      ]
+    },
+    "symbol-seasoning-flecks": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Seasoning flecks",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-seasoning-flecks.png",
+          "sha256": "227c321eff94416aaf465d3580117931f1ebec982157d953ed4b6dd687446db5",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            72,
+            20,
+            183,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "symbol-seasoning-flecks.png",
+          "by": "codex",
+          "note": "Commissioned Bubble stories batch 2 ligne-claire action mark; Claude review sheet pending"
+        }
+      ]
+    },
     "symbol-sizzle-spark": {
       "kind": "mark",
       "family": "impact",
@@ -8905,6 +9229,60 @@
           "added": "2026-10-20",
           "source": "keeper-prime-rear-action-choreography-v1",
           "by": "codex"
+        }
+      ]
+    },
+    "symbol-spray-mist": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Spray mist",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-spray-mist.png",
+          "sha256": "9fede4cb0e4d7d55e9e05d8f28ad28e7e1b6e57c5f7bf05b4f9db18d3d974c11",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            74,
+            236,
+            182
+          ],
+          "added": "2026-10-21",
+          "source": "symbol-spray-mist.png",
+          "by": "codex",
+          "note": "Commissioned Bubble stories batch 2 ligne-claire action mark; Claude review sheet pending"
+        }
+      ]
+    },
+    "symbol-steam-puff": {
+      "kind": "mark",
+      "family": "symbol",
+      "label": "Steam puff",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/symbol-steam-puff.png",
+          "sha256": "45c3f871eb3f51676fcc3cdcde8e1b3cc0c4aee60f64ebf3683c0951b711e9b2",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            32,
+            20,
+            224,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "symbol-steam-puff.png",
+          "by": "codex",
+          "note": "Commissioned Bubble stories batch 2 ligne-claire action mark; Claude review sheet pending"
         }
       ]
     },
@@ -9001,6 +9379,33 @@
         "status": "approved",
         "note": "Replaced by v3; awaiting Frank's look."
       }
+    },
+    "tea-bag": {
+      "kind": "object",
+      "family": "tea",
+      "label": "Tea bag",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/drafts/components/tea-bag.png",
+          "sha256": "18815c42944e195022c6b5a6ec8d9a5f2e8a3795a0d3ec1b095aa66de1011871",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            23,
+            20,
+            233,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "tea-bag.png",
+          "by": "codex",
+          "note": "Commissioned Bubble stories batch 2 ligne-claire picture; Claude review sheet pending"
+        }
+      ]
     },
     "tea-kettle": {
       "kind": "object",

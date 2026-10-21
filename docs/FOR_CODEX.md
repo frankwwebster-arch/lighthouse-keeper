@@ -162,6 +162,16 @@ even black outline, flat colour, no shine**. All nine are current immutable
 V2s; the library has 305 pictures / 390 versions, with 77 approved conversions
 and 228 remaining.
 
+Claude's first direct commission is complete in
+`art/drafts/activity-story-ligne-claire-new-pictures-2026-10-21-v1/`: nine new
+objects and six new action marks, all registered as V1 IDs and awaiting
+Claude's review of `evidence/light-dark-64-contact-sheet.png`. The catalogue is
+now 320 pictures / 405 versions: 77 approved conversions, 15 commissioned new
+pictures awaiting Claude's verdict and 228 earlier pictures still to convert.
+The pack includes exact prompts, accepted sources, nine retained rejections,
+flat-palette 256 px components, measured ownership/gutter metadata and its own
+verifier. Do not edit this pack; corrections require a fresh immutable version.
+
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 
 Frank has authorised an exhaustive, reversible audit and redraft programme for
