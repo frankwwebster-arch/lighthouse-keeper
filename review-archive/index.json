@@ -15,12 +15,12 @@
   ],
   "largeDataThresholdBytes": 24576,
   "stats": {
-    "setCount": 196,
-    "referenceCount": 4747,
+    "setCount": 197,
+    "referenceCount": 4751,
     "uniqueObjectCount": 2900,
-    "logicalBytes": 375957914,
+    "logicalBytes": 378238734,
     "uniqueBytes": 214989205,
-    "deduplicatedBytes": 160968709
+    "deduplicatedBytes": 163249529
   },
   "legacyPaths": {
     "/keeper-review/activity-cloud-composer-v1/assets/bbq-burgers-5244d4289bbaf95f.png": {
@@ -23551,6 +23551,34 @@
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/61/61309bf5d9bbcd307a74c0aeedd87542d05a67904ab99a38fd8a727c6806afa0.png"
     },
     "/keeper-review/kitchen-built-in-state-ligne-claire-v4-delivery-v2/assets/evidence--oven-on-broken-current-vs-candidate.png": {
+      "sha256": "222fc66b5bafcd585902ff09d915ef2fa145195c6a9cdad36b68570aa451275b",
+      "extension": ".png",
+      "bytes": 597964,
+      "object": "review-archive/objects/22/222fc66b5bafcd585902ff09d915ef2fa145195c6a9cdad36b68570aa451275b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/22/222fc66b5bafcd585902ff09d915ef2fa145195c6a9cdad36b68570aa451275b.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4-delivery-v3/assets/evidence--dishwasher-on-broken-current-vs-candidate.png": {
+      "sha256": "e35e0e6327d0ecaf1815870ed810970325b06ab7db247cd2ed9fd0d6f47b4eec",
+      "extension": ".png",
+      "bytes": 1043323,
+      "object": "review-archive/objects/e3/e35e0e6327d0ecaf1815870ed810970325b06ab7db247cd2ed9fd0d6f47b4eec.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e3/e35e0e6327d0ecaf1815870ed810970325b06ab7db247cd2ed9fd0d6f47b4eec.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4-delivery-v3/assets/evidence--on-broken-healing-current-vs-candidate.png": {
+      "sha256": "9f8036f263d14bc174d28eb3d52ecb6041d05668f736b1f08352c3dcb81a6a97",
+      "extension": ".png",
+      "bytes": 397871,
+      "object": "review-archive/objects/9f/9f8036f263d14bc174d28eb3d52ecb6041d05668f736b1f08352c3dcb81a6a97.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9f/9f8036f263d14bc174d28eb3d52ecb6041d05668f736b1f08352c3dcb81a6a97.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4-delivery-v3/assets/evidence--oven-broken-animation-sampler-current-vs-candidate.png": {
+      "sha256": "61309bf5d9bbcd307a74c0aeedd87542d05a67904ab99a38fd8a727c6806afa0",
+      "extension": ".png",
+      "bytes": 241662,
+      "object": "review-archive/objects/61/61309bf5d9bbcd307a74c0aeedd87542d05a67904ab99a38fd8a727c6806afa0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/61/61309bf5d9bbcd307a74c0aeedd87542d05a67904ab99a38fd8a727c6806afa0.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4-delivery-v3/assets/evidence--oven-on-broken-current-vs-candidate.png": {
       "sha256": "222fc66b5bafcd585902ff09d915ef2fa145195c6a9cdad36b68570aa451275b",
       "extension": ".png",
       "bytes": 597964,

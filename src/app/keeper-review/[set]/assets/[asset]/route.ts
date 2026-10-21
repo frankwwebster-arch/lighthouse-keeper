@@ -7,6 +7,7 @@ export const runtime = 'nodejs'
 
 const SAME_ORIGIN_ARCHIVE_SETS = new Set([
   'kitchen-built-in-state-ligne-claire-v4-delivery-v2',
+  'kitchen-built-in-state-ligne-claire-v4-delivery-v3',
 ])
 
 export async function GET(_request: Request, context: { params: { set: string; asset: string } }) {

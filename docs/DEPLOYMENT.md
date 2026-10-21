@@ -67,6 +67,14 @@ version at the URL above.
   approval.
 - `npm run deploy` refuses to run with uncommitted changes or off `main`.
   It pulls first, because both agents push to `main`.
+- `npm run deploy`, archive maintenance and the archive verifier all reject any
+  new review page containing a relative `assets/...` URL. Vercel removes
+  trailing slashes from static review-page URLs, so new payload references must
+  be root-absolute: `/keeper-review/<set>/assets/<name>`. Historical pages are
+  grandfathered only at their exact combined hash; changing one or adding a
+  new relative reference fails before a deploy marker can be created. The same
+  policy runs in the GitHub deployment action and Vercel's ignored-build gate,
+  so manually authored deploy commits cannot bypass it.
 
 ## Retention policy
 
@@ -149,10 +157,10 @@ explicit release.
 Keeper review media is now stored once outside `public/`, without deleting any
 evidence or changing immutable review-page bytes.
 
-**Measured result (21 October 2026):** 4,562 review-evidence paths across 189
-sets collapse to 2,742 unique objects. The paths represent 339.19 MiB; the
-unique retained store is 188.61 MiB. The clean-checkout `public/` deployment
-payload is 44.9008 MiB, 5.0992 MiB below the unchanged 50 MiB repository guard
+**Measured result (21 October 2026):** 4,751 review-evidence paths across 197
+sets collapse to 2,900 unique objects. The paths represent 360.72 MiB; the
+unique retained store is 205.03 MiB. The clean-checkout `public/` deployment
+payload is 45.04 MiB, 4.96 MiB below the unchanged 50 MiB repository guard
 and down from the exact 53.3148 MiB failure baseline. The archive itself stays
 in Git but is outside `public/`, so Vercel does not copy those objects into
 every deployment.
@@ -197,6 +205,12 @@ every deployment.
    If an existing immutable page lacks that gate, publish a new versioned page
    with new asset paths; never overwrite the historical export or ask Frank to
    clear browser caches.
+8. **New payload URLs are root-absolute.** Static pages are served from a URL
+   without a trailing slash, so `assets/name.png` resolves outside the review
+   set. Use `/keeper-review/<set>/assets/name.png`. A fail-closed legacy-page
+   tree hash in `scripts/review_page_url_policy.mjs` lets immutable old pages
+   remain while preventing new relative references during archive maintenance,
+   tests and `npm run deploy`.
 
 ### Adding or rebuilding review media
 

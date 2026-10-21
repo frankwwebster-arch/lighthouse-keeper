@@ -4,16 +4,18 @@ Date: 21 October 2026
 
 Original immutable review: `/keeper-review/kitchen-built-in-state-ligne-claire-v4/`
 
-Corrected review delivery: `/keeper-review/kitchen-built-in-state-ligne-claire-v4-delivery-v2/`
+Corrected review delivery: `/keeper-review/kitchen-built-in-state-ligne-claire-v4-delivery-v3/`
 
 Status: complete immutable static review candidate; not approved, registered,
 promoted, wired or current.
 
 The original page's archived image URLs returned external redirects that the
-review surface did not display. Delivery V2 preserves that page and every V4
-byte, while a fresh page and asset prefix serve the same four evidence objects
-through hash-verified same-origin responses. See
-`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V2_2026-10-21.md`.
+review surface did not display. Delivery V2 preserved that page and added
+same-origin responses, but its relative URLs broke after Vercel removed the
+page's trailing slash. Delivery V3 preserves both earlier pages and every V4
+byte, while root-absolute paths under a fresh asset prefix serve the same four
+evidence objects through hash-verified same-origin responses. See
+`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V3_2026-10-21.md`.
 
 ## Purpose and boundary
 

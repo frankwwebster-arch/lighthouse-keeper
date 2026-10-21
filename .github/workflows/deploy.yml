@@ -30,6 +30,9 @@ jobs:
           ref: main
           fetch-depth: 1
 
+      - name: Verify root-absolute review URLs
+        run: node scripts/review_page_url_policy.mjs
+
       - name: Push the [deploy] commit
         env:
           NOTE: ${{ inputs.note }}

@@ -5,6 +5,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { execFileSync } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
+import { verifyRootAbsoluteReviewUrls } from './review_page_url_policy.mjs'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const PUBLIC_ROOT = path.join(ROOT, 'public/keeper-review')
@@ -41,6 +42,10 @@ function walk(directory) {
   }
   return files
 }
+
+// Fail before copying, indexing or removing any media. New review pages must
+// survive Vercel's trailing-slash canonicalization without changing base paths.
+verifyRootAbsoluteReviewUrls(ROOT)
 
 const archiveExtension = file => file.toLowerCase().endsWith('.json.gz') ? '.json.gz' : path.extname(file).toLowerCase()
 const legacyPathFor = file => `/${posix(path.relative(path.join(ROOT, 'public'), file))}`

@@ -10,11 +10,16 @@
 // Nothing else on Vercel changes. See docs/DEPLOYMENT.md.
 
 import { execFileSync } from 'node:child_process'
+import { verifyRootAbsoluteReviewUrls } from './review_page_url_policy.mjs'
 
 const git = (...args) => execFileSync('git', args, { encoding: 'utf8' }).trim()
 const run = (...args) => execFileSync('git', args, { stdio: 'inherit' })
 
 const note = process.argv.slice(2).join(' ').trim() || 'release current main'
+
+// Publishing must fail before a deploy marker is created if a new review page
+// would resolve assets outside its set after Vercel removes the trailing slash.
+verifyRootAbsoluteReviewUrls(process.cwd())
 
 const branch = git('rev-parse', '--abbrev-ref', 'HEAD')
 if (branch !== 'main') {

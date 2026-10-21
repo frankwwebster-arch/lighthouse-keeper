@@ -745,7 +745,7 @@ reversible, and is still unpromoted and unwired. See
 [`docs/KITCHEN_FITTED_CABINET_LIGNE_CLAIRE_V3_2026-10-21.md`](docs/KITCHEN_FITTED_CABINET_LIGNE_CLAIRE_V3_2026-10-21.md).
 Kitchen Built-In State Ligne-Claire V4 extends that exact approved family to
 the oven and dishwasher On/Broken state assets. Its corrected review URL is
-`/keeper-review/kitchen-built-in-state-ligne-claire-v4-delivery-v2/`. It contains seventeen
+`/keeper-review/kitchen-built-in-state-ligne-claire-v4-delivery-v3/`. It contains seventeen
 new exact-alpha candidates: oven On, Broken, three Broken lighting combinations,
 both complete 40-frame Broken lighting strips, dishwasher On/Broken bases and
 all eight On/Broken edge-healing variants. V3 fridge, sink, cabinet and healing
@@ -755,12 +755,16 @@ locks, repair unlocks, effect ownership and all V41 healing behavior remain
 unchanged and hash-pinned. V4 is a reversible static review candidate and is
 not approved, registered, promoted or wired. The original immutable page remains
 at `/keeper-review/kitchen-built-in-state-ligne-claire-v4/`, but its external
-image redirects did not render in the review surface. Delivery V2 reuses the
-exact four V4 evidence objects through SHA-256-verified same-origin responses;
-it changes no art or behavior. See
+image redirects did not render in the review surface. Delivery V2 introduced
+same-origin responses but its relative image paths failed after Vercel removed
+the trailing slash; it remains immutable failed-delivery provenance. Delivery
+V3 uses root-absolute paths and reuses the exact four V4 evidence objects through
+SHA-256-verified same-origin responses. It changes no art or behavior. See
 [`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_2026-10-21.md`](docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_2026-10-21.md)
 and
 [`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V2_2026-10-21.md`](docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V2_2026-10-21.md).
+The successful correction is
+[`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V3_2026-10-21.md`](docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V3_2026-10-21.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

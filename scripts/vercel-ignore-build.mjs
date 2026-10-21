@@ -14,6 +14,8 @@
 //
 // See docs/DEPLOYMENT.md for the full workflow.
 
+import { verifyRootAbsoluteReviewUrls } from './review_page_url_policy.mjs'
+
 export const DEPLOY_MARKER = '[deploy]'
 export const PRODUCTION_BRANCH = 'main'
 
@@ -45,6 +47,15 @@ if (invokedDirectly) {
     ref: process.env.VERCEL_GIT_COMMIT_REF,
     message: process.env.VERCEL_GIT_COMMIT_MESSAGE,
   })
+  if (result.build) {
+    try {
+      verifyRootAbsoluteReviewUrls(process.cwd())
+    } catch (error) {
+      console.error(`[vercel-ignore-build] ${error instanceof Error ? error.message : error}`)
+      console.log('[vercel-ignore-build] Skipping unsafe review-page deployment.')
+      process.exit(0)
+    }
+  }
   console.log(`[vercel-ignore-build] ${result.reason}`)
   process.exit(result.build ? 1 : 0)
 }

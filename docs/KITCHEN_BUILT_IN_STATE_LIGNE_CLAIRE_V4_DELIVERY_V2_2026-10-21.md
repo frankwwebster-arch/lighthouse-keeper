@@ -4,8 +4,8 @@ Date: 21 October 2026
 
 Review: `/keeper-review/kitchen-built-in-state-ligne-claire-v4-delivery-v2/`
 
-Status: deployed delivery correction for the unchanged immutable V4 evidence;
-not approved, registered, promoted, wired or current.
+Status: failed delivery preserved as immutable provenance; superseded by
+Delivery V3. It was never approved, registered, promoted, wired or current.
 
 ## Fault and correction
 
@@ -21,7 +21,10 @@ unavailable object fails closed with HTTP 502 rather than displaying unverified
 evidence.
 
 The page waits for all four images to decode before showing its ready state and
-displays an explicit failure message if decoding fails.
+displays an explicit failure message if decoding fails. Its relative
+`assets/...` URLs resolve incorrectly after Vercel removes the page's trailing
+slash, so the live Chromium render correctly displayed the failure state. The
+page remains unchanged; Delivery V3 fixes this with root-absolute URLs.
 
 ## Immutability
 
@@ -47,13 +50,14 @@ npm run typecheck
 npm run build
 ```
 
-After deployment, the page and each same-origin evidence route must return HTTP
-200 without a `Location` header. The returned `X-Review-Archive-Sha256` header
-and downloaded SHA-256 must equal the immutable archive declaration.
+Direct requests to each same-origin evidence route returned HTTP 200 without a
+`Location` header, and every returned `X-Review-Archive-Sha256` and downloaded
+SHA-256 matched the immutable archive declaration. That transport-only check
+was insufficient: the required Chromium render then exposed the incorrect
+relative URL resolution and displayed the page's explicit failure state.
 
 ## Rollback
 
-Rollback is immediate: remove only the Delivery V2 page, its four duplicate
-archive path mappings, the targeted same-origin route allow-list entry and this
-document. The original V4 pack, page, archive set and every game asset remain
-untouched.
+Delivery V2 is now immutable failed-delivery provenance and is not removed or
+rewritten during Delivery V3 rollback. It never changed the original V4 pack,
+page, archive set or any game asset.

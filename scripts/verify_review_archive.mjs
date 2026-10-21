@@ -5,6 +5,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { execFileSync } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
+import { verifyRootAbsoluteReviewUrls } from './review_page_url_policy.mjs'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const ARCHIVE = path.join(ROOT, 'review-archive')
@@ -38,6 +39,7 @@ function walk(directory) {
   }
   return files
 }
+verifyRootAbsoluteReviewUrls(ROOT)
 if (!fs.existsSync(INDEX)) fail('index.json is missing')
 const index = JSON.parse(fs.readFileSync(INDEX, 'utf8'))
 if (index.version !== 1 || index.objectsBaseUrl !== 'https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects') fail('index identity/base URL invalid')
