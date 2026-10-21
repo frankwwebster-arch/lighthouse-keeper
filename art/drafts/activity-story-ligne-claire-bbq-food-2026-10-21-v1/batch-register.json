@@ -1,0 +1,458 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
+  "set": "activity-story-ligne-claire-bbq-food-2026-10-21-v1",
+  "status": "review-only-unregistered",
+  "created": "2026-10-21",
+  "tool": "built-in image generation plus deterministic fixed-palette normalisation",
+  "family": "bbq",
+  "visualAuthority": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components",
+  "preservationRule": "Translate each current asset's drawing language while preserving subject identity, viewpoint, object count, container, construction, state, recognisable contents, relative arrangement and broad silhouette.",
+  "visibleAlphaThreshold": 8,
+  "components": {
+    "bbq-burgers": {
+      "family": "bbq",
+      "label": "Burgers",
+      "intent": "proposed-new-version-v2",
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "two overlapping finished burgers, golden seeded buns, lettuce, tomato and cooked patties in the current front three-quarter arrangement",
+      "currentReferenceFile": "review-archive/objects/52/5244d4289bbaf95f4c2ddd36a72f24fe9b5bf12e2a349365d9fe574fdfa64354.png",
+      "currentReferenceSha256": "5244d4289bbaf95f4c2ddd36a72f24fe9b5bf12e2a349365d9fe574fdfa64354",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/source/bbq-burgers-source.png",
+      "sourceSha256": "b0c3c56de19edeeeee33864795541307cc281b199a9409b7255fc8fc70c4aa45",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-dee1bc84-74d4-4b91-9788-9f28c3d2f3cd.png",
+      "flatPalette": [
+        "#051824",
+        "#e7a638",
+        "#f6e5b7",
+        "#e84833",
+        "#399437",
+        "#744128"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/drafts/components/bbq-burgers.png",
+      "sha256": "a1c28142146c3629049e0197e7b9c6bd2eb3c3c6a770482e54283b17b9a26680",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        86,
+        216,
+        1183,
+        1046
+      ],
+      "normalisedVisibleSize": [
+        216,
+        163
+      ],
+      "normalisedOffset": [
+        20,
+        46
+      ],
+      "bounds": [
+        20,
+        46,
+        236,
+        209
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-ketchup": {
+      "family": "bbq",
+      "label": "BBQ ketchup",
+      "intent": "proposed-new-version-v2",
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "the tall red squeeze bottle at left and cream bowl of ketchup at lower right as one grouped condiment picture",
+      "currentReferenceFile": "art/drafts/activity-cloud-composer-2026-10-19-v1/drafts/components/bbq-ketchup.png",
+      "currentReferenceSha256": "fb8b53e64900967299aa1b9f161640d3862413d8a579128de02cd35129c4a27a",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/source/bbq-ketchup-source.png",
+      "sourceSha256": "9df2c64c04ef7f66203d1daa3cc7001deb55e330c89ddb0e3f99b3885464eb57",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-020cab0e-0669-460f-bcb0-98cfbc31ccb3.png",
+      "flatPalette": [
+        "#051824",
+        "#e84833",
+        "#f6e5b7"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/drafts/components/bbq-ketchup.png",
+      "sha256": "f32e52b7707dc78989dd50c14aa762b808fe451968a3f7e1c9c259e899df3fa4",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        204,
+        127,
+        1051,
+        1122
+      ],
+      "normalisedVisibleSize": [
+        184,
+        216
+      ],
+      "normalisedOffset": [
+        36,
+        20
+      ],
+      "bounds": [
+        36,
+        20,
+        220,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-lamb-chops": {
+      "family": "bbq",
+      "label": "BBQ lamb chops",
+      "intent": "proposed-new-version-v2",
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "two overlapping raw bone-in lamb chops with both pale bones rising up-right and no plate or garnish",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/bbq-lamb-chops.png",
+      "currentReferenceSha256": "d0b507c045397faada719d5b9c4317689280a287a65a172ceed1cef08db69fff",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/source/bbq-lamb-chops-source.png",
+      "sourceSha256": "ef0840aae08088ac6023f6e91962b521c285ef16ae7f65910e8aec379f931790",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-63e07089-d3a0-474c-ad96-a22a18cb83db.png",
+      "flatPalette": [
+        "#051824",
+        "#e8483e",
+        "#c32b37",
+        "#f6e5b7"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/drafts/components/bbq-lamb-chops.png",
+      "sha256": "afa89dc37d91e60444c688ba2fa6cba817a78fd62fe671e377c3291e3c0f862b",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        99,
+        138,
+        1190,
+        1106
+      ],
+      "normalisedVisibleSize": [
+        216,
+        192
+      ],
+      "normalisedOffset": [
+        20,
+        32
+      ],
+      "bounds": [
+        20,
+        32,
+        236,
+        224
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-leg-lamb": {
+      "family": "bbq",
+      "label": "BBQ leg lamb",
+      "intent": "proposed-new-version-v2",
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "the tied roasted leg with cut face and bone end, rosemary sprigs and shallow cream oval plate with blue rim",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/bbq-leg-lamb.png",
+      "currentReferenceSha256": "19c65af65d6ba61db422ee922e786f5d876323777dff4265a3ddba39b251f354",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/source/bbq-leg-lamb-source.png",
+      "sourceSha256": "e0609012d32cdd22c5259acdf8925c3bd0383424e5de30e1badd9f5fae58b437",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-1c23f9b4-a1d6-462a-a8d3-507e128ba1ed.png",
+      "flatPalette": [
+        "#051824",
+        "#e58a2e",
+        "#c9423c",
+        "#f6e5b7",
+        "#499137",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/drafts/components/bbq-leg-lamb.png",
+      "sha256": "9a45f04e5d195056b299143bcbb905650f00b7f783b860f455b5fc6657ebdc06",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        83,
+        343,
+        1179,
+        935
+      ],
+      "normalisedVisibleSize": [
+        216,
+        117
+      ],
+      "normalisedOffset": [
+        20,
+        69
+      ],
+      "bounds": [
+        20,
+        69,
+        236,
+        186
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-steak": {
+      "family": "bbq",
+      "label": "BBQ steak",
+      "intent": "proposed-new-version-v2",
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one long low irregular raw red steak with a rounded left end, raised right end, cream fat edge and no plate",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/bbq-steak.png",
+      "currentReferenceSha256": "b6c81c2fbc03d1daaabeae70b1e8856216c49fdd0fbc49b2788509febceb5cad",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/source/bbq-steak-source.png",
+      "sourceSha256": "f9fac47123bc5256df3cc6d72b3d2a44767bd7fcabf8f03bd8aa14a0efe97ba5",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-3a7b6b7f-3ada-47e0-87d8-fd66ad41e782.png",
+      "flatPalette": [
+        "#051824",
+        "#e8483e",
+        "#c32b37",
+        "#f6e5b7"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/drafts/components/bbq-steak.png",
+      "sha256": "eeb19db652babc1ff7c44b05b08807cdc7d019ea4aa21b0dae76e4588f17f7e4",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        67,
+        310,
+        1193,
+        994
+      ],
+      "normalisedVisibleSize": [
+        216,
+        131
+      ],
+      "normalisedOffset": [
+        20,
+        62
+      ],
+      "bounds": [
+        20,
+        62,
+        236,
+        193
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-raw-burger-patties": {
+      "family": "bbq",
+      "label": "Raw burger patties",
+      "intent": "proposed-new-version-v2",
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "three thick raw minced-beef patties in the current triangular overlap, with one in front and two behind",
+      "currentReferenceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-raw-burger-patties.png",
+      "currentReferenceSha256": "8d8107dbe7705c7cecbe90ad2ead6e83b82525ab4ca9b52b25e13d624c4e9521",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/source/bbq-raw-burger-patties-source.png",
+      "sourceSha256": "3ae3714309df86045ecb781c8f3f7f48ad22824662a38f56fe113941ac1ffe1a",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-a54bf916-f47a-45a7-9adc-cba7f77e6ada.png",
+      "flatPalette": [
+        "#051824",
+        "#f57e6a",
+        "#d7493e"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/drafts/components/bbq-raw-burger-patties.png",
+      "sha256": "caa264f23f813c5b7ccb97de26f123c4f8387d16d008dfadc49dd3c19166a02a",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        93,
+        276,
+        1188,
+        1009
+      ],
+      "normalisedVisibleSize": [
+        216,
+        145
+      ],
+      "normalisedOffset": [
+        20,
+        55
+      ],
+      "bounds": [
+        20,
+        55,
+        236,
+        200
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-raw-steak": {
+      "family": "bbq",
+      "label": "Raw steak",
+      "intent": "proposed-new-version-v2",
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one thick rounded rectangular raw steak with pale fat network, short side wall and no plate",
+      "currentReferenceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-raw-steak.png",
+      "currentReferenceSha256": "14870ae013f48d8ff84ccb1894c41cb8baec661273f0da2f15cf1032033aa670",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/source/bbq-raw-steak-source.png",
+      "sourceSha256": "b4aa7c97c2f58b4401691ef1cabb5564670dd3fdeaa2e04606bd3185104eb87a",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-186d791d-bf36-4d0e-b97d-3d593e83f3db.png",
+      "flatPalette": [
+        "#051824",
+        "#e8483e",
+        "#c32b37",
+        "#f6e5b7"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/drafts/components/bbq-raw-steak.png",
+      "sha256": "ac1761782eef5f85c98dec28756fefb10b02ce85c13520e72a6c18fdd92458c2",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        86,
+        272,
+        1170,
+        1002
+      ],
+      "normalisedVisibleSize": [
+        216,
+        145
+      ],
+      "normalisedOffset": [
+        20,
+        55
+      ],
+      "bounds": [
+        20,
+        55,
+        236,
+        200
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejected": [
+    {
+      "file": "rejected/bbq-leg-lamb-four-band-prompt-v1.png",
+      "cache": "exec-e49053f3-3464-4512-b67c-fe0260fe8eb3.png",
+      "reason": "The drawing matched the source's three tying bands, but the prompt incorrectly asserted four; rerendered with correct provenance after an enlarged count audit.",
+      "sha256": "5006e679e5e47716b8a78b9e8eed3b8ffaf6e2373b52ea318fe3cedce7281ff9"
+    },
+    {
+      "file": "rejected/bbq-steak-v1.png",
+      "cache": "exec-c610fbd9-67a4-4a72-917b-ae18b20bb8cd.png",
+      "reason": "The silhouette became too rectangular and the dense marbling blurred the distinction from bbq-raw-steak.",
+      "sha256": "bed3ee804b02662e6c1855c993f286d86794115e33b654795600e9ef0bd55834"
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/evidence/current-vs-ligne-claire-contact-sheet.png",
+    "sha256": "af799533af03be1bf98246ca4028b1ca455bcdf43ff9039be91c792da9c4504f",
+    "columns": 5,
+    "rows": 7,
+    "coveredIds": [
+      "bbq-burgers",
+      "bbq-ketchup",
+      "bbq-lamb-chops",
+      "bbq-leg-lamb",
+      "bbq-steak",
+      "bbq-raw-burger-patties",
+      "bbq-raw-steak"
+    ]
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "currentReferenceHashesPinned": true,
+    "exactPalettesRecorded": true,
+    "contactSheetCoversEveryCandidate": true,
+    "libraryVersionsAdded": false,
+    "storiesChanged": false,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "deployed": false
+  },
+  "approval": null,
+  "rollback": "Before approval, discard only this draft directory. No picture-library version or existing source is changed."
+}

@@ -1,0 +1,459 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
+  "set": "activity-story-ligne-claire-bbq-tools-2026-10-21-v1",
+  "status": "review-only-unregistered",
+  "created": "2026-10-21",
+  "tool": "built-in image generation plus deterministic fixed-palette normalisation",
+  "family": "bbq-tools",
+  "visualAuthority": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components",
+  "preservationRule": "Translate each current asset's drawing language while preserving subject identity, viewpoint, object count, container, construction, state, recognisable contents, relative arrangement and broad silhouette.",
+  "visibleAlphaThreshold": 8,
+  "components": {
+    "bbq-basting-brush": {
+      "family": "bbq-tools",
+      "label": "Basting brush",
+      "intent": "proposed-new-version-v2",
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one diagonal brush with orange silicone bristles, pale collar, blue handle and hanging hole",
+      "currentReferenceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-basting-brush.png",
+      "currentReferenceSha256": "a6bcd75aa5b4c50216622c04a5018c23998b18097eb20a77eddd4e79c613a16d",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/source/bbq-basting-brush-source.png",
+      "sourceSha256": "b1d0a7e8cd815440987f9c3eab7c19bd36e5c4304187b63c53292e17cf771940",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-5181c616-adc2-46b5-bf31-ee7f646286de.png",
+      "flatPalette": [
+        "#051824",
+        "#0d4e75",
+        "#e88b2d",
+        "#ede9de"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/drafts/components/bbq-basting-brush.png",
+      "sha256": "14c4f6b9db2169ce89e7d0cdfe0eb80c541f94abba494026147d067b81b2c3af",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        100,
+        359,
+        1194,
+        948
+      ],
+      "normalisedVisibleSize": [
+        216,
+        116
+      ],
+      "normalisedOffset": [
+        20,
+        70
+      ],
+      "bounds": [
+        20,
+        70,
+        236,
+        186
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-charcoal-bag": {
+      "family": "bbq-tools",
+      "label": "Charcoal bag",
+      "intent": "proposed-new-version-v2",
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one upright closed blue-and-orange charcoal bag with folded top and three-lump charcoal motif",
+      "currentReferenceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-charcoal-bag.png",
+      "currentReferenceSha256": "f45c271e7d9d14cbab2a3dde2f4d15784a875a659515c163ef9fe3f72fdee254",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/source/bbq-charcoal-bag-source.png",
+      "sourceSha256": "cf6a423fd9c3d11b93cad9657336e52bc4cf6a91a68b03f63ea66bee4af99e57",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-2a3d5494-f10c-4e29-8d5a-e67aca6fe4f3.png",
+      "flatPalette": [
+        "#051824",
+        "#0d4e75",
+        "#e88b2d",
+        "#30343a",
+        "#494c52"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/drafts/components/bbq-charcoal-bag.png",
+      "sha256": "a99311e064ade6958edb4adb4d4d879893798380ecef83f5daaec297fa3c48c1",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        257,
+        94,
+        1026,
+        1186
+      ],
+      "normalisedVisibleSize": [
+        152,
+        216
+      ],
+      "normalisedOffset": [
+        52,
+        20
+      ],
+      "bounds": [
+        52,
+        20,
+        204,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-charcoal-chimney": {
+      "family": "bbq-tools",
+      "label": "Charcoal chimney",
+      "intent": "proposed-new-version-v2",
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "the upright perforated steel chimney, visible charcoal, lower vent slots and right blue shield handle with orange grip",
+      "currentReferenceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-charcoal-chimney.png",
+      "currentReferenceSha256": "9f172c34fd0cfeeaeebcc924522ae7ee552c053229e61ffae08ae2c0e91e46c7",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/source/bbq-charcoal-chimney-source.png",
+      "sourceSha256": "35bd867e9859d7c0633d22b554119be874beeb0e7ac8773b9591a9d8c7aef4ad",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-bd0285b4-9f15-433f-853e-5f944ee8d505.png",
+      "flatPalette": [
+        "#051824",
+        "#ede9de",
+        "#97a6ac",
+        "#0d4e75",
+        "#e88b2d",
+        "#30343a"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/drafts/components/bbq-charcoal-chimney.png",
+      "sha256": "0bda2bd99b352dbb778f341c3e5974b0af367f513c33a075435d6eb80aa9ca85",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        117,
+        103,
+        1181,
+        1162
+      ],
+      "normalisedVisibleSize": [
+        216,
+        215
+      ],
+      "normalisedOffset": [
+        20,
+        20
+      ],
+      "bounds": [
+        20,
+        20,
+        236,
+        235
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-grill-fork": {
+      "family": "bbq-tools",
+      "label": "Grill fork",
+      "intent": "proposed-new-version-v2",
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one diagonal two-tine fork with steel shaft, blue two-rivet handle and orange end hole",
+      "currentReferenceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-grill-fork.png",
+      "currentReferenceSha256": "6a2451de5e126ef784cae7a0d6c001b6640fb6fc582938b90de6cbb7424cb36d",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/source/bbq-grill-fork-source.png",
+      "sourceSha256": "3c37517bb10c32a2c1be75e2df1a9c7f7e71996b450518a5166d858f180f980a",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-13218404-a578-4876-8c7c-1dcc5d66b17e.png",
+      "flatPalette": [
+        "#051824",
+        "#ede9de",
+        "#0d4e75",
+        "#e88b2d"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/drafts/components/bbq-grill-fork.png",
+      "sha256": "499e5ca86740c396299a1b8b6819961ebda4d1fb2acef2e792b5953126391424",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        103,
+        295,
+        1173,
+        983
+      ],
+      "normalisedVisibleSize": [
+        216,
+        139
+      ],
+      "normalisedOffset": [
+        20,
+        58
+      ],
+      "bounds": [
+        20,
+        58,
+        236,
+        197
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-heatproof-mitt": {
+      "family": "bbq-tools",
+      "label": "Heatproof mitt",
+      "intent": "proposed-new-version-v2",
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one blue diamond-quilted mitt with left thumb, orange-bound open cuff and orange hanging loop",
+      "currentReferenceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-heatproof-mitt.png",
+      "currentReferenceSha256": "85b7b5c527287ecb238b57184bdbd3327649cf338b7a40504d0113381d9f4367",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/source/bbq-heatproof-mitt-source.png",
+      "sourceSha256": "9f721ff7a80b0ff12ad3910c4011aa54585afe0ed647a33b5139123fbe7426ed",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-969214bf-19a5-4c1e-8a5d-86d70309616d.png",
+      "flatPalette": [
+        "#051824",
+        "#0d4e75",
+        "#177c9d",
+        "#e88b2d"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/drafts/components/bbq-heatproof-mitt.png",
+      "sha256": "c57813fed14e506a5cf20a7bb4dde8d8d18afa93de3098d792b036475313da52",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        178,
+        124,
+        1097,
+        1167
+      ],
+      "normalisedVisibleSize": [
+        190,
+        216
+      ],
+      "normalisedOffset": [
+        33,
+        20
+      ],
+      "bounds": [
+        33,
+        20,
+        223,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-skewer-bundle": {
+      "family": "bbq-tools",
+      "label": "Skewers",
+      "intent": "proposed-new-version-v2",
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly three parallel diagonal skewers with three points, blue loop handles and orange collars",
+      "currentReferenceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-skewer-bundle.png",
+      "currentReferenceSha256": "b07b6828cc76a3b54b8aa8a8671f48adb91ec751b48a52068c69bdc710f0cc26",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/source/bbq-skewer-bundle-source.png",
+      "sourceSha256": "bd53933a31f9cf689f857c4d9a52202e7ac541cdd833b9de57b3e53d85e61e30",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-05d28427-74eb-443c-a44a-531e42be3490.png",
+      "flatPalette": [
+        "#051824",
+        "#ede9de",
+        "#0d4e75",
+        "#e88b2d"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/drafts/components/bbq-skewer-bundle.png",
+      "sha256": "df604013b5a1db004265b574252566d044cc6a7cc51d91f76139a15593e3a604",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        86,
+        312,
+        1203,
+        993
+      ],
+      "normalisedVisibleSize": [
+        216,
+        132
+      ],
+      "normalisedOffset": [
+        20,
+        62
+      ],
+      "bounds": [
+        20,
+        62,
+        236,
+        194
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-slotted-turner": {
+      "family": "bbq-tools",
+      "label": "Slotted turner",
+      "intent": "proposed-new-version-v2",
+      "currentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one diagonal turner with broad steel blade, exactly four slots, bent neck and blue two-rivet handle with orange end hole",
+      "currentReferenceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-slotted-turner.png",
+      "currentReferenceSha256": "9115fb7c3602151d786db177f2ea6aa5baaac1529a24cd71a05ed95f83985065",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/source/bbq-slotted-turner-source.png",
+      "sourceSha256": "c98ca3416838ff4513d0221fb1d5884b374680fe4a467debd3c4135f8d153f8b",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-5d27d887-098d-4a5e-a335-23950e1ffa80.png",
+      "flatPalette": [
+        "#051824",
+        "#ede9de",
+        "#0d4e75",
+        "#e88b2d"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/drafts/components/bbq-slotted-turner.png",
+      "sha256": "d4e025f198290070f6450611fe6ec8807e23a803a5605fe4dd67475a2164abba",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        94,
+        357,
+        1194,
+        924
+      ],
+      "normalisedVisibleSize": [
+        216,
+        111
+      ],
+      "normalisedOffset": [
+        20,
+        72
+      ],
+      "bounds": [
+        20,
+        72,
+        236,
+        183
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejected": [
+    {
+      "file": "rejected/bbq-skewer-bundle-four-count-prompt-v1.png",
+      "cache": "exec-0c4e333e-aeda-4a4c-bb52-21f7c516bf45.png",
+      "reason": "The drawing matched the source's three skewers, but the prompt incorrectly asserted four; rerendered with correct provenance after an enlarged count audit.",
+      "sha256": "bf0fc3ebbf598d2eee2dc6f01a4a390c892847f257b99c7b667023cc9e61ddec"
+    },
+    {
+      "file": "rejected/bbq-slotted-turner-v1.png",
+      "cache": "exec-a9fc9404-0400-4f17-9055-cf86c1d99bdd.png",
+      "reason": "The drawing matched the source's four slots, but the prompt incorrectly asserted five; rerendered with correct provenance after an enlarged count audit.",
+      "sha256": "230b9cd6f691800dfcaf497dcb21edf69483a03df8908cddafdfcd39c1f729db"
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/evidence/current-vs-ligne-claire-contact-sheet.png",
+    "sha256": "b8f7b5afa7bf08f99eec796f46ce710745c9ffea5fa5152edb12fa6f8cd0f3e9",
+    "columns": 5,
+    "rows": 7,
+    "coveredIds": [
+      "bbq-basting-brush",
+      "bbq-charcoal-bag",
+      "bbq-charcoal-chimney",
+      "bbq-grill-fork",
+      "bbq-heatproof-mitt",
+      "bbq-skewer-bundle",
+      "bbq-slotted-turner"
+    ]
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "currentReferenceHashesPinned": true,
+    "exactPalettesRecorded": true,
+    "contactSheetCoversEveryCandidate": true,
+    "libraryVersionsAdded": false,
+    "storiesChanged": false,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "deployed": false
+  },
+  "approval": null,
+  "rollback": "Before approval, discard only this draft directory. No picture-library version or existing source is changed."
+}

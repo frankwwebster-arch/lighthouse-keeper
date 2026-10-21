@@ -51,6 +51,15 @@ whole-game restyling. The companion display proposal uses an opaque rounded
 rectangle activity panel, variable emotion balloons and unenclosed reaction
 marks.
 
+The first family continuation is prepared but intentionally not registered:
+seven remaining BBQ-food candidates and seven remaining BBQ-tool candidates
+are isolated into two immutable V1 packs with fixed-palette 256 × 256 RGBA
+components, pinned prior hashes, prompt/rejection records, deterministic
+verification and light/dark/64 px contact sheets. All 14 are proposed V2
+versions awaiting Frank's contact-sheet approval. The shared library therefore
+still has 305 pictures and 319 versions, and no story, current pointer,
+`src/activityStories/` file, approved asset or production/runtime art changed.
+
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 
 ## Not built yet (agreed design)

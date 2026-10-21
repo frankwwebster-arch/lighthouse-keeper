@@ -40,6 +40,18 @@ balloons may vary their contour; immediate reaction/motion marks may appear
 unenclosed around the Keeper or object. Claude still owns the engine/panel
 implementation under `src/activityStories/`; Codex owns the picture art.
 
+The first continuation gate is ready for Frank's review (21 October 2026).
+`art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/` contains the
+seven unconverted `bbq` pictures and
+`art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/` contains the
+seven unconverted `bbq-tools` pictures. Both have five-column prior/current,
+light, dark and 64 px contact sheets plus deterministic verification through
+`scripts/build_activity_story_ligne_claire_bbq_family_2026_10_21_v1.py`.
+These are proposed V2 versions only. Do not run
+`activity-stories:add-picture` until Frank approves the relevant sheet; the
+library remains at 305 pictures and 319 immutable versions, with every prior
+current still selected.
+
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 
 Frank has authorised an exhaustive, reversible audit and redraft programme for

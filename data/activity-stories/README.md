@@ -33,6 +33,18 @@ rounded-rectangle activity panel / expressive emotion-envelope / free reaction
 layer grammar are in
 `docs/CODEX_PROMPT_BUBBLE_STORIES_LIGNE_CLAIRE_PILOT_2026-10-21.md`.
 
+**First family continuation gate (21 October 2026):** the seven remaining
+`bbq` pictures and seven remaining `bbq-tools` pictures now have separate,
+review-only ligne-claire V1 packs at
+`art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/` and
+`art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/`. Each pack
+pins the prior-current hashes and includes deterministic 256 px candidates,
+prompt/rejection provenance, a verifier and a five-column light/dark/game-scale
+contact sheet. The 14 candidates are proposed V2 versions only: they are not
+registered, the library remains at 305 pictures and 319 versions, and every
+prior-current picture remains current and byte-identical until Frank approves
+a contact sheet.
+
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A
 story has no upper length, only a five-second floor. Frank sets each
