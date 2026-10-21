@@ -113,6 +113,18 @@ as current V2 versions, taking the catalogue to 305 pictures / 365 immutable
 versions. Every V1 remains byte-identical and selectable. No story definition
 or `src/activityStories/` file changed.
 
+**Baking, eggs and mixing review gate (21 October 2026):** the immutable pack
+at `art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/`
+continues Food and meals with nine related pictures: baking flour, eggs basket,
+hen and coop, eggs nest, butter block, mixing bowl, cracked egg, flour puff and
+whisk. Every current V1 remains the sole semantic/compositional authority and
+all candidates remain unregistered, so the catalogue stays at 305 pictures /
+365 immutable versions. The pack preserves literal egg/object counts and
+detached action marks. Its corrected hen establishes a further recipe rule:
+animals retain restrained adult anatomy and natural eyes, with feather/fibre
+detail simplified before it becomes mascot or texture rendering. No story
+definition or `src/activityStories/` file changed.
+
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A
 story has no upper length, only a five-second floor. Frank sets each

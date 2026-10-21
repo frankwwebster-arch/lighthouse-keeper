@@ -1,0 +1,605 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
+  "set": "activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1",
+  "status": "review-gate-awaiting-approval",
+  "created": "2026-10-21",
+  "tool": "built-in image generation plus deterministic fixed-palette normalisation",
+  "family": "baking-eggs-mixing",
+  "semanticSet": "nine related flour, egg, butter and mixing pictures from the Food and meals menu group",
+  "styleChampions": {
+    "washing-plate": "living hand-drawn shape and controlled minor imperfection",
+    "sandwich-tomato": "flat colour economy and selective readable detail",
+    "repair-toolbox": "construction, detail hierarchy and confident object presence"
+  },
+  "evolvingRecipe": "Observational ligne claire, not cartoon: preserve literal counts, construction, overlap, viewpoint and state; use lively mostly-even near-black contour, flat opaque spot colour, minimal decisive interior lines and controlled human irregularity. For animals, keep adult anatomy and a restrained natural eye; simplify feather or fibre detail before it becomes mascot or texture rendering.",
+  "preservationRule": "Treat every current V1 as sole semantic and compositional authority. Preserve literal objects and counts, ingredient state, construction, relative arrangement, broad silhouette and detached action marks; style references never override content.",
+  "visibleAlphaThreshold": 8,
+  "components": {
+    "baking-flour": {
+      "family": "baking",
+      "label": "Baking flour",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one open folded flour sack, one filled adult wooden scoop at front-right, and the current loose flour pile and scattered grains",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/baking-flour.png",
+      "currentReferenceSha256": "80a4ec6ed2e1a4e9fb898c937f1c9d80ddd2239d27261358e4bc18e6433ce830",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/source/baking-flour-source.png",
+      "sourceSha256": "8b67eb1755796bcf8d88db1e9ca29d3c61ffd61e4109c1e6d70a63e1bd62b5c8",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-059de055-5dc7-4c14-816e-6c43e28b0dab.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#f6cd87",
+        "#e7a638",
+        "#e88b2d",
+        "#a65f2a",
+        "#744128"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/baking-flour.png",
+      "sha256": "d9c1f1b0b3490fc43eb580947ec57756d96d9e0d01866161356a9ddf48d75802",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        81,
+        184,
+        1188,
+        1093
+      ],
+      "normalisedVisibleSize": [
+        216,
+        177
+      ],
+      "normalisedOffset": [
+        20,
+        39
+      ],
+      "bounds": [
+        20,
+        39,
+        236,
+        216
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "eggs-basket": {
+      "family": "eggs",
+      "label": "Eggs basket",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one low woven basket with one arched braided handle, exactly four visible eggs, one two-blue-stripe cream cloth and the side fastening",
+      "currentReferenceFile": "art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/eggs-basket.png",
+      "currentReferenceSha256": "7dddec98a124dc65bf908a7e45068c7fc0bd86c4c3645071d6b848f4f4776b76",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/source/eggs-basket-source.png",
+      "sourceSha256": "5de0c8c01aae39f90c109210d225f4add7516f5a78cdc88bf312f06ffae2889d",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-4ec996fb-5b02-4d8d-91ce-1c4b8aee79a6.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#f6cd87",
+        "#e7a638",
+        "#e88b2d",
+        "#a65f2a",
+        "#744128",
+        "#1870a6",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/eggs-basket.png",
+      "sha256": "e4238a4e53bb96296d7019979dabf04a3f21807ef1fd42c51c0be4c178b23394",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        92,
+        91,
+        1162,
+        1166
+      ],
+      "normalisedVisibleSize": [
+        215,
+        216
+      ],
+      "normalisedOffset": [
+        20,
+        20
+      ],
+      "bounds": [
+        20,
+        20,
+        235,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "eggs-hen-coop": {
+      "family": "eggs",
+      "label": "Eggs hen coop",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one adult brown-and-cream hen in front-left of one small blue-green pitched-roof coop with dark doorway and spilling straw",
+      "currentReferenceFile": "art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/eggs-hen-coop.png",
+      "currentReferenceSha256": "4c5c10ba6212cdf35c695b384f30dc52c18e5b1f13737aa4a282b8bff425c50d",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/source/eggs-hen-coop-source.png",
+      "sourceSha256": "f514800ea8362e22af5c315e462c4f209a8fc8c5d250ed943b9e7e40fe630a75",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-90f3960e-2239-4c71-8b86-d626805a09f1.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#f6cd87",
+        "#e7a638",
+        "#e88b2d",
+        "#a65f2a",
+        "#744128",
+        "#e84833",
+        "#c32b37",
+        "#1870a6",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/eggs-hen-coop.png",
+      "sha256": "5171bf1b915a41328b1677216e37672262396d0abe8d0bcc8f6e3c5bc2422f5f",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        93,
+        123,
+        1177,
+        1171
+      ],
+      "normalisedVisibleSize": [
+        216,
+        209
+      ],
+      "normalisedOffset": [
+        20,
+        23
+      ],
+      "bounds": [
+        20,
+        23,
+        236,
+        232
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "eggs-nest": {
+      "family": "eggs",
+      "label": "Eggs nest",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one compact shallow straw nest with exactly four visible eggs, two warm brown and two cream, in the current overlap",
+      "currentReferenceFile": "art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/eggs-nest.png",
+      "currentReferenceSha256": "e863dbed7c72829c10a33ae89acbe588b47f4d385f8a1bfbaca474e0864bf349",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/source/eggs-nest-source.png",
+      "sourceSha256": "455de52901dbb8b6cfa1bf95b3260f442a260bd5c578a59680775deb4737eadf",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-768ca883-a831-4a05-9bc8-3f40cc4d75c5.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#f6cd87",
+        "#e7a638",
+        "#e88b2d",
+        "#a65f2a",
+        "#744128"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/eggs-nest.png",
+      "sha256": "6b4245412d1b2ab88bc47c7c543e3a1a61548ce4b043a64412f2efc5eca35d05",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        88,
+        197,
+        1187,
+        1056
+      ],
+      "normalisedVisibleSize": [
+        216,
+        169
+      ],
+      "normalisedOffset": [
+        20,
+        43
+      ],
+      "bounds": [
+        20,
+        43,
+        236,
+        212
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "ingredient-butter-block": {
+      "family": "ingredient",
+      "label": "Butter",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one large golden butter block and exactly one thick front-right slice on one opened cream wrapper with dark-blue underside",
+      "currentReferenceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/ingredient-butter-block.png",
+      "currentReferenceSha256": "0dcf64e538831b23f10de0de4f2a773b84271470417c1908642b11fc0c847e59",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/source/ingredient-butter-block-source.png",
+      "sourceSha256": "bdf79d496b1719b5d11df5f328aeefdf5901c7d7f61cb6f26f5bf4371afd2024",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-8ff9b684-0b93-400e-b0f6-8447d7c50fab.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#f6cd87",
+        "#f2c94c",
+        "#e7a638",
+        "#1870a6",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/ingredient-butter-block.png",
+      "sha256": "00bf760c845df1c0ed3f6be761d0ce13cddcfaa8fb1b540e0d2744d6ff15b6d1",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        92,
+        254,
+        1178,
+        1012
+      ],
+      "normalisedVisibleSize": [
+        216,
+        151
+      ],
+      "normalisedOffset": [
+        20,
+        52
+      ],
+      "bounds": [
+        20,
+        52,
+        236,
+        203
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "mixing-bowl": {
+      "family": "mixing",
+      "label": "Mixing bowl",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one low cream bowl with two blue bands, orange spiral batter, two detached left splash shapes and one small right-side batter dot",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-bowl.png",
+      "currentReferenceSha256": "2cae4495779bdd4da3c9a1d0875b870a47cda30419f43555544616bc3052ef9a",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/source/mixing-bowl-source.png",
+      "sourceSha256": "b50204f1196d153bdff97605031f1f811486fb60b89ed84190f1af50b4bfa483",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-9f989e6e-dcbb-4cfb-b270-2f59f5982207.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#f6cd87",
+        "#e88b2d",
+        "#e7a638",
+        "#a65f2a",
+        "#1870a6",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/mixing-bowl.png",
+      "sha256": "d6acaf8de63d44cb26aed9a5fed348ffdc82dfe6976d5b2dee1163a6ada8f5c0",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        85,
+        268,
+        1189,
+        1023
+      ],
+      "normalisedVisibleSize": [
+        216,
+        148
+      ],
+      "normalisedOffset": [
+        20,
+        54
+      ],
+      "bounds": [
+        20,
+        54,
+        236,
+        202
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "mixing-egg": {
+      "family": "mixing",
+      "label": "Mixing egg",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one freshly cracked egg with exactly two shell halves, one intact yolk, pooled white and the current two detached drops",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-egg.png",
+      "currentReferenceSha256": "97d7b75641c4c580e672a7621f4d3114ef3c300d71de5439084f52522810b1df",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/source/mixing-egg-source.png",
+      "sourceSha256": "30d0026b5163c8b33cfc519a8d341910b7059eb464cb20a925cb8253b5663af3",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-846c57a3-8d00-4491-ad3c-b331120c16da.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#f6cd87",
+        "#f2c94c",
+        "#e7a638",
+        "#e88b2d",
+        "#a65f2a"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/mixing-egg.png",
+      "sha256": "b8cdd2f82a11b8f5a8163ae96c5a7809bcb1b23c17696a0f75f689c60512cf59",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        98,
+        341,
+        1186,
+        924
+      ],
+      "normalisedVisibleSize": [
+        216,
+        116
+      ],
+      "normalisedOffset": [
+        20,
+        70
+      ],
+      "bounds": [
+        20,
+        70,
+        236,
+        186
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "mixing-flour": {
+      "family": "mixing",
+      "label": "Mixing flour",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one compact overlapping-lobe flour puff, the current detached-dot field and exactly two dark-blue upper-right emphasis rays",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-flour.png",
+      "currentReferenceSha256": "5734cdf3a8b777e10bb9a1ecb85d97029a28f2f4aff8d40e1385fcfbb6ee6d09",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/source/mixing-flour-source.png",
+      "sourceSha256": "dd69b28ee9b4ab5ae64c3661a01bb1079b419e8183dcf641a2869824b3ac016f",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-a4738f53-83d7-4e0d-bb98-e883f701b382.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#f6cd87",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/mixing-flour.png",
+      "sha256": "050fe21b2320d80cb07b174b62ca5759886d02d24db5c4d25149b1804b6825e1",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        100,
+        256,
+        1184,
+        1014
+      ],
+      "normalisedVisibleSize": [
+        216,
+        151
+      ],
+      "normalisedOffset": [
+        20,
+        52
+      ],
+      "bounds": [
+        20,
+        52,
+        236,
+        203
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "mixing-whisk": {
+      "family": "mixing",
+      "label": "Mixing whisk",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one diagonal adult balloon whisk with tapered wooden handle, golden ferrule, dark-blue wire cage, batter coating and separate drops",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-whisk.png",
+      "currentReferenceSha256": "8246369441e5bfe99eea3c60f746e6204b9282ddca0a106aa5cfe22a38eb2c8c",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/source/mixing-whisk-source.png",
+      "sourceSha256": "63cb9847f5ce992bad5909260aa10fca373aa787f472a84506deccba7dc9ecb9",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-af487215-b1f7-4ca5-baf0-f3868f6ebe91.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#e7a638",
+        "#e88b2d",
+        "#a65f2a",
+        "#744128",
+        "#1870a6",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/drafts/components/mixing-whisk.png",
+      "sha256": "eecdbb8d20d0aa5dd292bb35ff18c53858ab19aa6f51376e76569991aac16b59",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        110,
+        140,
+        1205,
+        1115
+      ],
+      "normalisedVisibleSize": [
+        216,
+        192
+      ],
+      "normalisedOffset": [
+        20,
+        32
+      ],
+      "bounds": [
+        20,
+        32,
+        236,
+        224
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejected": [
+    {
+      "file": "rejected/eggs-hen-coop-cartoon-eye-v1.png",
+      "cache": "exec-35f38e9d-43fd-4d09-a12e-05be1bca5f16.png",
+      "reason": "The construction was sound, but the enlarged eye and dense feather treatment drifted toward mascot/cartoon language; corrected with a restrained adult eye and simpler interior detail.",
+      "sha256": "0b50fe55f16e380e678839e0acfbfe57922a7a0e0a9eff103872ff4771ddeb75"
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/evidence/current-vs-ligne-claire-contact-sheet.png",
+    "sha256": "ded95ab7963821a1cde4bda0c31d89658074b21e94d855c52f796aaa4af8902f",
+    "columns": 5,
+    "rows": 9,
+    "coveredIds": [
+      "baking-flour",
+      "eggs-basket",
+      "eggs-hen-coop",
+      "eggs-nest",
+      "ingredient-butter-block",
+      "mixing-bowl",
+      "mixing-egg",
+      "mixing-flour",
+      "mixing-whisk"
+    ]
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "currentReferenceHashesPinned": true,
+    "exactPalettesRecorded": true,
+    "contactSheetCoversEveryCandidate": true,
+    "libraryVersionsAdded": false,
+    "storyChanged": false,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "deployed": false
+  },
+  "approval": null,
+  "nextStep": "Frank reviews this exact nine-picture contact sheet. Register no candidate before explicit approval.",
+  "rollback": "Before approval, discard this pack alone. After approval, each V1 remains immutable and can be reselected independently."
+}

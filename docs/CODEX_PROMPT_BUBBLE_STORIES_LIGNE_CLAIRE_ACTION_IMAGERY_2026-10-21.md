@@ -86,6 +86,18 @@ forbids accepting correct-looking pixels when provenance is wrong and treats
 speckling, patina and decorative distress as modelling rather than useful
 hand-drawn imperfection.
 
+**Seventh family review gate (21 October 2026):** nine related baking, egg,
+butter and mixing pictures are isolated at
+`art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/`:
+`baking-flour`, `eggs-basket`, `eggs-hen-coop`, `eggs-nest`,
+`ingredient-butter-block`, `mixing-bowl`, `mixing-egg`, `mixing-flour` and
+`mixing-whisk`. They remain unregistered, so the library stays at 305 pictures
+/ 365 versions. The pack preserves literal object/egg counts, ingredient state
+and detached action marks. A first hen pass was rejected for mascot-like eye
+scale and dense feather texture. The corrected pass adds this recipe rule:
+animals need restrained adult anatomy and natural expression, with feather or
+fibre detail simplified before it becomes texture rendering.
+
 ## Ready-to-paste prompt
 
 ```text
@@ -112,7 +124,9 @@ Objective
   are complete. All eight hand tools have approved current V2s, including
   Frank's explicitly selected fuller spirit level; every V1 remains selectable.
   The nine-picture cooking-core pack is approved and registered as current V2s.
-  Continue later work in fresh immutable family packs.
+  The nine-picture baking/eggs/mixing pack is the current unregistered review
+  gate; do not register it before Frank's verdict. Continue later work in fresh
+  immutable family packs.
 - The programme covers action objects, ingredients, tools, pictorial states,
   activity marks, emotions and independent comic reaction punctuation used by
   Bubble stories.

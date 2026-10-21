@@ -107,6 +107,16 @@ corrections and the surface-only knife/pan corrections. Claude's story/runtime
 is unchanged. Continue the remaining Food and meals assets in a fresh,
 tightly related immutable review pack.
 
+The current unregistered Food and meals gate is
+`art/drafts/activity-story-ligne-claire-baking-eggs-mixing-2026-10-21-v1/`.
+It covers `baking-flour`, three egg-provenance pictures, butter block and four
+mixing pictures. The catalogue remains 305 pictures / 365 versions. Preserve
+literal counts, ingredient state and detached action marks. The first hen pass
+was rejected for an enlarged mascot-like eye and dense feather treatment; the
+corrected candidate uses restrained adult anatomy, natural expression and
+simplified interior detail. Register nothing before Frank approves the exact
+nine-row contact sheet. Claude's stories/runtime remain unchanged.
+
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 
 Frank has authorised an exhaustive, reversible audit and redraft programme for
