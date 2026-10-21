@@ -459,18 +459,24 @@ and historical delivery:
 `docs/KITCHEN_LIGNE_CLAIRE_SWEEP_V1_2026-10-21.md`.
 
 Kitchen Cabinet Ligne-Claire V2 at
-`/keeper-review/kitchen-cabinet-ligne-claire-v2/` is the active, deliberately
-narrow correction. It includes only eight Cabinet A/B exposed/joined variants
-and five join/healing layers; all appliances, the sink and small objects are
-excluded. Every source/candidate pair retains exact canvas, alpha, bounds and
-padding, plus independently hash-pinned worktop, cabinet-body, hardware, dark
-construction-line and neutral shape masks. V2 adds no contour pixels. The V38
-and V41 catalogues, verifiers and modular join standard remain byte-identical,
-retaining independent movement, occupied-bay swaps, exact snap origins and the
-720-layout pair-aware healing process. Three moved/separated room proofs are
-included. V2 is unapproved, unregistered, unpromoted and unwired with immediate
-directory-only rollback. Delivery:
-`docs/KITCHEN_CABINET_LIGNE_CLAIRE_V2_2026-10-21.md`.
+`/keeper-review/kitchen-cabinet-ligne-claire-v2/` is rejected immutable history.
+Its narrow scope left the fridge worktop and sink cabinet outside the cabinet
+palette, and its nearest-neighbour/CSS pixelated evidence introduced a false
+jagged presentation. The rejection and exact V2 hashes are pinned at
+`docs/review/kitchen-cabinet-ligne-claire-v2-rejection-2026-10-21.json`.
+
+Kitchen Fitted-Cabinet Ligne-Claire V3 at
+`/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/` is the active review
+candidate. It includes eight Cabinet A/B variants, two fridge states, three
+sink bases and five compositor healing layers. One shared material palette now
+covers every fitted-family worktop, body and fixture while every exact source
+interior line and semantic mask remains present. Smooth contact-sheet and web
+interpolation replace V2's pixelated enlargement. V19/V37/V38/V41 catalogues,
+verifiers, effects and the modular standard are byte-pinned, retaining exact
+dimensions, anchors, movement locks, occupied-bay swaps and the 720-layout
+healing process. V3 is unapproved, unregistered, unpromoted and unwired with
+immediate directory-only rollback. Delivery:
+`docs/KITCHEN_FITTED_CABINET_LIGNE_CLAIRE_V3_2026-10-21.md`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

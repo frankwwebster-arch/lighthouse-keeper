@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "set": "kitchen-fitted-cabinet-ligne-claire-v3",
+  "page": {
+    "path": "public/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/index.html",
+    "sha256": "159db7b90c3ad48b3e1bc76ca73fdf42f98bc5ba9f4be2e02a90c1deef6ff516",
+    "bytes": 14139
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/cabinets--cabinet-a-le-re.png": {
+      "sha256": "ead4922bbec6070afdc7bf2db7ae184d3abe6cd3901d3454ae7876822852608a",
+      "extension": ".png",
+      "bytes": 5469,
+      "object": "review-archive/objects/ea/ead4922bbec6070afdc7bf2db7ae184d3abe6cd3901d3454ae7876822852608a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ea/ead4922bbec6070afdc7bf2db7ae184d3abe6cd3901d3454ae7876822852608a.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/cabinets--cabinet-a-le-rj.png": {
+      "sha256": "80cbefc9682886da4e59c4130170260e8f8d6e12999a73deb780a195ed3e62df",
+      "extension": ".png",
+      "bytes": 5826,
+      "object": "review-archive/objects/80/80cbefc9682886da4e59c4130170260e8f8d6e12999a73deb780a195ed3e62df.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/80/80cbefc9682886da4e59c4130170260e8f8d6e12999a73deb780a195ed3e62df.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/cabinets--cabinet-a-lj-re.png": {
+      "sha256": "e037cee106efcc38d568e51d0c0665b86c872bff1d30c8bbe9d6a1897cfdb125",
+      "extension": ".png",
+      "bytes": 5871,
+      "object": "review-archive/objects/e0/e037cee106efcc38d568e51d0c0665b86c872bff1d30c8bbe9d6a1897cfdb125.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e0/e037cee106efcc38d568e51d0c0665b86c872bff1d30c8bbe9d6a1897cfdb125.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/cabinets--cabinet-a-lj-rj.png": {
+      "sha256": "debdba3d49a9a631f788538cff3f5480713ffe27358c3fee6bfbf871c2428417",
+      "extension": ".png",
+      "bytes": 5713,
+      "object": "review-archive/objects/de/debdba3d49a9a631f788538cff3f5480713ffe27358c3fee6bfbf871c2428417.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/de/debdba3d49a9a631f788538cff3f5480713ffe27358c3fee6bfbf871c2428417.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/cabinets--cabinet-b-le-re.png": {
+      "sha256": "98f029f6e34385a7f3cadbbe97006a2cdcc231056996c1852e928e0c9169ea18",
+      "extension": ".png",
+      "bytes": 5438,
+      "object": "review-archive/objects/98/98f029f6e34385a7f3cadbbe97006a2cdcc231056996c1852e928e0c9169ea18.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/98f029f6e34385a7f3cadbbe97006a2cdcc231056996c1852e928e0c9169ea18.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/cabinets--cabinet-b-le-rj.png": {
+      "sha256": "7ee338ce6c54be300d239b4856c0a85eb87d33a2585a50933e4ffaf8af88ac87",
+      "extension": ".png",
+      "bytes": 5859,
+      "object": "review-archive/objects/7e/7ee338ce6c54be300d239b4856c0a85eb87d33a2585a50933e4ffaf8af88ac87.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/7e/7ee338ce6c54be300d239b4856c0a85eb87d33a2585a50933e4ffaf8af88ac87.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/cabinets--cabinet-b-lj-re.png": {
+      "sha256": "ee626220ceaf122a4b30773dfaa07e9de3d062d3014820d35b3e82256efd2643",
+      "extension": ".png",
+      "bytes": 5778,
+      "object": "review-archive/objects/ee/ee626220ceaf122a4b30773dfaa07e9de3d062d3014820d35b3e82256efd2643.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ee/ee626220ceaf122a4b30773dfaa07e9de3d062d3014820d35b3e82256efd2643.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/cabinets--cabinet-b-lj-rj.png": {
+      "sha256": "9d7bc802f1eefab2974aef460afcaf7e3f596d7e4a09f303bd8f1a4d6485d4a2",
+      "extension": ".png",
+      "bytes": 5682,
+      "object": "review-archive/objects/9d/9d7bc802f1eefab2974aef460afcaf7e3f596d7e4a09f303bd8f1a4d6485d4a2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9d/9d7bc802f1eefab2974aef460afcaf7e3f596d7e4a09f303bd8f1a4d6485d4a2.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/evidence--cabinets-current-vs-candidate.png": {
+      "sha256": "70d0eca1f2ffcb3d3dda4936cae3be1a148ae291158ce8c3d8542c038aa5ff5b",
+      "extension": ".png",
+      "bytes": 788459,
+      "object": "review-archive/objects/70/70d0eca1f2ffcb3d3dda4936cae3be1a148ae291158ce8c3d8542c038aa5ff5b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/70/70d0eca1f2ffcb3d3dda4936cae3be1a148ae291158ce8c3d8542c038aa5ff5b.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/evidence--dislocated-contiguous-candidate-room.png": {
+      "sha256": "afe970afdf7570a76537ede37d5c0fd21c78506129f6d68be81c740232470dfb",
+      "extension": ".png",
+      "bytes": 33782,
+      "object": "review-archive/objects/af/afe970afdf7570a76537ede37d5c0fd21c78506129f6d68be81c740232470dfb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/af/afe970afdf7570a76537ede37d5c0fd21c78506129f6d68be81c740232470dfb.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/evidence--fitted-family-move-snap-heal-current-vs-candidate.png": {
+      "sha256": "bce182cb3511e4ae69bcf4f814abaf75690898e29dd52d0b687c1e442340656b",
+      "extension": ".png",
+      "bytes": 224319,
+      "object": "review-archive/objects/bc/bce182cb3511e4ae69bcf4f814abaf75690898e29dd52d0b687c1e442340656b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bc/bce182cb3511e4ae69bcf4f814abaf75690898e29dd52d0b687c1e442340656b.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/evidence--fridge-current-vs-candidate.png": {
+      "sha256": "cf3d652a3b1f644e2eb79f72040bdc96002f01e2608dc1baff2486ee73803a10",
+      "extension": ".png",
+      "bytes": 188954,
+      "object": "review-archive/objects/cf/cf3d652a3b1f644e2eb79f72040bdc96002f01e2608dc1baff2486ee73803a10.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cf/cf3d652a3b1f644e2eb79f72040bdc96002f01e2608dc1baff2486ee73803a10.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/evidence--healing-current-vs-candidate.png": {
+      "sha256": "e5ee6dc2d0b265cdb2325401129b4b2fe6b2e9bbe030d2163dc934022c3bf54e",
+      "extension": ".png",
+      "bytes": 41306,
+      "object": "review-archive/objects/e5/e5ee6dc2d0b265cdb2325401129b4b2fe6b2e9bbe030d2163dc934022c3bf54e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e5/e5ee6dc2d0b265cdb2325401129b4b2fe6b2e9bbe030d2163dc934022c3bf54e.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/evidence--origin-contiguous-candidate-room.png": {
+      "sha256": "6cd70656785a37908fdc9dd55204bd09954e2c07a2ba5a982784a116aa110eaa",
+      "extension": ".png",
+      "bytes": 33659,
+      "object": "review-archive/objects/6c/6cd70656785a37908fdc9dd55204bd09954e2c07a2ba5a982784a116aa110eaa.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6c/6cd70656785a37908fdc9dd55204bd09954e2c07a2ba5a982784a116aa110eaa.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/evidence--separated-exposed-candidate-room.png": {
+      "sha256": "6c0e18adcf101be945c0ec605b9eee7b9aed44a52f70574a92170facbfa55d3f",
+      "extension": ".png",
+      "bytes": 34430,
+      "object": "review-archive/objects/6c/6c0e18adcf101be945c0ec605b9eee7b9aed44a52f70574a92170facbfa55d3f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/6c/6c0e18adcf101be945c0ec605b9eee7b9aed44a52f70574a92170facbfa55d3f.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/evidence--sink-current-vs-candidate.png": {
+      "sha256": "65060921dd95bd98e0ab26c1a40a5f35fef9c861daf13cb598891490125ab6c8",
+      "extension": ".png",
+      "bytes": 262509,
+      "object": "review-archive/objects/65/65060921dd95bd98e0ab26c1a40a5f35fef9c861daf13cb598891490125ab6c8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/65/65060921dd95bd98e0ab26c1a40a5f35fef9c861daf13cb598891490125ab6c8.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/evidence--style-calibration-non-authoritative.png": {
+      "sha256": "4c60f1bc19230f36494093e9125c75cb37f5909020431ef02a0859f71f87eaf4",
+      "extension": ".png",
+      "bytes": 1373692,
+      "object": "review-archive/objects/4c/4c60f1bc19230f36494093e9125c75cb37f5909020431ef02a0859f71f87eaf4.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4c/4c60f1bc19230f36494093e9125c75cb37f5909020431ef02a0859f71f87eaf4.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/fridge--fridge-broken-hinge-failed.png": {
+      "sha256": "c30e76fe857b10f2494be87c32152ae305545a10305db8df61231147054f329b",
+      "extension": ".png",
+      "bytes": 6062,
+      "object": "review-archive/objects/c3/c30e76fe857b10f2494be87c32152ae305545a10305db8df61231147054f329b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c3/c30e76fe857b10f2494be87c32152ae305545a10305db8df61231147054f329b.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/fridge--fridge-standard.png": {
+      "sha256": "14bd88c1219accf8258958b7a8c70f0e31f84a06401b802e503fa7645377b9b3",
+      "extension": ".png",
+      "bytes": 4223,
+      "object": "review-archive/objects/14/14bd88c1219accf8258958b7a8c70f0e31f84a06401b802e503fa7645377b9b3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/14/14bd88c1219accf8258958b7a8c70f0e31f84a06401b802e503fa7645377b9b3.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/healing--countertop-join-cap-template.png": {
+      "sha256": "1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96",
+      "extension": ".png",
+      "bytes": 137,
+      "object": "review-archive/objects/10/1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/10/1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/healing--countertop-triangle-underlay-template.png": {
+      "sha256": "1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96",
+      "extension": ".png",
+      "bytes": 137,
+      "object": "review-archive/objects/10/1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/10/1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/healing--join-body-backfill-template.png": {
+      "sha256": "a6eb7269c068986f38ba771f48e77266b91899b611d31cdbc068c48dfd5eec64",
+      "extension": ".png",
+      "bytes": 239,
+      "object": "review-archive/objects/a6/a6eb7269c068986f38ba771f48e77266b91899b611d31cdbc068c48dfd5eec64.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a6/a6eb7269c068986f38ba771f48e77266b91899b611d31cdbc068c48dfd5eec64.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/healing--neighbour-seam-cleanup-left.png": {
+      "sha256": "c7fb536832e470a86d3b1e6f6342ba9984d09c30cdd35aca1dfba6a07a3d6430",
+      "extension": ".png",
+      "bytes": 136,
+      "object": "review-archive/objects/c7/c7fb536832e470a86d3b1e6f6342ba9984d09c30cdd35aca1dfba6a07a3d6430.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c7/c7fb536832e470a86d3b1e6f6342ba9984d09c30cdd35aca1dfba6a07a3d6430.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/healing--neighbour-seam-cleanup-right.png": {
+      "sha256": "b07982a45d3e8cca1ccc1f45b681a5ba4a6d35de6d8592adf863a7422da6af1f",
+      "extension": ".png",
+      "bytes": 140,
+      "object": "review-archive/objects/b0/b07982a45d3e8cca1ccc1f45b681a5ba4a6d35de6d8592adf863a7422da6af1f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b0/b07982a45d3e8cca1ccc1f45b681a5ba4a6d35de6d8592adf863a7422da6af1f.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/sink--sink-cabinet-broken-base.png": {
+      "sha256": "fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2",
+      "extension": ".png",
+      "bytes": 6896,
+      "object": "review-archive/objects/fe/fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fe/fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/sink--sink-cabinet-on-base.png": {
+      "sha256": "fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2",
+      "extension": ".png",
+      "bytes": 6896,
+      "object": "review-archive/objects/fe/fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fe/fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/assets/sink--sink-cabinet-standard.png": {
+      "sha256": "fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2",
+      "extension": ".png",
+      "bytes": 6896,
+      "object": "review-archive/objects/fe/fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/fe/fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2.png"
+    },
+    "/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/manifest.json": {
+      "sha256": "090ea9021ffe520ecc618395fe7b5cb0305abe70b9765d504a4029eeb685e162",
+      "extension": ".json",
+      "bytes": 28492,
+      "object": "review-archive/objects/09/090ea9021ffe520ecc618395fe7b5cb0305abe70b9765d504a4029eeb685e162.json",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/09/090ea9021ffe520ecc618395fe7b5cb0305abe70b9765d504a4029eeb685e162.json"
+    }
+  }
+}

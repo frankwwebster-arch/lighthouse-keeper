@@ -727,15 +727,19 @@ See
 [`docs/KITCHEN_LIGNE_CLAIRE_ART_RECIPE_2026-10-21.md`](docs/KITCHEN_LIGNE_CLAIRE_ART_RECIPE_2026-10-21.md)
 and
 [`docs/KITCHEN_LIGNE_CLAIRE_SWEEP_V1_2026-10-21.md`](docs/KITCHEN_LIGNE_CLAIRE_SWEEP_V1_2026-10-21.md).
-Kitchen Cabinet Ligne-Claire V2 is the narrower correction at
-`/keeper-review/kitchen-cabinet-ligne-claire-v2/`. It proposes only the eight
-Cabinet A/B edge variants and five compositor healing layers. V2 adds exact
-worktop, cabinet-body, hardware and construction-line shape masks to the canvas
-and alpha locks, performs no contour dilation, and pins the unchanged V38/V41
-movement, swap, snap and 720-layout healing contracts. Appliances, sink and
-small objects are out of scope. V2 is reversible and remains unregistered and
-unwired pending Frank's review. See
-[`docs/KITCHEN_CABINET_LIGNE_CLAIRE_V2_2026-10-21.md`](docs/KITCHEN_CABINET_LIGNE_CLAIRE_V2_2026-10-21.md).
+Kitchen Cabinet Ligne-Claire V2 at
+`/keeper-review/kitchen-cabinet-ligne-claire-v2/` is rejected immutable history:
+its cabinet-only scope left the fridge worktop and sink cabinet outside the new
+family palette, and its review enlargement added a false pixelated character.
+Kitchen Fitted-Cabinet Ligne-Claire V3 is the clean successor at
+`/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/`. It coordinates all
+eight Cabinet A/B variants, both fridge states, all three sink bases and the
+five healing layers under one palette, retains every interior construction mark
+and exact semantic mask, and uses smooth inspection rendering. V19/V37/V38/V41
+movement, state, ownership and 720-layout healing contracts are unchanged and
+hash-pinned. V3 is reversible and remains unregistered and unwired pending
+Frank's review. See
+[`docs/KITCHEN_FITTED_CABINET_LIGNE_CLAIRE_V3_2026-10-21.md`](docs/KITCHEN_FITTED_CABINET_LIGNE_CLAIRE_V3_2026-10-21.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

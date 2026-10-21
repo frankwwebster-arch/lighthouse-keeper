@@ -4,8 +4,16 @@ Date: 21 October 2026
 
 Review: `/keeper-review/kitchen-cabinet-ligne-claire-v2/`
 
-Status: complete reversible cabinet-only candidate; awaiting Frank's visual
-review; not approved, registered, promoted or wired.
+Status: rejected by Frank on 21 October 2026; never approved, registered,
+promoted or wired. Preserved as immutable review history.
+
+Frank rejected V2 because recolouring only Cabinet A/B left the fridge worktop
+and sink cabinet outside the fitted-family palette. The V2 contact sheets and
+web reviewer also used nearest-neighbour/pixelated enlargement, which made the
+result appear more jagged. The rejection is pinned in
+`docs/review/kitchen-cabinet-ligne-claire-v2-rejection-2026-10-21.json`.
+The clean successor is Kitchen Fitted-Cabinet Ligne-Claire V3 at
+`/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/`.
 
 ## Why V2 exists
 
