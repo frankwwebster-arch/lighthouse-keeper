@@ -15,11 +15,11 @@
   ],
   "largeDataThresholdBytes": 24576,
   "stats": {
-    "setCount": 198,
-    "referenceCount": 4755,
-    "uniqueObjectCount": 2904,
-    "logicalBytes": 380206358,
-    "uniqueBytes": 216956829,
+    "setCount": 199,
+    "referenceCount": 4757,
+    "uniqueObjectCount": 2906,
+    "logicalBytes": 381753263,
+    "uniqueBytes": 218503734,
     "deduplicatedBytes": 163249529
   },
   "legacyPaths": {
@@ -23822,6 +23822,20 @@
       "bytes": 500059,
       "object": "review-archive/objects/e4/e4ba03841d8bd53a78620effd8655bbbc7b833f61465a50a8ed12e77c0f43aba.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e4/e4ba03841d8bd53a78620effd8655bbbc7b833f61465a50a8ed12e77c0f43aba.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v7/assets/oven-on-user-confirmed-visual-authority.png": {
+      "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538",
+      "extension": ".png",
+      "bytes": 1065901,
+      "object": "review-archive/objects/0a/0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0a/0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v7/assets/oven-v6-vs-v7-contact.png": {
+      "sha256": "4f64980a805a965eaa5ed271301ef42b8e2d756be66c9af19a166014aceede94",
+      "extension": ".png",
+      "bytes": 481004,
+      "object": "review-archive/objects/4f/4f64980a805a965eaa5ed271301ef42b8e2d756be66c9af19a166014aceede94.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4f/4f64980a805a965eaa5ed271301ef42b8e2d756be66c9af19a166014aceede94.png"
     },
     "/keeper-review/kitchen-cabinet-join-backfill-v21/assets/cabinet-run-v11-exact.png": {
       "sha256": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",

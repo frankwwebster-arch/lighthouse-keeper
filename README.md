@@ -770,18 +770,18 @@ Delivery history:
 [`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V2_2026-10-21.md`](docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V2_2026-10-21.md).
 The successful correction is
 [`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V3_2026-10-21.md`](docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V3_2026-10-21.md).
-Kitchen Built-In State Ligne-Claire V6 is the new sharp-redraw review candidate
-at `/keeper-review/kitchen-built-in-state-ligne-claire-v6/`. It replaces V4's
-low-resolution colour remap with genuinely authored 8× masters, one controlled
-native registration and the exact matching source alpha. Its 17 files cover
-oven On/Broken lighting states and strips plus every dishwasher On/Broken
-healing edge. Approved V3 fridge, sink, cabinets and healing layers are reused
-byte-for-byte; sink placement, 4 fps timing, movement locks, repair unlocks,
-effects, interactions and all 720 healing layouts remain unchanged and
-hash-pinned. The review uses root-absolute same-origin media paths and blocks
-its ready state until all four evidence images decode. V6 is immutable,
-reversible, unapproved, unregistered, unpromoted and unwired. See
-[`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V6_2026-10-21.md`](docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V6_2026-10-21.md).
+Kitchen Built-In State Ligne-Claire V6 is rejected. It preserved geometry and
+alpha but substituted a scripted simplified reconstruction for Frank's superb
+high-resolution oven, so passing structural tests did not preserve the chosen
+visual authority. Kitchen Oven Ligne-Claire V7 is the deliberately narrow
+recovery gate at `/keeper-review/kitchen-built-in-state-ligne-claire-v7/`.
+It hash-pins the exact preferred 1305 × 1206 RGBA file, maps that drawing to the
+unchanged 92 × 85 Oven On canvas and byte-exact source alpha, and compares it
+directly with the rejected V6 substitute. V7 does not yet propagate Broken
+states or touch the dishwasher; nothing is registered, promoted, wired or
+current. The root-absolute review route decodes both evidence images before it
+declares readiness. See
+[`docs/KITCHEN_OVEN_LIGNE_CLAIRE_V7_2026-10-21.md`](docs/KITCHEN_OVEN_LIGNE_CLAIRE_V7_2026-10-21.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

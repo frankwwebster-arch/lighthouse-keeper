@@ -99,6 +99,7 @@
     "verify:kitchen-built-in-state-ligne-claire-v4-delivery-v2": "node scripts/verify_kitchen_builtin_state_ligne_claire_v4_delivery_v2.mjs",
     "verify:kitchen-built-in-state-ligne-claire-v4-delivery-v3": "node scripts/verify_kitchen_builtin_state_ligne_claire_v4_delivery_v3.mjs",
     "verify:kitchen-built-in-state-ligne-claire-v6": "/usr/bin/python3 scripts/build_kitchen_builtin_state_ligne_claire_v6.py --verify",
+    "verify:kitchen-built-in-state-ligne-claire-v7": "/usr/bin/python3 scripts/build_kitchen_builtin_state_ligne_claire_v7.py --verify",
     "verify:kitchen-retired-v20": "node scripts/verify_retired_kitchen_reviews_v20.mjs",
     "audit:side-on-beard-occlusion": "node scripts/audit_side_on_beard_occlusion_v2.ts",
     "verify:side-on-beard-occlusion": "node scripts/verify_side_on_beard_occlusion.ts",

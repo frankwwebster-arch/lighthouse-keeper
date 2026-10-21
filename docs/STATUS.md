@@ -535,19 +535,17 @@ asset paths and SHA-256-verified same-origin responses for the exact same four
 evidence objects. It changes no artwork or behavior. Correction:
 `docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V3_2026-10-21.md`.
 
-Kitchen Built-In State Ligne-Claire V6 at
-`/keeper-review/kitchen-built-in-state-ligne-claire-v6/` is the complete
-sharp-redraw successor awaiting visual approval. Seventeen candidates are
-authored as source-locked 8× masters and registered once to each V41 authority's
-exact canvas and alpha: oven On, four Broken static states, both full 40-frame
-4 fps lighting strips, and dishwasher On/Broken bases plus all eight edge
-variants. The V3 fitted family is inherited byte-for-byte. Verifiers pin the
-unchanged sink datum, dimensions, transparency, frame isolation, movement,
-repair, interaction, effect and 720-layout healing contracts. The page uses
-root-absolute same-origin media and a four-image decode gate. V6 is immutable,
-reversible, unapproved, unregistered, unpromoted and unwired; rollback removes
-only its draft and review set. Delivery:
-`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V6_2026-10-21.md`.
+Kitchen Built-In State Ligne-Claire V6 is rejected: it passed exact canvas,
+alpha and behaviour checks but replaced Frank's preferred high-resolution oven
+with a newly scripted simplified redraw. Kitchen Oven Ligne-Claire V7 at
+`/keeper-review/kitchen-built-in-state-ligne-claire-v7/` recovers the exact
+1305 × 1206 RGBA visual authority, hash-pins it, and maps it to the unchanged
+92 × 85 Oven On canvas with byte-exact source alpha. The comparison labels the
+V6 substitution explicitly. V7 is intentionally an Oven On gate only; Broken
+states and the dishwasher remain unpropagated until the base mapping is visibly
+confirmed. Registration, promotion, selectors, runtime, dimensions, anchors,
+movement, interaction, repair and healing are unchanged. Delivery:
+`docs/KITCHEN_OVEN_LIGNE_CLAIRE_V7_2026-10-21.md`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
