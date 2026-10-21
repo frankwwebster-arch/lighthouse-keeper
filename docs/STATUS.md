@@ -436,6 +436,42 @@ itself and its current support until repaired. V45 is unapproved, unpromoted
 and unwired. Dishwasher V41, cabinetry, V42–V44, Final and runtime remain
 unchanged. Toaster and mixing-bowl work has not started.
 
+Kitchen Ligne-Claire Sweep V1 at
+`/keeper-review/kitchen-ligne-claire-sweep-v1/` is a separate coordinated
+style-only review gate and therefore does not continue or approve the earlier
+asset-by-asset construction sequence. It supplies 53 geometry-locked candidate
+files across twelve furniture/object families. The exact source canvas, alpha
+bytes, alpha bounds, padding and registration are preserved for every file;
+anchors, pivots, collisions, movement locks, support ownership, state machines,
+healing, interactions and timing remain in the unchanged hash-pinned source
+catalogues. Effect-only strips remain byte-identical; the two full-state oven
+lighting strips are translated because they contain oven pixels. Complete
+family and `772 × 224` Standard/Broken room contact sheets are present. The
+recipe also records Frank's five supplied seascape panels as the future
+flat-water, rhythmic-wave, rock-plane, weather-layer and boat-treatment
+authority without adding exterior pixels to this kitchen gate. The candidate
+is unapproved, unregistered, unpromoted and unwired, with a closed
+registration guard and immediate directory-only rollback. Frank rejected V1 on
+21 October 2026: canvas/alpha preservation alone did not keep every visible
+internal shape legible, specifically the fridge worktop and oven depth. Recipe
+and historical delivery:
+`docs/KITCHEN_LIGNE_CLAIRE_ART_RECIPE_2026-10-21.md` and
+`docs/KITCHEN_LIGNE_CLAIRE_SWEEP_V1_2026-10-21.md`.
+
+Kitchen Cabinet Ligne-Claire V2 at
+`/keeper-review/kitchen-cabinet-ligne-claire-v2/` is the active, deliberately
+narrow correction. It includes only eight Cabinet A/B exposed/joined variants
+and five join/healing layers; all appliances, the sink and small objects are
+excluded. Every source/candidate pair retains exact canvas, alpha, bounds and
+padding, plus independently hash-pinned worktop, cabinet-body, hardware, dark
+construction-line and neutral shape masks. V2 adds no contour pixels. The V38
+and V41 catalogues, verifiers and modular join standard remain byte-identical,
+retaining independent movement, occupied-bay swaps, exact snap origins and the
+720-layout pair-aware healing process. Three moved/separated room proofs are
+included. V2 is unapproved, unregistered, unpromoted and unwired with immediate
+directory-only rollback. Delivery:
+`docs/KITCHEN_CABINET_LIGNE_CLAIRE_V2_2026-10-21.md`.
+
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
 link with V6. The animation remains the exact V1/V2 six-pose motion inside its

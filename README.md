@@ -709,6 +709,33 @@ See also
 [`docs/KITCHEN_KETTLE_STANDALONE_V44_2026-10-21.md`](docs/KITCHEN_KETTLE_STANDALONE_V44_2026-10-21.md).
 See also
 [`docs/KITCHEN_KETTLE_STANDALONE_V45_2026-10-21.md`](docs/KITCHEN_KETTLE_STANDALONE_V45_2026-10-21.md).
+Kitchen Ligne-Claire Sweep V1 is the coordinated style-only successor at
+`/keeper-review/kitchen-ligne-claire-sweep-v1/`. It covers 53 current kitchen
+furniture/object files across twelve families, including all cabinet and
+dishwasher edge variants, oven full-state lighting strips, join/healing layers,
+states for the fridge, sink, kettle, toaster, bowl and bin, and the table/chair.
+Every candidate keeps the exact source canvas and byte-identical alpha channel;
+all source/candidate hashes, bounds, inherited effects and governing interaction
+catalogues are pinned. The approved `sandwich-tomato` V2 is the primary visual
+calibration, with Frank's first six supplied original comic images informing the
+codified furniture/architecture recipe and five further panels defining the
+separate seascape/island extension. The room and family contact sheets are
+complete, but V1 is deliberately unapproved, unregistered, unpromoted and
+unwired. It was rejected on 21 October 2026 because exact canvas and alpha were
+not sufficient to preserve the fridge worktop and oven depth as visible shapes.
+See
+[`docs/KITCHEN_LIGNE_CLAIRE_ART_RECIPE_2026-10-21.md`](docs/KITCHEN_LIGNE_CLAIRE_ART_RECIPE_2026-10-21.md)
+and
+[`docs/KITCHEN_LIGNE_CLAIRE_SWEEP_V1_2026-10-21.md`](docs/KITCHEN_LIGNE_CLAIRE_SWEEP_V1_2026-10-21.md).
+Kitchen Cabinet Ligne-Claire V2 is the narrower correction at
+`/keeper-review/kitchen-cabinet-ligne-claire-v2/`. It proposes only the eight
+Cabinet A/B edge variants and five compositor healing layers. V2 adds exact
+worktop, cabinet-body, hardware and construction-line shape masks to the canvas
+and alpha locks, performs no contour dilation, and pins the unchanged V38/V41
+movement, swap, snap and 720-layout healing contracts. Appliances, sink and
+small objects are out of scope. V2 is reversible and remains unregistered and
+unwired pending Frank's review. See
+[`docs/KITCHEN_CABINET_LIGNE_CLAIRE_V2_2026-10-21.md`](docs/KITCHEN_CABINET_LIGNE_CLAIRE_V2_2026-10-21.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)
