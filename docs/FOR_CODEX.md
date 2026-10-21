@@ -16,7 +16,7 @@ new current V1 `clean` mark. The immutable authoring pack is
 list exposes all four while retaining the earlier versions for undo.
 
 The picture-library completeness correction is also finished (21 October
-2026). `pictures.json` now has 305 selectable pictures and 319 immutable
+2026). `pictures.json` now has 305 selectable pictures and 333 immutable
 versions and includes all 298
 review-ready isolated source components from Activity Cloud Composer V1–V7,
 the rear-work V2/V3 callout vocabulary and every component-bearing Claude or
@@ -40,17 +40,17 @@ balloons may vary their contour; immediate reaction/motion marks may appear
 unenclosed around the Keeper or object. Claude still owns the engine/panel
 implementation under `src/activityStories/`; Codex owns the picture art.
 
-The first continuation gate is ready for Frank's review (21 October 2026).
+Frank approved the first continuation gate on 21 October 2026.
 `art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/` contains the
 seven unconverted `bbq` pictures and
 `art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/` contains the
 seven unconverted `bbq-tools` pictures. Both have five-column prior/current,
 light, dark and 64 px contact sheets plus deterministic verification through
 `scripts/build_activity_story_ligne_claire_bbq_family_2026_10_21_v1.py`.
-These are proposed V2 versions only. Do not run
-`activity-stories:add-picture` until Frank approves the relevant sheet; the
-library remains at 305 pictures and 319 immutable versions, with every prior
-current still selected.
+All 14 candidates are registered as current V2 versions. The library now has
+305 pictures and 333 immutable versions; every V1 predecessor remains
+byte-identical and selectable. The registration changed no story definition or
+file under `src/activityStories/`.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 

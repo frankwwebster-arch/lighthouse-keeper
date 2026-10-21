@@ -806,7 +806,7 @@
       "kind": "object",
       "family": "bbq-tools",
       "label": "Basting brush",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -826,6 +826,25 @@
           "source": "bbq-basting-brush.png",
           "by": "codex",
           "note": "Codex BBQ tools and ephemera pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/drafts/components/bbq-basting-brush.png",
+          "sha256": "14c4f6b9db2169ce89e7d0cdfe0eb80c541f94abba494026147d067b81b2c3af",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            70,
+            236,
+            186
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-basting-brush.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ tools continuation; exact-asset V2 translation; V1 retained"
         }
       ]
     },
@@ -833,7 +852,7 @@
       "kind": "object",
       "family": "bbq",
       "label": "Burgers",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -852,6 +871,25 @@
           "added": "2026-10-19",
           "source": "activity-cloud-composer-v1",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/drafts/components/bbq-burgers.png",
+          "sha256": "a1c28142146c3629049e0197e7b9c6bd2eb3c3c6a770482e54283b17b9a26680",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            46,
+            236,
+            209
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-burgers.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ food continuation; exact-asset V2 translation; V1 retained"
         }
       ]
     },
@@ -904,7 +942,7 @@
       "kind": "object",
       "family": "bbq-tools",
       "label": "Charcoal bag",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -924,6 +962,25 @@
           "source": "bbq-charcoal-bag.png",
           "by": "codex",
           "note": "Codex BBQ tools and ephemera pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/drafts/components/bbq-charcoal-bag.png",
+          "sha256": "a99311e064ade6958edb4adb4d4d879893798380ecef83f5daaec297fa3c48c1",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            52,
+            20,
+            204,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-charcoal-bag.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ tools continuation; exact-asset V2 translation; V1 retained"
         }
       ]
     },
@@ -931,7 +988,7 @@
       "kind": "object",
       "family": "bbq-tools",
       "label": "Charcoal chimney",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -951,6 +1008,25 @@
           "source": "bbq-charcoal-chimney.png",
           "by": "codex",
           "note": "Codex BBQ tools and ephemera pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/drafts/components/bbq-charcoal-chimney.png",
+          "sha256": "0bda2bd99b352dbb778f341c3e5974b0af367f513c33a075435d6eb80aa9ca85",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            20,
+            236,
+            235
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-charcoal-chimney.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ tools continuation; exact-asset V2 translation; V1 retained"
         }
       ]
     },
@@ -1022,7 +1098,7 @@
       "kind": "object",
       "family": "bbq-tools",
       "label": "Grill fork",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -1042,6 +1118,25 @@
           "source": "bbq-grill-fork.png",
           "by": "codex",
           "note": "Codex BBQ tools and ephemera pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/drafts/components/bbq-grill-fork.png",
+          "sha256": "499e5ca86740c396299a1b8b6819961ebda4d1fb2acef2e792b5953126391424",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            58,
+            236,
+            197
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-grill-fork.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ tools continuation; exact-asset V2 translation; V1 retained"
         }
       ]
     },
@@ -1095,7 +1190,7 @@
       "kind": "object",
       "family": "bbq-tools",
       "label": "Heatproof mitt",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -1115,6 +1210,25 @@
           "source": "bbq-heatproof-mitt.png",
           "by": "codex",
           "note": "Codex BBQ tools and ephemera pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/drafts/components/bbq-heatproof-mitt.png",
+          "sha256": "c57813fed14e506a5cf20a7bb4dde8d8d18afa93de3098d792b036475313da52",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            33,
+            20,
+            223,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-heatproof-mitt.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ tools continuation; exact-asset V2 translation; V1 retained"
         }
       ]
     },
@@ -1167,7 +1281,7 @@
       "kind": "object",
       "family": "bbq",
       "label": "BBQ ketchup",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -1187,6 +1301,25 @@
           "source": "bbq-ketchup.png",
           "by": "codex",
           "note": "Imported from complete review-ready activity-cloud-composer-v1 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/drafts/components/bbq-ketchup.png",
+          "sha256": "f32e52b7707dc78989dd50c14aa762b808fe451968a3f7e1c9c259e899df3fa4",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            36,
+            20,
+            220,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-ketchup.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ food continuation; exact-asset V2 translation; V1 retained"
         }
       ]
     },
@@ -1194,7 +1327,7 @@
       "kind": "object",
       "family": "bbq",
       "label": "BBQ lamb chops",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -1214,6 +1347,25 @@
           "source": "bbq-lamb-chops.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/drafts/components/bbq-lamb-chops.png",
+          "sha256": "afa89dc37d91e60444c688ba2fa6cba817a78fd62fe671e377c3291e3c0f862b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            32,
+            236,
+            224
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-lamb-chops.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ food continuation; exact-asset V2 translation; V1 retained"
         }
       ]
     },
@@ -1221,7 +1373,7 @@
       "kind": "object",
       "family": "bbq",
       "label": "BBQ leg lamb",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -1241,6 +1393,25 @@
           "source": "bbq-leg-lamb.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/drafts/components/bbq-leg-lamb.png",
+          "sha256": "9a45f04e5d195056b299143bcbb905650f00b7f783b860f455b5fc6657ebdc06",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            69,
+            236,
+            186
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-leg-lamb.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ food continuation; exact-asset V2 translation; V1 retained"
         }
       ]
     },
@@ -1248,7 +1419,7 @@
       "kind": "object",
       "family": "bbq",
       "label": "Raw burger patties",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -1268,6 +1439,25 @@
           "source": "bbq-raw-burger-patties.png",
           "by": "codex",
           "note": "Codex BBQ food pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/drafts/components/bbq-raw-burger-patties.png",
+          "sha256": "caa264f23f813c5b7ccb97de26f123c4f8387d16d008dfadc49dd3c19166a02a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            55,
+            236,
+            200
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-raw-burger-patties.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ food continuation; exact-asset V2 translation; V1 retained"
         }
       ]
     },
@@ -1275,7 +1465,7 @@
       "kind": "object",
       "family": "bbq",
       "label": "Raw steak",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -1295,6 +1485,25 @@
           "source": "bbq-raw-steak.png",
           "by": "codex",
           "note": "Codex BBQ food pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/drafts/components/bbq-raw-steak.png",
+          "sha256": "ac1761782eef5f85c98dec28756fefb10b02ce85c13520e72a6c18fdd92458c2",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            55,
+            236,
+            200
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-raw-steak.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ food continuation; exact-asset V2 translation; V1 retained"
         }
       ]
     },
@@ -1366,7 +1575,7 @@
       "kind": "object",
       "family": "bbq-tools",
       "label": "Skewers",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -1386,6 +1595,25 @@
           "source": "bbq-skewer-bundle.png",
           "by": "codex",
           "note": "Codex BBQ tools and ephemera pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/drafts/components/bbq-skewer-bundle.png",
+          "sha256": "df604013b5a1db004265b574252566d044cc6a7cc51d91f76139a15593e3a604",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            62,
+            236,
+            194
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-skewer-bundle.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ tools continuation; exact-asset V2 translation; V1 retained"
         }
       ]
     },
@@ -1393,7 +1621,7 @@
       "kind": "object",
       "family": "bbq-tools",
       "label": "Slotted turner",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -1413,6 +1641,25 @@
           "source": "bbq-slotted-turner.png",
           "by": "codex",
           "note": "Codex BBQ tools and ephemera pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/drafts/components/bbq-slotted-turner.png",
+          "sha256": "d4e025f198290070f6450611fe6ec8807e23a803a5605fe4dd67475a2164abba",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            72,
+            236,
+            183
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-slotted-turner.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ tools continuation; exact-asset V2 translation; V1 retained"
         }
       ]
     },
@@ -1420,7 +1667,7 @@
       "kind": "object",
       "family": "bbq",
       "label": "BBQ steak",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -1440,6 +1687,25 @@
           "source": "bbq-steak.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/drafts/components/bbq-steak.png",
+          "sha256": "eeb19db652babc1ff7c44b05b08807cdc7d019ea4aa21b0dae76e4588f17f7e4",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            62,
+            236,
+            193
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-steak.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ food continuation; exact-asset V2 translation; V1 retained"
         }
       ]
     },

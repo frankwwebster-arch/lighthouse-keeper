@@ -1,7 +1,7 @@
 {
   "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
   "set": "activity-story-ligne-claire-bbq-tools-2026-10-21-v1",
-  "status": "review-only-unregistered",
+  "status": "approved-and-registered",
   "created": "2026-10-21",
   "tool": "built-in image generation plus deterministic fixed-palette normalisation",
   "family": "bbq-tools",
@@ -12,8 +12,9 @@
     "bbq-basting-brush": {
       "family": "bbq-tools",
       "label": "Basting brush",
-      "intent": "proposed-new-version-v2",
-      "currentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "one diagonal brush with orange silicone bristles, pale collar, blue handle and hanging hole",
       "currentReferenceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-basting-brush.png",
@@ -69,8 +70,9 @@
     "bbq-charcoal-bag": {
       "family": "bbq-tools",
       "label": "Charcoal bag",
-      "intent": "proposed-new-version-v2",
-      "currentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "one upright closed blue-and-orange charcoal bag with folded top and three-lump charcoal motif",
       "currentReferenceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-charcoal-bag.png",
@@ -127,8 +129,9 @@
     "bbq-charcoal-chimney": {
       "family": "bbq-tools",
       "label": "Charcoal chimney",
-      "intent": "proposed-new-version-v2",
-      "currentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "the upright perforated steel chimney, visible charcoal, lower vent slots and right blue shield handle with orange grip",
       "currentReferenceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-charcoal-chimney.png",
@@ -186,8 +189,9 @@
     "bbq-grill-fork": {
       "family": "bbq-tools",
       "label": "Grill fork",
-      "intent": "proposed-new-version-v2",
-      "currentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "one diagonal two-tine fork with steel shaft, blue two-rivet handle and orange end hole",
       "currentReferenceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-grill-fork.png",
@@ -243,8 +247,9 @@
     "bbq-heatproof-mitt": {
       "family": "bbq-tools",
       "label": "Heatproof mitt",
-      "intent": "proposed-new-version-v2",
-      "currentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "one blue diamond-quilted mitt with left thumb, orange-bound open cuff and orange hanging loop",
       "currentReferenceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-heatproof-mitt.png",
@@ -300,8 +305,9 @@
     "bbq-skewer-bundle": {
       "family": "bbq-tools",
       "label": "Skewers",
-      "intent": "proposed-new-version-v2",
-      "currentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "exactly three parallel diagonal skewers with three points, blue loop handles and orange collars",
       "currentReferenceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-skewer-bundle.png",
@@ -357,8 +363,9 @@
     "bbq-slotted-turner": {
       "family": "bbq-tools",
       "label": "Slotted turner",
-      "intent": "proposed-new-version-v2",
-      "currentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "one diagonal turner with broad steel blade, exactly four slots, bent neck and blue two-rivet handle with orange end hole",
       "currentReferenceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-slotted-turner.png",
@@ -448,12 +455,17 @@
     "currentReferenceHashesPinned": true,
     "exactPalettesRecorded": true,
     "contactSheetCoversEveryCandidate": true,
-    "libraryVersionsAdded": false,
+    "libraryVersionsAdded": true,
     "storiesChanged": false,
     "activityStoriesRuntimeChanged": false,
     "approvedAuthorityChanged": false,
     "deployed": false
   },
-  "approval": null,
-  "rollback": "Before approval, discard only this draft directory. No picture-library version or existing source is changed."
+  "approval": {
+    "by": "Frank",
+    "date": "2026-10-21",
+    "words": "approved",
+    "scope": "the seven tool-family V2 candidates in the approved contact sheet"
+  },
+  "rollback": "Set each picture's current selector back to V1; the approved V2 assets and all earlier bytes remain immutable and selectable."
 }

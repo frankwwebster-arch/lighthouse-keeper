@@ -35,7 +35,7 @@ and ordered in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`. `npm test` rejects new
 or regressed endpoint failures against that frozen migration boundary.
 
 The Bubble stories Studio has a complete shared picture catalogue: 305
-selectable pictures and 319 immutable versions grouped by activity. This includes every review-ready
+selectable pictures and 333 immutable versions grouped by activity. This includes every review-ready
 isolated source component from Activity Cloud Composer V1–V7, the rear-work
 V2/V3 callout packs and every component-bearing Claude or Codex picture pack,
 including all V5 album homages, the complete aquarium and bedroom sets, and 54
@@ -51,14 +51,15 @@ whole-game restyling. The companion display proposal uses an opaque rounded
 rectangle activity panel, variable emotion balloons and unenclosed reaction
 marks.
 
-The first family continuation is prepared but intentionally not registered:
-seven remaining BBQ-food candidates and seven remaining BBQ-tool candidates
-are isolated into two immutable V1 packs with fixed-palette 256 × 256 RGBA
+Frank approved the first family continuation on 21 October 2026: seven
+remaining BBQ-food candidates and seven remaining BBQ-tool candidates are
+isolated into two immutable V1 packs with fixed-palette 256 × 256 RGBA
 components, pinned prior hashes, prompt/rejection records, deterministic
-verification and light/dark/64 px contact sheets. All 14 are proposed V2
-versions awaiting Frank's contact-sheet approval. The shared library therefore
-still has 305 pictures and 319 versions, and no story, current pointer,
-`src/activityStories/` file, approved asset or production/runtime art changed.
+verification and light/dark/64 px contact sheets. All 14 are registered as
+current V2 versions; their V1 predecessors remain byte-identical and
+selectable. The shared library therefore has 305 pictures and 333 versions.
+No story, `src/activityStories/` file, production/runtime art or deployment
+changed.
 
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 

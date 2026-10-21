@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build or verify the two review-only ligne-claire BBQ continuation packs."""
+"""Build or verify the two approved ligne-claire BBQ continuation packs."""
 
 from __future__ import annotations
 
@@ -27,6 +27,7 @@ PACKS: dict[str, dict[str, object]] = {
         "directory": "art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1",
         "set": "activity-story-ligne-claire-bbq-food-2026-10-21-v1",
         "family": "bbq",
+        "approvalScope": "the seven food-family V2 candidates in the approved contact sheet",
         "specs": (
             {
                 "id": "bbq-burgers",
@@ -116,6 +117,7 @@ PACKS: dict[str, dict[str, object]] = {
         "directory": "art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1",
         "set": "activity-story-ligne-claire-bbq-tools-2026-10-21-v1",
         "family": "bbq-tools",
+        "approvalScope": "the seven tool-family V2 candidates in the approved contact sheet",
         "specs": (
             {
                 "id": "bbq-basting-brush",
@@ -340,8 +342,9 @@ def build(name: str) -> None:
         entries[str(spec["id"])] = {
             "family": config["family"],
             "label": spec["label"],
-            "intent": "proposed-new-version-v2",
-            "currentLibraryVersion": 1,
+            "intent": "approved-new-version-v2",
+            "priorLibraryVersion": 1,
+            "currentLibraryVersion": 2,
             "proposedLibraryVersion": 2,
             "preserves": spec["preserves"],
             "currentReferenceFile": spec["current"],
@@ -368,7 +371,7 @@ def build(name: str) -> None:
     register = {
         "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
         "set": config["set"],
-        "status": "review-only-unregistered",
+        "status": "approved-and-registered",
         "created": "2026-10-21",
         "tool": "built-in image generation plus deterministic fixed-palette normalisation",
         "family": config["family"],
@@ -391,14 +394,19 @@ def build(name: str) -> None:
             "currentReferenceHashesPinned": True,
             "exactPalettesRecorded": True,
             "contactSheetCoversEveryCandidate": True,
-            "libraryVersionsAdded": False,
+            "libraryVersionsAdded": True,
             "storiesChanged": False,
             "activityStoriesRuntimeChanged": False,
             "approvedAuthorityChanged": False,
             "deployed": False,
         },
-        "approval": None,
-        "rollback": "Before approval, discard only this draft directory. No picture-library version or existing source is changed.",
+        "approval": {
+            "by": "Frank",
+            "date": "2026-10-21",
+            "words": "approved",
+            "scope": config["approvalScope"],
+        },
+        "rollback": "Set each picture's current selector back to V1; the approved V2 assets and all earlier bytes remain immutable and selectable.",
     }
     (pack / "batch-register.json").write_text(json.dumps(register, indent=2) + "\n")
     write_hashes(pack)
@@ -412,7 +420,7 @@ def library_current() -> dict[str, dict[str, object]]:
     for picture_id, picture in library["pictures"].items():
         current_version = picture["current"]
         version = next(item for item in picture["versions"] if item["v"] == current_version)
-        result[picture_id] = {"current": current_version, "version": version}
+        result[picture_id] = {"current": current_version, "version": version, "versions": picture["versions"]}
     return result
 
 
@@ -421,7 +429,7 @@ def verify(name: str) -> None:
     pack = ROOT / str(config["directory"])
     register_path = pack / "batch-register.json"
     register = json.loads(register_path.read_text())
-    if register["set"] != config["set"] or register["status"] != "review-only-unregistered":
+    if register["set"] != config["set"] or register["status"] != "approved-and-registered":
         raise RuntimeError("register identity/status mismatch")
     if register["family"] != config["family"]:
         raise RuntimeError("register family mismatch")
@@ -445,10 +453,13 @@ def verify(name: str) -> None:
         if sha256(current_path) != entry["currentReferenceSha256"]:
             raise RuntimeError(f"prior-current hash mismatch: {picture_id}")
         library_entry = current_library[picture_id]
-        if library_entry["current"] != 1:
-            raise RuntimeError(f"candidate was registered before approval: {picture_id}")
-        if library_entry["version"]["sha256"] != entry["currentReferenceSha256"]:
-            raise RuntimeError(f"library prior-current hash drift: {picture_id}")
+        if library_entry["current"] != 2:
+            raise RuntimeError(f"approved candidate is not current V2: {picture_id}")
+        if library_entry["version"]["sha256"] != entry["sha256"]:
+            raise RuntimeError(f"library current V2 hash drift: {picture_id}")
+        prior_version = next((item for item in library_entry["versions"] if item["v"] == 1), None)
+        if prior_version is None or prior_version["sha256"] != entry["currentReferenceSha256"]:
+            raise RuntimeError(f"library retained V1 hash drift: {picture_id}")
         source = Image.open(source_path)
         output = Image.open(output_path)
         if source.mode != "RGBA" or output.mode != "RGBA" or output.size != (CELL, CELL):

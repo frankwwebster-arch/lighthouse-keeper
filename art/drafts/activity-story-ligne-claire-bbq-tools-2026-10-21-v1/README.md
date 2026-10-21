@@ -1,10 +1,11 @@
 # Bubble stories ligne-claire BBQ tools continuation V1
 
-This immutable, review-only pack translates the seven BBQ-tools pictures not
-covered by the approved `bbq-tongs` pilot version. Each current picture remains
-the semantic and compositional source; only its drawing language changes.
+This immutable pack translates the seven BBQ-tools pictures not covered by the
+approved `bbq-tongs` pilot version. Frank approved the contact sheet on 21
+October 2026 with “approved”. The candidates are registered as current V2
+versions; each V1 remains byte-identical and selectable for rollback.
 
-| Picture | Preserved content | Proposed version |
+| Picture | Preserved content | Approved version |
 | --- | --- | --- |
 | `bbq-basting-brush` | orange silicone head, pale collar and blue holed handle | V2 |
 | `bbq-charcoal-bag` | closed blue/orange bag with three-lump motif | V2 |
@@ -19,10 +20,10 @@ picture, candidate on warm cream, candidate on dark ink, and both versions at
 64 px for every id. `batch-register.json` pins all current, source, component
 and evidence hashes and records measured alpha bounds, gutters and palettes.
 
-The pack is stopped at the contact-sheet gate. Nothing here has been added to
-`data/activity-stories/pictures.json`; every existing picture version remains
-current and byte-identical. Approval can be rejected by discarding this draft
-directory alone.
+`data/activity-stories/pictures.json` references each component in place from
+this pack. Registration added one immutable V2 per id and changed only the
+library's current selectors. Roll back by selecting V1; do not overwrite or
+remove either version.
 
 The two retained rejected attempts have visually correct three-skewer and
 four-slot counts, but their prompts incorrectly asserted four and five. An

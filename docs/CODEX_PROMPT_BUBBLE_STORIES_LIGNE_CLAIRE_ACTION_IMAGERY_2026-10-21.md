@@ -2,12 +2,19 @@
 
 **Decision date:** 21 October 2026
 
-**Status:** ready to paste; action-imagery programme only
+**Status:** active; pilot plus first two family packs approved; action-imagery programme only
 
 Frank approved the six-picture BBQ pilot with “agreed, these are superb”. This
 prompt turns that approval into a controlled conversion programme for Bubble
 stories pictures and independent comic reaction marks. It deliberately does
 not authorise the more ambitious whole-game art-direction change.
+
+**Progress (21 October 2026):** Frank also approved the seven-picture `bbq`
+food and seven-picture `bbq-tools` continuation sheets. Their 14 components are
+registered as current V2 versions from their immutable packs; all V1 versions
+remain byte-identical and selectable. The library now contains 305 pictures and
+333 versions. Continue with a new family pack rather than rebuilding either
+approved BBQ pack.
 
 ## Ready-to-paste prompt
 

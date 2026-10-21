@@ -1,10 +1,11 @@
 # Bubble stories ligne-claire BBQ food continuation V1
 
-This immutable, review-only pack translates the seven BBQ-family pictures not
-covered by the approved six-picture pilot. It changes drawing language only:
-the current picture for each id remains the semantic and compositional source.
+This immutable pack translates the seven BBQ-family pictures not covered by
+the approved six-picture pilot. Frank approved the contact sheet on 21 October
+2026 with “approved”. The candidates are registered as current V2 versions;
+each V1 remains byte-identical and selectable for rollback.
 
-| Picture | Preserved content | Proposed version |
+| Picture | Preserved content | Approved version |
 | --- | --- | --- |
 | `bbq-burgers` | two overlapping completed burgers with bun, lettuce, tomato and patty | V2 |
 | `bbq-ketchup` | red squeeze bottle and cream bowl of ketchup | V2 |
@@ -19,10 +20,10 @@ picture, candidate on warm cream, candidate on dark ink, and both versions at
 64 px for every id. `batch-register.json` pins all current, source, component
 and evidence hashes and records measured alpha bounds, gutters and palettes.
 
-The pack is stopped at the contact-sheet gate. Nothing here has been added to
-`data/activity-stories/pictures.json`; every existing picture version remains
-current and byte-identical. Approval can be rejected by discarding this draft
-directory alone.
+`data/activity-stories/pictures.json` references each component in place from
+this pack. Registration added one immutable V2 per id and changed only the
+library's current selectors. Roll back by selecting V1; do not overwrite or
+remove either version.
 
 Two first passes are retained in `rejected/`: the initial `bbq-leg-lamb`
 drawing matched the source's three ties but came from a prompt that incorrectly

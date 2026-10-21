@@ -11,7 +11,7 @@ versions remain selectable and byte-identical for undo.
 **Complete-catalogue update (21 October 2026):** the library now exposes all
 298 review-ready isolated source components from Activity Cloud Composer
 V1–V7, Prime rear-work activity-callout V2/V3 and every component-bearing
-Claude or Codex picture pack. The Studio therefore has 305 pictures and 319
+Claude or Codex picture pack. The Studio therefore has 305 pictures and 333
 immutable versions, including
 every V5 album homage, the complete aquarium and bedroom sets, and 54 new
 fishing, gardening, pet-play, fixing, pub, art and inventing pictures. Run
@@ -33,17 +33,17 @@ rounded-rectangle activity panel / expressive emotion-envelope / free reaction
 layer grammar are in
 `docs/CODEX_PROMPT_BUBBLE_STORIES_LIGNE_CLAIRE_PILOT_2026-10-21.md`.
 
-**First family continuation gate (21 October 2026):** the seven remaining
-`bbq` pictures and seven remaining `bbq-tools` pictures now have separate,
-review-only ligne-claire V1 packs at
+**First family continuation approval (21 October 2026):** Frank approved the
+seven remaining `bbq` pictures and seven remaining `bbq-tools` pictures in
+their separate ligne-claire V1 packs at
 `art/drafts/activity-story-ligne-claire-bbq-food-2026-10-21-v1/` and
 `art/drafts/activity-story-ligne-claire-bbq-tools-2026-10-21-v1/`. Each pack
 pins the prior-current hashes and includes deterministic 256 px candidates,
 prompt/rejection provenance, a verifier and a five-column light/dark/game-scale
-contact sheet. The 14 candidates are proposed V2 versions only: they are not
-registered, the library remains at 305 pictures and 319 versions, and every
-prior-current picture remains current and byte-identical until Frank approves
-a contact sheet.
+contact sheet. All 14 are registered as current V2 versions, taking the library
+to 305 pictures and 333 immutable versions. Every V1 predecessor remains
+selectable and byte-identical; no story definition or activity-story runtime
+file changed.
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A

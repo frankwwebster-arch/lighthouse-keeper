@@ -1,7 +1,7 @@
 {
   "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
   "set": "activity-story-ligne-claire-bbq-food-2026-10-21-v1",
-  "status": "review-only-unregistered",
+  "status": "approved-and-registered",
   "created": "2026-10-21",
   "tool": "built-in image generation plus deterministic fixed-palette normalisation",
   "family": "bbq",
@@ -12,8 +12,9 @@
     "bbq-burgers": {
       "family": "bbq",
       "label": "Burgers",
-      "intent": "proposed-new-version-v2",
-      "currentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "two overlapping finished burgers, golden seeded buns, lettuce, tomato and cooked patties in the current front three-quarter arrangement",
       "currentReferenceFile": "review-archive/objects/52/5244d4289bbaf95f4c2ddd36a72f24fe9b5bf12e2a349365d9fe574fdfa64354.png",
@@ -71,8 +72,9 @@
     "bbq-ketchup": {
       "family": "bbq",
       "label": "BBQ ketchup",
-      "intent": "proposed-new-version-v2",
-      "currentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "the tall red squeeze bottle at left and cream bowl of ketchup at lower right as one grouped condiment picture",
       "currentReferenceFile": "art/drafts/activity-cloud-composer-2026-10-19-v1/drafts/components/bbq-ketchup.png",
@@ -127,8 +129,9 @@
     "bbq-lamb-chops": {
       "family": "bbq",
       "label": "BBQ lamb chops",
-      "intent": "proposed-new-version-v2",
-      "currentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "two overlapping raw bone-in lamb chops with both pale bones rising up-right and no plate or garnish",
       "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/bbq-lamb-chops.png",
@@ -184,8 +187,9 @@
     "bbq-leg-lamb": {
       "family": "bbq",
       "label": "BBQ leg lamb",
-      "intent": "proposed-new-version-v2",
-      "currentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "the tied roasted leg with cut face and bone end, rosemary sprigs and shallow cream oval plate with blue rim",
       "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/bbq-leg-lamb.png",
@@ -243,8 +247,9 @@
     "bbq-steak": {
       "family": "bbq",
       "label": "BBQ steak",
-      "intent": "proposed-new-version-v2",
-      "currentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "one long low irregular raw red steak with a rounded left end, raised right end, cream fat edge and no plate",
       "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/bbq-steak.png",
@@ -300,8 +305,9 @@
     "bbq-raw-burger-patties": {
       "family": "bbq",
       "label": "Raw burger patties",
-      "intent": "proposed-new-version-v2",
-      "currentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "three thick raw minced-beef patties in the current triangular overlap, with one in front and two behind",
       "currentReferenceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-raw-burger-patties.png",
@@ -356,8 +362,9 @@
     "bbq-raw-steak": {
       "family": "bbq",
       "label": "Raw steak",
-      "intent": "proposed-new-version-v2",
-      "currentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "one thick rounded rectangular raw steak with pale fat network, short side wall and no plate",
       "currentReferenceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-raw-steak.png",
@@ -447,12 +454,17 @@
     "currentReferenceHashesPinned": true,
     "exactPalettesRecorded": true,
     "contactSheetCoversEveryCandidate": true,
-    "libraryVersionsAdded": false,
+    "libraryVersionsAdded": true,
     "storiesChanged": false,
     "activityStoriesRuntimeChanged": false,
     "approvedAuthorityChanged": false,
     "deployed": false
   },
-  "approval": null,
-  "rollback": "Before approval, discard only this draft directory. No picture-library version or existing source is changed."
+  "approval": {
+    "by": "Frank",
+    "date": "2026-10-21",
+    "words": "approved",
+    "scope": "the seven food-family V2 candidates in the approved contact sheet"
+  },
+  "rollback": "Set each picture's current selector back to V1; the approved V2 assets and all earlier bytes remain immutable and selectable."
 }
