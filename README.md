@@ -833,6 +833,16 @@ contact sheet. V13 is immutable, reversible, unregistered and blocked on
 explicit approval; production/runtime and all healing behaviour are unchanged.
 See
 [`docs/KITCHEN_OVEN_OFF_LIGNE_CLAIRE_V13_2026-10-22.md`](docs/KITCHEN_OVEN_OFF_LIGNE_CLAIRE_V13_2026-10-22.md).
+Kitchen Oven Broken Ajar Ligne-Claire V15 is the door-angle correction at
+`/keeper-review/kitchen-oven-broken-ajar-ligne-claire-v15/`. It preserves the
+approved V12 oven family and applies the established moderate part-open
+attached-door geometry only inside the declared door/cavity locality. Canvas,
+alpha, outer bounds, countertop, body, datum, all four lighting states, both
+40-frame/4-fps schedules, separate symbols and every movement/interaction/
+repair/healing contract remain fixed. V14 is retained as rejected internal
+proof because its foreshortened glass read as a displaced handle. V15 is
+immutable, reversible, unregistered and blocked on explicit approval. See
+[`docs/KITCHEN_OVEN_BROKEN_AJAR_LIGNE_CLAIRE_V15_2026-10-22.md`](docs/KITCHEN_OVEN_BROKEN_AJAR_LIGNE_CLAIRE_V15_2026-10-22.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

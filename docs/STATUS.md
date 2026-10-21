@@ -652,6 +652,18 @@ family proof. V13 is an immutable, reversible, unregistered and unwired review
 candidate behind a closed approval gate; no healing or gameplay behaviour
 changed. Delivery: `docs/KITCHEN_OVEN_OFF_LIGNE_CLAIRE_V13_2026-10-22.md`.
 
+Kitchen Oven Broken Ajar Ligne-Claire V15 at
+`/keeper-review/kitchen-oven-broken-ajar-ligne-claire-v15/` corrects only the
+approved V12 Broken door read. The body remains the exact approved family;
+the attached bottom-hinged door uses the established moderate part-open
+geometry within one declared local mask. V14 is preserved as rejected proof
+because its glass read as a displaced handle. V15 retains exact `92 × 85`
+alpha, all four fixed lighting states, both 40-frame/4-fps strips, datums,
+separate symbols, dishwasher bytes and all movement, interaction, repair and
+healing contracts. It is immutable, reversible, unregistered and unwired with
+the approval gate closed. Delivery:
+`docs/KITCHEN_OVEN_BROKEN_AJAR_LIGNE_CLAIRE_V15_2026-10-22.md`.
+
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
 link with V6. The animation remains the exact V1/V2 six-pose motion inside its
