@@ -15,11 +15,11 @@
   ],
   "largeDataThresholdBytes": 24576,
   "stats": {
-    "setCount": 197,
-    "referenceCount": 4751,
-    "uniqueObjectCount": 2900,
-    "logicalBytes": 378238734,
-    "uniqueBytes": 214989205,
+    "setCount": 198,
+    "referenceCount": 4755,
+    "uniqueObjectCount": 2904,
+    "logicalBytes": 380206358,
+    "uniqueBytes": 216956829,
     "deduplicatedBytes": 163249529
   },
   "legacyPaths": {
@@ -23794,6 +23794,34 @@
       "bytes": 25807,
       "object": "review-archive/objects/34/340989f8579bdbc7e2ae908e0a91946f2a38184ca81a0710eeec5234949ae974.json",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/34/340989f8579bdbc7e2ae908e0a91946f2a38184ca81a0710eeec5234949ae974.json"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v6/assets/evidence--dishwasher-current-vs-v6.png": {
+      "sha256": "a7d061fef6f454949886609c63e8ac9ef90bb64792000ba56fa449f6a22e717f",
+      "extension": ".png",
+      "bytes": 906841,
+      "object": "review-archive/objects/a7/a7d061fef6f454949886609c63e8ac9ef90bb64792000ba56fa449f6a22e717f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a7/a7d061fef6f454949886609c63e8ac9ef90bb64792000ba56fa449f6a22e717f.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v6/assets/evidence--on-broken-healing-current-vs-candidate.png": {
+      "sha256": "23d5eb91aa33657eca6a2402b570fa26e000a3872539e25ed4b238402949cf41",
+      "extension": ".png",
+      "bytes": 391665,
+      "object": "review-archive/objects/23/23d5eb91aa33657eca6a2402b570fa26e000a3872539e25ed4b238402949cf41.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/23/23d5eb91aa33657eca6a2402b570fa26e000a3872539e25ed4b238402949cf41.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v6/assets/evidence--oven-animation-current-vs-v6.png": {
+      "sha256": "d0746706815ed0a471ad86e33c079b0d1f7feea71c84d6784d19aa95695a98a8",
+      "extension": ".png",
+      "bytes": 169059,
+      "object": "review-archive/objects/d0/d0746706815ed0a471ad86e33c079b0d1f7feea71c84d6784d19aa95695a98a8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d0/d0746706815ed0a471ad86e33c079b0d1f7feea71c84d6784d19aa95695a98a8.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v6/assets/evidence--oven-current-vs-v6.png": {
+      "sha256": "e4ba03841d8bd53a78620effd8655bbbc7b833f61465a50a8ed12e77c0f43aba",
+      "extension": ".png",
+      "bytes": 500059,
+      "object": "review-archive/objects/e4/e4ba03841d8bd53a78620effd8655bbbc7b833f61465a50a8ed12e77c0f43aba.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e4/e4ba03841d8bd53a78620effd8655bbbc7b833f61465a50a8ed12e77c0f43aba.png"
     },
     "/keeper-review/kitchen-cabinet-join-backfill-v21/assets/cabinet-run-v11-exact.png": {
       "sha256": "112dfb2ed337a15fe76b3fbe41cacf5c752eea93eed79b394eccc378370f6e81",

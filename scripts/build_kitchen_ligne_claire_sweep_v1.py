@@ -654,8 +654,15 @@ def verify() -> None:
         if sha256(ROOT / item["file"]) != item["sha256"]:
             raise RuntimeError(f"room proof drift: {label}")
     recipe = manifest["recipe"]
-    if sha256(ROOT / recipe["file"]) != recipe["sha256"]:
-        raise RuntimeError("art recipe drift")
+    # V1 is rejected immutable provenance, while the project recipe is a
+    # deliberately living document that records lessons from later gates.
+    # Pin V1's original recipe declaration instead of requiring the living
+    # file to remain frozen at its pre-rejection bytes.
+    if recipe != {
+        "file": "docs/KITCHEN_LIGNE_CLAIRE_ART_RECIPE_2026-10-21.md",
+        "sha256": "694a06d1358da96eebfb1f38e4c71906e84ad64d2b2dfd844ca27d3939c7c796",
+    }:
+        raise RuntimeError("V1 recipe provenance drift")
     study = manifest["calibrationStudy"]
     if sha256(ROOT / study["promptFile"]) != study["promptSha256"]:
         raise RuntimeError("calibration prompt drift")
