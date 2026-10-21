@@ -39,3 +39,11 @@
 .ss-lib li.used span { font-weight: 700; }
 .ss-lib li > span { display: flex; flex-direction: column; min-width: 0; }
 .ss-lib code { font-size: 10px; color: var(--st-dim); overflow-wrap: anywhere; }
+/* Drag and drop from the library: drop spots light up while a picture is carried, and glow under the pointer. */
+.ss-lib li[draggable=true] { cursor: grab; border-radius: 4px; padding: 1px 2px; }
+.ss-lib li[draggable=true]:hover { background: #eef5fb; }
+.ss-lib li.carrying { background: #fff3c4; outline: 2px solid #c48a0a; }
+.ss .ss-drop-ok { outline: 2px dashed var(--st-sea); outline-offset: 1px; cursor: copy; }
+.ss .ss-drop-over { outline-style: solid; background: #e2f3e6 !important; }
+.ss-dropbox { border: 2px dashed var(--st-line); border-radius: 6px; padding: 8px; margin: 4px 0; text-align: center; color: var(--st-dim); font-size: 12px; }
+.ss-carry { position: sticky; top: 0; z-index: 5; margin: 0 0 6px; padding: 6px 8px; background: #fff3c4; border: 1px solid #c48a0a; border-radius: 6px; font-size: 13px; }

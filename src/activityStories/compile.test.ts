@@ -3,7 +3,7 @@ import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { compileStory, type FrameItem } from './compile'
 import { STORY_DRAFTS, STORY_FILES, LIBRARY } from './drafts'
-import { cleanStory, groupPictures, OTHER_GROUP, playsText, type Library } from './format'
+import { canPlace, cleanStory, groupPictures, OTHER_GROUP, placePicture, playsText, type Library } from './format'
 
 const objects = <T extends { kind: string }>(items: T[]) => items.filter((i) => i.kind === 'object')
 
@@ -284,5 +284,42 @@ describe('the picture library in the studio', () => {
     expect(playsText([2, 4])).toBe('plays 2–4 times')
     expect(playsText([0, 1])).toBe('plays once at most')
     expect(playsText([0, 0])).toBe('is longer than the activity')
+  })
+})
+
+describe('dropping a picture from the library onto a story', () => {
+  const bbq = STORY_DRAFTS.find((s) => s.id === 'garden-bbq')!
+
+  it('adds an object to the cast as a helper, or swaps the picture of the member it lands on', () => {
+    const added = placePicture(bbq, LIBRARY, 'consumable-cellulose-sponge', { to: 'cast' })!
+    expect(added.cast.sponge).toEqual({ picture: 'consumable-cellulose-sponge', role: 'support' })
+    const again = placePicture(added, LIBRARY, 'washing-sponge', { to: 'cast' })!
+    expect(again.cast['sponge-2'].picture).toBe('washing-sponge')
+    const swapped = placePicture(bbq, LIBRARY, 'bbq-hotdogs', { to: 'cast', as: 'sausages' })!
+    expect(swapped.cast.sausages).toEqual({ picture: 'bbq-hotdogs', role: bbq.cast.sausages.role })
+    expect(placePicture(bbq, LIBRARY, 'symbol-impact-star', { to: 'cast' })).toBeNull()
+  })
+
+  it('makes an object the actor of a step (joining the cast if needed) and a mark its touch mark', () => {
+    const i = bbq.steps.findIndex((s) => s.do === 'land-on')
+    const acted = placePicture(bbq, LIBRARY, 'condiment-honey-pot', { to: 'step', index: i })!
+    expect(acted.steps[i].who).toBe('honey')
+    expect(acted.cast.honey.picture).toBe('condiment-honey-pot')
+    const reused = placePicture(bbq, LIBRARY, bbq.cast.charcoal.picture, { to: 'step', index: i })!
+    expect(reused.steps[i].who).toBe('charcoal')
+    expect(Object.keys(reused.cast)).toEqual(Object.keys(bbq.cast))
+    expect(placePicture(bbq, LIBRARY, 'symbol-soap-bubbles', { to: 'step', index: i })!.steps[i].mark).toBe('symbol-soap-bubbles')
+    // A quiet moment has no actor and no touches.
+    expect(canPlace(bbq, 'object', { to: 'step', index: bbq.steps.length - 1 })).toBe(false)
+  })
+
+  it('adds a circling prop for the retold part of the story, and a mark riding on the main picture', () => {
+    const withProp = placePicture(bbq, LIBRARY, 'bbq-heatproof-mitt', { to: 'props' })!
+    expect(withProp.props.at(-1)).toEqual({ picture: 'bbq-heatproof-mitt', at: 'orbit', fromStep: bbq.loopFrom ?? 1, toStep: bbq.steps.length - 1 })
+    expect(compileStory(withProp, LIBRARY).issues.filter((x) => x.level === 'error')).toEqual([])
+    const withMark = placePicture(bbq, LIBRARY, 'symbol-heat-shimmer', { to: 'marks' })!
+    const hero = Object.entries(bbq.cast).find(([, m]) => m.role === 'hero')![0]
+    expect(withMark.ambient.at(-1)).toMatchObject({ picture: 'symbol-heat-shimmer', on: hero })
+    expect(placePicture(bbq, LIBRARY, 'tool-broom', { to: 'marks' })).toBeNull()
   })
 })

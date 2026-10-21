@@ -1,8 +1,7 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { verifyPin } from '../game/remote'
+import { useCallback, useEffect, useMemo, useRef, useState, type DragEvent, type MouseEvent } from 'react'
 import { bubbleOutline, compileStory, FPS, type Frame } from './compile'
 import { LIBRARY, STORY_DRAFTS } from './drafts'
-import { STORY_SCHEMA, VERBS, cleanStory, describeStep, groupPictures, playsText, versionFor, type Ambient, type CastRole, type Flow, type Prop, type PropSlot, type Speed, type Step, type Story, type Verb } from './format'
+import { STORY_SCHEMA, VERBS, canPlace, cleanStory, describeStep, groupPictures, placePicture, playsText, versionFor, type Ambient, type DropTarget, type CastRole, type Flow, type Prop, type PropSlot, type Speed, type Step, type Story, type Verb } from './format'
 import { loadStories, resetStory, saveStory, storyHash, type SavedStory } from './store'
 
 const DRAFT_BY_ID = Object.fromEntries(STORY_DRAFTS.map((s) => [s.id, s]))
@@ -26,9 +25,6 @@ export default function StoryStudio() {
   const [saved, setSaved] = useState<Record<string, SavedStory>>({})
   const [docs, setDocs] = useState<Record<string, Story>>(DRAFT_BY_ID)
   const [dirty, setDirty] = useState<Set<string>>(new Set())
-  const [pin, setPin] = useState<string | null>(null)
-  const [typed, setTyped] = useState('')
-  const [pinWrong, setPinWrong] = useState(false)
   const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle')
   const [docId, setDocId] = useState(() => (typeof location !== 'undefined' && location.hash.slice(1)) || STORY_DRAFTS[0].id)
   const [newName, setNewName] = useState('')
@@ -47,7 +43,8 @@ export default function StoryStudio() {
     if (typeof history !== 'undefined') history.replaceState(null, '', `#${story.id}`)
   }, [story.id])
   const compiled = useMemo(() => compileStory(story, LIBRARY), [story])
-  const editable = !!pin
+  // No PIN for bubble stories (Frank, 21 Oct): anyone with the studio open can edit and save.
+  const editable = true
 
   // ── Playback ──
   const [playing, setPlaying] = useState(true)
@@ -105,27 +102,68 @@ export default function StoryStudio() {
   }
   const dragFrom = useRef<number | null>(null)
 
-  const unlock = async () => {
-    if (await verifyPin(typed, db)) {
-      setPin(typed)
-      setPinWrong(false)
-    } else setPinWrong(true)
+  // ── Drag and drop from the library (Frank, 21 Oct): drag a picture onto the story, or tap it and tap where it goes ──
+  const [carrying, setCarrying] = useState<{ id: string; tapped: boolean } | null>(null)
+  const [over, setOver] = useState<string | null>(null)
+  const carriedKind = carrying ? LIBRARY.pictures[carrying.id]?.kind : undefined
+  useEffect(() => {
+    if (!carrying?.tapped) return
+    const esc = (e: KeyboardEvent) => { if (e.key === 'Escape') setCarrying(null) }
+    addEventListener('keydown', esc)
+    return () => removeEventListener('keydown', esc)
+  }, [carrying])
+  const place = (target: DropTarget) => {
+    const next = carrying && placePicture(story, LIBRARY, carrying.id, target)
+    if (next) edit(next)
+    setCarrying(null)
+    setOver(null)
   }
+  /** Makes an element a drop spot for the carried picture; it lights up when the picture can land there. */
+  const dropZone = (target: DropTarget, base = '') => {
+    const ok = editable && !!carriedKind && canPlace(story, carriedKind, target)
+    const key = JSON.stringify(target)
+    return {
+      className: `${base}${ok ? ' ss-drop-ok' : ''}${ok && over === key ? ' ss-drop-over' : ''}`,
+      onDragOver: (e: DragEvent) => {
+        if (!ok) return
+        e.preventDefault()
+        e.stopPropagation()
+        if (over !== key) setOver(key)
+      },
+      onDragLeave: (e: DragEvent) => {
+        if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setOver((o) => (o === key ? null : o))
+      },
+      onDrop: (e: DragEvent) => {
+        if (!ok) return
+        e.preventDefault()
+        e.stopPropagation()
+        place(target)
+      },
+      // A tapped picture lands on the next highlighted spot tapped, before any menu inside it opens.
+      onClickCapture: (e: MouseEvent) => {
+        if (!ok || !carrying?.tapped) return
+        e.preventDefault()
+        e.stopPropagation()
+        place(target)
+      },
+    }
+  }
+
   const saveAll = async () => {
-    if (!pin || !dirty.size) return
+    if (!dirty.size) return
     setSaveState('saving')
     const done: Record<string, SavedStory> = {}
     for (const id of dirty) {
       const s: SavedStory = { ...docs[id], draftHash: DRAFT_BY_ID[id] ? storyHash(DRAFT_BY_ID[id]) : undefined }
-      if (await saveStory(pin, s, db)) done[id] = s
+      if (await saveStory(s, db)) done[id] = s
     }
     setSaved((m) => ({ ...m, ...done }))
     setDirty((d) => new Set([...d].filter((id) => !done[id])))
     setSaveState(Object.keys(done).length === dirty.size ? 'saved' : 'error')
   }
   const backToDraft = async () => {
-    if (!pin || !DRAFT_BY_ID[story.id]) return
-    if (!saved[story.id] || (await resetStory(pin, story.id, db))) {
+    if (!DRAFT_BY_ID[story.id]) return
+    if (!saved[story.id] || (await resetStory(story.id, db))) {
       setSaved((m) => Object.fromEntries(Object.entries(m).filter(([k]) => k !== story.id)))
       setDocs((d) => ({ ...d, [story.id]: DRAFT_BY_ID[story.id] }))
       setDirty((s) => new Set([...s].filter((k) => k !== story.id)))
@@ -156,18 +194,8 @@ export default function StoryStudio() {
         <a href="/studio">← Recipe studio</a>
         <span className="st-dim">{loaded ? (db ? 'Saved for everyone' : 'Local copy: stories stay in this browser') : 'Loading…'}</span>
         <span className="st-grow" />
-        {editable ? (
-          <>
-            <span className={`st-save ${saveState === 'error' ? 'error' : ''}`}>{saveState === 'saving' ? 'Saving…' : saveState === 'saved' ? 'Saved' : saveState === 'error' ? 'Not saved' : dirty.size ? `${dirty.size} unsaved` : 'All saved'}</span>
-            <button type="button" disabled={!dirty.size} onClick={() => void saveAll()}>Save</button>
-          </>
-        ) : (
-          <form className="st-pin" onSubmit={(e) => { e.preventDefault(); void unlock() }}>
-            <input type="password" inputMode="numeric" placeholder="PIN to edit" value={typed} onChange={(e) => setTyped(e.target.value)} />
-            <button type="submit">Unlock</button>
-            {pinWrong && <b>Not right</b>}
-          </form>
-        )}
+        <span className={`st-save ${saveState === 'error' ? 'error' : ''}`}>{saveState === 'saving' ? 'Saving…' : saveState === 'saved' ? 'Saved' : saveState === 'error' ? 'Not saved' : dirty.size ? `${dirty.size} unsaved` : 'All saved'}</span>
+        <button type="button" disabled={!dirty.size} onClick={() => void saveAll()}>Save</button>
       </header>
 
       <aside className="st-list">
@@ -191,8 +219,8 @@ export default function StoryStudio() {
           </form>
         )}
         <h2>Picture library</h2>
-        <p className="st-dim">Codex adds and replaces pictures. A new version reaches every story straight away; pin an older one in a story’s cast to put it back. Tap a group to open it.</p>
-        <PictureLibrary story={story} />
+        <p className="st-dim">Drag a picture onto the story on the right: a step, the cast, Props or Extra marks. Or tap a picture, then tap where it goes. Codex adds and replaces pictures; a new version reaches every story straight away.</p>
+        <PictureLibrary story={story} editable={editable} carrying={carrying?.id ?? null} onCarry={setCarrying} />
       </aside>
 
       <main className="st-main">
@@ -245,19 +273,30 @@ export default function StoryStudio() {
       </main>
 
       <aside className="st-side">
+        {carrying?.tapped && (
+          <p className="ss-carry">
+            Placing <b>{picLabel(carrying.id)}</b>: tap a highlighted spot. <button type="button" className="st-mini" onClick={() => setCarrying(null)}>Cancel</button>
+          </p>
+        )}
         <h2>Steps, in order</h2>
-        <p className="st-dim">Drag a step, or use the arrows, to change the order. Tap a step’s number to watch it.</p>
+        <p className="st-dim">Drag a step, or use the arrows, to change the order. Tap a step’s number to watch it. Drop a picture on a step to make it the one acting, or a mark to use at each touch.</p>
         <ol className="ss-steps">
           {story.steps.map((s, i) => {
             const needs = VERBS[s.do].needs
+            // One row is both a drop spot for library pictures and a handle for reordering steps.
+            const zone = dropZone({ to: 'step', index: i }, i + 1 === currentStep ? 'on' : '')
             return (
               <li
                 key={i}
-                className={i + 1 === currentStep ? 'on' : ''}
+                {...zone}
                 draggable={editable}
                 onDragStart={() => { dragFrom.current = i }}
-                onDragOver={(e) => e.preventDefault()}
-                onDrop={() => { if (dragFrom.current !== null) moveStep(dragFrom.current, i); dragFrom.current = null }}
+                onDragOver={(e) => { if (carrying) zone.onDragOver(e); else e.preventDefault() }}
+                onDrop={(e) => {
+                  if (carrying) return zone.onDrop(e)
+                  if (dragFrom.current !== null) moveStep(dragFrom.current, i)
+                  dragFrom.current = null
+                }}
               >
                 <button type="button" className="ss-num" onClick={() => { setPlaying(false); setF(intro.length + (windowOf(i)?.start ?? 0)) }} title="Watch this step">{i + 1}</button>
                 <div className="ss-fields">
@@ -286,7 +325,7 @@ export default function StoryStudio() {
           {Object.entries(story.cast).map(([as, m]) => {
             const p = LIBRARY.pictures[m.picture]
             return (
-              <li key={as}>
+              <li key={as} {...dropZone({ to: 'cast', as })}>
                 <img src={versionFor(LIBRARY, m.picture, m.version)?.url} alt="" />
                 <b>{as}</b>
                 <select disabled={!editable} value={m.picture} onChange={(e) => edit({ ...story, cast: { ...story.cast, [as]: { picture: e.target.value, role: m.role } } })}><ObjectOptions /></select>
@@ -301,6 +340,7 @@ export default function StoryStudio() {
             )
           })}
         </ul>
+        {editable && <div {...dropZone({ to: 'cast' }, 'ss-dropbox')}>Drop a picture here to add it to the cast; drop it on a cast member to swap its picture</div>}
         {editable && <AddCast onAdd={(as, picture) => edit({ ...story, cast: { ...story.cast, [as]: { picture, role: 'support' } } })} taken={castNames} />}
 
         <h2>Extra marks</h2>
@@ -309,7 +349,7 @@ export default function StoryStudio() {
           {story.ambient.map((a, i) => {
             const set = (next: Ambient) => edit({ ...story, ambient: story.ambient.map((x, j) => (j === i ? next : x)) })
             return (
-              <li key={i}>
+              <li key={i} {...dropZone({ to: 'marks', index: i })}>
                 <img src={versionFor(LIBRARY, a.picture)?.url} alt="" />
                 <select disabled={!editable} value={a.picture} onChange={(e) => set({ ...a, picture: e.target.value })}>{MARKS.map(([id, p]) => <option key={id} value={id}>{p.label}</option>)}</select>
                 on <select disabled={!editable} value={a.on} onChange={(e) => set({ ...a, on: e.target.value })}>{castNames.map((c) => <option key={c} value={c}>{c}</option>)}</select>
@@ -319,6 +359,7 @@ export default function StoryStudio() {
             )
           })}
         </ul>
+        {editable && <div {...dropZone({ to: 'marks' }, 'ss-dropbox')}>Drop a mark here to add it, riding on the main picture</div>}
         {editable && <button type="button" className="st-add" onClick={() => edit({ ...story, ambient: [...story.ambient, { picture: MARKS[0][0], on: castNames[0], fromStep: 1, toStep: 1 }] })}>Add an extra mark</button>}
         <h2>Props</h2>
         <p className="st-dim">Small scene-setting pictures, like the BBQ tools and sauces, that circle the bubble or sit in a corner, away from the main action.</p>
@@ -326,7 +367,7 @@ export default function StoryStudio() {
           {story.props.map((pr, i) => {
             const set = (next: Prop) => edit({ ...story, props: story.props.map((x, j) => (j === i ? next : x)) })
             return (
-              <li key={i}>
+              <li key={i} {...dropZone({ to: 'props', index: i })}>
                 <img src={versionFor(LIBRARY, pr.picture)?.url} alt="" />
                 <select disabled={!editable} value={pr.picture} onChange={(e) => set({ ...pr, picture: e.target.value })}><ObjectOptions /></select>
                 <select disabled={!editable} value={pr.at} onChange={(e) => set({ ...pr, at: e.target.value as PropSlot })}>{Object.entries(SLOTS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}</select>
@@ -336,6 +377,7 @@ export default function StoryStudio() {
             )
           })}
         </ul>
+        {editable && <div {...dropZone({ to: 'props' }, 'ss-dropbox')}>Drop a picture here to add it circling the bubble</div>}
         {editable && <button type="button" className="st-add" onClick={() => edit({ ...story, props: [...story.props, { picture: OBJECTS[0][0], at: 'orbit', fromStep: 1, toStep: Math.max(1, story.steps.length - 1) }] })}>Add a prop</button>}
         {story.notes && <><h2>Notes</h2><p className="st-dim">{story.notes}</p></>}
       </aside>
@@ -344,7 +386,7 @@ export default function StoryStudio() {
 }
 
 /** The library in fold-out groups, with a search box. Groups holding a picture this story uses are marked. */
-function PictureLibrary({ story }: { story: Story }) {
+function PictureLibrary({ story, editable, carrying, onCarry }: { story: Story; editable: boolean; carrying: string | null; onCarry: (c: { id: string; tapped: boolean } | null) => void }) {
   const [q, setQ] = useState('')
   const used = new Set([...Object.values(story.cast).map((m) => m.picture), ...story.ambient.map((a) => a.picture), ...story.props.map((p) => p.picture), ...story.steps.flatMap((s) => (s.mark ? [s.mark] : []))])
   const needle = q.trim().toLowerCase()
@@ -360,8 +402,20 @@ function PictureLibrary({ story }: { story: Story }) {
             <summary>{g.label} <small>{g.pictures.length}{inStory ? ` · ${inStory} in this story` : ''}</small></summary>
             <ul className="ss-lib">
               {g.pictures.map(([id, p]) => (
-                <li key={id} title={p.review?.note ?? ''} className={used.has(id) ? 'used' : ''}>
-                  <img src={versionFor(LIBRARY, id)?.url} alt="" loading="lazy" />
+                <li
+                  key={id}
+                  title={p.review?.note ?? ''}
+                  className={`${used.has(id) ? 'used' : ''}${carrying === id ? ' carrying' : ''}`}
+                  draggable={editable}
+                  onDragStart={(e) => {
+                    e.dataTransfer.setData('text/plain', id)
+                    e.dataTransfer.effectAllowed = 'copy'
+                    onCarry({ id, tapped: false })
+                  }}
+                  onDragEnd={() => onCarry(null)}
+                  onClick={() => editable && onCarry(carrying === id ? null : { id, tapped: true })}
+                >
+                  <img src={versionFor(LIBRARY, id)?.url} alt="" loading="lazy" draggable={false} />
                   <span><span>{p.label}<small> · v{p.current}{p.versions.length > 1 ? ` of ${p.versions.length}` : ''}{p.review?.status === 'rework-requested' ? ' · rework asked' : ''}</small></span><code>{id}</code></span>
                 </li>
               ))}

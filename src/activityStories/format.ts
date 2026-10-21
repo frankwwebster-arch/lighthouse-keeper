@@ -265,6 +265,78 @@ export function playsText([lo, hi]: [number, number]): string {
   return lo === 0 ? `plays up to ${hi} times` : `plays ${lo}–${hi} times`
 }
 
+/** Where a picture dragged from the studio's library can land (Frank, 21 Oct: drag and drop instead of long menus). */
+export type DropTarget =
+  | { to: 'cast'; as?: string }
+  | { to: 'step'; index: number }
+  | { to: 'props'; index?: number }
+  | { to: 'marks'; index?: number }
+
+/** Whether a picture of this kind can land there: objects join the cast, act in a step or circle as props; marks go on a step's touches or ride as extra marks. */
+export function canPlace(story: Story, kind: Picture['kind'], target: DropTarget): boolean {
+  switch (target.to) {
+    case 'cast':
+    case 'props':
+      return kind === 'object'
+    case 'marks':
+      return kind === 'mark' && Object.keys(story.cast).length > 0
+    case 'step': {
+      const s = story.steps[target.index]
+      if (!s) return false
+      return VERBS[s.do].needs.includes(kind === 'object' ? 'who' : 'onto')
+    }
+  }
+}
+
+/** A fresh cast name from a picture's label: “Sponge (yellow)” becomes sponge, then sponge-2 if that is taken. */
+function castName(story: Story, label: string): string {
+  const base = (label.toLowerCase().match(/[a-z0-9]+/)?.[0] ?? 'extra').slice(0, 40)
+  let name = base
+  for (let n = 2; story.cast[name]; n++) name = `${base}-${n}`
+  return name
+}
+
+/**
+ * The story after a picture is dropped on a target, or null if it can't land there.
+ * Cast: on a member swaps its picture (keeping its role), elsewhere adds a helper.
+ * Step: an object becomes the step's actor (joining the cast if it isn't in it); a mark becomes its touch mark.
+ * Props: on a prop swaps its picture, elsewhere adds one circling for the retold part of the story.
+ * Extra marks: on one swaps its picture, elsewhere adds one riding on the main picture.
+ */
+export function placePicture(story: Story, lib: Library, picture: string, target: DropTarget): Story | null {
+  const pic = lib.pictures[picture]
+  if (!pic || !canPlace(story, pic.kind, target)) return null
+  const lastStep = Math.max(1, story.steps.length - 1)
+  switch (target.to) {
+    case 'cast': {
+      const m = target.as ? story.cast[target.as] : undefined
+      if (target.as && m) return { ...story, cast: { ...story.cast, [target.as]: { picture, role: m.role } } }
+      return { ...story, cast: { ...story.cast, [castName(story, pic.label)]: { picture, role: 'support' } } }
+    }
+    case 'step': {
+      const steps = [...story.steps]
+      const s = steps[target.index]
+      if (pic.kind === 'mark') {
+        steps[target.index] = { ...s, mark: picture }
+        return { ...story, steps }
+      }
+      const existing = Object.entries(story.cast).find(([, m]) => m.picture === picture)?.[0]
+      const who = existing ?? castName(story, pic.label)
+      steps[target.index] = { ...s, who }
+      return { ...story, cast: existing ? story.cast : { ...story.cast, [who]: { picture, role: 'support' } }, steps }
+    }
+    case 'props': {
+      if (target.index !== undefined && story.props[target.index]) return { ...story, props: story.props.map((p, i) => (i === target.index ? { ...p, picture } : p)) }
+      return { ...story, props: [...story.props, { picture, at: 'orbit', fromStep: story.loopFrom ?? 1, toStep: lastStep }] }
+    }
+    case 'marks': {
+      if (target.index !== undefined && story.ambient[target.index]) return { ...story, ambient: story.ambient.map((a, i) => (i === target.index ? { ...a, picture } : a)) }
+      const on = Object.entries(story.cast).find(([, m]) => m.role === 'hero')?.[0] ?? Object.keys(story.cast)[0]
+      return { ...story, ambient: [...story.ambient, { picture, on, fromStep: 1, toStep: lastStep }] }
+    }
+  }
+}
+
 /** The version of a picture a cast member uses (pinned, or the library's current). */
 export function versionFor(lib: Library, picture: string, pinned?: number): PictureVersion | undefined {
   const p = lib.pictures[picture]

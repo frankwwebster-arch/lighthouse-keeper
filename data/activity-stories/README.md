@@ -305,8 +305,13 @@ rules, which came out of the 20 October review of the V2 examples:
 
 ## Workflows
 
-**Frank adjusts a story.** Studio → Bubble stories, unlock with the PIN,
-change, Save. Saved for everyone on the live site.
+**Frank adjusts a story.** Studio → Bubble stories (no PIN since 21 Oct),
+change, Save. Saved for everyone on the live site. Pictures go in by drag
+and drop from the library (or tap a picture, then tap where it goes): on a
+step it becomes the one acting (a mark becomes the step's touch mark), on
+the cast it joins as a helper or swaps a member's picture, on Props it
+circles the bubble for the retold part, on Extra marks it rides on the main
+picture. The logic is `placePicture` in `format.ts`.
 
 **Codex replaces a picture.** Draw the new version to the standard, then:
 

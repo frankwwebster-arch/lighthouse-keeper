@@ -10,7 +10,8 @@ export async function PUT(req: Request, { params }: { params: { id: string } }) 
   if (!hasDb()) return NextResponse.json({ error: 'no database' }, { status: 503 })
   const body = (await req.json().catch(() => ({}))) as { pin?: unknown; doc?: unknown }
   await ensureSchema()
-  if (!(await pinOk(body.pin))) return NextResponse.json({ error: 'wrong pin' }, { status: 403 })
+  // Bubble stories need no PIN (Frank, 21 Oct: pointless for a family tool); recipes and object types still do.
+  if (!params.id.startsWith('story-') && !(await pinOk(body.pin))) return NextResponse.json({ error: 'wrong pin' }, { status: 403 })
   // Object types are kept as `cat-<id>` and bubble stories as `story-<id>`, so they never clash with a recipe of the same name.
   const kind = params.id.startsWith('cat-') ? 'cat' : params.id.startsWith('story-') ? 'story' : 'recipe'
   const doc = kind === 'cat' ? cleanCategory(body.doc) : kind === 'story' ? cleanStory(body.doc) : cleanRecipe(body.doc)
@@ -26,7 +27,7 @@ export async function DELETE(req: Request, { params }: { params: { id: string } 
   if (!hasDb()) return NextResponse.json({ error: 'no database' }, { status: 503 })
   const body = (await req.json().catch(() => ({}))) as { pin?: unknown }
   await ensureSchema()
-  if (!(await pinOk(body.pin))) return NextResponse.json({ error: 'wrong pin' }, { status: 403 })
+  if (!params.id.startsWith('story-') && !(await pinOk(body.pin))) return NextResponse.json({ error: 'wrong pin' }, { status: 403 })
   await sql()`delete from studio_docs where id = ${params.id}`
   return NextResponse.json({ ok: true })
 }
