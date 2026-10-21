@@ -1,0 +1,88 @@
+{
+  "schema": "lighthouse-keeper/kitchen-oven-off-ligne-claire@13",
+  "set": "kitchen-oven-off-ligne-claire-v13",
+  "created": "2026-10-22",
+  "status": "immutable-reversible-review-candidate-not-approved-not-registered",
+  "scope": "Intact Off oven derived from approved V8 On; remove cavity and warning illumination only",
+  "approvedAuthorities": {
+    "on": {
+      "set": "kitchen-oven-ligne-claire-v8",
+      "file": "art/drafts/kitchen-oven-ligne-claire-2026-10-21-v8/candidates/oven/oven-on.png",
+      "sha256": "0ee7572ec03021a7efb747254bc97974de380cdee45a49d47e74b7aba9fd3d80"
+    },
+    "broken": {
+      "set": "kitchen-oven-broken-ligne-claire-v12",
+      "file": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v12/candidates/oven/oven-broken.png",
+      "sha256": "cd9d2db29f58a000665fbebe79d88157a855271217d3ddbdd1b04481d0ad9988",
+      "approval": "docs/review/kitchen-oven-broken-ligne-claire-v12-approval-2026-10-22.json",
+      "approvalSha256": "319ccae7aa426ef4534af87491ed43859b6821202608e68d54f7558c4822dbee"
+    }
+  },
+  "source": {
+    "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/oven-off.png",
+    "sha256": "c2f5687b598b42f15b42a2323e2d441d1b0b892ea2f75cbea590f4190e6c0b8e",
+    "preserved": true
+  },
+  "candidate": {
+    "file": "art/drafts/kitchen-oven-off-ligne-claire-2026-10-22-v13/candidates/oven/oven-off.png",
+    "sha256": "432fdb51c18ccb9ceb622309f3e8933139bf8573cbeb3ff2bbf8e457c054ef75",
+    "master": "art/drafts/kitchen-oven-off-ligne-claire-2026-10-22-v13/masters/oven-off-master-8x.png",
+    "masterSha256": "e51ff46289a08cafa7eb25f7b71b088c3e8e2048eed41f81e17bbb0962ef4e4e",
+    "pixels": [
+      92,
+      85
+    ],
+    "alphaBounds": [
+      4,
+      4,
+      88,
+      81
+    ],
+    "alphaSha256": "1c85418aff1f1cd096368e83d4515f08c18fd02a392a9eec3149fd55bee275a9"
+  },
+  "registration": {
+    "lightingMasks": {
+      "cavity": [
+        16,
+        34,
+        78,
+        65
+      ],
+      "warningLamp": [
+        70,
+        20,
+        80,
+        31
+      ]
+    },
+    "changedPixelsOutsideMasks": 0,
+    "changedPixelsInsideMasks": 2029,
+    "exactV8PixelsOutsideMasks": true
+  },
+  "evidence": [
+    {
+      "file": "art/drafts/kitchen-oven-off-ligne-claire-2026-10-22-v13/evidence/approved-family-on-off-broken-v13.png",
+      "sha256": "c541969b08fcc15c1f7c259c1938420fa3ae6db8f7a009dd4d0ef4a439c13774"
+    },
+    {
+      "file": "art/drafts/kitchen-oven-off-ligne-claire-2026-10-22-v13/evidence/on-off-ghost-v13.png",
+      "sha256": "e423a8c7fa9890b825326a9372e69d5e9dc1df008b4b1f8e3a718ef7ca2637b3"
+    },
+    {
+      "file": "art/drafts/kitchen-oven-off-ligne-claire-2026-10-22-v13/evidence/complete-current-vs-candidate-off-v13.png",
+      "sha256": "33d76a411c27014c776c01c00a1d3af6f2a340f08b7ecdd1077ed2954ce712f8"
+    }
+  ],
+  "checks": {
+    "exactCanvasPaddingAndAlpha": true,
+    "exactV8PixelsOutsideLightingMasks": true,
+    "intactGeometry": true,
+    "ovenDatumUnchanged": true,
+    "movementAnimationInteractionRepairHealingContractsUnchanged": true,
+    "runtimeChanged": false,
+    "registrationPerformed": false,
+    "currentSelectorChanged": false
+  },
+  "approvalRequiredFor": "any V13 registration, promotion, selector change, production copy or runtime wiring",
+  "rollback": "Discard only this V13 draft, review route, builder and delivery record. Approved V8 On, approved V12 Broken and every source/production/runtime asset remain byte-for-byte intact."
+}

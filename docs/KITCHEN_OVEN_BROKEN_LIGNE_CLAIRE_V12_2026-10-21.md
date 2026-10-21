@@ -1,6 +1,6 @@
 # Kitchen Oven Broken Ligne-Claire V12
 
-Status: immutable review candidate; not approved, registered, promoted or wired.
+Status: approved visual authority; immutable, not promoted or runtime-wired.
 
 Review route: `/keeper-review/kitchen-oven-broken-ligne-claire-v12/`
 
@@ -47,15 +47,18 @@ are used by V12.
 
 ## Approval and rollback
 
-`batch-register.json` remains closed with `register:false`, `promote:false`
-and no selector changes. Approval is required before any candidate can become
-current. Rollback is immediate: discard only the V12 draft, builder, review
-route, rejected-source provenance and this document.
+Frank approved the exact V12 family on 22 October 2026. The separate approval
+record registers that decision without rewriting the immutable review pack:
+`docs/review/kitchen-oven-broken-ligne-claire-v12-approval-2026-10-22.json`.
+`batch-register.json` therefore remains closed with `register:false`,
+`promote:false` and no selector changes. Rollback of the decision is immediate:
+remove only the approval record; every V12 review byte remains preserved.
 
 ## Verification
 
 ```sh
 npm run verify:kitchen-oven-broken-ligne-claire-v12
+npm run verify:kitchen-oven-broken-ligne-claire-v12-approval
 npm run maintain:keeper-review
 npm test
 npm run build
@@ -63,6 +66,7 @@ npm run build
 
 ## Documentation audit
 
-README, STATUS, DECISIONS, package scripts, this record and the machine-readable
-manifest all identify V8 On as current authority and V12 as an unregistered
-Broken-only review candidate. No production selector or runtime claim changed.
+README, STATUS, DECISIONS, package scripts, this record and the immutable
+machine-readable manifest identify V8 On and V12 Broken as approved visual
+authorities. V12's manifest remains an accurate pre-approval snapshot. No
+production selector, source, Final or runtime claim changed.

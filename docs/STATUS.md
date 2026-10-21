@@ -630,8 +630,21 @@ authority rather than preserving V9/V10's globally different cabinet. Only the
 failed third dial, burnt roast and shallow ajar-door cue are locally different;
 the verifier requires zero pixel drift everywhere else and exact V8 alpha in
 all static states and all 40-frame strips. V8, V9 and V10 remain untouched.
-V12 is review-only, unregistered, unwired and blocked on explicit approval.
-Delivery: `docs/KITCHEN_OVEN_BROKEN_LIGNE_CLAIRE_V12_2026-10-21.md`.
+Frank approved the exact V12 family on 22 October 2026. Its hash-pinned
+approval record changes no immutable pack, source, production or runtime byte;
+the pre-approval register remains closed. Delivery:
+`docs/KITCHEN_OVEN_BROKEN_LIGNE_CLAIRE_V12_2026-10-21.md`. Approval:
+`docs/review/kitchen-oven-broken-ligne-claire-v12-approval-2026-10-22.json`.
+
+Kitchen Oven Off Ligne-Claire V13 at
+`/keeper-review/kitchen-oven-off-ligne-claire-v13/` supplies the missing intact
+Off state. It starts from approved V8 On and removes only cavity and warning-
+lamp illumination. The verifier requires exact V8 pixels everywhere outside
+those two masks plus exact `92 × 85` canvas, alpha, `(4,4)–(88,81)` padding and
+datum. Approved V8 On and approved V12 Broken are included byte-for-byte in the
+family proof. V13 is an immutable, reversible, unregistered and unwired review
+candidate behind a closed approval gate; no healing or gameplay behaviour
+changed. Delivery: `docs/KITCHEN_OVEN_OFF_LIGNE_CLAIRE_V13_2026-10-22.md`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
@@ -788,8 +801,10 @@ implemented and no artwork change is authorised by it.
 The review-payload housekeeping pass completed on 21 October 2026. The exact
 clean-checkout baseline failed at 53.3148 MiB; the content-addressed sweep now
 archives every review image plus JSON/JSON.GZ at or above 24 KiB, leaving HTML
-and small JSON public. `public/` is 44.9008 MiB, 5.0992 MiB below the unchanged
-50 MiB guard. Runtime `public/sprites` remains byte-identical at 36.9977 MiB.
+and small JSON public. After V13, 4,795 references across 204 set manifests
+resolve to 2,935 immutable objects; `public/` is 45.34 MiB, 4.66 MiB below the
+unchanged 50 MiB guard. Runtime `public/sprites` remains byte-identical at
+36.9977 MiB.
 Use `npm run maintain:keeper-review` after any review builder; it archives,
 verifies object and manifest hashes, checks historical URL resolution and then
 checks the deployment payload. Repository size, `review-archive/` and
