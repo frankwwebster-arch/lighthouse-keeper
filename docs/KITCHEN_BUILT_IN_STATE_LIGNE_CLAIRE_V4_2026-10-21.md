@@ -6,8 +6,15 @@ Original immutable review: `/keeper-review/kitchen-built-in-state-ligne-claire-v
 
 Corrected review delivery: `/keeper-review/kitchen-built-in-state-ligne-claire-v4-delivery-v3/`
 
-Status: complete immutable static review candidate; not approved, registered,
-promoted, wired or current.
+Status: rejected immutable static review candidate; never approved, registered,
+promoted, wired or current. The rejection record is
+`docs/review/kitchen-built-in-state-ligne-claire-v4-rejection-2026-10-21.json`.
+
+Frank rejected V4 because its direct low-resolution RGB remapping destroyed
+sharpness, exaggerated pixel stair-stepping and misclassified dishwasher fascia
+regions into incorrect turquoise blocks. The pack remains unchanged as
+provenance only. Its per-pixel palette-remapping method must not be reused for
+the replacement.
 
 The original page's archived image URLs returned external redirects that the
 review surface did not display. Delivery V2 preserved that page and added

@@ -39,6 +39,11 @@ Lock the source canvas and semantic contract before changing colour or line.
 
 Use exact tomato-V2 ink `#051824` as the normal contour colour.
 
+"Soft" may describe the calm balance of broad colour fields, never the edge
+quality. Ligne-claire contours must be sharp, deliberate and confidently
+resolved. Blur, fuzzy resampling, low-resolution stair-stepping and enlarged
+pixel structure are failures, even when the palette is otherwise correct.
+
 - Outer silhouettes are continuous, confident and mostly even in weight.
 - At native game scale, use one decisive pixel for ordinary assets. Larger
   concept masters may use a proportionate two-pixel internalised contour, but
@@ -50,6 +55,13 @@ Use exact tomato-V2 ink `#051824` as the normal contour colour.
 - Corners may soften slightly in the line, but geometry stays square, parallel
   or round wherever the current asset says it is.
 - Avoid hatching, cross-hatching, repeated texture marks and decorative noise.
+- Do not create a candidate by independently remapping the RGB value of every
+  pixel in a small runtime raster. That method converts source antialiasing and
+  tonal ramps into false shapes, noisy colour bands and broken functional
+  details.
+- Do not present a Lanczos enlargement, softened alpha mask or smoothed trace
+  of a low-resolution sprite as a high-resolution drawing master. A replacement
+  master must contain genuinely authored, source-locked linework.
 
 ## 3. Form and projection
 
@@ -154,7 +166,9 @@ small cluster of exact marks explains function.
 ## 8. Review and rejection test
 
 Every candidate must be shown beside its exact current source, on transparency,
-at inspection scale and at native scale. Reject a candidate if any of the
+at native scale. When a high-resolution drawing master is used, show that actual
+master separately at inspection scale; do not substitute an enlarged runtime
+sprite. Reject a candidate if any of the
 following is true:
 
 - canvas, alpha bytes, bounds, padding, anchors, pivots or collisions differ;
@@ -163,6 +177,10 @@ following is true:
   changes;
 - a state loses or gains a functional cue;
 - the contour reads as a thick sticker rim;
+- the contour is blurred, fuzzy, stair-stepped, visibly pixelated or less sharp
+  than the current authority;
+- any tonal region has been misread as a new structural colour block, as in the
+  rejected V4 dishwasher fascia;
 - glossy highlights, gradients, texture, scenery, text or a cast shadow appear;
 - a full-state animation changes timing, registration or frame isolation;
 - an effect becomes detached from its owner;
