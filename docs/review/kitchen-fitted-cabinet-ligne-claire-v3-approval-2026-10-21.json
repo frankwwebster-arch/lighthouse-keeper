@@ -1,0 +1,33 @@
+{
+  "schema": "lighthouse-keeper/kitchen-review-approval@1",
+  "set": "kitchen-fitted-cabinet-ligne-claire-v3",
+  "approvedOn": "2026-10-21",
+  "approvedBy": "Frank",
+  "approvalWords": "approved. review tool not currently working, but the static images are very good indeed.",
+  "commit": "aa95b672",
+  "scope": [
+    "The exact V3 Cabinet A/B, fridge, sink-base and five join/healing candidate files are the approved fitted-family visual authority.",
+    "The complete static current-versus-candidate contact sheet is the approval evidence because the interactive review tool was not working for Frank.",
+    "Canvas, alpha, transparent padding, semantic geometry, pivots, anchors, collisions, movement, animation, interaction and healing contracts remain unchanged.",
+    "V3 source, candidate, review and evidence files remain immutable; this separate decision record records approval without rewriting the pack.",
+    "Approval does not overwrite legacy sources or production art and does not by itself wire the candidates into runtime code."
+  ],
+  "hashes": {
+    "manifest": "50f01ee27bdc8de9caaae9ba400326b56048d0ca7dc98bed1cb6cc318740a3ea",
+    "reviewShell": "159db7b90c3ad48b3e1bc76ca73fdf42f98bc5ba9f4be2e02a90c1deef6ff516",
+    "archiveManifest": "af894519ba8ce1d636c393f6aa54e9dc0205132393d65c028e88ca383eaa19c8",
+    "staticRoomProof": "bce182cb3511e4ae69bcf4f814abaf75690898e29dd52d0b687c1e442340656b",
+    "fridgeStandard": "14bd88c1219accf8258958b7a8c70f0e31f84a06401b802e503fa7645377b9b3",
+    "fridgeBroken": "c30e76fe857b10f2494be87c32152ae305545a10305db8df61231147054f329b",
+    "sinkStateBase": "fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2",
+    "joinBodyBackfill": "a6eb7269c068986f38ba771f48e77266b91899b611d31cdbc068c48dfd5eec64",
+    "countertopJoinCap": "1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96",
+    "neighbourSeamCleanupLeft": "c7fb536832e470a86d3b1e6f6342ba9984d09c30cdd35aca1dfba6a07a3d6430",
+    "neighbourSeamCleanupRight": "b07982a45d3e8cca1ccc1f45b681a5ba4a6d35de6d8592adf863a7422da6af1f"
+  },
+  "visualAuthority": "current-approved",
+  "promotion": "none",
+  "runtimeChanged": false,
+  "finalChanged": false,
+  "rollback": "Remove only this approval record to revoke the decision; all pre-V3 source and production files remain untouched."
+}

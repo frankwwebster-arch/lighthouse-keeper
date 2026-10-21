@@ -4,8 +4,9 @@ Date: 21 October 2026
 
 Review: `/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/`
 
-Status: complete immutable review candidate; not approved, registered,
-promoted, wired or current.
+Status: approved immutable fitted-family visual authority; not promoted or
+wired. Approval is recorded externally so the dated pack remains unchanged:
+`docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json`.
 
 ## Why V3 exists
 
@@ -98,9 +99,11 @@ first build, use the verifier only.
 
 ## Approval and rollback
 
-`batch-register.json` keeps registration and promotion false and contains no
-selector changes. Explicit approval is required before any candidate can become
-current.
+`batch-register.json` is the immutable pre-approval snapshot and therefore
+continues to record a closed registration gate. Frank approved the exact static
+V3 evidence on 21 October 2026; the separate hash-pinned approval record makes
+these files the current fitted-family visual authority without rewriting the
+pack, promoting Final files or changing runtime selectors.
 
 Rollback is immediate: discard only
 `art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/` and its matching

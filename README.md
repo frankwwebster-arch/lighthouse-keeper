@@ -737,9 +737,24 @@ eight Cabinet A/B variants, both fridge states, all three sink bases and the
 five healing layers under one palette, retains every interior construction mark
 and exact semantic mask, and uses smooth inspection rendering. V19/V37/V38/V41
 movement, state, ownership and 720-layout healing contracts are unchanged and
-hash-pinned. V3 is reversible and remains unregistered and unwired pending
-Frank's review. See
+hash-pinned. Frank approved the exact static V3 evidence on 21 October 2026;
+the immutable decision is recorded in
+[`docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json`](docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json).
+V3 is the current approved fitted-family visual authority, remains fully
+reversible, and is still unpromoted and unwired. See
 [`docs/KITCHEN_FITTED_CABINET_LIGNE_CLAIRE_V3_2026-10-21.md`](docs/KITCHEN_FITTED_CABINET_LIGNE_CLAIRE_V3_2026-10-21.md).
+Kitchen Built-In State Ligne-Claire V4 extends that exact approved family to
+the oven and dishwasher On/Broken state assets at
+`/keeper-review/kitchen-built-in-state-ligne-claire-v4/`. It contains seventeen
+new exact-alpha candidates: oven On, Broken, three Broken lighting combinations,
+both complete 40-frame Broken lighting strips, dishwasher On/Broken bases and
+all eight On/Broken edge-healing variants. V3 fridge, sink, cabinet and healing
+files are reused byte-for-byte; the sink is fixed to its existing canvas and
+room datum. Separate drip, water and suds effects, 4 fps timing, Broken movement
+locks, repair unlocks, effect ownership and all V41 healing behavior remain
+unchanged and hash-pinned. V4 is a reversible static review candidate and is
+not approved, registered, promoted or wired. See
+[`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_2026-10-21.md`](docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_2026-10-21.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

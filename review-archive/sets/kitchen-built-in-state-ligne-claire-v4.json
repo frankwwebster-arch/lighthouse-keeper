@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "set": "kitchen-built-in-state-ligne-claire-v4",
+  "page": {
+    "path": "public/keeper-review/kitchen-built-in-state-ligne-claire-v4/index.html",
+    "sha256": "27732340d908aa60e094dae5444ebde2b2eee88f53e1f0b94b5393acd929fcae",
+    "bytes": 2640
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/dishwasher--dishwasher-broken-le-re.png": {
+      "sha256": "97bbebbf4eb1017142eb68da237cd666e7ff3dd81ccce5b875dfb61d047a9705",
+      "extension": ".png",
+      "bytes": 8577,
+      "object": "review-archive/objects/97/97bbebbf4eb1017142eb68da237cd666e7ff3dd81ccce5b875dfb61d047a9705.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/97/97bbebbf4eb1017142eb68da237cd666e7ff3dd81ccce5b875dfb61d047a9705.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/dishwasher--dishwasher-broken-le-rj.png": {
+      "sha256": "cd72620125e92a6d29eb4e95eeca48c75c2f4648a27fe2ac1d2047b987102a8b",
+      "extension": ".png",
+      "bytes": 8484,
+      "object": "review-archive/objects/cd/cd72620125e92a6d29eb4e95eeca48c75c2f4648a27fe2ac1d2047b987102a8b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/cd/cd72620125e92a6d29eb4e95eeca48c75c2f4648a27fe2ac1d2047b987102a8b.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/dishwasher--dishwasher-broken-lj-re.png": {
+      "sha256": "2e1ca778f2a5daed2660991e832a88de427f4313bb075b5142ff43a1d25eafab",
+      "extension": ".png",
+      "bytes": 8488,
+      "object": "review-archive/objects/2e/2e1ca778f2a5daed2660991e832a88de427f4313bb075b5142ff43a1d25eafab.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2e/2e1ca778f2a5daed2660991e832a88de427f4313bb075b5142ff43a1d25eafab.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/dishwasher--dishwasher-broken-lj-rj.png": {
+      "sha256": "a27a62267c64470a1fde787b0288edb61a001ca7033c85580e5079c3d8c83208",
+      "extension": ".png",
+      "bytes": 8352,
+      "object": "review-archive/objects/a2/a27a62267c64470a1fde787b0288edb61a001ca7033c85580e5079c3d8c83208.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a2/a27a62267c64470a1fde787b0288edb61a001ca7033c85580e5079c3d8c83208.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/dishwasher--dishwasher-broken.png": {
+      "sha256": "97bbebbf4eb1017142eb68da237cd666e7ff3dd81ccce5b875dfb61d047a9705",
+      "extension": ".png",
+      "bytes": 8577,
+      "object": "review-archive/objects/97/97bbebbf4eb1017142eb68da237cd666e7ff3dd81ccce5b875dfb61d047a9705.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/97/97bbebbf4eb1017142eb68da237cd666e7ff3dd81ccce5b875dfb61d047a9705.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/dishwasher--dishwasher-on-le-re.png": {
+      "sha256": "f7c8367c14bdd889803ee12494a103f7ba2ac54efa0c9cf7fdc57bb77ccd15d8",
+      "extension": ".png",
+      "bytes": 4402,
+      "object": "review-archive/objects/f7/f7c8367c14bdd889803ee12494a103f7ba2ac54efa0c9cf7fdc57bb77ccd15d8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f7/f7c8367c14bdd889803ee12494a103f7ba2ac54efa0c9cf7fdc57bb77ccd15d8.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/dishwasher--dishwasher-on-le-rj.png": {
+      "sha256": "165856fd6df35bb9e36d02b9e03541ad0ac66ae2fe69aacf93c36a6fe4b4110f",
+      "extension": ".png",
+      "bytes": 4311,
+      "object": "review-archive/objects/16/165856fd6df35bb9e36d02b9e03541ad0ac66ae2fe69aacf93c36a6fe4b4110f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/16/165856fd6df35bb9e36d02b9e03541ad0ac66ae2fe69aacf93c36a6fe4b4110f.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/dishwasher--dishwasher-on-lj-re.png": {
+      "sha256": "8973f7d3d71a3003b688ad930912e612e74a6e814a64e16dc1b76146abd87990",
+      "extension": ".png",
+      "bytes": 4301,
+      "object": "review-archive/objects/89/8973f7d3d71a3003b688ad930912e612e74a6e814a64e16dc1b76146abd87990.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/89/8973f7d3d71a3003b688ad930912e612e74a6e814a64e16dc1b76146abd87990.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/dishwasher--dishwasher-on-lj-rj.png": {
+      "sha256": "09b975641bca872f2fa090fe2d4baade4d82f3139ee4da32594ec532c1341d95",
+      "extension": ".png",
+      "bytes": 4174,
+      "object": "review-archive/objects/09/09b975641bca872f2fa090fe2d4baade4d82f3139ee4da32594ec532c1341d95.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/09/09b975641bca872f2fa090fe2d4baade4d82f3139ee4da32594ec532c1341d95.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/dishwasher--dishwasher-on.png": {
+      "sha256": "f7c8367c14bdd889803ee12494a103f7ba2ac54efa0c9cf7fdc57bb77ccd15d8",
+      "extension": ".png",
+      "bytes": 4402,
+      "object": "review-archive/objects/f7/f7c8367c14bdd889803ee12494a103f7ba2ac54efa0c9cf7fdc57bb77ccd15d8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f7/f7c8367c14bdd889803ee12494a103f7ba2ac54efa0c9cf7fdc57bb77ccd15d8.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/evidence--broken-dishwasher-interior-candidate-room.png": {
+      "sha256": "decf83a084cd6fbf4e1fa83fb2e56be6d65c19e5b5570e127a4b357f9af23910",
+      "extension": ".png",
+      "bytes": 38559,
+      "object": "review-archive/objects/de/decf83a084cd6fbf4e1fa83fb2e56be6d65c19e5b5570e127a4b357f9af23910.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/de/decf83a084cd6fbf4e1fa83fb2e56be6d65c19e5b5570e127a4b357f9af23910.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/evidence--broken-dishwasher-interior-current-room.png": {
+      "sha256": "07bcc71275c5a43dece36e558ea4521933faf0d5a784a0d75a46f98449b24b6c",
+      "extension": ".png",
+      "bytes": 62858,
+      "object": "review-archive/objects/07/07bcc71275c5a43dece36e558ea4521933faf0d5a784a0d75a46f98449b24b6c.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/07/07bcc71275c5a43dece36e558ea4521933faf0d5a784a0d75a46f98449b24b6c.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/evidence--broken-dishwasher-right-candidate-room.png": {
+      "sha256": "63005a2079053b9812c76a897b65ed5aec4d7936e9a8f613875e1eb2b5153705",
+      "extension": ".png",
+      "bytes": 40377,
+      "object": "review-archive/objects/63/63005a2079053b9812c76a897b65ed5aec4d7936e9a8f613875e1eb2b5153705.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/63/63005a2079053b9812c76a897b65ed5aec4d7936e9a8f613875e1eb2b5153705.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/evidence--broken-dishwasher-right-current-room.png": {
+      "sha256": "ca5d57f7f63dd124b001cffed15318b25bee82a9d3a6f0c3e15989172d297bbb",
+      "extension": ".png",
+      "bytes": 63482,
+      "object": "review-archive/objects/ca/ca5d57f7f63dd124b001cffed15318b25bee82a9d3a6f0c3e15989172d297bbb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ca/ca5d57f7f63dd124b001cffed15318b25bee82a9d3a6f0c3e15989172d297bbb.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/evidence--dishwasher-on-broken-current-vs-candidate.png": {
+      "sha256": "e35e0e6327d0ecaf1815870ed810970325b06ab7db247cd2ed9fd0d6f47b4eec",
+      "extension": ".png",
+      "bytes": 1043323,
+      "object": "review-archive/objects/e3/e35e0e6327d0ecaf1815870ed810970325b06ab7db247cd2ed9fd0d6f47b4eec.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e3/e35e0e6327d0ecaf1815870ed810970325b06ab7db247cd2ed9fd0d6f47b4eec.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/evidence--on-broken-healing-current-vs-candidate.png": {
+      "sha256": "9f8036f263d14bc174d28eb3d52ecb6041d05668f736b1f08352c3dcb81a6a97",
+      "extension": ".png",
+      "bytes": 397871,
+      "object": "review-archive/objects/9f/9f8036f263d14bc174d28eb3d52ecb6041d05668f736b1f08352c3dcb81a6a97.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9f/9f8036f263d14bc174d28eb3d52ecb6041d05668f736b1f08352c3dcb81a6a97.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/evidence--on-dishwasher-left-candidate-room.png": {
+      "sha256": "647087873887b267c6ce629e78053e5dd9af534e038c4cdd4f3dfd64874d5818",
+      "extension": ".png",
+      "bytes": 32396,
+      "object": "review-archive/objects/64/647087873887b267c6ce629e78053e5dd9af534e038c4cdd4f3dfd64874d5818.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/64/647087873887b267c6ce629e78053e5dd9af534e038c4cdd4f3dfd64874d5818.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/evidence--on-dishwasher-left-current-room.png": {
+      "sha256": "c577c3b3e4d18f6c76c006709e4621a62e1bb85308fddf294db6261b56a2553b",
+      "extension": ".png",
+      "bytes": 53973,
+      "object": "review-archive/objects/c5/c577c3b3e4d18f6c76c006709e4621a62e1bb85308fddf294db6261b56a2553b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/c5/c577c3b3e4d18f6c76c006709e4621a62e1bb85308fddf294db6261b56a2553b.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/evidence--on-dishwasher-right-candidate-room.png": {
+      "sha256": "5b14fef8e20abef9a249e406eb61ba24e602476a1cd1548ae39cc29dd691c89f",
+      "extension": ".png",
+      "bytes": 32416,
+      "object": "review-archive/objects/5b/5b14fef8e20abef9a249e406eb61ba24e602476a1cd1548ae39cc29dd691c89f.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5b/5b14fef8e20abef9a249e406eb61ba24e602476a1cd1548ae39cc29dd691c89f.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/evidence--on-dishwasher-right-current-room.png": {
+      "sha256": "5575aec7b85202a7ad476d7bcf25323f3e9f9b8221db8521428252d5fd2a1d9d",
+      "extension": ".png",
+      "bytes": 54011,
+      "object": "review-archive/objects/55/5575aec7b85202a7ad476d7bcf25323f3e9f9b8221db8521428252d5fd2a1d9d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/55/5575aec7b85202a7ad476d7bcf25323f3e9f9b8221db8521428252d5fd2a1d9d.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/evidence--oven-broken-animation-sampler-current-vs-candidate.png": {
+      "sha256": "61309bf5d9bbcd307a74c0aeedd87542d05a67904ab99a38fd8a727c6806afa0",
+      "extension": ".png",
+      "bytes": 241662,
+      "object": "review-archive/objects/61/61309bf5d9bbcd307a74c0aeedd87542d05a67904ab99a38fd8a727c6806afa0.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/61/61309bf5d9bbcd307a74c0aeedd87542d05a67904ab99a38fd8a727c6806afa0.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/evidence--oven-on-broken-current-vs-candidate.png": {
+      "sha256": "222fc66b5bafcd585902ff09d915ef2fa145195c6a9cdad36b68570aa451275b",
+      "extension": ".png",
+      "bytes": 597964,
+      "object": "review-archive/objects/22/222fc66b5bafcd585902ff09d915ef2fa145195c6a9cdad36b68570aa451275b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/22/222fc66b5bafcd585902ff09d915ef2fa145195c6a9cdad36b68570aa451275b.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/oven--oven-broken-both-lit.png": {
+      "sha256": "98a6d3e09844a1d8e2b404846df36bdac0bb34de83d2e3beb724af642eb33b90",
+      "extension": ".png",
+      "bytes": 7899,
+      "object": "review-archive/objects/98/98a6d3e09844a1d8e2b404846df36bdac0bb34de83d2e3beb724af642eb33b90.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/98a6d3e09844a1d8e2b404846df36bdac0bb34de83d2e3beb724af642eb33b90.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/oven--oven-broken-cavity-flicker-f40.png": {
+      "sha256": "50aa7bbd5bb2e24701547df9f0a122875662b169e8eed64dd4ad9c9e4b55af99",
+      "extension": ".png",
+      "bytes": 16790,
+      "object": "review-archive/objects/50/50aa7bbd5bb2e24701547df9f0a122875662b169e8eed64dd4ad9c9e4b55af99.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/50/50aa7bbd5bb2e24701547df9f0a122875662b169e8eed64dd4ad9c9e4b55af99.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/oven--oven-broken-cavity-lit.png": {
+      "sha256": "0e74284c887e423d515937bff9511ac32edc5204c023c27e129c05c2b438a98d",
+      "extension": ".png",
+      "bytes": 7932,
+      "object": "review-archive/objects/0e/0e74284c887e423d515937bff9511ac32edc5204c023c27e129c05c2b438a98d.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0e/0e74284c887e423d515937bff9511ac32edc5204c023c27e129c05c2b438a98d.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/oven--oven-broken-warning-flicker-f40.png": {
+      "sha256": "518ce3aad17ef021beecf2e91fe38bec4344493a349edd16b20f07dda5f830a3",
+      "extension": ".png",
+      "bytes": 13176,
+      "object": "review-archive/objects/51/518ce3aad17ef021beecf2e91fe38bec4344493a349edd16b20f07dda5f830a3.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/51/518ce3aad17ef021beecf2e91fe38bec4344493a349edd16b20f07dda5f830a3.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/oven--oven-broken-warning-lit.png": {
+      "sha256": "eb400feeeb0494f230a8121dfbb62e5a3c2308b1504a1f40933db315d064ff75",
+      "extension": ".png",
+      "bytes": 6468,
+      "object": "review-archive/objects/eb/eb400feeeb0494f230a8121dfbb62e5a3c2308b1504a1f40933db315d064ff75.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/eb/eb400feeeb0494f230a8121dfbb62e5a3c2308b1504a1f40933db315d064ff75.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/oven--oven-broken.png": {
+      "sha256": "4c3936c2feb5eb69293b013923c880cc19790c4f81154095ba2f723a1bf91a08",
+      "extension": ".png",
+      "bytes": 6502,
+      "object": "review-archive/objects/4c/4c3936c2feb5eb69293b013923c880cc19790c4f81154095ba2f723a1bf91a08.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4c/4c3936c2feb5eb69293b013923c880cc19790c4f81154095ba2f723a1bf91a08.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/assets/oven--oven-on.png": {
+      "sha256": "b088fb365407292432d899b47f715ba371da0c80bfb897a11cb361203b7247eb",
+      "extension": ".png",
+      "bytes": 6764,
+      "object": "review-archive/objects/b0/b088fb365407292432d899b47f715ba371da0c80bfb897a11cb361203b7247eb.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b0/b088fb365407292432d899b47f715ba371da0c80bfb897a11cb361203b7247eb.png"
+    },
+    "/keeper-review/kitchen-built-in-state-ligne-claire-v4/manifest.json": {
+      "sha256": "340989f8579bdbc7e2ae908e0a91946f2a38184ca81a0710eeec5234949ae974",
+      "extension": ".json",
+      "bytes": 25807,
+      "object": "review-archive/objects/34/340989f8579bdbc7e2ae908e0a91946f2a38184ca81a0710eeec5234949ae974.json",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/34/340989f8579bdbc7e2ae908e0a91946f2a38184ca81a0710eeec5234949ae974.json"
+    }
+  }
+}

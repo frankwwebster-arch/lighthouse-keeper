@@ -483,17 +483,31 @@ jagged presentation. The rejection and exact V2 hashes are pinned at
 `docs/review/kitchen-cabinet-ligne-claire-v2-rejection-2026-10-21.json`.
 
 Kitchen Fitted-Cabinet Ligne-Claire V3 at
-`/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/` is the active review
-candidate. It includes eight Cabinet A/B variants, two fridge states, three
+`/keeper-review/kitchen-fitted-cabinet-ligne-claire-v3/` is the approved
+fitted-family visual authority. It includes eight Cabinet A/B variants, two fridge states, three
 sink bases and five compositor healing layers. One shared material palette now
 covers every fitted-family worktop, body and fixture while every exact source
 interior line and semantic mask remains present. Smooth contact-sheet and web
 interpolation replace V2's pixelated enlargement. V19/V37/V38/V41 catalogues,
 verifiers, effects and the modular standard are byte-pinned, retaining exact
 dimensions, anchors, movement locks, occupied-bay swaps and the 720-layout
-healing process. V3 is unapproved, unregistered, unpromoted and unwired with
-immediate directory-only rollback. Delivery:
+healing process. Frank approved the exact static V3 evidence on 21 October
+2026; the decision is
+`docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json`.
+V3 remains unpromoted and unwired with immediate directory-only rollback. Delivery:
 `docs/KITCHEN_FITTED_CABINET_LIGNE_CLAIRE_V3_2026-10-21.md`.
+
+Kitchen Built-In State Ligne-Claire V4 at
+`/keeper-review/kitchen-built-in-state-ligne-claire-v4/` extends the approved
+V3 treatment to oven and dishwasher On/Broken states only. Its seventeen
+exact-alpha candidates include all eight dishwasher state/edge variants and
+both complete 40-frame broken-oven light strips. Approved V3 fridge, sink,
+cabinet and healing files are inherited byte-for-byte; the sink stays at its
+existing canvas coordinates and room datum. All separate effects, timing,
+movement locks, repair unlocks, ownership and 720-layout healing contracts are
+unchanged. Static comparisons are the primary review surface. V4 is reversible,
+unapproved, unregistered, unpromoted and unwired. Delivery:
+`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_2026-10-21.md`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
