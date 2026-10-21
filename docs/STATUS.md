@@ -35,7 +35,7 @@ and ordered in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`. `npm test` rejects new
 or regressed endpoint failures against that frozen migration boundary.
 
 The Bubble stories Studio has a complete shared picture catalogue: 305
-selectable pictures and 338 immutable versions grouped by activity. This includes every review-ready
+selectable pictures and 343 immutable versions grouped by activity. This includes every review-ready
 isolated source component from Activity Cloud Composer V1–V7, the rear-work
 V2/V3 callout packs and every component-bearing Claude or Codex picture pack,
 including all V5 album homages, the complete aquarium and bedroom sets, and 54
@@ -70,6 +70,18 @@ fixed-palette normalization and light/dark/64 px evidence. All five candidates
 are registered as current V2 versions, while every V1 remains byte-identical
 and selectable. The catalogue now has 305 pictures / 338 versions; no story,
 activity-story runtime, production art or deployment changed.
+
+Frank then approved the five-picture washing family with “approved continue -
+update your recipe as you go”. Its immutable pack is
+`art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/`; all five
+translations are current V2 versions and all V1 predecessors remain
+selectable, taking the catalogue to 305 pictures / 343 versions. The approved
+plate's controlled minor irregularity is now shape calibration alongside the
+tomato's flat-colour calibration. The next five-object General repair family
+is isolated at
+`art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/` and
+awaits visual approval; it has not changed `pictures.json`, Claude's story,
+the activity-story runtime, production art or deployment.
 
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 

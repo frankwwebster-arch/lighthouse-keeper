@@ -11,7 +11,7 @@ versions remain selectable and byte-identical for undo.
 **Complete-catalogue update (21 October 2026):** the library now exposes all
 298 review-ready isolated source components from Activity Cloud Composer
 V1–V7, Prime rear-work activity-callout V2/V3 and every component-bearing
-Claude or Codex picture pack. The Studio therefore has 305 pictures and 338
+Claude or Codex picture pack. The Studio therefore has 305 pictures and 343
 immutable versions, including
 every V5 album homage, the complete aquarium and bedroom sets, and 54 new
 fishing, gardening, pet-play, fixing, pub, art and inventing pictures. Run
@@ -55,13 +55,23 @@ V2 versions, taking the library to 305 pictures and 338 versions. Every V1
 predecessor remains selectable and byte-identical; no story definition or
 `src/activityStories/` file changed.
 
-**Washing family review gate (21 October 2026):** the immutable candidate pack
+**Washing family approval (21 October 2026):** the immutable pack
 at `art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/` translates
 the five `washing` pictures used by Claude's existing `washing-up` story. It
-uses the approved `sandwich-tomato` V2 as the primary line/flat-colour/detail
-calibration and keeps each V1 picture as semantic authority. The five proposed
-V2 components are review-only and are not registered; `pictures.json`, the
-story and `src/activityStories/` remain unchanged pending Frank's approval.
+uses the approved `sandwich-tomato` V2 as the primary flat-colour/detail
+calibration and keeps each V1 picture as semantic authority. Frank approved
+the exact sheet with “approved continue - update your recipe as you go”; all
+five are registered as current V2 versions, taking the library to 305 pictures
+and 343 immutable versions. The plate's controlled minor ellipse/rim
+irregularity is now positive shape calibration. Every V1 remains selectable;
+the story and `src/activityStories/` are unchanged.
+
+**General repair family review gate (21 October 2026):** the immutable pack at
+`art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/`
+translates the five object pictures in Claude's unchanged `general-repair`
+story. It uses the approved plate for lively hand-drawn shape and the tomato
+for flat colour. The five proposed V2s remain unregistered pending approval;
+all current V1s and the story/runtime implementation remain untouched.
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A

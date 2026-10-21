@@ -8464,7 +8464,7 @@
       "kind": "object",
       "family": "washing",
       "label": "Clean cutlery",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -8483,6 +8483,25 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v2",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/drafts/components/washing-cutlery.png",
+          "sha256": "3906c76379e314e644a6e2fffe8735622641d1af91998b1948992ece93b5db10",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            38,
+            236,
+            218
+          ],
+          "added": "2026-10-21",
+          "source": "washing-cutlery.png",
+          "by": "codex",
+          "note": "Approved ligne-claire washing family V2"
         }
       ]
     },
@@ -8490,7 +8509,7 @@
       "kind": "object",
       "family": "washing",
       "label": "Rinse water",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -8509,6 +8528,25 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v2",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/drafts/components/washing-droplets.png",
+          "sha256": "fbf20c9c74f0f2efe0f53f79673d71bbb59bbc13690ab389748e60467e2291e4",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            49,
+            236,
+            207
+          ],
+          "added": "2026-10-21",
+          "source": "washing-droplets.png",
+          "by": "codex",
+          "note": "Approved ligne-claire washing family V2"
         }
       ]
     },
@@ -8516,7 +8554,7 @@
       "kind": "object",
       "family": "washing",
       "label": "Washing-up liquid",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -8535,6 +8573,25 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v3",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/drafts/components/washing-liquid.png",
+          "sha256": "0cf15eb5ee005d5ffb38d617908316778b3ff458b1a40255930caad3cc8881f4",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            50,
+            20,
+            206,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "washing-liquid.png",
+          "by": "codex",
+          "note": "Approved ligne-claire washing family V2"
         }
       ]
     },
@@ -8542,7 +8599,7 @@
       "kind": "object",
       "family": "washing",
       "label": "Plate",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -8561,6 +8618,25 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v2",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/drafts/components/washing-plate.png",
+          "sha256": "2e55d4174e17faa16f25432cb8e930b8fc492214799bed57b1949160a2f3da8c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            49,
+            236,
+            207
+          ],
+          "added": "2026-10-21",
+          "source": "washing-plate.png",
+          "by": "codex",
+          "note": "Approved ligne-claire washing family V2"
         }
       ]
     },
@@ -8568,7 +8644,7 @@
       "kind": "object",
       "family": "washing",
       "label": "Sponge",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -8587,6 +8663,25 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v2",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/drafts/components/washing-sponge.png",
+          "sha256": "19901149e504bf555831b379afbfa77bed1be22f4e72e8d0d865dd1b2fba486b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            54,
+            236,
+            202
+          ],
+          "added": "2026-10-21",
+          "source": "washing-sponge.png",
+          "by": "codex",
+          "note": "Approved ligne-claire washing family V2"
         }
       ]
     },

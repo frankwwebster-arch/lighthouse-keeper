@@ -2,7 +2,7 @@
 
 **Decision date:** 21 October 2026
 
-**Status:** active; BBQ and sandwich packs approved; washing pack at review gate; action-imagery programme only
+**Status:** active; BBQ, sandwich and washing packs approved; General repair pack at review gate; action-imagery programme only
 
 Frank approved the six-picture BBQ pilot with “agreed, these are superb”. This
 prompt turns that approval into a controlled conversion programme for Bubble
@@ -24,15 +24,28 @@ V2 versions; all five V1 versions remain byte-identical and selectable. The
 library now contains 305 pictures and 338 immutable versions. Continue with a
 new family pack rather than rebuilding an approved family.
 
-**Third family review gate (21 October 2026):** the five-picture `washing`
-family is ready for review at
+**Third family approval (21 October 2026):** Frank approved the five-picture
+`washing` family at
 `art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/`. It covers
 `washing-plate`, `washing-liquid`, `washing-sponge`, `washing-droplets` and
 `washing-cutlery`, exactly the cast of Claude's unchanged `washing-up` story.
-The approved `sandwich-tomato` V2 is now the primary style calibration because
-Frank identified it as the most successful translation. The five washing
-candidates remain unregistered until explicit approval; every current V1 is
-still active and byte-identical.
+The approved `sandwich-tomato` V2 remains the primary flat-colour/detail
+calibration because Frank identified it as the most successful translation.
+All five washing candidates are registered as current V2 versions, taking the
+library to 305 pictures and 343 immutable versions. Frank especially approved
+the plate's minor shape imperfection and hand-drawn feel; its controlled
+ellipse/rim asymmetry is now the primary shape calibration. Every V1 remains
+selectable and byte-identical.
+
+**Fourth family review gate (21 October 2026):** the five object pictures used
+by Claude's unchanged `general-repair` story are isolated at
+`art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/`. The
+sheet covers `repair-toolbox`, `repair-boat-hull-patch`,
+`repair-hammer-nails`, `repair-wrench-cog` and `repair-rope-knot`. These V2
+candidates are not registered pending explicit approval. This family adds two
+recipe rules: inspect ambiguous counts enlarged before prompting, and preserve
+the exact topology/parts of knots and mechanical assemblies rather than merely
+matching their generic category.
 
 ## Ready-to-paste prompt
 
@@ -55,8 +68,9 @@ command-line picture tool before drawing.
 Objective
 - Translate the Bubble stories picture library into the original
   ligne-claire-inspired language approved in the six-picture BBQ pilot.
-- Work in small, immutable, reviewable family batches. The BBQ, BBQ-tools and
-  sandwich families are complete; select a new family for the next gate.
+- Work in small, immutable, reviewable family batches. The BBQ, BBQ-tools,
+  sandwich and washing families are complete; select a new family only after
+  the General repair gate is resolved.
 - The programme covers action objects, ingredients, tools, pictorial states,
   activity marks, emotions and independent comic reaction punctuation used by
   Bubble stories.
@@ -72,7 +86,10 @@ Visual authority
   remain supporting visual authority for contour, flat colour, detail density
   and game-scale readability. Use the approved
   art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/sandwich-tomato.png
-  as the primary calibration for subsequent families.
+  as the primary flat-colour/detail calibration for subsequent families. Use
+  the approved
+  art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/drafts/components/washing-plate.png
+  as primary calibration for lively contour and controlled minor asymmetry.
 - Draw original artwork: lively near-black contour of mostly even weight,
   simplified accurate shapes, flat opaque spot colours and minimal decisive
   interior lines. Use no gradients, glossy highlights, painterly modelling,
@@ -90,6 +107,12 @@ Exact-asset translation rule
 - Preserve subject identity, viewpoint, object count, container, plate, bag,
   construction, state, recognisable contents, relative arrangement and broad
   silhouette unless Frank explicitly requests a content correction.
+- Inspect ambiguous counts and construction enlarged before writing the
+  prompt. For knots and mechanical assemblies, preserve topology, crossings,
+  parts and overlap order—not merely the generic object category.
+- Allow small, deliberate irregularities in ellipses, rims, rings, teeth and
+  curves where they create the approved hand-drawn feel; never let them alter
+  identity, construction, viewpoint, contact logic or 64 px readability.
 - Change the drawing language, not what the picture depicts. For example,
   `bbq-charcoal` remains the open paper bag with visible charcoal lumps and
   flame motif; loose rocks are not an acceptable substitute.

@@ -1,0 +1,359 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
+  "set": "activity-story-ligne-claire-general-repair-2026-10-21-v1",
+  "status": "review-gate-awaiting-approval",
+  "created": "2026-10-21",
+  "tool": "built-in image generation plus deterministic fixed-palette normalisation",
+  "family": "repair",
+  "semanticSet": "the five object pictures used by Claude's General repair Bubble story",
+  "primaryShapeCalibration": "art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/drafts/components/washing-plate.png",
+  "primaryColourCalibration": "art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/sandwich-tomato.png",
+  "evolvingRecipe": "Preserve exact semantic construction while favouring lively mostly-even near-black contour, flat opaque spot colour, minimal decisive detail and controlled hand-drawn asymmetry instead of sterile geometry.",
+  "preservationRule": "Translate each current asset's drawing language while preserving subject identity, viewpoint, object count, construction, state, recognisable contents, relative arrangement and broad silhouette. Audit ambiguous counts enlarged before prompting.",
+  "storyFile": "data/activity-stories/stories/general-repair.json",
+  "storySha256": "e174e6c3578c92ec417119917e0708300e596f2f26f28eedcddec0a5a58f9543",
+  "visibleAlphaThreshold": 8,
+  "components": {
+    "repair-toolbox": {
+      "family": "repair",
+      "label": "Toolbox",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly one open blue metal toolbox with its raised lid, brass hardware and handle, plus the current visible spanner, pliers, screwdriver and smaller tool contents",
+      "currentReferenceFile": "review-archive/objects/bd/bddc65528cb63fed1403fcbd0de210af4b357585dac5660102512b706f459c10.png",
+      "currentReferenceSha256": "bddc65528cb63fed1403fcbd0de210af4b357585dac5660102512b706f459c10",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/source/repair-toolbox-source.png",
+      "sourceSha256": "eccfe85c9b16456ba33fa12a90a845da9cbe06ef186e51be0a3fb50711234997",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-939406d7-8741-42bd-90a1-7c3eebc9ccdb.png",
+      "flatPalette": [
+        "#051824",
+        "#0d4e75",
+        "#1870a6",
+        "#e7a638",
+        "#e88b2d",
+        "#e84833",
+        "#ede9de",
+        "#97a6ac"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/drafts/components/repair-toolbox.png",
+      "sha256": "ea29f0493f818cee5a0a0eb78dcad092d611d622a23433a8025e36f3a7307812",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        101,
+        168,
+        1182,
+        1115
+      ],
+      "normalisedVisibleSize": [
+        216,
+        189
+      ],
+      "normalisedOffset": [
+        20,
+        33
+      ],
+      "bounds": [
+        20,
+        33,
+        236,
+        222
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-boat-hull-patch": {
+      "family": "repair",
+      "label": "Hull patch",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly four weathered blue hull planks, two horizontal battens, two short vertical straps, six visible brass fasteners and one wooden mallet in the current arrangement",
+      "currentReferenceFile": "review-archive/objects/ce/cef61bcec5542ac32a74bcae933b972deab398bec5edfabd8ded71441b23c28e.png",
+      "currentReferenceSha256": "cef61bcec5542ac32a74bcae933b972deab398bec5edfabd8ded71441b23c28e",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/source/repair-boat-hull-patch-source.png",
+      "sourceSha256": "c7b849f855135500560125d95e39accc4f99136370c4bce493be5ed813b411f2",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-6c1acbe0-cda2-40a9-aab1-545a3f0a867a.png",
+      "flatPalette": [
+        "#051824",
+        "#1870a6",
+        "#a65f2a",
+        "#e88b2d",
+        "#f6e5b7",
+        "#e7a638",
+        "#494c52"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/drafts/components/repair-boat-hull-patch.png",
+      "sha256": "47e6f232843886eb01cc52f6a3d6343c020ab0aa2a87300c7d169e8c7ed696f6",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        85,
+        116,
+        1219,
+        1211
+      ],
+      "normalisedVisibleSize": [
+        216,
+        209
+      ],
+      "normalisedOffset": [
+        20,
+        23
+      ],
+      "bounds": [
+        20,
+        23,
+        236,
+        232
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-hammer-nails": {
+      "family": "repair",
+      "label": "Hammer and nails",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly one diagonal claw hammer with its steel head, timber upper handle and blue lower grip, plus exactly three brass nails in the current fan",
+      "currentReferenceFile": "review-archive/objects/0c/0c71ed9d475b334ad85c2f6c7a190ae61a90bcf44c18974559f8a8e7e06632e9.png",
+      "currentReferenceSha256": "0c71ed9d475b334ad85c2f6c7a190ae61a90bcf44c18974559f8a8e7e06632e9",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/source/repair-hammer-nails-source.png",
+      "sourceSha256": "01ae3b9f6cd38ddd679f91fadc10d0f8dc8e437a73fe806ad426068daaa794bb",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-f5767384-ff41-46fe-b6b7-61a28f7e3438.png",
+      "flatPalette": [
+        "#051824",
+        "#494c52",
+        "#aba69c",
+        "#e88b2d",
+        "#1870a6",
+        "#e7a638"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/drafts/components/repair-hammer-nails.png",
+      "sha256": "5108eecf1f3de807d3c4d078c58cb8dd032a8d9c53027b4e377fc92433b28d03",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        103,
+        137,
+        1164,
+        1138
+      ],
+      "normalisedVisibleSize": [
+        216,
+        204
+      ],
+      "normalisedOffset": [
+        20,
+        26
+      ],
+      "bounds": [
+        20,
+        26,
+        236,
+        230
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-wrench-cog": {
+      "family": "repair",
+      "label": "Wrench and cog",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly one gold cog with dark inset hub behind one crossing combination spanner, including its open jaw, ring end and brown two-pin grip panel",
+      "currentReferenceFile": "review-archive/objects/58/588a382fd46f0fbb2186db0e40613a6e02c8476d4b99bd53dd6d3b2f27861ea4.png",
+      "currentReferenceSha256": "588a382fd46f0fbb2186db0e40613a6e02c8476d4b99bd53dd6d3b2f27861ea4",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/source/repair-wrench-cog-source.png",
+      "sourceSha256": "90bd5bda3373b1c9cd4da65bca8ccecadd9fb6d2eb5f2b55060c96c0958de89b",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-c83e004e-3a68-4d0c-94fa-ce707e4ed543.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ab9d89",
+        "#e7a638",
+        "#494c52",
+        "#a65f2a"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/drafts/components/repair-wrench-cog.png",
+      "sha256": "0d4517e171e010afba73e0c808c8d59a5382c6d7c6c11d1c563264e58fb64f3b",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        111,
+        135,
+        1162,
+        1148
+      ],
+      "normalisedVisibleSize": [
+        216,
+        208
+      ],
+      "normalisedOffset": [
+        20,
+        24
+      ],
+      "bounds": [
+        20,
+        24,
+        236,
+        232
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-rope-knot": {
+      "family": "repair",
+      "label": "Rope knot",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one compact thick-rope knot following the current over-under path and horizontal silhouette, with exactly two bound ends and two frayed tassels",
+      "currentReferenceFile": "review-archive/objects/03/03f0806f550a4953ac72c0dc6e17745e00ef71d4d231177343de29e75e4436d5.png",
+      "currentReferenceSha256": "03f0806f550a4953ac72c0dc6e17745e00ef71d4d231177343de29e75e4436d5",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/source/repair-rope-knot-source.png",
+      "sourceSha256": "cf0dc57106bf55cd0cb8297f3211d00105b3af8633a0d7bcbb8fe9ea74418365",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-e35cf3fc-68ee-4858-bdd0-183711d5a312.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#f6cd87",
+        "#e7a638",
+        "#cf5c18"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/drafts/components/repair-rope-knot.png",
+      "sha256": "839278d4b648b847ea4c35ff0be66d3ce9f9540e941120a7e10dbf09966fbe0f",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        104,
+        447,
+        1155,
+        838
+      ],
+      "normalisedVisibleSize": [
+        216,
+        80
+      ],
+      "normalisedOffset": [
+        20,
+        88
+      ],
+      "bounds": [
+        20,
+        88,
+        236,
+        168
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejected": [
+    {
+      "file": "rejected/repair-boat-hull-patch-three-count-prompt-v1.png",
+      "cache": "exec-40bb0f89-7e94-4b0e-8433-982a696198f8.png",
+      "reason": "The image retained the current four hull planks and six fasteners, but the prompt incorrectly asserted three planks and four total fasteners; rerun after an enlarged count audit.",
+      "sha256": "8d840db5cf3369875081c865201a65342860a3c4386d30c020d220785f3b7a15"
+    },
+    {
+      "file": "rejected/repair-rope-knot-overcomplicated-v1.png",
+      "cache": "exec-b51ebc2e-1154-45b8-a5db-3339774dc9d8.png",
+      "reason": "The rope became an elaborate multi-loop braided knot instead of preserving the current compact over-under topology and silhouette.",
+      "sha256": "9f9117d9c40a172af9b8795f785a4ce9b42b8ad9d79d37e0a3290eed0621d8db"
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/evidence/current-vs-ligne-claire-contact-sheet.png",
+    "sha256": "c5e55f13fda6c0665e806ab62b024b2f7706eb299170f2332b4fe3d2594f4605",
+    "columns": 5,
+    "rows": 5,
+    "coveredIds": [
+      "repair-toolbox",
+      "repair-boat-hull-patch",
+      "repair-hammer-nails",
+      "repair-wrench-cog",
+      "repair-rope-knot"
+    ]
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "currentReferenceHashesPinned": true,
+    "storyHashPinned": true,
+    "exactPalettesRecorded": true,
+    "contactSheetCoversEveryCandidate": true,
+    "libraryVersionsAdded": false,
+    "storyChanged": false,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "deployed": false
+  },
+  "approval": null,
+  "nextStep": "Frank reviews the exact five-picture contact sheet. On approval, add each candidate as immutable V2 with the official add-picture command; do not overwrite V1.",
+  "rollback": "Before approval, discard this pack alone. After approval, set each picture's current selector back to V1; all earlier bytes remain immutable and selectable."
+}

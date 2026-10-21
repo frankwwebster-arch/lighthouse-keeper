@@ -16,7 +16,7 @@ new current V1 `clean` mark. The immutable authoring pack is
 list exposes all four while retaining the earlier versions for undo.
 
 The picture-library completeness correction is also finished (21 October
-2026). `pictures.json` now has 305 selectable pictures and 338 immutable
+2026). `pictures.json` now has 305 selectable pictures and 343 immutable
 versions and includes all 298
 review-ready isolated source components from Activity Cloud Composer V1–V7,
 the rear-work V2/V3 callout vocabulary and every component-bearing Claude or
@@ -60,6 +60,19 @@ are complete. All five candidates are registered as current V2 versions, while
 every V1 remains byte-identical and selectable. The library now totals 305
 pictures / 338 versions. Continue with a new family rather than rebuilding an
 approved pack.
+
+Frank approved the complete five-picture washing set at
+`art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/` with
+“approved continue - update your recipe as you go”. All five candidates are
+registered as current V2 versions, taking the library to 305 pictures / 343
+versions; every V1 remains selectable. The plate's slight ellipse/rim
+irregularity is positive calibration for a controlled hand-drawn feel, while
+the tomato remains the flat-colour benchmark. The next immutable gate is the
+five-object General repair set at
+`art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/`.
+Those candidates are review-only and unregistered. Audit ambiguous counts and
+topology enlarged before prompting; preserve exact construction, overlaps and
+parts rather than accepting a generic category match.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 

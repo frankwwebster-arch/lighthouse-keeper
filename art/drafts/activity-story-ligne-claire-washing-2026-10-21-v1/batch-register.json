@@ -1,7 +1,7 @@
 {
   "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
   "set": "activity-story-ligne-claire-washing-2026-10-21-v1",
-  "status": "review-gate-awaiting-approval",
+  "status": "approved-and-registered",
   "created": "2026-10-21",
   "tool": "built-in image generation plus deterministic fixed-palette normalisation",
   "family": "washing",
@@ -16,8 +16,9 @@
     "washing-plate": {
       "family": "washing",
       "label": "Plate",
-      "intent": "candidate-new-version-v2",
-      "priorCurrentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "exactly one broad oval cream plate in the current low front three-quarter view, including its blue double rim and surrounding aqua bubble arrangement",
       "currentReferenceFile": "review-archive/objects/01/01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f.png",
@@ -74,8 +75,9 @@
     "washing-liquid": {
       "family": "washing",
       "label": "Washing-up liquid",
-      "intent": "candidate-new-version-v2",
-      "priorCurrentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "exactly one upright green hourglass squeeze bottle with its cream neck ring, ridged green collar, push-pull cap and existing bubble arrangement",
       "currentReferenceFile": "review-archive/objects/f3/f311431e2c6e480033982790d416bbd6df16f414338c6a030ff28d2780efd2c1.png",
@@ -132,8 +134,9 @@
     "washing-sponge": {
       "family": "washing",
       "label": "Sponge",
-      "intent": "candidate-new-version-v2",
-      "priorCurrentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "exactly one thick yellow rectangular sponge in the current diagonal three-quarter view, with its orange side faces, modest front-left foam bank and five detached bubbles",
       "currentReferenceFile": "review-archive/objects/ae/aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533.png",
@@ -191,8 +194,9 @@
     "washing-droplets": {
       "family": "washing",
       "label": "Rinse water",
-      "intent": "candidate-new-version-v2",
-      "priorCurrentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "exactly four water droplets in the current centre-large, left-medium, right-small and lower-left-tiny arrangement",
       "currentReferenceFile": "review-archive/objects/14/14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da.png",
@@ -247,8 +251,9 @@
     "washing-cutlery": {
       "family": "washing",
       "label": "Clean cutlery",
-      "intent": "candidate-new-version-v2",
-      "priorCurrentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "exactly one three-pronged fork and one oval-bowled spoon in the current crossed X arrangement, with the spoon in front, paired gold handle insets and existing bubble clusters",
       "currentReferenceFile": "review-archive/objects/76/76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca.png",
@@ -343,13 +348,18 @@
     "currentReferenceHashesPinned": true,
     "exactPalettesRecorded": true,
     "contactSheetCoversEveryCandidate": true,
-    "libraryVersionsAdded": false,
+    "libraryVersionsAdded": true,
     "storyChanged": false,
     "activityStoriesRuntimeChanged": false,
     "approvedAuthorityChanged": false,
     "deployed": false
   },
-  "approval": null,
-  "nextStep": "Frank reviews the exact five-picture contact sheet. On approval, add each candidate as immutable V2 with the official add-picture command; do not overwrite V1.",
-  "rollback": "Before approval, discard this pack alone. After approval, set each picture's current selector back to V1; all earlier bytes remain immutable and selectable."
+  "approval": {
+    "by": "Frank",
+    "date": "2026-10-21",
+    "words": "approved continue - update your recipe as you go",
+    "scope": "the exact five-picture washing family contact sheet"
+  },
+  "nextStep": "Continue with a new tightly related Bubble-story family using the evolving recipe and a new immutable review gate.",
+  "rollback": "Set each picture's current selector back to V1; the approved V2 assets and all earlier bytes remain immutable and selectable."
 }

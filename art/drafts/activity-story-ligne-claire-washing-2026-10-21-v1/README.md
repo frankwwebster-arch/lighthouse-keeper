@@ -1,6 +1,6 @@
 # Bubble stories ligne-claire washing family V1
 
-**Status:** immutable review gate; awaiting Frank's approval; not registered
+**Status:** approved and registered as current V2
 
 This pack translates the five `washing` pictures used by Claude's existing
 `washing-up` Bubble story into the approved ligne-claire language. The current
@@ -17,10 +17,16 @@ is supporting style authority only.
 | `washing-droplets` | exactly four rinse-water droplets in the existing arrangement | V2 |
 | `washing-cutlery` | one three-pronged fork and one spoon, crossed with the spoon in front | V2 |
 
+Frank approved this exact five-picture contact sheet on 21 October 2026 with
+“approved continue - update your recipe as you go”. The plate's minor ellipse
+and rim irregularity are now a positive calibration: preserve confident
+hand-drawn asymmetry where it gives an object life, while keeping its identity,
+construction, viewpoint and game-scale readability exact.
+
 `evidence/current-vs-ligne-claire-contact-sheet.png` shows, for every id, the
 prior-current V1, proposed V2 on warm white, proposed V2 on dark, V1 at 64 px
-and proposed V2 at 64 px. Nothing in `data/activity-stories/pictures.json` has
-been changed at this gate.
+and proposed V2 at 64 px. All five candidates are registered as immutable
+current V2 versions; every V1 remains byte-identical and selectable.
 
 Three rejected attempts are retained under `rejected/`: a plate with excessive
 tonal modelling, a sponge with excessive foam/bubbles, and a cutlery pass whose
@@ -38,6 +44,6 @@ unchanged `washing-up.json` story hash.
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_activity_story_ligne_claire_washing_2026_10_21_v1.py --verify
 ```
 
-After explicit approval, add each component with the official
-`activity-stories:add-picture` command so it becomes immutable V2. Never
-overwrite V1, and do not edit the story or `src/activityStories/` runtime.
+Rollback by setting any picture's `current` selector to V1 with the official
+`activity-stories:add-picture` command. Never overwrite a version, and do not
+edit the story or `src/activityStories/` runtime.
