@@ -41,6 +41,7 @@ const HELP = `Bubble stories: the command-line tool (same engine as the studio)
         --reduced        the reduced-motion version
         --every N        every Nth frame (default: about 36 frames in all)
         --from F --to T  only frames F to T (1-based, as the studio counts)
+        --restart        the last frames of a telling, then the retelling's first
         --out DIR        where to write (default tmp/activity-stories/)
 
   npm run stories -- new <story-id> --label "Name" [--like garden-bbq]
@@ -164,8 +165,17 @@ function render(ref?: string) {
   const to = Math.min(frames.length, Number(flag('to') ?? frames.length))
   const every = Math.max(1, Number(flag('every') ?? Math.ceil((to - from + 1) / 36)))
   const picked: number[] = []
-  for (let f = from - 1; f < to; f += every) picked.push(f)
-  if (picked[picked.length - 1] !== to - 1) picked.push(to - 1)
+  const intro = (reduced ? c.introReduced : c.intro).length
+  // --restart: the end of a telling, then the start of the retelling it jumps back to, frame by frame.
+  const restart = has('restart')
+  if (restart) {
+    const back = c.afterStory === 'loop' ? intro + c.loopStart : intro
+    for (let f = Math.max(intro, frames.length - 9); f < frames.length; f++) picked.push(f)
+    for (let f = back; f < Math.min(frames.length, back + 9); f++) picked.push(f)
+  } else {
+    for (let f = from - 1; f < to; f += every) picked.push(f)
+    if (picked[picked.length - 1] !== to - 1) picked.push(to - 1)
+  }
 
   const missing = new Set<string>()
   const src = (url: string) => {
@@ -178,14 +188,14 @@ function render(ref?: string) {
   }
   const esc = (s: string) => s.replace(/[&<>"]/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[ch]!)
   const rear = LIBRARY.keeper.rearWork
-  const cells = picked.map((f) => {
+  const cells = picked.map((f, k) => {
     const fr = frames[f]
     const body = rear[Math.floor((f / FPS) * 4) % rear.length]
     const rings = fr.bubble.rings ?? [fr.bubble.opacity, fr.bubble.opacity]
     const items = fr.items
       .map((i) => `<img class="piece${i.kind === 'mark' ? ' mark' : ''}" src="${src(i.url)}" style="opacity:${i.opacity};z-index:${i.z};transform:translate(calc(-50% + ${i.x}px),calc(-50% + ${i.y}px)) rotate(${i.rotation}deg) scale(${i.scale})">`)
       .join('')
-    const what = fr.step === 0 ? 'the bubble opens' : `step ${fr.step}: ${describeStep(LIBRARY, story, story.steps[fr.step - 1])}${fr.phase === 'quiet' ? ' · quiet' : fr.phase === 'clear' ? ' · clearing' : ''}`
+    const what = (restart && k === 9 ? '↻ retelling: ' : '') + (fr.step === 0 ? 'the bubble opens' : `step ${fr.step}: ${describeStep(LIBRARY, story, story.steps[fr.step - 1])}${fr.phase === 'quiet' ? ' · quiet' : fr.phase === 'clear' ? ' · clearing' : ''}`)
     return `<figure><div class="clip"><div class="stage"><img class="actor" src="${src(body.url)}"><div class="cloud"><svg class="bubble" viewBox="0 0 360 230" style="opacity:${fr.bubble.opacity}"><path d="${bubbleOutline(f, fr.bubble.scale)}"/></svg><div class="ring r1" style="opacity:${rings[0]}"></div><div class="ring r2" style="opacity:${rings[1]}"></div>${items}</div></div></div><figcaption><b>${f + 1}</b> ${esc(what)}</figcaption></figure>`
   })
   if (missing.size) fail(`these pictures are not on disk:\n  ${[...missing].join('\n  ')}`)
@@ -213,11 +223,11 @@ figure{margin:0;width:${CELL_W}px}
 .mark{width:92px;height:92px}
 figcaption{height:30px;padding-top:4px;line-height:1.25;overflow:hidden}
 figcaption b{color:#f0c24f}
-</style><h1>${esc(story.label)}${reduced ? ' · reduced motion' : ''} · frames ${from}–${to} of ${frames.length}, every ${every} · ${c.seconds.toFixed(1)} s · ${playsText(c.tellings)} in 20–30 s</h1><main>${cells.join('')}</main>`
+</style><h1>${esc(story.label)}${reduced ? ' · reduced motion' : ''} · ${restart ? 'the restart: last 9 frames, then the retelling' : `frames ${from}–${to} of ${frames.length}, every ${every}`} · ${c.seconds.toFixed(1)} s · ${playsText(c.tellings)} in 20–30 s</h1><main>${cells.join('')}</main>`
 
   const out = path.resolve(flag('out') ?? OUT_DIR)
   fs.mkdirSync(out, { recursive: true })
-  const base = `${story.id}${reduced ? '-reduced' : ''}${from > 1 || to < frames.length ? `-${from}-${to}` : ''}`
+  const base = `${story.id}${reduced ? '-reduced' : ''}${restart ? '-restart' : from > 1 || to < frames.length ? `-${from}-${to}` : ''}`
   const htmlFile = path.join(out, `${base}.html`)
   const png = path.join(out, `${base}.png`)
   fs.writeFileSync(htmlFile, html)

@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { compileStory } from './compile'
+import { compileStory, type FrameItem } from './compile'
 import { STORY_DRAFTS, STORY_FILES, LIBRARY } from './drafts'
 import { cleanStory, groupPictures, OTHER_GROUP, playsText, type Library } from './format'
 
@@ -32,12 +32,13 @@ describe('bubble story drafts', () => {
         for (const t of c.contacts) expect(t.gap, `${t.actor} → ${t.target} at frame ${t.frame}`).toBeLessThanOrEqual(4)
       })
 
-      it('keeps the quiet ending completely still, with no marks', () => {
+      it('keeps the quiet ending completely still, with no marks (circling props carry on)', () => {
         const q = c.full.slice(c.quiet[0], c.quiet[1] + 1)
+        const story = (items: (typeof q)[0]['items']) => items.filter((i) => !i.id.startsWith('prop-'))
         expect(q.length).toBeGreaterThanOrEqual(5)
         for (const f of q) {
           expect(f.items.filter((i) => i.kind === 'mark')).toEqual([])
-          expect(f.items).toEqual(q[0].items)
+          expect(story(f.items)).toEqual(story(q[0].items))
         }
       })
 
@@ -78,7 +79,8 @@ describe('bubble story drafts', () => {
           expect(shown(c.full.length - 1)).toEqual(shown(c.loopStart - 1))
         } else {
           expect(c.full.length).toBe(c.storyFrames + 3)
-          expect(objects(c.full.at(-1)!.items).every((i) => i.opacity < 0.05) || objects(c.full.at(-1)!.items).length === 0).toBe(true)
+          const left = objects(c.full.at(-1)!.items).filter((i) => !i.id.startsWith('prop-'))
+          expect(left.every((i) => i.opacity < 0.05)).toBe(true)
         }
       })
     })
@@ -223,12 +225,24 @@ describe('BBQ ephemera', () => {
     expect(step).toBeLessThan(10)
   })
 
-  it('is back where it started when the story retells, so the loop is seamless', () => {
-    const at = (f: number) => c.full[f].items.filter((i) => i.id.startsWith('prop-')).map((i) => [i.id, i.x, i.y])
-    const lastWithProps = c.full.map((f, k) => [k, f.items.some((i) => i.id.startsWith('prop-'))] as const).filter(([, has]) => has).at(-1)![0]
-    // One lap per retelling: positions advance smoothly and the lap length equals the retelling length.
-    expect(lastWithProps).toBeGreaterThan(c.loopStart)
-    expect(at(c.loopStart + 2).length).toBeGreaterThan(0)
+  it('persists when the story retells: fully up through the quiet moment and straight on into the retelling (Frank, 21 Oct)', () => {
+    const ids = (f: number) => c.full[f].items.filter((i) => i.id.startsWith('prop-'))
+    // Every frame of the retold part shows all six, fully visible: nothing blinks out at the restart.
+    for (let f = c.loopStart; f < c.full.length; f++) {
+      expect(ids(f), `frame ${f}`).toHaveLength(6)
+      for (const p of ids(f)) expect(p.opacity, `${p.id} at frame ${f}`).toBe(1)
+    }
+    // The jump from the last frame back to the retelling step is one ordinary step along the orbit.
+    const pos = (f: number, id: string) => c.full[f].items.find((i) => i.id === id)!
+    const stride = (a: FrameItem, b: FrameItem) => Math.hypot(a.x - b.x, a.y - b.y)
+    for (const p of ids(c.loopStart)) {
+      const normal = stride(pos(c.loopStart, p.id), pos(c.loopStart + 1, p.id))
+      const jump = stride(pos(c.full.length - 1, p.id), pos(c.loopStart, p.id))
+      expect(jump).toBeLessThan(normal * 1.6 + 0.5)
+    }
+    // On the very first telling they fade in just before they are needed, not with a pop.
+    const first = c.full.findIndex((f) => f.items.some((i) => i.id.startsWith('prop-')))
+    expect(ids(first)[0].opacity).toBeLessThan(1)
   })
 })
 

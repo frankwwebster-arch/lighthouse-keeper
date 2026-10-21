@@ -123,7 +123,11 @@ win over the draft file, exactly like recipes. Claude copies them back into
 - **props**: small scene-setting pictures (tools, sauces) for a range of
   steps, either `orbit` (circling inside the bubble all the way round,
   beneath the main action, one lap per retelling, each turning gently on the
-  spot) or fixed in a corner.
+  spot) or fixed in a corner. In a retold story, a prop whose range reaches
+  the last step before the quiet moment persists: it stays up through the
+  quiet moment and carries straight on into the retelling (it is shown from
+  the retelling step, or its own first step if earlier), fading in only on
+  the first telling.
 - **sfx** names a sound and its owner; the story never contains audio.
 
 The bubble's edge is loose and hand-drawn: `bubbleOutline()` in
@@ -151,7 +155,7 @@ never disappears between them.
 | `reveal` | appears from | Bursts out; anything stacked on it is used up. `replace: true` takes its place. |
 | `serve` | is served | Leaves the bubble: off to the right in a left-to-right story, otherwise upwards. |
 | `pause` | pause | A beat where nothing new happens; heat, marks and props carry on. |
-| `settle` | quiet moment | Nothing moves (at least five frames). Always last. |
+| `settle` | quiet moment | Nothing in the story moves (at least five frames); circling props carry on. Always last. |
 
 ## What the engine guarantees
 
@@ -166,7 +170,8 @@ rules, which came out of the 20 October review of the V2 examples:
 3. Things that stack land and stay; tools do their job and leave.
 4. Motion trails show only while something moves fast, and always draw
    beneath the pictures.
-5. The quiet moment is completely still, with no marks.
+5. The quiet moment is completely still, with no marks; only persisting
+   props keep circling.
 6. Reduced motion has the same steps, timing and ending, with at most two
    pictures and one mark, and nothing travels.
 7. A story never rushes: the studio warns below five seconds.

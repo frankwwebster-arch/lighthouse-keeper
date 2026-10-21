@@ -24,7 +24,7 @@
  *   objects and one mark, and nothing travels.
  */
 
-import { VERBS, versionFor, type AfterStory, type Library, type Speed, type Step, type Story, type Verb } from './format'
+import { VERBS, versionFor, type AfterStory, type Library, type Prop, type Speed, type Step, type Story, type Verb } from './format'
 
 export const FPS = 8
 export const BOX = { object: 140, mark: 92 }
@@ -567,11 +567,20 @@ export function compileStory(input: Story, lib: Library): Compiled {
   const totalFrames = storyFrames + clear
 
   const url2 = (pic: string) => versionFor(lib, pic)?.url ?? ''
-  const props = story.props.flatMap((p) => {
-    const from = windows[p.fromStep - 1]?.start
-    const to = windows[Math.min(p.toStep, windows.length) - 1]?.end
-    return from === undefined || to === undefined ? [] : [{ ...p, from, to }]
+  // A prop that runs to the end of a retold story persists (Frank, 21 Oct): it stays up through the quiet moment
+  // and the clearing frames and is already there when the retelling starts, so it never blinks out and back.
+  // It fades in only on the first telling, in the frames before it is first needed.
+  const props = story.props.flatMap((p): (Prop & { from: number; to: number; fadeFrom: number; persist: boolean })[] => {
+    const start = windows[p.fromStep - 1]?.start
+    const end = windows[Math.min(p.toStep, windows.length) - 1]?.end
+    if (start === undefined || end === undefined) return []
+    const persist = story.afterStory === 'loop' && p.toStep >= story.steps.length - 1
+    if (!persist) return [{ ...p, from: start, to: end, fadeFrom: start, persist }]
+    const from = Math.min(start, loopStart)
+    return [{ ...p, from, to: totalFrames, fadeFrom: Math.max(0, from - 2), persist }]
   })
+  // Circling props make one lap per retelling, so they are back where they started when it begins again.
+  const lapFrames = Math.max(1, totalFrames - loopStart)
   // Extra marks that ride on a cast member (heat curls over the grill).
   const ambient = story.ambient.flatMap((a, i) => {
     const from = windows[a.fromStep - 1]?.start
@@ -603,24 +612,6 @@ export function compileStory(input: Story, lib: Library): Compiled {
         const fadeIn = Math.min(1, (f - a.from + 1) / 2), fadeOut = Math.min(1, (a.to - f) / 2)
         items.push({ id: a.id, picture: a.picture, url: markUrl(a.picture), kind: 'mark', x: r2(p.x + 4 * Math.sin(f * 0.8)), y: r2(p.y - h - 14 - (f % 8) * 1.2), scale: SCALE.mark, rotation: r2(6 * Math.sin(f * 0.6)), opacity: r2(Math.min(fadeIn, fadeOut)), z: 15 })
       }
-      // Props: scene-setting pictures beneath everything. Corner props bob in place; orbiting ones circle the bubble,
-      // one lap per retelling so the loop is seamless, evenly spaced, and fade out as they pass his head.
-      const orbiters = props.filter((p) => p.at === 'orbit')
-      for (const [k, pr] of props.entries()) {
-        if (f < pr.from || f >= pr.to) continue
-        const fade = Math.min(1, (f - pr.from + 1) / 2, (pr.to - f) / 2)
-        if (pr.at === 'orbit') {
-          const slot = orbiters.indexOf(pr)
-          const theta = -Math.PI / 2 + (2 * Math.PI * slot) / orbiters.length + (2 * Math.PI * (f - loopStart)) / Math.max(1, storyFrames - loopStart)
-          // Each also turns gently on the spot: one full turn per lap, alternate ones the other way, so the loop stays seamless.
-          const lap = (f - loopStart) / Math.max(1, storyFrames - loopStart)
-          const spin = (slot % 2 ? -1 : 1) * 360 * lap + (360 * slot) / orbiters.length
-          items.push({ id: `prop-${k}`, picture: pr.picture, url: url2(pr.picture), kind: 'object', x: r2(ORBIT.rx * Math.cos(theta)), y: r2(ORBIT.cy + ORBIT.ry * Math.sin(theta)), scale: SCALE.orbit, rotation: r2(spin), opacity: r2(fade), z: 1 })
-          continue
-        }
-        const at = PROP_AT[pr.at]
-        items.push({ id: `prop-${k}`, picture: pr.picture, url: url2(pr.picture), kind: 'object', x: at.x, y: r2(at.y + 2 * Math.sin((f + k * 3) * 0.5)), scale: SCALE.prop, rotation: r2(4 * Math.sin((f + k * 5) * 0.35)), opacity: r2(fade), z: 1 })
-      }
       // Motion trails: only while something moves fast, always beneath the objects.
       for (const m of members) {
         const a = poses[m][f], b = f > 0 ? poses[m][f - 1] : null
@@ -630,6 +621,24 @@ export function compileStory(input: Story, lib: Library): Compiled {
         const e = ext(m, a.s)
         items.push({ id: `trail-${m}`, picture: 'symbol-motion-ticks', url: markUrl('symbol-motion-ticks'), kind: 'mark', x: r2(a.x - (vx / v) * (e.w + 8)), y: r2(a.y - (vy / v) * (e.h * 0.6 + 6)), scale: r2(SCALE.trail + Math.min(0.15, v / 120)), rotation: r2((Math.atan2(vy, vx) * 180) / Math.PI), opacity: r2(Math.min(1, 0.5 + (v - 6) / 12)), z: 2 })
       }
+    }
+    // Props: scene-setting pictures beneath everything. Corner props bob in place; orbiting ones circle inside the
+    // bubble, evenly spaced and turning gently. Persisting props carry on through the quiet moment and clearing frames.
+    const orbiters = props.filter((p) => p.at === 'orbit')
+    for (const [k, pr] of props.entries()) {
+      if (f < pr.fadeFrom || f >= pr.to) continue
+      const fade = pr.persist ? Math.min(1, (f - pr.fadeFrom + 1) / Math.max(1, pr.from - pr.fadeFrom + 1)) : Math.min(1, (f - pr.from + 1) / 2, (pr.to - f) / 2)
+      if (pr.at === 'orbit') {
+        const slot = orbiters.indexOf(pr)
+        const lap = (f - loopStart) / lapFrames
+        const theta = -Math.PI / 2 + (2 * Math.PI * slot) / orbiters.length + 2 * Math.PI * lap
+        // One full turn per lap, alternate ones the other way, so the loop stays seamless.
+        const spin = (slot % 2 ? -1 : 1) * 360 * lap + (360 * slot) / orbiters.length
+        items.push({ id: `prop-${k}`, picture: pr.picture, url: url2(pr.picture), kind: 'object', x: r2(ORBIT.rx * Math.cos(theta)), y: r2(ORBIT.cy + ORBIT.ry * Math.sin(theta)), scale: SCALE.orbit, rotation: r2(spin), opacity: r2(fade), z: 1 })
+        continue
+      }
+      const at = PROP_AT[pr.at]
+      items.push({ id: `prop-${k}`, picture: pr.picture, url: url2(pr.picture), kind: 'object', x: at.x, y: r2(at.y + 2 * Math.sin((f + k * 3) * 0.5)), scale: SCALE.prop, rotation: r2(4 * Math.sin((f + k * 5) * 0.35)), opacity: r2(fade), z: 1 })
     }
     const step = windows.find((w) => f >= w.start && f < w.end)?.step ?? quietStep
     const bubbleOut = story.afterStory === 'hide' && f >= storyFrames ? 1 - (f - storyFrames + 1) / CLEAR_FRAMES : 1
