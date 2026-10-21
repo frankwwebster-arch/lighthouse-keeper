@@ -75,6 +75,20 @@ five are registered as current V2 versions, taking the library to 305 pictures
 and 348 immutable versions. Every V1 remains selectable; the story/runtime
 implementation is untouched.
 
+**Repair hand-tools review gate (21 October 2026):** the immutable pack at
+`art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/`
+proposes eight closely related tool translations: adjustable spanner, C-clamp,
+combination pliers, flat-head screwdriver, Phillips screwdriver, hand saw,
+spirit level and tape measure. Each candidate preserves its current V1 as the
+sole semantic and construction authority and applies the three champion roles:
+plate for living hand-drawn shape, tomato for flat-colour economy and tool
+chest for construction/detail/object presence. The explicit boundary is
+“ligne claire, not cartoon”: credible adult-tool proportions and mechanisms,
+with no cute, toy-like, inflated, caricature, mascot or sticker treatment. The
+eight candidates remain unregistered pending Frank's review, so the catalogue
+still has 305 pictures / 348 immutable versions and every V1 remains current.
+No story definition or `src/activityStories/` file changed.
+
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A
 story has no upper length, only a five-second floor. Frank sets each

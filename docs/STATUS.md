@@ -88,6 +88,20 @@ versions. The tool chest adds construction, detail hierarchy and confident
 object presence to the plate's shape and tomato's colour calibrations. Claude's
 story, the activity-story runtime, production art and deployment are unchanged.
 
+The next immutable Bubble-stories gate is the eight-piece repair hand-tools
+pack at
+`art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/`.
+It contains adjustable spanner, C-clamp, combination pliers, flat-head and
+Phillips screwdrivers, hand saw, spirit level and tape measure candidates, plus
+prior/light/dark/64 px evidence, exact prompts, hashes and one retained rejected
+Phillips pass. “Ligne claire, not cartoon” is now explicit: the plate, tomato
+and tool chest still govern shape, colour economy and construction, while adult
+tool proportions and credible mechanisms exclude cute, toy-like, inflated,
+caricature, mascot and sticker treatments. The candidates are unregistered
+pending Frank's review, so all eight V1s remain current and the catalogue stays
+at 305 pictures / 348 versions. Claude's story/runtime, production art and
+deployment are unchanged.
+
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 
 ## Not built yet (agreed design)

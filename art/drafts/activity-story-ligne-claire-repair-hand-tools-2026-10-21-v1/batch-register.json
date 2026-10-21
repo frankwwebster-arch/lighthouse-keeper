@@ -1,0 +1,537 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
+  "set": "activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1",
+  "status": "review-gate-awaiting-approval",
+  "created": "2026-10-21",
+  "tool": "built-in image generation plus deterministic fixed-palette normalisation",
+  "family": "repair",
+  "semanticSet": "eight adult hand tools from the repair picture family",
+  "styleChampions": {
+    "washing-plate": "living hand-drawn shape and controlled minor imperfection",
+    "sandwich-tomato": "flat colour economy and selective readable detail",
+    "repair-toolbox": "construction, detail hierarchy and confident object presence"
+  },
+  "evolvingRecipe": "Observational ligne claire, not cartoon: credible adult-object proportions and mechanisms, lively mostly-even near-black contour, flat opaque spot colour, minimal decisive construction lines and controlled minor asymmetry.",
+  "preservationRule": "Preserve each current asset's identity, working construction, viewpoint, part count, relative proportions, orientation and broad silhouette. Reject cute, toy-like, inflated, sticker or caricature treatment.",
+  "visibleAlphaThreshold": 8,
+  "components": {
+    "repair-adjustable-spanner": {
+      "family": "repair",
+      "label": "Adjustable spanner",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one adult adjustable spanner with fixed and moving jaws, brass worm screw, teal two-pin grip and brass-edged hanging hole",
+      "currentReferenceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-adjustable-spanner.png",
+      "currentReferenceSha256": "8443775c2d4d9de5af59d9339b976fda94ddd4226962d381c821f353f4560d5b",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/source/repair-adjustable-spanner-source.png",
+      "sourceSha256": "1d06c3a8d40658cc06c620d2f76b9d7dff4ac5d41f9eeebb2a98e63830d89697",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-87ec3d20-3b66-4c6a-b033-809610c077ea.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#aba69c",
+        "#494c52",
+        "#23a2b4",
+        "#0d4e75",
+        "#e7a638"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/drafts/components/repair-adjustable-spanner.png",
+      "sha256": "100235d42adac2250cc4823e83c113d54c6604c875147545b141c7e2cbda6dab",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        100,
+        254,
+        1174,
+        1061
+      ],
+      "normalisedVisibleSize": [
+        216,
+        162
+      ],
+      "normalisedOffset": [
+        20,
+        47
+      ],
+      "bounds": [
+        20,
+        47,
+        236,
+        209
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-c-clamp": {
+      "family": "repair",
+      "label": "C-clamp",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one side-on C-clamp with blue frame, brass threaded screw, pressure pad and vertical teal-ended T handle",
+      "currentReferenceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-c-clamp.png",
+      "currentReferenceSha256": "7baa85ec13949352f1460534e80d815b5237c87f7ccc489c2fd3d5da6f1ea54a",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/source/repair-c-clamp-source.png",
+      "sourceSha256": "2595a69b927c40fd0d8c73f99f3e278f295e5fa83081a5b6610d0c9cccfbc3f2",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-3697443b-85b2-4504-9ae2-65ba25e9808d.png",
+      "flatPalette": [
+        "#051824",
+        "#0d4e75",
+        "#1870a6",
+        "#e7a638",
+        "#23a2b4",
+        "#f6e5b7"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/drafts/components/repair-c-clamp.png",
+      "sha256": "6611f8354d93f3518a379040feb6e67537c72154d5314c9d087223ca64510c50",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        97,
+        298,
+        1183,
+        982
+      ],
+      "normalisedVisibleSize": [
+        216,
+        136
+      ],
+      "normalisedOffset": [
+        20,
+        60
+      ],
+      "bounds": [
+        20,
+        60,
+        236,
+        196
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-combination-pliers": {
+      "family": "repair",
+      "label": "Combination pliers",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one pair of combination pliers with serrated steel jaws, cutting notch, round pivot and two separated teal grips",
+      "currentReferenceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-combination-pliers.png",
+      "currentReferenceSha256": "dadda73bf3e3aa44eebe2a5edd0694261e812857e86b317797f1f85e38bbdea2",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/source/repair-combination-pliers-source.png",
+      "sourceSha256": "6a2c98693c724cd4af91de0da38336805a3248153358412df7a69d776a80361c",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-607f8393-8912-4d50-a2bd-648314d667e5.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#aba69c",
+        "#494c52",
+        "#e7a638",
+        "#23a2b4",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/drafts/components/repair-combination-pliers.png",
+      "sha256": "4da156ab842f9594bbc4986b4463894873e5b49de8e4d9d59c7afeecef6dab92",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        62,
+        243,
+        1189,
+        1089
+      ],
+      "normalisedVisibleSize": [
+        216,
+        162
+      ],
+      "normalisedOffset": [
+        20,
+        47
+      ],
+      "bounds": [
+        20,
+        47,
+        236,
+        209
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-flat-head-screwdriver": {
+      "family": "repair",
+      "label": "Flat-head screwdriver",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one flat-head screwdriver with slotted steel tip, long shaft, brass ferrule and dark-teal fluted handle",
+      "currentReferenceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-flat-head-screwdriver.png",
+      "currentReferenceSha256": "8c70b4549514713f55dada9b8d58a91ee9f4251fde417fc2feadea0b5e40f471",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/source/repair-flat-head-screwdriver-source.png",
+      "sourceSha256": "1faa5c9d56aab27e13957c28c93cf0453533601897fb82f87ef2456be0273d66",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-3825c9f1-b9a1-4474-b09f-0c1cb7f29f41.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#aba69c",
+        "#494c52",
+        "#e7a638",
+        "#23a2b4",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/drafts/components/repair-flat-head-screwdriver.png",
+      "sha256": "8c28c840df29c40f34780bdf50ceef17a0f69514d39ab83f594802aa0f959d92",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        94,
+        209,
+        1167,
+        1072
+      ],
+      "normalisedVisibleSize": [
+        216,
+        174
+      ],
+      "normalisedOffset": [
+        20,
+        41
+      ],
+      "bounds": [
+        20,
+        41,
+        236,
+        215
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-phillips-screwdriver": {
+      "family": "repair",
+      "label": "Phillips screwdriver",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one Phillips screwdriver with cross-head steel tip, long shaft, plain brass ferrule and coral fluted handle",
+      "currentReferenceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-phillips-screwdriver.png",
+      "currentReferenceSha256": "733b49927d6ae1054898b56fa11eb464216e8ed6996073e6f22b68ebad13a073",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/source/repair-phillips-screwdriver-source.png",
+      "sourceSha256": "6a3e7eb213b14b9ff15a202c3cc54989fe9c84b3563aef4db5902760010a2902",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-9f199efa-ed15-4c82-9216-3bddae929974.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#aba69c",
+        "#494c52",
+        "#e7a638",
+        "#e84833",
+        "#cf5c18"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/drafts/components/repair-phillips-screwdriver.png",
+      "sha256": "56152094cfd6b6e2800125954c0e21fbf6afda27801cdcdd2603065a67954ed5",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        89,
+        180,
+        1206,
+        1103
+      ],
+      "normalisedVisibleSize": [
+        216,
+        178
+      ],
+      "normalisedOffset": [
+        20,
+        39
+      ],
+      "bounds": [
+        20,
+        39,
+        236,
+        217
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-hand-saw": {
+      "family": "repair",
+      "label": "Hand saw",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one adult hand saw with tapering steel blade, one fine tooth row, tip hole and blue closed handle with two brass fasteners",
+      "currentReferenceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-hand-saw.png",
+      "currentReferenceSha256": "a7d6b4af87a3468838fe6515c42112ba39789ebd7dc1bd0a35835dc61d22dfdd",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/source/repair-hand-saw-source.png",
+      "sourceSha256": "6ab8343cb0dff56336075dd568d33442d6ce015cd3c2d46e30f557478ac7fbf2",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-05467f27-b1ad-4507-8f6e-af4e43d1682d.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#aba69c",
+        "#494c52",
+        "#0d4e75",
+        "#1870a6",
+        "#e7a638"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/drafts/components/repair-hand-saw.png",
+      "sha256": "1fca685fd5fb62ecbde6552c193d5421cd15fca80021d56914b5b678ad2f0760",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        57,
+        344,
+        1250,
+        1000
+      ],
+      "normalisedVisibleSize": [
+        216,
+        119
+      ],
+      "normalisedOffset": [
+        20,
+        68
+      ],
+      "bounds": [
+        20,
+        68,
+        236,
+        187
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-spirit-level": {
+      "family": "repair",
+      "label": "Spirit level",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one horizontal spirit level with brass end caps and exactly three vial stations: vertical left, horizontal centre and diagonal right",
+      "currentReferenceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-spirit-level.png",
+      "currentReferenceSha256": "97594e40eeef16d383f5f39ac35e55e8b4a40a2fd2e2e735de9ad99b3f5f9998",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/source/repair-spirit-level-source.png",
+      "sourceSha256": "2f05dd07ec26a784305baef3f2674add554f78a8348a1144f3934a58ea033885",
+      "sourcePixels": [
+        1983,
+        793
+      ],
+      "originalCacheFile": "exec-3f9fa9f9-bd1b-47d7-a7ec-cdb76e92db03.png",
+      "flatPalette": [
+        "#051824",
+        "#0d626d",
+        "#23a2b4",
+        "#e7a638",
+        "#a65f2a",
+        "#a7c957",
+        "#f6e5b7"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/drafts/components/repair-spirit-level.png",
+      "sha256": "ee2c77639760dc8983c83f81ca576de61192caff40e86918866515e343388fac",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        288,
+        225,
+        1695,
+        567
+      ],
+      "normalisedVisibleSize": [
+        216,
+        53
+      ],
+      "normalisedOffset": [
+        20,
+        101
+      ],
+      "bounds": [
+        20,
+        101,
+        236,
+        154
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-tape-measure": {
+      "family": "repair",
+      "label": "Tape measure",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one tape measure with blue case, brass side plate and belt clip, teal controls and one cream tape extending to a hooked end",
+      "currentReferenceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-tape-measure.png",
+      "currentReferenceSha256": "d5d3b3ff9d0df7db1ed6967e7a15f99fba35e06e785eb47249ad967105f4166e",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/source/repair-tape-measure-source.png",
+      "sourceSha256": "c57bc9867adfbe47d94762f7e7a9600342582db03b89bf38fdd3f7607188c24c",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-6c8d3d00-5732-4dab-85a4-6d20c14496eb.png",
+      "flatPalette": [
+        "#051824",
+        "#0d4e75",
+        "#1870a6",
+        "#23a2b4",
+        "#e7a638",
+        "#f6e5b7",
+        "#494c52"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/drafts/components/repair-tape-measure.png",
+      "sha256": "e35310128f586994872fd13eedb6d75062e247ad9f2400a0d07487058e293619",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        93,
+        255,
+        1193,
+        1034
+      ],
+      "normalisedVisibleSize": [
+        216,
+        153
+      ],
+      "normalisedOffset": [
+        20,
+        51
+      ],
+      "bounds": [
+        20,
+        51,
+        236,
+        204
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejected": [
+    {
+      "file": "rejected/repair-phillips-screwdriver-extra-ferrule-button-v1.png",
+      "cache": "exec-abf7bb6c-8b2f-4a11-bbdc-12a26883ead8.png",
+      "reason": "Invented a round side button on the brass ferrule and made the Phillips tip read as an oversized diamond spear rather than the current cross-head construction.",
+      "sha256": "08e88689fdf7d814c85c06940644e4da9100b5336f4262c8befd752ca6d224db"
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/evidence/current-vs-ligne-claire-contact-sheet.png",
+    "sha256": "f309653159a440ad42123c73ccecb5380f8415ab559e5cb38c4d385ea6e7c289",
+    "columns": 5,
+    "rows": 8,
+    "coveredIds": [
+      "repair-adjustable-spanner",
+      "repair-c-clamp",
+      "repair-combination-pliers",
+      "repair-flat-head-screwdriver",
+      "repair-phillips-screwdriver",
+      "repair-hand-saw",
+      "repair-spirit-level",
+      "repair-tape-measure"
+    ]
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "currentReferenceHashesPinned": true,
+    "exactPalettesRecorded": true,
+    "contactSheetCoversEveryCandidate": true,
+    "libraryVersionsAdded": false,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "deployed": false
+  },
+  "approval": null,
+  "nextStep": "Frank reviews the exact eight-picture contact sheet. On approval, add each candidate as immutable V2 with the official add-picture command; never overwrite V1.",
+  "rollback": "Before approval, discard this pack alone. After approval, set any picture's current selector back to V1; all version bytes remain immutable."
+}

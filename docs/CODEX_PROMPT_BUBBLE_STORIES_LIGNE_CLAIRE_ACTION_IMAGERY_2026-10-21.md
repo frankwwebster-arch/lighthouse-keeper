@@ -2,7 +2,8 @@
 
 **Decision date:** 21 October 2026
 
-**Status:** active; BBQ, sandwich, washing and General repair packs approved; action-imagery programme only
+**Status:** active; BBQ, sandwich, washing and General repair packs approved;
+repair hand-tools V1 awaiting review; action-imagery programme only
 
 Frank approved the six-picture BBQ pilot with “agreed, these are superb”. This
 prompt turns that approval into a controlled conversion programme for Bubble
@@ -49,6 +50,18 @@ champions. This family adds two recipe rules: inspect ambiguous counts enlarged
 before prompting, and preserve the exact topology/parts of knots and mechanical
 assemblies rather than merely matching their generic category.
 
+**Fifth family review gate (21 October 2026):** eight related adult hand tools
+are isolated at
+`art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/`:
+`repair-adjustable-spanner`, `repair-c-clamp`, `repair-combination-pliers`,
+`repair-flat-head-screwdriver`, `repair-phillips-screwdriver`,
+`repair-hand-saw`, `repair-spirit-level` and `repair-tape-measure`. The pack is
+immutable and awaiting Frank's review. Its candidates are not registered, so
+their current V1 versions remain current and the library remains at 305
+pictures / 348 versions. The pack makes “ligne claire, not cartoon” an explicit
+acceptance boundary: credible adult-tool proportions and working construction,
+without cute, toy-like, inflated, caricature, mascot or sticker treatment.
+
 ## Ready-to-paste prompt
 
 ```text
@@ -71,8 +84,9 @@ Objective
 - Translate the Bubble stories picture library into the original
   ligne-claire-inspired language approved in the six-picture BBQ pilot.
 - Work in small, immutable, reviewable family batches. The BBQ, BBQ-tools,
-  sandwich, washing and General repair families are complete; select a new
-  family for the next immutable gate.
+  sandwich, washing and General repair families are complete. The eight-piece
+  repair hand-tools family is the current unregistered review gate; do not
+  rebuild or register it before Frank's verdict.
 - The programme covers action objects, ingredients, tools, pictorial states,
   activity marks, emotions and independent comic reaction punctuation used by
   Bubble stories.
@@ -102,6 +116,10 @@ Visual authority
   interior lines. Use no gradients, glossy highlights, painterly modelling,
   airbrush, haze, bloom, cast shadow, thick sticker rim, emoji treatment or
   miniature scenic background.
+- Ligne claire is observational simplification, not cartoon styling. Keep
+  credible adult proportions, mechanisms, material transitions and practical
+  construction. Reject cute, toy-like, inflated, caricature, mascot and
+  sticker-like interpretations even when their palette and outline are clean.
 - Give each picture one dominant semantic colour family, with only the
   restrained secondary colours needed to identify its material or state.
 - Supplied comic panels are style and visual-grammar evidence only. Copy no

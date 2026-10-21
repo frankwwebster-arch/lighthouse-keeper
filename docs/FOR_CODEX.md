@@ -77,6 +77,16 @@ construction/detail/object presence. Audit ambiguous counts and topology
 enlarged before prompting; preserve exact construction, overlaps and parts
 rather than accepting a generic category match.
 
+The next immutable gate is the eight-piece repair hand-tools pack at
+`art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/`.
+It covers adjustable spanner, C-clamp, combination pliers, both screwdriver
+types, hand saw, spirit level and tape measure. Its hard boundary is “ligne
+claire, not cartoon”: retain credible adult-tool proportions and mechanisms;
+reject cute, toy-like, inflated, caricature, mascot and sticker treatment.
+The candidates are unregistered pending Frank's review, so their V1 versions
+remain current and the library remains at 305 pictures / 348 versions. Do not
+change Claude's story or `src/activityStories/` implementation for this gate.
+
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 
 Frank has authorised an exhaustive, reversible audit and redraft programme for
