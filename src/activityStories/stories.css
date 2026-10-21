@@ -63,3 +63,7 @@
 .ss-view-versions button { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 4px; background: #fff; border: 1px solid var(--st-line); border-radius: 6px; font-size: 11px; }
 .ss-view-versions button.on { border-color: var(--st-sea); background: #eef5fb; }
 .ss-view-versions img { width: 72px; height: 72px; object-fit: contain; }
+/* A cast member's “when it appears” box: a dashed drop spot for a mark (Frank's a2 answer, 21 Oct). */
+.ss-appear { display: inline-flex; gap: 4px; align-items: center; border: 1.5px dashed var(--st-line); border-radius: 6px; padding: 2px 4px; }
+.ss-appear img { width: 24px; height: 24px; }
+.ss-appear select { max-width: 190px; }

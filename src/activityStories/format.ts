@@ -15,7 +15,10 @@ export type AfterStory = 'loop' | 'hold' | 'hide'
 export type CastRole = 'hero' | 'support' | 'result'
 
 /** What a step does. Each verb has one fixed motion; see VERBS. */
-export type Verb = 'arrive' | 'present' | 'land-on' | 'flip' | 'drop-in' | 'strike' | 'scrub' | 'pour' | 'tighten' | 'reveal' | 'serve' | 'pause' | 'settle'
+export type Verb =
+  | 'arrive' | 'present' | 'land-on' | 'flip' | 'drop-in' | 'strike' | 'scrub' | 'pour' | 'tighten' | 'reveal' | 'serve' | 'pause' | 'settle'
+  // Frank's a1 answer (21 Oct): ten working actions, each with its own movement.
+  | 'saw' | 'chop' | 'stir' | 'shake' | 'spray' | 'wipe' | 'sweep' | 'dig' | 'brush' | 'iron'
 /** `around`: supports come in from both sides. `left-to-right`: everything enters from the left and finished things leave to the right. */
 export type Flow = 'around' | 'left-to-right'
 /** A corner of the bubble, or `orbit`: small and circling slowly just outside the bubble, clear of the action. */
@@ -26,6 +29,8 @@ export interface CastMember {
   role: CastRole
   /** Pin an older picture version (Frank's one-tap undo). Absent = follow the library's current version. */
   version?: number
+  /** A mark that bursts once as this picture appears, for about a second (Frank's a2 answer, 21 Oct): sparkles on the clean plate, steam on the hot dogs. */
+  appear?: string
 }
 
 export interface Step {
@@ -127,6 +132,16 @@ export const VERBS: Record<Verb, { label: string; needs: ('who' | 'onto')[]; hin
   scrub: { label: 'scrubs', needs: ['who', 'onto'], hint: 'Rubs back and forth across it, then leaves.' },
   pour: { label: 'pours onto', needs: ['who', 'onto'], hint: 'Tips over it so drops fall, then leaves.' },
   tighten: { label: 'tightens', needs: ['who', 'onto'], hint: 'Turns in place on its edge, then leaves.' },
+  saw: { label: 'saws', needs: ['who', 'onto'], hint: 'Saws back and forth across its top, cutting a little deeper, sawdust falling. Then leaves.' },
+  chop: { label: 'chops', needs: ['who', 'onto'], hint: 'Quick downward strokes, moving along it like slicing. Then leaves.' },
+  stir: { label: 'stirs', needs: ['who', 'onto'], hint: 'Dips in behind the rim and goes round and round inside it. Then leaves.' },
+  shake: { label: 'shakes over', needs: ['who', 'onto'], hint: 'Turns over above it and shakes; bits fall onto it. Then leaves.' },
+  spray: { label: 'sprays', needs: ['who', 'onto'], hint: 'Stands beside it, tilts towards it and puffs a mist across, again and again. Then leaves.' },
+  wipe: { label: 'wipes', needs: ['who', 'onto'], hint: 'Small circles over it, a gleam left after each. Then leaves.' },
+  sweep: { label: 'sweeps', needs: ['who', 'onto'], hint: 'Wide swings side to side along its bottom edge, dust puffing out at each end. Then leaves.' },
+  dig: { label: 'digs into', needs: ['who', 'onto'], hint: 'Scoops down into it and flicks up and out, earth flying. Then leaves.' },
+  brush: { label: 'brushes', needs: ['who', 'onto'], hint: 'Long slow strokes across it, one under another, lifting off after each. Then leaves.' },
+  iron: { label: 'irons', needs: ['who', 'onto'], hint: 'Glides flat across it and back, steam rising behind. Then leaves.' },
   reveal: { label: 'appears from', needs: ['who', 'onto'], hint: 'Bursts out; anything stacked on it is used up.' },
   serve: { label: 'is served', needs: ['who'], hint: 'Leaves the bubble to the right (in a left-to-right story) or upwards.' },
   pause: { label: 'pause', needs: [], hint: 'A beat where nothing new happens; the heat and props carry on.' },
@@ -145,7 +160,7 @@ export function cleanStory(raw: unknown): Story | null {
     for (const [as, m] of Object.entries(raw.cast)) {
       if (!ID.test(as) || !isObj(m) || typeof m.picture !== 'string') continue
       const role: CastRole = m.role === 'hero' || m.role === 'result' ? m.role : 'support'
-      cast[as] = { picture: m.picture, role, ...(Number.isInteger(m.version) && (m.version as number) > 0 ? { version: m.version as number } : {}) }
+      cast[as] = { picture: m.picture, role, ...(Number.isInteger(m.version) && (m.version as number) > 0 ? { version: m.version as number } : {}), ...(typeof m.appear === 'string' && m.appear ? { appear: m.appear } : {}) }
     }
   const steps: Step[] = (Array.isArray(raw.steps) ? raw.steps : []).flatMap((s): Step[] => {
     if (!isObj(s) || typeof s.do !== 'string' || !(s.do in VERBS)) return []
@@ -271,8 +286,10 @@ export type DropTarget =
   | { to: 'step'; index: number }
   | { to: 'props'; index?: number }
   | { to: 'marks'; index?: number }
+  /** A cast member's “when it appears” slot. */
+  | { to: 'appear'; as: string }
 
-/** Whether a picture of this kind can land there: objects join the cast, act in a step or circle as props; marks go on a step's touches or ride as extra marks. */
+/** Whether a picture of this kind can land there: objects join the cast, act in a step or circle as props; marks go on a step's touches, ride as extra marks or burst as a cast member appears. */
 export function canPlace(story: Story, kind: Picture['kind'], target: DropTarget): boolean {
   switch (target.to) {
     case 'cast':
@@ -280,12 +297,19 @@ export function canPlace(story: Story, kind: Picture['kind'], target: DropTarget
       return kind === 'object'
     case 'marks':
       return kind === 'mark' && Object.keys(story.cast).length > 0
+    case 'appear':
+      return kind === 'mark' && !!story.cast[target.as]
     case 'step': {
       const s = story.steps[target.index]
       if (!s) return false
       return VERBS[s.do].needs.includes(kind === 'object' ? 'who' : 'onto')
     }
   }
+}
+
+/** A cast member with a new picture: same role and “when it appears” mark, and no pinned version (that belonged to the old picture). */
+export function swapPicture(m: CastMember, picture: string): CastMember {
+  return { picture, role: m.role, ...(m.appear ? { appear: m.appear } : {}) }
 }
 
 /** A fresh cast name from a picture's label: “Sponge (yellow)” becomes sponge, then sponge-2 if that is taken. */
@@ -302,6 +326,7 @@ function castName(story: Story, label: string): string {
  * Step: an object becomes the step's actor (joining the cast if it isn't in it); a mark becomes its touch mark.
  * Props: on a prop swaps its picture, elsewhere adds one circling for the retold part of the story.
  * Extra marks: on one swaps its picture, elsewhere adds one riding on the main picture.
+ * When it appears: the mark bursts as that cast member appears.
  */
 export function placePicture(story: Story, lib: Library, picture: string, target: DropTarget): Story | null {
   const pic = lib.pictures[picture]
@@ -310,9 +335,11 @@ export function placePicture(story: Story, lib: Library, picture: string, target
   switch (target.to) {
     case 'cast': {
       const m = target.as ? story.cast[target.as] : undefined
-      if (target.as && m) return { ...story, cast: { ...story.cast, [target.as]: { picture, role: m.role } } }
+      if (target.as && m) return { ...story, cast: { ...story.cast, [target.as]: swapPicture(m, picture) } }
       return { ...story, cast: { ...story.cast, [castName(story, pic.label)]: { picture, role: 'support' } } }
     }
+    case 'appear':
+      return { ...story, cast: { ...story.cast, [target.as]: { ...story.cast[target.as], appear: picture } } }
     case 'step': {
       const steps = [...story.steps]
       const s = steps[target.index]

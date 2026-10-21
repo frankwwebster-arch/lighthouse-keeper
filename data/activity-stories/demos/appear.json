@@ -1,0 +1,65 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "id": "demo-appear",
+  "label": "Demo: a mark as each picture appears",
+  "appliesTo": {
+    "assetId": "",
+    "label": "Action demo"
+  },
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "cast": {
+    "grill": {
+      "picture": "bbq-grill",
+      "role": "hero"
+    },
+    "sausages": {
+      "picture": "bbq-sausages",
+      "role": "support"
+    },
+    "hotdogs": {
+      "picture": "bbq-hotdogs",
+      "role": "result",
+      "appear": "symbol-heat-curls"
+    },
+    "plate": {
+      "picture": "washing-plate",
+      "role": "support",
+      "appear": "symbol-clean-glint"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "grill"
+    },
+    {
+      "do": "flip",
+      "who": "sausages",
+      "onto": "grill"
+    },
+    {
+      "do": "reveal",
+      "who": "hotdogs",
+      "onto": "sausages",
+      "replace": true
+    },
+    {
+      "do": "serve",
+      "who": "hotdogs"
+    },
+    {
+      "do": "arrive",
+      "who": "plate"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [],
+  "props": [],
+  "sfx": [],
+  "notes": "Shows a “when it appears” mark: steam over the hot dogs and a glint on the clean plate, each a short burst as it appears."
+}

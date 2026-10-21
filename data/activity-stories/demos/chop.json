@@ -1,0 +1,45 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "id": "demo-chop",
+  "label": "Demo: Chef’s knife chops the vegetables",
+  "appliesTo": {
+    "assetId": "",
+    "label": "Action demo"
+  },
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "around",
+  "cast": {
+    "target": {
+      "picture": "cooking-vegetables",
+      "role": "hero"
+    },
+    "tool": {
+      "picture": "knife-chef",
+      "role": "support"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "target"
+    },
+    {
+      "do": "chop",
+      "who": "tool",
+      "onto": "target",
+      "speed": "slow"
+    },
+    {
+      "do": "pause"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [],
+  "props": [],
+  "sfx": [],
+  "notes": "Shows the chop action on its own, for the tests and for anyone checking the movement: npm run stories -- render data/activity-stories/demos/chop.json"
+}

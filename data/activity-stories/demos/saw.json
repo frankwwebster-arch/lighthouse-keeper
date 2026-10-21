@@ -1,0 +1,45 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "id": "demo-saw",
+  "label": "Demo: Hand saw saws the patch (a stand-in until a plank exists)",
+  "appliesTo": {
+    "assetId": "",
+    "label": "Action demo"
+  },
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "around",
+  "cast": {
+    "target": {
+      "picture": "repair-boat-hull-patch",
+      "role": "hero"
+    },
+    "tool": {
+      "picture": "repair-hand-saw",
+      "role": "support"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "target"
+    },
+    {
+      "do": "saw",
+      "who": "tool",
+      "onto": "target",
+      "speed": "slow"
+    },
+    {
+      "do": "pause"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [],
+  "props": [],
+  "sfx": [],
+  "notes": "Shows the saw action on its own, for the tests and for anyone checking the movement: npm run stories -- render data/activity-stories/demos/saw.json"
+}

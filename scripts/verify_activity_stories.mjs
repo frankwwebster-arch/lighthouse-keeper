@@ -69,6 +69,7 @@ for (const f of stories) {
   if (s.schema !== 'lighthouse-keeper/activity-story@1') problems.push(`${f}: wrong schema`)
   if (`${s.id}.json` !== f) problems.push(`${f}: id ${s.id} should match the file name`)
   for (const [as, m] of Object.entries(s.cast ?? {})) if (!lib.pictures[m.picture]) problems.push(`${f}: ${as} uses ${m.picture}, which isn't in the library`)
+  for (const [as, m] of Object.entries(s.cast ?? {})) if (m.appear && lib.pictures[m.appear]?.kind !== 'mark') problems.push(`${f}: ${as} bursts ${m.appear} as it appears, which isn't a mark in the library`)
   for (const st of s.steps ?? []) if (st.mark && lib.pictures[st.mark]?.kind !== 'mark') problems.push(`${f}: mark ${st.mark} isn't a mark in the library`)
   for (const a of s.ambient ?? []) if (lib.pictures[a.picture]?.kind !== 'mark') problems.push(`${f}: extra mark ${a.picture} isn't a mark in the library`)
   for (const pr of s.props ?? []) if (lib.pictures[pr.picture]?.kind !== 'object') problems.push(`${f}: prop ${pr.picture} isn't a picture in the library`)

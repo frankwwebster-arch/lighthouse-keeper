@@ -1,0 +1,45 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "id": "demo-sweep",
+  "label": "Demo: Broom sweeps along the dustpan (a stand-in until a dust pile exists)",
+  "appliesTo": {
+    "assetId": "",
+    "label": "Action demo"
+  },
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "around",
+  "cast": {
+    "target": {
+      "picture": "tool-dustpan",
+      "role": "hero"
+    },
+    "tool": {
+      "picture": "tool-broom",
+      "role": "support"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "target"
+    },
+    {
+      "do": "sweep",
+      "who": "tool",
+      "onto": "target",
+      "speed": "slow"
+    },
+    {
+      "do": "pause"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [],
+  "props": [],
+  "sfx": [],
+  "notes": "Shows the sweep action on its own, for the tests and for anyone checking the movement: npm run stories -- render data/activity-stories/demos/sweep.json"
+}

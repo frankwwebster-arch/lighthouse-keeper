@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type DragEvent, type MouseEvent } from 'react'
 import { bubbleOutline, compileStory, FPS, type Frame } from './compile'
 import { LIBRARY, STORY_DRAFTS, STYLE_REVIEW } from './drafts'
-import { STORY_SCHEMA, VERBS, canPlace, cleanStory, describeStep, groupPictures, placePicture, playsText, styleOf, versionFor, type PictureStyle, type Ambient, type DropTarget, type CastRole, type Flow, type Prop, type PropSlot, type Speed, type Step, type Story, type Verb } from './format'
+import { STORY_SCHEMA, VERBS, canPlace, cleanStory, describeStep, groupPictures, placePicture, playsText, styleOf, swapPicture, versionFor, type PictureStyle, type Ambient, type DropTarget, type CastRole, type Flow, type Prop, type PropSlot, type Speed, type Step, type Story, type Verb } from './format'
 import { loadStories, resetStory, saveStory, storyHash, type SavedStory } from './store'
 
 const DRAFT_BY_ID = Object.fromEntries(STORY_DRAFTS.map((s) => [s.id, s]))
@@ -222,7 +222,7 @@ export default function StoryStudio() {
           </form>
         )}
         <h2>Picture library</h2>
-        <p className="st-dim">Drag a picture onto the story on the right: a step, the cast, Props or Extra marks. Or tap a picture, then tap where it goes. Codex adds and replaces pictures; a new version reaches every story straight away.</p>
+        <p className="st-dim">Drag a picture onto the story on the right: a step, the cast, a cast member’s “when it appears” box, Props or Extra marks. Or tap a picture, then tap where it goes. Codex adds and replaces pictures; a new version reaches every story straight away.</p>
         <PictureLibrary story={story} editable={editable} carrying={carrying?.id ?? null} onCarry={setCarrying} onLook={setLooking} />
       </aside>
 
@@ -324,6 +324,7 @@ export default function StoryStudio() {
         {editable && <button type="button" className="st-add" onClick={() => edit({ ...story, steps: [...story.steps.slice(0, -1), { do: 'land-on', who: castNames[1], onto: castNames[0] }, ...story.steps.slice(-1)] })}>Add a step</button>}
 
         <h2>Cast</h2>
+        <p className="st-dim">Drop a picture on a member to swap it. Drop a mark on its “when it appears” box for a short burst as it appears, like sparkles on the clean plate.</p>
         <ul className="ss-cast">
           {Object.entries(story.cast).map(([as, m]) => {
             const p = LIBRARY.pictures[m.picture]
@@ -331,14 +332,22 @@ export default function StoryStudio() {
               <li key={as} {...dropZone({ to: 'cast', as })}>
                 <img src={versionFor(LIBRARY, m.picture, m.version)?.url} alt="" />
                 <b>{as}</b>
-                <select disabled={!editable} value={m.picture} onChange={(e) => edit({ ...story, cast: { ...story.cast, [as]: { picture: e.target.value, role: m.role } } })}><ObjectOptions /></select>
+                <select disabled={!editable} value={m.picture} onChange={(e) => edit({ ...story, cast: { ...story.cast, [as]: swapPicture(m, e.target.value) } })}><ObjectOptions /></select>
                 <select disabled={!editable} value={m.role} onChange={(e) => edit({ ...story, cast: { ...story.cast, [as]: { ...m, role: e.target.value as CastRole } } })}><option value="hero">main</option><option value="support">helper</option><option value="result">result</option></select>
                 {p && p.versions.length > 1 && (
-                  <select disabled={!editable} value={m.version ?? ''} onChange={(e) => edit({ ...story, cast: { ...story.cast, [as]: { picture: m.picture, role: m.role, ...(e.target.value ? { version: Number(e.target.value) } : {}) } } })} title="Pin an older version">
+                  <select disabled={!editable} value={m.version ?? ''} onChange={(e) => { const { version: _drop, ...rest } = m; edit({ ...story, cast: { ...story.cast, [as]: { ...rest, ...(e.target.value ? { version: Number(e.target.value) } : {}) } } }) }} title="Pin an older version">
                     <option value="">newest (v{p.current})</option>
                     {p.versions.filter((v) => v.v !== p.current).map((v) => <option key={v.v} value={v.v}>v{v.v} · {v.added}</option>)}
                   </select>
                 )}
+                {/* Frank's a2 answer (21 Oct): a mark that bursts for about a second as this picture appears. */}
+                <span {...dropZone({ to: 'appear', as }, 'ss-appear')} title="A mark that bursts for about a second as this picture appears. Drop a mark here.">
+                  {m.appear ? <img src={versionFor(LIBRARY, m.appear)?.url} alt="" /> : null}
+                  <select disabled={!editable} value={m.appear ?? ''} onChange={(e) => { const { appear: _drop, ...rest } = m; edit({ ...story, cast: { ...story.cast, [as]: e.target.value ? { ...rest, appear: e.target.value } : rest } }) }}>
+                    <option value="">when it appears: nothing</option>
+                    {MARKS.map(([id, mk]) => <option key={id} value={id}>when it appears: {mk.label}</option>)}
+                  </select>
+                </span>
               </li>
             )
           })}

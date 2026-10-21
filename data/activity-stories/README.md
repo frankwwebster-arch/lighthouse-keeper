@@ -197,6 +197,7 @@ The approved Prime keeper is never touched: the library only *points* at its
 data/activity-stories/
   pictures.json        the picture library (every picture, every version)
   stories/<id>.json    one draft story per file
+  demos/<verb>.json    one tiny story per working action, for the tests and to look at
 ```
 
 Frank's saved edits live in the database (`studio_docs`, id `story-<id>`) and
@@ -314,10 +315,44 @@ never disappears between them.
 | `scrub` | scrubs | Rubs back and forth across it, then leaves. |
 | `pour` | pours onto | Tips over it so drops fall, then leaves. |
 | `tighten` | tightens | Turns in place on its edge, then leaves. |
+| `saw` | saws | Saws back and forth across its top, sinking a little each stroke, sawdust falling. Then leaves. |
+| `chop` | chops | Quick downward strokes, stepping along it like slicing. Then leaves. |
+| `stir` | stirs | Dips in behind the rim and goes round and round inside it, a splash each lap. Then leaves. |
+| `shake` | shakes over | Turned over just above it and shaken; bits fall onto it. Then leaves. |
+| `spray` | sprays | Stands just clear beside it, tilts towards it and puffs a mist across. Then leaves. |
+| `wipe` | wipes | Small circles over it, working across, a gleam after each. Then leaves. |
+| `sweep` | sweeps | Wide swings side to side along its bottom edge, dust puffing out at each end. Then leaves. |
+| `dig` | digs into | Down into it, a scoop, then flicked up and out with earth flying. Then leaves. |
+| `brush` | brushes | Long slow strokes across it, always the same way, each a little lower. Then leaves. |
+| `iron` | irons | Glides flat across it and back, steam rising behind. Then leaves. |
 | `reveal` | appears from | Bursts out; anything stacked on it is used up. `replace: true` takes its place. |
 | `serve` | is served | Leaves the bubble: off to the right in a left-to-right story, otherwise upwards. |
 | `pause` | pause | A beat where nothing new happens; heat, marks and props carry on. |
 | `settle` | quiet moment | Nothing in the story moves (at least five frames); circling props carry on. Always last. |
+
+The ten working actions from `saw` to `iron` (Frank's a1 answer, 21 Oct)
+repeat their movement, so they take a little longer (8 frames of work at
+normal speed) and show no motion trails while they work. Each has a demo
+story in `demos/` that the tests check and anyone can draw:
+`npm run stories -- render data/activity-stories/demos/saw.json`.
+
+Some actions want a mark the library doesn't have yet. The engine uses the
+first of these it finds, so a mark Codex adds is picked up by itself:
+saw → `symbol-sawdust`, shake → `symbol-seasoning-flecks`, spray →
+`symbol-spray-mist`, sweep → `symbol-dust-puff`, dig → `symbol-earth-clods`,
+iron → `symbol-steam-puff`. Until then motion ticks, water droplets or heat
+curls stand in. A step's own `mark` always wins.
+
+### A mark as a picture appears
+
+A cast member can carry `"appear": "<mark id>"`: that mark bursts for about
+a second (eight frames) at the picture's top as it appears, rises a little
+with it and is gone (Frank's a2 answer, 21 Oct), such as steam as the hot
+dogs appear or a glint on the clean plate. It never runs into the quiet
+moment; reduced motion shows it still for the first frames of that step
+when the step has no touch mark. In the studio, each cast member has a
+“when it appears” box: drop a mark from the library on it, or pick one.
+`demos/appear.json` shows it.
 
 ## What the engine guarantees
 

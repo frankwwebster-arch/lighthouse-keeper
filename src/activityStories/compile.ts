@@ -136,11 +136,20 @@ const APPROACH: Record<Speed, number> = { quick: 3, normal: 4, slow: 6 }
 const WORK: Record<Speed, number> = { quick: 4, normal: 6, slow: 9 }
 const LAND: Record<Speed, number> = { quick: 3, normal: 4, slow: 6 }
 const SOLO: Record<Speed, number> = { quick: 4, normal: 6, slow: 8 }
+/** The working actions from Frank's a1 answer (21 Oct) repeat their movement, so they get longer to read. */
+const WORK_LONG: Record<Speed, number> = { quick: 6, normal: 8, slow: 12 }
 const EXIT = 2
 /** A support first pops up at its own lane, so you see what's coming before it swings in. */
 const ENTER = 2
-const TOOLS = new Set<Verb>(['strike', 'scrub', 'pour', 'tighten'])
-const DEFAULT_MARK: Partial<Record<Verb, string>> = {
+const WORKING = new Set<Verb>(['saw', 'chop', 'stir', 'shake', 'spray', 'wipe', 'sweep', 'dig', 'brush', 'iron'])
+const TOOLS = new Set<Verb>(['strike', 'scrub', 'pour', 'tighten', ...WORKING])
+const workFor = (v: Verb) => (WORKING.has(v) ? WORK_LONG : WORK)
+/**
+ * The mark a verb uses at its touches unless a step names one. A list means the first one the library has, so a
+ * mark Codex adds later (sawdust, seasoning flecks, a spray mist, a dust puff, earth, a steam puff) is picked up by
+ * itself; until then the next one stands in.
+ */
+const DEFAULT_MARK: Partial<Record<Verb, string | string[]>> = {
   'land-on': 'symbol-impact-star',
   flip: 'symbol-impact-star',
   'drop-in': 'symbol-impact-star',
@@ -149,6 +158,22 @@ const DEFAULT_MARK: Partial<Record<Verb, string>> = {
   pour: 'symbol-water-droplets',
   tighten: 'symbol-impact-star',
   reveal: 'symbol-impact-star',
+  saw: ['symbol-sawdust', 'symbol-motion-ticks'],
+  chop: 'symbol-impact-star',
+  stir: 'symbol-water-droplets',
+  shake: ['symbol-seasoning-flecks', 'symbol-water-droplets'],
+  spray: ['symbol-spray-mist', 'symbol-water-droplets'],
+  wipe: 'symbol-clean-glint',
+  sweep: ['symbol-dust-puff', 'symbol-motion-ticks'],
+  dig: ['symbol-earth-clods', 'symbol-motion-ticks'],
+  brush: 'symbol-clean-glint',
+  iron: ['symbol-steam-puff', 'symbol-heat-curls'],
+}
+/** The mark a verb uses by default, from those the library has. */
+export function defaultMark(verb: Verb, lib: Library): string {
+  const want = DEFAULT_MARK[verb] ?? 'symbol-impact-star'
+  const list = Array.isArray(want) ? want : [want]
+  return list.find((id) => lib.pictures[id]?.kind === 'mark') ?? list.at(-1)!
 }
 
 const ease = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2)
@@ -195,7 +220,7 @@ export function stepFrames(step: Step, pace = 1): number {
     case 'settle':
       return Math.max(QUIET_MIN, paced(SOLO[sp], pace))
     default:
-      return ENTER + (TOOLS.has(step.do) ? paced(APPROACH[sp], pace) + paced(WORK[sp], pace) + EXIT : paced(APPROACH[sp], pace) + paced(LAND[sp], pace))
+      return ENTER + (TOOLS.has(step.do) ? paced(APPROACH[sp], pace) + paced(workFor(step.do)[sp], pace) + EXIT : paced(APPROACH[sp], pace) + paced(LAND[sp], pace))
   }
 }
 
@@ -207,6 +232,7 @@ export function checkStory(story: Story, lib: Library): Issue[] {
     if (!p) issues.push({ level: 'error', text: `${as}: the library has no picture called ${m.picture}` })
     else if (p.kind !== 'object') issues.push({ level: 'error', text: `${as}: ${m.picture} is a mark, not an object` })
     else if (m.version && !p.versions.some((v) => v.v === m.version)) issues.push({ level: 'warn', text: `${as}: version ${m.version} of ${m.picture} doesn't exist, so the current one is used` })
+    if (m.appear && lib.pictures[m.appear]?.kind !== 'mark') issues.push({ level: 'error', text: `${as}: ${m.appear}, shown as it appears, isn’t a mark` })
   }
   const status: Record<string, Status> = Object.fromEntries(Object.keys(story.cast).map((k) => [k, 'hidden']))
   const sitsOn: Record<string, string> = {}
@@ -295,6 +321,8 @@ export function compileStory(input: Story, lib: Library): Compiled {
   const contacts: Contact[] = []
   const windows: Compiled['windows'] = []
   const firstContact: Record<number, number> = {}
+  /** Frames where a working tool repeats its movement in place: no motion trails there, or they would bury the action. */
+  const calm = new Set<string>()
   let frame = 0
   let laneNext = 0
 
@@ -329,7 +357,7 @@ export function compileStory(input: Story, lib: Library): Compiled {
    * Pop up at its lane (or wind up where it is) for ENTER frames, then swing in
    * to `to`. Frames f0 .. f0 + ENTER + k - 1; the last one is the touch.
    */
-  const approach = (as: string, start: number, k: number, to: { x: number; y: number }, s: number, opts: { high?: boolean; spin?: number } = {}) => {
+  const approach = (as: string, start: number, k: number, to: { x: number; y: number }, s: number, opts: { high?: boolean; spin?: number; turn?: number } = {}) => {
     const lane = laneFor(as)
     const was = last[as]
     const away = sideOf(lane.x)
@@ -346,11 +374,22 @@ export function compileStory(input: Story, lib: Library): Compiled {
         x: bez(from.x, ctrl.x, to.x, t),
         y: bez(from.y, ctrl.y, to.y, t),
         s: lerp(from.s, s, Math.min(1, t * 1.4)),
-        r: opts.spin ? opts.spin * (1 - t) : lerp(from.r, 0, t),
+        r: opts.spin ? opts.spin * (1 - t) : lerp(from.r, opts.turn ?? 0, t),
         o: Math.min(1, from.o + (i + 1) * 0.5),
         z: 10,
       })
     }
+  }
+  /** A mark that drifts from `a` to `b` over `life` frames and fades: sawdust, seasoning, mist, dust, earth, steam. */
+  const drift = (n: number, f: number, a: { x: number; y: number }, b: { x: number; y: number }, pic: string, s = SCALE.mark * 0.8, life = 3) => {
+    const id = `drift-${n}-${marks.length}`
+    const frames: (typeof marks)[number]['frames'] = {}
+    for (let j = 0; j < life; j++) {
+      const t = (j + 1) / life
+      if (f + j < stepEnd) frames[f + j] = { x: lerp(a.x, b.x, t), y: lerp(a.y, b.y, t), s: s * (0.8 + 0.4 * t), r: ((n * 29 + j * 17) % 21) - 10, o: j === life - 1 ? 0.5 : 1 }
+    }
+    marks.push({ id, picture: pic, frames })
+    firstContact[n] ??= f
   }
   const leave = (as: string, f0: number) => {
     const p = last[as]!
@@ -371,7 +410,7 @@ export function compileStory(input: Story, lib: Library): Compiled {
     const scaleK = (k: number) => paced(k, pace)
     const who = step.who && story.cast[step.who] ? step.who : undefined
     const onto = step.onto && story.cast[step.onto] && last[step.onto] ? step.onto : undefined
-    const mark = step.mark ?? DEFAULT_MARK[step.do] ?? 'symbol-impact-star'
+    const mark = step.mark ?? defaultMark(step.do, lib)
     // Moves that bring a support in start after its ENTER frames.
     const g = f0 + ENTER, rest = total - ENTER
     windows.push({ step: n, start: f0, end: f0 + total })
@@ -444,7 +483,7 @@ export function compileStory(input: Story, lib: Library): Compiled {
       status[who] = 'gone'
     } else if (TOOLS.has(step.do)) {
       const k = scaleK(APPROACH[sp])
-      const work = scaleK(WORK[sp])
+      const work = scaleK(workFor(step.do)[sp])
       const s = baseScale(who)
       const t = last[onto!]!
       const et = ext(onto!, t.s), ea = ext(who, s)
@@ -485,7 +524,7 @@ export function compileStory(input: Story, lib: Library): Compiled {
           marks.push({ id, picture: mark, frames })
           touch(n, start + 2, who, onto!, { x: t.x - side * 4, y: land }, mark, SCALE.mark, false)
         }
-      } else {
+      } else if (step.do === 'tighten') {
         const to = { x: t.x + side * et.w * 0.5, y: t.y - et.h * 0.1 }
         approach(who, f0, k, to, s)
         for (let i = k; i < k + work; i++) {
@@ -493,8 +532,133 @@ export function compileStory(input: Story, lib: Library): Compiled {
           set(who, g + i, { x: to.x, y: to.y, s, r: side * 40 * Math.min(3, turn + 1), o: 1, z: 10 })
           if ((i - k) % 2 === 0) touch(n, g + i, who, onto!, { x: to.x - side * ea.w * 0.4, y: to.y - ea.h * 0.6 }, mark, SCALE.mark)
         }
+      } else if (step.do === 'saw') {
+        // Rests on its top edge and saws back and forth, sinking a little deeper each stroke; sawdust falls from the cut.
+        const top = t.y - et.h
+        const to = { x: t.x, y: top - ea.h * 0.55 }
+        const amp = Math.max(10, et.w * 0.35)
+        approach(who, f0, k, { x: to.x + amp, y: to.y }, s, { turn: -side * 12 })
+        touch(n, g + k - 1, who, onto!, { x: t.x, y: top }, mark, SCALE.mark)
+        for (let i = k; i < k + work; i++) {
+          const swing = Math.cos(((i - k + 1) * Math.PI) / 2)
+          set(who, g + i, { x: to.x + amp * swing, y: to.y + (6 * (i - k + 1)) / work, s, r: -side * 12, o: 1, z: 10 })
+          if (Math.abs(swing) > 0.9) drift(n, g + i, { x: t.x, y: top + 4 }, { x: t.x - swing * 14, y: top + 26 }, mark, SCALE.mark * 0.7)
+        }
+      } else if (step.do === 'chop') {
+        // Quick downward strokes, stepping along it like slicing: down (a touch), up, down a little further on.
+        const top = t.y - et.h
+        const chops = Math.max(2, Math.floor(work / 2))
+        const along = (c: number) => t.x + side * et.w * (0.35 - (0.7 * c) / Math.max(1, chops - 1))
+        const up = top - ea.h * 1.3, down = top - ea.h * 0.8
+        approach(who, f0, k, { x: along(0), y: up }, s, { turn: side * 14 })
+        for (let i = k; i < k + work; i++) {
+          const c = Math.min(chops - 1, Math.floor((i - k) / 2)), isDown = (i - k) % 2 === 0
+          set(who, g + i, { x: along(c), y: isDown ? down : up, s, r: isDown ? 0 : side * 14, o: 1, z: 10 })
+          if (isDown) touch(n, g + i, who, onto!, { x: along(c), y: top }, mark, SCALE.mark)
+        }
+      } else if (step.do === 'stir') {
+        // Dips in behind the rim and goes round inside it, one lap every four frames, a splash at each lap.
+        const top = t.y - et.h
+        const c = { x: t.x, y: top - ea.h * 0.35 }
+        const rx = Math.max(8, et.w * 0.3)
+        approach(who, f0, k, { x: c.x + rx, y: c.y }, s, { turn: side * 10 })
+        touch(n, g + k - 1, who, onto!, { x: c.x + rx, y: top }, mark, SCALE.mark)
+        const behind = t.z - 0.5
+        for (let i = k; i < k + work; i++) {
+          const a = ((i - k + 1) * Math.PI) / 2
+          set(who, g + i, { x: c.x + rx * Math.cos(a), y: c.y + 3 * Math.sin(a), s, r: side * 10 * Math.cos(a), o: 1, z: behind })
+          if ((i - k + 1) % 4 === 0) drift(n, g + i, { x: c.x + rx, y: top - 2 }, { x: c.x + rx + 12, y: top - 18 }, mark, SCALE.mark * 0.7)
+        }
+      } else if (step.do === 'shake') {
+        // Turned over just above it and shaken up and down; bits fall onto it at each shake.
+        const top = t.y - et.h
+        const low = top - ea.h, high = low - 10
+        const tilt = 180 + side * 20
+        approach(who, f0, k, { x: t.x, y: high }, s, { turn: tilt })
+        for (let i = k; i < k + work; i++) {
+          const isDown = (i - k) % 2 === 0
+          set(who, g + i, { x: t.x, y: isDown ? low : high, s, r: tilt + (isDown ? -side * 8 : side * 8), o: 1, z: 10 })
+          if (isDown) {
+            touch(n, g + i, who, onto!, { x: t.x, y: top }, mark, SCALE.mark * 0.6)
+            drift(n, g + i, { x: t.x + ((i % 3) - 1) * 6, y: low + ea.h * 0.6 }, { x: t.x + ((i % 3) - 1) * 10, y: top + et.h * 0.3 }, mark, SCALE.mark * 0.7)
+          }
+        }
+      } else if (step.do === 'spray') {
+        // Stands just clear beside it, tilts towards it and puffs a mist across, every third frame.
+        const to = { x: t.x + side * (et.w + ea.w + 6), y: t.y - et.h * 0.4 }
+        const lean = -side * 18
+        approach(who, f0, k, to, s, { turn: lean })
+        for (let i = k; i < k + work; i++) {
+          const puff = (i - k) % 3 === 0
+          set(who, g + i, { x: to.x + (puff ? side * 3 : 0), y: to.y, s: s * (puff ? 0.95 : 1), r: lean + (puff ? -side * 6 : 0), o: 1, z: 10 })
+          if (puff) drift(n, g + i, { x: to.x - side * ea.w * 0.8, y: to.y - ea.h * 0.4 }, { x: t.x + side * et.w * 0.2, y: t.y - et.h * 0.3 }, mark, SCALE.mark, 4)
+        }
+      } else if (step.do === 'wipe') {
+        // Small circles over it, working slowly across, a gleam left behind after each circle.
+        const c = { x: t.x - side * et.w * 0.2, y: t.y - et.h * 0.15 }
+        const rx = Math.max(6, et.w * 0.16)
+        approach(who, f0, k, { x: c.x + rx, y: c.y }, s)
+        touch(n, g + k - 1, who, onto!, { x: c.x + rx, y: c.y + ea.h * 0.5 }, mark, SCALE.mark * 0.8)
+        for (let i = k; i < k + work; i++) {
+          const a = ((i - k + 1) * Math.PI) / 2
+          const cx = c.x + side * et.w * 0.4 * ((i - k + 1) / work)
+          set(who, g + i, { x: cx + rx * Math.cos(a), y: c.y + 5 * Math.sin(a), s, r: 8 * Math.sin(a), o: 1, z: 10 })
+          if ((i - k + 1) % 4 === 0) touch(n, g + i, who, onto!, { x: cx - side * 10, y: c.y - 6 }, mark, SCALE.mark * 0.8, false)
+        }
+      } else if (step.do === 'sweep') {
+        // Wide, slow swings side to side along its bottom edge; dust puffs out at the end of each swing.
+        const base = { x: t.x, y: t.y + et.h - ea.h * 0.6 }
+        const amp = et.w * 0.6 + ea.w * 0.2
+        approach(who, f0, k, base, s)
+        touch(n, g + k - 1, who, onto!, { x: base.x, y: t.y + et.h }, mark, SCALE.mark * 0.8)
+        for (let i = k; i < k + work; i++) {
+          const a = ((i - k + 1) * Math.PI) / 4
+          const swing = Math.sin(a)
+          set(who, g + i, { x: base.x + amp * swing, y: base.y, s, r: -18 * Math.cos(a), o: 1, z: 10 })
+          if (Math.abs(swing) > 0.99) drift(n, g + i, { x: base.x + swing * (amp + ea.w * 0.5), y: base.y + ea.h * 0.4 }, { x: base.x + swing * (amp + ea.w * 0.5 + 18), y: base.y + ea.h * 0.1 }, mark, SCALE.mark * 0.7)
+        }
+      } else if (step.do === 'dig') {
+        // Four beats per dig: poised above, down into it (a touch), scoop, then a flick up and out with earth flying off.
+        const top = t.y - et.h
+        const above = { x: t.x + side * et.w * 0.15, y: top - ea.h * 0.9 }
+        const into = { x: t.x, y: top - ea.h * 0.1 }
+        const flick = { x: t.x + side * et.w * 0.5, y: top - ea.h * 1.2 }
+        approach(who, f0, k, above, s, { turn: side * 10 })
+        for (let i = k; i < k + work; i++) {
+          const beat = (i - k) % 4
+          const at = beat === 0 ? above : beat === 1 ? into : beat === 2 ? { x: into.x - side * 6, y: into.y + 2 } : flick
+          // Blade tipped down into it, then levered back so it flicks up and out towards its own side.
+          set(who, g + i, { ...at, s, r: [side * 10, side * 22, 0, -side * 35][beat], o: 1, z: 10 })
+          if (beat === 1) touch(n, g + i, who, onto!, { x: into.x, y: top }, mark, SCALE.mark * 0.7)
+          if (beat === 3) drift(n, g + i, { x: flick.x, y: flick.y - ea.h * 0.4 }, { x: flick.x + side * 22, y: flick.y - ea.h * 0.4 + 10 }, mark, SCALE.mark * 0.7)
+        }
+      } else if (step.do === 'brush') {
+        // Long slow strokes across it, always the same way, each a little lower; it lifts off between strokes.
+        const amp = Math.max(20, et.w * 0.6)
+        const lean = -side * 25
+        const y0 = t.y - et.h * 0.35
+        approach(who, f0, k, { x: t.x + side * amp, y: y0 - 6 }, s, { turn: lean })
+        for (let i = k; i < k + work; i++) {
+          const beat = (i - k) % 4, stroke = Math.floor((i - k) / 4)
+          const y = y0 + stroke * 8
+          const x = beat === 0 ? t.x + side * amp : t.x + side * amp - side * 2 * amp * (beat / 3)
+          set(who, g + i, { x, y: beat === 0 ? y - 6 : y, s, r: lean, o: 1, z: 10 })
+          if (beat === 1) touch(n, g + i, who, onto!, { x, y: y + ea.h * 0.5 }, mark, SCALE.mark * 0.7, stroke === 0)
+        }
+      } else if (step.do === 'iron') {
+        // Glides flat across it and back, slowly and smoothly; steam puffs up behind every third frame.
+        const y = t.y - et.h * 0.25
+        const amp = Math.max(18, et.w * 0.5)
+        approach(who, f0, k, { x: t.x - side * amp, y }, s)
+        touch(n, g + k - 1, who, onto!, { x: t.x - side * amp, y: y + ea.h * 0.6 }, mark, SCALE.mark * 0.7)
+        for (let i = k; i < k + work; i++) {
+          const x = t.x - side * amp * Math.cos((2 * Math.PI * (i - k + 1)) / work)
+          set(who, g + i, { x, y, s, r: 0, o: 1, z: 10 })
+          if ((i - k) % 3 === 1) drift(n, g + i, { x: x + side * ea.w * 0.3, y: y - ea.h * 0.5 }, { x: x + side * ea.w * 0.3, y: y - ea.h - 16 }, mark, SCALE.mark * 0.8)
+        }
       }
       const tail = g + k + work
+      if (WORKING.has(step.do)) for (let i = k; i < k + work; i++) calm.add(`${who}:${g + i}`)
       leave(who, tail)
     } else if (step.do === 'serve') {
       // Finished food leaves: a small lift, then off to the right (left-to-right) or up and out.
@@ -561,6 +725,25 @@ export function compileStory(input: Story, lib: Library): Compiled {
   }
   const quietStep = story.steps.length
   const quiet: [number, number] = [windows[quietStep - 1].start, storyFrames - 1]
+  // A mark that bursts as a picture appears (Frank's a2 answer, 21 Oct): about a second at the picture's top, rising a
+  // little and following it, then gone. It never runs into the quiet moment.
+  const BURST = [[0.75, 0.7], [1, 1], [1.1, 1], [1.1, 1], [1.05, 1], [1, 0.9], [0.95, 0.6], [0.9, 0.3]]
+  for (const m of members) {
+    const pic = story.cast[m].appear
+    if (!pic) continue
+    for (let f = 0; f < quiet[0]; f++) {
+      const p = poses[m][f], before = f > 0 ? poses[m][f - 1] : null
+      if (!p || p.o < 0.5 || (before && before.o >= 0.5)) continue
+      const frames: (typeof marks)[number]['frames'] = {}
+      BURST.forEach(([s, o], j) => {
+        const q = poses[m][f + j]
+        if (f + j >= quiet[0] || !q || q.o <= 0) return
+        const e = ext(m, q.s)
+        frames[f + j] = { x: q.x + e.w * 0.35, y: q.y - e.h - 4 - j * 1.5, s: SCALE.mark * s, r: 0, o }
+      })
+      marks.push({ id: `appear-${m}-${f}`, picture: pic, frames })
+    }
+  }
   const loopStart = story.loopFrom && windows[story.loopFrom - 1] ? windows[story.loopFrom - 1].start : 0
   // A story that retells from a later step flows straight on, so it needs no clearing frames.
   const clear = story.afterStory === 'hold' || loopStart > 0 ? 0 : CLEAR_FRAMES
@@ -615,7 +798,7 @@ export function compileStory(input: Story, lib: Library): Compiled {
       // Motion trails: only while something moves fast, always beneath the objects.
       for (const m of members) {
         const a = poses[m][f], b = f > 0 ? poses[m][f - 1] : null
-        if (!a || !b || a.o < 0.5) continue
+        if (!a || !b || a.o < 0.5 || calm.has(`${m}:${f}`)) continue
         const vx = a.x - b.x, vy = a.y - b.y, v = Math.hypot(vx, vy)
         if (v <= 6) continue
         const e = ext(m, a.s)
@@ -659,6 +842,8 @@ export function compileStory(input: Story, lib: Library): Compiled {
     const shown = next.filter((m, i, l): m is string => !!m && !!story.cast[m] && l.indexOf(m) === i && (poses[m][keyFrame]?.o ?? 0) > 0.5).slice(-2)
     const c = contacts.find((x) => x.step === w.step)
     const cm = c ? marks.find((mk) => mk.frames[c.frame] && mk.id.startsWith(`contact-${w.step}-`)) : undefined
+    // With no touch mark this step, a picture that has just appeared shows its burst mark instead (one mark at most).
+    const burst = cm ? undefined : shown.find((m) => !pair.includes(m) && story.cast[m].appear)
     for (let f = w.start; f < w.end; f++) {
       const items: FrameItem[] = shown.map((m) => {
         let p = poses[m][keyFrame]!
@@ -673,6 +858,11 @@ export function compileStory(input: Story, lib: Library): Compiled {
       if (cm && c && f >= c.frame && f <= Math.min(w.end - 1, c.frame + 3)) {
         const st = cm.frames[c.frame + 1] ?? cm.frames[c.frame]
         items.push({ id: cm.id, picture: cm.picture, url: markUrl(cm.picture), kind: 'mark', x: r2(st.x), y: r2(st.y), scale: r2(st.s), rotation: 0, opacity: 1, z: 20 })
+      } else if (burst && f - w.start < 6) {
+        const p = items.find((i) => i.id === burst)!
+        const e = ext(burst, p.scale)
+        const pic = story.cast[burst].appear!
+        items.push({ id: `appear-${burst}`, picture: pic, url: markUrl(pic), kind: 'mark', x: r2(p.x + e.w * 0.35), y: r2(p.y - e.h - 4), scale: SCALE.mark, rotation: 0, opacity: 1, z: 20 })
       }
       reduced.push({ step: w.step, phase: f >= quiet[0] ? 'quiet' : 'story', bubble: { opacity: 1, scale: 1 }, items: items.sort((x, y) => x.z - y.z) })
     }

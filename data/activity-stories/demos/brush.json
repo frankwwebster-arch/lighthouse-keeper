@@ -1,0 +1,45 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "id": "demo-brush",
+  "label": "Demo: Brushes paint the canvas (a stand-in until a single paintbrush exists)",
+  "appliesTo": {
+    "assetId": "",
+    "label": "Action demo"
+  },
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "around",
+  "cast": {
+    "target": {
+      "picture": "art-easel-and-canvas",
+      "role": "hero"
+    },
+    "tool": {
+      "picture": "art-brushes-pot",
+      "role": "support"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "target"
+    },
+    {
+      "do": "brush",
+      "who": "tool",
+      "onto": "target",
+      "speed": "slow"
+    },
+    {
+      "do": "pause"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [],
+  "props": [],
+  "sfx": [],
+  "notes": "Shows the brush action on its own, for the tests and for anyone checking the movement: npm run stories -- render data/activity-stories/demos/brush.json"
+}

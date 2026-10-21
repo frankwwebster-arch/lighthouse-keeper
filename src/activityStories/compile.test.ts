@@ -3,7 +3,7 @@ import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { compileStory, type FrameItem } from './compile'
 import { STORY_DRAFTS, STORY_FILES, LIBRARY, STYLE_REVIEW } from './drafts'
-import { canPlace, styleOf, cleanStory, groupPictures, OTHER_GROUP, placePicture, playsText, type Library } from './format'
+import { canPlace, styleOf, cleanStory, groupPictures, OTHER_GROUP, placePicture, playsText, swapPicture, type Library, type Story } from './format'
 
 const objects = <T extends { kind: string }>(items: T[]) => items.filter((i) => i.kind === 'object')
 
@@ -332,5 +332,169 @@ describe('the ligne-claire style review', () => {
     const lib = structuredClone(LIBRARY) as Library
     lib.pictures[id].current = 99
     expect(styleOf(STYLE_REVIEW, lib, id)).toBeUndefined()
+  })
+})
+
+/** One demo story per working action (data/activity-stories/demos): the target arrives, the tool does its job slowly, a pause. */
+const DEMO_DIR = path.resolve(__dirname, '../../data/activity-stories/demos')
+const demo = (name: string) => cleanStory(JSON.parse(fs.readFileSync(path.join(DEMO_DIR, `${name}.json`), 'utf8')))!
+
+describe('the ten working actions (Frank’s a1 answer, 21 Oct)', () => {
+  const VERBS10 = ['saw', 'chop', 'stir', 'shake', 'spray', 'wipe', 'sweep', 'dig', 'brush', 'iron'] as const
+  /** The tool's frames while it works: after it pops up (2) and swings in (6, slow), for 12 frames. */
+  const working = (name: string) => {
+    const c = compileStory(demo(name), LIBRARY)
+    const w = c.windows[1]
+    const frames = c.full.slice(w.start + 8, w.start + 20)
+    return {
+      c,
+      tool: frames.map((f) => f.items.find((i) => i.id === 'tool')!),
+      target: frames.map((f) => f.items.find((i) => i.id === 'target')!),
+      marks: c.full.slice(w.start, w.end).flatMap((f) => f.items.filter((i) => i.kind === 'mark' && !i.id.startsWith('trail-'))),
+    }
+  }
+  const turns = (v: number[]) => v.slice(2).filter((x, i) => Math.sign(x - v[i + 1]) !== 0 && Math.sign(v[i + 1] - v[i]) !== 0 && Math.sign(x - v[i + 1]) !== Math.sign(v[i + 1] - v[i])).length
+  const range = (v: number[]) => Math.max(...v) - Math.min(...v)
+
+  for (const verb of VERBS10)
+    it(`${verb}: plays cleanly, touches where it says, then leaves`, () => {
+      const { c, tool } = working(verb)
+      expect(c.issues.filter((i) => i.level === 'error'), verb).toEqual([])
+      expect(tool.every(Boolean), `${verb} on show while it works`).toBe(true)
+      for (const t of c.contacts) expect(t.gap, `${verb} at frame ${t.frame}`).toBeLessThanOrEqual(4)
+      expect(c.full[c.windows[2].start].items.some((i) => i.id === 'tool')).toBe(false)
+      // No motion trails while it works in place: they would bury the action.
+      const w = c.windows[1]
+      for (const f of c.full.slice(w.start + 8, w.start + 20)) expect(f.items.some((i) => i.id === 'trail-tool'), verb).toBe(false)
+    })
+
+  it('saw: back and forth across the top, sinking a little, sawdust falling', () => {
+    const { tool, target, marks } = working('saw')
+    expect(turns(tool.map((t) => t.x))).toBeGreaterThanOrEqual(4)
+    expect(tool.at(-1)!.y).toBeGreaterThan(tool[0].y)
+    expect(range(tool.map((t) => t.y))).toBeLessThan(8)
+    expect(tool.every((t, i) => t.y < target[i].y)).toBe(true)
+    expect(marks.filter((m) => m.id.startsWith('drift-')).length).toBeGreaterThanOrEqual(3)
+  })
+
+  it('chop: quick downward strokes, stepping along', () => {
+    const { tool, marks } = working('chop')
+    expect(turns(tool.map((t) => t.y))).toBeGreaterThanOrEqual(4)
+    expect(Math.abs(tool.at(-1)!.x - tool[0].x)).toBeGreaterThan(10)
+    expect(new Set(marks.filter((m) => m.id.startsWith('contact-')).map((m) => m.id)).size).toBeGreaterThanOrEqual(4)
+  })
+
+  it('stir: round and round, behind the rim of what it stirs', () => {
+    const { tool, target } = working('stir')
+    expect(tool.every((t, i) => t.z < target[i].z)).toBe(true)
+    expect(turns(tool.map((t) => t.x))).toBeGreaterThanOrEqual(2)
+    expect(turns(tool.map((t) => t.y))).toBeGreaterThanOrEqual(2)
+  })
+
+  it('shake: turned over above it, shaken, bits falling onto it', () => {
+    const { tool, target, marks } = working('shake')
+    expect(tool.every((t) => Math.abs(t.rotation) > 150)).toBe(true)
+    expect(tool.every((t, i) => t.y < target[i].y)).toBe(true)
+    expect(turns(tool.map((t) => t.y))).toBeGreaterThanOrEqual(4)
+    const bits = marks.filter((m) => m.id.startsWith('drift-'))
+    expect(bits.length).toBeGreaterThanOrEqual(4)
+  })
+
+  it('spray: stands clear beside it and puffs a mist across', () => {
+    const { tool, target, marks, c } = working('spray')
+    expect(tool.every((t, i) => Math.abs(t.x - target[i].x) > 40)).toBe(true)
+    expect(c.contacts.filter((t) => t.step === 2)).toEqual([])
+    const puffs = new Set(marks.filter((m) => m.id.startsWith('drift-')).map((m) => m.id))
+    expect(puffs.size).toBeGreaterThanOrEqual(3)
+  })
+
+  it('wipe: small circles over it, a gleam after each', () => {
+    const { tool, target, marks } = working('wipe')
+    expect(range(tool.map((t) => t.y))).toBeLessThanOrEqual(12)
+    expect(turns(tool.map((t) => t.x))).toBeGreaterThanOrEqual(2)
+    expect(tool.every((t, i) => Math.abs(t.y - target[i].y) < 30)).toBe(true)
+    expect(new Set(marks.filter((m) => m.picture === 'symbol-clean-glint').map((m) => m.id)).size).toBeGreaterThanOrEqual(3)
+  })
+
+  it('sweep: wide swings along its bottom edge', () => {
+    const { tool, target } = working('sweep')
+    expect(tool.every((t, i) => t.y > target[i].y)).toBe(true)
+    expect(range(tool.map((t) => t.x))).toBeGreaterThan(range(working('wipe').tool.map((t) => t.x)))
+    expect(turns(tool.map((t) => t.x))).toBeGreaterThanOrEqual(1)
+  })
+
+  it('dig: down into it, then flicked up and out', () => {
+    const { tool, target, marks } = working('dig')
+    expect(new Set(tool.map((t) => t.rotation)).size).toBeGreaterThanOrEqual(3)
+    expect(Math.max(...tool.map((t) => t.y))).toBeGreaterThan(Math.min(...tool.map((t) => t.y)) + 20)
+    expect(tool.some((t, i) => Math.abs(t.x - target[i].x) < 2)).toBe(true)
+    expect(marks.some((m) => m.id.startsWith('drift-'))).toBe(true)
+  })
+
+  it('brush: long strokes the same way, each a little lower', () => {
+    const { tool } = working('brush')
+    const strokes = [0, 4, 8].map((k) => tool.slice(k, k + 4))
+    for (const st of strokes) expect(Math.sign(st[3].x - st[1].x)).toBe(Math.sign(strokes[0][3].x - strokes[0][1].x))
+    expect(Math.abs(strokes[0][3].x - strokes[0][1].x)).toBeGreaterThan(20)
+    expect(strokes[2][2].y).toBeGreaterThan(strokes[0][2].y)
+  })
+
+  it('iron: glides flat across and back, steam rising', () => {
+    const { tool, marks } = working('iron')
+    expect(tool.every((t) => t.rotation === 0)).toBe(true)
+    expect(range(tool.map((t) => t.y))).toBe(0)
+    expect(range(tool.map((t) => t.x))).toBeGreaterThan(25)
+    const steam = marks.filter((m) => m.id.startsWith('drift-'))
+    expect(steam.length).toBeGreaterThanOrEqual(3)
+  })
+
+  it('each action moves differently from every other', () => {
+    const sig = (v: string) => working(v).tool.map((t) => `${Math.round(t.x)},${Math.round(t.y)},${Math.round(t.rotation)}`).join(' ')
+    expect(new Set(VERBS10.map(sig)).size).toBe(VERBS10.length)
+  })
+})
+
+describe('a mark as a picture appears (Frank’s a2 answer, 21 Oct)', () => {
+  const story = demo('appear')
+  const c = compileStory(story, LIBRARY)
+  const bursts = (id: string) => c.full.map((f, k) => [k, f.items.find((i) => i.id.startsWith(`appear-${id}`))] as const).filter(([, i]) => i)
+
+  it('bursts once, for about a second, as the picture appears, then is gone', () => {
+    expect(c.issues.filter((i) => i.level === 'error')).toEqual([])
+    for (const id of ['hotdogs', 'plate']) {
+      const seen = bursts(id)
+      const first = c.full.findIndex((f) => f.items.some((i) => i.id === id))
+      expect(seen[0][0], id).toBe(first)
+      expect(seen.length, id).toBeGreaterThanOrEqual(6)
+      expect(seen.length, id).toBeLessThanOrEqual(8)
+      expect(seen.at(-1)![0] - seen[0][0], id).toBe(seen.length - 1)
+      // It sits above the picture it belongs to.
+      const [k, mark] = seen[2]
+      expect(mark!.y).toBeLessThan(c.full[k].items.find((i) => i.id === id)!.y)
+    }
+    expect(bursts('grill')).toEqual([])
+  })
+
+  it('never runs into the quiet moment, and reduced motion shows it still', () => {
+    for (const f of c.full.slice(c.quiet[0])) expect(f.items.filter((i) => i.kind === 'mark')).toEqual([])
+    const r = c.reduced.filter((f) => f.items.some((i) => i.id.startsWith('appear-')))
+    expect(r.length).toBeGreaterThan(0)
+    for (const f of c.reduced) expect(f.items.filter((i) => i.kind === 'mark').length).toBeLessThanOrEqual(1)
+  })
+
+  it('is dropped from the library onto a cast member’s slot, and kept when its picture is swapped', () => {
+    const bbq = STORY_DRAFTS.find((s) => s.id === 'garden-bbq')!
+    expect(canPlace(bbq, 'mark', { to: 'appear', as: 'hotdogs' })).toBe(true)
+    expect(canPlace(bbq, 'object', { to: 'appear', as: 'hotdogs' })).toBe(false)
+    expect(canPlace(bbq, 'mark', { to: 'appear', as: 'nobody' })).toBe(false)
+    const withMark = placePicture(bbq, LIBRARY, 'symbol-pleasant-aroma', { to: 'appear', as: 'hotdogs' })!
+    expect(withMark.cast.hotdogs.appear).toBe('symbol-pleasant-aroma')
+    const swapped = placePicture(withMark, LIBRARY, 'bbq-burgers', { to: 'cast', as: 'hotdogs' })!
+    expect(swapped.cast.hotdogs).toEqual({ picture: 'bbq-burgers', role: bbq.cast.hotdogs.role, appear: 'symbol-pleasant-aroma' })
+    expect(swapPicture({ picture: 'a', role: 'hero', version: 2 }, 'b')).toEqual({ picture: 'b', role: 'hero' })
+    // It survives a save and reload, and a non-mark is reported.
+    expect(cleanStory(JSON.parse(JSON.stringify(withMark)))!.cast.hotdogs.appear).toBe('symbol-pleasant-aroma')
+    const wrong: Story = { ...bbq, cast: { ...bbq.cast, hotdogs: { ...bbq.cast.hotdogs, appear: 'tool-broom' } } }
+    expect(compileStory(wrong, LIBRARY).issues.some((i) => i.level === 'error' && i.text.includes('tool-broom'))).toBe(true)
   })
 })
