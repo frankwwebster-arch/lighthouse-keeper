@@ -127,6 +127,465 @@
     ]
   },
   "pictures": {
+    "aquarium-aerator": {
+      "kind": "object",
+      "family": "aquarium",
+      "label": "Aquarium aerator",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/aquarium-aerator.png",
+          "sha256": "3f60700291a2270d642edc511e553cfba3e4f38b6a86da260b440469be6c259a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            36,
+            20,
+            219,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "aquarium-aerator.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "aquarium-castle": {
+      "kind": "object",
+      "family": "aquarium",
+      "label": "Aquarium castle",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/aquarium-castle.png",
+          "sha256": "57b44940b665d3c9591849ffcb7e3e6639983b8105af38b703c88133850ce941",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            25,
+            236,
+            230
+          ],
+          "added": "2026-10-21",
+          "source": "aquarium-castle.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "aquarium-cleaning": {
+      "kind": "object",
+      "family": "aquarium",
+      "label": "Aquarium cleaning",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/aquarium-cleaning.png",
+          "sha256": "b0b54e713f1d106718e9439008481452a540d474c023a0d24740a56577afed51",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            52,
+            236,
+            204
+          ],
+          "added": "2026-10-21",
+          "source": "aquarium-cleaning.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "aquarium-fish": {
+      "kind": "object",
+      "family": "aquarium",
+      "label": "Aquarium fish",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/aquarium-fish.png",
+          "sha256": "587ed6353a6df9ff64ee50b8fabf1fee58db479a45278163a0b21057ebfa04cd",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            60,
+            236,
+            195
+          ],
+          "added": "2026-10-21",
+          "source": "aquarium-fish.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "aquarium-food": {
+      "kind": "object",
+      "family": "aquarium",
+      "label": "Aquarium food",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/aquarium-food.png",
+          "sha256": "64889328d5b8630657a08db6cb47426927c84fd0b4614e1ccf82671e22ade4ba",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            54,
+            236,
+            202
+          ],
+          "added": "2026-10-21",
+          "source": "aquarium-food.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "aquarium-plants": {
+      "kind": "object",
+      "family": "aquarium",
+      "label": "Aquarium plants",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/aquarium-plants.png",
+          "sha256": "f2979bcf0d26e9ebb06f5d542628101ca85d2446d5976d03b32e654300857bc9",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            27,
+            236,
+            229
+          ],
+          "added": "2026-10-21",
+          "source": "aquarium-plants.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "aquarium-treasure": {
+      "kind": "object",
+      "family": "aquarium",
+      "label": "Aquarium treasure",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/aquarium-treasure.png",
+          "sha256": "95a62825c4607aac8c5b9ec37a43b61656487e338b58c3d9779aa21f2fc110e4",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            32,
+            236,
+            223
+          ],
+          "added": "2026-10-21",
+          "source": "aquarium-treasure.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "baking-flour": {
+      "kind": "object",
+      "family": "baking",
+      "label": "Baking flour",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/baking-flour.png",
+          "sha256": "80a4ec6ed2e1a4e9fb898c937f1c9d80ddd2239d27261358e4bc18e6433ce830",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            39,
+            236,
+            216
+          ],
+          "added": "2026-10-21",
+          "source": "baking-flour.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "bathroom-bad-smell": {
+      "kind": "object",
+      "family": "bathroom",
+      "label": "Bathroom bad smell",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-20-v6/drafts/components/bathroom-bad-smell.png",
+          "sha256": "2aa660f306e33bd5352b5740c3fd4482d28bbc5bb7b92c0201678ccfc6e6d66a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            43,
+            20,
+            212,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "bathroom-bad-smell.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v6 picture catalogue"
+        }
+      ]
+    },
+    "bathroom-bathtub": {
+      "kind": "object",
+      "family": "bathroom",
+      "label": "Bathroom bathtub",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/bathroom-bathtub.png",
+          "sha256": "70fd578c6088bfe7c7ecd35437023bffb5123a71b4af7ce4056ff990d1e79646",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            33,
+            236,
+            223
+          ],
+          "added": "2026-10-21",
+          "source": "bathroom-bathtub.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "bathroom-bubbles": {
+      "kind": "object",
+      "family": "bathroom",
+      "label": "Bathroom bubbles",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/bathroom-bubbles.png",
+          "sha256": "1d27fd6954ec85e5846d22f19214f2404f19556609e9572983805156478feb7f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            24,
+            20,
+            231,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "bathroom-bubbles.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "bathroom-flush-handle": {
+      "kind": "object",
+      "family": "bathroom",
+      "label": "Bathroom flush handle",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-20-v6/drafts/components/bathroom-flush-handle.png",
+          "sha256": "d755117e469236c645c3482ce45945148522ac1db27e429e0331e82fea57a51b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            77,
+            236,
+            179
+          ],
+          "added": "2026-10-21",
+          "source": "bathroom-flush-handle.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v6 picture catalogue"
+        }
+      ]
+    },
+    "bathroom-loo-brush": {
+      "kind": "object",
+      "family": "bathroom",
+      "label": "Bathroom loo brush",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-20-v6/drafts/components/bathroom-loo-brush.png",
+          "sha256": "c48ae0af4db9d028916d75f4a3005e085a7861d1abcd9339dd2be67fdd418d92",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            74,
+            20,
+            182,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "bathroom-loo-brush.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v6 picture catalogue"
+        }
+      ]
+    },
+    "bathroom-privacy-latch": {
+      "kind": "object",
+      "family": "bathroom",
+      "label": "Bathroom privacy latch",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/bathroom-privacy-latch.png",
+          "sha256": "a95576fe449fb3756b5b14eeb84e2496a05589714ee5ffcabfe0fd3aa7579fe7",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            40,
+            236,
+            216
+          ],
+          "added": "2026-10-21",
+          "source": "bathroom-privacy-latch.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "bathroom-rubber-duck": {
+      "kind": "object",
+      "family": "bathroom",
+      "label": "Bathroom rubber duck",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/bathroom-rubber-duck.png",
+          "sha256": "9737d9914cf6e2bdfda40eea65996acb439d79d38ad53f766e02b364881c588a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            20,
+            236,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "bathroom-rubber-duck.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "bathroom-toilet": {
+      "kind": "object",
+      "family": "bathroom",
+      "label": "Bathroom toilet",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/bathroom-toilet.png",
+          "sha256": "30f2dd853e04e78373a1f3a77fc4c4bcbbe3df6570677b33bb52bcd97b9ebbfc",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            36,
+            20,
+            219,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "bathroom-toilet.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "bathroom-toilet-roll": {
+      "kind": "object",
+      "family": "bathroom",
+      "label": "Bathroom toilet roll",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/bathroom-toilet-roll.png",
+          "sha256": "d46410b45778e5a532ea892a50d358172b27a3447ef1478355c9e5e5ee4f107b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            27,
+            236,
+            228
+          ],
+          "added": "2026-10-21",
+          "source": "bathroom-toilet-roll.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
     "bbq-basting-brush": {
       "kind": "object",
       "family": "bbq-tools",
@@ -283,6 +742,25 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v3",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-grill.png",
+          "sha256": "e6c7d5e51308d4fc974d6c3f090548cfba4d725d43564c9f7a6943bb55b407b7",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            43,
+            236,
+            212
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-grill.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready claude-bbq-food-asset-pack-v1 picture catalogue"
         }
       ]
     },
@@ -390,6 +868,87 @@
           "added": "2026-10-19",
           "source": "activity-cloud-composer-v1",
           "by": "codex"
+        }
+      ]
+    },
+    "bbq-ketchup": {
+      "kind": "object",
+      "family": "bbq",
+      "label": "BBQ ketchup",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v1/drafts/components/bbq-ketchup.png",
+          "sha256": "fb8b53e64900967299aa1b9f161640d3862413d8a579128de02cd35129c4a27a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            36,
+            20,
+            196,
+            206
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-ketchup.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v1 picture catalogue"
+        }
+      ]
+    },
+    "bbq-lamb-chops": {
+      "kind": "object",
+      "family": "bbq",
+      "label": "BBQ lamb chops",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/bbq-lamb-chops.png",
+          "sha256": "d0b507c045397faada719d5b9c4317689280a287a65a172ceed1cef08db69fff",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            29,
+            236,
+            227
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-lamb-chops.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "bbq-leg-lamb": {
+      "kind": "object",
+      "family": "bbq",
+      "label": "BBQ leg lamb",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/bbq-leg-lamb.png",
+          "sha256": "19c65af65d6ba61db422ee922e786f5d876323777dff4265a3ddba39b251f354",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            68,
+            236,
+            188
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-leg-lamb.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
         }
       ]
     },
@@ -543,6 +1102,33 @@
           "source": "bbq-slotted-turner.png",
           "by": "codex",
           "note": "Codex BBQ tools and ephemera pack V1"
+        }
+      ]
+    },
+    "bbq-steak": {
+      "kind": "object",
+      "family": "bbq",
+      "label": "BBQ steak",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/bbq-steak.png",
+          "sha256": "b6c81c2fbc03d1daaabeae70b1e8856216c49fdd0fbc49b2788509febceb5cad",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            59,
+            236,
+            197
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-steak.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
         }
       ]
     },
@@ -1167,6 +1753,33 @@
         }
       ]
     },
+    "cooking-bacon": {
+      "kind": "object",
+      "family": "cooking",
+      "label": "Cooking bacon",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/cooking-bacon.png",
+          "sha256": "2bc0d1bcb08b12985fc82841d3e02cabceceb13ecdb633d8bd28319527f1c323",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            72,
+            236,
+            183
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-bacon.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
     "cooking-cheese-slicing": {
       "kind": "object",
       "family": "cooking",
@@ -1194,6 +1807,141 @@
         }
       ]
     },
+    "cooking-cow": {
+      "kind": "object",
+      "family": "food-provenance",
+      "label": "Cooking cow",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/cooking-cow.png",
+          "sha256": "596bc5a5cbb4eec1e48a34ca796b852aa303a027403f3aea5a29ae304af99dac",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            44,
+            236,
+            212
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-cow.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "cooking-gravy": {
+      "kind": "object",
+      "family": "cooking",
+      "label": "Cooking gravy",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/cooking-gravy.png",
+          "sha256": "e31e4153eab4a977e62d0b3b7bcd0d03f779da5e80d0ad3d94a26dfd09de9b0f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            60,
+            236,
+            195
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-gravy.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "cooking-knife": {
+      "kind": "object",
+      "family": "cooking",
+      "label": "Cooking knife",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/cooking-knife.png",
+          "sha256": "8c1e77edeeb466f7b445a3f916738525ed4ddaae6606ca1590889a6d5f416d1a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            68,
+            236,
+            187
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-knife.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "cooking-pan": {
+      "kind": "object",
+      "family": "cooking",
+      "label": "Cooking pan",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-pan.png",
+          "sha256": "0ec54ca7575b962e5fae9f321cf4883208c6da9a4f7da6c33a84289c49254642",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            58,
+            236,
+            198
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-pan.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        }
+      ]
+    },
+    "cooking-pig": {
+      "kind": "object",
+      "family": "food-provenance",
+      "label": "Cooking pig",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/cooking-pig.png",
+          "sha256": "45e8deec49338efda30efeeb0f9eb4e26687c147487cfb9ec393132b1228ca9b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            42,
+            236,
+            213
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-pig.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
     "cooking-sandwich": {
       "kind": "object",
       "family": "cooking",
@@ -1217,6 +1965,249 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v3",
           "by": "codex"
+        }
+      ]
+    },
+    "cooking-seasoning": {
+      "kind": "object",
+      "family": "cooking",
+      "label": "Cooking seasoning",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-seasoning.png",
+          "sha256": "208e02a5b2e7ae1508327c8ad2dcdc7ed2b78947d0a40de37b62e9e365092438",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            62,
+            236,
+            194
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-seasoning.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        }
+      ]
+    },
+    "cooking-sheep": {
+      "kind": "object",
+      "family": "food-provenance",
+      "label": "Cooking sheep",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/cooking-sheep.png",
+          "sha256": "cc66915a7b0cd541332664b6c2233797b884c55c3ad46fe24af66794d659725e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            32,
+            236,
+            224
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-sheep.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "cooking-spoon": {
+      "kind": "object",
+      "family": "cooking",
+      "label": "Cooking spoon",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-spoon.png",
+          "sha256": "0793c1ea85d3a38d024de9c788ac3368dafc7c7270a65f65feb03beb10c005f8",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            24,
+            20,
+            231,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-spoon.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        }
+      ]
+    },
+    "cooking-steam": {
+      "kind": "object",
+      "family": "cooking",
+      "label": "Cooking steam",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-steam.png",
+          "sha256": "440c359bcda03d83e026705cbb727c6e79b3d0e9bdf8812488ed0a72aac1b395",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            47,
+            236,
+            209
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-steam.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        }
+      ]
+    },
+    "cooking-vegetables": {
+      "kind": "object",
+      "family": "cooking",
+      "label": "Cooking vegetables",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/cooking-vegetables.png",
+          "sha256": "92f3c0c1e740bd4e3602d9c1def9a4d558fd8840f31bceea2ca62846145a4384",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            52,
+            236,
+            203
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-vegetables.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "dental-teeth": {
+      "kind": "object",
+      "family": "dental",
+      "label": "Dental teeth",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/dental-teeth.png",
+          "sha256": "d423600e02124ea82d67b8cc4014f2a5ead02a3b7372fc9ef3acbf18a979140d",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            67,
+            236,
+            189
+          ],
+          "added": "2026-10-21",
+          "source": "dental-teeth.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "dental-toothbrush": {
+      "kind": "object",
+      "family": "dental",
+      "label": "Dental toothbrush",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/dental-toothbrush.png",
+          "sha256": "4eb25c0c3dd73b4c3156e91898195f556e6322a679a7a9f2b85d58e85debcef6",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            71,
+            236,
+            185
+          ],
+          "added": "2026-10-21",
+          "source": "dental-toothbrush.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "dental-toothpaste": {
+      "kind": "object",
+      "family": "dental",
+      "label": "Dental toothpaste",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/dental-toothpaste.png",
+          "sha256": "da076961167f5912b4befd10a56fbb7d801bca5d6638e73ab3530a026aec250d",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            60,
+            236,
+            196
+          ],
+          "added": "2026-10-21",
+          "source": "dental-toothpaste.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "dental-water": {
+      "kind": "object",
+      "family": "dental",
+      "label": "Dental water",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/dental-water.png",
+          "sha256": "879361693b0640838ba3d210d6563f4c04817831d5246ab07d8f7137f5358699",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            29,
+            236,
+            226
+          ],
+          "added": "2026-10-21",
+          "source": "dental-water.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
         }
       ]
     },
@@ -1298,6 +2289,573 @@
           "source": "dishwasher-tablets-tub.png",
           "by": "codex",
           "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "eggs-basket": {
+      "kind": "object",
+      "family": "eggs",
+      "label": "Eggs basket",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/eggs-basket.png",
+          "sha256": "7dddec98a124dc65bf908a7e45068c7fc0bd86c4c3645071d6b848f4f4776b76",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            21,
+            20,
+            234,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "eggs-basket.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "eggs-hen-coop": {
+      "kind": "object",
+      "family": "eggs",
+      "label": "Eggs hen coop",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/eggs-hen-coop.png",
+          "sha256": "4c5c10ba6212cdf35c695b384f30dc52c18e5b1f13737aa4a282b8bff425c50d",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            20,
+            236,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "eggs-hen-coop.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "eggs-nest": {
+      "kind": "object",
+      "family": "eggs",
+      "label": "Eggs nest",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/eggs-nest.png",
+          "sha256": "e863dbed7c72829c10a33ae89acbe588b47f4d385f8a1bfbaca474e0864bf349",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            43,
+            236,
+            212
+          ],
+          "added": "2026-10-21",
+          "source": "eggs-nest.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "exercise-dumbbell": {
+      "kind": "object",
+      "family": "exercise",
+      "label": "Exercise dumbbell",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/exercise-dumbbell.png",
+          "sha256": "6dc08c7afa89d208bd1e8b7cfb63749d714b1bac0ffe2620a65eebbc44f71e63",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            49,
+            236,
+            207
+          ],
+          "added": "2026-10-21",
+          "source": "exercise-dumbbell.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "exercise-flexed-arm": {
+      "kind": "object",
+      "family": "exercise",
+      "label": "Exercise flexed arm",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/exercise-flexed-arm.png",
+          "sha256": "a0d30706fa1922ff669be1ee68dde85c1b03eb3f35f4bc63dab7ff9122ce353e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            24,
+            20,
+            232,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "exercise-flexed-arm.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "exercise-heart-pulse": {
+      "kind": "object",
+      "family": "exercise",
+      "label": "Exercise heart pulse",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/exercise-heart-pulse.png",
+          "sha256": "7b9dbfc0ea0adc3d8fb8904a618e24af7e0024ab8c904854be9ab1ee81d6928a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            30,
+            236,
+            226
+          ],
+          "added": "2026-10-21",
+          "source": "exercise-heart-pulse.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "exercise-skipping-rope": {
+      "kind": "object",
+      "family": "exercise",
+      "label": "Exercise skipping rope",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/exercise-skipping-rope.png",
+          "sha256": "2804725a9a30eaedfdc70c44c6e475c8db090f0133241c0a6522a06dc567d9d4",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            21,
+            236,
+            234
+          ],
+          "added": "2026-10-21",
+          "source": "exercise-skipping-rope.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "exercise-sweat-drop": {
+      "kind": "object",
+      "family": "exercise",
+      "label": "Exercise sweat drop",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/exercise-sweat-drop.png",
+          "sha256": "5fbad62d778a447085a7f445d1dfc37f9ee4dd115da090bcd7efb246ef8fef77",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            60,
+            20,
+            195,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "exercise-sweat-drop.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "exercise-trainers": {
+      "kind": "object",
+      "family": "exercise",
+      "label": "Exercise trainers",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/exercise-trainers.png",
+          "sha256": "128b0ce1379024e114393b9bf87e22aec9e0b9d626a83b7e02014519f9b979ec",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            38,
+            236,
+            218
+          ],
+          "added": "2026-10-21",
+          "source": "exercise-trainers.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "fishing-bait": {
+      "kind": "object",
+      "family": "fishing",
+      "label": "Fishing bait",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/fishing-bait.png",
+          "sha256": "430ad81017c35ab4432dad0cfb3f448e1a53f583f93c107574bcbf2667c382ef",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            25,
+            236,
+            231
+          ],
+          "added": "2026-10-21",
+          "source": "fishing-bait.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "fishing-caught-fish": {
+      "kind": "object",
+      "family": "fishing",
+      "label": "Fishing caught fish",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/fishing-caught-fish.png",
+          "sha256": "41f20ac60579f5067c7e3e19fde7ccd0c36a2f82f80685a9c6204aa22c666391",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            28,
+            21,
+            227,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "fishing-caught-fish.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "fishing-float": {
+      "kind": "object",
+      "family": "fishing",
+      "label": "Fishing float",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/fishing-float.png",
+          "sha256": "8620635ae9f0ea4e7e407b39c4702c4c7c22b24eed0d9393ffa722ddf41c150a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            21,
+            236,
+            235
+          ],
+          "added": "2026-10-21",
+          "source": "fishing-float.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "fishing-rod": {
+      "kind": "object",
+      "family": "fishing",
+      "label": "Fishing rod",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/fishing-rod.png",
+          "sha256": "417a85e83f2840878f8976a2fefc1df7691a17ba125957063f88faa3c97e3a81",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            30,
+            236,
+            226
+          ],
+          "added": "2026-10-21",
+          "source": "fishing-rod.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "fishing-tackle-box": {
+      "kind": "object",
+      "family": "fishing",
+      "label": "Fishing tackle box",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/fishing-tackle-box.png",
+          "sha256": "34fb149a6b3bfbf60fc836250684d86aa67fba1367be13e305427ee234c5a39f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            28,
+            236,
+            228
+          ],
+          "added": "2026-10-21",
+          "source": "fishing-tackle-box.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "games-board-and-pawns": {
+      "kind": "object",
+      "family": "games",
+      "label": "Games board and pawns",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/games-board-and-pawns.png",
+          "sha256": "cc5e5394136ab0f06155f7973372b19696a5db4cb87f41a0ea86397fcf3c7f38",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            57,
+            236,
+            199
+          ],
+          "added": "2026-10-21",
+          "source": "games-board-and-pawns.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "games-chess-knight": {
+      "kind": "object",
+      "family": "games",
+      "label": "Games chess knight",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/games-chess-knight.png",
+          "sha256": "6e32d710cdf052713ecff83bb452fda2368fce648741407a0f33abfec1eab023",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            66,
+            20,
+            190,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "games-chess-knight.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "games-dice": {
+      "kind": "object",
+      "family": "games",
+      "label": "Games dice",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/games-dice.png",
+          "sha256": "06eb4d46386c8ce556e4e062449b507abcf9a395d109ded2cb9ddb664758954b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            30,
+            236,
+            226
+          ],
+          "added": "2026-10-21",
+          "source": "games-dice.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "games-playing-cards": {
+      "kind": "object",
+      "family": "games",
+      "label": "Games playing cards",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/games-playing-cards.png",
+          "sha256": "98ecdb6d7db4b2118a2732687a7bb7f773ba4028f427d4580f98ae4ad01ac981",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            54,
+            236,
+            201
+          ],
+          "added": "2026-10-21",
+          "source": "games-playing-cards.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "garden-seedling": {
+      "kind": "object",
+      "family": "garden",
+      "label": "Garden seedling",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/garden-seedling.png",
+          "sha256": "6f0d9046bbf3ccf0bbb002493e63e9da0ed04695c836174be62475d88a9fe22c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            37,
+            20,
+            219,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "garden-seedling.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "garden-seeds": {
+      "kind": "object",
+      "family": "garden",
+      "label": "Garden seeds",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/garden-seeds.png",
+          "sha256": "ef4b5fc5490845930aac84a0e94c205f75ad3d8a94b8925e5233fcea010a70da",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            46,
+            236,
+            209
+          ],
+          "added": "2026-10-21",
+          "source": "garden-seeds.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "garden-watering": {
+      "kind": "object",
+      "family": "garden",
+      "label": "Garden watering",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/garden-watering.png",
+          "sha256": "9323241977fb621697665e9dd790722132f42ba14f0ac96ebcb9843126e69b78",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            63,
+            236,
+            192
+          ],
+          "added": "2026-10-21",
+          "source": "garden-watering.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
         }
       ]
     },
@@ -1433,6 +2991,114 @@
           "source": "grooming-hairbrush.png",
           "by": "codex",
           "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "harvest-fruit": {
+      "kind": "object",
+      "family": "harvest",
+      "label": "Harvest fruit",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/harvest-fruit.png",
+          "sha256": "79c02c7b0bc7b1c43a51811287d1e74e25d15cad2d54d34bfc9186ea6179a7ed",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            52,
+            236,
+            204
+          ],
+          "added": "2026-10-21",
+          "source": "harvest-fruit.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "harvest-vegetables": {
+      "kind": "object",
+      "family": "harvest",
+      "label": "Harvest vegetables",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/harvest-vegetables.png",
+          "sha256": "6d1e25e5766c7f43de452c4076f723e5ff769af3eaf3db8b191c030fca27a115",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            45,
+            236,
+            211
+          ],
+          "added": "2026-10-21",
+          "source": "harvest-vegetables.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "hygiene-shampoo": {
+      "kind": "object",
+      "family": "hygiene",
+      "label": "Hygiene shampoo",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v2/drafts/components/hygiene-shampoo.png",
+          "sha256": "adf847c274eafac293e844e4e66c2464c53cdd0103b7dcc83c1045d6d7985904",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            60,
+            20,
+            196,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "hygiene-shampoo.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v2 picture catalogue"
+        }
+      ]
+    },
+    "hygiene-shower": {
+      "kind": "object",
+      "family": "hygiene",
+      "label": "Hygiene shower",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/hygiene-shower.png",
+          "sha256": "88d25de9c939ee4541e95c51ccb6ee66ad8a51cb725fb90ef640c8da6c528ab9",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            50,
+            236,
+            205
+          ],
+          "added": "2026-10-21",
+          "source": "hygiene-shower.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
         }
       ]
     },
@@ -1733,6 +3399,168 @@
         }
       ]
     },
+    "leisure-vinyl": {
+      "kind": "object",
+      "family": "leisure",
+      "label": "Leisure vinyl",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/leisure-vinyl.png",
+          "sha256": "f4dcb833796bc00624aff52ef0de59a1c9d6200604f460bb9e170d03cf6f7f65",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            57,
+            236,
+            198
+          ],
+          "added": "2026-10-21",
+          "source": "leisure-vinyl.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "maintenance-lamp-polish": {
+      "kind": "object",
+      "family": "maintenance",
+      "label": "Maintenance lamp polish",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/maintenance-lamp-polish.png",
+          "sha256": "565d7d881c0ed2f8f2be71c5dbf1241ef0899f9c49754617aadf30b5de3d6ca7",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            27,
+            20,
+            228,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "maintenance-lamp-polish.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "maintenance-welding": {
+      "kind": "object",
+      "family": "maintenance",
+      "label": "Maintenance welding",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/maintenance-welding.png",
+          "sha256": "fa15494e250867ad374e26ca224cfe352b25b05f79b626221e97e47427889694",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            51,
+            236,
+            204
+          ],
+          "added": "2026-10-21",
+          "source": "maintenance-welding.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "meal-breakfast": {
+      "kind": "object",
+      "family": "meal",
+      "label": "Meal breakfast",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/meal-breakfast.png",
+          "sha256": "ec4665ac718fc8892fcfff9701c0f29c17e1667ae77ce68d3eb8446897f5a17c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            57,
+            236,
+            198
+          ],
+          "added": "2026-10-21",
+          "source": "meal-breakfast.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "meal-dinner": {
+      "kind": "object",
+      "family": "meal",
+      "label": "Meal dinner",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/meal-dinner.png",
+          "sha256": "b156ae100f31c4ee20ee1c7ae53df0d0bf16f25ec767ff0ddda898e0ad7f0237",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            69,
+            236,
+            186
+          ],
+          "added": "2026-10-21",
+          "source": "meal-dinner.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "meal-lunch": {
+      "kind": "object",
+      "family": "meal",
+      "label": "Meal lunch",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/meal-lunch.png",
+          "sha256": "72d65ca5186260c3cb99b802c0be79ed0cfc7d4cb1573a70ed210e5f5d10519c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            67,
+            236,
+            188
+          ],
+          "added": "2026-10-21",
+          "source": "meal-lunch.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
     "meal-steak-fries": {
       "kind": "object",
       "family": "meal",
@@ -1757,6 +3585,762 @@
           "source": "meal-steak-fries.png",
           "by": "codex",
           "note": "Finished meal, plated (Codex BBQ food pack V1)"
+        }
+      ]
+    },
+    "mixing-bowl": {
+      "kind": "object",
+      "family": "mixing",
+      "label": "Mixing bowl",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-bowl.png",
+          "sha256": "2cae4495779bdd4da3c9a1d0875b870a47cda30419f43555544616bc3052ef9a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            55,
+            236,
+            201
+          ],
+          "added": "2026-10-21",
+          "source": "mixing-bowl.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        }
+      ]
+    },
+    "mixing-egg": {
+      "kind": "object",
+      "family": "mixing",
+      "label": "Mixing egg",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-egg.png",
+          "sha256": "97d7b75641c4c580e672a7621f4d3114ef3c300d71de5439084f52522810b1df",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            69,
+            236,
+            186
+          ],
+          "added": "2026-10-21",
+          "source": "mixing-egg.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        }
+      ]
+    },
+    "mixing-flour": {
+      "kind": "object",
+      "family": "mixing",
+      "label": "Mixing flour",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-flour.png",
+          "sha256": "5734cdf3a8b777e10bb9a1ecb85d97029a28f2f4aff8d40e1385fcfbb6ee6d09",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            51,
+            236,
+            204
+          ],
+          "added": "2026-10-21",
+          "source": "mixing-flour.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        }
+      ]
+    },
+    "mixing-whisk": {
+      "kind": "object",
+      "family": "mixing",
+      "label": "Mixing whisk",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/mixing-whisk.png",
+          "sha256": "8246369441e5bfe99eea3c60f746e6204b9282ddca0a106aa5cfe22a38eb2c8c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            31,
+            236,
+            224
+          ],
+          "added": "2026-10-21",
+          "source": "mixing-whisk.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        }
+      ]
+    },
+    "music-album-abbey-road-homage": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music album abbey road homage",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-abbey-road-homage.png",
+          "sha256": "ba8062ab6ea0a19548ddb578d30b0801c7c67ddcd97339976c59cdc1e2cb5366",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            22,
+            20,
+            233,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "music-album-abbey-road-homage.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-album-born-usa-homage": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music album born USA homage",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-born-usa-homage.png",
+          "sha256": "69f4f578ff5596ee096fe4b050589ece69865c330e291441cb63c2b46fac3d61",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            24,
+            20,
+            231,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "music-album-born-usa-homage.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-album-dark-side-homage": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music album dark side homage",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-dark-side-homage.png",
+          "sha256": "0dda7d9e5ed9924b8de3c3e788276b2361acfd02f9dee39a46aaa7aeefc1526e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            25,
+            236,
+            230
+          ],
+          "added": "2026-10-21",
+          "source": "music-album-dark-side-homage.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-album-london-calling-homage": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music album london calling homage",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-london-calling-homage.png",
+          "sha256": "e0eae0b58dd637a43e2dda0d51939f4c31779516b58837106341db490b933dda",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            25,
+            236,
+            230
+          ],
+          "added": "2026-10-21",
+          "source": "music-album-london-calling-homage.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-album-morning-glory-homage": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music album morning glory homage",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-morning-glory-homage.png",
+          "sha256": "3dff313642516114a466c745fabede7c0e7ee31f0f9c5dbc13925d3d109a331c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            20,
+            236,
+            235
+          ],
+          "added": "2026-10-21",
+          "source": "music-album-morning-glory-homage.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-album-never-mind-bollocks-homage": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music album never mind bollocks homage",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-never-mind-bollocks-homage.png",
+          "sha256": "6e87dbf7c81c7ee66625ce188fbbfa843b0527412b361f36744aefeed55bffed",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            23,
+            236,
+            232
+          ],
+          "added": "2026-10-21",
+          "source": "music-album-never-mind-bollocks-homage.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-album-nevermind-homage": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music album nevermind homage",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-nevermind-homage.png",
+          "sha256": "a3290c5db3ef99ff6ad0faa82b8c1f009f7fc6f4afc66f2c06136c47ca3d459f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            22,
+            236,
+            234
+          ],
+          "added": "2026-10-21",
+          "source": "music-album-nevermind-homage.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-album-screamadelica-homage": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music album screamadelica homage",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-screamadelica-homage.png",
+          "sha256": "9e603667489eab0e01f234cabdd37154902fe34c8f2d317eb8e711e53659baaa",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            20,
+            235,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "music-album-screamadelica-homage.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-album-sgt-pepper-homage": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music album Sgt. pepper homage",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-sgt-pepper-homage.png",
+          "sha256": "5ef08e203f47a1f9b94f6f2322336630b5108792262731c38e2334ab20f2068b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            23,
+            20,
+            233,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "music-album-sgt-pepper-homage.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-album-sticky-fingers-homage": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music album sticky fingers homage",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-sticky-fingers-homage.png",
+          "sha256": "657b75aa7f8a71315f55bbf409abccc1e4513bfd267133ec4a1a21d9af292f26",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            24,
+            236,
+            232
+          ],
+          "added": "2026-10-21",
+          "source": "music-album-sticky-fingers-homage.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-album-tapestry-homage": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music album tapestry homage",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-tapestry-homage.png",
+          "sha256": "51f45e2290468c7ab1f688a63ef14edcf3966e390ce5c9a5b7e537f254b13503",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            21,
+            20,
+            235,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "music-album-tapestry-homage.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-album-velvet-banana-homage": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music album velvet banana homage",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v3/drafts/components/music-album-velvet-banana-homage.png",
+          "sha256": "c2a8696b73d64ec385bc41f3ab6f242e00286a905ac02faf904d2b2f885dc8c9",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            26,
+            236,
+            230
+          ],
+          "added": "2026-10-21",
+          "source": "music-album-velvet-banana-homage.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-composer": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music composer",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/music-composer.png",
+          "sha256": "7e992d30cbbffacda7e4185d49efb45734c8072e52e0e7c2b81fae7dab050b22",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            20,
+            236,
+            235
+          ],
+          "added": "2026-10-21",
+          "source": "music-composer.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-drummer": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music drummer",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/music-drummer.png",
+          "sha256": "fcb354a2f8e3169bc52736b129740ae2791c5fe7a01a597e4ad908960e0db369",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            28,
+            236,
+            227
+          ],
+          "added": "2026-10-21",
+          "source": "music-drummer.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-drums": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music drums",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/music-drums.png",
+          "sha256": "2bece39461285cfacf1b6635c663d6682be67a9e2404407c1edc4aec2be3a649",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            39,
+            236,
+            217
+          ],
+          "added": "2026-10-21",
+          "source": "music-drums.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-guitar": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music guitar",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/music-guitar.png",
+          "sha256": "6b546dd8614fde3334cb5d7560ef7b6c99f0035cd326483090ed0ccea9ac1661",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            40,
+            236,
+            216
+          ],
+          "added": "2026-10-21",
+          "source": "music-guitar.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-guitarist": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music guitarist",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/music-guitarist.png",
+          "sha256": "3ece70aa5a4dcf2645efb819ead204d54ca0c9cce82bfb27e0b67eede62afd81",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            30,
+            236,
+            226
+          ],
+          "added": "2026-10-21",
+          "source": "music-guitarist.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "music-notation-bass-clef": {
+      "kind": "mark",
+      "family": "music-notation",
+      "label": "Music notation bass clef",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-bass-clef.png",
+          "sha256": "c9afc3f4ab6051480dc8e6fc046be6dafc71c57beb947755673135dcb0ed5138",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            27,
+            21,
+            228,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "music-notation-bass-clef.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v4 picture catalogue"
+        }
+      ]
+    },
+    "music-notation-beamed-quavers": {
+      "kind": "mark",
+      "family": "music-notation",
+      "label": "Music notation beamed quavers",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-beamed-quavers.png",
+          "sha256": "0c2d2803ad76bf5ae43f5069fc0f714f22e8e0e61de22c8a462e99e22a85947e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            33,
+            20,
+            222,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "music-notation-beamed-quavers.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v4 picture catalogue"
+        }
+      ]
+    },
+    "music-notation-quaver": {
+      "kind": "mark",
+      "family": "music-notation",
+      "label": "Music notation quaver",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-quaver.png",
+          "sha256": "4ad1cd608c4a4b936ed89e841f161ad29f759a72abb515d81df89d82f4c93a5a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            49,
+            20,
+            206,
+            235
+          ],
+          "added": "2026-10-21",
+          "source": "music-notation-quaver.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v4 picture catalogue"
+        }
+      ]
+    },
+    "music-notation-rising-stave": {
+      "kind": "mark",
+      "family": "music-notation",
+      "label": "Music notation rising stave",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-rising-stave.png",
+          "sha256": "65a18a0475388297627c879f6052a4b0c59768f2ccaaf616ab47506d7e94b407",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            29,
+            235,
+            227
+          ],
+          "added": "2026-10-21",
+          "source": "music-notation-rising-stave.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v4 picture catalogue"
+        }
+      ]
+    },
+    "music-notation-sharp-note": {
+      "kind": "mark",
+      "family": "music-notation",
+      "label": "Music notation sharp note",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-sharp-note.png",
+          "sha256": "f1e081992cfb02c58822e8e09c4f595b93cceb31820ccc0f1c123e644033cb98",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            25,
+            236,
+            231
+          ],
+          "added": "2026-10-21",
+          "source": "music-notation-sharp-note.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v4 picture catalogue"
+        }
+      ]
+    },
+    "music-notation-treble-clef": {
+      "kind": "mark",
+      "family": "music-notation",
+      "label": "Music notation treble clef",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v4/drafts/accents/music-notation-treble-clef.png",
+          "sha256": "38a7bd6d8518f533556d04895ccb4bd9071023e8fdf9495cb9126c98ec85f9e7",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            72,
+            20,
+            183,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "music-notation-treble-clef.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v4 picture catalogue"
+        }
+      ]
+    },
+    "music-piano": {
+      "kind": "object",
+      "family": "music",
+      "label": "Music piano",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/music-piano.png",
+          "sha256": "37c12cee3dad3b5cfbbbd8f5cfcf4ba39160c007881308b4141891a5b7b4b2e6",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            33,
+            236,
+            222
+          ],
+          "added": "2026-10-21",
+          "source": "music-piano.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
         }
       ]
     },
@@ -1922,6 +4506,276 @@
         }
       ]
     },
+    "pet-bone": {
+      "kind": "object",
+      "family": "pet-care",
+      "label": "Pet bone",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/pet-bone.png",
+          "sha256": "d98d6301024c75044dbc7020643d5855b892a8a31295bbd12603aa7c176d5c81",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            34,
+            236,
+            222
+          ],
+          "added": "2026-10-21",
+          "source": "pet-bone.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "pet-fish": {
+      "kind": "object",
+      "family": "pet-care",
+      "label": "Pet fish",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/pet-fish.png",
+          "sha256": "d7c49e24d230404ea140d792d6217e79794750677e292f51a729f65329b41d84",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            72,
+            236,
+            183
+          ],
+          "added": "2026-10-21",
+          "source": "pet-fish.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "pet-food-bag": {
+      "kind": "object",
+      "family": "pet-care",
+      "label": "Pet food bag",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/pet-food-bag.png",
+          "sha256": "8da26a0b13a8df4dc74b12be5d30544a67f448ff71e87a094cfd027fa3b27fca",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            29,
+            20,
+            227,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "pet-food-bag.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "pet-food-bowl": {
+      "kind": "object",
+      "family": "pet-care",
+      "label": "Pet food bowl",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/pet-food-bowl.png",
+          "sha256": "f8687c96a8d06626b05d68c210f1b89a90817aad22be7ef70f4743ad5eea98e3",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            55,
+            236,
+            201
+          ],
+          "added": "2026-10-21",
+          "source": "pet-food-bowl.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "pet-heart": {
+      "kind": "object",
+      "family": "pet-care",
+      "label": "Pet heart",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/pet-heart.png",
+          "sha256": "e7693aa6e5384a170fac4cf750e116cc772a13f0109bbdf3a43316471bf47185",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            32,
+            236,
+            223
+          ],
+          "added": "2026-10-21",
+          "source": "pet-heart.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "pet-purr-marks": {
+      "kind": "object",
+      "family": "pet-care",
+      "label": "Pet purr marks",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/pet-purr-marks.png",
+          "sha256": "1866685f9091ccffa9bb33e8cad9cee6075542677aecdb8703250b5d00016863",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            21,
+            20,
+            234,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "pet-purr-marks.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "pottery-hands-moulding": {
+      "kind": "object",
+      "family": "pottery",
+      "label": "Pottery hands moulding",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/pottery-hands-moulding.png",
+          "sha256": "3d1bec539c12b9c661c90327470f10f63d89401835878cb598568ae232d2bb76",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            21,
+            20,
+            235,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "pottery-hands-moulding.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "pottery-vase": {
+      "kind": "object",
+      "family": "pottery",
+      "label": "Pottery vase",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/pottery-vase.png",
+          "sha256": "b5dd8c81343ff9bdb6a974b11135bf95917f8b595c7926ee8dd1e9adffa4fb72",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            49,
+            20,
+            207,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "pottery-vase.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "pottery-wet-clay": {
+      "kind": "object",
+      "family": "pottery",
+      "label": "Pottery wet clay",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/pottery-wet-clay.png",
+          "sha256": "1b7abee665249065166b084a06126780e9e6730544d46008b1984b921e4b67b2",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            46,
+            236,
+            210
+          ],
+          "added": "2026-10-21",
+          "source": "pottery-wet-clay.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "pottery-wheel": {
+      "kind": "object",
+      "family": "pottery",
+      "label": "Pottery wheel",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/pottery-wheel.png",
+          "sha256": "27e736ad0492a28d2ed92761b63d041f88d6b71a43010cd80cac5c67ba94fcd5",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            39,
+            236,
+            217
+          ],
+          "added": "2026-10-21",
+          "source": "pottery-wheel.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
     "prep-bread-slicing": {
       "kind": "object",
       "family": "kitchen-tools",
@@ -1946,6 +4800,168 @@
           "source": "prep-bread-slicing.png",
           "by": "codex",
           "note": "Codex kitchen condiments and prep pack V1"
+        }
+      ]
+    },
+    "reading-castle": {
+      "kind": "object",
+      "family": "reading",
+      "label": "Reading castle",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/reading-castle.png",
+          "sha256": "9d445568f533c44f3af27bfc225a263345654738175890e0738765778371f27d",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            24,
+            20,
+            232,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "reading-castle.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "reading-dragon": {
+      "kind": "object",
+      "family": "reading",
+      "label": "Reading dragon",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/reading-dragon.png",
+          "sha256": "d047646d6aca30dc22e85708a6969c643c3cbb268fdf02187fd865890f1d43b5",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            20,
+            236,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "reading-dragon.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "reading-open-book": {
+      "kind": "object",
+      "family": "reading",
+      "label": "Reading open book",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/reading-open-book.png",
+          "sha256": "12006b0fe3510101dfe1c419d4f025e0a3130e02ef3c1e327259216cc0b7f66a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            52,
+            236,
+            203
+          ],
+          "added": "2026-10-21",
+          "source": "reading-open-book.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "reading-pirate-ship": {
+      "kind": "object",
+      "family": "reading",
+      "label": "Reading pirate ship",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/reading-pirate-ship.png",
+          "sha256": "ac6495ce6e1c14fedba6f768f5831accaf5ba0f6319c3bca6901df9b8f2ae1bc",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            23,
+            20,
+            232,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "reading-pirate-ship.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "reading-treasure-chest": {
+      "kind": "object",
+      "family": "reading",
+      "label": "Reading treasure chest",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/reading-treasure-chest.png",
+          "sha256": "9261b634adfa2062260a35ae7def57b62336e7a1a6828aaf31c629be9968ebe4",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            22,
+            236,
+            234
+          ],
+          "added": "2026-10-21",
+          "source": "reading-treasure-chest.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "repair-battery-leads": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Repair battery leads",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/repair-battery-leads.png",
+          "sha256": "733da9db367e19e6680a2de3dbf95088ca6abff6ab8af06d681569601c74f170",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            27,
+            236,
+            229
+          ],
+          "added": "2026-10-21",
+          "source": "repair-battery-leads.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
         }
       ]
     },
@@ -1975,6 +4991,60 @@
         }
       ]
     },
+    "repair-boat-varnish": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Repair boat varnish",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/repair-boat-varnish.png",
+          "sha256": "cfdf0b283b9d3bfc0eaa7e8a750b0dd884908b7ade2a068b6c5baa384b5dc5df",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            29,
+            236,
+            226
+          ],
+          "added": "2026-10-21",
+          "source": "repair-boat-varnish.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "repair-fastener": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Repair fastener",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-fastener.png",
+          "sha256": "17ac443584294846c4276b122b3c9082aec4c9605f58983b72a348084ab5de02",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            45,
+            236,
+            210
+          ],
+          "added": "2026-10-21",
+          "source": "repair-fastener.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        }
+      ]
+    },
     "repair-hammer-nails": {
       "kind": "object",
       "family": "repair",
@@ -1998,6 +5068,87 @@
           "added": "2026-10-19",
           "source": "activity-cloud-composer-v5",
           "by": "codex"
+        }
+      ]
+    },
+    "repair-oilcan": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Repair oilcan",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-oilcan.png",
+          "sha256": "bc98850fc332d28d9f00907aaf9a51599aae09bad5fc89d882fd7b2fd30c8b23",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            65,
+            236,
+            191
+          ],
+          "added": "2026-10-21",
+          "source": "repair-oilcan.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        }
+      ]
+    },
+    "repair-outboard-motor": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Repair outboard motor",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/repair-outboard-motor.png",
+          "sha256": "30bf2994aafad9f8397dd392ec27e0c68f3ba87de18729eda5a3776269887e12",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            38,
+            20,
+            218,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "repair-outboard-motor.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "repair-petrol-fill": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Repair petrol fill",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/repair-petrol-fill.png",
+          "sha256": "af9f358d430046d8fa62fbd6c1610ab34863d9fb412e2d27e39c0000558f321f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            28,
+            236,
+            228
+          ],
+          "added": "2026-10-21",
+          "source": "repair-petrol-fill.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
         }
       ]
     },
@@ -2027,6 +5178,33 @@
         }
       ]
     },
+    "repair-sparks": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Repair sparks",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-sparks.png",
+          "sha256": "da07ccd69c9065d999038be53c7121a46f2350c0a05586ae1bfd74f2fec58e60",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            45,
+            236,
+            211
+          ],
+          "added": "2026-10-21",
+          "source": "repair-sparks.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        }
+      ]
+    },
     "repair-toolbox": {
       "kind": "object",
       "family": "repair",
@@ -2053,6 +5231,60 @@
         }
       ]
     },
+    "repair-tools": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Repair tools",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/repair-tools.png",
+          "sha256": "c0166e7d0e22b98fb555c6818edec883aa162d67fb5b14c414a3378981b69a72",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            41,
+            236,
+            215
+          ],
+          "added": "2026-10-21",
+          "source": "repair-tools.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        }
+      ]
+    },
+    "repair-tyre-pump": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Repair tyre pump",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/repair-tyre-pump.png",
+          "sha256": "4001a2090c84e27a5954a2c34a95fe0970d0bb34cd91899f0030c3e0229bb9e8",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            44,
+            20,
+            211,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "repair-tyre-pump.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
     "repair-wrench-cog": {
       "kind": "object",
       "family": "repair",
@@ -2076,6 +5308,141 @@
           "added": "2026-10-19",
           "source": "activity-cloud-composer-v5",
           "by": "codex"
+        }
+      ]
+    },
+    "rest-armchair": {
+      "kind": "object",
+      "family": "rest",
+      "label": "Rest armchair",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/rest-armchair.png",
+          "sha256": "1a4a5c5152542cb4fb5792bd5de0d34bddb74a709aa9dd55b5238adf9703d585",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            24,
+            236,
+            231
+          ],
+          "added": "2026-10-21",
+          "source": "rest-armchair.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "rest-blanket-pillow": {
+      "kind": "object",
+      "family": "rest",
+      "label": "Rest blanket pillow",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/rest-blanket-pillow.png",
+          "sha256": "079f94112c7ea1dcd4d4f2375ea1e84a1249e34f2890d041246b6991686be5fa",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            36,
+            236,
+            219
+          ],
+          "added": "2026-10-21",
+          "source": "rest-blanket-pillow.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "rest-counting-sheep": {
+      "kind": "object",
+      "family": "rest",
+      "label": "Rest counting sheep",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/rest-counting-sheep.png",
+          "sha256": "18669a3cc09b2640960d33d950aad2321339f05a7ef473814c4a856f15d1a9ea",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            27,
+            20,
+            229,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "rest-counting-sheep.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "rest-sleep": {
+      "kind": "object",
+      "family": "rest",
+      "label": "Rest sleep",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/rest-sleep.png",
+          "sha256": "d7b4f799cffd4247747a1f7b37a5847f77326b25fa1d79bde36660051d12abdb",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            41,
+            236,
+            215
+          ],
+          "added": "2026-10-21",
+          "source": "rest-sleep.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "rest-sleep-marks": {
+      "kind": "object",
+      "family": "rest",
+      "label": "Rest sleep marks",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/rest-sleep-marks.png",
+          "sha256": "fb1aa390939f79c981d289da5a94e046017c24667089618533b2f481e8a66a04",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            36,
+            20,
+            220,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "rest-sleep-marks.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
         }
       ]
     },
@@ -2725,6 +6092,168 @@
         "note": "Replaced by v2; awaiting Frank's look."
       }
     },
+    "tea-kettle": {
+      "kind": "object",
+      "family": "tea",
+      "label": "Tea kettle",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/tea-kettle.png",
+          "sha256": "7014b90c1465cbf0b1b9559f57be78a4a36c354ba13033c9639aa048253dd7cf",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            24,
+            236,
+            232
+          ],
+          "added": "2026-10-21",
+          "source": "tea-kettle.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "tea-milk": {
+      "kind": "object",
+      "family": "tea",
+      "label": "Tea milk",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/tea-milk.png",
+          "sha256": "01eb45bb370455c770702cc7cb25334fccc3d2a6d3cc0cf376733da2f9dfeadc",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            25,
+            236,
+            230
+          ],
+          "added": "2026-10-21",
+          "source": "tea-milk.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "tea-mug": {
+      "kind": "object",
+      "family": "tea",
+      "label": "Tea mug",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/tea-mug.png",
+          "sha256": "af8fb40591e8165cfb4ec8f9f30be0df24abd733cc412d086c3920a37242bff3",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            38,
+            236,
+            218
+          ],
+          "added": "2026-10-21",
+          "source": "tea-mug.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "toast-butter-jam": {
+      "kind": "object",
+      "family": "toast",
+      "label": "Toast butter jam",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/toast-butter-jam.png",
+          "sha256": "c75e23294215d751b315296776b39e53fc5690e0a8b2216c62e7dc29da77a134",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            57,
+            236,
+            198
+          ],
+          "added": "2026-10-21",
+          "source": "toast-butter-jam.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "toast-slices": {
+      "kind": "object",
+      "family": "toast",
+      "label": "Toast slices",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/toast-slices.png",
+          "sha256": "4a1344273465976f1c69b858e1ada925a69432242450c2838c68d9fe63e25a27",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            25,
+            20,
+            230,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "toast-slices.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "toast-toaster": {
+      "kind": "object",
+      "family": "toast",
+      "label": "Toast toaster",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/toast-toaster.png",
+          "sha256": "92845e8574dbbb507267f89a65bfcc0fe0933f389bb6dd052120a891a828ef98",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            23,
+            236,
+            232
+          ],
+          "added": "2026-10-21",
+          "source": "toast-toaster.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
     "tool-broom": {
       "kind": "object",
       "family": "cleaning-tools",
@@ -3284,6 +6813,141 @@
           "source": "wear-socks-pair.png",
           "by": "codex",
           "note": "Codex bedroom pack V1"
+        }
+      ]
+    },
+    "writing-eraser": {
+      "kind": "object",
+      "family": "writing",
+      "label": "Writing eraser",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/writing-eraser.png",
+          "sha256": "77af24eda4446a67484955ed778407d49c4d884d5949f33a180d595de124ef83",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            42,
+            236,
+            213
+          ],
+          "added": "2026-10-21",
+          "source": "writing-eraser.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "writing-fountain-pen": {
+      "kind": "object",
+      "family": "writing",
+      "label": "Writing fountain pen",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/writing-fountain-pen.png",
+          "sha256": "09dba451d27baa0f033df0701c51d325f443f5a9aeaabd6a8870c96fd514f0b9",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            27,
+            20,
+            229,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "writing-fountain-pen.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "writing-ink-bottle": {
+      "kind": "object",
+      "family": "writing",
+      "label": "Writing ink bottle",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/writing-ink-bottle.png",
+          "sha256": "c203072180062aba0655ac8ac6eb65a8806e87090a482038e3ba4d9c1f6c76ae",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            35,
+            20,
+            220,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "writing-ink-bottle.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "writing-notebook": {
+      "kind": "object",
+      "family": "writing",
+      "label": "Writing notebook",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/writing-notebook.png",
+          "sha256": "4f2f74e9fc98eac8a2278f583eab54ddaaaa5ee705d2b953ac4ececdf8b8b777",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            49,
+            236,
+            207
+          ],
+          "added": "2026-10-21",
+          "source": "writing-notebook.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "writing-pencil": {
+      "kind": "object",
+      "family": "writing",
+      "label": "Writing pencil",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-cloud-composer-2026-10-19-v5/drafts/components/writing-pencil.png",
+          "sha256": "e63ea759227a2b7d22a5c3c28b28c41ef92592dfaa2af0cf8f789d85256dd21a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            36,
+            20,
+            220,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "writing-pencil.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
         }
       ]
     }

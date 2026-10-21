@@ -7,6 +7,15 @@ and welding-sparks marks use new V2 drawings; `symbol-clean-glint` is available
 as a new `clean` mark. All four are selectable in the Bubble stories studio,
 and the replaced V1 pictures remain available for undo.
 
+**Complete-catalogue update (21 October 2026):** the library now exposes all
+244 review-ready isolated source components from Activity Cloud Composer
+V1–V7, Prime rear-work activity-callout V2/V3 and every component-bearing
+Claude picture pack. The Studio therefore has 250 pictures, including every
+V5 album homage, the complete aquarium set and the 26-piece bedroom pack. Run
+`node scripts/import_activity_story_picture_catalogue.mjs` to reconcile those
+immutable source packs; `npm run verify:activity-stories` fails if any source
+component is absent or has lost its pinned version.
+
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A
 story has no upper length, only a five-second floor. Frank sets each
@@ -205,20 +214,29 @@ fails if any picture would land in “Other”.
 | --- | --- |
 | BBQ | `bbq` |
 | BBQ tools | `bbq-tools` |
-| Food and meals | `meal`, `sandwich`, `cooking`, `ingredient` |
+| Food and meals | `meal`, `sandwich`, `cooking`, `ingredient`, `baking`, `eggs`, `food-provenance`, `mixing`, `tea`, `toast` |
 | Condiments and seasoning | `condiment`, `seasoning` |
 | Knives and prep | `kitchen-tools`, `preparation-action` |
 | Washing up and dishwasher | `washing`, `dishwasher` |
+| Bathroom and personal care | `bathroom`, `dental`, `hygiene` |
 | Cleaning products | `cleaning-products`, `cleaning-chemical` |
 | Cleaning tools | `cleaning-tools` |
 | Sponges, cloths and bags | `cleaning-cloths`, `consumable` |
 | Laundry | `laundry` |
-| Repair | `repair` |
+| Aquarium and fishing | `aquarium`, `fishing` |
+| Garden and harvest | `garden`, `harvest` |
+| Music | `music` |
+| Reading and writing | `reading`, `writing` |
 | Bedtime | `sleep` |
 | Clothes | `wearable` |
 | Pockets and accessories | `personal-accessory` |
 | Grooming | `grooming` |
-| Books and music | `leisure` |
+| Books and music | `bedroom-leisure`, `leisure` |
+| Pets | `pet-care` |
+| Exercise and games | `exercise`, `games` |
+| Pottery | `pottery` |
+| Rest | `rest` |
+| Repair and maintenance | `maintenance`, `repair` |
 | Marks | every `--kind mark`, whatever its family |
 
 ## The command-line tool (Claude and Codex)

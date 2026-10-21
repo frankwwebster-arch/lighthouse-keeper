@@ -91,11 +91,13 @@ describe('picture library', () => {
   it('a new current version reaches every story, and a pinned cast member keeps the old one', () => {
     const lib = structuredClone(LIBRARY) as Library
     const grill = lib.pictures['bbq-grill']
-    grill.versions.push({ ...grill.versions[0], v: 2, url: '/activity-stories/pictures/bbq-grill-v2.png' })
-    grill.current = 2
+    const next = Math.max(...grill.versions.map((version) => version.v)) + 1
+    const replacement = `/activity-stories/pictures/bbq-grill-v${next}.png`
+    grill.versions.push({ ...grill.versions[0], v: next, url: replacement })
+    grill.current = next
     const story = STORY_DRAFTS.find((s) => s.id === 'garden-bbq')!
     const urlOf = (s: typeof story) => compileStory(s, lib).full.flatMap((f) => f.items).find((i) => i.id === 'grill')?.url
-    expect(urlOf(story)).toBe('/activity-stories/pictures/bbq-grill-v2.png')
+    expect(urlOf(story)).toBe(replacement)
     const pinned = { ...story, cast: { ...story.cast, grill: { ...story.cast.grill, version: 1 } } }
     expect(urlOf(pinned)).toBe(grill.versions[0].url)
   })

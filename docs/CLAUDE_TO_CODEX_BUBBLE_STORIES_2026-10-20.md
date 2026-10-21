@@ -26,10 +26,13 @@ nothing here edits them.
 
 Read `data/activity-stories/README.md`. In short:
 
-- `data/activity-stories/pictures.json` is the picture library. It points at
-  your existing archived pictures by URL and SHA-256 (33 pictures: V2's 20
-  objects and 6 symbols, plus the 7 V7 symbols) and the approved 24-frame
-  rear-work loop. Nothing was copied or redrawn.
+- `data/activity-stories/pictures.json` is the picture library. It began with
+  33 pictures (V2's 20 objects and 6 symbols, plus the 7 V7 symbols). As of
+  21 October it exposes 250 pictures: all 244 review-ready isolated source
+  components from Activity Cloud Composer V1–V7, rear-work activity-callout
+  V2/V3 and every component-bearing Claude picture pack (including the bedroom
+  pack), plus the original inherited marks. It references immutable pack files
+  by URL and SHA-256 and retains the approved 24-frame rear-work loop.
 - `data/activity-stories/stories/*.json` are the four drafts: Garden BBQ,
   Sandwich assembly, Washing up and General repair, rebuilt from the review
   fixes (stars on real touches, ingredients that land and stay, the hammer
@@ -74,6 +77,12 @@ immutable sources, prompt record, normalized components and light/dark evidence
 are in `art/drafts/activity-story-symbol-redraws-2026-10-21-v1/`. Frank can
 find all four in the studio's Bubble stories picture list; the V1 drawings
 remain available for undo.
+
+**Catalogue correction completed 21 October 2026:** the original seed had
+omitted 135 existing review-ready components. They are now registered in the
+shared library, including the complete aquarium vocabulary and every V5 album
+homage. `scripts/import_activity_story_picture_catalogue.mjs` is idempotent,
+and the normal Bubble stories verifier now enforces complete source coverage.
 
 1. Redraw the three V7 symbols the review flagged, as new versions (they
    carry `review.status: "rework-requested"` in the library):

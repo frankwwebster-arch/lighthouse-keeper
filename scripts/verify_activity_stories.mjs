@@ -11,6 +11,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { CELL, ID, MIN_GUTTER, STORIES_DIR, fileFor, measure, readLibrary, sha256 } from './activity_story_pictures.mjs'
+import { sourceCatalogue } from './import_activity_story_picture_catalogue.mjs'
 
 const problems = []
 const lib = readLibrary()
@@ -45,6 +46,15 @@ for (const [id, p] of Object.entries(lib.pictures)) {
     if (!m.bounds || m.bounds.join() !== v.bounds.join()) problems.push(`${id} v${v.v}: bounds are ${m.bounds?.join(', ')}, the library says ${v.bounds.join(', ')}`)
     if (m.gutter < MIN_GUTTER) problems.push(`${id} v${v.v}: only ${m.gutter} px of clear gutter`)
   }
+}
+
+// Claude and Frank need the complete review-ready activity vocabulary, not
+// only the small choreography subset that originally seeded this library.
+for (const source of sourceCatalogue()) {
+  const picture = lib.pictures[source.id]
+  if (!picture) problems.push(`${source.id}: missing from the complete activity picture catalogue (${source.set})`)
+  else if (!picture.versions.some((version) => version.sha256 === source.sha256))
+    problems.push(`${source.id}: ${source.set} source version is missing from the library`)
 }
 
 const stories = fs.readdirSync(STORIES_DIR).filter((f) => f.endsWith('.json'))

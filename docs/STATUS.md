@@ -34,6 +34,14 @@ The remaining 300 legacy endpoint repairs are measured from real RGBA pixels
 and ordered in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`. `npm test` rejects new
 or regressed endpoint failures against that frozen migration boundary.
 
+The Bubble stories Studio has a complete shared picture catalogue: 250
+selectable pictures grouped by activity. This includes every review-ready
+isolated source component from Activity Cloud Composer V1–V7, the rear-work
+V2/V3 callout packs and every component-bearing Claude picture pack, including
+all V5 album homages, the complete aquarium set and the 26 bedroom items. The
+importer is idempotent and the verifier fails if any of those 244 pinned source
+components disappears; existing versions remain immutable.
+
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 
 ## Not built yet (agreed design)
