@@ -4997,6 +4997,539 @@
   "mirrorsFor": "left",
   "z": 50
  },
+ "keeper_prime_darts_throw": {
+  "file": "keeper_prime_darts_throw.png",
+  "w": 56,
+  "h": 40,
+  "frames": 14,
+  "fps": 6.236080178173719,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
+  "outfit": "standard",
+  "loop": true,
+  "mirrorSafe": false,
+  "facing": "right",
+  "z": 50
+ },
+ "keeper_prime_ladder_climb": {
+  "file": "keeper_prime_ladder_climb.png",
+  "w": 32,
+  "h": 40,
+  "frames": 18,
+  "fps": 6.666666666666667,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "climbing-back-lower",
+  "endPose": "climbing-back-upper",
+  "assetRole": "clip",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_prime_neutral_sitting-back": {
+  "file": "keeper_prime_neutral_sitting-back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "sitting-back",
+  "endPose": "sitting-back",
+  "assetRole": "neutral",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_prime_neutral_sitting-front": {
+  "file": "keeper_prime_neutral_sitting-front.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "sitting-front",
+  "endPose": "sitting-front",
+  "assetRole": "neutral",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "front",
+  "z": 50
+ },
+ "keeper_prime_neutral_sitting-side-left": {
+  "file": "keeper_prime_neutral_sitting-side-left.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "sitting-side-left",
+  "endPose": "sitting-side-left",
+  "assetRole": "neutral",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "left",
+  "z": 50
+ },
+ "keeper_prime_neutral_sitting-side-right": {
+  "file": "keeper_prime_neutral_sitting-side-right.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "sitting-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "neutral",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "right",
+  "z": 50
+ },
+ "keeper_prime_neutral_standing-back": {
+  "file": "keeper_prime_neutral_standing-back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "neutral",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_prime_neutral_standing-front": {
+  "file": "keeper_prime_neutral_standing-front.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "neutral",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "front",
+  "z": 50
+ },
+ "keeper_prime_neutral_standing-side-right": {
+  "file": "keeper_prime_neutral_standing-side-right.png",
+  "w": 32,
+  "h": 40,
+  "frames": 1,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "neutral",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "z": 50
+ },
+ "keeper_prime_rear_work": {
+  "file": "keeper_prime_rear_work.png",
+  "w": 32,
+  "h": 40,
+  "frames": 24,
+  "fps": 4,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
+  "outfit": "standard",
+  "loop": true,
+  "mirrorSafe": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_prime_sit_back": {
+  "file": "keeper_prime_sit_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-back",
+  "endPose": "sitting-back",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_prime_sit_front": {
+  "file": "keeper_prime_sit_front.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-front",
+  "endPose": "sitting-front",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "front",
+  "z": 50
+ },
+ "keeper_prime_sit_side-left": {
+  "file": "keeper_prime_sit_side-left.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-side-left",
+  "endPose": "sitting-side-left",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "left",
+  "z": 50
+ },
+ "keeper_prime_sit_side-right": {
+  "file": "keeper_prime_sit_side-right.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "sitting-side-right",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "right",
+  "z": 50
+ },
+ "keeper_prime_stairs_down": {
+  "file": "keeper_prime_stairs_down.png",
+  "w": 32,
+  "h": 40,
+  "frames": 27,
+  "fps": 9.090909090909092,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "stair-upper-contact",
+  "endPose": "stair-lower-contact",
+  "assetRole": "clip",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "right-down",
+  "z": 50
+ },
+ "keeper_prime_stairs_up": {
+  "file": "keeper_prime_stairs_up.png",
+  "w": 32,
+  "h": 40,
+  "frames": 27,
+  "fps": 9.090909090909092,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "stair-lower-contact",
+  "endPose": "stair-upper-contact",
+  "assetRole": "clip",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "right-up",
+  "z": 50
+ },
+ "keeper_prime_stand_back": {
+  "file": "keeper_prime_stand_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "sitting-back",
+  "endPose": "standing-back",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "back",
+  "z": 50
+ },
+ "keeper_prime_stand_front": {
+  "file": "keeper_prime_stand_front.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "sitting-front",
+  "endPose": "standing-front",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "front",
+  "z": 50
+ },
+ "keeper_prime_stand_side-left": {
+  "file": "keeper_prime_stand_side-left.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "sitting-side-left",
+  "endPose": "standing-side-left",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "left",
+  "z": 50
+ },
+ "keeper_prime_stand_side-right": {
+  "file": "keeper_prime_stand_side-right.png",
+  "w": 32,
+  "h": 40,
+  "frames": 6,
+  "fps": 8,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "sitting-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "right",
+  "z": 50
+ },
+ "keeper_prime_turn_back_to_side-right": {
+  "file": "keeper_prime_turn_back_to_side-right.png",
+  "w": 32,
+  "h": 40,
+  "frames": 9,
+  "fps": 16,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "turning-right",
+  "z": 50
+ },
+ "keeper_prime_turn_front_to_side-right": {
+  "file": "keeper_prime_turn_front_to_side-right.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 16,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "turning-right",
+  "z": 50
+ },
+ "keeper_prime_turn_side-right_to_back": {
+  "file": "keeper_prime_turn_side-right_to_back.png",
+  "w": 32,
+  "h": 40,
+  "frames": 9,
+  "fps": 16,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-back",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "turning-back",
+  "z": 50
+ },
+ "keeper_prime_turn_side-right_to_front": {
+  "file": "keeper_prime_turn_side-right_to_front.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 16,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-front",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "turning-front",
+  "z": 50
+ },
+ "keeper_prime_walk_side_cycle": {
+  "file": "keeper_prime_walk_side_cycle.png",
+  "w": 32,
+  "h": 40,
+  "frames": 8,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "walking-side-right",
+  "endPose": "walking-side-right",
+  "assetRole": "clip",
+  "outfit": "standard",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "z": 50
+ },
+ "keeper_prime_walk_side_start": {
+  "file": "keeper_prime_walk_side_start.png",
+  "w": 32,
+  "h": 40,
+  "frames": 5,
+  "fps": 10,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "walking-side-right",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "z": 50
+ },
+ "keeper_prime_walk_side_stop": {
+  "file": "keeper_prime_walk_side_stop.png",
+  "w": 32,
+  "h": 40,
+  "frames": 5,
+  "fps": 12,
+  "density": 4,
+  "anchor": [
+   16,
+   40
+  ],
+  "startPose": "walking-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "z": 50
+ },
  "keeper_privacy-foam_neutral_sitting-front": {
   "file": "keeper_privacy-foam_neutral_sitting-front.png",
   "w": 40,

@@ -44,7 +44,7 @@
 .progressTrack { overflow: hidden; height: .36rem; background: rgba(255,255,255,.13); border-radius: 99px; }
 .progressTrack i { display: block; height: 100%; background: linear-gradient(90deg, var(--gold), #8addb3); transition: width .18s ease; }
 
-.snapshot, .librarySection, .sandboxSection, .excluded { max-width: 96rem; margin: 0 auto; padding-inline: clamp(1rem, 5vw, 5.5rem); }
+.snapshot, .gapsSection, .librarySection, .sandboxSection, .excluded { max-width: 96rem; margin: 0 auto; padding-inline: clamp(1rem, 5vw, 5.5rem); }
 .snapshot { padding-top: 4.5rem; padding-bottom: 4.5rem; }
 .snapshot > div:first-child, .sectionTitle > div { display: flex; gap: 1rem; align-items: baseline; }
 .snapshot > div:first-child > span, .sectionTitle > div > span { color: var(--coral); font: 800 .78rem ui-monospace, monospace; }
@@ -54,6 +54,23 @@
 .achievementGrid strong { display: block; margin-bottom: 2.7rem; font: 600 1.12rem Georgia, serif; }
 .achievementGrid p { margin: 0; color: var(--muted); line-height: 1.55; }
 .boundary { margin: 1.2rem 0 0; padding: 1rem 1.2rem; color: #654821; background: #fff5d8; border-left: 4px solid var(--gold); line-height: 1.55; }
+
+.gapsSection { padding-top: 1rem; padding-bottom: 5rem; }
+.gapSummary { display: grid; grid-template-columns: repeat(3, 1fr); margin-bottom: 1rem; color: #fff; background: var(--navy); border-radius: .8rem; }
+.gapSummary article { padding: 1.2rem; border-right: 1px solid rgba(255,255,255,.15); }
+.gapSummary article:last-child { border-right: 0; }
+.gapSummary strong, .gapSummary span { display: block; }
+.gapSummary strong { color: #efc765; font: 500 2.4rem Georgia, serif; }
+.gapSummary span { color: #cbe0dc; font-size: .72rem; }
+.gapGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.gapGrid > article { padding: 1.2rem; background: var(--paper); border: 1px solid #c8cec6; border-radius: .75rem; }
+.gapHeading { display: flex; justify-content: space-between; gap: 1rem; align-items: center; }
+.gapHeading span { padding: .25rem .48rem; color: #fff; background: var(--coral); border-radius: .3rem; font: 800 .7rem ui-monospace, monospace; }
+.gapHeading em { color: var(--sea); font-size: .64rem; font-style: normal; font-weight: 900; letter-spacing: .07em; text-transform: uppercase; }
+.gapGrid h3 { margin: .85rem 0 .4rem; font: 600 1.3rem Georgia, serif; }
+.gapGrid p { margin: 0; color: var(--muted); line-height: 1.5; }
+.gapGrid ul { margin: 1rem 0; padding-left: 1.1rem; color: var(--ink); font-size: .8rem; line-height: 1.55; }
+.gapGrid small { color: var(--coral); font-weight: 800; }
 
 .librarySection { padding-top: 1rem; padding-bottom: 5rem; }
 .sectionTitle { display: flex; justify-content: space-between; gap: 1rem; align-items: flex-end; margin-bottom: 1.5rem; }
@@ -69,6 +86,10 @@
 .categoryTabs .activeCategory { color: #fff; background: var(--navy); border-color: var(--navy); }
 .clipGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; }
 .clipCard { overflow: hidden; background: var(--paper); border: 1px solid #c8cec6; border-radius: .9rem; box-shadow: 0 15px 40px rgba(20,47,52,.07); }
+.deliveryComparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid #c8cec6; }
+.deliveryPane { min-width: 0; }
+.deliveryComparison .deliveryPane + .deliveryPane { border-left: 1px solid #c8cec6; }
+.deliveryLabel { display: block; padding: .55rem 1rem; color: var(--muted); background: #f3f2e9; font-size: .66rem; letter-spacing: .07em; text-transform: uppercase; }
 .clipHeading { display: flex; justify-content: space-between; gap: 1rem; align-items: flex-start; padding: 1.05rem 1.1rem .9rem; border-top: 4px solid var(--gold); }
 .clipHeading h3 { margin: .25rem 0 .12rem; font: 600 1.45rem Georgia, serif; }
 .clipHeading p { margin: 0; color: var(--muted); font-size: .75rem; }
@@ -78,6 +99,7 @@
 .stage::after { content: ""; position: absolute; inset: auto 0 12% 0; border-top: 2px solid rgba(23,48,57,.16); }
 .stage img { position: relative; z-index: 2; display: block; width: min(17rem, 72%); height: min(20rem, 88%); object-fit: contain; filter: drop-shadow(0 .7rem .5rem rgba(12,40,48,.22)); }
 .stage .flipped { transform: scaleX(-1); }
+.runtimeStage svg { position: relative; z-index: 2; display: block; width: min(17rem, 72%); height: min(20rem, 88%); overflow: hidden; filter: drop-shadow(0 .7rem .5rem rgba(12,40,48,.22)); image-rendering: auto; }
 .stage > p { color: var(--muted); }
 .stageLock { position: absolute; z-index: 4; inset: auto auto 1rem; padding: .35rem .6rem; color: #f6f2e8; background: rgba(7,42,52,.88); border-radius: .35rem; font-size: .68rem; }
 .stageLarge { height: 34rem; }
@@ -91,6 +113,7 @@
 .transport input, .transportCompact input { width: 100%; margin-top: .6rem; accent-color: var(--sea); }
 .clipMeta { padding: .2rem 1.1rem .85rem; }
 .clipMeta > p { min-height: 3rem; margin: 0 0 .8rem; color: var(--muted); line-height: 1.48; }
+.clipMeta > .runtimeState { min-height: 0; padding: .55rem .7rem; color: #16513d; background: #e4f2e9; border-radius: .4rem; font-size: .72rem; font-weight: 800; }
 .clipMeta dl { margin: 0; }
 .clipMeta dl div { display: grid; grid-template-columns: 5rem 1fr; gap: .7rem; padding: .38rem 0; border-top: 1px solid #e2e3dc; }
 .clipMeta dt { color: var(--muted); font-size: .66rem; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; }
@@ -143,6 +166,9 @@
   .sectionTitle > p { text-align: left; }
   .libraryToolbar input { width: 100%; min-width: 0; }
   .clipGrid { grid-template-columns: 1fr; }
+  .gapGrid { grid-template-columns: 1fr; }
+  .deliveryComparison { grid-template-columns: 1fr; }
+  .deliveryComparison .deliveryPane + .deliveryPane { border-left: 0; border-top: 1px solid #c8cec6; }
   .stage { height: 19rem; }
   .stageLarge { height: 26rem; }
 }
@@ -150,6 +176,8 @@
 @media (max-width: 570px) {
   .achievementGrid { grid-template-columns: 1fr; }
   .achievementGrid article { min-height: 9rem; }
+  .gapSummary { grid-template-columns: 1fr; }
+  .gapSummary article { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.15); }
   .achievementGrid strong { margin-bottom: 1.4rem; }
   .globalTransport { width: 100%; }
   .globalTransport > span { width: 100%; }

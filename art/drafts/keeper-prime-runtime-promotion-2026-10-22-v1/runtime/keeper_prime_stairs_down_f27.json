@@ -1,0 +1,161 @@
+{
+  "schema": "lighthouse-keeper/prime-runtime-sprite@1",
+  "name": "keeper_prime_stairs_down",
+  "w": 32,
+  "h": 40,
+  "density": 4,
+  "frames": 27,
+  "fps": 9.090909090909092,
+  "anchor": [
+    16,
+    40
+  ],
+  "startPose": "stair-upper-contact",
+  "endPose": "stair-lower-contact",
+  "assetRole": "clip",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "right-down",
+  "productionPromotionApprovedOn": "2026-10-22",
+  "derivation": "deterministic 2x premultiplied-alpha box reduction from exact approved 256x320 review frames; frame order is unchanged except for declared reversible clips",
+  "approvedClipId": "stair-descent-v2",
+  "sourceFrames": [
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-781eec73ba082878.png",
+      "sha256": "781eec73ba082878195a484521f1ecaa17633f5767f3a64520d6d88f53e42f73",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-d8793fdc7faef54f.png",
+      "sha256": "d8793fdc7faef54fb489f0383dd5dfe00b455236ca2a845e01b178066d83d752",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-776d9b8ae456a12b.png",
+      "sha256": "776d9b8ae456a12b75153bddf55d2cabe4b79a6fb52e1ce12a8f1eeed3abea49",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-0c9e11f2753bc7ee.png",
+      "sha256": "0c9e11f2753bc7eea66f14c89562436950752173957c842cce9c0d1818035697",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-781eec73ba082878.png",
+      "sha256": "781eec73ba082878195a484521f1ecaa17633f5767f3a64520d6d88f53e42f73",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-d8793fdc7faef54f.png",
+      "sha256": "d8793fdc7faef54fb489f0383dd5dfe00b455236ca2a845e01b178066d83d752",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-776d9b8ae456a12b.png",
+      "sha256": "776d9b8ae456a12b75153bddf55d2cabe4b79a6fb52e1ce12a8f1eeed3abea49",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-0c9e11f2753bc7ee.png",
+      "sha256": "0c9e11f2753bc7eea66f14c89562436950752173957c842cce9c0d1818035697",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-781eec73ba082878.png",
+      "sha256": "781eec73ba082878195a484521f1ecaa17633f5767f3a64520d6d88f53e42f73",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-d8793fdc7faef54f.png",
+      "sha256": "d8793fdc7faef54fb489f0383dd5dfe00b455236ca2a845e01b178066d83d752",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-776d9b8ae456a12b.png",
+      "sha256": "776d9b8ae456a12b75153bddf55d2cabe4b79a6fb52e1ce12a8f1eeed3abea49",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-0c9e11f2753bc7ee.png",
+      "sha256": "0c9e11f2753bc7eea66f14c89562436950752173957c842cce9c0d1818035697",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-781eec73ba082878.png",
+      "sha256": "781eec73ba082878195a484521f1ecaa17633f5767f3a64520d6d88f53e42f73",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-d8793fdc7faef54f.png",
+      "sha256": "d8793fdc7faef54fb489f0383dd5dfe00b455236ca2a845e01b178066d83d752",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-776d9b8ae456a12b.png",
+      "sha256": "776d9b8ae456a12b75153bddf55d2cabe4b79a6fb52e1ce12a8f1eeed3abea49",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-0c9e11f2753bc7ee.png",
+      "sha256": "0c9e11f2753bc7eea66f14c89562436950752173957c842cce9c0d1818035697",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-781eec73ba082878.png",
+      "sha256": "781eec73ba082878195a484521f1ecaa17633f5767f3a64520d6d88f53e42f73",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-d8793fdc7faef54f.png",
+      "sha256": "d8793fdc7faef54fb489f0383dd5dfe00b455236ca2a845e01b178066d83d752",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-776d9b8ae456a12b.png",
+      "sha256": "776d9b8ae456a12b75153bddf55d2cabe4b79a6fb52e1ce12a8f1eeed3abea49",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-0c9e11f2753bc7ee.png",
+      "sha256": "0c9e11f2753bc7eea66f14c89562436950752173957c842cce9c0d1818035697",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-781eec73ba082878.png",
+      "sha256": "781eec73ba082878195a484521f1ecaa17633f5767f3a64520d6d88f53e42f73",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-d8793fdc7faef54f.png",
+      "sha256": "d8793fdc7faef54fb489f0383dd5dfe00b455236ca2a845e01b178066d83d752",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-776d9b8ae456a12b.png",
+      "sha256": "776d9b8ae456a12b75153bddf55d2cabe4b79a6fb52e1ce12a8f1eeed3abea49",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-0c9e11f2753bc7ee.png",
+      "sha256": "0c9e11f2753bc7eea66f14c89562436950752173957c842cce9c0d1818035697",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-781eec73ba082878.png",
+      "sha256": "781eec73ba082878195a484521f1ecaa17633f5767f3a64520d6d88f53e42f73",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-d8793fdc7faef54f.png",
+      "sha256": "d8793fdc7faef54fb489f0383dd5dfe00b455236ca2a845e01b178066d83d752",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stair-descent-v2/assets/frame-776d9b8ae456a12b.png",
+      "sha256": "776d9b8ae456a12b75153bddf55d2cabe4b79a6fb52e1ce12a8f1eeed3abea49",
+      "flipX": false
+    }
+  ],
+  "sha256": "9c5f3477aaf52b195a0e72fe009a935d875f2fbb2fc7387248b49415b3720741"
+}

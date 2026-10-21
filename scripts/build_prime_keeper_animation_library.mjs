@@ -61,7 +61,14 @@ function pingPong(entries) {
 
 function clip(details, entries) {
   if (!entries.length || entries.some((entry) => !entry.src)) throw new Error(`${details.id} has invalid frames`)
-  return { ...details, frames: entries }
+  const base = details.reviewUrl.endsWith('/') ? details.reviewUrl : `${details.reviewUrl}/`
+  return {
+    ...details,
+    frames: entries.map((entry) => ({
+      ...entry,
+      src: entry.src.startsWith('/') ? entry.src : `${base}${entry.src}`,
+    })),
+  }
 }
 
 const walkHtml = 'public/keeper-review/keeper-prime-walk-v7/index.html'
@@ -82,6 +89,8 @@ const sitFront = readJson('review-archive/objects/8b/8bca3cc27af7c341cb86f877051
 const sitBack = readJson('review-archive/objects/b1/b117b53cf7f849783b3a8348e8bd2b01296ca4068607153746e527ca5bad3e96.json')
 const darts = readJson('review-archive/objects/c9/c9ae9f4eb70f36f83a722a6f0d28baa6926d2657bad0eaaf76b5fe570ca62240.json')
 const rearAction = readJson('public/keeper-review/keeper-prime-rear-action-sequence-v1/catalogue.json')
+const runtimeBankPath = path.join(root, 'data/keeper_prime_runtime_bank.json')
+const runtimeBank = fs.existsSync(runtimeBankPath) ? readJson('data/keeper_prime_runtime_bank.json') : { assets: [] }
 
 const common = { approvedBy: 'Frank', productionState: 'Approved review authority · not yet promoted to runtime' }
 const clips = [
@@ -101,15 +110,41 @@ const clips = [
   clip({ ...common, id: 'rear-action-v1', title: 'Rear work action', version: 'Prime Rear Action Sequence V1', category: 'Activities', approvedOn: '2026-10-20', scope: 'Approved walk–stop–turn–rear-action continuity; simple callout motion remains non-final.', startPose: 'walking-side-right', endPose: 'standing-back', loop: false, reviewUrl: '/keeper-review/keeper-prime-rear-action-sequence-v1/' }, frames(rearAction.sequence)),
 ]
 
+const runtimeByClip = new Map()
+for (const asset of runtimeBank.assets) {
+  const existing = runtimeByClip.get(asset.approvedClipId) ?? []
+  existing.push(asset.sprite)
+  runtimeByClip.set(asset.approvedClipId, existing)
+}
+for (const item of clips) {
+  item.runtimeAssets = runtimeBank.assets
+    .filter((asset) => asset.approvedClipId === item.id)
+    .map((asset) => ({
+      name: asset.sprite,
+      src: `/sprites/${asset.publicFile}`,
+      w: asset.w,
+      h: asset.h,
+      frames: asset.frames,
+      fps: asset.fps,
+      loop: asset.loop,
+    }))
+  item.runtimeSprites = item.runtimeAssets.map((asset) => asset.name)
+  item.productionState = item.runtimeSprites.length
+    ? `${item.runtimeSprites.length} reusable runtime sprite${item.runtimeSprites.length === 1 ? '' : 's'} installed`
+    : item.id === 'stair-route-v6'
+      ? 'Review-only composite; its reusable walk, turn and stair constituents are installed'
+      : 'Approved review authority · no reusable runtime extraction'
+}
+
 const uniqueFrames = new Set(clips.flatMap((item) => item.frames.map((frame) => frame.src)))
 const catalogue = {
   schema: 'lighthouse-keeper/prime-animation-library@1',
-  generatedOn: '2026-10-21',
+  generatedOn: '2026-10-22',
   title: 'Prime Keeper approved animation library',
   summary: {
     approvedPlayableClips: clips.length,
     uniqueFrameImages: uniqueFrames.size,
-    runtimePromotions: 0,
+    runtimePromotions: runtimeByClip.size,
     experimentalApprovedProofsExcluded: 1,
   },
   excludedProofs: [{

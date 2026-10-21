@@ -5,14 +5,19 @@ to infer meaning from filenames or Git history.
 
 ## Prime Keeper normalisation status — 18 October 2026
 
-This index describes the inherited production bank; it does **not** mean that
-every listed drawing is approved Prime Keeper art. The deterministic V1 audit
+This index describes both the inherited production bank and, as of 22 October,
+the separate versioned Prime runtime bank. It does **not** mean that every
+legacy drawing listed below is approved Prime Keeper art. The deterministic V1 audit
 currently covers 308 production animations and technical neutrals. Of those,
 159 have legacy endpoint risk, 28 are explicitly rejected or excluded, and
 zero have a strip/sidecar geometry mismatch. See
 `data/keeper-prime-animation-bank-audit-v1.json` for every exact frame range,
 hash, outfit, facing, endpoint, dependency, current family, treatment and
-required contextual route.
+required contextual route. The promoted Prime register is
+`data/keeper_prime_runtime_bank.json`: 27 sprites / 217 frames, with idle,
+walking, stairs and generic rear work active, and turns, ladder, sit/stand and
+darts awaiting gameplay consumers. The prioritized gap list is
+`docs/PRIME_KEEPER_ANIMATION_GAPS_2026-10-22.md`.
 
 Sitting-direction status moved on 18 October: exact front-facing V4 is approved
 and hash-pinned without promotion. Back-facing V1 is immutable and rejected

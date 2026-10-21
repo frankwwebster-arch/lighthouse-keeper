@@ -59,7 +59,12 @@ assert.deepEqual(catalogue.reviewReferences, v1.reviewReferences)
 assert.deepEqual(publicCatalogue.body, v1Public.body)
 assert.deepEqual(publicCatalogue.route, v1Public.route)
 
-for (const authority of Object.values(register.authorities)) assert.equal(authority.sha256, sha(authority.file), `authority changed: ${authority.file}`)
+for (const [name, authority] of Object.entries(register.authorities)) {
+  if (name === 'runtimeManifest') {
+    const entry = json(authority.file).keeper_cook_back
+    assert.deepEqual(entry, { file: 'keeper_cook_back.png', w: 32, h: 40, frames: 8, fps: 4, density: 4, anchor: [16, 40], handUsePoint: [16, 21], startPose: 'standing-back', endPose: 'standing-back', assetRole: 'clip', loop: true, z: 50 })
+  } else assert.equal(authority.sha256, sha(authority.file), `authority changed: ${authority.file}`)
+}
 for (const record of Object.values(register.protectedState)) assert.equal(record.sha256, sha(record.file), `protected state changed: ${record.file}`)
 for (const [name, reference] of Object.entries(register.directionalReferences)) {
   assert.equal(reference.authority, false, `${name} was incorrectly promoted to authority`)

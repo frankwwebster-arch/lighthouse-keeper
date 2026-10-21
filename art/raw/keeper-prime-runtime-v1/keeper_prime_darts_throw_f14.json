@@ -1,0 +1,96 @@
+{
+  "schema": "lighthouse-keeper/prime-runtime-sprite@1",
+  "name": "keeper_prime_darts_throw",
+  "w": 56,
+  "h": 40,
+  "density": 4,
+  "frames": 14,
+  "fps": 6.236080178173719,
+  "anchor": [
+    16,
+    40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "standing-side-right",
+  "assetRole": "clip",
+  "outfit": "standard",
+  "loop": true,
+  "mirrorSafe": false,
+  "facing": "right",
+  "productionPromotionApprovedOn": "2026-10-22",
+  "derivation": "deterministic 2x premultiplied-alpha box reduction from exact approved 256x320 review frames; frame order is unchanged except for declared reversible clips",
+  "approvedClipId": "darts-context-v8",
+  "sourceFrames": [
+    {
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "sha256": "47846a685e4831e739a7f470659a6fb94523cc334304cb8f8855cdfa54722f1a",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-f8de0aa0d4669153.png",
+      "sha256": "f8de0aa0d4669153a919492ec0ecf60d96b47e8373ad9591196260275cd6e686",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-934c40edc9ed19c0.png",
+      "sha256": "934c40edc9ed19c0e892b290ba01f372d43006ead04e47492f5a87c562c3bcd5",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-bd1f9e228b6c22a8.png",
+      "sha256": "bd1f9e228b6c22a8aecd8b4d14e1bd27ca021f83a1ce2eb0a8bcca526d9a3825",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-067af07a727abfe1.png",
+      "sha256": "067af07a727abfe142c16026ba8f70ec558d66af327fbc27c29e81237ab545e3",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-fae0deec1267ba58.png",
+      "sha256": "fae0deec1267ba583219098393f3eb6943996650456b1ab8f6a572bd22f12bf2",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-0cdcbd13f83bffc5.png",
+      "sha256": "0cdcbd13f83bffc51bd07b0d5efb8b56e8ce242d9ffff5980750653b9d291481",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-5cdffcf9007cca9e.png",
+      "sha256": "5cdffcf9007cca9e3f62f1c8ee219da55e6e59d27f8ba373b81b3e95e1dd4884",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-5cdffcf9007cca9e.png",
+      "sha256": "5cdffcf9007cca9e3f62f1c8ee219da55e6e59d27f8ba373b81b3e95e1dd4884",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-819b71aed60f6fba.png",
+      "sha256": "819b71aed60f6fba3d67ea0ba840dd97a7cab6781c2d396bf1ab8ddf13d1be6c",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "sha256": "47846a685e4831e739a7f470659a6fb94523cc334304cb8f8855cdfa54722f1a",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "sha256": "47846a685e4831e739a7f470659a6fb94523cc334304cb8f8855cdfa54722f1a",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "sha256": "47846a685e4831e739a7f470659a6fb94523cc334304cb8f8855cdfa54722f1a",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-darts-context-v8/assets/frame-47846a685e4831e7.png",
+      "sha256": "47846a685e4831e739a7f470659a6fb94523cc334304cb8f8855cdfa54722f1a",
+      "flipX": false
+    }
+  ],
+  "sha256": "6d1e6424acf257c9a2dbf7eff81cf589a9b8e525979cc60084b95f19d6fbec63"
+}

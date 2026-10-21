@@ -6,8 +6,9 @@ Live route: `/prime-keeper-animations`
 ## Purpose
 
 The Prime Keeper's approved motion had accumulated across many immutable review
-pages and approval records. The new library gives that work one readable index
-without changing, copying over, promoting or redrawing an approved source.
+pages and approval records. The library gives that work one readable index and
+now shows each approved source beside its versioned runtime delivery where a
+reusable clip has been extracted.
 
 The page provides:
 
@@ -22,9 +23,9 @@ The page provides:
 - local persistence and JSON export for the sandbox sequence; and
 - direct links back to each immutable original review surface.
 
-The page preloads and decodes all 213 unique frame URLs before enabling any
-transport control or starting playback. It reuses the content-addressed review
-archive and adds no image media.
+The page preloads and decodes all 213 unique source frame URLs plus every
+runtime sheet before enabling any transport control or starting playback. It
+reuses the content-addressed review archive for source evidence.
 
 ## What is in the playable bank
 
@@ -49,12 +50,22 @@ outside the playable approved bank. Its motion feasibility and
 `hold_shaft_two_hand` concept are approved, while its proxy body artwork is
 explicitly not approved for production.
 
-## Approval boundary
+## Runtime promotion — 22 October 2026
 
-This is an inspection and composition tool, not a promotion. Prime Keeper Final
-and runtime remain unchanged and still contain no promoted Prime animation.
-The page's “approved” label means the exact review authority described by the
-source decision; it does not expand any decision's original scope.
+Frank authorised runtime promotion after the earlier boundary was explained.
+The versioned promotion installs 27 reusable sprites / 217 registered frames
+from 13 of the 14 source clips. The complete stair route is a review composite;
+its reusable walk, turn and stair constituents are installed rather than
+duplicating the composite as one oversized runtime strip.
+
+The game actively consumes Prime idle, walk start/cycle/stop, stair
+ascent/descent and generic rear work. Turns, ladder, sit/stand, seated neutrals
+and darts are installed but await their gameplay choreography. The library
+labels that distinction and renders approved source and installed delivery
+side-by-side. This promotion does not expand any original art approval.
+
+The held-implement POC remains excluded. Its motion feasibility and
+`hold_shaft_two_hand` concept are approved, but the proxy body art is not.
 
 The sandbox never edits source frames. It stores only clip identifiers,
 direction, order and repeat count in browser local storage under
@@ -65,6 +76,12 @@ direction, order and repeat count in browser local storage under
 - `scripts/build_prime_keeper_animation_library.mjs` extracts exact frame
   routes from the existing approved review data and writes the static catalogue.
 - `public/prime-keeper-animations/catalogue.json` is the deployed catalogue.
+- `data/keeper_prime_runtime_bank.json` is the runtime register, including
+  active bindings, installed assets awaiting consumers and source/delivery
+  hashes.
+- `art/drafts/keeper-prime-runtime-promotion-2026-10-22-v1/` preserves the
+  reversible draft delivery; `art/raw/keeper-prime-runtime-v1/` is the promoted
+  versioned source.
 - `src/prime-keeper-animations/` contains the page UI and transport/sandbox
   logic.
 - `src/app/prime-keeper-animations/page.tsx` owns the route and metadata.
@@ -73,9 +90,15 @@ Verify the generated catalogue with:
 
 ```sh
 npm run verify:prime-keeper-animation-library
+npm run verify:keeper-prime-runtime
 npm run typecheck
 npm run build
 ```
 
 The catalogue verifier fails if its generated output no longer matches the
-underlying approved review sources.
+underlying approved review sources. The runtime verifier also checks every
+hash, manifest field, strip geometry and shared vertical cell edge.
+
+The remaining-work inventory is
+`docs/PRIME_KEEPER_ANIMATION_GAPS_2026-10-22.md` and its checked data source is
+`data/keeper_prime_animation_gaps.json`.

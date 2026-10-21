@@ -15,6 +15,16 @@ export type AnimationClip = {
   approvedOn: string
   scope: string
   productionState: string
+  runtimeSprites: string[]
+  runtimeAssets: Array<{
+    name: string
+    src: string
+    w: number
+    h: number
+    frames: number
+    fps: number
+    loop: boolean
+  }>
   startPose: string
   endPose: string
   loop: boolean
@@ -36,5 +46,21 @@ export type AnimationCatalogue = {
   clips: AnimationClip[]
 }
 
-export type PlayerCommand = { type: 'play' | 'pause' | 'previous' | 'next' | 'restart'; nonce: number }
+export type AnimationGapInventory = {
+  installedNow: {
+    runtimeSprites: number
+    registeredFrames: number
+    activeBindings: string[]
+    installedAwaitingGameplayChoreography: string[]
+  }
+  priorities: Array<{
+    priority: string
+    title: string
+    kind: string
+    why: string
+    required: string[]
+    interactionIds: string[]
+  }>
+}
 
+export type PlayerCommand = { type: 'play' | 'pause' | 'previous' | 'next' | 'restart'; nonce: number }

@@ -1,0 +1,56 @@
+{
+  "schema": "lighthouse-keeper/prime-runtime-sprite@1",
+  "name": "keeper_prime_sit_front",
+  "w": 32,
+  "h": 40,
+  "density": 4,
+  "frames": 6,
+  "fps": 8,
+  "anchor": [
+    16,
+    40
+  ],
+  "startPose": "standing-front",
+  "endPose": "sitting-front",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "front",
+  "productionPromotionApprovedOn": "2026-10-22",
+  "derivation": "deterministic 2x premultiplied-alpha box reduction from exact approved 256x320 review frames; frame order is unchanged except for declared reversible clips",
+  "approvedClipId": "sit-front-v4",
+  "sourceFrames": [
+    {
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f1-a9a5c37fe7222199.png",
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f2-4efd077ac6046b67.png",
+      "sha256": "4efd077ac6046b67e286f22b8b38546492042d0ed8e0f43da0e34840a32d23ab",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f3-36482028337fe7b0.png",
+      "sha256": "36482028337fe7b00b09eaab1d11a5ed275fe7edf36acacf08e7341f4f5e54d5",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f4-80e4eaa09c8adaad.png",
+      "sha256": "80e4eaa09c8adaad583242e585f883e5fca244ed465b76d9e2ab0e25c0b1b89f",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f5-f60db0bc99420b34.png",
+      "sha256": "f60db0bc99420b3412efa4cb7623f8b264718606b3af69e079f9f2962e695f4c",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-sit-stand-front-v4/assets/sit-front-v4-f6-501151a426f81251.png",
+      "sha256": "501151a426f812515d1afcd2b22a588fd80dd8e3af273b96963ceba2271747ce",
+      "flipX": false
+    }
+  ],
+  "sha256": "8d8f6ce4e7094b0a8d5ab0fa81b1c389b52ac9080e2e0256bfeeea41d86b1df5"
+}

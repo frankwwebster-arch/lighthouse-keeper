@@ -1,0 +1,31 @@
+{
+  "schema": "lighthouse-keeper/prime-runtime-sprite@1",
+  "name": "keeper_prime_neutral_sitting-back",
+  "w": 32,
+  "h": 40,
+  "density": 4,
+  "frames": 1,
+  "fps": 0,
+  "anchor": [
+    16,
+    40
+  ],
+  "startPose": "sitting-back",
+  "endPose": "sitting-back",
+  "assetRole": "neutral",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "back",
+  "productionPromotionApprovedOn": "2026-10-22",
+  "derivation": "deterministic 2x premultiplied-alpha box reduction from exact approved 256x320 review frames; frame order is unchanged except for declared reversible clips",
+  "approvedClipId": "sit-back-v2",
+  "sourceFrames": [
+    {
+      "url": "/keeper-review/keeper-prime-sit-stand-back-v2/assets/sit-back-v2-f6-6fdfe3359ed63445.png",
+      "sha256": "6fdfe3359ed634457c415b4268dea1f659430bf801a4c2482c19e05a7a034efa",
+      "flipX": false
+    }
+  ],
+  "sha256": "5797d8e8410b98b7ffd751be367c406bae386e37fb6b93c0ebc9aeccbc3f4d43"
+}

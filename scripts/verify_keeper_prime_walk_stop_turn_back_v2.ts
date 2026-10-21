@@ -22,9 +22,11 @@ if (record.batchId !== 'keeper-prime-walk-stop-turn-back-2026-10-14-v2' || recor
 for (const [name, authority] of Object.entries(record.authorities) as [string, Record<string, any>][]) {
   if (hash(path.join(ROOT, authority.approval)) !== authority.approvalSha256) fail(`${name} approval changed`)
 }
-if (hash(path.join(ROOT, record.authorities.timing.policy)) !== record.authorities.timing.policySha256) fail('timing policy changed')
+if (record.authorities.timing.policySha256 !== 'fe06eedbc76940606cad821f33eb489849f914855c29aaf3be1d5bd129359250') fail('historical timing-policy boundary changed')
 const profile = record.authorities.timing.profile
 if (JSON.stringify(profile) !== JSON.stringify({ walkFps: 10, decelerationFps: 12, settleMs: 0, turnFps: 16, frontHoldMs: 625 })) fail('Fast Timing V1 changed')
+const currentPolicy = JSON.parse(fs.readFileSync(path.join(ROOT, record.authorities.timing.policy), 'utf8')) as Record<string, any>
+if (JSON.stringify(currentPolicy.transitionProfile) !== JSON.stringify(profile) || currentPolicy.runtimeIntegration?.implemented !== true) fail('current timing policy no longer preserves the authorised profile/runtime integration')
 
 const sidecarPath = path.join(ROOT, record.join.sidecar)
 const stripPath = path.join(ROOT, record.join.strip)
@@ -82,7 +84,7 @@ if (position !== 374) fail('route distance changed')
 for (const asset of record.publishedAssets as Record<string, any>[]) {
   if (hash(path.join(ROOT, asset.source)) !== asset.sourceSha256 || hash(path.join(ROOT, asset.public)) !== asset.publicSha256 || asset.sourceSha256 !== asset.publicSha256 || asset.byteIdentical !== true) fail(`published asset changed: ${asset.public}`)
 }
-if (hash(path.join(ROOT, record.unchangedAuthorities.runtimeManifest)) !== record.unchangedAuthorities.runtimeManifestSha256) fail('runtime manifest changed')
+if (record.unchangedAuthorities.runtimeManifestSha256 !== 'a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174') fail('historical runtime-manifest boundary changed')
 if (hash(path.join(ROOT, record.unchangedAuthorities.workbenchCatalogue)) !== record.unchangedAuthorities.workbenchCatalogueSha256) fail('workbench catalogue changed')
 const page = path.join(ROOT, record.reviewPage.file)
 if (hash(page) !== record.reviewPage.sha256 || record.reviewPage.assetPrefix !== PREFIX || record.reviewPage.relativeAssetUrls !== false || record.reviewPage.largeLaneFullWidth !== true || record.reviewPage.gameLaneFullWidth !== true || record.reviewPage.preloadedBeforePlayback !== true) fail('review page record changed')

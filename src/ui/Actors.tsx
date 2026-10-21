@@ -5,8 +5,23 @@ import { FLOOR_ORDER, FLOOR_Y, INTERIOR, LAYOUT, TOWER_X, floorOf, route, worldX
 import { Sprite } from './Sprite'
 
 const SPEED = 240
+const WALK_START_MS = 500
+const WALK_STOP_MS = (5 / 12) * 1000
+const STAIR_SPEED = 140 / (27 * 0.11)
 const interiorLeft = TOWER_X + INTERIOR.left
 const interiorRight = TOWER_X + INTERIOR.right
+
+export type KeeperTravelMotion = 'idle' | 'walk-start' | 'walk' | 'walk-stop' | 'stairs-up' | 'stairs-down' | 'lift'
+
+export const primeTravelClipFor = (motion: KeeperTravelMotion): string | null => ({
+  idle: 'keeper_prime_neutral_standing-side-right',
+  'walk-start': 'keeper_prime_walk_side_start',
+  walk: 'keeper_prime_walk_side_cycle',
+  'walk-stop': 'keeper_prime_walk_side_stop',
+  'stairs-up': 'keeper_prime_stairs_up',
+  'stairs-down': 'keeper_prime_stairs_down',
+  lift: null,
+})[motion]
 
 /** Which floor a spot is on (ground and outside share a height, so the x tells them apart). */
 export function floorAt(x: number, y: number): FloorId {
@@ -44,15 +59,17 @@ const SKIN = '#f1c9a0'
 /** The bought broom tier controls the complete keeper-plus-tool cleaning strip. */
 export const cleaningClipForTier = (tier: number) => tier >= 3 ? 'hoover_super' : tier === 2 ? 'hoover_basic' : 'sweep_broom'
 
-function Keeper({ anim, mood, walking, face, rear, action, cleaningTier }: { anim: string; mood: ReturnType<typeof moodWord>; walking: boolean; face: 1 | -1; rear: boolean; action?: string; cleaningTier: number }) {
-  const clip = walking ? 'walk' : anim === 'none' ? 'idle' : anim
+function Keeper({ anim, mood, motion, face, rear, action, cleaningTier }: { anim: string; mood: ReturnType<typeof moodWord>; motion: KeeperTravelMotion; face: 1 | -1; rear: boolean; action?: string; cleaningTier: number }) {
+  const moving = motion !== 'idle' && motion !== 'lift'
+  const clip = moving ? 'walk' : anim === 'none' ? 'idle' : anim
   const cleaningClip = cleaningClipForTier(cleaningTier)
   const productionClip = action === 'desk_tidy' ? cleaningClip : rear ? action === 'brush_teeth' ? 'brush_teeth_back' : action === 'wash_basin' ? 'wash_back' : 'cook_back' : clip
+  const primeClip = moving ? primeTravelClipFor(motion) : rear ? 'keeper_prime_rear_work' : anim === 'none' ? primeTravelClipFor('idle') : null
   const mouth = mood === 'chipper' ? 'M-6 -76 Q0 -68 6 -76' : mood === 'content' ? 'M-5 -75 Q0 -71 5 -75' : mood === 'soso' ? 'M-5 -74 L5 -74' : 'M-6 -72 Q0 -78 6 -72'
   return (
-    <g className={`keeper a-${clip} ${rear ? 'keeper-rear' : ''}`}>
-      <Sprite name={[`keeper_clip_${clip}_${rear ? 'rear' : 'side'}`, `keeper_${productionClip}`, `keeper_${clip}`]} w={90} h={130}>
-        <g transform={`scale(${face} 1)`}>
+    <g className={`keeper a-${clip} ${rear ? 'keeper-rear' : ''}`} transform={`scale(${rear ? 1 : face} 1)`}>
+      <Sprite name={[...(primeClip ? [primeClip] : []), `keeper_clip_${clip}_${rear ? 'rear' : 'side'}`, `keeper_${productionClip}`, `keeper_${clip}`]} w={90} h={130}>
+        <g>
           <g className="legs">
             <rect className="leg l1" x={-9} y={-30} width={8} height={30} fill="#2e3d5a" />
             <rect className="leg l2" x={1} y={-30} width={8} height={30} fill="#2e3d5a" />
@@ -140,11 +157,14 @@ function Visitor({ who, label }: { who: string; label: string }) {
 /** The keeper, the pet and any visitors. Their walking is done here, a frame at a time. */
 export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
   const startAt = place('bed')
-  const [pos, setPos] = useState({ x: startAt.x, y: startAt.y, face: 1 as 1 | -1, walking: false })
+  const [pos, setPos] = useState({ x: startAt.x, y: startAt.y, face: 1 as 1 | -1, motion: 'idle' as KeeperTravelMotion })
   const [pet, setPet] = useState({ x: startAt.x + 60, y: startAt.y })
   const path = useRef<{ x: number; y: number }[]>([])
   const walked = useRef(-1)
+  const walkedThisJob = useRef(false)
   const arrived = useRef(-1)
+  const travelMode = useRef<{ mode: 'idle' | 'walk' | 'stairs-up' | 'stairs-down' | 'lift'; at: number }>({ mode: 'idle', at: 0 })
+  const stopStartedAt = useRef<number | null>(null)
   const me = useRef({ x: startAt.x, y: startAt.y })
   const petMe = useRef({ x: startAt.x + 60, y: startAt.y })
   /** The layout as last drawn, and which floor each of them was on in it. */
@@ -162,6 +182,9 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
   useEffect(() => {
     if (!d || d.phase !== 'going' || walked.current === d.n) return
     walked.current = d.n
+    walkedThisJob.current = false
+    stopStartedAt.current = null
+    travelMode.current = { mode: 'idle', at: performance.now() }
     const target = place(d.object)
     const from: Point = { x: me.current.x, floor: floorAt(me.current.x, me.current.y) }
     const to: Point = { x: target.x, floor: floorOf(d.object) }
@@ -175,7 +198,7 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
       if (Math.abs(t.x - me.current.x) > 2 || Math.abs(t.y - me.current.y) > 2) {
         me.current = { ...t }
         path.current = []
-        setPos((p) => ({ ...p, x: t.x, y: t.y, walking: false }))
+        setPos((p) => ({ ...p, x: t.x, y: t.y, motion: 'idle' }))
       }
     }
   }, [d?.n, d?.phase]) // eslint-disable-line react-hooks/exhaustive-deps
@@ -199,15 +222,19 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
           path.current = route({ x: me.current.x, floor: kf }, { x: target.x, floor: floorOf(job.object) }).map((p) => ({ x: p.x, y: FLOOR_Y[p.floor] }))
         }
       }
-      let walking = false
+      let motion: KeeperTravelMotion = 'idle'
       let face = 0 as 0 | 1 | -1
       const next = path.current[0]
       if (next && st.doing?.phase === 'going') {
-        walking = true
         const dx = next.x - me.current.x
         const dy = next.y - me.current.y
+        const baseMotion = Math.abs(dy) > 1 ? LAYOUT.lift ? 'lift' : dy < 0 ? 'stairs-up' : 'stairs-down' : 'walk'
+        if (travelMode.current.mode !== baseMotion) travelMode.current = { mode: baseMotion, at: t }
+        motion = baseMotion === 'walk' && t - travelMode.current.at < WALK_START_MS ? 'walk-start' : baseMotion
+        walkedThisJob.current = true
+        stopStartedAt.current = null
         const dist = Math.hypot(dx, dy)
-        const step = SPEED * dt * (dy !== 0 ? (LAYOUT.lift ? 2.4 : 0.6) : 1)
+        const step = dt * (Math.abs(dy) > 1 ? LAYOUT.lift ? SPEED * 2.4 : STAIR_SPEED : SPEED)
         if (dist <= step) {
           me.current = { x: next.x, y: next.y }
           path.current.shift()
@@ -215,9 +242,20 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
           me.current = { x: me.current.x + (dx / dist) * step, y: me.current.y + (dy / dist) * step }
         }
         if (Math.abs(dx) > 1) face = dx > 0 ? 1 : -1
+        else if (Math.abs(dy) > 1 && !LAYOUT.lift) face = 1
       } else if (st.doing?.phase === 'going' && arrived.current !== st.doing.n) {
-        arrived.current = st.doing.n
-        arriveRef.current()
+        if (walkedThisJob.current) {
+          stopStartedAt.current ??= t
+          if (t - stopStartedAt.current < WALK_STOP_MS) motion = 'walk-stop'
+          else {
+            arrived.current = st.doing.n
+            stopStartedAt.current = null
+            arriveRef.current()
+          }
+        } else {
+          arrived.current = st.doing.n
+          arriveRef.current()
+        }
       }
       // The pet tags along on the keeper's floor, keeping a little way off.
       const k = me.current
@@ -237,7 +275,7 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
         const gx = outsideNow ? k.x + 70 + wander : goalX
         pf.x += Math.max(-90 * dt, Math.min(90 * dt, gx - pf.x))
       }
-      setPos((p) => (p.x === k.x && p.y === k.y && p.walking === walking && (face === 0 || p.face === face) ? p : { x: k.x, y: k.y, walking, face: face === 0 ? p.face : face }))
+      setPos((p) => (p.x === k.x && p.y === k.y && p.motion === motion && (face === 0 || p.face === face) ? p : { x: k.x, y: k.y, motion, face: face === 0 ? p.face : face }))
       setPet({ x: pf.x, y: pf.y })
       setNow(t)
       poseRef.current({ x: k.x, y: k.y })
@@ -283,7 +321,7 @@ export function Actors({ s, onArrive, shrugAt, petJump, onPose }: Props) {
       {!hidden && (
         <g transform={`translate(${pos.x} ${asleep ? pos.y - 26 : pos.y})`}>
           <g className={asleep ? 'lying' : undefined}>
-            <Keeper anim={anim} mood={mood} walking={pos.walking} face={pos.face} rear={rearWork} action={d?.id} cleaningTier={tierOf(s, 'broom')} />
+            <Keeper anim={anim} mood={mood} motion={pos.motion} face={pos.face} rear={rearWork} action={d?.id} cleaningTier={tierOf(s, 'broom')} />
           </g>
         </g>
       )}

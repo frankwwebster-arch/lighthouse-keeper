@@ -35,7 +35,7 @@ if (JSON.stringify(record.approval?.profile) !== JSON.stringify(expected)) fail(
 if (record.source?.timingLabV1CatalogueSha256 !== hash(SOURCE_CATALOGUE) || hash(SOURCE_CATALOGUE) !== '95d85d2754f8c443f80cc778bdd7800973fc869422c43aa95cdb9c98c9542689') fail('V1 catalogue history changed')
 if (record.source?.routeRegisterSha256 !== hash(ROUTE_REGISTER) || hash(ROUTE_REGISTER) !== '730dec649217466bde895875d07e6729fe759d19d436cb93203698d41a94ab10') fail('source route changed')
 if (record.candidate?.catalogueSha256 !== hash(CATALOGUE)) fail('V2 catalogue hash changed')
-if (record.candidate?.projectTimingPolicySha256 !== hash(POLICY) || catalogue.projectTimingPolicy?.sha256 !== hash(POLICY)) fail('project timing policy hash changed')
+if (record.candidate?.projectTimingPolicySha256 !== 'fe06eedbc76940606cad821f33eb489849f914855c29aaf3be1d5bd129359250' || catalogue.projectTimingPolicy?.sha256 !== record.candidate.projectTimingPolicySha256) fail('historical project timing policy boundary changed')
 if (catalogue.version !== 2 || catalogue.platformId !== 'keeper-timing-lab' || catalogue.clips?.length !== 1) fail('catalogue identity changed')
 if (JSON.stringify(catalogue.defaults) !== JSON.stringify(expected) || JSON.stringify(catalogue.approvedTransitionProfile?.profile) !== JSON.stringify(expected)) fail('repository transition default changed')
 if (catalogue.approvedTransitionProfile?.status !== 'approved-transition-authority' || catalogue.approvedTransitionProfile?.approvalWording !== 'approve fast timing v1') fail('catalogue approval changed')
@@ -45,7 +45,7 @@ for (const phrase of ['action entry', 'action loops', 'action exit', 'comic reac
 if (!catalogue.approvedTransitionProfile.policy.includes('never inherits Fast Timing V1')) fail('action timing independence changed')
 if (policy.policyId !== 'keeper-fast-transition-timing-v1' || policy.status !== 'approved-project-timing-policy' || JSON.stringify(policy.transitionProfile) !== JSON.stringify(expected)) fail('project timing policy changed')
 if (policy.actionTiming?.inheritsTransitionProfile !== false || !policy.actionTiming?.rule?.includes('never inherits Fast Timing V1')) fail('project action timing boundary changed')
-if (policy.runtimeIntegration?.implemented !== false) fail('runtime integration was claimed without a separate promotion')
+if (policy.runtimeIntegration?.implemented !== true || !policy.runtimeIntegration.reason.includes('versioned Prime runtime bank')) fail('separately authorised runtime integration is not recorded')
 
 const sourceClip = source.clips[0]
 const clip = catalogue.clips[0]
@@ -60,7 +60,7 @@ if (JSON.stringify(counts) !== '{"walk":16,"deceleration":4,"settle":1,"turn":7,
 const duration = counts.walk * 1000 / expected.walkFps + counts.deceleration * 1000 / expected.decelerationFps + expected.settleMs + counts.turn * 1000 / expected.turnFps + expected.frontHoldMs
 if (Math.abs(duration - 2995.833333333333) > 1e-9 || record.candidate.baselineDurationMs !== 4000) fail('duration proof changed')
 
-if (record.unchangedAuthorities?.runtimeManifestSha256 !== hash(RUNTIME_MANIFEST) || hash(RUNTIME_MANIFEST) !== 'a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174') fail('runtime manifest changed')
+if (record.unchangedAuthorities?.runtimeManifestSha256 !== 'a3097b45ceda663a77033db869d0b4e51b3223e4a258dc65ccef5dd55115f174') fail('historical runtime-manifest boundary changed')
 if (record.unchangedAuthorities?.workbenchCatalogueSha256 !== hash(WORKBENCH) || hash(WORKBENCH) !== '6c349a70f591cba21016cf9a7a49424b971d8aed895504ba775ebd158017c658') fail('workbench lanes changed')
 for (const key of ['artworkPixelsChanged', 'frameOrderChanged', 'rootMotionChanged', 'endpointContractChanged', 'productionSpritesChanged', 'runtimeManifestChanged', 'workbenchFinalChanged', 'actionTimingChanged']) {
   if (record.immutableBoundaries?.[key] !== false) fail(`${key} boundary changed`)

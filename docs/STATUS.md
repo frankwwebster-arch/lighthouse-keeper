@@ -169,8 +169,12 @@ walk 10 fps, deceleration 12 fps, zero neutral pause, turn 16 fps and a 625 ms
 endpoint hold. This is the project timing authority only for locomotion,
 stopping bridges and turns. Action entry, loops, exits, reactions and prop
 choreography remain independently paced so enjoyable actions can be savoured.
-No Prime artwork has entered Workbench Final or production, and the runtime
-sprite manifest remains unchanged.
+The approved movement foundation entered a separate versioned Prime runtime
+bank on 22 October. It installs 27 sprites / 217 registered frames. The game
+actively uses Prime side idle, walk start/cycle/stop, stair ascent/descent and
+generic rear work. Turns, ladder, four-way sit/stand and darts are installed
+but await gameplay choreography. The legacy Workbench Final lane remains
+untouched because this promotion has its own hash-pinned register and draft.
 
 The consolidated Prime Keeper animation library is now available at
 `/prime-keeper-animations`. It indexes 14 approved playable authorities across
@@ -181,8 +185,10 @@ Its non-destructive sandbox combines, reorders, reverses and repeats clips,
 persists locally, exports JSON and warns when declared endpoint poses need a
 bridge. The held-implement POC V3 is linked but correctly excluded from the
 playable approved bank because its proxy body artwork is not production-approved.
-This tool does not populate Workbench Final or change runtime/production. See
-`docs/PRIME_KEEPER_ANIMATION_LIBRARY_2026-10-21.md`.
+The library now marks installed clips and shows approved source motion beside
+its runtime delivery. See `docs/PRIME_KEEPER_ANIMATION_LIBRARY_2026-10-21.md`.
+The complete prioritized gap list—covering every one of the 38 current game
+interactions—is `docs/PRIME_KEEPER_ANIMATION_GAPS_2026-10-22.md`.
 
 The approved kitchen full-room authority is
 `/keeper-review/kitchen-continuous-run-approved-v23/`. Frank marked exact Image
@@ -802,9 +808,9 @@ The review-payload housekeeping pass completed on 21 October 2026. The exact
 clean-checkout baseline failed at 53.3148 MiB; the content-addressed sweep now
 archives every review image plus JSON/JSON.GZ at or above 24 KiB, leaving HTML
 and small JSON public. After V13, 4,795 references across 204 set manifests
-resolve to 2,935 immutable objects; `public/` is 45.34 MiB, 4.66 MiB below the
-unchanged 50 MiB guard. Runtime `public/sprites` remains byte-identical at
-36.9977 MiB.
+resolve to 2,935 immutable objects; after the Prime runtime promotion,
+`public/` is 48.45 MiB, 1.55 MiB below the unchanged 50 MiB guard. Runtime
+`public/sprites` is now 40.1033 MiB, including the 27 versioned Prime sheets.
 Use `npm run maintain:keeper-review` after any review builder; it archives,
 verifies object and manifest hashes, checks historical URL resolution and then
 checks the deployment payload. Repository size, `review-archive/` and

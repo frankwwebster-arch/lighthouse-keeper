@@ -1,0 +1,146 @@
+{
+  "schema": "lighthouse-keeper/prime-runtime-sprite@1",
+  "name": "keeper_prime_rear_work",
+  "w": 32,
+  "h": 40,
+  "density": 4,
+  "frames": 24,
+  "fps": 4,
+  "anchor": [
+    16,
+    40
+  ],
+  "startPose": "standing-back",
+  "endPose": "standing-back",
+  "assetRole": "clip",
+  "outfit": "standard",
+  "loop": true,
+  "mirrorSafe": false,
+  "facing": "back",
+  "productionPromotionApprovedOn": "2026-10-22",
+  "derivation": "deterministic 2x premultiplied-alpha box reduction from exact approved 256x320 review frames; frame order is unchanged except for declared reversible clips",
+  "approvedClipId": "rear-action-v1",
+  "sourceFrames": [
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f1-31dbac4efc00089f.png",
+      "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f2-a829593415b82625.png",
+      "sha256": "a829593415b8262502cda85267aea01c2763eb6b36e003039542267a8b12c529",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f3-278573c9601a1ba3.png",
+      "sha256": "278573c9601a1ba3b7f3d90629a551585ac908a44bdd472b375ebe4b0724bcf2",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f4-e54f4d6f669d2c9e.png",
+      "sha256": "e54f4d6f669d2c9e0fd4e36cc57bb7502f0b25b5ac6cc3edea6b7682d52dd00a",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f5-b42cb772f708ad85.png",
+      "sha256": "b42cb772f708ad857b76253450dbcf72f93af96edbc92b2c5bd272caeef8026b",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f6-acf9f752ad129293.png",
+      "sha256": "acf9f752ad1292937312c4dab5f3abeb82e2b459ed0656ded2cc857165ae6bfc",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f7-21cc593701ed485e.png",
+      "sha256": "21cc593701ed485ede395ce978478714ef7f9205d4a5b46bec605bd251bc75ac",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f8-4b285d73a4d9a180.png",
+      "sha256": "4b285d73a4d9a180d2c679aa52007d25f98504fe515528fed35dba3a0bf162d4",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f9-8ada2fa0b22eabb1.png",
+      "sha256": "8ada2fa0b22eabb1631e04e34e963ffca2a1b67fb5c8aaef1c0aa241f353ab68",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f10-36d72ad880781935.png",
+      "sha256": "36d72ad8807819354e6a8844c236460b5648c228c9756e74d46ebd0aa9a7df83",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f11-3663dc10ab588428.png",
+      "sha256": "3663dc10ab588428977532bfe86a6d2946eca61def161d500d15a910cfcd5788",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f12-01e33037f4564abb.png",
+      "sha256": "01e33037f4564abbbeedaf4bef260503f6ef572bfe1220d3fdb381c963e4a9e5",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f13-3a624f695960be2a.png",
+      "sha256": "3a624f695960be2a74f2bc10869a98b7ccc731de1e927dcc4dd258f980499b03",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f14-60bf939c0d9a0c8e.png",
+      "sha256": "60bf939c0d9a0c8eb5be5680248170136406e62a1cea981427a8ffb03fdda38b",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f15-b1c199001d4eb6c0.png",
+      "sha256": "b1c199001d4eb6c00c104f963cbefdc07b5efc08f0532666e3c36f9327b2f268",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f16-3b0a4be452b355b6.png",
+      "sha256": "3b0a4be452b355b6489e4d778945f0d79f315c3aaf3d9dbe96d7b6474c77536d",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f17-528da5df6d009fcb.png",
+      "sha256": "528da5df6d009fcb76c8a8340ffe0e1152cae9bf615ab43ad1c860b63330d66c",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f18-4d1bbf5f883a74bb.png",
+      "sha256": "4d1bbf5f883a74bb9d581f05e71b9cf9e862d510b9d360d9345d031ca7eebefe",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f19-3cb8650e3cfdd7fd.png",
+      "sha256": "3cb8650e3cfdd7fdef4a96ad4a99903a2fb58585cc02feb25bd67014a2eaf946",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f20-47665f1a5663e293.png",
+      "sha256": "47665f1a5663e293cfee4c24ef8c6f0d0af22aeb6c9db066c67303c637b14d28",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f21-e8a97566e58cd055.png",
+      "sha256": "e8a97566e58cd055fbf66da844dc89496c04c84a9f6a1bc4b991f32c22c08760",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f22-efd7ca6da147fc86.png",
+      "sha256": "efd7ca6da147fc8613c08443d1adb4d282c322d44f5b2f58a4610cfa447e2e2d",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f1-31dbac4efc00089f.png",
+      "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-back-work-activity-callout-v1/assets/work-back-f1-31dbac4efc00089f.png",
+      "sha256": "31dbac4efc00089fe6f831dc23f8397b4e3a8faf4d4aaa09a92b2ff407eebc35",
+      "flipX": false
+    }
+  ],
+  "sha256": "eaf1fd3bc47daaebfc8f3ff060f0fa2316f9a27dd107151e72dd6ab0086166b6"
+}

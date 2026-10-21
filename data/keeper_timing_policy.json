@@ -32,7 +32,7 @@
     "intent": "Action animations should be entertaining to watch and may use slower cadence, anticipation, repetition and comic holds."
   },
   "runtimeIntegration": {
-    "implemented": false,
-    "reason": "Keeper Prime authorities remain outside Workbench Final and production; consume this policy when the approved core routes are integrated."
+    "implemented": true,
+    "reason": "The versioned Prime runtime bank applies walk 10 fps, deceleration 12 fps and approved per-route stair cadence. Turns are installed at 16 fps and await the gameplay turn controller."
   }
 }

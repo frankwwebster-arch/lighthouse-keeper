@@ -1,0 +1,56 @@
+{
+  "schema": "lighthouse-keeper/prime-runtime-sprite@1",
+  "name": "keeper_prime_stand_side-left",
+  "w": 32,
+  "h": 40,
+  "density": 4,
+  "frames": 6,
+  "fps": 8,
+  "anchor": [
+    16,
+    40
+  ],
+  "startPose": "sitting-side-left",
+  "endPose": "standing-side-left",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "left",
+  "productionPromotionApprovedOn": "2026-10-22",
+  "derivation": "deterministic 2x premultiplied-alpha box reduction from exact approved 256x320 review frames; frame order is unchanged except for declared reversible clips",
+  "approvedClipId": "sit-side-left-v1",
+  "sourceFrames": [
+    {
+      "url": "/keeper-review/keeper-prime-sit-stand-side-left-v1/assets/sit-left-f06-d0c394162ff6e071.png",
+      "sha256": "d0c394162ff6e0712cec46a45a0f7931babfa3705fdb782f40c803e7f28f7775",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-sit-stand-side-left-v1/assets/sit-left-f05-00d2f83e9b00e45d.png",
+      "sha256": "00d2f83e9b00e45d22e25a899220fd54a1793d5d8cfead1ba68951ae5cff26c9",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-sit-stand-side-left-v1/assets/sit-left-f04-5c37c880789d2753.png",
+      "sha256": "5c37c880789d27530dcf2cae857488ed2e3ae26084d0d7244b572e8135f779c9",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-sit-stand-side-left-v1/assets/sit-left-f03-e56adac3ee14e226.png",
+      "sha256": "e56adac3ee14e226239a690eda74be8ecb292d4ceb5d61475fe8236dab83733f",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-sit-stand-side-left-v1/assets/sit-left-f02-3f4727b7bb891a82.png",
+      "sha256": "3f4727b7bb891a82010d792177accbc0383b179a6778ea0667de5d9859ea6776",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-sit-stand-side-left-v1/assets/sit-left-f01-16db6b4e05c4500e.png",
+      "sha256": "16db6b4e05c4500ebc789fe8e348b76ca20182682d18006d09cc38b33993e3bc",
+      "flipX": false
+    }
+  ],
+  "sha256": "3460679971ac64d175be149a5dfce622de6f7d005c1b245670594ee57acefb45"
+}

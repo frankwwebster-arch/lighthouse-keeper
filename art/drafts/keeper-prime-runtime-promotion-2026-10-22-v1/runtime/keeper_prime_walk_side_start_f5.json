@@ -1,0 +1,51 @@
+{
+  "schema": "lighthouse-keeper/prime-runtime-sprite@1",
+  "name": "keeper_prime_walk_side_start",
+  "w": 32,
+  "h": 40,
+  "density": 4,
+  "frames": 5,
+  "fps": 10,
+  "anchor": [
+    16,
+    40
+  ],
+  "startPose": "standing-side-right",
+  "endPose": "walking-side-right",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "right",
+  "productionPromotionApprovedOn": "2026-10-22",
+  "derivation": "deterministic 2x premultiplied-alpha box reduction from exact approved 256x320 review frames; frame order is unchanged except for declared reversible clips",
+  "approvedClipId": "stop-walk-stop-v2",
+  "sourceFrames": [
+    {
+      "url": "/keeper-review/keeper-prime-stop-walk-stop-v2/assets/transition-frame1-a172a8a01a387a21.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stop-walk-stop-v2/assets/transition-frame2-e54546ba14b4e5f7.png",
+      "sha256": "e54546ba14b4e5f7f042677f7c5babc83df99943d1bc0a8f482f7188d0c96930",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stop-walk-stop-v2/assets/transition-frame3-0169b3642905389d.png",
+      "sha256": "0169b3642905389dfe1846b054ce463653708d971aef7a588f834dcbf8c9714c",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stop-walk-stop-v2/assets/transition-frame4-9f4192beb8fecbc8.png",
+      "sha256": "9f4192beb8fecbc80de4530725a9431a4df8ad9adc3b86df66ad7159728c2b29",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-stop-walk-stop-v2/assets/transition-frame5-0e80ea65610452c9.png",
+      "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "flipX": false
+    }
+  ],
+  "sha256": "260508422aa9e21c914a013f6bc56ecc5290420a85812f712438d6bf278c42b2"
+}

@@ -7348,6 +7348,1253 @@
         }
       ]
     },
+    "keeper_prime_darts_throw": {
+      "frameCount": 14,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 2,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 3,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 4,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 5,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 6,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 7,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 8,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 9,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 10,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 11,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 12,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 13,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 14,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        }
+      ]
+    },
+    "keeper_prime_ladder_climb": {
+      "frameCount": 18,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 2,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 3,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 4,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 5,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 6,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 7,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 8,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 9,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 10,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 11,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 12,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 13,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 14,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 15,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 16,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 17,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 18,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        }
+      ]
+    },
+    "keeper_prime_neutral_sitting-back": {
+      "frameCount": 1,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        }
+      ]
+    },
+    "keeper_prime_neutral_sitting-front": {
+      "frameCount": 1,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "front-facing",
+          "reason": "manifest facing=front"
+        }
+      ]
+    },
+    "keeper_prime_neutral_sitting-side-left": {
+      "frameCount": 1,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "side-on",
+          "reason": "manifest facing=left"
+        }
+      ]
+    },
+    "keeper_prime_neutral_sitting-side-right": {
+      "frameCount": 1,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        }
+      ]
+    },
+    "keeper_prime_neutral_standing-back": {
+      "frameCount": 1,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        }
+      ]
+    },
+    "keeper_prime_neutral_standing-front": {
+      "frameCount": 1,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "front-facing",
+          "reason": "manifest facing=front"
+        }
+      ]
+    },
+    "keeper_prime_neutral_standing-side-right": {
+      "frameCount": 1,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        }
+      ]
+    },
+    "keeper_prime_rear_work": {
+      "frameCount": 24,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 2,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 3,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 4,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 5,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 6,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 7,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 8,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 9,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 10,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 11,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 12,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 13,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 14,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 15,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 16,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 17,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 18,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 19,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 20,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 21,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 22,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 23,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 24,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        }
+      ]
+    },
+    "keeper_prime_sit_back": {
+      "frameCount": 6,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 2,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 3,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 4,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 5,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 6,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        }
+      ]
+    },
+    "keeper_prime_sit_front": {
+      "frameCount": 6,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "front-facing",
+          "reason": "manifest facing=front"
+        },
+        {
+          "frame": 2,
+          "classification": "front-facing",
+          "reason": "manifest facing=front"
+        },
+        {
+          "frame": 3,
+          "classification": "front-facing",
+          "reason": "manifest facing=front"
+        },
+        {
+          "frame": 4,
+          "classification": "front-facing",
+          "reason": "manifest facing=front"
+        },
+        {
+          "frame": 5,
+          "classification": "front-facing",
+          "reason": "manifest facing=front"
+        },
+        {
+          "frame": 6,
+          "classification": "front-facing",
+          "reason": "manifest facing=front"
+        }
+      ]
+    },
+    "keeper_prime_sit_side-left": {
+      "frameCount": 6,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "side-on",
+          "reason": "manifest facing=left"
+        },
+        {
+          "frame": 2,
+          "classification": "side-on",
+          "reason": "manifest facing=left"
+        },
+        {
+          "frame": 3,
+          "classification": "side-on",
+          "reason": "manifest facing=left"
+        },
+        {
+          "frame": 4,
+          "classification": "side-on",
+          "reason": "manifest facing=left"
+        },
+        {
+          "frame": 5,
+          "classification": "side-on",
+          "reason": "manifest facing=left"
+        },
+        {
+          "frame": 6,
+          "classification": "side-on",
+          "reason": "manifest facing=left"
+        }
+      ]
+    },
+    "keeper_prime_sit_side-right": {
+      "frameCount": 6,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 2,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 3,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 4,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 5,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 6,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        }
+      ]
+    },
+    "keeper_prime_stairs_down": {
+      "frameCount": 27,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 2,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 3,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 4,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 5,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 6,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 7,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 8,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 9,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 10,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 11,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 12,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 13,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 14,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 15,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 16,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 17,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 18,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 19,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 20,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 21,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 22,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 23,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 24,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 25,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 26,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 27,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        }
+      ]
+    },
+    "keeper_prime_stairs_up": {
+      "frameCount": 27,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 2,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 3,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 4,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 5,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 6,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 7,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 8,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 9,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 10,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 11,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 12,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 13,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 14,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 15,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 16,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 17,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 18,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 19,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 20,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 21,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 22,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 23,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 24,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 25,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 26,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        },
+        {
+          "frame": 27,
+          "classification": "indeterminate",
+          "reason": "metadata does not establish the face angle"
+        }
+      ]
+    },
+    "keeper_prime_stand_back": {
+      "frameCount": 6,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 2,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 3,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 4,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 5,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        },
+        {
+          "frame": 6,
+          "classification": "rear-facing",
+          "reason": "manifest facing=back"
+        }
+      ]
+    },
+    "keeper_prime_stand_front": {
+      "frameCount": 6,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "front-facing",
+          "reason": "manifest facing=front"
+        },
+        {
+          "frame": 2,
+          "classification": "front-facing",
+          "reason": "manifest facing=front"
+        },
+        {
+          "frame": 3,
+          "classification": "front-facing",
+          "reason": "manifest facing=front"
+        },
+        {
+          "frame": 4,
+          "classification": "front-facing",
+          "reason": "manifest facing=front"
+        },
+        {
+          "frame": 5,
+          "classification": "front-facing",
+          "reason": "manifest facing=front"
+        },
+        {
+          "frame": 6,
+          "classification": "front-facing",
+          "reason": "manifest facing=front"
+        }
+      ]
+    },
+    "keeper_prime_stand_side-left": {
+      "frameCount": 6,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "side-on",
+          "reason": "manifest facing=left"
+        },
+        {
+          "frame": 2,
+          "classification": "side-on",
+          "reason": "manifest facing=left"
+        },
+        {
+          "frame": 3,
+          "classification": "side-on",
+          "reason": "manifest facing=left"
+        },
+        {
+          "frame": 4,
+          "classification": "side-on",
+          "reason": "manifest facing=left"
+        },
+        {
+          "frame": 5,
+          "classification": "side-on",
+          "reason": "manifest facing=left"
+        },
+        {
+          "frame": 6,
+          "classification": "side-on",
+          "reason": "manifest facing=left"
+        }
+      ]
+    },
+    "keeper_prime_stand_side-right": {
+      "frameCount": 6,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 2,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 3,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 4,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 5,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 6,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        }
+      ]
+    },
+    "keeper_prime_turn_back_to_side-right": {
+      "frameCount": 9,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "rear-facing",
+          "reason": "manifest rear endpoint at frame 1"
+        },
+        {
+          "frame": 2,
+          "classification": "indeterminate",
+          "reason": "turn between rear and side"
+        },
+        {
+          "frame": 3,
+          "classification": "indeterminate",
+          "reason": "turn between rear and side"
+        },
+        {
+          "frame": 4,
+          "classification": "indeterminate",
+          "reason": "turn between rear and side"
+        },
+        {
+          "frame": 5,
+          "classification": "indeterminate",
+          "reason": "turn between rear and side"
+        },
+        {
+          "frame": 6,
+          "classification": "indeterminate",
+          "reason": "turn between rear and side"
+        },
+        {
+          "frame": 7,
+          "classification": "indeterminate",
+          "reason": "turn between rear and side"
+        },
+        {
+          "frame": 8,
+          "classification": "indeterminate",
+          "reason": "turn between rear and side"
+        },
+        {
+          "frame": 9,
+          "classification": "side-on",
+          "reason": "manifest side endpoint at final frame"
+        }
+      ]
+    },
+    "keeper_prime_turn_front_to_side-right": {
+      "frameCount": 8,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "front-facing",
+          "reason": "manifest front endpoint(s)"
+        },
+        {
+          "frame": 2,
+          "classification": "front-facing",
+          "reason": "manifest front endpoint(s)"
+        },
+        {
+          "frame": 3,
+          "classification": "front-facing",
+          "reason": "manifest front endpoint(s)"
+        },
+        {
+          "frame": 4,
+          "classification": "front-facing",
+          "reason": "manifest front endpoint(s)"
+        },
+        {
+          "frame": 5,
+          "classification": "front-facing",
+          "reason": "manifest front endpoint(s)"
+        },
+        {
+          "frame": 6,
+          "classification": "front-facing",
+          "reason": "manifest front endpoint(s)"
+        },
+        {
+          "frame": 7,
+          "classification": "front-facing",
+          "reason": "manifest front endpoint(s)"
+        },
+        {
+          "frame": 8,
+          "classification": "front-facing",
+          "reason": "manifest front endpoint(s)"
+        }
+      ]
+    },
+    "keeper_prime_turn_side-right_to_back": {
+      "frameCount": 9,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "side-on",
+          "reason": "manifest side endpoint at frame 1"
+        },
+        {
+          "frame": 2,
+          "classification": "indeterminate",
+          "reason": "turn between side and rear"
+        },
+        {
+          "frame": 3,
+          "classification": "indeterminate",
+          "reason": "turn between side and rear"
+        },
+        {
+          "frame": 4,
+          "classification": "indeterminate",
+          "reason": "turn between side and rear"
+        },
+        {
+          "frame": 5,
+          "classification": "indeterminate",
+          "reason": "turn between side and rear"
+        },
+        {
+          "frame": 6,
+          "classification": "indeterminate",
+          "reason": "turn between side and rear"
+        },
+        {
+          "frame": 7,
+          "classification": "indeterminate",
+          "reason": "turn between side and rear"
+        },
+        {
+          "frame": 8,
+          "classification": "indeterminate",
+          "reason": "turn between side and rear"
+        },
+        {
+          "frame": 9,
+          "classification": "rear-facing",
+          "reason": "manifest rear endpoint at final frame"
+        }
+      ]
+    },
+    "keeper_prime_turn_side-right_to_front": {
+      "frameCount": 8,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "side-on",
+          "reason": "manifest side endpoint at frame 1"
+        },
+        {
+          "frame": 2,
+          "classification": "indeterminate",
+          "reason": "turn between side and front"
+        },
+        {
+          "frame": 3,
+          "classification": "indeterminate",
+          "reason": "turn between side and front"
+        },
+        {
+          "frame": 4,
+          "classification": "indeterminate",
+          "reason": "turn between side and front"
+        },
+        {
+          "frame": 5,
+          "classification": "indeterminate",
+          "reason": "turn between side and front"
+        },
+        {
+          "frame": 6,
+          "classification": "indeterminate",
+          "reason": "turn between side and front"
+        },
+        {
+          "frame": 7,
+          "classification": "indeterminate",
+          "reason": "turn between side and front"
+        },
+        {
+          "frame": 8,
+          "classification": "front-facing",
+          "reason": "manifest front endpoint at final frame"
+        }
+      ]
+    },
+    "keeper_prime_walk_side_cycle": {
+      "frameCount": 8,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 2,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 3,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 4,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 5,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 6,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 7,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 8,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        }
+      ]
+    },
+    "keeper_prime_walk_side_start": {
+      "frameCount": 5,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 2,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 3,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 4,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 5,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        }
+      ]
+    },
+    "keeper_prime_walk_side_stop": {
+      "frameCount": 5,
+      "actor": "keeper",
+      "frames": [
+        {
+          "frame": 1,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 2,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 3,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 4,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        },
+        {
+          "frame": 5,
+          "classification": "side-on",
+          "reason": "manifest facing=right"
+        }
+      ]
+    },
     "keeper_privacy-foam_neutral_sitting-front": {
       "frameCount": 1,
       "actor": "keeper",

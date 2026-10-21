@@ -1,0 +1,66 @@
+{
+  "schema": "lighthouse-keeper/prime-runtime-sprite@1",
+  "name": "keeper_prime_walk_side_cycle",
+  "w": 32,
+  "h": 40,
+  "density": 4,
+  "frames": 8,
+  "fps": 10,
+  "anchor": [
+    16,
+    40
+  ],
+  "startPose": "walking-side-right",
+  "endPose": "walking-side-right",
+  "assetRole": "clip",
+  "outfit": "standard",
+  "loop": true,
+  "mirrorSafe": true,
+  "facing": "right",
+  "productionPromotionApprovedOn": "2026-10-22",
+  "derivation": "deterministic 2x premultiplied-alpha box reduction from exact approved 256x320 review frames; frame order is unchanged except for declared reversible clips",
+  "approvedClipId": "walk-v7",
+  "sourceFrames": [
+    {
+      "url": "/keeper-review/keeper-prime-walk-v7/assets/frame1-0e80ea65610452c9.png",
+      "sha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-walk-v7/assets/frame2-2b8e91de747b527d.png",
+      "sha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-walk-v7/assets/frame3-b376254e9c29da38.png",
+      "sha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-walk-v7/assets/frame4-982646b0b0e6f3f9.png",
+      "sha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-walk-v7/assets/frame5-545e7338151e6e5a.png",
+      "sha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-walk-v7/assets/frame6-17d007eee75c2e86.png",
+      "sha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-walk-v7/assets/frame7-dbf5b3849624cec7.png",
+      "sha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-walk-v7/assets/frame8-cf8c53e7ffa703a5.png",
+      "sha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "flipX": false
+    }
+  ],
+  "sha256": "f0ab5d87d1e02960d54f8e85e775d260cb30589b48c2bc25542e617ee48b07a3"
+}

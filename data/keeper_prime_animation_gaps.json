@@ -1,0 +1,180 @@
+{
+  "schema": "lighthouse-keeper/prime-animation-gaps@1",
+  "generatedOn": "2026-10-22",
+  "scope": "Prime Keeper coverage for the current playable game. Historical variants, costumes and speculative activities are listed separately from the launch-facing interaction set.",
+  "installedNow": {
+    "runtimeSprites": 27,
+    "registeredFrames": 217,
+    "activeBindings": [
+      "side-right idle",
+      "walk start",
+      "walk cycle",
+      "walk stop",
+      "stair ascent",
+      "stair descent",
+      "generic rear work"
+    ],
+    "installedAwaitingGameplayChoreography": [
+      "front ↔ side turn",
+      "side ↔ back turn",
+      "ladder climb",
+      "four-direction sit and stand",
+      "four seated neutrals",
+      "darts throw"
+    ]
+  },
+  "priorities": [
+    {
+      "priority": "P0",
+      "title": "Finish consuming already-installed motion",
+      "kind": "runtime-choreography",
+      "why": "No new drawing is required. These approved sprites need state-machine routes, object anchors and endpoint tests before the game can use them.",
+      "required": [
+        "turn controller using the installed front/side/back transitions",
+        "sit → activity → stand controller for all four seat directions",
+        "ladder routing when a ladder layout is active",
+        "darts activity route and board/dart ownership"
+      ],
+      "interactionIds": []
+    },
+    {
+      "priority": "P0",
+      "title": "Missing circulation connectors",
+      "kind": "new-prime-art-and-runtime",
+      "why": "These are visible seams in ordinary movement and should be settled before expanding the activity catalogue.",
+      "required": [
+        "lift enter, ride-neutral and exit",
+        "front-door approach, open/hidden handoff, enter and leave",
+        "visitor greeting at the door"
+      ],
+      "interactionIds": ["door_greet"]
+    },
+    {
+      "priority": "P1",
+      "title": "Food and kitchen",
+      "kind": "new-prime-actions",
+      "why": "Eating is a core need and the generic rear-work loop is only a temporary body fallback, not complete prop choreography.",
+      "required": [
+        "open fridge, take snack and eat",
+        "cook at cooker with owned utensils/food",
+        "make toast and collect it",
+        "carry/serve/eat endpoints that return to a known standing or seated pose"
+      ],
+      "interactionIds": ["fridge_snack", "cooker_cook", "cooker_toast"]
+    },
+    {
+      "priority": "P1",
+      "title": "Rest and indoor leisure",
+      "kind": "new-prime-actions-plus-installed-seating",
+      "why": "The sit/stand foundation is installed, but each activity still needs its own approved performance and furniture registration.",
+      "required": [
+        "watch TV",
+        "armchair snooze",
+        "read a book",
+        "play piano",
+        "get into bed, sleep/nap loop and get out"
+      ],
+      "interactionIds": ["tv_watch", "tv_nature", "tv_nap", "read_book", "play_piano", "bed_sleep", "bed_nap"]
+    },
+    {
+      "priority": "P1",
+      "title": "Bathroom and hygiene",
+      "kind": "new-prime-actions",
+      "why": "These are ungated daily needs and need complete, discreet object-specific routes rather than one generic rear-work loop.",
+      "required": [
+        "wash at basin",
+        "brush teeth",
+        "enter/exit private loo state",
+        "loo seated/hidden performance for both current commands"
+      ],
+      "interactionIds": ["wash_basin", "brush_teeth", "loo_wee", "loo_poo"]
+    },
+    {
+      "priority": "P1",
+      "title": "Household work and lamp room",
+      "kind": "new-prime-actions",
+      "why": "These actions use different hand positions, tools and viewpoints; the held-implement proxy cannot be reused as approved body art.",
+      "required": [
+        "write in diary",
+        "sweep, basic hoover and upgraded hoover with production-approved held-tool bodies",
+        "light the lamp",
+        "polish the lamp",
+        "look through telescope"
+      ],
+      "interactionIds": ["desk_diary", "desk_tidy", "lamp_light", "lamp_polish", "scope_look"]
+    },
+    {
+      "priority": "P1",
+      "title": "Phone, visitors and shared activities",
+      "kind": "new-prime-actions",
+      "why": "These make the lighthouse feel inhabited and need two-character spacing or handheld-object continuity.",
+      "required": [
+        "phone call, answer and pizza order",
+        "visitor chat",
+        "play cards",
+        "watch TV together"
+      ],
+      "interactionIds": ["phone_call", "phone_pizza", "phone_answer", "with_chat", "with_cards", "with_tv"]
+    },
+    {
+      "priority": "P2",
+      "title": "Outside and pet life",
+      "kind": "new-prime-actions",
+      "why": "Important variety after the indoor daily-life loop is coherent; each needs environment or second-character coordination.",
+      "required": [
+        "fish from jetty",
+        "water/weed garden and pick produce",
+        "shop entry/exit",
+        "feed and play with pet"
+      ],
+      "interactionIds": ["jetty_fish", "garden_tend", "garden_pick", "shop_buy", "pet_feed", "pet_play"]
+    },
+    {
+      "priority": "P2",
+      "title": "Mission-unlocked rooms",
+      "kind": "new-prime-actions",
+      "why": "These can follow the core house because players do not see them until their rooms unlock.",
+      "required": [
+        "watch/feed aquarium fish",
+        "check weather instruments",
+        "use radio",
+        "use secret computer",
+        "tinker with gadgets"
+      ],
+      "interactionIds": ["tank_watch", "tank_feed", "weather_check", "radio_chat", "lair_console", "lair_gadgets"]
+    },
+    {
+      "priority": "P2",
+      "title": "Expressive reaction set",
+      "kind": "new-prime-reactions",
+      "why": "Forty-four typed reactions currently collapse onto eleven generic legacy motion families.",
+      "required": [
+        "wave",
+        "bow",
+        "dance",
+        "sway",
+        "shake",
+        "wobble",
+        "jump",
+        "think",
+        "flop",
+        "spin",
+        "shrug"
+      ],
+      "interactionIds": []
+    },
+    {
+      "priority": "P3",
+      "title": "Costumes, upgrades and optional catalogue",
+      "kind": "later-expansion",
+      "why": "Do this only after the standard-uniform Prime routes are complete; otherwise every missing transition multiplies across outfits.",
+      "required": [
+        "bathrobe and pyjamas routes",
+        "sou'wester, party, swimming and scuba locomotion",
+        "instrument, sport and seasonal activities",
+        "mood idles and long-tail historical production-bank variants"
+      ],
+      "interactionIds": []
+    }
+  ]
+}

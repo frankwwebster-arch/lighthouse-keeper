@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react'
 import styles from './primeKeeperAnimations.module.css'
-import type { AnimationCatalogue, AnimationClip, AnimationFrame, PlayerCommand } from './types'
+import type { AnimationCatalogue, AnimationClip, AnimationFrame, AnimationGapInventory, PlayerCommand } from './types'
 
 const SANDBOX_KEY = 'prime-keeper-animation-sandbox:v1'
 
@@ -100,15 +100,66 @@ function Player({ frames, loop, ready, command, title, large = false }: {
   </>
 }
 
+function RuntimePlayer({ clip, ready, command }: { clip: AnimationClip; ready: boolean; command: PlayerCommand }) {
+  const runtimeFrames = useMemo(() => clip.runtimeAssets.flatMap((asset) => Array.from({ length: asset.frames }, (_, index) => ({
+    asset,
+    index,
+    durationMs: asset.fps > 0 ? 1000 / asset.fps : 625,
+  }))), [clip.runtimeAssets])
+  const [index, setIndex] = useState(0)
+  const [playing, setPlaying] = useState(false)
+  const commandNonce = useRef(-1)
+
+  useEffect(() => { setIndex(0); setPlaying(false) }, [clip.id])
+  useEffect(() => {
+    if (command.nonce === commandNonce.current) return
+    commandNonce.current = command.nonce
+    if (command.type === 'play') setPlaying(true)
+    if (command.type === 'pause') setPlaying(false)
+    if (command.type === 'restart') { setPlaying(false); setIndex(0) }
+    if (command.type === 'previous') { setPlaying(false); setIndex((value) => Math.max(0, value - 1)) }
+    if (command.type === 'next') { setPlaying(false); setIndex((value) => Math.min(runtimeFrames.length - 1, value + 1)) }
+  }, [command, runtimeFrames.length])
+  useEffect(() => {
+    if (!ready) setPlaying(false)
+  }, [ready])
+  useEffect(() => {
+    if (!playing || !runtimeFrames.length) return
+    const timer = window.setTimeout(() => {
+      if (index < runtimeFrames.length - 1) setIndex(index + 1)
+      else if (clip.loop) setIndex(0)
+      else setPlaying(false)
+    }, runtimeFrames[index]?.durationMs ?? 100)
+    return () => window.clearTimeout(timer)
+  }, [clip.loop, index, playing, runtimeFrames])
+
+  const frame = runtimeFrames[Math.min(index, Math.max(0, runtimeFrames.length - 1))]
+  const seek = (value: number) => { setPlaying(false); setIndex(value) }
+  return <>
+    <div className={`${styles.stage} ${styles.runtimeStage}`}>
+      {frame && <svg viewBox={`0 0 ${frame.asset.w} ${frame.asset.h}`} role="img" aria-label={`${frame.asset.name}, frame ${frame.index + 1}`}>
+        <image href={frame.asset.src} width={frame.asset.w * frame.asset.frames} height={frame.asset.h} transform={`translate(${-frame.index * frame.asset.w} 0)`} />
+      </svg>}
+      {!ready && <span className={styles.stageLock}>Preparing runtime sheets…</span>}
+    </div>
+    <div className={styles.frameReadout}>{frame ? `${frame.asset.name} · frame ${frame.index + 1} / ${frame.asset.frames}` : 'No direct runtime extraction'}</div>
+    <Transport index={index} length={runtimeFrames.length} playing={playing} ready={ready} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onPrevious={() => seek(Math.max(0, index - 1))} onNext={() => seek(Math.min(runtimeFrames.length - 1, index + 1))} onRestart={() => seek(0)} onSeek={seek} compact />
+  </>
+}
+
 function ClipCard({ clip, ready, command, onAdd }: { clip: AnimationClip; ready: boolean; command: PlayerCommand; onAdd: (clip: AnimationClip) => void }) {
   return <article className={styles.clipCard}>
     <div className={styles.clipHeading}>
       <div><span className={styles.category}>{clip.category}</span><h3>{clip.title}</h3><p>{clip.version}</p></div>
-      <span className={styles.approved}>Approved</span>
+      <span className={styles.approved}>{clip.runtimeSprites.length ? 'In runtime' : 'Approved'}</span>
     </div>
-    <Player frames={clip.frames} loop={clip.loop} ready={ready} command={command} title={clip.title} />
+    <div className={clip.runtimeAssets.length ? styles.deliveryComparison : undefined}>
+      <div className={styles.deliveryPane}><strong className={styles.deliveryLabel}>Approved source</strong><Player frames={clip.frames} loop={clip.loop} ready={ready} command={command} title={clip.title} /></div>
+      {!!clip.runtimeAssets.length && <div className={styles.deliveryPane}><strong className={styles.deliveryLabel}>Installed runtime delivery</strong><RuntimePlayer clip={clip} ready={ready} command={command} /></div>}
+    </div>
     <div className={styles.clipMeta}>
       <p>{clip.scope}</p>
+      <p className={styles.runtimeState}>{clip.productionState}</p>
       <dl><div><dt>Frames</dt><dd>{clip.frames.length}</dd></div><div><dt>Pose route</dt><dd>{clip.startPose} → {clip.endPose}</dd></div><div><dt>Decision</dt><dd>{clip.approvedOn}</dd></div></dl>
     </div>
     <div className={styles.clipActions}>
@@ -122,7 +173,7 @@ function makeEntry(clipId: string): SandboxEntry {
   return { key: `${clipId}-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`, clipId, reverse: false, repeats: 1 }
 }
 
-export default function PrimeKeeperAnimationLibrary({ catalogue }: { catalogue: AnimationCatalogue }) {
+export default function PrimeKeeperAnimationLibrary({ catalogue, gaps }: { catalogue: AnimationCatalogue; gaps: AnimationGapInventory }) {
   const [loaded, setLoaded] = useState(0)
   const [loadError, setLoadError] = useState('')
   const [category, setCategory] = useState('All')
@@ -132,7 +183,10 @@ export default function PrimeKeeperAnimationLibrary({ catalogue }: { catalogue: 
   const [storageReady, setStorageReady] = useState(false)
   const sandboxRef = useRef<HTMLElement>(null)
 
-  const allSources = useMemo(() => [...new Set(catalogue.clips.flatMap((clip) => clip.frames.map((frame) => frame.src)))], [catalogue])
+  const allSources = useMemo(() => [...new Set(catalogue.clips.flatMap((clip) => [
+    ...clip.frames.map((frame) => frame.src),
+    ...clip.runtimeAssets.map((asset) => asset.src),
+  ]))], [catalogue])
   const ready = loaded === allSources.length && !loadError
   const clipMap = useMemo(() => new Map(catalogue.clips.map((clip) => [clip.id, clip])), [catalogue])
   const categories = ['All', ...new Set(catalogue.clips.map((clip) => clip.category))]
@@ -222,12 +276,12 @@ export default function PrimeKeeperAnimationLibrary({ catalogue }: { catalogue: 
       <nav><a href="/">Lighthouse Keeper</a><span>/</span><strong>Prime animation library</strong></nav>
       <div className={styles.heroGrid}>
         <div><p className={styles.eyebrow}>Approved motion · one living index</p><h1>The Prime Keeper<br />in motion.</h1><p className={styles.lede}>Every playable animation with an explicit approval record or approved core-motion authority, gathered in one place. Inspect them together, one frame at a time, then assemble your own sequence below.</p></div>
-        <div className={styles.statusCard}><span className={styles.beacon} /><strong>{catalogue.summary.approvedPlayableClips}</strong><p>approved playable clips</p><dl><div><dt>Unique frame images</dt><dd>{catalogue.summary.uniqueFrameImages}</dd></div><div><dt>Runtime promotions</dt><dd>None yet</dd></div><div><dt>Last reconciled</dt><dd>{catalogue.generatedOn}</dd></div></dl></div>
+        <div className={styles.statusCard}><span className={styles.beacon} /><strong>{catalogue.summary.approvedPlayableClips}</strong><p>approved playable clips</p><dl><div><dt>Unique source images</dt><dd>{catalogue.summary.uniqueFrameImages}</dd></div><div><dt>Installed source clips</dt><dd>{catalogue.summary.runtimePromotions}</dd></div><div><dt>Last reconciled</dt><dd>{catalogue.generatedOn}</dd></div></dl></div>
       </div>
     </header>
 
     <section className={styles.progressPanel} aria-live="polite">
-      <div><strong>{loadError ? 'Playback preparation stopped' : ready ? 'All approved frames ready' : `Preparing frame ${loaded} of ${allSources.length}`}</strong><span>{loadError || (ready ? 'Every unique image is decoded; all controls are unlocked.' : 'Controls unlock together, so no animation begins with missing frames.')}</span></div>
+      <div><strong>{loadError ? 'Playback preparation stopped' : ready ? 'All approved and runtime images ready' : `Preparing image ${loaded} of ${allSources.length}`}</strong><span>{loadError || (ready ? 'Every approved frame and runtime sheet is decoded; all controls are unlocked.' : 'Controls unlock together, so no animation begins with missing frames.')}</span></div>
       <div className={styles.progressTrack}><i style={{ width: `${allSources.length ? loaded / allSources.length * 100 : 0}%` }} /></div>
     </section>
 
@@ -239,11 +293,27 @@ export default function PrimeKeeperAnimationLibrary({ catalogue }: { catalogue: 
         <article><strong>Four-way seating</strong><p>Side-right, side-left, front and back sit/stand actions are approved with exact standing and seated endpoints.</p></article>
         <article><strong>Contextual proof</strong><p>Darts and rear-work sequences prove approved motion can survive complete room routes and activity choreography.</p></article>
       </div>
-      <p className={styles.boundary}><strong>The honest boundary:</strong> these are approved review authorities, not a completed runtime bank. No Prime animation has yet been promoted into production, and the held-implement POC remains a feasibility proof because its proxy body art is explicitly non-production.</p>
+      <p className={styles.boundary}><strong>What “in runtime” means:</strong> 27 reusable sprites from 13 approved source clips are now installed. Idle, walk start/cycle/stop, stairs and generic rear work are active in the game; turns, ladder, sitting and darts are installed but still need their matching gameplay choreography. The held-implement POC remains excluded because its proxy body art is explicitly non-production.</p>
+    </section>
+
+    <section className={styles.gapsSection}>
+      <div className={styles.sectionTitle}><div><span>02</span><h2>What animation is still required</h2></div><p>Gameplay coverage, ordered by value. “Wiring” means the approved art is already installed; “new art” means it is genuinely still missing.</p></div>
+      <div className={styles.gapSummary}>
+        <article><strong>{gaps.installedNow.runtimeSprites}</strong><span>runtime sprites installed</span></article>
+        <article><strong>{gaps.installedNow.registeredFrames}</strong><span>registered runtime frames</span></article>
+        <article><strong>{gaps.installedNow.installedAwaitingGameplayChoreography.length}</strong><span>installed families awaiting choreography</span></article>
+      </div>
+      <div className={styles.gapGrid}>{gaps.priorities.map((group) => <article key={`${group.priority}-${group.title}`}>
+        <div className={styles.gapHeading}><span>{group.priority}</span><em>{group.kind.replaceAll('-', ' ')}</em></div>
+        <h3>{group.title}</h3>
+        <p>{group.why}</p>
+        <ul>{group.required.map((item) => <li key={item}>{item}</li>)}</ul>
+        {!!group.interactionIds.length && <small>{group.interactionIds.length} current game interaction{group.interactionIds.length === 1 ? '' : 's'}</small>}
+      </article>)}</div>
     </section>
 
     <section className={styles.librarySection}>
-      <div className={styles.sectionTitle}><div><span>02</span><h2>Approved animation library</h2></div><p>{visibleClips.length} of {catalogue.clips.length} clips shown</p></div>
+      <div className={styles.sectionTitle}><div><span>03</span><h2>Approved animation library</h2></div><p>{visibleClips.length} of {catalogue.clips.length} clips shown</p></div>
       <div className={styles.libraryToolbar}>
         <div className={styles.globalTransport}><span>All players</span><button disabled={!ready} onClick={() => broadcast('play')}>▶ Play</button><button disabled={!ready} onClick={() => broadcast('pause')}>Ⅱ Pause</button><button disabled={!ready} onClick={() => broadcast('previous')}>← Frame</button><button disabled={!ready} onClick={() => broadcast('next')}>Frame →</button><button disabled={!ready} onClick={() => broadcast('restart')}>■ Stop</button></div>
         <input type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Find an animation…" aria-label="Find an animation" />
@@ -253,7 +323,7 @@ export default function PrimeKeeperAnimationLibrary({ catalogue }: { catalogue: 
     </section>
 
     <section className={styles.sandboxSection} ref={sandboxRef}>
-      <div className={styles.sectionTitle}><div><span>03</span><h2>Sequence sandbox</h2></div><p>Combine approved clips without changing their source frames.</p></div>
+      <div className={styles.sectionTitle}><div><span>04</span><h2>Sequence sandbox</h2></div><p>Combine approved clips without changing their source frames.</p></div>
       <div className={styles.sandboxGrid}>
         <div className={styles.sandboxPlayer}>
           <Player frames={sandboxFrames} loop={false} ready={ready} title="Sandbox sequence" large />

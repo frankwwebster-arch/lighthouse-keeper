@@ -75,7 +75,7 @@ const manualScope = new Set([
   'keeper_light-blue-pyjamas_neutral_standing-front',
 ])
 const expectedNames = Object.entries(manifest)
-  .filter(([name, spec]: [string, any]) => name.startsWith('keeper_') && spec.assetRole !== 'component' && (spec.facing === 'front' || spec.facing === 'down' || manualScope.has(name)))
+  .filter(([name, spec]: [string, any]) => name.startsWith('keeper_') && !name.startsWith('keeper_prime_') && spec.assetRole !== 'component' && (spec.facing === 'front' || spec.facing === 'down' || manualScope.has(name)))
   .map(([name]) => name).sort()
 const entries = inventory.entries as Record<string, any>[]
 const actualNames = entries.map(entry => entry.name).sort()

@@ -1,0 +1,31 @@
+{
+  "schema": "lighthouse-keeper/prime-runtime-sprite@1",
+  "name": "keeper_prime_neutral_standing-front",
+  "w": 32,
+  "h": 40,
+  "density": 4,
+  "frames": 1,
+  "fps": 0,
+  "anchor": [
+    16,
+    40
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-front",
+  "assetRole": "neutral",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "front",
+  "productionPromotionApprovedOn": "2026-10-22",
+  "derivation": "deterministic 2x premultiplied-alpha box reduction from exact approved 256x320 review frames; frame order is unchanged except for declared reversible clips",
+  "approvedClipId": "turn-front-side-v1",
+  "sourceFrames": [
+    {
+      "url": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame1-a9a5c37fe7222199.png",
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "flipX": false
+    }
+  ],
+  "sha256": "6895631c3d5c3f714a5a8dcf61eba199387f6b4b677e2c427f8e840fefc4990d"
+}

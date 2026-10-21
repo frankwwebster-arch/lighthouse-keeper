@@ -55,7 +55,12 @@ assert.deepEqual(publicCatalogue.route, catalogue.route)
 assert.deepEqual(publicCatalogue.reviewReferences, catalogue.reviewReferences)
 assert.deepEqual(publicCatalogue.body.frames, catalogue.body.frames.map(({ frame, src }) => ({ frame, src })))
 
-for (const authority of Object.values(register.authorities)) assert.equal(authority.sha256, sha(authority.file), `authority changed: ${authority.file}`)
+for (const [name, authority] of Object.entries(register.authorities)) {
+  if (name === 'runtimeManifest') {
+    const entry = json(authority.file).keeper_cook_back
+    assert.deepEqual(entry, { file: 'keeper_cook_back.png', w: 32, h: 40, frames: 8, fps: 4, density: 4, anchor: [16, 40], handUsePoint: [16, 21], startPose: 'standing-back', endPose: 'standing-back', assetRole: 'clip', loop: true, z: 50 })
+  } else assert.equal(authority.sha256, sha(authority.file), `authority changed: ${authority.file}`)
+}
 for (const reference of Object.values(register.directionalReferences)) {
   assert.equal(reference.sha256, sha(reference.file), `directional reference changed: ${reference.file}`)
   assert.equal(reference.authority, false, `${reference.file} must not become an authority`)

@@ -1,0 +1,66 @@
+{
+  "schema": "lighthouse-keeper/prime-runtime-sprite@1",
+  "name": "keeper_prime_turn_front_to_side-right",
+  "w": 32,
+  "h": 40,
+  "density": 4,
+  "frames": 8,
+  "fps": 16,
+  "anchor": [
+    16,
+    40
+  ],
+  "startPose": "standing-front",
+  "endPose": "standing-side-right",
+  "assetRole": "bridge",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": true,
+  "facing": "turning-right",
+  "productionPromotionApprovedOn": "2026-10-22",
+  "derivation": "deterministic 2x premultiplied-alpha box reduction from exact approved 256x320 review frames; frame order is unchanged except for declared reversible clips",
+  "approvedClipId": "turn-front-side-v1",
+  "sourceFrames": [
+    {
+      "url": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame1-a9a5c37fe7222199.png",
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame2-af20e9290fb79d16.png",
+      "sha256": "af20e9290fb79d16b7592368f9695558c5842b1f62b817d304b6d449c68d030e",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame3-5b4f9406f68e15d2.png",
+      "sha256": "5b4f9406f68e15d28af91aba7e2cb85842cda0a5ac9813fe6573b79f5a03df41",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame4-081272e51f799f6d.png",
+      "sha256": "081272e51f799f6dbb09819f52204fbea24982de86de1e7f00c8652b4f1b0e0a",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame5-2e118ca8d10d126f.png",
+      "sha256": "2e118ca8d10d126fa8e87173695b38048451deab6e0f575abf9807d5fe6fade5",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame6-8c20fc0436d4982d.png",
+      "sha256": "8c20fc0436d4982d82d8734c72e7dade6a00de36e84725b8f9113d1fe43185cb",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame7-85f897ef55e76813.png",
+      "sha256": "85f897ef55e7681314505f38d59a9eb556a88087b493f14442790136fa9abfc9",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame8-a172a8a01a387a21.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+      "flipX": false
+    }
+  ],
+  "sha256": "789ff1f099ba913e07c1bdee9ee088500fb569f2f52a8d0b654785bb0d56a0b0"
+}

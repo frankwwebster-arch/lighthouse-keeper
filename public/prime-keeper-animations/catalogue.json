@@ -1,11 +1,11 @@
 {
   "schema": "lighthouse-keeper/prime-animation-library@1",
-  "generatedOn": "2026-10-21",
+  "generatedOn": "2026-10-22",
   "title": "Prime Keeper approved animation library",
   "summary": {
     "approvedPlayableClips": 14,
     "uniqueFrameImages": 213,
-    "runtimePromotions": 0,
+    "runtimePromotions": 13,
     "experimentalApprovedProofsExcluded": 1
   },
   "excludedProofs": [
@@ -19,7 +19,7 @@
   "clips": [
     {
       "approvedBy": "Frank",
-      "productionState": "Approved review authority · not yet promoted to runtime",
+      "productionState": "1 reusable runtime sprite installed",
       "id": "walk-v7",
       "title": "Walk cycle",
       "version": "Prime Walk V7",
@@ -71,11 +71,25 @@
           "durationMs": 100,
           "label": "opposite up"
         }
+      ],
+      "runtimeAssets": [
+        {
+          "name": "keeper_prime_walk_side_cycle",
+          "src": "/sprites/keeper_prime_walk_side_cycle.png",
+          "w": 32,
+          "h": 40,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        }
+      ],
+      "runtimeSprites": [
+        "keeper_prime_walk_side_cycle"
       ]
     },
     {
       "approvedBy": "Frank",
-      "productionState": "Approved review authority · not yet promoted to runtime",
+      "productionState": "3 reusable runtime sprites installed",
       "id": "stop-walk-stop-v2",
       "title": "Stop → walk → stop",
       "version": "Prime Stop–Walk–Stop V2",
@@ -311,11 +325,45 @@
           "phase": "stopped hold",
           "flipX": false
         }
+      ],
+      "runtimeAssets": [
+        {
+          "name": "keeper_prime_neutral_standing-side-right",
+          "src": "/sprites/keeper_prime_neutral_standing-side-right.png",
+          "w": 32,
+          "h": 40,
+          "frames": 1,
+          "fps": 0,
+          "loop": false
+        },
+        {
+          "name": "keeper_prime_walk_side_start",
+          "src": "/sprites/keeper_prime_walk_side_start.png",
+          "w": 32,
+          "h": 40,
+          "frames": 5,
+          "fps": 10,
+          "loop": false
+        },
+        {
+          "name": "keeper_prime_walk_side_stop",
+          "src": "/sprites/keeper_prime_walk_side_stop.png",
+          "w": 32,
+          "h": 40,
+          "frames": 5,
+          "fps": 12,
+          "loop": false
+        }
+      ],
+      "runtimeSprites": [
+        "keeper_prime_neutral_standing-side-right",
+        "keeper_prime_walk_side_start",
+        "keeper_prime_walk_side_stop"
       ]
     },
     {
       "approvedBy": "Frank",
-      "productionState": "Approved review authority · not yet promoted to runtime",
+      "productionState": "3 reusable runtime sprites installed",
       "id": "turn-front-side-v1",
       "title": "Front ↔ side turn",
       "version": "Prime Turn Front–Side V1",
@@ -328,50 +376,84 @@
       "reviewUrl": "/keeper-review/keeper-prime-turn-front-side-v1/",
       "frames": [
         {
-          "src": "assets/frame1-a9a5c37fe7222199.png",
+          "src": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame1-a9a5c37fe7222199.png",
           "durationMs": 62.5,
           "label": "Frame 1"
         },
         {
-          "src": "assets/frame2-af20e9290fb79d16.png",
+          "src": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame2-af20e9290fb79d16.png",
           "durationMs": 62.5,
           "label": "Frame 2"
         },
         {
-          "src": "assets/frame3-5b4f9406f68e15d2.png",
+          "src": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame3-5b4f9406f68e15d2.png",
           "durationMs": 62.5,
           "label": "Frame 3"
         },
         {
-          "src": "assets/frame4-081272e51f799f6d.png",
+          "src": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame4-081272e51f799f6d.png",
           "durationMs": 62.5,
           "label": "Frame 4"
         },
         {
-          "src": "assets/frame5-2e118ca8d10d126f.png",
+          "src": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame5-2e118ca8d10d126f.png",
           "durationMs": 62.5,
           "label": "Frame 5"
         },
         {
-          "src": "assets/frame6-8c20fc0436d4982d.png",
+          "src": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame6-8c20fc0436d4982d.png",
           "durationMs": 62.5,
           "label": "Frame 6"
         },
         {
-          "src": "assets/frame7-85f897ef55e76813.png",
+          "src": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame7-85f897ef55e76813.png",
           "durationMs": 62.5,
           "label": "Frame 7"
         },
         {
-          "src": "assets/frame8-a172a8a01a387a21.png",
+          "src": "/keeper-review/keeper-prime-turn-front-side-v1/assets/frame8-a172a8a01a387a21.png",
           "durationMs": 62.5,
           "label": "Frame 8"
         }
+      ],
+      "runtimeAssets": [
+        {
+          "name": "keeper_prime_neutral_standing-front",
+          "src": "/sprites/keeper_prime_neutral_standing-front.png",
+          "w": 32,
+          "h": 40,
+          "frames": 1,
+          "fps": 0,
+          "loop": false
+        },
+        {
+          "name": "keeper_prime_turn_front_to_side-right",
+          "src": "/sprites/keeper_prime_turn_front_to_side-right.png",
+          "w": 32,
+          "h": 40,
+          "frames": 8,
+          "fps": 16,
+          "loop": false
+        },
+        {
+          "name": "keeper_prime_turn_side-right_to_front",
+          "src": "/sprites/keeper_prime_turn_side-right_to_front.png",
+          "w": 32,
+          "h": 40,
+          "frames": 8,
+          "fps": 16,
+          "loop": false
+        }
+      ],
+      "runtimeSprites": [
+        "keeper_prime_neutral_standing-front",
+        "keeper_prime_turn_front_to_side-right",
+        "keeper_prime_turn_side-right_to_front"
       ]
     },
     {
       "approvedBy": "Frank",
-      "productionState": "Approved review authority · not yet promoted to runtime",
+      "productionState": "3 reusable runtime sprites installed",
       "id": "turn-side-back-v10",
       "title": "Side ↔ back turn",
       "version": "Prime Turn Side–Back V10",
@@ -428,11 +510,45 @@
           "durationMs": 62.5,
           "label": "Frame 9"
         }
+      ],
+      "runtimeAssets": [
+        {
+          "name": "keeper_prime_neutral_standing-back",
+          "src": "/sprites/keeper_prime_neutral_standing-back.png",
+          "w": 32,
+          "h": 40,
+          "frames": 1,
+          "fps": 0,
+          "loop": false
+        },
+        {
+          "name": "keeper_prime_turn_side-right_to_back",
+          "src": "/sprites/keeper_prime_turn_side-right_to_back.png",
+          "w": 32,
+          "h": 40,
+          "frames": 9,
+          "fps": 16,
+          "loop": false
+        },
+        {
+          "name": "keeper_prime_turn_back_to_side-right",
+          "src": "/sprites/keeper_prime_turn_back_to_side-right.png",
+          "w": 32,
+          "h": 40,
+          "frames": 9,
+          "fps": 16,
+          "loop": false
+        }
+      ],
+      "runtimeSprites": [
+        "keeper_prime_neutral_standing-back",
+        "keeper_prime_turn_side-right_to_back",
+        "keeper_prime_turn_back_to_side-right"
       ]
     },
     {
       "approvedBy": "Frank",
-      "productionState": "Approved review authority · not yet promoted to runtime",
+      "productionState": "1 reusable runtime sprite installed",
       "id": "stair-ascent-v16",
       "title": "Stair ascent",
       "version": "Prime Stair Ascent V16 · V17 approval",
@@ -606,11 +722,25 @@
           "label": "RIGHT contact · forward boot toecap restored",
           "flipX": false
         }
+      ],
+      "runtimeAssets": [
+        {
+          "name": "keeper_prime_stairs_up",
+          "src": "/sprites/keeper_prime_stairs_up.png",
+          "w": 32,
+          "h": 40,
+          "frames": 27,
+          "fps": 9.090909090909092,
+          "loop": false
+        }
+      ],
+      "runtimeSprites": [
+        "keeper_prime_stairs_up"
       ]
     },
     {
       "approvedBy": "Frank",
-      "productionState": "Approved review authority · not yet promoted to runtime",
+      "productionState": "1 reusable runtime sprite installed",
       "id": "stair-descent-v2",
       "title": "Stair descent",
       "version": "Prime Stair Descent V2",
@@ -944,11 +1074,25 @@
           "phase": "continue directly toward lower door",
           "flipX": false
         }
+      ],
+      "runtimeAssets": [
+        {
+          "name": "keeper_prime_stairs_down",
+          "src": "/sprites/keeper_prime_stairs_down.png",
+          "w": 32,
+          "h": 40,
+          "frames": 27,
+          "fps": 9.090909090909092,
+          "loop": false
+        }
+      ],
+      "runtimeSprites": [
+        "keeper_prime_stairs_down"
       ]
     },
     {
       "approvedBy": "Frank",
-      "productionState": "Approved review authority · not yet promoted to runtime",
+      "productionState": "Review-only composite; its reusable walk, turn and stair constituents are installed",
       "id": "stair-route-v6",
       "title": "Complete stair route",
       "version": "Prime Stair Transitions V6",
@@ -1877,11 +2021,13 @@
           "phase": "continue behind opaque open door leaf",
           "flipX": false
         }
-      ]
+      ],
+      "runtimeAssets": [],
+      "runtimeSprites": []
     },
     {
       "approvedBy": "Frank",
-      "productionState": "Approved review authority · not yet promoted to runtime",
+      "productionState": "1 reusable runtime sprite installed",
       "id": "ladder-route-v5",
       "title": "Complete ladder route",
       "version": "Prime Ladder Transitions V5",
@@ -2670,11 +2816,25 @@
           "phase": "continue behind opaque open door leaf",
           "flipX": false
         }
+      ],
+      "runtimeAssets": [
+        {
+          "name": "keeper_prime_ladder_climb",
+          "src": "/sprites/keeper_prime_ladder_climb.png",
+          "w": 32,
+          "h": 40,
+          "frames": 18,
+          "fps": 6.666666666666667,
+          "loop": false
+        }
+      ],
+      "runtimeSprites": [
+        "keeper_prime_ladder_climb"
       ]
     },
     {
       "approvedBy": "Frank",
-      "productionState": "Approved review authority · not yet promoted to runtime",
+      "productionState": "3 reusable runtime sprites installed",
       "id": "sit-side-right-v6",
       "title": "Sit / stand · side right",
       "version": "Prime Sit–Stand Side V6",
@@ -2752,11 +2912,45 @@
           "label": "Frame 1",
           "flipX": false
         }
+      ],
+      "runtimeAssets": [
+        {
+          "name": "keeper_prime_sit_side-right",
+          "src": "/sprites/keeper_prime_sit_side-right.png",
+          "w": 32,
+          "h": 40,
+          "frames": 6,
+          "fps": 8,
+          "loop": false
+        },
+        {
+          "name": "keeper_prime_stand_side-right",
+          "src": "/sprites/keeper_prime_stand_side-right.png",
+          "w": 32,
+          "h": 40,
+          "frames": 6,
+          "fps": 8,
+          "loop": false
+        },
+        {
+          "name": "keeper_prime_neutral_sitting-side-right",
+          "src": "/sprites/keeper_prime_neutral_sitting-side-right.png",
+          "w": 32,
+          "h": 40,
+          "frames": 1,
+          "fps": 0,
+          "loop": false
+        }
+      ],
+      "runtimeSprites": [
+        "keeper_prime_sit_side-right",
+        "keeper_prime_stand_side-right",
+        "keeper_prime_neutral_sitting-side-right"
       ]
     },
     {
       "approvedBy": "Frank",
-      "productionState": "Approved review authority · not yet promoted to runtime",
+      "productionState": "3 reusable runtime sprites installed",
       "id": "sit-side-left-v1",
       "title": "Sit / stand · side left",
       "version": "Prime Sit–Stand Side-left V1",
@@ -2834,11 +3028,45 @@
           "label": "Frame 1",
           "flipX": false
         }
+      ],
+      "runtimeAssets": [
+        {
+          "name": "keeper_prime_sit_side-left",
+          "src": "/sprites/keeper_prime_sit_side-left.png",
+          "w": 32,
+          "h": 40,
+          "frames": 6,
+          "fps": 8,
+          "loop": false
+        },
+        {
+          "name": "keeper_prime_stand_side-left",
+          "src": "/sprites/keeper_prime_stand_side-left.png",
+          "w": 32,
+          "h": 40,
+          "frames": 6,
+          "fps": 8,
+          "loop": false
+        },
+        {
+          "name": "keeper_prime_neutral_sitting-side-left",
+          "src": "/sprites/keeper_prime_neutral_sitting-side-left.png",
+          "w": 32,
+          "h": 40,
+          "frames": 1,
+          "fps": 0,
+          "loop": false
+        }
+      ],
+      "runtimeSprites": [
+        "keeper_prime_sit_side-left",
+        "keeper_prime_stand_side-left",
+        "keeper_prime_neutral_sitting-side-left"
       ]
     },
     {
       "approvedBy": "Frank",
-      "productionState": "Approved review authority · not yet promoted to runtime",
+      "productionState": "3 reusable runtime sprites installed",
       "id": "sit-front-v4",
       "title": "Sit / stand · front",
       "version": "Prime Sit–Stand Front V4",
@@ -2916,11 +3144,45 @@
           "label": "Frame 1",
           "flipX": false
         }
+      ],
+      "runtimeAssets": [
+        {
+          "name": "keeper_prime_sit_front",
+          "src": "/sprites/keeper_prime_sit_front.png",
+          "w": 32,
+          "h": 40,
+          "frames": 6,
+          "fps": 8,
+          "loop": false
+        },
+        {
+          "name": "keeper_prime_stand_front",
+          "src": "/sprites/keeper_prime_stand_front.png",
+          "w": 32,
+          "h": 40,
+          "frames": 6,
+          "fps": 8,
+          "loop": false
+        },
+        {
+          "name": "keeper_prime_neutral_sitting-front",
+          "src": "/sprites/keeper_prime_neutral_sitting-front.png",
+          "w": 32,
+          "h": 40,
+          "frames": 1,
+          "fps": 0,
+          "loop": false
+        }
+      ],
+      "runtimeSprites": [
+        "keeper_prime_sit_front",
+        "keeper_prime_stand_front",
+        "keeper_prime_neutral_sitting-front"
       ]
     },
     {
       "approvedBy": "Frank",
-      "productionState": "Approved review authority · not yet promoted to runtime",
+      "productionState": "3 reusable runtime sprites installed",
       "id": "sit-back-v2",
       "title": "Sit / stand · back",
       "version": "Prime Sit–Stand Back V2",
@@ -2998,11 +3260,45 @@
           "label": "Frame 1",
           "flipX": false
         }
+      ],
+      "runtimeAssets": [
+        {
+          "name": "keeper_prime_sit_back",
+          "src": "/sprites/keeper_prime_sit_back.png",
+          "w": 32,
+          "h": 40,
+          "frames": 6,
+          "fps": 8,
+          "loop": false
+        },
+        {
+          "name": "keeper_prime_stand_back",
+          "src": "/sprites/keeper_prime_stand_back.png",
+          "w": 32,
+          "h": 40,
+          "frames": 6,
+          "fps": 8,
+          "loop": false
+        },
+        {
+          "name": "keeper_prime_neutral_sitting-back",
+          "src": "/sprites/keeper_prime_neutral_sitting-back.png",
+          "w": 32,
+          "h": 40,
+          "frames": 1,
+          "fps": 0,
+          "loop": false
+        }
+      ],
+      "runtimeSprites": [
+        "keeper_prime_sit_back",
+        "keeper_prime_stand_back",
+        "keeper_prime_neutral_sitting-back"
       ]
     },
     {
       "approvedBy": "Frank",
-      "productionState": "Approved review authority · not yet promoted to runtime",
+      "productionState": "1 reusable runtime sprite installed",
       "id": "darts-context-v8",
       "title": "Play darts",
       "version": "Prime Darts Context V8",
@@ -4281,11 +4577,25 @@
           "phase": "set 2 · dart 3 recovery",
           "flipX": false
         }
+      ],
+      "runtimeAssets": [
+        {
+          "name": "keeper_prime_darts_throw",
+          "src": "/sprites/keeper_prime_darts_throw.png",
+          "w": 56,
+          "h": 40,
+          "frames": 14,
+          "fps": 6.236080178173719,
+          "loop": true
+        }
+      ],
+      "runtimeSprites": [
+        "keeper_prime_darts_throw"
       ]
     },
     {
       "approvedBy": "Frank",
-      "productionState": "Approved review authority · not yet promoted to runtime",
+      "productionState": "1 reusable runtime sprite installed",
       "id": "rear-action-v1",
       "title": "Rear work action",
       "version": "Prime Rear Action Sequence V1",
@@ -4661,6 +4971,20 @@
           "phase": "Prime rear-work action",
           "flipX": false
         }
+      ],
+      "runtimeAssets": [
+        {
+          "name": "keeper_prime_rear_work",
+          "src": "/sprites/keeper_prime_rear_work.png",
+          "w": 32,
+          "h": 40,
+          "frames": 24,
+          "fps": 4,
+          "loop": true
+        }
+      ],
+      "runtimeSprites": [
+        "keeper_prime_rear_work"
       ]
     }
   ]

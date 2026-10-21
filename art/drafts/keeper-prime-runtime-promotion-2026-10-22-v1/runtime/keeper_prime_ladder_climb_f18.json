@@ -1,0 +1,116 @@
+{
+  "schema": "lighthouse-keeper/prime-runtime-sprite@1",
+  "name": "keeper_prime_ladder_climb",
+  "w": 32,
+  "h": 40,
+  "density": 4,
+  "frames": 18,
+  "fps": 6.666666666666667,
+  "anchor": [
+    16,
+    40
+  ],
+  "startPose": "climbing-back-lower",
+  "endPose": "climbing-back-upper",
+  "assetRole": "clip",
+  "outfit": "standard",
+  "loop": false,
+  "mirrorSafe": false,
+  "facing": "back",
+  "productionPromotionApprovedOn": "2026-10-22",
+  "derivation": "deterministic 2x premultiplied-alpha box reduction from exact approved 256x320 review frames; frame order is unchanged except for declared reversible clips",
+  "approvedClipId": "ladder-route-v5",
+  "sourceFrames": [
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+      "sha256": "f5e27167732261a79748ee754c031cde13cf5d9030643487b0df81037ae63539",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+      "sha256": "d4e6053fd01d7dde8645ec86ee2aff379f4b541e601b9cf3c3b76e0bc6a1d8d8",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+      "sha256": "ac18077227542bdadec079e0ce479566839c0eddfa2f0f8d05abb00fd526d605",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+      "sha256": "656a59105c01b0e72cf4a51e622710f8a69bf41d96bd4031f9dbc876ca5404c6",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+      "sha256": "f5e27167732261a79748ee754c031cde13cf5d9030643487b0df81037ae63539",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+      "sha256": "d4e6053fd01d7dde8645ec86ee2aff379f4b541e601b9cf3c3b76e0bc6a1d8d8",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+      "sha256": "ac18077227542bdadec079e0ce479566839c0eddfa2f0f8d05abb00fd526d605",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+      "sha256": "656a59105c01b0e72cf4a51e622710f8a69bf41d96bd4031f9dbc876ca5404c6",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+      "sha256": "f5e27167732261a79748ee754c031cde13cf5d9030643487b0df81037ae63539",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+      "sha256": "d4e6053fd01d7dde8645ec86ee2aff379f4b541e601b9cf3c3b76e0bc6a1d8d8",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+      "sha256": "ac18077227542bdadec079e0ce479566839c0eddfa2f0f8d05abb00fd526d605",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+      "sha256": "656a59105c01b0e72cf4a51e622710f8a69bf41d96bd4031f9dbc876ca5404c6",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+      "sha256": "f5e27167732261a79748ee754c031cde13cf5d9030643487b0df81037ae63539",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-a_back_f01-paint-opaque-d4e6053fd01d7dde.png",
+      "sha256": "d4e6053fd01d7dde8645ec86ee2aff379f4b541e601b9cf3c3b76e0bc6a1d8d8",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-b_back_f01-paint-opaque-ac18077227542bda.png",
+      "sha256": "ac18077227542bdadec079e0ce479566839c0eddfa2f0f8d05abb00fd526d605",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_passing-b_back_f01-paint-opaque-656a59105c01b0e7.png",
+      "sha256": "656a59105c01b0e72cf4a51e622710f8a69bf41d96bd4031f9dbc876ca5404c6",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_contact-a_back_f01-paint-opaque-f5e27167732261a7.png",
+      "sha256": "f5e27167732261a79748ee754c031cde13cf5d9030643487b0df81037ae63539",
+      "flipX": false
+    },
+    {
+      "url": "/keeper-review/keeper-prime-ladder-transitions-v5/assets/keeper_prime_ladder_dismount-right_back_f01-paint-opaque-ba17213c17186285.png",
+      "sha256": "ba17213c171862856762eec2acf0c88982e2cebf091dca7995e7c956815e5c2d",
+      "flipX": false
+    }
+  ],
+  "sha256": "abf7d9e06a282a894e82c005c9e4de25ddd17924661799441e605de177b06808"
+}
