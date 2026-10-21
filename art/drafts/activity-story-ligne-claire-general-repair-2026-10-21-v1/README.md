@@ -1,13 +1,15 @@
 # Bubble stories ligne-claire General repair family V1
 
-**Status:** review gate awaiting approval
+**Status:** approved and registered as current V2
 
 This pack translates the five object pictures used by Claude's existing
 `general-repair` Bubble story into the approved ligne-claire language. The
 current V1 pictures remain the semantic and compositional authority. The
-approved `washing-plate` V2 is the primary calibration for lively contour and
-controlled hand-drawn asymmetry; the approved `sandwich-tomato` V2 is the
-primary calibration for flat colour and selective game-scale detail.
+approved `washing-plate` V2, `sandwich-tomato` V2 and this pack's
+`repair-toolbox` V2 are co-equal style champions. The plate calibrates living
+hand-drawn shape and controlled minor imperfection; the tomato calibrates flat
+colour economy and selective readable detail; the tool chest calibrates
+construction, detail hierarchy and confident object presence.
 
 | Picture id | Preserved content | Proposed version |
 | --- | --- | --- |
@@ -17,11 +19,12 @@ primary calibration for flat colour and selective game-scale detail.
 | `repair-wrench-cog` | one cog behind one combination spanner with its two-pin grip | V2 |
 | `repair-rope-knot` | one compact knot with the current over-under route and two bound ends | V2 |
 
-`evidence/current-vs-ligne-claire-contact-sheet.png` shows, for every id, the
+Frank approved this exact five-picture contact sheet on 21 October 2026 with
+“approved. tool chest the best”, then clarified that “plate and tool chest and
+tomato are the style-champions”. `evidence/current-vs-ligne-claire-contact-sheet.png` shows, for every id, the
 prior-current V1, proposed V2 on warm white, proposed V2 on dark, V1 at 64 px
-and proposed V2 at 64 px. No candidate is registered in the picture library
-before Frank approves this exact sheet; every V1 remains current and
-byte-identical.
+and proposed V2 at 64 px. All five candidates are registered as immutable
+current V2 versions; every V1 remains byte-identical and selectable.
 
 The recipe evolved during this family in two useful ways. First, ambiguous
 counts and structures must be inspected enlarged before prompting: the hull
@@ -48,6 +51,6 @@ unchanged `general-repair.json` story hash.
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_activity_story_ligne_claire_general_repair_2026_10_21_v1.py --verify
 ```
 
-On approval, add each candidate as immutable V2 with the official
-`activity-stories:add-picture` command. Never overwrite V1, and do not edit the
-story or `src/activityStories/` runtime.
+Rollback by setting any picture's `current` selector to V1 with the official
+`activity-stories:add-picture` command. Never overwrite a version, and do not
+edit the story or `src/activityStories/` runtime.

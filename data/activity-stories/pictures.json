@@ -6529,7 +6529,7 @@
       "kind": "object",
       "family": "repair",
       "label": "Hull patch",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -6548,6 +6548,25 @@
           "added": "2026-10-19",
           "source": "activity-cloud-composer-v5",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/drafts/components/repair-boat-hull-patch.png",
+          "sha256": "47e6f232843886eb01cc52f6a3d6343c020ab0aa2a87300c7d169e8c7ed696f6",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            23,
+            236,
+            232
+          ],
+          "added": "2026-10-21",
+          "source": "repair-boat-hull-patch.png",
+          "by": "codex",
+          "note": "Approved ligne-claire General repair family V2"
         }
       ]
     },
@@ -6744,7 +6763,7 @@
       "kind": "object",
       "family": "repair",
       "label": "Hammer and nails",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -6763,6 +6782,25 @@
           "added": "2026-10-19",
           "source": "activity-cloud-composer-v5",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/drafts/components/repair-hammer-nails.png",
+          "sha256": "5108eecf1f3de807d3c4d078c58cb8dd032a8d9c53027b4e377fc92433b28d03",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            26,
+            236,
+            230
+          ],
+          "added": "2026-10-21",
+          "source": "repair-hammer-nails.png",
+          "by": "codex",
+          "note": "Approved ligne-claire General repair family V2"
         }
       ]
     },
@@ -6905,7 +6943,7 @@
       "kind": "object",
       "family": "repair",
       "label": "Rope knot",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -6924,6 +6962,25 @@
           "added": "2026-10-19",
           "source": "activity-cloud-composer-v5",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/drafts/components/repair-rope-knot.png",
+          "sha256": "839278d4b648b847ea4c35ff0be66d3ce9f9540e941120a7e10dbf09966fbe0f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            88,
+            236,
+            168
+          ],
+          "added": "2026-10-21",
+          "source": "repair-rope-knot.png",
+          "by": "codex",
+          "note": "Approved ligne-claire General repair family V2"
         }
       ]
     },
@@ -7039,7 +7096,7 @@
       "kind": "object",
       "family": "repair",
       "label": "Toolbox",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -7058,6 +7115,25 @@
           "added": "2026-10-19",
           "source": "activity-cloud-composer-v5",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/drafts/components/repair-toolbox.png",
+          "sha256": "ea29f0493f818cee5a0a0eb78dcad092d611d622a23433a8025e36f3a7307812",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            33,
+            236,
+            222
+          ],
+          "added": "2026-10-21",
+          "source": "repair-toolbox.png",
+          "by": "codex",
+          "note": "Approved ligne-claire General repair family V2"
         }
       ]
     },
@@ -7146,7 +7222,7 @@
       "kind": "object",
       "family": "repair",
       "label": "Wrench and cog",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -7165,6 +7241,25 @@
           "added": "2026-10-19",
           "source": "activity-cloud-composer-v5",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/drafts/components/repair-wrench-cog.png",
+          "sha256": "0d4517e171e010afba73e0c808c8d59a5382c6d7c6c11d1c563264e58fb64f3b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            24,
+            236,
+            232
+          ],
+          "added": "2026-10-21",
+          "source": "repair-wrench-cog.png",
+          "by": "codex",
+          "note": "Approved ligne-claire General repair family V2"
         }
       ]
     },

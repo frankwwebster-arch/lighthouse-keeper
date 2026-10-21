@@ -2,7 +2,7 @@
 
 **Decision date:** 21 October 2026
 
-**Status:** active; BBQ, sandwich and washing packs approved; General repair pack at review gate; action-imagery programme only
+**Status:** active; BBQ, sandwich, washing and General repair packs approved; action-imagery programme only
 
 Frank approved the six-picture BBQ pilot with “agreed, these are superb”. This
 prompt turns that approval into a controlled conversion programme for Bubble
@@ -37,15 +37,17 @@ the plate's minor shape imperfection and hand-drawn feel; its controlled
 ellipse/rim asymmetry is now the primary shape calibration. Every V1 remains
 selectable and byte-identical.
 
-**Fourth family review gate (21 October 2026):** the five object pictures used
+**Fourth family approval (21 October 2026):** the five object pictures used
 by Claude's unchanged `general-repair` story are isolated at
 `art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/`. The
 sheet covers `repair-toolbox`, `repair-boat-hull-patch`,
-`repair-hammer-nails`, `repair-wrench-cog` and `repair-rope-knot`. These V2
-candidates are not registered pending explicit approval. This family adds two
-recipe rules: inspect ambiguous counts enlarged before prompting, and preserve
-the exact topology/parts of knots and mechanical assemblies rather than merely
-matching their generic category.
+`repair-hammer-nails`, `repair-wrench-cog` and `repair-rope-knot`. All five are
+registered as current V2 versions, taking the library to 305 pictures and 348
+immutable versions. Frank approved the exact sheet with “approved. tool chest
+the best”, then clarified that the plate, tool chest and tomato are all style
+champions. This family adds two recipe rules: inspect ambiguous counts enlarged
+before prompting, and preserve the exact topology/parts of knots and mechanical
+assemblies rather than merely matching their generic category.
 
 ## Ready-to-paste prompt
 
@@ -69,8 +71,8 @@ Objective
 - Translate the Bubble stories picture library into the original
   ligne-claire-inspired language approved in the six-picture BBQ pilot.
 - Work in small, immutable, reviewable family batches. The BBQ, BBQ-tools,
-  sandwich and washing families are complete; select a new family only after
-  the General repair gate is resolved.
+  sandwich, washing and General repair families are complete; select a new
+  family for the next immutable gate.
 - The programme covers action objects, ingredients, tools, pictorial states,
   activity marks, emotions and independent comic reaction punctuation used by
   Bubble stories.
@@ -90,6 +92,11 @@ Visual authority
   the approved
   art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/drafts/components/washing-plate.png
   as primary calibration for lively contour and controlled minor asymmetry.
+  Use the approved
+  art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/drafts/components/repair-toolbox.png
+  as the co-equal calibration for construction, detail hierarchy and confident
+  object presence. Plate, tomato and tool chest are all champions; none
+  supersedes either of the others.
 - Draw original artwork: lively near-black contour of mostly even weight,
   simplified accurate shapes, flat opaque spot colours and minimal decisive
   interior lines. Use no gradients, glossy highlights, painterly modelling,

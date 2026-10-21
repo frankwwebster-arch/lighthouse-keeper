@@ -1,13 +1,19 @@
 {
   "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
   "set": "activity-story-ligne-claire-general-repair-2026-10-21-v1",
-  "status": "review-gate-awaiting-approval",
+  "status": "approved-and-registered",
   "created": "2026-10-21",
   "tool": "built-in image generation plus deterministic fixed-palette normalisation",
   "family": "repair",
   "semanticSet": "the five object pictures used by Claude's General repair Bubble story",
   "primaryShapeCalibration": "art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/drafts/components/washing-plate.png",
   "primaryColourCalibration": "art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/sandwich-tomato.png",
+  "primaryConstructionCalibration": "art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/drafts/components/repair-toolbox.png",
+  "styleChampions": {
+    "washing-plate": "living hand-drawn shape and controlled minor imperfection",
+    "sandwich-tomato": "flat colour economy and selective readable detail",
+    "repair-toolbox": "construction, detail hierarchy and confident object presence"
+  },
   "evolvingRecipe": "Preserve exact semantic construction while favouring lively mostly-even near-black contour, flat opaque spot colour, minimal decisive detail and controlled hand-drawn asymmetry instead of sterile geometry.",
   "preservationRule": "Translate each current asset's drawing language while preserving subject identity, viewpoint, object count, construction, state, recognisable contents, relative arrangement and broad silhouette. Audit ambiguous counts enlarged before prompting.",
   "storyFile": "data/activity-stories/stories/general-repair.json",
@@ -17,8 +23,9 @@
     "repair-toolbox": {
       "family": "repair",
       "label": "Toolbox",
-      "intent": "candidate-new-version-v2",
-      "priorCurrentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "exactly one open blue metal toolbox with its raised lid, brass hardware and handle, plus the current visible spanner, pliers, screwdriver and smaller tool contents",
       "currentReferenceFile": "review-archive/objects/bd/bddc65528cb63fed1403fcbd0de210af4b357585dac5660102512b706f459c10.png",
@@ -78,8 +85,9 @@
     "repair-boat-hull-patch": {
       "family": "repair",
       "label": "Hull patch",
-      "intent": "candidate-new-version-v2",
-      "priorCurrentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "exactly four weathered blue hull planks, two horizontal battens, two short vertical straps, six visible brass fasteners and one wooden mallet in the current arrangement",
       "currentReferenceFile": "review-archive/objects/ce/cef61bcec5542ac32a74bcae933b972deab398bec5edfabd8ded71441b23c28e.png",
@@ -138,8 +146,9 @@
     "repair-hammer-nails": {
       "family": "repair",
       "label": "Hammer and nails",
-      "intent": "candidate-new-version-v2",
-      "priorCurrentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "exactly one diagonal claw hammer with its steel head, timber upper handle and blue lower grip, plus exactly three brass nails in the current fan",
       "currentReferenceFile": "review-archive/objects/0c/0c71ed9d475b334ad85c2f6c7a190ae61a90bcf44c18974559f8a8e7e06632e9.png",
@@ -197,8 +206,9 @@
     "repair-wrench-cog": {
       "family": "repair",
       "label": "Wrench and cog",
-      "intent": "candidate-new-version-v2",
-      "priorCurrentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "exactly one gold cog with dark inset hub behind one crossing combination spanner, including its open jaw, ring end and brown two-pin grip panel",
       "currentReferenceFile": "review-archive/objects/58/588a382fd46f0fbb2186db0e40613a6e02c8476d4b99bd53dd6d3b2f27861ea4.png",
@@ -256,8 +266,9 @@
     "repair-rope-knot": {
       "family": "repair",
       "label": "Rope knot",
-      "intent": "candidate-new-version-v2",
-      "priorCurrentLibraryVersion": 1,
+      "intent": "approved-new-version-v2",
+      "priorLibraryVersion": 1,
+      "currentLibraryVersion": 2,
       "proposedLibraryVersion": 2,
       "preserves": "one compact thick-rope knot following the current over-under path and horizontal silhouette, with exactly two bound ends and two frayed tassels",
       "currentReferenceFile": "review-archive/objects/03/03f0806f550a4953ac72c0dc6e17745e00ef71d4d231177343de29e75e4436d5.png",
@@ -347,13 +358,19 @@
     "storyHashPinned": true,
     "exactPalettesRecorded": true,
     "contactSheetCoversEveryCandidate": true,
-    "libraryVersionsAdded": false,
+    "libraryVersionsAdded": true,
     "storyChanged": false,
     "activityStoriesRuntimeChanged": false,
     "approvedAuthorityChanged": false,
     "deployed": false
   },
-  "approval": null,
-  "nextStep": "Frank reviews the exact five-picture contact sheet. On approval, add each candidate as immutable V2 with the official add-picture command; do not overwrite V1.",
-  "rollback": "Before approval, discard this pack alone. After approval, set each picture's current selector back to V1; all earlier bytes remain immutable and selectable."
+  "approval": {
+    "by": "Frank",
+    "date": "2026-10-21",
+    "words": "approved. tool chest the best",
+    "clarification": "plate and tool chest and tomato are the style-champions",
+    "scope": "the exact five-picture General repair contact sheet"
+  },
+  "nextStep": "Continue with a new tightly related Bubble-story family using all three style champions and a new immutable review gate.",
+  "rollback": "Set each picture's current selector back to V1; the approved V2 assets and all earlier bytes remain immutable and selectable."
 }

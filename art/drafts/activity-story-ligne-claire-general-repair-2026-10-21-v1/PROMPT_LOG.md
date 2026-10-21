@@ -16,6 +16,9 @@ flat palette, integer-centred placement, lossless PNG.
   mostly-even near-black contour and controlled minor asymmetry.
 - Approved `sandwich-tomato` V2 is the primary colour calibration for flat
   opaque spot colour and selective detail.
+- Frank's approval establishes the resulting `repair-toolbox` V2 as a third,
+  co-equal style champion for construction, detail hierarchy and confident
+  object presence. The plate and tomato retain their distinct champion roles.
 - No outside comic panel or copyrighted visual was supplied to the generator.
 
 ## Accepted sources and exact prompts

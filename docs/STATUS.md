@@ -35,7 +35,7 @@ and ordered in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`. `npm test` rejects new
 or regressed endpoint failures against that frozen migration boundary.
 
 The Bubble stories Studio has a complete shared picture catalogue: 305
-selectable pictures and 343 immutable versions grouped by activity. This includes every review-ready
+selectable pictures and 348 immutable versions grouped by activity. This includes every review-ready
 isolated source component from Activity Cloud Composer V1–V7, the rear-work
 V2/V3 callout packs and every component-bearing Claude or Codex picture pack,
 including all V5 album homages, the complete aquarium and bedroom sets, and 54
@@ -77,11 +77,16 @@ update your recipe as you go”. Its immutable pack is
 translations are current V2 versions and all V1 predecessors remain
 selectable, taking the catalogue to 305 pictures / 343 versions. The approved
 plate's controlled minor irregularity is now shape calibration alongside the
-tomato's flat-colour calibration. The next five-object General repair family
-is isolated at
-`art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/` and
-awaits visual approval; it has not changed `pictures.json`, Claude's story,
-the activity-story runtime, production art or deployment.
+tomato's flat-colour calibration.
+
+Frank then approved the five-object General repair family with “approved. tool
+chest the best” and clarified that plate, tomato and tool chest are all style
+champions. All five translations are registered as current V2 versions from
+`art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/`, while
+every V1 remains selectable, taking the catalogue to 305 pictures / 348
+versions. The tool chest adds construction, detail hierarchy and confident
+object presence to the plate's shape and tomato's colour calibrations. Claude's
+story, the activity-story runtime, production art and deployment are unchanged.
 
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 

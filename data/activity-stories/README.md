@@ -11,7 +11,7 @@ versions remain selectable and byte-identical for undo.
 **Complete-catalogue update (21 October 2026):** the library now exposes all
 298 review-ready isolated source components from Activity Cloud Composer
 V1–V7, Prime rear-work activity-callout V2/V3 and every component-bearing
-Claude or Codex picture pack. The Studio therefore has 305 pictures and 343
+Claude or Codex picture pack. The Studio therefore has 305 pictures and 348
 immutable versions, including
 every V5 album homage, the complete aquarium and bedroom sets, and 54 new
 fishing, gardening, pet-play, fixing, pub, art and inventing pictures. Run
@@ -66,12 +66,14 @@ and 343 immutable versions. The plate's controlled minor ellipse/rim
 irregularity is now positive shape calibration. Every V1 remains selectable;
 the story and `src/activityStories/` are unchanged.
 
-**General repair family review gate (21 October 2026):** the immutable pack at
+**General repair family approval (21 October 2026):** the immutable pack at
 `art/drafts/activity-story-ligne-claire-general-repair-2026-10-21-v1/`
 translates the five object pictures in Claude's unchanged `general-repair`
-story. It uses the approved plate for lively hand-drawn shape and the tomato
-for flat colour. The five proposed V2s remain unregistered pending approval;
-all current V1s and the story/runtime implementation remain untouched.
+story. Frank approved the exact sheet with “approved. tool chest the best” and
+clarified that the plate, tomato and tool chest are all style champions. All
+five are registered as current V2 versions, taking the library to 305 pictures
+and 348 immutable versions. Every V1 remains selectable; the story/runtime
+implementation is untouched.
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A
