@@ -149,6 +149,17 @@ translations. Frank approved the exact sheet with “approved”; all seven are
 current immutable V2s, taking the catalogue to 305 pictures / 381 versions.
 Every V1 remains selectable and Claude's story/runtime is unchanged.
 
+**Condiments review gate (21 October 2026):** the immutable pack at
+`art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/` covers all
+nine remaining `condiment` pictures: honey pot, ketchup, malt vinegar,
+mayonnaise, mustard, olive oil, pickle jar, raspberry jam and wholegrain
+mustard. It evolves the recipe away from glossy cartoon clip-art with a thinner
+living contour, controlled asymmetry, fewer flat colour steps and sparse glass
+or material cues. The first glossy honey-pot attempt remains rejected evidence.
+All nine candidates are unregistered; the catalogue remains 305 pictures / 381
+versions. Exactly 68 current pictures are approved ligne-claire conversions,
+so 237 remain pending this and later gates.
+
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A
 story has no upper length, only a five-second floor. Frank sets each

@@ -127,6 +127,16 @@ candidates were approved by Frank with “approved” and are current immutable
 V2s, so the library contains 305 pictures / 381 versions. Every V1 remains
 selectable.
 
+**Ninth family review gate (21 October 2026):** all nine remaining `condiment`
+pictures are isolated at
+`art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/`. The first
+honey-pot pass was rejected before the gate because clean outlines alone did
+not prevent glossy cartoon clip-art. The evolved recipe requires a thinner
+living contour, controlled hand-drawn asymmetry, fewer flat colour steps,
+sparse glass/material cues and no specular highlight bands. The nine candidates
+remain unregistered. The library still contains 305 pictures / 381 versions;
+68 pictures have approved current ligne-claire versions and 237 remain.
+
 ## Ready-to-paste prompt
 
 ```text
@@ -156,7 +166,9 @@ Objective
   The nine-picture baking/eggs/mixing family is approved and registered,
   using the separate observational hen correction rather than the rejected
   family-pack hen. The seven-picture farm-animals-and-meals pack is also
-  approved and registered. Continue later work in fresh immutable family packs.
+  approved and registered. The current gate is the fresh nine-picture
+  condiments pack; register nothing before Frank's verdict. Continue later work
+  in fresh immutable family packs.
 - The programme covers action objects, ingredients, tools, pictorial states,
   activity marks, emotions and independent comic reaction punctuation used by
   Bubble stories.

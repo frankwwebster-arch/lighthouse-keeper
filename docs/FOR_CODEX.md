@@ -142,6 +142,15 @@ still preserve V1 counts, state, viewpoint, overlap and arrangement. Frank
 approved the exact sheet with “approved”; all seven are current immutable V2s,
 the library has 305 pictures / 381 versions, and every V1 remains selectable.
 
+The current unregistered gate is the nine-picture condiment pack at
+`art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/`. It covers
+honey pot, ketchup, malt vinegar, mayonnaise, mustard, olive oil, pickle jar,
+raspberry jam and wholegrain mustard. The first honey-pot result was rejected
+for glossy cartoon clip-art modelling; the evolved recipe uses thinner living
+contour, controlled asymmetry, fewer flat colours and sparse glass/material
+cues. Register nothing before Frank approves the exact sheet. Exactly 68 of the
+305 pictures currently use approved ligne-claire versions; 237 remain.
+
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 
 Frank has authorised an exhaustive, reversible audit and redraft programme for
