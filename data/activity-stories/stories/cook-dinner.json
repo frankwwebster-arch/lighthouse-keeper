@@ -1,0 +1,144 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "cook-dinner",
+  "label": "Cook dinner",
+  "appliesTo": {
+    "assetId": "kitchen.oven",
+    "label": "Cooker"
+  },
+  "cast": {
+    "pan": {
+      "picture": "cooking-pan",
+      "role": "hero"
+    },
+    "veg": {
+      "picture": "cooking-vegetables",
+      "role": "support"
+    },
+    "knife": {
+      "picture": "knife-chef",
+      "role": "support"
+    },
+    "seasoning": {
+      "picture": "cooking-seasoning",
+      "role": "support"
+    },
+    "spoon": {
+      "picture": "cooking-spoon",
+      "role": "support"
+    },
+    "gravy": {
+      "picture": "cooking-gravy",
+      "role": "support"
+    },
+    "dinner": {
+      "picture": "meal-dinner",
+      "role": "result",
+      "appear": "symbol-pleasant-aroma"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "pan"
+    },
+    {
+      "do": "present",
+      "who": "veg"
+    },
+    {
+      "do": "chop",
+      "who": "knife",
+      "onto": "veg"
+    },
+    {
+      "do": "present",
+      "who": "pan"
+    },
+    {
+      "do": "drop-in",
+      "who": "veg",
+      "onto": "pan",
+      "mark": "symbol-sizzle-spark"
+    },
+    {
+      "do": "shake",
+      "who": "seasoning",
+      "onto": "pan",
+      "speed": "quick"
+    },
+    {
+      "do": "stir",
+      "who": "spoon",
+      "onto": "pan"
+    },
+    {
+      "do": "pour",
+      "who": "gravy",
+      "onto": "pan"
+    },
+    {
+      "do": "reveal",
+      "who": "dinner",
+      "onto": "pan",
+      "replace": true
+    },
+    {
+      "do": "serve",
+      "who": "dinner"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [
+    {
+      "picture": "symbol-heat-shimmer",
+      "on": "pan",
+      "fromStep": 1,
+      "toStep": 8
+    }
+  ],
+  "props": [
+    {
+      "picture": "condiment-salt-mill",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 10
+    },
+    {
+      "picture": "condiment-pepper-mill",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 10
+    }
+  ],
+  "sfx": [
+    {
+      "step": 3,
+      "at": "contact",
+      "cue": "knife-chop",
+      "owner": "cook-dinner",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 5,
+      "at": "contact",
+      "cue": "pan-sizzle",
+      "owner": "kitchen.oven",
+      "kind": "asset-state"
+    },
+    {
+      "step": 9,
+      "at": "contact",
+      "cue": "food-ready",
+      "owner": "cook-dinner",
+      "kind": "completion"
+    }
+  ],
+  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. The pan heats, the vegetables take the middle and are chopped, the pan comes back and the vegetables drop in with a sizzle, seasoning is shaken over, a stir, the gravy pours, dinner appears (a good smell) and is served. Salt and pepper mills circle."
+}

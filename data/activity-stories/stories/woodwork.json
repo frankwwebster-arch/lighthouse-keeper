@@ -1,0 +1,118 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "woodwork",
+  "label": "Woodwork",
+  "appliesTo": {
+    "assetId": "workshop.bench",
+    "label": "Workbench"
+  },
+  "cast": {
+    "plank": {
+      "picture": "repair-boat-hull-patch",
+      "role": "hero"
+    },
+    "tape": {
+      "picture": "repair-tape-measure",
+      "role": "support"
+    },
+    "level": {
+      "picture": "repair-spirit-level",
+      "role": "support"
+    },
+    "clamp": {
+      "picture": "repair-c-clamp",
+      "role": "support"
+    },
+    "saw": {
+      "picture": "repair-hand-saw",
+      "role": "support"
+    },
+    "screwdriver": {
+      "picture": "repair-flat-head-screwdriver",
+      "role": "support"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "plank"
+    },
+    {
+      "do": "brush",
+      "who": "tape",
+      "onto": "plank",
+      "mark": "symbol-motion-ticks"
+    },
+    {
+      "do": "iron",
+      "who": "level",
+      "onto": "plank",
+      "mark": "symbol-clean-glint"
+    },
+    {
+      "do": "tighten",
+      "who": "clamp",
+      "onto": "plank"
+    },
+    {
+      "do": "saw",
+      "who": "saw",
+      "onto": "plank"
+    },
+    {
+      "do": "tighten",
+      "who": "screwdriver",
+      "onto": "plank",
+      "speed": "quick"
+    },
+    {
+      "do": "pause"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [
+    {
+      "picture": "symbol-clean-glint",
+      "on": "plank",
+      "fromStep": 7,
+      "toStep": 7
+    }
+  ],
+  "props": [
+    {
+      "picture": "repair-cordless-drill",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 7
+    },
+    {
+      "picture": "repair-drill-bit-case",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 7
+    }
+  ],
+  "sfx": [
+    {
+      "step": 5,
+      "at": "contact",
+      "cue": "hand-saw",
+      "owner": "woodwork",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 6,
+      "at": "contact",
+      "cue": "screw-in",
+      "owner": "woodwork",
+      "kind": "completion"
+    }
+  ],
+  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. Measure along it (tape measure, long strokes), check it level (the spirit level glides across), clamp it, saw it, screw it, and it gleams. The hull patch stands in for a plank until Codex draws one. The drill and its bits circle."
+}

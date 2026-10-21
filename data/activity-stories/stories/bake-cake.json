@@ -1,0 +1,90 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "bake-cake",
+  "label": "Bake a cake",
+  "appliesTo": {
+    "assetId": "kitchen.oven",
+    "label": "Oven"
+  },
+  "cast": {
+    "bowl": {
+      "picture": "mixing-bowl",
+      "role": "hero"
+    },
+    "flour": {
+      "picture": "baking-flour",
+      "role": "support"
+    },
+    "egg": {
+      "picture": "mixing-egg",
+      "role": "support"
+    },
+    "butter": {
+      "picture": "ingredient-butter-block",
+      "role": "support"
+    },
+    "whisk": {
+      "picture": "mixing-whisk",
+      "role": "support"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "bowl"
+    },
+    {
+      "do": "pour",
+      "who": "flour",
+      "onto": "bowl",
+      "mark": "symbol-motion-ticks"
+    },
+    {
+      "do": "drop-in",
+      "who": "egg",
+      "onto": "bowl"
+    },
+    {
+      "do": "drop-in",
+      "who": "butter",
+      "onto": "bowl",
+      "speed": "quick"
+    },
+    {
+      "do": "stir",
+      "who": "whisk",
+      "onto": "bowl",
+      "speed": "slow"
+    },
+    {
+      "do": "pause",
+      "speed": "slow"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [
+    {
+      "picture": "symbol-heat-curls",
+      "on": "bowl",
+      "fromStep": 6,
+      "toStep": 6
+    }
+  ],
+  "sfx": [
+    {
+      "step": 5,
+      "at": "contact",
+      "cue": "whisk",
+      "owner": "bake-cake",
+      "kind": "activity-beat"
+    }
+  ],
+  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. Flour pours into the bowl, the egg and butter drop in, the whisk goes round, then heat while it bakes. Waiting for Codex: the finished cake (and an oven or cake tin) for the ending; when it exists, add “cake appears from bowl (takes its place)” and “cake is served”.",
+  "props": []
+}

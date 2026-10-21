@@ -1,64 +1,134 @@
 {
-  "schema": "lighthouse-keeper/activity-story@1",
   "id": "garden-bbq",
-  "label": "Garden BBQ",
-  "appliesTo": {
-    "assetId": "outdoor.bbq",
-    "label": "Garden barbecue"
-  },
-  "bodyCompatibility": "rear-work-with-context",
-  "afterStory": "loop",
-  "pace": 1,
+  "sfx": [
+    {
+      "at": "contact",
+      "cue": "charcoal-rattle",
+      "kind": "asset-state",
+      "step": 2,
+      "owner": "outdoor.bbq"
+    },
+    {
+      "at": "contact",
+      "cue": "bbq-sizzle",
+      "kind": "activity-beat",
+      "step": 4,
+      "owner": "garden-bbq"
+    },
+    {
+      "at": "contact",
+      "cue": "food-ready",
+      "kind": "activity-beat",
+      "step": 5,
+      "owner": "garden-bbq"
+    },
+    {
+      "at": "contact",
+      "cue": "food-ready",
+      "kind": "activity-beat",
+      "step": 12,
+      "owner": "garden-bbq"
+    },
+    {
+      "at": "contact",
+      "cue": "meal-served",
+      "kind": "completion",
+      "step": 16,
+      "owner": "garden-bbq"
+    }
+  ],
   "cast": {
     "cold": {
-      "picture": "bbq-grill-unlit",
-      "role": "hero"
-    },
-    "charcoal": {
-      "picture": "bbq-charcoal",
-      "role": "support"
-    },
-    "grill": {
-      "picture": "bbq-grill",
-      "role": "hero"
-    },
-    "sausages": {
-      "picture": "bbq-sausages",
-      "role": "support"
-    },
-    "hotdogs": {
-      "picture": "bbq-hotdogs",
-      "role": "result"
-    },
-    "patties": {
-      "picture": "bbq-raw-burger-patties",
-      "role": "support"
-    },
-    "tomato": {
-      "picture": "sandwich-tomato",
-      "role": "support"
-    },
-    "lettuce": {
-      "picture": "sandwich-lettuce",
-      "role": "support"
-    },
-    "cheese": {
-      "picture": "cooking-cheese-slicing",
-      "role": "support"
-    },
-    "burgers": {
-      "picture": "bbq-burgers",
-      "role": "result"
-    },
-    "steak": {
-      "picture": "bbq-raw-steak",
-      "role": "support"
+      "role": "hero",
+      "picture": "bbq-grill-unlit"
     },
     "meal": {
-      "picture": "meal-steak-fries",
-      "role": "result"
+      "role": "result",
+      "picture": "meal-steak-fries"
+    },
+    "grill": {
+      "role": "hero",
+      "picture": "bbq-grill"
+    },
+    "steak": {
+      "role": "support",
+      "picture": "bbq-raw-steak"
+    },
+    "cheese": {
+      "role": "support",
+      "picture": "cooking-cheese-slicing"
+    },
+    "tomato": {
+      "role": "support",
+      "picture": "sandwich-tomato"
+    },
+    "burgers": {
+      "role": "result",
+      "picture": "bbq-burgers"
+    },
+    "hotdogs": {
+      "role": "result",
+      "picture": "bbq-hotdogs"
+    },
+    "lettuce": {
+      "role": "support",
+      "picture": "sandwich-lettuce"
+    },
+    "patties": {
+      "role": "support",
+      "picture": "bbq-raw-burger-patties"
+    },
+    "charcoal": {
+      "role": "support",
+      "picture": "bbq-charcoal"
+    },
+    "sausages": {
+      "role": "support",
+      "picture": "bbq-sausages"
     }
   },
+  "flow": "left-to-right",
+  "pace": 1,
+  "label": "Garden BBQ",
+  "notes": "Draft by Claude from Frank's notes (20 Oct 2026): reads left to right. The cold BBQ appears, the charcoal comes in from the left and drops in, and the BBQ is lit. Each dish's ingredients come in from the left and cook on the grill with a sizzle; the finished dish appears and is served off to the right; the hot BBQ rests alone for a beat. Hot dogs, then burgers (patties, tomato, lettuce, cheese), then steak and fries. Small BBQ tools and sauces (tongs, ketchup, turner, mustard, basting brush, grill fork) circle the bubble while he cooks, clear of the main action. Retellings start again from the hot BBQ (step 4). Frank's version, saved 2026-10-21.",
+  "props": [
+    {
+      "at": "orbit",
+      "toStep": 17,
+      "picture": "bbq-tongs",
+      "fromStep": 4
+    },
+    {
+      "at": "orbit",
+      "toStep": 17,
+      "picture": "condiment-ketchup-bottle",
+      "fromStep": 4
+    },
+    {
+      "at": "orbit",
+      "toStep": 17,
+      "picture": "bbq-slotted-turner",
+      "fromStep": 4
+    },
+    {
+      "at": "orbit",
+      "toStep": 17,
+      "picture": "condiment-mustard-bottle",
+      "fromStep": 4
+    },
+    {
+      "at": "orbit",
+      "toStep": 17,
+      "picture": "bbq-basting-brush",
+      "fromStep": 4
+    },
+    {
+      "at": "orbit",
+      "toStep": 17,
+      "picture": "bbq-grill-fork",
+      "fromStep": 4
+    }
+  ],
   "steps": [
     {
       "do": "arrive",
@@ -72,22 +142,22 @@
     {
       "do": "reveal",
       "who": "grill",
+      "mark": "symbol-heat-curls",
       "onto": "cold",
-      "replace": true,
-      "mark": "symbol-heat-curls"
+      "replace": true
     },
     {
       "do": "land-on",
       "who": "sausages",
-      "onto": "grill",
-      "mark": "symbol-sizzle-spark"
+      "mark": "symbol-sizzle-spark",
+      "onto": "grill"
     },
     {
       "do": "reveal",
       "who": "hotdogs",
+      "mark": "symbol-sizzle-spark",
       "onto": "sausages",
-      "replace": true,
-      "mark": "symbol-sizzle-spark"
+      "replace": true
     },
     {
       "do": "serve",
@@ -99,8 +169,8 @@
     {
       "do": "land-on",
       "who": "patties",
-      "onto": "grill",
-      "mark": "symbol-sizzle-spark"
+      "mark": "symbol-sizzle-spark",
+      "onto": "grill"
     },
     {
       "do": "land-on",
@@ -123,9 +193,9 @@
     {
       "do": "reveal",
       "who": "burgers",
+      "mark": "symbol-sizzle-spark",
       "onto": "patties",
-      "replace": true,
-      "mark": "symbol-sizzle-spark"
+      "replace": true
     },
     {
       "do": "serve",
@@ -137,15 +207,16 @@
     {
       "do": "land-on",
       "who": "steak",
+      "mark": "symbol-sizzle-spark",
       "onto": "grill",
-      "mark": "symbol-sizzle-spark"
+      "speed": "slow"
     },
     {
       "do": "reveal",
       "who": "meal",
+      "mark": "symbol-sizzle-spark",
       "onto": "steak",
-      "replace": true,
-      "mark": "symbol-sizzle-spark"
+      "replace": true
     },
     {
       "do": "serve",
@@ -155,90 +226,20 @@
       "do": "settle"
     }
   ],
+  "schema": "lighthouse-keeper/activity-story@1",
   "ambient": [
     {
-      "picture": "symbol-heat-curls",
       "on": "grill",
-      "fromStep": 4,
-      "toStep": 17
+      "toStep": 17,
+      "picture": "symbol-heat-curls",
+      "fromStep": 4
     }
   ],
-  "sfx": [
-    {
-      "step": 2,
-      "at": "contact",
-      "cue": "charcoal-rattle",
-      "owner": "outdoor.bbq",
-      "kind": "asset-state"
-    },
-    {
-      "step": 4,
-      "at": "contact",
-      "cue": "bbq-sizzle",
-      "owner": "garden-bbq",
-      "kind": "activity-beat"
-    },
-    {
-      "step": 5,
-      "at": "contact",
-      "cue": "food-ready",
-      "owner": "garden-bbq",
-      "kind": "activity-beat"
-    },
-    {
-      "step": 12,
-      "at": "contact",
-      "cue": "food-ready",
-      "owner": "garden-bbq",
-      "kind": "activity-beat"
-    },
-    {
-      "step": 16,
-      "at": "contact",
-      "cue": "meal-served",
-      "owner": "garden-bbq",
-      "kind": "completion"
-    }
-  ],
-  "notes": "Draft by Claude from Frank's notes (20 Oct 2026): reads left to right. The cold BBQ appears, the charcoal comes in from the left and drops in, and the BBQ is lit. Each dish's ingredients come in from the left and cook on the grill with a sizzle; the finished dish appears and is served off to the right; the hot BBQ rests alone for a beat. Hot dogs, then burgers (patties, tomato, lettuce, cheese), then steak and fries. Small BBQ tools and sauces (tongs, ketchup, turner, mustard, basting brush, grill fork) circle the bubble while he cooks, clear of the main action. Retellings start again from the hot BBQ (step 4).",
-  "flow": "left-to-right",
   "loopFrom": 4,
-  "props": [
-    {
-      "picture": "bbq-tongs",
-      "at": "orbit",
-      "fromStep": 4,
-      "toStep": 17
-    },
-    {
-      "picture": "condiment-ketchup-bottle",
-      "at": "orbit",
-      "fromStep": 4,
-      "toStep": 17
-    },
-    {
-      "picture": "bbq-slotted-turner",
-      "at": "orbit",
-      "fromStep": 4,
-      "toStep": 17
-    },
-    {
-      "picture": "condiment-mustard-bottle",
-      "at": "orbit",
-      "fromStep": 4,
-      "toStep": 17
-    },
-    {
-      "picture": "bbq-basting-brush",
-      "at": "orbit",
-      "fromStep": 4,
-      "toStep": 17
-    },
-    {
-      "picture": "bbq-grill-fork",
-      "at": "orbit",
-      "fromStep": 4,
-      "toStep": 17
-    }
-  ]
+  "appliesTo": {
+    "label": "Garden barbecue",
+    "assetId": "outdoor.bbq"
+  },
+  "afterStory": "loop",
+  "bodyCompatibility": "rear-work-with-context"
 }

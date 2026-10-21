@@ -1,0 +1,111 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "make-tea",
+  "label": "Make a cup of tea",
+  "appliesTo": {
+    "assetId": "kitchen.kettle",
+    "label": "Kettle"
+  },
+  "cast": {
+    "kettle": {
+      "picture": "tea-kettle",
+      "role": "hero"
+    },
+    "mug": {
+      "picture": "tea-mug",
+      "role": "support"
+    },
+    "milk": {
+      "picture": "tea-milk",
+      "role": "support"
+    },
+    "spoon": {
+      "picture": "cooking-spoon",
+      "role": "support"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "kettle"
+    },
+    {
+      "do": "pause",
+      "speed": "slow"
+    },
+    {
+      "do": "present",
+      "who": "mug"
+    },
+    {
+      "do": "pour",
+      "who": "kettle",
+      "onto": "mug",
+      "speed": "slow"
+    },
+    {
+      "do": "pour",
+      "who": "milk",
+      "onto": "mug",
+      "speed": "quick"
+    },
+    {
+      "do": "stir",
+      "who": "spoon",
+      "onto": "mug"
+    },
+    {
+      "do": "pause"
+    },
+    {
+      "do": "serve",
+      "who": "mug"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [
+    {
+      "picture": "symbol-heat-curls",
+      "on": "kettle",
+      "fromStep": 1,
+      "toStep": 4
+    },
+    {
+      "picture": "symbol-pleasant-aroma",
+      "on": "mug",
+      "fromStep": 6,
+      "toStep": 8
+    }
+  ],
+  "sfx": [
+    {
+      "step": 2,
+      "at": "start",
+      "cue": "kettle-boil",
+      "owner": "kitchen.kettle",
+      "kind": "asset-state"
+    },
+    {
+      "step": 4,
+      "at": "contact",
+      "cue": "tea-pour",
+      "owner": "make-tea",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 6,
+      "at": "contact",
+      "cue": "spoon-clink",
+      "owner": "make-tea",
+      "kind": "completion"
+    }
+  ],
+  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. The kettle boils (heat curls), the mug takes the middle, hot water and milk pour in, the spoon stirs, the tea smells good and is served. No tea bag yet: Codex is asked for one; until then the tea goes straight from kettle to mug.",
+  "props": []
+}

@@ -1,34 +1,134 @@
 {
   "schema": "lighthouse-keeper/activity-story@1",
-  "id": "general-repair",
-  "label": "General repair",
-  "appliesTo": { "assetId": "workshop.repair-bench", "label": "Repair bench" },
   "bodyCompatibility": "rear-work-with-context",
   "afterStory": "loop",
   "pace": 1,
+  "flow": "left-to-right",
+  "id": "general-repair",
+  "label": "General repair",
+  "appliesTo": {
+    "assetId": "workshop.repair-bench",
+    "label": "Repair bench"
+  },
   "cast": {
-    "toolbox": { "picture": "repair-toolbox", "role": "hero" },
-    "patch": { "picture": "repair-boat-hull-patch", "role": "support" },
-    "hammer": { "picture": "repair-hammer-nails", "role": "support" },
-    "wrench": { "picture": "repair-wrench-cog", "role": "support" },
-    "knot": { "picture": "repair-rope-knot", "role": "result" }
+    "toolbox": {
+      "picture": "repair-toolbox",
+      "role": "hero"
+    },
+    "patch": {
+      "picture": "repair-boat-hull-patch",
+      "role": "support"
+    },
+    "hammer": {
+      "picture": "repair-hammer-nails",
+      "role": "support"
+    },
+    "screwdriver": {
+      "picture": "repair-phillips-screwdriver",
+      "role": "support"
+    },
+    "wrench": {
+      "picture": "repair-wrench-cog",
+      "role": "support"
+    },
+    "knot": {
+      "picture": "repair-rope-knot",
+      "role": "result"
+    }
   },
   "steps": [
-    { "do": "arrive", "who": "toolbox", "speed": "quick" },
-    { "do": "present", "who": "patch" },
-    { "do": "strike", "who": "hammer", "onto": "patch" },
-    { "do": "tighten", "who": "wrench", "onto": "patch", "speed": "quick" },
-    { "do": "reveal", "who": "knot", "onto": "patch" },
-    { "do": "settle" }
+    {
+      "do": "arrive",
+      "who": "toolbox"
+    },
+    {
+      "do": "present",
+      "who": "patch"
+    },
+    {
+      "do": "strike",
+      "who": "hammer",
+      "onto": "patch"
+    },
+    {
+      "do": "tighten",
+      "who": "screwdriver",
+      "onto": "patch",
+      "speed": "quick"
+    },
+    {
+      "do": "tighten",
+      "who": "wrench",
+      "onto": "patch"
+    },
+    {
+      "do": "land-on",
+      "who": "knot",
+      "onto": "patch"
+    },
+    {
+      "do": "pause"
+    },
+    {
+      "do": "settle"
+    }
   ],
   "ambient": [
-    { "picture": "symbol-question-mark", "on": "patch", "fromStep": 2, "toStep": 2 },
-    { "picture": "symbol-exclamation-mark", "on": "knot", "fromStep": 5, "toStep": 5 }
+    {
+      "picture": "symbol-question-mark",
+      "on": "patch",
+      "fromStep": 2,
+      "toStep": 2
+    },
+    {
+      "picture": "symbol-clean-glint",
+      "on": "patch",
+      "fromStep": 7,
+      "toStep": 7
+    }
+  ],
+  "props": [
+    {
+      "picture": "repair-combination-pliers",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 7
+    },
+    {
+      "picture": "repair-tape-measure",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 7
+    },
+    {
+      "picture": "repair-adjustable-spanner",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 7
+    }
   ],
   "sfx": [
-    { "step": 1, "at": "end", "cue": "toolbox-open", "owner": "workshop.repair-bench", "kind": "asset-state" },
-    { "step": 3, "at": "contact", "cue": "hammer-tap-wrench-click", "owner": "general-repair", "kind": "activity-beat" },
-    { "step": 5, "at": "contact", "cue": "repair-secured", "owner": "general-repair", "kind": "completion" }
+    {
+      "step": 1,
+      "at": "end",
+      "cue": "toolbox-open",
+      "owner": "workshop.repair-bench",
+      "kind": "asset-state"
+    },
+    {
+      "step": 3,
+      "at": "contact",
+      "cue": "hammer-tap",
+      "owner": "general-repair",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 6,
+      "at": "contact",
+      "cue": "repair-secured",
+      "owner": "general-repair",
+      "kind": "completion"
+    }
   ],
-  "notes": "Draft by Claude, 20 Oct 2026. The toolbox opens, the patch (the job) takes the middle with a question mark, the hammer strikes the patch, not the toolbox, the wrench tightens it, and the knot secures it with an exclamation mark."
+  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. The toolbox opens, the job (the patch, with a question mark) takes the middle, the hammer strikes it, the screwdriver and the spanner tighten it, the rope knot secures it and it gleams. Pliers, tape measure and spanner circle."
 }

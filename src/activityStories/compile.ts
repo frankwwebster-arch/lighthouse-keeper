@@ -866,7 +866,8 @@ export function compileStory(input: Story, lib: Library): Compiled {
       }
       reduced.push({ step: w.step, phase: f >= quiet[0] ? 'quiet' : 'story', bubble: { opacity: 1, scale: 1 }, items: items.sort((x, y) => x.z - y.z) })
     }
-    pair = shown
+    // A served picture has left the bubble, so it isn't carried into the next step.
+    pair = s.do === 'serve' ? shown.filter((m) => m !== s.who) : shown
   }
   for (let f = storyFrames; f < totalFrames; f++) {
     const fade = 1 - (f - storyFrames + 1) / CLEAR_FRAMES

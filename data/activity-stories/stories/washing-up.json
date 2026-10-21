@@ -1,31 +1,140 @@
 {
   "schema": "lighthouse-keeper/activity-story@1",
-  "id": "washing-up",
-  "label": "Washing up",
-  "appliesTo": { "assetId": "kitchen.sink", "label": "Kitchen sink" },
   "bodyCompatibility": "rear-work-with-context",
   "afterStory": "loop",
   "pace": 1,
+  "flow": "left-to-right",
+  "id": "washing-up",
+  "label": "Washing up",
+  "appliesTo": {
+    "assetId": "kitchen.sink",
+    "label": "Kitchen sink"
+  },
   "cast": {
-    "plate": { "picture": "washing-plate", "role": "hero" },
-    "liquid": { "picture": "washing-liquid", "role": "support" },
-    "sponge": { "picture": "washing-sponge", "role": "support" },
-    "rinse": { "picture": "washing-droplets", "role": "support" },
-    "cutlery": { "picture": "washing-cutlery", "role": "result" }
+    "plate": {
+      "picture": "washing-plate",
+      "role": "hero"
+    },
+    "liquid": {
+      "picture": "washing-liquid",
+      "role": "support"
+    },
+    "sponge": {
+      "picture": "washing-sponge",
+      "role": "support"
+    },
+    "pad": {
+      "picture": "consumable-scouring-pad",
+      "role": "support"
+    },
+    "rinse": {
+      "picture": "washing-droplets",
+      "role": "support"
+    },
+    "cutlery": {
+      "picture": "washing-cutlery",
+      "role": "result",
+      "appear": "symbol-clean-glint"
+    }
   },
   "steps": [
-    { "do": "arrive", "who": "plate" },
-    { "do": "pour", "who": "liquid", "onto": "plate", "mark": "symbol-soap-bubbles" },
-    { "do": "scrub", "who": "sponge", "onto": "plate" },
-    { "do": "drop-in", "who": "rinse", "onto": "plate", "mark": "symbol-water-droplets" },
-    { "do": "reveal", "who": "cutlery", "onto": "plate" },
-    { "do": "settle" }
+    {
+      "do": "arrive",
+      "who": "plate"
+    },
+    {
+      "do": "pour",
+      "who": "liquid",
+      "onto": "plate",
+      "mark": "symbol-soap-bubbles"
+    },
+    {
+      "do": "scrub",
+      "who": "sponge",
+      "onto": "plate"
+    },
+    {
+      "do": "wipe",
+      "who": "pad",
+      "onto": "plate",
+      "mark": "symbol-soap-bubbles"
+    },
+    {
+      "do": "drop-in",
+      "who": "rinse",
+      "onto": "plate",
+      "mark": "symbol-water-droplets"
+    },
+    {
+      "do": "pause"
+    },
+    {
+      "do": "land-on",
+      "who": "cutlery",
+      "onto": "plate"
+    },
+    {
+      "do": "serve",
+      "who": "cutlery"
+    },
+    {
+      "do": "serve",
+      "who": "plate"
+    },
+    {
+      "do": "settle"
+    }
   ],
-  "ambient": [{ "picture": "symbol-foul-odour", "on": "plate", "fromStep": 1, "toStep": 1 }],
+  "ambient": [
+    {
+      "picture": "symbol-foul-odour",
+      "on": "plate",
+      "fromStep": 1,
+      "toStep": 2
+    },
+    {
+      "picture": "symbol-clean-glint",
+      "on": "plate",
+      "fromStep": 6,
+      "toStep": 6
+    }
+  ],
+  "props": [
+    {
+      "picture": "wear-rubber-gloves-pair",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 9
+    },
+    {
+      "picture": "consumable-microfiber-cloth",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 9
+    }
+  ],
   "sfx": [
-    { "step": 2, "at": "start", "cue": "tap-water", "owner": "kitchen.sink", "kind": "asset-state" },
-    { "step": 3, "at": "contact", "cue": "sponge-scrub", "owner": "washing-up", "kind": "activity-beat" },
-    { "step": 5, "at": "contact", "cue": "clean-clink", "owner": "washing-up", "kind": "completion" }
+    {
+      "step": 2,
+      "at": "start",
+      "cue": "tap-water",
+      "owner": "kitchen.sink",
+      "kind": "asset-state"
+    },
+    {
+      "step": 3,
+      "at": "contact",
+      "cue": "sponge-scrub",
+      "owner": "washing-up",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 7,
+      "at": "contact",
+      "cue": "clean-clink",
+      "owner": "washing-up",
+      "kind": "completion"
+    }
   ],
-  "notes": "Draft by Claude, 20 Oct 2026. A dirty plate (foul odour) gets soap, a real scrub with soap-bubble marks instead of crash stars, a rinse, then clean cutlery."
+  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. A dirty plate (bad smell), washing-up liquid, a scrub with the sponge and small circles with the scouring pad, a rinse, it gleams, the clean cutlery lands on it and both go off to the right to dry. Rubber gloves and a cloth circle."
 }

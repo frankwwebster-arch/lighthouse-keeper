@@ -1,0 +1,84 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "collect-eggs",
+  "label": "Collect the eggs",
+  "appliesTo": {
+    "assetId": "garden.hen-coop",
+    "label": "Hen coop"
+  },
+  "cast": {
+    "coop": {
+      "picture": "eggs-hen-coop",
+      "role": "hero"
+    },
+    "nest": {
+      "picture": "eggs-nest",
+      "role": "support",
+      "appear": "symbol-clean-glint"
+    },
+    "basket": {
+      "picture": "eggs-basket",
+      "role": "result"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "coop",
+      "speed": "slow"
+    },
+    {
+      "do": "pause"
+    },
+    {
+      "do": "reveal",
+      "who": "nest",
+      "onto": "coop",
+      "replace": true
+    },
+    {
+      "do": "arrive",
+      "who": "basket"
+    },
+    {
+      "do": "drop-in",
+      "who": "nest",
+      "onto": "basket",
+      "speed": "slow"
+    },
+    {
+      "do": "pause"
+    },
+    {
+      "do": "serve",
+      "who": "basket",
+      "speed": "slow"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "sfx": [
+    {
+      "step": 1,
+      "at": "end",
+      "cue": "hen-cluck",
+      "owner": "garden.hen-coop",
+      "kind": "asset-state"
+    },
+    {
+      "step": 5,
+      "at": "contact",
+      "cue": "eggs-gathered",
+      "owner": "collect-eggs",
+      "kind": "completion"
+    }
+  ],
+  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. The hen coop, then a nest of fresh eggs (with a glint) comes out of it, the basket arrives, the eggs go into the basket and it is carried off.",
+  "ambient": [],
+  "props": []
+}

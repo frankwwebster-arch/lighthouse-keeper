@@ -1,31 +1,153 @@
 {
   "schema": "lighthouse-keeper/activity-story@1",
-  "id": "make-sandwich",
-  "label": "Sandwich assembly",
-  "appliesTo": { "assetId": "kitchen.prep", "label": "Kitchen work surface" },
   "bodyCompatibility": "rear-work-with-context",
   "afterStory": "loop",
   "pace": 1,
+  "flow": "left-to-right",
+  "id": "make-sandwich",
+  "label": "Make a sandwich",
+  "appliesTo": {
+    "assetId": "kitchen.fridge",
+    "label": "Fridge (snack)"
+  },
   "cast": {
-    "bread": { "picture": "sandwich-bread", "role": "hero" },
-    "ham": { "picture": "sandwich-ham", "role": "support" },
-    "lettuce": { "picture": "sandwich-lettuce", "role": "support" },
-    "tomato": { "picture": "sandwich-tomato", "role": "support" },
-    "sandwich": { "picture": "cooking-sandwich", "role": "result" }
+    "bread": {
+      "picture": "sandwich-bread",
+      "role": "hero"
+    },
+    "breadknife": {
+      "picture": "knife-bread",
+      "role": "support"
+    },
+    "butter": {
+      "picture": "ingredient-butter-block",
+      "role": "support"
+    },
+    "knife": {
+      "picture": "knife-paring",
+      "role": "support"
+    },
+    "ham": {
+      "picture": "sandwich-ham",
+      "role": "support"
+    },
+    "cheese": {
+      "picture": "cooking-cheese-slicing",
+      "role": "support"
+    },
+    "lettuce": {
+      "picture": "sandwich-lettuce",
+      "role": "support"
+    },
+    "tomato": {
+      "picture": "sandwich-tomato",
+      "role": "support"
+    },
+    "mustard": {
+      "picture": "condiment-mustard-bottle",
+      "role": "support"
+    },
+    "sandwich": {
+      "picture": "cooking-sandwich",
+      "role": "result",
+      "appear": "symbol-clean-glint"
+    }
   },
   "steps": [
-    { "do": "arrive", "who": "bread" },
-    { "do": "land-on", "who": "ham", "onto": "bread" },
-    { "do": "land-on", "who": "lettuce", "onto": "bread" },
-    { "do": "land-on", "who": "tomato", "onto": "bread" },
-    { "do": "reveal", "who": "sandwich", "onto": "bread", "replace": true },
-    { "do": "settle" }
+    {
+      "do": "arrive",
+      "who": "bread"
+    },
+    {
+      "do": "saw",
+      "who": "breadknife",
+      "onto": "bread"
+    },
+    {
+      "do": "drop-in",
+      "who": "butter",
+      "onto": "bread",
+      "speed": "quick"
+    },
+    {
+      "do": "brush",
+      "who": "knife",
+      "onto": "bread"
+    },
+    {
+      "do": "land-on",
+      "who": "ham",
+      "onto": "bread"
+    },
+    {
+      "do": "land-on",
+      "who": "cheese",
+      "onto": "bread",
+      "speed": "quick"
+    },
+    {
+      "do": "land-on",
+      "who": "lettuce",
+      "onto": "bread",
+      "speed": "quick"
+    },
+    {
+      "do": "pour",
+      "who": "mustard",
+      "onto": "bread",
+      "speed": "quick",
+      "mark": "symbol-impact-star"
+    },
+    {
+      "do": "land-on",
+      "who": "tomato",
+      "onto": "bread",
+      "speed": "quick"
+    },
+    {
+      "do": "reveal",
+      "who": "sandwich",
+      "onto": "bread",
+      "replace": true
+    },
+    {
+      "do": "serve",
+      "who": "sandwich"
+    },
+    {
+      "do": "settle"
+    }
   ],
-  "ambient": [],
+  "props": [
+    {
+      "picture": "condiment-mayonnaise-jar",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 11
+    },
+    {
+      "picture": "condiment-pickle-jar",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 11
+    }
+  ],
   "sfx": [
-    { "step": 1, "at": "end", "cue": "bread-set-down", "owner": "make-sandwich", "kind": "asset-state" },
-    { "step": 3, "at": "contact", "cue": "ingredients-stack", "owner": "make-sandwich", "kind": "activity-beat" },
-    { "step": 5, "at": "contact", "cue": "sandwich-finished", "owner": "make-sandwich", "kind": "completion" }
+    {
+      "step": 2,
+      "at": "contact",
+      "cue": "bread-saw",
+      "owner": "make-sandwich",
+      "kind": "activity-beat"
+    },
+    {
+      "step": 10,
+      "at": "contact",
+      "cue": "food-ready",
+      "owner": "make-sandwich",
+      "kind": "completion"
+    }
   ],
-  "notes": "Draft by Claude, 20 Oct 2026. Each filling lands on the bread and stays, so the stack visibly builds, then the finished sandwich replaces it."
+  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. The loaf is sliced with the bread knife (saw), buttered (the paring knife spreads it in long strokes), ham, cheese and lettuce stack up, a dab of mustard, the tomato goes on top, the finished sandwich appears with a glint and is served off to the right. Mayonnaise and pickles circle.",
+  "ambient": []
 }

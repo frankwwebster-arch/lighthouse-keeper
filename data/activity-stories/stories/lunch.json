@@ -1,0 +1,103 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "lunch",
+  "label": "Ploughman’s lunch",
+  "appliesTo": {
+    "assetId": "kitchen.fridge",
+    "label": "Fridge (midday)"
+  },
+  "cast": {
+    "plate": {
+      "picture": "washing-plate",
+      "role": "hero"
+    },
+    "bread": {
+      "picture": "sandwich-bread",
+      "role": "support"
+    },
+    "cheese": {
+      "picture": "cooking-cheese-slicing",
+      "role": "support"
+    },
+    "pickle": {
+      "picture": "condiment-pickle-jar",
+      "role": "support"
+    },
+    "mustard": {
+      "picture": "condiment-wholegrain-mustard-jar",
+      "role": "support"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "plate"
+    },
+    {
+      "do": "land-on",
+      "who": "bread",
+      "onto": "plate"
+    },
+    {
+      "do": "land-on",
+      "who": "cheese",
+      "onto": "plate"
+    },
+    {
+      "do": "pour",
+      "who": "pickle",
+      "onto": "plate",
+      "mark": "symbol-impact-star"
+    },
+    {
+      "do": "pour",
+      "who": "mustard",
+      "onto": "plate",
+      "speed": "quick",
+      "mark": "symbol-impact-star"
+    },
+    {
+      "do": "pause",
+      "speed": "slow"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "props": [
+    {
+      "picture": "ingredient-butter-block",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 6
+    },
+    {
+      "picture": "knife-paring",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 6
+    }
+  ],
+  "sfx": [
+    {
+      "step": 5,
+      "at": "contact",
+      "cue": "food-ready",
+      "owner": "lunch",
+      "kind": "completion"
+    }
+  ],
+  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. The plate, then bread and cheese land on it, pickle tips out of the jar, a dab of wholegrain mustard, and it smells good. The library's “lunch” picture is a bowl of soup, so the story ends on the plate; Codex is asked for a ploughman's plate to appear and be served.",
+  "ambient": [
+    {
+      "picture": "symbol-pleasant-aroma",
+      "on": "plate",
+      "fromStep": 6,
+      "toStep": 6
+    }
+  ]
+}

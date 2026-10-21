@@ -1,0 +1,126 @@
+{
+  "schema": "lighthouse-keeper/activity-story@1",
+  "bodyCompatibility": "rear-work-with-context",
+  "afterStory": "loop",
+  "pace": 1,
+  "flow": "left-to-right",
+  "id": "fry-up",
+  "label": "Breakfast fry-up",
+  "appliesTo": {
+    "assetId": "kitchen.oven",
+    "label": "Cooker (morning)"
+  },
+  "cast": {
+    "pan": {
+      "picture": "cooking-pan",
+      "role": "hero"
+    },
+    "oil": {
+      "picture": "condiment-olive-oil",
+      "role": "support"
+    },
+    "bacon": {
+      "picture": "cooking-bacon",
+      "role": "support"
+    },
+    "egg": {
+      "picture": "mixing-egg",
+      "role": "support"
+    },
+    "breakfast": {
+      "picture": "meal-breakfast",
+      "role": "result",
+      "appear": "symbol-pleasant-aroma"
+    },
+    "ketchup": {
+      "picture": "condiment-ketchup-bottle",
+      "role": "support"
+    }
+  },
+  "steps": [
+    {
+      "do": "arrive",
+      "who": "pan"
+    },
+    {
+      "do": "pour",
+      "who": "oil",
+      "onto": "pan",
+      "speed": "quick"
+    },
+    {
+      "do": "flip",
+      "who": "bacon",
+      "onto": "pan",
+      "mark": "symbol-sizzle-spark"
+    },
+    {
+      "do": "land-on",
+      "who": "egg",
+      "onto": "pan",
+      "mark": "symbol-sizzle-spark"
+    },
+    {
+      "do": "pause"
+    },
+    {
+      "do": "reveal",
+      "who": "breakfast",
+      "onto": "pan",
+      "replace": true
+    },
+    {
+      "do": "pour",
+      "who": "ketchup",
+      "onto": "breakfast",
+      "speed": "quick",
+      "mark": "symbol-impact-star"
+    },
+    {
+      "do": "serve",
+      "who": "breakfast"
+    },
+    {
+      "do": "settle"
+    }
+  ],
+  "ambient": [
+    {
+      "picture": "symbol-heat-shimmer",
+      "on": "pan",
+      "fromStep": 1,
+      "toStep": 5
+    }
+  ],
+  "props": [
+    {
+      "picture": "toast-slices",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 8
+    },
+    {
+      "picture": "tea-mug",
+      "at": "orbit",
+      "fromStep": 2,
+      "toStep": 8
+    }
+  ],
+  "sfx": [
+    {
+      "step": 3,
+      "at": "contact",
+      "cue": "bacon-sizzle",
+      "owner": "kitchen.oven",
+      "kind": "asset-state"
+    },
+    {
+      "step": 6,
+      "at": "contact",
+      "cue": "food-ready",
+      "owner": "fry-up",
+      "kind": "completion"
+    }
+  ],
+  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. A splash of oil, the bacon flips in and the egg lands with a sizzle, a moment to cook, the full breakfast appears, ketchup on top, and it is served. Toast and a mug of tea circle (the toaster has its own story)."
+}

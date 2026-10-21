@@ -64,11 +64,11 @@ describe('bubble story drafts', () => {
         }
       })
 
-      it('reduced motion ends on pictures from the full-motion ending', () => {
-        const end = (frames: typeof c.full) => objects(frames[c.storyFrames - 1].items).map((i) => i.id)
+      it('reduced motion ends on pictures from the full-motion ending (an empty bubble if everything was served)', () => {
+        const end = (frames: typeof c.full) => objects(frames[c.storyFrames - 1].items).filter((i) => !i.id.startsWith('prop-')).map((i) => i.id)
         const full = end(c.full)
         for (const id of end(c.reduced)) expect(full).toContain(id)
-        expect(end(c.reduced).length).toBeGreaterThan(0)
+        expect(end(c.reduced).length > 0).toBe(full.length > 0)
       })
 
       it('loops cleanly: clears after the quiet moment, or flows straight back to its retelling step', () => {
