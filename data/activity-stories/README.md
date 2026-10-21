@@ -125,6 +125,15 @@ animals retain restrained adult anatomy and natural eyes, with feather/fibre
 detail simplified before it becomes mascot or texture rendering. No story
 definition or `src/activityStories/` file changed.
 
+**Hen-and-coop correction gate (21 October 2026):** Frank said the hen in the
+baking/eggs/mixing sheet was “not quite right to my eye”. The family pack stays
+immutable and the replacement candidate is isolated at
+`art/drafts/activity-story-ligne-claire-eggs-hen-coop-correction-2026-10-21-v1/`.
+It uses a small bead eye without sclera, a smaller naturally proportioned head,
+weight-bearing breast/legs/toes and irregular feather groups. The rejected
+candidate, current V1 and other eight family candidates remain byte-identical;
+nothing is registered, so the catalogue remains 305 pictures / 365 versions.
+
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A
 story has no upper length, only a five-second floor. Frank sets each

@@ -117,6 +117,15 @@ corrected candidate uses restrained adult anatomy, natural expression and
 simplified interior detail. Register nothing before Frank approves the exact
 nine-row contact sheet. Claude's stories/runtime remain unchanged.
 
+Frank then said the chicken was “not quite right to my eye”. Preserve the
+family pack unchanged and use the fresh correction gate at
+`art/drafts/activity-story-ligne-claire-eggs-hen-coop-correction-2026-10-21-v1/`.
+Its proposed replacement uses a bead eye without sclera, smaller adult head,
+weight-bearing legs/toes and irregular feather groups. The rejected family
+candidate is hash-pinned inside the correction pack. Register nothing before
+Frank approves this exact one-row correction sheet; the other eight candidates
+remain unchanged and unregistered.
+
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 
 Frank has authorised an exhaustive, reversible audit and redraft programme for

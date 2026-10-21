@@ -98,6 +98,16 @@ scale and dense feather texture. The corrected pass adds this recipe rule:
 animals need restrained adult anatomy and natural expression, with feather or
 fibre detail simplified before it becomes texture rendering.
 
+**Hen correction gate (21 October 2026):** Frank said the chicken in that
+nine-row sheet was “not quite right to my eye”. The family pack remains
+immutable; a replacement is isolated at
+`art/drafts/activity-story-ligne-claire-eggs-hen-coop-correction-2026-10-21-v1/`.
+The correction prioritises observed adult-hen anatomy over graphic charm: a
+small bead eye without visible sclera, smaller head, weight-bearing breast,
+credible shanks/toes and irregular feather groups. The prior candidate is
+retained as rejected evidence. Nothing is registered and the other eight
+family candidates remain unchanged.
+
 ## Ready-to-paste prompt
 
 ```text
