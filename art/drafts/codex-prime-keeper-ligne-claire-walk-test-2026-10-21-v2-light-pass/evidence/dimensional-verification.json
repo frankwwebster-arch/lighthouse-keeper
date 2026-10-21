@@ -1,0 +1,884 @@
+{
+  "status": "FEASIBILITY TEST \u2014 NOT APPROVED PRODUCTION ART",
+  "geometryPolicy": "RGB treatment may change; source alpha bytes, cell, density, anchor, baseline and frame registration must not.",
+  "static": {
+    "source": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+    "sourceSha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3",
+    "test": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/static/keeper-prime-side-right-ligne-claire-light-pass-v2.png",
+    "testSha256": "d2b8f085bfb547193cbcffa210e4764fd7e94dc99b1f7e3e2fe582c885e6c4aa",
+    "canvasPixels": [
+      256,
+      320
+    ],
+    "logicalCell": [
+      32,
+      40
+    ],
+    "density": 8,
+    "sourceAnchor": [
+      128,
+      320
+    ],
+    "logicalAnchor": [
+      16,
+      40
+    ],
+    "baselineSourceY": 320,
+    "original": {
+      "boundsExclusive": [
+        77,
+        18,
+        179,
+        316
+      ],
+      "alphaSha256": "30e865832e409321652314c10fcd5a781972333984e6d69bdbb7601ec37b4d29",
+      "floorContact": {
+        "opaqueBottomY": 315,
+        "opaqueBottomXRangeInclusive": [
+          125,
+          157
+        ],
+        "opaqueBottomXMidpoint": 141.0,
+        "registeredFootAnchorSource": [
+          128,
+          320
+        ],
+        "registeredFootAnchorLogical": [
+          16,
+          40
+        ]
+      }
+    },
+    "testGeometry": {
+      "boundsExclusive": [
+        77,
+        18,
+        179,
+        316
+      ],
+      "alphaSha256": "30e865832e409321652314c10fcd5a781972333984e6d69bdbb7601ec37b4d29",
+      "floorContact": {
+        "opaqueBottomY": 315,
+        "opaqueBottomXRangeInclusive": [
+          125,
+          157
+        ],
+        "opaqueBottomXMidpoint": 141.0,
+        "registeredFootAnchorSource": [
+          128,
+          320
+        ],
+        "registeredFootAnchorLogical": [
+          16,
+          40
+        ]
+      }
+    },
+    "alphaByteIdentical": true,
+    "alphaDifferingPixels": 0,
+    "appearanceDeltaOpaque": {
+      "meanAbsoluteChannelDelta": 5.17,
+      "meanEuclideanRgbDelta": 10.08,
+      "maxChannelDelta": 58,
+      "pixelsWithinEightRgbLevelsPercent": 77.065
+    },
+    "edgeAlphaPixelsOriginal": 0,
+    "edgeAlphaPixelsTest": 0
+  },
+  "walk": [
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f1.png",
+      "sourceSha256": "0e80ea65610452c93a1ebe48424dddcc5709a77340b4bc1e93dddff38809e656",
+      "test": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f1.png",
+      "testSha256": "d7758004d9188922a5a128a06ddc4fd0dae84a7a015705b7d6cd3444b392829f",
+      "canvasPixels": [
+        256,
+        320
+      ],
+      "logicalCell": [
+        32,
+        40
+      ],
+      "density": 8,
+      "sourceAnchor": [
+        128,
+        320
+      ],
+      "logicalAnchor": [
+        16,
+        40
+      ],
+      "baselineSourceY": 320,
+      "original": {
+        "boundsExclusive": [
+          41,
+          18,
+          233,
+          316
+        ],
+        "alphaSha256": "e5209a60046b512423d271be5ad30fa14d489674796a96a46a9d398265a04f30",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            99,
+            180
+          ],
+          "opaqueBottomXMidpoint": 139.5,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "testGeometry": {
+        "boundsExclusive": [
+          41,
+          18,
+          233,
+          316
+        ],
+        "alphaSha256": "e5209a60046b512423d271be5ad30fa14d489674796a96a46a9d398265a04f30",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            99,
+            180
+          ],
+          "opaqueBottomXMidpoint": 139.5,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "alphaByteIdentical": true,
+      "alphaDifferingPixels": 0,
+      "appearanceDeltaOpaque": {
+        "meanAbsoluteChannelDelta": 5.319,
+        "meanEuclideanRgbDelta": 10.432,
+        "maxChannelDelta": 49,
+        "pixelsWithinEightRgbLevelsPercent": 73.222
+      },
+      "edgeAlphaPixelsOriginal": 0,
+      "edgeAlphaPixelsTest": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f2.png",
+      "sourceSha256": "2b8e91de747b527dc3f1d6e5aa6e95753c4f360b9d542534a286b819eace15bf",
+      "test": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f2.png",
+      "testSha256": "9cb7331f715b8eb9f5dfa11c1609cc0fe4af9d6929ac3ade871eadc505c54328",
+      "canvasPixels": [
+        256,
+        320
+      ],
+      "logicalCell": [
+        32,
+        40
+      ],
+      "density": 8,
+      "sourceAnchor": [
+        128,
+        320
+      ],
+      "logicalAnchor": [
+        16,
+        40
+      ],
+      "baselineSourceY": 320,
+      "original": {
+        "boundsExclusive": [
+          61,
+          16,
+          210,
+          316
+        ],
+        "alphaSha256": "5e08973a567588a8fe382f68e9eb5de4d1f6e62b0389e92f6ac0c23cd87f31fa",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            149,
+            170
+          ],
+          "opaqueBottomXMidpoint": 159.5,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "testGeometry": {
+        "boundsExclusive": [
+          61,
+          16,
+          210,
+          316
+        ],
+        "alphaSha256": "5e08973a567588a8fe382f68e9eb5de4d1f6e62b0389e92f6ac0c23cd87f31fa",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            149,
+            170
+          ],
+          "opaqueBottomXMidpoint": 159.5,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "alphaByteIdentical": true,
+      "alphaDifferingPixels": 0,
+      "appearanceDeltaOpaque": {
+        "meanAbsoluteChannelDelta": 5.396,
+        "meanEuclideanRgbDelta": 10.574,
+        "maxChannelDelta": 50,
+        "pixelsWithinEightRgbLevelsPercent": 71.852
+      },
+      "edgeAlphaPixelsOriginal": 0,
+      "edgeAlphaPixelsTest": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f3.png",
+      "sourceSha256": "b376254e9c29da38c80973c09a4242ddfc29b2ff3a70b724e97510cc90ac91d4",
+      "test": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f3.png",
+      "testSha256": "1989ac1232c96f61e3234de175c5958b5f8ebf70ffa44b6482b838f712abb988",
+      "canvasPixels": [
+        256,
+        320
+      ],
+      "logicalCell": [
+        32,
+        40
+      ],
+      "density": 8,
+      "sourceAnchor": [
+        128,
+        320
+      ],
+      "logicalAnchor": [
+        16,
+        40
+      ],
+      "baselineSourceY": 320,
+      "original": {
+        "boundsExclusive": [
+          84,
+          17,
+          203,
+          316
+        ],
+        "alphaSha256": "cedda42a6d42412b80f8e3bb06a2df7a72b78b01df403d72a2fbc951821e416b",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            125,
+            152
+          ],
+          "opaqueBottomXMidpoint": 138.5,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "testGeometry": {
+        "boundsExclusive": [
+          84,
+          17,
+          203,
+          316
+        ],
+        "alphaSha256": "cedda42a6d42412b80f8e3bb06a2df7a72b78b01df403d72a2fbc951821e416b",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            125,
+            152
+          ],
+          "opaqueBottomXMidpoint": 138.5,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "alphaByteIdentical": true,
+      "alphaDifferingPixels": 0,
+      "appearanceDeltaOpaque": {
+        "meanAbsoluteChannelDelta": 5.705,
+        "meanEuclideanRgbDelta": 11.144,
+        "maxChannelDelta": 49,
+        "pixelsWithinEightRgbLevelsPercent": 69.645
+      },
+      "edgeAlphaPixelsOriginal": 0,
+      "edgeAlphaPixelsTest": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f4.png",
+      "sourceSha256": "982646b0b0e6f3f986fc42ef8f9d1abd542ac417e2e2061c9f3aec9fd4e3fa2b",
+      "test": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f4.png",
+      "testSha256": "a87617ad28b6081b6cc72b68d6ad6ad8eb059b810f27c4a4411e9e5a5b646897",
+      "canvasPixels": [
+        256,
+        320
+      ],
+      "logicalCell": [
+        32,
+        40
+      ],
+      "density": 8,
+      "sourceAnchor": [
+        128,
+        320
+      ],
+      "logicalAnchor": [
+        16,
+        40
+      ],
+      "baselineSourceY": 320,
+      "original": {
+        "boundsExclusive": [
+          46,
+          17,
+          232,
+          316
+        ],
+        "alphaSha256": "ec65434f37c2464f59a6b6f0e1dd11ea2835f5c666225ea8f65076faf2aa949b",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            109,
+            126
+          ],
+          "opaqueBottomXMidpoint": 117.5,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "testGeometry": {
+        "boundsExclusive": [
+          46,
+          17,
+          232,
+          316
+        ],
+        "alphaSha256": "ec65434f37c2464f59a6b6f0e1dd11ea2835f5c666225ea8f65076faf2aa949b",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            109,
+            126
+          ],
+          "opaqueBottomXMidpoint": 117.5,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "alphaByteIdentical": true,
+      "alphaDifferingPixels": 0,
+      "appearanceDeltaOpaque": {
+        "meanAbsoluteChannelDelta": 5.662,
+        "meanEuclideanRgbDelta": 11.105,
+        "maxChannelDelta": 48,
+        "pixelsWithinEightRgbLevelsPercent": 70.368
+      },
+      "edgeAlphaPixelsOriginal": 0,
+      "edgeAlphaPixelsTest": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f5.png",
+      "sourceSha256": "545e7338151e6e5a5bb66cd236955cc497229f317b982ba0e8469e5ed4104549",
+      "test": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f5.png",
+      "testSha256": "b9ffe994a8849ca5ef6bb1025924ff6afccfc31d77f950bc0f814d924e18b1ce",
+      "canvasPixels": [
+        256,
+        320
+      ],
+      "logicalCell": [
+        32,
+        40
+      ],
+      "density": 8,
+      "sourceAnchor": [
+        128,
+        320
+      ],
+      "logicalAnchor": [
+        16,
+        40
+      ],
+      "baselineSourceY": 320,
+      "original": {
+        "boundsExclusive": [
+          47,
+          23,
+          234,
+          316
+        ],
+        "alphaSha256": "95fd808ddf4be42ac7fd7e4c095a460c38f0e9901dfe233b0cb9a495fd80ccaa",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            90,
+            110
+          ],
+          "opaqueBottomXMidpoint": 100.0,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "testGeometry": {
+        "boundsExclusive": [
+          47,
+          23,
+          234,
+          316
+        ],
+        "alphaSha256": "95fd808ddf4be42ac7fd7e4c095a460c38f0e9901dfe233b0cb9a495fd80ccaa",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            90,
+            110
+          ],
+          "opaqueBottomXMidpoint": 100.0,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "alphaByteIdentical": true,
+      "alphaDifferingPixels": 0,
+      "appearanceDeltaOpaque": {
+        "meanAbsoluteChannelDelta": 5.582,
+        "meanEuclideanRgbDelta": 10.932,
+        "maxChannelDelta": 48,
+        "pixelsWithinEightRgbLevelsPercent": 71.127
+      },
+      "edgeAlphaPixelsOriginal": 0,
+      "edgeAlphaPixelsTest": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f6.png",
+      "sourceSha256": "17d007eee75c2e86d8f02c05ae6d30740abcab4ec59c1ad9603c41383e9ffc52",
+      "test": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f6.png",
+      "testSha256": "428dffbf0e70f20a5519e2b0c73e6d2416a2e0152504e0c3e434e2224882562a",
+      "canvasPixels": [
+        256,
+        320
+      ],
+      "logicalCell": [
+        32,
+        40
+      ],
+      "density": 8,
+      "sourceAnchor": [
+        128,
+        320
+      ],
+      "logicalAnchor": [
+        16,
+        40
+      ],
+      "baselineSourceY": 320,
+      "original": {
+        "boundsExclusive": [
+          63,
+          22,
+          194,
+          316
+        ],
+        "alphaSha256": "b34e7ade11e9ba294d24b34d0af18074732c0be125307f1e78c06a0d4292c9d0",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            140,
+            176
+          ],
+          "opaqueBottomXMidpoint": 158.0,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "testGeometry": {
+        "boundsExclusive": [
+          63,
+          22,
+          194,
+          316
+        ],
+        "alphaSha256": "b34e7ade11e9ba294d24b34d0af18074732c0be125307f1e78c06a0d4292c9d0",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            140,
+            176
+          ],
+          "opaqueBottomXMidpoint": 158.0,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "alphaByteIdentical": true,
+      "alphaDifferingPixels": 0,
+      "appearanceDeltaOpaque": {
+        "meanAbsoluteChannelDelta": 5.754,
+        "meanEuclideanRgbDelta": 11.278,
+        "maxChannelDelta": 50,
+        "pixelsWithinEightRgbLevelsPercent": 69.906
+      },
+      "edgeAlphaPixelsOriginal": 0,
+      "edgeAlphaPixelsTest": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f7.png",
+      "sourceSha256": "dbf5b3849624cec7244322d630841895c733b6a1143c891a790a15a8fb57a0df",
+      "test": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f7.png",
+      "testSha256": "1596a143d5002c0504bfeec5ccc899220900ad20dd61a4573435f9ddaca5f26e",
+      "canvasPixels": [
+        256,
+        320
+      ],
+      "logicalCell": [
+        32,
+        40
+      ],
+      "density": 8,
+      "sourceAnchor": [
+        128,
+        320
+      ],
+      "logicalAnchor": [
+        16,
+        40
+      ],
+      "baselineSourceY": 320,
+      "original": {
+        "boundsExclusive": [
+          77,
+          23,
+          200,
+          316
+        ],
+        "alphaSha256": "56b5ff6d123e74f5e91cbd0f503ef7a347f050330d9749fe1253e1c03ed788d2",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            121,
+            138
+          ],
+          "opaqueBottomXMidpoint": 129.5,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "testGeometry": {
+        "boundsExclusive": [
+          77,
+          23,
+          200,
+          316
+        ],
+        "alphaSha256": "56b5ff6d123e74f5e91cbd0f503ef7a347f050330d9749fe1253e1c03ed788d2",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            121,
+            138
+          ],
+          "opaqueBottomXMidpoint": 129.5,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "alphaByteIdentical": true,
+      "alphaDifferingPixels": 0,
+      "appearanceDeltaOpaque": {
+        "meanAbsoluteChannelDelta": 5.671,
+        "meanEuclideanRgbDelta": 11.128,
+        "maxChannelDelta": 48,
+        "pixelsWithinEightRgbLevelsPercent": 69.798
+      },
+      "edgeAlphaPixelsOriginal": 0,
+      "edgeAlphaPixelsTest": 0
+    },
+    {
+      "source": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/frames/keeper_prime_walk-right_f8.png",
+      "sourceSha256": "cf8c53e7ffa703a5947a0f4b81a89526cae64f494a8cf37303877fe683689b61",
+      "test": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f8.png",
+      "testSha256": "f915929deb193acee3da9bd14f5d8973423591f43cf1acbd02124e92744e66be",
+      "canvasPixels": [
+        256,
+        320
+      ],
+      "logicalCell": [
+        32,
+        40
+      ],
+      "density": 8,
+      "sourceAnchor": [
+        128,
+        320
+      ],
+      "logicalAnchor": [
+        16,
+        40
+      ],
+      "baselineSourceY": 320,
+      "original": {
+        "boundsExclusive": [
+          66,
+          23,
+          229,
+          316
+        ],
+        "alphaSha256": "eee2ed5cbdcb9bbaa9e12172f442032f39f18b1f47c845ecb695b2280f51beb9",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            93,
+            136
+          ],
+          "opaqueBottomXMidpoint": 114.5,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "testGeometry": {
+        "boundsExclusive": [
+          66,
+          23,
+          229,
+          316
+        ],
+        "alphaSha256": "eee2ed5cbdcb9bbaa9e12172f442032f39f18b1f47c845ecb695b2280f51beb9",
+        "floorContact": {
+          "opaqueBottomY": 315,
+          "opaqueBottomXRangeInclusive": [
+            93,
+            136
+          ],
+          "opaqueBottomXMidpoint": 114.5,
+          "registeredFootAnchorSource": [
+            128,
+            320
+          ],
+          "registeredFootAnchorLogical": [
+            16,
+            40
+          ]
+        }
+      },
+      "alphaByteIdentical": true,
+      "alphaDifferingPixels": 0,
+      "appearanceDeltaOpaque": {
+        "meanAbsoluteChannelDelta": 5.526,
+        "meanEuclideanRgbDelta": 10.806,
+        "maxChannelDelta": 47,
+        "pixelsWithinEightRgbLevelsPercent": 71.558
+      },
+      "edgeAlphaPixelsOriginal": 0,
+      "edgeAlphaPixelsTest": 0
+    }
+  ],
+  "animation": {
+    "frames": 8,
+    "fps": 10,
+    "timingAuthority": "Fast Timing V1 for locomotion",
+    "frameOrder": [
+      "contact",
+      "down",
+      "passing",
+      "up",
+      "opposite-contact",
+      "opposite-down",
+      "opposite-passing",
+      "opposite-up"
+    ],
+    "cellPixels": [
+      256,
+      320
+    ],
+    "stripPixels": [
+      2048,
+      320
+    ],
+    "rootMotionLogicalPixelsPerSecond": 21
+  },
+  "palette": [
+    {
+      "role": "contour",
+      "rgb": [
+        13,
+        25,
+        52
+      ]
+    },
+    {
+      "role": "contour-soft",
+      "rgb": [
+        22,
+        39,
+        70
+      ]
+    },
+    {
+      "role": "marine-blue",
+      "rgb": [
+        15,
+        105,
+        205
+      ]
+    },
+    {
+      "role": "marine-blue-dark",
+      "rgb": [
+        13,
+        73,
+        148
+      ]
+    },
+    {
+      "role": "trouser-navy",
+      "rgb": [
+        56,
+        66,
+        108
+      ]
+    },
+    {
+      "role": "boot-blue",
+      "rgb": [
+        76,
+        84,
+        133
+      ]
+    },
+    {
+      "role": "cream",
+      "rgb": [
+        251,
+        242,
+        219
+      ]
+    },
+    {
+      "role": "cream-shadow",
+      "rgb": [
+        238,
+        224,
+        199
+      ]
+    },
+    {
+      "role": "skin",
+      "rgb": [
+        246,
+        176,
+        111
+      ]
+    },
+    {
+      "role": "skin-line",
+      "rgb": [
+        177,
+        76,
+        52
+      ]
+    },
+    {
+      "role": "badge-gold",
+      "rgb": [
+        244,
+        190,
+        24
+      ]
+    },
+    {
+      "role": "badge-shadow",
+      "rgb": [
+        184,
+        127,
+        22
+      ]
+    }
+  ]
+}

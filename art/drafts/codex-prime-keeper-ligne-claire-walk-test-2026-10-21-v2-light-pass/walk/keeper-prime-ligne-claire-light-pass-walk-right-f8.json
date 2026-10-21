@@ -1,0 +1,29 @@
+{
+  "name": "keeper-prime-ligne-claire-light-pass-walk-right-review-only",
+  "status": "FEASIBILITY TEST \u2014 NOT APPROVED PRODUCTION ART",
+  "w": 32,
+  "h": 40,
+  "density": 8,
+  "cell": [
+    256,
+    320
+  ],
+  "frames": 8,
+  "fps": 10,
+  "loop": true,
+  "direction": "right",
+  "anchor": [
+    16,
+    40
+  ],
+  "sourceAnchor": [
+    128,
+    320
+  ],
+  "baselineSourceY": 320,
+  "sourceMotion": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/keeper_prime_walk-right_f8.png",
+  "sourceMotionSha256": "59da79117719ca58368aab22e06520e4fb77dedd88e0fd118ffe80b4910db583",
+  "timingAuthority": "Fast Timing V1 for locomotion",
+  "renderTreatment": "Minimal 28% Prime-specific palette consolidation with 62% deep-navy ink unification; source alpha is byte-identical per frame",
+  "sha256": "9d549cc347312582ae0c032e578610b028e7967ce4be6e4378541a09ea3f546e"
+}

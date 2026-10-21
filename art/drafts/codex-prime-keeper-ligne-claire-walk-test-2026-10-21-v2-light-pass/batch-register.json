@@ -1,0 +1,181 @@
+{
+  "batchId": "codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass",
+  "status": "FEASIBILITY TEST \u2014 NOT APPROVED PRODUCTION ART",
+  "scope": "Rendering-treatment proof only. No production, canonical, runtime, manifest, gameplay, or interaction asset is changed.",
+  "authorities": [
+    {
+      "role": "permanent Prime identity/face/front authority",
+      "file": "art/drafts/keeper-prime-master-2026-10-12-v1/drafts/keeper_prime_master-neutral-front_f1.png",
+      "sha256": "a9a5c37fe72221992ec499fa3096fdd0581977b4ac03ff7788da2af411107a2e"
+    },
+    {
+      "role": "approved static side-right endpoint and dimensional authority",
+      "file": "art/drafts/keeper-prime-side-right-rigged-2026-10-13-v1/drafts/keeper_prime_master-neutral-standing-side-right_f1.png",
+      "sha256": "a172a8a01a387a21d14c092d2a9eb53b938a44574279108a5776e2cc67f2fff3"
+    },
+    {
+      "role": "approved eight-frame side-right locomotion artwork authority",
+      "file": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/keeper_prime_walk-right_f8.png",
+      "sha256": "59da79117719ca58368aab22e06520e4fb77dedd88e0fd118ffe80b4910db583"
+    }
+  ],
+  "generatedStudies": [
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/sources/generated-studies/static-style-study.png",
+      "sha256": "bb5bebd2c28f77b3dea452699761bc271aeb4ab29b4d9b8f3c6b8f511935aba3",
+      "role": "rendering-language study only; rejected as geometry authority"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/sources/generated-studies/walk-style-study.png",
+      "sha256": "0783f169dd28c7c001724ee5aeba764d708f743b22bf2603ac3ba2ee975c80d6",
+      "role": "rendering-language study only; rejected as geometry authority"
+    }
+  ],
+  "method": {
+    "imageGeneration": "Two built-in image-generation studies established the target rendering language; neither generated silhouette was accepted as geometry.",
+    "finalArtwork": "Deterministic minimal semantic finishing pass over approved Prime pixels; 72% of source RGB remains in broad materials and exact source alpha is retained byte-for-byte.",
+    "basePaletteBlendStrength": 0.28,
+    "inkBlendStrength": 0.62,
+    "paletteRoles": [
+      "contour",
+      "contour-soft",
+      "marine-blue",
+      "marine-blue-dark",
+      "trouser-navy",
+      "boot-blue",
+      "cream",
+      "cream-shadow",
+      "skin",
+      "skin-line",
+      "badge-gold",
+      "badge-shadow"
+    ],
+    "genericFilterOrEdgeDetection": false
+  },
+  "geometry": {
+    "logicalCell": [
+      32,
+      40
+    ],
+    "density": 8,
+    "cellPixels": [
+      256,
+      320
+    ],
+    "logicalAnchor": [
+      16,
+      40
+    ],
+    "sourceAnchor": [
+      128,
+      320
+    ],
+    "baselineSourceY": 320,
+    "alphaByteIdenticalAllFrames": true,
+    "transparentSafetyGutterAllFrames": true
+  },
+  "animation": {
+    "name": "keeper-prime-ligne-claire-light-pass-walk-right-review-only",
+    "status": "FEASIBILITY TEST \u2014 NOT APPROVED PRODUCTION ART",
+    "w": 32,
+    "h": 40,
+    "density": 8,
+    "cell": [
+      256,
+      320
+    ],
+    "frames": 8,
+    "fps": 10,
+    "loop": true,
+    "direction": "right",
+    "anchor": [
+      16,
+      40
+    ],
+    "sourceAnchor": [
+      128,
+      320
+    ],
+    "baselineSourceY": 320,
+    "sourceMotion": "art/drafts/keeper-prime-walk-2026-10-14-v6/drafts/keeper_prime_walk-right_f8.png",
+    "sourceMotionSha256": "59da79117719ca58368aab22e06520e4fb77dedd88e0fd118ffe80b4910db583",
+    "timingAuthority": "Fast Timing V1 for locomotion",
+    "renderTreatment": "Minimal 28% Prime-specific palette consolidation with 62% deep-navy ink unification; source alpha is byte-identical per frame",
+    "sha256": "9d549cc347312582ae0c032e578610b028e7967ce4be6e4378541a09ea3f546e"
+  },
+  "outputs": [
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/evidence/current-vs-ligne-claire.png",
+      "sha256": "2ec890be832db6da842362c3751a87b074225df217476bd61fa3fd56275a7b32"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/evidence/dimensional-comparison.png",
+      "sha256": "8d4e9152a1dc52a3f1d3361845a9a55d0094b6fd5b223981513f349486113046"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/evidence/dimensional-verification.json",
+      "sha256": "bfe11d56f2b6fa7c4833e5e5f34b71d8c8ac20723c6ed651d2f4b2035062877a"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/evidence/onion-skin-adjacent.png",
+      "sha256": "952dfcdb0cc4d1396b1d459d9d8be3c2f388158079c19203462fe216391a5d46"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/evidence/walk-contact-sheet.png",
+      "sha256": "e253451b1d984ab882290df28e8d41520d2387bfd5a5d55a01143050198507bd"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/static/keeper-prime-side-right-ligne-claire-light-pass-v2.png",
+      "sha256": "d2b8f085bfb547193cbcffa210e4764fd7e94dc99b1f7e3e2fe582c885e6c4aa"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f1.png",
+      "sha256": "d7758004d9188922a5a128a06ddc4fd0dae84a7a015705b7d6cd3444b392829f"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f2.png",
+      "sha256": "9cb7331f715b8eb9f5dfa11c1609cc0fe4af9d6929ac3ade871eadc505c54328"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f3.png",
+      "sha256": "1989ac1232c96f61e3234de175c5958b5f8ebf70ffa44b6482b838f712abb988"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f4.png",
+      "sha256": "a87617ad28b6081b6cc72b68d6ad6ad8eb059b810f27c4a4411e9e5a5b646897"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f5.png",
+      "sha256": "b9ffe994a8849ca5ef6bb1025924ff6afccfc31d77f950bc0f814d924e18b1ce"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f6.png",
+      "sha256": "428dffbf0e70f20a5519e2b0c73e6d2416a2e0152504e0c3e434e2224882562a"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f7.png",
+      "sha256": "1596a143d5002c0504bfeec5ccc899220900ad20dd61a4573435f9ddaca5f26e"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/frames/keeper-prime-ligne-claire-light-pass-walk-right-f8.png",
+      "sha256": "f915929deb193acee3da9bd14f5d8973423591f43cf1acbd02124e92744e66be"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/keeper-prime-ligne-claire-light-pass-walk-preview.gif",
+      "sha256": "4dd0d2a4496db492f89c9199146769e83b28986c89003659bf309aded881f5de"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/keeper-prime-ligne-claire-light-pass-walk-preview.webp",
+      "sha256": "3fa7f71b4ac8731963611fb192ccc5780f7b17ccc1369dec87e5cc353a14a14c"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/keeper-prime-ligne-claire-light-pass-walk-right-f8.json",
+      "sha256": "c7ebd9db9f273587e6753b119fa6c111898ee4168935662c0a117070ac98d644"
+    },
+    {
+      "file": "art/drafts/codex-prime-keeper-ligne-claire-walk-test-2026-10-21-v2-light-pass/walk/keeper-prime-ligne-claire-light-pass-walk-right-f8.png",
+      "sha256": "9d549cc347312582ae0c032e578610b028e7967ce4be6e4378541a09ea3f546e"
+    }
+  ],
+  "rollback": "Delete only this versioned draft directory. No canonical or production file depends on it."
+}
