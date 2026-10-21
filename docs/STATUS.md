@@ -162,6 +162,18 @@ choreography remain independently paced so enjoyable actions can be savoured.
 No Prime artwork has entered Workbench Final or production, and the runtime
 sprite manifest remains unchanged.
 
+The consolidated Prime Keeper animation library is now available at
+`/prime-keeper-animations`. It indexes 14 approved playable authorities across
+locomotion, turns, stairs, ladder, four-way sit/stand and contextual activity.
+Every clip has independent and global transport controls, including exact frame
+stepping, and all 213 unique source images are decoded before controls unlock.
+Its non-destructive sandbox combines, reorders, reverses and repeats clips,
+persists locally, exports JSON and warns when declared endpoint poses need a
+bridge. The held-implement POC V3 is linked but correctly excluded from the
+playable approved bank because its proxy body artwork is not production-approved.
+This tool does not populate Workbench Final or change runtime/production. See
+`docs/PRIME_KEEPER_ANIMATION_LIBRARY_2026-10-21.md`.
+
 The approved kitchen full-room authority is
 `/keeper-review/kitchen-continuous-run-approved-v23/`. Frank marked exact Image
 1 with “this is correct” at `(37.3%, 56.9%)`; its `2170 × 725` PNG is preserved

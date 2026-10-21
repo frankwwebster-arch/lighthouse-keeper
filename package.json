@@ -256,6 +256,7 @@
     "verify:keeper-full-face-turn-endpoints": "node scripts/verify_keeper_full_face_turn_endpoints.ts",
     "verify:keeper-full-face-turn-redraw-v2": "node scripts/verify_keeper_full_face_turn_redraw_v2.ts",
     "verify:keeper-animation-workbench": "node scripts/verify_keeper_animation_workbench.ts",
+    "verify:prime-keeper-animation-library": "node scripts/build_prime_keeper_animation_library.mjs --check",
     "typecheck": "tsc --noEmit",
     "sprites": "node scripts/keeper-contract.ts && node scripts/sprites.ts",
     "keeper-contract": "node scripts/keeper-contract.ts",

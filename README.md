@@ -1171,6 +1171,17 @@ zero-delta evidence at all 15 datums. Frank approved it on 13 October 2026 with
 `/keeper-review/keeper-prime-side-right-rigged-v2/`. It is an artwork authority,
 not a production promotion.
 
+The consolidated **Prime Keeper approved animation library** is at
+`https://lighthouse-keeper-mu.vercel.app/prime-keeper-animations`. It gathers
+14 approved playable review authorities into one page, decodes all 213 unique
+frame images before unlocking playback, gives every clip play/pause/stop,
+frame stepping and scrubbing, and adds a locally saved sequence sandbox with
+reorder, reverse, repeat, endpoint warnings and JSON export. It does not alter
+the original review assets or promote anything into Final/runtime. The
+held-implement POC V3 remains linked but outside the playable approved bank
+because its proxy body art is explicitly non-production. Full contract:
+`docs/PRIME_KEEPER_ANIMATION_LIBRARY_2026-10-21.md`.
+
 The separate Keeper Timing Lab is at `/keeper-timing-lab`. It keeps approved
 frame bytes, frame order, root motion and endpoint contracts locked while walk,
 deceleration, neutral beats, turns and endpoint holds remain independently
