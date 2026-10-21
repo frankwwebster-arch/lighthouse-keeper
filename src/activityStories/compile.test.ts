@@ -3,7 +3,7 @@ import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { compileStory } from './compile'
 import { STORY_DRAFTS, STORY_FILES, LIBRARY } from './drafts'
-import { cleanStory, type Library } from './format'
+import { cleanStory, groupPictures, OTHER_GROUP, playsText, type Library } from './format'
 
 const objects = <T extends { kind: string }>(items: T[]) => items.filter((i) => i.kind === 'object')
 
@@ -247,5 +247,26 @@ describe('the bubble outline', () => {
     expect(a).not.toEqual(b)
     const small = pts(bubbleOutline(0, 0.3))
     expect(Math.max(...small.map(([, y]) => y))).toBeGreaterThan(200)
+  })
+})
+
+describe('the picture library in the studio', () => {
+  it('puts every picture in exactly one named group, so none is hidden under Other', () => {
+    const groups = groupPictures(LIBRARY)
+    expect(groups.map((g) => g.label)).not.toContain(OTHER_GROUP)
+    expect(groups.flatMap((g) => g.pictures.map(([id]) => id)).sort()).toEqual(Object.keys(LIBRARY.pictures).sort())
+  })
+
+  it('offers only objects in object menus', () => {
+    for (const g of groupPictures(LIBRARY, 'object')) for (const [, p] of g.pictures) expect(p.kind).toBe('object')
+  })
+
+  it('says how often a story plays in plain words', () => {
+    expect(playsText([1, 1])).toBe('plays once')
+    expect(playsText([2, 2])).toBe('plays twice')
+    expect(playsText([1, 2])).toBe('plays once or twice')
+    expect(playsText([2, 4])).toBe('plays 2–4 times')
+    expect(playsText([0, 1])).toBe('plays once at most')
+    expect(playsText([0, 0])).toBe('is longer than the activity')
   })
 })

@@ -194,6 +194,58 @@ export function cleanStory(raw: unknown): Story | null {
   }
 }
 
+/**
+ * The studio's picture groups, in menu order. An object goes in the first
+ * group that lists its family; every mark goes in Marks; a family no group
+ * names yet goes in “Other”, so a new picture from Codex is never hidden.
+ */
+export const PICTURE_GROUPS: { label: string; families: string[] }[] = [
+  { label: 'BBQ', families: ['bbq'] },
+  { label: 'BBQ tools', families: ['bbq-tools'] },
+  { label: 'Food and meals', families: ['meal', 'sandwich', 'cooking', 'ingredient'] },
+  { label: 'Condiments and seasoning', families: ['condiment', 'seasoning'] },
+  { label: 'Knives and prep', families: ['kitchen-tools'] },
+  { label: 'Washing up and dishwasher', families: ['washing', 'dishwasher'] },
+  { label: 'Cleaning products', families: ['cleaning-products'] },
+  { label: 'Cleaning tools', families: ['cleaning-tools'] },
+  { label: 'Sponges, cloths and bags', families: ['cleaning-cloths'] },
+  { label: 'Laundry', families: ['laundry'] },
+  { label: 'Repair', families: ['repair'] },
+]
+export const MARKS_GROUP = 'Marks'
+export const OTHER_GROUP = 'Other'
+
+/** The library's pictures sorted into the studio's groups (empty groups left out), each group in label order. */
+export function groupPictures(lib: Library, kind?: Picture['kind']): { label: string; pictures: [string, Picture][] }[] {
+  const groups = new Map<string, [string, Picture][]>([...PICTURE_GROUPS.map((g): [string, [string, Picture][]] => [g.label, []]), [MARKS_GROUP, []], [OTHER_GROUP, []]])
+  for (const entry of Object.entries(lib.pictures)) {
+    const p = entry[1]
+    if (kind && p.kind !== kind) continue
+    const label = p.kind === 'mark' ? MARKS_GROUP : (PICTURE_GROUPS.find((g) => g.families.includes(p.family))?.label ?? OTHER_GROUP)
+    groups.get(label)!.push(entry)
+  }
+  return [...groups]
+    .filter(([, list]) => list.length)
+    .map(([label, list]) => ({ label, pictures: list.sort(([, a], [, b]) => a.label.localeCompare(b.label)) }))
+}
+
+/** A step in words, as the studio and the command line show it: “Sausages · flips onto · Barbecue grill”. */
+export function describeStep(lib: Library, story: Story, s: Step | undefined): string {
+  if (!s) return ''
+  if (s.do === 'settle') return 'a quiet moment'
+  const v = VERBS[s.do]
+  const name = (as?: string) => (as && story.cast[as] ? (lib.pictures[story.cast[as].picture]?.label ?? story.cast[as].picture) : '…')
+  return v.needs.includes('onto') ? `${name(s.who)} · ${v.label} · ${name(s.onto)}` : v.needs.includes('who') ? `${name(s.who)} · ${v.label}` : v.label
+}
+
+/** “plays once”, “plays twice”, “plays once or twice”, “plays 2–3 times”: how often a story fits a 20–30 s activity. */
+export function playsText([lo, hi]: [number, number]): string {
+  const n = (k: number) => (k === 1 ? 'once' : k === 2 ? 'twice' : `${k} times`)
+  if (lo === hi) return hi === 0 ? 'is longer than the activity' : `plays ${n(hi)}`
+  if (hi <= 2) return lo === 0 ? `plays ${n(hi)} at most` : 'plays once or twice'
+  return lo === 0 ? `plays up to ${hi} times` : `plays ${lo}–${hi} times`
+}
+
 /** The version of a picture a cast member uses (pinned, or the library's current). */
 export function versionFor(lib: Library, picture: string, pinned?: number): PictureVersion | undefined {
   const p = lib.pictures[picture]

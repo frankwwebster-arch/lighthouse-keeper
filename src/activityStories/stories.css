@@ -30,3 +30,12 @@
 .ss-err { color: var(--st-accent); }
 .ss .st-list li > button { width: 100%; text-align: left; border-color: transparent; background: none; display: flex; gap: 6px; align-items: center; }
 .ss .st-list li > button.on { background: #e3edf7; border-color: var(--st-sea); }
+/* The picture library: fold-out groups with a search box. Picture ids show so Frank can name one to Claude or Codex. */
+.ss-search { width: 100%; box-sizing: border-box; margin-bottom: 6px; }
+.ss-group { border-top: 1px solid var(--st-line); padding: 4px 0; }
+.ss-group summary { cursor: pointer; font-weight: 700; font-size: 13px; padding: 3px 0; }
+.ss-group summary small { font-weight: 400; color: var(--st-dim); }
+.ss-group .ss-lib { margin: 4px 0 6px; }
+.ss-lib li.used span { font-weight: 700; }
+.ss-lib li > span { display: flex; flex-direction: column; min-width: 0; }
+.ss-lib code { font-size: 10px; color: var(--st-dim); overflow-wrap: anywhere; }

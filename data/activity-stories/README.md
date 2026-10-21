@@ -185,8 +185,56 @@ Every story that uses `bbq-grill` now plays the new drawing. To go back:
 `mark`), `--family` and `--label`. It appears in the studio's picture list
 for Frank and Claude to use in a story.
 
-**Claude adds a story.** Add `stories/<id>.json`, list it in
-`src/activityStories/drafts.ts`, run `npm test`.
+**Codex adds a new picture.** Pick its `--family` from the table below:
+that decides which fold-out group it appears in, in the studio and on the
+command line. If no family fits, add one to `PICTURE_GROUPS` in
+`src/activityStories/format.ts` (a one-line change Codex may make); a test
+fails if any picture would land in “Other”.
 
-Checks: `npm run verify:activity-stories` (library and references) and
-`npx vitest run src/activityStories` (motion rules).
+| Studio group | Families |
+| --- | --- |
+| BBQ | `bbq` |
+| BBQ tools | `bbq-tools` |
+| Food and meals | `meal`, `sandwich`, `cooking`, `ingredient` |
+| Condiments and seasoning | `condiment`, `seasoning` |
+| Knives and prep | `kitchen-tools` |
+| Washing up and dishwasher | `washing`, `dishwasher` |
+| Cleaning products | `cleaning-products` |
+| Cleaning tools | `cleaning-tools` |
+| Sponges, cloths and bags | `cleaning-cloths` |
+| Laundry | `laundry` |
+| Repair | `repair` |
+| Marks | every `--kind mark`, whatever its family |
+
+## The command-line tool (Claude and Codex)
+
+The same engine and library as the studio, so what it checks and draws is
+exactly what Frank sees. `npm run stories -- help` lists everything.
+
+```bash
+npm run stories -- pictures sponge        # find a picture's id (grouped, searchable)
+npm run stories -- list                   # every story: length, how often it plays, problems
+npm run stories -- check washing-up       # steps with frame numbers, and every problem
+npm run stories -- render washing-up      # a PNG sheet of frames to look at
+npm run stories -- render washing-up --from 20 --to 40 --every 1   # one stretch, every frame
+npm run stories -- render washing-up --reduced
+npm run stories -- new sweep-floor --label "Sweeping the floor" --like washing-up
+```
+
+`check` and `render` also take a path to any story `.json`, so a trial
+story can be tried without listing it. Sheets go to `tmp/activity-stories/`
+(not committed). Rendering uses Chrome (or the Playwright headless shell);
+set `CHROME_PATH` if neither is found. Frame numbers include the bubble's
+opening, as in the studio's frame counter.
+
+**Who does what with it.** Claude drafts and changes stories (`new`, edit
+the JSON, `check`, `render`, look, commit). Codex uses `pictures`,
+`check` and `render` to see its pictures in motion, and may start a trial
+story with `new` to show one off; Claude or Frank decides whether it
+becomes a real draft. Frank's saved studio edits win over the files: run
+`node --env-file=.env.local scripts/pull_activity_stories.mjs` before
+changing a story he has edited.
+
+Checks: `npm run verify:activity-stories` (library and references),
+`npx vitest run src/activityStories` (motion rules) and
+`npm run stories -- list` (every story at a glance).

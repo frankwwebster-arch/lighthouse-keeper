@@ -6,3 +6,6 @@ dist
 next-env.d.ts
 *.tsbuildinfo
 .env*.local
+
+# Story sheets drawn by npm run stories -- render
+/tmp/

@@ -2,18 +2,22 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { verifyPin } from '../game/remote'
 import { bubbleOutline, compileStory, FPS, type Frame } from './compile'
 import { LIBRARY, STORY_DRAFTS } from './drafts'
-import { STORY_SCHEMA, VERBS, cleanStory, versionFor, type Ambient, type CastRole, type Flow, type Prop, type PropSlot, type Speed, type Step, type Story, type Verb } from './format'
+import { STORY_SCHEMA, VERBS, cleanStory, describeStep, groupPictures, playsText, versionFor, type Ambient, type CastRole, type Flow, type Prop, type PropSlot, type Speed, type Step, type Story, type Verb } from './format'
 import { loadStories, resetStory, saveStory, storyHash, type SavedStory } from './store'
 
 const DRAFT_BY_ID = Object.fromEntries(STORY_DRAFTS.map((s) => [s.id, s]))
 const OBJECTS = Object.entries(LIBRARY.pictures).filter(([, p]) => p.kind === 'object').sort(([a], [b]) => a.localeCompare(b))
-const MARKS = Object.entries(LIBRARY.pictures).filter(([, p]) => p.kind === 'mark').sort(([a], [b]) => a.localeCompare(b))
+const MARKS = Object.entries(LIBRARY.pictures).filter(([, p]) => p.kind === 'mark').sort(([, a], [, b]) => a.label.localeCompare(b.label))
+/** Every picture menu is grouped the same way as the library list (format.ts PICTURE_GROUPS). */
+const OBJECT_GROUPS = groupPictures(LIBRARY, 'object')
+const ALL_GROUPS = groupPictures(LIBRARY)
 const AFTER: Record<Story['afterStory'], string> = { loop: 'Keep retelling it', hold: 'Tell once, then hold the result', hide: 'Tell once, then the bubble goes' }
 const PACES: [number, string][] = [[0.75, 'Slower'], [1, 'Normal'], [1.25, 'Quicker'], [1.5, 'Quickest']]
 const SPEEDS: Speed[] = ['quick', 'normal', 'slow']
 const FLOWS: Record<Flow, string> = { around: 'From both sides', 'left-to-right': 'Left to right' }
 const SLOTS: Record<PropSlot, string> = { orbit: 'circling the bubble', 'top-left': 'top left', 'top-right': 'top right', 'bottom-left': 'bottom left', 'bottom-right': 'bottom right' }
 const picLabel = (id: string) => LIBRARY.pictures[id]?.label ?? id
+const stepText = (story: Story, s: Step | undefined) => describeStep(LIBRARY, story, s)
 const slug = (v: string) => v.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60)
 
 export default function StoryStudio() {
@@ -187,21 +191,14 @@ export default function StoryStudio() {
           </form>
         )}
         <h2>Picture library</h2>
-        <p className="st-dim">Codex adds and replaces pictures. A new version reaches every story straight away; pin an older one in a story’s cast to put it back.</p>
-        <ul className="ss-lib">
-          {[...OBJECTS, ...MARKS].map(([id, p]) => (
-            <li key={id} title={p.review?.note ?? ''}>
-              <img src={versionFor(LIBRARY, id)?.url} alt="" />
-              <span>{p.label}<small> · v{p.current}{p.versions.length > 1 ? ` of ${p.versions.length}` : ''}{p.review?.status === 'rework-requested' ? ' · rework asked' : ''}</small></span>
-            </li>
-          ))}
-        </ul>
+        <p className="st-dim">Codex adds and replaces pictures. A new version reaches every story straight away; pin an older one in a story’s cast to put it back. Tap a group to open it.</p>
+        <PictureLibrary story={story} />
       </aside>
 
       <main className="st-main">
         <div className="st-title">
           <h2>{story.label}</h2>
-          <span className="st-dim">{story.appliesTo.label || 'No object yet'} · {compiled.seconds.toFixed(1)} s · {compiled.storyFrames} frames at {FPS} fps · plays {compiled.tellings[0] === compiled.tellings[1] ? compiled.tellings[0] : `${compiled.tellings[0]}–${compiled.tellings[1]}`} times in a 20–30 s activity</span>
+          <span className="st-dim">{story.appliesTo.label || 'No object yet'} · {compiled.seconds.toFixed(1)} s · {compiled.storyFrames} frames at {FPS} fps · {playsText(compiled.tellings)} in a 20–30 s activity</span>
           <span className="st-grow" />
           {editable && DRAFT_BY_ID[story.id] && (saved[story.id] || dirty.has(story.id)) && <button type="button" onClick={() => void backToDraft()}>Back to Claude’s draft</button>}
           <button type="button" onClick={copyJson} title="For Claude or Codex">Copy story</button>
@@ -292,7 +289,7 @@ export default function StoryStudio() {
               <li key={as}>
                 <img src={versionFor(LIBRARY, m.picture, m.version)?.url} alt="" />
                 <b>{as}</b>
-                <select disabled={!editable} value={m.picture} onChange={(e) => edit({ ...story, cast: { ...story.cast, [as]: { picture: e.target.value, role: m.role } } })}>{OBJECTS.map(([id, o]) => <option key={id} value={id}>{o.label}</option>)}</select>
+                <select disabled={!editable} value={m.picture} onChange={(e) => edit({ ...story, cast: { ...story.cast, [as]: { picture: e.target.value, role: m.role } } })}><ObjectOptions /></select>
                 <select disabled={!editable} value={m.role} onChange={(e) => edit({ ...story, cast: { ...story.cast, [as]: { ...m, role: e.target.value as CastRole } } })}><option value="hero">main</option><option value="support">helper</option><option value="result">result</option></select>
                 {p && p.versions.length > 1 && (
                   <select disabled={!editable} value={m.version ?? ''} onChange={(e) => edit({ ...story, cast: { ...story.cast, [as]: { picture: m.picture, role: m.role, ...(e.target.value ? { version: Number(e.target.value) } : {}) } } })} title="Pin an older version">
@@ -331,7 +328,7 @@ export default function StoryStudio() {
             return (
               <li key={i}>
                 <img src={versionFor(LIBRARY, pr.picture)?.url} alt="" />
-                <select disabled={!editable} value={pr.picture} onChange={(e) => set({ ...pr, picture: e.target.value })}>{OBJECTS.map(([id, o]) => <option key={id} value={id}>{o.label}</option>)}</select>
+                <select disabled={!editable} value={pr.picture} onChange={(e) => set({ ...pr, picture: e.target.value })}><ObjectOptions /></select>
                 <select disabled={!editable} value={pr.at} onChange={(e) => set({ ...pr, at: e.target.value as PropSlot })}>{Object.entries(SLOTS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}</select>
                 steps <input type="number" disabled={!editable} min={1} max={story.steps.length} value={pr.fromStep} onChange={(e) => set({ ...pr, fromStep: Number(e.target.value) })} />–<input type="number" disabled={!editable} min={1} max={story.steps.length} value={pr.toStep} onChange={(e) => set({ ...pr, toStep: Number(e.target.value) })} />
                 {editable && <button type="button" className="st-mini" onClick={() => edit({ ...story, props: story.props.filter((_, j) => j !== i) })}>✕</button>}
@@ -346,12 +343,48 @@ export default function StoryStudio() {
   )
 }
 
-function stepText(story: Story, s: Step | undefined): string {
-  if (!s) return ''
-  const v = VERBS[s.do]
-  const name = (as?: string) => (as && story.cast[as] ? picLabel(story.cast[as].picture) : '…')
-  if (s.do === 'settle') return 'a quiet moment'
-  return v.needs.includes('onto') ? `${name(s.who)} · ${v.label} · ${name(s.onto)}` : `${name(s.who)} · ${v.label}`
+/** The library in fold-out groups, with a search box. Groups holding a picture this story uses are marked. */
+function PictureLibrary({ story }: { story: Story }) {
+  const [q, setQ] = useState('')
+  const used = new Set([...Object.values(story.cast).map((m) => m.picture), ...story.ambient.map((a) => a.picture), ...story.props.map((p) => p.picture), ...story.steps.flatMap((s) => (s.mark ? [s.mark] : []))])
+  const needle = q.trim().toLowerCase()
+  const groups = ALL_GROUPS.map((g) => ({ ...g, pictures: needle ? g.pictures.filter(([id, p]) => id.includes(needle) || p.label.toLowerCase().includes(needle) || g.label.toLowerCase().includes(needle)) : g.pictures })).filter((g) => g.pictures.length)
+  return (
+    <>
+      <input className="ss-search" type="search" placeholder={`Search ${Object.keys(LIBRARY.pictures).length} pictures`} value={q} onChange={(e) => setQ(e.target.value)} />
+      {groups.map((g) => {
+        const inStory = g.pictures.filter(([id]) => used.has(id)).length
+        return (
+          // A search opens every matching group; the key change resets each group's own open state when the search clears.
+          <details key={`${g.label}-${needle ? 'search' : 'browse'}`} className="ss-group" open={!!needle || undefined}>
+            <summary>{g.label} <small>{g.pictures.length}{inStory ? ` · ${inStory} in this story` : ''}</small></summary>
+            <ul className="ss-lib">
+              {g.pictures.map(([id, p]) => (
+                <li key={id} title={p.review?.note ?? ''} className={used.has(id) ? 'used' : ''}>
+                  <img src={versionFor(LIBRARY, id)?.url} alt="" loading="lazy" />
+                  <span><span>{p.label}<small> · v{p.current}{p.versions.length > 1 ? ` of ${p.versions.length}` : ''}{p.review?.status === 'rework-requested' ? ' · rework asked' : ''}</small></span><code>{id}</code></span>
+                </li>
+              ))}
+            </ul>
+          </details>
+        )
+      })}
+      {!groups.length && <p className="st-dim">No picture matches “{q}”.</p>}
+    </>
+  )
+}
+
+/** Object choices for a menu, in the library's groups. */
+function ObjectOptions() {
+  return (
+    <>
+      {OBJECT_GROUPS.map((g) => (
+        <optgroup key={g.label} label={g.label}>
+          {g.pictures.map(([id, o]) => <option key={id} value={id}>{o.label}</option>)}
+        </optgroup>
+      ))}
+    </>
+  )
 }
 
 function AddCast({ onAdd, taken }: { onAdd: (as: string, picture: string) => void; taken: string[] }) {
@@ -360,7 +393,7 @@ function AddCast({ onAdd, taken }: { onAdd: (as: string, picture: string) => voi
   const name = taken.includes(as) ? `${as}-2` : as
   return (
     <div className="ss-row">
-      <select value={picture} onChange={(e) => setPicture(e.target.value)}>{OBJECTS.map(([id, o]) => <option key={id} value={id}>{o.label}</option>)}</select>
+      <select value={picture} onChange={(e) => setPicture(e.target.value)}><ObjectOptions /></select>
       <button type="button" onClick={() => onAdd(name, picture)}>Add to cast</button>
     </div>
   )

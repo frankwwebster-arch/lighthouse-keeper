@@ -53,8 +53,17 @@ and makes it current. Every story using it changes at once. Roll back with
 **To add a new picture**, add `--kind object` or `--kind mark`, `--family`
 and `--label`. It appears in the studio's picture list.
 
-**Please don't** edit `stories/*.json`, `src/activityStories/` or the motion
-rules; tell Claude (or Frank) what should change instead. Review pages
+**To see pictures in motion** (added 21 Oct), use the command-line tool:
+`npm run stories -- pictures <word>` finds ids by group,
+`npm run stories -- render <story>` draws a sheet of frames to look at, and
+`npm run stories -- new <id> --label "…" --like <story>` starts a trial
+story. Pick each new picture's `--family` from the table in
+`data/activity-stories/README.md`; it decides the picture's group in the
+studio. Full guide: README, “The command-line tool”.
+
+**Please don't** change Claude's story drafts, `src/activityStories/` (apart
+from adding a family to `PICTURE_GROUPS`) or the motion rules; tell Claude
+(or Frank) what should change instead. Review pages
 remain yours as before.
 
 ## First requests

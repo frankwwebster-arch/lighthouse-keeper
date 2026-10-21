@@ -573,6 +573,222 @@
         }
       ]
     },
+    "cleaner-bleach-bottle": {
+      "kind": "object",
+      "family": "cleaning-products",
+      "label": "Bleach",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-bleach-bottle.png",
+          "sha256": "e0661a1edac8ed1b6d4a985b71ade903ba748aee94b828467c6086c4e164700d",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            61,
+            20,
+            195,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "cleaner-bleach-bottle.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "cleaner-disinfectant-bottle": {
+      "kind": "object",
+      "family": "cleaning-products",
+      "label": "Disinfectant",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-disinfectant-bottle.png",
+          "sha256": "2203bd93f62ee35f6e8d5215ecde39baa3e6ced69b6d76e5cfc1302103b0bd39",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            55,
+            20,
+            201,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "cleaner-disinfectant-bottle.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "cleaner-furniture-polish": {
+      "kind": "object",
+      "family": "cleaning-products",
+      "label": "Furniture polish",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-furniture-polish.png",
+          "sha256": "a1c092cb617619c7b248c63a76e505e1f5a166468cf70e3b7d3dfcadeb62ed7f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            83,
+            20,
+            173,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "cleaner-furniture-polish.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "cleaner-glass-spray": {
+      "kind": "object",
+      "family": "cleaning-products",
+      "label": "Glass spray",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-glass-spray.png",
+          "sha256": "844482a466b07b091253a96eaa639e5b8ada6ba7b448248b14f9e95606f29068",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            75,
+            20,
+            181,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "cleaner-glass-spray.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "cleaner-multisurface-spray": {
+      "kind": "object",
+      "family": "cleaning-products",
+      "label": "Multi-surface spray",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-multisurface-spray.png",
+          "sha256": "7be22a7a3307e96a42bc0e9c102837f9193d8f9ca6ae79c0a3ff75a7f53db466",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            73,
+            20,
+            182,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "cleaner-multisurface-spray.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "cleaner-toilet-bottle": {
+      "kind": "object",
+      "family": "cleaning-products",
+      "label": "Toilet cleaner",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-toilet-bottle.png",
+          "sha256": "4af28f1fac7a6df71abf07919ec068cd9a8071533c0d2284b3963b397b20dfce",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            79,
+            20,
+            177,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "cleaner-toilet-bottle.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "cleaner-washing-up-liquid": {
+      "kind": "object",
+      "family": "cleaning-products",
+      "label": "Washing-up liquid bottle",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/cleaner-washing-up-liquid.png",
+          "sha256": "5badd8f058268a24bba76e7d61138eeae568cc6d2c8da55d1e40bf12089ca254",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            71,
+            20,
+            184,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "cleaner-washing-up-liquid.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "condiment-honey-pot": {
+      "kind": "object",
+      "family": "condiment",
+      "label": "Honey pot",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-honey-pot.png",
+          "sha256": "e8a1d55341f198f0eb7e2018ea4ca8e37d7f9452cc81e6e601c9be3418c4b5b4",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            27,
+            20,
+            228,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "condiment-honey-pot.png",
+          "by": "codex",
+          "note": "Codex kitchen condiments and prep pack V1"
+        }
+      ]
+    },
     "condiment-ketchup-bottle": {
       "kind": "object",
       "family": "condiment",
@@ -600,6 +816,60 @@
         }
       ]
     },
+    "condiment-malt-vinegar": {
+      "kind": "object",
+      "family": "condiment",
+      "label": "Malt vinegar",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-malt-vinegar.png",
+          "sha256": "99e49748fc316803a5b7743a8c4ac063a879498c25258c8a65ca5572397fd672",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            57,
+            20,
+            198,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "condiment-malt-vinegar.png",
+          "by": "codex",
+          "note": "Codex kitchen condiments and prep pack V1"
+        }
+      ]
+    },
+    "condiment-mayonnaise-jar": {
+      "kind": "object",
+      "family": "condiment",
+      "label": "Mayonnaise",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-mayonnaise-jar.png",
+          "sha256": "7d503285bc4ccf5cb098741c569b01a4887e4806e3c6147f97b480311be95d25",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            50,
+            20,
+            206,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "condiment-mayonnaise-jar.png",
+          "by": "codex",
+          "note": "Codex kitchen condiments and prep pack V1"
+        }
+      ]
+    },
     "condiment-mustard-bottle": {
       "kind": "object",
       "family": "condiment",
@@ -624,6 +894,276 @@
           "source": "condiment-mustard-bottle.png",
           "by": "codex",
           "note": "Codex BBQ food pack V1"
+        }
+      ]
+    },
+    "condiment-olive-oil": {
+      "kind": "object",
+      "family": "condiment",
+      "label": "Olive oil",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-olive-oil.png",
+          "sha256": "102d543540a2675c5b82575f5fc332585e6b3749bfdced4c1f162e087c49d124",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            72,
+            20,
+            183,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "condiment-olive-oil.png",
+          "by": "codex",
+          "note": "Codex kitchen condiments and prep pack V1"
+        }
+      ]
+    },
+    "condiment-pepper-mill": {
+      "kind": "object",
+      "family": "seasoning",
+      "label": "Pepper mill",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-pepper-mill.png",
+          "sha256": "762f50f6954bb69afbbdef0b41d43eef13c7d4dee0dfcb3910acf42fff1fad38",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            80,
+            20,
+            175,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "condiment-pepper-mill.png",
+          "by": "codex",
+          "note": "Codex kitchen condiments and prep pack V1"
+        }
+      ]
+    },
+    "condiment-pickle-jar": {
+      "kind": "object",
+      "family": "condiment",
+      "label": "Pickle jar",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-pickle-jar.png",
+          "sha256": "a48fc115e5ef7cc8a8200f3a26d53667e740e97473ee5c5bb9c8c70e9b81d9e4",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            50,
+            20,
+            206,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "condiment-pickle-jar.png",
+          "by": "codex",
+          "note": "Codex kitchen condiments and prep pack V1"
+        }
+      ]
+    },
+    "condiment-raspberry-jam": {
+      "kind": "object",
+      "family": "condiment",
+      "label": "Raspberry jam",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-raspberry-jam.png",
+          "sha256": "dfc5ce3f9d6ccd334bd8e6eed5ba71d203c80b7542b85e64fcf9c6d90ef2b23b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            28,
+            236,
+            227
+          ],
+          "added": "2026-10-20",
+          "source": "condiment-raspberry-jam.png",
+          "by": "codex",
+          "note": "Codex kitchen condiments and prep pack V1"
+        }
+      ]
+    },
+    "condiment-salt-mill": {
+      "kind": "object",
+      "family": "seasoning",
+      "label": "Salt mill",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-salt-mill.png",
+          "sha256": "a0eadd6a9f3b760191d69cafca84e83dca5e6b9e1d76aed6f09886ace93b3259",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            79,
+            20,
+            177,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "condiment-salt-mill.png",
+          "by": "codex",
+          "note": "Codex kitchen condiments and prep pack V1"
+        }
+      ]
+    },
+    "condiment-wholegrain-mustard-jar": {
+      "kind": "object",
+      "family": "condiment",
+      "label": "Wholegrain mustard",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-wholegrain-mustard-jar.png",
+          "sha256": "5f0739bd891dd0475e5f3827a3392fbfac6df9c584ca73937591db7c9cf4b74c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            23,
+            20,
+            233,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "condiment-wholegrain-mustard-jar.png",
+          "by": "codex",
+          "note": "Codex kitchen condiments and prep pack V1"
+        }
+      ]
+    },
+    "consumable-bin-bag-roll": {
+      "kind": "object",
+      "family": "cleaning-cloths",
+      "label": "Bin bags",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-bin-bag-roll.png",
+          "sha256": "34cc28d40e7c23a8070ae20de6cf3b7059a0982e8748f190f65af6d6ca763ec7",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            62,
+            236,
+            193
+          ],
+          "added": "2026-10-20",
+          "source": "consumable-bin-bag-roll.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "consumable-cellulose-sponge": {
+      "kind": "object",
+      "family": "cleaning-cloths",
+      "label": "Sponge (yellow)",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-cellulose-sponge.png",
+          "sha256": "9a925092377e7497a66f3cb79fc88e0a4bda006890a7d06f756ad6eb88623e7c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            56,
+            236,
+            200
+          ],
+          "added": "2026-10-20",
+          "source": "consumable-cellulose-sponge.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "consumable-microfiber-cloth": {
+      "kind": "object",
+      "family": "cleaning-cloths",
+      "label": "Microfibre cloth",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-microfiber-cloth.png",
+          "sha256": "1ab65f3b637f2b43d51d83477f43fc4ff1c68177f65f9f51c57ca8a9323a1218",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            59,
+            236,
+            196
+          ],
+          "added": "2026-10-20",
+          "source": "consumable-microfiber-cloth.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "consumable-scouring-pad": {
+      "kind": "object",
+      "family": "cleaning-cloths",
+      "label": "Scouring pad",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/consumable-scouring-pad.png",
+          "sha256": "4fb91401fa9ad9b9ff342cc1018e8e7166f8712aaeed630bc1e045ad4732e0b4",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            62,
+            236,
+            194
+          ],
+          "added": "2026-10-20",
+          "source": "consumable-scouring-pad.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
         }
       ]
     },
@@ -680,6 +1220,303 @@
         }
       ]
     },
+    "dishwasher-rinse-aid": {
+      "kind": "object",
+      "family": "dishwasher",
+      "label": "Rinse aid",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/dishwasher-rinse-aid.png",
+          "sha256": "ae014cf67a09878d0b7d297e5157893ae04cea057b4e4776b739b79b20dba268",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            81,
+            20,
+            174,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "dishwasher-rinse-aid.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "dishwasher-salt-carton": {
+      "kind": "object",
+      "family": "dishwasher",
+      "label": "Dishwasher salt",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/dishwasher-salt-carton.png",
+          "sha256": "965041349f5d1137b68dcf77c697b15988769e83d1263e35bb526db0daf164d6",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            56,
+            20,
+            200,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "dishwasher-salt-carton.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "dishwasher-tablets-tub": {
+      "kind": "object",
+      "family": "dishwasher",
+      "label": "Dishwasher tablets",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/dishwasher-tablets-tub.png",
+          "sha256": "2db3025d4b7adb6585c05f495033a6eb1bc977bdb6d0137d92cc39f733f3f0c6",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            22,
+            236,
+            234
+          ],
+          "added": "2026-10-20",
+          "source": "dishwasher-tablets-tub.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "ingredient-butter-block": {
+      "kind": "object",
+      "family": "ingredient",
+      "label": "Butter",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/ingredient-butter-block.png",
+          "sha256": "0dcf64e538831b23f10de0de4f2a773b84271470417c1908642b11fc0c847e59",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            50,
+            236,
+            205
+          ],
+          "added": "2026-10-20",
+          "source": "ingredient-butter-block.png",
+          "by": "codex",
+          "note": "Codex kitchen condiments and prep pack V1"
+        }
+      ]
+    },
+    "knife-bread": {
+      "kind": "object",
+      "family": "kitchen-tools",
+      "label": "Bread knife",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/knife-bread.png",
+          "sha256": "ea7fe35cd1487d4c1ee22539dc1ceb2e7f65143298b89e84eb9c9625228bc4d6",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            77,
+            236,
+            179
+          ],
+          "added": "2026-10-20",
+          "source": "knife-bread.png",
+          "by": "codex",
+          "note": "Codex kitchen condiments and prep pack V1"
+        }
+      ]
+    },
+    "knife-chef": {
+      "kind": "object",
+      "family": "kitchen-tools",
+      "label": "Chef's knife",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/knife-chef.png",
+          "sha256": "292543ab725d9cadd473539847e25c08ba9c867720af7b71888690293a6ccb20",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            69,
+            236,
+            187
+          ],
+          "added": "2026-10-20",
+          "source": "knife-chef.png",
+          "by": "codex",
+          "note": "Codex kitchen condiments and prep pack V1"
+        }
+      ]
+    },
+    "knife-paring": {
+      "kind": "object",
+      "family": "kitchen-tools",
+      "label": "Paring knife",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/knife-paring.png",
+          "sha256": "7d69426fd494b75186b23b33e21b69e89fd83b0747af006af227d241bdb01fb1",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            69,
+            236,
+            186
+          ],
+          "added": "2026-10-20",
+          "source": "knife-paring.png",
+          "by": "codex",
+          "note": "Codex kitchen condiments and prep pack V1"
+        }
+      ]
+    },
+    "laundry-fabric-conditioner": {
+      "kind": "object",
+      "family": "laundry",
+      "label": "Fabric conditioner",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-fabric-conditioner.png",
+          "sha256": "9598738550338eea0893a674eaa23d7a377181a39e5e31dcb5da1ee92f176029",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            56,
+            20,
+            199,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "laundry-fabric-conditioner.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "laundry-liquid-detergent": {
+      "kind": "object",
+      "family": "laundry",
+      "label": "Liquid detergent",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-liquid-detergent.png",
+          "sha256": "36bf7d4bc12087b372ceb6d72532db3755b7403fd0e622a76b7cb9826684396a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            50,
+            20,
+            206,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "laundry-liquid-detergent.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "laundry-stain-remover-tub": {
+      "kind": "object",
+      "family": "laundry",
+      "label": "Stain remover",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-stain-remover-tub.png",
+          "sha256": "25f30e5f377fdde0f1120ed29f948eeb0acd41bf5488ee8f8df66ad07c97bf9e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            26,
+            20,
+            230,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "laundry-stain-remover-tub.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "laundry-washing-powder-box": {
+      "kind": "object",
+      "family": "laundry",
+      "label": "Washing powder",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/laundry-washing-powder-box.png",
+          "sha256": "9003d57c4801186b1eff92439bffb56b5261ab34783035be721fb1cf389ae725",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            27,
+            20,
+            228,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "laundry-washing-powder-box.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
     "meal-steak-fries": {
       "kind": "object",
       "family": "meal",
@@ -704,6 +1541,33 @@
           "source": "meal-steak-fries.png",
           "by": "codex",
           "note": "Finished meal, plated (Codex BBQ food pack V1)"
+        }
+      ]
+    },
+    "prep-bread-slicing": {
+      "kind": "object",
+      "family": "kitchen-tools",
+      "label": "Slicing bread",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/prep-bread-slicing.png",
+          "sha256": "d665a9df3462d9543137b9134610181d84081cff0311d2b17293985a0a5234fb",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            65,
+            236,
+            190
+          ],
+          "added": "2026-10-20",
+          "source": "prep-bread-slicing.png",
+          "by": "codex",
+          "note": "Codex kitchen condiments and prep pack V1"
         }
       ]
     },
@@ -1291,6 +2155,195 @@
         "note": "Blurs into the sizzle spark; needs a hot-white core and a one-sided spray."
       }
     },
+    "tool-broom": {
+      "kind": "object",
+      "family": "cleaning-tools",
+      "label": "Broom",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-broom.png",
+          "sha256": "eaa3cf610a6c8320f961092443003c46514c8d6482551e19cc84cbfab7b3fee0",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            24,
+            236,
+            232
+          ],
+          "added": "2026-10-20",
+          "source": "tool-broom.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "tool-cleaning-bucket": {
+      "kind": "object",
+      "family": "cleaning-tools",
+      "label": "Bucket",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-cleaning-bucket.png",
+          "sha256": "993be679f5cec7736e624c2cc8ac36f110a1e9e8fc8f8b913af9ba351a3e5e7d",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            22,
+            236,
+            234
+          ],
+          "added": "2026-10-20",
+          "source": "tool-cleaning-bucket.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "tool-dustpan": {
+      "kind": "object",
+      "family": "cleaning-tools",
+      "label": "Dustpan",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-dustpan.png",
+          "sha256": "1947a46ee592db81559e421e94124b81244062cd7d0a90c21cdf7b4adb8e3e27",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            32,
+            236,
+            223
+          ],
+          "added": "2026-10-20",
+          "source": "tool-dustpan.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "tool-feather-duster": {
+      "kind": "object",
+      "family": "cleaning-tools",
+      "label": "Feather duster",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-feather-duster.png",
+          "sha256": "0f068ee8787f945d414bc98373a1f8796fb59730e7a0f113b8931d9f8e000e86",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            31,
+            236,
+            224
+          ],
+          "added": "2026-10-20",
+          "source": "tool-feather-duster.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "tool-hand-brush": {
+      "kind": "object",
+      "family": "cleaning-tools",
+      "label": "Hand brush",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-hand-brush.png",
+          "sha256": "72d9a2c00bd261e5804d1a4a5d2d9e4ac54f7eed269f61f6256a15019eedd7e1",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            65,
+            236,
+            190
+          ],
+          "added": "2026-10-20",
+          "source": "tool-hand-brush.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "tool-scrub-brush": {
+      "kind": "object",
+      "family": "cleaning-tools",
+      "label": "Scrubbing brush",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-scrub-brush.png",
+          "sha256": "aa2c3fe64cd926ef6756041d07a47c4eb3069c91455cedd8ebc9c5ceebb4972f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            55,
+            236,
+            200
+          ],
+          "added": "2026-10-20",
+          "source": "tool-scrub-brush.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
+    "tool-string-mop": {
+      "kind": "object",
+      "family": "cleaning-tools",
+      "label": "Mop",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/tool-string-mop.png",
+          "sha256": "5b8ec0b01fdc365136d90c47102845a41ee22298c23708aec6ee25bb7809cdbb",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            27,
+            20,
+            229,
+            236
+          ],
+          "added": "2026-10-20",
+          "source": "tool-string-mop.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
+        }
+      ]
+    },
     "washing-cutlery": {
       "kind": "object",
       "family": "washing",
@@ -1418,6 +2471,33 @@
           "added": "2026-10-19",
           "source": "keeper-prime-back-work-activity-callout-v2",
           "by": "codex"
+        }
+      ]
+    },
+    "wear-rubber-gloves-pair": {
+      "kind": "object",
+      "family": "cleaning-tools",
+      "label": "Rubber gloves",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/claude-household-cleaning-cupboard-pack-2026-10-21-v1/assets/wear-rubber-gloves-pair.png",
+          "sha256": "408b76cc4ac404d8fac3553fa97d71a04e8428943dc49a55ec648eb1f7a90afb",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            42,
+            236,
+            214
+          ],
+          "added": "2026-10-20",
+          "source": "wear-rubber-gloves-pair.png",
+          "by": "codex",
+          "note": "Codex household cleaning cupboard pack V1"
         }
       ]
     }
