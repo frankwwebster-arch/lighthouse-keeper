@@ -1,0 +1,347 @@
+{
+  "schema": "lighthouse-keeper/claude-bedroom-source-register@1",
+  "created": "2026-10-21",
+  "tool": "built-in image generation",
+  "accepted": [
+    {
+      "id": "sleep-alarm-clock",
+      "family": "sleep",
+      "primaryRequest": "one generic timeless twin-bell alarm clock, complete and intact, with a deep-navy clock body, warm cream face, orange bells and feet, simple hands and tick marks but absolutely no letters, numerals, logo or brand",
+      "originalCacheFile": "exec-34db4c8d-59f0-4638-a850-affff8337022.png",
+      "originalGeneratedPngSha256": "65de106b639cf0c51f541a9dd1a33ba3407f3b8e4e1a625ac6b51d125144f7d2",
+      "originalGeneratedGeometry": [
+        1254,
+        1254
+      ],
+      "status": "accepted",
+      "sourceFile": "source/sleep-alarm-clock-source.webp"
+    },
+    {
+      "id": "sleep-bedside-lamp",
+      "family": "sleep",
+      "primaryRequest": "one generic timeless small bedside table lamp, complete and unplugged-looking, rounded warm-cream fabric shade, deep-navy base, aqua stem and orange switch detail; no table, cord, bulb glare or light rays",
+      "originalCacheFile": "exec-f59e58ec-7e86-4e55-95a1-37df43c6a9a3.png",
+      "originalGeneratedPngSha256": "9c85e47998f68b6ff372e50c7fa7b338630c9b71c9ddd87df44ea92097515ad9",
+      "originalGeneratedGeometry": [
+        1214,
+        1295
+      ],
+      "status": "accepted",
+      "sourceFile": "source/sleep-bedside-lamp-source.webp"
+    },
+    {
+      "id": "wear-folded-pyjamas",
+      "family": "wearable",
+      "primaryRequest": "one neatly folded set of classic men's button-front pyjamas as one natural clothing unit, deep navy cloth with restrained aqua piping and small orange buttons; no hanger, body or packaging",
+      "originalCacheFile": "exec-7f95160d-f535-4c41-8271-641345e9ddf9.png",
+      "originalGeneratedPngSha256": "b38d12adcafb3fe4be0b6699d8943ac51bd34fcb73c4a45f6216b8352bdd6739",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "status": "accepted",
+      "sourceFile": "source/wear-folded-pyjamas-source.webp"
+    },
+    {
+      "id": "wear-bedroom-slippers-pair",
+      "family": "wearable",
+      "primaryRequest": "one matched pair of soft classic men's bedroom slippers as a single natural pair, warm tan uppers, deep-navy soles and small aqua lining accents; complete pair only",
+      "originalCacheFile": "exec-60cf8c3f-daa1-4c69-92c2-4bc59a1285c1.png",
+      "originalGeneratedPngSha256": "06b60f7c6af57a900a7642ee9728bc86b0fc06f512bb41904b81b3a64f759706",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "status": "accepted",
+      "sourceFile": "source/wear-bedroom-slippers-pair-source.webp"
+    },
+    {
+      "id": "sleep-hot-water-bottle",
+      "family": "sleep",
+      "primaryRequest": "one classic ribbed rubber hot-water bottle with fitted knitted cover, teal body, warm cream cover panel and orange stopper; cap closed, no liquid or steam",
+      "originalCacheFile": "exec-25614c65-12dc-47bf-b569-3b9de18f0273.png",
+      "originalGeneratedPngSha256": "83ac5461b04e6d23cf8045948a6129638111f13affd4bc20c3bd5316fc67b791",
+      "originalGeneratedGeometry": [
+        1230,
+        1278
+      ],
+      "status": "accepted",
+      "sourceFile": "source/sleep-hot-water-bottle-source.webp"
+    },
+    {
+      "id": "sleep-eye-mask",
+      "family": "sleep",
+      "primaryRequest": "one soft padded sleep eye mask with its single elastic strap, deep navy fabric, warm cream piping and small aqua crescent pictogram only; no letters",
+      "originalCacheFile": "exec-a6b1573c-600f-42c4-948c-071ab43c5f53.png",
+      "originalGeneratedPngSha256": "7729bf1e5cce5097acf5847a3982d7472892fc1b311d370dc6d773c11a968142",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "status": "accepted",
+      "sourceFile": "source/sleep-eye-mask-source.webp"
+    },
+    {
+      "id": "wear-socks-pair",
+      "family": "wearable",
+      "primaryRequest": "one matched pair of clean folded men's ankle socks as a single natural pair, deep navy knit with warm cream toes and slim orange stripes; no feet, packaging or laundry basket",
+      "originalCacheFile": "exec-60466c87-810a-4bb3-8e43-076c2b6d2992.png",
+      "originalGeneratedPngSha256": "eadd2e2ee593726bc7a7c2f853d1516937ed3de89843f6543e2bd77e4a8f9007",
+      "originalGeneratedGeometry": [
+        1470,
+        1070
+      ],
+      "status": "accepted",
+      "sourceFile": "source/wear-socks-pair-source.webp"
+    },
+    {
+      "id": "wear-leather-shoes-pair",
+      "family": "wearable",
+      "primaryRequest": "one matched pair of classic men's lace-up leather shoes as a single natural pair, warm chestnut leather, deep-navy soles and subtle aqua highlight stitching; complete pair, tied laces, no shoe box",
+      "originalCacheFile": "exec-b2591c18-17eb-433f-be05-39820c1ce312.png",
+      "originalGeneratedPngSha256": "70e4b463cbad4e059fbd6e5716c1247d9b0de6be3ef29035515ecc550509e3d2",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "status": "accepted",
+      "sourceFile": "source/wear-leather-shoes-pair-source.webp"
+    },
+    {
+      "id": "wear-folded-shirt",
+      "family": "wearable",
+      "primaryRequest": "one neatly folded classic men's button-front shirt, warm cream cloth with an aqua collar edge and small orange buttons; exactly one shirt, no hanger, tie or body",
+      "originalCacheFile": "exec-0e7df340-d01a-4f15-80cc-d942ecf5e45f.png",
+      "originalGeneratedPngSha256": "24a5e35244ec70182c560bbe47b6d407332d20031226f5d6dacad3d91532c510",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "status": "accepted",
+      "sourceFile": "source/wear-folded-shirt-source.webp"
+    },
+    {
+      "id": "wear-necktie",
+      "family": "wearable",
+      "primaryRequest": "one complete classic men's necktie, loosely coiled into a compact readable shape, deep navy woven fabric with restrained aqua and orange diagonal accents; no shirt or hanger",
+      "originalCacheFile": "exec-bfdb982f-bfca-47e9-b1f6-6f968ffc9ceb.png",
+      "originalGeneratedPngSha256": "e296347ba6c58379dac546be46eda3d8b5a5cdc17255a9f60cd049a1fbf1055f",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "status": "accepted",
+      "sourceFile": "source/wear-necktie-source.webp"
+    },
+    {
+      "id": "wear-leather-belt",
+      "family": "wearable",
+      "primaryRequest": "one complete classic leather belt, compactly coiled with the buckle clearly visible, warm chestnut leather, deep-navy edging and golden-orange buckle; no trousers",
+      "originalCacheFile": "exec-472675eb-ff05-4e20-9a8f-e987af47770a.png",
+      "originalGeneratedPngSha256": "748770b5dae577250ad6a17af0bcf8ab74df320f635c6ee67b7f375813d90717",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "status": "accepted",
+      "sourceFile": "source/wear-leather-belt-source.webp"
+    },
+    {
+      "id": "wear-flat-cap",
+      "family": "wearable",
+      "primaryRequest": "one classic timeless men's flat cap, complete and empty, deep navy wool with warm cream lining glimpse and tiny aqua stitch accent; no head, text or badge",
+      "originalCacheFile": "exec-8aaf456e-81bc-4915-9a48-a81a482b1ece.png",
+      "originalGeneratedPngSha256": "f5b65c0466528cbceb9f1f7bf63a48ff15503a71e04fe2a6f8adf7ae0743fd98",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "status": "accepted",
+      "sourceFile": "source/wear-flat-cap-source.webp"
+    },
+    {
+      "id": "personal-reading-glasses",
+      "family": "personal-accessory",
+      "primaryRequest": "one complete pair of classic round reading glasses as a single natural item, deep-navy frames with warm-gold bridge accents and pale aqua lens highlights; both temples visible, no case or book",
+      "originalCacheFile": "exec-c8e80336-434b-4c27-ba4d-eb0aa957936d.png",
+      "originalGeneratedPngSha256": "0d56181f15573f3d6ccf1b5517f4e50c1db92d2be0f8ec76e6e8947d8f6f19ab",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "status": "accepted",
+      "sourceFile": "source/personal-reading-glasses-source.webp"
+    },
+    {
+      "id": "personal-wristwatch",
+      "family": "personal-accessory",
+      "primaryRequest": "one classic analogue wristwatch with its complete leather strap curled into a compact loop, warm cream face, deep-navy case, orange hands and brown strap; simple tick marks only, no letters, numerals or logo",
+      "originalCacheFile": "exec-657dbaa1-5431-48a9-bddd-7108daf8d88b.png",
+      "originalGeneratedPngSha256": "0bdc0bbf88182e57eadb06e38d87e057261531f7c22f4d2fa539780c3fe536b0",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "status": "accepted",
+      "sourceFile": "source/personal-wristwatch-source.webp"
+    },
+    {
+      "id": "personal-wallet",
+      "family": "personal-accessory",
+      "primaryRequest": "one closed classic bifold wallet, warm chestnut leather with deep-navy edging and a small aqua stitched accent; no money, cards, letters or logo",
+      "originalCacheFile": "exec-3d974917-8ad8-48be-b36a-513037877d1e.png",
+      "originalGeneratedPngSha256": "4661a374d99eb7696e513a7e10a4517d0b454770f01b90f3c71960d518ad0f39",
+      "originalGeneratedGeometry": [
+        1333,
+        1180
+      ],
+      "status": "accepted",
+      "sourceFile": "source/personal-wallet-source.webp"
+    },
+    {
+      "id": "personal-house-keys",
+      "family": "personal-accessory",
+      "primaryRequest": "one small natural keyring group containing two distinct timeless brass house keys on a deep-navy ring, with a simple orange leather fob; no letters, logo or extra objects",
+      "originalCacheFile": "exec-f9b530d7-9493-478b-9388-f66d1e13fb95.png",
+      "originalGeneratedPngSha256": "059d5374913055304a57394ef88c78686a58f3259ba820b0594747f3a8bdc7e3",
+      "originalGeneratedGeometry": [
+        1387,
+        1134
+      ],
+      "status": "accepted",
+      "sourceFile": "source/personal-house-keys-source.webp"
+    },
+    {
+      "id": "personal-pocket-notebook",
+      "family": "personal-accessory",
+      "primaryRequest": "one closed pocket notebook with a small elastic strap and page edges visible, deep-navy cover, warm cream pages, aqua elastic and orange corner accent; completely blank with no writing, letters, numbers or logo",
+      "originalCacheFile": "exec-ffc9077e-864b-485c-8afa-2ccc75b7ead6.png",
+      "originalGeneratedPngSha256": "4f1d3fa628bbb5625655ccf2552ae8f7bc10446ab10b74b982c8c7c546f2156d",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "status": "accepted",
+      "sourceFile": "source/personal-pocket-notebook-source.webp"
+    },
+    {
+      "id": "personal-fountain-pen",
+      "family": "personal-accessory",
+      "primaryRequest": "one complete capped classic fountain pen placed diagonally, deep-navy barrel with warm-gold clip and restrained aqua highlight; no notebook, ink, text or logo",
+      "originalCacheFile": "exec-e709f8c2-94f3-4d9f-965e-15e92b7aff7e.png",
+      "originalGeneratedPngSha256": "8ec20f6c73c4eceeaaf9e5841016d55a6b0e9404a57dbf9b3c22895274601e2d",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "status": "accepted",
+      "sourceFile": "source/personal-fountain-pen-source.webp"
+    },
+    {
+      "id": "grooming-comb",
+      "family": "grooming",
+      "primaryRequest": "one complete classic pocket comb, deep navy with warm-orange spine and subtle aqua highlights; every tooth intact, no hairbrush, case or hair",
+      "originalCacheFile": "exec-1c40470e-9021-49c8-a7e8-bdfeb6efc339.png",
+      "originalGeneratedPngSha256": "882378cdbfac99598843d26958a5359fee1d6bf1ab6a05505dbd1cd0f28b66e6",
+      "originalGeneratedGeometry": [
+        1437,
+        1095
+      ],
+      "status": "accepted",
+      "sourceFile": "source/grooming-comb-source.webp"
+    },
+    {
+      "id": "grooming-hairbrush",
+      "family": "grooming",
+      "primaryRequest": "one complete classic oval hairbrush, warm-cream wooden back, deep-navy grip and dense aqua bristles with restrained orange accents; no comb, hair or mirror",
+      "originalCacheFile": "exec-3aab1152-962a-49f4-a83b-99494a05c815.png",
+      "originalGeneratedPngSha256": "1ef8e944a71022ae18202bf86083658edc20ee2efac34e7a161a3e285f5d5d08",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "status": "accepted",
+      "sourceFile": "source/grooming-hairbrush-source.webp"
+    },
+    {
+      "id": "grooming-electric-shaver",
+      "family": "grooming",
+      "primaryRequest": "one complete generic timeless electric foil shaver, compact deep-navy body, warm-cream foil head, aqua grip panel and orange switch; cordless presentation, no cord, dock, text or brand",
+      "originalCacheFile": "exec-c0c62b4c-1c3f-4c6f-9ae8-dea0e1e9fd33.png",
+      "originalGeneratedPngSha256": "688b23ef55713640578089d7c2e009049af9c643368e3fefb8b5dd282515c64d",
+      "originalGeneratedGeometry": [
+        1226,
+        1283
+      ],
+      "status": "accepted",
+      "sourceFile": "source/grooming-electric-shaver-source.webp"
+    },
+    {
+      "id": "grooming-cologne-bottle",
+      "family": "grooming",
+      "primaryRequest": "one complete generic timeless cologne bottle, squat faceted aqua glass with pale liquid, deep-navy cap and small orange collar; blank cream label with no symbol, writing or brand",
+      "originalCacheFile": "exec-186ad2dd-cdc0-44a9-9d91-83f0215f5381.png",
+      "originalGeneratedPngSha256": "56f6e3be11bbde4191d25843e462fe73d6a30a22c508b1ba42520285270bc51b",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "status": "accepted",
+      "sourceFile": "source/grooming-cologne-bottle-source.webp"
+    },
+    {
+      "id": "grooming-deodorant-stick",
+      "family": "grooming",
+      "primaryRequest": "one complete generic timeless capped deodorant stick container, deep-navy body, warm-cream cap, aqua panel and small orange twist base; packaging entirely blank, text-free and unbranded",
+      "originalCacheFile": "exec-6ef3dc6e-6d3b-4f90-9782-bc4ae537dbd3.png",
+      "originalGeneratedPngSha256": "014140e3489e1e8216d33c5ae3ef19c9ee63936779123bd5d13c85a9d84416ac",
+      "originalGeneratedGeometry": [
+        1218,
+        1292
+      ],
+      "status": "accepted",
+      "sourceFile": "source/grooming-deodorant-stick-source.webp"
+    },
+    {
+      "id": "leisure-over-ear-headphones",
+      "family": "leisure",
+      "primaryRequest": "one complete pair of classic over-ear headphones as one wearable item, deep-navy padded headband, warm-cream ear cushions, aqua ear cups and small orange hinge accents; no cord, player, music notes or case",
+      "originalCacheFile": "exec-c2660866-a181-4dd5-9b5f-f79ec08925ef.png",
+      "originalGeneratedPngSha256": "0913861518b99e4097d7c8102adfd6ef80bf7e5ef1230be1976d564ffa16a526",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "status": "accepted",
+      "sourceFile": "source/leisure-over-ear-headphones-source.webp"
+    },
+    {
+      "id": "leisure-hardcover-book",
+      "family": "leisure",
+      "primaryRequest": "one closed generic hardcover book, deep-navy cloth cover, warm-cream page block, aqua ribbon bookmark and small orange corner accents; completely blank cover and spine, no writing, letters, numbers or logo",
+      "originalCacheFile": "exec-c30bcdcd-66d4-4deb-9f05-65be80d41efe.png",
+      "originalGeneratedPngSha256": "26790f20df53df5cacfcbacd9f92d30a4ecdd20604b5825bfef042408f456d14",
+      "originalGeneratedGeometry": [
+        1402,
+        1122
+      ],
+      "status": "accepted",
+      "sourceFile": "source/leisure-hardcover-book-source.webp"
+    },
+    {
+      "id": "leisure-portable-radio",
+      "family": "leisure",
+      "primaryRequest": "one complete compact timeless portable bedside radio, rounded deep-navy case, warm-cream speaker grille, aqua tuning panel and orange knobs; simple blank dial marks only, no letters, numbers, logo, cord or antenna crossing the canvas",
+      "originalCacheFile": "exec-7cc9939c-57bc-4621-b90e-653b2b09f265.png",
+      "originalGeneratedPngSha256": "560ef30c22337307d3f21a6c8b9a275eec49dda314a2325a0dfe60475088c543",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "status": "accepted",
+      "sourceFile": "source/leisure-portable-radio-source.webp"
+    }
+  ],
+  "rejected": [],
+  "rejectedNote": "All 26 generated candidates passed visual and alpha screening; no rejected generation was created."
+}

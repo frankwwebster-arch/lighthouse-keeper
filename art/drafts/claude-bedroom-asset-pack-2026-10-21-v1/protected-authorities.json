@@ -1,0 +1,27 @@
+{
+  "schema": "lighthouse-keeper/protected-authority-digests@1",
+  "capturedFrom": "d05c15044e116ad26fdae8fe3d40f139ea8ce8b4",
+  "method": "SHA-256 over each sorted tracked path, NUL, its SHA-256 bytes and newline; group membership is recomputed by the verifier",
+  "groups": {
+    "kitchen": {
+      "memberCount": 2984,
+      "aggregateSha256": "55c8292a655e05c2533abf26a447946d1b965b0c199c8fdd59ae6884b59f311f"
+    },
+    "prime": {
+      "memberCount": 3688,
+      "aggregateSha256": "0d2ceb262a39cf1f5ef15c88f8b5d3e50406b7827652df19e69332c8c2addeba"
+    },
+    "animation": {
+      "memberCount": 30,
+      "aggregateSha256": "81773070d51166c3fe0a7b3f5275fd77465f1f594f47165c62da4a4ad078446a"
+    },
+    "composerPages": {
+      "memberCount": 8,
+      "aggregateSha256": "ca3da18f6e7f7db7cd4dcd73d996e86d982292ac99267646c10da39fc0189e0f"
+    },
+    "deployment": {
+      "memberCount": 6,
+      "aggregateSha256": "1a77a382ca4d8ae959550cb0f4c6637691cbf9c4689b711b2056cc0d53e3af5c"
+    }
+  }
+}
