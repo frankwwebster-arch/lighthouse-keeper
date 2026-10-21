@@ -14,6 +14,9 @@ const originalExistsSync = fs.existsSync.bind(fs)
 const originalReaddirSync = fs.readdirSync.bind(fs)
 const originalStatSync = fs.statSync.bind(fs)
 const originalAccessSync = fs.accessSync.bind(fs)
+const originalPromisesReadFile = fs.promises.readFile.bind(fs.promises)
+const originalPromisesAccess = fs.promises.access.bind(fs.promises)
+const originalPromisesStat = fs.promises.stat.bind(fs.promises)
 const archive = originalExistsSync(INDEX) ? JSON.parse(originalReadFileSync(INDEX, 'utf8')) : { legacyPaths: {} }
 const virtual = new Map()
 for (const [legacyPath, entry] of Object.entries(archive.legacyPaths ?? {})) {
@@ -62,5 +65,14 @@ fs.readdirSync = function patchedReaddirSync(directory, options) {
   if (originalExistsSync(directory)) physical = originalReaddirSync(directory, options)
   const names = new Set([...physical.map(String), ...virtualNames])
   return [...names].sort()
+}
+fs.promises.readFile = function patchedPromisesReadFile(file, ...args) {
+  return originalPromisesReadFile(resolveVirtual(file) ?? file, ...args)
+}
+fs.promises.access = function patchedPromisesAccess(file, ...args) {
+  return originalPromisesAccess(resolveVirtual(file) ?? file, ...args)
+}
+fs.promises.stat = function patchedPromisesStat(file, ...args) {
+  return originalPromisesStat(resolveVirtual(file) ?? file, ...args)
 }
 syncBuiltinESMExports()

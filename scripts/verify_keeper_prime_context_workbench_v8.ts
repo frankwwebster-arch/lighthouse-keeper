@@ -8,9 +8,13 @@ const register = JSON.parse(fs.readFileSync(path.join(root, "art/drafts/keeper-p
 const catalog = JSON.parse(fs.readFileSync(path.join(publicDir, "catalog.json"), "utf8"));
 const sha = (file: string) => crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
 const fail = (message: string): never => { throw new Error(message); };
+const physicallyExists = (file: string): boolean => {
+  try { fs.lstatSync(file); return true; }
+  catch (error: any) { if (error.code === "ENOENT") return false; throw error; }
+};
 
 if (catalog.schema !== "lighthouse-keeper/context-workbench@8" || catalog.sequences.length !== 10) fail("Wrong Workbench V8 identity/count");
-if (catalog.inventoryUrl !== "/keeper-review/keeper-prime-context-workbench-v7/inventory.json" || fs.existsSync(path.join(publicDir, "inventory.json"))) fail("Workbench V8 duplicated the unchanged inventory");
+if (catalog.inventoryUrl !== "/keeper-review/keeper-prime-context-workbench-v7/inventory.json" || physicallyExists(path.join(publicDir, "inventory.json"))) fail("Workbench V8 duplicated the unchanged inventory");
 const darts = catalog.sequences.find((entry: any) => entry.id === "darts-v7");
 if (!darts || darts.url !== "/keeper-review/keeper-prime-darts-context-v7/" || darts.kind !== "external") fail("Darts V7 choice missing");
 if (catalog.sequences.some((entry: any) => entry.id === "darts-v6")) fail("Superseded playable Darts V6 choice remains");

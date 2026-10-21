@@ -49,6 +49,13 @@
       "bytes": 58453,
       "object": "review-archive/objects/2b/2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/2b/2bff1e869ae70d3126d7892a418b92b27eb930b423b1fcc6d18609ea27b7d9cc.png"
+    },
+    "/keeper-review/keeper-prime-rear-action-choreography-v1/catalogue.json": {
+      "sha256": "f32bc41c876c63577fc6cd42929722c64459c07628abd650f734d52901d92562",
+      "extension": ".json",
+      "bytes": 825556,
+      "object": "review-archive/objects/f3/f32bc41c876c63577fc6cd42929722c64459c07628abd650f734d52901d92562.json",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/f3/f32bc41c876c63577fc6cd42929722c64459c07628abd650f734d52901d92562.json"
     }
   }
 }

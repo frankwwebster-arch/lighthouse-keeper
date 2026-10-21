@@ -122,6 +122,13 @@
       "bytes": 52934,
       "object": "review-archive/objects/d0/d0c394162ff6e0712cec46a45a0f7931babfa3705fdb782f40c803e7f28f7775.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d0/d0c394162ff6e0712cec46a45a0f7931babfa3705fdb782f40c803e7f28f7775.png"
+    },
+    "/keeper-review/keeper-prime-sit-stand-side-left-v1/route.json": {
+      "sha256": "5cb0f5dc44a84a83e7c55a9ad573cc5c09afb4a7719c753c896cc9a5bfb5fdc6",
+      "extension": ".json",
+      "bytes": 26022,
+      "object": "review-archive/objects/5c/5cb0f5dc44a84a83e7c55a9ad573cc5c09afb4a7719c753c896cc9a5bfb5fdc6.json",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5c/5cb0f5dc44a84a83e7c55a9ad573cc5c09afb4a7719c753c896cc9a5bfb5fdc6.json"
     }
   }
 }

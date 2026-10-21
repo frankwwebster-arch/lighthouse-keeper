@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "set": "keeper-prime-context-workbench-v10",
+  "page": {
+    "path": "public/keeper-review/keeper-prime-context-workbench-v10/index.html",
+    "sha256": "64f6e427e7309c7949e0f920ae3d6b906b63e8242f834c0f5f10e5c4f483a126",
+    "bytes": 4171
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/keeper-prime-context-workbench-v10/catalog.json": {
+      "sha256": "32f561c42e5e9fe3f0418bc06fd95b22eac1317de7f3eebf2d1e7494db131a0d",
+      "extension": ".json",
+      "bytes": 36720,
+      "object": "review-archive/objects/32/32f561c42e5e9fe3f0418bc06fd95b22eac1317de7f3eebf2d1e7494db131a0d.json",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/32/32f561c42e5e9fe3f0418bc06fd95b22eac1317de7f3eebf2d1e7494db131a0d.json"
+    }
+  }
+}

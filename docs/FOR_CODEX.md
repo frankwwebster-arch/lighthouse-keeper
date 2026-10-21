@@ -9,6 +9,12 @@ Formats: `data/activity-stories/README.md`. Brief and first requests (redraw
 three V7 symbols, add `symbol-clean-glint`):
 `docs/CLAUDE_TO_CODEX_BUBBLE_STORIES_2026-10-20.md`.
 
+The first symbol request is complete (21 October 2026): heat shimmer,
+pleasant aroma and welding sparks are current V2 pictures, and clean glint is a
+new current V1 `clean` mark. The immutable authoring pack is
+`art/drafts/activity-story-symbol-redraws-2026-10-21-v1/`; the studio picture
+list exposes all four while retaining the earlier versions for undo.
+
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 
 Frank has authorised an exhaustive, reversible audit and redraft programme for

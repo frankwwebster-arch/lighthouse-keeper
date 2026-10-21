@@ -552,11 +552,15 @@ implemented and no artwork change is authorised by it.
 
 ## Verification and delivery
 
-The production Next.js build and the focused Modular V10 verifier pass. The
-full repository suite currently stops only at the pre-existing review-payload
-budget check: `public/` is 50.42 MiB against its 50 MiB target. Review media is
-correctly content-addressed outside `public/`; a later housekeeping pass must
-recover the remaining 0.42 MiB without deleting active review evidence.
+The review-payload housekeeping pass completed on 21 October 2026. The exact
+clean-checkout baseline failed at 53.3148 MiB; the content-addressed sweep now
+archives every review image plus JSON/JSON.GZ at or above 24 KiB, leaving HTML
+and small JSON public. `public/` is 44.9008 MiB, 5.0992 MiB below the unchanged
+50 MiB guard. Runtime `public/sprites` remains byte-identical at 36.9977 MiB.
+Use `npm run maintain:keeper-review` after any review builder; it archives,
+verifies object and manifest hashes, checks historical URL resolution and then
+checks the deployment payload. Repository size, `review-archive/` and
+`art/drafts/` are not part of that payload measurement.
 
 ### Separate Draft/Final animation workbench
 

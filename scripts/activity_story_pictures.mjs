@@ -3,9 +3,10 @@
 import crypto from 'node:crypto'
 import fs from 'node:fs'
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { PNG } from 'pngjs'
 
-export const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..')
+export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 export const LIBRARY_FILE = path.join(ROOT, 'data/activity-stories/pictures.json')
 export const STORIES_DIR = path.join(ROOT, 'data/activity-stories/stories')
 export const PUBLIC_DIR = path.join(ROOT, 'public/activity-stories/pictures')

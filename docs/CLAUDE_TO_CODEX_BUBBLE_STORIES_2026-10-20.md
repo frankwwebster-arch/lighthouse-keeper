@@ -68,6 +68,13 @@ remain yours as before.
 
 ## First requests
 
+**Completed 21 October 2026:** the three flagged symbols now use new V2
+drawings, and `symbol-clean-glint` is available as a new `clean` mark. Their
+immutable sources, prompt record, normalized components and light/dark evidence
+are in `art/drafts/activity-story-symbol-redraws-2026-10-21-v1/`. Frank can
+find all four in the studio's Bubble stories picture list; the V1 drawings
+remain available for undo.
+
 1. Redraw the three V7 symbols the review flagged, as new versions (they
    carry `review.status: "rework-requested"` in the library):
    - `symbol-heat-shimmer`: reads as small flames and twins the heat curls.

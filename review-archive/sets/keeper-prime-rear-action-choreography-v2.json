@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "set": "keeper-prime-rear-action-choreography-v2",
+  "page": {
+    "path": "public/keeper-review/keeper-prime-rear-action-choreography-v2/index.html",
+    "sha256": "cc4dd1b23918bbbc2b92ea29c0e9216b015a0601eb5a56a113447e3fcf668005",
+    "bytes": 21066
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/keeper-prime-rear-action-choreography-v2/catalogue.json.gz": {
+      "sha256": "812f85c4d46bd7b9f22de5b17ede54d6ec8d1dbf8d79e9cc253ff8d2c45bd8a6",
+      "extension": ".json.gz",
+      "bytes": 60480,
+      "object": "review-archive/objects/81/812f85c4d46bd7b9f22de5b17ede54d6ec8d1dbf8d79e9cc253ff8d2c45bd8a6.json.gz",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/81/812f85c4d46bd7b9f22de5b17ede54d6ec8d1dbf8d79e9cc253ff8d2c45bd8a6.json.gz"
+    }
+  }
+}

@@ -14,6 +14,12 @@ describe('review archive lookup', () => {
     expect(reviewArchiveEntry('/sprites/keeper_walk.png')).toBeNull()
   })
 
+  it('resolves oversized review data without changing its historical URL', () => {
+    const entry = reviewArchiveEntry('/keeper-review/activity-cloud-composer-v7/catalogue.json')
+    expect(entry?.sha256).toBe('8657470a3103bd8c65771b8ea4f21c75d1b95cd057e8c2a8736f8c4c8b1132a0')
+    expect(entry?.url).toContain(`/86/${entry?.sha256}.json`)
+  })
+
   it('records material deduplication', () => {
     expect(reviewArchiveStats.referenceCount).toBeGreaterThan(500)
     expect(reviewArchiveStats.uniqueObjectCount).toBeLessThan(reviewArchiveStats.referenceCount)

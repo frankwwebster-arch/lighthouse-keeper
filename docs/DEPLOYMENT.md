@@ -1,6 +1,6 @@
 # Deployment: workflow, retention and rollback
 
-_Last updated 17 October 2026._
+_Last updated 21 October 2026._
 
 ## Why this exists
 
@@ -92,7 +92,7 @@ currently serves production. So **at least three production versions are always
 available to roll back to**, even after a quiet spell.
 
 Expected steady state after the content-addressed archive release: three or four
-~43 MB production deployments, about 0.2 GB, against 7.8 GB before.
+~45 MiB production deployments, about 0.2 GB, against 7.8 GB before.
 
 ## Rollback
 
@@ -149,13 +149,13 @@ explicit release.
 Keeper review media is now stored once outside `public/`, without deleting any
 evidence or changing immutable review-page bytes.
 
-**Measured result (19 October 2026, including Kitchen Snap Grid Join V23 and
-immutable prior review evidence):** 3,833 review-media paths across 155 sets
-collapse to 2,334 unique objects. The paths represent 297.14 MiB; the unique
-store is 156.83 MiB. The verified `public/` deployment payload is about 50.46 MiB and remains slightly
-above the hard 50 MiB repository guard, rather than roughly 115 MiB. The archive
-itself stays in Git but is
-outside `public/`, so Vercel does not copy those objects into every deployment.
+**Measured result (21 October 2026):** 4,562 review-evidence paths across 189
+sets collapse to 2,742 unique objects. The paths represent 339.19 MiB; the
+unique retained store is 188.61 MiB. The clean-checkout `public/` deployment
+payload is 44.9008 MiB, 5.0992 MiB below the unchanged 50 MiB repository guard
+and down from the exact 53.3148 MiB failure baseline. The archive itself stays
+in Git but is outside `public/`, so Vercel does not copy those objects into
+every deployment.
 
 ### How it works
 
@@ -181,8 +181,12 @@ outside `public/`, so Vercel does not copy those objects into every deployment.
    refuses uncached files once a repository package exceeds 50 MB. The backend
    remains declared in the manifests and can later be replaced with Vercel
    Blob without changing evidence bytes.
-5. **Keep the live game lean.** `public/sprites` (38 MB, used by the game) stays
-   in the deployment. Approved Final artwork stays where the game reads it.
+5. **Keep the live game lean.** `public/sprites` (36.9977 MiB, used by the game)
+   stays in the deployment. Approved Final artwork stays where the game reads
+   it. The archive also moves review-only JSON/JSON.GZ at or above 24 KiB while
+   leaving HTML and small JSON public at their historical URLs. The one larger
+   public exception is a hash-pinned shared V6 activity contract required by
+   immutable approval verifiers.
 6. **Verification and old contracts.** `scripts/verify_review_archive.mjs`
    checks every hash, filename, manifest, immutable page, absence from public
    and the sub-50-MiB payload boundary. The test-only filesystem hook lets old
@@ -200,7 +204,7 @@ Existing authoring scripts may write a new versioned candidate into
 `public/keeper-review` for assembly. Before committing:
 
 ```sh
-npm run archive:keeper-review
+npm run maintain:keeper-review
 npm test
 npm run typecheck
 npm run build
@@ -218,8 +222,14 @@ That command starts from the named Git base, replaces just the register's set,
 and computes committed-tree object statistics from the base plus that set. It
 does not delete or stage unrelated archive objects or set manifests.
 
-The archive command copies only new hashes, updates the set/global manifests,
-then removes public media copies. It never removes an old archive object, even
-if a legacy path later points to a newer hash. Do not manually edit object
-filenames or manifests. To change archive hosting, update the archive builder,
-regenerate manifests, verify, then release one tested batch.
+The archive command copies only new hashes and updates the set/global
+manifests. Before removing a public copy it re-reads both manifests and proves
+the stored object has the expected SHA-256. It never removes an old archive
+object, even if a legacy path later points to a newer hash, and it ignores
+unrelated untracked archive objects. The verifier rejects public review media,
+oversized review data, broken manifest/object hashes, unresolved literal review
+URLs and a `public/` payload at or above 50 MiB. Its payload diagnostic is about
+`public/` only—not total repository size, `review-archive/`, or `art/drafts/`.
+Do not manually edit object filenames or manifests. To change archive hosting,
+update the archive builder, regenerate manifests, verify, then release one
+tested batch.

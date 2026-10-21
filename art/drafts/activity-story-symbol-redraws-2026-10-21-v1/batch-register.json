@@ -1,0 +1,178 @@
+{
+  "schema": "lighthouse-keeper/activity-story-symbol-redraw-register@1",
+  "set": "activity-story-symbol-redraws-2026-10-21-v1",
+  "status": "immutable-reversible-draft",
+  "visibleAlphaThreshold": 8,
+  "components": {
+    "symbol-heat-shimmer": {
+      "family": "heat",
+      "owner": "symbol-heat-shimmer",
+      "sourceFile": "art/drafts/activity-story-symbol-redraws-2026-10-21-v1/source/symbol-heat-shimmer-source.png",
+      "sourceSha256": "47295475be43bbd16a9ce6b9d3b5ec046d4ecf7643b88bbb1821de6f276bcbe4",
+      "sourcePixels": [
+        1536,
+        1024
+      ],
+      "file": "art/drafts/activity-story-symbol-redraws-2026-10-21-v1/drafts/components/symbol-heat-shimmer.png",
+      "sha256": "2863f480f68dc9c03a912207bc9403d87f3f041c0d2ce3661c644950374fc6db",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        254,
+        245,
+        1283,
+        800
+      ],
+      "normalisedVisibleSize": [
+        216,
+        117
+      ],
+      "normalisedOffset": [
+        20,
+        69
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-pleasant-aroma": {
+      "family": "scent",
+      "owner": "symbol-pleasant-aroma",
+      "sourceFile": "art/drafts/activity-story-symbol-redraws-2026-10-21-v1/source/symbol-pleasant-aroma-source.png",
+      "sourceSha256": "79b0156641a3e4303f39a5ee02dfb7787328d7cb23f76de4fd69593a6f0f5cfd",
+      "sourcePixels": [
+        1312,
+        1199
+      ],
+      "file": "art/drafts/activity-story-symbol-redraws-2026-10-21-v1/drafts/components/symbol-pleasant-aroma.png",
+      "sha256": "3c240e474823cb0b8489d2bb9702782ecc8396bed45327633613726b63842c61",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        330,
+        110,
+        982,
+        1110
+      ],
+      "normalisedVisibleSize": [
+        141,
+        216
+      ],
+      "normalisedOffset": [
+        57,
+        20
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-welding-sparks": {
+      "family": "welding",
+      "owner": "symbol-welding-sparks",
+      "sourceFile": "art/drafts/activity-story-symbol-redraws-2026-10-21-v1/source/symbol-welding-sparks-source.png",
+      "sourceSha256": "712a74a84ed34c2472656d9168412c3547fe209113ff5c9d7a1f02074c1a9240",
+      "sourcePixels": [
+        1536,
+        1024
+      ],
+      "file": "art/drafts/activity-story-symbol-redraws-2026-10-21-v1/drafts/components/symbol-welding-sparks.png",
+      "sha256": "23b02762b158d3dd7f88ff6ac8de0a9a40d4a2e4451d75e002a99e309b9e3070",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        381,
+        136,
+        1219,
+        938
+      ],
+      "normalisedVisibleSize": [
+        216,
+        207
+      ],
+      "normalisedOffset": [
+        20,
+        24
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-clean-glint": {
+      "family": "clean",
+      "owner": "symbol-clean-glint",
+      "sourceFile": "art/drafts/activity-story-symbol-redraws-2026-10-21-v1/source/symbol-clean-glint-source.png",
+      "sourceSha256": "650edb67d1b9d1d70d6f11c576fa330b0423ba62bb752b5682d72324877e0639",
+      "sourcePixels": [
+        1536,
+        1024
+      ],
+      "file": "art/drafts/activity-story-symbol-redraws-2026-10-21-v1/drafts/components/symbol-clean-glint.png",
+      "sha256": "66aca08ead270bd15a31b8149f6dfcf691bbaa59e38c3e3448d93476d8b8c86a",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        477,
+        111,
+        1059,
+        897
+      ],
+      "normalisedVisibleSize": [
+        160,
+        216
+      ],
+      "normalisedOffset": [
+        48,
+        20
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "evidence": {
+    "file": "art/drafts/activity-story-symbol-redraws-2026-10-21-v1/evidence/symbols-light-dark-contact-sheet.png",
+    "sha256": "6d701cd645a23d96a1bf1f07aff8aada60d2aabf94b6498e1a09d483c38f30ca",
+    "layout": [
+      4,
+      2
+    ],
+    "backgrounds": [
+      "warm cream",
+      "deep navy"
+    ]
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "storiesChanged": false,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "deployed": false
+  },
+  "rollback": "Remove only this draft pack and the picture-library versions that reference it; all earlier picture versions remain intact."
+}

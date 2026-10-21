@@ -3,16 +3,26 @@
 import crypto from 'node:crypto'
 import fs from 'node:fs'
 import path from 'node:path'
+import { execFileSync } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const PUBLIC_ROOT = path.join(ROOT, 'public/keeper-review')
 const ARCHIVE_ROOT = path.join(ROOT, 'review-archive')
-const OBJECT_ROOT = path.join(ARCHIVE_ROOT, 'objects')
 const SET_ROOT = path.join(ARCHIVE_ROOT, 'sets')
 const INDEX = path.join(ARCHIVE_ROOT, 'index.json')
 const BASE_URL = 'https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects'
 const MEDIA_EXTENSIONS = new Set(['.png', '.gif', '.jpg', '.jpeg', '.webp', '.avif'])
+const LARGE_DATA_EXTENSIONS = new Set(['.json', '.json.gz'])
+const LARGE_DATA_THRESHOLD_BYTES = 24 * 1024
+const PUBLIC_DATA_EXCEPTIONS = {
+  '/keeper-review/activity-cloud-composer-v6/catalogue.json': 'eb5060a665694137ce63a45dcb8f914d1086570393399b1537d37ade660fe2aa',
+}
+const UNPUBLISHED_HISTORICAL_LINKS = new Set([
+  '/keeper-review/keeper-prime-context-workbench-v8/inventory.json',
+  '/keeper-review/keeper-prime-context-workbench-v9/inventory.json',
+  '/keeper-review/keeper-prime-context-workbench-v10/inventory.json',
+])
 
 const sha256 = (buffer) => crypto.createHash('sha256').update(buffer).digest('hex')
 const posix = (value) => value.split(path.sep).join('/')
@@ -24,13 +34,26 @@ const writeJson = (file, value) => {
 function walk(directory) {
   if (!fs.existsSync(directory)) return []
   const files = []
-  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
     const absolute = path.join(directory, entry.name)
     if (entry.isDirectory()) files.push(...walk(absolute))
     else if (entry.isFile()) files.push(absolute)
   }
   return files
 }
+
+const archiveExtension = file => file.toLowerCase().endsWith('.json.gz') ? '.json.gz' : path.extname(file).toLowerCase()
+const legacyPathFor = file => `/${posix(path.relative(path.join(ROOT, 'public'), file))}`
+const shouldArchive = file => {
+  const extension = archiveExtension(file)
+  if (PUBLIC_DATA_EXCEPTIONS[legacyPathFor(file)]) return false
+  return MEDIA_EXTENSIONS.has(extension) ||
+    (LARGE_DATA_EXTENSIONS.has(extension) && fs.statSync(file).size >= LARGE_DATA_THRESHOLD_BYTES)
+}
+const trackedObjectFiles = () => execFileSync(
+  'git', ['ls-files', '-z', '--', 'review-archive/objects'],
+  { cwd: ROOT, encoding: 'utf8', maxBuffer: 32 * 1024 * 1024 },
+).split('\0').filter(Boolean).map(file => path.join(ROOT, file))
 
 function pageForSet(setName) {
   const candidate = setName === 'drafts'
@@ -67,12 +90,19 @@ for (const manifestFile of walk(SET_ROOT).filter((file) => path.extname(file) ==
     retainArchivedEntry(legacyPath, entry, posix(path.relative(ROOT, manifestFile)))
   }
 }
-const physicalMedia = walk(PUBLIC_ROOT).filter((file) => MEDIA_EXTENSIONS.has(path.extname(file).toLowerCase()))
+for (const [legacyPath, expectedHash] of Object.entries(PUBLIC_DATA_EXCEPTIONS)) {
+  const publicFile = path.join(ROOT, 'public', legacyPath.replace(/^\//, ''))
+  if (!fs.existsSync(publicFile) || sha256(fs.readFileSync(publicFile)) !== expectedHash) {
+    throw new Error(`pinned public review-data exception is missing or changed: ${legacyPath}`)
+  }
+  delete legacyPaths[legacyPath]
+}
+const physicalPayloads = walk(PUBLIC_ROOT).filter(shouldArchive)
 
-for (const file of physicalMedia) {
+for (const file of physicalPayloads) {
   const bytes = fs.readFileSync(file)
   const hash = sha256(bytes)
-  const extension = path.extname(file).toLowerCase()
+  const extension = archiveExtension(file)
   const objectRelative = `review-archive/objects/${hash.slice(0, 2)}/${hash}${extension}`
   const objectPath = path.join(ROOT, objectRelative)
   if (fs.existsSync(objectPath)) {
@@ -81,7 +111,7 @@ for (const file of physicalMedia) {
     fs.mkdirSync(path.dirname(objectPath), { recursive: true })
     fs.copyFileSync(file, objectPath)
   }
-  const legacyPath = `/${posix(path.relative(path.join(ROOT, 'public'), file))}`
+  const legacyPath = legacyPathFor(file)
   legacyPaths[legacyPath] = {
     sha256: hash,
     extension,
@@ -90,6 +120,10 @@ for (const file of physicalMedia) {
     url: `${BASE_URL}/${hash.slice(0, 2)}/${hash}${extension}`,
   }
 }
+
+// These optional inventory hyperlinks were intentionally never published;
+// their version verifiers require the duplicate files to remain absent.
+for (const legacyPath of UNPUBLISHED_HISTORICAL_LINKS) delete legacyPaths[legacyPath]
 
 const orderedPaths = Object.fromEntries(Object.entries(legacyPaths).sort(([a], [b]) => a.localeCompare(b)))
 const sets = new Map()
@@ -115,16 +149,23 @@ let logicalBytes = 0
 for (const entry of Object.values(orderedPaths)) {
   logicalBytes += entry.bytes
 }
-// The object store can also contain deliberately retired, unpublished review
-// evidence. Count every retained object so a normal archive refresh never
-// makes the index disagree with the verifier or encourages evidence deletion.
-const retainedObjectFiles = walk(OBJECT_ROOT)
+// Only count committed objects plus objects referenced by the rebuilt index.
+// Untracked, unrelated draft objects may coexist in a working tree and must
+// not make an archive refresh non-deterministic or absorb another task's work.
+const retainedObjectFiles = [...new Set([
+  ...trackedObjectFiles(),
+  ...Object.values(orderedPaths).map(entry => path.join(ROOT, entry.object)),
+])].sort((a, b) => a.localeCompare(b))
+for (const file of retainedObjectFiles) {
+  if (!fs.existsSync(file)) throw new Error(`retained archive object is missing: ${posix(path.relative(ROOT, file))}`)
+}
 const uniqueBytes = retainedObjectFiles.reduce((sum, file) => sum + fs.statSync(file).size, 0)
 writeJson(INDEX, {
   version: 1,
-  generatedOn: new Date().toISOString().slice(0, 10),
   objectsBaseUrl: BASE_URL,
   mediaExtensions: [...MEDIA_EXTENSIONS].sort(),
+  largeDataExtensions: [...LARGE_DATA_EXTENSIONS].sort(),
+  largeDataThresholdBytes: LARGE_DATA_THRESHOLD_BYTES,
   stats: {
     setCount: sets.size,
     referenceCount: Object.keys(orderedPaths).length,
@@ -136,7 +177,26 @@ writeJson(INDEX, {
   legacyPaths: orderedPaths,
 })
 
-for (const file of physicalMedia) fs.unlinkSync(file)
+// Removal is last: re-read the generated global and per-set manifests and
+// prove that both declarations and the stored object match the public bytes.
+const writtenIndex = JSON.parse(fs.readFileSync(INDEX, 'utf8'))
+for (const file of physicalPayloads) {
+  const bytes = fs.readFileSync(file)
+  const expectedHash = sha256(bytes)
+  const legacyPath = legacyPathFor(file)
+  const setName = legacyPath.replace(/^\/keeper-review\//, '').split('/')[0]
+  const setManifest = JSON.parse(fs.readFileSync(path.join(SET_ROOT, `${setName}.json`), 'utf8'))
+  const globalEntry = writtenIndex.legacyPaths[legacyPath]
+  const setEntry = setManifest.entries[legacyPath]
+  if (!globalEntry || !setEntry || JSON.stringify(globalEntry) !== JSON.stringify(setEntry)) {
+    throw new Error(`refusing to remove ${legacyPath}: generated manifests do not agree`)
+  }
+  const objectFile = path.join(ROOT, globalEntry.object)
+  if (globalEntry.sha256 !== expectedHash || !fs.existsSync(objectFile) || sha256(fs.readFileSync(objectFile)) !== expectedHash) {
+    throw new Error(`refusing to remove ${legacyPath}: archived object/hash verification failed`)
+  }
+  fs.unlinkSync(file)
+}
 for (const directory of walkDirectories(PUBLIC_ROOT).sort((a, b) => b.length - a.length)) {
   if (directory !== PUBLIC_ROOT && fs.readdirSync(directory).length === 0) fs.rmdirSync(directory)
 }
@@ -152,6 +212,7 @@ function walkDirectories(directory) {
 
 console.log(JSON.stringify({
   archivedReferences: Object.keys(orderedPaths).length,
+  archivedThisRun: physicalPayloads.length,
   uniqueObjects: retainedObjectFiles.length,
   logicalMiB: Number((logicalBytes / 1024 / 1024).toFixed(2)),
   uniqueMiB: Number((uniqueBytes / 1024 / 1024).toFixed(2)),

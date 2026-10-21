@@ -2,6 +2,11 @@
 
 **Status:** draft formats, version 1 (20 October 2026). Review-only: nothing here is in the game yet.
 
+**Picture-library update (21 October 2026):** the heat-shimmer, pleasant-aroma
+and welding-sparks marks use new V2 drawings; `symbol-clean-glint` is available
+as a new `clean` mark. All four are selectable in the Bubble stories studio,
+and the replaced V1 pictures remain available for undo.
+
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A
 story has no upper length, only a five-second floor. Frank sets each

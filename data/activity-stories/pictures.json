@@ -1805,6 +1805,33 @@
         }
       ]
     },
+    "symbol-clean-glint": {
+      "kind": "mark",
+      "family": "clean",
+      "label": "Clean glint",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-symbol-redraws-2026-10-21-v1/drafts/components/symbol-clean-glint.png",
+          "sha256": "66aca08ead270bd15a31b8149f6dfcf691bbaa59e38c3e3448d93476d8b8c86a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            48,
+            20,
+            208,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "symbol-clean-glint.png",
+          "by": "codex",
+          "note": "Small four-point glint for freshly clean or finished objects."
+        }
+      ]
+    },
     "symbol-electrical-arc": {
       "kind": "mark",
       "family": "electrical",
@@ -1913,7 +1940,7 @@
       "kind": "mark",
       "family": "heat",
       "label": "Heat shimmer",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -1932,11 +1959,30 @@
           "added": "2026-10-20",
           "source": "activity-cloud-composer-v7",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-symbol-redraws-2026-10-21-v1/drafts/components/symbol-heat-shimmer.png",
+          "sha256": "2863f480f68dc9c03a912207bc9403d87f3f041c0d2ce3661c644950374fc6db",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            69,
+            236,
+            186
+          ],
+          "added": "2026-10-21",
+          "source": "symbol-heat-shimmer.png",
+          "by": "codex",
+          "note": "Horizontal heat-distortion ripples with no flame or vertical-curl read."
         }
       ],
       "review": {
-        "status": "rework-requested",
-        "note": "Reads as small flames and twins heat curls; redraw as horizontal ripples."
+        "status": "approved",
+        "note": "Replaced by v2; awaiting Frank's look."
       }
     },
     "symbol-impact-star": {
@@ -1995,7 +2041,7 @@
       "kind": "mark",
       "family": "scent",
       "label": "Pleasant aroma",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2014,11 +2060,30 @@
           "added": "2026-10-20",
           "source": "activity-cloud-composer-v7",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-symbol-redraws-2026-10-21-v1/drafts/components/symbol-pleasant-aroma.png",
+          "sha256": "3c240e474823cb0b8489d2bb9702782ecc8396bed45327633613726b63842c61",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            57,
+            20,
+            198,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "symbol-pleasant-aroma.png",
+          "by": "codex",
+          "note": "Two open cream-and-brass S-shaped aroma wisps with no closed hooks."
         }
       ],
       "review": {
-        "status": "rework-requested",
-        "note": "Reads as two question marks at game size; redraw as open S-wisps in cream and brass."
+        "status": "approved",
+        "note": "Replaced by v2; awaiting Frank's look."
       }
     },
     "symbol-question-mark": {
@@ -2129,7 +2194,7 @@
       "kind": "mark",
       "family": "welding",
       "label": "Welding sparks",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2148,11 +2213,30 @@
           "added": "2026-10-20",
           "source": "activity-cloud-composer-v7",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-symbol-redraws-2026-10-21-v1/drafts/components/symbol-welding-sparks.png",
+          "sha256": "23b02762b158d3dd7f88ff6ac8de0a9a40d4a2e4451d75e002a99e309b9e3070",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            24,
+            236,
+            231
+          ],
+          "added": "2026-10-21",
+          "source": "symbol-welding-sparks.png",
+          "by": "codex",
+          "note": "Hot-white contact core with a one-sided welding-spark spray."
         }
       ],
       "review": {
-        "status": "rework-requested",
-        "note": "Blurs into the sizzle spark; needs a hot-white core and a one-sided spray."
+        "status": "approved",
+        "note": "Replaced by v2; awaiting Frank's look."
       }
     },
     "tool-broom": {

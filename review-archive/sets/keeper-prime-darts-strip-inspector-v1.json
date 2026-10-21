@@ -168,6 +168,13 @@
       "bytes": 1817463,
       "object": "review-archive/objects/db/dbed7542a87edc458f2ed6cbaf60ebd5149ab2508933d3192f19cd1d828a40e7.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/db/dbed7542a87edc458f2ed6cbaf60ebd5149ab2508933d3192f19cd1d828a40e7.png"
+    },
+    "/keeper-review/keeper-prime-darts-strip-inspector-v1/manifest.json": {
+      "sha256": "e207ad228e10c677c44d50f07811192390b38739a122a75110398cb2a5fd356d",
+      "extension": ".json",
+      "bytes": 31603,
+      "object": "review-archive/objects/e2/e207ad228e10c677c44d50f07811192390b38739a122a75110398cb2a5fd356d.json",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e2/e207ad228e10c677c44d50f07811192390b38739a122a75110398cb2a5fd356d.json"
     }
   }
 }

@@ -427,6 +427,13 @@
       "bytes": 34385,
       "object": "review-archive/objects/e6/e63ea759227a2b7d22a5c3c28b28c41ef92592dfaa2af0cf8f789d85256dd21a.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e6/e63ea759227a2b7d22a5c3c28b28c41ef92592dfaa2af0cf8f789d85256dd21a.png"
+    },
+    "/keeper-review/activity-cloud-composer-v5/catalogue.json": {
+      "sha256": "e7efef12f610900a277c2a1643109badf010a52c97341e51cccea14adbc1b2d8",
+      "extension": ".json",
+      "bytes": 73770,
+      "object": "review-archive/objects/e7/e7efef12f610900a277c2a1643109badf010a52c97341e51cccea14adbc1b2d8.json",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e7/e7efef12f610900a277c2a1643109badf010a52c97341e51cccea14adbc1b2d8.json"
     }
   }
 }

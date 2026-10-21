@@ -14,10 +14,12 @@ pushes never build.
 
 **Review media is content-addressed.** Review HTML and small JSON files remain
 under `public/keeper-review`, but PNG/GIF/JPEG/WebP/AVIF evidence belongs in
-`review-archive/objects`, never as a committed public binary. After any review
-builder writes media, run `npm run archive:keeper-review`; it deduplicates the
-bytes, updates the per-set manifests and removes the public copies. `npm test`
-fails if public review media returns or an archive hash/manifest is wrong.
+`review-archive/objects`, never as a committed public binary. Oversized review
+JSON (24 KiB or more) uses the same archive; small JSON remains public. After
+any review builder writes evidence, run `npm run maintain:keeper-review`; it
+deduplicates the bytes, updates the per-set manifests, removes only verified
+public copies and checks the deployment payload. `npm test` fails if an
+archiveable review payload returns or an archive hash/manifest is wrong.
 Every new moving review page must preload and decode all unique frame URLs
 before enabling controls or starting playback. Use a fresh versioned page and
 asset prefix when correcting delivery; never rewrite an immutable old page.

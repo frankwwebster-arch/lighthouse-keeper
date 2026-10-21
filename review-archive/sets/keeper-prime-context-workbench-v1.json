@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "set": "keeper-prime-context-workbench-v1",
+  "page": {
+    "path": "public/keeper-review/keeper-prime-context-workbench-v1/index.html",
+    "sha256": "312fc27e112e7eced9dec7cf76f26f5b2cb82f32e58d6e51b9b23089aa373422",
+    "bytes": 10099
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/keeper-prime-context-workbench-v1/catalog.json": {
+      "sha256": "36929ea0113c218aef0f24be546a76925fbc02857b462e03928ab2b2ef339132",
+      "extension": ".json",
+      "bytes": 95591,
+      "object": "review-archive/objects/36/36929ea0113c218aef0f24be546a76925fbc02857b462e03928ab2b2ef339132.json",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/36/36929ea0113c218aef0f24be546a76925fbc02857b462e03928ab2b2ef339132.json"
+    },
+    "/keeper-review/keeper-prime-context-workbench-v1/inventory.json": {
+      "sha256": "e150a6125188536ae410c28b5860ea20e654cfe277b9075c6575345cd9d8e780",
+      "extension": ".json",
+      "bytes": 526181,
+      "object": "review-archive/objects/e1/e150a6125188536ae410c28b5860ea20e654cfe277b9075c6575345cd9d8e780.json",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e1/e150a6125188536ae410c28b5860ea20e654cfe277b9075c6575345cd9d8e780.json"
+    }
+  }
+}

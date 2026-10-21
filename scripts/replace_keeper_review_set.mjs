@@ -99,9 +99,10 @@ const setNames = new Set(Object.keys(orderedPaths).map(legacyPath => legacyPath.
 
 writeJson(INDEX_FILE, {
   version: 1,
-  generatedOn: new Date().toISOString().slice(0, 10),
   objectsBaseUrl: BASE_URL,
   mediaExtensions: baseIndex.mediaExtensions,
+  largeDataExtensions: baseIndex.largeDataExtensions,
+  largeDataThresholdBytes: baseIndex.largeDataThresholdBytes,
   stats: {
     setCount: setNames.size,
     referenceCount: Object.keys(orderedPaths).length,
