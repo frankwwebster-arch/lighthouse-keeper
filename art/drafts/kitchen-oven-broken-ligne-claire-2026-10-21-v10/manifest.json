@@ -1,0 +1,746 @@
+{
+  "schema": "lighthouse-keeper/kitchen-oven-broken-ligne-claire@10",
+  "set": "kitchen-oven-broken-ligne-claire-v10",
+  "created": "2026-10-21",
+  "status": "immutable-reversible-broken-flicker-review-candidate-not-approved-not-registered",
+  "scope": "oven Broken door angle in four static states and two complete-oven flicker strips only",
+  "approvedVisualAuthority": {
+    "set": "kitchen-oven-ligne-claire-v8",
+    "candidate": "art/drafts/kitchen-oven-ligne-claire-2026-10-21-v8/candidates/oven/oven-on.png",
+    "sha256": "0ee7572ec03021a7efb747254bc97974de380cdee45a49d47e74b7aba9fd3d80",
+    "approval": "docs/review/kitchen-oven-ligne-claire-v8-approval-2026-10-21.json",
+    "approvalSha256": "bc8e87715610e900cbaa25d33d16bd95964f5408270e36c58b01fba85a4ccdc6"
+  },
+  "priorImmutableCandidate": {
+    "set": "kitchen-oven-broken-ligne-claire-v9",
+    "candidate": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v9/candidates/oven/oven-broken.png",
+    "sha256": "6a80b176b6e5964e1c669e483fe1d99199d0e5aa12ad20a0af1ee8b39a81a411",
+    "doorState": "fully-open",
+    "changed": false
+  },
+  "generatedBrokenSource": {
+    "file": "art/source/kitchen-oven-broken-ligne-claire-2026-10-21-v10/oven-broken-part-open-generated-source.png",
+    "sha256": "9cb31501682b731de5e040800ae27c57ea3a6b626d54668585d4e3a256c3262f",
+    "pixels": [
+      1306,
+      1205
+    ],
+    "alphaBoundsGt1": [
+      141,
+      117,
+      1177,
+      1051
+    ],
+    "doorState": "moderately-part-open"
+  },
+  "rejectedGeneratedAttempts": [
+    {
+      "file": "art/source/kitchen-oven-broken-ligne-claire-2026-10-21-v10/rejected-generated-attempts/door-too-closed-v1.png",
+      "sha256": "c517afbd2c577983fb9c34a4179560b754dbe4978c6129967de21c2159033bbd",
+      "reason": "rejected: door reads too close to shut and changes the lower body proportions more than the selected source"
+    }
+  ],
+  "registration": {
+    "safeCrop": [
+      121,
+      109,
+      1204,
+      1058
+    ],
+    "masterPixels": [
+      736,
+      680
+    ],
+    "candidatePixels": [
+      92,
+      85
+    ],
+    "candidateAlphaBounds": [
+      4,
+      4,
+      88,
+      81
+    ],
+    "v9ExactRegionAboveMasterY": 472,
+    "v9ExactRegionAboveCandidateY": 56,
+    "perPixelLegacyAlphaReused": false,
+    "reason": "V10 copies the V9 master exactly above the door band and replaces only the lower attached-door region while retaining canvas, datum and outer safety padding; LANCZOS edge influence begins at native row 56"
+  },
+  "assets": [
+    {
+      "filename": "oven-on.png",
+      "sourceFile": "art/drafts/kitchen-oven-ligne-claire-2026-10-21-v8/candidates/oven/oven-on.png",
+      "sourceSha256": "0ee7572ec03021a7efb747254bc97974de380cdee45a49d47e74b7aba9fd3d80",
+      "candidateFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/candidates/oven/oven-on.png",
+      "candidateSha256": "0ee7572ec03021a7efb747254bc97974de380cdee45a49d47e74b7aba9fd3d80",
+      "pixels": [
+        92,
+        85
+      ],
+      "cellPixels": [
+        92,
+        85
+      ],
+      "frames": 1,
+      "fps": null,
+      "candidateAlphaSha256": "1c85418aff1f1cd096368e83d4515f08c18fd02a392a9eec3149fd55bee275a9"
+    },
+    {
+      "filename": "oven-broken.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/oven-broken.png",
+      "sourceSha256": "25631317589299c852e6383732cd2b376a0b5575f1720514ab5f250318765243",
+      "candidateFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/candidates/oven/oven-broken.png",
+      "candidateSha256": "71093271eb36c4ab59cab0f75aaf132a9019091219d6b44f6389fab390da19ea",
+      "pixels": [
+        92,
+        85
+      ],
+      "cellPixels": [
+        92,
+        85
+      ],
+      "frames": 1,
+      "fps": null,
+      "candidateAlphaSha256": "d784d96b2d239ccba76d16993447c5175a390be5d089b749fc9704ae425cca7b",
+      "masterFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/masters/oven-broken-master-8x.png",
+      "masterSha256": "ebc86eaf4928d9960ac39f52d7d8290cbc2ad8155bbaf7b176d637cbfaaa9bec",
+      "masterPixels": [
+        736,
+        680
+      ]
+    },
+    {
+      "filename": "oven-broken-cavity-lit.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/oven-broken-cavity-lit.png",
+      "sourceSha256": "8a42f379a156fd485a8efb735adb75e1dbba7c044b78b89f0982fa0d2198d4df",
+      "candidateFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/candidates/oven/oven-broken-cavity-lit.png",
+      "candidateSha256": "43662927bcfb6bc3819b6f40affe93f5c13f0119e619b45213682ab373e38c73",
+      "pixels": [
+        92,
+        85
+      ],
+      "cellPixels": [
+        92,
+        85
+      ],
+      "frames": 1,
+      "fps": null,
+      "candidateAlphaSha256": "d784d96b2d239ccba76d16993447c5175a390be5d089b749fc9704ae425cca7b",
+      "masterFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/masters/oven-broken-cavity-lit-master-8x.png",
+      "masterSha256": "42007a0c7857461d8c8d6aea4f528b22d3e77c59cdc24b9fa3a7e68e3d3d9155",
+      "masterPixels": [
+        736,
+        680
+      ]
+    },
+    {
+      "filename": "oven-broken-warning-lit.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/oven-broken-warning-lit.png",
+      "sourceSha256": "734b0b19b4e2df77cb91fd7327e46ac6d2421351853c6505e8ae9a1bef6bd27e",
+      "candidateFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/candidates/oven/oven-broken-warning-lit.png",
+      "candidateSha256": "73b10912edd0cbc201feb07f8776cbccdf47f8f3f7cb04773aecb35382566111",
+      "pixels": [
+        92,
+        85
+      ],
+      "cellPixels": [
+        92,
+        85
+      ],
+      "frames": 1,
+      "fps": null,
+      "candidateAlphaSha256": "d784d96b2d239ccba76d16993447c5175a390be5d089b749fc9704ae425cca7b",
+      "masterFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/masters/oven-broken-warning-lit-master-8x.png",
+      "masterSha256": "732ad5dbd6c22310c5da8ab598ff2d14f93f3c5d013edb4432d5d3b5fe30ceee",
+      "masterPixels": [
+        736,
+        680
+      ]
+    },
+    {
+      "filename": "oven-broken-both-lit.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/oven-broken-both-lit.png",
+      "sourceSha256": "3f57c7a407ed7a4e4238307e0a839bfa37b6e8655116d65acb2a353883b5e3ce",
+      "candidateFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/candidates/oven/oven-broken-both-lit.png",
+      "candidateSha256": "cdfa1e1466cf88b47e668e66815fc58803247960ad18adf41343c7549b65a9ed",
+      "pixels": [
+        92,
+        85
+      ],
+      "cellPixels": [
+        92,
+        85
+      ],
+      "frames": 1,
+      "fps": null,
+      "candidateAlphaSha256": "d784d96b2d239ccba76d16993447c5175a390be5d089b749fc9704ae425cca7b",
+      "masterFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/masters/oven-broken-both-lit-master-8x.png",
+      "masterSha256": "8eac8e6c5771c42abddfad7dd56336bc6f90ac20fe874548dfb73b03d28e4b52",
+      "masterPixels": [
+        736,
+        680
+      ]
+    },
+    {
+      "filename": "oven-broken-cavity-flicker-f40.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/oven-broken-cavity-flicker-f40.png",
+      "sourceSha256": "94a6beec5979e81b4614b9596fe379a8193db0c1c179a7453f799c0bff2ade04",
+      "candidateFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/candidates/oven/oven-broken-cavity-flicker-f40.png",
+      "candidateSha256": "036428ebce6107ab0518c297cbd20b383e89103ba19fe9b6f3e378f5987ee22a",
+      "pixels": [
+        3680,
+        85
+      ],
+      "cellPixels": [
+        92,
+        85
+      ],
+      "frames": 40,
+      "fps": 4,
+      "candidateAlphaSha256": "8a4688f5026f808208c0bdcb2c804a28c7c4b68eaa349b3b009475b15f0e1f92",
+      "lightingLevels": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        2,
+        0,
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "filename": "oven-broken-warning-flicker-f40.png",
+      "sourceFile": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/oven-broken-warning-flicker-f40.png",
+      "sourceSha256": "e5cc0bbbabfb9632efd23d78b30ba8d322e735b19bfcc3c8e2145f65b43c48d1",
+      "candidateFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/candidates/oven/oven-broken-warning-flicker-f40.png",
+      "candidateSha256": "8720a2beec42bcb685a678b3e20c33a0da664ac19ebd2936db50506c0d1fc0b5",
+      "pixels": [
+        3680,
+        85
+      ],
+      "cellPixels": [
+        92,
+        85
+      ],
+      "frames": 40,
+      "fps": 4,
+      "candidateAlphaSha256": "8a4688f5026f808208c0bdcb2c804a28c7c4b68eaa349b3b009475b15f0e1f92",
+      "lightingLevels": [
+        2,
+        0,
+        2,
+        2,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        2,
+        2,
+        0,
+        2,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        2,
+        2,
+        0,
+        2,
+        0,
+        2,
+        2,
+        2,
+        0,
+        2,
+        0,
+        0
+      ]
+    }
+  ],
+  "optionalBrokenSymbolEffect": {
+    "ownership": "separate removable oven-anchored effect; never baked into oven or flicker strips",
+    "repairRule": "remove independently when Broken is healed",
+    "anchorAssetId": "oven",
+    "ovenLocalOffset": [
+      0,
+      -37
+    ],
+    "file": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/candidates/oven/fx-oven-broken-symbols.png",
+    "sha256": "46d867d1b2ca08aca8329adb38a39c65259743a7eccf60b0a557689d00e421e7",
+    "pixels": [
+      92,
+      40
+    ],
+    "masterFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/masters/fx-oven-broken-symbols-master-8x.png",
+    "masterSha256": "37bdcff2c77e1d32702fc6301657360d0a208b5b5901b53ff9f78176c05dbcff",
+    "masterPixels": [
+      736,
+      320
+    ],
+    "references": [
+      "user-supplied Tintin panel with coloured stars, radial burst and agitation squiggles",
+      "user-supplied compact star/spiral/burst example",
+      "user-supplied comic punctuation, lightning, spring, skull and star example; punctuation/lightning are recipe guidance while the context-specific skull and knife are not default appliance damage"
+    ],
+    "inheritedFromV9ByteIdentical": true
+  },
+  "inheritedApprovedV3": [
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/fridge/fridge-standard.png",
+      "sha256": "14bd88c1219accf8258958b7a8c70f0e31f84a06401b802e503fa7645377b9b3",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/fridge/fridge-broken-hinge-failed.png",
+      "sha256": "c30e76fe857b10f2494be87c32152ae305545a10305db8df61231147054f329b",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/sink/sink-cabinet-on-base.png",
+      "sha256": "fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/sink/sink-cabinet-broken-base.png",
+      "sha256": "fe7b6c4f0d24cb843058b82766387287f26e5d31467bb8d2a86c9613d46105b2",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-a-le-re.png",
+      "sha256": "ead4922bbec6070afdc7bf2db7ae184d3abe6cd3901d3454ae7876822852608a",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-a-le-rj.png",
+      "sha256": "80cbefc9682886da4e59c4130170260e8f8d6e12999a73deb780a195ed3e62df",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-a-lj-re.png",
+      "sha256": "e037cee106efcc38d568e51d0c0665b86c872bff1d30c8bbe9d6a1897cfdb125",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-a-lj-rj.png",
+      "sha256": "debdba3d49a9a631f788538cff3f5480713ffe27358c3fee6bfbf871c2428417",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-b-le-re.png",
+      "sha256": "98f029f6e34385a7f3cadbbe97006a2cdcc231056996c1852e928e0c9169ea18",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-b-le-rj.png",
+      "sha256": "7ee338ce6c54be300d239b4856c0a85eb87d33a2585a50933e4ffaf8af88ac87",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-b-lj-re.png",
+      "sha256": "ee626220ceaf122a4b30773dfaa07e9de3d062d3014820d35b3e82256efd2643",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/cabinets/cabinet-b-lj-rj.png",
+      "sha256": "9d7bc802f1eefab2974aef460afcaf7e3f596d7e4a09f303bd8f1a4d6485d4a2",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/join-body-backfill-template.png",
+      "sha256": "a6eb7269c068986f38ba771f48e77266b91899b611d31cdbc068c48dfd5eec64",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/countertop-join-cap-template.png",
+      "sha256": "1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/countertop-triangle-underlay-template.png",
+      "sha256": "1094b37951e909036425546a669f40cb323f68412a124e676ba923096c5a0d96",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/neighbour-seam-cleanup-left.png",
+      "sha256": "c7fb536832e470a86d3b1e6f6342ba9984d09c30cdd35aca1dfba6a07a3d6430",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/candidates/healing/neighbour-seam-cleanup-right.png",
+      "sha256": "b07982a45d3e8cca1ccc1f45b681a5ba4a6d35de6d8592adf863a7422da6af1f",
+      "byteIdentical": true
+    }
+  ],
+  "unchangedContracts": [
+    {
+      "file": "art/drafts/kitchen-dishwasher-workbench-2026-10-20-v41/candidate-catalogue.json",
+      "sha256": "79d5a2780390ef2eea411f358ba3ed8746fb424fe432db7492c93c4e69c4ac13",
+      "unchanged": true
+    },
+    {
+      "file": "docs/review/kitchen-dishwasher-workbench-v41-approval-2026-10-20.json",
+      "sha256": "f079fc0b09d6221f9e13d15a678c15ad5315c7e535be75cb94f71e98988679f2",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/verify_kitchen_dishwasher_workbench_v41.mjs",
+      "sha256": "cf5dad1116f5e94b41de95c2b5a48c3a47536cb0b6a163480a72db0e07f8a679",
+      "unchanged": true
+    },
+    {
+      "file": "art/drafts/kitchen-split-cabinet-workbench-2026-10-20-v38/candidate-catalogue.json",
+      "sha256": "351bfcc805595890d80fd18daeb11956bff1c1a342ad4611f1b248ea48c671ea",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/verify_kitchen_split_cabinet_workbench_v38.mjs",
+      "sha256": "6186cc9c47b356d40bf4e2ca0cafa0e8dda18a57021a3080fc32042add2556af",
+      "unchanged": true
+    },
+    {
+      "file": "docs/review/kitchen-fitted-cabinet-ligne-claire-v3-approval-2026-10-21.json",
+      "sha256": "7ede9df04e7e45fec5dda8530b4dcb7c55f22305bf1b5e71a3c518b73839859a",
+      "unchanged": true
+    },
+    {
+      "file": "art/drafts/kitchen-fitted-cabinet-ligne-claire-2026-10-21-v3/manifest.json",
+      "sha256": "50f01ee27bdc8de9caaae9ba400326b56048d0ca7dc98bed1cb6cc318740a3ea",
+      "unchanged": true
+    }
+  ],
+  "unchangedEffects": [
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/fx-dishwasher-suds--compact-f40.png",
+      "sha256": "14667dd8d8aa608e22f920c50184cd206cebab7cb4403148309cbbb66cefbae3",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/fx-dishwasher-suds--regular-f40.png",
+      "sha256": "666b2d08b5534fb599870cefd1accf622d6cfdca685a51d62d78c5d2062a79c2",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/fx-dishwasher-suds--emphatic-f40.png",
+      "sha256": "07fa9627e1b78496678974ca607a0f60a795d6016b47af231a4790fdb987c976",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/fx-fridge-drip-ripple-f40.png",
+      "sha256": "86cfaa33eb1e3f3351b481bf3057974af565963e35faca994274d486f60a8b19",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-sink-smooth-join-2026-10-19-v19/fx-sink-on-water-f40.png",
+      "sha256": "4e26f5c789cde68e436ddac8697bc6ff2e518b4318ba716e2e90618b019a21ad",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-sink-smooth-join-2026-10-19-v19/fx-sink-broken-basin-spouts-f40.png",
+      "sha256": "ca8073d053b9a5b8f4c2f81227d3bb2ddbcd24c1cca4c64269cf60e99683d9ab",
+      "byteIdentical": true
+    }
+  ],
+  "unchangedDishwasher": [
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken-le-re.png",
+      "sha256": "061aad8aa14ee97a8cf8b239820a3a8cba8ba5766975ac4a1fa1142762511616",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken-le-rj.png",
+      "sha256": "9e0cbf5e8bfb7ddaef0fb9c43c1e73fec6cc2f633ad3232eb44bfe23ddff08c6",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken-lj-re.png",
+      "sha256": "65859526d5ee0c93bb929e0532e3402b922ef8b84347f265cfa273112170a271",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken-lj-rj.png",
+      "sha256": "8c3fe277f4d269beee18879104c2a478d6ef1f5c1e9db138bce30ddde4d268e1",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken-native-room.png",
+      "sha256": "c126f0af1986ed4de121b63291230232c0ddd262d974bccd8b13d78855b092c7",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-broken.png",
+      "sha256": "061aad8aa14ee97a8cf8b239820a3a8cba8ba5766975ac4a1fa1142762511616",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-joined-native-room.png",
+      "sha256": "6215d72498a3517f993a07999c8b2139540e0172de3953a5fcbf64f10976704a",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off-le-re.png",
+      "sha256": "d006ccfa83bf5c754a7f1249d3969ffe464d3853a15131f64cf0c48d8239b31d",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off-le-rj.png",
+      "sha256": "b26d295f09e74a589feeb548cd3a90906ad832288ed2b68083f7129256664241",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off-lj-re.png",
+      "sha256": "69fb2c3f0c165a5d5653508a901983126ef05084997d60afc75aabcf53b5da53",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off-lj-rj.png",
+      "sha256": "5cc2ecfa87fe1fe54e97ced54ee3bc8a1124d47076da151301b75c3ca5fd1bc3",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off-native-room.png",
+      "sha256": "b5f53fa0578135a0c239e556e4229836321c7accdd12e0cf3d788292084e181e",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-off.png",
+      "sha256": "d006ccfa83bf5c754a7f1249d3969ffe464d3853a15131f64cf0c48d8239b31d",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on-le-re.png",
+      "sha256": "f7a8976bc9cfaf83feb443a65c8b20bf075bff821a4053be5ace71fecb124953",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on-le-rj.png",
+      "sha256": "256b9c5b960c1edd262f9461bd71e252ed473b4125a082a9ce748a97b9e6beee",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on-lj-re.png",
+      "sha256": "72861c9f53167c831e72800deefd67e5fe0d1c86fcf9d98e1ea65d1b779334e1",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on-lj-rj.png",
+      "sha256": "53310feca0aff82aca07d6d6ba401b24fc9912e70b5614e3648401f2dd7e6296",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on-native-room.png",
+      "sha256": "e6b1378e75106d72589d0e76022e07394067436b974d0b6d5c648db884a73fcc",
+      "byteIdentical": true
+    },
+    {
+      "file": "art/raw/kitchen-dishwasher-workbench-2026-10-20-v41/dishwasher-on.png",
+      "sha256": "f7a8976bc9cfaf83feb443a65c8b20bf075bff821a4053be5ace71fecb124953",
+      "byteIdentical": true
+    }
+  ],
+  "evidence": {
+    "doorRevision": {
+      "file": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/evidence/v9-fully-open-vs-v10-part-open-door.png",
+      "sha256": "c9ad48fdd260aadbcbec66be515d74cf55bbc2b24a1e92276fba46dd0e0876f9"
+    },
+    "family": {
+      "file": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/evidence/approved-v8-on-vs-v10-broken-family.png",
+      "sha256": "f5603c138716af6e9a73dd2ac1623fbaa4e61d3082ee67604d417aa99b5fcc4b"
+    },
+    "completeContactSheet": {
+      "file": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/evidence/complete-current-vs-candidate-contact-sheet.png",
+      "sha256": "a0b35c05d6d2a394f23f90a256be40baaa60815294a83910b3f48fc9b58e7fd9"
+    },
+    "rooms": {
+      "file": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/evidence/exact-datum-healing-current-vs-v10.png",
+      "sha256": "7e0fdbee789fbb8c1c33f022973616c91e542d086ceaa5eeea2e89e7a4d428ba",
+      "cases": [
+        {
+          "id": "on-dishwasher-right",
+          "positions": {
+            "fridge": 84,
+            "cabinetA": 168,
+            "oven": 252,
+            "cabinetB": 336,
+            "sink": 420,
+            "dishwasher": 504
+          },
+          "states": {
+            "fridge": "standard",
+            "sink": "on",
+            "oven": "on",
+            "dishwasher": "on"
+          },
+          "currentFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/evidence/on-dishwasher-right-current-room.png",
+          "currentSha256": "5575aec7b85202a7ad476d7bcf25323f3e9f9b8221db8521428252d5fd2a1d9d",
+          "candidateFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/evidence/on-dishwasher-right-candidate-room.png",
+          "candidateSha256": "720dda65ebd1031c2cb4cb39a52fbc3677cba0386aca065fe046b43b45362252",
+          "ovenRoomDatum": [
+            248,
+            127
+          ],
+          "sinkRoomDatum": [
+            416,
+            104
+          ]
+        },
+        {
+          "id": "on-dishwasher-left",
+          "positions": {
+            "dishwasher": 84,
+            "cabinetA": 168,
+            "oven": 252,
+            "cabinetB": 336,
+            "sink": 420,
+            "fridge": 504
+          },
+          "states": {
+            "fridge": "standard",
+            "sink": "on",
+            "oven": "on",
+            "dishwasher": "on"
+          },
+          "currentFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/evidence/on-dishwasher-left-current-room.png",
+          "currentSha256": "c577c3b3e4d18f6c76c006709e4621a62e1bb85308fddf294db6261b56a2553b",
+          "candidateFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/evidence/on-dishwasher-left-candidate-room.png",
+          "candidateSha256": "d73af953c5ac6dc179bacd1e78c637575bb73dd183c2eacf413e653d4ffd2a95",
+          "ovenRoomDatum": [
+            248,
+            127
+          ],
+          "sinkRoomDatum": [
+            416,
+            104
+          ]
+        },
+        {
+          "id": "broken-dishwasher-right",
+          "positions": {
+            "fridge": 84,
+            "cabinetA": 168,
+            "oven": 252,
+            "cabinetB": 336,
+            "sink": 420,
+            "dishwasher": 504
+          },
+          "states": {
+            "fridge": "broken",
+            "sink": "broken",
+            "oven": "broken-both-lit",
+            "dishwasher": "broken"
+          },
+          "currentFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/evidence/broken-dishwasher-right-current-room.png",
+          "currentSha256": "ca5d57f7f63dd124b001cffed15318b25bee82a9d3a6f0c3e15989172d297bbb",
+          "candidateFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/evidence/broken-dishwasher-right-candidate-room.png",
+          "candidateSha256": "ad49d6ec1dbe6703a2f0c6fbfd8db3da93d762850b24d5367c47b62ec236b666",
+          "ovenRoomDatum": [
+            248,
+            127
+          ],
+          "sinkRoomDatum": [
+            416,
+            104
+          ]
+        },
+        {
+          "id": "broken-dishwasher-interior",
+          "positions": {
+            "fridge": 84,
+            "cabinetA": 168,
+            "dishwasher": 252,
+            "cabinetB": 336,
+            "sink": 420,
+            "oven": 504
+          },
+          "states": {
+            "fridge": "broken",
+            "sink": "broken",
+            "oven": "broken",
+            "dishwasher": "broken"
+          },
+          "currentFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/evidence/broken-dishwasher-interior-current-room.png",
+          "currentSha256": "07bcc71275c5a43dece36e558ea4521933faf0d5a784a0d75a46f98449b24b6c",
+          "candidateFile": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/evidence/broken-dishwasher-interior-candidate-room.png",
+          "candidateSha256": "88f6ba6c523fc2bfa4add85cba54507b3e3961a38f9b78efdfa373a105a84e33",
+          "ovenRoomDatum": [
+            500,
+            127
+          ],
+          "sinkRoomDatum": [
+            416,
+            104
+          ]
+        }
+      ]
+    },
+    "optionalSymbols": {
+      "file": "art/drafts/kitchen-oven-broken-ligne-claire-2026-10-21-v10/evidence/optional-broken-symbol-effect.png",
+      "sha256": "ba46108daffc5723a1281bf26a14437ea1b092fc05f7f0327ba5b1b37f089ee3"
+    }
+  },
+  "checks": {
+    "allSevenCandidatesPresent": true,
+    "approvedOnByteIdentical": true,
+    "exactCanvasAndOuterPadding": true,
+    "fixedRegisteredGeometryAcrossBrokenStatesAndFrames": true,
+    "doorChangedFromFullyOpenToModeratelyPartOpen": true,
+    "exactV9PixelsAboveDoorBand": true,
+    "frameCountAndTimingExact": true,
+    "frameIsolationExact": true,
+    "transparentDoorGlassRetained": true,
+    "ovenDatumUnchanged": true,
+    "sinkDatumUnchanged": true,
+    "dishwasherChanged": false,
+    "symbolEffectSeparateAndRepairRemovable": true,
+    "movementAnimationInteractionRepairHealingContractsUnchanged": true,
+    "runtimeChanged": false,
+    "registrationPerformed": false,
+    "currentSelectorChanged": false
+  },
+  "approvalRequiredFor": "any V10 registration, promotion, selector change, production copy or runtime wiring",
+  "rollback": "Discard only this V10 draft, generated-source directory, review route, builder and delivery record. V9 and every earlier source, production, review and approved asset remain byte-for-byte intact."
+}

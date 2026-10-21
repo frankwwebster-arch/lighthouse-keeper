@@ -799,6 +799,18 @@ collision or flicker frames. Every dishwasher variant remains byte-identical
 V41 input and no dishwasher candidate exists. V9 is unapproved, unregistered,
 unpromoted and unwired; its closed gate requires explicit approval. See
 [`docs/KITCHEN_OVEN_BROKEN_LIGNE_CLAIRE_V9_2026-10-21.md`](docs/KITCHEN_OVEN_BROKEN_LIGNE_CLAIRE_V9_2026-10-21.md).
+Kitchen Oven Broken Ligne-Claire V10 is the immutable door-angle successor at
+`/keeper-review/kitchen-oven-broken-ligne-claire-v10/`. Frank liked V9 but
+asked that the Broken door not be completely open. V10 therefore raises only
+that attached door to a moderate part-open angle while preserving the exact
+`92 × 85` canvas, `(4,4)–(88,81)` bounds, oven/sink datums, V8 On bytes,
+40-frame/4-fps schedules, movement locks, interactions and V3/V41 healing.
+The door glass is genuinely translucent in every state/frame. The separate
+comic fault-symbol effect is copied byte-for-byte from V9 and remains
+independently removable on repair. V9, all dishwasher assets, source,
+production, Final and runtime remain untouched. V10 is unapproved,
+unregistered, unpromoted and unwired behind a closed approval gate. See
+[`docs/KITCHEN_OVEN_BROKEN_LIGNE_CLAIRE_V10_2026-10-21.md`](docs/KITCHEN_OVEN_BROKEN_LIGNE_CLAIRE_V10_2026-10-21.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

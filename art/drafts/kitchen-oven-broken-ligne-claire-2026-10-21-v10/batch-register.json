@@ -1,0 +1,8 @@
+{
+  "schema": "lighthouse-keeper/kitchen-batch-register@10",
+  "set": "kitchen-oven-broken-ligne-claire-v10",
+  "status": "blocked-pending-explicit-frank-approval",
+  "register": false,
+  "promote": false,
+  "currentSelectorChanges": []
+}

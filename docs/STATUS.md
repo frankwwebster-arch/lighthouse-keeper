@@ -588,6 +588,19 @@ dishwasher byte are pinned. V9 is unapproved, unregistered, unpromoted and
 unwired; `batch-register.json` remains closed. Delivery:
 `docs/KITCHEN_OVEN_BROKEN_LIGNE_CLAIRE_V9_2026-10-21.md`.
 
+Kitchen Oven Broken Ligne-Claire V10 at
+`/keeper-review/kitchen-oven-broken-ligne-claire-v10/` is the immutable
+door-angle successor. Frank judged V9 excellent but preferred the Broken door
+not completely open. V10 changes only that authorised visual detail: the same
+attached door is now moderately part-open. The exact `92 × 85` canvas,
+`(4,4)–(88,81)` alpha bounds, genuine glass transparency, V8 On bytes,
+lighting-state geometry, 40-frame/4-fps schedules, room datums, movement and
+repair contracts, V3 healing and every V41 dishwasher byte remain pinned. The
+V9 symbol effect is reused byte-for-byte and remains independently removable
+on repair. V9 is untouched; V10 is unapproved, unregistered, unpromoted and
+unwired with its registration gate closed. Delivery:
+`docs/KITCHEN_OVEN_BROKEN_LIGNE_CLAIRE_V10_2026-10-21.md`.
+
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting
 link with V6. The animation remains the exact V1/V2 six-pose motion inside its
