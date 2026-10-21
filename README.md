@@ -1199,7 +1199,7 @@ must remain paused to avoid duplicate alerts.
 ## Where things are
 
 - `src/game/` — rules (`config.ts` has every number, `commands.ts` the command book and silly reactions, `engine.ts` the rules).
-- `data/activity-stories/`, `src/activityStories/` and `scripts/import_activity_story_picture_catalogue.mjs` — the Bubble stories formats, Studio engine and complete picture-catalogue reconciliation. The shared library currently exposes 250 versioned pictures, including all 244 review-ready isolated source components from Activity Cloud Composer V1–V7, rear-work callout V2/V3 and every component-bearing Claude picture pack; `npm run verify:activity-stories` checks their files, hashes, geometry and full source coverage.
+- `data/activity-stories/`, `src/activityStories/` and `scripts/import_activity_story_picture_catalogue.mjs` — the Bubble stories formats, Studio engine and complete picture-catalogue reconciliation. The shared library currently exposes 304 versioned pictures, including all 298 review-ready isolated source components from Activity Cloud Composer V1–V7, rear-work callout V2/V3 and every component-bearing Claude or Codex picture pack. The latest 54-picture expansion adds dedicated Fishing, Gardening, Pet care and play, Fixing things, Pub, Art, and Scientific and inventing groups; `npm run verify:activity-stories` checks their files, hashes, geometry and full source coverage.
 - `src/ui/floors.tsx` — fixed-width room definitions and the reserved diving geometry, which follows the bedroom.
 - `src/ui/art.tsx` and `src/ui/Sprite.tsx` — vector fallbacks, the three-state renderer, and production strip playback.
 - `public/sprites/` — production room, TV/effect and keeper review PNGs plus their runtime manifest.

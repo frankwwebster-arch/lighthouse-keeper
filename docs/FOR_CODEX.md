@@ -16,11 +16,12 @@ new current V1 `clean` mark. The immutable authoring pack is
 list exposes all four while retaining the earlier versions for undo.
 
 The picture-library completeness correction is also finished (21 October
-2026). `pictures.json` now has 250 selectable pictures and includes all 244
+2026). `pictures.json` now has 304 selectable pictures and includes all 298
 review-ready isolated source components from Activity Cloud Composer V1–V7,
-the rear-work V2/V3 callout vocabulary and every component-bearing Claude
-picture pack: all V5 album artwork, the seven aquarium items, the 26 bedroom
-items, and every other activity family. Reconcile from the immutable packs
+the rear-work V2/V3 callout vocabulary and every component-bearing Claude or
+Codex picture pack: all V5 album artwork, the aquarium and bedroom sets, and
+the 54-picture fishing, gardening, pet-play, fixing, pub, art and inventing
+expansion. Reconcile from the immutable packs
 with `node scripts/import_activity_story_picture_catalogue.mjs`;
 `npm run verify:activity-stories` enforces that complete source set as well as
 the original inherited marks.

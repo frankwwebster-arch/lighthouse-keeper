@@ -28,10 +28,10 @@ Read `data/activity-stories/README.md`. In short:
 
 - `data/activity-stories/pictures.json` is the picture library. It began with
   33 pictures (V2's 20 objects and 6 symbols, plus the 7 V7 symbols). As of
-  21 October it exposes 250 pictures: all 244 review-ready isolated source
+  21 October it exposes 304 pictures: all 298 review-ready isolated source
   components from Activity Cloud Composer V1–V7, rear-work activity-callout
-  V2/V3 and every component-bearing Claude picture pack (including the bedroom
-  pack), plus the original inherited marks. It references immutable pack files
+  V2/V3 and every component-bearing Claude or Codex picture pack (including
+  the bedroom pack and Codex's 54-picture family expansion), plus the original inherited marks. It references immutable pack files
   by URL and SHA-256 and retains the approved 24-frame rear-work loop.
 - `data/activity-stories/stories/*.json` are the four drafts: Garden BBQ,
   Sandwich assembly, Washing up and General repair, rebuilt from the review

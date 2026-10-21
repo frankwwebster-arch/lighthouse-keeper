@@ -316,6 +316,222 @@
         }
       ]
     },
+    "art-brushes-pot": {
+      "kind": "object",
+      "family": "art",
+      "label": "Pot of paintbrushes",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-brushes-pot.png",
+          "sha256": "966ab94e4c7c11e4455a1661b56651b73c613b51ea9acce00ccf97b47d806e3f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            46,
+            20,
+            209,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "art-brushes-pot.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "art-easel-and-canvas": {
+      "kind": "object",
+      "family": "art",
+      "label": "Easel and blank canvas",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-easel-and-canvas.png",
+          "sha256": "50bd6d29772e66c39f3a09c659ea5acc027b3a0ba43e4d158a8822b7187fd6f0",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            53,
+            20,
+            202,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "art-easel-and-canvas.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "art-ink-bottle-and-quill": {
+      "kind": "object",
+      "family": "art",
+      "label": "Ink bottle and quill",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-ink-bottle-and-quill.png",
+          "sha256": "ba8ac62bba21fc7c9da54214887eced13a3df6d9c004862a376b50d0ffc364fd",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            51,
+            20,
+            204,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "art-ink-bottle-and-quill.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "art-lino-roller": {
+      "kind": "object",
+      "family": "art",
+      "label": "Lino-printing roller",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-lino-roller.png",
+          "sha256": "2e2556f226cd99b6a30f2234383eedaad1caf740cb011434d8f4c9f06949de6e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            46,
+            236,
+            210
+          ],
+          "added": "2026-10-21",
+          "source": "art-lino-roller.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "art-origami-boat": {
+      "kind": "object",
+      "family": "art",
+      "label": "Origami boat",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-origami-boat.png",
+          "sha256": "975cb7a6c65bf2af9a73db1be286610815c303e12103525459db1b5f8a19124a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            69,
+            236,
+            187
+          ],
+          "added": "2026-10-21",
+          "source": "art-origami-boat.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "art-paint-palette": {
+      "kind": "object",
+      "family": "art",
+      "label": "Painter's palette",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-paint-palette.png",
+          "sha256": "e514ca9185eade4aba8908bec6aedd96c39a5419e3b8d18de69af262e73411d1",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            42,
+            236,
+            214
+          ],
+          "added": "2026-10-21",
+          "source": "art-paint-palette.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "art-sketchbook-and-pencil": {
+      "kind": "object",
+      "family": "art",
+      "label": "Sketchbook and pencil",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-sketchbook-and-pencil.png",
+          "sha256": "251fbbe54c86dfeca480927eac26b19c71f50b992adde72f8ab9fa991b2eadd3",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            46,
+            236,
+            210
+          ],
+          "added": "2026-10-21",
+          "source": "art-sketchbook-and-pencil.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "art-watercolour-set": {
+      "kind": "object",
+      "family": "art",
+      "label": "Watercolour set",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-watercolour-set.png",
+          "sha256": "a82845b65a71e80681bf310c933078582d5237c124770df1dc1cdb5e0e6a37c8",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            23,
+            236,
+            233
+          ],
+          "added": "2026-10-21",
+          "source": "art-watercolour-set.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
     "baking-flour": {
       "kind": "object",
       "family": "baking",
@@ -2589,6 +2805,33 @@
         }
       ]
     },
+    "fishing-creel-basket": {
+      "kind": "object",
+      "family": "fishing",
+      "label": "Fishing creel",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/fishing-creel-basket.png",
+          "sha256": "a990f82ccb980208fc96bc35ae5687bdbbcae355d2b7a5c208f084891b862198",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            42,
+            236,
+            213
+          ],
+          "added": "2026-10-21",
+          "source": "fishing-creel-basket.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
     "fishing-float": {
       "kind": "object",
       "family": "fishing",
@@ -2613,6 +2856,114 @@
           "source": "fishing-float.png",
           "by": "codex",
           "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "fishing-folding-stool": {
+      "kind": "object",
+      "family": "fishing",
+      "label": "Angler's folding stool",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/fishing-folding-stool.png",
+          "sha256": "31df8d7ba8aceb9b4a5dff190c39bed102ae4d54a3b93fefbd87014b2a16b8f1",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            33,
+            236,
+            223
+          ],
+          "added": "2026-10-21",
+          "source": "fishing-folding-stool.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "fishing-landing-net": {
+      "kind": "object",
+      "family": "fishing",
+      "label": "Landing net",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/fishing-landing-net.png",
+          "sha256": "8e04ab4519e7dc8c9ab9f41b728bf222cc55d89f26679127ed058f511459ecd7",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            42,
+            236,
+            214
+          ],
+          "added": "2026-10-21",
+          "source": "fishing-landing-net.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "fishing-line-clippers": {
+      "kind": "object",
+      "family": "fishing",
+      "label": "Fishing-line clippers",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/fishing-line-clippers.png",
+          "sha256": "c2cec2d431a8f0228921d666fd314d90795528f1072055cf5abbd7e6797cb667",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            41,
+            236,
+            215
+          ],
+          "added": "2026-10-21",
+          "source": "fishing-line-clippers.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "fishing-lure": {
+      "kind": "object",
+      "family": "fishing",
+      "label": "Fishing lure",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/fishing-lure.png",
+          "sha256": "8983e6a28a1e59ad3c6a85d4470e777aedd3272a61e536349d1dbaaa2b41b58c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            74,
+            236,
+            181
+          ],
+          "added": "2026-10-21",
+          "source": "fishing-lure.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
         }
       ]
     },
@@ -2667,6 +3018,33 @@
           "source": "fishing-tackle-box.png",
           "by": "codex",
           "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "fishing-waders": {
+      "kind": "object",
+      "family": "fishing",
+      "label": "Fishing waders",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/fishing-waders.png",
+          "sha256": "9bef3115eb2d79fb7507f033e9f6ec230234676c10fdfbe1178e89b5d7c72104",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            77,
+            20,
+            179,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "fishing-waders.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
         }
       ]
     },
@@ -2778,6 +3156,114 @@
         }
       ]
     },
+    "garden-compost-bag": {
+      "kind": "object",
+      "family": "garden",
+      "label": "Compost bag",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/garden-compost-bag.png",
+          "sha256": "c103c907602748f0058a88553168b6010c837adb72da669a1fcfdca05cbcede2",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            23,
+            236,
+            232
+          ],
+          "added": "2026-10-21",
+          "source": "garden-compost-bag.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "garden-gloves": {
+      "kind": "object",
+      "family": "garden",
+      "label": "Gardening gloves",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/garden-gloves.png",
+          "sha256": "25f6af001cfdc0e153cefa5c5f538db755a6127c08986b9dc82ac84c26beb413",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            30,
+            236,
+            225
+          ],
+          "added": "2026-10-21",
+          "source": "garden-gloves.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "garden-rake": {
+      "kind": "object",
+      "family": "garden",
+      "label": "Garden rake",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/garden-rake.png",
+          "sha256": "8ce4457c782dbf7a86178dedadd42734a5512a49601213edee2bbaed18ef6bac",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            30,
+            236,
+            226
+          ],
+          "added": "2026-10-21",
+          "source": "garden-rake.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "garden-secateurs": {
+      "kind": "object",
+      "family": "garden",
+      "label": "Garden secateurs",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/garden-secateurs.png",
+          "sha256": "9ff1250a7b842b44a812b719c907a3932feb4c533aa1b3b1e0695763b0f851e9",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            82,
+            236,
+            173
+          ],
+          "added": "2026-10-21",
+          "source": "garden-secateurs.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
     "garden-seedling": {
       "kind": "object",
       "family": "garden",
@@ -2832,6 +3318,33 @@
         }
       ]
     },
+    "garden-trowel": {
+      "kind": "object",
+      "family": "garden",
+      "label": "Garden trowel",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/garden-trowel.png",
+          "sha256": "3a914f04d590cfd92a8aee3c5576ca088b9dcbcdceec7f3828cf876f1b0def7e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            30,
+            236,
+            225
+          ],
+          "added": "2026-10-21",
+          "source": "garden-trowel.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
     "garden-watering": {
       "kind": "object",
       "family": "garden",
@@ -2856,6 +3369,33 @@
           "source": "garden-watering.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        }
+      ]
+    },
+    "garden-wheelbarrow": {
+      "kind": "object",
+      "family": "garden",
+      "label": "Garden wheelbarrow",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/garden-wheelbarrow.png",
+          "sha256": "fd9dfe4fb260f441ab268c2afcbc1c5d7534d377925b540214471d3f277893f3",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            53,
+            236,
+            203
+          ],
+          "added": "2026-10-21",
+          "source": "garden-wheelbarrow.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
         }
       ]
     },
@@ -3126,6 +3666,222 @@
           "source": "ingredient-butter-block.png",
           "by": "codex",
           "note": "Codex kitchen condiments and prep pack V1"
+        }
+      ]
+    },
+    "inventing-brass-telescope": {
+      "kind": "object",
+      "family": "inventing",
+      "label": "Brass telescope",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-brass-telescope.png",
+          "sha256": "72af346af5f101b9eb78fe43bb2b6f6af7d1a3a22b1035d92b017ac0008369e4",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            72,
+            236,
+            184
+          ],
+          "added": "2026-10-21",
+          "source": "inventing-brass-telescope.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "inventing-conical-flask": {
+      "kind": "object",
+      "family": "inventing",
+      "label": "Conical flask",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-conical-flask.png",
+          "sha256": "f36b5e0fa965291dbf6ed6d711dc63b153b7f58e50f486f532d6132ed2ce1c41",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            42,
+            20,
+            213,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "inventing-conical-flask.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "inventing-copper-coil": {
+      "kind": "object",
+      "family": "inventing",
+      "label": "Copper induction coil",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-copper-coil.png",
+          "sha256": "a1da9462004be9c5b97dea0551e81a73d4e3ecdb351b925a674faf520e148c4f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            40,
+            236,
+            216
+          ],
+          "added": "2026-10-21",
+          "source": "inventing-copper-coil.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "inventing-gyroscope": {
+      "kind": "object",
+      "family": "inventing",
+      "label": "Mechanical gyroscope",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-gyroscope.png",
+          "sha256": "a63b3699e2c3e00ff0c0f058e7a9b4b4ff15b682b3a0ace0fe5d45373b461078",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            42,
+            20,
+            214,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "inventing-gyroscope.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "inventing-horseshoe-magnet": {
+      "kind": "object",
+      "family": "inventing",
+      "label": "Horseshoe magnet",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-horseshoe-magnet.png",
+          "sha256": "8e2d639beda1e139b8f1defe8bba32fd34f08fb2b5646bba82289e0f636ea44b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            22,
+            20,
+            234,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "inventing-horseshoe-magnet.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "inventing-light-bulb": {
+      "kind": "object",
+      "family": "inventing",
+      "label": "Inventor's light bulb",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-light-bulb.png",
+          "sha256": "59cfd2296717634afe45f83dc236bb2c6f98f62eeebbcf7fdbf6e7e60b1d4968",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            63,
+            20,
+            192,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "inventing-light-bulb.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "inventing-microscope": {
+      "kind": "object",
+      "family": "inventing",
+      "label": "Inventor's microscope",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-microscope.png",
+          "sha256": "df085ba4e3e9e49aeb990da4b73df47cd9c578f40d7e115eadc46fb34bc8e821",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            65,
+            20,
+            190,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "inventing-microscope.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "inventing-test-tubes": {
+      "kind": "object",
+      "family": "inventing",
+      "label": "Test-tube rack",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-test-tubes.png",
+          "sha256": "c30f9593ba7951f2401a3dce8465e58deb36f7fde1aebd8e868752edc895c212",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            43,
+            236,
+            212
+          ],
+          "added": "2026-10-21",
+          "source": "inventing-test-tubes.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
         }
       ]
     },
@@ -4533,6 +5289,87 @@
         }
       ]
     },
+    "pet-cat": {
+      "kind": "object",
+      "family": "pet-care",
+      "label": "Curled tabby cat",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pet-cat.png",
+          "sha256": "390c755d2c83670405db43695f3702a9d0ca23a9e821335cf8ddec1143ac7d8f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            22,
+            20,
+            234,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "pet-cat.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "pet-dog": {
+      "kind": "object",
+      "family": "pet-care",
+      "label": "Scruffy terrier",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pet-dog.png",
+          "sha256": "2707209a4490157c31c364b4edb46ac994daf12529c49a9dd1f8efeacc529a5d",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            51,
+            20,
+            205,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "pet-dog.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "pet-feather-wand": {
+      "kind": "object",
+      "family": "pet-care",
+      "label": "Feather wand",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pet-feather-wand.png",
+          "sha256": "472ac04762d9565a5acbc6acf9143e63985a22f0e561f76a9e39c1643f88cc03",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            40,
+            236,
+            216
+          ],
+          "added": "2026-10-21",
+          "source": "pet-feather-wand.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
     "pet-fish": {
       "kind": "object",
       "family": "pet-care",
@@ -4641,6 +5478,33 @@
         }
       ]
     },
+    "pet-lead-and-collar": {
+      "kind": "object",
+      "family": "pet-care",
+      "label": "Pet lead and collar",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pet-lead-and-collar.png",
+          "sha256": "a7737cd1e7d1f22cd22e8ac843de9728086fb021db8fe789ce8e4faa55301085",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            65,
+            236,
+            191
+          ],
+          "added": "2026-10-21",
+          "source": "pet-lead-and-collar.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
     "pet-purr-marks": {
       "kind": "object",
       "family": "pet-care",
@@ -4665,6 +5529,60 @@
           "source": "pet-purr-marks.png",
           "by": "codex",
           "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "pet-rabbit": {
+      "kind": "object",
+      "family": "pet-care",
+      "label": "Lop-eared rabbit",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pet-rabbit.png",
+          "sha256": "9f4551801de48fbfa17635b99494e573d7c6208e361ef9f771fa2114f7ea68fb",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            39,
+            20,
+            216,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "pet-rabbit.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "pet-tennis-ball": {
+      "kind": "object",
+      "family": "pet-care",
+      "label": "Pet tennis ball",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pet-tennis-ball.png",
+          "sha256": "7ee7a297cfdb8ad78c57c115c11d112aa4fb605f539bc98f34dbab85deb87e33",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            22,
+            20,
+            234,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "pet-tennis-ball.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
         }
       ]
     },
@@ -4803,6 +5721,222 @@
         }
       ]
     },
+    "pub-bar-stool": {
+      "kind": "object",
+      "family": "pub",
+      "label": "Pub bar stool",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-bar-stool.png",
+          "sha256": "1a358ed1a6c8e8533be3aa95c9e076ad86519d735bbbba9547baf8ae956cb2df",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            57,
+            20,
+            199,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "pub-bar-stool.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "pub-beer-pump": {
+      "kind": "object",
+      "family": "pub",
+      "label": "Pub beer pump",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-beer-pump.png",
+          "sha256": "b3bd958f7ce201a7c9b4601d96e26363c78046ef71d14993d28c916c2861b536",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            85,
+            20,
+            170,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "pub-beer-pump.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "pub-bitter-pint": {
+      "kind": "object",
+      "family": "pub",
+      "label": "Pint of bitter",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-bitter-pint.png",
+          "sha256": "84c4400ac95acb51a22083f35ea9bd6eebd31bfd7f89ce6ba807b984aa8f7b48",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            57,
+            20,
+            199,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "pub-bitter-pint.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "pub-crisps-bowl": {
+      "kind": "object",
+      "family": "pub",
+      "label": "Bowl of crisps",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-crisps-bowl.png",
+          "sha256": "8a172ad3f5219a471ea5385cb3f1d04263b3ca346b9e27c2c175b94b4cb85925",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            34,
+            236,
+            222
+          ],
+          "added": "2026-10-21",
+          "source": "pub-crisps-bowl.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "pub-dartboard": {
+      "kind": "object",
+      "family": "pub",
+      "label": "Pub dartboard",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-dartboard.png",
+          "sha256": "724ad8dbb4fa94567c7058e22ef9dadfdcf848d065758003bc4301086442a436",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            20,
+            236,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "pub-dartboard.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "pub-darts": {
+      "kind": "object",
+      "family": "pub",
+      "label": "Set of pub darts",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-darts.png",
+          "sha256": "300c387f09c30bd4ba57c109304d757bd0d7d224dc782adc7c4918cd4a9569fa",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            25,
+            236,
+            230
+          ],
+          "added": "2026-10-21",
+          "source": "pub-darts.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "pub-pool-cue-and-balls": {
+      "kind": "object",
+      "family": "pub",
+      "label": "Pool cue and balls",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-pool-cue-and-balls.png",
+          "sha256": "fb7eee9b26bab1184c58102ec5333f33129651c9a306268e862f0e55ace382b3",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            69,
+            236,
+            187
+          ],
+          "added": "2026-10-21",
+          "source": "pub-pool-cue-and-balls.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "pub-tankard": {
+      "kind": "object",
+      "family": "pub",
+      "label": "Pewter tankard",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-tankard.png",
+          "sha256": "06e4ada1c773e602ba3ba6a64e5dfcec0111db8a1d3a9289a2b9ed232e405b2c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            29,
+            236,
+            227
+          ],
+          "added": "2026-10-21",
+          "source": "pub-tankard.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
     "reading-castle": {
       "kind": "object",
       "family": "reading",
@@ -4938,6 +6072,33 @@
         }
       ]
     },
+    "repair-adjustable-spanner": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Adjustable spanner",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-adjustable-spanner.png",
+          "sha256": "8443775c2d4d9de5af59d9339b976fda94ddd4226962d381c821f353f4560d5b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            48,
+            236,
+            207
+          ],
+          "added": "2026-10-21",
+          "source": "repair-adjustable-spanner.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
     "repair-battery-leads": {
       "kind": "object",
       "family": "repair",
@@ -5018,6 +6179,114 @@
         }
       ]
     },
+    "repair-c-clamp": {
+      "kind": "object",
+      "family": "repair",
+      "label": "C-clamp",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-c-clamp.png",
+          "sha256": "7baa85ec13949352f1460534e80d815b5237c87f7ccc489c2fd3d5da6f1ea54a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            60,
+            236,
+            196
+          ],
+          "added": "2026-10-21",
+          "source": "repair-c-clamp.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "repair-combination-pliers": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Combination pliers",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-combination-pliers.png",
+          "sha256": "dadda73bf3e3aa44eebe2a5edd0694261e812857e86b317797f1f85e38bbdea2",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            50,
+            236,
+            205
+          ],
+          "added": "2026-10-21",
+          "source": "repair-combination-pliers.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "repair-cordless-drill": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Cordless drill",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-cordless-drill.png",
+          "sha256": "d8c4fb90764bef8c0d7bbcbe9e16ca340c8fdb25c8393c9f7e7cbc7a862b2e69",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            28,
+            236,
+            227
+          ],
+          "added": "2026-10-21",
+          "source": "repair-cordless-drill.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "repair-drill-bit-case": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Drill-bit case",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-drill-bit-case.png",
+          "sha256": "4a52bfe893c783c6a21fe2c564bffc3749f57306e4e098dd903e6905870e88c5",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            33,
+            20,
+            223,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "repair-drill-bit-case.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
     "repair-fastener": {
       "kind": "object",
       "family": "repair",
@@ -5045,6 +6314,33 @@
         }
       ]
     },
+    "repair-flat-head-screwdriver": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Flat-head screwdriver",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-flat-head-screwdriver.png",
+          "sha256": "8c70b4549514713f55dada9b8d58a91ee9f4251fde417fc2feadea0b5e40f471",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            43,
+            236,
+            212
+          ],
+          "added": "2026-10-21",
+          "source": "repair-flat-head-screwdriver.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
     "repair-hammer-nails": {
       "kind": "object",
       "family": "repair",
@@ -5068,6 +6364,33 @@
           "added": "2026-10-19",
           "source": "activity-cloud-composer-v5",
           "by": "codex"
+        }
+      ]
+    },
+    "repair-hand-saw": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Hand saw",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-hand-saw.png",
+          "sha256": "a7d6b4af87a3468838fe6515c42112ba39789ebd7dc1bd0a35835dc61d22dfdd",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            66,
+            236,
+            189
+          ],
+          "added": "2026-10-21",
+          "source": "repair-hand-saw.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
         }
       ]
     },
@@ -5152,6 +6475,33 @@
         }
       ]
     },
+    "repair-phillips-screwdriver": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Phillips screwdriver",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-phillips-screwdriver.png",
+          "sha256": "733b49927d6ae1054898b56fa11eb464216e8ed6996073e6f22b68ebad13a073",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            38,
+            236,
+            218
+          ],
+          "added": "2026-10-21",
+          "source": "repair-phillips-screwdriver.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
     "repair-rope-knot": {
       "kind": "object",
       "family": "repair",
@@ -5175,6 +6525,33 @@
           "added": "2026-10-19",
           "source": "activity-cloud-composer-v5",
           "by": "codex"
+        }
+      ]
+    },
+    "repair-soldering-iron": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Soldering iron",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-soldering-iron.png",
+          "sha256": "f029cafe2705402aaaf57eacd6315986ca80cb8a1dead1a8d1394384bcd5532f",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            72,
+            236,
+            183
+          ],
+          "added": "2026-10-21",
+          "source": "repair-soldering-iron.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
         }
       ]
     },
@@ -5202,6 +6579,60 @@
           "source": "repair-sparks.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        }
+      ]
+    },
+    "repair-spirit-level": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Spirit level",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-spirit-level.png",
+          "sha256": "97594e40eeef16d383f5f39ac35e55e8b4a40a2fd2e2e735de9ad99b3f5f9998",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            101,
+            236,
+            155
+          ],
+          "added": "2026-10-21",
+          "source": "repair-spirit-level.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
+        }
+      ]
+    },
+    "repair-tape-measure": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Tape measure",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-tape-measure.png",
+          "sha256": "d5d3b3ff9d0df7db1ed6967e7a15f99fba35e06e785eb47249ad967105f4166e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            51,
+            236,
+            204
+          ],
+          "added": "2026-10-21",
+          "source": "repair-tape-measure.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
         }
       ]
     },
@@ -5282,6 +6713,33 @@
           "source": "repair-tyre-pump.png",
           "by": "codex",
           "note": "Imported from complete review-ready activity-cloud-composer-v5 picture catalogue"
+        }
+      ]
+    },
+    "repair-wire-strippers": {
+      "kind": "object",
+      "family": "repair",
+      "label": "Wire strippers",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-wire-strippers.png",
+          "sha256": "b537fe18446c1c4aca9c72b9c4228d2644cd973929f1a7130c43f681bc3b57cd",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            42,
+            236,
+            214
+          ],
+          "added": "2026-10-21",
+          "source": "repair-wire-strippers.png",
+          "by": "codex",
+          "note": "Imported from complete review-ready codex-bubble-story-families-v1 picture catalogue"
         }
       ]
     },

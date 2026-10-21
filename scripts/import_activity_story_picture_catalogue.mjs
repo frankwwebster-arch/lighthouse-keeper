@@ -9,7 +9,7 @@
  * Sources covered:
  * - Activity Cloud Composer V1-V7
  * - Prime rear-work activity callout V2 and V3
- * - every Claude picture pack with a component asset manifest
+ * - every Claude or Codex picture pack with a component asset manifest
  *
  * Safe to rerun: exact id/hash pairs already in the library are skipped.
  */
@@ -38,7 +38,7 @@ const title = (id) => id
 
 function addRecord(records, id, component, set, kind = 'object', family = component.family) {
   if (!component.file || !component.sha256) throw new Error(`${set}/${id}: incomplete component record`)
-  records.push({ id, file: component.file, sha256: component.sha256, family: family ?? id.split('-')[0], kind, set })
+  records.push({ id, file: component.file, sha256: component.sha256, family: family ?? id.split('-')[0], kind, label: component.label, set })
 }
 
 export function sourceCatalogue() {
@@ -65,12 +65,12 @@ export function sourceCatalogue() {
   for (const [id, component] of Object.entries(v3.candidate.newCalloutComponents))
     addRecord(records, id, component, v3.set)
 
-  const claudePackManifests = fs.readdirSync(DRAFTS)
-    .filter((name) => name.startsWith('claude-'))
+  const componentPackManifests = fs.readdirSync(DRAFTS)
+    .filter((name) => /^(claude|codex)-/.test(name))
     .map((name) => path.join(DRAFTS, name, 'asset-manifest.json'))
     .filter(fs.existsSync)
     .sort()
-  for (const manifest of claudePackManifests) {
+  for (const manifest of componentPackManifests) {
     const pack = JSON.parse(fs.readFileSync(manifest, 'utf8'))
     for (const [id, component] of Object.entries(pack.components ?? {})) {
       const family = pack.set === 'claude-bedroom-asset-pack-v1' && component.family === 'leisure'
@@ -112,7 +112,7 @@ if (path.resolve(process.argv[1] ?? '') === fileURLToPath(import.meta.url)) {
       path.join(ROOT, record.file),
       '--kind', record.kind,
       '--family', record.family,
-      '--label', title(record.id),
+      '--label', record.label ?? title(record.id),
       '--note', `Imported from complete review-ready ${record.set} picture catalogue`,
     ]
     const result = spawnSync(process.execPath, args, { cwd: ROOT, encoding: 'utf8' })

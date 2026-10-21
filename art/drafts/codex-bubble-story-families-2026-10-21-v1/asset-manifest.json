@@ -1,0 +1,2205 @@
+{
+  "schema": "lighthouse-keeper/codex-bubble-story-families-pack@1",
+  "set": "codex-bubble-story-families-v1",
+  "status": "bubble-story-picture-source",
+  "created": "2026-10-21",
+  "sourceProcessing": {
+    "reviewSourceGeometry": [
+      384,
+      384
+    ],
+    "method": "clear alpha <= 8, isolate visible alpha, proportional fit within 352 px on a transparent 384 px lossless WebP source, then proportional fit within 216 px on a transparent 256 px PNG cell"
+  },
+  "sourceRegister": {
+    "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source-register.json",
+    "sha256": "420e37413e036c462f6467866445a73dac7efb6b7defb8a2c667248025362901"
+  },
+  "components": {
+    "fishing-landing-net": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/fishing-landing-net.png",
+      "sha256": "8e04ab4519e7dc8c9ab9f41b728bf222cc55d89f26679127ed058f511459ecd7",
+      "family": "fishing",
+      "label": "Landing net",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/fishing-landing-net-source.webp",
+      "sourceSha256": "83d543f53290311e3ee4086293da78e0fc26b897ec8f79e7bcd6f2c6724522bf",
+      "originalCacheFile": "exec-adc364f3-dc4f-4ea5-ba0f-7dcf32c8e2d1.png",
+      "originalGeneratedPngSha256": "26e52195464e33f28d89fca3f4e4d12da857aad260dbd0a1fa68b9c109c420bd",
+      "originalGeneratedGeometry": [
+        1366,
+        1151
+      ],
+      "sourceVisibleBounds": [
+        16,
+        52,
+        368,
+        332
+      ],
+      "normalisedVisibleSize": [
+        216,
+        172
+      ],
+      "normalisedOffset": [
+        20,
+        42
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "fishing-lure": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/fishing-lure.png",
+      "sha256": "8983e6a28a1e59ad3c6a85d4470e777aedd3272a61e536349d1dbaaa2b41b58c",
+      "family": "fishing",
+      "label": "Fishing lure",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/fishing-lure-source.webp",
+      "sourceSha256": "0676ad8da400a48434a638c7965e67a3fed9949966b70bf5285410fdc63466ba",
+      "originalCacheFile": "exec-7f343341-e317-4f62-8575-bc229a48bb2b.png",
+      "originalGeneratedPngSha256": "41e062e018ea0fc0f226127ff5c4601f56a06c304423b61f5fb7638c6d8482b1",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        105,
+        368,
+        279
+      ],
+      "normalisedVisibleSize": [
+        216,
+        107
+      ],
+      "normalisedOffset": [
+        20,
+        74
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "fishing-creel-basket": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/fishing-creel-basket.png",
+      "sha256": "a990f82ccb980208fc96bc35ae5687bdbbcae355d2b7a5c208f084891b862198",
+      "family": "fishing",
+      "label": "Fishing creel",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/fishing-creel-basket-source.webp",
+      "sourceSha256": "af10444d4f8da7c8a68a45d33f5652299dd84b2dd040264e14b020e5602ecacb",
+      "originalCacheFile": "exec-892af920-db71-4820-8160-01fa86764098.png",
+      "originalGeneratedPngSha256": "5bee3cffb1ed291495602f85f1db481f8eb578d176e1b614e4eb5b4932661fe9",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "sourceVisibleBounds": [
+        16,
+        53,
+        368,
+        331
+      ],
+      "normalisedVisibleSize": [
+        216,
+        171
+      ],
+      "normalisedOffset": [
+        20,
+        42
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "fishing-waders": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/fishing-waders.png",
+      "sha256": "9bef3115eb2d79fb7507f033e9f6ec230234676c10fdfbe1178e89b5d7c72104",
+      "family": "fishing",
+      "label": "Fishing waders",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/fishing-waders-source.webp",
+      "sourceSha256": "a430d88321b0162b782d5281c928a5034dca10652a43513be74a8e4350356252",
+      "originalCacheFile": "exec-0c348fd0-06f7-4b18-a6e4-cea82d6c4f80.png",
+      "originalGeneratedPngSha256": "ee4d0cc90589e192bf96c4ca3496c5405563cf67666487bb745035578b3e346f",
+      "originalGeneratedGeometry": [
+        1223,
+        1286
+      ],
+      "sourceVisibleBounds": [
+        108,
+        16,
+        275,
+        368
+      ],
+      "normalisedVisibleSize": [
+        102,
+        216
+      ],
+      "normalisedOffset": [
+        77,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "fishing-folding-stool": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/fishing-folding-stool.png",
+      "sha256": "31df8d7ba8aceb9b4a5dff190c39bed102ae4d54a3b93fefbd87014b2a16b8f1",
+      "family": "fishing",
+      "label": "Angler's folding stool",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/fishing-folding-stool-source.webp",
+      "sourceSha256": "2d1e77cb88ef823d229e1e6c58e08ff032aa09aa7a4689ade3ab01c3e944ff02",
+      "originalCacheFile": "exec-0f8a61d0-e335-4596-a7c3-f75117c02285.png",
+      "originalGeneratedPngSha256": "484455aeeded63299131075a4bbcbd44c7a87fd491c7f516d2805c5981c3cde8",
+      "originalGeneratedGeometry": [
+        1341,
+        1173
+      ],
+      "sourceVisibleBounds": [
+        16,
+        37,
+        368,
+        347
+      ],
+      "normalisedVisibleSize": [
+        216,
+        190
+      ],
+      "normalisedOffset": [
+        20,
+        33
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "fishing-line-clippers": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/fishing-line-clippers.png",
+      "sha256": "c2cec2d431a8f0228921d666fd314d90795528f1072055cf5abbd7e6797cb667",
+      "family": "fishing",
+      "label": "Fishing-line clippers",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/fishing-line-clippers-source.webp",
+      "sourceSha256": "71d51859c9f125a255b8d3d024df311c93b235bdc2122f3600ac829f3b75ae48",
+      "originalCacheFile": "exec-4e565b94-98d0-4d9c-a9be-a49ac1ba4896.png",
+      "originalGeneratedPngSha256": "3db68a7b5dd5d136edd02a4c4bd1a7784f630db6cc1b68c15cb3406a1f610e52",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "sourceVisibleBounds": [
+        16,
+        50,
+        368,
+        333
+      ],
+      "normalisedVisibleSize": [
+        216,
+        174
+      ],
+      "normalisedOffset": [
+        20,
+        41
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "garden-trowel": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/garden-trowel.png",
+      "sha256": "3a914f04d590cfd92a8aee3c5576ca088b9dcbcdceec7f3828cf876f1b0def7e",
+      "family": "garden",
+      "label": "Garden trowel",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/garden-trowel-source.webp",
+      "sourceSha256": "511522f7b521515d572465b1449fdf437e908ba927c4374379c35f6dd8e357a8",
+      "originalCacheFile": "exec-61d89dd2-186f-4e7d-a092-6b9a7f9d1188.png",
+      "originalGeneratedPngSha256": "2a59ecad61b97d6b7f6559b3f178ca81f354cb06f17dde75e4febe0ab562d053",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "sourceVisibleBounds": [
+        16,
+        33,
+        368,
+        351
+      ],
+      "normalisedVisibleSize": [
+        216,
+        195
+      ],
+      "normalisedOffset": [
+        20,
+        30
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "garden-secateurs": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/garden-secateurs.png",
+      "sha256": "9ff1250a7b842b44a812b719c907a3932feb4c533aa1b3b1e0695763b0f851e9",
+      "family": "garden",
+      "label": "Garden secateurs",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/garden-secateurs-source.webp",
+      "sourceSha256": "ce93b333fc1270fe07a3a52f89973154cc30c335733dca322d7d6a852276631a",
+      "originalCacheFile": "exec-1ae28051-c398-4a8c-a344-e68cd9bbc41d.png",
+      "originalGeneratedPngSha256": "e8ad255fb3136c90f28c3410ef5844aaf60addff89f803d79f86ecee48346d27",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        118,
+        368,
+        266
+      ],
+      "normalisedVisibleSize": [
+        216,
+        91
+      ],
+      "normalisedOffset": [
+        20,
+        82
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "garden-gloves": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/garden-gloves.png",
+      "sha256": "25f6af001cfdc0e153cefa5c5f538db755a6127c08986b9dc82ac84c26beb413",
+      "family": "garden",
+      "label": "Gardening gloves",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/garden-gloves-source.webp",
+      "sourceSha256": "fd0c01021e9b483d7ba2e7b0f45e9caa6d4a6d97b949ebe447573e57749f6b0a",
+      "originalCacheFile": "exec-badd2122-61bb-46cb-8bb7-a65b9da4c609.png",
+      "originalGeneratedPngSha256": "2145872c0c7b5d2b89e981e8bd2322a6dddc1f986a67649db08e73b70a95ebc2",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "sourceVisibleBounds": [
+        16,
+        33,
+        368,
+        351
+      ],
+      "normalisedVisibleSize": [
+        216,
+        195
+      ],
+      "normalisedOffset": [
+        20,
+        30
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "garden-wheelbarrow": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/garden-wheelbarrow.png",
+      "sha256": "fd9dfe4fb260f441ab268c2afcbc1c5d7534d377925b540214471d3f277893f3",
+      "family": "garden",
+      "label": "Garden wheelbarrow",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/garden-wheelbarrow-source.webp",
+      "sourceSha256": "fe5c832537c9bb2e256fa97f3a35b4ecee859921e9fb53b0d597a73660049276",
+      "originalCacheFile": "exec-f9a55924-e94d-4b2c-9066-2ffe5a5da03a.png",
+      "originalGeneratedPngSha256": "4063899bac938823ced34b4726cd6e04e34d125fba83605a5de791324327d0be",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        69,
+        368,
+        314
+      ],
+      "normalisedVisibleSize": [
+        216,
+        150
+      ],
+      "normalisedOffset": [
+        20,
+        53
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "garden-rake": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/garden-rake.png",
+      "sha256": "8ce4457c782dbf7a86178dedadd42734a5512a49601213edee2bbaed18ef6bac",
+      "family": "garden",
+      "label": "Garden rake",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/garden-rake-source.webp",
+      "sourceSha256": "a4b1f69dcd6935778d432240a0410abacb8a9fb4430b779db5c1a28538904651",
+      "originalCacheFile": "exec-b4bc58cc-dff0-426c-86b1-eb7682384ebb.png",
+      "originalGeneratedPngSha256": "16ad23fe01175d8c733da82b42db58eadcdf7a87bbf13b6330e0079aa872abcc",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "sourceVisibleBounds": [
+        16,
+        32,
+        368,
+        351
+      ],
+      "normalisedVisibleSize": [
+        216,
+        196
+      ],
+      "normalisedOffset": [
+        20,
+        30
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "garden-compost-bag": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/garden-compost-bag.png",
+      "sha256": "c103c907602748f0058a88553168b6010c837adb72da669a1fcfdca05cbcede2",
+      "family": "garden",
+      "label": "Compost bag",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/garden-compost-bag-source.webp",
+      "sourceSha256": "a163f5ad4325b797d8b4b24d5318a28a9034b8ffaa6122fc7b849f102b345cd8",
+      "originalCacheFile": "exec-83a33692-187d-4738-80c0-a3f4a25c9a52.png",
+      "originalGeneratedPngSha256": "1466e40bc13d0aff5180eecb9417857be666a715475e55fd8913426494a51719",
+      "originalGeneratedGeometry": [
+        1298,
+        1212
+      ],
+      "sourceVisibleBounds": [
+        16,
+        22,
+        368,
+        362
+      ],
+      "normalisedVisibleSize": [
+        216,
+        209
+      ],
+      "normalisedOffset": [
+        20,
+        23
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "pet-dog": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pet-dog.png",
+      "sha256": "2707209a4490157c31c364b4edb46ac994daf12529c49a9dd1f8efeacc529a5d",
+      "family": "pet-care",
+      "label": "Scruffy terrier",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/pet-dog-source.webp",
+      "sourceSha256": "4854f27cc24ffad30f33239e249d6f89765255c8416b79b653e5bae3146245fd",
+      "originalCacheFile": "exec-fde888fc-aa7e-4a59-af40-38be9fddfded.png",
+      "originalGeneratedPngSha256": "da57b6f288086df4bd3aceacce2e69c6109fe404a288f7a8b7468366c0cc79cc",
+      "originalGeneratedGeometry": [
+        1331,
+        1182
+      ],
+      "sourceVisibleBounds": [
+        66,
+        16,
+        317,
+        368
+      ],
+      "normalisedVisibleSize": [
+        154,
+        216
+      ],
+      "normalisedOffset": [
+        51,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "pet-cat": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pet-cat.png",
+      "sha256": "390c755d2c83670405db43695f3702a9d0ca23a9e821335cf8ddec1143ac7d8f",
+      "family": "pet-care",
+      "label": "Curled tabby cat",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/pet-cat-source.webp",
+      "sourceSha256": "5cb8b5aa2ea4dad542b4f5e86ac365020d3f4f6ad75c1cc608d03ed5edd93799",
+      "originalCacheFile": "exec-58506cab-195b-4d61-a15a-149555fbb9d1.png",
+      "originalGeneratedPngSha256": "28cde1c8112ecf5c5af84e4840402e6e623e6c3330d5b087991dff32650e3cbe",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "sourceVisibleBounds": [
+        19,
+        16,
+        364,
+        368
+      ],
+      "normalisedVisibleSize": [
+        212,
+        216
+      ],
+      "normalisedOffset": [
+        22,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "pet-rabbit": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pet-rabbit.png",
+      "sha256": "9f4551801de48fbfa17635b99494e573d7c6208e361ef9f771fa2114f7ea68fb",
+      "family": "pet-care",
+      "label": "Lop-eared rabbit",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/pet-rabbit-source.webp",
+      "sourceSha256": "cf5df36f05d045521888c78a6b94cae1612ff6fd61ab48f8ff8cc545907adf78",
+      "originalCacheFile": "exec-4b487ece-293f-43f4-bff1-d38744d701e0.png",
+      "originalGeneratedPngSha256": "2b283f97f87e6048aac54d5c7f2ca1bf8c79e0054c72ce4ed0dfd2c7f37e5c85",
+      "originalGeneratedGeometry": [
+        1317,
+        1194
+      ],
+      "sourceVisibleBounds": [
+        47,
+        16,
+        336,
+        368
+      ],
+      "normalisedVisibleSize": [
+        177,
+        216
+      ],
+      "normalisedOffset": [
+        39,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "pet-lead-and-collar": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pet-lead-and-collar.png",
+      "sha256": "a7737cd1e7d1f22cd22e8ac843de9728086fb021db8fe789ce8e4faa55301085",
+      "family": "pet-care",
+      "label": "Pet lead and collar",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/pet-lead-and-collar-source.webp",
+      "sourceSha256": "57e16c7c4f7a53dcb01bbdf48754751a971037cdca7ebdd7d1e2f36fc8c0900b",
+      "originalCacheFile": "exec-1fccb448-fbee-48ce-9119-c0e5ebb9bd08.png",
+      "originalGeneratedPngSha256": "f843b7834c135ec57389d3a88dacae14a7782b91176121c4661c9bd99744ef42",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        89,
+        368,
+        295
+      ],
+      "normalisedVisibleSize": [
+        216,
+        126
+      ],
+      "normalisedOffset": [
+        20,
+        65
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "pet-tennis-ball": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pet-tennis-ball.png",
+      "sha256": "7ee7a297cfdb8ad78c57c115c11d112aa4fb605f539bc98f34dbab85deb87e33",
+      "family": "pet-care",
+      "label": "Pet tennis ball",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/pet-tennis-ball-source.webp",
+      "sourceSha256": "2721aa645bc4fdd5b50b4166ec26def244ce4daea3b22a8e8d03a4340b8d4da2",
+      "originalCacheFile": "exec-294843f8-20ea-4799-bfe3-ecec416c4841.png",
+      "originalGeneratedPngSha256": "d046e22acf3685139681a5b33d8b091f53632c55cc84e3905c33077c31bdc027",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "sourceVisibleBounds": [
+        19,
+        16,
+        365,
+        368
+      ],
+      "normalisedVisibleSize": [
+        212,
+        216
+      ],
+      "normalisedOffset": [
+        22,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "pet-feather-wand": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pet-feather-wand.png",
+      "sha256": "472ac04762d9565a5acbc6acf9143e63985a22f0e561f76a9e39c1643f88cc03",
+      "family": "pet-care",
+      "label": "Feather wand",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/pet-feather-wand-source.webp",
+      "sourceSha256": "935d85629d1eb7b9291459bf236529692919cf29f2e10854b8fa9f2ec94e7bd4",
+      "originalCacheFile": "exec-0013cc03-6215-4fc9-9141-422f4503aab8.png",
+      "originalGeneratedPngSha256": "953d5ad3986ee137bcae057016afd63365faf771ed8eff30acead98d7929d98e",
+      "originalGeneratedGeometry": [
+        1374,
+        1145
+      ],
+      "sourceVisibleBounds": [
+        16,
+        48,
+        368,
+        335
+      ],
+      "normalisedVisibleSize": [
+        216,
+        176
+      ],
+      "normalisedOffset": [
+        20,
+        40
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-cordless-drill": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-cordless-drill.png",
+      "sha256": "d8c4fb90764bef8c0d7bbcbe9e16ca340c8fdb25c8393c9f7e7cbc7a862b2e69",
+      "family": "repair",
+      "label": "Cordless drill",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/repair-cordless-drill-source.webp",
+      "sourceSha256": "a98ed2b50d29ed77e0089c4f3f8617d64998ac0f5af826a4d519864787c680f2",
+      "originalCacheFile": "exec-445bdb44-75b4-44f2-a710-cfbd3885ec43.png",
+      "originalGeneratedPngSha256": "27d1bc07538302c057c53155e008887bcb24dc0027b618405705e086f2b143f8",
+      "originalGeneratedGeometry": [
+        1374,
+        1145
+      ],
+      "sourceVisibleBounds": [
+        16,
+        30,
+        368,
+        354
+      ],
+      "normalisedVisibleSize": [
+        216,
+        199
+      ],
+      "normalisedOffset": [
+        20,
+        28
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-drill-bit-case": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-drill-bit-case.png",
+      "sha256": "4a52bfe893c783c6a21fe2c564bffc3749f57306e4e098dd903e6905870e88c5",
+      "family": "repair",
+      "label": "Drill-bit case",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/repair-drill-bit-case-source.webp",
+      "sourceSha256": "bba6f9046dd28312298c54b937b8b122730c468ccafec07b9f842c9b5cc5f215",
+      "originalCacheFile": "exec-402a2b44-cc36-4233-b6bd-28a0656c6083.png",
+      "originalGeneratedPngSha256": "929f11d38d65ad9001345eff16bad477097e1db5d018c5a89a17c1758d5059fa",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "sourceVisibleBounds": [
+        37,
+        16,
+        347,
+        368
+      ],
+      "normalisedVisibleSize": [
+        190,
+        216
+      ],
+      "normalisedOffset": [
+        33,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-flat-head-screwdriver": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-flat-head-screwdriver.png",
+      "sha256": "8c70b4549514713f55dada9b8d58a91ee9f4251fde417fc2feadea0b5e40f471",
+      "family": "repair",
+      "label": "Flat-head screwdriver",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/repair-flat-head-screwdriver-source.webp",
+      "sourceSha256": "858817526d904690800dc107e1559788d872130a763044b6bd6747bc7d4102d0",
+      "originalCacheFile": "exec-835b4c82-b396-4d16-bb86-6ffccd26784d.png",
+      "originalGeneratedPngSha256": "299432b93f52d8dde42113ce47a35e3756b1da9d3d00d8827727c0a8a0cb6a99",
+      "originalGeneratedGeometry": [
+        1374,
+        1145
+      ],
+      "sourceVisibleBounds": [
+        16,
+        54,
+        368,
+        329
+      ],
+      "normalisedVisibleSize": [
+        216,
+        169
+      ],
+      "normalisedOffset": [
+        20,
+        43
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-phillips-screwdriver": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-phillips-screwdriver.png",
+      "sha256": "733b49927d6ae1054898b56fa11eb464216e8ed6996073e6f22b68ebad13a073",
+      "family": "repair",
+      "label": "Phillips screwdriver",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/repair-phillips-screwdriver-source.webp",
+      "sourceSha256": "dc09f6f8fa29d3bbb3e69d9c393018b4234bba10c1bde8ac10527e37d3019e4e",
+      "originalCacheFile": "exec-8aba4a12-217f-454d-8ba8-cacf924e8547.png",
+      "originalGeneratedPngSha256": "90f04da738bb2f669996bbe35cf2e7898a2843eacd984ae14bf5f507afe615ec",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        45,
+        368,
+        339
+      ],
+      "normalisedVisibleSize": [
+        216,
+        180
+      ],
+      "normalisedOffset": [
+        20,
+        38
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-combination-pliers": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-combination-pliers.png",
+      "sha256": "dadda73bf3e3aa44eebe2a5edd0694261e812857e86b317797f1f85e38bbdea2",
+      "family": "repair",
+      "label": "Combination pliers",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/repair-combination-pliers-source.webp",
+      "sourceSha256": "ae776798ee8f5d474b6644b9f5708d623ae63ba8ae239d6393f7df4e8448617d",
+      "originalCacheFile": "exec-d3c00dfd-7c2d-4cdc-acd0-0424e7d740e3.png",
+      "originalGeneratedPngSha256": "c402e47983107d37fb2aa79245a9ddca5c7b880aecd54c31082d04a4ab3a3479",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        66,
+        368,
+        318
+      ],
+      "normalisedVisibleSize": [
+        216,
+        155
+      ],
+      "normalisedOffset": [
+        20,
+        50
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-adjustable-spanner": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-adjustable-spanner.png",
+      "sha256": "8443775c2d4d9de5af59d9339b976fda94ddd4226962d381c821f353f4560d5b",
+      "family": "repair",
+      "label": "Adjustable spanner",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/repair-adjustable-spanner-source.webp",
+      "sourceSha256": "03fcc95c56987c4bae7514db4fdc140b424774140451c91f9c375c28faa11ff2",
+      "originalCacheFile": "exec-f11918b9-a17b-400b-8d82-ccd381b0102b.png",
+      "originalGeneratedPngSha256": "c24fbba467bb2b61ee61088212b9102c7b900ac07ccd738559b301b0b035777e",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        62,
+        368,
+        321
+      ],
+      "normalisedVisibleSize": [
+        216,
+        159
+      ],
+      "normalisedOffset": [
+        20,
+        48
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-tape-measure": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-tape-measure.png",
+      "sha256": "d5d3b3ff9d0df7db1ed6967e7a15f99fba35e06e785eb47249ad967105f4166e",
+      "family": "repair",
+      "label": "Tape measure",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/repair-tape-measure-source.webp",
+      "sourceSha256": "b04a2930ca4de941b69bbdb0dc2bcb42ce60401d29d0f25c4be5c06bda474c4a",
+      "originalCacheFile": "exec-a24a5a15-1c41-46b9-9e9d-a25e5a15f813.png",
+      "originalGeneratedPngSha256": "6acc25b755c257db44cca96d8a49526b56eeddc715dbf8ec838a1241dc4a3336",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        67,
+        368,
+        316
+      ],
+      "normalisedVisibleSize": [
+        216,
+        153
+      ],
+      "normalisedOffset": [
+        20,
+        51
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-spirit-level": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-spirit-level.png",
+      "sha256": "97594e40eeef16d383f5f39ac35e55e8b4a40a2fd2e2e735de9ad99b3f5f9998",
+      "family": "repair",
+      "label": "Spirit level",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/repair-spirit-level-source.webp",
+      "sourceSha256": "96a80293be0c171feb5e659141b439755b962bf77a0c4e14ab1c882bbe68e0bb",
+      "originalCacheFile": "exec-fea2ccfd-a8b7-4604-bb78-2c8ce1f1b8d3.png",
+      "originalGeneratedPngSha256": "fe183791bcb9e6341ce412eeb8a250b1598bba2ad217030e3c2502c70c953a2b",
+      "originalGeneratedGeometry": [
+        1774,
+        887
+      ],
+      "sourceVisibleBounds": [
+        16,
+        148,
+        368,
+        236
+      ],
+      "normalisedVisibleSize": [
+        216,
+        54
+      ],
+      "normalisedOffset": [
+        20,
+        101
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-hand-saw": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-hand-saw.png",
+      "sha256": "a7d6b4af87a3468838fe6515c42112ba39789ebd7dc1bd0a35835dc61d22dfdd",
+      "family": "repair",
+      "label": "Hand saw",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/repair-hand-saw-source.webp",
+      "sourceSha256": "623fc9f5f494ffc87dbedae266808bf0040c40beae8a754d032e874b69d20197",
+      "originalCacheFile": "exec-6776736c-6888-4add-ac97-8be3120408b7.png",
+      "originalGeneratedPngSha256": "e7ad3187105576528350526714a73eda5bdefee5a661d64cb1687d41c23178f0",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        91,
+        368,
+        292
+      ],
+      "normalisedVisibleSize": [
+        216,
+        123
+      ],
+      "normalisedOffset": [
+        20,
+        66
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-wire-strippers": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-wire-strippers.png",
+      "sha256": "b537fe18446c1c4aca9c72b9c4228d2644cd973929f1a7130c43f681bc3b57cd",
+      "family": "repair",
+      "label": "Wire strippers",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/repair-wire-strippers-source.webp",
+      "sourceSha256": "e255bc617675c8639ed580cf4452f6e912a5074b024dd0816bbd1a85805567fb",
+      "originalCacheFile": "exec-6ff518ae-8cba-41f2-bb1a-ed4877c5f302.png",
+      "originalGeneratedPngSha256": "20c7a9606655e6ba5fc70890bd0b58e70778982e5de9713db8af53b23ef85e8a",
+      "originalGeneratedGeometry": [
+        1376,
+        1143
+      ],
+      "sourceVisibleBounds": [
+        16,
+        52,
+        368,
+        332
+      ],
+      "normalisedVisibleSize": [
+        216,
+        172
+      ],
+      "normalisedOffset": [
+        20,
+        42
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-soldering-iron": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-soldering-iron.png",
+      "sha256": "f029cafe2705402aaaf57eacd6315986ca80cb8a1dead1a8d1394384bcd5532f",
+      "family": "repair",
+      "label": "Soldering iron",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/repair-soldering-iron-source.webp",
+      "sourceSha256": "7a07d43fd7eef649344e4ffb9ecaba8ba50c1a3062c55234092adc36c138465e",
+      "originalCacheFile": "exec-688314bb-2e1f-45ee-9279-16832341812b.png",
+      "originalGeneratedPngSha256": "2a7326b0eb777b9dd6b864064df2c2cd50831973029ff482d70382c835febe8e",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        101,
+        368,
+        282
+      ],
+      "normalisedVisibleSize": [
+        216,
+        111
+      ],
+      "normalisedOffset": [
+        20,
+        72
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "repair-c-clamp": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/repair-c-clamp.png",
+      "sha256": "7baa85ec13949352f1460534e80d815b5237c87f7ccc489c2fd3d5da6f1ea54a",
+      "family": "repair",
+      "label": "C-clamp",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/repair-c-clamp-source.webp",
+      "sourceSha256": "a84ec3932f236e27639cad291379e8884972c87fc94d132f3fca64e096f8039f",
+      "originalCacheFile": "exec-f828a0a6-6e20-4f36-9139-4a3ce12faa66.png",
+      "originalGeneratedPngSha256": "980484f2cef52ae8423d9c248f356ff8a6f28860a97537b198c5bda216844544",
+      "originalGeneratedGeometry": [
+        1359,
+        1157
+      ],
+      "sourceVisibleBounds": [
+        16,
+        81,
+        368,
+        303
+      ],
+      "normalisedVisibleSize": [
+        216,
+        136
+      ],
+      "normalisedOffset": [
+        20,
+        60
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "pub-bitter-pint": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-bitter-pint.png",
+      "sha256": "84c4400ac95acb51a22083f35ea9bd6eebd31bfd7f89ce6ba807b984aa8f7b48",
+      "family": "pub",
+      "label": "Pint of bitter",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/pub-bitter-pint-source.webp",
+      "sourceSha256": "fee29dca3f92ce4b6c85fdd9ed5b7c58d86584c2889f63ba6c41ebd3dc4ce00f",
+      "originalCacheFile": "exec-98ab9413-d910-4766-b454-cf272eb4aaa6.png",
+      "originalGeneratedPngSha256": "ddc4981c04377a9837538729c18716b63fd0d09376e8b29b4b10c63eedf8fb61",
+      "originalGeneratedGeometry": [
+        1261,
+        1247
+      ],
+      "sourceVisibleBounds": [
+        76,
+        16,
+        308,
+        368
+      ],
+      "normalisedVisibleSize": [
+        142,
+        216
+      ],
+      "normalisedOffset": [
+        57,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "pub-tankard": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-tankard.png",
+      "sha256": "06e4ada1c773e602ba3ba6a64e5dfcec0111db8a1d3a9289a2b9ed232e405b2c",
+      "family": "pub",
+      "label": "Pewter tankard",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/pub-tankard-source.webp",
+      "sourceSha256": "0a53d705b63cae1a01427989c7b8d3e81751d2455fd2cb96136c47568b5dba7c",
+      "originalCacheFile": "exec-00b053db-86cc-43a6-a23c-f44962e0711c.png",
+      "originalGeneratedPngSha256": "ec9c8b8c7cbb5093cc15e8306683a646f4e2d50984be06b7d2168278fb357e49",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "sourceVisibleBounds": [
+        16,
+        31,
+        368,
+        353
+      ],
+      "normalisedVisibleSize": [
+        216,
+        198
+      ],
+      "normalisedOffset": [
+        20,
+        29
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "pub-beer-pump": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-beer-pump.png",
+      "sha256": "b3bd958f7ce201a7c9b4601d96e26363c78046ef71d14993d28c916c2861b536",
+      "family": "pub",
+      "label": "Pub beer pump",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/pub-beer-pump-source.webp",
+      "sourceSha256": "fe0d7c3dd2401777b5d859749c249b22a758e98a1ca2684714a755a7261d3e6a",
+      "originalCacheFile": "exec-f0fbfddf-1587-4183-97f9-96be0597b9a2.png",
+      "originalGeneratedPngSha256": "bddf16cdb5a1cc49e41d1869b229eb40e1125249d281ff412e4dc1a55baba9ae",
+      "originalGeneratedGeometry": [
+        1165,
+        1350
+      ],
+      "sourceVisibleBounds": [
+        122,
+        16,
+        261,
+        368
+      ],
+      "normalisedVisibleSize": [
+        85,
+        216
+      ],
+      "normalisedOffset": [
+        85,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "pub-dartboard": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-dartboard.png",
+      "sha256": "724ad8dbb4fa94567c7058e22ef9dadfdcf848d065758003bc4301086442a436",
+      "family": "pub",
+      "label": "Pub dartboard",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/pub-dartboard-source.webp",
+      "sourceSha256": "133a3edb9601fbfccbd63f1e6aff9e02ca47736e48821aabd7189666dece4ac2",
+      "originalCacheFile": "exec-76594c7c-2a6a-4e79-a340-8a3f431616e9.png",
+      "originalGeneratedPngSha256": "d7f66e58bfdfc6fed01f042f1e4a9d2a961b658967d22b19c022e14a3a872164",
+      "originalGeneratedGeometry": [
+        1268,
+        1241
+      ],
+      "sourceVisibleBounds": [
+        16,
+        16,
+        368,
+        368
+      ],
+      "normalisedVisibleSize": [
+        216,
+        216
+      ],
+      "normalisedOffset": [
+        20,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "pub-darts": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-darts.png",
+      "sha256": "300c387f09c30bd4ba57c109304d757bd0d7d224dc782adc7c4918cd4a9569fa",
+      "family": "pub",
+      "label": "Set of pub darts",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/pub-darts-source.webp",
+      "sourceSha256": "2f1e2bf60a08bb697abc18f7368bb251ed0aac4b16ddb9944ed0f1b3a68025a6",
+      "originalCacheFile": "exec-977a1cc9-ad20-4984-8e8b-859843abd544.png",
+      "originalGeneratedPngSha256": "0d9eab1f4d2a39960b6fd5fdf91aeed5cfcabc02707e9fd95b8f815d06dd451c",
+      "originalGeneratedGeometry": [
+        1295,
+        1214
+      ],
+      "sourceVisibleBounds": [
+        16,
+        25,
+        368,
+        359
+      ],
+      "normalisedVisibleSize": [
+        216,
+        205
+      ],
+      "normalisedOffset": [
+        20,
+        25
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "pub-pool-cue-and-balls": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-pool-cue-and-balls.png",
+      "sha256": "fb7eee9b26bab1184c58102ec5333f33129651c9a306268e862f0e55ace382b3",
+      "family": "pub",
+      "label": "Pool cue and balls",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/pub-pool-cue-and-balls-source.webp",
+      "sourceSha256": "d2c5101be40fa1ac2158cff8372f367f042fca87e5d5d99afa9fa14608b606d8",
+      "originalCacheFile": "exec-75d1c2ec-7bf1-4d96-b0d5-aa9861f3d4d0.png",
+      "originalGeneratedPngSha256": "1c4a45c80012739b795a5914e3b3f13e0ea68973cf28a9cf759aa8ddefbff9d7",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        95,
+        368,
+        288
+      ],
+      "normalisedVisibleSize": [
+        216,
+        118
+      ],
+      "normalisedOffset": [
+        20,
+        69
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "pub-crisps-bowl": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-crisps-bowl.png",
+      "sha256": "8a172ad3f5219a471ea5385cb3f1d04263b3ca346b9e27c2c175b94b4cb85925",
+      "family": "pub",
+      "label": "Bowl of crisps",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/pub-crisps-bowl-source.webp",
+      "sourceSha256": "576fc81837da8098d1e62d59da7c8d7594a34198b3aca12ccb59525644160b9d",
+      "originalCacheFile": "exec-1692efcd-581f-43f2-b738-7ab7bdaa8f7c.png",
+      "originalGeneratedPngSha256": "0edcd1ce49fef4dec999b180061e24e640ce22e8b07e24612d260c05b8847163",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        38,
+        368,
+        345
+      ],
+      "normalisedVisibleSize": [
+        216,
+        188
+      ],
+      "normalisedOffset": [
+        20,
+        34
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "pub-bar-stool": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/pub-bar-stool.png",
+      "sha256": "1a358ed1a6c8e8533be3aa95c9e076ad86519d735bbbba9547baf8ae956cb2df",
+      "family": "pub",
+      "label": "Pub bar stool",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/pub-bar-stool-source.webp",
+      "sourceSha256": "0c546397c195c109ea12273fa770c1f7701582d6dee9402a827e4d922769c263",
+      "originalCacheFile": "exec-0c3e8c67-aba3-4315-9656-45d97fcb1524.png",
+      "originalGeneratedPngSha256": "07684b8c3ab8e0de2b2b23d6155f1591963c1936781187d4e8babf54141cacd4",
+      "originalGeneratedGeometry": [
+        1214,
+        1295
+      ],
+      "sourceVisibleBounds": [
+        76,
+        16,
+        307,
+        368
+      ],
+      "normalisedVisibleSize": [
+        142,
+        216
+      ],
+      "normalisedOffset": [
+        57,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "art-easel-and-canvas": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-easel-and-canvas.png",
+      "sha256": "50bd6d29772e66c39f3a09c659ea5acc027b3a0ba43e4d158a8822b7187fd6f0",
+      "family": "art",
+      "label": "Easel and blank canvas",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/art-easel-and-canvas-source.webp",
+      "sourceSha256": "2e0edc564047a36e7b84ee9ea219411ea66af67b62c1da42b0123c2663c5b2dc",
+      "originalCacheFile": "exec-46e56093-daf5-4a38-920a-c536a81637b0.png",
+      "originalGeneratedPngSha256": "111186bda01911ae6e316c27f6756fe5ec4fba5fb029308749188d26395104fa",
+      "originalGeneratedGeometry": [
+        1254,
+        1254
+      ],
+      "sourceVisibleBounds": [
+        70,
+        16,
+        313,
+        368
+      ],
+      "normalisedVisibleSize": [
+        149,
+        216
+      ],
+      "normalisedOffset": [
+        53,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "art-paint-palette": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-paint-palette.png",
+      "sha256": "e514ca9185eade4aba8908bec6aedd96c39a5419e3b8d18de69af262e73411d1",
+      "family": "art",
+      "label": "Painter's palette",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/art-paint-palette-source.webp",
+      "sourceSha256": "eb3353a6146ea975aabb81dd40d6f9c06b218e6431d7de4b62f5bd49535a91d5",
+      "originalCacheFile": "exec-f612e2ba-0225-4b70-b898-d3c205202d12.png",
+      "originalGeneratedPngSha256": "55c380cffcde3443f756f82ab81881cb1d4299fea7f7ddff601d135a1b7b9e66",
+      "originalGeneratedGeometry": [
+        1374,
+        1145
+      ],
+      "sourceVisibleBounds": [
+        16,
+        51,
+        368,
+        332
+      ],
+      "normalisedVisibleSize": [
+        216,
+        172
+      ],
+      "normalisedOffset": [
+        20,
+        42
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "art-brushes-pot": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-brushes-pot.png",
+      "sha256": "966ab94e4c7c11e4455a1661b56651b73c613b51ea9acce00ccf97b47d806e3f",
+      "family": "art",
+      "label": "Pot of paintbrushes",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/art-brushes-pot-source.webp",
+      "sourceSha256": "8cd33286b8e33305cffde01e397444f0a01cbc59bd10d470df1260f3d6ed206d",
+      "originalCacheFile": "exec-133a30e7-440a-4e11-9d0d-3fe8cc053417.png",
+      "originalGeneratedPngSha256": "3a1f6d0bfcafc5061dd8e3e59d927e988ad8aef6533f2de941b4430ec1094064",
+      "originalGeneratedGeometry": [
+        1243,
+        1265
+      ],
+      "sourceVisibleBounds": [
+        59,
+        16,
+        324,
+        368
+      ],
+      "normalisedVisibleSize": [
+        163,
+        216
+      ],
+      "normalisedOffset": [
+        46,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "art-watercolour-set": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-watercolour-set.png",
+      "sha256": "a82845b65a71e80681bf310c933078582d5237c124770df1dc1cdb5e0e6a37c8",
+      "family": "art",
+      "label": "Watercolour set",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/art-watercolour-set-source.webp",
+      "sourceSha256": "e44502665255035bc13c38b8ff5f6ae3e1a7500b0147669d96cd3f5f1f3740db",
+      "originalCacheFile": "exec-05cab66d-87da-4caa-a1c8-4f4aa31450a2.png",
+      "originalGeneratedPngSha256": "67fd4a00355e4687c8397ff3ed1a9f4c0233300c061977c474d3046d6dac82a5",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        21,
+        368,
+        363
+      ],
+      "normalisedVisibleSize": [
+        216,
+        210
+      ],
+      "normalisedOffset": [
+        20,
+        23
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "art-sketchbook-and-pencil": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-sketchbook-and-pencil.png",
+      "sha256": "251fbbe54c86dfeca480927eac26b19c71f50b992adde72f8ab9fa991b2eadd3",
+      "family": "art",
+      "label": "Sketchbook and pencil",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/art-sketchbook-and-pencil-source.webp",
+      "sourceSha256": "bf7633800b3b7aa6b092b553eceed736d9ecd22b41f3a7513373ca088569d68f",
+      "originalCacheFile": "exec-37b13806-5cc9-4117-8644-eeb9bc4f166d.png",
+      "originalGeneratedPngSha256": "d2f0fec57a1ec7e8ea5f599871ab02fe3afde6733cd18994ca2bf7036fc27edc",
+      "originalGeneratedGeometry": [
+        1383,
+        1137
+      ],
+      "sourceVisibleBounds": [
+        16,
+        58,
+        368,
+        325
+      ],
+      "normalisedVisibleSize": [
+        216,
+        164
+      ],
+      "normalisedOffset": [
+        20,
+        46
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "art-lino-roller": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-lino-roller.png",
+      "sha256": "2e2556f226cd99b6a30f2234383eedaad1caf740cb011434d8f4c9f06949de6e",
+      "family": "art",
+      "label": "Lino-printing roller",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/art-lino-roller-source.webp",
+      "sourceSha256": "1f581139fd64a4831129b28aa9f9de8961fcdf60d2b57bcea550007043a7f48e",
+      "originalCacheFile": "exec-7d88480a-fbfd-4478-9832-856384ea161b.png",
+      "originalGeneratedPngSha256": "6b0ff9daa5bdf002197a4467229b0b534f82475330ce8b96b2fe35cbc11fe90c",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        58,
+        368,
+        325
+      ],
+      "normalisedVisibleSize": [
+        216,
+        164
+      ],
+      "normalisedOffset": [
+        20,
+        46
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "art-origami-boat": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-origami-boat.png",
+      "sha256": "975cb7a6c65bf2af9a73db1be286610815c303e12103525459db1b5f8a19124a",
+      "family": "art",
+      "label": "Origami boat",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/art-origami-boat-source.webp",
+      "sourceSha256": "ed8ece5a779a866ac5b2e2255ea7ef174ab89d65994054242820395467e9839d",
+      "originalCacheFile": "exec-560fec92-8675-426c-a288-eafc8c7134eb.png",
+      "originalGeneratedPngSha256": "1b65e469bceaea3cf1b108fd00d85568d4b0ab1d8a28ed2984991585dedcd9b0",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        95,
+        368,
+        288
+      ],
+      "normalisedVisibleSize": [
+        216,
+        118
+      ],
+      "normalisedOffset": [
+        20,
+        69
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "art-ink-bottle-and-quill": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/art-ink-bottle-and-quill.png",
+      "sha256": "ba8ac62bba21fc7c9da54214887eced13a3df6d9c004862a376b50d0ffc364fd",
+      "family": "art",
+      "label": "Ink bottle and quill",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/art-ink-bottle-and-quill-source.webp",
+      "sourceSha256": "c9484f238f78b11f0ef73e969c8c43b952922be63683e192739a5c22e52e1c12",
+      "originalCacheFile": "exec-3eeb3afa-d564-4034-852b-4088e8fd03bc.png",
+      "originalGeneratedPngSha256": "3d17896260818c412f61e22ab2260d9c77987cd6a5b39a6b6607c4f51a0225b0",
+      "originalGeneratedGeometry": [
+        1162,
+        1353
+      ],
+      "sourceVisibleBounds": [
+        67,
+        16,
+        317,
+        368
+      ],
+      "normalisedVisibleSize": [
+        153,
+        216
+      ],
+      "normalisedOffset": [
+        51,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "inventing-microscope": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-microscope.png",
+      "sha256": "df085ba4e3e9e49aeb990da4b73df47cd9c578f40d7e115eadc46fb34bc8e821",
+      "family": "inventing",
+      "label": "Inventor's microscope",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/inventing-microscope-source.webp",
+      "sourceSha256": "414885e5fe43d9e84cd5c09b98842062e78f151f0bc26014770d872ad44daf84",
+      "originalCacheFile": "exec-436c4d7d-a432-493b-8c77-a63e5fff1529.png",
+      "originalGeneratedPngSha256": "a7cfc63a7afe35f6f8befa6c0892b0134b87acb4f4ae348b368e3f1ae77b0e19",
+      "originalGeneratedGeometry": [
+        1225,
+        1284
+      ],
+      "sourceVisibleBounds": [
+        90,
+        16,
+        293,
+        368
+      ],
+      "normalisedVisibleSize": [
+        125,
+        216
+      ],
+      "normalisedOffset": [
+        65,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "inventing-test-tubes": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-test-tubes.png",
+      "sha256": "c30f9593ba7951f2401a3dce8465e58deb36f7fde1aebd8e868752edc895c212",
+      "family": "inventing",
+      "label": "Test-tube rack",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/inventing-test-tubes-source.webp",
+      "sourceSha256": "bb058f70d7687e6a563f3310f3e19ec4ce0606fea89b2fde5664c331b45e08dc",
+      "originalCacheFile": "exec-6e45ca30-c3e3-4010-be46-02fbbbee53ba.png",
+      "originalGeneratedPngSha256": "f1ae16a01c2cc9493d620fa216c0320acc74c1414ae2aac28b4b82feeaa422eb",
+      "originalGeneratedGeometry": [
+        1377,
+        1142
+      ],
+      "sourceVisibleBounds": [
+        16,
+        54,
+        368,
+        330
+      ],
+      "normalisedVisibleSize": [
+        216,
+        169
+      ],
+      "normalisedOffset": [
+        20,
+        43
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "inventing-conical-flask": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-conical-flask.png",
+      "sha256": "f36b5e0fa965291dbf6ed6d711dc63b153b7f58e50f486f532d6132ed2ce1c41",
+      "family": "inventing",
+      "label": "Conical flask",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/inventing-conical-flask-source.webp",
+      "sourceSha256": "da1230e4023755667eae9608a78b64f122fbef422b27bc24cc90ecc9fe285cde",
+      "originalCacheFile": "exec-4b469402-5d04-41cc-978a-602beb40e73a.png",
+      "originalGeneratedPngSha256": "24b5e9d123e71299a9d827f8f98b610aee021ed0fd804879d723d4057eaaa594",
+      "originalGeneratedGeometry": [
+        1222,
+        1287
+      ],
+      "sourceVisibleBounds": [
+        52,
+        16,
+        331,
+        368
+      ],
+      "normalisedVisibleSize": [
+        171,
+        216
+      ],
+      "normalisedOffset": [
+        42,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "inventing-brass-telescope": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-brass-telescope.png",
+      "sha256": "72af346af5f101b9eb78fe43bb2b6f6af7d1a3a22b1035d92b017ac0008369e4",
+      "family": "inventing",
+      "label": "Brass telescope",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/inventing-brass-telescope-source.webp",
+      "sourceSha256": "822c1e315ea10dbbc6ae7f1cf7dbf416dc9fe1a8c69cbc2c3037616f0785dc08",
+      "originalCacheFile": "exec-1ed8bbf4-0dbe-4ec9-a871-473ed4c07e92.png",
+      "originalGeneratedPngSha256": "de8b04b5e6cddee3b476a1a7db5d967de759ecd7e0ad49777aef4c6890f958af",
+      "originalGeneratedGeometry": [
+        1536,
+        1024
+      ],
+      "sourceVisibleBounds": [
+        16,
+        101,
+        368,
+        283
+      ],
+      "normalisedVisibleSize": [
+        216,
+        112
+      ],
+      "normalisedOffset": [
+        20,
+        72
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "inventing-light-bulb": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-light-bulb.png",
+      "sha256": "59cfd2296717634afe45f83dc236bb2c6f98f62eeebbcf7fdbf6e7e60b1d4968",
+      "family": "inventing",
+      "label": "Inventor's light bulb",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/inventing-light-bulb-source.webp",
+      "sourceSha256": "f3e50b1a32cf5d2f41847b1dfe275a83527673568819ebb030dcf8646ff2e777",
+      "originalCacheFile": "exec-4f058772-5e9f-4bf0-965b-35bcea240e3c.png",
+      "originalGeneratedPngSha256": "a54c34088dcc515efdde905c3a74252201446d66c9e5d5d1a6b356fe26759f4a",
+      "originalGeneratedGeometry": [
+        1263,
+        1245
+      ],
+      "sourceVisibleBounds": [
+        87,
+        16,
+        297,
+        368
+      ],
+      "normalisedVisibleSize": [
+        129,
+        216
+      ],
+      "normalisedOffset": [
+        63,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "inventing-gyroscope": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-gyroscope.png",
+      "sha256": "a63b3699e2c3e00ff0c0f058e7a9b4b4ff15b682b3a0ace0fe5d45373b461078",
+      "family": "inventing",
+      "label": "Mechanical gyroscope",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/inventing-gyroscope-source.webp",
+      "sourceSha256": "57452dd46de41f16fc41148cdb9f776e9111f3c1b60499daaae226518c7482f6",
+      "originalCacheFile": "exec-b19352c4-3901-47d0-b245-d9eca2754fe2.png",
+      "originalGeneratedPngSha256": "d8d20c38c56403153692a73540e766d5ddf530135a59a5351588cb9986cc1d1b",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "sourceVisibleBounds": [
+        52,
+        16,
+        332,
+        368
+      ],
+      "normalisedVisibleSize": [
+        172,
+        216
+      ],
+      "normalisedOffset": [
+        42,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "inventing-horseshoe-magnet": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-horseshoe-magnet.png",
+      "sha256": "8e2d639beda1e139b8f1defe8bba32fd34f08fb2b5646bba82289e0f636ea44b",
+      "family": "inventing",
+      "label": "Horseshoe magnet",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/inventing-horseshoe-magnet-source.webp",
+      "sourceSha256": "08eb0d9354fbd1c9b034b2e9d57dbb7a5a50b443f2b738ba273fd7b92d7c4b23",
+      "originalCacheFile": "exec-9f22f991-5ddd-4675-bcfc-c379fb89112c.png",
+      "originalGeneratedPngSha256": "07b96b158f8104cebc1e9818fe61b9e4671c902afd1bd087c5eb168b34caa0d0",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "sourceVisibleBounds": [
+        19,
+        16,
+        364,
+        368
+      ],
+      "normalisedVisibleSize": [
+        212,
+        216
+      ],
+      "normalisedOffset": [
+        22,
+        20
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "inventing-copper-coil": {
+      "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/assets/inventing-copper-coil.png",
+      "sha256": "a1da9462004be9c5b97dea0551e81a73d4e3ecdb351b925a674faf520e148c4f",
+      "family": "inventing",
+      "label": "Copper induction coil",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceSet": "codex-bubble-story-families-v1",
+      "sourceFile": "art/drafts/codex-bubble-story-families-2026-10-21-v1/source/inventing-copper-coil-source.webp",
+      "sourceSha256": "e7a618a5771087763d060ff12f7c2acce4b6dfdf599ce10a4fbdc643673e65f1",
+      "originalCacheFile": "exec-aff9e6c2-36b9-4627-94d9-f2713e347b53.png",
+      "originalGeneratedPngSha256": "ec342235662bf496ab337cfde0fc0f076edd8d870397d9fc0a308475399acb2e",
+      "originalGeneratedGeometry": [
+        1312,
+        1199
+      ],
+      "sourceVisibleBounds": [
+        16,
+        49,
+        368,
+        335
+      ],
+      "normalisedVisibleSize": [
+        216,
+        176
+      ],
+      "normalisedOffset": [
+        20,
+        40
+      ],
+      "edgeAlphaPixels": 0,
+      "transparentGutterPx": 20,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejectedGenerations": [
+    {
+      "id": "art-easel-and-canvas",
+      "originalCacheFile": "exec-c9ec822d-5932-4c67-81c0-2a4a1d27d7b3.png",
+      "originalGeneratedPngSha256": "f55ffe01aa543b80f2681598c424097161f63de0312d474df904ae56d33ae7ba",
+      "originalGeneratedGeometry": [
+        1275,
+        1234
+      ],
+      "reason": "visible alpha touched all of the source image's top and bottom edges; the complete easel did not have a safe source gutter"
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/codex-bubble-story-families-2026-10-21-v1/evidence/final-assets-contact-sheet.webp",
+    "sha256": "26c478a43f70227206b27dfbbf988eb19e7828b260020bc03627cd6e4254f478"
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersClear": true,
+    "componentOwnershipUnambiguous": true,
+    "allAcceptedAssetsIndependent": true,
+    "allTaskGenerationsRepresented": true,
+    "runtimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "deployed": false
+  }
+}

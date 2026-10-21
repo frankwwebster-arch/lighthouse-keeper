@@ -17,6 +17,7 @@
     "minify:keeper-review-shell": "node scripts/minify_keeper_review_shell.mjs",
     "verify:review-archive": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_review_archive.mjs",
     "verify:activity-stories": "node scripts/verify_activity_stories.mjs",
+    "verify:codex-bubble-story-families-v1": "node scripts/verify_codex_bubble_story_families_v1.mjs",
     "activity-stories:add-picture": "node scripts/add_activity_story_picture.mjs",
     "stories": "vite-node scripts/stories.ts",
     "verify:kitchen-basic-assets-v5": "node scripts/verify_kitchen_basic_assets_v5.mjs",
