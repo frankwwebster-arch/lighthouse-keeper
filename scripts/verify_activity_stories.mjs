@@ -13,9 +13,13 @@ import path from 'node:path'
 import { CELL, ID, MIN_GUTTER, STORIES_DIR, fileFor, measure, readLibrary, sha256 } from './activity_story_pictures.mjs'
 import { sourceCatalogue } from './import_activity_story_picture_catalogue.mjs'
 import { verifyCodexBubbleStoryFamiliesV1 } from './verify_codex_bubble_story_families_v1.mjs'
+import { verifyActivityStoryLigneClaireBbqPilotV1 } from './verify_activity_story_ligne_claire_bbq_pilot_v1.mjs'
+import { verifyActivityStorySymbolColourSemanticsV1 } from './verify_activity_story_symbol_colour_semantics_v1.mjs'
 
 const problems = []
 problems.push(...verifyCodexBubbleStoryFamiliesV1())
+problems.push(...verifyActivityStoryLigneClaireBbqPilotV1())
+problems.push(...verifyActivityStorySymbolColourSemanticsV1())
 const lib = readLibrary()
 if (lib.schema !== 'lighthouse-keeper/activity-picture-library@1') problems.push('pictures.json: wrong schema')
 

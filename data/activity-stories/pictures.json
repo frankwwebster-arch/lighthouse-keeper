@@ -859,7 +859,7 @@
       "kind": "object",
       "family": "bbq",
       "label": "Charcoal",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -878,6 +878,25 @@
           "added": "2026-10-19",
           "source": "activity-cloud-composer-v1",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components/bbq-charcoal.png",
+          "sha256": "5afb4625d07fb84fe790b6bc31ff848c468a424e79df91154db10e7e89cd8ec1",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            35,
+            236,
+            221
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-charcoal.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ pilot: current bag, loose lumps and flame motif preserved"
         }
       ]
     },
@@ -939,7 +958,7 @@
       "kind": "object",
       "family": "bbq",
       "label": "Barbecue grill (lit)",
-      "current": 1,
+      "current": 3,
       "versions": [
         {
           "v": 1,
@@ -977,6 +996,25 @@
           "source": "bbq-grill.png",
           "by": "codex",
           "note": "Imported from complete review-ready claude-bbq-food-asset-pack-v1 picture catalogue"
+        },
+        {
+          "v": 3,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components/bbq-grill.png",
+          "sha256": "b10d68e367ec5366bacbd8db84450b92f101b6acbd3e68c6be066a99d9ce0267",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            45,
+            236,
+            210
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-grill.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ pilot: same grill model with lit coals"
         }
       ]
     },
@@ -1011,7 +1049,7 @@
       "kind": "object",
       "family": "bbq",
       "label": "Unlit barbecue",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -1031,6 +1069,25 @@
           "source": "bbq-grill.png",
           "by": "codex",
           "note": "Cold, unlit grill (Codex BBQ food pack V1)"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components/bbq-grill-unlit.png",
+          "sha256": "a195c384108cc04fdccc938d0e51efeffacc722c86193026aee53aba0d3d1c56",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            45,
+            236,
+            210
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-grill-unlit.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ pilot: exact unlit grill concept translated to flat ink and spot colour"
         }
       ]
     },
@@ -1065,7 +1122,7 @@
       "kind": "object",
       "family": "bbq",
       "label": "Hot dogs",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -1084,6 +1141,25 @@
           "added": "2026-10-19",
           "source": "activity-cloud-composer-v1",
           "by": "codex"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components/bbq-hotdogs.png",
+          "sha256": "54e6bea693ee67376dd7a84ce2670c80eeb8b5081c83ccdbc0aa012cd0d97a72",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            42,
+            236,
+            214
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-hotdogs.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ pilot: two served hot dogs preserved"
         }
       ]
     },
@@ -1226,7 +1302,7 @@
       "kind": "object",
       "family": "bbq",
       "label": "Sausages (raw)",
-      "current": 2,
+      "current": 3,
       "versions": [
         {
           "v": 1,
@@ -1264,6 +1340,25 @@
           "source": "bbq-sausages.png",
           "by": "codex",
           "note": "Raw linked sausages, no plate (Codex BBQ food pack V1; loose ingredients are unplated)"
+        },
+        {
+          "v": 3,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components/bbq-sausages.png",
+          "sha256": "f19f3e1ccdd4182654603f0afc424d621b7976103a1397931e5f0462a4ee8e69",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            38,
+            236,
+            217
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-sausages.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ pilot: five linked raw sausages preserved"
         }
       ]
     },
@@ -1352,7 +1447,7 @@
       "kind": "object",
       "family": "bbq-tools",
       "label": "Tongs",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -1372,6 +1467,25 @@
           "source": "bbq-tongs.png",
           "by": "codex",
           "note": "Codex BBQ tools and ephemera pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components/bbq-tongs.png",
+          "sha256": "604d712acb8a9930ee8eaadf30eec176c2eb8bca52c488918755cf8ce035e70c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            72,
+            236,
+            183
+          ],
+          "added": "2026-10-21",
+          "source": "bbq-tongs.png",
+          "by": "codex",
+          "note": "Approved ligne-claire BBQ pilot: exact diagonal tong concept translated to flat ink and spot colour"
         }
       ]
     },
@@ -7143,6 +7257,33 @@
         }
       ]
     },
+    "symbol-cold-snowflake": {
+      "kind": "mark",
+      "family": "cold",
+      "label": "Cold snowflake",
+      "current": 1,
+      "versions": [
+        {
+          "v": 1,
+          "url": "/activity-stories/repo/art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/drafts/components/symbol-cold-snowflake.png",
+          "sha256": "b7f8c39735904d612144450eb891cbea28f41a40945d2873290d312239724936",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            27,
+            20,
+            228,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "symbol-cold-snowflake.png",
+          "by": "codex",
+          "note": "New icy-blue inverse counterpart to heat shimmer."
+        }
+      ]
+    },
     "symbol-electrical-arc": {
       "kind": "mark",
       "family": "electrical",
@@ -7251,7 +7392,7 @@
       "kind": "mark",
       "family": "heat",
       "label": "Heat shimmer",
-      "current": 2,
+      "current": 3,
       "versions": [
         {
           "v": 1,
@@ -7289,11 +7430,30 @@
           "source": "symbol-heat-shimmer.png",
           "by": "codex",
           "note": "Horizontal heat-distortion ripples with no flame or vertical-curl read."
+        },
+        {
+          "v": 3,
+          "url": "/activity-stories/repo/art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/drafts/components/symbol-heat-shimmer.png",
+          "sha256": "1cb0e2ec0351c395b1a400c598c852ed4e751911b08e478b6a593988e2071d5c",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            47,
+            236,
+            209
+          ],
+          "added": "2026-10-21",
+          "source": "symbol-heat-shimmer.png",
+          "by": "codex",
+          "note": "V3: coral-red and vermilion heat-distortion bands replace the generic golden colour language; V1 and V2 remain selectable."
         }
       ],
       "review": {
         "status": "approved",
-        "note": "Replaced by v2; awaiting Frank's look."
+        "note": "Replaced by v3; awaiting Frank's look."
       }
     },
     "symbol-impact-star": {
@@ -7352,7 +7512,7 @@
       "kind": "mark",
       "family": "scent",
       "label": "Pleasant aroma",
-      "current": 2,
+      "current": 3,
       "versions": [
         {
           "v": 1,
@@ -7390,11 +7550,30 @@
           "source": "symbol-pleasant-aroma.png",
           "by": "codex",
           "note": "Two open cream-and-brass S-shaped aroma wisps with no closed hooks."
+        },
+        {
+          "v": 3,
+          "url": "/activity-stories/repo/art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/drafts/components/symbol-pleasant-aroma.png",
+          "sha256": "44bf92fae235c647148704cce65d68da976d3c9b7b2e8ce3a25f917661cdd729",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            52,
+            20,
+            204,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "symbol-pleasant-aroma.png",
+          "by": "codex",
+          "note": "V3: comic fragrance curls, flowers and sparkle make the good-smell meaning explicit; V1 and V2 remain selectable."
         }
       ],
       "review": {
         "status": "approved",
-        "note": "Replaced by v2; awaiting Frank's look."
+        "note": "Replaced by v3; awaiting Frank's look."
       }
     },
     "symbol-question-mark": {
@@ -7505,7 +7684,7 @@
       "kind": "mark",
       "family": "welding",
       "label": "Welding sparks",
-      "current": 2,
+      "current": 3,
       "versions": [
         {
           "v": 1,
@@ -7543,11 +7722,30 @@
           "source": "symbol-welding-sparks.png",
           "by": "codex",
           "note": "Hot-white contact core with a one-sided welding-spark spray."
+        },
+        {
+          "v": 3,
+          "url": "/activity-stories/repo/art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/drafts/components/symbol-welding-sparks.png",
+          "sha256": "c7ac21b95e08a1a6cb9b4f0991225860e241c70b660c05658fb3bd4da1a8219a",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            25,
+            236,
+            230
+          ],
+          "added": "2026-10-21",
+          "source": "symbol-welding-sparks.png",
+          "by": "codex",
+          "note": "V3: electric blue-white arc and cyan/cobalt metal sparks replace the generic golden burst; V1 and V2 remain selectable."
         }
       ],
       "review": {
         "status": "approved",
-        "note": "Replaced by v2; awaiting Frank's look."
+        "note": "Replaced by v3; awaiting Frank's look."
       }
     },
     "tea-kettle": {

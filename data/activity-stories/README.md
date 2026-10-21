@@ -3,19 +3,35 @@
 **Status:** draft formats, version 1 (20 October 2026). Review-only: nothing here is in the game yet.
 
 **Picture-library update (21 October 2026):** the heat-shimmer, pleasant-aroma
-and welding-sparks marks use new V2 drawings; `symbol-clean-glint` is available
-as a new `clean` mark. All four are selectable in the Bubble stories studio,
-and the replaced V1 pictures remain available for undo.
+and welding-sparks marks now also have colour-semantic V3 drawings;
+`symbol-cold-snowflake` is available as a new `cold` mark and
+`symbol-clean-glint` remains available as a `clean` mark. The earlier V1/V2
+versions remain selectable and byte-identical for undo.
 
 **Complete-catalogue update (21 October 2026):** the library now exposes all
 298 review-ready isolated source components from Activity Cloud Composer
 V1–V7, Prime rear-work activity-callout V2/V3 and every component-bearing
-Claude or Codex picture pack. The Studio therefore has 304 pictures, including
+Claude or Codex picture pack. The Studio therefore has 305 pictures and 319
+immutable versions, including
 every V5 album homage, the complete aquarium and bedroom sets, and 54 new
 fishing, gardening, pet-play, fixing, pub, art and inventing pictures. Run
 `node scripts/import_activity_story_picture_catalogue.mjs` to reconcile those
 immutable source packs; `npm run verify:activity-stories` fails if any source
 component is absent or has lost its pinned version.
+
+**Ligne-claire pilot (21 October 2026):** Frank selected flat near-black ink,
+opaque spot colour and expressive comic notation as the candidate next visual
+direction. Six BBQ pictures were translated and approved under
+`art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/`. They
+preserve each current asset's subject, count, state, container, viewpoint and
+broad composition. They are registered as new current versions while all
+earlier versions remain selectable and byte-identical. The action-imagery
+continuation prompt is
+`docs/CODEX_PROMPT_BUBBLE_STORIES_LIGNE_CLAIRE_ACTION_IMAGERY_2026-10-21.md`.
+The pilot prompt and the proposed opaque
+rounded-rectangle activity panel / expressive emotion-envelope / free reaction
+layer grammar are in
+`docs/CODEX_PROMPT_BUBBLE_STORIES_LIGNE_CLAIRE_PILOT_2026-10-21.md`.
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A

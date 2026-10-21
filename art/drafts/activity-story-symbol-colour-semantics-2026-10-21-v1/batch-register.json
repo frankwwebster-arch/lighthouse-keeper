@@ -1,0 +1,212 @@
+{
+  "schema": "lighthouse-keeper/activity-story-symbol-colour-register@1",
+  "set": "activity-story-symbol-colour-semantics-2026-10-21-v1",
+  "status": "registered-current-versions",
+  "created": "2026-10-21",
+  "tool": "built-in image generation",
+  "visibleAlphaThreshold": 8,
+  "components": {
+    "symbol-heat-shimmer": {
+      "family": "heat",
+      "label": "Heat shimmer",
+      "owner": "symbol-heat-shimmer",
+      "intent": "new-version-v3",
+      "libraryVersion": 3,
+      "sourceFile": "art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/source/symbol-heat-shimmer-source.png",
+      "sourceSha256": "41eeaf38a0b6b7878b4d5fe12d75f09e4308d5e3dfa31b9c72a9ebe4ad519516",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-3bab53d9-c80d-4dfb-99c6-f02028e637c5.png",
+      "primaryRequest": "three horizontal air-distortion ripples in coral-red, vermilion, deep orange and warm cream; unmistakably hot without flames or aroma curls",
+      "file": "art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/drafts/components/symbol-heat-shimmer.png",
+      "sha256": "1cb0e2ec0351c395b1a400c598c852ed4e751911b08e478b6a593988e2071d5c",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        94,
+        249,
+        1160,
+        1048
+      ],
+      "normalisedVisibleSize": [
+        216,
+        162
+      ],
+      "normalisedOffset": [
+        20,
+        47
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-pleasant-aroma": {
+      "family": "scent",
+      "label": "Pleasant aroma",
+      "owner": "symbol-pleasant-aroma",
+      "intent": "new-version-v3",
+      "libraryVersion": 3,
+      "sourceFile": "art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/source/symbol-pleasant-aroma-source.png",
+      "sourceSha256": "cbedcdc76a6373362159516c982d9d9dfab3f1bff17d05227b4ae886fd48e4fd",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-14de7057-58b0-465d-8968-dd6ac949a750.png",
+      "primaryRequest": "three warm-cream and blush-pink aroma curls carrying two small five-petal flowers and one sparkle: classic comic shorthand for a lovely smell",
+      "file": "art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/drafts/components/symbol-pleasant-aroma.png",
+      "sha256": "44bf92fae235c647148704cce65d68da976d3c9b7b2e8ce3a25f917661cdd729",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        296,
+        80,
+        1027,
+        1118
+      ],
+      "normalisedVisibleSize": [
+        152,
+        216
+      ],
+      "normalisedOffset": [
+        52,
+        20
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-welding-sparks": {
+      "family": "welding",
+      "label": "Welding sparks",
+      "owner": "symbol-welding-sparks",
+      "intent": "new-version-v3",
+      "libraryVersion": 3,
+      "sourceFile": "art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/source/symbol-welding-sparks-source.png",
+      "sourceSha256": "abbdf8a0d5190e2625e99de5eddf16eb5c7d3b23206cc28a463f4ef0398fed85",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-d1eb181a-0c61-4560-ba1a-7340f680e578.png",
+      "primaryRequest": "an electric blue-white welding contact core, a jagged blue arc and one-sided cyan/cobalt needle-spark spray with two or three molten coral droplets",
+      "file": "art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/drafts/components/symbol-welding-sparks.png",
+      "sha256": "c7ac21b95e08a1a6cb9b4f0991225860e241c70b660c05658fb3bd4da1a8219a",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        273,
+        200,
+        1176,
+        1057
+      ],
+      "normalisedVisibleSize": [
+        216,
+        205
+      ],
+      "normalisedOffset": [
+        20,
+        25
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "symbol-cold-snowflake": {
+      "family": "cold",
+      "label": "Cold snowflake",
+      "owner": "symbol-cold-snowflake",
+      "intent": "new-picture-v1",
+      "libraryVersion": 1,
+      "sourceFile": "art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/source/symbol-cold-snowflake-source.png",
+      "sourceSha256": "80b90c93caa16a931a442d704b2817bbf7add22ec454c32a2880042dbb7db0a3",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-35ab0501-24be-4adc-adc0-43b64f6ae1ca.png",
+      "primaryRequest": "one hand-painted six-armed frost crystal in pale ice blue, bright cyan and crisp white with storm-blue facets",
+      "file": "art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/drafts/components/symbol-cold-snowflake.png",
+      "sha256": "b7f8c39735904d612144450eb891cbea28f41a40945d2873290d312239724936",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        90,
+        42,
+        1164,
+        1199
+      ],
+      "normalisedVisibleSize": [
+        201,
+        216
+      ],
+      "normalisedOffset": [
+        27,
+        20
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejected": [
+    {
+      "id": "symbol-pleasant-aroma",
+      "file": "art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/rejected/symbol-pleasant-aroma-teal-coral-source.png",
+      "sha256": "d333027c1662456a949f5e9ed8563799f10b3ac3c9b6c6fd3da5ae3eb6e8c222",
+      "originalCacheFile": "exec-7689f2b1-ff57-4fb6-8dbe-ac87e1b2da3b.png",
+      "reason": "Rejected after Frank's review: two differently coloured ribbons remained abstract and did not communicate a pleasant smell through comic visual grammar."
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/activity-story-symbol-colour-semantics-2026-10-21-v1/evidence/symbols-light-dark-contact-sheet.png",
+    "sha256": "98033141a4f3423c5067728a1141536a0ea45f3e30e334f8004dd9391ac9da68",
+    "layout": [
+      4,
+      2
+    ],
+    "backgrounds": [
+      "warm cream",
+      "deep navy"
+    ]
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "priorPictureVersionsChanged": false,
+    "priorDraftPackChanged": false,
+    "storiesChanged": false,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "libraryVersionsAdded": true,
+    "deployed": false
+  },
+  "rollback": "Switch each existing mark back to V2 and remove the new cold picture; the prior V1/V2 assets remain byte-identical and independently addressable. The rejected aroma candidate is evidence only and is never registered."
+}

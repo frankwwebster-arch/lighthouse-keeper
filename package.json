@@ -17,6 +17,8 @@
     "minify:keeper-review-shell": "node scripts/minify_keeper_review_shell.mjs",
     "verify:review-archive": "node --import ./scripts/review_archive_fs_hook.mjs scripts/verify_review_archive.mjs",
     "verify:activity-stories": "node scripts/verify_activity_stories.mjs",
+    "verify:activity-story-ligne-claire-bbq-pilot-v1": "node scripts/verify_activity_story_ligne_claire_bbq_pilot_v1.mjs",
+    "verify:activity-story-symbol-colour-semantics-v1": "node scripts/verify_activity_story_symbol_colour_semantics_v1.mjs",
     "verify:codex-bubble-story-families-v1": "node scripts/verify_codex_bubble_story_families_v1.mjs",
     "activity-stories:add-picture": "node scripts/add_activity_story_picture.mjs",
     "stories": "vite-node scripts/stories.ts",

@@ -16,7 +16,8 @@ new current V1 `clean` mark. The immutable authoring pack is
 list exposes all four while retaining the earlier versions for undo.
 
 The picture-library completeness correction is also finished (21 October
-2026). `pictures.json` now has 304 selectable pictures and includes all 298
+2026). `pictures.json` now has 305 selectable pictures and 319 immutable
+versions and includes all 298
 review-ready isolated source components from Activity Cloud Composer V1–V7,
 the rear-work V2/V3 callout vocabulary and every component-bearing Claude or
 Codex picture pack: all V5 album artwork, the aquarium and bedroom sets, and
@@ -25,6 +26,19 @@ expansion. Reconcile from the immutable packs
 with `node scripts/import_activity_story_picture_catalogue.mjs`;
 `npm run verify:activity-stories` enforces that complete source set as well as
 the original inherited marks.
+
+Frank selected an original ligne-claire-inspired direction on 21 October:
+near-black even ink, flat spot colour, no glossy/painterly modelling, and a
+style translation that preserves the exact content and broad composition of
+each current picture. Frank approved the first six-picture BBQ pilot, and its
+six drawings are registered as new current versions in `pictures.json`; inspect
+`art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/evidence/current-vs-ligne-claire-contact-sheet.png`.
+The ready-to-paste family-by-family continuation prompt is
+`docs/CODEX_PROMPT_BUBBLE_STORIES_LIGNE_CLAIRE_ACTION_IMAGERY_2026-10-21.md`.
+Activity stories should use a stable opaque rounded-rectangle panel; emotion
+balloons may vary their contour; immediate reaction/motion marks may appear
+unenclosed around the Keeper or object. Claude still owns the engine/panel
+implementation under `src/activityStories/`; Codex owns the picture art.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 

@@ -28,11 +28,24 @@ Read `data/activity-stories/README.md`. In short:
 
 - `data/activity-stories/pictures.json` is the picture library. It began with
   33 pictures (V2's 20 objects and 6 symbols, plus the 7 V7 symbols). As of
-  21 October it exposes 304 pictures: all 298 review-ready isolated source
+  21 October it exposes 305 pictures and 319 immutable versions: all 298 review-ready isolated source
   components from Activity Cloud Composer V1–V7, rear-work activity-callout
   V2/V3 and every component-bearing Claude or Codex picture pack (including
   the bedroom pack and Codex's 54-picture family expansion), plus the original inherited marks. It references immutable pack files
   by URL and SHA-256 and retains the approved 24-frame rear-work loop.
+
+**Subsequent art-direction pilot (21 October 2026):** Frank selected an
+original ligne-claire-inspired style translation and asked that the full
+programme begin with six BBQ pictures rather than an immediate library-wide
+redraw. Frank approved the pack at
+`art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/`; its six
+components are registered as new current versions and their predecessors are
+unchanged. Continue the action imagery from
+`docs/CODEX_PROMPT_BUBBLE_STORIES_LIGNE_CLAIRE_ACTION_IMAGERY_2026-10-21.md`.
+Preserve
+each current picture's depicted content and composition while changing only
+the art language. Claude owns the proposed opaque activity-panel shell and
+Codex owns the picture translations.
 - `data/activity-stories/stories/*.json` are the four drafts: Garden BBQ,
   Sandwich assembly, Washing up and General repair, rebuilt from the review
   fixes (stars on real touches, ingredients that land and stay, the hammer

@@ -1,0 +1,388 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ligne-claire-pilot@1",
+  "set": "activity-story-ligne-claire-bbq-pilot-2026-10-21-v1",
+  "status": "approved-and-registered",
+  "created": "2026-10-21",
+  "tool": "built-in image generation plus deterministic fixed-palette normalisation",
+  "visualDirection": "original ligne-claire-inspired style translation: near-black ink, flat spot colour, no gradients or rendered light",
+  "preservationRule": "Translate each current asset's drawing language while preserving its subject identity, viewpoint, object count, state, container and broad composition unless Frank explicitly requests a content correction.",
+  "visibleAlphaThreshold": 8,
+  "components": {
+    "bbq-grill-unlit": {
+      "family": "bbq",
+      "label": "Unlit barbecue",
+      "intent": "approved-new-version-v2",
+      "libraryVersion": 2,
+      "preserves": "the current compact open round grill, front three-quarter viewpoint, cold coals, grate, handles and three legs",
+      "currentReferenceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-grill.png",
+      "currentReferenceSha256": "e6c7d5e51308d4fc974d6c3f090548cfba4d725d43564c9f7a6943bb55b407b7",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/source/bbq-grill-unlit-source.png",
+      "sourceSha256": "299350356554577a9d4044190bec095caf5c8183fcbc6eeabc706bac60037bdb",
+      "sourcePixels": [
+        1312,
+        1199
+      ],
+      "originalCacheFile": "exec-23685bc4-1383-4b24-8a20-49aa8aa2680e.png",
+      "flatPalette": [
+        "#051824",
+        "#177c9d",
+        "#0d4e67",
+        "#e3a72c",
+        "#f2ede2",
+        "#30343a"
+      ],
+      "file": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components/bbq-grill-unlit.png",
+      "sha256": "a195c384108cc04fdccc938d0e51efeffacc722c86193026aee53aba0d3d1c56",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        62,
+        147,
+        1250,
+        1052
+      ],
+      "normalisedVisibleSize": [
+        216,
+        165
+      ],
+      "normalisedOffset": [
+        20,
+        45
+      ],
+      "bounds": [
+        20,
+        45,
+        236,
+        210
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-grill": {
+      "family": "bbq",
+      "label": "Barbecue grill (lit)",
+      "intent": "approved-new-version-v3",
+      "libraryVersion": 3,
+      "preserves": "the same grill model and viewpoint as the unlit picture, with lit coral/orange and black coals",
+      "currentReferenceFile": "review-archive/objects/89/8984470c007ff8a35af6fc8428afa9a38318c89bb5c4e7e1f2f34d7b858a5ee0.png",
+      "currentReferenceSha256": "8984470c007ff8a35af6fc8428afa9a38318c89bb5c4e7e1f2f34d7b858a5ee0",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/source/bbq-grill-source.png",
+      "sourceSha256": "a769ff324ec6455135717295c69beb3e5e258a8a496e062bc04e3f169c773188",
+      "sourcePixels": [
+        1312,
+        1199
+      ],
+      "originalCacheFile": "exec-d7f0a935-b5b6-4ea3-9c82-e1f2e33510b6.png",
+      "flatPalette": [
+        "#051824",
+        "#177c9d",
+        "#0d4e67",
+        "#e3a72c",
+        "#f2ede2",
+        "#30343a",
+        "#e84833",
+        "#eb8b2d"
+      ],
+      "file": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components/bbq-grill.png",
+      "sha256": "b10d68e367ec5366bacbd8db84450b92f101b6acbd3e68c6be066a99d9ce0267",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        61,
+        145,
+        1251,
+        1054
+      ],
+      "normalisedVisibleSize": [
+        216,
+        165
+      ],
+      "normalisedOffset": [
+        20,
+        45
+      ],
+      "bounds": [
+        20,
+        45,
+        236,
+        210
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-charcoal": {
+      "family": "bbq",
+      "label": "Charcoal",
+      "intent": "approved-new-version-v2",
+      "libraryVersion": 2,
+      "preserves": "the current open ochre paper bag, visible charcoal inside, loose foreground lumps and flame motif",
+      "currentReferenceFile": "review-archive/objects/4b/4b728ffaefec6c4ef792c3ef5261cc5815060077ac3d0a08b44be0abbfd6dfa2.png",
+      "currentReferenceSha256": "4b728ffaefec6c4ef792c3ef5261cc5815060077ac3d0a08b44be0abbfd6dfa2",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/source/bbq-charcoal-source.png",
+      "sourceSha256": "0b29303174d9c768fc22c629a98ec39a59bcec4db53669d43a68cb4129954e0b",
+      "sourcePixels": [
+        1331,
+        1181
+      ],
+      "originalCacheFile": "exec-2cd449c4-d417-4844-be47-381b517edd52.png",
+      "flatPalette": [
+        "#051824",
+        "#e8ab37",
+        "#f6c45b",
+        "#e64731",
+        "#2f323b",
+        "#494c52"
+      ],
+      "file": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components/bbq-charcoal.png",
+      "sha256": "5afb4625d07fb84fe790b6bc31ff848c468a424e79df91154db10e7e89cd8ec1",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        54,
+        63,
+        1314,
+        1146
+      ],
+      "normalisedVisibleSize": [
+        216,
+        186
+      ],
+      "normalisedOffset": [
+        20,
+        35
+      ],
+      "bounds": [
+        20,
+        35,
+        236,
+        221
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-sausages": {
+      "family": "bbq",
+      "label": "Sausages (raw)",
+      "intent": "approved-new-version-v3",
+      "libraryVersion": 3,
+      "preserves": "the current five linked raw sausages, plate-free state and loose curved diagonal chain",
+      "currentReferenceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/bbq-sausages.png",
+      "currentReferenceSha256": "dfc97e3a148a3a77487a0e64b66e4dcb0b6a1406f69ac6f957a45ee93dc94fee",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/source/bbq-sausages-source.png",
+      "sourceSha256": "079e99eecd5c6d5fb618460f15b9186d8b17684fae8533f9c90c0146428a7bb3",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-d9e9b757-8d5d-4031-9f76-9714c118d7cf.png",
+      "flatPalette": [
+        "#051824",
+        "#f57e6a",
+        "#d7493e"
+      ],
+      "file": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components/bbq-sausages.png",
+      "sha256": "f19f3e1ccdd4182654603f0afc424d621b7976103a1397931e5f0462a4ee8e69",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        78,
+        162,
+        1199,
+        1093
+      ],
+      "normalisedVisibleSize": [
+        216,
+        179
+      ],
+      "normalisedOffset": [
+        20,
+        38
+      ],
+      "bounds": [
+        20,
+        38,
+        236,
+        217
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-hotdogs": {
+      "family": "bbq",
+      "label": "Hot dogs",
+      "intent": "approved-new-version-v2",
+      "libraryVersion": 2,
+      "preserves": "the current two overlapping served hot dogs, golden buns and mustard zigzags",
+      "currentReferenceFile": "review-archive/objects/63/63d205ed77f06ea3121f4ef2bba1a3dde9d90c064bedaa2c5ceb761553f46f6c.png",
+      "currentReferenceSha256": "63d205ed77f06ea3121f4ef2bba1a3dde9d90c064bedaa2c5ceb761553f46f6c",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/source/bbq-hotdogs-source.png",
+      "sourceSha256": "f9fd8a733cfa0290b62603fa4e3af0378f82d57bf4b2de7088336992ae13b16d",
+      "sourcePixels": [
+        1312,
+        1199
+      ],
+      "originalCacheFile": "exec-99e4c968-6c20-41cd-bba5-41582dc8d9ab.png",
+      "flatPalette": [
+        "#051824",
+        "#e7a638",
+        "#f6e5b7",
+        "#b54633",
+        "#e7ca2a"
+      ],
+      "file": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components/bbq-hotdogs.png",
+      "sha256": "54e6bea693ee67376dd7a84ce2670c80eeb8b5081c83ccdbc0aa012cd0d97a72",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        108,
+        161,
+        1222,
+        1048
+      ],
+      "normalisedVisibleSize": [
+        216,
+        172
+      ],
+      "normalisedOffset": [
+        20,
+        42
+      ],
+      "bounds": [
+        20,
+        42,
+        236,
+        214
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "bbq-tongs": {
+      "family": "bbq-tools",
+      "label": "Tongs",
+      "intent": "approved-new-version-v2",
+      "libraryVersion": 2,
+      "preserves": "the current diagonal closed tongs, scalloped steel ends, dark blue grips and ochre hanging loop",
+      "currentReferenceFile": "art/drafts/claude-bbq-tools-ephemera-pack-2026-10-20-v1/assets/bbq-tongs.png",
+      "currentReferenceSha256": "885d696d6636f25d51c93c9d3f35fb5a9a09533b5e9604b12339740e1b45c8c2",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/source/bbq-tongs-source.png",
+      "sourceSha256": "871e09be56a528f1ee8579c1504eadb9ae809fac07a27606e8d272a05c2b864e",
+      "sourcePixels": [
+        1551,
+        1014
+      ],
+      "originalCacheFile": "exec-173fad28-4f96-42a5-a9cb-d0179369c95c.png",
+      "flatPalette": [
+        "#051824",
+        "#ede9de",
+        "#0d4c75",
+        "#e3a72c"
+      ],
+      "file": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components/bbq-tongs.png",
+      "sha256": "604d712acb8a9930ee8eaadf30eec176c2eb8bca52c488918755cf8ce035e70c",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        50,
+        158,
+        1529,
+        919
+      ],
+      "normalisedVisibleSize": [
+        216,
+        111
+      ],
+      "normalisedOffset": [
+        20,
+        72
+      ],
+      "bounds": [
+        20,
+        72,
+        236,
+        183
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejected": [
+    {
+      "file": "rejected/bbq-charcoal-loose-v1.png",
+      "cache": "exec-d3ebab79-44cb-4dc4-bff5-9a4ceee26946.png",
+      "reason": "Removed the charcoal bag and therefore changed the current asset's meaning instead of translating its style.",
+      "sha256": "6a62fae0f6507026c5e6d54f3c547a56750f5d23add9fd90bf3e0ad1712cbcfe"
+    },
+    {
+      "file": "rejected/bbq-charcoal-loose-v2.png",
+      "cache": "exec-5be27e7c-5603-44a2-bcce-0a68245d72ae.png",
+      "reason": "Second bagless attempt repeated the semantic error; it also retained an unwanted background haze.",
+      "sha256": "cd056a803ed357de0068f6d3631ba3f67b14ed733c774889fba0fc313592a8c0"
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/evidence/current-vs-ligne-claire-contact-sheet.png",
+    "sha256": "224c2c3fd90ea559b1a18c979094bed78f3311975312479beb7734dead7fc035",
+    "columns": 5,
+    "rows": 6
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "currentReferenceHashesPinned": true,
+    "libraryVersionsAdded": true,
+    "storiesChanged": false,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "deployed": false
+  },
+  "approval": {
+    "by": "Frank",
+    "date": "2026-10-21",
+    "words": "agreed, these are superb",
+    "scope": "the six ligne-claire BBQ picture translations shown on the current-vs-pilot contact sheet"
+  },
+  "rollback": "Point any picture back to its prior current version. Every earlier file remains byte-identical and independently addressable."
+}
