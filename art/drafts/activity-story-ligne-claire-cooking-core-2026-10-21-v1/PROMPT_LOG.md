@@ -1,5 +1,11 @@
 # Prompt log
 
+## Approval
+
+Frank approved the exact nine-picture contact sheet on 21 October 2026 with
+“approved”. The nine deterministic candidates were then registered as
+immutable current V2 versions; every V1 remains byte-identical and selectable.
+
 **Date:** 21 October 2026
 
 **Tool:** built-in image generation

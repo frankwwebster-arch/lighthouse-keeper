@@ -11,7 +11,7 @@ versions remain selectable and byte-identical for undo.
 **Complete-catalogue update (21 October 2026):** the library now exposes all
 298 review-ready isolated source components from Activity Cloud Composer
 V1–V7, Prime rear-work activity-callout V2/V3 and every component-bearing
-Claude or Codex picture pack. The Studio therefore has 305 pictures and 356
+Claude or Codex picture pack. The Studio therefore has 305 pictures and 365
 immutable versions, including
 every V5 album homage, the complete aquarium and bedroom sets, and 54 new
 fishing, gardening, pet-play, fixing, pub, art and inventing pictures. Run
@@ -98,7 +98,7 @@ the component is current V2 while V1 remains selectable. The catalogue now has
 remains unregistered historical exploration. No story definition or
 `src/activityStories/` file changed.
 
-**Cooking-core review gate (21 October 2026):** the immutable pack at
+**Cooking-core approval (21 October 2026):** the immutable pack at
 `art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/` begins
 the remaining **Food and meals** group with nine related `cooking` pictures:
 bacon, cheese slicing, gravy, knife, pan, seasoning, spoon, steam and
@@ -107,10 +107,11 @@ construction, count, viewpoint, overlap and broad silhouette while applying
 the plate, tomato and tool-chest champion roles; the selected spirit level is
 supporting calibration for adult tool construction. Count/provenance audits
 rejected a two-rivet cheese prompt and a two-whole-tomato vegetable prompt;
-surface audits rejected a speckled knife and distressed copper pan. The nine
-candidates remain unregistered pending Frank's review, so the catalogue stays
-at 305 pictures / 356 immutable versions. No story definition or
-`src/activityStories/` file changed.
+surface audits rejected a speckled knife and distressed copper pan. Frank
+approved the exact sheet with “approved”; all nine candidates are registered
+as current V2 versions, taking the catalogue to 305 pictures / 365 immutable
+versions. Every V1 remains byte-identical and selectable. No story definition
+or `src/activityStories/` file changed.
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A

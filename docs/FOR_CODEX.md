@@ -16,7 +16,7 @@ new current V1 `clean` mark. The immutable authoring pack is
 list exposes all four while retaining the earlier versions for undo.
 
 The picture-library completeness correction is also finished (21 October
-2026). `pictures.json` now has 305 selectable pictures and 356 immutable
+2026). `pictures.json` now has 305 selectable pictures and 365 immutable
 versions and includes all 298
 review-ready isolated source components from Activity Cloud Composer V1–V7,
 the rear-work V2/V3 callout vocabulary and every component-bearing Claude or
@@ -94,16 +94,18 @@ remains unregistered history. The library now has 305 pictures / 356 versions.
 Do not change Claude's story or `src/activityStories/` implementation for this
 gate.
 
-The next **Food and meals** gate is the nine-picture cooking-core pack at
+The approved nine-picture cooking-core pack at
 `art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/`. It
 covers bacon, cheese slicing, gravy, knife, pan, seasoning, spoon, steam and
-vegetables. All candidates are unregistered pending review, so the library
-remains at 305 pictures / 356 versions. The pack adds two recipe refinements:
-reject correct-looking output when prompt provenance misstates counts, and do
-not confuse speckling, patina or decorative distress with the plate's useful
+vegetables. Frank approved the exact sheet with “approved”; all nine are
+immutable current V2s, taking the library to 305 pictures / 365 versions while
+every V1 remains selectable. The pack adds two recipe refinements: reject
+correct-looking output when prompt provenance misstates counts, and do not
+confuse speckling, patina or decorative distress with the plate's useful
 hand-drawn irregularity. Its four retained rejections document the two count
 corrections and the surface-only knife/pan corrections. Claude's story/runtime
-is unchanged.
+is unchanged. Continue the remaining Food and meals assets in a fresh,
+tightly related immutable review pack.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 

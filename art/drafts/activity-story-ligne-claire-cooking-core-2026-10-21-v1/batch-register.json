@@ -1,7 +1,7 @@
 {
   "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
   "set": "activity-story-ligne-claire-cooking-core-2026-10-21-v1",
-  "status": "review-gate-awaiting-approval",
+  "status": "approved-and-registered",
   "created": "2026-10-21",
   "tool": "built-in image generation plus deterministic fixed-palette normalisation",
   "family": "cooking",
@@ -19,7 +19,7 @@
     "cooking-bacon": {
       "family": "cooking",
       "label": "Cooking bacon",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one shallow cream oval plate with blue rim and exactly three overlapping wavy cooked bacon rashers with red meat and cream fat bands",
@@ -79,7 +79,7 @@
     "cooking-cheese-slicing": {
       "family": "cooking",
       "label": "Cheese being sliced",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one large golden cheese block, one separated rectangular slice and one diagonal adult knife with blue three-pin handle in the current overlap",
@@ -140,7 +140,7 @@
     "cooking-gravy": {
       "family": "cooking",
       "label": "Cooking gravy",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one filled cream gravy boat with left spout, right loop handle, blue band, pedestal foot and dark brown gravy",
@@ -201,7 +201,7 @@
     "cooking-knife": {
       "family": "cooking",
       "label": "Cooking knife",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one diagonal adult chef's knife with broad pointed steel blade, brass bolster and brown wooden handle with exactly three rivets",
@@ -261,7 +261,7 @@
     "cooking-pan": {
       "family": "cooking",
       "label": "Cooking pan",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one low copper frying pan with dark inner surface and brown handle, one pancake in mid-flip and the current separate droplets and action ticks",
@@ -322,7 +322,7 @@
     "cooking-seasoning": {
       "family": "cooking",
       "label": "Cooking seasoning",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "the current open burst of separate red-brown flakes, golden pieces and small grains with three dark directional emphasis strokes",
@@ -381,7 +381,7 @@
     "cooking-spoon": {
       "family": "cooking",
       "label": "Cooking spoon",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one diagonal adult wooden spoon with deep oval bowl, long tapered handle, one hanging hole and exactly four dark emphasis ticks",
@@ -440,7 +440,7 @@
     "cooking-steam": {
       "family": "cooking",
       "label": "Cooking steam",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "exactly three separate rising cream steam curls in the left-small, centre-tall, right-small arrangement plus exactly two detached wisps",
@@ -497,7 +497,7 @@
     "cooking-vegetables": {
       "family": "cooking",
       "label": "Cooking vegetables",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
       "preserves": "one carrot with greens, leafy vegetables, green peas, orange rounds and cubes, exactly one whole red tomato and one tomato wedge in the current compact mound",
@@ -607,13 +607,18 @@
     "currentReferenceHashesPinned": true,
     "exactPalettesRecorded": true,
     "contactSheetCoversEveryCandidate": true,
-    "libraryVersionsAdded": false,
+    "libraryVersionsAdded": true,
     "storyChanged": false,
     "activityStoriesRuntimeChanged": false,
     "approvedAuthorityChanged": false,
     "deployed": false
   },
-  "approval": null,
-  "nextStep": "Frank reviews this exact nine-picture contact sheet. Register no candidate before explicit approval.",
-  "rollback": "Before approval, discard this pack alone. After approval, each V1 remains immutable and can be reselected independently."
+  "approval": {
+    "by": "Frank",
+    "date": "2026-10-21",
+    "words": "approved",
+    "scope": "the exact nine-picture cooking-core contact sheet"
+  },
+  "nextStep": "Continue with a new tightly related Food and meals family using the evolving recipe and a new immutable review gate.",
+  "rollback": "Set each picture's current selector back to V1; the approved V2 assets and all earlier bytes remain immutable and selectable."
 }

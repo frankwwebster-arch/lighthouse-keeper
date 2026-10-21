@@ -2353,7 +2353,7 @@
       "kind": "object",
       "family": "cooking",
       "label": "Cooking bacon",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2373,6 +2373,25 @@
           "source": "cooking-bacon.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-bacon.png",
+          "sha256": "4d5e50a30c4fa24de19477f3749be54effea1b8c861e1fb5322d3f561410af56",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            74,
+            236,
+            181
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-bacon.png",
+          "by": "codex",
+          "note": "Approved ligne-claire cooking-core V2"
         }
       ]
     },
@@ -2380,7 +2399,7 @@
       "kind": "object",
       "family": "cooking",
       "label": "Cheese being sliced",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2400,6 +2419,25 @@
           "source": "cooking-cheese-slicing.png",
           "by": "codex",
           "note": "Codex BBQ food pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-cheese-slicing.png",
+          "sha256": "e0c0c37b3cc6da1546f381fd4f1833cffb6ca540f3fdf07c6a46468549b55f8b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            58,
+            236,
+            198
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-cheese-slicing.png",
+          "by": "codex",
+          "note": "Approved ligne-claire cooking-core V2"
         }
       ]
     },
@@ -2434,7 +2472,7 @@
       "kind": "object",
       "family": "cooking",
       "label": "Cooking gravy",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2454,6 +2492,25 @@
           "source": "cooking-gravy.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-gravy.png",
+          "sha256": "405b07bc013675938772151cba2f60e1a185461934270b76f3c3f6f42840eae6",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            63,
+            236,
+            192
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-gravy.png",
+          "by": "codex",
+          "note": "Approved ligne-claire cooking-core V2"
         }
       ]
     },
@@ -2461,7 +2518,7 @@
       "kind": "object",
       "family": "cooking",
       "label": "Cooking knife",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2481,6 +2538,25 @@
           "source": "cooking-knife.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-knife.png",
+          "sha256": "ae1004dfc7b623cd3d3a21c9dcf3431a5750efae6b8ca18b24af577e3cf971e1",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            71,
+            236,
+            184
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-knife.png",
+          "by": "codex",
+          "note": "Approved ligne-claire cooking-core V2"
         }
       ]
     },
@@ -2488,7 +2564,7 @@
       "kind": "object",
       "family": "cooking",
       "label": "Cooking pan",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2508,6 +2584,25 @@
           "source": "cooking-pan.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-pan.png",
+          "sha256": "46764c17beba04d866a430e9d3620570eb9e8ed1528d92fa812da07a5ed3ef7e",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            57,
+            236,
+            198
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-pan.png",
+          "by": "codex",
+          "note": "Approved ligne-claire cooking-core V2"
         }
       ]
     },
@@ -2587,7 +2682,7 @@
       "kind": "object",
       "family": "cooking",
       "label": "Cooking seasoning",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2607,6 +2702,25 @@
           "source": "cooking-seasoning.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-seasoning.png",
+          "sha256": "0602edd94811fa29d2de2710817999f0e627ed094de2d48c8cc274596fc25e17",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            61,
+            236,
+            194
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-seasoning.png",
+          "by": "codex",
+          "note": "Approved ligne-claire cooking-core V2"
         }
       ]
     },
@@ -2641,7 +2755,7 @@
       "kind": "object",
       "family": "cooking",
       "label": "Cooking spoon",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2661,6 +2775,25 @@
           "source": "cooking-spoon.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-spoon.png",
+          "sha256": "e04c1e992787ef98d43da945f71c8e4572059131ba769e505bd41b4c33b80fe3",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            23,
+            20,
+            233,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-spoon.png",
+          "by": "codex",
+          "note": "Approved ligne-claire cooking-core V2"
         }
       ]
     },
@@ -2668,7 +2801,7 @@
       "kind": "object",
       "family": "cooking",
       "label": "Cooking steam",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2688,6 +2821,25 @@
           "source": "cooking-steam.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v2 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-steam.png",
+          "sha256": "c95d4c0a0c18dcde9e5711d0115522a69a9bd244012b5f1123d60df578712ad3",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            45,
+            236,
+            210
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-steam.png",
+          "by": "codex",
+          "note": "Approved ligne-claire cooking-core V2"
         }
       ]
     },
@@ -2695,7 +2847,7 @@
       "kind": "object",
       "family": "cooking",
       "label": "Cooking vegetables",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2715,6 +2867,25 @@
           "source": "cooking-vegetables.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-vegetables.png",
+          "sha256": "980a164d082f60ce21ac0e2d76f5ff2e7d9ad943691350d7073b5d3d455b33c5",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            51,
+            236,
+            205
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-vegetables.png",
+          "by": "codex",
+          "note": "Approved ligne-claire cooking-core V2"
         }
       ]
     },
