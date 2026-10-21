@@ -1,0 +1,355 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
+  "set": "activity-story-ligne-claire-washing-2026-10-21-v1",
+  "status": "review-gate-awaiting-approval",
+  "created": "2026-10-21",
+  "tool": "built-in image generation plus deterministic fixed-palette normalisation",
+  "family": "washing",
+  "semanticSet": "the five pictures used by Claude's Washing up Bubble story",
+  "primaryVisualCalibration": "art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/sandwich-tomato.png",
+  "additionalVisualAuthority": "art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components/bbq-tongs.png",
+  "preservationRule": "Translate each current asset's drawing language while preserving subject identity, viewpoint, object count, construction, state, recognisable contents, relative arrangement and broad silhouette.",
+  "storyFile": "data/activity-stories/stories/washing-up.json",
+  "storySha256": "34bcc4e28a96fed0233c870613a08cb61f2eae98a6f63d19f3c2f5de87d4f1b7",
+  "visibleAlphaThreshold": 8,
+  "components": {
+    "washing-plate": {
+      "family": "washing",
+      "label": "Plate",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly one broad oval cream plate in the current low front three-quarter view, including its blue double rim and surrounding aqua bubble arrangement",
+      "currentReferenceFile": "review-archive/objects/01/01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f.png",
+      "currentReferenceSha256": "01b82c03b73ae82461d420b87bfb44384fffb179cbfe544a2f9810f4358a427f",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/source/washing-plate-source.png",
+      "sourceSha256": "d72e1666525320d5b0952e020dc6658a00b674bc774942ef842624dca939f4aa",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-280b4e8e-d312-4e57-80e0-a18813386a63.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#0d4e75",
+        "#1870a6",
+        "#99e7e2"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/drafts/components/washing-plate.png",
+      "sha256": "2e55d4174e17faa16f25432cb8e930b8fc492214799bed57b1949160a2f3da8c",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        93,
+        228,
+        1176,
+        1022
+      ],
+      "normalisedVisibleSize": [
+        216,
+        158
+      ],
+      "normalisedOffset": [
+        20,
+        49
+      ],
+      "bounds": [
+        20,
+        49,
+        236,
+        207
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "washing-liquid": {
+      "family": "washing",
+      "label": "Washing-up liquid",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly one upright green hourglass squeeze bottle with its cream neck ring, ridged green collar, push-pull cap and existing bubble arrangement",
+      "currentReferenceFile": "review-archive/objects/f3/f311431e2c6e480033982790d416bbd6df16f414338c6a030ff28d2780efd2c1.png",
+      "currentReferenceSha256": "f311431e2c6e480033982790d416bbd6df16f414338c6a030ff28d2780efd2c1",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/source/washing-liquid-source.png",
+      "sourceSha256": "ca1344af5871ee35e04ceeca2e965b3084972f001bf4bdacdc45391481f1ea32",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-8809dc8f-f501-4a90-9e5a-3bdde560c654.png",
+      "flatPalette": [
+        "#051824",
+        "#106e3e",
+        "#1fbe70",
+        "#f6e5b7",
+        "#99e7e2"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/drafts/components/washing-liquid.png",
+      "sha256": "0cf15eb5ee005d5ffb38d617908316778b3ff458b1a40255930caad3cc8881f4",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        253,
+        98,
+        1024,
+        1168
+      ],
+      "normalisedVisibleSize": [
+        156,
+        216
+      ],
+      "normalisedOffset": [
+        50,
+        20
+      ],
+      "bounds": [
+        50,
+        20,
+        206,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "washing-sponge": {
+      "family": "washing",
+      "label": "Sponge",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly one thick yellow rectangular sponge in the current diagonal three-quarter view, with its orange side faces, modest front-left foam bank and five detached bubbles",
+      "currentReferenceFile": "review-archive/objects/ae/aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533.png",
+      "currentReferenceSha256": "aed0b35f1bf279fe02a211b566d694a9d90fde94e7b263aec072b8449d8b2533",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/source/washing-sponge-source.png",
+      "sourceSha256": "c0c12479ace8e5a5722619cca4783072c243f5f011e62712460a448597cde94c",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-3880c735-c718-4753-85cf-4cdd7a20a262.png",
+      "flatPalette": [
+        "#051824",
+        "#ffcd30",
+        "#e88b2d",
+        "#cf5c18",
+        "#f6e5b7",
+        "#99e7e2"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/drafts/components/washing-sponge.png",
+      "sha256": "19901149e504bf555831b379afbfa77bed1be22f4e72e8d0d865dd1b2fba486b",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        94,
+        268,
+        1166,
+        1005
+      ],
+      "normalisedVisibleSize": [
+        216,
+        148
+      ],
+      "normalisedOffset": [
+        20,
+        54
+      ],
+      "bounds": [
+        20,
+        54,
+        236,
+        202
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "washing-droplets": {
+      "family": "washing",
+      "label": "Rinse water",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly four water droplets in the current centre-large, left-medium, right-small and lower-left-tiny arrangement",
+      "currentReferenceFile": "review-archive/objects/14/14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da.png",
+      "currentReferenceSha256": "14fa3c4503f2362d509623d50e9537dddffce047cbd81092ec0383ddd94052da",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/source/washing-droplets-source.png",
+      "sourceSha256": "bbfcdfcb73ef2642a10086892cd6747932f814582cdcc630c5e4239869dc6546",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-dd0ce19d-a366-4f7b-a260-fe5b3468bac6.png",
+      "flatPalette": [
+        "#051824",
+        "#99e7e2",
+        "#23a2b4"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/drafts/components/washing-droplets.png",
+      "sha256": "fbf20c9c74f0f2efe0f53f79673d71bbb59bbc13690ab389748e60467e2291e4",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        102,
+        250,
+        1162,
+        1027
+      ],
+      "normalisedVisibleSize": [
+        216,
+        158
+      ],
+      "normalisedOffset": [
+        20,
+        49
+      ],
+      "bounds": [
+        20,
+        49,
+        236,
+        207
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "washing-cutlery": {
+      "family": "washing",
+      "label": "Clean cutlery",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly one three-pronged fork and one oval-bowled spoon in the current crossed X arrangement, with the spoon in front, paired gold handle insets and existing bubble clusters",
+      "currentReferenceFile": "review-archive/objects/76/76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca.png",
+      "currentReferenceSha256": "76d1a71e4d9e2cb24272136ef3df210ad2f1303e91fcf5846c0937825471b6ca",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/source/washing-cutlery-source.png",
+      "sourceSha256": "832ed8a7f21d927cb38c5eedd7f336a09a20baf5e34e3f293a0239caecac1ba0",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-c3ee3b28-61de-469d-a5e2-20ab8b97edd2.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ab9d89",
+        "#99e7e2",
+        "#e7a638"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/drafts/components/washing-cutlery.png",
+      "sha256": "3906c76379e314e644a6e2fffe8735622641d1af91998b1948992ece93b5db10",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        128,
+        212,
+        1178,
+        1086
+      ],
+      "normalisedVisibleSize": [
+        216,
+        180
+      ],
+      "normalisedOffset": [
+        20,
+        38
+      ],
+      "bounds": [
+        20,
+        38,
+        236,
+        218
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejected": [
+    {
+      "file": "rejected/washing-plate-tonal-v1.png",
+      "cache": "exec-99b8f58b-6582-46b2-a6ed-a8e2728c902d.png",
+      "reason": "The plate preserved its construction but retained blue and cream tonal modelling instead of the tomato-calibrated flat spot-colour treatment.",
+      "sha256": "fd7f34c424760be1c0034c38d74450d9a61d6513ebe68c096f3d0f2da3e1ecd8"
+    },
+    {
+      "file": "rejected/washing-sponge-excess-foam-v1.png",
+      "cache": "exec-a11f0589-011f-4ea3-9430-e8d6a41ffb38.png",
+      "reason": "The sponge gained an oversized foam blanket, excess detached bubbles and excessive pore detail instead of preserving the current restrained arrangement.",
+      "sha256": "ff4f907a5e65cacdd5ad3957721a95913f6677c81bde5dcf0ab3324c0d647cdc"
+    },
+    {
+      "file": "rejected/washing-cutlery-prompt-conflict-v1.png",
+      "cache": "exec-c1c27cee-0e01-4515-9190-a81f1b9d69b0.png",
+      "reason": "The image kept the current three-pronged fork, but the generating prompt incorrectly described four tines; it was rerun so provenance and drawing agree.",
+      "sha256": "3a506f9a838ad1dec81bb97730d51268a950ae310c528fce04eb4d2cdd8bfbd7"
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/evidence/current-vs-ligne-claire-contact-sheet.png",
+    "sha256": "c7412edd9bd47a2266befda71543c891a1c43e955c114f04491a6929e081b4bb",
+    "columns": 5,
+    "rows": 5,
+    "coveredIds": [
+      "washing-plate",
+      "washing-liquid",
+      "washing-sponge",
+      "washing-droplets",
+      "washing-cutlery"
+    ]
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "currentReferenceHashesPinned": true,
+    "exactPalettesRecorded": true,
+    "contactSheetCoversEveryCandidate": true,
+    "libraryVersionsAdded": false,
+    "storyChanged": false,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "deployed": false
+  },
+  "approval": null,
+  "nextStep": "Frank reviews the exact five-picture contact sheet. On approval, add each candidate as immutable V2 with the official add-picture command; do not overwrite V1.",
+  "rollback": "Before approval, discard this pack alone. After approval, set each picture's current selector back to V1; all earlier bytes remain immutable and selectable."
+}

@@ -55,6 +55,14 @@ V2 versions, taking the library to 305 pictures and 338 versions. Every V1
 predecessor remains selectable and byte-identical; no story definition or
 `src/activityStories/` file changed.
 
+**Washing family review gate (21 October 2026):** the immutable candidate pack
+at `art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/` translates
+the five `washing` pictures used by Claude's existing `washing-up` story. It
+uses the approved `sandwich-tomato` V2 as the primary line/flat-colour/detail
+calibration and keeps each V1 picture as semantic authority. The five proposed
+V2 components are review-only and are not registered; `pictures.json`, the
+story and `src/activityStories/` remain unchanged pending Frank's approval.
+
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A
 story has no upper length, only a five-second floor. Frank sets each

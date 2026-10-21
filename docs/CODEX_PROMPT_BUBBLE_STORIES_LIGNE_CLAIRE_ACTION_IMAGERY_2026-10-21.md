@@ -2,7 +2,7 @@
 
 **Decision date:** 21 October 2026
 
-**Status:** active; BBQ and sandwich packs approved; action-imagery programme only
+**Status:** active; BBQ and sandwich packs approved; washing pack at review gate; action-imagery programme only
 
 Frank approved the six-picture BBQ pilot with “agreed, these are superb”. This
 prompt turns that approval into a controlled conversion programme for Bubble
@@ -23,6 +23,16 @@ shared result `cooking-sandwich`. Its five components are registered as current
 V2 versions; all five V1 versions remain byte-identical and selectable. The
 library now contains 305 pictures and 338 immutable versions. Continue with a
 new family pack rather than rebuilding an approved family.
+
+**Third family review gate (21 October 2026):** the five-picture `washing`
+family is ready for review at
+`art/drafts/activity-story-ligne-claire-washing-2026-10-21-v1/`. It covers
+`washing-plate`, `washing-liquid`, `washing-sponge`, `washing-droplets` and
+`washing-cutlery`, exactly the cast of Claude's unchanged `washing-up` story.
+The approved `sandwich-tomato` V2 is now the primary style calibration because
+Frank identified it as the most successful translation. The five washing
+candidates remain unregistered until explicit approval; every current V1 is
+still active and byte-identical.
 
 ## Ready-to-paste prompt
 
@@ -59,8 +69,10 @@ Objective
 Visual authority
 - The approved components in
   art/drafts/activity-story-ligne-claire-bbq-pilot-2026-10-21-v1/drafts/components/
-  are the visual authority for contour, flat colour, detail density and
-  game-scale readability.
+  remain supporting visual authority for contour, flat colour, detail density
+  and game-scale readability. Use the approved
+  art/drafts/activity-story-ligne-claire-sandwich-2026-10-21-v1/drafts/components/sandwich-tomato.png
+  as the primary calibration for subsequent families.
 - Draw original artwork: lively near-black contour of mostly even weight,
   simplified accurate shapes, flat opaque spot colours and minimal decisive
   interior lines. Use no gradients, glossy highlights, painterly modelling,
