@@ -1,0 +1,12 @@
+{
+  "set": "kitchen-kettle-standalone-v44",
+  "status": "source-only-unapproved",
+  "generationMode": "native project source plus prior built-in image-generation concepts",
+  "files": {
+    "native/kettle-native-source.png": "3d06d4b527161967efb748da75f64b215e6814cbd79c10a4da97487c3a025906",
+    "v43/kettle-state-family-source.png": "036961f1e3728c88a6008faf63328469cdd376ea1c7aae3988def6d1ced4bc7a",
+    "v43/kettle-broken-source.png": "4d9252bd4d5abd38e6b5b9ff4bcc24b3ef84bf7e4b2df1b231897fed4b271d08",
+    "v43/kettle-steam-keyframes-source.png": "00d9c413a70044acd5738d8f5508c5a61011bd735b94a5d713b2a9fc1c36de67"
+  },
+  "normalization": "Deterministic V44 builder; the native production source is copied without resizing, while generated sources are review references only."
+}

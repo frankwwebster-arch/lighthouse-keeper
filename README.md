@@ -682,15 +682,19 @@ contract, not runtime wiring. V41 is reversible, approved and unpromoted.
 Frank approved the exact deployed V41 result on 20 October 2026; the approval
 is pinned without changing its reviewed bytes or promoting runtime/Final art.
 Kettle V42 is preserved but rejected because its 32-pixel treatment read as
-too pixelated and its base ended at the worktop's y134 rear edge, visibly
-floating above the turquoise top plane. The active correction is the
-old-fashioned Kettle V43 at `/keeper-review/kitchen-kettle-standalone-v43/`:
-separate Off/On/Broken kettle cells use a restrained 44-pixel maximum envelope
-and end at visible support row y140. The fridge worktop is an accepted dynamic
-surface at x84; every placement derives a real Keeper tea-making stop from its
-support bay. Broken adds a base-pinned eight-frame rattle, locks both itself and
-its supporting asset, and keeps separate steam owned by the kettle. Toaster
-and bowl work has not begun. See
+too pixelated and floated above the turquoise top plane. V43 corrected scale
+and y140 seating but is also rejected: reducing its polished concept painting
+to a 44-pixel sprite destroyed the finish visible in the source. The active
+correction is Kettle V44 at
+`/keeper-review/kitchen-kettle-standalone-v44/`. It shows the source-quality
+concept honestly as reference-only and uses an existing kitchen-native
+`48 × 34 px` turquoise enamel kettle without resizing for Off and On. Broken
+has a split displaced handle, detached shard, displaced lid, broken spout,
+jagged metal exposure and fracture, plus a base-pinned rattle and separate
+kettle-owned steam/sparks. All states end at visible support row y140. The
+fridge worktop remains an accepted dynamic surface at x84; every placement
+derives a real Keeper tea-making stop from its support bay. Broken locks both
+itself and its supporting asset. Toaster and bowl work has not begun. See
 [`docs/KITCHEN_DISHWASHER_WORKBENCH_V39_2026-10-20.md`](docs/KITCHEN_DISHWASHER_WORKBENCH_V39_2026-10-20.md).
 See also
 [`docs/KITCHEN_DISHWASHER_WORKBENCH_V40_2026-10-20.md`](docs/KITCHEN_DISHWASHER_WORKBENCH_V40_2026-10-20.md).
@@ -700,6 +704,8 @@ See also
 [`docs/KITCHEN_KETTLE_STANDALONE_V42_2026-10-20.md`](docs/KITCHEN_KETTLE_STANDALONE_V42_2026-10-20.md).
 See also
 [`docs/KITCHEN_KETTLE_STANDALONE_V43_2026-10-20.md`](docs/KITCHEN_KETTLE_STANDALONE_V43_2026-10-20.md).
+See also
+[`docs/KITCHEN_KETTLE_STANDALONE_V44_2026-10-21.md`](docs/KITCHEN_KETTLE_STANDALONE_V44_2026-10-21.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

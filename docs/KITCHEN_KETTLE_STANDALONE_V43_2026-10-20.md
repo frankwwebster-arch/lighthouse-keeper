@@ -2,8 +2,8 @@
 
 Date: 20 October 2026
 
-Status: reversible visual/behaviour review draft; unapproved, unpromoted and
-unwired.
+Status: rejected on 21 October 2026 and superseded by V44; preserved,
+unpromoted and unwired.
 
 Review: `/keeper-review/kitchen-kettle-standalone-v43/`
 
@@ -13,6 +13,11 @@ approved modular geometry, Broken-state movement lock and asset-owned effect
 rules while redrawing at a more legible native scale and seating the base on
 the actual visible top surface. It does not alter any Dishwasher V41, Cabinet
 V11, V42, Final or runtime byte.
+
+Frank later rejected V43 because the polished source lost too much finish in
+the 44-pixel production reduction and looked poor when magnified on the review
+page. V44 preserves this record, presents source and production separately and
+uses an existing kitchen-native kettle without resizing.
 
 ## Native counter scale
 

@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "set": "kitchen-kettle-standalone-v44",
+  "page": {
+    "path": "public/keeper-review/kitchen-kettle-standalone-v44/index.html",
+    "sha256": "a43a9fb61dbf766943b0b811783011f6dc5c0273967ee60908fb6793ea300be1",
+    "bytes": 26711
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/approved-counter-bay.png": {
+      "sha256": "016968bcf538ffe7d29b95bfdc84d1952199e40ad565b11bdb1e2e081a45e47e",
+      "extension": ".png",
+      "bytes": 8805,
+      "object": "review-archive/objects/01/016968bcf538ffe7d29b95bfdc84d1952199e40ad565b11bdb1e2e081a45e47e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/01/016968bcf538ffe7d29b95bfdc84d1952199e40ad565b11bdb1e2e081a45e47e.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/approved-kitchen-counter-room.png": {
+      "sha256": "b5f53fa0578135a0c239e556e4229836321c7accdd12e0cf3d788292084e181e",
+      "extension": ".png",
+      "bytes": 171388,
+      "object": "review-archive/objects/b5/b5f53fa0578135a0c239e556e4229836321c7accdd12e0cf3d788292084e181e.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/b5/b5f53fa0578135a0c239e556e4229836321c7accdd12e0cf3d788292084e181e.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/fx-kettle-broken-steam--compact-f40.png": {
+      "sha256": "a560a4fb57b5cbde6d90547a0d07303a9f3609e8b3509d19112b5039a4d9dd88",
+      "extension": ".png",
+      "bytes": 17513,
+      "object": "review-archive/objects/a5/a560a4fb57b5cbde6d90547a0d07303a9f3609e8b3509d19112b5039a4d9dd88.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/a5/a560a4fb57b5cbde6d90547a0d07303a9f3609e8b3509d19112b5039a4d9dd88.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/fx-kettle-broken-steam--emphatic-f40.png": {
+      "sha256": "3d2da239e39f8013f8f4d4364717e897c279e5beb3d1e8247e263241fd5cb422",
+      "extension": ".png",
+      "bytes": 33900,
+      "object": "review-archive/objects/3d/3d2da239e39f8013f8f4d4364717e897c279e5beb3d1e8247e263241fd5cb422.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/3d/3d2da239e39f8013f8f4d4364717e897c279e5beb3d1e8247e263241fd5cb422.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/fx-kettle-broken-steam--regular-f40.png": {
+      "sha256": "aeeb691cac0d00f861145590d1c47932604254612076a7cd2edb87abd5e43bd9",
+      "extension": ".png",
+      "bytes": 25944,
+      "object": "review-archive/objects/ae/aeeb691cac0d00f861145590d1c47932604254612076a7cd2edb87abd5e43bd9.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/ae/aeeb691cac0d00f861145590d1c47932604254612076a7cd2edb87abd5e43bd9.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/fx-kettle-on-steam--compact-f40.png": {
+      "sha256": "e1aa7f33d4d80c2d62f940f60ad84690d1de3e4d97a296f7785354d360ed8920",
+      "extension": ".png",
+      "bytes": 9655,
+      "object": "review-archive/objects/e1/e1aa7f33d4d80c2d62f940f60ad84690d1de3e4d97a296f7785354d360ed8920.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/e1/e1aa7f33d4d80c2d62f940f60ad84690d1de3e4d97a296f7785354d360ed8920.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/fx-kettle-on-steam--emphatic-f40.png": {
+      "sha256": "9c3f6fb542a8d1c7a08147728cee845ac9bb34c1a6e756e12fc1daf198cfd6d8",
+      "extension": ".png",
+      "bytes": 22094,
+      "object": "review-archive/objects/9c/9c3f6fb542a8d1c7a08147728cee845ac9bb34c1a6e756e12fc1daf198cfd6d8.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/9c/9c3f6fb542a8d1c7a08147728cee845ac9bb34c1a6e756e12fc1daf198cfd6d8.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/fx-kettle-on-steam--regular-f40.png": {
+      "sha256": "98b64729b1bfa361c285e576d16ae145945d891b2d46164e6f5e4db9e02c0e6b",
+      "extension": ".png",
+      "bytes": 15829,
+      "object": "review-archive/objects/98/98b64729b1bfa361c285e576d16ae145945d891b2d46164e6f5e4db9e02c0e6b.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/98/98b64729b1bfa361c285e576d16ae145945d891b2d46164e6f5e4db9e02c0e6b.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/kettle-broken-native-room.png": {
+      "sha256": "071523facd55c4a38c81168e1c698c3a583917822c5d6a932de393f7ab7fa056",
+      "extension": ".png",
+      "bytes": 174695,
+      "object": "review-archive/objects/07/071523facd55c4a38c81168e1c698c3a583917822c5d6a932de393f7ab7fa056.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/07/071523facd55c4a38c81168e1c698c3a583917822c5d6a932de393f7ab7fa056.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/kettle-broken-rattle-f8.png": {
+      "sha256": "bc987bdee9871dec03409294bbaba902a1cc0fff047aad36bebbeddf4fccd311",
+      "extension": ".png",
+      "bytes": 19356,
+      "object": "review-archive/objects/bc/bc987bdee9871dec03409294bbaba902a1cc0fff047aad36bebbeddf4fccd311.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/bc/bc987bdee9871dec03409294bbaba902a1cc0fff047aad36bebbeddf4fccd311.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/kettle-broken.png": {
+      "sha256": "4ea4dadb4bbb2afead8313690062e698b755c5fe08ef40a082e227aaab2258fc",
+      "extension": ".png",
+      "bytes": 2664,
+      "object": "review-archive/objects/4e/4ea4dadb4bbb2afead8313690062e698b755c5fe08ef40a082e227aaab2258fc.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4e/4ea4dadb4bbb2afead8313690062e698b755c5fe08ef40a082e227aaab2258fc.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/kettle-off-fridge-native-room.png": {
+      "sha256": "729316e1b5f027b7e7b019725f33fe79cf59e48ea35e5a8afc95a932d6bd6456",
+      "extension": ".png",
+      "bytes": 175042,
+      "object": "review-archive/objects/72/729316e1b5f027b7e7b019725f33fe79cf59e48ea35e5a8afc95a932d6bd6456.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/72/729316e1b5f027b7e7b019725f33fe79cf59e48ea35e5a8afc95a932d6bd6456.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/kettle-off-native-room.png": {
+      "sha256": "d97cfe38d2bd394bef574210ad9de79710ec97c71762df5093caba2603c927fa",
+      "extension": ".png",
+      "bytes": 175035,
+      "object": "review-archive/objects/d9/d97cfe38d2bd394bef574210ad9de79710ec97c71762df5093caba2603c927fa.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d9/d97cfe38d2bd394bef574210ad9de79710ec97c71762df5093caba2603c927fa.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/kettle-off.png": {
+      "sha256": "46c0167abedf5a220cc498aa422a237355296cdde4cef42bccc29e572bf80306",
+      "extension": ".png",
+      "bytes": 3090,
+      "object": "review-archive/objects/46/46c0167abedf5a220cc498aa422a237355296cdde4cef42bccc29e572bf80306.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/46/46c0167abedf5a220cc498aa422a237355296cdde4cef42bccc29e572bf80306.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/kettle-on-native-room.png": {
+      "sha256": "5f07ec2f79b0493eca62f3ffcc64eb1750a34db72d85357dd57461f7b7da1554",
+      "extension": ".png",
+      "bytes": 175310,
+      "object": "review-archive/objects/5f/5f07ec2f79b0493eca62f3ffcc64eb1750a34db72d85357dd57461f7b7da1554.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/5f/5f07ec2f79b0493eca62f3ffcc64eb1750a34db72d85357dd57461f7b7da1554.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/kettle-on.png": {
+      "sha256": "46c0167abedf5a220cc498aa422a237355296cdde4cef42bccc29e572bf80306",
+      "extension": ".png",
+      "bytes": 3090,
+      "object": "review-archive/objects/46/46c0167abedf5a220cc498aa422a237355296cdde4cef42bccc29e572bf80306.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/46/46c0167abedf5a220cc498aa422a237355296cdde4cef42bccc29e572bf80306.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/source-quality-broken.png": {
+      "sha256": "4d9252bd4d5abd38e6b5b9ff4bcc24b3ef84bf7e4b2df1b231897fed4b271d08",
+      "extension": ".png",
+      "bytes": 1397367,
+      "object": "review-archive/objects/4d/4d9252bd4d5abd38e6b5b9ff4bcc24b3ef84bf7e4b2df1b231897fed4b271d08.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/4d/4d9252bd4d5abd38e6b5b9ff4bcc24b3ef84bf7e4b2df1b231897fed4b271d08.png"
+    },
+    "/keeper-review/kitchen-kettle-standalone-v44/assets/source-quality-state-family.png": {
+      "sha256": "036961f1e3728c88a6008faf63328469cdd376ea1c7aae3988def6d1ced4bc7a",
+      "extension": ".png",
+      "bytes": 1041524,
+      "object": "review-archive/objects/03/036961f1e3728c88a6008faf63328469cdd376ea1c7aae3988def6d1ced4bc7a.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/03/036961f1e3728c88a6008faf63328469cdd376ea1c7aae3988def6d1ced4bc7a.png"
+    }
+  }
+}
