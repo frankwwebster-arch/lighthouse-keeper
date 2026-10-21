@@ -128,7 +128,7 @@ candidate is hash-pinned inside the correction pack. Frank approved it with
 “approved, move on”; it is current V2, the other eight candidates are also
 current V2s, and every V1 remains selectable.
 
-The current unregistered Food and meals gate is
+The approved Food and meals farm-animals-and-meals pack is
 `art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/`.
 It covers cow, pig, sheep, breakfast, roast dinner, vegetable-soup lunch and
 steak with fries. Frank said the legacy animals looked “VERY cartoon like” and
@@ -138,9 +138,9 @@ preserve species, count, orientation and indispensable attributes, but redraw
 adult anatomy, stance, proportions, face, contour and interior construction
 from observation. Use the horse's weight-bearing construction and economical
 marks without copying its horse subject, rider, dog, pose or motion. The meals
-still preserve V1 counts, state, viewpoint, overlap and arrangement. All seven
-candidates remain unregistered; the library stays at 305 pictures / 374
-versions.
+still preserve V1 counts, state, viewpoint, overlap and arrangement. Frank
+approved the exact sheet with “approved”; all seven are current immutable V2s,
+the library has 305 pictures / 381 versions, and every V1 remains selectable.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 

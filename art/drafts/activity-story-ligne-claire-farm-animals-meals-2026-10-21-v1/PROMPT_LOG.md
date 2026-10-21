@@ -125,3 +125,10 @@ Cache: `exec-2dbe2575-79dd-401c-8304-b9ee3b8e4682.png`
 > plate with two blue rim lines; retain the steak orientation, fat edge and
 > five dark diagonal grill bands; preserve the compact pile of thick golden
 > fries at right/rear with its current overlap and broad mass.
+
+## Approval
+
+Frank approved the exact seven-row contact sheet with “approved” on
+2026-10-21. All seven deterministic components are registered as immutable
+current V2s. Every V1 remains selectable, and the three pre-horse animal
+attempts remain rejected evidence only.

@@ -35,7 +35,7 @@ and ordered in `docs/KEEPER_NEUTRAL_ENDPOINT_AUDIT.md`. `npm test` rejects new
 or regressed endpoint failures against that frozen migration boundary.
 
 The Bubble stories Studio has a complete shared picture catalogue: 305
-selectable pictures and 348 immutable versions grouped by activity. This includes every review-ready
+selectable pictures and 381 immutable versions grouped by activity. This includes every review-ready
 isolated source component from Activity Cloud Composer V1–V7, the rear-work
 V2/V3 callout packs and every component-bearing Claude or Codex picture pack,
 including all V5 album homages, the complete aquarium and bedroom sets, and 54
@@ -88,19 +88,26 @@ versions. The tool chest adds construction, detail hierarchy and confident
 object presence to the plate's shape and tomato's colour calibrations. Claude's
 story, the activity-story runtime, production art and deployment are unchanged.
 
-The next immutable Bubble-stories gate is the eight-piece repair hand-tools
-pack at
+Frank approved the eight-piece repair hand-tools pack at
 `art/drafts/activity-story-ligne-claire-repair-hand-tools-2026-10-21-v1/`.
-It contains adjustable spanner, C-clamp, combination pliers, flat-head and
-Phillips screwdrivers, hand saw, spirit level and tape measure candidates, plus
-prior/light/dark/64 px evidence, exact prompts, hashes and one retained rejected
-Phillips pass. “Ligne claire, not cartoon” is now explicit: the plate, tomato
-and tool chest still govern shape, colour economy and construction, while adult
-tool proportions and credible mechanisms exclude cute, toy-like, inflated,
-caricature, mascot and sticker treatments. The candidates are unregistered
-pending Frank's review, so all eight V1s remain current and the catalogue stays
-at 305 pictures / 348 versions. Claude's story/runtime, production art and
-deployment are unchanged.
+Its adjustable spanner, C-clamp, combination pliers, flat-head and Phillips
+screwdrivers, hand saw, spirit level and tape measure are current immutable
+V2s, taking the catalogue to 305 pictures / 356 versions. “Ligne claire, not
+cartoon” remains explicit: adult proportions and credible mechanisms exclude
+cute, toy-like, inflated, caricature, mascot and sticker treatments.
+
+Frank subsequently approved the nine-picture cooking core, taking the
+catalogue to 305 pictures / 365 versions, then eight baking/eggs/mixing pictures
+plus the separate observational hen correction, taking it to 305 pictures / 374
+versions. The cartoon-like family-pack hen remains rejected and unregistered.
+
+The latest approval is the seven-picture farm-animals-and-meals pack at
+`art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/`.
+Cow, pig and sheep are full observational redrafts informed by Frank's horse
+reference rather than restyles of the cartoon-like V1 drawings; the four meals
+preserve their exact V1 compositions. All seven are current immutable V2s, so
+the catalogue now contains 305 pictures / 381 versions. Every V1 remains
+selectable, Claude's story/runtime is unchanged, and nothing was deployed.
 
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 

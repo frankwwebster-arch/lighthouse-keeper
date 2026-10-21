@@ -1,7 +1,7 @@
 {
   "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
   "set": "activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1",
-  "status": "review-gate-awaiting-approval",
+  "status": "approved-and-registered",
   "created": "2026-10-21",
   "tool": "built-in image generation plus deterministic fixed-palette normalisation",
   "family": "food-provenance-and-meal",
@@ -24,7 +24,7 @@
     "cooking-cow": {
       "family": "food-provenance",
       "label": "Adult dairy cow \u2014 full redraft",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "method": "full-redraft-from-observed-anatomy",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
@@ -87,7 +87,7 @@
     "cooking-pig": {
       "family": "food-provenance",
       "label": "Adult farm pig \u2014 full redraft",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "method": "full-redraft-from-observed-anatomy",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
@@ -148,7 +148,7 @@
     "cooking-sheep": {
       "family": "food-provenance",
       "label": "Adult sheep \u2014 full redraft",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "method": "full-redraft-from-observed-anatomy",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
@@ -208,7 +208,7 @@
     "meal-breakfast": {
       "family": "meal",
       "label": "Breakfast",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "method": "composition-preserving-style-translation",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
@@ -274,7 +274,7 @@
     "meal-dinner": {
       "family": "meal",
       "label": "Roast dinner",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "method": "composition-preserving-style-translation",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
@@ -339,7 +339,7 @@
     "meal-lunch": {
       "family": "meal",
       "label": "Vegetable soup lunch",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "method": "composition-preserving-style-translation",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
@@ -403,7 +403,7 @@
     "meal-steak-fries": {
       "family": "meal",
       "label": "Steak and fries",
-      "intent": "candidate-new-version-v2",
+      "intent": "approved-current-version-v2",
       "method": "composition-preserving-style-translation",
       "priorCurrentLibraryVersion": 1,
       "proposedLibraryVersion": 2,
@@ -510,12 +510,17 @@
     "currentReferenceHashesPinned": true,
     "exactPalettesRecorded": true,
     "contactSheetCoversEveryCandidate": true,
-    "libraryVersionsAdded": false,
+    "libraryVersionsAdded": true,
     "storyChanged": false,
     "activityStoriesRuntimeChanged": false,
     "deployed": false
   },
-  "approval": null,
-  "nextStep": "Frank reviews this exact seven-picture sheet. Register no candidate before explicit approval.",
-  "rollback": "Discard this pack alone; every current V1 and all prior immutable packs remain untouched."
+  "approval": {
+    "by": "Frank",
+    "date": "2026-10-21",
+    "words": "approved",
+    "scope": "The exact seven-picture farm-animals-and-meals contact sheet after the horse-reference full animal redrafts."
+  },
+  "nextStep": "Continue the remaining Food-and-meals pictures in a fresh immutable review pack.",
+  "rollback": "Every V1 remains immutable and selectable; each approved V2 is an immutable added library version."
 }

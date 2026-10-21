@@ -110,7 +110,7 @@ retained as rejected evidence. Frank approved this exact correction with
 “approved, move on”; it is current V2, every V1 remains selectable, and the
 other eight approved family candidates remain unchanged.
 
-**Eighth family review gate (21 October 2026):** three farm animals and four
+**Eighth family approval (21 October 2026):** three farm animals and four
 meal pictures are isolated at
 `art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/`:
 `cooking-cow`, `cooking-pig`, `cooking-sheep`, `meal-breakfast`,
@@ -123,8 +123,9 @@ construction must be newly drawn from observation. The horse supplies
 weight-bearing quadruped construction, lively economical contour and sparse
 purposeful interior marks, never horse subject matter, rider, dog, pose or
 motion. The four meals still use strict V1 composition preservation. The seven
-candidates remain unregistered, so the library remains 305 pictures / 374
-versions.
+candidates were approved by Frank with “approved” and are current immutable
+V2s, so the library contains 305 pictures / 381 versions. Every V1 remains
+selectable.
 
 ## Ready-to-paste prompt
 
@@ -154,9 +155,8 @@ Objective
   The nine-picture cooking-core pack is approved and registered as current V2s.
   The nine-picture baking/eggs/mixing family is approved and registered,
   using the separate observational hen correction rather than the rejected
-  family-pack hen. The current review gate is the seven-picture farm-animals
-  and meals pack; register nothing before Frank's verdict. Continue later work
-  in fresh immutable family packs.
+  family-pack hen. The seven-picture farm-animals-and-meals pack is also
+  approved and registered. Continue later work in fresh immutable family packs.
 - The programme covers action objects, ingredients, tools, pictorial states,
   activity marks, emotions and independent comic reaction punctuation used by
   Bubble stories.

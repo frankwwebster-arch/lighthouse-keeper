@@ -2464,7 +2464,7 @@
       "kind": "object",
       "family": "food-provenance",
       "label": "Cooking cow",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2484,6 +2484,25 @@
           "source": "cooking-cow.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/drafts/components/cooking-cow.png",
+          "sha256": "74729f9be4ea69e620a4ea45479250854c22e5238b51693b716f9495ac3ed5f1",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            53,
+            236,
+            203
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-cow.png",
+          "by": "codex",
+          "note": "Approved ligne-claire farm animals and meals V2"
         }
       ]
     },
@@ -2629,7 +2648,7 @@
       "kind": "object",
       "family": "food-provenance",
       "label": "Cooking pig",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2649,6 +2668,25 @@
           "source": "cooking-pig.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/drafts/components/cooking-pig.png",
+          "sha256": "791e866bc8f79bba64879341488eafed7954800b381f682b0c608445c7d0bfdb",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            65,
+            236,
+            191
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-pig.png",
+          "by": "codex",
+          "note": "Approved ligne-claire farm animals and meals V2"
         }
       ]
     },
@@ -2747,7 +2785,7 @@
       "kind": "object",
       "family": "food-provenance",
       "label": "Cooking sheep",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2767,6 +2805,25 @@
           "source": "cooking-sheep.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/drafts/components/cooking-sheep.png",
+          "sha256": "3939e74f8001345a91f24524c4096c37572d016ceee5bcc635ac9087118d4a1b",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            42,
+            236,
+            213
+          ],
+          "added": "2026-10-21",
+          "source": "cooking-sheep.png",
+          "by": "codex",
+          "note": "Approved ligne-claire farm animals and meals V2"
         }
       ]
     },
@@ -4905,7 +4962,7 @@
       "kind": "object",
       "family": "meal",
       "label": "Meal breakfast",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -4925,6 +4982,25 @@
           "source": "meal-breakfast.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/drafts/components/meal-breakfast.png",
+          "sha256": "f0806bce82fef078d72319d0d5b995daade3abcb27d5621e2cc00dc40716db17",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            64,
+            236,
+            192
+          ],
+          "added": "2026-10-21",
+          "source": "meal-breakfast.png",
+          "by": "codex",
+          "note": "Approved ligne-claire farm animals and meals V2"
         }
       ]
     },
@@ -4932,7 +5008,7 @@
       "kind": "object",
       "family": "meal",
       "label": "Meal dinner",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -4952,6 +5028,25 @@
           "source": "meal-dinner.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/drafts/components/meal-dinner.png",
+          "sha256": "1f6b64194a15aca5f12b5fddb3e31c765a9b789e73552d2168f4fb15bf99de96",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            69,
+            236,
+            186
+          ],
+          "added": "2026-10-21",
+          "source": "meal-dinner.png",
+          "by": "codex",
+          "note": "Approved ligne-claire farm animals and meals V2"
         }
       ]
     },
@@ -4959,7 +5054,7 @@
       "kind": "object",
       "family": "meal",
       "label": "Meal lunch",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -4979,6 +5074,25 @@
           "source": "meal-lunch.png",
           "by": "codex",
           "note": "Imported from complete review-ready keeper-prime-back-work-activity-callout-v3 picture catalogue"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/drafts/components/meal-lunch.png",
+          "sha256": "d2c1a18521f34f76128cfef1b12db763c99e30843170f701d981bf7743fb5868",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            67,
+            236,
+            188
+          ],
+          "added": "2026-10-21",
+          "source": "meal-lunch.png",
+          "by": "codex",
+          "note": "Approved ligne-claire farm animals and meals V2"
         }
       ]
     },
@@ -4986,7 +5100,7 @@
       "kind": "object",
       "family": "meal",
       "label": "Steak and fries",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -5006,6 +5120,25 @@
           "source": "meal-steak-fries.png",
           "by": "codex",
           "note": "Finished meal, plated (Codex BBQ food pack V1)"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/drafts/components/meal-steak-fries.png",
+          "sha256": "a528392fcfc3c4186b7f049eb1a467d054cf8132fbb6d726d0d8c697f391fcac",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            42,
+            236,
+            213
+          ],
+          "added": "2026-10-21",
+          "source": "meal-steak-fries.png",
+          "by": "codex",
+          "note": "Approved ligne-claire farm animals and meals V2"
         }
       ]
     },

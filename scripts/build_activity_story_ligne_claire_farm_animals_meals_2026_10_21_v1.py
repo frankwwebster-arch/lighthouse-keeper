@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build or verify the farm-animal full-redraft and plated-meals review gate."""
+"""Build or verify the approved farm-animal full-redraft and plated-meals pack."""
 
 from __future__ import annotations
 
@@ -175,7 +175,7 @@ def build() -> None:
         entries[spec["id"]] = {
             "family": "food-provenance" if spec["id"].startswith("cooking-") else "meal",
             "label": spec["label"],
-            "intent": "candidate-new-version-v2",
+            "intent": "approved-current-version-v2",
             "method": spec["method"],
             "priorCurrentLibraryVersion": 1,
             "proposedLibraryVersion": 2,
@@ -200,7 +200,7 @@ def build() -> None:
     register = {
         "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
         "set": SET,
-        "status": "review-gate-awaiting-approval",
+        "status": "approved-and-registered",
         "created": "2026-10-21",
         "tool": "built-in image generation plus deterministic fixed-palette normalisation",
         "family": "food-provenance-and-meal",
@@ -233,26 +233,31 @@ def build() -> None:
             "currentReferenceHashesPinned": True,
             "exactPalettesRecorded": True,
             "contactSheetCoversEveryCandidate": True,
-            "libraryVersionsAdded": False,
+            "libraryVersionsAdded": True,
             "storyChanged": False,
             "activityStoriesRuntimeChanged": False,
             "deployed": False,
         },
-        "approval": None,
-        "nextStep": "Frank reviews this exact seven-picture sheet. Register no candidate before explicit approval.",
-        "rollback": "Discard this pack alone; every current V1 and all prior immutable packs remain untouched.",
+        "approval": {
+            "by": "Frank",
+            "date": "2026-10-21",
+            "words": "approved",
+            "scope": "The exact seven-picture farm-animals-and-meals contact sheet after the horse-reference full animal redrafts.",
+        },
+        "nextStep": "Continue the remaining Food-and-meals pictures in a fresh immutable review pack.",
+        "rollback": "Every V1 remains immutable and selectable; each approved V2 is an immutable added library version.",
     }
     (PACK / "batch-register.json").write_text(json.dumps(register, indent=2) + "\n")
     write_hashes(PACK)
     verify()
-    print(f"Built and verified {len(SPECS)} unregistered farm-animal/meal candidates in {SET}")
+    print(f"Built and verified {len(SPECS)} approved farm-animal/meal V2s in {SET}")
 
 
 def verify() -> None:
     register = json.loads((PACK / "batch-register.json").read_text())
-    if register["set"] != SET or register["status"] != "review-gate-awaiting-approval":
+    if register["set"] != SET or register["status"] != "approved-and-registered":
         raise RuntimeError("register identity/status mismatch")
-    if register["approval"] is not None or not register["checks"]["animalSourcesExcludeLegacyCartoonArt"]:
+    if register["approval"]["words"] != "approved" or not register["checks"]["animalSourcesExcludeLegacyCartoonArt"]:
         raise RuntimeError("register approval/redraft mismatch")
     expected_ids = [spec["id"] for spec in SPECS]
     if list(register["components"]) != expected_ids:
@@ -274,10 +279,12 @@ def verify() -> None:
         if sha256(current_path) != entry["currentReferenceSha256"]:
             raise RuntimeError(f"prior-current hash mismatch: {picture_id}")
         picture = library[picture_id]
-        if picture["current"] != 1 or len(picture["versions"]) != 1:
-            raise RuntimeError(f"candidate was registered before approval: {picture_id}")
+        if picture["current"] != 2 or len(picture["versions"]) != 2:
+            raise RuntimeError(f"approved V2 is not current: {picture_id}")
         if picture["versions"][0]["sha256"] != entry["currentReferenceSha256"]:
             raise RuntimeError(f"library V1 hash drift: {picture_id}")
+        if picture["versions"][1]["sha256"] != entry["sha256"]:
+            raise RuntimeError(f"library V2 hash mismatch: {picture_id}")
         source = Image.open(source_path)
         output = Image.open(output_path)
         if source.mode != "RGBA" or output.mode != "RGBA" or output.size != (CELL, CELL):
@@ -315,7 +322,9 @@ def verify() -> None:
     ]
     if (PACK / "HASHES.sha256").read_text().splitlines() != expected_hashes:
         raise RuntimeError("HASHES.sha256 is stale or incomplete")
-    print(f"Verified {SET}: seven candidates remain unregistered; all V1 priors retained")
+    if not register["checks"]["libraryVersionsAdded"]:
+        raise RuntimeError("approved pack does not record registered versions")
+    print(f"Verified {SET}: seven approved V2s current; all V1 priors retained")
 
 
 def main() -> None:

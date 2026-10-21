@@ -11,7 +11,7 @@ versions remain selectable and byte-identical for undo.
 **Complete-catalogue update (21 October 2026):** the library now exposes all
 298 review-ready isolated source components from Activity Cloud Composer
 V1–V7, Prime rear-work activity-callout V2/V3 and every component-bearing
-Claude or Codex picture pack. The Studio therefore has 305 pictures and 374
+Claude or Codex picture pack. The Studio therefore has 305 pictures and 381
 immutable versions, including
 every V5 album homage, the complete aquarium and bedroom sets, and 54 new
 fishing, gardening, pet-play, fixing, pub, art and inventing pictures. Run
@@ -136,7 +136,7 @@ candidate remains rejected and unregistered. Frank approved the exact revised
 hen with “approved, move on”; it is current V2 while V1 remains byte-identical
 and selectable. No story or `src/activityStories/` file changed.
 
-**Farm animals and meals review gate (21 October 2026):** the immutable pack
+**Farm animals and meals approval (21 October 2026):** the immutable pack
 at `art/drafts/activity-story-ligne-claire-farm-animals-meals-2026-10-21-v1/`
 covers `cooking-cow`, `cooking-pig`, `cooking-sheep`, `meal-breakfast`,
 `meal-dinner`, `meal-lunch` and `meal-steak-fries`. Frank said the legacy
@@ -145,8 +145,9 @@ style rerenders, then supplied a ligne-claire horse reference. The animal V1s
 therefore constrain only species, count, orientation and indispensable story
 meaning; anatomy, stance, proportions, face, contour and internal construction
 are redrawn from observation. The meals remain exact composition-preserving
-translations. All seven candidates remain unregistered; the catalogue stays
-at 305 pictures / 374 versions and every V1 remains selectable.
+translations. Frank approved the exact sheet with “approved”; all seven are
+current immutable V2s, taking the catalogue to 305 pictures / 381 versions.
+Every V1 remains selectable and Claude's story/runtime is unchanged.
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A

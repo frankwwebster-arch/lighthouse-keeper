@@ -1,12 +1,12 @@
 # Bubble stories ligne-claire farm animals and meals V1
 
-**Status:** review gate awaiting approval
+**Status:** approved and registered as seven current V2s
 
 This immutable seven-picture **Food and meals** pack covers `cooking-cow`,
 `cooking-pig`, `cooking-sheep`, `meal-breakfast`, `meal-dinner`, `meal-lunch`
-and `meal-steak-fries`. Nothing in this pack is registered. Every current V1
-remains the sole current library version and Claude's stories/runtime are
-unchanged.
+and `meal-steak-fries`. Frank approved the exact seven-row sheet with
+“approved” on 2026-10-21. Those seven components are current immutable V2s;
+every V1 remains immutable and selectable. Claude's stories/runtime are unchanged.
 
 The three animals are full redraws, not style transfers. Frank said the legacy
 animals looked “VERY cartoon like” and supplied a ligne-claire horse reference.
@@ -34,5 +34,5 @@ under `rejected/`; they are not candidates.
 /Users/frank/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_activity_story_ligne_claire_farm_animals_meals_2026_10_21_v1.py --verify
 ```
 
-Stop at this review gate. Register no V2 before Frank explicitly approves the
-exact sheet. Rejection is reversible by discarding this pack alone.
+The exact sheet is approved and registered. Future work continues in a fresh
+immutable family pack; never overwrite these V1 or V2 bytes.
