@@ -94,6 +94,17 @@ remains unregistered history. The library now has 305 pictures / 356 versions.
 Do not change Claude's story or `src/activityStories/` implementation for this
 gate.
 
+The next **Food and meals** gate is the nine-picture cooking-core pack at
+`art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/`. It
+covers bacon, cheese slicing, gravy, knife, pan, seasoning, spoon, steam and
+vegetables. All candidates are unregistered pending review, so the library
+remains at 305 pictures / 356 versions. The pack adds two recipe refinements:
+reject correct-looking output when prompt provenance misstates counts, and do
+not confuse speckling, patina or decorative distress with the plate's useful
+hand-drawn irregularity. Its four retained rejections document the two count
+corrections and the surface-only knife/pan corrections. Claude's story/runtime
+is unchanged.
+
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 
 Frank has authorised an exhaustive, reversible audit and redraft programme for

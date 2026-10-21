@@ -1,0 +1,619 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
+  "set": "activity-story-ligne-claire-cooking-core-2026-10-21-v1",
+  "status": "review-gate-awaiting-approval",
+  "created": "2026-10-21",
+  "tool": "built-in image generation plus deterministic fixed-palette normalisation",
+  "family": "cooking",
+  "semanticSet": "nine core cooking food, utensil and action pictures from the Food and meals menu group",
+  "styleChampions": {
+    "washing-plate": "living hand-drawn shape and controlled minor imperfection",
+    "sandwich-tomato": "flat colour economy and selective readable detail",
+    "repair-toolbox": "construction, detail hierarchy and confident object presence",
+    "repair-spirit-level": "restrained adult technical-object proportions"
+  },
+  "evolvingRecipe": "Observational ligne claire, not cartoon: preserve literal counts, construction, overlap and state; use lively mostly-even near-black contour, flat opaque spot colour, minimal decisive interior lines and controlled human irregularity.",
+  "preservationRule": "Translate each current asset's drawing language while preserving subject identity, viewpoint, object count, construction, state, recognisable contents, relative arrangement and broad silhouette. Audit ambiguous counts enlarged before prompting and reject even visually plausible outputs when prompt provenance is wrong.",
+  "visibleAlphaThreshold": 8,
+  "components": {
+    "cooking-bacon": {
+      "family": "cooking",
+      "label": "Cooking bacon",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one shallow cream oval plate with blue rim and exactly three overlapping wavy cooked bacon rashers with red meat and cream fat bands",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/cooking-bacon.png",
+      "currentReferenceSha256": "2bc0d1bcb08b12985fc82841d3e02cabceceb13ecdb633d8bd28319527f1c323",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/source/cooking-bacon-source.png",
+      "sourceSha256": "f47a12e5ad74ab7db97ba08c54612ec7f8012850a263e52746430fa65d2d68ca",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-adeb2ce4-dc75-4cdd-b36c-6a4a2f922819.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#e84833",
+        "#c32b37",
+        "#e88b2d",
+        "#0d4e75",
+        "#1870a6"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-bacon.png",
+      "sha256": "4d5e50a30c4fa24de19477f3749be54effea1b8c861e1fb5322d3f561410af56",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        96,
+        366,
+        1175,
+        899
+      ],
+      "normalisedVisibleSize": [
+        216,
+        107
+      ],
+      "normalisedOffset": [
+        20,
+        74
+      ],
+      "bounds": [
+        20,
+        74,
+        236,
+        181
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cooking-cheese-slicing": {
+      "family": "cooking",
+      "label": "Cheese being sliced",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one large golden cheese block, one separated rectangular slice and one diagonal adult knife with blue three-pin handle in the current overlap",
+      "currentReferenceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/cooking-cheese-slicing.png",
+      "currentReferenceSha256": "ca7d2733d7f22b350602566aef641065c5321acd298b9e6611bf8c1e8fd5cb35",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/source/cooking-cheese-slicing-source.png",
+      "sourceSha256": "ae05f1013411218742d75e02af55374c906d1d4c453290f65044a7a13fbf5d29",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-8a192b89-78ea-4d32-95a5-111614e1e93d.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#f6cd87",
+        "#e7a638",
+        "#0d4e75",
+        "#1870a6",
+        "#aba69c",
+        "#494c52"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-cheese-slicing.png",
+      "sha256": "e0c0c37b3cc6da1546f381fd4f1833cffb6ca540f3fdf07c6a46468549b55f8b",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        106,
+        293,
+        1187,
+        992
+      ],
+      "normalisedVisibleSize": [
+        216,
+        140
+      ],
+      "normalisedOffset": [
+        20,
+        58
+      ],
+      "bounds": [
+        20,
+        58,
+        236,
+        198
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cooking-gravy": {
+      "family": "cooking",
+      "label": "Cooking gravy",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one filled cream gravy boat with left spout, right loop handle, blue band, pedestal foot and dark brown gravy",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/cooking-gravy.png",
+      "currentReferenceSha256": "e31e4153eab4a977e62d0b3b7bcd0d03f779da5e80d0ad3d94a26dfd09de9b0f",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/source/cooking-gravy-source.png",
+      "sourceSha256": "b32a0c634ed916ede96dafefbea77c87311dcf43699ec06e750e0f4869ff63f3",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-17e0b3b3-e278-4558-af25-dc324ef11c62.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#f6cd87",
+        "#0d4e75",
+        "#1870a6",
+        "#e88b2d",
+        "#a65f2a",
+        "#744128"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-gravy.png",
+      "sha256": "405b07bc013675938772151cba2f60e1a185461934270b76f3c3f6f42840eae6",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        69,
+        304,
+        1199,
+        979
+      ],
+      "normalisedVisibleSize": [
+        216,
+        129
+      ],
+      "normalisedOffset": [
+        20,
+        63
+      ],
+      "bounds": [
+        20,
+        63,
+        236,
+        192
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cooking-knife": {
+      "family": "cooking",
+      "label": "Cooking knife",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one diagonal adult chef's knife with broad pointed steel blade, brass bolster and brown wooden handle with exactly three rivets",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/cooking-knife.png",
+      "currentReferenceSha256": "8c1e77edeeb466f7b445a3f916738525ed4ddaae6606ca1590889a6d5f416d1a",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/source/cooking-knife-source.png",
+      "sourceSha256": "264861e46d50b53270b1c6184858a4f61d099b0c21af4cf2a06513f47dbdd540",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-d28a72f2-9ac6-4aac-88c6-13ddd1c41e49.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#aba69c",
+        "#494c52",
+        "#a65f2a",
+        "#cf5c18",
+        "#e7a638"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-knife.png",
+      "sha256": "ae1004dfc7b623cd3d3a21c9dcf3431a5750efae6b8ca18b24af577e3cf971e1",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        78,
+        341,
+        1198,
+        926
+      ],
+      "normalisedVisibleSize": [
+        216,
+        113
+      ],
+      "normalisedOffset": [
+        20,
+        71
+      ],
+      "bounds": [
+        20,
+        71,
+        236,
+        184
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cooking-pan": {
+      "family": "cooking",
+      "label": "Cooking pan",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one low copper frying pan with dark inner surface and brown handle, one pancake in mid-flip and the current separate droplets and action ticks",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-pan.png",
+      "currentReferenceSha256": "0ec54ca7575b962e5fae9f321cf4883208c6da9a4f7da6c33a84289c49254642",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/source/cooking-pan-source.png",
+      "sourceSha256": "85b265b277ca6a7c337a99dc758e49129b947dfe3f47944486f9a42e3ff89579",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-a0037f98-0b55-4d24-ac2a-1b4731e78437.png",
+      "flatPalette": [
+        "#051824",
+        "#494c52",
+        "#e84833",
+        "#cf5c18",
+        "#e88b2d",
+        "#a65f2a",
+        "#e7a638",
+        "#f6cd87"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-pan.png",
+      "sha256": "46764c17beba04d866a430e9d3620570eb9e8ed1528d92fa812da07a5ed3ef7e",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        118,
+        277,
+        1195,
+        980
+      ],
+      "normalisedVisibleSize": [
+        216,
+        141
+      ],
+      "normalisedOffset": [
+        20,
+        57
+      ],
+      "bounds": [
+        20,
+        57,
+        236,
+        198
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cooking-seasoning": {
+      "family": "cooking",
+      "label": "Cooking seasoning",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "the current open burst of separate red-brown flakes, golden pieces and small grains with three dark directional emphasis strokes",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-seasoning.png",
+      "currentReferenceSha256": "208e02a5b2e7ae1508327c8ad2dcdc7ed2b78947d0a40de37b62e9e365092438",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/source/cooking-seasoning-source.png",
+      "sourceSha256": "6f8eb815ce3a6859cc407638f1ae0f6470ad3cde934783870d526e006c1692b0",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-7e63b8e0-9bd4-48e0-a4b3-a86981a0d22d.png",
+      "flatPalette": [
+        "#051824",
+        "#e84833",
+        "#cf5c18",
+        "#e88b2d",
+        "#e7a638",
+        "#f6cd87"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-seasoning.png",
+      "sha256": "0602edd94811fa29d2de2710817999f0e627ed094de2d48c8cc274596fc25e17",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        110,
+        301,
+        1183,
+        962
+      ],
+      "normalisedVisibleSize": [
+        216,
+        133
+      ],
+      "normalisedOffset": [
+        20,
+        61
+      ],
+      "bounds": [
+        20,
+        61,
+        236,
+        194
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cooking-spoon": {
+      "family": "cooking",
+      "label": "Cooking spoon",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one diagonal adult wooden spoon with deep oval bowl, long tapered handle, one hanging hole and exactly four dark emphasis ticks",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-spoon.png",
+      "currentReferenceSha256": "0793c1ea85d3a38d024de9c788ac3368dafc7c7270a65f65feb03beb10c005f8",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/source/cooking-spoon-source.png",
+      "sourceSha256": "155ab2f1dfaa2a33301f615fbf3ee5628170aa4187e425cab94e4423829caa34",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-a97dad0e-5cff-4972-ae29-0de8fc3ec227.png",
+      "flatPalette": [
+        "#051824",
+        "#744128",
+        "#a65f2a",
+        "#cf5c18",
+        "#e88b2d",
+        "#f6cd87"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-spoon.png",
+      "sha256": "e04c1e992787ef98d43da945f71c8e4572059131ba769e505bd41b4c33b80fe3",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        132,
+        106,
+        1170,
+        1176
+      ],
+      "normalisedVisibleSize": [
+        210,
+        216
+      ],
+      "normalisedOffset": [
+        23,
+        20
+      ],
+      "bounds": [
+        23,
+        20,
+        233,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cooking-steam": {
+      "family": "cooking",
+      "label": "Cooking steam",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "exactly three separate rising cream steam curls in the left-small, centre-tall, right-small arrangement plus exactly two detached wisps",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v2/drafts/callouts/cooking-steam.png",
+      "currentReferenceSha256": "440c359bcda03d83e026705cbb727c6e79b3d0e9bdf8812488ed0a72aac1b395",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/source/cooking-steam-source.png",
+      "sourceSha256": "8b24b4be51f54a39a47ef6669d4388cb63e7aabb1a1a814a4393aa675b722ee3",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-0df8b9a4-9671-4039-885f-3f9cd3071a2d.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#f6cd87",
+        "#e7a638"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-steam.png",
+      "sha256": "c95d4c0a0c18dcde9e5711d0115522a69a9bd244012b5f1123d60df578712ad3",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        111,
+        248,
+        1163,
+        1050
+      ],
+      "normalisedVisibleSize": [
+        216,
+        165
+      ],
+      "normalisedOffset": [
+        20,
+        45
+      ],
+      "bounds": [
+        20,
+        45,
+        236,
+        210
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "cooking-vegetables": {
+      "family": "cooking",
+      "label": "Cooking vegetables",
+      "intent": "candidate-new-version-v2",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one carrot with greens, leafy vegetables, green peas, orange rounds and cubes, exactly one whole red tomato and one tomato wedge in the current compact mound",
+      "currentReferenceFile": "art/drafts/keeper-prime-back-work-activity-callout-2026-10-19-v3/drafts/callouts/cooking-vegetables.png",
+      "currentReferenceSha256": "92f3c0c1e740bd4e3602d9c1def9a4d558fd8840f31bceea2ca62846145a4384",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/source/cooking-vegetables-source.png",
+      "sourceSha256": "721cca8021259fa1216ea7422b412a9183558db37e5ea4a287473e9b59ac97ac",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-a449b9a6-424e-43ea-9d8a-1237a5420e8b.png",
+      "flatPalette": [
+        "#051824",
+        "#e84833",
+        "#c32b37",
+        "#cf5c18",
+        "#e88b2d",
+        "#e7a638",
+        "#399437",
+        "#57ae3a",
+        "#f6cd87"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/drafts/components/cooking-vegetables.png",
+      "sha256": "980a164d082f60ce21ac0e2d76f5ff2e7d9ad943691350d7073b5d3d455b33c5",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        85,
+        225,
+        1190,
+        1013
+      ],
+      "normalisedVisibleSize": [
+        216,
+        154
+      ],
+      "normalisedOffset": [
+        20,
+        51
+      ],
+      "bounds": [
+        20,
+        51,
+        236,
+        205
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "rejected": [
+    {
+      "file": "rejected/cooking-cheese-slicing-two-rivet-prompt-v1.png",
+      "cache": "exec-d3194a45-8e84-4af3-85e2-dd8a94e5bb9b.png",
+      "reason": "The output showed three rivets, but its prompt incorrectly called the current knife handle a two-rivet construction; rerendered after enlarged inspection confirmed three rivets.",
+      "sha256": "40d75bbad33ec329199f16b95037f49e3bf6df03f4f52a9d84235d9ab0e20d1e"
+    },
+    {
+      "file": "rejected/cooking-vegetables-two-tomato-prompt-v1.png",
+      "cache": "exec-db4ce6eb-097d-42f1-876e-7a1022c4a3c5.png",
+      "reason": "The candidate remained visually close, but its prompt incorrectly asserted two whole tomatoes; rerendered after enlarged inspection confirmed one whole tomato and one wedge.",
+      "sha256": "29a53f2d64ca90b422a87aeed101cb35ca4c08ca955e7bea8ebad80fd96727c7"
+    },
+    {
+      "file": "rejected/cooking-knife-speckled-v1.png",
+      "cache": "exec-023c2493-e3f9-4014-821f-ddb5b1a239a0.png",
+      "reason": "The construction was sound, but pale blade speckling and surface noise violated the approved flat-colour economy.",
+      "sha256": "e33fb5e95f604e874183fbb70af2970d88e1850ea8c6f6fd27ee49658a7afcb4"
+    },
+    {
+      "file": "rejected/cooking-pan-distressed-v1.png",
+      "cache": "exec-9ce4622b-1ca2-4220-8911-2c2dca665909.png",
+      "reason": "The action and construction were sound, but decorative copper distress and mottling violated the approved flat-colour economy.",
+      "sha256": "a8aed0227416a949ce179f216ed8ccb3ea70d64c4aa1d5be5c9d0566bd763e09"
+    }
+  ],
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/evidence/current-vs-ligne-claire-contact-sheet.png",
+    "sha256": "bdb9242f69a12a1062eeb18622078b19ce93de3639b07dcd3032f7e0b39ec2a1",
+    "columns": 5,
+    "rows": 9,
+    "coveredIds": [
+      "cooking-bacon",
+      "cooking-cheese-slicing",
+      "cooking-gravy",
+      "cooking-knife",
+      "cooking-pan",
+      "cooking-seasoning",
+      "cooking-spoon",
+      "cooking-steam",
+      "cooking-vegetables"
+    ]
+  },
+  "checks": {
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "currentReferenceHashesPinned": true,
+    "exactPalettesRecorded": true,
+    "contactSheetCoversEveryCandidate": true,
+    "libraryVersionsAdded": false,
+    "storyChanged": false,
+    "activityStoriesRuntimeChanged": false,
+    "approvedAuthorityChanged": false,
+    "deployed": false
+  },
+  "approval": null,
+  "nextStep": "Frank reviews this exact nine-picture contact sheet. Register no candidate before explicit approval.",
+  "rollback": "Before approval, discard this pack alone. After approval, each V1 remains immutable and can be reselected independently."
+}

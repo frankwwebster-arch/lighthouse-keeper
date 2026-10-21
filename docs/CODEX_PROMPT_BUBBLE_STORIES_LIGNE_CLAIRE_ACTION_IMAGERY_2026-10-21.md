@@ -3,7 +3,8 @@
 **Decision date:** 21 October 2026
 
 **Status:** active; BBQ, sandwich, washing, General repair and repair hand-tool
-packs approved; action-imagery programme only
+packs approved; cooking-core review gate awaiting approval; action-imagery
+programme only
 
 Frank approved the six-picture BBQ pilot with “agreed, these are superb”. This
 prompt turns that approval into a controlled conversion programme for Bubble
@@ -70,6 +71,21 @@ not cartoon” an explicit acceptance boundary: credible adult-tool proportions
 and working construction without cute, toy-like, inflated, caricature, mascot,
 sticker or glossy game-icon treatment.
 
+**Sixth family review gate (21 October 2026):** the next unconverted
+**Food and meals** semantic set is isolated at
+`art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/`. It
+covers `cooking-bacon`, `cooking-cheese-slicing`, `cooking-gravy`,
+`cooking-knife`, `cooking-pan`, `cooking-seasoning`, `cooking-spoon`,
+`cooking-steam` and `cooking-vegetables`. All nine deterministic candidates
+are unregistered pending Frank's review, so their current V1s and the library's
+305 pictures / 356 versions remain unchanged. Count audits rejected two
+plausible outputs whose prompts misstated the cheese knife's three rivets and
+the vegetables' one whole tomato plus one wedge. Surface audits rejected a
+speckled knife blade and distressed copper pan. The evolved recipe therefore
+forbids accepting correct-looking pixels when provenance is wrong and treats
+speckling, patina and decorative distress as modelling rather than useful
+hand-drawn imperfection.
+
 ## Ready-to-paste prompt
 
 ```text
@@ -95,8 +111,9 @@ Objective
   sandwich, washing, General repair and eight-piece repair hand-tools families
   are complete. All eight hand tools have approved current V2s, including
   Frank's explicitly selected fuller spirit level; every V1 remains selectable.
-  Continue with a fresh immutable family pack and do not register candidates
-  before Frank's verdict.
+  The nine-picture cooking-core pack is the current unregistered review gate;
+  do not register it before Frank's verdict. Continue later work in fresh
+  immutable family packs.
 - The programme covers action objects, ingredients, tools, pictorial states,
   activity marks, emotions and independent comic reaction punctuation used by
   Bubble stories.

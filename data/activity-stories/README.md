@@ -98,6 +98,20 @@ the component is current V2 while V1 remains selectable. The catalogue now has
 remains unregistered historical exploration. No story definition or
 `src/activityStories/` file changed.
 
+**Cooking-core review gate (21 October 2026):** the immutable pack at
+`art/drafts/activity-story-ligne-claire-cooking-core-2026-10-21-v1/` begins
+the remaining **Food and meals** group with nine related `cooking` pictures:
+bacon, cheese slicing, gravy, knife, pan, seasoning, spoon, steam and
+vegetables. Each candidate preserves its exact current V1 semantics,
+construction, count, viewpoint, overlap and broad silhouette while applying
+the plate, tomato and tool-chest champion roles; the selected spirit level is
+supporting calibration for adult tool construction. Count/provenance audits
+rejected a two-rivet cheese prompt and a two-whole-tomato vegetable prompt;
+surface audits rejected a speckled knife and distressed copper pan. The nine
+candidates remain unregistered pending Frank's review, so the catalogue stays
+at 305 pictures / 356 immutable versions. No story definition or
+`src/activityStories/` file changed.
+
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A
 story has no upper length, only a five-second floor. Frank sets each
