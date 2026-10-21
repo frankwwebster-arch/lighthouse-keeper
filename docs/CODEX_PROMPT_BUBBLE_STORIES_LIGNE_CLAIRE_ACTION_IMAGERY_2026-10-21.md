@@ -127,15 +127,26 @@ candidates were approved by Frank with “approved” and are current immutable
 V2s, so the library contains 305 pictures / 381 versions. Every V1 remains
 selectable.
 
-**Ninth family review gate (21 October 2026):** all nine remaining `condiment`
+**Ninth family approval (21 October 2026):** all nine remaining `condiment`
 pictures are isolated at
 `art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/`. The first
 honey-pot pass was rejected before the gate because clean outlines alone did
 not prevent glossy cartoon clip-art. The evolved recipe requires a thinner
 living contour, controlled hand-drawn asymmetry, fewer flat colour steps,
-sparse glass/material cues and no specular highlight bands. The nine candidates
-remain unregistered. The library still contains 305 pictures / 381 versions;
-68 pictures have approved current ligne-claire versions and 237 remain.
+sparse glass/material cues and no specular highlight bands. That first gate is
+preserved as unregistered history.
+
+Frank then judged the glass containers “too shiny, not flat enough”. Preserve
+that entire first gate and use the separate correction pack at
+`art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/`
+as the approved authority. Its seven glass-container corrections use quiet
+outer contour, at most two or three short pale-blue construction ticks and no
+reflection bands, shine stripes, reflected colour wedges, gradients, bevels or
+luminous rims. Ketchup and mustard are byte-identical carry-forwards. Frank
+approved the exact correction sheet with “yes much better” and set the binding
+taxonomy: **one even black outline, flat colour, no shine**. All nine are current
+immutable V2s. The library contains 305 pictures / 390 versions; 77 current
+pictures are approved ligne-claire conversions and 228 remain.
 
 ## Ready-to-paste prompt
 
@@ -167,7 +178,8 @@ Objective
   using the separate observational hen correction rather than the rejected
   family-pack hen. The seven-picture farm-animals-and-meals pack is also
   approved and registered. The current gate is the fresh nine-picture
-  condiments pack; register nothing before Frank's verdict. Continue later work
+  flat-glass condiment correction pack is approved and registered; the first
+  condiment gate remains immutable unregistered history. Continue later work
   in fresh immutable family packs.
 - The programme covers action objects, ingredients, tools, pictorial states,
   activity marks, emotions and independent comic reaction punctuation used by
@@ -208,6 +220,9 @@ Visual authority
   interior lines. Use no gradients, glossy highlights, painterly modelling,
   airbrush, haze, bloom, cast shadow, thick sticker rim, emoji treatment or
   miniature scenic background.
+- Binding taxonomy from Frank: one even black outline, flat colour, no shine.
+  Treat any highlight band, specular stripe, gradient, bevel or glossy material
+  modelling as a failed candidate, not a harmless flourish.
 - Ligne claire is observational simplification, not cartoon styling. Keep
   credible adult proportions, mechanisms, material transitions and practical
   construction. Reject cute, toy-like, inflated, caricature, mascot and

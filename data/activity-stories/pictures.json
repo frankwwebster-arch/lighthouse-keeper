@@ -1967,7 +1967,7 @@
       "kind": "object",
       "family": "condiment",
       "label": "Honey pot",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -1987,6 +1987,25 @@
           "source": "condiment-honey-pot.png",
           "by": "codex",
           "note": "Codex kitchen condiments and prep pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-honey-pot.png",
+          "sha256": "688209d61cefee04fb9f9cc9331cf75898502563c39cb59536afcd638b86f502",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            21,
+            236,
+            234
+          ],
+          "added": "2026-10-21",
+          "source": "condiment-honey-pot.png",
+          "by": "codex",
+          "note": "Approved flat-glass ligne-claire condiments V2"
         }
       ]
     },
@@ -1994,7 +2013,7 @@
       "kind": "object",
       "family": "condiment",
       "label": "Ketchup",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2014,6 +2033,25 @@
           "source": "condiment-ketchup-bottle.png",
           "by": "codex",
           "note": "Codex BBQ food pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-ketchup-bottle.png",
+          "sha256": "35f2c560471c7a18a3c197c772260b9529e6e910145f652eac5a1c75c2fa3ff5",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            84,
+            20,
+            171,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "condiment-ketchup-bottle.png",
+          "by": "codex",
+          "note": "Approved flat-glass ligne-claire condiments V2"
         }
       ]
     },
@@ -2021,7 +2059,7 @@
       "kind": "object",
       "family": "condiment",
       "label": "Malt vinegar",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2041,6 +2079,25 @@
           "source": "condiment-malt-vinegar.png",
           "by": "codex",
           "note": "Codex kitchen condiments and prep pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-malt-vinegar.png",
+          "sha256": "c74baa1ec20673556ce9512772ecef0b293a7ca4b5c93e817f37c88f5aa5edc9",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            56,
+            20,
+            199,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "condiment-malt-vinegar.png",
+          "by": "codex",
+          "note": "Approved flat-glass ligne-claire condiments V2"
         }
       ]
     },
@@ -2048,7 +2105,7 @@
       "kind": "object",
       "family": "condiment",
       "label": "Mayonnaise",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2068,6 +2125,25 @@
           "source": "condiment-mayonnaise-jar.png",
           "by": "codex",
           "note": "Codex kitchen condiments and prep pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-mayonnaise-jar.png",
+          "sha256": "7eaebf0d210c36b315c61a580658783a1b0bb1fed911951c4d806fa1fd2870bf",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            46,
+            20,
+            209,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "condiment-mayonnaise-jar.png",
+          "by": "codex",
+          "note": "Approved flat-glass ligne-claire condiments V2"
         }
       ]
     },
@@ -2075,7 +2151,7 @@
       "kind": "object",
       "family": "condiment",
       "label": "Mustard",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2095,6 +2171,25 @@
           "source": "condiment-mustard-bottle.png",
           "by": "codex",
           "note": "Codex BBQ food pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-mustard-bottle.png",
+          "sha256": "fa51d479faed9086a97396354b06376dfc0ab8cbd3acd359617ef12bf3bb1d45",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            83,
+            20,
+            172,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "condiment-mustard-bottle.png",
+          "by": "codex",
+          "note": "Approved flat-glass ligne-claire condiments V2"
         }
       ]
     },
@@ -2102,7 +2197,7 @@
       "kind": "object",
       "family": "condiment",
       "label": "Olive oil",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2122,6 +2217,25 @@
           "source": "condiment-olive-oil.png",
           "by": "codex",
           "note": "Codex kitchen condiments and prep pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-olive-oil.png",
+          "sha256": "51e7f70ec85185a769fc9437aca826e29e4d8823262c3666545d7189fa55ee81",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            69,
+            20,
+            186,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "condiment-olive-oil.png",
+          "by": "codex",
+          "note": "Approved flat-glass ligne-claire condiments V2"
         }
       ]
     },
@@ -2156,7 +2270,7 @@
       "kind": "object",
       "family": "condiment",
       "label": "Pickle jar",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2176,6 +2290,25 @@
           "source": "condiment-pickle-jar.png",
           "by": "codex",
           "note": "Codex kitchen condiments and prep pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-pickle-jar.png",
+          "sha256": "cf52420fc52be5ced58f7243b99550e88c38081a9d2c11ace006161e2d3a51bf",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            51,
+            20,
+            205,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "condiment-pickle-jar.png",
+          "by": "codex",
+          "note": "Approved flat-glass ligne-claire condiments V2"
         }
       ]
     },
@@ -2183,7 +2316,7 @@
       "kind": "object",
       "family": "condiment",
       "label": "Raspberry jam",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2203,6 +2336,25 @@
           "source": "condiment-raspberry-jam.png",
           "by": "codex",
           "note": "Codex kitchen condiments and prep pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-raspberry-jam.png",
+          "sha256": "f4fda18ca569d9505494a0eacb86987919b0d14306d6da0e788d556ff8fc8323",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            28,
+            236,
+            228
+          ],
+          "added": "2026-10-21",
+          "source": "condiment-raspberry-jam.png",
+          "by": "codex",
+          "note": "Approved flat-glass ligne-claire condiments V2"
         }
       ]
     },
@@ -2237,7 +2389,7 @@
       "kind": "object",
       "family": "condiment",
       "label": "Wholegrain mustard",
-      "current": 1,
+      "current": 2,
       "versions": [
         {
           "v": 1,
@@ -2257,6 +2409,25 @@
           "source": "condiment-wholegrain-mustard-jar.png",
           "by": "codex",
           "note": "Codex kitchen condiments and prep pack V1"
+        },
+        {
+          "v": 2,
+          "url": "/activity-stories/repo/art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-wholegrain-mustard-jar.png",
+          "sha256": "34e241d5b9557eaaaa775d6d59f425011cd96640bce48efffb0ecaed5551dc51",
+          "cell": [
+            256,
+            256
+          ],
+          "bounds": [
+            20,
+            20,
+            236,
+            236
+          ],
+          "added": "2026-10-21",
+          "source": "condiment-wholegrain-mustard-jar.png",
+          "by": "codex",
+          "note": "Approved flat-glass ligne-claire condiments V2"
         }
       ]
     },

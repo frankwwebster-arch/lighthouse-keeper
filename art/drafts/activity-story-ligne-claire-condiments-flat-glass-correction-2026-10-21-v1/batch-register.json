@@ -1,0 +1,618 @@
+{
+  "schema": "lighthouse-keeper/activity-story-ligne-claire-family-pack@1",
+  "set": "activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1",
+  "status": "approved-and-registered",
+  "created": "2026-10-21",
+  "tool": "built-in image editing plus deterministic reduced-palette normalisation",
+  "family": "condiment",
+  "semanticSet": "seven flatter glass-container corrections plus two exact squeeze-bottle carry-forwards",
+  "supersedesReviewPack": "art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1",
+  "userCorrection": "The glass jars are too shiny, not flat enough.",
+  "flatGlassRule": "Glass is visually quiet: outer contour plus at most two or three short pale-blue construction ticks. Contents carry the flat colour. No white reflection bands, vertical shine stripes, reflected colour wedges, bevels, gradients or luminous rims.",
+  "components": {
+    "condiment-honey-pot": {
+      "family": "condiment",
+      "label": "Honey pot",
+      "intent": "approved-current-version-v2",
+      "method": "user-directed-flat-glass-correction",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one squat round clear-glass honey pot with honey, blank cream front label, wooden lid and one grooved wooden dipper resting left-to-right across the top",
+      "currentReferenceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-honey-pot.png",
+      "currentReferenceSha256": "e8a1d55341f198f0eb7e2018ea4ca8e37d7f9452cc81e6e601c9be3418c4b5b4",
+      "supersededCandidateFile": "art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/drafts/components/condiment-honey-pot.png",
+      "supersededCandidateSha256": "105361fd7c77e393328dd175aae459e353b95919ab600471e1f469968fd2e940",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/source/condiment-honey-pot-source.png",
+      "sourceSha256": "5a24af5bd71b8b3dd82cbbd022bd1d2ebc4dc478604ad3dccea1e975a7f33ee5",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-92265b00-2e3f-4103-b804-12aafed88873.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#97cada",
+        "#e7a638",
+        "#e88b2d",
+        "#a65f2a"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest reduced fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-honey-pot.png",
+      "sha256": "688209d61cefee04fb9f9cc9331cf75898502563c39cb59536afcd638b86f502",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        104,
+        99,
+        1180,
+        1162
+      ],
+      "normalisedVisibleSize": [
+        216,
+        213
+      ],
+      "normalisedOffset": [
+        20,
+        21
+      ],
+      "bounds": [
+        20,
+        21,
+        236,
+        234
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "condiment-ketchup-bottle": {
+      "family": "condiment",
+      "label": "Ketchup",
+      "intent": "approved-current-version-v2",
+      "method": "exact-byte-carry-forward-from-first-condiment-gate",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one plain red plastic squeeze bottle in front view with cylindrical body, rounded shoulders, ribbed screw collar and pointed dispensing nozzle",
+      "currentReferenceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/condiment-ketchup-bottle.png",
+      "currentReferenceSha256": "153cdd6ac24624c2ffad96e7c990ece2c1a53972adb3f4e67b0f51b340ffcb49",
+      "supersededCandidateFile": "art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/drafts/components/condiment-ketchup-bottle.png",
+      "supersededCandidateSha256": "35f2c560471c7a18a3c197c772260b9529e6e910145f652eac5a1c75c2fa3ff5",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/drafts/components/condiment-ketchup-bottle.png",
+      "sourceSha256": "35f2c560471c7a18a3c197c772260b9529e6e910145f652eac5a1c75c2fa3ff5",
+      "sourcePixels": [
+        256,
+        256
+      ],
+      "originalCacheFile": "exec-63ae6da2-d839-43f1-8397-a42f90caa235.png",
+      "flatPalette": [
+        "#051824",
+        "#e84833",
+        "#c32b37",
+        "#f57e6a"
+      ],
+      "derivation": "byte-identical carry-forward; squeeze bottle was not part of Frank's glass-flatness correction",
+      "file": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-ketchup-bottle.png",
+      "sha256": "35f2c560471c7a18a3c197c772260b9529e6e910145f652eac5a1c75c2fa3ff5",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        84,
+        20,
+        171,
+        236
+      ],
+      "normalisedVisibleSize": [
+        87,
+        216
+      ],
+      "normalisedOffset": [
+        84,
+        20
+      ],
+      "bounds": [
+        84,
+        20,
+        171,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "condiment-malt-vinegar": {
+      "family": "condiment",
+      "label": "Malt vinegar",
+      "intent": "approved-current-version-v2",
+      "method": "user-directed-flat-glass-correction",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one clear-glass malt-vinegar cruet with amber vinegar, rounded stopper, narrow neck, left pouring lip, right loop handle and blank cream label",
+      "currentReferenceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-malt-vinegar.png",
+      "currentReferenceSha256": "99e49748fc316803a5b7743a8c4ac063a879498c25258c8a65ca5572397fd672",
+      "supersededCandidateFile": "art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/drafts/components/condiment-malt-vinegar.png",
+      "supersededCandidateSha256": "2496a6a56e199834811d7931b4c720d17966e31198ff42fdbe637c9e6b5d5fbf",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/source/condiment-malt-vinegar-source.png",
+      "sourceSha256": "3d3526f1d3881c0942d81b2d31a25926dd839fdb0e1adc76cd94b021b5fc5657",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-0179633e-f796-4f49-ad38-acb3fca05222.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#97cada",
+        "#e7a638",
+        "#a65f2a"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest reduced fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-malt-vinegar.png",
+      "sha256": "c74baa1ec20673556ce9512772ecef0b293a7ca4b5c93e817f37c88f5aa5edc9",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        291,
+        105,
+        991,
+        1161
+      ],
+      "normalisedVisibleSize": [
+        143,
+        216
+      ],
+      "normalisedOffset": [
+        56,
+        20
+      ],
+      "bounds": [
+        56,
+        20,
+        199,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "condiment-mayonnaise-jar": {
+      "family": "condiment",
+      "label": "Mayonnaise",
+      "intent": "approved-current-version-v2",
+      "method": "user-directed-flat-glass-correction",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one squat clear-glass mayonnaise jar with pale mayonnaise and one surface curl, dark-blue ribbed screw lid and blank cream wrap label",
+      "currentReferenceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-mayonnaise-jar.png",
+      "currentReferenceSha256": "7d503285bc4ccf5cb098741c569b01a4887e4806e3c6147f97b480311be95d25",
+      "supersededCandidateFile": "art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/drafts/components/condiment-mayonnaise-jar.png",
+      "supersededCandidateSha256": "aff54b638a05e2c13ac36dc4670e30d6a2a44af0b981f91a506f975a743bde37",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/source/condiment-mayonnaise-jar-source.png",
+      "sourceSha256": "2f697f1fdfb9f6149288225b73ac2ebf3384e52066003ac96155a6c2daa8454b",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-06ebdda0-e310-4a9a-9cf7-0d2f2a395fd1.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#97cada",
+        "#1870a6",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest reduced fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-mayonnaise-jar.png",
+      "sha256": "7eaebf0d210c36b315c61a580658783a1b0bb1fed911951c4d806fa1fd2870bf",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        242,
+        98,
+        1044,
+        1163
+      ],
+      "normalisedVisibleSize": [
+        163,
+        216
+      ],
+      "normalisedOffset": [
+        46,
+        20
+      ],
+      "bounds": [
+        46,
+        20,
+        209,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "condiment-mustard-bottle": {
+      "family": "condiment",
+      "label": "Mustard",
+      "intent": "approved-current-version-v2",
+      "method": "exact-byte-carry-forward-from-first-condiment-gate",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one plain yellow plastic squeeze bottle in front view with cylindrical body, rounded shoulders, ribbed screw collar and pointed dispensing nozzle",
+      "currentReferenceFile": "art/drafts/claude-bbq-food-asset-pack-2026-10-20-v1/assets/condiment-mustard-bottle.png",
+      "currentReferenceSha256": "65c2f38eec206e0f07160f8d8e1ae6dd4ce2b415154a73ca845508f2fdbd44ee",
+      "supersededCandidateFile": "art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/drafts/components/condiment-mustard-bottle.png",
+      "supersededCandidateSha256": "fa51d479faed9086a97396354b06376dfc0ab8cbd3acd359617ef12bf3bb1d45",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/drafts/components/condiment-mustard-bottle.png",
+      "sourceSha256": "fa51d479faed9086a97396354b06376dfc0ab8cbd3acd359617ef12bf3bb1d45",
+      "sourcePixels": [
+        256,
+        256
+      ],
+      "originalCacheFile": "exec-d2cd2e65-f2bd-462e-a925-bf65c4603d13.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#e7a638",
+        "#e88b2d"
+      ],
+      "derivation": "byte-identical carry-forward; squeeze bottle was not part of Frank's glass-flatness correction",
+      "file": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-mustard-bottle.png",
+      "sha256": "fa51d479faed9086a97396354b06376dfc0ab8cbd3acd359617ef12bf3bb1d45",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        83,
+        20,
+        172,
+        236
+      ],
+      "normalisedVisibleSize": [
+        89,
+        216
+      ],
+      "normalisedOffset": [
+        83,
+        20
+      ],
+      "bounds": [
+        83,
+        20,
+        172,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "condiment-olive-oil": {
+      "family": "condiment",
+      "label": "Olive oil",
+      "intent": "approved-current-version-v2",
+      "method": "user-directed-flat-glass-correction",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one clear-glass olive-oil bottle with rounded low body, narrow neck, flared lip, natural cork, golden-green oil and blank cream front label",
+      "currentReferenceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-olive-oil.png",
+      "currentReferenceSha256": "102d543540a2675c5b82575f5fc332585e6b3749bfdced4c1f162e087c49d124",
+      "supersededCandidateFile": "art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/drafts/components/condiment-olive-oil.png",
+      "supersededCandidateSha256": "390be4644c66ca7ef7e42f0f89c130de47f9416444d9332d71497c8c4dcb52b3",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/source/condiment-olive-oil-source.png",
+      "sourceSha256": "bced64983f38b1d108f0a41815279a2fabb0a0affd0b32a4a1227d35a1ad4206",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-5eafd122-c7e4-44cd-82c2-13a6221f259b.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#97cada",
+        "#e7a638",
+        "#939626",
+        "#a65f2a"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest reduced fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-olive-oil.png",
+      "sha256": "51e7f70ec85185a769fc9437aca826e29e4d8823262c3666545d7189fa55ee81",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        352,
+        99,
+        930,
+        1164
+      ],
+      "normalisedVisibleSize": [
+        117,
+        216
+      ],
+      "normalisedOffset": [
+        69,
+        20
+      ],
+      "bounds": [
+        69,
+        20,
+        186,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "condiment-pickle-jar": {
+      "family": "condiment",
+      "label": "Pickle jar",
+      "intent": "approved-current-version-v2",
+      "method": "user-directed-flat-glass-correction",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one tall clear-glass pickle jar with cream screw lid, blank cream front label, green brine and several overlapping whole gherkins",
+      "currentReferenceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-pickle-jar.png",
+      "currentReferenceSha256": "a48fc115e5ef7cc8a8200f3a26d53667e740e97473ee5c5bb9c8c70e9b81d9e4",
+      "supersededCandidateFile": "art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/drafts/components/condiment-pickle-jar.png",
+      "supersededCandidateSha256": "dd44c40b8e8ab257d45d76889dea97ca03d3e3359350d1b1deb6e9a950ec0ba2",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/source/condiment-pickle-jar-source.png",
+      "sourceSha256": "1822f52e7ceb8482974fb853b6535279d86ffe0f5a08989666a7287779d36325",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-5f5214f5-0398-4efd-81a6-5971a9b57b53.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#97cada",
+        "#e7a638",
+        "#499137",
+        "#256830",
+        "#a65f2a"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest reduced fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-pickle-jar.png",
+      "sha256": "cf52420fc52be5ced58f7243b99550e88c38081a9d2c11ace006161e2d3a51bf",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        259,
+        102,
+        1015,
+        1161
+      ],
+      "normalisedVisibleSize": [
+        154,
+        216
+      ],
+      "normalisedOffset": [
+        51,
+        20
+      ],
+      "bounds": [
+        51,
+        20,
+        205,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "condiment-raspberry-jam": {
+      "family": "condiment",
+      "label": "Raspberry jam",
+      "intent": "approved-current-version-v2",
+      "method": "user-directed-flat-glass-correction",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one squat clear-glass raspberry-jam jar with blank cream front label, red jam and fruit cues, blue-and-cream checked cloth cap and one ochre cord bow tied at right",
+      "currentReferenceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-raspberry-jam.png",
+      "currentReferenceSha256": "dfc5ce3f9d6ccd334bd8e6eed5ba71d203c80b7542b85e64fcf9c6d90ef2b23b",
+      "supersededCandidateFile": "art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/drafts/components/condiment-raspberry-jam.png",
+      "supersededCandidateSha256": "ff8dca7aee0f7ca4728d0eb212eb282f3f71181cf7c00fdc6b3b5f661fb12d9f",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/source/condiment-raspberry-jam-source.png",
+      "sourceSha256": "d29895ba9e43a46d890f4e2cb159fdd097c844d3f3ee7ebc6f53e5ee2c0a6b99",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-674d9031-df27-4254-bd84-5cac09e07a28.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#97cada",
+        "#1870a6",
+        "#0d4e75",
+        "#e84833",
+        "#c32b37",
+        "#e7a638"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest reduced fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-raspberry-jam.png",
+      "sha256": "f4fda18ca569d9505494a0eacb86987919b0d14306d6da0e788d556ff8fc8323",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        95,
+        128,
+        1190,
+        1144
+      ],
+      "normalisedVisibleSize": [
+        216,
+        200
+      ],
+      "normalisedOffset": [
+        20,
+        28
+      ],
+      "bounds": [
+        20,
+        28,
+        236,
+        228
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    },
+    "condiment-wholegrain-mustard-jar": {
+      "family": "condiment",
+      "label": "Wholegrain mustard",
+      "intent": "approved-current-version-v2",
+      "method": "user-directed-flat-glass-correction",
+      "priorCurrentLibraryVersion": 1,
+      "proposedLibraryVersion": 2,
+      "preserves": "one squat clear-glass wholegrain-mustard jar with wide cream ribbed screw lid, blank cream oval label, ochre mustard and irregular dark seeds",
+      "currentReferenceFile": "art/drafts/claude-kitchen-condiments-prep-pack-2026-10-20-v1/assets/condiment-wholegrain-mustard-jar.png",
+      "currentReferenceSha256": "5f0739bd891dd0475e5f3827a3392fbfac6df9c584ca73937591db7c9cf4b74c",
+      "supersededCandidateFile": "art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/drafts/components/condiment-wholegrain-mustard-jar.png",
+      "supersededCandidateSha256": "187ccc6bb72537bca5799f52f1b2218269769778e6190a389adaa90a3c32acc0",
+      "sourceFile": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/source/condiment-wholegrain-mustard-jar-source.png",
+      "sourceSha256": "99345baba9789e0e1d08ed84c966957a83a04b9c86959c938f7f47adc0340dcf",
+      "sourcePixels": [
+        1254,
+        1254
+      ],
+      "originalCacheFile": "exec-9e7edabf-34fc-4885-a094-2abba5bc706b.png",
+      "flatPalette": [
+        "#051824",
+        "#f6e5b7",
+        "#ede9de",
+        "#97cada",
+        "#e7a638",
+        "#e88b2d",
+        "#a65f2a",
+        "#0d4e75"
+      ],
+      "derivation": "alpha>8 crop; Lanczos scale to fit 216px; nearest reduced fixed RGB palette; integer-centred in transparent 256x256 RGBA; lossless PNG",
+      "file": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/drafts/components/condiment-wholegrain-mustard-jar.png",
+      "sha256": "34e241d5b9557eaaaa775d6d59f425011cd96640bce48efffb0ecaed5551dc51",
+      "cellPixels": [
+        256,
+        256
+      ],
+      "sourceVisibleBounds": [
+        110,
+        101,
+        1169,
+        1162
+      ],
+      "normalisedVisibleSize": [
+        216,
+        216
+      ],
+      "normalisedOffset": [
+        20,
+        20
+      ],
+      "bounds": [
+        20,
+        20,
+        236,
+        236
+      ],
+      "transparentGutterPx": 20,
+      "edgeAlphaPixels": 0,
+      "ownership": {
+        "ownerCount": 1,
+        "ambiguousPixels": 0,
+        "unownedVisiblePixels": 0
+      }
+    }
+  },
+  "evidence": {
+    "file": "art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/evidence/superseded-vs-flat-glass-contact-sheet.png",
+    "sha256": "df9819f65fc984ee1c43fb4cd7925892bb203cee8f908b3a73278102a6578878",
+    "columns": 6,
+    "rows": 9,
+    "coveredIds": [
+      "condiment-honey-pot",
+      "condiment-ketchup-bottle",
+      "condiment-malt-vinegar",
+      "condiment-mayonnaise-jar",
+      "condiment-mustard-bottle",
+      "condiment-olive-oil",
+      "condiment-pickle-jar",
+      "condiment-raspberry-jam",
+      "condiment-wholegrain-mustard-jar"
+    ]
+  },
+  "checks": {
+    "priorReviewPackImmutable": true,
+    "sevenGlassContainersCorrected": true,
+    "twoSqueezeBottlesByteIdentical": true,
+    "sourceEdgesClear": true,
+    "componentGuttersAtLeast20": true,
+    "componentOwnershipUnambiguous": true,
+    "currentReferenceHashesPinned": true,
+    "supersededCandidateHashesPinned": true,
+    "exactPalettesRecorded": true,
+    "contactSheetCoversEveryCandidate": true,
+    "libraryVersionsAdded": true,
+    "storyChanged": false,
+    "activityStoriesRuntimeChanged": false,
+    "deployed": false
+  },
+  "approval": {
+    "by": "Frank",
+    "date": "2026-10-21",
+    "words": "yes much better. Taxonomy must be: one even black outline, flat colour, no shine.",
+    "scope": "the exact nine-picture flat-glass condiment correction sheet"
+  },
+  "nextStep": "Continue the next family in a fresh immutable review pack using the binding one-even-black-outline / flat-colour / no-shine taxonomy.",
+  "rollback": "Every V1 remains immutable and selectable; each approved V2 is an immutable added library version and both earlier condiment gates remain preserved."
+}

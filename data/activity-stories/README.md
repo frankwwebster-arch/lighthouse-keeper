@@ -149,16 +149,25 @@ translations. Frank approved the exact sheet with “approved”; all seven are
 current immutable V2s, taking the catalogue to 305 pictures / 381 versions.
 Every V1 remains selectable and Claude's story/runtime is unchanged.
 
-**Condiments review gate (21 October 2026):** the immutable pack at
+**Condiments approval (21 October 2026):** the first immutable pack at
 `art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/` covers all
 nine remaining `condiment` pictures: honey pot, ketchup, malt vinegar,
 mayonnaise, mustard, olive oil, pickle jar, raspberry jam and wholegrain
 mustard. It evolves the recipe away from glossy cartoon clip-art with a thinner
 living contour, controlled asymmetry, fewer flat colour steps and sparse glass
 or material cues. The first glossy honey-pot attempt remains rejected evidence.
-All nine candidates are unregistered; the catalogue remains 305 pictures / 381
-versions. Exactly 68 current pictures are approved ligne-claire conversions,
-so 237 remain pending this and later gates.
+Frank then judged its glass containers “too shiny, not flat enough”, so the
+first gate remains an immutable, unregistered review artifact. It was
+superseded by the approved correction pack at
+`art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/`.
+Seven glass containers are corrected; ketchup and mustard are carried forward
+byte-for-byte. Glass is now quiet outer contour plus at most two or three short
+pale-blue construction ticks, with no reflection bands, shine stripes, colour
+wedges, gradients, bevels or luminous rims. Frank approved the exact correction
+sheet with “yes much better” and established the binding taxonomy: **one even
+black outline, flat colour, no shine**. All nine are current immutable V2s,
+taking the catalogue to 305 pictures / 390 versions. Every V1 remains selectable;
+77 current pictures are approved ligne-claire conversions and 228 remain.
 
 **Pace:** the game takes its time. Activities never rush, however mundane;
 the game world's clock and life management are central (Frank, 20 Oct). A

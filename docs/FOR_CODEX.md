@@ -142,14 +142,25 @@ still preserve V1 counts, state, viewpoint, overlap and arrangement. Frank
 approved the exact sheet with “approved”; all seven are current immutable V2s,
 the library has 305 pictures / 381 versions, and every V1 remains selectable.
 
-The current unregistered gate is the nine-picture condiment pack at
+The first nine-picture condiment gate at
 `art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/`. It covers
 honey pot, ketchup, malt vinegar, mayonnaise, mustard, olive oil, pickle jar,
 raspberry jam and wholegrain mustard. The first honey-pot result was rejected
 for glossy cartoon clip-art modelling; the evolved recipe uses thinner living
 contour, controlled asymmetry, fewer flat colours and sparse glass/material
-cues. Register nothing before Frank approves the exact sheet. Exactly 68 of the
-305 pictures currently use approved ligne-claire versions; 237 remain.
+cues. It remains preserved as unregistered review history.
+
+Frank subsequently judged the first gate's glass containers “too shiny, not
+flat enough”. Keep that gate immutable and use
+`art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/`
+as the approved authority. It corrects seven glass containers and carries
+ketchup/mustard forward byte-for-byte. Glass is quiet contour with at most two
+or three short pale-blue construction ticks—no reflection bands, shine stripes,
+colour wedges, gradients, bevels or luminous rims. Frank approved the exact
+correction sheet with “yes much better” and set the binding taxonomy: **one
+even black outline, flat colour, no shine**. All nine are current immutable
+V2s; the library has 305 pictures / 390 versions, with 77 approved conversions
+and 228 remaining.
 
 ## Prime Keeper whole-bank normalisation (17 Oct 2026)
 

@@ -109,13 +109,22 @@ preserve their exact V1 compositions. All seven are current immutable V2s, so
 the catalogue now contains 305 pictures / 381 versions. Every V1 remains
 selectable, Claude's story/runtime is unchanged, and nothing was deployed.
 
-The next immutable review gate is the nine-picture condiment family at
+The first immutable condiment review gate at
 `art/drafts/activity-story-ligne-claire-condiments-2026-10-21-v1/`. The first
 honey-pot attempt was rejected for glossy cartoon clip-art modelling; the
 evolved recipe uses thinner living contour, controlled asymmetry, fewer flat
-colour steps and sparse material cues. All nine candidates remain unregistered,
-so the catalogue remains 305 pictures / 381 versions. Exactly 68 current
-pictures are approved ligne-claire conversions and 237 remain.
+colour steps and sparse material cues. It remains unregistered historical
+review evidence.
+
+Frank judged the first condiment gate's glass containers “too shiny, not flat
+enough”. The complete first gate remains immutable; the approved correction pack is
+`art/drafts/activity-story-ligne-claire-condiments-flat-glass-correction-2026-10-21-v1/`.
+It supplies seven flatter glass corrections and carries ketchup/mustard forward
+byte-for-byte. Frank approved the exact sheet with “yes much better” and set
+the binding taxonomy: **one even black outline, flat colour, no shine**. All
+nine are current immutable V2s. The catalogue now contains 305 pictures / 390
+versions; 77 current pictures are approved ligne-claire conversions and 228
+remain. Every V1 remains selectable and nothing was deployed.
 
 **Still to do on floors:** the dawn reveal animation (Codex; the `unlocked` happening after `dawn` is the hook), furniture migration and the walking-distance bathroom rule from `docs/EXPANSION_DESIGN.md`. The diving extension now follows the bedroom's height but is not playable yet.
 
