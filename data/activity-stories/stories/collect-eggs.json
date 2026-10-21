@@ -21,8 +21,13 @@
       "appear": "symbol-clean-glint"
     },
     "basket": {
+      "picture": "eggs-basket-empty",
+      "role": "support"
+    },
+    "full": {
       "picture": "eggs-basket",
-      "role": "result"
+      "role": "result",
+      "appear": "symbol-clean-glint"
     }
   },
   "steps": [
@@ -51,11 +56,17 @@
       "speed": "slow"
     },
     {
+      "do": "reveal",
+      "who": "full",
+      "onto": "basket",
+      "replace": true
+    },
+    {
       "do": "pause"
     },
     {
       "do": "serve",
-      "who": "basket",
+      "who": "full",
       "speed": "slow"
     },
     {
@@ -71,14 +82,14 @@
       "kind": "asset-state"
     },
     {
-      "step": 5,
+      "step": 6,
       "at": "contact",
       "cue": "eggs-gathered",
       "owner": "collect-eggs",
       "kind": "completion"
     }
   ],
-  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. The hen coop, then a nest of fresh eggs (with a glint) comes out of it, the basket arrives, the eggs go into the basket and it is carried off.",
+  "notes": "Draft by Claude, 21 Oct 2026. The hen coop, a nest of fresh eggs comes out of it, the empty basket arrives, the eggs go in and the basket fills (with a glint), then it is carried off. Frank’s note: the basket starts empty.",
   "ambient": [],
   "props": []
 }

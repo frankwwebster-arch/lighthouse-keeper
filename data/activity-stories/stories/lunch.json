@@ -12,7 +12,7 @@
   },
   "cast": {
     "plate": {
-      "picture": "washing-plate",
+      "picture": "kitchen-plate",
       "role": "hero"
     },
     "bread": {
@@ -30,6 +30,11 @@
     "mustard": {
       "picture": "condiment-wholegrain-mustard-jar",
       "role": "support"
+    },
+    "lunch": {
+      "picture": "meal-ploughmans",
+      "role": "result",
+      "appear": "symbol-pleasant-aroma"
     }
   },
   "steps": [
@@ -61,8 +66,14 @@
       "mark": "symbol-impact-star"
     },
     {
-      "do": "pause",
-      "speed": "slow"
+      "do": "reveal",
+      "who": "lunch",
+      "onto": "plate",
+      "replace": true
+    },
+    {
+      "do": "serve",
+      "who": "lunch"
     },
     {
       "do": "settle"
@@ -73,31 +84,24 @@
       "picture": "ingredient-butter-block",
       "at": "orbit",
       "fromStep": 2,
-      "toStep": 6
+      "toStep": 7
     },
     {
       "picture": "knife-paring",
       "at": "orbit",
       "fromStep": 2,
-      "toStep": 6
+      "toStep": 7
     }
   ],
   "sfx": [
     {
-      "step": 5,
+      "step": 6,
       "at": "contact",
       "cue": "food-ready",
       "owner": "lunch",
       "kind": "completion"
     }
   ],
-  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. The plate, then bread and cheese land on it, pickle tips out of the jar, a dab of wholegrain mustard, and it smells good. The library's “lunch” picture is a bowl of soup, so the story ends on the plate; Codex is asked for a ploughman's plate to appear and be served.",
-  "ambient": [
-    {
-      "picture": "symbol-pleasant-aroma",
-      "on": "plate",
-      "fromStep": 6,
-      "toStep": 6
-    }
-  ]
+  "notes": "Draft by Claude, 21 Oct 2026. A clean plate, then bread and cheese land on it, pickle tips out of the jar, a dab of wholegrain mustard, and the finished ploughman’s appears (a good smell) and is served. Frank’s note: not the washing-up plate with suds.",
+  "ambient": []
 }

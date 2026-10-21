@@ -1,7 +1,7 @@
 {
   "schema": "lighthouse-keeper/activity-story@1",
   "id": "demo-iron",
-  "label": "Demo: Spirit level irons the shirt (a stand-in until an iron exists)",
+  "label": "Demo: Iron irons the shirt",
   "appliesTo": {
     "assetId": "",
     "label": "Action demo"
@@ -16,7 +16,7 @@
       "role": "hero"
     },
     "tool": {
-      "picture": "repair-spirit-level",
+      "picture": "laundry-iron",
       "role": "support"
     }
   },

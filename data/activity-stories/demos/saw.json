@@ -1,7 +1,7 @@
 {
   "schema": "lighthouse-keeper/activity-story@1",
   "id": "demo-saw",
-  "label": "Demo: Hand saw saws the patch (a stand-in until a plank exists)",
+  "label": "Demo: Hand saw saws the plank",
   "appliesTo": {
     "assetId": "",
     "label": "Action demo"
@@ -12,7 +12,7 @@
   "flow": "around",
   "cast": {
     "target": {
-      "picture": "repair-boat-hull-patch",
+      "picture": "repair-plank",
       "role": "hero"
     },
     "tool": {

@@ -12,7 +12,7 @@
   },
   "cast": {
     "plank": {
-      "picture": "repair-boat-hull-patch",
+      "picture": "repair-plank",
       "role": "hero"
     },
     "tape": {
@@ -114,5 +114,5 @@
       "kind": "completion"
     }
   ],
-  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. Measure along it (tape measure, long strokes), check it level (the spirit level glides across), clamp it, saw it, screw it, and it gleams. The hull patch stands in for a plank until Codex draws one. The drill and its bits circle."
+  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. Measure along it (tape measure, long strokes), check it level (the spirit level glides across), clamp it, saw it, screw it, and it gleams. The drill and its bits circle."
 }

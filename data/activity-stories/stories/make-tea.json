@@ -26,6 +26,10 @@
     "spoon": {
       "picture": "cooking-spoon",
       "role": "support"
+    },
+    "teabag": {
+      "picture": "tea-bag",
+      "role": "support"
     }
   },
   "steps": [
@@ -40,6 +44,12 @@
     {
       "do": "present",
       "who": "mug"
+    },
+    {
+      "do": "drop-in",
+      "who": "teabag",
+      "onto": "mug",
+      "speed": "quick"
     },
     {
       "do": "pour",
@@ -79,8 +89,8 @@
     {
       "picture": "symbol-pleasant-aroma",
       "on": "mug",
-      "fromStep": 6,
-      "toStep": 8
+      "fromStep": 7,
+      "toStep": 9
     }
   ],
   "sfx": [
@@ -92,20 +102,20 @@
       "kind": "asset-state"
     },
     {
-      "step": 4,
+      "step": 5,
       "at": "contact",
       "cue": "tea-pour",
       "owner": "make-tea",
       "kind": "activity-beat"
     },
     {
-      "step": 6,
+      "step": 7,
       "at": "contact",
       "cue": "spoon-clink",
       "owner": "make-tea",
       "kind": "completion"
     }
   ],
-  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. The kettle boils (heat curls), the mug takes the middle, hot water and milk pour in, the spoon stirs, the tea smells good and is served. No tea bag yet: Codex is asked for one; until then the tea goes straight from kettle to mug.",
+  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. The kettle boils (heat curls), the mug takes the middle, a tea bag drops in, hot water and milk pour in, the spoon stirs, the tea smells good and is served.",
   "props": []
 }

@@ -30,6 +30,11 @@
     "whisk": {
       "picture": "mixing-whisk",
       "role": "support"
+    },
+    "cake": {
+      "picture": "baking-cake",
+      "role": "result",
+      "appear": "symbol-pleasant-aroma"
     }
   },
   "steps": [
@@ -65,6 +70,16 @@
       "speed": "slow"
     },
     {
+      "do": "reveal",
+      "who": "cake",
+      "onto": "bowl",
+      "replace": true
+    },
+    {
+      "do": "serve",
+      "who": "cake"
+    },
+    {
       "do": "settle"
     }
   ],
@@ -85,6 +100,6 @@
       "kind": "activity-beat"
     }
   ],
-  "notes": "Draft by Claude, 21 Oct 2026, from the recipe audit on the project page. Flour pours into the bowl, the egg and butter drop in, the whisk goes round, then heat while it bakes. Waiting for Codex: the finished cake (and an oven or cake tin) for the ending; when it exists, add “cake appears from bowl (takes its place)” and “cake is served”.",
+  "notes": "Draft by Claude, 21 Oct 2026. Flour pours into the bowl, the egg and butter drop in, the whisk goes round, heat while it bakes, then the cake appears (a good smell) and is served.",
   "props": []
 }

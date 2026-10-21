@@ -1,7 +1,7 @@
 {
   "schema": "lighthouse-keeper/activity-story@1",
   "id": "demo-sweep",
-  "label": "Demo: Broom sweeps along the dustpan (a stand-in until a dust pile exists)",
+  "label": "Demo: Broom sweeps the dust pile",
   "appliesTo": {
     "assetId": "",
     "label": "Action demo"
@@ -12,7 +12,7 @@
   "flow": "around",
   "cast": {
     "target": {
-      "picture": "tool-dustpan",
+      "picture": "cleaning-dust-pile",
       "role": "hero"
     },
     "tool": {

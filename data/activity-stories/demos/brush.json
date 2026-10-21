@@ -1,7 +1,7 @@
 {
   "schema": "lighthouse-keeper/activity-story@1",
   "id": "demo-brush",
-  "label": "Demo: Brushes paint the canvas (a stand-in until a single paintbrush exists)",
+  "label": "Demo: Paintbrush paints the canvas",
   "appliesTo": {
     "assetId": "",
     "label": "Action demo"
@@ -16,7 +16,7 @@
       "role": "hero"
     },
     "tool": {
-      "picture": "art-brushes-pot",
+      "picture": "art-paintbrush",
       "role": "support"
     }
   },
