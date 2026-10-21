@@ -770,18 +770,17 @@ Delivery history:
 [`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V2_2026-10-21.md`](docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V2_2026-10-21.md).
 The successful correction is
 [`docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V3_2026-10-21.md`](docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V3_2026-10-21.md).
-Kitchen Built-In State Ligne-Claire V6 is rejected. It preserved geometry and
-alpha but substituted a scripted simplified reconstruction for Frank's superb
-high-resolution oven, so passing structural tests did not preserve the chosen
-visual authority. Kitchen Oven Ligne-Claire V7 is the deliberately narrow
-recovery gate at `/keeper-review/kitchen-built-in-state-ligne-claire-v7/`.
-It hash-pins the exact preferred 1305 × 1206 RGBA file, maps that drawing to the
-unchanged 92 × 85 Oven On canvas and byte-exact source alpha, and compares it
-directly with the rejected V6 substitute. V7 does not yet propagate Broken
-states or touch the dishwasher; nothing is registered, promoted, wired or
-current. The root-absolute review route decodes both evidence images before it
-declares readiness. See
-[`docs/KITCHEN_OVEN_LIGNE_CLAIRE_V7_2026-10-21.md`](docs/KITCHEN_OVEN_LIGNE_CLAIRE_V7_2026-10-21.md).
+Kitchen Built-In State Ligne-Claire V6 is rejected because it substituted a
+scripted reconstruction for Frank's superb high-resolution oven. V7 recovered
+and hash-pinned that exact visual authority, but its mapping is also rejected:
+copying the obsolete source alpha pixel-for-pixel trimmed the new hob contour.
+Kitchen Oven Ligne-Claire V8 is the corrected narrow gate at
+`/keeper-review/kitchen-oven-ligne-claire-v8/`. It keeps the exact authority's
+complete contour inside the unchanged 92 × 85 canvas and exact transparent
+padding bounds `(4,4)–(88,81)`. V8 does not propagate Broken states or touch
+the dishwasher; nothing is registered, promoted, wired or current. The
+root-absolute route decodes both images before declaring readiness. See
+[`docs/KITCHEN_OVEN_LIGNE_CLAIRE_V8_2026-10-21.md`](docs/KITCHEN_OVEN_LIGNE_CLAIRE_V8_2026-10-21.md).
 The V18 recipe and hand-back remain historical records:
 hand-back:
 [`docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md`](docs/KITCHEN_COUNTERTOP_GATE_V18_RECIPE_2026-10-17.md)

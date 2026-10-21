@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "set": "kitchen-oven-ligne-claire-v8",
+  "page": {
+    "path": "public/keeper-review/kitchen-oven-ligne-claire-v8/index.html",
+    "sha256": "c235f04542dfa1b1639635505111a54c8edad2af28932c7e608b57a4f8b4c650",
+    "bytes": 2348
+  },
+  "objectsBaseUrl": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects",
+  "entries": {
+    "/keeper-review/kitchen-oven-ligne-claire-v8/assets/oven-on-user-confirmed-visual-authority.png": {
+      "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538",
+      "extension": ".png",
+      "bytes": 1065901,
+      "object": "review-archive/objects/0a/0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0a/0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538.png"
+    },
+    "/keeper-review/kitchen-oven-ligne-claire-v8/assets/oven-v7-vs-v8-contact.png": {
+      "sha256": "d85c097cc4718a2706a4c5d212eabd86a361042fd8e8f09d09f0f6f4082fdc57",
+      "extension": ".png",
+      "bytes": 849632,
+      "object": "review-archive/objects/d8/d85c097cc4718a2706a4c5d212eabd86a361042fd8e8f09d09f0f6f4082fdc57.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d8/d85c097cc4718a2706a4c5d212eabd86a361042fd8e8f09d09f0f6f4082fdc57.png"
+    }
+  }
+}

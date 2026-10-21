@@ -535,17 +535,16 @@ asset paths and SHA-256-verified same-origin responses for the exact same four
 evidence objects. It changes no artwork or behavior. Correction:
 `docs/KITCHEN_BUILT_IN_STATE_LIGNE_CLAIRE_V4_DELIVERY_V3_2026-10-21.md`.
 
-Kitchen Built-In State Ligne-Claire V6 is rejected: it passed exact canvas,
-alpha and behaviour checks but replaced Frank's preferred high-resolution oven
-with a newly scripted simplified redraw. Kitchen Oven Ligne-Claire V7 at
-`/keeper-review/kitchen-built-in-state-ligne-claire-v7/` recovers the exact
-1305 × 1206 RGBA visual authority, hash-pins it, and maps it to the unchanged
-92 × 85 Oven On canvas with byte-exact source alpha. The comparison labels the
-V6 substitution explicitly. V7 is intentionally an Oven On gate only; Broken
-states and the dishwasher remain unpropagated until the base mapping is visibly
-confirmed. Registration, promotion, selectors, runtime, dimensions, anchors,
-movement, interaction, repair and healing are unchanged. Delivery:
-`docs/KITCHEN_OVEN_LIGNE_CLAIRE_V7_2026-10-21.md`.
+Kitchen Built-In State Ligne-Claire V6 is rejected for replacing Frank's
+preferred high-resolution oven with a scripted redraw. V7 recovered the exact
+authority but its mapping is rejected because byte-exact reuse of the old alpha
+trimmed the new top contour. Kitchen Oven Ligne-Claire V8 at
+`/keeper-review/kitchen-oven-ligne-claire-v8/` retains the authority's own
+complete contour and antialiasing inside the unchanged 92 × 85 canvas and exact
+transparent bounds `(4,4)–(88,81)`. V8 remains an Oven On gate only; Broken
+states and the dishwasher are unpropagated. Registration, promotion, selectors,
+runtime, dimensions, anchors, movement, interaction, repair and healing remain
+unchanged. Delivery: `docs/KITCHEN_OVEN_LIGNE_CLAIRE_V8_2026-10-21.md`.
 
 The active contextual reviewer is now Prime Context Workbench V15. It retains
 all eleven Workbench V11 choices and replaces only the active side-right sitting

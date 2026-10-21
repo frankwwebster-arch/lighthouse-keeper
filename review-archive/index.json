@@ -15,12 +15,12 @@
   ],
   "largeDataThresholdBytes": 24576,
   "stats": {
-    "setCount": 199,
-    "referenceCount": 4757,
-    "uniqueObjectCount": 2906,
-    "logicalBytes": 381753263,
-    "uniqueBytes": 218503734,
-    "deduplicatedBytes": 163249529
+    "setCount": 200,
+    "referenceCount": 4759,
+    "uniqueObjectCount": 2907,
+    "logicalBytes": 383668796,
+    "uniqueBytes": 219353366,
+    "deduplicatedBytes": 164315430
   },
   "legacyPaths": {
     "/keeper-review/activity-cloud-composer-v1/assets/bbq-burgers-5244d4289bbaf95f.png": {
@@ -27427,6 +27427,20 @@
       "bytes": 1360384,
       "object": "review-archive/objects/17/175d77c063297c435eab468f297c369f79e5491b89bbdd2b03400d31cd334f4a.png",
       "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/17/175d77c063297c435eab468f297c369f79e5491b89bbdd2b03400d31cd334f4a.png"
+    },
+    "/keeper-review/kitchen-oven-ligne-claire-v8/assets/oven-on-user-confirmed-visual-authority.png": {
+      "sha256": "0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538",
+      "extension": ".png",
+      "bytes": 1065901,
+      "object": "review-archive/objects/0a/0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/0a/0a8f0cbeb8fda75bc2da9948da8f2c7fc5a54f14d8202ef5bc2c89d8c0bb5538.png"
+    },
+    "/keeper-review/kitchen-oven-ligne-claire-v8/assets/oven-v7-vs-v8-contact.png": {
+      "sha256": "d85c097cc4718a2706a4c5d212eabd86a361042fd8e8f09d09f0f6f4082fdc57",
+      "extension": ".png",
+      "bytes": 849632,
+      "object": "review-archive/objects/d8/d85c097cc4718a2706a4c5d212eabd86a361042fd8e8f09d09f0f6f4082fdc57.png",
+      "url": "https://raw.githubusercontent.com/frankwwebster-arch/lighthouse-keeper/main/review-archive/objects/d8/d85c097cc4718a2706a4c5d212eabd86a361042fd8e8f09d09f0f6f4082fdc57.png"
     },
     "/keeper-review/kitchen-oven-standalone-v26/assets/oven-broken-both-lit.png": {
       "sha256": "2d599aa0f804e0af7e6c8a577ee81471a8bb0309988339679e3abd1a92201b00",
